@@ -1,0 +1,41 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 10%, #1a3a4a 0%, transparent 55%),
+    radial-gradient(ellipse 70% 50% at 90% 80%, #2a1f14 0%, transparent 50%),
+    #0c1116;
+  color: #e8eef2;
+}
+
+.main {
+  max-width: 36rem;
+  text-align: left;
+}
+
+.brand {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #7eb8c9;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: #a8b4be;
+  max-width: 32rem;
+}
