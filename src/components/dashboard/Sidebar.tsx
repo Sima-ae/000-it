@@ -32,7 +32,7 @@ export function Sidebar() {
   return (
     <aside className="w-full border-b border-border bg-card/40 p-4 backdrop-blur md:min-h-screen md:w-64 md:border-b-0 md:border-r">
       <Link href={`/${locale}`} className="mb-6 block text-lg font-semibold">
-        <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+        <span className="bg-linear-to-r from-primary to-accent bg-clip-text text-transparent">
           TripleZero iT
         </span>
       </Link>

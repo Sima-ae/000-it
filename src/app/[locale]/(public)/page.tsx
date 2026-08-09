@@ -174,7 +174,7 @@ export default async function HomePage({
       </section>
 
       <section className="mx-auto max-w-6xl px-4 pb-20 md:px-6">
-        <div className="rounded-3xl border border-border bg-gradient-to-br from-primary/20 via-card to-secondary/20 p-8 text-center md:p-12">
+        <div className="rounded-3xl border border-border bg-linear-to-br from-primary/20 via-card to-secondary/20 p-8 text-center md:p-12">
           <h2 className="text-2xl font-semibold md:text-3xl">{t("hero.ctaScan")}</h2>
           <p className="mx-auto mt-3 max-w-xl text-muted-foreground">{t("hero.subtitle")}</p>
           <Button asChild size="lg" className="mt-6">

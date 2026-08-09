@@ -33,7 +33,7 @@ export function Navigation() {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/70 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 md:px-6">
         <Link href={`/${locale}`} className="text-lg font-semibold tracking-tight">
-          <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
             TripleZero iT
           </span>
         </Link>
