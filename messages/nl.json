@@ -1,0 +1,137 @@
+{
+  "brand": "TripleZero iT",
+  "nav": {
+    "home": "Home",
+    "services": "Diensten",
+    "about": "Over ons",
+    "cases": "Cases",
+    "blog": "Blog",
+    "contact": "Contact",
+    "aiScan": "AI-Scan",
+    "login": "Inloggen",
+    "register": "Registreren",
+    "dashboard": "Dashboard",
+    "logout": "Uitloggen"
+  },
+  "hero": {
+    "title": "Slimme Groei met AI — Jouw TripleZero iT Systeem",
+    "subtitle": "AI-integratie, SEO/AEO/GEO en full-funnel marketing in één groeisysteem voor Nederlandse bedrijven.",
+    "ctaScan": "Start Gratis AI-Scan",
+    "ctaApproach": "Bekijk Onze Aanpak",
+    "scansLabel": "AI-scans uitgevoerd"
+  },
+  "services": {
+    "title": "Diensten",
+    "subtitle": "Alles wat je nodig hebt om AI-gedreven te groeien.",
+    "items": {
+      "ai": { "title": "AI-Integratie & Automatisering", "desc": "Agents en workflows die marketing en ops verbinden." },
+      "seo": { "title": "SEO, AEO & GEO", "desc": "Vindbaar in Google én in AI-zoekmachines." },
+      "web": { "title": "Webdesign & Conversie", "desc": "Snelle sites die bezoekers omzetten in klanten." },
+      "content": { "title": "Content & Social Media", "desc": "Contentmachines met menselijke kwaliteit." },
+      "ads": { "title": "AI-Advertising", "desc": "Google Ads en social campaigns met AI-optimalisatie." },
+      "software": { "title": "Maatwerk Software & API's", "desc": "Custom platforms die meegroeien met je business." }
+    }
+  },
+  "pricing": {
+    "title": "Prijzen",
+    "subtitle": "Kies het plan dat past bij jouw groeifase.",
+    "cta": "Kies Plan",
+    "starter": "Starter",
+    "growth": "Growth",
+    "enterprise": "Enterprise",
+    "custom": "Op maat",
+    "month": "/maand"
+  },
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "q1": "Wat is TripleZero iT?",
+    "a1": "Een AI-gedreven groeiplatform dat integratie, SEO/AEO/GEO en marketing combineert.",
+    "q2": "Hoe werkt de gratis AI-Scan?",
+    "a2": "Je voert je URL in; onze agents scoren SEO, AEO, GEO, performance en AI-readiness.",
+    "q3": "Kan ik later upgraden?",
+    "a3": "Ja, je kunt altijd wisselen tussen Starter, Growth en Enterprise."
+  },
+  "footer": {
+    "tagline": "AI-driven growth for Dutch businesses.",
+    "rights": "Alle rechten voorbehouden."
+  },
+  "auth": {
+    "loginTitle": "Welkom terug",
+    "loginSubtitle": "Log in op je TripleZero dashboard",
+    "email": "E-mail",
+    "password": "Wachtwoord",
+    "login": "Inloggen",
+    "noAccount": "Nog geen account?",
+    "hasAccount": "Al een account?",
+    "register": "Registreren",
+    "forgot": "Wachtwoord vergeten?",
+    "forgotTitle": "Wachtwoord herstellen",
+    "forgotSubtitle": "We sturen je een resetlink (e-mail volgt in een latere release).",
+    "sendReset": "Verstuur reset",
+    "registerTitle": "Account aanmaken",
+    "name": "Naam",
+    "company": "Bedrijf",
+    "companySize": "Bedrijfsgrootte",
+    "industry": "Branche",
+    "interests": "Interesses",
+    "next": "Volgende",
+    "back": "Terug",
+    "create": "Account aanmaken",
+    "stepAccount": "Account",
+    "stepCompany": "Bedrijf",
+    "stepInterests": "Interesses"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welkom terug",
+    "projects": "Projecten",
+    "clients": "Klanten",
+    "agents": "AI Agents",
+    "seo": "SEO Analyse",
+    "content": "Content Generator",
+    "settings": "Instellingen",
+    "statsProjects": "Projecten",
+    "statsAgents": "Actieve agents",
+    "statsTasks": "Taken",
+    "statsScans": "Scans",
+    "recentActivity": "Recente activiteit",
+    "quickActions": "Snelle acties",
+    "newProject": "Nieuw project",
+    "runScan": "AI-Scan starten",
+    "comingSoon": "Binnenkort beschikbaar"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Plan een strategiegesprek of stel je vraag.",
+    "name": "Naam",
+    "email": "E-mail",
+    "company": "Bedrijf",
+    "message": "Bericht",
+    "send": "Versturen",
+    "success": "Bedankt! We nemen snel contact op."
+  },
+  "aiScan": {
+    "title": "Gratis AI Readiness Scan",
+    "subtitle": "Ontdek je SEO, AEO, GEO en AI-readiness score.",
+    "url": "Website URL",
+    "company": "Bedrijfsnaam",
+    "goals": "Doelen",
+    "start": "Start scan",
+    "scanning": "AI agents analyseren je site…",
+    "results": "Scanresultaten",
+    "seo": "SEO Score",
+    "aeo": "AEO Score",
+    "geo": "GEO Score",
+    "performance": "Performance",
+    "readiness": "AI Readiness"
+  },
+  "about": {
+    "title": "Over TripleZero iT",
+    "mission": "Missie",
+    "missionText": "Nederlandse bedrijven versnellen met praktische AI-groeisystemen.",
+    "vision": "Visie",
+    "visionText": "Elke scale-up draait op een TripleZero stack: AI, vindbaarheid en marketing.",
+    "philosophy": "De TripleZero filosofie",
+    "philosophyText": "Drie nullen, één systeem: zero waste, zero silo's, zero guesswork."
+  }
+}

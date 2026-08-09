@@ -1,0 +1,137 @@
+{
+  "brand": "TripleZero iT",
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "cases": "Case Studies",
+    "blog": "Blog",
+    "contact": "Contact",
+    "aiScan": "AI Scan",
+    "login": "Log in",
+    "register": "Sign up",
+    "dashboard": "Dashboard",
+    "logout": "Log out"
+  },
+  "hero": {
+    "title": "Smart Growth with AI — Your TripleZero iT System",
+    "subtitle": "AI integration, SEO/AEO/GEO and full-funnel marketing in one growth system for ambitious businesses.",
+    "ctaScan": "Start Free AI Scan",
+    "ctaApproach": "See Our Approach",
+    "scansLabel": "AI scans completed"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Everything you need to grow with AI.",
+    "items": {
+      "ai": { "title": "AI Integration & Automation", "desc": "Agents and workflows that connect marketing and ops." },
+      "seo": { "title": "SEO, AEO & GEO", "desc": "Visible in Google and AI search engines." },
+      "web": { "title": "Web Design & Conversion", "desc": "Fast sites that turn visitors into customers." },
+      "content": { "title": "Content & Social Media", "desc": "Content engines with human-grade quality." },
+      "ads": { "title": "AI Advertising", "desc": "Google Ads and social campaigns with AI optimization." },
+      "software": { "title": "Custom Software & APIs", "desc": "Platforms that scale with your business." }
+    }
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Pick the plan that fits your growth stage.",
+    "cta": "Choose Plan",
+    "starter": "Starter",
+    "growth": "Growth",
+    "enterprise": "Enterprise",
+    "custom": "Custom",
+    "month": "/month"
+  },
+  "faq": {
+    "title": "FAQ",
+    "q1": "What is TripleZero iT?",
+    "a1": "An AI-driven growth platform combining integration, SEO/AEO/GEO and marketing.",
+    "q2": "How does the free AI Scan work?",
+    "a2": "Enter your URL; our agents score SEO, AEO, GEO, performance and AI readiness.",
+    "q3": "Can I upgrade later?",
+    "a3": "Yes — move between Starter, Growth and Enterprise anytime."
+  },
+  "footer": {
+    "tagline": "AI-driven growth for modern businesses.",
+    "rights": "All rights reserved."
+  },
+  "auth": {
+    "loginTitle": "Welcome back",
+    "loginSubtitle": "Sign in to your TripleZero dashboard",
+    "email": "Email",
+    "password": "Password",
+    "login": "Log in",
+    "noAccount": "No account yet?",
+    "hasAccount": "Already have an account?",
+    "register": "Sign up",
+    "forgot": "Forgot password?",
+    "forgotTitle": "Reset password",
+    "forgotSubtitle": "We'll send a reset link (email delivery comes in a later release).",
+    "sendReset": "Send reset",
+    "registerTitle": "Create account",
+    "name": "Name",
+    "company": "Company",
+    "companySize": "Company size",
+    "industry": "Industry",
+    "interests": "Interests",
+    "next": "Next",
+    "back": "Back",
+    "create": "Create account",
+    "stepAccount": "Account",
+    "stepCompany": "Company",
+    "stepInterests": "Interests"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back",
+    "projects": "Projects",
+    "clients": "Clients",
+    "agents": "AI Agents",
+    "seo": "SEO Analysis",
+    "content": "Content Generator",
+    "settings": "Settings",
+    "statsProjects": "Projects",
+    "statsAgents": "Active agents",
+    "statsTasks": "Tasks",
+    "statsScans": "Scans",
+    "recentActivity": "Recent activity",
+    "quickActions": "Quick actions",
+    "newProject": "New project",
+    "runScan": "Run AI Scan",
+    "comingSoon": "Coming soon"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Book a strategy call or send a question.",
+    "name": "Name",
+    "email": "Email",
+    "company": "Company",
+    "message": "Message",
+    "send": "Send",
+    "success": "Thanks! We'll get back to you soon."
+  },
+  "aiScan": {
+    "title": "Free AI Readiness Scan",
+    "subtitle": "Discover your SEO, AEO, GEO and AI readiness scores.",
+    "url": "Website URL",
+    "company": "Company name",
+    "goals": "Goals",
+    "start": "Start scan",
+    "scanning": "AI agents are analyzing your site…",
+    "results": "Scan results",
+    "seo": "SEO Score",
+    "aeo": "AEO Score",
+    "geo": "GEO Score",
+    "performance": "Performance",
+    "readiness": "AI Readiness"
+  },
+  "about": {
+    "title": "About TripleZero iT",
+    "mission": "Mission",
+    "missionText": "Accelerate businesses with practical AI growth systems.",
+    "vision": "Vision",
+    "visionText": "Every scale-up runs on a TripleZero stack: AI, discoverability and marketing.",
+    "philosophy": "The TripleZero philosophy",
+    "philosophyText": "Three zeros, one system: zero waste, zero silos, zero guesswork."
+  }
+}

@@ -13,6 +13,9 @@ concurrency:
 
 env:
   NEXT_PUBLIC_APP_URL: https://000-it.com
+  AUTH_URL: https://000-it.com
+  AUTH_SECRET: ci-build-placeholder-not-used-at-runtime
+  DATABASE_URL: mysql://000it_app:placeholder@127.0.0.1:3306/000it_app
 
 jobs:
   build-and-deploy:

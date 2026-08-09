@@ -1,0 +1,286 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String    @unique
+  emailVerified DateTime?
+  password      String?
+  image         String?
+  role          Role      @default(CLIENT)
+  companyName   String?
+  companySize   String?
+  industry      String?
+  phone         String?
+  interests     Json?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  projects   Project[]
+  clients    Client[]
+  aiAgents   AIAgent[]
+  payments   Payment[]
+  scans      AIScan[]
+  sessions   Session[]
+  accounts   Account[]
+  activities Activity[]
+  contactLeads ContactLead[]
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model Project {
+  id          String        @id @default(cuid())
+  name        String
+  description String?       @db.Text
+  status      ProjectStatus @default(PLANNING)
+  type        ProjectType
+  budget      Float?
+  startDate   DateTime
+  endDate     DateTime?
+  progress    Int           @default(0)
+  userId      String
+  user        User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  clients     Client[]
+  aiAgents    AIAgent[]
+  tasks       Task[]
+  activities  Activity[]
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+}
+
+model Client {
+  id        String       @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  company   String?
+  industry  String?
+  status    ClientStatus @default(ACTIVE)
+  projectId String?
+  project   Project?     @relation(fields: [projectId], references: [id], onDelete: SetNull)
+  userId    String
+  user      User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  notes     String?      @db.Text
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+}
+
+model AIAgent {
+  id             String      @id @default(cuid())
+  name           String
+  type           AgentType
+  status         AgentStatus @default(IDLE)
+  projectId      String?
+  project        Project?    @relation(fields: [projectId], references: [id], onDelete: SetNull)
+  userId         String
+  user           User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  configuration  Json
+  tasksCompleted Int         @default(0)
+  lastActive     DateTime?
+  tasks          Task[]
+  createdAt      DateTime    @default(now())
+  updatedAt      DateTime    @updatedAt
+}
+
+model Task {
+  id              String     @id @default(cuid())
+  title           String
+  description     String?    @db.Text
+  status          TaskStatus @default(PENDING)
+  priority        Priority   @default(MEDIUM)
+  dueDate         DateTime?
+  projectId       String
+  project         Project    @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  assignedAgentId String?
+  assignedAgent   AIAgent?   @relation(fields: [assignedAgentId], references: [id], onDelete: SetNull)
+  createdAt       DateTime   @default(now())
+  updatedAt       DateTime   @updatedAt
+}
+
+model Activity {
+  id          String       @id @default(cuid())
+  type        ActivityType
+  description String
+  projectId   String?
+  project     Project?     @relation(fields: [projectId], references: [id], onDelete: SetNull)
+  userId      String?
+  user        User?        @relation(fields: [userId], references: [id], onDelete: SetNull)
+  metadata    Json?
+  createdAt   DateTime     @default(now())
+}
+
+model AIScan {
+  id        String     @id @default(cuid())
+  url       String
+  company   String?
+  goals     String?    @db.Text
+  scanType  ScanType   @default(FULL)
+  status    ScanStatus @default(PENDING)
+  results   Json?
+  userId    String?
+  user      User?      @relation(fields: [userId], references: [id], onDelete: SetNull)
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+}
+
+model Payment {
+  id        String        @id @default(cuid())
+  amount    Float
+  currency  String        @default("EUR")
+  status    PaymentStatus @default(PENDING)
+  plan      String?
+  userId    String
+  user      User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  stripeId  String?
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
+}
+
+model ContactLead {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  company   String?
+  message   String   @db.Text
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  createdAt DateTime @default(now())
+}
+
+enum Role {
+  ADMIN
+  MANAGER
+  CLIENT
+}
+
+enum ProjectStatus {
+  PLANNING
+  ACTIVE
+  ON_HOLD
+  COMPLETED
+  CANCELLED
+}
+
+enum ProjectType {
+  WEBSITE
+  SEO
+  ADS
+  AI_INTEGRATION
+  CONTENT
+  SOCIAL_MEDIA
+  BRANDING
+  FULL_GROWTH
+}
+
+enum ClientStatus {
+  ACTIVE
+  INACTIVE
+  LEAD
+  LOST
+}
+
+enum AgentType {
+  SEO_AGENT
+  CONTENT_AGENT
+  SOCIAL_AGENT
+  ADS_AGENT
+  ANALYTICS_AGENT
+  CHATBOT_AGENT
+  RESEARCH_AGENT
+}
+
+enum AgentStatus {
+  IDLE
+  RUNNING
+  PAUSED
+  ERROR
+  COMPLETED
+}
+
+enum TaskStatus {
+  PENDING
+  IN_PROGRESS
+  REVIEW
+  COMPLETED
+}
+
+enum Priority {
+  LOW
+  MEDIUM
+  HIGH
+  URGENT
+}
+
+enum ActivityType {
+  PROJECT_CREATED
+  PROJECT_UPDATED
+  TASK_COMPLETED
+  AGENT_STARTED
+  AGENT_COMPLETED
+  CLIENT_ADDED
+  SCAN_COMPLETED
+  PAYMENT_RECEIVED
+}
+
+enum ScanType {
+  SEO
+  AEO
+  GEO
+  PERFORMANCE
+  FULL
+}
+
+enum ScanStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  FAILED
+}
+
+enum PaymentStatus {
+  PENDING
+  COMPLETED
+  FAILED
+  REFUNDED
+}

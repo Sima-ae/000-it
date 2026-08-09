@@ -13,8 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "000-it",
-  description: "000-it application",
+  title: {
+    default: "TripleZero iT",
+    template: "%s · TripleZero iT",
+  },
+  description: "AI-driven growth platform for modern businesses.",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://000-it.com"),
 };
 
 export default function RootLayout({
@@ -23,8 +27,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="nl" suppressHydrationWarning>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>

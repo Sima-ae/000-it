@@ -55,6 +55,15 @@ if ! node scripts/check-db.mjs; then
   exit 1
 fi
 
+echo "==> Prisma generate + migrate deploy"
+npx prisma generate
+npx prisma migrate deploy
+
+if [[ "${RUN_SEED:-}" == "1" ]]; then
+  echo "==> Seeding database"
+  npx tsx prisma/seed.ts || npm exec tsx prisma/seed.ts || true
+fi
+
 echo "==> Restart application (PM2: $PM2_NAME on :$PORT)"
 if command -v pm2 >/dev/null 2>&1; then
   if pm2 describe "$PM2_NAME" >/dev/null 2>&1; then

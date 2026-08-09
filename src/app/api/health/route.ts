@@ -1,15 +1,12 @@
 import { NextResponse } from "next/server";
-import { pingDatabase } from "@/lib/db";
+import { prisma } from "@/lib/prisma";
 
 export const dynamic = "force-dynamic";
 
 export async function GET() {
   try {
-    const dbOk = await pingDatabase();
-    return NextResponse.json(
-      { ok: dbOk, db: dbOk ? "up" : "down", service: "000-it" },
-      { status: dbOk ? 200 : 503 },
-    );
+    await prisma.$queryRaw`SELECT 1`;
+    return NextResponse.json({ ok: true, db: "up", service: "000-it" });
   } catch (error) {
     const message = error instanceof Error ? error.message : "unknown";
     return NextResponse.json(
