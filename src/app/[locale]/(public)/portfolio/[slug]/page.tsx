@@ -7,6 +7,8 @@ import { prisma } from "@/lib/prisma";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
+export const dynamic = "force-dynamic";
+
 function asList(value: unknown): string[] {
   if (!Array.isArray(value)) return [];
   return value.map(String);
