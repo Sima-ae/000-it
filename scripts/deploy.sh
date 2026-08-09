@@ -33,9 +33,11 @@ set +a
 
 echo "==> Install dependencies"
 if [[ "${SKIP_BUILD:-}" == "1" ]]; then
+  # Runtime-only install (CI already built .next)
   npm ci --omit=dev
 else
-  npm ci
+  # Full install including Tailwind/PostCSS (ignore production NODE_ENV from .env)
+  NODE_ENV=development npm ci
 fi
 
 if [[ "${SKIP_BUILD:-}" == "1" ]]; then
