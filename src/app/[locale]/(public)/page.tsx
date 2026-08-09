@@ -9,17 +9,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Bot, Sparkles, Zap } from "lucide-react";
+import { Sparkles, Zap } from "lucide-react";
 
 const serviceKeys = ["ai", "seo", "web", "content", "ads", "software"] as const;
-
-const agents = [
-  { name: "SEOPilot", status: "running" },
-  { name: "PixelForge", status: "idle" },
-  { name: "SocialPulse", status: "paused" },
-  { name: "AdsNinja", status: "running" },
-  { name: "CodeNinja", status: "running" },
-];
 
 export default async function HomePage({
   params,
@@ -84,41 +76,6 @@ export default async function HomePage({
                 {services(`items.${key}.desc`)}
               </p>
             </GlassCard>
-          ))}
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-4 py-12 md:px-6">
-        <h2 className="mb-6 text-2xl font-semibold md:text-3xl">AI Agents</h2>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-          {agents.map((agent) => (
-            <div
-              key={agent.name}
-              className="rounded-xl border border-border bg-card/60 p-4 backdrop-blur"
-            >
-              <div className="flex items-center gap-2">
-                <Bot className="h-4 w-4 text-accent" />
-                <span className="text-sm font-medium">{agent.name}</span>
-              </div>
-              <p className="mt-2 text-xs uppercase tracking-wide text-muted-foreground">
-                {agent.status}
-              </p>
-              <div
-                className={`mt-3 h-1.5 w-full overflow-hidden rounded-full bg-muted ${
-                  agent.status === "running" ? "animate-pulse" : ""
-                }`}
-              >
-                <div
-                  className={`h-full rounded-full ${
-                    agent.status === "running"
-                      ? "w-2/3 bg-accent"
-                      : agent.status === "paused"
-                        ? "w-1/3 bg-amber-400"
-                        : "w-1/4 bg-primary"
-                  }`}
-                />
-              </div>
-            </div>
           ))}
         </div>
       </section>

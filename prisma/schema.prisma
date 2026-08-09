@@ -188,6 +188,31 @@ model ContactLead {
   createdAt DateTime @default(now())
 }
 
+/// Public marketing portfolio items (not CRM "Project")
+model PortfolioProject {
+  id           String   @id @default(cuid())
+  title        String
+  slug         String   @unique
+  summary      String   @db.Text
+  description  String?  @db.LongText
+  coverImage   String?
+  gallery      Json?
+  projectUrl   String?
+  repoUrl      String?
+  clientName   String?
+  industry     String?
+  year         Int?
+  tags         Json?
+  technologies Json?
+  featured     Boolean  @default(false)
+  published    Boolean  @default(true)
+  sortOrder    Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([published, sortOrder])
+}
+
 enum Role {
   ADMIN
   MANAGER

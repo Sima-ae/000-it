@@ -43,3 +43,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# uploaded portfolio assets (keep folder)
+/public/uploads/portfolio/*
+!/public/uploads/portfolio/.gitkeep

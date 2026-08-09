@@ -14,6 +14,7 @@ const protectedPrefixes = [
   "/seo-analysis",
   "/content-generator",
   "/settings",
+  "/portfolio-admin",
 ];
 
 export default async function middleware(request: NextRequest) {

@@ -6,6 +6,7 @@
     "about": "Over ons",
     "cases": "Cases",
     "blog": "Blog",
+    "portfolio": "Portfolio",
     "contact": "Contact",
     "aiScan": "AI-Scan",
     "login": "Inloggen",
@@ -14,9 +15,9 @@
     "logout": "Uitloggen"
   },
   "hero": {
-    "title": "Slimme Groei met AI — Jouw TripleZero iT Systeem",
+    "title": "Slimme Groei met AI en een TripleZero iT Systeem",
     "subtitle": "AI-integratie, SEO/AEO/GEO en full-funnel marketing in één groeisysteem voor Nederlandse bedrijven.",
-    "ctaScan": "Start Gratis AI-Scan",
+    "ctaScan": "(startende) Ondernemer?",
     "ctaApproach": "Bekijk Onze Aanpak",
     "scansLabel": "AI-scans uitgevoerd"
   },
@@ -36,8 +37,8 @@
     "title": "Prijzen",
     "subtitle": "Kies het plan dat past bij jouw groeifase.",
     "cta": "Kies Plan",
-    "starter": "Starter",
-    "growth": "Growth",
+    "starter": "Business",
+    "growth": "Extra Growth",
     "enterprise": "Enterprise",
     "custom": "Op maat",
     "month": "/maand"
@@ -45,11 +46,11 @@
   "faq": {
     "title": "Veelgestelde vragen",
     "q1": "Wat is TripleZero iT?",
-    "a1": "Een AI-gedreven groeiplatform dat integratie, SEO/AEO/GEO en marketing combineert.",
+    "a1": "Een AI-gedreven groeiplatform voor apps en/of websites, waarin adverteren, AEO/GEO/SEO, online marketing en social media samenwerken voor gewenste resultaten.",
     "q2": "Hoe werkt de gratis AI-Scan?",
-    "a2": "Je voert je URL in; onze agents scoren SEO, AEO, GEO, performance en AI-readiness.",
+    "a2": "Voer uw URL in; onze agents controleren op AEO, GEO, SEO, performance en AI-readiness, daarna nemen wij binnen 48 uur contact met u op om de resultaten en alle mogelijkheden te bespreken.",
     "q3": "Kan ik later upgraden?",
-    "a3": "Ja, je kunt altijd wisselen tussen Starter, Growth en Enterprise."
+    "a3": "Ja, het is mogelijk om een plan te wisselen tussen Business, Extra Growth en Enterprise."
   },
   "footer": {
     "tagline": "AI-driven growth for Dutch businesses.",
@@ -85,6 +86,7 @@
     "title": "Dashboard",
     "welcome": "Welkom terug",
     "projects": "Projecten",
+    "portfolio": "Portfolio",
     "clients": "Klanten",
     "agents": "AI Agents",
     "seo": "SEO Analyse",
@@ -124,6 +126,17 @@
     "geo": "GEO Score",
     "performance": "Performance",
     "readiness": "AI Readiness"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Geselecteerde projecten en resultaten van TripleZero iT.",
+    "empty": "Nog geen portfolio-items gepubliceerd.",
+    "back": "Terug naar portfolio",
+    "visit": "Bekijk project",
+    "repo": "Repository",
+    "technologies": "Technologieën",
+    "client": "Klant",
+    "industry": "Branche"
   },
   "about": {
     "title": "Over TripleZero iT",

@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -19,7 +21,7 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-brand: #0066ff;
+  --color-brand: #4a2c1a;
   --color-brand-purple: #7c3aed;
   --color-brand-mint: #00d4aa;
   --font-sans: var(--font-geist-sans);
@@ -30,26 +32,55 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+/* Light mode — clean white / grey / near-black, dark brown primary */
 :root {
   --radius: 0.75rem;
+  --background: #ffffff;
+  --foreground: #111827;
+  --card: #ffffff;
+  --card-foreground: #111827;
+  --popover: #ffffff;
+  --popover-foreground: #111827;
+  --primary: #4a2c1a;
+  --primary-foreground: #ffffff;
+  --secondary: #4b5563;
+  --secondary-foreground: #ffffff;
+  --muted: #f3f4f6;
+  --muted-foreground: #6b7280;
+  --accent: #111827;
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --ring: #4a2c1a;
+  --body-glow-1: transparent;
+  --body-glow-2: transparent;
+  --body-glow-3: transparent;
+}
+
+/* Dark mode — same dark brown primary, white button text */
+.dark {
   --background: #070b12;
   --foreground: #e8eef6;
   --card: rgba(16, 24, 40, 0.72);
   --card-foreground: #e8eef6;
   --popover: #101828;
   --popover-foreground: #e8eef6;
-  --primary: #0066ff;
-  --primary-foreground: #f8fafc;
-  --secondary: #7c3aed;
-  --secondary-foreground: #f8fafc;
+  --primary: #4a2c1a;
+  --primary-foreground: #ffffff;
+  --secondary: #6b4423;
+  --secondary-foreground: #ffffff;
   --muted: #152033;
   --muted-foreground: #94a3b8;
-  --accent: #00d4aa;
-  --accent-foreground: #04140f;
+  --accent: #c4a484;
+  --accent-foreground: #1a120a;
   --destructive: #ef4444;
   --border: rgba(148, 163, 184, 0.18);
   --input: rgba(148, 163, 184, 0.22);
-  --ring: #0066ff;
+  --ring: #4a2c1a;
+  --body-glow-1: rgba(74, 44, 26, 0.35);
+  --body-glow-2: rgba(107, 68, 35, 0.22);
+  --body-glow-3: rgba(196, 164, 132, 0.1);
 }
 
 * {
@@ -66,12 +97,12 @@ body {
   font-family: var(--font-geist-sans), system-ui, sans-serif;
   min-height: 100vh;
   background-image:
-    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(0, 102, 255, 0.28), transparent 55%),
-    radial-gradient(ellipse 60% 40% at 90% 0%, rgba(124, 58, 237, 0.22), transparent 50%),
-    radial-gradient(ellipse 50% 40% at 50% 100%, rgba(0, 212, 170, 0.08), transparent 55%);
+    radial-gradient(ellipse 80% 50% at 10% -10%, var(--body-glow-1), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 90% 0%, var(--body-glow-2), transparent 50%),
+    radial-gradient(ellipse 50% 40% at 50% 100%, var(--body-glow-3), transparent 55%);
   background-attachment: fixed;
 }
 
 ::selection {
-  background: rgba(0, 102, 255, 0.35);
+  background: rgba(74, 44, 26, 0.35);
 }

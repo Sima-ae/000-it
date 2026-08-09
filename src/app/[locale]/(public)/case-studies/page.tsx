@@ -38,7 +38,7 @@ export default async function CaseStudiesPage({
       </h1>
       <p className="mt-3 text-muted-foreground">
         {locale === "nl"
-          ? "Resultaten van klanten die met TripleZero groeien."
+          ? "Resultaten van klanten die met AI groeien."
           : "Results from clients growing with TripleZero."}
       </p>
       <div className="mt-10 grid gap-4 md:grid-cols-3">

@@ -6,6 +6,7 @@
     "about": "About",
     "cases": "Case Studies",
     "blog": "Blog",
+    "portfolio": "Portfolio",
     "contact": "Contact",
     "aiScan": "AI Scan",
     "login": "Log in",
@@ -36,8 +37,8 @@
     "title": "Pricing",
     "subtitle": "Pick the plan that fits your growth stage.",
     "cta": "Choose Plan",
-    "starter": "Starter",
-    "growth": "Growth",
+    "starter": "Business",
+    "growth": "Extra Growth",
     "enterprise": "Enterprise",
     "custom": "Custom",
     "month": "/month"
@@ -49,7 +50,7 @@
     "q2": "How does the free AI Scan work?",
     "a2": "Enter your URL; our agents score SEO, AEO, GEO, performance and AI readiness.",
     "q3": "Can I upgrade later?",
-    "a3": "Yes — move between Starter, Growth and Enterprise anytime."
+    "a3": "Yes — move between Business, Extra Growth and Enterprise anytime."
   },
   "footer": {
     "tagline": "AI-driven growth for modern businesses.",
@@ -85,6 +86,7 @@
     "title": "Dashboard",
     "welcome": "Welcome back",
     "projects": "Projects",
+    "portfolio": "Portfolio",
     "clients": "Clients",
     "agents": "AI Agents",
     "seo": "SEO Analysis",
@@ -124,6 +126,17 @@
     "geo": "GEO Score",
     "performance": "Performance",
     "readiness": "AI Readiness"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Selected projects and outcomes from TripleZero iT.",
+    "empty": "No portfolio projects published yet.",
+    "back": "Back to portfolio",
+    "visit": "View project",
+    "repo": "Repository",
+    "technologies": "Technologies",
+    "client": "Client",
+    "industry": "Industry"
   },
   "about": {
     "title": "About TripleZero iT",

@@ -7,11 +7,13 @@ import { useSession, signOut } from "next-auth/react";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/shared/ThemeToggle";
 import { cn } from "@/lib/utils";
 
 const links = [
   { href: "", key: "home" },
   { href: "/diensten", key: "services" },
+  { href: "/portfolio", key: "portfolio" },
   { href: "/over-ons", key: "about" },
   { href: "/case-studies", key: "cases" },
   { href: "/blog", key: "blog" },
@@ -91,6 +93,7 @@ export function Navigation() {
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
+          <ThemeToggle />
         </div>
       </div>
 

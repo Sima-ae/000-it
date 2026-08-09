@@ -106,6 +106,55 @@ async function main() {
     },
   });
 
+  await prisma.portfolioProject.upsert({
+    where: { slug: "nova-retail-growth" },
+    update: {},
+    create: {
+      title: "Nova Retail Growth Platform",
+      slug: "nova-retail-growth",
+      summary: "Full-funnel AI growth system with SEO, content agents and conversion redesign.",
+      description:
+        "We rebuilt Nova Retail’s acquisition stack with AI-assisted content, technical SEO and paid media orchestration.\n\nResults included stronger organic visibility and higher lead quality across campaigns.",
+      coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80",
+      gallery: [
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80",
+        "https://images.unsplash.com/photo-1553877522-43299b0330d1?w=1200&q=80",
+      ],
+      projectUrl: "https://000-it.com",
+      clientName: "Nova Retail",
+      industry: "E-commerce",
+      year: 2026,
+      tags: ["SEO", "AI", "CRO"],
+      technologies: ["Next.js", "MariaDB", "OpenAI"],
+      featured: true,
+      published: true,
+      sortOrder: 1,
+    },
+  });
+
+  await prisma.portfolioProject.upsert({
+    where: { slug: "blueharbor-ads" },
+    update: {},
+    create: {
+      title: "BlueHarbor Ads Engine",
+      slug: "blueharbor-ads",
+      summary: "AI-optimized Google and Meta campaigns that reduced CAC by a third.",
+      description:
+        "An always-on ads optimization layer with creative testing, bidding rules and weekly reporting for logistics lead gen.",
+      coverImage: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80",
+      gallery: [],
+      projectUrl: "https://000-it.com/nl/diensten",
+      clientName: "BlueHarbor Logistics",
+      industry: "Logistics",
+      year: 2025,
+      tags: ["Ads", "Automation"],
+      technologies: ["Google Ads", "Meta Ads", "Looker"],
+      featured: false,
+      published: true,
+      sortOrder: 2,
+    },
+  });
+
   console.log("Seed complete. Admin: admin@000-it.com / Admin123!");
 }
 
