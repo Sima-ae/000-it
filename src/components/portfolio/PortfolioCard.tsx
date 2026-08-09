@@ -28,7 +28,7 @@ export function PortfolioCard({ locale, item }: PortfolioCardProps) {
   return (
     <Link
       href={`/${locale}/portfolio/${item.slug}`}
-      className="group relative flex aspect-[4/5] flex-col overflow-hidden border border-border bg-card transition hover:border-primary/40"
+      className="group relative flex aspect-4/5 flex-col overflow-hidden border border-border bg-card transition hover:border-primary/40"
     >
       <div className="relative min-h-0 flex-1 bg-muted">
         {item.coverImage ? (
@@ -45,7 +45,7 @@ export function PortfolioCard({ locale, item }: PortfolioCardProps) {
             {item.title}
           </div>
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-90 transition group-hover:opacity-100" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent opacity-90 transition group-hover:opacity-100" />
         <div className="absolute inset-x-0 bottom-0 p-4 text-white">
           <div className="mb-2 flex flex-wrap gap-1">
             {item.featured && (

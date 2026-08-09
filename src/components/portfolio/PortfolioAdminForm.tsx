@@ -165,7 +165,7 @@ export function PortfolioAdminForm({
       <div className="space-y-2">
         <Label>Description</Label>
         <Textarea
-          className="min-h-[140px]"
+          className="min-h-35"
           value={form.description}
           onChange={(e) => setField("description", e.target.value)}
         />

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import { ExternalLink, Github, ArrowLeft } from "lucide-react";
+import { ExternalLink, GitBranch, ArrowLeft } from "lucide-react";
 import { prisma } from "@/lib/prisma";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -65,7 +65,7 @@ export default async function PortfolioDetailPage({
           {item.repoUrl && (
             <Button asChild variant="outline">
               <a href={item.repoUrl} target="_blank" rel="noreferrer">
-                <Github className="mr-2 h-4 w-4" />
+                <GitBranch className="mr-2 h-4 w-4" />
                 {t("repo")}
               </a>
             </Button>
