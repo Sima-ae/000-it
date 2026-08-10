@@ -18,9 +18,11 @@ const featuredByGroup: Record<string, string[]> = {
   webdesign: [
     "webdesign-support",
     "custom-webdesign",
+    "website-malware-security",
+    "website-speed-optimization",
+    "website-backup-migration",
     "nextjs-development",
     "php-web-development",
-    "html-css-javascript",
     "website-maintenance",
   ],
   design: [
@@ -109,12 +111,11 @@ export function ServicesMegaMenu({
 
       {open ? (
         <div
-          className="absolute left-1/2 top-full z-50 w-[min(96vw,980px)] -translate-x-1/2 pt-3"
+          className="fixed inset-x-0 top-17 z-50 flex justify-center px-3 pt-2 md:top-19 md:px-4"
           onMouseEnter={openMenu}
           onMouseLeave={scheduleClose}
         >
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-3" />
-          <div className="rounded-3xl border border-border/70 bg-background/95 p-4 shadow-xl backdrop-blur-xl">
+          <div className="w-full max-w-340 rounded-3xl border border-border/70 bg-background/95 p-4 shadow-xl backdrop-blur-xl md:p-5">
             <div className="mb-3 flex items-center justify-between gap-3 px-1">
               <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                 {isNl ? "Alle diensten" : "All services"}
@@ -127,15 +128,15 @@ export function ServicesMegaMenu({
                 {isNl ? "Overzicht" : "Overview"}
               </SoftLink>
             </div>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+            <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-5 lg:gap-5">
               {serviceGroups.map((group) => {
                 const slugs = featuredByGroup[group.id] || [];
                 const items = slugs
                   .map((slug) => serviceCatalog.find((s) => s.slug === slug))
                   .filter(Boolean);
                 return (
-                  <div key={group.id}>
-                    <p className="mb-2 px-2 text-xs font-semibold text-foreground">
+                  <div key={group.id} className="min-w-0">
+                    <p className="mb-2 whitespace-nowrap px-2 text-xs font-semibold text-foreground">
                       {isNl ? group.titleNl : group.title}
                     </p>
                     <div className="flex flex-col">
@@ -144,7 +145,7 @@ export function ServicesMegaMenu({
                           <SoftLink
                             key={item.slug}
                             href={serviceHref(locale, item)}
-                            className="rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-muted/70 hover:text-foreground"
+                            className="whitespace-nowrap rounded-lg px-2 py-1.5 text-[13px] leading-snug text-muted-foreground transition hover:bg-muted/70 hover:text-foreground"
                             onClick={() => setOpen(false)}
                           >
                             {isNl ? item.titleNl : item.title}

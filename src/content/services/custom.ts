@@ -45,6 +45,9 @@ const customServices: Record<string, CustomService> = {
         "Next.js / React applications",
         "HTML, CSS and JavaScript landing pages",
         "API integrations and automation hooks",
+        "Malware removal & security hardening",
+        "Performance & speed optimization",
+        "Backup / migration without downtime",
         "Monitoring, bugfixes and performance care",
       ]),
       h("How we work"),
@@ -64,6 +67,9 @@ const customServices: Record<string, CustomService> = {
         "Next.js / React-applicaties",
         "HTML, CSS en JavaScript landingspagina’s",
         "API-integraties en automatisering",
+        "Malware verwijderen & beveiliging",
+        "Performance & speed optimization",
+        "Backup / migratie zonder downtime",
         "Monitoring, bugfixes en performance-zorg",
       ]),
       h("Werkwijze"),
@@ -226,6 +232,147 @@ const customServices: Record<string, CustomService> = {
         "AI- / automatiserings-endpoints",
         "Foutafhandeling, logging en retries",
       ]),
+    ],
+  },
+  "website-malware-security": {
+    title: "Malware Removal & Security",
+    titleNl: "Malware verwijderen & beveiliging",
+    subtitle:
+      "Clean infections, harden custom stacks and keep PHP, HTML and Next.js sites safe — completely separate from WordPress security packages.",
+    subtitleNl:
+      "Infecties opruimen, maatwerk stacks harden en PHP-, HTML- en Next.js-sites veilig houden — volledig los van WordPress-securitypakketten.",
+    image: "/uploads/fixweb/wordpress-malware-removal.png",
+    blocks: [
+      h("Built for custom websites"),
+      p(
+        "Malware on a custom site is different from a WordPress takeover. We inspect code, server config, dependencies and public endpoints to remove threats without breaking your application.",
+      ),
+      h("What we do"),
+      l([
+        "Full malware scan across files, databases and uploads",
+        "Removal of backdoors, injected scripts and rogue cron jobs",
+        "Hardening: HTTPS, headers, access control and least privilege",
+        "Dependency and runtime updates (Node, PHP, packages)",
+        "Firewall / WAF guidance and monitoring recommendations",
+        "Incident report with root cause and prevention checklist",
+      ]),
+      h("Aftercare"),
+      p(
+        "Optional retainership with weekly checks so reinfection is caught early — ideal for e-commerce and lead-gen stacks.",
+      ),
+    ],
+    blocksNl: [
+      h("Gemaakt voor maatwerk websites"),
+      p(
+        "Malware op een maatwerksite is anders dan een WordPress-hack. Wij inspecteren code, serverconfig, dependencies en publieke endpoints om dreigingen te verwijderen zonder je applicatie te breken.",
+      ),
+      h("Wat we doen"),
+      l([
+        "Volledige malware-scan over bestanden, databases en uploads",
+        "Verwijderen van backdoors, geïnjecteerde scripts en rogue cronjobs",
+        "Harden: HTTPS, headers, toegangscontrole en least privilege",
+        "Dependency- en runtime-updates (Node, PHP, packages)",
+        "Firewall- / WAF-advies en monitoring-aanbevelingen",
+        "Incidentrapport met oorzaak en preventie-checklist",
+      ]),
+      h("Nazorg"),
+      p(
+        "Optioneel abonnement met wekelijkse checks zodat herinfectie vroeg wordt gezien — ideaal voor e-commerce en lead-gen stacks.",
+      ),
+    ],
+  },
+  "website-speed-optimization": {
+    title: "Performance & Speed Optimization",
+    titleNl: "Performance & Speed Optimization",
+    subtitle:
+      "Cut load times and improve Core Web Vitals for custom front-ends and APIs — not a WordPress cache plugin.",
+    subtitleNl:
+      "Verkort laadtijden en verbeter Core Web Vitals voor maatwerk front-ends en API’s — geen WordPress cache-plugin.",
+    image: "/uploads/fixweb/wordpress-speed-optimization.png",
+    blocks: [
+      h("Speed that converts"),
+      p(
+        "Slow pages kill leads. We profile your stack (HTML/CSS/JS, PHP or Next.js), remove bottlenecks and ship a faster experience users feel immediately.",
+      ),
+      h("Optimization scope"),
+      l([
+        "Lighthouse / Web Vitals baseline and target plan",
+        "Asset strategy: images, fonts, code splitting, lazy loading",
+        "Server and CDN caching for custom apps",
+        "Database and API response tuning",
+        "Rendering path improvements (SSR/ISR/static where useful)",
+        "Before/after report with measurable gains",
+      ]),
+      h("Typical results"),
+      p(
+        "Teams usually see faster LCP, lower bounce rates and better SEO signals within one sprint after launch of the optimizations.",
+      ),
+    ],
+    blocksNl: [
+      h("Snelheid die converteert"),
+      p(
+        "Trage pagina’s kosten leads. Wij profileren je stack (HTML/CSS/JS, PHP of Next.js), verwijderen bottlenecks en leveren een snellere ervaring die gebruikers meteen voelen.",
+      ),
+      h("Optimalisatie-scope"),
+      l([
+        "Lighthouse / Web Vitals-baseline en doelplan",
+        "Asset-strategie: images, fonts, code splitting, lazy loading",
+        "Server- en CDN-caching voor maatwerk apps",
+        "Database- en API-responstuning",
+        "Rendering-pad verbeteren (SSR/ISR/static waar nuttig)",
+        "Voor/na-rapport met meetbare winst",
+      ]),
+      h("Typische resultaten"),
+      p(
+        "Teams zien meestal snellere LCP, lagere bounce en betere SEO-signalen binnen één sprint na livegang van de optimalisaties.",
+      ),
+    ],
+  },
+  "website-backup-migration": {
+    title: "Backup / Migration",
+    titleNl: "Backup / Migratie",
+    subtitle:
+      "Reliable backups and low-downtime migrations for custom websites, PHP apps and Next.js projects.",
+    subtitleNl:
+      "Betrouwbare backups en migraties met minimale downtime voor maatwerk websites, PHP-apps en Next.js-projecten.",
+    image: "/uploads/fixweb/wordpress-backup-hosting-migration.png",
+    blocks: [
+      h("Move without the panic"),
+      p(
+        "Whether you switch host, region or architecture, we plan the cutover, verify data integrity and keep a rollback path ready.",
+      ),
+      h("What is included"),
+      l([
+        "Full backup of files, databases and environment config",
+        "Migration to new VPS, cloud or managed hosting",
+        "DNS cutover plan with low/zero downtime windows",
+        "SSL, redirects and smoke tests after go-live",
+        "Automated backup schedule setup (daily/weekly)",
+        "Rollback package stored for the first critical days",
+      ]),
+      h("Best fit"),
+      p(
+        "Perfect when you outgrow shared hosting, move off a legacy server, or need a disaster-recovery routine for a production app.",
+      ),
+    ],
+    blocksNl: [
+      h("Verhuizen zonder paniek"),
+      p(
+        "Of je nu van host, regio of architectuur wisselt: wij plannen de cutover, controleren dataintegriteit en houden een rollback-pad klaar.",
+      ),
+      h("Wat erbij zit"),
+      l([
+        "Volledige backup van bestanden, databases en environment-config",
+        "Migratie naar nieuwe VPS, cloud of managed hosting",
+        "DNS-cutoverplan met lage/zero downtime-windows",
+        "SSL, redirects en smoke tests na livegang",
+        "Automatische backup-planning (dagelijks/wekelijks)",
+        "Rollback-pakket bewaard voor de eerste kritieke dagen",
+      ]),
+      h("Ideaal wanneer"),
+      p(
+        "Perfect als je shared hosting ontgroeit, van een legacy server af wilt, of disaster-recovery nodig hebt voor een productie-app.",
+      ),
     ],
   },
   "logo-brand-identity": {

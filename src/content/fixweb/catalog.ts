@@ -152,6 +152,39 @@ export const serviceCatalog: ServiceNavItem[] = [
     summary: "Connect CRMs, payments, ERPs and AI services cleanly.",
     summaryNl: "Koppel CRM’s, betalingen, ERP’s en AI-diensten netjes aan elkaar.",
   },
+  {
+    slug: "website-malware-security",
+    title: "Malware Removal & Security",
+    titleNl: "Malware verwijderen & beveiliging",
+    kind: "page",
+    group: "webdesign",
+    summary:
+      "Malware cleanup, hardening and ongoing security for custom PHP, HTML and Next.js sites — not WordPress.",
+    summaryNl:
+      "Malware opruimen, harden en doorlopende beveiliging voor maatwerk PHP-, HTML- en Next.js-sites — geen WordPress.",
+  },
+  {
+    slug: "website-speed-optimization",
+    title: "Performance & Speed Optimization",
+    titleNl: "Performance & Speed Optimization",
+    kind: "page",
+    group: "webdesign",
+    summary:
+      "Faster load times, Core Web Vitals and caching for custom stacks outside WordPress.",
+    summaryNl:
+      "Snellere laadtijden, Core Web Vitals en caching voor maatwerk stacks buiten WordPress.",
+  },
+  {
+    slug: "website-backup-migration",
+    title: "Backup / Migration",
+    titleNl: "Backup / Migratie",
+    kind: "page",
+    group: "webdesign",
+    summary:
+      "Safe backups and zero-downtime migrations for custom websites and apps.",
+    summaryNl:
+      "Veilige backups en migraties zonder downtime voor maatwerk websites en apps.",
+  },
 
   // Marketing
   {

@@ -122,7 +122,7 @@ export default async function DigitalDesignPage({
               <Reveal key={item.slug} delay={i * 0.04}>
                 <SoftLink
                   href={serviceHref(locale, meta)}
-                  className="group flex h-full flex-col rounded-[1.5rem] border border-border/70 bg-background/50 p-5 transition hover:border-primary/40 hover:bg-primary/5"
+                  className="group flex h-full flex-col rounded-3xl border border-border/70 bg-background/50 p-5 transition hover:border-primary/40 hover:bg-primary/5"
                 >
                   <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
                     <Icon className="h-5 w-5" />
@@ -160,7 +160,7 @@ export default async function DigitalDesignPage({
               const Icon = tool.icon;
               return (
                 <Reveal key={tool.name} delay={i * 0.05}>
-                  <div className="rounded-[1.5rem] border border-border/70 bg-background/70 px-5 py-6">
+                  <div className="rounded-3xl border border-border/70 bg-background/70 px-5 py-6">
                     <Icon className="h-6 w-6 text-primary" />
                     <p className="mt-3 font-medium">{tool.name}</p>
                   </div>
@@ -173,7 +173,7 @@ export default async function DigitalDesignPage({
 
       <section className="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
         <Reveal>
-          <div className="rounded-[2rem] border border-border/70 bg-linear-to-br from-primary/12 via-background to-accent/10 px-6 py-10 md:px-10 md:py-12">
+          <div className="rounded-4xl border border-border/70 bg-linear-to-br from-primary/12 via-background to-accent/10 px-6 py-10 md:px-10 md:py-12">
             <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
               {isNl ? "Klaar voor een strak merkbeeld?" : "Ready for a sharp brand image?"}
             </h2>
