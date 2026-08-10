@@ -1,93 +1,175 @@
-import { z } from "zod";
 import type { NewsStory } from "@/lib/auto-news/fetch-stories";
 
-const generatedSchema = z.object({
-  title: z.string().min(8).max(160),
-  titleNl: z.string().min(8).max(160),
-  excerpt: z.string().min(40).max(280),
-  excerptNl: z.string().min(40).max(280),
-  description: z.string().min(400),
-  descriptionNl: z.string().min(400),
-  industry: z.string().min(2).max(60),
-  tags: z.array(z.string().min(1)).min(3).max(6),
-});
+export type GeneratedNewsDraft = {
+  title: string;
+  titleNl: string;
+  excerpt: string;
+  excerptNl: string;
+  description: string;
+  descriptionNl: string;
+  industry: string;
+  tags: string[];
+};
 
-export type GeneratedNewsDraft = z.infer<typeof generatedSchema>;
-
-function extractJsonObject(text: string) {
-  const fenced = text.match(/```(?:json)?\s*([\s\S]*?)```/i);
-  const raw = (fenced?.[1] || text).trim();
-  const start = raw.indexOf("{");
-  const end = raw.lastIndexOf("}");
-  if (start < 0 || end < start) throw new Error("Model did not return JSON");
-  return JSON.parse(raw.slice(start, end + 1)) as unknown;
+function cleanText(value: string) {
+  return value.replace(/\s+/g, " ").trim();
 }
 
+function truncate(value: string, max: number) {
+  const text = cleanText(value);
+  if (text.length <= max) return text;
+  const sliced = text.slice(0, max - 1);
+  const cut = sliced.lastIndexOf(" ");
+  return `${(cut > 40 ? sliced.slice(0, cut) : sliced).trim()}…`;
+}
+
+function paragraphize(summary: string) {
+  const text = cleanText(summary);
+  if (!text) return [];
+  const parts = text
+    .split(/(?<=[.!?])\s+/)
+    .map((p) => p.trim())
+    .filter((p) => p.length > 40);
+  if (parts.length >= 2) return parts.slice(0, 4);
+  if (text.length < 280) return [text];
+  const mid = Math.floor(text.length / 2);
+  const splitAt = text.lastIndexOf(" ", mid);
+  if (splitAt > 80) {
+    return [text.slice(0, splitAt).trim(), text.slice(splitAt).trim()];
+  }
+  return [text];
+}
+
+function inferIndustry(story: NewsStory) {
+  const blob = `${story.title} ${story.summary}`.toLowerCase();
+  if (/\b(video|sora|veo|runway|wan|seedance|clips?)\b/.test(blob)) return "AI / Video";
+  if (/\b(image|midjourney|flux|imagen|dall-?e|diffusion)\b/.test(blob)) return "AI / Image";
+  if (/\b(agent|workflow|automat|n8n|zapier|orchestr)\b/.test(blob)) return "AI / Automation";
+  if (/\b(robot|embodied|hardware)\b/.test(blob)) return "AI / Robotics";
+  if (/\b(security|cyber|mythos)\b/.test(blob)) return "AI / Security";
+  if (/\b(api|model|gpt|claude|gemini|llm|openai|anthropic)\b/.test(blob)) return "AI / Models";
+  return "AI / Industry";
+}
+
+function inferTags(story: NewsStory) {
+  const blob = `${story.title} ${story.summary}`.toLowerCase();
+  const tags = new Set<string>(["AI"]);
+  if (blob.includes("openai") || blob.includes("gpt")) tags.add("OpenAI");
+  if (blob.includes("google") || blob.includes("gemini")) tags.add("Google");
+  if (blob.includes("anthropic") || blob.includes("claude")) tags.add("Anthropic");
+  if (blob.includes("microsoft") || blob.includes("copilot") || blob.includes("azure")) {
+    tags.add("Microsoft");
+  }
+  if (/\b(video|sora|veo|runway)\b/.test(blob)) tags.add("Video");
+  if (/\b(image|midjourney|flux)\b/.test(blob)) tags.add("Image");
+  if (/\b(agent|workflow|automat)\b/.test(blob)) tags.add("Automation");
+  if (/\b(api|model|llm)\b/.test(blob)) tags.add("Models");
+  tags.add(story.sourceName.split(" ")[0] || story.sourceId);
+  return Array.from(tags).slice(0, 6);
+}
+
+async function translateToNl(text: string): Promise<string> {
+  const input = cleanText(text);
+  if (!input) return "";
+
+  // Chunk long bodies so free translate endpoints stay reliable
+  const chunks: string[] = [];
+  if (input.length <= 900) {
+    chunks.push(input);
+  } else {
+    const paras = input.split(/\n\n+/);
+    let buf = "";
+    for (const para of paras) {
+      if ((buf + "\n\n" + para).length > 900 && buf) {
+        chunks.push(buf);
+        buf = para;
+      } else {
+        buf = buf ? `${buf}\n\n${para}` : para;
+      }
+    }
+    if (buf) chunks.push(buf);
+  }
+
+  const translated: string[] = [];
+  for (const chunk of chunks) {
+    const url =
+      "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=nl&dt=t&q=" +
+      encodeURIComponent(chunk);
+    const res = await fetch(url, {
+      headers: { "User-Agent": "TripleZeroIT-AutoNews/1.0" },
+      signal: AbortSignal.timeout(30_000),
+    });
+    if (!res.ok) {
+      throw new Error(`Translate failed (${res.status})`);
+    }
+    const data = (await res.json()) as unknown;
+    if (!Array.isArray(data) || !Array.isArray(data[0])) {
+      throw new Error("Unexpected translate payload");
+    }
+    const piece = data[0]
+      .map((row: unknown) => (Array.isArray(row) ? String(row[0] || "") : ""))
+      .join("");
+    translated.push(piece.trim());
+  }
+
+  return translated.join("\n\n").trim();
+}
+
+function buildEnglishDraft(story: NewsStory): Omit<GeneratedNewsDraft, "titleNl" | "excerptNl" | "descriptionNl"> {
+  const title = truncate(story.title, 140);
+  const paragraphs = paragraphize(story.summary);
+  const published = story.publishedAt
+    ? (() => {
+        const t = Date.parse(story.publishedAt);
+        return Number.isFinite(t)
+          ? new Date(t).toLocaleDateString("en-GB", {
+              day: "numeric",
+              month: "long",
+              year: "numeric",
+            })
+          : null;
+      })()
+    : null;
+
+  const lead = published
+    ? `${story.sourceName} published an update on ${published}: ${title}.`
+    : `${story.sourceName} reports: ${title}.`;
+
+  const body =
+    paragraphs.length > 0
+      ? paragraphs.join("\n\n")
+      : `${story.sourceName} shared a new AI-industry update. The announcement focuses on developments that matter for teams working with models, automation and digital production.`;
+
+  const takeaway =
+    "For agencies and product teams, the practical step is to verify how this affects cost, tooling and workflows — then update prompts, automations and publishing pipelines where needed. Always cross-check the original source before changing production systems.";
+
+  const description = [lead, body, takeaway].join("\n\n");
+  const excerpt = truncate(paragraphs[0] || lead, 220);
+
+  return {
+    title,
+    excerpt,
+    description,
+    industry: inferIndustry(story),
+    tags: inferTags(story),
+  };
+}
+
+/** Build EN+NL posts from real RSS facts (no OpenAI key required). */
 export async function generateBilingualNewsDraft(
   story: NewsStory,
 ): Promise<GeneratedNewsDraft> {
-  const apiKey = process.env.OPENAI_API_KEY?.trim();
-  if (!apiKey) {
-    throw new Error("OPENAI_API_KEY is not configured");
-  }
+  const en = buildEnglishDraft(story);
+  const [titleNl, excerptNl, descriptionNl] = await Promise.all([
+    translateToNl(en.title),
+    translateToNl(en.excerpt),
+    translateToNl(en.description),
+  ]);
 
-  const model = process.env.OPENAI_NEWS_MODEL?.trim() || "gpt-4o-mini";
-
-  const system = [
-    "You are a senior technology journalist for TripleZero iT (Dutch AI/web agency).",
-    "Write factual blog posts ONLY from the provided source story. Do not invent numbers, dates, product names, or quotes.",
-    "If a detail is missing, omit it rather than guessing.",
-    "Return STRICT JSON with keys: title, titleNl, excerpt, excerptNl, description, descriptionNl, industry, tags.",
-    "description and descriptionNl must be 3-5 short paragraphs separated by \\n\\n.",
-    "Dutch must be natural professional Netherlands Dutch (not literal word-for-word).",
-    "English must be clear professional EN.",
-    "tags: 3-6 short topical tags.",
-    "industry: short category like AI / Models, AI / Video, Automation, etc.",
-  ].join(" ");
-
-  const user = JSON.stringify(
-    {
-      sourceName: story.sourceName,
-      sourceUrl: story.url,
-      title: story.title,
-      publishedAt: story.publishedAt,
-      summary: story.summary,
-    },
-    null,
-    2,
-  );
-
-  const res = await fetch("https://api.openai.com/v1/chat/completions", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      model,
-      temperature: 0.35,
-      response_format: { type: "json_object" },
-      messages: [
-        { role: "system", content: system },
-        {
-          role: "user",
-          content: `Create one bilingual news post JSON from this real source:\n${user}`,
-        },
-      ],
-    }),
-    signal: AbortSignal.timeout(90_000),
-  });
-
-  if (!res.ok) {
-    const body = await res.text().catch(() => "");
-    throw new Error(`OpenAI error ${res.status}: ${body.slice(0, 300)}`);
-  }
-
-  const payload = (await res.json()) as {
-    choices?: Array<{ message?: { content?: string } }>;
+  return {
+    ...en,
+    titleNl: titleNl || en.title,
+    excerptNl: excerptNl || en.excerpt,
+    descriptionNl: descriptionNl || en.description,
   };
-  const content = payload.choices?.[0]?.message?.content;
-  if (!content) throw new Error("OpenAI returned empty content");
-
-  return generatedSchema.parse(extractJsonObject(content));
 }

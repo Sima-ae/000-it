@@ -28,36 +28,20 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - name: Check secrets
-        id: secrets
-        env:
-          CRON_SECRET: ${{ secrets.CRON_SECRET }}
-          APP_URL: ${{ secrets.AUTO_NEWS_APP_URL }}
-        run: |
-          if [[ -z "${CRON_SECRET:-}" ]]; then
-            echo "::error::Set repository secret CRON_SECRET"
-            exit 1
-          fi
-          if [[ -z "${APP_URL:-}" ]]; then
-            echo "APP_URL=https://000-it.com" >> "$GITHUB_ENV"
-          else
-            echo "APP_URL=${APP_URL}" >> "$GITHUB_ENV"
-          fi
-
       - name: Trigger auto-news endpoint
         env:
-          CRON_SECRET: ${{ secrets.CRON_SECRET }}
           FORCE: ${{ github.event.inputs.force || 'false' }}
+          APP_URL: ${{ secrets.AUTO_NEWS_APP_URL }}
         run: |
           set -euo pipefail
+          BASE_URL="${APP_URL:-https://000-it.com}"
           FORCE_FLAG=""
           if [[ "${FORCE}" == "true" ]]; then
             FORCE_FLAG="&force=1"
           fi
-          URL="${APP_URL%/}/api/cron/auto-news?limit=6${FORCE_FLAG}"
-          echo "POST ${URL%%\?*}?limit=6..."
+          URL="${BASE_URL%/}/api/cron/auto-news?limit=6${FORCE_FLAG}"
+          echo "POST ${BASE_URL%/}/api/cron/auto-news?limit=6..."
           curl -fsS -X POST \
-            -H "Authorization: Bearer ${CRON_SECRET}" \
             -H "Accept: application/json" \
             --max-time 280 \
             "$URL" | tee /tmp/auto-news.json
