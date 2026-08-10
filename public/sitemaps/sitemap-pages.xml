@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:3066/nl</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/diensten</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/diensten" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/diensten" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/diensten" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/diensten</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/diensten" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/diensten" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/diensten" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/ai-scan</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.94</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/ai-scan" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/ai-scan" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/ai-scan" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/ai-scan</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.94</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/ai-scan" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/ai-scan" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/ai-scan" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/afspraak</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/afspraak" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/afspraak" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/afspraak" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/afspraak</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/afspraak" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/afspraak" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/afspraak" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/nieuws</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/nieuws" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/nieuws" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/nieuws" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/nieuws</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/nieuws" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/nieuws" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/nieuws" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/contact</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/contact" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/contact</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/contact" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/portfolio</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/portfolio" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/portfolio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/portfolio" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/portfolio</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/portfolio" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/portfolio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/portfolio" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/over-ons</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/over-ons" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/over-ons" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/over-ons" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/over-ons</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/over-ons" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/over-ons" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/over-ons" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/case-studies</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/case-studies" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/case-studies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/case-studies" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/case-studies</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/case-studies" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/case-studies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/case-studies" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/digital-design</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/digital-design" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/digital-design" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/digital-design" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/digital-design</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/digital-design" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/digital-design" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/digital-design" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/faq</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/faq" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/faq" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/faq" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/faq</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/faq" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/faq" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/faq" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/privacy</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/privacy" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/privacy</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/privacy" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/cookies</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/cookies" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/cookies" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/cookies</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/cookies" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/cookies" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/voorwaarden</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/voorwaarden" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/voorwaarden" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/voorwaarden" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/voorwaarden</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/voorwaarden" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/voorwaarden" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/voorwaarden" />
+  </url>
+</urlset>

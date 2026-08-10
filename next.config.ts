@@ -22,6 +22,14 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "image.pollinations.ai",
       },
+      {
+        protocol: "https",
+        hostname: "000-it.com",
+      },
+      {
+        protocol: "https",
+        hostname: "www.000-it.com",
+      },
     ],
   },
   async redirects() {

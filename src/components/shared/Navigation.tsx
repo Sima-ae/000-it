@@ -11,16 +11,18 @@ import { SoftLink } from "@/components/shared/SoftLink";
 import { ServicesMegaMenu } from "@/components/shared/ServicesMegaMenu";
 import { InfoDropdown } from "@/components/shared/InfoDropdown";
 import { LanguageSwitcher } from "@/components/shared/LanguageSwitcher";
+import { CartNavButton } from "@/components/shop/CartNavButton";
 import { serviceCatalog, serviceHref, sortedServiceGroups } from "@/content/fixweb/catalog";
 import { cn } from "@/lib/utils";
 
 const primaryLinks = [
   { href: "", key: "home" },
   { href: "/over-ons", key: "info", info: true },
-  { href: "/nieuws", key: "blog" },
   { href: "/ai-scan", key: "aiScan" },
   { href: "/diensten", key: "services", mega: true },
   { href: "/portfolio", key: "portfolio" },
+  { href: "/shop", key: "shop" },
+  { href: "/nieuws", key: "blog" },
   // { href: "/case-studies", key: "cases" },
   { href: "/contact", key: "contact" },
 ] as const;
@@ -130,6 +132,7 @@ export function Navigation() {
               {t("book")}
             </SoftLink>
             <LanguageSwitcher />
+            <CartNavButton />
             {session?.user ? (
               <>
                 <Button asChild size="sm" variant="outline" className="hidden rounded-xl sm:inline-flex">

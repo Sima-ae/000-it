@@ -2,11 +2,13 @@
 
 import { useMemo, useState } from "react";
 import { useLocale } from "next-intl";
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { SoftLink } from "@/components/shared/SoftLink";
 import { GlassCard } from "@/components/marketing/GlassCard";
 import { Reveal } from "@/components/marketing/Reveal";
 import { ServiceInquiryDialog } from "@/components/marketing/ServiceInquiryDialog";
+import { useCartStore } from "@/lib/shop/cart-store";
+import { planProductId } from "@/lib/shop/catalog";
 import { cn } from "@/lib/utils";
 
 export type PricingPlan = {
@@ -47,6 +49,8 @@ export function PricingPlans({
   };
 }) {
   const locale = useLocale();
+  const router = useRouter();
+  const addItem = useCartStore((s) => s.addItem);
   const [billing, setBilling] = useState<Billing>("monthly");
 
   const resolved = useMemo(
@@ -75,6 +79,12 @@ export function PricingPlans({
       }),
     [plans, billing, labels, locale],
   );
+
+  function orderPlan(planId: "starter" | "growth") {
+    const productId = planProductId(planId, billing);
+    addItem(productId, 1);
+    router.push(`/${locale}/shop/cart`);
+  }
 
   return (
     <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
@@ -174,11 +184,15 @@ export function PricingPlans({
                 />
               ) : (
                 <Button
-                  asChild
                   className="mt-8 w-full rounded-2xl"
                   variant={plan.featured ? "default" : "outline"}
+                  onClick={() => {
+                    if (plan.id === "starter" || plan.id === "growth") {
+                      orderPlan(plan.id);
+                    }
+                  }}
                 >
-                  <SoftLink href={`/${locale}/register`}>{labels.cta}</SoftLink>
+                  {labels.cta}
                 </Button>
               )}
             </GlassCard>

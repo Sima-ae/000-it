@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>http://localhost:3066/sitemaps/sitemap-cities.xml</loc>
+    <lastmod>2026-08-10</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>http://localhost:3066/sitemaps/sitemap-pages.xml</loc>
+    <lastmod>2026-08-10</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>http://localhost:3066/sitemaps/sitemap-services.xml</loc>
+    <lastmod>2026-08-10</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>http://localhost:3066/sitemaps/sitemap-news.xml</loc>
+    <lastmod>2026-08-10</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>http://localhost:3066/sitemaps/sitemap-portfolio.xml</loc>
+    <lastmod>2026-08-10</lastmod>
+  </sitemap>
+</sitemapindex>

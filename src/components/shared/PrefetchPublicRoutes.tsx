@@ -11,6 +11,7 @@ const PUBLIC_PATHS = [
   "/ai-scan",
   "/diensten",
   "/portfolio",
+  "/shop",
   "/nieuws",
   "/faq",
   "/contact",

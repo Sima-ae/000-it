@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -6,12 +7,33 @@ import { ExternalLink, GitBranch, ArrowLeft } from "lucide-react";
 import { prisma } from "@/lib/prisma";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { buildPageMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
 
 function asList(value: unknown): string[] {
   if (!Array.isArray(value)) return [];
   return value.map(String);
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}): Promise<Metadata> {
+  const { locale, slug } = await params;
+  const item = await prisma.portfolioProject.findFirst({
+    where: { slug, published: true },
+  });
+  if (!item) return { title: "Not found", robots: { index: false } };
+  return buildPageMetadata({
+    locale,
+    path: `/portfolio/${slug}`,
+    title: item.title,
+    description: item.summary || item.title,
+    image: item.coverImage,
+    keywords: asList(item.tags),
+  });
 }
 
 export default async function PortfolioDetailPage({

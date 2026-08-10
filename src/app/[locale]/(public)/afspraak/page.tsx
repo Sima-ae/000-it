@@ -1,6 +1,17 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { AppointmentBooking } from "@/components/marketing/AppointmentBooking";
 import { Reveal } from "@/components/marketing/Reveal";
+import { buildStaticPageMetadata } from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return buildStaticPageMetadata(locale, "/afspraak");
+}
 
 export default async function AppointmentPage({
   params,

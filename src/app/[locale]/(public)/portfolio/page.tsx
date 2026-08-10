@@ -1,8 +1,19 @@
+import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { prisma } from "@/lib/prisma";
 import { PortfolioGrid } from "@/components/portfolio/PortfolioGrid";
+import { buildStaticPageMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return buildStaticPageMetadata(locale, "/portfolio");
+}
 
 export default async function PortfolioPage({
   params,

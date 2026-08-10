@@ -44,8 +44,14 @@ export function Footer() {
               <SoftLink href={`/${locale}/over-ons`} className="leading-snug transition hover:text-foreground">
                 {nav("about")}
               </SoftLink>
+              <SoftLink href={`/${locale}/locaties`} className="leading-snug transition hover:text-foreground">
+                {isNl ? "Locaties" : "Locations"}
+              </SoftLink>
               <SoftLink href={`/${locale}/portfolio`} className="leading-snug transition hover:text-foreground">
                 {nav("portfolio")}
+              </SoftLink>
+              <SoftLink href={`/${locale}/shop`} className="leading-snug transition hover:text-foreground">
+                {nav("shop")}
               </SoftLink>
               <SoftLink href={`/${locale}/faq`} className="leading-snug transition hover:text-foreground">
                 {nav("faq")}

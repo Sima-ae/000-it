@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
@@ -15,6 +16,7 @@ import {
   serviceHref,
 } from "@/content/fixweb/catalog";
 import { formatEuro, getServiceCardMeta, getServiceContent } from "@/lib/fixweb-content";
+import { buildServiceMetadata } from "@/lib/seo";
 
 const aiInquiryBySlug: Record<
   string,
@@ -73,6 +75,23 @@ const aiInquiryBySlug: Record<
 
 export function generateStaticParams() {
   return getServiceSlugs().map((slug) => ({ slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}): Promise<Metadata> {
+  const { locale, slug } = await params;
+  const content = getServiceContent(slug, locale);
+  if (!content) return { title: "Not found", robots: { index: false } };
+  return buildServiceMetadata({
+    locale,
+    slug,
+    title: content.title,
+    description: content.subtitle,
+    image: content.image,
+  });
 }
 
 export default async function ServiceDetailPage({

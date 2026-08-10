@@ -1,8 +1,19 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
 import { FaqCategories } from "@/components/content/FaqAccordion";
 import { getFaqContent } from "@/content/faq";
+import { buildStaticPageMetadata } from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return buildStaticPageMetadata(locale, "/faq");
+}
 
 export default async function FaqPage({
   params,

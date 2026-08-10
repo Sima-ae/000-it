@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import {
   BookOpen,
@@ -14,6 +15,16 @@ import { SoftLink } from "@/components/shared/SoftLink";
 import { Reveal } from "@/components/marketing/Reveal";
 import { Button } from "@/components/ui/button";
 import { serviceCatalog, serviceHref } from "@/content/fixweb/catalog";
+import { buildStaticPageMetadata } from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return buildStaticPageMetadata(locale, "/digital-design");
+}
 
 const tools = [
   { name: "Adobe Photoshop", icon: ImageIcon },

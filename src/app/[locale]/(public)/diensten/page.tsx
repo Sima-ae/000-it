@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Reveal } from "@/components/marketing/Reveal";
 import { ServiceCard } from "@/components/content/ServiceCard";
@@ -9,6 +10,16 @@ import {
   sortedServiceGroups,
 } from "@/content/fixweb/catalog";
 import { getServiceCardMeta } from "@/lib/fixweb-content";
+import { buildStaticPageMetadata } from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return buildStaticPageMetadata(locale, "/diensten");
+}
 
 const aiServices = [
   { key: "ai", href: "/diensten/ai-integration", image: "/uploads/fixweb/ai-integratie.png" },

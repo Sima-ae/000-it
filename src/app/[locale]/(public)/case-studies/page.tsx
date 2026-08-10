@@ -1,9 +1,20 @@
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Reveal } from "@/components/marketing/Reveal";
 import { CaseStudiesGrid } from "@/components/content/CaseStudiesGrid";
 import { listCaseStudies } from "@/lib/case-studies";
+import { buildStaticPageMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return buildStaticPageMetadata(locale, "/case-studies");
+}
 
 export default async function CaseStudiesPage({
   params,

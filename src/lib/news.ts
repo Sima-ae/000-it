@@ -90,6 +90,8 @@ export function localizeNewsPost(post: NewsPost, locale: string): NewsPost {
   };
 }
 
+export const NEWS_PAGE_SIZE = 21;
+
 export async function listNewsPosts(opts?: { all?: boolean; locale?: string }) {
   const rows = await prisma.newsPost.findMany({
     where: opts?.all ? undefined : { published: true },
@@ -100,11 +102,75 @@ export async function listNewsPosts(opts?: { all?: boolean; locale?: string }) {
   return mapped.map((post) => localizeNewsPost(post, opts.locale!));
 }
 
+export async function listNewsPostsPage(opts: {
+  locale?: string;
+  page?: number;
+  pageSize?: number;
+  all?: boolean;
+}) {
+  const pageSize = Math.max(1, opts.pageSize ?? NEWS_PAGE_SIZE);
+  const page = Math.max(1, opts.page ?? 1);
+  const where = opts.all ? undefined : { published: true };
+
+  const [total, rows] = await Promise.all([
+    prisma.newsPost.count({ where }),
+    prisma.newsPost.findMany({
+      where,
+      orderBy: [{ date: "desc" }, { createdAt: "desc" }],
+      skip: (page - 1) * pageSize,
+      take: pageSize,
+    }),
+  ]);
+
+  const totalPages = Math.max(1, Math.ceil(total / pageSize));
+  const safePage = Math.min(page, totalPages);
+  // If requested page is past the end, refetch the last page.
+  const pageRows =
+    safePage === page
+      ? rows
+      : await prisma.newsPost.findMany({
+          where,
+          orderBy: [{ date: "desc" }, { createdAt: "desc" }],
+          skip: (safePage - 1) * pageSize,
+          take: pageSize,
+        });
+
+  let items = pageRows.map(mapNews);
+  if (opts.locale) {
+    items = items.map((post) => localizeNewsPost(post, opts.locale!));
+  }
+
+  return {
+    items,
+    total,
+    page: safePage,
+    pageSize,
+    totalPages,
+  };
+}
+
 export async function getNewsPost(id: string, locale?: string) {
   const row = await prisma.newsPost.findUnique({ where: { id } });
   if (!row) return null;
   const mapped = mapNews(row);
   return locale ? localizeNewsPost(mapped, locale) : mapped;
+}
+
+export async function getPublishedNewsPost(id: string, locale?: string) {
+  const row = await prisma.newsPost.findFirst({
+    where: { id, published: true },
+  });
+  if (!row) return null;
+  const mapped = mapNews(row);
+  return locale ? localizeNewsPost(mapped, locale) : mapped;
+}
+
+export async function listPublishedNewsIds() {
+  return prisma.newsPost.findMany({
+    where: { published: true },
+    select: { id: true, date: true, updatedAt: true },
+    orderBy: [{ date: "desc" }, { updatedAt: "desc" }],
+  });
 }
 
 export async function createNewsPost(

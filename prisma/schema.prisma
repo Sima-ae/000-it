@@ -44,6 +44,7 @@ model User {
   assignedLeads      ContactLead[]         @relation("LeadAssignee")
   newsPosts          NewsPost[]
   caseStudies        CaseStudy[]
+  shopOrders         ShopOrder[]
 }
 
 model Account {
@@ -276,6 +277,47 @@ model Payment {
   stripeId  String?
   createdAt DateTime      @default(now())
   updatedAt DateTime      @updatedAt
+}
+
+model ShopOrder {
+  id                    String         @id @default(cuid())
+  orderNumber           String         @unique
+  email                 String
+  name                  String
+  company               String?
+  locale                String         @default("nl")
+  currency              String         @default("EUR")
+  subtotalExcl          Float
+  vatAmount             Float
+  totalIncl             Float
+  vatRate               Float          @default(0.21)
+  status                ShopOrderStatus @default(PENDING)
+  stripeSessionId       String?        @unique
+  stripePaymentIntentId String?
+  userId                String?
+  user                  User?          @relation(fields: [userId], references: [id], onDelete: SetNull)
+  items                 ShopOrderItem[]
+  createdAt             DateTime       @default(now())
+  updatedAt             DateTime       @updatedAt
+
+  @@index([email])
+  @@index([status])
+  @@index([createdAt])
+}
+
+model ShopOrderItem {
+  id            String    @id @default(cuid())
+  orderId       String
+  order         ShopOrder @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  productId     String
+  name          String
+  quantity      Int       @default(1)
+  unitPriceIncl Float
+  vatRate       Float     @default(0.21)
+  createdAt     DateTime  @default(now())
+
+  @@index([orderId])
+  @@index([productId])
 }
 
 model ContactLead {
@@ -575,4 +617,11 @@ enum PaymentStatus {
   COMPLETED
   FAILED
   REFUNDED
+}
+
+enum ShopOrderStatus {
+  PENDING
+  PAID
+  FAILED
+  CANCELLED
 }

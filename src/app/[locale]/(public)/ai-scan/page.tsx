@@ -1,6 +1,17 @@
+import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { AIScanForm } from "@/components/marketing/AIScanForm";
 import { Reveal } from "@/components/marketing/Reveal";
+import { buildStaticPageMetadata } from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return buildStaticPageMetadata(locale, "/ai-scan");
+}
 
 export default async function AIScanPage({
   params,

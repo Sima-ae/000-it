@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:3066/nl/locaties/amsterdam</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/amsterdam" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/amsterdam" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/amsterdam" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/amsterdam</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/amsterdam" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/amsterdam" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/amsterdam" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties/rotterdam</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.98</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/rotterdam" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/rotterdam" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/rotterdam" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/rotterdam</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.98</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/rotterdam" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/rotterdam" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/rotterdam" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties/den-haag</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.96</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/den-haag" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/den-haag" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/den-haag" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/den-haag</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.96</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/den-haag" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/den-haag" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/den-haag" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties/utrecht</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/utrecht" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/utrecht" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/utrecht" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/utrecht</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/utrecht" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/utrecht" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/utrecht" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties/eindhoven</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/eindhoven" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/eindhoven" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/eindhoven" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/eindhoven</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/eindhoven" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/eindhoven" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/eindhoven" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties/antwerpen</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.91</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/antwerpen" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/antwerpen" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/antwerpen" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/antwerpen</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.91</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/antwerpen" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/antwerpen" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/antwerpen" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties/brussel</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/brussel" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/brussel" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/brussel" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/brussel</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/brussel" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/brussel" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/brussel" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties/groningen</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/groningen" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/groningen" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/groningen" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/groningen</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/groningen" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/groningen" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/groningen" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties/tilburg</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.86</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/tilburg" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/tilburg" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/tilburg" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/tilburg</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.86</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/tilburg" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/tilburg" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/tilburg" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties/gent</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/gent" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/gent" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/gent" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/gent</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/gent" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/gent" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/gent" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties/almere</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/almere" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/almere" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/almere" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/almere</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/almere" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/almere" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/almere" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties/breda</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.83</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/breda" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/breda" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/breda" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/breda</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.83</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/breda" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/breda" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/breda" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties/nijmegen</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/nijmegen" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/nijmegen" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/nijmegen" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/nijmegen</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/nijmegen" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/nijmegen" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/nijmegen" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties/haarlem</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.81</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/haarlem" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/haarlem" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/haarlem" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/haarlem</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.81</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/haarlem" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/haarlem" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/haarlem" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties/arnhem</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/arnhem" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/arnhem" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/arnhem" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/arnhem</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/arnhem" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/arnhem" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/arnhem" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties/amersfoort</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.77</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/amersfoort" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/amersfoort" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/amersfoort" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/amersfoort</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.77</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/amersfoort" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/amersfoort" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/amersfoort" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties/apeldoorn</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/apeldoorn" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/apeldoorn" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/apeldoorn" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/apeldoorn</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/apeldoorn" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/apeldoorn" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/apeldoorn" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties/enschede</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/enschede" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/enschede" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/enschede" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/enschede</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/enschede" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/enschede" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/enschede" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties/leiden</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.74</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/leiden" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/leiden" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/leiden" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/leiden</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.74</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/leiden" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/leiden" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/leiden" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties/zwolle</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.73</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/zwolle" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/zwolle" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/zwolle" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/zwolle</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.73</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/zwolle" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/zwolle" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/zwolle" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties/maastricht</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/maastricht" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/maastricht" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/maastricht" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/maastricht</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/maastricht" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/maastricht" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/maastricht" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties/brugge</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/brugge" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/brugge" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/brugge" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/brugge</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/brugge" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/brugge" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/brugge" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties/leuven</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.69</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/leuven" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/leuven" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/leuven" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/leuven</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.69</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/leuven" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/leuven" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/leuven" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties/dordrecht</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/dordrecht" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/dordrecht" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/dordrecht" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties/dordrecht</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties/dordrecht" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties/dordrecht" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties/dordrecht" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/nl/locaties</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.86</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties" />
+  </url>
+  <url>
+    <loc>http://localhost:3066/en/locaties</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.86</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://localhost:3066/nl/locaties" />
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3066/en/locaties" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:3066/nl/locaties" />
+  </url>
+</urlset>

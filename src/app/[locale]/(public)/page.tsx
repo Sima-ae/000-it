@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -7,6 +8,7 @@ import { AnimatedCounter } from "@/components/marketing/AnimatedCounter";
 import { HeroVisual } from "@/components/marketing/HeroVisual";
 import { Reveal } from "@/components/marketing/Reveal";
 import { PricingPlans } from "@/components/marketing/PricingPlans";
+import { JsonLd } from "@/components/seo/JsonLd";
 import {
   Accordion,
   AccordionContent,
@@ -15,6 +17,7 @@ import {
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
 import { getAiScanCount } from "@/lib/ai-scan-count";
+import { buildStaticPageMetadata, organizationJsonLd } from "@/lib/seo";
 
 const serviceKeys = [
   { key: "ai", href: "/diensten/ai-integration" },
@@ -24,6 +27,15 @@ const serviceKeys = [
   { key: "seo", href: "/diensten/seo-optimization" },
   { key: "software", href: "/diensten/nextjs-development" },
 ] as const;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return buildStaticPageMetadata(locale, "/");
+}
 
 export default async function HomePage({
   params,
@@ -66,6 +78,7 @@ export default async function HomePage({
 
   return (
     <div className="overflow-x-hidden">
+      <JsonLd data={organizationJsonLd()} />
       <section className="relative bg-transparent">
         <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 pb-4 pt-8 md:px-6 md:pb-6 md:pt-10 lg:grid-cols-2 lg:gap-10">
           <div className="max-w-xl">
