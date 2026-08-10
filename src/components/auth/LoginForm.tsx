@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { signIn } from "next-auth/react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -23,7 +23,6 @@ type FormValues = z.infer<typeof schema>;
 export function LoginForm() {
   const t = useTranslations("auth");
   const locale = useLocale();
-  const router = useRouter();
   const searchParams = useSearchParams();
   const rawCallback = searchParams.get("callbackUrl") || `/${locale}/dashboard`;
   const callbackUrl =
@@ -46,8 +45,8 @@ export function LoginForm() {
       toast.error("Invalid credentials");
       return;
     }
-    router.push(callbackUrl);
-    router.refresh();
+    // Full navigation so middleware sees the new session cookie reliably
+    window.location.assign(callbackUrl);
   }
 
   return (

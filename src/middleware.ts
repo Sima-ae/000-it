@@ -27,9 +27,17 @@ export default async function middleware(request: NextRequest) {
     pathWithoutLocale.startsWith("/forgot-password");
 
   if (isProtected || isAuthPage) {
+    // Production uses HTTPS cookies named `__Secure-authjs.session-token`.
+    // getToken defaults secureCookie=false → looks for `authjs.session-token` and
+    // always misses the session, bouncing users back to login after a successful sign-in.
+    const isSecure =
+      request.nextUrl.protocol === "https:" ||
+      request.headers.get("x-forwarded-proto") === "https";
+
     const token = await getToken({
       req: request,
       secret: process.env.AUTH_SECRET,
+      secureCookie: isSecure,
     });
 
     if (isProtected && !token) {

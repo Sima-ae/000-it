@@ -15,7 +15,8 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   session: { strategy: "jwt" },
   trustHost: true,
   pages: {
-    signIn: "/login",
+    // Locale prefix is added by next-intl / middleware redirects
+    signIn: "/nl/login",
   },
   providers: [
     Credentials({
