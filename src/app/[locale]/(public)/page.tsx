@@ -35,20 +35,20 @@ export default async function HomePage({
   const plans = [
     {
       name: pricing("starter"),
-      price: "€499",
-      features: ["AI-Scan", "SEO basics", "1 agent"],
+      price: "€49",
+      features: ["1 agent", "AI-Scan", "AEO, GEO & SEO basics"],
       featured: false,
     },
     {
       name: pricing("growth"),
-      price: "€999",
-      features: ["Full stack", "5 agents", "Content + Ads"],
+      price: "€99",
+      features: ["3 agents", "Content + Ads", "Full stack"],
       featured: true,
     },
     {
       name: pricing("enterprise"),
       price: pricing("custom"),
-      features: ["Custom agents", "SLA", "API access"],
+      features: ["Custom agents", "API access", "SLA"],
       featured: false,
     },
   ];
