@@ -76,16 +76,24 @@ export default function CrmTasksPage() {
   }
 
   async function move(id: string, status: string) {
-    await fetch("/api/tasks", {
+    const res = await fetch("/api/tasks", {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ id, status }),
     });
+    if (!res.ok) {
+      toast.error("Failed");
+      return;
+    }
     void qc.invalidateQueries({ queryKey: ["crm-tasks"] });
   }
 
   async function remove(id: string) {
-    await fetch(`/api/tasks?id=${id}`, { method: "DELETE" });
+    const res = await fetch(`/api/tasks?id=${id}`, { method: "DELETE" });
+    if (!res.ok) {
+      toast.error("Failed");
+      return;
+    }
     void qc.invalidateQueries({ queryKey: ["crm-tasks"] });
   }
 

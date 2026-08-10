@@ -33,12 +33,12 @@ const icons: Record<string, React.ComponentType<{ className?: string }>> = {
   "/portfolio-admin": Images,
   "/nieuws-admin": Newspaper,
   "/case-studies-admin": BriefcaseBusiness,
-  "/leads": Inbox,
-  "/tickets": Ticket,
+  "/crm/leads": Inbox,
+  "/crm/tickets": Ticket,
   "/todos": CheckSquare,
   "/users": Shield,
   "/projects": FolderKanban,
-  "/clients": Users,
+  "/crm/clients": Users,
   "/ai-agents": Bot,
   "/seo-analysis": Search,
   "/content-generator": Wand2,
@@ -77,7 +77,17 @@ export function Sidebar() {
         <nav className="flex gap-1 overflow-x-auto md:flex-1 md:flex-col md:overflow-visible">
           {items.map((item) => {
             const href = `/${locale}${item.href}`;
-            const active = pathname === href || pathname.startsWith(`${href}/`);
+            // Prefer exact/longest match so /crm does not stay active on /crm/tickets
+            const longerMatch = items.some(
+              (other) =>
+                other.href !== item.href &&
+                other.href.startsWith(`${item.href}/`) &&
+                (pathname === `/${locale}${other.href}` ||
+                  pathname.startsWith(`/${locale}${other.href}/`)),
+            );
+            const active =
+              !longerMatch &&
+              (pathname === href || pathname.startsWith(`${href}/`));
             const Icon = icons[item.href] || LayoutDashboard;
             return (
               <SoftLink

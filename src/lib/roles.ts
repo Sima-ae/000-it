@@ -100,12 +100,12 @@ export const dashboardNav: DashboardNavItem[] = [
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
   },
   {
-    href: "/leads",
+    href: "/crm/leads",
     key: "leads",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
   },
   {
-    href: "/tickets",
+    href: "/crm/tickets",
     key: "tickets",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
   },
@@ -125,7 +125,7 @@ export const dashboardNav: DashboardNavItem[] = [
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
   },
   {
-    href: "/clients",
+    href: "/crm/clients",
     key: "clients",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
   },
@@ -151,6 +151,18 @@ export const dashboardNav: DashboardNavItem[] = [
   },
 ];
 
+/** CRM routes clients may open (staff may open all /crm/*) */
+const CLIENT_CRM_ALLOW = [
+  "/crm",
+  "/crm/tickets",
+  "/crm/invoices",
+  "/crm/messages",
+] as const;
+
+function matchesPath(path: string, href: string): boolean {
+  return path === href || path.startsWith(`${href}/`);
+}
+
 export function navForRole(role?: string | null) {
   const r = (role || "CLIENT") as Role;
   return dashboardNav.filter((item) => item.roles.includes(r));
@@ -158,11 +170,31 @@ export function navForRole(role?: string | null) {
 
 export function canAccessPath(pathname: string, role?: string | null): boolean {
   const path = pathname.replace(/^\/(nl|en)/, "") || "/";
-  const match = dashboardNav.find(
-    (item) => path === item.href || path.startsWith(`${item.href}/`),
-  );
-  if (!match) {
-    return isStaffRole(role);
+  const r = (role || "CLIENT") as Role;
+
+  // Fine-grained CRM access (prefix /crm would otherwise allow all subroutes)
+  if (path === "/crm" || path.startsWith("/crm/")) {
+    if (isStaffRole(r)) return true;
+    return CLIENT_CRM_ALLOW.some((href) => matchesPath(path, href));
   }
-  return match.roles.includes((role || "CLIENT") as Role);
+
+  // Legacy aliases still used by old bookmarks
+  if (path === "/tickets" || path.startsWith("/tickets/")) {
+    return ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"].includes(r);
+  }
+  if (path === "/clients" || path.startsWith("/clients/")) {
+    return isStaffRole(r);
+  }
+  if (path === "/leads" || path.startsWith("/leads/")) {
+    return isStaffRole(r);
+  }
+
+  const match = [...dashboardNav]
+    .sort((a, b) => b.href.length - a.href.length)
+    .find((item) => matchesPath(path, item.href));
+
+  if (!match) {
+    return isStaffRole(r);
+  }
+  return match.roles.includes(r);
 }

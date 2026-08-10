@@ -8,13 +8,14 @@ import { SoftLink } from "@/components/shared/SoftLink";
 import { CrmShell } from "@/components/crm/CrmShell";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { isStaffRole } from "@/lib/roles";
+import { isAdminRole, isStaffRole } from "@/lib/roles";
 
 export default function CrmSettingsPage() {
   const t = useTranslations("crm");
   const locale = useLocale();
   const router = useRouter();
   const { data: session, status } = useSession();
+  const isAdmin = isAdminRole(session?.user?.role);
 
   useEffect(() => {
     if (status === "authenticated" && !isStaffRole(session?.user?.role)) {
@@ -34,7 +35,9 @@ export default function CrmSettingsPage() {
     {
       title: t("settingsGeneral"),
       items: [
-        { label: t("users"), href: "/users", desc: t("settingsUsersDesc") },
+        ...(isAdmin
+          ? [{ label: t("users"), href: "/users", desc: t("settingsUsersDesc") }]
+          : []),
         { label: t("todos"), href: "/todos", desc: t("settingsTodosDesc") },
       ],
     },

@@ -2,7 +2,8 @@
 
 import { useTranslations, useLocale } from "next-intl";
 import { SoftLink } from "@/components/shared/SoftLink";
-import { legalPages, serviceCatalog } from "@/content/fixweb/catalog";
+import { CopyrightBar } from "@/components/shared/CopyrightBar";
+import { legalPages, serviceCatalog } from "@/content/infoweb/catalog";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -23,8 +24,8 @@ export function Footer() {
   );
 
   return (
-    <footer className="relative mt-16 border-t border-border/40">
-      <div className="mx-auto max-w-6xl px-4 py-8 md:px-6 md:py-10">
+    <footer className="relative mt-16">
+      <div className="mx-auto max-w-6xl px-4 pt-8 pb-4 md:px-6 md:pt-10 md:pb-5">
         <div className="glass overflow-hidden rounded-3xl">
           <div className="grid gap-8 px-6 py-7 sm:grid-cols-2 md:grid-cols-4 md:gap-6 md:px-8 md:py-8">
             <div>
@@ -93,14 +94,9 @@ export function Footer() {
               ))}
             </div>
           </div>
-
-          <div className="border-t border-border/60 px-6 py-4 text-center md:px-8">
-            <p className="text-sm font-medium tracking-tight text-foreground">
-              TripleZero iT © {year}
-            </p>
-            <p className="mt-0.5 text-xs text-muted-foreground">{t("rights")}</p>
-          </div>
         </div>
+
+        <CopyrightBar year={year} rights={t("rights")} />
       </div>
     </footer>
   );

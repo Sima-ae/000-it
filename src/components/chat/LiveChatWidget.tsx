@@ -334,7 +334,7 @@ export function LiveChatWidget() {
                 {loggedIn ? (
                   <p className="mt-2">
                     <SoftLink
-                      href={`/${locale}/tickets`}
+                      href={`/${locale}/crm/tickets`}
                       className="text-primary underline-offset-2 hover:underline"
                     >
                       {locale === "nl" ? "Bekijk tickets" : "View tickets"}

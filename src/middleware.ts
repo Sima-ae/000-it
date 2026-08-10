@@ -8,7 +8,16 @@ import { canAccessPath, dashboardNav } from "@/lib/roles";
 const intlMiddleware = createMiddleware(routing);
 
 const protectedPrefixes = [
-  ...new Set(dashboardNav.map((item) => item.href)),
+  ...new Set([
+    ...dashboardNav.map((item) => item.href),
+    "/tickets",
+    "/clients",
+    "/leads",
+    "/crm/invoices",
+    "/crm/messages",
+    "/crm/tasks",
+    "/crm/settings",
+  ]),
 ];
 
 export default async function middleware(request: NextRequest) {

@@ -5,6 +5,7 @@ import { prisma } from "@/lib/prisma";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { canEditAny } from "@/lib/roles";
 
 export const dynamic = "force-dynamic";
 
@@ -23,12 +24,13 @@ export default async function SeoAnalysisPage({
   setRequestLocale(locale);
   const t = await getTranslations("dashboard");
   const session = await auth();
+  const adminView = canEditAny(session?.user?.role);
 
   const scans = session?.user?.id
     ? await prisma.aIScan.findMany({
-        where: { userId: session.user.id },
+        where: adminView ? undefined : { userId: session.user.id },
         orderBy: { createdAt: "desc" },
-        take: 10,
+        take: adminView ? 25 : 10,
       })
     : [];
 
@@ -38,7 +40,13 @@ export default async function SeoAnalysisPage({
         <div>
           <h1 className="text-3xl font-semibold">{t("seo")}</h1>
           <p className="text-sm text-muted-foreground">
-            Review your AI/SEO scan history and run a new scan.
+            {adminView
+              ? locale === "nl"
+                ? "Alle scans in het systeem — plus een nieuwe scan starten."
+                : "All scans across the workspace — plus run a new scan."
+              : locale === "nl"
+                ? "Bekijk je SEO/AEO/GEO-scan geschiedenis en start een nieuwe scan."
+                : "Review your AI/SEO scan history and run a new scan."}
           </p>
         </div>
         <Button asChild>
@@ -48,12 +56,14 @@ export default async function SeoAnalysisPage({
 
       <Card>
         <CardHeader>
-          <CardTitle>Recent scans</CardTitle>
+          <CardTitle>{locale === "nl" ? "Recente scans" : "Recent scans"}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-3">
           {!scans.length && (
             <p className="text-muted-foreground">
-              No scans yet. Start with a free AI Scan to generate SEO, AEO and GEO scores.
+              {locale === "nl"
+                ? "Nog geen scans. Start met een gratis AI Scan voor SEO, AEO en GEO scores."
+                : "No scans yet. Start with a free AI Scan to generate SEO, AEO and GEO scores."}
             </p>
           )}
           {scans.map((scan) => {

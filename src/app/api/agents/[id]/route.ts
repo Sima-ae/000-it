@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 import { prisma } from "@/lib/prisma";
 import { requireUser } from "@/lib/api-auth";
+import { canEditAny } from "@/lib/roles";
 
 const schema = z.object({
   status: z.enum(["IDLE", "RUNNING", "PAUSED", "ERROR", "COMPLETED"]),
@@ -16,7 +17,9 @@ export async function PATCH(
   const { id } = await params;
 
   const existing = await prisma.aIAgent.findFirst({
-    where: { id, userId: session.user.id },
+    where: canEditAny(session.user.role)
+      ? { id }
+      : { id, userId: session.user.id },
   });
   if (!existing) return NextResponse.json({ error: "Not found" }, { status: 404 });
 

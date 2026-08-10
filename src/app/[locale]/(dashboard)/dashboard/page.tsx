@@ -4,7 +4,6 @@ import { useLocale, useTranslations } from "next-intl";
 import { useQuery } from "@tanstack/react-query";
 import {
   ArrowUpRight,
-  Bot,
   BriefcaseBusiness,
   FolderKanban,
   Inbox,
@@ -150,6 +149,9 @@ export default function DashboardPage() {
             <Button asChild variant="outline">
               <SoftLink href={`/${locale}/projects`}>{t("viewProjects")}</SoftLink>
             </Button>
+            <Button asChild variant="outline">
+              <SoftLink href={`/${locale}/crm/tickets`}>{t("tickets")}</SoftLink>
+            </Button>
           </div>
         </div>
 
@@ -168,7 +170,7 @@ export default function DashboardPage() {
             icon={FolderKanban}
           />
           <QuickLink
-            href={`/${locale}/tickets`}
+            href={`/${locale}/crm/tickets`}
             title={t("tickets")}
             description={
               locale === "nl"
@@ -176,6 +178,14 @@ export default function DashboardPage() {
                 : "View your chat and support tickets"
             }
             icon={Ticket}
+          />
+          <QuickLink
+            href={`/${locale}/crm`}
+            title={t("crm")}
+            description={
+              locale === "nl" ? "Facturen, berichten en overzicht" : "Invoices, messages and overview"
+            }
+            icon={BriefcaseBusiness}
           />
           <QuickLink
             href={`/${locale}/seo-analysis`}
@@ -194,7 +204,7 @@ export default function DashboardPage() {
               {data.recentTickets.map((ticket) => (
                 <SoftLink
                   key={ticket.id}
-                  href={`/${locale}/tickets`}
+                  href={`/${locale}/crm/tickets`}
                   className="flex items-center justify-between rounded-lg border border-border px-3 py-2 transition hover:border-primary/40"
                 >
                   <div className="min-w-0">
@@ -255,7 +265,7 @@ export default function DashboardPage() {
           </div>
           <div className="flex flex-wrap gap-2">
             <Button asChild variant="outline">
-              <SoftLink href={`/${locale}/clients`}>{t("addClient")}</SoftLink>
+              <SoftLink href={`/${locale}/crm/clients`}>{t("addClient")}</SoftLink>
             </Button>
             <Button asChild>
               <SoftLink href={`/${locale}/nieuws-admin`}>{t("addNews")}</SoftLink>
@@ -280,7 +290,7 @@ export default function DashboardPage() {
               {data.recentTickets.map((ticket) => (
                 <SoftLink
                   key={ticket.id}
-                  href={`/${locale}/tickets`}
+                  href={`/${locale}/crm/tickets`}
                   className="flex items-center justify-between rounded-lg border border-border px-3 py-2 transition hover:border-primary/40"
                 >
                   <div className="min-w-0">
@@ -301,7 +311,7 @@ export default function DashboardPage() {
 
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           <QuickLink
-            href={`/${locale}/tickets`}
+            href={`/${locale}/crm/tickets`}
             title={t("tickets")}
             description={
               locale === "nl" ? "Live chat & support inbox" : "Live chat & support inbox"
@@ -309,13 +319,13 @@ export default function DashboardPage() {
             icon={Ticket}
           />
           <QuickLink
-            href={`/${locale}/clients`}
+            href={`/${locale}/crm/clients`}
             title={t("clients")}
             description={t("managerQuickClients")}
             icon={Users}
           />
           <QuickLink
-            href={`/${locale}/leads`}
+            href={`/${locale}/crm/leads`}
             title={t("leads")}
             description={t("managerQuickLeads")}
             icon={Inbox}
@@ -335,16 +345,17 @@ export default function DashboardPage() {
             </CardHeader>
             <CardContent className="space-y-3">
               {data.recentClients.map((client) => (
-                <div
+                <SoftLink
                   key={client.id}
-                  className="flex items-center justify-between rounded-lg border border-border px-3 py-2"
+                  href={`/${locale}/crm/clients/${client.id}`}
+                  className="flex items-center justify-between rounded-lg border border-border px-3 py-2 transition hover:border-primary/40"
                 >
                   <div>
                     <p className="font-medium">{client.name}</p>
                     <p className="text-xs text-muted-foreground">{client.company || "—"}</p>
                   </div>
                   <Badge variant="outline">{client.status}</Badge>
-                </div>
+                </SoftLink>
               ))}
               {!data.recentClients.length && (
                 <p className="text-sm text-muted-foreground">{t("emptyClients")}</p>
@@ -358,13 +369,17 @@ export default function DashboardPage() {
             </CardHeader>
             <CardContent className="space-y-3">
               {data.recentLeads.map((lead) => (
-                <div key={lead.id} className="rounded-lg border border-border px-3 py-2">
+                <SoftLink
+                  key={lead.id}
+                  href={`/${locale}/crm/leads`}
+                  className="block rounded-lg border border-border px-3 py-2 transition hover:border-primary/40"
+                >
                   <p className="font-medium">{lead.name}</p>
                   <p className="text-xs text-muted-foreground">
                     {lead.email}
                     {lead.company ? ` · ${lead.company}` : ""}
                   </p>
-                </div>
+                </SoftLink>
               ))}
               {!data.recentLeads.length && (
                 <p className="text-sm text-muted-foreground">{t("emptyLeads")}</p>
@@ -439,7 +454,7 @@ export default function DashboardPage() {
             {data.recentTickets.map((ticket) => (
               <SoftLink
                 key={ticket.id}
-                href={`/${locale}/tickets`}
+                href={`/${locale}/crm/tickets`}
                 className="flex items-center justify-between rounded-lg border border-border px-3 py-2 transition hover:border-primary/40"
               >
                 <div className="min-w-0">
@@ -460,7 +475,7 @@ export default function DashboardPage() {
 
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         <QuickLink
-          href={`/${locale}/tickets`}
+          href={`/${locale}/crm/tickets`}
           title={t("tickets")}
           description={
             locale === "nl" ? "Live chat & support inbox" : "Live chat & support inbox"
@@ -474,7 +489,7 @@ export default function DashboardPage() {
           icon={Sparkles}
         />
         <QuickLink
-          href={`/${locale}/leads`}
+          href={`/${locale}/crm/leads`}
           title={t("leads")}
           description={t("adminQuickLeads")}
           icon={Inbox}

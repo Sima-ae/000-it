@@ -23,7 +23,7 @@ export default function CrmClientDetailPage() {
   const [ticketSubject, setTicketSubject] = useState("");
   const [ticketMessage, setTicketMessage] = useState("");
 
-  const { data: client, isLoading } = useQuery({
+  const { data: client, isLoading, isError } = useQuery({
     queryKey: ["crm-client", id],
     queryFn: async () => {
       const res = await fetch(`/api/clients/${id}`);
@@ -84,10 +84,29 @@ export default function CrmClientDetailPage() {
     void qc.invalidateQueries({ queryKey: ["crm-client", id] });
   }
 
-  if (isLoading || !client) {
+  if (isLoading) {
     return (
       <CrmShell title={t("clients")}>
         <p className="text-muted-foreground">Loading…</p>
+      </CrmShell>
+    );
+  }
+
+  if (isError || !client) {
+    return (
+      <CrmShell
+        title={t("clients")}
+        actions={
+          <Button asChild variant="outline">
+            <SoftLink href={`/${locale}/crm/clients`}>{t("back")}</SoftLink>
+          </Button>
+        }
+      >
+        <p className="text-sm text-muted-foreground">
+          {locale === "nl"
+            ? "Klant niet gevonden of geen toegang."
+            : "Client not found or access denied."}
+        </p>
       </CrmShell>
     );
   }

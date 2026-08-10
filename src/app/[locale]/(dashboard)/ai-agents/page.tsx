@@ -10,7 +10,7 @@ import { Badge } from "@/components/ui/badge";
 export default function AIAgentsPage() {
   const t = useTranslations("dashboard");
   const qc = useQueryClient();
-  const { data: agents = [], isLoading } = useQuery({
+  const { data: agents = [], isLoading, isError } = useQuery({
     queryKey: ["agents"],
     queryFn: async () => {
       const res = await fetch("/api/agents");
@@ -34,13 +34,25 @@ export default function AIAgentsPage() {
       qc.invalidateQueries({ queryKey: ["dashboard"] });
       toast.success("Agent updated");
     },
+    onError: () => toast.error("Could not update agent"),
   });
 
   return (
     <div className="space-y-6">
-      <h1 className="text-3xl font-semibold">{t("agents")}</h1>
+      <div>
+        <h1 className="text-3xl font-semibold">{t("agents")}</h1>
+        <p className="text-sm text-muted-foreground">
+          Start, pause or idle agents linked to your workspace.
+        </p>
+      </div>
       {isLoading ? (
         <p className="text-muted-foreground">Loading…</p>
+      ) : isError ? (
+        <p className="text-sm text-destructive">Failed to load agents.</p>
+      ) : !agents.length ? (
+        <Card>
+          <CardContent className="py-8 text-sm text-muted-foreground">{t("emptyAgents")}</CardContent>
+        </Card>
       ) : (
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {agents.map(
@@ -74,6 +86,7 @@ export default function AIAgentsPage() {
                   <div className="flex gap-2">
                     <Button
                       size="sm"
+                      disabled={updateStatus.isPending}
                       onClick={() =>
                         updateStatus.mutate({ id: agent.id, status: "RUNNING" })
                       }
@@ -83,6 +96,7 @@ export default function AIAgentsPage() {
                     <Button
                       size="sm"
                       variant="outline"
+                      disabled={updateStatus.isPending}
                       onClick={() =>
                         updateStatus.mutate({ id: agent.id, status: "PAUSED" })
                       }
@@ -92,6 +106,7 @@ export default function AIAgentsPage() {
                     <Button
                       size="sm"
                       variant="ghost"
+                      disabled={updateStatus.isPending}
                       onClick={() =>
                         updateStatus.mutate({ id: agent.id, status: "IDLE" })
                       }
