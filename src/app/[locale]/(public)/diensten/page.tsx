@@ -181,13 +181,8 @@ export default async function ServicesPage({
             label: isNl ? button.nl : button.en,
           }));
         }
-        return [
-          {
-            key: group.id,
-            id: group.id,
-            label: groupLabel(group),
-          },
-        ];
+        // All known service groups are handled above.
+        return [] as Array<{ key: string; id: string; label: string }>;
       })
       .sort((a, b) =>
         a.label.localeCompare(b.label, isNl ? "nl" : "en", { sensitivity: "base" }),
