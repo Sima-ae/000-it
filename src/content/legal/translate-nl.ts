@@ -175,7 +175,7 @@ export function translateLegalToNl(text: string): string {
   }
 
   // Common fragments
-  let out = trimmed
+  const out = trimmed
     .replace(/\bConsent to service\b/gi, "Toestemming voor dienst")
     .replace(/\bUnited Arab Emirates\b/g, "Verenigde Arabische Emiraten")
     .replace(/\bEmail:\b/g, "E-mail:")

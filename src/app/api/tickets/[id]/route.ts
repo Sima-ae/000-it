@@ -58,10 +58,10 @@ export async function GET(request: Request, { params }: Params) {
     return NextResponse.json({ error: "Forbidden" }, { status: 403 });
   }
 
-  const { guestToken: _token, ...safe } = ticket;
+  const { guestToken: ticketGuestToken, ...safe } = ticket;
   return NextResponse.json({
     ...safe,
-    guestToken: guestToken && ticket.guestToken === guestToken ? ticket.guestToken : undefined,
+    guestToken: guestToken && ticketGuestToken === guestToken ? ticketGuestToken : undefined,
   });
 }
 
