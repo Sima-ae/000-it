@@ -2,7 +2,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { prisma } from "@/lib/prisma";
 import { PortfolioGrid } from "@/components/portfolio/PortfolioGrid";
 
-export const revalidate = 60;
+export const dynamic = "force-dynamic";
 
 export default async function PortfolioPage({
   params,

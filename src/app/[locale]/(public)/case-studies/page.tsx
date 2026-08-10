@@ -3,7 +3,7 @@ import { Reveal } from "@/components/marketing/Reveal";
 import { CaseStudiesGrid } from "@/components/content/CaseStudiesGrid";
 import { listCaseStudies } from "@/lib/case-studies";
 
-export const revalidate = 60;
+export const dynamic = "force-dynamic";
 
 export default async function CaseStudiesPage({
   params,

@@ -3,7 +3,7 @@ import { Reveal } from "@/components/marketing/Reveal";
 import { NewsGrid } from "@/components/content/NewsGrid";
 import { listNewsPosts } from "@/lib/news";
 
-export const revalidate = 60;
+export const dynamic = "force-dynamic";
 
 export default async function NieuwsPage({
   params,
