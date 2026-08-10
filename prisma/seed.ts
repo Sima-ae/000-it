@@ -3,6 +3,7 @@ import bcrypt from "bcryptjs";
 import { readFileSync, readdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { newsCoverForPost } from "../src/lib/auto-news/cover-image";
 
 const seedDir = dirname(fileURLToPath(import.meta.url));
 
@@ -433,6 +434,13 @@ async function main() {
   });
 
   for (const item of newsItems) {
+    const coverImage = newsCoverForPost({
+      id: item.id,
+      title: item.title,
+      industry: item.industry,
+      tags: [...item.tags],
+      excerpt: item.excerpt,
+    });
     await prisma.newsPost.upsert({
       where: { id: item.id },
       update: {
@@ -441,7 +449,7 @@ async function main() {
         excerpt: item.excerpt,
         excerptNl: item.excerptNl,
         date: item.date,
-        coverImage: item.coverImage,
+        coverImage,
         author: item.author,
         projectUrl: item.projectUrl,
         industry: item.industry,
@@ -458,7 +466,7 @@ async function main() {
         excerpt: item.excerpt,
         excerptNl: item.excerptNl,
         date: item.date,
-        coverImage: item.coverImage,
+        coverImage,
         author: item.author,
         projectUrl: item.projectUrl,
         industry: item.industry,
@@ -493,6 +501,13 @@ async function main() {
       descriptionNl: string;
     }>;
     for (const item of batch) {
+      const coverImage = newsCoverForPost({
+        id: item.id,
+        title: item.title,
+        industry: item.industry,
+        tags: item.tags,
+        excerpt: item.excerpt,
+      });
       await prisma.newsPost.upsert({
         where: { id: item.id },
         update: {
@@ -501,7 +516,7 @@ async function main() {
           excerpt: item.excerpt,
           excerptNl: item.excerptNl,
           date: item.date,
-          coverImage: item.coverImage,
+          coverImage,
           author: item.author || "TripleZero iT",
           projectUrl: item.projectUrl,
           industry: item.industry,
@@ -518,7 +533,7 @@ async function main() {
           excerpt: item.excerpt,
           excerptNl: item.excerptNl,
           date: item.date,
-          coverImage: item.coverImage,
+          coverImage,
           author: item.author || "TripleZero iT",
           projectUrl: item.projectUrl,
           industry: item.industry,

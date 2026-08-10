@@ -44,6 +44,7 @@ function shouldOptimize(src: string) {
   return (
     src.startsWith("/") ||
     src.includes("images.unsplash.com") ||
+    src.includes("image.pollinations.ai") ||
     src.includes("000-it.com")
   );
 }

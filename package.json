@@ -15,6 +15,7 @@
     "db:push": "prisma db push",
     "db:seed": "tsx prisma/seed.ts",
     "news:auto": "tsx scripts/run-auto-news.ts",
+    "news:covers": "tsx scripts/backfill-news-covers.ts",
     "postinstall": "prisma generate"
   },
   "dependencies": {

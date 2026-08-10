@@ -43,3 +43,7 @@ next-env.d.ts
 # uploaded portfolio assets (keep folder)
 /public/uploads/portfolio/*
 !/public/uploads/portfolio/.gitkeep
+
+# generated nieuws covers are committed for deploy reliability
+!/public/uploads/nieuws/
+!/public/uploads/nieuws/**

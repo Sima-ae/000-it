@@ -306,7 +306,7 @@ model NewsPost {
   excerpt        String   @db.Text
   excerptNl      String?  @db.Text
   date           String
-  coverImage     String?
+  coverImage     String?  @db.Text
   description    String   @db.LongText
   descriptionNl  String?  @db.LongText
   author         String

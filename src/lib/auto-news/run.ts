@@ -1,10 +1,7 @@
 import { prisma } from "@/lib/prisma";
 import { createNewsPost, slugifyNewsId } from "@/lib/news";
-import {
-  AUTO_NEWS_AUTHOR,
-  AUTO_NEWS_COVERS,
-  AUTO_NEWS_PER_RUN,
-} from "@/lib/auto-news/config";
+import { AUTO_NEWS_AUTHOR, AUTO_NEWS_PER_RUN } from "@/lib/auto-news/config";
+import { ensureNewsCoverImage } from "@/lib/auto-news/cover-image";
 import { fetchRecentAiStories } from "@/lib/auto-news/fetch-stories";
 import { generateBilingualNewsDraft } from "@/lib/auto-news/generate";
 import {
@@ -140,9 +137,13 @@ export async function runAutoNewsPublish(
         id = `${slugifyNewsId(draft.title)}-${Date.now().toString(36)}`.slice(0, 80);
       }
 
-      const cover =
-        AUTO_NEWS_COVERS[indexOffset % AUTO_NEWS_COVERS.length] ||
-        AUTO_NEWS_COVERS[0];
+      const coverImage = await ensureNewsCoverImage({
+        id,
+        title: draft.title,
+        industry: draft.industry,
+        tags: draft.tags,
+        excerpt: draft.excerpt,
+      });
 
       const created = await createNewsPost({
         id,
@@ -153,7 +154,7 @@ export async function runAutoNewsPublish(
         description: draft.description,
         descriptionNl: draft.descriptionNl,
         date: clock.isoDate,
-        coverImage: cover,
+        coverImage,
         author: AUTO_NEWS_AUTHOR,
         projectUrl: story.url,
         industry: draft.industry,

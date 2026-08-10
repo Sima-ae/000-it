@@ -41,6 +41,7 @@ export function NewsGrid({
                       fill
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, 33vw"
+                      unoptimized={post.coverImage.includes("image.pollinations.ai")}
                     />
                   </div>
                 ) : null}
