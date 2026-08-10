@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { forwardRef, type ComponentProps, type MouseEvent, type PointerEvent } from "react";
 import { useNavigationProgress } from "@/hooks/useNavigationProgress";
 
@@ -21,6 +21,11 @@ function normalizeHref(href: string) {
   const path = normalizePath(withoutHash.slice(0, qIndex));
   const search = withoutHash.slice(qIndex + 1);
   return search ? `${path}?${search}` : path;
+}
+
+function currentHrefFromWindow(pathname: string) {
+  if (typeof window === "undefined") return normalizePath(pathname);
+  return normalizeHref(`${window.location.pathname}${window.location.search}`);
 }
 
 function hrefToString(href: SoftLinkProps["href"]): string {
@@ -56,23 +61,21 @@ export const SoftLink = forwardRef<HTMLAnchorElement, SoftLinkProps>(
     ref,
   ) {
     const pathname = usePathname();
-    const searchParams = useSearchParams();
     const router = useRouter();
     const start = useNavigationProgress((s) => s.start);
     const hrefString = hrefToString(href);
     const targetHref = normalizeHref(hrefString);
-    const currentSearch = searchParams.toString();
-    const currentHref = currentSearch
-      ? `${normalizePath(pathname)}?${currentSearch}`
-      : normalizePath(pathname);
 
     function prefetchTarget() {
-      if (targetHref.startsWith("/") && currentHref !== targetHref) {
-        try {
-          router.prefetch(hrefString.split("#")[0]);
-        } catch {
-          /* ignore */
-        }
+      if (!targetHref.startsWith("/")) return;
+      // Avoid blocking prerender: compare path only for prefetch skip.
+      if (normalizePath(pathname) === normalizePath(targetHref) && !targetHref.includes("?")) {
+        return;
+      }
+      try {
+        router.prefetch(hrefString.split("#")[0]);
+      } catch {
+        /* ignore */
       }
     }
 
@@ -93,10 +96,11 @@ export const SoftLink = forwardRef<HTMLAnchorElement, SoftLinkProps>(
       if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
       if (event.button !== 0) return;
       if (!targetHref.startsWith("/")) return;
-      if (currentHref === targetHref) return;
 
-      // Force App Router navigation — relying only on <Link> soft-nav was a no-op
-      // for some dashboard sidebar clicks (progress bar started, URL never changed).
+      // Read search from window so ?page= navigations work without useSearchParams
+      // (useSearchParams requires Suspense and breaks static prerender).
+      if (currentHrefFromWindow(pathname) === targetHref) return;
+
       event.preventDefault();
       start();
       if (replace) {
