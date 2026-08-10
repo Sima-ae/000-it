@@ -37,6 +37,7 @@ export const AUTO_NEWS_FEEDS = [
   },
 ] as const;
 
-export const AUTO_NEWS_PER_RUN = 6;
+/** 3 posts/day × 7 days = 21 posts/week */
+export const AUTO_NEWS_PER_RUN = 3;
 export const AUTO_NEWS_AUTHOR = "TripleZero iT";
 export const AUTO_NEWS_TIMEZONE = "Europe/Amsterdam";

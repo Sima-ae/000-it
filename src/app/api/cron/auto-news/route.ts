@@ -8,8 +8,8 @@ export const maxDuration = 300;
 async function handle(request: Request) {
   const url = new URL(request.url);
   const force = url.searchParams.get("force") === "1";
-  const limitRaw = Number(url.searchParams.get("limit") || "6");
-  const limit = Number.isFinite(limitRaw) ? limitRaw : 6;
+  const limitRaw = Number(url.searchParams.get("limit") || "3");
+  const limit = Number.isFinite(limitRaw) ? limitRaw : 3;
 
   try {
     const result = await runAutoNewsPublish({ force, limit });

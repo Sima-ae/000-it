@@ -30,11 +30,10 @@ export function getAmsterdamClock(now = new Date()): AmsterdamClock {
   };
 }
 
-/** Mon/Thu at 12:00–12:59 Europe/Amsterdam */
+/** Every day (incl. weekends) at 12:00–12:59 Europe/Amsterdam */
 export function isAutoNewsScheduleWindow(now = new Date()): boolean {
   const clock = getAmsterdamClock(now);
-  const scheduledDay = clock.weekday === "Mon" || clock.weekday === "Thu";
-  return scheduledDay && clock.hour === 12;
+  return clock.hour === 12;
 }
 
 export function slugifyAutoNewsId(title: string, date: string, index: number) {

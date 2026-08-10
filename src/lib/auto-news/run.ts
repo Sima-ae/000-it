@@ -55,7 +55,7 @@ export async function runAutoNewsPublish(
       ...result,
       ok: true,
       skipped: true,
-      reason: `Outside Mon/Thu 12:00 Europe/Amsterdam window (now ${clock.weekday} ${String(clock.hour).padStart(2, "0")}:${String(clock.minute).padStart(2, "0")})`,
+      reason: `Outside daily 12:00 Europe/Amsterdam window (now ${clock.weekday} ${String(clock.hour).padStart(2, "0")}:${String(clock.minute).padStart(2, "0")})`,
     };
   }
 

@@ -1,12 +1,12 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
-# Publishes 6 bilingual /nieuws posts every Monday and Thursday at 12:00 Europe/Amsterdam.
+# Publishes 3 bilingual /nieuws posts every day at 12:00 Europe/Amsterdam (21/week).
 # GitHub cron is UTC-only, so we hit 10:00 and 11:00 UTC; the API no-ops unless Amsterdam hour is 12.
-name: Auto news (Mon/Thu 12:00 CET)
+name: Auto news (daily 12:00 CET)
 
 on:
   schedule:
     # 10:00 UTC = 12:00 CEST (summer), 11:00 UTC = 12:00 CET (winter)
-    - cron: "0 10,11 * * 1,4"
+    - cron: "0 10,11 * * *"
   workflow_dispatch:
     inputs:
       force:
@@ -39,8 +39,8 @@ jobs:
           if [[ "${FORCE}" == "true" ]]; then
             FORCE_FLAG="&force=1"
           fi
-          URL="${BASE_URL%/}/api/cron/auto-news?limit=6${FORCE_FLAG}"
-          echo "POST ${BASE_URL%/}/api/cron/auto-news?limit=6..."
+          URL="${BASE_URL%/}/api/cron/auto-news?limit=3${FORCE_FLAG}"
+          echo "POST ${BASE_URL%/}/api/cron/auto-news?limit=3..."
           curl -fsS -X POST \
             -H "Accept: application/json" \
             --max-time 280 \
