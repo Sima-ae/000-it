@@ -36,19 +36,19 @@ export default async function HomePage({
     {
       name: pricing("starter"),
       price: "€49",
-      features: ["1 agent", "AI-Scan", "AEO, GEO & SEO basics"],
+      features: ["1 agent", "AI-Scan (1 url)", "AEO, GEO & SEO basics"],
       featured: false,
     },
     {
       name: pricing("growth"),
       price: "€99",
-      features: ["3 agents", "Content + Ads", "Full stack"],
+      features: ["3 agents", "AI-Scan (3 urls)", "AEO, GEO & SEO advanced"],
       featured: true,
     },
     {
       name: pricing("enterprise"),
       price: pricing("custom"),
-      features: ["Custom agents", "API access", "SLA"],
+      features: ["Custom agents", "API access", "SLA & support"],
       featured: false,
     },
   ];
