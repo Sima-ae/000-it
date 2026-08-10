@@ -14,12 +14,12 @@ export function Footer() {
 
   const quickServices = serviceCatalog.filter((s) =>
     [
+      "ai-scan",
       "webdesign-support",
       "digital-design",
       "wordpress-support",
       "seo-optimization",
       "web-hosting",
-      "domains",
     ].includes(s.slug),
   );
 

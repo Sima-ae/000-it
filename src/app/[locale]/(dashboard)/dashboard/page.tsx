@@ -112,17 +112,53 @@ function QuickLink({
 export default function DashboardPage() {
   const t = useTranslations("dashboard");
   const locale = useLocale();
-  const { data, isLoading } = useQuery({
+  const { data, isLoading, isError, error, refetch, isFetching } = useQuery({
     queryKey: ["dashboard"],
     queryFn: async () => {
       const res = await fetch("/api/dashboard");
-      if (!res.ok) throw new Error("Failed");
+      if (res.status === 401) {
+        throw new Error("UNAUTHORIZED");
+      }
+      if (!res.ok) {
+        const body = await res.json().catch(() => ({}));
+        throw new Error(body.error || "Failed to load dashboard");
+      }
       return (await res.json()) as DashboardData;
     },
+    retry: 1,
   });
 
-  if (isLoading || !data) {
+  if (isLoading) {
     return <p className="text-muted-foreground">Loading…</p>;
+  }
+
+  if (isError || !data) {
+    const unauthorized = error instanceof Error && error.message === "UNAUTHORIZED";
+    return (
+      <div className="space-y-4 rounded-2xl border border-border bg-card/60 p-6">
+        <h1 className="font-display text-2xl font-semibold tracking-tight">{t("title")}</h1>
+        <p className="text-sm text-muted-foreground">
+          {unauthorized
+            ? locale === "nl"
+              ? "U sessie is verlopen. Log opnieuw in."
+              : "Your session expired. Please sign in again."
+            : locale === "nl"
+              ? "Dashboard kon niet worden geladen. Controleer uw databaseverbinding en probeer opnieuw."
+              : "Dashboard could not be loaded. Check your database connection and try again."}
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {unauthorized ? (
+            <Button asChild>
+              <SoftLink href={`/${locale}/login`}>{locale === "nl" ? "Naar login" : "Go to login"}</SoftLink>
+            </Button>
+          ) : (
+            <Button onClick={() => void refetch()} disabled={isFetching}>
+              {isFetching ? "…" : locale === "nl" ? "Opnieuw proberen" : "Retry"}
+            </Button>
+          )}
+        </div>
+      </div>
+    );
   }
 
   const name = data.user.name || data.user.email || "there";
@@ -174,7 +210,7 @@ export default function DashboardPage() {
             title={t("tickets")}
             description={
               locale === "nl"
-                ? "Bekijk je chat en supporttickets"
+                ? "Bekijk uw chat en supporttickets"
                 : "View your chat and support tickets"
             }
             icon={Ticket}

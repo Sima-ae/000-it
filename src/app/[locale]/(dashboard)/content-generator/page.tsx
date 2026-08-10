@@ -45,7 +45,7 @@ function buildDraft(locale: string, id: TemplateId, topic: string, audience: str
           `3. Uitvoering`,
           `4. Meten & bijsturen`,
           ``,
-          `### H2 — Resultaten die je mag verwachten`,
+          `### H2 — Resultaten die u mag verwachten`,
           `- KPI-voorbeelden (verkeer, leads, conversie)`,
           ``,
           `## CTA`,
@@ -100,7 +100,7 @@ function buildDraft(locale: string, id: TemplateId, topic: string, audience: str
           `## Beschrijvingen`,
           `1. Groei met ${t}. Strategie + uitvoering voor ${a}. Plan een intake.`,
           `2. Van scan naar actieplan. ${t} dat traffic, leads en conversie versterkt.`,
-          `3. AI + marketing die samenwerkt. Ontdek wat ${t} oplevert voor jouw bedrijf.`,
+          `3. AI + marketing die samenwerkt. Ontdek wat ${t} oplevert voor uw bedrijf.`,
           ``,
           `## Sitelnks`,
           `- AI Scan`,
@@ -148,7 +148,7 @@ function buildDraft(locale: string, id: TemplateId, topic: string, audience: str
           `- Content die leads voedt`,
           `- Wekelijkse optimalisatie op data`,
           ``,
-          `CTA: Wil je een korte scan op jouw setup? Stuur een DM of plan via 000-it.com.`,
+          `CTA: Wilt u een korte scan op uw setup? Stuur een DM of plan via 000-it.com.`,
           ``,
           `Hashtags: #${t.replace(/\s+/g, "")} #MKB #Growth #AImarketing`,
         ].join("\n")
@@ -188,11 +188,11 @@ function buildDraft(locale: string, id: TemplateId, topic: string, audience: str
           `Veel bedrijven willen sneller groeien met ${t}, maar blijven steken in losse acties.`,
           ``,
           `In een korte call laten we zien:`,
-          `- waar je nu kansen laat liggen`,
+          `- waar u nu kansen laat liggen`,
           `- welke 3 stappen deze maand het meeste opleveren`,
           `- hoe AI + marketing elkaar versterken`,
           ``,
-          `Plan hier je afspraak: https://000-it.com/nl/afspraak`,
+          `Plan hier uw afspraak: https://000-it.com/nl/afspraak`,
           ``,
           `Groet,`,
           `TripleZero iT`,
@@ -250,7 +250,7 @@ function buildDraft(locale: string, id: TemplateId, topic: string, audience: str
         `3. Werken jullie ook met bestaande teams?`,
         ``,
         `## Slot-CTA`,
-        `Klaar voor ${t}? Plan je intake op 000-it.com.`,
+        `Klaar voor ${t}? Plan uw intake op 000-it.com.`,
       ].join("\n")
     : [
         `# Landing page — ${t}`,
@@ -391,7 +391,7 @@ export default function ContentGeneratorPage() {
               className="min-h-80 font-mono text-sm"
               value={output}
               onChange={(e) => setOutput(e.target.value)}
-              placeholder={locale === "nl" ? "Je concept verschijnt hier…" : "Your draft appears here…"}
+              placeholder={locale === "nl" ? "U concept verschijnt hier…" : "Your draft appears here…"}
             />
           </CardContent>
         </Card>

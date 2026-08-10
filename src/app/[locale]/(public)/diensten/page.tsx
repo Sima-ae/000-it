@@ -5,10 +5,10 @@ import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
 import {
   serviceCatalog,
-  serviceGroups,
   serviceHref,
+  sortedServiceGroups,
 } from "@/content/fixweb/catalog";
-import { getServiceContent } from "@/lib/fixweb-content";
+import { getServiceCardMeta } from "@/lib/fixweb-content";
 
 const aiServices = [
   { key: "ai", href: "/ai-scan", image: "/uploads/fixweb/ai-integratie.png" },
@@ -42,16 +42,21 @@ export default async function ServicesPage({
         <p className="mt-3 max-w-2xl text-muted-foreground md:text-lg">{t("subtitle")}</p>
         <div className="mt-6 flex flex-wrap gap-2">
           <Button asChild variant="outline" className="rounded-2xl">
+            <SoftLink href={`/${locale}/diensten/ai-scan`}>AI</SoftLink>
+          </Button>
+          <Button asChild variant="outline" className="rounded-2xl">
             <SoftLink href={`/${locale}/diensten/webdesign-support`}>
-              Webdesign & Support
+              {isNl ? "Website support" : "Website Support"}
             </SoftLink>
           </Button>
           <Button asChild variant="outline" className="rounded-2xl">
-            <SoftLink href={`/${locale}/digital-design`}>Digital Design</SoftLink>
+            <SoftLink href={`/${locale}/digital-design`}>
+              {isNl ? "Digital design" : "Digital Design"}
+            </SoftLink>
           </Button>
           <Button asChild variant="outline" className="rounded-2xl">
             <SoftLink href={`/${locale}/diensten/digital-marketing`}>
-              {isNl ? "Digital Marketing" : "Digital Marketing"}
+              {isNl ? "Digital marketing" : "Digital Marketing"}
             </SoftLink>
           </Button>
         </div>
@@ -60,7 +65,7 @@ export default async function ServicesPage({
       <section className="mt-12">
         <Reveal>
           <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
-            {isNl ? "AI & Groei" : "AI & Growth"}
+            {isNl ? "AI en groei" : "AI & Growth"}
           </h2>
         </Reveal>
         <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -77,15 +82,11 @@ export default async function ServicesPage({
         </div>
       </section>
 
-      {serviceGroups.map((group) => {
+      {sortedServiceGroups(locale).map((group) => {
         const cards = serviceCatalog
           .filter((item) => item.group === group.id)
-          .map((item) => ({ item, content: getServiceContent(item.slug, locale) }))
-          .filter(({ content }) => {
-            if (!content) return false;
-            // Show every service that has real body content and/or a price
-            return content.blocks.length > 0 || typeof content.price === "number";
-          });
+          .map((item) => ({ item, content: getServiceCardMeta(item.slug, locale) }))
+          .filter(({ content }) => Boolean(content?.hasBody));
 
         if (cards.length === 0) return null;
 
@@ -106,7 +107,7 @@ export default async function ServicesPage({
                     href={`/${locale}/digital-design`}
                     className="text-sm font-medium text-primary hover:underline"
                   >
-                    {isNl ? "Open Digital Design" : "Open Digital Design"}
+                    {isNl ? "Open digital design" : "Open Digital Design"}
                   </SoftLink>
                 ) : null}
               </div>

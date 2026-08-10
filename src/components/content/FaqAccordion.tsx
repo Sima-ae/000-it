@@ -6,9 +6,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import type { FaqItem } from "@/content/faq";
+import type { FaqCategory, FaqItem } from "@/content/faq";
 
-export function FaqAccordion({ items }: { items: FaqItem[] }) {
+function CategoryAccordion({ items }: { items: FaqItem[] }) {
   return (
     <Accordion type="single" collapsible className="w-full space-y-3">
       {items.map((item, index) => (
@@ -34,5 +34,41 @@ export function FaqAccordion({ items }: { items: FaqItem[] }) {
         </div>
       ))}
     </Accordion>
+  );
+}
+
+export function FaqAccordion({ items }: { items: FaqItem[] }) {
+  return <CategoryAccordion items={items} />;
+}
+
+export function FaqCategories({ categories }: { categories: FaqCategory[] }) {
+  return (
+    <div className="space-y-14">
+      <nav className="flex flex-wrap gap-2">
+        {categories.map((category) => (
+          <a
+            key={category.id}
+            href={`#faq-${category.id}`}
+            className="rounded-full border border-border/80 bg-background/70 px-3 py-1.5 text-xs font-medium text-muted-foreground transition hover:border-primary/40 hover:text-foreground"
+          >
+            {category.title}
+          </a>
+        ))}
+      </nav>
+
+      {categories.map((category) => (
+        <section key={category.id} id={`faq-${category.id}`} className="scroll-mt-28">
+          <div className="mb-5 flex flex-wrap items-end justify-between gap-2">
+            <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
+              {category.title}
+            </h2>
+            <p className="text-xs text-muted-foreground">
+              {category.items.length} Q&A
+            </p>
+          </div>
+          <CategoryAccordion items={category.items} />
+        </section>
+      ))}
+    </div>
   );
 }

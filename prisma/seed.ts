@@ -1,7 +1,5 @@
-import { PrismaClient, AgentStatus, AgentType, ProjectStatus, ProjectType } from "@prisma/client";
+import { prisma } from "../src/lib/prisma";
 import bcrypt from "bcryptjs";
-
-const prisma = new PrismaClient();
 
 function seedPassword(envKey: string, localFallback: string) {
   const fromEnv = process.env[envKey]?.trim();
@@ -126,8 +124,8 @@ async function main() {
       id: "seed-project-growth",
       name: "Growth Sprint Alpha",
       description: "AI-driven growth program for launch clients.",
-      status: ProjectStatus.ACTIVE,
-      type: ProjectType.FULL_GROWTH,
+      status: "ACTIVE",
+      type: "FULL_GROWTH",
       budget: 999,
       startDate: new Date(),
       progress: 42,
@@ -142,8 +140,8 @@ async function main() {
       id: "seed-project-manager",
       name: "Manager Pipeline",
       description: "Manager-owned demo project.",
-      status: ProjectStatus.ACTIVE,
-      type: ProjectType.CONTENT,
+      status: "ACTIVE",
+      type: "CONTENT",
       budget: 399,
       startDate: new Date(),
       progress: 28,
@@ -158,8 +156,8 @@ async function main() {
       id: "seed-project-client",
       name: "Nova Retail Growth",
       description: "Client portal demo project.",
-      status: ProjectStatus.ACTIVE,
-      type: ProjectType.SEO,
+      status: "ACTIVE",
+      type: "SEO",
       budget: 499,
       startDate: new Date(),
       progress: 65,
@@ -199,11 +197,11 @@ async function main() {
   });
 
   const agents = [
-    { id: "seed-agent-seo", name: "SEOPilot", type: AgentType.SEO_AGENT, status: AgentStatus.RUNNING },
-    { id: "seed-agent-content", name: "PixelForge", type: AgentType.CONTENT_AGENT, status: AgentStatus.IDLE },
-    { id: "seed-agent-social", name: "SocialPulse", type: AgentType.SOCIAL_AGENT, status: AgentStatus.PAUSED },
-    { id: "seed-agent-ads", name: "AdsNinja", type: AgentType.ADS_AGENT, status: AgentStatus.RUNNING },
-  ] as const;
+    { id: "seed-agent-seo", name: "SEOPilot", type: "SEO_AGENT" as const, status: "RUNNING" as const },
+    { id: "seed-agent-content", name: "PixelForge", type: "CONTENT_AGENT" as const, status: "IDLE" as const },
+    { id: "seed-agent-social", name: "SocialPulse", type: "SOCIAL_AGENT" as const, status: "PAUSED" as const },
+    { id: "seed-agent-ads", name: "AdsNinja", type: "ADS_AGENT" as const, status: "RUNNING" as const },
+  ];
 
   for (const agent of agents) {
     await prisma.aIAgent.upsert({
@@ -229,8 +227,8 @@ async function main() {
     create: {
       id: "seed-agent-client",
       name: "Client SEO Watch",
-      type: AgentType.SEO_AGENT,
-      status: AgentStatus.RUNNING,
+      type: "SEO_AGENT",
+      status: "RUNNING",
       projectId: "seed-project-client",
       userId: clientUser.id,
       configuration: { mode: "client" },

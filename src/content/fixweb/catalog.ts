@@ -3,7 +3,7 @@ export type ServiceNavItem = {
   title: string;
   titleNl: string;
   kind: "page" | "product";
-  group: "wordpress" | "webdesign" | "marketing" | "hosting" | "design";
+  group: "ai" | "wordpress" | "webdesign" | "marketing" | "hosting" | "design";
   summary?: string;
   summaryNl?: string;
   /** Optional absolute path override (e.g. /digital-design) */
@@ -12,85 +12,225 @@ export type ServiceNavItem = {
 
 /** Service/page inventory mapped into TripleZero routes under /diensten/[slug] */
 export const serviceCatalog: ServiceNavItem[] = [
+  // AI
+  {
+    slug: "ai-scan",
+    title: "AI Scan",
+    titleNl: "AI-scan",
+    kind: "page",
+    group: "ai",
+    summary: "Readiness scan for SEO, AEO, GEO and AI answer engines.",
+    summaryNl: "Readiness-scan voor SEO, AEO, GEO en AI-antwoordenengines.",
+  },
+  {
+    slug: "aeo-optimization",
+    title: "AEO Optimization",
+    titleNl: "AEO optimalisatie",
+    kind: "page",
+    group: "ai",
+    summary: "Answer Engine Optimization for citable, answer-ready content.",
+    summaryNl: "Answer Engine Optimization voor citeerbare, antwoordklare content.",
+  },
+  {
+    slug: "geo-optimization",
+    title: "GEO Optimization",
+    titleNl: "GEO optimalisatie",
+    kind: "page",
+    group: "ai",
+    summary: "Generative Engine Optimization for AI summaries and citations.",
+    summaryNl: "Generative Engine Optimization voor AI-samenvattingen en citaties.",
+  },
+  {
+    slug: "ai-content-strategy",
+    title: "AI Content Strategy",
+    titleNl: "AI contentstrategie",
+    kind: "page",
+    group: "ai",
+    summary: "Human-led content systems accelerated by AI.",
+    summaryNl: "Mensgestuurde contentsystemen versneld met AI.",
+  },
+  {
+    slug: "ai-chatbots",
+    title: "AI Agents and ChatBots",
+    titleNl: "AI agents en chatbots",
+    kind: "page",
+    group: "ai",
+    summary:
+      "Conversational AI agents and chatbots for websites, support and sales — on-brand, grounded and with human escalation.",
+    summaryNl:
+      "Conversationele AI-agents en chatbots voor websites, support en sales — on-brand, grounded en met menselijke escalatie.",
+  },
+  {
+    slug: "ai-automation",
+    title: "AI Automation",
+    titleNl: "AI automatisering",
+    kind: "page",
+    group: "ai",
+    summary: "Automate repetitive marketing, ops and support work with AI — safely and measurably.",
+    summaryNl:
+      "Automatiseer repetitief marketing-, ops- en supportwerk met AI — veilig en meetbaar.",
+  },
+  {
+    slug: "ai-workflows",
+    title: "AI Workflows",
+    titleNl: "AI workflows",
+    kind: "page",
+    group: "ai",
+    summary: "Designed AI workflows: triggers, steps, approvals and integrations end to end.",
+    summaryNl:
+      "Ontworpen AI-workflows: triggers, stappen, goedkeuringen en integraties van begin tot eind.",
+  },
+  {
+    slug: "ai-marketing-agents",
+    title: "AI Marketing Agents",
+    titleNl: "AI marketing agents",
+    kind: "page",
+    group: "ai",
+    summary: "Role-based agents for SEO, content, social and ads.",
+    summaryNl: "Rolgebaseerde agents voor SEO, content, social en ads.",
+  },
+  {
+    slug: "ai-integration",
+    title: "Custom AI Integration",
+    titleNl: "AI integratie en maatwerk",
+    kind: "page",
+    group: "ai",
+    summary: "Custom AI features, RAG and APIs in your product stack.",
+    summaryNl: "Maatwerk AI-features, RAG en API’s in uw productstack.",
+  },
+  {
+    slug: "ai-consultancy",
+    title: "AI Strategy & Consultancy",
+    titleNl: "AI strategie en advies",
+    kind: "page",
+    group: "ai",
+    summary: "Executive AI strategy, pilots and ROI frameworks.",
+    summaryNl: "Bestuursklare AI-strategie, pilots en ROI-frameworks.",
+  },
+
   // WordPress & Support (pages + products)
+  {
+    slug: "ai-in-wordpress",
+    title: "AI in WordPress",
+    titleNl: "AI in WordPress",
+    kind: "page",
+    group: "wordpress",
+    summary:
+      "Chatbots, content AI, automation and custom AI features built into your WordPress site.",
+    summaryNl:
+      "Chatbots, content-AI, automatisering en maatwerk AI in uw WordPress-website.",
+  },
   {
     slug: "wordpress-support",
     title: "WordPress Support",
-    titleNl: "WordPress Support",
+    titleNl: "WordPress support",
     kind: "page",
     group: "wordpress",
     summary: "Expert WordPress support to keep your site running smoothly.",
-    summaryNl: "Expert WordPress support zodat je site soepel blijft draaien.",
+    summaryNl: "Expert WordPress support zodat uw site soepel blijft draaien.",
   },
   {
     slug: "wordpress-error-fix",
-    title: "WordPress Error Fix",
-    titleNl: "WordPress Bugs / Error Fix",
+    title: "Fix Bugs and Errors",
+    titleNl: "Bugs en errors verhelpen",
     kind: "product",
     group: "wordpress",
   },
   {
     slug: "wordpress-malware-removal",
-    title: "WordPress Malware Removal",
-    titleNl: "Malware verwijderen & beveiligen",
+    title: "Malware Removal",
+    titleNl: "Malware verwijderen",
     kind: "product",
     group: "wordpress",
   },
   {
     slug: "wordpress-security",
-    title: "WordPress Security, Firewall & SSL",
-    titleNl: "WordPress Security, Firewall & SSL",
+    title: "Firewall, Security & SSL",
+    titleNl: "Firewall, security en SSL",
     kind: "product",
     group: "wordpress",
   },
   {
     slug: "wordpress-speed-optimization",
     title: "WordPress Speed Optimization",
-    titleNl: "Performance & Speed Optimization",
+    titleNl: "Performance en snelheid",
     kind: "product",
     group: "wordpress",
   },
   {
     slug: "wordpress-backup-hosting-migration",
-    title: "WordPress Backup & Hosting Migration",
-    titleNl: "Backup / Migrate WordPress",
+    title: "Backups and Migration",
+    titleNl: "Backups en migratie",
     kind: "product",
     group: "wordpress",
   },
   {
     slug: "wordpress-plugin-theme-installation",
     title: "WordPress Plugin / Theme Installation",
-    titleNl: "Plugin / Theme installatie",
+    titleNl: "Plugin / theme installatie",
     kind: "product",
     group: "wordpress",
   },
   {
+    slug: "wordpress-maintenance-updates",
+    title: "Maintenance & Updates",
+    titleNl: "Onderhoud en updates",
+    kind: "page",
+    group: "wordpress",
+    summary:
+      "Ongoing WordPress core, plugin and theme updates with backups, monitoring and care.",
+    summaryNl:
+      "Doorlopend WordPress core-, plugin- en theme-updates met backups, monitoring en nazorg.",
+  },
+  {
     slug: "basic-support",
     title: "Basic Support",
-    titleNl: "Basic Support",
+    titleNl: "Basic support",
     kind: "product",
     group: "wordpress",
   },
   {
     slug: "standard-support",
     title: "Standard Support",
-    titleNl: "Standard Support",
+    titleNl: "Standard support",
     kind: "product",
     group: "wordpress",
   },
   {
     slug: "premium-support",
     title: "Premium Support",
-    titleNl: "Premium Support",
+    titleNl: "Premium support",
     kind: "product",
     group: "wordpress",
   },
 
   // Webdesign & Support (non-WordPress)
   {
+    slug: "ai-in-ecommerce",
+    title: "AI in E-commerce",
+    titleNl: "AI in e-commerce",
+    kind: "page",
+    group: "webdesign",
+    summary:
+      "AI for webshops: product assistants, smart search, cart help and conversion-focused automation.",
+    summaryNl:
+      "AI voor webshops: productassistenten, slimme search, cart-hulp en conversiegerichte automatisering.",
+  },
+  {
+    slug: "ai-in-website",
+    title: "AI in Website",
+    titleNl: "AI in website",
+    kind: "page",
+    group: "webdesign",
+    summary:
+      "AI for custom websites — chat, leads, knowledge search and automation on PHP, HTML/JS and Next.js.",
+    summaryNl:
+      "AI voor maatwerkwebsites — chat, leads, knowledge search en automatisering op PHP, HTML/JS en Next.js.",
+  },
+  {
     slug: "webdesign-support",
-    title: "Webdesign & Support",
-    titleNl: "Webdesign & Support",
+    title: "Website Support",
+    titleNl: "Website support",
     kind: "page",
     group: "webdesign",
     summary:
@@ -101,7 +241,7 @@ export const serviceCatalog: ServiceNavItem[] = [
   {
     slug: "custom-webdesign",
     title: "Custom Webdesign",
-    titleNl: "Maatwerk Webdesign",
+    titleNl: "Maatwerk webdesign",
     kind: "page",
     group: "webdesign",
     summary: "Pixel-sharp, conversion-focused websites built from scratch.",
@@ -110,7 +250,7 @@ export const serviceCatalog: ServiceNavItem[] = [
   {
     slug: "php-web-development",
     title: "PHP Web Development",
-    titleNl: "PHP Webontwikkeling",
+    titleNl: "PHP webontwikkeling",
     kind: "page",
     group: "webdesign",
     summary: "Robust PHP applications, APIs and legacy modernization.",
@@ -119,7 +259,7 @@ export const serviceCatalog: ServiceNavItem[] = [
   {
     slug: "nextjs-development",
     title: "Next.js Development",
-    titleNl: "Next.js Ontwikkeling",
+    titleNl: "Next.js ontwikkeling",
     kind: "page",
     group: "webdesign",
     summary: "Fast, SEO-ready React apps with App Router and modern DX.",
@@ -136,8 +276,8 @@ export const serviceCatalog: ServiceNavItem[] = [
   },
   {
     slug: "website-maintenance",
-    title: "Website Maintenance & Support",
-    titleNl: "Website Onderhoud & Support",
+    title: "Daily Maintenance",
+    titleNl: "Dagelijks onderhoud",
     kind: "page",
     group: "webdesign",
     summary: "Updates, monitoring, bugfixes and performance care for custom stacks.",
@@ -153,20 +293,31 @@ export const serviceCatalog: ServiceNavItem[] = [
     summaryNl: "Koppel CRM’s, betalingen, ERP’s en AI-diensten netjes aan elkaar.",
   },
   {
-    slug: "website-malware-security",
-    title: "Malware Removal & Security",
-    titleNl: "Malware verwijderen & beveiliging",
+    slug: "website-malware-removal",
+    title: "Malware Removal",
+    titleNl: "Malware verwijderen",
     kind: "page",
     group: "webdesign",
     summary:
-      "Malware cleanup, hardening and ongoing security for custom PHP, HTML and Next.js sites — not WordPress.",
+      "Malware cleanup for custom PHP, HTML and Next.js sites — separate from WordPress malware packages.",
     summaryNl:
-      "Malware opruimen, harden en doorlopende beveiliging voor maatwerk PHP-, HTML- en Next.js-sites — geen WordPress.",
+      "Malware opruimen voor maatwerk PHP-, HTML- en Next.js-sites — los van WordPress-malwarepakketten.",
+  },
+  {
+    slug: "website-security",
+    title: "Firewall, Security & SSL",
+    titleNl: "Firewall, security en SSL",
+    kind: "page",
+    group: "webdesign",
+    summary:
+      "Hardening, firewall/WAF, HTTPS/SSL and security monitoring for custom websites — not WordPress.",
+    summaryNl:
+      "Harden, firewall/WAF, HTTPS/SSL en security-monitoring voor maatwerkwebsites — geen WordPress.",
   },
   {
     slug: "website-speed-optimization",
     title: "Performance & Speed Optimization",
-    titleNl: "Performance & Speed Optimization",
+    titleNl: "Performance en snelheid",
     kind: "page",
     group: "webdesign",
     summary:
@@ -177,7 +328,7 @@ export const serviceCatalog: ServiceNavItem[] = [
   {
     slug: "website-backup-migration",
     title: "Backup / Migration",
-    titleNl: "Backup / Migratie",
+    titleNl: "Backup / migratie",
     kind: "page",
     group: "webdesign",
     summary:
@@ -190,7 +341,7 @@ export const serviceCatalog: ServiceNavItem[] = [
   {
     slug: "seo-optimization",
     title: "SEO Optimization",
-    titleNl: "SEO Optimalisatie",
+    titleNl: "SEO optimalisatie",
     kind: "product",
     group: "marketing",
     summary: "Rank higher with technical SEO, content and authority building.",
@@ -199,7 +350,7 @@ export const serviceCatalog: ServiceNavItem[] = [
   {
     slug: "digital-marketing",
     title: "Digital Marketing",
-    titleNl: "Digital Marketing",
+    titleNl: "Digital marketing",
     kind: "page",
     group: "marketing",
     summary: "Full-funnel campaigns across ads, SEO, email and conversion.",
@@ -208,7 +359,7 @@ export const serviceCatalog: ServiceNavItem[] = [
   {
     slug: "content-writing",
     title: "Content Writing",
-    titleNl: "Content Writing",
+    titleNl: "Content writing",
     kind: "page",
     group: "marketing",
     summary: "SEO blogs, website copy, newsletters and conversion-focused writing.",
@@ -217,7 +368,7 @@ export const serviceCatalog: ServiceNavItem[] = [
   {
     slug: "social-media-management",
     title: "Social Media Management",
-    titleNl: "Social Media Management",
+    titleNl: "Social media management",
     kind: "page",
     group: "marketing",
     summary: "Strategy, content calendar and community engagement on every channel.",
@@ -226,7 +377,7 @@ export const serviceCatalog: ServiceNavItem[] = [
   {
     slug: "media-creation",
     title: "Media Creation",
-    titleNl: "Media Creation",
+    titleNl: "Media creation",
     kind: "page",
     group: "marketing",
     summary: "Visuals, video snippets and creative assets for campaigns.",
@@ -239,12 +390,12 @@ export const serviceCatalog: ServiceNavItem[] = [
     kind: "page",
     group: "marketing",
     summary: "Build, optimize and grow your online store end to end.",
-    summaryNl: "Bouw, optimaliseer en groei je webshop van A tot Z.",
+    summaryNl: "Bouw, optimaliseer en groei uw webshop van A tot Z.",
   },
   {
     slug: "product-listing",
     title: "Product Listing",
-    titleNl: "Product Listing",
+    titleNl: "Product listing",
     kind: "page",
     group: "marketing",
     summary: "Marketplace-ready product titles, descriptions and attributes.",
@@ -253,7 +404,7 @@ export const serviceCatalog: ServiceNavItem[] = [
   {
     slug: "community-management",
     title: "Community Management",
-    titleNl: "Community Management",
+    titleNl: "Community management",
     kind: "page",
     group: "marketing",
     summary: "Moderation, replies and reputation care across communities.",
@@ -262,7 +413,7 @@ export const serviceCatalog: ServiceNavItem[] = [
   {
     slug: "data-entry",
     title: "Data Entry",
-    titleNl: "Data Entry",
+    titleNl: "Data entry",
     kind: "page",
     group: "marketing",
     summary: "Accurate catalog, CRM and operations data at scale.",
@@ -273,7 +424,7 @@ export const serviceCatalog: ServiceNavItem[] = [
   {
     slug: "digital-design",
     title: "Digital Design",
-    titleNl: "Digital Design",
+    titleNl: "Digital design",
     kind: "page",
     group: "design",
     href: "/digital-design",
@@ -285,75 +436,84 @@ export const serviceCatalog: ServiceNavItem[] = [
   {
     slug: "logo-brand-identity",
     title: "Logo & Brand Identity",
-    titleNl: "Logo & Merkidentiteit",
+    titleNl: "Logo en merkidentiteit",
     kind: "page",
     group: "design",
     summary: "Distinctive logos and brand systems that scale across print and digital.",
     summaryNl: "Herkende logo’s en merksystemen die schalen over print en digitaal.",
   },
   {
-    slug: "business-cards-stationery",
-    title: "Business Cards & Stationery",
-    titleNl: "Visitekaartjes & Briefpapier",
+    slug: "business-cards",
+    title: "Business Cards",
+    titleNl: "Visitekaartjes",
     kind: "page",
     group: "design",
-    summary: "Print-ready business cards, letterheads and envelopes.",
-    summaryNl: "Drukklare visitekaartjes, briefpapier en enveloppen.",
+    summary: "Design and print business cards in small or large quantities.",
+    summaryNl: "Ontwerp en druk visitekaartjes in kleine of grote oplages.",
+  },
+  {
+    slug: "briefpapier",
+    title: "Letterhead",
+    titleNl: "Briefpapier",
+    kind: "page",
+    group: "design",
+    summary: "Letterhead design and printing in small or large quantities.",
+    summaryNl: "Briefpapier ontwerp en drukwerk in kleine of grote oplages.",
   },
   {
     slug: "flyers-posters",
     title: "Flyers & Posters",
-    titleNl: "Flyers & Posters",
+    titleNl: "Flyers en posters",
     kind: "page",
     group: "design",
-    summary: "Campaign visuals for events, retail and outdoor.",
-    summaryNl: "Campagnevisuals voor events, retail en outdoor.",
+    summary: "Flyer and poster design plus printing in small or large quantities.",
+    summaryNl: "Flyer- en posterontwerp plus drukwerk in kleine of grote oplages.",
   },
   {
     slug: "stickers-packaging",
-    title: "Stickers & Packaging",
-    titleNl: "Stickers & Packaging",
+    title: "Stickers",
+    titleNl: "Stickers",
     kind: "page",
     group: "design",
-    summary: "Die-cut stickers, labels and simple packaging artwork.",
-    summaryNl: "Contourgestanste stickers, labels en eenvoudige packaging artwork.",
+    summary: "Sticker design and printing — small batches or large runs.",
+    summaryNl: "Stickerontwerp en drukwerk — kleine batches of grote runs.",
   },
   {
     slug: "magazines-brochures",
     title: "Magazines & Brochures",
-    titleNl: "Magazines & Brochures",
+    titleNl: "Magazines en brochures",
     kind: "page",
     group: "design",
-    summary: "Multi-page layouts in InDesign for print and PDF.",
-    summaryNl: "Meerpagina-layouts in InDesign voor print en PDF.",
+    summary: "Brochure and magazine design plus printing in small or large quantities.",
+    summaryNl: "Brochure- en magazine-ontwerp plus drukwerk in kleine of grote oplages.",
   },
 
   // Hosting
   {
     slug: "web-hosting",
     title: "Web Hosting",
-    titleNl: "Web Hosting",
+    titleNl: "Web hosting",
     kind: "page",
     group: "hosting",
   },
   {
     slug: "shared-hosting",
     title: "Shared Hosting",
-    titleNl: "Shared Hosting",
+    titleNl: "Shared hosting",
     kind: "page",
     group: "hosting",
   },
   {
     slug: "wordpress-hosting",
     title: "WordPress Hosting",
-    titleNl: "WordPress Hosting",
+    titleNl: "WordPress hosting",
     kind: "page",
     group: "hosting",
   },
   {
     slug: "vps-hosting",
     title: "VPS Hosting",
-    titleNl: "VPS Hosting",
+    titleNl: "VPS hosting",
     kind: "page",
     group: "hosting",
   },
@@ -367,75 +527,90 @@ export const serviceCatalog: ServiceNavItem[] = [
   {
     slug: "shared-hosting-basic",
     title: "Shared Hosting Basic",
-    titleNl: "Shared Hosting Basic",
+    titleNl: "Shared hosting basic",
     kind: "product",
     group: "hosting",
   },
   {
     slug: "shared-hosting-plus",
     title: "Shared Hosting Plus",
-    titleNl: "Shared Hosting Plus",
+    titleNl: "Shared hosting plus",
     kind: "product",
     group: "hosting",
   },
   {
     slug: "shared-hosting-business",
     title: "Shared Hosting Business",
-    titleNl: "Shared Hosting Business",
+    titleNl: "Shared hosting business",
     kind: "product",
     group: "hosting",
   },
   {
     slug: "wordpress-hosting-basic",
     title: "WordPress Hosting Basic",
-    titleNl: "WordPress Hosting Basic",
+    titleNl: "WordPress hosting basic",
     kind: "product",
     group: "hosting",
   },
   {
     slug: "wordpress-hosting-plus",
     title: "WordPress Hosting Plus",
-    titleNl: "WordPress Hosting Plus",
+    titleNl: "WordPress hosting plus",
     kind: "product",
     group: "hosting",
   },
   {
     slug: "wordpress-hosting-business",
-    title: "WordPress Hosting Business",
-    titleNl: "WordPress Hosting Business",
+    title: "WordPress Hosting Pro",
+    titleNl: "WordPress hosting pro",
     kind: "product",
     group: "hosting",
   },
   {
     slug: "vps-hosting-basic",
     title: "VPS Hosting Basic",
-    titleNl: "VPS Hosting Basic",
+    titleNl: "VPS hosting basic",
     kind: "product",
     group: "hosting",
   },
   {
     slug: "vps-hosting-plus",
     title: "VPS Hosting Plus",
-    titleNl: "VPS Hosting Plus",
+    titleNl: "VPS hosting plus",
     kind: "product",
     group: "hosting",
   },
   {
     slug: "vps-hosting-business",
     title: "VPS Hosting Business",
-    titleNl: "VPS Hosting Business",
+    titleNl: "VPS hosting business",
     kind: "product",
     group: "hosting",
   },
 ];
 
 export const serviceGroups = [
-  { id: "wordpress" as const, title: "WordPress & Support", titleNl: "WordPress & Support" },
-  { id: "webdesign" as const, title: "Webdesign & Support", titleNl: "Webdesign & Support" },
-  { id: "design" as const, title: "Digital Design", titleNl: "Digital Design" },
-  { id: "marketing" as const, title: "Marketing & Growth", titleNl: "Marketing & Groei" },
-  { id: "hosting" as const, title: "Hosting & Domains", titleNl: "Hosting & Domeinen" },
+  { id: "ai" as const, title: "AI", titleNl: "AI" },
+  { id: "wordpress" as const, title: "WordPress & Support", titleNl: "WordPress en support" },
+  { id: "webdesign" as const, title: "Webdesign & Support", titleNl: "Webdesign en support" },
+  { id: "design" as const, title: "Digital Design", titleNl: "Digital design" },
+  { id: "marketing" as const, title: "Marketing & Growth", titleNl: "Marketing en groei" },
+  { id: "hosting" as const, title: "Webhosting & Domains", titleNl: "Webhosting en domeinen" },
 ];
+
+/** AI first, then remaining categories A–Z by localized title. */
+export function sortedServiceGroups(locale: string) {
+  const isNl = locale === "nl";
+  const ai = serviceGroups.find((g) => g.id === "ai");
+  const rest = serviceGroups
+    .filter((g) => g.id !== "ai")
+    .sort((a, b) =>
+      (isNl ? a.titleNl : a.title).localeCompare(isNl ? b.titleNl : b.title, isNl ? "nl" : "en", {
+        sensitivity: "base",
+      }),
+    );
+  return ai ? [ai, ...rest] : rest;
+}
 
 export const legalPages = [
   { slug: "privacy-policy", href: "/privacy", title: "Privacy Policy", titleNl: "Privacybeleid" },
@@ -460,4 +635,36 @@ export function getServiceSlugs() {
 export function serviceHref(locale: string, item: ServiceNavItem) {
   if (item.href) return `/${locale}${item.href}`;
   return `/${locale}/diensten/${item.slug}`;
+}
+
+/** A–Z by locale title; hosting keeps given order */
+export function sortServicesAz(
+  items: ServiceNavItem[],
+  locale: string,
+  options?: { preserveGroupIds?: string[] },
+) {
+  const preserve = new Set(options?.preserveGroupIds ?? ["hosting", "ai"]);
+  const byGroup = new Map<ServiceNavItem["group"], ServiceNavItem[]>();
+  for (const item of items) {
+    const list = byGroup.get(item.group) || [];
+    list.push(item);
+    byGroup.set(item.group, list);
+  }
+  const isNl = locale === "nl";
+  const out: ServiceNavItem[] = [];
+  for (const group of sortedServiceGroups(locale)) {
+    const list = byGroup.get(group.id) || [];
+    if (preserve.has(group.id)) {
+      out.push(...list);
+      continue;
+    }
+    out.push(
+      ...[...list].sort((a, b) =>
+        (isNl ? a.titleNl : a.title).localeCompare(isNl ? b.titleNl : b.title, isNl ? "nl" : "en", {
+          sensitivity: "base",
+        }),
+      ),
+    );
+  }
+  return out;
 }

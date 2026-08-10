@@ -17,7 +17,7 @@ export function RouteProgress() {
     if (!pending) return;
     setVisible(true);
     setComplete(false);
-    const failSafe = window.setTimeout(() => done(), 8000);
+    const failSafe = window.setTimeout(() => done(), 4000);
     return () => window.clearTimeout(failSafe);
   }, [pending, done]);
 
@@ -41,7 +41,7 @@ export function RouteProgress() {
       <div
         className={cn(
           "h-full origin-left bg-primary transition-transform ease-out",
-          complete || !pending ? "duration-300" : "duration-[8s]",
+          complete || !pending ? "duration-300" : "duration-[1.6s]",
         )}
         style={{
           transform: complete || !pending ? "scaleX(1)" : "scaleX(0.72)",

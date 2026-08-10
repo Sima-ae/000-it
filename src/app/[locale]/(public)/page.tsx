@@ -6,6 +6,7 @@ import { GlassCard } from "@/components/marketing/GlassCard";
 import { AnimatedCounter } from "@/components/marketing/AnimatedCounter";
 import { HeroVisual } from "@/components/marketing/HeroVisual";
 import { Reveal } from "@/components/marketing/Reveal";
+import { PricingPlans } from "@/components/marketing/PricingPlans";
 import {
   Accordion,
   AccordionContent,
@@ -41,21 +42,51 @@ export default async function HomePage({
 
   const plans = [
     {
+      id: "starter" as const,
       name: pricing("starter"),
-      price: "€49",
-      features: ["1 agent", "AI-Scan (1 url)", "AEO, GEO & SEO basics"],
+      monthlyPrice: 44.95,
+      features: [
+        "1 x domeinnaam .NL - 12 maanden",
+        "1 x webhosting - 12 maanden",
+        "1 x E-commerce shop / website",
+        "1 x AI agent",
+        "AI-scanner",
+        "AEO, GEO & SEO basic",
+        "Premium support",
+        "24/7 monitoring",
+      ],
       featured: false,
     },
     {
+      id: "growth" as const,
       name: pricing("growth"),
-      price: "€99",
-      features: ["3 agents", "AI-Scan (3 urls)", "AEO, GEO & SEO advanced"],
+      monthlyPrice: 99.95,
+      features: [
+        "1 x domeinnaam .NL - 12 maanden",
+        "1 x webhosting - 12 maanden",
+        "1 x E-commerce shop / website",
+        "2 x AI agent",
+        "AI-scanner",
+        "AEO, GEO & SEO plus",
+        "Premium support",
+        "24/7 monitoring",
+      ],
       featured: true,
     },
     {
+      id: "enterprise" as const,
       name: pricing("enterprise"),
-      price: pricing("custom"),
-      features: ["Custom agents", "API access", "SLA & support"],
+      monthlyPrice: null,
+      features: [
+        "Unlimited domeinnamen",
+        "Unlimited webhosting",
+        "Unlimited E-commerce shops / websites",
+        "Unlimited AI agents",
+        "AI-scanner",
+        "AEO, GEO & SEO pro",
+        "Premium support",
+        "24/7 monitoring",
+      ],
       featured: false,
     },
   ];
@@ -93,59 +124,22 @@ export default async function HomePage({
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
-        <Reveal>
-          <div className="mb-10 max-w-2xl">
-            <h2 className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
-              {pricing("title")}
-            </h2>
-            <p className="mt-3 text-muted-foreground md:text-lg">{pricing("subtitle")}</p>
-          </div>
-        </Reveal>
-
-        <div className="grid items-stretch gap-4 lg:grid-cols-3">
-          {plans.map((plan, index) => (
-            <Reveal key={plan.name} delay={index * 0.08}>
-              <GlassCard
-                className={cn(
-                  "relative flex h-full flex-col overflow-hidden",
-                  plan.featured && "mesh-panel ring-1 ring-primary/20 lg:-translate-y-3 lg:scale-[1.03]",
-                )}
-              >
-                {plan.featured && (
-                  <div className="mb-4 inline-flex w-fit rounded-xl bg-primary px-3 py-1 text-xs font-semibold text-primary-foreground">
-                    Extra Growth
-                  </div>
-                )}
-                <h3 className="font-display text-xl font-semibold tracking-tight">{plan.name}</h3>
-                <p className="mt-4 font-display text-4xl font-bold tracking-tight">
-                  {plan.price}
-                  {plan.price.startsWith("€") && (
-                    <span className="ml-1 text-sm font-medium text-muted-foreground">
-                      {pricing("month")}
-                    </span>
-                  )}
-                </p>
-                <ul className="mt-6 flex-1 space-y-3 text-sm text-muted-foreground">
-                  {plan.features.map((f) => (
-                    <li key={f} className="flex items-center gap-2">
-                      <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-                <Button
-                  asChild
-                  className="mt-8 w-full rounded-2xl"
-                  variant={plan.featured ? "default" : "outline"}
-                >
-                  <SoftLink href={`/${locale}/register`}>{pricing("cta")}</SoftLink>
-                </Button>
-              </GlassCard>
-            </Reveal>
-          ))}
-        </div>
-      </section>
+      <PricingPlans
+        plans={plans}
+        labels={{
+          title: pricing("title"),
+          subtitle: pricing("subtitle"),
+          monthly: pricing("monthly"),
+          yearly: pricing("yearly"),
+          save: pricing("saveYearly"),
+          perMonth: pricing("month"),
+          perYear: pricing("year"),
+          cta: pricing("cta"),
+          ctaContact: pricing("ctaContact"),
+          custom: pricing("custom"),
+          mostChosen: pricing("mostChosen"),
+        }}
+      />
 
       <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
         <Reveal>

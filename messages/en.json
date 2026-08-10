@@ -10,7 +10,7 @@
     "contact": "Contact",
     "aiScan": "AI Scan",
     "faq": "FAQ",
-    "book": "Book",
+    "book": "Book a meeting?",
     "login": "Log in",
     "register": "Sign up",
     "dashboard": "Dashboard",
@@ -40,11 +40,17 @@
     "title": "Pricing",
     "subtitle": "Pick the plan that fits your growth stage.",
     "cta": "Choose Plan",
+    "ctaContact": "Contact us",
     "starter": "Business",
     "growth": "Extra Growth",
     "enterprise": "Enterprise",
     "custom": "Custom",
-    "month": "/month"
+    "month": "/month",
+    "year": "/year",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "saveYearly": "Save 10% with yearly billing",
+    "mostChosen": "Most popular"
   },
   "faq": {
     "title": "FAQ",

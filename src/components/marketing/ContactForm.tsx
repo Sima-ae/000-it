@@ -19,48 +19,82 @@ const schema = z.object({
 
 type FormValues = z.infer<typeof schema>;
 
-export function ContactForm() {
+export function ContactForm({
+  defaultMessage = "",
+  source = "CONTACT_FORM",
+  onSuccess,
+  submitLabel,
+  className,
+  centered = false,
+}: {
+  defaultMessage?: string;
+  source?: string;
+  onSuccess?: () => void;
+  submitLabel?: string;
+  className?: string;
+  centered?: boolean;
+}) {
   const t = useTranslations("contact");
   const form = useForm<FormValues>({
     resolver: zodResolver(schema),
-    defaultValues: { name: "", email: "", company: "", message: "" },
+    defaultValues: { name: "", email: "", company: "", message: defaultMessage },
   });
 
   async function onSubmit(values: FormValues) {
     const res = await fetch("/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(values),
+      body: JSON.stringify({ ...values, source }),
     });
     if (!res.ok) {
       toast.error("Failed to send");
       return;
     }
     toast.success(t("success"));
-    form.reset();
+    form.reset({ name: "", email: "", company: "", message: defaultMessage });
+    onSuccess?.();
   }
 
   return (
-    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+    <form
+      onSubmit={form.handleSubmit(onSubmit)}
+      className={className ?? (centered ? "space-y-4 text-center" : "space-y-4")}
+    >
       <div className="space-y-2">
         <Label htmlFor="name">{t("name")}</Label>
-        <Input id="name" {...form.register("name")} />
+        <Input id="name" {...form.register("name")} className={centered ? "text-center" : undefined} />
       </div>
       <div className="space-y-2">
         <Label htmlFor="email">{t("email")}</Label>
-        <Input id="email" type="email" {...form.register("email")} />
+        <Input
+          id="email"
+          type="email"
+          {...form.register("email")}
+          className={centered ? "text-center" : undefined}
+        />
       </div>
       <div className="space-y-2">
         <Label htmlFor="company">{t("company")}</Label>
-        <Input id="company" {...form.register("company")} />
+        <Input
+          id="company"
+          {...form.register("company")}
+          className={centered ? "text-center" : undefined}
+        />
       </div>
       <div className="space-y-2">
         <Label htmlFor="message">{t("message")}</Label>
-        <Textarea id="message" {...form.register("message")} />
+        <Textarea
+          id="message"
+          rows={5}
+          {...form.register("message")}
+          className={centered ? "text-center" : undefined}
+        />
       </div>
-      <Button type="submit" disabled={form.formState.isSubmitting}>
-        {t("send")}
-      </Button>
+      <div className={centered ? "flex justify-center" : undefined}>
+        <Button type="submit" disabled={form.formState.isSubmitting} className="w-full sm:w-auto">
+          {submitLabel || t("send")}
+        </Button>
+      </div>
     </form>
   );
 }

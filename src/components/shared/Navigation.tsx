@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/shared/ThemeToggle";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { ServicesMegaMenu } from "@/components/shared/ServicesMegaMenu";
-import { serviceCatalog, serviceGroups, serviceHref } from "@/content/fixweb/catalog";
+import { serviceCatalog, serviceHref, sortedServiceGroups } from "@/content/fixweb/catalog";
 import { cn } from "@/lib/utils";
 
 const primaryLinks = [
@@ -18,7 +18,7 @@ const primaryLinks = [
   { href: "/ai-scan", key: "aiScan" },
   { href: "/diensten", key: "services", mega: true },
   { href: "/portfolio", key: "portfolio" },
-  { href: "/case-studies", key: "cases" },
+  // { href: "/case-studies", key: "cases" },
   { href: "/nieuws", key: "blog" },
   { href: "/faq", key: "faq" },
   { href: "/contact", key: "contact" },
@@ -180,30 +180,51 @@ export function Navigation() {
                           <SoftLink
                             href={`/${locale}/diensten`}
                             className="block py-1 text-sm font-medium text-foreground"
-                            onClick={() => setOpen(false)}
                           >
                             {isNl ? "Alle diensten" : "All services"}
                           </SoftLink>
-                          {serviceGroups.map((group) => (
-                            <div key={group.id}>
-                              <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                                {isNl ? group.titleNl : group.title}
-                              </p>
-                              {serviceCatalog
-                                .filter((s) => s.group === group.id)
-                                .slice(0, group.id === "wordpress" || group.id === "hosting" ? 6 : 7)
-                                .map((item) => (
-                                  <SoftLink
-                                    key={item.slug}
-                                    href={serviceHref(locale, item)}
-                                    className="block py-1 text-sm text-muted-foreground hover:text-foreground"
-                                    onClick={() => setOpen(false)}
-                                  >
-                                    {isNl ? item.titleNl : item.title}
-                                  </SoftLink>
-                                ))}
-                            </div>
-                          ))}
+                          {sortedServiceGroups(locale).map((group) => {
+                            const groupItems = serviceCatalog.filter((s) => s.group === group.id);
+                            const sorted =
+                              group.id === "hosting" || group.id === "ai"
+                                ? groupItems
+                                : [...groupItems].sort((a, b) =>
+                                    (isNl ? a.titleNl : a.title).localeCompare(
+                                      isNl ? b.titleNl : b.title,
+                                      isNl ? "nl" : "en",
+                                      { sensitivity: "base" },
+                                    ),
+                                  );
+                            return (
+                              <div key={group.id}>
+                                <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                                  {isNl ? group.titleNl : group.title}
+                                </p>
+                                {sorted
+                                  .slice(
+                                    0,
+                                    group.id === "ai"
+                                      ? 10
+                                      : group.id === "webdesign"
+                                        ? 11
+                                        : group.id === "wordpress"
+                                          ? 8
+                                          : group.id === "hosting"
+                                            ? 14
+                                            : 8,
+                                  )
+                                  .map((item) => (
+                                    <SoftLink
+                                      key={item.slug}
+                                      href={serviceHref(locale, item)}
+                                      className="block py-1 text-sm text-muted-foreground hover:text-foreground"
+                                    >
+                                      {isNl ? item.titleNl : item.title}
+                                    </SoftLink>
+                                  ))}
+                              </div>
+                            );
+                          })}
                         </div>
                       ) : null}
                     </div>
@@ -218,7 +239,6 @@ export function Navigation() {
                       "rounded-xl px-3 py-2.5 text-sm text-muted-foreground transition hover:bg-muted/70 hover:text-foreground",
                       active && "bg-primary/10 text-foreground",
                     )}
-                    onClick={() => setOpen(false)}
                   >
                     {t(link.key)}
                   </SoftLink>
@@ -227,7 +247,6 @@ export function Navigation() {
               <SoftLink
                 href={`/${locale}/afspraak`}
                 className="rounded-xl bg-primary px-3 py-2.5 text-sm font-semibold text-primary-foreground"
-                onClick={() => setOpen(false)}
               >
                 {t("book")}
               </SoftLink>

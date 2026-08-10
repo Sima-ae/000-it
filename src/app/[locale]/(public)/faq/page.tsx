@@ -2,7 +2,7 @@ import { setRequestLocale } from "next-intl/server";
 import { Reveal } from "@/components/marketing/Reveal";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
-import { FaqAccordion } from "@/components/content/FaqAccordion";
+import { FaqCategories } from "@/components/content/FaqAccordion";
 import { getFaqContent } from "@/content/faq";
 
 export default async function FaqPage({
@@ -13,6 +13,7 @@ export default async function FaqPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const content = getFaqContent(locale);
+  const total = content.categories.reduce((sum, c) => sum + c.items.length, 0);
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-14 md:px-6 md:py-20">
@@ -22,11 +23,15 @@ export default async function FaqPage({
           {content.title}
         </h1>
         <p className="mt-4 max-w-2xl text-muted-foreground md:text-lg">{content.subtitle}</p>
+        <p className="mt-2 text-sm text-muted-foreground">
+          {content.categories.length} {locale === "nl" ? "categorieën" : "categories"} · {total}{" "}
+          {locale === "nl" ? "vragen" : "questions"}
+        </p>
       </Reveal>
 
       <Reveal delay={0.08}>
         <div className="mt-10">
-          <FaqAccordion items={content.items} />
+          <FaqCategories categories={content.categories} />
         </div>
       </Reveal>
 

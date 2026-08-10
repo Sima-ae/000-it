@@ -8,6 +8,7 @@ const schema = z.object({
   email: z.string().email(),
   company: z.string().optional(),
   message: z.string().min(10),
+  source: z.string().max(80).optional(),
 });
 
 export async function POST(request: Request) {
@@ -19,9 +20,11 @@ export async function POST(request: Request) {
     }
 
     const session = await auth();
+    const { source, ...rest } = parsed.data;
     await prisma.contactLead.create({
       data: {
-        ...parsed.data,
+        ...rest,
+        source: source || "CONTACT_FORM",
         userId: session?.user?.id,
       },
     });

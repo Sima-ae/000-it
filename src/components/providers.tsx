@@ -3,11 +3,16 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { SessionProvider } from "next-auth/react";
 import { useTheme } from "next-themes";
+import dynamic from "next/dynamic";
 import { Suspense, useState } from "react";
 import { Toaster } from "sonner";
 import { ThemeProvider } from "@/components/theme-provider";
 import { RouteProgress } from "@/components/shared/RouteProgress";
-import { LiveChatWidget } from "@/components/chat/LiveChatWidget";
+
+const LiveChatWidget = dynamic(
+  () => import("@/components/chat/LiveChatWidget").then((m) => m.LiveChatWidget),
+  { ssr: false },
+);
 
 function ThemedToaster() {
   const { resolvedTheme } = useTheme();
@@ -32,7 +37,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
 
   return (
     <ThemeProvider>
-      <SessionProvider>
+      <SessionProvider refetchOnWindowFocus={false} refetchInterval={0}>
         <QueryClientProvider client={queryClient}>
           <Suspense fallback={null}>
             <RouteProgress />

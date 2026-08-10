@@ -2,6 +2,7 @@ import { setRequestLocale } from "next-intl/server";
 import {
   BookOpen,
   CreditCard,
+  FileText,
   ImageIcon,
   Layers,
   Palette,
@@ -28,28 +29,34 @@ const offerings = [
     blurbEn: "Logos, color, type and guidelines that scale.",
   },
   {
-    slug: "business-cards-stationery",
+    slug: "business-cards",
     icon: CreditCard,
-    blurbNl: "Visitekaartjes, briefpapier en enveloppen — drukklaar.",
-    blurbEn: "Business cards, letterheads and envelopes — print-ready.",
+    blurbNl: "Ontwerp én drukwerk — kleine of grote oplages.",
+    blurbEn: "Design and printing — small or large quantities.",
+  },
+  {
+    slug: "briefpapier",
+    icon: FileText,
+    blurbNl: "Briefpapier-ontwerp én drukwerk in kleine of grote oplages.",
+    blurbEn: "Letterhead design and printing in small or large quantities.",
   },
   {
     slug: "flyers-posters",
     icon: Type,
-    blurbNl: "Flyers en posters voor retail, events en outdoor.",
-    blurbEn: "Flyers and posters for retail, events and outdoor.",
+    blurbNl: "Flyer- en posterontwerp plus drukwerk in kleine of grote oplages.",
+    blurbEn: "Flyer and poster design plus printing in small or large quantities.",
   },
   {
     slug: "stickers-packaging",
     icon: Stamp,
-    blurbNl: "Stickers, labels en eenvoudige packaging artwork.",
-    blurbEn: "Stickers, labels and simple packaging artwork.",
+    blurbNl: "Stickerontwerp en drukwerk — kleine batches of grote runs.",
+    blurbEn: "Sticker design and printing — small batches or large runs.",
   },
   {
     slug: "magazines-brochures",
     icon: Layers,
-    blurbNl: "Brochures, lookbooks en magazines in InDesign.",
-    blurbEn: "Brochures, lookbooks and magazines in InDesign.",
+    blurbNl: "Brochure-ontwerp plus drukwerk in kleine of grote oplages.",
+    blurbEn: "Brochure design plus printing in small or large quantities.",
   },
 ] as const;
 
@@ -78,7 +85,7 @@ export default async function DigitalDesignPage({
               TripleZero iT
             </p>
             <h1 className="font-display mt-4 max-w-3xl text-4xl font-semibold tracking-tight md:text-6xl">
-              {isNl ? "Digital Design" : "Digital Design"}
+              {isNl ? "Digital design" : "Digital Design"}
             </h1>
             <p className="mt-5 max-w-xl text-base text-muted-foreground md:text-lg">
               {isNl
@@ -108,7 +115,7 @@ export default async function DigitalDesignPage({
           </h2>
           <p className="mt-2 max-w-2xl text-muted-foreground">
             {isNl
-              ? "Elk deliverable is drukklaar of screen-ready, met nette bestandsstructuur voor jouw drukker of team."
+              ? "Elk deliverable is drukklaar of screen-ready, met nette bestandsstructuur voor uw drukker of team."
               : "Every deliverable is print- or screen-ready, with a clean file structure for your printer or team."}
           </p>
         </Reveal>
@@ -151,7 +158,7 @@ export default async function DigitalDesignPage({
             </h2>
             <p className="mt-2 max-w-2xl text-muted-foreground">
               {isNl
-                ? "Wij werken in de Adobe-stack zodat jouw bestanden openen bij elke professionele drukkerij."
+                ? "Wij werken in de Adobe-stack zodat uw bestanden openen bij elke professionele drukkerij."
                 : "We work in the Adobe stack so your files open cleanly at any professional print shop."}
             </p>
           </Reveal>
@@ -190,7 +197,7 @@ export default async function DigitalDesignPage({
               </Button>
               <Button asChild size="lg" variant="outline" className="rounded-2xl">
                 <SoftLink href={`/${locale}/diensten/webdesign-support`}>
-                  {isNl ? "Webdesign & Support" : "Webdesign & Support"}
+                  {isNl ? "Website support" : "Website Support"}
                 </SoftLink>
               </Button>
             </div>

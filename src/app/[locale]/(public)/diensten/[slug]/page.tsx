@@ -6,13 +6,70 @@ import { SoftLink } from "@/components/shared/SoftLink";
 import { ContentBlocks } from "@/components/content/ContentBlocks";
 import { ServiceCard } from "@/components/content/ServiceCard";
 import { Reveal } from "@/components/marketing/Reveal";
+import { ServiceInquiryDialog } from "@/components/marketing/ServiceInquiryDialog";
 import {
   getCatalogItem,
   getServiceSlugs,
   serviceCatalog,
+  serviceGroups,
   serviceHref,
 } from "@/content/fixweb/catalog";
-import { formatEuro, getServiceContent } from "@/lib/fixweb-content";
+import { formatEuro, getServiceCardMeta, getServiceContent } from "@/lib/fixweb-content";
+
+const aiInquiryBySlug: Record<
+  string,
+  {
+    source: string;
+    messageHintNl: string;
+    messageHintEn: string;
+    triggerNl: string;
+    triggerEn: string;
+    ctaTitleNl: string;
+    ctaTitleEn: string;
+    ctaTextNl: string;
+    ctaTextEn: string;
+  }
+> = {
+  "ai-in-wordpress": {
+    source: "AI_IN_WORDPRESS",
+    messageHintNl: "WordPress-website",
+    messageHintEn: "WordPress website",
+    triggerNl: "Vraag AI voor WordPress aan",
+    triggerEn: "Request AI for WordPress",
+    ctaTitleNl: "AI in uw WordPress laten bouwen?",
+    ctaTitleEn: "Want AI built into your WordPress?",
+    ctaTextNl:
+      "Stuur een korte aanvraag via het formulier — we kijken mee naar chatbots, content-AI, WooCommerce of maatwerk en reageren met concrete stappen.",
+    ctaTextEn:
+      "Send a short request via the form — we’ll review chatbots, content AI, WooCommerce or custom builds and reply with concrete next steps.",
+  },
+  "ai-in-ecommerce": {
+    source: "AI_IN_ECOMMERCE",
+    messageHintNl: "webshop",
+    messageHintEn: "webshop",
+    triggerNl: "Vraag AI voor E-commerce aan",
+    triggerEn: "Request AI for E-commerce",
+    ctaTitleNl: "AI in uw webshop laten bouwen?",
+    ctaTitleEn: "Want AI built into your webshop?",
+    ctaTextNl:
+      "Stuur een korte aanvraag — we kijken mee naar productassistenten, search, cart-hulp of support-AI en reageren met concrete stappen.",
+    ctaTextEn:
+      "Send a short request — we’ll review product assistants, search, cart help or support AI and reply with concrete next steps.",
+  },
+  "ai-in-website": {
+    source: "AI_IN_WEBSITE",
+    messageHintNl: "maatwerkwebsite",
+    messageHintEn: "custom website",
+    triggerNl: "Vraag AI voor website aan",
+    triggerEn: "Request AI for website",
+    ctaTitleNl: "AI in uw website laten bouwen?",
+    ctaTitleEn: "Want AI built into your website?",
+    ctaTextNl:
+      "Stuur een korte aanvraag — we kijken mee naar chat, leadkwalificatie, knowledge search of maatwerk-AI op uw stack en reageren met concrete stappen.",
+    ctaTextEn:
+      "Send a short request — we’ll review chat, lead qualification, knowledge search or custom AI on your stack and reply with concrete next steps.",
+  },
+};
 
 export function generateStaticParams() {
   return getServiceSlugs().map((slug) => ({ slug }));
@@ -30,6 +87,8 @@ export default async function ServiceDetailPage({
   if (!content) notFound();
 
   const meta = getCatalogItem(slug);
+  const groupLabel = serviceGroups.find((g) => g.id === meta?.group);
+  const inquiry = aiInquiryBySlug[slug];
   const related = serviceCatalog
     .filter(
       (item) =>
@@ -37,12 +96,8 @@ export default async function ServiceDetailPage({
         item.slug !== slug &&
         !item.href,
     )
-    .map((item) => ({ item, relatedContent: getServiceContent(item.slug, locale) }))
-    .filter(
-      ({ relatedContent }) =>
-        relatedContent &&
-        (relatedContent.blocks.length > 0 || typeof relatedContent.price === "number"),
-    )
+    .map((item) => ({ item, relatedContent: getServiceCardMeta(item.slug, locale) }))
+    .filter(({ relatedContent }) => Boolean(relatedContent?.hasBody))
     .slice(0, 3);
 
   return (
@@ -66,21 +121,9 @@ export default async function ServiceDetailPage({
             </p>
             <div className="mt-6 grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
               <div>
-                {meta?.group ? (
+                {groupLabel ? (
                   <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
-                    {meta.group === "marketing"
-                      ? isNl
-                        ? "Marketing & Groei"
-                        : "Marketing & Growth"
-                      : meta.group === "webdesign"
-                        ? "Webdesign & Support"
-                        : meta.group === "design"
-                          ? "Digital Design"
-                          : meta.group === "hosting"
-                            ? isNl
-                              ? "Hosting & Domeinen"
-                              : "Hosting & Domains"
-                            : "WordPress & Support"}
+                    {isNl ? groupLabel.titleNl : groupLabel.title}
                   </p>
                 ) : null}
                 <h1 className="font-display mt-3 text-4xl font-semibold tracking-tight md:text-5xl">
@@ -94,14 +137,44 @@ export default async function ServiceDetailPage({
                 {typeof content.price === "number" ? (
                   <p className="mt-6 font-display text-3xl font-bold text-foreground">
                     {formatEuro(content.price)}
+                    {"priceSuffix" in content && content.priceSuffix ? (
+                      <span className="ml-2 text-base font-medium text-muted-foreground">
+                        {content.priceSuffix}
+                      </span>
+                    ) : null}
                   </p>
                 ) : null}
+                {"features" in content && Array.isArray(content.features) && content.features.length ? (
+                  <ul className="mt-5 grid gap-1.5 text-sm text-muted-foreground sm:grid-cols-2">
+                    {content.features.slice(0, 8).map((feature) => (
+                      <li key={feature} className="flex gap-2">
+                        <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
                 <div className="mt-8 flex flex-wrap gap-3">
-                  <Button asChild size="lg" className="rounded-2xl">
-                    <SoftLink href={`/${locale}/afspraak`}>
-                      {isNl ? "Afspraak boeken" : "Book appointment"}
-                    </SoftLink>
-                  </Button>
+                  {inquiry ? (
+                    <ServiceInquiryDialog
+                      serviceTitle={content.title}
+                      source={inquiry.source}
+                      messageHint={isNl ? inquiry.messageHintNl : inquiry.messageHintEn}
+                      triggerLabel={isNl ? inquiry.triggerNl : inquiry.triggerEn}
+                    />
+                  ) : slug === "ai-scan" ? (
+                    <Button asChild size="lg" className="rounded-2xl">
+                      <SoftLink href={`/${locale}/ai-scan`}>
+                        {isNl ? "Start gratis AI-scan" : "Start free AI scan"}
+                      </SoftLink>
+                    </Button>
+                  ) : (
+                    <Button asChild size="lg" className="rounded-2xl">
+                      <SoftLink href={`/${locale}/afspraak`}>
+                        {isNl ? "Afspraak boeken" : "Book appointment"}
+                      </SoftLink>
+                    </Button>
+                  )}
                   <Button asChild size="lg" variant="outline" className="rounded-2xl">
                     <SoftLink href={`/${locale}/contact`}>
                       {isNl ? "Contact" : "Contact"}
@@ -144,19 +217,38 @@ export default async function ServiceDetailPage({
         <Reveal delay={0.08}>
           <div className="mt-10 rounded-[1.75rem] border border-border/70 bg-linear-to-br from-primary/10 via-background to-accent/10 px-6 py-8 md:px-10">
             <h2 className="font-display text-2xl font-semibold tracking-tight">
-              {isNl ? "Klaar om te starten?" : "Ready to get started?"}
+              {inquiry
+                ? isNl
+                  ? inquiry.ctaTitleNl
+                  : inquiry.ctaTitleEn
+                : isNl
+                  ? "Klaar om te starten?"
+                  : "Ready to get started?"}
             </h2>
             <p className="mt-2 max-w-2xl text-muted-foreground">
-              {isNl
-                ? "Plan een intake of stuur een bericht — we reageren snel met een concreet voorstel."
-                : "Book an intake or send a message — we’ll reply quickly with a concrete proposal."}
+              {inquiry
+                ? isNl
+                  ? inquiry.ctaTextNl
+                  : inquiry.ctaTextEn
+                : isNl
+                  ? "Plan een intake of stuur een bericht — we reageren snel met een concreet voorstel."
+                  : "Book an intake or send a message — we’ll reply quickly with a concrete proposal."}
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
-              <Button asChild className="rounded-2xl">
-                <SoftLink href={`/${locale}/afspraak`}>
-                  {isNl ? "Afspraak boeken" : "Book appointment"}
-                </SoftLink>
-              </Button>
+              {inquiry ? (
+                <ServiceInquiryDialog
+                  serviceTitle={content.title}
+                  source={inquiry.source}
+                  messageHint={isNl ? inquiry.messageHintNl : inquiry.messageHintEn}
+                  triggerLabel={isNl ? "Open contactformulier" : "Open contact form"}
+                />
+              ) : (
+                <Button asChild className="rounded-2xl">
+                  <SoftLink href={`/${locale}/afspraak`}>
+                    {isNl ? "Afspraak boeken" : "Book appointment"}
+                  </SoftLink>
+                </Button>
+              )}
               <Button asChild variant="outline" className="rounded-2xl">
                 <SoftLink href={`/${locale}/ai-scan`}>
                   {isNl ? "Gratis AI-Scan" : "Free AI Scan"}

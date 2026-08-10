@@ -326,10 +326,10 @@ export function LiveChatWidget() {
               <div className="rounded-2xl border border-dashed border-border/80 bg-muted/20 p-4 text-sm text-muted-foreground">
                 {mode === "ticket"
                   ? locale === "nl"
-                    ? "Beschrijf je vraag — we openen een ticket dat zichtbaar is in je dashboard."
+                    ? "Beschrijf uw vraag — we openen een ticket dat zichtbaar is in uw dashboard."
                     : "Describe your request — we’ll open a ticket synced to your dashboard."
                   : locale === "nl"
-                    ? "Stel je vraag. Ons team antwoordt zo snel mogelijk."
+                    ? "Stel uw vraag. Ons team antwoordt zo snel mogelijk."
                     : "Ask a question. Our team will reply as soon as possible."}
                 {loggedIn ? (
                   <p className="mt-2">
@@ -389,7 +389,7 @@ export function LiveChatWidget() {
                 value={draft}
                 onChange={(e) => setDraft(e.target.value)}
                 placeholder={
-                  locale === "nl" ? "Typ je bericht…" : "Type your message…"
+                  locale === "nl" ? "Typ uw bericht…" : "Type your message…"
                 }
                 rows={2}
                 className="min-h-16 resize-none"

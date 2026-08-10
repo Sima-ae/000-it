@@ -6,23 +6,23 @@ import { Button } from "@/components/ui/button";
 
 const pillars = [
   {
-    title: { nl: "WordPress Bugs / Error Fix", en: "WordPress Bugs / Error Fix" },
+    title: { nl: "Bugs en errors verhelpen", en: "Fix Bugs and Errors" },
     desc: {
-      nl: "Snelle diagnose en oplossing van fouten zodat je site weer soepel draait.",
+      nl: "Snelle diagnose en oplossing van fouten zodat uw site weer soepel draait.",
       en: "Quick diagnosis and fixes so your site runs smoothly again.",
     },
     href: "/diensten/wordpress-error-fix",
   },
   {
-    title: { nl: "Malware & Security", en: "Malware & Security" },
+    title: { nl: "Malware verwijderen", en: "Malware Removal" },
     desc: {
-      nl: "Diepe analyse, malware verwijderen en structurele beveiliging.",
-      en: "Deep analysis, malware removal and lasting security hardening.",
+      nl: "Diepe analyse en verwijderen van malware zodat uw site weer schoon en veilig is.",
+      en: "Deep analysis and malware removal so your site is clean again.",
     },
     href: "/diensten/wordpress-malware-removal",
   },
   {
-    title: { nl: "Performance & Speed", en: "Performance & Speed" },
+    title: { nl: "Performance en snelheid", en: "Performance & Speed" },
     desc: {
       nl: "Laadtijden onder 2 seconden en Core Web Vitals op orde.",
       en: "Load times under 2 seconds and Core Web Vitals optimized.",
@@ -30,7 +30,7 @@ const pillars = [
     href: "/diensten/wordpress-speed-optimization",
   },
   {
-    title: { nl: "Backup & Migratie", en: "Backup & Migration" },
+    title: { nl: "Backups en migratie", en: "Backups and Migration" },
     desc: {
       nl: "Veilige backups en hosting-migraties zonder downtime.",
       en: "Safe backups and hosting migrations without downtime.",
@@ -38,15 +38,15 @@ const pillars = [
     href: "/diensten/wordpress-backup-hosting-migration",
   },
   {
-    title: { nl: "Design & Customize", en: "Design & Customize" },
+    title: { nl: "Design en customize", en: "Design & Customize" },
     desc: {
-      nl: "Unieke, responsive designs die aansluiten op jouw merk.",
+      nl: "Unieke, responsive designs die aansluiten op uw merk.",
       en: "Unique, responsive design tailored to your brand.",
     },
     href: "/diensten/webdesign-support",
   },
   {
-    title: { nl: "Digital Design", en: "Digital Design" },
+    title: { nl: "Digital design", en: "Digital Design" },
     desc: {
       nl: "Logo’s, visitekaartjes, flyers, posters en print in Adobe.",
       en: "Logos, business cards, flyers, posters and print in Adobe.",
@@ -54,7 +54,7 @@ const pillars = [
     href: "/digital-design",
   },
   {
-    title: { nl: "Web Hosting", en: "Web Hosting" },
+    title: { nl: "Web hosting", en: "Web Hosting" },
     desc: {
       nl: "Snelle, betrouwbare hosting vanaf € 21,96 per jaar.",
       en: "Fast, reliable hosting starting from € 21.96 per year.",
@@ -66,7 +66,7 @@ const pillars = [
 const stats = [
   { value: "12u", label: { nl: "gemiddelde response", en: "average response" } },
   { value: "<2s", label: { nl: "laadtijd-doel", en: "load-time target" } },
-  { value: "24/7", label: { nl: "monitoring & support", en: "monitoring & support" } },
+  { value: "24/7", label: { nl: "monitoring en support", en: "monitoring & support" } },
 ] as const;
 
 export default async function AboutPage({
@@ -160,7 +160,7 @@ export default async function AboutPage({
               </h2>
               <p className="mt-1 max-w-lg text-sm text-muted-foreground">
                 {isNl
-                  ? "Praktische diensten om je website snel, veilig en vindbaar te maken."
+                  ? "Praktische diensten om uw website snel, veilig en vindbaar te maken."
                   : "Practical services to make your website fast, secure and findable."}
               </p>
             </div>
@@ -200,12 +200,12 @@ export default async function AboutPage({
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
               {isNl
-                ? "Met AI-integratie, SEO/AEO/GEO, performance, security en full-funnel marketing zorgen we dat je website soepel draait, beschermd blijft en meetbaar groeit."
+                ? "Met AI-integratie, SEO/AEO/GEO, performance, security en full-funnel marketing zorgen we dat uw website soepel draait, beschermd blijft en meetbaar groeit."
                 : "With AI integration, SEO/AEO/GEO, performance, security and full-funnel marketing we keep your website smooth, protected and measurably growing."}
             </p>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
               {isNl
-                ? "Binnen 24 uur pakken we bugs, malware, migraties of optimalisaties op — zodat jij je kunt focussen op je business."
+                ? "Binnen 24 uur pakken we bugs, malware, migraties of optimalisaties op — zodat u zich kunt focussen op uw business."
                 : "Within 24 hours we handle bugs, malware, migrations or optimizations — so you can focus on your business."}
             </p>
           </GlassCard>
@@ -220,7 +220,7 @@ export default async function AboutPage({
               </p>
               <p className="mt-2 max-w-sm text-sm text-white/70">
                 {isNl
-                  ? "Plan een gesprek of start direct met een AI-Scan van je website."
+                  ? "Plan een gesprek of start direct met een AI-Scan van uw website."
                   : "Book a call or start with an AI Scan of your website."}
               </p>
             </div>

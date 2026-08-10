@@ -45,7 +45,7 @@ export default async function SeoAnalysisPage({
                 ? "Alle scans in het systeem — plus een nieuwe scan starten."
                 : "All scans across the workspace — plus run a new scan."
               : locale === "nl"
-                ? "Bekijk je SEO/AEO/GEO-scan geschiedenis en start een nieuwe scan."
+                ? "Bekijk uw SEO/AEO/GEO-scan geschiedenis en start een nieuwe scan."
                 : "Review your AI/SEO scan history and run a new scan."}
           </p>
         </div>

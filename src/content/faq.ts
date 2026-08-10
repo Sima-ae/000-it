@@ -4,177 +4,432 @@ export type FaqItem = {
   answer: string;
 };
 
+export type FaqCategory = {
+  id: string;
+  title: string;
+  items: FaqItem[];
+};
+
 export type FaqContent = {
   title: string;
   subtitle: string;
-  items: FaqItem[];
+  categories: FaqCategory[];
   ctaTitle: string;
   ctaText: string;
   ctaButton: string;
 };
 
-const en: FaqContent = {
-  title: "Frequently asked questions",
-  subtitle: "Clear answers about TripleZero iT services, security, SEO and support.",
-  ctaTitle: "Still need help?",
-  ctaText: "Can't find your answer? Contact our team and we'll get back to you quickly.",
-  ctaButton: "Contact us",
-  items: [
-    {
-      id: "start",
-      question: "How do I get started with TripleZero iT?",
-      answer:
-        "Contact us through the website to schedule a consultation. We assess your needs and provide a customized plan to improve your website, visibility and growth systems.",
-    },
-    {
-      id: "bugs",
-      question: "What types of bugs and errors can be fixed?",
-      answer:
-        "We fix a wide range of website issues, including broken links, form errors, display problems, plugin conflicts and functionality glitches.",
-    },
-    {
-      id: "audit",
-      question: "How do you identify issues on my website?",
-      answer:
-        "We run comprehensive audits covering performance, security, user experience and SEO/AEO/GEO, then prioritize the highest-impact fixes.",
-    },
-    {
-      id: "security",
-      question: "How do we enhance website security?",
-      answer:
-        "Security work can include SSL, firewalls, malware scanning, hardening, regular updates and secure coding practices to protect your site from threats.",
-    },
-    {
-      id: "speed",
-      question: "How can you improve my website's speed?",
-      answer:
-        "We reduce load times with caching, code minification, image optimization, better hosting setup and improved server response times.",
-    },
-    {
-      id: "seo",
-      question: "What are the benefits of your SEO services?",
-      answer:
-        "Our SEO and AEO/GEO work improves rankings and AI-search visibility, drives more organic traffic, and strengthens content structure, keywords and technical foundations.",
-    },
-    {
-      id: "timeline",
-      question: "How long does it take to see improvements?",
-      answer:
-        "Some fixes show immediate results. SEO and conversion improvements usually build over weeks, depending on complexity and competition.",
-    },
-    {
-      id: "downtime",
-      question: "Will my website experience downtime during the fixes?",
-      answer:
-        "We aim for minimal disruption. If downtime is required, we schedule it during off-peak hours whenever possible.",
-    },
-    {
-      id: "platforms",
-      question: "Are your services suitable for all types of websites?",
-      answer:
-        "Yes. We support e-commerce sites, blogs, portfolios, business websites and custom platforms across many industries.",
-    },
-    {
-      id: "maintenance",
-      question: "Can you help with ongoing maintenance?",
-      answer:
-        "Yes. We offer ongoing maintenance including updates, backups, security monitoring and performance optimization.",
-    },
-    {
-      id: "account",
-      question: "I have an issue with my account, what can I do?",
-      answer:
-        "Reach out via the contact page with your account details and issue. Our support team will help resolve it promptly.",
-    },
-    {
-      id: "cancel",
-      question: "Can I cancel at any time?",
-      answer:
-        "Yes, you can cancel services at any time. Contact support and we will help with the cancellation process.",
-    },
-  ],
-};
+function q(id: string, question: string, answer: string): FaqItem {
+  return { id, question, answer };
+}
 
 const nl: FaqContent = {
   title: "Veelgestelde vragen",
   subtitle:
-    "Duidelijke antwoorden over TripleZero iT diensten, beveiliging, SEO en support.",
+    "Uitgebreide antwoorden over TripleZero iT — van AI en SEO tot design, marketing, support en hosting.",
   ctaTitle: "Nog hulp nodig?",
   ctaText:
     "Staat uw vraag er niet tussen? Neem contact op — we reageren zo snel mogelijk.",
   ctaButton: "Neem contact op",
-  items: [
+  categories: [
     {
-      id: "start",
-      question: "Hoe begin ik met TripleZero iT?",
-      answer:
-        "Neem contact op via de website voor een consult. We bekijken uw situatie en maken een plan op maat voor website, vindbaarheid en groei.",
+      id: "algemeen",
+      title: "Algemeen",
+      items: [
+        q("alg-1", "Wat doet TripleZero iT precies?", "TripleZero iT combineert webdesign, WordPress-support, digital marketing, AI-zichtbaarheid (AEO/GEO/SEO), design en hosting. We helpen merken sneller gevonden te worden, betere websites te bouwen en meetbaar te groeien."),
+        q("alg-2", "Hoe begin ik met TripleZero iT?", "Neem contact op of plan een afspraak. We doen een korte intake, kijken naar doelen en stack, en stellen een concreet voorstel met planning en KPI’s op."),
+        q("alg-3", "Voor welke bedrijven werken jullie?", "Voor MKB, scale-ups, e-commerce, agencies en internationale merken. We werken zowel met bestaande teams als als full-service partner."),
+        q("alg-4", "Werken jullie alleen in Nederland?", "Nee. We bedienen klanten in de Benelux en internationaal, met Nederlands- en Engelstalige trajecten."),
+        q("alg-5", "Hoe verloopt een typisch traject?", "Intake → audit/scan → plan → uitvoering in sprints → meting → optimalisatie. U krijgt duidelijke milestones en rapportage."),
+        q("alg-6", "Kan ik meerdere diensten combineren?", "Ja. Veel klanten combineren bijvoorbeeld webdesign + SEO + ads, of WordPress-onderhoud + hosting + security."),
+        q("alg-7", "Hoe snel kunnen jullie starten?", "Afhankelijk van capaciteit vaak binnen enkele werkdagen na akkoord. Spoedtrajecten (bugs, malware, downtime) prioriteren we."),
+        q("alg-8", "Werken jullie remote of on-site?", "Primair remote, met duidelijke communicatie via mail, chat en calls. On-site is op verzoek bespreekbaar."),
+        q("alg-9", "Hoe communiceert het team voortgang?", "Via vaste updates, tickets/dashboard waar relevant, en sprint- of maandrapporten met acties en resultaten."),
+        q("alg-10", "Wat hebben jullie nodig om te starten?", "Toegang tot website/hosting (indien nodig), doelen, merkrichtlijnen, analytics-accounts en eventuele bestaande tools."),
+        q("alg-11", "Zijn jullie diensten geschikt voor startups?", "Ja. We schalen van lean landingspagina’s en AI-scans tot volledige groei-setups wanneer u groeit."),
+        q("alg-12", "Hoe zit het met eigendom van werk en accounts?", "Uw domein, content, code-repositories en ad-accounts blijven van u. We leveren bestanden en documentatie bij oplevering."),
+        q("alg-13", "Kunnen jullie bestaande leveranciers overnemen of samenwerken?", "Ja. We werken soepel naast developers, marketeers of agencies, of nemen onderhoud en optimalisatie over."),
+      ],
     },
     {
-      id: "bugs",
-      question: "Welke bugs en fouten kunnen jullie oplossen?",
-      answer:
-        "We lossen uiteenlopende problemen op: kapotte links, formulierfouten, weergaveproblemen, plugin-conflicten en functionele glitches.",
+      id: "ai",
+      title: "AI",
+      items: [
+        q("ai-1", "Wat is een AI-scan bij TripleZero iT?", "Een AI-readiness scan beoordeelt hoe goed uw site vindbaar en bruikbaar is voor klassieke zoekmachines én AI-systemen (SEO, AEO, GEO en technische basis)."),
+        q("ai-2", "Wat meet de AI-scan precies?", "Onder meer SEO-fundamentals, AEO/GEO-signalen, contentstructuur, performance-indicaties en AI-readiness — met scores en verbeterpunten."),
+        q("ai-3", "Hoe vaak moet ik een AI-scan doen?", "Minimaal bij grote sitewijzigingen of campagnes; voor actieve merken adviseren we periodieke scans (bijv. elk kwartaal)."),
+        q("ai-4", "Helpt AI alleen bij content?", "Nee. AI raakt ook technische vindbaarheid, structured data, interne linking, FAQ-blokken en hoe merkinformatie wordt samengevat door AI-antwoorden."),
+        q("ai-5", "Kunnen jullie AI in onze workflow integreren?", "Ja: content-assistentie, automatisering, chatbot/ticket flows, data-koppelingen en maatwerk API’s rond AI-tools."),
+        q("ai-6", "Vervangt AI jullie strategisch werk?", "Nee. AI versnelt analyse en productie; strategie, merktoon en conversiebeslissingen blijven menselijk en meetbaar."),
+        q("ai-7", "Is AI-content veilig voor SEO?", "Alleen met menselijke review, unieke inzichten en E-E-A-T. We vermijden dunne, generieke teksten die rankings schaden."),
+        q("ai-8", "Wat is AI-readiness voor mijn merk?", "De mate waarin uw site, content en data zo zijn ingericht dat AI-systemen u correct kunnen citeren, aanbevelen en uitleggen."),
+        q("ai-9", "Kunnen jullie AI-agents in het dashboard inzetten?", "Ja. In het klantportaal ziet u AI-agents voor o.a. SEO, content, social en ads — met status en taken."),
+        q("ai-10", "Werken jullie met ChatGPT, Claude of andere tools?", "We kiezen tools per use-case. Belangrijk is governance: bronnen, factcheck, merkrichtlijnen en privacy."),
+        q("ai-11", "Helpt AI bij supporttickets?", "Ja, voor triaging en snellere antwoorden, altijd met menselijke escalatie voor complexe of gevoelige cases."),
+        q("ai-12", "Wat kost een AI-traject?", "Van gratis/instap AI-scan tot maandelijkse AI+marketing-retainers. Na intake krijgt u een helder voorstel."),
+        q("ai-13", "Hoe meet ik ROI van AI-initiatieven?", "Via KPI’s zoals traffic, leads, time-saved, content-output, ticket-resolutie en conversie — vastgelegd in het plan."),
+      ],
     },
     {
-      id: "audit",
-      question: "Hoe vinden jullie problemen op mijn website?",
-      answer:
-        "We doen een complete audit op performance, security, gebruikerservaring en SEO/AEO/GEO, en prioriteren daarna de belangrijkste verbeteringen.",
+      id: "aeo-geo-seo",
+      title: "AEO, GEO en SEO",
+      items: [
+        q("seo-1", "Wat is het verschil tussen SEO, AEO en GEO?", "SEO optimaliseert voor klassieke zoekmachines. AEO (Answer Engine Optimization) richt zich op AI-antwoorden. GEO (Generative Engine Optimization) versterkt zichtbaarheid in generatieve zoekervaringen."),
+        q("seo-2", "Waarom is AEO/GEO nu belangrijk?", "Steeds meer zoekers krijgen antwoorden via AI. Zonder AEO/GEO mist u verkeer, merksignalen en citaties — ook als klassieke SEO goed is."),
+        q("seo-3", "Hoe starten jullie een SEO-traject?", "Met technische audit, keyword/intent-onderzoek, contentgap-analyse en een prioriteitenroadmap gekoppeld aan business-KPI’s."),
+        q("seo-4", "Hoe lang duurt het voor SEO-resultaten zichtbaar zijn?", "Technische wins kunnen snel. Organische groei bouwt meestal over weken tot maanden, afhankelijk van concurrentie en uitvoering."),
+        q("seo-5", "Doen jullie ook lokale SEO?", "Ja: Google Business Profile, lokale landingspagina’s, NAP-consistentie, reviews en lokale contentclusters."),
+        q("seo-6", "Wat is technical SEO bij jullie?", "Crawlability, indexatie, Core Web Vitals, structured data, sitemap/robots, canonicals, interne linking en foutopsporing."),
+        q("seo-7", "Helpen jullie met content voor SEO?", "Ja: briefings, outlines, blogs, landingspagina’s en FAQ’s die intent matchen én AI-vriendelijk gestructureerd zijn."),
+        q("seo-8", "Wat is E-E-A-T en waarom telt het?", "Experience, Expertise, Authoritativeness, Trust. Sterke E-E-A-T helpt rankings en geloofwaardigheid in AI-samenvattingen."),
+        q("seo-9", "Doen jullie linkbuilding?", "Ja, ethisch en relevant: digitale PR, partnerships, content assets. Geen spammy linkschemas."),
+        q("seo-10", "Kunnen jullie bestaande SEO-schade herstellen?", "Ja: recovery na updates, toxic links, indexatieproblemen of content-cannibalization."),
+        q("seo-11", "Hoe rapporteren jullie SEO-voortgang?", "Maandelijks of per sprint: rankings, traffic, conversies, technische issues en next actions."),
+        q("seo-12", "Werkt SEO voor e-commerce?", "Zeker: product/category SEO, faceted navigation, reviews, structured data en content hubs rond koopintentie."),
+        q("seo-13", "Is SEO een eenmalig project of doorlopend?", "Beste resultaten komen uit doorlopende optimalisatie. Eenmalige audits helpen, maar concurrentie staat niet stil."),
+        q("seo-14", "Helpen jullie met internationale SEO?", "Ja: hreflang, marktonderzoek per land/taal, contentlokalisatie en technische multi-locale setups."),
+      ],
     },
     {
-      id: "security",
-      question: "Hoe verbeteren jullie de websitebeveiliging?",
-      answer:
-        "Denk aan SSL, firewalls, malware-scans, hardening, updates en veilige codepraktijken om uw site te beschermen.",
+      id: "adverteren",
+      title: "Adverteren",
+      items: [
+        q("ads-1", "Welke advertentiekanalen ondersteunen jullie?", "Google Ads, Meta (Facebook/Instagram), LinkedIn, en waar relevant YouTube/retargeting — afgestemd op funnel en budget."),
+        q("ads-2", "Hoe bepalen jullie het juiste advertentiebudget?", "Op basis van doelen (leads/sales), CAC-doel, marktprijzen en testfase. We starten lean en schalen wat werkt."),
+        q("ads-3", "Wat is jullie aanpak voor Google Ads?", "Accountstructuur, zoekintentie, negatieve keywords, landingpage-fit, conversietracking en wekelijkse optimalisatie."),
+        q("ads-4", "Kunnen jullie Meta Ads voor e-commerce draaien?", "Ja: catalogus/retargeting, creatives, audiences en creatieve tests om ROAS te verbeteren."),
+        q("ads-5", "Hoe meten jullie advertentie-succes?", "Via conversies, CPA/CAC, ROAS, leadkwaliteit en pipeline — niet alleen klikken."),
+        q("ads-6", "Wat als tracking niet klopt?", "We fixen tagging (GTM/GA4/pixels), consent mode waar nodig en server-side opties voor betrouwbaardere data."),
+        q("ads-7", "Doen jullie ook B2B LinkedIn Ads?", "Ja, met scherpe targeting, leadgen-forms of landingspagina’s en content die decision-makers aanspreekt."),
+        q("ads-8", "Hoe snel zie ik resultaat uit ads?", "Verkeer kan direct. Stabiele CPA/ROAS vraagt meestal 2–6 weken leertijd en creatieve iteratie."),
+        q("ads-9", "Maken jullie ook ads creatives?", "Ja: copy, visuals en varianten voor tests. Design en media-creatie kunnen we meenemen."),
+        q("ads-10", "Kunnen ads en SEO elkaar versterken?", "Absoluut. Zoekdata uit ads voedt SEO; sterke organische pagina’s verlagen CPA en verhogen Quality Score."),
+        q("ads-11", "Beheren jullie bestaande ad-accounts?", "Ja. We auditen, herstructureren en optimaliseren zonder onnodig opnieuw te beginnen."),
+        q("ads-12", "Hoe voorkomen jullie verspild ad-budget?", "Negatieven, audience exclusions, budget caps, geofencing, frequency control en snelle kill van underperformers."),
+        q("ads-13", "Is remarketing nog relevant?", "Ja, mits privacy-compliant en met sterke creatives/offers. Het blijft vaak de efficiëntste laag."),
+      ],
     },
     {
-      id: "speed",
-      question: "Hoe maken jullie mijn website sneller?",
-      answer:
-        "We verkorten laadtijden met caching, code-minificatie, image-optimalisatie, betere hosting en snellere serverrespons.",
+      id: "design",
+      title: "Design",
+      items: [
+        q("des-1", "Welke design-diensten bieden jullie?", "Logo’s, merkidentiteit, visitekaartjes, briefpapier, flyers, posters, stickers, magazines/brochures en digitale visuals."),
+        q("des-2", "In welke tools werken jullie?", "Adobe Photoshop, Illustrator en InDesign — zodat bestanden drukkerij-klaar en professioneel uitwisselbaar zijn."),
+        q("des-3", "Leveren jullie drukklare bestanden?", "Ja: CMYK, bleed, snijmerken en juiste PDF/X-export waar nodig, plus screen-varianten."),
+        q("des-4", "Hoe verloopt een logotraject?", "Briefing → concepten → feedbackrondes → finale vectorbestanden (SVG/PDF/AI) en basisrichtlijnen."),
+        q("des-5", "Kunnen jullie ons bestaande merk updaten?", "Ja: refresh van logo, kleur, typografie en toepassingen zonder de herkenning te breken."),
+        q("des-6", "Maken jullie ook social templates?", "Ja, consistente templates voor posts/stories/ads zodat uw team snel kan publiceren."),
+        q("des-7", "Wat is het verschil tussen digitaal en print design?", "Print vraagt kleurruimte, resolutie en snijmarges; digitaal vraagt scherpte op schermen en snelle laadtijden. Wij leveren beide correct."),
+        q("des-8", "Kunnen jullie magazines of brochures opmaken?", "Ja, meerpagina-layouts in InDesign met grid, stijlen en prepress-checks."),
+        q("des-9", "Helpen jullie met drukwerk?", "Ja. We ontwerpen én kunnen drukken in kleine of grote oplages — van visitekaartjes en stickers tot flyers, posters en brochures — met proofs en afstemming."),
+        q("des-10", "Hoeveel feedbackrondes zitten erin?", "Meestal 2–3 gestructureerde rondes. Extra rondes zijn mogelijk in overleg."),
+        q("des-11", "Krijgen we bronbestanden?", "Ja, binnen de afgesproken oplevering (AI/PSD/INDD of export packs)."),
+        q("des-12", "Kunnen design en webdesign samen lopen?", "Ja. Merkdesign en UI-systemen stemmen we af zodat print en website één geheel vormen."),
+        q("des-13", "Waar vind ik meer over Digital Design?", "Op /digital-design en via de diensten Digital Design in het menu."),
+      ],
     },
     {
-      id: "seo",
-      question: "Wat leveren jullie SEO-diensten op?",
-      answer:
-        "SEO én AEO/GEO verbeteren rankings en AI-vindbaarheid, brengen meer organisch verkeer en versterken content, keywords en technische structuur.",
+      id: "marketing",
+      title: "Marketing",
+      items: [
+        q("mkt-1", "Welke marketingdiensten bieden jullie?", "SEO/AEO/GEO, content, social, ads, e-commerce groei, product listing, community management en data entry."),
+        q("mkt-2", "Hoe maken jullie een marketingstrategie?", "Doelen, audience, positionering, kanalenmix, contentpijplijn en KPI’s — pragmatisch en uitvoerbaar."),
+        q("mkt-3", "Wat is full-funnel marketing bij jullie?", "Van awareness (content/ads) via overweging (cases/SEO) tot conversie (landingspagina’s/CRM) en retentie."),
+        q("mkt-4", "Helpen jullie met positionering?", "Ja. Heldere positionering voorkomt versnipperde campagnes en zwakke conversie."),
+        q("mkt-5", "Kunnen jullie content writing leveren?", "Ja: blogs, website copy, newsletters, landingspagina’s en sales copy — SEO- én conversiegericht."),
+        q("mkt-6", "Doen jullie e-commerce marketing?", "Ja: productfeeds, listing quality, CRO, ads en SEO voor categorieën/producten."),
+        q("mkt-7", "Wat is CRO?", "Conversion Rate Optimization: verbeteren van pagina’s, funnels en UX zodat meer bezoekers converteren."),
+        q("mkt-8", "Hoe rapporteren jullie marketingresultaten?", "Dashboards/rapporten met traffic, leads, sales, CPA/ROAS en learnings per kanaal."),
+        q("mkt-9", "Werken jullie met ons interne marketingteam?", "Ja. We kunnen uitvoeren, sparren of een specialistisch deel overnemen (bijv. alleen SEO of alleen ads)."),
+        q("mkt-10", "Hoe snel starten jullie campagnes?", "Na tracking/setup vaak binnen 1–2 weken live; contenttrajecten lopen parallel."),
+        q("mkt-11", "Helpen jullie met e-mailmarketing?", "Ja: flows, nieuwsbrieven en copy. Integratie met CRM/e-commerce is mogelijk."),
+        q("mkt-12", "Is marketing een maandcontract?", "Retainers zijn gebruikelijk voor doorlopende groei. Projecten (audit, redesign, launch) kunnen eenmalig."),
+        q("mkt-13", "Hoe voorkomen jullie “busy marketing” zonder resultaat?", "Elke activiteit hangt aan KPI’s. Underperforming tactieken stoppen we of verbeteren we met data."),
+      ],
     },
     {
-      id: "timeline",
-      question: "Hoe lang duurt het voor ik resultaat zie?",
-      answer:
-        "Sommige fixes werken meteen. SEO- en conversieresultaten bouwen meestal over weken op, afhankelijk van complexiteit en concurrentie.",
+      id: "social-media",
+      title: "Social Media",
+      items: [
+        q("soc-1", "Welke social kanalen beheren jullie?", "Vooral LinkedIn, Instagram, Facebook, en waar relevant X/TikTok — op basis van audience, niet van hype."),
+        q("soc-2", "Wat zit er in social media management?", "Strategie, contentkalender, creatie/scheduling, community replies, rapportage en doorlopende optimalisatie."),
+        q("soc-3", "Maken jullie ook de visuals en video’s?", "Ja, via media creation: stilstaand, carrousels, short-form video en templates."),
+        q("soc-4", "Hoe vaak posten jullie?", "Afhankelijk van kanaal en doelen — typisch 3–5×/week per kernkanaal, met kwaliteit boven volume."),
+        q("soc-5", "Helpen jullie met community management?", "Ja: moderatie, reacties, DM’s en reputatiezorg volgens afgesproken tone-of-voice."),
+        q("soc-6", "Kunnen social en ads gecombineerd worden?", "Ja. Organische content voedt ads-creatives; ads schalen wat organisch aanslaat."),
+        q("soc-7", "Hoe meten jullie social succes?", "Bereik, engagement, click-outs, leads en assisted conversions — niet alleen likes."),
+        q("soc-8", "Werken jullie met influencers?", "Op verzoek: selectie, briefing en tracking. We focussen op fit en meetbare outcomes."),
+        q("soc-9", "Kunnen jullie crisiscommunicatie ondersteunen?", "Ja, met snelle response-protocollen en afstemming met uw team."),
+        q("soc-10", "Helpen jullie LinkedIn voor B2B thought leadership?", "Ja: persoonlijke + company content, carrousels, cases en employee advocacy."),
+        q("soc-11", "Leveren jullie een contentkalender?", "Ja, maand- of kwartaalplanning met thema’s, formats en deadlines."),
+        q("soc-12", "Wat als we al een social manager hebben?", "We kunnen specialiseren (creatives, ads, strategie) of piekperiodes ondersteunen."),
+        q("soc-13", "Hoe snel zien we groei op social?", "Consistentie telt. Significante groei vraagt meestal weken tot maanden, sneller met ads-support."),
+      ],
     },
     {
-      id: "downtime",
-      question: "Gaat mijn website offline tijdens werkzaamheden?",
-      answer:
-        "We beperken verstoring zoveel mogelijk. Als downtime nodig is, plannen we die bij voorkeur buiten piekuren.",
+      id: "support",
+      title: "Support",
+      items: [
+        q("sup-1", "Welke support bieden jullie?", "WordPress-support, maatwerk website-support, tickets/live chat, onderhoud, security, performance en incident response."),
+        q("sup-2", "Hoe bereik ik support?", "Via contact, afspraak, tickets in het dashboard of live chat op de site. Spoedcases markeren we prioriteit."),
+        q("sup-3", "Wat is jullie responstijd?", "We mikken op snelle eerste response (vaak binnen één werkdag; kritieke downtime sneller). Exacte SLA’s in supportpakketten."),
+        q("sup-4", "Bieden jullie 24/7 monitoring?", "Ja in relevante support-/hostingpakketten: monitoring, backups en alerts."),
+        q("sup-5", "Kunnen jullie malware verwijderen?", "Ja — zowel WordPress als maatwerk stacks — inclusief harden en nazorg."),
+        q("sup-6", "Doen jullie WordPress updates voor ons?", "Ja, via “Onderhoud en updates”: core/plugins/themes met backup en checks."),
+        q("sup-7", "Helpen jullie bij hostingproblemen?", "Ja. We diagnosticeren, migrieren of optimaliseren hosting/VPS/domeinen."),
+        q("sup-8", "Wat als mijn site platligt?", "Meld spoed. We herstellen waar mogelijk via backups, server checks en hotfix — met communicatie over status."),
+        q("sup-9", "Is er een klantportaal?", "Ja. Ingelogde klanten zien dashboard, tickets, projecten en waar relevant CRM/facturen."),
+        q("sup-10", "Kunnen meerdere teamleden tickets openen?", "Ja, afhankelijk van accountrollen (client/manager/admin)."),
+        q("sup-11", "Wat zit er in Basic/Standard/Premium support?", "Meer sites, snellere opvolging en bredere dekking (updates, malware, speed, SEO). Details op de supportpagina’s."),
+        q("sup-12", "Helpen jullie ook niet-technische vragen?", "Ja, over diensten, facturatie en account. Technische diepgang hangt af van uw pakket."),
+        q("sup-13", "Kan ik support later upgraden?", "Ja. U kunt opschalen wanneer verkeer, risk of teambehoefte groeit."),
+      ],
     },
     {
-      id: "platforms",
-      question: "Werken jullie diensten voor alle soorten websites?",
-      answer:
-        "Ja. We helpen webshops, blogs, portfolio’s, bedrijfswebsites en maatwerkplatforms in verschillende branches.",
+      id: "webdesign",
+      title: "Webdesign",
+      items: [
+        q("web-1", "Bouwen jullie alleen WordPress-sites?", "Nee. Naast WordPress doen we maatwerk webdesign in HTML/CSS/JS, PHP en Next.js — los van WordPress-diensten."),
+        q("web-2", "Wat houdt Website Support in?", "Ontwerp, development, onderhoud, security, performance, backups/migratie en API-integraties voor custom stacks."),
+        q("web-3", "Kunnen jullie een bestaande site redesignen?", "Ja: UX/UI refresh, conversieverbetering en technische modernisering zonder alles weg te gooien."),
+        q("web-4", "Werken jullie met Next.js?", "Ja. Next.js is ideaal voor snelle, SEO-klare marketing sites en dashboards."),
+        q("web-5", "Doen jullie ook PHP-applicaties?", "Ja: portals, API’s, legacy modernisering en performance/security hardening."),
+        q("web-6", "Hoe zorgen jullie voor mobiele websites?", "Mobile-first design, responsive layouts en tests op gangbare devices/browsers."),
+        q("web-7", "Is toegankelijkheid (a11y) inbegrepen?", "We bouwen met toegankelijke basispraktijken; strengere WCAG-trajecten kunnen we als scope opnemen."),
+        q("web-8", "Kunnen jullie CMS-opties bieden zonder WordPress?", "Ja: headless CMS, custom admin of statische setups — afhankelijk van uw team."),
+        q("web-9", "Hoe lang duurt een webdesigntraject?", "Landingspagina’s in weken; grotere sites/apps in sprints over meerdere weken. Planning volgt na intake."),
+        q("web-10", "Regelen jullie ook copy en SEO bij launch?", "Ja, in combinatie met content/SEO-diensten zodat de site meteen vindbaar en conversiegericht is."),
+        q("web-11", "Wat met performance na launch?", "We optimaliseren Core Web Vitals, caching/CDN en monitoring; nazorg via onderhoudspakketten."),
+        q("web-12", "Kunnen jullie API’s koppelen (CRM, betalingen, AI)?", "Ja. Integraties met nette foutafhandeling, logging en documentatie."),
+        q("web-13", "Hoe leveren jullie code op?", "Via repository/deploy pipeline waar mogelijk, met environments (staging/production) en handover."),
+        q("web-14", "Helpen jullie met conversie-optimalisatie op de site?", "Ja: A/B-tests, UX-verbeteringen, formulieren, CTA’s en page speed."),
+      ],
     },
     {
-      id: "maintenance",
-      question: "Kunnen jullie ook doorlopend onderhoud doen?",
-      answer:
-        "Ja. We bieden doorlopend onderhoud met updates, backups, security-monitoring en performance-optimalisatie.",
+      id: "webhosting",
+      title: "Webhosting en domeinen",
+      items: [
+        q("host-1", "Welke hosting bieden jullie?", "Shared hosting, WordPress hosting en VPS — in Basic/Plus/Business niveaus, plus domeinen."),
+        q("host-2", "Wat is het verschil tussen shared, WordPress en VPS?", "Shared is voordelig voor kleinere sites. WordPress hosting is geoptimaliseerd voor WP. VPS geeft meer resources/controle voor zwaardere loads."),
+        q("host-3", "Helpen jullie met domeinregistratie?", "Ja. We adviseren, registreren/verhuizen en koppelen DNS correct."),
+        q("host-4", "Zit SSL bij hosting?", "Ja, SSL is standaard in onze relevante hostingplannen."),
+        q("host-5", "Kunnen jullie mijn site migreren naar jullie hosting?", "Ja: backup, migratie, DNS-cutover, SSL en smoke tests met minimale downtime."),
+        q("host-6", "Hoe werken backups op hosting?", "Afhankelijk van plan: makkelijke of geautomatiseerde backups. Extra off-site retentie is mogelijk."),
+        q("host-7", "Wat als ik meer traffic krijg?", "We schalen naar Plus/Business of VPS en optimaliseren caching/CDN."),
+        q("host-8", "Bieden jullie e-mail bij domeinen?", "Dat hangt van het pakket/setup af. We adviseren betrouwbare mailoplossingen en DNS (SPF/DKIM/DMARC)."),
+        q("host-9", "Hoe veilig is jullie hosting?", "Firewall/SSL, updates, monitoring en hardening. Security-diensten kunnen extra lagen toevoegen."),
+        q("host-10", "Kan ik later van shared naar VPS?", "Ja. Migratie plannen we met u, inclusief tests en rollback."),
+        q("host-11", "Ondersteunen jullie CDN?", "Ja, waar relevant (vaak gratis CDN in WP-hostingplannen) voor snellere globale delivery."),
+        q("host-12", "Wat is jullie uptime-aanpak?", "Monitoring, snelle incident response en duidelijke communicatie bij onderhoudsvensters."),
+        q("host-13", "Helpen jullie DNS-problemen oplossen?", "Ja: records, propagatie, mail-auth en domeinkoppelingen."),
+        q("host-14", "Hoe kies ik het juiste hostingplan?", "Op basis van traffic, stack (WP vs maatwerk), resources en groei. We adviseren eerlijk — niet oversell."),
+        q("host-15", "Waar zie ik hostingprijzen?", "Op de hostingdienstpagina’s onder Diensten → Webhosting en domeinen, met maand/jaar opties waar van toepassing."),
+      ],
+    },
+  ],
+};
+
+const en: FaqContent = {
+  title: "Frequently asked questions",
+  subtitle:
+    "In-depth answers about TripleZero iT — from AI and SEO to design, marketing, support and hosting.",
+  ctaTitle: "Still need help?",
+  ctaText: "Can't find your answer? Contact our team and we'll get back to you quickly.",
+  ctaButton: "Contact us",
+  categories: [
+    {
+      id: "general",
+      title: "General",
+      items: [
+        q("gen-1", "What does TripleZero iT do?", "We combine webdesign, WordPress support, digital marketing, AI visibility (AEO/GEO/SEO), design and hosting — helping brands get found, convert and grow."),
+        q("gen-2", "How do I get started?", "Book a call or contact us. We run a short intake, review goals and stack, then propose a clear plan with timeline and KPIs."),
+        q("gen-3", "Who do you work with?", "SMBs, scale-ups, ecommerce brands, agencies and international teams — as full-service partner or specialist support."),
+        q("gen-4", "Do you only work in the Netherlands?", "No. We serve Benelux and international clients in Dutch and English."),
+        q("gen-5", "What does a typical engagement look like?", "Intake → audit/scan → plan → sprint execution → measurement → optimization, with clear milestones."),
+        q("gen-6", "Can I combine multiple services?", "Yes. Common mixes: webdesign + SEO + ads, or WordPress maintenance + hosting + security."),
+        q("gen-7", "How soon can you start?", "Often within a few business days after approval. Emergency issues (malware, downtime) get priority."),
+        q("gen-8", "Do you work remote or on-site?", "Primarily remote with structured communication. On-site is available on request."),
+        q("gen-9", "How do you communicate progress?", "Regular updates, tickets/dashboard where relevant, plus sprint or monthly reports."),
+        q("gen-10", "What do you need from us to start?", "Access (if needed), goals, brand assets, analytics accounts and existing tool credentials."),
+        q("gen-11", "Are you a fit for startups?", "Yes — from lean landing pages and AI scans to full growth systems as you scale."),
+        q("gen-12", "Who owns the work and accounts?", "You own domains, content, repos and ad accounts. We deliver files and documentation at handover."),
+        q("gen-13", "Can you collaborate with our current vendors?", "Yes. We work alongside your developers/marketers or take over maintenance cleanly."),
+      ],
     },
     {
-      id: "account",
-      question: "Ik heb een accountprobleem, wat nu?",
-      answer:
-        "Neem contact op via de contactpagina met uw gegevens en het probleem. Ons supportteam helpt u snel verder.",
+      id: "ai",
+      title: "AI",
+      items: [
+        q("ai-1", "What is your AI scan?", "An AI readiness scan scoring how well your site performs for classic search and AI answer systems (SEO, AEO, GEO and technical foundations)."),
+        q("ai-2", "What does the AI scan measure?", "SEO fundamentals, AEO/GEO signals, content structure, performance indicators and AI readiness — with prioritized fixes."),
+        q("ai-3", "How often should we run an AI scan?", "After major site changes or campaigns; for active brands we recommend periodic scans (e.g. quarterly)."),
+        q("ai-4", "Is AI only about content writing?", "No. It also covers technical discoverability, structured data, internal linking and how AI systems summarize your brand."),
+        q("ai-5", "Can you integrate AI into our workflows?", "Yes: content assistance, automation, chat/ticket flows and custom AI API integrations."),
+        q("ai-6", "Does AI replace your strategy work?", "No. AI accelerates analysis and production; strategy, brand voice and conversion decisions stay human-led."),
+        q("ai-7", "Is AI-generated content safe for SEO?", "Only with human review, unique insight and E-E-A-T. We avoid thin generic pages that hurt rankings."),
+        q("ai-8", "What is AI readiness?", "How well your site, content and data are structured so AI systems can correctly cite, recommend and explain your brand."),
+        q("ai-9", "Do you use AI agents in the dashboard?", "Yes. Clients can see agents for SEO, content, social and ads with status and tasks."),
+        q("ai-10", "Which AI tools do you use?", "We pick tools per use case, with governance: sources, fact-checking, brand rules and privacy."),
+        q("ai-11", "Can AI help support tickets?", "Yes for triage and faster replies, with human escalation for complex or sensitive cases."),
+        q("ai-12", "How is AI work priced?", "From an entry AI scan to monthly AI + marketing retainers. You’ll get a clear proposal after intake."),
+        q("ai-13", "How do we measure AI ROI?", "KPIs like traffic, leads, time saved, content output, ticket resolution and conversion — defined upfront."),
+      ],
     },
     {
-      id: "cancel",
-      question: "Kan ik op elk moment opzeggen?",
-      answer:
-        "Ja, u kunt diensten op elk moment stopzetten. Neem contact op met support en we regelen de opzegging.",
+      id: "aeo-geo-seo",
+      title: "AEO, GEO & SEO",
+      items: [
+        q("seo-1", "What’s the difference between SEO, AEO and GEO?", "SEO targets classic search engines. AEO optimizes for AI answers. GEO strengthens visibility in generative search experiences."),
+        q("seo-2", "Why do AEO/GEO matter now?", "More users get answers via AI. Without AEO/GEO you miss citations, brand presence and traffic even if classic SEO is solid."),
+        q("seo-3", "How do you start an SEO engagement?", "Technical audit, keyword/intent research, content gap analysis and a prioritized roadmap tied to business KPIs."),
+        q("seo-4", "How long until SEO results show?", "Technical wins can be fast. Organic growth usually compounds over weeks to months depending on competition."),
+        q("seo-5", "Do you offer local SEO?", "Yes: Google Business Profile, local landing pages, NAP consistency, reviews and local content clusters."),
+        q("seo-6", "What is technical SEO for you?", "Crawlability, indexation, Core Web Vitals, structured data, sitemaps/robots, canonicals, internal linking and error cleanup."),
+        q("seo-7", "Do you create SEO content?", "Yes: briefs, outlines, blogs, landing pages and FAQs matched to intent and structured for AI visibility."),
+        q("seo-8", "What is E-E-A-T?", "Experience, Expertise, Authoritativeness, Trust — critical for rankings and credibility in AI summaries."),
+        q("seo-9", "Do you do link building?", "Yes, ethical and relevant: digital PR, partnerships and content assets — never spam schemes."),
+        q("seo-10", "Can you recover from SEO damage?", "Yes: algorithm recovery, toxic links, indexation issues and content cannibalization fixes."),
+        q("seo-11", "How do you report SEO progress?", "Monthly or per sprint: rankings, traffic, conversions, technical issues and next actions."),
+        q("seo-12", "Does SEO work for ecommerce?", "Yes: product/category SEO, faceted navigation, reviews, structured data and buying-intent content hubs."),
+        q("seo-13", "Is SEO one-off or ongoing?", "Best results come from ongoing optimization. One-off audits help, but competitors keep moving."),
+        q("seo-14", "Do you support international SEO?", "Yes: hreflang, market research per locale, localization and multi-locale technical setups."),
+      ],
+    },
+    {
+      id: "advertising",
+      title: "Advertising",
+      items: [
+        q("ads-1", "Which ad channels do you run?", "Google Ads, Meta, LinkedIn, and where relevant YouTube/retargeting — based on funnel and budget."),
+        q("ads-2", "How do you set ad budgets?", "From goals (leads/sales), target CAC, auction prices and a test phase. We start lean and scale winners."),
+        q("ads-3", "What’s your Google Ads approach?", "Account structure, intent mapping, negatives, landing-page fit, conversion tracking and weekly optimization."),
+        q("ads-4", "Can you run Meta Ads for ecommerce?", "Yes: catalogs/retargeting, creatives, audiences and creative testing to improve ROAS."),
+        q("ads-5", "How do you measure ad success?", "Conversions, CPA/CAC, ROAS, lead quality and pipeline — not vanity clicks."),
+        q("ads-6", "What if tracking is broken?", "We fix GTM/GA4/pixels, consent setups where needed and stronger measurement options."),
+        q("ads-7", "Do you run B2B LinkedIn Ads?", "Yes, with sharp targeting, lead forms or landing pages and decision-maker messaging."),
+        q("ads-8", "How fast do ads show results?", "Traffic can be immediate. Stable CPA/ROAS usually needs 2–6 weeks of learning and iteration."),
+        q("ads-9", "Do you create ad creatives?", "Yes: copy, visuals and test variants — design/media creation included when needed."),
+        q("ads-10", "Can ads and SEO reinforce each other?", "Yes. Search insights feed SEO; strong organic pages improve Quality Score and lower CPA."),
+        q("ads-11", "Can you take over existing ad accounts?", "Yes. We audit, restructure and optimize without unnecessary rebuilds."),
+        q("ads-12", "How do you prevent wasted spend?", "Negatives, exclusions, caps, geo controls, frequency limits and fast kill switches."),
+        q("ads-13", "Is remarketing still worth it?", "Yes when privacy-compliant with strong offers — often the most efficient layer."),
+      ],
+    },
+    {
+      id: "design",
+      title: "Design",
+      items: [
+        q("des-1", "What design services do you offer?", "Logos, brand identity, business cards, letterhead, flyers, posters, stickers, magazines/brochures and digital visuals."),
+        q("des-2", "Which tools do you use?", "Adobe Photoshop, Illustrator and InDesign for print-ready, professional deliverables."),
+        q("des-3", "Do you deliver print-ready files?", "Yes: CMYK, bleed, crop marks and proper PDF exports, plus screen variants."),
+        q("des-4", "How does a logo project work?", "Brief → concepts → feedback rounds → final vectors (SVG/PDF/AI) and basic usage guidelines."),
+        q("des-5", "Can you refresh an existing brand?", "Yes — update logo, color and type while protecting recognition."),
+        q("des-6", "Do you make social templates?", "Yes, so your team can publish consistently and quickly."),
+        q("des-7", "Digital vs print design?", "Print needs color space, resolution and margins; digital needs screen sharpness and speed. We deliver both correctly."),
+        q("des-8", "Can you layout magazines or brochures?", "Yes, multi-page InDesign work with grids, styles and prepress checks."),
+        q("des-9", "Do you handle printing?", "Yes. We design and can print in small or large quantities — from business cards and stickers to flyers, posters and brochures — with proofs and production coordination."),
+        q("des-10", "How many feedback rounds are included?", "Usually 2–3 structured rounds; more available by agreement."),
+        q("des-11", "Do we get source files?", "Yes, as agreed (AI/PSD/INDD or export packs)."),
+        q("des-12", "Can design and webdesign align?", "Yes. Brand systems and UI stay consistent across print and web."),
+        q("des-13", "Where can I learn more about Digital Design?", "Visit /digital-design and the Digital Design services in the menu."),
+      ],
+    },
+    {
+      id: "marketing",
+      title: "Marketing",
+      items: [
+        q("mkt-1", "What marketing services do you offer?", "SEO/AEO/GEO, content, social, ads, ecommerce growth, product listing, community management and data entry."),
+        q("mkt-2", "How do you build a marketing strategy?", "Goals, audience, positioning, channel mix, content pipeline and KPIs — practical and executable."),
+        q("mkt-3", "What is full-funnel marketing for you?", "Awareness → consideration → conversion → retention, with channel roles clearly defined."),
+        q("mkt-4", "Do you help with positioning?", "Yes. Clear positioning prevents scattered campaigns and weak conversion."),
+        q("mkt-5", "Do you provide content writing?", "Yes: blogs, website copy, newsletters, landing pages and sales copy."),
+        q("mkt-6", "Do you do ecommerce marketing?", "Yes: feeds, listing quality, CRO, ads and category/product SEO."),
+        q("mkt-7", "What is CRO?", "Conversion Rate Optimization — improving pages and funnels so more visitors convert."),
+        q("mkt-8", "How do you report marketing results?", "Reports/dashboards with traffic, leads, sales, CPA/ROAS and channel learnings."),
+        q("mkt-9", "Can you work with our in-house team?", "Yes — execute, advise, or own a specialist lane (SEO-only, ads-only, etc.)."),
+        q("mkt-10", "How fast can campaigns launch?", "Often within 1–2 weeks after tracking/setup; content runs in parallel."),
+        q("mkt-11", "Do you support email marketing?", "Yes: flows, newsletters and copy, including CRM/ecommerce integrations."),
+        q("mkt-12", "Is marketing always a monthly retainer?", "Retainers suit ongoing growth; audits, redesigns and launches can be project-based."),
+        q("mkt-13", "How do you avoid busywork without results?", "Every activity ties to KPIs. Underperformers get fixed or stopped."),
+      ],
+    },
+    {
+      id: "social-media",
+      title: "Social Media",
+      items: [
+        q("soc-1", "Which social channels do you manage?", "Primarily LinkedIn, Instagram, Facebook, and where relevant X/TikTok — based on audience fit."),
+        q("soc-2", "What’s included in social media management?", "Strategy, calendar, creation/scheduling, community replies, reporting and iteration."),
+        q("soc-3", "Do you create visuals and video?", "Yes via media creation: stills, carousels, short-form video and templates."),
+        q("soc-4", "How often do you post?", "Depends on goals — typically 3–5 times/week on core channels, quality over volume."),
+        q("soc-5", "Do you offer community management?", "Yes: moderation, comments, DMs and reputation care with brand voice guidelines."),
+        q("soc-6", "Can social and ads work together?", "Yes. Organic winners become ad creatives; ads amplify what resonates."),
+        q("soc-7", "How do you measure social success?", "Reach, engagement, click-outs, leads and assisted conversions — not just likes."),
+        q("soc-8", "Do you work with influencers?", "On request: selection, briefing and tracking focused on measurable outcomes."),
+        q("soc-9", "Can you support crisis communication?", "Yes, with fast response protocols coordinated with your team."),
+        q("soc-10", "Do you help with LinkedIn thought leadership?", "Yes: personal + company content, carousels, cases and employee advocacy."),
+        q("soc-11", "Do you provide a content calendar?", "Yes — monthly or quarterly themes, formats and deadlines."),
+        q("soc-12", "What if we already have a social manager?", "We can specialize (creatives, ads, strategy) or support peak periods."),
+        q("soc-13", "How fast will social grow?", "Consistency compounds. Meaningful growth usually takes weeks to months; faster with ads support."),
+      ],
+    },
+    {
+      id: "support",
+      title: "Support",
+      items: [
+        q("sup-1", "What support do you provide?", "WordPress support, custom-site support, tickets/live chat, maintenance, security, performance and incident response."),
+        q("sup-2", "How do I reach support?", "Via contact, booking, dashboard tickets or live chat. Urgent issues get priority flags."),
+        q("sup-3", "What’s your response time?", "Fast first response (often within one business day; critical downtime faster). Exact SLAs depend on package."),
+        q("sup-4", "Do you offer 24/7 monitoring?", "Yes in relevant support/hosting packages: monitoring, backups and alerts."),
+        q("sup-5", "Can you remove malware?", "Yes — WordPress and custom stacks — including hardening and aftercare."),
+        q("sup-6", "Do you handle WordPress updates?", "Yes via WordPress maintenance & updates: core/plugins/themes with backups and checks."),
+        q("sup-7", "Can you help with hosting issues?", "Yes — diagnose, migrate or optimize hosting/VPS/domains."),
+        q("sup-8", "What if my site is down?", "Report urgency. We restore via backups, server checks and hotfixes with status updates."),
+        q("sup-9", "Is there a client portal?", "Yes. Logged-in clients see dashboard, tickets, projects and relevant CRM/invoices."),
+        q("sup-10", "Can multiple teammates open tickets?", "Yes, depending on account roles (client/manager/admin)."),
+        q("sup-11", "What’s in Basic/Standard/Premium support?", "More sites, faster follow-up and broader coverage (updates, malware, speed, SEO). See support pages for details."),
+        q("sup-12", "Do you help with non-technical questions too?", "Yes — services, billing and account questions, with technical depth based on your package."),
+        q("sup-13", "Can I upgrade support later?", "Yes, as traffic, risk or team needs grow."),
+      ],
+    },
+    {
+      id: "webdesign",
+      title: "Webdesign",
+      items: [
+        q("web-1", "Do you only build WordPress sites?", "No. Besides WordPress we build custom sites in HTML/CSS/JS, PHP and Next.js — separate from WordPress services."),
+        q("web-2", "What is Website Support?", "Design, development, maintenance, security, performance, backup/migration and API integrations for custom stacks."),
+        q("web-3", "Can you redesign an existing site?", "Yes: UX/UI refresh, conversion improvements and technical modernization without a full rewrite if avoidable."),
+        q("web-4", "Do you work with Next.js?", "Yes — great for fast, SEO-ready marketing sites and dashboards."),
+        q("web-5", "Do you build PHP applications?", "Yes: portals, APIs, legacy modernization and performance/security hardening."),
+        q("web-6", "How do you handle mobile?", "Mobile-first design, responsive layouts and testing across common devices/browsers."),
+        q("web-7", "Is accessibility included?", "We follow solid a11y basics; stricter WCAG programs can be scoped in."),
+        q("web-8", "CMS options without WordPress?", "Yes: headless CMS, custom admin or static setups depending on your team."),
+        q("web-9", "How long does a webdesign project take?", "Landing pages in weeks; larger sites/apps across multiple sprints after intake planning."),
+        q("web-10", "Do you include copy and SEO at launch?", "Yes when combined with content/SEO so the site launches searchable and conversion-ready."),
+        q("web-11", "What about performance after launch?", "We optimize Core Web Vitals, caching/CDN and monitoring via maintenance packages."),
+        q("web-12", "Can you integrate APIs (CRM, payments, AI)?", "Yes, with proper error handling, logging and documentation."),
+        q("web-13", "How is code delivered?", "Via repo/deploy pipelines where possible, with staging/production and handover."),
+        q("web-14", "Do you help with on-site CRO?", "Yes: UX improvements, forms, CTAs, experiments and page speed."),
+      ],
+    },
+    {
+      id: "webhosting",
+      title: "Webhosting & Domains",
+      items: [
+        q("host-1", "What hosting do you offer?", "Shared, WordPress and VPS hosting in Basic/Plus/Business tiers, plus domains."),
+        q("host-2", "Shared vs WordPress vs VPS?", "Shared suits smaller sites. WordPress hosting is WP-optimized. VPS offers more resources/control for heavier loads."),
+        q("host-3", "Do you help with domain registration?", "Yes — advise, register/transfer and configure DNS correctly."),
+        q("host-4", "Is SSL included?", "Yes, SSL is included in relevant hosting plans."),
+        q("host-5", "Can you migrate my site to your hosting?", "Yes: backup, migration, DNS cutover, SSL and smoke tests with minimal downtime."),
+        q("host-6", "How do backups work?", "Depends on plan: easy or automated backups. Extra off-site retention available."),
+        q("host-7", "What if traffic grows?", "We scale to Plus/Business or VPS and optimize caching/CDN."),
+        q("host-8", "Is email included with domains?", "Depends on setup. We advise reliable mail solutions and DNS auth (SPF/DKIM/DMARC)."),
+        q("host-9", "How secure is your hosting?", "SSL/firewall, updates, monitoring and hardening, with optional security services on top."),
+        q("host-10", "Can I move from shared to VPS later?", "Yes — planned migration with testing and rollback."),
+        q("host-11", "Do you support CDN?", "Yes where relevant (often included on WP hosting) for faster global delivery."),
+        q("host-12", "What’s your uptime approach?", "Monitoring, fast incident response and clear communication for maintenance windows."),
+        q("host-13", "Can you fix DNS issues?", "Yes: records, propagation, mail auth and domain wiring."),
+        q("host-14", "How do I choose the right plan?", "Based on traffic, stack (WP vs custom), resources and growth. We advise honestly."),
+        q("host-15", "Where can I see hosting prices?", "On the hosting service pages under Services → Webhosting & Domains."),
+      ],
     },
   ],
 };
