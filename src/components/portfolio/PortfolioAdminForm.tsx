@@ -2,11 +2,13 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { useSession } from "next-auth/react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { canEditClientUrlFields } from "@/lib/roles";
 
 export type PortfolioFormValues = {
   id?: string;
@@ -56,6 +58,8 @@ export function PortfolioAdminForm({
   onSaved: () => void;
   onCancel: () => void;
 }) {
+  const { data: session } = useSession();
+  const canEditClientUrl = canEditClientUrlFields(session?.user?.role);
   const [form, setForm] = useState<PortfolioFormValues>({ ...empty, ...initial });
   const [saving, setSaving] = useState(false);
   const [uploading, setUploading] = useState(false);
@@ -227,31 +231,36 @@ export function PortfolioAdminForm({
         </div>
       </div>
 
-      <div className="grid gap-4 md:grid-cols-2">
-        <div className="space-y-2">
-          <Label>Project URL</Label>
-          <Input
-            value={form.projectUrl}
-            onChange={(e) => setField("projectUrl", e.target.value)}
-            placeholder="https://"
-          />
+      {canEditClientUrl ? (
+        <div className="grid gap-4 rounded-2xl border border-border bg-muted/20 p-4 md:grid-cols-2">
+          <div className="space-y-2">
+            <Label htmlFor="portfolio-client">Client</Label>
+            <Input
+              id="portfolio-client"
+              value={form.clientName}
+              onChange={(e) => setField("clientName", e.target.value)}
+              placeholder="Client name"
+            />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="portfolio-url">URL</Label>
+            <Input
+              id="portfolio-url"
+              value={form.projectUrl}
+              onChange={(e) => setField("projectUrl", e.target.value)}
+              placeholder="https://"
+            />
+          </div>
         </div>
+      ) : null}
+
+      <div className="grid gap-4 md:grid-cols-2">
         <div className="space-y-2">
           <Label>Repo URL</Label>
           <Input
             value={form.repoUrl}
             onChange={(e) => setField("repoUrl", e.target.value)}
             placeholder="https://github.com/..."
-          />
-        </div>
-      </div>
-
-      <div className="grid gap-4 md:grid-cols-3">
-        <div className="space-y-2">
-          <Label>Client</Label>
-          <Input
-            value={form.clientName}
-            onChange={(e) => setField("clientName", e.target.value)}
           />
         </div>
         <div className="space-y-2">
@@ -261,11 +270,21 @@ export function PortfolioAdminForm({
             onChange={(e) => setField("industry", e.target.value)}
           />
         </div>
+      </div>
+
+      <div className="grid gap-4 md:grid-cols-2">
         <div className="space-y-2">
           <Label>Year</Label>
           <Input
             value={form.year}
             onChange={(e) => setField("year", e.target.value)}
+          />
+        </div>
+        <div className="space-y-2">
+          <Label>Sort order</Label>
+          <Input
+            value={form.sortOrder}
+            onChange={(e) => setField("sortOrder", e.target.value)}
           />
         </div>
       </div>
@@ -284,14 +303,7 @@ export function PortfolioAdminForm({
         </div>
       </div>
 
-      <div className="grid gap-4 md:grid-cols-3">
-        <div className="space-y-2">
-          <Label>Sort order</Label>
-          <Input
-            value={form.sortOrder}
-            onChange={(e) => setField("sortOrder", e.target.value)}
-          />
-        </div>
+      <div className="flex flex-wrap gap-4">
         <label className="flex items-center gap-2 text-sm">
           <input
             type="checkbox"

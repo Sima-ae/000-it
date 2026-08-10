@@ -21,7 +21,7 @@ export function ServiceCard({
       <GlassCard className="flex h-full flex-col overflow-hidden p-0">
         {image ? (
           <div className="relative h-36 w-full bg-muted/40">
-            <Image src={image} alt={title} fill className="object-cover" unoptimized />
+            <Image src={image} alt={title} fill className="object-cover" sizes="(max-width:768px) 100vw, 33vw" />
           </div>
         ) : null}
         <div className="flex flex-1 flex-col p-5">

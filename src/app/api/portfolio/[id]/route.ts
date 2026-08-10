@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { requireRole } from "@/lib/api-auth";
 import { asStringArray, portfolioUpsertSchema, slugify } from "@/lib/portfolio";
+import { canDelete, canEditClientUrlFields, canEditResource } from "@/lib/roles";
 
 export async function GET(
   _request: Request,
@@ -15,7 +16,7 @@ export async function GET(
     return NextResponse.json({ error: "Not found" }, { status: 404 });
   }
   if (!item.published) {
-    const authResult = await requireRole(["ADMIN", "MANAGER"]);
+    const authResult = await requireRole(["SUPER_ADMIN", "ADMIN", "MANAGER"]);
     if (authResult.error) {
       return NextResponse.json({ error: "Not found" }, { status: 404 });
     }
@@ -27,12 +28,22 @@ export async function PATCH(
   request: Request,
   { params }: { params: Promise<{ id: string }> },
 ) {
-  const authResult = await requireRole(["ADMIN", "MANAGER"]);
+  const authResult = await requireRole(["SUPER_ADMIN", "ADMIN", "MANAGER"]);
   if (authResult.error) return authResult.error;
   const { id } = await params;
 
   const existing = await prisma.portfolioProject.findUnique({ where: { id } });
   if (!existing) return NextResponse.json({ error: "Not found" }, { status: 404 });
+
+  if (
+    !canEditResource(
+      authResult.session.user.role,
+      existing.createdById,
+      authResult.session.user.id,
+    )
+  ) {
+    return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+  }
 
   const body = await request.json();
   const parsed = portfolioUpsertSchema.partial().safeParse({
@@ -54,13 +65,15 @@ export async function PATCH(
   if (data.description !== undefined) update.description = data.description;
   if (data.coverImage !== undefined) update.coverImage = data.coverImage;
   if (data.gallery !== undefined) update.gallery = data.gallery;
-  if (data.projectUrl !== undefined) {
-    update.projectUrl = data.projectUrl === "" ? null : data.projectUrl;
+  if (canEditClientUrlFields(authResult.session.user.role)) {
+    if (data.projectUrl !== undefined) {
+      update.projectUrl = data.projectUrl === "" ? null : data.projectUrl;
+    }
+    if (data.clientName !== undefined) update.clientName = data.clientName;
   }
   if (data.repoUrl !== undefined) {
     update.repoUrl = data.repoUrl === "" ? null : data.repoUrl;
   }
-  if (data.clientName !== undefined) update.clientName = data.clientName;
   if (data.industry !== undefined) update.industry = data.industry;
   if (data.year !== undefined) update.year = data.year;
   if (data.tags !== undefined) update.tags = data.tags;
@@ -68,6 +81,9 @@ export async function PATCH(
   if (data.featured !== undefined) update.featured = data.featured;
   if (data.published !== undefined) update.published = data.published;
   if (data.sortOrder !== undefined) update.sortOrder = data.sortOrder;
+  if (!existing.createdById) {
+    update.createdById = authResult.session.user.id;
+  }
 
   if (data.slug !== undefined || data.title !== undefined) {
     let slug = slugify(data.slug || data.title || existing.title);
@@ -90,8 +106,11 @@ export async function DELETE(
   _request: Request,
   { params }: { params: Promise<{ id: string }> },
 ) {
-  const authResult = await requireRole(["ADMIN", "MANAGER"]);
+  const authResult = await requireRole(["SUPER_ADMIN"]);
   if (authResult.error) return authResult.error;
+  if (!canDelete(authResult.session.user.role)) {
+    return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+  }
   const { id } = await params;
 
   const existing = await prisma.portfolioProject.findUnique({ where: { id } });

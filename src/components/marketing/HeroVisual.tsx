@@ -71,7 +71,10 @@ export function HeroVisual() {
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent" />
             Agents syncing
           </span>
-          <span>00 / funnel optimized</span>
+          <span className="inline-flex items-center gap-2 text-foreground">
+            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent" />
+            Servers online
+          </span>
         </div>
       </motion.div>
     </div>

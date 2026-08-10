@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 import { prisma } from "@/lib/prisma";
 import { requireUser } from "@/lib/api-auth";
+import { canDelete, canEditAny } from "@/lib/roles";
 
 const updateSchema = z.object({
   name: z.string().min(2).optional(),
@@ -13,7 +14,18 @@ const updateSchema = z.object({
   budget: z.number().optional(),
 });
 
-async function getOwnedProject(id: string, userId: string) {
+async function findAccessibleProject(id: string, role: string, userId: string) {
+  if (canEditAny(role)) {
+    return prisma.project.findUnique({
+      where: { id },
+      include: {
+        tasks: { orderBy: { createdAt: "desc" } },
+        clients: true,
+        aiAgents: true,
+        activities: { orderBy: { createdAt: "desc" }, take: 20 },
+      },
+    });
+  }
   return prisma.project.findFirst({
     where: { id, userId },
     include: {
@@ -32,7 +44,7 @@ export async function GET(
   const { session, error } = await requireUser();
   if (error) return error;
   const { id } = await params;
-  const project = await getOwnedProject(id, session.user.id);
+  const project = await findAccessibleProject(id, session.user.role, session.user.id);
   if (!project) return NextResponse.json({ error: "Not found" }, { status: 404 });
   return NextResponse.json(project);
 }
@@ -44,9 +56,11 @@ export async function PATCH(
   const { session, error } = await requireUser();
   if (error) return error;
   const { id } = await params;
-  const existing = await prisma.project.findFirst({
-    where: { id, userId: session.user.id },
-  });
+
+  const existing = canEditAny(session.user.role)
+    ? await prisma.project.findUnique({ where: { id } })
+    : await prisma.project.findFirst({ where: { id, userId: session.user.id } });
+
   if (!existing) return NextResponse.json({ error: "Not found" }, { status: 404 });
 
   const parsed = updateSchema.safeParse(await request.json());
@@ -77,10 +91,11 @@ export async function DELETE(
 ) {
   const { session, error } = await requireUser();
   if (error) return error;
+  if (!canDelete(session.user.role)) {
+    return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+  }
   const { id } = await params;
-  const existing = await prisma.project.findFirst({
-    where: { id, userId: session.user.id },
-  });
+  const existing = await prisma.project.findUnique({ where: { id } });
   if (!existing) return NextResponse.json({ error: "Not found" }, { status: 404 });
 
   await prisma.project.delete({ where: { id } });

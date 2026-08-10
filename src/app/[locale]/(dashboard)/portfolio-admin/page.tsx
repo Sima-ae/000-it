@@ -5,14 +5,23 @@ import Image from "next/image";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { useSession } from "next-auth/react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import {
   PortfolioAdminForm,
   type PortfolioFormValues,
 } from "@/components/portfolio/PortfolioAdminForm";
+import { canDelete, canEditResource } from "@/lib/roles";
 
 type Item = {
   id: string;
@@ -32,6 +41,7 @@ type Item = {
   featured: boolean;
   published: boolean;
   sortOrder: number;
+  createdById?: string | null;
 };
 
 function listToCsv(value: unknown) {
@@ -42,8 +52,12 @@ function listToCsv(value: unknown) {
 export default function PortfolioAdminPage() {
   const t = useTranslations("dashboard");
   const locale = useLocale();
+  const { data: session } = useSession();
   const qc = useQueryClient();
-  const [mode, setMode] = useState<"list" | "create" | "edit">("list");
+  const role = session?.user?.role;
+  const userId = session?.user?.id || "";
+  const showDelete = canDelete(role);
+  const [open, setOpen] = useState(false);
   const [editing, setEditing] = useState<PortfolioFormValues | null>(null);
 
   const { data: items = [], isLoading } = useQuery({
@@ -56,10 +70,11 @@ export default function PortfolioAdminPage() {
   });
 
   const initialEdit = useMemo(() => editing, [editing]);
+  const isEdit = !!editing?.id;
 
   function startCreate() {
     setEditing(null);
-    setMode("create");
+    setOpen(true);
   }
 
   function startEdit(item: Item) {
@@ -82,7 +97,7 @@ export default function PortfolioAdminPage() {
       published: item.published,
       sortOrder: String(item.sortOrder ?? 0),
     });
-    setMode("edit");
+    setOpen(true);
   }
 
   async function remove(id: string) {
@@ -111,80 +126,93 @@ export default function PortfolioAdminPage() {
               View public page
             </Link>
           </Button>
-          {mode === "list" ? (
-            <Button onClick={startCreate}>Add project</Button>
-          ) : (
-            <Button variant="outline" onClick={() => setMode("list")}>
-              Back to list
-            </Button>
-          )}
+          <Button onClick={startCreate}>Add project</Button>
         </div>
       </div>
 
-      {mode !== "list" && (
-        <PortfolioAdminForm
-          initial={mode === "edit" ? initialEdit || undefined : undefined}
-          onCancel={() => setMode("list")}
-          onSaved={() => {
-            setMode("list");
-            void qc.invalidateQueries({ queryKey: ["portfolio-admin"] });
-          }}
-        />
-      )}
-
-      {mode === "list" && (
-        <Card>
-          <CardHeader>
-            <CardTitle>All portfolio projects</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-3">
-            {isLoading && <p className="text-muted-foreground">Loading…</p>}
-            {!isLoading && !items.length && (
-              <p className="text-muted-foreground">No portfolio projects yet.</p>
-            )}
-            {items.map((item) => (
-              <div
-                key={item.id}
-                className="flex flex-col gap-3 rounded-xl border border-border p-3 sm:flex-row sm:items-center"
-              >
-                <div className="relative h-20 w-full overflow-hidden rounded-lg bg-muted sm:w-28">
-                  {item.coverImage ? (
-                    <Image
-                      src={item.coverImage}
-                      alt=""
-                      fill
-                      className="object-cover"
-                    />
-                  ) : null}
+      <Card>
+        <CardHeader>
+          <CardTitle>All portfolio projects</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-3">
+          {isLoading && <p className="text-muted-foreground">Loading…</p>}
+          {!isLoading && !items.length && (
+            <p className="text-muted-foreground">No portfolio projects yet.</p>
+          )}
+          {items.map((item) => (
+            <div
+              key={item.id}
+              className="flex flex-col gap-3 rounded-xl border border-border p-3 sm:flex-row sm:items-center"
+            >
+              <div className="relative h-20 w-full overflow-hidden rounded-lg bg-muted sm:w-28">
+                {item.coverImage ? (
+                  <Image src={item.coverImage} alt="" fill className="object-cover" />
+                ) : null}
+              </div>
+              <div className="min-w-0 flex-1">
+                <div className="flex flex-wrap items-center gap-2">
+                  <p className="font-medium">{item.title}</p>
+                  {item.published ? (
+                    <Badge variant="success">Published</Badge>
+                  ) : (
+                    <Badge variant="warning">Draft</Badge>
+                  )}
+                  {item.featured && <Badge>Featured</Badge>}
                 </div>
-                <div className="min-w-0 flex-1">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <p className="font-medium">{item.title}</p>
-                    {item.published ? (
-                      <Badge variant="success">Published</Badge>
-                    ) : (
-                      <Badge variant="warning">Draft</Badge>
-                    )}
-                    {item.featured && <Badge>Featured</Badge>}
-                  </div>
-                  <p className="line-clamp-2 text-sm text-muted-foreground">
-                    {item.summary}
-                  </p>
-                  <p className="text-xs text-muted-foreground">/{item.slug}</p>
-                </div>
-                <div className="flex gap-2">
+                <p className="line-clamp-2 text-sm text-muted-foreground">{item.summary}</p>
+                <p className="text-xs text-muted-foreground">
+                  {item.clientName ? `${item.clientName} · ` : ""}/{item.slug}
+                </p>
+              </div>
+              <div className="flex gap-2">
+                {canEditResource(role, item.createdById, userId) ? (
                   <Button size="sm" variant="outline" onClick={() => startEdit(item)}>
                     Edit
                   </Button>
+                ) : null}
+                {showDelete ? (
                   <Button size="sm" variant="ghost" onClick={() => remove(item.id)}>
                     Delete
                   </Button>
-                </div>
+                ) : null}
               </div>
-            ))}
-          </CardContent>
-        </Card>
-      )}
+            </div>
+          ))}
+        </CardContent>
+      </Card>
+
+      <Dialog
+        open={open}
+        onOpenChange={(next) => {
+          setOpen(next);
+          if (!next) setEditing(null);
+        }}
+      >
+        <DialogContent className="max-h-[min(92vh,920px)] w-[min(96vw,56rem)] overflow-hidden p-0">
+          <div className="min-h-0 flex-1 overflow-y-auto p-6 md:p-8">
+            <DialogHeader className="mb-6 pr-8">
+              <DialogTitle>{isEdit ? "Edit project" : "Add project"}</DialogTitle>
+              <DialogDescription>
+                Client and URL fields are available for admin users and shown publicly as
+                client name + view-project button.
+              </DialogDescription>
+            </DialogHeader>
+            <PortfolioAdminForm
+              key={editing?.id || "create"}
+              initial={isEdit ? initialEdit || undefined : undefined}
+              onCancel={() => {
+                setOpen(false);
+                setEditing(null);
+              }}
+              onSaved={() => {
+                setOpen(false);
+                setEditing(null);
+                void qc.invalidateQueries({ queryKey: ["portfolio-admin"] });
+              }}
+            />
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }

@@ -17,7 +17,9 @@ export function RouteProgress() {
     if (!pending) return;
     setVisible(true);
     setComplete(false);
-  }, [pending]);
+    const failSafe = window.setTimeout(() => done(), 8000);
+    return () => window.clearTimeout(failSafe);
+  }, [pending, done]);
 
   useEffect(() => {
     done();
@@ -33,16 +35,16 @@ export function RouteProgress() {
 
   return (
     <div
-      className="pointer-events-none fixed inset-x-0 top-0 z-100 h-0.5 overflow-hidden"
+      className="pointer-events-none fixed inset-x-0 top-0 z-120 h-0.5 overflow-hidden"
       aria-hidden
     >
       <div
         className={cn(
           "h-full origin-left bg-primary transition-transform ease-out",
-          complete || !pending ? "duration-300" : "duration-[10s]",
+          complete || !pending ? "duration-300" : "duration-[8s]",
         )}
         style={{
-          transform: complete || !pending ? "scaleX(1)" : "scaleX(0.7)",
+          transform: complete || !pending ? "scaleX(1)" : "scaleX(0.72)",
         }}
       />
     </div>

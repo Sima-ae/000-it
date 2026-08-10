@@ -7,6 +7,7 @@ import { Suspense, useState } from "react";
 import { Toaster } from "sonner";
 import { ThemeProvider } from "@/components/theme-provider";
 import { RouteProgress } from "@/components/shared/RouteProgress";
+import { LiveChatWidget } from "@/components/chat/LiveChatWidget";
 
 function ThemedToaster() {
   const { resolvedTheme } = useTheme();
@@ -37,6 +38,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
             <RouteProgress />
           </Suspense>
           {children}
+          <LiveChatWidget />
           <ThemedToaster />
         </QueryClientProvider>
       </SessionProvider>

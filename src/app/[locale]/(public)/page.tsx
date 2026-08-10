@@ -97,43 +97,6 @@ export default async function HomePage({
         <Reveal>
           <div className="mb-10 max-w-2xl">
             <h2 className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
-              {services("title")}
-            </h2>
-            <p className="mt-3 text-muted-foreground md:text-lg">{services("subtitle")}</p>
-          </div>
-        </Reveal>
-
-        <div className="grid gap-3 md:grid-cols-6">
-          {serviceKeys.map((item, index) => {
-            const span =
-              index < 2
-                ? "md:col-span-3"
-                : item.key === "software"
-                  ? "md:col-span-6"
-                  : "md:col-span-2";
-
-            return (
-              <Reveal key={item.key} delay={index * 0.05} className={cn("h-full", span)}>
-                <SoftLink href={`/${locale}${item.href}`} className="block h-full">
-                  <GlassCard className="flex h-full flex-col p-5 md:p-5">
-                    <h3 className="font-display text-lg font-semibold tracking-tight md:text-xl">
-                      {services(`items.${item.key}.title`)}
-                    </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                      {services(`items.${item.key}.desc`)}
-                    </p>
-                  </GlassCard>
-                </SoftLink>
-              </Reveal>
-            );
-          })}
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
-        <Reveal>
-          <div className="mb-10 max-w-2xl">
-            <h2 className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
               {pricing("title")}
             </h2>
             <p className="mt-3 text-muted-foreground md:text-lg">{pricing("subtitle")}</p>
@@ -181,6 +144,43 @@ export default async function HomePage({
               </GlassCard>
             </Reveal>
           ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
+        <Reveal>
+          <div className="mb-10 max-w-2xl">
+            <h2 className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
+              {services("title")}
+            </h2>
+            <p className="mt-3 text-muted-foreground md:text-lg">{services("subtitle")}</p>
+          </div>
+        </Reveal>
+
+        <div className="grid gap-3 md:grid-cols-6">
+          {serviceKeys.map((item, index) => {
+            const span =
+              index < 2
+                ? "md:col-span-3"
+                : item.key === "software"
+                  ? "md:col-span-6"
+                  : "md:col-span-2";
+
+            return (
+              <Reveal key={item.key} delay={index * 0.05} className={cn("h-full", span)}>
+                <SoftLink href={`/${locale}${item.href}`} className="block h-full">
+                  <GlassCard className="flex h-full flex-col p-5 md:p-5">
+                    <h3 className="font-display text-lg font-semibold tracking-tight md:text-xl">
+                      {services(`items.${item.key}.title`)}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                      {services(`items.${item.key}.desc`)}
+                    </p>
+                  </GlassCard>
+                </SoftLink>
+              </Reveal>
+            );
+          })}
         </div>
       </section>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useSession } from "next-auth/react";
 import { useTranslations } from "next-intl";
 import { toast } from "sonner";
 import { useClients, useCreateClient, useDeleteClient } from "@/hooks/useClients";
@@ -9,9 +10,12 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { canDelete } from "@/lib/roles";
 
 export default function ClientsPage() {
   const t = useTranslations("dashboard");
+  const { data: session } = useSession();
+  const showDelete = canDelete(session?.user?.role);
   const { data: clients = [], isLoading } = useClients();
   const createClient = useCreateClient();
   const deleteClient = useDeleteClient();
@@ -79,7 +83,7 @@ export default function ClientsPage() {
                     <th className="pb-3 pr-4">Email</th>
                     <th className="pb-3 pr-4">Company</th>
                     <th className="pb-3 pr-4">Status</th>
-                    <th className="pb-3">Actions</th>
+                    {showDelete ? <th className="pb-3">Actions</th> : null}
                   </tr>
                 </thead>
                 <tbody>
@@ -98,19 +102,21 @@ export default function ClientsPage() {
                         <td className="py-3 pr-4">
                           <Badge variant="outline">{client.status}</Badge>
                         </td>
-                        <td className="py-3">
-                          <Button
-                            size="sm"
-                            variant="ghost"
-                            onClick={() =>
-                              deleteClient.mutate(client.id, {
-                                onSuccess: () => toast.success("Deleted"),
-                              })
-                            }
-                          >
-                            Delete
-                          </Button>
-                        </td>
+                        {showDelete ? (
+                          <td className="py-3">
+                            <Button
+                              size="sm"
+                              variant="ghost"
+                              onClick={() =>
+                                deleteClient.mutate(client.id, {
+                                  onSuccess: () => toast.success("Deleted"),
+                                })
+                              }
+                            >
+                              Delete
+                            </Button>
+                          </td>
+                        ) : null}
                       </tr>
                     ),
                   )}

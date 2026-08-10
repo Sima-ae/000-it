@@ -25,7 +25,11 @@ export function LoginForm() {
   const locale = useLocale();
   const router = useRouter();
   const searchParams = useSearchParams();
-  const callbackUrl = searchParams.get("callbackUrl") || `/${locale}/dashboard`;
+  const rawCallback = searchParams.get("callbackUrl") || `/${locale}/dashboard`;
+  const callbackUrl =
+    rawCallback.startsWith("/") && !rawCallback.startsWith("//")
+      ? rawCallback
+      : `/${locale}/dashboard`;
 
   const form = useForm<FormValues>({
     resolver: zodResolver(schema),
@@ -34,7 +38,7 @@ export function LoginForm() {
 
   async function onSubmit(values: FormValues) {
     const res = await signIn("credentials", {
-      email: values.email,
+      email: values.email.trim().toLowerCase(),
       password: values.password,
       redirect: false,
     });

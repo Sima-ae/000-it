@@ -1,18 +1,20 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Reveal } from "@/components/marketing/Reveal";
 import { ServiceCard } from "@/components/content/ServiceCard";
-import { SoftLink } from "@/components/shared/SoftLink";
-import { GlassCard } from "@/components/marketing/GlassCard";
 import { serviceCatalog, serviceGroups } from "@/content/fixweb/catalog";
 import { getServiceContent } from "@/lib/fixweb-content";
 
 const aiServices = [
-  { key: "ai", href: "/ai-scan" },
-  { key: "seo", href: "/diensten/seo-optimization" },
-  { key: "web", href: "/diensten/wordpress-plugin-theme-installation" },
-  { key: "content", href: "/diensten/content-writing" },
-  { key: "ads", href: "/diensten/digital-marketing" },
-  { key: "software", href: "/contact" },
+  { key: "ai", href: "/ai-scan", image: "/uploads/fixweb/ai-integratie.png" },
+  { key: "seo", href: "/diensten/seo-optimization", image: "/uploads/fixweb/aeo-seo.png" },
+  {
+    key: "web",
+    href: "/diensten/wordpress-plugin-theme-installation",
+    image: "/uploads/fixweb/webdesign-conversie.png",
+  },
+  { key: "content", href: "/diensten/content-writing", image: "/uploads/fixweb/content-social.png" },
+  { key: "ads", href: "/diensten/digital-marketing", image: "/uploads/fixweb/ai-advertising.png" },
+  { key: "software", href: "/contact", image: "/uploads/fixweb/maatwerk-software.png" },
 ] as const;
 
 export default async function ServicesPage({
@@ -43,30 +45,32 @@ export default async function ServicesPage({
         <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {aiServices.map((item, i) => (
             <Reveal key={item.key} delay={i * 0.04}>
-              <SoftLink href={`/${locale}${item.href}`} className="block h-full">
-                <GlassCard className="h-full p-5">
-                  <h3 className="font-display text-lg font-semibold tracking-tight">
-                    {t(`items.${item.key}.title`)}
-                  </h3>
-                  <p className="mt-2 text-sm text-muted-foreground">
-                    {t(`items.${item.key}.desc`)}
-                  </p>
-                </GlassCard>
-              </SoftLink>
+              <ServiceCard
+                href={`/${locale}${item.href}`}
+                title={t(`items.${item.key}.title`)}
+                summary={t(`items.${item.key}.desc`)}
+                image={item.image}
+              />
             </Reveal>
           ))}
         </div>
       </section>
 
       {serviceGroups.map((group) => {
-        const items = serviceCatalog.filter(
-          (item) => item.group === group.id && (item.kind === "page" || item.kind === "product"),
-        );
-        // Prefer overview pages first, then products
-        const ordered = [
-          ...items.filter((i) => i.kind === "page"),
-          ...items.filter((i) => i.kind === "product"),
-        ];
+        const priced = serviceCatalog
+          .filter((item) => item.group === group.id && item.kind === "product")
+          .map((item) => {
+            const content = getServiceContent(item.slug);
+            return { item, content };
+          })
+          .filter(
+            ({ content }) =>
+              content &&
+              typeof content.price === "number" &&
+              content.blocks.length > 0,
+          );
+
+        if (priced.length === 0) return null;
 
         return (
           <section key={group.id} className="mt-16">
@@ -76,17 +80,16 @@ export default async function ServicesPage({
               </h2>
             </Reveal>
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {ordered.map((item, i) => {
-                const content = getServiceContent(item.slug);
+              {priced.map(({ item, content }, i) => {
                 const title = isNl ? item.titleNl : item.title;
                 const firstParagraph = content?.blocks.find((b) => b.type === "paragraph");
                 const summary =
                   content?.subtitle ||
-                  (isNl ? item.summaryNl : item.summary) ||
                   (firstParagraph && firstParagraph.type === "paragraph"
                     ? firstParagraph.text
                     : "") ||
                   "";
+
                 return (
                   <Reveal key={item.slug} delay={Math.min(i, 8) * 0.03}>
                     <ServiceCard

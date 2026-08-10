@@ -8,27 +8,21 @@ import { cn } from "@/lib/utils";
 
 const featuredByGroup: Record<string, string[]> = {
   wordpress: [
-    "wordpress-support",
     "wordpress-error-fix",
     "wordpress-malware-removal",
     "wordpress-speed-optimization",
     "wordpress-security",
+    "wordpress-backup-hosting-migration",
     "premium-support",
   ],
-  marketing: [
-    "seo-optimization",
-    "digital-marketing",
-    "content-writing",
-    "social-media-management",
-    "e-commerce",
-    "media-creation",
-  ],
+  marketing: ["seo-optimization"],
   hosting: [
-    "web-hosting",
-    "shared-hosting",
-    "wordpress-hosting",
-    "vps-hosting",
-    "domains",
+    "shared-hosting-basic",
+    "shared-hosting-plus",
+    "shared-hosting-business",
+    "wordpress-hosting-basic",
+    "wordpress-hosting-plus",
+    "vps-hosting-basic",
   ],
 };
 

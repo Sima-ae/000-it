@@ -190,7 +190,8 @@ export function Navigation() {
                                 {isNl ? group.titleNl : group.title}
                               </p>
                               {serviceCatalog
-                                .filter((s) => s.group === group.id && s.kind === "page")
+                                .filter((s) => s.group === group.id && s.kind === "product")
+                                .slice(0, 6)
                                 .map((item) => (
                                   <SoftLink
                                     key={item.slug}

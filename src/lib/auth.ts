@@ -15,7 +15,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   session: { strategy: "jwt" },
   trustHost: true,
   pages: {
-    signIn: "/nl/login",
+    signIn: "/login",
   },
   providers: [
     Credentials({
@@ -25,24 +25,42 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
-        const parsed = credentialsSchema.safeParse(credentials);
-        if (!parsed.success) return null;
+        try {
+          if (
+            process.env.NODE_ENV === "production" &&
+            (!process.env.AUTH_SECRET ||
+              process.env.AUTH_SECRET.includes("generate-with-openssl") ||
+              process.env.AUTH_SECRET.includes("placeholder"))
+          ) {
+            console.error("AUTH_SECRET is missing or still a placeholder in production");
+            return null;
+          }
 
-        const user = await prisma.user.findUnique({
-          where: { email: parsed.data.email.toLowerCase() },
-        });
-        if (!user?.password) return null;
+          const parsed = credentialsSchema.safeParse({
+            email: typeof credentials?.email === "string" ? credentials.email.trim() : credentials?.email,
+            password: credentials?.password,
+          });
+          if (!parsed.success) return null;
 
-        const valid = await bcrypt.compare(parsed.data.password, user.password);
-        if (!valid) return null;
+          const user = await prisma.user.findUnique({
+            where: { email: parsed.data.email.toLowerCase() },
+          });
+          if (!user?.password) return null;
 
-        return {
-          id: user.id,
-          email: user.email,
-          name: user.name,
-          image: user.image,
-          role: user.role,
-        };
+          const valid = await bcrypt.compare(parsed.data.password, user.password);
+          if (!valid) return null;
+
+          return {
+            id: user.id,
+            email: user.email,
+            name: user.name,
+            image: user.image,
+            role: user.role,
+          };
+        } catch (error) {
+          console.error("[auth] authorize failed", error);
+          return null;
+        }
       },
     }),
   ],

@@ -23,15 +23,27 @@ model User {
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
 
-  projects   Project[]
-  clients    Client[]
-  aiAgents   AIAgent[]
-  payments   Payment[]
-  scans      AIScan[]
-  sessions   Session[]
-  accounts   Account[]
-  activities Activity[]
-  contactLeads ContactLead[]
+  projects           Project[]
+  clients            Client[]
+  aiAgents           AIAgent[]
+  payments           Payment[]
+  scans              AIScan[]
+  sessions           Session[]
+  accounts           Account[]
+  activities         Activity[]
+  contactLeads       ContactLead[]         @relation("LeadSubmitter")
+  portfolioProjects  PortfolioProject[]
+  supportTickets     SupportTicket[]       @relation("TicketOwner")
+  assignedTickets    SupportTicket[]       @relation("TicketAssignee")
+  ticketMessages     TicketMessage[]
+  staffTodos         StaffTodo[]
+  crmNotes           CrmNote[]
+  invoicesCreated    Invoice[]             @relation("InvoiceCreator")
+  messagesSent       CrmMessage[]          @relation("MessageFrom")
+  messagesReceived   CrmMessage[]          @relation("MessageTo")
+  assignedLeads      ContactLead[]         @relation("LeadAssignee")
+  newsPosts          NewsPost[]
+  caseStudies        CaseStudy[]
 }
 
 model Account {
@@ -85,25 +97,114 @@ model Project {
   aiAgents    AIAgent[]
   tasks       Task[]
   activities  Activity[]
+  tickets     SupportTicket[]
+  notes       CrmNote[]
+  invoices    Invoice[]
   createdAt   DateTime      @default(now())
   updatedAt   DateTime      @updatedAt
 }
 
 model Client {
-  id        String       @id @default(cuid())
+  id         String       @id @default(cuid())
+  name       String
+  email      String
+  phone      String?
+  company    String?
+  industry   String?
+  website    String?
+  address    String?      @db.Text
+  city       String?
+  country    String?
+  vatNumber  String?
+  status     ClientStatus @default(ACTIVE)
+  isLead     Boolean      @default(false)
+  leadSource String?
+  leadStatus LeadStatus?  @default(NEW)
+  projectId  String?
+  project    Project?     @relation(fields: [projectId], references: [id], onDelete: SetNull)
+  userId     String
+  user       User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  notes      String?      @db.Text
+  contacts   CrmContact[]
+  crmNotes   CrmNote[]
+  tickets    SupportTicket[]
+  invoices   Invoice[]
+  createdAt  DateTime     @default(now())
+  updatedAt  DateTime     @updatedAt
+
+  @@index([isLead, leadStatus])
+  @@index([email])
+}
+
+model CrmContact {
+  id        String   @id @default(cuid())
+  clientId  String
+  client    Client   @relation(fields: [clientId], references: [id], onDelete: Cascade)
   name      String
-  email     String
+  email     String?
   phone     String?
-  company   String?
-  industry  String?
-  status    ClientStatus @default(ACTIVE)
-  projectId String?
-  project   Project?     @relation(fields: [projectId], references: [id], onDelete: SetNull)
+  jobTitle  String?
+  isPrimary Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([clientId])
+}
+
+model CrmNote {
+  id        String         @id @default(cuid())
+  body      String         @db.Text
   userId    String
-  user      User         @relation(fields: [userId], references: [id], onDelete: Cascade)
-  notes     String?      @db.Text
-  createdAt DateTime     @default(now())
-  updatedAt DateTime     @updatedAt
+  user      User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  clientId  String?
+  client    Client?        @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  projectId String?
+  project   Project?       @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  ticketId  String?
+  ticket    SupportTicket? @relation(fields: [ticketId], references: [id], onDelete: Cascade)
+  createdAt DateTime       @default(now())
+  updatedAt DateTime       @updatedAt
+
+  @@index([clientId])
+  @@index([projectId])
+  @@index([ticketId])
+}
+
+model Invoice {
+  id          String        @id @default(cuid())
+  number      String        @unique
+  clientId    String
+  client      Client        @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  projectId   String?
+  project     Project?      @relation(fields: [projectId], references: [id], onDelete: SetNull)
+  createdById String
+  createdBy   User          @relation("InvoiceCreator", fields: [createdById], references: [id], onDelete: Cascade)
+  status      InvoiceStatus @default(DRAFT)
+  amount      Float         @default(0)
+  currency    String        @default("EUR")
+  dueDate     DateTime?
+  items       Json?
+  notes       String?       @db.Text
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  @@index([clientId, status])
+}
+
+model CrmMessage {
+  id         String    @id @default(cuid())
+  subject    String?
+  body       String    @db.Text
+  fromUserId String
+  fromUser   User      @relation("MessageFrom", fields: [fromUserId], references: [id], onDelete: Cascade)
+  toUserId   String
+  toUser     User      @relation("MessageTo", fields: [toUserId], references: [id], onDelete: Cascade)
+  readAt     DateTime?
+  parentId   String?
+  createdAt  DateTime  @default(now())
+
+  @@index([toUserId, readAt])
+  @@index([fromUserId])
 }
 
 model AIAgent {
@@ -178,14 +279,70 @@ model Payment {
 }
 
 model ContactLead {
-  id        String   @id @default(cuid())
-  name      String
-  email     String
-  company   String?
-  message   String   @db.Text
-  userId    String?
-  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
-  createdAt DateTime @default(now())
+  id                String     @id @default(cuid())
+  name              String
+  email             String
+  company           String?
+  message           String     @db.Text
+  status            LeadStatus @default(NEW)
+  source            String?    @default("CONTACT_FORM")
+  assignedToId      String?
+  assignedTo        User?      @relation("LeadAssignee", fields: [assignedToId], references: [id], onDelete: SetNull)
+  convertedClientId String?
+  userId            String?
+  user              User?      @relation("LeadSubmitter", fields: [userId], references: [id], onDelete: SetNull)
+  createdAt         DateTime   @default(now())
+  updatedAt         DateTime   @updatedAt
+
+  @@index([status])
+  @@index([assignedToId])
+}
+
+/// Marketing news / nieuws articles (DB source of truth)
+model NewsPost {
+  id          String   @id
+  title       String
+  excerpt     String   @db.Text
+  date        String
+  coverImage  String?
+  description String   @db.LongText
+  author      String
+  projectUrl  String?
+  industry    String?
+  tags        Json?
+  published   Boolean  @default(true)
+  createdById String?
+  createdBy   User?    @relation(fields: [createdById], references: [id], onDelete: SetNull)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([published, date])
+  @@index([createdById])
+}
+
+/// Marketing case studies (DB source of truth)
+model CaseStudy {
+  id           String   @id
+  title        String
+  industry     String
+  metric       String
+  summary      String   @db.Text
+  description  String   @db.LongText
+  clientName   String
+  projectUrl   String?
+  coverImage   String?
+  gallery      Json?
+  year         Int?
+  tags         Json?
+  technologies Json?
+  published    Boolean  @default(true)
+  createdById  String?
+  createdBy    User?    @relation(fields: [createdById], references: [id], onDelete: SetNull)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([published, year])
+  @@index([createdById])
 }
 
 /// Public marketing portfolio items (not CRM "Project")
@@ -207,16 +364,106 @@ model PortfolioProject {
   featured     Boolean  @default(false)
   published    Boolean  @default(true)
   sortOrder    Int      @default(0)
+  createdById  String?
+  createdBy    User?    @relation(fields: [createdById], references: [id], onDelete: SetNull)
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 
   @@index([published, sortOrder])
+  @@index([createdById])
+}
+
+/// Support / live-chat tickets (synced with CRM clients & projects)
+model SupportTicket {
+  id           String         @id @default(cuid())
+  subject      String
+  status       TicketStatus   @default(OPEN)
+  priority     TicketPriority @default(MEDIUM)
+  source       TicketSource   @default(CHAT)
+  ticketType   String?        @default("General")
+  userId       String?
+  user         User?          @relation("TicketOwner", fields: [userId], references: [id], onDelete: SetNull)
+  clientId     String?
+  client       Client?        @relation(fields: [clientId], references: [id], onDelete: SetNull)
+  projectId    String?
+  project      Project?       @relation(fields: [projectId], references: [id], onDelete: SetNull)
+  guestName    String?
+  guestEmail   String?
+  guestToken   String?        @unique
+  assignedToId String?
+  assignedTo   User?          @relation("TicketAssignee", fields: [assignedToId], references: [id], onDelete: SetNull)
+  messages     TicketMessage[]
+  notes        CrmNote[]
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+
+  @@index([status, updatedAt])
+  @@index([userId])
+  @@index([clientId])
+  @@index([projectId])
+  @@index([assignedToId])
+}
+
+model TicketMessage {
+  id         String              @id @default(cuid())
+  ticketId   String
+  ticket     SupportTicket       @relation(fields: [ticketId], references: [id], onDelete: Cascade)
+  body       String              @db.Text
+  senderId   String?
+  sender     User?               @relation(fields: [senderId], references: [id], onDelete: SetNull)
+  senderKind TicketMessageSender @default(GUEST)
+  createdAt  DateTime            @default(now())
+
+  @@index([ticketId, createdAt])
+}
+
+/// Internal staff to-dos — never public, never shown to clients
+model StaffTodo {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title     String
+  done      Boolean  @default(false)
+  sortOrder Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId, done, sortOrder])
 }
 
 enum Role {
+  SUPER_ADMIN
   ADMIN
   MANAGER
   CLIENT
+}
+
+enum TicketStatus {
+  OPEN
+  IN_PROGRESS
+  WAITING
+  RESOLVED
+  CLOSED
+}
+
+enum TicketPriority {
+  LOW
+  MEDIUM
+  HIGH
+  URGENT
+}
+
+enum TicketSource {
+  CHAT
+  DASHBOARD
+  EMAIL
+}
+
+enum TicketMessageSender {
+  GUEST
+  CLIENT
+  STAFF
+  SYSTEM
 }
 
 enum ProjectStatus {
@@ -243,6 +490,23 @@ enum ClientStatus {
   INACTIVE
   LEAD
   LOST
+}
+
+enum LeadStatus {
+  NEW
+  CONTACTED
+  QUALIFIED
+  PROPOSAL
+  WON
+  LOST
+}
+
+enum InvoiceStatus {
+  DRAFT
+  SENT
+  PAID
+  OVERDUE
+  CANCELLED
 }
 
 enum AgentType {

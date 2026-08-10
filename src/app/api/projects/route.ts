@@ -3,6 +3,7 @@ import { z } from "zod";
 import { prisma } from "@/lib/prisma";
 import { requireUser } from "@/lib/api-auth";
 import type { ProjectType } from "@prisma/client";
+import { ownScope } from "@/lib/roles";
 
 const createSchema = z.object({
   name: z.string().min(2),
@@ -25,8 +26,10 @@ export async function GET() {
   const { session, error } = await requireUser();
   if (error) return error;
 
+  const where = ownScope(session.user.role, session.user.id);
+
   const projects = await prisma.project.findMany({
-    where: { userId: session.user.id },
+    where,
     orderBy: { updatedAt: "desc" },
     include: { _count: { select: { tasks: true, clients: true } } },
   });

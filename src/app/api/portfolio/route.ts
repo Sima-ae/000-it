@@ -8,7 +8,7 @@ export async function GET(request: Request) {
   const all = searchParams.get("all") === "1";
 
   if (all) {
-    const authResult = await requireRole(["ADMIN", "MANAGER"]);
+    const authResult = await requireRole(["SUPER_ADMIN", "ADMIN", "MANAGER"]);
     if (authResult.error) return authResult.error;
     const items = await prisma.portfolioProject.findMany({
       orderBy: [{ sortOrder: "asc" }, { createdAt: "desc" }],
@@ -24,7 +24,7 @@ export async function GET(request: Request) {
 }
 
 export async function POST(request: Request) {
-  const authResult = await requireRole(["ADMIN", "MANAGER"]);
+  const authResult = await requireRole(["SUPER_ADMIN", "ADMIN", "MANAGER"]);
   if (authResult.error) return authResult.error;
 
   const body = await request.json();
@@ -61,6 +61,7 @@ export async function POST(request: Request) {
       featured: data.featured ?? false,
       published: data.published ?? true,
       sortOrder: data.sortOrder ?? 0,
+      createdById: authResult.session.user.id,
     },
   });
 

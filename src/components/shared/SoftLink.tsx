@@ -8,7 +8,7 @@ import { useNavigationProgress } from "@/hooks/useNavigationProgress";
 type SoftLinkProps = ComponentProps<typeof Link>;
 
 export const SoftLink = forwardRef<HTMLAnchorElement, SoftLinkProps>(
-  function SoftLink({ href, onClick, className, children, ...props }, ref) {
+  function SoftLink({ href, onClick, className, children, prefetch, ...props }, ref) {
     const pathname = usePathname();
     const start = useNavigationProgress((s) => s.start);
     const target = typeof href === "string" ? href.split("?")[0] : href.pathname || "";
@@ -27,8 +27,7 @@ export const SoftLink = forwardRef<HTMLAnchorElement, SoftLinkProps>(
       <Link
         ref={ref}
         href={href}
-        prefetch
-        scroll
+        prefetch={prefetch ?? null}
         className={className}
         onClick={handleClick}
         {...props}

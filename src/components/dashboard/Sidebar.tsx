@@ -2,6 +2,7 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
+import { useSession, signOut } from "next-auth/react";
 import {
   LayoutDashboard,
   FolderKanban,
@@ -11,26 +12,46 @@ import {
   Wand2,
   Settings,
   Images,
+  Newspaper,
+  BriefcaseBusiness,
+  Inbox,
+  Shield,
+  LogOut,
+  Ticket,
+  CheckSquare,
+  Building2,
 } from "lucide-react";
 import { ThemeToggle } from "@/components/shared/ThemeToggle";
 import { SoftLink } from "@/components/shared/SoftLink";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { navForRole } from "@/lib/roles";
 
-const items = [
-  { href: "/dashboard", key: "title", icon: LayoutDashboard },
-  { href: "/portfolio-admin", key: "portfolio", icon: Images },
-  { href: "/projects", key: "projects", icon: FolderKanban },
-  { href: "/clients", key: "clients", icon: Users },
-  { href: "/ai-agents", key: "agents", icon: Bot },
-  { href: "/seo-analysis", key: "seo", icon: Search },
-  { href: "/content-generator", key: "content", icon: Wand2 },
-  { href: "/settings", key: "settings", icon: Settings },
-] as const;
+const icons: Record<string, React.ComponentType<{ className?: string }>> = {
+  "/dashboard": LayoutDashboard,
+  "/crm": Building2,
+  "/portfolio-admin": Images,
+  "/nieuws-admin": Newspaper,
+  "/case-studies-admin": BriefcaseBusiness,
+  "/leads": Inbox,
+  "/tickets": Ticket,
+  "/todos": CheckSquare,
+  "/users": Shield,
+  "/projects": FolderKanban,
+  "/clients": Users,
+  "/ai-agents": Bot,
+  "/seo-analysis": Search,
+  "/content-generator": Wand2,
+  "/settings": Settings,
+};
 
 export function Sidebar() {
   const t = useTranslations("dashboard");
   const locale = useLocale();
   const pathname = usePathname();
+  const { data: session } = useSession();
+  const role = session?.user?.role;
+  const items = navForRole(role);
 
   return (
     <aside className="w-full p-3 md:sticky md:top-3 md:h-[calc(100svh-1.5rem)] md:w-72 md:self-start md:p-3">
@@ -43,11 +64,21 @@ export function Sidebar() {
           </SoftLink>
           <ThemeToggle />
         </div>
+
+        {session?.user ? (
+          <div className="mb-4 rounded-2xl border border-border/70 bg-muted/30 px-3 py-2.5">
+            <p className="truncate text-sm font-medium">{session.user.name || session.user.email}</p>
+            <p className="text-[11px] uppercase tracking-wide text-muted-foreground">
+              {String(role || "CLIENT").replace("_", " ")}
+            </p>
+          </div>
+        ) : null}
+
         <nav className="flex gap-1 overflow-x-auto md:flex-1 md:flex-col md:overflow-visible">
           {items.map((item) => {
             const href = `/${locale}${item.href}`;
             const active = pathname === href || pathname.startsWith(`${href}/`);
-            const Icon = item.icon;
+            const Icon = icons[item.href] || LayoutDashboard;
             return (
               <SoftLink
                 key={item.href}
@@ -63,6 +94,15 @@ export function Sidebar() {
             );
           })}
         </nav>
+
+        <Button
+          variant="ghost"
+          className="mt-3 justify-start gap-2 text-muted-foreground"
+          onClick={() => signOut({ callbackUrl: `/${locale}/login` })}
+        >
+          <LogOut className="h-4 w-4" />
+          {t("logout")}
+        </Button>
       </div>
     </aside>
   );

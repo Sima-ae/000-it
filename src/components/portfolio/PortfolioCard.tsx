@@ -1,9 +1,9 @@
+"use client";
+
 import Image from "next/image";
-import { SoftLink } from "@/components/shared/SoftLink";
 import { Badge } from "@/components/ui/badge";
 
 type PortfolioCardProps = {
-  locale: string;
   item: {
     slug: string;
     title: string;
@@ -15,6 +15,7 @@ type PortfolioCardProps = {
     featured: boolean;
     tags?: unknown;
   };
+  onOpen?: () => void;
 };
 
 function tagsOf(value: unknown): string[] {
@@ -22,13 +23,14 @@ function tagsOf(value: unknown): string[] {
   return value.map(String).slice(0, 3);
 }
 
-export function PortfolioCard({ locale, item }: PortfolioCardProps) {
+export function PortfolioCard({ item, onOpen }: PortfolioCardProps) {
   const tags = tagsOf(item.tags);
 
   return (
-    <SoftLink
-      href={`/${locale}/portfolio/${item.slug}`}
-      className="group relative flex aspect-4/5 flex-col overflow-hidden border border-border bg-card transition hover:border-primary/40"
+    <button
+      type="button"
+      onClick={onOpen}
+      className="group relative flex aspect-4/5 w-full flex-col overflow-hidden border-0 bg-card text-left transition hover:ring-2 hover:ring-inset hover:ring-primary/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60"
     >
       <div className="relative min-h-0 flex-1 bg-muted">
         {item.coverImage ? (
@@ -72,6 +74,6 @@ export function PortfolioCard({ locale, item }: PortfolioCardProps) {
           )}
         </div>
       </div>
-    </SoftLink>
+    </button>
   );
 }

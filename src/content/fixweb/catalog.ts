@@ -89,7 +89,7 @@ export const serviceCatalog: ServiceNavItem[] = [
     slug: "seo-optimization",
     title: "SEO Optimization",
     titleNl: "SEO Optimalisatie",
-    kind: "page",
+    kind: "product",
     group: "marketing",
   },
   {

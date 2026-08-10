@@ -12,7 +12,7 @@ const ALLOWED = new Set([
 ]);
 
 export async function POST(request: Request) {
-  const authResult = await requireRole(["ADMIN", "MANAGER"]);
+  const authResult = await requireRole(["SUPER_ADMIN", "ADMIN", "MANAGER"]);
   if (authResult.error) return authResult.error;
 
   const form = await request.formData();

@@ -11,86 +11,94 @@ export function Footer() {
   const isNl = locale === "nl";
   const year = new Date().getFullYear();
 
-  const quickServices = serviceCatalog
-    .filter((s) =>
-      [
-        "wordpress-support",
-        "seo-optimization",
-        "digital-marketing",
-        "web-hosting",
-        "wordpress-hosting",
-        "domains",
-      ].includes(s.slug),
-    );
+  const quickServices = serviceCatalog.filter((s) =>
+    [
+      "wordpress-support",
+      "seo-optimization",
+      "digital-marketing",
+      "web-hosting",
+      "wordpress-hosting",
+      "domains",
+    ].includes(s.slug),
+  );
 
   return (
-    <footer className="relative mt-20 border-t border-border/50">
-      <div className="mx-auto max-w-6xl px-4 py-14 md:px-6">
-        <div className="glass grid gap-10 rounded-4xl p-8 md:grid-cols-4 md:p-10">
-          <div className="md:col-span-1">
-            <p className="font-display text-2xl font-semibold tracking-tight text-foreground">
-              TripleZero iT
-            </p>
-            <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              {t("tagline")}
-            </p>
-          </div>
-
-          <div className="flex flex-col gap-2.5 text-sm text-muted-foreground">
-            <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-foreground">
-              {nav("services")}
-            </p>
-            {quickServices.map((item) => (
-              <SoftLink
-                key={item.slug}
-                href={`/${locale}/diensten/${item.slug}`}
-                className="transition hover:text-foreground"
+    <footer className="relative mt-16 border-t border-border/40">
+      <div className="mx-auto max-w-6xl px-4 py-8 md:px-6 md:py-10">
+        <div className="glass overflow-hidden rounded-3xl">
+          <div className="grid gap-8 px-6 py-7 sm:grid-cols-2 md:grid-cols-4 md:gap-6 md:px-8 md:py-8">
+            <div>
+              <p className="font-display text-lg font-semibold tracking-tight text-foreground">
+                TripleZero iT
+              </p>
+              <p className="mt-2 max-w-[16rem] text-sm leading-snug text-muted-foreground">
+                {t("tagline")}
+              </p>
+              <a
+                href="mailto:info@000-it.com"
+                className="mt-4 inline-block text-sm font-medium text-foreground transition hover:text-primary"
               >
-                {isNl ? item.titleNl : item.title}
+                info@000-it.com
+              </a>
+            </div>
+
+            <div className="flex flex-col gap-1.5 text-sm text-muted-foreground">
+              <p className="mb-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-foreground">
+                {nav("services")}
+              </p>
+              {quickServices.map((item) => (
+                <SoftLink
+                  key={item.slug}
+                  href={`/${locale}/diensten/${item.slug}`}
+                  className="leading-snug transition hover:text-foreground"
+                >
+                  {isNl ? item.titleNl : item.title}
+                </SoftLink>
+              ))}
+            </div>
+
+            <div className="flex flex-col gap-1.5 text-sm text-muted-foreground">
+              <p className="mb-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-foreground">
+                {isNl ? "Bedrijf" : "Company"}
+              </p>
+              <SoftLink href={`/${locale}/over-ons`} className="leading-snug transition hover:text-foreground">
+                {nav("about")}
               </SoftLink>
-            ))}
-          </div>
+              <SoftLink href={`/${locale}/portfolio`} className="leading-snug transition hover:text-foreground">
+                {nav("portfolio")}
+              </SoftLink>
+              <SoftLink href={`/${locale}/faq`} className="leading-snug transition hover:text-foreground">
+                {nav("faq")}
+              </SoftLink>
+              <SoftLink href={`/${locale}/afspraak`} className="leading-snug transition hover:text-foreground">
+                {nav("book")}
+              </SoftLink>
+              <SoftLink href={`/${locale}/contact`} className="leading-snug transition hover:text-foreground">
+                {nav("contact")}
+              </SoftLink>
+            </div>
 
-          <div className="flex flex-col gap-2.5 text-sm text-muted-foreground">
-            <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-foreground">
-              {isNl ? "Bedrijf" : "Company"}
-            </p>
-            <SoftLink href={`/${locale}/over-ons`} className="transition hover:text-foreground">
-              {nav("about")}
-            </SoftLink>
-            <SoftLink href={`/${locale}/portfolio`} className="transition hover:text-foreground">
-              {nav("portfolio")}
-            </SoftLink>
-            <SoftLink href={`/${locale}/faq`} className="transition hover:text-foreground">
-              {nav("faq")}
-            </SoftLink>
-            <SoftLink href={`/${locale}/afspraak`} className="transition hover:text-foreground">
-              {nav("book")}
-            </SoftLink>
-            <SoftLink href={`/${locale}/contact`} className="transition hover:text-foreground">
-              {nav("contact")}
-            </SoftLink>
-          </div>
-
-          <div className="text-sm text-muted-foreground">
-            <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-foreground">
-              {isNl ? "Juridisch" : "Legal"}
-            </p>
-            <div className="flex flex-col gap-2.5">
+            <div className="flex flex-col gap-1.5 text-sm text-muted-foreground">
+              <p className="mb-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-foreground">
+                {isNl ? "Juridisch" : "Legal"}
+              </p>
               {legalPages.map((page) => (
                 <SoftLink
                   key={page.href}
                   href={`/${locale}${page.href}`}
-                  className="transition hover:text-foreground"
+                  className="leading-snug transition hover:text-foreground"
                 >
                   {isNl ? page.titleNl : page.title}
                 </SoftLink>
               ))}
             </div>
-            <p className="mt-6 font-medium text-foreground">info@000-it.com</p>
-            <p className="mt-2 text-xs leading-relaxed">
-              © {year} TripleZero iT. {t("rights")}
+          </div>
+
+          <div className="border-t border-border/60 px-6 py-4 text-center md:px-8">
+            <p className="text-sm font-medium tracking-tight text-foreground">
+              TripleZero iT © {year}
             </p>
+            <p className="mt-0.5 text-xs text-muted-foreground">{t("rights")}</p>
           </div>
         </div>
       </div>
