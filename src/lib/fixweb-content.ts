@@ -23,13 +23,17 @@ const pages = (importedPages as { pages: Record<string, ImportedPage> }).pages;
 const products = (importedProducts as { products: ImportedProduct[] }).products;
 const imageMap = localImages as Record<string, string | null>;
 
-function brandify(text: string) {
+/** Strip legacy Fix-Web branding from imported content. */
+export function brandify(text: string) {
   return text
+    .replace(/info@fix-web\.com/gi, "info@000-it.com")
+    .replace(/https?:\/\/(www\.)?fix-web\.com/gi, "https://000-it.com")
+    .replace(/(www\.)?fix-web\.com/gi, "000-it.com")
+    .replace(/FIX-WEB\.shop/gi, "TripleZero iT")
     .replace(/Fix-Web\.site/gi, "TripleZero iT")
-    .replace(/FIX-WEB\.com/gi, "000-it.com")
-    .replace(/fix-web\.com/gi, "000-it.com")
-    .replace(/Fix-Web/gi, "TripleZero iT")
-    .replace(/https:\/\/000-it\.com/gi, "https://000-it.com");
+    .replace(/FIX-WEB\.SITE/gi, "TripleZero iT")
+    .replace(/Fix[\s-]?Web/gi, "TripleZero iT")
+    .replace(/FIX[\s-]?WEB/gi, "TripleZero iT");
 }
 
 export type ContentBlock =
@@ -50,7 +54,7 @@ export function textToBlocks(raw: string): ContentBlock[] {
     if (bulletLines.length >= 2 && bulletLines.length === lines.length) {
       blocks.push({
         type: "list",
-        items: bulletLines.map((l) => l.replace(/^[-–•]\s+/, "")),
+        items: bulletLines.map((l) => brandify(l.replace(/^[-–•]\s+/, ""))),
       });
       continue;
     }
@@ -61,26 +65,25 @@ export function textToBlocks(raw: string): ContentBlock[] {
         line.length < 80 &&
         !/[.!?]$/.test(line) &&
         (/^[A-Z0-9]/.test(line) || line.split(" ").length <= 8);
-      blocks.push({ type: isHeading ? "heading" : "paragraph", text: line });
+      blocks.push({ type: isHeading ? "heading" : "paragraph", text: brandify(line) });
       continue;
     }
 
-    // Mixed chunk: first line heading-ish, rest body/bullets
     const [first, ...rest] = lines;
     if (first.length < 70 && !/[.!?]$/.test(first)) {
-      blocks.push({ type: "heading", text: first });
+      blocks.push({ type: "heading", text: brandify(first) });
     } else {
-      blocks.push({ type: "paragraph", text: first });
+      blocks.push({ type: "paragraph", text: brandify(first) });
     }
 
     const restBullets = rest.filter((l) => /^[-–•]\s+/.test(l));
     if (restBullets.length && restBullets.length === rest.length) {
       blocks.push({
         type: "list",
-        items: restBullets.map((l) => l.replace(/^[-–•]\s+/, "")),
+        items: restBullets.map((l) => brandify(l.replace(/^[-–•]\s+/, ""))),
       });
     } else if (rest.length) {
-      blocks.push({ type: "paragraph", text: rest.join(" ") });
+      blocks.push({ type: "paragraph", text: brandify(rest.join(" ")) });
     }
   }
 

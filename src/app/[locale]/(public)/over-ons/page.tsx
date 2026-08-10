@@ -54,8 +54,8 @@ export default async function AboutPage({
         </h1>
         <p className="mt-4 max-w-2xl text-muted-foreground md:text-lg">
           {locale === "nl"
-            ? "TripleZero iT combineert AI-gedreven groei met de volledige Fix-Web dienstverlening: WordPress support, hosting, SEO, marketing en meer."
-            : "TripleZero iT combines AI-driven growth with the full Fix-Web service stack: WordPress support, hosting, SEO, marketing and more."}
+            ? "TripleZero iT combineert AI-gedreven groei met WordPress support, hosting, SEO, marketing en meer."
+            : "TripleZero iT combines AI-driven growth with WordPress support, hosting, SEO, marketing and more."}
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <Button asChild className="rounded-2xl">

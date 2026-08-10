@@ -22,8 +22,8 @@ export default async function AppointmentPage({
         </h1>
         <p className="mt-4 text-muted-foreground md:text-lg">
           {isNl
-            ? "Boek een specialist online. We helpen je WordPress-site, hosting, SEO of groeiplan binnen 12 uur op orde te krijgen — net als op onze vorige Fix-Web dienstverlening, nu via TripleZero iT."
-            : "Book a specialist online. We get your WordPress site, hosting, SEO or growth plan running smoothly — the same Fix-Web service depth, now via TripleZero iT."}
+            ? "Boek een specialist online. We helpen je WordPress-site, hosting, SEO of groeiplan binnen 24 uur op orde te krijgen."
+            : "Book a specialist online. We get your WordPress site, hosting, SEO or growth plan running smoothly within 24 hours."}
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Button asChild variant="outline" className="rounded-2xl">

@@ -8,7 +8,7 @@ export type ServiceNavItem = {
   summaryNl?: string;
 };
 
-/** Full Fix-Web service/page inventory mapped into TripleZero routes under /diensten/[slug] */
+/** Service/page inventory mapped into TripleZero routes under /diensten/[slug] */
 export const serviceCatalog: ServiceNavItem[] = [
   // WordPress & Support (pages + products)
   {

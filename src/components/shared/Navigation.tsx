@@ -63,7 +63,7 @@ export function Navigation() {
             href={`/${locale}`}
             className="font-display shrink-0 text-base font-semibold tracking-tight md:text-lg"
           >
-            <span className="bg-linear-to-r from-primary via-[#8b5a3c] to-accent bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-primary via-[#7a5aa8] to-accent bg-clip-text text-transparent">
               TripleZero iT
             </span>
           </SoftLink>
