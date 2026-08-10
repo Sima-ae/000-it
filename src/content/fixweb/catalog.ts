@@ -377,7 +377,7 @@ export const serviceCatalog: ServiceNavItem[] = [
   {
     slug: "media-creation",
     title: "Media Creation",
-    titleNl: "Media creation",
+    titleNl: "Media Creatie",
     kind: "page",
     group: "marketing",
     summary: "Visuals, video snippets and creative assets for campaigns.",

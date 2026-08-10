@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 import { prisma } from "@/lib/prisma";
 import { auth } from "@/lib/auth";
+import { requireRole } from "@/lib/api-auth";
+import { canDelete } from "@/lib/roles";
 
 const schema = z.object({
   url: z.string().url(),
@@ -75,4 +77,16 @@ export async function GET() {
     take: 20,
   });
   return NextResponse.json(scans);
+}
+
+/** SUPER_ADMIN only — delete every scan in the system */
+export async function DELETE() {
+  const authResult = await requireRole(["SUPER_ADMIN"]);
+  if (authResult.error) return authResult.error;
+  if (!canDelete(authResult.session.user.role)) {
+    return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+  }
+
+  const result = await prisma.aIScan.deleteMany({});
+  return NextResponse.json({ ok: true, deleted: result.count });
 }

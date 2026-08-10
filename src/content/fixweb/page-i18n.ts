@@ -324,7 +324,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
 
   "media-creation": {
     nl: {
-      title: "Media Creation",
+      title: "Media Creatie",
       subtitle:
         "Professionele media voor een sterkere merkuitstraling: van visuals en banners tot video en audio die uw boodschap laten landen.",
       blocks: [

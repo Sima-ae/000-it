@@ -3,9 +3,8 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { auth } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { canEditAny } from "@/lib/roles";
+import { canDelete, canEditAny } from "@/lib/roles";
+import { SeoScansPanel } from "@/components/dashboard/SeoScansPanel";
 
 export const dynamic = "force-dynamic";
 
@@ -25,6 +24,7 @@ export default async function SeoAnalysisPage({
   const t = await getTranslations("dashboard");
   const session = await auth();
   const adminView = canEditAny(session?.user?.role);
+  const canManage = canDelete(session?.user?.role);
 
   const scans = session?.user?.id
     ? await prisma.aIScan.findMany({
@@ -33,6 +33,17 @@ export default async function SeoAnalysisPage({
         take: adminView ? 25 : 10,
       })
     : [];
+
+  const rows = scans.map((scan) => ({
+    id: scan.id,
+    url: scan.url,
+    company: scan.company,
+    status: scan.status,
+    createdAt: scan.createdAt.toISOString(),
+    aeo: scoreFromResults(scan.results, "aeo"),
+    geo: scoreFromResults(scan.results, "geo"),
+    seo: scoreFromResults(scan.results, "seo"),
+  }));
 
   return (
     <div className="space-y-6">
@@ -54,45 +65,7 @@ export default async function SeoAnalysisPage({
         </Button>
       </div>
 
-      <Card>
-        <CardHeader>
-          <CardTitle>{locale === "nl" ? "Recente scans" : "Recent scans"}</CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-3">
-          {!scans.length && (
-            <p className="text-muted-foreground">
-              {locale === "nl"
-                ? "Nog geen scans. Start met een gratis AI scan voor AEO, GEO (lokaal) en SEO scores."
-                : "No scans yet. Start with a free AI scan to generate AEO, GEO (local) and SEO scores."}
-            </p>
-          )}
-          {scans.map((scan) => {
-            const aeo = scoreFromResults(scan.results, "aeo");
-            const geo = scoreFromResults(scan.results, "geo");
-            const seo = scoreFromResults(scan.results, "seo");
-            return (
-              <div
-                key={scan.id}
-                className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-border p-3"
-              >
-                <div>
-                  <p className="font-medium">{scan.url}</p>
-                  <p className="text-xs text-muted-foreground">
-                    {scan.company ? `${scan.company} · ` : ""}
-                    {new Date(scan.createdAt).toLocaleString()}
-                  </p>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">{scan.status}</Badge>
-                  {aeo !== null ? <Badge variant="secondary">AEO {aeo}</Badge> : null}
-                  {geo !== null ? <Badge variant="outline">GEO {geo}</Badge> : null}
-                  {seo !== null ? <Badge variant="secondary">SEO {seo}</Badge> : null}
-                </div>
-              </div>
-            );
-          })}
-        </CardContent>
-      </Card>
+      <SeoScansPanel locale={locale} canManage={canManage} initialScans={rows} />
     </div>
   );
 }

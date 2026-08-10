@@ -17,12 +17,11 @@ import { cn } from "@/lib/utils";
 const primaryLinks = [
   { href: "", key: "home" },
   { href: "/over-ons", key: "info", info: true },
+  { href: "/nieuws", key: "blog" },
   { href: "/ai-scan", key: "aiScan" },
   { href: "/diensten", key: "services", mega: true },
   { href: "/portfolio", key: "portfolio" },
   // { href: "/case-studies", key: "cases" },
-  { href: "/nieuws", key: "blog" },
-  { href: "/faq", key: "faq" },
   { href: "/contact", key: "contact" },
 ] as const;
 
@@ -89,16 +88,21 @@ export function Navigation() {
               }
 
               if ("info" in link && link.info) {
+                const infoActive =
+                  active ||
+                  pathname === `/${locale}/faq` ||
+                  pathname.startsWith(`/${locale}/faq/`);
                 return (
                   <InfoDropdown
                     key={link.key}
                     locale={locale}
                     label={t("info")}
                     aboutLabel={t("about")}
+                    faqLabel={t("faq")}
                     termsLabel={t("terms")}
                     cookiesLabel={t("cookies")}
                     privacyLabel={t("privacy")}
-                    active={active}
+                    active={infoActive}
                   />
                 );
               }
@@ -243,13 +247,17 @@ export function Navigation() {
                 }
 
                 if ("info" in link && link.info) {
+                  const infoActive =
+                    active ||
+                    pathname === `/${locale}/faq` ||
+                    pathname.startsWith(`/${locale}/faq/`);
                   return (
                     <div key={link.key}>
                       <button
                         type="button"
                         className={cn(
                           "flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-left text-sm text-muted-foreground hover:bg-muted/70 hover:text-foreground",
-                          active && "bg-primary/10 text-foreground",
+                          infoActive && "bg-primary/10 text-foreground",
                         )}
                         onClick={() => setMobileInfoOpen((v) => !v)}
                       >
@@ -263,6 +271,12 @@ export function Navigation() {
                             className="block py-1.5 text-sm text-muted-foreground hover:text-foreground"
                           >
                             {t("about")}
+                          </SoftLink>
+                          <SoftLink
+                            href={`/${locale}/faq`}
+                            className="block py-1.5 text-sm text-muted-foreground hover:text-foreground"
+                          >
+                            {t("faq")}
                           </SoftLink>
                           <SoftLink
                             href={`/${locale}/voorwaarden`}

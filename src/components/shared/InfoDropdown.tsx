@@ -18,6 +18,7 @@ export function InfoDropdown({
   locale,
   label,
   aboutLabel,
+  faqLabel,
   termsLabel,
   cookiesLabel,
   privacyLabel,
@@ -26,6 +27,7 @@ export function InfoDropdown({
   locale: string;
   label: string;
   aboutLabel: string;
+  faqLabel: string;
   termsLabel: string;
   cookiesLabel: string;
   privacyLabel: string;
@@ -55,6 +57,8 @@ export function InfoDropdown({
 
   const aboutHref = `/${locale}/over-ons`;
   const aboutActive = pathname === aboutHref || pathname.startsWith(`${aboutHref}/`);
+  const faqHref = `/${locale}/faq`;
+  const faqActive = pathname === faqHref || pathname.startsWith(`${faqHref}/`);
 
   const legalLabels = {
     terms: termsLabel,
@@ -101,6 +105,13 @@ export function InfoDropdown({
               onClick={() => setOpen(false)}
             >
               {aboutLabel}
+            </SoftLink>
+            <SoftLink
+              href={faqHref}
+              className={cn(itemClass, faqActive && "bg-primary/10 text-foreground")}
+              onClick={() => setOpen(false)}
+            >
+              {faqLabel}
             </SoftLink>
             {legalLinks.map((item) => (
               <SoftLink
