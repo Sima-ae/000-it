@@ -1,17 +1,21 @@
-import Link from "next/link";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { SoftLink } from "@/components/shared/SoftLink";
 import { GlassCard } from "@/components/marketing/GlassCard";
 import { AnimatedCounter } from "@/components/marketing/AnimatedCounter";
+import { HeroVisual } from "@/components/marketing/HeroVisual";
+import { Reveal } from "@/components/marketing/Reveal";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Sparkles, Zap } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { getAiScanCount } from "@/lib/ai-scan-count";
 
-const serviceKeys = ["ai", "seo", "web", "content", "ads", "software"] as const;
+const serviceKeys = ["ai", "web", "ads", "content", "seo", "software"] as const;
 
 export default async function HomePage({
   params,
@@ -26,118 +30,207 @@ export default async function HomePage({
   const pricing = await getTranslations("pricing");
   const faq = await getTranslations("faq");
 
+  const scanCount = getAiScanCount();
+
+  const plans = [
+    {
+      name: pricing("starter"),
+      price: "€499",
+      features: ["AI-Scan", "SEO basics", "1 agent"],
+      featured: false,
+    },
+    {
+      name: pricing("growth"),
+      price: "€999",
+      features: ["Full stack", "5 agents", "Content + Ads"],
+      featured: true,
+    },
+    {
+      name: pricing("enterprise"),
+      price: pricing("custom"),
+      features: ["Custom agents", "SLA", "API access"],
+      featured: false,
+    },
+  ];
+
   return (
-    <div>
-      <section className="relative mx-auto max-w-6xl px-4 pb-20 pt-16 md:px-6 md:pt-24">
-        <div className="absolute inset-0 -z-10 overflow-hidden">
-          <div className="absolute left-1/4 top-10 h-64 w-64 animate-pulse rounded-full bg-primary/20 blur-3xl" />
-          <div className="absolute right-10 top-32 h-56 w-56 animate-pulse rounded-full bg-secondary/20 blur-3xl [animation-delay:1s]" />
-        </div>
-
-        <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-muted/40 px-3 py-1 text-xs text-accent">
-          <Sparkles className="h-3.5 w-3.5" />
-          TripleZero iT
-        </p>
-        <h1 className="max-w-3xl text-4xl font-semibold tracking-tight md:text-6xl">
-          {hero("title")}
-        </h1>
-        <p className="mt-5 max-w-2xl text-lg text-muted-foreground">{hero("subtitle")}</p>
-        <div className="mt-8 flex flex-wrap gap-3">
-          <Button asChild size="lg">
-            <Link href={`/${locale}/ai-scan`}>{hero("ctaScan")}</Link>
-          </Button>
-          <Button asChild size="lg" variant="outline">
-            <Link href={`/${locale}/diensten`}>{hero("ctaApproach")}</Link>
-          </Button>
-        </div>
-        <p className="mt-8 text-sm text-muted-foreground">
-          <span className="mr-2 text-2xl font-semibold text-accent">
-            <AnimatedCounter value={1284} />
-          </span>
-          {hero("scansLabel")}
-        </p>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-4 py-12 md:px-6">
-        <div className="mb-8 flex items-end justify-between gap-4">
-          <div>
-            <h2 className="text-2xl font-semibold md:text-3xl">{services("title")}</h2>
-            <p className="mt-2 text-muted-foreground">{services("subtitle")}</p>
-          </div>
-        </div>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {serviceKeys.map((key) => (
-            <GlassCard key={key}>
-              <div className="mb-3 inline-flex rounded-lg bg-primary/15 p-2 text-primary">
-                <Zap className="h-4 w-4" />
-              </div>
-              <h3 className="text-lg font-medium">{services(`items.${key}.title`)}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">
-                {services(`items.${key}.desc`)}
+    <div className="overflow-x-hidden">
+      <section className="relative bg-transparent">
+        <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 pb-4 pt-8 md:px-6 md:pb-6 md:pt-10 lg:grid-cols-2 lg:gap-10">
+          <div className="max-w-xl">
+            <h1 className="font-display text-2xl font-semibold leading-[1.15] tracking-tight text-foreground sm:text-3xl md:text-4xl lg:text-5xl">
+              {hero("title")}
+            </h1>
+            <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
+              {hero("subtitle")}
+            </p>
+            <div className="mt-8 space-y-3">
+              <p className="font-display text-xl font-semibold tracking-tight text-foreground md:text-2xl">
+                {hero("ctaScanTitle")}
               </p>
-            </GlassCard>
-          ))}
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-4 py-12 md:px-6">
-        <h2 className="text-2xl font-semibold md:text-3xl">{pricing("title")}</h2>
-        <p className="mt-2 text-muted-foreground">{pricing("subtitle")}</p>
-        <div className="mt-8 grid gap-4 md:grid-cols-3">
-          {[
-            { name: pricing("starter"), price: "€499", features: ["AI-Scan", "SEO basics", "1 agent"] },
-            { name: pricing("growth"), price: "€999", features: ["Full stack", "5 agents", "Content + Ads"] },
-            { name: pricing("enterprise"), price: pricing("custom"), features: ["Custom agents", "SLA", "API access"] },
-          ].map((plan) => (
-            <GlassCard key={plan.name} className="flex flex-col">
-              <h3 className="text-lg font-medium">{plan.name}</h3>
-              <p className="mt-3 text-3xl font-semibold">
-                {plan.price}
-                {plan.price.startsWith("€") && (
-                  <span className="text-sm font-normal text-muted-foreground">
-                    {pricing("month")}
+              <div className="flex flex-wrap items-center gap-3">
+                <Button asChild size="lg" className="rounded-2xl px-7">
+                  <SoftLink href={`/${locale}/ai-scan`}>{hero("ctaScan")}</SoftLink>
+                </Button>
+                <div className="inline-flex items-center gap-2 rounded-2xl border border-border/70 px-3 py-2">
+                  <Sparkles className="h-3.5 w-3.5 text-primary" />
+                  <span className="font-display text-base font-bold tracking-tight text-foreground">
+                    <AnimatedCounter value={scanCount} />
                   </span>
+                  <span className="text-xs text-muted-foreground">{hero("scansLabel")}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <HeroVisual />
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
+        <Reveal>
+          <div className="mb-10 max-w-2xl">
+            <h2 className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
+              {services("title")}
+            </h2>
+            <p className="mt-3 text-muted-foreground md:text-lg">{services("subtitle")}</p>
+          </div>
+        </Reveal>
+
+        <div className="grid gap-3 md:grid-cols-6">
+          {serviceKeys.map((key, index) => {
+            const span =
+              index < 2
+                ? "md:col-span-3"
+                : key === "software"
+                  ? "md:col-span-6"
+                  : "md:col-span-2";
+
+            return (
+              <Reveal key={key} delay={index * 0.05} className={cn("h-full", span)}>
+                <GlassCard className="flex h-full flex-col p-5 md:p-5">
+                  <h3 className="font-display text-lg font-semibold tracking-tight md:text-xl">
+                    {services(`items.${key}.title`)}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {services(`items.${key}.desc`)}
+                  </p>
+                </GlassCard>
+              </Reveal>
+            );
+          })}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
+        <Reveal>
+          <div className="mb-10 max-w-2xl">
+            <h2 className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
+              {pricing("title")}
+            </h2>
+            <p className="mt-3 text-muted-foreground md:text-lg">{pricing("subtitle")}</p>
+          </div>
+        </Reveal>
+
+        <div className="grid items-stretch gap-4 lg:grid-cols-3">
+          {plans.map((plan, index) => (
+            <Reveal key={plan.name} delay={index * 0.08}>
+              <GlassCard
+                className={cn(
+                  "relative flex h-full flex-col overflow-hidden",
+                  plan.featured && "mesh-panel ring-1 ring-primary/20 lg:-translate-y-3 lg:scale-[1.03]",
                 )}
-              </p>
-              <ul className="mt-4 flex-1 space-y-2 text-sm text-muted-foreground">
-                {plan.features.map((f) => (
-                  <li key={f}>• {f}</li>
-                ))}
-              </ul>
-              <Button asChild className="mt-6 w-full">
-                <Link href={`/${locale}/register`}>{pricing("cta")}</Link>
-              </Button>
-            </GlassCard>
+              >
+                {plan.featured && (
+                  <div className="mb-4 inline-flex w-fit rounded-xl bg-primary px-3 py-1 text-xs font-semibold text-primary-foreground">
+                    Extra Growth
+                  </div>
+                )}
+                <h3 className="font-display text-xl font-semibold tracking-tight">{plan.name}</h3>
+                <p className="mt-4 font-display text-4xl font-bold tracking-tight">
+                  {plan.price}
+                  {plan.price.startsWith("€") && (
+                    <span className="ml-1 text-sm font-medium text-muted-foreground">
+                      {pricing("month")}
+                    </span>
+                  )}
+                </p>
+                <ul className="mt-6 flex-1 space-y-3 text-sm text-muted-foreground">
+                  {plan.features.map((f) => (
+                    <li key={f} className="flex items-center gap-2">
+                      <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+                <Button
+                  asChild
+                  className="mt-8 w-full rounded-2xl"
+                  variant={plan.featured ? "default" : "outline"}
+                >
+                  <SoftLink href={`/${locale}/register`}>{pricing("cta")}</SoftLink>
+                </Button>
+              </GlassCard>
+            </Reveal>
           ))}
         </div>
       </section>
 
-      <section className="mx-auto max-w-3xl px-4 py-12 md:px-6">
-        <h2 className="mb-4 text-2xl font-semibold">{faq("title")}</h2>
-        <Accordion type="single" collapsible className="w-full">
-          <AccordionItem value="1">
-            <AccordionTrigger>{faq("q1")}</AccordionTrigger>
-            <AccordionContent>{faq("a1")}</AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="2">
-            <AccordionTrigger>{faq("q2")}</AccordionTrigger>
-            <AccordionContent>{faq("a2")}</AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="3">
-            <AccordionTrigger>{faq("q3")}</AccordionTrigger>
-            <AccordionContent>{faq("a3")}</AccordionContent>
-          </AccordionItem>
-        </Accordion>
+      <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
+        <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+          <Reveal>
+            <h2 className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
+              {faq("title")}
+            </h2>
+            <p className="mt-3 max-w-sm text-muted-foreground">{hero("subtitle")}</p>
+          </Reveal>
+          <Reveal delay={0.08}>
+            <div className="glass rounded-[1.75rem] px-5 md:px-6">
+              <Accordion type="single" collapsible className="w-full">
+                <AccordionItem value="1" className="border-border/60">
+                  <AccordionTrigger className="text-left font-display text-base hover:no-underline md:text-lg">
+                    {faq("q1")}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">{faq("a1")}</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="2" className="border-border/60">
+                  <AccordionTrigger className="text-left font-display text-base hover:no-underline md:text-lg">
+                    {faq("q2")}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">{faq("a2")}</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="3" className="border-border/60">
+                  <AccordionTrigger className="text-left font-display text-base hover:no-underline md:text-lg">
+                    {faq("q3")}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">{faq("a3")}</AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
+          </Reveal>
+        </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 pb-20 md:px-6">
-        <div className="rounded-3xl border border-border bg-linear-to-br from-primary/20 via-card to-secondary/20 p-8 text-center md:p-12">
-          <h2 className="text-2xl font-semibold md:text-3xl">{t("hero.ctaScan")}</h2>
-          <p className="mx-auto mt-3 max-w-xl text-muted-foreground">{t("hero.subtitle")}</p>
-          <Button asChild size="lg" className="mt-6">
-            <Link href={`/${locale}/ai-scan`}>{t("hero.ctaScan")}</Link>
-          </Button>
-        </div>
+      <section className="mx-auto max-w-6xl px-4 pb-8 md:px-6 md:pb-12">
+        <Reveal>
+          <div className="relative overflow-hidden rounded-4xl">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(201,162,122,0.35),transparent_40%),radial-gradient(circle_at_80%_80%,rgba(26,166,138,0.28),transparent_42%),linear-gradient(135deg,#2a1a12,#14181f_55%,#0f1720)]" />
+            <div className="relative px-8 py-14 text-center text-white md:px-14 md:py-20">
+              <p className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
+                {t("hero.ctaScanTitle")}
+              </p>
+              <p className="mx-auto mt-4 max-w-xl text-base text-white/70 md:text-lg">
+                {t("hero.subtitle")}
+              </p>
+              <Button
+                asChild
+                size="lg"
+                className="mt-8 rounded-2xl bg-white text-primary hover:bg-white/90"
+              >
+                <SoftLink href={`/${locale}/ai-scan`}>{t("hero.ctaScan")}</SoftLink>
+              </Button>
+            </div>
+          </div>
+        </Reveal>
       </section>
     </div>
   );

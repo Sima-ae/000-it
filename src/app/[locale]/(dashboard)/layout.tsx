@@ -1,6 +1,7 @@
 import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import { Sidebar } from "@/components/dashboard/Sidebar";
+import { ContentTransition } from "@/components/shared/ContentTransition";
 
 export default async function DashboardLayout({
   children,
@@ -16,9 +17,13 @@ export default async function DashboardLayout({
   }
 
   return (
-    <div className="flex min-h-screen flex-col md:flex-row">
+    <div className="mx-auto flex min-h-screen w-full max-w-7xl flex-col md:flex-row">
       <Sidebar />
-      <div className="flex-1 p-4 md:p-8">{children}</div>
+      <div className="flex-1 p-3 md:p-6 md:pl-0">
+        <div className="glass min-h-[calc(100svh-1.5rem)] rounded-[1.75rem] p-4 md:p-8">
+          <ContentTransition>{children}</ContentTransition>
+        </div>
+      </div>
     </div>
   );
 }

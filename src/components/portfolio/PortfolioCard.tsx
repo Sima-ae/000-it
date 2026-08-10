@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { SoftLink } from "@/components/shared/SoftLink";
 import { Badge } from "@/components/ui/badge";
 
 type PortfolioCardProps = {
@@ -26,7 +26,7 @@ export function PortfolioCard({ locale, item }: PortfolioCardProps) {
   const tags = tagsOf(item.tags);
 
   return (
-    <Link
+    <SoftLink
       href={`/${locale}/portfolio/${item.slug}`}
       className="group relative flex aspect-4/5 flex-col overflow-hidden border border-border bg-card transition hover:border-primary/40"
     >
@@ -72,6 +72,6 @@ export function PortfolioCard({ locale, item }: PortfolioCardProps) {
           )}
         </div>
       </div>
-    </Link>
+    </SoftLink>
   );
 }

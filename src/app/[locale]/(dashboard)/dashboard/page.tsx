@@ -35,7 +35,7 @@ export default function DashboardPage() {
     <div className="space-y-8">
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-semibold">{t("title")}</h1>
+          <h1 className="font-display text-3xl font-semibold tracking-tight">{t("title")}</h1>
           <p className="text-muted-foreground">{t("welcome")}</p>
         </div>
         <div className="flex gap-2">

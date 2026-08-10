@@ -16,5 +16,5 @@ export function AnimatedCounter({ value }: { value: number }) {
     return () => window.clearInterval(id);
   }, [value]);
 
-  return <span>{count.toLocaleString()}</span>;
+  return <span>{count.toLocaleString("nl-NL")}</span>;
 }

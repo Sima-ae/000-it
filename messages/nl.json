@@ -15,22 +15,23 @@
     "logout": "Uitloggen"
   },
   "hero": {
-    "title": "Slimme Groei met AI en een TripleZero iT Systeem",
-    "subtitle": "AI-integratie, SEO/AEO/GEO en full-funnel marketing in één groeisysteem voor Nederlandse bedrijven.",
-    "ctaScan": "(startende) Ondernemer?",
+    "title": "Groei sneller door AI en een TripleZero iT systeem",
+    "subtitle": "AI-integratie, adverteren, AEO, GEO, SEO, online marketing en social media in één groeisysteem voor Nederlandse bedrijven.",
+    "ctaScanTitle": "Ondernemer of ZZP'er?",
+    "ctaScan": "KLIK HIER",
     "ctaApproach": "Bekijk Onze Aanpak",
-    "scansLabel": "AI-scans uitgevoerd"
+    "scansLabel": "uitgebreide AI-scans uitgevoerd"
   },
   "services": {
     "title": "Diensten",
     "subtitle": "Alles wat je nodig hebt om AI-gedreven te groeien.",
     "items": {
       "ai": { "title": "AI-Integratie & Automatisering", "desc": "Agents en workflows die marketing en ops verbinden." },
-      "seo": { "title": "SEO, AEO & GEO", "desc": "Vindbaar in Google én in AI-zoekmachines." },
+      "seo": { "title": "AEO, GEO & SEO", "desc": "Vindbaar in Google en in AI-zoekmachines." },
       "web": { "title": "Webdesign & Conversie", "desc": "Snelle sites die bezoekers omzetten in klanten." },
       "content": { "title": "Content & Social Media", "desc": "Contentmachines met menselijke kwaliteit." },
       "ads": { "title": "AI-Advertising", "desc": "Google Ads en social campaigns met AI-optimalisatie." },
-      "software": { "title": "Maatwerk Software & API's", "desc": "Custom platforms die meegroeien met je business." }
+      "software": { "title": "Maatwerk Software & API's", "desc": "Coderen op maat voor agents, bots, platforms en workflows die meegroeien met uw bedrijf." }
     }
   },
   "pricing": {

@@ -19,7 +19,7 @@ export function ThemeToggle() {
         type="button"
         size="icon"
         variant="ghost"
-        className="shrink-0"
+        className="shrink-0 rounded-xl"
         aria-label="Toggle theme"
       >
         <Sun className="h-4 w-4" />
@@ -34,7 +34,7 @@ export function ThemeToggle() {
       type="button"
       size="icon"
       variant="ghost"
-      className="shrink-0"
+      className="shrink-0 rounded-xl"
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
       onClick={() => setTheme(isDark ? "light" : "dark")}
     >

@@ -1,5 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { GlassCard } from "@/components/marketing/GlassCard";
+import { Reveal } from "@/components/marketing/Reveal";
 
 const posts = [
   {
@@ -28,15 +29,21 @@ export default async function BlogPage({
   setRequestLocale(locale);
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-16 md:px-6">
-      <h1 className="text-4xl font-semibold">Blog</h1>
+    <div className="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
+      <Reveal>
+        <h1 className="font-display text-4xl font-semibold tracking-tight md:text-5xl">Blog</h1>
+      </Reveal>
       <div className="mt-10 grid gap-4 md:grid-cols-3">
-        {posts.map((post) => (
-          <GlassCard key={post.title}>
-            <p className="text-xs text-muted-foreground">{post.date}</p>
-            <h2 className="mt-2 text-lg font-medium">{post.title}</h2>
-            <p className="mt-2 text-sm text-muted-foreground">{post.excerpt}</p>
-          </GlassCard>
+        {posts.map((post, i) => (
+          <Reveal key={post.title} delay={i * 0.07}>
+            <GlassCard className="h-full">
+              <p className="text-xs text-muted-foreground">{post.date}</p>
+              <h2 className="font-display mt-2 text-lg font-semibold tracking-tight">
+                {post.title}
+              </h2>
+              <p className="mt-2 text-sm text-muted-foreground">{post.excerpt}</p>
+            </GlassCard>
+          </Reveal>
         ))}
       </div>
     </div>

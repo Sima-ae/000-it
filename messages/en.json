@@ -17,7 +17,8 @@
   "hero": {
     "title": "Smart Growth with AI — Your TripleZero iT System",
     "subtitle": "AI integration, SEO/AEO/GEO and full-funnel marketing in one growth system for ambitious businesses.",
-    "ctaScan": "Start Free AI Scan",
+    "ctaScanTitle": "Entrepreneur or Freelancer?",
+    "ctaScan": "CLICK HERE",
     "ctaApproach": "See Our Approach",
     "scansLabel": "AI scans completed"
   },
@@ -26,7 +27,7 @@
     "subtitle": "Everything you need to grow with AI.",
     "items": {
       "ai": { "title": "AI Integration & Automation", "desc": "Agents and workflows that connect marketing and ops." },
-      "seo": { "title": "SEO, AEO & GEO", "desc": "Visible in Google and AI search engines." },
+      "seo": { "title": "AEO, GEO & SEO", "desc": "Visible in Google and AI search engines." },
       "web": { "title": "Web Design & Conversion", "desc": "Fast sites that turn visitors into customers." },
       "content": { "title": "Content & Social Media", "desc": "Content engines with human-grade quality." },
       "ads": { "title": "AI Advertising", "desc": "Google Ads and social campaigns with AI optimization." },

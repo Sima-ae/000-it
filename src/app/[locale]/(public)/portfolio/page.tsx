@@ -22,7 +22,7 @@ export default async function PortfolioPage({
     <div className="min-h-screen">
       <div className="mx-auto max-w-[1600px] px-4 py-10 md:px-6 md:py-14">
         <div className="mb-8 max-w-2xl">
-          <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">
+          <h1 className="font-display text-4xl font-semibold tracking-tight md:text-5xl">
             {t("title")}
           </h1>
           <p className="mt-3 text-muted-foreground">{t("subtitle")}</p>

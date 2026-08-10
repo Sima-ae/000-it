@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import {
@@ -14,6 +13,7 @@ import {
   Images,
 } from "lucide-react";
 import { ThemeToggle } from "@/components/shared/ThemeToggle";
+import { SoftLink } from "@/components/shared/SoftLink";
 import { cn } from "@/lib/utils";
 
 const items = [
@@ -33,35 +33,37 @@ export function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="w-full border-b border-border bg-card/40 p-4 backdrop-blur md:min-h-screen md:w-64 md:border-b-0 md:border-r">
-      <div className="mb-6 flex items-center justify-between gap-2">
-        <Link href={`/${locale}`} className="text-lg font-semibold">
-          <span className="bg-linear-to-r from-primary to-accent bg-clip-text text-transparent">
-            TripleZero iT
-          </span>
-        </Link>
-        <ThemeToggle />
+    <aside className="w-full p-3 md:sticky md:top-3 md:h-[calc(100svh-1.5rem)] md:w-72 md:self-start md:p-3">
+      <div className="glass flex h-full flex-col rounded-[1.75rem] p-4">
+        <div className="mb-6 flex items-center justify-between gap-2">
+          <SoftLink href={`/${locale}`} className="font-display text-lg font-semibold tracking-tight">
+            <span className="bg-linear-to-r from-primary to-accent bg-clip-text text-transparent">
+              TripleZero iT
+            </span>
+          </SoftLink>
+          <ThemeToggle />
+        </div>
+        <nav className="flex gap-1 overflow-x-auto md:flex-1 md:flex-col md:overflow-visible">
+          {items.map((item) => {
+            const href = `/${locale}${item.href}`;
+            const active = pathname === href || pathname.startsWith(`${href}/`);
+            const Icon = item.icon;
+            return (
+              <SoftLink
+                key={item.href}
+                href={href}
+                className={cn(
+                  "flex items-center gap-2 whitespace-nowrap rounded-2xl px-3 py-2.5 text-sm text-muted-foreground transition hover:bg-muted/70 hover:text-foreground",
+                  active && "bg-primary/10 text-foreground",
+                )}
+              >
+                <Icon className="h-4 w-4" />
+                {t(item.key)}
+              </SoftLink>
+            );
+          })}
+        </nav>
       </div>
-      <nav className="flex gap-1 overflow-x-auto md:flex-col md:overflow-visible">
-        {items.map((item) => {
-          const href = `/${locale}${item.href}`;
-          const active = pathname === href || pathname.startsWith(`${href}/`);
-          const Icon = item.icon;
-          return (
-            <Link
-              key={item.href}
-              href={href}
-              className={cn(
-                "flex items-center gap-2 whitespace-nowrap rounded-lg px-3 py-2 text-sm text-muted-foreground transition hover:bg-muted hover:text-foreground",
-                active && "bg-muted text-foreground",
-              )}
-            >
-              <Icon className="h-4 w-4" />
-              {t(item.key)}
-            </Link>
-          );
-        })}
-      </nav>
     </aside>
   );
 }

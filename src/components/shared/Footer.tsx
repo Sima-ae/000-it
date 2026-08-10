@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations, useLocale } from "next-intl";
-import Link from "next/link";
+import { SoftLink } from "@/components/shared/SoftLink";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -10,28 +10,37 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-24 border-t border-border/60 bg-background/50">
-      <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 md:grid-cols-3 md:px-6">
-        <div>
-          <p className="text-lg font-semibold text-foreground">TripleZero iT</p>
-          <p className="mt-2 text-sm text-muted-foreground">{t("tagline")}</p>
-        </div>
-        <div className="flex flex-col gap-2 text-sm text-muted-foreground">
-          <Link href={`/${locale}/diensten`} className="hover:text-foreground">
-            {nav("services")}
-          </Link>
-          <Link href={`/${locale}/ai-scan`} className="hover:text-foreground">
-            {nav("aiScan")}
-          </Link>
-          <Link href={`/${locale}/contact`} className="hover:text-foreground">
-            {nav("contact")}
-          </Link>
-        </div>
-        <div className="text-sm text-muted-foreground">
-          <p>info@000-it.com</p>
-          <p className="mt-4">
-            © {year} TripleZero iT. {t("rights")}
-          </p>
+    <footer className="relative mt-20 border-t border-border/50">
+      <div className="mx-auto max-w-6xl px-4 py-14 md:px-6">
+        <div className="glass grid gap-8 rounded-4xl p-8 md:grid-cols-3 md:p-10">
+          <div>
+            <p className="font-display text-2xl font-semibold tracking-tight text-foreground">
+              TripleZero iT
+            </p>
+            <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted-foreground">
+              {t("tagline")}
+            </p>
+          </div>
+          <div className="flex flex-col gap-2.5 text-sm text-muted-foreground">
+            <SoftLink href={`/${locale}/diensten`} className="transition hover:text-foreground">
+              {nav("services")}
+            </SoftLink>
+            <SoftLink href={`/${locale}/portfolio`} className="transition hover:text-foreground">
+              {nav("portfolio")}
+            </SoftLink>
+            <SoftLink href={`/${locale}/ai-scan`} className="transition hover:text-foreground">
+              {nav("aiScan")}
+            </SoftLink>
+            <SoftLink href={`/${locale}/contact`} className="transition hover:text-foreground">
+              {nav("contact")}
+            </SoftLink>
+          </div>
+          <div className="text-sm text-muted-foreground">
+            <p className="font-medium text-foreground">info@000-it.com</p>
+            <p className="mt-6 text-xs leading-relaxed">
+              © {year} TripleZero iT. {t("rights")}
+            </p>
+          </div>
         </div>
       </div>
     </footer>
