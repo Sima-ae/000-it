@@ -77,8 +77,14 @@ jobs:
             ls -la
             exit 1
           fi
-          tar -czf next-build.tar.gz .next
+          # Cache is not needed at runtime and can make the upload huge/slow.
+          tar -czf next-build.tar.gz \
+            --exclude='.next/cache' \
+            --exclude='.next/trace' \
+            --exclude='.next/types' \
+            .next
           ls -lh next-build.tar.gz
+          du -sh .next .next/cache 2>/dev/null || true
 
       - name: Deploy over SSH
         env:
@@ -87,6 +93,8 @@ jobs:
           VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
           VPS_SSH_PORT: ${{ secrets.VPS_SSH_PORT }}
           VPS_APP_PATH: ${{ secrets.VPS_APP_PATH }}
+          # Avoid interactive/profile noise during non-TTY uploads
+          TERM: dumb
         run: |
           set -euo pipefail
 
@@ -111,7 +119,10 @@ jobs:
 
           ssh-keyscan -p "$PORT" -H "$VPS_HOST" >> ~/.ssh/known_hosts 2>/dev/null || true
 
-          SSH_OPTS=(-i ~/.ssh/deploy_key -p "$PORT" -o BatchMode=yes -o ConnectTimeout=30 -o IdentitiesOnly=yes -o ServerAliveInterval=30 -o ServerAliveCountMax=120 -o TCPKeepAlive=yes)
+          # -T: no TTY (stops login-shell/motd hangs). Compression=no: archive is already gzipped.
+          SSH_BASE=(-i ~/.ssh/deploy_key -o BatchMode=yes -o ConnectTimeout=30 -o IdentitiesOnly=yes -o ServerAliveInterval=15 -o ServerAliveCountMax=8 -o TCPKeepAlive=yes -o Compression=no -o RequestTTY=no)
+          SSH_OPTS=("${SSH_BASE[@]}" -p "$PORT" -T)
+          SCP_OPTS=("${SSH_BASE[@]}" -P "$PORT" -o StrictHostKeyChecking=accept-new)
 
           echo "==> SSH ${VPS_USER}@${VPS_HOST}:${PORT} → ${APP_DIR}"
 
@@ -120,10 +131,18 @@ jobs:
             exit 1
           fi
 
-          echo "==> Upload pre-built .next to VPS"
+          echo "==> Free space on VPS /tmp"
+          ssh "${SSH_OPTS[@]}" "${VPS_USER}@${VPS_HOST}" 'df -h /tmp /var/tmp / 2>/dev/null | head -20'
+
+          echo "==> Upload pre-built .next to VPS (scp)"
           ls -lh next-build.tar.gz
-          ssh "${SSH_OPTS[@]}" "${VPS_USER}@${VPS_HOST}" "cat > /tmp/next-build.tar.gz" < next-build.tar.gz
-          ssh "${SSH_OPTS[@]}" "${VPS_USER}@${VPS_HOST}" 'test -s /tmp/next-build.tar.gz'
+          # scp is more reliable than piping 100MB+ through ssh stdin (which often looks "stuck").
+          # Fail clearly if upload stalls longer than 10 minutes.
+          if ! timeout 600 scp "${SCP_OPTS[@]}" next-build.tar.gz "${VPS_USER}@${VPS_HOST}:/tmp/next-build.tar.gz"; then
+            echo "::error::Upload of next-build.tar.gz timed out or failed (scp)."
+            exit 1
+          fi
+          ssh "${SSH_OPTS[@]}" "${VPS_USER}@${VPS_HOST}" 'ls -lh /tmp/next-build.tar.gz && test -s /tmp/next-build.tar.gz'
 
           REMOTE_SCRIPT="$(mktemp)"
           trap 'rm -f "$REMOTE_SCRIPT"' EXIT
