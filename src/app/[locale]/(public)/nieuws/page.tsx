@@ -1,4 +1,4 @@
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { GlassCard } from "@/components/marketing/GlassCard";
 import { Reveal } from "@/components/marketing/Reveal";
 
@@ -20,18 +20,21 @@ const posts = [
   },
 ];
 
-export default async function BlogPage({
+export default async function NieuwsPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations("nav");
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
       <Reveal>
-        <h1 className="font-display text-4xl font-semibold tracking-tight md:text-5xl">Blog</h1>
+        <h1 className="font-display text-4xl font-semibold tracking-tight md:text-5xl">
+          {t("blog")}
+        </h1>
       </Reveal>
       <div className="mt-10 grid gap-4 md:grid-cols-3">
         {posts.map((post, i) => (

@@ -87,7 +87,7 @@ async function main() {
         assignedAgentId: "seed-agent-seo",
       },
       {
-        title: "Draft launch blog posts",
+        title: "Draft launch nieuws posts",
         status: "PENDING",
         priority: "MEDIUM",
         projectId: project.id,

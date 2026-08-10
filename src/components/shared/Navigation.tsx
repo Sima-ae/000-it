@@ -12,12 +12,12 @@ import { cn } from "@/lib/utils";
 
 const links = [
   { href: "", key: "home" },
+  { href: "/over-ons", key: "about" },
+  { href: "/ai-scan", key: "aiScan" },
   { href: "/diensten", key: "services" },
   { href: "/portfolio", key: "portfolio" },
-  { href: "/over-ons", key: "about" },
   { href: "/case-studies", key: "cases" },
-  { href: "/blog", key: "blog" },
-  { href: "/ai-scan", key: "aiScan" },
+  { href: "/nieuws", key: "blog" },
   { href: "/contact", key: "contact" },
 ] as const;
 
