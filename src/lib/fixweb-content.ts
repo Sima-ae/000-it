@@ -2,6 +2,8 @@ import importedPages from "@/content/fixweb/imported-pages.json";
 import importedProducts from "@/content/fixweb/imported-products.json";
 import localImages from "@/content/fixweb/local-images.json";
 import { getCatalogItem, type ServiceNavItem } from "@/content/fixweb/catalog";
+import { getPageI18n } from "@/content/fixweb/page-i18n";
+import { getProductI18n } from "@/content/fixweb/product-i18n";
 import { getCustomServiceContent } from "@/content/services/custom";
 
 type ImportedPage = {
@@ -28,9 +30,16 @@ const productBySlug = new Map(products.map((p) => [p.slug, p]));
 const serviceContentCache = new Map<string, ReturnType<typeof buildServiceContent>>();
 const serviceCardCache = new Map<string, ReturnType<typeof buildServiceCardMeta>>();
 
+/** Drop content caches (e.g. after service image/copy updates in dev). */
+export function clearServiceContentCaches() {
+  serviceContentCache.clear();
+  serviceCardCache.clear();
+}
+
 /** Strip legacy Fix-Web branding from imported content. */
 export function brandify(text: string) {
   return text
+    .replace(/privacy@fix-web\.com/gi, "privacy@000-it.com")
     .replace(/info@fix-web\.com/gi, "info@000-it.com")
     .replace(/https?:\/\/(www\.)?fix-web\.com/gi, "https://000-it.com")
     .replace(/(www\.)?fix-web\.com/gi, "000-it.com")
@@ -122,20 +131,39 @@ export function getImportedPage(slug: string, options?: { maxBlocks?: number }) 
   };
 }
 
-export function getImportedProduct(slug: string, options?: { lean?: boolean }) {
+export function getImportedProduct(
+  slug: string,
+  options?: { lean?: boolean; locale?: string },
+) {
   const product = productBySlug.get(slug);
   if (!product) return null;
-  const shortDescription = brandify(product.shortDescription || "");
-  const features = productFeatures(shortDescription);
-  const lean = options?.lean ?? false;
-  const descriptionBlocks = lean
-    ? textToBlocks(product.description || "", { maxBlocks: 4 })
-    : textToBlocks(product.description || shortDescription || "");
 
+  const locale = options?.locale ?? "nl";
+  const i18n = getProductI18n(slug, locale);
+  const lean = options?.lean ?? false;
+
+  const name = brandify(i18n?.name ?? product.name);
+  const shortDescription = brandify(
+    i18n?.shortDescription ?? product.shortDescription ?? "",
+  );
+  // When an i18n overlay exists, do not fall back to the other language's description.
+  const description = brandify(
+    i18n ? (i18n.description ?? "") : product.description || "",
+  );
+  const features = productFeatures(shortDescription);
+
+  const descriptionSource = lean
+    ? description
+    : description || shortDescription || "";
+  const descriptionBlocks = lean
+    ? textToBlocks(descriptionSource, { maxBlocks: 8 })
+    : textToBlocks(descriptionSource);
+
+  const planHeading = locale === "nl" ? "Planhighlights" : "Plan highlights";
   const blocks: ContentBlock[] =
     features.length >= 2
       ? [
-          { type: "heading", text: "Plan highlights" },
+          { type: "heading", text: planHeading },
           { type: "list", items: features },
           ...descriptionBlocks,
         ]
@@ -143,9 +171,9 @@ export function getImportedProduct(slug: string, options?: { lean?: boolean }) {
 
   return {
     ...product,
-    name: brandify(product.name),
+    name,
     shortDescription,
-    description: brandify(product.description || ""),
+    description,
     features,
     localImage: imageMap[slug] || product.images?.[0] || null,
     blocks,
@@ -153,21 +181,21 @@ export function getImportedProduct(slug: string, options?: { lean?: boolean }) {
 }
 
 const pageImageFallback: Record<string, string> = {
-  "content-writing": "/uploads/fixweb/content-social.png",
-  "social-media-management": "/uploads/fixweb/content-social.png",
-  "media-creation": "/uploads/fixweb/content-social.png",
-  "community-management": "/uploads/fixweb/content-social.png",
-  "digital-marketing": "/uploads/fixweb/ai-advertising.png",
-  "product-listing": "/uploads/fixweb/ai-advertising.png",
-  "data-entry": "/uploads/fixweb/ai-advertising.png",
-  "e-commerce": "/uploads/fixweb/maatwerk-software.png",
+  "content-writing": "/uploads/fixweb/content-writing.png",
+  "social-media-management": "/uploads/fixweb/social-media-management.png",
+  "media-creation": "/uploads/fixweb/media-creation.png",
+  "community-management": "/uploads/fixweb/community-management.png",
+  "digital-marketing": "/uploads/fixweb/digital-marketing.png",
+  "product-listing": "/uploads/fixweb/product-listing.png",
+  "data-entry": "/uploads/fixweb/data-entry.png",
+  "e-commerce": "/uploads/fixweb/e-commerce.png",
   "seo-optimization": "/uploads/fixweb/seo-optimization.png",
-  "web-hosting": "/uploads/fixweb/shared-hosting-basic.png",
-  "shared-hosting": "/uploads/fixweb/shared-hosting-plus.png",
-  "wordpress-hosting": "/uploads/fixweb/wordpress-hosting-basic.png",
-  "vps-hosting": "/uploads/fixweb/vps-hosting-basic.png",
-  domains: "/uploads/fixweb/shared-hosting-business.png",
-  "wordpress-support": "/uploads/fixweb/wordpress-security.png",
+  "web-hosting": "/uploads/fixweb/web-hosting.png",
+  "shared-hosting": "/uploads/fixweb/shared-hosting.png",
+  "wordpress-hosting": "/uploads/fixweb/wordpress-hosting.png",
+  "vps-hosting": "/uploads/fixweb/vps-hosting.png",
+  domains: "/uploads/fixweb/domains.png",
+  "wordpress-support": "/uploads/fixweb/wordpress-support.png",
 };
 
 function firstParagraphSubtitle(blocks: ContentBlock[], fallback = "") {
@@ -211,7 +239,7 @@ function buildServiceContent(slug: string, locale: string) {
 
   if (meta.kind === "product") {
     const lean = meta.group === "hosting";
-    const product = getImportedProduct(slug, { lean });
+    const product = getImportedProduct(slug, { lean, locale });
     if (!product) return null;
     const featureSubtitle =
       product.features.length > 0
@@ -226,15 +254,25 @@ function buildServiceContent(slug: string, locale: string) {
       currency: product.currency,
       priceSuffix: isHostingProduct ? (isNl ? "/ maand" : "/ month") : null,
       image: product.localImage || pageImageFallback[slug] || null,
-      blocks: isNl
-        ? product.blocks.map((block) =>
-            block.type === "heading" && block.text === "Plan highlights"
-              ? { ...block, text: "Planhighlights" }
-              : block,
-          )
-        : product.blocks,
+      blocks: product.blocks,
       kind: "product" as const,
       features: product.features,
+    };
+  }
+
+  const localizedPage = getPageI18n(slug, locale);
+  if (localizedPage) {
+    return {
+      meta,
+      title: localizedPage.title,
+      subtitle: localizedPage.subtitle,
+      price: null as number | null,
+      currency: null as string | null,
+      image: pageImageFallback[slug] || null,
+      blocks: localizedPage.blocks,
+      kind: "page" as const,
+      priceSuffix: null as string | null,
+      features: [] as string[],
     };
   }
 
@@ -299,18 +337,33 @@ function buildServiceCardMeta(slug: string, locale: string) {
   if (meta.kind === "product") {
     const product = productBySlug.get(slug);
     if (!product) return null;
-    const shortDescription = brandify(product.shortDescription || "");
+    const i18n = getProductI18n(slug, locale);
+    const shortDescription = brandify(
+      i18n?.shortDescription ?? product.shortDescription ?? "",
+    );
     const features = productFeatures(shortDescription);
+    const name = brandify(i18n?.name ?? product.name);
     const subtitle =
       features.length > 0
         ? features.slice(0, 4).join(" · ")
         : shortDescription.split("\n")[0] || (isNl ? meta.summaryNl : meta.summary) || "";
     return {
-      title: isNl ? meta.titleNl || brandify(product.name) : meta.title || brandify(product.name),
+      title: isNl ? meta.titleNl || name : meta.title || name,
       subtitle,
       price: product.price,
       image: imageMap[slug] || product.images?.[0] || pageImageFallback[slug] || null,
       hasBody: true,
+    };
+  }
+
+  const localizedPage = getPageI18n(slug, locale);
+  if (localizedPage) {
+    return {
+      title: localizedPage.title,
+      subtitle: localizedPage.subtitle,
+      price: null as number | null,
+      image: pageImageFallback[slug] || null,
+      hasBody: localizedPage.blocks.length > 0,
     };
   }
 

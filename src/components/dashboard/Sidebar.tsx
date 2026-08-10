@@ -74,7 +74,7 @@ export function Sidebar() {
           </div>
         ) : null}
 
-        <nav className="flex gap-1 overflow-x-auto md:flex-1 md:flex-col md:overflow-visible">
+        <nav className="flex gap-1 overflow-x-auto md:min-h-0 md:flex-1 md:flex-col md:overflow-y-auto md:overflow-x-hidden md:pr-1">
           {items.map((item) => {
             const href = `/${locale}${item.href}`;
             // Prefer exact/longest match so /crm does not stay active on /crm/tickets
@@ -94,7 +94,7 @@ export function Sidebar() {
                 key={item.href}
                 href={href}
                 className={cn(
-                  "flex items-center gap-2 whitespace-nowrap rounded-2xl px-3 py-2.5 text-sm text-muted-foreground transition hover:bg-muted/70 hover:text-foreground",
+                  "flex shrink-0 items-center gap-2 whitespace-nowrap rounded-2xl px-3 py-2.5 text-sm text-muted-foreground transition hover:bg-muted/70 hover:text-foreground",
                   active && "bg-primary/10 text-foreground",
                 )}
               >

@@ -7,14 +7,12 @@ import { usePathname } from "next/navigation";
 import {
   CheckSquare,
   MessageCircle,
-  Minus,
   Send,
   Ticket,
   X,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
 import { SoftLink } from "@/components/shared/SoftLink";
@@ -37,6 +35,7 @@ type TicketDetail = {
 };
 
 const STORAGE_KEY = "tz-live-chat";
+const TEASER_KEY = "tz-live-chat-teaser-dismissed";
 
 type StoredChat = {
   ticketId: string;
@@ -61,14 +60,21 @@ function saveStored(data: StoredChat | null) {
   else localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
 }
 
+function isAppShellPath(pathname: string) {
+  return /\/(login|register|forgot-password|dashboard|crm|tickets|todos|users|projects|leads|settings|content-generator|seo-analysis)(\/|$)/.test(
+    pathname,
+  );
+}
+
 export function LiveChatWidget() {
   const { data: session, status } = useSession();
   const locale = useLocale();
   const pathname = usePathname();
   const isStaff = isStaffRole(session?.user?.role);
-  const isAuthPage = /\/(login|register|forgot-password)/.test(pathname);
+  const hideWidget = isAppShellPath(pathname);
 
   const [open, setOpen] = useState(false);
+  const [teaser, setTeaser] = useState(false);
   const [mode, setMode] = useState<"chat" | "ticket">("chat");
   const [guestName, setGuestName] = useState("");
   const [guestEmail, setGuestEmail] = useState("");
@@ -79,6 +85,7 @@ export function LiveChatWidget() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const loggedIn = status === "authenticated" && !!session?.user;
 
@@ -103,11 +110,23 @@ export function LiveChatWidget() {
   }, [restore, loggedIn]);
 
   useEffect(() => {
+    if (hideWidget || open) return;
+    try {
+      if (localStorage.getItem(TEASER_KEY) === "1") return;
+    } catch {
+      /* ignore */
+    }
+    const t = window.setTimeout(() => setTeaser(true), 1800);
+    return () => window.clearTimeout(t);
+  }, [hideWidget, open]);
+
+  useEffect(() => {
     if (!open) return;
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    const focusTimer = window.setTimeout(() => inputRef.current?.focus(), 120);
+    return () => window.clearTimeout(focusTimer);
   }, [ticket?.messages, open]);
 
-  // Poll for new messages while open
   useEffect(() => {
     if (!open || !ticket?.id) return;
     const timer = setInterval(async () => {
@@ -122,10 +141,29 @@ export function LiveChatWidget() {
 
   const needsIdentity = !loggedIn && !ticket;
 
-  const headerTitle = useMemo(() => {
-    if (mode === "ticket") return locale === "nl" ? "Nieuw ticket" : "New ticket";
-    return locale === "nl" ? "Live chat" : "Live chat";
-  }, [mode, locale]);
+  const copy = useMemo(() => {
+    const nl = locale === "nl";
+    return {
+      title: nl ? "Live chat" : "Live chat",
+      subtitle: nl ? "TripleZero iT support" : "TripleZero iT support",
+      online: nl ? "Online — we antwoorden zo snel mogelijk" : "Online — we reply as soon as possible",
+      teaser: nl ? "Hulp nodig? Chat met ons." : "Need help? Chat with us.",
+      emptyChat: nl
+        ? "Stel uw vraag. Ons team antwoordt zo snel mogelijk."
+        : "Ask a question. Our team will reply as soon as possible.",
+      emptyTicket: nl
+        ? "Beschrijf uw vraag — we openen een ticket dat zichtbaar is in uw dashboard."
+        : "Describe your request — we’ll open a ticket synced to your dashboard.",
+      placeholder: nl ? "Typ uw bericht…" : "Type your message…",
+      newTicket: nl ? "Nieuw ticket" : "New ticket",
+      name: nl ? "Naam" : "Name",
+      subject: nl ? "Onderwerp" : "Subject",
+      subjectPh: nl ? "Waar gaat het over?" : "What is this about?",
+      viewTickets: nl ? "Bekijk tickets" : "View tickets",
+      sendFailed: nl ? "Versturen mislukt" : "Could not send",
+      powered: nl ? "Helpdesk chat · TripleZero iT" : "Helpdesk chat · TripleZero iT",
+    };
+  }, [locale]);
 
   async function startConversation(opts: {
     subject: string;
@@ -144,6 +182,7 @@ export function LiveChatWidget() {
           source: opts.source,
           guestName: loggedIn ? undefined : guestName,
           guestEmail: loggedIn ? undefined : guestEmail,
+          locale,
         }),
       });
       if (!res.ok) {
@@ -188,14 +227,14 @@ export function LiveChatWidget() {
       );
       setDraft("");
     } catch {
-      setError(locale === "nl" ? "Versturen mislukt" : "Could not send");
+      setError(copy.sendFailed);
     } finally {
       setBusy(false);
     }
   }
 
-  async function handlePrimarySubmit(e: React.FormEvent) {
-    e.preventDefault();
+  async function handlePrimarySubmit(e?: React.FormEvent) {
+    e?.preventDefault();
     if (mode === "ticket") {
       if (!subject.trim() || !draft.trim()) return;
       if (needsIdentity && (!guestName.trim() || !guestEmail.trim())) return;
@@ -224,45 +263,57 @@ export function LiveChatWidget() {
     await sendMessage();
   }
 
-  // Staff use the tickets inbox instead of the visitor widget
-  if (isStaff || isAuthPage) return null;
+  function openChat() {
+    setOpen(true);
+    setTeaser(false);
+    try {
+      localStorage.setItem(TEASER_KEY, "1");
+    } catch {
+      /* ignore */
+    }
+  }
+
+  function dismissTeaser() {
+    setTeaser(false);
+    try {
+      localStorage.setItem(TEASER_KEY, "1");
+    } catch {
+      /* ignore */
+    }
+  }
+
+  // Hide on auth + dashboard shells (staff use inbox there). Always show on public pages.
+  if (hideWidget) return null;
 
   return (
-    <div className="pointer-events-none fixed bottom-4 right-4 z-100 flex flex-col items-end gap-3 md:bottom-6 md:right-6">
+    <div className="pointer-events-none fixed bottom-5 right-5 z-9998 flex flex-col items-end gap-3">
       {open ? (
-        <div className="pointer-events-auto flex h-[min(34rem,calc(100svh-6rem))] w-[min(24rem,calc(100vw-2rem))] flex-col overflow-hidden rounded-3xl border border-border/80 bg-background/95 shadow-2xl backdrop-blur-xl">
-          <div className="flex items-center justify-between gap-2 border-b border-border/70 bg-linear-to-r from-primary/15 to-accent/10 px-4 py-3">
-            <div>
-              <p className="font-display text-sm font-semibold tracking-tight">{headerTitle}</p>
-              <p className="text-[11px] text-muted-foreground">
-                {locale === "nl" ? "TripleZero iT support" : "TripleZero iT support"}
-              </p>
-            </div>
-            <div className="flex items-center gap-1">
-              <Button
+        <div className="pointer-events-auto flex max-h-[min(70vh,520px)] w-[min(92vw,380px)] flex-col overflow-hidden rounded-2xl border border-border bg-background shadow-2xl">
+          <div className="shrink-0 border-b border-border bg-primary px-4 py-3 text-primary-foreground">
+            <div className="flex items-start justify-between gap-2">
+              <div>
+                <p className="font-display text-sm font-semibold tracking-tight">{copy.title}</p>
+                <p className="text-[11px] opacity-90">{copy.subtitle}</p>
+                <p className="mt-1 flex items-center gap-1.5 text-[11px] opacity-95">
+                  <span className="relative flex h-2 w-2">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+                  </span>
+                  {copy.online}
+                </p>
+              </div>
+              <button
                 type="button"
-                size="icon"
-                variant="ghost"
-                className="h-8 w-8"
                 onClick={() => setOpen(false)}
-                aria-label="Minimize"
+                className="rounded-lg p-1.5 transition hover:bg-white/15"
+                aria-label="Close chat"
               >
-                <Minus className="h-4 w-4" />
-              </Button>
-              <Button
-                type="button"
-                size="icon"
-                variant="ghost"
-                className="h-8 w-8"
-                onClick={() => setOpen(false)}
-                aria-label="Close"
-              >
-                <X className="h-4 w-4" />
-              </Button>
+                <X className="h-5 w-5" />
+              </button>
             </div>
           </div>
 
-          <div className="flex gap-1 border-b border-border/60 px-2 py-2">
+          <div className="flex shrink-0 gap-1 border-b border-border px-2 py-2">
             <button
               type="button"
               onClick={() => setMode("chat")}
@@ -283,16 +334,15 @@ export function LiveChatWidget() {
               )}
             >
               <Ticket className="h-3.5 w-3.5" />
-              {locale === "nl" ? "Nieuw ticket" : "New ticket"}
+              {copy.newTicket}
             </button>
           </div>
 
-          <div className="flex-1 space-y-3 overflow-y-auto px-3 py-3">
+          <div className="min-h-45 flex-1 space-y-2 overflow-y-auto px-3 py-3">
             {mode === "chat" && ticket?.messages?.length ? (
               ticket.messages.map((msg) => {
-                const mine =
-                  msg.senderKind === "GUEST" ||
-                  msg.senderKind === "CLIENT";
+                const mine = msg.senderKind === "GUEST" || msg.senderKind === "CLIENT";
+                const system = msg.senderKind === "SYSTEM";
                 return (
                   <div
                     key={msg.id}
@@ -300,15 +350,19 @@ export function LiveChatWidget() {
                   >
                     <div
                       className={cn(
-                        "max-w-[85%] rounded-2xl px-3 py-2 text-sm leading-relaxed",
+                        "max-w-[90%] rounded-xl px-3 py-2 text-sm leading-relaxed",
                         mine
                           ? "bg-primary text-primary-foreground"
-                          : "bg-muted text-foreground",
+                          : system
+                            ? "border border-border/70 bg-muted/40 text-foreground"
+                            : "bg-muted text-foreground",
                       )}
                     >
                       {!mine ? (
                         <p className="mb-0.5 text-[10px] font-medium uppercase tracking-wide opacity-70">
-                          {msg.sender?.name || "Support"}
+                          {system
+                            ? "Helper"
+                            : msg.sender?.name || "Support"}
                         </p>
                       ) : null}
                       <p className="whitespace-pre-wrap">{msg.body}</p>
@@ -323,21 +377,15 @@ export function LiveChatWidget() {
                 );
               })
             ) : (
-              <div className="rounded-2xl border border-dashed border-border/80 bg-muted/20 p-4 text-sm text-muted-foreground">
-                {mode === "ticket"
-                  ? locale === "nl"
-                    ? "Beschrijf uw vraag — we openen een ticket dat zichtbaar is in uw dashboard."
-                    : "Describe your request — we’ll open a ticket synced to your dashboard."
-                  : locale === "nl"
-                    ? "Stel uw vraag. Ons team antwoordt zo snel mogelijk."
-                    : "Ask a question. Our team will reply as soon as possible."}
-                {loggedIn ? (
+              <div className="rounded-xl border border-dashed border-border/80 bg-muted/20 p-4 text-sm text-muted-foreground">
+                {mode === "ticket" ? copy.emptyTicket : copy.emptyChat}
+                {loggedIn && !isStaff ? (
                   <p className="mt-2">
                     <SoftLink
                       href={`/${locale}/crm/tickets`}
                       className="text-primary underline-offset-2 hover:underline"
                     >
-                      {locale === "nl" ? "Bekijk tickets" : "View tickets"}
+                      {copy.viewTickets}
                     </SoftLink>
                   </p>
                 ) : null}
@@ -346,16 +394,20 @@ export function LiveChatWidget() {
             <div ref={bottomRef} />
           </div>
 
-          <form onSubmit={handlePrimarySubmit} className="space-y-2 border-t border-border/70 p-3">
+          <form
+            onSubmit={(e) => void handlePrimarySubmit(e)}
+            className="shrink-0 space-y-2 border-t border-border bg-background p-3"
+          >
             {needsIdentity ? (
               <div className="grid gap-2 sm:grid-cols-2">
                 <div className="space-y-1">
-                  <Label className="text-xs">{locale === "nl" ? "Naam" : "Name"}</Label>
+                  <Label className="text-xs">{copy.name}</Label>
                   <Input
                     value={guestName}
                     onChange={(e) => setGuestName(e.target.value)}
                     required
                     className="h-9"
+                    autoComplete="name"
                   />
                 </div>
                 <div className="space-y-1">
@@ -366,6 +418,7 @@ export function LiveChatWidget() {
                     onChange={(e) => setGuestEmail(e.target.value)}
                     required
                     className="h-9"
+                    autoComplete="email"
                   />
                 </div>
               </div>
@@ -373,44 +426,67 @@ export function LiveChatWidget() {
 
             {mode === "ticket" ? (
               <div className="space-y-1">
-                <Label className="text-xs">{locale === "nl" ? "Onderwerp" : "Subject"}</Label>
+                <Label className="text-xs">{copy.subject}</Label>
                 <Input
                   value={subject}
                   onChange={(e) => setSubject(e.target.value)}
-                  placeholder={locale === "nl" ? "Waar gaat het over?" : "What is this about?"}
+                  placeholder={copy.subjectPh}
                   required
                   className="h-9"
                 />
               </div>
             ) : null}
 
-            <div className="flex items-end gap-2">
-              <Textarea
+            <div className="flex items-center gap-2">
+              <Input
+                ref={inputRef}
                 value={draft}
                 onChange={(e) => setDraft(e.target.value)}
-                placeholder={
-                  locale === "nl" ? "Typ uw bericht…" : "Type your message…"
-                }
-                rows={2}
-                className="min-h-16 resize-none"
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" && !e.shiftKey) {
+                    e.preventDefault();
+                    void handlePrimarySubmit();
+                  }
+                }}
+                placeholder={copy.placeholder}
                 required
+                className="h-10"
+                disabled={busy}
               />
               <Button type="submit" size="icon" className="h-10 w-10 shrink-0" disabled={busy}>
                 <Send className="h-4 w-4" />
               </Button>
             </div>
             {error ? <p className="text-xs text-destructive">{error}</p> : null}
+            <p className="text-[10px] text-muted-foreground">{copy.powered}</p>
           </form>
+        </div>
+      ) : null}
+
+      {!open && teaser ? (
+        <div className="pointer-events-auto relative mb-1 max-w-60 rounded-2xl border border-border bg-background px-3 py-2.5 text-sm shadow-lg">
+          <button
+            type="button"
+            onClick={dismissTeaser}
+            className="absolute right-1.5 top-1.5 rounded p-0.5 text-muted-foreground hover:text-foreground"
+            aria-label="Dismiss"
+          >
+            <X className="h-3.5 w-3.5" />
+          </button>
+          <button type="button" onClick={openChat} className="pr-4 text-left">
+            <span className="font-medium text-foreground">{copy.teaser}</span>
+            <span className="mt-0.5 block text-xs text-muted-foreground">{copy.online}</span>
+          </button>
         </div>
       ) : null}
 
       <button
         type="button"
-        onClick={() => setOpen((v) => !v)}
-        className="pointer-events-auto group relative flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg shadow-primary/25 transition hover:scale-105 hover:shadow-xl"
-        aria-label="Open live chat"
+        onClick={() => (open ? setOpen(false) : openChat())}
+        className="pointer-events-auto relative flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg transition hover:scale-105 hover:bg-primary/90"
+        aria-label={open ? "Close live chat" : "Open live chat"}
       >
-        {open ? <X className="h-6 w-6" /> : <MessageCircle className="h-6 w-6" />}
+        {open ? <X className="h-7 w-7" /> : <MessageCircle className="h-7 w-7" />}
         {!open && ticket ? (
           <span className="absolute -right-0.5 -top-0.5 h-3 w-3 rounded-full bg-accent ring-2 ring-background" />
         ) : null}
@@ -526,7 +602,7 @@ export function StaffTodoPanel({ className }: { className?: string }) {
           placeholder={locale === "nl" ? "Nieuwe taak…" : "New task…"}
           className="h-9"
         />
-            <Button type="submit" size="sm" className="shrink-0">
+        <Button type="submit" size="sm" className="shrink-0">
           {locale === "nl" ? "Toevoegen" : "Add"}
         </Button>
       </form>

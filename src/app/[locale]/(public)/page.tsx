@@ -17,8 +17,8 @@ import { cn } from "@/lib/utils";
 import { getAiScanCount } from "@/lib/ai-scan-count";
 
 const serviceKeys = [
-  { key: "ai", href: "/ai-scan" },
-  { key: "web", href: "/diensten/webdesign-support" },
+  { key: "ai", href: "/diensten/ai-integration" },
+  { key: "web", href: "/diensten/custom-webdesign" },
   { key: "ads", href: "/diensten/digital-marketing" },
   { key: "content", href: "/diensten/content-writing" },
   { key: "seo", href: "/diensten/seo-optimization" },
@@ -45,48 +45,21 @@ export default async function HomePage({
       id: "starter" as const,
       name: pricing("starter"),
       monthlyPrice: 44.95,
-      features: [
-        "1 x domeinnaam .NL - 12 maanden",
-        "1 x webhosting - 12 maanden",
-        "1 x E-commerce shop / website",
-        "1 x AI agent",
-        "AI-scanner",
-        "AEO, GEO & SEO basic",
-        "Premium support",
-        "24/7 monitoring",
-      ],
+      features: pricing.raw("features.starter") as string[],
       featured: false,
     },
     {
       id: "growth" as const,
       name: pricing("growth"),
       monthlyPrice: 99.95,
-      features: [
-        "1 x domeinnaam .NL - 12 maanden",
-        "1 x webhosting - 12 maanden",
-        "1 x E-commerce shop / website",
-        "2 x AI agent",
-        "AI-scanner",
-        "AEO, GEO & SEO plus",
-        "Premium support",
-        "24/7 monitoring",
-      ],
+      features: pricing.raw("features.growth") as string[],
       featured: true,
     },
     {
       id: "enterprise" as const,
       name: pricing("enterprise"),
       monthlyPrice: null,
-      features: [
-        "Unlimited domeinnamen",
-        "Unlimited webhosting",
-        "Unlimited E-commerce shops / websites",
-        "Unlimited AI agents",
-        "AI-scanner",
-        "AEO, GEO & SEO pro",
-        "Premium support",
-        "24/7 monitoring",
-      ],
+      features: pricing.raw("features.enterprise") as string[],
       featured: false,
     },
   ];
@@ -104,7 +77,7 @@ export default async function HomePage({
             </p>
             <div className="mt-8 space-y-3">
               <p className="font-display text-xl font-semibold tracking-tight text-foreground md:text-2xl">
-                {hero("ctaScanTitle")}
+                {hero("ctaHeroTitle")}
               </p>
               <div className="flex flex-wrap items-center gap-3">
                 <Button asChild size="lg" className="rounded-2xl px-7">
@@ -222,14 +195,14 @@ export default async function HomePage({
                 {t("hero.ctaScanTitle")}
               </p>
               <p className="mx-auto mt-4 max-w-xl text-base text-white/70 md:text-lg">
-                {t("hero.subtitle")}
+                {t("hero.ctaBannerText")}
               </p>
               <Button
                 asChild
                 size="lg"
                 className="mt-8 rounded-2xl bg-white text-primary hover:bg-white/90"
               >
-                <SoftLink href={`/${locale}/ai-scan`}>{t("hero.ctaScan")}</SoftLink>
+                <SoftLink href={`/${locale}/afspraak`}>{t("hero.ctaScan")}</SoftLink>
               </Button>
             </div>
           </div>

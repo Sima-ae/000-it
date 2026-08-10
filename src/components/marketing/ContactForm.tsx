@@ -35,6 +35,7 @@ export function ContactForm({
   centered?: boolean;
 }) {
   const t = useTranslations("contact");
+  const common = useTranslations("common");
   const form = useForm<FormValues>({
     resolver: zodResolver(schema),
     defaultValues: { name: "", email: "", company: "", message: defaultMessage },
@@ -47,7 +48,7 @@ export function ContactForm({
       body: JSON.stringify({ ...values, source }),
     });
     if (!res.ok) {
-      toast.error("Failed to send");
+      toast.error(common("failedSend"));
       return;
     }
     toast.success(t("success"));

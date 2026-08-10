@@ -22,6 +22,7 @@ type FormValues = z.infer<typeof schema>;
 
 export function LoginForm() {
   const t = useTranslations("auth");
+  const common = useTranslations("common");
   const locale = useLocale();
   const searchParams = useSearchParams();
   const rawCallback = searchParams.get("callbackUrl") || `/${locale}/dashboard`;
@@ -42,7 +43,7 @@ export function LoginForm() {
       redirect: false,
     });
     if (res?.error) {
-      toast.error("Invalid credentials");
+      toast.error(common("invalidCredentials"));
       return;
     }
     // Full navigation so middleware sees the new session cookie reliably

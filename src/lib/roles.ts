@@ -163,6 +163,13 @@ function matchesPath(path: string, href: string): boolean {
   return path === href || path.startsWith(`${href}/`);
 }
 
+/** Exact match for /crm overview; nested match for deeper client CRM routes */
+function clientCanAccessCrm(path: string): boolean {
+  return CLIENT_CRM_ALLOW.some((href) =>
+    href === "/crm" ? path === "/crm" : matchesPath(path, href),
+  );
+}
+
 export function navForRole(role?: string | null) {
   const r = (role || "CLIENT") as Role;
   return dashboardNav.filter((item) => item.roles.includes(r));
@@ -175,7 +182,7 @@ export function canAccessPath(pathname: string, role?: string | null): boolean {
   // Fine-grained CRM access (prefix /crm would otherwise allow all subroutes)
   if (path === "/crm" || path.startsWith("/crm/")) {
     if (isStaffRole(r)) return true;
-    return CLIENT_CRM_ALLOW.some((href) => matchesPath(path, href));
+    return clientCanAccessCrm(path);
   }
 
   // Legacy aliases still used by old bookmarks

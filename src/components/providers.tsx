@@ -8,7 +8,9 @@ import { Suspense, useState } from "react";
 import { Toaster } from "sonner";
 import { ThemeProvider } from "@/components/theme-provider";
 import { RouteProgress } from "@/components/shared/RouteProgress";
+import { PrefetchPublicRoutes } from "@/components/shared/PrefetchPublicRoutes";
 
+/** Same pattern as catalogus: chat FAB mounts immediately (client-only). */
 const LiveChatWidget = dynamic(
   () => import("@/components/chat/LiveChatWidget").then((m) => m.LiveChatWidget),
   { ssr: false },
@@ -42,6 +44,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
           <Suspense fallback={null}>
             <RouteProgress />
           </Suspense>
+          <PrefetchPublicRoutes />
           {children}
           <LiveChatWidget />
           <ThemedToaster />

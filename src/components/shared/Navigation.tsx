@@ -9,12 +9,14 @@ import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/shared/ThemeToggle";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { ServicesMegaMenu } from "@/components/shared/ServicesMegaMenu";
+import { InfoDropdown } from "@/components/shared/InfoDropdown";
+import { LanguageSwitcher } from "@/components/shared/LanguageSwitcher";
 import { serviceCatalog, serviceHref, sortedServiceGroups } from "@/content/fixweb/catalog";
 import { cn } from "@/lib/utils";
 
 const primaryLinks = [
   { href: "", key: "home" },
-  { href: "/over-ons", key: "about" },
+  { href: "/over-ons", key: "info", info: true },
   { href: "/ai-scan", key: "aiScan" },
   { href: "/diensten", key: "services", mega: true },
   { href: "/portfolio", key: "portfolio" },
@@ -32,10 +34,8 @@ export function Navigation() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const [mobileInfoOpen, setMobileInfoOpen] = useState(false);
   const isNl = locale === "nl";
-
-  const otherLocale = locale === "nl" ? "en" : "nl";
-  const switchedPath = pathname.replace(/^\/(nl|en)/, `/${otherLocale}`);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -47,6 +47,7 @@ export function Navigation() {
   useEffect(() => {
     setOpen(false);
     setMobileServicesOpen(false);
+    setMobileInfoOpen(false);
   }, [pathname]);
 
   return (
@@ -87,6 +88,21 @@ export function Navigation() {
                 );
               }
 
+              if ("info" in link && link.info) {
+                return (
+                  <InfoDropdown
+                    key={link.key}
+                    locale={locale}
+                    label={t("info")}
+                    aboutLabel={t("about")}
+                    termsLabel={t("terms")}
+                    cookiesLabel={t("cookies")}
+                    privacyLabel={t("privacy")}
+                    active={active}
+                  />
+                );
+              }
+
               return (
                 <SoftLink
                   key={link.key}
@@ -109,12 +125,7 @@ export function Navigation() {
             >
               {t("book")}
             </SoftLink>
-            <SoftLink
-              href={switchedPath}
-              className="rounded-xl border border-border/70 px-2 py-1 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground transition hover:bg-muted/70 hover:text-foreground"
-            >
-              {otherLocale}
-            </SoftLink>
+            <LanguageSwitcher />
             {session?.user ? (
               <>
                 <Button asChild size="sm" variant="outline" className="hidden rounded-xl sm:inline-flex">
@@ -143,7 +154,7 @@ export function Navigation() {
               type="button"
               className="rounded-xl p-2 text-muted-foreground transition hover:bg-muted/70 xl:hidden"
               onClick={() => setOpen((v) => !v)}
-              aria-label="Menu"
+              aria-label={locale === "nl" ? "Menu openen" : "Open menu"}
             >
               {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
@@ -225,6 +236,58 @@ export function Navigation() {
                               </div>
                             );
                           })}
+                        </div>
+                      ) : null}
+                    </div>
+                  );
+                }
+
+                if ("info" in link && link.info) {
+                  return (
+                    <div key={link.key}>
+                      <button
+                        type="button"
+                        className={cn(
+                          "flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-left text-sm text-muted-foreground hover:bg-muted/70 hover:text-foreground",
+                          active && "bg-primary/10 text-foreground",
+                        )}
+                        onClick={() => setMobileInfoOpen((v) => !v)}
+                      >
+                        {t("info")}
+                        <span className="text-xs">{mobileInfoOpen ? "−" : "+"}</span>
+                      </button>
+                      {mobileInfoOpen ? (
+                        <div className="mb-2 ml-2 border-l border-border/60 pl-3">
+                          <SoftLink
+                            href={`/${locale}/over-ons`}
+                            className="block py-1.5 text-sm text-muted-foreground hover:text-foreground"
+                          >
+                            {t("about")}
+                          </SoftLink>
+                          <SoftLink
+                            href={`/${locale}/voorwaarden`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block py-1.5 text-sm text-muted-foreground hover:text-foreground"
+                          >
+                            {t("terms")}
+                          </SoftLink>
+                          <SoftLink
+                            href={`/${locale}/cookies`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block py-1.5 text-sm text-muted-foreground hover:text-foreground"
+                          >
+                            {t("cookies")}
+                          </SoftLink>
+                          <SoftLink
+                            href={`/${locale}/privacy`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block py-1.5 text-sm text-muted-foreground hover:text-foreground"
+                          >
+                            {t("privacy")}
+                          </SoftLink>
                         </div>
                       ) : null}
                     </div>

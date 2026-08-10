@@ -3,7 +3,12 @@
 import { useTranslations, useLocale } from "next-intl";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { CopyrightBar } from "@/components/shared/CopyrightBar";
-import { legalPages, serviceCatalog, serviceHref } from "@/content/fixweb/catalog";
+
+const legalPages = [
+  { href: "/privacy", key: "privacy" },
+  { href: "/cookies", key: "cookies" },
+  { href: "/voorwaarden", key: "terms" },
+] as const;
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -12,22 +17,11 @@ export function Footer() {
   const isNl = locale === "nl";
   const year = new Date().getFullYear();
 
-  const quickServices = serviceCatalog.filter((s) =>
-    [
-      "ai-scan",
-      "webdesign-support",
-      "digital-design",
-      "wordpress-support",
-      "seo-optimization",
-      "web-hosting",
-    ].includes(s.slug),
-  );
-
   return (
     <footer className="relative mt-16">
       <div className="mx-auto max-w-6xl px-4 pt-8 pb-4 md:px-6 md:pt-10 md:pb-5">
         <div className="glass overflow-hidden rounded-3xl">
-          <div className="grid gap-8 px-6 py-7 sm:grid-cols-2 md:grid-cols-4 md:gap-6 md:px-8 md:py-8">
+          <div className="grid gap-8 px-6 py-7 sm:grid-cols-2 md:grid-cols-3 md:gap-6 md:px-8 md:py-8">
             <div>
               <p className="font-display text-lg font-semibold tracking-tight text-foreground">
                 TripleZero iT
@@ -41,21 +35,6 @@ export function Footer() {
               >
                 info@000-it.com
               </a>
-            </div>
-
-            <div className="flex flex-col gap-1.5 text-sm text-muted-foreground">
-              <p className="mb-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-foreground">
-                {nav("services")}
-              </p>
-              {quickServices.map((item) => (
-                <SoftLink
-                  key={item.slug}
-                  href={serviceHref(locale, item)}
-                  className="leading-snug transition hover:text-foreground"
-                >
-                  {isNl ? item.titleNl : item.title}
-                </SoftLink>
-              ))}
             </div>
 
             <div className="flex flex-col gap-1.5 text-sm text-muted-foreground">
@@ -81,15 +60,17 @@ export function Footer() {
 
             <div className="flex flex-col gap-1.5 text-sm text-muted-foreground">
               <p className="mb-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-foreground">
-                {isNl ? "Juridisch" : "Legal"}
+                {isNl ? "Informatie" : "Legal"}
               </p>
               {legalPages.map((page) => (
                 <SoftLink
                   key={page.href}
                   href={`/${locale}${page.href}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="leading-snug transition hover:text-foreground"
                 >
-                  {isNl ? page.titleNl : page.title}
+                  {nav(page.key)}
                 </SoftLink>
               ))}
             </div>

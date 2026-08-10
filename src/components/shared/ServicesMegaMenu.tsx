@@ -10,11 +10,12 @@ import { cn } from "@/lib/utils";
 
 const featuredByGroup: Record<string, string[]> = {
   ai: [
-    "ai-scan",
     "aeo-optimization",
     "geo-optimization",
-    "ai-content-strategy",
+    "seo-optimization",
+    "ai-scan",
     "ai-chatbots",
+    "ai-content-strategy",
     "ai-automation",
     "ai-workflows",
     "ai-marketing-agents",
@@ -54,7 +55,6 @@ const featuredByGroup: Record<string, string[]> = {
     "magazines-brochures",
   ],
   marketing: [
-    "seo-optimization",
     "digital-marketing",
     "content-writing",
     "social-media-management",

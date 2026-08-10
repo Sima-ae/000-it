@@ -31,7 +31,7 @@ export const aiInWordpressService: CustomService = {
     "Bring practical AI into your WordPress site — chatbots, content assistance, WooCommerce helpers, automation and custom plugins — secure, on-brand and built to convert.",
   subtitleNl:
     "Breng praktische AI in uw WordPress-site — chatbots, contenthulp, WooCommerce-assistenten, automatisering en maatwerkplugins — veilig, on-brand en gebouwd om te converteren.",
-  image: "/uploads/fixweb/ai-integratie.png",
+  image: "/uploads/fixweb/ai-in-wordpress.png",
   blocks: [
     h("What “AI in WordPress” means"),
     p(

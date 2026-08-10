@@ -11,11 +11,11 @@ import {
 import { getServiceCardMeta } from "@/lib/fixweb-content";
 
 const aiServices = [
-  { key: "ai", href: "/ai-scan", image: "/uploads/fixweb/ai-integratie.png" },
+  { key: "ai", href: "/diensten/ai-integration", image: "/uploads/fixweb/ai-integratie.png" },
   { key: "seo", href: "/diensten/seo-optimization", image: "/uploads/fixweb/aeo-seo.png" },
   {
     key: "web",
-    href: "/diensten/webdesign-support",
+    href: "/diensten/custom-webdesign",
     image: "/uploads/fixweb/webdesign-conversie.png",
   },
   { key: "content", href: "/diensten/content-writing", image: "/uploads/fixweb/content-social.png" },
@@ -33,6 +33,27 @@ export default async function ServicesPage({
   const t = await getTranslations("services");
   const isNl = locale === "nl";
 
+  const groupSections = sortedServiceGroups(locale)
+    .map((group) => {
+      const cards = serviceCatalog
+        .filter((item) => item.group === group.id && item.slug !== "digital-design")
+        .map((item) => ({ item, content: getServiceCardMeta(item.slug, locale) }))
+        .filter(({ content }) => Boolean(content?.hasBody));
+      return { group, cards };
+    })
+    .filter(({ cards }) => cards.length > 0);
+
+  const jumpLinks = [
+    {
+      id: "meest-populair",
+      label: isNl ? "Meest populair" : "Most popular",
+    },
+    ...groupSections.map(({ group }) => ({
+      id: group.id,
+      label: isNl ? group.titleNl : group.title,
+    })),
+  ];
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
       <Reveal>
@@ -41,31 +62,18 @@ export default async function ServicesPage({
         </h1>
         <p className="mt-3 max-w-2xl text-muted-foreground md:text-lg">{t("subtitle")}</p>
         <div className="mt-6 flex flex-wrap gap-2">
-          <Button asChild variant="outline" className="rounded-2xl">
-            <SoftLink href={`/${locale}/diensten/ai-scan`}>AI</SoftLink>
-          </Button>
-          <Button asChild variant="outline" className="rounded-2xl">
-            <SoftLink href={`/${locale}/diensten/webdesign-support`}>
-              {isNl ? "Website support" : "Website Support"}
-            </SoftLink>
-          </Button>
-          <Button asChild variant="outline" className="rounded-2xl">
-            <SoftLink href={`/${locale}/digital-design`}>
-              {isNl ? "Digital design" : "Digital Design"}
-            </SoftLink>
-          </Button>
-          <Button asChild variant="outline" className="rounded-2xl">
-            <SoftLink href={`/${locale}/diensten/digital-marketing`}>
-              {isNl ? "Digital marketing" : "Digital Marketing"}
-            </SoftLink>
-          </Button>
+          {jumpLinks.map((link) => (
+            <Button key={link.id} asChild variant="outline" className="rounded-2xl">
+              <SoftLink href={`/${locale}/diensten#${link.id}`}>{link.label}</SoftLink>
+            </Button>
+          ))}
         </div>
       </Reveal>
 
-      <section className="mt-12">
+      <section id="meest-populair" className="mt-12 scroll-mt-28">
         <Reveal>
           <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
-            {isNl ? "AI en groei" : "AI & Growth"}
+            {isNl ? "Meest populair" : "Most popular"}
           </h2>
         </Reveal>
         <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -82,60 +90,51 @@ export default async function ServicesPage({
         </div>
       </section>
 
-      {sortedServiceGroups(locale).map((group) => {
-        const cards = serviceCatalog
-          .filter((item) => item.group === group.id)
-          .map((item) => ({ item, content: getServiceCardMeta(item.slug, locale) }))
-          .filter(({ content }) => Boolean(content?.hasBody));
-
-        if (cards.length === 0) return null;
-
-        return (
-          <section key={group.id} className="mt-16">
-            <Reveal>
-              <div className="flex flex-wrap items-end justify-between gap-3">
-                <div>
-                  <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
-                    {isNl ? group.titleNl : group.title}
-                  </h2>
-                  <p className="mt-1 text-sm text-muted-foreground">
-                    {cards.length} {isNl ? "diensten" : "services"}
-                  </p>
-                </div>
-                {group.id === "design" ? (
-                  <SoftLink
-                    href={`/${locale}/digital-design`}
-                    className="text-sm font-medium text-primary hover:underline"
-                  >
-                    {isNl ? "Open digital design" : "Open Digital Design"}
-                  </SoftLink>
-                ) : null}
+      {groupSections.map(({ group, cards }) => (
+        <section key={group.id} id={group.id} className="mt-16 scroll-mt-28">
+          <Reveal>
+            <div className="flex flex-wrap items-end justify-between gap-3">
+              <div>
+                <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
+                  {isNl ? group.titleNl : group.title}
+                </h2>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  {cards.length} {isNl ? "diensten" : "services"}
+                </p>
               </div>
-            </Reveal>
-            <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {cards.map(({ item, content }, i) => {
-                const title = isNl ? item.titleNl : item.title;
-                const summary =
-                  content?.subtitle ||
-                  (isNl ? item.summaryNl : item.summary) ||
-                  "";
-
-                return (
-                  <Reveal key={item.slug} delay={Math.min(i, 8) * 0.03}>
-                    <ServiceCard
-                      href={serviceHref(locale, item)}
-                      title={title}
-                      summary={summary}
-                      price={content?.price ?? undefined}
-                      image={content?.image ?? undefined}
-                    />
-                  </Reveal>
-                );
-              })}
+              {group.id === "design" ? (
+                <SoftLink
+                  href={`/${locale}/digital-design`}
+                  className="text-sm font-medium text-primary hover:underline"
+                >
+                  {isNl ? "Open digital design" : "Open Digital Design"}
+                </SoftLink>
+              ) : null}
             </div>
-          </section>
-        );
-      })}
+          </Reveal>
+          <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {cards.map(({ item, content }, i) => {
+              const title = isNl ? item.titleNl : item.title;
+              const summary =
+                content?.subtitle ||
+                (isNl ? item.summaryNl : item.summary) ||
+                "";
+
+              return (
+                <Reveal key={item.slug} delay={Math.min(i, 8) * 0.03}>
+                  <ServiceCard
+                    href={serviceHref(locale, item)}
+                    title={title}
+                    summary={summary}
+                    price={content?.price ?? undefined}
+                    image={content?.image ?? undefined}
+                  />
+                </Reveal>
+              );
+            })}
+          </div>
+        </section>
+      ))}
     </div>
   );
 }

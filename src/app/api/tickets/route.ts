@@ -15,6 +15,7 @@ const createSchema = z.object({
   guestEmail: z.string().email().optional(),
   clientId: z.string().optional().nullable(),
   projectId: z.string().optional().nullable(),
+  locale: z.string().optional(),
 });
 
 export async function GET() {
@@ -79,11 +80,17 @@ export async function POST(request: Request) {
     clientId = matched?.id ?? null;
   }
 
+  const source = data.source ?? (isClientUser ? "DASHBOARD" : "CHAT");
+  const isNl = (data.locale || "").toLowerCase().startsWith("nl");
+  const helperReply = isNl
+    ? "Hallo! 👋 Helper hier — bedankt voor uw bericht. Ons team heeft dit ontvangen en reageert zo snel mogelijk. U kunt hier ondertussen gerust meer details sturen."
+    : "Hi! 👋 Helper here — thanks for your message. Our team has received it and will reply as soon as possible. Feel free to send more details here in the meantime.";
+
   const ticket = await prisma.supportTicket.create({
     data: {
       subject: data.subject,
       priority: data.priority ?? "MEDIUM",
-      source: data.source ?? (isClientUser ? "DASHBOARD" : "CHAT"),
+      source,
       ticketType: data.ticketType || "General",
       userId: isClientUser ? session!.user.id : null,
       clientId,
@@ -93,11 +100,22 @@ export async function POST(request: Request) {
       guestToken,
       status: "OPEN",
       messages: {
-        create: {
-          body: data.message,
-          senderId: session?.user?.id ?? null,
-          senderKind,
-        },
+        create: [
+          {
+            body: data.message,
+            senderId: session?.user?.id ?? null,
+            senderKind,
+          },
+          ...(source === "CHAT"
+            ? [
+                {
+                  body: helperReply,
+                  senderId: null,
+                  senderKind: "SYSTEM" as const,
+                },
+              ]
+            : []),
+        ],
       },
     },
     include: {

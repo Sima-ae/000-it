@@ -31,7 +31,7 @@ export const aiInEcommerceService: CustomService = {
     "Practical AI for webshops — product assistants, smarter search, cart help, support deflection and automation that lift conversion without hurting trust.",
   subtitleNl:
     "Praktische AI voor webshops — productassistenten, slimmere search, cart-hulp, support-deflection en automatisering die conversie verhogen zonder vertrouwen te schaden.",
-  image: "/uploads/fixweb/ai-advertising.png",
+  image: "/uploads/fixweb/ai-in-ecommerce.png",
   blocks: [
     h("AI built for webshops"),
     p(
@@ -141,7 +141,7 @@ export const aiInWebsiteService: CustomService = {
     "AI for custom websites — chat, lead qualification, knowledge search and automation on PHP, HTML/JS and Next.js sites (not WordPress).",
   subtitleNl:
     "AI voor maatwerkwebsites — chat, leadkwalificatie, knowledge search en automatisering op PHP-, HTML/js- en Next.js-sites (geen WordPress).",
-  image: "/uploads/fixweb/ai-integratie.png",
+  image: "/uploads/fixweb/ai-in-website.png",
   blocks: [
     h("AI for modern websites"),
     p(

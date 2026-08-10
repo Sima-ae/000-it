@@ -64,9 +64,9 @@ const pillars = [
 ] as const;
 
 const stats = [
-  { value: "12u", label: { nl: "gemiddelde response", en: "average response" } },
-  { value: "<2s", label: { nl: "laadtijd-doel", en: "load-time target" } },
-  { value: "24/7", label: { nl: "monitoring en support", en: "monitoring & support" } },
+  { value: "1-4 uur", label: { nl: "gemiddelde response", en: "average response" } },
+  { value: "7 dagen", label: { nl: "bereikbaar", en: "available" } },
+  { value: "24 uur", label: { nl: "monitoring en support", en: "monitoring & support" } },
 ] as const;
 
 export default async function AboutPage({
@@ -89,8 +89,8 @@ export default async function AboutPage({
           </h1>
           <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground md:text-base">
             {isNl
-              ? "AI-gedreven groei, WordPress support, hosting, SEO en marketing — één systeem voor Nederlandse bedrijven."
-              : "AI-driven growth, WordPress support, hosting, SEO and marketing — one system for ambitious businesses."}
+              ? "AI-gedreven groei, WordPress support, hosting, SEO en marketing — één systeem voor Europese bedrijven."
+              : "AI-driven growth, WordPress support, hosting, SEO and marketing — one system for European businesses."}
           </p>
           <div className="mt-5 flex flex-wrap gap-2.5">
             <Button asChild size="sm" className="rounded-xl">
@@ -200,8 +200,8 @@ export default async function AboutPage({
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
               {isNl
-                ? "Met AI-integratie, SEO/AEO/GEO, performance, security en full-funnel marketing zorgen we dat uw website soepel draait, beschermd blijft en meetbaar groeit."
-                : "With AI integration, SEO/AEO/GEO, performance, security and full-funnel marketing we keep your website smooth, protected and measurably growing."}
+                ? "Met AI-integratie, AEO, GEO (lokaal), SEO, performance, security en full-funnel marketing zorgen we dat uw website soepel draait, beschermd blijft en meetbaar groeit."
+                : "With AI integration, AEO, GEO (local), SEO, performance, security and full-funnel marketing we keep your website smooth, protected and measurably growing."}
             </p>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
               {isNl
@@ -220,8 +220,8 @@ export default async function AboutPage({
               </p>
               <p className="mt-2 max-w-sm text-sm text-white/70">
                 {isNl
-                  ? "Plan een gesprek of start direct met een AI-Scan van uw website."
-                  : "Book a call or start with an AI Scan of your website."}
+                  ? "Plan een gesprek of start direct met een AI-scan van uw website."
+                  : "Book a call or start with an AI scan of your website."}
               </p>
             </div>
             <div className="relative mt-6 flex flex-wrap gap-2.5">
@@ -236,7 +236,7 @@ export default async function AboutPage({
                 variant="outline"
                 className="rounded-xl border-white/30 bg-transparent text-white hover:bg-white/10"
               >
-                <SoftLink href={`/${locale}/ai-scan`}>AI-Scan</SoftLink>
+                <SoftLink href={`/${locale}/ai-scan`}>AI-scan</SoftLink>
               </Button>
             </div>
           </div>

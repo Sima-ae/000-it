@@ -2,6 +2,7 @@ import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { Sidebar } from "@/components/dashboard/Sidebar";
+import { DashboardSessionSync } from "@/components/dashboard/DashboardSessionSync";
 import { ContentTransition } from "@/components/shared/ContentTransition";
 import { CopyrightBar } from "@/components/shared/CopyrightBar";
 
@@ -23,6 +24,7 @@ export default async function DashboardLayout({
 
   return (
     <div className="mx-auto flex min-h-screen w-full max-w-7xl flex-col">
+      <DashboardSessionSync />
       <div className="flex flex-1 flex-col md:flex-row">
         <Sidebar />
         <div className="flex-1 p-3 md:p-6 md:pl-0">

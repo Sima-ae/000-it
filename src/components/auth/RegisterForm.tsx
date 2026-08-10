@@ -28,6 +28,7 @@ type FormValues = z.infer<typeof schema>;
 
 export function RegisterForm() {
   const t = useTranslations("auth");
+  const common = useTranslations("common");
   const locale = useLocale();
   const router = useRouter();
   const [step, setStep] = useState(1);
@@ -58,7 +59,7 @@ export function RegisterForm() {
     });
     if (!res.ok) {
       const data = await res.json().catch(() => ({}));
-      toast.error(data.error || "Registration failed");
+      toast.error(data.error || common("registrationFailed"));
       return;
     }
     await signIn("credentials", {

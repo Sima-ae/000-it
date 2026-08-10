@@ -21,6 +21,7 @@ export function ServiceInquiryDialog({
   dialogTitle,
   dialogDescription,
   messageHint,
+  defaultMessage: defaultMessageOverride,
   variant = "default",
   size = "lg",
   className,
@@ -32,6 +33,8 @@ export function ServiceInquiryDialog({
   dialogDescription?: string;
   /** Short hint for the prefilled message context (e.g. website / webshop). */
   messageHint?: string;
+  /** Full prefilled message — overrides the default template when set. */
+  defaultMessage?: string;
   variant?: "default" | "outline" | "secondary";
   size?: "default" | "sm" | "lg";
   className?: string;
@@ -41,9 +44,11 @@ export function ServiceInquiryDialog({
   const isNl = locale === "nl";
   const hint = messageHint || (isNl ? "website / webshop" : "website / webshop");
 
-  const defaultMessage = isNl
-    ? `Hallo TripleZero iT,\n\nIk wil graag meer weten over ${serviceTitle} voor onze ${hint}.\n\nWebsite-URL:\nDoel (bijv. chatbot, productassistent, content-AI, maatwerk):\n\n`
-    : `Hi TripleZero iT,\n\nI’d like to learn more about ${serviceTitle} for our ${hint}.\n\nWebsite URL:\nGoal (e.g. chatbot, product assistant, content AI, custom):\n\n`;
+  const defaultMessage =
+    defaultMessageOverride ??
+    (isNl
+      ? `Hallo TripleZero iT,\n\nIk wil graag meer weten over ${serviceTitle} voor onze ${hint}.\n\nWebsite-URL:\nDoel (bijv. chatbot, productassistent, content-AI, maatwerk):\n\n`
+      : `Hi TripleZero iT,\n\nI’d like to learn more about ${serviceTitle} for our ${hint}.\n\nWebsite URL:\nGoal (e.g. chatbot, product assistant, content AI, custom):\n\n`);
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>

@@ -3,42 +3,51 @@
   "nav": {
     "home": "Home",
     "services": "Services",
-    "about": "About",
+    "info": "Information",
+    "about": "About us",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookie Policy",
+    "terms": "Terms and Conditions",
     "cases": "Case Studies",
     "blog": "News",
     "portfolio": "Portfolio",
     "contact": "Contact",
-    "aiScan": "AI Scan",
+    "aiScan": "AI scan",
     "faq": "FAQ",
-    "book": "Book a meeting?",
+    "book": "Book a meeting",
     "login": "Log in",
     "register": "Sign up",
     "dashboard": "Dashboard",
     "logout": "Log out"
   },
+  "language": {
+    "title": "Language"
+  },
   "hero": {
-    "title": "Smart Growth with AI — Your TripleZero iT System",
-    "subtitle": "AI integration, SEO/AEO/GEO and full-funnel marketing in one growth system for ambitious businesses.",
-    "ctaScanTitle": "Entrepreneur or Freelancer?",
-    "ctaScan": "CLICK HERE",
-    "ctaApproach": "See Our Approach",
-    "scansLabel": "AI scans completed"
+    "title": "Grow faster with AI and TripleZero iT",
+    "subtitle": "Advertising, AI integration, AEO, GEO, SEO, online marketing and social media management in one growth platform for businesses and freelancers.",
+    "ctaScanTitle": "Entrepreneur or freelancer?",
+    "ctaHeroTitle": "Get a free AI scan",
+    "ctaScan": "Click here",
+    "ctaBannerText": "We’re happy to answer all your questions and help implement AI in your day-to-day operations.",
+    "ctaApproach": "See our approach",
+    "scansLabel": "in-depth AI scans completed"
   },
   "services": {
     "title": "Services",
     "subtitle": "Everything you need to grow with AI.",
     "items": {
-      "ai": { "title": "AI Integration & Automation", "desc": "Agents and workflows that connect marketing and ops." },
-      "seo": { "title": "AEO, GEO & SEO", "desc": "Visible in Google and AI search engines." },
-      "web": { "title": "Web Design & Conversion", "desc": "Fast sites that turn visitors into customers." },
-      "content": { "title": "Content & Social Media", "desc": "Content engines with human-grade quality." },
-      "ads": { "title": "AI Advertising", "desc": "Google Ads and social campaigns with AI optimization." },
-      "software": { "title": "Custom Software & APIs", "desc": "Platforms that scale with your business." }
+      "ai": { "title": "AI integration & automation", "desc": "Agents and workflows that connect marketing and operations." },
+      "seo": { "title": "AEO, GEO & SEO", "desc": "Get found locally, in Google and in AI search engines." },
+      "web": { "title": "Web design & conversion", "desc": "Fast sites that turn visitors into customers." },
+      "content": { "title": "Content & social media", "desc": "Content engines with human-grade quality." },
+      "ads": { "title": "AI advertising", "desc": "Google Ads and social campaigns with AI optimization." },
+      "software": { "title": "Custom software & APIs", "desc": "Custom coding for agents, bots, platforms and workflows that scale with your business." }
     }
   },
   "pricing": {
     "title": "Pricing",
-    "subtitle": "Pick the plan that fits your growth stage.",
+    "subtitle": "Including 21% VAT — choose the plan that fits your growth.",
     "cta": "Choose Plan",
     "ctaContact": "Contact us",
     "starter": "Business",
@@ -50,19 +59,64 @@
     "monthly": "Monthly",
     "yearly": "Yearly",
     "saveYearly": "Save 10% with yearly billing",
-    "mostChosen": "Most popular"
+    "mostChosen": "Most popular",
+    "features": {
+      "starter": [
+        "1× domain name .COM / .EU / .NL",
+        "1× web hosting",
+        "1× e-commerce shop / website",
+        "1× AI agent",
+        "AI scanner",
+        "AEO, GEO & SEO basic",
+        "Premium support",
+        "24/7 monitoring"
+      ],
+      "growth": [
+        "1× domain name .COM / .EU / .NL",
+        "1× web hosting",
+        "1× e-commerce shop / website",
+        "2× AI agents",
+        "AI scanner",
+        "AEO, GEO & SEO plus",
+        "Premium support",
+        "24/7 monitoring"
+      ],
+      "enterprise": [
+        "Unlimited domain names",
+        "Unlimited web hosting",
+        "Unlimited e-commerce shops / websites",
+        "Unlimited AI agents",
+        "AI scanner",
+        "AEO, GEO & SEO pro",
+        "Premium support",
+        "24/7 monitoring"
+      ]
+    }
   },
   "faq": {
     "title": "FAQ",
     "q1": "What is TripleZero iT?",
-    "a1": "An AI-driven growth platform combining integration, SEO/AEO/GEO and marketing.",
-    "q2": "How does the free AI Scan work?",
-    "a2": "Enter your URL; our agents score SEO, AEO, GEO, performance and AI readiness.",
+    "a1": "An AI-driven growth platform for apps and/or websites, where advertising, AEO/GEO/SEO, online marketing and social media work together for the results you want.",
+    "q2": "How does the free AI scan work?",
+    "a2": "Enter your URL; our agents check AEO, GEO (local), SEO, performance and AI readiness, then we contact you within 48 hours to discuss the results and all options.",
     "q3": "Can I upgrade later?",
-    "a3": "Yes — move between Business, Extra Growth and Enterprise anytime."
+    "a3": "Yes — you can switch between Business, Extra Growth and Enterprise anytime."
+  },
+  "errors": {
+    "title": "Something went wrong",
+    "body": "An unexpected error occurred while loading this page.",
+    "retry": "Try again",
+    "notFoundTitle": "Page not found",
+    "notFoundBody": "The page you are looking for does not exist or was moved.",
+    "backHome": "Back home"
+  },
+  "common": {
+    "failedSend": "Failed to send",
+    "invalidCredentials": "Invalid credentials",
+    "registrationFailed": "Registration failed"
   },
   "footer": {
-    "tagline": "AI-driven growth for modern businesses.",
+    "tagline": "AI-driven growth for businesses.",
     "rights": "All rights reserved."
   },
   "auth": {
@@ -116,7 +170,7 @@
     "recentActivity": "Recent activity",
     "quickActions": "Quick actions",
     "newProject": "New project",
-    "runScan": "Run AI Scan",
+    "runScan": "Run AI scan",
     "comingSoon": "Coming soon",
     "superAdmin": "Super admin",
     "adminConsole": "Admin console",
@@ -164,16 +218,20 @@
   },
   "aiScan": {
     "title": "Free AI Readiness Scan",
-    "subtitle": "Discover your SEO, AEO, GEO and AI readiness scores.",
+    "subtitle": "Discover your AEO, GEO (local), SEO and AI readiness scores.",
     "url": "Website URL",
     "company": "Company name",
     "goals": "Goals",
     "start": "Start scan",
+    "startNew": "Start a new scan",
+    "contact": "Contact us",
+    "resultsHintLead": "Please note!",
+    "resultsHint": "These results are only a quick indication — feel free to contact us for a full summary.",
     "scanning": "AI agents are analyzing your site…",
     "results": "Scan results",
     "seo": "SEO Score",
     "aeo": "AEO Score",
-    "geo": "GEO Score",
+    "geo": "GEO Score (local)",
     "performance": "Performance",
     "readiness": "AI Readiness"
   },
@@ -269,10 +327,14 @@
   "about": {
     "title": "About TripleZero iT",
     "mission": "Mission",
-    "missionText": "Accelerate businesses with practical AI growth systems.",
+    "missionText": "Help businesses with practical AI growth systems.",
     "vision": "Vision",
-    "visionText": "Every scale-up runs on a TripleZero stack: AI, discoverability and marketing.",
+    "visionText": "Develop the right solution(s) for every entrepreneur.",
     "philosophy": "The TripleZero philosophy",
-    "philosophyText": "Three zeros, one system: zero waste, zero silos, zero guesswork."
+    "philosophyText": "000: zero guesswork, zero shortfall and zero waste."
+  },
+  "cases": {
+    "title": "Case Studies",
+    "subtitle": "Results from clients growing with AI."
   }
 }

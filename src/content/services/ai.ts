@@ -27,28 +27,28 @@ function l(items: string[]): ContentBlock {
 /** Full bilingual pages for every AI service in the catalog. */
 export const aiCustomServices: Record<string, CustomService> = {
   "ai-scan": {
-    title: "AI Scan",
+    title: "AI scan",
     titleNl: "AI-scan",
     subtitle:
-      "A structured readiness scan for classic search and AI answer engines — SEO, AEO, GEO and technical foundations in one clear scorecard.",
+      "A structured readiness scan for classic search, answer engines and local visibility — AEO, GEO, SEO and technical foundations in one clear scorecard.",
     subtitleNl:
-      "Een gestructureerde readiness-scan voor klassieke zoekmachines én AI-antwoorden — SEO, AEO, GEO en technische basis in één duidelijke scorekaart.",
-    image: "/uploads/fixweb/ai-integratie.png",
+      "Een gestructureerde readiness-scan voor klassieke zoekmachines, AI-antwoorden én lokale vindbaarheid — AEO, GEO, SEO en technische basis in één duidelijke scorekaart.",
+    image: "/uploads/fixweb/ai-scan.png",
     blocks: [
-      h("What the AI Scan evaluates"),
+      h("What the AI scan evaluates"),
       p(
-        "Search is no longer only ten blue links. Your brand must also be understandable to answer engines and generative systems. The TripleZero iT AI Scan measures how ready your site is for that shift — and what to fix first.",
+        "Search is no longer only ten blue links. Your brand must also be understandable to answer engines and discoverable in the right geography. The TripleZero iT AI scan measures how ready your site is for that shift — and what to fix first.",
       ),
       l([
-        "SEO fundamentals: titles, structure, crawlability and on-page clarity",
         "AEO signals: answer-ready content, FAQ patterns and entity clarity",
-        "GEO readiness: how well generative engines can cite and summarize you",
+        "GEO readiness: local pack, Maps and geographic search signals",
+        "SEO fundamentals: titles, structure, crawlability and on-page clarity",
         "Technical indicators: performance, mobile UX and structural hygiene",
         "Prioritized actions with business impact, not vanity metrics",
       ]),
       h("What you receive"),
       l([
-        "A scored overview across SEO, AEO, GEO and AI readiness",
+        "A scored overview across AEO, GEO, SEO and AI readiness",
         "Concrete improvement backlog ordered by impact",
         "Clear language for marketers and developers alike",
         "Optional follow-up proposal to execute the fixes",
@@ -58,7 +58,7 @@ export const aiCustomServices: Record<string, CustomService> = {
         "Brands launching or redesigning a website",
         "Teams investing in content or paid acquisition",
         "Agencies that need a fast client baseline",
-        "Leadership that wants AI visibility without guesswork",
+        "Leadership that wants search visibility without guesswork",
       ]),
       h("How to start"),
       p(
@@ -68,18 +68,18 @@ export const aiCustomServices: Record<string, CustomService> = {
     blocksNl: [
       h("Wat de AI-scan beoordeelt"),
       p(
-        "Zoeken is niet meer alleen tien blauwe links. Uw merk moet ook begrijpelijk zijn voor antwoordenengines en generatieve systemen. De TripleZero iT AI-scan meet hoe klaar uw site is voor die verschuiving — en wat u eerst moet fixen.",
+        "Zoeken is niet meer alleen tien blauwe links. Uw merk moet ook begrijpelijk zijn voor antwoordenengines en vindbaar in de juiste regio. De TripleZero iT AI-scan meet hoe klaar uw site is voor die verschuiving — en wat u eerst moet fixen.",
       ),
       l([
-        "SEO-fundamentals: titles, structuur, crawlbaarheid en on-page duidelijkheid",
         "AEO-signalen: antwoordklare content, FAQ-patronen en entity-clarity",
-        "GEO-readiness: hoe goed generatieve engines u kunnen citeren en samenvatten",
+        "GEO-readiness: local pack, Maps en geografische zoeksignalen",
+        "SEO-fundamentals: titles, structuur, crawlbaarheid en on-page duidelijkheid",
         "Technische indicatoren: performance, mobile UX en structurele hygiëne",
         "Geprioriteerde acties met business-impact, geen vanity metrics",
       ]),
       h("Wat u krijgt"),
       l([
-        "Een score-overzicht over SEO, AEO, GEO en AI-readiness",
+        "Een score-overzicht over AEO, GEO, SEO en AI-readiness",
         "Concrete verbeterbacklog op impact gesorteerd",
         "Duidelijke taal voor marketeers én developers",
         "Optioneel vervolgvoorstel om fixes uit te voeren",
@@ -89,7 +89,7 @@ export const aiCustomServices: Record<string, CustomService> = {
         "Merken die een site lanceren of herontwerpen",
         "Teams die investeren in content of paid acquisition",
         "Bureaus die snel een baseline voor klanten nodig hebben",
-        "Management dat AI-zichtbaarheid wil zonder giswerk",
+        "Management dat zoekzichtbaarheid wil zonder giswerk",
       ]),
       h("Aan de slag"),
       p(
@@ -105,7 +105,7 @@ export const aiCustomServices: Record<string, CustomService> = {
       "Answer Engine Optimization so your brand shows up in AI answers — clear, citable and trusted, aligned with SEO and GEO.",
     subtitleNl:
       "Answer engine optimization zodat uw merk verschijnt in AI-antwoorden — helder, citeerbaar en betrouwbaar, afgestemd op SEO en GEO.",
-    image: "/uploads/fixweb/aeo-seo.png",
+    image: "/uploads/fixweb/aeo-optimalisatie.png",
     blocks: [
       h("Why AEO matters"),
       p(
@@ -121,10 +121,10 @@ export const aiCustomServices: Record<string, CustomService> = {
       ]),
       h("AEO with SEO and GEO"),
       p(
-        "AEO works best when it is not a silo. We align answer-ready content with technical SEO health and GEO signals so classic rankings and AI answers reinforce each other — one backlog, shared priorities and shared measurement.",
+        "AEO works best when it is not a silo. We align answer-ready content with technical SEO health and geographic search signals so classic rankings, local visibility and AI answers reinforce each other — one backlog, shared priorities and shared measurement.",
       ),
       l([
-        "Intent research spanning classic and generative queries",
+        "Intent research spanning classic, local and AI-assisted queries",
         "On-page upgrades that serve rankings and answer extraction",
         "Templates for service, product and hub pages",
         "Reporting that links organic + AI-assisted demand to leads",
@@ -135,11 +135,11 @@ export const aiCustomServices: Record<string, CustomService> = {
         "Content and template blueprint for answer-ready pages",
         "Implementation on WordPress, Next.js or your CMS",
         "Measurement framework for citations, branded queries and assisted traffic",
-        "Optional 90-day execution plan after an AI Scan baseline",
+        "Optional 90-day execution plan after an AI scan baseline",
       ]),
       h("Best paired with"),
       p(
-        "GEO optimization, AI content strategy and a periodic AI Scan to track readiness as models and SERPs evolve.",
+        "GEO (geographic) optimization, AI content strategy and a periodic AI scan to track readiness as models and SERPs evolve.",
       ),
     ],
     blocksNl: [
@@ -157,10 +157,10 @@ export const aiCustomServices: Record<string, CustomService> = {
       ]),
       h("AEO met SEO en GEO"),
       p(
-        "AEO werkt het best wanneer het geen silo is. Wij stemmen antwoordklare content af op technische SEO-health en GEO-signalen zodat klassieke rankings en AI-antwoorden elkaar versterken — één backlog, gedeelde prioriteiten en gedeelde meting.",
+        "AEO werkt het best wanneer het geen silo is. Wij stemmen antwoordklare content af op technische SEO-health en geografische zoeksignalen zodat klassieke rankings, lokale vindbaarheid en AI-antwoorden elkaar versterken — één backlog, gedeelde prioriteiten en gedeelde meting.",
       ),
       l([
-        "Intent-onderzoek over klassieke én generatieve queries",
+        "Intent-onderzoek over klassieke, lokale én AI-assisted queries",
         "On-page upgrades die rankings én antwoordextractie dienen",
         "Templates voor dienst-, product- en hubpagina’s",
         "Rapportage die organische + AI-assisted vraag koppelt aan leads",
@@ -175,7 +175,7 @@ export const aiCustomServices: Record<string, CustomService> = {
       ]),
       h("Sterk in combinatie met"),
       p(
-        "GEO-optimalisatie, AI-contentstrategie en een periodieke AI-scan om readiness te volgen naarmate models en SERPs veranderen.",
+        "GEO (geografische) optimalisatie, AI-contentstrategie en een periodieke AI-scan om readiness te volgen naarmate models en SERPs veranderen.",
       ),
     ],
   },
@@ -184,58 +184,60 @@ export const aiCustomServices: Record<string, CustomService> = {
     title: "GEO Optimization",
     titleNl: "GEO optimalisatie",
     subtitle:
-      "Generative Engine Optimization to strengthen how AI systems summarize, recommend and cite your brand.",
+      "Geographic Search Engine Optimization so customers nearby find you — on Maps, local packs and location-based search.",
     subtitleNl:
-      "Generative engine optimization om te versterken hoe AI-systemen uw merk samenvatten, aanbevelen en citeren.",
-    image: "/uploads/fixweb/aeo-seo.png",
+      "Geographic Search Engine Optimization zodat klanten in uw regio u vinden — in Maps, local packs en locatiegericht zoeken.",
+    image: "/uploads/fixweb/geo-optimization.png",
     blocks: [
       h("GEO vs classic SEO"),
       p(
-        "GEO focuses on generative search experiences: AI overviews, chat answers and multi-source summaries. We make your brand easier to trust, quote and place in those narratives.",
+        "Geographic Search Engine Optimization (GEO) focuses on visibility where place matters: Google Maps, the local pack, “near me” queries and city- or region-specific searches. Classic SEO builds topical authority; GEO makes sure your business shows up in the right geography at the right moment.",
       ),
       h("Our GEO approach"),
       l([
-        "Topic maps aligned to generative query patterns",
-        "Authoritative pages with clear claims and supporting proof",
-        "Consistent NAP / brand facts across the web where relevant",
-        "Content formats that models can chunk and attribute",
-        "Monitoring of brand mentions and competitive share of voice in AI answers",
+        "Google Business Profile optimization and review strategy",
+        "Consistent NAP (name, address, phone) across directories and citations",
+        "Location and service-area pages with clear local intent",
+        "Local schema, maps embeds and geo-relevant internal linking",
+        "Local keyword research and competitor gap analysis by city/region",
+        "Monitoring of Maps rankings, local pack presence and call/direction actions",
       ]),
       h("Outcomes you can expect"),
       l([
-        "Stronger presence in generative answers for priority intents",
-        "Cleaner brand narrative when AI explains who you are",
-        "Fewer incorrect or incomplete AI summaries about your offer",
-        "A roadmap that stays useful as engines keep changing",
+        "Stronger presence in local packs and Maps for priority areas",
+        "More qualified leads from nearby customers and service areas",
+        "Cleaner location signals so search engines trust where you operate",
+        "A scalable playbook when you expand to new cities or branches",
       ]),
       h("Engagement model"),
       p(
-        "Start with audit + quick wins, then a monthly GEO retainer for content, technical tweaks and monitoring — or a fixed project for a launch or redesign.",
+        "Start with a local audit + quick wins, then a monthly GEO retainer for listings, location content and monitoring — or a fixed project for a multi-location rollout or redesign.",
       ),
     ],
     blocksNl: [
       h("GEO vs klassieke SEO"),
       p(
-        "GEO richt zich op generatieve zoekervaringen: AI-overviews, chatantwoorden en multi-bron samenvattingen. Wij maken uw merk makkelijker te vertrouwen, te citeren en te plaatsen in die verhalen.",
+        "Geographic Search Engine Optimization (GEO) richt zich op vindbaarheid waar locatie telt: Google Maps, de local pack, “bij mij in de buurt”-zoekopdrachten en stad- of regiozoeken. Klassieke SEO bouwt topical authority; GEO zorgt dat uw bedrijf op de juiste plek op het juiste moment zichtbaar is.",
       ),
       h("Onze GEO-aanpak"),
       l([
-        "Topic maps afgestemd op generatieve query-patronen",
-        "Authoritatieve pagina’s met heldere claims en bewijs",
-        "Consistente NAP- / merkfeiten online waar relevant",
-        "Contentformats die models kunnen chunkken en attribuëren",
-        "Monitoring van brand mentions en concurrentie in AI-antwoorden",
+        "Optimalisatie van Google Business Profile en reviewstrategie",
+        "Consistente NAP (naam, adres, telefoon) in directories en citaties",
+        "Locatie- en werkgebiedpagina’s met duidelijke lokale intentie",
+        "Lokale schema, kaarten en geo-relevante interne linking",
+        "Lokaal keywordonderzoek en concurrentieanalyse per stad/regio",
+        "Monitoring van Maps-rankings, local-pack aanwezigheid en bel-/route-acties",
       ]),
       h("Resultaten die u mag verwachten"),
       l([
-        "Sterkere aanwezigheid in generatieve antwoorden op prioriteitsintenties",
-        "Schonere merkvertelling wanneer AI uitlegt wie u bent",
-        "Minder incorrecte of incomplete AI-samenvattingen over uw aanbod",
-        "Een roadmap die bruikbaar blijft terwijl engines blijven veranderen",
+        "Sterkere aanwezigheid in local packs en Maps voor prioriteitsgebieden",
+        "Meer gekwalificeerde leads van klanten in de buurt en werkgebieden",
+        "Schonere locatiesignalen zodat zoekmachines vertrouwen waar u actief bent",
+        "Een schaalbaar playbook wanneer u uitbreidt naar nieuwe steden of vestigingen",
       ]),
       h("Samenwerkingsvorm"),
       p(
-        "Start met audit + quick wins, daarna een maandelijkse GEO-retainer voor content, technische tweaks en monitoring — of een vast project bij launch of redesign.",
+        "Start met een lokale audit + quick wins, daarna een maandelijkse GEO-retainer voor listings, locatiecontent en monitoring — of een vast project voor multi-locatie rollout of redesign.",
       ),
     ],
   },
@@ -247,12 +249,10 @@ export const aiCustomServices: Record<string, CustomService> = {
       "Human-led content systems accelerated by AI — on-brand, SEO/AEO-ready and measurable.",
     subtitleNl:
       "Mensgestuurde contentsystemen versneld met AI — on-brand, SEO/AEO-klaar en meetbaar.",
-    image: "/uploads/fixweb/content-social.png",
+    image: "/uploads/fixweb/ai-content-strategy.png",
     blocks: [
-      h("AI that strengthens quality"),
-      p(
-        "We use AI to research, draft and scale — never to publish thin generic text. Every piece is edited for voice, accuracy, differentiation and conversion.",
-      ),
+      h("A content system that uses AI responsibly"),
+      p("AI can accelerate research and production, but it cannot replace expertise or judgement. We build a practical content system that gives your team more output while protecting brand voice, factual accuracy and commercial focus."),
       h("What we build"),
       l([
         "Editorial calendars tied to SEO/AEO topic clusters",
@@ -261,23 +261,25 @@ export const aiCustomServices: Record<string, CustomService> = {
         "Review workflows with fact-check and compliance gates",
         "Performance loops: what ranks, what converts, what to retire",
       ]),
-      h("Governance"),
+      h("How we develop the strategy"),
+      p("We start with your audience, offer, sales journey and existing content. From there we select the topics and formats with the clearest business value, define the production workflow and establish how performance will be reviewed."),
+      h("Quality and governance"),
       l([
         "Source requirements and claim standards",
         "Human approval before publish",
         "No duplicate or spun content across locales",
         "Clear ownership between marketing and subject-matter experts",
       ]),
-      h("Packages"),
-      p(
-        "From a one-off content sprint to a monthly production retainer. Combine with Social Media or Ads when you need multi-channel reuse.",
-      ),
+      h("What you receive"),
+      l(["Audience and topic-cluster plan", "Editorial calendar with priorities and formats", "Brand voice and prompting guidance", "Templates for briefs, drafting and human review", "Measurement plan linking content to visibility, leads and learning"]),
+      h("Ideal for"),
+      l(["Marketing teams that need consistent expert content", "B2B businesses building SEO and AEO visibility", "Organisations scaling NL and English content", "Teams that want AI adoption without publishing generic copy"]),
+      h("How to start"),
+      p("We can begin with a content audit and strategy workshop, a focused production sprint or a monthly retainer. The right option depends on your content maturity and capacity."),
     ],
     blocksNl: [
-      h("AI die kwaliteit versterkt"),
-      p(
-        "We gebruiken AI om te researchen, te draften en te schalen — nooit om dunne generieke tekst te publiceren. Elk stuk wordt geredigeerd op tone of voice, juistheid, onderscheid en conversie.",
-      ),
+      h("Een contentsysteem dat AI verantwoord inzet"),
+      p("AI kan research en productie versnellen, maar vervangt geen expertise of oordeel. We bouwen een praktisch contentsysteem waarmee uw team meer kan produceren, zonder concessies aan merkstem, feitelijke juistheid en commerciële focus."),
       h("Wat we bouwen"),
       l([
         "Redactionele kalenders gekoppeld aan SEO/AEO-topicclusters",
@@ -286,28 +288,32 @@ export const aiCustomServices: Record<string, CustomService> = {
         "Review-workflows met factcheck en compliance-gates",
         "Performance-loops: wat rankt, wat converteert, wat stoppen",
       ]),
-      h("Governance"),
+      h("Hoe we de strategie ontwikkelen"),
+      p("We starten bij uw doelgroep, aanbod, sales journey en bestaande content. Daarna kiezen we thema’s en formats met de duidelijkste businesswaarde, bepalen we de productieworkflow en leggen we vast hoe we resultaten evalueren."),
+      h("Kwaliteit en governance"),
       l([
         "Bronvereisten en claimstandaarden",
         "Menselijke goedkeuring vóór publicatie",
         "Geen duplicate of gespinde content over locales",
         "Duidelijk ownership tussen marketing en subject-matter experts",
       ]),
-      h("Pakketten"),
-      p(
-        "Van een eenmalige contentsprint tot een maandelijkse productieretainer. Combineer met Social Media of Ads wanneer u multi-channel hergebruik nodig heeft.",
-      ),
+      h("Wat u krijgt"),
+      l(["Plan voor doelgroep en topicclusters", "Redactionele kalender met prioriteiten en formats", "Richtlijnen voor merkstem en prompting", "Templates voor briefs, drafting en menselijke review", "Meetplan dat content koppelt aan zichtbaarheid, leads en leren"]),
+      h("Ideaal voor"),
+      l(["Marketingteams die consistente expertcontent nodig hebben", "B2B-bedrijven die SEO- en AEO-zichtbaarheid opbouwen", "Organisaties die NL- en Engelstalige content opschalen", "Teams die AI willen inzetten zonder generieke copy te publiceren"]),
+      h("Aan de slag"),
+      p("We kunnen beginnen met een contentaudit en strategiesessie, een gerichte productiesprint of een maandelijkse retainer. Wat past, hangt af van uw contentvolwassenheid en capaciteit."),
     ],
   },
 
   "ai-chatbots": {
-    title: "AI Agents and ChatBots",
+    title: "AI Agents and Chatbots",
     titleNl: "AI agents en chatbots",
     subtitle:
       "Professional AI agents and chatbots that answer, qualify, guide and escalate — grounded in your knowledge, on-brand and built for conversion and support.",
     subtitleNl:
       "Professionele AI-agents en chatbots die antwoorden, kwalificeren, begeleiden en escaleren — grounded in uw knowledge, on-brand en gebouwd voor conversie en support.",
-    image: "/uploads/fixweb/ai-integratie.png",
+    image: "/uploads/fixweb/ai-chatbots.png",
     blocks: [
       h("Agents and chatbots — what’s the difference?"),
       p(
@@ -443,7 +449,7 @@ export const aiCustomServices: Record<string, CustomService> = {
       "Use AI to automate repetitive work across marketing, sales, support and operations — with clear ROI, guardrails and human control where it matters.",
     subtitleNl:
       "Gebruik AI om repetitief werk te automatiseren in marketing, sales, support en operations — met duidelijke roi, guardrails en menselijke controle waar het telt.",
-    image: "/uploads/fixweb/maatwerk-software.png",
+    image: "/uploads/fixweb/ai-automation.png",
     blocks: [
       h("What AI automation is"),
       p(
@@ -561,7 +567,7 @@ export const aiCustomServices: Record<string, CustomService> = {
       "End-to-end AI workflows: triggers, steps, branching, approvals and integrations — designed for reliability, not one-off prompts.",
     subtitleNl:
       "End-to-end AI-workflows: triggers, stappen, branching, goedkeuringen en integraties — ontworpen voor betrouwbaarheid, geen eenmalige prompts.",
-    image: "/uploads/fixweb/ai-integratie.png",
+    image: "/uploads/fixweb/ai-workflows.png",
     blocks: [
       h("What an AI workflow is"),
       p(
@@ -671,12 +677,10 @@ export const aiCustomServices: Record<string, CustomService> = {
       "Specialized AI agents for SEO, content, social and ads — coordinated with human strategy.",
     subtitleNl:
       "Gespecialiseerde AI-agents voor SEO, content, social en ads — gecoördineerd met menselijke strategie.",
-    image: "/uploads/fixweb/ai-advertising.png",
+    image: "/uploads/fixweb/ai-marketing-agents.png",
     blocks: [
-      h("Agents with a job description"),
-      p(
-        "Generic chatbots are not a marketing system. We configure role-based agents that research, draft, score and suggest — while your team (or ours) decides what goes live.",
-      ),
+      h("Role-based AI that supports your marketing team"),
+      p("Generic chat is not a marketing system. We configure specialised agents with a clear role, approved knowledge and measurable output—while your team or ours keeps control over strategy, publishing and budget."),
       h("Agent roles we deploy"),
       l([
         "SEO agent: gaps, briefs and technical flags",
@@ -685,22 +689,26 @@ export const aiCustomServices: Record<string, CustomService> = {
         "Ads agent: creative angles and performance hypotheses",
         "Orchestration so agents share context instead of conflicting",
       ]),
-      h("Inside your TripleZero workspace"),
-      p(
-        "Where available, agents surface in the client dashboard with status, tasks and outputs — so progress is visible, not buried in chat history.",
-      ),
-      h("Guardrails"),
+      h("How agents fit your process"),
+      p("We map where research, drafting, review and approval currently slow down. Each agent receives a defined input, output, escalation route and owner, so it assists a repeatable process instead of creating more content to manage."),
+      h("Control, safety and quality"),
       l([
         "Brand and compliance prompt packs",
         "Approval gates before publish or spend",
         "Human strategy ownership for KPI targets",
+        "Approved data sources and clear do-not-do rules",
+        "Performance reviews to improve useful outputs over time",
       ]),
+      h("What you receive"),
+      l(["Agent role definitions and workflow map", "Brand-aware instructions and prompt library", "Configured agent outputs for your team or dashboard", "Review and approval checkpoints", "Training and a plan for ongoing refinement"]),
+      h("Ideal for"),
+      l(["Marketing teams with recurring SEO, content, social or ads work", "B2B organisations that need more output without losing quality", "Agencies supporting multiple client accounts", "Teams that need transparent AI usage and clear ownership"]),
+      h("How to start"),
+      p("We start with one high-value marketing process and a clear success measure. After a controlled pilot, we expand only where the agent demonstrably saves time or improves quality."),
     ],
     blocksNl: [
-      h("Agents met een functieomschrijving"),
-      p(
-        "Generieke chatbots zijn geen marketingssysteem. Wij configureren rolgebaseerde agents die researchen, draften, scoren en voorstellen — terwijl uw team (of het onze) beslist wat live gaat.",
-      ),
+      h("Rolgebaseerde AI die uw marketingteam ondersteunt"),
+      p("Generieke chat is geen marketingssysteem. We configureren gespecialiseerde agents met een duidelijke rol, goedgekeurde knowledge en meetbare output—terwijl uw team of het onze de strategie, publicatie en het budget beheert."),
       h("Agentrollen die we inzetten"),
       l([
         "SEO-agent: gaps, briefs en technische flags",
@@ -709,16 +717,22 @@ export const aiCustomServices: Record<string, CustomService> = {
         "Ads-agent: creative angles en performance-hypotheses",
         "Orchestratie zodat agents context delen in plaats van conflicteren",
       ]),
-      h("In uw TripleZero-workspace"),
-      p(
-        "Waar beschikbaar ziet u agents in het klantdashboard met status, taken en outputs — zodat voortgang zichtbaar is, niet begraven in chathistorie.",
-      ),
-      h("Guardrails"),
+      h("Hoe agents in uw proces passen"),
+      p("We brengen in kaart waar research, drafting, review en goedkeuring nu vertragen. Elke agent krijgt een gedefinieerde input, output, escalatieroute en eigenaar, zodat hij een herhaalbaar proces ondersteunt in plaats van extra werk te creëren."),
+      h("Controle, veiligheid en kwaliteit"),
       l([
         "Merk- en compliance-promptpacks",
         "Goedkeuringsgates vóór publicatie of spend",
         "Menselijk strategy-ownership voor KPI-targets",
+        "Goedgekeurde databronnen en duidelijke grenzen",
+        "Performancereviews om bruikbare output te verbeteren",
       ]),
+      h("Wat u krijgt"),
+      l(["Agentrolbeschrijvingen en workflowmap", "Merkrichtlijnen en promptbibliotheek", "Geconfigureerde agentoutput voor uw team of dashboard", "Review- en goedkeuringsmomenten", "Training en plan voor doorlopende verfijning"]),
+      h("Ideaal voor"),
+      l(["Marketingteams met terugkerend SEO-, content-, social- of ads-werk", "B2B-organisaties die meer output willen zonder kwaliteitsverlies", "Bureaus die meerdere klantaccounts ondersteunen", "Teams die transparant AI-gebruik en duidelijk eigenaarschap nodig hebben"]),
+      h("Aan de slag"),
+      p("We starten met één waardevol marketingproces en een duidelijke succesmaat. Na een gecontroleerde pilot breiden we alleen uit waar de agent aantoonbaar tijd bespaart of kwaliteit verbetert."),
     ],
   },
 
@@ -729,12 +743,10 @@ export const aiCustomServices: Record<string, CustomService> = {
       "Custom AI features in your product or stack — APIs, embeddings, RAG and secure deployment.",
     subtitleNl:
       "Maatwerk AI-features in uw product of stack — API’s, embeddings, rag en veilige deployment.",
-    image: "/uploads/fixweb/ai-integratie.png",
+    image: "/uploads/fixweb/ai-integration.png",
     blocks: [
-      h("Built for your use case"),
-      p(
-        "When off-the-shelf tools are not enough, we design and ship AI capabilities into your website, portal or internal tools — with architecture that can evolve.",
-      ),
+      h("AI capabilities integrated into the tools you use"),
+      p("When a standalone AI tool is not enough, we design and build the capability into your website, portal or internal systems. The result is a useful product feature or workflow, not a disconnected experiment."),
       h("Technical scope"),
       l([
         "Retrieval-augmented generation over your private docs",
@@ -743,6 +755,8 @@ export const aiCustomServices: Record<string, CustomService> = {
         "Auth, rate limits, logging and cost controls",
         "Frontend UX for chat, search and copilots in Next.js or your stack",
       ]),
+      h("How we make integration reliable"),
+      p("We define the user problem, permitted data, quality threshold and operational owner before selecting technology. A small prototype validates the experience; production work adds authentication, monitoring, evaluation and the safeguards needed for real users."),
       h("Delivery process"),
       l([
         "Discovery workshop and success metrics",
@@ -750,16 +764,16 @@ export const aiCustomServices: Record<string, CustomService> = {
         "MVP in weeks, then iterate on quality and cost",
         "Handover docs, runbooks and optional retainership",
       ]),
-      h("Fit"),
-      p(
-        "SaaS products, client portals, knowledge-heavy businesses and agencies building AI into their own offerings.",
-      ),
+      h("What you receive"),
+      l(["A solution design aligned with your existing stack", "Working AI feature or integration in a safe delivery environment", "Data, access and cost-control configuration", "Evaluation cases and monitoring recommendations", "Technical documentation and a practical handover"]),
+      h("Ideal for"),
+      l(["SaaS products adding AI-powered user experiences", "Client portals and internal knowledge tools", "Knowledge-heavy businesses that need reliable answers from approved sources", "Agencies embedding AI capabilities into their own services"]),
+      h("How to start"),
+      p("Share the user problem, systems involved and the outcome you expect. We assess feasibility, data readiness and the smallest valuable MVP."),
     ],
     blocksNl: [
-      h("Gebouwd voor uw use-case"),
-      p(
-        "Wanneer standaardtools tekortschieten, ontwerpen en leveren we AI-capabilities in uw website, portal of interne tools — met architectuur die kan meegroeien.",
-      ),
+      h("AI-capabilities geïntegreerd in de tools die u gebruikt"),
+      p("Wanneer een losse AI-tool niet genoeg is, ontwerpen en bouwen we de capability in uw website, portal of interne systemen. Het resultaat is een bruikbare productfeature of workflow, geen losstaand experiment."),
       h("Technische scope"),
       l([
         "Retrieval-augmented generation over uw private docs",
@@ -768,6 +782,8 @@ export const aiCustomServices: Record<string, CustomService> = {
         "Auth, rate limits, logging en kostencontrole",
         "Frontend-UX voor chat, search en copilots in Next.js of uw stack",
       ]),
+      h("Hoe we integraties betrouwbaar maken"),
+      p("We bepalen het gebruikersprobleem, toegestane data, kwaliteitsgrens en operationele eigenaar voordat we technologie kiezen. Een klein prototype valideert de ervaring; productiewerk voegt authenticatie, monitoring, evaluatie en guardrails voor echte gebruikers toe."),
       h("Opleverproces"),
       l([
         "Discovery-workshop en success metrics",
@@ -775,10 +791,12 @@ export const aiCustomServices: Record<string, CustomService> = {
         "MVP in weken, daarna itereren op kwaliteit en kosten",
         "Handover-docs, runbooks en optioneel retainership",
       ]),
-      h("Passend voor"),
-      p(
-        "SaaS-producten, klantportalen, knowledge-intensieve bedrijven en bureaus die AI in hun eigen aanbod bouwen.",
-      ),
+      h("Wat u krijgt"),
+      l(["Een solution design dat past bij uw bestaande stack", "Werkende AI-feature of integratie in een veilige opleveromgeving", "Configuratie voor data, toegang en kostencontrole", "Evaluatiecases en monitoringadvies", "Technische documentatie en praktische overdracht"]),
+      h("Ideaal voor"),
+      l(["SaaS-producten die AI-ervaringen voor gebruikers toevoegen", "Klantportalen en interne knowledgetools", "Knowledge-intensieve bedrijven die betrouwbare antwoorden uit goedgekeurde bronnen nodig hebben", "Bureaus die AI-capabilities in hun eigen diensten verwerken"]),
+      h("Aan de slag"),
+      p("Deel het gebruikersprobleem, betrokken systemen en de gewenste uitkomst. Wij beoordelen haalbaarheid, data-readiness en de kleinste waardevolle MVP."),
     ],
   },
 
@@ -789,12 +807,10 @@ export const aiCustomServices: Record<string, CustomService> = {
       "Executive-ready AI strategy: where to invest, what to avoid, and how to measure ROI safely.",
     subtitleNl:
       "Bestuursklare AI-strategie: waar te investeren, wat te vermijden, en hoe roi veilig te meten.",
-    image: "/uploads/fixweb/ai-advertising.png",
+    image: "/uploads/fixweb/ai-consultancy.png",
     blocks: [
-      h("Clarity before tooling"),
-      p(
-        "Most AI projects fail from unclear goals, not weak models. We help you choose use cases, vendors and operating models that match risk appetite and commercial targets.",
-      ),
+      h("Make informed AI decisions before investing"),
+      p("Most AI initiatives struggle because the business problem, ownership or measures of success are unclear. We help leadership and operational teams choose practical use cases, manage risk and create a roadmap that can be delivered."),
       h("Advisory themes"),
       l([
         "Opportunity mapping across marketing, support, product and ops",
@@ -803,22 +819,24 @@ export const aiCustomServices: Record<string, CustomService> = {
         "KPI frameworks and pilot design",
         "Team enablement: prompts, review rituals and ownership",
       ]),
-      h("Formats"),
+      h("Our consultancy approach"),
+      p("We combine stakeholder interviews, process review and opportunity scoring with a realistic view of your data, systems and capacity. Recommendations are prioritised by value, feasibility, risk and the evidence needed to proceed."),
+      h("What you receive"),
+      l(["A clear view of where AI can and cannot help", "Prioritised use-case backlog with owners and success measures", "Build-versus-buy and vendor assessment where relevant", "Governance recommendations for privacy, quality and human oversight", "A phased roadmap from pilot to scaled adoption"]),
+      h("Engagement formats"),
       l([
         "Half-day strategy workshop",
         "4–6 week discovery with roadmap",
         "Ongoing fractional AI lead for leadership meetings",
       ]),
+      h("Ideal for"),
+      l(["Leadership teams deciding where to focus AI investment", "Businesses with many ideas but no agreed priorities", "Organisations preparing a first AI pilot", "Teams that need independent technical and operational guidance"]),
       h("Next step"),
-      p(
-        "Book an intake. We leave you with a prioritized backlog — and can execute selected items via our AI delivery services.",
-      ),
+      p("Book an intake and bring the processes or opportunities currently under discussion. You leave with a prioritised direction, and TripleZero iT can implement selected items through the relevant AI delivery service."),
     ],
     blocksNl: [
-      h("Eerst helderheid, dan tooling"),
-      p(
-        "De meeste AI-projecten falen door onduidelijke doelen, niet door zwakke models. Wij helpen use-cases, vendors en operating models te kiezen die passen bij risicobereidheid en commerciële targets.",
-      ),
+      h("Neem onderbouwde AI-beslissingen vóór u investeert"),
+      p("De meeste AI-initiatieven lopen vast omdat het bedrijfsprobleem, eigenaarschap of de succesmaat onduidelijk is. We helpen management en operationele teams praktische use-cases kiezen, risico beheersen en een uitvoerbare roadmap maken."),
       h("Advies-thema’s"),
       l([
         "Opportunity mapping over marketing, support, product en ops",
@@ -827,16 +845,20 @@ export const aiCustomServices: Record<string, CustomService> = {
         "KPI-frameworks en pilotontwerp",
         "Team enablement: prompts, review-rituelen en ownership",
       ]),
-      h("Formats"),
+      h("Onze adviesaanpak"),
+      p("We combineren gesprekken met stakeholders, procesanalyse en opportunitiescoring met een realistische blik op uw data, systemen en capaciteit. Aanbevelingen prioriteren we op waarde, haalbaarheid, risico en het bewijs dat nodig is om door te gaan."),
+      h("Wat u krijgt"),
+      l(["Een helder beeld van waar AI wel en niet kan helpen", "Geprioriteerde use-casebacklog met eigenaren en succesmaten", "Build-versus-buy- en vendorbeoordeling waar relevant", "Governanceadvies voor privacy, kwaliteit en menselijke controle", "Gefaseerde roadmap van pilot naar schaalbare toepassing"]),
+      h("Samenwerkingsvormen"),
       l([
         "Halve-dag strategiesessie",
         "4–6 weken discovery met roadmap",
         "Doorlopend fractional AI-lead voor leadership-meetings",
       ]),
+      h("Ideaal voor"),
+      l(["Managementteams die AI-investeringen willen prioriteren", "Bedrijven met veel ideeën maar geen gedeelde focus", "Organisaties die een eerste AI-pilot voorbereiden", "Teams die onafhankelijk technisch en operationeel advies nodig hebben"]),
       h("Volgende stap"),
-      p(
-        "Plan een intake. U krijgt een geprioriteerde backlog — en wij kunnen geselecteerde items uitvoeren via onze AI-deliverydiensten.",
-      ),
+      p("Plan een intake en neem de processen of kansen mee die nu worden besproken. U krijgt een geprioriteerde richting; TripleZero iT kan geselecteerde onderdelen daarna via de passende AI-dienst uitvoeren."),
     ],
   },
 };

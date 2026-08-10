@@ -66,11 +66,29 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     }),
   ],
   callbacks: {
-    async jwt({ token, user }) {
+    async jwt({ token, user, trigger }) {
       if (user) {
         token.id = user.id!;
         token.role = user.role;
+        return token;
       }
+
+      // Backfill / refresh role so middleware allow-lists match the session UI.
+      // Older cookies (or role changes) can leave token.role unset → treated as CLIENT,
+      // which makes staff routes like /portfolio-admin bounce straight back to /dashboard.
+      const userId = typeof token.id === "string" ? token.id : typeof token.sub === "string" ? token.sub : null;
+      const needsRole = typeof token.role !== "string" || trigger === "update";
+      if (userId && needsRole) {
+        const dbUser = await prisma.user.findUnique({
+          where: { id: userId },
+          select: { id: true, role: true },
+        });
+        if (dbUser) {
+          token.id = dbUser.id;
+          token.role = dbUser.role;
+        }
+      }
+
       return token;
     },
     async session({ session, token }) {

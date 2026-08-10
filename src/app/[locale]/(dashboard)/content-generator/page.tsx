@@ -15,7 +15,7 @@ type TemplateId = "blog" | "ads" | "social" | "email" | "landing";
 function buildDraft(locale: string, id: TemplateId, topic: string, audience: string): string {
   const nl = locale === "nl";
   const t = topic.trim();
-  const a = audience.trim() || (nl ? "Nederlandse MKB'ers" : "Dutch SMBs");
+  const a = audience.trim() || (nl ? "Europese MKB'ers" : "European SMBs");
 
   if (id === "blog") {
     return nl
@@ -103,7 +103,7 @@ function buildDraft(locale: string, id: TemplateId, topic: string, audience: str
           `3. AI + marketing die samenwerkt. Ontdek wat ${t} oplevert voor uw bedrijf.`,
           ``,
           `## Sitelnks`,
-          `- AI Scan`,
+          `- AI scan`,
           `- Case studies`,
           `- Contact / Afspraak`,
         ].join("\n")
@@ -123,7 +123,7 @@ function buildDraft(locale: string, id: TemplateId, topic: string, audience: str
           `3. AI + marketing that compounds. See what ${t} unlocks for your business.`,
           ``,
           `## Sitelinks`,
-          `- AI Scan`,
+          `- AI scan`,
           `- Case studies`,
           `- Contact / Book a call`,
         ].join("\n");
@@ -391,7 +391,7 @@ export default function ContentGeneratorPage() {
               className="min-h-80 font-mono text-sm"
               value={output}
               onChange={(e) => setOutput(e.target.value)}
-              placeholder={locale === "nl" ? "U concept verschijnt hier…" : "Your draft appears here…"}
+              placeholder={locale === "nl" ? "Uw concept verschijnt hier…" : "Your draft appears here…"}
             />
           </CardContent>
         </Card>

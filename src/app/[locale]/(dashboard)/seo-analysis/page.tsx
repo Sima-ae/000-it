@@ -45,8 +45,8 @@ export default async function SeoAnalysisPage({
                 ? "Alle scans in het systeem — plus een nieuwe scan starten."
                 : "All scans across the workspace — plus run a new scan."
               : locale === "nl"
-                ? "Bekijk uw SEO/AEO/GEO-scan geschiedenis en start een nieuwe scan."
-                : "Review your AI/SEO scan history and run a new scan."}
+                ? "Bekijk uw AEO / GEO (lokaal) / SEO-scan geschiedenis en start een nieuwe scan."
+                : "Review your AEO / GEO (local) / SEO scan history and run a new scan."}
           </p>
         </div>
         <Button asChild>
@@ -62,14 +62,14 @@ export default async function SeoAnalysisPage({
           {!scans.length && (
             <p className="text-muted-foreground">
               {locale === "nl"
-                ? "Nog geen scans. Start met een gratis AI Scan voor SEO, AEO en GEO scores."
-                : "No scans yet. Start with a free AI Scan to generate SEO, AEO and GEO scores."}
+                ? "Nog geen scans. Start met een gratis AI scan voor AEO, GEO (lokaal) en SEO scores."
+                : "No scans yet. Start with a free AI scan to generate AEO, GEO (local) and SEO scores."}
             </p>
           )}
           {scans.map((scan) => {
-            const seo = scoreFromResults(scan.results, "seo");
             const aeo = scoreFromResults(scan.results, "aeo");
             const geo = scoreFromResults(scan.results, "geo");
+            const seo = scoreFromResults(scan.results, "seo");
             return (
               <div
                 key={scan.id}
@@ -84,9 +84,9 @@ export default async function SeoAnalysisPage({
                 </div>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="outline">{scan.status}</Badge>
-                  {seo !== null ? <Badge variant="secondary">SEO {seo}</Badge> : null}
                   {aeo !== null ? <Badge variant="secondary">AEO {aeo}</Badge> : null}
                   {geo !== null ? <Badge variant="outline">GEO {geo}</Badge> : null}
+                  {seo !== null ? <Badge variant="secondary">SEO {seo}</Badge> : null}
                 </div>
               </div>
             );

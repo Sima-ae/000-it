@@ -12,16 +12,7 @@ export type ServiceNavItem = {
 
 /** Service/page inventory mapped into TripleZero routes under /diensten/[slug] */
 export const serviceCatalog: ServiceNavItem[] = [
-  // AI
-  {
-    slug: "ai-scan",
-    title: "AI Scan",
-    titleNl: "AI-scan",
-    kind: "page",
-    group: "ai",
-    summary: "Readiness scan for SEO, AEO, GEO and AI answer engines.",
-    summaryNl: "Readiness-scan voor SEO, AEO, GEO en AI-antwoordenengines.",
-  },
+  // AI (display order: AEO → GEO → SEO → AI-scan → chatbots → rest)
   {
     slug: "aeo-optimization",
     title: "AEO Optimization",
@@ -37,8 +28,37 @@ export const serviceCatalog: ServiceNavItem[] = [
     titleNl: "GEO optimalisatie",
     kind: "page",
     group: "ai",
-    summary: "Generative Engine Optimization for AI summaries and citations.",
-    summaryNl: "Generative Engine Optimization voor AI-samenvattingen en citaties.",
+    summary: "Geographic Search Engine Optimization for Maps, local packs and regional search.",
+    summaryNl: "Geographic Search Engine Optimization voor Maps, local packs en regionaal zoeken.",
+  },
+  {
+    slug: "seo-optimization",
+    title: "SEO Optimization",
+    titleNl: "SEO optimalisatie",
+    kind: "product",
+    group: "ai",
+    summary: "Rank higher with technical SEO, content and authority building.",
+    summaryNl: "Hoger ranken met technische SEO, content en autoriteit.",
+  },
+  {
+    slug: "ai-scan",
+    title: "AI scan",
+    titleNl: "AI-scan",
+    kind: "page",
+    group: "ai",
+    summary: "Readiness scan for AEO, GEO (local), SEO and AI answer engines.",
+    summaryNl: "Readiness-scan voor AEO, GEO (lokaal), SEO en AI-antwoordenengines.",
+  },
+  {
+    slug: "ai-chatbots",
+    title: "AI Agents and Chatbots",
+    titleNl: "AI agents en chatbots",
+    kind: "page",
+    group: "ai",
+    summary:
+      "Conversational AI agents and chatbots for websites, support and sales — on-brand, grounded and with human escalation.",
+    summaryNl:
+      "Conversationele AI-agents en chatbots voor websites, support en sales — on-brand, grounded en met menselijke escalatie.",
   },
   {
     slug: "ai-content-strategy",
@@ -48,17 +68,6 @@ export const serviceCatalog: ServiceNavItem[] = [
     group: "ai",
     summary: "Human-led content systems accelerated by AI.",
     summaryNl: "Mensgestuurde contentsystemen versneld met AI.",
-  },
-  {
-    slug: "ai-chatbots",
-    title: "AI Agents and ChatBots",
-    titleNl: "AI agents en chatbots",
-    kind: "page",
-    group: "ai",
-    summary:
-      "Conversational AI agents and chatbots for websites, support and sales — on-brand, grounded and with human escalation.",
-    summaryNl:
-      "Conversationele AI-agents en chatbots voor websites, support en sales — on-brand, grounded en met menselijke escalatie.",
   },
   {
     slug: "ai-automation",
@@ -338,15 +347,6 @@ export const serviceCatalog: ServiceNavItem[] = [
   },
 
   // Marketing
-  {
-    slug: "seo-optimization",
-    title: "SEO Optimization",
-    titleNl: "SEO optimalisatie",
-    kind: "product",
-    group: "marketing",
-    summary: "Rank higher with technical SEO, content and authority building.",
-    summaryNl: "Hoger ranken met technische SEO, content en autoriteit.",
-  },
   {
     slug: "digital-marketing",
     title: "Digital Marketing",

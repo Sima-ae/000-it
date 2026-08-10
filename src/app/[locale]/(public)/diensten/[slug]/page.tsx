@@ -251,7 +251,7 @@ export default async function ServiceDetailPage({
               )}
               <Button asChild variant="outline" className="rounded-2xl">
                 <SoftLink href={`/${locale}/ai-scan`}>
-                  {isNl ? "Gratis AI-Scan" : "Free AI Scan"}
+                  {isNl ? "Gratis AI-scan" : "Free AI scan"}
                 </SoftLink>
               </Button>
             </div>

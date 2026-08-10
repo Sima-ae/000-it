@@ -1,17 +1,22 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
+import { useLocale } from "next-intl";
 
 const bars = [42, 68, 55, 82, 61, 74, 88, 57];
 const scores = [
-  { label: "SEO", value: 88 },
   { label: "AEO", value: 84 },
   { label: "GEO", value: 79 },
-  { label: "AI", value: 91 },
+  { label: "SEO", value: 88 },
 ];
+const totalScore = Math.round(
+  scores.reduce((sum, item) => sum + item.value, 0) / scores.length,
+);
 
 export function HeroVisual() {
   const reduce = useReducedMotion();
+  const locale = useLocale();
+  const isNl = locale === "nl";
 
   return (
     <div className="relative flex h-full w-full items-center justify-center">
@@ -24,19 +29,21 @@ export function HeroVisual() {
         <div className="mb-5 flex items-center justify-between gap-3">
           <div>
             <p className="font-display text-lg font-semibold tracking-tight text-foreground">
-              AI Readiness
+              AI Ready?
             </p>
-            <p className="text-sm text-muted-foreground">Live growth signal</p>
+            <p className="text-sm text-muted-foreground">
+              {isNl ? "Live growth signalen" : "Live growth signals"}
+            </p>
           </div>
           <div className="rounded-2xl border border-border/70 bg-transparent px-3 py-2 text-right">
-            <p className="font-display text-2xl font-bold text-accent">92</p>
+            <p className="font-display text-2xl font-bold text-accent">{totalScore}</p>
             <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
               Score
             </p>
           </div>
         </div>
 
-        <div className="mb-5 grid grid-cols-4 gap-2">
+        <div className="mb-5 grid grid-cols-3 gap-2">
           {scores.map((item) => (
             <div
               key={item.label}
