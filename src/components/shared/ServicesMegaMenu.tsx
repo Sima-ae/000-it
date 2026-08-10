@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { SoftLink } from "@/components/shared/SoftLink";
-import { serviceCatalog, serviceGroups } from "@/content/fixweb/catalog";
+import { serviceCatalog, serviceGroups, serviceHref } from "@/content/fixweb/catalog";
 import { cn } from "@/lib/utils";
 
 const featuredByGroup: Record<string, string[]> = {
@@ -15,7 +15,33 @@ const featuredByGroup: Record<string, string[]> = {
     "wordpress-backup-hosting-migration",
     "premium-support",
   ],
-  marketing: ["seo-optimization"],
+  webdesign: [
+    "webdesign-support",
+    "custom-webdesign",
+    "nextjs-development",
+    "php-web-development",
+    "html-css-javascript",
+    "website-maintenance",
+  ],
+  design: [
+    "digital-design",
+    "logo-brand-identity",
+    "business-cards-stationery",
+    "flyers-posters",
+    "stickers-packaging",
+    "magazines-brochures",
+  ],
+  marketing: [
+    "seo-optimization",
+    "digital-marketing",
+    "content-writing",
+    "social-media-management",
+    "media-creation",
+    "e-commerce",
+    "product-listing",
+    "community-management",
+    "data-entry",
+  ],
   hosting: [
     "shared-hosting-basic",
     "shared-hosting-plus",
@@ -83,11 +109,10 @@ export function ServicesMegaMenu({
 
       {open ? (
         <div
-          className="absolute left-1/2 top-full z-50 w-[min(92vw,720px)] -translate-x-1/2 pt-3"
+          className="absolute left-1/2 top-full z-50 w-[min(96vw,980px)] -translate-x-1/2 pt-3"
           onMouseEnter={openMenu}
           onMouseLeave={scheduleClose}
         >
-          {/* Invisible bridge fills the gap under the trigger so hover never drops */}
           <div className="pointer-events-none absolute inset-x-0 top-0 h-3" />
           <div className="rounded-3xl border border-border/70 bg-background/95 p-4 shadow-xl backdrop-blur-xl">
             <div className="mb-3 flex items-center justify-between gap-3 px-1">
@@ -102,7 +127,7 @@ export function ServicesMegaMenu({
                 {isNl ? "Overzicht" : "Overview"}
               </SoftLink>
             </div>
-            <div className="grid gap-4 md:grid-cols-3">
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
               {serviceGroups.map((group) => {
                 const slugs = featuredByGroup[group.id] || [];
                 const items = slugs
@@ -118,7 +143,7 @@ export function ServicesMegaMenu({
                         item ? (
                           <SoftLink
                             key={item.slug}
-                            href={`/${locale}/diensten/${item.slug}`}
+                            href={serviceHref(locale, item)}
                             className="rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-muted/70 hover:text-foreground"
                             onClick={() => setOpen(false)}
                           >

@@ -17,11 +17,11 @@ import { getAiScanCount } from "@/lib/ai-scan-count";
 
 const serviceKeys = [
   { key: "ai", href: "/ai-scan" },
-  { key: "web", href: "/diensten/wordpress-plugin-theme-installation" },
+  { key: "web", href: "/diensten/webdesign-support" },
   { key: "ads", href: "/diensten/digital-marketing" },
   { key: "content", href: "/diensten/content-writing" },
   { key: "seo", href: "/diensten/seo-optimization" },
-  { key: "software", href: "/diensten" },
+  { key: "software", href: "/diensten/nextjs-development" },
 ] as const;
 
 export default async function HomePage({

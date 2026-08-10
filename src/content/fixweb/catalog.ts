@@ -3,9 +3,11 @@ export type ServiceNavItem = {
   title: string;
   titleNl: string;
   kind: "page" | "product";
-  group: "wordpress" | "marketing" | "hosting" | "ai";
+  group: "wordpress" | "webdesign" | "marketing" | "hosting" | "design";
   summary?: string;
   summaryNl?: string;
+  /** Optional absolute path override (e.g. /digital-design) */
+  href?: string;
 };
 
 /** Service/page inventory mapped into TripleZero routes under /diensten/[slug] */
@@ -84,6 +86,73 @@ export const serviceCatalog: ServiceNavItem[] = [
     group: "wordpress",
   },
 
+  // Webdesign & Support (non-WordPress)
+  {
+    slug: "webdesign-support",
+    title: "Webdesign & Support",
+    titleNl: "Webdesign & Support",
+    kind: "page",
+    group: "webdesign",
+    summary:
+      "Custom websites and ongoing support for PHP, HTML, CSS, JavaScript and Next.js — not WordPress.",
+    summaryNl:
+      "Maatwerk websites en doorlopende support voor PHP, HTML, CSS, JavaScript en Next.js — geen WordPress.",
+  },
+  {
+    slug: "custom-webdesign",
+    title: "Custom Webdesign",
+    titleNl: "Maatwerk Webdesign",
+    kind: "page",
+    group: "webdesign",
+    summary: "Pixel-sharp, conversion-focused websites built from scratch.",
+    summaryNl: "Pixel-scherpe, conversiegerichte websites vanaf nul gebouwd.",
+  },
+  {
+    slug: "php-web-development",
+    title: "PHP Web Development",
+    titleNl: "PHP Webontwikkeling",
+    kind: "page",
+    group: "webdesign",
+    summary: "Robust PHP applications, APIs and legacy modernization.",
+    summaryNl: "Robuuste PHP-applicaties, API’s en modernisering van legacy code.",
+  },
+  {
+    slug: "nextjs-development",
+    title: "Next.js Development",
+    titleNl: "Next.js Ontwikkeling",
+    kind: "page",
+    group: "webdesign",
+    summary: "Fast, SEO-ready React apps with App Router and modern DX.",
+    summaryNl: "Snelle, SEO-klare React-apps met App Router en moderne DX.",
+  },
+  {
+    slug: "html-css-javascript",
+    title: "HTML / CSS / JavaScript",
+    titleNl: "HTML / CSS / JavaScript",
+    kind: "page",
+    group: "webdesign",
+    summary: "Front-end builds, landing pages and interactive UI without a CMS.",
+    summaryNl: "Front-end builds, landingspagina’s en interactieve UI zonder CMS.",
+  },
+  {
+    slug: "website-maintenance",
+    title: "Website Maintenance & Support",
+    titleNl: "Website Onderhoud & Support",
+    kind: "page",
+    group: "webdesign",
+    summary: "Updates, monitoring, bugfixes and performance care for custom stacks.",
+    summaryNl: "Updates, monitoring, bugfixes en performance-zorg voor maatwerk stacks.",
+  },
+  {
+    slug: "api-integrations",
+    title: "API Integrations",
+    titleNl: "API-integraties",
+    kind: "page",
+    group: "webdesign",
+    summary: "Connect CRMs, payments, ERPs and AI services cleanly.",
+    summaryNl: "Koppel CRM’s, betalingen, ERP’s en AI-diensten netjes aan elkaar.",
+  },
+
   // Marketing
   {
     slug: "seo-optimization",
@@ -91,6 +160,8 @@ export const serviceCatalog: ServiceNavItem[] = [
     titleNl: "SEO Optimalisatie",
     kind: "product",
     group: "marketing",
+    summary: "Rank higher with technical SEO, content and authority building.",
+    summaryNl: "Hoger ranken met technische SEO, content en autoriteit.",
   },
   {
     slug: "digital-marketing",
@@ -98,6 +169,8 @@ export const serviceCatalog: ServiceNavItem[] = [
     titleNl: "Digital Marketing",
     kind: "page",
     group: "marketing",
+    summary: "Full-funnel campaigns across ads, SEO, email and conversion.",
+    summaryNl: "Full-funnel campagnes over ads, SEO, e-mail en conversie.",
   },
   {
     slug: "content-writing",
@@ -105,6 +178,8 @@ export const serviceCatalog: ServiceNavItem[] = [
     titleNl: "Content Writing",
     kind: "page",
     group: "marketing",
+    summary: "SEO blogs, website copy, newsletters and conversion-focused writing.",
+    summaryNl: "SEO-blogs, websiteteksten, nieuwsbrieven en conversiegerichte copy.",
   },
   {
     slug: "social-media-management",
@@ -112,6 +187,8 @@ export const serviceCatalog: ServiceNavItem[] = [
     titleNl: "Social Media Management",
     kind: "page",
     group: "marketing",
+    summary: "Strategy, content calendar and community engagement on every channel.",
+    summaryNl: "Strategie, contentkalender en community-engagement op elk kanaal.",
   },
   {
     slug: "media-creation",
@@ -119,6 +196,8 @@ export const serviceCatalog: ServiceNavItem[] = [
     titleNl: "Media Creation",
     kind: "page",
     group: "marketing",
+    summary: "Visuals, video snippets and creative assets for campaigns.",
+    summaryNl: "Visuals, video-snippets en creatieve assets voor campagnes.",
   },
   {
     slug: "e-commerce",
@@ -126,6 +205,8 @@ export const serviceCatalog: ServiceNavItem[] = [
     titleNl: "E-commerce",
     kind: "page",
     group: "marketing",
+    summary: "Build, optimize and grow your online store end to end.",
+    summaryNl: "Bouw, optimaliseer en groei je webshop van A tot Z.",
   },
   {
     slug: "product-listing",
@@ -133,6 +214,8 @@ export const serviceCatalog: ServiceNavItem[] = [
     titleNl: "Product Listing",
     kind: "page",
     group: "marketing",
+    summary: "Marketplace-ready product titles, descriptions and attributes.",
+    summaryNl: "Marketplace-klare producttitels, beschrijvingen en attributen.",
   },
   {
     slug: "community-management",
@@ -140,6 +223,8 @@ export const serviceCatalog: ServiceNavItem[] = [
     titleNl: "Community Management",
     kind: "page",
     group: "marketing",
+    summary: "Moderation, replies and reputation care across communities.",
+    summaryNl: "Moderatie, reacties en reputatiezorg in communities.",
   },
   {
     slug: "data-entry",
@@ -147,6 +232,67 @@ export const serviceCatalog: ServiceNavItem[] = [
     titleNl: "Data Entry",
     kind: "page",
     group: "marketing",
+    summary: "Accurate catalog, CRM and operations data at scale.",
+    summaryNl: "Nauwkeurige catalogus-, CRM- en operations-data op schaal.",
+  },
+
+  // Digital Design (print & brand visuals)
+  {
+    slug: "digital-design",
+    title: "Digital Design",
+    titleNl: "Digital Design",
+    kind: "page",
+    group: "design",
+    href: "/digital-design",
+    summary:
+      "Logos, business cards, flyers, stickers, magazines and posters in Photoshop, Illustrator and InDesign.",
+    summaryNl:
+      "Logo’s, visitekaartjes, flyers, stickers, magazines en posters in Photoshop, Illustrator en InDesign.",
+  },
+  {
+    slug: "logo-brand-identity",
+    title: "Logo & Brand Identity",
+    titleNl: "Logo & Merkidentiteit",
+    kind: "page",
+    group: "design",
+    summary: "Distinctive logos and brand systems that scale across print and digital.",
+    summaryNl: "Herkende logo’s en merksystemen die schalen over print en digitaal.",
+  },
+  {
+    slug: "business-cards-stationery",
+    title: "Business Cards & Stationery",
+    titleNl: "Visitekaartjes & Briefpapier",
+    kind: "page",
+    group: "design",
+    summary: "Print-ready business cards, letterheads and envelopes.",
+    summaryNl: "Drukklare visitekaartjes, briefpapier en enveloppen.",
+  },
+  {
+    slug: "flyers-posters",
+    title: "Flyers & Posters",
+    titleNl: "Flyers & Posters",
+    kind: "page",
+    group: "design",
+    summary: "Campaign visuals for events, retail and outdoor.",
+    summaryNl: "Campagnevisuals voor events, retail en outdoor.",
+  },
+  {
+    slug: "stickers-packaging",
+    title: "Stickers & Packaging",
+    titleNl: "Stickers & Packaging",
+    kind: "page",
+    group: "design",
+    summary: "Die-cut stickers, labels and simple packaging artwork.",
+    summaryNl: "Contourgestanste stickers, labels en eenvoudige packaging artwork.",
+  },
+  {
+    slug: "magazines-brochures",
+    title: "Magazines & Brochures",
+    titleNl: "Magazines & Brochures",
+    kind: "page",
+    group: "design",
+    summary: "Multi-page layouts in InDesign for print and PDF.",
+    summaryNl: "Meerpagina-layouts in InDesign voor print en PDF.",
   },
 
   // Hosting
@@ -252,6 +398,8 @@ export const serviceCatalog: ServiceNavItem[] = [
 
 export const serviceGroups = [
   { id: "wordpress" as const, title: "WordPress & Support", titleNl: "WordPress & Support" },
+  { id: "webdesign" as const, title: "Webdesign & Support", titleNl: "Webdesign & Support" },
+  { id: "design" as const, title: "Digital Design", titleNl: "Digital Design" },
   { id: "marketing" as const, title: "Marketing & Growth", titleNl: "Marketing & Groei" },
   { id: "hosting" as const, title: "Hosting & Domains", titleNl: "Hosting & Domeinen" },
 ];
@@ -272,5 +420,11 @@ export function getCatalogItem(slug: string) {
 }
 
 export function getServiceSlugs() {
-  return serviceCatalog.map((item) => item.slug);
+  // Only routes under /diensten/[slug] — items with custom href are separate pages
+  return serviceCatalog.filter((item) => !item.href).map((item) => item.slug);
+}
+
+export function serviceHref(locale: string, item: ServiceNavItem) {
+  if (item.href) return `/${locale}${item.href}`;
+  return `/${locale}/diensten/${item.slug}`;
 }

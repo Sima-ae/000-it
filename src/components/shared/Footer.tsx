@@ -3,7 +3,7 @@
 import { useTranslations, useLocale } from "next-intl";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { CopyrightBar } from "@/components/shared/CopyrightBar";
-import { legalPages, serviceCatalog } from "@/content/infoweb/catalog";
+import { legalPages, serviceCatalog, serviceHref } from "@/content/fixweb/catalog";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -14,11 +14,11 @@ export function Footer() {
 
   const quickServices = serviceCatalog.filter((s) =>
     [
+      "webdesign-support",
+      "digital-design",
       "wordpress-support",
       "seo-optimization",
-      "digital-marketing",
       "web-hosting",
-      "wordpress-hosting",
       "domains",
     ].includes(s.slug),
   );
@@ -50,7 +50,7 @@ export function Footer() {
               {quickServices.map((item) => (
                 <SoftLink
                   key={item.slug}
-                  href={`/${locale}/diensten/${item.slug}`}
+                  href={serviceHref(locale, item)}
                   className="leading-snug transition hover:text-foreground"
                 >
                   {isNl ? item.titleNl : item.title}

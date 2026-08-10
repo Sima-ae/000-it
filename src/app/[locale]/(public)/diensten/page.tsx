@@ -1,7 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Reveal } from "@/components/marketing/Reveal";
 import { ServiceCard } from "@/components/content/ServiceCard";
-import { serviceCatalog, serviceGroups } from "@/content/fixweb/catalog";
+import { SoftLink } from "@/components/shared/SoftLink";
+import { Button } from "@/components/ui/button";
+import {
+  serviceCatalog,
+  serviceGroups,
+  serviceHref,
+} from "@/content/fixweb/catalog";
 import { getServiceContent } from "@/lib/fixweb-content";
 
 const aiServices = [
@@ -9,12 +15,12 @@ const aiServices = [
   { key: "seo", href: "/diensten/seo-optimization", image: "/uploads/fixweb/aeo-seo.png" },
   {
     key: "web",
-    href: "/diensten/wordpress-plugin-theme-installation",
+    href: "/diensten/webdesign-support",
     image: "/uploads/fixweb/webdesign-conversie.png",
   },
   { key: "content", href: "/diensten/content-writing", image: "/uploads/fixweb/content-social.png" },
   { key: "ads", href: "/diensten/digital-marketing", image: "/uploads/fixweb/ai-advertising.png" },
-  { key: "software", href: "/contact", image: "/uploads/fixweb/maatwerk-software.png" },
+  { key: "software", href: "/diensten/nextjs-development", image: "/uploads/fixweb/maatwerk-software.png" },
 ] as const;
 
 export default async function ServicesPage({
@@ -34,6 +40,21 @@ export default async function ServicesPage({
           {t("title")}
         </h1>
         <p className="mt-3 max-w-2xl text-muted-foreground md:text-lg">{t("subtitle")}</p>
+        <div className="mt-6 flex flex-wrap gap-2">
+          <Button asChild variant="outline" className="rounded-2xl">
+            <SoftLink href={`/${locale}/diensten/webdesign-support`}>
+              Webdesign & Support
+            </SoftLink>
+          </Button>
+          <Button asChild variant="outline" className="rounded-2xl">
+            <SoftLink href={`/${locale}/digital-design`}>Digital Design</SoftLink>
+          </Button>
+          <Button asChild variant="outline" className="rounded-2xl">
+            <SoftLink href={`/${locale}/diensten/digital-marketing`}>
+              {isNl ? "Digital Marketing" : "Digital Marketing"}
+            </SoftLink>
+          </Button>
+        </div>
       </Reveal>
 
       <section className="mt-12">
@@ -57,47 +78,55 @@ export default async function ServicesPage({
       </section>
 
       {serviceGroups.map((group) => {
-        const priced = serviceCatalog
-          .filter((item) => item.group === group.id && item.kind === "product")
-          .map((item) => {
-            const content = getServiceContent(item.slug);
-            return { item, content };
-          })
-          .filter(
-            ({ content }) =>
-              content &&
-              typeof content.price === "number" &&
-              content.blocks.length > 0,
-          );
+        const cards = serviceCatalog
+          .filter((item) => item.group === group.id)
+          .map((item) => ({ item, content: getServiceContent(item.slug, locale) }))
+          .filter(({ content }) => {
+            if (!content) return false;
+            // Show every service that has real body content and/or a price
+            return content.blocks.length > 0 || typeof content.price === "number";
+          });
 
-        if (priced.length === 0) return null;
+        if (cards.length === 0) return null;
 
         return (
           <section key={group.id} className="mt-16">
             <Reveal>
-              <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
-                {isNl ? group.titleNl : group.title}
-              </h2>
+              <div className="flex flex-wrap items-end justify-between gap-3">
+                <div>
+                  <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
+                    {isNl ? group.titleNl : group.title}
+                  </h2>
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    {cards.length} {isNl ? "diensten" : "services"}
+                  </p>
+                </div>
+                {group.id === "design" ? (
+                  <SoftLink
+                    href={`/${locale}/digital-design`}
+                    className="text-sm font-medium text-primary hover:underline"
+                  >
+                    {isNl ? "Open Digital Design" : "Open Digital Design"}
+                  </SoftLink>
+                ) : null}
+              </div>
             </Reveal>
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {priced.map(({ item, content }, i) => {
+              {cards.map(({ item, content }, i) => {
                 const title = isNl ? item.titleNl : item.title;
-                const firstParagraph = content?.blocks.find((b) => b.type === "paragraph");
                 const summary =
                   content?.subtitle ||
-                  (firstParagraph && firstParagraph.type === "paragraph"
-                    ? firstParagraph.text
-                    : "") ||
+                  (isNl ? item.summaryNl : item.summary) ||
                   "";
 
                 return (
                   <Reveal key={item.slug} delay={Math.min(i, 8) * 0.03}>
                     <ServiceCard
-                      href={`/${locale}/diensten/${item.slug}`}
+                      href={serviceHref(locale, item)}
                       title={title}
                       summary={summary}
-                      price={content?.price}
-                      image={content?.image}
+                      price={content?.price ?? undefined}
+                      image={content?.image ?? undefined}
                     />
                   </Reveal>
                 );

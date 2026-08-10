@@ -43,7 +43,15 @@ const pillars = [
       nl: "Unieke, responsive designs die aansluiten op jouw merk.",
       en: "Unique, responsive design tailored to your brand.",
     },
-    href: "/diensten/wordpress-plugin-theme-installation",
+    href: "/diensten/webdesign-support",
+  },
+  {
+    title: { nl: "Digital Design", en: "Digital Design" },
+    desc: {
+      nl: "Logo’s, visitekaartjes, flyers, posters en print in Adobe.",
+      en: "Logos, business cards, flyers, posters and print in Adobe.",
+    },
+    href: "/digital-design",
   },
   {
     title: { nl: "Web Hosting", en: "Web Hosting" },

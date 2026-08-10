@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/shared/ThemeToggle";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { ServicesMegaMenu } from "@/components/shared/ServicesMegaMenu";
-import { serviceCatalog, serviceGroups } from "@/content/fixweb/catalog";
+import { serviceCatalog, serviceGroups, serviceHref } from "@/content/fixweb/catalog";
 import { cn } from "@/lib/utils";
 
 const primaryLinks = [
@@ -190,12 +190,12 @@ export function Navigation() {
                                 {isNl ? group.titleNl : group.title}
                               </p>
                               {serviceCatalog
-                                .filter((s) => s.group === group.id && s.kind === "product")
-                                .slice(0, 6)
+                                .filter((s) => s.group === group.id)
+                                .slice(0, group.id === "wordpress" || group.id === "hosting" ? 6 : 7)
                                 .map((item) => (
                                   <SoftLink
                                     key={item.slug}
-                                    href={`/${locale}/diensten/${item.slug}`}
+                                    href={serviceHref(locale, item)}
                                     className="block py-1 text-sm text-muted-foreground hover:text-foreground"
                                     onClick={() => setOpen(false)}
                                   >

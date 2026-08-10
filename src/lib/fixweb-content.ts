@@ -2,6 +2,7 @@ import importedPages from "@/content/fixweb/imported-pages.json";
 import importedProducts from "@/content/fixweb/imported-products.json";
 import localImages from "@/content/fixweb/local-images.json";
 import { getCatalogItem, type ServiceNavItem } from "@/content/fixweb/catalog";
+import { getCustomServiceContent } from "@/content/services/custom";
 
 type ImportedPage = {
   title: string;
@@ -113,9 +114,51 @@ export function getImportedProduct(slug: string) {
   };
 }
 
-export function getServiceContent(slug: string) {
+const pageImageFallback: Record<string, string> = {
+  "content-writing": "/uploads/fixweb/content-social.png",
+  "social-media-management": "/uploads/fixweb/content-social.png",
+  "media-creation": "/uploads/fixweb/content-social.png",
+  "community-management": "/uploads/fixweb/content-social.png",
+  "digital-marketing": "/uploads/fixweb/ai-advertising.png",
+  "product-listing": "/uploads/fixweb/ai-advertising.png",
+  "data-entry": "/uploads/fixweb/ai-advertising.png",
+  "e-commerce": "/uploads/fixweb/maatwerk-software.png",
+  "seo-optimization": "/uploads/fixweb/seo-optimization.png",
+  "web-hosting": "/uploads/fixweb/shared-hosting-basic.png",
+  "shared-hosting": "/uploads/fixweb/shared-hosting-plus.png",
+  "wordpress-hosting": "/uploads/fixweb/wordpress-hosting-basic.png",
+  "vps-hosting": "/uploads/fixweb/vps-hosting-basic.png",
+  domains: "/uploads/fixweb/shared-hosting-business.png",
+  "wordpress-support": "/uploads/fixweb/wordpress-security.png",
+};
+
+function firstParagraphSubtitle(blocks: ContentBlock[], fallback = "") {
+  const paragraph = blocks.find((b) => b.type === "paragraph");
+  if (paragraph && paragraph.type === "paragraph") {
+    const text = paragraph.text.trim();
+    if (text.length > 20) return text.length > 220 ? `${text.slice(0, 217)}…` : text;
+  }
+  return fallback;
+}
+
+export function getServiceContent(slug: string, locale: string = "nl") {
   const meta = getCatalogItem(slug);
   if (!meta) return null;
+  const isNl = locale === "nl";
+
+  const custom = getCustomServiceContent(slug, locale);
+  if (custom) {
+    return {
+      meta,
+      title: custom.title,
+      subtitle: custom.subtitle,
+      price: custom.price,
+      currency: custom.currency,
+      image: custom.image,
+      blocks: custom.blocks,
+      kind: custom.kind,
+    };
+  }
 
   if (meta.kind === "product") {
     const product = getImportedProduct(slug);
@@ -126,21 +169,34 @@ export function getServiceContent(slug: string) {
       subtitle: product.shortDescription.split("\n")[0] || meta.summary || "",
       price: product.price,
       currency: product.currency,
-      image: product.localImage,
+      image: product.localImage || pageImageFallback[slug] || null,
       blocks: product.blocks,
       kind: "product" as const,
     };
   }
 
   const page = getImportedPage(slug);
-  if (!page) return null;
+  if (!page) {
+    return {
+      meta,
+      title: isNl ? meta.titleNl : meta.title,
+      subtitle: (isNl ? meta.summaryNl : meta.summary) || "",
+      price: null as number | null,
+      currency: null as string | null,
+      image: pageImageFallback[slug] || null,
+      blocks: [] as ContentBlock[],
+      kind: "page" as const,
+    };
+  }
+
+  const catalogSubtitle = (isNl ? meta.summaryNl : meta.summary) || meta.summary || "";
   return {
     meta,
-    title: page.title || meta.title,
-    subtitle: meta.summary || "",
+    title: isNl ? meta.titleNl || page.title : page.title || meta.title,
+    subtitle: firstParagraphSubtitle(page.blocks, catalogSubtitle),
     price: null as number | null,
     currency: null as string | null,
-    image: null as string | null,
+    image: pageImageFallback[slug] || null,
     blocks: page.blocks,
     kind: "page" as const,
   };
