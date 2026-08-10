@@ -15,7 +15,14 @@ import {
 import { cn } from "@/lib/utils";
 import { getAiScanCount } from "@/lib/ai-scan-count";
 
-const serviceKeys = ["ai", "web", "ads", "content", "seo", "software"] as const;
+const serviceKeys = [
+  { key: "ai", href: "/ai-scan" },
+  { key: "web", href: "/diensten/wordpress-plugin-theme-installation" },
+  { key: "ads", href: "/diensten/digital-marketing" },
+  { key: "content", href: "/diensten/content-writing" },
+  { key: "seo", href: "/diensten/seo-optimization" },
+  { key: "software", href: "/diensten" },
+] as const;
 
 export default async function HomePage({
   params,
@@ -97,24 +104,26 @@ export default async function HomePage({
         </Reveal>
 
         <div className="grid gap-3 md:grid-cols-6">
-          {serviceKeys.map((key, index) => {
+          {serviceKeys.map((item, index) => {
             const span =
               index < 2
                 ? "md:col-span-3"
-                : key === "software"
+                : item.key === "software"
                   ? "md:col-span-6"
                   : "md:col-span-2";
 
             return (
-              <Reveal key={key} delay={index * 0.05} className={cn("h-full", span)}>
-                <GlassCard className="flex h-full flex-col p-5 md:p-5">
-                  <h3 className="font-display text-lg font-semibold tracking-tight md:text-xl">
-                    {services(`items.${key}.title`)}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {services(`items.${key}.desc`)}
-                  </p>
-                </GlassCard>
+              <Reveal key={item.key} delay={index * 0.05} className={cn("h-full", span)}>
+                <SoftLink href={`/${locale}${item.href}`} className="block h-full">
+                  <GlassCard className="flex h-full flex-col p-5 md:p-5">
+                    <h3 className="font-display text-lg font-semibold tracking-tight md:text-xl">
+                      {services(`items.${item.key}.title`)}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                      {services(`items.${item.key}.desc`)}
+                    </p>
+                  </GlassCard>
+                </SoftLink>
               </Reveal>
             );
           })}

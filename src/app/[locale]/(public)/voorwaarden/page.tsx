@@ -1,0 +1,29 @@
+import { setRequestLocale } from "next-intl/server";
+import { Reveal } from "@/components/marketing/Reveal";
+import { ContentBlocks } from "@/components/content/ContentBlocks";
+import { getImportedPage } from "@/lib/fixweb-content";
+
+export default async function TermsPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const page = getImportedPage("terms-and-conditions");
+
+  return (
+    <div className="mx-auto max-w-4xl px-4 py-14 md:px-6 md:py-20">
+      <Reveal>
+        <h1 className="font-display text-4xl font-semibold tracking-tight md:text-5xl">
+          {locale === "nl" ? "Algemene voorwaarden" : page?.title || "Terms and Conditions"}
+        </h1>
+      </Reveal>
+      <Reveal delay={0.08}>
+        <div className="glass mt-10 rounded-[1.75rem] p-6 md:p-10">
+          <ContentBlocks blocks={page?.blocks || []} />
+        </div>
+      </Reveal>
+    </div>
+  );
+}
