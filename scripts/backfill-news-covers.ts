@@ -1,20 +1,24 @@
 /**
- * Assign unique title-based covers to every news post.
- * Uses deterministic Pollinations URLs (unique per post id + title).
- * Optionally downloads local caches with --download.
+ * Assign unique covers to every news post and cache them under public/uploads/nieuws.
  *
  *   npm run news:covers
- *   npm run news:covers -- --download
+ *   npm run news:covers -- --force
+ *   npm run news:covers -- --remote-only   (DB URLs only, not recommended)
  */
 import { prisma } from "../src/lib/prisma";
 import {
   buildNewsCoverRemoteUrl,
   ensureNewsCoverImage,
+  localNewsCoverPath,
 } from "../src/lib/auto-news/cover-image";
 
+async function sleep(ms: number) {
+  await new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 async function main() {
-  const download = process.argv.includes("--download");
   const force = process.argv.includes("--force");
+  const remoteOnly = process.argv.includes("--remote-only");
 
   const posts = await prisma.newsPost.findMany({
     select: {
@@ -29,10 +33,11 @@ async function main() {
   });
 
   console.log(
-    `Assigning unique covers for ${posts.length} posts (${download ? "download+cache" : "remote unique URLs"})…`,
+    `Assigning unique covers for ${posts.length} posts (${remoteOnly ? "remote URLs" : "local cache"})…`,
   );
 
   let updated = 0;
+  let local = 0;
   for (const [index, post] of posts.entries()) {
     const tags = Array.isArray(post.tags) ? post.tags.map(String) : [];
     const input = {
@@ -43,9 +48,16 @@ async function main() {
       excerpt: post.excerpt,
     };
 
-    const coverImage = download
-      ? await ensureNewsCoverImage(input, { force, download: true })
-      : buildNewsCoverRemoteUrl(input);
+    const coverImage = remoteOnly
+      ? buildNewsCoverRemoteUrl(input)
+      : await ensureNewsCoverImage(input, {
+          force,
+          download: true,
+          retries: 5,
+          delayMs: 2000,
+        });
+
+    if (coverImage.startsWith("/uploads/")) local += 1;
 
     if (post.coverImage !== coverImage) {
       await prisma.newsPost.update({
@@ -55,13 +67,29 @@ async function main() {
       updated += 1;
     }
 
-    console.log(`[${index + 1}/${posts.length}] ${post.id}`);
+    console.log(`[${index + 1}/${posts.length}] ${post.id} → ${coverImage}`);
+
+    // Pace Pollinations to avoid 429 when downloading many covers.
+    if (!remoteOnly) await sleep(1200);
   }
 
   const covers = await prisma.newsPost.findMany({ select: { id: true, coverImage: true } });
   const unique = new Set(covers.map((c) => c.coverImage || ""));
-  const dups = covers.length - unique.size;
-  console.log(JSON.stringify({ posts: covers.length, updated, uniqueCovers: unique.size, duplicateSlots: dups }, null, 2));
+  const remoteLeft = covers.filter((c) => (c.coverImage || "").includes("pollinations")).length;
+  console.log(
+    JSON.stringify(
+      {
+        posts: covers.length,
+        updated,
+        local,
+        uniqueCovers: unique.size,
+        remoteLeft,
+        expectedLocal: localNewsCoverPath("example"),
+      },
+      null,
+      2,
+    ),
+  );
 }
 
 main()
