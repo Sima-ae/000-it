@@ -44,14 +44,14 @@ export default async function HomePage({
     {
       id: "starter" as const,
       name: pricing("starter"),
-      monthlyPrice: 44.95,
+      monthlyPrice: 39.95,
       features: pricing.raw("features.starter") as string[],
       featured: false,
     },
     {
       id: "growth" as const,
       name: pricing("growth"),
-      monthlyPrice: 99.95,
+      monthlyPrice: 69.95,
       features: pricing.raw("features.growth") as string[],
       featured: true,
     },

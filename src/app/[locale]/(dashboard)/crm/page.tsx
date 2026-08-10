@@ -39,7 +39,7 @@ type Overview = {
 export default function CrmHomePage() {
   const t = useTranslations("crm");
   const locale = useLocale();
-  const { data, isLoading } = useQuery({
+  const { data, isLoading, isError, refetch, isFetching } = useQuery({
     queryKey: ["crm-overview"],
     queryFn: async () => {
       const res = await fetch("/api/crm/overview");
@@ -47,12 +47,30 @@ export default function CrmHomePage() {
       return (await res.json()) as Overview;
     },
     refetchInterval: 10000,
+    retry: 1,
   });
 
-  if (isLoading || !data) {
+  if (isLoading) {
     return (
       <CrmShell title={t("overview")}>
         <p className="text-muted-foreground">Loading…</p>
+      </CrmShell>
+    );
+  }
+
+  if (isError || !data) {
+    return (
+      <CrmShell title={t("overview")}>
+        <div className="space-y-3 rounded-2xl border border-border bg-card/60 p-5">
+          <p className="text-sm text-muted-foreground">
+            {locale === "nl"
+              ? "CRM kon niet worden geladen. Controleer de databaseverbinding en probeer opnieuw."
+              : "CRM could not be loaded. Check the database connection and try again."}
+          </p>
+          <Button onClick={() => void refetch()} disabled={isFetching}>
+            {isFetching ? "…" : locale === "nl" ? "Opnieuw proberen" : "Retry"}
+          </Button>
+        </div>
       </CrmShell>
     );
   }

@@ -49,9 +49,11 @@ export function Sidebar() {
   const t = useTranslations("dashboard");
   const locale = useLocale();
   const pathname = usePathname();
-  const { data: session } = useSession();
+  const { data: session, status } = useSession();
   const role = session?.user?.role;
   const items = navForRole(role);
+  const displayName = session?.user?.name?.trim() || session?.user?.email || "";
+  const displayRole = String(role || "CLIENT").replaceAll("_", " ");
 
   return (
     <aside className="w-full p-3 md:sticky md:top-3 md:h-[calc(100svh-1.5rem)] md:w-72 md:self-start md:p-3">
@@ -65,11 +67,13 @@ export function Sidebar() {
           <ThemeToggle />
         </div>
 
-        {session?.user ? (
+        {status === "authenticated" && session?.user ? (
           <div className="mb-4 rounded-2xl border border-border/70 bg-muted/30 px-3 py-2.5">
-            <p className="truncate text-sm font-medium">{session.user.name || session.user.email}</p>
+            <p className="truncate text-sm font-medium" title={displayName}>
+              {displayName}
+            </p>
             <p className="text-[11px] uppercase tracking-wide text-muted-foreground">
-              {String(role || "CLIENT").replace("_", " ")}
+              {displayRole}
             </p>
           </div>
         ) : null}

@@ -37,10 +37,10 @@ async function main() {
   // Canonical SUPER_ADMIN — exactly one; only this account may delete content
   const superAdmin = await prisma.user.upsert({
     where: { email: SUPER_ADMIN_EMAIL },
-    update: { role: "SUPER_ADMIN", password: superPassword, name: "TripleZero Super Admin" },
+    update: { role: "SUPER_ADMIN", password: superPassword, name: "000" },
     create: {
       email: SUPER_ADMIN_EMAIL,
-      name: "TripleZero Super Admin",
+      name: "000",
       password: superPassword,
       role: "SUPER_ADMIN",
       companyName: "TripleZero iT",

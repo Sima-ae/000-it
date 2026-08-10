@@ -70,22 +70,36 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       if (user) {
         token.id = user.id!;
         token.role = user.role;
+        token.name = user.name;
+        token.email = user.email;
+        token.picture = user.image;
         return token;
       }
 
-      // Backfill / refresh role so middleware allow-lists match the session UI.
-      // Older cookies (or role changes) can leave token.role unset → treated as CLIENT,
-      // which makes staff routes like /portfolio-admin bounce straight back to /dashboard.
-      const userId = typeof token.id === "string" ? token.id : typeof token.sub === "string" ? token.sub : null;
-      const needsRole = typeof token.role !== "string" || trigger === "update";
-      if (userId && needsRole) {
+      // Refresh identity claims from DB so sidebar name/role stay correct after
+      // profile edits, and so older cookies without `role` get backfilled.
+      const userId =
+        typeof token.id === "string"
+          ? token.id
+          : typeof token.sub === "string"
+            ? token.sub
+            : null;
+      const needsRefresh =
+        trigger === "update" ||
+        typeof token.role !== "string" ||
+        typeof token.name !== "string";
+
+      if (userId && needsRefresh) {
         const dbUser = await prisma.user.findUnique({
           where: { id: userId },
-          select: { id: true, role: true },
+          select: { id: true, role: true, name: true, email: true, image: true },
         });
         if (dbUser) {
           token.id = dbUser.id;
           token.role = dbUser.role;
+          token.name = dbUser.name;
+          token.email = dbUser.email;
+          token.picture = dbUser.image;
         }
       }
 
@@ -95,6 +109,11 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       if (session.user) {
         session.user.id = token.id;
         session.user.role = token.role;
+        if (typeof token.name === "string") session.user.name = token.name;
+        if (typeof token.email === "string") session.user.email = token.email;
+        if (typeof token.picture === "string" || token.picture === null) {
+          session.user.image = token.picture;
+        }
       }
       return session;
     },

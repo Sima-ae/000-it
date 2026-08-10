@@ -4,10 +4,9 @@ import { useEffect, useRef } from "react";
 import { useSession } from "next-auth/react";
 
 /**
- * Forces a one-time session update after mount so the JWT cookie gets a fresh
- * `role` claim. Middleware uses getToken (cookie only) and would otherwise treat
- * older sessions without `role` as CLIENT — bouncing staff routes like
- * /portfolio-admin straight back to /dashboard.
+ * Forces a one-time session update after mount so the JWT cookie gets fresh
+ * `name` + `role` from the database. Keeps the sidebar identity correct and
+ * prevents middleware from treating older sessions without `role` as CLIENT.
  */
 export function DashboardSessionSync() {
   const { status, update } = useSession();
