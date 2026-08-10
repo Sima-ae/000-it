@@ -76,20 +76,15 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
         return token;
       }
 
-      // Refresh identity claims from DB so sidebar name/role stay correct after
-      // profile edits, and so older cookies without `role` get backfilled.
+      // Keep JWT name/role in sync with DB (stale cookies otherwise keep old display names).
       const userId =
         typeof token.id === "string"
           ? token.id
           : typeof token.sub === "string"
             ? token.sub
             : null;
-      const needsRefresh =
-        trigger === "update" ||
-        typeof token.role !== "string" ||
-        typeof token.name !== "string";
 
-      if (userId && needsRefresh) {
+      if (userId) {
         const dbUser = await prisma.user.findUnique({
           where: { id: userId },
           select: { id: true, role: true, name: true, email: true, image: true },
@@ -100,6 +95,8 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
           token.name = dbUser.name;
           token.email = dbUser.email;
           token.picture = dbUser.image;
+        } else if (trigger === "update") {
+          // User deleted — leave token; layout will bounce to login
         }
       }
 
@@ -109,7 +106,10 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       if (session.user) {
         session.user.id = token.id;
         session.user.role = token.role;
-        if (typeof token.name === "string") session.user.name = token.name;
+        session.user.name =
+          typeof token.name === "string" || token.name === null
+            ? token.name
+            : session.user.name;
         if (typeof token.email === "string") session.user.email = token.email;
         if (typeof token.picture === "string" || token.picture === null) {
           session.user.image = token.picture;

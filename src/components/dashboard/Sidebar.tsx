@@ -2,7 +2,8 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
-import { useSession, signOut } from "next-auth/react";
+import { signOut } from "next-auth/react";
+import type { Role } from "@prisma/client";
 import {
   LayoutDashboard,
   FolderKanban,
@@ -45,15 +46,20 @@ const icons: Record<string, React.ComponentType<{ className?: string }>> = {
   "/settings": Settings,
 };
 
-export function Sidebar() {
+export type SidebarUser = {
+  name: string | null;
+  email: string | null;
+  role: Role;
+};
+
+export function Sidebar({ user }: { user: SidebarUser }) {
   const t = useTranslations("dashboard");
   const locale = useLocale();
   const pathname = usePathname();
-  const { data: session, status } = useSession();
-  const role = session?.user?.role;
+  const role = user.role;
   const items = navForRole(role);
-  const displayName = session?.user?.name?.trim() || session?.user?.email || "";
-  const displayRole = String(role || "CLIENT").replaceAll("_", " ");
+  const displayName = user.name?.trim() || user.email || "";
+  const displayRole = String(role).replaceAll("_", " ");
 
   return (
     <aside className="w-full p-3 md:sticky md:top-3 md:h-[calc(100svh-1.5rem)] md:w-72 md:self-start md:p-3">
@@ -67,16 +73,14 @@ export function Sidebar() {
           <ThemeToggle />
         </div>
 
-        {status === "authenticated" && session?.user ? (
-          <div className="mb-4 rounded-2xl border border-border/70 bg-muted/30 px-3 py-2.5">
-            <p className="truncate text-sm font-medium" title={displayName}>
-              {displayName}
-            </p>
-            <p className="text-[11px] uppercase tracking-wide text-muted-foreground">
-              {displayRole}
-            </p>
-          </div>
-        ) : null}
+        <div className="mb-4 rounded-2xl border border-border/70 bg-muted/30 px-3 py-2.5">
+          <p className="truncate text-sm font-medium" title={displayName}>
+            {displayName}
+          </p>
+          <p className="text-[11px] uppercase tracking-wide text-muted-foreground">
+            {displayRole}
+          </p>
+        </div>
 
         <nav className="flex gap-1 overflow-x-auto md:min-h-0 md:flex-1 md:flex-col md:overflow-y-auto md:overflow-x-hidden md:pr-1">
           {items.map((item) => {

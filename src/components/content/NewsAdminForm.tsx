@@ -13,10 +13,13 @@ import type { NewsPost } from "@/lib/news";
 export type NewsFormValues = {
   id?: string;
   title: string;
+  titleNl: string;
   excerpt: string;
+  excerptNl: string;
   date: string;
   coverImage: string;
   description: string;
+  descriptionNl: string;
   author: string;
   projectUrl: string;
   industry: string;
@@ -25,10 +28,13 @@ export type NewsFormValues = {
 
 const empty: NewsFormValues = {
   title: "",
+  titleNl: "",
   excerpt: "",
+  excerptNl: "",
   date: new Date().toISOString().slice(0, 10),
   coverImage: "",
   description: "",
+  descriptionNl: "",
   author: "TripleZero iT",
   projectUrl: "",
   industry: "",
@@ -59,10 +65,13 @@ export function NewsAdminForm({
     try {
       const payload = {
         title: form.title,
+        titleNl: form.titleNl || null,
         excerpt: form.excerpt,
+        excerptNl: form.excerptNl || null,
         date: form.date,
         coverImage: form.coverImage || null,
         description: form.description,
+        descriptionNl: form.descriptionNl || null,
         author: form.author,
         projectUrl: form.projectUrl || null,
         industry: form.industry,
@@ -87,23 +96,48 @@ export function NewsAdminForm({
 
   return (
     <form onSubmit={onSubmit} className="space-y-5">
-      <div className="space-y-2">
-        <Label>Title</Label>
-        <Input value={form.title} onChange={(e) => setField("title", e.target.value)} required />
+      <div className="space-y-3 rounded-2xl border border-border bg-muted/20 p-4">
+        <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">English</p>
+        <div className="space-y-2">
+          <Label>Title (EN)</Label>
+          <Input value={form.title} onChange={(e) => setField("title", e.target.value)} required />
+        </div>
+        <div className="space-y-2">
+          <Label>Excerpt (EN)</Label>
+          <Input value={form.excerpt} onChange={(e) => setField("excerpt", e.target.value)} required />
+        </div>
+        <div className="space-y-2">
+          <Label>Full text (EN)</Label>
+          <Textarea
+            className="min-h-35"
+            value={form.description}
+            onChange={(e) => setField("description", e.target.value)}
+            required
+          />
+        </div>
       </div>
-      <div className="space-y-2">
-        <Label>Excerpt</Label>
-        <Input value={form.excerpt} onChange={(e) => setField("excerpt", e.target.value)} required />
+
+      <div className="space-y-3 rounded-2xl border border-border bg-muted/20 p-4">
+        <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Nederlands</p>
+        <div className="space-y-2">
+          <Label>Titel (NL)</Label>
+          <Input value={form.titleNl} onChange={(e) => setField("titleNl", e.target.value)} required />
+        </div>
+        <div className="space-y-2">
+          <Label>Samenvatting (NL)</Label>
+          <Input value={form.excerptNl} onChange={(e) => setField("excerptNl", e.target.value)} required />
+        </div>
+        <div className="space-y-2">
+          <Label>Volledige tekst (NL)</Label>
+          <Textarea
+            className="min-h-35"
+            value={form.descriptionNl}
+            onChange={(e) => setField("descriptionNl", e.target.value)}
+            required
+          />
+        </div>
       </div>
-      <div className="space-y-2">
-        <Label>Full text</Label>
-        <Textarea
-          className="min-h-35"
-          value={form.description}
-          onChange={(e) => setField("description", e.target.value)}
-          required
-        />
-      </div>
+
       <div className="space-y-2">
         <Label>Cover image URL</Label>
         <Input
@@ -175,10 +209,13 @@ export function newsPostToForm(item: NewsPost): NewsFormValues {
   return {
     id: item.id,
     title: item.title,
+    titleNl: item.titleNl || "",
     excerpt: item.excerpt,
+    excerptNl: item.excerptNl || "",
     date: item.date,
     coverImage: item.coverImage || "",
     description: item.description,
+    descriptionNl: item.descriptionNl || "",
     author: item.author,
     projectUrl: item.projectUrl || "",
     industry: item.industry || "",

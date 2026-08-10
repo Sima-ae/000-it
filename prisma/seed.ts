@@ -1,5 +1,10 @@
 import { prisma } from "../src/lib/prisma";
 import bcrypt from "bcryptjs";
+import { readFileSync, readdirSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const seedDir = dirname(fileURLToPath(import.meta.url));
 
 function seedPassword(envKey: string, localFallback: string) {
   const fromEnv = process.env[envKey]?.trim();
@@ -354,55 +359,87 @@ async function main() {
     },
   });
 
-  // --- Marketing content: nieuws (exact migration from former JSON) ---
+  // --- Marketing content: nieuws (real Jun–Aug 2026 industry news, EN + NL) ---
   const newsItems = [
     {
-      id: "aeo-2026",
-      title: "What is AEO in 2026?",
-      excerpt: "How brands win visibility inside AI answer engines.",
-      date: "2026-07-12",
-      coverImage: "/uploads/nieuws/aeo-2026.png",
+      id: "gpt-56-microsoft-365-copilot",
+      title: "GPT-5.6 becomes the preferred model in Microsoft 365 Copilot",
+      titleNl: "GPT-5.6 wordt het voorkeursmodel in Microsoft 365 Copilot",
+      excerpt:
+        "On 9 July 2026 OpenAI’s GPT-5.6 family became the preferred model across Word, Excel, PowerPoint, Chat and Cowork.",
+      excerptNl:
+        "Op 9 juli 2026 werd OpenAI’s GPT-5.6-familie het voorkeursmodel in Word, Excel, PowerPoint, Chat en Cowork.",
+      date: "2026-07-09",
+      coverImage:
+        "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1200&q=80",
       author: "TripleZero iT",
-      projectUrl: "https://000-it.com/nl/diensten/seo-optimization",
-      industry: "AEO",
-      tags: ["AEO", "SEO", "AI Search"],
+      projectUrl: "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot/",
+      industry: "AI / Productivity",
+      tags: ["GPT-5.6", "Microsoft 365", "Copilot", "OpenAI"],
       description:
-        "Answer Engine Optimization (AEO) is how brands earn visibility inside AI systems that answer questions directly — ChatGPT, Gemini, Perplexity and Google AI Overviews.\n\nIn 2026, rankings alone are not enough. You need clear entities, trustworthy sources, structured content and pages that models can cite with confidence.\n\nThis article covers the practical AEO stack we use for clients: topic authority, FAQ systems, schema, and measurement beyond classic organic traffic.",
+        "On 9 July 2026, OpenAI announced that GPT-5.6 is the new preferred model in Microsoft 365 Copilot — across Word, Excel, PowerPoint, Copilot Chat and Cowork.\n\nGPT-5.6 is not a single model. It is OpenAI’s flagship series with three tiers: Sol (highest capability), Terra (balanced everyday work) and Luna (fastest and most affordable). The goal is more useful output per token, with stronger performance per dollar and on-demand depth for complex tasks.\n\nMicrosoft’s Nitin Agrawal, President of Copilot & Agents Core, said customers will be able to produce more polished documents, analyses and presentations with OpenAI’s latest models in the tools they already use. OpenAI’s Nikunj Handa similarly framed Microsoft 365 as where millions of people write, analyse and collaborate every day.\n\nFor Dutch and international businesses, the practical takeaway is clear: enterprise AI is consolidating inside the productivity suite. Teams should plan prompts, governance and document workflows around Copilot’s new defaults — and verify which capability tier (quick vs deeper reasoning) their tenant actually exposes.",
+      descriptionNl:
+        "Op 9 juli 2026 kondigde OpenAI aan dat GPT-5.6 het nieuwe voorkeursmodel is in Microsoft 365 Copilot — in Word, Excel, PowerPoint, Copilot Chat en Cowork.\n\nGPT-5.6 is geen enkel model, maar OpenAI’s vlaggenschipreeks met drie niveaus: Sol (hoogste capaciteit), Terra (gebalanceerd voor dagelijks werk) en Luna (snelst en voordeligst). Het doel is nuttiger output per token, sterkere prestaties per dollar en diepere redenering wanneer complexe taken dat vragen.\n\nNitin Agrawal, President van Copilot & Agents Core bij Microsoft, zei dat klanten meer verzorgde documenten, analyses en presentaties kunnen maken met de nieuwste OpenAI-modellen in tools die ze al gebruiken. Nikunj Handa van OpenAI noemde Microsoft 365 de plek waar miljoenen mensen elke dag schrijven, analyseren en samenwerken.\n\nVoor Nederlandse en internationale organisaties is de boodschap duidelijk: enterprise-AI schuift verder de productiviteitssuite in. Teams moeten prompts, governance en documentworkflows afstemmen op de nieuwe Copilot-standaarden — en controleren welk capaciteitsniveau (snel vs diepere redenering) hun tenant echt beschikbaar stelt.",
     },
     {
-      id: "geo",
-      title: "GEO: Geographic Search Engine Optimization",
-      excerpt: "Practical tactics to show up in Maps, local packs and regional search.",
-      date: "2026-06-28",
-      coverImage: "/uploads/nieuws/geo.png",
+      id: "gpt-56-price-performance-july-2026",
+      title: "OpenAI cuts GPT-5.6 Terra and Luna prices — Fast mode for Sol",
+      titleNl: "OpenAI verlaagt prijzen van GPT-5.6 Terra en Luna — Fast mode voor Sol",
+      excerpt:
+        "From 30 July 2026 Luna costs 80% less and Terra 20% less; Sol Fast mode reaches up to 2.5× speed in the API.",
+      excerptNl:
+        "Vanaf 30 juli 2026 is Luna 80% goedkoper en Terra 20%; Sol Fast mode haalt tot 2,5× snelheid in de API.",
+      date: "2026-07-30",
+      coverImage:
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80",
       author: "TripleZero iT",
-      projectUrl: "https://000-it.com/nl/diensten",
-      industry: "GEO",
-      tags: ["GEO", "Local SEO", "Maps"],
+      projectUrl: "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+      industry: "AI / Pricing",
+      tags: ["GPT-5.6", "API pricing", "Luna", "Terra", "Sol"],
       description:
-        "Geographic Search Engine Optimization (GEO) focuses on being found where place matters — Google Maps, the local pack, “near me” queries and city- or region-specific searches.\n\nWinning tactics include a strong Google Business Profile, consistent NAP citations, location pages, local schema and reviews that build trust in your service area.\n\nWe share a field-tested checklist used across Dutch businesses to improve local pack presence without sacrificing classic SEO or AEO.",
+        "On 30 July 2026 OpenAI published “Advancing the price-performance frontier with GPT-5.6”, passing runtime efficiency gains on to customers.\n\nKey facts from the announcement:\n\n• GPT-5.6 Luna (fastest / most affordable) costs 80% less.\n• GPT-5.6 Terra (balanced everyday work) costs 20% less.\n• New API list prices (per 1M tokens): Terra $2 input / $12 output; Luna $0.20 input / $1.20 output. Sol pricing stayed unchanged.\n• Fast mode for GPT-5.6 Sol in the API replaces Priority Processing and delivers up to 2.5× Standard speed at 2× Standard price, without changing model intelligence.\n• ChatGPT and Codex subscription prices stayed the same, while Terra and Luna usage consumes fewer credits.\n\nOpenAI also noted earlier efficiency work: roughly 20% lower serving costs via GPU kernel improvements and more than 15% better token-generation efficiency through speculative decoding.\n\nFor agencies and product teams, this shifts the build-vs-buy math. High-volume agents, content pipelines and support bots that were marginal on older pricing become practical on Luna — while Sol Fast mode is the lever when latency matters more than unit cost.",
+      descriptionNl:
+        "Op 30 juli 2026 publiceerde OpenAI “Advancing the price-performance frontier with GPT-5.6” en gaf runtime-efficiëntiewinsten door aan klanten.\n\nBelangrijkste feiten uit de aankondiging:\n\n• GPT-5.6 Luna (snelst / voordeligst) is 80% goedkoper.\n• GPT-5.6 Terra (gebalanceerd voor dagelijks werk) is 20% goedkoper.\n• Nieuwe API-lijstprijzen (per 1M tokens): Terra $2 input / $12 output; Luna $0,20 input / $1,20 output. De Sol-prijs bleef gelijk.\n• Fast mode voor GPT-5.6 Sol in de API vervangt Priority Processing en levert tot 2,5× de Standard-snelheid tegen 2× de Standard-prijs, zonder de intelligentie van het model te wijzigen.\n• Abonnementsprijzen van ChatGPT en Codex bleven gelijk, terwijl Terra- en Luna-gebruik minder credits verbruikt.\n\nOpenAI noemde eerder ook efficiëntiewerk: ongeveer 20% lagere servingkosten via GPU-kernelverbeteringen en meer dan 15% betere token-generatie-efficiëntie via speculative decoding.\n\nVoor agencies en productteams verandert dit de build-vs-buy-rekensom. High-volume agents, contentpipelines en supportbots die eerder net niet uitkwamen, worden haalbaar op Luna — terwijl Sol Fast mode de knop is wanneer latency zwaarder weegt dan stukprijs.",
     },
     {
-      id: "ai-agent-stack",
-      title: "Building an AI agent stack",
-      excerpt: "From SEOPilot to AdsNinja — orchestration patterns that work.",
-      date: "2026-05-03",
-      coverImage: "/uploads/nieuws/ai-agents.png",
+      id: "chatgpt-gpt56-sol-luna-august-2026",
+      title: "ChatGPT updates GPT-5.6 Sol — Luna expands for Free users",
+      titleNl: "ChatGPT vernieuwt GPT-5.6 Sol — Luna uitgebreid voor Free-gebruikers",
+      excerpt:
+        "On 6 August 2026 OpenAI made Sol more factual for paid users and set Luna as the Free default with unlimited text chats.",
+      excerptNl:
+        "Op 6 augustus 2026 maakte OpenAI Sol feitelijker voor betaalde gebruikers en werd Luna de Free-standaard met onbeperkte tekstchats.",
+      date: "2026-08-06",
+      coverImage:
+        "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80",
       author: "TripleZero iT",
-      projectUrl: "https://000-it.com/nl/ai-scan",
-      industry: "AI Agents",
-      tags: ["Agents", "Automation", "Ops"],
+      projectUrl: "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
+      industry: "AI / ChatGPT",
+      tags: ["ChatGPT", "GPT-5.6 Sol", "GPT-5.6 Luna", "OpenAI"],
       description:
-        "An AI agent stack is not one chatbot — it is a coordinated set of specialists: research, SEO, content, ads and reporting agents with clear handoffs.\n\nIn this post we unpack orchestration patterns that stay reliable in production: shared memory, human approval gates, and KPI loops.\n\nLearn how teams combine SEOPilot-style agents with AdsNinja workflows without creating chaos or hallucinated campaigns.",
+        "On 6 August 2026 OpenAI announced ChatGPT updates that improve everyday conversations and expand Free access.\n\nFor Plus and Pro users, GPT-5.6 Sol in Chat was updated to be more reliable with facts and more focused. A new slider lets users choose how much thought ChatGPT puts into each response.\n\nFor Free users, the default model becomes GPT-5.6 Luna, with unlimited text chats rolling out. A new Think button gives Free users higher reasoning for harder questions (still subject to abuse guardrails). Limits remain for file uploads, images and other tools.\n\nOpenAI shared an internal evaluation on financial, medical and legal prompts that need factual detail: responses with at least one factual error were about 62% less common with GPT-5.6 Luna and 68% less common with GPT-5.6 Sol than with GPT-5.5 Instant.\n\nFor Dutch SMEs and marketing teams, this matters for two reasons. First, free-tier research and drafting quality jumps with Luna as default. Second, paid Sol users get clearer control over depth vs speed — useful when publishing customer-facing copy that must stay accurate.",
+      descriptionNl:
+        "Op 6 augustus 2026 kondigde OpenAI ChatGPT-updates aan die alledaagse gesprekken verbeteren en Free-toegang uitbreiden.\n\nVoor Plus- en Pro-gebruikers is GPT-5.6 Sol in Chat bijgewerkt om betrouwbaarder met feiten om te gaan en gerichter te antwoorden. Een nieuwe schuifregelaar laat gebruikers kiezen hoeveel nadenktijd ChatGPT per antwoord krijgt.\n\nVoor Free-gebruikers wordt GPT-5.6 Luna het standaardmodel, met onbeperkte tekstchats in uitrol. Een nieuwe Think-knop geeft Free-gebruikers diepere redenering voor moeilijkere vragen (nog steeds met anti-misbruiklimieten). Limieten blijven gelden voor bestanduploads, afbeeldingen en andere tools.\n\nOpenAI deelde een interne evaluatie op financiële, medische en juridische prompts die feitelijke details vragen: antwoorden met minstens één feitelijke fout kwamen ongeveer 62% minder vaak voor met GPT-5.6 Luna en 68% minder vaak met GPT-5.6 Sol dan met GPT-5.5 Instant.\n\nVoor Nederlandse mkb’ers en marketingteams telt dit om twee redenen. Ten eerste stijgt de kwaliteit van research en drafts op de gratis laag doordat Luna standaard wordt. Ten tweede krijgen betaalde Sol-gebruikers duidelijkere controle over diepte vs snelheid — handig wanneer klantgerichte teksten feitelijk correct moeten blijven.",
     },
   ] as const;
+
+  // Remove previous demo posts so /nieuws only shows the new set
+  await prisma.newsPost.deleteMany({
+    where: {
+      id: {
+        in: ["aeo-2026", "geo", "ai-agent-stack"],
+      },
+    },
+  });
 
   for (const item of newsItems) {
     await prisma.newsPost.upsert({
       where: { id: item.id },
       update: {
         title: item.title,
+        titleNl: item.titleNl,
         excerpt: item.excerpt,
+        excerptNl: item.excerptNl,
         date: item.date,
         coverImage: item.coverImage,
         author: item.author,
@@ -410,13 +447,16 @@ async function main() {
         industry: item.industry,
         tags: [...item.tags],
         description: item.description,
+        descriptionNl: item.descriptionNl,
         published: true,
         createdById: superAdmin.id,
       },
       create: {
         id: item.id,
         title: item.title,
+        titleNl: item.titleNl,
         excerpt: item.excerpt,
+        excerptNl: item.excerptNl,
         date: item.date,
         coverImage: item.coverImage,
         author: item.author,
@@ -424,10 +464,72 @@ async function main() {
         industry: item.industry,
         tags: [...item.tags],
         description: item.description,
+        descriptionNl: item.descriptionNl,
         published: true,
         createdById: superAdmin.id,
       },
     });
+  }
+
+  // Extra bilingual AI news (Jan–Aug 2026) from prisma/data/news-batch-*.json
+  const newsDataDir = join(seedDir, "data");
+  const batchFiles = readdirSync(newsDataDir)
+    .filter((f) => /^news-batch-\d+\.json$/.test(f))
+    .sort();
+  for (const file of batchFiles) {
+    const batch = JSON.parse(readFileSync(join(newsDataDir, file), "utf8")) as Array<{
+      id: string;
+      title: string;
+      titleNl: string;
+      excerpt: string;
+      excerptNl: string;
+      date: string;
+      coverImage: string;
+      author: string;
+      projectUrl: string;
+      industry: string;
+      tags: string[];
+      description: string;
+      descriptionNl: string;
+    }>;
+    for (const item of batch) {
+      await prisma.newsPost.upsert({
+        where: { id: item.id },
+        update: {
+          title: item.title,
+          titleNl: item.titleNl,
+          excerpt: item.excerpt,
+          excerptNl: item.excerptNl,
+          date: item.date,
+          coverImage: item.coverImage,
+          author: item.author || "TripleZero iT",
+          projectUrl: item.projectUrl,
+          industry: item.industry,
+          tags: item.tags,
+          description: item.description,
+          descriptionNl: item.descriptionNl,
+          published: true,
+          createdById: superAdmin.id,
+        },
+        create: {
+          id: item.id,
+          title: item.title,
+          titleNl: item.titleNl,
+          excerpt: item.excerpt,
+          excerptNl: item.excerptNl,
+          date: item.date,
+          coverImage: item.coverImage,
+          author: item.author || "TripleZero iT",
+          projectUrl: item.projectUrl,
+          industry: item.industry,
+          tags: item.tags,
+          description: item.description,
+          descriptionNl: item.descriptionNl,
+          published: true,
+          createdById: superAdmin.id,
+        },
+      });
+    }
   }
 
   // --- Marketing content: case studies (exact migration from former JSON) ---

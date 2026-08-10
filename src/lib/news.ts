@@ -4,10 +4,13 @@ import { prisma } from "@/lib/prisma";
 export type NewsPost = {
   id: string;
   title: string;
+  titleNl: string | null;
   excerpt: string;
+  excerptNl: string | null;
   date: string;
   coverImage?: string | null;
   description: string;
+  descriptionNl: string | null;
   author: string;
   projectUrl?: string | null;
   industry?: string | null;
@@ -19,10 +22,13 @@ export type NewsPost = {
 const newsSchema = z.object({
   id: z.string().min(1).optional(),
   title: z.string().min(1),
+  titleNl: z.string().nullable().optional(),
   excerpt: z.string().min(1),
+  excerptNl: z.string().nullable().optional(),
   date: z.string().min(1),
   coverImage: z.string().nullable().optional(),
   description: z.string().min(1),
+  descriptionNl: z.string().nullable().optional(),
   author: z.string().min(1),
   projectUrl: z.string().nullable().optional(),
   industry: z.string().optional(),
@@ -40,10 +46,13 @@ function asStringArray(value: unknown): string[] {
 function mapNews(row: {
   id: string;
   title: string;
+  titleNl: string | null;
   excerpt: string;
+  excerptNl: string | null;
   date: string;
   coverImage: string | null;
   description: string;
+  descriptionNl: string | null;
   author: string;
   projectUrl: string | null;
   industry: string | null;
@@ -54,10 +63,13 @@ function mapNews(row: {
   return {
     id: row.id,
     title: row.title,
+    titleNl: row.titleNl,
     excerpt: row.excerpt,
+    excerptNl: row.excerptNl,
     date: row.date,
     coverImage: row.coverImage,
     description: row.description,
+    descriptionNl: row.descriptionNl,
     author: row.author,
     projectUrl: row.projectUrl,
     industry: row.industry || "",
@@ -67,17 +79,32 @@ function mapNews(row: {
   };
 }
 
-export async function listNewsPosts(opts?: { all?: boolean }) {
+/** Resolve EN canonical fields to the active locale for public pages. */
+export function localizeNewsPost(post: NewsPost, locale: string): NewsPost {
+  if (locale !== "nl") return post;
+  return {
+    ...post,
+    title: post.titleNl?.trim() || post.title,
+    excerpt: post.excerptNl?.trim() || post.excerpt,
+    description: post.descriptionNl?.trim() || post.description,
+  };
+}
+
+export async function listNewsPosts(opts?: { all?: boolean; locale?: string }) {
   const rows = await prisma.newsPost.findMany({
     where: opts?.all ? undefined : { published: true },
     orderBy: [{ date: "desc" }, { createdAt: "desc" }],
   });
-  return rows.map(mapNews);
+  const mapped = rows.map(mapNews);
+  if (!opts?.locale) return mapped;
+  return mapped.map((post) => localizeNewsPost(post, opts.locale!));
 }
 
-export async function getNewsPost(id: string) {
+export async function getNewsPost(id: string, locale?: string) {
   const row = await prisma.newsPost.findUnique({ where: { id } });
-  return row ? mapNews(row) : null;
+  if (!row) return null;
+  const mapped = mapNews(row);
+  return locale ? localizeNewsPost(mapped, locale) : mapped;
 }
 
 export async function createNewsPost(
@@ -87,10 +114,13 @@ export async function createNewsPost(
     data: {
       id: data.id,
       title: data.title,
+      titleNl: data.titleNl || null,
       excerpt: data.excerpt,
+      excerptNl: data.excerptNl || null,
       date: data.date,
       coverImage: data.coverImage || null,
       description: data.description,
+      descriptionNl: data.descriptionNl || null,
       author: data.author,
       projectUrl: data.projectUrl || null,
       industry: data.industry || null,
@@ -110,10 +140,13 @@ export async function updateNewsPost(
     where: { id },
     data: {
       title: data.title,
+      titleNl: data.titleNl,
       excerpt: data.excerpt,
+      excerptNl: data.excerptNl,
       date: data.date,
       coverImage: data.coverImage,
       description: data.description,
+      descriptionNl: data.descriptionNl,
       author: data.author,
       projectUrl: data.projectUrl,
       industry: data.industry,

@@ -14,7 +14,7 @@ export default async function NieuwsPage({
   setRequestLocale(locale);
   const t = await getTranslations("nav");
   const isNl = locale === "nl";
-  const posts = await listNewsPosts();
+  const posts = await listNewsPosts({ locale });
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">

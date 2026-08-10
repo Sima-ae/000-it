@@ -50,8 +50,11 @@ export async function PATCH(request: Request, { params }: Params) {
   const isAdmin = isAdminRole(role);
   const item = await updateNewsPost(id, {
     title: data.title,
+    titleNl: data.titleNl ?? current.titleNl,
     excerpt: data.excerpt,
+    excerptNl: data.excerptNl ?? current.excerptNl,
     description: data.description,
+    descriptionNl: data.descriptionNl ?? current.descriptionNl,
     coverImage: data.coverImage ?? current.coverImage,
     industry: data.industry ?? current.industry ?? "",
     tags: data.tags ?? current.tags,

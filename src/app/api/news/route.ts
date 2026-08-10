@@ -54,10 +54,13 @@ export async function POST(request: Request) {
   const item = await createNewsPost({
     id,
     title: data.title,
+    titleNl: data.titleNl || null,
     excerpt: data.excerpt,
+    excerptNl: data.excerptNl || null,
     date: isAdmin ? data.date : new Date().toISOString().slice(0, 10),
     coverImage: data.coverImage || null,
     description: data.description,
+    descriptionNl: data.descriptionNl || null,
     author: isAdmin ? data.author : authResult.session.user.name || "TripleZero iT",
     projectUrl: isAdmin ? data.projectUrl || null : null,
     industry: data.industry || "",

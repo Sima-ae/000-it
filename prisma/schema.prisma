@@ -300,21 +300,24 @@ model ContactLead {
 
 /// Marketing news / nieuws articles (DB source of truth)
 model NewsPost {
-  id          String   @id
-  title       String
-  excerpt     String   @db.Text
-  date        String
-  coverImage  String?
-  description String   @db.LongText
-  author      String
-  projectUrl  String?
-  industry    String?
-  tags        Json?
-  published   Boolean  @default(true)
-  createdById String?
-  createdBy   User?    @relation(fields: [createdById], references: [id], onDelete: SetNull)
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id             String   @id
+  title          String
+  titleNl        String?
+  excerpt        String   @db.Text
+  excerptNl      String?  @db.Text
+  date           String
+  coverImage     String?
+  description    String   @db.LongText
+  descriptionNl  String?  @db.LongText
+  author         String
+  projectUrl     String?
+  industry       String?
+  tags           Json?
+  published      Boolean  @default(true)
+  createdById    String?
+  createdBy      User?    @relation(fields: [createdById], references: [id], onDelete: SetNull)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
 
   @@index([published, date])
   @@index([createdById])

@@ -1,0 +1,502 @@
+[
+  {
+    "id": "apple-google-gemini",
+    "title": "Apple and Google announced a multi-year Gemini partnership for Siri.",
+    "titleNl": "Apple en Google kondigden een meerjarige Gemini-samenwerking voor Siri aan.",
+    "excerpt": "Apple and Google announced a multi-year Gemini partnership for Siri.",
+    "excerptNl": "Apple en Google kondigden een meerjarige Gemini-samenwerking voor Siri aan.",
+    "date": "2026-01-12",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "Apple and Google announced a multi-year Gemini partnership for Siri.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "Apple en Google kondigden een meerjarige Gemini-samenwerking voor Siri aan.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "apple-gemini-cost",
+    "title": "Reports put Apple’s Gemini access at roughly $1 billion.",
+    "titleNl": "Berichten schatten Apples Gemini-toegang op circa 1 miljard dollar.",
+    "excerpt": "Reports put Apple’s Gemini access at roughly $1 billion.",
+    "excerptNl": "Berichten schatten Apples Gemini-toegang op circa 1 miljard dollar.",
+    "date": "2026-01-15",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "Reports put Apple’s Gemini access at roughly $1 billion.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "Berichten schatten Apples Gemini-toegang op circa 1 miljard dollar.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "ios-26-4-siri",
+    "title": "iOS 26.4 was reported as the expected spring release for new Siri capabilities.",
+    "titleNl": "iOS 26.4 werd gemeld als verwachte voorjaarsrelease voor nieuwe Siri-mogelijkheden.",
+    "excerpt": "iOS 26.4 was reported as the expected spring release for new Siri capabilities.",
+    "excerptNl": "iOS 26.4 werd gemeld als verwachte voorjaarsrelease voor nieuwe Siri-mogelijkheden.",
+    "date": "2026-01-28",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://openai.com/index/introducing-gpt-5-4/",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "iOS 26.4 was reported as the expected spring release for new Siri capabilities.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "iOS 26.4 werd gemeld als verwachte voorjaarsrelease voor nieuwe Siri-mogelijkheden.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "claude-opus-4-6",
+    "title": "Anthropic launched Claude Opus 4.6 with a 1M-token context beta.",
+    "titleNl": "Anthropic introduceerde Claude Opus 4.6 met een bètacontext van 1 miljoen tokens.",
+    "excerpt": "Anthropic launched Claude Opus 4.6 with a 1M-token context beta.",
+    "excerptNl": "Anthropic introduceerde Claude Opus 4.6 met een bètacontext van 1 miljoen tokens.",
+    "date": "2026-02-05",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://www.anthropic.com/news/claude-opus-4-6",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "Anthropic launched Claude Opus 4.6 with a 1M-token context beta.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "Anthropic introduceerde Claude Opus 4.6 met een bètacontext van 1 miljoen tokens.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "claude-opus-pricing",
+    "title": "Opus 4.6 costs $5 input and $25 output per million tokens.",
+    "titleNl": "Opus 4.6 kost 5 dollar input en 25 dollar output per miljoen tokens.",
+    "excerpt": "Opus 4.6 costs $5 input and $25 output per million tokens.",
+    "excerptNl": "Opus 4.6 kost 5 dollar input en 25 dollar output per miljoen tokens.",
+    "date": "2026-02-06",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://www.anthropic.com/news/claude-opus-4-6",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "Opus 4.6 costs $5 input and $25 output per million tokens.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "Opus 4.6 kost 5 dollar input en 25 dollar output per miljoen tokens.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "gemini-deep-think",
+    "title": "Deep Think reported 84.6% on ARC-AGI-2.",
+    "titleNl": "Deep Think rapporteerde 84,6% op ARC-AGI-2.",
+    "excerpt": "Deep Think reported 84.6% on ARC-AGI-2.",
+    "excerptNl": "Deep Think rapporteerde 84,6% op ARC-AGI-2.",
+    "date": "2026-02-12",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "Deep Think reported 84.6% on ARC-AGI-2.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "Deep Think rapporteerde 84,6% op ARC-AGI-2.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "claude-sonnet-4-6",
+    "title": "Sonnet 4.6 became the default for Claude Free and Pro at $3/$15.",
+    "titleNl": "Sonnet 4.6 werd de standaard voor Claude Free en Pro voor 3/15 dollar.",
+    "excerpt": "Sonnet 4.6 became the default for Claude Free and Pro at $3/$15.",
+    "excerptNl": "Sonnet 4.6 werd de standaard voor Claude Free en Pro voor 3/15 dollar.",
+    "date": "2026-02-17",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://www.anthropic.com/news/claude-opus-4-6",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "Sonnet 4.6 became the default for Claude Free and Pro at $3/$15.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "Sonnet 4.6 werd de standaard voor Claude Free en Pro voor 3/15 dollar.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "gemini-3-1-pro",
+    "title": "Gemini 3.1 Pro scored a verified 77.1% on ARC-AGI-2.",
+    "titleNl": "Gemini 3.1 Pro scoorde geverifieerd 77,1% op ARC-AGI-2.",
+    "excerpt": "Gemini 3.1 Pro scored a verified 77.1% on ARC-AGI-2.",
+    "excerptNl": "Gemini 3.1 Pro scoorde geverifieerd 77,1% op ARC-AGI-2.",
+    "date": "2026-02-19",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "Gemini 3.1 Pro scored a verified 77.1% on ARC-AGI-2.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "Gemini 3.1 Pro scoorde geverifieerd 77,1% op ARC-AGI-2.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "gemini-thinking-levels",
+    "title": "Gemini 3.1 Pro introduced LOW, MEDIUM and HIGH thinking levels.",
+    "titleNl": "Gemini 3.1 Pro introduceerde de denkniveaus LOW, MEDIUM en HIGH.",
+    "excerpt": "Gemini 3.1 Pro introduced LOW, MEDIUM and HIGH thinking levels.",
+    "excerptNl": "Gemini 3.1 Pro introduceerde de denkniveaus LOW, MEDIUM en HIGH.",
+    "date": "2026-02-20",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "Gemini 3.1 Pro introduced LOW, MEDIUM and HIGH thinking levels.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "Gemini 3.1 Pro introduceerde de denkniveaus LOW, MEDIUM en HIGH.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "gemini-workspace",
+    "title": "Gemini 3.1 Pro reached Gemini Enterprise and Vertex AI.",
+    "titleNl": "Gemini 3.1 Pro kwam naar Gemini Enterprise en Vertex AI.",
+    "excerpt": "Gemini 3.1 Pro reached Gemini Enterprise and Vertex AI.",
+    "excerptNl": "Gemini 3.1 Pro kwam naar Gemini Enterprise en Vertex AI.",
+    "date": "2026-02-23",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "Gemini 3.1 Pro reached Gemini Enterprise and Vertex AI.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "Gemini 3.1 Pro kwam naar Gemini Enterprise en Vertex AI.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "openrouter-diversification",
+    "title": "OpenRouter observed falling token share for closed US models.",
+    "titleNl": "OpenRouter zag het tokenaandeel van gesloten Amerikaanse modellen dalen.",
+    "excerpt": "OpenRouter observed falling token share for closed US models.",
+    "excerptNl": "OpenRouter zag het tokenaandeel van gesloten Amerikaanse modellen dalen.",
+    "date": "2026-02-25",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://openrouter.ai/rankings",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "OpenRouter observed falling token share for closed US models.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "OpenRouter zag het tokenaandeel van gesloten Amerikaanse modellen dalen.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "gemini-flash-lite",
+    "title": "Gemini 3.1 Flash-Lite costs $0.25/$1.50 per million tokens.",
+    "titleNl": "Gemini 3.1 Flash-Lite kost 0,25/1,50 dollar per miljoen tokens.",
+    "excerpt": "Gemini 3.1 Flash-Lite costs $0.25/$1.50 per million tokens.",
+    "excerptNl": "Gemini 3.1 Flash-Lite kost 0,25/1,50 dollar per miljoen tokens.",
+    "date": "2026-03-03",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "Gemini 3.1 Flash-Lite costs $0.25/$1.50 per million tokens.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "Gemini 3.1 Flash-Lite kost 0,25/1,50 dollar per miljoen tokens.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "gpt-5-4-launch",
+    "title": "OpenAI released GPT-5.4 Thinking and Pro in ChatGPT, API and Codex.",
+    "titleNl": "OpenAI bracht GPT-5.4 Thinking en Pro uit in ChatGPT, API en Codex.",
+    "excerpt": "OpenAI released GPT-5.4 Thinking and Pro in ChatGPT, API and Codex.",
+    "excerptNl": "OpenAI bracht GPT-5.4 Thinking en Pro uit in ChatGPT, API en Codex.",
+    "date": "2026-03-05",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://openai.com/index/introducing-gpt-5-4/",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "OpenAI released GPT-5.4 Thinking and Pro in ChatGPT, API and Codex.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "OpenAI bracht GPT-5.4 Thinking en Pro uit in ChatGPT, API en Codex.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "gpt-5-4-efficiency",
+    "title": "OpenAI says GPT-5.4 uses significantly fewer tokens than GPT-5.2.",
+    "titleNl": "OpenAI zegt dat GPT-5.4 aanzienlijk minder tokens gebruikt dan GPT-5.2.",
+    "excerpt": "OpenAI says GPT-5.4 uses significantly fewer tokens than GPT-5.2.",
+    "excerptNl": "OpenAI zegt dat GPT-5.4 aanzienlijk minder tokens gebruikt dan GPT-5.2.",
+    "date": "2026-03-05",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://openai.com/index/introducing-gpt-5-4/",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "OpenAI says GPT-5.4 uses significantly fewer tokens than GPT-5.2.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "OpenAI zegt dat GPT-5.4 aanzienlijk minder tokens gebruikt dan GPT-5.2.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "gpt-5-2-retirement",
+    "title": "GPT-5.2 Thinking retires on June 5, 2026.",
+    "titleNl": "GPT-5.2 Thinking stopt op 5 juni 2026.",
+    "excerpt": "GPT-5.2 Thinking retires on June 5, 2026.",
+    "excerptNl": "GPT-5.2 Thinking stopt op 5 juni 2026.",
+    "date": "2026-03-05",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://openai.com/index/introducing-gpt-5-4/",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "GPT-5.2 Thinking retires on June 5, 2026.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "GPT-5.2 Thinking stopt op 5 juni 2026.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "gpt-5-4-codex",
+    "title": "GPT-5.4 adds native computer-use capabilities.",
+    "titleNl": "GPT-5.4 voegt native mogelijkheden voor computergebruik toe.",
+    "excerpt": "GPT-5.4 adds native computer-use capabilities.",
+    "excerptNl": "GPT-5.4 voegt native mogelijkheden voor computergebruik toe.",
+    "date": "2026-03-06",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://openai.com/index/introducing-gpt-5-4/",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "GPT-5.4 adds native computer-use capabilities.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "GPT-5.4 voegt native mogelijkheden voor computergebruik toe.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "gpt-5-4-context",
+    "title": "GPT-5.4 supports up to 1M tokens of context.",
+    "titleNl": "GPT-5.4 ondersteunt maximaal 1 miljoen tokens context.",
+    "excerpt": "GPT-5.4 supports up to 1M tokens of context.",
+    "excerptNl": "GPT-5.4 ondersteunt maximaal 1 miljoen tokens context.",
+    "date": "2026-03-07",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://openai.com/index/introducing-gpt-5-4/",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "GPT-5.4 supports up to 1M tokens of context.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "GPT-5.4 ondersteunt maximaal 1 miljoen tokens context.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "million-token-competition",
+    "title": "Claude and GPT compete with million-token context windows.",
+    "titleNl": "Claude en GPT concurreren met contextvensters van een miljoen tokens.",
+    "excerpt": "Claude and GPT compete with million-token context windows.",
+    "excerptNl": "Claude en GPT concurreren met contextvensters van een miljoen tokens.",
+    "date": "2026-03-08",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://openai.com/index/introducing-gpt-5-4/",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "Claude and GPT compete with million-token context windows.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "Claude en GPT concurreren met contextvensters van een miljoen tokens.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "gemini-preview-shutdown",
+    "title": "Google shut down Gemini 3 Pro Preview.",
+    "titleNl": "Google stopte Gemini 3 Pro Preview.",
+    "excerpt": "Google shut down Gemini 3 Pro Preview.",
+    "excerptNl": "Google stopte Gemini 3 Pro Preview.",
+    "date": "2026-03-09",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "Google shut down Gemini 3 Pro Preview.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "Google stopte Gemini 3 Pro Preview.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "gemini-migration-playbook",
+    "title": "The shutdown requires enterprises to migrate and retest workflows.",
+    "titleNl": "De stopzetting vereist dat ondernemingen workflows migreren en opnieuw testen.",
+    "excerpt": "The shutdown requires enterprises to migrate and retest workflows.",
+    "excerptNl": "De stopzetting vereist dat ondernemingen workflows migreren en opnieuw testen.",
+    "date": "2026-03-10",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "The shutdown requires enterprises to migrate and retest workflows.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "De stopzetting vereist dat ondernemingen workflows migreren en opnieuw testen.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "agent-model-competition",
+    "title": "Opus, Gemini and GPT now compete on long-running agents.",
+    "titleNl": "Opus, Gemini en GPT concurreren nu op langlopende agents.",
+    "excerpt": "Opus, Gemini and GPT now compete on long-running agents.",
+    "excerptNl": "Opus, Gemini en GPT concurreren nu op langlopende agents.",
+    "date": "2026-03-11",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://openai.com/index/introducing-gpt-5-4/",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "Opus, Gemini and GPT now compete on long-running agents.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "Opus, Gemini en GPT concurreren nu op langlopende agents.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "gpt-5-4-mini-nano",
+    "title": "GPT-5.4 mini and nano expand model-routing choices.",
+    "titleNl": "GPT-5.4 mini en nano breiden keuzes voor modelroutering uit.",
+    "excerpt": "GPT-5.4 mini and nano expand model-routing choices.",
+    "excerptNl": "GPT-5.4 mini en nano breiden keuzes voor modelroutering uit.",
+    "date": "2026-03-12",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://openai.com/index/introducing-gpt-5-4/",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "GPT-5.4 mini and nano expand model-routing choices.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "GPT-5.4 mini en nano breiden keuzes voor modelroutering uit.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "apple-private-cloud",
+    "title": "Apple combines on-device models, Private Cloud Compute and Gemini.",
+    "titleNl": "Apple combineert modellen op het apparaat, Private Cloud Compute en Gemini.",
+    "excerpt": "Apple combines on-device models, Private Cloud Compute and Gemini.",
+    "excerptNl": "Apple combineert modellen op het apparaat, Private Cloud Compute en Gemini.",
+    "date": "2026-01-16",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://techcrunch.com/2026/01/12/googles-gemini-to-power-apples-ai-features-like-siri/",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "Apple combines on-device models, Private Cloud Compute and Gemini.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "Apple combineert modellen op het apparaat, Private Cloud Compute en Gemini.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "apple-non-exclusive",
+    "title": "The Gemini agreement is non-exclusive and ChatGPT remains optional.",
+    "titleNl": "De Gemini-overeenkomst is niet-exclusief en ChatGPT blijft optioneel.",
+    "excerpt": "The Gemini agreement is non-exclusive and ChatGPT remains optional.",
+    "excerptNl": "De Gemini-overeenkomst is niet-exclusief en ChatGPT blijft optioneel.",
+    "date": "2026-01-13",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://techcrunch.com/2026/01/12/googles-gemini-to-power-apples-ai-features-like-siri/",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "The Gemini agreement is non-exclusive and ChatGPT remains optional.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "De Gemini-overeenkomst is niet-exclusief en ChatGPT blijft optioneel.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  },
+  {
+    "id": "eu-apple-google",
+    "title": "The Apple-Google deal raises privacy and app questions for EU businesses.",
+    "titleNl": "De Apple-Google-deal roept privacy- en appvragen op voor EU-bedrijven.",
+    "excerpt": "The Apple-Google deal raises privacy and app questions for EU businesses.",
+    "excerptNl": "De Apple-Google-deal roept privacy- en appvragen op voor EU-bedrijven.",
+    "date": "2026-01-20",
+    "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    "author": "TripleZero iT",
+    "projectUrl": "https://techcrunch.com/2026/01/12/googles-gemini-to-power-apples-ai-features-like-siri/",
+    "industry": "AI Technology",
+    "tags": [
+      "AI",
+      "2026",
+      "Enterprise",
+      "Models"
+    ],
+    "description": "The Apple-Google deal raises privacy and app questions for EU businesses.\n\nThis verified development affects model selection, product design or AI operations. Organisations should compare the provider claim with documented behaviour in their own workflow.\n\nTeams should test representative tasks, protect sensitive data and measure accuracy, latency, cost and human-review needs before a broad rollout.",
+    "descriptionNl": "De Apple-Google-deal roept privacy- en appvragen op voor EU-bedrijven.\n\nDeze geverifieerde ontwikkeling beïnvloedt modelkeuze, productontwerp of AI-operations. Organisaties moeten de claim van de leverancier vergelijken met gedocumenteerd gedrag in hun eigen workflow.\n\nTeams moeten representatieve taken testen, gevoelige data beschermen en nauwkeurigheid, latentie, kosten en de behoefte aan menselijke review meten vóór een brede uitrol."
+  }
+]
