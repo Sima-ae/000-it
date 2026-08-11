@@ -148,7 +148,7 @@ function buildDraft(locale: string, id: TemplateId, topic: string, audience: str
           `- Content die leads voedt`,
           `- Wekelijkse optimalisatie op data`,
           ``,
-          `CTA: Wilt u een korte scan op uw setup? Stuur een DM of plan via 000-it.com.`,
+          `CTA: Wilt u een korte scan op uw setup? Stuur een DM of plan een afspraak.`,
           ``,
           `Hashtags: #${t.replace(/\s+/g, "")} #MKB #Growth #AImarketing`,
         ].join("\n")
@@ -169,7 +169,7 @@ function buildDraft(locale: string, id: TemplateId, topic: string, audience: str
           `- Content that feeds leads`,
           `- Weekly optimization on data`,
           ``,
-          `CTA: Want a quick scan of your setup? DM us or book via 000-it.com.`,
+          `CTA: Want a quick scan of your setup? DM us or book an appointment.`,
           ``,
           `Hashtags: #${t.replace(/\s+/g, "")} #SMB #Growth #AImarketing`,
         ].join("\n");
@@ -250,7 +250,7 @@ function buildDraft(locale: string, id: TemplateId, topic: string, audience: str
         `3. Werken jullie ook met bestaande teams?`,
         ``,
         `## Slot-CTA`,
-        `Klaar voor ${t}? Plan uw intake op 000-it.com.`,
+        `Klaar voor ${t}? Plan uw intake.`,
       ].join("\n")
     : [
         `# Landing page — ${t}`,
@@ -281,7 +281,7 @@ function buildDraft(locale: string, id: TemplateId, topic: string, audience: str
         `3. Do you work with existing teams?`,
         ``,
         `## Closing CTA`,
-        `Ready for ${t}? Book your intake at 000-it.com.`,
+        `Ready for ${t}? Book your intake.`,
       ].join("\n");
 }
 

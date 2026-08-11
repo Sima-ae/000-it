@@ -11,7 +11,7 @@ export const SITE_SEO = {
     process.env.NEXT_PUBLIC_APP_URL ||
     "https://000-it.com",
   email: "info@000-it.com",
-  defaultOgImage: "/uploads/fixweb/ai-integration.png",
+  defaultOgImage: "/branding/og-default.png",
   defaultDescription: {
     nl: "AI-gedreven groei voor bedrijven en zzp'ers: AI-integratie, AEO, GEO, SEO, marketing en maatwerk software.",
     en: "AI-driven growth for businesses and freelancers: AI integration, AEO, GEO, SEO, marketing and custom software.",

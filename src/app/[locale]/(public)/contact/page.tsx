@@ -34,7 +34,7 @@ export default async function ContactPage({
         <div className="mt-8 flex justify-center">
           <Button asChild className="rounded-2xl">
             <SoftLink href={`/${locale}/afspraak`}>
-              {locale === "nl" ? "Direct een afspraak maken?" : "Prefer to book directly?"}
+              {locale === "nl" ? "Boek een afspraak" : "Book an appointment"}
             </SoftLink>
           </Button>
         </div>

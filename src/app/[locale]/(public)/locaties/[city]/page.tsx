@@ -101,7 +101,7 @@ export default async function LocatieCityPage({
         </Button>
         <Button asChild variant="outline">
           <SoftLink href={`/${locale}/afspraak`}>
-            {isNl ? "Afspraak maken" : "Book a meeting"}
+            {isNl ? "Boek een afspraak" : "Book an appointment"}
           </SoftLink>
         </Button>
         <Button asChild variant="ghost">

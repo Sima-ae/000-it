@@ -189,7 +189,7 @@ export function AppointmentBooking() {
   return (
     <GlassCard interactive={false} className="mx-auto w-full max-w-3xl p-5 md:p-8">
       <h1 className="font-display text-3xl font-semibold tracking-tight md:text-4xl">
-        {isNl ? "Maak een afspraak" : "Book an appointment"}
+        {isNl ? "Boek een afspraak" : "Book an appointment"}
       </h1>
 
       {/* Stepper */}

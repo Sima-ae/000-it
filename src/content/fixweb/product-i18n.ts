@@ -19,9 +19,7 @@ export const productI18n: Record<string, { nl: ProductI18n; en: ProductI18n }> =
 
 Wij monitoren uw site dag en nacht, maken dagelijkse back-ups en houden WordPress en plugins actueel. Ook lossen we fouten op, verwijderen we malware en passen we praktische beveiligingsmaatregelen toe om uw website beschikbaar en beschermd te houden.
 
-TripleZero iT pakt incidenten zorgvuldig aan, controleert de werking na herstel en helpt risico’s voor te blijven. Zo kunt u zich richten op uw onderneming terwijl wij de technische continuïteit bewaken.
-
-Wilt u weten of Basic Support bij uw website past? Neem contact op via info@000-it.com of bezoek 000-it.com.`,
+TripleZero iT pakt incidenten zorgvuldig aan, controleert de werking na herstel en helpt risico’s voor te blijven. Zo kunt u zich richten op uw onderneming terwijl wij de technische continuïteit bewaken.`,
     },
     en: {
       name: "Basic Support",
@@ -36,9 +34,7 @@ Wilt u weten of Basic Support bij uw website past? Neem contact op via info@000-
 
 We monitor your site around the clock, create daily backups and keep WordPress and plugins current. We also fix errors, remove malware and apply practical security measures to keep your website available and protected.
 
-TripleZero iT handles incidents carefully, verifies the site after recovery and helps reduce future risk. You can focus on your business while we look after its technical continuity.
-
-Would you like to see whether Basic Support fits your website? Contact info@000-it.com or visit 000-it.com.`,
+TripleZero iT handles incidents carefully, verifies the site after recovery and helps reduce future risk. You can focus on your business while we look after its technical continuity.`,
     },
   },
 
@@ -57,9 +53,7 @@ Would you like to see whether Basic Support fits your website? Contact info@000-
 
 U krijgt 24/7 monitoring, dagelijkse back-ups, updates, foutoplossing, malwareverwijdering en beveiliging. Wij optimaliseren daarnaast caching, afbeeldingen en code waar dat de prestaties van uw websites verbetert.
 
-TripleZero iT werkt proactief: we signaleren aandachtspunten, pakken technische problemen gericht aan en houden uw websites stabiel voor bezoekers en beheerders.
-
-Bespreek uw websites met ons via info@000-it.com of kijk op 000-it.com.`,
+TripleZero iT werkt proactief: we signaleren aandachtspunten, pakken technische problemen gericht aan en houden uw websites stabiel voor bezoekers en beheerders.`,
     },
     en: {
       name: "Standard Support",
@@ -75,9 +69,7 @@ Bespreek uw websites met ons via info@000-it.com of kijk op 000-it.com.`,
 
 You receive 24/7 monitoring, daily backups, updates, error resolution, malware removal and security care. We also optimise caching, images and code where it improves your websites’ performance.
 
-TripleZero iT works proactively: we flag issues, resolve technical problems with focus and keep your websites stable for visitors and administrators.
-
-Discuss your websites with us at info@000-it.com or visit 000-it.com.`,
+TripleZero iT works proactively: we flag issues, resolve technical problems with focus and keep your websites stable for visitors and administrators.`,
     },
   },
 
@@ -97,9 +89,7 @@ Discuss your websites with us at info@000-it.com or visit 000-it.com.`,
 
 Naast 24/7 monitoring, back-ups, updates, foutoplossing en malwareverwijdering verbeteren we laadtijden en verzorgen we praktische SEO-optimalisaties. Daarmee krijgen uw websites een sterke, consistente basis voor bezoekers én zoekmachines.
 
-TripleZero iT bewaakt uw omgeving proactief en vertaalt technische werkzaamheden naar heldere verbeteringen, zodat u grip houdt terwijl wij het dagelijkse beheer verzorgen.
-
-Klaar voor complete WordPress-zorg? Mail info@000-it.com of bezoek 000-it.com.`,
+TripleZero iT bewaakt uw omgeving proactief en vertaalt technische werkzaamheden naar heldere verbeteringen, zodat u grip houdt terwijl wij het dagelijkse beheer verzorgen.`,
     },
     en: {
       name: "Premium Support",
@@ -116,9 +106,7 @@ Klaar voor complete WordPress-zorg? Mail info@000-it.com of bezoek 000-it.com.`,
 
 Alongside 24/7 monitoring, backups, updates, error resolution and malware removal, we improve load times and deliver practical SEO optimisation. This gives your websites a strong, consistent foundation for visitors and search engines.
 
-TripleZero iT monitors your environment proactively and turns technical work into clear improvements, so you retain control while we handle day-to-day care.
-
-Ready for complete WordPress care? Email info@000-it.com or visit 000-it.com.`,
+TripleZero iT monitors your environment proactively and turns technical work into clear improvements, so you retain control while we handle day-to-day care.`,
     },
   },
 
@@ -135,9 +123,7 @@ Ready for complete WordPress care? Email info@000-it.com or visit 000-it.com.`,
 
 Wij combineren een duidelijke prestatie-audit met gerichte acties: on-page optimalisatie, technische SEO, off-page signalen, lokale vindbaarheid en — indien relevant — e-commerce SEO voor product- en categorietrajecten.
 
-U ontvangt inzichtelijke rapportage over voortgang en prioriteiten, zodat u weet wat er is gedaan en wat de volgende stap is. Na oplevering krijgt u 7 dagen gratis support voor vragen over de uitgevoerde werkzaamheden.
-
-Neem contact op via info@000-it.com of bezoek 000-it.com om uw SEO-doelen te bespreken.`,
+U ontvangt inzichtelijke rapportage over voortgang en prioriteiten, zodat u weet wat er is gedaan en wat de volgende stap is. Na oplevering krijgt u 7 dagen gratis support voor vragen over de uitgevoerde werkzaamheden.`,
     },
     en: {
       name: "SEO Optimization",
@@ -151,9 +137,7 @@ Neem contact op via info@000-it.com of bezoek 000-it.com om uw SEO-doelen te bes
 
 We start with a performance audit, then deliver focused work across on-page SEO, technical foundations, off-page signals, local visibility and — where relevant — e-commerce SEO for product and category journeys.
 
-You receive clear reporting on progress and priorities, so you always know what changed and what comes next. After delivery you get 7 days of free support for questions about the completed work.
-
-Contact us at info@000-it.com or visit 000-it.com to discuss your SEO goals.`,
+You receive clear reporting on progress and priorities, so you always know what changed and what comes next. After delivery you get 7 days of free support for questions about the completed work.`,
     },
   },
 
@@ -171,9 +155,7 @@ Contact us at info@000-it.com or visit 000-it.com to discuss your SEO goals.`,
 
 U beschikt over 20 GB SSD-opslag, 30 mailboxen, een websitebouwer, AI-tools en automatische back-ups. Zo heeft u de essentiële ruimte en hulpmiddelen om uw online aanwezigheid betrouwbaar op te bouwen.
 
-TripleZero iT zorgt voor een stabiele hostingomgeving en 24/7 support wanneer u hulp nodig heeft. U houdt het eenvoudig, terwijl uw websites en e-mail professioneel blijven draaien.
-
-Wilt u starten met betrouwbare hosting? Mail info@000-it.com of bezoek 000-it.com.`,
+TripleZero iT zorgt voor een stabiele hostingomgeving en 24/7 support wanneer u hulp nodig heeft. U houdt het eenvoudig, terwijl uw websites en e-mail professioneel blijven draaien.`,
     },
     en: {
       name: "Shared Hosting Basic",
@@ -188,9 +170,7 @@ Wilt u starten met betrouwbare hosting? Mail info@000-it.com of bezoek 000-it.co
 
 You receive 20 GB SSD storage, 30 mailboxes, a website builder, AI tools and automated backups. It provides the essential space and tools to build a dependable online presence.
 
-TripleZero iT provides a stable hosting environment and 24/7 support whenever you need help. You keep things simple while your websites and email continue to run professionally.
-
-Ready to get started with reliable hosting? Email info@000-it.com or visit 000-it.com.`,
+TripleZero iT provides a stable hosting environment and 24/7 support whenever you need help. You keep things simple while your websites and email continue to run professionally.`,
     },
   },
 
@@ -208,9 +188,7 @@ Ready to get started with reliable hosting? Email info@000-it.com or visit 000-i
 
 Met onbeperkte websites, SSD-opslag en mailboxen, plus een websitebouwer, AI-tools en AutoBackup, krijgt u de flexibiliteit om nieuwe projecten en communicatie eenvoudig toe te voegen.
 
-TripleZero iT levert een toegankelijke, betrouwbare hostingbasis met 24/7 support. Zo groeit uw digitale omgeving mee zonder dat u het dagelijkse beheer ingewikkeld maakt.
-
-Bespreek uw hostingbehoefte via info@000-it.com of 000-it.com.`,
+TripleZero iT levert een toegankelijke, betrouwbare hostingbasis met 24/7 support. Zo groeit uw digitale omgeving mee zonder dat u het dagelijkse beheer ingewikkeld maakt.`,
     },
     en: {
       name: "Shared Hosting Plus",
@@ -225,9 +203,7 @@ Bespreek uw hostingbehoefte via info@000-it.com of 000-it.com.`,
 
 With unlimited websites, SSD storage and mailboxes, plus a website builder, AI tools and AutoBackup, you have the flexibility to add projects and communication as you grow.
 
-TripleZero iT delivers an accessible, dependable hosting foundation with 24/7 support. Your digital environment can expand without making daily administration complicated.
-
-Discuss your hosting needs at info@000-it.com or 000-it.com.`,
+TripleZero iT delivers an accessible, dependable hosting foundation with 24/7 support. Your digital environment can expand without making daily administration complicated.`,
     },
   },
 
@@ -245,9 +221,7 @@ Discuss your hosting needs at info@000-it.com or 000-it.com.`,
 
 U krijgt onbeperkte websites en mailboxen, 50 GB SSD-opslag, een websitebouwer, AI-tools en AutoBackup met cloudopslag. Dat combineert ruimte voor uw dagelijkse werk met extra zekerheid voor belangrijke data.
 
-TripleZero iT biedt een stabiele omgeving en 24/7 support als uw organisatie vragen heeft of hulp nodig heeft. Zo houdt u uw online infrastructuur overzichtelijk en klaar voor groei.
-
-Neem contact op via info@000-it.com of ontdek meer op 000-it.com.`,
+TripleZero iT biedt een stabiele omgeving en 24/7 support als uw organisatie vragen heeft of hulp nodig heeft. Zo houdt u uw online infrastructuur overzichtelijk en klaar voor groei.`,
     },
     en: {
       name: "Shared Hosting Business",
@@ -262,9 +236,7 @@ Neem contact op via info@000-it.com of ontdek meer op 000-it.com.`,
 
 You receive unlimited websites and mailboxes, 50 GB SSD storage, a website builder, AI tools and AutoBackup with cloud storage. It combines room for daily operations with added reassurance for important data.
 
-TripleZero iT provides a stable environment and 24/7 support whenever your organisation needs assistance. Keep your online infrastructure organised and ready to grow.
-
-Contact info@000-it.com or learn more at 000-it.com.`,
+TripleZero iT provides a stable environment and 24/7 support whenever your organisation needs assistance. Keep your online infrastructure organised and ready to grow.`,
     },
   },
 
@@ -279,9 +251,7 @@ Contact info@000-it.com or learn more at 000-it.com.`,
 
 Met 2 CPU-cores, 2 GB RAM, 40 GB SSD RAID 10-opslag en 1000 GB bandbreedte krijgt u een solide virtuele server voor lichte tot gemiddelde workloads.
 
-TripleZero iT helpt u met een betrouwbare infrastructuurbasis, zodat u kunt focussen op uw applicatie, website of ontwikkelomgeving. U schaalt door wanneer uw vraag toeneemt.
-
-Wilt u uw VPS-vereisten bespreken? Mail info@000-it.com of bezoek 000-it.com.`,
+TripleZero iT helpt u met een betrouwbare infrastructuurbasis, zodat u kunt focussen op uw applicatie, website of ontwikkelomgeving. U schaalt door wanneer uw vraag toeneemt.`,
     },
     en: {
       name: "VPS Hosting Basic",
@@ -293,9 +263,7 @@ Wilt u uw VPS-vereisten bespreken? Mail info@000-it.com of bezoek 000-it.com.`,
 
 With 2 CPU cores, 2 GB RAM, 40 GB SSD RAID 10 storage and 1000 GB bandwidth, you get a solid virtual server for light to moderate workloads.
 
-TripleZero iT gives you a dependable infrastructure foundation, so you can focus on your application, website or development environment. Scale up when demand grows.
-
-Want to discuss your VPS requirements? Email info@000-it.com or visit 000-it.com.`,
+TripleZero iT gives you a dependable infrastructure foundation, so you can focus on your application, website or development environment. Scale up when demand grows.`,
     },
   },
 
@@ -310,9 +278,7 @@ Want to discuss your VPS requirements? Email info@000-it.com or visit 000-it.com
 
 De server combineert 4 CPU-cores en 6 GB RAM met 120 GB SSD RAID 10-opslag en 3000 GB bandbreedte. Daarmee is er ruimte voor zwaardere workloads, meerdere services of toenemend verkeer.
 
-TripleZero iT levert een betrouwbare VPS-basis waarop u uw omgeving naar eigen behoefte kunt inrichten. Zo krijgt u de flexibiliteit van een virtuele server met een professionele partner dichtbij.
-
-Neem contact op via info@000-it.com of 000-it.com voor advies.`,
+TripleZero iT levert een betrouwbare VPS-basis waarop u uw omgeving naar eigen behoefte kunt inrichten. Zo krijgt u de flexibiliteit van een virtuele server met een professionele partner dichtbij.`,
     },
     en: {
       name: "VPS Hosting Plus",
@@ -324,9 +290,7 @@ Neem contact op via info@000-it.com of 000-it.com voor advies.`,
 
 The server combines 4 CPU cores and 6 GB RAM with 120 GB SSD RAID 10 storage and 3000 GB bandwidth. This leaves room for heavier workloads, multiple services or increasing traffic.
 
-TripleZero iT delivers a dependable VPS foundation that you can configure around your needs. Gain the flexibility of a virtual server with a professional partner close by.
-
-Contact info@000-it.com or visit 000-it.com for advice.`,
+TripleZero iT delivers a dependable VPS foundation that you can configure around your needs. Gain the flexibility of a virtual server with a professional partner close by.`,
     },
   },
 
@@ -341,9 +305,7 @@ Contact info@000-it.com or visit 000-it.com for advice.`,
 
 Met 8 CPU-cores, 12 GB RAM, 240 GB SSD RAID 10-opslag en 6000 GB bandbreedte biedt dit pakket een krachtige basis voor intensieve workloads, meerdere omgevingen en hogere bezoekersaantallen.
 
-TripleZero iT helpt u een betrouwbare infrastructuur neer te zetten die met uw ambities meebeweegt. U houdt de controle over uw VPS, met een deskundige partij bereikbaar voor ondersteuning.
-
-Vraag advies aan via info@000-it.com of bezoek 000-it.com.`,
+TripleZero iT helpt u een betrouwbare infrastructuur neer te zetten die met uw ambities meebeweegt. U houdt de controle over uw VPS, met een deskundige partij bereikbaar voor ondersteuning.`,
     },
     en: {
       name: "VPS Hosting Business",
@@ -355,9 +317,7 @@ Vraag advies aan via info@000-it.com of bezoek 000-it.com.`,
 
 With 8 CPU cores, 12 GB RAM, 240 GB SSD RAID 10 storage and 6000 GB bandwidth, this plan provides a powerful base for intensive workloads, multiple environments and higher visitor volumes.
 
-TripleZero iT helps you build dependable infrastructure that moves with your ambitions. You retain control of your VPS, with an experienced team available for support.
-
-Request advice at info@000-it.com or visit 000-it.com.`,
+TripleZero iT helps you build dependable infrastructure that moves with your ambitions. You retain control of your VPS, with an experienced team available for support.`,
     },
   },
 
@@ -374,9 +334,7 @@ Request advice at info@000-it.com or visit 000-it.com.`,
 
 U krijgt 10 GB SSD-opslag, capaciteit voor circa 50.000 bezoekers per maand, een gratis CDN en SSL-certificaat. Eenvoudige back-ups en 24/7 support helpen u om met vertrouwen te publiceren en uw site te beheren.
 
-TripleZero iT biedt de technische basis waarop uw WordPress-site stabiel kan presteren, zodat u tijd overhoudt voor uw content, klanten en onderneming.
-
-Start uw WordPress-project via info@000-it.com of 000-it.com.`,
+TripleZero iT biedt de technische basis waarop uw WordPress-site stabiel kan presteren, zodat u tijd overhoudt voor uw content, klanten en onderneming.`,
     },
     en: {
       name: "WordPress Hosting Basic",
@@ -390,9 +348,7 @@ Start uw WordPress-project via info@000-it.com of 000-it.com.`,
 
 You receive 10 GB SSD storage, capacity for around 50,000 visitors per month, a free CDN and SSL certificate. Easy backups and 24/7 support help you publish and manage your site with confidence.
 
-TripleZero iT provides the technical foundation your WordPress site needs to perform reliably, giving you more time for content, customers and your business.
-
-Start your WordPress project at info@000-it.com or 000-it.com.`,
+TripleZero iT provides the technical foundation your WordPress site needs to perform reliably, giving you more time for content, customers and your business.`,
     },
   },
 
@@ -412,9 +368,7 @@ Start your WordPress project at info@000-it.com or 000-it.com.`,
 
 Met 50 GB SSD-opslag, capaciteit voor circa 200.000 bezoekers per maand en 1,5× meer CPU en RAM kan uw site comfortabel meegroeien. Gratis CDN, SSL, back-ups, 24/7 support en Brizy Site Builder maken bouwen en beheren eenvoudiger.
 
-TripleZero iT levert een krachtige WordPress-omgeving die prestaties en gebruiksgemak combineert. Zo blijft uw website snel en betrouwbaar terwijl uw bereik groeit.
-
-Wilt u doorgroeien met WordPress? Neem contact op via info@000-it.com of 000-it.com.`,
+TripleZero iT levert een krachtige WordPress-omgeving die prestaties en gebruiksgemak combineert. Zo blijft uw website snel en betrouwbaar terwijl uw bereik groeit.`,
     },
     en: {
       name: "WordPress Hosting Plus",
@@ -431,9 +385,7 @@ Wilt u doorgroeien met WordPress? Neem contact op via info@000-it.com of 000-it.
 
 With 50 GB SSD storage, capacity for around 200,000 visitors per month and 1.5x more CPU and RAM, your site can grow comfortably. A free CDN, SSL, backups, 24/7 support and Brizy Site Builder make building and managing easier.
 
-TripleZero iT delivers a powerful WordPress environment that combines performance with ease of use. Your website stays fast and dependable as your reach expands.
-
-Ready to grow with WordPress? Contact info@000-it.com or visit 000-it.com.`,
+TripleZero iT delivers a powerful WordPress environment that combines performance with ease of use. Your website stays fast and dependable as your reach expands.`,
     },
   },
 
@@ -454,9 +406,7 @@ Ready to grow with WordPress? Contact info@000-it.com or visit 000-it.com.`,
 
 U krijgt 100 GB SSD-opslag, capaciteit voor circa 500.000 bezoekers per maand en 2,0× meer CPU en RAM. De 99,9% uptime-garantie, gratis CDN en SSL, back-ups, 24/7 support en Brizy Site Builder ondersteunen een professionele online operatie.
 
-TripleZero iT biedt een robuuste hostingomgeving waarin snelheid, bereikbaarheid en schaalbaarheid centraal staan. Zo kan uw WordPress-site ook onder hogere belasting betrouwbaar blijven presteren.
-
-Bespreek uw professionele hosting via info@000-it.com of 000-it.com.`,
+TripleZero iT biedt een robuuste hostingomgeving waarin snelheid, bereikbaarheid en schaalbaarheid centraal staan. Zo kan uw WordPress-site ook onder hogere belasting betrouwbaar blijven presteren.`,
     },
     en: {
       name: "WordPress Hosting Pro",
@@ -474,9 +424,7 @@ Bespreek uw professionele hosting via info@000-it.com of 000-it.com.`,
 
 You receive 100 GB SSD storage, capacity for around 500,000 visitors per month and 2.0x more CPU and RAM. The 99.9% uptime guarantee, free CDN and SSL, backups, 24/7 support and Brizy Site Builder support a professional online operation.
 
-TripleZero iT provides a robust hosting environment focused on speed, availability and scalability. Your WordPress site can keep performing reliably even under greater load.
-
-Discuss your professional hosting at info@000-it.com or 000-it.com.`,
+TripleZero iT provides a robust hosting environment focused on speed, availability and scalability. Your WordPress site can keep performing reliably even under greater load.`,
     },
   },
 
@@ -492,9 +440,7 @@ Discuss your professional hosting at info@000-it.com or 000-it.com.`,
 
 Wij maken een volledige backup van bestanden, database, thema’s, plugins en media. Daarna migreren wij uw site naar de nieuwe omgeving, controleren we compatibiliteit en zetten we essentiële hostinginstellingen correct klaar.
 
-Na oplevering krijgt u 7 dagen gratis support voor vragen over backup, herstel of de migratie. Zo blijft uw site integer, bereikbaar en klaar voor verder groeien.
-
-Neem contact op via info@000-it.com of bezoek 000-it.com.`,
+Na oplevering krijgt u 7 dagen gratis support voor vragen over backup, herstel of de migratie. Zo blijft uw site integer, bereikbaar en klaar voor verder groeien.`,
     },
     en: {
       name: "Backups and Migration",
@@ -507,9 +453,7 @@ Neem contact op via info@000-it.com of bezoek 000-it.com.`,
 
 We create a full backup of files, database, themes, plugins and media. Then we migrate your site, verify compatibility and set up key hosting configuration so everything works in the new environment.
 
-After delivery you receive 7 days of free support for questions about backup, restore or migration. Your site stays intact, reachable and ready to grow.
-
-Contact us at info@000-it.com or visit 000-it.com.`,
+After delivery you receive 7 days of free support for questions about backup, restore or migration. Your site stays intact, reachable and ready to grow.`,
     },
   },
 
@@ -523,9 +467,7 @@ Wij helpen bij veelvoorkomende problemen en best practices zodat uw WordPress-we
 
 Wij diagnosticeren de oorzaak — van white screens en HTTP-fouten tot databaseproblemen — en lossen het structureel op. Daarna controleren wij kritieke flows zoals login, formulieren en (indien van toepassing) checkout.
 
-U krijgt een duidelijke aanpak en praktische aanbevelingen om herhaling te voorkomen. Zo blijft uw online aanwezigheid stabiel en professioneel.
-
-Vragen? Mail info@000-it.com of bezoek 000-it.com.`,
+U krijgt een duidelijke aanpak en praktische aanbevelingen om herhaling te voorkomen. Zo blijft uw online aanwezigheid stabiel en professioneel.`,
     },
     en: {
       name: "Fix Bugs and Errors",
@@ -536,9 +478,7 @@ We resolve common issues and apply best practices so your WordPress site works r
 
 We investigate root causes — from white screens and HTTP errors to database issues — then apply a durable fix. Critical flows such as login, forms and checkout (when relevant) are checked before handoff.
 
-You receive practical recommendations to reduce recurrence, so your online presence stays stable and professional.
-
-Questions? Email info@000-it.com or visit 000-it.com.`,
+You receive practical recommendations to reduce recurrence, so your online presence stays stable and professional.`,
     },
   },
 
@@ -556,9 +496,7 @@ Na een succesvolle opschoning ontvangt u ook instructies om malware in de toekom
 
 Wij scannen bestanden, database en kwetsbare onderdelen, verwijderen malware en ongewenste redirects, en herstellen waar nodig gecompromitteerde onderdelen. Voor en na de schoonmaak maken wij een backup.
 
-Na afronding ontvangt u preventietips zodat uw site beter bestand is tegen herinfectie. Zo kunt u weer veilig verder met uw bedrijf.
-
-Contact: info@000-it.com · 000-it.com.`,
+Na afronding ontvangt u preventietips zodat uw site beter bestand is tegen herinfectie. Zo kunt u weer veilig verder met uw bedrijf.`,
     },
     en: {
       name: "Malware Removal",
@@ -573,9 +511,7 @@ After a successful cleanup, we also provide guidance on how to prevent malware i
 
 We scan files, databases and vulnerable components, remove malware and unwanted redirects, and repair compromised parts where needed. Backups are taken before and after cleanup.
 
-You also receive prevention guidance to reduce the chance of reinfection, so you can return to running your business with confidence.
-
-Contact: info@000-it.com · 000-it.com.`,
+You also receive prevention guidance to reduce the chance of reinfection, so you can return to running your business with confidence.`,
     },
   },
 
@@ -591,9 +527,7 @@ Contact: info@000-it.com · 000-it.com.`,
 
 Wij maken eerst een backup, controleren compatibiliteit en installeren daarna de gewenste plugin of het gewenste thema. Basisconfiguratie en een snelle werkingstest horen erbij, zodat alles stabiel meedraait.
 
-Na oplevering krijgt u 7 dagen gratis support voor vragen over de installatie. Zo blijft uw site veilig, overzichtelijk en klaar voor gebruik.
-
-Neem contact op via info@000-it.com of bezoek 000-it.com.`,
+Na oplevering krijgt u 7 dagen gratis support voor vragen over de installatie. Zo blijft uw site veilig, overzichtelijk en klaar voor gebruik.`,
     },
     en: {
       name: "WordPress Plugin / Theme Installation",
@@ -606,9 +540,7 @@ Neem contact op via info@000-it.com of bezoek 000-it.com.`,
 
 We back up first, check compatibility, then install your chosen plugin or theme. Basic configuration and a quick functional check are included so everything runs cleanly together.
 
-After delivery you get 7 days of free support for questions about the installation. Your site stays safe, tidy and ready to use.
-
-Contact us at info@000-it.com or visit 000-it.com.`,
+After delivery you get 7 days of free support for questions about the installation. Your site stays safe, tidy and ready to use.`,
     },
   },
 
@@ -629,9 +561,7 @@ Contact us at info@000-it.com or visit 000-it.com.`,
 
 Na een backup voeren wij een beveiligingsaudit uit, installeren we Wordfence (Basic of Premium), zetten we firewall- en brute-forcebescherming klaar en verzorgen we SSL waar nodig. Ook gebruikersrechten en updates krijgen aandacht, zodat kwetsbaarheden minder kans krijgen.
 
-U ontvangt 7 dagen gratis support na oplevering. Zo blijft uw data, reputatie en bedrijfscontinuïteit beter beschermd.
-
-Contact: info@000-it.com · 000-it.com.`,
+U ontvangt 7 dagen gratis support na oplevering. Zo blijft uw data, reputatie en bedrijfscontinuïteit beter beschermd.`,
     },
     en: {
       name: "Firewall, Security & SSL",
@@ -649,9 +579,7 @@ Contact: info@000-it.com · 000-it.com.`,
 
 After a backup we run a security audit, install Wordfence (Basic or Premium), configure firewall and brute-force protection, and set up SSL where needed. User access and patching are reviewed so vulnerabilities have less room to grow.
 
-You receive 7 days of free support after delivery — keeping your data, reputation and continuity better protected.
-
-Contact: info@000-it.com · 000-it.com.`,
+You receive 7 days of free support after delivery — keeping your data, reputation and continuity better protected.`,
     },
   },
 
@@ -668,9 +596,7 @@ Contact: info@000-it.com · 000-it.com.`,
 
 Wij starten met een prestatie-audit en verbeteren daarna knelpunten in code, database, afbeeldingen, plugins, thema en hostingconfiguratie. Caching en gerichte optimalisaties brengen meetbare winst in laadtijd.
 
-Na oplevering krijgt u 7 dagen gratis support voor vragen over de uitgevoerde optimalisatie. Zo blijft uw site sneller, soepeler en professioneler.
-
-Neem contact op via info@000-it.com of bezoek 000-it.com.`,
+Na oplevering krijgt u 7 dagen gratis support voor vragen over de uitgevoerde optimalisatie. Zo blijft uw site sneller, soepeler en professioneler.`,
     },
     en: {
       name: "WordPress Speed Optimization",
@@ -684,9 +610,7 @@ Neem contact op via info@000-it.com of bezoek 000-it.com.`,
 
 We start with a performance audit, then improve bottlenecks across code, database, images, plugins, theme and hosting configuration. Caching and targeted tuning deliver measurable load-time gains.
 
-After delivery you get 7 days of free support for questions about the optimization work — keeping your site faster, smoother and more professional.
-
-Contact us at info@000-it.com or visit 000-it.com.`,
+After delivery you get 7 days of free support for questions about the optimization work — keeping your site faster, smoother and more professional.`,
     },
   },
 };

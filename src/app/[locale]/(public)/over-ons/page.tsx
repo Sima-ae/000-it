@@ -111,7 +111,7 @@ export default async function AboutPage({
             </Button>
             <Button asChild size="sm" variant="outline" className="rounded-xl">
               <SoftLink href={`/${locale}/afspraak`}>
-                {isNl ? "Afspraak boeken" : "Book appointment"}
+                {isNl ? "Boek een afspraak" : "Book an appointment"}
               </SoftLink>
             </Button>
           </div>
@@ -238,7 +238,7 @@ export default async function AboutPage({
             <div className="relative mt-6 flex flex-wrap gap-2.5">
               <Button asChild size="sm" className="rounded-xl bg-white text-primary hover:bg-white/90">
                 <SoftLink href={`/${locale}/afspraak`}>
-                  {isNl ? "Afspraak" : "Book"}
+                  {isNl ? "Boek een afspraak" : "Book an appointment"}
                 </SoftLink>
               </Button>
               <Button

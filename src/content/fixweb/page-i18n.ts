@@ -47,10 +47,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         p(
           "Wij starten met een korte intake, zetten monitoring en backups klaar en werken volgens een vaste cadans. U weet altijd wat er is gedaan en wanneer er actie nodig is.",
         ),
-        h("Direct contact"),
-        p(
-          "Vragen over welk pakket past? Mail info@000-it.com of bezoek 000-it.com — TripleZero iT denkt graag met u mee.",
-        ),
       ],
     },
     en: {
@@ -78,10 +74,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         h("How we work"),
         p(
           "We start with a short intake, set up monitoring and backups, and follow a clear cadence. You always know what was done and when action is needed.",
-        ),
-        h("Get in touch"),
-        p(
-          "Not sure which package fits? Email info@000-it.com or visit 000-it.com — TripleZero iT is happy to advise.",
         ),
       ],
     },
@@ -118,9 +110,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "Ideaal voor mkb, webshops en dienstverleners die hun online acquisitie willen professionaliseren met een partner die ook technisch meedenkt.",
         ),
         h("Neem contact op"),
-        p(
-          "Bespreek uw doelen met TripleZero iT via info@000-it.com of 000-it.com.",
-        ),
       ],
     },
     en: {
@@ -153,9 +142,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "Ideal for SMEs, online stores and service businesses that want professional online acquisition with a partner who also understands the technical side.",
         ),
         h("Contact us"),
-        p(
-          "Discuss your goals with TripleZero iT at info@000-it.com or 000-it.com.",
-        ),
       ],
     },
   },
@@ -195,9 +181,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "U bouwt een herkenbare contentbasis op die vragen van prospects beantwoordt, uw expertise onderbouwt en commerciële pagina’s ondersteunt. Daardoor ontstaat er meer samenhang tussen zichtbaarheid, vertrouwen en conversie.",
         ),
         h("Contact"),
-        p(
-          "Vraag content aan via info@000-it.com of bekijk 000-it.com voor meer over TripleZero iT.",
-        ),
       ],
     },
     en: {
@@ -234,9 +217,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "You build a consistent content foundation that answers prospect questions, demonstrates expertise and supports commercial pages. The result is a stronger connection between visibility, trust and conversion.",
         ),
         h("Contact"),
-        p(
-          "Request content via info@000-it.com or visit 000-it.com to learn more about TripleZero iT.",
-        ),
       ],
     },
   },
@@ -276,9 +256,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "Geschikt voor bedrijven die social media serieus willen inzetten zonder een volledig intern team op te bouwen.",
         ),
         h("Start vandaag"),
-        p(
-          "Mail info@000-it.com of bezoek 000-it.com — TripleZero iT denkt graag mee over uw kanalen.",
-        ),
       ],
     },
     en: {
@@ -315,9 +292,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "Ideal for businesses that want serious social media without building a full in-house team.",
         ),
         h("Get started"),
-        p(
-          "Email info@000-it.com or visit 000-it.com — TripleZero iT is ready to advise on your channels.",
-        ),
       ],
     },
   },
@@ -357,9 +331,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "U levert briefing en voorbeelden; wij komen met concepten, verwerken feedback en leveren bestanden in de juiste formaten.",
         ),
         h("Contact"),
-        p(
-          "Vraag media aan via info@000-it.com of bekijk 000-it.com.",
-        ),
       ],
     },
     en: {
@@ -396,9 +367,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "You provide briefing and examples; we return concepts, process feedback and deliver files in the right formats.",
         ),
         h("Contact"),
-        p(
-          "Request media via info@000-it.com or visit 000-it.com.",
-        ),
       ],
     },
   },
@@ -438,9 +406,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "Of u nu start of een bestaande shop wilt verbeteren: wij werken pragmatisch, met duidelijke mijlpalen en ruimte voor uw merkwensen.",
         ),
         h("Neem contact op"),
-        p(
-          "Bespreek uw webshopplannen met TripleZero iT via info@000-it.com · 000-it.com.",
-        ),
       ],
     },
     en: {
@@ -477,9 +442,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "Whether you are starting fresh or improving an existing shop, we work pragmatically with clear milestones and room for your brand requirements.",
         ),
         h("Contact us"),
-        p(
-          "Discuss your store plans with TripleZero iT at info@000-it.com · 000-it.com.",
-        ),
       ],
     },
   },
@@ -519,9 +481,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "Consistente, complete informatie vermindert twijfel bij shoppers en beperkt fouten in uw catalogus. Dat ondersteunt filters, interne zoekfuncties, vindbaarheid en een overtuigender aankoopbesluit.",
         ),
         h("Contact"),
-        p(
-          "Vraag product listing aan via info@000-it.com of bezoek 000-it.com.",
-        ),
       ],
     },
     en: {
@@ -558,9 +517,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "Consistent, complete information reduces shopper uncertainty and catalog errors. It supports filters, on-site search, discoverability and a more convincing purchase decision.",
         ),
         h("Contact"),
-        p(
-          "Request product listing via info@000-it.com or visit 000-it.com.",
-        ),
       ],
     },
   },
@@ -600,9 +556,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "Geschikt wanneer u social media, forums of communitygroepen serieus wilt onderhouden zonder alles zelf te hoeven bewaken.",
         ),
         h("Neem contact op"),
-        p(
-          "Mail info@000-it.com of bezoek 000-it.com voor community support van TripleZero iT.",
-        ),
       ],
     },
     en: {
@@ -639,9 +592,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "Ideal when you want to maintain social channels, forums or community groups without watching every thread yourself.",
         ),
         h("Contact us"),
-        p(
-          "Email info@000-it.com or visit 000-it.com for TripleZero iT community support.",
-        ),
       ],
     },
   },
@@ -681,9 +631,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "Ideaal wanneer u pieken wilt opvangen of structureel datawerk wilt uitbesteden zonder interne capaciteit te belasten.",
         ),
         h("Contact"),
-        p(
-          "Vraag data entry aan via info@000-it.com · 000-it.com.",
-        ),
       ],
     },
     en: {
@@ -720,9 +667,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "Ideal when you need to absorb peaks or outsource ongoing data work without overloading internal capacity.",
         ),
         h("Contact"),
-        p(
-          "Request data entry via info@000-it.com · 000-it.com.",
-        ),
       ],
     },
   },
@@ -753,9 +697,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "Registreer een domein vanaf scherpe starttarieven en koppel het eenvoudig aan uw hosting. Zo houdt u merk, e-mail en website bij één partner.",
         ),
         h("Advies nodig?"),
-        p(
-          "Mail info@000-it.com of bezoek 000-it.com — TripleZero iT adviseert u graag over de juiste hostingstack.",
-        ),
       ],
     },
     en: {
@@ -783,9 +724,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "Register a domain at competitive starting rates and connect it easily to your hosting — keeping brand, email and website with one partner.",
         ),
         h("Need advice?"),
-        p(
-          "Email info@000-it.com or visit 000-it.com — TripleZero iT will help you pick the right hosting stack.",
-        ),
       ],
     },
   },
@@ -825,9 +763,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "U krijgt de essentiële voorzieningen voor een professionele website op één plek: opslag, e-mail, backups en hulp wanneer dat nodig is. Dat houdt de technische basis overzichtelijk terwijl uw organisatie online zichtbaar wordt.",
         ),
         h("Bestellen of advies"),
-        p(
-          "Kies een plan via 000-it.com of mail info@000-it.com voor persoonlijk advies.",
-        ),
       ],
     },
     en: {
@@ -864,9 +799,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "You get the essentials for a professional website in one place: storage, email, backups and help when needed. This keeps the technical foundation clear while your organisation becomes visible online.",
         ),
         h("Order or get advice"),
-        p(
-          "Choose a plan at 000-it.com or email info@000-it.com for personal advice.",
-        ),
       ],
     },
   },
@@ -904,9 +836,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "Een passende WordPress-omgeving ondersteunt een snelle gebruikerservaring en een stabiele basis voor campagnes, content en conversie. U kunt opschalen zodra uw website meer bezoekers of capaciteit vraagt.",
         ),
         h("Hulp bij kiezen"),
-        p(
-          "Twijfelt u tussen Basic, Plus of Pro? Mail info@000-it.com of bezoek 000-it.com.",
-        ),
       ],
     },
     en: {
@@ -941,9 +870,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "A suitable WordPress environment supports a fast user experience and a stable foundation for campaigns, content and conversion. You can scale when your website needs more visitors or capacity.",
         ),
         h("Need help choosing?"),
-        p(
-          "Unsure between Basic, Plus or Pro? Email info@000-it.com or visit 000-it.com.",
-        ),
       ],
     },
   },
@@ -981,9 +907,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "Met gereserveerde capaciteit creëert u meer rust voor veeleisende websites en applicaties. Uw omgeving kan zich beter aanpassen aan pieken, nieuwe functionaliteit en veranderende prestaties zonder direct van platform te hoeven wisselen.",
         ),
         h("Advies"),
-        p(
-          "Laat TripleZero iT meedenken via info@000-it.com of 000-it.com.",
-        ),
       ],
     },
     en: {
@@ -1018,9 +941,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "Reserved capacity gives demanding websites and applications more headroom. Your environment can adapt more easily to peaks, new functionality and changing performance needs without an immediate platform move.",
         ),
         h("Advice"),
-        p(
-          "Let TripleZero iT advise you via info@000-it.com or 000-it.com.",
-        ),
       ],
     },
   },
@@ -1055,9 +975,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "Na registratie begeleiden we desgewenst de DNS-instellingen, koppeling met hosting en e-mailconfiguratie. Zo wordt uw domein niet alleen vastgelegd, maar ook correct ingezet voor uw website en zakelijke communicatie.",
         ),
         h("Aan de slag"),
-        p(
-          "Zoek en registreer via 000-it.com, of mail info@000-it.com als u twijfelt over extensie of DNS-instellingen.",
-        ),
       ],
     },
     en: {
@@ -1089,9 +1006,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "After registration, we can help with DNS settings, hosting connection and email configuration. Your domain is therefore not only registered, but correctly put to work for your website and business communication.",
         ),
         h("Get started"),
-        p(
-          "Search and register at 000-it.com, or email info@000-it.com if you need help with extension choice or DNS.",
-        ),
       ],
     },
   },

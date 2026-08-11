@@ -55,6 +55,17 @@ export type ContentBlock =
   | { type: "paragraph"; text: string }
   | { type: "list"; items: string[] };
 
+/** Drop “email us at info@…” CTAs — service pages already show a booking button. */
+export function stripEmailContactBlocks(blocks: ContentBlock[]): ContentBlock[] {
+  return blocks.filter((block) => {
+    if (block.type === "list") return true;
+    const text = block.text.trim();
+    if (/info@000-it\.com/i.test(text)) return false;
+    if (/^(direct contact|get in touch|neem contact|contact)$/i.test(text)) return false;
+    return true;
+  });
+}
+
 export function textToBlocks(raw: string, options?: { maxBlocks?: number }): ContentBlock[] {
   const text = brandify(raw || "").trim();
   if (!text) return [];
@@ -106,7 +117,7 @@ export function textToBlocks(raw: string, options?: { maxBlocks?: number }): Con
     }
   }
 
-  return blocks;
+  return stripEmailContactBlocks(blocks);
 }
 
 function productFeatures(shortDescription: string) {
@@ -269,7 +280,7 @@ function buildServiceContent(slug: string, locale: string) {
       price: null as number | null,
       currency: null as string | null,
       image: pageImageFallback[slug] || null,
-      blocks: localizedPage.blocks,
+      blocks: stripEmailContactBlocks(localizedPage.blocks),
       kind: "page" as const,
       priceSuffix: null as string | null,
       features: [] as string[],

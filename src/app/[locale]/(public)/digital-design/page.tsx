@@ -106,7 +106,7 @@ export default async function DigitalDesignPage({
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild size="lg" className="rounded-2xl">
                 <SoftLink href={`/${locale}/afspraak`}>
-                  {isNl ? "Afspraak boeken" : "Book a call"}
+                  {isNl ? "Boek een afspraak" : "Book an appointment"}
                 </SoftLink>
               </Button>
               <Button asChild size="lg" variant="outline" className="rounded-2xl">

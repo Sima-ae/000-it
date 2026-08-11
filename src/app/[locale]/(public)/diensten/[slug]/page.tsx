@@ -190,7 +190,7 @@ export default async function ServiceDetailPage({
                   ) : (
                     <Button asChild size="lg" className="rounded-2xl">
                       <SoftLink href={`/${locale}/afspraak`}>
-                        {isNl ? "Afspraak boeken" : "Book appointment"}
+                        {isNl ? "Boek een afspraak" : "Book an appointment"}
                       </SoftLink>
                     </Button>
                   )}
@@ -264,7 +264,7 @@ export default async function ServiceDetailPage({
               ) : (
                 <Button asChild className="rounded-2xl">
                   <SoftLink href={`/${locale}/afspraak`}>
-                    {isNl ? "Afspraak boeken" : "Book appointment"}
+                    {isNl ? "Boek een afspraak" : "Book an appointment"}
                   </SoftLink>
                 </Button>
               )}
