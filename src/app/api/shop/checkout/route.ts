@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
+import type Stripe from "stripe";
 import { auth } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { resolveCartItems, cartTotalsInEuros } from "@/lib/shop/cart";
@@ -91,14 +92,20 @@ export async function POST(request: Request) {
 
     const origin = siteOrigin();
     const stripe = getStripe();
-    const checkoutSession = await stripe.checkout.sessions.create({
+
+    const sessionParams: Stripe.Checkout.SessionCreateParams = {
       mode: "payment",
+      locale: locale === "nl" ? "nl" : "en",
       customer_email: email,
       client_reference_id: order.id,
       metadata: {
         orderId: order.id,
         orderNumber: order.orderNumber,
       },
+      // Professional EU/NL methods (card also enables Apple Pay / Google Pay when available)
+      payment_method_types: ["card", "ideal", "bancontact", "sepa_debit", "klarna", "paypal"],
+      billing_address_collection: "auto",
+      submit_type: "pay",
       line_items: totals.lines.map((line) => ({
         quantity: line.quantity,
         price_data: {
@@ -116,7 +123,19 @@ export async function POST(request: Request) {
       })),
       success_url: `${origin}/${locale}/shop/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${origin}/${locale}/shop/checkout?cancelled=1`,
-    });
+    };
+
+    let checkoutSession: Stripe.Checkout.Session;
+    try {
+      checkoutSession = await stripe.checkout.sessions.create(sessionParams);
+    } catch (firstError) {
+      // Fall back if some methods are not enabled on this Stripe account
+      console.warn("[shop/checkout] full payment methods failed, retrying core set", firstError);
+      checkoutSession = await stripe.checkout.sessions.create({
+        ...sessionParams,
+        payment_method_types: ["card", "ideal", "bancontact"],
+      });
+    }
 
     await prisma.shopOrder.update({
       where: { id: order.id },

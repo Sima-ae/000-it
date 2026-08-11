@@ -5,6 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useMemo } from "react";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
+import { QuantityStepper } from "@/components/shop/QuantityStepper";
 import { useCartStore } from "@/lib/shop/cart-store";
 import { resolveCartItems, cartTotalsInEuros } from "@/lib/shop/cart";
 import { localizeShopProduct } from "@/lib/shop/catalog";
@@ -36,19 +37,20 @@ export function CartView() {
       <div className="space-y-4">
         {totals.lines.map((line) => {
           const localized = localizeShopProduct(line.product, locale);
+          const unit = formatShopEuro(centsToEuros(line.product.priceInclCents), locale);
           return (
             <div
               key={line.product.id}
-              className="flex gap-4 rounded-2xl border border-border/70 bg-background/60 p-4"
+              className="flex flex-col gap-4 rounded-2xl border border-border/70 bg-background/60 p-4 sm:flex-row"
             >
-              <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-xl bg-muted">
+              <div className="relative h-24 w-full shrink-0 overflow-hidden rounded-xl bg-muted sm:h-20 sm:w-20">
                 {line.product.image ? (
                   <Image
                     src={line.product.image}
                     alt={localized.localizedName}
                     fill
                     className="object-cover"
-                    sizes="80px"
+                    sizes="(max-width: 640px) 100vw, 80px"
                     unoptimized={line.product.image.startsWith("http")}
                   />
                 ) : null}
@@ -61,22 +63,14 @@ export function CartView() {
                   {localized.localizedName}
                 </SoftLink>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  {formatShopEuro(centsToEuros(line.product.priceInclCents), locale)}
+                  {unit} <span aria-hidden>·</span> {t("inclVat")}
                 </p>
-                <div className="mt-3 flex flex-wrap items-center gap-3">
-                  <label className="flex items-center gap-2 text-sm">
-                    <span className="text-muted-foreground">{t("quantity")}</span>
-                    <input
-                      type="number"
-                      min={1}
-                      max={99}
-                      value={line.quantity}
-                      onChange={(e) =>
-                        setQuantity(line.product.id, Number(e.target.value) || 1)
-                      }
-                      className="h-9 w-16 rounded-md border border-border bg-background px-2"
-                    />
-                  </label>
+                <div className="mt-3 flex flex-wrap items-center gap-4">
+                  <QuantityStepper
+                    label={t("quantity")}
+                    value={line.quantity}
+                    onChange={(next) => setQuantity(line.product.id, next)}
+                  />
                   <button
                     type="button"
                     onClick={() => removeItem(line.product.id)}
@@ -86,7 +80,7 @@ export function CartView() {
                   </button>
                 </div>
               </div>
-              <p className="shrink-0 font-medium">
+              <p className="shrink-0 text-right font-semibold sm:pt-1">
                 {formatShopEuro(centsToEuros(line.lineInclCents), locale)}
               </p>
             </div>

@@ -18,10 +18,9 @@ import { cn } from "@/lib/utils";
 const primaryLinks = [
   { href: "", key: "home" },
   { href: "/over-ons", key: "info", info: true },
-  { href: "/ai-scan", key: "aiScan" },
   { href: "/diensten", key: "services", mega: true },
   { href: "/portfolio", key: "portfolio" },
-  { href: "/shop", key: "shop" },
+  // Shop page stays reachable via cart / checkout; omit from header menu.
   { href: "/nieuws", key: "blog" },
   // { href: "/case-studies", key: "cases" },
   { href: "/contact", key: "contact" },

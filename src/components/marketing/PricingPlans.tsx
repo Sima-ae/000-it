@@ -8,7 +8,6 @@ import { GlassCard } from "@/components/marketing/GlassCard";
 import { Reveal } from "@/components/marketing/Reveal";
 import { ServiceInquiryDialog } from "@/components/marketing/ServiceInquiryDialog";
 import { useCartStore } from "@/lib/shop/cart-store";
-import { planProductId } from "@/lib/shop/catalog";
 import { cn } from "@/lib/utils";
 
 export type PricingPlan = {
@@ -50,7 +49,7 @@ export function PricingPlans({
 }) {
   const locale = useLocale();
   const router = useRouter();
-  const addItem = useCartStore((s) => s.addItem);
+  const addPlan = useCartStore((s) => s.addPlan);
   const [billing, setBilling] = useState<Billing>("monthly");
 
   const resolved = useMemo(
@@ -81,8 +80,8 @@ export function PricingPlans({
   );
 
   function orderPlan(planId: "starter" | "growth") {
-    const productId = planProductId(planId, billing);
-    addItem(productId, 1);
+    // Always use the currently selected billing toggle (monthly vs yearly total).
+    addPlan(planId, billing, 1);
     router.push(`/${locale}/shop/cart`);
   }
 
