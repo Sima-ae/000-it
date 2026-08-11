@@ -7,6 +7,11 @@ import { canAccessPath, dashboardNav } from "@/lib/roles";
 
 const intlMiddleware = createMiddleware(routing);
 
+const localePattern = routing.locales
+  .map((l) => l.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
+  .join("|");
+const localePathRe = new RegExp(`^/(${localePattern})(?=/|$)`);
+
 const protectedPrefixes = [
   ...new Set([
     ...dashboardNav.map((item) => item.href),
@@ -22,9 +27,9 @@ const protectedPrefixes = [
 
 export default async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
-  const localeMatch = pathname.match(/^\/(nl|en)(\/|$)/);
-  const locale = localeMatch?.[1] ?? "nl";
-  const pathWithoutLocale = pathname.replace(/^\/(nl|en)/, "") || "/";
+  const localeMatch = pathname.match(localePathRe);
+  const locale = localeMatch?.[1] ?? routing.defaultLocale;
+  const pathWithoutLocale = pathname.replace(localePathRe, "") || "/";
 
   const isProtected = protectedPrefixes.some(
     (prefix) =>

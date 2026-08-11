@@ -2,15 +2,15 @@ import type { MetadataRoute } from "next";
 import { listPublishedNewsIds, NEWS_PAGE_SIZE } from "@/lib/news";
 import { listShopProducts } from "@/lib/shop/catalog";
 import { absoluteUrl, newsArticlePath, siteOrigin } from "@/lib/seo";
+import { routing } from "@/i18n/routing";
 
-const LOCALES = ["nl", "en"] as const;
+const LOCALES = routing.locales;
 
 function localized(path: string) {
   const clean = path === "/" ? "" : path.startsWith("/") ? path : `/${path}`;
-  return {
-    nl: absoluteUrl(`/nl${clean}`),
-    en: absoluteUrl(`/en${clean}`),
-  };
+  return Object.fromEntries(
+    LOCALES.map((locale) => [locale, absoluteUrl(`/${locale}${clean}`)]),
+  ) as Record<string, string>;
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -44,10 +44,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }
 
   for (const product of listShopProducts()) {
-    const langs = {
-      nl: absoluteUrl(`/nl/shop/${product.slug}`),
-      en: absoluteUrl(`/en/shop/${product.slug}`),
-    };
+    const langs = localized(`/shop/${product.slug}`);
     for (const locale of LOCALES) {
       entries.push({
         url: langs[locale],
@@ -63,10 +60,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const posts = await listPublishedNewsIds();
     for (const post of posts) {
       const lastModified = post.updatedAt || (post.date ? new Date(post.date) : now);
-      const langs = {
-        nl: absoluteUrl(newsArticlePath("nl", post.id)),
-        en: absoluteUrl(newsArticlePath("en", post.id)),
-      };
+      const langs = Object.fromEntries(
+        LOCALES.map((locale) => [locale, absoluteUrl(newsArticlePath(locale, post.id))]),
+      ) as Record<string, string>;
       for (const locale of LOCALES) {
         entries.push({
           url: langs[locale],

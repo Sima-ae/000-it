@@ -6,8 +6,9 @@ import { getServiceSlugs, serviceCatalog } from "@/content/fixweb/catalog";
 import { listPublishedNewsIds } from "@/lib/news";
 import { absoluteUrl, siteOrigin } from "@/lib/seo";
 import { prisma } from "@/lib/prisma";
+import { enabledLanguages } from "@/i18n/languages";
 
-const LOCALES = ["nl", "en"] as const;
+const LOCALES = enabledLanguages().map((l) => l.code);
 
 export type SitemapUrlEntry = {
   loc: string;
@@ -26,10 +27,9 @@ function isoDate(input?: Date | string | null) {
 
 function localizedUrls(path: string) {
   const clean = path === "/" ? "" : path.startsWith("/") ? path : `/${path}`;
-  return {
-    nl: absoluteUrl(`/nl${clean}`),
-    en: absoluteUrl(`/en${clean}`),
-  };
+  return Object.fromEntries(
+    LOCALES.map((locale) => [locale, absoluteUrl(`/${locale}${clean}`)]),
+  ) as Record<string, string>;
 }
 
 function pushLocalized(
@@ -168,10 +168,7 @@ export async function collectSitemapSets() {
     const posts = await listPublishedNewsIds();
     for (const post of posts) {
       const lastmod = isoDate(post.updatedAt || post.date);
-      const langs = {
-        nl: absoluteUrl(`/nl/nieuws/${post.id}`),
-        en: absoluteUrl(`/en/nieuws/${post.id}`),
-      };
+      const langs = localizedUrls(`/nieuws/${post.id}`);
       for (const locale of LOCALES) {
         news.push({
           loc: langs[locale],

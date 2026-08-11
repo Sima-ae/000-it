@@ -115,9 +115,9 @@ export function LanguageSwitcher({ className }: { className?: string }) {
           <div
             role="menu"
             aria-label={t("title")}
-            className="w-[min(92vw,17.5rem)] rounded-2xl border border-border/70 bg-background/95 p-2 shadow-xl backdrop-blur-xl"
+            className="w-[min(92vw,18.5rem)] rounded-2xl border border-border/70 bg-background/95 p-2 shadow-xl backdrop-blur-xl"
           >
-            <div className="grid grid-cols-6 gap-1 sm:grid-cols-7">
+            <div className="grid max-h-[min(70vh,22rem)] grid-cols-7 gap-1 overflow-y-auto p-0.5">
               {languages.map((lang) => {
                 const active = lang.code === locale;
                 return (

@@ -12,7 +12,7 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 const bodySchema = z.object({
-  locale: z.enum(["nl", "en"]).default("nl"),
+  locale: z.string().min(2).max(10).default("nl"),
   name: z.string().min(2).max(120),
   email: z.string().email().max(190),
   company: z.string().max(190).optional(),
@@ -92,10 +92,12 @@ export async function POST(request: Request) {
 
     const origin = siteOrigin();
     const stripe = getStripe();
+    const stripeLocale = locale === "nl" ? "nl" : "en";
+    const catalogLocale = locale === "nl" ? "nl" : "en";
 
     const sessionParams: Stripe.Checkout.SessionCreateParams = {
       mode: "payment",
-      locale: locale === "nl" ? "nl" : "en",
+      locale: stripeLocale,
       customer_email: email,
       client_reference_id: order.id,
       metadata: {
@@ -112,8 +114,8 @@ export async function POST(request: Request) {
           currency: "eur",
           unit_amount: line.product.priceInclCents,
           product_data: {
-            name: line.product.name[locale === "nl" ? "nl" : "en"],
-            description: line.product.shortDescription[locale === "nl" ? "nl" : "en"].slice(
+            name: line.product.name[catalogLocale],
+            description: line.product.shortDescription[catalogLocale].slice(
               0,
               400,
             ),

@@ -1,14 +1,13 @@
 /**
  * Site language registry.
  *
- * Only `enabled: true` languages appear in the switcher and must also exist in
- * `src/i18n/routing.ts` + `messages/{code}.json`.
- * When adding a language: create messages, add locale to routing, then flip `enabled`.
+ * Only enabled languages appear in the switcher and must also exist in
+ * `messages/{code}.json`. Routing locales are derived from `enabledLanguages()`.
  */
 export type SiteLanguage = {
   /** Locale code used in URLs (`/nl/...`, `/en/...`). */
   code: string;
-  /** Native language name shown in the switcher. */
+  /** Native language name (tooltips / a11y). */
   nativeName: string;
   /** Flag file in `/public/uploads/flags/{flag}.svg`. */
   flag: string;
@@ -16,40 +15,43 @@ export type SiteLanguage = {
   enabled: boolean;
 };
 
+/** 35 languages matching the language-switcher flag set. */
 export const siteLanguages: SiteLanguage[] = [
   { code: "nl", nativeName: "Nederlands", flag: "nl", enabled: true },
   { code: "en", nativeName: "English", flag: "en", enabled: true },
-  // Ready to enable one-by-one once message files + routing exist:
-  { code: "de", nativeName: "Deutsch", flag: "de", enabled: false },
-  { code: "fr", nativeName: "Français", flag: "fr", enabled: false },
-  { code: "es", nativeName: "Español", flag: "es", enabled: false },
-  { code: "it", nativeName: "Italiano", flag: "it", enabled: false },
-  { code: "pt", nativeName: "Português", flag: "pt", enabled: false },
-  { code: "pl", nativeName: "Polski", flag: "pl", enabled: false },
-  { code: "tr", nativeName: "Türkçe", flag: "tr", enabled: false },
-  { code: "ru", nativeName: "Русский", flag: "ru", enabled: false },
-  { code: "uk", nativeName: "Українська", flag: "ua", enabled: false },
-  { code: "ro", nativeName: "Română", flag: "ro", enabled: false },
-  { code: "bg", nativeName: "Български", flag: "bg", enabled: false },
-  { code: "cs", nativeName: "Čeština", flag: "cz", enabled: false },
-  { code: "sk", nativeName: "Slovenčina", flag: "sk", enabled: false },
-  { code: "sl", nativeName: "Slovenščina", flag: "si", enabled: false },
-  { code: "hr", nativeName: "Hrvatski", flag: "hr", enabled: false },
-  { code: "sr", nativeName: "Српски", flag: "rs", enabled: false },
-  { code: "sq", nativeName: "Shqip", flag: "sq", enabled: false },
-  { code: "hu", nativeName: "Magyar", flag: "hu", enabled: false },
-  { code: "el", nativeName: "Ελληνικά", flag: "gr", enabled: false },
-  { code: "fi", nativeName: "Suomi", flag: "fi", enabled: false },
-  { code: "sv", nativeName: "Svenska", flag: "se", enabled: false },
-  { code: "no", nativeName: "Norsk", flag: "no", enabled: false },
-  { code: "da", nativeName: "Dansk", flag: "dk", enabled: false },
-  { code: "lt", nativeName: "Lietuvių", flag: "lt", enabled: false },
-  { code: "lv", nativeName: "Latviešu", flag: "lv", enabled: false },
-  { code: "et", nativeName: "Eesti", flag: "ee", enabled: false },
-  { code: "ar", nativeName: "العربية", flag: "sa", enabled: false },
-  { code: "he", nativeName: "עברית", flag: "he", enabled: false },
-  { code: "zh", nativeName: "中文", flag: "cn", enabled: false },
-  { code: "ja", nativeName: "日本語", flag: "jp", enabled: false },
+  { code: "fr", nativeName: "Français", flag: "fr", enabled: true },
+  { code: "de", nativeName: "Deutsch", flag: "de", enabled: true },
+  { code: "es", nativeName: "Español", flag: "es", enabled: true },
+  { code: "pt", nativeName: "Português", flag: "pt", enabled: true },
+  { code: "it", nativeName: "Italiano", flag: "it", enabled: true },
+  { code: "el", nativeName: "Ελληνικά", flag: "gr", enabled: true },
+  { code: "pl", nativeName: "Polski", flag: "pl", enabled: true },
+  { code: "cs", nativeName: "Čeština", flag: "cz", enabled: true },
+  { code: "sk", nativeName: "Slovenčina", flag: "sk", enabled: true },
+  { code: "hu", nativeName: "Magyar", flag: "hu", enabled: true },
+  { code: "ro", nativeName: "Română", flag: "ro", enabled: true },
+  { code: "bg", nativeName: "Български", flag: "bg", enabled: true },
+  { code: "hr", nativeName: "Hrvatski", flag: "hr", enabled: true },
+  { code: "sr", nativeName: "Српски", flag: "rs", enabled: true },
+  { code: "bs", nativeName: "Bosanski", flag: "ba", enabled: true },
+  { code: "cnr", nativeName: "Crnogorski", flag: "me", enabled: true },
+  { code: "sq", nativeName: "Shqip", flag: "sq", enabled: true },
+  { code: "mk", nativeName: "Македонски", flag: "mk", enabled: true },
+  { code: "lt", nativeName: "Lietuvių", flag: "lt", enabled: true },
+  { code: "da", nativeName: "Dansk", flag: "dk", enabled: true },
+  { code: "sv", nativeName: "Svenska", flag: "se", enabled: true },
+  { code: "no", nativeName: "Norsk bokmål", flag: "no", enabled: true },
+  { code: "fi", nativeName: "Suomi", flag: "fi", enabled: true },
+  { code: "uk", nativeName: "Українська", flag: "ua", enabled: true },
+  { code: "ru", nativeName: "Русский", flag: "ru", enabled: true },
+  { code: "tr", nativeName: "Türkçe", flag: "tr", enabled: true },
+  { code: "he", nativeName: "עברית", flag: "he", enabled: true },
+  { code: "ar", nativeName: "العربية", flag: "sa", enabled: true },
+  { code: "ka", nativeName: "ქართული", flag: "ka", enabled: true },
+  { code: "hy", nativeName: "Հայերեն", flag: "hy", enabled: true },
+  { code: "az", nativeName: "Azərbaycan", flag: "az", enabled: true },
+  { code: "zh", nativeName: "中文", flag: "cn", enabled: true },
+  { code: "ja", nativeName: "日本語", flag: "jp", enabled: true },
 ];
 
 export function enabledLanguages(): SiteLanguage[] {
