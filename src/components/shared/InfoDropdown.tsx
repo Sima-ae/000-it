@@ -106,13 +106,6 @@ export function InfoDropdown({
             >
               {aboutLabel}
             </SoftLink>
-            <SoftLink
-              href={faqHref}
-              className={cn(itemClass, faqActive && "bg-primary/10 text-foreground")}
-              onClick={() => setOpen(false)}
-            >
-              {faqLabel}
-            </SoftLink>
             {legalLinks.map((item) => (
               <SoftLink
                 key={item.href}
@@ -125,6 +118,13 @@ export function InfoDropdown({
                 {legalLabels[item.labelKey]}
               </SoftLink>
             ))}
+            <SoftLink
+              href={faqHref}
+              className={cn(itemClass, faqActive && "bg-primary/10 text-foreground")}
+              onClick={() => setOpen(false)}
+            >
+              {faqLabel}
+            </SoftLink>
           </div>
         </div>
       ) : null}

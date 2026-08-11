@@ -97,9 +97,20 @@ export const SoftLink = forwardRef<HTMLAnchorElement, SoftLinkProps>(
       if (event.button !== 0) return;
       if (!targetHref.startsWith("/")) return;
 
-      // Read search from window so ?page= navigations work without useSearchParams
-      // (useSearchParams requires Suspense and breaks static prerender).
-      if (currentHrefFromWindow(pathname) === targetHref) return;
+      const hashPart = hrefString.includes("#") ? hrefString.split("#").slice(1).join("#") : "";
+
+      // Same path (ignore hash): scroll to anchor instead of no-op.
+      if (currentHrefFromWindow(pathname) === targetHref) {
+        if (hashPart) {
+          event.preventDefault();
+          const el = document.getElementById(hashPart);
+          if (el) {
+            el.scrollIntoView({ behavior: "smooth", block: "start" });
+            window.history.pushState(null, "", `#${hashPart}`);
+          }
+        }
+        return;
+      }
 
       event.preventDefault();
       start();

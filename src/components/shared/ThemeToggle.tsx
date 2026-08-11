@@ -22,10 +22,10 @@ export function ThemeToggle() {
         type="button"
         size="icon"
         variant="ghost"
-        className="shrink-0 rounded-xl"
+        className="h-9 w-9 shrink-0 rounded-xl"
         aria-label={isNl ? "Thema wisselen" : "Toggle theme"}
       >
-        <Sun className="h-4 w-4" />
+        <Sun className="h-[22px] w-[22px]" />
       </Button>
     );
   }
@@ -37,7 +37,7 @@ export function ThemeToggle() {
       type="button"
       size="icon"
       variant="ghost"
-      className="shrink-0 rounded-xl"
+      className="h-9 w-9 shrink-0 rounded-xl"
       aria-label={
         isDark
           ? isNl
@@ -49,7 +49,7 @@ export function ThemeToggle() {
       }
       onClick={() => setTheme(isDark ? "light" : "dark")}
     >
-      {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+      {isDark ? <Sun className="h-[22px] w-[22px]" /> : <Moon className="h-[22px] w-[22px]" />}
     </Button>
   );
 }

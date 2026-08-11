@@ -68,6 +68,7 @@ export function PricingPlans({
   const router = useRouter();
   const addPlan = useCartStore((s) => s.addPlan);
   const [billing, setBilling] = useState<Billing>("monthly");
+  const [hoveredPlanId, setHoveredPlanId] = useState<string | null>(null);
 
   const resolved = useMemo(
     () =>
@@ -97,35 +98,39 @@ export function PricingPlans({
   );
 
   function orderPlan(planId: "starter" | "growth") {
-    // Always use the currently selected billing toggle (monthly vs yearly total).
     addPlan(planId, billing, 1);
     router.push(`/${locale}/shop/cart`);
   }
 
   return (
-    <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
+    <section
+      id="prijzen"
+      className="mx-auto max-w-6xl scroll-mt-28 px-4 py-10 md:scroll-mt-32 md:px-6 md:py-12"
+    >
       <Reveal>
-        <div className="mx-auto mb-8 max-w-2xl text-center">
-          <h2 className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
+        <div className="mx-auto mb-5 max-w-2xl text-center">
+          <h2 className="font-display text-[1.65rem] font-semibold tracking-tight md:text-[2.05rem]">
             {labels.title}
           </h2>
-          <p className="mt-3 text-muted-foreground md:text-lg">{labels.subtitle}</p>
+          <p className="mt-1 text-sm font-normal text-muted-foreground md:text-base">
+            ({labels.subtitle})
+          </p>
         </div>
       </Reveal>
 
-      <div className="mb-10 flex flex-col items-center gap-3">
+      <div className="mb-6 flex flex-col items-center gap-2">
         <div
           role="group"
           aria-label={locale === "nl" ? "Facturatieperiode" : "Billing period"}
-          className="inline-flex rounded-2xl border border-border/70 bg-muted/40 p-1"
+          className="inline-flex rounded-full border border-border/60 bg-muted/50 p-0.5"
         >
           <button
             type="button"
             onClick={() => setBilling("monthly")}
             className={cn(
-              "rounded-xl px-4 py-2 text-sm font-medium transition",
+              "rounded-full px-3.5 py-1.5 text-xs font-medium transition md:text-[13px]",
               billing === "monthly"
-                ? "bg-background text-foreground shadow-sm"
+                ? "bg-background text-foreground shadow-sm ring-1 ring-border/60"
                 : "text-muted-foreground hover:text-foreground",
             )}
           >
@@ -135,9 +140,9 @@ export function PricingPlans({
             type="button"
             onClick={() => setBilling("yearly")}
             className={cn(
-              "rounded-xl px-4 py-2 text-sm font-medium transition",
+              "rounded-full px-3.5 py-1.5 text-xs font-medium transition md:text-[13px]",
               billing === "yearly"
-                ? "bg-background text-foreground shadow-sm"
+                ? "bg-background text-foreground shadow-sm ring-1 ring-border/60"
                 : "text-muted-foreground hover:text-foreground",
             )}
           >
@@ -145,38 +150,58 @@ export function PricingPlans({
           </button>
         </div>
         {billing === "yearly" ? (
-          <p className="text-sm font-medium text-primary">{labels.save}</p>
-        ) : (
-          <p className="h-5 text-sm text-transparent select-none">{labels.save}</p>
-        )}
+          <p className="text-xs font-medium text-primary">{labels.save}</p>
+        ) : null}
       </div>
 
-      <div className="grid items-stretch gap-4 lg:grid-cols-3">
-        {resolved.map((plan, index) => (
-          <Reveal key={plan.id} delay={index * 0.08}>
+      <div
+        className="grid items-stretch gap-3 lg:grid-cols-3 lg:gap-4"
+        onMouseLeave={() => setHoveredPlanId(null)}
+      >
+        {resolved.map((plan, index) => {
+          const glowOnHover = hoveredPlanId === plan.id;
+          const featuredIdlePulse = plan.featured && hoveredPlanId === null;
+
+          return (
+          <Reveal key={plan.id} delay={index * 0.06}>
+            <div
+              onMouseEnter={() => setHoveredPlanId(plan.id)}
+              className="h-full"
+            >
             <GlassCard
               className={cn(
-                "relative flex h-full flex-col overflow-hidden",
-                plan.featured && "mesh-panel ring-1 ring-primary/20 lg:-translate-y-3 lg:scale-[1.03]",
+                "relative flex h-full flex-col overflow-hidden rounded-2xl p-5 transition-[box-shadow] duration-300",
+                plan.featured && "mesh-panel lg:-translate-y-1",
+                featuredIdlePulse && "pricing-featured-pulse ring-1 ring-primary/25",
+                glowOnHover && "pricing-card-glow ring-1 ring-primary/30",
               )}
             >
-              {plan.featured && (
-                <div className="mb-4 inline-flex w-fit rounded-xl bg-primary px-3 py-1 text-xs font-semibold text-primary-foreground">
+              {plan.featured ? (
+                <div className="pricing-badge absolute right-3 top-3 z-10 rounded-full bg-primary px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-primary-foreground">
                   {labels.mostChosen}
                 </div>
-              )}
-              <h3 className="font-display text-xl font-semibold tracking-tight">{plan.name}</h3>
-              <p className="mt-4 font-display text-4xl font-bold tracking-tight">
+              ) : null}
+              <h3
+                className={cn(
+                  "font-display text-base font-semibold tracking-tight md:text-lg",
+                  plan.featured && "pr-20",
+                )}
+              >
+                {plan.name}
+              </h3>
+              <p className="mt-2 font-display text-2xl font-bold tracking-tight md:text-[1.75rem]">
                 {plan.displayPrice}
                 {plan.period ? (
-                  <span className="ml-1 text-sm font-medium text-muted-foreground">{plan.period}</span>
+                  <span className="ml-1 text-xs font-medium text-muted-foreground">
+                    {plan.period}
+                  </span>
                 ) : null}
               </p>
-              <ul className="mt-6 flex-1 space-y-3 text-sm text-muted-foreground">
+              <ul className="mt-4 flex-1 space-y-1.5 text-[13px] leading-snug text-muted-foreground">
                 {plan.features.map((f) => (
-                  <li key={f} className="flex items-center gap-2">
-                    <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-                    {withHostingPeriod(f, billing, locale)}
+                  <li key={f} className="flex items-start gap-2">
+                    <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-accent" />
+                    <span>{withHostingPeriod(f, billing, locale)}</span>
                   </li>
                 ))}
               </ul>
@@ -195,12 +220,13 @@ export function PricingPlans({
                   }
                   messageHint={locale === "nl" ? "Enterprise-plan" : "Enterprise plan"}
                   variant="outline"
-                  size="default"
-                  className="mt-8 w-full"
+                  size="sm"
+                  className="mt-5 w-full rounded-xl"
                 />
               ) : (
                 <Button
-                  className="mt-8 w-full rounded-2xl"
+                  className="mt-5 w-full rounded-xl"
+                  size="sm"
                   variant={plan.featured ? "default" : "outline"}
                   onClick={() => {
                     if (plan.id === "starter" || plan.id === "growth") {
@@ -212,8 +238,10 @@ export function PricingPlans({
                 </Button>
               )}
             </GlassCard>
+            </div>
           </Reveal>
-        ))}
+          );
+        })}
       </div>
     </section>
   );

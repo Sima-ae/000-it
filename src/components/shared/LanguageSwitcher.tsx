@@ -2,15 +2,7 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
-import { useState } from "react";
-import { ChevronDown } from "lucide-react";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+import { useEffect, useRef, useState } from "react";
 import {
   enabledLanguages,
   flagSrc,
@@ -19,6 +11,8 @@ import {
   type SiteLanguage,
 } from "@/i18n/languages";
 import { cn } from "@/lib/utils";
+
+const CLOSE_DELAY_MS = 180;
 
 function Flag({
   lang,
@@ -56,11 +50,28 @@ export function LanguageSwitcher({ className }: { className?: string }) {
   const pathname = usePathname();
   const router = useRouter();
   const [open, setOpen] = useState(false);
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const current = getLanguage(locale) ?? enabledLanguages()[0];
   const languages = enabledLanguages();
-  const cols =
-    languages.length <= 2 ? "grid-cols-1 sm:grid-cols-2" : "grid-cols-1 sm:grid-cols-2 md:grid-cols-3";
+
+  function clearCloseTimer() {
+    if (closeTimer.current) {
+      clearTimeout(closeTimer.current);
+      closeTimer.current = null;
+    }
+  }
+
+  function scheduleClose() {
+    clearCloseTimer();
+    closeTimer.current = setTimeout(() => setOpen(false), CLOSE_DELAY_MS);
+  }
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+  useEffect(() => () => clearCloseTimer(), []);
 
   function selectLanguage(next: SiteLanguage) {
     if (next.code === locale) {
@@ -73,50 +84,66 @@ export function LanguageSwitcher({ className }: { className?: string }) {
   }
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger asChild>
-        <button
-          type="button"
-          className={cn(
-            "inline-flex items-center gap-1.5 rounded-full border border-border/80 bg-background/80 py-1 pl-1 pr-2 text-muted-foreground shadow-sm transition hover:border-accent/50 hover:bg-muted/60 hover:text-foreground",
-            className,
-          )}
-          aria-label={t("title")}
+    <div
+      className={cn("relative", className)}
+      onMouseEnter={() => {
+        clearCloseTimer();
+        setOpen(true);
+      }}
+      onMouseLeave={scheduleClose}
+    >
+      <button
+        type="button"
+        className={cn(
+          "inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-xl p-0 transition hover:bg-muted/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+          open && "bg-muted/70",
+        )}
+        aria-label={t("title")}
+        aria-expanded={open}
+        aria-haspopup="menu"
+        onClick={() => setOpen((v) => !v)}
+      >
+        {current ? <Flag lang={current} size={22} /> : null}
+      </button>
+
+      {open ? (
+        <div
+          className="absolute right-0 top-full z-50 pt-2"
+          onMouseEnter={clearCloseTimer}
+          onMouseLeave={scheduleClose}
         >
-          {current ? <Flag lang={current} size={22} /> : null}
-          <ChevronDown className="h-3.5 w-3.5 opacity-70" />
-        </button>
-      </DialogTrigger>
-
-      <DialogContent className="w-[min(96vw,28rem)] max-w-none gap-0 p-0 sm:w-[min(96vw,36rem)]">
-        <DialogHeader className="border-b border-border/60 px-6 py-4 text-center">
-          <DialogTitle className="text-center text-base font-semibold tracking-tight md:text-lg">
-            {t("title")}
-          </DialogTitle>
-        </DialogHeader>
-
-        <div className={cn("grid gap-1.5 p-4 sm:p-5", cols)}>
-          {languages.map((lang) => {
-            const active = lang.code === locale;
-            return (
-              <button
-                key={lang.code}
-                type="button"
-                onClick={() => selectLanguage(lang)}
-                className={cn(
-                  "flex items-center gap-3 rounded-2xl px-3 py-2.5 text-left text-sm font-medium transition",
-                  active
-                    ? "bg-accent/15 text-accent-foreground ring-1 ring-accent/30"
-                    : "text-foreground hover:bg-muted/70",
-                )}
-              >
-                <Flag lang={lang} size={32} />
-                <span className={cn(active && "font-semibold text-[#0f766e]")}>{lang.nativeName}</span>
-              </button>
-            );
-          })}
+          <div
+            role="menu"
+            aria-label={t("title")}
+            className="w-[min(92vw,17.5rem)] rounded-2xl border border-border/70 bg-background/95 p-2 shadow-xl backdrop-blur-xl"
+          >
+            <div className="grid grid-cols-6 gap-1 sm:grid-cols-7">
+              {languages.map((lang) => {
+                const active = lang.code === locale;
+                return (
+                  <button
+                    key={lang.code}
+                    type="button"
+                    role="menuitem"
+                    title={lang.nativeName}
+                    aria-label={lang.nativeName}
+                    aria-current={active ? "true" : undefined}
+                    onClick={() => selectLanguage(lang)}
+                    className={cn(
+                      "inline-flex h-9 w-9 items-center justify-center rounded-xl transition",
+                      active
+                        ? "bg-primary/15 ring-1 ring-primary/35"
+                        : "hover:bg-muted/70",
+                    )}
+                  >
+                    <Flag lang={lang} size={22} />
+                  </button>
+                );
+              })}
+            </div>
+          </div>
         </div>
-      </DialogContent>
-    </Dialog>
+      ) : null}
+    </div>
   );
 }

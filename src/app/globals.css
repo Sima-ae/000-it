@@ -175,6 +175,94 @@ body::before {
     var(--glass);
 }
 
+@keyframes pricing-glow-pulse {
+  0%,
+  100% {
+    opacity: 0.22;
+  }
+  50% {
+    opacity: 0.88;
+  }
+}
+
+@keyframes pricing-card-glow {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 1px rgba(91, 60, 139, 0.16),
+      0 8px 24px rgba(15, 23, 42, 0.06);
+  }
+  50% {
+    box-shadow:
+      0 0 0 1px rgba(91, 60, 139, 0.45),
+      0 0 28px rgba(91, 60, 139, 0.35),
+      0 0 48px rgba(26, 166, 138, 0.2),
+      0 12px 32px rgba(15, 23, 42, 0.1);
+  }
+}
+
+.pricing-card-glow {
+  box-shadow:
+    0 0 0 1px rgba(91, 60, 139, 0.4),
+    0 0 26px rgba(91, 60, 139, 0.32),
+    0 0 44px rgba(26, 166, 138, 0.18),
+    0 12px 28px rgba(15, 23, 42, 0.08);
+  transition: box-shadow 0.35s ease;
+}
+
+.pricing-card-glow::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    radial-gradient(ellipse 80% 55% at 15% 0%, rgba(91, 60, 139, 0.32), transparent 55%),
+    radial-gradient(ellipse 70% 50% at 100% 100%, rgba(26, 166, 138, 0.26), transparent 50%);
+  opacity: 0.85;
+  z-index: 0;
+  transition: opacity 0.35s ease;
+}
+
+.pricing-featured-pulse {
+  animation: pricing-card-glow 3.2s ease-in-out infinite;
+}
+
+.pricing-featured-pulse::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    radial-gradient(ellipse 80% 55% at 15% 0%, rgba(91, 60, 139, 0.35), transparent 55%),
+    radial-gradient(ellipse 70% 50% at 100% 100%, rgba(26, 166, 138, 0.28), transparent 50%);
+  animation: pricing-glow-pulse 3.2s ease-in-out infinite;
+  z-index: 0;
+}
+
+.pricing-card-glow > *:not(.pricing-badge),
+.pricing-featured-pulse > *:not(.pricing-badge) {
+  position: relative;
+  z-index: 1;
+}
+
+.pricing-badge {
+  z-index: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pricing-featured-pulse,
+  .pricing-featured-pulse::after {
+    animation: none;
+  }
+
+  .pricing-featured-pulse::after,
+  .pricing-card-glow::after {
+    opacity: 0.45;
+  }
+}
+
 .bento-grid {
   display: grid;
   gap: 1rem;

@@ -2,16 +2,15 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
-import { useSession, signOut } from "next-auth/react";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/shared/ThemeToggle";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { ServicesMegaMenu } from "@/components/shared/ServicesMegaMenu";
 import { InfoDropdown } from "@/components/shared/InfoDropdown";
 import { LanguageSwitcher } from "@/components/shared/LanguageSwitcher";
 import { CartNavButton } from "@/components/shop/CartNavButton";
+import { AccountMenu } from "@/components/shared/AccountMenu";
 import { serviceCatalog, serviceHref, sortedServiceGroups } from "@/content/fixweb/catalog";
 import { cn } from "@/lib/utils";
 
@@ -20,6 +19,7 @@ const primaryLinks = [
   { href: "/over-ons", key: "info", info: true },
   { href: "/diensten", key: "services", mega: true },
   { href: "/portfolio", key: "portfolio" },
+  { href: "#prijzen", key: "pricing" },
   // Shop page stays reachable via cart / checkout; omit from header menu.
   { href: "/nieuws", key: "blog" },
   // { href: "/case-studies", key: "cases" },
@@ -30,7 +30,6 @@ export function Navigation() {
   const t = useTranslations("nav");
   const locale = useLocale();
   const pathname = usePathname();
-  const { data: session } = useSession();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
@@ -130,32 +129,6 @@ export function Navigation() {
             >
               {t("book")}
             </SoftLink>
-            <LanguageSwitcher />
-            <CartNavButton />
-            {session?.user ? (
-              <>
-                <Button asChild size="sm" variant="outline" className="hidden rounded-xl sm:inline-flex">
-                  <SoftLink href={`/${locale}/dashboard`}>{t("dashboard")}</SoftLink>
-                </Button>
-                <Button
-                  size="sm"
-                  variant="ghost"
-                  className="rounded-xl"
-                  onClick={() => signOut({ callbackUrl: `/${locale}` })}
-                >
-                  {t("logout")}
-                </Button>
-              </>
-            ) : (
-              <>
-                <Button asChild size="sm" variant="ghost" className="hidden rounded-xl sm:inline-flex">
-                  <SoftLink href={`/${locale}/login`}>{t("login")}</SoftLink>
-                </Button>
-                <Button asChild size="sm" className="rounded-xl">
-                  <SoftLink href={`/${locale}/register`}>{t("register")}</SoftLink>
-                </Button>
-              </>
-            )}
             <button
               type="button"
               className="rounded-xl p-2 text-muted-foreground transition hover:bg-muted/70 xl:hidden"
@@ -165,6 +138,9 @@ export function Navigation() {
               {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
             <ThemeToggle />
+            <AccountMenu />
+            <CartNavButton />
+            <LanguageSwitcher />
           </div>
         </div>
 
@@ -275,12 +251,6 @@ export function Navigation() {
                             {t("about")}
                           </SoftLink>
                           <SoftLink
-                            href={`/${locale}/faq`}
-                            className="block py-1.5 text-sm text-muted-foreground hover:text-foreground"
-                          >
-                            {t("faq")}
-                          </SoftLink>
-                          <SoftLink
                             href={`/${locale}/voorwaarden`}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -303,6 +273,12 @@ export function Navigation() {
                             className="block py-1.5 text-sm text-muted-foreground hover:text-foreground"
                           >
                             {t("privacy")}
+                          </SoftLink>
+                          <SoftLink
+                            href={`/${locale}/faq`}
+                            className="block py-1.5 text-sm text-muted-foreground hover:text-foreground"
+                          >
+                            {t("faq")}
                           </SoftLink>
                         </div>
                       ) : null}
