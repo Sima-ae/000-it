@@ -42,6 +42,17 @@ function publicAbsoluteUrl(pathname: string, search = "") {
   return `https://${CANONICAL_HOST}${path}${search}`;
 }
 
+function socialPreviewRewrite(request: NextRequest, pathname: string) {
+  const previewUrl = request.nextUrl.clone();
+  let path = pathname || "/";
+  if (path === "/" || path === "") {
+    path = `/${routing.defaultLocale}`;
+  }
+  previewUrl.pathname = "/api/social-preview";
+  previewUrl.search = `?u=${encodeURIComponent(path)}`;
+  return NextResponse.rewrite(previewUrl);
+}
+
 export default async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const search = request.nextUrl.search;
@@ -50,26 +61,15 @@ export default async function middleware(request: NextRequest) {
   const ua = request.headers.get("user-agent") || "";
   const isSocialBot = SOCIAL_BOT_RE.test(ua);
 
-  // Canonicalize www → apex so WhatsApp/Messenger share one host (OG urls use apex).
-  // IMPORTANT: do not clone nextUrl — that keeps the internal :3066 port and breaks Meta scrapers.
-  if (host === `www.${CANONICAL_HOST}`) {
-    let destPath = pathname || "/";
-    if (isSocialBot && (destPath === "/" || destPath === "")) {
-      destPath = `/${routing.defaultLocale}`;
-    }
-    return NextResponse.redirect(publicAbsoluteUrl(destPath, search), 301);
+  // WhatsApp only reads ~5KB of HTML and misses Next.js OG tags (fonts/scripts first).
+  // Serve a tiny OG-first HTML shell to social crawlers — no redirects.
+  if (isSocialBot && isProductionHost(host)) {
+    return socialPreviewRewrite(request, pathname);
   }
 
-  // Social bots on bare "/" : rewrite to default locale (no redirect) so OG tags are in the 200 HTML.
-  if (
-    isSocialBot &&
-    isProductionHost(host) &&
-    (pathname === "/" || pathname === "")
-  ) {
-    const rewriteUrl = request.nextUrl.clone();
-    rewriteUrl.pathname = `/${routing.defaultLocale}`;
-    // Keep rewrite on the same internal URL object; rewrite does not expose :3066 to clients.
-    return NextResponse.rewrite(rewriteUrl);
+  // Humans: canonicalize www → apex (never leak internal :3066 port).
+  if (host === `www.${CANONICAL_HOST}`) {
+    return NextResponse.redirect(publicAbsoluteUrl(pathname || "/", search), 301);
   }
 
   const localeMatch = pathname.match(localePathRe);
