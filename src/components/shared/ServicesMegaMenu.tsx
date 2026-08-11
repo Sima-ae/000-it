@@ -176,8 +176,8 @@ export function ServicesMegaMenu({
       <button
         type="button"
         className={cn(
-          "inline-flex items-center gap-1 rounded-xl px-2.5 py-1.5 text-[13px] text-muted-foreground transition hover:bg-muted/70 hover:text-foreground",
-          (active || open) && "bg-primary/10 text-foreground",
+          "inline-flex items-center gap-1 rounded-xl px-2.5 py-1.5 text-[13px] text-muted-foreground transition hover:bg-primary hover:text-primary-foreground",
+          (active || open) && "bg-primary text-primary-foreground",
         )}
         onClick={() => setOpen((v) => !v)}
         onFocus={openMenu}
@@ -194,7 +194,7 @@ export function ServicesMegaMenu({
           onMouseEnter={openMenu}
           onMouseLeave={scheduleClose}
         >
-          <div className="w-full max-w-[min(100%,98rem)] rounded-3xl border border-border/70 bg-background/95 p-4 shadow-xl backdrop-blur-xl md:p-5">
+          <div className="w-full max-w-[min(100%,98rem)] rounded-3xl border border-border/60 bg-white p-4 shadow-xl dark:bg-zinc-950 md:p-5">
             <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 lg:gap-4">
               {sortedServiceGroups(locale).map((group) => {
                 const slugs = featuredByGroup[group.id] || [];
@@ -206,18 +206,18 @@ export function ServicesMegaMenu({
                   group.id,
                 );
                 return (
-                  <div key={group.id} className="min-w-0">
+                  <div key={group.id} className="min-w-0 bg-transparent">
                     <p className="mb-2 whitespace-nowrap px-1.5 text-[11px] font-semibold text-foreground md:px-2 md:text-xs">
                       {isNl ? group.titleNl : group.title}
                     </p>
-                    <div className="flex max-h-[min(70vh,28rem)] flex-col overflow-y-auto">
+                    <div className="flex max-h-[min(70vh,28rem)] flex-col overflow-y-auto bg-transparent">
                       {items.map((item) => {
                         const href = serviceHref(locale, item);
                         return (
                           <SoftLink
                             key={item.slug}
                             href={href}
-                            className="rounded-lg px-1.5 py-1.5 text-[12px] leading-snug text-muted-foreground transition hover:bg-muted/70 hover:text-foreground md:px-2 md:text-[13px]"
+                            className="rounded-lg px-1.5 py-1.5 text-[12px] leading-snug text-muted-foreground transition hover:bg-primary hover:text-primary-foreground md:px-2 md:text-[13px]"
                             onClick={(event) => navigateFromMenu(href, event)}
                           >
                             {isNl ? item.titleNl : item.title}
@@ -229,7 +229,7 @@ export function ServicesMegaMenu({
                 );
               })}
             </div>
-            <div className="mt-5 flex items-center justify-center border-t border-border/50 px-1 pt-4">
+            <div className="mt-5 flex items-center justify-center border-t border-border/40 bg-transparent px-1 pt-4">
               <SoftLink
                 href={`/${locale}/diensten`}
                 className={cn(
@@ -243,8 +243,8 @@ export function ServicesMegaMenu({
               >
                 <span>
                   {isNl
-                    ? "Klik hier voor een totaaloverzicht van onze diensten!"
-                    : "Click here for a full overview of our services!"}
+                    ? "Klik hier voor alle diensten!"
+                    : "Click here for all services!"}
                 </span>
                 <ChevronRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
               </SoftLink>

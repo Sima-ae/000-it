@@ -63,7 +63,8 @@
         "title": "Prilagođeni softver i API",
         "desc": "Prilagođeno kodiranje za agente, robote, platforme i tijekove rada koji se prilagođavaju vašem poslovanju."
       }
-    }
+    },
+    "viewAll": "Kliknite ovdje za sve usluge"
   },
   "pricing": {
     "title": "Cijene",

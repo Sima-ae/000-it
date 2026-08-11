@@ -38,6 +38,7 @@
   "services": {
     "title": "Services",
     "subtitle": "Everything you need to grow with AI.",
+    "viewAll": "Click here for all services",
     "items": {
       "ai": { "title": "AI integration & automation", "desc": "Agents and workflows that connect marketing and operations." },
       "seo": { "title": "AEO, GEO & SEO", "desc": "Get found locally, in Google and in AI search engines." },

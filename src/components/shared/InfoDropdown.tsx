@@ -67,7 +67,7 @@ export function InfoDropdown({
   } as const;
 
   const itemClass =
-    "block rounded-xl px-3 py-2 text-sm text-muted-foreground transition hover:bg-muted/70 hover:text-foreground";
+    "block rounded-xl px-3 py-2 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground";
 
   return (
     <div
@@ -81,8 +81,8 @@ export function InfoDropdown({
       <button
         type="button"
         className={cn(
-          "inline-flex items-center gap-1 rounded-xl px-2.5 py-1.5 text-[13px] text-muted-foreground transition hover:bg-muted/70 hover:text-foreground",
-          (active || open) && "bg-primary/10 text-foreground",
+          "inline-flex items-center gap-1 rounded-xl px-2.5 py-1.5 text-[13px] text-muted-foreground transition hover:bg-primary hover:text-primary-foreground",
+          (active || open) && "bg-primary text-primary-foreground",
         )}
         aria-expanded={open}
         aria-haspopup="menu"
@@ -98,10 +98,10 @@ export function InfoDropdown({
           onMouseEnter={clearCloseTimer}
           onMouseLeave={scheduleClose}
         >
-          <div className="min-w-56 rounded-2xl border border-border/70 bg-background/95 p-1.5 shadow-xl backdrop-blur-xl">
+          <div className="min-w-56 rounded-2xl border border-border/60 bg-white p-1.5 shadow-xl dark:bg-zinc-950">
             <SoftLink
               href={aboutHref}
-              className={cn(itemClass, aboutActive && "bg-primary/10 text-foreground")}
+              className={cn(itemClass, aboutActive && "bg-primary text-primary-foreground")}
               onClick={() => setOpen(false)}
             >
               {aboutLabel}
@@ -120,7 +120,7 @@ export function InfoDropdown({
             ))}
             <SoftLink
               href={faqHref}
-              className={cn(itemClass, faqActive && "bg-primary/10 text-foreground")}
+              className={cn(itemClass, faqActive && "bg-primary text-primary-foreground")}
               onClick={() => setOpen(false)}
             >
               {faqLabel}

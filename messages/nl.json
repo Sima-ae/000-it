@@ -38,6 +38,7 @@
   "services": {
     "title": "Diensten",
     "subtitle": "Alles wat u nodig heeft om AI-gedreven te groeien.",
+    "viewAll": "Klik hier voor alle diensten",
     "items": {
       "ai": { "title": "AI-integratie en automatisering", "desc": "Agents en workflows die marketing en ops verbinden." },
       "seo": { "title": "AEO, GEO en SEO", "desc": "Vindbaar lokaal, in Google en in AI-zoekmachines." },

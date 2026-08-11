@@ -63,7 +63,8 @@
         "title": "Egyedi szoftverek és API-ek",
         "desc": "Egyéni kódolás ügynökökhöz, robotokhoz, platformokhoz és munkafolyamatokhoz, amelyek az Ön vállalkozásához igazodnak."
       }
-    }
+    },
+    "viewAll": "Kattintson ide az összes szolgáltatáshoz"
   },
   "pricing": {
     "title": "Árképzés",

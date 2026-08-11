@@ -63,7 +63,8 @@
         "title": "Oprogramowanie niestandardowe i API",
         "desc": "Niestandardowe kodowanie dla agentów, botów, platform i przepływów pracy, które można skalować wraz z Twoją firmą."
       }
-    }
+    },
+    "viewAll": "Kliknij tutaj, aby zobaczyć wszystkie usługi"
   },
   "pricing": {
     "title": "Ceny",

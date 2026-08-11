@@ -7,12 +7,16 @@ export function GlassCard({
   children,
   className,
   interactive = true,
+  glow,
 }: {
   children: React.ReactNode;
   className?: string;
   interactive?: boolean;
+  /** Purple/green hover glow overlay. Defaults to the same as `interactive`. */
+  glow?: boolean;
 }) {
   const reduce = useReducedMotion();
+  const showGlow = glow ?? interactive;
 
   return (
     <motion.div
@@ -21,8 +25,10 @@ export function GlassCard({
       }
       transition={{ type: "spring", stiffness: 280, damping: 22 }}
       className={cn(
-        "glass rounded-3xl p-6 transition-[border-color,background] duration-300",
+        "relative overflow-hidden rounded-3xl p-6 transition-[border-color,background,box-shadow] duration-300",
+        "glass",
         interactive && "hover:border-primary/25",
+        showGlow && "glow-hover",
         className,
       )}
     >

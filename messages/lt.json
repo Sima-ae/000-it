@@ -63,7 +63,8 @@
         "title": "Pasirinktinė programinė įranga ir API",
         "desc": "Pasirinktinis agentų, robotų, platformų ir darbo eigų kodavimas, atitinkantis jūsų verslą."
       }
-    }
+    },
+    "viewAll": "Spustelėkite čia visoms paslaugoms"
   },
   "pricing": {
     "title": "Kainodara",

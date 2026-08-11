@@ -63,7 +63,8 @@
         "title": "Softuer i personalizuar dhe API",
         "desc": "Kodimi i personalizuar për agjentët, robotët, platformat dhe rrjedhat e punës që përshkallëzohen me biznesin tuaj."
       }
-    }
+    },
+    "viewAll": "Klikoni këtu për të gjitha shërbimet"
   },
   "pricing": {
     "title": "Çmimet",

@@ -63,7 +63,8 @@
         "title": "Benutzerdefinierte Software und APIs",
         "desc": "Benutzerdefinierte Codierung für Agenten, Bots, Plattformen und Workflows, die mit Ihrem Unternehmen skaliert."
       }
-    }
+    },
+    "viewAll": "Hier klicken für alle Dienstleistungen"
   },
   "pricing": {
     "title": "Preise",

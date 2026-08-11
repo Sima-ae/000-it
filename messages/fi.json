@@ -63,7 +63,8 @@
         "title": "Mukautettu ohjelmisto ja API",
         "desc": "Mukautettu koodaus agenteille, boteille, alustoille ja työnkulkuille, jotka skaalautuvat yrityksesi kanssa."
       }
-    }
+    },
+    "viewAll": "Napsauta tästä kaikkiin palveluihin"
   },
   "pricing": {
     "title": "Hinnoittelu",

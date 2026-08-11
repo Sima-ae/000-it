@@ -122,7 +122,7 @@ export default async function AboutPage({
             {stats.map((stat) => (
               <div
                 key={stat.value}
-                className="glass rounded-2xl px-3 py-4 text-center"
+                className="glass glow-hover rounded-2xl px-3 py-4 text-center"
               >
                 <p className="font-display text-xl font-bold tracking-tight text-foreground md:text-2xl">
                   {stat.value}

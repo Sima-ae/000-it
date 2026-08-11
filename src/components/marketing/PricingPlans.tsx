@@ -169,6 +169,7 @@ export function PricingPlans({
               className="h-full"
             >
             <GlassCard
+              glow={false}
               className={cn(
                 "relative flex h-full flex-col overflow-hidden rounded-2xl p-5 transition-[box-shadow] duration-300",
                 plan.featured && "mesh-panel lg:-translate-y-1",

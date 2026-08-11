@@ -112,8 +112,8 @@ export function Navigation() {
                   key={link.key}
                   href={href}
                   className={cn(
-                    "rounded-xl px-2.5 py-1.5 text-[13px] text-muted-foreground transition hover:bg-muted/70 hover:text-foreground",
-                    active && "bg-primary/10 text-foreground",
+                    "rounded-xl px-2.5 py-1.5 text-[13px] text-muted-foreground transition hover:bg-primary hover:text-primary-foreground",
+                    active && "bg-primary text-primary-foreground",
                   )}
                 >
                   {t(link.key)}
@@ -160,8 +160,8 @@ export function Navigation() {
                       <button
                         type="button"
                         className={cn(
-                          "flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-left text-sm text-muted-foreground hover:bg-muted/70 hover:text-foreground",
-                          active && "bg-primary/10 text-foreground",
+                          "flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-left text-sm text-muted-foreground hover:bg-primary hover:text-primary-foreground",
+                          active && "bg-primary text-primary-foreground",
                         )}
                         onClick={() => setMobileServicesOpen((v) => !v)}
                       >
@@ -172,7 +172,7 @@ export function Navigation() {
                         <div className="mb-2 ml-2 space-y-3 border-l border-border/60 pl-3">
                           <SoftLink
                             href={`/${locale}/diensten`}
-                            className="block py-1 text-sm font-medium text-foreground"
+                            className="block rounded-lg px-2 py-1 text-sm font-medium text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
                           >
                             {isNl ? "Alle diensten" : "All services"}
                           </SoftLink>
@@ -210,7 +210,7 @@ export function Navigation() {
                                     <SoftLink
                                       key={item.slug}
                                       href={serviceHref(locale, item)}
-                                      className="block py-1 text-sm text-muted-foreground hover:text-foreground"
+                                      className="block rounded-lg px-2 py-1 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
                                     >
                                       {isNl ? item.titleNl : item.title}
                                     </SoftLink>
@@ -234,8 +234,8 @@ export function Navigation() {
                       <button
                         type="button"
                         className={cn(
-                          "flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-left text-sm text-muted-foreground hover:bg-muted/70 hover:text-foreground",
-                          infoActive && "bg-primary/10 text-foreground",
+                          "flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-left text-sm text-muted-foreground hover:bg-primary hover:text-primary-foreground",
+                          infoActive && "bg-primary text-primary-foreground",
                         )}
                         onClick={() => setMobileInfoOpen((v) => !v)}
                       >
@@ -246,7 +246,7 @@ export function Navigation() {
                         <div className="mb-2 ml-2 border-l border-border/60 pl-3">
                           <SoftLink
                             href={`/${locale}/over-ons`}
-                            className="block py-1.5 text-sm text-muted-foreground hover:text-foreground"
+                            className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
                           >
                             {t("about")}
                           </SoftLink>
@@ -254,7 +254,7 @@ export function Navigation() {
                             href={`/${locale}/voorwaarden`}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block py-1.5 text-sm text-muted-foreground hover:text-foreground"
+                            className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
                           >
                             {t("terms")}
                           </SoftLink>
@@ -262,7 +262,7 @@ export function Navigation() {
                             href={`/${locale}/cookies`}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block py-1.5 text-sm text-muted-foreground hover:text-foreground"
+                            className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
                           >
                             {t("cookies")}
                           </SoftLink>
@@ -270,13 +270,13 @@ export function Navigation() {
                             href={`/${locale}/privacy`}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block py-1.5 text-sm text-muted-foreground hover:text-foreground"
+                            className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
                           >
                             {t("privacy")}
                           </SoftLink>
                           <SoftLink
                             href={`/${locale}/faq`}
-                            className="block py-1.5 text-sm text-muted-foreground hover:text-foreground"
+                            className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
                           >
                             {t("faq")}
                           </SoftLink>
@@ -291,8 +291,8 @@ export function Navigation() {
                     key={link.key}
                     href={href}
                     className={cn(
-                      "rounded-xl px-3 py-2.5 text-sm text-muted-foreground transition hover:bg-muted/70 hover:text-foreground",
-                      active && "bg-primary/10 text-foreground",
+                      "rounded-xl px-3 py-2.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground",
+                      active && "bg-primary text-primary-foreground",
                     )}
                   >
                     {t(link.key)}

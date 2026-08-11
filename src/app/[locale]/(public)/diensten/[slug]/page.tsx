@@ -220,7 +220,7 @@ export default async function ServiceDetailPage({
 
       <div className="mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
         <Reveal delay={0.05}>
-          <div className="glass rounded-[1.75rem] p-6 md:p-10">
+          <div className="glass glow-hover relative overflow-hidden rounded-[1.75rem] p-6 md:p-10">
             {content.blocks.length ? (
               <ContentBlocks blocks={content.blocks} />
             ) : (

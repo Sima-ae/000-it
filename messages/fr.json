@@ -63,7 +63,8 @@
         "title": "Logiciels personnalisés et API",
         "desc": "Codage personnalisé pour les agents, les robots, les plateformes et les flux de travail qui évoluent avec votre entreprise."
       }
-    }
+    },
+    "viewAll": "Cliquez ici pour tous les services"
   },
   "pricing": {
     "title": "Tarifs",

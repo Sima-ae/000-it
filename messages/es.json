@@ -63,7 +63,8 @@
         "title": "Software personalizado y API",
         "desc": "Codificación personalizada para agentes, bots, plataformas y flujos de trabajo que escalan con su negocio."
       }
-    }
+    },
+    "viewAll": "Haga clic aquí para todos los servicios"
   },
   "pricing": {
     "title": "Precios",

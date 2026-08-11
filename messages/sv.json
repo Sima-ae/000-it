@@ -63,7 +63,8 @@
         "title": "Anpassad programvara & APIs",
         "desc": "Anpassad kodning för agenter, bots, plattformar och arbetsflöden som skalas med ditt företag."
       }
-    }
+    },
+    "viewAll": "Klicka här för alla tjänster"
   },
   "pricing": {
     "title": "Prissättning",

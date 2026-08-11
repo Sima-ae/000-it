@@ -63,7 +63,8 @@
         "title": "Brugerdefineret software & APIs",
         "desc": "Tilpasset kodning til agenter, bots, platforme og arbejdsgange, der skalerer med din virksomhed."
       }
-    }
+    },
+    "viewAll": "Klik her for alle tjenester"
   },
   "pricing": {
     "title": "Prissætning",

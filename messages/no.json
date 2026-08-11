@@ -63,7 +63,8 @@
         "title": "Tilpasset programvare og APIs",
         "desc": "Tilpasset koding for agenter, roboter, plattformer og arbeidsflyter som skalerer med virksomheten din."
       }
-    }
+    },
+    "viewAll": "Klikk her for alle tjenester"
   },
   "pricing": {
     "title": "Prissetting",

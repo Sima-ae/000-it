@@ -129,7 +129,7 @@ export default async function HomePage({
 
       <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
         <Reveal>
-          <div className="mb-10 max-w-2xl">
+          <div className="mx-auto mb-10 max-w-2xl text-center">
             <h2 className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
               {services("title")}
             </h2>
@@ -162,6 +162,14 @@ export default async function HomePage({
             );
           })}
         </div>
+
+        <Reveal delay={0.12}>
+          <div className="mt-8 flex justify-center md:mt-10">
+            <Button asChild size="lg" className="rounded-2xl px-7">
+              <SoftLink href={`/${locale}/diensten`}>{services("viewAll")}</SoftLink>
+            </Button>
+          </div>
+        </Reveal>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
@@ -173,7 +181,7 @@ export default async function HomePage({
             <p className="mt-3 max-w-sm text-muted-foreground">{hero("subtitle")}</p>
           </Reveal>
           <Reveal delay={0.08}>
-            <div className="glass rounded-[1.75rem] px-5 md:px-6">
+            <div className="glass glow-hover relative overflow-hidden rounded-[1.75rem] px-5 md:px-6">
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="1" className="border-border/60">
                   <AccordionTrigger className="text-left font-display text-base hover:no-underline md:text-lg">
@@ -201,9 +209,9 @@ export default async function HomePage({
 
       <section className="mx-auto max-w-6xl px-4 pb-8 md:px-6 md:pb-12">
         <Reveal>
-          <div className="relative overflow-hidden rounded-4xl">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(91,60,139,0.45),transparent_40%),radial-gradient(circle_at_80%_80%,rgba(26,166,138,0.28),transparent_42%),linear-gradient(135deg,#2a1845,#14181f_55%,#0f1720)]" />
-            <div className="relative px-8 py-14 text-center text-white md:px-14 md:py-20">
+          <div className="glow-hover relative overflow-hidden rounded-4xl">
+            <div className="glow-bg absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(91,60,139,0.45),transparent_40%),radial-gradient(circle_at_80%_80%,rgba(26,166,138,0.28),transparent_42%),linear-gradient(135deg,#2a1845,#14181f_55%,#0f1720)]" />
+            <div className="relative z-[1] px-8 py-14 text-center text-white md:px-14 md:py-20">
               <p className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
                 {t("hero.ctaScanTitle")}
               </p>

@@ -63,7 +63,8 @@
         "title": "Zákazkový softvér a API",
         "desc": "Vlastné kódovanie pre agentov, robotov, platformy a pracovné postupy, ktoré sa prispôsobia vašej firme."
       }
-    }
+    },
+    "viewAll": "Kliknite sem pre všetky služby"
   },
   "pricing": {
     "title": "Stanovenie cien",

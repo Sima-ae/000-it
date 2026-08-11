@@ -69,18 +69,18 @@ export default async function ServicesPage({
     { key: "ecommerce", id: "marketing", nl: "E-commerce", en: "E-commerce" },
     { key: "marketing", id: "marketing", nl: "Marketing", en: "Marketing" },
     { key: "media", id: "media-creation", nl: "Media Creatie", en: "Media Creation" },
+    {
+      key: "audio-video",
+      id: "media-creation",
+      nl: "Audio en Video",
+      en: "Audio and Video",
+    },
     { key: "social", id: "marketing", nl: "Social Media", en: "Social Media" },
     {
       key: "community",
       id: "community-management",
       nl: "Community management",
       en: "Community management",
-    },
-    {
-      key: "products",
-      id: "product-listing",
-      nl: "Producten",
-      en: "Products",
     },
   ] as const;
 

@@ -63,7 +63,8 @@
         "title": "Özel yazılım ve API'ler",
         "desc": "İşletmenize göre ölçeklenen aracılar, botlar, platformlar ve iş akışları için özel kodlama."
       }
-    }
+    },
+    "viewAll": "Tüm hizmetler için buraya tıklayın"
   },
   "pricing": {
     "title": "Fiyatlandırma",

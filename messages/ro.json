@@ -63,7 +63,8 @@
         "title": "Software personalizat și API-uri",
         "desc": "Codare personalizată pentru agenți, roboți, platforme și fluxuri de lucru care se adaptează la afacerea dvs."
       }
-    }
+    },
+    "viewAll": "Faceți clic aici pentru toate serviciile"
   },
   "pricing": {
     "title": "Prețuri",
