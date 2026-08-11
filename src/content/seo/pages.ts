@@ -198,8 +198,8 @@ export const staticPageSeo: PageSeo[] = [
       en: "News — AI, AEO, GEO & SEO insights",
     },
     description: {
-      nl: "AI- en tech-nieuws van TripleZero iT: analyses, productupdates en praktische inzichten voor bedrijven.",
-      en: "AI and tech news from TripleZero iT: analysis, product updates and practical insights for businesses.",
+      nl: "AI- en tech-nieuws van TripleZero iT: analyses, productupdates en praktische inzichten.",
+      en: "AI and tech news from TripleZero iT: analysis, product updates and practical insights.",
     },
     keywords: {
       nl: [...CORE_NL, "nieuws", "AI nieuws", "tech nieuws"],

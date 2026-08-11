@@ -430,8 +430,8 @@ export function buildNewsIndexMetadata(locale: string, page = 1): Metadata {
   const isNl = locale === "nl";
   const title = isNl ? "Nieuws" : "News";
   const description = isNl
-    ? "AI- en tech-nieuws van TripleZero iT: analyses, productupdates en praktische inzichten voor bedrijven in Nederland."
-    : "AI and tech news from TripleZero iT: analysis, product updates and practical insights for businesses.";
+    ? "AI- en tech-nieuws van TripleZero iT: analyses, productupdates en praktische inzichten."
+    : "AI and tech news from TripleZero iT: analysis, product updates and practical insights.";
   const path = page > 1 ? `/nieuws?page=${page}` : "/nieuws";
   const url = absoluteUrl(localePath(locale, path.split("?")[0]));
   const keywords = isNl
