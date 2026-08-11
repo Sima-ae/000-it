@@ -59,7 +59,7 @@ export function AccountMenu({ className }: { className?: string }) {
         aria-haspopup="menu"
         onClick={() => setOpen((v) => !v)}
       >
-        <CircleUserRound className="h-[22px] w-[22px]" />
+        <CircleUserRound className="h-5.5 w-5.5" />
       </button>
 
       {open ? (

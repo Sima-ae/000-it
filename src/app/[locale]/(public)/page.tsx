@@ -211,7 +211,7 @@ export default async function HomePage({
         <Reveal>
           <div className="glow-hover relative overflow-hidden rounded-4xl">
             <div className="glow-bg absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(91,60,139,0.45),transparent_40%),radial-gradient(circle_at_80%_80%,rgba(26,166,138,0.28),transparent_42%),linear-gradient(135deg,#2a1845,#14181f_55%,#0f1720)]" />
-            <div className="relative z-[1] px-8 py-14 text-center text-white md:px-14 md:py-20">
+            <div className="relative z-1 px-8 py-14 text-center text-white md:px-14 md:py-20">
               <p className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
                 {t("hero.ctaScanTitle")}
               </p>

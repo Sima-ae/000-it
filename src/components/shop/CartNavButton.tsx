@@ -77,7 +77,7 @@ export function CartNavButton({ className }: { className?: string }) {
           router.push(`/${locale}/shop/cart`);
         }}
       >
-        <ShoppingCart className="h-[22px] w-[22px]" />
+        <ShoppingCart className="h-5.5 w-5.5" />
         {count > 0 ? (
           <span className="absolute right-0 top-0 inline-flex min-w-4 items-center justify-center rounded-full bg-primary px-1 text-[10px] font-semibold leading-4 text-primary-foreground">
             {count > 99 ? "99+" : count}

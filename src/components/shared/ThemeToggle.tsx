@@ -25,7 +25,7 @@ export function ThemeToggle() {
         className="h-9 w-9 shrink-0 rounded-xl"
         aria-label={isNl ? "Thema wisselen" : "Toggle theme"}
       >
-        <Sun className="h-[22px] w-[22px]" />
+        <Sun className="h-5.5 w-5.5" />
       </Button>
     );
   }
@@ -49,7 +49,7 @@ export function ThemeToggle() {
       }
       onClick={() => setTheme(isDark ? "light" : "dark")}
     >
-      {isDark ? <Sun className="h-[22px] w-[22px]" /> : <Moon className="h-[22px] w-[22px]" />}
+      {isDark ? <Sun className="h-5.5 w-5.5" /> : <Moon className="h-5.5 w-5.5" />}
     </Button>
   );
 }

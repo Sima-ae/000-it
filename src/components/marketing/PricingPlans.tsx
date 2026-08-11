@@ -171,7 +171,7 @@ export function PricingPlans({
             <GlassCard
               glow={false}
               className={cn(
-                "relative flex h-full flex-col overflow-hidden rounded-2xl p-5 transition-[box-shadow] duration-300",
+                "relative flex h-full flex-col overflow-hidden rounded-2xl p-5 transition-shadow duration-300",
                 plan.featured && "mesh-panel lg:-translate-y-1",
                 featuredIdlePulse && "pricing-featured-pulse ring-1 ring-primary/25",
                 glowOnHover && "pricing-card-glow ring-1 ring-primary/30",
