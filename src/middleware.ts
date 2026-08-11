@@ -36,23 +36,28 @@ function isProductionHost(host: string) {
   return h === CANONICAL_HOST || h === `www.${CANONICAL_HOST}`;
 }
 
+/** Public https URL without the internal Next listen port (e.g. :3066 behind LiteSpeed). */
+function publicAbsoluteUrl(pathname: string, search = "") {
+  const path = pathname.startsWith("/") ? pathname : `/${pathname}`;
+  return `https://${CANONICAL_HOST}${path}${search}`;
+}
+
 export default async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  const search = request.nextUrl.search;
   const hostHeader = request.headers.get("host") || "";
   const host = hostHeader.split(":")[0].toLowerCase();
   const ua = request.headers.get("user-agent") || "";
   const isSocialBot = SOCIAL_BOT_RE.test(ua);
 
   // Canonicalize www → apex so WhatsApp/Messenger share one host (OG urls use apex).
+  // IMPORTANT: do not clone nextUrl — that keeps the internal :3066 port and breaks Meta scrapers.
   if (host === `www.${CANONICAL_HOST}`) {
-    const target = request.nextUrl.clone();
-    target.hostname = CANONICAL_HOST;
-    target.protocol = "https:";
-    // Collapse root → /nl in one hop for social bots (avoids www→apex then /→/nl).
-    if (isSocialBot && (pathname === "/" || pathname === "")) {
-      target.pathname = `/${routing.defaultLocale}`;
+    let destPath = pathname || "/";
+    if (isSocialBot && (destPath === "/" || destPath === "")) {
+      destPath = `/${routing.defaultLocale}`;
     }
-    return NextResponse.redirect(target, 301);
+    return NextResponse.redirect(publicAbsoluteUrl(destPath, search), 301);
   }
 
   // Social bots on bare "/" : rewrite to default locale (no redirect) so OG tags are in the 200 HTML.
@@ -63,6 +68,7 @@ export default async function middleware(request: NextRequest) {
   ) {
     const rewriteUrl = request.nextUrl.clone();
     rewriteUrl.pathname = `/${routing.defaultLocale}`;
+    // Keep rewrite on the same internal URL object; rewrite does not expose :3066 to clients.
     return NextResponse.rewrite(rewriteUrl);
   }
 

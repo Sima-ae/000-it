@@ -61,7 +61,8 @@ export const SITE_SEO = {
 } as const;
 
 export function siteOrigin() {
-  return SITE_SEO.url.replace(/\/$/, "");
+  // Never leak the internal Next listen port (e.g. :3066) into canonical/OG URLs.
+  return SITE_SEO.url.replace(/\/$/, "").replace(/:3066\b/g, "");
 }
 
 export function absoluteUrl(path: string) {
