@@ -25,10 +25,9 @@ function decodeXml(value: string) {
 /** Remove arXiv and similar feed preambles before ranking/drafting. */
 export function scrubFeedSummary(summary: string) {
   return summary
-    .replace(/^arXiv:\S+\s*/i, "")
-    .replace(/Announce Type:\s*[\w-]+\s*/gi, "")
-    .replace(/Aankondigingstype:\s*[\w-]+\s*/gi, "")
-    .replace(/^(Abstract|Samenvatting)\s*:\s*/i, "")
+    .replace(/^arXiv:\s*[\w./-]+\s*/i, "")
+    .replace(/(?:Announce\s*Type|Aankondigings?\s*type|Aankondigingstype)\s*:\s*[\w-]+\s*/gi, "")
+    .replace(/^(?:Abstract|Samenvatting)\s*:\s*/i, "")
     .replace(/\bComments:\s*[^.]+\./gi, "")
     .replace(/\s+/g, " ")
     .trim();
@@ -112,7 +111,7 @@ export async function fetchRecentAiStories(limit = 24): Promise<NewsStory[]> {
       if (seen.has(key)) return false;
       seen.add(key);
       const blob = `${story.title} ${story.summary}`;
-      return AI_HINT.test(blob);
+      return AI_HINT.test(blob) && story.summary.length >= 40;
     })
     .sort((a, b) => {
       const ta = a.publishedAt ? Date.parse(a.publishedAt) : 0;
@@ -120,11 +119,5 @@ export async function fetchRecentAiStories(limit = 24): Promise<NewsStory[]> {
       return tb - ta;
     });
 
-  // Prefer industry blogs; keep at most ~1/3 research papers so cards stay readable.
-  const industry = ranked.filter((s) => s.sourceId !== "arxiv-ai");
-  const research = ranked.filter((s) => s.sourceId === "arxiv-ai");
-  const researchCap = Math.max(1, Math.floor(limit / 3));
-  const mixed = [...industry, ...research.slice(0, researchCap)];
-
-  return mixed.slice(0, limit);
+  return ranked.slice(0, limit);
 }

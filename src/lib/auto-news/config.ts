@@ -1,4 +1,4 @@
-/** RSS / Atom sources for factual AI industry news */
+/** RSS / Atom sources for factual AI industry news (public blogs only). */
 export const AUTO_NEWS_FEEDS = [
   {
     id: "openai",
@@ -30,11 +30,8 @@ export const AUTO_NEWS_FEEDS = [
     name: "Azure Blog",
     url: "https://azure.microsoft.com/en-us/blog/feed/",
   },
-  {
-    id: "arxiv-ai",
-    name: "arXiv cs.AI",
-    url: "https://rss.arxiv.org/rss/cs.AI",
-  },
+  // arXiv intentionally excluded from daily auto posts — raw paper RSS causes
+  // metadata junk ("Announce Type" / "Aankondiging Type") and overly academic copy.
 ] as const;
 
 /** 3 posts/day × 7 days = 21 posts/week */

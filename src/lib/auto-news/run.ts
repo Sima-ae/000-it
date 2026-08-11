@@ -3,7 +3,11 @@ import { createNewsPost, slugifyNewsId } from "@/lib/news";
 import { AUTO_NEWS_AUTHOR, AUTO_NEWS_PER_RUN } from "@/lib/auto-news/config";
 import { ensureNewsCoverImage } from "@/lib/auto-news/cover-image";
 import { fetchRecentAiStories } from "@/lib/auto-news/fetch-stories";
-import { generateBilingualNewsDraft } from "@/lib/auto-news/generate";
+import {
+  generateBilingualNewsDraft,
+  looksLikeRawFeedCopy,
+  sanitizeNewsDraft,
+} from "@/lib/auto-news/generate";
 import {
   getAmsterdamClock,
   isAutoNewsScheduleWindow,
@@ -55,7 +59,7 @@ export async function runAutoNewsPublish(
       ...result,
       ok: true,
       skipped: true,
-      reason: `Outside daily 12:00 Europe/Amsterdam window (now ${clock.weekday} ${String(clock.hour).padStart(2, "0")}:${String(clock.minute).padStart(2, "0")})`,
+      reason: `Outside daily 00:00 Europe/Amsterdam window (now ${clock.weekday} ${String(clock.hour).padStart(2, "0")}:${String(clock.minute).padStart(2, "0")})`,
     };
   }
 
@@ -105,22 +109,14 @@ export async function runAutoNewsPublish(
   );
   const usedTitles = new Set(existing.map((p) => p.title.toLowerCase().trim()));
 
-  const candidates = stories
-    .filter((story) => {
-      const url = normalizeUrl(story.url);
-      if (usedUrls.has(url)) return false;
-      if (usedTitles.has(story.title.toLowerCase().trim())) return false;
-      return true;
-    })
-    // Prefer industry blogs over raw research papers for readable daily posts
-    .sort((a, b) => {
-      const aScore = a.sourceId === "arxiv-ai" ? 1 : 0;
-      const bScore = b.sourceId === "arxiv-ai" ? 1 : 0;
-      if (aScore !== bScore) return aScore - bScore;
-      const ta = a.publishedAt ? Date.parse(a.publishedAt) : 0;
-      const tb = b.publishedAt ? Date.parse(b.publishedAt) : 0;
-      return tb - ta;
-    });
+  const candidates = stories.filter((story) => {
+    const url = normalizeUrl(story.url);
+    if (usedUrls.has(url)) return false;
+    if (usedTitles.has(story.title.toLowerCase().trim())) return false;
+    if (!story.summary || story.summary.length < 40) return false;
+    if (looksLikeRawFeedCopy(story.summary) && story.summary.length < 120) return false;
+    return true;
+  });
 
   if (!candidates.length) {
     return {
@@ -139,21 +135,46 @@ export async function runAutoNewsPublish(
     })) || null;
 
   let indexOffset = alreadyToday;
-  for (const story of candidates.slice(0, remaining)) {
+  // Try extra candidates if some fail quality checks
+  for (const story of candidates.slice(0, Math.max(remaining * 3, remaining))) {
+    if (result.published.length >= remaining) break;
+
     try {
-      const draft = await generateBilingualNewsDraft(story);
+      const draft = sanitizeNewsDraft(await generateBilingualNewsDraft(story));
+
+      if (
+        !draft.excerpt ||
+        draft.excerpt.length < 40 ||
+        looksLikeRawFeedCopy(draft.excerpt) ||
+        looksLikeRawFeedCopy(draft.excerptNl) ||
+        looksLikeRawFeedCopy(draft.description) ||
+        looksLikeRawFeedCopy(draft.descriptionNl)
+      ) {
+        result.errors.push(`${story.url}: skipped (unclean copy)`);
+        continue;
+      }
+
       let id = slugifyAutoNewsId(draft.title, clock.isoDate, indexOffset);
       if (await prisma.newsPost.findUnique({ where: { id } })) {
         id = `${slugifyNewsId(draft.title)}-${Date.now().toString(36)}`.slice(0, 80);
       }
 
-      const coverImage = await ensureNewsCoverImage({
-        id,
-        title: draft.title,
-        industry: draft.industry,
-        tags: draft.tags,
-        excerpt: draft.excerpt,
-      });
+      // Always write a local cover from title/industry (Pollinations → fallback SVG)
+      const coverImage = await ensureNewsCoverImage(
+        {
+          id,
+          title: draft.title,
+          industry: draft.industry,
+          tags: draft.tags,
+          excerpt: draft.excerpt,
+        },
+        { force: true, download: true, retries: 5, delayMs: 1500 },
+      );
+
+      if (!coverImage) {
+        result.errors.push(`${story.url}: skipped (no cover)`);
+        continue;
+      }
 
       const created = await createNewsPost({
         id,

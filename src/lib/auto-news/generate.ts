@@ -17,7 +17,9 @@ function cleanText(value: string) {
 
 /**
  * Strip arXiv / feed preambles so posts never show metadata junk.
+ * Handles EN + NL variants, including spaced translations like "Aankondiging Type:".
  * Example removed: "arXiv:2608.07480v1 Aankondigingstype: nieuw Samenvatting:"
+ * Example removed: "Aankondiging Type: nieuw"
  * Preserves paragraph breaks in longer article bodies.
  */
 export function cleanSourceSummary(summary: string) {
@@ -25,24 +27,28 @@ export function cleanSourceSummary(summary: string) {
 
   const scrubChunk = (chunk: string) => {
     let text = chunk.replace(/[ \t]+/g, " ").trim();
-    for (let i = 0; i < 6; i += 1) {
+    for (let i = 0; i < 8; i += 1) {
       const before = text;
       text = text
+        // arXiv ids
         .replace(/^arXiv:\s*[\w./-]+\s*/i, "")
         .replace(/\barXiv:\s*[\w./-]+\s*/gi, (match, offset) =>
-          offset < 80 ? "" : match,
+          offset < 100 ? "" : match,
         )
-        .replace(/^Announce Type:\s*[\w-]+\s*/i, "")
-        .replace(/^Aankondigingstype:\s*[\w-]+\s*/i, "")
-        .replace(/\bAnnounce Type:\s*[\w-]+\s*/gi, (match, offset) =>
-          offset < 120 ? "" : match,
+        // Announce Type / Aankondigingstype / "Aankondiging Type" (spaced NL translation)
+        .replace(
+          /^(?:Announce\s*Type|Aankondigings?\s*type|Aankondigingstype)\s*:\s*[\w-]+\s*/i,
+          "",
         )
-        .replace(/\bAankondigingstype:\s*[\w-]+\s*/gi, (match, offset) =>
-          offset < 120 ? "" : match,
+        .replace(
+          /\b(?:Announce\s*Type|Aankondigings?\s*type|Aankondigingstype)\s*:\s*[\w-]+\s*/gi,
+          (match, offset) => (offset < 160 ? "" : match),
         )
-        .replace(/^(Abstract|Samenvatting)\s*:\s*/i, "")
-        .replace(/\b(Abstract|Samenvatting)\s*:\s*/gi, (match, _g, offset) =>
-          offset < 160 ? "" : match,
+        // Abstract / Samenvatting labels
+        .replace(/^(?:Abstract|Samenvatting)\s*:\s*/i, "")
+        .replace(
+          /\b(?:Abstract|Samenvatting)\s*:\s*/gi,
+          (match, offset) => (offset < 180 ? "" : match),
         )
         .replace(/^Comments:\s*[^.]+\.\s*/i, "")
         .replace(/^Subjects?:\s*[^.]+\.\s*/i, "")
@@ -52,16 +58,22 @@ export function cleanSourceSummary(summary: string) {
       if (text === before) break;
     }
 
-    return text
+    // Combined leftover block at the start
+    text = text
       .replace(
-        /^(?:arXiv:\s*[\w./-]+\s*)?(?:Announce Type|Aankondigingstype)\s*:\s*[\w-]+\s*(?:Abstract|Samenvatting)\s*:\s*/i,
+        /^(?:arXiv:\s*[\w./-]+\s*)?(?:Announce\s*Type|Aankondigings?\s*type|Aankondigingstype)\s*:\s*[\w-]+\s*(?:Abstract|Samenvatting)\s*:\s*/i,
+        "",
+      )
+      .replace(
+        /^(?:Announce\s*Type|Aankondigings?\s*type|Aankondigingstype)\s*:\s*[\w-]+\s*/i,
         "",
       )
       .replace(/[ \t]+/g, " ")
       .trim();
+
+    return text;
   };
 
-  // Keep blank-line paragraphs intact for article bodies
   if (/\n\s*\n/.test(summary)) {
     return summary
       .split(/\n\s*\n/)
@@ -75,7 +87,7 @@ export function cleanSourceSummary(summary: string) {
 
 /** True when stored copy still contains raw arXiv / feed metadata junk. */
 export function looksLikeRawFeedCopy(text: string) {
-  return /arxiv:\s*[\w./-]+|announce type\s*:|aankondigingstype\s*:|\b(abstract|samenvatting)\s*:/i.test(
+  return /arxiv:\s*[\w./-]+|announce\s*type\s*:|aankondigings?\s*type\s*:|aankondigingstype\s*:|\b(abstract|samenvatting)\s*:/i.test(
     text || "",
   );
 }
@@ -242,6 +254,10 @@ export async function generateBilingualNewsDraft(
     ...story,
     summary: cleanSourceSummary(story.summary),
   };
+  if (!cleaned.summary || cleaned.summary.length < 40) {
+    throw new Error(`Story summary too short after cleanup: ${story.url}`);
+  }
+
   const en = buildEnglishDraft(cleaned);
   const [titleNl, excerptNl, descriptionNl] = await Promise.all([
     translateToNl(en.title),
@@ -249,10 +265,39 @@ export async function generateBilingualNewsDraft(
     translateToNl(en.description),
   ]);
 
-  return {
+  const draft = sanitizeNewsDraft({
     ...en,
     titleNl: titleNl || en.title,
     excerptNl: excerptNl || en.excerpt,
     descriptionNl: descriptionNl || en.description,
+  });
+
+  if (
+    looksLikeRawFeedCopy(draft.excerpt) ||
+    looksLikeRawFeedCopy(draft.excerptNl) ||
+    looksLikeRawFeedCopy(draft.description) ||
+    looksLikeRawFeedCopy(draft.descriptionNl)
+  ) {
+    throw new Error(`Draft still contains feed metadata after sanitize: ${story.url}`);
+  }
+
+  return draft;
+}
+
+/** Final pass before DB insert — never persist arXiv/feed metadata junk. */
+export function sanitizeNewsDraft(draft: GeneratedNewsDraft): GeneratedNewsDraft {
+  return {
+    ...draft,
+    title: cleanText(draft.title),
+    titleNl: cleanText(draft.titleNl),
+    excerpt: cleanSourceSummary(draft.excerpt),
+    excerptNl: cleanSourceSummary(draft.excerptNl),
+    description: cleanSourceSummary(draft.description),
+    descriptionNl: cleanSourceSummary(draft.descriptionNl),
+    industry: cleanText(draft.industry),
+    tags: draft.tags
+      .map((t) => cleanText(t))
+      .filter((t) => t && !/^(auto-news|arxiv-ai)$/i.test(t))
+      .slice(0, 6),
   };
 }
