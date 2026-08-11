@@ -47,8 +47,8 @@ export const staticPageSeo: PageSeo[] = [
     priority: 1,
     changeFrequency: "weekly",
     title: {
-      nl: "AI-groeiplatform voor bedrijven en zzp'ers",
-      en: "AI growth platform for businesses and freelancers",
+      nl: "Ontdek de nieuwste AI mogelijkheden voor ondernemers en zzp'ers",
+      en: "Discover the latest AI possibilities for entrepreneurs and freelancers",
     },
     description: {
       nl: "Groei sneller met TripleZero iT: AI-integratie, AEO, GEO, SEO, advertising, content en maatwerk software — inclusief gratis AI-scan.",
@@ -58,7 +58,7 @@ export const staticPageSeo: PageSeo[] = [
       nl: [...CORE_NL, "AI-scan", "webdesign", "automatisering", "zzp"],
       en: [...CORE_EN, "AI scan", "web design", "automation", "freelancer"],
     },
-    image: "/uploads/fixweb/ai-integration.png",
+    image: "/branding/og-default.png",
   },
   {
     path: "/diensten",
