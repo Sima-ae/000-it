@@ -13,8 +13,8 @@ export const SITE_SEO = {
   email: "info@000-it.com",
   defaultOgImage: "/branding/og-default.png",
   defaultDescription: {
-    nl: "Ontdek de nieuwste AI mogelijkheden voor ondernemers en zzp'ers: AI-integratie, AEO, GEO, SEO, marketing en maatwerk software.",
-    en: "Discover the latest AI possibilities for entrepreneurs and freelancers: AI integration, AEO, GEO, SEO, marketing and custom software.",
+    nl: "Ontdek alle AI mogelijkheden voor ondernemers en zzp'ers: AI-integratie, AEO, GEO, SEO, marketing en maatwerk software.",
+    en: "Discover all AI possibilities for entrepreneurs and freelancers: AI integration, AEO, GEO, SEO, marketing and custom software.",
   },
   defaultKeywords: {
     nl: [

@@ -47,8 +47,8 @@ export const staticPageSeo: PageSeo[] = [
     priority: 1,
     changeFrequency: "weekly",
     title: {
-      nl: "Ontdek de nieuwste AI mogelijkheden voor ondernemers en zzp'ers",
-      en: "Discover the latest AI possibilities for entrepreneurs and freelancers",
+      nl: "Ontdek alle AI mogelijkheden voor ondernemers en zzp'ers",
+      en: "Discover all AI possibilities for entrepreneurs and freelancers",
     },
     description: {
       nl: "Groei sneller met TripleZero iT: AI-integratie, AEO, GEO, SEO, advertising, content en maatwerk software — inclusief gratis AI-scan.",
