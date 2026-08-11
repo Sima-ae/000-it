@@ -12,6 +12,12 @@ const localePattern = routing.locales
   .join("|");
 const localePathRe = new RegExp(`^/(${localePattern})(?=/|$)`);
 
+/** Meta/WhatsApp/etc. — previews often fail if the first response is a redirect. */
+const SOCIAL_BOT_RE =
+  /facebookexternalhit|Facebot|WhatsApp|meta-externalagent|Twitterbot|LinkedInBot|Slackbot|Discordbot|TelegramBot/i;
+
+const CANONICAL_HOST = "000-it.com";
+
 const protectedPrefixes = [
   ...new Set([
     ...dashboardNav.map((item) => item.href),
@@ -25,8 +31,41 @@ const protectedPrefixes = [
   ]),
 ];
 
+function isProductionHost(host: string) {
+  const h = host.split(":")[0].toLowerCase();
+  return h === CANONICAL_HOST || h === `www.${CANONICAL_HOST}`;
+}
+
 export default async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  const hostHeader = request.headers.get("host") || "";
+  const host = hostHeader.split(":")[0].toLowerCase();
+  const ua = request.headers.get("user-agent") || "";
+  const isSocialBot = SOCIAL_BOT_RE.test(ua);
+
+  // Canonicalize www → apex so WhatsApp/Messenger share one host (OG urls use apex).
+  if (host === `www.${CANONICAL_HOST}`) {
+    const target = request.nextUrl.clone();
+    target.hostname = CANONICAL_HOST;
+    target.protocol = "https:";
+    // Collapse root → /nl in one hop for social bots (avoids www→apex then /→/nl).
+    if (isSocialBot && (pathname === "/" || pathname === "")) {
+      target.pathname = `/${routing.defaultLocale}`;
+    }
+    return NextResponse.redirect(target, 301);
+  }
+
+  // Social bots on bare "/" : rewrite to default locale (no redirect) so OG tags are in the 200 HTML.
+  if (
+    isSocialBot &&
+    isProductionHost(host) &&
+    (pathname === "/" || pathname === "")
+  ) {
+    const rewriteUrl = request.nextUrl.clone();
+    rewriteUrl.pathname = `/${routing.defaultLocale}`;
+    return NextResponse.rewrite(rewriteUrl);
+  }
+
   const localeMatch = pathname.match(localePathRe);
   const locale = localeMatch?.[1] ?? routing.defaultLocale;
   const pathWithoutLocale = pathname.replace(localePathRe, "") || "/";

@@ -41,6 +41,17 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async headers() {
+    return [
+      {
+        // Help WhatsApp/Messenger cache the OG asset cleanly
+        source: "/branding/:path*",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=86400" },
+        ],
+      },
+    ];
+  },
 };
 
 export default withNextIntl(nextConfig);

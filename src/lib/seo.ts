@@ -186,6 +186,8 @@ export function buildPageMetadata(input: BuildPageMetadataInput): Metadata {
       images: [
         {
           url: image,
+          secureUrl: image,
+          type: "image/png",
           width: 1200,
           height: 630,
           alt: imageAlt,
