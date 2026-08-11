@@ -220,7 +220,7 @@ export const staticPageSeo: PageSeo[] = [
       en: "Answers about AI scan, AEO, GEO, SEO, web design, hosting, marketing, support and working with TripleZero iT.",
     },
     keywords: {
-      nl: [...CORE_NL, "FAQ", "veelgestelde vragen", "hulp"],
+      nl: [...CORE_NL, "veelgestelde vragen", "hulp"],
       en: [...CORE_EN, "FAQ", "frequently asked questions", "help"],
     },
   },

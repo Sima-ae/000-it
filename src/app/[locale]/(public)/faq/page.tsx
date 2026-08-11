@@ -29,7 +29,9 @@ export default async function FaqPage({
   return (
     <div className="mx-auto max-w-4xl px-4 py-10 md:px-6 md:py-14">
       <header className="mb-6 max-w-2xl">
-        <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">FAQ</p>
+        <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
+          {isNl ? "Veelgestelde vragen" : "FAQ"}
+        </p>
         <h1 className="font-display mt-2 text-3xl font-semibold tracking-tight md:text-4xl">
           {content.title}
         </h1>

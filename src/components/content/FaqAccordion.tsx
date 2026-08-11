@@ -56,7 +56,7 @@ export function FaqCategories({ categories }: { categories: FaqCategory[] }) {
             onChange={(e) => setQuery(e.target.value)}
             placeholder={isNl ? "Zoek in vragen en antwoorden…" : "Search questions and answers…"}
             className="h-11 rounded-xl border-border/70 bg-muted/30 pl-10 pr-10"
-            aria-label={isNl ? "Zoeken in FAQ" : "Search FAQ"}
+            aria-label={isNl ? "Zoeken in veelgestelde vragen" : "Search FAQ"}
           />
           {query ? (
             <button

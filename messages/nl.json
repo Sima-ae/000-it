@@ -14,7 +14,7 @@
     "shop": "Winkel",
     "contact": "Contact",
     "aiScan": "AI-scan",
-    "faq": "FAQ",
+    "faq": "Veelgestelde vragen",
     "book": "Een afspraak maken?",
     "login": "Inloggen",
     "register": "Registreren",
@@ -157,7 +157,7 @@
     "backHome": "Naar home"
   },
   "footer": {
-    "tagline": "AI-gedreven groei voor Nederlandse bedrijven.",
+    "tagline": "AI-gedreven advies, diensten, groei en support voor ondernemers en zzp'ers.",
     "rights": "Alle rechten voorbehouden."
   },
   "auth": {

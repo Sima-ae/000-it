@@ -63,7 +63,7 @@ export default async function HomePage({
     {
       id: "growth" as const,
       name: pricing("growth"),
-      monthlyPrice: 69.95,
+      monthlyPrice: 64.95,
       features: pricing.raw("features.growth") as string[],
       featured: true,
     },

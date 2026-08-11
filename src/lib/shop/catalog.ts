@@ -38,7 +38,7 @@ const imported = (importedProducts as { products: ImportedProduct[] }).products;
 
 const PLAN_MONTHLY_EUR = {
   starter: 39.95,
-  growth: 69.95,
+  growth: 64.95,
 } as const;
 
 function yearlyFromMonthly(monthly: number) {

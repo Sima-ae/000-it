@@ -28,6 +28,23 @@ function formatEuro(amount: number, locale: string) {
   }).format(amount);
 }
 
+/** Append billing period to the 1× webhosting feature for starter/growth plans. */
+function withHostingPeriod(feature: string, billing: Billing, locale: string) {
+  const isHosting =
+    /^1\s*[×x]\s*web\s*-?hosting$/i.test(feature.trim()) ||
+    /^1\s*[×x]\s*webhosting$/i.test(feature.trim());
+  if (!isHosting) return feature;
+
+  if (locale === "nl") {
+    return billing === "yearly"
+      ? "1× webhosting (12 maanden)"
+      : "1× webhosting (1 maand)";
+  }
+  return billing === "yearly"
+    ? "1× web hosting (12 months)"
+    : "1× web hosting (1 month)";
+}
+
 export function PricingPlans({
   plans,
   labels,
@@ -159,7 +176,7 @@ export function PricingPlans({
                 {plan.features.map((f) => (
                   <li key={f} className="flex items-center gap-2">
                     <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-                    {f}
+                    {withHostingPeriod(f, billing, locale)}
                   </li>
                 ))}
               </ul>
