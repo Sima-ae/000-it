@@ -156,11 +156,16 @@ export async function POST(request: Request) {
     });
   } catch (error) {
     console.error("[shop/checkout]", error);
-    return NextResponse.json(
-      {
-        error: error instanceof Error ? error.message : "Checkout failed",
-      },
-      { status: 500 },
-    );
+    const raw =
+      error instanceof Error
+        ? error.message
+        : typeof error === "object" && error && "message" in error
+          ? String((error as { message?: unknown }).message)
+          : "Checkout failed";
+    // Never expose API key material to the browser.
+    const safe = /api key|sk_live|sk_test|pk_live|pk_test|whsec_/i.test(raw)
+      ? "Payment provider configuration error. Please try again later."
+      : raw;
+    return NextResponse.json({ error: safe }, { status: 500 });
   }
 }
