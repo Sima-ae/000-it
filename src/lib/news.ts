@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { prisma } from "@/lib/prisma";
+import { cleanSourceSummary } from "@/lib/auto-news/generate";
 
 export type NewsPost = {
   id: string;
@@ -64,12 +65,14 @@ function mapNews(row: {
     id: row.id,
     title: row.title,
     titleNl: row.titleNl,
-    excerpt: row.excerpt,
-    excerptNl: row.excerptNl,
+    excerpt: cleanSourceSummary(row.excerpt),
+    excerptNl: row.excerptNl ? cleanSourceSummary(row.excerptNl) : row.excerptNl,
     date: row.date,
     coverImage: row.coverImage,
-    description: row.description,
-    descriptionNl: row.descriptionNl,
+    description: cleanSourceSummary(row.description),
+    descriptionNl: row.descriptionNl
+      ? cleanSourceSummary(row.descriptionNl)
+      : row.descriptionNl,
     author: row.author,
     projectUrl: row.projectUrl,
     industry: row.industry || "",
@@ -81,12 +84,18 @@ function mapNews(row: {
 
 /** Resolve EN canonical fields to the active locale for public pages. */
 export function localizeNewsPost(post: NewsPost, locale: string): NewsPost {
-  if (locale !== "nl") return post;
+  if (locale !== "nl") {
+    return {
+      ...post,
+      excerpt: cleanSourceSummary(post.excerpt),
+      description: cleanSourceSummary(post.description),
+    };
+  }
   return {
     ...post,
     title: post.titleNl?.trim() || post.title,
-    excerpt: post.excerptNl?.trim() || post.excerpt,
-    description: post.descriptionNl?.trim() || post.description,
+    excerpt: cleanSourceSummary(post.excerptNl?.trim() || post.excerpt),
+    description: cleanSourceSummary(post.descriptionNl?.trim() || post.description),
   };
 }
 

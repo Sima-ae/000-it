@@ -15,6 +15,71 @@ function cleanText(value: string) {
   return value.replace(/\s+/g, " ").trim();
 }
 
+/**
+ * Strip arXiv / feed preambles so posts never show metadata junk.
+ * Example removed: "arXiv:2608.07480v1 Aankondigingstype: nieuw Samenvatting:"
+ * Preserves paragraph breaks in longer article bodies.
+ */
+export function cleanSourceSummary(summary: string) {
+  if (!summary) return "";
+
+  const scrubChunk = (chunk: string) => {
+    let text = chunk.replace(/[ \t]+/g, " ").trim();
+    for (let i = 0; i < 6; i += 1) {
+      const before = text;
+      text = text
+        .replace(/^arXiv:\s*[\w./-]+\s*/i, "")
+        .replace(/\barXiv:\s*[\w./-]+\s*/gi, (match, offset) =>
+          offset < 80 ? "" : match,
+        )
+        .replace(/^Announce Type:\s*[\w-]+\s*/i, "")
+        .replace(/^Aankondigingstype:\s*[\w-]+\s*/i, "")
+        .replace(/\bAnnounce Type:\s*[\w-]+\s*/gi, (match, offset) =>
+          offset < 120 ? "" : match,
+        )
+        .replace(/\bAankondigingstype:\s*[\w-]+\s*/gi, (match, offset) =>
+          offset < 120 ? "" : match,
+        )
+        .replace(/^(Abstract|Samenvatting)\s*:\s*/i, "")
+        .replace(/\b(Abstract|Samenvatting)\s*:\s*/gi, (match, _g, offset) =>
+          offset < 160 ? "" : match,
+        )
+        .replace(/^Comments:\s*[^.]+\.\s*/i, "")
+        .replace(/^Subjects?:\s*[^.]+\.\s*/i, "")
+        .replace(/^MSC class:\s*[^.]+\.\s*/i, "")
+        .replace(/[ \t]+/g, " ")
+        .trim();
+      if (text === before) break;
+    }
+
+    return text
+      .replace(
+        /^(?:arXiv:\s*[\w./-]+\s*)?(?:Announce Type|Aankondigingstype)\s*:\s*[\w-]+\s*(?:Abstract|Samenvatting)\s*:\s*/i,
+        "",
+      )
+      .replace(/[ \t]+/g, " ")
+      .trim();
+  };
+
+  // Keep blank-line paragraphs intact for article bodies
+  if (/\n\s*\n/.test(summary)) {
+    return summary
+      .split(/\n\s*\n/)
+      .map((para) => scrubChunk(para))
+      .filter(Boolean)
+      .join("\n\n");
+  }
+
+  return scrubChunk(summary);
+}
+
+/** True when stored copy still contains raw arXiv / feed metadata junk. */
+export function looksLikeRawFeedCopy(text: string) {
+  return /arxiv:\s*[\w./-]+|announce type\s*:|aankondigingstype\s*:|\b(abstract|samenvatting)\s*:/i.test(
+    text || "",
+  );
+}
+
 function truncate(value: string, max: number) {
   const text = cleanText(value);
   if (text.length <= max) return text;
@@ -24,7 +89,7 @@ function truncate(value: string, max: number) {
 }
 
 function paragraphize(summary: string) {
-  const text = cleanText(summary);
+  const text = cleanSourceSummary(summary);
   if (!text) return [];
   const parts = text
     .split(/(?<=[.!?])\s+/)
@@ -64,6 +129,7 @@ function inferTags(story: NewsStory) {
   if (/\b(image|midjourney|flux)\b/.test(blob)) tags.add("Image");
   if (/\b(agent|workflow|automat)\b/.test(blob)) tags.add("Automation");
   if (/\b(api|model|llm)\b/.test(blob)) tags.add("Models");
+  if (story.sourceId === "arxiv-ai") tags.add("Research");
   tags.add(story.sourceName.split(" ")[0] || story.sourceId);
   return Array.from(tags).slice(0, 6);
 }
@@ -72,7 +138,6 @@ async function translateToNl(text: string): Promise<string> {
   const input = cleanText(text);
   if (!input) return "";
 
-  // Chunk long bodies so free translate endpoints stay reliable
   const chunks: string[] = [];
   if (input.length <= 900) {
     chunks.push(input);
@@ -112,10 +177,12 @@ async function translateToNl(text: string): Promise<string> {
     translated.push(piece.trim());
   }
 
-  return translated.join("\n\n").trim();
+  return cleanSourceSummary(translated.join("\n\n").trim());
 }
 
-function buildEnglishDraft(story: NewsStory): Omit<GeneratedNewsDraft, "titleNl" | "excerptNl" | "descriptionNl"> {
+function buildEnglishDraft(
+  story: NewsStory,
+): Omit<GeneratedNewsDraft, "titleNl" | "excerptNl" | "descriptionNl"> {
   const title = truncate(story.title, 140);
   const paragraphs = paragraphize(story.summary);
   const published = story.publishedAt
@@ -131,20 +198,32 @@ function buildEnglishDraft(story: NewsStory): Omit<GeneratedNewsDraft, "titleNl"
       })()
     : null;
 
-  const lead = published
-    ? `${story.sourceName} published an update on ${published}: ${title}.`
-    : `${story.sourceName} reports: ${title}.`;
+  const isResearch = story.sourceId === "arxiv-ai" || /arxiv\.org/i.test(story.url);
+
+  const lead = isResearch
+    ? published
+      ? `New AI research (${published}): ${title}.`
+      : `New AI research worth following: ${title}.`
+    : published
+      ? `${story.sourceName} published an update on ${published} about ${title}.`
+      : `${story.sourceName} reports a notable AI development: ${title}.`;
+
+  const context = isResearch
+    ? "The paper explores ideas that may influence how teams evaluate models, automation and AI-assisted workflows in the months ahead."
+    : "The announcement matters for teams that rely on models, automation and digital production — especially around cost, tooling and delivery speed.";
 
   const body =
     paragraphs.length > 0
       ? paragraphs.join("\n\n")
-      : `${story.sourceName} shared a new AI-industry update. The announcement focuses on developments that matter for teams working with models, automation and digital production.`;
+      : `${story.sourceName} shared a new AI-industry update focused on practical developments for builders and operators.`;
 
-  const takeaway =
-    "For agencies and product teams, the practical step is to verify how this affects cost, tooling and workflows — then update prompts, automations and publishing pipelines where needed. Always cross-check the original source before changing production systems.";
+  const takeaway = isResearch
+    ? "TripleZero iT takeaway: treat this as an early signal, not a production playbook. Validate claims against your stack, then decide whether the idea belongs in experiments, client proposals or roadmap discussions."
+    : "TripleZero iT takeaway: check how this affects cost, tooling and workflows — then update prompts, automations and publishing pipelines where needed. Always verify the original source before changing production systems.";
 
-  const description = [lead, body, takeaway].join("\n\n");
-  const excerpt = truncate(paragraphs[0] || lead, 220);
+  const description = [lead, context, body, takeaway].join("\n\n");
+  const excerptSource = paragraphs[0] || context;
+  const excerpt = truncate(excerptSource, 220);
 
   return {
     title,
@@ -155,11 +234,15 @@ function buildEnglishDraft(story: NewsStory): Omit<GeneratedNewsDraft, "titleNl"
   };
 }
 
-/** Build EN+NL posts from real RSS facts (no OpenAI key required). */
+/** Build EN+NL posts from real RSS facts (professional framing, no raw feed metadata). */
 export async function generateBilingualNewsDraft(
   story: NewsStory,
 ): Promise<GeneratedNewsDraft> {
-  const en = buildEnglishDraft(story);
+  const cleaned: NewsStory = {
+    ...story,
+    summary: cleanSourceSummary(story.summary),
+  };
+  const en = buildEnglishDraft(cleaned);
   const [titleNl, excerptNl, descriptionNl] = await Promise.all([
     translateToNl(en.title),
     translateToNl(en.excerpt),

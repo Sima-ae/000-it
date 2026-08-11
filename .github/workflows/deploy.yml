@@ -166,7 +166,8 @@ jobs:
               git remote add origin "$REPO_URL" 2>/dev/null || git remote set-url origin "$REPO_URL"
               git fetch origin main
               git reset --hard origin/main
-              git clean -fd
+              # Keep runtime uploads (news covers) and env — do not wipe with git clean
+              git clean -fd -e .env -e public/uploads -e 'public/uploads/**'
               [[ -n "$ENV_BACKUP" ]] && cp "$ENV_BACKUP" .env && rm -f "$ENV_BACKUP"
             fi
           fi
@@ -174,7 +175,8 @@ jobs:
           cd "$APP_DIR"
           git fetch origin main
           git reset --hard origin/main
-          git clean -fd
+          # Preserve news cover JPGs written by the daily auto-news cron
+          git clean -fd -e .env -e public/uploads -e 'public/uploads/**'
           echo "==> $(git log -1 --oneline)"
 
           echo "==> Install pre-built .next from CI"

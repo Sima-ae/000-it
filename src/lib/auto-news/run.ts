@@ -105,12 +105,22 @@ export async function runAutoNewsPublish(
   );
   const usedTitles = new Set(existing.map((p) => p.title.toLowerCase().trim()));
 
-  const candidates = stories.filter((story) => {
-    const url = normalizeUrl(story.url);
-    if (usedUrls.has(url)) return false;
-    if (usedTitles.has(story.title.toLowerCase().trim())) return false;
-    return true;
-  });
+  const candidates = stories
+    .filter((story) => {
+      const url = normalizeUrl(story.url);
+      if (usedUrls.has(url)) return false;
+      if (usedTitles.has(story.title.toLowerCase().trim())) return false;
+      return true;
+    })
+    // Prefer industry blogs over raw research papers for readable daily posts
+    .sort((a, b) => {
+      const aScore = a.sourceId === "arxiv-ai" ? 1 : 0;
+      const bScore = b.sourceId === "arxiv-ai" ? 1 : 0;
+      if (aScore !== bScore) return aScore - bScore;
+      const ta = a.publishedAt ? Date.parse(a.publishedAt) : 0;
+      const tb = b.publishedAt ? Date.parse(b.publishedAt) : 0;
+      return tb - ta;
+    });
 
   if (!candidates.length) {
     return {

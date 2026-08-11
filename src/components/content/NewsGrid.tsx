@@ -1,10 +1,43 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import { GlassCard } from "@/components/marketing/GlassCard";
 import { Reveal } from "@/components/marketing/Reveal";
 import { SoftLink } from "@/components/shared/SoftLink";
 import type { NewsPost } from "@/lib/news";
+
+function NewsCardCover({ post }: { post: NewsPost }) {
+  const [failed, setFailed] = useState(false);
+  const src = post.coverImage;
+
+  if (!src || failed) {
+    return (
+      <div
+        className="relative flex h-40 w-full items-end bg-linear-to-br from-primary/25 via-muted/60 to-accent/20 p-4"
+        aria-hidden
+      >
+        <span className="line-clamp-2 font-display text-sm font-semibold text-foreground/80">
+          {post.title}
+        </span>
+      </div>
+    );
+  }
+
+  return (
+    <div className="relative h-40 w-full bg-muted/40">
+      <Image
+        src={src}
+        alt=""
+        fill
+        className="object-cover"
+        sizes="(max-width: 768px) 100vw, 33vw"
+        unoptimized={src.includes("image.pollinations.ai")}
+        onError={() => setFailed(true)}
+      />
+    </div>
+  );
+}
 
 export function NewsGrid({
   items,
@@ -31,19 +64,7 @@ export function NewsGrid({
             aria-label={labels.readMore ? `${labels.readMore}: ${post.title}` : post.title}
           >
             <GlassCard className="h-full overflow-hidden p-0 transition hover:border-primary/40 hover:shadow-md">
-              {post.coverImage ? (
-                <div className="relative h-40 w-full bg-muted/40">
-                  <Image
-                    src={post.coverImage}
-                    alt={post.title}
-                    title={post.title}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    unoptimized={post.coverImage.includes("image.pollinations.ai")}
-                  />
-                </div>
-              ) : null}
+              <NewsCardCover post={post} />
               <div className="p-5">
                 <p className="text-xs text-muted-foreground">
                   <time dateTime={post.date}>{post.date}</time>
@@ -54,10 +75,10 @@ export function NewsGrid({
                     </>
                   ) : null}
                 </p>
-                <h2 className="font-display mt-2 text-lg font-semibold tracking-tight">
+                <h2 className="font-display mt-2 line-clamp-2 text-lg font-semibold tracking-tight">
                   {post.title}
                 </h2>
-                <p className="mt-2 text-sm text-muted-foreground">{post.excerpt}</p>
+                <p className="mt-2 line-clamp-3 text-sm text-muted-foreground">{post.excerpt}</p>
               </div>
             </GlassCard>
           </SoftLink>

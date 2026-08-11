@@ -16,6 +16,7 @@
     "db:seed": "tsx prisma/seed.ts",
     "news:auto": "tsx scripts/run-auto-news.ts",
     "news:covers": "tsx scripts/backfill-news-covers.ts",
+    "news:repair": "tsx scripts/repair-auto-news.ts",
     "generate-sitemap": "tsx --env-file=.env scripts/generate-sitemap.ts",
     "indexnow": "tsx --env-file=.env scripts/indexnow.ts",
     "postinstall": "prisma generate"

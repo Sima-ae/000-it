@@ -22,6 +22,18 @@ function decodeXml(value: string) {
     .trim();
 }
 
+/** Remove arXiv and similar feed preambles before ranking/drafting. */
+export function scrubFeedSummary(summary: string) {
+  return summary
+    .replace(/^arXiv:\S+\s*/i, "")
+    .replace(/Announce Type:\s*[\w-]+\s*/gi, "")
+    .replace(/Aankondigingstype:\s*[\w-]+\s*/gi, "")
+    .replace(/^(Abstract|Samenvatting)\s*:\s*/i, "")
+    .replace(/\bComments:\s*[^.]+\./gi, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function pickTag(block: string, tag: string) {
   const re = new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, "i");
   const match = block.match(re);
@@ -58,7 +70,7 @@ function parseFeed(xml: string, sourceId: string, sourceName: string): NewsStory
       return {
         title,
         url,
-        summary: summary.slice(0, 1200),
+        summary: scrubFeedSummary(summary).slice(0, 1200),
         publishedAt,
         sourceId,
         sourceName,
@@ -108,5 +120,11 @@ export async function fetchRecentAiStories(limit = 24): Promise<NewsStory[]> {
       return tb - ta;
     });
 
-  return ranked.slice(0, limit);
+  // Prefer industry blogs; keep at most ~1/3 research papers so cards stay readable.
+  const industry = ranked.filter((s) => s.sourceId !== "arxiv-ai");
+  const research = ranked.filter((s) => s.sourceId === "arxiv-ai");
+  const researchCap = Math.max(1, Math.floor(limit / 3));
+  const mixed = [...industry, ...research.slice(0, researchCap)];
+
+  return mixed.slice(0, limit);
 }
