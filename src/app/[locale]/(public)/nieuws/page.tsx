@@ -68,8 +68,8 @@ export default async function NieuwsPage({
         </h1>
         <p className="mt-3 max-w-2xl text-muted-foreground">
           {isNl
-            ? "Blijf op de hoogte van alle AI en tech ontwikkelingen."
-            : "Stay up to date with all AI and tech developments."}
+            ? "Blijf op de hoogte van alle ontwikkelingen."
+            : "Stay up to date with all developments."}
         </p>
       </Reveal>
 
