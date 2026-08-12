@@ -53,6 +53,7 @@ export function PricingPlans({
   labels: {
     title: string;
     subtitle: string;
+    plansHeadline: string;
     monthly: string;
     yearly: string;
     save: string;
@@ -108,7 +109,7 @@ export function PricingPlans({
       className="mx-auto max-w-6xl scroll-mt-28 px-4 py-10 md:scroll-mt-32 md:px-6 md:py-12"
     >
       <Reveal>
-        <div className="mx-auto mb-5 max-w-2xl text-center">
+        <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-display text-[1.65rem] font-semibold tracking-tight md:text-[2.05rem]">
             {labels.title}
           </h2>
@@ -118,7 +119,10 @@ export function PricingPlans({
         </div>
       </Reveal>
 
-      <div className="mb-6 flex flex-col items-center gap-2">
+      <div className="mb-6 mt-8 flex flex-col items-center gap-3 md:mt-10">
+        <p className="max-w-xl text-center font-display text-lg font-semibold tracking-tight text-foreground md:text-xl">
+          {labels.plansHeadline}
+        </p>
         <div
           role="group"
           aria-label={locale === "nl" ? "Facturatieperiode" : "Billing period"}

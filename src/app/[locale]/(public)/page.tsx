@@ -115,6 +115,7 @@ export default async function HomePage({
         labels={{
           title: pricing("title"),
           subtitle: pricing("subtitle"),
+          plansHeadline: pricing("plansHeadline"),
           monthly: pricing("monthly"),
           yearly: pricing("yearly"),
           save: pricing("saveYearly"),
