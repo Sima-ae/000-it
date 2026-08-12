@@ -1,26 +1,27 @@
 import type { Metadata } from "next";
-import { Figtree, Geist_Mono, Syne } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { SITE_SEO, absoluteUrl, geoMetadataOther, siteOrigin } from "@/lib/seo";
 
-const display = Syne({
+const display = localFont({
+  src: "../fonts/syne-latin-wght-normal.woff2",
   variable: "--font-display",
-  subsets: ["latin"],
-  weight: ["500", "600", "700", "800"],
+  weight: "500 800",
   // Keep <head> small: WhatsApp only reads ~5KB and otherwise misses OG tags.
   preload: false,
 });
 
-const body = Figtree({
+const body = localFont({
+  src: "../fonts/figtree-latin-wght-normal.woff2",
   variable: "--font-body",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: "400 700",
   preload: false,
 });
 
-const geistMono = Geist_Mono({
+const geistMono = localFont({
+  src: "../fonts/GeistMono-Variable.woff2",
   variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: "100 900",
   preload: false,
 });
 
