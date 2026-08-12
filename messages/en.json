@@ -40,18 +40,36 @@
     "subtitle": "Everything you need to grow with AI.",
     "viewAll": "Click here for all services",
     "items": {
-      "ai": { "title": "AI integration & automation", "desc": "Agents and workflows that connect marketing and operations." },
-      "seo": { "title": "AEO, GEO & SEO", "desc": "Get found locally, in Google and in AI search engines." },
-      "web": { "title": "Web design & conversion", "desc": "Fast sites that turn visitors into customers." },
-      "content": { "title": "Content & social media", "desc": "Content engines with human-grade quality." },
-      "ads": { "title": "AI advertising", "desc": "Google Ads and social campaigns with AI optimization." },
-      "software": { "title": "Custom software & APIs", "desc": "Custom coding for agents, bots, platforms and workflows that scale with your business." }
+      "ai": {
+        "title": "AI integration & automation",
+        "desc": "Agents and workflows that connect marketing and operations."
+      },
+      "seo": {
+        "title": "AEO, GEO & SEO",
+        "desc": "Get found locally, in Google and in AI search engines."
+      },
+      "web": {
+        "title": "Web design & conversion",
+        "desc": "Fast sites that turn visitors into customers."
+      },
+      "content": {
+        "title": "Content & social media",
+        "desc": "Content engines with human-grade quality."
+      },
+      "ads": {
+        "title": "AI advertising",
+        "desc": "Google Ads and social campaigns with AI optimization."
+      },
+      "software": {
+        "title": "Custom software & APIs",
+        "desc": "Custom coding for agents, bots, platforms and workflows that scale with your business."
+      }
     }
   },
   "pricing": {
     "title": "Pricing",
     "subtitle": "including 21% VAT",
-    "plansHeadline": "Your own website with AI-driven technology!",
+    "plansHeadline": "Your own website with AI-driven technologies!",
     "cta": "Choose Plan",
     "ctaContact": "Contact us",
     "starter": "Business",

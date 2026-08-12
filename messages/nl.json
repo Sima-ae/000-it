@@ -40,18 +40,36 @@
     "subtitle": "Alles wat u nodig heeft om AI-gedreven te groeien.",
     "viewAll": "Klik hier voor alle diensten",
     "items": {
-      "ai": { "title": "AI-integratie en automatisering", "desc": "Agents en workflows die marketing en ops verbinden." },
-      "seo": { "title": "AEO, GEO en SEO", "desc": "Vindbaar lokaal, in Google en in AI-zoekmachines." },
-      "web": { "title": "Webdesign en conversie", "desc": "Snelle sites die bezoekers omzetten in klanten." },
-      "content": { "title": "Content en social media", "desc": "Contentmachines met menselijke kwaliteit." },
-      "ads": { "title": "AI-advertising", "desc": "Google Ads en social campaigns met AI-optimalisatie." },
-      "software": { "title": "Maatwerk software en API's", "desc": "Coderen op maat voor agents, bots, platforms en workflows die meegroeien met uw bedrijf." }
+      "ai": {
+        "title": "AI-integratie en automatisering",
+        "desc": "Agents en workflows die marketing en ops verbinden."
+      },
+      "seo": {
+        "title": "AEO, GEO en SEO",
+        "desc": "Vindbaar lokaal, in Google en in AI-zoekmachines."
+      },
+      "web": {
+        "title": "Webdesign en conversie",
+        "desc": "Snelle sites die bezoekers omzetten in klanten."
+      },
+      "content": {
+        "title": "Content en social media",
+        "desc": "Contentmachines met menselijke kwaliteit."
+      },
+      "ads": {
+        "title": "AI-advertising",
+        "desc": "Google Ads en social campaigns met AI-optimalisatie."
+      },
+      "software": {
+        "title": "Maatwerk software en API's",
+        "desc": "Coderen op maat voor agents, bots, platforms en workflows die meegroeien met uw bedrijf."
+      }
     }
   },
   "pricing": {
     "title": "Prijzen",
     "subtitle": "inclusief 21% BTW",
-    "plansHeadline": "Een eigen website met AI gedreven technologie!",
+    "plansHeadline": "Een eigen website met AI gedreven technologieën!",
     "cta": "Bestellen",
     "ctaContact": "Contact opnemen",
     "starter": "Business",
