@@ -85,12 +85,6 @@ export default async function NewsArticlePage({
         </h1>
 
         <p className="text-lg text-muted-foreground">{post.excerpt}</p>
-
-        <p className="text-sm text-muted-foreground">
-          <span className="font-medium text-foreground">{post.author}</span>
-          <span aria-hidden> · </span>
-          <time dateTime={post.date}>{post.date}</time>
-        </p>
       </header>
 
       {post.coverImage ? (
