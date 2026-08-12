@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import type { NewsPost } from "@/lib/news";
+import { publicNewsTags, type NewsPost } from "@/lib/news";
 import type { SeoCity } from "@/content/seo/cities";
 import { getStaticPageSeo, type PageSeo } from "@/content/seo/pages";
 
@@ -339,7 +339,7 @@ export function buildNewsKeywords(post: NewsPost, locale: string) {
       : ["news", "AI news", "artificial intelligence", "TripleZero iT", "Netherlands", "SEO", "AEO", "GEO"];
   return Array.from(
     new Set(
-      [...base, post.industry || "", ...(post.tags || [])]
+      [...base, post.industry || "", ...publicNewsTags(post.tags)]
         .map((k) => k.trim())
         .filter(Boolean),
     ),

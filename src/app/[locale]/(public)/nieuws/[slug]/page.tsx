@@ -7,7 +7,7 @@ import { SoftLink } from "@/components/shared/SoftLink";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { getPublishedNewsPost } from "@/lib/news";
+import { getPublishedNewsPost, publicNewsTags } from "@/lib/news";
 import {
   breadcrumbJsonLd,
   buildNewsArticleMetadata,
@@ -71,11 +71,13 @@ export default async function NewsArticlePage({
         <div className="flex flex-wrap gap-2">
           {post.industry ? <Badge variant="secondary">{post.industry}</Badge> : null}
           <Badge variant="outline">{post.date}</Badge>
-          {(post.tags || []).slice(0, 6).map((tag) => (
-            <Badge key={tag} variant="outline">
-              {tag}
-            </Badge>
-          ))}
+          {publicNewsTags(post.tags)
+            .slice(0, 6)
+            .map((tag) => (
+              <Badge key={tag} variant="outline">
+                {tag}
+              </Badge>
+            ))}
         </div>
 
         <h1 className="font-display text-4xl font-semibold tracking-tight md:text-5xl">
@@ -129,7 +131,7 @@ export default async function NewsArticlePage({
 
       {/* Hidden but crawlable keyword/geo hints for older crawlers */}
       <div className="sr-only">
-        <p>{(post.tags || []).join(", ")}</p>
+        <p>{publicNewsTags(post.tags).join(", ")}</p>
         <p>Nederland, Netherlands, NL, TripleZero iT, AI</p>
         <address>TripleZero iT, Nederland</address>
       </div>

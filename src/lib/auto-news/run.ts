@@ -189,7 +189,8 @@ export async function runAutoNewsPublish(
         author: AUTO_NEWS_AUTHOR,
         projectUrl: story.url,
         industry: draft.industry,
-        tags: Array.from(new Set([...draft.tags, "auto-news", story.sourceId])),
+        // Public tags only (source brand + topics). No internal "auto-news" / feed ids.
+        tags: Array.from(new Set(draft.tags)),
         published: true,
         createdById: owner?.id || null,
       });

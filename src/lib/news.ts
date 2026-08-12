@@ -99,6 +99,24 @@ export function localizeNewsPost(post: NewsPost, locale: string): NewsPost {
   };
 }
 
+/**
+ * Tags shown on public article pages.
+ * Hides internal auto-news markers and feed ids like "techcrunch-ai".
+ * Keeps source brand names (e.g. TechCrunch) and topic tags (AI, Google, …).
+ */
+export function publicNewsTags(tags: string[] | null | undefined): string[] {
+  return (tags || [])
+    .map((t) => t.trim())
+    .filter(Boolean)
+    .filter((tag) => {
+      const lower = tag.toLowerCase();
+      if (lower === "auto-news") return false;
+      // Feed source ids: techcrunch-ai, google-ai, theverge-ai, arxiv-ai, …
+      if (/^[a-z0-9]+(?:-[a-z0-9]+)*-ai$/i.test(tag)) return false;
+      return true;
+    });
+}
+
 export const NEWS_PAGE_SIZE = 21;
 
 export async function listNewsPosts(opts?: { all?: boolean; locale?: string }) {
