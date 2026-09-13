@@ -18,6 +18,7 @@ const primaryLinks = [
   { href: "", key: "home" },
   { href: "/over-ons", key: "info", info: true },
   { href: "/diensten", key: "services", mega: true },
+  { href: "/kennisbank", key: "kennisbank" },
   { href: "/portfolio", key: "portfolio" },
   { href: "#prijzen", key: "pricing" },
   // Shop page stays reachable via cart / checkout; omit from header menu.
@@ -91,9 +92,7 @@ export function Navigation() {
                 const infoActive =
                   active ||
                   pathname === `/${locale}/faq` ||
-                  pathname.startsWith(`/${locale}/faq/`) ||
-                  pathname === `/${locale}/kennisbank` ||
-                  pathname.startsWith(`/${locale}/kennisbank/`);
+                  pathname.startsWith(`/${locale}/faq/`);
                 return (
                   <InfoDropdown
                     key={link.key}
@@ -101,7 +100,6 @@ export function Navigation() {
                     label={t("info")}
                     aboutLabel={t("about")}
                     faqLabel={t("faq")}
-                    kennisbankLabel={t("kennisbank")}
                     termsLabel={t("terms")}
                     cookiesLabel={t("cookies")}
                     privacyLabel={t("privacy")}
@@ -231,9 +229,7 @@ export function Navigation() {
                   const infoActive =
                     active ||
                     pathname === `/${locale}/faq` ||
-                    pathname.startsWith(`/${locale}/faq/`) ||
-                    pathname === `/${locale}/kennisbank` ||
-                    pathname.startsWith(`/${locale}/kennisbank/`);
+                    pathname.startsWith(`/${locale}/faq/`);
                   return (
                     <div key={link.key}>
                       <button
@@ -278,12 +274,6 @@ export function Navigation() {
                             className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
                           >
                             {t("privacy")}
-                          </SoftLink>
-                          <SoftLink
-                            href={`/${locale}/kennisbank`}
-                            className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
-                          >
-                            {t("kennisbank")}
                           </SoftLink>
                           <SoftLink
                             href={`/${locale}/faq`}

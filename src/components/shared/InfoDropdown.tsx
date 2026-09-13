@@ -19,7 +19,6 @@ export function InfoDropdown({
   label,
   aboutLabel,
   faqLabel,
-  kennisbankLabel,
   termsLabel,
   cookiesLabel,
   privacyLabel,
@@ -29,7 +28,6 @@ export function InfoDropdown({
   label: string;
   aboutLabel: string;
   faqLabel: string;
-  kennisbankLabel: string;
   termsLabel: string;
   cookiesLabel: string;
   privacyLabel: string;
@@ -61,9 +59,6 @@ export function InfoDropdown({
   const aboutActive = pathname === aboutHref || pathname.startsWith(`${aboutHref}/`);
   const faqHref = `/${locale}/faq`;
   const faqActive = pathname === faqHref || pathname.startsWith(`${faqHref}/`);
-  const kennisbankHref = `/${locale}/kennisbank`;
-  const kennisbankActive =
-    pathname === kennisbankHref || pathname.startsWith(`${kennisbankHref}/`);
 
   const legalLabels = {
     terms: termsLabel,
@@ -123,16 +118,6 @@ export function InfoDropdown({
                 {legalLabels[item.labelKey]}
               </SoftLink>
             ))}
-            <SoftLink
-              href={kennisbankHref}
-              className={cn(
-                itemClass,
-                kennisbankActive && "bg-primary text-primary-foreground",
-              )}
-              onClick={() => setOpen(false)}
-            >
-              {kennisbankLabel}
-            </SoftLink>
             <SoftLink
               href={faqHref}
               className={cn(itemClass, faqActive && "bg-primary text-primary-foreground")}
