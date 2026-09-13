@@ -128,7 +128,7 @@ const topicBuilders: Record<string, (ctx: Ctx) => string> = {
       ol([
         "Open de CyberPanel-URL uit je welkomstmail (vaak <code>https://serverhostname:8090</code>).",
         "Accepteer indien nodig het certificaat tijdens de eerste setup; daarna gebruik je Let’s Encrypt voor het panel.",
-        "Log in met de admin- of websitegebruiker-gegevens die ${BRAND} heeft verstrekt.",
+        `Log in met de admin- of websitegebruiker-gegevens die ${BRAND} heeft verstrekt.`,
         "Wijzig direct het standaardwachtwoord en activeer bij voorkeur 2FA.",
       ]),
       warn("Deel nooit je admin-login. Maak voor dagelijks beheer een aparte websitegebruiker met beperkte rechten."),
@@ -453,6 +453,649 @@ const topicBuilders: Record<string, (ctx: Ctx) => string> = {
       tip("Formuleer je vraag met domeinnaam en foutmelding voor het beste resultaat."),
       outro(),
     ].join("\n"),
+
+  "tz-aiscan-what": () =>
+    [
+      p(
+        `De AI-scan van ${BRAND} geeft een snelle indicatie van hoe jouw website scoort op AEO, GEO, SEO, Performance en AI Readiness. Je start de scan op de pagina <code>/ai-scan</code> met je website-URL.`,
+        `Het is geen vervanging van een volledig optimalisatietraject, maar wel een helder startpunt om prioriteiten te zetten.`,
+      ),
+      h2("Wat de scan oplevert"),
+      ul([
+        "Scores per dimensie zodat je in één oogopslag ziet waar je staat.",
+        "Inzicht om het gesprek met support of een specialist gerichter te maken.",
+        "Geschiedenis in je account onder SEO-analyse (ingelogde klanten).",
+      ]),
+      warn(
+        "Beschouw de AI-scan als indicatie. Voor een uitgebreid rapport en implementatie kun je contact opnemen of een pakket met AEO/GEO/SEO kiezen.",
+      ),
+      outro("Artikelen over scores lezen en vervolgstappen in de categorie AI-scan."),
+    ].join("\n"),
+
+  "tz-aiscan-start": () =>
+    [
+      p(
+        `Je start een AI-scan zonder technische installatie: open <strong>AI-scan</strong> in het menu of ga naar <code>/{jouw-taal}/ai-scan</code>.`,
+      ),
+      h2("Stappen"),
+      ol([
+        "Vul de volledige website-URL in (inclusief https://).",
+        "Optioneel: bedrijfsnaam en doelen, zodat we context hebben bij vervolgvragen.",
+        "Start de scan en wacht tot de status op voltooid staat.",
+        "Bekijk de scores en noteer de laagste dimensies als eerstvolgende verbeterpunten.",
+      ]),
+      tip("Gebruik de canonieke domein-URL (apex of www) die bezoekers ook zien, niet een staging-link."),
+      outro(),
+    ].join("\n"),
+
+  "tz-aiscan-scores": () =>
+    [
+      p(
+        `Na een AI-scan zie je typisch deze scores: <strong>AEO</strong>, <strong>GEO (lokaal)</strong>, <strong>SEO</strong>, <strong>Performance</strong> en <strong>AI Readiness</strong>. Hogere scores betekenen een sterkere basis; lage scores wijzen op prioriteiten.`,
+      ),
+      h2("Hoe je scores leest"),
+      ul([
+        "AEO — hoe goed je content antwoordklaar is voor AI- en antwoordengines.",
+        "GEO — lokale vindbaarheid (regio, Maps, lokale relevantie).",
+        "SEO — klassieke on-page en technische vindbaarheid.",
+        "Performance — laadtijd en technische snelheidsindicatie.",
+        "AI Readiness — of je site klaar is om AI-gedreven zichtbaarheid te ondersteunen.",
+      ]),
+      tip("Verbeter eerst de laagste score die het meest bijdraagt aan je businessdoel (lokaal bedrijf → GEO; contentmerk → AEO/SEO)."),
+      outro(),
+    ].join("\n"),
+
+  "tz-aiscan-aeo-low": () =>
+    [
+      p(
+        `Een lage AEO-score betekent vaak dat antwoorden, FAQ’s, duidelijke entities of structured data ontbreken. Antwoordengines kunnen je content dan minder goed gebruiken.`,
+      ),
+      h2("Praktische verbeteringen"),
+      ol([
+        "Voeg FAQ-secties toe die echte klantvragen beantwoorden.",
+        "Maak pagina’s duidelijker over wie/wat/waar (bedrijf, dienst, locatie).",
+        "Gebruik logische koppen (H2/H3) en korte, feitelijke antwoorden.",
+        "Overweeg structured data (FAQ/Organization) waar relevant.",
+        `Plan AEO-optimalisatie via ${BRAND} als je structureel wilt groeien.`,
+      ]),
+      outro(),
+    ].join("\n"),
+
+  "tz-aiscan-geo-low": () =>
+    [
+      p(
+        `Een lage GEO-score wijst op zwakke lokale signalen: inconsistente NAP-gegevens, beperkte locatiepagina’s of een onderbenut Google Business Profile.`,
+      ),
+      h2("Lokale checklist"),
+      ul([
+        "Eén consistente bedrijfsnaam, adres en telefoon overal.",
+        "Locatiepagina’s of duidelijke vestigingsinfo op de site.",
+        "Google Business Profile volledig en actueel.",
+        "Lokale landingspagina’s voor belangrijke steden/regio’s indien relevant.",
+      ]),
+      outro(),
+    ].join("\n"),
+
+  "tz-aiscan-seo-low": () =>
+    [
+      p(
+        `Een lage SEO-score wijst vaak op titles/meta’s, interne links, indexeerbaarheid of technische basisproblemen.`,
+      ),
+      h2("Snelste winst"),
+      ol([
+        "Unieke title-tags en meta descriptions per belangrijke pagina.",
+        "Duidelijke interne links van hub naar dienstenpagina’s.",
+        "HTTPS, snelle laadtijd en mobielvriendelijke layout.",
+        "Sitemap en robots.txt controleren.",
+        "Overweeg SEO-optimalisatie of een pakket met SEO basic/plus.",
+      ]),
+      outro(),
+    ].join("\n"),
+
+  "tz-aiscan-readiness": () =>
+    [
+      p(
+        `AI Readiness geeft aan hoe goed je site is voorbereid op AI-gedreven zoek- en antwoordervaringen: structuur, duidelijkheid, technische basis en contentkwaliteit.`,
+      ),
+      p(
+        `Verbeter readiness door heldere dienstbeschrijvingen, actuele content, goede performance en door AEO/GEO/SEO in samenhang aan te pakken — precies waar ${BRAND}-pakketten op inzetten.`,
+      ),
+      outro(),
+    ].join("\n"),
+
+  "tz-aiscan-history": () =>
+    [
+      p(
+        `Ingelogde klanten vinden eerdere scans onder <strong>SEO-analyse</strong> in het dashboard (<code>/seo-analysis</code>). Daar zie je AEO/GEO/SEO-labels en kun je opnieuw naar de AI-scan.`,
+      ),
+      h2("Tips"),
+      ul([
+        "Vergelijk scores over tijd na grotere content- of technische wijzigingen.",
+        "Deel een screenshot of scan-ID in een ticket voor snellere hulp.",
+      ]),
+      outro(),
+    ].join("\n"),
+
+  "tz-aiscan-vs-full": () =>
+    [
+      p(
+        `De AI-scan is een snelle indicatie. Een volledig AEO-, GEO- of SEO-traject omvat analyse, prioritering, implementatie en nazorg — via dienstenpagina’s of pakketten met AEO/GEO/SEO basic of plus.`,
+      ),
+      ul([
+        "Scan → inzicht en prioriteiten.",
+        "Dienst/pakket → uitvoering en structurele verbetering.",
+        "Dashboard → voortgang en agents waar van toepassing.",
+      ]),
+      outro(),
+    ].join("\n"),
+
+  "tz-aiscan-next": () =>
+    [
+      p(`Na je AI-scan bij ${BRAND} is dit een bewezen volgorde:`),
+      ol([
+        "Noteer de twee laagste scores die je omzet of leads raken.",
+        "Los snelle technische issues op (HTTPS, 404’s, trage homepage).",
+        "Verbeter content voor AEO/SEO of lokale signalen voor GEO.",
+        "Open een ticket of boek een afspraak voor een gericht plan.",
+        "Overweeg Business of Extra Growth als je AEO/GEO/SEO + AI-agents structureel wilt.",
+      ]),
+      outro(),
+    ].join("\n"),
+
+  "tz-aeo-what": () =>
+    [
+      p(
+        `AEO (Answer Engine Optimization) optimaliseert content zodat antwoordengines en AI-systemen jouw antwoorden betrouwbaar kunnen gebruiken — naast klassieke zoekresultaten.`,
+      ),
+      p(
+        `Bij ${BRAND} betekent AEO o.a. antwoordklare content, FAQ’s, entity-clarity en structured data, in samenhang met SEO en GEO. Dienstpagina: <code>/diensten/aeo-optimization</code>.`,
+      ),
+      outro(),
+    ].join("\n"),
+
+  "tz-geo-what": () =>
+    [
+      p(
+        `GEO (Geographic SEO) versterkt lokale vindbaarheid: Maps, local pack, Google Business Profile, NAP-consistentie en locatiepagina’s.`,
+      ),
+      p(
+        `Relevant voor bedrijven met een regio, vestiging of lokale dienstverlening. Dienstpagina: <code>/diensten/geo-optimization</code>.`,
+      ),
+      outro(),
+    ].join("\n"),
+
+  "tz-seo-what": () =>
+    [
+      p(
+        `Klassieke SEO bij ${BRAND} omvat technische basis, on-page optimalisatie, structuur en waar nodig off-page/lokale/e-commerce SEO. Losse SEO-optimalisatie is ook via de shop beschikbaar.`,
+      ),
+      p(`Dienst: <code>/diensten/seo-optimization</code>.`),
+      outro(),
+    ].join("\n"),
+
+  "tz-aeo-geo-seo-together": () =>
+    [
+      p(
+        `AEO, GEO en SEO versterken elkaar: SEO zorgt voor technische en inhoudelijke vindbaarheid, GEO voor lokale relevantie, AEO voor antwoordklare weergave in AI-contexten.`,
+      ),
+      tip(`Pakketten van ${BRAND} combineren deze lagen als basic of plus, zodat je niet in silo's werkt.`),
+      outro(),
+    ].join("\n"),
+
+  "tz-aeo-content": () =>
+    [
+      p(`Voor AEO schrijf je content die vragen direct, feitelijk en gestructureerd beantwoordt.`),
+      ol([
+        "Inventariseer klantvragen (support, sales, search console).",
+        "Maak FAQ-blokken met korte antwoorden bovenaan lange pagina’s.",
+        "Gebruik consistente namen voor producten/diensten (entities).",
+        "Voeg waar zinvol FAQ- of Organization-schema toe.",
+        "Houd content actueel; verouderde feiten schaden vertrouwen.",
+      ]),
+      outro(),
+    ].join("\n"),
+
+  "tz-geo-local": () =>
+    [
+      p(`Lokale vindbaarheid begint bij consistentie en volledigheid.`),
+      ul([
+        "Google Business Profile: categorieën, uren, foto’s, berichten.",
+        "NAP gelijk op website, directories en socials.",
+        "Locatie- of regio-landingspagina’s met unieke content.",
+        "Reviews beleidmatig en integer verzamelen.",
+      ]),
+      outro(),
+    ].join("\n"),
+
+  "tz-seo-order": () =>
+    [
+      p(
+        `Je kunt SEO starten via de dienstenpagina, via contact/afspraak, of via de shop (SEO-optimalisatie als losse dienst). In Business/Extra Growth zit AEO/GEO/SEO basic of plus al in het pakket.`,
+      ),
+      ol([
+        "Bepaal of je een losse SEO-klus of doorlopend pakket nodig hebt.",
+        "Bestel in de shop of open een ticket met je domein en doelen.",
+        "Lever toegang tot Search Console/Analytics waar gevraagd.",
+      ]),
+      outro(),
+    ].join("\n"),
+
+  "tz-aeo-basic-plus": () =>
+    [
+      p(
+        `In het <strong>Business</strong>-pakket zit AEO/GEO/SEO op basic-niveau. <strong>Extra Growth</strong> bevat AEO/GEO/SEO plus — diepere optimalisatie en meer ruimte voor groei, naast 2 AI-agents in plaats van 1.`,
+      ),
+      tip("Twijfel je tussen basic en plus: kijk naar concurrentie in je regio en of lokale + antwoordgedreven zichtbaarheid kritiek is voor omzet."),
+      outro(),
+    ].join("\n"),
+
+  "tz-aeo-measure": () =>
+    [
+      p(`Meet resultaat met een mix van signalen:`),
+      ul([
+        "Organische posities en klikken (Search Console).",
+        "Lokale acties (bel/route/website) vanuit Maps/GBP.",
+        "Conversies op landingspagina’s.",
+        "Herhaalde AI-scans als indicatieve trend — niet als enige KPI.",
+      ]),
+      outro(),
+    ].join("\n"),
+
+  "tz-aeo-mistakes": () =>
+    [
+      p(`Veelgemaakte fouten die SEO én AEO/GEO schaden:`),
+      ul([
+        "Dubbele of dunne locatiepagina’s.",
+        "Tegenstrijdige NAP-gegevens.",
+        "Keyword stuffing zonder duidelijke antwoorden.",
+        "Trage of niet-mobiele pagina’s.",
+        "Meerdere SEO-plugins die elkaar tegenspreken.",
+      ]),
+      outro(),
+    ].join("\n"),
+
+  "tz-shop-business-growth": () =>
+    [
+      p(
+        `Beide pakketten van ${BRAND} combineren domein, hosting, website/shop, AI-scanner, AEO/GEO/SEO en support. Het verschil zit vooral in AI-agents en diepte van AEO/GEO/SEO.`,
+      ),
+      ul([
+        "<strong>Business</strong> — 1 AI-agent, AEO/GEO/SEO basic, vanaf €39,95/maand incl. 21% btw.",
+        "<strong>Extra Growth</strong> — 2 AI-agents, AEO/GEO/SEO plus, vanaf €64,95/maand incl. 21% btw (featured).",
+      ]),
+      p(`Jaarbetaling: 10% korting (12 × maandprijs × 0,9).`),
+      outro(),
+    ].join("\n"),
+
+  "tz-shop-business": () =>
+    [
+      p(`Het Business-pakket bevat o.a.:`),
+      ul([
+        "1× domein (.COM / .EU / .NL)",
+        "1× webhosting",
+        "1× shop/website",
+        "1× AI-agent",
+        "AI-scanner",
+        "AEO/GEO/SEO basic",
+        "Premium support en 24/7 monitoring",
+      ]),
+      p(`Prijsindicatie: €39,95 per maand incl. btw. Bestellen via de shop.`),
+      outro(),
+    ].join("\n"),
+
+  "tz-shop-growth": () =>
+    [
+      p(`Extra Growth bouwt voort op Business met meer AI-capaciteit en sterkere zichtbaarheid:`),
+      ul([
+        "Zelfde basis (domein, hosting, shop/website, AI-scanner, support, monitoring)",
+        "2× AI-agents",
+        "AEO/GEO/SEO plus",
+      ]),
+      p(`Prijsindicatie: €64,95 per maand incl. btw.`),
+      outro(),
+    ].join("\n"),
+
+  "tz-shop-order": () =>
+    [
+      p(`Bestellen doe je op <code>/shop</code> of de productpagina van het pakket.`),
+      ol([
+        "Kies Business of Extra Growth (en maand/jaar indien aangeboden).",
+        "Voeg toe aan winkelwagen en ga naar checkout.",
+        "Vul naam, e-mail en optioneel bedrijfsnaam in.",
+        "Betaal via Stripe (o.a. iDEAL, Bancontact, kaart, SEPA, Klarna, PayPal).",
+        `Na succes zie je de success-pagina; daarna volgt opstart/contact vanuit ${BRAND}.`,
+      ]),
+      outro(),
+    ].join("\n"),
+
+  "tz-shop-checkout": () =>
+    [
+      p(
+        `De checkout van ${BRAND} loopt via Stripe Checkout (eenmalige betaling). Je ziet een specificatie met bedragen excl. btw, btw en totaal incl. btw.`,
+      ),
+      tip("Gebruik het e-mailadres waarmee je ook je klantaccount wilt koppelen, zodat facturen en berichten kloppen."),
+      outro(),
+    ].join("\n"),
+
+  "tz-shop-vat": () =>
+    [
+      p(
+        `Shopprijzen bij ${BRAND} zijn <strong>inclusief 21% btw</strong>. In de checkout en op documentatie zie je de uitsplitsing excl./btw/incl. voor transparantie.`,
+      ),
+      p(`Zakelijke vragen over factuurgegevens regel je in het CRM/klantenpanel of via een ticket.`),
+      outro(),
+    ].join("\n"),
+
+  "tz-shop-yearly": () =>
+    [
+      p(
+        `Bij jaarbetaling geldt 10% korting: maandprijs × 12 × 0,9. Voor Business is dat ongeveer €431,46/jaar; voor Extra Growth ongeveer €701,46/jaar (incl. btw, afronding kan licht verschillen).`,
+      ),
+      outro(),
+    ].join("\n"),
+
+  "tz-shop-after": () =>
+    [
+      p(`Na een geslaagde betaling:`),
+      ol([
+        "Je landt op de success-pagina van de shop.",
+        "Je ontvangt bevestiging per e-mail.",
+        `${BRAND} start provisioning (domein/hosting/site/agents naar gelang pakket).`,
+        "Je gebruikt daarna dashboard, CRM, tickets en AI-scan voor vervolg.",
+      ]),
+      outro(),
+    ].join("\n"),
+
+  "tz-shop-addons": () =>
+    [
+      p(
+        `Naast pakketten verkoopt de shop losse diensten (o.a. hosting-SKU’s, WordPress-diensten, SEO-optimalisatie). Die kun je combineren met een pakket wanneer je extra capaciteit of een eenmalig project nodig hebt.`,
+      ),
+      outro(),
+    ].join("\n"),
+
+  "tz-shop-enterprise": () =>
+    [
+      p(
+        `Enterprise is bedoeld voor maatwerk zonder vaste shopprijs. Neem contact op of boek een afspraak wanneer je meerdere merken, complexe AI-integraties of custom SLA’s nodig hebt.`,
+      ),
+      outro(),
+    ].join("\n"),
+
+  "tz-host-choose": () =>
+    [
+      p(`Kies hosting op basis van verkeer, technische eisen en beheer:`),
+      ul([
+        "<strong>Shared</strong> — voordelig voor kleinere sites; resources gedeeld.",
+        "<strong>WordPress hosting</strong> — geoptimaliseerd voor WordPress (bezoekerslimieten, CDN/SSL in hogere tiers).",
+        "<strong>VPS</strong> — vaste cores/SSD, meer controle en headroom bij groei.",
+      ]),
+      tip("Onzeker? Start met WordPress hosting als je WP draait; kies VPS bij structureel hoge load of custom stacks."),
+      outro(),
+    ].join("\n"),
+
+  "tz-host-shared": () =>
+    [
+      p(`Shared hosting bij ${BRAND} (indicatieve shoptiers):`),
+      ul([
+        "Basic — o.a. tot 3 sites / circa 20 GB",
+        "Plus — ruimere limieten (onbeperkt in marketingcopy waar van toepassing)",
+        "Business — meer opslag (o.a. 50 GB) en extra’s zoals cloud storage afhankelijk van SKU",
+      ]),
+      p(`Exacte limieten staan op de productpagina in de shop.`),
+      outro(),
+    ].join("\n"),
+
+  "tz-host-wp": () =>
+    [
+      p(
+        `WordPress hosting Basic / Plus / Pro is afgestemd op WordPress-verkeer, SSL/CDN en beheercomfort. Pro (Business-SKU) biedt de meeste headroom.`,
+      ),
+      outro(),
+    ].join("\n"),
+
+  "tz-host-vps": () =>
+    [
+      p(
+        `VPS Basic / Plus / Business schalen in cores en SSD (RAID 10). Kies VPS bij hogere concurrentie, custom software of wanneer shared te krap wordt.`,
+      ),
+      outro(),
+    ].join("\n"),
+
+  "tz-host-upgrade": () =>
+    [
+      p(`Signalen om te upgraden naar VPS:`),
+      ul([
+        "Structureel hoge CPU/RAM of 503-fouten bij pieken",
+        "Zwaardere webshop of veel gelijktijdige gebruikers",
+        "Behoefte aan eigen serverconfiguratie",
+      ]),
+      p(`Open een ticket met je domein en resourcegrafieken; ${BRAND} helpt bij de migratiekeuze.`),
+      outro(),
+    ].join("\n"),
+
+  "tz-host-in-plan": () =>
+    [
+      p(
+        `Business/Extra Growth bevatten webhosting als onderdeel van het totaalpakket. Losse shared/WP/VPS-SKU’s in de shop zijn voor wie alleen hosting nodig heeft of wil bijschalen buiten het pakket.`,
+      ),
+      outro(),
+    ].join("\n"),
+
+  "tz-chat-what": () =>
+    [
+      p(
+        `Op publieke pagina’s van ${BRAND} staat een live-chatwidget. Die is verborgen op login- en dashboard-/CRM-schermen, zodat je daar het ticketportaal gebruikt.`,
+      ),
+      outro(),
+    ].join("\n"),
+
+  "tz-chat-start": () =>
+    [
+      p(`Als gast start je chat met naam en e-mail. Daarna stel je je vraag in de chatmodus of kies je expliciet voor een nieuw ticket.`),
+      tip("Gebruik een bereikbaar e-mailadres; chatgesprekken worden gekoppeld aan een ticketregistratie."),
+      outro(),
+    ].join("\n"),
+
+  "tz-chat-to-ticket": () =>
+    [
+      p(
+        `Live chat wordt server-side als ticket geregistreerd (bron: CHAT). Zo blijft de geschiedenis bewaard en kun je later verder in <code>/crm/tickets</code>.`,
+      ),
+      outro(),
+    ].join("\n"),
+
+  "tz-ticket-open": () =>
+    [
+      p(`Ingelogde klanten openen tickets via <strong>CRM → Tickets</strong> (of snelkoppeling vanaf het dashboard).`),
+      ol([
+        "Ga naar Tickets.",
+        "Maak een nieuw ticket met duidelijk onderwerp.",
+        "Beschrijf het probleem, domein, tijdstip en eventuele foutmelding.",
+        "Verstuur; status start doorgaans als Open.",
+      ]),
+      outro(),
+    ].join("\n"),
+
+  "tz-ticket-status": () =>
+    [
+      p(`Statussen die je kunt tegenkomen:`),
+      ul([
+        "OPEN — nieuw / wacht op opvolging",
+        "IN_PROGRESS — in behandeling",
+        "WAITING — wacht op jouw antwoord of externe info",
+        "RESOLVED — opgelost",
+        "CLOSED — afgesloten",
+      ]),
+      outro(),
+    ].join("\n"),
+
+  "tz-ticket-reply": () =>
+    [
+      p(
+        `Open het ticket en plaats een antwoord in de berichtenfeed. Het portaal vernieuwt regelmatig (polling), zodat nieuwe staff-antwoorden zichtbaar worden zonder de pagina te herladen.`,
+      ),
+      outro(),
+    ].join("\n"),
+
+  "tz-ticket-list": () =>
+    [
+      p(`Alle tickets staan onder <code>/crm/tickets</code>. Filter op status en open het juiste gesprek om verder te gaan waar live chat of een eerdere melding stopte.`),
+      outro(),
+    ].join("\n"),
+
+  "tz-support-channels": () =>
+    [
+      p(`Kies het juiste kanaal:`),
+      ul([
+        "Live chat — korte vragen tijdens bezoek aan de site",
+        "Ticket — storingen, accountzaken, technische diepgang",
+        "Belafspraak / contact — strategie, complexe trajecten",
+        "Kennisbank — self-service stappenplannen",
+      ]),
+      outro(),
+    ].join("\n"),
+
+  "tz-agents-what": () =>
+    [
+      p(
+        `AI-agents zijn digitale helpers in je ${BRAND}-account die taken ondersteunen binnen je pakket (bijv. marketing- of zichtbaarheidsgerelateerde workflows). Je beheert ze onder <code>/ai-agents</code>.`,
+      ),
+      outro(),
+    ].join("\n"),
+
+  "tz-agents-quota": () =>
+    [
+      p(`Indicatie binnen de shoppakketten:`),
+      ul([
+        "Business — 1 AI-agent",
+        "Extra Growth — 2 AI-agents",
+      ]),
+      p(`Heb je meer nodig, bespreek opschaling via support of Enterprise.`),
+      outro(),
+    ].join("\n"),
+
+  "tz-agents-open": () =>
+    [
+      p(`Log in en open <strong>AI-agents</strong> in het dashboard-menu, of ga naar <code>/ai-agents</code>. Je ziet alleen agents binnen jouw account (eigen scope).`),
+      outro(),
+    ].join("\n"),
+
+  "tz-agents-control": () =>
+    [
+      p(`Per agent kun je typisch:`),
+      ul([
+        "Start — status RUNNING",
+        "Pause — status PAUSED",
+        "Idle — status IDLE",
+      ]),
+      tip("Pauzeer agents tijdens groot onderhoud of migraties om conflicterende taken te voorkomen."),
+      outro(),
+    ].join("\n"),
+
+  "tz-agents-status": () =>
+    [
+      p(`Statusuitleg:`),
+      ul([
+        "RUNNING — actief taken aan het uitvoeren/beschikbaar",
+        "PAUSED — tijdelijk gestopt",
+        "IDLE — geen actieve run",
+      ]),
+      p(`Je ziet ook type en voltooide taken in de lijstweergave.`),
+      outro(),
+    ].join("\n"),
+
+  "tz-agents-empty": () =>
+    [
+      p(
+        `Zie je “Nog geen agents”? Dan zijn ze nog niet provisioned, of je pakket bevat ze (nog) niet. Open een ticket met je bestelling/pakketnaam; ${BRAND} koppelt agents aan je account.`,
+      ),
+      outro(),
+    ].join("\n"),
+
+  "tz-agents-use": () =>
+    [
+      p(
+        `AI-agents passen bij doorlopende zichtbaarheid en marketing naast AEO/GEO/SEO. Gebruik ze als aanvulling op content- en lokale strategie — niet als vervanging van technische SEO-fixes.`,
+      ),
+      outro(),
+    ].join("\n"),
+
+  "tz-crm-dashboard": () =>
+    [
+      p(
+        `Het CRM-overzicht (<code>/crm</code>) toont open tickets, facturen, ongelezen berichten en projecten — met snelle CTA’s om bijvoorbeeld een ticket te openen.`,
+      ),
+      outro(),
+    ].join("\n"),
+
+  "tz-crm-invoices-view": () =>
+    [
+      p(
+        `Facturen vind je onder <strong>CRM → Facturen</strong>. Als klant bekijk je facturen die aan je account/e-mail gekoppeld zijn; aanmaken doet staff.`,
+      ),
+      outro(),
+    ].join("\n"),
+
+  "tz-crm-invoices-detail": () =>
+    [
+      p(`Open een factuur voor details en status. Vragen over betaling of gegevens? Stuur een ticket of bericht via CRM-berichten.`),
+      outro(),
+    ].join("\n"),
+
+  "tz-crm-messages": () =>
+    [
+      p(
+        `Onder <strong>Berichten</strong> lees je je inbox en stel je berichten op naar het juiste teamlid. Dit is bedoeld voor accountcommunicatie naast tickets.`,
+      ),
+      outro(),
+    ].join("\n"),
+
+  "tz-crm-unread": () =>
+    [
+      p(`Het CRM-overzicht toont ongelezen berichten. Werk ze bij zodat deadlines en opleveringen niet blijven liggen.`),
+      outro(),
+    ].join("\n"),
+
+  "tz-crm-projects-create": () =>
+    [
+      p(
+        `Projecten beheer je via <code>/projects</code>. Je kunt projecten aanmaken met types zoals website, SEO, ads of AI-integratie — afhankelijk van wat je samen met ${BRAND} draait.`,
+      ),
+      outro(),
+    ].join("\n"),
+
+  "tz-crm-projects-status": () =>
+    [
+      p(`Open een project voor detailstatus en opvolging. Gebruik berichten of tickets voor blokkades die snelle actie nodig hebben.`),
+      outro(),
+    ].join("\n"),
+
+  "tz-crm-quicklinks": () =>
+    [
+      p(`Vanaf het klant-dashboard heb je snelle links naar o.a. projecten, tickets, CRM, SEO-analyse, AI-scan en AI-agents — zodat je niet hoeft te zoeken.`),
+      outro(),
+    ].join("\n"),
+
+  "tz-crm-classic-vs-new": () =>
+    [
+      p(
+        `Klassieke klantenpanel-taken (DNS, WHOIS, opzeggen, autorisatiecodes) blijven relevant voor domeinbeheer. Het moderne CRM voegt tickets, facturen, berichten, projecten en AI-tools toe in één portaal.`,
+      ),
+      outro(),
+    ].join("\n"),
+
+  "tz-crm-support-fast": () =>
+    [
+      p(`Snelste route voor storingen:`),
+      ol([
+        "Open CRM → Tickets (of dashboard-CTA).",
+        "Vermeld domein, tijdstip en fout.",
+        "Voeg screenshots toe indien mogelijk.",
+        "Kies chat alleen voor korte vragen tijdens browsen.",
+      ]),
+      outro(),
+    ].join("\n"),
 };
 
 function genericBody(ctx: Ctx): string {
@@ -514,6 +1157,60 @@ function genericBody(ctx: Ctx): string {
       p(
         `Bekijk in het control panel het actuele verbruik van schijf, inodes en bandbreedte. Ruim logs, oude backups en ongebruikte installaties op voordat je het pakket vergroot.`,
         `Na het verwijderen van bestanden kan gebruiksevaluatie enkele minuten tot uren achterlopen — vernieuw de statistieken of wacht op de nachtelijk recount.`,
+      ),
+    );
+  }
+  if (/cname|a-record|dnssec|nameserver|mx-record|txt-record|zone/.test(lower)) {
+    focusBlocks.push(
+      h2("DNS-records in de praktijk"),
+      p(
+        `Open DNS-beheer in het klantenpanel of DirectAdmin/CyberPanel/Plesk. Wijzig één record tegelijk, noteer de oude waarde, en wacht op propagatie voordat je concludeert dat iets mislukte.`,
+        `Voor CNAME geldt: gebruik geen CNAME op de apex (@) tenzij je provider ALIAS/ANAME ondersteunt. A-records wijzen naar een IPv4-adres; AAAA naar IPv6.`,
+      ),
+    );
+  }
+  if (/woocommerce|webshop|seo|analytics|cookie|gdpr|avg|page.?builder|meertalig|staging/.test(lower)) {
+    focusBlocks.push(
+      h2("WordPress-uitbreidingen"),
+      p(
+        `Installeer plugins bij voorkeur vanuit de officiële repository of betrouwbare vendors. Test op staging, maak een backup en controleer na activatie formulieren, checkout en caching.`,
+        `Voor SEO, cookies (AVG) en analytics: plaats tracking pas ná toestemming waar wetgeving dat vereist, en vermijd overlappende SEO-plugins.`,
+      ),
+    );
+  }
+  if (/ddos|firewall|csp|sql.?inject|sftp|chmod|brute.?force|malware|phishing|vpn|wachtwoord/.test(lower)) {
+    focusBlocks.push(
+      h2("Hardening checklist"),
+      ul([
+        "Werk software bij en verwijder ongebruikte plugins/thema’s.",
+        "Gebruik unieke sterke wachtwoorden en 2FA waar beschikbaar.",
+        "Beperk admin-URL’s, XML-RPC en onnodige poorten.",
+        "Monitor logs en reageer snel op verdachte pieken in verkeer of CPU.",
+      ]),
+    );
+  }
+  if (/factuur|ticket|klantenpanel|belafspraak|support.?tijd|nieuwsbrief/.test(lower)) {
+    focusBlocks.push(
+      h2("Klantenservice en accountbeheer"),
+      p(
+        `In het TripleZero iT Hosting klantenpanel regel je facturen, betaalmethoden, tickets en accountinstellingen. Vermeld altijd je klantnummer of domeinnaam in tickets voor snellere opvolging.`,
+        `Supporttijden en belafspraken staan in je welkomstmail en op de contactpagina; voor spoed bij uitval: ticket met impact en tijdstip van de storing.`,
+      ),
+    );
+  }
+  if (/plesk/.test(lower)) {
+    focusBlocks.push(
+      h2("Werken in Plesk"),
+      p(
+        `Log in via de Plesk-URL uit je welkomstmail. Selecteer het juiste abonnement/abonnementdomein voordat je e-mail, databases of DNS wijzigt. Reseller-accounts zien meerdere klantaccounts — werk nooit in het verkeerde subscription.`,
+      ),
+    );
+  }
+  if (/ai-scan|aeo|geo|seo-analyse|ai-agent|business-pakket|extra growth|checkout|btw|ticket|live.?chat|crm|factuur|vps/.test(lower) || topic.startsWith("tz-")) {
+    focusBlocks.push(
+      h2("TripleZero iT Hosting-platform"),
+      p(
+        `Deze handleiding hoort bij het ${BRAND}-platform: shop/pakketten, AI-scan, AEO/GEO/SEO, AI-agents, CRM (facturen, berichten, projecten) en tickets/live chat. Gebruik altijd de menu’s in je ingelogde dashboard voor actuele schermen.`,
       ),
     );
   }

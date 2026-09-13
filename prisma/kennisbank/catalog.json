@@ -38,7 +38,7 @@
     [
       "crm-klantenpanel",
       "CRM en Klantenpanel",
-      "Inloggen, DNS, WHOIS, opzeggen en beheer via het klantenpanel."
+      "Dashboard, facturen, berichten, projecten, tickets en accountbeheer bij TripleZero iT Hosting."
     ],
     [
       "wordpress",
@@ -59,6 +59,26 @@
       "plesk",
       "Plesk controlpanel",
       "Reseller- en accountbeheer in Plesk, inclusief SSL."
+    ],
+    [
+      "ai-scan",
+      "AI-scan",
+      "Starten met de AI-scan, scores begrijpen (AEO, GEO, SEO, Performance, AI Readiness) en vervolgstappen."
+    ],
+    [
+      "aeo-geo-seo",
+      "AEO, GEO en SEO",
+      "Klantvriendelijke uitleg over Answer Engine Optimization, lokale GEO en klassieke SEO bij TripleZero iT Hosting."
+    ],
+    [
+      "ai-agents",
+      "AI-agents",
+      "AI-agents in je dashboard: starten, pauzeren en inzetten binnen je pakket."
+    ],
+    [
+      "shop-en-pakketten",
+      "Shop en pakketten",
+      "Business, Extra Growth, hostingkeuze, checkout, btw en wat er in je pakket zit."
     ]
   ],
   "articles": [
@@ -1547,6 +1567,1392 @@
         "cyberpanel"
       ],
       "topic": "cp-troubleshoot"
+    },
+    {
+      "slug": "hoe-kies-ik-de-juiste-domeinnaam-voor-mijn-bedrijf-of-project",
+      "title": "Hoe kies ik de juiste domeinnaam voor mijn bedrijf of project?",
+      "categories": [
+        "domeinnamen"
+      ],
+      "topic": "ext-hoe-kies-ik-de-juiste-domeinnaam-voor-mijn-bedri"
+    },
+    {
+      "slug": "hoe-verleng-ik-mijn-domeinnaam-en-wat-zijn-de-kosten",
+      "title": "Hoe verleng ik mijn domeinnaam en wat zijn de kosten?",
+      "categories": [
+        "domeinnamen"
+      ],
+      "topic": "ext-hoe-verleng-ik-mijn-domeinnaam-en-wat-zijn-de-ko"
+    },
+    {
+      "slug": "hoe-wijzig-ik-de-eigenaar-van-een-domeinnaam",
+      "title": "Hoe wijzig ik de eigenaar van een domeinnaam?",
+      "categories": [
+        "domeinnamen"
+      ],
+      "topic": "ext-hoe-wijzig-ik-de-eigenaar-van-een-domeinnaam"
+    },
+    {
+      "slug": "wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein",
+      "title": "Wat is DNSSEC en hoe voeg ik het toe aan mijn domein?",
+      "categories": [
+        "domeinnamen"
+      ],
+      "topic": "ext-wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-do"
+    },
+    {
+      "slug": "hoe-verhuis-ik-mijn-domeinnaam-van-een-andere-provider-naar-triplezero-it-hosting",
+      "title": "Hoe verhuis ik mijn domeinnaam van een andere provider naar TripleZero iT Hosting?",
+      "categories": [
+        "domeinnamen"
+      ],
+      "topic": "ext-hoe-verhuis-ik-mijn-domeinnaam-van-een-andere-pr"
+    },
+    {
+      "slug": "hoe-stel-ik-een-cname-record-in-voor-mijn-domein",
+      "title": "Hoe stel ik een CNAME-record in voor mijn domein?",
+      "categories": [
+        "domeinnamen"
+      ],
+      "topic": "ext-hoe-stel-ik-een-cname-record-in-voor-mijn-domein"
+    },
+    {
+      "slug": "hoe-stel-ik-een-a-record-in-voor-mijn-domein",
+      "title": "Hoe stel ik een A-record in voor mijn domein?",
+      "categories": [
+        "domeinnamen"
+      ],
+      "topic": "ext-hoe-stel-ik-een-a-record-in-voor-mijn-domein"
+    },
+    {
+      "slug": "hoe-lang-blijft-mijn-domeinnaam-van-mij-na-het-verlopen",
+      "title": "Hoe lang blijft mijn domeinnaam van mij na het verlopen?",
+      "categories": [
+        "domeinnamen"
+      ],
+      "topic": "ext-hoe-lang-blijft-mijn-domeinnaam-van-mij-na-het-v"
+    },
+    {
+      "slug": "wat-zijn-nameservers-en-hoe-wijzig-ik-ze",
+      "title": "Wat zijn nameservers en hoe wijzig ik ze?",
+      "categories": [
+        "domeinnamen"
+      ],
+      "topic": "ext-wat-zijn-nameservers-en-hoe-wijzig-ik-ze"
+    },
+    {
+      "slug": "hoe-kan-ik-mijn-domeinnaam-beschermen-tegen-kaping",
+      "title": "Hoe kan ik mijn domeinnaam beschermen tegen kaping?",
+      "categories": [
+        "domeinnamen"
+      ],
+      "topic": "ext-hoe-kan-ik-mijn-domeinnaam-beschermen-tegen-kapi"
+    },
+    {
+      "slug": "hoe-kies-ik-de-juiste-wordpress-hosting",
+      "title": "Hoe kies ik de juiste WordPress hosting?",
+      "categories": [
+        "bloggen"
+      ],
+      "topic": "ext-hoe-kies-ik-de-juiste-wordpress-hosting"
+    },
+    {
+      "slug": "hoe-versnel-ik-mijn-wordpress-website",
+      "title": "Hoe versnel ik mijn WordPress website?",
+      "categories": [
+        "bloggen"
+      ],
+      "topic": "ext-hoe-versnel-ik-mijn-wordpress-website"
+    },
+    {
+      "slug": "hoe-maak-ik-een-back-up-van-mijn-wordpress-website",
+      "title": "Hoe maak ik een back-up van mijn WordPress website?",
+      "categories": [
+        "bloggen",
+        "wordpress"
+      ],
+      "topic": "ext-hoe-maak-ik-een-back-up-van-mijn-wordpress-websi"
+    },
+    {
+      "slug": "hoe-beveilig-ik-mijn-wordpress-website",
+      "title": "Hoe beveilig ik mijn WordPress website?",
+      "categories": [
+        "bloggen",
+        "wordpress",
+        "beveiliging"
+      ],
+      "topic": "ext-hoe-beveilig-ik-mijn-wordpress-website"
+    },
+    {
+      "slug": "wat-is-het-verschil-tussen-wordpress-com-en-wordpress-org",
+      "title": "Wat is het verschil tussen WordPress.com en WordPress.org?",
+      "categories": [
+        "bloggen"
+      ],
+      "topic": "ext-wat-is-het-verschil-tussen-wordpress-com-en-word"
+    },
+    {
+      "slug": "hoe-verplaats-ik-mijn-wordpress-website-naar-triplezero-it-hosting",
+      "title": "Hoe verplaats ik mijn WordPress website naar TripleZero iT Hosting?",
+      "categories": [
+        "bloggen",
+        "wordpress",
+        "hosting"
+      ],
+      "topic": "ext-hoe-verplaats-ik-mijn-wordpress-website-naar-tri"
+    },
+    {
+      "slug": "hoe-voeg-ik-een-contactformulier-toe-aan-mijn-wordpress-site",
+      "title": "Hoe voeg ik een contactformulier toe aan mijn WordPress site?",
+      "categories": [
+        "bloggen"
+      ],
+      "topic": "ext-hoe-voeg-ik-een-contactformulier-toe-aan-mijn-wo"
+    },
+    {
+      "slug": "hoe-voeg-ik-een-webshop-toe-aan-mijn-wordpress-site-woocommerce",
+      "title": "Hoe voeg ik een webshop toe aan mijn WordPress site? (WooCommerce)",
+      "categories": [
+        "bloggen",
+        "wordpress"
+      ],
+      "topic": "ext-hoe-voeg-ik-een-webshop-toe-aan-mijn-wordpress-s"
+    },
+    {
+      "slug": "hoe-optimaliseer-ik-mijn-wordpress-site-voor-seo",
+      "title": "Hoe optimaliseer ik mijn WordPress site voor SEO?",
+      "categories": [
+        "bloggen"
+      ],
+      "topic": "ext-hoe-optimaliseer-ik-mijn-wordpress-site-voor-seo"
+    },
+    {
+      "slug": "hoe-voorkom-ik-dat-mijn-wordpress-website-wordt-gehackt",
+      "title": "Hoe voorkom ik dat mijn WordPress website wordt gehackt?",
+      "categories": [
+        "bloggen",
+        "wordpress",
+        "beveiliging"
+      ],
+      "topic": "ext-hoe-voorkom-ik-dat-mijn-wordpress-website-wordt-"
+    },
+    {
+      "slug": "hoe-kies-ik-het-juiste-hostingpakket",
+      "title": "Hoe kies ik het juiste hostingpakket?",
+      "categories": [
+        "hosting"
+      ],
+      "topic": "ext-hoe-kies-ik-het-juiste-hostingpakket"
+    },
+    {
+      "slug": "wat-is-directadmin-en-hoe-gebruik-ik-het",
+      "title": "Wat is DirectAdmin en hoe gebruik ik het?",
+      "categories": [
+        "hosting",
+        "directadmin"
+      ],
+      "topic": "ext-wat-is-directadmin-en-hoe-gebruik-ik-het"
+    },
+    {
+      "slug": "hoe-maak-ik-een-back-up-van-mijn-hostingaccount",
+      "title": "Hoe maak ik een back-up van mijn hostingaccount?",
+      "categories": [
+        "hosting"
+      ],
+      "topic": "ext-hoe-maak-ik-een-back-up-van-mijn-hostingaccount"
+    },
+    {
+      "slug": "hoe-beheer-ik-mijn-databases-in-directadmin",
+      "title": "Hoe beheer ik mijn databases in DirectAdmin?",
+      "categories": [
+        "hosting",
+        "directadmin"
+      ],
+      "topic": "ext-hoe-beheer-ik-mijn-databases-in-directadmin"
+    },
+    {
+      "slug": "hoe-stel-ik-cronjobs-in-via-directadmin",
+      "title": "Hoe stel ik cronjobs in via DirectAdmin?",
+      "categories": [
+        "hosting",
+        "directadmin"
+      ],
+      "topic": "ext-hoe-stel-ik-cronjobs-in-via-directadmin"
+    },
+    {
+      "slug": "hoe-wijzig-ik-de-php-instellingen-in-directadmin",
+      "title": "Hoe wijzig ik de PHP-instellingen in DirectAdmin?",
+      "categories": [
+        "hosting",
+        "directadmin"
+      ],
+      "topic": "ext-hoe-wijzig-ik-de-php-instellingen-in-directadmin"
+    },
+    {
+      "slug": "hoe-verplaats-ik-mijn-website-naar-triplezero-it-hosting",
+      "title": "Hoe verplaats ik mijn website naar TripleZero iT Hosting?",
+      "categories": [
+        "hosting"
+      ],
+      "topic": "ext-hoe-verplaats-ik-mijn-website-naar-triplezero-it"
+    },
+    {
+      "slug": "hoe-zorg-ik-voor-een-snelle-laadtijd-van-mijn-website",
+      "title": "Hoe zorg ik voor een snelle laadtijd van mijn website?",
+      "categories": [
+        "hosting"
+      ],
+      "topic": "ext-hoe-zorg-ik-voor-een-snelle-laadtijd-van-mijn-we"
+    },
+    {
+      "slug": "hoe-bescherm-ik-mijn-website-tegen-ddos-aanvallen",
+      "title": "Hoe bescherm ik mijn website tegen DDoS-aanvallen?",
+      "categories": [
+        "hosting"
+      ],
+      "topic": "ext-hoe-bescherm-ik-mijn-website-tegen-ddos-aanvalle"
+    },
+    {
+      "slug": "hoe-gebruik-ik-de-file-manager-in-directadmin",
+      "title": "Hoe gebruik ik de File Manager in DirectAdmin?",
+      "categories": [
+        "hosting",
+        "directadmin"
+      ],
+      "topic": "ext-hoe-gebruik-ik-de-file-manager-in-directadmin"
+    },
+    {
+      "slug": "hoe-kies-ik-het-juiste-e-mailpakket",
+      "title": "Hoe kies ik het juiste e-mailpakket?",
+      "categories": [
+        "e-mail"
+      ],
+      "topic": "ext-hoe-kies-ik-het-juiste-e-mailpakket"
+    },
+    {
+      "slug": "hoe-stel-ik-een-e-mailalias-in",
+      "title": "Hoe stel ik een e-mailalias in?",
+      "categories": [
+        "e-mail"
+      ],
+      "topic": "ext-hoe-stel-ik-een-e-mailalias-in"
+    },
+    {
+      "slug": "hoe-archiveer-ik-mijn-e-mail-om-ruimte-vrij-te-maken",
+      "title": "Hoe archiveer ik mijn e-mail om ruimte vrij te maken?",
+      "categories": [
+        "e-mail"
+      ],
+      "topic": "ext-hoe-archiveer-ik-mijn-e-mail-om-ruimte-vrij-te-m"
+    },
+    {
+      "slug": "hoe-verstuur-ik-een-nieuwsbrief-via-triplezero-it-hosting",
+      "title": "Hoe verstuur ik een nieuwsbrief via TripleZero iT Hosting?",
+      "categories": [
+        "e-mail"
+      ],
+      "topic": "ext-hoe-verstuur-ik-een-nieuwsbrief-via-triplezero-i"
+    },
+    {
+      "slug": "hoe-stel-ik-tweefactorauthenticatie-2fa-in-voor-mijn-e-mail",
+      "title": "Hoe stel ik tweefactorauthenticatie (2FA) in voor mijn e-mail?",
+      "categories": [
+        "e-mail"
+      ],
+      "topic": "ext-hoe-stel-ik-tweefactorauthenticatie-2fa-in-voor-"
+    },
+    {
+      "slug": "hoe-stel-ik-een-e-mailhandtekening-in-voor-alle-uitgaande-berichten",
+      "title": "Hoe stel ik een e-mailhandtekening in voor alle uitgaande berichten?",
+      "categories": [
+        "e-mail"
+      ],
+      "topic": "ext-hoe-stel-ik-een-e-mailhandtekening-in-voor-alle-"
+    },
+    {
+      "slug": "hoe-stel-ik-een-e-mail-in-op-een-samsung-telefoon",
+      "title": "Hoe stel ik een e-mail in op een Samsung-telefoon?",
+      "categories": [
+        "e-mail"
+      ],
+      "topic": "ext-hoe-stel-ik-een-e-mail-in-op-een-samsung-telefoo"
+    },
+    {
+      "slug": "hoe-los-ik-een-relay-not-permitted-fout-op",
+      "title": "Hoe los ik een 'Relay not permitted' fout op?",
+      "categories": [
+        "e-mail"
+      ],
+      "topic": "ext-hoe-los-ik-een-relay-not-permitted-fout-op"
+    },
+    {
+      "slug": "hoe-voorkom-ik-dat-mijn-e-mail-in-de-spambox-belandt",
+      "title": "Hoe voorkom ik dat mijn e-mail in de spambox belandt?",
+      "categories": [
+        "e-mail"
+      ],
+      "topic": "ext-hoe-voorkom-ik-dat-mijn-e-mail-in-de-spambox-bel"
+    },
+    {
+      "slug": "hoe-maak-ik-een-groeps-e-mailadres-aan",
+      "title": "Hoe maak ik een groeps-e-mailadres aan?",
+      "categories": [
+        "e-mail"
+      ],
+      "topic": "ext-hoe-maak-ik-een-groeps-e-mailadres-aan"
+    },
+    {
+      "slug": "hoe-wijzig-ik-bestandspermissies-chmod-in-de-file-manager",
+      "title": "Hoe wijzig ik bestandspermissies (CHMOD) in de File Manager?",
+      "categories": [
+        "directadmin"
+      ],
+      "topic": "ext-hoe-wijzig-ik-bestandspermissies-chmod-in-de-fil"
+    },
+    {
+      "slug": "hoe-gebruik-ik-de-dns-zone-editor-in-directadmin",
+      "title": "Hoe gebruik ik de DNS Zone Editor in DirectAdmin?",
+      "categories": [
+        "directadmin"
+      ],
+      "topic": "ext-hoe-gebruik-ik-de-dns-zone-editor-in-directadmin"
+    },
+    {
+      "slug": "hoe-voeg-ik-een-extra-ftp-account-toe-in-directadmin",
+      "title": "Hoe voeg ik een extra FTP-account toe in DirectAdmin?",
+      "categories": [
+        "directadmin"
+      ],
+      "topic": "ext-hoe-voeg-ik-een-extra-ftp-account-toe-in-directa"
+    },
+    {
+      "slug": "hoe-maak-ik-een-volledige-site-back-up-in-directadmin",
+      "title": "Hoe maak ik een volledige site-back-up in DirectAdmin?",
+      "categories": [
+        "directadmin"
+      ],
+      "topic": "ext-hoe-maak-ik-een-volledige-site-back-up-in-direct"
+    },
+    {
+      "slug": "hoe-gebruik-ik-de-brute-force-monitor-in-directadmin",
+      "title": "Hoe gebruik ik de Brute Force Monitor in DirectAdmin?",
+      "categories": [
+        "directadmin"
+      ],
+      "topic": "ext-hoe-gebruik-ik-de-brute-force-monitor-in-directa"
+    },
+    {
+      "slug": "hoe-voeg-ik-een-domeinalias-domain-pointer-toe-in-directadmin",
+      "title": "Hoe voeg ik een domeinalias (domain pointer) toe in DirectAdmin?",
+      "categories": [
+        "directadmin"
+      ],
+      "topic": "ext-hoe-voeg-ik-een-domeinalias-domain-pointer-toe-i"
+    },
+    {
+      "slug": "hoe-bekijk-ik-de-statistieken-van-mijn-website-in-directadmin",
+      "title": "Hoe bekijk ik de statistieken van mijn website in DirectAdmin?",
+      "categories": [
+        "directadmin"
+      ],
+      "topic": "ext-hoe-bekijk-ik-de-statistieken-van-mijn-website-i"
+    },
+    {
+      "slug": "hoe-blokkeer-ik-een-ip-adres-in-directadmin",
+      "title": "Hoe blokkeer ik een IP-adres in DirectAdmin?",
+      "categories": [
+        "directadmin"
+      ],
+      "topic": "ext-hoe-blokkeer-ik-een-ip-adres-in-directadmin"
+    },
+    {
+      "slug": "hoe-voeg-ik-een-extra-domein-toe-aan-mijn-hostingpakket",
+      "title": "Hoe voeg ik een extra domein toe aan mijn hostingpakket?",
+      "categories": [
+        "directadmin"
+      ],
+      "topic": "ext-hoe-voeg-ik-een-extra-domein-toe-aan-mijn-hostin"
+    },
+    {
+      "slug": "hoe-gebruik-ik-de-mysql-management-tool-in-directadmin",
+      "title": "Hoe gebruik ik de MySQL Management tool in DirectAdmin?",
+      "categories": [
+        "directadmin"
+      ],
+      "topic": "ext-hoe-gebruik-ik-de-mysql-management-tool-in-direc"
+    },
+    {
+      "slug": "hoe-maak-ik-een-sterk-wachtwoord-en-bewaar-ik-het-veilig",
+      "title": "Hoe maak ik een sterk wachtwoord en bewaar ik het veilig?",
+      "categories": [
+        "beveiliging",
+        "veilig-online"
+      ],
+      "topic": "ext-hoe-maak-ik-een-sterk-wachtwoord-en-bewaar-ik-he"
+    },
+    {
+      "slug": "hoe-herken-ik-een-nep-website-en-voorkom-ik-phishing",
+      "title": "Hoe herken ik een nep website en voorkom ik phishing?",
+      "categories": [
+        "beveiliging",
+        "veilig-online"
+      ],
+      "topic": "ext-hoe-herken-ik-een-nep-website-en-voorkom-ik-phis"
+    },
+    {
+      "slug": "hoe-herken-en-verwijder-ik-malware-van-mijn-website",
+      "title": "Hoe herken en verwijder ik malware van mijn website?",
+      "categories": [
+        "beveiliging"
+      ],
+      "topic": "ext-hoe-herken-en-verwijder-ik-malware-van-mijn-webs"
+    },
+    {
+      "slug": "hoe-beveilig-ik-mijn-mobiele-apparaten",
+      "title": "Hoe beveilig ik mijn mobiele apparaten?",
+      "categories": [
+        "beveiliging"
+      ],
+      "topic": "ext-hoe-beveilig-ik-mijn-mobiele-apparaten"
+    },
+    {
+      "slug": "hoe-bescherm-ik-mijn-kinderen-online",
+      "title": "Hoe bescherm ik mijn kinderen online?",
+      "categories": [
+        "beveiliging",
+        "veilig-online"
+      ],
+      "topic": "ext-hoe-bescherm-ik-mijn-kinderen-online"
+    },
+    {
+      "slug": "hoe-stel-ik-een-firewall-in-op-mijn-website-zonder-plugin",
+      "title": "Hoe stel ik een firewall in op mijn website (zonder plugin)?",
+      "categories": [
+        "beveiliging"
+      ],
+      "topic": "ext-hoe-stel-ik-een-firewall-in-op-mijn-website-zond"
+    },
+    {
+      "slug": "hoe-beveilig-ik-mijn-database-tegen-sql-injecties",
+      "title": "Hoe beveilig ik mijn database tegen SQL-injecties?",
+      "categories": [
+        "beveiliging"
+      ],
+      "topic": "ext-hoe-beveilig-ik-mijn-database-tegen-sql-injectie"
+    },
+    {
+      "slug": "hoe-stel-ik-een-content-security-policy-csp-in",
+      "title": "Hoe stel ik een Content Security Policy (CSP) in?",
+      "categories": [
+        "beveiliging"
+      ],
+      "topic": "ext-hoe-stel-ik-een-content-security-policy-csp-in"
+    },
+    {
+      "slug": "hoe-houd-ik-mijn-plugins-en-thema-s-veilig-en-up-to-date",
+      "title": "Hoe houd ik mijn plugins en thema's veilig en up-to-date?",
+      "categories": [
+        "beveiliging"
+      ],
+      "topic": "ext-hoe-houd-ik-mijn-plugins-en-thema-s-veilig-en-up"
+    },
+    {
+      "slug": "hoe-zorg-ik-voor-een-veilige-verbinding-met-sftp-in-plaats-van-ftp",
+      "title": "Hoe zorg ik voor een veilige verbinding met SFTP in plaats van FTP?",
+      "categories": [
+        "beveiliging"
+      ],
+      "topic": "ext-hoe-zorg-ik-voor-een-veilige-verbinding-met-sftp"
+    },
+    {
+      "slug": "wat-is-het-klantenpanel-en-waarvoor-gebruik-ik-het",
+      "title": "Wat is het klantenpanel en waarvoor gebruik ik het?",
+      "categories": [
+        "crm-klantenpanel"
+      ],
+      "topic": "ext-wat-is-het-klantenpanel-en-waarvoor-gebruik-ik-h"
+    },
+    {
+      "slug": "hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode",
+      "title": "Hoe wijzig ik mijn factuurgegevens en betaalmethode?",
+      "categories": [
+        "crm-klantenpanel"
+      ],
+      "topic": "ext-hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmeth"
+    },
+    {
+      "slug": "hoe-betaal-ik-mijn-facturen-in-het-klantenpanel",
+      "title": "Hoe betaal ik mijn facturen in het klantenpanel?",
+      "categories": [
+        "crm-klantenpanel"
+      ],
+      "topic": "ext-hoe-betaal-ik-mijn-facturen-in-het-klantenpanel"
+    },
+    {
+      "slug": "hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel",
+      "title": "Hoe stel ik een ticket in voor support via het klantenpanel?",
+      "categories": [
+        "crm-klantenpanel",
+        "support"
+      ],
+      "topic": "ext-hoe-stel-ik-een-ticket-in-voor-support-via-het-k"
+    },
+    {
+      "slug": "hoe-schakel-ik-tweefactorauthenticatie-2fa-in-voor-mijn-klantenpanel",
+      "title": "Hoe schakel ik tweefactorauthenticatie (2FA) in voor mijn klantenpanel?",
+      "categories": [
+        "crm-klantenpanel",
+        "beveiliging"
+      ],
+      "topic": "ext-hoe-schakel-ik-tweefactorauthenticatie-2fa-in-vo"
+    },
+    {
+      "slug": "hoe-wijzig-ik-mijn-wachtwoord-voor-het-klantenpanel",
+      "title": "Hoe wijzig ik mijn wachtwoord voor het klantenpanel?",
+      "categories": [
+        "crm-klantenpanel"
+      ],
+      "topic": "ext-hoe-wijzig-ik-mijn-wachtwoord-voor-het-klantenpa"
+    },
+    {
+      "slug": "hoe-bekijk-en-download-ik-mijn-facturen-in-het-klantenpanel",
+      "title": "Hoe bekijk en download ik mijn facturen in het klantenpanel?",
+      "categories": [
+        "crm-klantenpanel"
+      ],
+      "topic": "ext-hoe-bekijk-en-download-ik-mijn-facturen-in-het-k"
+    },
+    {
+      "slug": "hoe-voeg-ik-een-extra-gebruiker-toe-aan-mijn-klantenpanel",
+      "title": "Hoe voeg ik een extra gebruiker toe aan mijn klantenpanel?",
+      "categories": [
+        "crm-klantenpanel"
+      ],
+      "topic": "ext-hoe-voeg-ik-een-extra-gebruiker-toe-aan-mijn-kla"
+    },
+    {
+      "slug": "hoe-kies-ik-het-juiste-wordpress-thema",
+      "title": "Hoe kies ik het juiste WordPress-thema?",
+      "categories": [
+        "wordpress"
+      ],
+      "topic": "ext-hoe-kies-ik-het-juiste-wordpress-thema"
+    },
+    {
+      "slug": "hoe-voeg-ik-een-google-analytics-trackingcode-toe-aan-wordpress",
+      "title": "Hoe voeg ik een Google Analytics-trackingcode toe aan WordPress?",
+      "categories": [
+        "wordpress"
+      ],
+      "topic": "ext-hoe-voeg-ik-een-google-analytics-trackingcode-to"
+    },
+    {
+      "slug": "hoe-voeg-ik-een-menu-toe-in-wordpress",
+      "title": "Hoe voeg ik een menu toe in WordPress?",
+      "categories": [
+        "wordpress"
+      ],
+      "topic": "ext-hoe-voeg-ik-een-menu-toe-in-wordpress"
+    },
+    {
+      "slug": "hoe-voeg-ik-afbeeldingen-en-media-toe-in-wordpress",
+      "title": "Hoe voeg ik afbeeldingen en media toe in WordPress?",
+      "categories": [
+        "wordpress"
+      ],
+      "topic": "ext-hoe-voeg-ik-afbeeldingen-en-media-toe-in-wordpre"
+    },
+    {
+      "slug": "hoe-voeg-ik-een-youtube-video-toe-in-wordpress",
+      "title": "Hoe voeg ik een YouTube-video toe in WordPress?",
+      "categories": [
+        "wordpress"
+      ],
+      "topic": "ext-hoe-voeg-ik-een-youtube-video-toe-in-wordpress"
+    },
+    {
+      "slug": "hoe-maak-ik-een-wordpress-website-met-een-page-builder",
+      "title": "Hoe maak ik een WordPress website met een page builder?",
+      "categories": [
+        "wordpress"
+      ],
+      "topic": "ext-hoe-maak-ik-een-wordpress-website-met-een-page-b"
+    },
+    {
+      "slug": "hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress",
+      "title": "Hoe voeg ik een GDPR/AVG-cookiebanner toe in WordPress?",
+      "categories": [
+        "wordpress"
+      ],
+      "topic": "ext-hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wor"
+    },
+    {
+      "slug": "hoe-maak-ik-een-wordpress-website-meertalig",
+      "title": "Hoe maak ik een WordPress website meertalig?",
+      "categories": [
+        "wordpress"
+      ],
+      "topic": "ext-hoe-maak-ik-een-wordpress-website-meertalig"
+    },
+    {
+      "slug": "hoe-verplaats-ik-een-wordpress-website-van-een-staging-omgeving-naar-de-live-website",
+      "title": "Hoe verplaats ik een WordPress website van een staging-omgeving naar de live website?",
+      "categories": [
+        "wordpress"
+      ],
+      "topic": "ext-hoe-verplaats-ik-een-wordpress-website-van-een-s"
+    },
+    {
+      "slug": "hoe-voeg-ik-een-webshop-toe-aan-wordpress-met-woocommerce",
+      "title": "Hoe voeg ik een webshop toe aan WordPress met WooCommerce?",
+      "categories": [
+        "wordpress",
+        "bloggen"
+      ],
+      "topic": "ext-hoe-voeg-ik-een-webshop-toe-aan-wordpress-met-wo"
+    },
+    {
+      "slug": "waarom-is-het-belangrijk-om-veilig-online-te-zijn",
+      "title": "Waarom is het belangrijk om Veilig Online te zijn?",
+      "categories": [
+        "veilig-online"
+      ],
+      "topic": "ext-waarom-is-het-belangrijk-om-veilig-online-te-zij"
+    },
+    {
+      "slug": "hoe-bescherm-ik-mijn-online-accounts-tegen-hackers",
+      "title": "Hoe bescherm ik mijn online accounts tegen hackers?",
+      "categories": [
+        "veilig-online"
+      ],
+      "topic": "ext-hoe-bescherm-ik-mijn-online-accounts-tegen-hacke"
+    },
+    {
+      "slug": "hoe-herken-en-voorkom-ik-een-malware-infectie",
+      "title": "Hoe herken en voorkom ik een malware-infectie?",
+      "categories": [
+        "veilig-online"
+      ],
+      "topic": "ext-hoe-herken-en-voorkom-ik-een-malware-infectie"
+    },
+    {
+      "slug": "hoe-bescherm-ik-mijn-gegevens-bij-een-datalek",
+      "title": "Hoe bescherm ik mijn gegevens bij een datalek?",
+      "categories": [
+        "veilig-online"
+      ],
+      "topic": "ext-hoe-bescherm-ik-mijn-gegevens-bij-een-datalek"
+    },
+    {
+      "slug": "hoe-beveilig-ik-mijn-netwerk-en-router",
+      "title": "Hoe beveilig ik mijn netwerk en router?",
+      "categories": [
+        "veilig-online"
+      ],
+      "topic": "ext-hoe-beveilig-ik-mijn-netwerk-en-router"
+    },
+    {
+      "slug": "wat-is-social-engineering-en-hoe-bescherm-ik-me-ertegen",
+      "title": "Wat is social engineering en hoe bescherm ik me ertegen?",
+      "categories": [
+        "veilig-online"
+      ],
+      "topic": "ext-wat-is-social-engineering-en-hoe-bescherm-ik-me-"
+    },
+    {
+      "slug": "hoe-stel-ik-een-sterk-wachtwoord-in-en-bewaar-ik-het-veilig",
+      "title": "Hoe stel ik een sterk wachtwoord in en bewaar ik het veilig?",
+      "categories": [
+        "veilig-online",
+        "beveiliging"
+      ],
+      "topic": "ext-hoe-stel-ik-een-sterk-wachtwoord-in-en-bewaar-ik"
+    },
+    {
+      "slug": "hoe-gebruik-ik-een-vpn-voor-een-veilige-internetverbinding",
+      "title": "Hoe gebruik ik een VPN voor een veilige internetverbinding?",
+      "categories": [
+        "veilig-online"
+      ],
+      "topic": "ext-hoe-gebruik-ik-een-vpn-voor-een-veilige-internet"
+    },
+    {
+      "slug": "hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting",
+      "title": "Hoe neem ik contact op met de support van TripleZero iT Hosting?",
+      "categories": [
+        "support"
+      ],
+      "topic": "ext-hoe-neem-ik-contact-op-met-de-support-van-triple"
+    },
+    {
+      "slug": "hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel",
+      "title": "Hoe maak ik een support ticket aan in het klantenpanel?",
+      "categories": [
+        "support",
+        "crm-klantenpanel"
+      ],
+      "topic": "ext-hoe-maak-ik-een-support-ticket-aan-in-het-klante"
+    },
+    {
+      "slug": "hoe-werkt-de-belafspraak-bij-triplezero-it-hosting",
+      "title": "Hoe werkt de belafspraak bij TripleZero iT Hosting?",
+      "categories": [
+        "support"
+      ],
+      "topic": "ext-hoe-werkt-de-belafspraak-bij-triplezero-it-hosti"
+    },
+    {
+      "slug": "wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support",
+      "title": "Wat kan ik zelf doen voordat ik contact opneem met support?",
+      "categories": [
+        "support"
+      ],
+      "topic": "ext-wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-m"
+    },
+    {
+      "slug": "hoe-gebruik-ik-de-triplezero-it-hosting-app-voor-support",
+      "title": "Hoe gebruik ik de TripleZero iT Hosting App voor support?",
+      "categories": [
+        "support"
+      ],
+      "topic": "ext-hoe-gebruik-ik-de-triplezero-it-hosting-app-voor"
+    },
+    {
+      "slug": "hoe-werkt-de-samenwerking-met-teamviewer-voor-support",
+      "title": "Hoe werkt de samenwerking met TeamViewer voor support?",
+      "categories": [
+        "support"
+      ],
+      "topic": "ext-hoe-werkt-de-samenwerking-met-teamviewer-voor-su"
+    },
+    {
+      "slug": "hoe-kan-ik-mijn-supportvraag-het-beste-formuleren",
+      "title": "Hoe kan ik mijn supportvraag het beste formuleren?",
+      "categories": [
+        "support"
+      ],
+      "topic": "ext-hoe-kan-ik-mijn-supportvraag-het-beste-formulere"
+    },
+    {
+      "slug": "wat-zijn-de-support-tijden-van-triplezero-it-hosting",
+      "title": "Wat zijn de support tijden van TripleZero iT Hosting?",
+      "categories": [
+        "support"
+      ],
+      "topic": "ext-wat-zijn-de-support-tijden-van-triplezero-it-hos"
+    },
+    {
+      "slug": "hoe-worden-back-ups-gemaakt-en-hoe-vraag-ik-een-back-up-aan",
+      "title": "Hoe worden back-ups gemaakt en hoe vraag ik een back-up aan?",
+      "categories": [
+        "support"
+      ],
+      "topic": "ext-hoe-worden-back-ups-gemaakt-en-hoe-vraag-ik-een-"
+    },
+    {
+      "slug": "hoe-werkt-de-samenwerking-met-externe-specialisten",
+      "title": "Hoe werkt de samenwerking met externe specialisten?",
+      "categories": [
+        "support"
+      ],
+      "topic": "ext-hoe-werkt-de-samenwerking-met-externe-specialist"
+    },
+    {
+      "slug": "wat-is-plesk-en-hoe-log-ik-in",
+      "title": "Wat is Plesk en hoe log ik in?",
+      "categories": [
+        "plesk"
+      ],
+      "topic": "ext-wat-is-plesk-en-hoe-log-ik-in"
+    },
+    {
+      "slug": "hoe-voeg-ik-een-domein-toe-in-plesk",
+      "title": "Hoe voeg ik een domein toe in Plesk?",
+      "categories": [
+        "plesk"
+      ],
+      "topic": "ext-hoe-voeg-ik-een-domein-toe-in-plesk"
+    },
+    {
+      "slug": "hoe-maak-ik-een-e-mailaccount-aan-in-plesk",
+      "title": "Hoe maak ik een e-mailaccount aan in Plesk?",
+      "categories": [
+        "plesk"
+      ],
+      "topic": "ext-hoe-maak-ik-een-e-mailaccount-aan-in-plesk"
+    },
+    {
+      "slug": "hoe-maak-ik-een-database-aan-in-plesk",
+      "title": "Hoe maak ik een database aan in Plesk?",
+      "categories": [
+        "plesk"
+      ],
+      "topic": "ext-hoe-maak-ik-een-database-aan-in-plesk"
+    },
+    {
+      "slug": "hoe-installeer-ik-wordpress-in-plesk",
+      "title": "Hoe installeer ik WordPress in Plesk?",
+      "categories": [
+        "plesk"
+      ],
+      "topic": "ext-hoe-installeer-ik-wordpress-in-plesk"
+    },
+    {
+      "slug": "hoe-maak-ik-een-back-up-van-mijn-website-in-plesk",
+      "title": "Hoe maak ik een back-up van mijn website in Plesk?",
+      "categories": [
+        "plesk"
+      ],
+      "topic": "ext-hoe-maak-ik-een-back-up-van-mijn-website-in-ples"
+    },
+    {
+      "slug": "hoe-wijzig-ik-de-php-versie-in-plesk",
+      "title": "Hoe wijzig ik de PHP-versie in Plesk?",
+      "categories": [
+        "plesk"
+      ],
+      "topic": "ext-hoe-wijzig-ik-de-php-versie-in-plesk"
+    },
+    {
+      "slug": "hoe-beheer-ik-dns-records-in-plesk",
+      "title": "Hoe beheer ik DNS-records in Plesk?",
+      "categories": [
+        "plesk"
+      ],
+      "topic": "ext-hoe-beheer-ik-dns-records-in-plesk"
+    },
+    {
+      "slug": "hoe-beveilig-ik-mijn-website-in-plesk",
+      "title": "Hoe beveilig ik mijn website in Plesk?",
+      "categories": [
+        "plesk"
+      ],
+      "topic": "ext-hoe-beveilig-ik-mijn-website-in-plesk"
+    },
+    {
+      "slug": "hoe-verplaats-ik-een-website-naar-een-ander-domein-in-plesk",
+      "title": "Hoe verplaats ik een website naar een ander domein in Plesk?",
+      "categories": [
+        "plesk"
+      ],
+      "topic": "ext-hoe-verplaats-ik-een-website-naar-een-ander-dome"
+    },
+    {
+      "slug": "wat-is-de-ai-scan-van-triplezero-it-hosting",
+      "title": "Wat is de AI-scan van TripleZero iT Hosting?",
+      "categories": [
+        "ai-scan"
+      ],
+      "topic": "tz-aiscan-what"
+    },
+    {
+      "slug": "hoe-start-ik-een-ai-scan-op-mijn-website",
+      "title": "Hoe start ik een AI-scan op mijn website?",
+      "categories": [
+        "ai-scan"
+      ],
+      "topic": "tz-aiscan-start"
+    },
+    {
+      "slug": "hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness",
+      "title": "Hoe lees ik de AI-scan scores (AEO, GEO, SEO, Performance en AI Readiness)?",
+      "categories": [
+        "ai-scan",
+        "aeo-geo-seo"
+      ],
+      "topic": "tz-aiscan-scores"
+    },
+    {
+      "slug": "wat-betekenen-een-lage-aeo-score-en-hoe-verbeter-ik-die",
+      "title": "Wat betekenen een lage AEO-score en hoe verbeter ik die?",
+      "categories": [
+        "ai-scan",
+        "aeo-geo-seo"
+      ],
+      "topic": "tz-aiscan-aeo-low"
+    },
+    {
+      "slug": "wat-betekenen-een-lage-geo-score-en-hoe-verbeter-ik-lokale-vindbaarheid",
+      "title": "Wat betekenen een lage GEO-score en hoe verbeter ik lokale vindbaarheid?",
+      "categories": [
+        "ai-scan",
+        "aeo-geo-seo"
+      ],
+      "topic": "tz-aiscan-geo-low"
+    },
+    {
+      "slug": "wat-betekenen-een-lage-seo-score-en-hoe-verbeter-ik-die",
+      "title": "Wat betekenen een lage SEO-score en hoe verbeter ik die?",
+      "categories": [
+        "ai-scan",
+        "aeo-geo-seo"
+      ],
+      "topic": "tz-aiscan-seo-low"
+    },
+    {
+      "slug": "wat-is-ai-readiness-in-de-scan-en-waarom-is-dat-belangrijk",
+      "title": "Wat is AI Readiness in de scan en waarom is dat belangrijk?",
+      "categories": [
+        "ai-scan"
+      ],
+      "topic": "tz-aiscan-readiness"
+    },
+    {
+      "slug": "waar-vind-ik-mijn-eerdere-ai-scans-in-het-dashboard-seo-analyse",
+      "title": "Waar vind ik mijn eerdere AI-scans in het dashboard (SEO-analyse)?",
+      "categories": [
+        "ai-scan",
+        "crm-klantenpanel"
+      ],
+      "topic": "tz-aiscan-history"
+    },
+    {
+      "slug": "ai-scan-versus-een-volledig-aeo-geo-seo-traject-wat-is-het-verschil",
+      "title": "AI-scan versus een volledig AEO/GEO/SEO-traject: wat is het verschil?",
+      "categories": [
+        "ai-scan",
+        "aeo-geo-seo"
+      ],
+      "topic": "tz-aiscan-vs-full"
+    },
+    {
+      "slug": "welke-vervolgstappen-zet-ik-na-mijn-ai-scan",
+      "title": "Welke vervolgstappen zet ik na mijn AI-scan?",
+      "categories": [
+        "ai-scan",
+        "support"
+      ],
+      "topic": "tz-aiscan-next"
+    },
+    {
+      "slug": "wat-is-aeo-answer-engine-optimization",
+      "title": "Wat is AEO (Answer Engine Optimization)?",
+      "categories": [
+        "aeo-geo-seo"
+      ],
+      "topic": "tz-aeo-what"
+    },
+    {
+      "slug": "wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant",
+      "title": "Wat is GEO (Geographic SEO) en voor wie is het relevant?",
+      "categories": [
+        "aeo-geo-seo"
+      ],
+      "topic": "tz-geo-what"
+    },
+    {
+      "slug": "wat-is-klassieke-seo-en-hoe-werkt-triplezero-it-hosting-daarmee",
+      "title": "Wat is klassieke SEO en hoe werkt TripleZero iT Hosting daarmee?",
+      "categories": [
+        "aeo-geo-seo"
+      ],
+      "topic": "tz-seo-what"
+    },
+    {
+      "slug": "hoe-hangen-aeo-geo-en-seo-samen",
+      "title": "Hoe hangen AEO, GEO en SEO samen?",
+      "categories": [
+        "aeo-geo-seo"
+      ],
+      "topic": "tz-aeo-geo-seo-together"
+    },
+    {
+      "slug": "hoe-bereid-ik-mijn-content-voor-op-antwoordengines-faq-entities-structured-data",
+      "title": "Hoe bereid ik mijn content voor op antwoordengines (FAQ, entities, structured data)?",
+      "categories": [
+        "aeo-geo-seo"
+      ],
+      "topic": "tz-aeo-content"
+    },
+    {
+      "slug": "hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap",
+      "title": "Hoe verbeter ik mijn lokale vindbaarheid (Google Business Profile en NAP)?",
+      "categories": [
+        "aeo-geo-seo"
+      ],
+      "topic": "tz-geo-local"
+    },
+    {
+      "slug": "hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting",
+      "title": "Hoe bestel of start ik SEO-optimalisatie via TripleZero iT Hosting?",
+      "categories": [
+        "aeo-geo-seo",
+        "shop-en-pakketten"
+      ],
+      "topic": "tz-seo-order"
+    },
+    {
+      "slug": "wat-zit-er-in-aeo-geo-seo-basic-versus-plus-in-de-pakketten",
+      "title": "Wat zit er in AEO/GEO/SEO basic versus plus in de pakketten?",
+      "categories": [
+        "aeo-geo-seo",
+        "shop-en-pakketten"
+      ],
+      "topic": "tz-aeo-basic-plus"
+    },
+    {
+      "slug": "hoe-meet-ik-of-aeo-geo-of-seo-werk-resultaat-oplevert",
+      "title": "Hoe meet ik of AEO-, GEO- of SEO-werk resultaat oplevert?",
+      "categories": [
+        "aeo-geo-seo"
+      ],
+      "topic": "tz-aeo-measure"
+    },
+    {
+      "slug": "veelgemaakte-fouten-bij-seo-die-ook-aeo-en-geo-schaden",
+      "title": "Veelgemaakte fouten bij SEO die ook AEO en GEO schaden",
+      "categories": [
+        "aeo-geo-seo"
+      ],
+      "topic": "tz-aeo-mistakes"
+    },
+    {
+      "slug": "wat-is-het-verschil-tussen-business-en-extra-growth",
+      "title": "Wat is het verschil tussen Business en Extra Growth?",
+      "categories": [
+        "shop-en-pakketten"
+      ],
+      "topic": "tz-shop-business-growth"
+    },
+    {
+      "slug": "wat-zit-er-in-het-business-pakket-van-triplezero-it-hosting",
+      "title": "Wat zit er in het Business-pakket van TripleZero iT Hosting?",
+      "categories": [
+        "shop-en-pakketten"
+      ],
+      "topic": "tz-shop-business"
+    },
+    {
+      "slug": "wat-zit-er-in-het-extra-growth-pakket",
+      "title": "Wat zit er in het Extra Growth-pakket?",
+      "categories": [
+        "shop-en-pakketten"
+      ],
+      "topic": "tz-shop-growth"
+    },
+    {
+      "slug": "hoe-bestel-ik-een-pakket-in-de-shop",
+      "title": "Hoe bestel ik een pakket in de shop?",
+      "categories": [
+        "shop-en-pakketten"
+      ],
+      "topic": "tz-shop-order"
+    },
+    {
+      "slug": "hoe-werkt-de-checkout-en-welke-betaalmethoden-zijn-er",
+      "title": "Hoe werkt de checkout en welke betaalmethoden zijn er?",
+      "categories": [
+        "shop-en-pakketten"
+      ],
+      "topic": "tz-shop-checkout"
+    },
+    {
+      "slug": "hoe-werkt-btw-21-op-shopprijzen-bij-triplezero-it-hosting",
+      "title": "Hoe werkt btw (21%) op shopprijzen bij TripleZero iT Hosting?",
+      "categories": [
+        "shop-en-pakketten"
+      ],
+      "topic": "tz-shop-vat"
+    },
+    {
+      "slug": "maandelijkse-versus-jaarlijkse-betaling-hoe-werkt-de-korting",
+      "title": "Maandelijkse versus jaarlijkse betaling: hoe werkt de korting?",
+      "categories": [
+        "shop-en-pakketten"
+      ],
+      "topic": "tz-shop-yearly"
+    },
+    {
+      "slug": "wat-gebeurt-er-na-een-geslaagde-betaling-in-de-shop",
+      "title": "Wat gebeurt er na een geslaagde betaling in de shop?",
+      "categories": [
+        "shop-en-pakketten",
+        "crm-klantenpanel"
+      ],
+      "topic": "tz-shop-after"
+    },
+    {
+      "slug": "kan-ik-losse-diensten-bestellen-naast-een-pakket",
+      "title": "Kan ik losse diensten bestellen naast een pakket?",
+      "categories": [
+        "shop-en-pakketten"
+      ],
+      "topic": "tz-shop-addons"
+    },
+    {
+      "slug": "wanneer-kies-ik-enterprise-of-contact-in-plaats-van-een-standaardpakket",
+      "title": "Wanneer kies ik Enterprise of contact in plaats van een standaardpakket?",
+      "categories": [
+        "shop-en-pakketten"
+      ],
+      "topic": "tz-shop-enterprise"
+    },
+    {
+      "slug": "hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps",
+      "title": "Hoe kies ik tussen shared hosting, WordPress hosting en VPS?",
+      "categories": [
+        "shop-en-pakketten",
+        "hosting"
+      ],
+      "topic": "tz-host-choose"
+    },
+    {
+      "slug": "wat-is-shared-hosting-basic-plus-en-business",
+      "title": "Wat is shared hosting Basic, Plus en Business?",
+      "categories": [
+        "shop-en-pakketten",
+        "hosting"
+      ],
+      "topic": "tz-host-shared"
+    },
+    {
+      "slug": "wat-is-wordpress-hosting-basic-plus-en-pro",
+      "title": "Wat is WordPress hosting Basic, Plus en Pro?",
+      "categories": [
+        "shop-en-pakketten",
+        "hosting",
+        "wordpress"
+      ],
+      "topic": "tz-host-wp"
+    },
+    {
+      "slug": "wat-is-vps-hosting-basic-plus-en-business",
+      "title": "Wat is VPS hosting Basic, Plus en Business?",
+      "categories": [
+        "shop-en-pakketten",
+        "hosting"
+      ],
+      "topic": "tz-host-vps"
+    },
+    {
+      "slug": "wanneer-stap-ik-over-van-shared-naar-vps",
+      "title": "Wanneer stap ik over van shared naar VPS?",
+      "categories": [
+        "shop-en-pakketten",
+        "hosting"
+      ],
+      "topic": "tz-host-upgrade"
+    },
+    {
+      "slug": "hosting-in-business-extra-growth-versus-losse-hosting-in-de-shop",
+      "title": "Hosting in Business/Extra Growth versus losse hosting in de shop",
+      "categories": [
+        "shop-en-pakketten",
+        "hosting"
+      ],
+      "topic": "tz-host-in-plan"
+    },
+    {
+      "slug": "hoe-werkt-live-chat-op-de-website-van-triplezero-it-hosting",
+      "title": "Hoe werkt live chat op de website van TripleZero iT Hosting?",
+      "categories": [
+        "support"
+      ],
+      "topic": "tz-chat-what"
+    },
+    {
+      "slug": "hoe-open-ik-een-live-chat-gesprek-als-gast",
+      "title": "Hoe open ik een live-chat gesprek als gast?",
+      "categories": [
+        "support"
+      ],
+      "topic": "tz-chat-start"
+    },
+    {
+      "slug": "hoe-wordt-een-live-chat-een-supportticket",
+      "title": "Hoe wordt een live chat een supportticket?",
+      "categories": [
+        "support",
+        "crm-klantenpanel"
+      ],
+      "topic": "tz-chat-to-ticket"
+    },
+    {
+      "slug": "hoe-open-ik-een-ticket-vanuit-mijn-dashboard-of-crm",
+      "title": "Hoe open ik een ticket vanuit mijn dashboard of CRM?",
+      "categories": [
+        "support",
+        "crm-klantenpanel"
+      ],
+      "topic": "tz-ticket-open"
+    },
+    {
+      "slug": "welke-ticketstatussen-zijn-er-open-in-behandeling-wachtend-opgelost-gesloten",
+      "title": "Welke ticketstatussen zijn er (Open, In behandeling, Wachtend, Opgelost, Gesloten)?",
+      "categories": [
+        "support",
+        "crm-klantenpanel"
+      ],
+      "topic": "tz-ticket-status"
+    },
+    {
+      "slug": "hoe-beantwoord-ik-berichten-in-een-bestaand-ticket",
+      "title": "Hoe beantwoord ik berichten in een bestaand ticket?",
+      "categories": [
+        "support",
+        "crm-klantenpanel"
+      ],
+      "topic": "tz-ticket-reply"
+    },
+    {
+      "slug": "waar-vind-ik-al-mijn-tickets-in-het-klantenportaal",
+      "title": "Waar vind ik al mijn tickets in het klantenportaal?",
+      "categories": [
+        "support",
+        "crm-klantenpanel"
+      ],
+      "topic": "tz-ticket-list"
+    },
+    {
+      "slug": "chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer",
+      "title": "Chat versus ticket versus belafspraak: wat kies ik wanneer?",
+      "categories": [
+        "support"
+      ],
+      "topic": "tz-support-channels"
+    },
+    {
+      "slug": "wat-zijn-ai-agents-bij-triplezero-it-hosting",
+      "title": "Wat zijn AI-agents bij TripleZero iT Hosting?",
+      "categories": [
+        "ai-agents"
+      ],
+      "topic": "tz-agents-what"
+    },
+    {
+      "slug": "hoeveel-ai-agents-krijg-ik-in-business-versus-extra-growth",
+      "title": "Hoeveel AI-agents krijg ik in Business versus Extra Growth?",
+      "categories": [
+        "ai-agents",
+        "shop-en-pakketten"
+      ],
+      "topic": "tz-agents-quota"
+    },
+    {
+      "slug": "hoe-open-ik-het-ai-agents-overzicht-in-mijn-account",
+      "title": "Hoe open ik het AI-agents overzicht in mijn account?",
+      "categories": [
+        "ai-agents",
+        "crm-klantenpanel"
+      ],
+      "topic": "tz-agents-open"
+    },
+    {
+      "slug": "hoe-start-pauzeer-of-zet-ik-een-ai-agent-op-idle",
+      "title": "Hoe start, pauzeer of zet ik een AI-agent op idle?",
+      "categories": [
+        "ai-agents"
+      ],
+      "topic": "tz-agents-control"
+    },
+    {
+      "slug": "wat-betekenen-de-statussen-running-paused-en-idle",
+      "title": "Wat betekenen de statussen RUNNING, PAUSED en IDLE?",
+      "categories": [
+        "ai-agents"
+      ],
+      "topic": "tz-agents-status"
+    },
+    {
+      "slug": "wat-doe-ik-als-ik-nog-geen-ai-agents-zie-in-mijn-dashboard",
+      "title": "Wat doe ik als ik nog geen AI-agents zie in mijn dashboard?",
+      "categories": [
+        "ai-agents",
+        "support"
+      ],
+      "topic": "tz-agents-empty"
+    },
+    {
+      "slug": "hoe-passen-ai-agents-bij-aeo-geo-seo-en-marketing",
+      "title": "Hoe passen AI-agents bij AEO, GEO, SEO en marketing?",
+      "categories": [
+        "ai-agents",
+        "aeo-geo-seo"
+      ],
+      "topic": "tz-agents-use"
+    },
+    {
+      "slug": "hoe-werkt-het-moderne-klantendashboard-van-triplezero-it-hosting",
+      "title": "Hoe werkt het moderne klantendashboard van TripleZero iT Hosting?",
+      "categories": [
+        "crm-klantenpanel"
+      ],
+      "topic": "tz-crm-dashboard"
+    },
+    {
+      "slug": "hoe-bekijk-ik-mijn-openstaande-facturen",
+      "title": "Hoe bekijk ik mijn openstaande facturen?",
+      "categories": [
+        "crm-klantenpanel"
+      ],
+      "topic": "tz-crm-invoices-view"
+    },
+    {
+      "slug": "hoe-download-of-raadpleeg-ik-factuurdetails",
+      "title": "Hoe download of raadpleeg ik factuurdetails?",
+      "categories": [
+        "crm-klantenpanel"
+      ],
+      "topic": "tz-crm-invoices-detail"
+    },
+    {
+      "slug": "hoe-gebruik-ik-berichten-in-het-crm-inbox-en-opstellen",
+      "title": "Hoe gebruik ik berichten in het CRM (inbox en opstellen)?",
+      "categories": [
+        "crm-klantenpanel"
+      ],
+      "topic": "tz-crm-messages"
+    },
+    {
+      "slug": "hoe-bekijk-ik-ongelezen-berichten-vanaf-het-crm-overzicht",
+      "title": "Hoe bekijk ik ongelezen berichten vanaf het CRM-overzicht?",
+      "categories": [
+        "crm-klantenpanel"
+      ],
+      "topic": "tz-crm-unread"
+    },
+    {
+      "slug": "hoe-maak-ik-een-project-aan-website-seo-ads-ai",
+      "title": "Hoe maak ik een project aan (website, SEO, ads, AI)?",
+      "categories": [
+        "crm-klantenpanel"
+      ],
+      "topic": "tz-crm-projects-create"
+    },
+    {
+      "slug": "hoe-volg-ik-de-status-van-mijn-projecten",
+      "title": "Hoe volg ik de status van mijn projecten?",
+      "categories": [
+        "crm-klantenpanel"
+      ],
+      "topic": "tz-crm-projects-status"
+    },
+    {
+      "slug": "welke-snelle-links-heeft-mijn-dashboard-tickets-crm-ai-scan-agents",
+      "title": "Welke snelle links heeft mijn dashboard (tickets, CRM, AI-scan, agents)?",
+      "categories": [
+        "crm-klantenpanel",
+        "ai-scan",
+        "ai-agents"
+      ],
+      "topic": "tz-crm-quicklinks"
+    },
+    {
+      "slug": "verschil-tussen-klassiek-klantenpanel-taken-en-het-crm-dashboard",
+      "title": "Verschil tussen klassiek klantenpanel-taken en het CRM-dashboard",
+      "categories": [
+        "crm-klantenpanel"
+      ],
+      "topic": "tz-crm-classic-vs-new"
+    },
+    {
+      "slug": "hoe-vraag-ik-support-het-snelst-aan-vanuit-het-crm",
+      "title": "Hoe vraag ik support het snelst aan vanuit het CRM?",
+      "categories": [
+        "crm-klantenpanel",
+        "support"
+      ],
+      "topic": "tz-crm-support-fast"
     }
   ]
 }
