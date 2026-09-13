@@ -3,27 +3,16 @@ import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { KennisbankArticleList } from "@/components/kennisbank/KennisbankArticleList";
-import {
-  getCategoryBySlug,
-  listArticles,
-  listCategories,
-} from "@/lib/kennisbank";
+import { getCategoryBySlug, listArticles } from "@/lib/kennisbank";
 import { absoluteUrl, localePath } from "@/lib/seo";
+
+export const dynamic = "force-dynamic";
 
 type Params = { params: Promise<{ locale: string; category: string }> };
 
-export async function generateStaticParams() {
-  try {
-    const cats = await listCategories({ locale: "nl" });
-    return cats.map((c) => ({ category: c.slug }));
-  } catch {
-    return [];
-  }
-}
-
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { locale, category } = await params;
-  const cat = await getCategoryBySlug(category, { locale });
+  const cat = await getCategoryBySlug(category, { locale }).catch(() => null);
   if (!cat) return {};
   const title =
     locale === "nl"

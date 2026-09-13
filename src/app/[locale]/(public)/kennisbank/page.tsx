@@ -6,6 +6,8 @@ import { KennisbankCategoryGrid } from "@/components/kennisbank/KennisbankCatego
 import { listArticles, listCategories } from "@/lib/kennisbank";
 import { buildStaticPageMetadata } from "@/lib/seo";
 
+export const dynamic = "force-dynamic";
+
 export async function generateMetadata({
   params,
 }: {
@@ -23,9 +25,15 @@ export default async function KennisbankPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const isNl = locale === "nl";
-  const categories = await listCategories({ locale });
-  const articles = await listArticles({ locale });
-  const total = articles.length;
+  let categories: Awaited<ReturnType<typeof listCategories>> = [];
+  let total = 0;
+  try {
+    categories = await listCategories({ locale });
+    const articles = await listArticles({ locale });
+    total = articles.length;
+  } catch (error) {
+    console.error("[kennisbank] unavailable during render", error);
+  }
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-10 md:px-6 md:py-14">

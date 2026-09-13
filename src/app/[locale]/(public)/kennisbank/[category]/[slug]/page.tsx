@@ -9,13 +9,15 @@ import {
 } from "@/lib/kennisbank";
 import { absoluteUrl, localePath } from "@/lib/seo";
 
+export const dynamic = "force-dynamic";
+
 type Params = {
   params: Promise<{ locale: string; category: string; slug: string }>;
 };
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { locale, category, slug } = await params;
-  const article = await getArticleBySlug(slug, { locale });
+  const article = await getArticleBySlug(slug, { locale }).catch(() => null);
   if (!article) return {};
   const title =
     article.seoTitle ||
