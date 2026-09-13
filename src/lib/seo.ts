@@ -63,13 +63,53 @@ export const SITE_SEO = {
 
 export function siteOrigin() {
   // Never leak the internal Next listen port (e.g. :3066) into canonical/OG URLs.
-  return SITE_SEO.url.replace(/\/$/, "").replace(/:3066\b/g, "");
+  let url = SITE_SEO.url.replace(/\/$/, "").replace(/:3066\b/g, "");
+  // Production safety: never emit localhost/loopback as the public site origin.
+  if (
+    process.env.NODE_ENV === "production" &&
+    /localhost|127\.0\.0\.1/i.test(url)
+  ) {
+    url = "https://000-it.com";
+  }
+  return url;
+}
+
+/**
+ * Origin used in generated sitemap XML / IndexNow.
+ * Defaults to the live host so local `.env` (localhost) cannot poison public sitemaps.
+ * Override with SITEMAP_BASE_URL when needed.
+ */
+export function sitemapPublicOrigin() {
+  const explicit = process.env.SITEMAP_BASE_URL?.replace(/\/$/, "");
+  if (explicit && !/localhost|127\.0\.0\.1/i.test(explicit)) {
+    return explicit.replace(/:3066\b/g, "");
+  }
+  const fromSite = siteOrigin();
+  if (/localhost|127\.0\.0\.1/i.test(fromSite)) {
+    return "https://000-it.com";
+  }
+  return fromSite;
 }
 
 export function absoluteUrl(path: string) {
   if (!path) return siteOrigin();
   if (path.startsWith("http://") || path.startsWith("https://")) return path;
   return `${siteOrigin()}${path.startsWith("/") ? path : `/${path}`}`;
+}
+
+/** Absolute URL forced to the public sitemap host (never localhost). */
+export function sitemapAbsoluteUrl(path: string) {
+  const origin = sitemapPublicOrigin();
+  if (!path) return origin;
+  if (path.startsWith("http://") || path.startsWith("https://")) {
+    try {
+      const u = new URL(path);
+      return `${origin}${u.pathname}${u.search}`;
+    } catch {
+      return path;
+    }
+  }
+  return `${origin}${path.startsWith("/") ? path : `/${path}`}`;
 }
 
 export function localePath(locale: string, path = "") {

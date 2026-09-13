@@ -426,5 +426,18 @@
     "seoTitleSuffix": "Znalostní báze",
     "tipLabel": "Tip",
     "warnLabel": "Pozor"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "kategorie",
+    "questionsLabel": "otázky",
+    "searchPlaceholder": "Hledat v otázkách a odpovědích…",
+    "searchAria": "Hledat v FAQ",
+    "clearSearch": "Vymazat hledání",
+    "all": "Vše",
+    "result": "výsledek",
+    "results": "výsledky",
+    "forQuery": "pro",
+    "empty": "Nebyly nalezeny žádné výsledky."
   }
 }

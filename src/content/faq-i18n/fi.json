@@ -1,0 +1,739 @@
+{
+  "title": "Usein kysytyt kysymykset",
+  "subtitle": "Perusteelliset vastaukset TripleZero iT:stä — AI:sta ja SEO:sta aina designiin, markkinointiin, tukeen ja hostingiin.",
+  "ctaTitle": "Tarvitsetko vielä apua?",
+  "ctaText": "Etkö löydä vastausta? Ota yhteyttä tiimiimme, niin palaamme nopeasti.",
+  "ctaButton": "Ota yhteyttä",
+  "categories": [
+    {
+      "id": "general",
+      "title": "Yleistä",
+      "items": [
+        {
+          "id": "gen-1",
+          "question": "Mitä TripleZero iT tekee?",
+          "answer": "Yhdistämme verkkosuunnittelun, WordPress-tuen, digitaalisen markkinoinnin, hakunäkyvyyden (AEO, GEO/paikallinen ja SEO), designin ja hostingin — autamme brändejä löytymään, konvertoimaan ja kasvamaan."
+        },
+        {
+          "id": "gen-2",
+          "question": "Miten pääsen alkuun?",
+          "answer": "Varaa puhelu tai ota yhteyttä. Teemme lyhyen kartoituksen, käymme läpi tavoitteet ja stackin ja ehdotamme sitten selkeän suunnitelman aikatauluineen ja KPI-mittareineen."
+        },
+        {
+          "id": "gen-3",
+          "question": "Minkä tyyppisten yritysten kanssa työskentelette?",
+          "answer": "PK-yritykset, scale-upit, ecommerce, toimistot ja kansainväliset brändit. Työskentelemme sekä olemassa olevien tiimien kanssa että full-service-kumppanina."
+        },
+        {
+          "id": "gen-4",
+          "question": "Työskentelettekö vain Alankomaissa?",
+          "answer": "Emme. Palvelemme Benelux-alueella ja kansainvälisesti hollanniksi ja englanniksi."
+        },
+        {
+          "id": "gen-5",
+          "question": "Millainen tyypillinen yhteistyö on?",
+          "answer": "Kartoitus → audit/scan → suunnitelma → sprinttien toteutus → mittaus → optimointi, selkeillä virstanpylväillä."
+        },
+        {
+          "id": "gen-6",
+          "question": "Voinko yhdistää useita palveluita?",
+          "answer": "Kyllä. Tyypillisiä yhdistelmiä: verkkosuunnittelu + SEO + mainonta tai WordPress-ylläpito + hosting + tietoturva."
+        },
+        {
+          "id": "gen-7",
+          "question": "Kuinka nopeasti voitte aloittaa?",
+          "answer": "Usein muutaman arkipäivän sisällä hyväksynnästä. Kiireelliset tapaukset (haittaohjelmat, käyttökatkot) priorisoidaan."
+        },
+        {
+          "id": "gen-8",
+          "question": "Työskentelettekö etänä vai paikan päällä?",
+          "answer": "Pääasiassa etänä, selkeällä viestintärakenteella. Paikan päällä onnistuu pyynnöstä."
+        },
+        {
+          "id": "gen-9",
+          "question": "Miten viestitte edistymisestä?",
+          "answer": "Säännölliset päivitykset, ticketit/dashboard tarvittaessa sekä sprintti- tai kuukausiraportit."
+        },
+        {
+          "id": "gen-10",
+          "question": "Mitä tarvitsette meiltä aloitukseen?",
+          "answer": "Tarvittavat käyttöoikeudet, tavoitteet, brändimateriaalit, analytiikkatilien pääsyt ja olemassa olevat työkalutunnukset."
+        },
+        {
+          "id": "gen-11",
+          "question": "Sovitteko startupeille?",
+          "answer": "Kyllä — lean landing page -toteutuksista ja AI-scanneista kokonaisiin kasvujärjestelmiin skaalautuessa."
+        },
+        {
+          "id": "gen-12",
+          "question": "Kuka omistaa työn ja tilit?",
+          "answer": "Te omistatte domainit, sisällön, repositoriot ja mainostilit. Toimitamme tiedostot ja dokumentaation luovutuksessa."
+        },
+        {
+          "id": "gen-13",
+          "question": "Voitteko tehdä yhteistyötä nykyisten toimittajiemme kanssa?",
+          "answer": "Kyllä. Työskentelemme yhdessä kehittäjienne/markkinoijienne kanssa tai otamme ylläpidon siististi haltuun."
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI",
+      "items": [
+        {
+          "id": "ai-1",
+          "question": "Mikä on AI-scaninne?",
+          "answer": "AI readiness scan, joka pisteyttää, miten hyvin sivustonne toimii perinteisessä haussa, AI-vastauksissa sekä paikallisessa/maantieteellisessä näkyvyydessä (AEO, GEO, SEO ja tekniset perustat)."
+        },
+        {
+          "id": "ai-2",
+          "question": "Mitä AI-scan mittaa?",
+          "answer": "AEO-signaaleja, GEO/paikallista näkyvyyttä, SEO-perusteita, sisällön rakennetta, suorituskykyindikaattoreita ja AI-valmiutta — sekä priorisoidut korjaukset."
+        },
+        {
+          "id": "ai-3",
+          "question": "Kuinka usein AI-scan kannattaa tehdä?",
+          "answer": "Suurten sivustomuutosten tai kampanjoiden jälkeen; aktiivisille brändeille suosittelemme säännöllisiä scanneja (esim. neljännesvuosittain)."
+        },
+        {
+          "id": "ai-4",
+          "question": "Onko AI vain sisällön kirjoittamista?",
+          "answer": "Ei. Se kattaa myös teknisen löydettävyyden, rakenteisen datan, sisäisen linkityksen ja sen, miten AI-järjestelmät tiivistävät brändinne."
+        },
+        {
+          "id": "ai-5",
+          "question": "Voitteko integroida AI:n työprosesseihimme?",
+          "answer": "Kyllä: sisältöavustus, automaatio, chat/ticket-flows ja räätälöidyt AI API -integraatiot."
+        },
+        {
+          "id": "ai-6",
+          "question": "Korvaako AI strategiatyönne?",
+          "answer": "Ei. AI nopeuttaa analyysiä ja tuotantoa; strategia, brand voice ja konversiopäätökset pysyvät ihmisvetoisina."
+        },
+        {
+          "id": "ai-7",
+          "question": "Onko AI:lla tuotettu sisältö turvallista SEO:n kannalta?",
+          "answer": "Vain ihmisen tarkistuksella, ainutlaatuisella näkemyksellä ja E-E-A-T:lla. Vältämme ohuita, geneerisiä sivuja, jotka heikentävät sijoituksia."
+        },
+        {
+          "id": "ai-8",
+          "question": "Mitä AI-valmius tarkoittaa?",
+          "answer": "Kuinka hyvin sivustonne, sisältönne ja datanne on rakennettu niin, että AI-järjestelmät voivat siteerata, suositella ja selittää brändinne oikein."
+        },
+        {
+          "id": "ai-9",
+          "question": "Käytättekö dashboardissa AI-agentteja?",
+          "answer": "Kyllä. Asiakkaat näkevät agentit SEO:lle, sisällölle, socialille ja adsille sekä niiden tilan ja tehtävät."
+        },
+        {
+          "id": "ai-10",
+          "question": "Mitä AI-työkaluja käytätte?",
+          "answer": "Valitsemme työkalut käyttötarkoituksen mukaan, hallitusti: lähteet, faktantarkistus, brändisäännöt ja privacy."
+        },
+        {
+          "id": "ai-11",
+          "question": "Voiko AI auttaa tukipyyntöjen käsittelyssä?",
+          "answer": "Kyllä triageen ja nopeampiin vastauksiin, mutta monimutkaiset tai herkät tapaukset eskaloidaan ihmiselle."
+        },
+        {
+          "id": "ai-12",
+          "question": "Miten AI-työ hinnoitellaan?",
+          "answer": "Entry AI-scanista kuukausittaisiin AI + marketing -retainereihin. Saatte selkeän tarjouksen kartoituksen jälkeen."
+        },
+        {
+          "id": "ai-13",
+          "question": "Miten mittaamme AI-ROI:n?",
+          "answer": "KPI:t kuten liikenne, liidit, ajansäästö, sisältötuotanto, ticket resolution ja konversio — määritellään etukäteen."
+        }
+      ]
+    },
+    {
+      "id": "aeo-geo-seo",
+      "title": "AEO, GEO & SEO",
+      "items": [
+        {
+          "id": "seo-1",
+          "question": "Mikä on AEO:n, GEO:n ja SEO:n ero?",
+          "answer": "AEO (Answer Engine Optimization) optimoi AI-vastauksia varten. GEO (Geographic Search Engine Optimization) vahvistaa paikallista ja alueellista näkyvyyttä Mapsissa, local packeissa ja sijaintipohjaisessa haussa. SEO tähtää perinteisiin hakukoneisiin."
+        },
+        {
+          "id": "seo-2",
+          "question": "Miksi AEO/GEO ovat tärkeitä juuri nyt?",
+          "answer": "Yhä useampi käyttäjä saa vastauksia AI:n kautta ja hakee paikallisesti (“near me”). Ilman AEO:ta jäädätte ilman AI-citations; ilman GEO:ta menetätte lähialueen liidejä — vaikka perinteinen SEO olisi kunnossa."
+        },
+        {
+          "id": "seo-3",
+          "question": "Miten aloitamme SEO-yhteistyön?",
+          "answer": "Tekninen audit, keyword/intent research, content gap -analyysi ja priorisoitu roadmap, joka kytketään liiketoiminnan KPI-mittareihin."
+        },
+        {
+          "id": "seo-4",
+          "question": "Kuinka nopeasti SEO-tuloksia näkyy?",
+          "answer": "Tekniset parannukset voivat näkyä nopeasti. Orgaaninen kasvu kertyy tyypillisesti viikoista kuukausiin kilpailutilanteesta riippuen."
+        },
+        {
+          "id": "seo-5",
+          "question": "Tarjoatteko local SEO:ta?",
+          "answer": "Kyllä: Google Business Profile, paikalliset landing pages, NAP-yhtenäisyys, arvostelut ja paikalliset sisältöklusterit."
+        },
+        {
+          "id": "seo-6",
+          "question": "Mitä tekninen SEO tarkoittaa teille?",
+          "answer": "Crawlability, indeksointi, Core Web Vitals, strukturoitu data, sitemaps/robots, canonicals, sisäinen linkitys ja virheiden siivous."
+        },
+        {
+          "id": "seo-7",
+          "question": "Tuotatteko SEO-sisältöä?",
+          "answer": "Kyllä: briefit, rungot, blogit, landing pages ja FAQ:t intentin mukaan — ja AI-näkyvyyttä varten jäsennettynä."
+        },
+        {
+          "id": "seo-8",
+          "question": "Mikä on E-E-A-T?",
+          "answer": "Experience, Expertise, Authoritativeness, Trust — kriittinen sijoituksille ja uskottavuudelle AI-yhteenvedoissa."
+        },
+        {
+          "id": "seo-9",
+          "question": "Teettekö link buildingiä?",
+          "answer": "Kyllä, eettisesti ja relevantisti: digital PR, kumppanuudet ja content assets — ei koskaan spämmiskeemoja."
+        },
+        {
+          "id": "seo-10",
+          "question": "Voitteko palauttaa SEO:n vahingon jälkeen?",
+          "answer": "Kyllä: algoritmipalautus, toxic links, indeksointiongelmat ja content cannibalization -korjaukset."
+        },
+        {
+          "id": "seo-11",
+          "question": "Miten raportoitte SEO-edistymisestä?",
+          "answer": "Kuukausittain tai sprinttien mukaan: sijoitukset, liikenne, konversiot, tekniset ongelmat ja seuraavat toimet."
+        },
+        {
+          "id": "seo-12",
+          "question": "Toimiiko SEO ecommercelle?",
+          "answer": "Kyllä: tuote-/kategoria-SEO, faceted navigation, arvostelut, strukturoitu data ja osto-intenttiin kohdistuvat sisältöhubit."
+        },
+        {
+          "id": "seo-13",
+          "question": "Onko SEO kertaluonteinen vai jatkuva?",
+          "answer": "Parhaat tulokset syntyvät jatkuvasta optimoinnista. Kertaluonteinen audit auttaa, mutta kilpailijat eivät pysähdy."
+        },
+        {
+          "id": "seo-14",
+          "question": "Tuetteko kansainvälistä SEO:ta?",
+          "answer": "Kyllä: hreflang, markkinatutkimus per locale, lokalisointi ja tekniset monilocale-ratkaisut."
+        }
+      ]
+    },
+    {
+      "id": "advertising",
+      "title": "Mainonta",
+      "items": [
+        {
+          "id": "ads-1",
+          "question": "Mitä mainoskanavia pyöritätte?",
+          "answer": "Google Ads, Meta, LinkedIn ja tarpeen mukaan YouTube/retargeting — funnelin ja budjetin mukaan."
+        },
+        {
+          "id": "ads-2",
+          "question": "Miten asetatte mainosbudjetit?",
+          "answer": "Tavoitteiden (liidit/myynti), target CAC:n, huutokauppahintojen ja testivaiheen perusteella. Aloitamme kevyesti ja skaalaamme toimivat."
+        },
+        {
+          "id": "ads-3",
+          "question": "Mikä on Google Ads -lähestymistapanne?",
+          "answer": "Tilirakenne, intent mapping, negatives, landing page -fit, conversion tracking ja viikoittainen optimointi."
+        },
+        {
+          "id": "ads-4",
+          "question": "Voitteko ajaa Meta Adseja ecommercelle?",
+          "answer": "Kyllä: katalogit/retargeting, creatives, audiences ja creative testing ROAS:n parantamiseksi."
+        },
+        {
+          "id": "ads-5",
+          "question": "Miten mittaatte mainonnan onnistumista?",
+          "answer": "Konversiot, CPA/CAC, ROAS, liidien laatu ja pipeline — ei pelkät klikkimittarit."
+        },
+        {
+          "id": "ads-6",
+          "question": "Entä jos seuranta on rikki?",
+          "answer": "Korjaamme GTM/GA4/pixels, tarvittaessa consent-ratkaisut ja paremmat mittausvaihtoehdot."
+        },
+        {
+          "id": "ads-7",
+          "question": "Ajatteko B2B LinkedIn Adseja?",
+          "answer": "Kyllä, tarkalla kohdennuksella, lead forms- tai landing page -ratkaisuilla ja päätöksentekijöille suunnatulla viestinnällä."
+        },
+        {
+          "id": "ads-8",
+          "question": "Kuinka nopeasti ads tuottaa tuloksia?",
+          "answer": "Liikenne voi tulla heti. Vakaa CPA/ROAS vaatii yleensä 2–6 viikkoa oppimista ja iterointia."
+        },
+        {
+          "id": "ads-9",
+          "question": "Teettekö mainoscreativet?",
+          "answer": "Kyllä: copy, visuals ja testiversiot — design/media creation tarvittaessa."
+        },
+        {
+          "id": "ads-10",
+          "question": "Voivatko ads ja SEO tukea toisiaan?",
+          "answer": "Kyllä. Search insights tukee SEO:ta; vahvat orgaaniset sivut parantavat Quality Scorea ja laskevat CPA:ta."
+        },
+        {
+          "id": "ads-11",
+          "question": "Voitteko ottaa haltuun olemassa olevat mainostilit?",
+          "answer": "Kyllä. Auditoimme, rakennamme uudelleen vain tarpeen mukaan ja optimoimme."
+        },
+        {
+          "id": "ads-12",
+          "question": "Miten ehkäisette turhaa kulutusta?",
+          "answer": "Negatives, exclusions, caps, geo controls, frequency limits ja nopeat kill switches."
+        },
+        {
+          "id": "ads-13",
+          "question": "Onko remarketing yhä kannattavaa?",
+          "answer": "Kyllä, kun se tehdään privacy-compliant ja vahvoilla tarjouksilla — usein tehokkain kerros."
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "title": "Design",
+      "items": [
+        {
+          "id": "des-1",
+          "question": "Mitä design-palveluita tarjoatte?",
+          "answer": "Logot, brändi-identiteetti, käyntikortit, kirjepaperit, flyerit, posterit, tarrat, lehdet/esitteet ja digitaaliset visuals."
+        },
+        {
+          "id": "des-2",
+          "question": "Mitä työkaluja käytätte?",
+          "answer": "Adobe Photoshop, Illustrator ja InDesign ammattimaisiin, print-ready-toimituksiin."
+        },
+        {
+          "id": "des-3",
+          "question": "Toimitatteko painovalmiit tiedostot?",
+          "answer": "Kyllä: CMYK, bleed, crop marks ja oikeat PDF-viennit sekä näytölle sopivat versiot."
+        },
+        {
+          "id": "des-4",
+          "question": "Miten logoprojekti etenee?",
+          "answer": "Brief → konseptit → palautekierrokset → final vectors (SVG/PDF/AI) ja perus usage guidelines."
+        },
+        {
+          "id": "des-5",
+          "question": "Voitteko päivittää olemassa olevan brändin?",
+          "answer": "Kyllä — logo, värit ja typografia voidaan päivittää niin, että tunnistettavuus säilyy."
+        },
+        {
+          "id": "des-6",
+          "question": "Teettekö some-templateja?",
+          "answer": "Kyllä, jotta tiiminne voi julkaista johdonmukaisesti ja nopeasti."
+        },
+        {
+          "id": "des-7",
+          "question": "Digitaalinen vs. printtidesign?",
+          "answer": "Printti vaatii väriavaruuden, resoluution ja marginaalit; digitaalisessa korostuvat näytön terävyys ja nopeus. Toimitamme molemmat oikein."
+        },
+        {
+          "id": "des-8",
+          "question": "Teettekö lehtien tai esitteiden taittoa?",
+          "answer": "Kyllä, monisivuista InDesign-työtä ruudukoilla, tyyleillä ja prepress checks -tarkistuksilla."
+        },
+        {
+          "id": "des-9",
+          "question": "Hoidatteko painatuksen?",
+          "answer": "Kyllä. Suunnittelemme ja voimme teettää painatuksen pieninä tai suurina erinä — käyntikorteista ja tarroista flyereihin, postereihin ja esitteisiin — vedoksilla ja tuotannon koordinoinnilla."
+        },
+        {
+          "id": "des-10",
+          "question": "Kuinka monta palautekierrosta sisältyy?",
+          "answer": "Tyypillisesti 2–3 selkeää kierrosta; lisää voidaan sopia."
+        },
+        {
+          "id": "des-11",
+          "question": "Saammeko lähdetiedostot?",
+          "answer": "Kyllä, sovitusti (AI/PSD/INDD tai vientipaketit)."
+        },
+        {
+          "id": "des-12",
+          "question": "Voivatko design ja verkkosuunnittelu linjautua?",
+          "answer": "Kyllä. Brändijärjestelmät ja UI pysyvät yhtenäisinä printissä ja verkossa."
+        },
+        {
+          "id": "des-13",
+          "question": "Mistä saan lisätietoa Digital Designista?",
+          "answer": "Vieraile osoitteessa /digital-design ja katso Digital Design -palvelut valikosta."
+        }
+      ]
+    },
+    {
+      "id": "marketing",
+      "title": "Markkinointi",
+      "items": [
+        {
+          "id": "mkt-1",
+          "question": "Mitä markkinointipalveluita tarjoatte?",
+          "answer": "AEO/GEO/SEO, content, social, ads, ecommerce growth, product listing, community management ja data entry."
+        },
+        {
+          "id": "mkt-2",
+          "question": "Miten rakennatte markkinointistrategian?",
+          "answer": "Tavoitteet, kohderyhmä, positiointi, channel mix, content pipeline ja KPI:t — käytännöllisesti ja toteutettavasti."
+        },
+        {
+          "id": "mkt-3",
+          "question": "Mitä full-funnel marketing tarkoittaa teille?",
+          "answer": "Awareness → consideration → conversion → retention, selkein kanavaroolein."
+        },
+        {
+          "id": "mkt-4",
+          "question": "Autatteko positioinnissa?",
+          "answer": "Kyllä. Selkeä positiointi ehkäisee hajanaisia kampanjoita ja heikkoa konversiota."
+        },
+        {
+          "id": "mkt-5",
+          "question": "Tarjoatteko sisällön kirjoittamista?",
+          "answer": "Kyllä: blogit, website copy, uutiskirjeet, landing pages ja sales copy."
+        },
+        {
+          "id": "mkt-6",
+          "question": "Teettekö ecommerce-markkinointia?",
+          "answer": "Kyllä: feedit, listing-laatu, CRO, ads ja kategoria-/tuote-SEO."
+        },
+        {
+          "id": "mkt-7",
+          "question": "Mikä on CRO?",
+          "answer": "Conversion Rate Optimization — sivujen ja funnelien parantamista, jotta useampi kävijä konvertoi."
+        },
+        {
+          "id": "mkt-8",
+          "question": "Miten raportoitte markkinointitulokset?",
+          "answer": "Raportit/dashboardit: liikenne, liidit, myynti, CPA/ROAS ja kanavakohtaiset opit."
+        },
+        {
+          "id": "mkt-9",
+          "question": "Voitteko työskennellä in-house-tiimimme kanssa?",
+          "answer": "Kyllä — toteuttaa, sparrata tai omistaa yhden erikoisalueen (vain SEO, vain ads jne.)."
+        },
+        {
+          "id": "mkt-10",
+          "question": "Kuinka nopeasti kampanjat voidaan käynnistää?",
+          "answer": "Usein 1–2 viikossa tracking/setupin jälkeen; sisältö etenee rinnakkain."
+        },
+        {
+          "id": "mkt-11",
+          "question": "Tuetteko sähköpostimarkkinointia?",
+          "answer": "Kyllä: flow’t, uutiskirjeet ja copy, mukaan lukien CRM/ecommerce-integraatiot."
+        },
+        {
+          "id": "mkt-12",
+          "question": "Onko markkinointi aina kuukausiretainer?",
+          "answer": "Retainer sopii jatkuvaan kasvuun; auditit, redesignit ja launchit voivat olla projektipohjaisia."
+        },
+        {
+          "id": "mkt-13",
+          "question": "Miten vältätte busyworkin ilman tuloksia?",
+          "answer": "Jokainen tekeminen sidotaan KPI:hin. Alisuoriutuvat korjataan tai lopetetaan."
+        }
+      ]
+    },
+    {
+      "id": "social-media",
+      "title": "Sosiaalinen media",
+      "items": [
+        {
+          "id": "soc-1",
+          "question": "Mitä somekanavia hallinnoitte?",
+          "answer": "Pääasiassa LinkedIn, Instagram, Facebook ja tarvittaessa X/TikTok — kohderyhmän mukaan."
+        },
+        {
+          "id": "soc-2",
+          "question": "Mitä social media management sisältää?",
+          "answer": "Strategia, kalenteri, tuotanto/ajastus, community replies, raportointi ja iterointi."
+        },
+        {
+          "id": "soc-3",
+          "question": "Teettekö kuvat ja videot?",
+          "answer": "Kyllä media creationin kautta: still-kuvat, carousels, short-form video ja templates."
+        },
+        {
+          "id": "soc-4",
+          "question": "Kuinka usein julkaisetatte?",
+          "answer": "Riippuu tavoitteista — tyypillisesti 3–5 kertaa viikossa ydin-kanavissa, laatu ennen määrää."
+        },
+        {
+          "id": "soc-5",
+          "question": "Tarjoatteko community managementia?",
+          "answer": "Kyllä: moderointi, kommentit, DM:t ja maineenhoito brändiääni-ohjeilla."
+        },
+        {
+          "id": "soc-6",
+          "question": "Voivatko some ja ads toimia yhdessä?",
+          "answer": "Kyllä. Orgaaniset onnistujat muuttuvat mainoscreativoiksi; ads vahvistaa sitä, mikä resonoi."
+        },
+        {
+          "id": "soc-7",
+          "question": "Miten mittaatte somen onnistumista?",
+          "answer": "Reach, engagement, click-outs, liidit ja assisted conversions — ei pelkät tykkäykset."
+        },
+        {
+          "id": "soc-8",
+          "question": "Työskentelettekö vaikuttajien kanssa?",
+          "answer": "Pyynnöstä: valinta, briefaus ja seuranta mitattaviin tuloksiin keskittyen."
+        },
+        {
+          "id": "soc-9",
+          "question": "Voitteko tukea kriisiviestintää?",
+          "answer": "Kyllä, nopeilla response protocols -käytännöillä yhdessä tiiminne kanssa."
+        },
+        {
+          "id": "soc-10",
+          "question": "Autatteko LinkedIn thought leadershipissa?",
+          "answer": "Kyllä: henkilö- ja yrityssisältö, carousels, caset ja employee advocacy."
+        },
+        {
+          "id": "soc-11",
+          "question": "Saammeko sisältökalenterin?",
+          "answer": "Kyllä — kuukausi- tai kvartaali-teemat, formaatit ja deadlinet."
+        },
+        {
+          "id": "soc-12",
+          "question": "Entä jos meillä on jo social manager?",
+          "answer": "Voimme erikoistua (creatives, ads, strategia) tai tukea ruuhkahuippuina."
+        },
+        {
+          "id": "soc-13",
+          "question": "Kuinka nopeasti some kasvaa?",
+          "answer": "Johdonmukaisuus kumuloituu. Merkittävä kasvu vie yleensä viikoista kuukausiin; nopeammin ads-tuen kanssa."
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "Tuki",
+      "items": [
+        {
+          "id": "sup-1",
+          "question": "Millaista tukea tarjoatte?",
+          "answer": "WordPress-tuki, custom-sivustojen tuki, tickets/live chat, ylläpito, tietoturva, suorituskyky ja incident response."
+        },
+        {
+          "id": "sup-2",
+          "question": "Miten tavoitan tuen?",
+          "answer": "Yhteydenoton, varauksen, dashboard-tickettien tai live chatin kautta. Kiireelliset tapaukset priorisoidaan."
+        },
+        {
+          "id": "sup-3",
+          "question": "Mikä on vasteaikanne?",
+          "answer": "Nopea ensivaste (usein yhden arkipäivän sisällä; kriittinen käyttökatko nopeammin). Tarkat SLA:t riippuvat paketista."
+        },
+        {
+          "id": "sup-4",
+          "question": "Tarjoatteko 24/7-valvontaa?",
+          "answer": "Kyllä tietyissä tuki-/hostingpaketeissa: monitorointi, backups ja alerts."
+        },
+        {
+          "id": "sup-5",
+          "question": "Voitteko poistaa haittaohjelmat?",
+          "answer": "Kyllä — WordPress- ja custom stackeissa — mukaan lukien hardening ja jälkihoito."
+        },
+        {
+          "id": "sup-6",
+          "question": "Hoidatteko WordPress-päivitykset?",
+          "answer": "Kyllä WordPress maintenance & updates -palvelulla: core/plugins/themes varmuuskopioilla ja tarkistuksilla."
+        },
+        {
+          "id": "sup-7",
+          "question": "Autatteko hosting-ongelmissa?",
+          "answer": "Kyllä — diagnosoimme, migroimme tai optimoimme hosting/VPS/domainit."
+        },
+        {
+          "id": "sup-8",
+          "question": "Entä jos sivustoni on alhaalla?",
+          "answer": "Ilmoita kiireellisyys. Palautamme palvelun varmuuskopioilla, palvelintarkistuksilla ja hotfixeillä, ja pidämme sinut ajan tasalla."
+        },
+        {
+          "id": "sup-9",
+          "question": "Onko asiakasportaalia?",
+          "answer": "Kyllä. Kirjautuneet asiakkaat näkevät dashboardin, ticketit, projektit ja tarvittaessa CRM/laskut."
+        },
+        {
+          "id": "sup-10",
+          "question": "Voiko useampi tiimiläinen avata tickettejä?",
+          "answer": "Kyllä, käyttäjäroolien mukaan (client/manager/admin)."
+        },
+        {
+          "id": "sup-11",
+          "question": "Mitä Basic/Standard/Premium-tuki sisältää?",
+          "answer": "Useampia sivustoja, nopeampi seuranta ja laajempi kattavuus (päivitykset, haittaohjelmat, nopeus, SEO). Katso tukisivuilta yksityiskohdat."
+        },
+        {
+          "id": "sup-12",
+          "question": "Autatteko myös ei-teknisissä asioissa?",
+          "answer": "Kyllä — palvelut, laskutus ja tilikysymykset; tekninen syvyys riippuu paketista."
+        },
+        {
+          "id": "sup-13",
+          "question": "Voinko päivittää tuen myöhemmin?",
+          "answer": "Kyllä, kun liikenne, riski tai tiimin tarpeet kasvavat."
+        }
+      ]
+    },
+    {
+      "id": "webdesign",
+      "title": "Verkkosuunnittelu",
+      "items": [
+        {
+          "id": "web-1",
+          "question": "Rakennatteko vain WordPress-sivustoja?",
+          "answer": "Emme. WordPressin lisäksi teemme custom sites -toteutuksia HTML/CSS/JS:llä, PHP:lla ja Next.js:llä — erillään WordPress-palveluista."
+        },
+        {
+          "id": "web-2",
+          "question": "Mitä Website Support on?",
+          "answer": "Suunnittelu, kehitys, ylläpito, tietoturva, suorituskyky, backup/migraatio ja API-integraatiot custom stackeihin."
+        },
+        {
+          "id": "web-3",
+          "question": "Voitteko uudistaa olemassa olevan sivuston?",
+          "answer": "Kyllä: UX/UI-uudistus, konversioparannukset ja tekninen modernisointi ilman täyttä rewritea, jos mahdollista."
+        },
+        {
+          "id": "web-4",
+          "question": "Työskentelettekö Next.js:n kanssa?",
+          "answer": "Kyllä — erinomainen nopeisiin, SEO-ready marketing sites -sivustoihin ja dashboardeihin."
+        },
+        {
+          "id": "web-5",
+          "question": "Teettekö PHP-sovelluksia?",
+          "answer": "Kyllä: portaalit, API:t, legacy-modernisointi sekä suorituskyvyn/tietoturvan hardening."
+        },
+        {
+          "id": "web-6",
+          "question": "Miten huomioitte mobiilin?",
+          "answer": "Mobile-first design, responsiiviset layoutit ja testaus yleisillä laitteilla/selaimilla."
+        },
+        {
+          "id": "web-7",
+          "question": "Sisältyykö saavutettavuus?",
+          "answer": "Noudatamme hyviä a11y-perusteita; tiukemmat WCAG-ohjelmat voidaan rajata mukaan."
+        },
+        {
+          "id": "web-8",
+          "question": "CMS-vaihtoehtoja ilman WordPressiä?",
+          "answer": "Kyllä: headless CMS, custom admin tai staattiset ratkaisut tiimin tarpeiden mukaan."
+        },
+        {
+          "id": "web-9",
+          "question": "Kuinka kauan verkkosuunnitteluprojekti kestää?",
+          "answer": "Landing page -toteutukset viikoissa; suuremmat sivustot/sovellukset useissa sprinteissä kartoituksen jälkeen."
+        },
+        {
+          "id": "web-10",
+          "question": "Sisältyykö tekstit ja SEO julkaisuun?",
+          "answer": "Kyllä, kun se yhdistetään content/SEO-palveluun, jotta sivusto julkaistaan hakukelpoisena ja konversiovalmiina."
+        },
+        {
+          "id": "web-11",
+          "question": "Entä suorituskyky julkaisun jälkeen?",
+          "answer": "Optimoimme Core Web Vitalsin, caching/CDN:n ja monitoroinnin ylläpitopaketeilla."
+        },
+        {
+          "id": "web-12",
+          "question": "Voitteko integroida API:ja (CRM, maksut, AI)?",
+          "answer": "Kyllä, asianmukaisella error handlingilla, loggingilla ja dokumentaatiolla."
+        },
+        {
+          "id": "web-13",
+          "question": "Miten koodi toimitetaan?",
+          "answer": "Repojen/deploy pipelinejen kautta, kun mahdollista, staging/production-ympäristöillä ja luovutuksella."
+        },
+        {
+          "id": "web-14",
+          "question": "Autatteko sivuston CRO:ssa?",
+          "answer": "Kyllä: UX-parannukset, lomakkeet, CTA:t, kokeilut ja page speed."
+        }
+      ]
+    },
+    {
+      "id": "webhosting",
+      "title": "Webhosting ja verkkotunnukset",
+      "items": [
+        {
+          "id": "host-1",
+          "question": "Mitä hosting-palveluja tarjoatte?",
+          "answer": "Shared-, WordPress- ja VPS-hosting Basic/Plus/Business tiers -tasoilla sekä domainit."
+        },
+        {
+          "id": "host-2",
+          "question": "Shared vs WordPress vs VPS?",
+          "answer": "Shared sopii pienemmille sivustoille. WordPress-hosting on WP-optimoitu. VPS tarjoaa enemmän resursseja/hallintaa raskaampiin kuormiin."
+        },
+        {
+          "id": "host-3",
+          "question": "Autatteko verkkotunnusten rekisteröinnissä?",
+          "answer": "Kyllä — neuvonta, rekisteröinti/siirto ja DNS:n oikea konfigurointi."
+        },
+        {
+          "id": "host-4",
+          "question": "Sisältyykö SSL?",
+          "answer": "Kyllä, SSL sisältyy relevantteihin hosting-paketteihin."
+        },
+        {
+          "id": "host-5",
+          "question": "Voitteko migroida sivustoni hostinginne alle?",
+          "answer": "Kyllä: varmuuskopio, migraatio, DNS cutover, SSL ja smoke tests mahdollisimman vähällä downtime-ajalla."
+        },
+        {
+          "id": "host-6",
+          "question": "Miten varmuuskopiot toimivat?",
+          "answer": "Riippuu paketista: helppo tai automatisoitu backup. Lisäoff-site retention on saatavilla."
+        },
+        {
+          "id": "host-7",
+          "question": "Entä jos liikenne kasvaa?",
+          "answer": "Skaalaamme Plus/Business- tai VPS-tasolle ja optimoimme caching/CDN:n."
+        },
+        {
+          "id": "host-8",
+          "question": "Sisältyykö sähköposti domaineihin?",
+          "answer": "Riippuu toteutuksesta. Suosittelemme luotettavia sähköpostiratkaisuja ja DNS auth -asetuksia (SPF/DKIM/DMARC)."
+        },
+        {
+          "id": "host-9",
+          "question": "Kuinka turvallista hostinginne on?",
+          "answer": "SSL/palomuuri, päivitykset, monitorointi ja hardening, sekä tarvittaessa lisätietoturvapalvelut."
+        },
+        {
+          "id": "host-10",
+          "question": "Voinko siirtyä sharedista VPS:ään myöhemmin?",
+          "answer": "Kyllä — suunniteltu migraatio testauksella ja rollbackilla."
+        },
+        {
+          "id": "host-11",
+          "question": "Tuetteko CDN:ää?",
+          "answer": "Kyllä, tarvittaessa (usein mukana WP-hostingissa) nopeampaa globaalia toimitusta varten."
+        },
+        {
+          "id": "host-12",
+          "question": "Mikä on uptime-lähestymistapanne?",
+          "answer": "Monitorointi, nopea incident response ja selkeä viestintä maintenance windows -ajoista."
+        },
+        {
+          "id": "host-13",
+          "question": "Voitteko korjata DNS-ongelmat?",
+          "answer": "Kyllä: tietueet, propagation, mail auth ja domain wiring."
+        },
+        {
+          "id": "host-14",
+          "question": "Miten valitsen oikean paketin?",
+          "answer": "Liikenteen, stackin (WP vs custom), resurssien ja kasvun mukaan. Neuvomme rehellisesti."
+        },
+        {
+          "id": "host-15",
+          "question": "Mistä näen hosting-hinnat?",
+          "answer": "Hosting-palvelusivuilla kohdassa Services → Webhosting & Domains."
+        }
+      ]
+    }
+  ]
+}

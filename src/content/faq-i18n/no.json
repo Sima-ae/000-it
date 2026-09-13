@@ -1,0 +1,739 @@
+{
+  "title": "Ofte stilte spørsmål",
+  "subtitle": "Grundige svar om TripleZero iT — fra AI og SEO til design, markedsføring, support og hosting.",
+  "ctaTitle": "Trenger du fortsatt hjelp?",
+  "ctaText": "Finner du ikke svaret? Kontakt teamet vårt, så svarer vi raskt.",
+  "ctaButton": "Kontakt oss",
+  "categories": [
+    {
+      "id": "general",
+      "title": "Generelt",
+      "items": [
+        {
+          "id": "gen-1",
+          "question": "Hva gjør TripleZero iT?",
+          "answer": "Vi kombinerer webdesign, WordPress-support, digital markedsføring, synlighet i søk (AEO, GEO/lokalt og SEO), design og hosting — og hjelper merkevarer med å bli funnet, konvertere og vokse."
+        },
+        {
+          "id": "gen-2",
+          "question": "Hvordan kommer jeg i gang?",
+          "answer": "Book en samtale eller kontakt oss. Vi gjør en kort kartlegging, går gjennom mål og stack, og foreslår deretter en tydelig plan med tidslinje og KPI-er."
+        },
+        {
+          "id": "gen-3",
+          "question": "Hvilke typer bedrifter jobber dere med?",
+          "answer": "SMB-er, scale-ups, ecommerce, byråer og internasjonale merkevarer. Vi jobber med eksisterende team og som en full-service partner."
+        },
+        {
+          "id": "gen-4",
+          "question": "Jobber dere bare i Nederland?",
+          "answer": "Nei. Vi hjelper kunder i Benelux og internasjonalt på nederlandsk og engelsk."
+        },
+        {
+          "id": "gen-5",
+          "question": "Hvordan ser et typisk samarbeid ut?",
+          "answer": "Kartlegging → audit/scan → plan → sprint-gjennomføring → måling → optimalisering, med tydelige milepæler."
+        },
+        {
+          "id": "gen-6",
+          "question": "Kan jeg kombinere flere tjenester?",
+          "answer": "Ja. Vanlige kombinasjoner: webdesign + SEO + annonser, eller WordPress-vedlikehold + hosting + sikkerhet."
+        },
+        {
+          "id": "gen-7",
+          "question": "Hvor raskt kan dere starte?",
+          "answer": "Ofte innen få virkedager etter godkjenning. Akutte saker (malware, nedetid) prioriteres."
+        },
+        {
+          "id": "gen-8",
+          "question": "Jobber dere remote eller på stedet?",
+          "answer": "Primært remote med strukturert kommunikasjon. On-site er mulig etter avtale."
+        },
+        {
+          "id": "gen-9",
+          "question": "Hvordan kommuniserer dere fremdrift?",
+          "answer": "Regelmessige oppdateringer, tickets/dashboard der det er relevant, samt sprint- eller månedsrapporter."
+        },
+        {
+          "id": "gen-10",
+          "question": "Hva trenger dere fra oss for å starte?",
+          "answer": "Tilganger (ved behov), mål, merkevareassets, analytics-kontoer og eksisterende verktøyinnlogginger."
+        },
+        {
+          "id": "gen-11",
+          "question": "Passer dere for startups?",
+          "answer": "Ja — fra lean landing pages og AI-scans til komplette vekstsystemer når dere skalerer."
+        },
+        {
+          "id": "gen-12",
+          "question": "Hvem eier arbeidet og kontoene?",
+          "answer": "Dere eier domener, innhold, repos og annonsekontoer. Vi leverer filer og dokumentasjon ved overlevering."
+        },
+        {
+          "id": "gen-13",
+          "question": "Kan dere samarbeide med våre nåværende leverandører?",
+          "answer": "Ja. Vi jobber side om side med deres utviklere/markedsførere eller tar over vedlikehold på en ryddig måte."
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI",
+      "items": [
+        {
+          "id": "ai-1",
+          "question": "Hva er deres AI-scan?",
+          "answer": "En AI readiness scan som scorer hvor godt nettstedet deres presterer for klassisk søk, AI-svar og lokal/geografisk synlighet (AEO, GEO, SEO og tekniske fundamenter)."
+        },
+        {
+          "id": "ai-2",
+          "question": "Hva måler AI-scannen?",
+          "answer": "AEO-signaler, GEO/lokal synlighet, SEO-grunnlag, innholdsstruktur, ytelsesindikatorer og AI-beredskap — med prioriterte tiltak."
+        },
+        {
+          "id": "ai-3",
+          "question": "Hvor ofte bør vi kjøre en AI-scan?",
+          "answer": "Etter større endringer på nettstedet eller kampanjer; for aktive merkevarer anbefaler vi periodiske scans (f.eks. kvartalsvis)."
+        },
+        {
+          "id": "ai-4",
+          "question": "Handler AI bare om å skrive innhold?",
+          "answer": "Nei. Det handler også om teknisk synlighet, strukturerte data, intern lenking og hvordan AI-systemer oppsummerer merkevaren deres."
+        },
+        {
+          "id": "ai-5",
+          "question": "Kan dere integrere AI i våre arbeidsflyter?",
+          "answer": "Ja: innholdsassistanse, automatisering, chat/ticket-flows og skreddersydde AI API-integrasjoner."
+        },
+        {
+          "id": "ai-6",
+          "question": "Erstatter AI strategiarbeidet deres?",
+          "answer": "Nei. AI gjør analyse og produksjon raskere; strategi, brand voice og konverteringsbeslutninger forblir menneskestyrt."
+        },
+        {
+          "id": "ai-7",
+          "question": "Er AI-generert innhold trygt for SEO?",
+          "answer": "Kun med menneskelig kvalitetssikring, unik innsikt og E-E-A-T. Vi unngår tynne, generiske sider som skader ranking."
+        },
+        {
+          "id": "ai-8",
+          "question": "Hva er AI-beredskap?",
+          "answer": "Hvor godt nettstedet, innholdet og dataene deres er strukturert slik at AI-systemer kan sitere, anbefale og forklare merkevaren deres korrekt."
+        },
+        {
+          "id": "ai-9",
+          "question": "Bruker dere AI-agenter i dashboardet?",
+          "answer": "Ja. Kunder kan se agenter for SEO, content, social og ads med status og oppgaver."
+        },
+        {
+          "id": "ai-10",
+          "question": "Hvilke AI-verktøy bruker dere?",
+          "answer": "Vi velger verktøy per use case, med governance: kilder, faktasjekk, brand-regler og personvern."
+        },
+        {
+          "id": "ai-11",
+          "question": "Kan AI hjelpe med supporttickets?",
+          "answer": "Ja for triage og raskere svar, med menneskelig eskalering ved komplekse eller sensitive saker."
+        },
+        {
+          "id": "ai-12",
+          "question": "Hvordan prises AI-arbeid?",
+          "answer": "Fra en entry AI-scan til månedlige AI + marketing retainers. Dere får et tydelig forslag etter kartlegging."
+        },
+        {
+          "id": "ai-13",
+          "question": "Hvordan måler vi AI-ROI?",
+          "answer": "KPI-er som trafikk, leads, spart tid, innholdsvolum, ticket resolution og konvertering — definert på forhånd."
+        }
+      ]
+    },
+    {
+      "id": "aeo-geo-seo",
+      "title": "AEO, GEO & SEO",
+      "items": [
+        {
+          "id": "seo-1",
+          "question": "Hva er forskjellen på AEO, GEO og SEO?",
+          "answer": "AEO (Answer Engine Optimization) optimaliserer for AI-svar. GEO (Geographic Search Engine Optimization) styrker lokal og regional synlighet i Maps, lokale packs og stedsbasert søk. SEO retter seg mot klassiske søkemotorer."
+        },
+        {
+          "id": "seo-2",
+          "question": "Hvorfor er AEO/GEO viktig nå?",
+          "answer": "Flere brukere får svar via AI og søker lokalt (“near me”). Uten AEO mister dere AI-citations; uten GEO mister dere lokale leads — selv om klassisk SEO er solid."
+        },
+        {
+          "id": "seo-3",
+          "question": "Hvordan starter dere et SEO-samarbeid?",
+          "answer": "Teknisk audit, keyword/intent research, content gap-analyse og et prioritert veikart knyttet til forretnings-KPI-er."
+        },
+        {
+          "id": "seo-4",
+          "question": "Hvor lang tid før SEO gir resultater?",
+          "answer": "Tekniske forbedringer kan gi raske gevinster. Organisk vekst bygges vanligvis opp over uker til måneder avhengig av konkurranse."
+        },
+        {
+          "id": "seo-5",
+          "question": "Tilbyr dere lokal SEO?",
+          "answer": "Ja: Google Business Profile, lokale landing pages, NAP-konsistens, anmeldelser og lokale innholdsklynger."
+        },
+        {
+          "id": "seo-6",
+          "question": "Hva er teknisk SEO for dere?",
+          "answer": "Crawlability, indeksering, Core Web Vitals, strukturerte data, sitemaps/robots, canonicals, intern lenking og opprydding av feil."
+        },
+        {
+          "id": "seo-7",
+          "question": "Lager dere SEO-innhold?",
+          "answer": "Ja: briefs, outlines, blogginnlegg, landing pages og FAQs tilpasset intent og strukturert for AI-synlighet."
+        },
+        {
+          "id": "seo-8",
+          "question": "Hva er E-E-A-T?",
+          "answer": "Experience, Expertise, Authoritativeness, Trust — kritisk for ranking og troverdighet i AI-oppsummeringer."
+        },
+        {
+          "id": "seo-9",
+          "question": "Driver dere link building?",
+          "answer": "Ja, etisk og relevant: digital PR, partnerskap og content assets — aldri spamopplegg."
+        },
+        {
+          "id": "seo-10",
+          "question": "Kan dere rette opp SEO-skade?",
+          "answer": "Ja: gjenoppretting etter algoritmeendringer, toxic links, indekseringsproblemer og tiltak mot content cannibalization."
+        },
+        {
+          "id": "seo-11",
+          "question": "Hvordan rapporterer dere SEO-fremdrift?",
+          "answer": "Månedlig eller per sprint: ranking, trafikk, konverteringer, tekniske issues og neste tiltak."
+        },
+        {
+          "id": "seo-12",
+          "question": "Fungerer SEO for ecommerce?",
+          "answer": "Ja: produkt-/kategori-SEO, faceted navigation, anmeldelser, strukturerte data og innholdshuber med kjøpsintensjon."
+        },
+        {
+          "id": "seo-13",
+          "question": "Er SEO en engangsjobb eller løpende?",
+          "answer": "Best resultat kommer fra løpende optimalisering. Engangsaudits hjelper, men konkurrenter beveger seg hele tiden."
+        },
+        {
+          "id": "seo-14",
+          "question": "Støtter dere internasjonal SEO?",
+          "answer": "Ja: hreflang, markedsresearch per locale, lokalisering og tekniske oppsett for flere locales."
+        }
+      ]
+    },
+    {
+      "id": "advertising",
+      "title": "Annonsering",
+      "items": [
+        {
+          "id": "ads-1",
+          "question": "Hvilke annonsekanaler kjører dere?",
+          "answer": "Google Ads, Meta, LinkedIn, og der det er relevant YouTube/retargeting — basert på funnel og budsjett."
+        },
+        {
+          "id": "ads-2",
+          "question": "Hvordan setter dere annonsebudsjetter?",
+          "answer": "Ut fra mål (leads/salg), target CAC, auksjonspriser og en testfase. Vi starter lean og skalerer vinnerne."
+        },
+        {
+          "id": "ads-3",
+          "question": "Hva er deres Google Ads-tilnærming?",
+          "answer": "Kontostruktur, intent mapping, negatives, landing-page-fit, conversion tracking og ukentlig optimalisering."
+        },
+        {
+          "id": "ads-4",
+          "question": "Kan dere kjøre Meta Ads for ecommerce?",
+          "answer": "Ja: kataloger/retargeting, creatives, audiences og creative testing for å forbedre ROAS."
+        },
+        {
+          "id": "ads-5",
+          "question": "Hvordan måler dere annonse-suksess?",
+          "answer": "Konverteringer, CPA/CAC, ROAS, leadkvalitet og pipeline — ikke vanity clicks."
+        },
+        {
+          "id": "ads-6",
+          "question": "Hva om tracking er ødelagt?",
+          "answer": "Vi fikser GTM/GA4/pixels, consent-oppsett ved behov og sterkere målealternativer."
+        },
+        {
+          "id": "ads-7",
+          "question": "Kjører dere B2B LinkedIn Ads?",
+          "answer": "Ja, med presis targeting, lead forms eller landing pages og budskap for beslutningstakere."
+        },
+        {
+          "id": "ads-8",
+          "question": "Hvor raskt gir ads resultater?",
+          "answer": "Trafikk kan komme umiddelbart. Stabil CPA/ROAS krever vanligvis 2–6 uker med læring og iterasjon."
+        },
+        {
+          "id": "ads-9",
+          "question": "Lager dere annonsecreatives?",
+          "answer": "Ja: copy, visuals og testvarianter — design/media creation inkluderes ved behov."
+        },
+        {
+          "id": "ads-10",
+          "question": "Kan ads og SEO forsterke hverandre?",
+          "answer": "Ja. Search insights styrker SEO; sterke organiske sider forbedrer Quality Score og senker CPA."
+        },
+        {
+          "id": "ads-11",
+          "question": "Kan dere overta eksisterende annonsekontoer?",
+          "answer": "Ja. Vi auditerer, restrukturerer og optimaliserer uten unødvendige rebuilds."
+        },
+        {
+          "id": "ads-12",
+          "question": "Hvordan hindrer dere bortkastet spend?",
+          "answer": "Negatives, exclusions, caps, geo controls, frequency limits og raske kill switches."
+        },
+        {
+          "id": "ads-13",
+          "question": "Er remarketing fortsatt verdt det?",
+          "answer": "Ja når det gjøres privacy-compliant med sterke tilbud — ofte det mest effektive laget."
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "title": "Design",
+      "items": [
+        {
+          "id": "des-1",
+          "question": "Hvilke designtjenester tilbyr dere?",
+          "answer": "Logoer, brand identity, visittkort, brevpapir, flyers, plakater, klistremerker, magasiner/brosjyrer og digitale visuals."
+        },
+        {
+          "id": "des-2",
+          "question": "Hvilke verktøy bruker dere?",
+          "answer": "Adobe Photoshop, Illustrator og InDesign for trykkklare, profesjonelle leveranser."
+        },
+        {
+          "id": "des-3",
+          "question": "Leverer dere trykkklare filer?",
+          "answer": "Ja: CMYK, bleed, crop marks og riktige PDF-eksporter, samt skjermvarianter."
+        },
+        {
+          "id": "des-4",
+          "question": "Hvordan fungerer et logoprosjekt?",
+          "answer": "Brief → konsepter → feedbackrunder → final vectors (SVG/PDF/AI) og grunnleggende usage guidelines."
+        },
+        {
+          "id": "des-5",
+          "question": "Kan dere oppdatere en eksisterende merkevare?",
+          "answer": "Ja — oppdatere logo, farger og typografi samtidig som gjenkjennelsen bevares."
+        },
+        {
+          "id": "des-6",
+          "question": "Lager dere maler for sosiale medier?",
+          "answer": "Ja, slik at teamet deres kan publisere konsistent og raskt."
+        },
+        {
+          "id": "des-7",
+          "question": "Digitalt vs. trykkdesign?",
+          "answer": "Trykk krever fargerom, oppløsning og marginer; digitalt krever skarphet på skjerm og hastighet. Vi leverer begge riktig."
+        },
+        {
+          "id": "des-8",
+          "question": "Kan dere layout’e magasiner eller brosjyrer?",
+          "answer": "Ja, fler-siders InDesign-arbeid med grids, styles og prepress checks."
+        },
+        {
+          "id": "des-9",
+          "question": "Håndterer dere trykking?",
+          "answer": "Ja. Vi designer og kan trykke i små eller store opplag — fra visittkort og stickers til flyers, plakater og brosjyrer — med proofs og produksjonskoordinering."
+        },
+        {
+          "id": "des-10",
+          "question": "Hvor mange feedbackrunder er inkludert?",
+          "answer": "Vanligvis 2–3 strukturerte runder; flere kan avtales."
+        },
+        {
+          "id": "des-11",
+          "question": "Får vi kildefiler?",
+          "answer": "Ja, som avtalt (AI/PSD/INDD eller eksportpakker)."
+        },
+        {
+          "id": "des-12",
+          "question": "Kan design og webdesign henge sammen?",
+          "answer": "Ja. Brand systems og UI holdes konsistent på tvers av trykk og web."
+        },
+        {
+          "id": "des-13",
+          "question": "Hvor kan jeg lære mer om Digital Design?",
+          "answer": "Besøk /digital-design og Digital Design-tjenestene i menyen."
+        }
+      ]
+    },
+    {
+      "id": "marketing",
+      "title": "Markedsføring",
+      "items": [
+        {
+          "id": "mkt-1",
+          "question": "Hvilke markedsføringstjenester tilbyr dere?",
+          "answer": "AEO/GEO/SEO, content, social, ads, ecommerce growth, product listing, community management og data entry."
+        },
+        {
+          "id": "mkt-2",
+          "question": "Hvordan bygger dere en markedsføringsstrategi?",
+          "answer": "Mål, målgruppe, posisjonering, channel mix, content pipeline og KPI-er — praktisk og gjennomførbart."
+        },
+        {
+          "id": "mkt-3",
+          "question": "Hva er full-funnel marketing for dere?",
+          "answer": "Awareness → consideration → conversion → retention, med tydelige kanalroller."
+        },
+        {
+          "id": "mkt-4",
+          "question": "Hjelper dere med posisjonering?",
+          "answer": "Ja. Tydelig posisjonering hindrer spredte kampanjer og svak konvertering."
+        },
+        {
+          "id": "mkt-5",
+          "question": "Tilbyr dere innholdsskriving?",
+          "answer": "Ja: blogginnlegg, website copy, nyhetsbrev, landing pages og sales copy."
+        },
+        {
+          "id": "mkt-6",
+          "question": "Jobber dere med ecommerce marketing?",
+          "answer": "Ja: feeds, listing-kvalitet, CRO, ads og kategori-/produkt-SEO."
+        },
+        {
+          "id": "mkt-7",
+          "question": "Hva er CRO?",
+          "answer": "Conversion Rate Optimization — forbedring av sider og funnels slik at flere besøkende konverterer."
+        },
+        {
+          "id": "mkt-8",
+          "question": "Hvordan rapporterer dere markedsføringsresultater?",
+          "answer": "Rapporter/dashboards med trafikk, leads, salg, CPA/ROAS og channel learnings."
+        },
+        {
+          "id": "mkt-9",
+          "question": "Kan dere jobbe med vårt in-house team?",
+          "answer": "Ja — gjennomføre, rådgive eller eie et spesialistspor (kun SEO, kun ads osv.)."
+        },
+        {
+          "id": "mkt-10",
+          "question": "Hvor raskt kan kampanjer lanseres?",
+          "answer": "Ofte innen 1–2 uker etter tracking/oppsett; content går parallelt."
+        },
+        {
+          "id": "mkt-11",
+          "question": "Støtter dere email marketing?",
+          "answer": "Ja: flows, nyhetsbrev og copy, inkludert CRM/ecommerce-integrasjoner."
+        },
+        {
+          "id": "mkt-12",
+          "question": "Er markedsføring alltid en månedlig retainer?",
+          "answer": "Retainere passer for løpende vekst; audits, redesigns og launches kan være prosjektbasert."
+        },
+        {
+          "id": "mkt-13",
+          "question": "Hvordan unngår dere busywork uten resultater?",
+          "answer": "Alt knyttes til KPI-er. Det som underpresterer blir forbedret eller stoppet."
+        }
+      ]
+    },
+    {
+      "id": "social-media",
+      "title": "Sosiale medier",
+      "items": [
+        {
+          "id": "soc-1",
+          "question": "Hvilke sosiale kanaler håndterer dere?",
+          "answer": "Primært LinkedIn, Instagram, Facebook, og der det er relevant X/TikTok — basert på målgruppe-fit."
+        },
+        {
+          "id": "soc-2",
+          "question": "Hva er inkludert i social media management?",
+          "answer": "Strategi, kalender, produksjon/planlegging, community replies, rapportering og iterasjon."
+        },
+        {
+          "id": "soc-3",
+          "question": "Lager dere visuals og video?",
+          "answer": "Ja via media creation: stills, carousels, short-form video og templates."
+        },
+        {
+          "id": "soc-4",
+          "question": "Hvor ofte poster dere?",
+          "answer": "Avhenger av mål — typisk 3–5 ganger/uke på kjernekanaler, kvalitet over volum."
+        },
+        {
+          "id": "soc-5",
+          "question": "Tilbyr dere community management?",
+          "answer": "Ja: moderering, kommentarer, DMs og omdømmehåndtering med brand voice guidelines."
+        },
+        {
+          "id": "soc-6",
+          "question": "Kan social og ads fungere sammen?",
+          "answer": "Ja. Organiske vinnere blir annonsecreatives; ads forsterker det som resonnerer."
+        },
+        {
+          "id": "soc-7",
+          "question": "Hvordan måler dere suksess i sosiale medier?",
+          "answer": "Reach, engagement, click-outs, leads og assisted conversions — ikke bare likes."
+        },
+        {
+          "id": "soc-8",
+          "question": "Jobber dere med influencere?",
+          "answer": "Ved behov: utvelgelse, briefing og tracking med fokus på målbare resultater."
+        },
+        {
+          "id": "soc-9",
+          "question": "Kan dere støtte krisekommunikasjon?",
+          "answer": "Ja, med raske response protocols koordinert med teamet deres."
+        },
+        {
+          "id": "soc-10",
+          "question": "Hjelper dere med LinkedIn thought leadership?",
+          "answer": "Ja: personlig + bedriftsinnhold, carousels, caser og employee advocacy."
+        },
+        {
+          "id": "soc-11",
+          "question": "Leverer dere en content calendar?",
+          "answer": "Ja — månedlige eller kvartalsvise temaer, formater og frister."
+        },
+        {
+          "id": "soc-12",
+          "question": "Hva om vi allerede har en social manager?",
+          "answer": "Vi kan spesialisere oss (creatives, ads, strategi) eller støtte i peak-perioder."
+        },
+        {
+          "id": "soc-13",
+          "question": "Hvor raskt vil sosiale medier vokse?",
+          "answer": "Konsistens bygger over tid. Meningsfull vekst tar vanligvis uker til måneder; raskere med ads-støtte."
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "Support",
+      "items": [
+        {
+          "id": "sup-1",
+          "question": "Hvilken support tilbyr dere?",
+          "answer": "WordPress-support, support for custom sites, tickets/live chat, vedlikehold, sikkerhet, ytelse og incident response."
+        },
+        {
+          "id": "sup-2",
+          "question": "Hvordan kontakter jeg support?",
+          "answer": "Via kontakt, booking, dashboard tickets eller live chat. Kritiske saker får prioritet."
+        },
+        {
+          "id": "sup-3",
+          "question": "Hva er responstiden deres?",
+          "answer": "Rask første respons (ofte innen én virkedag; kritisk nedetid raskere). Nøyaktige SLA-er avhenger av pakken."
+        },
+        {
+          "id": "sup-4",
+          "question": "Tilbyr dere 24/7 overvåking?",
+          "answer": "Ja i relevante support-/hostingpakker: overvåking, backups og alerts."
+        },
+        {
+          "id": "sup-5",
+          "question": "Kan dere fjerne malware?",
+          "answer": "Ja — WordPress og custom stacks — inkludert hardening og oppfølging."
+        },
+        {
+          "id": "sup-6",
+          "question": "Håndterer dere WordPress-oppdateringer?",
+          "answer": "Ja via WordPress maintenance & updates: core/plugins/themes med backups og kontroller."
+        },
+        {
+          "id": "sup-7",
+          "question": "Kan dere hjelpe med hostingproblemer?",
+          "answer": "Ja — feilsøke, migrere eller optimalisere hosting/VPS/domener."
+        },
+        {
+          "id": "sup-8",
+          "question": "Hva hvis nettstedet mitt er nede?",
+          "answer": "Meld fra om at det haster. Vi gjenoppretter via backups, server-sjekker og hotfixes med statusoppdateringer."
+        },
+        {
+          "id": "sup-9",
+          "question": "Finnes det en kundeportal?",
+          "answer": "Ja. Innloggede kunder ser dashboard, tickets, prosjekter og relevant CRM/fakturaer."
+        },
+        {
+          "id": "sup-10",
+          "question": "Kan flere kolleger opprette tickets?",
+          "answer": "Ja, avhengig av kontoroller (client/manager/admin)."
+        },
+        {
+          "id": "sup-11",
+          "question": "Hva inngår i Basic/Standard/Premium support?",
+          "answer": "Flere nettsteder, raskere oppfølging og bredere dekning (oppdateringer, malware, hastighet, SEO). Se supportsidene for detaljer."
+        },
+        {
+          "id": "sup-12",
+          "question": "Hjelper dere også med ikke-tekniske spørsmål?",
+          "answer": "Ja — tjenester, fakturering og kontospørsmål, med teknisk dybde basert på pakken deres."
+        },
+        {
+          "id": "sup-13",
+          "question": "Kan jeg oppgradere support senere?",
+          "answer": "Ja, etter hvert som trafikk, risiko eller teambehov øker."
+        }
+      ]
+    },
+    {
+      "id": "webdesign",
+      "title": "Webdesign",
+      "items": [
+        {
+          "id": "web-1",
+          "question": "Bygger dere bare WordPress-nettsteder?",
+          "answer": "Nei. I tillegg til WordPress bygger vi custom sites i HTML/CSS/JS, PHP og Next.js — separat fra WordPress-tjenester."
+        },
+        {
+          "id": "web-2",
+          "question": "Hva er Website Support?",
+          "answer": "Design, utvikling, vedlikehold, sikkerhet, ytelse, backup/migrering og API-integrasjoner for custom stacks."
+        },
+        {
+          "id": "web-3",
+          "question": "Kan dere redesigne et eksisterende nettsted?",
+          "answer": "Ja: UX/UI-refresh, bedre konvertering og teknisk modernisering uten full rewrite dersom det kan unngås."
+        },
+        {
+          "id": "web-4",
+          "question": "Jobber dere med Next.js?",
+          "answer": "Ja — svært godt egnet for raske, SEO-ready marketing sites og dashboards."
+        },
+        {
+          "id": "web-5",
+          "question": "Bygger dere PHP-applikasjoner?",
+          "answer": "Ja: portaler, API-er, modernisering av legacy og hardening av ytelse/sikkerhet."
+        },
+        {
+          "id": "web-6",
+          "question": "Hvordan håndterer dere mobil?",
+          "answer": "Mobile-first design, responsive layouts og testing på vanlige enheter/nettlesere."
+        },
+        {
+          "id": "web-7",
+          "question": "Er tilgjengelighet inkludert?",
+          "answer": "Vi følger gode a11y-basics; strengere WCAG-programmer kan scopes inn."
+        },
+        {
+          "id": "web-8",
+          "question": "CMS-alternativer uten WordPress?",
+          "answer": "Ja: headless CMS, custom admin eller statiske oppsett avhengig av teamet deres."
+        },
+        {
+          "id": "web-9",
+          "question": "Hvor lang tid tar et webdesignprosjekt?",
+          "answer": "Landing pages på uker; større nettsteder/apper over flere sprints etter planlegging i intake."
+        },
+        {
+          "id": "web-10",
+          "question": "Inkluderer dere tekst og SEO ved lansering?",
+          "answer": "Ja når det kombineres med content/SEO, slik at nettstedet lanseres søkbart og konverteringsklart."
+        },
+        {
+          "id": "web-11",
+          "question": "Hva med ytelse etter lansering?",
+          "answer": "Vi optimaliserer Core Web Vitals, caching/CDN og overvåking via vedlikeholdspakker."
+        },
+        {
+          "id": "web-12",
+          "question": "Kan dere integrere API-er (CRM, betalinger, AI)?",
+          "answer": "Ja, med riktig error handling, logging og dokumentasjon."
+        },
+        {
+          "id": "web-13",
+          "question": "Hvordan leveres koden?",
+          "answer": "Via repo/deploy pipelines der det er mulig, med staging/production og overlevering."
+        },
+        {
+          "id": "web-14",
+          "question": "Hjelper dere med CRO på nettstedet?",
+          "answer": "Ja: UX-forbedringer, skjemaer, CTA-er, eksperimenter og page speed."
+        }
+      ]
+    },
+    {
+      "id": "webhosting",
+      "title": "Webhosting og domener",
+      "items": [
+        {
+          "id": "host-1",
+          "question": "Hvilken hosting tilbyr dere?",
+          "answer": "Shared-, WordPress- og VPS-hosting i Basic/Plus/Business tiers, samt domener."
+        },
+        {
+          "id": "host-2",
+          "question": "Shared vs WordPress vs VPS?",
+          "answer": "Shared passer mindre nettsteder. WordPress-hosting er WP-optimalisert. VPS gir mer ressurser/kontroll for tyngre belastning."
+        },
+        {
+          "id": "host-3",
+          "question": "Hjelper dere med domeneregistrering?",
+          "answer": "Ja — rådgivning, registrering/overføring og korrekt DNS-oppsett."
+        },
+        {
+          "id": "host-4",
+          "question": "Er SSL inkludert?",
+          "answer": "Ja, SSL er inkludert i relevante hostingplaner."
+        },
+        {
+          "id": "host-5",
+          "question": "Kan dere migrere nettstedet mitt til deres hosting?",
+          "answer": "Ja: backup, migrering, DNS cutover, SSL og smoke tests med minimal downtime."
+        },
+        {
+          "id": "host-6",
+          "question": "Hvordan fungerer backups?",
+          "answer": "Avhenger av plan: enkle eller automatiserte backups. Ekstra off-site retention kan legges til."
+        },
+        {
+          "id": "host-7",
+          "question": "Hva hvis trafikken øker?",
+          "answer": "Vi skalerer til Plus/Business eller VPS og optimaliserer caching/CDN."
+        },
+        {
+          "id": "host-8",
+          "question": "Er e-post inkludert med domener?",
+          "answer": "Avhenger av oppsett. Vi anbefaler stabile e-postløsninger og DNS auth (SPF/DKIM/DMARC)."
+        },
+        {
+          "id": "host-9",
+          "question": "Hvor sikker er hostingen deres?",
+          "answer": "SSL/brannmur, oppdateringer, overvåking og hardening, med valgfrie sikkerhetstjenester i tillegg."
+        },
+        {
+          "id": "host-10",
+          "question": "Kan jeg flytte fra shared til VPS senere?",
+          "answer": "Ja — planlagt migrering med testing og rollback."
+        },
+        {
+          "id": "host-11",
+          "question": "Støtter dere CDN?",
+          "answer": "Ja der det er relevant (ofte inkludert på WP-hosting) for raskere global levering."
+        },
+        {
+          "id": "host-12",
+          "question": "Hva er deres uptime-tilnærming?",
+          "answer": "Overvåking, rask incident response og tydelig kommunikasjon ved maintenance windows."
+        },
+        {
+          "id": "host-13",
+          "question": "Kan dere fikse DNS-problemer?",
+          "answer": "Ja: records, propagation, mail auth og domain wiring."
+        },
+        {
+          "id": "host-14",
+          "question": "Hvordan velger jeg riktig plan?",
+          "answer": "Basert på trafikk, stack (WP vs custom), ressurser og vekst. Vi gir ærlige råd."
+        },
+        {
+          "id": "host-15",
+          "question": "Hvor kan jeg se hostingpriser?",
+          "answer": "På hostingtjenestesidene under Services → Webhosting & Domains."
+        }
+      ]
+    }
+  ]
+}

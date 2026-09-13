@@ -426,5 +426,18 @@
     "seoTitleSuffix": "Wissensdatenbank",
     "tipLabel": "Tipp",
     "warnLabel": "Hinweis"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "Kategorien",
+    "questionsLabel": "Fragen",
+    "searchPlaceholder": "Fragen und Antworten durchsuchen…",
+    "searchAria": "FAQ durchsuchen",
+    "clearSearch": "Suche löschen",
+    "all": "Alle",
+    "result": "Ergebnis",
+    "results": "Ergebnisse",
+    "forQuery": "für",
+    "empty": "Keine Ergebnisse gefunden."
   }
 }

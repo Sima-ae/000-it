@@ -1,0 +1,739 @@
+{
+  "title": "Întrebări frecvente",
+  "subtitle": "Răspunsuri detaliate despre TripleZero iT — de la AI și SEO la design, marketing, suport și hosting.",
+  "ctaTitle": "Încă ai nevoie de ajutor?",
+  "ctaText": "Nu găsești răspunsul? Contactează echipa noastră și revenim rapid.",
+  "ctaButton": "Contactează-ne",
+  "categories": [
+    {
+      "id": "general",
+      "title": "General",
+      "items": [
+        {
+          "id": "gen-1",
+          "question": "Ce face TripleZero iT?",
+          "answer": "Combinăm webdesign, suport WordPress, marketing digital, vizibilitate în căutare (AEO, GEO/local și SEO), design și hosting — ajutând brandurile să fie găsite, să convertească și să crească."
+        },
+        {
+          "id": "gen-2",
+          "question": "Cum încep?",
+          "answer": "Programează un apel sau contactează-ne. Facem un scurt intake, analizăm obiectivele și stack-ul, apoi propunem un plan clar cu timeline și KPI-uri."
+        },
+        {
+          "id": "gen-3",
+          "question": "Cu ce tipuri de business-uri lucrați?",
+          "answer": "IMM-uri, scale-up-uri, ecommerce, agenții și branduri internaționale. Lucrăm alături de echipe existente sau ca partener full-service."
+        },
+        {
+          "id": "gen-4",
+          "question": "Lucrați doar în Olanda?",
+          "answer": "Nu. Deservim clienți din Benelux și internaționali, în olandeză și engleză."
+        },
+        {
+          "id": "gen-5",
+          "question": "Cum arată o colaborare tipică?",
+          "answer": "Intake → audit/scan → plan → execuție în sprinturi → măsurare → optimizare, cu milestone-uri clare."
+        },
+        {
+          "id": "gen-6",
+          "question": "Pot combina mai multe servicii?",
+          "answer": "Da. Combinații comune: webdesign + SEO + ads, sau mentenanță WordPress + hosting + securitate."
+        },
+        {
+          "id": "gen-7",
+          "question": "Cât de repede puteți începe?",
+          "answer": "Adesea în câteva zile lucrătoare după aprobare. Urgențele (malware, downtime) au prioritate."
+        },
+        {
+          "id": "gen-8",
+          "question": "Lucrați remote sau on-site?",
+          "answer": "În principal remote, cu comunicare structurată. On-site este disponibil la cerere."
+        },
+        {
+          "id": "gen-9",
+          "question": "Cum comunicați progresul?",
+          "answer": "Update-uri regulate, tichete/dashboard unde e relevant, plus rapoarte pe sprint sau lunar."
+        },
+        {
+          "id": "gen-10",
+          "question": "De ce aveți nevoie de la noi ca să începem?",
+          "answer": "Acces (dacă e necesar), obiective, asset-uri de brand, conturi de analytics și credențiale pentru tool-urile existente."
+        },
+        {
+          "id": "gen-11",
+          "question": "Sunteți potriviți pentru startup-uri?",
+          "answer": "Da — de la landing page-uri lean și AI scan-uri până la sisteme complete de growth pe măsură ce scalați."
+        },
+        {
+          "id": "gen-12",
+          "question": "Cine deține munca și conturile?",
+          "answer": "Tu deții domeniile, conținutul, repo-urile și conturile de ads. Livrăm fișiere și documentație la handover."
+        },
+        {
+          "id": "gen-13",
+          "question": "Puteți colabora cu vendorii noștri actuali?",
+          "answer": "Da. Lucrăm alături de developerii/marketerii tăi sau preluăm mentenanța într-un mod curat."
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI",
+      "items": [
+        {
+          "id": "ai-1",
+          "question": "Ce este AI scan-ul vostru?",
+          "answer": "Un AI readiness scan care punctează cât de bine performează site-ul tău pentru căutarea clasică, răspunsuri AI și vizibilitate locală/geografică (AEO, GEO, SEO și fundații tehnice)."
+        },
+        {
+          "id": "ai-2",
+          "question": "Ce măsoară AI scan-ul?",
+          "answer": "Semnale AEO, vizibilitate GEO/locală, fundamentale SEO, structură de conținut, indicatori de performanță și AI readiness — cu fixuri prioritizate."
+        },
+        {
+          "id": "ai-3",
+          "question": "Cât de des ar trebui să rulăm un AI scan?",
+          "answer": "După schimbări majore pe site sau campanii; pentru branduri active recomandăm scan-uri periodice (de ex. trimestrial)."
+        },
+        {
+          "id": "ai-4",
+          "question": "AI înseamnă doar scriere de conținut?",
+          "answer": "Nu. Include și discoverability tehnic, structured data, internal linking și modul în care sistemele AI rezumă brandul tău."
+        },
+        {
+          "id": "ai-5",
+          "question": "Puteți integra AI în workflow-urile noastre?",
+          "answer": "Da: asistență pentru conținut, automatizare, flow-uri de chat/tichete și integrări custom cu AI API."
+        },
+        {
+          "id": "ai-6",
+          "question": "Înlocuiește AI munca de strategie?",
+          "answer": "Nu. AI accelerează analiza și producția; strategia, brand voice-ul și deciziile de conversie rămân conduse de oameni."
+        },
+        {
+          "id": "ai-7",
+          "question": "E sigur conținutul generat de AI pentru SEO?",
+          "answer": "Doar cu revizie umană, insight unic și E-E-A-T. Evităm paginile subțiri și generice care afectează ranking-urile."
+        },
+        {
+          "id": "ai-8",
+          "question": "Ce este AI readiness?",
+          "answer": "Cât de bine sunt structurate site-ul, conținutul și datele tale astfel încât sistemele AI să poată cita, recomanda și explica corect brandul tău."
+        },
+        {
+          "id": "ai-9",
+          "question": "Folosiți AI agents în dashboard?",
+          "answer": "Da. Clienții pot vedea agents pentru SEO, conținut, social și ads cu status și task-uri."
+        },
+        {
+          "id": "ai-10",
+          "question": "Ce tool-uri AI folosiți?",
+          "answer": "Alegem tool-urile pe use case, cu guvernanță: surse, fact-checking, reguli de brand și privacy."
+        },
+        {
+          "id": "ai-11",
+          "question": "Poate AI să ajute la tichetele de suport?",
+          "answer": "Da pentru triage și răspunsuri mai rapide, cu escaladare umană pentru cazuri complexe sau sensibile."
+        },
+        {
+          "id": "ai-12",
+          "question": "Cum este prețuită munca AI?",
+          "answer": "De la un AI scan de intrare până la retainers lunare AI + marketing. Primești o propunere clară după intake."
+        },
+        {
+          "id": "ai-13",
+          "question": "Cum măsurăm ROI-ul AI?",
+          "answer": "KPI-uri precum trafic, lead-uri, timp economisit, output de conținut, rezolvare tichete și conversie — definite upfront."
+        }
+      ]
+    },
+    {
+      "id": "aeo-geo-seo",
+      "title": "AEO, GEO și SEO",
+      "items": [
+        {
+          "id": "seo-1",
+          "question": "Care e diferența între AEO, GEO și SEO?",
+          "answer": "AEO (Answer Engine Optimization) optimizează pentru răspunsuri AI. GEO (Geographic Search Engine Optimization) întărește vizibilitatea locală și regională în Maps, local packs și căutări bazate pe locație. SEO vizează motoarele de căutare clasice."
+        },
+        {
+          "id": "seo-2",
+          "question": "De ce contează AEO/GEO acum?",
+          "answer": "Tot mai mulți utilizatori primesc răspunsuri via AI și caută local („near me”). Fără AEO ratezi citările AI; fără GEO ratezi lead-urile din apropiere — chiar dacă SEO clasic e solid."
+        },
+        {
+          "id": "seo-3",
+          "question": "Cum începeți un engagement SEO?",
+          "answer": "Audit tehnic, keyword/intent research, analiză de content gap și un roadmap prioritizat legat de KPI-uri de business."
+        },
+        {
+          "id": "seo-4",
+          "question": "Cât durează până apar rezultatele SEO?",
+          "answer": "Câștigurile tehnice pot fi rapide. Growth-ul organic se acumulează de obicei în săptămâni sau luni, în funcție de competiție."
+        },
+        {
+          "id": "seo-5",
+          "question": "Oferiți local SEO?",
+          "answer": "Da: Google Business Profile, landing pages locale, consistență NAP, review-uri și clustere de conținut local."
+        },
+        {
+          "id": "seo-6",
+          "question": "Ce înseamnă pentru voi SEO tehnic?",
+          "answer": "Crawlability, indexare, Core Web Vitals, structured data, sitemaps/robots, canonicals, internal linking și curățare de erori."
+        },
+        {
+          "id": "seo-7",
+          "question": "Creați conținut SEO?",
+          "answer": "Da: briefs, outline-uri, bloguri, landing pages și FAQ-uri potrivite pe intent și structurate pentru vizibilitate în AI."
+        },
+        {
+          "id": "seo-8",
+          "question": "Ce este E-E-A-T?",
+          "answer": "Experience, Expertise, Authoritativeness, Trust — esențial pentru ranking-uri și credibilitate în rezumatele AI."
+        },
+        {
+          "id": "seo-9",
+          "question": "Faceți link building?",
+          "answer": "Da, etic și relevant: digital PR, parteneriate și asset-uri de conținut — niciodată scheme spam."
+        },
+        {
+          "id": "seo-10",
+          "question": "Puteți recupera după damage SEO?",
+          "answer": "Da: recovery după algoritmi, linkuri toxice, probleme de indexare și fixuri pentru content cannibalization."
+        },
+        {
+          "id": "seo-11",
+          "question": "Cum raportați progresul SEO?",
+          "answer": "Lunar sau pe sprint: rankings, trafic, conversii, probleme tehnice și next actions."
+        },
+        {
+          "id": "seo-12",
+          "question": "Funcționează SEO pentru ecommerce?",
+          "answer": "Da: SEO pentru produse/categorii, faceted navigation, review-uri, structured data și hub-uri de conținut pe buying intent."
+        },
+        {
+          "id": "seo-13",
+          "question": "SEO este one-off sau ongoing?",
+          "answer": "Cele mai bune rezultate vin din optimizare continuă. Audit-urile one-off ajută, dar competitorii se mișcă permanent."
+        },
+        {
+          "id": "seo-14",
+          "question": "Suportați SEO internațional?",
+          "answer": "Da: hreflang, market research pe locale, localizare și setup-uri tehnice multi-locale."
+        }
+      ]
+    },
+    {
+      "id": "advertising",
+      "title": "Publicitate",
+      "items": [
+        {
+          "id": "ads-1",
+          "question": "Ce canale de ads rulați?",
+          "answer": "Google Ads, Meta, LinkedIn și, unde e relevant, YouTube/retargeting — în funcție de funnel și buget."
+        },
+        {
+          "id": "ads-2",
+          "question": "Cum setați bugetele de ads?",
+          "answer": "Din obiective (lead-uri/vânzări), CAC țintă, prețuri de licitație și o fază de test. Începem lean și scalăm câștigătorii."
+        },
+        {
+          "id": "ads-3",
+          "question": "Care e abordarea voastră pentru Google Ads?",
+          "answer": "Structură de cont, mapare pe intent, negative, potrivire cu landing page, conversion tracking și optimizare săptămânală."
+        },
+        {
+          "id": "ads-4",
+          "question": "Puteți rula Meta Ads pentru ecommerce?",
+          "answer": "Da: cataloage/retargeting, creative, audiențe și testare de creative pentru a îmbunătăți ROAS."
+        },
+        {
+          "id": "ads-5",
+          "question": "Cum măsurați succesul ads?",
+          "answer": "Conversii, CPA/CAC, ROAS, calitatea lead-urilor și pipeline — nu click-uri de vanitate."
+        },
+        {
+          "id": "ads-6",
+          "question": "Ce dacă tracking-ul e stricat?",
+          "answer": "Reparăm GTM/GA4/pixeli, setup-uri de consent unde e necesar și opțiuni de măsurare mai solide."
+        },
+        {
+          "id": "ads-7",
+          "question": "Rulați B2B LinkedIn Ads?",
+          "answer": "Da, cu targeting precis, lead forms sau landing pages și mesaje pentru decidenți."
+        },
+        {
+          "id": "ads-8",
+          "question": "Cât de repede dau rezultate ads?",
+          "answer": "Traficul poate fi imediat. CPA/ROAS stabil cere de obicei 2–6 săptămâni de learning și iterație."
+        },
+        {
+          "id": "ads-9",
+          "question": "Creați creative pentru ads?",
+          "answer": "Da: copy, vizualuri și variante de test — design/media creation inclus când e nevoie."
+        },
+        {
+          "id": "ads-10",
+          "question": "Se pot susține reciproc ads și SEO?",
+          "answer": "Da. Insight-urile din search alimentează SEO; paginile organice puternice îmbunătățesc Quality Score și scad CPA."
+        },
+        {
+          "id": "ads-11",
+          "question": "Puteți prelua conturi de ads existente?",
+          "answer": "Da. Audităm, restructurăm și optimizăm fără rebuild-uri inutile."
+        },
+        {
+          "id": "ads-12",
+          "question": "Cum preveniți risipa de buget?",
+          "answer": "Negative, excluderi, cap-uri, controale geo, frequency limits și kill switch-uri rapide."
+        },
+        {
+          "id": "ads-13",
+          "question": "Mai merită remarketing-ul?",
+          "answer": "Da, când e privacy-compliant și cu oferte puternice — adesea cel mai eficient layer."
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "title": "Design",
+      "items": [
+        {
+          "id": "des-1",
+          "question": "Ce servicii de design oferiți?",
+          "answer": "Logo-uri, identitate de brand, cărți de vizită, antet, flyere, postere, stickere, reviste/broșuri și vizualuri digitale."
+        },
+        {
+          "id": "des-2",
+          "question": "Ce tool-uri folosiți?",
+          "answer": "Adobe Photoshop, Illustrator și InDesign pentru livrabile profesionale, print-ready."
+        },
+        {
+          "id": "des-3",
+          "question": "Livrați fișiere print-ready?",
+          "answer": "Da: CMYK, bleed, crop marks și exporturi PDF corecte, plus variante pentru ecran."
+        },
+        {
+          "id": "des-4",
+          "question": "Cum funcționează un proiect de logo?",
+          "answer": "Brief → concepte → runde de feedback → vectori finali (SVG/PDF/AI) și ghid de utilizare de bază."
+        },
+        {
+          "id": "des-5",
+          "question": "Puteți reîmprospăta un brand existent?",
+          "answer": "Da — actualizăm logo-ul, culorile și fonturile păstrând recunoașterea."
+        },
+        {
+          "id": "des-6",
+          "question": "Faceți template-uri pentru social?",
+          "answer": "Da, ca echipa ta să publice constant și rapid."
+        },
+        {
+          "id": "des-7",
+          "question": "Design digital vs print?",
+          "answer": "Printul cere spațiu de culoare, rezoluție și margini; digitalul cere claritate pe ecran și viteză. Le livrăm corect pe ambele."
+        },
+        {
+          "id": "des-8",
+          "question": "Puteți realiza layout pentru reviste sau broșuri?",
+          "answer": "Da, lucru InDesign multi-pagină cu griduri, stiluri și verificări prepress."
+        },
+        {
+          "id": "des-9",
+          "question": "Vă ocupați și de tipar?",
+          "answer": "Da. Proiectăm și putem tipări în cantități mici sau mari — de la cărți de vizită și stickere la flyere, postere și broșuri — cu proof-uri și coordonare de producție."
+        },
+        {
+          "id": "des-10",
+          "question": "Câte runde de feedback sunt incluse?",
+          "answer": "De obicei 2–3 runde structurate; mai multe sunt disponibile prin acord."
+        },
+        {
+          "id": "des-11",
+          "question": "Primim fișierele sursă?",
+          "answer": "Da, conform acordului (AI/PSD/INDD sau pachete de export)."
+        },
+        {
+          "id": "des-12",
+          "question": "Se pot alinia designul și webdesignul?",
+          "answer": "Da. Sistemele de brand și UI rămân consistente în print și pe web."
+        },
+        {
+          "id": "des-13",
+          "question": "Unde pot afla mai multe despre Digital Design?",
+          "answer": "Vizitează /digital-design și serviciile Digital Design din meniu."
+        }
+      ]
+    },
+    {
+      "id": "marketing",
+      "title": "Marketing",
+      "items": [
+        {
+          "id": "mkt-1",
+          "question": "Ce servicii de marketing oferiți?",
+          "answer": "AEO/GEO/SEO, conținut, social, ads, ecommerce growth, product listing, community management și data entry."
+        },
+        {
+          "id": "mkt-2",
+          "question": "Cum construiți o strategie de marketing?",
+          "answer": "Obiective, audiență, poziționare, mix de canale, pipeline de conținut și KPI-uri — practic și executabil."
+        },
+        {
+          "id": "mkt-3",
+          "question": "Ce înseamnă full-funnel marketing pentru voi?",
+          "answer": "Awareness → consideration → conversion → retention, cu roluri de canal clar definite."
+        },
+        {
+          "id": "mkt-4",
+          "question": "Ajutați cu poziționarea?",
+          "answer": "Da. Poziționarea clară previne campaniile împrăștiate și conversia slabă."
+        },
+        {
+          "id": "mkt-5",
+          "question": "Oferiți content writing?",
+          "answer": "Da: bloguri, copy pentru site, newslettere, landing pages și sales copy."
+        },
+        {
+          "id": "mkt-6",
+          "question": "Faceți marketing pentru ecommerce?",
+          "answer": "Da: feed-uri, calitatea listing-urilor, CRO, ads și SEO pentru categorii/produse."
+        },
+        {
+          "id": "mkt-7",
+          "question": "Ce este CRO?",
+          "answer": "Conversion Rate Optimization — îmbunătățirea paginilor și funnel-urilor ca mai mulți vizitatori să convertească."
+        },
+        {
+          "id": "mkt-8",
+          "question": "Cum raportați rezultatele de marketing?",
+          "answer": "Rapoarte/dashboarduri cu trafic, lead-uri, vânzări, CPA/ROAS și learnings pe canale."
+        },
+        {
+          "id": "mkt-9",
+          "question": "Puteți lucra cu echipa noastră in-house?",
+          "answer": "Da — executăm, consultăm sau deținem o zonă specialistă (doar SEO, doar ads etc.)."
+        },
+        {
+          "id": "mkt-10",
+          "question": "Cât de repede pot porni campaniile?",
+          "answer": "Adesea în 1–2 săptămâni după setup-ul de tracking; conținutul merge în paralel."
+        },
+        {
+          "id": "mkt-11",
+          "question": "Suportați email marketing?",
+          "answer": "Da: flow-uri, newslettere și copy, inclusiv integrări CRM/ecommerce."
+        },
+        {
+          "id": "mkt-12",
+          "question": "Marketingul este mereu un retainer lunar?",
+          "answer": "Retainerele se potrivesc pentru growth continuu; audituri, redesignuri și lansări pot fi proiecte."
+        },
+        {
+          "id": "mkt-13",
+          "question": "Cum evitați busywork fără rezultate?",
+          "answer": "Fiecare activitate este legată de KPI-uri. Ce nu performează se repară sau se oprește."
+        }
+      ]
+    },
+    {
+      "id": "social-media",
+      "title": "Social Media",
+      "items": [
+        {
+          "id": "soc-1",
+          "question": "Ce canale sociale gestionați?",
+          "answer": "În principal LinkedIn, Instagram, Facebook și, unde e relevant, X/TikTok — în funcție de potrivirea cu audiența."
+        },
+        {
+          "id": "soc-2",
+          "question": "Ce include managementul de social media?",
+          "answer": "Strategie, calendar, creare/programare, răspunsuri în comunitate, raportare și iterație."
+        },
+        {
+          "id": "soc-3",
+          "question": "Creați vizualuri și video?",
+          "answer": "Da prin media creation: imagini, carusele, short-form video și template-uri."
+        },
+        {
+          "id": "soc-4",
+          "question": "Cât de des postați?",
+          "answer": "Depinde de obiective — de obicei 3–5 ori/săptămână pe canalele de bază, calitate peste volum."
+        },
+        {
+          "id": "soc-5",
+          "question": "Oferiți community management?",
+          "answer": "Da: moderare, comentarii, DM-uri și grijă pentru reputație, cu ghiduri de brand voice."
+        },
+        {
+          "id": "soc-6",
+          "question": "Pot lucra împreună social și ads?",
+          "answer": "Da. Ce merge organic devine creative pentru ads; ads amplifică ce rezonează."
+        },
+        {
+          "id": "soc-7",
+          "question": "Cum măsurați succesul pe social?",
+          "answer": "Reach, engagement, click-outs, lead-uri și conversii asistate — nu doar like-uri."
+        },
+        {
+          "id": "soc-8",
+          "question": "Lucrați cu influenceri?",
+          "answer": "La cerere: selecție, briefing și tracking, focus pe rezultate măsurabile."
+        },
+        {
+          "id": "soc-9",
+          "question": "Puteți susține comunicarea de criză?",
+          "answer": "Da, cu protocoale de răspuns rapid coordonate cu echipa ta."
+        },
+        {
+          "id": "soc-10",
+          "question": "Ajutați cu thought leadership pe LinkedIn?",
+          "answer": "Da: conținut personal + companie, carusele, cazuri și employee advocacy."
+        },
+        {
+          "id": "soc-11",
+          "question": "Oferiți un calendar de conținut?",
+          "answer": "Da — teme, formate și deadline-uri lunar sau trimestrial."
+        },
+        {
+          "id": "soc-12",
+          "question": "Ce dacă avem deja un social manager?",
+          "answer": "Ne putem specializa (creative, ads, strategie) sau sprijini perioadele de vârf."
+        },
+        {
+          "id": "soc-13",
+          "question": "Cât de repede va crește socialul?",
+          "answer": "Consistența se acumulează. Growth semnificativ cere de obicei săptămâni sau luni; mai rapid cu suport de ads."
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "Suport",
+      "items": [
+        {
+          "id": "sup-1",
+          "question": "Ce suport oferiți?",
+          "answer": "Suport WordPress, suport pentru site-uri custom, tichete/live chat, mentenanță, securitate, performanță și incident response."
+        },
+        {
+          "id": "sup-2",
+          "question": "Cum ajung la suport?",
+          "answer": "Prin contact, booking, tichete în dashboard sau live chat. Problemele urgente primesc flag de prioritate."
+        },
+        {
+          "id": "sup-3",
+          "question": "Care este timpul de răspuns?",
+          "answer": "Prim răspuns rapid (adesea în aceeași zi lucrătoare; downtime critic mai repede). SLA-urile exacte depind de pachet."
+        },
+        {
+          "id": "sup-4",
+          "question": "Oferiți monitorizare 24/7?",
+          "answer": "Da, în pachetele relevante de suport/hosting: monitorizare, backup-uri și alerte."
+        },
+        {
+          "id": "sup-5",
+          "question": "Puteți elimina malware?",
+          "answer": "Da — pentru WordPress și stack-uri custom — inclusiv hardening și aftercare."
+        },
+        {
+          "id": "sup-6",
+          "question": "Vă ocupați de update-urile WordPress?",
+          "answer": "Da prin WordPress maintenance & updates: core/plugins/themes cu backup-uri și verificări."
+        },
+        {
+          "id": "sup-7",
+          "question": "Puteți ajuta cu probleme de hosting?",
+          "answer": "Da — diagnosticăm, migrăm sau optimizăm hosting/VPS/domenii."
+        },
+        {
+          "id": "sup-8",
+          "question": "Ce dacă site-ul meu e down?",
+          "answer": "Semnalează urgența. Restaurăm prin backup-uri, verificări de server și hotfix-uri, cu update-uri de status."
+        },
+        {
+          "id": "sup-9",
+          "question": "Există un client portal?",
+          "answer": "Da. Clienții autentificați văd dashboard, tichete, proiecte și CRM/facturi relevante."
+        },
+        {
+          "id": "sup-10",
+          "question": "Pot mai mulți colegi deschide tichete?",
+          "answer": "Da, în funcție de rolurile contului (client/manager/admin)."
+        },
+        {
+          "id": "sup-11",
+          "question": "Ce include suportul Basic/Standard/Premium?",
+          "answer": "Mai multe site-uri, follow-up mai rapid și acoperire mai largă (update-uri, malware, viteză, SEO). Vezi paginile de suport pentru detalii."
+        },
+        {
+          "id": "sup-12",
+          "question": "Ajutați și cu întrebări non-tehnice?",
+          "answer": "Da — servicii, facturare și întrebări de cont, cu profunzime tehnică în funcție de pachet."
+        },
+        {
+          "id": "sup-13",
+          "question": "Pot face upgrade la suport mai târziu?",
+          "answer": "Da, pe măsură ce cresc traficul, riscul sau nevoile echipei."
+        }
+      ]
+    },
+    {
+      "id": "webdesign",
+      "title": "Webdesign",
+      "items": [
+        {
+          "id": "web-1",
+          "question": "Construiți doar site-uri WordPress?",
+          "answer": "Nu. Pe lângă WordPress construim site-uri custom în HTML/CSS/JS, PHP și Next.js — separat de serviciile WordPress."
+        },
+        {
+          "id": "web-2",
+          "question": "Ce este Website Support?",
+          "answer": "Design, development, mentenanță, securitate, performanță, backup/migrare și integrări API pentru stack-uri custom."
+        },
+        {
+          "id": "web-3",
+          "question": "Puteți redesena un site existent?",
+          "answer": "Da: refresh UX/UI, îmbunătățiri de conversie și modernizare tehnică fără rewrite complet dacă se poate evita."
+        },
+        {
+          "id": "web-4",
+          "question": "Lucrați cu Next.js?",
+          "answer": "Da — excelent pentru site-uri de marketing rapide, SEO-ready, și dashboarduri."
+        },
+        {
+          "id": "web-5",
+          "question": "Construiți aplicații PHP?",
+          "answer": "Da: portaluri, API-uri, modernizare legacy și hardening de performanță/securitate."
+        },
+        {
+          "id": "web-6",
+          "question": "Cum gestionați mobile-ul?",
+          "answer": "Design mobile-first, layout-uri responsive și testare pe device-uri/browsere uzuale."
+        },
+        {
+          "id": "web-7",
+          "question": "Accesibilitatea este inclusă?",
+          "answer": "Urmăm bazele solide de a11y; programe WCAG mai stricte pot fi definite separat."
+        },
+        {
+          "id": "web-8",
+          "question": "Opțiuni CMS fără WordPress?",
+          "answer": "Da: headless CMS, admin custom sau setup-uri statice în funcție de echipa ta."
+        },
+        {
+          "id": "web-9",
+          "question": "Cât durează un proiect de web design?",
+          "answer": "Landing pages în câteva săptămâni; site-uri/aplicații mai mari în mai multe sprinturi după planificarea de intake."
+        },
+        {
+          "id": "web-10",
+          "question": "Includeți copy și SEO la lansare?",
+          "answer": "Da când este combinat cu conținut/SEO, ca site-ul să pornească ușor de găsit și conversion-ready."
+        },
+        {
+          "id": "web-11",
+          "question": "Ce se întâmplă cu performanța după launch?",
+          "answer": "Optimizăm Core Web Vitals, caching/CDN și monitorizare prin pachete de mentenanță."
+        },
+        {
+          "id": "web-12",
+          "question": "Puteți integra API-uri (CRM, plăți, AI)?",
+          "answer": "Da, cu error handling corect, logging și documentație."
+        },
+        {
+          "id": "web-13",
+          "question": "Cum livrați codul?",
+          "answer": "Prin repo/deploy pipelines unde e posibil, cu staging/production și handover."
+        },
+        {
+          "id": "web-14",
+          "question": "Ajutați cu CRO pe site?",
+          "answer": "Da: îmbunătățiri UX, formulare, CTA-uri, experimente și page speed."
+        }
+      ]
+    },
+    {
+      "id": "webhosting",
+      "title": "Webhosting & Domenii",
+      "items": [
+        {
+          "id": "host-1",
+          "question": "Ce hosting oferiți?",
+          "answer": "Hosting shared, WordPress și VPS în tier-uri Basic/Plus/Business, plus domenii."
+        },
+        {
+          "id": "host-2",
+          "question": "Shared vs WordPress vs VPS?",
+          "answer": "Shared se potrivește site-urilor mai mici. Hostingul WordPress este optimizat pentru WP. VPS oferă mai multe resurse/control pentru load-uri mai mari."
+        },
+        {
+          "id": "host-3",
+          "question": "Ajutați cu înregistrarea domeniilor?",
+          "answer": "Da — consiliere, înregistrare/transfer și configurare corectă DNS."
+        },
+        {
+          "id": "host-4",
+          "question": "SSL este inclus?",
+          "answer": "Da, SSL este inclus în planurile relevante de hosting."
+        },
+        {
+          "id": "host-5",
+          "question": "Puteți migra site-ul meu pe hostingul vostru?",
+          "answer": "Da: backup, migrare, DNS cutover, SSL și smoke tests cu downtime minim."
+        },
+        {
+          "id": "host-6",
+          "question": "Cum funcționează backup-urile?",
+          "answer": "Depinde de plan: backup-uri simple sau automate. Este disponibilă și retenție off-site suplimentară."
+        },
+        {
+          "id": "host-7",
+          "question": "Ce dacă traficul crește?",
+          "answer": "Scalăm către Plus/Business sau VPS și optimizăm caching/CDN."
+        },
+        {
+          "id": "host-8",
+          "question": "Emailul e inclus cu domeniile?",
+          "answer": "Depinde de setup. Recomandăm soluții de mail fiabile și DNS auth (SPF/DKIM/DMARC)."
+        },
+        {
+          "id": "host-9",
+          "question": "Cât de sigur e hostingul?",
+          "answer": "SSL/firewall, update-uri, monitorizare și hardening, cu servicii de securitate opționale."
+        },
+        {
+          "id": "host-10",
+          "question": "Pot trece de la shared la VPS mai târziu?",
+          "answer": "Da — migrare planificată cu testare și rollback."
+        },
+        {
+          "id": "host-11",
+          "question": "Suportați CDN?",
+          "answer": "Da unde e relevant (adesea inclus pe hostingul WP) pentru livrare globală mai rapidă."
+        },
+        {
+          "id": "host-12",
+          "question": "Care e abordarea voastră pentru uptime?",
+          "answer": "Monitorizare, incident response rapid și comunicare clară pentru ferestrele de mentenanță."
+        },
+        {
+          "id": "host-13",
+          "question": "Puteți rezolva probleme DNS?",
+          "answer": "Da: înregistrări, propagare, mail auth și conectarea domeniului."
+        },
+        {
+          "id": "host-14",
+          "question": "Cum aleg planul potrivit?",
+          "answer": "În funcție de trafic, stack (WP vs custom), resurse și creștere. Oferim recomandări sincere."
+        },
+        {
+          "id": "host-15",
+          "question": "Unde văd prețurile de hosting?",
+          "answer": "Pe paginile de servicii de hosting la Servicii → Webhosting & Domenii."
+        }
+      ]
+    }
+  ]
+}

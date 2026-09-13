@@ -426,5 +426,18 @@
     "seoTitleSuffix": "Bilik bazası",
     "tipLabel": "İpucu",
     "warnLabel": "Diqqət"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "kateqoriyalar",
+    "questionsLabel": "suallar",
+    "searchPlaceholder": "Sual və cavablarda axtar…",
+    "searchAria": "FAQ-də axtar",
+    "clearSearch": "Axtarışı təmizlə",
+    "all": "Hamısı",
+    "result": "nəticə",
+    "results": "nəticə",
+    "forQuery": "üçün",
+    "empty": "Nəticə tapılmadı."
   }
 }

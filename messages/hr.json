@@ -426,5 +426,18 @@
     "seoTitleSuffix": "Baza znanja",
     "tipLabel": "Savjet",
     "warnLabel": "Napomena"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "kategorije",
+    "questionsLabel": "pitanja",
+    "searchPlaceholder": "Pretraži pitanja i odgovore…",
+    "searchAria": "Pretraži FAQ",
+    "clearSearch": "Očisti pretragu",
+    "all": "Sve",
+    "result": "rezultat",
+    "results": "rezultata",
+    "forQuery": "za",
+    "empty": "Nema pronađenih rezultata."
   }
 }

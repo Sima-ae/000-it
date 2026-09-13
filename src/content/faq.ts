@@ -1,3 +1,5 @@
+import { loadFaqPack } from "@/content/faq-i18n/load";
+
 export type FaqItem = {
   id: string;
   question: string;
@@ -38,7 +40,7 @@ const nl: FaqContent = {
       items: [
         q("alg-1", "Wat doet TripleZero iT precies?", "TripleZero iT combineert webdesign, WordPress-support, digital marketing, zoekzichtbaarheid (AEO, GEO/lokaal en SEO), design en hosting. We helpen merken sneller gevonden te worden, betere websites te bouwen en meetbaar te groeien."),
         q("alg-2", "Hoe begin ik met TripleZero iT?", "Neem contact op of plan een afspraak. We doen een korte intake, kijken naar doelen en stack, en stellen een concreet voorstel met planning en KPI’s op."),
-        q("alg-3", "Voor welke bedrijven werken u?", "Voor MKB, scale-ups, e-commerce, agencies en internationale merken. We werken zowel met bestaande teams als als full-service partner."),
+        q("alg-3", "Voor welke bedrijven werken jullie?", "Voor MKB, scale-ups, e-commerce, agencies en internationale merken. We werken met bestaande teams én als full-service partner."),
         q("alg-4", "Werken wij alleen in Nederland?", "Nee. We bedienen klanten in de Benelux en internationaal, met Nederlands- en Engelstalige trajecten."),
         q("alg-5", "Hoe verloopt een typisch traject?", "Intake → audit/scan → plan → uitvoering in sprints → meting → optimalisatie. U krijgt duidelijke milestones en rapportage."),
         q("alg-6", "Kan ik meerdere diensten combineren?", "Ja. Veel klanten combineren bijvoorbeeld webdesign + SEO + ads, of WordPress-onderhoud + hosting + security."),
@@ -243,7 +245,7 @@ const en: FaqContent = {
       items: [
         q("gen-1", "What does TripleZero iT do?", "We combine webdesign, WordPress support, digital marketing, search visibility (AEO, GEO/local and SEO), design and hosting — helping brands get found, convert and grow."),
         q("gen-2", "How do I get started?", "Book a call or contact us. We run a short intake, review goals and stack, then propose a clear plan with timeline and KPIs."),
-        q("gen-3", "Who do you work with?", "SMBs, scale-ups, ecommerce brands, agencies and international teams — as full-service partner or specialist support."),
+        q("gen-3", "Which types of businesses do you work with?", "SMBs, scale-ups, ecommerce, agencies and international brands. We work with existing teams and as a full-service partner."),
         q("gen-4", "Do you only work in the Netherlands?", "No. We serve Benelux and international clients in Dutch and English."),
         q("gen-5", "What does a typical engagement look like?", "Intake → audit/scan → plan → sprint execution → measurement → optimization, with clear milestones."),
         q("gen-6", "Can I combine multiple services?", "Yes. Common mixes: webdesign + SEO + ads, or WordPress maintenance + hosting + security."),
@@ -435,5 +437,25 @@ const en: FaqContent = {
 };
 
 export function getFaqContent(locale: string): FaqContent {
+  const pack = loadFaqPack(locale);
+  if (pack) {
+    return {
+      title: pack.title,
+      subtitle: pack.subtitle,
+      ctaTitle: pack.ctaTitle,
+      ctaText: pack.ctaText,
+      ctaButton: pack.ctaButton,
+      categories: pack.categories.map((category) => ({
+        id: category.id,
+        title: category.title,
+        items: category.items.map((item) => ({
+          id: item.id,
+          question: item.question,
+          answer: item.answer,
+        })),
+      })),
+    };
+  }
+  // Legacy inline fallback if JSON packs are missing
   return locale === "nl" ? nl : en;
 }

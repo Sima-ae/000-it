@@ -426,5 +426,18 @@
     "seoTitleSuffix": "База знаний",
     "tipLabel": "Совет",
     "warnLabel": "Важно"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "категории",
+    "questionsLabel": "вопросы",
+    "searchPlaceholder": "Поиск по вопросам и ответам…",
+    "searchAria": "Поиск в FAQ",
+    "clearSearch": "Очистить поиск",
+    "all": "Все",
+    "result": "результат",
+    "results": "результаты",
+    "forQuery": "для",
+    "empty": "Результаты не найдены."
   }
 }

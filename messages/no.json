@@ -426,5 +426,18 @@
     "seoTitleSuffix": "Kunnskapsbase",
     "tipLabel": "Tips",
     "warnLabel": "Merk"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "kategorier",
+    "questionsLabel": "spørsmål",
+    "searchPlaceholder": "Søk i spørsmål og svar…",
+    "searchAria": "Søk i FAQ",
+    "clearSearch": "Tøm søk",
+    "all": "Alle",
+    "result": "resultat",
+    "results": "resultater",
+    "forQuery": "for",
+    "empty": "Ingen resultater funnet."
   }
 }

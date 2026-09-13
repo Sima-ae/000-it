@@ -11,7 +11,7 @@
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { randomBytes } from "node:crypto";
-import { siteOrigin } from "../src/lib/seo";
+import { sitemapPublicOrigin } from "../src/lib/seo";
 import { writeSitemapFiles } from "../src/lib/sitemap-builder";
 
 const ENDPOINTS = [
@@ -78,19 +78,24 @@ async function main() {
   }
 
   const payload = JSON.parse(readFileSync(urlsPath, "utf8")) as {
-    urls: string[];
+    urls?: string[];
+    urlCount?: number;
+    generatedAt?: string;
   };
   const urls = payload.urls || [];
+  if (payload.generatedAt) {
+    console.log(`[indexnow] urls.json generatedAt=${payload.generatedAt}`);
+  }
   if (!urls.length) {
     console.error("[indexnow] No URLs to submit");
     process.exit(1);
   }
 
-  const origin = siteOrigin();
+  const origin = sitemapPublicOrigin();
   const host = new URL(origin).host;
   if (host.includes("localhost") || host.startsWith("127.")) {
     console.warn(
-      `[indexnow] Host is ${host}. IndexNow engines need a public host. Set NEXT_PUBLIC_APP_URL=https://000-it.com`,
+      `[indexnow] Host is ${host}. IndexNow needs a public host. Set SITEMAP_BASE_URL=https://000-it.com`,
     );
   }
 

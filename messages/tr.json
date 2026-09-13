@@ -426,5 +426,18 @@
     "seoTitleSuffix": "Bilgi bankası",
     "tipLabel": "İpucu",
     "warnLabel": "Dikkat"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "kategoriler",
+    "questionsLabel": "sorular",
+    "searchPlaceholder": "Soru ve cevaplarda ara…",
+    "searchAria": "SSS’de ara",
+    "clearSearch": "Aramayı temizle",
+    "all": "Tümü",
+    "result": "sonuç",
+    "results": "sonuç",
+    "forQuery": "için",
+    "empty": "Sonuç bulunamadı."
   }
 }

@@ -1,0 +1,739 @@
+{
+  "title": "Tez-tez verilən suallar",
+  "subtitle": "TripleZero iT haqqında ətraflı cavablar — AI və SEO-dan tutmuş dizayn, marketinq, dəstək və hostinqə qədər.",
+  "ctaTitle": "Hələ də kömək lazımdır?",
+  "ctaText": "Cavabınızı tapa bilmirsiniz? Komandamızla əlaqə saxlayın və biz tezliklə geri dönəcəyik.",
+  "ctaButton": "Bizimlə əlaqə saxlayın",
+  "categories": [
+    {
+      "id": "general",
+      "title": "Ümumi",
+      "items": [
+        {
+          "id": "gen-1",
+          "question": "TripleZero iT nə edir?",
+          "answer": "Biz vebdizaynı, WordPress dəstəyini, rəqəmsal marketinqi, axtarış görünürlüyünü (AEO, GEO/yerli və SEO), dizaynı və hostinqi birləşdiririk — brendlərə tapılmaq, konvertasiya etmək və böyüməkdə kömək edirik."
+        },
+        {
+          "id": "gen-2",
+          "question": "Necə başlaya bilərəm?",
+          "answer": "Zəng təyin edin və ya bizimlə əlaqə saxlayın. Qısa bir ilkin görüş (intake) edirik, məqsədləri və stack-i nəzərdən keçiririk, sonra isə vaxt planı və KPI-larla aydın plan təqdim edirik."
+        },
+        {
+          "id": "gen-3",
+          "question": "Hansı tip bizneslərlə işləyirsiniz?",
+          "answer": "SMB-lər, scale-up-lar, ecommerce, agentliklər və beynəlxalq brendlər. Mövcud komandalarla yanaşı işləyirik və ya full-service tərəfdaş kimi çıxış edirik."
+        },
+        {
+          "id": "gen-4",
+          "question": "Yalnız Niderlandda işləyirsiniz?",
+          "answer": "Xeyr. Benelux və beynəlxalq müştərilərə holland və ingilis dillərində xidmət göstəririk."
+        },
+        {
+          "id": "gen-5",
+          "question": "Tipik əməkdaşlıq necə görünür?",
+          "answer": "İlkin görüş → audit/skan → plan → sprint icrası → ölçmə → optimizasiya — aydın mərhələlərlə."
+        },
+        {
+          "id": "gen-6",
+          "question": "Bir neçə xidməti birləşdirə bilərəm?",
+          "answer": "Bəli. Tez-tez kombinasiyalar: vebdizayn + SEO + reklamlar, və ya WordPress baxımı + hostinq + təhlükəsizlik."
+        },
+        {
+          "id": "gen-7",
+          "question": "Nə vaxt başlaya bilərsiniz?",
+          "answer": "Çox vaxt təsdiqdən sonra bir neçə iş günü ərzində. Təcili hallar (malware, downtime) prioritetdir."
+        },
+        {
+          "id": "gen-8",
+          "question": "Uzaqdan işləyirsiniz, yoxsa ofisdə?",
+          "answer": "Əsasən uzaqdan və sistemli kommunikasiya ilə. İstəyə görə yerində (on-site) də mümkündür."
+        },
+        {
+          "id": "gen-9",
+          "question": "İrəliləyişi necə paylaşırıq?",
+          "answer": "Müntəzəm yeniləmələr, lazım olduqda tiketlər/idarə paneli, həmçinin sprint və ya aylıq hesabatlar."
+        },
+        {
+          "id": "gen-10",
+          "question": "Başlamaq üçün sizə nə lazımdır?",
+          "answer": "Girişlər (lazım olduqda), məqsədlər, brend materialları, analitika hesabları və mövcud alətlərin giriş məlumatları."
+        },
+        {
+          "id": "gen-11",
+          "question": "Startaplar üçün uyğunsunuz?",
+          "answer": "Bəli — lean landing səhifələrdən və AI skanlardan başlayaraq, miqyaslandıqca tam growth sistemlərinə qədər."
+        },
+        {
+          "id": "gen-12",
+          "question": "İşin və hesabların sahibi kimdir?",
+          "answer": "Domenlər, kontent, repolar və reklam hesabları sizə məxsusdur. Təslimdə faylları və sənədləşməni təqdim edirik."
+        },
+        {
+          "id": "gen-13",
+          "question": "Mövcud vendorlarımızla əməkdaşlıq edə bilərsiniz?",
+          "answer": "Bəli. Developer/marketinq komandalarınızla yanaşı işləyirik və ya baxımı səliqəli şəkildə üzərimizə götürürük."
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI",
+      "items": [
+        {
+          "id": "ai-1",
+          "question": "AI skanınız nədir?",
+          "answer": "AI readiness skanı saytınızın klassik axtarış, AI cavabları və yerli/coğrafi görünürlük (AEO, GEO, SEO və texniki əsaslar) üçün nə dərəcədə hazır olduğunu qiymətləndirir."
+        },
+        {
+          "id": "ai-2",
+          "question": "AI skanı nəyi ölçür?",
+          "answer": "AEO siqnalları, GEO/yerli görünürlük, SEO əsasları, kontent strukturu, performans göstəriciləri və AI readiness — prioritet düzəlişlərlə."
+        },
+        {
+          "id": "ai-3",
+          "question": "AI skanını nə qədər tez-tez etməliyik?",
+          "answer": "Böyük sayt dəyişikliklərindən və ya kampaniyalardan sonra; aktiv brendlər üçün dövri skanlar tövsiyə edirik (məs., rüblük)."
+        },
+        {
+          "id": "ai-4",
+          "question": "AI yalnız kontent yazmaqdır?",
+          "answer": "Xeyr. Buraya texniki discoverability, structured data, daxili linkləmə və AI sistemlərinin brendinizi necə xülasə etməsi də daxildir."
+        },
+        {
+          "id": "ai-5",
+          "question": "AI-ni iş axınlarımıza inteqrasiya edə bilərsiniz?",
+          "answer": "Bəli: kontent köməkçisi, avtomatlaşdırma, chat/ticket axınları və xüsusi AI API inteqrasiyaları."
+        },
+        {
+          "id": "ai-6",
+          "question": "AI strategiya işinizi əvəz edirmi?",
+          "answer": "Xeyr. AI analizi və istehsalı sürətləndirir; strategiya, brend tonu və konvertasiya qərarları insan tərəfindən idarə olunur."
+        },
+        {
+          "id": "ai-7",
+          "question": "AI ilə yaradılan kontent SEO üçün təhlükəsizdirmi?",
+          "answer": "Yalnız insan yoxlaması, unikal insight və E-E-A-T ilə. Reytinqlərə zərər verən nazik, generik səhifələrdən qaçırıq."
+        },
+        {
+          "id": "ai-8",
+          "question": "AI readiness nədir?",
+          "answer": "Saytınızın, kontentinizin və datanızın AI sistemlərinin brendinizi düzgün sitat gətirməsi, tövsiyə etməsi və izah etməsi üçün nə qədər yaxşı strukturlandığı."
+        },
+        {
+          "id": "ai-9",
+          "question": "Dashboard-da AI agentlərindən istifadə edirsiniz?",
+          "answer": "Bəli. Müştərilər SEO, kontent, social və ads üçün agentləri status və tapşırıqlarla görə bilirlər."
+        },
+        {
+          "id": "ai-10",
+          "question": "Hansı AI alətlərindən istifadə edirsiniz?",
+          "answer": "Use-case-ə görə alət seçirik və governance tətbiq edirik: mənbələr, fakt yoxlaması, brend qaydaları və məxfilik."
+        },
+        {
+          "id": "ai-11",
+          "question": "AI support ticket-lərə kömək edə bilərmi?",
+          "answer": "Bəli — triage və daha sürətli cavablar üçün, kompleks və ya həssas hallarda isə insan eskalasiyası ilə."
+        },
+        {
+          "id": "ai-12",
+          "question": "AI işi necə qiymətlənir?",
+          "answer": "Giriş səviyyəli AI skandan aylıq AI + marketinq retainer-lərə qədər. İlkin görüşdən sonra aydın təklif veririk."
+        },
+        {
+          "id": "ai-13",
+          "question": "AI ROI-ni necə ölçürük?",
+          "answer": "Traffic, leads, time saved, kontent çıxışı, ticket resolution və konvertasiya kimi KPI-larla — əvvəlcədən müəyyən edilir."
+        }
+      ]
+    },
+    {
+      "id": "aeo-geo-seo",
+      "title": "AEO, GEO və SEO",
+      "items": [
+        {
+          "id": "seo-1",
+          "question": "AEO, GEO və SEO arasındakı fərq nədir?",
+          "answer": "AEO (Answer Engine Optimization) AI cavabları üçün optimizasiya edir. GEO (Geographic Search Engine Optimization) Maps, local pack və lokasiya əsaslı axtarışda yerli və regional görünürlüyü gücləndirir. SEO isə klassik axtarış sistemlərini hədəfləyir."
+        },
+        {
+          "id": "seo-2",
+          "question": "Niyə AEO/GEO indi önəmlidir?",
+          "answer": "Daha çox istifadəçi cavabı AI vasitəsilə alır və yerli axtarır (“near me”). AEO olmadan AI citations-u, GEO olmadan isə yaxın leads-ləri itirirsiniz — klassik SEO yaxşı olsa belə."
+        },
+        {
+          "id": "seo-3",
+          "question": "SEO əməkdaşlığına necə başlayırsınız?",
+          "answer": "Texniki audit, keyword/intent araşdırması, kontent gap analizi və biznes KPI-larına bağlı prioritetli roadmap."
+        },
+        {
+          "id": "seo-4",
+          "question": "SEO nəticələri nə vaxt görünür?",
+          "answer": "Texniki qazanclar tez ola bilər. Orqanik artım adətən rəqabətə görə həftələr–aylar ərzində yığılır."
+        },
+        {
+          "id": "seo-5",
+          "question": "Local SEO təklif edirsiniz?",
+          "answer": "Bəli: Google Business Profile, yerli landing səhifələr, NAP ardıcıllığı, rəylər və yerli kontent klasterləri."
+        },
+        {
+          "id": "seo-6",
+          "question": "Sizin üçün technical SEO nədir?",
+          "answer": "Crawlability, indexation, Core Web Vitals, structured data, sitemaps/robots, canonicals, daxili linkləmə və səhvlərin təmizlənməsi."
+        },
+        {
+          "id": "seo-7",
+          "question": "SEO kontenti yaradırsınız?",
+          "answer": "Bəli: brief-lər, outline-lar, bloqlar, landing səhifələr və FAQ-lar — intent-ə uyğun və AI görünürlüyü üçün strukturlu."
+        },
+        {
+          "id": "seo-8",
+          "question": "E-E-A-T nədir?",
+          "answer": "Experience, Expertise, Authoritativeness, Trust — reytinqlər və AI xülasələrində etibarlılıq üçün kritikdir."
+        },
+        {
+          "id": "seo-9",
+          "question": "Link building edirsiniz?",
+          "answer": "Bəli, etik və uyğun: digital PR, tərəfdaşlıqlar və kontent aktivləri — heç vaxt spam sxemləri."
+        },
+        {
+          "id": "seo-10",
+          "question": "SEO zədəsindən bərpa edə bilərsiniz?",
+          "answer": "Bəli: alqoritm bərpası, toxic link-lər, indexation problemləri və kontent cannibalization düzəlişləri."
+        },
+        {
+          "id": "seo-11",
+          "question": "SEO irəliləyişini necə hesabatlayırsınız?",
+          "answer": "Aylıq və ya sprint üzrə: reytinqlər, traffic, konvertasiyalar, texniki problemlər və növbəti addımlar."
+        },
+        {
+          "id": "seo-12",
+          "question": "SEO ecommerce üçün işləyirmi?",
+          "answer": "Bəli: product/category SEO, faceted navigation, rəylər, structured data və buying-intent kontent hub-ları."
+        },
+        {
+          "id": "seo-13",
+          "question": "SEO bir dəfəlikdir, yoxsa davamlı?",
+          "answer": "Ən yaxşı nəticələr davamlı optimizasiyadan gəlir. Bir dəfəlik audit kömək edir, amma rəqiblər hərəkətdə qalır."
+        },
+        {
+          "id": "seo-14",
+          "question": "International SEO dəstəkləyirsiniz?",
+          "answer": "Bəli: hreflang, hər locale üçün bazar araşdırması, lokallaşdırma və multi-locale texniki qurulumlar."
+        }
+      ]
+    },
+    {
+      "id": "advertising",
+      "title": "Reklam",
+      "items": [
+        {
+          "id": "ads-1",
+          "question": "Hansı reklam kanallarını idarə edirsiniz?",
+          "answer": "Google Ads, Meta, LinkedIn və lazım olduqda YouTube/retargeting — funnel və büdcəyə əsasən."
+        },
+        {
+          "id": "ads-2",
+          "question": "Reklam büdcələrini necə müəyyən edirsiniz?",
+          "answer": "Məqsədlərdən (leads/sales), hədəf CAC-dan, auksion qiymətlərindən və test mərhələsindən. Lean başlayırıq və işləyənləri miqyaslayırıq."
+        },
+        {
+          "id": "ads-3",
+          "question": "Google Ads yanaşmanız necədir?",
+          "answer": "Hesab strukturu, intent mapping, negative-lər, landing-page uyğunluğu, conversion tracking və həftəlik optimizasiya."
+        },
+        {
+          "id": "ads-4",
+          "question": "Ecommerce üçün Meta Ads qura bilərsiniz?",
+          "answer": "Bəli: kataloqlar/retargeting, kreativilər, auditoriyalar və creative testing ilə ROAS yaxşılaşdırılması."
+        },
+        {
+          "id": "ads-5",
+          "question": "Reklam uğurunu necə ölçürsünüz?",
+          "answer": "Conversions, CPA/CAC, ROAS, lead keyfiyyəti və pipeline — boş kliklər yox."
+        },
+        {
+          "id": "ads-6",
+          "question": "Tracking pozulubsa nə edirsiniz?",
+          "answer": "GTM/GA4/pixels-i düzəldirik, lazım olduqda consent qurulumlarını təkmilləşdiririk və ölçmə variantlarını gücləndiririk."
+        },
+        {
+          "id": "ads-7",
+          "question": "B2B LinkedIn Ads edirsiniz?",
+          "answer": "Bəli: dəqiq targeting, lead form və ya landing səhifələr, decision-maker mesajlaşması."
+        },
+        {
+          "id": "ads-8",
+          "question": "Reklamlar nə qədər tez nəticə verir?",
+          "answer": "Traffic dərhal gələ bilər. Sabit CPA/ROAS adətən 2–6 həftə öyrənmə və iterasiya tələb edir."
+        },
+        {
+          "id": "ads-9",
+          "question": "Reklam kreativiləri yaradırsınız?",
+          "answer": "Bəli: mətn, vizuallar və test variantları — lazım olduqda dizayn/media istehsalı daxil."
+        },
+        {
+          "id": "ads-10",
+          "question": "Reklam və SEO bir-birini gücləndirə bilərmi?",
+          "answer": "Bəli. Search insight-lar SEO-nu qidalandırır; güclü orqanik səhifələr Quality Score-u yaxşılaşdırır və CPA-nı azaldır."
+        },
+        {
+          "id": "ads-11",
+          "question": "Mövcud reklam hesablarını üzərinizə götürə bilərsiniz?",
+          "answer": "Bəli. Audit edirik, yenidən strukturlaşdırırıq və lazımsız rebuild etmədən optimizasiya edirik."
+        },
+        {
+          "id": "ads-12",
+          "question": "Boşa xərci necə azaldırsınız?",
+          "answer": "Negative-lər, exclusions, limitlər, geo controls, frequency limits və sürətli kill switch-lər."
+        },
+        {
+          "id": "ads-13",
+          "question": "Remarketing hələ də dəyərmi?",
+          "answer": "Bəli — privacy-compliant olduqda və güclü təkliflərlə, çox vaxt ən səmərəli qatdır."
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "title": "Dizayn",
+      "items": [
+        {
+          "id": "des-1",
+          "question": "Hansı dizayn xidmətlərini təklif edirsiniz?",
+          "answer": "Loqolar, brend identikliyi, vizitkartlar, letterhead, flayerlər, posterlər, stikerlər, jurnal/broşürlər və rəqəmsal vizuallar."
+        },
+        {
+          "id": "des-2",
+          "question": "Hansı alətlərdən istifadə edirsiniz?",
+          "answer": "Adobe Photoshop, Illustrator və InDesign — çap üçün hazır, peşəkar deliverable-lar üçün."
+        },
+        {
+          "id": "des-3",
+          "question": "Çap üçün hazır (print-ready) fayllar verirsiniz?",
+          "answer": "Bəli: CMYK, bleed, crop marks və düzgün PDF export-lar, həmçinin ekran variantları."
+        },
+        {
+          "id": "des-4",
+          "question": "Loqo layihəsi necə gedir?",
+          "answer": "Brief → konseptlər → feedback raundları → yekun vektorlar (SVG/PDF/AI) və əsas istifadə qaydaları."
+        },
+        {
+          "id": "des-5",
+          "question": "Mövcud brendi yeniləyə bilərsiniz?",
+          "answer": "Bəli — loqo, rəng və tipoqrafiyanı yeniləyib tanınmanı qoruyuruq."
+        },
+        {
+          "id": "des-6",
+          "question": "Sosial şəbəkə şablonları hazırlayırsınız?",
+          "answer": "Bəli, komandanızın ardıcıl və tez paylaşması üçün."
+        },
+        {
+          "id": "des-7",
+          "question": "Rəqəmsal və çap dizaynı arasındakı fərq nədir?",
+          "answer": "Çap rəng məkanı, rezolyusiya və kənarları tələb edir; rəqəmsal isə ekran kəskinliyi və sürət. Hər ikisini düzgün təqdim edirik."
+        },
+        {
+          "id": "des-8",
+          "question": "Jurnal və ya broşür layout edə bilərsiniz?",
+          "answer": "Bəli, çoxsəhifəli InDesign işi: grid, stillər və prepress yoxlamaları."
+        },
+        {
+          "id": "des-9",
+          "question": "Çap işini də təşkil edirsiniz?",
+          "answer": "Bəli. Dizayn edirik və kiçik və ya böyük tirajlarla çap edə bilirik — vizitkart və stikerlərdən flayerlərə, posterlərə və broşürlərə qədər — proof və istehsal koordinasiyası ilə."
+        },
+        {
+          "id": "des-10",
+          "question": "Neçə feedback raundu daxildir?",
+          "answer": "Adətən 2–3 strukturlaşdırılmış raund; daha çoxu razılaşma ilə."
+        },
+        {
+          "id": "des-11",
+          "question": "Source faylları alırıq?",
+          "answer": "Bəli, razılaşdırıldığı kimi (AI/PSD/INDD və ya export paketləri)."
+        },
+        {
+          "id": "des-12",
+          "question": "Dizayn və vebdizayn uyğunlaşdırıla bilərmi?",
+          "answer": "Bəli. Brend sistemləri və UI çap və vebdə ardıcıl qalır."
+        },
+        {
+          "id": "des-13",
+          "question": "Digital Design haqqında daha çox haradan öyrənə bilərəm?",
+          "answer": "/digital-design səhifəsinə baxın və menyuda Digital Design xidmətlərini seçin."
+        }
+      ]
+    },
+    {
+      "id": "marketing",
+      "title": "Marketinq",
+      "items": [
+        {
+          "id": "mkt-1",
+          "question": "Hansı marketinq xidmətlərini təklif edirsiniz?",
+          "answer": "AEO/GEO/SEO, kontent, social, ads, ecommerce growth, product listing, community management və data entry."
+        },
+        {
+          "id": "mkt-2",
+          "question": "Marketinq strategiyasını necə qurursunuz?",
+          "answer": "Məqsədlər, auditoriya, mövqeləndirmə, kanal miksı, kontent pipeline və KPI-lar — praktik və icraolunan."
+        },
+        {
+          "id": "mkt-3",
+          "question": "Sizin üçün full-funnel marketinq nədir?",
+          "answer": "Awareness → consideration → conversion → retention, kanalların rolları aydın müəyyən edilir."
+        },
+        {
+          "id": "mkt-4",
+          "question": "Mövqeləndirmədə kömək edirsiniz?",
+          "answer": "Bəli. Aydın mövqeləndirmə səpələnmiş kampaniyaların və zəif konvertasiyanın qarşısını alır."
+        },
+        {
+          "id": "mkt-5",
+          "question": "Kontent yazısı edirsiniz?",
+          "answer": "Bəli: bloqlar, sayt mətnləri, newsletter-lər, landing səhifələr və satış mətni."
+        },
+        {
+          "id": "mkt-6",
+          "question": "Ecommerce marketinqi edirsiniz?",
+          "answer": "Bəli: feed-lər, listing keyfiyyəti, CRO, ads və category/product SEO."
+        },
+        {
+          "id": "mkt-7",
+          "question": "CRO nədir?",
+          "answer": "Conversion Rate Optimization — səhifə və funnel-ləri yaxşılaşdıraraq daha çox ziyarətçinin konvertasiya etməsi."
+        },
+        {
+          "id": "mkt-8",
+          "question": "Marketinq nəticələrini necə hesabatlayırsınız?",
+          "answer": "Hesabatlar/idarə panelləri: traffic, leads, satış, CPA/ROAS və kanal üzrə öyrənmələr."
+        },
+        {
+          "id": "mkt-9",
+          "question": "Daxili komandamızla işləyə bilərsiniz?",
+          "answer": "Bəli — icra edə, məsləhət verə və ya ixtisaslaşmış istiqaməti üzərimizə götürə bilərik (yalnız SEO, yalnız ads və s.)."
+        },
+        {
+          "id": "mkt-10",
+          "question": "Kampaniyalar nə qədər tez başlaya bilər?",
+          "answer": "Tracking/setup-dan sonra çox vaxt 1–2 həftə ərzində; kontent paralel gedir."
+        },
+        {
+          "id": "mkt-11",
+          "question": "Email marketinqini də dəstəkləyirsiniz?",
+          "answer": "Bəli: flows, newsletter-lər və copy, o cümlədən CRM/ecommerce inteqrasiyaları."
+        },
+        {
+          "id": "mkt-12",
+          "question": "Marketinq həmişə aylıq retainer olur?",
+          "answer": "Davamlı growth üçün retainer-lər uyğundur; audit, redesign və launch kimi işlər layihə əsasında da ola bilər."
+        },
+        {
+          "id": "mkt-13",
+          "question": "Nəticəsiz “busywork”dən necə qaçırsınız?",
+          "answer": "Hər fəaliyyət KPI-lara bağlanır. Zəif performans göstərənləri düzəldir və ya dayandırırıq."
+        }
+      ]
+    },
+    {
+      "id": "social-media",
+      "title": "Sosial media",
+      "items": [
+        {
+          "id": "soc-1",
+          "question": "Hansı sosial kanalları idarə edirsiniz?",
+          "answer": "Əsasən LinkedIn, Instagram, Facebook, və lazım olduqda X/TikTok — auditoriya uyğunluğuna görə."
+        },
+        {
+          "id": "soc-2",
+          "question": "Sosial media idarəçiliyinə nə daxildir?",
+          "answer": "Strategiya, kontent təqvimi, yaradılma/cədvəlləmə, community cavabları, hesabat və iterasiya."
+        },
+        {
+          "id": "soc-3",
+          "question": "Vizual və video yaradırsınız?",
+          "answer": "Bəli, media creation: still-lər, karusel postlar, qısa format video və şablonlar."
+        },
+        {
+          "id": "soc-4",
+          "question": "Nə qədər tez-tez paylaşım edirsiniz?",
+          "answer": "Məqsədlərdən asılıdır — adətən əsas kanallarda həftədə 3–5 dəfə; keyfiyyət həcmdən önəmlidir."
+        },
+        {
+          "id": "soc-5",
+          "question": "Community management təklif edirsiniz?",
+          "answer": "Bəli: moderasiya, şərhlər, DM-lər və brend tonuna uyğun reputasiya qayğısı."
+        },
+        {
+          "id": "soc-6",
+          "question": "Sosial və reklam birlikdə işləyə bilərmi?",
+          "answer": "Bəli. Orqanik qaliblər reklam kreativi olur; reklam isə rezonans verəni böyüdür."
+        },
+        {
+          "id": "soc-7",
+          "question": "Sosial uğuru necə ölçürsünüz?",
+          "answer": "Reach, engagement, click-outs, leads və assisted conversions — təkcə likes yox."
+        },
+        {
+          "id": "soc-8",
+          "question": "Influencer-lərlə işləyirsiniz?",
+          "answer": "İstəyə görə: seçim, briefing və tracking — ölçülə bilən nəticələrə fokusla."
+        },
+        {
+          "id": "soc-9",
+          "question": "Krizis kommunikasiya dəstəyi verirsiniz?",
+          "answer": "Bəli, sürətli cavab protokolları ilə və komandanızla koordinasiyada."
+        },
+        {
+          "id": "soc-10",
+          "question": "LinkedIn thought leadership-də kömək edirsiniz?",
+          "answer": "Bəli: şəxsi + şirkət kontenti, karusellər, case-lər və employee advocacy."
+        },
+        {
+          "id": "soc-11",
+          "question": "Kontent təqvimi verirsiniz?",
+          "answer": "Bəli — aylıq və ya rüblük mövzular, formatlar və deadline-lar."
+        },
+        {
+          "id": "soc-12",
+          "question": "Artıq social menecerimiz varsa nə olar?",
+          "answer": "Biz ixtisaslaşa (kreativlər, reklam, strategiya) və ya pik dövrlərdə dəstək verə bilərik."
+        },
+        {
+          "id": "soc-13",
+          "question": "Sosial nə qədər tez böyüyəcək?",
+          "answer": "Ardıcıllıq yığılır. Mənalı artım adətən həftələr–aylar tələb edir; ads dəstəyi ilə daha sürətli ola bilər."
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "Dəstək",
+      "items": [
+        {
+          "id": "sup-1",
+          "question": "Hansı dəstəyi göstərirsiniz?",
+          "answer": "WordPress dəstəyi, custom site dəstəyi, tiketlər/canlı çat, baxım, təhlükəsizlik, performans və incident response."
+        },
+        {
+          "id": "sup-2",
+          "question": "Dəstəyə necə müraciət edə bilərəm?",
+          "answer": "Əlaqə forması, zəng bronu, idarə panelində tiketlər və ya canlı çat vasitəsilə. Təcili məsələlər prioritetlə işarələnir."
+        },
+        {
+          "id": "sup-3",
+          "question": "Cavab müddətiniz nədir?",
+          "answer": "Sürətli ilk cavab (çox vaxt bir iş günü ərzində; kritik downtime daha tez). Dəqiq SLA-lar paketdən asılıdır."
+        },
+        {
+          "id": "sup-4",
+          "question": "24/7 monitorinq təklif edirsiniz?",
+          "answer": "Bəli, uyğun dəstək/hostinq paketlərində: monitorinq, backup-lar və bildirişlər."
+        },
+        {
+          "id": "sup-5",
+          "question": "Malware-i təmizləyə bilərsiniz?",
+          "answer": "Bəli — həm WordPress, həm də custom stacks üçün — hardening və aftercare daxil."
+        },
+        {
+          "id": "sup-6",
+          "question": "WordPress yeniləmələrini edirsiniz?",
+          "answer": "Bəli, WordPress maintenance & updates: core/plugins/themes — backup və yoxlamalarla."
+        },
+        {
+          "id": "sup-7",
+          "question": "Hostinq problemlərində kömək edirsiniz?",
+          "answer": "Bəli — diaqnostika, miqrasiya və ya hosting/VPS/domains optimizasiyası."
+        },
+        {
+          "id": "sup-8",
+          "question": "Saytım down olarsa nə edirsiniz?",
+          "answer": "Təcili olduğunu bildirin. Backup-lar, server yoxlamaları və hotfix-lərlə bərpa edirik, status yeniləmələri veririk."
+        },
+        {
+          "id": "sup-9",
+          "question": "Müştəri portalı var?",
+          "answer": "Bəli. Giriş etmiş müştərilər idarə paneli, tiketlər, layihələr və uyğun olduqda CRM/invoice-ları görür."
+        },
+        {
+          "id": "sup-10",
+          "question": "Bir neçə komanda üzvü ticket aça bilər?",
+          "answer": "Bəli, account rollarından asılı olaraq (client/manager/admin)."
+        },
+        {
+          "id": "sup-11",
+          "question": "Basic/Standard/Premium dəstəkdə nələr var?",
+          "answer": "Daha çox sayt, daha sürətli follow-up və daha geniş əhatə (yeniləmələr, malware, sürət, SEO). Detallar üçün dəstək səhifələrinə baxın."
+        },
+        {
+          "id": "sup-12",
+          "question": "Qeyri-texniki suallarda da kömək edirsiniz?",
+          "answer": "Bəli — xidmət, billing və account sualları. Texniki dərinlik paketinizdən asılıdır."
+        },
+        {
+          "id": "sup-13",
+          "question": "Sonradan dəstəyi yüksəldə bilərəm?",
+          "answer": "Bəli, traffic, risk və ya komanda ehtiyacları artdıqca."
+        }
+      ]
+    },
+    {
+      "id": "webdesign",
+      "title": "Vebdizayn",
+      "items": [
+        {
+          "id": "web-1",
+          "question": "Yalnız WordPress saytları qurursunuz?",
+          "answer": "Xeyr. WordPress-dən əlavə HTML/CSS/JS, PHP və Next.js ilə custom saytlar qururuq — WordPress xidmətlərindən ayrı."
+        },
+        {
+          "id": "web-2",
+          "question": "Website Support nədir?",
+          "answer": "Dizayn, development, baxım, təhlükəsizlik, performans, backup/miqrasiya və custom stacks üçün API inteqrasiyaları."
+        },
+        {
+          "id": "web-3",
+          "question": "Mövcud saytı yenidən dizayn edə bilərsiniz?",
+          "answer": "Bəli: UX/UI yenilənməsi, konvertasiya yaxşılaşdırmaları və texniki modernləşdirmə — mümkünsə tam rewrite olmadan."
+        },
+        {
+          "id": "web-4",
+          "question": "Next.js ilə işləyirsiniz?",
+          "answer": "Bəli — sürətli, SEO-ready marketinq saytları və idarə panelləri üçün əladır."
+        },
+        {
+          "id": "web-5",
+          "question": "PHP tətbiqləri qurursunuz?",
+          "answer": "Bəli: portallar, API-lər, legacy modernləşdirmə və performance/security hardening."
+        },
+        {
+          "id": "web-6",
+          "question": "Mobil üçün necə yanaşırsınız?",
+          "answer": "Mobile-first dizayn, responsive layout-lar və geniş yayılmış cihaz/brauzerlərdə test."
+        },
+        {
+          "id": "web-7",
+          "question": "Accessibility daxildirmi?",
+          "answer": "A11y əsaslarını tətbiq edirik; daha ciddi WCAG proqramları scope-a daxil edilə bilər."
+        },
+        {
+          "id": "web-8",
+          "question": "WordPress-siz CMS seçimləri varmı?",
+          "answer": "Bəli: headless CMS, custom admin və ya statik qurulumlar — komandanıza uyğun."
+        },
+        {
+          "id": "web-9",
+          "question": "Vebdizayn layihəsi nə qədər çəkir?",
+          "answer": "Landing səhifələr həftələrdə; daha böyük sayt/tətbiqlər intake planlamasından sonra bir neçə sprintdə."
+        },
+        {
+          "id": "web-10",
+          "question": "Launch zamanı copy və SEO daxil olur?",
+          "answer": "Bəli, kontent/SEO ilə birlikdə olduqda sayt tapılan və konvertasiyaya hazır şəkildə start götürür."
+        },
+        {
+          "id": "web-11",
+          "question": "Launch-dan sonra performans necə olur?",
+          "answer": "Core Web Vitals, caching/CDN və monitorinqi optimizasiya edirik — baxım paketləri ilə."
+        },
+        {
+          "id": "web-12",
+          "question": "API inteqrasiyaları edə bilərsiniz (CRM, ödənişlər, AI)?",
+          "answer": "Bəli, düzgün error handling, logging və sənədləşmə ilə."
+        },
+        {
+          "id": "web-13",
+          "question": "Kod necə təhvil verilir?",
+          "answer": "Mümkün olduqda repo/deploy pipeline-lar vasitəsilə, staging/production və handover ilə."
+        },
+        {
+          "id": "web-14",
+          "question": "On-site CRO-da kömək edirsiniz?",
+          "answer": "Bəli: UX yaxşılaşdırmaları, formalar, CTA-lar, eksperimentlər və səhifə sürəti."
+        }
+      ]
+    },
+    {
+      "id": "webhosting",
+      "title": "Vebhostinq və domenlər",
+      "items": [
+        {
+          "id": "host-1",
+          "question": "Hansı hostinqi təklif edirsiniz?",
+          "answer": "Shared, WordPress və VPS hostinq — Basic/Plus/Business səviyyələri, həmçinin domenlər."
+        },
+        {
+          "id": "host-2",
+          "question": "Shared vs WordPress vs VPS nədir?",
+          "answer": "Shared daha kiçik saytlar üçün uyğundur. WordPress hostinqi WP üçün optimallaşdırılıb. VPS daha ağır yüklər üçün daha çox resurs/nəzarət verir."
+        },
+        {
+          "id": "host-3",
+          "question": "Domen qeydiyyatında kömək edirsiniz?",
+          "answer": "Bəli — məsləhət veririk, qeydiyyat/transfer edirik və DNS-i düzgün sazlayırıq."
+        },
+        {
+          "id": "host-4",
+          "question": "SSL daxildirmi?",
+          "answer": "Bəli, uyğun hostinq planlarında SSL daxildir."
+        },
+        {
+          "id": "host-5",
+          "question": "Saytımı hostinqinizə köçürə bilərsiniz?",
+          "answer": "Bəli: backup, miqrasiya, DNS cutover, SSL və smoke test-lər — minimum downtime ilə."
+        },
+        {
+          "id": "host-6",
+          "question": "Backup-lar necə işləyir?",
+          "answer": "Plan-dan asılıdır: asan və ya avtomat backup-lar. Əlavə off-site saxlanma mümkündür."
+        },
+        {
+          "id": "host-7",
+          "question": "Traffic artsa nə olacaq?",
+          "answer": "Plus/Business və ya VPS-ə miqyaslayırıq və caching/CDN optimizasiyası edirik."
+        },
+        {
+          "id": "host-8",
+          "question": "Domenlərlə email daxildirmi?",
+          "answer": "Qurulumdan asılıdır. Etibarlı mail həlləri və DNS auth (SPF/DKIM/DMARC) tövsiyə edirik."
+        },
+        {
+          "id": "host-9",
+          "question": "Hostinqiniz nə qədər təhlükəsizdir?",
+          "answer": "SSL/firewall, yeniləmələr, monitorinq və hardening — əlavə təhlükəsizlik xidmətləri ilə."
+        },
+        {
+          "id": "host-10",
+          "question": "Sonradan shared-dən VPS-ə keçə bilərəm?",
+          "answer": "Bəli — planlı miqrasiya, test və rollback ilə."
+        },
+        {
+          "id": "host-11",
+          "question": "CDN dəstəkləyirsiniz?",
+          "answer": "Bəli, uyğun olduqda (çox vaxt WP hostinqdə daxildir) daha sürətli qlobal çatdırılma üçün."
+        },
+        {
+          "id": "host-12",
+          "question": "Uptime yanaşmanız nədir?",
+          "answer": "Monitorinq, sürətli incident response və maintenance pəncərələri üçün aydın kommunikasiya."
+        },
+        {
+          "id": "host-13",
+          "question": "DNS problemlərini həll edə bilərsiniz?",
+          "answer": "Bəli: records, propagation, mail auth və domenin qoşulması."
+        },
+        {
+          "id": "host-14",
+          "question": "Düzgün planı necə seçmək olar?",
+          "answer": "Traffic, stack (WP vs custom), resurslar və growth əsasında. Dürüst şəkildə tövsiyə edirik."
+        },
+        {
+          "id": "host-15",
+          "question": "Hostinq qiymətlərini haradan görə bilərəm?",
+          "answer": "Xidmət səhifələrində, Services → Webhosting & Domains bölməsində."
+        }
+      ]
+    }
+  ]
+}

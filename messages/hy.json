@@ -426,5 +426,18 @@
     "seoTitleSuffix": "Գիտելիքների բազա",
     "tipLabel": "Խորհուրդ",
     "warnLabel": "Ուշադրություն"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "կատեգորիաներ",
+    "questionsLabel": "հարցեր",
+    "searchPlaceholder": "Որոնել հարցերում և պատասխաններում…",
+    "searchAria": "Որոնել ՀՏՀ-ում",
+    "clearSearch": "Մաքրել որոնումը",
+    "all": "Բոլորը",
+    "result": "արդյունք",
+    "results": "արդյունք",
+    "forQuery": "համար",
+    "empty": "Արդյունքներ չեն գտնվել."
   }
 }

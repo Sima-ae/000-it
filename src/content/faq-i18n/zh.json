@@ -1,0 +1,739 @@
+{
+  "title": "常见问题",
+  "subtitle": "关于 TripleZero iT 的深入解答——从 AI 与 SEO 到设计、营销、支持与主机托管。",
+  "ctaTitle": "仍然需要帮助？",
+  "ctaText": "找不到答案？联系团队，我们会尽快回复。",
+  "ctaButton": "联系我们",
+  "categories": [
+    {
+      "id": "general",
+      "title": "通用",
+      "items": [
+        {
+          "id": "gen-1",
+          "question": "TripleZero iT 提供哪些服务？",
+          "answer": "我们将网站设计、WordPress 支持、数字营销、搜索可见性（AEO、GEO/本地与 SEO）、设计与主机托管整合在一起，帮助品牌被发现、促成转化并持续增长。"
+        },
+        {
+          "id": "gen-2",
+          "question": "如何开始合作？",
+          "answer": "预约通话或直接联系我们。我们会进行简短的需求沟通，评估目标与技术栈，然后给出包含时间线与 KPI 的清晰计划。"
+        },
+        {
+          "id": "gen-3",
+          "question": "你们通常与哪些类型的企业合作？",
+          "answer": "中小企业、scale-up、电商、代理机构以及国际品牌。我们既可与现有团队协作，也可作为全方位（full-service）合作伙伴。"
+        },
+        {
+          "id": "gen-4",
+          "question": "你们只在荷兰提供服务吗？",
+          "answer": "不。我们为比荷卢及国际客户提供服务，支持荷兰语与英语。"
+        },
+        {
+          "id": "gen-5",
+          "question": "典型的合作流程是什么样的？",
+          "answer": "需求沟通 → 审计/扫描 → 计划 → 冲刺执行 → 数据衡量 → 优化，并设定清晰里程碑。"
+        },
+        {
+          "id": "gen-6",
+          "question": "可以组合多项服务吗？",
+          "answer": "可以。常见组合包括：网站设计 + SEO + 广告，或 WordPress 维护 + 主机托管 + 安全。"
+        },
+        {
+          "id": "gen-7",
+          "question": "你们多久可以开始？",
+          "answer": "通常在批准后几个工作日内即可开始。紧急情况（malware、宕机）将优先处理。"
+        },
+        {
+          "id": "gen-8",
+          "question": "你们远程工作还是现场支持？",
+          "answer": "以远程为主，并采用结构化沟通。也可按需提供现场支持。"
+        },
+        {
+          "id": "gen-9",
+          "question": "你们如何同步项目进度？",
+          "answer": "定期更新、必要时通过工单/仪表盘，以及冲刺或月度报告。"
+        },
+        {
+          "id": "gen-10",
+          "question": "开始合作需要我们提供什么？",
+          "answer": "必要的访问权限、目标、品牌素材、分析账号以及现有工具的登录信息。"
+        },
+        {
+          "id": "gen-11",
+          "question": "你们适合创业公司吗？",
+          "answer": "适合——从精简的落地页与 AI 扫描，到随着规模增长而搭建完整的增长系统。"
+        },
+        {
+          "id": "gen-12",
+          "question": "成果与账号的所有权归谁？",
+          "answer": "域名、内容、代码仓库与广告账号均归你们所有。交付时我们会提供文件与文档。"
+        },
+        {
+          "id": "gen-13",
+          "question": "可以与我们现有的供应商协作吗？",
+          "answer": "可以。我们可与现有开发/营销团队并行协作，也可在交接清晰的前提下接手维护。"
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI",
+      "items": [
+        {
+          "id": "ai-1",
+          "question": "你们的 AI 扫描是什么？",
+          "answer": "AI 准备度扫描，用于评估你的网站在传统搜索、AI 答案以及本地/地理可见性方面的表现（AEO、GEO、SEO 与技术基础）。"
+        },
+        {
+          "id": "ai-2",
+          "question": "AI 扫描会衡量哪些内容？",
+          "answer": "AEO 信号、GEO/本地可见性、SEO 基础、内容结构、性能指标与 AI 准备度，并给出按优先级排序的修复建议。"
+        },
+        {
+          "id": "ai-3",
+          "question": "AI 扫描应该多久做一次？",
+          "answer": "重大改版或活动之后；对于持续运营的品牌，建议定期（例如每季度）复扫。"
+        },
+        {
+          "id": "ai-4",
+          "question": "AI 只是用来写内容吗？",
+          "answer": "不是。还包括技术可发现性、structured data、站内链接，以及 AI 系统如何总结你的品牌。"
+        },
+        {
+          "id": "ai-5",
+          "question": "你们能把 AI 集成到我们的工作流里吗？",
+          "answer": "可以：内容辅助、自动化、聊天/工单流程，以及定制 AI API 集成。"
+        },
+        {
+          "id": "ai-6",
+          "question": "AI 会取代你们的策略工作吗？",
+          "answer": "不会。AI 加速分析与产出；策略、品牌语气与转化决策仍由人主导。"
+        },
+        {
+          "id": "ai-7",
+          "question": "AI 生成内容对 SEO 安全吗？",
+          "answer": "只有在人工审核、独特洞察与 E-E-A-T 到位的情况下才安全。我们会避免薄弱、泛化页面对排名造成伤害。"
+        },
+        {
+          "id": "ai-8",
+          "question": "什么是 AI readiness（AI 准备度）？",
+          "answer": "指你的网站、内容与数据是否足够结构化，让 AI 系统能正确引用、推荐并解释你的品牌。"
+        },
+        {
+          "id": "ai-9",
+          "question": "你们在仪表盘里使用 AI agents 吗？",
+          "answer": "是的。客户可查看用于 SEO、内容、社交与广告的 agents 状态与任务。"
+        },
+        {
+          "id": "ai-10",
+          "question": "你们使用哪些 AI 工具？",
+          "answer": "我们按场景选择工具，并建立治理规则：信息来源、事实核查、品牌规范与隐私。"
+        },
+        {
+          "id": "ai-11",
+          "question": "AI 能帮助处理支持工单吗？",
+          "answer": "可以，用于分流（triage）与加速回复；复杂或敏感问题会升级给人工处理。"
+        },
+        {
+          "id": "ai-12",
+          "question": "AI 工作如何定价？",
+          "answer": "从入门 AI 扫描到按月的 AI + 营销服务。需求沟通后会提供清晰报价。"
+        },
+        {
+          "id": "ai-13",
+          "question": "如何衡量 AI 的 ROI？",
+          "answer": "以 KPI 衡量：流量、线索、节省时间、内容产出、工单解决效率与转化率，并在项目开始前确定。"
+        }
+      ]
+    },
+    {
+      "id": "aeo-geo-seo",
+      "title": "AEO、GEO 与 SEO",
+      "items": [
+        {
+          "id": "seo-1",
+          "question": "AEO、GEO 和 SEO 有什么区别？",
+          "answer": "AEO（Answer Engine Optimization）面向 AI 答案优化。GEO（Geographic Search Engine Optimization）强化在 Maps、local pack 与基于位置的搜索中的本地/区域可见性。SEO 则面向传统搜索引擎。"
+        },
+        {
+          "id": "seo-2",
+          "question": "为什么现在 AEO/GEO 很重要？",
+          "answer": "越来越多用户通过 AI 获取答案，同时也在进行本地搜索（“near me/附近”）。没有 AEO 会错失 AI 引用；没有 GEO 会错失周边线索——即使传统 SEO 很强。"
+        },
+        {
+          "id": "seo-3",
+          "question": "你们如何启动 SEO 合作？",
+          "answer": "从技术审计、关键词/意图研究、内容差距分析开始，并给出与业务 KPI 绑定的优先级路线图。"
+        },
+        {
+          "id": "seo-4",
+          "question": "SEO 多久能看到效果？",
+          "answer": "技术优化可能见效较快；自然增长通常需要数周到数月累积，取决于竞争程度。"
+        },
+        {
+          "id": "seo-5",
+          "question": "你们做本地 SEO 吗？",
+          "answer": "做：Google Business Profile、本地落地页、NAP 一致性、评价管理与本地内容集群。"
+        },
+        {
+          "id": "seo-6",
+          "question": "你们的 technical SEO 包含什么？",
+          "answer": "Crawlability、索引、Core Web Vitals、structured data、sitemaps/robots、canonical、站内链接与错误清理。"
+        },
+        {
+          "id": "seo-7",
+          "question": "你们提供 SEO 内容制作吗？",
+          "answer": "提供：内容简报、结构大纲、博客、落地页与 FAQ，对齐搜索意图并为 AI 可见性进行结构化。"
+        },
+        {
+          "id": "seo-8",
+          "question": "什么是 E-E-A-T？",
+          "answer": "Experience、Expertise、Authoritativeness、Trust——对排名与 AI 摘要中的可信度都很关键。"
+        },
+        {
+          "id": "seo-9",
+          "question": "你们做外链建设吗？",
+          "answer": "做，且坚持合规与相关性：digital PR、合作伙伴与内容资产；绝不使用垃圾链接方案。"
+        },
+        {
+          "id": "seo-10",
+          "question": "你们能修复 SEO 受损问题吗？",
+          "answer": "可以：算法波动恢复、toxicity 链接、索引问题与内容蚕食（cannibalization）修复。"
+        },
+        {
+          "id": "seo-11",
+          "question": "你们如何汇报 SEO 进展？",
+          "answer": "按月或按冲刺：排名、流量、转化、技术问题与下一步行动。"
+        },
+        {
+          "id": "seo-12",
+          "question": "SEO 对电商有效吗？",
+          "answer": "有效：商品/分类 SEO、faceted navigation、评价、structured data 与购买意图内容中心。"
+        },
+        {
+          "id": "seo-13",
+          "question": "SEO 是一次性还是持续的？",
+          "answer": "最佳效果来自持续优化。一次性审计有帮助，但竞争对手也在持续推进。"
+        },
+        {
+          "id": "seo-14",
+          "question": "你们支持国际化 SEO 吗？",
+          "answer": "支持：hreflang、按地区/语言的市场研究、本地化，以及多语言/多地区（multi-locale）技术方案。"
+        }
+      ]
+    },
+    {
+      "id": "advertising",
+      "title": "广告投放",
+      "items": [
+        {
+          "id": "ads-1",
+          "question": "你们投放哪些广告渠道？",
+          "answer": "Google Ads、Meta、LinkedIn，以及在合适情况下的 YouTube/再营销（retargeting），基于漏斗与预算制定。"
+        },
+        {
+          "id": "ads-2",
+          "question": "你们如何设定广告预算？",
+          "answer": "从目标（线索/销售）、目标 CAC、竞价成本与测试期出发。先小步验证，再扩大有效方案。"
+        },
+        {
+          "id": "ads-3",
+          "question": "你们的 Google Ads 方法是什么？",
+          "answer": "账户结构、意图映射、否定词、落地页匹配、转化追踪与每周优化。"
+        },
+        {
+          "id": "ads-4",
+          "question": "你们能为电商投放 Meta Ads 吗？",
+          "answer": "能：商品目录/再营销、创意、受众与创意测试，以提升 ROAS。"
+        },
+        {
+          "id": "ads-5",
+          "question": "你们如何衡量广告是否成功？",
+          "answer": "以转化、CPA/CAC、ROAS、线索质量与对 pipeline 的贡献衡量，而不是虚荣点击。"
+        },
+        {
+          "id": "ads-6",
+          "question": "如果追踪（tracking）出问题怎么办？",
+          "answer": "我们会修复 GTM/GA4/pixels，并在需要时完善 consent 设置与更强的衡量方案。"
+        },
+        {
+          "id": "ads-7",
+          "question": "你们投放 B2B LinkedIn Ads 吗？",
+          "answer": "投放：精准定向、lead forms 或落地页，以及面向决策者的沟通策略。"
+        },
+        {
+          "id": "ads-8",
+          "question": "广告多久能出效果？",
+          "answer": "流量可能立刻出现；稳定的 CPA/ROAS 通常需要 2–6 周学习与迭代。"
+        },
+        {
+          "id": "ads-9",
+          "question": "你们提供广告创意制作吗？",
+          "answer": "提供：文案、视觉与测试版本；必要时包含设计/素材制作。"
+        },
+        {
+          "id": "ads-10",
+          "question": "广告与 SEO 能相互促进吗？",
+          "answer": "能。搜索投放洞察可反哺 SEO；强势的自然页面可提升 Quality Score 并降低 CPA。"
+        },
+        {
+          "id": "ads-11",
+          "question": "你们能接手现有广告账户吗？",
+          "answer": "能。我们会审计、重构并优化，避免不必要的推倒重来。"
+        },
+        {
+          "id": "ads-12",
+          "question": "如何避免浪费预算？",
+          "answer": "否定词、排除、预算上限、地域控制、频次限制与快速止损。"
+        },
+        {
+          "id": "ads-13",
+          "question": "再营销还值得做吗？",
+          "answer": "值得——在隐私合规与强优惠的前提下，通常是效率最高的一层。"
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "title": "设计",
+      "items": [
+        {
+          "id": "des-1",
+          "question": "你们提供哪些设计服务？",
+          "answer": "Logo、品牌识别、名片、信头、传单、海报、贴纸、杂志/画册以及数字视觉设计。"
+        },
+        {
+          "id": "des-2",
+          "question": "你们使用哪些工具？",
+          "answer": "使用 Adobe Photoshop、Illustrator 和 InDesign，确保交付物专业且可用于印刷。"
+        },
+        {
+          "id": "des-3",
+          "question": "你们会交付可印刷文件吗？",
+          "answer": "会：CMYK、出血（bleed）、裁切线（crop marks）与正确的 PDF 导出，同时提供屏幕版本。"
+        },
+        {
+          "id": "des-4",
+          "question": "Logo 项目如何推进？",
+          "answer": "Brief → 概念方案 → 反馈迭代 → 最终矢量文件（SVG/PDF/AI）与基础使用规范。"
+        },
+        {
+          "id": "des-5",
+          "question": "可以在不损失识别度的情况下升级品牌吗？",
+          "answer": "可以——在保持识别度的前提下更新 logo、色彩与字体。"
+        },
+        {
+          "id": "des-6",
+          "question": "你们制作社媒模板吗？",
+          "answer": "制作，便于团队快速且一致地发布内容。"
+        },
+        {
+          "id": "des-7",
+          "question": "数字设计和印刷设计有什么区别？",
+          "answer": "印刷关注色彩空间、分辨率与留白；数字关注屏幕锐利度与速度。我们会分别按规范交付。"
+        },
+        {
+          "id": "des-8",
+          "question": "你们能排版杂志或画册吗？",
+          "answer": "能：多页 InDesign 排版，使用网格与样式，并进行 prepress 检查。"
+        },
+        {
+          "id": "des-9",
+          "question": "你们也能负责印刷吗？",
+          "answer": "能。我们可设计并协调小批量或大批量印刷——从名片与贴纸到传单、海报和画册——包含校样与生产对接。"
+        },
+        {
+          "id": "des-10",
+          "question": "包含几轮反馈修改？",
+          "answer": "通常为 2–3 轮结构化反馈；更多轮次可另行约定。"
+        },
+        {
+          "id": "des-11",
+          "question": "我们能拿到源文件吗？",
+          "answer": "可以，按约定提供（AI/PSD/INDD 或导出包）。"
+        },
+        {
+          "id": "des-12",
+          "question": "设计与网站设计可以保持一致吗？",
+          "answer": "可以。我们会让品牌系统与 UI 在印刷与 Web 端保持一致。"
+        },
+        {
+          "id": "des-13",
+          "question": "在哪里了解更多 Digital Design？",
+          "answer": "访问 /digital-design，并在菜单中查看 Digital Design 服务。"
+        }
+      ]
+    },
+    {
+      "id": "marketing",
+      "title": "营销",
+      "items": [
+        {
+          "id": "mkt-1",
+          "question": "你们提供哪些营销服务？",
+          "answer": "AEO/GEO/SEO、内容、社交、广告、电商增长、product listing、community management 与 data entry。"
+        },
+        {
+          "id": "mkt-2",
+          "question": "你们如何制定营销策略？",
+          "answer": "从目标、受众、定位、渠道组合、内容流水线到 KPI，强调可执行与可衡量。"
+        },
+        {
+          "id": "mkt-3",
+          "question": "你们的全漏斗（full-funnel）营销是什么？",
+          "answer": "认知 → 考虑 → 转化 → 留存，并明确各渠道在漏斗中的角色。"
+        },
+        {
+          "id": "mkt-4",
+          "question": "你们能帮助做市场定位吗？",
+          "answer": "能。清晰定位能避免活动分散与转化乏力。"
+        },
+        {
+          "id": "mkt-5",
+          "question": "你们提供文案/内容写作吗？",
+          "answer": "提供：博客、网站文案、邮件通讯、落地页与销售文案。"
+        },
+        {
+          "id": "mkt-6",
+          "question": "你们做电商营销吗？",
+          "answer": "做：feed、listing 质量、CRO、广告与分类/商品 SEO。"
+        },
+        {
+          "id": "mkt-7",
+          "question": "什么是 CRO？",
+          "answer": "Conversion Rate Optimization——通过优化页面与漏斗，让更多访客转化。"
+        },
+        {
+          "id": "mkt-8",
+          "question": "你们如何汇报营销结果？",
+          "answer": "通过报告/仪表盘呈现：流量、线索、销售、CPA/ROAS 与各渠道洞察。"
+        },
+        {
+          "id": "mkt-9",
+          "question": "能与我们的内部团队协作吗？",
+          "answer": "能——我们可以执行、提供建议，或只负责某个专业方向（仅 SEO、仅广告等）。"
+        },
+        {
+          "id": "mkt-10",
+          "question": "活动最快多久能上线？",
+          "answer": "在 tracking/setup 完成后通常 1–2 周内；内容制作可并行推进。"
+        },
+        {
+          "id": "mkt-11",
+          "question": "你们支持邮件营销吗？",
+          "answer": "支持：自动化流程、邮件通讯与文案，并可对接 CRM/ecommerce。"
+        },
+        {
+          "id": "mkt-12",
+          "question": "营销一定要按月合作吗？",
+          "answer": "持续增长更适合月度 retainer；审计、改版与上线也可按项目交付。"
+        },
+        {
+          "id": "mkt-13",
+          "question": "你们如何避免“忙但无效”的工作？",
+          "answer": "所有动作都绑定 KPI。表现不佳的策略会被修复或停止。"
+        }
+      ]
+    },
+    {
+      "id": "social-media",
+      "title": "社交媒体",
+      "items": [
+        {
+          "id": "soc-1",
+          "question": "你们管理哪些社交平台？",
+          "answer": "主要是 LinkedIn、Instagram、Facebook；必要时也包括 X/TikTok，取决于受众匹配。"
+        },
+        {
+          "id": "soc-2",
+          "question": "社交媒体管理包含哪些内容？",
+          "answer": "策略、内容日历、制作/排期、社区回复、报告与迭代优化。"
+        },
+        {
+          "id": "soc-3",
+          "question": "你们制作图片和视频吗？",
+          "answer": "制作：静态图、轮播、短视频与模板（media creation）。"
+        },
+        {
+          "id": "soc-4",
+          "question": "你们多久发一次？",
+          "answer": "取决于目标——核心渠道通常每周 3–5 次；重质量而非数量。"
+        },
+        {
+          "id": "soc-5",
+          "question": "你们提供社区运营（community management）吗？",
+          "answer": "提供：审核、评论、私信与品牌声誉维护，并遵循品牌语气指南。"
+        },
+        {
+          "id": "soc-6",
+          "question": "社交内容和广告能结合吗？",
+          "answer": "能。表现好的自然内容可转化为广告创意；广告放大有效内容。"
+        },
+        {
+          "id": "soc-7",
+          "question": "如何衡量社交媒体效果？",
+          "answer": "覆盖、互动、点击、线索与 assisted conversions——不只看点赞。"
+        },
+        {
+          "id": "soc-8",
+          "question": "你们会与网红合作吗？",
+          "answer": "按需：筛选、brief、追踪，重点是可衡量结果。"
+        },
+        {
+          "id": "soc-9",
+          "question": "你们能支持危机沟通吗？",
+          "answer": "能，建立快速响应机制并与团队协同。"
+        },
+        {
+          "id": "soc-10",
+          "question": "你们能做 LinkedIn thought leadership 吗？",
+          "answer": "能：个人 + 企业内容、轮播、案例与员工传播（employee advocacy）。"
+        },
+        {
+          "id": "soc-11",
+          "question": "你们会提供内容日历吗？",
+          "answer": "会——按月或按季度规划主题、形式与截止时间。"
+        },
+        {
+          "id": "soc-12",
+          "question": "如果我们已经有社媒负责人呢？",
+          "answer": "我们可以提供专项支持（创意、广告、策略）或在高峰期补位。"
+        },
+        {
+          "id": "soc-13",
+          "question": "社交媒体多久能增长？",
+          "answer": "持续性会产生复利。显著增长通常需要数周到数月；配合广告可更快。"
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "支持",
+      "items": [
+        {
+          "id": "sup-1",
+          "question": "你们提供哪些支持服务？",
+          "answer": "WordPress 支持、定制网站支持、工单/live chat、维护、安全、性能优化与事件响应。"
+        },
+        {
+          "id": "sup-2",
+          "question": "如何联系支持团队？",
+          "answer": "通过联系表单、预约、仪表盘工单或 live chat。紧急问题将优先标记处理。"
+        },
+        {
+          "id": "sup-3",
+          "question": "你们的响应时间是多久？",
+          "answer": "首响通常很快（经常在一个工作日内；关键宕机更快）。具体 SLA 取决于套餐。"
+        },
+        {
+          "id": "sup-4",
+          "question": "你们提供 24/7 监控吗？",
+          "answer": "在相关支持/托管套餐中提供：监控、备份与告警。"
+        },
+        {
+          "id": "sup-5",
+          "question": "你们能清除 malware 吗？",
+          "answer": "能——WordPress 与定制技术栈均可，包含加固与后续维护。"
+        },
+        {
+          "id": "sup-6",
+          "question": "你们负责 WordPress 更新吗？",
+          "answer": "负责：WordPress maintenance & updates（core/plugins/themes），包含备份与检查。"
+        },
+        {
+          "id": "sup-7",
+          "question": "你们能处理托管问题吗？",
+          "answer": "能——诊断、迁移或优化 hosting/VPS/domains。"
+        },
+        {
+          "id": "sup-8",
+          "question": "如果网站宕机怎么办？",
+          "answer": "请标注紧急程度。我们会通过备份恢复、服务器检查与 hotfix 进行修复，并同步状态。"
+        },
+        {
+          "id": "sup-9",
+          "question": "有客户门户吗？",
+          "answer": "有。登录后可查看仪表盘、工单、项目，以及在需要时查看 CRM/发票。"
+        },
+        {
+          "id": "sup-10",
+          "question": "多个同事可以提交工单吗？",
+          "answer": "可以，取决于账号角色（client/manager/admin）。"
+        },
+        {
+          "id": "sup-11",
+          "question": "Basic/Standard/Premium 支持有什么区别？",
+          "answer": "覆盖更多站点、更快跟进以及更广的范围（更新、malware、速度、SEO）。详情请查看支持页面。"
+        },
+        {
+          "id": "sup-12",
+          "question": "你们也能回答非技术问题吗？",
+          "answer": "可以——关于服务、账单与账号问题；技术支持深度取决于套餐。"
+        },
+        {
+          "id": "sup-13",
+          "question": "之后可以升级支持吗？",
+          "answer": "可以，随着流量、风险或团队需求增长而升级。"
+        }
+      ]
+    },
+    {
+      "id": "webdesign",
+      "title": "网站设计",
+      "items": [
+        {
+          "id": "web-1",
+          "question": "你们只做 WordPress 网站吗？",
+          "answer": "不。除 WordPress 外，我们也用 HTML/CSS/JS、PHP 和 Next.js 构建定制网站——与 WordPress 服务分开。"
+        },
+        {
+          "id": "web-2",
+          "question": "Website Support 是什么？",
+          "answer": "面向定制技术栈的网站支持：设计、开发、维护、安全、性能、备份/迁移与 API 集成。"
+        },
+        {
+          "id": "web-3",
+          "question": "你们能改版现有网站吗？",
+          "answer": "能：UX/UI 刷新、转化提升与技术现代化；在可行时避免不必要的全面重写。"
+        },
+        {
+          "id": "web-4",
+          "question": "你们使用 Next.js 吗？",
+          "answer": "使用——非常适合快速、SEO-ready 的营销网站与仪表盘。"
+        },
+        {
+          "id": "web-5",
+          "question": "你们开发 PHP 应用吗？",
+          "answer": "开发：门户、API、legacy 现代化以及性能/安全加固。"
+        },
+        {
+          "id": "web-6",
+          "question": "你们如何处理移动端？",
+          "answer": "移动优先设计、响应式布局，并在常见设备/浏览器上测试。"
+        },
+        {
+          "id": "web-7",
+          "question": "包含可访问性（a11y）吗？",
+          "answer": "我们遵循良好的 a11y 基础；更严格的 WCAG 项目可按需纳入范围。"
+        },
+        {
+          "id": "web-8",
+          "question": "不使用 WordPress 的 CMS 选项有哪些？",
+          "answer": "有：headless CMS、定制后台或静态方案，取决于团队能力与需求。"
+        },
+        {
+          "id": "web-9",
+          "question": "网站设计项目通常需要多久？",
+          "answer": "落地页通常数周；更大型的网站/应用会在需求沟通后按多个冲刺推进。"
+        },
+        {
+          "id": "web-10",
+          "question": "上线时会包含文案与 SEO 吗？",
+          "answer": "当与内容/SEO 组合时会包含，让网站上线即具备可搜索性与转化准备。"
+        },
+        {
+          "id": "web-11",
+          "question": "上线后的性能怎么办？",
+          "answer": "我们优化 Core Web Vitals、caching/CDN，并通过维护套餐持续监控与改进。"
+        },
+        {
+          "id": "web-12",
+          "question": "你们能集成 API（CRM、支付、AI）吗？",
+          "answer": "能，包含完善的错误处理、日志与文档。"
+        },
+        {
+          "id": "web-13",
+          "question": "代码如何交付？",
+          "answer": "尽可能通过 repo/deploy pipelines 交付，提供 staging/production，并完成 handover。"
+        },
+        {
+          "id": "web-14",
+          "question": "你们提供站内 CRO 支持吗？",
+          "answer": "提供：UX 改进、表单、CTA、实验与页面速度优化。"
+        }
+      ]
+    },
+    {
+      "id": "webhosting",
+      "title": "主机托管与域名",
+      "items": [
+        {
+          "id": "host-1",
+          "question": "你们提供哪些主机托管？",
+          "answer": "Shared、WordPress 与 VPS 托管（Basic/Plus/Business 档），以及域名服务。"
+        },
+        {
+          "id": "host-2",
+          "question": "Shared、WordPress 与 VPS 有何区别？",
+          "answer": "Shared 适合小型网站；WordPress hosting 针对 WP 优化；VPS 为高负载提供更多资源与控制。"
+        },
+        {
+          "id": "host-3",
+          "question": "你们能帮忙注册域名吗？",
+          "answer": "能——提供建议、注册/转移并正确配置 DNS。"
+        },
+        {
+          "id": "host-4",
+          "question": "包含 SSL 吗？",
+          "answer": "包含，相关托管方案均提供 SSL。"
+        },
+        {
+          "id": "host-5",
+          "question": "你们能把我的网站迁移到你们的托管吗？",
+          "answer": "能：备份、迁移、DNS 切换、SSL 与 smoke tests，尽量减少停机时间。"
+        },
+        {
+          "id": "host-6",
+          "question": "备份如何进行？",
+          "answer": "取决于方案：简单备份或自动备份；可增加 off-site 保留。"
+        },
+        {
+          "id": "host-7",
+          "question": "流量增长后怎么办？",
+          "answer": "可升级到 Plus/Business 或 VPS，并优化 caching/CDN。"
+        },
+        {
+          "id": "host-8",
+          "question": "域名会附带邮箱吗？",
+          "answer": "取决于配置。我们会建议可靠的邮件方案与 DNS 认证（SPF/DKIM/DMARC）。"
+        },
+        {
+          "id": "host-9",
+          "question": "你们的托管有多安全？",
+          "answer": "包含 SSL/firewall、更新、监控与 hardening，并可叠加安全服务。"
+        },
+        {
+          "id": "host-10",
+          "question": "之后可以从 shared 升级到 VPS 吗？",
+          "answer": "可以——我们会规划迁移、测试与回滚方案。"
+        },
+        {
+          "id": "host-11",
+          "question": "你们支持 CDN 吗？",
+          "answer": "支持，在合适情况下（常在 WordPress hosting 中包含）用于更快的全球分发。"
+        },
+        {
+          "id": "host-12",
+          "question": "你们如何保障稳定性（uptime）？",
+          "answer": "通过监控、快速事件响应，并对维护窗口进行清晰沟通。"
+        },
+        {
+          "id": "host-13",
+          "question": "你们能修复 DNS 问题吗？",
+          "answer": "能：记录配置、传播排查、邮件认证与域名连接。"
+        },
+        {
+          "id": "host-14",
+          "question": "如何选择合适的方案？",
+          "answer": "根据流量、技术栈（WP 或定制）、资源与增长计划做出建议，我们会如实给出推荐。"
+        },
+        {
+          "id": "host-15",
+          "question": "在哪里查看托管价格？",
+          "answer": "在 Services → Webhosting & Domains 下的托管服务页面。"
+        }
+      ]
+    }
+  ]
+}

@@ -426,5 +426,18 @@
     "seoTitleSuffix": "Baza e njohurive",
     "tipLabel": "Këshillë",
     "warnLabel": "Kujdes"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "kategori",
+    "questionsLabel": "pyetje",
+    "searchPlaceholder": "Kërko në pyetje dhe përgjigje…",
+    "searchAria": "Kërko në FAQ",
+    "clearSearch": "Pastro kërkimin",
+    "all": "Të gjitha",
+    "result": "rezultat",
+    "results": "rezultate",
+    "forQuery": "për",
+    "empty": "Nuk u gjetën rezultate."
   }
 }

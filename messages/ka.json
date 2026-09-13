@@ -426,5 +426,18 @@
     "seoTitleSuffix": "ცოდნის ბაზა",
     "tipLabel": "რჩევა",
     "warnLabel": "ყურადღება"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "კატეგორიები",
+    "questionsLabel": "კითხვები",
+    "searchPlaceholder": "ძიება კითხვებსა და პასუხებში…",
+    "searchAria": "FAQ-ში ძიება",
+    "clearSearch": "ძიების გასუფთავება",
+    "all": "ყველა",
+    "result": "შედეგი",
+    "results": "შედეგი",
+    "forQuery": "ამისთვის",
+    "empty": "შედეგები ვერ მოიძებნა."
   }
 }

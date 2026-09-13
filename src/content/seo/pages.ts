@@ -38,7 +38,7 @@ const CORE_EN = [
   "Belgium",
 ];
 
-const REV = "2026-08-10";
+const REV = "2026-09-14";
 
 export const staticPageSeo: PageSeo[] = [
   {
@@ -78,6 +78,24 @@ export const staticPageSeo: PageSeo[] = [
       en: [...CORE_EN, "services", "web design", "WordPress", "hosting"],
     },
     image: "/uploads/fixweb/aeo-seo.png",
+  },
+  {
+    path: "/shop",
+    lastmod: REV,
+    priority: 0.95,
+    changeFrequency: "weekly",
+    title: {
+      nl: "Shop — pakketten, hosting & AI-diensten",
+      en: "Shop — plans, hosting & AI services",
+    },
+    description: {
+      nl: "Bestel TripleZero iT-pakketten, hosting en AI-diensten online. Transparante prijzen inclusief BTW.",
+      en: "Order TripleZero iT plans, hosting and AI services online. Transparent pricing including VAT.",
+    },
+    keywords: {
+      nl: [...CORE_NL, "shop", "pakketten", "hosting", "webshop", "AI-agent"],
+      en: [...CORE_EN, "shop", "plans", "hosting", "store", "AI agent"],
+    },
   },
   {
     path: "/ai-scan",
@@ -216,8 +234,8 @@ export const staticPageSeo: PageSeo[] = [
       en: "Frequently asked questions — TripleZero iT",
     },
     description: {
-      nl: "Antwoorden over AI-scan, AEO, GEO, SEO, webdesign, hosting, marketing, support en samenwerken met TripleZero iT.",
-      en: "Answers about AI scan, AEO, GEO, SEO, web design, hosting, marketing, support and working with TripleZero iT.",
+      nl: "Uitgebreide antwoorden over TripleZero iT — van AI en SEO tot design, marketing, support en hosting.",
+      en: "In-depth answers about TripleZero iT — from AI and SEO to design, marketing, support and hosting.",
     },
     keywords: {
       nl: [...CORE_NL, "veelgestelde vragen", "hulp"],

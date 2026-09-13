@@ -618,5 +618,6 @@ After delivery you get 7 days of free support for questions about the optimizati
 export function getProductI18n(slug: string, locale: string): ProductI18n | null {
   const entry = productI18n[slug];
   if (!entry) return null;
-  return locale === "en" ? entry.en : entry.nl;
+  // Prefer EN for all non-Dutch locales (matches site-wide content pattern).
+  return locale === "nl" ? entry.nl : entry.en;
 }

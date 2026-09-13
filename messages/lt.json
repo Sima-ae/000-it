@@ -426,5 +426,18 @@
     "seoTitleSuffix": "Žinių bazė",
     "tipLabel": "Patarimas",
     "warnLabel": "Dėmesio"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "kategorijos",
+    "questionsLabel": "klausimai",
+    "searchPlaceholder": "Ieškoti klausimuose ir atsakymuose…",
+    "searchAria": "Ieškoti DUK",
+    "clearSearch": "Išvalyti paiešką",
+    "all": "Visi",
+    "result": "rezultatas",
+    "results": "rezultatų",
+    "forQuery": "užklausai",
+    "empty": "Rezultatų nerasta."
   }
 }

@@ -1,0 +1,739 @@
+{
+  "title": "Vanliga frågor",
+  "subtitle": "Fördjupade svar om TripleZero iT — från AI och SEO till design, marknadsföring, support och hosting.",
+  "ctaTitle": "Behöver du fortfarande hjälp?",
+  "ctaText": "Hittar du inte svaret? Kontakta vårt team så återkommer vi snabbt.",
+  "ctaButton": "Kontakta oss",
+  "categories": [
+    {
+      "id": "general",
+      "title": "Allmänt",
+      "items": [
+        {
+          "id": "gen-1",
+          "question": "Vad gör TripleZero iT?",
+          "answer": "Vi kombinerar webbdesign, WordPress-support, digital marknadsföring, söksynlighet (AEO, GEO/lokalt och SEO), design och hosting — så att varumärken blir hittade, konverterar och växer."
+        },
+        {
+          "id": "gen-2",
+          "question": "Hur kommer jag igång?",
+          "answer": "Boka ett samtal eller kontakta oss. Vi gör en kort behovsanalys, går igenom mål och stack och föreslår sedan en tydlig plan med tidslinje och KPI:er."
+        },
+        {
+          "id": "gen-3",
+          "question": "Vilka typer av företag arbetar ni med?",
+          "answer": "SMB, scale-ups, ecommerce, byråer och internationella varumärken. Vi arbetar med befintliga team och som en fullservicepartner."
+        },
+        {
+          "id": "gen-4",
+          "question": "Arbetar ni bara i Nederländerna?",
+          "answer": "Nej. Vi hjälper kunder i Benelux och internationellt på nederländska och engelska."
+        },
+        {
+          "id": "gen-5",
+          "question": "Hur ser ett typiskt upplägg ut?",
+          "answer": "Intake → audit/scan → plan → sprint execution → mätning → optimering, med tydliga milstolpar."
+        },
+        {
+          "id": "gen-6",
+          "question": "Kan jag kombinera flera tjänster?",
+          "answer": "Ja. Vanliga kombinationer: webbdesign + SEO + annonser, eller WordPress-underhåll + hosting + säkerhet."
+        },
+        {
+          "id": "gen-7",
+          "question": "Hur snart kan ni börja?",
+          "answer": "Ofta inom några arbetsdagar efter godkännande. Akuta problem (malware, driftstopp) prioriteras."
+        },
+        {
+          "id": "gen-8",
+          "question": "Arbetar ni remote eller på plats?",
+          "answer": "Främst remote med strukturerad kommunikation. På plats är möjligt på begäran."
+        },
+        {
+          "id": "gen-9",
+          "question": "Hur kommunicerar ni progress?",
+          "answer": "Regelbundna uppdateringar, tickets/dashboard vid behov samt sprint- eller månadsrapporter."
+        },
+        {
+          "id": "gen-10",
+          "question": "Vad behöver ni från oss för att starta?",
+          "answer": "Åtkomst (vid behov), mål, varumärkesmaterial, analytics-konton och befintliga inlogg till verktyg."
+        },
+        {
+          "id": "gen-11",
+          "question": "Passar ni för startups?",
+          "answer": "Ja — från lean landing pages och AI-scans till kompletta tillväxtsystem när ni skalar."
+        },
+        {
+          "id": "gen-12",
+          "question": "Vem äger arbetet och kontona?",
+          "answer": "Ni äger domäner, innehåll, repos och annonskonton. Vi levererar filer och dokumentation vid överlämning."
+        },
+        {
+          "id": "gen-13",
+          "question": "Kan ni samarbeta med våra nuvarande leverantörer?",
+          "answer": "Ja. Vi arbetar sida vid sida med era utvecklare/marknadsförare eller tar över underhåll på ett strukturerat sätt."
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI",
+      "items": [
+        {
+          "id": "ai-1",
+          "question": "Vad är er AI-scan?",
+          "answer": "En AI-readiness scan som betygsätter hur väl er webbplats presterar för klassisk sök, AI-svar och lokal/geografisk synlighet (AEO, GEO, SEO och tekniska grunder)."
+        },
+        {
+          "id": "ai-2",
+          "question": "Vad mäter AI-scannen?",
+          "answer": "AEO-signaler, GEO/lokal synlighet, SEO-grunder, innehållsstruktur, prestandaindikatorer och AI-beredskap — med prioriterade åtgärder."
+        },
+        {
+          "id": "ai-3",
+          "question": "Hur ofta bör vi göra en AI-scan?",
+          "answer": "Efter större webbändringar eller kampanjer; för aktiva varumärken rekommenderar vi återkommande scans (t.ex. kvartalsvis)."
+        },
+        {
+          "id": "ai-4",
+          "question": "Handlar AI bara om att skriva innehåll?",
+          "answer": "Nej. Det handlar också om teknisk upptäckbarhet, strukturerad data, intern länkning och hur AI-system sammanfattar ert varumärke."
+        },
+        {
+          "id": "ai-5",
+          "question": "Kan ni integrera AI i våra arbetsflöden?",
+          "answer": "Ja: innehållsstöd, automatisering, chat/ticket-flöden och skräddarsydda AI API-integrationer."
+        },
+        {
+          "id": "ai-6",
+          "question": "Ersätter AI ert strategiarbete?",
+          "answer": "Nej. AI snabbar upp analys och produktion; strategi, brand voice och konverteringsbeslut förblir människostyrda."
+        },
+        {
+          "id": "ai-7",
+          "question": "Är AI-genererat innehåll säkert för SEO?",
+          "answer": "Endast med mänsklig granskning, unik insikt och E-E-A-T. Vi undviker tunna, generiska sidor som skadar ranking."
+        },
+        {
+          "id": "ai-8",
+          "question": "Vad är AI-beredskap?",
+          "answer": "Hur väl er webbplats, ert innehåll och er data är strukturerade så att AI-system kan citera, rekommendera och förklara ert varumärke korrekt."
+        },
+        {
+          "id": "ai-9",
+          "question": "Använder ni AI-agenter i dashboarden?",
+          "answer": "Ja. Kunder kan se agenter för SEO, content, social och ads med status och uppgifter."
+        },
+        {
+          "id": "ai-10",
+          "question": "Vilka AI-verktyg använder ni?",
+          "answer": "Vi väljer verktyg per use case, med styrning: källor, faktagranskning, varumärkesregler och privacy."
+        },
+        {
+          "id": "ai-11",
+          "question": "Kan AI hjälpa supportärenden?",
+          "answer": "Ja för triage och snabbare svar, med mänsklig eskalering för komplexa eller känsliga fall."
+        },
+        {
+          "id": "ai-12",
+          "question": "Hur prissätts AI-arbete?",
+          "answer": "Från en entry AI-scan till månatliga AI + marketing retainers. Ni får ett tydligt förslag efter intake."
+        },
+        {
+          "id": "ai-13",
+          "question": "Hur mäter vi AI-ROI?",
+          "answer": "KPI:er som trafik, leads, tidsbesparing, innehållsvolym, ticket resolution och konvertering — definierade i förväg."
+        }
+      ]
+    },
+    {
+      "id": "aeo-geo-seo",
+      "title": "AEO, GEO & SEO",
+      "items": [
+        {
+          "id": "seo-1",
+          "question": "Vad är skillnaden mellan AEO, GEO och SEO?",
+          "answer": "AEO (Answer Engine Optimization) optimerar för AI-svar. GEO (Geographic Search Engine Optimization) stärker lokal och regional synlighet i Maps, lokala packs och platsbaserad sökning. SEO riktar sig mot klassiska sökmotorer."
+        },
+        {
+          "id": "seo-2",
+          "question": "Varför är AEO/GEO viktiga nu?",
+          "answer": "Fler användare får svar via AI och söker lokalt (“near me”). Utan AEO missar ni AI-citations; utan GEO missar ni närliggande leads — även om klassisk SEO är stark."
+        },
+        {
+          "id": "seo-3",
+          "question": "Hur startar ni ett SEO-samarbete?",
+          "answer": "Teknisk audit, keyword/intent research, content gap-analys och en prioriterad roadmap kopplad till affärs-KPI:er."
+        },
+        {
+          "id": "seo-4",
+          "question": "Hur lång tid tar det innan SEO ger resultat?",
+          "answer": "Tekniska förbättringar kan ge snabb effekt. Organisk tillväxt byggs oftast upp över veckor till månader beroende på konkurrens."
+        },
+        {
+          "id": "seo-5",
+          "question": "Erbjuder ni lokal SEO?",
+          "answer": "Ja: Google Business Profile, lokala landing pages, NAP-konsistens, omdömen och lokala content clusters."
+        },
+        {
+          "id": "seo-6",
+          "question": "Vad innebär teknisk SEO för er?",
+          "answer": "Crawlability, indexering, Core Web Vitals, strukturerad data, sitemaps/robots, canonicals, intern länkning och felstädning."
+        },
+        {
+          "id": "seo-7",
+          "question": "Skapar ni SEO-innehåll?",
+          "answer": "Ja: briefs, outlines, bloggar, landing pages och FAQs matchade till intent och strukturerade för AI-synlighet."
+        },
+        {
+          "id": "seo-8",
+          "question": "Vad är E-E-A-T?",
+          "answer": "Experience, Expertise, Authoritativeness, Trust — avgörande för ranking och trovärdighet i AI-sammanfattningar."
+        },
+        {
+          "id": "seo-9",
+          "question": "Gör ni link building?",
+          "answer": "Ja, etiskt och relevant: digital PR, partnerskap och content assets — aldrig spamupplägg."
+        },
+        {
+          "id": "seo-10",
+          "question": "Kan ni återhämta SEO efter skada?",
+          "answer": "Ja: återhämtning efter algoritmförändringar, toxic links, indexeringsproblem och åtgärder mot content cannibalization."
+        },
+        {
+          "id": "seo-11",
+          "question": "Hur rapporterar ni SEO-progress?",
+          "answer": "Månadsvis eller per sprint: ranking, trafik, konverteringar, tekniska issues och nästa åtgärder."
+        },
+        {
+          "id": "seo-12",
+          "question": "Fungerar SEO för ecommerce?",
+          "answer": "Ja: produkt-/kategori-SEO, faceted navigation, omdömen, strukturerad data och content hubs med köpintention."
+        },
+        {
+          "id": "seo-13",
+          "question": "Är SEO en engångsinsats eller löpande?",
+          "answer": "Bästa resultat kommer av löpande optimering. Engångsaudits hjälper, men konkurrenter fortsätter utvecklas."
+        },
+        {
+          "id": "seo-14",
+          "question": "Stöttar ni internationell SEO?",
+          "answer": "Ja: hreflang, marknadsresearch per locale, lokalisering och tekniska upplägg för flera locales."
+        }
+      ]
+    },
+    {
+      "id": "advertising",
+      "title": "Annonsering",
+      "items": [
+        {
+          "id": "ads-1",
+          "question": "Vilka annonskanaler kör ni?",
+          "answer": "Google Ads, Meta, LinkedIn och vid behov YouTube/retargeting — utifrån funnel och budget."
+        },
+        {
+          "id": "ads-2",
+          "question": "Hur sätter ni annonsbudgetar?",
+          "answer": "Utifrån mål (leads/försäljning), target CAC, auktionspriser och en testfas. Vi startar lean och skalar vinnarna."
+        },
+        {
+          "id": "ads-3",
+          "question": "Hur arbetar ni med Google Ads?",
+          "answer": "Kontostruktur, intent mapping, negatives, landing-page-fit, conversion tracking och veckovis optimering."
+        },
+        {
+          "id": "ads-4",
+          "question": "Kan ni köra Meta Ads för ecommerce?",
+          "answer": "Ja: kataloger/retargeting, creatives, audiences och creative testing för att förbättra ROAS."
+        },
+        {
+          "id": "ads-5",
+          "question": "Hur mäter ni annonsresultat?",
+          "answer": "Konverteringar, CPA/CAC, ROAS, leadkvalitet och pipeline — inte vanity clicks."
+        },
+        {
+          "id": "ads-6",
+          "question": "Vad händer om tracking är trasig?",
+          "answer": "Vi fixar GTM/GA4/pixels, consent-upplägg vid behov och starkare mätalternativ."
+        },
+        {
+          "id": "ads-7",
+          "question": "Kör ni B2B LinkedIn Ads?",
+          "answer": "Ja, med skarp targeting, lead forms eller landing pages och budskap för beslutsfattare."
+        },
+        {
+          "id": "ads-8",
+          "question": "Hur snabbt ger ads resultat?",
+          "answer": "Trafik kan komma direkt. Stabil CPA/ROAS kräver oftast 2–6 veckor av lärande och iteration."
+        },
+        {
+          "id": "ads-9",
+          "question": "Skapar ni annonsmaterial?",
+          "answer": "Ja: copy, visuals och testvarianter — design/media creation ingår vid behov."
+        },
+        {
+          "id": "ads-10",
+          "question": "Kan ads och SEO stärka varandra?",
+          "answer": "Ja. Search insights matar SEO; starka organiska sidor förbättrar Quality Score och sänker CPA."
+        },
+        {
+          "id": "ads-11",
+          "question": "Kan ni ta över befintliga annonskonton?",
+          "answer": "Ja. Vi auditar, strukturerar om och optimerar utan onödiga rebuilds."
+        },
+        {
+          "id": "ads-12",
+          "question": "Hur undviker ni bortkastad spend?",
+          "answer": "Negatives, exclusions, caps, geo controls, frequency limits och snabba kill switches."
+        },
+        {
+          "id": "ads-13",
+          "question": "Är remarketing fortfarande värt det?",
+          "answer": "Ja om det görs privacy-compliant med starka erbjudanden — ofta det mest effektiva lagret."
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "title": "Design",
+      "items": [
+        {
+          "id": "des-1",
+          "question": "Vilka designtjänster erbjuder ni?",
+          "answer": "Logotyper, brand identity, visitkort, brevpapper, flyers, posters, stickers, magasin/broschyrer och digitala visuals."
+        },
+        {
+          "id": "des-2",
+          "question": "Vilka verktyg använder ni?",
+          "answer": "Adobe Photoshop, Illustrator och InDesign för tryckfärdiga, professionella leveranser."
+        },
+        {
+          "id": "des-3",
+          "question": "Levererar ni tryckfärdiga filer?",
+          "answer": "Ja: CMYK, bleed, crop marks och korrekta PDF-exporter samt skärmvarianter."
+        },
+        {
+          "id": "des-4",
+          "question": "Hur går ett logoprojekt till?",
+          "answer": "Brief → koncept → feedbackrundor → final vectors (SVG/PDF/AI) och grundläggande usage guidelines."
+        },
+        {
+          "id": "des-5",
+          "question": "Kan ni uppdatera ett befintligt varumärke?",
+          "answer": "Ja — uppdatera logo, färger och typografi samtidigt som igenkänningen bevaras."
+        },
+        {
+          "id": "des-6",
+          "question": "Tar ni fram sociala mallar?",
+          "answer": "Ja, så att ert team kan publicera konsekvent och snabbt."
+        },
+        {
+          "id": "des-7",
+          "question": "Digitalt vs tryck?",
+          "answer": "Tryck kräver färgrymd, upplösning och marginaler; digitalt kräver skärpa på skärm och hastighet. Vi levererar båda korrekt."
+        },
+        {
+          "id": "des-8",
+          "question": "Kan ni layouta magasin eller broschyrer?",
+          "answer": "Ja, flersidigt InDesign-arbete med grids, styles och prepress checks."
+        },
+        {
+          "id": "des-9",
+          "question": "Hanterar ni tryckproduktion?",
+          "answer": "Ja. Vi designar och kan trycka i små eller stora upplagor — från visitkort och stickers till flyers, posters och broschyrer — med proofs och produktionskoordinering."
+        },
+        {
+          "id": "des-10",
+          "question": "Hur många feedbackrundor ingår?",
+          "answer": "Vanligtvis 2–3 strukturerade rundor; fler kan avtalas."
+        },
+        {
+          "id": "des-11",
+          "question": "Får vi originalfilerna?",
+          "answer": "Ja, enligt överenskommelse (AI/PSD/INDD eller exportpaket)."
+        },
+        {
+          "id": "des-12",
+          "question": "Kan design och webbdesign linjera?",
+          "answer": "Ja. Brand systems och UI hålls konsekventa över tryck och webb."
+        },
+        {
+          "id": "des-13",
+          "question": "Var kan jag läsa mer om Digital Design?",
+          "answer": "Besök /digital-design och Digital Design-tjänsterna i menyn."
+        }
+      ]
+    },
+    {
+      "id": "marketing",
+      "title": "Marknadsföring",
+      "items": [
+        {
+          "id": "mkt-1",
+          "question": "Vilka marknadsföringstjänster erbjuder ni?",
+          "answer": "AEO/GEO/SEO, content, social, ads, ecommerce growth, product listing, community management och data entry."
+        },
+        {
+          "id": "mkt-2",
+          "question": "Hur bygger ni en marknadsföringsstrategi?",
+          "answer": "Mål, målgrupp, positionering, channel mix, content pipeline och KPI:er — praktiskt och genomförbart."
+        },
+        {
+          "id": "mkt-3",
+          "question": "Vad innebär full-funnel marketing för er?",
+          "answer": "Awareness → consideration → conversion → retention, med tydliga kanalroller."
+        },
+        {
+          "id": "mkt-4",
+          "question": "Hjälper ni med positionering?",
+          "answer": "Ja. Tydlig positionering motverkar spretiga kampanjer och svag konvertering."
+        },
+        {
+          "id": "mkt-5",
+          "question": "Erbjuder ni content writing?",
+          "answer": "Ja: bloggar, website copy, nyhetsbrev, landing pages och sales copy."
+        },
+        {
+          "id": "mkt-6",
+          "question": "Gör ni ecommerce marketing?",
+          "answer": "Ja: feeds, listing-kvalitet, CRO, ads och kategori-/produkt-SEO."
+        },
+        {
+          "id": "mkt-7",
+          "question": "Vad är CRO?",
+          "answer": "Conversion Rate Optimization — att förbättra sidor och funnels så att fler besökare konverterar."
+        },
+        {
+          "id": "mkt-8",
+          "question": "Hur rapporterar ni marknadsföringsresultat?",
+          "answer": "Rapporter/dashboards med trafik, leads, försäljning, CPA/ROAS och channel learnings."
+        },
+        {
+          "id": "mkt-9",
+          "question": "Kan ni jobba med vårt in-house-team?",
+          "answer": "Ja — genomföra, rådgiva eller äga ett specialistområde (endast SEO, endast ads etc.)."
+        },
+        {
+          "id": "mkt-10",
+          "question": "Hur snabbt kan kampanjer gå live?",
+          "answer": "Ofta inom 1–2 veckor efter tracking/setup; content körs parallellt."
+        },
+        {
+          "id": "mkt-11",
+          "question": "Stöttar ni email marketing?",
+          "answer": "Ja: flows, nyhetsbrev och copy, inklusive CRM/ecommerce-integrationer."
+        },
+        {
+          "id": "mkt-12",
+          "question": "Är marknadsföring alltid en månadsretainer?",
+          "answer": "Retainers passar för löpande tillväxt; audits, redesigns och launches kan vara projektbaserade."
+        },
+        {
+          "id": "mkt-13",
+          "question": "Hur undviker ni busywork utan resultat?",
+          "answer": "Allt kopplas till KPI:er. Det som underpresterar åtgärdas eller stoppas."
+        }
+      ]
+    },
+    {
+      "id": "social-media",
+      "title": "Sociala medier",
+      "items": [
+        {
+          "id": "soc-1",
+          "question": "Vilka sociala kanaler hanterar ni?",
+          "answer": "Främst LinkedIn, Instagram, Facebook och vid behov X/TikTok — baserat på målgruppspassning."
+        },
+        {
+          "id": "soc-2",
+          "question": "Vad ingår i social media management?",
+          "answer": "Strategi, kalender, skapande/schemaläggning, community replies, rapportering och iteration."
+        },
+        {
+          "id": "soc-3",
+          "question": "Skapar ni visuals och video?",
+          "answer": "Ja via media creation: stills, carousels, short-form video och templates."
+        },
+        {
+          "id": "soc-4",
+          "question": "Hur ofta postar ni?",
+          "answer": "Beror på mål — vanligtvis 3–5 gånger/vecka på huvudkanaler, kvalitet före volym."
+        },
+        {
+          "id": "soc-5",
+          "question": "Erbjuder ni community management?",
+          "answer": "Ja: moderering, kommentarer, DMs och reputationsarbete med brand voice guidelines."
+        },
+        {
+          "id": "soc-6",
+          "question": "Kan social och ads fungera tillsammans?",
+          "answer": "Ja. Organiska vinnare blir annonscreatives; ads förstärker det som fungerar."
+        },
+        {
+          "id": "soc-7",
+          "question": "Hur mäter ni social framgång?",
+          "answer": "Reach, engagement, click-outs, leads och assisted conversions — inte bara likes."
+        },
+        {
+          "id": "soc-8",
+          "question": "Arbetar ni med influencers?",
+          "answer": "På begäran: urval, briefing och tracking med fokus på mätbara utfall."
+        },
+        {
+          "id": "soc-9",
+          "question": "Kan ni stötta vid kriskommunikation?",
+          "answer": "Ja, med snabba response protocols koordinerade med ert team."
+        },
+        {
+          "id": "soc-10",
+          "question": "Hjälper ni med LinkedIn thought leadership?",
+          "answer": "Ja: personligt + företagsinnehåll, carousels, cases och employee advocacy."
+        },
+        {
+          "id": "soc-11",
+          "question": "Får vi en content calendar?",
+          "answer": "Ja — månatliga eller kvartalsvisa teman, format och deadlines."
+        },
+        {
+          "id": "soc-12",
+          "question": "Vad händer om vi redan har en social manager?",
+          "answer": "Vi kan specialisera oss (creatives, ads, strategi) eller stötta vid peakperioder."
+        },
+        {
+          "id": "soc-13",
+          "question": "Hur snabbt växer social?",
+          "answer": "Konsekvens ger effekt över tid. Meningsfull tillväxt tar oftast veckor till månader; snabbare med ads-stöd."
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "Support",
+      "items": [
+        {
+          "id": "sup-1",
+          "question": "Vilken support erbjuder ni?",
+          "answer": "WordPress-support, support för custom sites, tickets/live chat, underhåll, säkerhet, prestanda och incident response."
+        },
+        {
+          "id": "sup-2",
+          "question": "Hur når jag support?",
+          "answer": "Via kontakt, bokning, dashboard tickets eller live chat. Akuta ärenden får prioritering."
+        },
+        {
+          "id": "sup-3",
+          "question": "Vilken svarstid har ni?",
+          "answer": "Snabb första respons (ofta inom en arbetsdag; kritiskt driftstopp snabbare). Exakta SLA:er beror på paket."
+        },
+        {
+          "id": "sup-4",
+          "question": "Erbjuder ni 24/7-övervakning?",
+          "answer": "Ja i relevanta support-/hostingpaket: övervakning, backups och alerts."
+        },
+        {
+          "id": "sup-5",
+          "question": "Kan ni ta bort malware?",
+          "answer": "Ja — WordPress och custom stacks — inklusive hardening och efterarbete."
+        },
+        {
+          "id": "sup-6",
+          "question": "Hanterar ni WordPress-uppdateringar?",
+          "answer": "Ja via WordPress maintenance & updates: core/plugins/themes med backups och kontroller."
+        },
+        {
+          "id": "sup-7",
+          "question": "Kan ni hjälpa med hostingproblem?",
+          "answer": "Ja — felsöka, migrera eller optimera hosting/VPS/domäner."
+        },
+        {
+          "id": "sup-8",
+          "question": "Vad händer om min webbplats ligger nere?",
+          "answer": "Meddela att det är akut. Vi återställer via backups, serverkontroller och hotfixes med statusuppdateringar."
+        },
+        {
+          "id": "sup-9",
+          "question": "Finns en kundportal?",
+          "answer": "Ja. Inloggade kunder ser dashboard, tickets, projekt och relevant CRM/fakturor."
+        },
+        {
+          "id": "sup-10",
+          "question": "Kan flera kollegor skapa tickets?",
+          "answer": "Ja, beroende på kontoroller (client/manager/admin)."
+        },
+        {
+          "id": "sup-11",
+          "question": "Vad ingår i Basic/Standard/Premium support?",
+          "answer": "Fler webbplatser, snabbare uppföljning och bredare omfattning (uppdateringar, malware, hastighet, SEO). Se supportsidorna för detaljer."
+        },
+        {
+          "id": "sup-12",
+          "question": "Hjälper ni även med icke-tekniska frågor?",
+          "answer": "Ja — tjänster, fakturering och kontofrågor, med tekniskt djup beroende på paket."
+        },
+        {
+          "id": "sup-13",
+          "question": "Kan jag uppgradera support senare?",
+          "answer": "Ja, när trafik, risk eller teambehov växer."
+        }
+      ]
+    },
+    {
+      "id": "webdesign",
+      "title": "Webbdesign",
+      "items": [
+        {
+          "id": "web-1",
+          "question": "Bygger ni bara WordPress-sajter?",
+          "answer": "Nej. Utöver WordPress bygger vi custom sites i HTML/CSS/JS, PHP och Next.js — separat från WordPress-tjänster."
+        },
+        {
+          "id": "web-2",
+          "question": "Vad är Website Support?",
+          "answer": "Design, utveckling, underhåll, säkerhet, prestanda, backup/migrering och API-integrationer för custom stacks."
+        },
+        {
+          "id": "web-3",
+          "question": "Kan ni redesign:a en befintlig webbplats?",
+          "answer": "Ja: UX/UI-refresh, konverteringsförbättringar och teknisk modernisering utan full rewrite om det går att undvika."
+        },
+        {
+          "id": "web-4",
+          "question": "Arbetar ni med Next.js?",
+          "answer": "Ja — perfekt för snabba, SEO-ready marketing sites och dashboards."
+        },
+        {
+          "id": "web-5",
+          "question": "Bygger ni PHP-applikationer?",
+          "answer": "Ja: portaler, API:er, modernisering av legacy och hardening av prestanda/säkerhet."
+        },
+        {
+          "id": "web-6",
+          "question": "Hur hanterar ni mobil?",
+          "answer": "Mobile-first design, responsiva layouter och testning på vanliga enheter/webbläsare."
+        },
+        {
+          "id": "web-7",
+          "question": "Ingår tillgänglighet?",
+          "answer": "Vi följer stabila a11y-grunder; striktare WCAG-program kan scope:as in."
+        },
+        {
+          "id": "web-8",
+          "question": "CMS-alternativ utan WordPress?",
+          "answer": "Ja: headless CMS, custom admin eller statiska upplägg beroende på team."
+        },
+        {
+          "id": "web-9",
+          "question": "Hur lång tid tar ett webbdesignprojekt?",
+          "answer": "Landing pages på veckor; större sajter/appar över flera sprints efter intake-planering."
+        },
+        {
+          "id": "web-10",
+          "question": "Ingår copy och SEO vid lansering?",
+          "answer": "Ja när det kombineras med content/SEO så att sajten lanseras sökbar och konverteringsredo."
+        },
+        {
+          "id": "web-11",
+          "question": "Hur säkerställer ni prestanda efter lansering?",
+          "answer": "Vi optimerar Core Web Vitals, caching/CDN och övervakning via underhållspaket."
+        },
+        {
+          "id": "web-12",
+          "question": "Kan ni integrera API:er (CRM, betalningar, AI)?",
+          "answer": "Ja, med korrekt error handling, logging och dokumentation."
+        },
+        {
+          "id": "web-13",
+          "question": "Hur levereras koden?",
+          "answer": "Via repo/deploy pipelines där det är möjligt, med staging/production och överlämning."
+        },
+        {
+          "id": "web-14",
+          "question": "Hjälper ni med CRO på sajten?",
+          "answer": "Ja: UX-förbättringar, formulär, CTA:er, experiment och page speed."
+        }
+      ]
+    },
+    {
+      "id": "webhosting",
+      "title": "Webbhotell & domäner",
+      "items": [
+        {
+          "id": "host-1",
+          "question": "Vilken hosting erbjuder ni?",
+          "answer": "Shared-, WordPress- och VPS-hosting i Basic/Plus/Business tiers samt domäner."
+        },
+        {
+          "id": "host-2",
+          "question": "Shared vs WordPress vs VPS?",
+          "answer": "Shared passar mindre sajter. WordPress-hosting är WP-optimerad. VPS ger mer resurser/kontroll för tyngre belastning."
+        },
+        {
+          "id": "host-3",
+          "question": "Hjälper ni med domänregistrering?",
+          "answer": "Ja — rådgivning, registrering/transfer och korrekt DNS-konfiguration."
+        },
+        {
+          "id": "host-4",
+          "question": "Ingår SSL?",
+          "answer": "Ja, SSL ingår i relevanta hostingplaner."
+        },
+        {
+          "id": "host-5",
+          "question": "Kan ni migrera min webbplats till er hosting?",
+          "answer": "Ja: backup, migrering, DNS cutover, SSL och smoke tests med minimal downtime."
+        },
+        {
+          "id": "host-6",
+          "question": "Hur fungerar backups?",
+          "answer": "Beror på plan: enkla eller automatiserade backups. Extra off-site retention finns som tillval."
+        },
+        {
+          "id": "host-7",
+          "question": "Vad händer om trafiken ökar?",
+          "answer": "Vi skalar till Plus/Business eller VPS och optimerar caching/CDN."
+        },
+        {
+          "id": "host-8",
+          "question": "Ingår e-post med domäner?",
+          "answer": "Beror på upplägg. Vi rekommenderar pålitliga mail-lösningar och DNS auth (SPF/DKIM/DMARC)."
+        },
+        {
+          "id": "host-9",
+          "question": "Hur säker är er hosting?",
+          "answer": "SSL/firewall, uppdateringar, övervakning och hardening, med valbara security services ovanpå."
+        },
+        {
+          "id": "host-10",
+          "question": "Kan jag gå från shared till VPS senare?",
+          "answer": "Ja — planerad migrering med test och rollback."
+        },
+        {
+          "id": "host-11",
+          "question": "Stödjer ni CDN?",
+          "answer": "Ja där relevant (ofta inkluderat på WP-hosting) för snabbare global leverans."
+        },
+        {
+          "id": "host-12",
+          "question": "Hur jobbar ni med uptime?",
+          "answer": "Övervakning, snabb incident response och tydlig kommunikation om maintenance windows."
+        },
+        {
+          "id": "host-13",
+          "question": "Kan ni fixa DNS-problem?",
+          "answer": "Ja: poster, propagation, mail auth och domain wiring."
+        },
+        {
+          "id": "host-14",
+          "question": "Hur väljer jag rätt plan?",
+          "answer": "Utifrån trafik, stack (WP vs custom), resurser och tillväxt. Vi ger ärlig rådgivning."
+        },
+        {
+          "id": "host-15",
+          "question": "Var kan jag se hostingpriser?",
+          "answer": "På hostingtjänstsidorna under Services → Webhosting & Domains."
+        }
+      ]
+    }
+  ]
+}

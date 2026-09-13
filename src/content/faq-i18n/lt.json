@@ -1,0 +1,739 @@
+{
+  "title": "Dažniausiai užduodami klausimai",
+  "subtitle": "Išsamūs atsakymai apie TripleZero iT — nuo AI ir SEO iki dizaino, rinkodaros, palaikymo ir hostingo.",
+  "ctaTitle": "Vis dar reikia pagalbos?",
+  "ctaText": "Nerandate atsakymo? Susisiekite su mūsų komanda ir greitai jums atsakysime.",
+  "ctaButton": "Susisiekite su mumis",
+  "categories": [
+    {
+      "id": "general",
+      "title": "Bendra",
+      "items": [
+        {
+          "id": "gen-1",
+          "question": "Ką daro TripleZero iT?",
+          "answer": "Deriname web dizainą, WordPress palaikymą, skaitmeninę rinkodarą, matomumą paieškoje (AEO, GEO/vietinis ir SEO), dizainą ir hostingą — padedame prekės ženklams būti randamiems, konvertuoti ir augti."
+        },
+        {
+          "id": "gen-2",
+          "question": "Kaip pradėti?",
+          "answer": "Užsisakykite skambutį arba susisiekite. Atliksime trumpą įvadinį intake, peržiūrėsime tikslus ir stack, tada pasiūlysime aiškų planą su terminais ir KPI."
+        },
+        {
+          "id": "gen-3",
+          "question": "Su kokio tipo verslais dirbate?",
+          "answer": "SMB, scale-up įmonėmis, ecommerce, agentūromis ir tarptautiniais prekių ženklais. Dirbame su esamomis komandomis ir kaip full-service partneris."
+        },
+        {
+          "id": "gen-4",
+          "question": "Ar dirbate tik Nyderlanduose?",
+          "answer": "Ne. Aptarnaujame Beneliukso ir tarptautinius klientus olandiškai ir angliškai."
+        },
+        {
+          "id": "gen-5",
+          "question": "Kaip atrodo tipinis bendradarbiavimas?",
+          "answer": "Intake → auditas/scan → planas → vykdymas sprintais → matavimas → optimizavimas, su aiškiais etapais."
+        },
+        {
+          "id": "gen-6",
+          "question": "Ar galiu derinti kelias paslaugas?",
+          "answer": "Taip. Dažni deriniai: web dizainas + SEO + reklama, arba WordPress priežiūra + hostingas + sauga."
+        },
+        {
+          "id": "gen-7",
+          "question": "Kaip greitai galite pradėti?",
+          "answer": "Dažnai per kelias darbo dienas po patvirtinimo. Skubūs atvejai (malware, downtime) turi prioritetą."
+        },
+        {
+          "id": "gen-8",
+          "question": "Dirbate nuotoliniu būdu ar vietoje?",
+          "answer": "Daugiausia nuotoliniu būdu, su struktūruota komunikacija. Darbas vietoje galimas pagal poreikį."
+        },
+        {
+          "id": "gen-9",
+          "question": "Kaip komunikuojate progresą?",
+          "answer": "Reguliarūs atnaujinimai, bilietai/dashboard (kai aktualu), taip pat sprinto ar mėnesinės ataskaitos."
+        },
+        {
+          "id": "gen-10",
+          "question": "Ko jums reikia iš mūsų, kad pradėtume?",
+          "answer": "Prieigų (jei reikia), tikslų, prekės ženklo medžiagos, analytics paskyrų ir esamų įrankių prisijungimų."
+        },
+        {
+          "id": "gen-11",
+          "question": "Ar tinka startupams?",
+          "answer": "Taip — nuo lean landing puslapių ir AI scan iki pilnų growth sistemų augant."
+        },
+        {
+          "id": "gen-12",
+          "question": "Kam priklauso darbas ir paskyros?",
+          "answer": "Jūs valdote domenus, turinį, repozitorijas ir reklamos paskyras. Perduodame failus ir dokumentaciją handover metu."
+        },
+        {
+          "id": "gen-13",
+          "question": "Ar galite bendradarbiauti su mūsų dabartiniais tiekėjais?",
+          "answer": "Taip. Dirbame kartu su jūsų developeriais/marketingo komanda arba sklandžiai perimame priežiūrą."
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI",
+      "items": [
+        {
+          "id": "ai-1",
+          "question": "Kas yra jūsų AI scan?",
+          "answer": "AI readiness scan, kuris įvertina, kaip gerai jūsų svetainė veikia klasikinei paieškai, AI atsakymams ir vietiniam/geografiniam matomumui (AEO, GEO, SEO ir techniniai pagrindai)."
+        },
+        {
+          "id": "ai-2",
+          "question": "Ką matuoja AI scan?",
+          "answer": "AEO signalus, GEO/vietinį matomumą, SEO pagrindus, turinio struktūrą, našumo indikatorius ir AI readiness — su prioritetiniais pataisymais."
+        },
+        {
+          "id": "ai-3",
+          "question": "Kaip dažnai reikėtų atlikti AI scan?",
+          "answer": "Po didelių svetainės pakeitimų ar kampanijų; aktyviems prekės ženklams rekomenduojame periodiškai (pvz., kas ketvirtį)."
+        },
+        {
+          "id": "ai-4",
+          "question": "Ar AI yra tik turinio rašymas?",
+          "answer": "Ne. Tai apima techninį randamumą (discoverability), structured data, vidines nuorodas ir tai, kaip AI sistemos apibendrina jūsų prekės ženklą."
+        },
+        {
+          "id": "ai-5",
+          "question": "Ar galite integruoti AI į mūsų procesus?",
+          "answer": "Taip: pagalba kuriant turinį, automatizavimas, chat/ticket srautai ir individualios AI API integracijos."
+        },
+        {
+          "id": "ai-6",
+          "question": "Ar AI pakeičia strateginį darbą?",
+          "answer": "Ne. AI pagreitina analizę ir gamybą; strategija, prekės ženklo balsas ir konversijų sprendimai išlieka žmonių valdomi."
+        },
+        {
+          "id": "ai-7",
+          "question": "Ar AI generuotas turinys saugus SEO požiūriu?",
+          "answer": "Tik su žmogaus peržiūra, unikaliu įžvalgumu ir E-E-A-T. Vengiame plonų, generinių puslapių, kurie kenkia reitingams."
+        },
+        {
+          "id": "ai-8",
+          "question": "Kas yra AI readiness?",
+          "answer": "Kaip gerai jūsų svetainė, turinys ir duomenys sustruktūruoti taip, kad AI sistemos galėtų tiksliai cituoti, rekomenduoti ir paaiškinti jūsų prekės ženklą."
+        },
+        {
+          "id": "ai-9",
+          "question": "Ar naudojate AI agentus dashboarde?",
+          "answer": "Taip. Klientai gali matyti agentus SEO, turiniui, social ir ads su būsena ir užduotimis."
+        },
+        {
+          "id": "ai-10",
+          "question": "Kokius AI įrankius naudojate?",
+          "answer": "Parenkame įrankius pagal use-case, su governance: šaltiniai, faktų tikrinimas, prekės ženklo taisyklės ir privatumas."
+        },
+        {
+          "id": "ai-11",
+          "question": "Ar AI gali padėti su support ticketais?",
+          "answer": "Taip, triage ir greitesniems atsakymams, su žmogaus eskalacija sudėtingiems ar jautriems atvejams."
+        },
+        {
+          "id": "ai-12",
+          "question": "Kaip kainuoja AI darbai?",
+          "answer": "Nuo pradinio AI scan iki mėnesinių AI + marketing retainers. Po intake gausite aiškų pasiūlymą."
+        },
+        {
+          "id": "ai-13",
+          "question": "Kaip matuojame AI ROI?",
+          "answer": "KPI, tokie kaip srautas, leadai, sutaupytas laikas, turinio apimtis, ticketų sprendimo laikas ir konversija — apibrėžiama iš anksto."
+        }
+      ]
+    },
+    {
+      "id": "aeo-geo-seo",
+      "title": "AEO, GEO ir SEO",
+      "items": [
+        {
+          "id": "seo-1",
+          "question": "Kuo skiriasi AEO, GEO ir SEO?",
+          "answer": "AEO (Answer Engine Optimization) optimizuoja AI atsakymams. GEO (Geographic Search Engine Optimization) stiprina vietinį ir regioninį matomumą Maps, local pack ir vietovės paieškoje. SEO taikomas klasikiniams paieškos varikliams."
+        },
+        {
+          "id": "seo-2",
+          "question": "Kodėl AEO/GEO svarbu dabar?",
+          "answer": "Vis daugiau žmonių atsakymus gauna per AI ir ieško lokaliai („near me“). Be AEO prarandate AI citatas; be GEO prarandate netoliese esančius leadus — net jei klasikinis SEO tvirtas."
+        },
+        {
+          "id": "seo-3",
+          "question": "Kaip pradedate SEO bendradarbiavimą?",
+          "answer": "Techninis auditas, raktažodžių/ketinimų tyrimas, turinio spragų analizė ir prioritetinis planas, susietas su verslo KPI."
+        },
+        {
+          "id": "seo-4",
+          "question": "Kiek laiko užtrunka, kol pasimato SEO rezultatai?",
+          "answer": "Techniniai laimėjimai gali būti greiti. Organinis augimas dažniausiai kaupiasi per savaites ar mėnesius, priklausomai nuo konkurencijos."
+        },
+        {
+          "id": "seo-5",
+          "question": "Ar siūlote local SEO?",
+          "answer": "Taip: Google Business Profile, vietiniai landing puslapiai, NAP nuoseklumas, atsiliepimai ir vietiniai turinio klasteriai."
+        },
+        {
+          "id": "seo-6",
+          "question": "Kas jums yra techninis SEO?",
+          "answer": "Crawlability, indexation, Core Web Vitals, structured data, sitemaps/robots, canonicals, vidinis susiejimas ir klaidų tvarkymas."
+        },
+        {
+          "id": "seo-7",
+          "question": "Ar kuriate SEO turinį?",
+          "answer": "Taip: briefai, outline’ai, blogai, landing puslapiai ir FAQ pagal ketinimą bei su struktūra AI matomumui."
+        },
+        {
+          "id": "seo-8",
+          "question": "Kas yra E-E-A-T?",
+          "answer": "Experience, Expertise, Authoritativeness, Trust — svarbu reitingams ir patikimumui AI santraukose."
+        },
+        {
+          "id": "seo-9",
+          "question": "Ar darote link building?",
+          "answer": "Taip, etiškai ir relevantiškai: digital PR, partnerystės ir content assets — jokio spamo."
+        },
+        {
+          "id": "seo-10",
+          "question": "Ar galite atstatyti po SEO žalos?",
+          "answer": "Taip: atsigavimas po algoritmų, toksiškos nuorodos, indexation problemos ir content cannibalization taisymai."
+        },
+        {
+          "id": "seo-11",
+          "question": "Kaip raportuojate SEO progresą?",
+          "answer": "Kas mėnesį arba per sprintą: reitingai, srautas, konversijos, techninės problemos ir kiti veiksmai."
+        },
+        {
+          "id": "seo-12",
+          "question": "Ar SEO veikia ecommerce?",
+          "answer": "Taip: produktų/kategorijų SEO, faceted navigation, atsiliepimai, structured data ir pirkimo ketinimo content hubai."
+        },
+        {
+          "id": "seo-13",
+          "question": "Ar SEO vienkartinis ar nuolatinis?",
+          "answer": "Geriausi rezultatai pasiekiami nuolat optimizuojant. Vienkartiniai auditai padeda, bet konkurentai nuolat juda."
+        },
+        {
+          "id": "seo-14",
+          "question": "Ar palaikote tarptautinį SEO?",
+          "answer": "Taip: hreflang, rinkos tyrimai pagal locale, lokalizacija ir techninės multi-locale konfigūracijos."
+        }
+      ]
+    },
+    {
+      "id": "advertising",
+      "title": "Reklama",
+      "items": [
+        {
+          "id": "ads-1",
+          "question": "Kokius reklamos kanalus valdote?",
+          "answer": "Google Ads, Meta, LinkedIn ir, kai aktualu, YouTube/retargeting — pagal pirkėjo kelią ir biudžetą."
+        },
+        {
+          "id": "ads-2",
+          "question": "Kaip nustatote reklamos biudžetus?",
+          "answer": "Pagal tikslus (leadai/pardavimai), tikslinį CAC, aukciono kainas ir testavimo fazę. Pradedame lean ir didiname tai, kas veikia."
+        },
+        {
+          "id": "ads-3",
+          "question": "Koks jūsų Google Ads požiūris?",
+          "answer": "Paskyros struktūra, ketinimų mapinimas, negative keywords, landing puslapio atitikimas, konversijų sekimas ir savaitinė optimizacija."
+        },
+        {
+          "id": "ads-4",
+          "question": "Ar galite valdyti Meta Ads ecommerce?",
+          "answer": "Taip: katalogai/retargeting, kūryba, auditorijos ir kūrybos testavimas ROAS gerinimui."
+        },
+        {
+          "id": "ads-5",
+          "question": "Kaip matuojate reklamos sėkmę?",
+          "answer": "Konversijos, CPA/CAC, ROAS, leadų kokybė ir pipeline — ne tušti paspaudimai."
+        },
+        {
+          "id": "ads-6",
+          "question": "Kas, jei tracking neveikia?",
+          "answer": "Sutvarkome GTM/GA4/pixels, consent nustatymus, kai reikia, ir stipresnes matavimo opcijas."
+        },
+        {
+          "id": "ads-7",
+          "question": "Ar vykdote B2B LinkedIn Ads?",
+          "answer": "Taip, su tiksliu taikymu, lead formomis arba landing puslapiais ir žinutėmis sprendimų priėmėjams."
+        },
+        {
+          "id": "ads-8",
+          "question": "Kaip greitai reklamos duoda rezultatų?",
+          "answer": "Srautas gali būti iškart. Stabilus CPA/ROAS dažniausiai reikalauja 2–6 savaičių mokymosi ir iteracijos."
+        },
+        {
+          "id": "ads-9",
+          "question": "Ar kuriate reklaminius kūrybinius sprendimus?",
+          "answer": "Taip: tekstai, vizualai ir testinės versijos — dizainas/media creation įtraukiama, kai reikia."
+        },
+        {
+          "id": "ads-10",
+          "question": "Ar reklama ir SEO gali stiprinti vienas kitą?",
+          "answer": "Taip. Search įžvalgos maitina SEO; stiprūs organiniai puslapiai gerina Quality Score ir mažina CPA."
+        },
+        {
+          "id": "ads-11",
+          "question": "Ar galite perimti esamas reklamos paskyras?",
+          "answer": "Taip. Atliekame auditą, pertvarkome ir optimizuojame be nereikalingų rebuild."
+        },
+        {
+          "id": "ads-12",
+          "question": "Kaip išvengiate bereikalingų išlaidų?",
+          "answer": "Negatives, exclusions, caps, geo kontrolė, frequency limits ir greiti kill switch."
+        },
+        {
+          "id": "ads-13",
+          "question": "Ar remarketing vis dar verta?",
+          "answer": "Taip, kai laikomasi privatumo reikalavimų ir pasiūlymai stiprūs — dažnai efektyviausias sluoksnis."
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "title": "Dizainas",
+      "items": [
+        {
+          "id": "des-1",
+          "question": "Kokias dizaino paslaugas teikiate?",
+          "answer": "Logotipai, prekės ženklo identitetas, vizitinės kortelės, blankai (letterhead), skrajutės, plakatai, lipdukai, žurnalai/brošiūros ir skaitmeniniai vizualai."
+        },
+        {
+          "id": "des-2",
+          "question": "Kokius įrankius naudojate?",
+          "answer": "Adobe Photoshop, Illustrator ir InDesign — profesionaliems, spaudai paruoštiems rezultatams."
+        },
+        {
+          "id": "des-3",
+          "question": "Ar pateikiate spaudai paruoštus failus?",
+          "answer": "Taip: CMYK, bleed, crop marks ir teisingi PDF eksportai, taip pat versijos ekranui."
+        },
+        {
+          "id": "des-4",
+          "question": "Kaip vyksta logotipo projektas?",
+          "answer": "Brief → koncepcijos → feedback raundai → galutiniai vektoriai (SVG/PDF/AI) ir bazinės naudojimo gairės."
+        },
+        {
+          "id": "des-5",
+          "question": "Ar galite atnaujinti esamą prekės ženklą?",
+          "answer": "Taip — atnaujinti logotipą, spalvas ir šriftus išlaikant atpažįstamumą."
+        },
+        {
+          "id": "des-6",
+          "question": "Ar kuriate social šablonus?",
+          "answer": "Taip, kad jūsų komanda galėtų publikuoti nuosekliai ir greitai."
+        },
+        {
+          "id": "des-7",
+          "question": "Skaitmeninis vs spaudos dizainas?",
+          "answer": "Spaudai reikia spalvų erdvės, rezoliucijos ir paraščių; skaitmenai reikia ryškumo ekrane ir greičio. Abu paruošiame teisingai."
+        },
+        {
+          "id": "des-8",
+          "question": "Ar galite maketuoti žurnalus ar brošiūras?",
+          "answer": "Taip, daug puslapių InDesign darbai su tinkleliais, stiliais ir prepress patikromis."
+        },
+        {
+          "id": "des-9",
+          "question": "Ar organizuojate spaudą?",
+          "answer": "Taip. Kuriame dizainą ir galime spausdinti mažais ar dideliais tiražais — nuo vizitinių ir lipdukų iki skrajučių, plakatų ir brošiūrų — su prova ir gamybos koordinavimu."
+        },
+        {
+          "id": "des-10",
+          "question": "Kiek įtraukta feedback raundų?",
+          "answer": "Paprastai 2–3 struktūruoti raundai; daugiau galima susitarti."
+        },
+        {
+          "id": "des-11",
+          "question": "Ar gausime source failus?",
+          "answer": "Taip, kaip sutarta (AI/PSD/INDD arba export paketai)."
+        },
+        {
+          "id": "des-12",
+          "question": "Ar dizainas ir web dizainas gali sutapti?",
+          "answer": "Taip. Prekės ženklo sistemos ir UI išlieka nuoseklūs spaudoje ir internete."
+        },
+        {
+          "id": "des-13",
+          "question": "Kur sužinoti daugiau apie Digital Design?",
+          "answer": "Apsilankykite /digital-design ir meniu pasirinkite Digital Design paslaugas."
+        }
+      ]
+    },
+    {
+      "id": "marketing",
+      "title": "Rinkodara",
+      "items": [
+        {
+          "id": "mkt-1",
+          "question": "Kokias rinkodaros paslaugas teikiate?",
+          "answer": "AEO/GEO/SEO, turinys, social, ads, ecommerce augimas, product listing, community management ir data entry."
+        },
+        {
+          "id": "mkt-2",
+          "question": "Kaip kuriate rinkodaros strategiją?",
+          "answer": "Tikslai, auditorija, pozicionavimas, kanalų miksas, turinio pipeline ir KPI — praktiška ir įgyvendinama."
+        },
+        {
+          "id": "mkt-3",
+          "question": "Kas jums yra full-funnel rinkodara?",
+          "answer": "Awareness → consideration → conversion → retention, su aiškiai apibrėžtais kanalų vaidmenimis."
+        },
+        {
+          "id": "mkt-4",
+          "question": "Ar padedate su pozicionavimu?",
+          "answer": "Taip. Aiškus pozicionavimas apsaugo nuo išsiskaidžiusių kampanijų ir silpnos konversijos."
+        },
+        {
+          "id": "mkt-5",
+          "question": "Ar teikiate turinio rašymą?",
+          "answer": "Taip: blogai, svetainės tekstai, naujienlaiškiai, landing puslapiai ir pardavimo tekstai."
+        },
+        {
+          "id": "mkt-6",
+          "question": "Ar darote ecommerce rinkodarą?",
+          "answer": "Taip: feedai, listingų kokybė, CRO, reklama ir kategorijų/produktų SEO."
+        },
+        {
+          "id": "mkt-7",
+          "question": "Kas yra CRO?",
+          "answer": "Conversion Rate Optimization — puslapių ir funnel’ų gerinimas, kad daugiau lankytojų konvertuotų."
+        },
+        {
+          "id": "mkt-8",
+          "question": "Kaip raportuojate rinkodaros rezultatus?",
+          "answer": "Ataskaitos/dashboard su srautu, leadais, pardavimais, CPA/ROAS ir įžvalgomis pagal kanalą."
+        },
+        {
+          "id": "mkt-9",
+          "question": "Ar galite dirbti su mūsų in-house komanda?",
+          "answer": "Taip — vykdyti, konsultuoti arba prisiimti specializuotą sritį (tik SEO, tik reklama ir pan.)."
+        },
+        {
+          "id": "mkt-10",
+          "question": "Kaip greitai galima paleisti kampanijas?",
+          "answer": "Dažnai per 1–2 savaites po tracking/setup; turinys vyksta lygiagrečiai."
+        },
+        {
+          "id": "mkt-11",
+          "question": "Ar palaikote email marketing?",
+          "answer": "Taip: flowai, naujienlaiškiai ir tekstai, įskaitant CRM/ecommerce integracijas."
+        },
+        {
+          "id": "mkt-12",
+          "question": "Ar rinkodara visada mėnesinis retainer?",
+          "answer": "Retaineriai tinka nuolatiniam augimui; auditai, perkurimai ir launch gali būti projektiniai."
+        },
+        {
+          "id": "mkt-13",
+          "question": "Kaip išvengiate busywork be rezultatų?",
+          "answer": "Kiekviena veikla siejama su KPI. Neveikiančius dalykus taisome arba stabdome."
+        }
+      ]
+    },
+    {
+      "id": "social-media",
+      "title": "Socialiniai tinklai",
+      "items": [
+        {
+          "id": "soc-1",
+          "question": "Kuriuos social kanalus valdote?",
+          "answer": "Daugiausia LinkedIn, Instagram, Facebook ir, kai aktualu, X/TikTok — pagal auditorijos atitikimą."
+        },
+        {
+          "id": "soc-2",
+          "question": "Kas įtraukta į social media valdymą?",
+          "answer": "Strategija, kalendorius, kūrimas/planavimas, bendruomenės atsakymai, ataskaitos ir iteracija."
+        },
+        {
+          "id": "soc-3",
+          "question": "Ar kuriate vizualus ir video?",
+          "answer": "Taip per media creation: vaizdai, karuselės, short-form video ir šablonai."
+        },
+        {
+          "id": "soc-4",
+          "question": "Kaip dažnai publikuojate?",
+          "answer": "Priklauso nuo tikslų — dažniausiai 3–5 kartus per savaitę pagrindiniuose kanaluose, kokybė svarbiau už kiekį."
+        },
+        {
+          "id": "soc-5",
+          "question": "Ar siūlote community management?",
+          "answer": "Taip: moderavimas, komentarai, DM ir reputacijos priežiūra pagal prekės ženklo balso gaires."
+        },
+        {
+          "id": "soc-6",
+          "question": "Ar social ir ads gali veikti kartu?",
+          "answer": "Taip. Organiniai laimėtojai tampa ad kūryba; ads sustiprina tai, kas rezonuoja."
+        },
+        {
+          "id": "soc-7",
+          "question": "Kaip matuojate social sėkmę?",
+          "answer": "Reach, engagement, paspaudimai, leadai ir assisted conversions — ne tik like."
+        },
+        {
+          "id": "soc-8",
+          "question": "Ar dirbate su influenceriais?",
+          "answer": "Pagal poreikį: atranka, brief ir tracking, orientuotas į išmatuojamus rezultatus."
+        },
+        {
+          "id": "soc-9",
+          "question": "Ar galite padėti krizinėje komunikacijoje?",
+          "answer": "Taip, su greitais atsako protokolais, suderintais su jūsų komanda."
+        },
+        {
+          "id": "soc-10",
+          "question": "Ar padedate su LinkedIn thought leadership?",
+          "answer": "Taip: asmeninis + įmonės turinys, karuselės, atvejai ir employee advocacy."
+        },
+        {
+          "id": "soc-11",
+          "question": "Ar pateikiate turinio kalendorių?",
+          "answer": "Taip — mėnesinės arba ketvirtinės temos, formatai ir terminai."
+        },
+        {
+          "id": "soc-12",
+          "question": "O jeigu jau turime social manager?",
+          "answer": "Galime specializuotis (kūryba, reklama, strategija) arba padėti piko laikotarpiais."
+        },
+        {
+          "id": "soc-13",
+          "question": "Kaip greitai augs social kanalai?",
+          "answer": "Nuoseklumas duoda rezultatų su laiku. Reikšmingas augimas dažniausiai trunka savaites ar mėnesius; greičiau su ads palaikymu."
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "Palaikymas",
+      "items": [
+        {
+          "id": "sup-1",
+          "question": "Kokį palaikymą teikiate?",
+          "answer": "WordPress palaikymą, custom svetainių palaikymą, ticketus/live chat, priežiūrą, saugą, našumą ir incident response."
+        },
+        {
+          "id": "sup-2",
+          "question": "Kaip pasiekti palaikymą?",
+          "answer": "Per kontaktą, rezervaciją, dashboard ticketus arba live chat. Skubūs atvejai pažymimi prioritetu."
+        },
+        {
+          "id": "sup-3",
+          "question": "Koks jūsų atsako laikas?",
+          "answer": "Greitas pirmas atsakas (dažnai per vieną darbo dieną; kritinis downtime greičiau). Tikslūs SLA priklauso nuo paketo."
+        },
+        {
+          "id": "sup-4",
+          "question": "Ar siūlote 24/7 stebėseną?",
+          "answer": "Taip atitinkamuose palaikymo/hostingo paketuose: monitoring, backup ir alerts."
+        },
+        {
+          "id": "sup-5",
+          "question": "Ar galite pašalinti malware?",
+          "answer": "Taip — WordPress ir custom stack — įskaitant hardening ir aftercare."
+        },
+        {
+          "id": "sup-6",
+          "question": "Ar tvarkote WordPress atnaujinimus?",
+          "answer": "Taip per WordPress maintenance & updates: core/plugins/themes su backup ir patikromis."
+        },
+        {
+          "id": "sup-7",
+          "question": "Ar galite padėti su hostingo problemomis?",
+          "answer": "Taip — diagnozuoti, migruoti arba optimizuoti hosting/VPS/domains."
+        },
+        {
+          "id": "sup-8",
+          "question": "Ką daryti, jei svetainė neveikia?",
+          "answer": "Praneškite skubumą. Atstatome per backup, serverio patikras ir hotfix su būsenos atnaujinimais."
+        },
+        {
+          "id": "sup-9",
+          "question": "Ar yra klientų portalas?",
+          "answer": "Taip. Prisijungę klientai mato dashboard, ticketus, projektus ir susijusį CRM/sąskaitas."
+        },
+        {
+          "id": "sup-10",
+          "question": "Ar keli komandos nariai gali kurti ticketus?",
+          "answer": "Taip, priklausomai nuo rolės (client/manager/admin)."
+        },
+        {
+          "id": "sup-11",
+          "question": "Kas įeina į Basic/Standard/Premium palaikymą?",
+          "answer": "Daugiau svetainių, greitesnis follow-up ir platesnė aprėptis (atnaujinimai, malware, greitis, SEO). Detales rasite palaikymo puslapiuose."
+        },
+        {
+          "id": "sup-12",
+          "question": "Ar padedate ir su netechniniais klausimais?",
+          "answer": "Taip — paslaugos, sąskaitos ir paskyros klausimai, su techniniu gyliu pagal jūsų paketą."
+        },
+        {
+          "id": "sup-13",
+          "question": "Ar vėliau galiu atnaujinti palaikymą?",
+          "answer": "Taip, augant srautui, rizikai ar komandos poreikiams."
+        }
+      ]
+    },
+    {
+      "id": "webdesign",
+      "title": "Web dizainas",
+      "items": [
+        {
+          "id": "web-1",
+          "question": "Ar kuriate tik WordPress svetaines?",
+          "answer": "Ne. Be WordPress kuriame custom svetaines su HTML/CSS/JS, PHP ir Next.js — atskirai nuo WordPress paslaugų."
+        },
+        {
+          "id": "web-2",
+          "question": "Kas yra Website Support?",
+          "answer": "Dizainas, kūrimas, priežiūra, sauga, našumas, backup/migravimas ir API integracijos custom stackams."
+        },
+        {
+          "id": "web-3",
+          "question": "Ar galite perkurti esamą svetainę?",
+          "answer": "Taip: UX/UI atnaujinimas, konversijų pagerinimai ir techninis modernizavimas be pilno perrašymo, jei įmanoma."
+        },
+        {
+          "id": "web-4",
+          "question": "Ar dirbate su Next.js?",
+          "answer": "Taip — puikiai tinka greitoms, SEO-ready rinkodaros svetainėms ir dashboardams."
+        },
+        {
+          "id": "web-5",
+          "question": "Ar kuriate PHP aplikacijas?",
+          "answer": "Taip: portalai, API, legacy modernizavimas ir našumo/saugos hardening."
+        },
+        {
+          "id": "web-6",
+          "question": "Kaip sprendžiate mobile?",
+          "answer": "Mobile-first dizainas, responsive išdėstymai ir testavimas dažniausiuose įrenginiuose/naršyklėse."
+        },
+        {
+          "id": "web-7",
+          "question": "Ar įtraukta prieinamumas (a11y)?",
+          "answer": "Laikomės tvirtų a11y pagrindų; griežtesnės WCAG programos gali būti įtrauktos kaip scope."
+        },
+        {
+          "id": "web-8",
+          "question": "CMS alternatyvos be WordPress?",
+          "answer": "Taip: headless CMS, custom admin arba statiniai sprendimai, priklausomai nuo komandos."
+        },
+        {
+          "id": "web-9",
+          "question": "Kiek trunka web dizaino projektas?",
+          "answer": "Landing puslapiai per kelias savaites; didesnės svetainės/programos per kelis sprintus po intake planavimo."
+        },
+        {
+          "id": "web-10",
+          "question": "Ar įtraukiate tekstus ir SEO paleidimo metu?",
+          "answer": "Taip, kai derinama su turiniu/SEO, kad svetainė startuotų randama ir paruošta konversijai."
+        },
+        {
+          "id": "web-11",
+          "question": "O kaip dėl našumo po paleidimo?",
+          "answer": "Optimizuojame Core Web Vitals, caching/CDN ir monitoring per priežiūros paketus."
+        },
+        {
+          "id": "web-12",
+          "question": "Ar galite integruoti API (CRM, mokėjimai, AI)?",
+          "answer": "Taip, su tinkamu klaidų valdymu, logavimu ir dokumentacija."
+        },
+        {
+          "id": "web-13",
+          "question": "Kaip pristatomas kodas?",
+          "answer": "Per repo/deploy pipelines, kai įmanoma, su staging/production ir handover."
+        },
+        {
+          "id": "web-14",
+          "question": "Ar padedate su on-site CRO?",
+          "answer": "Taip: UX patobulinimai, formos, CTA, eksperimentai ir puslapio greitis."
+        }
+      ]
+    },
+    {
+      "id": "webhosting",
+      "title": "Web hostingas ir domenai",
+      "items": [
+        {
+          "id": "host-1",
+          "question": "Kokį hostingą siūlote?",
+          "answer": "Shared, WordPress ir VPS hostingas Basic/Plus/Business lygiuose, taip pat domenai."
+        },
+        {
+          "id": "host-2",
+          "question": "Shared vs WordPress vs VPS?",
+          "answer": "Shared tinka mažesnėms svetainėms. WordPress hostingas optimizuotas WP. VPS suteikia daugiau resursų/kontrolės didesnėms apkrovoms."
+        },
+        {
+          "id": "host-3",
+          "question": "Ar padedate su domeno registracija?",
+          "answer": "Taip — patariame, registruojame/perkeliame ir teisingai sukonfigūruojame DNS."
+        },
+        {
+          "id": "host-4",
+          "question": "Ar SSL įtrauktas?",
+          "answer": "Taip, SSL įtrauktas į atitinkamus hostingo planus."
+        },
+        {
+          "id": "host-5",
+          "question": "Ar galite perkelti mano svetainę į jūsų hostingą?",
+          "answer": "Taip: backup, migravimas, DNS cutover, SSL ir smoke testai su minimaliu downtime."
+        },
+        {
+          "id": "host-6",
+          "question": "Kaip veikia backup?",
+          "answer": "Priklauso nuo plano: paprasti arba automatiniai backup. Galimas papildomas off-site saugojimas."
+        },
+        {
+          "id": "host-7",
+          "question": "Kas, jei srautas auga?",
+          "answer": "Skalė į Plus/Business arba VPS ir optimizuojame caching/CDN."
+        },
+        {
+          "id": "host-8",
+          "question": "Ar el. paštas įtrauktas su domenais?",
+          "answer": "Priklauso nuo konfigūracijos. Patariame patikimus pašto sprendimus ir DNS auth (SPF/DKIM/DMARC)."
+        },
+        {
+          "id": "host-9",
+          "question": "Kiek saugus jūsų hostingas?",
+          "answer": "SSL/firewall, atnaujinimai, monitoring ir hardening, su papildomomis saugumo paslaugomis, jei reikia."
+        },
+        {
+          "id": "host-10",
+          "question": "Ar vėliau galiu pereiti iš shared į VPS?",
+          "answer": "Taip — suplanuota migracija su testavimu ir rollback."
+        },
+        {
+          "id": "host-11",
+          "question": "Ar palaikote CDN?",
+          "answer": "Taip, kai aktualu (dažnai įtraukta WordPress hostinge), greitesniam pasauliniam pristatymui."
+        },
+        {
+          "id": "host-12",
+          "question": "Koks jūsų uptime požiūris?",
+          "answer": "Monitoring, greitas incident response ir aiški komunikacija dėl maintenance langų."
+        },
+        {
+          "id": "host-13",
+          "question": "Ar galite sutvarkyti DNS problemas?",
+          "answer": "Taip: įrašai, propagacija, mail auth ir domeno sujungimas."
+        },
+        {
+          "id": "host-14",
+          "question": "Kaip pasirinkti tinkamą planą?",
+          "answer": "Pagal srautą, stack (WP vs custom), resursus ir augimą. Patariame sąžiningai."
+        },
+        {
+          "id": "host-15",
+          "question": "Kur galiu pamatyti hostingo kainas?",
+          "answer": "Hostingo paslaugų puslapiuose, skiltyje Services → Webhosting & Domains."
+        }
+      ]
+    }
+  ]
+}

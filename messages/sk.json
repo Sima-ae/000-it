@@ -426,5 +426,18 @@
     "seoTitleSuffix": "Databáza znalostí",
     "tipLabel": "Tip",
     "warnLabel": "Pozor"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "kategórie",
+    "questionsLabel": "otázky",
+    "searchPlaceholder": "Hľadať v otázkach a odpovediach…",
+    "searchAria": "Hľadať v FAQ",
+    "clearSearch": "Vymazať hľadanie",
+    "all": "Všetko",
+    "result": "výsledok",
+    "results": "výsledky",
+    "forQuery": "pre",
+    "empty": "Nenašli sa žiadne výsledky."
   }
 }

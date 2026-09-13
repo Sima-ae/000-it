@@ -426,5 +426,18 @@
     "seoTitleSuffix": "Vidensbase",
     "tipLabel": "Tip",
     "warnLabel": "Bemærk"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "kategorier",
+    "questionsLabel": "spørgsmål",
+    "searchPlaceholder": "Søg i spørgsmål og svar…",
+    "searchAria": "Søg i FAQ",
+    "clearSearch": "Ryd søgning",
+    "all": "Alle",
+    "result": "resultat",
+    "results": "resultater",
+    "forQuery": "for",
+    "empty": "Ingen resultater fundet."
   }
 }

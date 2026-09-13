@@ -426,5 +426,18 @@
     "seoTitleSuffix": "Tudástár",
     "tipLabel": "Tipp",
     "warnLabel": "Figyelem"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "kategóriák",
+    "questionsLabel": "kérdések",
+    "searchPlaceholder": "Keresés a kérdésekben és válaszokban…",
+    "searchAria": "Keresés a GYIK-ben",
+    "clearSearch": "Keresés törlése",
+    "all": "Összes",
+    "result": "találat",
+    "results": "találat",
+    "forQuery": "erre",
+    "empty": "Nincs találat."
   }
 }

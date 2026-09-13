@@ -426,5 +426,18 @@
     "seoTitleSuffix": "Knowledge base",
     "tipLabel": "Suggerimento",
     "warnLabel": "Attenzione"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "categorie",
+    "questionsLabel": "domande",
+    "searchPlaceholder": "Cerca nelle domande e risposte…",
+    "searchAria": "Cerca nella FAQ",
+    "clearSearch": "Cancella ricerca",
+    "all": "Tutte",
+    "result": "risultato",
+    "results": "risultati",
+    "forQuery": "per",
+    "empty": "Nessun risultato trovato."
   }
 }

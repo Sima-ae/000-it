@@ -1,8 +1,9 @@
 import type { MetadataRoute } from "next";
-import { siteOrigin } from "@/lib/seo";
+import { sitemapPublicOrigin } from "@/lib/seo";
 
 export default function robots(): MetadataRoute.Robots {
-  const origin = siteOrigin();
+  // Always point crawlers at the public production host.
+  const origin = sitemapPublicOrigin();
   const disallow = [
     "/api/",
     "/*/dashboard",
@@ -42,7 +43,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    // Sitemap index lists cities first, then pages/services/news/portfolio
+    // Professional sitemap index (cities → pages → services → shop → kennisbank → news → portfolio)
     sitemap: `${origin}/sitemap.xml`,
     host: origin,
   };

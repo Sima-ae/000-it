@@ -3,30 +3,39 @@
  * Professional multi-file sitemap generator.
  * Usage: npm run generate-sitemap
  *
- * Writes:
- *  - public/sitemap.xml (index — cities first)
- *  - public/sitemaps/sitemap-cities.xml
- *  - public/sitemaps/sitemap-pages.xml
- *  - public/sitemaps/sitemap-services.xml
- *  - public/sitemaps/sitemap-news.xml
- *  - public/sitemaps/sitemap-portfolio.xml
- *  - public/sitemaps/urls.json (for IndexNow)
+ * Always writes https://000-it.com unless SITEMAP_BASE_URL is a non-localhost URL.
+ *
+ * Output:
+ *  - public/sitemap.xml          ← main index (Google/Bing/Yahoo entry point)
+ *  - public/sitemaps/sitemap-*.xml
+ *  - public/sitemaps/urls.json   ← IndexNow
  */
 import { writeSitemapFiles } from "../src/lib/sitemap-builder";
 
 async function main() {
-  const result = await writeSitemapFiles(process.cwd());
-  const origin = (await import("../src/lib/seo")).siteOrigin();
-  if (origin.includes("localhost") || origin.includes("127.0.0.1")) {
-    console.warn(
-      `[generate-sitemap] URLs use ${origin}. For production files run:\n  SITEMAP_BASE_URL=https://000-it.com npm run generate-sitemap`,
-    );
+  if (
+    !process.env.SITEMAP_BASE_URL ||
+    /localhost|127\.0\.0\.1/i.test(process.env.SITEMAP_BASE_URL)
+  ) {
+    process.env.SITEMAP_BASE_URL = "https://000-it.com";
   }
-  console.log(`[generate-sitemap] Wrote sitemap index with ${result.indexFiles.length} child sitemaps`);
+
+  const result = await writeSitemapFiles(process.cwd());
+  console.log(`[generate-sitemap] origin=${process.env.SITEMAP_BASE_URL}`);
+  console.log(
+    `[generate-sitemap] Wrote sitemap index with ${result.indexFiles.length} child sitemaps`,
+  );
   for (const file of result.indexFiles) {
     console.log(`  - ${file.path} (lastmod ${file.lastmod})`);
   }
   console.log(`[generate-sitemap] ${result.urlCount} URLs total`);
+
+  // Hard fail if any localhost leaked into the public sitemap.
+  const bad = result.urls.find((u) => /localhost|127\.0\.0\.1|:3066/i.test(u));
+  if (bad) {
+    console.error(`[generate-sitemap] INVALID localhost URL in sitemap: ${bad}`);
+    process.exit(1);
+  }
 }
 
 main().catch((error) => {

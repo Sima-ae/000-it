@@ -1014,5 +1014,6 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
 export function getPageI18n(slug: string, locale: string): PageI18n | null {
   const entry = pageI18n[slug];
   if (!entry) return null;
-  return locale === "en" ? entry.en : entry.nl;
+  // Prefer EN for all non-Dutch locales (matches site-wide content pattern).
+  return locale === "nl" ? entry.nl : entry.en;
 }

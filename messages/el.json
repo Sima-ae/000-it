@@ -426,5 +426,18 @@
     "seoTitleSuffix": "Βάση γνώσεων",
     "tipLabel": "Συμβουλή",
     "warnLabel": "Προσοχή"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "κατηγορίες",
+    "questionsLabel": "ερωτήσεις",
+    "searchPlaceholder": "Αναζήτηση σε ερωτήσεις και απαντήσεις…",
+    "searchAria": "Αναζήτηση FAQ",
+    "clearSearch": "Καθαρισμός αναζήτησης",
+    "all": "Όλα",
+    "result": "αποτέλεσμα",
+    "results": "αποτελέσματα",
+    "forQuery": "για",
+    "empty": "Δεν βρέθηκαν αποτελέσματα."
   }
 }

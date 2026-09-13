@@ -426,5 +426,18 @@
     "seoTitleSuffix": "Kunskapsbank",
     "tipLabel": "Tips",
     "warnLabel": "Obs"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "kategorier",
+    "questionsLabel": "frågor",
+    "searchPlaceholder": "Sök bland frågor och svar…",
+    "searchAria": "Sök i FAQ",
+    "clearSearch": "Rensa sökning",
+    "all": "Alla",
+    "result": "resultat",
+    "results": "resultat",
+    "forQuery": "för",
+    "empty": "Inga resultat hittades."
   }
 }

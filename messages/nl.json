@@ -426,5 +426,18 @@
     "seoTitleSuffix": "Kennisbank",
     "tipLabel": "Tip",
     "warnLabel": "Let op"
+  },
+  "faqPage": {
+    "eyebrow": "Veelgestelde vragen",
+    "categoriesLabel": "categorieën",
+    "questionsLabel": "vragen",
+    "searchPlaceholder": "Zoek in vragen en antwoorden…",
+    "searchAria": "Zoeken in veelgestelde vragen",
+    "clearSearch": "Wis zoekopdracht",
+    "all": "Alles",
+    "result": "resultaat",
+    "results": "resultaten",
+    "forQuery": "voor",
+    "empty": "Geen resultaten gevonden."
   }
 }

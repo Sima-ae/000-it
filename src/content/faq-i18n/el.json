@@ -1,0 +1,739 @@
+{
+  "title": "Συχνές ερωτήσεις",
+  "subtitle": "Αναλυτικές απαντήσεις για την TripleZero iT — από AI και SEO έως design, marketing, υποστήριξη και hosting.",
+  "ctaTitle": "Χρειάζεστε ακόμη βοήθεια;",
+  "ctaText": "Δεν βρίσκετε την απάντηση; Επικοινωνήστε με την ομάδα μας και θα σας απαντήσουμε γρήγορα.",
+  "ctaButton": "Επικοινωνήστε μαζί μας",
+  "categories": [
+    {
+      "id": "general",
+      "title": "Γενικά",
+      "items": [
+        {
+          "id": "gen-1",
+          "question": "Τι κάνει η TripleZero iT;",
+          "answer": "Συνδυάζουμε webdesign, WordPress support, digital marketing, ορατότητα αναζήτησης (AEO, GEO/τοπικό και SEO), design και hosting — βοηθώντας τα brands να βρίσκονται, να μετατρέπουν και να αναπτύσσονται."
+        },
+        {
+          "id": "gen-2",
+          "question": "Πώς ξεκινάω;",
+          "answer": "Κλείστε ένα call ή επικοινωνήστε μαζί μας. Κάνουμε ένα σύντομο intake, ελέγχουμε στόχους και stack και στη συνέχεια προτείνουμε ένα ξεκάθαρο πλάνο με χρονοδιάγραμμα και KPIs."
+        },
+        {
+          "id": "gen-3",
+          "question": "Με τι είδους επιχειρήσεις συνεργάζεστε;",
+          "answer": "SMBs, scale-ups, ecommerce, agencies και διεθνή brands. Συνεργαζόμαστε με υπάρχουσες ομάδες ή ως full-service partner."
+        },
+        {
+          "id": "gen-4",
+          "question": "Συνεργάζεστε μόνο στην Ολλανδία;",
+          "answer": "Όχι. Εξυπηρετούμε πελάτες στο Benelux και διεθνώς στα Ολλανδικά και στα Αγγλικά."
+        },
+        {
+          "id": "gen-5",
+          "question": "Πώς μοιάζει μια τυπική συνεργασία;",
+          "answer": "Intake → audit/scan → πλάνο → εκτέλεση σε sprints → μέτρηση → βελτιστοποίηση, με σαφή milestones."
+        },
+        {
+          "id": "gen-6",
+          "question": "Μπορώ να συνδυάσω πολλαπλές υπηρεσίες;",
+          "answer": "Ναι. Συχνές συνθέσεις: webdesign + SEO + ads ή WordPress maintenance + hosting + security."
+        },
+        {
+          "id": "gen-7",
+          "question": "Πόσο γρήγορα μπορείτε να ξεκινήσετε;",
+          "answer": "Συχνά μέσα σε λίγες εργάσιμες ημέρες μετά την έγκριση. Επείγοντα ζητήματα (malware, downtime) μπαίνουν σε προτεραιότητα."
+        },
+        {
+          "id": "gen-8",
+          "question": "Δουλεύετε remote ή on-site;",
+          "answer": "Κυρίως remote με δομημένη επικοινωνία. On-site είναι διαθέσιμο κατόπιν αιτήματος."
+        },
+        {
+          "id": "gen-9",
+          "question": "Πώς επικοινωνείτε την πρόοδο;",
+          "answer": "Τακτικές ενημερώσεις, tickets/dashboard όπου χρειάζεται, καθώς και sprint ή μηνιαίες αναφορές."
+        },
+        {
+          "id": "gen-10",
+          "question": "Τι χρειάζεστε από εμάς για να ξεκινήσουμε;",
+          "answer": "Πρόσβαση (όπου χρειάζεται), στόχους, brand assets, λογαριασμούς analytics και υπάρχοντα credentials εργαλείων."
+        },
+        {
+          "id": "gen-11",
+          "question": "Είστε κατάλληλοι για startups;",
+          "answer": "Ναι — από lean landing pages και AI scans έως ολοκληρωμένα growth systems όσο κάνετε scale."
+        },
+        {
+          "id": "gen-12",
+          "question": "Ποιος κατέχει το έργο και τους λογαριασμούς;",
+          "answer": "Εσείς κατέχετε domains, content, repos και ad accounts. Παραδίδουμε αρχεία και documentation στο handover."
+        },
+        {
+          "id": "gen-13",
+          "question": "Μπορείτε να συνεργαστείτε με τους τωρινούς προμηθευτές μας;",
+          "answer": "Ναι. Δουλεύουμε μαζί με τους developers/marketers σας ή αναλαμβάνουμε τη συντήρηση με ομαλή μετάβαση."
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI",
+      "items": [
+        {
+          "id": "ai-1",
+          "question": "Τι είναι το AI scan σας;",
+          "answer": "Ένα AI readiness scan που βαθμολογεί πόσο καλά αποδίδει το site σας σε κλασική αναζήτηση, AI answers και τοπική/γεωγραφική ορατότητα (AEO, GEO, SEO και τεχνικά θεμέλια)."
+        },
+        {
+          "id": "ai-2",
+          "question": "Τι μετράει το AI scan;",
+          "answer": "AEO signals, GEO/τοπική ορατότητα, SEO fundamentals, δομή περιεχομένου, ενδείξεις απόδοσης και AI readiness — με προτεραιοποιημένες διορθώσεις."
+        },
+        {
+          "id": "ai-3",
+          "question": "Πόσο συχνά πρέπει να κάνουμε AI scan;",
+          "answer": "Μετά από σημαντικές αλλαγές στο site ή καμπάνιες· για ενεργά brands προτείνουμε περιοδικά scans (π.χ. ανά τρίμηνο)."
+        },
+        {
+          "id": "ai-4",
+          "question": "Είναι το AI μόνο για συγγραφή περιεχομένου;",
+          "answer": "Όχι. Περιλαμβάνει και τεχνική ανακαλυψιμότητα, structured data, internal linking και το πώς τα AI systems συνοψίζουν το brand σας."
+        },
+        {
+          "id": "ai-5",
+          "question": "Μπορείτε να ενσωματώσετε AI στα workflows μας;",
+          "answer": "Ναι: υποβοήθηση περιεχομένου, automation, chat/ticket flows και custom AI API integrations."
+        },
+        {
+          "id": "ai-6",
+          "question": "Αντικαθιστά το AI τη στρατηγική σας δουλειά;",
+          "answer": "Όχι. Το AI επιταχύνει την ανάλυση και την παραγωγή· η στρατηγική, το brand voice και οι αποφάσεις μετατροπής παραμένουν human-led."
+        },
+        {
+          "id": "ai-7",
+          "question": "Είναι ασφαλές το AI-generated content για SEO;",
+          "answer": "Μόνο με ανθρώπινο έλεγχο, μοναδική προστιθέμενη αξία και E-E-A-T. Αποφεύγουμε thin, generic σελίδες που ρίχνουν τα rankings."
+        },
+        {
+          "id": "ai-8",
+          "question": "Τι είναι το AI readiness;",
+          "answer": "Το πόσο καλά είναι δομημένα το site, το content και τα δεδομένα σας ώστε τα AI systems να μπορούν να σας παραθέτουν, να σας προτείνουν και να σας εξηγούν σωστά."
+        },
+        {
+          "id": "ai-9",
+          "question": "Χρησιμοποιείτε AI agents στο dashboard;",
+          "answer": "Ναι. Οι πελάτες βλέπουν agents για SEO, content, social και ads με status και tasks."
+        },
+        {
+          "id": "ai-10",
+          "question": "Ποια AI tools χρησιμοποιείτε;",
+          "answer": "Επιλέγουμε εργαλεία ανά use case, με governance: πηγές, fact-checking, κανόνες brand και privacy."
+        },
+        {
+          "id": "ai-11",
+          "question": "Μπορεί το AI να βοηθήσει στα support tickets;",
+          "answer": "Ναι για triage και ταχύτερες απαντήσεις, με human escalation για σύνθετες ή ευαίσθητες περιπτώσεις."
+        },
+        {
+          "id": "ai-12",
+          "question": "Πώς κοστολογείται το AI work;",
+          "answer": "Από ένα entry AI scan έως μηνιαία AI + marketing retainers. Θα λάβετε σαφή πρόταση μετά το intake."
+        },
+        {
+          "id": "ai-13",
+          "question": "Πώς μετράμε το AI ROI;",
+          "answer": "KPIs όπως traffic, leads, χρόνος που εξοικονομείται, περιεχόμενο που παράγεται, ticket resolution και conversion — ορισμένα από την αρχή."
+        }
+      ]
+    },
+    {
+      "id": "aeo-geo-seo",
+      "title": "AEO, GEO & SEO",
+      "items": [
+        {
+          "id": "seo-1",
+          "question": "Ποια είναι η διαφορά μεταξύ AEO, GEO και SEO;",
+          "answer": "AEO (Answer Engine Optimization) βελτιστοποιεί για AI answers. GEO (Geographic Search Engine Optimization) ενισχύει την τοπική και περιφερειακή ορατότητα σε Maps, local packs και location-based search. SEO στοχεύει τις κλασικές μηχανές αναζήτησης."
+        },
+        {
+          "id": "seo-2",
+          "question": "Γιατί έχουν σημασία το AEO/GEO τώρα;",
+          "answer": "Όλο και περισσότεροι χρήστες παίρνουν απαντήσεις μέσω AI και αναζητούν τοπικά (“near me”). Χωρίς AEO χάνετε AI citations· χωρίς GEO χάνετε κοντινά leads — ακόμη κι αν το κλασικό SEO είναι δυνατό."
+        },
+        {
+          "id": "seo-3",
+          "question": "Πώς ξεκινάτε ένα SEO engagement;",
+          "answer": "Τεχνικό audit, keyword/intent research, content gap analysis και ένα προτεραιοποιημένο roadmap που συνδέεται με business KPIs."
+        },
+        {
+          "id": "seo-4",
+          "question": "Πόσος χρόνος χρειάζεται για να φανούν SEO αποτελέσματα;",
+          "answer": "Τα τεχνικά wins μπορεί να φανούν γρήγορα. Η οργανική ανάπτυξη συνήθως χτίζεται σε εβδομάδες έως μήνες ανάλογα με τον ανταγωνισμό."
+        },
+        {
+          "id": "seo-5",
+          "question": "Προσφέρετε local SEO;",
+          "answer": "Ναι: Google Business Profile, local landing pages, NAP consistency, reviews και local content clusters."
+        },
+        {
+          "id": "seo-6",
+          "question": "Τι είναι για εσάς το technical SEO;",
+          "answer": "Crawlability, indexation, Core Web Vitals, structured data, sitemaps/robots, canonicals, internal linking και καθαρισμός σφαλμάτων."
+        },
+        {
+          "id": "seo-7",
+          "question": "Δημιουργείτε SEO content;",
+          "answer": "Ναι: briefs, outlines, blogs, landing pages και FAQs σύμφωνα με το intent και δομημένα για AI visibility."
+        },
+        {
+          "id": "seo-8",
+          "question": "Τι είναι το E-E-A-T;",
+          "answer": "Experience, Expertise, Authoritativeness, Trust — κρίσιμο για rankings και αξιοπιστία στα AI summaries."
+        },
+        {
+          "id": "seo-9",
+          "question": "Κάνετε link building;",
+          "answer": "Ναι, ηθικά και σχετικό: digital PR, partnerships και content assets — ποτέ spam schemes."
+        },
+        {
+          "id": "seo-10",
+          "question": "Μπορείτε να ανακάμψετε από SEO ζημιά;",
+          "answer": "Ναι: algorithm recovery, toxic links, προβλήματα indexation και διορθώσεις για content cannibalization."
+        },
+        {
+          "id": "seo-11",
+          "question": "Πώς αναφέρετε την πρόοδο SEO;",
+          "answer": "Μηνιαία ή ανά sprint: rankings, traffic, conversions, τεχνικά ζητήματα και επόμενα βήματα."
+        },
+        {
+          "id": "seo-12",
+          "question": "Δουλεύει το SEO για ecommerce;",
+          "answer": "Ναι: product/category SEO, faceted navigation, reviews, structured data και content hubs με buying intent."
+        },
+        {
+          "id": "seo-13",
+          "question": "Το SEO είναι one-off ή συνεχές;",
+          "answer": "Τα καλύτερα αποτελέσματα έρχονται με συνεχή βελτιστοποίηση. Τα one-off audits βοηθούν, αλλά ο ανταγωνισμός κινείται συνεχώς."
+        },
+        {
+          "id": "seo-14",
+          "question": "Υποστηρίζετε international SEO;",
+          "answer": "Ναι: hreflang, market research ανά locale, localization και τεχνικά multi-locale setups."
+        }
+      ]
+    },
+    {
+      "id": "advertising",
+      "title": "Διαφήμιση",
+      "items": [
+        {
+          "id": "ads-1",
+          "question": "Ποια ad channels τρέχετε;",
+          "answer": "Google Ads, Meta, LinkedIn και όπου χρειάζεται YouTube/retargeting — ανάλογα με το funnel και το budget."
+        },
+        {
+          "id": "ads-2",
+          "question": "Πώς ορίζετε τα ad budgets;",
+          "answer": "Με βάση στόχους (leads/sales), target CAC, τιμές δημοπρασίας και μια test phase. Ξεκινάμε lean και κάνουμε scale στους νικητές."
+        },
+        {
+          "id": "ads-3",
+          "question": "Ποια είναι η προσέγγισή σας στο Google Ads;",
+          "answer": "Account structure, intent mapping, negatives, landing-page fit, conversion tracking και weekly optimization."
+        },
+        {
+          "id": "ads-4",
+          "question": "Μπορείτε να τρέξετε Meta Ads για ecommerce;",
+          "answer": "Ναι: catalogs/retargeting, creatives, audiences και creative testing για καλύτερο ROAS."
+        },
+        {
+          "id": "ads-5",
+          "question": "Πώς μετράτε την επιτυχία των ads;",
+          "answer": "Conversions, CPA/CAC, ROAS, ποιότητα leads και pipeline — όχι vanity clicks."
+        },
+        {
+          "id": "ads-6",
+          "question": "Τι γίνεται αν το tracking είναι χαλασμένο;",
+          "answer": "Διορθώνουμε GTM/GA4/pixels, consent setups όπου χρειάζεται και καλύτερες επιλογές μέτρησης."
+        },
+        {
+          "id": "ads-7",
+          "question": "Τρέχετε B2B LinkedIn Ads;",
+          "answer": "Ναι, με στοχευμένο targeting, lead forms ή landing pages και messaging για decision-makers."
+        },
+        {
+          "id": "ads-8",
+          "question": "Πόσο γρήγορα δείχνουν αποτελέσματα τα ads;",
+          "answer": "Το traffic μπορεί να είναι άμεσο. Σταθερό CPA/ROAS συνήθως απαιτεί 2–6 εβδομάδες learning και iteration."
+        },
+        {
+          "id": "ads-9",
+          "question": "Δημιουργείτε ad creatives;",
+          "answer": "Ναι: copy, visuals και test variants — design/media creation όταν χρειάζεται."
+        },
+        {
+          "id": "ads-10",
+          "question": "Μπορούν τα ads και το SEO να ενισχύσουν το ένα το άλλο;",
+          "answer": "Ναι. Τα search insights τροφοδοτούν το SEO· τα δυνατά οργανικά pages βελτιώνουν το Quality Score και μειώνουν το CPA."
+        },
+        {
+          "id": "ads-11",
+          "question": "Μπορείτε να αναλάβετε υπάρχοντα ad accounts;",
+          "answer": "Ναι. Κάνουμε audit, αναδιοργάνωση και optimization χωρίς άσκοπα rebuilds."
+        },
+        {
+          "id": "ads-12",
+          "question": "Πώς αποφεύγετε τη σπατάλη budget;",
+          "answer": "Negatives, exclusions, caps, geo controls, frequency limits και γρήγορα kill switches."
+        },
+        {
+          "id": "ads-13",
+          "question": "Αξίζει ακόμη το remarketing;",
+          "answer": "Ναι όταν είναι privacy-compliant και με ισχυρές προσφορές — συχνά το πιο αποδοτικό layer."
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "title": "Design",
+      "items": [
+        {
+          "id": "des-1",
+          "question": "Τι design services προσφέρετε;",
+          "answer": "Λογότυπα, brand identity, επαγγελματικές κάρτες, επιστολόχαρτα, flyers, αφίσες, stickers, περιοδικά/μπροσούρες και ψηφιακά visuals."
+        },
+        {
+          "id": "des-2",
+          "question": "Ποια εργαλεία χρησιμοποιείτε;",
+          "answer": "Adobe Photoshop, Illustrator και InDesign για print-ready, επαγγελματικά deliverables."
+        },
+        {
+          "id": "des-3",
+          "question": "Παραδίδετε print-ready αρχεία;",
+          "answer": "Ναι: CMYK, bleed, crop marks και σωστά PDF exports, καθώς και εκδόσεις για οθόνη."
+        },
+        {
+          "id": "des-4",
+          "question": "Πώς δουλεύει ένα logo project;",
+          "answer": "Brief → concepts → feedback rounds → τελικά vectors (SVG/PDF/AI) και βασικά usage guidelines."
+        },
+        {
+          "id": "des-5",
+          "question": "Μπορείτε να κάνετε refresh ένα υπάρχον brand;",
+          "answer": "Ναι — ανανεώνουμε λογότυπο, χρώμα και τυπογραφία διατηρώντας την αναγνωρισιμότητα."
+        },
+        {
+          "id": "des-6",
+          "question": "Φτιάχνετε social templates;",
+          "answer": "Ναι, ώστε η ομάδα σας να δημοσιεύει με συνέπεια και γρήγορα."
+        },
+        {
+          "id": "des-7",
+          "question": "Digital vs print design;",
+          "answer": "Το print απαιτεί χρωματικό χώρο, ανάλυση και περιθώρια· το digital απαιτεί οξύτητα στην οθόνη και ταχύτητα. Παραδίδουμε και τα δύο σωστά."
+        },
+        {
+          "id": "des-8",
+          "question": "Μπορείτε να κάνετε layout σε περιοδικά ή μπροσούρες;",
+          "answer": "Ναι, πολυσέλιδο InDesign με grids, styles και prepress checks."
+        },
+        {
+          "id": "des-9",
+          "question": "Αναλαμβάνετε και την εκτύπωση;",
+          "answer": "Ναι. Σχεδιάζουμε και μπορούμε να εκτυπώσουμε σε μικρές ή μεγάλες ποσότητες — από κάρτες και stickers έως flyers, αφίσες και μπροσούρες — με proofs και συντονισμό παραγωγής."
+        },
+        {
+          "id": "des-10",
+          "question": "Πόσα feedback rounds περιλαμβάνονται;",
+          "answer": "Συνήθως 2–3 δομημένοι κύκλοι· περισσότεροι κατόπιν συμφωνίας."
+        },
+        {
+          "id": "des-11",
+          "question": "Παίρνουμε τα source files;",
+          "answer": "Ναι, όπως συμφωνείται (AI/PSD/INDD ή export packs)."
+        },
+        {
+          "id": "des-12",
+          "question": "Μπορούν να ευθυγραμμιστούν design και webdesign;",
+          "answer": "Ναι. Brand systems και UI παραμένουν συνεπή σε print και web."
+        },
+        {
+          "id": "des-13",
+          "question": "Πού μπορώ να μάθω περισσότερα για το Digital Design;",
+          "answer": "Επισκεφθείτε το /digital-design και τις υπηρεσίες Digital Design στο μενού."
+        }
+      ]
+    },
+    {
+      "id": "marketing",
+      "title": "Marketing",
+      "items": [
+        {
+          "id": "mkt-1",
+          "question": "Τι marketing services προσφέρετε;",
+          "answer": "AEO/GEO/SEO, content, social, ads, ecommerce growth, product listing, community management και data entry."
+        },
+        {
+          "id": "mkt-2",
+          "question": "Πώς χτίζετε μια marketing strategy;",
+          "answer": "Στόχοι, κοινό, positioning, channel mix, content pipeline και KPIs — πρακτικά και εκτελέσιμα."
+        },
+        {
+          "id": "mkt-3",
+          "question": "Τι σημαίνει full-funnel marketing για εσάς;",
+          "answer": "Awareness → consideration → conversion → retention, με σαφώς ορισμένους ρόλους καναλιών."
+        },
+        {
+          "id": "mkt-4",
+          "question": "Βοηθάτε στο positioning;",
+          "answer": "Ναι. Το σαφές positioning αποτρέπει διάσπαρτες καμπάνιες και αδύναμο conversion."
+        },
+        {
+          "id": "mkt-5",
+          "question": "Παρέχετε content writing;",
+          "answer": "Ναι: blogs, website copy, newsletters, landing pages και sales copy."
+        },
+        {
+          "id": "mkt-6",
+          "question": "Κάνετε ecommerce marketing;",
+          "answer": "Ναι: feeds, ποιότητα listings, CRO, ads και category/product SEO."
+        },
+        {
+          "id": "mkt-7",
+          "question": "Τι είναι το CRO;",
+          "answer": "Conversion Rate Optimization — βελτίωση σελίδων και funnels ώστε περισσότεροι επισκέπτες να μετατρέπονται."
+        },
+        {
+          "id": "mkt-8",
+          "question": "Πώς αναφέρετε marketing αποτελέσματα;",
+          "answer": "Reports/dashboards με traffic, leads, sales, CPA/ROAS και learnings ανά κανάλι."
+        },
+        {
+          "id": "mkt-9",
+          "question": "Μπορείτε να δουλέψετε με την in-house ομάδα μας;",
+          "answer": "Ναι — εκτέλεση, συμβουλευτικά ή ανάληψη ενός specialist lane (SEO-only, ads-only κ.λπ.)."
+        },
+        {
+          "id": "mkt-10",
+          "question": "Πόσο γρήγορα μπορούν να ξεκινήσουν οι καμπάνιες;",
+          "answer": "Συχνά σε 1–2 εβδομάδες μετά το tracking/setup· το content τρέχει παράλληλα."
+        },
+        {
+          "id": "mkt-11",
+          "question": "Υποστηρίζετε email marketing;",
+          "answer": "Ναι: flows, newsletters και copy, συμπεριλαμβανομένων CRM/ecommerce integrations."
+        },
+        {
+          "id": "mkt-12",
+          "question": "Είναι το marketing πάντα μηνιαίο retainer;",
+          "answer": "Τα retainers ταιριάζουν σε συνεχή ανάπτυξη· audits, redesigns και launches μπορούν να είναι project-based."
+        },
+        {
+          "id": "mkt-13",
+          "question": "Πώς αποφεύγετε busywork χωρίς αποτέλεσμα;",
+          "answer": "Κάθε ενέργεια συνδέεται με KPIs. Ό,τι δεν αποδίδει, διορθώνεται ή σταματά."
+        }
+      ]
+    },
+    {
+      "id": "social-media",
+      "title": "Κοινωνικά δίκτυα",
+      "items": [
+        {
+          "id": "soc-1",
+          "question": "Ποια social channels διαχειρίζεστε;",
+          "answer": "Κυρίως LinkedIn, Instagram, Facebook και όπου χρειάζεται X/TikTok — με βάση το audience fit."
+        },
+        {
+          "id": "soc-2",
+          "question": "Τι περιλαμβάνει το social media management;",
+          "answer": "Στρατηγική, ημερολόγιο, δημιουργία/προγραμματισμό, community replies, reporting και iteration."
+        },
+        {
+          "id": "soc-3",
+          "question": "Δημιουργείτε visuals και video;",
+          "answer": "Ναι μέσω media creation: stills, carousels, short-form video και templates."
+        },
+        {
+          "id": "soc-4",
+          "question": "Πόσο συχνά δημοσιεύετε;",
+          "answer": "Εξαρτάται από τους στόχους — συνήθως 3–5 φορές/εβδομάδα στα βασικά κανάλια, ποιότητα πάνω από ποσότητα."
+        },
+        {
+          "id": "soc-5",
+          "question": "Προσφέρετε community management;",
+          "answer": "Ναι: moderation, σχόλια, DMs και φροντίδα φήμης με brand voice guidelines."
+        },
+        {
+          "id": "soc-6",
+          "question": "Μπορούν social και ads να δουλέψουν μαζί;",
+          "answer": "Ναι. Οι οργανικοί “νικητές” γίνονται ad creatives· τα ads ενισχύουν αυτό που αποδίδει."
+        },
+        {
+          "id": "soc-7",
+          "question": "Πώς μετράτε την επιτυχία στα social;",
+          "answer": "Reach, engagement, click-outs, leads και assisted conversions — όχι μόνο likes."
+        },
+        {
+          "id": "soc-8",
+          "question": "Δουλεύετε με influencers;",
+          "answer": "Κατόπιν αιτήματος: επιλογή, briefing και tracking με έμφαση σε μετρήσιμα αποτελέσματα."
+        },
+        {
+          "id": "soc-9",
+          "question": "Μπορείτε να υποστηρίξετε crisis communication;",
+          "answer": "Ναι, με γρήγορα πρωτόκολλα απόκρισης σε συντονισμό με την ομάδα σας."
+        },
+        {
+          "id": "soc-10",
+          "question": "Βοηθάτε σε LinkedIn thought leadership;",
+          "answer": "Ναι: προσωπικό + εταιρικό content, carousels, cases και employee advocacy."
+        },
+        {
+          "id": "soc-11",
+          "question": "Παρέχετε content calendar;",
+          "answer": "Ναι — μηνιαία ή τριμηνιαία themes, formats και deadlines."
+        },
+        {
+          "id": "soc-12",
+          "question": "Τι γίνεται αν έχουμε ήδη social manager;",
+          "answer": "Μπορούμε να εξειδικευτούμε (creatives, ads, strategy) ή να υποστηρίξουμε σε peak periods."
+        },
+        {
+          "id": "soc-13",
+          "question": "Πόσο γρήγορα θα αναπτυχθούν τα social;",
+          "answer": "Η συνέπεια “χτίζει”. Η ουσιαστική ανάπτυξη συνήθως απαιτεί εβδομάδες έως μήνες· πιο γρήγορα με υποστήριξη ads."
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "Υποστήριξη",
+      "items": [
+        {
+          "id": "sup-1",
+          "question": "Τι υποστήριξη παρέχετε;",
+          "answer": "WordPress support, υποστήριξη custom sites, tickets/live chat, συντήρηση, ασφάλεια, απόδοση και incident response."
+        },
+        {
+          "id": "sup-2",
+          "question": "Πώς επικοινωνώ με το support;",
+          "answer": "Μέσω επικοινωνίας, booking, dashboard tickets ή live chat. Τα επείγοντα λαμβάνουν προτεραιότητα."
+        },
+        {
+          "id": "sup-3",
+          "question": "Ποιος είναι ο χρόνος απόκρισης;",
+          "answer": "Γρήγορη πρώτη απόκριση (συχνά εντός μίας εργάσιμης ημέρας· για κρίσιμο downtime πιο γρήγορα). Τα ακριβή SLAs εξαρτώνται από το πακέτο."
+        },
+        {
+          "id": "sup-4",
+          "question": "Προσφέρετε 24/7 monitoring;",
+          "answer": "Ναι σε σχετικά support/hosting πακέτα: monitoring, backups και alerts."
+        },
+        {
+          "id": "sup-5",
+          "question": "Μπορείτε να αφαιρέσετε malware;",
+          "answer": "Ναι — σε WordPress και custom stacks — μαζί με hardening και aftercare."
+        },
+        {
+          "id": "sup-6",
+          "question": "Αναλαμβάνετε WordPress updates;",
+          "answer": "Ναι μέσω WordPress maintenance & updates: core/plugins/themes με backups και checks."
+        },
+        {
+          "id": "sup-7",
+          "question": "Μπορείτε να βοηθήσετε με hosting issues;",
+          "answer": "Ναι — διάγνωση, migration ή βελτιστοποίηση hosting/VPS/domains."
+        },
+        {
+          "id": "sup-8",
+          "question": "Τι γίνεται αν το site μου είναι κάτω;",
+          "answer": "Δηλώστε την προτεραιότητα. Αποκαθιστούμε με backups, server checks και hotfixes με ενημερώσεις κατάστασης."
+        },
+        {
+          "id": "sup-9",
+          "question": "Υπάρχει client portal;",
+          "answer": "Ναι. Οι συνδεδεμένοι πελάτες βλέπουν dashboard, tickets, projects και σχετικά CRM/invoices."
+        },
+        {
+          "id": "sup-10",
+          "question": "Μπορούν πολλοί συνάδελφοι να ανοίγουν tickets;",
+          "answer": "Ναι, ανάλογα με τους ρόλους λογαριασμού (client/manager/admin)."
+        },
+        {
+          "id": "sup-11",
+          "question": "Τι περιλαμβάνει το Basic/Standard/Premium support;",
+          "answer": "Περισσότερα sites, ταχύτερο follow-up και ευρύτερη κάλυψη (updates, malware, speed, SEO). Δείτε τις σελίδες support για λεπτομέρειες."
+        },
+        {
+          "id": "sup-12",
+          "question": "Βοηθάτε και σε μη τεχνικές ερωτήσεις;",
+          "answer": "Ναι — υπηρεσίες, billing και account ερωτήματα, με τεχνικό βάθος ανάλογα με το πακέτο σας."
+        },
+        {
+          "id": "sup-13",
+          "question": "Μπορώ να αναβαθμίσω το support αργότερα;",
+          "answer": "Ναι, καθώς αυξάνονται το traffic, το ρίσκο ή οι ανάγκες της ομάδας."
+        }
+      ]
+    },
+    {
+      "id": "webdesign",
+      "title": "Webdesign",
+      "items": [
+        {
+          "id": "web-1",
+          "question": "Φτιάχνετε μόνο WordPress sites;",
+          "answer": "Όχι. Πέρα από WordPress φτιάχνουμε custom sites σε HTML/CSS/JS, PHP και Next.js — ξεχωριστά από τις WordPress υπηρεσίες."
+        },
+        {
+          "id": "web-2",
+          "question": "Τι είναι το Website Support;",
+          "answer": "Design, development, συντήρηση, ασφάλεια, απόδοση, backup/migration και API integrations για custom stacks."
+        },
+        {
+          "id": "web-3",
+          "question": "Μπορείτε να κάνετε redesign ένα υπάρχον site;",
+          "answer": "Ναι: UX/UI refresh, βελτιώσεις μετατροπής και τεχνικό modernization χωρίς πλήρες rewrite, όπου γίνεται."
+        },
+        {
+          "id": "web-4",
+          "question": "Δουλεύετε με Next.js;",
+          "answer": "Ναι — ιδανικό για γρήγορα, SEO-ready marketing sites και dashboards."
+        },
+        {
+          "id": "web-5",
+          "question": "Φτιάχνετε PHP applications;",
+          "answer": "Ναι: portals, APIs, modernization legacy και hardening σε απόδοση/ασφάλεια."
+        },
+        {
+          "id": "web-6",
+          "question": "Πώς χειρίζεστε το mobile;",
+          "answer": "Mobile-first design, responsive layouts και testing σε συνηθισμένες συσκευές/browsers."
+        },
+        {
+          "id": "web-7",
+          "question": "Περιλαμβάνεται η προσβασιμότητα;",
+          "answer": "Ακολουθούμε ισχυρά a11y basics· αυστηρότερα WCAG προγράμματα μπορούν να μπουν στο scope."
+        },
+        {
+          "id": "web-8",
+          "question": "CMS επιλογές χωρίς WordPress;",
+          "answer": "Ναι: headless CMS, custom admin ή static setups ανάλογα με την ομάδα σας."
+        },
+        {
+          "id": "web-9",
+          "question": "Πόσο διαρκεί ένα webdesign project;",
+          "answer": "Landing pages σε εβδομάδες· μεγαλύτερα sites/apps σε πολλαπλά sprints μετά τον προγραμματισμό του intake."
+        },
+        {
+          "id": "web-10",
+          "question": "Περιλαμβάνετε copy και SEO στο launch;",
+          "answer": "Ναι όταν συνδυαστεί με content/SEO ώστε το site να λανσαριστεί searchable και conversion-ready."
+        },
+        {
+          "id": "web-11",
+          "question": "Τι γίνεται με την απόδοση μετά το launch;",
+          "answer": "Βελτιστοποιούμε Core Web Vitals, caching/CDN και monitoring μέσω πακέτων συντήρησης."
+        },
+        {
+          "id": "web-12",
+          "question": "Μπορείτε να ενσωματώσετε APIs (CRM, πληρωμές, AI);",
+          "answer": "Ναι, με σωστό error handling, logging και documentation."
+        },
+        {
+          "id": "web-13",
+          "question": "Πώς παραδίδεται ο κώδικας;",
+          "answer": "Μέσω repo/deploy pipelines όπου γίνεται, με staging/production και handover."
+        },
+        {
+          "id": "web-14",
+          "question": "Βοηθάτε με on-site CRO;",
+          "answer": "Ναι: UX βελτιώσεις, forms, CTAs, experiments και page speed."
+        }
+      ]
+    },
+    {
+      "id": "webhosting",
+      "title": "Webhosting & Ονόματα χώρου",
+      "items": [
+        {
+          "id": "host-1",
+          "question": "Τι hosting προσφέρετε;",
+          "answer": "Shared, WordPress και VPS hosting σε Basic/Plus/Business tiers, καθώς και domains."
+        },
+        {
+          "id": "host-2",
+          "question": "Shared vs WordPress vs VPS;",
+          "answer": "Το Shared ταιριάζει σε μικρότερα sites. Το WordPress hosting είναι WP-optimized. Το VPS δίνει περισσότερους πόρους/έλεγχο για μεγαλύτερα loads."
+        },
+        {
+          "id": "host-3",
+          "question": "Βοηθάτε με domain registration;",
+          "answer": "Ναι — συμβουλή, registration/transfer και σωστό DNS setup."
+        },
+        {
+          "id": "host-4",
+          "question": "Περιλαμβάνεται SSL;",
+          "answer": "Ναι, το SSL περιλαμβάνεται σε σχετικά hosting plans."
+        },
+        {
+          "id": "host-5",
+          "question": "Μπορείτε να μεταφέρετε το site μου στο hosting σας;",
+          "answer": "Ναι: backup, migration, DNS cutover, SSL και smoke tests με ελάχιστο downtime."
+        },
+        {
+          "id": "host-6",
+          "question": "Πώς λειτουργούν τα backups;",
+          "answer": "Εξαρτάται από το plan: εύκολα ή αυτοματοποιημένα backups. Διατίθεται και extra off-site retention."
+        },
+        {
+          "id": "host-7",
+          "question": "Τι γίνεται αν αυξηθεί το traffic;",
+          "answer": "Κάνουμε scale σε Plus/Business ή VPS και βελτιστοποιούμε caching/CDN."
+        },
+        {
+          "id": "host-8",
+          "question": "Περιλαμβάνεται email με τα domains;",
+          "answer": "Εξαρτάται από το setup. Προτείνουμε αξιόπιστες mail λύσεις και DNS auth (SPF/DKIM/DMARC)."
+        },
+        {
+          "id": "host-9",
+          "question": "Πόσο ασφαλές είναι το hosting σας;",
+          "answer": "SSL/firewall, updates, monitoring και hardening, με προαιρετικές security υπηρεσίες επιπλέον."
+        },
+        {
+          "id": "host-10",
+          "question": "Μπορώ να μεταβώ από shared σε VPS αργότερα;",
+          "answer": "Ναι — προγραμματισμένο migration με testing και rollback."
+        },
+        {
+          "id": "host-11",
+          "question": "Υποστηρίζετε CDN;",
+          "answer": "Ναι όπου χρειάζεται (συχνά περιλαμβάνεται στο WP hosting) για ταχύτερη global παράδοση."
+        },
+        {
+          "id": "host-12",
+          "question": "Ποια είναι η προσέγγισή σας για uptime;",
+          "answer": "Monitoring, γρήγορο incident response και σαφής επικοινωνία για maintenance windows."
+        },
+        {
+          "id": "host-13",
+          "question": "Μπορείτε να διορθώσετε DNS issues;",
+          "answer": "Ναι: records, propagation, mail auth και domain wiring."
+        },
+        {
+          "id": "host-14",
+          "question": "Πώς επιλέγω το σωστό plan;",
+          "answer": "Με βάση traffic, stack (WP vs custom), πόρους και ανάπτυξη. Συμβουλεύουμε με ειλικρίνεια."
+        },
+        {
+          "id": "host-15",
+          "question": "Πού μπορώ να δω τις τιμές hosting;",
+          "answer": "Στις σελίδες υπηρεσιών hosting κάτω από Services → Webhosting & Domains."
+        }
+      ]
+    }
+  ]
+}

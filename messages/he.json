@@ -426,5 +426,18 @@
     "seoTitleSuffix": "מאגר ידע",
     "tipLabel": "טיפ",
     "warnLabel": "שימו לב"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "קטגוריות",
+    "questionsLabel": "שאלות",
+    "searchPlaceholder": "חיפוש בשאלות ותשובות…",
+    "searchAria": "חיפוש ב-FAQ",
+    "clearSearch": "נקה חיפוש",
+    "all": "הכל",
+    "result": "תוצאה",
+    "results": "תוצאות",
+    "forQuery": "עבור",
+    "empty": "לא נמצאו תוצאות."
   }
 }

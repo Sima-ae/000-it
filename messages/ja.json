@@ -426,5 +426,18 @@
     "seoTitleSuffix": "ナレッジベース",
     "tipLabel": "ヒント",
     "warnLabel": "注意"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "カテゴリ",
+    "questionsLabel": "質問",
+    "searchPlaceholder": "質問と回答を検索…",
+    "searchAria": "FAQを検索",
+    "clearSearch": "検索をクリア",
+    "all": "すべて",
+    "result": "件",
+    "results": "件",
+    "forQuery": "：",
+    "empty": "結果が見つかりません。"
   }
 }

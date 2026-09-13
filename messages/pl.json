@@ -426,5 +426,18 @@
     "seoTitleSuffix": "Baza wiedzy",
     "tipLabel": "Wskazówka",
     "warnLabel": "Uwaga"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "kategorie",
+    "questionsLabel": "pytania",
+    "searchPlaceholder": "Szukaj w pytaniach i odpowiedziach…",
+    "searchAria": "Szukaj w FAQ",
+    "clearSearch": "Wyczyść wyszukiwanie",
+    "all": "Wszystkie",
+    "result": "wynik",
+    "results": "wyniki",
+    "forQuery": "dla",
+    "empty": "Nie znaleziono wyników."
   }
 }

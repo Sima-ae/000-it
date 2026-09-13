@@ -1,0 +1,739 @@
+{
+  "title": "Հաճախ տրվող հարցեր",
+  "subtitle": "TripleZero iT-ի վերաբերյալ խորացված պատասխաններ — AI-ից և SEO-ից մինչև դիզայն, մարքեթինգ, աջակցություն և հոստինգ։",
+  "ctaTitle": "Դեռ օգնություն է պետք՞",
+  "ctaText": "Չե՞ք գտնում ձեր պատասխանը։ Կապվեք մեր թիմի հետ, և մենք արագ կպատասխանենք։",
+  "ctaButton": "Կապվեք մեզ հետ",
+  "categories": [
+    {
+      "id": "general",
+      "title": "Ընդհանուր",
+      "items": [
+        {
+          "id": "gen-1",
+          "question": "Ի՞նչ է անում TripleZero iT-ը։",
+          "answer": "Մենք համատեղում ենք վեբդիզայնը, WordPress աջակցությունը, թվային մարքեթինգը, որոնման տեսանելիությունը (AEO, GEO/տեղային և SEO), դիզայնն ու հոստինգը՝ օգնելով բրենդներին ավելի հեշտ գտնվել, կոնվերտացնել և աճել։"
+        },
+        {
+          "id": "gen-2",
+          "question": "Ինչպե՞ս սկսել։",
+          "answer": "Պայմանավորվեք զանգի համար կամ կապվեք մեզ հետ։ Մենք անցկացնում ենք կարճ ինթեյք, վերանայում նպատակներն ու stack-ը, ապա առաջարկում հստակ պլան՝ ժամանակացույցով և KPI-ներով։"
+        },
+        {
+          "id": "gen-3",
+          "question": "Ի՞նչ տեսակ բիզնեսների հետ եք աշխատում։",
+          "answer": "SMB-ներ, scale-up-ներ, ecommerce, agency-ներ և միջազգային բրենդներ։ Աշխատում ենք թե՛ գործող թիմերի հետ, թե՛ որպես full-service գործընկեր։"
+        },
+        {
+          "id": "gen-4",
+          "question": "Միայն Նիդեռլանդնե՞րում եք աշխատում։",
+          "answer": "Ոչ։ Մենք սպասարկում ենք Benelux-ի և միջազգային հաճախորդների՝ հոլանդերեն և անգլերեն լեզուներով։"
+        },
+        {
+          "id": "gen-5",
+          "question": "Ինչպիսի՞ն է սովորական համագործակցությունը։",
+          "answer": "Ինթեյք → աուդիտ/սկան → պլան → իրականացում սպրինտերով → չափում → օպտիմիզացում՝ հստակ milestones-ով։"
+        },
+        {
+          "id": "gen-6",
+          "question": "Կարո՞ղ եմ համադրել մի քանի ծառայություն։",
+          "answer": "Այո։ Հաճախ հանդիպող կոմբինացիաներ՝ վեբդիզայն + SEO + ads, կամ WordPress սպասարկում + հոստինգ + անվտանգություն։"
+        },
+        {
+          "id": "gen-7",
+          "question": "Որքա՞ն արագ կարող եք սկսել։",
+          "answer": "Հաճախ՝ հաստատումից հետո մի քանի աշխատանքային օրվա ընթացքում։ Արտակարգ խնդիրները (malware, downtime) առաջնահերթ ենք մշակում։"
+        },
+        {
+          "id": "gen-8",
+          "question": "Աշխատո՞ւմ եք հեռավար, թե՞ տեղում։",
+          "answer": "Գլխավորապես հեռավար՝ կառուցվածքային հաղորդակցությամբ։ Տեղում աշխատանքը հնարավոր է ըստ պահանջի։"
+        },
+        {
+          "id": "gen-9",
+          "question": "Ինչպե՞ս եք հաղորդում առաջընթացը։",
+          "answer": "Կանոնավոր թարմացումներ, անհրաժեշտության դեպքում՝ տիկետներ/դեշբորդ, ինչպես նաև սպրինտային կամ ամսական հաշվետվություններ։"
+        },
+        {
+          "id": "gen-10",
+          "question": "Ի՞նչ է պետք ձեզնից սկսելու համար։",
+          "answer": "Մուտքեր/հասանելիություններ (անհրաժեշտության դեպքում), նպատակներ, բրենդային նյութեր, analytics հաշիվներ և գոյություն ունեցող գործիքների credentials։"
+        },
+        {
+          "id": "gen-11",
+          "question": "Արդյո՞ք հարմար եք ստարտափների համար։",
+          "answer": "Այո՝ lean landing էջերից ու AI սկաններից մինչև ամբողջական աճի համակարգեր՝ երբ դուք մասշտաբավորվում եք։"
+        },
+        {
+          "id": "gen-12",
+          "question": "Ո՞վ է տիրապետում աշխատանքին և հաշիվներին։",
+          "answer": "Դոմեյնները, կոնտենտը, repo-ները և ad account-ները մնում են ձեր սեփականությունը։ Հանձնման ժամանակ տրամադրում ենք ֆայլեր և փաստաթղթավորում։"
+        },
+        {
+          "id": "gen-13",
+          "question": "Կկարողանա՞ք համագործակցել մեր ընթացիկ մատակարարների հետ։",
+          "answer": "Այո։ Մենք աշխատում ենք ձեր developer-ների/մարքեթոլոգների կողքին կամ մաքուր ձևով ստանձնում ենք սպասարկումը։"
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI",
+      "items": [
+        {
+          "id": "ai-1",
+          "question": "Ի՞նչ է ձեր AI սկանը։",
+          "answer": "AI readiness սկան, որը գնահատում է, թե որքան լավ է ձեր կայքը աշխատում դասական որոնման, AI պատասխանների և տեղային/գեոգրաֆիկ տեսանելիության համար (AEO, GEO, SEO և տեխնիկական հիմքեր)։"
+        },
+        {
+          "id": "ai-2",
+          "question": "Ի՞նչ է չափում AI սկանը։",
+          "answer": "AEO ազդակներ, GEO/տեղային տեսանելիություն, SEO հիմքեր, կոնտենտի կառուցվածք, performance ցուցանիշներ և AI readiness՝ առաջնահերթ կատարվելիք ուղղումներով։"
+        },
+        {
+          "id": "ai-3",
+          "question": "Որքա՞ն հաճախ պետք է անենք AI սկան։",
+          "answer": "Մեծ փոփոխություններից կամ արշավներից հետո․ ակտիվ բրենդների համար խորհուրդ ենք տալիս պարբերական սկաններ (օր.՝ քառորդական)։"
+        },
+        {
+          "id": "ai-4",
+          "question": "AI-ը միայն կոնտենտ գրելու մասի՞ն է։",
+          "answer": "Ոչ։ Այն ներառում է նաև տեխնիկական discoverability, structured data, ներքին linking և այն, թե ինչպես են AI համակարգերը ամփոփում ձեր բրենդը։"
+        },
+        {
+          "id": "ai-5",
+          "question": "Կկարողանա՞ք AI-ը ինտեգրել մեր workflow-ների մեջ։",
+          "answer": "Այո՝ կոնտենտի օգնականություն, ավտոմատացում, chat/ticket flows և կաստոմ AI API ինտեգրացիաներ։"
+        },
+        {
+          "id": "ai-6",
+          "question": "AI-ը փոխարինո՞ւմ է ձեր ռազմավարական աշխատանքը։",
+          "answer": "Ոչ։ AI-ը արագացնում է վերլուծությունն ու արտադրությունը, բայց ռազմավարությունը, բրենդի voice-ը և կոնվերսիայի որոշումները մնում են մարդ-կենտրոն։"
+        },
+        {
+          "id": "ai-7",
+          "question": "AI-ով գեներացված կոնտենտը անվտանգ է SEO-ի համար՞",
+          "answer": "Միայն եթե կա մարդկային review, եզակի արժեք/տեսանկյուն և E-E-A-T։ Խուսափում ենք «thin», գեներիկ էջերից, որոնք վնասում են rankings-ին։"
+        },
+        {
+          "id": "ai-8",
+          "question": "Ի՞նչ է AI readiness-ը։",
+          "answer": "Թե որքան լավ են ձեր կայքը, կոնտենտը և տվյալները կառուցված, որպեսզի AI համակարգերը կարողանան ճիշտ մեջբերել, առաջարկել և բացատրել ձեր բրենդը։"
+        },
+        {
+          "id": "ai-9",
+          "question": "Օգտագործո՞ւմ եք AI agent-ներ դեշբորդում։",
+          "answer": "Այո։ Հաճախորդները կարող են տեսնել agent-ներ SEO-ի, կոնտենտի, social-ի և ads-ի համար՝ status-ով և tasks-ով։"
+        },
+        {
+          "id": "ai-10",
+          "question": "Ի՞նչ AI գործիքներ եք օգտագործում։",
+          "answer": "Գործիքներն ընտրում ենք ըստ use-case-ի՝ governance-ով՝ աղբյուրներ, fact-checking, բրենդային կանոններ և գաղտնիություն։"
+        },
+        {
+          "id": "ai-11",
+          "question": "AI-ը կարո՞ղ է օգնել աջակցության տիկետներում։",
+          "answer": "Այո՝ triage-ի և ավելի արագ պատասխանների համար՝ մարդկային escalation-ով բարդ կամ զգայուն դեպքերում։"
+        },
+        {
+          "id": "ai-12",
+          "question": "Ինչպե՞ս է գնագոյացվում AI աշխատանքը։",
+          "answer": "Մուտքային AI սկանից մինչև ամսական AI + մարքեթինգ retainers։ Ինթեյքից հետո կստանաք հստակ առաջարկ։"
+        },
+        {
+          "id": "ai-13",
+          "question": "Ինչպե՞ս չափել AI ROI-ը։",
+          "answer": "KPI-ներով՝ traffic, leads, time saved, կոնտենտի ծավալ, ticket resolution և conversion՝ նախօրոք սահմանված։"
+        }
+      ]
+    },
+    {
+      "id": "aeo-geo-seo",
+      "title": "AEO, GEO և SEO",
+      "items": [
+        {
+          "id": "seo-1",
+          "question": "Ի՞նչ տարբերություն կա AEO-ի, GEO-ի և SEO-ի միջև։",
+          "answer": "AEO (Answer Engine Optimization) օպտիմիզացնում է AI պատասխանների համար։ GEO (Geographic Search Engine Optimization) ուժեղացնում է տեղային ու տարածաշրջանային տեսանելիությունը Maps-ում, local pack-երում և location-based որոնման մեջ։ SEO-ն թիրախավորում է դասական որոնիչները։"
+        },
+        {
+          "id": "seo-2",
+          "question": "Ինչո՞ւ են AEO/GEO-ն հիմա կարևոր։",
+          "answer": "Ավելի շատ օգտատերեր պատասխաններ են ստանում AI-ի միջոցով և որոնում են տեղային («near me»)։ Առանց AEO-ի բաց եք թողնում AI citations-ը, առանց GEO-ի՝ մոտակայքի leads-ը, նույնիսկ եթե դասական SEO-ն ուժեղ է։"
+        },
+        {
+          "id": "seo-3",
+          "question": "Ինչպե՞ս եք սկսում SEO համագործակցությունը։",
+          "answer": "Տեխնիկական աուդիտ, keyword/intent հետազոտություն, կոնտենտի gap վերլուծություն և առաջնահերթ roadmap՝ կապված բիզնես KPI-ներին։"
+        },
+        {
+          "id": "seo-4",
+          "question": "Ե՞րբ են երևում SEO արդյունքները։",
+          "answer": "Տեխնիկական հաղթանակները կարող են արագ լինել։ Օրգանական աճը սովորաբար կուտակվում է շաբաթներից մինչև ամիսներ՝ կախված մրցակցությունից։"
+        },
+        {
+          "id": "seo-5",
+          "question": "Առաջարկո՞ւմ եք local SEO։",
+          "answer": "Այո՝ Google Business Profile, տեղային landing էջեր, NAP consistency, reviews և տեղային կոնտենտային կլաստերներ։"
+        },
+        {
+          "id": "seo-6",
+          "question": "Ի՞նչ է տեխնիկական SEO-ն ձեզ համար։",
+          "answer": "Crawlability, indexation, Core Web Vitals, structured data, sitemaps/robots, canonicals, ներքին linking և սխալների մաքրում։"
+        },
+        {
+          "id": "seo-7",
+          "question": "Ստեղծո՞ւմ եք SEO կոնտենտ։",
+          "answer": "Այո՝ briefs, outlines, բլոգներ, landing էջեր և FAQ-եր՝ intent-ին համապատասխան և AI տեսանելիության համար կառուցված։"
+        },
+        {
+          "id": "seo-8",
+          "question": "Ի՞նչ է E-E-A-T-ը։",
+          "answer": "Experience, Expertise, Authoritativeness, Trust — կարևոր է rankings-ի և AI ամփոփումներում վստահելիության համար։"
+        },
+        {
+          "id": "seo-9",
+          "question": "Կատարո՞ւմ եք link building։",
+          "answer": "Այո՝ էթիկ և համապատասխան՝ digital PR, գործընկերություններ և կոնտենտ assets — երբեք spam սխեմաներ։"
+        },
+        {
+          "id": "seo-10",
+          "question": "Կկարողանա՞ք վերականգնել SEO վնասից հետո։",
+          "answer": "Այո՝ ալգորիթմային վերականգնում, toxic links, indexation խնդիրներ և content cannibalization-ի ուղղումներ։"
+        },
+        {
+          "id": "seo-11",
+          "question": "Ինչպե՞ս եք հաշվետու լինում SEO առաջընթացի վերաբերյալ։",
+          "answer": "Ամսական կամ յուրաքանչյուր սպրինտ՝ rankings, traffic, conversions, տեխնիկական խնդիրներ և հաջորդ քայլեր։"
+        },
+        {
+          "id": "seo-12",
+          "question": "SEO-ն աշխատո՞ւմ է ecommerce-ի համար։",
+          "answer": "Այո՝ product/category SEO, faceted navigation, reviews, structured data և buying-intent կոնտենտային hubs։"
+        },
+        {
+          "id": "seo-13",
+          "question": "SEO-ն միանվագ է, թե՞ շարունակական։",
+          "answer": "Լավագույն արդյունքները գալիս են շարունակական օպտիմիզացումից։ Միանվագ աուդիտները օգնում են, բայց մրցակիցները շարունակ շարժվում են։"
+        },
+        {
+          "id": "seo-14",
+          "question": "Աջակցո՞ւմ եք international SEO։",
+          "answer": "Այո՝ hreflang, շուկայի ուսումնասիրություն ըստ locale-ի, լոկալիզացիա և multi-locale տեխնիկական կարգավորումներ։"
+        }
+      ]
+    },
+    {
+      "id": "advertising",
+      "title": "Գովազդ",
+      "items": [
+        {
+          "id": "ads-1",
+          "question": "Ո՞ր գովազդային ալիքներն եք վարում։",
+          "answer": "Google Ads, Meta, LinkedIn և անհրաժեշտության դեպքում YouTube/retargeting՝ ըստ funnel-ի և բյուջեի։"
+        },
+        {
+          "id": "ads-2",
+          "question": "Ինչպե՞ս եք սահմանում գովազդային բյուջեն։",
+          "answer": "Նպատակներից (leads/sales), թիրախ CAC-ից, աճուրդի գներից և test փուլից։ Սկսում ենք lean և մասշտաբավորում հաղթողներին։"
+        },
+        {
+          "id": "ads-3",
+          "question": "Ո՞րն է ձեր Google Ads մոտեցումը։",
+          "answer": "Account կառուցվածք, intent mapping, negatives, landing-page fit, conversion tracking և շաբաթական օպտիմիզացում։"
+        },
+        {
+          "id": "ads-4",
+          "question": "Կկարողանա՞ք վարել Meta Ads ecommerce-ի համար։",
+          "answer": "Այո՝ catalogs/retargeting, creatives, audiences և creative testing՝ ROAS-ը բարձրացնելու համար։"
+        },
+        {
+          "id": "ads-5",
+          "question": "Ինչպե՞ս եք չափում գովազդի հաջողությունը։",
+          "answer": "Conversions, CPA/CAC, ROAS, lead quality և pipeline՝ ոչ թե vanity clicks։"
+        },
+        {
+          "id": "ads-6",
+          "question": "Ի՞նչ անել, եթե tracking-ը կոտրված է։",
+          "answer": "Ուղղում ենք GTM/GA4/pixels-ը, անհրաժեշտության դեպքում՝ consent կարգավորումները, և ուժեղացնում չափումների տարբերակները։"
+        },
+        {
+          "id": "ads-7",
+          "question": "Վարում ե՞ք B2B LinkedIn Ads։",
+          "answer": "Այո՝ սուր targeting-ով, lead forms կամ landing էջերով և decision-maker messaging-ով։"
+        },
+        {
+          "id": "ads-8",
+          "question": "Որքա՞ն արագ են ads-ը արդյունք տալիս։",
+          "answer": "Traffic-ը կարող է անմիջապես լինել։ Կայուն CPA/ROAS-ը սովորաբար պահանջում է 2–6 շաբաթ learning և iteration։"
+        },
+        {
+          "id": "ads-9",
+          "question": "Ստեղծո՞ւմ եք ad creatives։",
+          "answer": "Այո՝ copy, visuals և test տարբերակներ՝ անհրաժեշտության դեպքում ներառելով design/media ստեղծումը։"
+        },
+        {
+          "id": "ads-10",
+          "question": "Կարո՞ղ են ads-ը և SEO-ն ուժեղացնել միմյանց։",
+          "answer": "Այո։ Search insight-երը սնուցում են SEO-ն, իսկ ուժեղ օրգանական էջերը բարձրացնում են Quality Score-ը և նվազեցնում CPA-ն։"
+        },
+        {
+          "id": "ads-11",
+          "question": "Կկարողանա՞ք ստանձնել առկա ad account-ները։",
+          "answer": "Այո։ Մենք աուդիտ ենք անում, վերակազմավորում և օպտիմիզացնում՝ առանց անհարկի «զրոյից» կառուցելու։"
+        },
+        {
+          "id": "ads-12",
+          "question": "Ինչպե՞ս եք կանխում անիմաստ ծախսերը։",
+          "answer": "Negatives, exclusions, caps, geo controls, frequency limits և արագ kill switches։"
+        },
+        {
+          "id": "ads-13",
+          "question": "Արժե՞ արդյոք remarketing-ը։",
+          "answer": "Այո՝ երբ privacy-compliant է և ունի ուժեղ առաջարկներ․ հաճախ ամենաարդյունավետ շերտն է։"
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "title": "Դիզայն",
+      "items": [
+        {
+          "id": "des-1",
+          "question": "Ի՞նչ դիզայն ծառայություններ եք առաջարկում։",
+          "answer": "Լոգոներ, բրենդային ինքնություն, այցեքարտեր, letterhead, flyers, posters, stickers, magazines/brochures և թվային visuals։"
+        },
+        {
+          "id": "des-2",
+          "question": "Ի՞նչ գործիքներ եք օգտագործում։",
+          "answer": "Adobe Photoshop, Illustrator և InDesign՝ տպագրության համար պատրաստ, պրոֆեսիոնալ deliverables-ի համար։"
+        },
+        {
+          "id": "des-3",
+          "question": "Տալիս ե՞ք print-ready ֆայլեր։",
+          "answer": "Այո՝ CMYK, bleed, crop marks և ճիշտ PDF exports, ինչպես նաև screen տարբերակներ։"
+        },
+        {
+          "id": "des-4",
+          "question": "Ինչպե՞ս է ընթանում լոգոյի նախագիծը։",
+          "answer": "Brief → concepts → feedback rounds → վերջնական vectors (SVG/PDF/AI) և հիմնական օգտագործման ուղեցույցներ։"
+        },
+        {
+          "id": "des-5",
+          "question": "Կկարողանա՞ք թարմացնել գործող բրենդը։",
+          "answer": "Այո՝ թարմացնում ենք լոգոն, գույները և տառատեսակը՝ պահպանելով ճանաչելիությունը։"
+        },
+        {
+          "id": "des-6",
+          "question": "Ստեղծո՞ւմ եք social templates։",
+          "answer": "Այո, որպեսզի ձեր թիմը կարողանա հրապարակել արագ և հետևողական։"
+        },
+        {
+          "id": "des-7",
+          "question": "Թվային vs տպագիր դիզայն՝ ո՞րն է տարբերությունը։",
+          "answer": "Տպագրությունն պահանջում է գունային տարածք, լուծաչափ և margins, իսկ թվայինը՝ էկրանային սրություն և արագություն։ Մենք ճիշտ ենք տրամադրում երկուսն էլ։"
+        },
+        {
+          "id": "des-8",
+          "question": "Կկատարե՞ք ամսագրերի կամ բրոշյուրների layout։",
+          "answer": "Այո՝ բազմէջ InDesign աշխատանք՝ grids, styles և prepress checks։"
+        },
+        {
+          "id": "des-9",
+          "question": "Կզբաղվե՞ք նաև տպագրությամբ։",
+          "answer": "Այո։ Մենք նախագծում ենք և կարող ենք տպագրել փոքր կամ մեծ քանակներով՝ այցեքարտերից ու stickers-ից մինչև flyers, posters և brochures՝ proofs-ով ու արտադրության կոորդինացիայով։"
+        },
+        {
+          "id": "des-10",
+          "question": "Քանի՞ feedback round է ներառված։",
+          "answer": "Սովորաբար 2–3 կառուցվածքային փուլ, իսկ ավելին՝ համաձայնությամբ։"
+        },
+        {
+          "id": "des-11",
+          "question": "Կստանա՞նք source files։",
+          "answer": "Այո՝ ըստ համաձայնեցվածի (AI/PSD/INDD կամ export packs)։"
+        },
+        {
+          "id": "des-12",
+          "question": "Կարո՞ղ են դիզայնը և վեբդիզայնը համադրված լինել։",
+          "answer": "Այո։ Բրենդային համակարգերն ու UI-ը պահում ենք հետևողական՝ թե՛ տպագիր, թե՛ վեբ միջավայրերում։"
+        },
+        {
+          "id": "des-13",
+          "question": "Որտե՞ղ կարող եմ ավելին իմանալ Digital Design-ի մասին։",
+          "answer": "Այցելեք /digital-design և ընտրացանկում Digital Design ծառայությունները։"
+        }
+      ]
+    },
+    {
+      "id": "marketing",
+      "title": "Մարքեթինգ",
+      "items": [
+        {
+          "id": "mkt-1",
+          "question": "Ի՞նչ մարքեթինգային ծառայություններ եք առաջարկում։",
+          "answer": "AEO/GEO/SEO, կոնտենտ, social, ads, ecommerce growth, product listing, community management և data entry։"
+        },
+        {
+          "id": "mkt-2",
+          "question": "Ինչպե՞ս եք կառուցում մարքեթինգային ռազմավարությունը։",
+          "answer": "Նպատակներ, լսարան, դիրքավորում, ալիքների խառնուրդ, կոնտենտ pipeline և KPI-ներ՝ գործնական և իրականացվող։"
+        },
+        {
+          "id": "mkt-3",
+          "question": "Ի՞նչ է full-funnel մարքեթինգը ձեզ համար։",
+          "answer": "Awareness → consideration → conversion → retention՝ ալիքների դերերը հստակ սահմանված։"
+        },
+        {
+          "id": "mkt-4",
+          "question": "Օգնո՞ւմ եք դիրքավորման հարցում։",
+          "answer": "Այո։ Հստակ դիրքավորումը կանխում է ցրված արշավներն ու թույլ conversion-ը։"
+        },
+        {
+          "id": "mkt-5",
+          "question": "Կտրամադրե՞ք կոնտենտ գրություն։",
+          "answer": "Այո՝ բլոգներ, կայքի copy, newsletters, landing էջեր և sales copy։"
+        },
+        {
+          "id": "mkt-6",
+          "question": "Կատարո՞ւմ եք ecommerce մարքեթինգ։",
+          "answer": "Այո՝ feeds, listing quality, CRO, ads և category/product SEO։"
+        },
+        {
+          "id": "mkt-7",
+          "question": "Ի՞նչ է CRO-ն։",
+          "answer": "Conversion Rate Optimization — էջերի ու funnel-ների բարելավում, որպեսզի ավելի շատ այցելու կոնվերտացնի։"
+        },
+        {
+          "id": "mkt-8",
+          "question": "Ինչպե՞ս եք ներկայացնում մարքեթինգի արդյունքները։",
+          "answer": "Հաշվետվություններ/դեշբորդներ՝ traffic, leads, sales, CPA/ROAS և ալիքային insights։"
+        },
+        {
+          "id": "mkt-9",
+          "question": "Կաշխատե՞ք մեր ներսում գործող թիմի հետ։",
+          "answer": "Այո՝ կարող ենք իրականացնել, խորհրդատվություն տալ կամ ստանձնել մասնագիտացված ուղղություն (միայն SEO, միայն ads և այլն)։"
+        },
+        {
+          "id": "mkt-10",
+          "question": "Որքա՞ն արագ կարող են սկսվել արշավները։",
+          "answer": "Հաճախ՝ tracking/setup-ից հետո 1–2 շաբաթում, իսկ կոնտենտը ընթանում է զուգահեռ։"
+        },
+        {
+          "id": "mkt-11",
+          "question": "Աջակցո՞ւմ եք email մարքեթինգին։",
+          "answer": "Այո՝ flows, newsletters և copy՝ ներառյալ CRM/ecommerce ինտեգրացիաները։"
+        },
+        {
+          "id": "mkt-12",
+          "question": "Մարքեթինգը միշտ ամսական retainer՞ է։",
+          "answer": "Retainer-ները հարմար են շարունակական աճի համար, իսկ audits, redesign-ներ և launches կարող են լինել project-based։"
+        },
+        {
+          "id": "mkt-13",
+          "question": "Ինչպե՞ս եք խուսափում busywork-ից՝ առանց արդյունքի։",
+          "answer": "Ամեն գործողություն կապված է KPI-ներին։ Թույլ արդյունք ունեցող բաները ուղղում ենք կամ կանգնեցնում։"
+        }
+      ]
+    },
+    {
+      "id": "social-media",
+      "title": "Սոցիալական մեդիա",
+      "items": [
+        {
+          "id": "soc-1",
+          "question": "Ո՞ր սոցիալական ալիքներն եք կառավարում։",
+          "answer": "Հիմնականում LinkedIn, Instagram, Facebook, իսկ անհրաժեշտության դեպքում՝ X/TikTok՝ ըստ լսարանի համապատասխանության։"
+        },
+        {
+          "id": "soc-2",
+          "question": "Ի՞նչ է ներառված սոցիալական մեդիայի կառավարման մեջ։",
+          "answer": "Ռազմավարություն, օրացույց, ստեղծում/պլանավորում, community replies, հաշվետվություն և iteration։"
+        },
+        {
+          "id": "soc-3",
+          "question": "Ստեղծո՞ւմ եք visuals և video։",
+          "answer": "Այո՝ media creation-ի շրջանակում՝ stills, carousels, short-form video և templates։"
+        },
+        {
+          "id": "soc-4",
+          "question": "Որքա՞ն հաճախ եք հրապարակում։",
+          "answer": "Կախված է նպատակներից՝ սովորաբար 3–5 անգամ/շաբաթ core ալիքներում՝ որակը գերադասելով քանակից։"
+        },
+        {
+          "id": "soc-5",
+          "question": "Առաջարկո՞ւմ եք community management։",
+          "answer": "Այո՝ moderation, մեկնաբանություններ, DM-եր և reputation care՝ բրենդային voice guidelines-ով։"
+        },
+        {
+          "id": "soc-6",
+          "question": "Social-ն ու ads-ը կարո՞ղ են միասին աշխատել։",
+          "answer": "Այո։ Օրգանական հաղթողները դառնում են ad creatives, իսկ ads-ը մեծացնում է այն, ինչ ռեզոնանս ունի։"
+        },
+        {
+          "id": "soc-7",
+          "question": "Ինչպե՞ս եք չափում social-ի հաջողությունը։",
+          "answer": "Reach, engagement, click-outs, leads և assisted conversions՝ ոչ միայն likes։"
+        },
+        {
+          "id": "soc-8",
+          "question": "Աշխատո՞ւմ եք influencers-ի հետ։",
+          "answer": "Ըստ պահանջի՝ ընտրություն, briefing և tracking՝ չափելի արդյունքների վրա կենտրոնացած։"
+        },
+        {
+          "id": "soc-9",
+          "question": "Կօգնե՞ք ճգնաժամային հաղորդակցության ժամանակ։",
+          "answer": "Այո՝ արագ արձագանքման պրոտոկոլներով՝ համաձայնեցված ձեր թիմի հետ։"
+        },
+        {
+          "id": "soc-10",
+          "question": "Օգնո՞ւմ եք LinkedIn thought leadership-ին։",
+          "answer": "Այո՝ անձնական + ընկերության կոնտենտ, carousels, cases և employee advocacy։"
+        },
+        {
+          "id": "soc-11",
+          "question": "Տալիս ե՞ք կոնտենտի օրացույց։",
+          "answer": "Այո՝ ամսական կամ քառորդական թեմաներ, ձևաչափեր և deadlines։"
+        },
+        {
+          "id": "soc-12",
+          "question": "Ի՞նչ անել, եթե արդեն ունենք social manager։",
+          "answer": "Կկարողանանք մասնագիտանալ (creatives, ads, ռազմավարություն) կամ աջակցել peak periods-ում։"
+        },
+        {
+          "id": "soc-13",
+          "question": "Որքա՞ն արագ կաճի social-ը։",
+          "answer": "Հետևողականությունը կուտակվում է։ Իմաստալից աճը սովորաբար շաբաթներ-ամիսներ է պահանջում, իսկ ads աջակցությամբ՝ ավելի արագ։"
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "Աջակցություն",
+      "items": [
+        {
+          "id": "sup-1",
+          "question": "Ի՞նչ աջակցություն եք տրամադրում։",
+          "answer": "WordPress աջակցություն, custom-site աջակցություն, տիկետներ/ուղիղ չաթ, սպասարկում, անվտանգություն, performance և incident response։"
+        },
+        {
+          "id": "sup-2",
+          "question": "Ինչպե՞ս հասնել աջակցությանը։",
+          "answer": "Կապի ձևով, զանգի ամրագրումով, դեշբորդի տիկետներով կամ ուղիղ չաթով։ Շտապ խնդիրներն ստանում են առաջնահերթ նշում։"
+        },
+        {
+          "id": "sup-3",
+          "question": "Ի՞նչ է ձեր արձագանքման ժամանակը։",
+          "answer": "Արագ առաջին պատասխան (հաճախ՝ մեկ աշխատանքային օրվա ընթացքում, իսկ critical downtime՝ ավելի արագ)։ Ճշգրիտ SLA-ները կախված են փաթեթից։"
+        },
+        {
+          "id": "sup-4",
+          "question": "Առաջարկո՞ւմ եք 24/7 մոնիթորինգ։",
+          "answer": "Այո՝ համապատասխան support/hosting փաթեթներում՝ monitoring, backups և alerts։"
+        },
+        {
+          "id": "sup-5",
+          "question": "Կկարողանա՞ք հեռացնել malware-ը։",
+          "answer": "Այո՝ WordPress և custom stacks-ի համար՝ ներառյալ hardening և aftercare։"
+        },
+        {
+          "id": "sup-6",
+          "question": "Կկատարե՞ք WordPress updates։",
+          "answer": "Այո՝ WordPress maintenance & updates-ի շրջանակում՝ core/plugins/themes՝ backups-ով և checks-ով։"
+        },
+        {
+          "id": "sup-7",
+          "question": "Կօգնե՞ք hosting խնդիրների դեպքում։",
+          "answer": "Այո՝ diagnostics, migration կամ optimization hosting/VPS/domains-ի համար։"
+        },
+        {
+          "id": "sup-8",
+          "question": "Ի՞նչ անել, եթե կայքը down է։",
+          "answer": "Նշեք շտապությունը։ Վերականգնում ենք backups-ով, server checks-ով և hotfix-երով՝ status updates-ով։"
+        },
+        {
+          "id": "sup-9",
+          "question": "Կա՞ client portal։",
+          "answer": "Այո։ Մուտք գործող հաճախորդները տեսնում են դեշբորդ, տիկետներ, projects և անհրաժեշտության դեպքում՝ CRM/invoices։"
+        },
+        {
+          "id": "sup-10",
+          "question": "Կկարողանա՞ն մի քանի թիմակից բացել տիկետներ։",
+          "answer": "Այո՝ կախված account roles-ից (client/manager/admin)։"
+        },
+        {
+          "id": "sup-11",
+          "question": "Ի՞նչ է ներառված Basic/Standard/Premium support-ում։",
+          "answer": "Ավելի շատ կայքեր, ավելի արագ follow-up և ավելի լայն coverage (updates, malware, speed, SEO)։ Տեսեք support էջերը մանրամասների համար։"
+        },
+        {
+          "id": "sup-12",
+          "question": "Օգնո՞ւմ եք նաև ոչ տեխնիկական հարցերում։",
+          "answer": "Այո՝ ծառայությունների, billing-ի և account-ի հարցերում, իսկ տեխնիկական խորությունը կախված է փաթեթից։"
+        },
+        {
+          "id": "sup-13",
+          "question": "Կարո՞ղ եմ ավելի ուշ upgrade անել support-ը։",
+          "answer": "Այո՝ երբ traffic-ը, ռիսկը կամ թիմի կարիքները մեծանում են։"
+        }
+      ]
+    },
+    {
+      "id": "webdesign",
+      "title": "Վեբդիզայն",
+      "items": [
+        {
+          "id": "web-1",
+          "question": "Միայն WordPress կայքեր ե՞ք կառուցում։",
+          "answer": "Ոչ։ Բացի WordPress-ից՝ կառուցում ենք custom կայքեր HTML/CSS/JS, PHP և Next.js տեխնոլոգիաներով՝ առանձին WordPress ծառայություններից։"
+        },
+        {
+          "id": "web-2",
+          "question": "Ի՞նչ է Website Support-ը։",
+          "answer": "Դիզայն, development, սպասարկում, անվտանգություն, performance, backup/migration և API ինտեգրացիաներ custom stacks-ի համար։"
+        },
+        {
+          "id": "web-3",
+          "question": "Կկարողանա՞ք վերադիզայն անել գործող կայքը։",
+          "answer": "Այո՝ UX/UI refresh, conversion improvements և տեխնիկական modernization՝ առանց ամբողջական rewrite-ի, եթե հնարավոր է խուսափել։"
+        },
+        {
+          "id": "web-4",
+          "question": "Աշխատո՞ւմ եք Next.js-ով։",
+          "answer": "Այո՝ հիանալի է արագ, SEO-ready մարքեթինգային կայքերի և դեշբորդների համար։"
+        },
+        {
+          "id": "web-5",
+          "question": "Կառուցո՞ւմ եք PHP հավելվածներ։",
+          "answer": "Այո՝ portals, API-ներ, legacy modernization և performance/security hardening։"
+        },
+        {
+          "id": "web-6",
+          "question": "Ինչպե՞ս եք վերաբերվում mobile-ին։",
+          "answer": "Mobile-first դիզայն, responsive layouts և թեստավորում տարածված սարքերի/բրաուզերների վրա։"
+        },
+        {
+          "id": "web-7",
+          "question": "Արդյո՞ք accessibility-ը ներառված է։",
+          "answer": "Կիրառում ենք a11y լավ հիմունքները, իսկ ավելի խիստ WCAG ծրագրերը կարող են ներառվել scope-ում։"
+        },
+        {
+          "id": "web-8",
+          "question": "Կա՞ն CMS տարբերակներ առանց WordPress-ի։",
+          "answer": "Այո՝ headless CMS, custom admin կամ static setups՝ ըստ ձեր թիմի կարիքների։"
+        },
+        {
+          "id": "web-9",
+          "question": "Որքա՞ն է տևում վեբդիզայնի նախագիծը։",
+          "answer": "Landing էջերը՝ շաբաթների ընթացքում, իսկ ավելի մեծ կայքեր/հավելվածներ՝ մի քանի սպրինտով՝ ինթեյքի պլանավորումից հետո։"
+        },
+        {
+          "id": "web-10",
+          "question": "Launch-ի ժամանակ ներառո՞ւմ եք copy և SEO։",
+          "answer": "Այո՝ երբ համադրվում է կոնտենտ/SEO-ի հետ, որպեսզի կայքը գործարկվի որոնելի և conversion-ready։"
+        },
+        {
+          "id": "web-11",
+          "question": "Ի՞նչ է լինում performance-ի հետ launch-ից հետո։",
+          "answer": "Օպտիմիզացնում ենք Core Web Vitals-ը, caching/CDN-ը և monitoring-ը՝ maintenance փաթեթներով։"
+        },
+        {
+          "id": "web-12",
+          "question": "Կկարողանա՞ք ինտեգրել API-ներ (CRM, վճարումներ, AI)։",
+          "answer": "Այո՝ ճիշտ error handling-ով, logging-ով և documentation-ով։"
+        },
+        {
+          "id": "web-13",
+          "question": "Ինչպե՞ս է հանձնվում կոդը։",
+          "answer": "Հնարավորության դեպքում՝ repo/deploy pipelines-ով, staging/production միջավայրերով և handover-ով։"
+        },
+        {
+          "id": "web-14",
+          "question": "Օգնո՞ւմ եք on-site CRO-ի հարցում։",
+          "answer": "Այո՝ UX բարելավումներ, forms, CTA-ներ, փորձարկումներ և page speed։"
+        }
+      ]
+    },
+    {
+      "id": "webhosting",
+      "title": "Վեբհոստինգ և դոմեյններ",
+      "items": [
+        {
+          "id": "host-1",
+          "question": "Ի՞նչ հոստինգ եք առաջարկում։",
+          "answer": "Shared, WordPress և VPS հոստինգ՝ Basic/Plus/Business մակարդակներով, ինչպես նաև դոմեյններ։"
+        },
+        {
+          "id": "host-2",
+          "question": "Shared vs WordPress vs VPS — ի՞նչ տարբերություն կա։",
+          "answer": "Shared-ը հարմար է փոքր կայքերի համար։ WordPress հոստինգը օպտիմիզացված է WP-ի համար։ VPS-ը տալիս է ավելի շատ ռեսուրս/կառավարում՝ ավելի ծանր բեռնվածքների համար։"
+        },
+        {
+          "id": "host-3",
+          "question": "Օգնո՞ւմ եք դոմեյնի գրանցման հարցում։",
+          "answer": "Այո՝ խորհուրդ ենք տալիս, գրանցում/տեղափոխում և ճիշտ կոնֆիգուրացնում DNS-ը։"
+        },
+        {
+          "id": "host-4",
+          "question": "SSL-ը ներառվա՞ծ է։",
+          "answer": "Այո՝ SSL-ը ներառված է համապատասխան հոստինգ պլաններում։"
+        },
+        {
+          "id": "host-5",
+          "question": "Կկարողանա՞ք միգրացիա անել իմ կայքը ձեր հոստինգի վրա։",
+          "answer": "Այո՝ backup, migration, DNS cutover, SSL և smoke tests՝ նվազագույն downtime-ով։"
+        },
+        {
+          "id": "host-6",
+          "question": "Ինչպե՞ս են աշխատում backups-ը։",
+          "answer": "Կախված է պլանից՝ հեշտ կամ ավտոմատ backups։ Հնարավոր է նաև լրացուցիչ off-site պահպանում։"
+        },
+        {
+          "id": "host-7",
+          "question": "Ի՞նչ կլինի, եթե traffic-ը աճի։",
+          "answer": "Մենք մասշտաբավորում ենք դեպի Plus/Business կամ VPS և օպտիմիզացնում caching/CDN-ը։"
+        },
+        {
+          "id": "host-8",
+          "question": "Էլ. փոստը ներառվա՞ծ է դոմեյնի հետ։",
+          "answer": "Կախված է կոնֆիգուրացիայից։ Խորհուրդ ենք տալիս վստահելի mail լուծումներ և DNS auth (SPF/DKIM/DMARC)։"
+        },
+        {
+          "id": "host-9",
+          "question": "Որքա՞ն անվտանգ է ձեր հոստինգը։",
+          "answer": "SSL/firewall, updates, monitoring և hardening՝ նաև ցանկության դեպքում հավելյալ security ծառայություններով։"
+        },
+        {
+          "id": "host-10",
+          "question": "Կարո՞ղ եմ հետո shared-ից անցնել VPS-ի։",
+          "answer": "Այո՝ պլանավորված migration՝ testing-ով և rollback-ով։"
+        },
+        {
+          "id": "host-11",
+          "question": "Աջակցո՞ւմ եք CDN։",
+          "answer": "Այո՝ անհրաժեշտության դեպքում (հաճախ ներառված է WP հոստինգում)՝ ավելի արագ գլոբալ մատուցման համար։"
+        },
+        {
+          "id": "host-12",
+          "question": "Ինչպե՞ս եք մոտենում uptime-ին։",
+          "answer": "Monitoring, արագ incident response և հստակ հաղորդակցություն maintenance windows-ի համար։"
+        },
+        {
+          "id": "host-13",
+          "question": "Կկարողանա՞ք լուծել DNS խնդիրները։",
+          "answer": "Այո՝ records, propagation, mail auth և domain wiring։"
+        },
+        {
+          "id": "host-14",
+          "question": "Ինչպե՞ս ընտրել ճիշտ պլանը։",
+          "answer": "Կախված traffic-ից, stack-ից (WP vs custom), ռեսուրսներից և աճից։ Մենք խորհուրդ ենք տալիս ազնվորեն։"
+        },
+        {
+          "id": "host-15",
+          "question": "Որտե՞ղ կարող եմ տեսնել հոստինգի գները։",
+          "answer": "Հոստինգի ծառայությունների էջերում՝ Services → Webhosting & Domains բաժնում։"
+        }
+      ]
+    }
+  ]
+}

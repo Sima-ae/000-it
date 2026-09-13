@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Search, X } from "lucide-react";
 import {
   Accordion,
@@ -21,8 +21,7 @@ function normalize(value: string) {
 }
 
 export function FaqCategories({ categories }: { categories: FaqCategory[] }) {
-  const locale = useLocale();
-  const isNl = locale === "nl";
+  const t = useTranslations("faqPage");
   const [query, setQuery] = useState("");
   const [activeId, setActiveId] = useState<string>("all");
 
@@ -54,16 +53,16 @@ export function FaqCategories({ categories }: { categories: FaqCategory[] }) {
           <Input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder={isNl ? "Zoek in vragen en antwoorden…" : "Search questions and answers…"}
+            placeholder={t("searchPlaceholder")}
             className="h-11 rounded-xl border-border/70 bg-muted/30 pl-10 pr-10"
-            aria-label={isNl ? "Zoeken in veelgestelde vragen" : "Search FAQ"}
+            aria-label={t("searchAria")}
           />
           {query ? (
             <button
               type="button"
               onClick={() => setQuery("")}
               className="absolute right-2.5 top-1/2 -translate-y-1/2 rounded-lg p-1 text-muted-foreground transition hover:bg-muted hover:text-foreground"
-              aria-label={isNl ? "Wis zoekopdracht" : "Clear search"}
+              aria-label={t("clearSearch")}
             >
               <X className="h-4 w-4" />
             </button>
@@ -81,7 +80,7 @@ export function FaqCategories({ categories }: { categories: FaqCategory[] }) {
                 : "bg-muted/60 text-muted-foreground hover:text-foreground",
             )}
           >
-            {isNl ? "Alles" : "All"}
+            {t("all")}
             <span className="ml-1 opacity-70">
               ({categories.reduce((s, c) => s + c.items.length, 0)})
             </span>
@@ -105,28 +104,14 @@ export function FaqCategories({ categories }: { categories: FaqCategory[] }) {
         </div>
 
         <p className="text-xs text-muted-foreground">
-          {visibleCount}{" "}
-          {isNl
-            ? visibleCount === 1
-              ? "resultaat"
-              : "resultaten"
-            : visibleCount === 1
-              ? "result"
-              : "results"}
-          {query ? (isNl ? ` voor “${query}”` : ` for “${query}”`) : null}
+          {visibleCount} {visibleCount === 1 ? t("result") : t("results")}
+          {query ? ` ${t("forQuery")} “${query}”` : null}
         </p>
       </div>
 
       {filtered.length === 0 ? (
         <div className="rounded-2xl border border-dashed border-border/80 px-4 py-10 text-center">
-          <p className="font-medium text-foreground">
-            {isNl ? "Geen resultaten" : "No results"}
-          </p>
-          <p className="mt-1 text-sm text-muted-foreground">
-            {isNl
-              ? "Probeer een andere zoekterm of kies een andere categorie."
-              : "Try another search term or pick a different category."}
-          </p>
+          <p className="font-medium text-foreground">{t("empty")}</p>
         </div>
       ) : (
         <div className="space-y-6">

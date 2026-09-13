@@ -426,5 +426,18 @@
     "seoTitleSuffix": "Bază de cunoștințe",
     "tipLabel": "Sfat",
     "warnLabel": "Atenție"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "categorii",
+    "questionsLabel": "întrebări",
+    "searchPlaceholder": "Căutați în întrebări și răspunsuri…",
+    "searchAria": "Căutați în FAQ",
+    "clearSearch": "Ștergeți căutarea",
+    "all": "Toate",
+    "result": "rezultat",
+    "results": "rezultate",
+    "forQuery": "pentru",
+    "empty": "Nu s-au găsit rezultate."
   }
 }

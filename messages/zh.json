@@ -426,5 +426,18 @@
     "seoTitleSuffix": "知识库",
     "tipLabel": "提示",
     "warnLabel": "注意"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "分类",
+    "questionsLabel": "问题",
+    "searchPlaceholder": "搜索问题与答案…",
+    "searchAria": "搜索常见问题",
+    "clearSearch": "清除搜索",
+    "all": "全部",
+    "result": "条结果",
+    "results": "条结果",
+    "forQuery": "关于",
+    "empty": "未找到结果。"
   }
 }

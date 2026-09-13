@@ -426,5 +426,18 @@
     "seoTitleSuffix": "قاعدة المعرفة",
     "tipLabel": "نصيحة",
     "warnLabel": "تنبيه"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "فئات",
+    "questionsLabel": "أسئلة",
+    "searchPlaceholder": "ابحث في الأسئلة والأجوبة…",
+    "searchAria": "البحث في الأسئلة الشائعة",
+    "clearSearch": "مسح البحث",
+    "all": "الكل",
+    "result": "نتيجة",
+    "results": "نتائج",
+    "forQuery": "لـ",
+    "empty": "لم يتم العثور على نتائج."
   }
 }

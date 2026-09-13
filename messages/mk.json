@@ -426,5 +426,18 @@
     "seoTitleSuffix": "База на знаење",
     "tipLabel": "Совет",
     "warnLabel": "Внимание"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "категории",
+    "questionsLabel": "прашања",
+    "searchPlaceholder": "Пребарај прашања и одговори…",
+    "searchAria": "Пребарај FAQ",
+    "clearSearch": "Исчисти пребарување",
+    "all": "Сите",
+    "result": "резултат",
+    "results": "резултати",
+    "forQuery": "за",
+    "empty": "Не се пронајдени резултати."
   }
 }

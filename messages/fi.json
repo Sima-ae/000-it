@@ -426,5 +426,18 @@
     "seoTitleSuffix": "Tietopankki",
     "tipLabel": "Vinkki",
     "warnLabel": "Huomio"
+  },
+  "faqPage": {
+    "eyebrow": "FAQ",
+    "categoriesLabel": "kategoriat",
+    "questionsLabel": "kysymykset",
+    "searchPlaceholder": "Hae kysymyksistä ja vastauksista…",
+    "searchAria": "Hae UKK:sta",
+    "clearSearch": "Tyhjennä haku",
+    "all": "Kaikki",
+    "result": "tulos",
+    "results": "tulosta",
+    "forQuery": "haulle",
+    "empty": "Ei tuloksia."
   }
 }
