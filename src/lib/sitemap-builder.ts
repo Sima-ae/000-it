@@ -201,7 +201,37 @@ export async function collectSitemapSets() {
     console.warn("[sitemap] portfolio unavailable:", error);
   }
 
-  return { cities, pages, services, news, portfolio };
+  // 6) Kennisbank from DB
+  const kennisbank: SitemapUrlEntry[] = [];
+  try {
+    const { listCategories, listPublishedArticlePaths } = await import(
+      "@/lib/kennisbank"
+    );
+    const cats = await listCategories({ locale: "nl" });
+    for (const cat of cats) {
+      pushLocalized(kennisbank, `/kennisbank/${cat.slug}`, {
+        lastmod: isoDate(cat.updatedAt),
+        changefreq: "weekly",
+        priority: 0.7,
+      });
+    }
+    const paths = await listPublishedArticlePaths();
+    for (const item of paths) {
+      pushLocalized(
+        kennisbank,
+        `/kennisbank/${item.categorySlug}/${item.articleSlug}`,
+        {
+          lastmod: isoDate(item.updatedAt),
+          changefreq: "monthly",
+          priority: 0.65,
+        },
+      );
+    }
+  } catch (error) {
+    console.warn("[sitemap] kennisbank unavailable:", error);
+  }
+
+  return { cities, pages, services, news, portfolio, kennisbank };
 }
 
 export async function writeSitemapFiles(rootDir = process.cwd()) {
@@ -217,6 +247,7 @@ export async function writeSitemapFiles(rootDir = process.cwd()) {
     { name: "sitemap-services.xml", entries: sets.services },
     { name: "sitemap-news.xml", entries: sets.news },
     { name: "sitemap-portfolio.xml", entries: sets.portfolio },
+    { name: "sitemap-kennisbank.xml", entries: sets.kennisbank },
   ];
 
   const indexFiles: Array<{ path: string; lastmod: string }> = [];

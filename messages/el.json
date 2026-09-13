@@ -20,7 +20,8 @@
     "login": "Συνδεθείτε",
     "register": "Εγγραφείτε",
     "dashboard": "Ταμπλό",
-    "logout": "Αποσυνδεθείτε"
+    "logout": "Αποσυνδεθείτε",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "Γλώσσα"
@@ -267,7 +268,8 @@
     "emptyAgents": "Δεν υπάρχουν ακόμη πράκτορες.",
     "emptyClients": "Δεν υπάρχουν ακόμη πελάτες.",
     "emptyLeads": "Δεν υπάρχουν ακόμη υποψήφιοι πελάτες.",
-    "emptyActivity": "Καμία δραστηριότητα ακόμα."
+    "emptyActivity": "Καμία δραστηριότητα ακόμα.",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "Επικοινωνία",

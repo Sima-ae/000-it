@@ -20,7 +20,8 @@
     "login": "Accedi",
     "register": "Iscriviti",
     "dashboard": "Cruscotto",
-    "logout": "Esci"
+    "logout": "Esci",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "Lingua"
@@ -267,7 +268,8 @@
     "emptyAgents": "Nessun agente ancora.",
     "emptyClients": "Nessun cliente ancora",
     "emptyLeads": "Ancora nessun indizio.",
-    "emptyActivity": "Nessuna attività ancora"
+    "emptyActivity": "Nessuna attività ancora",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "Contatto",

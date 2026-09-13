@@ -653,6 +653,23 @@ async function main() {
   if (process.env.NODE_ENV === "production") {
     console.log("  (Production seed: ensure SEED_*_PASSWORD values are strong and rotated.)");
   }
+
+  // Optional kennisbank seed (large); skip with SKIP_KENNISBANK_SEED=1
+  if (process.env.SKIP_KENNISBANK_SEED !== "1") {
+    try {
+      const { spawnSync } = await import("node:child_process");
+      const result = spawnSync(
+        "npx",
+        ["tsx", "--env-file=.env", "prisma/seed-kennisbank.ts"],
+        { stdio: "inherit", cwd: process.cwd() },
+      );
+      if (result.status !== 0) {
+        console.warn("Kennisbank seed skipped or failed (status", result.status, ")");
+      }
+    } catch (err) {
+      console.warn("Kennisbank seed could not run:", err);
+    }
+  }
 }
 
 main()

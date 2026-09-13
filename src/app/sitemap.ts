@@ -28,6 +28,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/diensten", priority: 0.8, changeFrequency: "weekly" as const },
     { path: "/afspraak", priority: 0.7, changeFrequency: "monthly" as const },
     { path: "/faq", priority: 0.5, changeFrequency: "monthly" as const },
+    { path: "/kennisbank", priority: 0.85, changeFrequency: "weekly" as const },
   ];
 
   for (const item of staticPaths) {
@@ -87,6 +88,42 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
   } catch (error) {
     console.error("[sitemap] news posts unavailable", error);
+  }
+
+  try {
+    const { listCategories, listPublishedArticlePaths } = await import(
+      "@/lib/kennisbank"
+    );
+    const cats = await listCategories({ locale: "nl" });
+    for (const cat of cats) {
+      const langs = localized(`/kennisbank/${cat.slug}`);
+      for (const locale of LOCALES) {
+        entries.push({
+          url: langs[locale],
+          lastModified: now,
+          changeFrequency: "weekly",
+          priority: 0.7,
+          alternates: { languages: langs },
+        });
+      }
+    }
+    const paths = await listPublishedArticlePaths();
+    for (const item of paths) {
+      const langs = localized(
+        `/kennisbank/${item.categorySlug}/${item.articleSlug}`,
+      );
+      for (const locale of LOCALES) {
+        entries.push({
+          url: langs[locale],
+          lastModified: item.updatedAt || now,
+          changeFrequency: "monthly",
+          priority: 0.65,
+          alternates: { languages: langs },
+        });
+      }
+    }
+  } catch (error) {
+    console.error("[sitemap] kennisbank unavailable", error);
   }
 
   return entries;

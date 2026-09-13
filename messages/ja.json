@@ -20,7 +20,8 @@
     "login": "ログイン",
     "register": "サインアップ",
     "dashboard": "ダッシュボード",
-    "logout": "ログアウト"
+    "logout": "ログアウト",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "言語"
@@ -267,7 +268,8 @@
     "emptyAgents": "まだエージェントはいません。",
     "emptyClients": "まだクライアントがいません。",
     "emptyLeads": "まだ手がかりはありません。",
-    "emptyActivity": "まだ活動はありません。"
+    "emptyActivity": "まだ活動はありません。",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "お問い合わせ",

@@ -20,7 +20,8 @@
     "login": "Jelentkezzen be",
     "register": "Regisztráljon",
     "dashboard": "Irányítópult",
-    "logout": "Jelentkezzen ki"
+    "logout": "Jelentkezzen ki",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "Nyelv"
@@ -267,7 +268,8 @@
     "emptyAgents": "Még nincsenek ügynökök.",
     "emptyClients": "Még nincsenek ügyfelek.",
     "emptyLeads": "Még nincsenek vezetők.",
-    "emptyActivity": "Még nincs tevékenység."
+    "emptyActivity": "Még nincs tevékenység.",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "Kapcsolatfelvétel",

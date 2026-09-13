@@ -20,7 +20,8 @@
     "login": "Prisijunkite",
     "register": "Užsiregistruoti",
     "dashboard": "Prietaisų skydelis",
-    "logout": "Atsijungti"
+    "logout": "Atsijungti",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "Kalba"
@@ -267,7 +268,8 @@
     "emptyAgents": "Agentų dar nėra.",
     "emptyClients": "Klientų dar nėra.",
     "emptyLeads": "Dar nėra potencialių klientų.",
-    "emptyActivity": "Kol kas jokios veiklos."
+    "emptyActivity": "Kol kas jokios veiklos.",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "Susisiekite",

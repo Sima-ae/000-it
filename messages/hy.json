@@ -20,7 +20,8 @@
     "login": "Մուտք գործեք",
     "register": "Գրանցվեք",
     "dashboard": "Վահանակ",
-    "logout": "Դուրս գալ"
+    "logout": "Դուրս գալ",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "Լեզու"
@@ -267,7 +268,8 @@
     "emptyAgents": "Գործակալներ դեռ չկան։",
     "emptyClients": "Հաճախորդներ դեռ չկան:",
     "emptyLeads": "Դեռևս ոչ մի կապ չկա:",
-    "emptyActivity": "Դեռևս ակտիվություն չկա:"
+    "emptyActivity": "Դեռևս ակտիվություն չկա:",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "Կապ",

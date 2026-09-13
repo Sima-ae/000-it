@@ -225,6 +225,24 @@ export const staticPageSeo: PageSeo[] = [
     },
   },
   {
+    path: "/kennisbank",
+    lastmod: "2026-09-13",
+    priority: 0.85,
+    changeFrequency: "weekly",
+    title: {
+      nl: "Kennisbank — TripleZero iT Hosting",
+      en: "Knowledge base — TripleZero iT Hosting",
+    },
+    description: {
+      nl: "Handleidingen over domeinen, hosting, e-mail, DirectAdmin, CyberPanel, WordPress, beveiliging en meer bij TripleZero iT Hosting.",
+      en: "Guides on domains, hosting, email, DirectAdmin, CyberPanel, WordPress, security and more at TripleZero iT Hosting.",
+    },
+    keywords: {
+      nl: [...CORE_NL, "kennisbank", "hosting", "DirectAdmin", "WordPress", "e-mail"],
+      en: [...CORE_EN, "knowledge base", "hosting", "DirectAdmin", "WordPress", "email"],
+    },
+  },
+  {
     path: "/digital-design",
     lastmod: REV,
     priority: 0.72,

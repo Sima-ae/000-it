@@ -20,7 +20,8 @@
     "login": "Log ind",
     "register": "Tilmeld dig",
     "dashboard": "Dashboard",
-    "logout": "Log ud"
+    "logout": "Log ud",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "Sprog"
@@ -267,7 +268,8 @@
     "emptyAgents": "Ingen agenter endnu.",
     "emptyClients": "Ingen kunder endnu.",
     "emptyLeads": "Ingen kundeemner endnu.",
-    "emptyActivity": "Ingen aktivitet endnu."
+    "emptyActivity": "Ingen aktivitet endnu.",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "Kontakte",

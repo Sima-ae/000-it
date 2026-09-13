@@ -20,7 +20,8 @@
     "login": "Kirjaudu sisään",
     "register": "Rekisteröidy",
     "dashboard": "Kojelauta",
-    "logout": "Kirjaudu ulos"
+    "logout": "Kirjaudu ulos",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "Kieli"
@@ -267,7 +268,8 @@
     "emptyAgents": "Ei agentteja vielä.",
     "emptyClients": "Ei vielä asiakkaita.",
     "emptyLeads": "Ei johtoja vielä.",
-    "emptyActivity": "Ei toimintaa vielä."
+    "emptyActivity": "Ei toimintaa vielä.",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "Ota yhteyttä",

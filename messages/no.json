@@ -20,7 +20,8 @@
     "login": "Logg inn",
     "register": "Registrer deg",
     "dashboard": "Dashbord",
-    "logout": "Logg ut"
+    "logout": "Logg ut",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "Språk"
@@ -267,7 +268,8 @@
     "emptyAgents": "Ingen agenter ennå.",
     "emptyClients": "Ingen kunder ennå.",
     "emptyLeads": "Ingen spor ennå.",
-    "emptyActivity": "Ingen aktivitet ennå."
+    "emptyActivity": "Ingen aktivitet ennå.",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "Kontakt",

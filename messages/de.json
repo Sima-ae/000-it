@@ -20,7 +20,8 @@
     "login": "Melden Sie sich an",
     "register": "Melden Sie sich an",
     "dashboard": "Armaturenbrett",
-    "logout": "Abmelden"
+    "logout": "Abmelden",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "Sprache"
@@ -267,7 +268,8 @@
     "emptyAgents": "Noch keine Agenten.",
     "emptyClients": "Noch keine Kunden.",
     "emptyLeads": "Noch keine Hinweise.",
-    "emptyActivity": "Noch keine Aktivität."
+    "emptyActivity": "Noch keine Aktivität.",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "Kontakt",

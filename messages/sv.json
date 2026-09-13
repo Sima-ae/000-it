@@ -20,7 +20,8 @@
     "login": "Logga in",
     "register": "Anmäl dig",
     "dashboard": "Instrumentbräda",
-    "logout": "Logga ut"
+    "logout": "Logga ut",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "Språk"
@@ -267,7 +268,8 @@
     "emptyAgents": "Inga agenter än.",
     "emptyClients": "Inga kunder ännu.",
     "emptyLeads": "Inga ledtrådar ännu.",
-    "emptyActivity": "Ingen aktivitet ännu."
+    "emptyActivity": "Ingen aktivitet ännu.",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "Kontakta",

@@ -20,7 +20,8 @@
     "login": "התחבר",
     "register": "הירשם",
     "dashboard": "לוח מחוונים",
-    "logout": "התנתק"
+    "logout": "התנתק",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "שפה"
@@ -267,7 +268,8 @@
     "emptyAgents": "עדיין אין סוכנים.",
     "emptyClients": "עדיין אין לקוחות.",
     "emptyLeads": "עדיין אין לידים.",
-    "emptyActivity": "עדיין אין פעילות."
+    "emptyActivity": "עדיין אין פעילות.",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "צור קשר",

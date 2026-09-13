@@ -20,7 +20,8 @@
     "login": "Iniciar sesión",
     "register": "Regístrate",
     "dashboard": "Panel de control",
-    "logout": "Cerrar sesión"
+    "logout": "Cerrar sesión",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "Idioma"
@@ -267,7 +268,8 @@
     "emptyAgents": "Aún no hay agentes.",
     "emptyClients": "Aún no hay clientes.",
     "emptyLeads": "Aún no hay pistas.",
-    "emptyActivity": "Aún no hay actividad."
+    "emptyActivity": "Aún no hay actividad.",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "Contacto",

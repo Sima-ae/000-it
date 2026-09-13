@@ -20,7 +20,8 @@
     "login": "Connectez-vous",
     "register": "Inscrivez-vous",
     "dashboard": "Tableau de bord",
-    "logout": "Se déconnecter"
+    "logout": "Se déconnecter",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "Langue"
@@ -267,7 +268,8 @@
     "emptyAgents": "Aucun agent pour l'instant.",
     "emptyClients": "Aucun client pour l'instant.",
     "emptyLeads": "Aucune piste pour l'instant.",
-    "emptyActivity": "Aucune activité pour l'instant."
+    "emptyActivity": "Aucune activité pour l'instant.",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "Contacter",

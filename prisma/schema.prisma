@@ -45,6 +45,7 @@ model User {
   newsPosts          NewsPost[]
   caseStudies        CaseStudy[]
   shopOrders         ShopOrder[]
+  kennisbankArticles KennisbankArticle[]
 }
 
 model Account {
@@ -624,4 +625,70 @@ enum ShopOrderStatus {
   PAID
   FAILED
   CANCELLED
+}
+
+/// Public knowledge base categories (Kennisbank)
+model KennisbankCategory {
+  id           String   @id @default(cuid())
+  slug         String   @unique
+  sortKey      String
+  published    Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  translations KennisbankCategoryTranslation[]
+  articles     KennisbankArticleCategory[]
+
+  @@index([published, sortKey])
+}
+
+model KennisbankCategoryTranslation {
+  id          String             @id @default(cuid())
+  categoryId  String
+  category    KennisbankCategory @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  locale      String
+  name        String
+  description String?            @db.Text
+
+  @@unique([categoryId, locale])
+  @@index([locale])
+}
+
+model KennisbankArticle {
+  id           String   @id @default(cuid())
+  slug         String   @unique
+  published    Boolean  @default(true)
+  createdById  String?
+  createdBy    User?    @relation(fields: [createdById], references: [id], onDelete: SetNull)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  translations KennisbankArticleTranslation[]
+  categories   KennisbankArticleCategory[]
+
+  @@index([published])
+  @@index([createdById])
+}
+
+model KennisbankArticleTranslation {
+  id             String            @id @default(cuid())
+  articleId      String
+  article        KennisbankArticle @relation(fields: [articleId], references: [id], onDelete: Cascade)
+  locale         String
+  title          String
+  excerpt        String            @db.Text
+  bodyHtml       String            @db.LongText
+  seoTitle       String?
+  seoDescription String?           @db.Text
+
+  @@unique([articleId, locale])
+  @@index([locale, title])
+}
+
+model KennisbankArticleCategory {
+  articleId  String
+  categoryId String
+  article    KennisbankArticle  @relation(fields: [articleId], references: [id], onDelete: Cascade)
+  category   KennisbankCategory @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  @@id([articleId, categoryId])
+  @@index([categoryId])
 }

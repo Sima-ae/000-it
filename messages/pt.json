@@ -20,7 +20,8 @@
     "login": "Faça login",
     "register": "Inscreva-se",
     "dashboard": "Painel",
-    "logout": "Sair"
+    "logout": "Sair",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "Idioma"
@@ -267,7 +268,8 @@
     "emptyAgents": "Nenhum agente ainda.",
     "emptyClients": "Nenhum cliente ainda.",
     "emptyLeads": "Nenhuma pista ainda.",
-    "emptyActivity": "Nenhuma atividade ainda."
+    "emptyActivity": "Nenhuma atividade ainda.",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "Contato",

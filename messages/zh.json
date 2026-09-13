@@ -20,7 +20,8 @@
     "login": "登录",
     "register": "注册",
     "dashboard": "仪表板",
-    "logout": "退出"
+    "logout": "退出",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "语言"
@@ -267,7 +268,8 @@
     "emptyAgents": "还没有代理。",
     "emptyClients": "还没有客户。",
     "emptyLeads": "还没有任何线索。",
-    "emptyActivity": "还没有活动。"
+    "emptyActivity": "还没有活动。",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "联系方式",

@@ -20,7 +20,8 @@
     "login": "Inloggen",
     "register": "Registreren",
     "dashboard": "Dashboard",
-    "logout": "Uitloggen"
+    "logout": "Uitloggen",
+    "kennisbank": "Kennisbank"
   },
   "language": {
     "title": "Taal"
@@ -267,7 +268,8 @@
     "emptyAgents": "Nog geen agents.",
     "emptyClients": "Nog geen klanten.",
     "emptyLeads": "Nog geen leads.",
-    "emptyActivity": "Nog geen activiteit."
+    "emptyActivity": "Nog geen activiteit.",
+    "kennisbank": "Kennisbank"
   },
   "contact": {
     "title": "Contact",

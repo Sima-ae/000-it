@@ -20,7 +20,8 @@
     "login": "Log in",
     "register": "Înscrie-te",
     "dashboard": "Bord",
-    "logout": "Deconectați-vă"
+    "logout": "Deconectați-vă",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "Limbă"
@@ -267,7 +268,8 @@
     "emptyAgents": "Încă nu există agenți.",
     "emptyClients": "Încă nu există clienți.",
     "emptyLeads": "Încă nu există piste.",
-    "emptyActivity": "Nicio activitate încă."
+    "emptyActivity": "Nicio activitate încă.",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "Contact",

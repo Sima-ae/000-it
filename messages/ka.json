@@ -20,7 +20,8 @@
     "login": "შესვლა",
     "register": "დარეგისტრირდით",
     "dashboard": "დაფა",
-    "logout": "გასვლა"
+    "logout": "გასვლა",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "ენა"
@@ -267,7 +268,8 @@
     "emptyAgents": "აგენტები ჯერ არ არის.",
     "emptyClients": "კლიენტები ჯერ არ არის.",
     "emptyLeads": "ჯერ არ არის წამყვანი.",
-    "emptyActivity": "ჯერ არანაირი აქტივობა."
+    "emptyActivity": "ჯერ არანაირი აქტივობა.",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "კონტაქტი",

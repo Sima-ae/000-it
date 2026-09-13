@@ -20,7 +20,8 @@
     "login": "تسجيل الدخول",
     "register": "قم بالتسجيل",
     "dashboard": "لوحة القيادة",
-    "logout": "تسجيل الخروج"
+    "logout": "تسجيل الخروج",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "اللغة"
@@ -267,7 +268,8 @@
     "emptyAgents": "لا يوجد وكلاء بعد.",
     "emptyClients": "لا يوجد عملاء حتى الآن.",
     "emptyLeads": "لا يوجد أي خيوط حتى الآن.",
-    "emptyActivity": "لا يوجد نشاط بعد."
+    "emptyActivity": "لا يوجد نشاط بعد.",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "الاتصال",

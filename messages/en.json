@@ -20,7 +20,8 @@
     "login": "Log in",
     "register": "Sign up",
     "dashboard": "Dashboard",
-    "logout": "Log out"
+    "logout": "Log out",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "Language"
@@ -267,7 +268,8 @@
     "emptyAgents": "No agents yet.",
     "emptyClients": "No clients yet.",
     "emptyLeads": "No leads yet.",
-    "emptyActivity": "No activity yet."
+    "emptyActivity": "No activity yet.",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "Contact",

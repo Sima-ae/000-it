@@ -20,7 +20,8 @@
     "login": "Identifikohu",
     "register": "Regjistrohu",
     "dashboard": "Paneli",
-    "logout": "Dilni"
+    "logout": "Dilni",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "Gjuha"
@@ -267,7 +268,8 @@
     "emptyAgents": "Nuk ka ende agjentë.",
     "emptyClients": "Ende nuk ka klientë.",
     "emptyLeads": "Nuk ka ende të dhëna.",
-    "emptyActivity": "Asnjë aktivitet ende."
+    "emptyActivity": "Asnjë aktivitet ende.",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "Kontaktoni",

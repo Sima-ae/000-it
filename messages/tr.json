@@ -20,7 +20,8 @@
     "login": "Giriş yap",
     "register": "Kayıt ol",
     "dashboard": "Kontrol Paneli",
-    "logout": "Oturumu kapat"
+    "logout": "Oturumu kapat",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "Dil"
@@ -267,7 +268,8 @@
     "emptyAgents": "Henüz ajan yok.",
     "emptyClients": "Henüz müşteri yok.",
     "emptyLeads": "Henüz ipucu yok.",
-    "emptyActivity": "Henüz etkinlik yok."
+    "emptyActivity": "Henüz etkinlik yok.",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "İletişim",

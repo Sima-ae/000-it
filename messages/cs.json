@@ -20,7 +20,8 @@
     "login": "Přihlaste se",
     "register": "Zaregistrujte se",
     "dashboard": "Dashboard",
-    "logout": "Odhlaste se"
+    "logout": "Odhlaste se",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "Jazyk"
@@ -267,7 +268,8 @@
     "emptyAgents": "Zatím žádní agenti.",
     "emptyClients": "Zatím žádní klienti.",
     "emptyLeads": "Zatím žádné vodítka.",
-    "emptyActivity": "Zatím žádná aktivita."
+    "emptyActivity": "Zatím žádná aktivita.",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "Kontakt",

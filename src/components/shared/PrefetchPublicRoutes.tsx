@@ -14,6 +14,7 @@ const PUBLIC_PATHS = [
   "/shop",
   "/nieuws",
   "/faq",
+  "/kennisbank",
   "/contact",
   "/afspraak",
 ] as const;

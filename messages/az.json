@@ -20,7 +20,8 @@
     "login": "Daxil ol",
     "register": "Qeydiyyatdan keçin",
     "dashboard": "İdarə paneli",
-    "logout": "Çıxın"
+    "logout": "Çıxın",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "Dil"
@@ -267,7 +268,8 @@
     "emptyAgents": "Hələ agent yoxdur.",
     "emptyClients": "Hələ müştəri yoxdur.",
     "emptyLeads": "Hələ lider yoxdur.",
-    "emptyActivity": "Hələ fəaliyyət yoxdur."
+    "emptyActivity": "Hələ fəaliyyət yoxdur.",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "Əlaqə",

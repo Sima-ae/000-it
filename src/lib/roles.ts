@@ -100,6 +100,11 @@ export const dashboardNav: DashboardNavItem[] = [
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
   },
   {
+    href: "/kennisbank-admin",
+    key: "kennisbank",
+    roles: ["SUPER_ADMIN", "ADMIN"],
+  },
+  {
     href: "/crm/leads",
     key: "leads",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],

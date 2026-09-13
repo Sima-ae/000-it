@@ -6,6 +6,7 @@ import { CopyrightBar } from "@/components/shared/CopyrightBar";
 
 const handyLinkPages = [
   { href: "/afspraak", key: "book", external: false },
+  { href: "/kennisbank", key: "kennisbank", external: false },
   { href: "/faq", key: "faq", external: false },
   { href: "/privacy", key: "privacy", external: true },
   { href: "/cookies", key: "cookies", external: true },

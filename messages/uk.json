@@ -20,7 +20,8 @@
     "login": "авторизуватися",
     "register": "Зареєструватися",
     "dashboard": "Приладова панель",
-    "logout": "Вийти"
+    "logout": "Вийти",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "Мова"
@@ -267,7 +268,8 @@
     "emptyAgents": "Агентів ще немає.",
     "emptyClients": "Клієнтів ще немає.",
     "emptyLeads": "Ще немає потенційних клієнтів.",
-    "emptyActivity": "Активності ще немає."
+    "emptyActivity": "Активності ще немає.",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "контакт",

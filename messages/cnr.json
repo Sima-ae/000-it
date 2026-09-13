@@ -20,7 +20,8 @@
     "login": "Prijavite se",
     "register": "Registrujte se",
     "dashboard": "Kontrolna tabla",
-    "logout": "Odjavite se"
+    "logout": "Odjavite se",
+    "kennisbank": "Knowledge base"
   },
   "language": {
     "title": "Jezik"
@@ -267,7 +268,8 @@
     "emptyAgents": "Još nema agenata.",
     "emptyClients": "Još nema klijenata.",
     "emptyLeads": "Još nema potencijalnih klijenata.",
-    "emptyActivity": "Još nema aktivnosti."
+    "emptyActivity": "Još nema aktivnosti.",
+    "kennisbank": "Knowledge base"
   },
   "contact": {
     "title": "Kontakt",
