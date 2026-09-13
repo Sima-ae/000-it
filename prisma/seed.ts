@@ -660,7 +660,7 @@ async function main() {
       const { spawnSync } = await import("node:child_process");
       const result = spawnSync(
         "npx",
-        ["tsx", "--env-file=.env", "prisma/seed-kennisbank.ts"],
+        ["--yes", "tsx", "--env-file=.env", "prisma/seed-kennisbank.ts"],
         { stdio: "inherit", cwd: process.cwd() },
       );
       if (result.status !== 0) {
