@@ -401,5 +401,30 @@
   "cases": {
     "title": "Case Studies",
     "subtitle": "Results from clients growing with AI."
+  },
+  "kennisbank": {
+    "title": "Knowledge base",
+    "subtitle": "Clear guides on domains, hosting, email, control panels, WordPress, security and TripleZero products — step by step, with professional explanations.",
+    "categoriesLabel": "categories",
+    "articlesLabel": "articles",
+    "articlesInCategory": "articles in this category",
+    "searchPlaceholder": "Search the knowledge base…",
+    "searchCategoryPlaceholder": "Search in this category…",
+    "emptyArticles": "No articles found.",
+    "ctaTitle": "Cannot find what you need?",
+    "ctaBody": "Contact TripleZero iT Hosting support — we are happy to help.",
+    "ctaButton": "Contact us",
+    "breadcrumb": "Knowledge base",
+    "contents": "Contents",
+    "relatedTitle": "Related articles",
+    "relatedSubtitle": "More from the same category.",
+    "heroCaption": "Visual guide for this topic — follow the steps below.",
+    "midCaption": "Check each step carefully and verify the result before continuing.",
+    "categoryPickCaption": "Pick an article below to continue reading.",
+    "brandEyebrow": "TripleZero iT Hosting",
+    "illustrationFooter": "TripleZero iT Hosting knowledge base",
+    "seoTitleSuffix": "Knowledge base",
+    "tipLabel": "Tip",
+    "warnLabel": "Note"
   }
 }

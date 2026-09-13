@@ -234,7 +234,7 @@ export const staticPageSeo: PageSeo[] = [
       en: "Knowledge base — TripleZero iT Hosting",
     },
     description: {
-      nl: "Handleidingen over domeinen, hosting, e-mail, DirectAdmin, CyberPanel, WordPress, beveiliging en meer bij TripleZero iT Hosting.",
+      nl: "Informatie over domeinen, hosting, e-mail, DirectAdmin, CyberPanel, WordPress, beveiliging en meer bij TripleZero iT Hosting.",
       en: "Guides on domains, hosting, email, DirectAdmin, CyberPanel, WordPress, security and more at TripleZero iT Hosting.",
     },
     keywords: {

@@ -21,7 +21,7 @@
     "register": "Пријавете се",
     "dashboard": "Контролна табла",
     "logout": "Одјави се",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "База на знаење"
   },
   "language": {
     "title": "Јазик"
@@ -269,7 +269,7 @@
     "emptyClients": "Сè уште нема клиенти.",
     "emptyLeads": "Сè уште нема води.",
     "emptyActivity": "Сè уште нема активност.",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "База на знаење"
   },
   "contact": {
     "title": "Контакт",
@@ -401,5 +401,30 @@
   "cases": {
     "title": "Студии на случај",
     "subtitle": "Резултати од клиенти кои растат со AI."
+  },
+  "kennisbank": {
+    "title": "База на знаење",
+    "subtitle": "Јасни водичи за домени, хостинг, е-пошта, контролни панели, WordPress, безбедност и TripleZero производи — чекор по чекор.",
+    "categoriesLabel": "категории",
+    "articlesLabel": "статии",
+    "articlesInCategory": "статии во оваа категорија",
+    "searchPlaceholder": "Пребарај во базата на знаење…",
+    "searchCategoryPlaceholder": "Пребарај во оваа категорија…",
+    "emptyArticles": "Не се пронајдени статии.",
+    "ctaTitle": "Не го најдовте тоа што го барате?",
+    "ctaBody": "Контактирајте ја поддршката на TripleZero iT Hosting — со задоволство ќе помогнеме.",
+    "ctaButton": "Контакт",
+    "breadcrumb": "База на знаење",
+    "contents": "Содржина",
+    "relatedTitle": "Поврзани статии",
+    "relatedSubtitle": "Повеќе од истата категорија.",
+    "heroCaption": "Визуелен водич за оваа тема — следете ги чекорите подолу.",
+    "midCaption": "Внимателно проверете го секој чекор и резултатот пред да продолжите.",
+    "categoryPickCaption": "Изберете статија подолу за да продолжите со читање.",
+    "brandEyebrow": "TripleZero iT Hosting",
+    "illustrationFooter": "База на знаење TripleZero iT Hosting",
+    "seoTitleSuffix": "База на знаење",
+    "tipLabel": "Совет",
+    "warnLabel": "Внимание"
   }
 }

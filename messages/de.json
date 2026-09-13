@@ -21,7 +21,7 @@
     "register": "Melden Sie sich an",
     "dashboard": "Armaturenbrett",
     "logout": "Abmelden",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Wissensdatenbank"
   },
   "language": {
     "title": "Sprache"
@@ -269,7 +269,7 @@
     "emptyClients": "Noch keine Kunden.",
     "emptyLeads": "Noch keine Hinweise.",
     "emptyActivity": "Noch keine Aktivität.",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Wissensdatenbank"
   },
   "contact": {
     "title": "Kontakt",
@@ -401,5 +401,30 @@
   "cases": {
     "title": "Fallstudien",
     "subtitle": "Ergebnisse von Kunden, die mit AI wachsen."
+  },
+  "kennisbank": {
+    "title": "Wissensdatenbank",
+    "subtitle": "Klare Anleitungen zu Domains, Hosting, E-Mail, Control Panels, WordPress, Sicherheit und TripleZero-Produkten — Schritt für Schritt, professionell erklärt.",
+    "categoriesLabel": "Kategorien",
+    "articlesLabel": "Artikel",
+    "articlesInCategory": "Artikel in dieser Kategorie",
+    "searchPlaceholder": "In der Wissensdatenbank suchen…",
+    "searchCategoryPlaceholder": "In dieser Kategorie suchen…",
+    "emptyArticles": "Keine Artikel gefunden.",
+    "ctaTitle": "Nicht gefunden, was Sie suchen?",
+    "ctaBody": "Kontaktieren Sie den TripleZero iT Hosting Support — wir helfen Ihnen gerne weiter.",
+    "ctaButton": "Kontakt aufnehmen",
+    "breadcrumb": "Wissensdatenbank",
+    "contents": "Inhalt",
+    "relatedTitle": "Verwandte Artikel",
+    "relatedSubtitle": "Mehr aus derselben Kategorie.",
+    "heroCaption": "Visueller Leitfaden zu diesem Thema — folgen Sie den Schritten unten.",
+    "midCaption": "Prüfen Sie jeden Schritt sorgfältig und testen Sie das Ergebnis, bevor Sie fortfahren.",
+    "categoryPickCaption": "Wählen Sie unten einen Artikel zum Weiterlesen.",
+    "brandEyebrow": "TripleZero iT Hosting",
+    "illustrationFooter": "TripleZero iT Hosting Wissensdatenbank",
+    "seoTitleSuffix": "Wissensdatenbank",
+    "tipLabel": "Tipp",
+    "warnLabel": "Hinweis"
   }
 }

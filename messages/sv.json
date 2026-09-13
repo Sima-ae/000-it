@@ -21,7 +21,7 @@
     "register": "Anmäl dig",
     "dashboard": "Instrumentbräda",
     "logout": "Logga ut",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Kunskapsbank"
   },
   "language": {
     "title": "Språk"
@@ -269,7 +269,7 @@
     "emptyClients": "Inga kunder ännu.",
     "emptyLeads": "Inga ledtrådar ännu.",
     "emptyActivity": "Ingen aktivitet ännu.",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Kunskapsbank"
   },
   "contact": {
     "title": "Kontakta",
@@ -401,5 +401,30 @@
   "cases": {
     "title": "Fallstudier",
     "subtitle": "Resultat från kunder som växer med AI."
+  },
+  "kennisbank": {
+    "title": "Kunskapsbank",
+    "subtitle": "Tydliga guider om domäner, hosting, e-post, kontrollpaneler, WordPress, säkerhet och TripleZero-produkter — steg för steg.",
+    "categoriesLabel": "kategorier",
+    "articlesLabel": "artiklar",
+    "articlesInCategory": "artiklar i denna kategori",
+    "searchPlaceholder": "Sök i kunskapsbanken…",
+    "searchCategoryPlaceholder": "Sök i denna kategori…",
+    "emptyArticles": "Inga artiklar hittades.",
+    "ctaTitle": "Hittar du inte det du behöver?",
+    "ctaBody": "Kontakta TripleZero iT Hosting support — vi hjälper dig gärna.",
+    "ctaButton": "Kontakta oss",
+    "breadcrumb": "Kunskapsbank",
+    "contents": "Innehåll",
+    "relatedTitle": "Relaterade artiklar",
+    "relatedSubtitle": "Mer från samma kategori.",
+    "heroCaption": "Visuell guide för detta ämne — följ stegen nedan.",
+    "midCaption": "Kontrollera varje steg noga och verifiera resultatet innan du fortsätter.",
+    "categoryPickCaption": "Välj en artikel nedan för att läsa vidare.",
+    "brandEyebrow": "TripleZero iT Hosting",
+    "illustrationFooter": "TripleZero iT Hosting kunskapsbank",
+    "seoTitleSuffix": "Kunskapsbank",
+    "tipLabel": "Tips",
+    "warnLabel": "Obs"
   }
 }

@@ -394,3 +394,143 @@ body::before {
 .animate-accordion-up {
   animation: accordion-up 0.2s ease-out;
 }
+
+/* —— Kennisbank article body —— */
+.kb-article-body {
+  color: var(--foreground);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.kb-article-body > * + * {
+  margin-top: 1.15rem;
+}
+
+.kb-article-body h2 {
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  font-size: 1.45rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin-top: 2.35rem;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--foreground);
+}
+
+.kb-article-body h3 {
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-top: 1.75rem;
+  margin-bottom: 0.55rem;
+}
+
+.kb-article-body p {
+  margin-top: 0.95rem;
+  color: color-mix(in oklab, var(--foreground) 88%, transparent);
+}
+
+.kb-article-body ul,
+.kb-article-body ol {
+  margin-top: 0.85rem;
+  padding-left: 1.35rem;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.kb-article-body ul {
+  list-style: disc;
+}
+
+.kb-article-body ol {
+  list-style: decimal;
+}
+
+.kb-article-body li {
+  padding-left: 0.2rem;
+  color: color-mix(in oklab, var(--foreground) 88%, transparent);
+}
+
+.kb-article-body li::marker {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.kb-article-body a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.kb-article-body code {
+  font-size: 0.9em;
+  padding: 0.12rem 0.4rem;
+  border-radius: 0.4rem;
+  background: color-mix(in oklab, var(--primary) 10%, transparent);
+  color: var(--foreground);
+}
+
+.kb-article-body strong {
+  font-weight: 650;
+  color: var(--foreground);
+}
+
+.kb-callout {
+  margin-top: 1.4rem !important;
+  margin-bottom: 0.4rem;
+  padding: 1rem 1.1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+}
+
+.kb-callout p {
+  margin: 0 !important;
+  color: var(--foreground) !important;
+}
+
+.kb-callout-tip {
+  background: color-mix(in oklab, var(--accent) 12%, white);
+  border-color: color-mix(in oklab, var(--accent) 35%, transparent);
+}
+
+.kb-callout-warn {
+  background: color-mix(in oklab, #e11d48 8%, white);
+  border-color: color-mix(in oklab, #e11d48 28%, transparent);
+}
+
+.dark .kb-callout-tip {
+  background: color-mix(in oklab, var(--accent) 16%, transparent);
+}
+
+.dark .kb-callout-warn {
+  background: color-mix(in oklab, #e11d48 14%, transparent);
+}
+
+.kb-figure {
+  margin: 1.75rem 0 1.25rem;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  border: 1px solid var(--border);
+  background: linear-gradient(
+    145deg,
+    color-mix(in oklab, var(--primary) 14%, transparent),
+    color-mix(in oklab, var(--accent) 10%, transparent)
+  );
+}
+
+.kb-figure img,
+.kb-figure svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.kb-figure figcaption {
+  padding: 0.65rem 1rem 0.85rem;
+  font-size: 0.8rem;
+  color: var(--muted-foreground);
+  background: color-mix(in oklab, var(--background) 70%, transparent);
+}

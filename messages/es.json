@@ -21,7 +21,7 @@
     "register": "Regístrate",
     "dashboard": "Panel de control",
     "logout": "Cerrar sesión",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Base de conocimientos"
   },
   "language": {
     "title": "Idioma"
@@ -269,7 +269,7 @@
     "emptyClients": "Aún no hay clientes.",
     "emptyLeads": "Aún no hay pistas.",
     "emptyActivity": "Aún no hay actividad.",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Base de conocimientos"
   },
   "contact": {
     "title": "Contacto",
@@ -401,5 +401,30 @@
   "cases": {
     "title": "Estudios de caso",
     "subtitle": "Resultados de clientes que crecen con AI."
+  },
+  "kennisbank": {
+    "title": "Base de conocimientos",
+    "subtitle": "Guías claras sobre dominios, hosting, correo, paneles de control, WordPress, seguridad y productos TripleZero — paso a paso.",
+    "categoriesLabel": "categorías",
+    "articlesLabel": "artículos",
+    "articlesInCategory": "artículos en esta categoría",
+    "searchPlaceholder": "Buscar en la base de conocimientos…",
+    "searchCategoryPlaceholder": "Buscar en esta categoría…",
+    "emptyArticles": "No se encontraron artículos.",
+    "ctaTitle": "¿No encuentra lo que necesita?",
+    "ctaBody": "Contacte con el soporte de TripleZero iT Hosting — estaremos encantados de ayudarle.",
+    "ctaButton": "Contactar",
+    "breadcrumb": "Base de conocimientos",
+    "contents": "Contenido",
+    "relatedTitle": "Artículos relacionados",
+    "relatedSubtitle": "Más de la misma categoría.",
+    "heroCaption": "Guía visual de este tema — siga los pasos a continuación.",
+    "midCaption": "Revise cada paso y compruebe el resultado antes de continuar.",
+    "categoryPickCaption": "Elija un artículo abajo para seguir leyendo.",
+    "brandEyebrow": "TripleZero iT Hosting",
+    "illustrationFooter": "Base de conocimientos TripleZero iT Hosting",
+    "seoTitleSuffix": "Base de conocimientos",
+    "tipLabel": "Consejo",
+    "warnLabel": "Atención"
   }
 }

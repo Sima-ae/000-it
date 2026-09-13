@@ -21,7 +21,7 @@
     "register": "Tilmeld dig",
     "dashboard": "Dashboard",
     "logout": "Log ud",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Vidensbase"
   },
   "language": {
     "title": "Sprog"
@@ -269,7 +269,7 @@
     "emptyClients": "Ingen kunder endnu.",
     "emptyLeads": "Ingen kundeemner endnu.",
     "emptyActivity": "Ingen aktivitet endnu.",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Vidensbase"
   },
   "contact": {
     "title": "Kontakte",
@@ -401,5 +401,30 @@
   "cases": {
     "title": "Casestudier",
     "subtitle": "Resultater fra kunder, der vokser med AI."
+  },
+  "kennisbank": {
+    "title": "Vidensbase",
+    "subtitle": "Klare vejledninger om domæner, hosting, e-mail, kontrolpaneler, WordPress, sikkerhed og TripleZero-produkter — trin for trin.",
+    "categoriesLabel": "kategorier",
+    "articlesLabel": "artikler",
+    "articlesInCategory": "artikler i denne kategori",
+    "searchPlaceholder": "Søg i vidensbasen…",
+    "searchCategoryPlaceholder": "Søg i denne kategori…",
+    "emptyArticles": "Ingen artikler fundet.",
+    "ctaTitle": "Kan du ikke finde det, du leder efter?",
+    "ctaBody": "Kontakt TripleZero iT Hosting support — vi hjælper gerne.",
+    "ctaButton": "Kontakt os",
+    "breadcrumb": "Vidensbase",
+    "contents": "Indhold",
+    "relatedTitle": "Relaterede artikler",
+    "relatedSubtitle": "Mere fra samme kategori.",
+    "heroCaption": "Visuel guide til dette emne — følg trinnene nedenfor.",
+    "midCaption": "Tjek hvert trin omhyggeligt, og bekræft resultatet, før du fortsætter.",
+    "categoryPickCaption": "Vælg en artikel nedenfor for at læse videre.",
+    "brandEyebrow": "TripleZero iT Hosting",
+    "illustrationFooter": "TripleZero iT Hosting vidensbase",
+    "seoTitleSuffix": "Vidensbase",
+    "tipLabel": "Tip",
+    "warnLabel": "Bemærk"
   }
 }

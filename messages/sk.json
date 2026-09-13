@@ -21,7 +21,7 @@
     "register": "Zaregistrujte sa",
     "dashboard": "Dashboard",
     "logout": "Odhláste sa",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Databáza znalostí"
   },
   "language": {
     "title": "Jazyk"
@@ -269,7 +269,7 @@
     "emptyClients": "Zatiaľ žiadni klienti.",
     "emptyLeads": "Zatiaľ bez potenciálnych zákazníkov.",
     "emptyActivity": "Zatiaľ žiadna aktivita.",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Databáza znalostí"
   },
   "contact": {
     "title": "Kontaktovať",
@@ -401,5 +401,30 @@
   "cases": {
     "title": "Prípadové štúdie",
     "subtitle": "Výsledky od klientov, ktorí rastú s AI."
+  },
+  "kennisbank": {
+    "title": "Databáza znalostí",
+    "subtitle": "Prehľadné návody o doménach, hostingu, e-maile, ovládacích paneloch, WordPresse, bezpečnosti a produktoch TripleZero — krok za krokom.",
+    "categoriesLabel": "kategórie",
+    "articlesLabel": "články",
+    "articlesInCategory": "článkov v tejto kategórii",
+    "searchPlaceholder": "Hľadať v databáze znalostí…",
+    "searchCategoryPlaceholder": "Hľadať v tejto kategórii…",
+    "emptyArticles": "Nenašli sa žiadne články.",
+    "ctaTitle": "Nenašli ste, čo potrebujete?",
+    "ctaBody": "Kontaktujte podporu TripleZero iT Hosting — radi pomôžeme.",
+    "ctaButton": "Kontaktovať",
+    "breadcrumb": "Databáza znalostí",
+    "contents": "Obsah",
+    "relatedTitle": "Súvisiace články",
+    "relatedSubtitle": "Viac z rovnakej kategórie.",
+    "heroCaption": "Vizuálny sprievodca touto témou — postupujte podľa krokov nižšie.",
+    "midCaption": "Starostlivo skontrolujte každý krok a overte výsledok pred pokračovaním.",
+    "categoryPickCaption": "Vyberte článok nižšie a pokračujte v čítaní.",
+    "brandEyebrow": "TripleZero iT Hosting",
+    "illustrationFooter": "Databáza znalostí TripleZero iT Hosting",
+    "seoTitleSuffix": "Databáza znalostí",
+    "tipLabel": "Tip",
+    "warnLabel": "Pozor"
   }
 }

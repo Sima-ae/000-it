@@ -21,7 +21,7 @@
     "register": "Inscrivez-vous",
     "dashboard": "Tableau de bord",
     "logout": "Se déconnecter",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Base de connaissances"
   },
   "language": {
     "title": "Langue"
@@ -269,7 +269,7 @@
     "emptyClients": "Aucun client pour l'instant.",
     "emptyLeads": "Aucune piste pour l'instant.",
     "emptyActivity": "Aucune activité pour l'instant.",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Base de connaissances"
   },
   "contact": {
     "title": "Contacter",
@@ -401,5 +401,30 @@
   "cases": {
     "title": "Études de cas",
     "subtitle": "Résultats de clients en croissance avec AI."
+  },
+  "kennisbank": {
+    "title": "Base de connaissances",
+    "subtitle": "Guides clairs sur les domaines, l'hébergement, l'e-mail, les panneaux de contrôle, WordPress, la sécurité et les produits TripleZero — étape par étape.",
+    "categoriesLabel": "catégories",
+    "articlesLabel": "articles",
+    "articlesInCategory": "articles dans cette catégorie",
+    "searchPlaceholder": "Rechercher dans la base de connaissances…",
+    "searchCategoryPlaceholder": "Rechercher dans cette catégorie…",
+    "emptyArticles": "Aucun article trouvé.",
+    "ctaTitle": "Vous ne trouvez pas ce qu il vous faut ?",
+    "ctaBody": "Contactez le support TripleZero iT Hosting — nous sommes ravis de vous aider.",
+    "ctaButton": "Nous contacter",
+    "breadcrumb": "Base de connaissances",
+    "contents": "Sommaire",
+    "relatedTitle": "Articles connexes",
+    "relatedSubtitle": "Plus dans la même catégorie.",
+    "heroCaption": "Guide visuel pour ce sujet — suivez les étapes ci-dessous.",
+    "midCaption": "Vérifiez chaque étape et testez le résultat avant de continuer.",
+    "categoryPickCaption": "Choisissez un article ci-dessous pour continuer.",
+    "brandEyebrow": "TripleZero iT Hosting",
+    "illustrationFooter": "Base de connaissances TripleZero iT Hosting",
+    "seoTitleSuffix": "Base de connaissances",
+    "tipLabel": "Astuce",
+    "warnLabel": "Attention"
   }
 }

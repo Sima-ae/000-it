@@ -21,7 +21,7 @@
     "register": "قم بالتسجيل",
     "dashboard": "لوحة القيادة",
     "logout": "تسجيل الخروج",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "قاعدة المعرفة"
   },
   "language": {
     "title": "اللغة"
@@ -269,7 +269,7 @@
     "emptyClients": "لا يوجد عملاء حتى الآن.",
     "emptyLeads": "لا يوجد أي خيوط حتى الآن.",
     "emptyActivity": "لا يوجد نشاط بعد.",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "قاعدة المعرفة"
   },
   "contact": {
     "title": "الاتصال",
@@ -401,5 +401,30 @@
   "cases": {
     "title": "دراسات الحالة",
     "subtitle": "النتائج من العملاء المتنامية مع AI."
+  },
+  "kennisbank": {
+    "title": "قاعدة المعرفة",
+    "subtitle": "أدلة واضحة حول النطاقات والاستضافة والبريد الإلكتروني ولوحات التحكم وWordPress والأمان ومنتجات TripleZero — خطوة بخطوة.",
+    "categoriesLabel": "فئات",
+    "articlesLabel": "مقالات",
+    "articlesInCategory": "مقالات في هذه الفئة",
+    "searchPlaceholder": "البحث في قاعدة المعرفة…",
+    "searchCategoryPlaceholder": "البحث في هذه الفئة…",
+    "emptyArticles": "لم يتم العثور على مقالات.",
+    "ctaTitle": "لم تجد ما تبحث عنه؟",
+    "ctaBody": "تواصل مع دعم TripleZero iT Hosting — يسعدنا مساعدتك.",
+    "ctaButton": "اتصل بنا",
+    "breadcrumb": "قاعدة المعرفة",
+    "contents": "المحتويات",
+    "relatedTitle": "مقالات ذات صلة",
+    "relatedSubtitle": "المزيد من نفس الفئة.",
+    "heroCaption": "دليل مرئي لهذا الموضوع — اتبع الخطوات أدناه.",
+    "midCaption": "تحقق من كل خطوة واختبر النتيجة قبل المتابعة.",
+    "categoryPickCaption": "اختر مقالاً أدناه لمتابعة القراءة.",
+    "brandEyebrow": "TripleZero iT Hosting",
+    "illustrationFooter": "قاعدة معرفة TripleZero iT Hosting",
+    "seoTitleSuffix": "قاعدة المعرفة",
+    "tipLabel": "نصيحة",
+    "warnLabel": "تنبيه"
   }
 }

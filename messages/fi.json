@@ -21,7 +21,7 @@
     "register": "Rekisteröidy",
     "dashboard": "Kojelauta",
     "logout": "Kirjaudu ulos",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Tietopankki"
   },
   "language": {
     "title": "Kieli"
@@ -269,7 +269,7 @@
     "emptyClients": "Ei vielä asiakkaita.",
     "emptyLeads": "Ei johtoja vielä.",
     "emptyActivity": "Ei toimintaa vielä.",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Tietopankki"
   },
   "contact": {
     "title": "Ota yhteyttä",
@@ -401,5 +401,30 @@
   "cases": {
     "title": "Tapaustutkimukset",
     "subtitle": "Tuloksia asiakkailta, jotka kasvavat AI:n avulla."
+  },
+  "kennisbank": {
+    "title": "Tietopankki",
+    "subtitle": "Selkeät oppaat verkkotunnuksista, hostingista, sähköpostista, hallintapaneeleista, WordPressistä, turvallisuudesta ja TripleZero-tuotteista — vaiheittain.",
+    "categoriesLabel": "kategoriat",
+    "articlesLabel": "artikkelit",
+    "articlesInCategory": "artikkelia tässä kategoriassa",
+    "searchPlaceholder": "Hae tietopankista…",
+    "searchCategoryPlaceholder": "Hae tässä kategoriassa…",
+    "emptyArticles": "Artikkeleita ei löytynyt.",
+    "ctaTitle": "Etkö löytänyt etsimääsi?",
+    "ctaBody": "Ota yhteyttä TripleZero iT Hosting -tukeen — autamme mielellämme.",
+    "ctaButton": "Ota yhteyttä",
+    "breadcrumb": "Tietopankki",
+    "contents": "Sisällys",
+    "relatedTitle": "Aiheeseen liittyvät artikkelit",
+    "relatedSubtitle": "Lisää samasta kategoriasta.",
+    "heroCaption": "Visuaalinen opas tähän aiheeseen — seuraa alla olevia vaiheita.",
+    "midCaption": "Tarkista jokainen vaihe huolellisesti ja varmista tulos ennen jatkamista.",
+    "categoryPickCaption": "Valitse artikkeli alta jatkaaksesi lukemista.",
+    "brandEyebrow": "TripleZero iT Hosting",
+    "illustrationFooter": "TripleZero iT Hosting -tietopankki",
+    "seoTitleSuffix": "Tietopankki",
+    "tipLabel": "Vinkki",
+    "warnLabel": "Huomio"
   }
 }

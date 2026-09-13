@@ -21,7 +21,7 @@
     "register": "注册",
     "dashboard": "仪表板",
     "logout": "退出",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "知识库"
   },
   "language": {
     "title": "语言"
@@ -269,7 +269,7 @@
     "emptyClients": "还没有客户。",
     "emptyLeads": "还没有任何线索。",
     "emptyActivity": "还没有活动。",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "知识库"
   },
   "contact": {
     "title": "联系方式",
@@ -401,5 +401,30 @@
   "cases": {
     "title": "案例研究",
     "subtitle": "客户与 AI 一起成长的结果。"
+  },
+  "kennisbank": {
+    "title": "知识库",
+    "subtitle": "关于域名、主机、电子邮件、控制面板、WordPress、安全与 TripleZero 产品的清晰指南 — 循序渐进、专业讲解。",
+    "categoriesLabel": "分类",
+    "articlesLabel": "文章",
+    "articlesInCategory": "本分类中的文章",
+    "searchPlaceholder": "搜索知识库…",
+    "searchCategoryPlaceholder": "在此分类中搜索…",
+    "emptyArticles": "未找到文章。",
+    "ctaTitle": "没有找到所需内容？",
+    "ctaBody": "请联系 TripleZero iT Hosting 支持 — 我们很乐意提供帮助。",
+    "ctaButton": "联系我们",
+    "breadcrumb": "知识库",
+    "contents": "目录",
+    "relatedTitle": "相关文章",
+    "relatedSubtitle": "同一分类的更多内容。",
+    "heroCaption": "本主题的可视化指南 — 请按下列步骤操作。",
+    "midCaption": "仔细检查每一步，并在继续前验证结果。",
+    "categoryPickCaption": "选择下方文章继续阅读。",
+    "brandEyebrow": "TripleZero iT Hosting",
+    "illustrationFooter": "TripleZero iT Hosting 知识库",
+    "seoTitleSuffix": "知识库",
+    "tipLabel": "提示",
+    "warnLabel": "注意"
   }
 }

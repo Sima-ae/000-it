@@ -26,11 +26,11 @@ function ul(items: string[]) {
 }
 
 function tip(t: string) {
-  return `<p><strong>Tip:</strong> ${t}</p>`;
+  return `<aside class="kb-callout kb-callout-tip"><p><strong>Tip:</strong> ${t}</p></aside>`;
 }
 
 function warn(t: string) {
-  return `<p><strong>Let op:</strong> ${t}</p>`;
+  return `<aside class="kb-callout kb-callout-warn"><p><strong>Let op:</strong> ${t}</p></aside>`;
 }
 
 function outro(related?: string) {
@@ -1269,13 +1269,82 @@ function genericBody(ctx: Ctx): string {
   ].join("\n");
 }
 
-export function buildArticleHtml(title: string, topic: string): string {
+function englishGenericBody({ title, topic }: Ctx): string {
+  const panel = /cyberpanel/i.test(topic)
+    ? "CyberPanel"
+    : /plesk/i.test(topic)
+      ? "Plesk"
+      : "DirectAdmin";
+
+  return [
+    p(
+      `This ${BRAND} knowledge-base article explains: <strong>${title}</strong>. We cover the goal, preparation and a clear workflow you can follow step by step.`,
+      `This guide is written for ${BRAND} customers and assumes common setups on shared hosting, reseller environments and control panels such as DirectAdmin, CyberPanel and Plesk.`,
+    ),
+    h2("What you need"),
+    ul([
+      `Access to ${panel} or the ${BRAND} client panel.`,
+      "Your domain name and any login or mailbox credentials.",
+      "An up-to-date browser and, where relevant, FTP/SSH access.",
+      "Preferably a recent backup before you make structural changes.",
+    ]),
+    h2("Step-by-step approach"),
+    ol([
+      `Sign in to the correct panel at ${BRAND} and select the domain or account the change applies to.`,
+      "Confirm you are in the right environment (production versus test) and note the current settings.",
+      `Carry out the action that matches “${title}”. Work carefully and avoid changing multiple critical options at once.`,
+      "Save your changes and test the result: website, email or DNS — depending on the topic.",
+      "Document what you changed so you can roll back later or help support resolve issues faster.",
+    ]),
+    h2("Deeper explanation"),
+    p(
+      `The topic “${title}” often touches multiple layers: DNS, web server, mail server, application (for example WordPress) and account limits. Issues usually appear when one layer changes without checking the others.`,
+      `At ${BRAND} we recommend verifying that DNS points to the correct nameservers first, then reviewing control-panel settings, and only then changing application settings (plugins, themes, .htaccess).`,
+    ),
+    h3("Checklist afterwards"),
+    ul([
+      "Does the website work over HTTP and HTTPS without certificate errors?",
+      "Do test emails arrive and avoid the spam folder?",
+      "Are limits (disk, inodes, bandwidth) still within your plan?",
+      "Are there no unintended redirects, firewall blocks or PHP errors in the logs?",
+    ]),
+    h2("Common pitfalls"),
+    ul([
+      "DNS propagation: changes are not visible everywhere immediately.",
+      "Wrong domain or user selected in a reseller environment.",
+      "Cache (browser, CDN, LiteSpeed/OpenLiteSpeed, WordPress plugins) showing old content.",
+      "Missing folder permissions or an incorrect document root.",
+    ]),
+    `<aside class="kb-callout kb-callout-tip"><p><strong>Tip:</strong> Take a backup via DirectAdmin, CyberPanel, JetBackup or Installatron before risky steps so you can restore a working state quickly.</p></aside>`,
+    `<aside class="kb-callout kb-callout-warn"><p><strong>Note:</strong> Never reuse passwords across services. Enable 2FA on the client panel and control panel wherever possible.</p></aside>`,
+    h2("When to contact support"),
+    p(
+      `If you are stuck after these steps — for example with persistent mail errors, SSL issues or an unreachable site — open a ticket with ${BRAND}. Include the domain name, time, error message (screenshot or exact text) and what you already tried.`,
+    ),
+    p(
+      `Still have questions after following these steps? Contact ${BRAND} support via the ticket system or email. Always mention your domain name and a clear description of the issue so we can help faster.`,
+      `Also browse other articles in the knowledge base for additional guidance on hosting, email and security.`,
+    ),
+  ].join("\n");
+}
+
+export function buildArticleHtml(
+  title: string,
+  topic: string,
+  locale: string = "nl",
+): string {
   const ctx = { title, topic };
+  if (locale !== "nl") {
+    return englishGenericBody(ctx);
+  }
   const builder = topicBuilders[topic];
   if (builder) return builder(ctx);
   return genericBody(ctx);
 }
 
-export function buildExcerpt(title: string): string {
+export function buildExcerpt(title: string, locale: string = "nl"): string {
+  if (locale !== "nl") {
+    return `Professional ${BRAND} guide: ${title.replace(/\?$/, "")}. Step-by-step explanation, key checks and tips for a stable configuration.`;
+  }
   return `Professionele handleiding van ${BRAND}: ${title.replace(/\?$/, "")}. Stapsgewijze uitleg, aandachtspunten en tips voor een stabiele configuratie.`;
 }

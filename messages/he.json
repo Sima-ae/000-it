@@ -21,7 +21,7 @@
     "register": "הירשם",
     "dashboard": "לוח מחוונים",
     "logout": "התנתק",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "מאגר ידע"
   },
   "language": {
     "title": "שפה"
@@ -269,7 +269,7 @@
     "emptyClients": "עדיין אין לקוחות.",
     "emptyLeads": "עדיין אין לידים.",
     "emptyActivity": "עדיין אין פעילות.",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "מאגר ידע"
   },
   "contact": {
     "title": "צור קשר",
@@ -401,5 +401,30 @@
   "cases": {
     "title": "תיאורי מקרה",
     "subtitle": "תוצאות מלקוחות שגדלו עם AI."
+  },
+  "kennisbank": {
+    "title": "מאגר ידע",
+    "subtitle": "מדריכים ברורים על דומיינים, אחסון, דוא״ל, לוחות בקרה, WordPress, אבטחה ומוצרי TripleZero — שלב אחר שלב.",
+    "categoriesLabel": "קטגוריות",
+    "articlesLabel": "מאמרים",
+    "articlesInCategory": "מאמרים בקטגוריה זו",
+    "searchPlaceholder": "חיפוש במאגר הידע…",
+    "searchCategoryPlaceholder": "חיפוש בקטגוריה זו…",
+    "emptyArticles": "לא נמצאו מאמרים.",
+    "ctaTitle": "לא מצאתם את מה שחיפשתם?",
+    "ctaBody": "צרו קשר עם התמיכה של TripleZero iT Hosting — נשמח לעזור.",
+    "ctaButton": "צור קשר",
+    "breadcrumb": "מאגר ידע",
+    "contents": "תוכן עניינים",
+    "relatedTitle": "מאמרים קשורים",
+    "relatedSubtitle": "עוד מאותה קטגוריה.",
+    "heroCaption": "מדריך חזותי לנושא זה — עקבו אחר השלבים למטה.",
+    "midCaption": "בדקו כל שלב ואמתו את התוצאה לפני שממשיכים.",
+    "categoryPickCaption": "בחרו מאמר למטה כדי להמשיך לקרוא.",
+    "brandEyebrow": "TripleZero iT Hosting",
+    "illustrationFooter": "מאגר ידע TripleZero iT Hosting",
+    "seoTitleSuffix": "מאגר ידע",
+    "tipLabel": "טיפ",
+    "warnLabel": "שימו לב"
   }
 }

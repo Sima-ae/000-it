@@ -401,5 +401,30 @@
   "cases": {
     "title": "Cases",
     "subtitle": "Resultaten van klanten die met AI groeien."
+  },
+  "kennisbank": {
+    "title": "Kennisbank",
+    "subtitle": "Duidelijke handleidingen over domeinnamen, hosting, e-mail, control panels, WordPress, beveiliging en onze TripleZero-producten — stap voor stap, met professionele uitleg.",
+    "categoriesLabel": "categorieën",
+    "articlesLabel": "artikelen",
+    "articlesInCategory": "artikelen in deze categorie",
+    "searchPlaceholder": "Zoeken in de kennisbank…",
+    "searchCategoryPlaceholder": "Zoeken in deze categorie…",
+    "emptyArticles": "Geen artikelen gevonden.",
+    "ctaTitle": "Niet gevonden wat je zoekt?",
+    "ctaBody": "Neem contact op met TripleZero iT Hosting support — we helpen je graag verder.",
+    "ctaButton": "Contact opnemen",
+    "breadcrumb": "Kennisbank",
+    "contents": "Inhoud",
+    "relatedTitle": "Gerelateerde artikelen",
+    "relatedSubtitle": "Meer uit dezelfde categorie.",
+    "heroCaption": "Visuele gids bij dit onderwerp — volg de stappen hieronder.",
+    "midCaption": "Controleer elke stap rustig en test het resultaat voordat je verdergaat.",
+    "categoryPickCaption": "Kies een artikel hieronder om verder te lezen.",
+    "brandEyebrow": "TripleZero iT Hosting",
+    "illustrationFooter": "TripleZero iT Hosting kennisbank",
+    "seoTitleSuffix": "Kennisbank",
+    "tipLabel": "Tip",
+    "warnLabel": "Let op"
   }
 }

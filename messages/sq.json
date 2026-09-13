@@ -21,7 +21,7 @@
     "register": "Regjistrohu",
     "dashboard": "Paneli",
     "logout": "Dilni",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Baza e njohurive"
   },
   "language": {
     "title": "Gjuha"
@@ -269,7 +269,7 @@
     "emptyClients": "Ende nuk ka klientë.",
     "emptyLeads": "Nuk ka ende të dhëna.",
     "emptyActivity": "Asnjë aktivitet ende.",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Baza e njohurive"
   },
   "contact": {
     "title": "Kontaktoni",
@@ -401,5 +401,30 @@
   "cases": {
     "title": "Studime të rasteve",
     "subtitle": "Rezultatet nga klientët në rritje me AI."
+  },
+  "kennisbank": {
+    "title": "Baza e njohurive",
+    "subtitle": "Udhëzues të qartë për domenet, hostingun, email-in, paneltë e kontrollit, WordPress, sigurinë dhe produktet TripleZero — hap pas hapi.",
+    "categoriesLabel": "kategori",
+    "articlesLabel": "artikuj",
+    "articlesInCategory": "artikuj në këtë kategori",
+    "searchPlaceholder": "Kërko në bazën e njohurive…",
+    "searchCategoryPlaceholder": "Kërko në këtë kategori…",
+    "emptyArticles": "Nuk u gjetën artikuj.",
+    "ctaTitle": "Nuk gjetët atë që kërkoni?",
+    "ctaBody": "Kontaktoni mbështetjen TripleZero iT Hosting — jemi të gatshëm të ndihmojmë.",
+    "ctaButton": "Kontakt",
+    "breadcrumb": "Baza e njohurive",
+    "contents": "Përmbajtja",
+    "relatedTitle": "Artikuj të lidhur",
+    "relatedSubtitle": "Më shumë nga e njëjta kategori.",
+    "heroCaption": "Udhëzues vizual për këtë temë — ndiqni hapat më poshtë.",
+    "midCaption": "Kontrolloni me kujdes çdo hap dhe verifikoni rezultatin para se të vazhdoni.",
+    "categoryPickCaption": "Zgjidhni një artikull më poshtë për të vazhduar leximin.",
+    "brandEyebrow": "TripleZero iT Hosting",
+    "illustrationFooter": "Baza e njohurive TripleZero iT Hosting",
+    "seoTitleSuffix": "Baza e njohurive",
+    "tipLabel": "Këshillë",
+    "warnLabel": "Kujdes"
   }
 }

@@ -21,7 +21,7 @@
     "register": "Užsiregistruoti",
     "dashboard": "Prietaisų skydelis",
     "logout": "Atsijungti",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Žinių bazė"
   },
   "language": {
     "title": "Kalba"
@@ -269,7 +269,7 @@
     "emptyClients": "Klientų dar nėra.",
     "emptyLeads": "Dar nėra potencialių klientų.",
     "emptyActivity": "Kol kas jokios veiklos.",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Žinių bazė"
   },
   "contact": {
     "title": "Susisiekite",
@@ -401,5 +401,30 @@
   "cases": {
     "title": "Atvejų analizės",
     "subtitle": "Rezultatai iš klientų, augančių naudojant AI."
+  },
+  "kennisbank": {
+    "title": "Žinių bazė",
+    "subtitle": "Aiškūs vadovai apie domenus, hostingą, el. paštą, valdymo skydelius, WordPress, saugumą ir TripleZero produktus — žingsnis po žingsnio.",
+    "categoriesLabel": "kategorijos",
+    "articlesLabel": "straipsniai",
+    "articlesInCategory": "straipsnių šioje kategorijoje",
+    "searchPlaceholder": "Ieškoti žinių bazėje…",
+    "searchCategoryPlaceholder": "Ieškoti šioje kategorijoje…",
+    "emptyArticles": "Straipsnių nerasta.",
+    "ctaTitle": "Neradote to, ko ieškojote?",
+    "ctaBody": "Susisiekite su TripleZero iT Hosting pagalba — mielai padėsime.",
+    "ctaButton": "Susisiekti",
+    "breadcrumb": "Žinių bazė",
+    "contents": "Turinys",
+    "relatedTitle": "Susiję straipsniai",
+    "relatedSubtitle": "Daugiau iš tos pačios kategorijos.",
+    "heroCaption": "Vaizdinis šios temos vadovas — atlikite toliau nurodytus veiksmus.",
+    "midCaption": "Atidžiai patikrinkite kiekvieną žingsnį ir rezultatą prieš tęsdami.",
+    "categoryPickCaption": "Pasirinkite straipsnį žemiau, kad skaitytumėte toliau.",
+    "brandEyebrow": "TripleZero iT Hosting",
+    "illustrationFooter": "TripleZero iT Hosting žinių bazė",
+    "seoTitleSuffix": "Žinių bazė",
+    "tipLabel": "Patarimas",
+    "warnLabel": "Dėmesio"
   }
 }

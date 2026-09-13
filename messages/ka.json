@@ -21,7 +21,7 @@
     "register": "დარეგისტრირდით",
     "dashboard": "დაფა",
     "logout": "გასვლა",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "ცოდნის ბაზა"
   },
   "language": {
     "title": "ენა"
@@ -269,7 +269,7 @@
     "emptyClients": "კლიენტები ჯერ არ არის.",
     "emptyLeads": "ჯერ არ არის წამყვანი.",
     "emptyActivity": "ჯერ არანაირი აქტივობა.",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "ცოდნის ბაზა"
   },
   "contact": {
     "title": "კონტაქტი",
@@ -401,5 +401,30 @@
   "cases": {
     "title": "შემთხვევის შესწავლა",
     "subtitle": "შედეგები კლიენტებისგან, რომლებიც იზრდება AI-ით."
+  },
+  "kennisbank": {
+    "title": "ცოდნის ბაზა",
+    "subtitle": "მკაფიო სახელმძღვანელოები დომენებზე, ჰოსტინგზე, ელფოსტაზე, მართვის პანელებზე, WordPress-ზე, უსაფრთხოებაზე და TripleZero პროდუქტებზე — ნაბიჯ-ნაბიჯ.",
+    "categoriesLabel": "კატეგორიები",
+    "articlesLabel": "სტატიები",
+    "articlesInCategory": "სტატია ამ კატეგორიაში",
+    "searchPlaceholder": "ძიება ცოდნის ბაზაში…",
+    "searchCategoryPlaceholder": "ძიება ამ კატეგორიაში…",
+    "emptyArticles": "სტატიები ვერ მოიძებნა.",
+    "ctaTitle": "ვერ იპოვეთ რასაც ეძებდით?",
+    "ctaBody": "დაუკავშირდით TripleZero iT Hosting მხარდაჭერას — სიამოვნებით დაგეხმარებით.",
+    "ctaButton": "კონტაქტი",
+    "breadcrumb": "ცოდნის ბაზა",
+    "contents": "შინაარსი",
+    "relatedTitle": "დაკავშირებული სტატიები",
+    "relatedSubtitle": "მეტი იგივე კატეგორიიდან.",
+    "heroCaption": "ვიზუალური გზამკვლევი ამ თემაზე — მიჰყევით ქვემოთ მოცემულ ნაბიჯებს.",
+    "midCaption": "ყურადღებით შეამოწმეთ ყოველი ნაბიჯი და შედეგი გაგრძელებამდე.",
+    "categoryPickCaption": "აირჩიეთ სტატია ქვემოთ კითხვის გასაგრძელებლად.",
+    "brandEyebrow": "TripleZero iT Hosting",
+    "illustrationFooter": "TripleZero iT Hosting ცოდნის ბაზა",
+    "seoTitleSuffix": "ცოდნის ბაზა",
+    "tipLabel": "რჩევა",
+    "warnLabel": "ყურადღება"
   }
 }

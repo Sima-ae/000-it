@@ -21,7 +21,7 @@
     "register": "Գրանցվեք",
     "dashboard": "Վահանակ",
     "logout": "Դուրս գալ",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Գիտելիքների բազա"
   },
   "language": {
     "title": "Լեզու"
@@ -269,7 +269,7 @@
     "emptyClients": "Հաճախորդներ դեռ չկան:",
     "emptyLeads": "Դեռևս ոչ մի կապ չկա:",
     "emptyActivity": "Դեռևս ակտիվություն չկա:",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Գիտելիքների բազա"
   },
   "contact": {
     "title": "Կապ",
@@ -401,5 +401,30 @@
   "cases": {
     "title": "Case Studies",
     "subtitle": "Արդյունքներ հաճախորդների կողմից, որոնք աճում են AI-ով:"
+  },
+  "kennisbank": {
+    "title": "Գիտելիքների բազա",
+    "subtitle": "Հստակ ուղեցույցներ դոմենների, հոսթինգի, էլ. փոստի, կառավարման վահանակների, WordPress-ի, անվտանգության և TripleZero արտադրանքների մասին — քայլ առ քայլ.",
+    "categoriesLabel": "կատեգորիաներ",
+    "articlesLabel": "հոդվածներ",
+    "articlesInCategory": "հոդված այս կատեգորիայում",
+    "searchPlaceholder": "Որոնել գիտելիքների բազայում…",
+    "searchCategoryPlaceholder": "Որոնել այս կատեգորիայում…",
+    "emptyArticles": "Հոդվածներ չեն գտնվել.",
+    "ctaTitle": "Չգտա՞ք այն, ինչ փնտրում էիք.",
+    "ctaBody": "Կապվեք TripleZero iT Hosting աջակցության հետ — ուրախ կլինենք օգնել.",
+    "ctaButton": "Կապ",
+    "breadcrumb": "Գիտելիքների բազա",
+    "contents": "Բովանդակություն",
+    "relatedTitle": "Առնչվող հոդվածներ",
+    "relatedSubtitle": "Ավելին նույն կատեգորիայից.",
+    "heroCaption": "Տեսողական ուղեցույց այս թեմայի համար — հետևեք ստորև նշված քայլերին.",
+    "midCaption": "Ուշադիր ստուգեք յուրաքանչյուր քայլը և արդյունքը՝ շարունակելուց առաջ.",
+    "categoryPickCaption": "Ընտրեք հոդված ստորև՝ կարդալը շարունակելու համար.",
+    "brandEyebrow": "TripleZero iT Hosting",
+    "illustrationFooter": "TripleZero iT Hosting գիտելիքների բազա",
+    "seoTitleSuffix": "Գիտելիքների բազա",
+    "tipLabel": "Խորհուրդ",
+    "warnLabel": "Ուշադրություն"
   }
 }

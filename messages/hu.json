@@ -21,7 +21,7 @@
     "register": "Regisztráljon",
     "dashboard": "Irányítópult",
     "logout": "Jelentkezzen ki",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Tudástár"
   },
   "language": {
     "title": "Nyelv"
@@ -269,7 +269,7 @@
     "emptyClients": "Még nincsenek ügyfelek.",
     "emptyLeads": "Még nincsenek vezetők.",
     "emptyActivity": "Még nincs tevékenység.",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Tudástár"
   },
   "contact": {
     "title": "Kapcsolatfelvétel",
@@ -401,5 +401,30 @@
   "cases": {
     "title": "Esettanulmányok",
     "subtitle": "Az AI használatával növekvő ügyfelek eredményei."
+  },
+  "kennisbank": {
+    "title": "Tudástár",
+    "subtitle": "Egyértelmű útmutatók domainekről, hostingról, e-mailről, vezérlőpanelekről, WordPressről, biztonságról és TripleZero termékekről — lépésről lépésre.",
+    "categoriesLabel": "kategóriák",
+    "articlesLabel": "cikkek",
+    "articlesInCategory": "cikk ebben a kategóriában",
+    "searchPlaceholder": "Keresés a tudástárban…",
+    "searchCategoryPlaceholder": "Keresés ebben a kategóriában…",
+    "emptyArticles": "Nincs találat.",
+    "ctaTitle": "Nem találta, amit keres?",
+    "ctaBody": "Lépjen kapcsolatba a TripleZero iT Hosting támogatással — szívesen segítünk.",
+    "ctaButton": "Kapcsolat",
+    "breadcrumb": "Tudástár",
+    "contents": "Tartalom",
+    "relatedTitle": "Kapcsolódó cikkek",
+    "relatedSubtitle": "Több ugyanabból a kategóriából.",
+    "heroCaption": "Vizuális útmutató a témához — kövesse az alábbi lépéseket.",
+    "midCaption": "Ellenőrizze minden lépést, és ellenőrizze az eredményt a folytatás előtt.",
+    "categoryPickCaption": "Válasszon egy cikket alább a folytatáshoz.",
+    "brandEyebrow": "TripleZero iT Hosting",
+    "illustrationFooter": "TripleZero iT Hosting tudástár",
+    "seoTitleSuffix": "Tudástár",
+    "tipLabel": "Tipp",
+    "warnLabel": "Figyelem"
   }
 }

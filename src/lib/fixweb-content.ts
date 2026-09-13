@@ -36,7 +36,7 @@ export function clearServiceContentCaches() {
   serviceCardCache.clear();
 }
 
-/** Strip legacy Fix-Web branding from imported content. */
+/** Strip legacy / competitor agency branding from imported content. */
 export function brandify(text: string) {
   return text
     .replace(/privacy@fix-web\.com/gi, "privacy@000-it.com")
@@ -47,7 +47,17 @@ export function brandify(text: string) {
     .replace(/Fix-Web\.site/gi, "TripleZero iT")
     .replace(/FIX-WEB\.SITE/gi, "TripleZero iT")
     .replace(/Fix[\s-]?Web/gi, "TripleZero iT")
-    .replace(/FIX[\s-]?WEB/gi, "TripleZero iT");
+    .replace(/FIX[\s-]?WEB/gi, "TripleZero iT")
+    // Competitor / agency names — never present as our brand
+    .replace(/\bJust[\s-]?Host\b/g, "TripleZero iT Hosting")
+    .replace(/\bJustHost(?:ing)?\b/gi, "TripleZero iT Hosting")
+    .replace(/\bMiss[\s-]?Hack\b/gi, "TripleZero iT")
+    .replace(/\bIndigo[\s-]?Webstudio\b/gi, "TripleZero iT")
+    .replace(/\bIndigo[\s-]?Web[\s-]?Studio\b/gi, "TripleZero iT")
+    .replace(/\bWebbouwers?\b/gi, "TripleZero iT")
+    .replace(/Hosted on Namecheap Cloud/gi, "Hosted on TripleZero iT Hosting")
+    .replace(/Namecheap Cloud/gi, "TripleZero iT Hosting")
+    .replace(/\bNamecheap\b/gi, "TripleZero iT Hosting");
 }
 
 export type ContentBlock =

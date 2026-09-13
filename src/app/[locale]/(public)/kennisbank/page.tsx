@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
+import { Reveal } from "@/components/marketing/Reveal";
+import { GlassCard } from "@/components/marketing/GlassCard";
 import { KennisbankCategoryGrid } from "@/components/kennisbank/KennisbankCategoryGrid";
 import { listArticles, listCategories } from "@/lib/kennisbank";
 import { buildStaticPageMetadata } from "@/lib/seo";
@@ -14,7 +16,14 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  return buildStaticPageMetadata(locale, "/kennisbank");
+  const t = await getTranslations({ locale, namespace: "kennisbank" });
+  const base = buildStaticPageMetadata(locale, "/kennisbank");
+  if (locale === "nl" || locale === "en") return base;
+  return {
+    ...base,
+    title: `${t("title")} — TripleZero iT Hosting`,
+    description: t("subtitle"),
+  };
 }
 
 export default async function KennisbankPage({
@@ -24,7 +33,7 @@ export default async function KennisbankPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const isNl = locale === "nl";
+  const t = await getTranslations({ locale, namespace: "kennisbank" });
   let categories: Awaited<ReturnType<typeof listCategories>> = [];
   let total = 0;
   try {
@@ -36,51 +45,57 @@ export default async function KennisbankPage({
   }
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-10 md:px-6 md:py-14">
-      <header className="mb-8 max-w-2xl">
-        <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
-          TripleZero iT Hosting
-        </p>
-        <h1 className="font-display mt-2 text-3xl font-semibold tracking-tight md:text-4xl">
-          {isNl ? "Kennisbank" : "Knowledge base"}
-        </h1>
-        <p className="mt-2 text-sm text-muted-foreground md:text-base">
-          {isNl
-            ? "Professionele handleidingen over domeinnamen, hosting, e-mail, control panels, WordPress en beveiliging."
-            : "Professional guides on domains, hosting, email, control panels, WordPress and security."}
-        </p>
-        <p className="mt-1.5 text-xs text-muted-foreground">
-          {categories.length} {isNl ? "categorieën" : "categories"} · {total}{" "}
-          {isNl ? "artikelen" : "articles"}
-        </p>
-      </header>
-
-      <KennisbankCategoryGrid
-        categories={categories}
-        locale={locale}
-        articlesLabel={isNl ? "artikelen" : "articles"}
-        searchPlaceholder={
-          isNl ? "Zoeken in de kennisbank…" : "Search the knowledge base…"
-        }
+    <div className="relative overflow-hidden">
+      <div
+        className="pointer-events-none absolute inset-x-0 top-0 h-112 bg-linear-to-b from-primary/12 via-accent/5 to-transparent"
+        aria-hidden
       />
+      <div className="relative mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
+        <Reveal>
+          <header className="mb-10 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
+              {t("brandEyebrow")}
+            </p>
+            <h1 className="font-display mt-3 text-4xl font-semibold tracking-tight md:text-5xl">
+              {t("title")}
+            </h1>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
+              {t("subtitle")}
+            </p>
+            <div className="mt-5 flex flex-wrap gap-2">
+              <span className="rounded-full border border-border/70 bg-background/70 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur">
+                {categories.length} {t("categoriesLabel")}
+              </span>
+              <span className="rounded-full border border-border/70 bg-background/70 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur">
+                {total} {t("articlesLabel")}
+              </span>
+            </div>
+          </header>
+        </Reveal>
 
-      <aside className="mt-10 flex flex-col gap-3 rounded-2xl border border-border/70 bg-muted/30 px-5 py-5 sm:flex-row sm:items-center sm:justify-between md:px-6">
-        <div>
-          <h2 className="font-display text-lg font-semibold tracking-tight">
-            {isNl ? "Niet gevonden wat je zoekt?" : "Cannot find what you need?"}
-          </h2>
-          <p className="mt-1 text-sm text-muted-foreground">
-            {isNl
-              ? "Neem contact op met TripleZero iT Hosting support — we helpen je graag verder."
-              : "Contact TripleZero iT Hosting support — we are happy to help."}
-          </p>
-        </div>
-        <Button asChild className="shrink-0 rounded-xl">
-          <SoftLink href={`/${locale}/contact`}>
-            {isNl ? "Contact" : "Contact"}
-          </SoftLink>
-        </Button>
-      </aside>
+        <KennisbankCategoryGrid
+          categories={categories}
+          locale={locale}
+          articlesLabel={t("articlesLabel")}
+          searchPlaceholder={t("searchPlaceholder")}
+        />
+
+        <aside className="mt-12">
+          <GlassCard className="flex flex-col gap-4 p-6 sm:flex-row sm:items-center sm:justify-between md:p-8">
+            <div>
+              <h2 className="font-display text-xl font-semibold tracking-tight">
+                {t("ctaTitle")}
+              </h2>
+              <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
+                {t("ctaBody")}
+              </p>
+            </div>
+            <Button asChild className="shrink-0 rounded-xl">
+              <SoftLink href={`/${locale}/contact`}>{t("ctaButton")}</SoftLink>
+            </Button>
+          </GlassCard>
+        </aside>
+      </div>
     </div>
   );
 }

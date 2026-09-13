@@ -21,7 +21,7 @@
     "register": "Εγγραφείτε",
     "dashboard": "Ταμπλό",
     "logout": "Αποσυνδεθείτε",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Βάση γνώσεων"
   },
   "language": {
     "title": "Γλώσσα"
@@ -269,7 +269,7 @@
     "emptyClients": "Δεν υπάρχουν ακόμη πελάτες.",
     "emptyLeads": "Δεν υπάρχουν ακόμη υποψήφιοι πελάτες.",
     "emptyActivity": "Καμία δραστηριότητα ακόμα.",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Βάση γνώσεων"
   },
   "contact": {
     "title": "Επικοινωνία",
@@ -401,5 +401,30 @@
   "cases": {
     "title": "Μελέτες περίπτωσης",
     "subtitle": "Αποτελέσματα από πελάτες που αναπτύσσονται με το AI."
+  },
+  "kennisbank": {
+    "title": "Βάση γνώσεων",
+    "subtitle": "Σαφείς οδηγοί για domains, hosting, email, πίνακες ελέγχου, WordPress, ασφάλεια και προϊόντα TripleZero — βήμα προς βήμα.",
+    "categoriesLabel": "κατηγορίες",
+    "articlesLabel": "άρθρα",
+    "articlesInCategory": "άρθρα σε αυτή την κατηγορία",
+    "searchPlaceholder": "Αναζήτηση στη βάση γνώσεων…",
+    "searchCategoryPlaceholder": "Αναζήτηση σε αυτή την κατηγορία…",
+    "emptyArticles": "Δεν βρέθηκαν άρθρα.",
+    "ctaTitle": "Δεν βρήκατε αυτό που χρειάζεστε;",
+    "ctaBody": "Επικοινωνήστε με την υποστήριξη TripleZero iT Hosting — χαίρονται να βοηθήσουν.",
+    "ctaButton": "Επικοινωνία",
+    "breadcrumb": "Βάση γνώσεων",
+    "contents": "Περιεχόμενα",
+    "relatedTitle": "Σχετικά άρθρα",
+    "relatedSubtitle": "Περισσότερα από την ίδια κατηγορία.",
+    "heroCaption": "Οπτικός οδηγός για αυτό το θέμα — ακολουθήστε τα βήματα παρακάτω.",
+    "midCaption": "Ελέγξτε κάθε βήμα και επαληθεύστε το αποτέλεσμα πριν συνεχίσετε.",
+    "categoryPickCaption": "Επιλέξτε ένα άρθρο παρακάτω για να συνεχίσετε την ανάγνωση.",
+    "brandEyebrow": "TripleZero iT Hosting",
+    "illustrationFooter": "Βάση γνώσεων TripleZero iT Hosting",
+    "seoTitleSuffix": "Βάση γνώσεων",
+    "tipLabel": "Συμβουλή",
+    "warnLabel": "Προσοχή"
   }
 }

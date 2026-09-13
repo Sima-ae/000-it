@@ -21,7 +21,7 @@
     "register": "Kayıt ol",
     "dashboard": "Kontrol Paneli",
     "logout": "Oturumu kapat",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Bilgi bankası"
   },
   "language": {
     "title": "Dil"
@@ -269,7 +269,7 @@
     "emptyClients": "Henüz müşteri yok.",
     "emptyLeads": "Henüz ipucu yok.",
     "emptyActivity": "Henüz etkinlik yok.",
-    "kennisbank": "Knowledge base"
+    "kennisbank": "Bilgi bankası"
   },
   "contact": {
     "title": "İletişim",
@@ -401,5 +401,30 @@
   "cases": {
     "title": "Vaka Çalışmaları",
     "subtitle": "AI ile büyüyen müşterilerden elde edilen sonuçlar."
+  },
+  "kennisbank": {
+    "title": "Bilgi bankası",
+    "subtitle": "Alan adları, hosting, e-posta, kontrol panelleri, WordPress, güvenlik ve TripleZero ürünleri için net kılavuzlar — adım adım.",
+    "categoriesLabel": "kategoriler",
+    "articlesLabel": "makaleler",
+    "articlesInCategory": "bu kategorideki makaleler",
+    "searchPlaceholder": "Bilgi bankasında ara…",
+    "searchCategoryPlaceholder": "Bu kategoride ara…",
+    "emptyArticles": "Makale bulunamadı.",
+    "ctaTitle": "Aradığınızı bulamadınız mı?",
+    "ctaBody": "TripleZero iT Hosting destek ile iletişime geçin — yardımcı olmaktan memnuniyet duyarız.",
+    "ctaButton": "İletişim",
+    "breadcrumb": "Bilgi bankası",
+    "contents": "İçindekiler",
+    "relatedTitle": "İlgili makaleler",
+    "relatedSubtitle": "Aynı kategoriden daha fazla.",
+    "heroCaption": "Bu konu için görsel rehber — aşağıdaki adımları izleyin.",
+    "midCaption": "Her adımı dikkatle kontrol edin ve devam etmeden önce sonucu doğrulayın.",
+    "categoryPickCaption": "Okumaya devam etmek için aşağıdan bir makale seçin.",
+    "brandEyebrow": "TripleZero iT Hosting",
+    "illustrationFooter": "TripleZero iT Hosting bilgi bankası",
+    "seoTitleSuffix": "Bilgi bankası",
+    "tipLabel": "İpucu",
+    "warnLabel": "Dikkat"
   }
 }

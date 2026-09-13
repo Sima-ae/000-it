@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { publicNewsTags, type NewsPost } from "@/lib/news";
 import type { SeoCity } from "@/content/seo/cities";
 import { getStaticPageSeo, type PageSeo } from "@/content/seo/pages";
+import { enabledLanguages } from "@/i18n/languages";
 
 export const SITE_SEO = {
   name: "TripleZero iT",
@@ -84,13 +85,16 @@ export function hreflangAlternates(pathWithoutLocale: string) {
   const path = pathWithoutLocale.startsWith("/")
     ? pathWithoutLocale
     : `/${pathWithoutLocale}`;
+  const suffix = path === "/" ? "" : path;
+  const languages: Record<string, string> = {
+    "x-default": absoluteUrl(localePath("nl", suffix)),
+  };
+  for (const lang of enabledLanguages()) {
+    languages[lang.code] = absoluteUrl(localePath(lang.code, suffix));
+  }
   return {
-    canonical: absoluteUrl(localePath("nl", path === "/" ? "" : path)),
-    languages: {
-      nl: absoluteUrl(localePath("nl", path === "/" ? "" : path)),
-      en: absoluteUrl(localePath("en", path === "/" ? "" : path)),
-      "x-default": absoluteUrl(localePath("nl", path === "/" ? "" : path)),
-    },
+    canonical: absoluteUrl(localePath("nl", suffix)),
+    languages,
   };
 }
 

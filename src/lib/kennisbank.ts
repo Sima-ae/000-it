@@ -5,6 +5,7 @@ import { slugifyKennisbank } from "@/lib/kennisbank-slug";
 export { slugifyKennisbank } from "@/lib/kennisbank-slug";
 
 export const KENNISBANK_FALLBACK_LOCALE = "nl";
+export const KENNISBANK_SECONDARY_FALLBACK_LOCALE = "en";
 
 export type KennisbankCategoryView = {
   id: string;
@@ -66,13 +67,20 @@ function pickTranslation<T extends { locale: string }>(
 ): T | undefined {
   return (
     translations.find((t) => t.locale === locale) ||
+    translations.find(
+      (t) => t.locale === KENNISBANK_SECONDARY_FALLBACK_LOCALE,
+    ) ||
     translations.find((t) => t.locale === KENNISBANK_FALLBACK_LOCALE) ||
     translations[0]
   );
 }
 
-function localeCompareNl(a: string, b: string) {
-  return a.localeCompare(b, "nl", { sensitivity: "base" });
+function localeCompareFor(locale: string, a: string, b: string) {
+  try {
+    return a.localeCompare(b, locale, { sensitivity: "base" });
+  } catch {
+    return a.localeCompare(b, "en", { sensitivity: "base" });
+  }
 }
 
 export async function listCategories(opts?: {
@@ -109,7 +117,7 @@ export async function listCategories(opts?: {
         updatedAt: row.updatedAt.toISOString(),
       };
     })
-    .sort((a, b) => localeCompareNl(a.name, b.name));
+    .sort((a, b) => localeCompareFor(locale, a.name, b.name));
 }
 
 export async function getCategoryBySlug(
@@ -252,7 +260,7 @@ function mapArticleListItem(
         name: cTr?.name || link.category.sortKey,
       };
     })
-    .sort((a, b) => localeCompareNl(a.name, b.name));
+    .sort((a, b) => localeCompareFor(locale, a.name, b.name));
 
   return {
     id: row.id,
@@ -310,7 +318,7 @@ export async function listArticles(opts?: {
 
   return rows
     .map((row) => mapArticleListItem(row, locale))
-    .sort((a, b) => localeCompareNl(a.title, b.title));
+    .sort((a, b) => localeCompareFor(locale, a.title, b.title));
 }
 
 export async function getArticleBySlug(
