@@ -342,6 +342,9 @@ model ContactLead {
 }
 
 /// Marketing news / nieuws articles (DB source of truth)
+/// Canonical copy is English (`title` / `excerpt` / `description`).
+/// Dutch lives in `*Nl` (site default) and is mirrored in `translations.nl`.
+/// Other locales: `translations` JSON map `{ [locale]: { title, excerpt, description } }`.
 model NewsPost {
   id             String   @id
   title          String
@@ -352,6 +355,8 @@ model NewsPost {
   coverImage     String?  @db.Text
   description    String   @db.LongText
   descriptionNl  String?  @db.LongText
+  /// Per-locale copy for all non-English languages (incl. nl).
+  translations   Json?
   author         String
   projectUrl     String?
   industry       String?

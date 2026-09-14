@@ -97,7 +97,13 @@ export function NewsAdminForm({
   return (
     <form onSubmit={onSubmit} className="space-y-5">
       <div className="space-y-3 rounded-2xl border border-border bg-muted/20 p-4">
-        <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">English</p>
+        <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+          English (write source)
+        </p>
+        <p className="text-xs text-muted-foreground">
+          Write in English. On save, Dutch and all other site languages are translated
+          automatically. Dutch is the public default.
+        </p>
         <div className="space-y-2">
           <Label>Title (EN)</Label>
           <Input value={form.title} onChange={(e) => setField("title", e.target.value)} required />
@@ -118,14 +124,16 @@ export function NewsAdminForm({
       </div>
 
       <div className="space-y-3 rounded-2xl border border-border bg-muted/20 p-4">
-        <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Nederlands</p>
+        <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+          Nederlands (default language — optional if EN is filled)
+        </p>
         <div className="space-y-2">
           <Label>Titel (NL)</Label>
-          <Input value={form.titleNl} onChange={(e) => setField("titleNl", e.target.value)} required />
+          <Input value={form.titleNl} onChange={(e) => setField("titleNl", e.target.value)} />
         </div>
         <div className="space-y-2">
           <Label>Samenvatting (NL)</Label>
-          <Input value={form.excerptNl} onChange={(e) => setField("excerptNl", e.target.value)} required />
+          <Input value={form.excerptNl} onChange={(e) => setField("excerptNl", e.target.value)} />
         </div>
         <div className="space-y-2">
           <Label>Volledige tekst (NL)</Label>
@@ -133,7 +141,6 @@ export function NewsAdminForm({
             className="min-h-35"
             value={form.descriptionNl}
             onChange={(e) => setField("descriptionNl", e.target.value)}
-            required
           />
         </div>
       </div>
@@ -195,7 +202,7 @@ export function NewsAdminForm({
 
       <div className="flex gap-2">
         <Button type="submit" disabled={saving}>
-          {saving ? "Saving…" : "Save post"}
+          {saving ? "Saving & translating…" : "Save post"}
         </Button>
         <Button type="button" variant="outline" onClick={onCancel}>
           Cancel

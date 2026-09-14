@@ -30,10 +30,10 @@ export function getAmsterdamClock(now = new Date()): AmsterdamClock {
   };
 }
 
-/** Every day (incl. weekends) at 00:00–00:59 Europe/Amsterdam */
+/** Daily window: 00:00–01:59 Europe/Amsterdam (covers CET/CEST GitHub cron drift). */
 export function isAutoNewsScheduleWindow(now = new Date()): boolean {
   const clock = getAmsterdamClock(now);
-  return clock.hour === 0;
+  return clock.hour === 0 || clock.hour === 1;
 }
 
 export function slugifyAutoNewsId(title: string, date: string, index: number) {

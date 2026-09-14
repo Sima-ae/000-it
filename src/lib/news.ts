@@ -1,6 +1,12 @@
 import { z } from "zod";
 import { prisma } from "@/lib/prisma";
 import { cleanSourceSummary } from "@/lib/auto-news/generate";
+import {
+  buildNewsTranslationsFromEnglish,
+  nlFromTranslations,
+  parseNewsTranslations,
+  type NewsTranslationsMap,
+} from "@/lib/news-i18n";
 
 export type NewsPost = {
   id: string;
@@ -12,6 +18,7 @@ export type NewsPost = {
   coverImage?: string | null;
   description: string;
   descriptionNl: string | null;
+  translations: NewsTranslationsMap;
   author: string;
   projectUrl?: string | null;
   industry?: string | null;
@@ -19,6 +26,12 @@ export type NewsPost = {
   createdById?: string | null;
   published?: boolean;
 };
+
+const localeCopySchema = z.object({
+  title: z.string(),
+  excerpt: z.string(),
+  description: z.string(),
+});
 
 const newsSchema = z.object({
   id: z.string().min(1).optional(),
@@ -30,11 +43,14 @@ const newsSchema = z.object({
   coverImage: z.string().nullable().optional(),
   description: z.string().min(1),
   descriptionNl: z.string().nullable().optional(),
+  translations: z.record(z.string(), localeCopySchema).optional(),
   author: z.string().min(1),
   projectUrl: z.string().nullable().optional(),
   industry: z.string().optional(),
   tags: z.array(z.string()).default([]),
   published: z.boolean().optional(),
+  /** When true (default on create), auto-fill missing locale translations from English. */
+  autoTranslate: z.boolean().optional(),
 });
 
 export const newsUpsertSchema = newsSchema;
@@ -54,6 +70,7 @@ function mapNews(row: {
   coverImage: string | null;
   description: string;
   descriptionNl: string | null;
+  translations?: unknown;
   author: string;
   projectUrl: string | null;
   industry: string | null;
@@ -61,6 +78,16 @@ function mapNews(row: {
   createdById: string | null;
   published: boolean;
 }): NewsPost {
+  const translations = parseNewsTranslations(row.translations);
+  // Mirror legacy *Nl into translations.nl when missing.
+  if (!translations.nl && (row.titleNl || row.excerptNl || row.descriptionNl)) {
+    translations.nl = {
+      title: row.titleNl || row.title,
+      excerpt: row.excerptNl || row.excerpt,
+      description: row.descriptionNl || row.description,
+    };
+  }
+
   return {
     id: row.id,
     title: row.title,
@@ -73,6 +100,7 @@ function mapNews(row: {
     descriptionNl: row.descriptionNl
       ? cleanSourceSummary(row.descriptionNl)
       : row.descriptionNl,
+    translations,
     author: row.author,
     projectUrl: row.projectUrl,
     industry: row.industry || "",
@@ -82,21 +110,42 @@ function mapNews(row: {
   };
 }
 
-/** Resolve EN canonical fields to the active locale for public pages. */
+/**
+ * Resolve canonical EN (+ translations) to the active locale.
+ * Dutch (`nl`) is the site default and uses *Nl / translations.nl.
+ */
 export function localizeNewsPost(post: NewsPost, locale: string): NewsPost {
-  if (locale !== "nl") {
+  const en = {
+    title: post.title,
+    excerpt: cleanSourceSummary(post.excerpt),
+    description: cleanSourceSummary(post.description),
+  };
+
+  if (locale === "en") {
+    return { ...post, ...en };
+  }
+
+  const fromMap = post.translations?.[locale];
+  if (fromMap?.title?.trim()) {
     return {
       ...post,
-      excerpt: cleanSourceSummary(post.excerpt),
-      description: cleanSourceSummary(post.description),
+      title: fromMap.title.trim(),
+      excerpt: cleanSourceSummary(fromMap.excerpt?.trim() || en.excerpt),
+      description: cleanSourceSummary(fromMap.description?.trim() || en.description),
     };
   }
-  return {
-    ...post,
-    title: post.titleNl?.trim() || post.title,
-    excerpt: cleanSourceSummary(post.excerptNl?.trim() || post.excerpt),
-    description: cleanSourceSummary(post.descriptionNl?.trim() || post.description),
-  };
+
+  if (locale === "nl") {
+    return {
+      ...post,
+      title: post.titleNl?.trim() || en.title,
+      excerpt: cleanSourceSummary(post.excerptNl?.trim() || en.excerpt),
+      description: cleanSourceSummary(post.descriptionNl?.trim() || en.description),
+    };
+  }
+
+  // Unknown / incomplete locale → English fallback
+  return { ...post, ...en };
 }
 
 /**
@@ -200,20 +249,99 @@ export async function listPublishedNewsIds() {
   });
 }
 
+async function ensureTranslationsForPost(input: {
+  title: string;
+  excerpt: string;
+  description: string;
+  titleNl?: string | null;
+  excerptNl?: string | null;
+  descriptionNl?: string | null;
+  translations?: NewsTranslationsMap;
+  autoTranslate?: boolean;
+}): Promise<{
+  translations: NewsTranslationsMap;
+  titleNl: string | null;
+  excerptNl: string | null;
+  descriptionNl: string | null;
+}> {
+  const en = {
+    title: input.title,
+    excerpt: input.excerpt,
+    description: input.description,
+  };
+
+  let translations: NewsTranslationsMap = {
+    ...(input.translations || {}),
+  };
+
+  if (input.titleNl || input.excerptNl || input.descriptionNl) {
+    translations.nl = {
+      title: input.titleNl?.trim() || translations.nl?.title || en.title,
+      excerpt: input.excerptNl?.trim() || translations.nl?.excerpt || en.excerpt,
+      description:
+        input.descriptionNl?.trim() || translations.nl?.description || en.description,
+    };
+  }
+
+  const shouldTranslate = input.autoTranslate !== false;
+  if (shouldTranslate) {
+    translations = await buildNewsTranslationsFromEnglish(en, {
+      existing: translations,
+      delayMs: 300,
+    });
+  }
+
+  const nl = nlFromTranslations(translations, en);
+  return {
+    translations,
+    titleNl: nl.title,
+    excerptNl: nl.excerpt,
+    descriptionNl: nl.description,
+  };
+}
+
 export async function createNewsPost(
   data: z.infer<typeof newsUpsertSchema> & { id: string; createdById?: string | null },
 ) {
+  const en = {
+    title: data.title,
+    excerpt: data.excerpt,
+    description: data.description,
+  };
+
+  // Always secure Dutch first (site default), then insert so publish is not blocked.
+  let translations = parseNewsTranslations(data.translations);
+  if (data.titleNl || data.excerptNl || data.descriptionNl) {
+    translations.nl = {
+      title: data.titleNl?.trim() || translations.nl?.title || en.title,
+      excerpt: data.excerptNl?.trim() || translations.nl?.excerpt || en.excerpt,
+      description:
+        data.descriptionNl?.trim() || translations.nl?.description || en.description,
+    };
+  }
+
+  if (!translations.nl?.title?.trim()) {
+    translations = await buildNewsTranslationsFromEnglish(en, {
+      existing: translations,
+      locales: ["nl"],
+      delayMs: 200,
+    });
+  }
+
+  const nl = nlFromTranslations(translations, en);
+
   const row = await prisma.newsPost.create({
     data: {
       id: data.id,
       title: data.title,
-      titleNl: data.titleNl || null,
+      titleNl: nl.title,
       excerpt: data.excerpt,
-      excerptNl: data.excerptNl || null,
+      excerptNl: nl.excerpt,
       date: data.date,
       coverImage: data.coverImage || null,
       description: data.description,
-      descriptionNl: data.descriptionNl || null,
+      descriptionNl: nl.description,
+      translations,
       author: data.author,
       projectUrl: data.projectUrl || null,
       industry: data.industry || null,
@@ -222,6 +350,34 @@ export async function createNewsPost(
       createdById: data.createdById || null,
     },
   });
+
+  // Expand to all other languages after insert (best-effort).
+  if (data.autoTranslate !== false) {
+    try {
+      const full = await buildNewsTranslationsFromEnglish(en, {
+        existing: translations,
+        delayMs: 300,
+      });
+      const nlFull = nlFromTranslations(full, en);
+      const updated = await prisma.newsPost.update({
+        where: { id: row.id },
+        data: {
+          translations: full,
+          titleNl: nlFull.title,
+          excerptNl: nlFull.excerpt,
+          descriptionNl: nlFull.description,
+        },
+      });
+      return mapNews(updated);
+    } catch (error) {
+      console.warn(
+        "[news] multi-locale fill after create failed",
+        row.id,
+        error instanceof Error ? error.message : error,
+      );
+    }
+  }
+
   return mapNews(row);
 }
 
@@ -229,17 +385,40 @@ export async function updateNewsPost(
   id: string,
   data: Partial<z.infer<typeof newsUpsertSchema>> & { createdById?: string | null },
 ) {
+  const existing = await prisma.newsPost.findUnique({ where: { id } });
+  if (!existing) throw new Error("News post not found");
+
+  const title = data.title ?? existing.title;
+  const excerpt = data.excerpt ?? existing.excerpt;
+  const description = data.description ?? existing.description;
+
+  const i18n = await ensureTranslationsForPost({
+    title,
+    excerpt,
+    description,
+    titleNl: data.titleNl !== undefined ? data.titleNl : existing.titleNl,
+    excerptNl: data.excerptNl !== undefined ? data.excerptNl : existing.excerptNl,
+    descriptionNl:
+      data.descriptionNl !== undefined ? data.descriptionNl : existing.descriptionNl,
+    translations:
+      (data.translations as NewsTranslationsMap | undefined) ||
+      parseNewsTranslations(existing.translations),
+    // Edits only re-translate when explicitly requested (avoids slow/429 saves).
+    autoTranslate: data.autoTranslate === true,
+  });
+
   const row = await prisma.newsPost.update({
     where: { id },
     data: {
       title: data.title,
-      titleNl: data.titleNl,
+      titleNl: i18n.titleNl,
       excerpt: data.excerpt,
-      excerptNl: data.excerptNl,
+      excerptNl: i18n.excerptNl,
       date: data.date,
       coverImage: data.coverImage,
       description: data.description,
-      descriptionNl: data.descriptionNl,
+      descriptionNl: i18n.descriptionNl,
+      translations: i18n.translations,
       author: data.author,
       projectUrl: data.projectUrl,
       industry: data.industry,

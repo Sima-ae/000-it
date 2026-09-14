@@ -3,7 +3,7 @@ import { runAutoNewsPublish } from "@/lib/auto-news/run";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
-export const maxDuration = 300;
+export const maxDuration = 800;
 
 async function handle(request: Request) {
   const url = new URL(request.url);

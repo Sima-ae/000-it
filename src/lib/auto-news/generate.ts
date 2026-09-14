@@ -1,4 +1,6 @@
 import type { NewsStory } from "@/lib/auto-news/fetch-stories";
+import { type NewsTranslationsMap } from "@/lib/news-i18n";
+import { translateText } from "@/lib/google-translate";
 
 export type GeneratedNewsDraft = {
   title: string;
@@ -7,6 +9,7 @@ export type GeneratedNewsDraft = {
   excerptNl: string;
   description: string;
   descriptionNl: string;
+  translations: NewsTranslationsMap;
   industry: string;
   tags: string[];
 };
@@ -146,55 +149,12 @@ function inferTags(story: NewsStory) {
   return Array.from(tags).slice(0, 6);
 }
 
-async function translateToNl(text: string): Promise<string> {
-  const input = cleanText(text);
-  if (!input) return "";
-
-  const chunks: string[] = [];
-  if (input.length <= 900) {
-    chunks.push(input);
-  } else {
-    const paras = input.split(/\n\n+/);
-    let buf = "";
-    for (const para of paras) {
-      if ((buf + "\n\n" + para).length > 900 && buf) {
-        chunks.push(buf);
-        buf = para;
-      } else {
-        buf = buf ? `${buf}\n\n${para}` : para;
-      }
-    }
-    if (buf) chunks.push(buf);
-  }
-
-  const translated: string[] = [];
-  for (const chunk of chunks) {
-    const url =
-      "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=nl&dt=t&q=" +
-      encodeURIComponent(chunk);
-    const res = await fetch(url, {
-      headers: { "User-Agent": "TripleZeroIT-AutoNews/1.0" },
-      signal: AbortSignal.timeout(30_000),
-    });
-    if (!res.ok) {
-      throw new Error(`Translate failed (${res.status})`);
-    }
-    const data = (await res.json()) as unknown;
-    if (!Array.isArray(data) || !Array.isArray(data[0])) {
-      throw new Error("Unexpected translate payload");
-    }
-    const piece = data[0]
-      .map((row: unknown) => (Array.isArray(row) ? String(row[0] || "") : ""))
-      .join("");
-    translated.push(piece.trim());
-  }
-
-  return cleanSourceSummary(translated.join("\n\n").trim());
-}
-
 function buildEnglishDraft(
   story: NewsStory,
-): Omit<GeneratedNewsDraft, "titleNl" | "excerptNl" | "descriptionNl"> {
+): Omit<
+  GeneratedNewsDraft,
+  "titleNl" | "excerptNl" | "descriptionNl" | "translations"
+> {
   const title = truncate(story.title, 140);
   const paragraphs = paragraphize(story.summary);
   const published = story.publishedAt
@@ -246,7 +206,11 @@ function buildEnglishDraft(
   };
 }
 
-/** Build EN+NL posts from real RSS facts (professional framing, no raw feed metadata). */
+/**
+ * Build EN source + Dutch (site default).
+ * Other locales are filled after publish (see run.ts) so daily posting
+ * is not blocked by translate rate limits.
+ */
 export async function generateBilingualNewsDraft(
   story: NewsStory,
 ): Promise<GeneratedNewsDraft> {
@@ -259,17 +223,33 @@ export async function generateBilingualNewsDraft(
   }
 
   const en = buildEnglishDraft(cleaned);
-  const [titleNl, excerptNl, descriptionNl] = await Promise.all([
-    translateToNl(en.title),
-    translateToNl(en.excerpt),
-    translateToNl(en.description),
-  ]);
+
+  let titleNl = "";
+  let excerptNl = "";
+  let descriptionNl = "";
+  try {
+    // Sequential to reduce Google Translate 429s
+    titleNl = await translateText(en.title, "nl", "en");
+    excerptNl = await translateText(en.excerpt, "nl", "en");
+    descriptionNl = await translateText(en.description, "nl", "en");
+  } catch (error) {
+    throw new Error(
+      `Dutch translate failed: ${error instanceof Error ? error.message : String(error)}`,
+    );
+  }
+
+  const nlSeed = {
+    title: titleNl || en.title,
+    excerpt: excerptNl || en.excerpt,
+    description: descriptionNl || en.description,
+  };
 
   const draft = sanitizeNewsDraft({
     ...en,
-    titleNl: titleNl || en.title,
-    excerptNl: excerptNl || en.excerpt,
-    descriptionNl: descriptionNl || en.description,
+    titleNl: nlSeed.title,
+    excerptNl: nlSeed.excerpt,
+    descriptionNl: nlSeed.description,
+    translations: { nl: nlSeed },
   });
 
   if (
@@ -286,6 +266,15 @@ export async function generateBilingualNewsDraft(
 
 /** Final pass before DB insert — never persist arXiv/feed metadata junk. */
 export function sanitizeNewsDraft(draft: GeneratedNewsDraft): GeneratedNewsDraft {
+  const translations: NewsTranslationsMap = {};
+  for (const [locale, copy] of Object.entries(draft.translations || {})) {
+    translations[locale] = {
+      title: cleanText(copy.title),
+      excerpt: cleanSourceSummary(copy.excerpt),
+      description: cleanSourceSummary(copy.description),
+    };
+  }
+
   return {
     ...draft,
     title: cleanText(draft.title),
@@ -294,6 +283,7 @@ export function sanitizeNewsDraft(draft: GeneratedNewsDraft): GeneratedNewsDraft
     excerptNl: cleanSourceSummary(draft.excerptNl),
     description: cleanSourceSummary(draft.description),
     descriptionNl: cleanSourceSummary(draft.descriptionNl),
+    translations,
     industry: cleanText(draft.industry),
     tags: draft.tags
       .map((t) => cleanText(t))

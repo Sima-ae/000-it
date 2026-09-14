@@ -54,7 +54,8 @@ export default function NieuwsAdminPage() {
         <div>
           <h1 className="text-3xl font-semibold">{t("news")}</h1>
           <p className="text-sm text-muted-foreground">
-            Manage public news posts shown on /nieuws
+            Manage public news posts shown on /nieuws · Dutch is the default language;
+            English is the write source and other locales are auto-translated.
           </p>
         </div>
         <div className="flex gap-2">
@@ -75,8 +76,13 @@ export default function NieuwsAdminPage() {
       </div>
 
       <Card>
-        <CardHeader>
+        <CardHeader className="flex flex-row flex-wrap items-center justify-between gap-2 space-y-0">
           <CardTitle>All news posts</CardTitle>
+          {!isLoading ? (
+            <Badge variant="secondary" className="text-sm font-medium">
+              {items.length} {items.length === 1 ? "post" : "posts"}
+            </Badge>
+          ) : null}
         </CardHeader>
         <CardContent className="space-y-3">
           {isLoading && <p className="text-muted-foreground">Loading…</p>}
@@ -95,12 +101,16 @@ export default function NieuwsAdminPage() {
               </div>
               <div className="min-w-0 flex-1">
                 <div className="flex flex-wrap items-center gap-2">
-                  <p className="font-medium">{item.title}</p>
+                  <p className="font-medium">{item.titleNl?.trim() || item.title}</p>
                   {item.industry ? <Badge variant="secondary">{item.industry}</Badge> : null}
+                  {!item.published ? <Badge variant="outline">Draft</Badge> : null}
                 </div>
-                <p className="line-clamp-2 text-sm text-muted-foreground">{item.excerpt}</p>
+                <p className="line-clamp-2 text-sm text-muted-foreground">
+                  {item.excerptNl?.trim() || item.excerpt}
+                </p>
                 <p className="text-xs text-muted-foreground">
                   {item.date} · {item.author}
+                  {item.titleNl ? " · NL" : " · EN only"}
                 </p>
               </div>
               <div className="flex gap-2">

@@ -66,6 +66,8 @@ export async function POST(request: Request) {
     industry: data.industry || "",
     tags: data.tags ?? [],
     createdById: authResult.session.user.id,
+    // English source → Dutch + all other locales
+    autoTranslate: true,
   });
 
   return NextResponse.json(item, { status: 201 });

@@ -13,6 +13,10 @@ import {
   isAutoNewsScheduleWindow,
   slugifyAutoNewsId,
 } from "@/lib/auto-news/schedule";
+import {
+  buildNewsTranslationsFromEnglish,
+  nlFromTranslations,
+} from "@/lib/news-i18n";
 
 export type AutoNewsRunOptions = {
   force?: boolean;
@@ -184,6 +188,8 @@ export async function runAutoNewsPublish(
         excerptNl: draft.excerptNl,
         description: draft.description,
         descriptionNl: draft.descriptionNl,
+        translations: draft.translations,
+        autoTranslate: false,
         date: clock.isoDate,
         coverImage,
         author: AUTO_NEWS_AUTHOR,
@@ -194,6 +200,40 @@ export async function runAutoNewsPublish(
         published: true,
         createdById: owner?.id || null,
       });
+
+      // Expand to all site languages after publish (best-effort; NL already stored).
+      try {
+        const translations = await buildNewsTranslationsFromEnglish(
+          {
+            title: created.title,
+            excerpt: created.excerpt,
+            description: created.description,
+          },
+          {
+            existing: draft.translations,
+            delayMs: 350,
+          },
+        );
+        const nl = nlFromTranslations(translations, {
+          title: created.title,
+          excerpt: created.excerpt,
+          description: created.description,
+        });
+        await prisma.newsPost.update({
+          where: { id: created.id },
+          data: {
+            translations,
+            titleNl: nl.title,
+            excerptNl: nl.excerpt,
+            descriptionNl: nl.description,
+          },
+        });
+      } catch (i18nError) {
+        const message =
+          i18nError instanceof Error ? i18nError.message : String(i18nError);
+        console.warn("[auto-news] multi-locale fill failed", created.id, message);
+        result.errors.push(`${created.id}: multi-locale fill: ${message}`);
+      }
 
       usedUrls.add(normalizeUrl(story.url));
       usedTitles.add(created.title.toLowerCase().trim());
