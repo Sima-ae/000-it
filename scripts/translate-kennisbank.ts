@@ -2,8 +2,9 @@
 /**
  * Backfill Kennisbank category + article translations for ALL enabled languages.
  *
- * Source: English when available, otherwise Dutch.
- * Display already uses pickTranslation(locale → en → nl).
+ * IMPORTANT: Run `npm run kennisbank:repair` first so English titles/bodies are
+ * real NL→EN translations (not the broken slug-glossary mix). This script then
+ * translates from clean EN into every other locale. Curated Dutch is never overwritten.
  *
  * Usage:
  *   npm run kennisbank:translate

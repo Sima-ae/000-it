@@ -1,18 +1,16 @@
 /**
  * Idempotent seed for TripleZero iT Hosting Kennisbank.
- * Seeds NL (primary) + EN article bodies, and category translations for major locales.
- * After seed, run `npm run kennisbank:translate` to fill ALL enabled site languages.
+ * Seeds curated Dutch (primary) from catalog.json.
+ * English + all other locales: run `npm run kennisbank:repair` then
+ * `npm run kennisbank:repair -- --all` (or kennisbank:translate after EN is clean).
+ *
  * Usage: npm run db:seed:kennisbank
  */
 import { PrismaClient } from "@prisma/client";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { buildArticleHtml, buildExcerpt } from "./kennisbank/build-body";
-import {
-  CATEGORY_I18N,
-  categoryCopy,
-  englishTitleFromSlug,
-} from "./kennisbank/i18n";
+import { CATEGORY_I18N, categoryCopy } from "./kennisbank/i18n";
 
 const prisma = new PrismaClient();
 
@@ -82,32 +80,25 @@ async function main() {
   let updated = 0;
 
   for (const article of catalog.articles) {
-    const titleEn = englishTitleFromSlug(article.slug, article.title);
     const bodyNl = buildArticleHtml(article.title, article.topic, "nl");
     const excerptNl = buildExcerpt(article.title, "nl");
-    const bodyEn = buildArticleHtml(titleEn, article.topic, "en");
-    const excerptEn = buildExcerpt(titleEn, "en");
     const categoryIds = article.categories
       .map((s) => categoryIdBySlug.get(s))
       .filter(Boolean) as string[];
 
     const existing = await prisma.kennisbankArticle.findUnique({
       where: { slug: article.slug },
+      include: { translations: { select: { locale: true } } },
     });
 
-    const translationPayload = (
-      locale: "nl" | "en",
-      title: string,
-      excerpt: string,
-      bodyHtml: string,
-    ) => ({
-      locale,
-      title,
-      excerpt,
-      bodyHtml,
-      seoTitle: `${title} | TripleZero iT Hosting`,
-      seoDescription: excerpt,
-    });
+    const nlPayload = {
+      locale: "nl" as const,
+      title: article.title,
+      excerpt: excerptNl,
+      bodyHtml: bodyNl,
+      seoTitle: `${article.title} | TripleZero iT Hosting`,
+      seoDescription: excerptNl,
+    };
 
     if (!existing) {
       await prisma.kennisbankArticle.create({
@@ -115,10 +106,7 @@ async function main() {
           slug: article.slug,
           published: true,
           translations: {
-            create: [
-              translationPayload("nl", article.title, excerptNl, bodyNl),
-              translationPayload("en", titleEn, excerptEn, bodyEn),
-            ],
+            create: [nlPayload],
           },
           categories: {
             create: categoryIds.map((categoryId) => ({ categoryId })),
@@ -137,31 +125,33 @@ async function main() {
           },
         },
       });
-      for (const [locale, title, excerpt, bodyHtml] of [
-        ["nl", article.title, excerptNl, bodyNl],
-        ["en", titleEn, excerptEn, bodyEn],
-      ] as const) {
-        const payload = translationPayload(locale, title, excerpt, bodyHtml);
-        await prisma.kennisbankArticleTranslation.upsert({
-          where: {
-            articleId_locale: { articleId: existing.id, locale },
-          },
-          create: { articleId: existing.id, ...payload },
-          update: {
-            title: payload.title,
-            excerpt: payload.excerpt,
-            bodyHtml: payload.bodyHtml,
-            seoTitle: payload.seoTitle,
-            seoDescription: payload.seoDescription,
-          },
-        });
+      await prisma.kennisbankArticleTranslation.upsert({
+        where: {
+          articleId_locale: { articleId: existing.id, locale: "nl" },
+        },
+        create: { articleId: existing.id, ...nlPayload },
+        update: {
+          title: nlPayload.title,
+          excerpt: nlPayload.excerpt,
+          bodyHtml: nlPayload.bodyHtml,
+          seoTitle: nlPayload.seoTitle,
+          seoDescription: nlPayload.seoDescription,
+        },
+      });
+
+      // Drop broken glossary EN so UI falls back to clean Dutch until repair runs.
+      const hasEn = existing.translations.some((t) => t.locale === "en");
+      if (hasEn) {
+        // Leave EN in place — repair script rewrites it. Seed must not
+        // re-introduce englishTitleFromSlug garbage.
       }
+
       updated += 1;
     }
   }
 
   console.log(
-    `[kennisbank] categories=${catalog.categories.length} articles created=${created} updated=${updated} total=${catalog.articles.length} locales=nl+en (+category i18n)`,
+    `[kennisbank] categories=${catalog.categories.length} articles created=${created} updated=${updated} total=${catalog.articles.length} (NL only — run kennisbank:repair for EN + other locales)`,
   );
 }
 

@@ -49,8 +49,9 @@ export async function fillCategoryTranslations(opts: {
   const skipped: string[] = [];
 
   // Always ensure Dutch exists when source is EN (site default).
+  // NL is never overwritten from EN (catalog is source of truth).
   const ordered = [
-    ...targets.filter((l) => l === "nl"),
+    ...targets.filter((l) => l === "nl" && sourceLocale !== "en"),
     ...targets.filter((l) => l !== "nl"),
   ];
 
@@ -126,7 +127,7 @@ export async function fillArticleTranslations(opts: {
   const skipped: string[] = [];
 
   const ordered = [
-    ...targets.filter((l) => l === "nl"),
+    ...targets.filter((l) => l === "nl" && sourceLocale !== "en"),
     ...targets.filter((l) => l !== "nl"),
   ];
 
@@ -194,10 +195,11 @@ export async function fillArticleTranslations(opts: {
       });
       written.push(locale);
     } catch (error) {
-      console.warn(
-        `[kennisbank-i18n] article ${opts.articleId} → ${locale}:`,
-        error instanceof Error ? error.message : error,
-      );
+      const msg = error instanceof Error ? error.message : String(error);
+      console.warn(`[kennisbank-i18n] article ${opts.articleId} → ${locale}:`, msg);
+      if (msg.includes("rate-limited")) {
+        await sleep(Math.max(delayMs * 8, 20_000));
+      }
     }
     await sleep(delayMs);
   }

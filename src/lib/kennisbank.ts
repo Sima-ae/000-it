@@ -70,12 +70,14 @@ function pickTranslation<T extends { locale: string }>(
   translations: T[],
   locale: string,
 ): T | undefined {
+  // Prefer curated Dutch over English when the requested locale is missing —
+  // EN was historically seeded via a broken slug glossary (mixed NL/EN titles).
   return (
     translations.find((t) => t.locale === locale) ||
+    translations.find((t) => t.locale === KENNISBANK_FALLBACK_LOCALE) ||
     translations.find(
       (t) => t.locale === KENNISBANK_SECONDARY_FALLBACK_LOCALE,
     ) ||
-    translations.find((t) => t.locale === KENNISBANK_FALLBACK_LOCALE) ||
     translations[0]
   );
 }
@@ -536,8 +538,10 @@ async function propagateArticleLocales(
     articleId,
     source: en,
     sourceLocale: "en",
+    // Never force-overwrite curated NL from admin EN propagation.
     force: true,
     delayMs: 280,
+    locales: undefined, // fillArticleTranslations skips nl when source is en
   });
 }
 

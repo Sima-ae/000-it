@@ -608,7 +608,7 @@ const SLUG_GLOSSARY: Record<string, string> = {
   it: "iT",
 };
 
-/** Build a readable English title from a Dutch slug. */
+/** @deprecated Broken word-by-word mixer — do not use for content. Kept only so repair-kennisbank can detect old glossary titles. */
 export function englishTitleFromSlug(slug: string, dutchTitle: string): string {
   const parts = slug.split("-").filter(Boolean);
   if (!parts.length) return dutchTitle;
