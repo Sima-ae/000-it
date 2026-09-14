@@ -1,0 +1,5 @@
+Chroń swoją witrynę WordPress dzięki usługom bezpieczeństwa TripleZero IT. Dzięki praktycznemu i dokładnie kontrolowanemu podejściu zabezpieczamy Twoją witrynę przed hackami, złośliwym oprogramowaniem i nadużyciami.
+
+Po utworzeniu kopii zapasowej przeprowadzamy audyt bezpieczeństwa, instalujemy Wordfence (Basic lub Premium), konfigurujemy zaporę ogniową i ochronę przed brutalną siłą oraz, jeśli to konieczne, konfigurujemy SSL. Dostęp użytkowników i poprawki są sprawdzane, więc luki mają mniej miejsca na rozwój.
+
+Po dostawie otrzymasz 7 dni bezpłatnego wsparcia — dzięki temu Twoje dane, reputacja i ciągłość będą lepiej chronione.

@@ -1,0 +1,1 @@
+Komut dosyası, web sitemizin düzgün ve etkileşimli bir şekilde çalışmasını sağlamak için kullanılan bir program kodu parçasıdır. Bu kod sunucumuzda veya cihazınızda yürütülür.

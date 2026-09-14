@@ -1,0 +1,1 @@
+Rezervirani kapacitet daje zahtjevnim web lokacijama i aplikacijama više prostora. Vaše okruženje se može lakše prilagoditi na vrhunce, novu funkcionalnost i promjenjive potrebe performansi bez trenutnog pomjeranja platforme.

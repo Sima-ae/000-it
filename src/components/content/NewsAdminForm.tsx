@@ -85,7 +85,7 @@ export function NewsAdminForm({
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Save failed");
-      toast.success("News post saved");
+      toast.success("Saved. All languages are being translated automatically.");
       onSaved();
     } catch (err) {
       toast.error(err instanceof Error ? err.message : "Save failed");

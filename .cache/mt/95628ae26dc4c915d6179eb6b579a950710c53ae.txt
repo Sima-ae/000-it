@@ -1,0 +1,1 @@
+VPS ilə daha çox güc və nəzarət: ayrılmış resurslar, SSD RAID 10 və böyüyən layihələr üçün genişləndirilə bilən CPU/RAM/band genişliyi.

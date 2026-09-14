@@ -10,6 +10,7 @@ import {
   buildNewsIndexMetadata,
   organizationJsonLd,
 } from "@/lib/seo";
+import { localizedHref } from "@/i18n/pathnames";
 
 export const dynamic = "force-dynamic";
 
@@ -36,8 +37,8 @@ export default async function NieuwsPage({
   const { locale } = await params;
   const { page: pageParam } = await searchParams;
   setRequestLocale(locale);
-  const t = await getTranslations("nav");
-  const isNl = locale === "nl";
+  const tNav = await getTranslations("nav");
+  const t = await getTranslations("news");
 
   const requestedPage = Math.max(1, Number.parseInt(pageParam || "1", 10) || 1);
   const { items, page, totalPages } = await listNewsPostsPage({
@@ -47,9 +48,10 @@ export default async function NieuwsPage({
   });
 
   const paginationLabels = {
-    previous: isNl ? "Vorige" : "Previous",
-    next: isNl ? "Volgende" : "Next",
-    pageOf: isNl ? "Pagina {page} van {total}" : "Page {page} of {total}",
+    previous: t("previous"),
+    next: t("next"),
+    // Keep {page}/{total} placeholders for NewsPagination string replace.
+    pageOf: t.raw("pageOf") as string,
   };
 
   return (
@@ -57,20 +59,16 @@ export default async function NieuwsPage({
       <JsonLd data={organizationJsonLd()} />
       <JsonLd
         data={breadcrumbJsonLd([
-          { name: "TripleZero iT", path: `/${locale}` },
-          { name: t("blog"), path: `/${locale}/nieuws` },
+          { name: "TripleZero iT", path: localizedHref(locale, "/") },
+          { name: tNav("blog"), path: localizedHref(locale, "/nieuws") },
         ])}
       />
 
       <Reveal>
         <h1 className="font-display text-4xl font-semibold tracking-tight md:text-5xl">
-          {t("blog")}
+          {tNav("blog")}
         </h1>
-        <p className="mt-3 max-w-2xl text-muted-foreground">
-          {isNl
-            ? "Blijf op de hoogte van alle ontwikkelingen."
-            : "Stay up to date with all developments."}
-        </p>
+        <p className="mt-3 max-w-2xl text-muted-foreground">{t("subtitle")}</p>
       </Reveal>
 
       <div className="mt-8">
@@ -86,11 +84,11 @@ export default async function NieuwsPage({
         locale={locale}
         items={items}
         labels={{
-          client: isNl ? "Auteur" : "Author",
-          date: isNl ? "Datum" : "Date",
-          industry: isNl ? "Categorie" : "Category",
-          visit: isNl ? "Bekijk link" : "Open link",
-          readMore: isNl ? "Lees artikel" : "Read article",
+          client: t("author"),
+          date: t("date"),
+          industry: t("category"),
+          visit: t("openLink"),
+          readMore: t("readArticle"),
         }}
       />
 

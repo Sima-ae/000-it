@@ -1,0 +1,4 @@
+– 4 CPU ydintä
+– 6 Gt RAM-muistia
+– 120 Gt SSD RAID 10
+– 3000 GB kaistanleveys

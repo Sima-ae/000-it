@@ -1,0 +1,1 @@
+Un script este o bucată de cod de program care este folosită pentru ca site-ul nostru să funcționeze corect și interactiv. Acest cod este executat pe serverul nostru sau pe dispozitivul dumneavoastră.

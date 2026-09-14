@@ -1,0 +1,6 @@
+Dobrý deň, TripleZero iT,
+
+Chcel by som sa dozvedieť viac o {service} pre náš {hint}.
+
+URL webovej stránky:
+Cieľ (napr. chatbot, produktový asistent, umelá inteligencia obsahu, vlastné):

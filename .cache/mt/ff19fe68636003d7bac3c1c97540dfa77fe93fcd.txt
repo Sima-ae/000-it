@@ -1,0 +1,1 @@
+DKIM, SPF, DMARC i druge specifične DNS postavke

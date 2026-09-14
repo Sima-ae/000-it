@@ -1,0 +1,1 @@
+Cookie je malý jednoduchý soubor, který je odeslán spolu se stránkami tohoto webu a uložen vaším prohlížečem na pevný disk vašeho počítače nebo jiného zařízení. Informace v něm uložené mohou být vráceny na naše servery nebo na servery příslušných třetích stran během následující návštěvy.

@@ -1,0 +1,1 @@
+Földrajzi keresőoptimalizálás térképekhez, helyi csomagokhoz és regionális kereséshez.

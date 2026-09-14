@@ -6,6 +6,7 @@ import { Sidebar } from "@/components/dashboard/Sidebar";
 import { DashboardSessionSync } from "@/components/dashboard/DashboardSessionSync";
 import { ContentTransition } from "@/components/shared/ContentTransition";
 import { CopyrightBar } from "@/components/shared/CopyrightBar";
+import { localizedHref } from "@/i18n/pathnames";
 
 export default async function DashboardLayout({
   children,
@@ -17,7 +18,7 @@ export default async function DashboardLayout({
   const { locale } = await params;
   const session = await auth();
   if (!session?.user?.id) {
-    redirect(`/${locale}/login`);
+    redirect(localizedHref(locale, "/login"));
   }
 
   // Always read identity from DB — JWT cookies can keep a stale name/role.
@@ -26,7 +27,7 @@ export default async function DashboardLayout({
     select: { name: true, email: true, role: true },
   });
   if (!dbUser) {
-    redirect(`/${locale}/login`);
+    redirect(localizedHref(locale, "/login"));
   }
 
   const t = await getTranslations("footer");

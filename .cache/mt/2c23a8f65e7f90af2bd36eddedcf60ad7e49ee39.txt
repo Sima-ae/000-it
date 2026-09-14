@@ -1,0 +1,1 @@
+Zarezerwuj spożycie. Zablokujemy formaty, ilość i kierunek stylu, a następnie dostarczymy pliki gotowe do druku.

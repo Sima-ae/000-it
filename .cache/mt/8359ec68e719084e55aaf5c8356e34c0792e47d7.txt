@@ -1,0 +1,1 @@
+Vrijeme učitavanja ispod 2 sekunde i optimizirani osnovni web vitalni znakovi.

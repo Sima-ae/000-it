@@ -1,0 +1,1 @@
+Gestión de datos de catálogos y productos.

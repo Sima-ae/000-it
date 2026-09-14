@@ -1,0 +1,1 @@
+Ladezeiten unter 2 Sekunden und Core Web Vitals optimiert.

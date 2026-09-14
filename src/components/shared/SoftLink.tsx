@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { forwardRef, type ComponentProps, type MouseEvent, type PointerEvent } from "react";
 import { useNavigationProgress } from "@/hooks/useNavigationProgress";
+import { resolveHashElementId } from "@/i18n/pathnames";
 
 type SoftLinkProps = ComponentProps<typeof Link>;
 
@@ -103,7 +104,9 @@ export const SoftLink = forwardRef<HTMLAnchorElement, SoftLinkProps>(
       if (currentHrefFromWindow(pathname) === targetHref) {
         if (hashPart) {
           event.preventDefault();
-          const el = document.getElementById(hashPart);
+          const el =
+            document.getElementById(hashPart) ||
+            document.getElementById(resolveHashElementId(hashPart));
           if (el) {
             el.scrollIntoView({ behavior: "smooth", block: "start" });
             window.history.pushState(null, "", `#${hashPart}`);

@@ -1,0 +1,1 @@
+Começamos com um arquivo de amostra e regras de entrada claras para campos, dados de origem e exceções. Durante a entrega, verificamos a integridade e as anomalias para que você mantenha a visibilidade do progresso e da qualidade.

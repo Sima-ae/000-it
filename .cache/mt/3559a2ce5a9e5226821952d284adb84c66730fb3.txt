@@ -1,0 +1,1 @@
+Suunnitellut tekoälytyönkulut: triggerit, vaiheet, hyväksynnät ja integroinnit päästä päähän.

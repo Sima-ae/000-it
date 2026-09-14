@@ -5,6 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
 import { useCartStore } from "@/lib/shop/cart-store";
+import { localizedHref } from "@/i18n/pathnames";
 
 export function SuccessClient({
   orderNumber,
@@ -37,10 +38,10 @@ export function SuccessClient({
       ) : null}
       <div className="mt-10 flex flex-wrap justify-center gap-3">
         <Button asChild className="rounded-2xl">
-          <SoftLink href={`/${locale}/shop`}>{t("continueShopping")}</SoftLink>
+          <SoftLink href={localizedHref(locale, "/shop")}>{t("continueShopping")}</SoftLink>
         </Button>
         <Button asChild variant="outline" className="rounded-2xl">
-          <SoftLink href={`/${locale}`}>{t("backHome")}</SoftLink>
+          <SoftLink href={localizedHref(locale, "/")}>{t("backHome")}</SoftLink>
         </Button>
       </div>
     </div>

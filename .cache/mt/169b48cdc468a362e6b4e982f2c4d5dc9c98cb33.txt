@@ -1,0 +1,1 @@
+Veb mağazanın idarə edilməsi üçün WooCommerce istifadə edirik. Daha ətraflı oxuyun

@@ -1,0 +1,1 @@
+HTTP Strict Transport Security a související bezpečnostní hlavičky a zásady prohlížeče

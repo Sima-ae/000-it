@@ -3,6 +3,8 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { getToken } from "next-auth/jwt";
 import { routing } from "@/i18n/routing";
+import { localizePath, toInternalPath } from "@/i18n/pathnames";
+import { hydrateEntitySlugs } from "@/lib/entity-slugs";
 import { canAccessPath, dashboardNav } from "@/lib/roles";
 
 const intlMiddleware = createMiddleware(routing);
@@ -76,14 +78,39 @@ export default async function middleware(request: NextRequest) {
   const locale = localeMatch?.[1] ?? routing.defaultLocale;
   const pathWithoutLocale = pathname.replace(localePathRe, "") || "/";
 
+  // Load per-locale entity slug maps so canonicalize + auth use correct keys.
+  try {
+    await hydrateEntitySlugs(locale);
+  } catch {
+    /* ignore — maps stay empty; pages still resolve when possible */
+  }
+
+  // Canonicalize segments + entity slugs to the preferred public URL.
+  // e.g. /en/diensten/aeo-optimization → /en/services/aeo-optimierung
+  if (pathWithoutLocale !== "/") {
+    const internal = toInternalPath(locale, pathWithoutLocale);
+    const expected = localizePath(locale, internal);
+    const currentBare =
+      pathWithoutLocale.length > 1 && pathWithoutLocale.endsWith("/")
+        ? pathWithoutLocale.slice(0, -1)
+        : pathWithoutLocale;
+    if (expected !== currentBare && expected !== "/") {
+      const url = request.nextUrl.clone();
+      url.pathname = `/${locale}${expected}`;
+      return NextResponse.redirect(url, 301);
+    }
+  }
+
+  const internalPath = toInternalPath(locale, pathWithoutLocale);
+
   const isProtected = protectedPrefixes.some(
     (prefix) =>
-      pathWithoutLocale === prefix || pathWithoutLocale.startsWith(`${prefix}/`),
+      internalPath === prefix || internalPath.startsWith(`${prefix}/`),
   );
   const isAuthPage =
-    pathWithoutLocale.startsWith("/login") ||
-    pathWithoutLocale.startsWith("/register") ||
-    pathWithoutLocale.startsWith("/forgot-password");
+    internalPath.startsWith("/login") ||
+    internalPath.startsWith("/register") ||
+    internalPath.startsWith("/forgot-password");
 
   if (isProtected || isAuthPage) {
     // Production uses HTTPS cookies named `__Secure-authjs.session-token`.
@@ -107,7 +134,7 @@ export default async function middleware(request: NextRequest) {
 
     if (isProtected && token) {
       const role = typeof token.role === "string" ? token.role : "CLIENT";
-      if (!canAccessPath(pathWithoutLocale, role)) {
+      if (!canAccessPath(internalPath, role)) {
         return NextResponse.redirect(new URL(`/${locale}/dashboard`, request.url));
       }
     }
@@ -121,5 +148,7 @@ export default async function middleware(request: NextRequest) {
 }
 
 export const config = {
+  // Prisma entity-slug hydrate needs Node (not Edge).
+  runtime: "nodejs",
   matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
 };

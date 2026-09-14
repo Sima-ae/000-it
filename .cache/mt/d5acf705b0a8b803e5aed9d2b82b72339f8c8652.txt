@@ -1,0 +1,1 @@
+Dashboard kunne ikke indlæses. Tjek din databaseforbindelse, og prøv igen.

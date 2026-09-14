@@ -1,0 +1,1 @@
+Usamos WooCommerce para gerenciamento de loja virtual. Leia mais

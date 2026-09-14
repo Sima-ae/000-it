@@ -1,0 +1,1 @@
+Gyors, SEO-kész React alkalmazások App Routerrel és modern DX-szel.

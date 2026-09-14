@@ -1,0 +1,1 @@
+Nous commençons avec un exemple de fichier et des règles de saisie claires pour les champs, les données sources et les exceptions. Lors de la livraison, nous vérifions l'exhaustivité et les anomalies afin que vous conserviez une visibilité sur l'avancement et la qualité.

@@ -1,0 +1,1 @@
+En webbfyr (eller en pixeltagg) är en liten, osynlig bit text eller bild på en webbplats som används för att övervaka trafiken på en webbplats. För att göra detta lagras olika data om dig med hjälp av webbfyrar.

@@ -1,0 +1,1 @@
+Vremena učitavanja ispod 2 sekunde i optimizovani osnovni veb vitalni znaci.

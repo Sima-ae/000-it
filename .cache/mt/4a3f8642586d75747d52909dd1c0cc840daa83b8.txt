@@ -1,0 +1,1 @@
+IA para sites personalizados — chat, leads, busca de conhecimento e automação em PHP, HTML/JS e Next.js.

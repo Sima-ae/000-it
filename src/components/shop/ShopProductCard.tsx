@@ -10,6 +10,7 @@ import { useCartStore } from "@/lib/shop/cart-store";
 import { centsToEuros, formatShopEuro } from "@/lib/shop/vat";
 import type { ShopProduct } from "@/lib/shop/catalog";
 import { localizeShopProduct } from "@/lib/shop/catalog";
+import { localizedHref } from "@/i18n/pathnames";
 
 export function ShopProductCard({ product }: { product: ShopProduct }) {
   const locale = useLocale();
@@ -21,12 +22,12 @@ export function ShopProductCard({ product }: { product: ShopProduct }) {
 
   function handleAdd() {
     addItem(product.id, 1);
-    router.push(`/${locale}/shop/cart`);
+    router.push(localizedHref(locale, "/shop/cart"));
   }
 
   return (
     <GlassCard className="flex h-full flex-col overflow-hidden p-0">
-      <SoftLink href={`/${locale}/shop/${product.slug}`} className="block">
+      <SoftLink href={localizedHref(locale, `/shop/${product.slug}`)} className="block">
         <div className="relative h-40 w-full bg-muted/40">
           {product.image ? (
             <Image
@@ -48,7 +49,7 @@ export function ShopProductCard({ product }: { product: ShopProduct }) {
         <p className="text-xs uppercase tracking-wide text-muted-foreground">
           {product.type === "plan" ? t("typePlan") : t("typeService")}
         </p>
-        <SoftLink href={`/${locale}/shop/${product.slug}`}>
+        <SoftLink href={localizedHref(locale, `/shop/${product.slug}`)}>
           <h2 className="font-display mt-1 text-lg font-semibold tracking-tight">
             {localized.localizedName}
           </h2>

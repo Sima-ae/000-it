@@ -1,0 +1,1 @@
+Et web-beacon (eller en piksel-tag) er et lite, usynlig stykke tekst eller bilde på et nettsted som brukes til å overvåke trafikk på et nettsted. For å gjøre dette lagres ulike data om deg ved hjelp av web beacons.

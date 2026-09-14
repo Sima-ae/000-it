@@ -1,0 +1,5 @@
+El soporte básico es para empresas con un sitio web de WordPress que desean una base técnica confiable sin tener que resolver todos los problemas por sí mismas.
+
+Monitoreamos su sitio las 24 horas del día, creamos copias de seguridad diarias y mantenemos WordPress y sus complementos actualizados. También reparamos errores, eliminamos malware y aplicamos medidas de seguridad prácticas para mantener su sitio web disponible y protegido.
+
+TripleZero iT maneja los incidentes con cuidado, verifica el sitio después de la recuperación y ayuda a reducir riesgos futuros. Podrás centrarte en tu negocio mientras nosotros velamos por su continuidad técnica.

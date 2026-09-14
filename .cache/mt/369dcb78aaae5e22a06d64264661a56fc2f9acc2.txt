@@ -1,0 +1,5 @@
+VPS Hosting Basic sopii kehittäjille, pienille sovelluksille ja verkkosivustoille, jotka tarvitsevat enemmän hallintaa ja ennakoitavissa olevia resursseja kuin jaettu hosting tarjoaa.
+
+2 CPU-ydintä, 2 Gt RAM-muistia, 40 Gt SSD RAID 10 -tallennustilaa ja 1000 Gt kaistanleveyttä tarjoavat vankan virtuaalipalvelimen kevyille ja kohtalaisille työkuormituksille.
+
+TripleZero iT antaa sinulle luotettavan infrastruktuuriperustan, joten voit keskittyä sovellukseesi, verkkosivustoosi tai kehitysympäristöösi. Kasvata, kun kysyntä kasvaa.

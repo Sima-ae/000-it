@@ -1,4 +1,8 @@
-import { translateText, newsTargetLocales } from "@/lib/google-translate";
+import {
+  isAcceptableTranslation,
+  newsTargetLocales,
+  translateText,
+} from "@/lib/google-translate";
 
 export type NewsLocaleCopy = {
   title: string;
@@ -31,56 +35,104 @@ export function parseNewsTranslations(raw: unknown): NewsTranslationsMap {
   return out;
 }
 
+export function newsCopyLooksComplete(
+  copy: NewsLocaleCopy | undefined,
+  en: NewsLocaleCopy,
+  locale: string,
+): boolean {
+  if (!copy?.title?.trim() || !copy.excerpt?.trim() || !copy.description?.trim()) {
+    return false;
+  }
+  return (
+    isAcceptableTranslation(en.title, copy.title, "en", locale) &&
+    isAcceptableTranslation(en.excerpt, copy.excerpt, "en", locale) &&
+    isAcceptableTranslation(en.description, copy.description, "en", locale)
+  );
+}
+
+export function missingNewsLocales(
+  en: NewsLocaleCopy,
+  translations: NewsTranslationsMap,
+  locales = newsTargetLocales(),
+): string[] {
+  return locales.filter((locale) => !newsCopyLooksComplete(translations[locale], en, locale));
+}
+
+async function translateNewsCopy(
+  en: NewsLocaleCopy,
+  locale: string,
+): Promise<NewsLocaleCopy> {
+  const title = await translateText(en.title, locale, "en");
+  await sleep(120);
+  const excerpt = await translateText(en.excerpt, locale, "en");
+  await sleep(120);
+  const description = await translateText(en.description, locale, "en");
+  const copy = { title, excerpt, description };
+  if (!newsCopyLooksComplete(copy, en, locale)) {
+    throw new Error(`quality en→${locale}`);
+  }
+  return copy;
+}
+
 /**
  * Translate EN source into every non-English site locale.
- * Always includes Dutch (`nl`). Rate-limits between locales to avoid 429s.
+ * Always includes Dutch (`nl`). Skips locales that already look translated.
+ * Does not store English stubs — failed locales stay missing so a later run can resume.
  */
 export async function buildNewsTranslationsFromEnglish(
   en: NewsLocaleCopy,
-  opts?: { locales?: string[]; existing?: NewsTranslationsMap; delayMs?: number },
+  opts?: {
+    locales?: string[];
+    existing?: NewsTranslationsMap;
+    delayMs?: number;
+    force?: boolean;
+    deadlineMs?: number;
+    preserveLocales?: string[];
+  },
 ): Promise<NewsTranslationsMap> {
   const locales = opts?.locales ?? newsTargetLocales();
   const existing = opts?.existing ?? {};
   const delayMs = opts?.delayMs ?? 280;
+  const preserve = new Set(opts?.preserveLocales || []);
+  const deadline = opts?.deadlineMs ? Date.now() + opts.deadlineMs : Number.POSITIVE_INFINITY;
   const out: NewsTranslationsMap = { ...existing };
 
-  // Prefer Dutch first — site default language.
   const ordered = [
     ...locales.filter((l) => l === "nl"),
     ...locales.filter((l) => l !== "nl"),
   ];
 
   for (const locale of ordered) {
-    const prev = out[locale];
-    if (
-      prev?.title?.trim() &&
-      prev.excerpt?.trim() &&
-      prev.description?.trim() &&
-      prev.title !== en.title
-    ) {
+    if (Date.now() > deadline) break;
+    if (preserve.has(locale) && newsCopyLooksComplete(out[locale], en, locale)) {
       continue;
     }
+    if (!opts?.force && newsCopyLooksComplete(out[locale], en, locale)) continue;
 
-    try {
-      // Sequential field translates — fewer 429s than Promise.all
-      const title = (await translateText(en.title, locale, "en")) || en.title;
-      await sleep(120);
-      const excerpt = (await translateText(en.excerpt, locale, "en")) || en.excerpt;
-      await sleep(120);
-      const description =
-        (await translateText(en.description, locale, "en")) || en.description;
-      out[locale] = { title, excerpt, description };
-      await sleep(delayMs);
-    } catch (error) {
-      const msg = error instanceof Error ? error.message : String(error);
-      console.warn(`[news-i18n] translate ${locale} failed:`, msg);
-      // Do not store English stubs — keeps the locale "missing" so reruns resume.
-      if (msg.includes("rate-limited")) {
-        await sleep(Math.max(delayMs * 8, 20_000));
-      } else {
-        await sleep(delayMs * 2);
+    let lastErr: unknown;
+    let written = false;
+    for (let attempt = 0; attempt < 4; attempt += 1) {
+      try {
+        out[locale] = await translateNewsCopy(en, locale);
+        written = true;
+        break;
+      } catch (error) {
+        lastErr = error;
+        const msg = error instanceof Error ? error.message : String(error);
+        const wait =
+          msg.includes("rate") || msg.includes("429")
+            ? Math.max(delayMs * 8, 16_000)
+            : 700 * 2 ** attempt;
+        await sleep(wait);
       }
     }
+
+    if (!written) {
+      const msg = lastErr instanceof Error ? lastErr.message : String(lastErr);
+      console.warn(`[news-i18n] translate ${locale} failed:`, msg);
+      delete out[locale];
+    }
+    await sleep(delayMs);
   }
 
   return out;

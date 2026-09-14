@@ -5,6 +5,7 @@ import { Reveal } from "@/components/marketing/Reveal";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
 import { buildStaticPageMetadata } from "@/lib/seo";
+import { localizedHref } from "@/i18n/pathnames";
 
 export async function generateMetadata({
   params,
@@ -17,68 +18,47 @@ export async function generateMetadata({
 
 const pillars = [
   {
-    title: { nl: "Bugs en errors verhelpen", en: "Fix Bugs and Errors" },
-    desc: {
-      nl: "Snelle diagnose en oplossing van fouten zodat uw site weer soepel draait.",
-      en: "Quick diagnosis and fixes so your site runs smoothly again.",
-    },
+    titleKey: "pillarBugsTitle",
+    descKey: "pillarBugsDesc",
     href: "/diensten/wordpress-error-fix",
   },
   {
-    title: { nl: "Malware verwijderen", en: "Malware Removal" },
-    desc: {
-      nl: "Diepe analyse en verwijderen van malware zodat uw site weer schoon en veilig is.",
-      en: "Deep analysis and malware removal so your site is clean again.",
-    },
+    titleKey: "pillarMalwareTitle",
+    descKey: "pillarMalwareDesc",
     href: "/diensten/wordpress-malware-removal",
   },
   {
-    title: { nl: "Performance en snelheid", en: "Performance & Speed" },
-    desc: {
-      nl: "Laadtijden onder 2 seconden en Core Web Vitals op orde.",
-      en: "Load times under 2 seconds and Core Web Vitals optimized.",
-    },
+    titleKey: "pillarSpeedTitle",
+    descKey: "pillarSpeedDesc",
     href: "/diensten/wordpress-speed-optimization",
   },
   {
-    title: { nl: "Backups en migratie", en: "Backups and Migration" },
-    desc: {
-      nl: "Veilige backups en hosting-migraties zonder downtime.",
-      en: "Safe backups and hosting migrations without downtime.",
-    },
+    titleKey: "pillarBackupTitle",
+    descKey: "pillarBackupDesc",
     href: "/diensten/wordpress-backup-hosting-migration",
   },
   {
-    title: { nl: "Design en customize", en: "Design & Customize" },
-    desc: {
-      nl: "Unieke, responsive designs die aansluiten op uw merk.",
-      en: "Unique, responsive design tailored to your brand.",
-    },
+    titleKey: "pillarDesignTitle",
+    descKey: "pillarDesignDesc",
     href: "/diensten/webdesign-support",
   },
   {
-    title: { nl: "Digital design", en: "Digital Design" },
-    desc: {
-      nl: "Logo’s, visitekaartjes, flyers, posters en print in Adobe.",
-      en: "Logos, business cards, flyers, posters and print in Adobe.",
-    },
+    titleKey: "pillarDigitalTitle",
+    descKey: "pillarDigitalDesc",
     href: "/digital-design",
   },
   {
-    title: { nl: "Web hosting", en: "Web Hosting" },
-    desc: {
-      nl: "Snelle, betrouwbare hosting vanaf € 21,96 per jaar.",
-      en: "Fast, reliable hosting starting from € 21.96 per year.",
-    },
+    titleKey: "pillarHostingTitle",
+    descKey: "pillarHostingDesc",
     href: "/diensten/web-hosting",
   },
 ] as const;
 
 const stats = [
-  { value: "1-4 uur", label: { nl: "gemiddelde response", en: "average response" } },
-  { value: "7 dagen", label: { nl: "bereikbaar", en: "available" } },
-  { value: "24 uur", label: { nl: "monitoring en support", en: "monitoring & support" } },
-] as const;
+  { value: "1-4 uur", labelKey: "statResponse" as const },
+  { value: "7 dagen", labelKey: "statAvailable" as const },
+  { value: "24 uur", labelKey: "statMonitoring" as const },
+];
 
 export default async function AboutPage({
   params,
@@ -87,31 +67,28 @@ export default async function AboutPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const tNav = await getTranslations("nav");
   const t = await getTranslations("about");
-  const isNl = locale === "nl";
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 md:px-6 md:py-14">
-      {/* Hero */}
       <section className="grid items-end gap-8 lg:grid-cols-[1.2fr_0.8fr]">
         <Reveal>
           <h1 className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
             {t("title")}
           </h1>
           <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground md:text-base">
-            {isNl
-              ? "AI-gedreven groei, WordPress support, hosting, SEO en marketing — één systeem voor Europese bedrijven."
-              : "AI-driven growth, WordPress support, hosting, SEO and marketing — one system for European businesses."}
+            {t("heroSubtitle")}
           </p>
           <div className="mt-5 flex flex-wrap gap-2.5">
             <Button asChild size="sm" className="rounded-xl">
-              <SoftLink href={`/${locale}/diensten`}>
-                {isNl ? "Bekijk diensten" : "View services"}
+              <SoftLink href={localizedHref(locale, "/diensten")}>
+                {t("viewServices")}
               </SoftLink>
             </Button>
             <Button asChild size="sm" variant="outline" className="rounded-xl">
-              <SoftLink href={`/${locale}/afspraak`}>
-                {isNl ? "Boek een afspraak" : "Book an appointment"}
+              <SoftLink href={localizedHref(locale, "/afspraak")}>
+                {tNav("book")}
               </SoftLink>
             </Button>
           </div>
@@ -128,7 +105,7 @@ export default async function AboutPage({
                   {stat.value}
                 </p>
                 <p className="mt-1 text-[11px] leading-snug text-muted-foreground">
-                  {isNl ? stat.label.nl : stat.label.en}
+                  {t(stat.labelKey)}
                 </p>
               </div>
             ))}
@@ -136,7 +113,6 @@ export default async function AboutPage({
         </Reveal>
       </section>
 
-      {/* Mission / Vision / Philosophy */}
       <section className="mt-10 grid gap-3 md:grid-cols-3">
         {(
           [
@@ -161,25 +137,22 @@ export default async function AboutPage({
         ))}
       </section>
 
-      {/* What we do */}
       <section className="mt-12">
         <Reveal>
           <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
             <div>
               <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
-                {isNl ? "Wat wij doen" : "What we do"}
+                {t("whatWeDo")}
               </h2>
               <p className="mt-1 max-w-lg text-sm text-muted-foreground">
-                {isNl
-                  ? "Praktische diensten om uw website snel, veilig en vindbaar te maken."
-                  : "Practical services to make your website fast, secure and findable."}
+                {t("whatWeDoSubtitle")}
               </p>
             </div>
             <SoftLink
-              href={`/${locale}/diensten`}
+              href={localizedHref(locale, "/diensten")}
               className="text-sm font-medium text-primary hover:underline"
             >
-              {isNl ? "Alle diensten →" : "All services →"}
+              {t("allServicesArrow")}
             </SoftLink>
           </div>
         </Reveal>
@@ -187,13 +160,13 @@ export default async function AboutPage({
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {pillars.map((item, i) => (
             <Reveal key={item.href} delay={Math.min(i, 5) * 0.04}>
-              <SoftLink href={`/${locale}${item.href}`} className="block h-full">
+              <SoftLink href={localizedHref(locale, item.href)} className="block h-full">
                 <GlassCard className="h-full p-5 transition hover:border-primary/25">
                   <h3 className="font-display text-base font-semibold tracking-tight">
-                    {isNl ? item.title.nl : item.title.en}
+                    {t(item.titleKey)}
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {isNl ? item.desc.nl : item.desc.en}
+                    {t(item.descKey)}
                   </p>
                 </GlassCard>
               </SoftLink>
@@ -202,22 +175,17 @@ export default async function AboutPage({
         </div>
       </section>
 
-      {/* Compact story + CTA */}
       <section className="mt-12 grid gap-3 lg:grid-cols-[1.1fr_0.9fr]">
         <Reveal>
           <GlassCard className="h-full p-6" interactive={false}>
             <h2 className="font-display text-xl font-semibold tracking-tight md:text-2xl">
-              {isNl ? "Van goed naar beter" : "From good to great"}
+              {t("storyTitle")}
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
-              {isNl
-                ? "Met AI-integratie, AEO, GEO (lokaal), SEO, performance, security en full-funnel marketing zorgen we dat uw website soepel draait, beschermd blijft en meetbaar groeit."
-                : "With AI integration, AEO, GEO (local), SEO, performance, security and full-funnel marketing we keep your website smooth, protected and measurably growing."}
+              {t("storyP1")}
             </p>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
-              {isNl
-                ? "Binnen 24 uur pakken we bugs, malware, migraties of optimalisaties op — zodat u zich kunt focussen op uw business."
-                : "Within 24 hours we handle bugs, malware, migrations or optimizations — so you can focus on your business."}
+              {t("storyP2")}
             </p>
           </GlassCard>
         </Reveal>
@@ -227,18 +195,16 @@ export default async function AboutPage({
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(91,60,139,0.55),transparent_45%),linear-gradient(145deg,#2a1845,#14181f_60%,#0f1720)]" />
             <div className="relative">
               <p className="font-display text-2xl font-semibold tracking-tight">
-                {isNl ? "Klaar om te starten?" : "Ready to start?"}
+                {t("readyTitle")}
               </p>
               <p className="mt-2 max-w-sm text-sm text-white/70">
-                {isNl
-                  ? "Plan een gesprek of start direct met een AI-scan van uw website."
-                  : "Book a call or start with an AI scan of your website."}
+                {t("readySubtitle")}
               </p>
             </div>
             <div className="relative mt-6 flex flex-wrap gap-2.5">
               <Button asChild size="sm" className="rounded-xl bg-white text-primary hover:bg-white/90">
-                <SoftLink href={`/${locale}/afspraak`}>
-                  {isNl ? "Boek een afspraak" : "Book an appointment"}
+                <SoftLink href={localizedHref(locale, "/afspraak")}>
+                  {tNav("book")}
                 </SoftLink>
               </Button>
               <Button
@@ -247,7 +213,7 @@ export default async function AboutPage({
                 variant="outline"
                 className="rounded-xl border-white/30 bg-transparent text-white hover:bg-white/10"
               >
-                <SoftLink href={`/${locale}/ai-scan`}>AI-scan</SoftLink>
+                <SoftLink href={localizedHref(locale, "/ai-scan")}>{tNav("aiScan")}</SoftLink>
               </Button>
             </div>
           </div>

@@ -1,0 +1,1 @@
+Brže vrijeme učitavanja, Core Web Vitals i keširanje za prilagođene stekove izvan WordPress-a.

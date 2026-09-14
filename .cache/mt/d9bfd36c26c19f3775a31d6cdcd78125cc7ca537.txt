@@ -1,0 +1,1 @@
+Büyüyen web siteleri, özel uygulamalar, trafiğin daha yoğun olduğu durumlar veya sunucu ortamı üzerinde daha fazla kontrol sahibi olmak istediğiniz durumlar için.

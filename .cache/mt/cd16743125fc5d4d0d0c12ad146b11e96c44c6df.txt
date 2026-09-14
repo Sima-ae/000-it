@@ -1,0 +1,1 @@
+Hardening, firewall/WAF, HTTPS/SSL a monitorovanie bezpečnosti pre vlastné webové stránky – nie WordPress.

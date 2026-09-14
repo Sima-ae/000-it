@@ -1,0 +1,5 @@
+VPS Hosting Plus er til voksende webprojekter, forretningsapplikationer og udviklingsteams, der har brug for ekstra kapacitet og ensartet ydeevne.
+
+Serveren kombinerer 4 CPU-kerner og 6 GB RAM med 120 GB SSD RAID 10-lagring og 3000 GB båndbredde. Dette giver plads til større arbejdsbyrder, flere tjenester eller stigende trafik.
+
+TripleZero iT leverer et pålideligt VPS-fundament, som du kan konfigurere efter dine behov. Få fleksibiliteten som en virtuel server med en professionel partner tæt på.

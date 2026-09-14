@@ -1,0 +1,1 @@
+Een webbaken (of pixeltag) is een klein, onzichtbaar stukje tekst of afbeelding op een website dat wordt gebruikt om het verkeer op een website te monitoren. Om dit te kunnen doen, worden er met behulp van webbeacons verschillende gegevens over u opgeslagen.

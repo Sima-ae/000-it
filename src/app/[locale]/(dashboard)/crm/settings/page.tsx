@@ -9,6 +9,7 @@ import { CrmShell } from "@/components/crm/CrmShell";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { isAdminRole, isStaffRole } from "@/lib/roles";
+import { localizedHref } from "@/i18n/pathnames";
 
 export default function CrmSettingsPage() {
   const t = useTranslations("crm");
@@ -19,7 +20,7 @@ export default function CrmSettingsPage() {
 
   useEffect(() => {
     if (status === "authenticated" && !isStaffRole(session?.user?.role)) {
-      router.replace(`/${locale}/crm`);
+      router.replace(localizedHref(locale, "/crm"));
     }
   }, [status, session?.user?.role, router, locale]);
 
@@ -86,7 +87,7 @@ export default function CrmSettingsPage() {
                   <p className="font-medium">{item.label}</p>
                   <p className="mt-1 text-xs text-muted-foreground">{item.desc}</p>
                   <Button asChild size="sm" variant="outline" className="mt-3">
-                    <SoftLink href={`/${locale}${item.href}`}>{t("open")}</SoftLink>
+                    <SoftLink href={localizedHref(locale, item.href)}>{t("open")}</SoftLink>
                   </Button>
                 </div>
               ))}

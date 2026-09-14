@@ -1,0 +1,1 @@
+Kontrolna tabla nije mogla biti učitana. Provjerite vezu sa bazom podataka i pokušajte ponovo.

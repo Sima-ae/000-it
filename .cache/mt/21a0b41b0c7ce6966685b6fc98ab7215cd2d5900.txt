@@ -1,0 +1,1 @@
+Skript veb saytımızın düzgün və interaktiv işləməsi üçün istifadə olunan proqram kodunun bir hissəsidir. Bu kod serverimizdə və ya cihazınızda icra olunur.

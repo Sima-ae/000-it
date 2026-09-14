@@ -1,0 +1,1 @@
+Kontinuirano ažuriranje jezgra WordPressa, dodataka i tema sa rezervnim kopijama, praćenjem i brigom.

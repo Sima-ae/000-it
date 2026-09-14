@@ -1,0 +1,1 @@
+Bir web işaretçisi (veya bir piksel etiketi), bir web sitesindeki trafiği izlemek için kullanılan, bir web sitesindeki küçük, görünmez bir metin veya resim parçasıdır. Bunun yapılabilmesi için web işaretçileri kullanılarak hakkınızda çeşitli veriler depolanır.

@@ -1,0 +1,1 @@
+Et web-beacon (eller et pixel-tag) er et lille, usynligt stykke tekst eller billede på en hjemmeside, der bruges til at overvåge trafik på en hjemmeside. For at gøre dette gemmes forskellige data om dig ved hjælp af web beacons.

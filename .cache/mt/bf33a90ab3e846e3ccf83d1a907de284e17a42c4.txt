@@ -1,0 +1,1 @@
+Egyéni webhelyek és a PHP, HTML, CSS, JavaScript és Next.js folyamatos támogatása – nem a WordPress.

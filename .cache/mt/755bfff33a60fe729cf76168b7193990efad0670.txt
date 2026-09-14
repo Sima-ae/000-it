@@ -1,0 +1,1 @@
+Počinjemo s uzorkom datoteke i jasnim pravilima unosa za polja, izvorne podatke i izuzetke. Prilikom isporuke provjeravamo kompletnost i anomalije kako biste zadržali vidljivost napretka i kvaliteta.

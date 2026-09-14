@@ -1,0 +1,1 @@
+A script egy olyan programkód, amelyet weboldalunk megfelelő és interaktív működéséhez használnak. Ez a kód a szerverünkön vagy az Ön készülékén fut le.

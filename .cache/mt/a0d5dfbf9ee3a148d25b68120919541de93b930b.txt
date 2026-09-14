@@ -1,0 +1,5 @@
+Protégez votre site WordPress et déplacez-vous en toute confiance grâce à la sauvegarde et à la migration d'hébergement TripleZero iT. Que vous changiez d'hébergeur, que vous mettiez à niveau votre forfait ou que vous ayez simplement besoin d'une sauvegarde fiable, nous maintenons la transition calme et contrôlée.
+
+Nous créons une sauvegarde complète des fichiers, de la base de données, des thèmes, des plugins et des médias. Ensuite, nous migrons votre site, vérifions la compatibilité et mettons en place la configuration de l'hébergement clé pour que tout fonctionne dans le nouvel environnement.
+
+Après la livraison, vous recevez 7 jours d'assistance gratuite pour toute question concernant la sauvegarde, la restauration ou la migration. Votre site reste intact, accessible et prêt à se développer.

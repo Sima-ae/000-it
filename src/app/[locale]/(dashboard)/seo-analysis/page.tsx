@@ -5,6 +5,7 @@ import { prisma } from "@/lib/prisma";
 import { Button } from "@/components/ui/button";
 import { canDelete, canEditAny } from "@/lib/roles";
 import { SeoScansPanel } from "@/components/dashboard/SeoScansPanel";
+import { localizedHref } from "@/i18n/pathnames";
 
 export const dynamic = "force-dynamic";
 
@@ -51,21 +52,15 @@ export default async function SeoAnalysisPage({
         <div>
           <h1 className="text-3xl font-semibold">{t("seo")}</h1>
           <p className="text-sm text-muted-foreground">
-            {adminView
-              ? locale === "nl"
-                ? "Alle scans in het systeem — plus een nieuwe scan starten."
-                : "All scans across the workspace — plus run a new scan."
-              : locale === "nl"
-                ? "Bekijk uw AEO / GEO (lokaal) / SEO-scan geschiedenis en start een nieuwe scan."
-                : "Review your AEO / GEO (local) / SEO scan history and run a new scan."}
+            {adminView ? t("seoStaffSubtitle") : t("seoClientSubtitle")}
           </p>
         </div>
         <Button asChild>
-          <Link href={`/${locale}/ai-scan`}>{t("runScan")}</Link>
+          <Link href={localizedHref(locale, "/ai-scan")}>{t("runScan")}</Link>
         </Button>
       </div>
 
-      <SeoScansPanel locale={locale} canManage={canManage} initialScans={rows} />
+      <SeoScansPanel canManage={canManage} initialScans={rows} />
     </div>
   );
 }

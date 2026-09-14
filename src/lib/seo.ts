@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { publicNewsTags, type NewsPost } from "@/lib/news";
 import type { SeoCity } from "@/content/seo/cities";
-import { getStaticPageSeo, type PageSeo } from "@/content/seo/pages";
+import { getStaticPageSeo, getStaticPageSeoCopy, type PageSeo } from "@/content/seo/pages";
 import { enabledLanguages } from "@/i18n/languages";
+import { localizedHref } from "@/i18n/pathnames";
+import { hydrateLocalizedCopy } from "@/lib/localized-copy";
 
 export const SITE_SEO = {
   name: "TripleZero iT",
@@ -114,26 +116,28 @@ export function sitemapAbsoluteUrl(path: string) {
 
 export function localePath(locale: string, path = "") {
   const clean = path.startsWith("/") ? path : path ? `/${path}` : "";
-  return `/${locale}${clean}`;
+  if (!clean || clean === "/") return `/${locale}`;
+  return localizedHref(locale, clean);
 }
 
 export function newsArticlePath(locale: string, id: string) {
-  return localePath(locale, `/nieuws/${id}`);
+  return localizedHref(locale, `/nieuws/${id}`);
 }
 
 export function hreflangAlternates(pathWithoutLocale: string) {
   const path = pathWithoutLocale.startsWith("/")
     ? pathWithoutLocale
     : `/${pathWithoutLocale}`;
-  const suffix = path === "/" ? "" : path;
   const languages: Record<string, string> = {
-    "x-default": absoluteUrl(localePath("nl", suffix)),
+    "x-default": absoluteUrl(localizedHref("nl", path === "/" ? "/" : path)),
   };
   for (const lang of enabledLanguages()) {
-    languages[lang.code] = absoluteUrl(localePath(lang.code, suffix));
+    languages[lang.code] = absoluteUrl(
+      localizedHref(lang.code, path === "/" ? "/" : path),
+    );
   }
   return {
-    canonical: absoluteUrl(localePath("nl", suffix)),
+    canonical: absoluteUrl(localizedHref("nl", path === "/" ? "/" : path)),
     languages,
   };
 }
@@ -249,24 +253,26 @@ export function buildPageMetadata(input: BuildPageMetadataInput): Metadata {
   };
 }
 
-export function buildStaticPageMetadata(locale: string, path: string, overrides?: Partial<BuildPageMetadataInput>): Metadata {
+export async function buildStaticPageMetadata(locale: string, path: string, overrides?: Partial<BuildPageMetadataInput>): Promise<Metadata> {
+  await hydrateLocalizedCopy(locale);
   const page = getStaticPageSeo(path);
-  const isNl = locale === "nl";
-  if (!page) {
+  const copy = getStaticPageSeoCopy(path, locale);
+  if (!page || !copy) {
+    const fallback = locale === "nl" ? SITE_SEO.defaultDescription.nl : SITE_SEO.defaultDescription.en;
     return buildPageMetadata({
       locale,
       path,
       title: SITE_SEO.name,
-      description: isNl ? SITE_SEO.defaultDescription.nl : SITE_SEO.defaultDescription.en,
+      description: fallback,
       ...overrides,
     });
   }
   return buildPageMetadata({
     locale,
     path: page.path,
-    title: isNl ? page.title.nl : page.title.en,
-    description: isNl ? page.description.nl : page.description.en,
-    keywords: isNl ? page.keywords.nl : page.keywords.en,
+    title: copy.title,
+    description: copy.description,
+    keywords: copy.keywords,
     image: page.image,
     type: page.ogType,
     ...overrides,
@@ -425,11 +431,7 @@ export function buildNewsArticleMetadata(
     },
     alternates: {
       canonical: url,
-      languages: {
-        nl: absoluteUrl(newsArticlePath("nl", post.id)),
-        en: absoluteUrl(newsArticlePath("en", post.id)),
-        "x-default": absoluteUrl(newsArticlePath("nl", post.id)),
-      },
+      languages: hreflangAlternates(`/nieuws/${post.id}`).languages,
     },
     openGraph: {
       type: "article",
@@ -481,6 +483,7 @@ export function buildNewsIndexMetadata(locale: string, page = 1): Metadata {
   const keywords = isNl
     ? ["nieuws", "AI nieuws", "tech nieuws", "TripleZero iT", "Nederland", "kunstmatige intelligentie"]
     : ["news", "AI news", "tech news", "TripleZero iT", "Netherlands", "artificial intelligence"];
+  const langs = hreflangAlternates("/nieuws");
 
   return {
     title: page > 1 ? `${title} · ${isNl ? "Pagina" : "Page"} ${page}` : title,
@@ -488,12 +491,11 @@ export function buildNewsIndexMetadata(locale: string, page = 1): Metadata {
     keywords,
     robots: { index: true, follow: true },
     alternates: {
-      canonical: page > 1 ? absoluteUrl(localePath(locale, `/nieuws?page=${page}`)) : url,
-      languages: {
-        nl: absoluteUrl(localePath("nl", "/nieuws")),
-        en: absoluteUrl(localePath("en", "/nieuws")),
-        "x-default": absoluteUrl(localePath("nl", "/nieuws")),
-      },
+      canonical:
+        page > 1
+          ? absoluteUrl(`${localePath(locale, "/nieuws")}?page=${page}`)
+          : url,
+      languages: langs.languages,
     },
     openGraph: {
       type: "website",

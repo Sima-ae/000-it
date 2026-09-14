@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import {
   BookOpen,
   CreditCard,
@@ -11,10 +11,12 @@ import {
   Stamp,
   Type,
 } from "lucide-react";
+import { localizedHref } from "@/i18n/pathnames";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Reveal } from "@/components/marketing/Reveal";
 import { Button } from "@/components/ui/button";
 import { serviceCatalog, serviceHref } from "@/content/fixweb/catalog";
+import { catalogServiceTitle } from "@/content/fixweb/catalog-title";
 import { buildStaticPageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
@@ -33,42 +35,12 @@ const tools = [
 ] as const;
 
 const offerings = [
-  {
-    slug: "logo-brand-identity",
-    icon: Palette,
-    blurbNl: "Logo’s, kleur, typografie en merkrichtlijnen die schalen.",
-    blurbEn: "Logos, color, type and guidelines that scale.",
-  },
-  {
-    slug: "business-cards",
-    icon: CreditCard,
-    blurbNl: "Ontwerp én drukwerk — kleine of grote oplages.",
-    blurbEn: "Design and printing — small or large quantities.",
-  },
-  {
-    slug: "briefpapier",
-    icon: FileText,
-    blurbNl: "Briefpapier-ontwerp én drukwerk in kleine of grote oplages.",
-    blurbEn: "Letterhead design and printing in small or large quantities.",
-  },
-  {
-    slug: "flyers-posters",
-    icon: Type,
-    blurbNl: "Flyer- en posterontwerp plus drukwerk in kleine of grote oplages.",
-    blurbEn: "Flyer and poster design plus printing in small or large quantities.",
-  },
-  {
-    slug: "stickers-packaging",
-    icon: Stamp,
-    blurbNl: "Stickerontwerp en drukwerk — kleine batches of grote runs.",
-    blurbEn: "Sticker design and printing — small batches or large runs.",
-  },
-  {
-    slug: "magazines-brochures",
-    icon: Layers,
-    blurbNl: "Brochure-ontwerp plus drukwerk in kleine of grote oplages.",
-    blurbEn: "Brochure design plus printing in small or large quantities.",
-  },
+  { slug: "logo-brand-identity", icon: Palette, blurbKey: "blurbLogo" as const },
+  { slug: "business-cards", icon: CreditCard, blurbKey: "blurbCards" as const },
+  { slug: "briefpapier", icon: FileText, blurbKey: "blurbLetterhead" as const },
+  { slug: "flyers-posters", icon: Type, blurbKey: "blurbFlyers" as const },
+  { slug: "stickers-packaging", icon: Stamp, blurbKey: "blurbStickers" as const },
+  { slug: "magazines-brochures", icon: Layers, blurbKey: "blurbBrochures" as const },
 ] as const;
 
 export default async function DigitalDesignPage({
@@ -78,7 +50,8 @@ export default async function DigitalDesignPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const isNl = locale === "nl";
+  const tNav = await getTranslations("nav");
+  const t = await getTranslations("digitalDesign");
 
   return (
     <div>
@@ -96,22 +69,20 @@ export default async function DigitalDesignPage({
               TripleZero iT
             </p>
             <h1 className="font-display mt-4 max-w-3xl text-4xl font-semibold tracking-tight md:text-6xl">
-              {isNl ? "Digital design" : "Digital Design"}
+              {t("title")}
             </h1>
             <p className="mt-5 max-w-xl text-base text-muted-foreground md:text-lg">
-              {isNl
-                ? "Professioneel beeldmerk- en printdesign: logo’s, visitekaartjes, flyers, stickers, magazines en posters — gemaakt in Photoshop, Illustrator en InDesign."
-                : "Professional brand and print design: logos, business cards, flyers, stickers, magazines and posters — crafted in Photoshop, Illustrator and InDesign."}
+              {t("subtitle")}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild size="lg" className="rounded-2xl">
-                <SoftLink href={`/${locale}/afspraak`}>
-                  {isNl ? "Boek een afspraak" : "Book an appointment"}
+                <SoftLink href={localizedHref(locale, "/afspraak")}>
+                  {tNav("book")}
                 </SoftLink>
               </Button>
               <Button asChild size="lg" variant="outline" className="rounded-2xl">
-                <SoftLink href={`/${locale}/portfolio`}>
-                  {isNl ? "Bekijk portfolio" : "View portfolio"}
+                <SoftLink href={localizedHref(locale, "/portfolio")}>
+                  {t("viewPortfolio")}
                 </SoftLink>
               </Button>
             </div>
@@ -122,13 +93,9 @@ export default async function DigitalDesignPage({
       <section className="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
         <Reveal>
           <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
-            {isNl ? "Wat we ontwerpen" : "What we design"}
+            {t("whatWeDesign")}
           </h2>
-          <p className="mt-2 max-w-2xl text-muted-foreground">
-            {isNl
-              ? "Elk deliverable is drukklaar of screen-ready, met nette bestandsstructuur voor uw drukker of team."
-              : "Every deliverable is print- or screen-ready, with a clean file structure for your printer or team."}
-          </p>
+          <p className="mt-2 max-w-2xl text-muted-foreground">{t("whatWeDesignSubtitle")}</p>
         </Reveal>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -146,13 +113,11 @@ export default async function DigitalDesignPage({
                     <Icon className="h-5 w-5" />
                   </span>
                   <h3 className="mt-4 font-display text-lg font-semibold tracking-tight">
-                    {isNl ? meta.titleNl : meta.title}
+                    {catalogServiceTitle(meta.slug, locale, meta.title)}
                   </h3>
-                  <p className="mt-2 flex-1 text-sm text-muted-foreground">
-                    {isNl ? item.blurbNl : item.blurbEn}
-                  </p>
+                  <p className="mt-2 flex-1 text-sm text-muted-foreground">{t(item.blurbKey)}</p>
                   <span className="mt-4 text-sm font-medium text-primary group-hover:underline">
-                    {isNl ? "Meer info" : "Learn more"}
+                    {t("learnMore")}
                   </span>
                 </SoftLink>
               </Reveal>
@@ -165,13 +130,9 @@ export default async function DigitalDesignPage({
         <div className="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-16">
           <Reveal>
             <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
-              {isNl ? "Gereedschap dat print overleeft" : "Tools that survive print"}
+              {t("toolsTitle")}
             </h2>
-            <p className="mt-2 max-w-2xl text-muted-foreground">
-              {isNl
-                ? "Wij werken in de Adobe-stack zodat uw bestanden openen bij elke professionele drukkerij."
-                : "We work in the Adobe stack so your files open cleanly at any professional print shop."}
-            </p>
+            <p className="mt-2 max-w-2xl text-muted-foreground">{t("toolsSubtitle")}</p>
           </Reveal>
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
             {tools.map((tool, i) => {
@@ -193,22 +154,16 @@ export default async function DigitalDesignPage({
         <Reveal>
           <div className="rounded-4xl border border-border/70 bg-linear-to-br from-primary/12 via-background to-accent/10 px-6 py-10 md:px-10 md:py-12">
             <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
-              {isNl ? "Klaar voor een strak merkbeeld?" : "Ready for a sharp brand image?"}
+              {t("ctaTitle")}
             </h2>
-            <p className="mt-3 max-w-xl text-muted-foreground">
-              {isNl
-                ? "Plan een intake. We bepalen formaten, oplage en stijlrichting — daarna leveren we drukklare bestanden."
-                : "Book an intake. We’ll lock formats, quantity and style direction — then deliver print-ready files."}
-            </p>
+            <p className="mt-3 max-w-xl text-muted-foreground">{t("ctaSubtitle")}</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button asChild size="lg" className="rounded-2xl">
-                <SoftLink href={`/${locale}/afspraak`}>
-                  {isNl ? "Start met design" : "Start with design"}
-                </SoftLink>
+                <SoftLink href={localizedHref(locale, "/afspraak")}>{t("startDesign")}</SoftLink>
               </Button>
               <Button asChild size="lg" variant="outline" className="rounded-2xl">
-                <SoftLink href={`/${locale}/diensten/webdesign-support`}>
-                  {isNl ? "Website support" : "Website Support"}
+                <SoftLink href={localizedHref(locale, "/diensten/webdesign-support")}>
+                  {t("websiteSupport")}
                 </SoftLink>
               </Button>
             </div>

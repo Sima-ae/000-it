@@ -1,0 +1,1 @@
+Sikkerhedsforanstaltninger for hardware, der indeholder eller behandler personlige data.

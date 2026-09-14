@@ -1,0 +1,4 @@
+– 4 CPU çekirdeği
+– 6GB RAM
+– 120 GB SSD RAID10
+– 3000 GB bant genişliği

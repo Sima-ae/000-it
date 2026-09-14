@@ -59,6 +59,7 @@ export async function PATCH(request: Request, { params }: Params) {
     industry: data.industry ?? current.industry ?? "",
     tags: data.tags ?? current.tags,
     createdById: current.createdById ?? userId,
+    autoTranslate: true,
     ...(isAdmin
       ? {
           date: data.date,

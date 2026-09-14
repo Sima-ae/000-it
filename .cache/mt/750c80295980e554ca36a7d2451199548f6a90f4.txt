@@ -1,0 +1,1 @@
+Rosszindulatú programok eltávolítása egyéni PHP, HTML és Next.js webhelyekhez – a WordPress rosszindulatú programcsomagjaitól függetlenül.

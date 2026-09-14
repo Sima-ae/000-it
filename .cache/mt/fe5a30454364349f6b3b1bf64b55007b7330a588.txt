@@ -1,0 +1,1 @@
+Hurtigere indlæsningstider, Core Web Vitals og caching til brugerdefinerede stakke uden for WordPress.

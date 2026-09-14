@@ -1,0 +1,1 @@
+CRM sa nepodarilo načítať. Skontrolujte pripojenie a skúste to znova.

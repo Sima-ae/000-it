@@ -1,0 +1,1 @@
+SSD RAID 10 e limites claros de recursos proporcionam desempenho previsível. Aumente a escala quando seu projeto precisar.

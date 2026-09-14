@@ -1,0 +1,1 @@
+Bloqueamos la inclusión de direcciones IP completas.

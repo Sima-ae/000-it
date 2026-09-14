@@ -1,0 +1,1 @@
+Przechowujemy te dane do momentu zakończenia świadczenia usługi.

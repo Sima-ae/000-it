@@ -1,0 +1,5 @@
+O VPS Hosting Basic é adequado para desenvolvedores, pequenos aplicativos e sites que precisam de mais controle e recursos previsíveis do que a hospedagem compartilhada oferece.
+
+Com 2 núcleos de CPU, 2 GB de RAM, 40 GB de armazenamento SSD RAID 10 e 1000 GB de largura de banda, você obtém um servidor virtual sólido para cargas de trabalho leves a moderadas.
+
+TripleZero iT oferece uma base de infraestrutura confiável, para que você possa se concentrar em seu aplicativo, site ou ambiente de desenvolvimento. Aumente a escala quando a demanda crescer.

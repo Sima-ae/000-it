@@ -1,0 +1,1 @@
+Básico: 2 núcleos de CPU, 2 GB de RAM, 40 GB SSD RAID 10, 1000 GB de ancho de banda

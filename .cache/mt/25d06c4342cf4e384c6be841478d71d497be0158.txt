@@ -1,0 +1,5 @@
+VPS Hosting Basic este potrivit pentru dezvoltatori, aplicații mici și site-uri web care au nevoie de mai mult control și resurse previzibile decât oferă găzduirea partajată.
+
+Cu 2 nuclee CPU, 2 GB RAM, 40 GB SSD RAID 10 de stocare și 1000 GB lățime de bandă, obțineți un server virtual solid pentru sarcini de lucru ușoare până la moderate.
+
+TripleZero iT vă oferă o bază de infrastructură de încredere, astfel încât să vă puteți concentra pe aplicația, site-ul web sau mediul de dezvoltare. Creșteți când cererea crește.

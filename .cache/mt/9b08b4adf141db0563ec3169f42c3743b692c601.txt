@@ -1,0 +1,1 @@
+Malwareoprydning til brugerdefinerede PHP-, HTML- og Next.js-websteder - adskilt fra WordPress-malwarepakker.

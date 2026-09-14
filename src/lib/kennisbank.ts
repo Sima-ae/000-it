@@ -5,7 +5,12 @@ import {
   fillArticleTranslations,
   fillCategoryTranslations,
 } from "@/lib/kennisbank-i18n";
-import { translateHtml, translateText } from "@/lib/google-translate";
+import {
+  isAcceptableTranslation,
+  translateHtml,
+  translateText,
+} from "@/lib/google-translate";
+import { ensureEntitySlugFromTitle } from "@/lib/entity-slugs";
 
 export { slugifyKennisbank } from "@/lib/kennisbank-slug";
 
@@ -189,6 +194,13 @@ export async function createCategory(input: z.infer<typeof categoryUpsertSchema>
     (error) => console.warn("[kennisbank] category i18n", error),
   );
 
+  void ensureEntitySlugFromTitle({
+    entityType: "kb_category",
+    entityKey: slug,
+    locale,
+    title: name,
+  }).catch((error) => console.warn("[kennisbank] category slug", error));
+
   const tr = pickTranslation(row.translations, locale);
   return {
     id: row.id,
@@ -245,6 +257,27 @@ export async function updateCategory(
   return view;
 }
 
+async function translatePlainToEnglish(text: string, fromLocale: string) {
+  const out = await translateText(text, "en", fromLocale);
+  if (!isAcceptableTranslation(text, out, fromLocale, "en")) {
+    throw new Error("en quality");
+  }
+  return out;
+}
+
+async function withRetries<T>(fn: () => Promise<T>, attempts = 4): Promise<T> {
+  let lastErr: unknown;
+  for (let i = 0; i < attempts; i += 1) {
+    try {
+      return await fn();
+    } catch (error) {
+      lastErr = error;
+      await new Promise((r) => setTimeout(r, 800 * 2 ** i));
+    }
+  }
+  throw lastErr || new Error("retries exhausted");
+}
+
 async function propagateCategoryLocales(
   categoryId: string,
   sourceLocale: string,
@@ -254,10 +287,11 @@ async function propagateCategoryLocales(
   let enName = source.name;
   let enDescription = source.description;
   if (sourceLocale !== "en") {
-    enName = (await translateText(source.name, "en", sourceLocale)) || source.name;
+    enName = await withRetries(() => translatePlainToEnglish(source.name, sourceLocale));
     enDescription = source.description
-      ? (await translateText(source.description, "en", sourceLocale)) ||
-        source.description
+      ? await withRetries(() =>
+          translatePlainToEnglish(source.description!, sourceLocale),
+        )
       : null;
     await prisma.kennisbankCategoryTranslation.upsert({
       where: { categoryId_locale: { categoryId, locale: "en" } },
@@ -277,7 +311,30 @@ async function propagateCategoryLocales(
     sourceLocale: "en",
     force: true,
     delayMs: 220,
+    preserveLocales: sourceLocale === "nl" ? ["nl"] : [],
   });
+
+  await syncCategoryEntitySlugs(categoryId);
+}
+
+async function syncCategoryEntitySlugs(categoryId: string) {
+  const cat = await prisma.kennisbankCategory.findUnique({
+    where: { id: categoryId },
+    select: {
+      slug: true,
+      translations: { select: { locale: true, name: true } },
+    },
+  });
+  if (!cat) return;
+  for (const tr of cat.translations) {
+    if (!tr.name?.trim()) continue;
+    await ensureEntitySlugFromTitle({
+      entityType: "kb_category",
+      entityKey: cat.slug,
+      locale: tr.locale,
+      title: tr.name,
+    });
+  }
 }
 
 export async function deleteCategory(id: string) {
@@ -454,6 +511,13 @@ export async function createArticle(
     console.warn("[kennisbank] article i18n", error),
   );
 
+  void ensureEntitySlugFromTitle({
+    entityType: "kb_article",
+    entityKey: slug,
+    locale,
+    title: source.title,
+  }).catch((error) => console.warn("[kennisbank] article slug", error));
+
   return getArticleById(row.id, { locale });
 }
 
@@ -513,20 +577,21 @@ async function propagateArticleLocales(
 ) {
   let en = { ...source };
   if (sourceLocale !== "en") {
-    en = {
-      title: (await translateText(source.title, "en", sourceLocale)) || source.title,
-      excerpt:
-        (await translateText(source.excerpt, "en", sourceLocale)) || source.excerpt,
-      bodyHtml:
-        (await translateHtml(source.bodyHtml, "en", sourceLocale)) || source.bodyHtml,
-      seoTitle: source.seoTitle
-        ? (await translateText(source.seoTitle, "en", sourceLocale)) || source.seoTitle
-        : null,
-      seoDescription: source.seoDescription
-        ? (await translateText(source.seoDescription, "en", sourceLocale)) ||
-          source.seoDescription
-        : null,
-    };
+    en = await withRetries(async () => {
+      const title = await translatePlainToEnglish(source.title, sourceLocale);
+      const excerpt = await translatePlainToEnglish(source.excerpt, sourceLocale);
+      const bodyHtml = await translateHtml(source.bodyHtml, "en", sourceLocale);
+      if (!isAcceptableTranslation(source.bodyHtml, bodyHtml, sourceLocale, "en")) {
+        throw new Error("en body quality");
+      }
+      const seoTitle = source.seoTitle
+        ? await translatePlainToEnglish(source.seoTitle, sourceLocale)
+        : null;
+      const seoDescription = source.seoDescription
+        ? await translatePlainToEnglish(source.seoDescription, sourceLocale)
+        : null;
+      return { title, excerpt, bodyHtml, seoTitle, seoDescription };
+    });
     await prisma.kennisbankArticleTranslation.upsert({
       where: { articleId_locale: { articleId, locale: "en" } },
       create: { articleId, locale: "en", ...en },
@@ -538,11 +603,32 @@ async function propagateArticleLocales(
     articleId,
     source: en,
     sourceLocale: "en",
-    // Never force-overwrite curated NL from admin EN propagation.
     force: true,
     delayMs: 280,
-    locales: undefined, // fillArticleTranslations skips nl when source is en
+    preserveLocales: sourceLocale === "nl" ? ["nl"] : ["nl"],
   });
+
+  await syncArticleEntitySlugs(articleId);
+}
+
+async function syncArticleEntitySlugs(articleId: string) {
+  const article = await prisma.kennisbankArticle.findUnique({
+    where: { id: articleId },
+    select: {
+      slug: true,
+      translations: { select: { locale: true, title: true } },
+    },
+  });
+  if (!article) return;
+  for (const tr of article.translations) {
+    if (!tr.title?.trim()) continue;
+    await ensureEntitySlugFromTitle({
+      entityType: "kb_article",
+      entityKey: article.slug,
+      locale: tr.locale,
+      title: tr.title,
+    });
+  }
 }
 
 export async function deleteArticle(id: string) {

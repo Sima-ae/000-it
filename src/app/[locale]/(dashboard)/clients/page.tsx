@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import { localizedHref } from "@/i18n/pathnames";
 
 /** Legacy route — CRM clients is canonical */
 export default async function ClientsRedirectPage({
@@ -7,5 +8,5 @@ export default async function ClientsRedirectPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  redirect(`/${locale}/crm/clients`);
+  redirect(localizedHref(locale, "/crm/clients"));
 }

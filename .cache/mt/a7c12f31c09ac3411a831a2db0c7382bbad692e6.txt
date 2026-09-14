@@ -1,0 +1,5 @@
+Suojaa WordPress-verkkosivustosi TripleZero iT -tietoturvapalveluilla. Kovetamme sivustosi hakkeroilta, haittaohjelmilta ja väärinkäytöksiltä käytännöllisellä ja tarkasti valvotulla lähestymistavalla.
+
+Varmuuskopioinnin jälkeen suoritamme tietoturvatarkastuksen, asennamme Wordfencen (Basic tai Premium), määritämme palomuurin ja raa'an voiman suojauksen sekä määritämme SSL:n tarvittaessa. Käyttäjien käyttöoikeudet ja korjaukset tarkistetaan, jotta haavoittuvuuksilla on vähemmän tilaa kasvaa.
+
+Saat 7 päivän ilmaisen tuen toimituksen jälkeen – tietosi, maineesi ja jatkuvuutesi suojataan paremmin.

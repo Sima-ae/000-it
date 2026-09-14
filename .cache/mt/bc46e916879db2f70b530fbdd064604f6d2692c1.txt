@@ -1,0 +1,1 @@
+SSD RAID 10 i jasna ograničenja resursa pružaju predvidljive performanse. Povećajte veličinu kada je to potrebno vašem projektu.

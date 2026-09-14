@@ -1,0 +1,1 @@
+Alapos elemzés és rosszindulatú programok eltávolítása, hogy webhelye ismét tiszta legyen.

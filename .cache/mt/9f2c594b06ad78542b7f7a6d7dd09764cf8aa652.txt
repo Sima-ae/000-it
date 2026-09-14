@@ -1,0 +1,1 @@
+Härdning, brandvägg/WAF, HTTPS/SSL och säkerhetsövervakning för anpassade webbplatser – inte WordPress.

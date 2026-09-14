@@ -1,0 +1,5 @@
+O WordPress é poderoso, mas mensagens de erro, conflitos de plugins ou problemas de tema podem atrapalhar seu site rapidamente. TripleZero iT diagnostica e corrige erros do WordPress com um foco claro na restauração da funcionalidade e na limitação do tempo de inatividade.
+
+Investigamos as causas principais — desde telas brancas e erros de HTTP até problemas de banco de dados — e depois aplicamos uma correção durável. Fluxos críticos como login, formulários e checkout (quando relevante) são verificados antes da transferência.
+
+Você recebe recomendações práticas para reduzir a recorrência, para que sua presença online permaneça estável e profissional.

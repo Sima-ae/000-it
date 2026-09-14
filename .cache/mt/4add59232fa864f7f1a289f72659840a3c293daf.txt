@@ -1,0 +1,1 @@
+Skripta je dio programskog koda koji se koristi za pravilno i interaktivno funkcioniranje naše web stranice. Ovaj kod se izvršava na našem serveru ili na vašem uređaju.

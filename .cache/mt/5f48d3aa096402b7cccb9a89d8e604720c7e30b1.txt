@@ -1,0 +1,1 @@
+Tempi di caricamento più rapidi, Core Web Vitals e memorizzazione nella cache per stack personalizzati all'esterno di WordPress.

@@ -1,0 +1,1 @@
+Gyorsabb betöltési idők, Core Web Vitals és gyorsítótár az egyéni veremekhez a WordPressen kívül.

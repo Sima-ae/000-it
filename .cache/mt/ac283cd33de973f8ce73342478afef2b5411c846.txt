@@ -1,0 +1,1 @@
+Xüsusi PHP, HTML və Next.js saytları üçün zərərli proqramların təmizlənməsi — WordPress zərərli proqram paketlərindən ayrı.

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Button } from "@/components/ui/button";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { ContentBlocks } from "@/components/content/ContentBlocks";
@@ -15,62 +15,24 @@ import {
   serviceGroups,
   serviceHref,
 } from "@/content/fixweb/catalog";
+import { localizedHref } from "@/i18n/pathnames";
+import {
+  catalogGroupTitle,
+  catalogServiceTitle,
+} from "@/content/fixweb/catalog-title";
 import { formatEuro, getServiceCardMeta, getServiceContent } from "@/lib/fixweb-content";
 import { buildServiceMetadata } from "@/lib/seo";
+import { resolveEntityParam } from "@/lib/resolve-entity-param";
+import { canonicalEntityKey } from "@/lib/entity-slug-cache";
+import { hydrateEntitySlugs } from "@/lib/entity-slugs";
 
 const aiInquiryBySlug: Record<
   string,
-  {
-    source: string;
-    messageHintNl: string;
-    messageHintEn: string;
-    triggerNl: string;
-    triggerEn: string;
-    ctaTitleNl: string;
-    ctaTitleEn: string;
-    ctaTextNl: string;
-    ctaTextEn: string;
-  }
+  { source: string; key: "wp" | "ecom" | "web" }
 > = {
-  "ai-in-wordpress": {
-    source: "AI_IN_WORDPRESS",
-    messageHintNl: "WordPress-website",
-    messageHintEn: "WordPress website",
-    triggerNl: "Vraag AI voor WordPress aan",
-    triggerEn: "Request AI for WordPress",
-    ctaTitleNl: "AI in uw WordPress laten bouwen?",
-    ctaTitleEn: "Want AI built into your WordPress?",
-    ctaTextNl:
-      "Stuur een korte aanvraag via het formulier — we kijken mee naar chatbots, content-AI, WooCommerce of maatwerk en reageren met concrete stappen.",
-    ctaTextEn:
-      "Send a short request via the form — we’ll review chatbots, content AI, WooCommerce or custom builds and reply with concrete next steps.",
-  },
-  "ai-in-ecommerce": {
-    source: "AI_IN_ECOMMERCE",
-    messageHintNl: "webshop",
-    messageHintEn: "webshop",
-    triggerNl: "Vraag AI voor E-commerce aan",
-    triggerEn: "Request AI for E-commerce",
-    ctaTitleNl: "AI in uw webshop laten bouwen?",
-    ctaTitleEn: "Want AI built into your webshop?",
-    ctaTextNl:
-      "Stuur een korte aanvraag — we kijken mee naar productassistenten, search, cart-hulp of support-AI en reageren met concrete stappen.",
-    ctaTextEn:
-      "Send a short request — we’ll review product assistants, search, cart help or support AI and reply with concrete next steps.",
-  },
-  "ai-in-website": {
-    source: "AI_IN_WEBSITE",
-    messageHintNl: "maatwerkwebsite",
-    messageHintEn: "custom website",
-    triggerNl: "Vraag AI voor website aan",
-    triggerEn: "Request AI for website",
-    ctaTitleNl: "AI in uw website laten bouwen?",
-    ctaTitleEn: "Want AI built into your website?",
-    ctaTextNl:
-      "Stuur een korte aanvraag — we kijken mee naar chat, leadkwalificatie, knowledge search of maatwerk-AI op uw stack en reageren met concrete stappen.",
-    ctaTextEn:
-      "Send a short request — we’ll review chat, lead qualification, knowledge search or custom AI on your stack and reply with concrete next steps.",
-  },
+  "ai-in-wordpress": { source: "AI_IN_WORDPRESS", key: "wp" },
+  "ai-in-ecommerce": { source: "AI_IN_ECOMMERCE", key: "ecom" },
+  "ai-in-website": { source: "AI_IN_WEBSITE", key: "web" },
 };
 
 export function generateStaticParams() {
@@ -82,8 +44,10 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
-  const { locale, slug } = await params;
-  const content = getServiceContent(slug, locale);
+  const { locale, slug: rawSlug } = await params;
+  await hydrateEntitySlugs(locale);
+  const slug = canonicalEntityKey(locale, "service", rawSlug);
+  const content = await getServiceContent(slug, locale);
   if (!content) return { title: "Not found", robots: { index: false } };
   return buildServiceMetadata({
     locale,
@@ -99,23 +63,36 @@ export default async function ServiceDetailPage({
 }: {
   params: Promise<{ locale: string; slug: string }>;
 }) {
-  const { locale, slug } = await params;
+  const { locale, slug: rawSlug } = await params;
   setRequestLocale(locale);
-  const isNl = locale === "nl";
-  const content = getServiceContent(slug, locale);
+  const slug = await resolveEntityParam({
+    locale,
+    entityType: "service",
+    param: rawSlug,
+    internalPathFor: (key) => `/diensten/${key}`,
+  });
+  const tNav = await getTranslations("nav");
+  const t = await getTranslations("services");
+  const content = await getServiceContent(slug, locale);
   if (!content) notFound();
 
   const meta = getCatalogItem(slug);
   const groupLabel = serviceGroups.find((g) => g.id === meta?.group);
   const inquiry = aiInquiryBySlug[slug];
-  const related = serviceCatalog
-    .filter(
-      (item) =>
-        item.group === meta?.group &&
-        item.slug !== slug &&
-        !item.href,
+  const relatedCandidates = serviceCatalog.filter(
+    (item) =>
+      item.group === meta?.group &&
+      item.slug !== slug &&
+      !item.href,
+  );
+  const related = (
+    await Promise.all(
+      relatedCandidates.map(async (item) => ({
+        item,
+        relatedContent: await getServiceCardMeta(item.slug, locale),
+      })),
     )
-    .map((item) => ({ item, relatedContent: getServiceCardMeta(item.slug, locale) }))
+  )
     .filter(({ relatedContent }) => Boolean(relatedContent?.hasBody))
     .slice(0, 3);
 
@@ -132,8 +109,8 @@ export default async function ServiceDetailPage({
         <div className="relative mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
           <Reveal>
             <p className="text-sm text-muted-foreground">
-              <SoftLink href={`/${locale}/diensten`} className="hover:text-foreground">
-                {isNl ? "Diensten" : "Services"}
+              <SoftLink href={localizedHref(locale, "/diensten")} className="hover:text-foreground">
+                {tNav("services")}
               </SoftLink>
               <span className="mx-2">/</span>
               <span>{content.title}</span>
@@ -142,7 +119,9 @@ export default async function ServiceDetailPage({
               <div>
                 {groupLabel ? (
                   <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
-                    {isNl ? groupLabel.titleNl : groupLabel.title}
+                    {groupLabel
+                      ? catalogGroupTitle(groupLabel.id, locale, groupLabel.title)
+                      : null}
                   </p>
                 ) : null}
                 <h1 className="font-display mt-3 text-4xl font-semibold tracking-tight md:text-5xl">
@@ -178,25 +157,25 @@ export default async function ServiceDetailPage({
                     <ServiceInquiryDialog
                       serviceTitle={content.title}
                       source={inquiry.source}
-                      messageHint={isNl ? inquiry.messageHintNl : inquiry.messageHintEn}
-                      triggerLabel={isNl ? inquiry.triggerNl : inquiry.triggerEn}
+                      messageHint={t(`inquiry.${inquiry.key}.hint`)}
+                      triggerLabel={t(`inquiry.${inquiry.key}.trigger`)}
                     />
                   ) : slug === "ai-scan" ? (
                     <Button asChild size="lg" className="rounded-2xl">
-                      <SoftLink href={`/${locale}/ai-scan`}>
-                        {isNl ? "Start gratis AI-scan" : "Start free AI scan"}
+                      <SoftLink href={localizedHref(locale, "/ai-scan")}>
+                        {t("startFreeAiScan")}
                       </SoftLink>
                     </Button>
                   ) : (
                     <Button asChild size="lg" className="rounded-2xl">
-                      <SoftLink href={`/${locale}/afspraak`}>
-                        {isNl ? "Boek een afspraak" : "Book an appointment"}
+                      <SoftLink href={localizedHref(locale, "/afspraak")}>
+                        {tNav("book")}
                       </SoftLink>
                     </Button>
                   )}
                   <Button asChild size="lg" variant="outline" className="rounded-2xl">
-                    <SoftLink href={`/${locale}/contact`}>
-                      {isNl ? "Contact" : "Contact"}
+                    <SoftLink href={localizedHref(locale, "/contact")}>
+                      {t("contact")}
                     </SoftLink>
                   </Button>
                 </div>
@@ -224,11 +203,7 @@ export default async function ServiceDetailPage({
             {content.blocks.length ? (
               <ContentBlocks blocks={content.blocks} />
             ) : (
-              <p className="text-muted-foreground">
-                {isNl
-                  ? "Neem contact op voor een voorstel op maat."
-                  : "Contact us for a tailored proposal."}
-              </p>
+              <p className="text-muted-foreground">{t("emptyBody")}</p>
             )}
           </div>
         </Reveal>
@@ -236,41 +211,29 @@ export default async function ServiceDetailPage({
         <Reveal delay={0.08}>
           <div className="mt-10 rounded-[1.75rem] border border-border/70 bg-linear-to-br from-primary/10 via-background to-accent/10 px-6 py-8 md:px-10">
             <h2 className="font-display text-2xl font-semibold tracking-tight">
-              {inquiry
-                ? isNl
-                  ? inquiry.ctaTitleNl
-                  : inquiry.ctaTitleEn
-                : isNl
-                  ? "Klaar om te starten?"
-                  : "Ready to get started?"}
+              {inquiry ? t(`inquiry.${inquiry.key}.ctaTitle`) : t("readyTitle")}
             </h2>
             <p className="mt-2 max-w-2xl text-muted-foreground">
-              {inquiry
-                ? isNl
-                  ? inquiry.ctaTextNl
-                  : inquiry.ctaTextEn
-                : isNl
-                  ? "Plan een intake of stuur een bericht — we reageren snel met een concreet voorstel."
-                  : "Book an intake or send a message — we’ll reply quickly with a concrete proposal."}
+              {inquiry ? t(`inquiry.${inquiry.key}.ctaText`) : t("readyBody")}
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
               {inquiry ? (
                 <ServiceInquiryDialog
                   serviceTitle={content.title}
                   source={inquiry.source}
-                  messageHint={isNl ? inquiry.messageHintNl : inquiry.messageHintEn}
-                  triggerLabel={isNl ? "Open contactformulier" : "Open contact form"}
+                  messageHint={t(`inquiry.${inquiry.key}.hint`)}
+                  triggerLabel={t("openContactForm")}
                 />
               ) : (
                 <Button asChild className="rounded-2xl">
-                  <SoftLink href={`/${locale}/afspraak`}>
-                    {isNl ? "Boek een afspraak" : "Book an appointment"}
+                  <SoftLink href={localizedHref(locale, "/afspraak")}>
+                    {tNav("book")}
                   </SoftLink>
                 </Button>
               )}
               <Button asChild variant="outline" className="rounded-2xl">
-                <SoftLink href={`/${locale}/ai-scan`}>
-                  {isNl ? "Gratis AI-scan" : "Free AI scan"}
+                <SoftLink href={localizedHref(locale, "/ai-scan")}>
+                  {t("freeAiScan")}
                 </SoftLink>
               </Button>
             </div>
@@ -281,7 +244,7 @@ export default async function ServiceDetailPage({
           <section className="mt-14">
             <Reveal>
               <h2 className="font-display text-2xl font-semibold tracking-tight">
-                {isNl ? "Gerelateerde diensten" : "Related services"}
+                {t("related")}
               </h2>
             </Reveal>
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -289,7 +252,7 @@ export default async function ServiceDetailPage({
                 <Reveal key={item.slug} delay={i * 0.04}>
                   <ServiceCard
                     href={serviceHref(locale, item)}
-                    title={isNl ? item.titleNl : item.title}
+                    title={catalogServiceTitle(item.slug, locale, item.title)}
                     summary={relatedContent?.subtitle || ""}
                     price={relatedContent?.price ?? undefined}
                     image={relatedContent?.image ?? undefined}

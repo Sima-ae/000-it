@@ -8,6 +8,10 @@ import { prisma } from "@/lib/prisma";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { buildPageMetadata } from "@/lib/seo";
+import { localizedHref } from "@/i18n/pathnames";
+import { resolveEntityParam } from "@/lib/resolve-entity-param";
+import { canonicalEntityKey } from "@/lib/entity-slug-cache";
+import { hydrateEntitySlugs } from "@/lib/entity-slugs";
 
 export const dynamic = "force-dynamic";
 
@@ -21,7 +25,9 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
-  const { locale, slug } = await params;
+  const { locale, slug: rawSlug } = await params;
+  await hydrateEntitySlugs(locale);
+  const slug = canonicalEntityKey(locale, "portfolio", rawSlug);
   const item = await prisma.portfolioProject.findFirst({
     where: { slug, published: true },
   });
@@ -41,8 +47,14 @@ export default async function PortfolioDetailPage({
 }: {
   params: Promise<{ locale: string; slug: string }>;
 }) {
-  const { locale, slug } = await params;
+  const { locale, slug: rawSlug } = await params;
   setRequestLocale(locale);
+  const slug = await resolveEntityParam({
+    locale,
+    entityType: "portfolio",
+    param: rawSlug,
+    internalPathFor: (key) => `/portfolio/${key}`,
+  });
   const t = await getTranslations("portfolio");
 
   const item = await prisma.portfolioProject.findFirst({
@@ -57,7 +69,7 @@ export default async function PortfolioDetailPage({
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 md:px-6">
       <Button asChild variant="ghost" size="sm" className="mb-6">
-        <Link href={`/${locale}/portfolio`}>
+        <Link href={localizedHref(locale, "/portfolio")}>
           <ArrowLeft className="mr-2 h-4 w-4" />
           {t("back")}
         </Link>

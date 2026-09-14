@@ -1,0 +1,1 @@
+Reserva una admisión. Bloquearemos formatos, cantidad y dirección de estilo y luego entregaremos archivos listos para imprimir.

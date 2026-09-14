@@ -1,0 +1,1 @@
+Hesap kapatıldıktan sonra iznimiz olmadan yeni bir hesap açmaya çalışmayacaksınız.

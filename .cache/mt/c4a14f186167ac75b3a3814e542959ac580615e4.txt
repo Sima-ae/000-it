@@ -1,0 +1,1 @@
+Préférence le jour même ou le jour ouvrable suivant, le cas échéant.

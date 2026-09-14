@@ -1,0 +1,4 @@
+– 8 núcleos de CPU
+– 12 GB de RAM
+– SSD RAID 10 de 240GB
+– Largura de banda de 6.000 GB

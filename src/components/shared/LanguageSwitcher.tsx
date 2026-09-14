@@ -7,9 +7,9 @@ import {
   enabledLanguages,
   flagSrc,
   getLanguage,
-  switchLocalePath,
   type SiteLanguage,
 } from "@/i18n/languages";
+import { switchLocalizedPath } from "@/i18n/pathnames";
 import { cn } from "@/lib/utils";
 
 const CLOSE_DELAY_MS = 180;
@@ -80,7 +80,9 @@ export function LanguageSwitcher({ className }: { className?: string }) {
     }
     document.cookie = `NEXT_LOCALE=${next.code};path=/;max-age=31536000;samesite=lax`;
     setOpen(false);
-    router.push(switchLocalePath(pathname, next.code));
+    const hash =
+      typeof window !== "undefined" ? window.location.hash.replace(/^#/, "") : "";
+    router.push(switchLocalizedPath(pathname, next.code, hash));
   }
 
   return (

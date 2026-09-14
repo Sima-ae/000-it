@@ -1,0 +1,3 @@
+Ispravljanje grešaka i grešaka u WordPress-u za performanse, sigurnost, ažuriranja i stabilnost.
+
+Rješavamo uobičajene probleme i primjenjujemo najbolje prakse kako bi vaša WordPress stranica radila pouzdano za vlasnike, programere i posjetitelje.

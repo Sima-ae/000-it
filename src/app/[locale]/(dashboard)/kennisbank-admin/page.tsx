@@ -16,6 +16,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { localizedHref } from "@/i18n/pathnames";
 import {
   KennisbankArticleForm,
   KennisbankCategoryForm,
@@ -82,7 +83,7 @@ export default function KennisbankAdminPage() {
         </div>
         <div className="flex gap-2">
           <Button asChild variant="outline">
-            <Link href={`/${locale}/kennisbank`} target="_blank">
+            <Link href={localizedHref(locale, "/kennisbank")} target="_blank">
               Bekijk publieke pagina
             </Link>
           </Button>

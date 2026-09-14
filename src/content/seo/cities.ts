@@ -1,3 +1,4 @@
+import { localizedHref } from "@/i18n/pathnames";
 /**
  * High-value service cities for local SEO + sitemap priority.
  * Sorted by `priority` descending — important cities first in the sitemap.
@@ -366,5 +367,5 @@ export function getSeoCity(slug: string) {
 }
 
 export function cityPath(locale: string, slug: string) {
-  return `/${locale}/locaties/${slug}`;
+  return localizedHref(locale, `/locaties/${slug}`);
 }

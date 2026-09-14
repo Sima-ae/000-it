@@ -1,0 +1,1 @@
+Vi diskuterer din applikation, forventet belastning, lagring, sikkerhed og foretrukket ledelsesniveau. Dette giver dig mulighed for at vælge kapacitet baseret på nutidens tekniske krav og den næste vækstfase frem for gætværk.

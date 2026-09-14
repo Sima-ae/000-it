@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useSession } from "next-auth/react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import {
   CheckSquare,
@@ -11,6 +11,7 @@ import {
   Ticket,
   X,
 } from "lucide-react";
+import { localizedHref } from "@/i18n/pathnames";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -69,6 +70,7 @@ function isAppShellPath(pathname: string) {
 export function LiveChatWidget() {
   const { data: session, status } = useSession();
   const locale = useLocale();
+  const t = useTranslations("liveChat");
   const pathname = usePathname();
   const isStaff = isStaffRole(session?.user?.role);
   const hideWidget = isAppShellPath(pathname);
@@ -141,29 +143,32 @@ export function LiveChatWidget() {
 
   const needsIdentity = !loggedIn && !ticket;
 
-  const copy = useMemo(() => {
-    const nl = locale === "nl";
-    return {
-      title: nl ? "Live chat" : "Live chat",
-      subtitle: nl ? "TripleZero iT support" : "TripleZero iT support",
-      online: nl ? "Online — we antwoorden zo snel mogelijk" : "Online — we reply as soon as possible",
-      teaser: nl ? "Hulp nodig? Chat met ons." : "Need help? Chat with us.",
-      emptyChat: nl
-        ? "Stel uw vraag. Ons team antwoordt zo snel mogelijk."
-        : "Ask a question. Our team will reply as soon as possible.",
-      emptyTicket: nl
-        ? "Beschrijf uw vraag — we openen een ticket dat zichtbaar is in uw dashboard."
-        : "Describe your request — we’ll open a ticket synced to your dashboard.",
-      placeholder: nl ? "Typ uw bericht…" : "Type your message…",
-      newTicket: nl ? "Nieuw ticket" : "New ticket",
-      name: nl ? "Naam" : "Name",
-      subject: nl ? "Onderwerp" : "Subject",
-      subjectPh: nl ? "Waar gaat het over?" : "What is this about?",
-      viewTickets: nl ? "Bekijk tickets" : "View tickets",
-      sendFailed: nl ? "Versturen mislukt" : "Could not send",
-      powered: nl ? "Helpdesk chat · TripleZero iT" : "Helpdesk chat · TripleZero iT",
-    };
-  }, [locale]);
+  const copy = useMemo(
+    () => ({
+      title: t("title"),
+      subtitle: t("subtitle"),
+      online: t("online"),
+      teaser: t("teaser"),
+      emptyChat: t("emptyChat"),
+      emptyTicket: t("emptyTicket"),
+      placeholder: t("placeholder"),
+      newTicket: t("newTicket"),
+      name: t("name"),
+      email: t("email"),
+      subject: t("subject"),
+      subjectPh: t("subjectPh"),
+      viewTickets: t("viewTickets"),
+      sendFailed: t("sendFailed"),
+      powered: t("powered"),
+      tabChat: t("tabChat"),
+      tabTicket: t("tabTicket"),
+      openChat: t("openChat"),
+      closeChat: t("closeChat"),
+      visitor: t("visitor"),
+      subjectPrefix: t("subjectPrefix"),
+    }),
+    [t],
+  );
 
   async function startConversation(opts: {
     subject: string;
@@ -250,10 +255,7 @@ export function LiveChatWidget() {
       if (!draft.trim()) return;
       if (needsIdentity && (!guestName.trim() || !guestEmail.trim())) return;
       await startConversation({
-        subject:
-          locale === "nl"
-            ? `Live chat — ${guestName || session?.user?.name || "bezoeker"}`
-            : `Live chat — ${guestName || session?.user?.name || "visitor"}`,
+        subject: `${copy.subjectPrefix} — ${guestName || session?.user?.name || copy.visitor}`,
         message: draft.trim(),
         source: "CHAT",
       });
@@ -306,7 +308,7 @@ export function LiveChatWidget() {
                 type="button"
                 onClick={() => setOpen(false)}
                 className="rounded-lg p-1.5 transition hover:bg-white/15"
-                aria-label="Close chat"
+                aria-label={copy.closeChat}
               >
                 <X className="h-5 w-5" />
               </button>
@@ -323,7 +325,7 @@ export function LiveChatWidget() {
               )}
             >
               <MessageCircle className="h-3.5 w-3.5" />
-              Chat
+              {copy.tabChat}
             </button>
             <button
               type="button"
@@ -382,7 +384,7 @@ export function LiveChatWidget() {
                 {loggedIn && !isStaff ? (
                   <p className="mt-2">
                     <SoftLink
-                      href={`/${locale}/crm/tickets`}
+                      href={localizedHref(locale, "/crm/tickets")}
                       className="text-primary underline-offset-2 hover:underline"
                     >
                       {copy.viewTickets}
@@ -411,7 +413,7 @@ export function LiveChatWidget() {
                   />
                 </div>
                 <div className="space-y-1">
-                  <Label className="text-xs">Email</Label>
+                  <Label className="text-xs">{copy.email}</Label>
                   <Input
                     type="email"
                     value={guestEmail}
@@ -484,7 +486,7 @@ export function LiveChatWidget() {
         type="button"
         onClick={() => (open ? setOpen(false) : openChat())}
         className="pointer-events-auto relative flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg transition hover:scale-105 hover:bg-primary/90"
-        aria-label={open ? "Close live chat" : "Open live chat"}
+        aria-label={open ? copy.closeChat : copy.openChat}
       >
         {open ? <X className="h-7 w-7" /> : <MessageCircle className="h-7 w-7" />}
         {!open && ticket ? (
@@ -498,6 +500,7 @@ export function LiveChatWidget() {
 /** Compact staff to-do panel used on dashboards only */
 export function StaffTodoPanel({ className }: { className?: string }) {
   const locale = useLocale();
+  const t = useTranslations("liveChat");
   const [todos, setTodos] = useState<{ id: string; title: string; done: boolean }[]>([]);
   const [title, setTitle] = useState("");
   const [loading, setLoading] = useState(true);
@@ -549,14 +552,14 @@ export function StaffTodoPanel({ className }: { className?: string }) {
         <div className="flex items-center gap-2">
           <CheckSquare className="h-4 w-4 text-primary" />
           <h3 className="font-display text-base font-semibold">
-            {locale === "nl" ? "To-do lijst" : "To-do list"}
+            {t("todoTitle")}
           </h3>
         </div>
         <SoftLink
-          href={`/${locale}/todos`}
+          href={localizedHref(locale, "/todos")}
           className="text-xs text-primary hover:underline"
         >
-          {locale === "nl" ? "Alles" : "View all"}
+          {t("todoViewAll")}
         </SoftLink>
       </div>
       {loading ? (
@@ -590,7 +593,7 @@ export function StaffTodoPanel({ className }: { className?: string }) {
           ))}
           {!todos.length ? (
             <li className="text-sm text-muted-foreground">
-              {locale === "nl" ? "Nog geen to-dos." : "No to-dos yet."}
+              {t("todoEmpty")}
             </li>
           ) : null}
         </ul>
@@ -599,11 +602,11 @@ export function StaffTodoPanel({ className }: { className?: string }) {
         <Input
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          placeholder={locale === "nl" ? "Nieuwe taak…" : "New task…"}
+          placeholder={t("todoPlaceholder")}
           className="h-9"
         />
         <Button type="submit" size="sm" className="shrink-0">
-          {locale === "nl" ? "Toevoegen" : "Add"}
+          {t("todoAdd")}
         </Button>
       </form>
     </div>

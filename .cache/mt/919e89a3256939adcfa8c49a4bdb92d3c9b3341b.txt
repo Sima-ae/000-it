@@ -1,0 +1,1 @@
+Curățare programe malware pentru site-uri personalizate PHP, HTML și Next.js - separat de pachetele de programe malware WordPress.

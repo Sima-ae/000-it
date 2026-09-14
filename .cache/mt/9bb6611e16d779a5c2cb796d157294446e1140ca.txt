@@ -1,0 +1,1 @@
+Tempi di caricamento inferiori a 2 secondi e Core Web Vitals ottimizzati.

@@ -1,0 +1,5 @@
+Brzina web stranice oblikuje korisničko iskustvo, performanse pretraživanja i konverzije. TripleZero iT optimizira WordPress stranice tako da se posjetitelji brže učitavaju i manje odbijaju.
+
+Počinjemo s revizijom performansi, a zatim poboljšavamo uska grla u kodu, bazi podataka, slikama, dodacima, temi i konfiguraciji hostinga. Keširanje i ciljano podešavanje donose mjerljive dobitke u vremenu učitavanja.
+
+Nakon isporuke dobijate 7 dana besplatne podrške za pitanja o radu optimizacije — održavanju vaše stranice bržom, glatkijom i profesionalnijom.

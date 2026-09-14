@@ -1,0 +1,1 @@
+SSD RAID 10 ja selkeät resurssirajat takaavat ennustettavan suorituskyvyn. Laajenna, kun projektisi sitä tarvitsee.

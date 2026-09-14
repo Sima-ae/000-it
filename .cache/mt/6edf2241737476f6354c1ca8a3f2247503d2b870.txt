@@ -1,0 +1,1 @@
+Maantieteellinen hakukoneoptimointi karttoja, paikallisia paketteja ja alueellista hakua varten.

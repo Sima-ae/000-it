@@ -7,6 +7,7 @@ import { GlassCard } from "@/components/marketing/GlassCard";
 import { KennisbankCategoryGrid } from "@/components/kennisbank/KennisbankCategoryGrid";
 import { listArticles, listCategories } from "@/lib/kennisbank";
 import { buildStaticPageMetadata } from "@/lib/seo";
+import { localizedHref } from "@/i18n/pathnames";
 
 export const dynamic = "force-dynamic";
 
@@ -17,7 +18,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "kennisbank" });
-  const base = buildStaticPageMetadata(locale, "/kennisbank");
+  const base = await buildStaticPageMetadata(locale, "/kennisbank");
   if (locale === "nl" || locale === "en") return base;
   return {
     ...base,
@@ -91,7 +92,7 @@ export default async function KennisbankPage({
               </p>
             </div>
             <Button asChild className="shrink-0 rounded-xl">
-              <SoftLink href={`/${locale}/contact`}>{t("ctaButton")}</SoftLink>
+              <SoftLink href={localizedHref(locale, "/contact")}>{t("ctaButton")}</SoftLink>
             </Button>
           </GlassCard>
         </aside>

@@ -1,0 +1,1 @@
+Wir beginnen mit einer Beispieldatei und klaren Eingaberegeln für Felder, Quelldaten und Ausnahmen. Während der Lieferung prüfen wir die Vollständigkeit und Unregelmäßigkeiten, damit Sie den Überblick über Fortschritt und Qualität behalten.

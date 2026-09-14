@@ -14,6 +14,7 @@ import {
   Users,
   Workflow,
 } from "lucide-react";
+import { localizedHref } from "@/i18n/pathnames";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { cn } from "@/lib/utils";
 import { isStaffRole } from "@/lib/roles";
@@ -48,7 +49,7 @@ export function CrmNav() {
   return (
     <div className="mb-6 flex gap-1 overflow-x-auto rounded-2xl border border-border/70 bg-muted/20 p-1.5">
       {links.map((item) => {
-        const href = `/${locale}${item.href}`;
+        const href = localizedHref(locale, item.href);
         const active =
           item.href === "/crm"
             ? pathname === href

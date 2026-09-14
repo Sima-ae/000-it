@@ -1,0 +1,5 @@
+TripleZero iT zərərli proqram aradan qaldırılması ilə WordPress veb saytınızı zərərli təhdidlərdən qoruyun. İnfeksiyalar təhlükəsizliyə, reputasiyaya və işləmə müddətinə ziyan vurur – biz diqqətimizi aşkarlama, hərtərəfli təmizləmə və bərpaya yönəldirik.
+
+Biz faylları, verilənlər bazalarını və həssas komponentləri skan edirik, zərərli proqramları və arzuolunmaz yönləndirmələri aradan qaldırırıq və lazım olduqda zədələnmiş hissələri təmir edirik. Təmizləmədən əvvəl və sonra ehtiyat nüsxələri götürülür.
+
+Siz həmçinin yenidən yoluxma şansını azaltmaq üçün profilaktika təlimatları alırsınız, beləliklə, biznesinizi inamla idarə etməyə qayıda bilərsiniz.

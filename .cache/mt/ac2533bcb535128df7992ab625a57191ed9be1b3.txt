@@ -1,0 +1,6 @@
+Hej TripleZero iT,
+
+Jag skulle vilja veta mer om {service} för vår {hint}.
+
+Webbplats URL:
+Mål (t.ex. chatbot, produktassistent, innehålls-AI, anpassad):

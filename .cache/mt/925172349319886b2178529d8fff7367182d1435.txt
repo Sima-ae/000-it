@@ -1,0 +1,1 @@
+Skripti on osa ohjelmakoodia, jota käytetään saamaan verkkosivustomme toimimaan kunnolla ja interaktiivisesti. Tämä koodi suoritetaan palvelimellamme tai laitteessasi.

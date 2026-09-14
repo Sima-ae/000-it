@@ -1,0 +1,3 @@
+Performans, təhlükəsizlik, yeniləmələr və sabitlik üçün WordPress səhvləri və səhvlərin düzəldilməsi.
+
+Biz ümumi problemləri həll edirik və ən yaxşı təcrübələri tətbiq edirik ki, WordPress saytınız sahiblər, tərtibatçılar və ziyarətçilər üçün etibarlı şəkildə işləsin.

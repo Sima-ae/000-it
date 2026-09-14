@@ -2,6 +2,8 @@
  * Canonical SEO copy + keywords for static marketing/legal pages.
  * `lastmod` is the content revision date (ISO) used in the sitemap.
  */
+import { getLocalizedCopySync } from "@/lib/localized-copy-cache";
+
 export type PageSeo = {
   path: string;
   lastmod: string;
@@ -353,7 +355,48 @@ export const staticPageSeo: PageSeo[] = [
   },
 ];
 
+export type LocalizedSeoCopy = {
+  title: string;
+  description: string;
+  keywords: string[];
+};
+
 export function getStaticPageSeo(path: string) {
   const clean = path === "/" ? "/" : path.replace(/\/$/, "") || "/";
   return staticPageSeo.find((p) => p.path === clean);
+}
+
+export function getStaticPageSeoCopy(
+  path: string,
+  locale: string,
+): LocalizedSeoCopy | null {
+  const page = getStaticPageSeo(path);
+  if (!page) return null;
+  if (locale === "nl") {
+    return {
+      title: page.title.nl,
+      description: page.description.nl,
+      keywords: page.keywords.nl,
+    };
+  }
+  if (locale === "en") {
+    return {
+      title: page.title.en,
+      description: page.description.en,
+      keywords: page.keywords.en,
+    };
+  }
+  const overlay = getLocalizedCopySync<LocalizedSeoCopy>("seo", page.path, locale);
+  if (overlay?.title && overlay.description) {
+    return {
+      title: overlay.title,
+      description: overlay.description,
+      keywords: overlay.keywords?.length ? overlay.keywords : page.keywords.en,
+    };
+  }
+  return {
+    title: page.title.en,
+    description: page.description.en,
+    keywords: page.keywords.en,
+  };
 }

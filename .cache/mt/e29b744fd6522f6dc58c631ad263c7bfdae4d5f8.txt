@@ -1,0 +1,1 @@
+Kısa bir istek gönderin; ürün asistanlarını, aramayı, alışveriş sepeti yardımını veya destek yapay zekasını inceleyeceğiz ve sonraki somut adımlarla yanıt vereceğiz.

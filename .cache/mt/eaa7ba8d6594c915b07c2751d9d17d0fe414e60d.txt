@@ -1,0 +1,1 @@
+HTTP stroga sigurnost prijenosa i srodna sigurnosna zaglavlja i pravila preglednika

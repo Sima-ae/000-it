@@ -1,0 +1,1 @@
+Timpi de încărcare mai rapid, Core Web Vitals și stocare în cache pentru stive personalizate în afara WordPress.

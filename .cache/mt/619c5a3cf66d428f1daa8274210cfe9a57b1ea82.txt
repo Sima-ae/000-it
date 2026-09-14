@@ -1,0 +1,5 @@
+VPS Hosting Basic, paylaşılan barındırmanın sağladığından daha fazla kontrole ve öngörülebilir kaynağa ihtiyaç duyan geliştiricilere, küçük uygulamalara ve web sitelerine uygundur.
+
+2 CPU çekirdeği, 2 GB RAM, 40 GB SSD RAID 10 depolama ve 1000 GB bant genişliği ile hafif ve orta düzey iş yükleri için sağlam bir sanal sunucuya sahip olursunuz.
+
+TripleZero iT size güvenilir bir altyapı temeli sağlar, böylece uygulamanıza, web sitenize veya geliştirme ortamınıza odaklanabilirsiniz. Talep arttığında ölçeği büyütün.

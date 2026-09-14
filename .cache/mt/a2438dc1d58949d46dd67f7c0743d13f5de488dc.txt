@@ -1,0 +1,4 @@
+– 8 rdzeni procesora
+– 12 GB RAM-u
+– 240 GB SSD RAID 10
+– przepustowość 6000 GB

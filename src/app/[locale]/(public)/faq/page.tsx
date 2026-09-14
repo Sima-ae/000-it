@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { FaqCategories } from "@/components/content/FaqAccordion";
 import { getFaqContent } from "@/content/faq";
 import { buildStaticPageMetadata } from "@/lib/seo";
+import { localizedHref } from "@/i18n/pathnames";
 
 export async function generateMetadata({
   params,
@@ -12,7 +13,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const base = buildStaticPageMetadata(locale, "/faq");
+  const base = await buildStaticPageMetadata(locale, "/faq");
   if (locale === "nl" || locale === "en") return base;
   const content = getFaqContent(locale);
   return {
@@ -61,7 +62,7 @@ export default async function FaqPage({
           <p className="mt-1 text-sm text-muted-foreground">{content.ctaText}</p>
         </div>
         <Button asChild className="shrink-0 rounded-xl">
-          <SoftLink href={`/${locale}/contact`}>{content.ctaButton}</SoftLink>
+          <SoftLink href={localizedHref(locale, "/contact")}>{content.ctaButton}</SoftLink>
         </Button>
       </aside>
     </div>

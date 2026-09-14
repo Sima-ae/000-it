@@ -1,0 +1,1 @@
+Ett script är en bit programkod som används för att få vår webbplats att fungera korrekt och interaktivt. Denna kod körs på vår server eller på din enhet.

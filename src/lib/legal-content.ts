@@ -1,6 +1,8 @@
 import importedPages from "@/content/fixweb/imported-pages.json";
-import termsNl from "@/content/legal/terms.nl.json";
-import privacyNl from "@/content/legal/privacy.nl.json";
+import privacyI18n from "@/content/legal/privacy-i18n.json";
+import termsI18n from "@/content/legal/terms-i18n.json";
+import cookiesI18n from "@/content/legal/cookies-i18n.json";
+import legalMeta from "@/content/legal/meta-i18n.json";
 import { translateSectionToNl } from "@/content/legal/translate-nl";
 import { brandify, type ContentBlock } from "@/lib/fixweb-content";
 
@@ -14,6 +16,16 @@ type ImportedPage = {
   title: string;
   sections: ImportedSection[];
   rawText: string;
+};
+
+type LegalMeta = {
+  updatedLabel: string;
+  privacyTitle: string;
+  termsTitle: string;
+  cookiesTitle: string;
+  privacyLabel: string;
+  termsLabel: string;
+  cookiesLabel: string;
 };
 
 export type LegalCookieRow = {
@@ -42,52 +54,42 @@ export type LegalPageContent = {
 
 const pages = (importedPages as { pages: Record<string, ImportedPage> }).pages;
 
-const NL_SECTIONS: Record<string, ImportedSection[]> = {
-  "terms-and-conditions": termsNl as ImportedSection[],
-  "privacy-policy": privacyNl as ImportedSection[],
-};
+const privacyPacks = privacyI18n as Record<string, ImportedSection[]>;
+const termsPacks = termsI18n as Record<string, ImportedSection[]>;
+const cookiesPacks = cookiesI18n as Record<string, ImportedSection[]>;
+const metaByLocale = legalMeta as Record<string, LegalMeta>;
 
-const META: Record<
-  string,
-  {
-    titleEn: string;
-    titleNl: string;
-    related: { href: string; labelEn: string; labelNl: string }[];
+function metaFor(locale: string): LegalMeta {
+  return metaByLocale[locale] || metaByLocale.en;
+}
+
+function titleFor(slug: string, locale: string): string {
+  const m = metaFor(locale);
+  if (slug === "privacy-policy") return m.privacyTitle;
+  if (slug === "terms-and-conditions") return m.termsTitle;
+  if (slug === "cookie-policy") return m.cookiesTitle;
+  return pages[slug]?.title || slug;
+}
+
+function relatedFor(slug: string, locale: string): { href: string; label: string }[] {
+  const m = metaFor(locale);
+  if (slug === "terms-and-conditions") {
+    return [
+      { href: "/privacy", label: m.privacyLabel },
+      { href: "/cookies", label: m.cookiesLabel },
+    ];
   }
-> = {
-  "terms-and-conditions": {
-    titleEn: "Terms and Conditions",
-    titleNl: "Algemene voorwaarden",
-    related: [
-      { href: "/privacy", labelEn: "Privacy Policy", labelNl: "Privacybeleid" },
-      { href: "/cookies", labelEn: "Cookie Policy", labelNl: "Cookiebeleid" },
-    ],
-  },
-  "privacy-policy": {
-    titleEn: "Privacy Policy",
-    titleNl: "Privacybeleid",
-    related: [
-      { href: "/cookies", labelEn: "Cookie Policy", labelNl: "Cookiebeleid" },
-      {
-        href: "/voorwaarden",
-        labelEn: "Terms and Conditions",
-        labelNl: "Algemene voorwaarden",
-      },
-    ],
-  },
-  "cookie-policy": {
-    titleEn: "Cookie Policy",
-    titleNl: "Cookiebeleid",
-    related: [
-      { href: "/privacy", labelEn: "Privacy Policy", labelNl: "Privacybeleid" },
-      {
-        href: "/voorwaarden",
-        labelEn: "Terms and Conditions",
-        labelNl: "Algemene voorwaarden",
-      },
-    ],
-  },
-};
+  if (slug === "privacy-policy") {
+    return [
+      { href: "/cookies", label: m.cookiesLabel },
+      { href: "/voorwaarden", label: m.termsLabel },
+    ];
+  }
+  return [
+    { href: "/privacy", label: m.privacyLabel },
+    { href: "/voorwaarden", label: m.termsLabel },
+  ];
+}
 
 const META_HEADING =
   /^(Name|Naam|Expiration|Verloop|Function|Functie|Functional|Functioneel|Statistics|Statistieken|Statistics \(anonymous\)|Statistieken \(anoniem\)|Marketing|Marketing\/Tracking|Sharing data|Gegevens delen|Usage|Gebruik|Consent|Toestemming|Purpose pending investigation|Doel in onderzoek|Purpose pending|Purpose)$/i;
@@ -264,56 +266,60 @@ function parseCookieVendors(sections: ImportedSection[]): {
   return { before, vendors, after };
 }
 
-function resolveSections(slug: string, isNl: boolean): ImportedSection[] {
-  if (isNl && NL_SECTIONS[slug]) {
-    return NL_SECTIONS[slug];
+
+function resolveSections(slug: string, locale: string): ImportedSection[] {
+  if (slug === "privacy-policy") {
+    return privacyPacks[locale] || privacyPacks.en || [];
+  }
+  if (slug === "terms-and-conditions") {
+    return termsPacks[locale] || termsPacks.en || [];
   }
 
-  const en = pages[slug]?.sections || [];
-  if (isNl && slug === "cookie-policy") {
-    return en.map(translateSectionToNl);
+  if (slug === "cookie-policy") {
+    if (cookiesPacks[locale]?.length) return cookiesPacks[locale];
+    const en = pages[slug]?.sections || cookiesPacks.en || [];
+    if (locale === "nl") return en.map(translateSectionToNl);
+    return en;
   }
-  return en;
+
+  return pages[slug]?.sections || [];
 }
 
 export function getLegalPage(slug: string, locale: string = "en"): LegalPageContent | null {
   const page = pages[slug];
-  const meta = META[slug];
-  if (!page || !meta) return null;
+  if (!page) return null;
+  if (
+    slug !== "privacy-policy" &&
+    slug !== "terms-and-conditions" &&
+    slug !== "cookie-policy"
+  ) {
+    return null;
+  }
 
-  const isNl = locale.toLowerCase().startsWith("nl");
-  const sections = resolveSections(slug, isNl);
+  const loc = locale.toLowerCase();
+  const sections = resolveSections(slug, loc);
+  const meta = metaFor(loc);
 
   if (slug === "cookie-policy") {
     const parsed = parseCookieVendors(sections);
     return {
       slug,
-      title: isNl ? meta.titleNl : meta.titleEn,
-      updatedLabel: isNl
-        ? "Laatst bijgewerkt op 01-07-2026"
-        : "Last updated on 01-07-2026",
+      title: titleFor(slug, loc),
+      updatedLabel: meta.updatedLabel,
       beforeVendors: parsed.before,
       cookieVendors: parsed.vendors,
       afterVendors: parsed.after,
-      related: meta.related.map((r) => ({
-        href: r.href,
-        label: isNl ? r.labelNl : r.labelEn,
-      })),
+      related: relatedFor(slug, loc),
     };
   }
 
   return {
     slug,
-    title: isNl ? meta.titleNl : meta.titleEn,
-    updatedLabel: isNl
-      ? "Laatst bijgewerkt op 01-07-2026"
-      : "Last updated on 01-07-2026",
+    title: titleFor(slug, loc),
+    updatedLabel: meta.updatedLabel,
     beforeVendors: sections.flatMap(sectionBlocks),
     cookieVendors: [],
     afterVendors: [],
-    related: meta.related.map((r) => ({
-      href: r.href,
-      label: isNl ? r.labelNl : r.labelEn,
-    })),
+    related: relatedFor(slug, loc),
   };
 }

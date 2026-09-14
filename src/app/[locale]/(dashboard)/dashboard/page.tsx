@@ -13,6 +13,7 @@ import {
   Ticket,
   Users,
 } from "lucide-react";
+import { localizedHref } from "@/i18n/pathnames";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { StaffTodoPanel } from "@/components/chat/LiveChatWidget";
 import { Button } from "@/components/ui/button";
@@ -138,22 +139,16 @@ export default function DashboardPage() {
       <div className="space-y-4 rounded-2xl border border-border bg-card/60 p-6">
         <h1 className="font-display text-2xl font-semibold tracking-tight">{t("title")}</h1>
         <p className="text-sm text-muted-foreground">
-          {unauthorized
-            ? locale === "nl"
-              ? "U sessie is verlopen. Log opnieuw in."
-              : "Your session expired. Please sign in again."
-            : locale === "nl"
-              ? "Dashboard kon niet worden geladen. Controleer uw databaseverbinding en probeer opnieuw."
-              : "Dashboard could not be loaded. Check your database connection and try again."}
+          {unauthorized ? t("sessionExpired") : t("loadFailed")}
         </p>
         <div className="flex flex-wrap gap-2">
           {unauthorized ? (
             <Button asChild>
-              <SoftLink href={`/${locale}/login`}>{locale === "nl" ? "Naar login" : "Go to login"}</SoftLink>
+              <SoftLink href={localizedHref(locale, "/login")}>{t("goToLogin")}</SoftLink>
             </Button>
           ) : (
             <Button onClick={() => void refetch()} disabled={isFetching}>
-              {isFetching ? "…" : locale === "nl" ? "Opnieuw proberen" : "Retry"}
+              {isFetching ? "…" : t("retry")}
             </Button>
           )}
         </div>
@@ -180,13 +175,13 @@ export default function DashboardPage() {
           </p>
           <div className="mt-6 flex flex-wrap gap-2">
             <Button asChild>
-              <SoftLink href={`/${locale}/ai-scan`}>{t("runScan")}</SoftLink>
+              <SoftLink href={localizedHref(locale, "/ai-scan")}>{t("runScan")}</SoftLink>
             </Button>
             <Button asChild variant="outline">
-              <SoftLink href={`/${locale}/projects`}>{t("viewProjects")}</SoftLink>
+              <SoftLink href={localizedHref(locale, "/projects")}>{t("viewProjects")}</SoftLink>
             </Button>
             <Button asChild variant="outline">
-              <SoftLink href={`/${locale}/crm/tickets`}>{t("tickets")}</SoftLink>
+              <SoftLink href={localizedHref(locale, "/crm/tickets")}>{t("tickets")}</SoftLink>
             </Button>
           </div>
         </div>
@@ -200,31 +195,25 @@ export default function DashboardPage() {
 
         <div className="grid gap-4 lg:grid-cols-3">
           <QuickLink
-            href={`/${locale}/projects`}
+            href={localizedHref(locale, "/projects")}
             title={t("projects")}
             description={t("clientQuickProjects")}
             icon={FolderKanban}
           />
           <QuickLink
-            href={`/${locale}/crm/tickets`}
+            href={localizedHref(locale, "/crm/tickets")}
             title={t("tickets")}
-            description={
-              locale === "nl"
-                ? "Bekijk uw chat en supporttickets"
-                : "View your chat and support tickets"
-            }
+            description={t("clientHomeHint")}
             icon={Ticket}
           />
           <QuickLink
-            href={`/${locale}/crm`}
+            href={localizedHref(locale, "/crm")}
             title={t("crm")}
-            description={
-              locale === "nl" ? "Facturen, berichten en overzicht" : "Invoices, messages and overview"
-            }
+            description={t("invoicesOverview")}
             icon={BriefcaseBusiness}
           />
           <QuickLink
-            href={`/${locale}/seo-analysis`}
+            href={localizedHref(locale, "/seo-analysis")}
             title={t("seo")}
             description={t("clientQuickSeo")}
             icon={Search}
@@ -240,7 +229,7 @@ export default function DashboardPage() {
               {data.recentTickets.map((ticket) => (
                 <SoftLink
                   key={ticket.id}
-                  href={`/${locale}/crm/tickets`}
+                  href={localizedHref(locale, "/crm/tickets")}
                   className="flex items-center justify-between rounded-lg border border-border px-3 py-2 transition hover:border-primary/40"
                 >
                   <div className="min-w-0">
@@ -251,9 +240,7 @@ export default function DashboardPage() {
                 </SoftLink>
               ))}
               {!data.recentTickets.length && (
-                <p className="text-sm text-muted-foreground">
-                  {locale === "nl" ? "Nog geen tickets." : "No tickets yet."}
-                </p>
+                <p className="text-sm text-muted-foreground">{t("noTicketsYet")}</p>
               )}
             </CardContent>
           </Card>
@@ -301,10 +288,10 @@ export default function DashboardPage() {
           </div>
           <div className="flex flex-wrap gap-2">
             <Button asChild variant="outline">
-              <SoftLink href={`/${locale}/crm/clients`}>{t("addClient")}</SoftLink>
+              <SoftLink href={localizedHref(locale, "/crm/clients")}>{t("addClient")}</SoftLink>
             </Button>
             <Button asChild>
-              <SoftLink href={`/${locale}/nieuws-admin`}>{t("addNews")}</SoftLink>
+              <SoftLink href={localizedHref(locale, "/nieuws-admin")}>{t("addNews")}</SoftLink>
             </Button>
           </div>
         </div>
@@ -326,7 +313,7 @@ export default function DashboardPage() {
               {data.recentTickets.map((ticket) => (
                 <SoftLink
                   key={ticket.id}
-                  href={`/${locale}/crm/tickets`}
+                  href={localizedHref(locale, "/crm/tickets")}
                   className="flex items-center justify-between rounded-lg border border-border px-3 py-2 transition hover:border-primary/40"
                 >
                   <div className="min-w-0">
@@ -337,9 +324,7 @@ export default function DashboardPage() {
                 </SoftLink>
               ))}
               {!data.recentTickets.length && (
-                <p className="text-sm text-muted-foreground">
-                  {locale === "nl" ? "Nog geen tickets." : "No tickets yet."}
-                </p>
+                <p className="text-sm text-muted-foreground">{t("noTicketsYet")}</p>
               )}
             </CardContent>
           </Card>
@@ -347,27 +332,25 @@ export default function DashboardPage() {
 
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           <QuickLink
-            href={`/${locale}/crm/tickets`}
+            href={localizedHref(locale, "/crm/tickets")}
             title={t("tickets")}
-            description={
-              locale === "nl" ? "Live chat & support inbox" : "Live chat & support inbox"
-            }
+            description={t("liveChatInbox")}
             icon={Ticket}
           />
           <QuickLink
-            href={`/${locale}/crm/clients`}
+            href={localizedHref(locale, "/crm/clients")}
             title={t("clients")}
             description={t("managerQuickClients")}
             icon={Users}
           />
           <QuickLink
-            href={`/${locale}/crm/leads`}
+            href={localizedHref(locale, "/crm/leads")}
             title={t("leads")}
             description={t("managerQuickLeads")}
             icon={Inbox}
           />
           <QuickLink
-            href={`/${locale}/nieuws-admin`}
+            href={localizedHref(locale, "/nieuws-admin")}
             title={t("news")}
             description={t("managerQuickNews")}
             icon={Newspaper}
@@ -407,7 +390,7 @@ export default function DashboardPage() {
               {data.recentLeads.map((lead) => (
                 <SoftLink
                   key={lead.id}
-                  href={`/${locale}/crm/leads`}
+                  href={localizedHref(locale, "/crm/leads")}
                   className="block rounded-lg border border-border px-3 py-2 transition hover:border-primary/40"
                 >
                   <p className="font-medium">{lead.name}</p>
@@ -465,10 +448,10 @@ export default function DashboardPage() {
         </div>
         <div className="flex gap-2">
           <Button asChild variant="outline">
-            <SoftLink href={`/${locale}/projects`}>{t("newProject")}</SoftLink>
+            <SoftLink href={localizedHref(locale, "/projects")}>{t("newProject")}</SoftLink>
           </Button>
           <Button asChild>
-            <SoftLink href={`/${locale}/ai-scan`}>{t("runScan")}</SoftLink>
+            <SoftLink href={localizedHref(locale, "/ai-scan")}>{t("runScan")}</SoftLink>
           </Button>
         </div>
       </div>
@@ -490,7 +473,7 @@ export default function DashboardPage() {
             {data.recentTickets.map((ticket) => (
               <SoftLink
                 key={ticket.id}
-                href={`/${locale}/crm/tickets`}
+                href={localizedHref(locale, "/crm/tickets")}
                 className="flex items-center justify-between rounded-lg border border-border px-3 py-2 transition hover:border-primary/40"
               >
                 <div className="min-w-0">
@@ -501,9 +484,7 @@ export default function DashboardPage() {
               </SoftLink>
             ))}
             {!data.recentTickets.length && (
-              <p className="text-sm text-muted-foreground">
-                {locale === "nl" ? "Nog geen tickets." : "No tickets yet."}
-              </p>
+              <p className="text-sm text-muted-foreground">{t("noTicketsYet")}</p>
             )}
           </CardContent>
         </Card>
@@ -511,27 +492,25 @@ export default function DashboardPage() {
 
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         <QuickLink
-          href={`/${locale}/crm/tickets`}
+          href={localizedHref(locale, "/crm/tickets")}
           title={t("tickets")}
-          description={
-            locale === "nl" ? "Live chat & support inbox" : "Live chat & support inbox"
-          }
+          description={t("liveChatInbox")}
           icon={Ticket}
         />
         <QuickLink
-          href={`/${locale}/users`}
+          href={localizedHref(locale, "/users")}
           title={t("users")}
           description={t("adminQuickUsers")}
           icon={Sparkles}
         />
         <QuickLink
-          href={`/${locale}/crm/leads`}
+          href={localizedHref(locale, "/crm/leads")}
           title={t("leads")}
           description={t("adminQuickLeads")}
           icon={Inbox}
         />
         <QuickLink
-          href={`/${locale}/content-generator`}
+          href={localizedHref(locale, "/content-generator")}
           title={t("content")}
           description={t("adminQuickContent")}
           icon={Newspaper}

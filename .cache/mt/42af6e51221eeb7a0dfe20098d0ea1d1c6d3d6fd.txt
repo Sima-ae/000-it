@@ -1,0 +1,1 @@
+Idealne rozwiązanie, gdy trzeba absorbować szczyty lub zlecać bieżącą pracę z danymi na zewnątrz bez przeciążania pojemności wewnętrznej.

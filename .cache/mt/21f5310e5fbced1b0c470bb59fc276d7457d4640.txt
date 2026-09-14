@@ -1,0 +1,1 @@
+Nopeammat latausajat, Core Web Vitals ja mukautettujen pinojen välimuisti WordPressin ulkopuolella.

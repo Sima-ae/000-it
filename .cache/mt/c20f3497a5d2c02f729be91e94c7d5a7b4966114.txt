@@ -1,0 +1,3 @@
+WordPress feil og feilretting for ytelse, sikkerhet, oppdateringer og stabilitet.
+
+Vi løser vanlige problemer og bruker beste praksis slik at WordPress-siden din fungerer pålitelig for eiere, utviklere og besøkende.

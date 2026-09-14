@@ -1,0 +1,1 @@
+Az irányítópult nem tölthető be. Ellenőrizze az adatbázis-kapcsolatot, és próbálja újra.

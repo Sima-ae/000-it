@@ -1,0 +1,1 @@
+Aloitamme valikoimastasi, prosesseistasi, yleisöstäsi ja nykyisestä teknologiastasi. Sen jälkeen priorisoimme parannukset, rakennamme tai määritämme selkeissä vaiheissa ja testaamme tärkeimmät asiakaspolut ennen julkaisua.

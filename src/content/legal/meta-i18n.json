@@ -1,0 +1,317 @@
+{
+  "en": {
+    "updatedLabel": "Last updated on 01-07-2026",
+    "privacyTitle": "Privacy Policy",
+    "termsTitle": "Terms and Conditions",
+    "cookiesTitle": "Cookie Policy",
+    "privacyLabel": "Privacy Policy",
+    "termsLabel": "Terms and Conditions",
+    "cookiesLabel": "Cookie Policy"
+  },
+  "nl": {
+    "updatedLabel": "Laatst bijgewerkt op 01-07-2026",
+    "privacyTitle": "Privacybeleid",
+    "termsTitle": "Algemene voorwaarden",
+    "cookiesTitle": "Cookiebeleid",
+    "privacyLabel": "Privacybeleid",
+    "termsLabel": "Algemene voorwaarden",
+    "cookiesLabel": "Cookiebeleid"
+  },
+  "fr": {
+    "updatedLabel": "Dernière mise à jour le 01-07-2026",
+    "privacyTitle": "Politique de Confidentialité",
+    "termsTitle": "Conditions d’utilisation",
+    "cookiesTitle": "Politique d'utilisation de cookies",
+    "privacyLabel": "Politique de Confidentialité",
+    "termsLabel": "Conditions d’utilisation",
+    "cookiesLabel": "Politique d'utilisation de cookies"
+  },
+  "de": {
+    "updatedLabel": "Zuletzt aktualisiert am 01.07.2026",
+    "privacyTitle": "Datenschutzrichtlinie",
+    "termsTitle": "Allgemeine Geschäftsbedingungen",
+    "cookiesTitle": "Cookie-Richtlinie",
+    "privacyLabel": "Datenschutzrichtlinie",
+    "termsLabel": "Allgemeine Geschäftsbedingungen",
+    "cookiesLabel": "Cookie-Richtlinie"
+  },
+  "es": {
+    "updatedLabel": "Última actualización el 01-07-2026",
+    "privacyTitle": "Política de privacidad",
+    "termsTitle": "Términos y condiciones",
+    "cookiesTitle": "Política de cookies",
+    "privacyLabel": "Política de privacidad",
+    "termsLabel": "Términos y condiciones",
+    "cookiesLabel": "Política de cookies"
+  },
+  "pt": {
+    "updatedLabel": "Última atualização em 01-07-2026",
+    "privacyTitle": "Política de privacidade",
+    "termsTitle": "Termos e Condições do Cartão",
+    "cookiesTitle": "Política de cookies",
+    "privacyLabel": "Política de privacidade",
+    "termsLabel": "Termos e Condições do Cartão",
+    "cookiesLabel": "Política de cookies"
+  },
+  "it": {
+    "updatedLabel": "Ultimo aggiornamento il 01-07-2026",
+    "privacyTitle": "Nella politica sulla protezione dei dati",
+    "termsTitle": "Termini e condizioni",
+    "cookiesTitle": "Informativa sui cookie",
+    "privacyLabel": "Nella politica sulla protezione dei dati",
+    "termsLabel": "Termini e condizioni",
+    "cookiesLabel": "Informativa sui cookie"
+  },
+  "el": {
+    "updatedLabel": "Τελευταία ενημέρωση στις 01-07-2026",
+    "privacyTitle": "Πολιτική Aπορρήτου",
+    "termsTitle": "Όροι και προϋποθέσεις",
+    "cookiesTitle": "Πολιτική Cookies",
+    "privacyLabel": "Πολιτική Aπορρήτου",
+    "termsLabel": "Όροι και προϋποθέσεις",
+    "cookiesLabel": "Πολιτική Cookies"
+  },
+  "pl": {
+    "updatedLabel": "Ostatnia aktualizacja: 01.07.2026",
+    "privacyTitle": "Polityce prywatności",
+    "termsTitle": "Warunki i postanowienia",
+    "cookiesTitle": "Polityka cookies",
+    "privacyLabel": "Polityce prywatności",
+    "termsLabel": "Warunki i postanowienia",
+    "cookiesLabel": "Polityka cookies"
+  },
+  "cs": {
+    "updatedLabel": "Naposledy aktualizováno 01.07.2026",
+    "privacyTitle": "Zásady ochrany osobních údajů",
+    "termsTitle": "Podmínky a pravidla",
+    "cookiesTitle": "Zásady používání souborů cookie",
+    "privacyLabel": "Zásady ochrany osobních údajů",
+    "termsLabel": "Podmínky a pravidla",
+    "cookiesLabel": "Zásady používání souborů cookie"
+  },
+  "sk": {
+    "updatedLabel": "Posledná aktualizácia 01-07-2026",
+    "privacyTitle": "Zásady ochrany osobných údajov",
+    "termsTitle": "Podmienky a pravidlá",
+    "cookiesTitle": "Zásady používania súborov cookie",
+    "privacyLabel": "Zásady ochrany osobných údajov",
+    "termsLabel": "Podmienky a pravidlá",
+    "cookiesLabel": "Zásady používania súborov cookie"
+  },
+  "hu": {
+    "updatedLabel": "Utolsó frissítés: 2026-07-01",
+    "privacyTitle": "Adatvédelmi szabályzat",
+    "termsTitle": "Általános szerződési feltételek",
+    "cookiesTitle": "Süti (cookie) szabályzat",
+    "privacyLabel": "Adatvédelmi szabályzat",
+    "termsLabel": "Általános szerződési feltételek",
+    "cookiesLabel": "Süti (cookie) szabályzat"
+  },
+  "ro": {
+    "updatedLabel": "Ultima actualizare la 01-07-2026",
+    "privacyTitle": "Politica de Confidențialitate a acestui site.",
+    "termsTitle": "Termeni și condiții",
+    "cookiesTitle": "Politica privind modulele cookie",
+    "privacyLabel": "Politica de Confidențialitate a acestui site.",
+    "termsLabel": "Termeni și condiții",
+    "cookiesLabel": "Politica privind modulele cookie"
+  },
+  "bg": {
+    "updatedLabel": "Последна актуализация на 01-07-2026",
+    "privacyTitle": "Политика на поверителност",
+    "termsTitle": "Общи условия",
+    "cookiesTitle": "Политика за бисквитките",
+    "privacyLabel": "Политика на поверителност",
+    "termsLabel": "Общи условия",
+    "cookiesLabel": "Политика за бисквитките"
+  },
+  "hr": {
+    "updatedLabel": "Zadnje ažuriranje 01.07.2026",
+    "privacyTitle": "Pravila o privatnosti",
+    "termsTitle": "Uvjeti i odredbe",
+    "cookiesTitle": "POLITIKA KOLAČIĆA",
+    "privacyLabel": "Pravila o privatnosti",
+    "termsLabel": "Uvjeti i odredbe",
+    "cookiesLabel": "POLITIKA KOLAČIĆA"
+  },
+  "sr": {
+    "updatedLabel": "Последњи пут ажурирано 01.07.2026",
+    "privacyTitle": "Politika privatnosti",
+    "termsTitle": "Uslovi i Odredbe",
+    "cookiesTitle": "Pravila o kolačićima",
+    "privacyLabel": "Politika privatnosti",
+    "termsLabel": "Uslovi i Odredbe",
+    "cookiesLabel": "Pravila o kolačićima"
+  },
+  "bs": {
+    "updatedLabel": "Posljednje ažurirano 01-07-2026",
+    "privacyTitle": "Pravila o privatnosti",
+    "termsTitle": "Uslovi",
+    "cookiesTitle": "Politika kolačića",
+    "privacyLabel": "Pravila o privatnosti",
+    "termsLabel": "Uslovi",
+    "cookiesLabel": "Politika kolačića"
+  },
+  "cnr": {
+    "updatedLabel": "Последњи пут ажурирано 01.07.2026",
+    "privacyTitle": "Politika privatnosti",
+    "termsTitle": "Uslovi i Odredbe",
+    "cookiesTitle": "Pravila o kolačićima",
+    "privacyLabel": "Politika privatnosti",
+    "termsLabel": "Uslovi i Odredbe",
+    "cookiesLabel": "Pravila o kolačićima"
+  },
+  "sq": {
+    "updatedLabel": "Përditësimi i fundit më 01-07-2026",
+    "privacyTitle": "Politika e privatësisë",
+    "termsTitle": "Termat e Kushtet",
+    "cookiesTitle": "Politika e Cookie",
+    "privacyLabel": "Politika e privatësisë",
+    "termsLabel": "Termat e Kushtet",
+    "cookiesLabel": "Politika e Cookie"
+  },
+  "mk": {
+    "updatedLabel": "Последно ажурирано на 01-07-2026",
+    "privacyTitle": "Политика за приватност",
+    "termsTitle": "Правила за користење",
+    "cookiesTitle": "Нова политика за колачиња",
+    "privacyLabel": "Политика за приватност",
+    "termsLabel": "Правила за користење",
+    "cookiesLabel": "Нова политика за колачиња"
+  },
+  "lt": {
+    "updatedLabel": "Paskutinį kartą atnaujinta 2026-07-01",
+    "privacyTitle": "Privatumo politika",
+    "termsTitle": "Sąlygos",
+    "cookiesTitle": "Slapukų naudojimo politika",
+    "privacyLabel": "Privatumo politika",
+    "termsLabel": "Sąlygos",
+    "cookiesLabel": "Slapukų naudojimo politika"
+  },
+  "da": {
+    "updatedLabel": "Sidst opdateret 01-07-2026",
+    "privacyTitle": "Fortrolighedspolitik",
+    "termsTitle": "Vilkår og Betingelser",
+    "cookiesTitle": "Cookiepolitik",
+    "privacyLabel": "Fortrolighedspolitik",
+    "termsLabel": "Vilkår og Betingelser",
+    "cookiesLabel": "Cookiepolitik"
+  },
+  "sv": {
+    "updatedLabel": "Senast uppdaterad 2026-07-01",
+    "privacyTitle": "Sekretesspolicy",
+    "termsTitle": "Regler och villkor",
+    "cookiesTitle": "Cookiepolicy",
+    "privacyLabel": "Sekretesspolicy",
+    "termsLabel": "Regler och villkor",
+    "cookiesLabel": "Cookiepolicy"
+  },
+  "no": {
+    "updatedLabel": "Sist oppdatert 01-07-2026",
+    "privacyTitle": "Personvernerklæring",
+    "termsTitle": "Vilkår og betingelser",
+    "cookiesTitle": "Retningslinjer for informasjonskapsler",
+    "privacyLabel": "Personvernerklæring",
+    "termsLabel": "Vilkår og betingelser",
+    "cookiesLabel": "Retningslinjer for informasjonskapsler"
+  },
+  "fi": {
+    "updatedLabel": "Viimeksi päivitetty 01-07-2026",
+    "privacyTitle": "Tietosuojakäytäntö",
+    "termsTitle": "Ehdot",
+    "cookiesTitle": "Evästekäytäntö",
+    "privacyLabel": "Tietosuojakäytäntö",
+    "termsLabel": "Ehdot",
+    "cookiesLabel": "Evästekäytäntö"
+  },
+  "uk": {
+    "updatedLabel": "Останнє оновлення: 01-07-2026",
+    "privacyTitle": "Політика конфіденційності",
+    "termsTitle": "Правила та умови",
+    "cookiesTitle": "Політика використання файлів cookie",
+    "privacyLabel": "Політика конфіденційності",
+    "termsLabel": "Правила та умови",
+    "cookiesLabel": "Політика використання файлів cookie"
+  },
+  "ru": {
+    "updatedLabel": "Последнее обновление: 07.01.2026.",
+    "privacyTitle": "политика конфиденциальности",
+    "termsTitle": "Условия и положения",
+    "cookiesTitle": "Политика использования файлов cookie",
+    "privacyLabel": "политика конфиденциальности",
+    "termsLabel": "Условия и положения",
+    "cookiesLabel": "Политика использования файлов cookie"
+  },
+  "tr": {
+    "updatedLabel": "Son güncelleme tarihi: 01-07-2026",
+    "privacyTitle": "Gizlilik Politikası",
+    "termsTitle": "Şartlar ve koşullar",
+    "cookiesTitle": "Çerez Politikası",
+    "privacyLabel": "Gizlilik Politikası",
+    "termsLabel": "Şartlar ve koşullar",
+    "cookiesLabel": "Çerez Politikası"
+  },
+  "he": {
+    "updatedLabel": "עודכן לאחרונה ב-01-07-2026",
+    "privacyTitle": "מדיניות פרטיות",
+    "termsTitle": "תנאים והגבלות",
+    "cookiesTitle": "מדיניות עוגיות",
+    "privacyLabel": "מדיניות פרטיות",
+    "termsLabel": "תנאים והגבלות",
+    "cookiesLabel": "מדיניות עוגיות"
+  },
+  "ar": {
+    "updatedLabel": "آخر تحديث بتاريخ 01-07-2026",
+    "privacyTitle": "سياسة الخصوصية",
+    "termsTitle": "الشروط والأحكام",
+    "cookiesTitle": "سياسة ملفات تعريف الارتباط",
+    "privacyLabel": "سياسة الخصوصية",
+    "termsLabel": "الشروط والأحكام",
+    "cookiesLabel": "سياسة ملفات تعريف الارتباط"
+  },
+  "ka": {
+    "updatedLabel": "ბოლოს განახლდა 01-07-2026",
+    "privacyTitle": "კონფიდენციალურობის პოლიტიკა",
+    "termsTitle": "წესები და პირობები",
+    "cookiesTitle": "ქუქიების პოლიტიკა",
+    "privacyLabel": "კონფიდენციალურობის პოლიტიკა",
+    "termsLabel": "წესები და პირობები",
+    "cookiesLabel": "ქუქიების პოლიტიკა"
+  },
+  "hy": {
+    "updatedLabel": "Վերջին անգամ թարմացվել է 01-07-2026",
+    "privacyTitle": "Գաղտնիության քաղաքականություն",
+    "termsTitle": "Պայմաններ և դրույթներ",
+    "cookiesTitle": "Cookie քաղաքականություն",
+    "privacyLabel": "Գաղտնիության քաղաքականություն",
+    "termsLabel": "Պայմաններ և դրույթներ",
+    "cookiesLabel": "Cookie քաղաքականություն"
+  },
+  "az": {
+    "updatedLabel": "Sonuncu dəfə 01-07-2026 tarixində yeniləndi",
+    "privacyTitle": "Məxfilik Siyasəti",
+    "termsTitle": "Qaydalar və Şərtlər",
+    "cookiesTitle": "Kuki Siyasəti",
+    "privacyLabel": "Məxfilik Siyasəti",
+    "termsLabel": "Qaydalar və Şərtlər",
+    "cookiesLabel": "Kuki Siyasəti"
+  },
+  "zh": {
+    "updatedLabel": "最后更新于 01-07-2026",
+    "privacyTitle": "隐私政策",
+    "termsTitle": "条款和条件",
+    "cookiesTitle": "Cookie 政策",
+    "privacyLabel": "隐私政策",
+    "termsLabel": "条款和条件",
+    "cookiesLabel": "Cookie 政策"
+  },
+  "ja": {
+    "updatedLabel": "最終更新日: 2026 年 1 月 7 日",
+    "privacyTitle": "プライバシーポリシー",
+    "termsTitle": "ご利用条件",
+    "cookiesTitle": "Cookieポリシー",
+    "privacyLabel": "プライバシーポリシー",
+    "termsLabel": "ご利用条件",
+    "cookiesLabel": "Cookieポリシー"
+  }
+}

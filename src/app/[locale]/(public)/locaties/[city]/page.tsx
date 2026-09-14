@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -11,6 +11,10 @@ import {
   cityServiceJsonLd,
   organizationJsonLd,
 } from "@/lib/seo";
+import { localizedHref } from "@/i18n/pathnames";
+import { resolveEntityParam } from "@/lib/resolve-entity-param";
+import { canonicalEntityKey } from "@/lib/entity-slug-cache";
+import { hydrateEntitySlugs } from "@/lib/entity-slugs";
 
 export function generateStaticParams() {
   return seoCities.flatMap((city) => [
@@ -24,7 +28,9 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string; city: string }>;
 }): Promise<Metadata> {
-  const { locale, city: slug } = await params;
+  const { locale, city: rawCity } = await params;
+  await hydrateEntitySlugs(locale);
+  const slug = canonicalEntityKey(locale, "city", rawCity);
   const city = getSeoCity(slug);
   if (!city) return { title: "Not found", robots: { index: false } };
   return buildCityMetadata(city, locale);
@@ -35,8 +41,16 @@ export default async function LocatieCityPage({
 }: {
   params: Promise<{ locale: string; city: string }>;
 }) {
-  const { locale, city: slug } = await params;
+  const { locale, city: rawCity } = await params;
   setRequestLocale(locale);
+  const slug = await resolveEntityParam({
+    locale,
+    entityType: "city",
+    param: rawCity,
+    internalPathFor: (key) => `/locaties/${key}`,
+  });
+  const tNav = await getTranslations("nav");
+  const t = await getTranslations("locations");
   const city = getSeoCity(slug);
   if (!city) notFound();
 
@@ -51,12 +65,12 @@ export default async function LocatieCityPage({
           organizationJsonLd(),
           cityServiceJsonLd(city, locale),
           breadcrumbJsonLd([
-            { name: "Home", path: `/${locale}` },
+            { name: tNav("home"), path: localizedHref(locale, "/") },
             {
-              name: isNl ? "Locaties" : "Locations",
-              path: `/${locale}/locaties`,
+              name: t("breadcrumb"),
+              path: localizedHref(locale, "/locaties"),
             },
-            { name, path: `/${locale}/locaties/${city.slug}` },
+            { name, path: localizedHref(locale, `/locaties/${city.slug}`) },
           ]),
         ]}
       />
@@ -65,48 +79,32 @@ export default async function LocatieCityPage({
         {country} · {isNl ? city.regionNl : city.regionEn}
       </p>
       <h1 className="mt-2 font-display text-3xl font-semibold tracking-tight md:text-4xl">
-        {isNl
-          ? `AI, AEO, GEO & SEO in ${name}`
-          : `AI, AEO, GEO & SEO in ${name}`}
+        {t("cityTitle", { name })}
       </h1>
       <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-        {isNl
-          ? `TripleZero iT helpt ondernemers en teams in ${name} sneller groeien met AI-integratie, AEO, GEO, SEO, online marketing en maatwerk software. Lokaal denkwerk, meetbare resultaten.`
-          : `TripleZero iT helps entrepreneurs and teams in ${name} grow faster with AI integration, AEO, GEO, SEO, online marketing and custom software. Local insight, measurable results.`}
+        {t("cityIntro", { name })}
       </p>
 
       <ul className="mt-8 space-y-3 text-sm text-foreground">
-        <li>
-          {isNl
-            ? `Gratis AI-scan voor websites in ${name}`
-            : `Free AI scan for websites in ${name}`}
-        </li>
-        <li>
-          {isNl
-            ? "AEO, GEO en SEO optimalisatie voor klassieke én AI-zoekmachines"
-            : "AEO, GEO and SEO optimization for classic and AI search engines"}
-        </li>
-        <li>
-          {isNl
-            ? "Webdesign, WordPress, hosting en digital marketing"
-            : "Web design, WordPress, hosting and digital marketing"}
-        </li>
+        <li>{t("bulletScan", { name })}</li>
+        <li>{t("bulletSeo")}</li>
+        <li>{t("bulletStack")}</li>
       </ul>
 
       <div className="mt-10 flex flex-wrap gap-3">
         <Button asChild>
-          <SoftLink href={`/${locale}/ai-scan`}>
-            {isNl ? "Start gratis AI-scan" : "Start free AI scan"}
+          <SoftLink href={localizedHref(locale, "/ai-scan")}>
+            {t("startFreeAiScan")}
           </SoftLink>
         </Button>
         <Button asChild variant="outline">
-          <SoftLink href={`/${locale}/afspraak`}>
-            {isNl ? "Boek een afspraak" : "Book an appointment"}
+          <SoftLink href={localizedHref(locale, "/afspraak")}>
+            {tNav("book")}
           </SoftLink>
         </Button>
         <Button asChild variant="ghost">
-          <SoftLink href={`/${locale}/diensten`}>
-            {isNl ? "Alle diensten" : "All services"}
+          <SoftLink href={localizedHref(locale, "/diensten")}>
+            {t("allServices")}
           </SoftLink>
         </Button>
       </div>

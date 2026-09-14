@@ -1,0 +1,1 @@
+Viac výkonu a kontroly s VPS: vyhradené zdroje, SSD RAID 10 a škálovateľný CPU/RAM/šírka pásma pre rastúce projekty.

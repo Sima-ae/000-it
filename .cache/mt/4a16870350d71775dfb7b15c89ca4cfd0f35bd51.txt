@@ -1,0 +1,5 @@
+VPS Hosting Basic je vhodný pre vývojárov, malé aplikácie a webové stránky, ktoré potrebujú väčšiu kontrolu a predvídateľné zdroje ako zdieľaný hosting.
+
+S 2 jadrami CPU, 2 GB RAM, 40 GB úložiskom SSD RAID 10 a šírkou pásma 1 000 GB získate solídny virtuálny server pre ľahké až stredné pracovné zaťaženie.
+
+TripleZero iT vám poskytuje spoľahlivý základ infraštruktúry, takže sa môžete sústrediť na svoju aplikáciu, webovú stránku alebo vývojové prostredie. Škálujte, keď dopyt rastie.

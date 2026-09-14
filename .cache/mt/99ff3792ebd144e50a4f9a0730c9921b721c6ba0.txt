@@ -1,0 +1,5 @@
+Web sitesi hızı kullanıcı deneyimini, arama performansını ve dönüşümleri şekillendirir. TripleZero iT, WordPress sitelerini optimize ederek ziyaretçilerin daha hızlı yüklenmesini ve daha az geri dönmesini sağlar.
+
+Performans denetimiyle başlıyoruz, ardından kod, veritabanı, görseller, eklentiler, tema ve barındırma yapılandırmasındaki darboğazları iyileştiriyoruz. Önbelleğe alma ve hedefli ayarlama, ölçülebilir yükleme süresi kazanımları sağlar.
+
+Teslimattan sonra optimizasyon çalışmasıyla ilgili sorularınız için 7 gün ücretsiz destek alırsınız; böylece siteniz daha hızlı, daha sorunsuz ve daha profesyonel kalır.

@@ -9,8 +9,14 @@ import {
   serviceHref,
   sortedServiceGroups,
 } from "@/content/fixweb/catalog";
+import {
+  catalogGroupTitle,
+  catalogServiceSummary,
+  catalogServiceTitle,
+} from "@/content/fixweb/catalog-title";
 import { getServiceCardMeta } from "@/lib/fixweb-content";
 import { buildStaticPageMetadata } from "@/lib/seo";
+import { hashFor, localizedHref } from "@/i18n/pathnames";
 
 export async function generateMetadata({
   params,
@@ -42,111 +48,84 @@ export default async function ServicesPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("services");
-  const isNl = locale === "nl";
 
-  const groupSections = sortedServiceGroups(locale)
-    .map((group) => {
-      const cards = serviceCatalog
-        .filter((item) => item.group === group.id && item.slug !== "digital-design")
-        .map((item) => ({ item, content: getServiceCardMeta(item.slug, locale) }))
-        .filter(({ content }) => Boolean(content?.hasBody));
-      return { group, cards };
-    })
-    .filter(({ cards }) => cards.length > 0);
-
-  const groupDisplayTitles: Record<string, { nl: string; en: string }> = {
-    webdesign: { nl: "Webdesign", en: "Webdesign" },
-    wordpress: { nl: "WordPress", en: "WordPress" },
-    marketing: {
-      nl: "Content, Data, E-commerce, Marketing, Media Creatie en Social Media",
-      en: "Content, Data, E-commerce, Marketing, Media Creation and Social Media",
-    },
-  };
+  const groupSections = (
+    await Promise.all(
+      sortedServiceGroups(locale).map(async (group) => {
+        const items = serviceCatalog.filter(
+          (item) => item.group === group.id && item.slug !== "digital-design",
+        );
+        const cards = (
+          await Promise.all(
+            items.map(async (item) => ({
+              item,
+              content: await getServiceCardMeta(item.slug, locale),
+            })),
+          )
+        ).filter(({ content }) => Boolean(content?.hasBody));
+        return { group, cards };
+      }),
+    )
+  ).filter(({ cards }) => cards.length > 0);
 
   const marketingJumpButtons = [
-    { key: "content", id: "marketing", nl: "Content genereren", en: "Content generation" },
-    { key: "data", id: "data-entry", nl: "Data beheer", en: "Data management" },
-    { key: "ecommerce", id: "marketing", nl: "E-commerce", en: "E-commerce" },
-    { key: "marketing", id: "marketing", nl: "Marketing", en: "Marketing" },
-    { key: "media", id: "media-creation", nl: "Media Creatie", en: "Media Creation" },
-    {
-      key: "audio-video",
-      id: "media-creation",
-      nl: "Audio en Video",
-      en: "Audio and Video",
-    },
-    { key: "social", id: "marketing", nl: "Social Media", en: "Social Media" },
-    {
-      key: "community",
-      id: "community-management",
-      nl: "Community management",
-      en: "Community management",
-    },
+    { key: "content", id: "marketing" },
+    { key: "data", id: "data-entry" },
+    { key: "ecommerce", id: "marketing" },
+    { key: "marketing", id: "marketing" },
+    { key: "media", id: "media-creation" },
+    { key: "audioVideo", id: "media-creation" },
+    { key: "social", id: "marketing" },
+    { key: "community", id: "community-management" },
   ] as const;
 
   const hostingJumpButtons = [
-    { key: "webhosting", nl: "Webhosting", en: "Webhosting" },
-    { key: "domains", nl: "Domeinnamen", en: "Domains" },
+    { key: "webhosting" },
+    { key: "domains" },
   ] as const;
 
   const aiJumpButtons = [
-    { key: "ai", id: "ai", nl: "AI", en: "AI" },
-    { key: "aeo", id: "aeo-optimization", nl: "AEO", en: "AEO" },
-    { key: "geo", id: "geo-optimization", nl: "GEO", en: "GEO" },
-    { key: "seo", id: "seo-optimization", nl: "SEO", en: "SEO" },
-    { key: "chatbots", id: "ai-chatbots", nl: "Chatbots", en: "Chatbots" },
-    { key: "workflows", id: "ai-workflows", nl: "Workflows", en: "Workflows" },
-    { key: "advice", id: "ai-consultancy", nl: "Advies", en: "Advice" },
-    { key: "integration", id: "ai-integration", nl: "Integratie", en: "Integration" },
-    { key: "automation", id: "ai-automation", nl: "Automatisering", en: "Automation" },
+    { key: "ai", id: "ai" },
+    { key: "aeo", id: "aeo-optimization" },
+    { key: "geo", id: "geo-optimization" },
+    { key: "seo", id: "seo-optimization" },
+    { key: "chatbots", id: "ai-chatbots" },
+    { key: "workflows", id: "ai-workflows" },
+    { key: "advice", id: "ai-consultancy" },
+    { key: "integration", id: "ai-integration" },
+    { key: "automation", id: "ai-automation" },
   ] as const;
 
   const designJumpButtons = [
-    { key: "digital-design", nl: "Digital design", en: "Digital Design" },
-    { key: "printing", nl: "Printing", en: "Printing" },
+    { key: "digitalDesign" },
+    { key: "printing" },
   ] as const;
 
   const webdesignJumpButtons = [
-    { key: "webdesign", id: "webdesign", nl: "Webdesign", en: "Webdesign" },
-    {
-      key: "malware",
-      id: "website-malware-removal",
-      nl: "Malware verwijderen",
-      en: "Malware removal",
-    },
-    {
-      key: "backup",
-      id: "website-backup-migration",
-      nl: "Backup en migratie",
-      en: "Backup and migration",
-    },
-    { key: "security", id: "website-security", nl: "Beveiliging", en: "Security" },
-    { key: "speed", id: "website-speed-optimization", nl: "Performance en snelheid", en: "Performance and speed" },
-    { key: "custom", id: "custom-webdesign", nl: "Maatwerk", en: "Custom" },
+    { key: "webdesign", id: "webdesign" },
+    { key: "malware", id: "website-malware-removal" },
+    { key: "backup", id: "website-backup-migration" },
+    { key: "security", id: "website-security" },
+    { key: "speed", id: "website-speed-optimization" },
+    { key: "custom", id: "custom-webdesign" },
   ] as const;
 
   const wordpressJumpButtons = [
-    { key: "wordpress", id: "wordpress", nl: "WordPress", en: "WordPress" },
-    {
-      key: "maintenance",
-      id: "wordpress-maintenance-updates",
-      nl: "Onderhoud",
-      en: "Maintenance",
-    },
-    { key: "support", id: "premium-support", nl: "Support", en: "Support" },
+    { key: "wordpress", id: "wordpress" },
+    { key: "maintenance", id: "wordpress-maintenance-updates" },
+    { key: "support", id: "premium-support" },
   ] as const;
 
   function groupLabel(group: { id: string; title: string; titleNl: string }) {
-    const override = groupDisplayTitles[group.id];
-    if (override) return isNl ? override.nl : override.en;
-    return isNl ? group.titleNl : group.title;
+    if (group.id === "marketing") return t("groupMarketing");
+    return catalogGroupTitle(group.id, locale, group.title);
   }
 
   const jumpLinks = [
     {
       key: "meest-populair",
-      id: "meest-populair",
-      label: isNl ? "Meest populaire diensten" : "Most popular services",
+      id: hashFor(locale, "meest-populair"),
+      label: t("mostPopular"),
     },
     ...groupSections
       .flatMap(({ group }) => {
@@ -154,49 +133,49 @@ export default async function ServicesPage({
           return aiJumpButtons.map((button) => ({
             key: `ai-${button.key}`,
             id: button.id,
-            label: isNl ? button.nl : button.en,
+            label: t(`jump.${button.key}`),
           }));
         }
         if (group.id === "marketing") {
           return marketingJumpButtons.map((button) => ({
             key: `marketing-${button.key}`,
             id: button.id,
-            label: isNl ? button.nl : button.en,
+            label: t(`jump.${button.key}`),
           }));
         }
         if (group.id === "hosting") {
           return hostingJumpButtons.map((button) => ({
             key: `hosting-${button.key}`,
             id: "hosting",
-            label: isNl ? button.nl : button.en,
+            label: t(`jump.${button.key}`),
           }));
         }
         if (group.id === "design") {
           return designJumpButtons.map((button) => ({
             key: `design-${button.key}`,
             id: "design",
-            label: isNl ? button.nl : button.en,
+            label: t(`jump.${button.key}`),
           }));
         }
         if (group.id === "webdesign") {
           return webdesignJumpButtons.map((button) => ({
             key: `webdesign-${button.key}`,
             id: button.id,
-            label: isNl ? button.nl : button.en,
+            label: t(`jump.${button.key}`),
           }));
         }
         if (group.id === "wordpress") {
           return wordpressJumpButtons.map((button) => ({
             key: `wordpress-${button.key}`,
             id: button.id,
-            label: isNl ? button.nl : button.en,
+            label: t(`jump.${button.key}`),
           }));
         }
         // All known service groups are handled above.
         return [] as Array<{ key: string; id: string; label: string }>;
       })
       .sort((a, b) =>
-        a.label.localeCompare(b.label, isNl ? "nl" : "en", { sensitivity: "base" }),
+        a.label.localeCompare(b.label, locale, { sensitivity: "base" }),
       ),
   ];
 
@@ -207,19 +186,19 @@ export default async function ServicesPage({
       <ServicesJumpNav locale={locale} links={jumpLinks} />
 
       <section
-        id="meest-populair"
+        id={hashFor(locale, "meest-populair")}
         className="mt-6 scroll-mt-[calc(var(--nav-offset)+3.25rem)]"
       >
         <Reveal>
           <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
-            {isNl ? "Meest populaire diensten" : "Most popular services"}
+            {t("mostPopular")}
           </h2>
         </Reveal>
         <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {aiServices.map((item, i) => (
             <Reveal key={item.key} delay={i * 0.04}>
               <ServiceCard
-                href={`/${locale}${item.href}`}
+                href={localizedHref(locale, item.href)}
                 title={t(`items.${item.key}.title`)}
                 summary={t(`items.${item.key}.desc`)}
                 image={item.image}
@@ -242,25 +221,25 @@ export default async function ServicesPage({
                   {groupLabel(group)}
                 </h2>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  {cards.length} {isNl ? "diensten" : "services"}
+                  {cards.length} {t("countLabel")}
                 </p>
               </div>
               {group.id === "design" ? (
                 <SoftLink
-                  href={`/${locale}/digital-design`}
+                  href={localizedHref(locale, "/digital-design")}
                   className="text-sm font-medium text-primary hover:underline"
                 >
-                  {isNl ? "Open digital design" : "Open Digital Design"}
+                  {t("openDigitalDesign")}
                 </SoftLink>
               ) : null}
             </div>
           </Reveal>
           <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {cards.map(({ item, content }, i) => {
-              const title = isNl ? item.titleNl : item.title;
+              const title = catalogServiceTitle(item.slug, locale, item.title);
               const summary =
                 content?.subtitle ||
-                (isNl ? item.summaryNl : item.summary) ||
+                catalogServiceSummary(item.slug, locale, item.summary || "") ||
                 "";
 
               return (

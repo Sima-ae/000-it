@@ -1,0 +1,5 @@
+Zabezpečte svůj web WordPress pomocí bezpečnostních služeb TripleZero iT. Posilujeme váš web proti hackům, malwaru a zneužití pomocí praktického, pečlivě kontrolovaného přístupu.
+
+Po zálohování spustíme bezpečnostní audit, nainstalujeme Wordfence (Basic nebo Premium), nakonfigurujeme firewall a ochranu hrubou silou a nastavíme SSL tam, kde je potřeba. Přístup uživatelů a opravy jsou kontrolovány, takže zranitelnosti mají méně prostoru pro růst.
+
+Po doručení získáte 7 dní bezplatné podpory – vaše data, pověst a kontinuita budou lépe chráněny.

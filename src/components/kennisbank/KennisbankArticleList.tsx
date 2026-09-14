@@ -5,6 +5,7 @@ import { SoftLink } from "@/components/shared/SoftLink";
 import { GlassCard } from "@/components/marketing/GlassCard";
 import { Reveal } from "@/components/marketing/Reveal";
 import type { KennisbankArticleListItem } from "@/lib/kennisbank";
+import { localizedHref } from "@/i18n/pathnames";
 
 export function KennisbankArticleList({
   articles,
@@ -53,7 +54,7 @@ export function KennisbankArticleList({
             <Reveal key={article.id} delay={Math.min(i, 10) * 0.03}>
               <li>
                 <SoftLink
-                  href={`/${locale}/kennisbank/${categorySlug}/${article.slug}`}
+                  href={localizedHref(locale, `/kennisbank/${categorySlug}/${article.slug}`)}
                   className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
                 >
                   <GlassCard className="group flex gap-4 overflow-hidden p-0 transition hover:border-primary/40 hover:shadow-md sm:gap-5">

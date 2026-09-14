@@ -1,0 +1,1 @@
+Sygnał nawigacyjny w sieci Web (lub znacznik pikselowy) to mały, niewidoczny fragment tekstu lub obrazu w witrynie internetowej, który służy do monitorowania ruchu w witrynie. W tym celu różne dane o Tobie są przechowywane za pomocą sygnałów nawigacyjnych.

@@ -1,0 +1,1 @@
+Daugiau galios ir valdymo naudojant VPS: tam skirti ištekliai, SSD RAID 10 ir keičiamas CPU/RAM/pralaidumas augantiems projektams.

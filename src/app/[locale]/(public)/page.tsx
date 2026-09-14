@@ -15,6 +15,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { localizedHref } from "@/i18n/pathnames";
 import { cn } from "@/lib/utils";
 import { getAiScanCount } from "@/lib/ai-scan-count";
 import { buildStaticPageMetadata, organizationJsonLd } from "@/lib/seo";
@@ -94,7 +95,7 @@ export default async function HomePage({
               </p>
               <div className="flex flex-wrap items-center gap-3">
                 <Button asChild size="lg" className="rounded-2xl px-7">
-                  <SoftLink href={`/${locale}/ai-scan`}>{hero("ctaScan")}</SoftLink>
+                  <SoftLink href={localizedHref(locale, "/ai-scan")}>{hero("ctaScan")}</SoftLink>
                 </Button>
                 <div className="inline-flex items-center gap-2 rounded-2xl border border-border/70 px-3 py-2">
                   <Sparkles className="h-3.5 w-3.5 text-primary" />
@@ -149,7 +150,7 @@ export default async function HomePage({
 
             return (
               <Reveal key={item.key} delay={index * 0.05} className={cn("h-full", span)}>
-                <SoftLink href={`/${locale}${item.href}`} className="block h-full">
+                <SoftLink href={localizedHref(locale, item.href)} className="block h-full">
                   <GlassCard className="flex h-full flex-col p-5 md:p-5">
                     <h3 className="font-display text-lg font-semibold tracking-tight md:text-xl">
                       {services(`items.${item.key}.title`)}
@@ -167,7 +168,7 @@ export default async function HomePage({
         <Reveal delay={0.12}>
           <div className="mt-8 flex justify-center md:mt-10">
             <Button asChild size="lg" className="rounded-2xl px-7">
-              <SoftLink href={`/${locale}/diensten`}>{services("viewAll")}</SoftLink>
+              <SoftLink href={localizedHref(locale, "/diensten")}>{services("viewAll")}</SoftLink>
             </Button>
           </div>
         </Reveal>
@@ -224,7 +225,7 @@ export default async function HomePage({
                 size="lg"
                 className="mt-8 rounded-2xl bg-white text-primary hover:bg-white/90"
               >
-                <SoftLink href={`/${locale}/afspraak`}>{t("hero.ctaScan")}</SoftLink>
+                <SoftLink href={localizedHref(locale, "/afspraak")}>{t("hero.ctaScan")}</SoftLink>
               </Button>
             </div>
           </div>

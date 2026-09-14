@@ -11,6 +11,7 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
+import { localizedHref } from "@/i18n/pathnames";
 
 const PROJECT_TYPES = [
   "WEBSITE",
@@ -36,9 +37,9 @@ export default function ProjectsPage() {
     try {
       await createProject.mutateAsync({ name, type });
       setName("");
-      toast.success(locale === "nl" ? "Project aangemaakt" : "Project created");
+      toast.success(t("projectCreated"));
     } catch {
-      toast.error(locale === "nl" ? "Aanmaken mislukt" : "Failed to create project");
+      toast.error(t("projectCreateFailed"));
     }
   }
 
@@ -47,7 +48,7 @@ export default function ProjectsPage() {
       <div className="flex flex-wrap items-end justify-between gap-3">
         <h1 className="text-3xl font-semibold">{t("projects")}</h1>
         <Button asChild variant="outline">
-          <SoftLink href={`/${locale}/crm`}>{t("crm")}</SoftLink>
+          <SoftLink href={localizedHref(locale, "/crm")}>{t("crm")}</SoftLink>
         </Button>
       </div>
 
@@ -58,11 +59,11 @@ export default function ProjectsPage() {
         <CardContent>
           <form onSubmit={handleCreate} className="flex flex-col gap-3 sm:flex-row">
             <div className="flex-1 space-y-1">
-              <Label>{locale === "nl" ? "Naam" : "Name"}</Label>
+              <Label>{t("name")}</Label>
               <Input value={name} onChange={(e) => setName(e.target.value)} required />
             </div>
             <div className="space-y-1 sm:w-56">
-              <Label>{locale === "nl" ? "Type" : "Type"}</Label>
+              <Label>{t("type")}</Label>
               <select
                 className="flex h-10 w-full rounded-lg border border-input bg-muted/40 px-3 text-sm"
                 value={type}
@@ -76,7 +77,7 @@ export default function ProjectsPage() {
               </select>
             </div>
             <Button type="submit" className="self-end" disabled={createProject.isPending}>
-              {locale === "nl" ? "Aanmaken" : "Create"}
+              {t("create")}
             </Button>
           </form>
         </CardContent>

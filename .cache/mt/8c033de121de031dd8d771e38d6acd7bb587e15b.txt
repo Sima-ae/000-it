@@ -1,0 +1,1 @@
+Ścisłe bezpieczeństwo transportu HTTP i powiązane nagłówki zabezpieczeń i zasady przeglądarki

@@ -1,0 +1,5 @@
+Viteza site-ului modelează experiența utilizatorului, performanța căutării și conversiile. TripleZero iT optimizează site-urile WordPress, astfel încât vizitatorii să se încarce mai repede și să sară mai puțin.
+
+Începem cu un audit de performanță, apoi îmbunătățim blocajele din cod, bază de date, imagini, pluginuri, teme și configurație de găzduire. Memorarea în cache și reglarea direcționată oferă câștiguri măsurabile ale timpului de încărcare.
+
+După livrare, beneficiați de 7 zile de asistență gratuită pentru întrebările legate de activitatea de optimizare - păstrând site-ul mai rapid, mai fluid și mai profesionist.

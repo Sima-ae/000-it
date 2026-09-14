@@ -1,0 +1,1 @@
+Javascript támogatás nélkül töltötte be a Cookie-szabályzatot. Az AMP-n használhatja az oldal alján található hozzájárulás kezelése gombot.

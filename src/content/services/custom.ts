@@ -1,3 +1,4 @@
+import { getLocalizedCopySync } from "@/lib/localized-copy-cache";
 import { aiCustomServices } from "@/content/services/ai";
 import { aiInWordpressService } from "@/content/services/ai-in-wordpress";
 import {
@@ -1070,17 +1071,53 @@ const customServices: Record<string, CustomService> = {
   },
 };
 
+export function listCustomServiceSlugs() {
+  return Object.keys(customServices);
+}
+
+export function getCustomServiceSource(slug: string) {
+  const entry = customServices[slug];
+  if (!entry) return null;
+  return {
+    en: {
+      title: entry.title,
+      subtitle: entry.subtitle,
+      blocks: entry.blocks,
+    },
+    nl: {
+      title: entry.titleNl,
+      subtitle: entry.subtitleNl,
+      blocks: entry.blocksNl,
+    },
+  };
+}
+
 export function getCustomServiceContent(slug: string, locale: string) {
   const entry = customServices[slug];
   if (!entry) return null;
-  const isNl = locale === "nl";
+  if (locale === "nl") {
+    return {
+      title: entry.titleNl,
+      subtitle: entry.subtitleNl,
+      price: entry.price ?? null,
+      currency: entry.price != null ? "EUR" : null,
+      image: entry.image ?? null,
+      blocks: entry.blocksNl,
+      kind: "page" as const,
+    };
+  }
+  const overlay = getLocalizedCopySync<{
+    title: string;
+    subtitle: string;
+    blocks: ContentBlock[];
+  }>("custom_service", slug, locale);
   return {
-    title: isNl ? entry.titleNl : entry.title,
-    subtitle: isNl ? entry.subtitleNl : entry.subtitle,
+    title: overlay?.title || entry.title,
+    subtitle: overlay?.subtitle || entry.subtitle,
     price: entry.price ?? null,
     currency: entry.price != null ? "EUR" : null,
     image: entry.image ?? null,
-    blocks: isNl ? entry.blocksNl : entry.blocks,
+    blocks: overlay?.blocks?.length ? overlay.blocks : entry.blocks,
     kind: "page" as const,
   };
 }

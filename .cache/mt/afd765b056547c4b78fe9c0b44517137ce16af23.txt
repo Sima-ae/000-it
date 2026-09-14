@@ -1,0 +1,1 @@
+Vi diskuterar din applikation, förväntad belastning, lagring, säkerhet och föredragen hanteringsnivå. Detta låter dig välja kapacitet baserat på dagens tekniska krav och nästa tillväxtfas, snarare än gissningar.

@@ -1,0 +1,1 @@
+Para sites em crescimento, aplicações personalizadas, picos de tráfego mais elevados ou situações onde você deseja mais controle sobre o ambiente do servidor.

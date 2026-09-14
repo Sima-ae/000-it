@@ -1,0 +1,5 @@
+Beskytt WordPress-nettstedet ditt med TripleZero iT-sikkerhetstjenester. Vi herder nettstedet ditt mot hacks, skadelig programvare og misbruk med en praktisk, nøye kontrollert tilnærming.
+
+Etter en sikkerhetskopi kjører vi en sikkerhetsrevisjon, installerer Wordfence (Basic eller Premium), konfigurerer brannmur og brute-force-beskyttelse, og setter opp SSL der det er nødvendig. Brukertilgang og patching blir gjennomgått slik at sårbarheter har mindre plass til å vokse.
+
+Du får 7 dager med gratis støtte etter levering – for å holde dataene dine, omdømmet og kontinuiteten bedre beskyttet.

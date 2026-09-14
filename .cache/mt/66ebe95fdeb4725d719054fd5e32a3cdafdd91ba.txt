@@ -1,0 +1,5 @@
+Standard Support passer til organisationer med op til to WordPress-websteder, der har brug for daglig vedligeholdelse samt opmærksomhed på hastighed og kontinuitet.
+
+Du modtager overvågning døgnet rundt, daglige backups, opdateringer, fejlløsning, fjernelse af malware og sikkerhedspleje. Vi optimerer også caching, billeder og kode, hvor det forbedrer din hjemmesides ydeevne.
+
+TripleZero iT arbejder proaktivt: Vi markerer problemer, løser tekniske problemer med fokus og holder dine hjemmesider stabile for besøgende og administratorer.

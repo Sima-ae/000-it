@@ -1,0 +1,1 @@
+Haittaohjelmien puhdistus mukautetuille PHP-, HTML- ja Next.js-sivustoille – erillään WordPress-haittaohjelmapaketeista.

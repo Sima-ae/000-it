@@ -1,0 +1,1 @@
+Strikte HTTP-Transportsicherheit und zugehörige Sicherheitsheader und Browserrichtlinien

@@ -1,0 +1,1 @@
+Vyčištění malwaru pro vlastní weby PHP, HTML a Next.js – odděleně od malwarových balíčků WordPress.

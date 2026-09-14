@@ -1,0 +1,1 @@
+DataTables_invoice-pay-table-user-ref-19_/crm/index.php/invoice_paids

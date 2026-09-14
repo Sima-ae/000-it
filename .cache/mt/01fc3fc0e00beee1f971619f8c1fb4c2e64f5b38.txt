@@ -1,0 +1,1 @@
+Sestavení frontendu, vstupní stránky a interaktivní uživatelské rozhraní bez CMS.

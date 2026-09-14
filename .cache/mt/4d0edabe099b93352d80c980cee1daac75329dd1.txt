@@ -1,0 +1,1 @@
+Aplikacione React të shpejta dhe të gatshme për SEO me ruterin e aplikacioneve dhe DX moderne.

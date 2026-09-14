@@ -1,0 +1,5 @@
+WordPress je výkonný, ale chybové zprávy, konflikty pluginů nebo problémy s tématem mohou váš web rychle narušit. TripleZero iT diagnostikuje a opravuje chyby WordPress s jasným zaměřením na obnovení funkčnosti a omezení prostojů.
+
+Zkoumáme základní příčiny – od bílých obrazovek a chyb HTTP po problémy s databází – a poté aplikujeme trvalou opravu. Před předáním jsou kontrolovány kritické toky, jako je přihlášení, formuláře a pokladna (je-li to relevantní).
+
+Obdržíte praktická doporučení, jak omezit opakování, takže vaše online přítomnost zůstane stabilní a profesionální.

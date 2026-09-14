@@ -1,0 +1,1 @@
+Base: SSD da 10 GB, fino a 50.000 visitatori al mese, CDN e SSL gratuiti

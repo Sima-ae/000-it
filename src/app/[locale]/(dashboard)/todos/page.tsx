@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -18,7 +18,6 @@ type Todo = {
 
 export default function TodosPage() {
   const t = useTranslations("dashboard");
-  const locale = useLocale();
   const qc = useQueryClient();
   const [title, setTitle] = useState("");
 
@@ -68,25 +67,21 @@ export default function TodosPage() {
     <div className="mx-auto max-w-2xl space-y-6">
       <div>
         <h1 className="font-display text-3xl font-semibold tracking-tight">{t("todos")}</h1>
-        <p className="text-sm text-muted-foreground">
-          {locale === "nl"
-            ? "Interne to-do lijst — alleen zichtbaar voor admin en manager, nooit publiek of voor clients."
-            : "Internal to-do list — visible only to admin and manager dashboards, never public or for clients."}
-        </p>
+        <p className="text-sm text-muted-foreground">{t("todosSubtitle")}</p>
       </div>
 
       <Card>
         <CardHeader>
-          <CardTitle>{locale === "nl" ? "Nieuwe taak" : "New task"}</CardTitle>
+          <CardTitle>{t("newTask")}</CardTitle>
         </CardHeader>
         <CardContent>
           <form onSubmit={addTodo} className="flex gap-2">
             <Input
               value={title}
               onChange={(e) => setTitle(e.target.value)}
-              placeholder={locale === "nl" ? "Wat moet er gebeuren?" : "What needs doing?"}
+              placeholder={t("taskPlaceholder")}
             />
-            <Button type="submit">{locale === "nl" ? "Toevoegen" : "Add"}</Button>
+            <Button type="submit">{t("add")}</Button>
           </form>
         </CardContent>
       </Card>
@@ -94,7 +89,7 @@ export default function TodosPage() {
       <Card>
         <CardHeader>
           <CardTitle>
-            {locale === "nl" ? "Open" : "Open"} ({open.length})
+            {t("open")} ({open.length})
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-2">
@@ -116,9 +111,7 @@ export default function TodosPage() {
             </div>
           ))}
           {!isLoading && !open.length ? (
-            <p className="text-sm text-muted-foreground">
-              {locale === "nl" ? "Alles afgerond." : "All clear."}
-            </p>
+            <p className="text-sm text-muted-foreground">{t("allClear")}</p>
           ) : null}
         </CardContent>
       </Card>
@@ -127,7 +120,7 @@ export default function TodosPage() {
         <Card>
           <CardHeader>
             <CardTitle>
-              {locale === "nl" ? "Afgerond" : "Done"} ({done.length})
+              {t("done")} ({done.length})
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-2">

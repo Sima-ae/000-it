@@ -1,0 +1,1 @@
+Strana {page} z {total}

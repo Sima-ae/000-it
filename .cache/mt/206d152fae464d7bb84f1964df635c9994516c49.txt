@@ -1,0 +1,1 @@
+Felülvizsgáljuk jelenlegi webhelyét, a várható forgalmat, a bővítményeket és a szükséges funkciókat. Innentől kiválaszt egy megfelelő tervet, és mi gondosan ütemezzük a beállítást vagy az áttelepítést, figyelemmel a rendelkezésre állásra és az ellenőrzött indításra.

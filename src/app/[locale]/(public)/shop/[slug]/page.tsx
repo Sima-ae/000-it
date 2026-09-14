@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { AddToCartButton } from "@/components/shop/AddToCartButton";
 import { getShopProductBySlug, localizeShopProduct } from "@/lib/shop/catalog";
 import { centsToEuros, formatShopEuro } from "@/lib/shop/vat";
+import { localizedHref } from "@/i18n/pathnames";
+import { resolveEntityParam } from "@/lib/resolve-entity-param";
 
 export const dynamic = "force-dynamic";
 
@@ -14,8 +16,14 @@ export default async function ShopProductPage({
 }: {
   params: Promise<{ locale: string; slug: string }>;
 }) {
-  const { locale, slug } = await params;
+  const { locale, slug: rawSlug } = await params;
   setRequestLocale(locale);
+  const slug = await resolveEntityParam({
+    locale,
+    entityType: "shop",
+    param: rawSlug,
+    internalPathFor: (key) => `/shop/${key}`,
+  });
   const t = await getTranslations("shop");
   const product = getShopProductBySlug(slug);
   if (!product) notFound();
@@ -29,7 +37,7 @@ export default async function ShopProductPage({
   return (
     <div className="mx-auto max-w-5xl px-4 py-14 md:px-6 md:py-20">
       <Button asChild variant="ghost" size="sm" className="mb-6 -ml-2">
-        <SoftLink href={`/${locale}/shop`}>{t("backToShop")}</SoftLink>
+        <SoftLink href={localizedHref(locale, "/shop")}>{t("backToShop")}</SoftLink>
       </Button>
 
       <div className="grid gap-10 md:grid-cols-2">

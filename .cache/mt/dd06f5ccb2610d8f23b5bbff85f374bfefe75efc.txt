@@ -1,0 +1,1 @@
+Et script er et stykke programkode som brukes for å få nettstedet vårt til å fungere skikkelig og interaktivt. Denne koden kjøres på vår server eller på enheten din.

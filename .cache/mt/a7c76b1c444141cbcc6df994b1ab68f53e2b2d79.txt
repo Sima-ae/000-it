@@ -1,0 +1,1 @@
+Egyedi mesterséges intelligencia funkciók, RAG és API-k a termékcsomagban.

@@ -1,0 +1,1 @@
+Panel nelze načíst. Zkontrolujte připojení k databázi a zkuste to znovu.

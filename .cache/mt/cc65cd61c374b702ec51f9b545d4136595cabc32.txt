@@ -1,0 +1,1 @@
+DKIM, SPF, DMARC və digər xüsusi DNS parametrləri

@@ -1,0 +1,1 @@
+Dashboard konnte nicht geladen werden. Überprüfen Sie Ihre Datenbankverbindung und versuchen Sie es erneut.

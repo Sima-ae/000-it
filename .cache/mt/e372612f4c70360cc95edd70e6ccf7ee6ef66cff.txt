@@ -1,0 +1,1 @@
+Latausajat alle 2 sekuntia ja Core Web Vitals optimoitu.

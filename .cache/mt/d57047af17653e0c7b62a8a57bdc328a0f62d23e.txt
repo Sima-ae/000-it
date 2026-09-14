@@ -1,0 +1,1 @@
+App Router と最新の DX を備えた高速で SEO 対応の React アプリ。

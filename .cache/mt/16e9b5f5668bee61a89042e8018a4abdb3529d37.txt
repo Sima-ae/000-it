@@ -1,0 +1,1 @@
+Control de cargas de trabajo críticas para el negocio

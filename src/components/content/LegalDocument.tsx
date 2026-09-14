@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { ContentBlocks } from "@/components/content/ContentBlocks";
 import type { ContentBlock } from "@/lib/fixweb-content";
@@ -41,14 +42,14 @@ function LegalBlocks({ blocks }: { blocks: ContentBlock[] }) {
   return <ContentBlocks blocks={expandContactBlocks(blocks)} />;
 }
 
-export function LegalDocument({
+export async function LegalDocument({
   locale,
   page,
 }: {
   locale: string;
   page: LegalPageContent;
 }) {
-  const isNl = locale === "nl";
+  const t = await getTranslations({ locale, namespace: "legal" });
   const mail =
     page.slug === "privacy-policy" || page.slug === "cookie-policy"
       ? "privacy@000-it.com"
@@ -90,9 +91,7 @@ export function LegalDocument({
                   ) : null}
                   {vendor.sharing ? (
                     <p className="text-sm leading-relaxed text-muted-foreground md:text-base">
-                      <span className="font-medium text-foreground">
-                        {isNl ? "Gegevens delen: " : "Sharing data: "}
-                      </span>
+                      <span className="font-medium text-foreground">{t("sharingData")}</span>
                       {vendor.sharing}
                     </p>
                   ) : null}
@@ -101,11 +100,9 @@ export function LegalDocument({
                       <table className="min-w-full text-left text-sm">
                         <thead className="bg-muted/40 text-foreground">
                           <tr>
-                            <th className="px-3 py-2 font-medium">{isNl ? "Naam" : "Name"}</th>
-                            <th className="px-3 py-2 font-medium">
-                              {isNl ? "Verloop" : "Expiration"}
-                            </th>
-                            <th className="px-3 py-2 font-medium">{isNl ? "Functie" : "Function"}</th>
+                            <th className="px-3 py-2 font-medium">{t("name")}</th>
+                            <th className="px-3 py-2 font-medium">{t("expiration")}</th>
+                            <th className="px-3 py-2 font-medium">{t("function")}</th>
                           </tr>
                         </thead>
                         <tbody>

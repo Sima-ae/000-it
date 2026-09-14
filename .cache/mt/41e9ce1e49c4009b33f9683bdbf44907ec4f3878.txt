@@ -1,0 +1,1 @@
+Omogućuje sprječavanje predmemoriranih stranica

@@ -1,0 +1,1 @@
+En cookie er en lille simpel fil, der sendes sammen med sider på denne hjemmeside og gemmes af din browser på harddisken på din computer eller en anden enhed. Oplysningerne gemt deri kan blive returneret til vores servere eller til de relevante tredjeparters servere under et efterfølgende besøg.

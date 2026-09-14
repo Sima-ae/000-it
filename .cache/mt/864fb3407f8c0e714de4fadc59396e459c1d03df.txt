@@ -1,0 +1,1 @@
+Base: 2 core CPU, 2 GB di RAM, 40 GB SSD RAID 10, larghezza di banda 1000 GB

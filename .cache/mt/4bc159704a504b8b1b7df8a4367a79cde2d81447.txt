@@ -1,0 +1,1 @@
+Örnek bir dosyayla başlıyoruz ve alanlar, kaynak veriler ve istisnalar için giriş kurallarını temizliyoruz. Teslimat sırasında, ilerleme ve kaliteyi görebilmeniz için eksiksizliği ve anormallikleri kontrol ederiz.

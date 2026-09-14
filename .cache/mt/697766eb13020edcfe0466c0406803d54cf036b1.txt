@@ -1,0 +1,1 @@
+Brže vrijeme učitavanja, Core Web Vitals i predmemorija za prilagođene nizove izvan WordPressa.

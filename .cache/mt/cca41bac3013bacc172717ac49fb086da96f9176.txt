@@ -1,0 +1,5 @@
+Beskyt dit WordPress-websted, og bevæg dig med tillid ved hjælp af TripleZero iT-backup og hosting-migrering. Uanset om du skifter vært, opgraderer din plan eller blot har brug for en pålidelig backup, holder vi overgangen rolig og kontrolleret.
+
+Vi laver en fuld backup af filer, database, temaer, plugins og medier. Derefter migrerer vi dit websted, verificerer kompatibilitet og opsætter nøglehostingkonfiguration, så alt fungerer i det nye miljø.
+
+Efter levering modtager du 7 dages gratis support til spørgsmål om backup, gendannelse eller migrering. Dit websted forbliver intakt, tilgængeligt og klar til at vokse.

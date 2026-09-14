@@ -9,6 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { localizedHref } from "@/i18n/pathnames";
 
 type TemplateId = "blog" | "ads" | "social" | "email" | "landing";
 
@@ -296,28 +297,28 @@ export default function ContentGeneratorPage() {
   const templates = useMemo(
     () =>
       [
-        { id: "blog" as const, title: locale === "nl" ? "Blog" : "Blog" },
-        { id: "ads" as const, title: locale === "nl" ? "Ads" : "Ads" },
+        { id: "blog" as const, title: "Blog" },
+        { id: "ads" as const, title: "Ads" },
         { id: "social" as const, title: "LinkedIn" },
-        { id: "email" as const, title: locale === "nl" ? "E-mail" : "Email" },
-        { id: "landing" as const, title: locale === "nl" ? "Landing" : "Landing" },
+        { id: "email" as const, title: t("email") },
+        { id: "landing" as const, title: "Landing" },
       ] as const,
-    [locale],
+    [t],
   );
 
   function generate() {
     if (!topic.trim()) {
-      toast.error(locale === "nl" ? "Vul eerst een onderwerp in" : "Enter a topic first");
+      toast.error(t("topicRequired"));
       return;
     }
     setOutput(buildDraft(locale, active, topic, audience));
-    toast.success(locale === "nl" ? "Concept gegenereerd" : "Draft generated");
+    toast.success(t("draftGenerated"));
   }
 
   async function copyOutput() {
     if (!output.trim()) return;
     await navigator.clipboard.writeText(output);
-    toast.success(locale === "nl" ? "Gekopieerd" : "Copied");
+    toast.success(t("copied"));
   }
 
   return (
@@ -325,21 +326,17 @@ export default function ContentGeneratorPage() {
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
           <h1 className="text-3xl font-semibold">{t("content")}</h1>
-          <p className="text-sm text-muted-foreground">
-            {locale === "nl"
-              ? "Professionele concepten voor blog, ads, LinkedIn, e-mail en landingspagina’s — klaar om te bewerken."
-              : "Professional drafts for blog, ads, LinkedIn, email and landing pages — ready to edit."}
-          </p>
+          <p className="text-sm text-muted-foreground">{t("contentSubtitle")}</p>
         </div>
         <Button asChild variant="outline">
-          <SoftLink href={`/${locale}/ai-scan`}>{t("runScan")}</SoftLink>
+          <SoftLink href={localizedHref(locale, "/ai-scan")}>{t("runScan")}</SoftLink>
         </Button>
       </div>
 
       <div className="grid gap-4 lg:grid-cols-2">
         <Card>
           <CardHeader>
-            <CardTitle>{locale === "nl" ? "Generator" : "Generator"}</CardTitle>
+            <CardTitle>{t("generator")}</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="flex flex-wrap gap-2">
@@ -356,27 +353,27 @@ export default function ContentGeneratorPage() {
               ))}
             </div>
             <div className="space-y-2">
-              <Label>{locale === "nl" ? "Onderwerp" : "Topic"}</Label>
+              <Label>{t("topic")}</Label>
               <Input
                 value={topic}
                 onChange={(e) => setTopic(e.target.value)}
-                placeholder={locale === "nl" ? "bijv. AEO voor e-commerce" : "e.g. AEO for e-commerce"}
+                placeholder={t("topicPh")}
               />
             </div>
             <div className="space-y-2">
-              <Label>{locale === "nl" ? "Doelgroep (optioneel)" : "Audience (optional)"}</Label>
+              <Label>{t("audience")}</Label>
               <Input
                 value={audience}
                 onChange={(e) => setAudience(e.target.value)}
-                placeholder={locale === "nl" ? "bijv. scale-ups in Benelux" : "e.g. Benelux scale-ups"}
+                placeholder={t("audiencePh")}
               />
             </div>
             <div className="flex flex-wrap gap-2">
               <Button type="button" onClick={generate}>
-                {locale === "nl" ? "Genereer concept" : "Generate draft"}
+                {t("generateDraft")}
               </Button>
               <Button type="button" variant="outline" onClick={() => void copyOutput()} disabled={!output}>
-                {locale === "nl" ? "Kopieer" : "Copy"}
+                {t("copy")}
               </Button>
             </div>
           </CardContent>
@@ -384,14 +381,14 @@ export default function ContentGeneratorPage() {
 
         <Card>
           <CardHeader>
-            <CardTitle>{locale === "nl" ? "Output" : "Output"}</CardTitle>
+            <CardTitle>{t("output")}</CardTitle>
           </CardHeader>
           <CardContent>
             <Textarea
               className="min-h-80 font-mono text-sm"
               value={output}
               onChange={(e) => setOutput(e.target.value)}
-              placeholder={locale === "nl" ? "Uw concept verschijnt hier…" : "Your draft appears here…"}
+              placeholder={t("outputPh")}
             />
           </CardContent>
         </Card>

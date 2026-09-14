@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { localizedHref } from "@/i18n/pathnames";
 
 export default function ForgotPasswordPage() {
   const t = useTranslations("auth");
@@ -30,7 +31,7 @@ export default function ForgotPasswordPage() {
         >
           {t("sendReset")}
         </Button>
-        <Link href={`/${locale}/login`} className="block text-sm text-primary hover:underline">
+        <Link href={localizedHref(locale, "/login")} className="block text-sm text-primary hover:underline">
           {t("login")}
         </Link>
       </CardContent>

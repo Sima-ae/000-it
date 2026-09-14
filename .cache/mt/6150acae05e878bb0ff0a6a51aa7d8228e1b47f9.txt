@@ -1,0 +1,1 @@
+Atsakymų variklio optimizavimas, skirtas cituotinam, atsakymams paruoštam turiniui.

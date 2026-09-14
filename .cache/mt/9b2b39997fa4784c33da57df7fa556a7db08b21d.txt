@@ -1,0 +1,5 @@
+VPS Hosting Plus est destiné aux projets Web en pleine croissance, aux applications professionnelles et aux équipes de développement qui ont besoin d'une capacité supplémentaire et de performances constantes.
+
+Le serveur combine 4 cœurs de processeur et 6 Go de RAM avec 120 Go de stockage SSD RAID 10 et 3 000 Go de bande passante. Cela laisse place à des charges de travail plus lourdes, à des services multiples ou à une augmentation du trafic.
+
+TripleZero iT offre une base VPS fiable que vous pouvez configurer en fonction de vos besoins. Bénéficiez de la flexibilité d'un serveur virtuel avec un partenaire professionnel à proximité.

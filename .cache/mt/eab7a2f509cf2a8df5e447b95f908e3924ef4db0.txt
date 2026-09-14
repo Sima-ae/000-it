@@ -1,0 +1,5 @@
+Webstedets hastighed former brugeroplevelsen, søgeydelsen og konverteringer. TripleZero iT optimerer WordPress-websteder, så besøgende indlæses hurtigere og hopper mindre.
+
+Vi starter med en effektivitetsrevision og forbedrer derefter flaskehalse på tværs af kode, database, billeder, plugins, tema og hostingkonfiguration. Caching og målrettet tuning giver målbare indlæsningstidsgevinster.
+
+Efter levering får du 7 dages gratis support til spørgsmål om optimeringsarbejdet – for at holde dit websted hurtigere, glattere og mere professionelt.

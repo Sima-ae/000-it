@@ -1,0 +1,1 @@
+Galite naudoti savo interneto naršyklę automatiškai arba rankiniu būdu ištrinti slapukus. Taip pat galite nurodyti, kad tam tikri slapukai negali būti talpinami. Kita galimybė – pakeisti savo interneto naršyklės nustatymus, kad kiekvieną kartą įdėjus slapuką gautumėte pranešimą. Daugiau informacijos apie šias parinktis rasite naršyklės žinyno skiltyje pateiktose instrukcijose.

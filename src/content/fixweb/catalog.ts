@@ -1,3 +1,9 @@
+import {
+  catalogGroupTitle,
+  catalogServiceTitle,
+} from "@/content/fixweb/catalog-title";
+import { localizedHref } from "@/i18n/pathnames";
+
 export type ServiceNavItem = {
   slug: string;
   title: string;
@@ -600,14 +606,15 @@ export const serviceGroups = [
 
 /** AI first, then remaining categories A–Z by localized title. */
 export function sortedServiceGroups(locale: string) {
-  const isNl = locale === "nl";
   const ai = serviceGroups.find((g) => g.id === "ai");
   const rest = serviceGroups
     .filter((g) => g.id !== "ai")
     .sort((a, b) =>
-      (isNl ? a.titleNl : a.title).localeCompare(isNl ? b.titleNl : b.title, isNl ? "nl" : "en", {
-        sensitivity: "base",
-      }),
+      catalogGroupTitle(a.id, locale, a.title).localeCompare(
+        catalogGroupTitle(b.id, locale, b.title),
+        locale,
+        { sensitivity: "base" },
+      ),
     );
   return ai ? [ai, ...rest] : rest;
 }
@@ -633,8 +640,8 @@ export function getServiceSlugs() {
 }
 
 export function serviceHref(locale: string, item: ServiceNavItem) {
-  if (item.href) return `/${locale}${item.href}`;
-  return `/${locale}/diensten/${item.slug}`;
+  if (item.href) return localizedHref(locale, item.href);
+  return localizedHref(locale, `/diensten/${item.slug}`);
 }
 
 /** A–Z by locale title; hosting keeps given order */
@@ -650,7 +657,6 @@ export function sortServicesAz(
     list.push(item);
     byGroup.set(item.group, list);
   }
-  const isNl = locale === "nl";
   const out: ServiceNavItem[] = [];
   for (const group of sortedServiceGroups(locale)) {
     const list = byGroup.get(group.id) || [];
@@ -660,9 +666,11 @@ export function sortServicesAz(
     }
     out.push(
       ...[...list].sort((a, b) =>
-        (isNl ? a.titleNl : a.title).localeCompare(isNl ? b.titleNl : b.title, isNl ? "nl" : "en", {
-          sensitivity: "base",
-        }),
+        catalogServiceTitle(a.slug, locale, a.title).localeCompare(
+          catalogServiceTitle(b.slug, locale, b.title),
+          locale,
+          { sensitivity: "base" },
+        ),
       ),
     );
   }

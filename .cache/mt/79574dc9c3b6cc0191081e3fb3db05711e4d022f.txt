@@ -1,0 +1,1 @@
+Az Ön választékával, folyamataival, közönségével és jelenlegi technológiájával kezdjük. Ezután fontossági sorrendbe állítjuk a fejlesztéseket, világos szakaszokban építjük vagy konfiguráljuk, és a bevezetés előtt teszteljük a legfontosabb ügyfélutakat.

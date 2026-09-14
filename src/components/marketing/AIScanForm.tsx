@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -31,8 +31,6 @@ type Scores = {
 
 export function AIScanForm() {
   const t = useTranslations("aiScan");
-  const locale = useLocale();
-  const isNl = locale === "nl";
   const [phase, setPhase] = useState<"form" | "scanning" | "results">("form");
   const [progress, setProgress] = useState(0);
   const [scores, setScores] = useState<Scores | null>(null);
@@ -86,9 +84,10 @@ export function AIScanForm() {
       { label: t("readiness"), value: scores.readiness },
     ];
     const scoreSummary = rows.map((r) => `${r.label}: ${r.value}`).join("\n");
-    const contactMessage = isNl
-      ? `Hallo TripleZero iT,\n\nIk heb een AI-scan gedaan en wil graag de resultaten bespreken.\n\nWebsite-URL: ${scannedUrl || "—"}\n\nScores:\n${scoreSummary}\n\nVraag / toelichting:\n`
-      : `Hi TripleZero iT,\n\nI’ve run an AI scan and would like to discuss the results.\n\nWebsite URL: ${scannedUrl || "—"}\n\nScores:\n${scoreSummary}\n\nQuestion / notes:\n`;
+    const contactMessage = t("contactMessageLead", {
+      url: scannedUrl || "—",
+      scores: scoreSummary,
+    });
 
     return (
       <GlassCard className="space-y-4">
@@ -109,15 +108,11 @@ export function AIScanForm() {
           </p>
           <div className="flex flex-wrap gap-3">
             <ServiceInquiryDialog
-              serviceTitle={isNl ? "AI-scan resultaten" : "AI scan results"}
+              serviceTitle={t("resultsTitle")}
               source="AI_SCAN_RESULTS"
               triggerLabel={t("contact")}
-              dialogTitle={isNl ? "Contact over AI-scan" : "Contact about AI scan"}
-              dialogDescription={
-                isNl
-                  ? "Laat uw gegevens achter — we helpen u de scores te interpreteren en een plan op te stellen."
-                  : "Leave your details — we’ll help interpret the scores and outline a plan."
-              }
+              dialogTitle={t("contactTitle")}
+              dialogDescription={t("contactDescription")}
               defaultMessage={contactMessage}
               variant="default"
               size="default"

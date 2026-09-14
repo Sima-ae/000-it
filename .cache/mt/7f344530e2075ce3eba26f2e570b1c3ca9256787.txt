@@ -1,0 +1,1 @@
+Daha sürətli yükləmə vaxtları, Core Web Vitals və WordPress xaricində xüsusi yığınlar üçün keşləmə.

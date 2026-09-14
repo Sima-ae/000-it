@@ -1,0 +1,1 @@
+Härtung, Firewall/WAF, HTTPS/SSL und Sicherheitsüberwachung für benutzerdefinierte Websites – nicht WordPress.

@@ -1,0 +1,1 @@
+IA para sitios web personalizados: chat, clientes potenciales, búsqueda de conocimientos y automatización en PHP, HTML/JS y Next.js.

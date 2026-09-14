@@ -1,0 +1,1 @@
+Pradedame nuo pavyzdinio failo ir aiškių laukų, šaltinio duomenų ir išimčių įvedimo taisyklių. Pristatymo metu tikriname išsamumą ir anomalijas, kad galėtumėte matyti progresą ir kokybę.

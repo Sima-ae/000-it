@@ -1,0 +1,1 @@
+Receber uma fatura após o agendamento, se continuarmos.

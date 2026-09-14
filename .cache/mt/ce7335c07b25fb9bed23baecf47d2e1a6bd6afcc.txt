@@ -1,0 +1,1 @@
+Megbeszéljük az alkalmazását, a várható terhelést, a tárolást, a biztonságot és az előnyben részesített kezelési szintet. Ez lehetővé teszi a kapacitás kiválasztását a mai műszaki követelmények és a következő növekedési szakasz alapján, nem pedig találgatások alapján.

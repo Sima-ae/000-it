@@ -1,0 +1,1 @@
+HTTP Strict Transport Security és a kapcsolódó biztonsági fejlécek és böngészőszabályok

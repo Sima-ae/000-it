@@ -1,0 +1,1 @@
+Enemmän tehoa ja hallintaa VPS:llä: omistetut resurssit, SSD RAID 10 ja skaalautuva CPU/RAM/kaistanleveys kasvaviin projekteihin.

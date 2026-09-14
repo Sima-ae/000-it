@@ -1,0 +1,1 @@
+SSD RAID 10 og klare ressourcegrænser giver forudsigelig ydeevne. Skaler op, når dit projekt har brug for det.

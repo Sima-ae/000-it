@@ -1,0 +1,1 @@
+Doba načítania je kratšia ako 2 sekundy a základné webové vitálne funkcie sú optimalizované.

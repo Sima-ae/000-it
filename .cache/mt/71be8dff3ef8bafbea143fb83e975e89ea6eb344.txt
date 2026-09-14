@@ -1,0 +1,1 @@
+Ein Skript ist ein Teil des Programmcodes, der dazu dient, dass unsere Website ordnungsgemäß und interaktiv funktioniert. Dieser Code wird auf unserem Server oder auf Ihrem Gerät ausgeführt.

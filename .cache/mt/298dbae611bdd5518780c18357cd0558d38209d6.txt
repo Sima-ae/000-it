@@ -1,0 +1,1 @@
+WordPress kärna och plugin-uppdateringar med kontroller

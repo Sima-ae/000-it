@@ -1,0 +1,5 @@
+A szabványos támogatás azoknak a szervezeteknek felel meg, amelyek legfeljebb két WordPress-webhellyel rendelkeznek, és amelyeknek mindennapi karbantartásra, valamint a sebességre és a folytonosságra kell figyelniük.
+
+A hét minden napján, 24 órában felügyeletet, napi biztonsági mentéseket, frissítéseket, hibaelhárítást, rosszindulatú programok eltávolítását és biztonsági gondoskodást kap. A gyorsítótárazást, a képeket és a kódot is optimalizáljuk, ahol ez javítja webhelye teljesítményét.
+
+A TripleZero iT proaktívan működik: megjelöljük a problémákat, fókuszáltan megoldjuk a technikai problémákat, és stabilan tartjuk webhelyeit a látogatók és a rendszergazdák számára.

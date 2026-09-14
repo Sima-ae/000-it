@@ -1,0 +1,1 @@
+Svaki isporučeni proizvod spreman je za ispis ili zaslon, s čistom strukturom datoteka za vaš pisač ili tim.

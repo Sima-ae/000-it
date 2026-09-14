@@ -1,0 +1,1332 @@
+{
+  "en": {
+    "extras": {
+      "urgent": {
+        "title": "Priority / urgent",
+        "description": "Same-day or next-business-day preference when available."
+      },
+      "report": {
+        "title": "Written report",
+        "description": "Summary of findings and next steps after the session."
+      },
+      "multi-site": {
+        "title": "Extra website / shop",
+        "description": "Include a second URL in the same appointment."
+      },
+      "screen-share": {
+        "title": "Screen-share deep dive",
+        "description": "Longer live walkthrough of your site or dashboard."
+      },
+      "follow-up": {
+        "title": "Follow-up call (15 min)",
+        "description": "Short check-in within 7 days after the appointment."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "No payment now",
+        "description": "Strategy intake — we confirm by email first."
+      },
+      "invoice": {
+        "title": "Invoice later",
+        "description": "Receive an invoice after the appointment if we continue."
+      },
+      "link": {
+        "title": "Pay online",
+        "description": "Prefer a payment link if a paid session is agreed."
+      }
+    }
+  },
+  "nl": {
+    "extras": {
+      "urgent": {
+        "title": "Spoed / prioriteit",
+        "description": "Voorkeur voor vandaag of eerstvolgende werkdag indien beschikbaar."
+      },
+      "report": {
+        "title": "Schriftelijk rapport",
+        "description": "Samenvatting van bevindingen en vervolgstappen na het gesprek."
+      },
+      "multi-site": {
+        "title": "Extra website / shop",
+        "description": "Neem een tweede URL mee in dezelfde afspraak."
+      },
+      "screen-share": {
+        "title": "Schermdeling deep-dive",
+        "description": "Uitgebreide live walkthrough van uw site of dashboard."
+      },
+      "follow-up": {
+        "title": "Vervolggesprek (15 min)",
+        "description": "Korte check-in binnen 7 dagen na de afspraak."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Nu niet betalen",
+        "description": "Strategie-intake — we bevestigen eerst per e-mail."
+      },
+      "invoice": {
+        "title": "Later factuur",
+        "description": "Ontvang een factuur na de afspraak als we doorgaan."
+      },
+      "link": {
+        "title": "Online betalen",
+        "description": "Voorkeur voor een betaallink als een betaalde sessie is afgesproken."
+      }
+    }
+  },
+  "fr": {
+    "extras": {
+      "urgent": {
+        "title": "Priorité / urgence",
+        "description": "Préférence le jour même ou le jour ouvrable suivant, le cas échéant."
+      },
+      "report": {
+        "title": "Rapport écrit",
+        "description": "Résumé des conclusions et des prochaines étapes après la session."
+      },
+      "multi-site": {
+        "title": "Site Web / boutique supplémentaire",
+        "description": "Inclure une deuxième URL dans le même rendez-vous."
+      },
+      "screen-share": {
+        "title": "Plongée profonde avec partage d'écran",
+        "description": "Parcours en direct plus long de votre site ou tableau de bord."
+      },
+      "follow-up": {
+        "title": "Appel de suivi (15 min)",
+        "description": "Arrivée rapide dans les 7 jours suivant le rendez-vous."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Pas de Paiement",
+        "description": "Admission de la stratégie — nous confirmons d'abord par e-mail."
+      },
+      "invoice": {
+        "title": "Ajouter la facture plus tard",
+        "description": "Recevoir une facture après le rendez-vous si nous continuons."
+      },
+      "link": {
+        "title": "Payer en ligne",
+        "description": "Préférez un lien de paiement si une session payante est convenue."
+      }
+    }
+  },
+  "de": {
+    "extras": {
+      "urgent": {
+        "title": "Priorität / Dringend",
+        "description": "Präferenz für den gleichen Tag oder den nächsten Werktag, falls verfügbar."
+      },
+      "report": {
+        "title": "Schriftlicher Bericht",
+        "description": "Zusammenfassung der Ergebnisse und der nächsten Schritte nach der Sitzung."
+      },
+      "multi-site": {
+        "title": "Zusätzliche Website / Shop",
+        "description": "Fügen Sie dem gleichen Termin eine zweite URL hinzu."
+      },
+      "screen-share": {
+        "title": "Bildschirmfreigabe Deep Dive",
+        "description": "Längerer Live-Rundgang durch Ihre Website oder Ihr Dashboard."
+      },
+      "follow-up": {
+        "title": "Nachbeobachtungsgespräch (15 Min.)",
+        "description": "Kurzer Check-in innerhalb von 7 Tagen nach dem Termin."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Keine Zahlung",
+        "description": "Annahme der Strategie — wir bestätigen zuerst per E-Mail."
+      },
+      "invoice": {
+        "title": "Später fakturieren",
+        "description": "Erhalten Sie nach dem Termin eine Rechnung, wenn wir fortfahren."
+      },
+      "link": {
+        "title": "Online bezahlen",
+        "description": "Bevorzugen Sie einen Zahlungslink, wenn eine kostenpflichtige Sitzung vereinbart ist."
+      }
+    }
+  },
+  "es": {
+    "extras": {
+      "urgent": {
+        "title": "PRIORIDAD: URGENTE",
+        "description": "Preferencia el mismo día o al siguiente día hábil cuando esté disponible."
+      },
+      "report": {
+        "title": "Informe escrito",
+        "description": "Resumen de los hallazgos y próximos pasos después de la sesión."
+      },
+      "multi-site": {
+        "title": "Sitio web / tienda adicional",
+        "description": "Incluir una segunda URL en la misma cita."
+      },
+      "screen-share": {
+        "title": "Pantalla compartida inmersión profunda",
+        "description": "Un recorrido en directo más largo de tu sitio o panel de control."
+      },
+      "follow-up": {
+        "title": "Llamada de seguimiento (15 min)",
+        "description": "Check-in breve dentro de los 7 días posteriores a la cita."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Sin pago ahora",
+        "description": "Entrada de la estrategia: primero confirmamos por correo electrónico."
+      },
+      "invoice": {
+        "title": "Facturar más tarde",
+        "description": "Recibir una factura después de la cita si continuamos."
+      },
+      "link": {
+        "title": "Pagar en línea",
+        "description": "Prefiere un enlace de pago si se acepta una sesión de pago."
+      }
+    }
+  },
+  "pt": {
+    "extras": {
+      "urgent": {
+        "title": "Prioridade / urgência",
+        "description": "Preferência no mesmo dia ou no dia útil seguinte, quando disponível."
+      },
+      "report": {
+        "title": "Relatório escrito",
+        "description": "Resumo dos resultados e próximos passos após a sessão."
+      },
+      "multi-site": {
+        "title": "Site / loja extra",
+        "description": "Inclua um segundo URL no mesmo compromisso."
+      },
+      "screen-share": {
+        "title": "Aprofundamento no compartilhamento de tela",
+        "description": "Passo a passo ao vivo mais longo do seu site ou painel."
+      },
+      "follow-up": {
+        "title": "Chamada de acompanhamento (15 min)",
+        "description": "Check-in curto dentro de 7 dias após a consulta."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "O pagamento não foi efetuado ",
+        "description": "Entrada de estratégia — confirmamos por e-mail primeiro."
+      },
+      "invoice": {
+        "title": "Faturar mais tarde",
+        "description": "Receber uma fatura após o agendamento, se continuarmos."
+      },
+      "link": {
+        "title": "Pague online",
+        "description": "Prefira um link de pagamento se uma sessão paga for acordada."
+      }
+    }
+  },
+  "it": {
+    "extras": {
+      "urgent": {
+        "title": "Priorità / urgenza",
+        "description": "Preferenze per lo stesso giorno o il giorno lavorativo successivo, se disponibili."
+      },
+      "report": {
+        "title": "\tresoconto scritto",
+        "description": "Riepilogo dei risultati e dei passaggi successivi dopo la sessione."
+      },
+      "multi-site": {
+        "title": "Sito web / negozio extra",
+        "description": "Includi un secondo URL nello stesso appuntamento."
+      },
+      "screen-share": {
+        "title": "Approfondimento sulla condivisione dello schermo",
+        "description": "Scenario live più lungo del tuo sito o della tua dashboard."
+      },
+      "follow-up": {
+        "title": "Chiamata di follow-up (15 min)",
+        "description": "Breve check-in entro 7 giorni dall'appuntamento."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Nessun pagamento",
+        "description": "Assunzione della strategia — confermiamo prima via e-mail."
+      },
+      "invoice": {
+        "title": "Fattura in seguito",
+        "description": "Ricevi una fattura dopo l'appuntamento se continuiamo."
+      },
+      "link": {
+        "title": "Effettua il pagamento online",
+        "description": "Preferisci un link di pagamento se viene concordata una sessione a pagamento."
+      }
+    }
+  },
+  "el": {
+    "extras": {
+      "urgent": {
+        "title": "ΠΡΟΤΕΡΑΙΟΤΗΤΑ / επειγον",
+        "description": "Προτίμηση για την ίδια ή την επόμενη εργάσιμη ημέρα, όταν είναι διαθέσιμη."
+      },
+      "report": {
+        "title": "γραπτή έκθεση. ",
+        "description": "Σύνοψη των ευρημάτων και των επόμενων βημάτων μετά τη συνεδρία."
+      },
+      "multi-site": {
+        "title": "Επιπλέον ιστότοπος / κατάστημα",
+        "description": "Συμπεριλάβετε μια δεύτερη διεύθυνση URL στο ίδιο ραντεβού."
+      },
+      "screen-share": {
+        "title": "Βαθιά κατάδυση με κοινή χρήση οθόνης",
+        "description": "Μεγαλύτερη διάρκεια ζωντανής περιήγησης στον ιστότοπο ή τον πίνακα διαχείρισής σας."
+      },
+      "follow-up": {
+        "title": "Κλήση παρακολούθησης (15 λεπτά)",
+        "description": "Σύντομη άφιξη εντός 7 ημερών από το ραντεβού."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Χωρίς πληρωμή",
+        "description": "ΕΙΣΑΓΩΓΗ ΣΤΡΑΤΗΓΙΚΗΣ — Επιβεβαιώνουμε πρώτα"
+      },
+      "invoice": {
+        "title": "Τιμολόγιο αργότερα",
+        "description": "Λήψη τιμολογίου μετά το ραντεβού αν συνεχίσουμε."
+      },
+      "link": {
+        "title": "Πληρώστε διαδικτυακά",
+        "description": "Προτιμήστε έναν σύνδεσμο πληρωμής εάν συμφωνηθεί μια περίοδος λειτουργίας επί πληρωμή."
+      }
+    }
+  },
+  "pl": {
+    "extras": {
+      "urgent": {
+        "title": "Priorytet / pilne",
+        "description": "Preferencje na ten sam lub następny dzień roboczy, jeśli są dostępne."
+      },
+      "report": {
+        "title": "pisemny raport.",
+        "description": "Podsumowanie ustaleń i kolejne kroki po sesji."
+      },
+      "multi-site": {
+        "title": "Dodatkowa strona internetowa / sklep",
+        "description": "Dołącz drugi adres URL do tego samego spotkania."
+      },
+      "screen-share": {
+        "title": "Głębokie zanurzenie w udostępnianiu ekranu",
+        "description": "Dłuższy przegląd Twojej witryny lub pulpitu nawigacyjnego."
+      },
+      "follow-up": {
+        "title": "Rozmowa kontrolna (15 min)",
+        "description": "Krótkie zameldowanie w ciągu 7 dni od wizyty."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "﻿Brak płatności",
+        "description": "Przyjęcie strategii — najpierw potwierdzamy e-mailem."
+      },
+      "invoice": {
+        "title": "Faktura później",
+        "description": "Jeśli będziemy kontynuować, po spotkaniu otrzymamy fakturę."
+      },
+      "link": {
+        "title": "Zapłać przez Internet",
+        "description": "Preferuj link do płatności, jeśli uzgodniono płatną sesję."
+      }
+    }
+  },
+  "cs": {
+    "extras": {
+      "urgent": {
+        "title": "Priorita / naléhavost",
+        "description": "Preference téhož dne nebo následujícího pracovního dne, pokud je k dispozici."
+      },
+      "report": {
+        "title": "hlášení",
+        "description": "Shrnutí nálezů a dalších kroků po relaci."
+      },
+      "multi-site": {
+        "title": "Webové stránky / obchod navíc",
+        "description": "Do stejné události zahrňte druhou adresu URL."
+      },
+      "screen-share": {
+        "title": "Screen-share hluboký ponor",
+        "description": "Delší živá prohlídka vašeho webu nebo řídicího panelu."
+      },
+      "follow-up": {
+        "title": "Následný hovor (15 min)",
+        "description": "Krátký příjezd do 7 dnů po schůzce."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "NYNÍ BEZ PLATBY",
+        "description": "Příjem strategie — nejprve potvrdíme e-mailem."
+      },
+      "invoice": {
+        "title": "Fakturovat později",
+        "description": "Obdržet fakturu po schůzce, pokud budeme pokračovat."
+      },
+      "link": {
+        "title": "Zaplatit on-line",
+        "description": "Pokud je dohodnuta placená relace, upřednostněte odkaz na platbu."
+      }
+    }
+  },
+  "sk": {
+    "extras": {
+      "urgent": {
+        "title": "Priorita / naliehavosť",
+        "description": "Preferencie v ten istý alebo nasledujúci pracovný deň, ak sú k dispozícii."
+      },
+      "report": {
+        "title": "zostava",
+        "description": "Zhrnutie zistení a ďalších krokov po stretnutí."
+      },
+      "multi-site": {
+        "title": "Webová stránka / obchod navyše",
+        "description": "Do tej istej schôdzky zahrňte aj druhú adresu URL."
+      },
+      "screen-share": {
+        "title": "Hlboký ponor zdieľania obrazovky",
+        "description": "Dlhší živý prehľad vašej stránky alebo ovládacieho panela."
+      },
+      "follow-up": {
+        "title": "Následný hovor (15 minút)",
+        "description": "Krátky príchod do 7 dní od stretnutia."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Teraz nemusíte platiť nič!",
+        "description": "Príjem stratégie — najprv potvrdíme e-mailom."
+      },
+      "invoice": {
+        "title": "Faktúra neskôr",
+        "description": "Ak budeme pokračovať, po stretnutí dostanete faktúru."
+      },
+      "link": {
+        "title": "Zaplatiť online",
+        "description": "Ak je dohodnutá platená relácia, uprednostnite odkaz na platbu."
+      }
+    }
+  },
+  "hu": {
+    "extras": {
+      "urgent": {
+        "title": "Elsőbbség / sürgős",
+        "description": "Aznapi vagy következő munkanapos preferencia, ha elérhető."
+      },
+      "report": {
+        "title": "Írásbeli jelentés",
+        "description": "A megállapítások összefoglalása és a munkamenet utáni következő lépések."
+      },
+      "multi-site": {
+        "title": "Extra webhely / üzlet",
+        "description": "Adjon hozzá egy második URL-t ugyanahhoz a találkozóhoz."
+      },
+      "screen-share": {
+        "title": "Képernyőmegosztás a mély merülésről",
+        "description": "Hosszabb élő bejárás a webhelyén vagy a műszerfalán."
+      },
+      "follow-up": {
+        "title": "Utánkövetési hívás (15 perc)",
+        "description": "Rövid érkezés az időpontot követő 7 napon belül."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Nincs fizetési mód",
+        "description": "Stratégiai bevitel — először e-mailben megerősítjük."
+      },
+      "invoice": {
+        "title": "Számla később",
+        "description": "Ha folytatjuk, az időpont után megkapjuk a számlát."
+      },
+      "link": {
+        "title": "Online fizetés",
+        "description": "Fizetési linket szeretne, ha fizetett munkamenetet fogadnak el."
+      }
+    }
+  },
+  "ro": {
+    "extras": {
+      "urgent": {
+        "title": "Prioritate / urgență",
+        "description": "Preferința pentru aceeași zi sau următoarea zi lucrătoare, atunci când este disponibilă."
+      },
+      "report": {
+        "title": "Raport scris",
+        "description": "Rezumatul constatărilor și pașii următori după sesiune."
+      },
+      "multi-site": {
+        "title": "Site web / magazin suplimentar",
+        "description": "Includeți o a doua adresă URL în aceeași programare."
+      },
+      "screen-share": {
+        "title": "Partajare ecran scufundare profundă",
+        "description": "O prezentare în direct mai lungă a site-ului sau a panoului de control."
+      },
+      "follow-up": {
+        "title": "Apel de urmărire (15 min)",
+        "description": "Check-in scurt în termen de 7 zile de la programare."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Nicio plată acum",
+        "description": "Aportul strategiei — confirmăm mai întâi prin e-mail."
+      },
+      "invoice": {
+        "title": "Factură mai târziu",
+        "description": "Primiți o factură după programare dacă vom continua."
+      },
+      "link": {
+        "title": "Plătește online",
+        "description": "Preferați un link de plată dacă este convenită o sesiune plătită."
+      }
+    }
+  },
+  "bg": {
+    "extras": {
+      "urgent": {
+        "title": "Приоритет / спешно",
+        "description": "Предпочитание за същия или следващия работен ден, когато е налично."
+      },
+      "report": {
+        "title": "отчет",
+        "description": "Обобщение на констатациите и следващите стъпки след сесията."
+      },
+      "multi-site": {
+        "title": "Допълнителен уебсайт / магазин",
+        "description": "Включете втори url адрес в същата среща."
+      },
+      "screen-share": {
+        "title": "Дълбоко гмуркане със споделяне на екрана",
+        "description": "По - дълъг обзор на живо на сайта или таблото ви."
+      },
+      "follow-up": {
+        "title": "Последващо повикване (15 мин.)",
+        "description": "Кратко настаняване в рамките на 7 дни след уговорката."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "ПЛАЩАНЕ СЕГА",
+        "description": "Приемане на стратегия — първо потвърждаваме по имейл."
+      },
+      "invoice": {
+        "title": "Фактура по - късно",
+        "description": "Ако продължим, ще получим фактура след срещата."
+      },
+      "link": {
+        "title": "Плащане онлайн",
+        "description": "Предпочитайте връзка за плащане, ако е договорена платена сесия."
+      }
+    }
+  },
+  "hr": {
+    "extras": {
+      "urgent": {
+        "title": "Prioritet / hitno",
+        "description": "Postavke za isti dan ili sljedeći radni dan ako su dostupne."
+      },
+      "report": {
+        "title": "izvješće",
+        "description": "Sažetak nalaza i sljedeći koraci nakon sesije."
+      },
+      "multi-site": {
+        "title": "Dodatna web stranica / trgovina",
+        "description": "Uključite drugi URL u istu obvezu."
+      },
+      "screen-share": {
+        "title": "Screen-share duboko ronjenje",
+        "description": "Duži obilazak vaše internetske stranice ili kontrolne ploče uživo."
+      },
+      "follow-up": {
+        "title": "Kontrolni poziv (15 min)",
+        "description": "Kratak dolazak u roku od 7 dana od zakazanog termina."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Trenutačno nema plaćanja",
+        "description": "Unos strategije — prvo potvrđujemo e-poštom."
+      },
+      "invoice": {
+        "title": "Fakturiraj kasnije",
+        "description": "Ako nastavimo, primit ćemo fakturu nakon sastanka."
+      },
+      "link": {
+        "title": "Plati karticom",
+        "description": "Preferirajte poveznicu za plaćanje ako je dogovorena plaćena sesija."
+      }
+    }
+  },
+  "sr": {
+    "extras": {
+      "urgent": {
+        "title": "Prioritet / hitno",
+        "description": "Željena opcija za isti dan ili sljedeći poslovni dan ako je dostupna."
+      },
+      "report": {
+        "title": "Pisani izveštaj",
+        "description": "Rezime nalaza i sledeći koraci nakon sesije."
+      },
+      "multi-site": {
+        "title": "Dodatni veb-sajt / prodavnica",
+        "description": "Uključite drugu URL adresu u isti sastanak."
+      },
+      "screen-share": {
+        "title": "Dubinsko ronjenje sa deljenjem ekrana",
+        "description": "Duži obilazak vašeg sajta ili komandne table uživo."
+      },
+      "follow-up": {
+        "title": "Kontrolni poziv (15 min)",
+        "description": "Kratak dolazak u roku od 7 dana nakon zakazanog termina."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Nema plaćanja",
+        "description": "Unos strategije — prvo potvrđujemo imejlom."
+      },
+      "invoice": {
+        "title": "Fakturiši kasnije",
+        "description": "Ako nastavimo, primićemo fakturu nakon sastanka."
+      },
+      "link": {
+        "title": "Platite onlajn",
+        "description": "Preferirajte link za plaćanje ako je dogovorena plaćena sesija."
+      }
+    }
+  },
+  "bs": {
+    "extras": {
+      "urgent": {
+        "title": "Prioritet / hitno",
+        "description": "Željene postavke za isti dan ili sljedeći poslovni dan kada su dostupne."
+      },
+      "report": {
+        "title": "Pisani izvještaj",
+        "description": "Sažetak nalaza i sljedeći koraci nakon sesije."
+      },
+      "multi-site": {
+        "title": "Dodatna web stranica / trgovina",
+        "description": "Uključite drugu URL adresu u isti sastanak."
+      },
+      "screen-share": {
+        "title": "Duboko ronjenje uz dijeljenje ekrana",
+        "description": "Duži obilazak vaše stranice ili kontrolne table."
+      },
+      "follow-up": {
+        "title": "Kontrolni poziv (15 min)",
+        "description": "Kratak dolazak u roku od 7 dana nakon zakazanog termina."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Trenutno nema plaćanja",
+        "description": "Unos strategije — prvo potvrđujemo putem e-maila."
+      },
+      "invoice": {
+        "title": "Fakturiši kasnije",
+        "description": "Ako nastavimo, primite fakturu nakon sastanka."
+      },
+      "link": {
+        "title": "Platite online",
+        "description": "Preferirajte link za plaćanje ako je dogovorena plaćena sesija."
+      }
+    }
+  },
+  "cnr": {
+    "extras": {
+      "urgent": {
+        "title": "Prioritet / hitno",
+        "description": "Željena opcija za isti dan ili sljedeći poslovni dan ako je dostupna."
+      },
+      "report": {
+        "title": "Pisani izveštaj",
+        "description": "Rezime nalaza i sledeći koraci nakon sesije."
+      },
+      "multi-site": {
+        "title": "Dodatni veb-sajt / prodavnica",
+        "description": "Uključite drugu URL adresu u isti sastanak."
+      },
+      "screen-share": {
+        "title": "Dubinsko ronjenje sa deljenjem ekrana",
+        "description": "Duži obilazak vašeg sajta ili komandne table uživo."
+      },
+      "follow-up": {
+        "title": "Kontrolni poziv (15 min)",
+        "description": "Kratak dolazak u roku od 7 dana nakon zakazanog termina."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Nema plaćanja",
+        "description": "Unos strategije — prvo potvrđujemo imejlom."
+      },
+      "invoice": {
+        "title": "Fakturiši kasnije",
+        "description": "Ako nastavimo, primićemo fakturu nakon sastanka."
+      },
+      "link": {
+        "title": "Platite onlajn",
+        "description": "Preferirajte link za plaćanje ako je dogovorena plaćena sesija."
+      }
+    }
+  },
+  "sq": {
+    "extras": {
+      "urgent": {
+        "title": "Prioritet / urgjent",
+        "description": "Preferenca e ditës së njëjtë ose të ardhshme të biznesit kur është e disponueshme."
+      },
+      "report": {
+        "title": "Raport me shkrim",
+        "description": "Përmbledhje e gjetjeve dhe hapat e ardhshëm pas seancës."
+      },
+      "multi-site": {
+        "title": "Faqe interneti / dyqan shtesë",
+        "description": "Përfshi një URL të dytë në të njëjtin takim."
+      },
+      "screen-share": {
+        "title": "Zhytje e thellë në ndarje me ekranin",
+        "description": "Shëtitje më të gjata live në faqen ose panelin e veprimeve."
+      },
+      "follow-up": {
+        "title": "Telefonatë përcjellëse (15 minuta)",
+        "description": "Regjistrim i shkurtër brenda 7 ditëve pas takimit."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Nuk ka pagesë tani",
+        "description": "Marrja e strategjisë — së pari konfirmojmë me email."
+      },
+      "invoice": {
+        "title": "Fatura më vonë",
+        "description": "Merr një faturë pas takimit nëse vazhdojmë."
+      },
+      "link": {
+        "title": "Paguaj online",
+        "description": "Prefero një link pagese nëse bihet dakord për një seancë me pagesë."
+      }
+    }
+  },
+  "mk": {
+    "extras": {
+      "urgent": {
+        "title": "Приоритет / итно",
+        "description": "Претпочитан термин за истиот ден или следниот работен ден кога ќе биде достапен."
+      },
+      "report": {
+        "title": "Писмен извештај",
+        "description": "Резиме на наодите и следните чекори по седницата."
+      },
+      "multi-site": {
+        "title": "Дополнителна веб-страница / продавница",
+        "description": "Вклучете втора URL-адреса во истиот термин."
+      },
+      "screen-share": {
+        "title": "Длабоко нуркање со споделување на екранот",
+        "description": "Подолга прошетка во живо низ вашата веб-страница или контролна табла."
+      },
+      "follow-up": {
+        "title": "Следен повик (15 мин.)",
+        "description": "Кратко пријавување во рок од 7 дена по закажаниот термин."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Сега нема плаќање",
+        "description": "Внес на стратегија — прво потврдуваме преку е-пошта."
+      },
+      "invoice": {
+        "title": "Фактура подоцна",
+        "description": "Ако продолжиме, ќе добиеме фактура по закажаниот термин."
+      },
+      "link": {
+        "title": "Плати онлајн",
+        "description": "Претпочитајте линк за плаќање ако е договорена платена сесија."
+      }
+    }
+  },
+  "lt": {
+    "extras": {
+      "urgent": {
+        "title": "Pirmenybė / skubu",
+        "description": "Pageidaujama tą pačią arba kitą darbo dieną, kai yra galimybė."
+      },
+      "report": {
+        "title": "Rašytinė ataskaita",
+        "description": "Išvadų ir tolesnių veiksmų po seanso santrauka."
+      },
+      "multi-site": {
+        "title": "Papildoma svetainė / parduotuvė",
+        "description": "Į tą patį susitikimą įtraukite antrą URL."
+      },
+      "screen-share": {
+        "title": "Gilus pasinėrimas į bendrą ekraną",
+        "description": "Ilgesnė tiesioginė svetainės arba valdymo skydelio peržiūra."
+      },
+      "follow-up": {
+        "title": "Paskesnis skambutis (15 min.)",
+        "description": "Trumpas atvykimas per 7 dienas po susitikimo."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Šiuo metu mokėjimas neatliekamas",
+        "description": "Strategijos priėmimas — pirmiausia patvirtiname el. paštu."
+      },
+      "invoice": {
+        "title": "Išrašyti sąskaitą vėliau",
+        "description": "Jei tęsime, po susitikimo gausite sąskaitą faktūrą."
+      },
+      "link": {
+        "title": "Mokėti internetu",
+        "description": "Jei susitarta dėl mokamos sesijos, pirmenybę teikite mokėjimo nuorodai."
+      }
+    }
+  },
+  "da": {
+    "extras": {
+      "urgent": {
+        "title": "Prioritet/haster",
+        "description": "Præference samme dag eller næste arbejdsdag, når det er muligt."
+      },
+      "report": {
+        "title": "betænkning",
+        "description": "Resumé af resultater og næste trin efter sessionen."
+      },
+      "multi-site": {
+        "title": "Ekstra hjemmeside/butik",
+        "description": "Medtag en anden URL i den samme aftale."
+      },
+      "screen-share": {
+        "title": "Dybdyk med skærmdeling",
+        "description": "Længere live gennemgang af dit websted eller kontrolpanel."
+      },
+      "follow-up": {
+        "title": "Opfølgning (15 min)",
+        "description": "Kort indtjekning senest 7 dage efter aftalen."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Ingen betaling",
+        "description": "Strategiindtag — vi bekræfter via e-mail først."
+      },
+      "invoice": {
+        "title": "Faktura senere",
+        "description": "Modtag en faktura efter aftalen, hvis vi fortsætter."
+      },
+      "link": {
+        "title": "Betal online",
+        "description": "Foretræk et betalingslink, hvis en betalt session er aftalt."
+      }
+    }
+  },
+  "sv": {
+    "extras": {
+      "urgent": {
+        "title": "Prioritet / brådskande",
+        "description": "Preferens samma dag eller nästa arbetsdag när det är tillgängligt."
+      },
+      "report": {
+        "title": "rapport",
+        "description": "Sammanfattning av resultaten och nästa steg efter sessionen."
+      },
+      "multi-site": {
+        "title": "Extra webbplats / butik",
+        "description": "Inkludera en andra URL i samma möte."
+      },
+      "screen-share": {
+        "title": "Skärm-dela djupdykning",
+        "description": "Längre live-genomgång av din webbplats eller kontrollpanel."
+      },
+      "follow-up": {
+        "title": "Uppföljningssamtal (15 min)",
+        "description": "Kort incheckning inom 7 dagar efter mötet."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Ingen betalning nu",
+        "description": "Strategiintag — vi bekräftar via e-post först."
+      },
+      "invoice": {
+        "title": "Faktura senare",
+        "description": "Få en faktura efter mötet om vi fortsätter."
+      },
+      "link": {
+        "title": "Betala online",
+        "description": "Föredra en betalningslänk om en betald session är överenskommen."
+      }
+    }
+  },
+  "no": {
+    "extras": {
+      "urgent": {
+        "title": "Prioritet / haster",
+        "description": "Preferanse for samme dag eller neste virkedag når dette er tilgjengelig."
+      },
+      "report": {
+        "title": "rapport",
+        "description": "Oppsummering av funn og neste steg etter økten."
+      },
+      "multi-site": {
+        "title": "Ekstra nettside / butikk",
+        "description": "Inkluder en annen URL i samme avtale."
+      },
+      "screen-share": {
+        "title": "Dyptgående undersøkelse av skjermdeling",
+        "description": "Lengre gjennomgang av nettstedet eller dashbordet ditt i sanntid."
+      },
+      "follow-up": {
+        "title": "Oppfølgingssamtale (15 min)",
+        "description": "Kort innsjekking innen 7 dager etter avtalen."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Ingen betaling nå",
+        "description": "Strategiinntak – vi bekrefter først via e-post."
+      },
+      "invoice": {
+        "title": "Faktura senere",
+        "description": "Motta faktura etter avtalen hvis vi fortsetter."
+      },
+      "link": {
+        "title": "Betal på nett",
+        "description": "Foretrekker betalingslenke dersom betalt økt avtales."
+      }
+    }
+  },
+  "fi": {
+    "extras": {
+      "urgent": {
+        "title": "Prioriteetti / kiireellinen",
+        "description": "Saman päivän tai seuraavan työpäivän asetukset, kun ne ovat saatavilla."
+      },
+      "report": {
+        "title": "kertomus",
+        "description": "Yhteenveto havainnoista ja seuraavista vaiheista istunnon jälkeen."
+      },
+      "multi-site": {
+        "title": "Ylimääräinen verkkosivusto / kauppa",
+        "description": "Sisällytä toinen URL-osoite samaan tapaamiseen."
+      },
+      "screen-share": {
+        "title": "Näytönjakosyväsukellus",
+        "description": "Pidempi live-esittely sivustostasi tai ohjauspaneelistasi."
+      },
+      "follow-up": {
+        "title": "Seurantapuhelu (15 min)",
+        "description": "Lyhyt sisäänkirjautuminen 7 päivän kuluessa tapaamisesta."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Ei maksua nyt",
+        "description": "Strategian omaksuminen — vahvistamme sen ensin sähköpostilla."
+      },
+      "invoice": {
+        "title": "Lasku myöhemmin",
+        "description": "Saat laskun ajanvarauksen jälkeen, jos jatkamme."
+      },
+      "link": {
+        "title": "Maksa verkossa",
+        "description": "Maksulinkki on parempi, jos maksullisesta istunnosta on sovittu."
+      }
+    }
+  },
+  "uk": {
+    "extras": {
+      "urgent": {
+        "title": "Пріоритет 1/ НЕВІДКЛАДНИЙ ",
+        "description": "Уподобання на той самий день або наступний робочий день, якщо вони доступні."
+      },
+      "report": {
+        "title": "Письмовий звіт",
+        "description": "Резюме висновків та наступні кроки після сесії."
+      },
+      "multi-site": {
+        "title": "Додатковий веб-сайт / магазин",
+        "description": "Додайте другу URL-адресу до тієї ж зустрічі."
+      },
+      "screen-share": {
+        "title": "Спільне використання екрана глибоке занурення",
+        "description": "Більш тривалий покроковий огляд вашого сайту або інформаційної панелі."
+      },
+      "follow-up": {
+        "title": "Подальший дзвінок (15 хв)",
+        "description": "Коротке прибуття протягом 7 днів після прийому."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Зараз немає оплати",
+        "description": "Прийняття стратегії — спочатку ми підтверджуємо це електронною поштою."
+      },
+      "invoice": {
+        "title": "Рахунок-фактура пізніше",
+        "description": "Отримайте рахунок-фактуру після зустрічі, якщо ми продовжимо."
+      },
+      "link": {
+        "title": "сплачуй онлайн",
+        "description": "Віддайте перевагу платіжному посиланню, якщо узгоджено платну сесію."
+      }
+    }
+  },
+  "ru": {
+    "extras": {
+      "urgent": {
+        "title": "Приоритет / срочность",
+        "description": "Предпочтение в тот же день или на следующий рабочий день, если доступно."
+      },
+      "report": {
+        "title": "письменное сообщение",
+        "description": "Резюме выводов и следующие шаги после сессии."
+      },
+      "multi-site": {
+        "title": "Дополнительный сайт / магазин",
+        "description": "Включите второй URL-адрес в ту же встречу."
+      },
+      "screen-share": {
+        "title": "Глубокое погружение в совместное использование экрана",
+        "description": "Более длительный просмотр вашего сайта или панели управления."
+      },
+      "follow-up": {
+        "title": "Последующий звонок (15 минут)",
+        "description": "Короткий заезд в течение 7 дней после приема."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Нет оплаты",
+        "description": "Принятие стратегии — сначала мы подтверждаем по электронной почте."
+      },
+      "invoice": {
+        "title": "Счет выставлен позже",
+        "description": "Получите счет после встречи, если мы продолжим."
+      },
+      "link": {
+        "title": "Оплатите онлайн",
+        "description": "Предпочитайте ссылку на оплату, если платная сессия согласована."
+      }
+    }
+  },
+  "tr": {
+    "extras": {
+      "urgent": {
+        "title": "ÖNCELİK: ACİL",
+        "description": "Mevcut olduğunda aynı gün veya ertesi iş günü tercihi."
+      },
+      "report": {
+        "title": "5. Yazılı rapor (Written report) ",
+        "description": "Bulguların özeti ve oturumdan sonraki adımlar."
+      },
+      "multi-site": {
+        "title": "Ekstra web sitesi / mağaza",
+        "description": "Aynı randevuya ikinci bir URL ekleyin."
+      },
+      "screen-share": {
+        "title": "Ekran paylaşımı derinlemesine incelemesi",
+        "description": "Sitenizde veya gösterge panonuzda daha uzun canlı gezinme."
+      },
+      "follow-up": {
+        "title": "Takip araması (15 dk)",
+        "description": "Randevudan sonraki 7 gün içinde kısa giriş."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Ödeme yok",
+        "description": "Strateji alımı — önce e - posta ile onaylıyoruz."
+      },
+      "invoice": {
+        "title": "Daha sonra fatura",
+        "description": "Devam edersek randevudan sonra fatura alın."
+      },
+      "link": {
+        "title": "Online ödeme yapın",
+        "description": "Ücretli bir oturum kabul edilirse bir ödeme bağlantısı tercih edin."
+      }
+    }
+  },
+  "he": {
+    "extras": {
+      "urgent": {
+        "title": "עדיפות / דחיפות",
+        "description": "העדפה מהיום להיום או מהיום למחר, כשיהיה זמין."
+      },
+      "report": {
+        "title": "דו\"ח כתוב",
+        "description": "סיכום הממצאים והשלבים הבאים לאחר המפגש."
+      },
+      "multi-site": {
+        "title": "אתר / חנות נוספים",
+        "description": "יש לכלול כתובת URL שנייה באותה פגישה."
+      },
+      "screen-share": {
+        "title": "שיתוף מסך צלילה עמוקה",
+        "description": "סיורים ארוכים יותר באתר או בלוח הבקרה שלך."
+      },
+      "follow-up": {
+        "title": "שיחת מעקב (15 דקות)",
+        "description": "צ'ק - אין קצר תוך 7 ימים ממועד הפגישה."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "ללא תשלום",
+        "description": "צריכת אסטרטגיה — אנו מאשרים בדוא\"ל תחילה."
+      },
+      "invoice": {
+        "title": "חשבונית מאוחר יותר",
+        "description": "אם נמשיך, נשלח לך חשבונית לאחר הפגישה."
+      },
+      "link": {
+        "title": "תשלום מקוון",
+        "description": "יש להעדיף קישור לתשלום אם מפגש בתשלום מוסכם."
+      }
+    }
+  },
+  "ar": {
+    "extras": {
+      "urgent": {
+        "title": "الأولوية / عاجل",
+        "description": "تفضيلات نفس اليوم أو يوم العمل التالي عند توفرها."
+      },
+      "report": {
+        "title": "التقرير الكتابي",
+        "description": "ملخص النتائج والخطوات التالية بعد الجلسة."
+      },
+      "multi-site": {
+        "title": "موقع ويب / متجر إضافي",
+        "description": "قم بتضمين عنوان URL ثانٍ في نفس الموعد."
+      },
+      "screen-share": {
+        "title": "مشاركة الشاشة بعمق",
+        "description": "جولة مباشرة أطول في موقعك أو لوحة بياناتك."
+      },
+      "follow-up": {
+        "title": "مكالمة متابعة (15 دقيقة)",
+        "description": "تسجيل وصول قصير في غضون 7 أيام بعد الموعد."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "لا يُدفع لهم",
+        "description": "مدخول الاستراتيجية — نؤكد عن طريق البريد الإلكتروني أولاً."
+      },
+      "invoice": {
+        "title": "الفاتورة لاحقًا",
+        "description": "استلم فاتورة بعد الموعد إذا واصلنا."
+      },
+      "link": {
+        "title": "الدفع عبر الإنترنت",
+        "description": "تفضّل رابط الدفع إذا تم الاتفاق على جلسة مدفوعة."
+      }
+    }
+  },
+  "ka": {
+    "extras": {
+      "urgent": {
+        "title": "Პრიორიტეტი / გადაუდებელი",
+        "description": "Ერთსა და იმავე დღეს ან მომდევნო დღეს ბიზნესისთვის უპირატესობის მინიჭება, როდესაც ეს შესაძლებელია."
+      },
+      "report": {
+        "title": "Წერილობითი ანგარიში",
+        "description": "Დასკვნების შეჯამება და შემდეგი ნაბიჯები სესიის შემდეგ."
+      },
+      "multi-site": {
+        "title": "Დამატებითი ვებსაიტი / მაღაზია",
+        "description": "Დაურთეთ მეორე URL იმავე შეხვედრას."
+      },
+      "screen-share": {
+        "title": "Ეკრანის გაზიარება ღრმა ჩაყვინთვა",
+        "description": "Დიდხანს იცოცხლეთ თქვენი ვებსაიტის ან მართვის პანელის მეშვეობით."
+      },
+      "follow-up": {
+        "title": "Შემდგომი დაკვირვების ზარი (15 წთ)",
+        "description": "Ხანმოკლე დაბინავება დანიშვნიდან 7 დღის განმავლობაში."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Გადახდის გარეშე",
+        "description": "Სტრატეგიის მიღება — ჯერ ვადასტურებთ ელფოსტით."
+      },
+      "invoice": {
+        "title": "Ინვოისი მოგვიანებით",
+        "description": "Ინვოისის მიღება დანიშვნის შემდეგ, თუ გავაგრძელებთ."
+      },
+      "link": {
+        "title": "Გადაიხადეთ ონლაინ",
+        "description": "Მიუთითეთ გადახდის ბმული, თუ ფასიანი სესია შეთანხმებულია."
+      }
+    }
+  },
+  "hy": {
+    "extras": {
+      "urgent": {
+        "title": "Առաջնահերթություն / հրատապ",
+        "description": "Նույն օրվա կամ հաջորդ աշխատանքային օրվա նախապատվությունը, երբ առկա է ։"
+      },
+      "report": {
+        "title": "Գրավոր հաղորդում",
+        "description": "Արդյունքների ամփոփում և հաջորդ քայլեր նիստից հետո:"
+      },
+      "multi-site": {
+        "title": "Լրացուցիչ կայք / խանութ",
+        "description": "Նույն ժամադրության մեջ ներառեք երկրորդ URL - ն:"
+      },
+      "screen-share": {
+        "title": "Էկրանի համօգտագործման խորը սուզվել",
+        "description": "Երկարատև քայլեք ձեր կայքի կամ կառավարման վահանակի միջով ։"
+      },
+      "follow-up": {
+        "title": "Հետևողական զանգ (15 րոպե)",
+        "description": "Կարճատև ժամանում ՝ ժամանումից հետո 7 օրվա ընթացքում ։"
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "Այժմ վճարում չկա",
+        "description": "Ռազմավարության ընդունում. նախ հաստատում ենք էլփոստով ։"
+      },
+      "invoice": {
+        "title": "Հաշիվ - ապրանքագիր ավելի ուշ",
+        "description": "Շարունակելու դեպքում ստացեք հաշիվ - ապրանքագիր հանդիպումից հետո:"
+      },
+      "link": {
+        "title": "Վճարել առցանց",
+        "description": "Նախընտրեք վճարման հղում, եթե վճարովի աշխատաշրջանը համաձայնեցված է:"
+      }
+    }
+  },
+  "az": {
+    "extras": {
+      "urgent": {
+        "title": "Prioritet / təcili",
+        "description": "Mövcud olduqda eyni gün və ya növbəti biznes günü tərcihləri."
+      },
+      "report": {
+        "title": "Yazılı hesabat",
+        "description": "Nəticələrin xülasəsi və sessiyadan sonra növbəti addımlar."
+      },
+      "multi-site": {
+        "title": "Əlavə veb-sayt / mağaza",
+        "description": "Eyni təyinata ikinci URL-i daxil edin."
+      },
+      "screen-share": {
+        "title": "Ekran - dərin dalğıc",
+        "description": "Saytınızı və ya göstəricilər panelinizi daha uzun müddət canlı gəzin."
+      },
+      "follow-up": {
+        "title": "İzləmə zəngi (15 dəq)",
+        "description": "Görüşdən sonra 7 gün ərzində qısa giriş."
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "İndi ödəniş yoxdur",
+        "description": "Strategiyanın qəbulu — əvvəlcə e-poçtla təsdiq edirik."
+      },
+      "invoice": {
+        "title": "Faktura daha sonra",
+        "description": "Davam etsək, görüşdən sonra qaimə alın."
+      },
+      "link": {
+        "title": "Onlayn ödəniş et",
+        "description": "Ödənişli sessiya razılaşdırılıbsa, ödəniş linkinə üstünlük verin."
+      }
+    }
+  },
+  "zh": {
+    "extras": {
+      "urgent": {
+        "title": "优先/紧急",
+        "description": "当天或下一个工作日偏好（如有）。"
+      },
+      "report": {
+        "title": "书面报告",
+        "description": "调查结果总结和会后后续步骤。"
+      },
+      "multi-site": {
+        "title": "额外的网站/商店",
+        "description": "在同一约会中包含第二个URL。"
+      },
+      "screen-share": {
+        "title": "屏幕共享深度探索",
+        "description": "对您的网站或控制面板进行更长时间的实时演练。"
+      },
+      "follow-up": {
+        "title": "跟进电话（ 15分钟）",
+        "description": "预约后7天内短暂入住。"
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "拒绝支付",
+        "description": "策略接收—我们首先通过电子邮件确认。"
+      },
+      "invoice": {
+        "title": "稍后开具发票",
+        "description": "如果我们继续，我们会在预约后收到发票。"
+      },
+      "link": {
+        "title": "网上支付",
+        "description": "如果同意付费会话，则首选付款链接。"
+      }
+    }
+  },
+  "ja": {
+    "extras": {
+      "urgent": {
+        "title": "Priority: Urgent ",
+        "description": "利用可能な場合は、当日または翌営業日に設定します。"
+      },
+      "report": {
+        "title": "レポート",
+        "description": "セッション後の調査結果と次のステップの概要。"
+      },
+      "multi-site": {
+        "title": "追加のウェブサイト/ショップ",
+        "description": "同じ予定に2つ目のURLを含めます。"
+      },
+      "screen-share": {
+        "title": "スクリーンシェアディープダイブ",
+        "description": "サイトやダッシュボードのより長いライブのウォークスルー。"
+      },
+      "follow-up": {
+        "title": "フォローアップコール（ 15分）",
+        "description": "予約後7日以内の短時間チェックイン。"
+      }
+    },
+    "prefs": {
+      "none": {
+        "title": "No Payment（支払い無し）",
+        "description": "戦略の受け入れ—最初にメールで確認します。"
+      },
+      "invoice": {
+        "title": "後で請求する",
+        "description": "続行すると、予約後に請求書が届きます。"
+      },
+      "link": {
+        "title": "オンラインで支払う。",
+        "description": "有料セッションが合意された場合は、支払いリンクをお勧めします。"
+      }
+    }
+  }
+}

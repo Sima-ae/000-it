@@ -1,0 +1,1 @@
+Skontrolujte kontroly pripravenosti AI naprieč klientmi a webmi.

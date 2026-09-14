@@ -1,0 +1,1 @@
+Applications React rapides et prêtes pour le référencement avec App Router et DX moderne.

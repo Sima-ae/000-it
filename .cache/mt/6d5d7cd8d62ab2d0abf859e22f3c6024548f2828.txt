@@ -1,0 +1,1 @@
+Aplicaciones React rápidas y listas para SEO con App Router y DX moderno.

@@ -1,0 +1,10 @@
+Hi TripleZero iT,
+
+I've run an AI scan and would like to discuss the results.
+
+Website URL: {url}
+
+Scores:
+{scores}
+
+Question / notes:

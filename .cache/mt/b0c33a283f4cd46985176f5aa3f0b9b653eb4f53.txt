@@ -1,0 +1,5 @@
+Zaštitite svoju WordPress web stranicu s TripleZero iT sigurnosnim uslugama. Svoju web stranicu štitimo od hakova, zlonamjernog softvera i zloupotrebe praktičnim, pažljivo kontroliranim pristupom.
+
+Nakon izrade sigurnosne kopije pokrećemo sigurnosnu reviziju, instaliramo Wordfence (Basic ili Premium), konfiguriramo firewall i brute-force zaštitu i postavljamo SSL gdje je potrebno. Pristup korisnika i zakrpe se pregledavaju tako da ranjivosti imaju manje prostora za rast.
+
+Dobijate 7 dana besplatne podrške nakon isporuke — bolje zaštitite svoje podatke, reputaciju i kontinuitet.

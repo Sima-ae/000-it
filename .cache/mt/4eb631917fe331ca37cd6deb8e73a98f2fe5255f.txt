@@ -1,0 +1,5 @@
+Schützen Sie Ihre WordPress-Website mit den Sicherheitsdiensten von TripleZero iT. Mit einem praktischen, sorgfältig kontrollierten Ansatz schützen wir Ihre Website vor Hacks, Malware und Missbrauch.
+
+Nach einem Backup führen wir eine Sicherheitsüberprüfung durch, installieren Wordfence (Basic oder Premium), konfigurieren Firewall und Brute-Force-Schutz und richten bei Bedarf SSL ein. Der Benutzerzugriff und das Patchen werden überprüft, sodass Schwachstellen weniger Spielraum für das Wachstum haben.
+
+Nach der Lieferung erhalten Sie 7 Tage lang kostenlosen Support – so bleiben Ihre Daten, Ihr Ruf und Ihre Kontinuität besser geschützt.

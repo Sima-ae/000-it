@@ -1,0 +1,1 @@
+Funcții personalizate AI, RAG și API-uri în stiva de produse.

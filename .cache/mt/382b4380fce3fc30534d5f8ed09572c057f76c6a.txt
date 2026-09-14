@@ -1,0 +1,1 @@
+Automatické zálohování (a cloudové úložiště pro firmy)

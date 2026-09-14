@@ -1,0 +1,1 @@
+Seguridad de transporte estricta HTTP y encabezados de seguridad y políticas de navegador relacionados

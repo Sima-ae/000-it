@@ -1,0 +1,5 @@
+TripleZero iT yedekleme ve barındırma geçişini kullanarak WordPress sitenizi koruyun ve güvenle taşıyın. İster ana bilgisayarları değiştiriyor olun, ister planınızı yükseltiyor olun, ister yalnızca güvenilir bir yedeklemeye ihtiyaç duyuyor olun, geçişi sakin ve kontrollü tutuyoruz.
+
+Dosyaların, veritabanının, temaların, eklentilerin ve medyanın tam bir yedeğini oluşturuyoruz. Ardından sitenizi taşıyor, uyumluluğu doğruluyor ve her şeyin yeni ortamda çalışması için anahtar barındırma yapılandırmasını ayarlıyoruz.
+
+Teslimattan sonra yedekleme, geri yükleme veya geçişle ilgili sorularınız için 7 gün ücretsiz destek alırsınız. Siteniz bozulmadan, ulaşılabilir ve büyümeye hazır kalır.

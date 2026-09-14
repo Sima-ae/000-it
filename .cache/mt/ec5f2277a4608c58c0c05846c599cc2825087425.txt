@@ -1,0 +1,1 @@
+Vyčistenie škodlivého softvéru pre vlastné stránky PHP, HTML a Next.js – oddelene od balíčkov škodlivého softvéru WordPress.

@@ -1,0 +1,1 @@
+Le tableau de bord n'a pas pu être chargé. Vérifiez votre connexion à la base de données et réessayez.

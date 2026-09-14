@@ -1,0 +1,1 @@
+No se pudo cargar el panel. Verifique la conexión de su base de datos e inténtelo nuevamente.

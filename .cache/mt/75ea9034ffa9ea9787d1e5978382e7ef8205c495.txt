@@ -1,0 +1,1 @@
+Laddningstider under 2 sekunder och Core Web Vitals optimerade.

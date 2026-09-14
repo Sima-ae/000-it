@@ -1,0 +1,1 @@
+HTTP Katı Aktarım Güvenliği ve ilgili Güvenlik Başlıkları ve Tarayıcı Politikaları

@@ -1,0 +1,5 @@
+Az alaptámogatás azoknak a vállalkozásoknak szól, amelyek egyetlen WordPress-webhellyel rendelkeznek, és amelyek megbízható műszaki alapot szeretnének anélkül, hogy maguknak kellene megoldaniuk minden problémát.
+
+Éjjel-nappal figyeljük webhelyét, napi biztonsági mentéseket készítünk, és naprakészen tartjuk a WordPress-t és a bővítményeket. Ezenkívül kijavítjuk a hibákat, eltávolítjuk a rosszindulatú programokat, és gyakorlati biztonsági intézkedéseket alkalmazunk, hogy webhelye elérhető és védett legyen.
+
+A TripleZero iT gondosan kezeli az incidenseket, a helyreállítás után ellenőrzi a helyszínt, és segít csökkenteni a jövőbeni kockázatokat. Ön üzletére összpontosíthat, miközben mi ügyelünk annak műszaki folytonosságára.

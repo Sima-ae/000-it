@@ -1,0 +1,5 @@
+La vitesse du site Web façonne l’expérience utilisateur, les performances de recherche et les conversions. TripleZero iT optimise les sites WordPress afin que les visiteurs se chargent plus rapidement et rebondissent moins.
+
+Nous commençons par un audit de performance, puis améliorons les goulots d'étranglement dans le code, la base de données, les images, les plugins, le thème et la configuration de l'hébergement. La mise en cache et le réglage ciblé offrent des gains mesurables en termes de temps de chargement.
+
+Après la livraison, vous bénéficiez de 7 jours d'assistance gratuite pour toute question concernant le travail d'optimisation, ce qui permettra à votre site d'être plus rapide, plus fluide et plus professionnel.

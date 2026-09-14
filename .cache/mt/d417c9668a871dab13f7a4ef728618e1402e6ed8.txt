@@ -1,0 +1,1 @@
+Elija un servicio, fecha y hora: le confirmaremos su cita por correo electrónico.

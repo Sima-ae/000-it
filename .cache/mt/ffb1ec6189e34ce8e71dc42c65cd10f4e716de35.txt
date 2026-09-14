@@ -1,0 +1,1 @@
+Nous utilisons WooCommerce pour la gestion de la boutique en ligne. En savoir plus

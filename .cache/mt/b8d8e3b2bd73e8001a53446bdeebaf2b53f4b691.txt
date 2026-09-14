@@ -1,0 +1,1 @@
+Dashboard sa nepodarilo načítať. Skontrolujte pripojenie k databáze a skúste to znova.

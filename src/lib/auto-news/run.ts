@@ -1,5 +1,5 @@
 import { prisma } from "@/lib/prisma";
-import { createNewsPost, slugifyNewsId } from "@/lib/news";
+import { createNewsPost, completeNewsTranslations, slugifyNewsId } from "@/lib/news";
 import { AUTO_NEWS_AUTHOR, AUTO_NEWS_PER_RUN } from "@/lib/auto-news/config";
 import { ensureNewsCoverImage } from "@/lib/auto-news/cover-image";
 import { fetchRecentAiStories } from "@/lib/auto-news/fetch-stories";
@@ -13,10 +13,6 @@ import {
   isAutoNewsScheduleWindow,
   slugifyAutoNewsId,
 } from "@/lib/auto-news/schedule";
-import {
-  buildNewsTranslationsFromEnglish,
-  nlFromTranslations,
-} from "@/lib/news-i18n";
 
 export type AutoNewsRunOptions = {
   force?: boolean;
@@ -201,32 +197,11 @@ export async function runAutoNewsPublish(
         createdById: owner?.id || null,
       });
 
-      // Expand to all site languages after publish (best-effort; NL already stored).
+      // Fill remaining locales with a time budget. The translate-content cron
+      // resumes any language that did not finish before the next request.
       try {
-        const translations = await buildNewsTranslationsFromEnglish(
-          {
-            title: created.title,
-            excerpt: created.excerpt,
-            description: created.description,
-          },
-          {
-            existing: draft.translations,
-            delayMs: 350,
-          },
-        );
-        const nl = nlFromTranslations(translations, {
-          title: created.title,
-          excerpt: created.excerpt,
-          description: created.description,
-        });
-        await prisma.newsPost.update({
-          where: { id: created.id },
-          data: {
-            translations,
-            titleNl: nl.title,
-            excerptNl: nl.excerpt,
-            descriptionNl: nl.description,
-          },
+        await completeNewsTranslations(created.id, {
+          deadlineMs: 90_000,
         });
       } catch (i18nError) {
         const message =

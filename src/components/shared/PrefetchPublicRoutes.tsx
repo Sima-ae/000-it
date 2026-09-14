@@ -3,10 +3,11 @@
 import { useEffect } from "react";
 import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
+import { localizedHref } from "@/i18n/pathnames";
 
 /** Primary public routes — prefetched after idle so clicks feel instant. */
 const PUBLIC_PATHS = [
-  "",
+  "/",
   "/over-ons",
   "/ai-scan",
   "/diensten",
@@ -30,7 +31,7 @@ export function PrefetchPublicRoutes() {
       if (cancelled) return;
       for (const path of PUBLIC_PATHS) {
         try {
-          router.prefetch(`/${locale}${path}`);
+          router.prefetch(localizedHref(locale, path));
         } catch {
           /* ignore */
         }

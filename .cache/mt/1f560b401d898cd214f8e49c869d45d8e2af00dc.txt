@@ -1,0 +1,1 @@
+Az SSD RAID 10 és az egyértelmű erőforrás-korlátok kiszámítható teljesítményt biztosítanak. Növelje a méretet, amikor a projektnek szüksége van rá.

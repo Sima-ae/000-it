@@ -1,0 +1,1 @@
+WordPress için değil, özel web siteleri için sağlamlaştırma, güvenlik duvarı/WAF, HTTPS/SSL ve güvenlik izleme.

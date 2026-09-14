@@ -1,0 +1,1 @@
+Webový maják (nebo pixelová značka) je malý, neviditelný kus textu nebo obrázku na webu, který se používá ke sledování provozu na webu. Za tímto účelem se pomocí webových majáků ukládají různá data o vás.

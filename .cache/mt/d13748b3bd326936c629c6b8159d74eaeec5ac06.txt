@@ -1,0 +1,1 @@
+Gyors diagnosztika és javítások, hogy webhelye ismét zökkenőmentesen működjön.

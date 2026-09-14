@@ -1,0 +1,1 @@
+HTTP Strikt transportsäkerhet och relaterade säkerhetsrubriker och webbläsarpolicyer

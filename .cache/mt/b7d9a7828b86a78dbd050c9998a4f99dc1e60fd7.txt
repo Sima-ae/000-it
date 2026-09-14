@@ -1,0 +1,5 @@
+Le support standard convient aux organisations possédant jusqu'à deux sites Web WordPress nécessitant une maintenance quotidienne ainsi qu'une attention particulière à la vitesse et à la continuité.
+
+Vous bénéficiez d'une surveillance 24h/24 et 7j/7, de sauvegardes quotidiennes, de mises à jour, d'une résolution d'erreurs, de la suppression de logiciels malveillants et de soins de sécurité. Nous optimisons également la mise en cache, les images et le code là où cela améliore les performances de vos sites Web.
+
+TripleZero iT fonctionne de manière proactive : nous signalons les problèmes, résolvons les problèmes techniques avec précision et maintenons la stabilité de vos sites Web pour les visiteurs et les administrateurs.

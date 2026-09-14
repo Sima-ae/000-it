@@ -1,0 +1,1 @@
+Zadržavamo ove podatke dok se usluga ne prekine.

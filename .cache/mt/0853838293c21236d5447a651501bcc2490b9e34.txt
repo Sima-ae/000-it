@@ -1,0 +1,5 @@
+Védje meg WordPress webhelyét a TripleZero iT biztonsági szolgáltatásokkal. Praktikus, gondosan ellenőrzött megközelítéssel megerősítjük webhelyét a feltörések, rosszindulatú programok és visszaélések ellen.
+
+A biztonsági mentés után biztonsági auditot futtatunk, telepítjük a Wordfence-et (Basic vagy Premium), beállítjuk a tűzfalat és a brute-force védelmet, és ahol szükséges, beállítjuk az SSL-t. A felhasználói hozzáférést és a javításokat felülvizsgálják, így a sebezhetőségeknek kevesebb terük van a növekedésre.
+
+Szállítás után 7 napig ingyenes támogatást kap – adatai, hírneve és folytonossága jobban védve.

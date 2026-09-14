@@ -1,0 +1,1 @@
+Hartowanie, zapora ogniowa/WAF, HTTPS/SSL i monitorowanie bezpieczeństwa dla niestandardowych stron internetowych — nie WordPress.

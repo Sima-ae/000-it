@@ -1,0 +1,1 @@
+Une balise Web (ou une balise pixel) est un petit morceau de texte ou d'image invisible sur un site Web utilisé pour surveiller le trafic sur un site Web. Pour ce faire, diverses données vous concernant sont stockées à l'aide de balises Web.

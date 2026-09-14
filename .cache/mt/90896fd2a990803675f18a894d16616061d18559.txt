@@ -1,0 +1,6 @@
+Ciao TripleZero IT,
+
+Vorrei saperne di più su {service} per il nostro {hint}.
+
+URL del sito web:
+Obiettivo (ad es. chatbot, assistente prodotto, intelligenza artificiale dei contenuti, personalizzato):

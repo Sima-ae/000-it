@@ -1,0 +1,1 @@
+Kolačić je mala jednostavna datoteka koja se šalje zajedno sa stranicama ove web stranice i pohranjuje vaš preglednik na tvrdi disk vašeg računala ili drugog uređaja. Podaci pohranjeni u njemu mogu se vratiti na naše poslužitelje ili na poslužitelje relevantnih trećih strana tijekom sljedećeg posjeta.

@@ -1,0 +1,1 @@
+Tiempos de carga más rápidos, Core Web Vitals y almacenamiento en caché para pilas personalizadas fuera de WordPress.

@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { GlassCard } from "@/components/marketing/GlassCard";
@@ -9,6 +9,7 @@ import { Reveal } from "@/components/marketing/Reveal";
 import { ServiceInquiryDialog } from "@/components/marketing/ServiceInquiryDialog";
 import { useCartStore } from "@/lib/shop/cart-store";
 import { cn } from "@/lib/utils";
+import { hashFor, localizedHref } from "@/i18n/pathnames";
 
 export type PricingPlan = {
   id: "starter" | "growth" | "enterprise";
@@ -22,27 +23,10 @@ export type PricingPlan = {
 type Billing = "monthly" | "yearly";
 
 function formatEuro(amount: number, locale: string) {
-  return new Intl.NumberFormat(locale === "nl" ? "nl-NL" : "en-NL", {
+  return new Intl.NumberFormat(locale, {
     style: "currency",
     currency: "EUR",
   }).format(amount);
-}
-
-/** Append billing period to the 1× webhosting feature for starter/growth plans. */
-function withHostingPeriod(feature: string, billing: Billing, locale: string) {
-  const isHosting =
-    /^1\s*[×x]\s*web\s*-?hosting$/i.test(feature.trim()) ||
-    /^1\s*[×x]\s*webhosting$/i.test(feature.trim());
-  if (!isHosting) return feature;
-
-  if (locale === "nl") {
-    return billing === "yearly"
-      ? "1× webhosting (12 maanden)"
-      : "1× webhosting (1 maand)";
-  }
-  return billing === "yearly"
-    ? "1× web hosting (12 months)"
-    : "1× web hosting (1 month)";
 }
 
 export function PricingPlans({
@@ -66,10 +50,19 @@ export function PricingPlans({
   };
 }) {
   const locale = useLocale();
+  const t = useTranslations("pricing");
   const router = useRouter();
   const addPlan = useCartStore((s) => s.addPlan);
   const [billing, setBilling] = useState<Billing>("monthly");
   const [hoveredPlanId, setHoveredPlanId] = useState<string | null>(null);
+
+  function withHostingPeriod(feature: string, period: Billing) {
+    const isHosting =
+      /^1\s*[×x]\s*web\s*-?hosting$/i.test(feature.trim()) ||
+      /^1\s*[×x]\s*webhosting$/i.test(feature.trim());
+    if (!isHosting) return feature;
+    return period === "yearly" ? t("hostingYear") : t("hostingMonth");
+  }
 
   const resolved = useMemo(
     () =>
@@ -100,12 +93,12 @@ export function PricingPlans({
 
   function orderPlan(planId: "starter" | "growth") {
     addPlan(planId, billing, 1);
-    router.push(`/${locale}/shop/cart`);
+    router.push(localizedHref(locale, "/shop/cart"));
   }
 
   return (
     <section
-      id="prijzen"
+      id={hashFor(locale, "prijzen")}
       className="mx-auto max-w-6xl scroll-mt-28 px-4 py-10 md:scroll-mt-32 md:px-6 md:py-12"
     >
       <Reveal>
@@ -125,7 +118,7 @@ export function PricingPlans({
         </p>
         <div
           role="group"
-          aria-label={locale === "nl" ? "Facturatieperiode" : "Billing period"}
+          aria-label={t("billingPeriod")}
           className="inline-flex rounded-full border border-border/60 bg-muted/50 p-0.5"
         >
           <button
@@ -206,7 +199,7 @@ export function PricingPlans({
                 {plan.features.map((f) => (
                   <li key={f} className="flex items-start gap-2">
                     <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-accent" />
-                    <span>{withHostingPeriod(f, billing, locale)}</span>
+                    <span>{withHostingPeriod(f, billing)}</span>
                   </li>
                 ))}
               </ul>
@@ -215,15 +208,9 @@ export function PricingPlans({
                   serviceTitle={plan.name}
                   source="PRICING_ENTERPRISE"
                   triggerLabel={labels.ctaContact}
-                  dialogTitle={
-                    locale === "nl" ? "Contact over Enterprise" : "Contact about Enterprise"
-                  }
-                  dialogDescription={
-                    locale === "nl"
-                      ? "Vertel kort wat u nodig heeft — we sturen een voorstel op maat."
-                      : "Tell us briefly what you need — we’ll send a tailored proposal."
-                  }
-                  messageHint={locale === "nl" ? "Enterprise-plan" : "Enterprise plan"}
+                  dialogTitle={t("contactEnterprise")}
+                  dialogDescription={t("enterpriseDesc")}
+                  messageHint={t("enterpriseHint")}
                   variant="outline"
                   size="sm"
                   className="mt-5 w-full rounded-xl"

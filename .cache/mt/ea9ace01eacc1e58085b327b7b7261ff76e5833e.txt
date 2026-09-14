@@ -1,0 +1,1 @@
+Vi starter med et kort inntak, setter opp overvåking og backup, og følger en tydelig kadens. Du vet alltid hva som ble gjort og når handling er nødvendig.

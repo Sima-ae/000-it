@@ -1,0 +1,1 @@
+在我们的网站上，我们纳入了来自 Facebook、Twitter、LinkedIn、WhatsApp、Instagram、TikTok、Pinterest 和 Disqus 的内容，以在 Facebook、Twitter、LinkedIn、WhatsApp、Instagram、TikTok、Pinterest 和 Disqus 等社交网络上推广网页（例如“点赞”、“固定”）或分享（例如“推文”）。该内容嵌入了来自 Facebook、Twitter、LinkedIn、WhatsApp、Instagram、TikTok、Pinterest 和 Disqus 的代码，并放置了 cookie。该内容可能会存储和处理某些信息以用于个性化广告。

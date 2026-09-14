@@ -1,0 +1,1 @@
+CMS olmadan ön uç yapıları, açılış sayfaları ve etkileşimli kullanıcı arayüzü.

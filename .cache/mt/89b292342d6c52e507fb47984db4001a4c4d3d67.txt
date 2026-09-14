@@ -1,0 +1,6 @@
+Merhaba TripleZero iT,
+
+{hint}'imiz için {service} hakkında daha fazla bilgi edinmek istiyorum.
+
+Web sitesi URL'si:
+Hedef (ör. sohbet robotu, ürün asistanı, içerik yapay zekası, özel):

@@ -1,0 +1,1 @@
+Zabezpečte prevenciu stránok uložených vo vyrovnávacej pamäti

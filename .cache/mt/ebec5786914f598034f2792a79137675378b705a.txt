@@ -1,0 +1,1 @@
+DKIM, SPF, DMARC e altre impostazioni DNS specifiche

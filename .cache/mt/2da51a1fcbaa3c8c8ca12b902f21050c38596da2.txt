@@ -1,0 +1,1 @@
+Scenarijus yra programos kodo dalis, naudojama mūsų svetainei tinkamai ir interaktyviai veikti. Šis kodas vykdomas mūsų serveryje arba jūsų įrenginyje.

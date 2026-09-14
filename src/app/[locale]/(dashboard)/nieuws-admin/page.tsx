@@ -17,6 +17,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { localizedHref } from "@/i18n/pathnames";
 import {
   NewsAdminForm,
   newsPostToForm,
@@ -60,7 +61,7 @@ export default function NieuwsAdminPage() {
         </div>
         <div className="flex gap-2">
           <Button asChild variant="outline">
-            <Link href={`/${locale}/nieuws`} target="_blank">
+            <Link href={localizedHref(locale, "/nieuws")} target="_blank">
               View public page
             </Link>
           </Button>

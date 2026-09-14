@@ -1,0 +1,1 @@
+Mer kraft og kontroll med VPS: dedikerte ressurser, SSD RAID 10 og skalerbar CPU/RAM/båndbredde for voksende prosjekter.

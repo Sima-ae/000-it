@@ -1,0 +1,5 @@
+Skydda din WordPress-webbplats och rör dig med självförtroende med hjälp av TripleZero iT-säkerhetskopiering och värdmigrering. Oavsett om du byter värd, uppgraderar din plan eller helt enkelt behöver en pålitlig backup, håller vi övergången lugn och kontrollerad.
+
+Vi skapar en fullständig säkerhetskopia av filer, databas, teman, plugins och media. Sedan migrerar vi din webbplats, verifierar kompatibilitet och ställer in nyckelvärdkonfiguration så att allt fungerar i den nya miljön.
+
+Efter leverans får du 7 dagars gratis support för frågor om säkerhetskopiering, återställning eller migrering. Din webbplats förblir intakt, tillgänglig och redo att växa.

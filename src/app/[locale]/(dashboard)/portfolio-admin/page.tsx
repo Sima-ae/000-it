@@ -17,6 +17,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { localizedHref } from "@/i18n/pathnames";
 import {
   PortfolioAdminForm,
   type PortfolioFormValues,
@@ -122,7 +123,7 @@ export default function PortfolioAdminPage() {
         </div>
         <div className="flex gap-2">
           <Button asChild variant="outline">
-            <Link href={`/${locale}/portfolio`} target="_blank">
+            <Link href={localizedHref(locale, "/portfolio")} target="_blank">
               View public page
             </Link>
           </Button>

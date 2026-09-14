@@ -1,3 +1,6 @@
+import { getLocalizedCopySync } from "@/lib/localized-copy-cache";
+import pageI18nPack from "@/content/fixweb/page-i18n-pack.json";
+
 export type PageBlock =
   | { type: "heading"; text: string }
   | { type: "paragraph"; text: string }
@@ -1014,6 +1017,13 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
 export function getPageI18n(slug: string, locale: string): PageI18n | null {
   const entry = pageI18n[slug];
   if (!entry) return null;
-  // Prefer EN for all non-Dutch locales (matches site-wide content pattern).
-  return locale === "nl" ? entry.nl : entry.en;
+  if (locale === "nl") return entry.nl;
+  if (locale === "en") return entry.en;
+  const fromPack = (pageI18nPack as Record<string, Record<string, PageI18n>>)[locale]?.[
+    slug
+  ];
+  if (fromPack?.title && Array.isArray(fromPack.blocks)) return fromPack;
+  const overlay = getLocalizedCopySync<PageI18n>("page", slug, locale);
+  if (overlay?.title && Array.isArray(overlay.blocks)) return overlay;
+  return entry.en;
 }

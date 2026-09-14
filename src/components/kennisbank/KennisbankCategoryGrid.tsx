@@ -5,6 +5,7 @@ import { SoftLink } from "@/components/shared/SoftLink";
 import { GlassCard } from "@/components/marketing/GlassCard";
 import { Reveal } from "@/components/marketing/Reveal";
 import type { KennisbankCategoryView } from "@/lib/kennisbank";
+import { localizedHref } from "@/i18n/pathnames";
 
 const accents = [
   "from-primary/30 via-primary/10 to-accent/20",
@@ -51,7 +52,7 @@ export function KennisbankCategoryGrid({
         {filtered.map((cat, i) => (
           <Reveal key={cat.id} delay={Math.min(i, 8) * 0.04}>
             <SoftLink
-              href={`/${locale}/kennisbank/${cat.slug}`}
+              href={localizedHref(locale, `/kennisbank/${cat.slug}`)}
               className="block h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
             >
               <GlassCard className="group h-full overflow-hidden p-0 transition hover:border-primary/40 hover:shadow-md">

@@ -10,6 +10,7 @@ import { useCartStore } from "@/lib/shop/cart-store";
 import { resolveCartItems, cartTotalsInEuros } from "@/lib/shop/cart";
 import { localizeShopProduct } from "@/lib/shop/catalog";
 import { centsToEuros, formatShopEuro } from "@/lib/shop/vat";
+import { localizedHref } from "@/i18n/pathnames";
 
 export function CartView() {
   const locale = useLocale();
@@ -26,7 +27,7 @@ export function CartView() {
       <div className="rounded-2xl border border-border/70 bg-muted/20 p-10 text-center">
         <p className="text-muted-foreground">{t("emptyCart")}</p>
         <Button asChild className="mt-6 rounded-2xl">
-          <SoftLink href={`/${locale}/shop`}>{t("continueShopping")}</SoftLink>
+          <SoftLink href={localizedHref(locale, "/shop")}>{t("continueShopping")}</SoftLink>
         </Button>
       </div>
     );
@@ -57,7 +58,7 @@ export function CartView() {
               </div>
               <div className="min-w-0 flex-1">
                 <SoftLink
-                  href={`/${locale}/shop/${line.product.slug}`}
+                  href={localizedHref(locale, `/shop/${line.product.slug}`)}
                   className="font-medium hover:underline"
                 >
                   {localized.localizedName}
@@ -106,10 +107,10 @@ export function CartView() {
         </dl>
         <p className="mt-2 text-xs text-muted-foreground">{t("vatNote")}</p>
         <Button asChild className="mt-6 w-full rounded-2xl">
-          <SoftLink href={`/${locale}/shop/checkout`}>{t("toCheckout")}</SoftLink>
+          <SoftLink href={localizedHref(locale, "/shop/checkout")}>{t("toCheckout")}</SoftLink>
         </Button>
         <Button asChild variant="ghost" className="mt-2 w-full">
-          <SoftLink href={`/${locale}/shop`}>{t("continueShopping")}</SoftLink>
+          <SoftLink href={localizedHref(locale, "/shop")}>{t("continueShopping")}</SoftLink>
         </Button>
       </aside>
     </div>

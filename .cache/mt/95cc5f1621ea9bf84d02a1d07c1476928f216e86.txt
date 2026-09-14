@@ -1,0 +1,1 @@
+Dizajnirani AI tokovi rada: pokretači, koraci, odobrenja i integracije s kraja na kraj.

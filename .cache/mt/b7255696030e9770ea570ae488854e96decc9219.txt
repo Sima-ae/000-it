@@ -1,0 +1,1 @@
+Vrijeme učitavanja je manje od 2 sekunde, a Core Web Vitals optimiziran.

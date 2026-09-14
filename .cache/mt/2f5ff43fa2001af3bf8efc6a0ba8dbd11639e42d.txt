@@ -1,0 +1,5 @@
+Wsparcie podstawowe jest przeznaczone dla firm posiadających jedną witrynę WordPress, które chcą niezawodnych podstaw technicznych bez konieczności samodzielnego rozwiązywania każdego problemu.
+
+Monitorujemy Twoją witrynę przez całą dobę, tworzymy codzienne kopie zapasowe i dbamy o aktualność WordPressa i wtyczek. Naprawiamy również błędy, usuwamy złośliwe oprogramowanie i stosujemy praktyczne środki bezpieczeństwa, aby Twoja witryna była dostępna i chroniona.
+
+TripleZero iT ostrożnie obsługuje incydenty, weryfikuje witrynę po odzyskaniu i pomaga zmniejszyć przyszłe ryzyko. Ty możesz skupić się na swoim biznesie, a my dbamy o jego ciągłość techniczną.

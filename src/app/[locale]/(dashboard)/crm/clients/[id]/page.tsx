@@ -12,11 +12,13 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { localizedHref } from "@/i18n/pathnames";
 
 export default function CrmClientDetailPage() {
   const params = useParams<{ id: string }>();
   const id = params.id;
   const t = useTranslations("crm");
+  const td = useTranslations("dashboard");
   const locale = useLocale();
   const qc = useQueryClient();
   const [note, setNote] = useState("");
@@ -98,15 +100,11 @@ export default function CrmClientDetailPage() {
         title={t("clients")}
         actions={
           <Button asChild variant="outline">
-            <SoftLink href={`/${locale}/crm/clients`}>{t("back")}</SoftLink>
+            <SoftLink href={localizedHref(locale, "/crm/clients")}>{t("back")}</SoftLink>
           </Button>
         }
       >
-        <p className="text-sm text-muted-foreground">
-          {locale === "nl"
-            ? "Klant niet gevonden of geen toegang."
-            : "Client not found or access denied."}
-        </p>
+        <p className="text-sm text-muted-foreground">{td("clientDetailHint")}</p>
       </CrmShell>
     );
   }
@@ -123,7 +121,7 @@ export default function CrmClientDetailPage() {
             </Button>
           ) : null}
           <Button asChild variant="outline">
-            <SoftLink href={`/${locale}/crm/clients`}>{t("back")}</SoftLink>
+            <SoftLink href={localizedHref(locale, "/crm/clients")}>{t("back")}</SoftLink>
           </Button>
         </div>
       }
@@ -174,7 +172,7 @@ export default function CrmClientDetailPage() {
                 }) => (
                   <SoftLink
                     key={ticket.id}
-                    href={`/${locale}/crm/tickets`}
+                    href={localizedHref(locale, "/crm/tickets")}
                     className="flex items-center justify-between rounded-xl border border-border px-3 py-2"
                   >
                     <span className="font-medium">{ticket.subject}</span>

@@ -1,0 +1,1 @@
+Web lokacije sa oštrim pikselima, fokusirane na konverziju, napravljene od nule.

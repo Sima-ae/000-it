@@ -1,0 +1,1 @@
+DataTables_monthly-invoice-table-user-ref-1_/crm/index.php/invoices

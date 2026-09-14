@@ -1,0 +1,1 @@
+Vlastní webové stránky a pokračující podpora pro PHP, HTML, CSS, JavaScript a Next.js – nikoli WordPress.

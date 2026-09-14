@@ -1,0 +1,1 @@
+Eväste on pieni yksinkertainen tiedosto, joka lähetetään tämän verkkosivuston sivujen mukana ja jonka selaimesi tallentaa tietokoneesi tai muun laitteesi kiintolevylle. Sinne tallennetut tiedot voidaan palauttaa palvelimillemme tai asianomaisten kolmansien osapuolten palvelimille seuraavan vierailun aikana.

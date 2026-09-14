@@ -10,7 +10,11 @@ import {
   getCategoryBySlug,
   listArticles,
 } from "@/lib/kennisbank";
+import { localizedHref } from "@/i18n/pathnames";
 import { absoluteUrl, hreflangAlternates, localePath } from "@/lib/seo";
+import { resolveKennisbankParams } from "@/lib/resolve-entity-param";
+import { canonicalEntityKey } from "@/lib/entity-slug-cache";
+import { hydrateEntitySlugs } from "@/lib/entity-slugs";
 
 export const dynamic = "force-dynamic";
 
@@ -19,7 +23,10 @@ type Params = {
 };
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
-  const { locale, category, slug } = await params;
+  const { locale, category: rawCategory, slug: rawSlug } = await params;
+  await hydrateEntitySlugs(locale);
+  const category = canonicalEntityKey(locale, "kb_category", rawCategory);
+  const slug = canonicalEntityKey(locale, "kb_article", rawSlug);
   const t = await getTranslations({ locale, namespace: "kennisbank" });
   const article = await getArticleBySlug(slug, { locale }).catch(() => null);
   if (!article) return {};
@@ -62,9 +69,16 @@ function injectHeadingIds(html: string): string {
 }
 
 export default async function KennisbankArticlePage({ params }: Params) {
-  const { locale, category, slug } = await params;
+  const { locale, category: rawCategory, slug: rawSlug } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "kennisbank" });
+  const { categoryKey: category, articleKey: slug } =
+    await resolveKennisbankParams({
+      locale,
+      categoryParam: rawCategory,
+      articleParam: rawSlug,
+    });
+  if (!slug) notFound();
 
   const cat = await getCategoryBySlug(category, { locale });
   const article = await getArticleBySlug(slug, { locale });
@@ -87,14 +101,14 @@ export default async function KennisbankArticlePage({ params }: Params) {
       <div className="relative mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
         <nav className="mb-8 text-sm text-muted-foreground">
           <SoftLink
-            href={`/${locale}/kennisbank`}
+            href={localizedHref(locale, "/kennisbank")}
             className="transition hover:text-foreground"
           >
             {t("breadcrumb")}
           </SoftLink>
           <span className="mx-2 opacity-50">/</span>
           <SoftLink
-            href={`/${locale}/kennisbank/${category}`}
+            href={localizedHref(locale, `/kennisbank/${category}`)}
             className="transition hover:text-foreground"
           >
             {cat.name}
@@ -121,7 +135,7 @@ export default async function KennisbankArticlePage({ params }: Params) {
                     {article.categorySlugs.map((s, i) => (
                       <SoftLink
                         key={s}
-                        href={`/${locale}/kennisbank/${s}`}
+                        href={localizedHref(locale, `/kennisbank/${s}`)}
                         className="rounded-full border border-border/70 bg-muted/30 px-3 py-1 text-xs text-muted-foreground transition hover:border-primary/40 hover:text-foreground"
                       >
                         {article.categoryNames[i]}
@@ -179,7 +193,7 @@ export default async function KennisbankArticlePage({ params }: Params) {
               {related.map((item) => (
                 <li key={item.id}>
                   <SoftLink
-                    href={`/${locale}/kennisbank/${category}/${item.slug}`}
+                    href={localizedHref(locale, `/kennisbank/${category}/${item.slug}`)}
                     className="block h-full"
                   >
                     <GlassCard className="group h-full p-5 transition hover:border-primary/40 hover:shadow-md">

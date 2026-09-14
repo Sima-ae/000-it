@@ -1,0 +1,1 @@
+Qeydiyyatdan sonra biz DNS parametrləri, hostinq bağlantısı və e-poçt konfiqurasiyası ilə bağlı kömək edə bilərik. Beləliklə, domeniniz yalnız qeydiyyatdan keçmir, həm də veb saytınız və işgüzar ünsiyyətiniz üçün düzgün şəkildə işə salınır.

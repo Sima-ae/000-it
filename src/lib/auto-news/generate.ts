@@ -1,6 +1,6 @@
 import type { NewsStory } from "@/lib/auto-news/fetch-stories";
 import { type NewsTranslationsMap } from "@/lib/news-i18n";
-import { translateText } from "@/lib/google-translate";
+import { isAcceptableTranslation, translateText } from "@/lib/google-translate";
 
 export type GeneratedNewsDraft = {
   title: string;
@@ -239,10 +239,17 @@ export async function generateBilingualNewsDraft(
   }
 
   const nlSeed = {
-    title: titleNl || en.title,
-    excerpt: excerptNl || en.excerpt,
-    description: descriptionNl || en.description,
+    title: titleNl,
+    excerpt: excerptNl,
+    description: descriptionNl,
   };
+  if (
+    !isAcceptableTranslation(en.title, nlSeed.title, "en", "nl") ||
+    !isAcceptableTranslation(en.excerpt, nlSeed.excerpt, "en", "nl") ||
+    !isAcceptableTranslation(en.description, nlSeed.description, "en", "nl")
+  ) {
+    throw new Error(`Dutch quality check failed: ${story.url}`);
+  }
 
   const draft = sanitizeNewsDraft({
     ...en,

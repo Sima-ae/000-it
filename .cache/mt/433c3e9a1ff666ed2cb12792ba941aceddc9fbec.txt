@@ -1,0 +1,5 @@
+VPS Hosting Business dizajniran je za web stranice kritične za poslovanje, zahtjevne aplikacije i organizacije koje očekuju dovoljno kapaciteta i stabilne performanse.
+
+Sa 8 CPU jezgara, 12 GB RAM-a, 240 GB SSD RAID 10 memorije i 6000 GB propusnog opsega, ovaj plan pruža moćnu osnovu za intenzivna radna opterećenja, višestruka okruženja i veći broj posetilaca.
+
+TripleZero iT vam pomaže da izgradite pouzdanu infrastrukturu koja se kreće u skladu sa vašim ambicijama. Zadržavate kontrolu nad svojim VPS-om, uz iskusan tim koji vam je na raspolaganju za podršku.

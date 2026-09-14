@@ -1,0 +1,1 @@
+Nepavyko įkelti prietaisų skydelio. Patikrinkite duomenų bazės ryšį ir bandykite dar kartą.

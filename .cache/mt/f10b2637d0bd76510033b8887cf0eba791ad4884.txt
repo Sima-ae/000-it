@@ -1,0 +1,1 @@
+Kuki bu veb-saytın səhifələri ilə birlikdə göndərilən və brauzeriniz tərəfindən kompüterinizin və ya başqa cihazın sabit diskində saxlanılan kiçik sadə fayldır. Orada saxlanılan məlumatlar sonrakı səfər zamanı serverlərimizə və ya müvafiq üçüncü tərəflərin serverlərinə qaytarıla bilər.

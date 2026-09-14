@@ -1,0 +1,3 @@
+WordPress hiba- és hibajavítás a teljesítmény, a biztonság, a frissítések és a stabilitás érdekében.
+
+Megoldjuk a gyakori problémákat, és bevált gyakorlatokat alkalmazunk, hogy WordPress-webhelye megbízhatóan működjön a tulajdonosok, fejlesztők és látogatók számára.

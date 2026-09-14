@@ -1,0 +1,1 @@
+カスタム Web サイトと、WordPress ではなく、PHP、HTML、CSS、JavaScript、Next.js の継続的なサポート。

@@ -1,0 +1,1 @@
+El soporte básico es para empresas con un sitio web de WordPress que desean una base técnica confiable sin tener que resolver todos los problemas por sí mismas.

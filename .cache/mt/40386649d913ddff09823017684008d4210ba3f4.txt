@@ -1,0 +1,1 @@
+HTTP Strict Transport Security e relative intestazioni di sicurezza e policy del browser

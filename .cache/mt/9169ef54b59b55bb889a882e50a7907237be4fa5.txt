@@ -1,0 +1,1 @@
+Hardening, firewall/WAF, HTTPS/SSL și monitorizare de securitate pentru site-uri web personalizate – nu WordPress.

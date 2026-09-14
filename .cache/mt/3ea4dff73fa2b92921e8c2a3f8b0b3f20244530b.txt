@@ -1,0 +1,1 @@
+Özel web siteleri için yapay zeka — PHP, HTML/JS ve Next.js'de sohbet, potansiyel müşteriler, bilgi arama ve otomasyon.

@@ -1,0 +1,1 @@
+AI pentru site-uri web personalizate — chat, clienți potențiali, căutare de cunoștințe și automatizare pe PHP, HTML/JS și Next.js.

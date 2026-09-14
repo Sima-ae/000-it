@@ -1,0 +1,1 @@
+Koha më të shpejta të ngarkimit, Core Web Vitals dhe ruajtja në memorie për rafte të personalizuara jashtë WordPress.

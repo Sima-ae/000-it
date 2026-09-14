@@ -1,0 +1,4 @@
+– 8 jader CPU
+– 12 GB RAM
+– 240 GB SSD RAID 10
+– šířka pásma 6000 GB

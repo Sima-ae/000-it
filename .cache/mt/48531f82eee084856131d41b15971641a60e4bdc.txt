@@ -1,0 +1,1 @@
+Skript je část programového kódu, který se používá k tomu, aby naše webové stránky fungovaly správně a interaktivně. Tento kód je spuštěn na našem serveru nebo na vašem zařízení.

@@ -1,0 +1,1 @@
+A cookie egy kis, egyszerű fájl, amelyet a webhely oldalaival együtt küldenek el, és a böngészője a számítógépe vagy egy másik eszköz merevlemezén tárolja. Az ott tárolt információk egy későbbi látogatás során visszakerülhetnek szervereinkre vagy az érintett harmadik felek szervereire.

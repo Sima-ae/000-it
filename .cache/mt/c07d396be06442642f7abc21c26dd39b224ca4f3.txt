@@ -1,0 +1,5 @@
+VPS Hosting Plus je pro rostoucí webové projekty, obchodní aplikace a vývojové týmy, které potřebují další kapacitu a konzistentní výkon.
+
+Server kombinuje 4 CPU jádra a 6 GB RAM se 120 GB úložištěm SSD RAID 10 a šířkou pásma 3 000 GB. To ponechává prostor pro větší pracovní zátěž, více služeb nebo zvyšující se provoz.
+
+TripleZero iT poskytuje spolehlivý základ VPS, který si můžete nakonfigurovat podle svých potřeb. Získejte flexibilitu virtuálního serveru s profesionálním partnerem nablízku.

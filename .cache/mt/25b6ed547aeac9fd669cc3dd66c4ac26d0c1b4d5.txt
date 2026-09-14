@@ -1,0 +1,5 @@
+WordPress veb saytınızı TripleZero iT təhlükəsizlik xidmətləri ilə qoruyun. Biz praktiki, diqqətlə idarə olunan yanaşma ilə saytınızı hacklərə, zərərli proqramlara və sui-istifadəyə qarşı sərtləşdiririk.
+
+Yedəkləmədən sonra biz təhlükəsizlik auditini həyata keçiririk, Wordfence (Basic və ya Premium) quraşdırırıq, firewall və brute-force mühafizəsini konfiqurasiya edirik və lazım olduqda SSL-i quraşdırırıq. İstifadəçi girişi və yamaqlar nəzərdən keçirilir ki, zəifliklərin böyüməsi üçün daha az yer olsun.
+
+Siz çatdırıldıqdan sonra 7 gün pulsuz dəstək alırsınız — məlumatlarınızı, reputasiyanızı və davamlılığınızı daha yaxşı qoruyur.

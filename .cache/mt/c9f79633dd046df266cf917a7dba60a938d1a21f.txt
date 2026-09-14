@@ -1,0 +1,1 @@
+Een script is een stukje programmacode dat wordt gebruikt om onze website goed en interactief te laten functioneren. Deze code wordt uitgevoerd op onze server of op uw apparaat.

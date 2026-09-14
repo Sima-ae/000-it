@@ -1,0 +1,1 @@
+Optimalizácia geografického vyhľadávača pre mapy, miestne balíky a regionálne vyhľadávanie.

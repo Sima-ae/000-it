@@ -1,0 +1,1 @@
+Începem cu un fișier exemplu și reguli clare de introducere pentru câmpuri, date sursă și excepții. În timpul livrării, verificăm caracterul complet și anomaliile, astfel încât să păstrați vizibilitatea progresului și a calității.

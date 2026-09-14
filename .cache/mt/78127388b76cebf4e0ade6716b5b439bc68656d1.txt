@@ -1,0 +1,6 @@
+Sveiki, TripleZero iT,
+
+Norėčiau sužinoti daugiau apie {service} mūsų {hint}.
+
+Svetainės URL:
+Tikslas (pvz., pokalbių robotas, produkto asistentas, turinio AI, tinkintas):

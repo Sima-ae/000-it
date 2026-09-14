@@ -1,0 +1,1 @@
+Uygulama Yönlendiricisi ve modern DX ile hızlı, SEO'ya hazır React uygulamaları.

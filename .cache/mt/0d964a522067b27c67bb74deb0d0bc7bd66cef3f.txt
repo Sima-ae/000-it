@@ -1,0 +1,1 @@
+Rašome skaitytojams ir paieškos sistemoms: aiški struktūra, tvirtos antraštės ir pranešimas, skatinantis veikti, o ne žodžių skaičiaus užpildymas.

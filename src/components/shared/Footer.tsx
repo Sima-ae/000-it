@@ -3,6 +3,7 @@
 import { useTranslations, useLocale } from "next-intl";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { CopyrightBar } from "@/components/shared/CopyrightBar";
+import { localizedHref } from "@/i18n/pathnames";
 
 const handyLinkPages = [
   { href: "/afspraak", key: "book", external: false },
@@ -55,7 +56,6 @@ export function Footer() {
   const t = useTranslations("footer");
   const nav = useTranslations("nav");
   const locale = useLocale();
-  const isNl = locale === "nl";
   const year = new Date().getFullYear();
   const handyLinks = [...handyLinkPages].sort((a, b) =>
     nav(a.key).localeCompare(nav(b.key), locale, { sensitivity: "base" }),
@@ -97,33 +97,33 @@ export function Footer() {
 
             <div className="flex flex-col gap-1.5 text-sm text-muted-foreground">
               <p className="mb-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-foreground">
-                {isNl ? "Informatie" : "Information"}
+                {nav("info")}
               </p>
-              <SoftLink href={`/${locale}/over-ons`} className="leading-snug transition hover:text-foreground">
+              <SoftLink href={localizedHref(locale, "/over-ons")} className="leading-snug transition hover:text-foreground">
                 {nav("about")}
               </SoftLink>
-              <SoftLink href={`/${locale}/diensten`} className="leading-snug transition hover:text-foreground">
+              <SoftLink href={localizedHref(locale, "/diensten")} className="leading-snug transition hover:text-foreground">
                 {nav("services")}
               </SoftLink>
-              <SoftLink href={`/${locale}/portfolio`} className="leading-snug transition hover:text-foreground">
+              <SoftLink href={localizedHref(locale, "/portfolio")} className="leading-snug transition hover:text-foreground">
                 {nav("portfolio")}
               </SoftLink>
-              <SoftLink href={`/${locale}/nieuws`} className="leading-snug transition hover:text-foreground">
+              <SoftLink href={localizedHref(locale, "/nieuws")} className="leading-snug transition hover:text-foreground">
                 {nav("blog")}
               </SoftLink>
-              <SoftLink href={`/${locale}/contact`} className="leading-snug transition hover:text-foreground">
+              <SoftLink href={localizedHref(locale, "/contact")} className="leading-snug transition hover:text-foreground">
                 {nav("contact")}
               </SoftLink>
             </div>
 
             <div className="flex flex-col gap-1.5 text-sm text-muted-foreground">
               <p className="mb-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-foreground">
-                {isNl ? "Handige links" : "Useful links"}
+                {t("usefulLinks")}
               </p>
               {handyLinks.map((page) => (
                 <SoftLink
                   key={page.href}
-                  href={`/${locale}${page.href}`}
+                  href={localizedHref(locale, page.href)}
                   {...(page.external
                     ? { target: "_blank" as const, rel: "noopener noreferrer" }
                     : {})}

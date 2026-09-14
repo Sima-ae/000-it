@@ -1,0 +1,1 @@
+Spoločne definujeme príslušné kanály, časy odozvy, témy a cesty eskalácie. Dokumentujeme časté otázky a jazyk značky, aby odpovede zostali konzistentné a citlivé prípady sa dostali k správnej osobe včas.

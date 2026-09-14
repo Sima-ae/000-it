@@ -1,0 +1,5 @@
+TripleZero iT kötü amaçlı yazılım temizleme özelliğiyle WordPress web sitenizi kötü amaçlı tehditlere karşı koruyun. Enfeksiyonlar güvenliğe, itibara ve çalışma süresine zarar verir; biz algılamaya, kapsamlı temizlemeye ve kurtarmaya odaklanıyoruz.
+
+Dosyaları, veritabanlarını ve savunmasız bileşenleri tarar, kötü amaçlı yazılımları ve istenmeyen yönlendirmeleri kaldırır ve gerektiğinde güvenliği ihlal edilmiş parçaları onarırız. Yedeklemeler temizlik öncesi ve sonrası alınır.
+
+Ayrıca yeniden enfeksiyon olasılığını azaltmak için önleme rehberliği de alırsınız, böylece işinizi güvenle yürütmeye geri dönebilirsiniz.

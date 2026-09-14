@@ -1,0 +1,5 @@
+Mbroni faqen tuaj të WordPress dhe lëvizni me vetëbesim duke përdorur rezervimin e TripleZero iT dhe migrimin e pritjes. Pavarësisht nëse jeni duke ndërruar host, duke përmirësuar planin tuaj ose thjesht keni nevojë për një kopje rezervë të besueshme, ne e mbajmë tranzicionin të qetë dhe të kontrolluar.
+
+Ne krijojmë një kopje rezervë të plotë të skedarëve, bazës së të dhënave, temave, shtojcave dhe mediave. Më pas ne migrojmë faqen tuaj, verifikojmë përputhshmërinë dhe konfigurojmë konfigurimin kryesor të hostimit në mënyrë që gjithçka të funksionojë në mjedisin e ri.
+
+Pas dorëzimit ju merrni 7 ditë mbështetje falas për pyetje në lidhje me rezervimin, rivendosjen ose migrimin. Faqja juaj mbetet e paprekur, e arritshme dhe e gatshme për t'u rritur.

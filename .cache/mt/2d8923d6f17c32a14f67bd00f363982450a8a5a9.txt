@@ -1,0 +1,3 @@
+WordPress bugg och felkorrigering för prestanda, säkerhet, uppdateringar och stabilitet.
+
+Vi löser vanliga problem och tillämpar bästa praxis så att din WordPress-webbplats fungerar tillförlitligt för ägare, utvecklare och besökare.

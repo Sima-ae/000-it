@@ -6,6 +6,7 @@ import { GlassCard } from "@/components/marketing/GlassCard";
 import { Reveal } from "@/components/marketing/Reveal";
 import { SoftLink } from "@/components/shared/SoftLink";
 import type { NewsPost } from "@/lib/news";
+import { localizedHref } from "@/i18n/pathnames";
 
 function NewsCardCover({ post }: { post: NewsPost }) {
   const [failed, setFailed] = useState(false);
@@ -59,7 +60,7 @@ export function NewsGrid({
       {items.map((post, i) => (
         <Reveal key={post.id} delay={Math.min(i, 8) * 0.05}>
           <SoftLink
-            href={`/${locale}/nieuws/${post.id}`}
+            href={localizedHref(locale, `/nieuws/${post.id}`)}
             className="block h-full text-left transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
             aria-label={labels.readMore ? `${labels.readMore}: ${post.title}` : post.title}
           >

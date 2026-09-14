@@ -1,0 +1,5 @@
+VPS Hosting Plus je za rastuće web projekte, poslovne aplikacije i razvojne timove kojima je potreban dodatni kapacitet i dosljedne performanse.
+
+Server kombinuje 4 CPU jezgra i 6 GB RAM-a sa 120 GB SSD RAID 10 skladištenja i 3000 GB propusnog opsega. Ovo ostavlja prostor za veća opterećenja, više usluga ili povećanje prometa.
+
+TripleZero iT pruža pouzdanu VPS osnovu koju možete konfigurisati u skladu sa svojim potrebama. Steknite fleksibilnost virtuelnog servera sa profesionalnim partnerom u blizini.

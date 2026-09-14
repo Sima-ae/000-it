@@ -1,0 +1,6 @@
+Szia TripleZero iT!
+
+Szeretnék többet megtudni a(z) {service} szolgáltatásról a {hint} számára.
+
+Webhely URL:
+Cél (pl. chatbot, termékasszisztens, tartalom-AI, egyéni):

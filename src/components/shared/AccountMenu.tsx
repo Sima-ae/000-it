@@ -7,11 +7,13 @@ import { signOut, useSession } from "next-auth/react";
 import { CircleUserRound } from "lucide-react";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { cn } from "@/lib/utils";
+import { localizedHref } from "@/i18n/pathnames";
 
 const CLOSE_DELAY_MS = 180;
 
 export function AccountMenu({ className }: { className?: string }) {
   const t = useTranslations("nav");
+  const tCommon = useTranslations("common");
   const locale = useLocale();
   const pathname = usePathname();
   const { data: session } = useSession();
@@ -54,7 +56,7 @@ export function AccountMenu({ className }: { className?: string }) {
           "inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-muted-foreground transition hover:bg-muted/70 hover:text-foreground",
           open && "bg-muted/70 text-foreground",
         )}
-        aria-label={locale === "nl" ? "Account" : "Account"}
+        aria-label={tCommon("account")}
         aria-expanded={open}
         aria-haspopup="menu"
         onClick={() => setOpen((v) => !v)}
@@ -75,7 +77,7 @@ export function AccountMenu({ className }: { className?: string }) {
             {session?.user ? (
               <>
                 <SoftLink
-                  href={`/${locale}/dashboard`}
+                  href={localizedHref(locale, "/dashboard")}
                   className={itemClass}
                   onClick={() => setOpen(false)}
                 >
@@ -96,14 +98,14 @@ export function AccountMenu({ className }: { className?: string }) {
             ) : (
               <>
                 <SoftLink
-                  href={`/${locale}/login`}
+                  href={localizedHref(locale, "/login")}
                   className={itemClass}
                   onClick={() => setOpen(false)}
                 >
                   {t("login")}
                 </SoftLink>
                 <SoftLink
-                  href={`/${locale}/register`}
+                  href={localizedHref(locale, "/register")}
                   className={cn(itemClass, "font-medium text-foreground")}
                   onClick={() => setOpen(false)}
                 >

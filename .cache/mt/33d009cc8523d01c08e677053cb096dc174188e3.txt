@@ -1,0 +1,1 @@
+Una baliza web (o una etiqueta de píxel) es un fragmento de texto o imagen pequeño e invisible en un sitio web que se utiliza para monitorear el tráfico en un sitio web. Para ello, se almacenan diversos datos sobre usted mediante balizas web.

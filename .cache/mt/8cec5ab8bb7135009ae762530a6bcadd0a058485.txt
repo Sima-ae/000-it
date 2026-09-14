@@ -1,0 +1,1 @@
+Opprydding av skadelig programvare for tilpassede PHP-, HTML- og Next.js-nettsteder – atskilt fra WordPress-malwarepakker.

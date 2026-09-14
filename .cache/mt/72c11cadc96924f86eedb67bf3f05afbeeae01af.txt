@@ -1,0 +1,1 @@
+A CRM betöltése nem sikerült. Ellenőrizze a kapcsolatot, és próbálja újra.

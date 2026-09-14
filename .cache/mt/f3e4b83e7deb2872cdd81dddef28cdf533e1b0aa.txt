@@ -1,0 +1,5 @@
+Basic Support är för företag med en WordPress-webbplats som vill ha en pålitlig teknisk grund utan att behöva lösa alla problem själva.
+
+Vi övervakar din sida dygnet runt, skapar dagliga säkerhetskopior och håller WordPress och plugins aktuella. Vi åtgärdar även fel, tar bort skadlig programvara och tillämpar praktiska säkerhetsåtgärder för att hålla din webbplats tillgänglig och skyddad.
+
+TripleZero iT hanterar incidenter noggrant, verifierar platsen efter återställning och hjälper till att minska framtida risker. Du kan fokusera på ditt företag samtidigt som vi ser till dess tekniska kontinuitet.

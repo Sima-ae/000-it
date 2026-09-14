@@ -1,0 +1,1 @@
+Növekvő webhelyekhez, egyedi alkalmazásokhoz, nagyobb forgalmi csúcsokhoz vagy olyan helyzetekhez, amikor nagyobb irányítást szeretne a szerverkörnyezet felett.

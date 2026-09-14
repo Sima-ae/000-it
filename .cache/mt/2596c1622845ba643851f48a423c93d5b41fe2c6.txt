@@ -1,0 +1,1 @@
+Varattu kapasiteetti antaa vaativille verkkosivustoille ja sovelluksille enemmän liikkumavaraa. Ympäristösi voi mukautua helpommin huippuihin, uusiin toimintoihin ja muuttuviin suorituskykytarpeisiin ilman välitöntä alustan siirtoa.

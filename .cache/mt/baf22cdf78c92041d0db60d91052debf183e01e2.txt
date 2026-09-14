@@ -1,0 +1,1 @@
+AI pre vlastné webové stránky – chat, potenciálni zákazníci, vyhľadávanie znalostí a automatizácia na PHP, HTML/JS a Next.js.

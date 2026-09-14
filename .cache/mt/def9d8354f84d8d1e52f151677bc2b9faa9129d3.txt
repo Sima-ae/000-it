@@ -1,0 +1,1 @@
+Daha hızlı yükleme süreleri, Önemli Web Verileri ve WordPress dışındaki özel yığınlar için önbelleğe alma.

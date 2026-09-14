@@ -1,0 +1,1 @@
+Front-end zostavy, vstupné stránky a interaktívne používateľské rozhranie bez CMS.

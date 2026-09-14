@@ -1,0 +1,1 @@
+Vi starter med en eksempelfil og klare inntastingsregler for felt, kildedata og unntak. Under levering sjekker vi fullstendighet og uregelmessigheter slik at du beholder synlighet av fremdrift og kvalitet.

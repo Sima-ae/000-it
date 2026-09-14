@@ -2,14 +2,13 @@
 
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
-import { useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
-  const locale = useLocale();
-  const isNl = locale === "nl";
+  const t = useTranslations("common");
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -23,7 +22,7 @@ export function ThemeToggle() {
         size="icon"
         variant="ghost"
         className="h-9 w-9 shrink-0 rounded-xl"
-        aria-label={isNl ? "Thema wisselen" : "Toggle theme"}
+        aria-label={t("toggleTheme")}
       >
         <Sun className="h-5.5 w-5.5" />
       </Button>
@@ -38,15 +37,7 @@ export function ThemeToggle() {
       size="icon"
       variant="ghost"
       className="h-9 w-9 shrink-0 rounded-xl"
-      aria-label={
-        isDark
-          ? isNl
-            ? "Schakel naar lichte modus"
-            : "Switch to light mode"
-          : isNl
-            ? "Schakel naar donkere modus"
-            : "Switch to dark mode"
-      }
+      aria-label={isDark ? t("lightMode") : t("darkMode")}
       onClick={() => setTheme(isDark ? "light" : "dark")}
     >
       {isDark ? <Sun className="h-5.5 w-5.5" /> : <Moon className="h-5.5 w-5.5" />}

@@ -1,0 +1,3 @@
+Correção de bugs e erros do WordPress para desempenho, segurança, atualizações e estabilidade.
+
+Resolvemos problemas comuns e aplicamos as melhores práticas para que seu site WordPress funcione de maneira confiável para proprietários, desenvolvedores e visitantes.

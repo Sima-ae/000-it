@@ -1,0 +1,1 @@
+Raskere lastetider, Core Web Vitals og caching for tilpassede stabler utenfor WordPress.

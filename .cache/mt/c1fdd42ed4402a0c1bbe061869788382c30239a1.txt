@@ -1,0 +1,1 @@
+Un script est un morceau de code de programme utilisé pour faire fonctionner notre site Web correctement et de manière interactive. Ce code est exécuté sur notre serveur ou sur votre appareil.

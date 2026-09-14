@@ -1,0 +1,1 @@
+Automatinis atsarginis kopijavimas (ir saugykla debesyje versle)

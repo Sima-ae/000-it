@@ -64,3 +64,35 @@ jobs:
             }, null, 2));
             if (data.ok === false) process.exit(1);
           '
+
+  translate:
+    name: Fill remaining news locales
+    needs: publish
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Trigger news translation backfill
+        env:
+          APP_URL: ${{ secrets.AUTO_NEWS_APP_URL }}
+        run: |
+          set -euo pipefail
+          BASE_URL="${APP_URL:-https://000-it.com}"
+          URL="${BASE_URL%/}/api/cron/translate-content?kinds=news&deadlineMs=420000"
+          echo "POST ${URL}"
+          curl -fsS -X POST \
+            -H "Accept: application/json" \
+            --max-time 1100 \
+            "$URL" | tee /tmp/translate-news.json
+          node -e '
+            const fs = require("fs");
+            const data = JSON.parse(fs.readFileSync("/tmp/translate-news.json","utf8"));
+            console.log(JSON.stringify({
+              ok: data.ok,
+              written: data.written,
+              skipped: data.skipped,
+              failed: data.failed,
+              remaining: data.remaining,
+            }, null, 2));
+            if (data.ok === false) process.exit(1);
+          '

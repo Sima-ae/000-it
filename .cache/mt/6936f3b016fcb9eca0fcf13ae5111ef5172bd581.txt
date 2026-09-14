@@ -1,0 +1,6 @@
+Co můžete očekávat?
+– Kompletní automatické + manuální zálohování
+– Audit výkonnosti webu
+– Optimalizace kódu, databáze, obrázků, pluginů, témat a webhostingu
+– Řešení pro ukládání do mezipaměti
+– Bezplatná podpora po dobu 7 dní

@@ -1,0 +1,5 @@
+Skydda din WordPress-webbplats från skadliga hot med TripleZero iT-borttagning av skadlig kod. Infektioner skadar säkerhet, rykte och drifttid – vi fokuserar på upptäckt, grundlig rensning och återhämtning.
+
+Vi skannar filer, databaser och sårbara komponenter, tar bort skadlig programvara och oönskade omdirigeringar och reparerar komprometterade delar där det behövs. Säkerhetskopieringar tas före och efter rengöring.
+
+Du får också förebyggande vägledning för att minska risken för återinfektion, så att du kan återgå till att driva ditt företag med tillförsikt.

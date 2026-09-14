@@ -1,0 +1,1 @@
+Začneme vzorovým souborem a jasnými pravidly zadávání polí, zdrojových dat a výjimek. Během dodávky kontrolujeme úplnost a anomálie, abyste si zachovali přehled o pokroku a kvalitě.

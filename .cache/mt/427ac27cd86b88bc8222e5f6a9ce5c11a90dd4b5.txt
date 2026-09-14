@@ -1,0 +1,1 @@
+Súbor cookie je malý jednoduchý súbor, ktorý sa odosiela spolu so stránkami tejto webovej lokality a ukladá váš prehliadač na pevný disk vášho počítača alebo iného zariadenia. Informácie v nich uložené môžu byť vrátené na naše servery alebo na servery príslušných tretích strán počas ďalšej návštevy.

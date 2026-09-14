@@ -1,0 +1,1 @@
+Inteligjenca artificiale për faqet e internetit të personalizuara - biseda, drejtime, kërkimi i njohurive dhe automatizimi në PHP, HTML/JS dhe Next.js.

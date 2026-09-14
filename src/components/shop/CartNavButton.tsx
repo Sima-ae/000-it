@@ -12,6 +12,7 @@ import { resolveCartItems, cartTotalsInEuros } from "@/lib/shop/cart";
 import { localizeShopProduct } from "@/lib/shop/catalog";
 import { centsToEuros, formatShopEuro } from "@/lib/shop/vat";
 import { cn } from "@/lib/utils";
+import { localizedHref } from "@/i18n/pathnames";
 
 const CLOSE_DELAY_MS = 180;
 
@@ -20,6 +21,7 @@ export function CartNavButton({ className }: { className?: string }) {
   const pathname = usePathname();
   const router = useRouter();
   const t = useTranslations("shop");
+  const tCommon = useTranslations("common");
   const items = useCartStore((s) => s.items);
   const [mounted, setMounted] = useState(false);
   const [open, setOpen] = useState(false);
@@ -66,7 +68,7 @@ export function CartNavButton({ className }: { className?: string }) {
           "relative inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-muted-foreground transition hover:bg-muted/70 hover:text-foreground",
           open && "bg-muted/70 text-foreground",
         )}
-        aria-label={locale === "nl" ? "Winkelwagen" : "Shopping cart"}
+        aria-label={tCommon("cart")}
         aria-expanded={open}
         aria-haspopup="dialog"
         onClick={() => {
@@ -74,7 +76,7 @@ export function CartNavButton({ className }: { className?: string }) {
             setOpen((v) => !v);
             return;
           }
-          router.push(`/${locale}/shop/cart`);
+          router.push(localizedHref(locale, "/shop/cart"));
         }}
       >
         <ShoppingCart className="h-5.5 w-5.5" />
@@ -147,7 +149,7 @@ export function CartNavButton({ className }: { className?: string }) {
                 <div className="mt-3 flex flex-col gap-2">
                   <Button asChild size="sm" variant="outline" className="w-full rounded-xl">
                     <SoftLink
-                      href={`/${locale}/shop/cart`}
+                      href={localizedHref(locale, "/shop/cart")}
                       onClick={() => setOpen(false)}
                     >
                       {t("goToCart")}
@@ -159,7 +161,7 @@ export function CartNavButton({ className }: { className?: string }) {
                     className="w-full rounded-xl bg-primary text-primary-foreground hover:bg-primary/90"
                   >
                     <SoftLink
-                      href={`/${locale}/shop/checkout`}
+                      href={localizedHref(locale, "/shop/checkout")}
                       onClick={() => setOpen(false)}
                     >
                       {t("toCheckout")}

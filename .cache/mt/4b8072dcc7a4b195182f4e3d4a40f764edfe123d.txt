@@ -1,0 +1,1 @@
+Një skrip është një pjesë e kodit të programit që përdoret për të bërë që uebfaqja jonë të funksionojë siç duhet dhe në mënyrë interaktive. Ky kod ekzekutohet në serverin tonë ose në pajisjen tuaj.

@@ -1,0 +1,5 @@
+„VPS Hosting Basic“ tinka kūrėjams, mažoms programoms ir svetainėms, kurioms reikia daugiau kontrolės ir nuspėjamų išteklių, nei suteikia bendras priegloba.
+
+Turėdami 2 procesoriaus branduolius, 2 GB RAM, 40 GB SSD RAID 10 saugyklą ir 1000 GB pralaidumą, gausite tvirtą virtualų serverį, skirtą nedideliam ir vidutiniam darbo krūviui.
+
+TripleZero iT suteikia jums patikimą infrastruktūros pagrindą, todėl galite sutelkti dėmesį į savo programą, svetainę ar kūrimo aplinką. Padidinkite mastą, kai paklausa auga.

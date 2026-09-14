@@ -1,0 +1,1 @@
+Yoğunlukları karşılamanız veya dahili kapasiteyi aşırı yüklemeden devam eden veri işlerini dış kaynaklardan karşılamanız gerektiğinde idealdir.

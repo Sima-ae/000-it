@@ -1,0 +1,1 @@
+Skrypt to fragment kodu programu, który służy do zapewnienia prawidłowego i interaktywnego działania naszej witryny internetowej. Kod ten jest wykonywany na naszym serwerze lub na Twoim urządzeniu.

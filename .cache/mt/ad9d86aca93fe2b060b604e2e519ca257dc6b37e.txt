@@ -1,0 +1,1 @@
+Optimizarea motorului de căutare geografică pentru hărți, pachete locale și căutare regională.

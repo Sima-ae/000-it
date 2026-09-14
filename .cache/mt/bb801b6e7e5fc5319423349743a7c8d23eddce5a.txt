@@ -1,0 +1,1 @@
+Sərtləşmə, firewall/WAF, HTTPS/SSL və xüsusi veb saytlar üçün təhlükəsizlik monitorinqi – WordPress deyil.

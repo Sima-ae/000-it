@@ -1,0 +1,1 @@
+La capacité réservée donne plus de marge aux sites Web et aux applications exigeants. Votre environnement peut s'adapter plus facilement aux pics, aux nouvelles fonctionnalités et aux besoins changeants en termes de performances sans avoir à déplacer immédiatement la plateforme.

@@ -1,0 +1,5 @@
+Apsaugokite savo „WordPress“ svetainę naudodami „TripleZero iT“ saugos paslaugas. Praktiškai ir kruopščiai kontroliuojame jūsų svetainę nuo įsilaužimų, kenkėjiškų programų ir piktnaudžiavimo.
+
+Sukūrę atsarginę kopiją, atliekame saugos auditą, įdiegiame Wordfence (Basic arba Premium), sukonfigūruojame užkardą ir apsaugą nuo brutalios jėgos bei nustatome SSL, kur reikia. Vartotojų prieiga ir pataisymai peržiūrimi, todėl pažeidžiamumas turi mažiau galimybių augti.
+
+Po pristatymo gausite 7 dienų nemokamą palaikymą – jūsų duomenys, reputacija ir tęstinumas bus geriau apsaugoti.

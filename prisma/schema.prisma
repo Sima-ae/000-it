@@ -697,3 +697,35 @@ model KennisbankArticleCategory {
   @@id([articleId, categoryId])
   @@index([categoryId])
 }
+
+/// Machine-translated copy for static pages, catalog, SEO and UI overlays.
+/// Authored NL/EN stay in source files; every other locale is stored here.
+model LocalizedCopy {
+  id         String   @id @default(cuid())
+  kind       String
+  itemKey    String
+  locale     String
+  payload    Json
+  sourceHash String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@unique([kind, itemKey, locale])
+  @@index([kind, locale])
+}
+
+/// Per-locale public URL slugs for dynamic entities (services, kennisbank, …).
+/// `entityKey` is the canonical App Router / DB slug; `slug` is the public URL segment.
+model EntitySlug {
+  id         String   @id @default(cuid())
+  entityType String
+  entityKey  String
+  locale     String
+  slug       String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@unique([entityType, entityKey, locale])
+  @@unique([entityType, locale, slug])
+  @@index([entityType, locale])
+}

@@ -1,0 +1,1 @@
+Iniziamo con un file di esempio e regole di immissione chiare per campi, dati di origine ed eccezioni. Durante la consegna, controlliamo la completezza e le anomalie per consentirti di mantenere la visibilità dello stato di avanzamento e della qualità.

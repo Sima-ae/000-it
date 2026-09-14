@@ -1,0 +1,5 @@
+VPS Hosting Business er designet til forretningskritiske hjemmesider, krævende applikationer og organisationer, der forventer rigelig kapacitet og stabil ydeevne.
+
+Med 8 CPU-kerner, 12 GB RAM, 240 GB SSD RAID 10-lagring og 6000 GB båndbredde giver denne plan en kraftfuld base for intensive arbejdsbelastninger, flere miljøer og større besøgsvolumen.
+
+TripleZero iT hjælper dig med at opbygge pålidelig infrastruktur, der følger dine ambitioner. Du bevarer kontrollen over din VPS, med et erfarent team til rådighed for support.

@@ -1,0 +1,1 @@
+Ardıcıl, tam məlumat alıcının qeyri-müəyyənliyini və kataloq səhvlərini azaldır. O, filtrləri, yerində axtarışı, aşkar edilə bilənliyi və daha inandırıcı alış qərarını dəstəkləyir.

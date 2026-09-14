@@ -12,30 +12,33 @@ import { LanguageSwitcher } from "@/components/shared/LanguageSwitcher";
 import { CartNavButton } from "@/components/shop/CartNavButton";
 import { AccountMenu } from "@/components/shared/AccountMenu";
 import { serviceCatalog, serviceHref, sortedServiceGroups } from "@/content/fixweb/catalog";
+import {
+  catalogGroupTitle,
+  catalogServiceTitle,
+} from "@/content/fixweb/catalog-title";
+import { localizedHref } from "@/i18n/pathnames";
 import { cn } from "@/lib/utils";
 
 const primaryLinks = [
-  { href: "", key: "home" },
+  { href: "/", key: "home" },
   { href: "/over-ons", key: "info", info: true },
   { href: "/diensten", key: "services", mega: true },
   { href: "/kennisbank", key: "kennisbank" },
   { href: "/portfolio", key: "portfolio" },
   { href: "#prijzen", key: "pricing" },
-  // Shop page stays reachable via cart / checkout; omit from header menu.
   { href: "/nieuws", key: "blog" },
-  // { href: "/case-studies", key: "cases" },
   { href: "/contact", key: "contact" },
 ] as const;
 
 export function Navigation() {
   const t = useTranslations("nav");
+  const tCommon = useTranslations("common");
   const locale = useLocale();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileInfoOpen, setMobileInfoOpen] = useState(false);
-  const isNl = locale === "nl";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -61,7 +64,7 @@ export function Navigation() {
       >
         <div className="flex items-center justify-between gap-3 px-3 py-2.5 md:px-4 md:py-3">
           <SoftLink
-            href={`/${locale}`}
+            href={localizedHref(locale, "/")}
             className="font-display shrink-0 text-base font-semibold tracking-tight md:text-lg"
           >
             <span className="bg-linear-to-r from-primary via-[#7a5aa8] to-accent bg-clip-text text-transparent">
@@ -71,11 +74,12 @@ export function Navigation() {
 
           <nav className="hidden items-center gap-0.5 xl:flex">
             {primaryLinks.map((link) => {
-              const href = `/${locale}${link.href}`;
+              const href = localizedHref(locale, link.href);
+              const pathOnly = href.split("#")[0];
               const active =
-                link.href === ""
-                  ? pathname === href
-                  : pathname === href || pathname.startsWith(`${href}/`);
+                link.href === "/"
+                  ? pathname === pathOnly || pathname === `/${locale}`
+                  : pathname === pathOnly || pathname.startsWith(`${pathOnly}/`);
 
               if ("mega" in link && link.mega) {
                 return (
@@ -89,10 +93,11 @@ export function Navigation() {
               }
 
               if ("info" in link && link.info) {
+                const faqHref = localizedHref(locale, "/faq");
                 const infoActive =
                   active ||
-                  pathname === `/${locale}/faq` ||
-                  pathname.startsWith(`/${locale}/faq/`);
+                  pathname === faqHref ||
+                  pathname.startsWith(`${faqHref}/`);
                 return (
                   <InfoDropdown
                     key={link.key}
@@ -125,7 +130,7 @@ export function Navigation() {
 
           <div className="flex items-center gap-1.5 md:gap-2">
             <SoftLink
-              href={`/${locale}/afspraak`}
+              href={localizedHref(locale, "/afspraak")}
               className="hidden rounded-xl bg-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground lg:inline-flex"
             >
               {t("book")}
@@ -134,7 +139,7 @@ export function Navigation() {
               type="button"
               className="rounded-xl p-2 text-muted-foreground transition hover:bg-muted/70 xl:hidden"
               onClick={() => setOpen((v) => !v)}
-              aria-label={locale === "nl" ? "Menu openen" : "Open menu"}
+              aria-label={tCommon("openMenu")}
             >
               {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
@@ -149,11 +154,12 @@ export function Navigation() {
           <div className="max-h-[70vh] overflow-y-auto border-t border-border/60 px-3 py-3 xl:hidden">
             <div className="flex flex-col gap-1">
               {primaryLinks.map((link) => {
-                const href = `/${locale}${link.href}`;
+                const href = localizedHref(locale, link.href);
+                const pathOnly = href.split("#")[0];
                 const active =
-                  link.href === ""
-                    ? pathname === href
-                    : pathname === href || pathname.startsWith(`${href}/`);
+                  link.href === "/"
+                    ? pathname === pathOnly || pathname === `/${locale}`
+                    : pathname === pathOnly || pathname.startsWith(`${pathOnly}/`);
 
                 if ("mega" in link && link.mega) {
                   return (
@@ -172,10 +178,10 @@ export function Navigation() {
                       {mobileServicesOpen ? (
                         <div className="mb-2 ml-2 space-y-3 border-l border-border/60 pl-3">
                           <SoftLink
-                            href={`/${locale}/diensten`}
+                            href={localizedHref(locale, "/diensten")}
                             className="block rounded-lg px-2 py-1 text-sm font-medium text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
                           >
-                            {isNl ? "Alle diensten" : "All services"}
+                            {t("services")}
                           </SoftLink>
                           {sortedServiceGroups(locale).map((group) => {
                             const groupItems = serviceCatalog.filter((s) => s.group === group.id);
@@ -183,16 +189,16 @@ export function Navigation() {
                               group.id === "hosting" || group.id === "ai"
                                 ? groupItems
                                 : [...groupItems].sort((a, b) =>
-                                    (isNl ? a.titleNl : a.title).localeCompare(
-                                      isNl ? b.titleNl : b.title,
-                                      isNl ? "nl" : "en",
+                                    catalogServiceTitle(a.slug, locale, a.title).localeCompare(
+                                      catalogServiceTitle(b.slug, locale, b.title),
+                                      locale,
                                       { sensitivity: "base" },
                                     ),
                                   );
                             return (
                               <div key={group.id}>
                                 <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                                  {isNl ? group.titleNl : group.title}
+                                  {catalogGroupTitle(group.id, locale, group.title)}
                                 </p>
                                 {sorted
                                   .slice(
@@ -213,7 +219,7 @@ export function Navigation() {
                                       href={serviceHref(locale, item)}
                                       className="block rounded-lg px-2 py-1 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
                                     >
-                                      {isNl ? item.titleNl : item.title}
+                                      {catalogServiceTitle(item.slug, locale, item.title)}
                                     </SoftLink>
                                   ))}
                               </div>
@@ -226,10 +232,11 @@ export function Navigation() {
                 }
 
                 if ("info" in link && link.info) {
+                  const faqHref = localizedHref(locale, "/faq");
                   const infoActive =
                     active ||
-                    pathname === `/${locale}/faq` ||
-                    pathname.startsWith(`/${locale}/faq/`);
+                    pathname === faqHref ||
+                    pathname.startsWith(`${faqHref}/`);
                   return (
                     <div key={link.key}>
                       <button
@@ -246,13 +253,13 @@ export function Navigation() {
                       {mobileInfoOpen ? (
                         <div className="mb-2 ml-2 border-l border-border/60 pl-3">
                           <SoftLink
-                            href={`/${locale}/over-ons`}
+                            href={localizedHref(locale, "/over-ons")}
                             className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
                           >
                             {t("about")}
                           </SoftLink>
                           <SoftLink
-                            href={`/${locale}/voorwaarden`}
+                            href={localizedHref(locale, "/voorwaarden")}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
@@ -260,7 +267,7 @@ export function Navigation() {
                             {t("terms")}
                           </SoftLink>
                           <SoftLink
-                            href={`/${locale}/cookies`}
+                            href={localizedHref(locale, "/cookies")}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
@@ -268,7 +275,7 @@ export function Navigation() {
                             {t("cookies")}
                           </SoftLink>
                           <SoftLink
-                            href={`/${locale}/privacy`}
+                            href={localizedHref(locale, "/privacy")}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
@@ -276,7 +283,7 @@ export function Navigation() {
                             {t("privacy")}
                           </SoftLink>
                           <SoftLink
-                            href={`/${locale}/faq`}
+                            href={localizedHref(locale, "/faq")}
                             className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
                           >
                             {t("faq")}
@@ -301,7 +308,7 @@ export function Navigation() {
                 );
               })}
               <SoftLink
-                href={`/${locale}/afspraak`}
+                href={localizedHref(locale, "/afspraak")}
                 className="rounded-xl bg-primary px-3 py-2.5 text-sm font-semibold text-primary-foreground"
               >
                 {t("book")}

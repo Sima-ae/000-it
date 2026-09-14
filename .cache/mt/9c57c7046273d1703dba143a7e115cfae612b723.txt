@@ -1,0 +1,1 @@
+Siz kuki siyasətini javascript dəstəyi olmadan yüklədiniz. AMP-də siz səhifənin altındakı razılığı idarə et düyməsini istifadə edə bilərsiniz.

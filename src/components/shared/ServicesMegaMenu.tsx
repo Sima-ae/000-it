@@ -2,10 +2,16 @@
 
 import { useEffect, useRef, useState, type MouseEvent } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { useNavigationProgress } from "@/hooks/useNavigationProgress";
 import { serviceCatalog, serviceHref, sortedServiceGroups } from "@/content/fixweb/catalog";
+import {
+  catalogGroupTitle,
+  catalogServiceTitle,
+} from "@/content/fixweb/catalog-title";
+import { localizedHref } from "@/i18n/pathnames";
 import { cn } from "@/lib/utils";
 
 const featuredByGroup: Record<string, string[]> = {
@@ -82,14 +88,16 @@ const featuredByGroup: Record<string, string[]> = {
 
 function sortFeaturedItems(
   items: NonNullable<(typeof serviceCatalog)[number]>[],
-  isNl: boolean,
+  locale: string,
   groupId: string,
 ) {
   if (groupId === "hosting" || groupId === "ai") return items;
   return [...items].sort((a, b) =>
-    (isNl ? a.titleNl : a.title).localeCompare(isNl ? b.titleNl : b.title, isNl ? "nl" : "en", {
-      sensitivity: "base",
-    }),
+    catalogServiceTitle(a.slug, locale, a.title).localeCompare(
+      catalogServiceTitle(b.slug, locale, b.title),
+      locale,
+      { sensitivity: "base" },
+    ),
   );
 }
 
@@ -110,7 +118,7 @@ export function ServicesMegaMenu({
   const pathname = usePathname();
   const router = useRouter();
   const startProgress = useNavigationProgress((s) => s.start);
-  const isNl = locale === "nl";
+  const t = useTranslations("appointment");
 
   function clearCloseTimer() {
     if (closeTimer.current) {
@@ -202,13 +210,13 @@ export function ServicesMegaMenu({
                   slugs
                     .map((slug) => serviceCatalog.find((s) => s.slug === slug))
                     .filter((item): item is NonNullable<typeof item> => Boolean(item)),
-                  isNl,
+                  locale,
                   group.id,
                 );
                 return (
                   <div key={group.id} className="min-w-0 bg-transparent">
                     <p className="mb-2 whitespace-nowrap px-1.5 text-[11px] font-semibold text-foreground md:px-2 md:text-xs">
-                      {isNl ? group.titleNl : group.title}
+                      {catalogGroupTitle(group.id, locale, group.title)}
                     </p>
                     <div className="flex max-h-[min(70vh,28rem)] flex-col overflow-y-auto bg-transparent">
                       {items.map((item) => {
@@ -220,7 +228,7 @@ export function ServicesMegaMenu({
                             className="rounded-lg px-1.5 py-1.5 text-[12px] leading-snug text-muted-foreground transition hover:bg-primary hover:text-primary-foreground md:px-2 md:text-[13px]"
                             onClick={(event) => navigateFromMenu(href, event)}
                           >
-                            {isNl ? item.titleNl : item.title}
+                            {catalogServiceTitle(item.slug, locale, item.title)}
                           </SoftLink>
                         );
                       })}
@@ -231,7 +239,7 @@ export function ServicesMegaMenu({
             </div>
             <div className="mt-5 flex items-center justify-center border-t border-border/40 bg-transparent px-1 pt-4">
               <SoftLink
-                href={`/${locale}/diensten`}
+                href={localizedHref(locale, "/diensten")}
                 className={cn(
                   "group inline-flex items-center gap-2 rounded-2xl bg-primary px-5 py-2.5",
                   "text-sm font-semibold text-primary-foreground",
@@ -239,13 +247,9 @@ export function ServicesMegaMenu({
                   "hover:bg-primary/90 hover:shadow-[0_14px_34px_rgba(91,60,139,0.42)]",
                   "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50",
                 )}
-                onClick={(event) => navigateFromMenu(`/${locale}/diensten`, event)}
+                onClick={(event) => navigateFromMenu(localizedHref(locale, "/diensten"), event)}
               >
-                <span>
-                  {isNl
-                    ? "Klik hier voor alle diensten!"
-                    : "Click here for all services!"}
-                </span>
+                <span>{t("allServicesCta")}</span>
                 <ChevronRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
               </SoftLink>
             </div>

@@ -1,0 +1,1 @@
+Probereme vaši aplikaci, očekávanou zátěž, úložiště, zabezpečení a preferovanou úroveň správy. To vám umožní zvolit kapacitu na základě dnešních technických požadavků a další fáze růstu, spíše než dohady.

@@ -1,0 +1,5 @@
+VPS Hosting Basic, paylaşılan hostinqdən daha çox nəzarətə və proqnozlaşdırıla bilən resurslara ehtiyacı olan tərtibatçılar, kiçik proqramlar və vebsaytlar üçün uyğundur.
+
+2 CPU nüvəsi, 2 GB RAM, 40 GB SSD RAID 10 yaddaş və 1000 GB bant genişliyi ilə siz yüngül və orta səviyyəli iş yükləri üçün möhkəm virtual server əldə edirsiniz.
+
+TripleZero iT sizə etibarlı infrastruktur bazası təqdim edir, beləliklə siz diqqətinizi tətbiqinizə, vebsaytınıza və ya inkişaf mühitinizə yönəldə bilərsiniz. Tələb artdıqda miqyasını artırın.

@@ -1,0 +1,1 @@
+Rýchle aplikácie React pripravené pre SEO s App Router a moderným DX.

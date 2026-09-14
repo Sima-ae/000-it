@@ -1,0 +1,1 @@
+Løbende WordPress kerne-, plugin- og temaopdateringer med backup, overvågning og pleje.

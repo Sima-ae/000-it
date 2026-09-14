@@ -10,6 +10,7 @@ import { useCartStore } from "@/lib/shop/cart-store";
 import { resolveCartItems, cartTotalsInEuros } from "@/lib/shop/cart";
 import { localizeShopProduct } from "@/lib/shop/catalog";
 import { centsToEuros, formatShopEuro } from "@/lib/shop/vat";
+import { localizedHref } from "@/i18n/pathnames";
 
 export function CheckoutForm() {
   const locale = useLocale();
@@ -49,7 +50,7 @@ export function CheckoutForm() {
       <div className="rounded-2xl border border-border/70 bg-muted/20 p-10 text-center">
         <p className="text-muted-foreground">{t("emptyCart")}</p>
         <Button asChild className="mt-6 rounded-2xl">
-          <SoftLink href={`/${locale}/shop`}>{t("continueShopping")}</SoftLink>
+          <SoftLink href={localizedHref(locale, "/shop")}>{t("continueShopping")}</SoftLink>
         </Button>
       </div>
     );
@@ -204,7 +205,7 @@ export function CheckoutForm() {
           {loading ? t("redirecting") : t("payWithStripe")}
         </Button>
         <Button asChild variant="ghost" className="w-full">
-          <SoftLink href={`/${locale}/shop/cart`}>{t("backToCart")}</SoftLink>
+          <SoftLink href={localizedHref(locale, "/shop/cart")}>{t("backToCart")}</SoftLink>
         </Button>
       </aside>
     </form>

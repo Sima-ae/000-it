@@ -1,0 +1,4 @@
+– 4 rdzenie procesora
+– 6 GB RAM-u
+– 120 GB SSD RAID 10
+– przepustowość 3000 GB

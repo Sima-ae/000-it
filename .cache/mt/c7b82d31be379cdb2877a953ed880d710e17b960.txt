@@ -1,0 +1,10 @@
+Nə gözləmək olar?
+- Tam avtomatik + əl ilə ehtiyat nüsxə
+– Wordfence Basic və ya Premium-un quraşdırılması
+– Qabaqcıl təhlükəsizlik auditi
+– Zərərli proqram və təhlükədən qorunma
+– Firewall və kobud gücdən qorunma
+- Daimi yeniləmələr və yamaqlar
+– SSL sertifikatının quraşdırılması
+- İstifadəçi girişinin idarə edilməsi
+- 7 gün pulsuz dəstək

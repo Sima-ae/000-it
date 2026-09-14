@@ -23,7 +23,6 @@ export default async function CaseStudiesPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const isNl = locale === "nl";
   const t = await getTranslations("cases");
   const cases = await listCaseStudies();
 
@@ -39,10 +38,10 @@ export default async function CaseStudiesPage({
       <CaseStudiesGrid
         items={cases}
         labels={{
-          client: isNl ? "Klant" : "Client",
-          industry: isNl ? "Branche" : "Industry",
-          technologies: isNl ? "Technologieën" : "Technologies",
-          visit: isNl ? "Bekijk project" : "View project",
+          client: t("client"),
+          industry: t("industry"),
+          technologies: t("technologies"),
+          visit: t("visit"),
         }}
       />
     </div>

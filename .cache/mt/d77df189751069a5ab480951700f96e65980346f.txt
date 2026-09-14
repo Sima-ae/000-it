@@ -1,0 +1,1 @@
+Indlæsningstider under 2 sekunder og Core Web Vitals optimeret.

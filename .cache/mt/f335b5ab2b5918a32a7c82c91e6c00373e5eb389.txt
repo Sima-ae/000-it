@@ -1,0 +1,5 @@
+O Suporte Padrão é adequado para organizações com até dois sites WordPress que precisam de manutenção diária, bem como atenção à velocidade e continuidade.
+
+Você recebe monitoramento 24 horas por dia, 7 dias por semana, backups diários, atualizações, resolução de erros, remoção de malware e cuidados de segurança. Também otimizamos o cache, as imagens e o código, melhorando o desempenho dos seus sites.
+
+TripleZero iT trabalha de forma proativa: sinalizamos problemas, resolvemos problemas técnicos com foco e mantemos seus sites estáveis ​​para visitantes e administradores.

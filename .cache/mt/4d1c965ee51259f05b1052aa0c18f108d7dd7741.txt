@@ -1,0 +1,1 @@
+A lefoglalt kapacitás nagyobb teret biztosít az igényes webhelyek és alkalmazások számára. Környezete könnyebben tud alkalmazkodni a csúcsokhoz, az új funkciókhoz és a változó teljesítményigényekhez, anélkül, hogy azonnali platformváltásra lenne szükség.

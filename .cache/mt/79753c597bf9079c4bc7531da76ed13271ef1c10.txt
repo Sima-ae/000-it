@@ -1,0 +1,3 @@
+Rregullimi i gabimeve dhe gabimeve të WordPress për performancën, sigurinë, përditësimet dhe stabilitetin.
+
+Ne zgjidhim çështjet e zakonshme dhe zbatojmë praktikat më të mira në mënyrë që faqja juaj e WordPress të funksionojë me besueshmëri për pronarët, zhvilluesit dhe vizitorët.

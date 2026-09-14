@@ -1,0 +1,1 @@
+A megosztott tárhely költséghatékony alapot jelent blogokhoz, üzleti webhelyekhez és kisebb projektekhez. Hatékonyan osztja meg a szerver erőforrásait, miközben az alapvető funkciók alapfelszereltségnek számítanak.

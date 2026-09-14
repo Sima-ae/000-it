@@ -1,0 +1,5 @@
+Perustuki on tarkoitettu yrityksille, joilla on yksi WordPress-verkkosivusto ja jotka haluavat luotettavan teknisen perustan ilman, että heidän tarvitsee ratkaista kaikkia ongelmia itse.
+
+Valvomme sivustoasi kellon ympäri, luomme päivittäisiä varmuuskopioita ja pidämme WordPressin ja laajennukset ajan tasalla. Korjaamme myös virheet, poistamme haittaohjelmat ja käytämme käytännöllisiä turvatoimia pitääksemme sivustosi saatavilla ja suojattuna.
+
+TripleZero iT käsittelee tapaukset huolellisesti, tarkistaa sivuston palautumisen jälkeen ja auttaa vähentämään tulevaa riskiä. Voit keskittyä yritykseesi, kun me huolehdimme sen teknisestä jatkuvuudesta.

@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+# Resume machine translation for news, kennisbank, pages, catalog, SEO and UI.
+name: Translate content (all locales)
+
+on:
+  schedule:
+    # Frequent enough to finish 35 locales after new Dutch articles / auto-news / pages.
+    - cron: "15 */3 * * *"
+    # Shortly after the daily auto-news window (UTC).
+    - cron: "40 22 * * *"
+    - cron: "10 23 * * *"
+  workflow_dispatch:
+    inputs:
+      kinds:
+        description: "Comma-separated kinds: news,kennisbank,pages,ui,slugs (empty = all)"
+        required: false
+        default: ""
+
+concurrency:
+  group: translate-content
+  cancel-in-progress: false
+
+jobs:
+  translate:
+    name: Fill missing translations
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Trigger translate-content endpoint
+        env:
+          APP_URL: ${{ secrets.AUTO_NEWS_APP_URL }}
+          KINDS: ${{ github.event.inputs.kinds || '' }}
+        run: |
+          set -euo pipefail
+          BASE_URL="${APP_URL:-https://000-it.com}"
+          KINDS_QS=""
+          if [[ -n "${KINDS}" ]]; then
+            KINDS_QS="&kinds=${KINDS}"
+          fi
+          URL="${BASE_URL%/}/api/cron/translate-content?deadlineMs=420000${KINDS_QS}"
+          echo "POST ${URL}"
+          curl -fsS -X POST \
+            -H "Accept: application/json" \
+            --max-time 1100 \
+            "$URL" | tee /tmp/translate-content.json
+          node -e '
+            const fs = require("fs");
+            const data = JSON.parse(fs.readFileSync("/tmp/translate-content.json","utf8"));
+            console.log(JSON.stringify({
+              ok: data.ok,
+              written: data.written,
+              skipped: data.skipped,
+              failed: data.failed,
+              remaining: data.remaining,
+              details: (data.details||[]).slice(0, 20),
+            }, null, 2));
+            if (data.ok === false) process.exit(1);
+          '

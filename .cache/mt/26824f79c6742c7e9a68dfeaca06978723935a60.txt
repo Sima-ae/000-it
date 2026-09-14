@@ -1,0 +1,1 @@
+Előzetesen elfogadjuk a kötelező mezőket, a forrásadatokat, az elnevezési szabályokat és a minőségellenőrzést. Minden termékcsoportnál szisztematikusan dolgozunk, ellenőrizzük a változatokat és attribútumokat, és megjelöljük a hiányzó vagy ütköző információkat.

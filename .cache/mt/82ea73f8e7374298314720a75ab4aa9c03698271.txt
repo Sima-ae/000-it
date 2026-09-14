@@ -1,0 +1,1 @@
+Fornece a prevenção de páginas em cache

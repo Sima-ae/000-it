@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { ChevronDown } from "lucide-react";
 import { SoftLink } from "@/components/shared/SoftLink";
+import { localizedHref } from "@/i18n/pathnames";
 import { cn } from "@/lib/utils";
 
 const CLOSE_DELAY_MS = 220;
@@ -55,9 +56,9 @@ export function InfoDropdown({
 
   useEffect(() => () => clearCloseTimer(), []);
 
-  const aboutHref = `/${locale}/over-ons`;
+  const aboutHref = localizedHref(locale, "/over-ons");
   const aboutActive = pathname === aboutHref || pathname.startsWith(`${aboutHref}/`);
-  const faqHref = `/${locale}/faq`;
+  const faqHref = localizedHref(locale, "/faq");
   const faqActive = pathname === faqHref || pathname.startsWith(`${faqHref}/`);
 
   const legalLabels = {
@@ -109,7 +110,7 @@ export function InfoDropdown({
             {legalLinks.map((item) => (
               <SoftLink
                 key={item.href}
-                href={`/${locale}${item.href}`}
+                href={localizedHref(locale, item.href)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={itemClass}

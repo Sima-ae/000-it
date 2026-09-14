@@ -1,0 +1,1 @@
+Vi börjar med en exempelfil och tydliga inmatningsregler för fält, källdata och undantag. Under leverans kontrollerar vi fullständighet och avvikelser så att du behåller synlighet av framsteg och kvalitet.

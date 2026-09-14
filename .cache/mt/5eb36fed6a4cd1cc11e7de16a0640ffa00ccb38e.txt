@@ -1,0 +1,1 @@
+Keményítés, tűzfal/WAF, HTTPS/SSL és biztonsági megfigyelés egyéni webhelyekhez – nem WordPress.

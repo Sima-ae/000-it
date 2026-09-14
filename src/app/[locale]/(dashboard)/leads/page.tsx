@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import { localizedHref } from "@/i18n/pathnames";
 
 /** Legacy route — CRM leads pipeline is canonical */
 export default async function LeadsRedirectPage({
@@ -7,5 +8,5 @@ export default async function LeadsRedirectPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  redirect(`/${locale}/crm/leads`);
+  redirect(localizedHref(locale, "/crm/leads"));
 }

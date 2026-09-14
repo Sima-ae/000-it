@@ -1,0 +1,6 @@
+Hej TripleZero iT,
+
+Jeg vil gerne lære mere om {service} til vores {tip}.
+
+Webstedets URL:
+Mål (f.eks. chatbot, produktassistent, indholds-AI, brugerdefineret):

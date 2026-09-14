@@ -1,0 +1,1 @@
+Dyp analyse og fjerning av skadelig programvare, slik at nettstedet ditt er rent igjen.

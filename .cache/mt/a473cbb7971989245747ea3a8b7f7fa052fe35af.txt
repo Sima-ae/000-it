@@ -1,0 +1,1 @@
+Herding, brannmur/WAF, HTTPS/SSL og sikkerhetsovervåking for tilpassede nettsteder – ikke WordPress.

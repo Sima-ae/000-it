@@ -1,0 +1,1 @@
+Malware-Bereinigung für benutzerdefinierte PHP-, HTML- und Next.js-Sites – getrennt von WordPress-Malware-Paketen.

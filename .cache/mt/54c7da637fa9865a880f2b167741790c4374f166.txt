@@ -1,0 +1,1 @@
+Pagina {page} din {total}

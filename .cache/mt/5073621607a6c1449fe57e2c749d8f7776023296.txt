@@ -1,0 +1,1 @@
+A webjelző (vagy pixelcímke) egy kicsi, láthatatlan szöveg- vagy képrészlet a webhelyen, amelyet a webhely forgalmának figyelésére használnak. Ennek érdekében webjelzők segítségével különféle adatokat tárolunk Önről.

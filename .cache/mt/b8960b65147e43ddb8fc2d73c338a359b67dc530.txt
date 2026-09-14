@@ -1,0 +1,1 @@
+En informasjonskapsel er en liten enkel fil som sendes sammen med sidene på denne nettsiden og lagres av nettleseren din på harddisken til datamaskinen din eller en annen enhet. Informasjonen som er lagret der, kan returneres til våre servere eller til serverne til de relevante tredjepartene under et påfølgende besøk.

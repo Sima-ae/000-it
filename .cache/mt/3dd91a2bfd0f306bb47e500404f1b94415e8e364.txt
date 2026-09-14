@@ -1,0 +1,1 @@
+Učitali ste Politiku kolačića bez podrške za javascript. Na AMP-u možete koristiti gumb za upravljanje pristankom na dnu stranice.

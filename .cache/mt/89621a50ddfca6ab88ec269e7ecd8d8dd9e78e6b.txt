@@ -1,0 +1,1 @@
+Un web beacon (o pixel tag) è una piccola porzione invisibile di testo o immagine su un sito Web utilizzata per monitorare il traffico su un sito Web. A tale scopo, tramite web beacon vengono memorizzati diversi dati su di te.

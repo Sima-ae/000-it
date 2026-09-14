@@ -1,0 +1,1 @@
+Präferenz für den gleichen Tag oder den nächsten Werktag, falls verfügbar.

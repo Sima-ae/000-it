@@ -63,7 +63,7 @@ export function KennisbankCategoryForm({
       );
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Save failed");
-      toast.success("Categorie opgeslagen");
+      toast.success("Categorie opgeslagen. Vertalingen voor alle talen worden automatisch aangemaakt.");
       onSaved();
     } catch (err) {
       toast.error(err instanceof Error ? err.message : "Save failed");
@@ -215,7 +215,9 @@ export function KennisbankArticleForm({
       );
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Save failed");
-      toast.success("Artikel opgeslagen");
+      toast.success(
+        "Artikel opgeslagen. Vertalingen voor alle talen worden automatisch aangemaakt.",
+      );
       onSaved();
     } catch (err) {
       toast.error(err instanceof Error ? err.message : "Save failed");

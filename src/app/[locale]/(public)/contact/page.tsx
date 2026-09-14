@@ -6,6 +6,7 @@ import { Reveal } from "@/components/marketing/Reveal";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
 import { buildStaticPageMetadata } from "@/lib/seo";
+import { localizedHref } from "@/i18n/pathnames";
 
 export async function generateMetadata({
   params,
@@ -24,6 +25,7 @@ export default async function ContactPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("contact");
+  const tNav = await getTranslations("nav");
 
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-col items-center px-4 py-14 text-center md:px-6 md:py-20">
@@ -33,8 +35,8 @@ export default async function ContactPage({
         </h1>
         <div className="mt-8 flex justify-center">
           <Button asChild className="rounded-2xl">
-            <SoftLink href={`/${locale}/afspraak`}>
-              {locale === "nl" ? "Boek een afspraak" : "Book an appointment"}
+            <SoftLink href={localizedHref(locale, "/afspraak")}>
+              {tNav("book")}
             </SoftLink>
           </Button>
         </div>

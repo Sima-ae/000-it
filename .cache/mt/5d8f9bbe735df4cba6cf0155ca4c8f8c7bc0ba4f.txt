@@ -1,0 +1,5 @@
+A VPS Hosting Basic olyan fejlesztőknek, kis alkalmazásoknak és webhelyeknek megfelelő, amelyeknek nagyobb vezérlésre és kiszámítható erőforrásokra van szükségük, mint a megosztott tárhely.
+
+A 2 CPU maggal, 2 GB RAM-mal, 40 GB SSD RAID 10 tárhellyel és 1000 GB sávszélességgel szilárd virtuális szervert kap a könnyű és közepes munkaterheléshez.
+
+A TripleZero iT megbízható infrastrukturális alapot biztosít, így az alkalmazására, webhelyére vagy fejlesztői környezetére összpontosíthat. Növekszik a kereslet növekedése.

@@ -1,0 +1,1 @@
+Augančioms svetainėms, pritaikytoms programoms, didesniam srauto pikui arba situacijoms, kai norite labiau valdyti serverio aplinką.

@@ -1,0 +1,1 @@
+A base sobre a qual podemos processar estes dados é:

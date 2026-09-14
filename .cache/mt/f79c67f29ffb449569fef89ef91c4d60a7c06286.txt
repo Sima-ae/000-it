@@ -1,0 +1,1 @@
+(START)Szyfrowanie TLS / SSL / DANE

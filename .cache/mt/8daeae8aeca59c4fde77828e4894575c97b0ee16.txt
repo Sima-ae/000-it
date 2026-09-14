@@ -1,0 +1,1 @@
+Pastrimi i malware për faqet e personalizuara PHP, HTML dhe Next.js — i ndarë nga paketat e malware të WordPress.

@@ -1,0 +1,1 @@
+Pasirinktinė DI integracija

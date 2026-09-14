@@ -1,0 +1,5 @@
+Védje meg WordPress webhelyét, és magabiztosan mozogjon a TripleZero iT biztonsági mentés és a tárhely-migráció segítségével. Akár gazdát vált, akár frissíti tervét, akár egyszerűen megbízható biztonsági mentésre van szüksége, az átállást nyugodtan és ellenőrzötten tartjuk.
+
+Teljes biztonsági másolatot készítünk a fájlokról, adatbázisokról, témákról, bővítményekről és médiáról. Ezután áttelepítjük webhelyét, ellenőrizzük a kompatibilitást, és beállítjuk a kulcsfontosságú tárhely-konfigurációt, hogy minden működjön az új környezetben.
+
+A kézbesítést követően 7 napig ingyenes támogatást kap a biztonsági mentéssel, visszaállítással vagy migrációval kapcsolatos kérdésekben. Webhelye érintetlen marad, elérhető és készen áll a növekedésre.

@@ -1,0 +1,1 @@
+Fərdi vebsaytlar üçün AI — PHP, HTML/JS və Next.js-də söhbət, aparıcılar, bilik axtarışı və avtomatlaşdırma.

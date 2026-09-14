@@ -1,0 +1,1 @@
+Írja le kérését – megnyitunk egy jegyet, amely szinkronizálva van az irányítópultjával.

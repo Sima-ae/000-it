@@ -1,0 +1,1 @@
+Slapukas yra mažas paprastas failas, kuris siunčiamas kartu su šios svetainės puslapiais ir išsaugomas jūsų naršyklės jūsų kompiuterio ar kito įrenginio standžiajame diske. Jame saugoma informacija gali būti grąžinta į mūsų arba atitinkamų trečiųjų šalių serverius vėlesnio apsilankymo metu.

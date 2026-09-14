@@ -1,0 +1,5 @@
+VPS Hosting Business, iş açısından kritik web siteleri, zorlu uygulamalar ve geniş kapasite ve istikrarlı performans bekleyen kuruluşlar için tasarlanmıştır.
+
+8 CPU çekirdeği, 12 GB RAM, 240 GB SSD RAID 10 depolama alanı ve 6000 GB bant genişliğiyle bu plan, yoğun iş yükleri, çoklu ortamlar ve daha yüksek ziyaretçi hacimleri için güçlü bir temel sağlar.
+
+TripleZero iT, hedeflerinizle birlikte hareket eden güvenilir bir altyapı oluşturmanıza yardımcı olur. Destek için hazır deneyimli bir ekiple VPS'nizin kontrolü sizde kalır.

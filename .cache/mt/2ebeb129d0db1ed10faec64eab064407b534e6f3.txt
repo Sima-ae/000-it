@@ -1,0 +1,1 @@
+Un web beacon (sau o etichetă de pixeli) este o bucată mică, invizibilă de text sau imagine de pe un site web, care este utilizată pentru a monitoriza traficul de pe un site web. Pentru a face acest lucru, diferite date despre dvs. sunt stocate folosind semnalizatoare web.

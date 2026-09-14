@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { localizedHref } from "@/i18n/pathnames";
 
 const schema = z.object({
   name: z.string().min(2),
@@ -67,7 +68,7 @@ export function RegisterForm() {
       password: values.password,
       redirect: false,
     });
-    router.push(`/${locale}/dashboard`);
+    router.push(localizedHref(locale, "/dashboard"));
     router.refresh();
   }
 
@@ -143,7 +144,7 @@ export function RegisterForm() {
         </form>
         <p className="mt-4 text-sm text-muted-foreground">
           {t("hasAccount")}{" "}
-          <Link href={`/${locale}/login`} className="text-primary hover:underline">
+          <Link href={localizedHref(locale, "/login")} className="text-primary hover:underline">
             {t("login")}
           </Link>
         </p>

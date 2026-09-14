@@ -1,0 +1,1 @@
+Kezdjük egy mintafájllal, és egyértelmű beviteli szabályokkal a mezőkre, a forrásadatokra és a kivételekre vonatkozóan. A szállítás során ellenőrizzük a teljességet és az anomáliákat, hogy megőrizze a haladás és a minőség láthatóságát.

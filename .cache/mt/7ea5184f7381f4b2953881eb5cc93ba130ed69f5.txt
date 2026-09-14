@@ -1,0 +1,1 @@
+Zaczynamy od przykładowego pliku i jasnych zasad wprowadzania pól, danych źródłowych i wyjątków. Podczas dostawy sprawdzamy kompletność i nieprawidłowości, dzięki czemu zachowasz widoczność postępu i jakości.

@@ -1,0 +1,5 @@
+VPS Hosting Basic është i përshtatshëm për zhvilluesit, aplikacionet e vogla dhe faqet e internetit që kanë nevojë për më shumë kontroll dhe burime të parashikueshme sesa ofron hostimi i përbashkët.
+
+Me 2 bërthama CPU, 2 GB RAM, 40 GB SSD RAID 10 memorie dhe 1000 GB gjerësi bande, ju merrni një server virtual të fortë për ngarkesa të lehta deri në mesatare.
+
+TripleZero iT ju jep një themel të besueshëm të infrastrukturës, kështu që ju mund të përqendroheni në aplikacionin tuaj, faqen e internetit ose mjedisin e zhvillimit. Rriteni kur kërkesa rritet.

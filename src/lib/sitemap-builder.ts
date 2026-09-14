@@ -15,11 +15,13 @@ import { listShopProducts } from "@/lib/shop/catalog";
 import { sitemapAbsoluteUrl, sitemapPublicOrigin } from "@/lib/seo";
 import { prisma } from "@/lib/prisma";
 import { enabledLanguages } from "@/i18n/languages";
+import { localizedHref } from "@/i18n/pathnames";
+import { hydrateAllEntitySlugs } from "@/lib/entity-slugs";
 
 const LOCALES = enabledLanguages().map((l) => l.code);
 
 /** Bump when regenerating after a major content release. */
-const CONTENT_REV = "2026-09-14";
+const CONTENT_REV = "2026-09-14c";
 
 /**
  * Soft cap per file. With ~35 hreflang alternates, keep well under the
@@ -43,9 +45,12 @@ function toIsoDate(input?: Date | string | null) {
 }
 
 function localizedUrls(path: string) {
-  const clean = path === "/" ? "" : path.startsWith("/") ? path : `/${path}`;
+  const clean = path === "/" ? "/" : path.startsWith("/") ? path : `/${path}`;
   return Object.fromEntries(
-    LOCALES.map((locale) => [locale, sitemapAbsoluteUrl(`/${locale}${clean}`)]),
+    LOCALES.map((locale) => [
+      locale,
+      sitemapAbsoluteUrl(localizedHref(locale, clean === "/" ? "/" : clean)),
+    ]),
   ) as Record<string, string>;
 }
 
@@ -168,6 +173,8 @@ function chunkEntries<T>(items: T[], size: number): T[][] {
 }
 
 export async function collectSitemapSets() {
+  await hydrateAllEntitySlugs();
+
   const cities: SitemapUrlEntry[] = [];
   const pages: SitemapUrlEntry[] = [];
   const services: SitemapUrlEntry[] = [];

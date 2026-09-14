@@ -1,0 +1,1 @@
+DKIM, SPF, DMARC și alte setări DNS specifice

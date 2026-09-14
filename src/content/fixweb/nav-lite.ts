@@ -1,3 +1,4 @@
+import { localizedHref } from "@/i18n/pathnames";
 /** Lightweight footer/nav links — avoids pulling full catalog into every page shell. */
 export const footerServiceLinks = [
   { slug: "ai-scan", title: "AI scan", titleNl: "AI-scan", href: undefined as string | undefined },
@@ -34,6 +35,6 @@ export const footerServiceLinks = [
 ] as const;
 
 export function footerServiceHref(locale: string, item: (typeof footerServiceLinks)[number]) {
-  if (item.href) return `/${locale}${item.href}`;
-  return `/${locale}/diensten/${item.slug}`;
+  if (item.href) return localizedHref(locale, item.href);
+  return localizedHref(locale, `/diensten/${item.slug}`);
 }

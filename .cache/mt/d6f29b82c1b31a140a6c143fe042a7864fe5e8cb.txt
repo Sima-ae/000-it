@@ -1,0 +1,1 @@
+HTTP Strenge transportsikkerhed og relaterede sikkerhedsheadere og browserpolitikker

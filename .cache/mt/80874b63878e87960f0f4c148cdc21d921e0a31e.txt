@@ -1,0 +1,1 @@
+Vi starter med en eksempelfil og klare indtastningsregler for felter, kildedata og undtagelser. Under leveringen kontrollerer vi fuldstændighed og uregelmæssigheder, så du bevarer synlighed af fremskridt og kvalitet.

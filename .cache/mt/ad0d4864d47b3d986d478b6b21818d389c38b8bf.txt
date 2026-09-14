@@ -1,0 +1,1 @@
+Több teljesítmény és vezérlés VPS-sel: dedikált erőforrások, SSD RAID 10 és méretezhető CPU/RAM/sávszélesség a növekvő projektekhez.

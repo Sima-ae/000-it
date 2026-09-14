@@ -1,3 +1,6 @@
+import { getLocalizedCopySync } from "@/lib/localized-copy-cache";
+import productI18nPack from "@/content/fixweb/product-i18n-pack.json";
+
 export type ProductI18n = {
   name?: string;
   shortDescription: string;
@@ -618,6 +621,13 @@ After delivery you get 7 days of free support for questions about the optimizati
 export function getProductI18n(slug: string, locale: string): ProductI18n | null {
   const entry = productI18n[slug];
   if (!entry) return null;
-  // Prefer EN for all non-Dutch locales (matches site-wide content pattern).
-  return locale === "nl" ? entry.nl : entry.en;
+  if (locale === "nl") return entry.nl;
+  if (locale === "en") return entry.en;
+  const fromPack = (
+    productI18nPack as Record<string, Record<string, ProductI18n>>
+  )[locale]?.[slug];
+  if (fromPack?.shortDescription || fromPack?.name) return fromPack;
+  const overlay = getLocalizedCopySync<ProductI18n>("product", slug, locale);
+  if (overlay?.shortDescription) return overlay;
+  return entry.en;
 }

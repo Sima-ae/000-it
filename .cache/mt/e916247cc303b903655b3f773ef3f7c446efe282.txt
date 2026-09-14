@@ -1,0 +1,1 @@
+Özel PHP, HTML ve Next.js siteleri için kötü amaçlı yazılım temizleme; WordPress kötü amaçlı yazılım paketlerinden ayrı olarak.

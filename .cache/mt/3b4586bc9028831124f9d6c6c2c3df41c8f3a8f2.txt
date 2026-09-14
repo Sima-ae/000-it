@@ -1,0 +1,1 @@
+Grundlæggende — 2 CPU-kerner, 2 GB RAM, 40 GB SSD RAID 10, 1000 GB båndbredde

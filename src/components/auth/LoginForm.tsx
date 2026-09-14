@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { localizedHref } from "@/i18n/pathnames";
 
 const schema = z.object({
   email: z.string().email(),
@@ -25,11 +26,11 @@ export function LoginForm() {
   const common = useTranslations("common");
   const locale = useLocale();
   const searchParams = useSearchParams();
-  const rawCallback = searchParams.get("callbackUrl") || `/${locale}/dashboard`;
+  const rawCallback = searchParams.get("callbackUrl") || localizedHref(locale, "/dashboard");
   const callbackUrl =
     rawCallback.startsWith("/") && !rawCallback.startsWith("//")
       ? rawCallback
-      : `/${locale}/dashboard`;
+      : localizedHref(locale, "/dashboard");
 
   const form = useForm<FormValues>({
     resolver: zodResolver(schema),
@@ -72,13 +73,13 @@ export function LoginForm() {
         </form>
         <div className="mt-4 space-y-2 text-sm text-muted-foreground">
           <p>
-            <Link href={`/${locale}/forgot-password`} className="text-primary hover:underline">
+            <Link href={localizedHref(locale, "/forgot-password")} className="text-primary hover:underline">
               {t("forgot")}
             </Link>
           </p>
           <p>
             {t("noAccount")}{" "}
-            <Link href={`/${locale}/register`} className="text-primary hover:underline">
+            <Link href={localizedHref(locale, "/register")} className="text-primary hover:underline">
               {t("register")}
             </Link>
           </p>

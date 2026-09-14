@@ -1,0 +1,1 @@
+Front-end izrade, odredišne ​​stranice i interaktivni korisnički interfejs bez CMS-a.

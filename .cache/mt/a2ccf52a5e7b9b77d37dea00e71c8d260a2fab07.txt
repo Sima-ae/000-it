@@ -1,0 +1,5 @@
+Grundlæggende support er for virksomheder med ét WordPress-websted, der ønsker et pålideligt teknisk fundament uden selv at skulle løse alle problemer.
+
+Vi overvåger dit websted døgnet rundt, laver daglige backups og holder WordPress og plugins opdaterede. Vi retter også fejl, fjerner malware og anvender praktiske sikkerhedsforanstaltninger for at holde din hjemmeside tilgængelig og beskyttet.
+
+TripleZero iT håndterer hændelser omhyggeligt, verificerer webstedet efter gendannelse og hjælper med at reducere fremtidig risiko. Du kan fokusere på din virksomhed, mens vi passer på dens tekniske kontinuitet.

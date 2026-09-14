@@ -1,0 +1,1 @@
+Sikkerhetstiltak for maskinvare som inneholder eller behandler personopplysninger.

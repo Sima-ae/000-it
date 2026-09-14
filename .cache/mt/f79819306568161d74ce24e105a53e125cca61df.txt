@@ -1,0 +1,1 @@
+Rensning av skadlig programvara för anpassade PHP-, HTML- och Next.js-webbplatser – separat från WordPress-programpaket.

@@ -1,0 +1,1 @@
+Aplikacione të fuqishme PHP, API dhe modernizim të trashëgimisë.

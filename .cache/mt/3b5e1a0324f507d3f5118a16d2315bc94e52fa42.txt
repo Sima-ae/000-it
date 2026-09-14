@@ -1,0 +1,1 @@
+Web beacon (ili oznaka piksela) je mali, nevidljivi dio teksta ili slike na web stranici koji se koristi za praćenje prometa na web stranici. Kako bismo to učinili, različiti podaci o vama pohranjuju se pomoću web beacona.

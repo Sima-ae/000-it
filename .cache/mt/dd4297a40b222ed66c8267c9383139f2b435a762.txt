@@ -1,0 +1,5 @@
+VPS Hosting Basic er egnet for utviklere, små applikasjoner og nettsteder som trenger mer kontroll og forutsigbare ressurser enn delt hosting gir.
+
+Med 2 CPU-kjerner, 2 GB RAM, 40 GB SSD RAID 10-lagring og 1000 GB båndbredde får du en solid virtuell server for lett til moderat arbeidsbelastning.
+
+TripleZero iT gir deg et pålitelig infrastrukturfundament, slik at du kan fokusere på applikasjonen, nettstedet eller utviklingsmiljøet ditt. Oppskalere når etterspørselen øker.

@@ -1,0 +1,5 @@
+VPS Hosting Business je navržen pro kriticky důležité webové stránky, náročné aplikace a organizace, které očekávají dostatečnou kapacitu a stabilní výkon.
+
+Tento plán s 8 jádry CPU, 12 GB RAM, 240 GB úložiště SSD RAID 10 a šířkou pásma 6 000 GB poskytuje výkonnou základnu pro intenzivní pracovní zátěž, více prostředí a vyšší objemy návštěvníků.
+
+TripleZero iT vám pomůže vybudovat spolehlivou infrastrukturu, která se bude pohybovat s vašimi ambicemi. Zachováte si kontrolu nad svým VPS se zkušeným týmem, který je k dispozici pro podporu.

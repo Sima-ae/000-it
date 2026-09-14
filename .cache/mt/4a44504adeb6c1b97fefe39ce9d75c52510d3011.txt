@@ -1,0 +1,1 @@
+WordPress kjerne- og pluginoppdateringer med sjekker

@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useEffect, useState, useTransition } from "react";
+import { useTranslations } from "next-intl";
 import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -19,21 +20,19 @@ export type SeoScanRow = {
 };
 
 export function SeoScansPanel({
-  locale,
   canManage,
   initialScans,
 }: {
-  locale: string;
   canManage: boolean;
   initialScans: SeoScanRow[];
 }) {
+  const t = useTranslations("dashboard");
   const router = useRouter();
   const [scans, setScans] = useState(initialScans);
   const [pendingId, setPendingId] = useState<string | null>(null);
   const [deletingAll, setDeletingAll] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [, startTransition] = useTransition();
-  const isNl = locale === "nl";
 
   useEffect(() => {
     setScans(initialScans);
@@ -41,9 +40,7 @@ export function SeoScansPanel({
 
   async function deleteOne(id: string) {
     if (!canManage || pendingId || deletingAll) return;
-    const ok = window.confirm(
-      isNl ? "Deze scan definitief verwijderen?" : "Permanently delete this scan?",
-    );
+    const ok = window.confirm(t("deleteScanConfirm"));
     if (!ok) return;
 
     setError(null);
@@ -51,7 +48,7 @@ export function SeoScansPanel({
     try {
       const res = await fetch(`/api/scans/${id}`, { method: "DELETE" });
       if (!res.ok) {
-        throw new Error(isNl ? "Verwijderen mislukt." : "Delete failed.");
+        throw new Error(t("deleteFailed"));
       }
       setScans((prev) => prev.filter((s) => s.id !== id));
       startTransition(() => router.refresh());
@@ -64,11 +61,7 @@ export function SeoScansPanel({
 
   async function deleteAll() {
     if (!canManage || !scans.length || pendingId || deletingAll) return;
-    const ok = window.confirm(
-      isNl
-        ? "Alle recente scans leegmaken? Dit kan niet ongedaan worden gemaakt."
-        : "Clear all recent scans? This cannot be undone.",
-    );
+    const ok = window.confirm(t("deleteAllConfirm"));
     if (!ok) return;
 
     setError(null);
@@ -76,7 +69,7 @@ export function SeoScansPanel({
     try {
       const res = await fetch("/api/scans", { method: "DELETE" });
       if (!res.ok) {
-        throw new Error(isNl ? "Alles verwijderen mislukt." : "Delete all failed.");
+        throw new Error(t("deleteAllFailed"));
       }
       setScans([]);
       startTransition(() => router.refresh());
@@ -90,7 +83,7 @@ export function SeoScansPanel({
   return (
     <Card>
       <CardHeader className="flex flex-row items-center justify-between gap-3 space-y-0">
-        <CardTitle>{isNl ? "Recente scans" : "Recent scans"}</CardTitle>
+        <CardTitle>{t("recentScans")}</CardTitle>
         {canManage && scans.length > 0 ? (
           <Button
             type="button"
@@ -100,25 +93,13 @@ export function SeoScansPanel({
             disabled={deletingAll || Boolean(pendingId)}
             onClick={() => void deleteAll()}
           >
-            {deletingAll
-              ? isNl
-                ? "Bezig…"
-                : "Working…"
-              : isNl
-                ? "Alles legen"
-                : "Delete all"}
+            {deletingAll ? t("working") : t("deleteAll")}
           </Button>
         ) : null}
       </CardHeader>
       <CardContent className="space-y-3">
         {error ? <p className="text-sm text-destructive">{error}</p> : null}
-        {!scans.length && (
-          <p className="text-muted-foreground">
-            {isNl
-              ? "Nog geen scans. Start met een gratis AI scan voor AEO, GEO (lokaal) en SEO scores."
-              : "No scans yet. Start with a free AI scan to generate AEO, GEO (local) and SEO scores."}
-          </p>
-        )}
+        {!scans.length && <p className="text-muted-foreground">{t("noScansYet")}</p>}
         {scans.map((scan) => (
           <div
             key={scan.id}
@@ -143,7 +124,7 @@ export function SeoScansPanel({
                   size="icon"
                   className="h-8 w-8 text-muted-foreground hover:bg-destructive/10 hover:text-destructive"
                   disabled={deletingAll || pendingId === scan.id}
-                  aria-label={isNl ? "Scan verwijderen" : "Delete scan"}
+                  aria-label={t("deleteScan")}
                   onClick={() => void deleteOne(scan.id)}
                 >
                   <X className="h-4 w-4" />

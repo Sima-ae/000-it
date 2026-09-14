@@ -1,0 +1,1 @@
+Ödənişli sessiya razılaşdırılıbsa, ödəniş linkinə üstünlük verin.

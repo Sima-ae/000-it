@@ -1,0 +1,1 @@
+Usuwanie złośliwego oprogramowania dla niestandardowych witryn PHP, HTML i Next.js — niezależnie od pakietów złośliwego oprogramowania WordPress.

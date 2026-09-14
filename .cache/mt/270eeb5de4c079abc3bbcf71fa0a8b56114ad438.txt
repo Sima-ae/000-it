@@ -1,0 +1,1 @@
+Válasszon tervet a webhelyek száma, a szükséges tárhely és az e-mail-használat alapján. Ezután csatlakoztassa a domaint, állítsa be webhelyét vagy készítőjét, és konfigurálja a postafiókokat. A TripleZero iT segíthet, ha támogatásra van szüksége a beállításhoz.

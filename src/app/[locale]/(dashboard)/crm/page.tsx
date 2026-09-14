@@ -8,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { StaffTodoPanel } from "@/components/chat/LiveChatWidget";
+import { localizedHref } from "@/i18n/pathnames";
 
 type Overview = {
   view: "staff" | "client";
@@ -38,6 +39,7 @@ type Overview = {
 
 export default function CrmHomePage() {
   const t = useTranslations("crm");
+  const td = useTranslations("dashboard");
   const locale = useLocale();
   const { data, isLoading, isError, refetch, isFetching } = useQuery({
     queryKey: ["crm-overview"],
@@ -62,13 +64,9 @@ export default function CrmHomePage() {
     return (
       <CrmShell title={t("overview")}>
         <div className="space-y-3 rounded-2xl border border-border bg-card/60 p-5">
-          <p className="text-sm text-muted-foreground">
-            {locale === "nl"
-              ? "CRM kon niet worden geladen. Controleer de databaseverbinding en probeer opnieuw."
-              : "CRM could not be loaded. Check the database connection and try again."}
-          </p>
+          <p className="text-sm text-muted-foreground">{td("crmLoadFailed")}</p>
           <Button onClick={() => void refetch()} disabled={isFetching}>
-            {isFetching ? "…" : locale === "nl" ? "Opnieuw proberen" : "Retry"}
+            {isFetching ? "…" : td("retry")}
           </Button>
         </div>
       </CrmShell>
@@ -102,13 +100,13 @@ export default function CrmHomePage() {
       }
       actions={
         <Button asChild>
-          <SoftLink href={`/${locale}/crm/tickets`}>{t("openTicket")}</SoftLink>
+          <SoftLink href={localizedHref(locale, "/crm/tickets")}>{t("openTicket")}</SoftLink>
         </Button>
       }
     >
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
         {stats.map((stat) => (
-          <SoftLink key={stat.href + stat.label} href={`/${locale}${stat.href}`}>
+          <SoftLink key={stat.href + stat.label} href={localizedHref(locale, stat.href)}>
             <Card className="h-full transition hover:border-primary/40">
               <CardHeader className="pb-2">
                 <CardTitle className="text-sm font-medium text-muted-foreground">
@@ -132,7 +130,7 @@ export default function CrmHomePage() {
             {data.recentTickets.map((ticket) => (
               <SoftLink
                 key={ticket.id}
-                href={`/${locale}/crm/tickets`}
+                href={localizedHref(locale, "/crm/tickets")}
                 className="flex items-center justify-between rounded-xl border border-border px-3 py-2 transition hover:border-primary/40"
               >
                 <div className="min-w-0">
@@ -160,7 +158,7 @@ export default function CrmHomePage() {
             <CardContent>
               <p className="text-sm text-muted-foreground">{t("clientMessagesHint")}</p>
               <Button asChild className="mt-4" variant="outline">
-                <SoftLink href={`/${locale}/crm/messages`}>{t("messages")}</SoftLink>
+                <SoftLink href={localizedHref(locale, "/crm/messages")}>{t("messages")}</SoftLink>
               </Button>
             </CardContent>
           </Card>

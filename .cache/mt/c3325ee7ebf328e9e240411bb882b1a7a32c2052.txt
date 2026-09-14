@@ -1,0 +1,1 @@
+Un cookie est un petit fichier simple envoyé avec les pages de ce site Web et stocké par votre navigateur sur le disque dur de votre ordinateur ou d'un autre appareil. Les informations qui y sont stockées pourront être restituées à nos serveurs ou aux serveurs des tiers concernés lors d'une visite ultérieure.

@@ -1,0 +1,5 @@
+VPS Hosting Basic je pogodan za programere, male aplikacije i web stranice kojima je potrebna veća kontrola i predvidljivi resursi nego što pruža dijeljeni hosting.
+
+Sa 2 CPU jezgra, 2 GB RAM-a, 40 GB SSD RAID 10 skladištenja i 1000 GB propusnog opsega, dobijate solidan virtuelni server za mala do umerena radna opterećenja.
+
+TripleZero iT vam daje pouzdanu infrastrukturnu osnovu, tako da se možete fokusirati na svoju aplikaciju, web stranicu ili razvojno okruženje. Povećajte kada potražnja raste.

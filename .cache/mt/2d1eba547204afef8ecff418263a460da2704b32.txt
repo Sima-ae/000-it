@@ -1,0 +1,1 @@
+1.7 Tilastojen kokoaminen ja analysointi verkkosivuston parantamiseksi.

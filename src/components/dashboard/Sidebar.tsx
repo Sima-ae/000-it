@@ -23,6 +23,7 @@ import {
   CheckSquare,
   Building2,
 } from "lucide-react";
+import { localizedHref } from "@/i18n/pathnames";
 import { ThemeToggle } from "@/components/shared/ThemeToggle";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
@@ -86,13 +87,13 @@ export function Sidebar({ user }: { user: SidebarUser }) {
 
         <nav className="flex gap-1 overflow-x-auto md:min-h-0 md:flex-1 md:flex-col md:overflow-y-auto md:overflow-x-hidden md:pr-1">
           {items.map((item) => {
-            const href = `/${locale}${item.href}`;
+            const href = localizedHref(locale, item.href);
             // Prefer exact/longest match so /crm does not stay active on /crm/tickets
             const longerMatch = items.some(
               (other) =>
                 other.href !== item.href &&
                 other.href.startsWith(`${item.href}/`) &&
-                (pathname === `/${locale}${other.href}` ||
+                (pathname === localizedHref(locale, other.href) ||
                   pathname.startsWith(`/${locale}${other.href}/`)),
             );
             const active =
@@ -118,7 +119,7 @@ export function Sidebar({ user }: { user: SidebarUser }) {
         <Button
           variant="ghost"
           className="mt-3 justify-start gap-2 text-muted-foreground"
-          onClick={() => signOut({ callbackUrl: `/${locale}/login` })}
+          onClick={() => signOut({ callbackUrl: localizedHref(locale, "/login") })}
         >
           <LogOut className="h-4 w-4" />
           {t("logout")}

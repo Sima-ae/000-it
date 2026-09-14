@@ -1,0 +1,1 @@
+Válassza ki a kívánt dátumot és időpontot (hétköznap, közép-európai idő szerint):

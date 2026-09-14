@@ -1,10 +1,15 @@
 import importedPages from "@/content/fixweb/imported-pages.json";
 import importedProducts from "@/content/fixweb/imported-products.json";
 import localImages from "@/content/fixweb/local-images.json";
+import {
+  catalogServiceSummary,
+  catalogUiLabel,
+} from "@/content/fixweb/catalog-title";
 import { getCatalogItem, type ServiceNavItem } from "@/content/fixweb/catalog";
 import { getPageI18n } from "@/content/fixweb/page-i18n";
 import { getProductI18n } from "@/content/fixweb/product-i18n";
 import { getCustomServiceContent } from "@/content/services/custom";
+import { hydrateLocalizedCopy } from "@/lib/localized-copy";
 
 type ImportedPage = {
   title: string;
@@ -273,7 +278,9 @@ function buildServiceContent(slug: string, locale: string) {
       subtitle: featureSubtitle,
       price: product.price,
       currency: product.currency,
-      priceSuffix: isHostingProduct ? (isNl ? "/ maand" : "/ month") : null,
+      priceSuffix: isHostingProduct
+        ? catalogUiLabel("perMonth", locale, locale === "nl" ? "/ maand" : "/ month")
+        : null,
       image: product.localImage || pageImageFallback[slug] || null,
       blocks: product.blocks,
       kind: "product" as const,
@@ -305,7 +312,12 @@ function buildServiceContent(slug: string, locale: string) {
     return {
       meta,
       title: isNl ? meta.titleNl : meta.title,
-      subtitle: (isNl ? meta.summaryNl : meta.summary) || "",
+      subtitle:
+        catalogServiceSummary(
+          slug,
+          locale,
+          (isNl ? meta.summaryNl : meta.summary) || "",
+        ) || "",
       price: null as number | null,
       currency: null as string | null,
       image: pageImageFallback[slug] || null,
@@ -316,7 +328,12 @@ function buildServiceContent(slug: string, locale: string) {
     };
   }
 
-  const catalogSubtitle = (isNl ? meta.summaryNl : meta.summary) || meta.summary || "";
+  const catalogSubtitle =
+    catalogServiceSummary(
+      slug,
+      locale,
+      (isNl ? meta.summaryNl : meta.summary) || meta.summary || "",
+    ) || "";
   return {
     meta,
     title: isNl ? meta.titleNl || page.title : page.title || meta.title,
@@ -331,11 +348,16 @@ function buildServiceContent(slug: string, locale: string) {
   };
 }
 
-export function getServiceContent(slug: string, locale: string = "nl") {
+export async function getServiceContent(slug: string, locale: string = "nl") {
+  await hydrateLocalizedCopy(locale);
   const key = `${locale}:${slug}`;
-  if (serviceContentCache.has(key)) return serviceContentCache.get(key)!;
+  if (locale === "nl" || locale === "en") {
+    if (serviceContentCache.has(key)) return serviceContentCache.get(key)!;
+  }
   const content = buildServiceContent(slug, locale);
-  serviceContentCache.set(key, content);
+  if (locale === "nl" || locale === "en") {
+    serviceContentCache.set(key, content);
+  }
   return content;
 }
 
@@ -367,7 +389,13 @@ function buildServiceCardMeta(slug: string, locale: string) {
     const subtitle =
       features.length > 0
         ? features.slice(0, 4).join(" · ")
-        : shortDescription.split("\n")[0] || (isNl ? meta.summaryNl : meta.summary) || "";
+        : shortDescription.split("\n")[0] ||
+          catalogServiceSummary(
+            slug,
+            locale,
+            (isNl ? meta.summaryNl : meta.summary) || "",
+          ) ||
+          "";
     return {
       title: isNl ? meta.titleNl || name : meta.title || name,
       subtitle,
@@ -389,7 +417,12 @@ function buildServiceCardMeta(slug: string, locale: string) {
   }
 
   const page = pages[slug];
-  const catalogSubtitle = (isNl ? meta.summaryNl : meta.summary) || meta.summary || "";
+  const catalogSubtitle =
+    catalogServiceSummary(
+      slug,
+      locale,
+      (isNl ? meta.summaryNl : meta.summary) || meta.summary || "",
+    ) || "";
   const subtitle = page ? firstRawSnippet(page.rawText, catalogSubtitle) : catalogSubtitle;
   return {
     title: isNl ? meta.titleNl : meta.title,
@@ -401,11 +434,16 @@ function buildServiceCardMeta(slug: string, locale: string) {
 }
 
 /** Lightweight card data — skips full block parsing for listings. */
-export function getServiceCardMeta(slug: string, locale: string = "nl") {
+export async function getServiceCardMeta(slug: string, locale: string = "nl") {
+  await hydrateLocalizedCopy(locale);
   const key = `${locale}:${slug}`;
-  if (serviceCardCache.has(key)) return serviceCardCache.get(key)!;
+  if (locale === "nl" || locale === "en") {
+    if (serviceCardCache.has(key)) return serviceCardCache.get(key)!;
+  }
   const meta = buildServiceCardMeta(slug, locale);
-  serviceCardCache.set(key, meta);
+  if (locale === "nl" || locale === "en") {
+    serviceCardCache.set(key, meta);
+  }
   return meta;
 }
 

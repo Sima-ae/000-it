@@ -1,0 +1,1 @@
+2 saniyədən az yükləmə müddəti və Core Web Vitals optimallaşdırılıb.

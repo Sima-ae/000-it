@@ -1,0 +1,1 @@
+Almacenar artículos en el carrito de compras.

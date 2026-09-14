@@ -1,0 +1,1 @@
+Įkėlėte slapukų politiką be javascript palaikymo. AMP galite naudoti puslapio apačioje esantį sutikimo tvarkymo mygtuką.

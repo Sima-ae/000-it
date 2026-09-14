@@ -1,0 +1,1 @@
+Usamos WooCommerce para la gestión de la tienda web. Leer más

@@ -1,0 +1,1 @@
+A fiók megszüntetése után nem próbál meg új fiókot regisztrálni az engedélyünk nélkül.

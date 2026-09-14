@@ -1,0 +1,5 @@
+Suojaa WordPress-verkkosivustosi haitallisilta uhilta TripleZero iT -haittaohjelmien poistamisella. Infektiot vahingoittavat turvallisuutta, mainetta ja käytettävyyttä – keskitymme havaitsemiseen, perusteelliseen puhdistamiseen ja palautumiseen.
+
+Tarkistamme tiedostot, tietokannat ja haavoittuvat komponentit, poistamme haittaohjelmat ja ei-toivotut uudelleenohjaukset sekä korjaamme vaarantuneet osat tarvittaessa. Varmuuskopiot otetaan ennen ja jälkeen siivouksen.
+
+Saat myös ennaltaehkäisyohjeita, jotka vähentävät tartunnan todennäköisyyttä, jotta voit palata yrityksesi johtamiseen luottavaisin mielin.

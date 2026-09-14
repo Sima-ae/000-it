@@ -1,0 +1,1 @@
+Geografinės paieškos sistemos optimizavimas žemėlapiams, vietiniams paketams ir regioninei paieškai.

@@ -3,6 +3,7 @@ import { prisma } from "@/lib/prisma";
 import { cleanSourceSummary } from "@/lib/auto-news/generate";
 import {
   buildNewsTranslationsFromEnglish,
+  newsCopyLooksComplete,
   nlFromTranslations,
   parseNewsTranslations,
   type NewsTranslationsMap,
@@ -288,6 +289,7 @@ async function ensureTranslationsForPost(input: {
     translations = await buildNewsTranslationsFromEnglish(en, {
       existing: translations,
       delayMs: 300,
+      locales: ["nl"],
     });
   }
 
@@ -351,34 +353,53 @@ export async function createNewsPost(
     },
   });
 
-  // Expand to all other languages after insert (best-effort).
+  // Expand to all other languages after insert (best-effort, resumed by cron).
   if (data.autoTranslate !== false) {
-    try {
-      const full = await buildNewsTranslationsFromEnglish(en, {
-        existing: translations,
-        delayMs: 300,
-      });
-      const nlFull = nlFromTranslations(full, en);
-      const updated = await prisma.newsPost.update({
-        where: { id: row.id },
-        data: {
-          translations: full,
-          titleNl: nlFull.title,
-          excerptNl: nlFull.excerpt,
-          descriptionNl: nlFull.description,
-        },
-      });
-      return mapNews(updated);
-    } catch (error) {
+    void completeNewsTranslations(row.id).catch((error) =>
       console.warn(
         "[news] multi-locale fill after create failed",
         row.id,
         error instanceof Error ? error.message : error,
-      );
-    }
+      ),
+    );
   }
 
   return mapNews(row);
+}
+
+/** Fill every missing locale for a news post from the English source. */
+export async function completeNewsTranslations(
+  id: string,
+  opts?: { force?: boolean; deadlineMs?: number },
+) {
+  const row = await prisma.newsPost.findUnique({ where: { id } });
+  if (!row) return null;
+
+  const en = {
+    title: row.title,
+    excerpt: row.excerpt,
+    description: row.description,
+  };
+  const existing = parseNewsTranslations(row.translations);
+  const preserveNl = newsCopyLooksComplete(existing.nl, en, "nl");
+  const full = await buildNewsTranslationsFromEnglish(en, {
+    existing,
+    delayMs: 300,
+    force: opts?.force,
+    deadlineMs: opts?.deadlineMs,
+    preserveLocales: preserveNl ? ["nl"] : [],
+  });
+  const nlFull = nlFromTranslations(full, en);
+  const updated = await prisma.newsPost.update({
+    where: { id },
+    data: {
+      translations: full,
+      titleNl: nlFull.title,
+      excerptNl: nlFull.excerpt,
+      descriptionNl: nlFull.description,
+    },
+  });
+  return mapNews(updated);
 }
 
 export async function updateNewsPost(
@@ -403,7 +424,7 @@ export async function updateNewsPost(
     translations:
       (data.translations as NewsTranslationsMap | undefined) ||
       parseNewsTranslations(existing.translations),
-    // Edits only re-translate when explicitly requested (avoids slow/429 saves).
+    // Edits re-translate every locale when explicitly requested.
     autoTranslate: data.autoTranslate === true,
   });
 
@@ -427,6 +448,17 @@ export async function updateNewsPost(
       createdById: data.createdById === undefined ? undefined : data.createdById,
     },
   });
+
+  if (data.autoTranslate === true) {
+    void completeNewsTranslations(id, { force: true }).catch((error) =>
+      console.warn(
+        "[news] multi-locale fill after update failed",
+        id,
+        error instanceof Error ? error.message : error,
+      ),
+    );
+  }
+
   return mapNews(row);
 }
 

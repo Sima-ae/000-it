@@ -1,0 +1,1 @@
+Reserverad kapacitet ger krävande webbplatser och applikationer mer utrymme. Din miljö kan lättare anpassa sig till toppar, ny funktionalitet och förändrade prestandabehov utan omedelbar plattformsflyttning.

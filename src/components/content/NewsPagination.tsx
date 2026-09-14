@@ -1,4 +1,5 @@
 import { SoftLink } from "@/components/shared/SoftLink";
+import { localizedHref } from "@/i18n/pathnames";
 
 function buildPageList(current: number, total: number): Array<number | "ellipsis"> {
   if (total <= 7) {
@@ -48,7 +49,7 @@ export function NewsPagination({
   if (totalPages <= 1) return null;
 
   const hrefFor = (n: number) =>
-    n <= 1 ? `/${locale}/nieuws` : `/${locale}/nieuws?page=${n}`;
+    n <= 1 ? localizedHref(locale, "/nieuws") : `${localizedHref(locale, "/nieuws")}?page=${n}`;
 
   const pages = buildPageList(page, totalPages);
   const prev = page > 1 ? page - 1 : null;

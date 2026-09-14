@@ -1,0 +1,1 @@
+Rýchlejšie časy načítania, Core Web Vitals a ukladanie do vyrovnávacej pamäte pre vlastné zásobníky mimo WordPress.

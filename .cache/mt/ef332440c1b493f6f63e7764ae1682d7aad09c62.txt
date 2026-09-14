@@ -1,0 +1,5 @@
+Beskytt WordPress-nettstedet ditt og beveg deg trygt ved å bruke TripleZero iT-sikkerhetskopiering og vertsmigrering. Enten du bytter verter, oppgraderer planen din eller bare trenger en pålitelig sikkerhetskopi, holder vi overgangen rolig og kontrollert.
+
+Vi lager en fullstendig sikkerhetskopi av filer, database, temaer, plugins og media. Deretter migrerer vi nettstedet ditt, verifiserer kompatibilitet og setter opp nøkkelvertskonfigurasjon slik at alt fungerer i det nye miljøet.
+
+Etter levering mottar du 7 dager med gratis støtte for spørsmål om sikkerhetskopiering, gjenoppretting eller migrering. Siden din forblir intakt, tilgjengelig og klar til å vokse.

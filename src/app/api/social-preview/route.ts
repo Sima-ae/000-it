@@ -10,8 +10,10 @@ import {
   localePath,
   siteOrigin,
 } from "@/lib/seo";
-import { getStaticPageSeo } from "@/content/seo/pages";
+import { getStaticPageSeo, getStaticPageSeoCopy } from "@/content/seo/pages";
 import { getSeoCity } from "@/content/seo/cities";
+import { hydrateLocalizedCopy } from "@/lib/localized-copy";
+import { toInternalPath } from "@/i18n/pathnames";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -38,16 +40,18 @@ function parseLocalePath(rawPath: string): { locale: string; path: string } {
   return { locale: routing.defaultLocale, path: clean === "/" ? "/" : clean };
 }
 
-function resolvePreview(rawPath: string) {
-  const { locale, path } = parseLocalePath(rawPath);
+async function resolvePreview(rawPath: string) {
+  const parsed = parseLocalePath(rawPath);
+  const locale = parsed.locale;
+  const path = toInternalPath(locale, parsed.path);
   const isNl = locale === "nl";
-  const origin = siteOrigin();
+  await hydrateLocalizedCopy(locale);
 
   // Service detail: /diensten/:slug
   const serviceMatch = path.match(/^\/diensten\/([^/]+)\/?$/);
   if (serviceMatch) {
     const slug = serviceMatch[1];
-    const content = getServiceContent(slug, locale);
+    const content = await getServiceContent(slug, locale);
     const meta = getCatalogItem(slug);
     const title =
       content?.title ||
@@ -90,10 +94,11 @@ function resolvePreview(rawPath: string) {
 
   const page = getStaticPageSeo(path === "/" ? "/" : path);
   if (page) {
+    const copy = getStaticPageSeoCopy(page.path, locale);
     return {
       locale,
-      title: isNl ? page.title.nl : page.title.en,
-      description: isNl ? page.description.nl : page.description.en,
+      title: copy?.title || (isNl ? page.title.nl : page.title.en),
+      description: copy?.description || (isNl ? page.description.nl : page.description.en),
       url: absoluteUrl(localePath(locale, page.path === "/" ? "" : page.path)),
       image: defaultOgImage(page.image || SITE_SEO.defaultOgImage),
     };
@@ -115,7 +120,7 @@ function resolvePreview(rawPath: string) {
  */
 export async function GET(request: NextRequest) {
   const rawPath = request.nextUrl.searchParams.get("u") || "/";
-  const preview = resolvePreview(rawPath);
+  const preview = await resolvePreview(rawPath);
   const title = escAttr(preview.title);
   const description = escAttr(preview.description);
   const url = escAttr(preview.url);

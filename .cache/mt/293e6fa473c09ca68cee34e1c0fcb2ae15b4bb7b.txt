@@ -1,0 +1,1 @@
+Otimização do mecanismo de resposta para conteúdo citável e pronto para resposta.

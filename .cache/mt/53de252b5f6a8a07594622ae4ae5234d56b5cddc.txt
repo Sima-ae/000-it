@@ -1,0 +1,1 @@
+Kenkėjiškų programų valymas tinkintose PHP, HTML ir Next.js svetainėse – atskirai nuo „WordPress“ kenkėjiškų programų paketų.

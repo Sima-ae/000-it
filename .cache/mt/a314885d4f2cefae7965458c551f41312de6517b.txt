@@ -1,0 +1,3 @@
+Oprava chýb a chýb WordPress pre výkon, bezpečnosť, aktualizácie a stabilitu.
+
+Riešime bežné problémy a uplatňujeme osvedčené postupy, aby vaša stránka WordPress fungovala pre vlastníkov, vývojárov a návštevníkov spoľahlivo.

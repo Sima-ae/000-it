@@ -1,0 +1,1 @@
+Regisztráció után tudunk segíteni a DNS beállításokban, a tárhely csatlakozásban és az email beállításban. Domainje tehát nem csak regisztrálva van, hanem megfelelően működik a webhelye és az üzleti kommunikáció érdekében.

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 
 const BASE_BARS = [42, 68, 55, 82, 61, 74, 88, 57];
@@ -26,8 +26,7 @@ function nextCpuHeights(current: number[]) {
 
 export function HeroVisual() {
   const reduce = useReducedMotion();
-  const locale = useLocale();
-  const isNl = locale === "nl";
+  const t = useTranslations("hero");
   const [heights, setHeights] = useState(BASE_BARS);
 
   useEffect(() => {
@@ -66,16 +65,14 @@ export function HeroVisual() {
         <div className="mb-5 flex items-center justify-between gap-3">
           <div>
             <p className="font-display text-lg font-semibold tracking-tight text-foreground">
-              AI Ready?
+              {t("aiReady")}
             </p>
-            <p className="text-sm text-muted-foreground">
-              {isNl ? "Live growth signalen" : "Live growth signals"}
-            </p>
+            <p className="text-sm text-muted-foreground">{t("liveSignals")}</p>
           </div>
           <div className="rounded-2xl border border-border/70 bg-transparent px-3 py-2 text-right">
             <p className="font-display text-2xl font-bold text-accent">{totalScore}</p>
             <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-              Score
+              {t("score")}
             </p>
           </div>
         </div>
@@ -115,11 +112,11 @@ export function HeroVisual() {
         <div className="mt-4 flex items-center justify-between text-xs font-medium text-muted-foreground">
           <span className="inline-flex items-center gap-2 text-foreground">
             <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-primary" />
-            Agents active
+            {t("agentsActive")}
           </span>
           <span className="inline-flex items-center gap-2 text-foreground">
             <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-accent" />
-            Servers online
+            {t("serversOnline")}
           </span>
         </div>
       </motion.div>

@@ -1,0 +1,6 @@
+Pozdrav TripleZero iT,
+
+Želio bih saznati više o {service} za naš {hint}.
+
+URL web stranice:
+Cilj (npr. chatbot, pomoćnik proizvoda, AI sadržaja, prilagođeno):

@@ -1,0 +1,1 @@
+Željena opcija za isti dan ili sljedeći poslovni dan ako je dostupna.

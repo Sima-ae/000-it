@@ -1,0 +1,4 @@
+– 2 cœurs de processeur
+– 2 Go de RAM
+– 40 Go SSD RAID 10
+– 1000 Go de bande passante

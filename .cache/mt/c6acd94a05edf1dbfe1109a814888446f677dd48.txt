@@ -1,0 +1,1 @@
+Un cookie este un fișier simplu și mic care este trimis împreună cu paginile acestui site web și stocat de browserul dumneavoastră pe hard disk-ul computerului dumneavoastră sau al altui dispozitiv. Informațiile stocate acolo pot fi returnate serverelor noastre sau serverelor terților relevanți în timpul unei vizite ulterioare.

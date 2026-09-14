@@ -4,6 +4,7 @@ import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { useCartStore } from "@/lib/shop/cart-store";
+import { localizedHref } from "@/i18n/pathnames";
 
 export function AddToCartButton({
   productId,
@@ -21,7 +22,7 @@ export function AddToCartButton({
       className="mt-6 rounded-2xl"
       onClick={() => {
         addItem(productId, 1);
-        router.push(`/${locale}/shop/cart`);
+        router.push(localizedHref(locale, "/shop/cart"));
       }}
     >
       {label}

@@ -1,0 +1,1 @@
+Verkkojäljitelmä (tai pikselitunniste) on pieni, näkymätön teksti- tai kuvapala verkkosivustolla, jota käytetään verkkosivuston liikenteen seurantaan. Tätä varten tallennetaan erilaisia ​​tietoja sinusta verkkojäljitelmien avulla.

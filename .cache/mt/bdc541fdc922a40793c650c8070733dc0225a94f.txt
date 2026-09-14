@@ -1,0 +1,1 @@
+Limpieza de malware para sitios PHP, HTML y Next.js personalizados, independiente de los paquetes de malware de WordPress.

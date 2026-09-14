@@ -7,13 +7,19 @@ import { KennisbankArticleList } from "@/components/kennisbank/KennisbankArticle
 import { KennisbankIllustration } from "@/components/kennisbank/KennisbankIllustration";
 import { getCategoryBySlug, listArticles } from "@/lib/kennisbank";
 import { absoluteUrl, hreflangAlternates, localePath } from "@/lib/seo";
+import { localizedHref } from "@/i18n/pathnames";
+import { resolveKennisbankParams } from "@/lib/resolve-entity-param";
+import { canonicalEntityKey } from "@/lib/entity-slug-cache";
+import { hydrateEntitySlugs } from "@/lib/entity-slugs";
 
 export const dynamic = "force-dynamic";
 
 type Params = { params: Promise<{ locale: string; category: string }> };
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
-  const { locale, category } = await params;
+  const { locale, category: rawCategory } = await params;
+  await hydrateEntitySlugs(locale);
+  const category = canonicalEntityKey(locale, "kb_category", rawCategory);
   const t = await getTranslations({ locale, namespace: "kennisbank" });
   const cat = await getCategoryBySlug(category, { locale }).catch(() => null);
   if (!cat) return {};
@@ -34,8 +40,12 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 }
 
 export default async function KennisbankCategoryPage({ params }: Params) {
-  const { locale, category } = await params;
+  const { locale, category: rawCategory } = await params;
   setRequestLocale(locale);
+  const { categoryKey: category } = await resolveKennisbankParams({
+    locale,
+    categoryParam: rawCategory,
+  });
   const t = await getTranslations({ locale, namespace: "kennisbank" });
   const cat = await getCategoryBySlug(category, { locale });
   if (!cat) notFound();
@@ -45,13 +55,13 @@ export default async function KennisbankCategoryPage({ params }: Params) {
   return (
     <div className="relative overflow-hidden">
       <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-[22rem] bg-linear-to-b from-primary/10 via-transparent to-transparent"
+        className="pointer-events-none absolute inset-x-0 top-0 h-88 bg-linear-to-b from-primary/10 via-transparent to-transparent"
         aria-hidden
       />
       <div className="relative mx-auto max-w-5xl px-4 py-12 md:px-6 md:py-16">
         <nav className="mb-8 text-sm text-muted-foreground">
           <SoftLink
-            href={`/${locale}/kennisbank`}
+            href={localizedHref(locale, "/kennisbank")}
             className="transition hover:text-foreground"
           >
             {t("breadcrumb")}

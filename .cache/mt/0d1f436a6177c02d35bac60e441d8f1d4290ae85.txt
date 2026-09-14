@@ -1,0 +1,1 @@
+Krótszy czas ładowania, podstawowe wskaźniki internetowe i buforowanie niestandardowych stosów poza WordPress.

@@ -1,0 +1,1 @@
+A betöltési idő kevesebb, mint 2 másodperc, és a Core Web Vitals optimalizálva van.

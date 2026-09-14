@@ -1,0 +1,1 @@
+Ideális, ha el kell fogadnia a csúcsokat, vagy ki kell szerveznie a folyamatban lévő adatmunkát a belső kapacitás túlterhelése nélkül.

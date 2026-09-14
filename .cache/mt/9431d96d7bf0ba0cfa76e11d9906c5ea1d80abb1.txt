@@ -1,0 +1,1 @@
+Bezpečné zálohovanie a migrácia hostiteľov bez výpadkov.

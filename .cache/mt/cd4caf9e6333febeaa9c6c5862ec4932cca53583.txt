@@ -1,0 +1,1 @@
+Otimização de Mecanismos de Busca Geográfica para Mapas, pacotes locais e busca regional.

@@ -1,0 +1,5 @@
+A WordPress Hosting Pro ambiciózus szervezetek, nagy forgalmú webhelyek és üzleti csapatok számára készült, akik maximális WordPress kapacitást és folyamatosságot várnak el.
+
+100 GB SSD tárhelyet kap, havonta körülbelül 500 000 látogató számára, valamint 2,0x több CPU-t és RAM-ot. A 99,9%-os rendelkezésre állási garancia, az ingyenes CDN és SSL, a biztonsági mentések, a 24 órás támogatás és a Brizy Site Builder támogatja a professzionális online működést.
+
+A TripleZero iT robusztus tárhelykörnyezetet biztosít, amely a sebességre, a rendelkezésre állásra és a méretezhetőségre összpontosít. WordPress-webhelye még nagyobb terhelés mellett is megbízhatóan teljesíthet.

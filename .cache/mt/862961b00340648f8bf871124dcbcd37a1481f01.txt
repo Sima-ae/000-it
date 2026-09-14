@@ -1,0 +1,1 @@
+Bezpečnostné opatrenia hardvéru, ktorý obsahuje alebo spracúva osobné údaje.

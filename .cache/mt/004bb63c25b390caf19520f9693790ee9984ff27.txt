@@ -1,0 +1,1 @@
+Optymalizacja silnika odpowiedzi pod kątem treści, które można cytować i gotowych odpowiedzieć.

@@ -1,0 +1,1 @@
+Individualizuotos svetainės ir nuolatinis PHP, HTML, CSS, JavaScript ir Next.js palaikymas, o ne „WordPress“.

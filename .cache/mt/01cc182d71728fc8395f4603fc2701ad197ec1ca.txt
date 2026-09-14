@@ -1,0 +1,1 @@
+WordPress için özelleştirilmiş barındırma: başlangıç ​​sitelerinden yüksek trafiğe kadar hızlı SSD depolama, CDN, SSL, yedeklemeler ve destek.

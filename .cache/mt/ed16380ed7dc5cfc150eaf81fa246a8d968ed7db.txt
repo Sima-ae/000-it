@@ -1,0 +1,4 @@
+– 2 core della CPU
+– 2 GB di RAM
+– SSD RAID 10 da 40GB
+– Larghezza di banda di 1000 GB

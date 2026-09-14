@@ -1,0 +1,1 @@
+Proporcionar la prevención de páginas almacenadas en caché.

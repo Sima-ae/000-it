@@ -1,0 +1,5 @@
+Der Basis-Support richtet sich an Unternehmen mit einer WordPress-Website, die eine zuverlässige technische Grundlage wünschen, ohne jedes Problem selbst lösen zu müssen.
+
+Wir überwachen Ihre Seite rund um die Uhr, erstellen tägliche Backups und halten WordPress und Plugins aktuell. Wir beheben außerdem Fehler, entfernen Malware und wenden praktische Sicherheitsmaßnahmen an, um die Verfügbarkeit und den Schutz Ihrer Website zu gewährleisten.
+
+TripleZero iT geht sorgfältig mit Vorfällen um, überprüft den Standort nach der Wiederherstellung und hilft, zukünftige Risiken zu reduzieren. Sie können sich auf Ihr Geschäft konzentrieren, während wir für die technische Kontinuität sorgen.

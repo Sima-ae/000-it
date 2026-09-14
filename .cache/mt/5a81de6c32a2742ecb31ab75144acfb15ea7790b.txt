@@ -1,0 +1,5 @@
+WordPress güclüdür, lakin səhv mesajları, plagin münaqişələri və ya mövzu problemləri saytınızı tez bir zamanda poza bilər. TripleZero iT funksionallığı bərpa etməyə və dayanma müddətini məhdudlaşdırmağa açıq şəkildə diqqət yetirməklə WordPress səhvlərini diaqnoz edir və düzəldir.
+
+Ağ ekranlardan və HTTP səhvlərindən tutmuş verilənlər bazası problemlərinə qədər kök səbəbləri araşdırırıq, sonra davamlı düzəliş tətbiq edirik. Giriş, formalar və yoxlama (müvafiq olduqda) kimi kritik axınlar təhvil verilməzdən əvvəl yoxlanılır.
+
+Siz təkrarlanmanı azaltmaq üçün praktiki tövsiyələr alırsınız, beləliklə, onlayn mövcudluğunuz sabit və peşəkar qalır.

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -15,6 +15,7 @@ import {
   newsArticlePath,
   organizationJsonLd,
 } from "@/lib/seo";
+import { localizedHref } from "@/i18n/pathnames";
 
 export const dynamic = "force-dynamic";
 
@@ -25,7 +26,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale, slug } = await params;
   const post = await getPublishedNewsPost(slug, locale);
-  if (!post) return { title: locale === "nl" ? "Nieuws" : "News", robots: { index: false } };
+  if (!post) {
+    const t = await getTranslations({ locale, namespace: "news" });
+    return { title: t("title"), robots: { index: false } };
+  }
   return buildNewsArticleMetadata(post, locale);
 }
 
@@ -36,7 +40,7 @@ export default async function NewsArticlePage({
 }) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
-  const isNl = locale === "nl";
+  const t = await getTranslations("news");
   const post = await getPublishedNewsPost(slug, locale);
   if (!post) notFound();
 
@@ -45,25 +49,22 @@ export default async function NewsArticlePage({
     .map((p) => p.trim())
     .filter(Boolean);
 
-  const newsLabel = isNl ? "Nieuws" : "News";
-  const backLabel = isNl ? "Terug naar nieuws" : "Back to news";
-
   return (
     <article className="mx-auto max-w-3xl px-4 py-14 md:px-6 md:py-20">
       <JsonLd data={organizationJsonLd()} />
       <JsonLd data={newsArticleJsonLd(post, locale)} />
       <JsonLd
         data={breadcrumbJsonLd([
-          { name: "TripleZero iT", path: `/${locale}` },
-          { name: newsLabel, path: `/${locale}/nieuws` },
+          { name: "TripleZero iT", path: localizedHref(locale, "/") },
+          { name: t("title"), path: localizedHref(locale, "/nieuws") },
           { name: post.title, path: newsArticlePath(locale, post.id) },
         ])}
       />
 
       <Button asChild variant="ghost" size="sm" className="mb-8 -ml-2">
-        <SoftLink href={`/${locale}/nieuws`}>
+        <SoftLink href={localizedHref(locale, "/nieuws")}>
           <ArrowLeft className="mr-2 h-4 w-4" />
-          {backLabel}
+          {t("back")}
         </SoftLink>
       </Button>
 
@@ -117,7 +118,7 @@ export default async function NewsArticlePage({
           <Button asChild>
             <a href={post.projectUrl} target="_blank" rel="noopener noreferrer">
               <ExternalLink className="mr-2 h-4 w-4" />
-              {isNl ? "Bekijk bron" : "View source"}
+              {t("viewSource")}
             </a>
           </Button>
         </div>

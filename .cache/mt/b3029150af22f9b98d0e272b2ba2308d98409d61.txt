@@ -1,0 +1,5 @@
+Protégez votre site Web WordPress avec les services de sécurité informatique TripleZero. Nous protégeons votre site contre les piratages, les logiciels malveillants et les abus grâce à une approche pratique et soigneusement contrôlée.
+
+Après une sauvegarde, nous effectuons un audit de sécurité, installons Wordfence (Basic ou Premium), configurons le pare-feu et la protection contre la force brute, et configurons SSL si nécessaire. L'accès des utilisateurs et les correctifs sont revus afin que les vulnérabilités aient moins de place pour se développer.
+
+Vous bénéficiez de 7 jours d'assistance gratuite après la livraison, ce qui permet de mieux protéger vos données, votre réputation et votre continuité.

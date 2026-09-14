@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { localizedHref } from "@/i18n/pathnames";
 
 type JumpLink = {
   key: string;
@@ -73,7 +74,7 @@ export function ServicesJumpNav({
                 stuck && "bg-white shadow-sm hover:bg-white dark:bg-background dark:hover:bg-background",
               )}
             >
-              <SoftLink href={`/${locale}/diensten#${link.id}`}>{link.label}</SoftLink>
+              <SoftLink href={`${localizedHref(locale, "/diensten")}#${link.id}`}>{link.label}</SoftLink>
             </Button>
           ))}
         </div>
