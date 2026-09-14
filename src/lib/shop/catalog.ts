@@ -1,7 +1,7 @@
 import importedProducts from "@/content/fixweb/imported-products.json";
 import localImages from "@/content/fixweb/local-images.json";
 import { getProductI18n } from "@/content/fixweb/product-i18n";
-import { brandify } from "@/lib/fixweb-content";
+import { brandify } from "@/lib/brandify";
 import { eurosToCents } from "@/lib/shop/vat";
 
 export type ShopBillingPeriod = "monthly" | "yearly";

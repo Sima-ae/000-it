@@ -9,7 +9,11 @@ import { getCatalogItem, type ServiceNavItem } from "@/content/fixweb/catalog";
 import { getPageI18n } from "@/content/fixweb/page-i18n";
 import { getProductI18n } from "@/content/fixweb/product-i18n";
 import { getCustomServiceContent } from "@/content/services/custom";
+import { brandify } from "@/lib/brandify";
+import { formatEuro as formatEuroShared } from "@/lib/format-euro";
 import { hydrateLocalizedCopy } from "@/lib/localized-copy";
+
+export { brandify } from "@/lib/brandify";
 
 type ImportedPage = {
   title: string;
@@ -41,30 +45,6 @@ export function clearServiceContentCaches() {
   serviceCardCache.clear();
 }
 
-/** Strip legacy / competitor agency branding from imported content. */
-export function brandify(text: string) {
-  return text
-    .replace(/privacy@fix-web\.com/gi, "privacy@000-it.com")
-    .replace(/info@fix-web\.com/gi, "info@000-it.com")
-    .replace(/https?:\/\/(www\.)?fix-web\.com/gi, "https://000-it.com")
-    .replace(/(www\.)?fix-web\.com/gi, "000-it.com")
-    .replace(/FIX-WEB\.shop/gi, "TripleZero iT")
-    .replace(/Fix-Web\.site/gi, "TripleZero iT")
-    .replace(/FIX-WEB\.SITE/gi, "TripleZero iT")
-    .replace(/Fix[\s-]?Web/gi, "TripleZero iT")
-    .replace(/FIX[\s-]?WEB/gi, "TripleZero iT")
-    // Competitor / agency names — never present as our brand
-    .replace(/\bJust[\s-]?Host\b/g, "TripleZero iT Hosting")
-    .replace(/\bJustHost(?:ing)?\b/gi, "TripleZero iT Hosting")
-    .replace(/\bMiss[\s-]?Hack\b/gi, "TripleZero iT")
-    .replace(/\bIndigo[\s-]?Webstudio\b/gi, "TripleZero iT")
-    .replace(/\bIndigo[\s-]?Web[\s-]?Studio\b/gi, "TripleZero iT")
-    .replace(/\bWebbouwers?\b/gi, "TripleZero iT")
-    .replace(/Hosted on Namecheap Cloud/gi, "Hosted on TripleZero iT Hosting")
-    .replace(/Namecheap Cloud/gi, "TripleZero iT Hosting")
-    .replace(/\bNamecheap\b/gi, "TripleZero iT Hosting");
-}
-
 export type ContentBlock =
   | { type: "heading"; text: string }
   | { type: "paragraph"; text: string }
@@ -74,7 +54,7 @@ export type ContentBlock =
 export function stripEmailContactBlocks(blocks: ContentBlock[]): ContentBlock[] {
   return blocks.filter((block) => {
     if (block.type === "list") return true;
-    const text = block.text.trim();
+    const text = (block.text || "").trim();
     if (/info@000-it\.com/i.test(text)) return false;
     if (/^(direct contact|get in touch|neem contact|contact)$/i.test(text)) return false;
     return true;
@@ -468,8 +448,5 @@ export function getAllProducts() {
 }
 
 export function formatEuro(price: number) {
-  return new Intl.NumberFormat("nl-NL", {
-    style: "currency",
-    currency: "EUR",
-  }).format(price);
+  return formatEuroShared(price);
 }

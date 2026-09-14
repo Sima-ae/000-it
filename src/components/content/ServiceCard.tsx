@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { GlassCard } from "@/components/marketing/GlassCard";
-import { formatEuro } from "@/lib/fixweb-content";
+import { formatEuro } from "@/lib/format-euro";
 
 export function ServiceCard({
   href,

@@ -49,12 +49,16 @@ function collectStrings(obj, out = new Set()) {
   return out;
 }
 
-function applyMap(obj, map) {
-  if (typeof obj === "string") return map.get(obj) || obj;
-  if (Array.isArray(obj)) return obj.map((x) => applyMap(x, map));
+function applyMap(obj, map, keyHint = "") {
+  if (typeof obj === "string") {
+    // Never translate structural block type tokens
+    if (keyHint === "type") return obj;
+    return map.get(obj) || obj;
+  }
+  if (Array.isArray(obj)) return obj.map((x) => applyMap(x, map, keyHint));
   if (obj && typeof obj === "object") {
     const next = {};
-    for (const [k, v] of Object.entries(obj)) next[k] = applyMap(v, map);
+    for (const [k, v] of Object.entries(obj)) next[k] = applyMap(v, map, k);
     return next;
   }
   return obj;

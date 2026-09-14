@@ -1022,8 +1022,40 @@ export function getPageI18n(slug: string, locale: string): PageI18n | null {
   const fromPack = (pageI18nPack as Record<string, Record<string, PageI18n>>)[locale]?.[
     slug
   ];
-  if (fromPack?.title && Array.isArray(fromPack.blocks)) return fromPack;
+  if (fromPack?.title && Array.isArray(fromPack.blocks)) {
+    return { ...fromPack, blocks: normalizePageBlocks(fromPack.blocks) };
+  }
   const overlay = getLocalizedCopySync<PageI18n>("page", slug, locale);
-  if (overlay?.title && Array.isArray(overlay.blocks)) return overlay;
+  if (overlay?.title && Array.isArray(overlay.blocks)) {
+    return { ...overlay, blocks: normalizePageBlocks(overlay.blocks) };
+  }
   return entry.en;
+}
+
+function normalizePageBlocks(blocks: PageBlock[]): PageBlock[] {
+  return blocks.map((block) => {
+    if (!block || typeof block !== "object") return block;
+    if (Array.isArray((block as { items?: unknown }).items)) {
+      return {
+        type: "list",
+        items: ((block as { items: unknown[] }).items || []).map((item) =>
+          typeof item === "string" ? item : String(item ?? ""),
+        ),
+      };
+    }
+    const rawType = String((block as { type?: string }).type || "").toLowerCase();
+    const text = String((block as { text?: string }).text || "");
+    if (
+      rawType === "heading" ||
+      rawType.includes("heading") ||
+      rawType.includes("title") ||
+      rawType.includes("titel") ||
+      rawType.includes("header") ||
+      rawType.includes("naslov") ||
+      rawType.includes("rubrik")
+    ) {
+      return { type: "heading", text };
+    }
+    return { type: "paragraph", text };
+  });
 }

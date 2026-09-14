@@ -4,7 +4,8 @@ import termsI18n from "@/content/legal/terms-i18n.json";
 import cookiesI18n from "@/content/legal/cookies-i18n.json";
 import legalMeta from "@/content/legal/meta-i18n.json";
 import { translateSectionToNl } from "@/content/legal/translate-nl";
-import { brandify, type ContentBlock } from "@/lib/fixweb-content";
+import { brandify } from "@/lib/brandify";
+import { type ContentBlock } from "@/lib/fixweb-content";
 
 type ImportedSection = {
   heading: string;

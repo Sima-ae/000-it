@@ -34,21 +34,22 @@ function collectEchoes(enObj, curObj, need = new Set()) {
   return need;
 }
 
-function mergePreferTranslated(enObj, prevObj, map) {
+function mergePreferTranslated(enObj, prevObj, map, keyHint = "") {
   if (typeof enObj === "string") {
+    if (keyHint === "type") return enObj;
     if (map.has(enObj) && map.get(enObj) !== enObj) return map.get(enObj);
     if (prevObj && prevObj !== enObj) return prevObj;
     return enObj;
   }
   if (Array.isArray(enObj)) {
     return enObj.map((x, i) =>
-      mergePreferTranslated(x, Array.isArray(prevObj) ? prevObj[i] : undefined, map),
+      mergePreferTranslated(x, Array.isArray(prevObj) ? prevObj[i] : undefined, map, keyHint),
     );
   }
   if (enObj && typeof enObj === "object") {
     const next = {};
     for (const k of Object.keys(enObj)) {
-      next[k] = mergePreferTranslated(enObj[k], prevObj?.[k], map);
+      next[k] = mergePreferTranslated(enObj[k], prevObj?.[k], map, k);
     }
     return next;
   }
