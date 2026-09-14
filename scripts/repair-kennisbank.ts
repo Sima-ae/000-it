@@ -9,7 +9,8 @@
  * This script:
  *   1. Re-syncs NL title/excerpt/body from catalog.json (source of truth)
  *   2. Rebuilds EN via proper NL→EN machine translation (title + excerpt + body)
- *   3. Optionally force-rebuilds every other locale from the new EN (--all)
+ *   3. Optionally fills every other locale from the new EN (--all).
+ *      Already-correct locales are skipped unless --force is passed.
  *
  * Usage (on server, after deploy):
  *   npx --yes tsx --env-file=.env scripts/repair-kennisbank.ts
@@ -26,8 +27,16 @@ import { prisma } from "../src/lib/prisma";
 import { enabledLanguages } from "../src/i18n/languages";
 import { buildArticleHtml, buildExcerpt } from "../prisma/kennisbank/build-body";
 import { englishTitleFromSlug } from "../prisma/kennisbank/i18n";
-import { fillArticleTranslations } from "../src/lib/kennisbank-i18n";
-import { translateHtml, translateText } from "../src/lib/google-translate";
+import {
+  fillArticleTranslations,
+  isGoodArticleTranslation,
+  localesNeedingArticleFill,
+} from "../src/lib/kennisbank-i18n";
+import {
+  isAcceptableTranslation,
+  translateHtml,
+  translateText,
+} from "../src/lib/google-translate";
 
 type Catalog = {
   categories: [string, string, string][];
@@ -52,23 +61,40 @@ function isGenericEnglishBody(html: string) {
   );
 }
 
-function needsEnglishRepair(
-  enTitle: string | undefined,
-  nlTitle: string,
-  slug: string,
-  enBody: string | undefined,
-): boolean {
-  if (!enTitle?.trim() || !enBody?.trim()) return true;
-  const glossary = englishTitleFromSlug(slug, nlTitle);
-  if (enTitle.trim() === glossary.trim()) return true;
-  if (isGenericEnglishBody(enBody)) return true;
-  // Residual Dutch tokens left by the glossary mixer
-  const dutchResidue =
-    /\b(betekenen|verbeter|resultaat|oplevert|vindbaarheid|volledig|traject|verschil|bereid|bestel|optimalisatie|passen|lage|meet|werk|antwoordengines|veelgemaakte|fouten|schaden|lokale|google)\b/i;
-  if (dutchResidue.test(enTitle) && enTitle.trim() !== nlTitle.trim()) {
-    return true;
-  }
-  return false;
+function needsEnglishRepair(opts: {
+  en?: {
+    title: string;
+    excerpt: string;
+    bodyHtml: string;
+    seoTitle: string | null;
+    seoDescription: string | null;
+  } | null;
+  nlTitle: string;
+  nlExcerpt: string;
+  nlBody: string;
+  slug: string;
+}): boolean {
+  const en = opts.en;
+  if (!en?.title?.trim() || !en.bodyHtml?.trim() || !en.excerpt?.trim()) return true;
+  const glossary = englishTitleFromSlug(opts.slug, opts.nlTitle);
+  if (en.title.trim() === glossary.trim()) return true;
+  if (isGenericEnglishBody(en.bodyHtml)) return true;
+  if (en.title.trim() === opts.nlTitle.trim()) return true;
+  return !isGoodArticleTranslation({
+    locale: "en",
+    title: en.title,
+    excerpt: en.excerpt,
+    bodyHtml: en.bodyHtml,
+    source: {
+      title: opts.nlTitle,
+      excerpt: opts.nlExcerpt,
+      bodyHtml: opts.nlBody,
+      seoTitle: null,
+      seoDescription: null,
+    },
+    sourceLocale: "nl",
+    nlTitle: opts.nlTitle,
+  }) || !isAcceptableTranslation(opts.nlTitle, en.title, "nl", "en");
 }
 
 async function main() {
@@ -100,6 +126,7 @@ async function main() {
   let enFixed = 0;
   let enSkipped = 0;
   let localesFixed = 0;
+  let localesSkipped = 0;
 
   for (let i = 0; i < articles.length; i += 1) {
     const article = articles[i];
@@ -169,12 +196,21 @@ async function main() {
     // 2) Rebuild English from Dutch via real MT
     const repairEn =
       force ||
-      needsEnglishRepair(
-        existingEn?.title,
-        cat.title,
-        article.slug,
-        existingEn?.bodyHtml,
-      );
+      needsEnglishRepair({
+        en: existingEn
+          ? {
+              title: existingEn.title,
+              excerpt: existingEn.excerpt,
+              bodyHtml: existingEn.bodyHtml,
+              seoTitle: existingEn.seoTitle,
+              seoDescription: existingEn.seoDescription,
+            }
+          : null,
+        nlTitle: cat.title,
+        nlExcerpt: excerptNl,
+        nlBody: bodyNl,
+        slug: article.slug,
+      });
 
     let enSource = existingEn
       ? {
@@ -232,28 +268,50 @@ async function main() {
 
     if (enOnly || !enSource) continue;
 
-    // 3) Rebuild all other locales from clean EN
+    // 3) Fill missing/stale locales from clean EN (skip already-good ones unless --force)
     if (allLocales || force) {
       const targets = enabledLanguages()
         .map((l) => l.code)
         .filter((c) => c !== "en" && c !== "nl");
-      const { written } = await fillArticleTranslations({
-        articleId: article.id,
-        source: enSource,
-        sourceLocale: "en",
-        locales: targets,
-        force: true,
-        delayMs,
-      });
-      localesFixed += written.length;
-      console.log(
-        `[i18n] ${article.slug} wrote=${written.length}/${targets.length}`,
-      );
+      const nlTitle = cat.title;
+      const need = force
+        ? targets
+        : localesNeedingArticleFill({
+            translations: article.translations.map((t) =>
+              t.locale === "en" && enSource
+                ? { ...t, ...enSource }
+                : t,
+            ),
+            source: enSource,
+            sourceLocale: "en",
+            targets,
+            nlTitle,
+          });
+      if (!need.length) {
+        localesSkipped += targets.length;
+        console.log(`[i18n] ${article.slug} skipped (already translated)`);
+      } else {
+        const { written, skipped } = await fillArticleTranslations({
+          articleId: article.id,
+          source: enSource,
+          sourceLocale: "en",
+          locales: need,
+          force,
+          delayMs,
+          existing: article.translations,
+          nlTitle,
+        });
+        localesFixed += written.length;
+        localesSkipped += skipped.length;
+        console.log(
+          `[i18n] ${article.slug} need=${need.length} wrote=${written.length} skipped=${skipped.length}`,
+        );
+      }
     }
   }
 
   console.log(
-    `[repair-kennisbank] done nlFixed=${nlFixed} enFixed=${enFixed} enSkipped=${enSkipped} localeWrites=${localesFixed}`,
+    `[repair-kennisbank] done nlFixed=${nlFixed} enFixed=${enFixed} enSkipped=${enSkipped} localeWrites=${localesFixed} localeSkipped=${localesSkipped}`,
   );
   await prisma.$disconnect();
 }

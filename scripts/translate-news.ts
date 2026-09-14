@@ -12,6 +12,7 @@
 import { prisma } from "../src/lib/prisma";
 import {
   buildNewsTranslationsFromEnglish,
+  newsCopyLooksComplete,
   nlFromTranslations,
   parseNewsTranslations,
 } from "../src/lib/news-i18n";
@@ -66,33 +67,22 @@ async function main() {
       !post.descriptionNl?.trim() ||
       post.titleNl === post.title;
 
+    const en = {
+      title: post.title,
+      excerpt: post.excerpt,
+      description: post.description,
+    };
+
     const missingLocales = targets.filter((locale) => {
       if (locale === "nl") return needsNl;
       if (nlOnly) return false;
-      const copy = existing[locale];
-      return (
-        force ||
-        !copy?.title?.trim() ||
-        !copy.excerpt?.trim() ||
-        !copy.description?.trim() ||
-        copy.title === post.title
-      );
+      return force || !newsCopyLooksComplete(existing[locale], en, locale);
     });
 
     if (!missingLocales.length && !needsNl) {
       skipped += 1;
       continue;
     }
-
-    if (!missingLocales.length && needsNl) {
-      missingLocales.push("nl");
-    }
-
-    const en = {
-      title: post.title,
-      excerpt: post.excerpt,
-      description: post.description,
-    };
 
     try {
       let translations = { ...existing };

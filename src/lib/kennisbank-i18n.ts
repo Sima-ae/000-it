@@ -8,6 +8,22 @@ import {
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
+/** Dutch leftover that means a non-NL row is still the catalog original. */
+const DUTCH_LEFTOVER_RE =
+  /\b(hoe kan ik|hoe koppel ik|hoe stel ik|hoe meet ik|wat zijn|wat is een|wat betekenen|waarom is|welke |in dit artikel|stapsgewijze|aandachtspunten|professionele handleiding|kennisbank\b|domeinnamen|klantenpanel|oplevert|vindbaarheid|verbeter ik|mailboxen|bandbreedte|doorverwijzingen|klantvriendelijke)\b/i;
+
+function stripHtmlLite(value: string) {
+  return value.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+}
+
+export function hasDutchLeftover(text: string | null | undefined) {
+  return DUTCH_LEFTOVER_RE.test(stripHtmlLite(text || ""));
+}
+
+function sameText(a: string, b: string) {
+  return a.trim().localeCompare(b.trim(), undefined, { sensitivity: "accent" }) === 0;
+}
+
 export type CategorySource = {
   name: string;
   description: string | null;
@@ -44,6 +60,135 @@ function shouldPreserveLocale(locale: string, sourceLocale: string, extra: strin
   // Curated Dutch is never overwritten from an English pivot.
   if (locale === "nl" && sourceLocale !== "nl") return true;
   return false;
+}
+
+export type ExistingCategoryTranslation = {
+  locale: string;
+  name: string;
+  description: string | null;
+};
+
+export type ExistingArticleTranslation = {
+  locale: string;
+  title: string;
+  excerpt: string;
+  bodyHtml: string;
+};
+
+/**
+ * True when a stored row is a real translation for `locale` — skip MT.
+ * False for missing, source-language copies, and leftover Dutch.
+ */
+export function isGoodCategoryTranslation(opts: {
+  locale: string;
+  name: string;
+  description?: string | null;
+  sourceName: string;
+  sourceDescription?: string | null;
+  sourceLocale: string;
+  nlName?: string;
+}): boolean {
+  const { locale, name, sourceName, sourceLocale } = opts;
+  if (!name?.trim()) return false;
+  if (locale === sourceLocale || locale === "nl") return true;
+  if (opts.nlName && sameText(name, opts.nlName) && name.trim().length > 12) {
+    return false;
+  }
+  if (hasDutchLeftover(name) || hasDutchLeftover(opts.description)) return false;
+  if (!isAcceptableTranslation(sourceName, name, sourceLocale, locale)) return false;
+  const desc = (opts.description || "").trim();
+  const srcDesc = (opts.sourceDescription || "").trim();
+  if (srcDesc && desc) {
+    if (sameText(desc, srcDesc) && srcDesc.length > 24) return false;
+    if (!isAcceptableTranslation(srcDesc, desc, sourceLocale, locale)) return false;
+  }
+  return true;
+}
+
+export function isGoodArticleTranslation(opts: {
+  locale: string;
+  title: string;
+  excerpt: string;
+  bodyHtml: string;
+  source: ArticleSource;
+  sourceLocale: string;
+  nlTitle?: string;
+}): boolean {
+  const { locale, title, excerpt, bodyHtml, source, sourceLocale } = opts;
+  if (!title?.trim() || !excerpt?.trim() || !bodyHtml?.trim()) return false;
+  if (locale === sourceLocale || locale === "nl") return true;
+  if (opts.nlTitle && sameText(title, opts.nlTitle) && title.trim().length > 12) {
+    return false;
+  }
+  if (hasDutchLeftover(title) || hasDutchLeftover(excerpt) || hasDutchLeftover(bodyHtml)) {
+    return false;
+  }
+  if (/in dit artikel/i.test(bodyHtml)) return false;
+  if (/knowledge-base article explains/i.test(bodyHtml)) return false;
+  if (
+    locale !== "en" &&
+    /Professional TripleZero iT Hosting guide:/i.test(bodyHtml)
+  ) {
+    return false;
+  }
+  if (!isAcceptableTranslation(source.title, title, sourceLocale, locale)) {
+    return false;
+  }
+  if (sameText(title, source.title) && source.title.trim().length > 18) return false;
+  if (sameText(excerpt, source.excerpt) && source.excerpt.trim().length > 24) {
+    return false;
+  }
+  return true;
+}
+
+export function localesNeedingCategoryFill(opts: {
+  translations: ExistingCategoryTranslation[];
+  source: CategorySource;
+  sourceLocale: string;
+  targets: string[];
+  nlName?: string;
+}): string[] {
+  const byLocale = new Map(opts.translations.map((t) => [t.locale, t]));
+  return opts.targets.filter((locale) => {
+    if (locale === opts.sourceLocale) return false;
+    if (shouldPreserveLocale(locale, opts.sourceLocale)) return false;
+    const row = byLocale.get(locale);
+    if (!row) return true;
+    return !isGoodCategoryTranslation({
+      locale,
+      name: row.name,
+      description: row.description,
+      sourceName: opts.source.name,
+      sourceDescription: opts.source.description,
+      sourceLocale: opts.sourceLocale,
+      nlName: opts.nlName,
+    });
+  });
+}
+
+export function localesNeedingArticleFill(opts: {
+  translations: ExistingArticleTranslation[];
+  source: ArticleSource;
+  sourceLocale: string;
+  targets: string[];
+  nlTitle?: string;
+}): string[] {
+  const byLocale = new Map(opts.translations.map((t) => [t.locale, t]));
+  return opts.targets.filter((locale) => {
+    if (locale === opts.sourceLocale) return false;
+    if (shouldPreserveLocale(locale, opts.sourceLocale)) return false;
+    const row = byLocale.get(locale);
+    if (!row) return true;
+    return !isGoodArticleTranslation({
+      locale,
+      title: row.title,
+      excerpt: row.excerpt,
+      bodyHtml: row.bodyHtml,
+      source: opts.source,
+      sourceLocale: opts.sourceLocale,
+      nlTitle: opts.nlTitle,
+    });
+  });
 }
 
 async function translateField(
@@ -87,6 +232,8 @@ export async function fillCategoryTranslations(opts: {
   delayMs?: number;
   preserveLocales?: string[];
   deadlineMs?: number;
+  existing?: ExistingCategoryTranslation[];
+  nlName?: string;
 }): Promise<FillResult> {
   const sourceLocale = opts.sourceLocale || "en";
   const targets = (opts.locales || contentTargetLocales(sourceLocale)).filter(
@@ -97,6 +244,16 @@ export async function fillCategoryTranslations(opts: {
   const written: string[] = [];
   const skipped: string[] = [];
   const failed: string[] = [];
+
+  const existingRows =
+    opts.existing ||
+    (await prisma.kennisbankCategoryTranslation.findMany({
+      where: { categoryId: opts.categoryId },
+      select: { locale: true, name: true, description: true },
+    }));
+  const byLocale = new Map(existingRows.map((t) => [t.locale, t]));
+  const nlName =
+    opts.nlName || existingRows.find((t) => t.locale === "nl")?.name;
 
   const ordered = [
     ...targets.filter((l) => l === "nl"),
@@ -110,26 +267,21 @@ export async function fillCategoryTranslations(opts: {
     }
 
     if (!opts.force) {
-      const existing = await prisma.kennisbankCategoryTranslation.findUnique({
-        where: {
-          categoryId_locale: { categoryId: opts.categoryId, locale },
-        },
-      });
-      if (existing?.name?.trim()) {
-        const identicalToSource =
-          existing.name.trim() === opts.source.name.trim() &&
-          (existing.description || "").trim() ===
-            (opts.source.description || "").trim();
-        const looksTranslated = isAcceptableTranslation(
-          opts.source.name,
-          existing.name,
-          sourceLocale,
+      const existing = byLocale.get(locale);
+      if (
+        existing &&
+        isGoodCategoryTranslation({
           locale,
-        );
-        if (!identicalToSource && looksTranslated) {
-          skipped.push(locale);
-          continue;
-        }
+          name: existing.name,
+          description: existing.description,
+          sourceName: opts.source.name,
+          sourceDescription: opts.source.description,
+          sourceLocale,
+          nlName,
+        })
+      ) {
+        skipped.push(locale);
+        continue;
       }
     }
 
@@ -184,6 +336,8 @@ export async function fillArticleTranslations(opts: {
   delayMs?: number;
   preserveLocales?: string[];
   deadlineMs?: number;
+  existing?: ExistingArticleTranslation[];
+  nlTitle?: string;
 }): Promise<FillResult> {
   const sourceLocale = opts.sourceLocale || "en";
   const targets = (opts.locales || contentTargetLocales(sourceLocale)).filter(
@@ -194,6 +348,16 @@ export async function fillArticleTranslations(opts: {
   const written: string[] = [];
   const skipped: string[] = [];
   const failed: string[] = [];
+
+  const existingRows =
+    opts.existing ||
+    (await prisma.kennisbankArticleTranslation.findMany({
+      where: { articleId: opts.articleId },
+      select: { locale: true, title: true, excerpt: true, bodyHtml: true },
+    }));
+  const byLocale = new Map(existingRows.map((t) => [t.locale, t]));
+  const nlTitle =
+    opts.nlTitle || existingRows.find((t) => t.locale === "nl")?.title;
 
   const ordered = [
     ...targets.filter((l) => l === "nl"),
@@ -207,25 +371,21 @@ export async function fillArticleTranslations(opts: {
     }
 
     if (!opts.force) {
-      const existing = await prisma.kennisbankArticleTranslation.findUnique({
-        where: {
-          articleId_locale: { articleId: opts.articleId, locale },
-        },
-      });
-      if (existing?.title?.trim() && existing.bodyHtml?.trim()) {
-        const identicalToSource =
-          existing.title.trim() === opts.source.title.trim() &&
-          existing.excerpt.trim() === opts.source.excerpt.trim();
-        const looksTranslated = isAcceptableTranslation(
-          opts.source.title,
-          existing.title,
-          sourceLocale,
+      const existing = byLocale.get(locale);
+      if (
+        existing &&
+        isGoodArticleTranslation({
           locale,
-        );
-        if (!identicalToSource && looksTranslated) {
-          skipped.push(locale);
-          continue;
-        }
+          title: existing.title,
+          excerpt: existing.excerpt,
+          bodyHtml: existing.bodyHtml,
+          source: opts.source,
+          sourceLocale,
+          nlTitle,
+        })
+      ) {
+        skipped.push(locale);
+        continue;
       }
     }
 

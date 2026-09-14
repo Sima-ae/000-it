@@ -9,6 +9,8 @@ import {
 import {
   fillArticleTranslations,
   fillCategoryTranslations,
+  localesNeedingArticleFill,
+  localesNeedingCategoryFill,
   pickKennisbankSourceLocale,
 } from "@/lib/kennisbank-i18n";
 import {
@@ -212,25 +214,29 @@ async function fillKennisbank(deadline: number, result: TranslateContentResult) 
     const sourceLocale = pickKennisbankSourceLocale(cat.translations.map((t) => t.locale));
     const sourceRow = cat.translations.find((t) => t.locale === sourceLocale);
     if (!sourceRow) continue;
-    const have = new Set(cat.translations.map((t) => t.locale));
-    const missing = allCodes().filter((l) => l !== sourceLocale && !have.has(l));
-    const stale = cat.translations.filter(
-      (t) =>
-        t.locale !== sourceLocale &&
-        t.locale !== "nl" &&
-        t.name.trim() === sourceRow.name.trim(),
-    );
-    if (!missing.length && !stale.length) {
+    const source = { name: sourceRow.name, description: sourceRow.description };
+    const nlName = cat.translations.find((t) => t.locale === "nl")?.name;
+    const need = localesNeedingCategoryFill({
+      translations: cat.translations,
+      source,
+      sourceLocale,
+      targets: allCodes(),
+      nlName,
+    });
+    if (!need.length) {
       result.skipped += 1;
       continue;
     }
     const { written, failed } = await fillCategoryTranslations({
       categoryId: cat.id,
-      source: { name: sourceRow.name, description: sourceRow.description },
+      source,
       sourceLocale,
-      force: stale.length > 0,
+      locales: need,
+      force: false,
       delayMs: 220,
       deadlineMs: Math.max(deadline - Date.now(), 4_000),
+      existing: cat.translations,
+      nlName,
     });
     result.written += written.length;
     result.failed += failed.length;
@@ -263,31 +269,35 @@ async function fillKennisbank(deadline: number, result: TranslateContentResult) 
     );
     const sourceRow = article.translations.find((t) => t.locale === sourceLocale);
     if (!sourceRow) continue;
-    const have = new Set(article.translations.map((t) => t.locale));
-    const missing = allCodes().filter((l) => l !== sourceLocale && !have.has(l));
-    const stale = article.translations.filter(
-      (t) =>
-        t.locale !== sourceLocale &&
-        t.locale !== "nl" &&
-        t.title.trim() === sourceRow.title.trim(),
-    );
-    if (!missing.length && !stale.length) {
+    const source = {
+      title: sourceRow.title,
+      excerpt: sourceRow.excerpt,
+      bodyHtml: sourceRow.bodyHtml,
+      seoTitle: sourceRow.seoTitle,
+      seoDescription: sourceRow.seoDescription,
+    };
+    const nlTitle = article.translations.find((t) => t.locale === "nl")?.title;
+    const need = localesNeedingArticleFill({
+      translations: article.translations,
+      source,
+      sourceLocale,
+      targets: allCodes(),
+      nlTitle,
+    });
+    if (!need.length) {
       result.skipped += 1;
       continue;
     }
     const { written, failed } = await fillArticleTranslations({
       articleId: article.id,
-      source: {
-        title: sourceRow.title,
-        excerpt: sourceRow.excerpt,
-        bodyHtml: sourceRow.bodyHtml,
-        seoTitle: sourceRow.seoTitle,
-        seoDescription: sourceRow.seoDescription,
-      },
+      source,
       sourceLocale,
-      force: stale.length > 0,
+      locales: need,
+      force: false,
       delayMs: 260,
       deadlineMs: Math.max(deadline - Date.now(), 8_000),
+      existing: article.translations,
+      nlTitle,
     });
     result.written += written.length;
     result.failed += failed.length;
