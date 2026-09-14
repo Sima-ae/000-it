@@ -2,7 +2,7 @@
  * Expand + translate dashboard chrome keys (hardcoded isNl leftovers).
  * Uses concurrent MT. Run after legal job finishes.
  */
-import { readFileSync, writeFileSync, readdirSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { ALL_TARGET_LOCALES, translateManyConcurrent } from "./lib/translate.mjs";
 

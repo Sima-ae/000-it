@@ -5,7 +5,7 @@
  *   MT_CONCURRENCY=1 MT_DELAY_MS=500 MT_MIN_GAP_MS=600 MT_429_MS=4000 \
  *   npx tsx scripts/slow-finish-leftovers.mjs
  */
-import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { translateManyConcurrent, ALL_TARGET_LOCALES } from "./lib/translate.mjs";
 

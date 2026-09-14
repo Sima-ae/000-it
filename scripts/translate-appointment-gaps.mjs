@@ -2,7 +2,7 @@
  * Translate only appointment UI keys that still match English (fill gaps after expand).
  * Safe to run while other MT jobs are idle — uses disk cache.
  */
-import { readFileSync, writeFileSync, readdirSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { ALL_TARGET_LOCALES, translateText } from "./lib/translate.mjs";
 

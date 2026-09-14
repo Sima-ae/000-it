@@ -45,7 +45,7 @@ function outro(related?: string) {
 type Ctx = { title: string; topic: string };
 
 const topicBuilders: Record<string, (ctx: Ctx) => string> = {
-  spf: ({ title }) =>
+  spf: () =>
     [
       p(
         `Een SPF-record (Sender Policy Framework) vertelt ontvangende mailservers welke systemen namens jouw domein e-mail mogen versturen. Zonder correct SPF-record belanden legitieme berichten sneller in spam of worden ze geweigerd.`,

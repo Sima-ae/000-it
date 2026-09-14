@@ -77,7 +77,7 @@ export async function uniqueEntitySlug(
   desired: string,
   entityKey: string,
 ): Promise<string> {
-  let base = slugifyLocalized(desired) || slugifyLocalized(entityKey) || "item";
+  const base = slugifyLocalized(desired) || slugifyLocalized(entityKey) || "item";
   if (!(await slugTaken(entityType, locale, base, entityKey))) return base;
 
   // Prefer stable suffix from canonical key

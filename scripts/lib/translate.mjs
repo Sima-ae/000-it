@@ -88,7 +88,7 @@ function writeCache(key, value) {
   writeFileSync(join(CACHE_DIR, `${key}.txt`), value, "utf8");
 }
 
-function isBad(out, input) {
+function isBad(out) {
   if (!out || typeof out !== "string") return true;
   const trimmed = out.trim();
   if (
@@ -134,7 +134,7 @@ async function viaMyMemory(text, from, to) {
   if (!res.ok) throw new Error(`mymemory HTTP ${res.status}`);
   const data = await res.json();
   let out = data?.responseData?.translatedText;
-  if (isBad(out, text)) {
+  if (isBad(out)) {
     if (/MYMEMORY WARNING|AVAILABLE FREE TRANSLATIONS/i.test(String(out))) {
       coolProvider("mymemory", 6 * 60 * 60 * 1000);
     }
@@ -149,7 +149,7 @@ async function viaMyMemory(text, from, to) {
     const r = await fetch(u, { signal: AbortSignal.timeout(15000) });
     const d = await r.json();
     const t = d?.responseData?.translatedText;
-    if (isBad(t, chunk)) result += chunk;
+    if (isBad(t)) result += chunk;
     else result += t;
   }
   return result;
@@ -186,7 +186,7 @@ async function viaLibre(text, from, to) {
         throw new Error(`${host} non-json`);
       }
       const out = data.translatedText || data.translation;
-      if (isBad(out, text)) throw new Error(`${host} bad`);
+      if (isBad(out)) throw new Error(`${host} bad`);
       return out;
     } catch (e) {
       lastErr = e;
@@ -210,7 +210,7 @@ async function viaGoogleUnofficial(text, from, to) {
   if (!res.ok) throw new Error(`gtx HTTP ${res.status}`);
   const data = await res.json();
   const out = parseGoogleSingle(data);
-  if (isBad(out, text)) throw new Error("gtx bad");
+  if (isBad(out)) throw new Error("gtx bad");
   return out;
 }
 
@@ -234,7 +234,7 @@ async function viaGoogleDict(text, from, to) {
   if (!res.ok) throw new Error(`g-dict HTTP ${res.status}`);
   const data = await res.json();
   const out = parseGoogleSingle(data);
-  if (isBad(out, text)) throw new Error("g-dict bad");
+  if (isBad(out)) throw new Error("g-dict bad");
   return out;
 }
 
@@ -258,7 +258,7 @@ async function viaGoogleClients5(text, from, to) {
   if (!res.ok) throw new Error(`g-c5 HTTP ${res.status}`);
   const data = await res.json();
   const out = parseClients5(data);
-  if (isBad(out, text)) throw new Error("g-c5 bad");
+  if (isBad(out)) throw new Error("g-c5 bad");
   return out;
 }
 
@@ -282,7 +282,7 @@ async function viaGoogleAndroid(text, from, to) {
   if (!res.ok) throw new Error(`g-at HTTP ${res.status}`);
   const data = await res.json();
   const out = parseGoogleSingle(data);
-  if (isBad(out, text)) throw new Error("g-at bad");
+  if (isBad(out)) throw new Error("g-at bad");
   return out;
 }
 
@@ -290,7 +290,7 @@ async function viaGoogleNpm(text, from, to) {
   const translate = (await import("google-translate-api-x")).default;
   const res = await translate(text, { from, to, forceBatch: false });
   const out = typeof res.text === "string" ? res.text : null;
-  if (isBad(out, text)) throw new Error("google-npm bad");
+  if (isBad(out)) throw new Error("google-npm bad");
   return out;
 }
 
@@ -317,7 +317,7 @@ async function viaLingva(text, from, to) {
         if (!res.ok) throw new Error(`${host} ${res.status}`);
         const data = await res.json();
         const out = data.translation;
-        if (isBad(out, text) || out === text) throw new Error(`${host} echo/bad`);
+        if (isBad(out) || out === text) throw new Error(`${host} echo/bad`);
         return out;
       }
       let result = "";
@@ -328,7 +328,7 @@ async function viaLingva(text, from, to) {
         if (!res.ok) throw new Error(`${host} ${res.status}`);
         const data = await res.json();
         const out = data.translation;
-        if (isBad(out, chunk) || out === chunk) throw new Error(`${host} echo/bad`);
+        if (isBad(out) || out === chunk) throw new Error(`${host} echo/bad`);
         result += out;
         if (i + chunkSize < text.length) await sleep(100);
       }
@@ -361,7 +361,7 @@ async function viaSimply(text, from, to) {
         if (!res.ok) throw new Error(`${host} ${engine} ${res.status}`);
         const data = await res.json();
         const out = data.translated_text || data.translatedText;
-        if (isBad(out, text) || !out.trim()) throw new Error(`${host} empty/bad`);
+        if (isBad(out) || !out.trim()) throw new Error(`${host} empty/bad`);
         return out;
       } catch (e) {
         lastErr = e;
@@ -398,7 +398,7 @@ async function viaMozhi(text, from, to) {
           data.translated_text ||
           data.translatedText ||
           data.translation;
-        if (isBad(out, text) || !String(out).trim() || out === text) {
+        if (isBad(out) || !String(out).trim() || out === text) {
           throw new Error(`${host} ${engine} echo/bad`);
         }
         return out;
@@ -446,7 +446,7 @@ export async function translateText(text, toLocale, fromLocale = "en") {
     try {
       await throttleLive();
       const out = await fn();
-      if (!isBad(out, text)) {
+      if (!isBad(out)) {
         if (!(out === text && from !== to)) writeCache(key, out);
         if (process.env.MT_DEBUG) {
           console.log(`[mt] ${from}→${toLocale} via ${name} (${text.length}c)`);

@@ -7,7 +7,6 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import {
   ALL_TARGET_LOCALES,
-  translateText,
   translateManyConcurrent,
 } from "./lib/translate.mjs";
 

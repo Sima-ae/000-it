@@ -27,7 +27,6 @@ const enLeaves = leaves(en);
 console.log("locales", locales.length);
 console.log("en leaf keys", enLeaves.length);
 
-let msgGaps = 0;
 for (const loc of locales.filter((l) => l !== "en")) {
   const m = JSON.parse(readFileSync(join("messages", `${loc}.json`), "utf8"));
   const map = new Map(leaves(m));
@@ -54,7 +53,6 @@ for (const loc of locales.filter((l) => l !== "en")) {
       missing.slice(0, 5).join(", "),
       echoed.slice(0, 5).join(", "),
     );
-    msgGaps += missing.length;
   }
 }
 
