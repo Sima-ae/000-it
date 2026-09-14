@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { GoogleTag } from "@/components/analytics/GoogleTag";
 import { SITE_SEO, absoluteUrl, geoMetadataOther, siteOrigin } from "@/lib/seo";
 
 const display = localFont({
@@ -82,6 +83,7 @@ export default function RootLayout({
   return (
     <html lang="nl" suppressHydrationWarning data-scroll-behavior="smooth">
       <body className={`${display.variable} ${body.variable} ${geistMono.variable} antialiased`}>
+        <GoogleTag />
         {children}
       </body>
     </html>
