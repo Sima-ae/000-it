@@ -58,8 +58,8 @@ if ! node scripts/check-db.mjs; then
 fi
 
 echo "==> Prisma generate + migrate deploy"
-npx prisma generate
-npx prisma migrate deploy
+chmod +x scripts/prisma-migrate-deploy.sh 2>/dev/null || true
+bash scripts/prisma-migrate-deploy.sh
 
 if [[ "${RUN_SEED:-}" == "1" ]]; then
   echo "==> Seeding database"

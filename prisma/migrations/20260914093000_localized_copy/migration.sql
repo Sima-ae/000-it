@@ -1,5 +1,5 @@
 -- CreateTable
-CREATE TABLE `LocalizedCopy` (
+CREATE TABLE IF NOT EXISTS `LocalizedCopy` (
     `id` VARCHAR(191) NOT NULL,
     `kind` VARCHAR(191) NOT NULL,
     `itemKey` VARCHAR(191) NOT NULL,

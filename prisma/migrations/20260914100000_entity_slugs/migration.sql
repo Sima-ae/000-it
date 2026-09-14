@@ -1,5 +1,5 @@
 -- CreateTable
-CREATE TABLE `EntitySlug` (
+CREATE TABLE IF NOT EXISTS `EntitySlug` (
     `id` VARCHAR(191) NOT NULL,
     `entityType` VARCHAR(191) NOT NULL,
     `entityKey` VARCHAR(191) NOT NULL,
