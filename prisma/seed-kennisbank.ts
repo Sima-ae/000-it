@@ -1,6 +1,7 @@
 /**
  * Idempotent seed for TripleZero iT Hosting Kennisbank.
  * Seeds NL (primary) + EN article bodies, and category translations for major locales.
+ * After seed, run `npm run kennisbank:translate` to fill ALL enabled site languages.
  * Usage: npm run db:seed:kennisbank
  */
 import { PrismaClient } from "@prisma/client";

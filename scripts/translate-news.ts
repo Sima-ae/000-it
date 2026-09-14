@@ -7,6 +7,7 @@
  *   npm run news:translate -- --limit=20
  *   npm run news:translate -- --force
  *   npm run news:translate -- --nl-only
+ *   npm run news:translate -- --locale=fr,de,es --delay=800
  */
 import { prisma } from "../src/lib/prisma";
 import {
@@ -25,11 +26,23 @@ function argValue(name: string): string | undefined {
   return hit?.slice(name.length + 3);
 }
 
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
 async function main() {
   const force = argFlag("force");
   const nlOnly = argFlag("nl-only");
   const limit = Math.max(1, Number(argValue("limit") || "500") || 500);
-  const targets = newsTargetLocales();
+  const delayMs = Math.max(200, Number(argValue("delay") || "700") || 700);
+  const postGapMs = Math.max(0, Number(argValue("post-gap") || "1500") || 1500);
+  const localeFilter = (argValue("locale") || "")
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+
+  let targets = newsTargetLocales();
+  if (localeFilter.length) {
+    targets = targets.filter((l) => localeFilter.includes(l));
+  }
 
   const posts = await prisma.newsPost.findMany({
     orderBy: [{ date: "desc" }, { createdAt: "desc" }],
@@ -37,7 +50,9 @@ async function main() {
   });
 
   console.log(`[translate-news] ${posts.length} posts (force=${force}, nlOnly=${nlOnly})`);
-  console.log(`[translate-news] target locales: ${targets.length}`);
+  console.log(
+    `[translate-news] target locales: ${targets.length} delayMs=${delayMs} postGapMs=${postGapMs}`,
+  );
 
   let updated = 0;
   let skipped = 0;
@@ -99,7 +114,7 @@ async function main() {
           translations = await buildNewsTranslationsFromEnglish(en, {
             existing: translations,
             locales: others,
-            delayMs: 350,
+            delayMs,
           });
         }
       }
@@ -118,11 +133,13 @@ async function main() {
       console.log(
         `[ok] ${post.id} (+${missingLocales.length} locales) ${post.title.slice(0, 60)}`,
       );
+      if (postGapMs) await sleep(postGapMs);
     } catch (error) {
       console.error(
         `[fail] ${post.id}`,
         error instanceof Error ? error.message : error,
       );
+      await sleep(Math.max(postGapMs, 10_000));
     }
   }
 

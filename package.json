@@ -13,14 +13,15 @@
     "db:migrate": "prisma migrate dev",
     "db:deploy": "prisma migrate deploy",
     "db:push": "prisma db push",
-    "db:seed": "tsx prisma/seed.ts",
+    "db:seed": "npx --yes tsx prisma/seed.ts",
     "db:seed:kennisbank": "npx --yes tsx --env-file=.env prisma/seed-kennisbank.ts",
-    "news:auto": "tsx scripts/run-auto-news.ts",
-    "news:covers": "tsx scripts/backfill-news-covers.ts",
-    "news:repair": "tsx scripts/repair-auto-news.ts",
-    "news:translate": "tsx --env-file=.env scripts/translate-news.ts",
-    "generate-sitemap": "tsx --env-file=.env scripts/generate-sitemap.ts",
-    "indexnow": "tsx --env-file=.env scripts/indexnow.ts",
+    "news:auto": "npx --yes tsx scripts/run-auto-news.ts",
+    "news:covers": "npx --yes tsx scripts/backfill-news-covers.ts",
+    "news:repair": "npx --yes tsx scripts/repair-auto-news.ts",
+    "news:translate": "npx --yes tsx --env-file=.env scripts/translate-news.ts",
+    "kennisbank:translate": "npx --yes tsx --env-file=.env scripts/translate-kennisbank.ts",
+    "generate-sitemap": "npx --yes tsx --env-file=.env scripts/generate-sitemap.ts",
+    "indexnow": "npx --yes tsx --env-file=.env scripts/indexnow.ts",
     "postinstall": "prisma generate"
   },
   "dependencies": {
@@ -69,6 +70,6 @@
     "typescript": "^5"
   },
   "prisma": {
-    "seed": "tsx prisma/seed.ts"
+    "seed": "npx --yes tsx prisma/seed.ts"
   }
 }

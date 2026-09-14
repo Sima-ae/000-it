@@ -1,6 +1,11 @@
 import { z } from "zod";
 import { prisma } from "@/lib/prisma";
 import { slugifyKennisbank } from "@/lib/kennisbank-slug";
+import {
+  fillArticleTranslations,
+  fillCategoryTranslations,
+} from "@/lib/kennisbank-i18n";
+import { translateHtml, translateText } from "@/lib/google-translate";
 
 export { slugifyKennisbank } from "@/lib/kennisbank-slug";
 
@@ -158,6 +163,8 @@ export async function createCategory(input: z.infer<typeof categoryUpsertSchema>
   const slug = slugifyKennisbank(input.slug);
   const sortKey = input.sortKey?.trim() || input.name.trim();
   const locale = input.locale || "nl";
+  const name = input.name.trim();
+  const description = input.description?.trim() || null;
 
   const row = await prisma.kennisbankCategory.create({
     data: {
@@ -167,13 +174,18 @@ export async function createCategory(input: z.infer<typeof categoryUpsertSchema>
       translations: {
         create: {
           locale,
-          name: input.name.trim(),
-          description: input.description?.trim() || null,
+          name,
+          description,
         },
       },
     },
     include: { translations: true, _count: { select: { articles: true } } },
   });
+
+  // Propagate to English (source for other langs) + all enabled locales.
+  void propagateCategoryLocales(row.id, locale, { name, description }).catch(
+    (error) => console.warn("[kennisbank] category i18n", error),
+  );
 
   const tr = pickTranslation(row.translations, locale);
   return {
@@ -196,6 +208,8 @@ export async function updateCategory(
   const locale = input.locale || "nl";
   const slug = slugifyKennisbank(input.slug);
   const sortKey = input.sortKey?.trim() || input.name.trim();
+  const name = input.name.trim();
+  const description = input.description?.trim() || null;
 
   await prisma.kennisbankCategory.update({
     where: { id },
@@ -211,18 +225,57 @@ export async function updateCategory(
     create: {
       categoryId: id,
       locale,
-      name: input.name.trim(),
-      description: input.description?.trim() || null,
+      name,
+      description,
     },
     update: {
-      name: input.name.trim(),
-      description: input.description?.trim() || null,
+      name,
+      description,
     },
   });
+
+  void propagateCategoryLocales(id, locale, { name, description }).catch((error) =>
+    console.warn("[kennisbank] category i18n", error),
+  );
 
   const view = await getCategoryBySlug(slug, { locale, all: true });
   if (!view) throw new Error("Category not found after update");
   return view;
+}
+
+async function propagateCategoryLocales(
+  categoryId: string,
+  sourceLocale: string,
+  source: { name: string; description: string | null },
+) {
+  // Ensure English exists as MT source when editors write Dutch.
+  let enName = source.name;
+  let enDescription = source.description;
+  if (sourceLocale !== "en") {
+    enName = (await translateText(source.name, "en", sourceLocale)) || source.name;
+    enDescription = source.description
+      ? (await translateText(source.description, "en", sourceLocale)) ||
+        source.description
+      : null;
+    await prisma.kennisbankCategoryTranslation.upsert({
+      where: { categoryId_locale: { categoryId, locale: "en" } },
+      create: {
+        categoryId,
+        locale: "en",
+        name: enName,
+        description: enDescription,
+      },
+      update: { name: enName, description: enDescription },
+    });
+  }
+
+  await fillCategoryTranslations({
+    categoryId,
+    source: { name: enName, description: enDescription },
+    sourceLocale: "en",
+    force: true,
+    delayMs: 220,
+  });
 }
 
 export async function deleteCategory(id: string) {
@@ -370,6 +423,13 @@ export async function createArticle(
 ) {
   const locale = input.locale || "nl";
   const slug = slugifyKennisbank(input.slug);
+  const source = {
+    title: input.title.trim(),
+    excerpt: input.excerpt.trim(),
+    bodyHtml: input.bodyHtml,
+    seoTitle: input.seoTitle?.trim() || null,
+    seoDescription: input.seoDescription?.trim() || null,
+  };
 
   const row = await prisma.kennisbankArticle.create({
     data: {
@@ -379,11 +439,7 @@ export async function createArticle(
       translations: {
         create: {
           locale,
-          title: input.title.trim(),
-          excerpt: input.excerpt.trim(),
-          bodyHtml: input.bodyHtml,
-          seoTitle: input.seoTitle?.trim() || null,
-          seoDescription: input.seoDescription?.trim() || null,
+          ...source,
         },
       },
       categories: {
@@ -391,6 +447,10 @@ export async function createArticle(
       },
     },
   });
+
+  void propagateArticleLocales(row.id, locale, source).catch((error) =>
+    console.warn("[kennisbank] article i18n", error),
+  );
 
   return getArticleById(row.id, { locale });
 }
@@ -401,6 +461,13 @@ export async function updateArticle(
 ) {
   const locale = input.locale || "nl";
   const slug = slugifyKennisbank(input.slug);
+  const source = {
+    title: input.title.trim(),
+    excerpt: input.excerpt.trim(),
+    bodyHtml: input.bodyHtml,
+    seoTitle: input.seoTitle?.trim() || null,
+    seoDescription: input.seoDescription?.trim() || null,
+  };
 
   await prisma.kennisbankArticle.update({
     where: { id },
@@ -419,22 +486,59 @@ export async function updateArticle(
     create: {
       articleId: id,
       locale,
-      title: input.title.trim(),
-      excerpt: input.excerpt.trim(),
-      bodyHtml: input.bodyHtml,
-      seoTitle: input.seoTitle?.trim() || null,
-      seoDescription: input.seoDescription?.trim() || null,
+      ...source,
     },
-    update: {
-      title: input.title.trim(),
-      excerpt: input.excerpt.trim(),
-      bodyHtml: input.bodyHtml,
-      seoTitle: input.seoTitle?.trim() || null,
-      seoDescription: input.seoDescription?.trim() || null,
-    },
+    update: source,
   });
 
+  void propagateArticleLocales(id, locale, source).catch((error) =>
+    console.warn("[kennisbank] article i18n", error),
+  );
+
   return getArticleById(id, { locale });
+}
+
+async function propagateArticleLocales(
+  articleId: string,
+  sourceLocale: string,
+  source: {
+    title: string;
+    excerpt: string;
+    bodyHtml: string;
+    seoTitle: string | null;
+    seoDescription: string | null;
+  },
+) {
+  let en = { ...source };
+  if (sourceLocale !== "en") {
+    en = {
+      title: (await translateText(source.title, "en", sourceLocale)) || source.title,
+      excerpt:
+        (await translateText(source.excerpt, "en", sourceLocale)) || source.excerpt,
+      bodyHtml:
+        (await translateHtml(source.bodyHtml, "en", sourceLocale)) || source.bodyHtml,
+      seoTitle: source.seoTitle
+        ? (await translateText(source.seoTitle, "en", sourceLocale)) || source.seoTitle
+        : null,
+      seoDescription: source.seoDescription
+        ? (await translateText(source.seoDescription, "en", sourceLocale)) ||
+          source.seoDescription
+        : null,
+    };
+    await prisma.kennisbankArticleTranslation.upsert({
+      where: { articleId_locale: { articleId, locale: "en" } },
+      create: { articleId, locale: "en", ...en },
+      update: en,
+    });
+  }
+
+  await fillArticleTranslations({
+    articleId,
+    source: en,
+    sourceLocale: "en",
+    force: true,
+    delayMs: 280,
+  });
 }
 
 export async function deleteArticle(id: string) {

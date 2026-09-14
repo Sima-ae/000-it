@@ -72,14 +72,14 @@ export async function buildNewsTranslationsFromEnglish(
       out[locale] = { title, excerpt, description };
       await sleep(delayMs);
     } catch (error) {
-      console.warn(
-        `[news-i18n] translate ${locale} failed:`,
-        error instanceof Error ? error.message : error,
-      );
-      if (!out[locale]) {
-        out[locale] = { ...en };
+      const msg = error instanceof Error ? error.message : String(error);
+      console.warn(`[news-i18n] translate ${locale} failed:`, msg);
+      // Do not store English stubs — keeps the locale "missing" so reruns resume.
+      if (msg.includes("rate-limited")) {
+        await sleep(Math.max(delayMs * 8, 20_000));
+      } else {
+        await sleep(delayMs * 2);
       }
-      await sleep(delayMs * 2);
     }
   }
 

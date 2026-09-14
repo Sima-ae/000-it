@@ -66,10 +66,15 @@ async function translateChunk(
   });
 
   if (res.status === 429 || res.status === 503) {
-    if (attempt >= 6) {
+    if (attempt >= 8) {
       throw new Error(`Translate rate-limited (${res.status}) after retries`);
     }
-    const wait = 1200 * Math.pow(2, attempt) + Math.floor(Math.random() * 500);
+    // Aggressive backoff — free gtx endpoint bans bursts quickly on bulk jobs.
+    const wait =
+      2500 * Math.pow(2, attempt) + Math.floor(Math.random() * 1500);
+    console.warn(
+      `[google-translate] ${res.status} ${from}→${to}; wait ${Math.round(wait / 1000)}s (attempt ${attempt + 1})`,
+    );
     await sleep(wait);
     return translateChunk(text, from, to, attempt + 1);
   }
@@ -96,9 +101,11 @@ export async function translateText(
   text: string,
   toLocale: string,
   fromLocale = "en",
+  opts?: { collapseWhitespace?: boolean },
 ): Promise<string> {
-  const input = text?.trim() ? text : "";
-  if (!input) return "";
+  const collapse = opts?.collapseWhitespace !== false;
+  const input = collapse ? (text?.trim() ? text : "") : text || "";
+  if (!input.trim()) return collapse ? "" : input;
   if (toLocale === fromLocale) return input;
 
   const from = GOOGLE_TRANSLATE_TL[fromLocale] || fromLocale;
@@ -108,6 +115,19 @@ export async function translateText(
   const chunks: string[] = [];
   if (input.length <= 850) {
     chunks.push(input);
+  } else if (!collapse) {
+    // HTML / structured: pack by closing block tags
+    const parts = input.split(/(?<=<\/(?:p|h[1-6]|li|aside|div|ul|ol)>)/i);
+    let buf = "";
+    for (const part of parts) {
+      if (`${buf}${part}`.length > 850 && buf) {
+        chunks.push(buf);
+        buf = part;
+      } else {
+        buf += part;
+      }
+    }
+    if (buf) chunks.push(buf);
   } else {
     const paras = input.split(/\n\n+/);
     let buf = "";
@@ -127,7 +147,21 @@ export async function translateText(
     if (i > 0) await sleep(180);
     out.push(await translateChunk(chunks[i], from, to));
   }
+  if (!collapse) return out.join("");
   return cleanText(out.join("\n\n"));
+}
+
+/**
+ * Translate HTML knowledge-base bodies while keeping tags as intact as possible.
+ */
+export async function translateHtml(
+  html: string,
+  toLocale: string,
+  fromLocale = "en",
+): Promise<string> {
+  if (!html?.trim()) return html || "";
+  if (toLocale === fromLocale) return html;
+  return translateText(html, toLocale, fromLocale, { collapseWhitespace: false });
 }
 
 /** Locales that need machine translation (every enabled language except English source). */
@@ -135,4 +169,11 @@ export function newsTargetLocales(): string[] {
   return enabledLanguages()
     .map((l) => l.code)
     .filter((code) => code !== "en");
+}
+
+/** All enabled locales except the given source (default English). */
+export function contentTargetLocales(sourceLocale = "en"): string[] {
+  return enabledLanguages()
+    .map((l) => l.code)
+    .filter((code) => code !== sourceLocale);
 }
