@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Apply Prisma migrations, recovering from "table already exists" drift
-# when a migration failed after the table was created (e.g. via db push).
+# Apply Prisma migrations, recovering from schema drift when objects already
+# exist (e.g. created earlier via db push) but the migration row is missing.
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
@@ -23,6 +23,19 @@ async function tableExists(name) {
   return Array.isArray(rows) && rows.length > 0;
 }
 
+async function columnExists(table, column) {
+  const rows = await prisma.$queryRawUnsafe(
+    `SELECT 1 AS ok FROM information_schema.columns
+     WHERE table_schema = DATABASE()
+       AND table_name = ?
+       AND column_name = ?
+     LIMIT 1`,
+    table,
+    column,
+  );
+  return Array.isArray(rows) && rows.length > 0;
+}
+
 async function migrationFinished(name) {
   const rows = await prisma.$queryRawUnsafe(
     `SELECT finished_at, rolled_back_at
@@ -33,27 +46,43 @@ async function migrationFinished(name) {
   return Boolean(row?.finished_at && !row?.rolled_back_at);
 }
 
-const candidates = [
-  { migration: "20260914093000_localized_copy", table: "LocalizedCopy" },
-  { migration: "20260914100000_entity_slugs", table: "EntitySlug" },
-];
-
-let resolved = 0;
-for (const { migration, table } of candidates) {
-  const exists = await tableExists(table);
-  if (!exists) {
-    console.log(`skip ${migration}: table ${table} missing`);
-    continue;
-  }
+async function markApplied(migration, reason) {
   if (await migrationFinished(migration)) {
     console.log(`skip ${migration}: already marked applied`);
-    continue;
+    return false;
   }
-  console.log(`resolve --applied ${migration} (table ${table} already exists)`);
+  console.log(`resolve --applied ${migration} (${reason})`);
   execSync(`npx prisma migrate resolve --applied ${migration}`, {
     stdio: "inherit",
   });
-  resolved += 1;
+  return true;
+}
+
+const candidates = [
+  {
+    migration: "20260914093000_localized_copy",
+    check: () => tableExists("LocalizedCopy"),
+    reason: "table LocalizedCopy already exists",
+  },
+  {
+    migration: "20260914100000_entity_slugs",
+    check: () => tableExists("EntitySlug"),
+    reason: "table EntitySlug already exists",
+  },
+  {
+    migration: "20260915120000_news_trash",
+    check: () => columnExists("NewsPost", "deletedAt"),
+    reason: "NewsPost.deletedAt already exists",
+  },
+];
+
+let resolved = 0;
+for (const { migration, check, reason } of candidates) {
+  if (!(await check())) {
+    console.log(`skip ${migration}: precondition not met`);
+    continue;
+  }
+  if (await markApplied(migration, reason)) resolved += 1;
 }
 
 await prisma.$disconnect();
@@ -62,7 +91,7 @@ EOF
 }
 
 attempts=0
-max_attempts=3
+max_attempts=4
 while (( attempts < max_attempts )); do
   attempts=$((attempts + 1))
   echo "==> prisma migrate deploy (attempt ${attempts}/${max_attempts})"
