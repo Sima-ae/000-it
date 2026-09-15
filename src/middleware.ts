@@ -63,6 +63,13 @@ export default async function middleware(request: NextRequest) {
   const ua = request.headers.get("user-agent") || "";
   const isSocialBot = SOCIAL_BOT_RE.test(ua);
 
+  // Always read uploads from disk via API (covers written after boot).
+  if (pathname.startsWith("/uploads/")) {
+    const url = request.nextUrl.clone();
+    url.pathname = `/api${pathname}`;
+    return NextResponse.rewrite(url);
+  }
+
   // WhatsApp only reads ~5KB of HTML and misses Next.js OG tags (fonts/scripts first).
   // Serve a tiny OG-first HTML shell to social crawlers — no redirects.
   if (isSocialBot && isProductionHost(host)) {
@@ -150,5 +157,9 @@ export default async function middleware(request: NextRequest) {
 export const config = {
   // Prisma entity-slug hydrate needs Node (not Edge).
   runtime: "nodejs",
-  matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
+  matcher: [
+    // Include uploads even though they have file extensions (normally excluded).
+    "/uploads/:path*",
+    "/((?!api|_next|_vercel|.*\\..*).*)",
+  ],
 };

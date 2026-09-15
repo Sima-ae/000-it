@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import { NewsCoverImage } from "@/components/content/NewsCoverImage";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowLeft, ExternalLink } from "lucide-react";
@@ -88,19 +88,15 @@ export default async function NewsArticlePage({
         <p className="text-lg text-muted-foreground">{post.excerpt}</p>
       </header>
 
-      {post.coverImage ? (
-        <div className="relative mt-10 aspect-video overflow-hidden rounded-2xl border border-border/60 bg-muted">
-          <Image
-            src={post.coverImage}
-            alt={post.title}
-            fill
-            priority
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, 768px"
-            unoptimized={post.coverImage.includes("image.pollinations.ai")}
-          />
-        </div>
-      ) : null}
+      <div className="relative mt-10 aspect-video overflow-hidden rounded-2xl border border-border/60 bg-muted">
+        <NewsCoverImage
+          id={post.id}
+          coverImage={post.coverImage}
+          alt={post.title}
+          priority
+          sizes="(max-width: 768px) 100vw, 768px"
+        />
+      </div>
 
       <div className="prose prose-neutral mt-10 max-w-none dark:prose-invert">
         {paragraphs.map((paragraph, index) => (

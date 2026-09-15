@@ -3,6 +3,7 @@ import { requireRole } from "@/lib/api-auth";
 import { isAdminRole } from "@/lib/roles";
 import {
   createNewsPost,
+  getNewsPost,
   listNewsPosts,
   newsUpsertSchema,
   slugifyNewsId,
@@ -18,7 +19,14 @@ function parseTags(value: unknown): string[] {
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
+  const trash = searchParams.get("trash") === "1";
   const all = searchParams.get("all") === "1";
+
+  if (trash) {
+    const authResult = await requireRole(["SUPER_ADMIN"]);
+    if (authResult.error) return authResult.error;
+    return NextResponse.json(await listNewsPosts({ trashed: true }));
+  }
 
   if (all) {
     const authResult = await requireRole(["SUPER_ADMIN", "ADMIN", "MANAGER"]);
@@ -48,8 +56,9 @@ export async function POST(request: Request) {
   const data = parsed.data;
   const isAdmin = isAdminRole(authResult.session.user.role);
   let id = data.id || slugifyNewsId(data.title);
-  const existing = await listNewsPosts({ all: true });
-  if (existing.some((p) => p.id === id)) id = `${id}-${Date.now().toString(36)}`;
+  if (await getNewsPost(id, undefined, { includeTrashed: true })) {
+    id = `${id}-${Date.now().toString(36)}`;
+  }
 
   const item = await createNewsPost({
     id,

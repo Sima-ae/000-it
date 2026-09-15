@@ -8,11 +8,19 @@ export const maxDuration = 800;
 async function handle(request: Request) {
   const url = new URL(request.url);
   const force = url.searchParams.get("force") === "1";
+  const ignoreDailyCap = url.searchParams.get("ignoreDailyCap") === "1";
+  const dateRaw = (url.searchParams.get("date") || "").trim();
+  const date = /^\d{4}-\d{2}-\d{2}$/.test(dateRaw) ? dateRaw : undefined;
   const limitRaw = Number(url.searchParams.get("limit") || "3");
   const limit = Number.isFinite(limitRaw) ? limitRaw : 3;
 
   try {
-    const result = await runAutoNewsPublish({ force, limit });
+    const result = await runAutoNewsPublish({
+      force,
+      ignoreDailyCap,
+      date,
+      limit,
+    });
     return NextResponse.json(result, {
       status: result.ok || result.skipped ? 200 : 500,
     });

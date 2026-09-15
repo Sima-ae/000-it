@@ -174,6 +174,7 @@ function skipUiString(value: string) {
 
 async function fillNews(deadline: number, result: TranslateContentResult) {
   const posts = await prisma.newsPost.findMany({
+    where: { deletedAt: null },
     orderBy: [{ date: "desc" }, { createdAt: "desc" }],
     take: 80,
   });

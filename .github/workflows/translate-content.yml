@@ -37,14 +37,22 @@ jobs:
           if [[ -n "${KINDS}" ]]; then
             KINDS_QS="&kinds=${KINDS}"
           fi
-          URL="${BASE_URL%/}/api/cron/translate-content?deadlineMs=420000${KINDS_QS}"
+          # Stay under LiteSpeed's 300s connection timeout (deadline is also capped in the API).
+          URL="${BASE_URL%/}/api/cron/translate-content?deadlineMs=180000${KINDS_QS}"
           echo "POST ${URL}"
-          curl -fsS -X POST \
+          HTTP=$(curl -sS -o /tmp/translate-content.json -w "%{http_code}" -X POST \
             -H "Accept: application/json" \
-            --max-time 1100 \
-            "$URL" | tee /tmp/translate-content.json
-          node -e '
+            --max-time 240 \
+            "$URL")
+          echo "HTTP ${HTTP}"
+          head -c 4000 /tmp/translate-content.json; echo
+          HTTP_CODE="$HTTP" node -e '
             const fs = require("fs");
+            const http = process.env.HTTP_CODE;
+            if (http !== "200") {
+              console.error("translate-content failed with HTTP", http);
+              process.exit(1);
+            }
             const data = JSON.parse(fs.readFileSync("/tmp/translate-content.json","utf8"));
             console.log(JSON.stringify({
               ok: data.ok,

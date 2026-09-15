@@ -21,6 +21,7 @@ async function main() {
   const remoteOnly = process.argv.includes("--remote-only");
 
   const posts = await prisma.newsPost.findMany({
+    where: { deletedAt: null },
     select: {
       id: true,
       title: true,

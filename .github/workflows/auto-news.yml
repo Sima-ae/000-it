@@ -1,7 +1,8 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 # Publishes 3 multilingual /nieuws posts every day (EN source → all locales, NL default).
-# GitHub cron is UTC-only and often delayed; scheduled runs always use force=1 and
-# rely on the API's same-day dedupe (auto-{date}-*) to avoid duplicates.
+# GitHub cron is UTC-only and often delayed; scheduled runs always use force=1.
+# The API still caps at `limit` posts per Amsterdam day (auto-{date}-*) unless
+# ignoreDailyCap=1 is passed.
 name: Auto news (daily 00:00 CET)
 
 on:
@@ -45,12 +46,19 @@ jobs:
           fi
           URL="${BASE_URL%/}/api/cron/auto-news?limit=3${FORCE_FLAG}"
           echo "POST ${BASE_URL%/}/api/cron/auto-news?limit=3..."
-          curl -fsS -X POST \
+          HTTP=$(curl -sS -o /tmp/auto-news.json -w "%{http_code}" -X POST \
             -H "Accept: application/json" \
-            --max-time 1100 \
-            "$URL" | tee /tmp/auto-news.json
-          node -e '
+            --max-time 280 \
+            "$URL")
+          echo "HTTP ${HTTP}"
+          head -c 4000 /tmp/auto-news.json; echo
+          HTTP_CODE="$HTTP" node -e '
             const fs = require("fs");
+            const http = process.env.HTTP_CODE;
+            if (http !== "200") {
+              console.error("auto-news failed with HTTP", http);
+              process.exit(1);
+            }
             const data = JSON.parse(fs.readFileSync("/tmp/auto-news.json","utf8"));
             console.log(JSON.stringify({
               ok: data.ok,
@@ -69,6 +77,9 @@ jobs:
     name: Fill remaining news locales
     needs: publish
     if: always()
+    concurrency:
+      group: translate-content
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -78,14 +89,21 @@ jobs:
         run: |
           set -euo pipefail
           BASE_URL="${APP_URL:-https://000-it.com}"
-          URL="${BASE_URL%/}/api/cron/translate-content?kinds=news&deadlineMs=420000"
+          URL="${BASE_URL%/}/api/cron/translate-content?kinds=news&deadlineMs=180000"
           echo "POST ${URL}"
-          curl -fsS -X POST \
+          HTTP=$(curl -sS -o /tmp/translate-news.json -w "%{http_code}" -X POST \
             -H "Accept: application/json" \
-            --max-time 1100 \
-            "$URL" | tee /tmp/translate-news.json
-          node -e '
+            --max-time 240 \
+            "$URL")
+          echo "HTTP ${HTTP}"
+          head -c 4000 /tmp/translate-news.json; echo
+          HTTP_CODE="$HTTP" node -e '
             const fs = require("fs");
+            const http = process.env.HTTP_CODE;
+            if (http !== "200") {
+              console.error("translate-content failed with HTTP", http);
+              process.exit(1);
+            }
             const data = JSON.parse(fs.readFileSync("/tmp/translate-news.json","utf8"));
             console.log(JSON.stringify({
               ok: data.ok,

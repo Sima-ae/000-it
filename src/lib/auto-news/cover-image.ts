@@ -58,6 +58,22 @@ export function newsCoverForPost(input: NewsCoverInput) {
   return localNewsCoverPath(input.id);
 }
 
+/** Always a unique per-post URL so listings never render without a featured image. */
+export function featuredCoverUrl(id: string, coverImage?: string | null) {
+  const src = (coverImage || "").trim();
+  return src || localNewsCoverPath(id);
+}
+
+export function isCustomRemoteCover(coverImage?: string | null) {
+  const src = (coverImage || "").trim();
+  if (!src.startsWith("http://") && !src.startsWith("https://")) return false;
+  return !src.includes("image.pollinations.ai");
+}
+
+export function coverApiPath(id: string) {
+  return `/api/news/cover/${encodeURIComponent(id)}`;
+}
+
 async function fileExists(path: string) {
   try {
     await access(path);
@@ -83,24 +99,29 @@ export async function writeFallbackNewsCover(
   const title = input.title.replace(/[<>&"]/g, "").slice(0, 48);
   const industry = (input.industry || "AI").replace(/[<>&"]/g, "").slice(0, 28);
 
+  const cx1 = 160 + (seed % 420);
+  const cy1 = 90 + (seed % 260);
+  const cx2 = 620 + ((seed * 3) % 480);
+  const cy2 = 280 + ((seed * 5) % 240);
   const svg = `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
     <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="${hsl(h1, 42, 18)}"/>
-      <stop offset="55%" stop-color="${hsl(h2, 38, 24)}"/>
-      <stop offset="100%" stop-color="${hsl(h3, 45, 16)}"/>
+      <stop offset="0%" stop-color="${hsl(h1, 48, 16)}"/>
+      <stop offset="55%" stop-color="${hsl(h2, 42, 22)}"/>
+      <stop offset="100%" stop-color="${hsl(h3, 50, 14)}"/>
     </linearGradient>
-    <radialGradient id="glow" cx="70%" cy="30%" r="55%">
-      <stop offset="0%" stop-color="${hsl(h2, 70, 55)}" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="${hsl(h2, 70, 55)}" stop-opacity="0"/>
+    <radialGradient id="glow" cx="${40 + (seed % 40)}%" cy="${20 + (seed % 30)}%" r="58%">
+      <stop offset="0%" stop-color="${hsl(h2, 78, 58)}" stop-opacity="0.62"/>
+      <stop offset="100%" stop-color="${hsl(h2, 78, 58)}" stop-opacity="0"/>
     </radialGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#g)"/>
   <rect width="1200" height="630" fill="url(#glow)"/>
-  <circle cx="${180 + (seed % 200)}" cy="${140 + (seed % 120)}" r="${90 + (seed % 80)}" fill="${hsl(h1, 55, 48)}" opacity="0.22"/>
-  <circle cx="${780 + (seed % 180)}" cy="${420 + (seed % 90)}" r="${120 + (seed % 70)}" fill="${hsl(h3, 50, 52)}" opacity="0.18"/>
-  <rect x="64" y="64" width="1072" height="502" rx="28" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="2"/>
+  <circle cx="${cx1}" cy="${cy1}" r="${110 + (seed % 90)}" fill="${hsl(h1, 62, 50)}" opacity="0.28"/>
+  <circle cx="${cx2}" cy="${cy2}" r="${140 + ((seed * 11) % 80)}" fill="${hsl(h3, 58, 54)}" opacity="0.22"/>
+  <polygon points="${200 + (seed % 80)},${480 + (seed % 40)} ${520 + (seed % 120)},${90 + (seed % 70)} ${860 + (seed % 90)},${500 + (seed % 50)}" fill="${hsl(h2, 40, 40)}" opacity="0.12"/>
+  <rect x="64" y="64" width="1072" height="502" rx="28" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2"/>
   <text x="96" y="480" fill="rgba(255,255,255,0.92)" font-family="Georgia, serif" font-size="34" font-weight="600">${title}</text>
   <text x="96" y="528" fill="rgba(255,255,255,0.55)" font-family="ui-sans-serif, system-ui, sans-serif" font-size="20">${industry}</text>
 </svg>`;

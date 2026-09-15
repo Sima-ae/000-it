@@ -16,7 +16,11 @@ import {
   catalogGroupTitle,
   catalogServiceTitle,
 } from "@/content/fixweb/catalog-title";
-import { localizedHref } from "@/i18n/pathnames";
+import {
+  hashFor,
+  localizedHref,
+  resolveHashElementId,
+} from "@/i18n/pathnames";
 import { cn } from "@/lib/utils";
 
 const primaryLinks = [
@@ -30,6 +34,10 @@ const primaryLinks = [
   { href: "/contact", key: "contact" },
 ] as const;
 
+function isLocaleHome(pathname: string, locale: string) {
+  return pathname === `/${locale}` || pathname === `/${locale}/`;
+}
+
 export function Navigation() {
   const t = useTranslations("nav");
   const tCommon = useTranslations("common");
@@ -39,6 +47,15 @@ export function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileInfoOpen, setMobileInfoOpen] = useState(false);
+  const [hash, setHash] = useState("");
+  const [pricingInView, setPricingInView] = useState(false);
+
+  const onHome = isLocaleHome(pathname, locale);
+  const pricingHash = hashFor(locale, "prijzen");
+  const pricingHashActive =
+    onHome &&
+    (resolveHashElementId(hash) === "prijzen" || hash === pricingHash);
+  const pricingActive = pricingHashActive || (onHome && pricingInView);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -48,10 +65,61 @@ export function Navigation() {
   }, []);
 
   useEffect(() => {
+    const syncHash = () =>
+      setHash(window.location.hash.replace(/^#/, "").trim());
+    syncHash();
+    window.addEventListener("hashchange", syncHash);
+    window.addEventListener("popstate", syncHash);
+    return () => {
+      window.removeEventListener("hashchange", syncHash);
+      window.removeEventListener("popstate", syncHash);
+    };
+  }, [pathname]);
+
+  useEffect(() => {
     setOpen(false);
     setMobileServicesOpen(false);
     setMobileInfoOpen(false);
+    setPricingInView(false);
   }, [pathname]);
+
+  // Highlight Prijzen only while the homepage pricing block is actually visible.
+  useEffect(() => {
+    if (!onHome) {
+      setPricingInView(false);
+      return;
+    }
+    const el =
+      document.getElementById(pricingHash) ||
+      document.getElementById("prijzen");
+    if (!el) {
+      setPricingInView(false);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setPricingInView(Boolean(entry?.isIntersecting));
+      },
+      {
+        // Require a meaningful portion of the section in view (not just a peek).
+        root: null,
+        rootMargin: "-20% 0px -45% 0px",
+        threshold: [0, 0.15, 0.35],
+      },
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [onHome, pricingHash, pathname]);
+
+  function linkActive(linkHref: string, pathOnly: string) {
+    if (linkHref === "#prijzen") return pricingActive;
+    if (linkHref === "/") {
+      // Home stays active on the homepage, except while the pricing section is focused.
+      return onHome && !pricingActive;
+    }
+    return pathname === pathOnly || pathname.startsWith(`${pathOnly}/`);
+  }
 
   return (
     <header className="pointer-events-none fixed inset-x-0 top-0 z-50 px-3 pt-3 md:px-4 md:pt-4">
@@ -76,10 +144,7 @@ export function Navigation() {
             {primaryLinks.map((link) => {
               const href = localizedHref(locale, link.href);
               const pathOnly = href.split("#")[0];
-              const active =
-                link.href === "/"
-                  ? pathname === pathOnly || pathname === `/${locale}`
-                  : pathname === pathOnly || pathname.startsWith(`${pathOnly}/`);
+              const active = linkActive(link.href, pathOnly);
 
               if ("mega" in link && link.mega) {
                 return (
@@ -156,10 +221,7 @@ export function Navigation() {
               {primaryLinks.map((link) => {
                 const href = localizedHref(locale, link.href);
                 const pathOnly = href.split("#")[0];
-                const active =
-                  link.href === "/"
-                    ? pathname === pathOnly || pathname === `/${locale}`
-                    : pathname === pathOnly || pathname.startsWith(`${pathOnly}/`);
+                const active = linkActive(link.href, pathOnly);
 
                 if ("mega" in link && link.mega) {
                   return (

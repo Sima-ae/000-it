@@ -152,6 +152,9 @@ export function NewsAdminForm({
           onChange={(e) => setField("coverImage", e.target.value)}
           placeholder="/uploads/nieuws/..."
         />
+        <p className="text-xs text-muted-foreground">
+          Optional. Leave empty and a unique featured image is generated automatically.
+        </p>
       </div>
 
       {canEditMeta ? (

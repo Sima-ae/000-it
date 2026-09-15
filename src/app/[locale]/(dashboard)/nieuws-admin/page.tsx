@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
@@ -23,8 +22,9 @@ import {
   newsPostToForm,
   type NewsFormValues,
 } from "@/components/content/NewsAdminForm";
+import { NewsCoverImage } from "@/components/content/NewsCoverImage";
 import type { NewsPost } from "@/lib/news";
-import { canDelete, canEditResource } from "@/lib/roles";
+import { canDelete, canEditResource, isSuperAdmin } from "@/lib/roles";
 
 export default function NieuwsAdminPage() {
   const t = useTranslations("dashboard");
@@ -55,11 +55,17 @@ export default function NieuwsAdminPage() {
         <div>
           <h1 className="text-3xl font-semibold">{t("news")}</h1>
           <p className="text-sm text-muted-foreground">
-            Manage public news posts shown on /nieuws · Dutch is the default language;
-            English is the write source and other locales are auto-translated.
+            Manage public news posts shown on /nieuws. Posts older than 365 days move to
+            the trash automatically. Dutch is the default language; English is the write
+            source and other locales are auto-translated.
           </p>
         </div>
         <div className="flex gap-2">
+          {isSuperAdmin(role) ? (
+            <Button asChild variant="outline">
+              <Link href={localizedHref(locale, "/nieuws-admin/trash")}>Trash</Link>
+            </Button>
+          ) : null}
           <Button asChild variant="outline">
             <Link href={localizedHref(locale, "/nieuws")} target="_blank">
               View public page
@@ -96,9 +102,12 @@ export default function NieuwsAdminPage() {
               className="flex flex-col gap-3 rounded-xl border border-border p-3 sm:flex-row sm:items-center"
             >
               <div className="relative h-20 w-full overflow-hidden rounded-lg bg-muted sm:w-28">
-                {item.coverImage ? (
-                  <Image src={item.coverImage} alt="" fill className="object-cover" />
-                ) : null}
+                <NewsCoverImage
+                  id={item.id}
+                  coverImage={item.coverImage}
+                  alt=""
+                  sizes="112px"
+                />
               </div>
               <div className="min-w-0 flex-1">
                 <div className="flex flex-wrap items-center gap-2">
@@ -132,17 +141,22 @@ export default function NieuwsAdminPage() {
                     size="sm"
                     variant="ghost"
                     onClick={async () => {
-                      if (!confirm("Delete this news post?")) return;
+                      if (
+                        !confirm(
+                          "Move this news post to the trash? Super admin can restore it or delete it permanently later.",
+                        )
+                      )
+                        return;
                       const res = await fetch(`/api/news/${item.id}`, { method: "DELETE" });
                       if (!res.ok) {
-                        toast.error("Delete failed");
+                        toast.error("Could not move to trash");
                         return;
                       }
-                      toast.success("Deleted");
+                      toast.success("Moved to trash");
                       void qc.invalidateQueries({ queryKey: ["news-admin"] });
                     }}
                   >
-                    Delete
+                    Move to trash
                   </Button>
                 ) : null}
               </div>

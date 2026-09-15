@@ -46,6 +46,7 @@ async function main() {
   }
 
   const posts = await prisma.newsPost.findMany({
+    where: { deletedAt: null },
     orderBy: [{ date: "desc" }, { createdAt: "desc" }],
     take: limit,
   });

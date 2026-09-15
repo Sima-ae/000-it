@@ -99,8 +99,12 @@ export const SoftLink = forwardRef<HTMLAnchorElement, SoftLinkProps>(
       if (!targetHref.startsWith("/")) return;
 
       const hashPart = hrefString.includes("#") ? hrefString.split("#").slice(1).join("#") : "";
+      const currentHash =
+        typeof window !== "undefined"
+          ? window.location.hash.replace(/^#/, "")
+          : "";
 
-      // Same path (ignore hash): scroll to anchor instead of no-op.
+      // Same path (ignore hash): scroll to anchor, or clear hash / stay put.
       if (currentHrefFromWindow(pathname) === targetHref) {
         if (hashPart) {
           event.preventDefault();
@@ -110,7 +114,16 @@ export const SoftLink = forwardRef<HTMLAnchorElement, SoftLinkProps>(
           if (el) {
             el.scrollIntoView({ behavior: "smooth", block: "start" });
             window.history.pushState(null, "", `#${hashPart}`);
+            // pushState does not fire hashchange — notify nav active-state listeners.
+            window.dispatchEvent(new HashChangeEvent("hashchange"));
           }
+          return;
+        }
+        if (currentHash) {
+          event.preventDefault();
+          window.history.pushState(null, "", pathname.split("?")[0] || "/");
+          window.dispatchEvent(new HashChangeEvent("hashchange"));
+          window.scrollTo({ top: 0, behavior: "smooth" });
         }
         return;
       }

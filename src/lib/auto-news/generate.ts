@@ -15,7 +15,31 @@ export type GeneratedNewsDraft = {
 };
 
 function cleanText(value: string) {
-  return value.replace(/\s+/g, " ").trim();
+  return decodeHtmlEntities(value).replace(/\s+/g, " ").trim();
+}
+
+/** Decode common feed / HTML entities so titles never show &#8217; etc. */
+export function decodeHtmlEntities(value: string) {
+  if (!value) return "";
+  return value
+    .replace(/&#x([0-9a-f]+);/gi, (_, hex) =>
+      String.fromCodePoint(Number.parseInt(hex, 16)),
+    )
+    .replace(/&#(\d+);/g, (_, num) =>
+      String.fromCodePoint(Number.parseInt(num, 10)),
+    )
+    .replace(/&nbsp;/gi, " ")
+    .replace(/&amp;/gi, "&")
+    .replace(/&quot;/gi, '"')
+    .replace(/&apos;/gi, "'")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">")
+    .replace(/&rsquo;/gi, "\u2019")
+    .replace(/&lsquo;/gi, "\u2018")
+    .replace(/&rdquo;/gi, "\u201D")
+    .replace(/&ldquo;/gi, "\u201C")
+    .replace(/&mdash;/gi, "\u2014")
+    .replace(/&ndash;/gi, "\u2013");
 }
 
 /**
@@ -227,15 +251,20 @@ export async function generateBilingualNewsDraft(
   let titleNl = "";
   let excerptNl = "";
   let descriptionNl = "";
+  // Soft-fail NL: still publish EN so a Translate outage cannot wipe a day.
   try {
     // Sequential to reduce Google Translate 429s
     titleNl = await translateText(en.title, "nl", "en");
     excerptNl = await translateText(en.excerpt, "nl", "en");
     descriptionNl = await translateText(en.description, "nl", "en");
   } catch (error) {
-    throw new Error(
-      `Dutch translate failed: ${error instanceof Error ? error.message : String(error)}`,
+    console.warn(
+      "[auto-news] Dutch translate failed — publishing EN fallback",
+      error instanceof Error ? error.message : error,
     );
+    titleNl = en.title;
+    excerptNl = en.excerpt;
+    descriptionNl = en.description;
   }
 
   const nlSeed = {
@@ -248,7 +277,13 @@ export async function generateBilingualNewsDraft(
     !isAcceptableTranslation(en.excerpt, nlSeed.excerpt, "en", "nl") ||
     !isAcceptableTranslation(en.description, nlSeed.description, "en", "nl")
   ) {
-    throw new Error(`Dutch quality check failed: ${story.url}`);
+    console.warn(
+      "[auto-news] Dutch quality check failed — using EN for NL fields",
+      story.url,
+    );
+    nlSeed.title = en.title;
+    nlSeed.excerpt = en.excerpt;
+    nlSeed.description = en.description;
   }
 
   const draft = sanitizeNewsDraft({

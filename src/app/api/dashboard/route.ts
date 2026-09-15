@@ -91,7 +91,9 @@ export async function GET() {
 
     const newsOwned = isStaffRole(role)
       ? await prisma.newsPost.count({
-          where: isManagerRole(role) ? { createdById: userId } : undefined,
+          where: isManagerRole(role)
+            ? { createdById: userId, deletedAt: null }
+            : { deletedAt: null },
         })
       : 0;
     const casesOwned = isStaffRole(role)

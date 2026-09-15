@@ -1,5 +1,5 @@
 import { prisma } from "@/lib/prisma";
-import { createNewsPost, completeNewsTranslations, slugifyNewsId } from "@/lib/news";
+import { createNewsPost, slugifyNewsId } from "@/lib/news";
 import { AUTO_NEWS_AUTHOR, AUTO_NEWS_PER_RUN } from "@/lib/auto-news/config";
 import { ensureNewsCoverImage } from "@/lib/auto-news/cover-image";
 import { fetchRecentAiStories } from "@/lib/auto-news/fetch-stories";
@@ -15,8 +15,16 @@ import {
 } from "@/lib/auto-news/schedule";
 
 export type AutoNewsRunOptions = {
+  /** Bypass Amsterdam night window. */
   force?: boolean;
+  /**
+   * Allow publishing even when the day already has `limit` auto posts.
+   * Use only for intentional overflow — normal force still respects the daily cap.
+   */
+  ignoreDailyCap?: boolean;
   limit?: number;
+  /** Publish under this YYYY-MM-DD (Amsterdam) instead of today — for gap backfill. */
+  date?: string;
 };
 
 export type AutoNewsRunResult = {
@@ -40,21 +48,28 @@ function normalizeUrl(url: string) {
   }
 }
 
+function isValidIsoDate(value: string) {
+  return /^\d{4}-\d{2}-\d{2}$/.test(value);
+}
+
 export async function runAutoNewsPublish(
   options: AutoNewsRunOptions = {},
 ): Promise<AutoNewsRunResult> {
   const clock = getAmsterdamClock();
+  const targetDate =
+    options.date && isValidIsoDate(options.date) ? options.date : clock.isoDate;
+  const isBackfill = Boolean(options.date && options.date !== clock.isoDate);
   const limit = Math.min(Math.max(options.limit ?? AUTO_NEWS_PER_RUN, 1), 12);
   const result: AutoNewsRunResult = {
     ok: true,
-    date: clock.isoDate,
+    date: targetDate,
     weekday: clock.weekday,
     hour: clock.hour,
     published: [],
     errors: [],
   };
 
-  if (!options.force && !isAutoNewsScheduleWindow()) {
+  if (!options.force && !isBackfill && !isAutoNewsScheduleWindow()) {
     return {
       ...result,
       ok: true,
@@ -63,20 +78,25 @@ export async function runAutoNewsPublish(
     };
   }
 
-  const dayPrefix = `auto-${clock.isoDate}-`;
+  const dayPrefix = `auto-${targetDate}-`;
   const alreadyToday = await prisma.newsPost.count({
     where: { id: { startsWith: dayPrefix } },
   });
-  if (!options.force && alreadyToday >= limit) {
+
+  // Force still respects the daily cap unless ignoreDailyCap / historical backfill.
+  const bypassCap = Boolean(options.ignoreDailyCap || isBackfill);
+  if (!bypassCap && alreadyToday >= limit) {
     return {
       ...result,
       ok: true,
       skipped: true,
-      reason: `Already published ${alreadyToday} auto posts for ${clock.isoDate}`,
+      reason: `Already published ${alreadyToday} auto posts for ${targetDate}`,
     };
   }
 
-  const remaining = options.force ? limit : Math.max(limit - alreadyToday, 0);
+  const remaining = bypassCap
+    ? limit
+    : Math.max(limit - alreadyToday, 0);
   if (remaining <= 0) {
     return {
       ...result,
@@ -86,7 +106,7 @@ export async function runAutoNewsPublish(
     };
   }
 
-  const stories = await fetchRecentAiStories(40);
+  const stories = await fetchRecentAiStories(80);
   if (!stories.length) {
     return {
       ...result,
@@ -99,7 +119,7 @@ export async function runAutoNewsPublish(
   const existing = await prisma.newsPost.findMany({
     select: { id: true, projectUrl: true, title: true },
     orderBy: { createdAt: "desc" },
-    take: 500,
+    take: 2000,
   });
   const usedUrls = new Set(
     existing
@@ -136,7 +156,7 @@ export async function runAutoNewsPublish(
 
   let indexOffset = alreadyToday;
   // Try extra candidates if some fail quality checks
-  for (const story of candidates.slice(0, Math.max(remaining * 3, remaining))) {
+  for (const story of candidates.slice(0, Math.max(remaining * 4, remaining))) {
     if (result.published.length >= remaining) break;
 
     try {
@@ -154,7 +174,7 @@ export async function runAutoNewsPublish(
         continue;
       }
 
-      let id = slugifyAutoNewsId(draft.title, clock.isoDate, indexOffset);
+      let id = slugifyAutoNewsId(draft.title, targetDate, indexOffset);
       if (await prisma.newsPost.findUnique({ where: { id } })) {
         id = `${slugifyNewsId(draft.title)}-${Date.now().toString(36)}`.slice(0, 80);
       }
@@ -171,11 +191,6 @@ export async function runAutoNewsPublish(
         { force: true, download: true, retries: 5, delayMs: 1500 },
       );
 
-      if (!coverImage) {
-        result.errors.push(`${story.url}: skipped (no cover)`);
-        continue;
-      }
-
       const created = await createNewsPost({
         id,
         title: draft.title,
@@ -186,7 +201,7 @@ export async function runAutoNewsPublish(
         descriptionNl: draft.descriptionNl,
         translations: draft.translations,
         autoTranslate: false,
-        date: clock.isoDate,
+        date: targetDate,
         coverImage,
         author: AUTO_NEWS_AUTHOR,
         projectUrl: story.url,
@@ -197,18 +212,8 @@ export async function runAutoNewsPublish(
         createdById: owner?.id || null,
       });
 
-      // Fill remaining locales with a time budget. The translate-content cron
-      // resumes any language that did not finish before the next request.
-      try {
-        await completeNewsTranslations(created.id, {
-          deadlineMs: 90_000,
-        });
-      } catch (i18nError) {
-        const message =
-          i18nError instanceof Error ? i18nError.message : String(i18nError);
-        console.warn("[auto-news] multi-locale fill failed", created.id, message);
-        result.errors.push(`${created.id}: multi-locale fill: ${message}`);
-      }
+      // EN+NL are already on the draft. Remaining locales are filled by the
+      // translate-content cron so this request stays under LiteSpeed's 300s timeout.
 
       usedUrls.add(normalizeUrl(story.url));
       usedTitles.add(created.title.toLowerCase().trim());

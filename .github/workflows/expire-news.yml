@@ -1,0 +1,83 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+# Move news older than 365 days into the super-admin trash.
+name: Expire news (365 days)
+
+on:
+  schedule:
+    # After Amsterdam midnight (UTC) plus a backup slot for Actions drift.
+    - cron: "25 0,22 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: expire-news
+  cancel-in-progress: false
+
+jobs:
+  expire:
+    name: Move stale news to trash
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Trigger expire-news endpoint
+        env:
+          APP_URL: ${{ secrets.AUTO_NEWS_APP_URL }}
+        run: |
+          set -euo pipefail
+          BASE_URL="${APP_URL:-https://000-it.com}"
+          URL="${BASE_URL%/}/api/cron/expire-news"
+          echo "POST ${URL}"
+          HTTP=$(curl -sS -o /tmp/expire-news.json -w "%{http_code}" -X POST \
+            -H "Accept: application/json" \
+            --max-time 60 \
+            "$URL")
+          echo "HTTP ${HTTP}"
+          head -c 4000 /tmp/expire-news.json; echo
+          HTTP_CODE="$HTTP" node -e '
+            const fs = require("fs");
+            const http = process.env.HTTP_CODE;
+            if (http !== "200") {
+              console.error("expire-news failed with HTTP", http);
+              process.exit(1);
+            }
+            const data = JSON.parse(fs.readFileSync("/tmp/expire-news.json","utf8"));
+            console.log(JSON.stringify(data, null, 2));
+            if (data.ok === false) process.exit(1);
+          '
+
+  covers:
+    name: Backfill unique news covers
+    needs: expire
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Trigger news-covers endpoint
+        env:
+          APP_URL: ${{ secrets.AUTO_NEWS_APP_URL }}
+        run: |
+          set -euo pipefail
+          BASE_URL="${APP_URL:-https://000-it.com}"
+          URL="${BASE_URL%/}/api/cron/news-covers?deadlineMs=180000"
+          echo "POST ${URL}"
+          HTTP=$(curl -sS -o /tmp/news-covers.json -w "%{http_code}" -X POST \
+            -H "Accept: application/json" \
+            --max-time 240 \
+            "$URL")
+          echo "HTTP ${HTTP}"
+          head -c 4000 /tmp/news-covers.json; echo
+          HTTP_CODE="$HTTP" node -e '
+            const fs = require("fs");
+            const http = process.env.HTTP_CODE;
+            if (http !== "200") {
+              console.error("news-covers failed with HTTP", http);
+              process.exit(1);
+            }
+            const data = JSON.parse(fs.readFileSync("/tmp/news-covers.json","utf8"));
+            console.log(JSON.stringify({
+              ok: data.ok,
+              written: data.written,
+              skipped: data.skipped,
+              remaining: data.remaining,
+            }, null, 2));
+            if (data.ok === false) process.exit(1);
+          '

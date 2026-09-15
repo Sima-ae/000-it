@@ -16,6 +16,7 @@
     "db:seed": "npx --yes tsx prisma/seed.ts",
     "db:seed:kennisbank": "npx --yes tsx --env-file=.env prisma/seed-kennisbank.ts",
     "news:auto": "npx --yes tsx scripts/run-auto-news.ts",
+    "news:backfill": "npx --yes tsx --env-file=.env scripts/backfill-auto-news.ts",
     "news:covers": "npx --yes tsx scripts/backfill-news-covers.ts",
     "news:repair": "npx --yes tsx scripts/repair-auto-news.ts",
     "news:translate": "npx --yes tsx --env-file=.env scripts/translate-news.ts",

@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+# Ensure every live news post has a unique local featured image.
+name: News covers (unique images)
+
+on:
+  schedule:
+    - cron: "50 */6 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: news-covers
+  cancel-in-progress: false
+
+jobs:
+  covers:
+    name: Backfill unique news covers
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Trigger news-covers endpoint
+        env:
+          APP_URL: ${{ secrets.AUTO_NEWS_APP_URL }}
+        run: |
+          set -euo pipefail
+          BASE_URL="${APP_URL:-https://000-it.com}"
+          URL="${BASE_URL%/}/api/cron/news-covers?deadlineMs=180000"
+          echo "POST ${URL}"
+          HTTP=$(curl -sS -o /tmp/news-covers.json -w "%{http_code}" -X POST \
+            -H "Accept: application/json" \
+            --max-time 240 \
+            "$URL")
+          echo "HTTP ${HTTP}"
+          head -c 4000 /tmp/news-covers.json; echo
+          HTTP_CODE="$HTTP" node -e '
+            const fs = require("fs");
+            const http = process.env.HTTP_CODE;
+            if (http !== "200") {
+              console.error("news-covers failed with HTTP", http);
+              process.exit(1);
+            }
+            const data = JSON.parse(fs.readFileSync("/tmp/news-covers.json","utf8"));
+            console.log(JSON.stringify(data, null, 2));
+            if (data.ok === false) process.exit(1);
+          '

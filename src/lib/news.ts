@@ -2,12 +2,20 @@ import { z } from "zod";
 import { prisma } from "@/lib/prisma";
 import { cleanSourceSummary } from "@/lib/auto-news/generate";
 import {
+  ensureNewsCoverImage,
+  featuredCoverUrl,
+} from "@/lib/auto-news/cover-image";
+import {
   buildNewsTranslationsFromEnglish,
   newsCopyLooksComplete,
   nlFromTranslations,
   parseNewsTranslations,
   type NewsTranslationsMap,
 } from "@/lib/news-i18n";
+import {
+  removeLocalNewsCover,
+  type NewsDeletedReason,
+} from "@/lib/news-retention";
 
 export type NewsPost = {
   id: string;
@@ -26,6 +34,9 @@ export type NewsPost = {
   tags: string[];
   createdById?: string | null;
   published?: boolean;
+  deletedAt?: string | null;
+  deletedReason?: NewsDeletedReason | string | null;
+  retentionExempt?: boolean;
 };
 
 const localeCopySchema = z.object({
@@ -78,6 +89,9 @@ function mapNews(row: {
   tags: unknown;
   createdById: string | null;
   published: boolean;
+  deletedAt?: Date | null;
+  deletedReason?: string | null;
+  retentionExempt?: boolean;
 }): NewsPost {
   const translations = parseNewsTranslations(row.translations);
   // Mirror legacy *Nl into translations.nl when missing.
@@ -96,7 +110,7 @@ function mapNews(row: {
     excerpt: cleanSourceSummary(row.excerpt),
     excerptNl: row.excerptNl ? cleanSourceSummary(row.excerptNl) : row.excerptNl,
     date: row.date,
-    coverImage: row.coverImage,
+    coverImage: featuredCoverUrl(row.id, row.coverImage),
     description: cleanSourceSummary(row.description),
     descriptionNl: row.descriptionNl
       ? cleanSourceSummary(row.descriptionNl)
@@ -108,6 +122,9 @@ function mapNews(row: {
     tags: asStringArray(row.tags),
     createdById: row.createdById,
     published: row.published,
+    deletedAt: row.deletedAt ? row.deletedAt.toISOString() : null,
+    deletedReason: row.deletedReason ?? null,
+    retentionExempt: row.retentionExempt ?? false,
   };
 }
 
@@ -169,10 +186,23 @@ export function publicNewsTags(tags: string[] | null | undefined): string[] {
 
 export const NEWS_PAGE_SIZE = 21;
 
-export async function listNewsPosts(opts?: { all?: boolean; locale?: string }) {
+const notTrashed = { deletedAt: null } as const;
+
+export async function listNewsPosts(opts?: {
+  all?: boolean;
+  locale?: string;
+  trashed?: boolean;
+}) {
+  const where = opts?.trashed
+    ? { deletedAt: { not: null } }
+    : opts?.all
+      ? notTrashed
+      : { published: true, ...notTrashed };
   const rows = await prisma.newsPost.findMany({
-    where: opts?.all ? undefined : { published: true },
-    orderBy: [{ date: "desc" }, { createdAt: "desc" }],
+    where,
+    orderBy: opts?.trashed
+      ? [{ deletedAt: "desc" }, { date: "desc" }]
+      : [{ date: "desc" }, { createdAt: "desc" }],
   });
   const mapped = rows.map(mapNews);
   if (!opts?.locale) return mapped;
@@ -187,7 +217,9 @@ export async function listNewsPostsPage(opts: {
 }) {
   const pageSize = Math.max(1, opts.pageSize ?? NEWS_PAGE_SIZE);
   const page = Math.max(1, opts.page ?? 1);
-  const where = opts.all ? undefined : { published: true };
+  const where = opts.all
+    ? notTrashed
+    : { published: true, ...notTrashed };
 
   const [total, rows] = await Promise.all([
     prisma.newsPost.count({ where }),
@@ -226,16 +258,21 @@ export async function listNewsPostsPage(opts: {
   };
 }
 
-export async function getNewsPost(id: string, locale?: string) {
+export async function getNewsPost(
+  id: string,
+  locale?: string,
+  opts?: { includeTrashed?: boolean },
+) {
   const row = await prisma.newsPost.findUnique({ where: { id } });
   if (!row) return null;
+  if (row.deletedAt && !opts?.includeTrashed) return null;
   const mapped = mapNews(row);
   return locale ? localizeNewsPost(mapped, locale) : mapped;
 }
 
 export async function getPublishedNewsPost(id: string, locale?: string) {
   const row = await prisma.newsPost.findFirst({
-    where: { id, published: true },
+    where: { id, published: true, ...notTrashed },
   });
   if (!row) return null;
   const mapped = mapNews(row);
@@ -244,7 +281,7 @@ export async function getPublishedNewsPost(id: string, locale?: string) {
 
 export async function listPublishedNewsIds() {
   return prisma.newsPost.findMany({
-    where: { published: true },
+    where: { published: true, ...notTrashed },
     select: { id: true, date: true, updatedAt: true },
     orderBy: [{ date: "desc" }, { updatedAt: "desc" }],
   });
@@ -332,6 +369,37 @@ export async function createNewsPost(
 
   const nl = nlFromTranslations(translations, en);
 
+  const coverInput = {
+    id: data.id,
+    title: data.title,
+    industry: data.industry,
+    excerpt: data.excerpt,
+  };
+  let coverImage = data.coverImage?.trim() || "";
+  if (!coverImage) {
+    coverImage = await ensureNewsCoverImage(coverInput, { download: false });
+    void ensureNewsCoverImage(coverInput, {
+      force: true,
+      download: true,
+      retries: 4,
+      delayMs: 1500,
+    })
+      .then(async (url) => {
+        if (!url || url === coverImage) return;
+        await prisma.newsPost.update({
+          where: { id: data.id },
+          data: { coverImage: url },
+        });
+      })
+      .catch((error) =>
+        console.warn(
+          "[news] cover upgrade failed",
+          data.id,
+          error instanceof Error ? error.message : error,
+        ),
+      );
+  }
+
   const row = await prisma.newsPost.create({
     data: {
       id: data.id,
@@ -340,7 +408,7 @@ export async function createNewsPost(
       excerpt: data.excerpt,
       excerptNl: nl.excerpt,
       date: data.date,
-      coverImage: data.coverImage || null,
+      coverImage,
       description: data.description,
       descriptionNl: nl.description,
       translations,
@@ -373,7 +441,7 @@ export async function completeNewsTranslations(
   opts?: { force?: boolean; deadlineMs?: number },
 ) {
   const row = await prisma.newsPost.findUnique({ where: { id } });
-  if (!row) return null;
+  if (!row || row.deletedAt) return null;
 
   const en = {
     title: row.title,
@@ -407,11 +475,20 @@ export async function updateNewsPost(
   data: Partial<z.infer<typeof newsUpsertSchema>> & { createdById?: string | null },
 ) {
   const existing = await prisma.newsPost.findUnique({ where: { id } });
-  if (!existing) throw new Error("News post not found");
+  if (!existing || existing.deletedAt) throw new Error("News post not found");
 
   const title = data.title ?? existing.title;
   const excerpt = data.excerpt ?? existing.excerpt;
   const description = data.description ?? existing.description;
+  const industry = data.industry !== undefined ? data.industry : existing.industry;
+  let coverImage =
+    data.coverImage !== undefined ? data.coverImage : existing.coverImage;
+  if (!coverImage?.trim()) {
+    coverImage = await ensureNewsCoverImage(
+      { id, title, excerpt, industry },
+      { download: false },
+    );
+  }
 
   const i18n = await ensureTranslationsForPost({
     title,
@@ -436,7 +513,7 @@ export async function updateNewsPost(
       excerpt: data.excerpt,
       excerptNl: i18n.excerptNl,
       date: data.date,
-      coverImage: data.coverImage,
+      coverImage,
       description: data.description,
       descriptionNl: i18n.descriptionNl,
       translations: i18n.translations,
@@ -462,8 +539,42 @@ export async function updateNewsPost(
   return mapNews(row);
 }
 
-export async function deleteNewsPost(id: string) {
+export async function trashNewsPost(id: string, reason: NewsDeletedReason = "manual") {
+  const row = await prisma.newsPost.findUnique({ where: { id } });
+  if (!row) return null;
+  if (row.deletedAt) return mapNews(row);
+  const updated = await prisma.newsPost.update({
+    where: { id },
+    data: { deletedAt: new Date(), deletedReason: reason },
+  });
+  return mapNews(updated);
+}
+
+export async function restoreNewsPost(id: string) {
+  const row = await prisma.newsPost.findUnique({ where: { id } });
+  if (!row?.deletedAt) return null;
+  const updated = await prisma.newsPost.update({
+    where: { id },
+    data: {
+      deletedAt: null,
+      deletedReason: null,
+      retentionExempt: true,
+    },
+  });
+  return mapNews(updated);
+}
+
+export async function permanentlyDeleteNewsPost(id: string) {
+  const row = await prisma.newsPost.findUnique({ where: { id } });
+  if (!row?.deletedAt) return false;
   await prisma.newsPost.delete({ where: { id } });
+  await removeLocalNewsCover(id, row.coverImage);
+  return true;
+}
+
+/** @deprecated use trashNewsPost — hard delete is only from the trash bin */
+export async function deleteNewsPost(id: string) {
+  await trashNewsPost(id, "manual");
 }
 
 export function slugifyNewsId(title: string) {

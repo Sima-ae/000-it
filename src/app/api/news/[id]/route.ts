@@ -2,9 +2,9 @@ import { NextResponse } from "next/server";
 import { requireRole } from "@/lib/api-auth";
 import { canDelete, canEditResource, isAdminRole } from "@/lib/roles";
 import {
-  deleteNewsPost,
   getNewsPost,
   newsUpsertSchema,
+  trashNewsPost,
   updateNewsPost,
 } from "@/lib/news";
 
@@ -82,6 +82,6 @@ export async function DELETE(_request: Request, { params }: Params) {
   const { id } = await params;
   const current = await getNewsPost(id);
   if (!current) return NextResponse.json({ error: "Not found" }, { status: 404 });
-  await deleteNewsPost(id);
-  return NextResponse.json({ ok: true });
+  await trashNewsPost(id, "manual");
+  return NextResponse.json({ ok: true, trashed: true });
 }
