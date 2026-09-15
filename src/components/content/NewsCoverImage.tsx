@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { coverApiPath } from "@/lib/auto-news/cover-image";
+import { coverApiPath } from "@/lib/auto-news/cover-paths";
 
 function initialCoverSrc(id: string, coverImage?: string | null) {
   const src = (coverImage || "").trim();

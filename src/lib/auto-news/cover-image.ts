@@ -1,7 +1,18 @@
+/**
+ * Server-only cover generation (sharp / filesystem).
+ * Browser-safe path helpers live in `cover-paths.ts`.
+ */
 import { createHash } from "node:crypto";
 import { mkdir, access } from "node:fs/promises";
 import { join } from "node:path";
 import sharp from "sharp";
+import {
+  coverApiPath,
+  featuredCoverUrl,
+  isCustomRemoteCover,
+  localNewsCoverPath,
+  sanitizeCoverFileId,
+} from "@/lib/auto-news/cover-paths";
 
 export type NewsCoverInput = {
   id: string;
@@ -11,13 +22,20 @@ export type NewsCoverInput = {
   excerpt?: string | null;
 };
 
+export {
+  coverApiPath,
+  featuredCoverUrl,
+  isCustomRemoteCover,
+  localNewsCoverPath,
+};
+
 function seedFromId(id: string) {
   const hex = createHash("sha256").update(id).digest("hex").slice(0, 8);
   return Number.parseInt(hex, 16) % 1_000_000_000;
 }
 
 function sanitizeFileId(id: string) {
-  return id.replace(/[^a-zA-Z0-9_-]/g, "-").slice(0, 80);
+  return sanitizeCoverFileId(id);
 }
 
 function hsl(h: number, s: number, l: number) {
@@ -49,29 +67,9 @@ export function buildNewsCoverRemoteUrl(input: NewsCoverInput) {
   return `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?${params.toString()}`;
 }
 
-export function localNewsCoverPath(id: string) {
-  return `/uploads/nieuws/${sanitizeFileId(id)}.jpg`;
-}
-
 /** Prefer local path when present; otherwise remote unique URL (seed/backfill). */
 export function newsCoverForPost(input: NewsCoverInput) {
   return localNewsCoverPath(input.id);
-}
-
-/** Always a unique per-post URL so listings never render without a featured image. */
-export function featuredCoverUrl(id: string, coverImage?: string | null) {
-  const src = (coverImage || "").trim();
-  return src || localNewsCoverPath(id);
-}
-
-export function isCustomRemoteCover(coverImage?: string | null) {
-  const src = (coverImage || "").trim();
-  if (!src.startsWith("http://") && !src.startsWith("https://")) return false;
-  return !src.includes("image.pollinations.ai");
-}
-
-export function coverApiPath(id: string) {
-  return `/api/news/cover/${encodeURIComponent(id)}`;
 }
 
 async function fileExists(path: string) {
