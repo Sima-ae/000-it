@@ -13,13 +13,15 @@
  *      Already-correct locales are skipped unless --force is passed.
  *
  * Usage (on server, after deploy):
- *   npx --yes tsx --env-file=.env scripts/repair-kennisbank.ts
- *   npx --yes tsx --env-file=.env scripts/repair-kennisbank.ts --limit=20
- *   npx --yes tsx --env-file=.env scripts/repair-kennisbank.ts --all --delay=800
- *   npx --yes tsx --env-file=.env scripts/repair-kennisbank.ts --en-only
- *   npx --yes tsx --env-file=.env scripts/repair-kennisbank.ts --nl-only
- *   npx --yes tsx --env-file=.env scripts/repair-kennisbank.ts --purge-other
+ *   npm run kennisbank:repair -- --en-only --delay=2500 --field-delay=600 --limit=20
+ *   npm run kennisbank:repair -- --en-only --delay=2500 --offset=20 --limit=20
+ *   npm run kennisbank:repair -- --all --delay=2500
+ *   npm run kennisbank:repair -- --nl-only
+ *   npm run kennisbank:repair -- --purge-other
  *     → delete broken non-NL rows so UI falls back to clean Dutch immediately
+ *
+ * Tip: do NOT run --limit=350 in one shot. Free MT rate-limits hard.
+ * Use batches of 15–25 with delay≥2500ms. [en-skip] means already OK (not a rate-limit skip).
  */
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
@@ -104,8 +106,15 @@ async function main() {
   const allLocales = argFlag("all");
   const purgeOther = argFlag("purge-other");
   const limit = Math.max(1, Number(argValue("limit") || "9999") || 9999);
-  const delayMs = Math.max(200, Number(argValue("delay") || "700") || 700);
+  // EN repair does ~5 MT calls per article; default slower to avoid Google 429s.
+  const defaultDelay = enOnly || allLocales ? "2500" : "700";
+  const delayMs = Math.max(400, Number(argValue("delay") || defaultDelay) || Number(defaultDelay));
+  const fieldDelayMs = Math.max(
+    200,
+    Number(argValue("field-delay") || (enOnly ? "600" : "200")) || 200,
+  );
   const offset = Math.max(0, Number(argValue("offset") || "0") || 0);
+  const maxRetries = Math.max(1, Number(argValue("retries") || "4") || 4);
 
   const catalogPath = join(__dirname, "../prisma/kennisbank/catalog.json");
   const catalog = JSON.parse(readFileSync(catalogPath, "utf8")) as Catalog;
@@ -119,12 +128,13 @@ async function main() {
   });
 
   console.log(
-    `[repair-kennisbank] articles=${articles.length} offset=${offset} force=${force} nlOnly=${nlOnly} enOnly=${enOnly} all=${allLocales} delayMs=${delayMs}`,
+    `[repair-kennisbank] articles=${articles.length} offset=${offset} force=${force} nlOnly=${nlOnly} enOnly=${enOnly} all=${allLocales} delayMs=${delayMs} fieldDelayMs=${fieldDelayMs} retries=${maxRetries}`,
   );
 
   let nlFixed = 0;
   let enFixed = 0;
   let enSkipped = 0;
+  let enFailed = 0;
   let localesFixed = 0;
   let localesSkipped = 0;
 
@@ -223,47 +233,66 @@ async function main() {
       : null;
 
     if (repairEn) {
-      try {
-        const title =
-          (await translateText(nlPayload.title, "en", "nl")) || nlPayload.title;
-        await sleep(150);
-        const excerpt =
-          (await translateText(nlPayload.excerpt, "en", "nl")) ||
-          buildExcerpt(title, "en");
-        await sleep(150);
-        const bodyHtml =
-          (await translateHtml(nlPayload.bodyHtml, "en", "nl")) ||
-          buildArticleHtml(title, cat.topic, "en");
-        await sleep(150);
-        const seoTitle =
-          (await translateText(nlPayload.seoTitle, "en", "nl")) ||
-          `${title} | TripleZero iT Hosting`;
-        await sleep(100);
-        const seoDescription =
-          (await translateText(nlPayload.seoDescription, "en", "nl")) || excerpt;
+      let ok = false;
+      for (let attempt = 1; attempt <= maxRetries; attempt += 1) {
+        try {
+          const title =
+            (await translateText(nlPayload.title, "en", "nl")) || nlPayload.title;
+          await sleep(fieldDelayMs);
+          const excerpt =
+            (await translateText(nlPayload.excerpt, "en", "nl")) ||
+            buildExcerpt(title, "en");
+          await sleep(fieldDelayMs);
+          const bodyHtml =
+            (await translateHtml(nlPayload.bodyHtml, "en", "nl")) ||
+            buildArticleHtml(title, cat.topic, "en");
+          await sleep(fieldDelayMs);
+          const seoTitle =
+            (await translateText(nlPayload.seoTitle, "en", "nl")) ||
+            `${title} | TripleZero iT Hosting`;
+          await sleep(Math.max(200, Math.floor(fieldDelayMs * 0.7)));
+          const seoDescription =
+            (await translateText(nlPayload.seoDescription, "en", "nl")) || excerpt;
 
-        enSource = { title, excerpt, bodyHtml, seoTitle, seoDescription };
-        await prisma.kennisbankArticleTranslation.upsert({
-          where: {
-            articleId_locale: { articleId: article.id, locale: "en" },
-          },
-          create: { articleId: article.id, locale: "en", ...enSource },
-          update: enSource,
-        });
-        enFixed += 1;
-        console.log(
-          `[en] ${i + 1}/${articles.length} ${article.slug} → ${title.slice(0, 70)}`,
-        );
-        await sleep(delayMs);
-      } catch (error) {
-        const msg = error instanceof Error ? error.message : String(error);
-        console.error(`[en-fail] ${article.slug}: ${msg}`);
-        if (msg.includes("rate-limited")) await sleep(30_000);
-        continue;
+          enSource = { title, excerpt, bodyHtml, seoTitle, seoDescription };
+          await prisma.kennisbankArticleTranslation.upsert({
+            where: {
+              articleId_locale: { articleId: article.id, locale: "en" },
+            },
+            create: { articleId: article.id, locale: "en", ...enSource },
+            update: enSource,
+          });
+          enFixed += 1;
+          ok = true;
+          console.log(
+            `[en] ${i + 1}/${articles.length} ${article.slug} → ${title.slice(0, 70)}`,
+          );
+          await sleep(delayMs);
+          break;
+        } catch (error) {
+          const msg = error instanceof Error ? error.message : String(error);
+          const limited =
+            /rate-limited|429|503|DOCTYPE|not valid JSON|Unexpected token/i.test(msg);
+          const wait = limited
+            ? Math.min(180_000, 25_000 * attempt)
+            : 3_000 * attempt;
+          console.error(
+            `[en-fail] ${article.slug} attempt=${attempt}/${maxRetries}: ${msg.slice(0, 160)}`,
+          );
+          if (attempt < maxRetries) {
+            console.warn(`[en-wait] sleeping ${Math.round(wait / 1000)}s then retry`);
+            await sleep(wait);
+            continue;
+          }
+          enFailed += 1;
+        }
       }
+      if (!ok) continue;
     } else {
       enSkipped += 1;
-      console.log(`[en-skip] ${i + 1}/${articles.length} ${article.slug}`);
+      console.log(
+        `[en-skip] ${i + 1}/${articles.length} ${article.slug} (already OK)`,
+      );
     }
 
     if (enOnly || !enSource) continue;
@@ -311,7 +340,7 @@ async function main() {
   }
 
   console.log(
-    `[repair-kennisbank] done nlFixed=${nlFixed} enFixed=${enFixed} enSkipped=${enSkipped} localeWrites=${localesFixed} localeSkipped=${localesSkipped}`,
+    `[repair-kennisbank] done nlFixed=${nlFixed} enFixed=${enFixed} enSkipped=${enSkipped} enFailed=${enFailed} localeWrites=${localesFixed} localeSkipped=${localesSkipped}`,
   );
   await prisma.$disconnect();
 }

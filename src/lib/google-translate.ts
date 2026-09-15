@@ -204,6 +204,45 @@ export function isAcceptableTranslation(
 
 const memoryCache = new Map<string, string>();
 
+/** Per-provider cooldown until timestamp (ms). Skip hot providers after 429/HTML. */
+const providerCooldownUntil = new Map<string, number>();
+
+function isRateLimitError(err: unknown) {
+  const msg = String(err);
+  return /429|503|rate|quota|limit|DOCTYPE|not valid JSON|Unexpected token/i.test(msg);
+}
+
+function coolProvider(name: string, ms: number) {
+  const until = Date.now() + ms;
+  const prev = providerCooldownUntil.get(name) || 0;
+  if (until > prev) providerCooldownUntil.set(name, until);
+}
+
+function providerReady(name: string) {
+  const until = providerCooldownUntil.get(name) || 0;
+  return Date.now() >= until;
+}
+
+async function readJsonResponse(res: Response, provider: string): Promise<unknown> {
+  const raw = await res.text();
+  const trimmed = raw.trim();
+  if (
+    !trimmed ||
+    trimmed.startsWith("<!DOCTYPE") ||
+    trimmed.startsWith("<html") ||
+    trimmed.startsWith("<HTML")
+  ) {
+    coolProvider(provider, 90_000);
+    throw new Error(`${provider} rate-limited (html)`);
+  }
+  try {
+    return JSON.parse(raw) as unknown;
+  } catch {
+    coolProvider(provider, 60_000);
+    throw new Error(`${provider} not valid JSON`);
+  }
+}
+
 async function viaMyMemory(text: string, from: string, to: string): Promise<string> {
   const email = process.env.MYMEMORY_EMAIL || "info@000-it.com";
   const q = text.slice(0, 450);
@@ -212,8 +251,12 @@ async function viaMyMemory(text: string, from: string, to: string): Promise<stri
     `&langpair=${encodeURIComponent(`${from}|${to}`)}` +
     `&de=${encodeURIComponent(email)}`;
   const res = await fetch(url, { signal: AbortSignal.timeout(20_000) });
+  if (res.status === 429 || res.status === 503) {
+    coolProvider("mymemory", 6 * 60 * 60 * 1000);
+    throw new Error(`mymemory ${res.status}`);
+  }
   if (!res.ok) throw new Error(`mymemory ${res.status}`);
-  const data = (await res.json()) as {
+  const data = (await readJsonResponse(res, "mymemory")) as {
     responseData?: { translatedText?: string };
   };
   const out = data?.responseData?.translatedText;
@@ -222,14 +265,20 @@ async function viaMyMemory(text: string, from: string, to: string): Promise<stri
 
   let result = out!;
   for (let i = 450; i < text.length; i += 450) {
-    await sleep(350);
+    await sleep(500);
     const chunk = text.slice(i, i + 450);
     const u =
       `https://api.mymemory.translated.net/get?q=${encodeURIComponent(chunk)}` +
       `&langpair=${encodeURIComponent(`${from}|${to}`)}` +
       `&de=${encodeURIComponent(email)}`;
     const r = await fetch(u, { signal: AbortSignal.timeout(20_000) });
-    const d = (await r.json()) as { responseData?: { translatedText?: string } };
+    if (r.status === 429 || r.status === 503) {
+      coolProvider("mymemory", 6 * 60 * 60 * 1000);
+      throw new Error(`mymemory ${r.status}`);
+    }
+    const d = (await readJsonResponse(r, "mymemory")) as {
+      responseData?: { translatedText?: string };
+    };
     const t = d?.responseData?.translatedText;
     result += isBad(t) ? chunk : t!;
   }
@@ -245,10 +294,11 @@ async function viaGoogleGtx(text: string, from: string, to: string): Promise<str
     signal: AbortSignal.timeout(45_000),
   });
   if (res.status === 429 || res.status === 503) {
+    coolProvider("gtx", 120_000);
     throw new Error(`gtx ${res.status}`);
   }
   if (!res.ok) throw new Error(`gtx ${res.status}`);
-  const data = (await res.json()) as unknown;
+  const data = await readJsonResponse(res, "gtx");
   if (!Array.isArray(data) || !Array.isArray(data[0])) {
     throw new Error("gtx payload");
   }
@@ -332,10 +382,13 @@ async function viaGoogleAndroid(text: string, from: string, to: string): Promise
     signal: AbortSignal.timeout(45_000),
   });
   if (res.status === 429 || res.status === 503) {
+    coolProvider("g-at", 120_000);
     throw new Error(`g-at ${res.status}`);
   }
   if (!res.ok) throw new Error(`g-at ${res.status}`);
-  const data = (await res.json()) as { sentences?: Array<{ trans?: string }> };
+  const data = (await readJsonResponse(res, "g-at")) as {
+    sentences?: Array<{ trans?: string }>;
+  };
   const out = Array.isArray(data?.sentences)
     ? data.sentences.map((s) => s.trans || "").join("").trim()
     : "";
@@ -371,9 +424,12 @@ async function viaGoogleDict(text: string, from: string, to: string): Promise<st
     },
     signal: AbortSignal.timeout(45_000),
   });
-  if (res.status === 429 || res.status === 503) throw new Error(`g-dict ${res.status}`);
+  if (res.status === 429 || res.status === 503) {
+    coolProvider("g-dict", 120_000);
+    throw new Error(`g-dict ${res.status}`);
+  }
   if (!res.ok) throw new Error(`g-dict ${res.status}`);
-  const out = parseGoogleSingle(await res.json());
+  const out = parseGoogleSingle(await readJsonResponse(res, "g-dict"));
   if (isBad(out)) throw new Error("g-dict bad");
   return out;
 }
@@ -390,9 +446,12 @@ async function viaGoogleClients5(text: string, from: string, to: string): Promis
     },
     signal: AbortSignal.timeout(45_000),
   });
-  if (res.status === 429 || res.status === 503) throw new Error(`g-c5 ${res.status}`);
+  if (res.status === 429 || res.status === 503) {
+    coolProvider("g-c5", 120_000);
+    throw new Error(`g-c5 ${res.status}`);
+  }
   if (!res.ok) throw new Error(`g-c5 ${res.status}`);
-  const data = (await res.json()) as unknown;
+  const data = await readJsonResponse(res, "g-c5");
   let out = "";
   if (Array.isArray(data) && typeof data[0] === "string") out = data[0];
   else if (
@@ -426,7 +485,12 @@ async function translateChunk(
   ];
 
   let lastErr: unknown;
+  let limited = 0;
   for (const [name, fn] of providers) {
+    if (!providerReady(name)) {
+      limited += 1;
+      continue;
+    }
     try {
       const out = await fn();
       if (!isBad(out) && isAcceptableTranslation(text, out, fromLocale, toLocale)) {
@@ -435,11 +499,16 @@ async function translateChunk(
       lastErr = new Error(`${name} quality`);
     } catch (e) {
       lastErr = e;
-      if (/429|503|rate|quota|limit/i.test(String(e))) {
+      if (isRateLimitError(e)) {
+        limited += 1;
+        coolProvider(name, name.startsWith("g") ? 120_000 : 45_000);
         console.warn(`[translate] ${name} limited (${from}→${to}); trying next provider`);
-        await sleep(800);
+        await sleep(1_500);
       }
     }
+  }
+  if (limited > 0) {
+    throw new Error(`rate-limited (${from}→${to})`);
   }
   throw lastErr || new Error("All translation providers failed");
 }
@@ -452,12 +521,19 @@ async function translateChunkWithRetry(
   toLocale: string,
 ): Promise<string> {
   let lastErr: unknown;
-  for (let attempt = 0; attempt < 3; attempt += 1) {
+  for (let attempt = 0; attempt < 5; attempt += 1) {
     try {
       return await translateChunk(text, from, to, fromLocale, toLocale);
     } catch (e) {
       lastErr = e;
-      await sleep(600 * 2 ** attempt);
+      const limited = isRateLimitError(e);
+      const wait = limited
+        ? Math.min(180_000, 20_000 * (attempt + 1))
+        : 900 * 2 ** attempt;
+      console.warn(
+        `[translate] retry ${attempt + 1}/5 after ${Math.round(wait / 1000)}s (${String(e).slice(0, 100)})`,
+      );
+      await sleep(wait);
     }
   }
   throw lastErr || new Error("translate retry exhausted");
@@ -524,7 +600,7 @@ export async function translateText(
 
   const out: string[] = [];
   for (let i = 0; i < chunks.length; i += 1) {
-    if (i > 0) await sleep(200);
+    if (i > 0) await sleep(450);
     out.push(await translateChunkWithRetry(chunks[i], from, to, fromLocale, toLocale));
   }
   const joined = !collapse ? out.join("") : cleanText(out.join("\n\n"));
