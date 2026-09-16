@@ -62,7 +62,9 @@ export function Sidebar({ user }: { user: SidebarUser }) {
   const locale = useLocale();
   const pathname = usePathname();
   const role = user.role;
-  const items = navForRole(role);
+  const items = [...navForRole(role)].sort((a, b) =>
+    t(a.key).localeCompare(t(b.key), locale, { sensitivity: "base" }),
+  );
   const displayName = user.name?.trim() || user.email || "";
   const displayRole = String(role).replaceAll("_", " ");
 
