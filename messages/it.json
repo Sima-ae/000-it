@@ -725,8 +725,8 @@
   },
   "news": {
     "previous": "Precedente",
-    "next": "Avanti",
-    "pageOf": "Pagina {pagina} di {totale}",
+    "next": "Successivo",
+    "pageOf": "Pagina {page} di {total}",
     "author": "Autore",
     "date": "Data",
     "category": "Categoria",

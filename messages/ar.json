@@ -724,9 +724,9 @@
     "function": "وظيفة"
   },
   "news": {
-    "previous": "سابق",
-    "next": "[ترجمة المصطلح: Next]",
-    "pageOf": "صفحة {صفحة} من إجمالي {total}",
+    "previous": "السابق",
+    "next": "التالي",
+    "pageOf": "صفحة {page} من {total}",
     "author": "مؤلف",
     "date": "التاريخ",
     "category": "فئة",

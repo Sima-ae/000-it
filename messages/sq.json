@@ -725,8 +725,8 @@
   },
   "news": {
     "previous": "E mëparshme",
-    "next": "Vazhdo",
-    "pageOf": "Faqja {faqe} nga {total}",
+    "next": "Tjetra",
+    "pageOf": "Faqja {page} nga {total}",
     "author": "Autori",
     "date": "Data",
     "category": "Kategoria",

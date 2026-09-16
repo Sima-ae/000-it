@@ -725,7 +725,7 @@
   },
   "news": {
     "previous": "Předchozí",
-    "next": "Následující",
+    "next": "Další",
     "pageOf": "Stránka {page} z {total}",
     "author": "Autor",
     "date": "Datum",

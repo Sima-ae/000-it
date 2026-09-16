@@ -11,7 +11,7 @@ import { InfoDropdown } from "@/components/shared/InfoDropdown";
 import { LanguageSwitcher } from "@/components/shared/LanguageSwitcher";
 import { CartNavButton } from "@/components/shop/CartNavButton";
 import { AccountMenu } from "@/components/shared/AccountMenu";
-import { serviceCatalog, serviceHref, sortedServiceGroups } from "@/content/fixweb/catalog";
+import { serviceCatalog, serviceGroupHref, serviceHref, sortedServiceGroups } from "@/content/fixweb/catalog";
 import {
   catalogGroupTitle,
   catalogServiceTitle,
@@ -259,9 +259,12 @@ export function Navigation() {
                                   );
                             return (
                               <div key={group.id}>
-                                <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                                <SoftLink
+                                  href={serviceGroupHref(locale, group.id)}
+                                  className="mb-1 block text-xs font-semibold uppercase tracking-wide text-foreground transition hover:text-primary"
+                                >
                                   {catalogGroupTitle(group.id, locale, group.title)}
-                                </p>
+                                </SoftLink>
                                 {sorted
                                   .slice(
                                     0,

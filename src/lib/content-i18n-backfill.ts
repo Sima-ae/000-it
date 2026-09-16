@@ -18,6 +18,7 @@ import {
   parseNewsTranslations,
 } from "@/lib/news-i18n";
 import { completeNewsTranslations } from "@/lib/news";
+import { canonicalizeNewsPageOf } from "@/lib/news-pagination";
 import {
   findLocalizedHash,
   hashSource,
@@ -573,6 +574,14 @@ async function fillUiMessages(deadline: number, result: TranslateContentResult) 
       if (pastDeadline(deadline)) break;
       if (skipUiString(enValue)) continue;
       const have = flatExisting[path];
+      if (path === "news.pageOf" && have?.trim()) {
+        const canonical = canonicalizeNewsPageOf(have);
+        if (canonical !== have) {
+          setPath(overlay, path, canonical);
+          wrote += 1;
+        }
+        continue;
+      }
       if (
         have &&
         have.trim() &&
@@ -581,7 +590,8 @@ async function fillUiMessages(deadline: number, result: TranslateContentResult) 
         continue;
       }
       try {
-        const translated = await translateOrThrow(enValue, locale);
+        let translated = await translateOrThrow(enValue, locale);
+        if (path === "news.pageOf") translated = canonicalizeNewsPageOf(translated);
         setPath(overlay, path, translated);
         wrote += 1;
         await sleep(50);

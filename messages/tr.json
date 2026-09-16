@@ -724,9 +724,9 @@
     "function": "İşlev"
   },
   "news": {
-    "previous": "Öncesi",
-    "next": "İleri",
-    "pageOf": "{toplam} sayfanın {sayfa}'sı",
+    "previous": "Önceki",
+    "next": "Sonraki",
+    "pageOf": "Sayfa {page} / {total}",
     "author": "Yazar",
     "date": "Tarih",
     "category": "Kategori",

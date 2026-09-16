@@ -724,9 +724,9 @@
     "function": "Funkcjonować"
   },
   "news": {
-    "previous": "Poprzedni",
-    "next": "Dalej",
-    "pageOf": "Strona {strona} z {total}",
+    "previous": "Poprzednia",
+    "next": "Następna",
+    "pageOf": "Strona {page} z {total}",
     "author": "Autor",
     "date": "Data",
     "category": "Kategoria",

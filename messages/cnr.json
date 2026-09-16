@@ -724,9 +724,9 @@
     "function": "Функција"
   },
   "news": {
-    "previous": "Претходни",
-    "next": "Sledeće",
-    "pageOf": "Страница {паге} од {тотал}",
+    "previous": "Prethodna",
+    "next": "Sljedeća",
+    "pageOf": "Stranica {page} od {total}",
     "author": "Аутор",
     "date": "Datum",
     "category": "Категорија",

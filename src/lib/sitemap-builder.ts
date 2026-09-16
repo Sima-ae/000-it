@@ -9,7 +9,7 @@ import {
 import { join } from "node:path";
 import { seoCities } from "@/content/seo/cities";
 import { staticPageSeo } from "@/content/seo/pages";
-import { getServiceSlugs, serviceCatalog } from "@/content/fixweb/catalog";
+import { getServiceSlugs, serviceCatalog, serviceGroups, serviceGroupPath } from "@/content/fixweb/catalog";
 import { listPublishedNewsIds } from "@/lib/news";
 import { listShopProducts } from "@/lib/shop/catalog";
 import { sitemapAbsoluteUrl, sitemapPublicOrigin } from "@/lib/seo";
@@ -220,6 +220,13 @@ export async function collectSitemapSets() {
       lastmod: serviceLastmod,
       changefreq: "weekly",
       priority: item?.group === "ai" ? Math.max(priority, 0.9) : priority,
+    });
+  }
+  for (const group of serviceGroups) {
+    pushLocalized(services, serviceGroupPath(group.id), {
+      lastmod: serviceLastmod,
+      changefreq: "weekly",
+      priority: group.id === "ai" ? 0.9 : 0.84,
     });
   }
 

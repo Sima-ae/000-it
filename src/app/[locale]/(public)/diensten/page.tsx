@@ -6,6 +6,7 @@ import { ServicesJumpNav } from "@/components/content/ServicesJumpNav";
 import { SoftLink } from "@/components/shared/SoftLink";
 import {
   serviceCatalog,
+  serviceGroupHref,
   serviceHref,
   sortedServiceGroups,
 } from "@/content/fixweb/catalog";
@@ -218,7 +219,12 @@ export default async function ServicesPage({
             <div className="flex flex-wrap items-end justify-between gap-3">
               <div>
                 <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
-                  {groupLabel(group)}
+                  <SoftLink
+                    href={serviceGroupHref(locale, group.id)}
+                    className="transition hover:text-primary"
+                  >
+                    {groupLabel(group)}
+                  </SoftLink>
                 </h2>
                 <p className="mt-1 text-sm text-muted-foreground">
                   {cards.length} {t("countLabel")}

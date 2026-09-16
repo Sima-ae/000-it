@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { useNavigationProgress } from "@/hooks/useNavigationProgress";
-import { serviceCatalog, serviceHref, sortedServiceGroups } from "@/content/fixweb/catalog";
+import { serviceCatalog, serviceGroupHref, serviceHref, sortedServiceGroups } from "@/content/fixweb/catalog";
 import {
   catalogGroupTitle,
   catalogServiceTitle,
@@ -215,9 +215,15 @@ export function ServicesMegaMenu({
                 );
                 return (
                   <div key={group.id} className="min-w-0 bg-transparent">
-                    <p className="mb-2 whitespace-nowrap px-1.5 text-[11px] font-semibold text-foreground md:px-2 md:text-xs">
+                    <SoftLink
+                      href={serviceGroupHref(locale, group.id)}
+                      className="mb-2 block whitespace-nowrap px-1.5 text-[11px] font-semibold text-foreground transition hover:text-primary md:px-2 md:text-xs"
+                      onClick={(event) =>
+                        navigateFromMenu(serviceGroupHref(locale, group.id), event)
+                      }
+                    >
                       {catalogGroupTitle(group.id, locale, group.title)}
-                    </p>
+                    </SoftLink>
                     <div className="flex max-h-[min(70vh,28rem)] flex-col overflow-y-auto bg-transparent">
                       {items.map((item) => {
                         const href = serviceHref(locale, item);

@@ -724,7 +724,7 @@
     "function": "Funktion"
   },
   "news": {
-    "previous": "Vorherige",
+    "previous": "Zurück",
     "next": "Weiter",
     "pageOf": "Seite {page} von {total}",
     "author": "Autor",

@@ -724,7 +724,7 @@
     "function": "Fungere"
   },
   "news": {
-    "previous": "Tidligere",
+    "previous": "Forrige",
     "next": "Næste",
     "pageOf": "Side {page} af {total}",
     "author": "Forfatter",

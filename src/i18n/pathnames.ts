@@ -68,6 +68,46 @@ export const SEGMENT_I18N = {
     },
     "services",
   ),
+  categorie: mapAll(
+    {
+      nl: "categorie",
+      en: "category",
+      fr: "categorie",
+      de: "kategorie",
+      es: "categoria",
+      pt: "categoria",
+      it: "categoria",
+      el: "katigoria",
+      pl: "kategoria",
+      cs: "kategorie",
+      sk: "kategoria",
+      hu: "kategoria",
+      ro: "categorie",
+      bg: "kategoriya",
+      hr: "kategorija",
+      sr: "kategorija",
+      bs: "kategorija",
+      cnr: "kategorija",
+      sq: "kategori",
+      mk: "kategorija",
+      lt: "kategorija",
+      da: "kategori",
+      sv: "kategori",
+      no: "kategori",
+      fi: "kategoria",
+      uk: "kategoriya",
+      ru: "kategoriya",
+      tr: "kategori",
+      he: "kategoria",
+      ar: "fia",
+      ka: "kategoria",
+      hy: "katagoria",
+      az: "kateqoriya",
+      zh: "fenlei",
+      ja: "category",
+    },
+    "category",
+  ),
   kennisbank: mapAll(
     {
       nl: "kennisbank",
@@ -817,6 +857,7 @@ function localePathTemplate(internal: string, locale: string): string {
 export const INTERNAL_PATHNAMES = [
   "/",
   "/diensten",
+  "/diensten/categorie/[group]",
   "/diensten/[slug]",
   "/kennisbank",
   "/kennisbank/[category]",
@@ -937,7 +978,11 @@ export function localizePath(locale: string, path: string): string {
       if (index === 0 && firstInternal in SEGMENT_I18N) {
         return segmentFor(locale, firstInternal as SegmentKey);
       }
-      if (index === 1 && firstInternal === "shop" && part in SEGMENT_I18N) {
+      if (
+        index === 1 &&
+        (firstInternal === "shop" || firstInternal === "diensten") &&
+        part in SEGMENT_I18N
+      ) {
         return segmentFor(locale, part as SegmentKey);
       }
       return part;
@@ -1006,7 +1051,11 @@ function remapEntityPartsOutbound(
   parts: string[],
 ) {
   if (firstInternal === "diensten" && parts[1]) {
-    parts[1] = publicEntitySlug(locale, "service", parts[1]);
+    if (parts[1] === "categorie" || parts[1] === segmentFor(locale, "categorie")) {
+      parts[1] = "categorie";
+    } else {
+      parts[1] = publicEntitySlug(locale, "service", parts[1]);
+    }
   } else if (firstInternal === "kennisbank") {
     if (parts[1]) parts[1] = publicEntitySlug(locale, "kb_category", parts[1]);
     if (parts[2]) parts[2] = publicEntitySlug(locale, "kb_article", parts[2]);
@@ -1032,7 +1081,11 @@ function remapEntityPartsInbound(
   parts: string[],
 ) {
   if (firstInternal === "diensten" && parts[1]) {
-    parts[1] = canonicalEntityKey(locale, "service", parts[1]);
+    if (parts[1] === "categorie" || parts[1] === segmentFor(locale, "categorie")) {
+      parts[1] = "categorie";
+    } else {
+      parts[1] = canonicalEntityKey(locale, "service", parts[1]);
+    }
   } else if (firstInternal === "kennisbank") {
     if (parts[1]) parts[1] = canonicalEntityKey(locale, "kb_category", parts[1]);
     if (parts[2]) parts[2] = canonicalEntityKey(locale, "kb_article", parts[2]);
@@ -1054,7 +1107,9 @@ export function entityTypeForInternalPath(
   internalPath: string,
 ): { type: EntityType; key: string } | null {
   const parts = internalPath.split("?")[0].split("#")[0].split("/").filter(Boolean);
-  if (parts[0] === "diensten" && parts[1]) return { type: "service", key: parts[1] };
+  if (parts[0] === "diensten" && parts[1] && parts[1] !== "categorie") {
+    return { type: "service", key: parts[1] };
+  }
   if (parts[0] === "kennisbank" && parts[2]) return { type: "kb_article", key: parts[2] };
   if (parts[0] === "kennisbank" && parts[1]) return { type: "kb_category", key: parts[1] };
   if (parts[0] === "locaties" && parts[1]) return { type: "city", key: parts[1] };

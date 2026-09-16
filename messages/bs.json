@@ -724,7 +724,7 @@
     "function": "Funkcija"
   },
   "news": {
-    "previous": "Prethodno",
+    "previous": "Prethodna",
     "next": "Sljedeća",
     "pageOf": "Stranica {page} od {total}",
     "author": "Autor",

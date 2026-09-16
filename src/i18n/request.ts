@@ -4,6 +4,7 @@ import {
   getUiMessageOverlaySync,
   hydrateLocalizedCopy,
 } from "@/lib/localized-copy";
+import { canonicalizeNewsPageOf } from "@/lib/news-pagination";
 
 function isPlainObject(value: unknown): value is Record<string, unknown> {
   return Boolean(value) && typeof value === "object" && !Array.isArray(value);
@@ -24,6 +25,14 @@ function deepMergeMessages(
   return out;
 }
 
+function sanitizePaginationCopy(messages: Record<string, unknown>) {
+  const news = messages.news;
+  if (isPlainObject(news) && typeof news.pageOf === "string") {
+    news.pageOf = canonicalizeNewsPageOf(news.pageOf);
+  }
+  return messages;
+}
+
 export default getRequestConfig(async ({ requestLocale }) => {
   let locale = await requestLocale;
   if (!locale || !routing.locales.includes(locale as (typeof routing.locales)[number])) {
@@ -36,13 +45,13 @@ export default getRequestConfig(async ({ requestLocale }) => {
   >;
 
   if (locale === "nl" || locale === "en") {
-    return { locale, messages: fileMessages };
+    return { locale, messages: sanitizePaginationCopy(fileMessages) };
   }
 
   await hydrateLocalizedCopy(locale);
   const overlay = getUiMessageOverlaySync(locale);
   return {
     locale,
-    messages: deepMergeMessages(fileMessages, overlay),
+    messages: sanitizePaginationCopy(deepMergeMessages(fileMessages, overlay)),
   };
 });

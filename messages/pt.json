@@ -726,7 +726,7 @@
   "news": {
     "previous": "Anterior",
     "next": "Próximo",
-    "pageOf": "Página {página} de {total}",
+    "pageOf": "Página {page} de {total}",
     "author": "Autor",
     "date": "Data",
     "category": "Categoria",

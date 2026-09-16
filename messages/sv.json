@@ -724,7 +724,7 @@
     "function": "Fungera"
   },
   "news": {
-    "previous": "Tidigare",
+    "previous": "Föregående",
     "next": "Nästa",
     "pageOf": "Sida {page} av {total}",
     "author": "Författare",

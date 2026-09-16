@@ -726,7 +726,7 @@
   "news": {
     "previous": "Əvvəlki",
     "next": "Növbəti",
-    "pageOf": "{total} səhifədən {səhifə}",
+    "pageOf": "Səhifə {page} / {total}",
     "author": "Müəllif",
     "date": "Tarixi",
     "category": "Kateqoriya",

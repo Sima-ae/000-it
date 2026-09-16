@@ -725,8 +725,8 @@
   },
   "news": {
     "previous": "Նախորդ",
-    "next": "Յաջորդ",
-    "pageOf": "Էջ {էջ} {total}-ից",
+    "next": "Հաջորդ",
+    "pageOf": "Էջ {page} / {total}",
     "author": "Հեղինակ",
     "date": "Դիմումի ամսաթիվ",
     "category": "Կարգավիճակ",

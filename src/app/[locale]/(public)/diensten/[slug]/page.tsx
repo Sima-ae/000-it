@@ -13,6 +13,7 @@ import {
   getServiceSlugs,
   serviceCatalog,
   serviceGroups,
+  serviceGroupHref,
   serviceHref,
 } from "@/content/fixweb/catalog";
 import { localizedHref } from "@/i18n/pathnames";
@@ -112,17 +113,29 @@ export default async function ServiceDetailPage({
               <SoftLink href={localizedHref(locale, "/diensten")} className="hover:text-foreground">
                 {tNav("services")}
               </SoftLink>
+              {groupLabel ? (
+                <>
+                  <span className="mx-2">/</span>
+                  <SoftLink
+                    href={serviceGroupHref(locale, groupLabel.id)}
+                    className="hover:text-foreground"
+                  >
+                    {catalogGroupTitle(groupLabel.id, locale, groupLabel.title)}
+                  </SoftLink>
+                </>
+              ) : null}
               <span className="mx-2">/</span>
               <span>{content.title}</span>
             </p>
             <div className="mt-6 grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
               <div>
                 {groupLabel ? (
-                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
-                    {groupLabel
-                      ? catalogGroupTitle(groupLabel.id, locale, groupLabel.title)
-                      : null}
-                  </p>
+                  <SoftLink
+                    href={serviceGroupHref(locale, groupLabel.id)}
+                    className="text-xs font-semibold uppercase tracking-[0.16em] text-primary hover:underline"
+                  >
+                    {catalogGroupTitle(groupLabel.id, locale, groupLabel.title)}
+                  </SoftLink>
                 ) : null}
                 <h1 className="font-display mt-3 text-4xl font-semibold tracking-tight md:text-5xl">
                   {content.title}

@@ -724,8 +724,8 @@
     "function": "Funkcia"
   },
   "news": {
-    "previous": "Predchádzajúce",
-    "next": "Nasledujúce",
+    "previous": "Predchádzajúca",
+    "next": "Ďalšia",
     "pageOf": "Strana {page} z {total}",
     "author": "Autor",
     "date": "Dátum",

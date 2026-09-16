@@ -1,5 +1,6 @@
 import { SoftLink } from "@/components/shared/SoftLink";
 import { localizedHref } from "@/i18n/pathnames";
+import { formatNewsPageOf } from "@/lib/news-pagination";
 
 function buildPageList(current: number, total: number): Array<number | "ellipsis"> {
   if (total <= 7) {
@@ -62,14 +63,14 @@ export function NewsPagination({
   const btnActive =
     "inline-flex min-h-10 min-w-10 items-center justify-center rounded-md border border-primary/50 bg-primary/10 px-3 text-sm font-medium text-foreground";
 
+  const pageLabel = formatNewsPageOf(labels.pageOf, page, totalPages);
+
   return (
     <nav
-      aria-label={labels.pageOf.replace("{page}", String(page)).replace("{total}", String(totalPages))}
+      aria-label={pageLabel}
       className="flex flex-col items-center gap-3 sm:flex-row sm:justify-between"
     >
-      <p className="text-sm text-muted-foreground">
-        {labels.pageOf.replace("{page}", String(page)).replace("{total}", String(totalPages))}
-      </p>
+      <p className="text-sm text-muted-foreground">{pageLabel}</p>
 
       <div className="flex flex-wrap items-center justify-center gap-2">
         {prev ? (

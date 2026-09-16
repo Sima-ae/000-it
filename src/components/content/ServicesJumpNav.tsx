@@ -15,9 +15,11 @@ type JumpLink = {
 export function ServicesJumpNav({
   locale,
   links,
+  basePath = "/diensten",
 }: {
   locale: string;
   links: JumpLink[];
+  basePath?: string;
 }) {
   const sentinelRef = useRef<HTMLDivElement>(null);
   const [stuck, setStuck] = useState(false);
@@ -74,7 +76,7 @@ export function ServicesJumpNav({
                 stuck && "bg-white shadow-sm hover:bg-white dark:bg-background dark:hover:bg-background",
               )}
             >
-              <SoftLink href={`${localizedHref(locale, "/diensten")}#${link.id}`}>{link.label}</SoftLink>
+              <SoftLink href={`${localizedHref(locale, basePath)}#${link.id}`}>{link.label}</SoftLink>
             </Button>
           ))}
         </div>

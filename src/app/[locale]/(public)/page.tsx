@@ -19,15 +19,12 @@ import { localizedHref } from "@/i18n/pathnames";
 import { cn } from "@/lib/utils";
 import { getAiScanCount } from "@/lib/ai-scan-count";
 import { buildStaticPageMetadata, organizationJsonLd } from "@/lib/seo";
-
-const serviceKeys = [
-  { key: "ai", href: "/diensten/ai-integration" },
-  { key: "web", href: "/diensten/custom-webdesign" },
-  { key: "ads", href: "/diensten/digital-marketing" },
-  { key: "content", href: "/diensten/content-writing" },
-  { key: "seo", href: "/diensten/seo-optimization" },
-  { key: "software", href: "/diensten/nextjs-development" },
-] as const;
+import {
+  catalogGroupSummary,
+  serviceGroupHref,
+  sortedServiceGroups,
+} from "@/content/fixweb/catalog";
+import { catalogGroupTitle } from "@/content/fixweb/catalog-title";
 
 export async function generateMetadata({
   params,
@@ -140,23 +137,23 @@ export default async function HomePage({
         </Reveal>
 
         <div className="grid gap-3 md:grid-cols-6">
-          {serviceKeys.map((item, index) => {
+          {sortedServiceGroups(locale).map((group, index) => {
             const span =
               index < 2
                 ? "md:col-span-3"
-                : item.key === "software"
+                : index === 5
                   ? "md:col-span-6"
                   : "md:col-span-2";
 
             return (
-              <Reveal key={item.key} delay={index * 0.05} className={cn("h-full", span)}>
-                <SoftLink href={localizedHref(locale, item.href)} className="block h-full">
+              <Reveal key={group.id} delay={index * 0.05} className={cn("h-full", span)}>
+                <SoftLink href={serviceGroupHref(locale, group.id)} className="block h-full">
                   <GlassCard className="flex h-full flex-col p-5 md:p-5">
                     <h3 className="font-display text-lg font-semibold tracking-tight md:text-xl">
-                      {services(`items.${item.key}.title`)}
+                      {catalogGroupTitle(group.id, locale, group.title)}
                     </h3>
                     <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                      {services(`items.${item.key}.desc`)}
+                      {catalogGroupSummary(group.id, locale)}
                     </p>
                   </GlassCard>
                 </SoftLink>

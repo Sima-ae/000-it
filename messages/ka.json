@@ -726,7 +726,7 @@
   "news": {
     "previous": "წინა",
     "next": "შემდეგი",
-    "pageOf": "გვერდი {გვერდი} სულ {total}-დან",
+    "pageOf": "გვერდი {page} / {total}",
     "author": "ავტორი",
     "date": "თარიღი",
     "category": "კატეგორია",

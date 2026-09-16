@@ -724,8 +724,8 @@
     "function": "функция"
   },
   "news": {
-    "previous": "Предишен",
-    "next": "Следващ",
+    "previous": "Предишна",
+    "next": "Следваща",
     "pageOf": "Страница {page} от {total}",
     "author": "Автор",
     "date": "Дата",

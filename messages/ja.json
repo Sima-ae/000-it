@@ -724,9 +724,9 @@
     "function": "関数"
   },
   "news": {
-    "previous": "前の",
+    "previous": "前へ",
     "next": "次へ",
-    "pageOf": "ページ {page} / {total}",
+    "pageOf": "{page} / {total} ページ",
     "author": "著者",
     "date": "日付",
     "category": "カテゴリ",

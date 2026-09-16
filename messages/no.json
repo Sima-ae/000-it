@@ -724,7 +724,7 @@
     "function": "Funksjon"
   },
   "news": {
-    "previous": "Tidligere",
+    "previous": "Forrige",
     "next": "Neste",
     "pageOf": "Side {page} av {total}",
     "author": "Forfatter",

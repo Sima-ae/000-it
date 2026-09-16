@@ -644,6 +644,59 @@ export function serviceHref(locale: string, item: ServiceNavItem) {
   return localizedHref(locale, `/diensten/${item.slug}`);
 }
 
+export type ServiceGroupId = ServiceNavItem["group"];
+
+const SERVICE_GROUP_IDS = new Set(serviceGroups.map((group) => group.id));
+
+export function isServiceGroupId(value: string): value is ServiceGroupId {
+  return SERVICE_GROUP_IDS.has(value as ServiceGroupId);
+}
+
+export function getServiceGroup(id: string) {
+  return serviceGroups.find((group) => group.id === id) ?? null;
+}
+
+export function serviceGroupPath(groupId: string) {
+  return `/diensten/categorie/${groupId}`;
+}
+
+export function serviceGroupHref(locale: string, groupId: string) {
+  return localizedHref(locale, serviceGroupPath(groupId));
+}
+
+const serviceGroupSummaries: Record<ServiceGroupId, { en: string; nl: string }> = {
+  ai: {
+    en: "AEO, GEO, SEO, chatbots, workflows, integration and AI consultancy.",
+    nl: "AEO, GEO, SEO, chatbots, workflows, integratie en AI-advies.",
+  },
+  wordpress: {
+    en: "Maintenance, security, malware removal, speed, backups and WordPress support.",
+    nl: "Onderhoud, security, malware, snelheid, backups en WordPress-support.",
+  },
+  webdesign: {
+    en: "Custom websites, conversion, security, speed and Next.js development.",
+    nl: "Maatwerk websites, conversie, security, snelheid en Next.js-ontwikkeling.",
+  },
+  design: {
+    en: "Logos, branding, flyers, magazines, print and digital design.",
+    nl: "Logo's, branding, flyers, magazines, drukwerk en digital design.",
+  },
+  marketing: {
+    en: "Content, social media, ads, e-commerce, media and community management.",
+    nl: "Content, social media, ads, e-commerce, media en community management.",
+  },
+  hosting: {
+    en: "Web hosting, WordPress hosting, VPS and domains.",
+    nl: "Webhosting, WordPress-hosting, VPS en domeinen.",
+  },
+};
+
+export function catalogGroupSummary(id: string, locale: string) {
+  const row = serviceGroupSummaries[id as ServiceGroupId];
+  if (!row) return "";
+  return locale === "nl" ? row.nl : row.en;
+}
+
 /** A–Z by locale title; hosting keeps given order */
 export function sortServicesAz(
   items: ServiceNavItem[],
