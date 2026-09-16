@@ -5,7 +5,18 @@ import { getToken } from "next-auth/jwt";
 import { routing } from "@/i18n/routing";
 import { localizePath, toInternalPath } from "@/i18n/pathnames";
 import { hydrateEntitySlugs } from "@/lib/entity-slugs";
+import { normalizeEntityParam } from "@/lib/entity-slug-cache";
 import { canAccessPath, dashboardNav } from "@/lib/roles";
+
+/** Compare paths ignoring %XX vs Unicode differences (script-locale slugs). */
+function pathsEquivalent(a: string, b: string) {
+  const norm = (path: string) =>
+    path
+      .split("/")
+      .map((seg) => normalizeEntityParam(seg))
+      .join("/");
+  return norm(a) === norm(b);
+}
 
 const intlMiddleware = createMiddleware(routing);
 
@@ -101,7 +112,8 @@ export default async function middleware(request: NextRequest) {
       pathWithoutLocale.length > 1 && pathWithoutLocale.endsWith("/")
         ? pathWithoutLocale.slice(0, -1)
         : pathWithoutLocale;
-    if (expected !== currentBare && expected !== "/") {
+    // Encoding-invariant: /el/.../%CF%80… === /el/.../πρακτορες… (same slug).
+    if (expected !== "/" && !pathsEquivalent(expected, currentBare)) {
       const url = request.nextUrl.clone();
       url.pathname = `/${locale}${expected}`;
       return NextResponse.redirect(url, 301);
