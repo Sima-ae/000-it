@@ -213,10 +213,7 @@ function buildEnglishDraft(
       ? paragraphs.join("\n\n")
       : `${story.sourceName} shared a new AI-industry update focused on practical developments for builders and operators.`;
 
-  // Short footer only — avoid long branded takeaways on every article.
-  const takeaway = "Always check the original source.";
-
-  const description = [lead, context, body, takeaway].join("\n\n");
+  const description = [lead, context, body].join("\n\n");
   const excerptSource = paragraphs[0] || context;
   const excerpt = truncate(excerptSource, 220);
 

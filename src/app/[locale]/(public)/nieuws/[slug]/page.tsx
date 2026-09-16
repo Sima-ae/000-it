@@ -68,27 +68,19 @@ export default async function NewsArticlePage({
         </SoftLink>
       </Button>
 
-      <header className="space-y-4">
-        <div className="flex flex-wrap gap-2">
-          {post.industry ? <Badge variant="secondary">{post.industry}</Badge> : null}
-          <Badge variant="outline">{post.date}</Badge>
-          {publicNewsTags(post.tags)
-            .slice(0, 6)
-            .map((tag) => (
-              <Badge key={tag} variant="outline">
-                {tag}
-              </Badge>
-            ))}
-        </div>
+      <div className="mb-6 flex flex-wrap gap-2">
+        {post.industry ? <Badge variant="secondary">{post.industry}</Badge> : null}
+        <Badge variant="outline">{post.date}</Badge>
+        {publicNewsTags(post.tags)
+          .slice(0, 6)
+          .map((tag) => (
+            <Badge key={tag} variant="outline">
+              {tag}
+            </Badge>
+          ))}
+      </div>
 
-        <h1 className="font-display text-4xl font-semibold tracking-tight md:text-5xl">
-          {post.title}
-        </h1>
-
-        <p className="text-lg text-muted-foreground">{post.excerpt}</p>
-      </header>
-
-      <div className="relative mt-10 aspect-video overflow-hidden rounded-2xl border border-border/60 bg-muted">
+      <div className="relative mb-10 aspect-video overflow-hidden rounded-2xl border border-border/60 bg-muted">
         <NewsCoverImage
           id={post.id}
           coverImage={post.coverImage}
@@ -97,6 +89,14 @@ export default async function NewsArticlePage({
           sizes="(max-width: 768px) 100vw, 768px"
         />
       </div>
+
+      <header className="space-y-4">
+        <h1 className="font-display text-4xl font-semibold tracking-tight md:text-5xl">
+          {post.title}
+        </h1>
+
+        <p className="text-lg text-muted-foreground">{post.excerpt}</p>
+      </header>
 
       <div className="prose prose-neutral mt-10 max-w-none dark:prose-invert">
         {paragraphs.map((paragraph, index) => (

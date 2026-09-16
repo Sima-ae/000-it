@@ -5,7 +5,7 @@
  *   npm run news:repair
  *   npm run news:repair -- --force-covers
  *   npm run news:repair -- --takeaways
- *     → replace long "TripleZero iT takeaway…" footers with the short source line
+ *     → remove long "TripleZero iT takeaway…" / short source-check footers from descriptions
  *   npm run news:repair -- --takeaways --limit=100
  */
 import { Prisma } from "@prisma/client";
@@ -20,14 +20,9 @@ import {
   parseNewsTranslations,
   type NewsTranslationsMap,
 } from "../src/lib/news-i18n";
-import { translateText } from "../src/lib/google-translate";
 
-const NEW_TAKEAWAY_EN = "Always check the original source.";
-const NEW_TAKEAWAY_NL = "Controleer altijd de originele bron.";
-
-const OLD_TAKEAWAY_RE = /triplezero\s*it\s*takeaway/i;
-const NEW_TAKEAWAY_RE =
-  /^(always check the original source|controleer altijd de originele bron)\.?$/i;
+const FOOTER_RE =
+  /triplezero\s*it\s*takeaway|always check the original source|controleer altijd de originele bron/i;
 
 function argFlag(name: string) {
   return process.argv.includes(`--${name}`);
@@ -42,27 +37,22 @@ async function sleep(ms: number) {
   await new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-function stripOldTakeaway(text: string): string {
+function stripFooter(text: string): string {
   const parts = text
     .split(/\n\n+/)
     .map((p) => p.trim())
     .filter(Boolean)
-    .filter((p) => !OLD_TAKEAWAY_RE.test(p));
-  // Also drop a trailing short "always check…" so we can re-append cleanly
-  while (parts.length && NEW_TAKEAWAY_RE.test(parts[parts.length - 1])) {
-    parts.pop();
-  }
+    .filter((p) => !FOOTER_RE.test(p));
   return parts.join("\n\n").trim();
 }
 
-function hasOldTakeaway(text: string | null | undefined) {
-  return Boolean(text && OLD_TAKEAWAY_RE.test(text));
-}
-
-function withTakeaway(text: string, footer: string): string {
-  const base = stripOldTakeaway(text || "");
-  if (!base) return footer;
-  return `${base}\n\n${footer}`;
+function needsFooterStrip(text: string | null | undefined) {
+  if (!text) return false;
+  return text
+    .split(/\n\n+/)
+    .map((p) => p.trim())
+    .filter(Boolean)
+    .some((p) => FOOTER_RE.test(p));
 }
 
 async function repairTakeaways(limit: number) {
@@ -73,68 +63,38 @@ async function repairTakeaways(limit: number) {
 
   console.log(`[takeaways] checking ${posts.length} posts…`);
 
-  const footerByLocale = new Map<string, string>([
-    ["en", NEW_TAKEAWAY_EN],
-    ["nl", NEW_TAKEAWAY_NL],
-  ]);
-
-  async function footerFor(locale: string): Promise<string> {
-    const cached = footerByLocale.get(locale);
-    if (cached) return cached;
-    try {
-      const translated = await translateText(NEW_TAKEAWAY_EN, locale, "en");
-      const out = (translated || NEW_TAKEAWAY_EN).trim();
-      footerByLocale.set(locale, out);
-      await sleep(250);
-      return out;
-    } catch {
-      footerByLocale.set(locale, NEW_TAKEAWAY_EN);
-      return NEW_TAKEAWAY_EN;
-    }
-  }
-
   let fixed = 0;
   let skipped = 0;
 
   for (const [index, post] of posts.entries()) {
     const translations = parseNewsTranslations(post.translations);
     const needs =
-      hasOldTakeaway(post.description) ||
-      hasOldTakeaway(post.descriptionNl) ||
-      Object.values(translations).some((copy) => hasOldTakeaway(copy.description));
+      needsFooterStrip(post.description) ||
+      needsFooterStrip(post.descriptionNl) ||
+      Object.values(translations).some((copy) => needsFooterStrip(copy.description));
 
     if (!needs) {
       skipped += 1;
       continue;
     }
 
-    const description = withTakeaway(post.description, NEW_TAKEAWAY_EN);
-    const descriptionNl = withTakeaway(
-      post.descriptionNl || post.description,
-      NEW_TAKEAWAY_NL,
-    );
+    const description = stripFooter(post.description);
+    const descriptionNl = post.descriptionNl
+      ? stripFooter(post.descriptionNl)
+      : post.descriptionNl;
 
     const nextTranslations: NewsTranslationsMap = { ...translations };
-    if (nextTranslations.nl) {
-      nextTranslations.nl = {
-        ...nextTranslations.nl,
-        description: withTakeaway(nextTranslations.nl.description, NEW_TAKEAWAY_NL),
-      };
-    } else {
-      nextTranslations.nl = {
-        title: post.titleNl || post.title,
-        excerpt: post.excerptNl || post.excerpt,
-        description: descriptionNl,
-      };
-    }
-
     for (const [locale, copy] of Object.entries(translations)) {
-      if (locale === "nl") continue;
-      if (!hasOldTakeaway(copy.description)) continue;
-      const footer = await footerFor(locale);
+      if (!needsFooterStrip(copy.description)) continue;
       nextTranslations[locale] = {
         ...copy,
-        description: withTakeaway(copy.description, footer),
+        description: stripFooter(copy.description),
+      };
+    }
+    if (descriptionNl && nextTranslations.nl) {
+      nextTranslations.nl = {
+        ...nextTranslations.nl,
+        description: descriptionNl,
       };
     }
 
