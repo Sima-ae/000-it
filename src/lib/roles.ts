@@ -72,11 +72,16 @@ export type DashboardNavItem = {
   roles: Role[];
 };
 
-/** Sidebar + middleware allow-list per role */
+/** Sidebar + middleware allow-list per role (display order = array order). */
 export const dashboardNav: DashboardNavItem[] = [
   {
     href: "/dashboard",
     key: "title",
+    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
+  },
+  {
+    href: "/ai-agents",
+    key: "agents",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
   },
   {
@@ -85,9 +90,39 @@ export const dashboardNav: DashboardNavItem[] = [
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
   },
   {
-    href: "/portfolio-admin",
-    key: "portfolio",
+    href: "/crm/tickets",
+    key: "tickets",
+    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
+  },
+  {
+    href: "/seo-analysis",
+    key: "seo",
+    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
+  },
+  {
+    href: "/projects",
+    key: "projects",
+    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
+  },
+  {
+    href: "/todos",
+    key: "todos",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
+  },
+  {
+    href: "/crm/leads",
+    key: "leads",
+    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
+  },
+  {
+    href: "/crm/clients",
+    key: "clients",
+    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
+  },
+  {
+    href: "/kennisbank-admin",
+    key: "kennisbank",
+    roles: ["SUPER_ADMIN", "ADMIN"],
   },
   {
     href: "/nieuws-admin",
@@ -100,59 +135,24 @@ export const dashboardNav: DashboardNavItem[] = [
     roles: ["SUPER_ADMIN"],
   },
   {
+    href: "/portfolio-admin",
+    key: "portfolio",
+    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
+  },
+  {
     href: "/case-studies-admin",
     key: "caseStudies",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
   },
   {
-    href: "/kennisbank-admin",
-    key: "kennisbank",
-    roles: ["SUPER_ADMIN", "ADMIN"],
-  },
-  {
-    href: "/crm/leads",
-    key: "leads",
-    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
-  },
-  {
-    href: "/crm/tickets",
-    key: "tickets",
-    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
-  },
-  {
-    href: "/todos",
-    key: "todos",
+    href: "/content-generator",
+    key: "content",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
   },
   {
     href: "/users",
     key: "users",
     roles: ["SUPER_ADMIN", "ADMIN"],
-  },
-  {
-    href: "/projects",
-    key: "projects",
-    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
-  },
-  {
-    href: "/crm/clients",
-    key: "clients",
-    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
-  },
-  {
-    href: "/ai-agents",
-    key: "agents",
-    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
-  },
-  {
-    href: "/seo-analysis",
-    key: "seo",
-    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
-  },
-  {
-    href: "/content-generator",
-    key: "content",
-    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
   },
   {
     href: "/settings",
