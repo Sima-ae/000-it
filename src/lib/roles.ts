@@ -70,6 +70,8 @@ export type DashboardNavItem = {
   href: string;
   key: string;
   roles: Role[];
+  /** When false, keep route in the allow-list but hide from the sidebar. */
+  sidebar?: boolean;
 };
 
 /** Sidebar + middleware allow-list per role (display order = array order). */
@@ -78,6 +80,11 @@ export const dashboardNav: DashboardNavItem[] = [
     href: "/dashboard",
     key: "title",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
+  },
+  {
+    href: "/todos",
+    key: "todos",
+    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
   },
   {
     href: "/ai-agents",
@@ -105,11 +112,6 @@ export const dashboardNav: DashboardNavItem[] = [
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
   },
   {
-    href: "/todos",
-    key: "todos",
-    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
-  },
-  {
     href: "/crm/leads",
     key: "leads",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
@@ -133,6 +135,7 @@ export const dashboardNav: DashboardNavItem[] = [
     href: "/nieuws-admin/trash",
     key: "newsTrash",
     roles: ["SUPER_ADMIN"],
+    sidebar: false,
   },
   {
     href: "/portfolio-admin",
@@ -182,7 +185,9 @@ function clientCanAccessCrm(path: string): boolean {
 
 export function navForRole(role?: string | null) {
   const r = (role || "CLIENT") as Role;
-  return dashboardNav.filter((item) => item.roles.includes(r));
+  return dashboardNav.filter(
+    (item) => item.roles.includes(r) && item.sidebar !== false,
+  );
 }
 
 export function canAccessPath(pathname: string, role?: string | null): boolean {

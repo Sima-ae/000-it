@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useSession } from "next-auth/react";
 import { toast } from "sonner";
+import { Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -62,8 +63,14 @@ export default function NieuwsAdminPage() {
         </div>
         <div className="flex gap-2">
           {isSuperAdmin(role) ? (
-            <Button asChild variant="outline">
-              <Link href={localizedHref(locale, "/nieuws-admin/trash")}>Trash</Link>
+            <Button
+              asChild
+              className="bg-red-600 text-white hover:bg-red-700 focus-visible:ring-red-600/40"
+            >
+              <Link href={localizedHref(locale, "/nieuws-admin/trash")}>
+                <Trash2 className="mr-1.5 h-4 w-4" />
+                {t("newsTrash")}
+              </Link>
             </Button>
           ) : null}
           <Button asChild variant="outline">
