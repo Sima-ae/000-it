@@ -2,11 +2,10 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { coverApiPath } from "@/lib/auto-news/cover-paths";
+import { coverApiPath, isCustomRemoteCover } from "@/lib/auto-news/cover-paths";
 
 function initialCoverSrc(id: string, coverImage?: string | null) {
-  const src = (coverImage || "").trim();
-  if (src.startsWith("http://") || src.startsWith("https://")) return src;
+  if (isCustomRemoteCover(coverImage)) return (coverImage || "").trim();
   return coverApiPath(id);
 }
 

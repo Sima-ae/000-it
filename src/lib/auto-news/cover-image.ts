@@ -3,7 +3,7 @@
  * Browser-safe path helpers live in `cover-paths.ts`.
  */
 import { createHash } from "node:crypto";
-import { mkdir, access } from "node:fs/promises";
+import { access, mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import sharp from "sharp";
 import {
@@ -42,12 +42,62 @@ function hsl(h: number, s: number, l: number) {
   return `hsl(${h % 360} ${s}% ${l}%)`;
 }
 
+const COVER_WIDTH = 1200;
+const COVER_HEIGHT = 630;
+/** Anonymous Pollinations images always burn in a corner logo; crop this much. */
+const WATERMARK_MIN_PX = 52;
+const WATERMARK_RATIO = 0.09;
+const COVER_CLEAN_TAG = "000it-cover-clean";
+
+function isTaggedClean(exif?: Buffer) {
+  if (!exif) return false;
+  return Buffer.from(exif).toString("latin1").includes(COVER_CLEAN_TAG);
+}
+
+async function isCoverClean(path: string) {
+  try {
+    const meta = await sharp(path, { failOn: "none" }).metadata();
+    return isTaggedClean(meta.exif);
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Drop the Pollinations corner watermark, then normalize to 1200×630.
+ * `nologo=true` is ignored by the current API, so this is the reliable fix.
+ */
+async function toCleanCoverJpeg(input: Buffer | string) {
+  const meta = await sharp(input, { failOn: "none" }).metadata();
+  const srcW = meta.width || COVER_WIDTH;
+  const srcH = meta.height || COVER_HEIGHT;
+  const stripPx = Math.max(WATERMARK_MIN_PX, Math.round(srcH * WATERMARK_RATIO));
+  const extractH = Math.max(1, srcH - stripPx);
+  return sharp(input, { failOn: "none" })
+    .extract({ left: 0, top: 0, width: srcW, height: extractH })
+    .resize(COVER_WIDTH, COVER_HEIGHT, { fit: "cover", position: "top" })
+    .jpeg({ quality: 88 })
+    .withExif({ IFD0: { ImageDescription: COVER_CLEAN_TAG } })
+    .toBuffer();
+}
+
+async function writeJpegAtomic(absPath: string, jpeg: Buffer) {
+  const tmp = `${absPath}.tmp`;
+  await writeFile(tmp, jpeg);
+  await rename(tmp, absPath);
+}
+
+async function stripStoredCoverWatermark(absPath: string) {
+  const jpeg = await toCleanCoverJpeg(await readFile(absPath));
+  await writeJpegAtomic(absPath, jpeg);
+}
+
 /** Build a visual prompt that matches the article topic. */
 export function buildNewsCoverPrompt(input: NewsCoverInput) {
   const industry = (input.industry || "AI").trim().slice(0, 40);
   const topic = input.title.trim().slice(0, 90);
   return [
-    "Editorial tech blog cover, cinematic, no text, no logo",
+    "Editorial tech blog cover, cinematic, no text, no logo, no watermark",
     topic,
     industry,
     "modern AI digital style, 16:9",
@@ -59,9 +109,8 @@ export function buildNewsCoverRemoteUrl(input: NewsCoverInput) {
   const prompt = buildNewsCoverPrompt(input);
   const seed = seedFromId(input.id);
   const params = new URLSearchParams({
-    width: "1200",
-    height: "630",
-    nologo: "true",
+    width: String(COVER_WIDTH),
+    height: String(COVER_HEIGHT),
     seed: String(seed),
   });
   return `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?${params.toString()}`;
@@ -124,7 +173,10 @@ export async function writeFallbackNewsCover(
   <text x="96" y="528" fill="rgba(255,255,255,0.55)" font-family="ui-sans-serif, system-ui, sans-serif" font-size="20">${industry}</text>
 </svg>`;
 
-  await sharp(Buffer.from(svg)).jpeg({ quality: 86 }).toFile(absPath);
+  await sharp(Buffer.from(svg))
+    .jpeg({ quality: 86 })
+    .withExif({ IFD0: { ImageDescription: COVER_CLEAN_TAG } })
+    .toFile(absPath);
 }
 
 /**
@@ -150,6 +202,16 @@ export async function ensureNewsCoverImage(
   const publicPath = localNewsCoverPath(input.id);
 
   if (!opts?.force && (await fileExists(abs))) {
+    if (!(await isCoverClean(abs))) {
+      try {
+        await stripStoredCoverWatermark(abs);
+      } catch (error) {
+        console.warn(
+          `[news-cover] watermark strip failed for ${input.id}`,
+          error instanceof Error ? error.message : error,
+        );
+      }
+    }
     return publicPath;
   }
 
@@ -175,8 +237,7 @@ export async function ensureNewsCoverImage(
         if (buffer.byteLength < 1024) {
           throw new Error(`Cover too small for ${input.id}`);
         }
-        // Normalize to jpeg via sharp
-        await sharp(buffer).jpeg({ quality: 88 }).toFile(abs);
+        await writeJpegAtomic(abs, await toCleanCoverJpeg(buffer));
         return publicPath;
       } catch (error) {
         if (attempt >= retries) {

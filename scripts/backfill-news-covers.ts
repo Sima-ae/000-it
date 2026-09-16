@@ -71,6 +71,7 @@ async function main() {
     console.log(`[${index + 1}/${posts.length}] ${post.id} → ${coverImage}`);
 
     // Pace Pollinations to avoid 429 when downloading many covers.
+    // Existing local JPEGs are cropped in place to drop the corner watermark.
     if (!remoteOnly) await sleep(1200);
   }
 
