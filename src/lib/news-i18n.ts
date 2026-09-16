@@ -35,12 +35,57 @@ export function parseNewsTranslations(raw: unknown): NewsTranslationsMap {
   return out;
 }
 
+/** Leftover takeaway / source-check stubs (any language). */
+export function isNewsDescriptionStub(text: string | null | undefined): boolean {
+  const t = (text || "").trim();
+  if (!t) return true;
+  if (t.length < 48) return true;
+  return /triplezero\s*it\s*takeaway|always check the original source|controleer altijd de originele bron|controlla sempre la fonte originale|v[eé]rifiez toujours la source|pr[uü]fen sie immer die originalquelle|comprueba siempre la fuente|verifique sempre a fonte|ελ[εέ]γχετε πάντα|sempre a fonte original|sempre a fonte originale|항상 원본|必ず元の|请始终核对|請務必核對|всегда проверяйте/i.test(
+    t,
+  );
+}
+
+/**
+ * Latin-script locales: reject bodies that still read like English copy.
+ * Catches soft-fail EN→NL echoes that differ slightly from the EN source.
+ */
+export function looksLikeEnglishNewsCopy(
+  text: string | null | undefined,
+  locale: string,
+): boolean {
+  if (!text?.trim() || locale === "en") return false;
+  // Script locales are handled by isAcceptableTranslation / needsTargetScript.
+  if (/^(ar|he|fa|ur|ja|zh|ko|el|ru|uk|bg|sr|mk|th|hi|bn)$/i.test(locale)) {
+    return false;
+  }
+  const words = text.trim().split(/\s+/).filter(Boolean);
+  if (words.length < 12) return false;
+  const hits = (
+    text.match(
+      /\b(the|and|with|that|this|from|for|are|was|were|been|have|has|will|would|about|their|published|announcement|teams|update|following|acquisition)\b/gi,
+    ) || []
+  ).length;
+  return hits / words.length >= 0.1;
+}
+
 export function newsCopyLooksComplete(
   copy: NewsLocaleCopy | undefined,
   en: NewsLocaleCopy,
   locale: string,
 ): boolean {
   if (!copy?.title?.trim() || !copy.excerpt?.trim() || !copy.description?.trim()) {
+    return false;
+  }
+  if (isNewsDescriptionStub(copy.description)) return false;
+  // Truncated / footer-only bodies vs full English article
+  if (
+    en.description.trim().length > 120 &&
+    copy.description.trim().length < Math.max(60, en.description.trim().length * 0.4)
+  ) {
+    return false;
+  }
+  if (looksLikeEnglishNewsCopy(copy.description, locale)) return false;
+  if (looksLikeEnglishNewsCopy(copy.title, locale) && copy.title.length > 24) {
     return false;
   }
   return (

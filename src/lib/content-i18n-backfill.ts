@@ -186,6 +186,15 @@ async function fillNews(deadline: number, result: TranslateContentResult) {
       description: post.description,
     };
     const existing = parseNewsTranslations(post.translations);
+    // Mirror dedicated NL columns so English-echo *Nl bodies are detected.
+    if (post.titleNl || post.excerptNl || post.descriptionNl) {
+      existing.nl = {
+        title: post.titleNl?.trim() || existing.nl?.title || "",
+        excerpt: post.excerptNl?.trim() || existing.nl?.excerpt || "",
+        description:
+          post.descriptionNl?.trim() || existing.nl?.description || "",
+      };
+    }
     const missing = missingNewsLocales(en, existing);
     if (!missing.length) {
       result.skipped += 1;
@@ -196,7 +205,7 @@ async function fillNews(deadline: number, result: TranslateContentResult) {
         deadlineMs: Math.max(deadline - Date.now(), 5_000),
       });
       result.written += 1;
-      result.details.push(`news ${post.id} filled`);
+      result.details.push(`news ${post.id} filled (+${missing.length})`);
     } catch (error) {
       result.failed += 1;
       result.details.push(

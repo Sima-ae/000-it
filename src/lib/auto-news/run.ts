@@ -194,13 +194,14 @@ export async function runAutoNewsPublish(
       const created = await createNewsPost({
         id,
         title: draft.title,
-        titleNl: draft.titleNl,
+        titleNl: draft.titleNl || undefined,
         excerpt: draft.excerpt,
-        excerptNl: draft.excerptNl,
+        excerptNl: draft.excerptNl || undefined,
         description: draft.description,
-        descriptionNl: draft.descriptionNl,
+        descriptionNl: draft.descriptionNl || undefined,
         translations: draft.translations,
-        autoTranslate: false,
+        // Fire-and-forget multi-locale fill after insert (cron resumes if cut short).
+        autoTranslate: true,
         date: targetDate,
         coverImage,
         author: AUTO_NEWS_AUTHOR,
@@ -212,8 +213,7 @@ export async function runAutoNewsPublish(
         createdById: owner?.id || null,
       });
 
-      // EN+NL are already on the draft. Remaining locales are filled by the
-      // translate-content cron so this request stays under LiteSpeed's 300s timeout.
+      // Remaining locales continue via translate-content cron after auto-news.
 
       usedUrls.add(normalizeUrl(story.url));
       usedTitles.add(created.title.toLowerCase().trim());

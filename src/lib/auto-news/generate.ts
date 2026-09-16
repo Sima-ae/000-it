@@ -247,20 +247,44 @@ export async function generateBilingualNewsDraft(
   let titleNl = "";
   let excerptNl = "";
   let descriptionNl = "";
-  // Soft-fail NL: still publish EN so a Translate outage cannot wipe a day.
-  try {
-    // Sequential to reduce Google Translate 429s
-    titleNl = await translateText(en.title, "nl", "en");
-    excerptNl = await translateText(en.excerpt, "nl", "en");
-    descriptionNl = await translateText(en.description, "nl", "en");
-  } catch (error) {
+  // Retry Dutch hard — never seed English into NL fields (cron/create will resume).
+  let lastNlError: unknown;
+  for (let attempt = 0; attempt < 4; attempt += 1) {
+    try {
+      titleNl = await translateText(en.title, "nl", "en");
+      excerptNl = await translateText(en.excerpt, "nl", "en");
+      descriptionNl = await translateText(en.description, "nl", "en");
+      if (
+        isAcceptableTranslation(en.title, titleNl, "en", "nl") &&
+        isAcceptableTranslation(en.excerpt, excerptNl, "en", "nl") &&
+        isAcceptableTranslation(en.description, descriptionNl, "en", "nl")
+      ) {
+        lastNlError = null;
+        break;
+      }
+      lastNlError = new Error("Dutch quality check failed");
+      titleNl = "";
+      excerptNl = "";
+      descriptionNl = "";
+    } catch (error) {
+      lastNlError = error;
+      titleNl = "";
+      excerptNl = "";
+      descriptionNl = "";
+      const wait = 2_000 * 2 ** attempt;
+      console.warn(
+        `[auto-news] Dutch translate retry ${attempt + 1}/4 after ${Math.round(wait / 1000)}s`,
+        error instanceof Error ? error.message : error,
+      );
+      await new Promise((r) => setTimeout(r, wait));
+    }
+  }
+  if (lastNlError) {
     console.warn(
-      "[auto-news] Dutch translate failed — publishing EN fallback",
-      error instanceof Error ? error.message : error,
+      "[auto-news] Dutch translate deferred to post-publish fill",
+      story.url,
+      lastNlError instanceof Error ? lastNlError.message : lastNlError,
     );
-    titleNl = en.title;
-    excerptNl = en.excerpt;
-    descriptionNl = en.description;
   }
 
   const nlSeed = {
@@ -268,18 +292,9 @@ export async function generateBilingualNewsDraft(
     excerpt: excerptNl,
     description: descriptionNl,
   };
-  if (
-    !isAcceptableTranslation(en.title, nlSeed.title, "en", "nl") ||
-    !isAcceptableTranslation(en.excerpt, nlSeed.excerpt, "en", "nl") ||
-    !isAcceptableTranslation(en.description, nlSeed.description, "en", "nl")
-  ) {
-    console.warn(
-      "[auto-news] Dutch quality check failed — using EN for NL fields",
-      story.url,
-    );
-    nlSeed.title = en.title;
-    nlSeed.excerpt = en.excerpt;
-    nlSeed.description = en.description;
+  const translations: NewsTranslationsMap = {};
+  if (nlSeed.title && nlSeed.excerpt && nlSeed.description) {
+    translations.nl = nlSeed;
   }
 
   const draft = sanitizeNewsDraft({
@@ -287,14 +302,14 @@ export async function generateBilingualNewsDraft(
     titleNl: nlSeed.title,
     excerptNl: nlSeed.excerpt,
     descriptionNl: nlSeed.description,
-    translations: { nl: nlSeed },
+    translations,
   });
 
   if (
     looksLikeRawFeedCopy(draft.excerpt) ||
-    looksLikeRawFeedCopy(draft.excerptNl) ||
     looksLikeRawFeedCopy(draft.description) ||
-    looksLikeRawFeedCopy(draft.descriptionNl)
+    (draft.excerptNl && looksLikeRawFeedCopy(draft.excerptNl)) ||
+    (draft.descriptionNl && looksLikeRawFeedCopy(draft.descriptionNl))
   ) {
     throw new Error(`Draft still contains feed metadata after sanitize: ${story.url}`);
   }

@@ -12,6 +12,8 @@
 import { prisma } from "../src/lib/prisma";
 import {
   buildNewsTranslationsFromEnglish,
+  isNewsDescriptionStub,
+  looksLikeEnglishNewsCopy,
   newsCopyLooksComplete,
   nlFromTranslations,
   parseNewsTranslations,
@@ -61,24 +63,26 @@ async function main() {
 
   for (const post of posts) {
     const existing = parseNewsTranslations(post.translations);
+    const en = {
+      title: post.title,
+      excerpt: post.excerpt,
+      description: post.description,
+    };
     const descriptionNlIsEnglishEcho =
       Boolean(post.descriptionNl?.trim()) &&
-      post.descriptionNl!.trim().localeCompare(post.description.trim(), undefined, {
+      (post.descriptionNl!.trim().localeCompare(post.description.trim(), undefined, {
         sensitivity: "accent",
-      }) === 0;
+      }) === 0 ||
+        looksLikeEnglishNewsCopy(post.descriptionNl, "nl") ||
+        isNewsDescriptionStub(post.descriptionNl));
     const needsNl =
       force ||
       !post.titleNl?.trim() ||
       !post.excerptNl?.trim() ||
       !post.descriptionNl?.trim() ||
       post.titleNl === post.title ||
-      descriptionNlIsEnglishEcho;
-
-    const en = {
-      title: post.title,
-      excerpt: post.excerpt,
-      description: post.description,
-    };
+      descriptionNlIsEnglishEcho ||
+      !newsCopyLooksComplete(existing.nl, en, "nl");
 
     const missingLocales = targets.filter((locale) => {
       if (locale === "nl") return needsNl;

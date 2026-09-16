@@ -7,6 +7,8 @@ import {
 } from "@/lib/auto-news/cover-image";
 import {
   buildNewsTranslationsFromEnglish,
+  isNewsDescriptionStub,
+  looksLikeEnglishNewsCopy,
   newsCopyLooksComplete,
   nlFromTranslations,
   parseNewsTranslations,
@@ -162,6 +164,15 @@ export function localizeNewsPost(post: NewsPost, locale: string): NewsPost {
       sensitivity: "accent",
     }) === 0;
 
+  const usable = (value: string, fallback: string) => {
+    if (!value) return false;
+    if (sameAsEn(value, fallback)) return false;
+    if (looksLikeEnglishNewsCopy(value, locale)) return false;
+    // Prefer full EN over leftover "check original source" stubs.
+    if (isNewsDescriptionStub(value) && fallback.length > 80) return false;
+    return true;
+  };
+
   const pickField = (
     primary: string | null | undefined,
     secondary: string | null | undefined,
@@ -169,8 +180,11 @@ export function localizeNewsPost(post: NewsPost, locale: string): NewsPost {
   ) => {
     const a = primary?.trim() || "";
     const b = secondary?.trim() || "";
-    if (a && !sameAsEn(a, fallback)) return a;
-    if (b && !sameAsEn(b, fallback)) return b;
+    if (usable(a, fallback)) return a;
+    if (usable(b, fallback)) return b;
+    if ((isNewsDescriptionStub(a) || isNewsDescriptionStub(b)) && fallback) {
+      return fallback;
+    }
     return a || b || fallback;
   };
 
@@ -392,14 +406,14 @@ export async function createNewsPost(
   let translations = parseNewsTranslations(data.translations);
   if (data.titleNl || data.excerptNl || data.descriptionNl) {
     translations.nl = {
-      title: data.titleNl?.trim() || translations.nl?.title || en.title,
-      excerpt: data.excerptNl?.trim() || translations.nl?.excerpt || en.excerpt,
+      title: data.titleNl?.trim() || translations.nl?.title || "",
+      excerpt: data.excerptNl?.trim() || translations.nl?.excerpt || "",
       description:
-        data.descriptionNl?.trim() || translations.nl?.description || en.description,
+        data.descriptionNl?.trim() || translations.nl?.description || "",
     };
   }
 
-  if (!translations.nl?.title?.trim()) {
+  if (!newsCopyLooksComplete(translations.nl, en, "nl")) {
     translations = await buildNewsTranslationsFromEnglish(en, {
       existing: translations,
       locales: ["nl"],
@@ -407,7 +421,32 @@ export async function createNewsPost(
     });
   }
 
-  const nl = nlFromTranslations(translations, en);
+  // Never persist English echoes into dedicated NL columns.
+  const nlRaw = translations.nl;
+  const titleNl =
+    nlRaw?.title?.trim() &&
+    nlRaw.title.localeCompare(en.title, undefined, { sensitivity: "accent" }) !== 0 &&
+    !looksLikeEnglishNewsCopy(nlRaw.title, "nl")
+      ? nlRaw.title.trim()
+      : null;
+  const excerptNl =
+    nlRaw?.excerpt?.trim() &&
+    nlRaw.excerpt.localeCompare(en.excerpt, undefined, { sensitivity: "accent" }) !== 0 &&
+    !looksLikeEnglishNewsCopy(nlRaw.excerpt, "nl")
+      ? nlRaw.excerpt.trim()
+      : null;
+  const descriptionNl =
+    nlRaw?.description?.trim() &&
+    !isNewsDescriptionStub(nlRaw.description) &&
+    nlRaw.description.localeCompare(en.description, undefined, {
+      sensitivity: "accent",
+    }) !== 0 &&
+    !looksLikeEnglishNewsCopy(nlRaw.description, "nl")
+      ? nlRaw.description.trim()
+      : null;
+  if (!newsCopyLooksComplete(translations.nl, en, "nl")) {
+    delete translations.nl;
+  }
 
   const coverInput = {
     id: data.id,
@@ -444,13 +483,13 @@ export async function createNewsPost(
     data: {
       id: data.id,
       title: data.title,
-      titleNl: nl.title,
+      titleNl,
       excerpt: data.excerpt,
-      excerptNl: nl.excerpt,
+      excerptNl,
       date: data.date,
       coverImage,
       description: data.description,
-      descriptionNl: nl.description,
+      descriptionNl,
       translations,
       author: data.author,
       projectUrl: data.projectUrl || null,
@@ -489,6 +528,20 @@ export async function completeNewsTranslations(
     description: row.description,
   };
   const existing = parseNewsTranslations(row.translations);
+  // Prefer curated NL columns when the JSON map is stale/English.
+  if (row.titleNl || row.excerptNl || row.descriptionNl) {
+    const colNl = {
+      title: row.titleNl?.trim() || existing.nl?.title || "",
+      excerpt: row.excerptNl?.trim() || existing.nl?.excerpt || "",
+      description: row.descriptionNl?.trim() || existing.nl?.description || "",
+    };
+    if (
+      !newsCopyLooksComplete(existing.nl, en, "nl") ||
+      newsCopyLooksComplete(colNl, en, "nl")
+    ) {
+      existing.nl = colNl;
+    }
+  }
   const preserveNl = newsCopyLooksComplete(existing.nl, en, "nl");
   const full = await buildNewsTranslationsFromEnglish(en, {
     existing,
@@ -498,13 +551,19 @@ export async function completeNewsTranslations(
     preserveLocales: preserveNl ? ["nl"] : [],
   });
   const nlFull = nlFromTranslations(full, en);
+  // Only write NL columns when they are real Dutch — avoid re-poisoning with EN.
+  const nlOk = newsCopyLooksComplete(full.nl, en, "nl");
   const updated = await prisma.newsPost.update({
     where: { id },
     data: {
       translations: full,
-      titleNl: nlFull.title,
-      excerptNl: nlFull.excerpt,
-      descriptionNl: nlFull.description,
+      ...(nlOk
+        ? {
+            titleNl: nlFull.title,
+            excerptNl: nlFull.excerpt,
+            descriptionNl: nlFull.description,
+          }
+        : {}),
     },
   });
   return mapNews(updated);

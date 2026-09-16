@@ -22,7 +22,7 @@ import {
 } from "../src/lib/news-i18n";
 
 const FOOTER_RE =
-  /triplezero\s*it\s*takeaway|always check the original source|controleer altijd de originele bron/i;
+  /triplezero\s*it\s*takeaway|always check the original source|controleer altijd de originele bron|controlla sempre la fonte originale|ελ[εέ]γχετε πάντα|v[eé]rifiez toujours la source|pr[uü]fen sie immer|comprueba siempre la fuente|verifique sempre a fonte|siempre la fuente original/i;
 
 function argFlag(name: string) {
   return process.argv.includes(`--${name}`);
