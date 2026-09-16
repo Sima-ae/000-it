@@ -94,13 +94,26 @@ function mapNews(row: {
   retentionExempt?: boolean;
 }): NewsPost {
   const translations = parseNewsTranslations(row.translations);
-  // Mirror legacy *Nl into translations.nl when missing.
+  // Mirror legacy *Nl into translations.nl when missing (never invent EN as "nl").
   if (!translations.nl && (row.titleNl || row.excerptNl || row.descriptionNl)) {
     translations.nl = {
       title: row.titleNl || row.title,
       excerpt: row.excerptNl || row.excerpt,
-      description: row.descriptionNl || row.description,
+      description: row.descriptionNl || "",
     };
+  } else if (translations.nl && row.descriptionNl?.trim()) {
+    // Prefer dedicated descriptionNl over a stale EN echo in translations.nl
+    const mapDesc = translations.nl.description?.trim() || "";
+    const colDesc = row.descriptionNl.trim();
+    const enDesc = row.description.trim();
+    if (
+      colDesc &&
+      colDesc.localeCompare(enDesc, undefined, { sensitivity: "accent" }) !== 0 &&
+      (mapDesc.localeCompare(enDesc, undefined, { sensitivity: "accent" }) === 0 ||
+        !mapDesc)
+    ) {
+      translations.nl = { ...translations.nl, description: colDesc };
+    }
   }
 
   return {
@@ -130,7 +143,8 @@ function mapNews(row: {
 
 /**
  * Resolve canonical EN (+ translations) to the active locale.
- * Dutch (`nl`) is the site default and uses *Nl / translations.nl.
+ * Dutch (`nl`) is the site default and prefers dedicated *Nl columns.
+ * Never prefer a translation that is still an English echo when a real *Nl body exists.
  */
 export function localizeNewsPost(post: NewsPost, locale: string): NewsPost {
   const en = {
@@ -143,22 +157,48 @@ export function localizeNewsPost(post: NewsPost, locale: string): NewsPost {
     return { ...post, ...en };
   }
 
-  const fromMap = post.translations?.[locale];
-  if (fromMap?.title?.trim()) {
+  const sameAsEn = (value: string, enValue: string) =>
+    value.trim().localeCompare(enValue.trim(), undefined, {
+      sensitivity: "accent",
+    }) === 0;
+
+  const pickField = (
+    primary: string | null | undefined,
+    secondary: string | null | undefined,
+    fallback: string,
+  ) => {
+    const a = primary?.trim() || "";
+    const b = secondary?.trim() || "";
+    if (a && !sameAsEn(a, fallback)) return a;
+    if (b && !sameAsEn(b, fallback)) return b;
+    return a || b || fallback;
+  };
+
+  // NL first: titleNl/excerptNl/descriptionNl are the curated/default columns.
+  if (locale === "nl") {
+    const fromMap = post.translations?.nl;
     return {
       ...post,
-      title: fromMap.title.trim(),
-      excerpt: cleanSourceSummary(fromMap.excerpt?.trim() || en.excerpt),
-      description: cleanSourceSummary(fromMap.description?.trim() || en.description),
+      title: pickField(post.titleNl, fromMap?.title, en.title),
+      excerpt: cleanSourceSummary(
+        pickField(post.excerptNl, fromMap?.excerpt, en.excerpt),
+      ),
+      description: cleanSourceSummary(
+        pickField(post.descriptionNl, fromMap?.description, en.description),
+      ),
     };
   }
 
-  if (locale === "nl") {
+  const fromMap = post.translations?.[locale];
+  if (fromMap?.title?.trim()) {
+    const title = fromMap.title.trim();
+    const excerpt = pickField(fromMap.excerpt, null, en.excerpt);
+    const description = pickField(fromMap.description, null, en.description);
     return {
       ...post,
-      title: post.titleNl?.trim() || en.title,
-      excerpt: cleanSourceSummary(post.excerptNl?.trim() || en.excerpt),
-      description: cleanSourceSummary(post.descriptionNl?.trim() || en.description),
+      title,
+      excerpt: cleanSourceSummary(excerpt),
+      description: cleanSourceSummary(description),
     };
   }
 

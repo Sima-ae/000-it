@@ -61,12 +61,18 @@ async function main() {
 
   for (const post of posts) {
     const existing = parseNewsTranslations(post.translations);
+    const descriptionNlIsEnglishEcho =
+      Boolean(post.descriptionNl?.trim()) &&
+      post.descriptionNl!.trim().localeCompare(post.description.trim(), undefined, {
+        sensitivity: "accent",
+      }) === 0;
     const needsNl =
       force ||
       !post.titleNl?.trim() ||
       !post.excerptNl?.trim() ||
       !post.descriptionNl?.trim() ||
-      post.titleNl === post.title;
+      post.titleNl === post.title ||
+      descriptionNlIsEnglishEcho;
 
     const en = {
       title: post.title,
