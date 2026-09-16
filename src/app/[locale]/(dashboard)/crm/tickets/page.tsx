@@ -132,7 +132,7 @@ export default function CrmTicketsPage() {
     const res = await fetch(`/api/tickets/${selectedId}/messages`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ body: reply.trim() }),
+      body: JSON.stringify({ body: reply.trim(), skipAgent: true }),
     });
     if (!res.ok) {
       toast.error("Failed");

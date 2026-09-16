@@ -64,6 +64,23 @@ function saveStored(data: StoredChat | null) {
   else localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
 }
 
+function asGuestToken(value: unknown): string | undefined {
+  return typeof value === "string" && value.trim() ? value : undefined;
+}
+
+function isLocalTicketId(id: string) {
+  return id.startsWith("local-");
+}
+
+function localChatMessage(body: string, senderKind: string): ChatMessage {
+  return {
+    id: `local-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+    body,
+    senderKind,
+    createdAt: new Date().toISOString(),
+  };
+}
+
 function isAppShellPath(pathname: string) {
   return /\/(login|register|forgot-password|dashboard|crm|tickets|todos|users|projects|leads|settings|content-generator|seo-analysis)(\/|$)/.test(
     pathname,
@@ -98,7 +115,7 @@ export function LiveChatWidget() {
   const restore = useCallback(async () => {
     const stored = loadStored();
     if (!stored?.ticketId) return;
-    setGuestToken(stored.guestToken);
+    setGuestToken(asGuestToken(stored.guestToken));
     if (stored.guestName) setGuestName(stored.guestName);
     if (stored.guestEmail) setGuestEmail(stored.guestEmail);
     const qs = stored.guestToken ? `?token=${encodeURIComponent(stored.guestToken)}` : "";
@@ -134,7 +151,7 @@ export function LiveChatWidget() {
   }, [ticket?.messages, open]);
 
   useEffect(() => {
-    if (!open || !ticket?.id) return;
+    if (!open || !ticket?.id || isLocalTicketId(ticket.id)) return;
     const timer = setInterval(async () => {
       const qs = guestToken ? `?token=${encodeURIComponent(guestToken)}` : "";
       const res = await fetch(`/api/tickets/${ticket.id}${qs}`);
@@ -192,6 +209,47 @@ export function LiveChatWidget() {
     return () => window.removeEventListener(OPEN_CHAT_EVENT, onOpen);
   }, []);
 
+  async function askAgentOffline(question: string) {
+    const res = await fetch("/api/agent-000/ask", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ locale, question, persist: false }),
+    });
+    if (!res.ok) throw new Error("ask failed");
+    const data = (await res.json()) as { answer?: string };
+    if (!data.answer) throw new Error("ask failed");
+    return data.answer;
+  }
+
+  function applyLocalAgentTurn(question: string, answer: string, subjectLine: string) {
+    const visitorKind = loggedIn && !isStaff ? "CLIENT" : isStaff ? "STAFF" : "GUEST";
+    setTicket((prev) => {
+      if (prev) {
+        return {
+          ...prev,
+          messages: [
+            ...prev.messages,
+            localChatMessage(question, visitorKind),
+            localChatMessage(answer, "SYSTEM"),
+          ],
+        };
+      }
+      return {
+        id: `local-${Date.now()}`,
+        subject: subjectLine,
+        status: "OPEN",
+        messages: [
+          localChatMessage(question, visitorKind),
+          localChatMessage(answer, "SYSTEM"),
+        ],
+      };
+    });
+    setDraft("");
+    setSubject("");
+    setMode("chat");
+    speak(answer);
+  }
+
   async function startConversation(opts: {
     subject: string;
     message: string;
@@ -217,7 +275,7 @@ export function LiveChatWidget() {
         throw new Error(err.error || "Failed");
       }
       const data = await res.json();
-      const token = data.guestToken as string | undefined;
+      const token = asGuestToken(data.guestToken);
       setGuestToken(token);
       saveStored({
         ticketId: data.id,
@@ -233,8 +291,13 @@ export function LiveChatWidget() {
         .reverse()
         .find((m: ChatMessage) => m.senderKind === "SYSTEM");
       if (lastSystem?.body) speak(lastSystem.body);
-    } catch (e) {
-      setError(e instanceof Error ? e.message : "Error");
+    } catch {
+      try {
+        const answer = await askAgentOffline(opts.message);
+        applyLocalAgentTurn(opts.message, answer, opts.subject);
+      } catch {
+        setError(copy.sendFailed);
+      }
     } finally {
       setBusy(false);
     }
@@ -246,23 +309,35 @@ export function LiveChatWidget() {
     setBusy(true);
     setError(null);
     try {
-      const res = await fetch(`/api/tickets/${ticket.id}/messages`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ body, guestToken, locale }),
-      });
-      if (!res.ok) throw new Error("Send failed");
-      const data = await res.json();
-      const visitorMsg = data.message || data;
-      const agentMsg = data.agentMessage;
-      setTicket((prev) => {
-        if (!prev) return prev;
-        const next = [...prev.messages, visitorMsg];
-        if (agentMsg) next.push(agentMsg);
-        return { ...prev, messages: next };
-      });
-      setDraft("");
-      if (agentMsg?.body) speak(agentMsg.body);
+      if (!isLocalTicketId(ticket.id)) {
+        const payload: { body: string; locale: string; guestToken?: string } = {
+          body,
+          locale,
+        };
+        if (guestToken) payload.guestToken = guestToken;
+        const res = await fetch(`/api/tickets/${ticket.id}/messages`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+        if (res.ok) {
+          const data = await res.json();
+          const visitorMsg = data.message || data;
+          const agentMsg = data.agentMessage as ChatMessage | undefined;
+          setTicket((prev) => {
+            if (!prev) return prev;
+            const next = [...prev.messages, visitorMsg];
+            if (agentMsg) next.push(agentMsg);
+            return { ...prev, messages: next };
+          });
+          setDraft("");
+          if (agentMsg?.body) speak(agentMsg.body);
+          return;
+        }
+      }
+
+      const answer = await askAgentOffline(body);
+      applyLocalAgentTurn(body, answer, ticket.subject);
     } catch {
       setError(copy.sendFailed);
     } finally {
@@ -272,6 +347,7 @@ export function LiveChatWidget() {
 
   async function handlePrimarySubmit(e?: React.FormEvent) {
     e?.preventDefault();
+    if (busy) return;
     if (mode === "ticket") {
       if (!subject.trim() || !draft.trim()) return;
       if (needsIdentity && (!guestName.trim() || !guestEmail.trim())) return;
@@ -399,7 +475,7 @@ export function LiveChatWidget() {
                     >
                       {!mine ? (
                         <div className="mb-1 flex items-center gap-1.5">
-                          {system ? <Agent000Avatar state="idle" size="sm" className="!h-5 !w-5" /> : null}
+                          {system ? <Agent000Avatar state="idle" size="sm" className="h-5! w-5!" /> : null}
                           <p className="text-[10px] font-medium uppercase tracking-wide opacity-70">
                             {system
                               ? copy.agentLabel
@@ -484,12 +560,6 @@ export function LiveChatWidget() {
                 ref={inputRef}
                 value={draft}
                 onChange={(e) => setDraft(e.target.value)}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" && !e.shiftKey) {
-                    e.preventDefault();
-                    void handlePrimarySubmit();
-                  }
-                }}
                 placeholder={copy.placeholder}
                 required
                 className="h-10"

@@ -8,10 +8,13 @@ import { canAccessTicket } from "@/lib/support";
 export const runtime = "nodejs";
 
 const bodySchema = z.object({
-  locale: z.string().min(2).max(12).default("en"),
+  locale: z.string().min(2).max(12).optional().default("en"),
   question: z.string().min(1).max(2000),
   ticketId: z.string().optional(),
-  guestToken: z.string().optional(),
+  guestToken: z.preprocess(
+    (value) => (typeof value === "string" && value.trim() ? value.trim() : undefined),
+    z.string().optional(),
+  ),
   /** When true (default if ticketId set), persist SYSTEM reply on the ticket. */
   persist: z.boolean().optional(),
 });

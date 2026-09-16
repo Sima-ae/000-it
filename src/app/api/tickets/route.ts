@@ -59,84 +59,89 @@ export async function POST(request: Request) {
   }
 
   const data = parsed.data;
-  const loggedIn = Boolean(session?.user?.id);
-  const staff = isStaffRole(session?.user?.role);
+  try {
+    const loggedIn = Boolean(session?.user?.id);
+    const staff = isStaffRole(session?.user?.role);
 
-  if (!loggedIn && (!data.guestName || !data.guestEmail)) {
-    return NextResponse.json({ error: "Name and email required" }, { status: 400 });
-  }
+    if (!loggedIn && (!data.guestName || !data.guestEmail)) {
+      return NextResponse.json({ error: "Name and email required" }, { status: 400 });
+    }
 
-  const isClientUser = loggedIn && !staff;
-  const guestToken = !loggedIn ? newGuestToken() : null;
-  const senderKind = staff ? "STAFF" : isClientUser ? "CLIENT" : "GUEST";
-  const email = (data.guestEmail || session?.user?.email || "").toLowerCase();
+    const isClientUser = loggedIn && !staff;
+    const guestToken = !loggedIn ? newGuestToken() : null;
+    const senderKind = staff ? "STAFF" : isClientUser ? "CLIENT" : "GUEST";
+    const email = (data.guestEmail || session?.user?.email || "").toLowerCase();
 
-  // Auto-link CRM client by email when possible
-  let clientId = data.clientId || null;
-  if (!clientId && email) {
-    const matched = await prisma.client.findFirst({
-      where: { email, isLead: false },
-      orderBy: { updatedAt: "desc" },
-    });
-    clientId = matched?.id ?? null;
-  }
+    // Auto-link CRM client by email when possible
+    let clientId = data.clientId || null;
+    if (!clientId && email) {
+      const matched = await prisma.client.findFirst({
+        where: { email, isLead: false },
+        orderBy: { updatedAt: "desc" },
+      });
+      clientId = matched?.id ?? null;
+    }
 
-  const source = data.source ?? (isClientUser ? "DASHBOARD" : "CHAT");
-  const locale = data.locale || "en";
-  const agent =
-    source === "CHAT" ? buildAgentReply(locale, data.message) : null;
+    const source = data.source ?? (isClientUser ? "DASHBOARD" : "CHAT");
+    const locale = data.locale || "en";
+    const agent =
+      source === "CHAT" ? buildAgentReply(locale, data.message) : null;
 
-  const ticket = await prisma.supportTicket.create({
-    data: {
-      subject: data.subject,
-      priority: data.priority ?? "MEDIUM",
-      source,
-      ticketType: data.ticketType || "General",
-      userId: isClientUser ? session!.user.id : null,
-      clientId,
-      projectId: data.projectId || null,
-      guestName: data.guestName || session?.user?.name || null,
-      guestEmail: data.guestEmail || session?.user?.email || null,
-      guestToken,
-      status: "OPEN",
-      messages: {
-        create: [
-          {
-            body: data.message,
-            senderId: session?.user?.id ?? null,
-            senderKind,
-          },
-          ...(agent
-            ? [
-                {
-                  body: agent.answer,
-                  senderId: null,
-                  senderKind: "SYSTEM" as const,
-                },
-              ]
-            : []),
-        ],
+    const ticket = await prisma.supportTicket.create({
+      data: {
+        subject: data.subject,
+        priority: data.priority ?? "MEDIUM",
+        source,
+        ticketType: data.ticketType || "General",
+        userId: isClientUser ? session!.user.id : null,
+        clientId,
+        projectId: data.projectId || null,
+        guestName: data.guestName || session?.user?.name || null,
+        guestEmail: data.guestEmail || session?.user?.email || null,
+        guestToken,
+        status: "OPEN",
+        messages: {
+          create: [
+            {
+              body: data.message,
+              senderId: session?.user?.id ?? null,
+              senderKind,
+            },
+            ...(agent
+              ? [
+                  {
+                    body: agent.answer,
+                    senderId: null,
+                    senderKind: "SYSTEM" as const,
+                  },
+                ]
+              : []),
+          ],
+        },
       },
-    },
-    include: {
-      messages: { orderBy: { createdAt: "asc" } },
-      client: { select: { id: true, name: true, company: true } },
-      project: { select: { id: true, name: true } },
-    },
-  });
+      include: {
+        messages: { orderBy: { createdAt: "asc" } },
+        client: { select: { id: true, name: true, company: true } },
+        project: { select: { id: true, name: true } },
+      },
+    });
 
-  return NextResponse.json(
-    {
-      ...ticket,
-      guestToken,
-      agent: agent
-        ? {
-            faqId: agent.faqId,
-            confidence: agent.confidence,
-            actions: agent.actions,
-          }
-        : null,
-    },
-    { status: 201 },
-  );
+    return NextResponse.json(
+      {
+        ...ticket,
+        guestToken,
+        agent: agent
+          ? {
+              faqId: agent.faqId,
+              confidence: agent.confidence,
+              actions: agent.actions,
+            }
+          : null,
+      },
+      { status: 201 },
+    );
+  } catch (error) {
+    console.error("[tickets] POST failed", error);
+    return NextResponse.json({ error: "Could not create ticket" }, { status: 503 });
+  }
 }
