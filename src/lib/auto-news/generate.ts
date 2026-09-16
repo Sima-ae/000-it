@@ -213,9 +213,8 @@ function buildEnglishDraft(
       ? paragraphs.join("\n\n")
       : `${story.sourceName} shared a new AI-industry update focused on practical developments for builders and operators.`;
 
-  const takeaway = isResearch
-    ? "TripleZero iT takeaway: treat this as an early signal, not a production playbook. Validate claims against your stack, then decide whether the idea belongs in experiments, client proposals or roadmap discussions."
-    : "TripleZero iT takeaway: check how this affects cost, tooling and workflows — then update prompts, automations and publishing pipelines where needed. Always verify the original source before changing production systems.";
+  // Short footer only — avoid long branded takeaways on every article.
+  const takeaway = "Always check the original source.";
 
   const description = [lead, context, body, takeaway].join("\n\n");
   const excerptSource = paragraphs[0] || context;
