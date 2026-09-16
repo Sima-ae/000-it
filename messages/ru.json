@@ -604,7 +604,9 @@
     "result": "результат",
     "results": "результаты",
     "forQuery": "для",
-    "empty": "Результаты не найдены."
+    "empty": "Результаты не найдены.",
+    "browseTitle": "Browse all questions",
+    "matchedHint": "Matched FAQ highlighted below"
   },
   "appointment": {
     "title": "Назначить встречу",
@@ -671,10 +673,10 @@
   },
   "liveChat": {
     "title": "Живой чат",
-    "subtitle": "Поддержка TripleZero IT",
+    "subtitle": "Agent 000 · TripleZero iT",
     "online": "Онлайн — отвечаем как можно скорее",
-    "teaser": "Нужна помощь? Пообщайтесь с нами.",
-    "emptyChat": "Задайте вопрос. Наша команда ответит как можно скорее.",
+    "teaser": "Need help? Chat with Agent 000.",
+    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
     "emptyTicket": "Опишите свой запрос — мы откроем тикет, синхронизированный с вашим кабинетом.",
     "placeholder": "Введите сообщение…",
     "newTicket": "Новый билет",
@@ -695,7 +697,8 @@
     "todoViewAll": "Посмотреть все",
     "todoEmpty": "Дел пока нет.",
     "todoPlaceholder": "Новая задача…",
-    "todoAdd": "Добавлять"
+    "todoAdd": "Добавлять",
+    "agentLabel": "Agent 000"
   },
   "locations": {
     "title": "Локации",
@@ -736,5 +739,19 @@
     "back": "Вернуться к новостям",
     "viewSource": "Посмотреть оригинальный источник",
     "subtitle": "Будьте в курсе всех событий."
+  },
+  "agent000": {
+    "name": "Agent 000",
+    "role": "Virtual FAQ & support assistant",
+    "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
+    "placeholder": "Ask Agent 000 a question…",
+    "send": "Send",
+    "thinking": "Agent 000 is thinking…",
+    "mute": "Mute voice",
+    "unmute": "Unmute voice",
+    "actionBook": "Book appointment",
+    "actionTicket": "Open live chat / ticket",
+    "actionContact": "Contact",
+    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket."
   }
 }

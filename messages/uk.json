@@ -604,7 +604,9 @@
     "result": "результат",
     "results": "результати",
     "forQuery": "для",
-    "empty": "Результатів не знайдено."
+    "empty": "Результатів не знайдено.",
+    "browseTitle": "Browse all questions",
+    "matchedHint": "Matched FAQ highlighted below"
   },
   "appointment": {
     "title": "Записатись на прийом ",
@@ -671,10 +673,10 @@
   },
   "liveChat": {
     "title": "Живий чат",
-    "subtitle": "Підтримка TripleZero iT",
+    "subtitle": "Agent 000 · TripleZero iT",
     "online": "Онлайн — ми відповідаємо якомога швидше",
-    "teaser": "Потрібна допомога? Спілкуйтеся з нами.",
-    "emptyChat": "Задайте питання. Наша команда відповість якомога швидше.",
+    "teaser": "Need help? Chat with Agent 000.",
+    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
     "emptyTicket": "Опишіть свій запит — ми відкриємо заявку, синхронізовану з вашою інформаційною панеллю.",
     "placeholder": "Введіть своє повідомлення…",
     "newTicket": "Новий квиток",
@@ -695,7 +697,8 @@
     "todoViewAll": "Переглянути всі",
     "todoEmpty": "Поки що немає справ.",
     "todoPlaceholder": "Нове завдання…",
-    "todoAdd": "додати"
+    "todoAdd": "додати",
+    "agentLabel": "Agent 000"
   },
   "locations": {
     "title": "Розташування",
@@ -736,5 +739,19 @@
     "back": "Повернутися до новин",
     "viewSource": "Переглянути оригінальне джерело",
     "subtitle": "Будьте в курсі всіх подій."
+  },
+  "agent000": {
+    "name": "Agent 000",
+    "role": "Virtual FAQ & support assistant",
+    "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
+    "placeholder": "Ask Agent 000 a question…",
+    "send": "Send",
+    "thinking": "Agent 000 is thinking…",
+    "mute": "Mute voice",
+    "unmute": "Unmute voice",
+    "actionBook": "Book appointment",
+    "actionTicket": "Open live chat / ticket",
+    "actionContact": "Contact",
+    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket."
   }
 }

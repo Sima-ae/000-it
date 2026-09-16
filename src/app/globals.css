@@ -534,3 +534,150 @@ body::before {
   color: var(--muted-foreground);
   background: color-mix(in oklab, var(--background) 70%, transparent);
 }
+
+/* —— Agent 000 animated avatar (transparent SVG) —— */
+.agent000 {
+  animation: a000-float 3.4s ease-in-out infinite;
+}
+.agent000 .a000-shadow {
+  opacity: 0.12;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.agent000 .a000-eye {
+  opacity: 0.9;
+}
+.agent000 .a000-ear {
+  stroke-opacity: 0.75;
+}
+.agent000 .a000-led {
+  opacity: 0.45;
+}
+.agent000 .a000-hand {
+  opacity: 0.3;
+  transform: translate(8px, 12px) scale(0.82);
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.agent000 .a000-head {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.agent000 .a000-mouth {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.agent000.is-idle .a000-eye {
+  animation: a000-pulse 2.8s ease-in-out infinite;
+}
+.agent000.is-idle .a000-ear {
+  animation: a000-pulse 2.8s ease-in-out infinite;
+}
+.agent000.is-idle .a000-led {
+  animation: a000-led 2.4s ease-in-out infinite;
+}
+
+.agent000.is-thinking {
+  animation-duration: 2.2s;
+}
+.agent000.is-thinking .a000-head {
+  animation: a000-tilt 2.2s ease-in-out infinite;
+}
+.agent000.is-thinking .a000-hand {
+  opacity: 1;
+  animation: a000-hand 2.2s ease-in-out infinite;
+}
+.agent000.is-thinking .a000-eye,
+.agent000.is-thinking .a000-ear {
+  animation: a000-pulse 1s ease-in-out infinite;
+}
+.agent000.is-thinking .a000-led {
+  animation: a000-led 0.85s ease-in-out infinite;
+}
+
+.agent000.is-speaking {
+  animation-duration: 1.8s;
+}
+.agent000.is-speaking .a000-eye,
+.agent000.is-speaking .a000-ear {
+  animation: a000-pulse 0.5s ease-in-out infinite;
+}
+.agent000.is-speaking .a000-led {
+  animation: a000-led 0.45s ease-in-out infinite;
+}
+.agent000.is-speaking .a000-mouth {
+  animation: a000-mouth 0.4s ease-in-out infinite;
+}
+.agent000.is-speaking .a000-hand {
+  opacity: 0.35;
+}
+.agent000.is-speaking .a000-shadow {
+  animation: a000-shadow 1.8s ease-in-out infinite;
+}
+
+@keyframes a000-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+@keyframes a000-tilt {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+}
+@keyframes a000-hand {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(-3px, -6px) rotate(-10deg);
+  }
+}
+@keyframes a000-pulse {
+  0%,
+  100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes a000-led {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes a000-mouth {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.8);
+  }
+}
+@keyframes a000-shadow {
+  0%,
+  100% {
+    opacity: 0.1;
+    transform: scaleX(1);
+  }
+  50% {
+    opacity: 0.2;
+    transform: scaleX(0.9);
+  }
+}

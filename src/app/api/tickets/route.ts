@@ -4,6 +4,7 @@ import { prisma } from "@/lib/prisma";
 import { auth } from "@/lib/auth";
 import { isStaffRole } from "@/lib/roles";
 import { newGuestToken } from "@/lib/support";
+import { buildAgentReply } from "@/lib/agent-000/ask";
 
 const createSchema = z.object({
   subject: z.string().min(2).max(160),
@@ -81,10 +82,9 @@ export async function POST(request: Request) {
   }
 
   const source = data.source ?? (isClientUser ? "DASHBOARD" : "CHAT");
-  const isNl = (data.locale || "").toLowerCase().startsWith("nl");
-  const helperReply = isNl
-    ? "Hallo! 👋 Helper hier — bedankt voor uw bericht. Ons team heeft dit ontvangen en reageert zo snel mogelijk. U kunt hier ondertussen gerust meer details sturen."
-    : "Hi! 👋 Helper here — thanks for your message. Our team has received it and will reply as soon as possible. Feel free to send more details here in the meantime.";
+  const locale = data.locale || "en";
+  const agent =
+    source === "CHAT" ? buildAgentReply(locale, data.message) : null;
 
   const ticket = await prisma.supportTicket.create({
     data: {
@@ -106,10 +106,10 @@ export async function POST(request: Request) {
             senderId: session?.user?.id ?? null,
             senderKind,
           },
-          ...(source === "CHAT"
+          ...(agent
             ? [
                 {
-                  body: helperReply,
+                  body: agent.answer,
                   senderId: null,
                   senderKind: "SYSTEM" as const,
                 },
@@ -125,5 +125,18 @@ export async function POST(request: Request) {
     },
   });
 
-  return NextResponse.json({ ...ticket, guestToken }, { status: 201 });
+  return NextResponse.json(
+    {
+      ...ticket,
+      guestToken,
+      agent: agent
+        ? {
+            faqId: agent.faqId,
+            confidence: agent.confidence,
+            actions: agent.actions,
+          }
+        : null,
+    },
+    { status: 201 },
+  );
 }

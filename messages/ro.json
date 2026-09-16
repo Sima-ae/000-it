@@ -604,7 +604,9 @@
     "result": "rezultat",
     "results": "rezultate",
     "forQuery": "pentru",
-    "empty": "Nu s-au găsit rezultate."
+    "empty": "Nu s-au găsit rezultate.",
+    "browseTitle": "Browse all questions",
+    "matchedHint": "Matched FAQ highlighted below"
   },
   "appointment": {
     "title": "Rezervați",
@@ -671,10 +673,10 @@
   },
   "liveChat": {
     "title": "Chat live",
-    "subtitle": "Suport iT TripleZero",
+    "subtitle": "Agent 000 · TripleZero iT",
     "online": "Online — răspundem cât mai curând posibil",
-    "teaser": "Ai nevoie de ajutor? Discutați cu noi.",
-    "emptyChat": "Pune o întrebare. Echipa noastră va răspunde cât mai curând posibil.",
+    "teaser": "Need help? Chat with Agent 000.",
+    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
     "emptyTicket": "Descrieți solicitarea dvs. — vom deschide un bilet sincronizat cu tabloul de bord.",
     "placeholder": "Introduceți mesajul dvs.…",
     "newTicket": "Bilet nou",
@@ -695,7 +697,8 @@
     "todoViewAll": "Vezi toate",
     "todoEmpty": "Nu există încă de făcut.",
     "todoPlaceholder": "Sarcină nouă…",
-    "todoAdd": "Adăuga"
+    "todoAdd": "Adăuga",
+    "agentLabel": "Agent 000"
   },
   "locations": {
     "title": "Locații",
@@ -736,5 +739,19 @@
     "back": "Înapoi la știri",
     "viewSource": "Vezi sursa originală",
     "subtitle": "Fii la curent cu toate evoluțiile."
+  },
+  "agent000": {
+    "name": "Agent 000",
+    "role": "Virtual FAQ & support assistant",
+    "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
+    "placeholder": "Ask Agent 000 a question…",
+    "send": "Send",
+    "thinking": "Agent 000 is thinking…",
+    "mute": "Mute voice",
+    "unmute": "Unmute voice",
+    "actionBook": "Book appointment",
+    "actionTicket": "Open live chat / ticket",
+    "actionContact": "Contact",
+    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket."
   }
 }

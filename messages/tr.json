@@ -604,7 +604,9 @@
     "result": "sonuç",
     "results": "sonuç",
     "forQuery": "için",
-    "empty": "Sonuç bulunamadı."
+    "empty": "Sonuç bulunamadı.",
+    "browseTitle": "Browse all questions",
+    "matchedHint": "Matched FAQ highlighted below"
   },
   "appointment": {
     "title": "Rezervasyon Yap",
@@ -671,10 +673,10 @@
   },
   "liveChat": {
     "title": "Canlı sohbet",
-    "subtitle": "TripleZero iT desteği",
+    "subtitle": "Agent 000 · TripleZero iT",
     "online": "Çevrimiçi — mümkün olan en kısa sürede yanıt veriyoruz",
-    "teaser": "Yardıma mı ihtiyacınız var? Bizimle sohbet edin.",
-    "emptyChat": "Bir soru sorun. Ekibimiz en kısa sürede cevap verecektir.",
+    "teaser": "Need help? Chat with Agent 000.",
+    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
     "emptyTicket": "İsteğinizi açıklayın; kontrol panelinize senkronize edilmiş bir destek bildirimi açacağız.",
     "placeholder": "Mesajınızı yazın…",
     "newTicket": "Yeni bilet",
@@ -695,7 +697,8 @@
     "todoViewAll": "Tümünü görüntüle",
     "todoEmpty": "Henüz yapılacak iş yok.",
     "todoPlaceholder": "Yeni görev…",
-    "todoAdd": "Eklemek"
+    "todoAdd": "Eklemek",
+    "agentLabel": "Agent 000"
   },
   "locations": {
     "title": "Konumlar",
@@ -736,5 +739,19 @@
     "back": "Haberlere geri dön",
     "viewSource": "Orijinal kaynağı görüntüle",
     "subtitle": "Tüm gelişmelerden haberdar olun."
+  },
+  "agent000": {
+    "name": "Agent 000",
+    "role": "Virtual FAQ & support assistant",
+    "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
+    "placeholder": "Ask Agent 000 a question…",
+    "send": "Send",
+    "thinking": "Agent 000 is thinking…",
+    "mute": "Mute voice",
+    "unmute": "Unmute voice",
+    "actionBook": "Book appointment",
+    "actionTicket": "Open live chat / ticket",
+    "actionContact": "Contact",
+    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket."
   }
 }

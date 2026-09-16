@@ -604,7 +604,9 @@
     "result": "արդյունք",
     "results": "արդյունք",
     "forQuery": "համար",
-    "empty": "Արդյունքներ չեն գտնվել."
+    "empty": "Արդյունքներ չեն գտնվել.",
+    "browseTitle": "Browse all questions",
+    "matchedHint": "Matched FAQ highlighted below"
   },
   "appointment": {
     "title": "Ամրագրել ժամադրություն",
@@ -671,10 +673,10 @@
   },
   "liveChat": {
     "title": "Ուղիղ զրույց",
-    "subtitle": "TripleZero iT աջակցություն",
+    "subtitle": "Agent 000 · TripleZero iT",
     "online": "Առցանց — մենք պատասխանում ենք որքան հնարավոր է շուտ",
-    "teaser": "Օգնությա՞ն է պետք: Զրուցեք մեզ հետ:",
-    "emptyChat": "Հարց տվեք. Մեր թիմը կպատասխանի հնարավորինս շուտ:",
+    "teaser": "Need help? Chat with Agent 000.",
+    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
     "emptyTicket": "Նկարագրեք ձեր հարցումը. մենք կբացենք ձեր վահանակի հետ համաժամացված տոմս:",
     "placeholder": "Մուտքագրեք ձեր հաղորդագրությունը…",
     "newTicket": "Նոր տոմս",
@@ -695,7 +697,8 @@
     "todoViewAll": "Դիտել բոլորը",
     "todoEmpty": "Առայժմ անելիքներ չկան:",
     "todoPlaceholder": "Նոր առաջադրանք…",
-    "todoAdd": "Ավելացնել"
+    "todoAdd": "Ավելացնել",
+    "agentLabel": "Agent 000"
   },
   "locations": {
     "title": "Վայրեր",
@@ -736,5 +739,19 @@
     "back": "Վերադարձ դեպի նորություններ",
     "viewSource": "Դիտել օրիգինալ աղբյուրը",
     "subtitle": "Եղեք արդի բոլոր զարգացումների մասին:"
+  },
+  "agent000": {
+    "name": "Agent 000",
+    "role": "Virtual FAQ & support assistant",
+    "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
+    "placeholder": "Ask Agent 000 a question…",
+    "send": "Send",
+    "thinking": "Agent 000 is thinking…",
+    "mute": "Mute voice",
+    "unmute": "Unmute voice",
+    "actionBook": "Book appointment",
+    "actionTicket": "Open live chat / ticket",
+    "actionContact": "Contact",
+    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket."
   }
 }

@@ -18,6 +18,9 @@ import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { isStaffRole } from "@/lib/roles";
+import { Agent000Avatar } from "@/components/agent-000/Agent000Avatar";
+import { OPEN_CHAT_EVENT } from "@/components/content/FaqPageClient";
+import { useAgentSpeech } from "@/components/agent-000/useAgentSpeech";
 
 type ChatMessage = {
   id: string;
@@ -74,6 +77,7 @@ export function LiveChatWidget() {
   const pathname = usePathname();
   const isStaff = isStaffRole(session?.user?.role);
   const hideWidget = isAppShellPath(pathname);
+  const { speak } = useAgentSpeech(locale);
 
   const [open, setOpen] = useState(false);
   const [teaser, setTeaser] = useState(false);
@@ -166,9 +170,27 @@ export function LiveChatWidget() {
       closeChat: t("closeChat"),
       visitor: t("visitor"),
       subjectPrefix: t("subjectPrefix"),
+      agentLabel: t("agentLabel"),
     }),
     [t],
   );
+
+  useEffect(() => {
+    function onOpen(e: Event) {
+      const detail = (e as CustomEvent<{ prefill?: string }>).detail;
+      setOpen(true);
+      setTeaser(false);
+      setMode("chat");
+      if (detail?.prefill) setDraft(detail.prefill);
+      try {
+        localStorage.setItem(TEASER_KEY, "1");
+      } catch {
+        /* ignore */
+      }
+    }
+    window.addEventListener(OPEN_CHAT_EVENT, onOpen);
+    return () => window.removeEventListener(OPEN_CHAT_EVENT, onOpen);
+  }, []);
 
   async function startConversation(opts: {
     subject: string;
@@ -207,6 +229,10 @@ export function LiveChatWidget() {
       setDraft("");
       setSubject("");
       setMode("chat");
+      const lastSystem = [...(data.messages || [])]
+        .reverse()
+        .find((m: ChatMessage) => m.senderKind === "SYSTEM");
+      if (lastSystem?.body) speak(lastSystem.body);
     } catch (e) {
       setError(e instanceof Error ? e.message : "Error");
     } finally {
@@ -223,14 +249,20 @@ export function LiveChatWidget() {
       const res = await fetch(`/api/tickets/${ticket.id}/messages`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ body, guestToken }),
+        body: JSON.stringify({ body, guestToken, locale }),
       });
       if (!res.ok) throw new Error("Send failed");
-      const msg = await res.json();
-      setTicket((prev) =>
-        prev ? { ...prev, messages: [...prev.messages, msg] } : prev,
-      );
+      const data = await res.json();
+      const visitorMsg = data.message || data;
+      const agentMsg = data.agentMessage;
+      setTicket((prev) => {
+        if (!prev) return prev;
+        const next = [...prev.messages, visitorMsg];
+        if (agentMsg) next.push(agentMsg);
+        return { ...prev, messages: next };
+      });
       setDraft("");
+      if (agentMsg?.body) speak(agentMsg.body);
     } catch {
       setError(copy.sendFailed);
     } finally {
@@ -293,16 +325,21 @@ export function LiveChatWidget() {
         <div className="pointer-events-auto flex max-h-[min(70vh,520px)] w-[min(92vw,380px)] flex-col overflow-hidden rounded-2xl border border-border bg-background shadow-2xl">
           <div className="shrink-0 border-b border-border bg-primary px-4 py-3 text-primary-foreground">
             <div className="flex items-start justify-between gap-2">
-              <div>
-                <p className="font-display text-sm font-semibold tracking-tight">{copy.title}</p>
-                <p className="text-[11px] opacity-90">{copy.subtitle}</p>
-                <p className="mt-1 flex items-center gap-1.5 text-[11px] opacity-95">
-                  <span className="relative flex h-2 w-2">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
-                    <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
-                  </span>
-                  {copy.online}
-                </p>
+              <div className="flex items-start gap-2.5">
+                <Agent000Avatar state="idle" size="sm" className="mt-0.5" />
+                <div>
+                  <p className="font-display text-sm font-semibold tracking-tight">
+                    {copy.agentLabel}
+                  </p>
+                  <p className="text-[11px] opacity-90">{copy.subtitle}</p>
+                  <p className="mt-1 flex items-center gap-1.5 text-[11px] opacity-95">
+                    <span className="relative flex h-2 w-2">
+                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
+                      <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+                    </span>
+                    {copy.online}
+                  </p>
+                </div>
               </div>
               <button
                 type="button"
@@ -361,11 +398,14 @@ export function LiveChatWidget() {
                       )}
                     >
                       {!mine ? (
-                        <p className="mb-0.5 text-[10px] font-medium uppercase tracking-wide opacity-70">
-                          {system
-                            ? "Helper"
-                            : msg.sender?.name || "Support"}
-                        </p>
+                        <div className="mb-1 flex items-center gap-1.5">
+                          {system ? <Agent000Avatar state="idle" size="sm" className="!h-5 !w-5" /> : null}
+                          <p className="text-[10px] font-medium uppercase tracking-wide opacity-70">
+                            {system
+                              ? copy.agentLabel
+                              : msg.sender?.name || "Support"}
+                          </p>
+                        </div>
                       ) : null}
                       <p className="whitespace-pre-wrap">{msg.body}</p>
                       <p className="mt-1 text-[10px] opacity-60">

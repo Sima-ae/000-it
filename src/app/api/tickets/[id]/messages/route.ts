@@ -4,12 +4,16 @@ import { prisma } from "@/lib/prisma";
 import { auth } from "@/lib/auth";
 import { isStaffRole } from "@/lib/roles";
 import { canAccessTicket } from "@/lib/support";
+import { buildAgentReply } from "@/lib/agent-000/ask";
 
 type Params = { params: Promise<{ id: string }> };
 
 const messageSchema = z.object({
   body: z.string().min(1).max(5000),
   guestToken: z.string().optional(),
+  locale: z.string().optional(),
+  /** Skip Agent 000 auto-reply (staff or explicit). */
+  skipAgent: z.boolean().optional(),
 });
 
 export async function POST(request: Request, { params }: Params) {
@@ -51,6 +55,20 @@ export async function POST(request: Request, { params }: Params) {
     include: { sender: { select: { id: true, name: true, role: true } } },
   });
 
+  let agentMessage = null;
+  if (!staff && !parsed.data.skipAgent && ticket.source === "CHAT") {
+    const agent = buildAgentReply(parsed.data.locale || "en", parsed.data.body);
+    agentMessage = await prisma.ticketMessage.create({
+      data: {
+        ticketId: id,
+        body: agent.answer,
+        senderId: null,
+        senderKind: "SYSTEM",
+      },
+      include: { sender: { select: { id: true, name: true, role: true } } },
+    });
+  }
+
   await prisma.supportTicket.update({
     where: { id },
     data: {
@@ -66,5 +84,8 @@ export async function POST(request: Request, { params }: Params) {
     },
   });
 
-  return NextResponse.json(message, { status: 201 });
+  return NextResponse.json(
+    agentMessage ? { message, agentMessage } : message,
+    { status: 201 },
+  );
 }

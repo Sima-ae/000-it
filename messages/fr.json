@@ -604,7 +604,9 @@
     "result": "résultat",
     "results": "résultats",
     "forQuery": "pour",
-    "empty": "Aucun résultat trouvé."
+    "empty": "Aucun résultat trouvé.",
+    "browseTitle": "Browse all questions",
+    "matchedHint": "Matched FAQ highlighted below"
   },
   "appointment": {
     "title": "Prendre rendez-vous",
@@ -671,10 +673,10 @@
   },
   "liveChat": {
     "title": "Chat en direct",
-    "subtitle": "Prise en charge informatique TripleZero",
+    "subtitle": "Agent 000 · TripleZero iT",
     "online": "En ligne – nous répondons dans les plus brefs délais",
-    "teaser": "Besoin d'aide ? Discutez avec nous.",
-    "emptyChat": "Posez une question. Notre équipe vous répondra dans les plus brefs délais.",
+    "teaser": "Need help? Chat with Agent 000.",
+    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
     "emptyTicket": "Décrivez votre demande : nous ouvrirons un ticket synchronisé avec votre tableau de bord.",
     "placeholder": "Tapez votre message…",
     "newTicket": "Nouveau billet",
@@ -695,7 +697,8 @@
     "todoViewAll": "Voir tout",
     "todoEmpty": "Aucune tâche à faire pour l'instant.",
     "todoPlaceholder": "Nouvelle tâche…",
-    "todoAdd": "Ajouter"
+    "todoAdd": "Ajouter",
+    "agentLabel": "Agent 000"
   },
   "locations": {
     "title": "Emplacements",
@@ -736,5 +739,19 @@
     "back": "Retour aux actualités",
     "viewSource": "Voir la source originale",
     "subtitle": "Restez au courant de tous les développements."
+  },
+  "agent000": {
+    "name": "Agent 000",
+    "role": "Virtual FAQ & support assistant",
+    "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
+    "placeholder": "Ask Agent 000 a question…",
+    "send": "Send",
+    "thinking": "Agent 000 is thinking…",
+    "mute": "Mute voice",
+    "unmute": "Unmute voice",
+    "actionBook": "Book appointment",
+    "actionTicket": "Open live chat / ticket",
+    "actionContact": "Contact",
+    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket."
   }
 }

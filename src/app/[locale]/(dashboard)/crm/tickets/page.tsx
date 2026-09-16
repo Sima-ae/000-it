@@ -340,7 +340,8 @@ export default function CrmTicketsPage() {
                         )}
                       >
                         <p className="mb-0.5 text-[10px] uppercase opacity-70">
-                          {msg.sender?.name || msg.senderKind}
+                          {msg.sender?.name ||
+                            (msg.senderKind === "SYSTEM" ? "Agent 000" : msg.senderKind)}
                         </p>
                         <p className="whitespace-pre-wrap">{msg.body}</p>
                       </div>

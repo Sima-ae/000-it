@@ -604,7 +604,9 @@
     "result": "rezultat",
     "results": "rezultate",
     "forQuery": "për",
-    "empty": "Nuk u gjetën rezultate."
+    "empty": "Nuk u gjetën rezultate.",
+    "browseTitle": "Browse all questions",
+    "matchedHint": "Matched FAQ highlighted below"
   },
   "appointment": {
     "title": "Prenoto një takim",
@@ -671,10 +673,10 @@
   },
   "liveChat": {
     "title": "Bisedë e drejtpërdrejtë",
-    "subtitle": "Mbështetje TripleZero iT",
+    "subtitle": "Agent 000 · TripleZero iT",
     "online": "Online - ne përgjigjemi sa më shpejt të jetë e mundur",
-    "teaser": "Keni nevojë për ndihmë? Bisedoni me ne.",
-    "emptyChat": "Bëj një pyetje. Ekipi ynë do të përgjigjet sa më shpejt të jetë e mundur.",
+    "teaser": "Need help? Chat with Agent 000.",
+    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
     "emptyTicket": "Përshkruani kërkesën tuaj - ne do të hapim një biletë të sinkronizuar me panelin tuaj.",
     "placeholder": "Shkruani mesazhin tuaj…",
     "newTicket": "Biletë e re",
@@ -695,7 +697,8 @@
     "todoViewAll": "Shiko të gjitha",
     "todoEmpty": "Nuk ka ende për të bërë.",
     "todoPlaceholder": "Detyrë e re…",
-    "todoAdd": "Shtoni"
+    "todoAdd": "Shtoni",
+    "agentLabel": "Agent 000"
   },
   "locations": {
     "title": "Vendndodhjet",
@@ -736,5 +739,19 @@
     "back": "Kthehu tek lajmet",
     "viewSource": "Shiko burimin origjinal",
     "subtitle": "Qëndroni të përditësuar me të gjitha zhvillimet."
+  },
+  "agent000": {
+    "name": "Agent 000",
+    "role": "Virtual FAQ & support assistant",
+    "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
+    "placeholder": "Ask Agent 000 a question…",
+    "send": "Send",
+    "thinking": "Agent 000 is thinking…",
+    "mute": "Mute voice",
+    "unmute": "Unmute voice",
+    "actionBook": "Book appointment",
+    "actionTicket": "Open live chat / ticket",
+    "actionContact": "Contact",
+    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket."
   }
 }

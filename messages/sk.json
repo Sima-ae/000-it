@@ -604,7 +604,9 @@
     "result": "výsledok",
     "results": "výsledky",
     "forQuery": "pre",
-    "empty": "Nenašli sa žiadne výsledky."
+    "empty": "Nenašli sa žiadne výsledky.",
+    "browseTitle": "Browse all questions",
+    "matchedHint": "Matched FAQ highlighted below"
   },
   "appointment": {
     "title": "objednať sa",
@@ -671,10 +673,10 @@
   },
   "liveChat": {
     "title": "Živý chat",
-    "subtitle": "Podpora TripleZero iT",
+    "subtitle": "Agent 000 · TripleZero iT",
     "online": "Online – odpovieme čo najskôr",
-    "teaser": "Potrebujete pomoc? Chatujte s nami.",
-    "emptyChat": "položiť otázku. Náš tím odpovie čo najskôr.",
+    "teaser": "Need help? Chat with Agent 000.",
+    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
     "emptyTicket": "Popíšte svoju požiadavku – otvoríme tiket synchronizovaný s vaším informačným panelom.",
     "placeholder": "Napíšte svoju správu…",
     "newTicket": "Nový lístok",
@@ -695,7 +697,8 @@
     "todoViewAll": "Zobraziť všetky",
     "todoEmpty": "Zatiaľ žiadne úlohy.",
     "todoPlaceholder": "Nová úloha…",
-    "todoAdd": "Pridať"
+    "todoAdd": "Pridať",
+    "agentLabel": "Agent 000"
   },
   "locations": {
     "title": "Miesta",
@@ -736,5 +739,19 @@
     "back": "Späť k novinkám",
     "viewSource": "Zobraziť pôvodný zdroj",
     "subtitle": "Buďte informovaní o všetkom vývoji."
+  },
+  "agent000": {
+    "name": "Agent 000",
+    "role": "Virtual FAQ & support assistant",
+    "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
+    "placeholder": "Ask Agent 000 a question…",
+    "send": "Send",
+    "thinking": "Agent 000 is thinking…",
+    "mute": "Mute voice",
+    "unmute": "Unmute voice",
+    "actionBook": "Book appointment",
+    "actionTicket": "Open live chat / ticket",
+    "actionContact": "Contact",
+    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket."
   }
 }

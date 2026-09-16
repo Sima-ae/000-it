@@ -604,7 +604,9 @@
     "result": "találat",
     "results": "találat",
     "forQuery": "erre",
-    "empty": "Nincs találat."
+    "empty": "Nincs találat.",
+    "browseTitle": "Browse all questions",
+    "matchedHint": "Matched FAQ highlighted below"
   },
   "appointment": {
     "title": "Foglaljon időpontot",
@@ -671,10 +673,10 @@
   },
   "liveChat": {
     "title": "Élő chat",
-    "subtitle": "TripleZero iT támogatás",
+    "subtitle": "Agent 000 · TripleZero iT",
     "online": "Online – a lehető leghamarabb válaszolunk",
-    "teaser": "Segítségre van szüksége? Csevegés velünk.",
-    "emptyChat": "Tegyen fel egy kérdést. Csapatunk a lehető leghamarabb válaszol.",
+    "teaser": "Need help? Chat with Agent 000.",
+    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
     "emptyTicket": "Írja le kérését – megnyitunk egy jegyet, amely szinkronizálva van az irányítópultjával.",
     "placeholder": "Írja be üzenetét…",
     "newTicket": "Új jegy",
@@ -695,7 +697,8 @@
     "todoViewAll": "Az összes megtekintése",
     "todoEmpty": "Még nincs teendő.",
     "todoPlaceholder": "Új feladat…",
-    "todoAdd": "Hozzáadás"
+    "todoAdd": "Hozzáadás",
+    "agentLabel": "Agent 000"
   },
   "locations": {
     "title": "Helyszínek",
@@ -736,5 +739,19 @@
     "back": "Vissza a hírekhez",
     "viewSource": "Eredeti forrás megtekintése",
     "subtitle": "Legyen naprakész minden fejleményről."
+  },
+  "agent000": {
+    "name": "Agent 000",
+    "role": "Virtual FAQ & support assistant",
+    "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
+    "placeholder": "Ask Agent 000 a question…",
+    "send": "Send",
+    "thinking": "Agent 000 is thinking…",
+    "mute": "Mute voice",
+    "unmute": "Unmute voice",
+    "actionBook": "Book appointment",
+    "actionTicket": "Open live chat / ticket",
+    "actionContact": "Contact",
+    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket."
   }
 }

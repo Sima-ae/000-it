@@ -604,7 +604,9 @@
     "result": "nəticə",
     "results": "nəticə",
     "forQuery": "üçün",
-    "empty": "Nəticə tapılmadı."
+    "empty": "Nəticə tapılmadı.",
+    "browseTitle": "Browse all questions",
+    "matchedHint": "Matched FAQ highlighted below"
   },
   "appointment": {
     "title": "Görüş bron edin",
@@ -671,10 +673,10 @@
   },
   "liveChat": {
     "title": "Canlı söhbət",
-    "subtitle": "TripleZero IT dəstəyi",
+    "subtitle": "Agent 000 · TripleZero iT",
     "online": "Onlayn — mümkün qədər tez cavab veririk",
-    "teaser": "Kömək lazımdır? Bizimlə söhbət edin.",
-    "emptyChat": "Sual verin. Komandamız ən qısa zamanda cavab verəcək.",
+    "teaser": "Need help? Chat with Agent 000.",
+    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
     "emptyTicket": "Sorğunuzu təsvir edin - tablonuza sinxronlaşdırılmış bilet açacağıq.",
     "placeholder": "Mesajınızı yazın...",
     "newTicket": "Yeni bilet",
@@ -695,7 +697,8 @@
     "todoViewAll": "Hamısına baxın",
     "todoEmpty": "Hələ görüləcək işlər yoxdur.",
     "todoPlaceholder": "Yeni tapşırıq...",
-    "todoAdd": "Əlavə et"
+    "todoAdd": "Əlavə et",
+    "agentLabel": "Agent 000"
   },
   "locations": {
     "title": "Məkanlar",
@@ -736,5 +739,19 @@
     "back": "Xəbərlərə qayıt",
     "viewSource": "Orijinal mənbəyə baxın",
     "subtitle": "Bütün inkişaflardan xəbərdar olun."
+  },
+  "agent000": {
+    "name": "Agent 000",
+    "role": "Virtual FAQ & support assistant",
+    "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
+    "placeholder": "Ask Agent 000 a question…",
+    "send": "Send",
+    "thinking": "Agent 000 is thinking…",
+    "mute": "Mute voice",
+    "unmute": "Unmute voice",
+    "actionBook": "Book appointment",
+    "actionTicket": "Open live chat / ticket",
+    "actionContact": "Contact",
+    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket."
   }
 }

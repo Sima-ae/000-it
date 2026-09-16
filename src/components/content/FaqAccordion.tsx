@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Search, X } from "lucide-react";
 import {
@@ -20,10 +20,27 @@ function normalize(value: string) {
     .replace(/\p{M}/gu, "");
 }
 
-export function FaqCategories({ categories }: { categories: FaqCategory[] }) {
+export function FaqCategories({
+  categories,
+  highlightFaqId,
+  highlightCategoryId,
+}: {
+  categories: FaqCategory[];
+  highlightFaqId?: string | null;
+  highlightCategoryId?: string | null;
+}) {
   const t = useTranslations("faqPage");
   const [query, setQuery] = useState("");
   const [activeId, setActiveId] = useState<string>("all");
+  const [openItem, setOpenItem] = useState<string>("");
+
+  useEffect(() => {
+    if (!highlightFaqId) return;
+    if (highlightCategoryId) setActiveId(highlightCategoryId);
+    setOpenItem(highlightFaqId);
+    const el = document.getElementById(`faq-item-${highlightFaqId}`);
+    el?.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, [highlightFaqId, highlightCategoryId]);
 
   const filtered = useMemo(() => {
     const q = normalize(query.trim());
@@ -106,6 +123,7 @@ export function FaqCategories({ categories }: { categories: FaqCategory[] }) {
         <p className="text-xs text-muted-foreground">
           {visibleCount} {visibleCount === 1 ? t("result") : t("results")}
           {query ? ` ${t("forQuery")} “${query}”` : null}
+          {highlightFaqId ? ` · ${t("matchedHint")}` : null}
         </p>
       </div>
 
@@ -125,7 +143,16 @@ export function FaqCategories({ categories }: { categories: FaqCategory[] }) {
                   {category.items.length} Q&A
                 </span>
               </div>
-              <CategoryAccordion items={category.items} />
+              <CategoryAccordion
+                items={category.items}
+                openItem={
+                  highlightCategoryId === category.id || activeId === category.id || activeId === "all"
+                    ? openItem
+                    : ""
+                }
+                onOpenChange={setOpenItem}
+                highlightFaqId={highlightFaqId}
+              />
             </section>
           ))}
         </div>
@@ -134,14 +161,34 @@ export function FaqCategories({ categories }: { categories: FaqCategory[] }) {
   );
 }
 
-function CategoryAccordion({ items }: { items: FaqItem[] }) {
+function CategoryAccordion({
+  items,
+  openItem,
+  onOpenChange,
+  highlightFaqId,
+}: {
+  items: FaqItem[];
+  openItem: string;
+  onOpenChange: (v: string) => void;
+  highlightFaqId?: string | null;
+}) {
   return (
-    <Accordion type="single" collapsible className="w-full">
+    <Accordion
+      type="single"
+      collapsible
+      value={openItem || undefined}
+      onValueChange={(v) => onOpenChange(v || "")}
+      className="w-full"
+    >
       {items.map((item) => (
         <AccordionItem
           key={item.id}
           value={item.id}
-          className="border-border/70 px-0"
+          id={`faq-item-${item.id}`}
+          className={cn(
+            "border-border/70 px-0 scroll-mt-40",
+            highlightFaqId === item.id && "rounded-xl bg-primary/5 px-2 ring-1 ring-primary/30",
+          )}
         >
           <AccordionTrigger className="py-3 text-left text-sm font-medium hover:no-underline md:text-[15px]">
             {item.question}
@@ -157,5 +204,11 @@ function CategoryAccordion({ items }: { items: FaqItem[] }) {
 
 /** @deprecated use FaqCategories */
 export function FaqAccordion({ items }: { items: FaqItem[] }) {
-  return <CategoryAccordion items={items} />;
+  return (
+    <CategoryAccordion
+      items={items}
+      openItem=""
+      onOpenChange={() => undefined}
+    />
+  );
 }

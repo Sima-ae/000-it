@@ -604,7 +604,9 @@
     "result": "条结果",
     "results": "条结果",
     "forQuery": "关于",
-    "empty": "未找到结果。"
+    "empty": "未找到结果。",
+    "browseTitle": "Browse all questions",
+    "matchedHint": "Matched FAQ highlighted below"
   },
   "appointment": {
     "title": "预订预约",
@@ -671,10 +673,10 @@
   },
   "liveChat": {
     "title": "实时聊天",
-    "subtitle": "TripleZero IT 支持",
+    "subtitle": "Agent 000 · TripleZero iT",
     "online": "在线——我们尽快回复",
-    "teaser": "需要帮助吗？ 与我们聊天。",
-    "emptyChat": "问一个问题。 我们的团队将尽快回复。",
+    "teaser": "Need help? Chat with Agent 000.",
+    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
     "emptyTicket": "描述您的请求 - 我们将打开一张同步到您的仪表板的票证。",
     "placeholder": "输入您的消息...",
     "newTicket": "新票",
@@ -695,7 +697,8 @@
     "todoViewAll": "查看全部",
     "todoEmpty": "还没有待办事项。",
     "todoPlaceholder": "新任务...",
-    "todoAdd": "添加"
+    "todoAdd": "添加",
+    "agentLabel": "Agent 000"
   },
   "locations": {
     "title": "地点",
@@ -736,5 +739,19 @@
     "back": "返回新闻",
     "viewSource": "查看原始来源",
     "subtitle": "及时了解所有进展。"
+  },
+  "agent000": {
+    "name": "Agent 000",
+    "role": "Virtual FAQ & support assistant",
+    "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
+    "placeholder": "Ask Agent 000 a question…",
+    "send": "Send",
+    "thinking": "Agent 000 is thinking…",
+    "mute": "Mute voice",
+    "unmute": "Unmute voice",
+    "actionBook": "Book appointment",
+    "actionTicket": "Open live chat / ticket",
+    "actionContact": "Contact",
+    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket."
   }
 }

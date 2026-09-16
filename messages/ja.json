@@ -604,7 +604,9 @@
     "result": "件",
     "results": "件",
     "forQuery": "：",
-    "empty": "結果が見つかりません。"
+    "empty": "結果が見つかりません。",
+    "browseTitle": "Browse all questions",
+    "matchedHint": "Matched FAQ highlighted below"
   },
   "appointment": {
     "title": "ご予約",
@@ -671,10 +673,10 @@
   },
   "liveChat": {
     "title": "ライブチャット",
-    "subtitle": "TripleZero iT サポート",
+    "subtitle": "Agent 000 · TripleZero iT",
     "online": "オンライン — できるだけ早く返信します",
-    "teaser": "助けが必要ですか? チャットしてください。",
-    "emptyChat": "質問してください。 私たちのチームができるだけ早く返信させていただきます。",
+    "teaser": "Need help? Chat with Agent 000.",
+    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
     "emptyTicket": "リクエストについて説明してください。ダッシュボードに同期されたチケットが開かれます。",
     "placeholder": "メッセージを入力してください…",
     "newTicket": "新しいチケット",
@@ -695,7 +697,8 @@
     "todoViewAll": "すべて見る",
     "todoEmpty": "まだやるべきことはありません。",
     "todoPlaceholder": "新しいタスク…",
-    "todoAdd": "追加"
+    "todoAdd": "追加",
+    "agentLabel": "Agent 000"
   },
   "locations": {
     "title": "所在地",
@@ -736,5 +739,19 @@
     "back": "ニュースに戻る",
     "viewSource": "元のソースを見る",
     "subtitle": "すべての開発状況を常に最新の状態に保ってください。"
+  },
+  "agent000": {
+    "name": "Agent 000",
+    "role": "Virtual FAQ & support assistant",
+    "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
+    "placeholder": "Ask Agent 000 a question…",
+    "send": "Send",
+    "thinking": "Agent 000 is thinking…",
+    "mute": "Mute voice",
+    "unmute": "Unmute voice",
+    "actionBook": "Book appointment",
+    "actionTicket": "Open live chat / ticket",
+    "actionContact": "Contact",
+    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket."
   }
 }

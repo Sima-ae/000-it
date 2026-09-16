@@ -604,7 +604,9 @@
     "result": "výsledek",
     "results": "výsledky",
     "forQuery": "pro",
-    "empty": "Nebyly nalezeny žádné výsledky."
+    "empty": "Nebyly nalezeny žádné výsledky.",
+    "browseTitle": "Browse all questions",
+    "matchedHint": "Matched FAQ highlighted below"
   },
   "appointment": {
     "title": "Provést rezervaci",
@@ -671,10 +673,10 @@
   },
   "liveChat": {
     "title": "Živý chat",
-    "subtitle": "TripleZero iT support",
+    "subtitle": "Agent 000 · TripleZero iT",
     "online": "Online – odpovídáme co nejdříve",
-    "teaser": "Potřebujete pomoc? Chatujte s námi.",
-    "emptyChat": "položit otázku. Náš tým odpoví co nejdříve.",
+    "teaser": "Need help? Chat with Agent 000.",
+    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
     "emptyTicket": "Popište svůj požadavek – otevřeme tiket synchronizovaný s vaším řídicím panelem.",
     "placeholder": "Napište svou zprávu…",
     "newTicket": "Nový lístek",
@@ -695,7 +697,8 @@
     "todoViewAll": "Zobrazit vše",
     "todoEmpty": "Zatím žádné úkoly.",
     "todoPlaceholder": "Nový úkol…",
-    "todoAdd": "Přidat"
+    "todoAdd": "Přidat",
+    "agentLabel": "Agent 000"
   },
   "locations": {
     "title": "Místa",
@@ -736,5 +739,19 @@
     "back": "Zpět k novinkám",
     "viewSource": "Zobrazit původní zdroj",
     "subtitle": "Zůstaňte informováni o veškerém vývoji."
+  },
+  "agent000": {
+    "name": "Agent 000",
+    "role": "Virtual FAQ & support assistant",
+    "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
+    "placeholder": "Ask Agent 000 a question…",
+    "send": "Send",
+    "thinking": "Agent 000 is thinking…",
+    "mute": "Mute voice",
+    "unmute": "Unmute voice",
+    "actionBook": "Book appointment",
+    "actionTicket": "Open live chat / ticket",
+    "actionContact": "Contact",
+    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket."
   }
 }

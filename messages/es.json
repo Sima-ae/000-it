@@ -604,7 +604,9 @@
     "result": "resultado",
     "results": "resultados",
     "forQuery": "para",
-    "empty": "No se encontraron resultados."
+    "empty": "No se encontraron resultados.",
+    "browseTitle": "Browse all questions",
+    "matchedHint": "Matched FAQ highlighted below"
   },
   "appointment": {
     "title": "Rezervați o programare. ",
@@ -671,10 +673,10 @@
   },
   "liveChat": {
     "title": "chat en vivo",
-    "subtitle": "Soporte de TI TripleZero",
+    "subtitle": "Agent 000 · TripleZero iT",
     "online": "En línea: respondemos lo antes posible",
-    "teaser": "¿Necesitar ayuda? Chatea con nosotros.",
-    "emptyChat": "Haz una pregunta. Nuestro equipo le responderá lo antes posible.",
+    "teaser": "Need help? Chat with Agent 000.",
+    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
     "emptyTicket": "Describe tu solicitud: abriremos un ticket sincronizado con tu panel de control.",
     "placeholder": "Escribe tu mensaje…",
     "newTicket": "Nuevo billete",
@@ -695,7 +697,8 @@
     "todoViewAll": "Ver todo",
     "todoEmpty": "Aún no hay tareas pendientes.",
     "todoPlaceholder": "Nueva tarea…",
-    "todoAdd": "Agregar"
+    "todoAdd": "Agregar",
+    "agentLabel": "Agent 000"
   },
   "locations": {
     "title": "Ubicaciones",
@@ -736,5 +739,19 @@
     "back": "Volver a noticias",
     "viewSource": "Ver fuente original",
     "subtitle": "Manténgase al día con todas las novedades."
+  },
+  "agent000": {
+    "name": "Agent 000",
+    "role": "Virtual FAQ & support assistant",
+    "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
+    "placeholder": "Ask Agent 000 a question…",
+    "send": "Send",
+    "thinking": "Agent 000 is thinking…",
+    "mute": "Mute voice",
+    "unmute": "Unmute voice",
+    "actionBook": "Book appointment",
+    "actionTicket": "Open live chat / ticket",
+    "actionContact": "Contact",
+    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket."
   }
 }

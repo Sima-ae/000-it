@@ -604,7 +604,9 @@
     "result": "αποτέλεσμα",
     "results": "αποτελέσματα",
     "forQuery": "για",
-    "empty": "Δεν βρέθηκαν αποτελέσματα."
+    "empty": "Δεν βρέθηκαν αποτελέσματα.",
+    "browseTitle": "Browse all questions",
+    "matchedHint": "Matched FAQ highlighted below"
   },
   "appointment": {
     "title": "Κάντε κράτηση",
@@ -671,10 +673,10 @@
   },
   "liveChat": {
     "title": "Ζωντανή συνομιλία",
-    "subtitle": "Υποστήριξη TripleZero iT",
+    "subtitle": "Agent 000 · TripleZero iT",
     "online": "Διαδικτυακά — απαντάμε το συντομότερο δυνατό",
-    "teaser": "Χρειάζεστε βοήθεια; Συνομιλήστε μαζί μας.",
-    "emptyChat": "Κάντε μια ερώτηση. Η ομάδα μας θα απαντήσει το συντομότερο δυνατό.",
+    "teaser": "Need help? Chat with Agent 000.",
+    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
     "emptyTicket": "Περιγράψτε το αίτημά σας — θα ανοίξουμε ένα εισιτήριο συγχρονισμένο με τον πίνακα ελέγχου σας.",
     "placeholder": "Πληκτρολογήστε το μήνυμά σας…",
     "newTicket": "Νέο εισιτήριο",
@@ -695,7 +697,8 @@
     "todoViewAll": "Προβολή όλων",
     "todoEmpty": "Δεν υπάρχουν ακόμη εκκρεμότητες.",
     "todoPlaceholder": "Νέα εργασία…",
-    "todoAdd": "Προσθέτω"
+    "todoAdd": "Προσθέτω",
+    "agentLabel": "Agent 000"
   },
   "locations": {
     "title": "Τοποθεσίες",
@@ -736,5 +739,19 @@
     "back": "Επιστροφή στις ειδήσεις",
     "viewSource": "Προβολή αρχικής πηγής",
     "subtitle": "Μείνετε ενημερωμένοι για όλες τις εξελίξεις."
+  },
+  "agent000": {
+    "name": "Agent 000",
+    "role": "Virtual FAQ & support assistant",
+    "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
+    "placeholder": "Ask Agent 000 a question…",
+    "send": "Send",
+    "thinking": "Agent 000 is thinking…",
+    "mute": "Mute voice",
+    "unmute": "Unmute voice",
+    "actionBook": "Book appointment",
+    "actionTicket": "Open live chat / ticket",
+    "actionContact": "Contact",
+    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket."
   }
 }

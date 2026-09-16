@@ -604,7 +604,9 @@
     "result": "rezultatas",
     "results": "rezultatų",
     "forQuery": "užklausai",
-    "empty": "Rezultatų nerasta."
+    "empty": "Rezultatų nerasta.",
+    "browseTitle": "Browse all questions",
+    "matchedHint": "Matched FAQ highlighted below"
   },
   "appointment": {
     "title": "Registruotis",
@@ -671,10 +673,10 @@
   },
   "liveChat": {
     "title": "Tiesioginis pokalbis",
-    "subtitle": "TripleZero iT palaikymas",
+    "subtitle": "Agent 000 · TripleZero iT",
     "online": "Prisijungę – atsakome kuo greičiau",
-    "teaser": "Reikia pagalbos? Kalbėkitės su mumis.",
-    "emptyChat": "Užduokite klausimą. Mūsų komanda atsakys kuo greičiau.",
+    "teaser": "Need help? Chat with Agent 000.",
+    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
     "emptyTicket": "Apibūdinkite savo užklausą – atidarysime bilietą, sinchronizuotą su jūsų prietaisų skydeliu.",
     "placeholder": "Įveskite savo žinutę…",
     "newTicket": "Naujas bilietas",
@@ -695,7 +697,8 @@
     "todoViewAll": "Žiūrėti viską",
     "todoEmpty": "Dar nėra darbų.",
     "todoPlaceholder": "Nauja užduotis…",
-    "todoAdd": "Pridėti"
+    "todoAdd": "Pridėti",
+    "agentLabel": "Agent 000"
   },
   "locations": {
     "title": "Vietos",
@@ -736,5 +739,19 @@
     "back": "Atgal į naujienas",
     "viewSource": "Žiūrėti originalų šaltinį",
     "subtitle": "Sekite naujausią informaciją apie visus pokyčius."
+  },
+  "agent000": {
+    "name": "Agent 000",
+    "role": "Virtual FAQ & support assistant",
+    "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
+    "placeholder": "Ask Agent 000 a question…",
+    "send": "Send",
+    "thinking": "Agent 000 is thinking…",
+    "mute": "Mute voice",
+    "unmute": "Unmute voice",
+    "actionBook": "Book appointment",
+    "actionTicket": "Open live chat / ticket",
+    "actionContact": "Contact",
+    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket."
   }
 }

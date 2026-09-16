@@ -604,7 +604,9 @@
     "result": "תוצאה",
     "results": "תוצאות",
     "forQuery": "עבור",
-    "empty": "לא נמצאו תוצאות."
+    "empty": "לא נמצאו תוצאות.",
+    "browseTitle": "Browse all questions",
+    "matchedHint": "Matched FAQ highlighted below"
   },
   "appointment": {
     "title": "הזמנת פגישה",
@@ -671,10 +673,10 @@
   },
   "liveChat": {
     "title": "צ'אט חי",
-    "subtitle": "תמיכה ב-TripleZero iT",
+    "subtitle": "Agent 000 · TripleZero iT",
     "online": "מקוון - אנו עונים בהקדם האפשרי",
-    "teaser": "צריך עזרה? צ'אט איתנו.",
-    "emptyChat": "שאל שאלה. הצוות שלנו יענה בהקדם האפשרי.",
+    "teaser": "Need help? Chat with Agent 000.",
+    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
     "emptyTicket": "תאר את בקשתך - נפתח כרטיס המסונכרן ללוח המחוונים שלך.",
     "placeholder": "הקלד את ההודעה שלך...",
     "newTicket": "כרטיס חדש",
@@ -695,7 +697,8 @@
     "todoViewAll": "הצג הכל",
     "todoEmpty": "עדיין אין מטלות.",
     "todoPlaceholder": "משימה חדשה…",
-    "todoAdd": "לְהוֹסִיף"
+    "todoAdd": "לְהוֹסִיף",
+    "agentLabel": "Agent 000"
   },
   "locations": {
     "title": "מיקומים",
@@ -736,5 +739,19 @@
     "back": "חזרה לחדשות",
     "viewSource": "צפה במקור המקורי",
     "subtitle": "הישאר מעודכן בכל ההתפתחויות."
+  },
+  "agent000": {
+    "name": "Agent 000",
+    "role": "Virtual FAQ & support assistant",
+    "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
+    "placeholder": "Ask Agent 000 a question…",
+    "send": "Send",
+    "thinking": "Agent 000 is thinking…",
+    "mute": "Mute voice",
+    "unmute": "Unmute voice",
+    "actionBook": "Book appointment",
+    "actionTicket": "Open live chat / ticket",
+    "actionContact": "Contact",
+    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket."
   }
 }

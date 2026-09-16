@@ -604,7 +604,9 @@
     "result": "resultat",
     "results": "resultater",
     "forQuery": "til",
-    "empty": "Ingen resultater funnet."
+    "empty": "Ingen resultater funnet.",
+    "browseTitle": "Browse all questions",
+    "matchedHint": "Matched FAQ highlighted below"
   },
   "appointment": {
     "title": "Bestill en synsundersøkelse",
@@ -671,10 +673,10 @@
   },
   "liveChat": {
     "title": "Live chat",
-    "subtitle": "TripleZero iT-støtte",
+    "subtitle": "Agent 000 · TripleZero iT",
     "online": "Online — vi svarer så snart som mulig",
-    "teaser": "Trenger du hjelp? Chat med oss.",
-    "emptyChat": "Still et spørsmål. Teamet vårt vil svare så snart som mulig.",
+    "teaser": "Need help? Chat with Agent 000.",
+    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
     "emptyTicket": "Beskriv forespørselen din – vi åpner en billett som er synkronisert med dashbordet ditt.",
     "placeholder": "Skriv inn meldingen din...",
     "newTicket": "Ny billett",
@@ -695,7 +697,8 @@
     "todoViewAll": "Se alle",
     "todoEmpty": "Ingen gjøremål ennå.",
     "todoPlaceholder": "Ny oppgave...",
-    "todoAdd": "Legge til"
+    "todoAdd": "Legge til",
+    "agentLabel": "Agent 000"
   },
   "locations": {
     "title": "Steder",
@@ -736,5 +739,19 @@
     "back": "Tilbake til nyheter",
     "viewSource": "Se original kilde",
     "subtitle": "Hold deg oppdatert med all utvikling."
+  },
+  "agent000": {
+    "name": "Agent 000",
+    "role": "Virtual FAQ & support assistant",
+    "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
+    "placeholder": "Ask Agent 000 a question…",
+    "send": "Send",
+    "thinking": "Agent 000 is thinking…",
+    "mute": "Mute voice",
+    "unmute": "Unmute voice",
+    "actionBook": "Book appointment",
+    "actionTicket": "Open live chat / ticket",
+    "actionContact": "Contact",
+    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket."
   }
 }

@@ -604,7 +604,9 @@
     "result": "резултат",
     "results": "резултата",
     "forQuery": "за",
-    "empty": "Нема пронађених резултата."
+    "empty": "Нема пронађених резултата.",
+    "browseTitle": "Browse all questions",
+    "matchedHint": "Matched FAQ highlighted below"
   },
   "appointment": {
     "title": "Zakazati sastanak",
@@ -671,10 +673,10 @@
   },
   "liveChat": {
     "title": "Ћаскање уживо",
-    "subtitle": "ТриплеЗеро иТ подршка",
+    "subtitle": "Agent 000 · TripleZero iT",
     "online": "Онлине — одговарамо у најкраћем могућем року",
-    "teaser": "Треба вам помоћ? Разговарајте са нама.",
-    "emptyChat": "Поставите питање. Наш тим ће одговорити у најкраћем могућем року.",
+    "teaser": "Need help? Chat with Agent 000.",
+    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
     "emptyTicket": "Опишите свој захтев — отворићемо карту синхронизовану са вашом контролном таблом.",
     "placeholder": "Унесите своју поруку…",
     "newTicket": "Нова карта",
@@ -695,7 +697,8 @@
     "todoViewAll": "Прикажи све",
     "todoEmpty": "Још увек нема обавеза.",
     "todoPlaceholder": "Нови задатак…",
-    "todoAdd": "Додај"
+    "todoAdd": "Додај",
+    "agentLabel": "Agent 000"
   },
   "locations": {
     "title": "Локације",
@@ -736,5 +739,19 @@
     "back": "Назад на вести",
     "viewSource": "Погледај оригинални извор",
     "subtitle": "Будите у току са свим дешавањима."
+  },
+  "agent000": {
+    "name": "Agent 000",
+    "role": "Virtual FAQ & support assistant",
+    "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
+    "placeholder": "Ask Agent 000 a question…",
+    "send": "Send",
+    "thinking": "Agent 000 is thinking…",
+    "mute": "Mute voice",
+    "unmute": "Unmute voice",
+    "actionBook": "Book appointment",
+    "actionTicket": "Open live chat / ticket",
+    "actionContact": "Contact",
+    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket."
   }
 }

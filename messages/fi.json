@@ -604,7 +604,9 @@
     "result": "tulos",
     "results": "tulosta",
     "forQuery": "haulle",
-    "empty": "Ei tuloksia."
+    "empty": "Ei tuloksia.",
+    "browseTitle": "Browse all questions",
+    "matchedHint": "Matched FAQ highlighted below"
   },
   "appointment": {
     "title": "Varaa aika",
@@ -671,10 +673,10 @@
   },
   "liveChat": {
     "title": "Live-chat",
-    "subtitle": "TripleZero iT -tuki",
+    "subtitle": "Agent 000 · TripleZero iT",
     "online": "Online - vastaamme mahdollisimman pian",
-    "teaser": "Tarvitsetko apua? Keskustele kanssamme.",
-    "emptyChat": "Esitä kysymys. Tiimimme vastaa mahdollisimman pian.",
+    "teaser": "Need help? Chat with Agent 000.",
+    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
     "emptyTicket": "Kuvaile pyyntöäsi – avaamme lipun, joka on synkronoitu kojelautaasi.",
     "placeholder": "Kirjoita viestisi…",
     "newTicket": "Uusi lippu",
@@ -695,7 +697,8 @@
     "todoViewAll": "Näytä kaikki",
     "todoEmpty": "Ei vielä tehtäviä.",
     "todoPlaceholder": "Uusi tehtävä…",
-    "todoAdd": "Lisätä"
+    "todoAdd": "Lisätä",
+    "agentLabel": "Agent 000"
   },
   "locations": {
     "title": "Sijainnit",
@@ -736,5 +739,19 @@
     "back": "Takaisin uutisiin",
     "viewSource": "Näytä alkuperäinen lähde",
     "subtitle": "Pysy ajan tasalla kaikesta kehityksestä."
+  },
+  "agent000": {
+    "name": "Agent 000",
+    "role": "Virtual FAQ & support assistant",
+    "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
+    "placeholder": "Ask Agent 000 a question…",
+    "send": "Send",
+    "thinking": "Agent 000 is thinking…",
+    "mute": "Mute voice",
+    "unmute": "Unmute voice",
+    "actionBook": "Book appointment",
+    "actionTicket": "Open live chat / ticket",
+    "actionContact": "Contact",
+    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket."
   }
 }

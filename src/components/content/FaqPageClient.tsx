@@ -1,0 +1,89 @@
+"use client";
+
+import { useCallback, useState } from "react";
+import { useTranslations } from "next-intl";
+import { SoftLink } from "@/components/shared/SoftLink";
+import { Button } from "@/components/ui/button";
+import { FaqCategories } from "@/components/content/FaqAccordion";
+import { Agent000ChatPane } from "@/components/agent-000/Agent000ChatPane";
+import type { FaqContent } from "@/content/faq";
+import { localizedHref } from "@/i18n/pathnames";
+
+const OPEN_CHAT_EVENT = "tz-open-live-chat";
+
+export function FaqPageClient({
+  locale,
+  content,
+}: {
+  locale: string;
+  content: FaqContent;
+}) {
+  const t = useTranslations("faqPage");
+  const [highlightFaqId, setHighlightFaqId] = useState<string | null>(null);
+  const [highlightCategoryId, setHighlightCategoryId] = useState<string | null>(
+    null,
+  );
+
+  const openLiveChat = useCallback((prefill?: string) => {
+    window.dispatchEvent(
+      new CustomEvent(OPEN_CHAT_EVENT, { detail: { prefill: prefill || "" } }),
+    );
+  }, []);
+
+  const total = content.categories.reduce((sum, c) => sum + c.items.length, 0);
+
+  return (
+    <div className="mx-auto max-w-5xl px-4 py-10 md:px-6 md:py-14">
+      <header className="mb-6 max-w-2xl">
+        <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
+          {t("eyebrow")}
+        </p>
+        <h1 className="font-display mt-2 text-3xl font-semibold tracking-tight md:text-4xl">
+          {content.title}
+        </h1>
+        <p className="mt-2 text-sm text-muted-foreground md:text-base">
+          {content.subtitle}
+        </p>
+        <p className="mt-1.5 text-xs text-muted-foreground">
+          {content.categories.length} {t("categoriesLabel")} · {total}{" "}
+          {t("questionsLabel")}
+        </p>
+      </header>
+
+      <Agent000ChatPane
+        className="mb-10"
+        onMatchFaq={(faqId, categoryId) => {
+          setHighlightFaqId(faqId);
+          setHighlightCategoryId(categoryId);
+        }}
+        onOpenLiveChat={openLiveChat}
+      />
+
+      <h2 className="font-display mb-4 text-xl font-semibold tracking-tight">
+        {t("browseTitle")}
+      </h2>
+
+      <FaqCategories
+        categories={content.categories}
+        highlightFaqId={highlightFaqId}
+        highlightCategoryId={highlightCategoryId}
+      />
+
+      <aside className="mt-10 flex flex-col gap-3 rounded-2xl border border-border/70 bg-muted/30 px-5 py-5 sm:flex-row sm:items-center sm:justify-between md:px-6">
+        <div>
+          <h2 className="font-display text-lg font-semibold tracking-tight">
+            {content.ctaTitle}
+          </h2>
+          <p className="mt-1 text-sm text-muted-foreground">{content.ctaText}</p>
+        </div>
+        <Button asChild className="shrink-0 rounded-xl">
+          <SoftLink href={localizedHref(locale, "/contact")}>
+            {content.ctaButton}
+          </SoftLink>
+        </Button>
+      </aside>
+    </div>
+  );
+}
+
+export { OPEN_CHAT_EVENT };
