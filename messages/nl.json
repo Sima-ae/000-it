@@ -610,8 +610,8 @@
   },
   "agent000": {
     "name": "Agent 000",
-    "role": "Virtuele FAQ- & supportassistent",
-    "intro": "Stel mij elke vraag over TripleZero iT — AI, SEO, design, hosting, support en meer. Ik antwoord vanuit onze FAQ en help u bij een afspraak of ticket.",
+    "role": "Virtuele FAQ- & kennisbankassistent",
+    "intro": "Stel mij elke vraag over TripleZero iT — AI, SEO, design, hosting, support en meer. Ik zoek in onze FAQ en kennisbank, deel links, en help bij een afspraak of ticket.",
     "placeholder": "Stel Agent 000 een vraag…",
     "send": "Verstuur",
     "thinking": "Agent 000 denkt na…",
@@ -620,7 +620,11 @@
     "actionBook": "Afspraak boeken",
     "actionTicket": "Live chat / ticket openen",
     "actionContact": "Contact",
-    "error": "Sorry — ik kon mijn kennisbank niet bereiken. Probeer opnieuw of open een ticket."
+    "error": "Sorry — ik kon mijn kennisbank niet bereiken. Probeer opnieuw of open een ticket.",
+    "pickOption": "Kies de beste match",
+    "relatedLinks": "Handige links",
+    "linkFaq": "FAQ",
+    "linkKb": "Kennisbank"
   },
   "appointment": {
     "title": "Boek een afspraak",

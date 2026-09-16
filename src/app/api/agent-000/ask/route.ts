@@ -10,6 +10,7 @@ export const runtime = "nodejs";
 const bodySchema = z.object({
   locale: z.string().min(2).max(12).optional().default("en"),
   question: z.string().min(1).max(2000),
+  faqId: z.string().min(1).max(80).optional(),
   ticketId: z.string().optional(),
   guestToken: z.preprocess(
     (value) => (typeof value === "string" && value.trim() ? value.trim() : undefined),
@@ -25,9 +26,9 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid input" }, { status: 400 });
   }
 
-  const { locale, question, ticketId, guestToken } = parsed.data;
+  const { locale, question, ticketId, guestToken, faqId } = parsed.data;
   const persist = parsed.data.persist ?? Boolean(ticketId);
-  const result = buildAgentReply(locale, question);
+  const result = buildAgentReply(locale, question, faqId ? { faqId } : undefined);
 
   let systemMessageId: string | null = null;
 

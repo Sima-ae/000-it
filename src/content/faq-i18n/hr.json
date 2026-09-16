@@ -1,78 +1,78 @@
 {
   "title": "Često postavljana pitanja",
-  "subtitle": "Detaljni odgovori o TripleZero iT — od AI-a i SEO-a do dizajna, marketinga, podrške i hostinga.",
-  "ctaTitle": "Trebaš još pomoć?",
-  "ctaText": "Ne možeš pronaći odgovor? Kontaktiraj naš tim i brzo ćemo ti se javiti.",
-  "ctaButton": "Kontaktiraj nas",
+  "subtitle": "Detaljna pitanja i odgovori — od AI, AEO, GEO i SEO do dizajna, domena, hostinga, marketinga, društvenih medija, podrške i više.",
+  "ctaTitle": "Još uvijek trebate pomoć?",
+  "ctaText": "Ne možete pronaći svoje pitanje? Kontaktirajte nas — javit ćemo vam se što je prije moguće.",
+  "ctaButton": "Kontaktirajte nas",
   "categories": [
     {
       "id": "general",
-      "title": "Općenito",
+      "title": "General",
       "items": [
         {
           "id": "gen-1",
-          "question": "Što radi TripleZero iT?",
-          "answer": "Spajamo webdesign, WordPress podršku, digitalni marketing, vidljivost u pretraživanju (AEO, GEO/local i SEO), dizajn i hosting — pomažemo brendovima da budu pronađeni, da konvertiraju i rastu."
+          "question": "Što TripleZero iT točno radi?",
+          "answer": "TripleZero iT kombinira web dizajn, podršku za WordPress, digitalni marketing, vidljivost pretraživanja (AEO, GEO/lokalno i SEO), dizajn i hosting. Pomažemo brendovima da se brže pronađu, izgrade bolje web stranice i rastu na mjerljiv način."
         },
         {
           "id": "gen-2",
-          "question": "Kako započeti?",
-          "answer": "Rezerviraj poziv ili nas kontaktiraj. Napravimo kratki intake, pregledamo ciljeve i stack, a zatim predložimo jasan plan s rokovima i KPI-jevima."
+          "question": "Kako mogu započeti s TripleZero iT?",
+          "answer": "Kontaktirajte nas ili rezervirajte termin. Provodimo kratki unos, pregled ciljeva i slaganje, zatim pripremamo konkretan prijedlog s planiranjem i KPI-jevima."
         },
         {
           "id": "gen-3",
-          "question": "S kojim vrstama tvrtki radite?",
-          "answer": "SMB-ovi, scale-upovi, ecommerce, agencije i međunarodni brendovi. Radimo s postojećim timovima ili kao full-service partner."
+          "question": "S kojim vrstama poduzeća surađujete?",
+          "answer": "Radimo s malim i srednjim poduzećima, scale-up tvrtkama, e-trgovinom, agencijama i međunarodnim robnim markama. To može biti uz postojeći tim ili kao partner s punom uslugom."
         },
         {
           "id": "gen-4",
-          "question": "Radite li samo u Nizozemskoj?",
-          "answer": "Ne. Radimo s klijentima u Beneluxu i međunarodno, na nizozemskom i engleskom."
+          "question": "Radite samo u Nizozemskoj?",
+          "answer": "Ne. Mi služimo klijentima u Beneluxu iu inozemstvu, s angažmanima na nizozemskom i engleskom jeziku."
         },
         {
           "id": "gen-5",
-          "question": "Kako izgleda tipičan angažman?",
-          "answer": "Intake → audit/scan → plan → izvedba u sprintovima → mjerenje → optimizacija, s jasnim milestoneovima."
+          "question": "Kako izgledaju tipične zaruke?",
+          "answer": "Tipični angažman teče ovako: unos → revizija ili skeniranje → plan → izvedba sprinta → mjerenje → optimizacija. Dobivate jasne prekretnice i izvješća, tako da je uvijek jasno na čemu smo."
         },
         {
           "id": "gen-6",
           "question": "Mogu li kombinirati više usluga?",
-          "answer": "Da. Česte kombinacije: webdesign + SEO + oglasi, ili WordPress održavanje + hosting + sigurnost."
+          "answer": "Da. Mnogi klijenti kombiniraju web dizajn + SEO + oglase ili održavanje WordPressa + hosting + sigurnost. Miks prilagođavamo vašim ciljevima i proračunu."
         },
         {
           "id": "gen-7",
-          "question": "Koliko brzo možete krenuti?",
-          "answer": "Često unutar nekoliko radnih dana nakon odobrenja. Hitni slučajevi (malware, downtime) imaju prioritet."
+          "question": "Koliko brzo možete početi?",
+          "answer": "Ovisi o našim kapacitetima, ali nakon odobrenja često počinjemo u roku od nekoliko radnih dana. Hitni poslovi — kao što su bugovi, zlonamjerni softver ili zastoji — imaju prioritet kako bismo ih mogli preuzeti što je prije moguće."
         },
         {
           "id": "gen-8",
-          "question": "Radite li remote ili on-site?",
-          "answer": "Primarno remote uz strukturiranu komunikaciju. On-site je moguće na zahtjev."
+          "question": "Radite li na daljinu ili na licu mjesta?",
+          "answer": "Radimo prvenstveno na daljinu, uz jasnu komunikaciju putem e-pošte, chata i poziva. Na licu mjesta dostupno je na zahtjev kada je to potrebno za projekt."
         },
         {
           "id": "gen-9",
-          "question": "Kako komunicirate napredak?",
-          "answer": "Redoviti updateovi, tiketi/dashboard gdje je relevantno, plus sprint ili mjesečni reporti."
+          "question": "Kako tim komunicira o napretku?",
+          "answer": "Obavještavamo vas putem redovitih ažuriranja, ulaznica ili nadzorne ploče gdje je relevantno, plus sprint ili mjesečna izvješća s radnjama i rezultatima."
         },
         {
           "id": "gen-10",
-          "question": "Što vam treba od nas za početak?",
-          "answer": "Pristupi (ako treba), ciljevi, brand asseti, analytics računi i postojeće vjerodajnice alata."
+          "question": "Što trebate od nas za početak?",
+          "answer": "Za početak, trebamo pristup web stranici i hostingu (ako je potrebno), vašim ciljevima, smjernicama marke, analitičkim računima i svim postojećim alatima. Ako nešto nedostaje, prvo pomažemo da se to postavi na mjesto."
         },
         {
           "id": "gen-11",
-          "question": "Jeste li dobar fit za startupove?",
-          "answer": "Da — od lean landing stranica i AI scanova do kompletnih growth sustava dok skalirate."
+          "question": "Jesu li vaše usluge prikladne za startupe?",
+          "answer": "Da. Skaliramo se od jednostavnih odredišnih stranica i AI skeniranja do postavki potpunog rasta, tako da pristup raste s vama."
         },
         {
           "id": "gen-12",
-          "question": "Tko je vlasnik rada i računa?",
-          "answer": "Vi ste vlasnici domena, sadržaja, repo-ova i ad računa. Predajemo datoteke i dokumentaciju pri handoveru."
+          "question": "Tko je vlasnik posla i računa?",
+          "answer": "Vaša domena, sadržaj, spremišta kodova i oglasni računi ostaju vaši. Prilikom primopredaje dostavljamo datoteke i dokumentaciju tako da sve ostaje pod vašom kontrolom."
         },
         {
           "id": "gen-13",
-          "question": "Možete li surađivati s našim trenutnim vendorima?",
-          "answer": "Da. Radimo uz vaše developere/marketerе ili preuzmemo održavanje na čist način."
+          "question": "Možete li preuzeti ili surađivati ​​s postojećim dobavljačima?",
+          "answer": "Da. Neometano surađujemo s programerima, trgovcima ili agencijama ili preuzimamo održavanje i optimizaciju bez nepotrebnog ometanja postojećeg posla."
         }
       ]
     },
@@ -82,68 +82,68 @@
       "items": [
         {
           "id": "ai-1",
-          "question": "Što je vaš AI scan?",
-          "answer": "AI readiness scan koji ocjenjuje koliko dobro vaš site performa za klasično pretraživanje, AI odgovore i lokalnu/geografsku vidljivost (AEO, GEO, SEO i tehničke temelje)."
+          "question": "Što je AI skeniranje na TripleZero iT?",
+          "answer": "Skeniranje spremnosti za AI procjenjuje koliko dobro vašu stranicu mogu pronaći klasične tražilice, odgovori AI i lokalni ili geografski rezultati pretraživanja (AEO, GEO, SEO i tehnički temelji)."
         },
         {
           "id": "ai-2",
-          "question": "Što mjeri AI scan?",
-          "answer": "AEO signale, GEO/lokalnu vidljivost, SEO osnove, strukturu sadržaja, pokazatelje performansi i AI readiness — s prioritetnim popravcima."
+          "question": "Što točno mjeri AI skeniranje?",
+          "answer": "Skeniranje mjeri AEO signale, GEO/lokalnu vidljivost, osnove SEO-a, strukturu sadržaja, pokazatelje izvedbe i spremnost za umjetnu inteligenciju. Dobivate bodove i konkretne bodove za poboljšanje."
         },
         {
           "id": "ai-3",
-          "question": "Koliko često trebamo raditi AI scan?",
-          "answer": "Nakon većih promjena na siteu ili kampanja; za aktivne brendove preporučujemo periodične scanove (npr. kvartalno)."
+          "question": "Koliko često trebam pokretati AI skeniranje?",
+          "answer": "Najmanje nakon velikih promjena web stranice ili kampanja. Za aktivne robne marke preporučujemo povremena skeniranja, na primjer svako tromjesečje, kako biste ostali vidljivi u rezultatima pretraživanja i umjetne inteligencije."
         },
         {
           "id": "ai-4",
-          "question": "Je li AI samo pisanje sadržaja?",
-          "answer": "Ne. Uključuje tehničku discoverability, structured data, internal linking i kako AI sustavi sažimaju vaš brend."
+          "question": "Pomaže li AI samo sa sadržajem?",
+          "answer": "Ne. AI također utječe na tehničku vidljivost, strukturirane podatke, interno povezivanje, blokove često postavljanih pitanja i na to kako su informacije o robnoj marki sažete u odgovorima umjetne inteligencije."
         },
         {
           "id": "ai-5",
-          "question": "Možete li integrirati AI u naše workflowove?",
-          "answer": "Da: asistencija za sadržaj, automatizacija, chat/ticket flowovi i custom AI API integracije."
+          "question": "Možete li integrirati AI u naš tijek rada?",
+          "answer": "Da. AI možemo koristiti za pomoć u sadržaju, automatizaciju, chatbot ili tokove ulaznica, podatkovne veze i prilagođene API-je oko AI alata."
         },
         {
           "id": "ai-6",
           "question": "Zamjenjuje li AI vaš strateški rad?",
-          "answer": "Ne. AI ubrzava analizu i produkciju; strategija, brand voice i odluke o konverziji ostaju vođene ljudima."
+          "answer": "Ne. AI ubrzava analizu i proizvodnju, ali strategije, glas robne marke i odluke o pretvorbi ostaju ljudske i mjerljive."
         },
         {
           "id": "ai-7",
-          "question": "Je li AI-generirani sadržaj siguran za SEO?",
-          "answer": "Samo uz ljudsku provjeru, jedinstveni uvid i E-E-A-T. Izbjegavamo tanke generičke stranice koje štete rangiranju."
+          "question": "Je li AI sadržaj siguran za SEO?",
+          "answer": "Samo uz ljudski pregled, jedinstvene uvide i E-E-A-T. Izbjegavamo tanki, generički tekst koji šteti rangiranju."
         },
         {
           "id": "ai-8",
-          "question": "Što je AI readiness?",
-          "answer": "Koliko su vaš site, sadržaj i podaci strukturirani tako da AI sustavi mogu ispravno citirati, preporučiti i objasniti vaš brend."
+          "question": "Što je AI spremnost za moj brend?",
+          "answer": "To je stupanj do kojeg su vaše web mjesto, sadržaj i podaci postavljeni tako da sustavi umjetne inteligencije mogu ispravno citirati, preporučiti i objasniti vašu marku."
         },
         {
           "id": "ai-9",
-          "question": "Koristite li AI agente u dashboardu?",
-          "answer": "Da. Klijenti mogu vidjeti agente za SEO, sadržaj, social i oglase sa statusom i zadacima."
+          "question": "Možete li koristiti AI agente na nadzornoj ploči?",
+          "answer": "Da. Na portalu za klijente vidite AI agente za SEO, sadržaj, društvene mreže i oglase — uključujući status i zadatke."
         },
         {
           "id": "ai-10",
-          "question": "Koje AI alate koristite?",
-          "answer": "Biramo alate po use caseu, uz governance: izvori, fact-checking, brand pravila i privacy."
+          "question": "Radite li s ChatGPT-om, Claudeom ili drugim alatima?",
+          "answer": "Biramo alate prema slučaju upotrebe. Upravljanje je važno: izvori, provjera činjenica, smjernice robne marke i privatnost, tako da korištenje umjetne inteligencije ostaje pouzdano."
         },
         {
           "id": "ai-11",
-          "question": "Može li AI pomoći s support ticketima?",
-          "answer": "Da za triage i brže odgovore, uz ljudsku eskalaciju za kompleksne ili osjetljive slučajeve."
+          "question": "Pomaže li umjetna inteligencija s ulaznicama za podršku?",
+          "answer": "Da, za trijažu i brže odgovore. Složeni ili osjetljivi slučajevi uvijek se eskaliraju ljudskom suigraču."
         },
         {
           "id": "ai-12",
-          "question": "Kako se naplaćuje AI rad?",
-          "answer": "Od početnog AI scana do mjesečnih AI + marketing retainera. Dobit ćete jasnu ponudu nakon intakea."
+          "question": "Koliko košta angažman umjetne inteligencije?",
+          "answer": "Kreće se od besplatnog ili početnog AI skeniranja do mjesečnih AI i marketinških naknada. Nakon prijave dobivate jasan prijedlog."
         },
         {
           "id": "ai-13",
-          "question": "Kako mjerimo AI ROI?",
-          "answer": "KPI-ji poput prometa, leadova, ušteđenog vremena, outputa sadržaja, rješavanja ticketa i konverzije — definirano unaprijed."
+          "question": "Kako mogu izmjeriti ROI inicijativa umjetne inteligencije?",
+          "answer": "Putem KPI-ja kao što su promet, potencijalni kupci, ušteđeno vrijeme, izlaz sadržaja, rješavanje tiketa i konverzija. Definiramo ih unaprijed u planu kako bi rezultati ostali vidljivi."
         }
       ]
     },
@@ -154,72 +154,72 @@
         {
           "id": "seo-1",
           "question": "Koja je razlika između AEO, GEO i SEO?",
-          "answer": "AEO (Answer Engine Optimization) optimizira za AI odgovore. GEO (Geographic Search Engine Optimization) jača lokalnu i regionalnu vidljivost u Mapsu, local packovima i pretraživanju po lokaciji. SEO cilja klasične tražilice."
+          "answer": "AEO (Answer Engine Optimization) fokusiran je na AI odgovore. GEO (Geographic Search Engine Optimization) jača lokalnu i regionalnu vidljivost u Kartama, lokalnim paketima i pretrazi temeljenoj na lokaciji. SEO optimizira za klasične tražilice."
         },
         {
           "id": "seo-2",
           "question": "Zašto su AEO/GEO sada važni?",
-          "answer": "Sve više korisnika dobiva odgovore kroz AI i pretražuje lokalno („near me”). Bez AEO-a propuštate AI citiranja; bez GEO-a propuštate leadove u blizini — čak i ako je klasični SEO dobar."
+          "answer": "Više tražitelja dobiva odgovore putem umjetne inteligencije i pretražuju lokalno (\"u mojoj blizini\"). Bez AEO-a propuštate AI citate; bez GEO propuštate lokalne potencijalne klijente — čak i kada je klasični SEO solidan."
         },
         {
           "id": "seo-3",
-          "question": "Kako započinjete SEO engagement?",
-          "answer": "Tehnički audit, keyword/intent istraživanje, analiza content gapa i prioritetni roadmap vezan uz business KPI-je."
+          "question": "Kako započeti SEO angažman?",
+          "answer": "Počinjemo s tehničkom revizijom, istraživanjem ključnih riječi i namjera, analizom nedostataka sadržaja i planom prioriteta povezanim s ključnim pokazateljima uspješnosti vašeg poslovanja."
         },
         {
           "id": "seo-4",
-          "question": "Koliko treba da se vide SEO rezultati?",
-          "answer": "Tehnički winovi mogu biti brzi. Organski rast se obično gradi kroz tjedne do mjesece, ovisno o konkurenciji."
+          "question": "Koliko dugo do vidljivih SEO rezultata?",
+          "answer": "Tehničke pobjede mogu se brzo pokazati. Organski rast obično se gradi tjednima do mjesecima, ovisno o konkurenciji i tome koliko dosljedno izvršavamo."
         },
         {
           "id": "seo-5",
-          "question": "Nudite li local SEO?",
-          "answer": "Da: Google Business Profile, lokalne landing stranice, NAP konzistentnost, recenzije i lokalni content klasteri."
+          "question": "Bavite li se i lokalnim SEO-om?",
+          "answer": "Da. Radimo na Google poslovnom profilu, lokalnim odredišnim stranicama, dosljednosti NAP-a, recenzijama i klasterima lokalnog sadržaja kako biste se lakše pronašli u svojoj regiji."
         },
         {
           "id": "seo-6",
           "question": "Što je za vas tehnički SEO?",
-          "answer": "Crawlability, indexation, Core Web Vitals, structured data, sitemaps/robots, canonicals, internal linking i čišćenje grešaka."
+          "answer": "Tehnički SEO pokriva indeksiranje, indeksiranje, temeljne web vitale, strukturirane podatke, kartu web stranice i robote, kanonike, interno povezivanje i čišćenje grešaka — sve što je tražilicama potrebno da dobro razumiju web mjesto."
         },
         {
           "id": "seo-7",
-          "question": "Pišete li SEO sadržaj?",
-          "answer": "Da: briefovi, outlineovi, blogovi, landing stranice i FAQ-ovi usklađeni s intentom i strukturirani za AI vidljivost."
+          "question": "Pomažete li sa sadržajem za SEO?",
+          "answer": "Da. Izrađujemo sažetke, nacrte, blogove, odredišne ​​stranice i često postavljana pitanja koji odgovaraju namjeri pretraživanja i strukturirani su na način prilagođen umjetnoj inteligenciji."
         },
         {
           "id": "seo-8",
-          "question": "Što je E-E-A-T?",
-          "answer": "Experience, Expertise, Authoritativeness, Trust — ključno za rangiranje i kredibilitet u AI sažecima."
+          "question": "Što je E-E-A-T i zašto je bitan?",
+          "answer": "E-E-A-T je kratica za iskustvo, stručnost, autoritativnost i povjerenje. Snažan E-E-A-T pomaže rangiranju i kredibilitetu vašeg brenda u AI sažecima."
         },
         {
           "id": "seo-9",
-          "question": "Radite li link building?",
-          "answer": "Da, etično i relevantno: digital PR, partnerstva i content asseti — nikad spam sheme."
+          "question": "Bavite li se izgradnjom linkova?",
+          "answer": "Da, etički i relevantno: digitalni PR, partnerstva i imovina sadržaja. Ne koristimo sheme spam linkova."
         },
         {
           "id": "seo-10",
-          "question": "Možete li oporaviti SEO štetu?",
-          "answer": "Da: oporavak od algoritma, toxic linkovi, problemi s indexationom i popravci content cannibalizationa."
+          "question": "Možete li popraviti postojeću SEO štetu?",
+          "answer": "Da. Popravljamo štetu nakon ažuriranja, toksičnih poveznica, problema s indeksiranjem ili kanibalizacije sadržaja, a zatim postavljamo čisti put rasta."
         },
         {
           "id": "seo-11",
-          "question": "Kako reportate SEO napredak?",
-          "answer": "Mjesečno ili po sprintu: rangovi, promet, konverzije, tehnički problemi i sljedeće akcije."
+          "question": "Kako izvješćujete o napretku SEO-a?",
+          "answer": "Mjesečno ili po sprintu izvještavamo o poretku, prometu, konverzijama, tehničkim problemima i sljedećim radnjama, tako da je jasno što smo učinili i što slijedi."
         },
         {
           "id": "seo-12",
-          "question": "Radi li SEO za ecommerce?",
-          "answer": "Da: SEO za proizvode/kategorije, faceted navigation, recenzije, structured data i hubovi za buying intent sadržaj."
+          "question": "Radi li SEO za e-trgovinu?",
+          "answer": "Apsolutno. Optimiziramo SEO proizvoda i kategorija, fasetiranu navigaciju, recenzije, strukturirane podatke i središta sadržaja oko namjere kupnje."
         },
         {
           "id": "seo-13",
-          "question": "Je li SEO one-off ili ongoing?",
-          "answer": "Najbolji rezultati dolaze iz kontinuirane optimizacije. One-off auditi pomažu, ali konkurencija se stalno mijenja."
+          "question": "Je li SEO jednokratni projekt ili je u tijeku?",
+          "answer": "Najbolji rezultati dolaze iz stalne optimizacije. Jednokratne revizije pomažu, ali konkurenti ne miruju — zato nastavljamo mjeriti i prilagođavati se."
         },
         {
           "id": "seo-14",
-          "question": "Podržavate li international SEO?",
-          "answer": "Da: hreflang, market research po localeu, lokalizacija i tehničke multi-locale postavke."
+          "question": "Pomažete li u međunarodnom SEO-u?",
+          "answer": "Da. Bavimo se hreflangom, istraživanjem tržišta po zemlji ili jeziku, lokalizacijom sadržaja i tehničkim postavkama za više jezika."
         }
       ]
     },
@@ -229,68 +229,68 @@
       "items": [
         {
           "id": "ads-1",
-          "question": "Koje oglasne kanale vodite?",
-          "answer": "Google Ads, Meta, LinkedIn, i gdje je relevantno YouTube/retargeting — ovisno o funnelu i budžetu."
+          "question": "Koje kanale oglašavanja podržavate?",
+          "answer": "Podržavamo Google Ads, Meta (Facebook/Instagram), LinkedIn i, gdje je relevantno, YouTube ili ponovno ciljanje — usklađeno s tokom i proračunom."
         },
         {
           "id": "ads-2",
-          "question": "Kako postavljate oglasne budžete?",
-          "answer": "Polazeći od ciljeva (leadovi/prodaja), target CAC-a, aukcijskih cijena i test faze. Krećemo lean i skaliramo pobjednike."
+          "question": "Kako odrediti pravi proračun za oglašavanje?",
+          "answer": "Postavljamo proračun na temelju ciljeva (potencijalni kupci ili prodaja), CAC ciljeva, tržišnih cijena i testne faze. Počinjemo s mršavošću i mjerimo ono što funkcionira."
         },
         {
           "id": "ads-3",
-          "question": "Koji je vaš pristup Google Ads-u?",
-          "answer": "Struktura računa, mapiranje intenta, negative, usklađenost landing stranice, conversion tracking i tjedna optimizacija."
+          "question": "Kakav je vaš pristup Google Adsu?",
+          "answer": "Postavljamo jasnu strukturu računa, mapiramo namjeru pretraživanja, dodajemo negativne ključne riječi, provjeravamo prikladnost odredišne ​​stranice, postavljamo praćenje konverzija i optimiziramo tjedno."
         },
         {
           "id": "ads-4",
-          "question": "Možete li voditi Meta Ads za ecommerce?",
-          "answer": "Da: katalozi/retargeting, kreativi, publike i testiranje kreativa za bolji ROAS."
+          "question": "Možete li pokrenuti meta oglase za e-trgovinu?",
+          "answer": "Da. Vodimo kataloge i kampanje ponovnog ciljanja, testiramo kreativne oglase i publiku te optimiziramo kako bismo poboljšali ROAS."
         },
         {
           "id": "ads-5",
-          "question": "Kako mjerite uspjeh oglasa?",
-          "answer": "Konverzije, CPA/CAC, ROAS, kvaliteta leadova i pipeline — ne vanity klikovi."
+          "question": "Kako mjerite uspjeh oglašavanja?",
+          "answer": "Mjerimo konverzije, CPA/CAC, ROAS, kvalitetu potencijalnih klijenata i cjevovod - ne samo klikove. Na taj način optimiziramo za rezultate umjesto za volumen."
         },
         {
           "id": "ads-6",
-          "question": "Što ako je tracking pokvaren?",
-          "answer": "Popravimo GTM/GA4/pixele, consent postavke gdje treba i jače opcije mjerenja."
+          "question": "Što ako je praćenje pogrešno?",
+          "answer": "Zatim popravljamo označavanje (GTM, GA4 i pikseli), način pristanka gdje je potrebno i opcije na strani poslužitelja za pouzdanije podatke."
         },
         {
           "id": "ads-7",
-          "question": "Vodite li B2B LinkedIn Ads?",
-          "answer": "Da, uz precizno targetiranje, lead forme ili landing stranice i poruke za decision makere."
+          "question": "Pokrećete li i B2B LinkedIn oglase?",
+          "answer": "Da. Koristimo oštro ciljanje, kontaktne obrasce ili odredišne ​​stranice i sadržaj koji govori onima koji donose odluke."
         },
         {
           "id": "ads-8",
-          "question": "Koliko brzo oglasi daju rezultate?",
-          "answer": "Promet može biti odmah. Stabilan CPA/ROAS obično treba 2–6 tjedana učenja i iteracije."
+          "question": "Koliko brzo ću vidjeti rezultate oglasa?",
+          "answer": "Promet može stići odmah. Za stabilan CPA ili ROAS obično je potrebno 2 do 6 tjedana učenja i kreativnog ponavljanja."
         },
         {
           "id": "ads-9",
-          "question": "Radite li oglasne creative?",
-          "answer": "Da: copy, vizuali i test varijante — dizajn/media creation uključen po potrebi."
+          "question": "Izrađujete li i oglasne kreative?",
+          "answer": "Da. Izrađujemo kopije, vizuale i testne varijante. Dizajn i izrada medija mogu se uključiti tako da kampanje ne čekaju na kreativce."
         },
         {
           "id": "ads-10",
-          "question": "Mogu li se oglasi i SEO međusobno pojačavati?",
-          "answer": "Da. Search insightovi hrane SEO; jake organske stranice poboljšaju Quality Score i snižavaju CPA."
+          "question": "Mogu li oglasi i SEO ojačati jedno drugo?",
+          "answer": "Apsolutno. Pretražite podatke iz izvora oglasa SEO; jake organske stranice smanjuju CPA i podižu ocjenu kvalitete."
         },
         {
           "id": "ads-11",
-          "question": "Možete li preuzeti postojeće ad račune?",
-          "answer": "Da. Audit, restrukturiranje i optimizacija bez nepotrebnih rebuildova."
+          "question": "Upravljate li postojećim oglasnim računima?",
+          "answer": "Da. Vršimo reviziju, restrukturiranje i optimizaciju bez nepotrebnog pokretanja ispočetka."
         },
         {
           "id": "ads-12",
-          "question": "Kako sprječavate nepotrebno trošenje budžeta?",
-          "answer": "Negative keywords, izuzeća, capovi, geo kontrole, frequency limit i brzi kill switch-evi."
+          "question": "Kako spriječiti rasipanje proračuna za oglase?",
+          "answer": "Spriječavamo rasipanje negativnim ključnim riječima, izuzimanjem publike, proračunskim ograničenjima, geofencingom, kontrolom učestalosti i brzim pauziranjem onih koji imaju lošiju izvedbu."
         },
         {
           "id": "ads-13",
-          "question": "Isplati li se remarketing?",
-          "answer": "Da kada je privacy-compliant i s jakim ponudama — često najefikasniji sloj."
+          "question": "Je li remarketing još uvijek relevantan?",
+          "answer": "Da, kada je u skladu s privatnošću i uparen sa snažnim oglasima i ponudama. Često ostaje najučinkovitiji sloj u lijevku."
         }
       ]
     },
@@ -300,68 +300,68 @@
       "items": [
         {
           "id": "des-1",
-          "question": "Koje dizajn usluge nudite?",
-          "answer": "Logotipi, brand identitet, posjetnice, memorandum, flyeri, posteri, naljepnice, magazini/brošure i digitalni vizuali."
+          "question": "Koje usluge dizajna nudite?",
+          "answer": "Nudimo logotipe, identitet robne marke, posjetnice, memorandume, letke, postere, naljepnice, časopise ili brošure i digitalne slike."
         },
         {
           "id": "des-2",
-          "question": "Koje alate koristite?",
-          "answer": "Adobe Photoshop, Illustrator i InDesign za profesionalne, print-ready isporuke."
+          "question": "S kojim alatima radite?",
+          "answer": "Radimo u Adobe Photoshopu, Illustratoru i InDesignu tako da su datoteke spremne za ispis i profesionalno zamjenjive."
         },
         {
           "id": "des-3",
-          "question": "Isporučujete li print-ready datoteke?",
-          "answer": "Da: CMYK, bleed, crop marks i pravilni PDF exporti, plus varijante za ekran."
+          "question": "Dostavljate li datoteke spremne za ispis?",
+          "answer": "Da. Isporučujemo CMYK, bleed, crop marks i pravi PDF/X izvoz gdje je to potrebno, plus varijante zaslona za digitalnu upotrebu."
         },
         {
           "id": "des-4",
-          "question": "Kako izgleda projekt logotipa?",
-          "answer": "Brief → koncepti → runde feedbacka → finalni vektori (SVG/PDF/AI) i osnovne smjernice korištenja."
+          "question": "Kako funkcionira projekt logotipa?",
+          "answer": "Projekt logotipa kreće se od brifinga do koncepata, zatim krugova s ​​povratnim informacijama i završava konačnim vektorskim datotekama (SVG/PDF/AI) i osnovnim smjernicama."
         },
         {
           "id": "des-5",
-          "question": "Možete li osvježiti postojeći brend?",
-          "answer": "Da — ažuriramo logo, boje i tipografiju uz očuvanje prepoznatljivosti."
+          "question": "Možete li ažurirati naš postojeći brend?",
+          "answer": "Da. Osvježavamo logotip, boju, tipografiju i aplikacije bez prekida prepoznavanja."
         },
         {
           "id": "des-6",
-          "question": "Radite li social templateove?",
-          "answer": "Da, kako bi vaš tim mogao objavljivati dosljedno i brzo."
+          "question": "Izrađujete li i društvene predloške?",
+          "answer": "Da. Stvaramo dosljedne predloške za objave, priče i oglase kako bi vaš tim mogao objavljivati ​​brzo i prepoznatljivo."
         },
         {
           "id": "des-7",
-          "question": "Digitalni vs print dizajn?",
-          "answer": "Print traži color space, rezoluciju i margine; digital traži oštrinu na ekranu i brzinu. Isporučujemo oboje ispravno."
+          "question": "Koja je razlika između digitalnog i print dizajna?",
+          "answer": "Ispis zahtijeva prostor u boji, rezoluciju i obrezane margine; digital treba oštrinu zaslona i brzo učitavanje. Oboje isporučujemo korektno, prilagođeno kanalu."
         },
         {
           "id": "des-8",
-          "question": "Možete li raditi layout za magazine ili brošure?",
-          "answer": "Da, višestrani InDesign rad s gridovima, stilovima i prepress provjerama."
+          "question": "Možete li oblikovati časopise ili brošure?",
+          "answer": "Da. U InDesignu stvaramo rasporede na više stranica s mrežom, stilovima i provjerama pripreme za tisak, spremne za ispis ili digitalnu distribuciju."
         },
         {
           "id": "des-9",
-          "question": "Rješavate li i tisak?",
-          "answer": "Da. Dizajniramo i možemo tiskati male ili velike količine — od posjetnica i naljepnica do flyera, postera i brošura — s proofovima i koordinacijom produkcije."
+          "question": "Pomažete li u tiskanju?",
+          "answer": "Da. Dizajniramo i možemo tiskati u malim ili velikim količinama — od posjetnica i naljepnica do letaka, postera i brošura — s otiscima i koordinacijom kroz isporuku."
         },
         {
           "id": "des-10",
-          "question": "Koliko je rundi feedbacka uključeno?",
-          "answer": "Obično 2–3 strukturirane runde; dodatno je moguće po dogovoru."
+          "question": "Koliko je rundi povratnih informacija uključeno?",
+          "answer": "Obično su uključena 2 do 3 strukturirana kruga. Dodatni krugovi su mogući po dogovoru."
         },
         {
           "id": "des-11",
-          "question": "Dobivamo li source datoteke?",
-          "answer": "Da, prema dogovoru (AI/PSD/INDD ili export paketi)."
+          "question": "Dobivamo li izvorne datoteke?",
+          "answer": "Da, unutar dogovorene isporuke. To može biti AI, PSD ili INDD ili izvozni paket — ovisno o tome što smo dogovorili."
         },
         {
           "id": "des-12",
-          "question": "Mogu li dizajn i webdesign biti usklađeni?",
-          "answer": "Da. Brand sustavi i UI ostaju konzistentni kroz print i web."
+          "question": "Mogu li dizajn i web dizajn ići zajedno?",
+          "answer": "Da. Usklađujemo dizajn robne marke i UI sustave tako da ispis i web stranica čine jednu cjelinu."
         },
         {
           "id": "des-13",
-          "question": "Gdje mogu saznati više o Digital Designu?",
-          "answer": "Posjeti /digital-design i Digital Design usluge u meniju."
+          "question": "Gdje mogu saznati više o digitalnom dizajnu?",
+          "answer": "Više informacija na /digital-design te putem usluga Digital Design u izborniku."
         }
       ]
     },
@@ -372,285 +372,285 @@
         {
           "id": "mkt-1",
           "question": "Koje marketinške usluge nudite?",
-          "answer": "AEO/GEO/SEO, sadržaj, social, oglasi, ecommerce growth, product listing, community management i data entry."
+          "answer": "Nudimo AEO/GEO/SEO, sadržaj, društvene mreže, oglase, rast e-trgovine, popis proizvoda, upravljanje zajednicom i unos podataka."
         },
         {
           "id": "mkt-2",
           "question": "Kako gradite marketinšku strategiju?",
-          "answer": "Ciljevi, publika, pozicioniranje, mix kanala, content pipeline i KPI-jevi — praktično i izvedivo."
+          "answer": "Gradimo strategiju oko ciljeva, publike, pozicioniranja, kombinacije kanala, sadržaja i ključnih pokazatelja uspješnosti — praktično i izvedivo, ne samo na papiru."
         },
         {
           "id": "mkt-3",
-          "question": "Što je full-funnel marketing za vas?",
-          "answer": "Awareness → consideration → conversion → retention, s jasno definiranim ulogama kanala."
+          "question": "Što je za vas marketing cijelog toka?",
+          "answer": "Cijeli tok kreće se od svijesti (sadržaj i oglasi) preko razmatranja (slučajevi i SEO) do konverzije (odredišne ​​stranice i CRM) i zatim zadržavanja, tako da svaka faza ima jasnu ulogu."
         },
         {
           "id": "mkt-4",
-          "question": "Pomažete li s pozicioniranjem?",
-          "answer": "Da. Jasno pozicioniranje sprječava raspršene kampanje i slabu konverziju."
+          "question": "Pomažete li u pozicioniranju?",
+          "answer": "Da. Jasno pozicioniranje sprječava fragmentirane kampanje i slabu konverziju."
         },
         {
           "id": "mkt-5",
-          "question": "Radite li pisanje sadržaja?",
-          "answer": "Da: blogovi, copy za web, newsletteri, landing stranice i sales copy."
+          "question": "Možete li isporučiti pisanje sadržaja?",
+          "answer": "Da. Pišemo blogove, tekstove za web stranice, biltene, odredišne ​​stranice i tekstove za prodaju – usmjereni na SEO i konverziju."
         },
         {
           "id": "mkt-6",
-          "question": "Radite li ecommerce marketing?",
-          "answer": "Da: feedovi, kvaliteta listinga, CRO, oglasi i SEO za kategorije/proizvode."
+          "question": "Bavite li se marketingom e-trgovine?",
+          "answer": "Da. Radimo na feedovima proizvoda, kvaliteti popisa, CRO-u, oglasima i SEO-u za kategorije i proizvode."
         },
         {
           "id": "mkt-7",
           "question": "Što je CRO?",
-          "answer": "Conversion Rate Optimization — poboljšanje stranica i funnelova kako bi više posjetitelja konvertiralo."
+          "answer": "CRO je optimizacija stope konverzije: poboljšanje stranica, tokova i korisničkog doživljaja kako bi više posjetitelja izvršilo konverziju."
         },
         {
           "id": "mkt-8",
-          "question": "Kako reportate marketinške rezultate?",
-          "answer": "Reporti/dashboardi s prometom, leadovima, prodajom, CPA/ROAS i learnings po kanalima."
+          "question": "Kako izvještavate o marketinškim rezultatima?",
+          "answer": "Izvještavamo putem nadzornih ploča ili izvješća s prometom, potencijalnim kupcima, prodajom, CPA/ROAS-om i saznanjima po kanalu, uključujući ono što ćemo sljedeće učiniti."
         },
         {
           "id": "mkt-9",
-          "question": "Možete li raditi s našim in-house timom?",
-          "answer": "Da — izvršavamo, savjetujemo ili vodimo specijalističku liniju (samo SEO, samo oglasi itd.)."
+          "question": "Surađujete li s našim internim marketinškim timom?",
+          "answer": "Da. Možemo izvršiti, poduprijeti ili preuzeti specijalistički dio, na primjer samo SEO ili samo oglase."
         },
         {
           "id": "mkt-10",
-          "question": "Koliko brzo se kampanje mogu pokrenuti?",
-          "answer": "Često unutar 1–2 tjedna nakon trackinga/setup-a; sadržaj ide paralelno."
+          "question": "Koliko brzo pokrećete kampanje?",
+          "answer": "Nakon praćenja i postavljanja, kampanje se često aktiviraju u roku od 1 do 2 tjedna. Rad na sadržaju teče paralelno kako bi kreativci i stranice bili spremni na vrijeme."
         },
         {
           "id": "mkt-11",
-          "question": "Podržavate li email marketing?",
-          "answer": "Da: flowovi, newsletteri i copy, uključujući CRM/ecommerce integracije."
+          "question": "Pomažete li u marketingu putem e-pošte?",
+          "answer": "Da. Izrađujemo tokove, biltene i kopije. Moguća je integracija s CRM-om ili e-trgovinom."
         },
         {
           "id": "mkt-12",
-          "question": "Je li marketing uvijek mjesečni retainer?",
-          "answer": "Retaineri su za kontinuirani rast; auditi, redizajni i launchovi mogu biti projektni."
+          "question": "Je li marketing mjesečni ugovor?",
+          "answer": "Držači su uobičajeni za stalni rast. Projekti poput revizije, redizajna ili lansiranja mogu biti jednokratni."
         },
         {
           "id": "mkt-13",
-          "question": "Kako izbjegavate busywork bez rezultata?",
-          "answer": "Svaka aktivnost je vezana uz KPI-jeve. Slabiji rezultati se popravljaju ili zaustavljaju."
+          "question": "Kako spriječiti \"užurban marketing\" bez rezultata?",
+          "answer": "Svaka je aktivnost vezana uz KPI. Neuspješne taktike zaustavljaju se ili poboljšavaju s podacima, tako da proračun odlazi na ono što funkcionira."
         }
       ]
     },
     {
       "id": "social-media",
-      "title": "Društvene mreže",
+      "title": "Društveni mediji",
       "items": [
         {
           "id": "soc-1",
-          "question": "Koje društvene kanale vodite?",
-          "answer": "Primarno LinkedIn, Instagram, Facebook i gdje je relevantno X/TikTok — prema fitu publike."
+          "question": "Kojim društvenim kanalima upravljate?",
+          "answer": "Uglavnom upravljamo LinkedInom, Instagramom i Facebookom, a tamo gdje je to relevantno, X-om ili TikTokom — na temelju publike, a ne hypea."
         },
         {
           "id": "soc-2",
-          "question": "Što je uključeno u social media management?",
-          "answer": "Strategija, kalendar, kreiranje/zakazivanje, community odgovori, reportanje i iteracija."
+          "question": "Što je uključeno u upravljanje društvenim mrežama?",
+          "answer": "Upravljanje društvenim medijima pokriva strategiju, kalendar sadržaja, stvaranje i raspoređivanje, odgovore zajednice, izvješćivanje i stalnu optimizaciju."
         },
         {
           "id": "soc-3",
-          "question": "Kreirate li vizuale i video?",
-          "answer": "Da kroz media creation: slike, karuseli, short-form video i templateovi."
+          "question": "Izrađujete li i vizuale i video zapise?",
+          "answer": "Da, putem stvaranja medija: fotografije, vrtuljke, kratki video i predlošci."
         },
         {
           "id": "soc-4",
           "question": "Koliko često objavljujete?",
-          "answer": "Ovisi o ciljevima — tipično 3–5 puta tjedno na core kanalima, kvaliteta iznad volumena."
+          "answer": "Ovisi o kanalu i ciljevima. Obično objavljujemo 3 do 5 puta tjedno po osnovnom kanalu, s kvalitetom nad količinom."
         },
         {
           "id": "soc-5",
-          "question": "Nudite li community management?",
-          "answer": "Da: moderacija, komentari, DM-ovi i briga o reputaciji uz smjernice za brand voice."
+          "question": "Pomažete li u upravljanju zajednicom?",
+          "answer": "Da. Mi se bavimo moderiranjem, odgovorima, DM-ovima i brigom o ugledu prema dogovorenom tonu glasa."
         },
         {
           "id": "soc-6",
-          "question": "Mogu li social i oglasi raditi zajedno?",
-          "answer": "Da. Organski pobjednici postaju ad kreativi; oglasi pojačavaju ono što rezonira."
+          "question": "Mogu li se društvene mreže i oglasi kombinirati?",
+          "answer": "Da. Organski sadržaj hrani oglase; oglasi skaliraju ono što ima organsku izvedbu."
         },
         {
           "id": "soc-7",
-          "question": "Kako mjerite uspjeh na društvenim mrežama?",
-          "answer": "Doseg, engagement, klikovi, leadovi i asistirane konverzije — ne samo lajkovi."
+          "question": "Kako mjerite društveni uspjeh?",
+          "answer": "Mjerimo doseg, angažman, klikove, potencijalne kupce i potpomognute konverzije - ne samo lajkove. To pokazuje što doista pridonosi rastu."
         },
         {
           "id": "soc-8",
           "question": "Radite li s influencerima?",
-          "answer": "Na zahtjev: odabir, briefing i tracking s fokusom na mjerljive rezultate."
+          "answer": "Na zahtjev: odabir, brifing i praćenje. Usredotočeni smo na prikladne i mjerljive rezultate, a ne na sam doseg."
         },
         {
           "id": "soc-9",
-          "question": "Možete li pomoći u kriznoj komunikaciji?",
-          "answer": "Da, uz protokole brzog odgovora koordinirane s vašim timom."
+          "question": "Možete li podržati kriznu komunikaciju?",
+          "answer": "Da. Koristimo protokole za brzi odgovor i usklađujemo se s vašim timom kako bi odgovori ostali dosljedni i pod kontrolom."
         },
         {
           "id": "soc-10",
-          "question": "Pomažete li s LinkedIn thought leadershipom?",
-          "answer": "Da: osobni + kompanijski sadržaj, karuseli, slučajevi i employee advocacy."
+          "question": "Pomažete li s LinkedInom za B2B misaono vodstvo?",
+          "answer": "Da. Stvaramo osobni i poslovni sadržaj, vrtuljke, slučajeve i zastupanje zaposlenika kako bi stručnost postala vidljiva."
         },
         {
           "id": "soc-11",
-          "question": "Dajete li content calendar?",
-          "answer": "Da — mjesečne ili kvartalne teme, formate i rokove."
+          "question": "Isporučujete li sadržajni kalendar?",
+          "answer": "Da. Isporučujemo mjesečni ili tromjesečni plan s temama, formatima i rokovima."
         },
         {
           "id": "soc-12",
-          "question": "Što ako već imamo social managera?",
-          "answer": "Možemo se specijalizirati (kreativi, oglasi, strategija) ili podržati peak periode."
+          "question": "Što ako već imamo društvenog menadžera?",
+          "answer": "Zatim se možemo specijalizirati za kreativce, oglase ili strategije ili podržati vršna razdoblja bez zamjene postojećeg tima."
         },
         {
           "id": "soc-13",
-          "question": "Koliko brzo će social rasti?",
-          "answer": "Dosljednost se zbraja. Značajan rast obično traje tjednima do mjesecima; brže uz podršku oglasa."
+          "question": "Koliko brzo ćemo vidjeti rast na društvenim mrežama?",
+          "answer": "Dosljednost je važna. Za značajan rast obično su potrebni tjedni do mjeseci; s podrškom za oglase često ide brže."
         }
       ]
     },
     {
       "id": "support",
-      "title": "Podrška",
+      "title": "podrška",
       "items": [
         {
           "id": "sup-1",
-          "question": "Koju podršku pružate?",
-          "answer": "WordPress podrška, podrška za custom siteove, tiketi/live chat, održavanje, sigurnost, performanse i incident response."
+          "question": "Kakvu podršku nudite?",
+          "answer": "Nudimo podršku za WordPress, prilagođenu podršku za web stranice, ulaznice i chat uživo, održavanje, sigurnost, performanse i odgovor na incidente."
         },
         {
           "id": "sup-2",
           "question": "Kako mogu doći do podrške?",
-          "answer": "Putem kontakta, rezervacije, dashboard ticketa ili live chata. Hitni slučajevi dobivaju prioritet."
+          "answer": "Putem kontakta, dogovora, ulaznica na nadzornoj ploči ili live chata na stranici. Hitni slučajevi su označeni kao prioritetni."
         },
         {
           "id": "sup-3",
           "question": "Koje je vaše vrijeme odgovora?",
-          "answer": "Brz prvi odgovor (često unutar jednog radnog dana; kritični downtime brže). Točni SLA-ovi ovise o paketu."
+          "answer": "Cilj nam je brzi prvi odgovor, često unutar jednog radnog dana. Za kritične zastoje reagiramo brže. Točni SLA-ovi nalaze se u paketima podrške."
         },
         {
           "id": "sup-4",
-          "question": "Nudite li 24/7 monitoring?",
-          "answer": "Da u relevantnim support/hosting paketima: monitoring, backupovi i alertovi."
+          "question": "Nudite li nadzor 24/7?",
+          "answer": "Da, u relevantnim paketima podrške i hostinga: nadzor, sigurnosne kopije i upozorenja kako bi problemi postali vidljivi ranije."
         },
         {
           "id": "sup-5",
-          "question": "Možete li ukloniti malware?",
-          "answer": "Da — WordPress i custom stackovi — uključujući hardening i aftercare."
+          "question": "Možete li ukloniti zlonamjerni softver?",
+          "answer": "Da — na WordPressu kao i prilagođenim skupovima — uključujući očvršćavanje i naknadnu njegu kako bi se stranica vratila čista i bolje zaštićena."
         },
         {
           "id": "sup-6",
-          "question": "Radite li WordPress updateove?",
-          "answer": "Da kroz WordPress maintenance & updates: core/plugins/themes uz backupove i provjere."
+          "question": "Obrađujete li WordPress ažuriranja za nas?",
+          "answer": "Da, putem “Održavanja i ažuriranja”: jezgra, dodaci i teme, sa sigurnosnom kopijom i provjerama prije i nakon ažuriranja."
         },
         {
           "id": "sup-7",
-          "question": "Možete li pomoći s hosting problemima?",
-          "answer": "Da — dijagnostika, migracija ili optimizacija hostinga/VPS-a/domena."
+          "question": "Pomažete li s problemima hostinga?",
+          "answer": "Da. Dijagnosticiramo, migriramo ili optimiziramo hosting, VPS i domene sve dok stranica ponovno ne počne stabilno raditi."
         },
         {
           "id": "sup-8",
-          "question": "Što ako je moj site down?",
-          "answer": "Prijavite hitnost. Vraćamo putem backupova, provjera servera i hotfixova uz status updateove."
+          "question": "Što ako moja stranica ne radi?",
+          "answer": "Prijavite to kao hitno. Vraćamo gdje je to moguće putem sigurnosnih kopija, provjera poslužitelja i hitnog popravka, a usput vas obavještavamo o statusu."
         },
         {
           "id": "sup-9",
-          "question": "Postoji li client portal?",
-          "answer": "Da. Prijavljeni klijenti vide dashboard, tickete, projekte i relevantni CRM/fakture."
+          "question": "Postoji li portal za klijente?",
+          "answer": "Da. Prijavljeni klijenti vide nadzornu ploču, ulaznice, projekte i tamo gdje je relevantno CRM ili fakture."
         },
         {
           "id": "sup-10",
-          "question": "Mogu li više kolega otvarati tickete?",
-          "answer": "Da, ovisno o rolama na računu (client/manager/admin)."
+          "question": "Može li više suigrača otvoriti karte?",
+          "answer": "Da, ovisno o ulogama računa (klijent, upravitelj ili administrator)."
         },
         {
           "id": "sup-11",
-          "question": "Što je u Basic/Standard/Premium podršci?",
-          "answer": "Više siteova, brži follow-up i širi opseg (updateovi, malware, brzina, SEO). Pogledajte support stranice za detalje."
+          "question": "Što je uključeno u osnovnu/standardnu/premium podršku?",
+          "answer": "Viši paketi pokrivaju više stranica, brže praćenje i širu pokrivenost (ažuriranja, malware, brzina, SEO). Detalji su na stranicama podrške."
         },
         {
           "id": "sup-12",
           "question": "Pomažete li i s netehničkim pitanjima?",
-          "answer": "Da — usluge, naplata i pitanja računa, s tehničkom dubinom prema paketu."
+          "answer": "Da, o uslugama, naplati i računu. Koliko duboko idemo tehnički ovisi o vašem paketu."
         },
         {
           "id": "sup-13",
           "question": "Mogu li kasnije nadograditi podršku?",
-          "answer": "Da, kako rastu promet, rizik ili potrebe tima."
+          "answer": "Da. Možete se povećati kada promet, rizik ili potrebe tima rastu."
         }
       ]
     },
     {
       "id": "webdesign",
-      "title": "Webdesign",
+      "title": "Web dizajn",
       "items": [
         {
           "id": "web-1",
-          "question": "Radite li samo WordPress stranice?",
-          "answer": "Ne. Osim WordPressa radimo custom siteove u HTML/CSS/JS, PHP i Next.js — odvojeno od WordPress usluga."
+          "question": "Izrađujete li samo WordPress stranice?",
+          "answer": "Ne. Osim WordPressa, radimo prilagođeni web dizajn u HTML/CSS/JS, PHP i Next.js — odvojeno od WordPress usluga."
         },
         {
           "id": "web-2",
-          "question": "Što je Website Support?",
-          "answer": "Dizajn, development, održavanje, sigurnost, performanse, backup/migration i API integracije za custom stackove."
+          "question": "Što uključuje podrška za web stranicu?",
+          "answer": "Podrška web stranice pokriva dizajn, razvoj, održavanje, sigurnost, izvedbu, sigurnosne kopije ili migraciju i API integracije za prilagođene skupove."
         },
         {
           "id": "web-3",
-          "question": "Možete li redizajnirati postojeći site?",
-          "answer": "Da: UX/UI refresh, poboljšanja konverzije i tehnička modernizacija bez potpunog rewrita kad je moguće."
+          "question": "Možete li redizajnirati postojeću stranicu?",
+          "answer": "Da. Radimo UX/UI refresh, poboljšanja konverzije i tehničku modernizaciju, bez bacanja svega ako to nije potrebno."
         },
         {
           "id": "web-4",
           "question": "Radite li s Next.js?",
-          "answer": "Da — odličan za brze, SEO-ready marketing siteove i dashboarde."
+          "answer": "Da. Next.js idealan je za brze marketinške stranice i nadzorne ploče spremne za SEO."
         },
         {
           "id": "web-5",
-          "question": "Gradite li PHP aplikacije?",
-          "answer": "Da: portali, API-ji, modernizacija legacyja i performance/security hardening."
+          "question": "Izrađujete li i PHP aplikacije?",
+          "answer": "Da. Gradimo portale i API-je, moderniziramo nasljeđe i ojačavamo performanse i sigurnost."
         },
         {
           "id": "web-6",
-          "question": "Kako rješavate mobile?",
-          "answer": "Mobile-first dizajn, responsive layouti i testiranje na uobičajenim uređajima/preglednicima."
+          "question": "Kako osiguravate mobilne web stranice?",
+          "answer": "Prvo dizajniramo za mobilne uređaje, gradimo responzivne izglede i testiramo na uobičajenim uređajima i preglednicima kako bi stranica radila posvuda."
         },
         {
           "id": "web-7",
-          "question": "Je li accessibility uključena?",
-          "answer": "Pratimo dobre a11y osnove; stroži WCAG programi mogu se posebno scopeati."
+          "question": "Je li uključena pristupačnost (a11y)?",
+          "answer": "Gradimo s pristupačnim osnovnim praksama. Stroži WCAG programi mogu se uključiti kao dodatni opseg."
         },
         {
           "id": "web-8",
-          "question": "CMS opcije bez WordPressa?",
-          "answer": "Da: headless CMS, custom admin ili statični setupovi ovisno o vašem timu."
+          "question": "Možete li ponuditi CMS opcije bez WordPressa?",
+          "answer": "Da. To može biti bezglavi CMS, prilagođeni administrator ili statična postavka — ovisno o vašem timu i potrebama."
         },
         {
           "id": "web-9",
-          "question": "Koliko traje web design projekt?",
-          "answer": "Landing stranice u tjednima; veći siteovi/aplikacije kroz više sprintova nakon intake planiranja."
+          "question": "Koliko dugo traje projekt web dizajna?",
+          "answer": "Za odredišne ​​stranice obično je potrebno nekoliko tjedana; veće web-lokacije ili aplikacije rade u sprintovima tijekom više tjedana. Planiranje slijedi nakon unosa."
         },
         {
           "id": "web-10",
-          "question": "Uključujete li copy i SEO pri launchu?",
-          "answer": "Da kada je kombinirano s contentom/SEO-om kako bi site startao pretraživ i conversion-ready."
+          "question": "Bavite li se i kopiranjem i SEO-om pri pokretanju?",
+          "answer": "Da, u kombinaciji sa sadržajem i SEO uslugama tako da se web mjesto odmah može pretraživati ​​i fokusirati na pretvorbu."
         },
         {
           "id": "web-11",
-          "question": "Što je s performansama nakon launcha?",
-          "answer": "Optimiziramo Core Web Vitals, caching/CDN i monitoring kroz maintenance pakete."
+          "question": "Što je s performansama nakon lansiranja?",
+          "answer": "Optimiziramo Core Web Vitals, predmemoriju ili CDN i nadzor. Naknadna njega se zatim nastavlja putem paketa održavanja."
         },
         {
           "id": "web-12",
-          "question": "Možete li integrirati API-je (CRM, plaćanja, AI)?",
-          "answer": "Da, uz proper error handling, logging i dokumentaciju."
+          "question": "Možete li povezati API-je (CRM, plaćanja, AI)?",
+          "answer": "Da. Gradimo integracije s čistim rukovanjem pogreškama, bilježenjem i dokumentacijom."
         },
         {
           "id": "web-13",
           "question": "Kako isporučujete kod?",
-          "answer": "Putem repo/deploy pipelineova gdje je moguće, sa staging/production i handoverom."
+          "answer": "Gdje je to moguće, isporučujemo putem repozitorija i cjevovoda za implementaciju, s okruženjima (postavljanje i proizvodnja) i jasnom primopredajom."
         },
         {
           "id": "web-14",
-          "question": "Pomažete li s on-site CRO?",
-          "answer": "Da: UX poboljšanja, forme, CTA-ovi, eksperimenti i brzina stranice."
+          "question": "Pomažete li u optimizaciji konverzije na web mjestu?",
+          "answer": "Da. Provodimo A/B testove, poboljšavamo UX, obrasce, CTA-ove i brzinu stranice kako bi više posjetitelja izvršilo konverziju."
         }
       ]
     },
@@ -661,77 +661,77 @@
         {
           "id": "host-1",
           "question": "Koji hosting nudite?",
-          "answer": "Shared, WordPress i VPS hosting u Basic/Plus/Business razinama, plus domene."
+          "answer": "Nudimo dijeljeni hosting, WordPress hosting i VPS — u osnovnim, plus i poslovnim razinama — plus domene."
         },
         {
           "id": "host-2",
-          "question": "Shared vs WordPress vs VPS?",
-          "answer": "Shared je za manje siteove. WordPress hosting je optimiziran za WP. VPS nudi više resursa/kontrole za veća opterećenja."
+          "question": "Koja je razlika između zajedničkog, WordPressa i VPS-a?",
+          "answer": "Dijeljeno je isplativo za manja mjesta. WordPress hosting je optimiziran za WP. VPS daje više resursa i kontrole za teža opterećenja."
         },
         {
           "id": "host-3",
-          "question": "Pomažete li s registracijom domene?",
-          "answer": "Da — savjetovanje, registracija/transfer i ispravna DNS konfiguracija."
+          "question": "Pomažete li pri registraciji domene?",
+          "answer": "Da. Savjetujemo, registriramo ili prenosimo domenu i pravilno povezujemo DNS."
         },
         {
           "id": "host-4",
-          "question": "Je li SSL uključen?",
-          "answer": "Da, SSL je uključen u relevantnim hosting planovima."
+          "question": "Je li SSL uključen u hosting?",
+          "answer": "Da. SSL je standard u našim relevantnim hosting planovima."
         },
         {
           "id": "host-5",
-          "question": "Možete li migrirati moj site na vaš hosting?",
-          "answer": "Da: backup, migracija, DNS cutover, SSL i smoke testovi uz minimalni downtime."
+          "question": "Možete li premjestiti moju stranicu na svoj hosting?",
+          "answer": "Da. Bavimo se sigurnosnim kopiranjem, migracijom, presjekom DNS-a, SSL-om i dimnim testovima, uz minimalno vrijeme prekida rada."
         },
         {
           "id": "host-6",
-          "question": "Kako rade backupovi?",
-          "answer": "Ovisi o planu: jednostavni ili automatizirani backupovi. Dostupna je dodatna off-site retention."
+          "question": "Kako sigurnosne kopije funkcioniraju na hostingu?",
+          "answer": "To ovisi o planu: jednostavno ili automatizirano sigurnosno kopiranje. Dostupno je dodatno zadržavanje izvan lokacije."
         },
         {
           "id": "host-7",
-          "question": "Što ako promet poraste?",
-          "answer": "Skaliramo na Plus/Business ili VPS i optimiziramo caching/CDN."
+          "question": "Što ako dobijem više prometa?",
+          "answer": "Zatim skaliramo na Plus, Business ili VPS i optimiziramo predmemoriju i CDN kako bi stranica mogla podnijeti rast."
         },
         {
           "id": "host-8",
-          "question": "Je li email uključen uz domene?",
-          "answer": "Ovisi o setupu. Savjetujemo pouzdana mail rješenja i DNS auth (SPF/DKIM/DMARC)."
+          "question": "Nudite li e-poštu s domenama?",
+          "answer": "To ovisi o paketu i postavkama. Savjetujemo pouzdana rješenja za poštu i ispravno postavljamo DNS (SPF, DKIM i DMARC)."
         },
         {
           "id": "host-9",
           "question": "Koliko je siguran vaš hosting?",
-          "answer": "SSL/firewall, updateovi, monitoring i hardening, uz opcionalne dodatne security usluge."
+          "answer": "Koristimo vatrozid, SSL, ažuriranja, nadzor i učvršćivanje. Dodatne sigurnosne usluge mogu dodati više slojeva na vrh."
         },
         {
           "id": "host-10",
-          "question": "Mogu li kasnije prijeći sa shared na VPS?",
-          "answer": "Da — planirana migracija s testiranjem i rollbackom."
+          "question": "Mogu li kasnije prijeći s dijeljenog na VPS?",
+          "answer": "Da. Zajedno planiramo migraciju, uključujući testove i vraćanje, tako da prekidač ostane pod kontrolom."
         },
         {
           "id": "host-11",
           "question": "Podržavate li CDN?",
-          "answer": "Da gdje je relevantno (često uključeno u WP hosting) za bržu globalnu isporuku."
+          "answer": "Da, gdje je relevantno - često je besplatni CDN uključen u WP hosting planove - za bržu globalnu isporuku."
         },
         {
           "id": "host-12",
-          "question": "Koji je vaš pristup uptimeu?",
-          "answer": "Monitoring, brzi incident response i jasna komunikacija za maintenance prozore."
+          "question": "Kakav je vaš pristup neprekidnom radu?",
+          "answer": "Pratimo, brzo reagiramo na incidente i jasno komuniciramo oko razdoblja održavanja kako biste znali što se događa."
         },
         {
           "id": "host-13",
-          "question": "Možete li popraviti DNS probleme?",
-          "answer": "Da: zapisi, propagacija, mail auth i povezivanje domene."
+          "question": "Pomažete li u rješavanju problema s DNS-om?",
+          "answer": "Da. Popravljamo zapise, propagaciju, autentifikaciju pošte i veze domene dok DNS ponovno ne bude ispravan."
         },
         {
           "id": "host-14",
-          "question": "Kako odabrati pravi plan?",
-          "answer": "Prema prometu, stacku (WP vs custom), resursima i rastu. Savjetujemo iskreno."
+          "question": "Kako odabrati pravi plan hostinga?",
+          "answer": "Na temelju prometa, skupa (WordPress ili prilagođeni), resursa i rasta. Iskreno savjetujemo — ne pretjerano prodajemo."
         },
         {
           "id": "host-15",
           "question": "Gdje mogu vidjeti cijene hostinga?",
-          "answer": "Na stranicama hosting usluga pod Usluge → Webhosting i domene."
+          "answer": "Na stranicama usluge hostinga pod Usluge → Webhosting i domene, s mjesečnim ili godišnjim opcijama gdje je to primjenjivo."
         }
       ]
     }

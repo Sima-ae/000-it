@@ -752,6 +752,10 @@
     "actionBook": "Book appointment",
     "actionTicket": "Open live chat / ticket",
     "actionContact": "Contact",
-    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket."
+    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket.",
+    "pickOption": "Pick the best match",
+    "relatedLinks": "Helpful links",
+    "linkFaq": "FAQ",
+    "linkKb": "Knowledge base"
   }
 }

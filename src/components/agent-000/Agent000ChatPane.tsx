@@ -2,7 +2,16 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { Calendar, Mail, Mic, MicOff, Send, Ticket } from "lucide-react";
+import {
+  BookOpen,
+  Calendar,
+  HelpCircle,
+  Mail,
+  Mic,
+  MicOff,
+  Send,
+  Ticket,
+} from "lucide-react";
 import { Agent000Avatar, type Agent000State } from "@/components/agent-000/Agent000Avatar";
 import { useAgentSpeech } from "@/components/agent-000/useAgentSpeech";
 import { Button } from "@/components/ui/button";
@@ -10,7 +19,7 @@ import { Input } from "@/components/ui/input";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { localizedHref } from "@/i18n/pathnames";
 import { cn } from "@/lib/utils";
-import type { AgentAction } from "@/lib/agent-000/ask";
+import type { AgentAction, AgentLink } from "@/lib/agent-000/ask";
 
 export type AgentAskResponse = {
   answer: string;
@@ -19,6 +28,8 @@ export type AgentAskResponse = {
   matchedQuestion: string | null;
   confidence: number;
   actions: AgentAction[];
+  mode?: "answer" | "clarify";
+  links?: AgentLink[];
 };
 
 type ChatTurn = {
@@ -27,6 +38,8 @@ type ChatTurn = {
   text: string;
   faqId?: string | null;
   actions?: AgentAction[];
+  mode?: "answer" | "clarify";
+  links?: AgentLink[];
 };
 
 type Props = {
@@ -52,6 +65,7 @@ export function Agent000ChatPane({
   const [turns, setTurns] = useState<ChatTurn[]>([]);
   const bottomRef = useRef<HTMLDivElement>(null);
   const booted = useRef(false);
+  const lastClarifyLinks = useRef<AgentLink[]>([]);
 
   const state: Agent000State = busy ? "thinking" : speaking ? "speaking" : "idle";
 
@@ -60,7 +74,7 @@ export function Agent000ChatPane({
   }, [turns, busy]);
 
   const ask = useCallback(
-    async (question: string) => {
+    async (question: string, opts?: { faqId?: string }) => {
       const q = question.trim();
       if (!q || busy) return;
       setBusy(true);
@@ -76,16 +90,27 @@ export function Agent000ChatPane({
         const res = await fetch("/api/agent-000/ask", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ locale, question: q, persist: false }),
+          body: JSON.stringify({
+            locale,
+            question: q,
+            persist: false,
+            faqId: opts?.faqId,
+          }),
         });
         if (!res.ok) throw new Error("ask failed");
         const data = (await res.json()) as AgentAskResponse;
+        const links = data.links || [];
+        if (data.mode === "clarify") lastClarifyLinks.current = links;
+        else lastClarifyLinks.current = [];
+
         const agentTurn: ChatTurn = {
           id: `a-${Date.now()}`,
           role: "agent",
           text: data.answer,
           faqId: data.faqId,
           actions: data.actions,
+          mode: data.mode || "answer",
+          links,
         };
         setTurns((prev) => [...prev, agentTurn]);
         onMatchFaq?.(data.faqId, data.categoryId);
@@ -112,6 +137,118 @@ export function Agent000ChatPane({
       void ask(initialQuestion.trim());
     }
   }, [ask, initialQuestion]);
+
+  function resolveClarifyPick(raw: string): AgentLink | null {
+    const links = lastClarifyLinks.current;
+    if (!links.length) return null;
+    const trimmed = raw.trim();
+    const asNum = Number.parseInt(trimmed, 10);
+    if (Number.isFinite(asNum) && asNum >= 1 && asNum <= links.length) {
+      return links[asNum - 1] ?? null;
+    }
+    const lower = trimmed.toLowerCase();
+    return (
+      links.find(
+        (l) =>
+          l.title.toLowerCase() === lower ||
+          l.askQuestion?.toLowerCase() === lower,
+      ) ?? null
+    );
+  }
+
+  function submitDraft() {
+    const raw = draft.trim();
+    if (!raw || busy) return;
+    const pick = resolveClarifyPick(raw);
+    if (pick?.kind === "faq" && pick.faqId) {
+      void ask(pick.askQuestion || pick.title, { faqId: pick.faqId });
+      return;
+    }
+    if (pick?.kind === "kennisbank") {
+      // Surface the article choice as a focused re-ask on the title.
+      void ask(pick.title);
+      return;
+    }
+    void ask(raw);
+  }
+
+  function pickLink(link: AgentLink) {
+    if (busy) return;
+    if (link.kind === "faq" && link.faqId) {
+      void ask(link.askQuestion || link.title, { faqId: link.faqId });
+      return;
+    }
+    void ask(link.title);
+  }
+
+  function renderLinks(links?: AgentLink[], mode?: "answer" | "clarify") {
+    if (!links?.length) return null;
+    return (
+      <div className="mt-2 space-y-1.5">
+        {mode === "clarify" ? (
+          <p className="text-[10px] font-medium uppercase tracking-wide text-cyan-300/80">
+            {t("pickOption")}
+          </p>
+        ) : (
+          <p className="text-[10px] font-medium uppercase tracking-wide text-cyan-300/80">
+            {t("relatedLinks")}
+          </p>
+        )}
+        <div className="flex flex-col gap-1.5">
+          {links.map((link, index) => (
+            <div
+              key={`${link.kind}-${link.href}-${index}`}
+              className="flex flex-wrap items-center gap-1.5"
+            >
+              {mode === "clarify" ? (
+                <Button
+                  type="button"
+                  size="sm"
+                  variant="secondary"
+                  className="h-8 max-w-full rounded-lg text-left text-xs"
+                  onClick={() => pickLink(link)}
+                >
+                  {link.kind === "kennisbank" ? (
+                    <BookOpen className="mr-1 h-3.5 w-3.5 shrink-0" />
+                  ) : (
+                    <HelpCircle className="mr-1 h-3.5 w-3.5 shrink-0" />
+                  )}
+                  <span className="truncate">
+                    {index + 1}. {link.title}
+                  </span>
+                </Button>
+              ) : null}
+              <Button
+                asChild
+                size="sm"
+                variant="outline"
+                className="h-8 max-w-full rounded-lg border-white/20 bg-white/5 text-left text-xs text-slate-100 hover:bg-white/10"
+              >
+                <SoftLink
+                  href={link.href}
+                  onClick={() => {
+                    if (link.kind === "faq" && link.faqId) {
+                      onMatchFaq?.(link.faqId, link.categoryId || null);
+                    }
+                  }}
+                >
+                  {link.kind === "kennisbank" ? (
+                    <BookOpen className="mr-1 h-3.5 w-3.5 shrink-0" />
+                  ) : (
+                    <HelpCircle className="mr-1 h-3.5 w-3.5 shrink-0" />
+                  )}
+                  <span className="truncate">
+                    {link.kind === "kennisbank" ? t("linkKb") : t("linkFaq")}:{" "}
+                    {link.title}
+                  </span>
+                </SoftLink>
+              </Button>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
 
   function renderActions(actions?: AgentAction[]) {
     if (!actions?.length) return null;
@@ -152,7 +289,7 @@ export function Agent000ChatPane({
   return (
     <div
       className={cn(
-        "overflow-hidden rounded-2xl border border-border/70 bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950 text-slate-50 shadow-lg",
+        "overflow-hidden rounded-2xl border border-border/70 bg-linear-to-br from-slate-950 via-slate-900 to-cyan-950 text-slate-50 shadow-lg",
         className,
       )}
     >
@@ -198,6 +335,7 @@ export function Agent000ChatPane({
                     </p>
                   ) : null}
                   <p className="whitespace-pre-wrap">{turn.text}</p>
+                  {turn.role === "agent" ? renderLinks(turn.links, turn.mode) : null}
                   {turn.role === "agent" ? renderActions(turn.actions) : null}
                 </div>
               </div>
@@ -212,7 +350,7 @@ export function Agent000ChatPane({
             className="flex items-center gap-2 border-t border-white/10 p-2.5"
             onSubmit={(e) => {
               e.preventDefault();
-              void ask(draft);
+              submitDraft();
             }}
           >
             <Input

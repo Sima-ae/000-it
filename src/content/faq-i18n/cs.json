@@ -1,78 +1,78 @@
 {
   "title": "Často kladené otázky",
-  "subtitle": "Podrobné odpovědi o TripleZero iT — od AI a SEO až po design, marketing, podporu a hosting.",
+  "subtitle": "Podrobné otázky a odpovědi – od AI, AEO, GEO a SEO po design, domény, hosting, marketing, sociální média, podporu a další.",
   "ctaTitle": "Stále potřebujete pomoc?",
-  "ctaText": "Nenašli jste odpověď? Kontaktujte náš tým a ozveme se rychle.",
+  "ctaText": "Nemůžete najít svou otázku? Kontaktujte nás – co nejdříve se vám ozveme.",
   "ctaButton": "Kontaktujte nás",
   "categories": [
     {
       "id": "general",
-      "title": "Obecné",
+      "title": "Generál",
       "items": [
         {
           "id": "gen-1",
-          "question": "Co dělá TripleZero iT?",
-          "answer": "Kombinujeme webdesign, WordPress podporu, digitální marketing, viditelnost ve vyhledávání (AEO, GEO/lokální a SEO), design a hosting — pomáháme značkám být vidět, konvertovat a růst."
+          "question": "Co přesně TripleZero iT dělá?",
+          "answer": "TripleZero iT kombinuje webdesign, podporu WordPress, digitální marketing, viditelnost ve vyhledávání (AEO, GEO/local a SEO), design a hosting. Pomáháme značkám najít je rychleji, vytvářet lepší webové stránky a růst měřitelným způsobem."
         },
         {
           "id": "gen-2",
-          "question": "Jak začít?",
-          "answer": "Domluvte si call nebo nám napište. Provedeme krátký intake, projdeme cíle a stack a následně navrhneme jasný plán s harmonogramem a KPI."
+          "question": "Jak mohu začít s TripleZero iT?",
+          "answer": "Kontaktujte nás nebo si zarezervujte termín. Provedeme krátký příjem, zkontrolujeme cíle a sestavíme, poté připravíme konkrétní návrh s plánováním a KPI."
         },
         {
           "id": "gen-3",
-          "question": "S jakými typy firem spolupracujete?",
-          "answer": "SMB, scale-upy, ecommerce, agentury i mezinárodní značky. Pracujeme s existujícími týmy i jako full-service partner."
+          "question": "S jakými typy podniků spolupracujete?",
+          "answer": "Spolupracujeme s SMB, scale-upy, elektronickým obchodem, agenturami a mezinárodními značkami. To může být vedle stávajícího týmu nebo jako full-service partner."
         },
         {
           "id": "gen-4",
-          "question": "Pracujete jen v Nizozemsku?",
-          "answer": "Ne. Obsluhujeme klienty v Beneluxu i mezinárodně v nizozemštině a angličtině."
+          "question": "Pracujete pouze v Nizozemsku?",
+          "answer": "Ne. Poskytujeme služby klientům v Beneluxu a mezinárodně, v holandském a anglickém jazyce."
         },
         {
           "id": "gen-5",
-          "question": "Jak vypadá typická spolupráce?",
-          "answer": "Intake → audit/scan → plán → realizace ve sprintech → měření → optimalizace, s jasnými milníky."
+          "question": "Jak vypadá typické zasnoubení?",
+          "answer": "Typická zakázka probíhá takto: příjem → audit nebo skenování → plán → realizace sprintu → měření → optimalizace. Získáte jasné milníky a zprávy, takže je vždy jasné, na čem jsme."
         },
         {
           "id": "gen-6",
           "question": "Mohu kombinovat více služeb?",
-          "answer": "Ano. Časté kombinace: webdesign + SEO + reklamy nebo WordPress maintenance + hosting + security."
+          "answer": "Ano. Mnoho klientů kombinuje webdesign + SEO + reklamy, nebo údržbu WordPressu + hosting + zabezpečení. Mix přizpůsobíme vašim cílům a rozpočtu."
         },
         {
           "id": "gen-7",
-          "question": "Jak rychle můžete začít?",
-          "answer": "Často během několika pracovních dnů po schválení. Akutní problémy (malware, výpadek) mají prioritu."
+          "question": "Jak brzy můžete začít?",
+          "answer": "Záleží na naší kapacitě, ale po schválení často začínáme během několika pracovních dnů. Naléhavé práce – jako jsou chyby, malware nebo prostoje – jsou upřednostňovány, abychom je mohli vychytat co nejrychleji."
         },
         {
           "id": "gen-8",
-          "question": "Pracujete na dálku, nebo on-site?",
-          "answer": "Primárně remote se strukturovanou komunikací. On-site je možné na vyžádání."
+          "question": "Pracujete na dálku nebo na místě?",
+          "answer": "Pracujeme primárně na dálku, s jasnou komunikací přes email, chat a hovory. Na místě je k dispozici na vyžádání, když to projekt potřebuje."
         },
         {
           "id": "gen-9",
-          "question": "Jak komunikujete průběh práce?",
-          "answer": "Pravidelné aktualizace, tickets/dashboard dle potřeby a sprintové nebo měsíční reporty."
+          "question": "Jak tým komunikuje pokrok?",
+          "answer": "Neustále vás informujeme prostřednictvím pravidelných aktualizací, lístků nebo dashboardu, kde je to relevantní, plus sprint nebo měsíční zprávy s akcemi a výsledky."
         },
         {
           "id": "gen-10",
-          "question": "Co od nás potřebujete pro start?",
-          "answer": "Přístupy (pokud jsou potřeba), cíle, brandové podklady, analytics účty a přihlašovací údaje k nástrojům."
+          "question": "Co od nás pro začátek potřebujete?",
+          "answer": "Abychom mohli začít, potřebujeme přístup k webu a hostingu (pokud je vyžadován), k vašim cílům, pokynům pro značku, analytickým účtům a všem existujícím nástrojům. Pokud něco chybí, pomůžeme to nejprve umístit."
         },
         {
           "id": "gen-11",
-          "question": "Hodíte se pro startupy?",
-          "answer": "Ano — od lean landing pages a AI scanů až po kompletní growth systémy, jak budete škálovat."
+          "question": "Jsou vaše služby vhodné pro startupy?",
+          "answer": "Ano. Škálujeme od štíhlých vstupních stránek a skenování AI až po nastavení plného růstu, takže přístup roste s vámi."
         },
         {
           "id": "gen-12",
-          "question": "Kdo vlastní práci a účty?",
-          "answer": "Vy vlastníte domény, obsah, repozitáře i reklamní účty. Při předání dodáme soubory a dokumentaci."
+          "question": "Kdo vlastní dílo a účty?",
+          "answer": "Vaše doména, obsah, úložiště kódu a reklamní účty zůstanou vaše. Při předání doručíme soubory a dokumentaci, takže vše zůstane pod vaší kontrolou."
         },
         {
           "id": "gen-13",
-          "question": "Můžete spolupracovat s našimi současnými dodavateli?",
-          "answer": "Ano. Pracujeme vedle vašich vývojářů/marketérů nebo převezmeme údržbu čistým způsobem."
+          "question": "Můžete převzít stávající dodavatele nebo s nimi spolupracovat?",
+          "answer": "Ano. Plynule spolupracujeme s vývojáři, marketéry či agenturami, případně přebíráme údržbu a optimalizaci, aniž bychom zbytečně narušovali stávající práci."
         }
       ]
     },
@@ -82,215 +82,215 @@
       "items": [
         {
           "id": "ai-1",
-          "question": "Co je váš AI scan?",
-          "answer": "AI readiness scan, který hodnotí, jak dobře váš web funguje pro klasické vyhledávání, AI odpovědi a lokální/geografickou viditelnost (AEO, GEO, SEO a technické základy)."
+          "question": "Co je skenování AI na TripleZero iT?",
+          "answer": "Sken připravenosti AI posuzuje, jak dobře mohou vaše stránky najít klasické vyhledávače, odpovědi AI a výsledky místního nebo geografického vyhledávání (AEO, GEO, SEO a technické základy)."
         },
         {
           "id": "ai-2",
-          "question": "Co AI scan měří?",
-          "answer": "AEO signály, GEO/lokální viditelnost, SEO základy, strukturu obsahu, indikátory výkonu a AI readiness — s prioritizovanými opravami."
+          "question": "Co přesně měří skenování AI?",
+          "answer": "Sken měří signály AEO, GEO/místní viditelnost, základy SEO, strukturu obsahu, ukazatele výkonu a připravenost AI. Získáváte skóre a konkrétní body zlepšení."
         },
         {
           "id": "ai-3",
-          "question": "Jak často bychom měli dělat AI scan?",
-          "answer": "Po větších změnách webu nebo kampaních; pro aktivní značky doporučujeme pravidelné scany (např. čtvrtletně)."
+          "question": "Jak často bych měl spouštět skenování AI?",
+          "answer": "Minimálně po velkých změnách webu nebo kampaních. U aktivních značek doporučujeme pravidelné skenování, například každé čtvrtletí, abyste zůstali viditelní ve výsledcích vyhledávání a umělé inteligence."
         },
         {
           "id": "ai-4",
-          "question": "Je AI jen o psaní obsahu?",
-          "answer": "Ne. Zahrnuje i technickou dohledatelnost, strukturovaná data, interní prolinkování a to, jak AI systémy shrnují vaši značku."
+          "question": "Pomáhá AI pouze s obsahem?",
+          "answer": "Ne. Umělá inteligence také ovlivňuje technickou zjistitelnost, strukturovaná data, interní propojení, bloky nejčastějších dotazů a způsob, jakým jsou informace o značce shrnuty v odpovědích AI."
         },
         {
           "id": "ai-5",
-          "question": "Můžete integrovat AI do našich workflow?",
-          "answer": "Ano: podpora tvorby obsahu, automatizace, chat/ticket flows a custom AI API integrace."
+          "question": "Můžete integrovat AI do našeho pracovního postupu?",
+          "answer": "Ano. Umělou inteligenci můžeme použít pro pomoc s obsahem, automatizaci, toky chatbotů nebo vstupenek, datová připojení a vlastní API kolem nástrojů AI."
         },
         {
           "id": "ai-6",
           "question": "Nahrazuje AI vaši strategickou práci?",
-          "answer": "Ne. AI zrychluje analýzu a produkci; strategie, brand voice a rozhodnutí o konverzi zůstávají human-led."
+          "answer": "Ne. Umělá inteligence urychluje analýzu a produkci, ale strategie, hlas značky a konverzní rozhodnutí zůstávají lidská a měřitelná."
         },
         {
           "id": "ai-7",
-          "question": "Je AI-generovaný obsah bezpečný pro SEO?",
-          "answer": "Pouze s lidskou kontrolou, unikátním vhledem a E-E-A-T. Vyhýbáme se tenkým, generickým stránkám, které škodí rankingům."
+          "question": "Je obsah AI bezpečný pro SEO?",
+          "answer": "Pouze s lidskou kontrolou, jedinečnými poznatky a E-E-A-T. Vyhýbáme se tenkému, obecnému textu, který poškozuje hodnocení."
         },
         {
           "id": "ai-8",
-          "question": "Co je AI readiness?",
-          "answer": "Jak dobře je váš web, obsah a data strukturované tak, aby AI systémy dokázaly vaši značku správně citovat, doporučit a vysvětlit."
+          "question": "Jaká je připravenost AI pro mou značku?",
+          "answer": "Je to míra, do jaké jsou vaše stránky, obsah a data nastaveny tak, aby systémy umělé inteligence mohly správně citovat, doporučovat a vysvětlovat vaši značku."
         },
         {
           "id": "ai-9",
-          "question": "Používáte v dashboardu AI agenty?",
-          "answer": "Ano. Klienti vidí agenty pro SEO, content, social a ads se stavem a úkoly."
+          "question": "Můžete používat agenty AI na řídicím panelu?",
+          "answer": "Ano. Na klientském portálu vidíte agenty AI pro SEO, obsah, sociální sítě a reklamy – včetně stavu a úkolů."
         },
         {
           "id": "ai-10",
-          "question": "Jaké AI nástroje používáte?",
-          "answer": "Volíme nástroje podle use case, s governance: zdroje, fact-checking, pravidla značky a privacy."
+          "question": "Pracujete s nástroji ChatGPT, Claude nebo jinými nástroji?",
+          "answer": "Nástroje vybíráme podle případu použití. Na správě záleží: zdroje, ověřování faktů, pokyny pro značku a soukromí, takže používání umělé inteligence zůstává spolehlivé."
         },
         {
           "id": "ai-11",
-          "question": "Může AI pomoci se support tickets?",
-          "answer": "Ano pro triage a rychlejší odpovědi, s eskalací na člověka u komplexních nebo citlivých případů."
+          "question": "Pomáhá AI s lístky na podporu?",
+          "answer": "Ano, pro třídění a rychlejší odpovědi. Složité nebo citlivé případy jsou vždy eskalovány lidskému spoluhráči."
         },
         {
           "id": "ai-12",
-          "question": "Jak se AI práce naceňuje?",
-          "answer": "Od entry AI scanu po měsíční AI + marketing retainery. Po intake dostanete jasný návrh."
+          "question": "Kolik stojí zapojení AI?",
+          "answer": "Sahá od bezplatného nebo základního skenování AI až po měsíční zálohy AI a marketingu. Po přijetí obdržíte jasný návrh."
         },
         {
           "id": "ai-13",
-          "question": "Jak měřit AI ROI?",
-          "answer": "KPI jako traffic, leads, ušetřený čas, objem obsahu, ticket resolution a konverze — definované dopředu."
+          "question": "Jak změřím ROI iniciativ AI?",
+          "answer": "Prostřednictvím KPI, jako je návštěvnost, potenciální zákazníci, ušetřený čas, výstup obsahu, rozlišení lístků a konverze. Definujeme je předem v plánu, takže výsledky zůstanou viditelné."
         }
       ]
     },
     {
       "id": "aeo-geo-seo",
-      "title": "AEO, GEO & SEO",
+      "title": "AEO, GEO a SEO",
       "items": [
         {
           "id": "seo-1",
           "question": "Jaký je rozdíl mezi AEO, GEO a SEO?",
-          "answer": "AEO (Answer Engine Optimization) optimalizuje pro AI odpovědi. GEO (Geographic Search Engine Optimization) posiluje lokální a regionální viditelnost v Maps, local packech a vyhledávání podle lokace. SEO cílí na klasické vyhledávače."
+          "answer": "AEO (Answer Engine Optimization) se zaměřuje na odpovědi AI. GEO (Geographic Search Engine Optimization) posiluje místní a regionální viditelnost v Mapách, místních balíčcích a vyhledávání podle polohy. SEO optimalizuje pro klasické vyhledávače."
         },
         {
           "id": "seo-2",
-          "question": "Proč jsou AEO/GEO důležité právě teď?",
-          "answer": "Stále více uživatelů získává odpovědi přes AI a vyhledává lokálně (“near me”). Bez AEO přicházíte o AI citations; bez GEO o lokální leads — i když je klasické SEO solidní."
+          "question": "Proč nyní záleží na AEO/GEO?",
+          "answer": "Více hledajících získá odpovědi prostřednictvím AI a také vyhledávají lokálně („v mém okolí“). Bez AEO vám chybí citace AI; bez GEO vám chybí místní potenciální zákazníci – i když je klasické SEO solidní."
         },
         {
           "id": "seo-3",
-          "question": "Jak začínáte SEO spolupráci?",
-          "answer": "Technický audit, keyword/intent research, analýza content gap a prioritizovaný roadmap navázaný na business KPI."
+          "question": "Jak zahájíte zapojení do SEO?",
+          "answer": "Začneme technickým auditem, průzkumem klíčových slov a záměrů, analýzou nedostatků obsahu a plánem priorit spojených s KPI vašeho podnikání."
         },
         {
           "id": "seo-4",
-          "question": "Za jak dlouho se projeví SEO výsledky?",
-          "answer": "Technická zlepšení mohou být rychlá. Organický růst se obvykle kumuluje v horizontu týdnů až měsíců podle konkurence."
+          "question": "Za jak dlouho budou výsledky SEO viditelné?",
+          "answer": "Technické výhry se mohou projevit rychle. Organický růst obvykle trvá týdny až měsíce v závislosti na konkurenci a na tom, jak důsledně provádíme."
         },
         {
           "id": "seo-5",
-          "question": "Děláte local SEO?",
-          "answer": "Ano: Google Business Profile, lokální landing pages, NAP konzistence, recenze a lokální content clustery."
+          "question": "Děláte také lokální SEO?",
+          "answer": "Ano. Pracujeme na firemním profilu Google, místních vstupních stránkách, konzistenci NAP, recenzích a seskupení místního obsahu, abyste byli ve svém regionu lépe k nalezení."
         },
         {
           "id": "seo-6",
-          "question": "Co pro vás znamená technical SEO?",
-          "answer": "Crawlability, indexace, Core Web Vitals, strukturovaná data, sitemaps/robots, canonicals, interní prolinkování a úklid chyb."
+          "question": "Co je pro vás technické SEO?",
+          "answer": "Technické SEO zahrnuje procházení, indexaci, Core Web Vitals, strukturovaná data, mapu webu a roboty, kanonické údaje, interní propojení a odstraňování chyb – vše, co vyhledávače potřebují, aby webu dobře porozuměly."
         },
         {
           "id": "seo-7",
-          "question": "Tvoříte SEO obsah?",
-          "answer": "Ano: briefs, outlines, blogy, landing pages a FAQs podle intentu a strukturované pro AI viditelnost."
+          "question": "Pomáháte s obsahem pro SEO?",
+          "answer": "Ano. Vytváříme briefy, osnovy, blogy, vstupní stránky a často kladené otázky, které odpovídají záměru vyhledávání a jsou strukturovány způsobem přátelským k umělé inteligenci."
         },
         {
           "id": "seo-8",
-          "question": "Co je E-E-A-T?",
-          "answer": "Experience, Expertise, Authoritativeness, Trust — klíčové pro rankingy i důvěryhodnost v AI shrnutích."
+          "question": "Co je to E-E-A-T a proč na tom záleží?",
+          "answer": "E-E-A-T znamená zkušenost, odbornost, autoritativnost a důvěru. Silný E-E-A-T pomáhá hodnocení a důvěryhodnosti vaší značky v souhrnech AI."
         },
         {
           "id": "seo-9",
-          "question": "Děláte link building?",
-          "answer": "Ano, eticky a relevantně: digital PR, partnerství a content assets — nikdy spam schémata."
+          "question": "Děláte linkbuilding?",
+          "answer": "Ano, eticky a relevantně: digitální PR, partnerství a obsahová aktiva. Nepoužíváme schémata spamových odkazů."
         },
         {
           "id": "seo-10",
-          "question": "Umíte napravit SEO škody?",
-          "answer": "Ano: algorithm recovery, toxic links, problémy s indexací a opravy content cannibalization."
+          "question": "Můžete opravit stávající poškození SEO?",
+          "answer": "Ano. Opravujeme poškození po aktualizacích, toxické odkazy, problémy s indexací nebo kanibalizací obsahu a poté nastavíme cestu čistého růstu."
         },
         {
           "id": "seo-11",
-          "question": "Jak reportujete SEO pokrok?",
-          "answer": "Měsíčně nebo po sprintech: rankingy, traffic, konverze, technické issues a další kroky."
+          "question": "Jak hlásíte pokrok v SEO?",
+          "answer": "Měsíčně nebo za sprint podáváme zprávy o hodnocení, návštěvnosti, konverzích, technických problémech a dalších akcích, takže je jasné, co jsme udělali a co bude následovat."
         },
         {
           "id": "seo-12",
-          "question": "Funguje SEO pro ecommerce?",
-          "answer": "Ano: produktové/kategoriální SEO, faceted navigation, recenze, strukturovaná data a content huby s buying intent."
+          "question": "Funguje SEO pro elektronický obchod?",
+          "answer": "Absolutně. Optimalizujeme SEO pro produkty a kategorie, fasetovou navigaci, recenze, strukturovaná data a obsahová centra kolem nákupního záměru."
         },
         {
           "id": "seo-13",
-          "question": "Je SEO jednorázové, nebo průběžné?",
-          "answer": "Nejlepší výsledky přináší průběžná optimalizace. Jednorázové audity pomohou, ale konkurence se stále posouvá."
+          "question": "Je SEO jednorázový projekt nebo probíhající?",
+          "answer": "Nejlepší výsledky pocházejí z průběžné optimalizace. Jednorázové audity pomáhají, ale konkurence nestojí na místě — proto neustále měříme a upravujeme."
         },
         {
           "id": "seo-14",
-          "question": "Podporujete international SEO?",
-          "answer": "Ano: hreflang, market research podle locale, lokalizace a technické multi-locale setupy."
+          "question": "Pomáháte s mezinárodním SEO?",
+          "answer": "Ano. Postaráme se o hreflang, průzkum trhu podle země nebo jazyka, lokalizaci obsahu a technická nastavení na více místech."
         }
       ]
     },
     {
       "id": "advertising",
-      "title": "Reklama",
+      "title": "Inzerce",
       "items": [
         {
           "id": "ads-1",
-          "question": "Na jakých kanálech spouštíte reklamy?",
-          "answer": "Google Ads, Meta, LinkedIn a podle potřeby YouTube/retargeting — dle funnelu a rozpočtu."
+          "question": "Které reklamní kanály podporujete?",
+          "answer": "Podporujeme Google Ads, Meta (Facebook/Instagram), LinkedIn a případně YouTube nebo retargeting – v souladu s trychtýřem a rozpočtem."
         },
         {
           "id": "ads-2",
-          "question": "Jak nastavujete reklamní rozpočty?",
-          "answer": "Podle cílů (leads/prodeje), target CAC, cen v aukci a testovací fáze. Začneme úsporně a škálujeme vítěze."
+          "question": "Jak určíte správný rozpočet na reklamu?",
+          "answer": "Rozpočet nastavujeme na základě cílů (návodů nebo prodejů), cílů CAC, tržních cen a testovací fáze. Začneme hubnout a škálovat, co funguje."
         },
         {
           "id": "ads-3",
-          "question": "Jaký je váš přístup ke Google Ads?",
-          "answer": "Struktura účtu, intent mapping, negatives, landing-page fit, conversion tracking a týdenní optimalizace."
+          "question": "Jaký je váš přístup k Google Ads?",
+          "answer": "Nastavíme jasnou strukturu účtu, zmapujeme záměr vyhledávání, přidáme vylučující klíčová slova, zkontrolujeme vhodnost vstupní stránky, nastavíme sledování konverzí a týdně optimalizujeme."
         },
         {
           "id": "ads-4",
-          "question": "Umíte dělat Meta Ads pro ecommerce?",
-          "answer": "Ano: katalogy/retargeting, creatives, audiences a creative testing pro zlepšení ROAS."
+          "question": "Můžete spustit Meta Ads pro elektronický obchod?",
+          "answer": "Ano. Provozujeme katalogové a retargetingové kampaně, testujeme kreativy a publika a optimalizujeme s cílem zlepšit ROAS."
         },
         {
           "id": "ads-5",
-          "question": "Jak měříte úspěch reklam?",
-          "answer": "Konverze, CPA/CAC, ROAS, kvalita leadů a pipeline — ne vanity clicks."
+          "question": "Jak měříte úspěšnost reklamy?",
+          "answer": "Měříme konverze, CPA/CAC, ROAS, kvalitu potenciálních zákazníků a kanál – ne pouze kliknutí. Tímto způsobem optimalizujeme výsledky místo objemu."
         },
         {
           "id": "ads-6",
-          "question": "Co když je tracking rozbitý?",
-          "answer": "Opravíme GTM/GA4/pixels, consent nastavení dle potřeby a posílíme měření."
+          "question": "Co když je sledování špatné?",
+          "answer": "Poté opravíme značkování (GTM, GA4 a pixely), režim souhlasu tam, kde je to potřeba, a možnosti na straně serveru pro spolehlivější data."
         },
         {
           "id": "ads-7",
-          "question": "Děláte B2B LinkedIn Ads?",
-          "answer": "Ano, s přesným targetingem, lead forms nebo landing pages a messagingem pro decision-makery."
+          "question": "Provozujete také B2B LinkedIn Ads?",
+          "answer": "Ano. Používáme ostré cílení, lead-gen formy nebo vstupní stránky a obsah, který oslovuje osoby s rozhodovací pravomocí."
         },
         {
           "id": "ads-8",
-          "question": "Jak rychle se projeví výsledky reklam?",
-          "answer": "Traffic může být okamžitý. Stabilní CPA/ROAS obvykle potřebuje 2–6 týdnů učení a iterací."
+          "question": "Jak rychle uvidím výsledky z reklam?",
+          "answer": "Provoz může přijet okamžitě. Stabilní CPA nebo ROAS obvykle potřebuje 2 až 6 týdnů učení a kreativní iterace."
         },
         {
           "id": "ads-9",
-          "question": "Vytváříte reklamní creatives?",
-          "answer": "Ano: copy, visuals a testovací varianty — design/media creation dle potřeby."
+          "question": "Vytváříte také reklamní kreativy?",
+          "answer": "Ano. Vytváříme kopie, vizuály a testovací varianty. Lze zahrnout design a tvorbu médií, takže kampaně nečekají na kreativy."
         },
         {
           "id": "ads-10",
-          "question": "Mohou se reklamy a SEO podporovat navzájem?",
-          "answer": "Ano. Search insights pomáhají SEO; silné organické stránky zlepšují Quality Score a snižují CPA."
+          "question": "Mohou se reklamy a SEO vzájemně posilovat?",
+          "answer": "Absolutně. Vyhledávací data z reklamních zdrojů SEO; silné organické stránky snižují CPA a zvyšují skóre kvality."
         },
         {
           "id": "ads-11",
-          "question": "Můžete převzít stávající reklamní účty?",
-          "answer": "Ano. Provedeme audit, upravíme strukturu a optimalizujeme bez zbytečných rebuildů."
+          "question": "Spravujete stávající reklamní účty?",
+          "answer": "Ano. Provádíme audit, restrukturalizaci a optimalizaci, aniž bychom zbytečně začínali znovu."
         },
         {
           "id": "ads-12",
-          "question": "Jak zabráníte zbytečně utracenému rozpočtu?",
-          "answer": "Negatives, exclusions, caps, geo controls, frequency limits a rychlé kill switche."
+          "question": "Jak zabráníte plýtvání rozpočtem na reklamu?",
+          "answer": "Předcházíme plýtvání vylučujícími klíčovými slovy, vyloučením publika, rozpočtovými limity, geofencingem, kontrolou frekvence a rychlým pozastavením nedostatečných výkonů."
         },
         {
           "id": "ads-13",
-          "question": "Má remarketing stále smysl?",
-          "answer": "Ano, pokud je privacy-compliant a s dobrými nabídkami — často nejefektivnější vrstva."
+          "question": "Je remarketing stále relevantní?",
+          "answer": "Ano, pokud je v souladu s ochranou osobních údajů a je spárován se silnými kreativami a nabídkami. Často zůstává nejúčinnější vrstvou v trychtýři."
         }
       ]
     },
@@ -300,68 +300,68 @@
       "items": [
         {
           "id": "des-1",
-          "question": "Jaké design služby nabízíte?",
-          "answer": "Loga, brand identity, vizitky, hlavičkové papíry, letáky, plakáty, samolepky, magazíny/brožury a digitální visuals."
+          "question": "Jaké designové služby nabízíte?",
+          "answer": "Nabízíme loga, identitu značky, vizitky, hlavičkové papíry, letáky, plakáty, samolepky, časopisy nebo brožury a digitální vizuály."
         },
         {
           "id": "des-2",
-          "question": "Jaké nástroje používáte?",
-          "answer": "Adobe Photoshop, Illustrator a InDesign pro print-ready, profesionální výstupy."
+          "question": "V jakých nástrojích pracujete?",
+          "answer": "Pracujeme v aplikacích Adobe Photoshop, Illustrator a InDesign, takže soubory jsou připraveny k tisku a profesionálně zaměnitelné."
         },
         {
           "id": "des-3",
-          "question": "Dodáváte tisková data?",
-          "answer": "Ano: CMYK, bleed, crop marks a správné exporty do PDF, plus varianty pro obrazovku."
+          "question": "Dodáváte soubory připravené k tisku?",
+          "answer": "Ano. Dodáváme CMYK, spadávky, ořezové značky a správný export do PDF/X tam, kde je potřeba, plus varianty obrazovek pro digitální použití."
         },
         {
           "id": "des-4",
-          "question": "Jak probíhá logo projekt?",
-          "answer": "Brief → návrhy → kola zpětné vazby → finální vektory (SVG/PDF/AI) a základní usage guidelines."
+          "question": "Jak funguje projekt loga?",
+          "answer": "Projekt loga probíhá od instruktáže ke konceptům, poté kol zpětné vazby a končí finálními vektorovými soubory (SVG/PDF/AI) a základními pokyny."
         },
         {
           "id": "des-5",
-          "question": "Umíte osvěžit existující značku?",
-          "answer": "Ano — aktualizujeme logo, barvy i typografii a zachováme rozpoznatelnost."
+          "question": "Můžete aktualizovat naši stávající značku?",
+          "answer": "Ano. Obnovujeme logo, barvu, typografii a aplikace bez porušení rozpoznání."
         },
         {
           "id": "des-6",
-          "question": "Vytváříte šablony pro sociální sítě?",
-          "answer": "Ano, aby váš tým mohl publikovat konzistentně a rychle."
+          "question": "Děláte také sociální šablony?",
+          "answer": "Ano. Vytváříme konzistentní šablony pro příspěvky, příběhy a reklamy, aby váš tým mohl publikovat rychle a rozpoznatelně."
         },
         {
           "id": "des-7",
-          "question": "Digitál vs. tisk?",
-          "answer": "Tisk vyžaduje barevný prostor, rozlišení a okraje; digitál vyžaduje ostrost na obrazovce a rychlost. Dodáme obojí správně."
+          "question": "Jaký je rozdíl mezi digitálním a tištěným designem?",
+          "answer": "Tisk vyžaduje barevný prostor, rozlišení a okraje; digitální potřebuje ostrost na obrazovkách a rychlé načítání. Obojí dodáváme správně, na míru kanálu."
         },
         {
           "id": "des-8",
-          "question": "Umíte sazbu magazínů nebo brožur?",
-          "answer": "Ano, vícestránkový InDesign se mřížkami, styly a prepress checks."
+          "question": "Umíte rozvrhnout časopisy nebo brožury?",
+          "answer": "Ano. Vytváříme vícestránkové rozvržení v InDesignu s mřížkou, styly a předtiskovými kontrolami, připravené pro tisk nebo digitální distribuci."
         },
         {
           "id": "des-9",
-          "question": "Zajišťujete i tisk?",
-          "answer": "Ano. Navrhneme a umíme zajistit tisk v malých i velkých nákladech — od vizitek a samolepek až po letáky, plakáty a brožury — včetně proofů a koordinace výroby."
+          "question": "Pomáháte s tiskem?",
+          "answer": "Ano. Navrhujeme a umíme tisknout v malých nebo velkých množstvích – od vizitek a samolepek po letáky, plakáty a brožury – s nátisky a koordinací až po dodání."
         },
         {
           "id": "des-10",
-          "question": "Kolik kol zpětné vazby je v ceně?",
-          "answer": "Obvykle 2–3 strukturovaná kola; více je možné po dohodě."
+          "question": "Kolik kol zpětné vazby je zahrnuto?",
+          "answer": "Obvykle jsou zahrnuta 2 až 3 strukturovaná kola. Extra kola jsou možná po dohodě."
         },
         {
           "id": "des-11",
-          "question": "Dostaneme i zdrojové soubory?",
-          "answer": "Ano, dle domluvy (AI/PSD/INDD nebo exportní balíčky)."
+          "question": "Dostaneme zdrojové soubory?",
+          "answer": "Ano, v rámci dohodnuté dodávky. Může to být AI, PSD nebo INDD nebo exportní balíček – v závislosti na tom, na čem jsme se dohodli."
         },
         {
           "id": "des-12",
-          "question": "Může design ladit s webdesignem?",
-          "answer": "Ano. Brand systems a UI držíme konzistentní napříč tiskem i webem."
+          "question": "Může jít design a webdesign dohromady?",
+          "answer": "Ano. Slaďujeme design značky a systémy uživatelského rozhraní, takže tisk a web tvoří jeden celek."
         },
         {
           "id": "des-13",
-          "question": "Kde se dozvím víc o Digital Design?",
-          "answer": "Navštivte /digital-design a služby Digital Design v menu."
+          "question": "Kde se mohu dozvědět více o digitálním designu?",
+          "answer": "Více informací je na /digital-design a prostřednictvím služeb Digital Design v menu."
         }
       ]
     },
@@ -372,138 +372,138 @@
         {
           "id": "mkt-1",
           "question": "Jaké marketingové služby nabízíte?",
-          "answer": "AEO/GEO/SEO, content, social, ads, ecommerce growth, product listing, community management a data entry."
+          "answer": "Nabízíme AEO/GEO/SEO, obsah, sociální sítě, reklamy, růst elektronického obchodu, výpis produktů, správu komunity a zadávání dat."
         },
         {
           "id": "mkt-2",
-          "question": "Jak stavíte marketingovou strategii?",
-          "answer": "Cíle, publikum, positioning, channel mix, content pipeline a KPI — prakticky a realizovatelně."
+          "question": "Jak vytváříte marketingovou strategii?",
+          "answer": "Vytváříme strategii zaměřenou na cíle, publikum, umístění, mix kanálů, obsah a KPI – praktické a proveditelné, nejen na papíře."
         },
         {
           "id": "mkt-3",
-          "question": "Co pro vás znamená full-funnel marketing?",
-          "answer": "Awareness → consideration → conversion → retention, s jasně definovanými rolemi kanálů."
+          "question": "Co je pro vás full-funel marketing?",
+          "answer": "Celý trychtýř probíhá od povědomí (obsah a reklamy) přes zvažování (případy a SEO) až po konverzi (vstupní stránky a CRM) a poté udržení, takže každá fáze má jasnou roli."
         },
         {
           "id": "mkt-4",
-          "question": "Pomáháte s positioningem?",
-          "answer": "Ano. Jasný positioning předchází roztříštěným kampaním a slabé konverzi."
+          "question": "Pomáháte s polohováním?",
+          "answer": "Ano. Jasné umístění zabraňuje roztříštěným kampaním a slabé konverzi."
         },
         {
           "id": "mkt-5",
-          "question": "Zajišťujete psaní obsahu?",
-          "answer": "Ano: blogy, website copy, newslettery, landing pages a sales copy."
+          "question": "Můžete dodat psaní obsahu?",
+          "answer": "Ano. Píšeme blogy, webové stránky, informační bulletiny, vstupní stránky a prodejní texty – zaměřené na SEO a konverzi."
         },
         {
           "id": "mkt-6",
-          "question": "Děláte ecommerce marketing?",
-          "answer": "Ano: feedy, kvalita listingů, CRO, ads a SEO pro kategorie/produkty."
+          "question": "Děláte e-commerce marketing?",
+          "answer": "Ano. Pracujeme na produktových feedech, kvalitě výpisů, CRO, reklamách a SEO pro kategorie a produkty."
         },
         {
           "id": "mkt-7",
           "question": "Co je CRO?",
-          "answer": "Conversion Rate Optimization — zlepšování stránek a funnelů tak, aby více návštěvníků konvertovalo."
+          "answer": "CRO je optimalizace konverzního poměru: zlepšuje stránky, cesty a uživatelské prostředí, aby více návštěvníků provedlo konverzi."
         },
         {
           "id": "mkt-8",
           "question": "Jak reportujete marketingové výsledky?",
-          "answer": "Reporty/dashboardy s trafficem, leads, prodeji, CPA/ROAS a channel learnings."
+          "answer": "Podáváme přehledy prostřednictvím řídicích panelů nebo přehledů s návštěvností, potenciálními zákazníky, prodejem, CPA/ROAS a poznatky pro jednotlivé kanály, včetně toho, co budeme dělat dál."
         },
         {
           "id": "mkt-9",
-          "question": "Můžete spolupracovat s naším interním týmem?",
-          "answer": "Ano — realizovat, konzultovat nebo převzít specialist lane (jen SEO, jen ads atd.)."
+          "question": "Spolupracujete s naším interním marketingovým týmem?",
+          "answer": "Ano. Specializovanou část, například pouze SEO nebo pouze reklamy, dokážeme realizovat, spařovat nebo převzít."
         },
         {
           "id": "mkt-10",
-          "question": "Jak rychle lze spustit kampaně?",
-          "answer": "Často během 1–2 týdnů po tracking/setup; content běží paralelně."
+          "question": "Jak rychle spouštíte kampaně?",
+          "answer": "Po sledování a nastavení se kampaně často spustí během 1 až 2 týdnů. Práce s obsahem běží paralelně, takže kreativy a stránky jsou připraveny včas."
         },
         {
           "id": "mkt-11",
-          "question": "Podporujete email marketing?",
-          "answer": "Ano: flows, newslettery a copy, včetně CRM/ecommerce integrací."
+          "question": "Pomáháte s email marketingem?",
+          "answer": "Ano. Vytváříme toky, zpravodaje a kopírujeme. Je možná integrace s CRM nebo ecommerce."
         },
         {
           "id": "mkt-12",
-          "question": "Je marketing vždy měsíční retainer?",
-          "answer": "Retainery se hodí pro průběžný růst; audity, redesigny a launches mohou být projektové."
+          "question": "Je marketing měsíční smlouva?",
+          "answer": "Držáky jsou společné pro pokračující růst. Projekty jako audit, redesign nebo spuštění mohou být jednorázové."
         },
         {
           "id": "mkt-13",
-          "question": "Jak se vyhnete busyworku bez výsledků?",
-          "answer": "Každá aktivita je navázaná na KPI. Co nefunguje, opravíme nebo zastavíme."
+          "question": "Jak zabráníte „zaneprázdněnému marketingu“ bez výsledků?",
+          "answer": "Každá aktivita je vázána na KPI. Nevýkonné taktiky jsou zastaveny nebo vylepšeny pomocí dat, takže rozpočet jde na to, co funguje."
         }
       ]
     },
     {
       "id": "social-media",
-      "title": "Sociální sítě",
+      "title": "Sociální média",
       "items": [
         {
           "id": "soc-1",
           "question": "Které sociální kanály spravujete?",
-          "answer": "Primárně LinkedIn, Instagram, Facebook a dle potřeby X/TikTok — podle toho, kde je vaše publikum."
+          "answer": "Spravujeme hlavně LinkedIn, Instagram a Facebook a tam, kde je to relevantní, X nebo TikTok – na základě publika, ne humbuku."
         },
         {
           "id": "soc-2",
-          "question": "Co zahrnuje social media management?",
-          "answer": "Strategii, kalendář, tvorbu/plánování, community replies, reporting a iterace."
+          "question": "Co je součástí správy sociálních médií?",
+          "answer": "Správa sociálních médií zahrnuje strategii, kalendář obsahu, vytváření a plánování, odpovědi komunity, reporting a průběžnou optimalizaci."
         },
         {
           "id": "soc-3",
-          "question": "Vytváříte visuals a video?",
-          "answer": "Ano přes media creation: stills, carousels, short-form video a templates."
+          "question": "Vytváříte také vizuály a videa?",
+          "answer": "Ano, prostřednictvím vytváření médií: fotografií, kolotočů, krátkých videí a šablon."
         },
         {
           "id": "soc-4",
-          "question": "Jak často publikujete?",
-          "answer": "Záleží na cílech — typicky 3–5× týdně na hlavních kanálech, kvalita před kvantitou."
+          "question": "Jak často posíláte příspěvky?",
+          "answer": "To závisí na kanálu a cílech. Obvykle zveřejňujeme 3 až 5krát týdně na hlavní kanál, přičemž kvalita převyšuje objem."
         },
         {
           "id": "soc-5",
-          "question": "Nabízíte community management?",
-          "answer": "Ano: moderaci, komentáře, DMs a péči o reputaci podle brand voice guidelines."
+          "question": "Pomáháte se správou komunity?",
+          "answer": "Ano. Moderování, odpovědi, DM a péči o pověst řešíme podle dohodnutého tónu hlasu."
         },
         {
           "id": "soc-6",
-          "question": "Mohou social a ads fungovat společně?",
-          "answer": "Ano. Organické „vítěze“ proměníme v ad creatives; ads zesílí to, co rezonuje."
+          "question": "Lze sociální sítě a reklamy kombinovat?",
+          "answer": "Ano. Organický obsah poskytuje reklamní kreativy; reklamy škálují to, co funguje organicky."
         },
         {
           "id": "soc-7",
-          "question": "Jak měříte úspěch na sociálních sítích?",
-          "answer": "Reach, engagement, click-outs, leads a assisted conversions — ne jen likes."
+          "question": "Jak měříte společenský úspěch?",
+          "answer": "Měříme dosah, zapojení, prokliky, potenciální zákazníky a asistované konverze – nikoli samotné lajky. To ukazuje, co skutečně přispívá k růstu."
         },
         {
           "id": "soc-8",
-          "question": "Pracujete s influencery?",
-          "answer": "Na vyžádání: výběr, briefing a tracking zaměřený na měřitelné výsledky."
+          "question": "Spolupracujete s influencery?",
+          "answer": "Na vyžádání: výběr, briefing a sledování. Zaměřujeme se na vhodné a měřitelné výsledky, nikoli na dosahování sami."
         },
         {
           "id": "soc-9",
-          "question": "Umíte podpořit krizovou komunikaci?",
-          "answer": "Ano, s rychlými response protocols koordinovanými s vaším týmem."
+          "question": "Můžete podpořit krizovou komunikaci?",
+          "answer": "Ano. Používáme protokoly rychlé odezvy a spolupracujeme s vaším týmem, takže odpovědi zůstávají konzistentní a pod kontrolou."
         },
         {
           "id": "soc-10",
-          "question": "Pomáháte s LinkedIn thought leadership?",
-          "answer": "Ano: osobní + firemní obsah, carousels, cases a employee advocacy."
+          "question": "Pomáháte s LinkedIn pro vedení B2B myšlení?",
+          "answer": "Ano. Vytváříme osobní a firemní obsah, kolotoče, případy a advokacii zaměstnanců, aby byla odbornost vidět."
         },
         {
           "id": "soc-11",
-          "question": "Dostaneme content calendar?",
-          "answer": "Ano — měsíční nebo kvartální témata, formáty a termíny."
+          "question": "Dodáváte obsahový kalendář?",
+          "answer": "Ano. Dodáváme měsíční nebo čtvrtletní plán s tématy, formáty a termíny."
         },
         {
           "id": "soc-12",
-          "question": "Co když už máme social managera?",
-          "answer": "Můžeme se specializovat (creatives, ads, strategie) nebo pomoci v peak obdobích."
+          "question": "Co když už sociálního manažera máme?",
+          "answer": "Pak se můžeme specializovat na kreativy, reklamy nebo strategii nebo podporovat období špičky, aniž bychom nahradili stávající tým."
         },
         {
           "id": "soc-13",
-          "question": "Jak rychle porostou sociální sítě?",
-          "answer": "Konzistence se kumuluje. Výrazný růst obvykle trvá týdny až měsíce; rychleji s podporou ads."
+          "question": "Jak rychle zaznamenáme růst na sociálních sítích?",
+          "answer": "Na důslednosti záleží. Výrazný růst obvykle trvá týdny až měsíce; s podporou reklam to jde často rychleji."
         }
       ]
     },
@@ -513,68 +513,68 @@
       "items": [
         {
           "id": "sup-1",
-          "question": "Jakou podporu poskytujete?",
-          "answer": "WordPress podpora, podpora custom webů, tickets/live chat, údržba, security, výkon a incident response."
+          "question": "Jakou podporu nabízíte?",
+          "answer": "Nabízíme podporu WordPress, vlastní podporu webových stránek, vstupenky a živý chat, údržbu, zabezpečení, výkon a reakci na incidenty."
         },
         {
           "id": "sup-2",
-          "question": "Jak se spojit s podporou?",
-          "answer": "Přes kontakt, booking, dashboard tickets nebo live chat. Urgentní případy mají prioritu."
+          "question": "Jak se dostanu k podpoře?",
+          "answer": "Prostřednictvím kontaktu, schůzky, lístků na řídicím panelu nebo živého chatu na webu. Urgentní případy jsou označeny jako prioritní."
         },
         {
           "id": "sup-3",
-          "question": "Jaká je vaše odezva?",
-          "answer": "Rychlá první reakce (často do jednoho pracovního dne; kritický výpadek rychleji). Přesná SLA závisí na balíčku."
+          "question": "Jaká je vaše doba odezvy?",
+          "answer": "Naším cílem je rychlá první odpověď, často do jednoho pracovního dne. Na kritické prostoje reagujeme rychleji. Přesné smlouvy SLA jsou v balíčcích podpory."
         },
         {
           "id": "sup-4",
-          "question": "Nabízíte 24/7 monitoring?",
-          "answer": "Ano v relevantních support/hosting balíčcích: monitoring, zálohy a alerts."
+          "question": "Nabízíte monitorování 24/7?",
+          "answer": "Ano, v příslušných balících podpory a hostingu: monitorování, zálohování a upozornění, aby byly problémy viditelné dříve."
         },
         {
           "id": "sup-5",
-          "question": "Umíte odstranit malware?",
-          "answer": "Ano — pro WordPress i custom stacky — včetně hardeningu a následné péče."
+          "question": "Můžete odstranit malware?",
+          "answer": "Ano – na WordPressu i na vlastních hromadách – včetně zpevnění a následné péče, aby se web vrátil čistý a lépe chráněný."
         },
         {
           "id": "sup-6",
-          "question": "Řešíte WordPress aktualizace?",
-          "answer": "Ano přes WordPress maintenance & updates: core/plugins/themes se zálohami a kontrolami."
+          "question": "Vyřizujete aktualizace WordPressu za nás?",
+          "answer": "Ano, prostřednictvím „Údržby a aktualizací“: jádro, pluginy a motivy se zálohou a kontrolami před a po aktualizaci."
         },
         {
           "id": "sup-7",
-          "question": "Pomůžete s hostingovými problémy?",
-          "answer": "Ano — diagnostika, migrace nebo optimalizace hosting/VPS/domén."
+          "question": "Pomáháte s problémy s hostingem?",
+          "answer": "Ano. Diagnostikujeme, migrujeme nebo optimalizujeme hosting, VPS a domény, dokud web opět nepoběží stabilně."
         },
         {
           "id": "sup-8",
-          "question": "Co když je web nedostupný?",
-          "answer": "Nahlaste urgentnost. Obnovíme provoz přes zálohy, kontrolu serveru a hotfixy se status aktualizacemi."
+          "question": "Co když můj web nefunguje?",
+          "answer": "Nahlaste to jako urgentní. Obnovujeme, kde je to možné, prostřednictvím záloh, kontrol serveru a opravy hotfix a průběžně vás informujeme o stavu."
         },
         {
           "id": "sup-9",
           "question": "Existuje klientský portál?",
-          "answer": "Ano. Přihlášení klienti vidí dashboard, tickets, projekty a relevantní CRM/faktury."
+          "answer": "Ano. Přihlášení klienti vidí dashboard, vstupenky, projekty a případně CRM nebo faktury."
         },
         {
           "id": "sup-10",
-          "question": "Může více kolegů zakládat tickets?",
-          "answer": "Ano, podle rolí na účtu (client/manager/admin)."
+          "question": "Může více spoluhráčů otevřít vstupenky?",
+          "answer": "Ano, v závislosti na rolích účtu (klient, manažer nebo správce)."
         },
         {
           "id": "sup-11",
-          "question": "Co je v Basic/Standard/Premium podpoře?",
-          "answer": "Více webů, rychlejší follow-up a širší rozsah (aktualizace, malware, rychlost, SEO). Detaily najdete na support stránkách."
+          "question": "Co je zahrnuto v podpoře Basic/Standard/Premium?",
+          "answer": "Vyšší balíčky pokrývají více webů, rychlejší sledování a širší pokrytí (aktualizace, malware, rychlost, SEO). Podrobnosti jsou na stránkách podpory."
         },
         {
           "id": "sup-12",
-          "question": "Pomůžete i s netechnickými dotazy?",
-          "answer": "Ano — služby, billing a account dotazy, s technickou hloubkou podle vašeho balíčku."
+          "question": "Pomáháte i s netechnickými dotazy?",
+          "answer": "Ano, o službách, fakturaci a účtu. Jak hluboko technicky jdeme, závisí na vašem balíčku."
         },
         {
           "id": "sup-13",
-          "question": "Mohu později podporu upgradovat?",
-          "answer": "Ano, jak poroste traffic, riziko nebo potřeby týmu."
+          "question": "Mohu upgradovat podporu později?",
+          "answer": "Ano. Můžete škálovat, když roste provoz, riziko nebo potřeby týmu."
         }
       ]
     },
@@ -584,73 +584,73 @@
       "items": [
         {
           "id": "web-1",
-          "question": "Děláte jen WordPress weby?",
-          "answer": "Ne. Kromě WordPressu stavíme custom weby v HTML/CSS/JS, PHP a Next.js — odděleně od WordPress služeb."
+          "question": "Tvoříte pouze WordPress stránky?",
+          "answer": "Ne. Kromě WordPressu děláme vlastní webdesign v HTML/CSS/JS, PHP a Next.js — odděleně od služeb WordPress."
         },
         {
           "id": "web-2",
-          "question": "Co je Website Support?",
-          "answer": "Design, vývoj, údržba, security, výkon, backup/migrace a API integrace pro custom stacky."
+          "question": "Co zahrnuje podpora webových stránek?",
+          "answer": "Webová podpora pokrývá návrh, vývoj, údržbu, zabezpečení, výkon, zálohování nebo migraci a integraci API pro vlastní zásobníky."
         },
         {
           "id": "web-3",
-          "question": "Můžete redesignovat existující web?",
-          "answer": "Ano: UX/UI refresh, zlepšení konverze a technická modernizace bez plného rewrite, pokud to jde."
+          "question": "Můžete předělat stávající web?",
+          "answer": "Ano. Provádíme aktualizaci UX/UI, vylepšení konverzí a technickou modernizaci, aniž bychom vše vyhodili, pokud to není potřeba."
         },
         {
           "id": "web-4",
           "question": "Pracujete s Next.js?",
-          "answer": "Ano — skvělé pro rychlé, SEO-ready marketing sites a dashboardy."
+          "answer": "Ano. Next.js je ideální pro rychlé marketingové weby a dashboardy připravené na SEO."
         },
         {
           "id": "web-5",
-          "question": "Vyvíjíte PHP aplikace?",
-          "answer": "Ano: portály, API, modernizace legacy a hardening výkonu/bezpečnosti."
+          "question": "Stavíte také PHP aplikace?",
+          "answer": "Ano. Stavíme portály a API, modernizujeme starší verze a posilujeme výkon a zabezpečení."
         },
         {
           "id": "web-6",
-          "question": "Jak řešíte mobilní zařízení?",
-          "answer": "Mobile-first design, responzivní layouty a testování napříč běžnými zařízeními/prohlížeči."
+          "question": "Jak zajišťujete mobilní weby?",
+          "answer": "Navrhujeme především pro mobily, vytváříme responzivní rozvržení a testujeme na běžných zařízeních a prohlížečích, aby web fungoval všude."
         },
         {
           "id": "web-7",
-          "question": "Je součástí i přístupnost?",
-          "answer": "Dodržujeme solidní a11y basics; přísnější WCAG programy lze zahrnout do scope."
+          "question": "Je zahrnuta přístupnost (a11y)?",
+          "answer": "Stavíme s přístupnými základními postupy. Přísnější programy WCAG mohou být zahrnuty jako další rozsah."
         },
         {
           "id": "web-8",
-          "question": "Jaké jsou CMS možnosti bez WordPressu?",
-          "answer": "Ano: headless CMS, custom admin nebo statické setupy podle vašeho týmu."
+          "question": "Můžete nabídnout možnosti CMS bez WordPress?",
+          "answer": "Ano. Může to být bezhlavý CMS, vlastní správce nebo statické nastavení – v závislosti na vašem týmu a potřebách."
         },
         {
           "id": "web-9",
-          "question": "Jak dlouho trvá webdesign projekt?",
-          "answer": "Landing pages v řádu týdnů; větší weby/aplikace přes více sprintů po intake plánování."
+          "question": "Jak dlouho trvá projekt webdesignu?",
+          "answer": "Vstupní stránky obvykle trvají několik týdnů; větší weby nebo aplikace běží ve sprintech po několik týdnů. Po příjmu následuje plánování."
         },
         {
           "id": "web-10",
-          "question": "Je při spuštění součástí i copy a SEO?",
-          "answer": "Ano při kombinaci s content/SEO, aby web startoval dohledatelný a conversion-ready."
+          "question": "Řešíte také kopírování a SEO při spuštění?",
+          "answer": "Ano, v kombinaci s obsahem a službami SEO, takže web bude okamžitě prohledávatelný a zaměřený na konverzi."
         },
         {
           "id": "web-11",
           "question": "Co výkon po spuštění?",
-          "answer": "Optimalizujeme Core Web Vitals, caching/CDN a monitoring v rámci údržbových balíčků."
+          "answer": "Optimalizujeme Core Web Vitals, caching nebo CDN a monitoring. Následná péče pak pokračuje prostřednictvím balíčků údržby."
         },
         {
           "id": "web-12",
-          "question": "Můžete integrovat API (CRM, platby, AI)?",
-          "answer": "Ano, se správným error handlingem, loggingem a dokumentací."
+          "question": "Můžete propojit API (CRM, platby, AI)?",
+          "answer": "Ano. Vytváříme integrace s čistým zpracováním chyb, protokolováním a dokumentací."
         },
         {
           "id": "web-13",
-          "question": "Jak předáváte kód?",
-          "answer": "Přes repo/deploy pipelines, kde to jde, se staging/production a handoverem."
+          "question": "Jak doručíte kód?",
+          "answer": "Kde je to možné, dodáváme prostřednictvím úložiště a nasazujeme potrubí s prostředím (staging a produkce) a jasným předáním."
         },
         {
           "id": "web-14",
-          "question": "Pomůžete s on-site CRO?",
-          "answer": "Ano: UX vylepšení, formuláře, CTA, experimenty a page speed."
+          "question": "Pomáháte s optimalizací konverzí na místě?",
+          "answer": "Ano. Provádíme A/B testy, vylepšení uživatelského prostředí, formuláře, výzvy k akci a rychlost stránek, aby konverze provedlo více návštěvníků."
         }
       ]
     },
@@ -661,77 +661,77 @@
         {
           "id": "host-1",
           "question": "Jaký hosting nabízíte?",
-          "answer": "Shared, WordPress a VPS hosting v Basic/Plus/Business tiers, plus domény."
+          "answer": "Nabízíme sdílený hosting, WordPress hosting a VPS — v Basic, Plus a Business úrovních — plus domény."
         },
         {
           "id": "host-2",
-          "question": "Shared vs WordPress vs VPS?",
-          "answer": "Shared je pro menší weby. WordPress hosting je optimalizovaný pro WP. VPS nabízí více zdrojů/kontroly pro vyšší zátěž."
+          "question": "Jaký je rozdíl mezi sdílenými, WordPress a VPS?",
+          "answer": "Sdílené je nákladově efektivní pro menší weby. WordPress hosting je optimalizován pro WP. VPS poskytuje více zdrojů a kontroly pro větší zatížení."
         },
         {
           "id": "host-3",
-          "question": "Pomůžete s registrací domény?",
-          "answer": "Ano — poradenství, registrace/převod a správné nastavení DNS."
+          "question": "Pomáháte s registrací domény?",
+          "answer": "Ano. Poradíme, registrujte nebo převeďte doménu a správně připojte DNS."
         },
         {
           "id": "host-4",
-          "question": "Je SSL součástí?",
-          "answer": "Ano, SSL je součástí relevantních hosting plánů."
+          "question": "Je SSL součástí hostingu?",
+          "answer": "Ano. SSL je standardem v našich příslušných hostingových plánech."
         },
         {
           "id": "host-5",
-          "question": "Můžete migrovat web na váš hosting?",
-          "answer": "Ano: záloha, migrace, DNS cutover, SSL a smoke testy s minimálním downtime."
+          "question": "Můžete migrovat mé stránky na váš hosting?",
+          "answer": "Ano. Zvládáme zálohování, migraci, DNS cutover, SSL a kouřové testy s minimálními prostoji."
         },
         {
           "id": "host-6",
-          "question": "Jak fungují zálohy?",
-          "answer": "Dle plánu: jednoduché nebo automatizované zálohy. Možná je i extra off-site retention."
+          "question": "Jak fungují zálohy na hostingu?",
+          "answer": "To závisí na plánu: jednoduché nebo automatické zálohování. K dispozici je další uchovávání mimo pracoviště."
         },
         {
           "id": "host-7",
-          "question": "Co když traffic poroste?",
-          "answer": "Škálujeme na Plus/Business nebo VPS a optimalizujeme caching/CDN."
+          "question": "Co když budu mít větší provoz?",
+          "answer": "Poté škálujeme na Plus, Business nebo VPS a optimalizujeme ukládání do mezipaměti a CDN, aby web zvládl růst."
         },
         {
           "id": "host-8",
-          "question": "Je u domén zahrnutý i e-mail?",
-          "answer": "Záleží na setupu. Doporučíme spolehlivé mail řešení a DNS auth (SPF/DKIM/DMARC)."
+          "question": "Nabízíte email s doménami?",
+          "answer": "To záleží na balíčku a nastavení. Poradíme spolehlivá poštovní řešení a správně nastavíme DNS (SPF, DKIM a DMARC)."
         },
         {
           "id": "host-9",
           "question": "Jak bezpečný je váš hosting?",
-          "answer": "SSL/firewall, aktualizace, monitoring a hardening, plus volitelné bezpečnostní služby navíc."
+          "answer": "Používáme firewall, SSL, aktualizace, monitoring a hardening. Další bezpečnostní služby mohou přidat další vrstvy navrch."
         },
         {
           "id": "host-10",
-          "question": "Mohu později přejít ze shared na VPS?",
-          "answer": "Ano — plánovaná migrace s testováním a rollbackem."
+          "question": "Mohu později přejít ze sdíleného na VPS?",
+          "answer": "Ano. Migraci plánujeme společně, včetně testů a rollbacku, takže přepínač zůstane pod kontrolou."
         },
         {
           "id": "host-11",
           "question": "Podporujete CDN?",
-          "answer": "Ano, kde je to relevantní (často v rámci WP hostingu) pro rychlejší globální doručování."
+          "answer": "Ano, tam, kde je to relevantní – často je zdarma CDN součástí hostingových plánů WP – pro rychlejší globální doručení."
         },
         {
           "id": "host-12",
-          "question": "Jak řešíte dostupnost (uptime)?",
-          "answer": "Monitoring, rychlý incident response a jasná komunikace pro maintenance windows."
+          "question": "Jaký je váš přístup k dostupnosti?",
+          "answer": "Monitorujeme, rychle reagujeme na incidenty a jasně komunikujeme kolem oken údržby, abyste věděli, co se děje."
         },
         {
           "id": "host-13",
-          "question": "Umíte opravit DNS problémy?",
-          "answer": "Ano: záznamy, propagation, mail auth a domain wiring."
+          "question": "Pomáháte řešit problémy s DNS?",
+          "answer": "Ano. Opravujeme záznamy, šíření, ověřování pošty a připojení k doménám, dokud není DNS opět správné."
         },
         {
           "id": "host-14",
-          "question": "Jak vybrat správný plán?",
-          "answer": "Podle trafficu, stacku (WP vs custom), zdrojů a růstu. Poradíme férově."
+          "question": "Jak si mohu vybrat správný hostingový plán?",
+          "answer": "Na základě provozu, zásobníku (WordPress nebo vlastní), zdrojů a růstu. Radíme poctivě – nepřeprodáváme."
         },
         {
           "id": "host-15",
-          "question": "Kde najdu ceny hostingu?",
-          "answer": "Na stránkách hosting služeb v nabídce Services → Webhosting & Domains."
+          "question": "Kde mohu vidět ceny hostingu?",
+          "answer": "Na stránkách hostingových služeb v části Služby → Webhosting a domény, případně s měsíčními nebo ročními možnostmi."
         }
       ]
     }

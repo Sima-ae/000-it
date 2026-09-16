@@ -1,78 +1,78 @@
 {
-  "title": "Pyetje të bëra shpesh",
-  "subtitle": "Përgjigje të detajuara për TripleZero iT — nga AI dhe SEO te dizajni, marketingu, mbështetja dhe hostingu.",
+  "title": "Pyetjet e bëra shpesh",
+  "subtitle": "Pyetje dhe përgjigje të thelluara – nga AI, AEO, GEO dhe SEO tek dizajni, domenet, hostimi, marketingu, mediat sociale, mbështetja dhe më shumë.",
   "ctaTitle": "Ende keni nevojë për ndihmë?",
-  "ctaText": "Nuk e gjeni përgjigjen? Kontaktoni ekipin tonë dhe do t’ju përgjigjemi shpejt.",
+  "ctaText": "Nuk e gjeni dot pyetjen tuaj? Na kontaktoni - ne do të kthehemi tek ju sa më shpejt të jetë e mundur.",
   "ctaButton": "Na kontaktoni",
   "categories": [
     {
       "id": "general",
-      "title": "Të përgjithshme",
+      "title": "Gjeneral",
       "items": [
         {
           "id": "gen-1",
-          "question": "Çfarë bën TripleZero iT?",
-          "answer": "Ne kombinojmë web dizajn, mbështetje WordPress, marketing digjital, dukshmëri në kërkim (AEO, GEO/lokale dhe SEO), dizajn dhe hosting — duke ndihmuar markat të gjenden, të konvertojnë dhe të rriten."
+          "question": "Çfarë bën saktësisht TripleZero iT?",
+          "answer": "TripleZero iT kombinon dizajnin e internetit, mbështetjen e WordPress, marketingun dixhital, dukshmërinë e kërkimit (AEO, GEO/lokale dhe SEO), dizajnin dhe hostimin. Ne ndihmojmë markat të gjenden më shpejt, të ndërtojnë faqe interneti më të mira dhe të rriten në një mënyrë të matshme."
         },
         {
           "id": "gen-2",
-          "question": "Si të filloj?",
-          "answer": "Rezervoni një thirrje ose na kontaktoni. Bëjmë një intake të shkurtër, shqyrtojmë objektivat dhe stack-un, pastaj propozojmë një plan të qartë me afate dhe KPI."
+          "question": "Si mund të filloj me TripleZero iT?",
+          "answer": "Na kontaktoni ose rezervoni një takim. Ne kryejmë një hyrje të shkurtër, rishikojmë qëllimet dhe grumbullojmë, më pas përgatisim një propozim konkret me planifikimin dhe KPI."
         },
         {
           "id": "gen-3",
-          "question": "Me çfarë lloj biznesesh punoni?",
-          "answer": "SMB, scale-up, ecommerce, agjenci dhe marka ndërkombëtare. Punojmë me ekipe ekzistuese dhe si partner full-service."
+          "question": "Me cilat lloje biznesesh punoni?",
+          "answer": "Ne punojmë me SMB-të, shkallë-ups, tregtinë elektronike, agjencitë dhe markat ndërkombëtare. Kjo mund të jetë së bashku me një ekip ekzistues, ose si një partner me shërbim të plotë."
         },
         {
           "id": "gen-4",
           "question": "A punoni vetëm në Holandë?",
-          "answer": "Jo. Shërbejmë klientë në Beneluks dhe ndërkombëtarisht, në holandisht dhe anglisht."
+          "answer": "Jo. Ne u shërbejmë klientëve në Beneluks dhe jashtë vendit, me angazhime në gjuhën holandeze dhe në gjuhën angleze."
         },
         {
           "id": "gen-5",
-          "question": "Si duket një angazhim tipik?",
-          "answer": "Intake → audit/scan → plan → ekzekutim në sprint-e → matje → optimizim, me etapa të qarta."
+          "question": "Si duket një fejesë tipike?",
+          "answer": "Një angazhim tipik funksionon si ky: marrja → auditimi ose skanimi → plani → ekzekutimi i sprintit → matja → optimizimi. Ju merrni piketa dhe raportime të qarta, kështu që është gjithmonë e qartë se ku qëndrojmë."
         },
         {
           "id": "gen-6",
-          "question": "A mund të kombinoj disa shërbime?",
-          "answer": "Po. Kombinime të zakonshme: web dizajn + SEO + ads, ose mirëmbajtje WordPress + hosting + siguri."
+          "question": "A mund të kombinoj shumë shërbime?",
+          "answer": "po. Shumë klientë kombinojnë dizajnin e internetit + SEO + reklamat, ose mirëmbajtjen e WordPress + hostimin + sigurinë. Ne e përshtasim përzierjen sipas qëllimeve dhe buxhetit tuaj."
         },
         {
           "id": "gen-7",
           "question": "Sa shpejt mund të filloni?",
-          "answer": "Shpesh brenda pak ditësh pune pas miratimit. Çështjet urgjente (malware, downtime) kanë prioritet."
+          "answer": "Varet nga kapaciteti ynë, por pas miratimit ne shpesh fillojmë brenda pak ditësh pune. Puna urgjente - të tilla si defektet, malware ose kohëzgjatja e ndërprerjes - ka prioritet në mënyrë që të mund t'i marrim ato sa më shpejt të jetë e mundur."
         },
         {
           "id": "gen-8",
-          "question": "Punoni remote apo në terren?",
-          "answer": "Kryesisht remote me komunikim të strukturuar. Në terren është e mundur me kërkesë."
+          "question": "Punoni në distancë apo në vend?",
+          "answer": "Ne punojmë kryesisht në distancë, me komunikim të qartë përmes emailit, bisedës dhe telefonatave. Në vend është në dispozicion sipas kërkesës kur projekti ka nevojë për të."
         },
         {
           "id": "gen-9",
-          "question": "Si e komunikoni progresin?",
-          "answer": "Përditësime të rregullta, tickets/dashboard kur është e nevojshme, plus raporte sprint-i ose mujore."
+          "question": "Si e komunikon ekipi përparimin?",
+          "answer": "Ne ju mbajmë të përditësuar përmes përditësimeve të rregullta, biletave ose një paneli kontrolli aty ku është e nevojshme, plus raporte sprint ose mujore me veprime dhe rezultate."
         },
         {
           "id": "gen-10",
-          "question": "Çfarë ju duhet nga ne për të nisur?",
-          "answer": "Akses (kur nevojitet), objektiva, materiale të markës, llogari analytics dhe kredenciale ekzistuese të mjeteve."
+          "question": "Çfarë keni nevojë nga ne për të filluar?",
+          "answer": "Për të filluar, ne kemi nevojë për qasje në faqen e internetit dhe hosting (nëse kërkohet), qëllimet tuaja, udhëzimet e markës, llogaritë analitike dhe çdo mjet ekzistues. Nëse diçka mungon, ne ndihmojmë për ta vendosur atë fillimisht."
         },
         {
           "id": "gen-11",
-          "question": "A jeni të përshtatshëm për startup-e?",
-          "answer": "Po — nga landing page të thjeshta dhe AI scan-e deri te sisteme të plota rritjeje ndërsa shkallëzoni."
+          "question": "A janë shërbimet tuaja të përshtatshme për startup-et?",
+          "answer": "po. Ne shkallëzojmë nga faqet e ulëta të uljes dhe skanimet e AI deri te konfigurimet e plota të rritjes, kështu që qasja rritet me ju."
         },
         {
           "id": "gen-12",
           "question": "Kush e zotëron punën dhe llogaritë?",
-          "answer": "Ju zotëroni domenet, përmbajtjen, repo-t dhe llogaritë e reklamave. Ne dorëzojmë skedarë dhe dokumentacion në handover."
+          "answer": "Domeni juaj, përmbajtja, depot e kodit dhe llogaritë e reklamave mbeten tuajat. Në dorëzim ne dorëzojmë dosjet dhe dokumentacionin në mënyrë që gjithçka të mbetet nën kontrollin tuaj."
         },
         {
           "id": "gen-13",
-          "question": "A mund të bashkëpunoni me furnitorët tanë aktualë?",
-          "answer": "Po. Punojmë krah për krah me developerët/marketerët tuaj ose marrim përsipër mirëmbajtjen pa probleme."
+          "question": "A mund të merrni përsipër ose të bashkëpunoni me shitësit ekzistues?",
+          "answer": "po. Ne punojmë pa probleme së bashku me zhvilluesit, tregtarët ose agjencitë, ose marrim përsipër mirëmbajtjen dhe optimizimin pa ndërprerë në mënyrë të panevojshme punën ekzistuese."
         }
       ]
     },
@@ -82,68 +82,68 @@
       "items": [
         {
           "id": "ai-1",
-          "question": "Çfarë është AI scan-i juaj?",
-          "answer": "Një AI readiness scan që vlerëson sa mirë performon faqja juaj për kërkimin klasik, përgjigjet me AI dhe dukshmërinë lokale/gjeografike (AEO, GEO, SEO dhe bazat teknike)."
+          "question": "Çfarë është një skanim AI në TripleZero iT?",
+          "answer": "Një skanim i gatishmërisë për AI vlerëson se sa mirë mund të gjendet faqja juaj nga motorët klasikë të kërkimit, përgjigjet e AI dhe rezultatet e kërkimit lokal ose gjeografik (AEO, GEO, SEO dhe themelet teknike)."
         },
         {
           "id": "ai-2",
-          "question": "Çfarë mat AI scan-i?",
-          "answer": "Sinjale AEO, dukshmëri GEO/lokale, bazat e SEO, strukturën e përmbajtjes, indikatorë performance dhe AI readiness — me rregullime të prioritetizuara."
+          "question": "Çfarë mat saktësisht skanimi i AI?",
+          "answer": "Skanimi mat sinjalet AEO, dukshmërinë GEO/lokale, bazat e SEO, strukturën e përmbajtjes, treguesit e performancës dhe gatishmërinë e AI. Ju merrni pikë dhe pikë konkrete përmirësimi."
         },
         {
           "id": "ai-3",
-          "question": "Sa shpesh duhet të bëjmë një AI scan?",
-          "answer": "Pas ndryshimeve të mëdha në faqe ose fushatave; për marka aktive rekomandojmë scan-e periodike (p.sh. çdo tremujor)."
+          "question": "Sa shpesh duhet të kryej një skanim AI?",
+          "answer": "Të paktën pas ndryshimeve të mëdha të faqes ose fushatave. Për markat aktive ne rekomandojmë skanime periodike, për shembull çdo tremujor, në mënyrë që të qëndroni të dukshëm në rezultatet e kërkimit dhe AI."
         },
         {
           "id": "ai-4",
-          "question": "A është AI vetëm për shkrimin e përmbajtjes?",
-          "answer": "Jo. Përfshin edhe discoverability teknike, structured data, lidhje të brendshme dhe mënyrën si sistemet AI e përmbledhin markën tuaj."
+          "question": "A ndihmon AI vetëm me përmbajtjen?",
+          "answer": "Jo. AI ndikon gjithashtu zbulueshmërinë teknike, të dhënat e strukturuara, lidhjet e brendshme, blloqet e FAQ dhe mënyrën se si informacioni i markës përmblidhet në përgjigjet e AI."
         },
         {
           "id": "ai-5",
-          "question": "A mund ta integroni AI në rrjedhat tona të punës?",
-          "answer": "Po: asistencë për përmbajtje, automatizim, rrjedha chat/ticket dhe integrime të personalizuara AI API."
+          "question": "A mund ta integroni AI në rrjedhën tonë të punës?",
+          "answer": "po. Ne mund të përdorim AI për ndihmën e përmbajtjes, automatizimin, flukset e chatbot-it ose biletave, lidhjet e të dhënave dhe API-të e personalizuara rreth mjeteve të AI."
         },
         {
           "id": "ai-6",
           "question": "A e zëvendëson AI punën tuaj strategjike?",
-          "answer": "Jo. AI përshpejton analizën dhe prodhimin; strategjia, zëri i markës dhe vendimet për konvertim mbeten të udhëhequra nga njerëzit."
+          "answer": "Jo. AI përshpejton analizën dhe prodhimin, por strategjia, zëri i markës dhe vendimet e konvertimit mbeten njerëzore dhe të matshme."
         },
         {
           "id": "ai-7",
-          "question": "A është përmbajtja e gjeneruar nga AI e sigurt për SEO?",
-          "answer": "Vetëm me rishikim njerëzor, insight unik dhe E-E-A-T. Shmangim faqe të holla/gjenerike që dëmtojnë renditjet."
+          "question": "A është përmbajtja e AI-së e sigurt për SEO?",
+          "answer": "Vetëm me rishikim njerëzor, njohuri unike dhe E-E-A-T. Ne shmangim tekstin e hollë e të përgjithshëm që dëmton renditjen."
         },
         {
           "id": "ai-8",
-          "question": "Çfarë është AI readiness?",
-          "answer": "Sa mirë janë të strukturuara faqja, përmbajtja dhe të dhënat tuaja që sistemet AI të mund t’ju citojnë, rekomandojnë dhe shpjegojnë saktë markën."
+          "question": "Cila është gatishmëria e AI për markën time?",
+          "answer": "Është shkalla në të cilën faqja juaj, përmbajtja dhe të dhënat janë konfiguruar në mënyrë që sistemet e AI të mund të citojnë, rekomandojnë dhe shpjegojnë saktë markën tuaj."
         },
         {
           "id": "ai-9",
-          "question": "A përdorni AI agents në dashboard?",
-          "answer": "Po. Klientët mund të shohin agjentë për SEO, përmbajtje, social dhe ads me status dhe detyra."
+          "question": "A mund të përdorni agjentë të AI në panelin e kontrollit?",
+          "answer": "po. Në portalin e klientit ju shihni agjentë të AI për SEO, përmbajtje, sociale dhe reklama - duke përfshirë statusin dhe detyrat."
         },
         {
           "id": "ai-10",
-          "question": "Cilat mjete AI përdorni?",
-          "answer": "Zgjedhim mjete sipas use-case, me governance: burime, fact-checking, rregulla të markës dhe privatësi."
+          "question": "A punoni me ChatGPT, Claude apo mjete të tjera?",
+          "answer": "Ne zgjedhim mjete për çdo rast përdorimi. Qeverisja ka rëndësi: burimet, kontrolli i fakteve, udhëzimet e markës dhe privatësia, kështu që përdorimi i AI mbetet i besueshëm."
         },
         {
           "id": "ai-11",
-          "question": "A mund të ndihmojë AI me ticket-et e support-it?",
-          "answer": "Po, për triazhim dhe përgjigje më të shpejta, me eskalim te njerëzit për raste komplekse ose të ndjeshme."
+          "question": "A ndihmon AI me biletat mbështetëse?",
+          "answer": "Po, për analizë dhe përgjigje më të shpejta. Rastet komplekse ose të ndjeshme përshkallëzohen gjithmonë tek një shok skuadre njerëzore."
         },
         {
           "id": "ai-12",
-          "question": "Si çmimohet puna me AI?",
-          "answer": "Nga një AI scan fillestar deri te retainers mujore AI + marketing. Do të merrni një propozim të qartë pas intake."
+          "question": "Sa kushton një angazhim i AI?",
+          "answer": "Ai varion nga një skanim falas ose i nivelit fillestar të AI deri tek mbajtëset mujore të AI dhe marketingu. Pas marrjes ju merrni një propozim të qartë."
         },
         {
           "id": "ai-13",
-          "question": "Si e masim AI ROI?",
-          "answer": "KPI si trafik, leads, kohë e kursyer, output përmbajtjeje, zgjidhje ticket-esh dhe konvertime — të përcaktuara që në fillim."
+          "question": "Si mund ta mas ROI-në e iniciativave të AI?",
+          "answer": "Përmes KPI-ve si trafiku, drejtimet, koha e kursyer, prodhimi i përmbajtjes, zgjidhja e biletave dhe konvertimi. Ne i përcaktojmë ato përpara në plan në mënyrë që rezultatet të mbeten të dukshme."
         }
       ]
     },
@@ -153,215 +153,215 @@
       "items": [
         {
           "id": "seo-1",
-          "question": "Cili është ndryshimi mes AEO, GEO dhe SEO?",
-          "answer": "AEO (Answer Engine Optimization) optimizon për përgjigje me AI. GEO (Geographic Search Engine Optimization) forcon dukshmërinë lokale dhe rajonale në Maps, local packs dhe kërkime sipas vendndodhjes. SEO synon motorët klasikë të kërkimit."
+          "question": "Cili është ndryshimi midis AEO, GEO dhe SEO?",
+          "answer": "AEO (Answer Engine Optimization) fokusohet në përgjigjet e AI. GEO (Geographic Search Engine Optimization) forcon dukshmërinë lokale dhe rajonale në Hartat, paketat lokale dhe kërkimin e bazuar në vendndodhje. SEO optimizohet për motorët klasikë të kërkimit."
         },
         {
           "id": "seo-2",
           "question": "Pse AEO/GEO kanë rëndësi tani?",
-          "answer": "Më shumë përdorues marrin përgjigje përmes AI dhe kërkojnë lokalisht (“near me”). Pa AEO humbisni citime nga AI; pa GEO humbisni leads pranë jush — edhe nëse SEO klasik është i fortë."
+          "answer": "Më shumë kërkues marrin përgjigje nëpërmjet AI dhe gjithashtu kërkojnë në nivel lokal (\"pranë meje\"). Pa AEO ju mungojnë citimet e AI; pa GEO ju mungojnë drejtimet lokale – edhe kur SEO klasike është solide."
         },
         {
           "id": "seo-3",
-          "question": "Si e nisni një angazhim SEO?",
-          "answer": "Audit teknik, kërkim fjalëkyçesh/intent, analizë e boshllëqeve të përmbajtjes dhe një roadmap me prioritete e lidhur me KPI të biznesit."
+          "question": "Si të filloni një angazhim SEO?",
+          "answer": "Ne fillojmë me një auditim teknik, kërkime të fjalëve kyçe dhe qëllimeve, një analizë të mangësive të përmbajtjes dhe një udhërrëfyes prioritar të lidhur me KPI-të e biznesit tuaj."
         },
         {
           "id": "seo-4",
-          "question": "Sa kohë derisa të shfaqen rezultatet e SEO?",
-          "answer": "Fitimet teknike mund të vijnë shpejt. Rritja organike zakonisht ndërtohet gjatë javëve deri muajve, në varësi të konkurrencës."
+          "question": "Sa kohë derisa rezultatet e SEO të bëhen të dukshme?",
+          "answer": "Fitoret teknike mund të shfaqen shpejt. Rritja organike zakonisht ndërtohet gjatë javëve në muaj, në varësi të konkurrencës dhe sa konsistente ekzekutojmë."
         },
         {
           "id": "seo-5",
-          "question": "A ofroni local SEO?",
-          "answer": "Po: Google Business Profile, landing page lokale, konsistencë NAP, reviews dhe klastera lokalë përmbajtjeje."
+          "question": "A bëni edhe SEO lokale?",
+          "answer": "po. Ne punojmë në \"Profilin e biznesit të Google\", faqet e uljes lokale, konsistencën e NAP, rishikimet dhe grupimet e përmbajtjes lokale, në mënyrë që të gjendeni më mirë në rajonin tuaj."
         },
         {
           "id": "seo-6",
-          "question": "Çfarë është technical SEO për ju?",
-          "answer": "Crawlability, indexation, Core Web Vitals, structured data, sitemaps/robots, canonicals, internal linking dhe pastrim gabimesh."
+          "question": "Çfarë është SEO teknike për ju?",
+          "answer": "SEO-ja teknike mbulon zvarritjen, indeksimin, Core Web Vitals, të dhënat e strukturuara, hartën e faqes dhe robotët, kanonikat, lidhjet e brendshme dhe pastrimin e gabimeve – gjithçka që motorët e kërkimit kanë nevojë për të kuptuar mirë sitin."
         },
         {
           "id": "seo-7",
-          "question": "A krijoni përmbajtje SEO?",
-          "answer": "Po: briefs, outlines, blog, landing page dhe FAQ të përshtatura me intent dhe të strukturuara për dukshmëri në AI."
+          "question": "A ndihmoni me përmbajtje për SEO?",
+          "answer": "po. Ne krijojmë përmbledhje, skica, blogje, faqe fillestare dhe FAQ që përputhen me qëllimin e kërkimit dhe janë të strukturuara në një mënyrë miqësore me AI."
         },
         {
           "id": "seo-8",
-          "question": "Çfarë është E-E-A-T?",
-          "answer": "Experience, Expertise, Authoritativeness, Trust — kritike për renditje dhe kredibilitet në përmbledhjet e AI."
+          "question": "Çfarë është E-E-A-T dhe pse ka rëndësi?",
+          "answer": "E-E-A-T do të thotë Përvoja, Ekspertiza, Autoriteti dhe Besimi. E-E-A-T e fortë ndihmon renditjen dhe besueshmërinë e markës suaj në përmbledhjet e AI."
         },
         {
           "id": "seo-9",
-          "question": "A bëni link building?",
-          "answer": "Po, etik dhe relevant: digital PR, partneritete dhe content assets — kurrë skema spam."
+          "question": "A bëni ndërtimin e lidhjeve?",
+          "answer": "Po, në mënyrë etike dhe relevante: PR dixhitale, partneritetet dhe asetet e përmbajtjes. Ne nuk përdorim skemat e lidhjeve të padëshiruara."
         },
         {
           "id": "seo-10",
-          "question": "A mund të rikuperoni nga dëmtime SEO?",
-          "answer": "Po: rikuperim pas ndryshimeve algoritmike, link-e toksike, probleme indexation dhe rregullime të content cannibalization."
+          "question": "A mund të riparoni dëmtimet ekzistuese të SEO?",
+          "answer": "po. Ne riparojmë dëmtimet pas përditësimeve, lidhjeve toksike, problemeve të indeksimit ose kanibalizimit të përmbajtjes, më pas vendosim një rrugë të pastër rritjeje."
         },
         {
           "id": "seo-11",
-          "question": "Si raportoni progresin e SEO?",
-          "answer": "Mujor ose për sprint: renditje, trafik, konvertime, çështje teknike dhe hapat e radhës."
+          "question": "Si e raportoni përparimin e SEO?",
+          "answer": "Ne raportojmë çdo muaj ose për sprint renditjet, trafikun, konvertimet, çështjet teknike dhe veprimet e ardhshme, kështu që është e qartë se çfarë bëmë dhe çfarë vjen më pas."
         },
         {
           "id": "seo-12",
-          "question": "A funksionon SEO për ecommerce?",
-          "answer": "Po: SEO për produkte/kategori, faceted navigation, reviews, structured data dhe content hubs për intent blerjeje."
+          "question": "A funksionon SEO për tregtinë elektronike?",
+          "answer": "Absolutisht. Ne optimizojmë SEO-në e produkteve dhe kategorive, navigimin e aspekteve, rishikimet, të dhënat e strukturuara dhe qendrat e përmbajtjes rreth qëllimit të blerjes."
         },
         {
           "id": "seo-13",
-          "question": "A është SEO njëherësh apo i vazhdueshëm?",
-          "answer": "Rezultatet më të mira vijnë nga optimizimi i vazhdueshëm. Auditet njëherëshe ndihmojnë, por konkurrentët lëvizin vazhdimisht."
+          "question": "A është SEO një projekt i vetëm apo i vazhdueshëm?",
+          "answer": "Rezultatet më të mira vijnë nga optimizimi i vazhdueshëm. Auditimet e njëhershme ndihmojnë, por konkurrentët nuk qëndrojnë të palëvizshëm - kjo është arsyeja pse ne vazhdojmë të matim dhe rregullojmë."
         },
         {
           "id": "seo-14",
-          "question": "A mbështesni SEO ndërkombëtar?",
-          "answer": "Po: hreflang, kërkim tregu sipas locale, lokalizim dhe konfigurime teknike multi-locale."
+          "question": "A ndihmoni me SEO ndërkombëtare?",
+          "answer": "po. Ne trajtojmë hreflang, kërkimin e tregut për shtet ose gjuhë, lokalizimin e përmbajtjes dhe konfigurimet teknike me shumë vendndodhje."
         }
       ]
     },
     {
       "id": "advertising",
-      "title": "Reklamimi",
+      "title": "Reklamim",
       "items": [
         {
           "id": "ads-1",
-          "question": "Cilat kanale reklamash menaxhoni?",
-          "answer": "Google Ads, Meta, LinkedIn, dhe kur është e nevojshme YouTube/retargeting — bazuar në funnel dhe buxhet."
+          "question": "Cilat kanale reklamimi mbështetni?",
+          "answer": "Ne mbështesim Google Ads, Meta (Facebook/Instagram), LinkedIn dhe aty ku është e rëndësishme YouTube ose ri-targetimin — të përafruar me kanalin dhe buxhetin."
         },
         {
           "id": "ads-2",
-          "question": "Si i vendosni buxhetet e reklamave?",
-          "answer": "Nga objektivat (leads/shitje), CAC i synuar, çmimet e ankandit dhe një fazë testimi. Nisim lean dhe rrisim atë që funksionon."
+          "question": "Si e përcaktoni buxhetin e duhur të reklamave?",
+          "answer": "Ne vendosim buxhetin bazuar në qëllimet (udhëheqjet ose shitjet), objektivat e CAC, çmimet e tregut dhe një fazë testimi. Ne fillojmë të ligëtojmë dhe shkallëzojmë atë që funksionon."
         },
         {
           "id": "ads-3",
-          "question": "Cila është qasja juaj për Google Ads?",
-          "answer": "Struktura e llogarisë, hartëzim i intent, negatives, përshtatje me landing page, conversion tracking dhe optimizim javor."
+          "question": "Cila është qasja juaj ndaj Google Ads?",
+          "answer": "Ne vendosim një strukturë të qartë llogarie, synimin e kërkimit në hartë, shtojmë fjalë kyçe negative, kontrollojmë përshtatjen e faqes së uljes, konfigurojmë gjurmimin e konvertimit dhe optimizojmë çdo javë."
         },
         {
           "id": "ads-4",
-          "question": "A mund të menaxhoni Meta Ads për ecommerce?",
-          "answer": "Po: catalogs/retargeting, creatives, audiences dhe testim kreativash për të rritur ROAS."
+          "question": "A mund të ekzekutoni Meta Ads për tregtinë elektronike?",
+          "answer": "po. Ne drejtojmë katalogë dhe fushata ri-targetimi, testojmë kreativat dhe audiencat dhe optimizojmë për të përmirësuar ROAS."
         },
         {
           "id": "ads-5",
           "question": "Si e matni suksesin e reklamave?",
-          "answer": "Konvertime, CPA/CAC, ROAS, cilësia e lead-ove dhe pipeline — jo klikime pa vlerë."
+          "answer": "Ne matim konvertimet, CPA/CAC, ROAS, cilësinë e plumbit dhe tubacionin - jo vetëm klikimet. Në këtë mënyrë ne optimizojmë për rezultatet në vend të vëllimit."
         },
         {
           "id": "ads-6",
-          "question": "Po nëse tracking është prishur?",
-          "answer": "Rregullojmë GTM/GA4/pixels, consent setups kur duhet dhe opsione më të forta matjeje."
+          "question": "Po nëse gjurmimi është i gabuar?",
+          "answer": "Më pas ne rregullojmë etiketimin (GTM, GA4 dhe pikselët), modalitetin e pëlqimit aty ku nevojitet dhe opsionet nga ana e serverit për të dhëna më të besueshme."
         },
         {
           "id": "ads-7",
-          "question": "A menaxhoni B2B LinkedIn Ads?",
-          "answer": "Po, me targetim të mprehtë, lead forms ose landing page dhe mesazhe për vendimmarrës."
+          "question": "A ekzekutoni gjithashtu reklama B2B LinkedIn?",
+          "answer": "po. Ne përdorim shënjestrim të mprehtë, forma të gjeneratës së parë ose faqe dhe përmbajtje që u flasin vendimmarrësve."
         },
         {
           "id": "ads-8",
-          "question": "Sa shpejt japin rezultate reklamat?",
-          "answer": "Trafiku mund të jetë i menjëhershëm. CPA/ROAS i qëndrueshëm zakonisht kërkon 2–6 javë mësim dhe iterim."
+          "question": "Sa shpejt do të shoh rezultatet nga reklamat?",
+          "answer": "Trafiku mund të arrijë menjëherë. CPA e qëndrueshme ose ROAS zakonisht kanë nevojë për 2 deri në 6 javë mësim dhe përsëritje krijuese."
         },
         {
           "id": "ads-9",
-          "question": "A krijoni creatives për reklama?",
-          "answer": "Po: copy, vizuale dhe variante testimi — dizajn/media creation përfshihet kur duhet."
+          "question": "A krijoni edhe kreativa reklamash?",
+          "answer": "po. Ne krijojmë kopje, pamje vizuale dhe variante testimi. Dizajni dhe krijimi i mediave mund të përfshihen në mënyrë që fushatat të mos presin kreativitet."
         },
         {
           "id": "ads-10",
-          "question": "A mund të përforcojnë njëra-tjetrën ads dhe SEO?",
-          "answer": "Po. Insight-et nga search ushqejnë SEO; faqet organike të forta përmirësojnë Quality Score dhe ulin CPA."
+          "question": "A munden reklamat dhe SEO të përforcojnë njëra-tjetrën?",
+          "answer": "Absolutisht. Kërkoni të dhëna nga burimet e reklamave SEO; faqet e forta organike ulin CPA dhe rrisin Rezultatin e Cilësisë."
         },
         {
           "id": "ads-11",
-          "question": "A mund të merrni përsipër llogari ekzistuese reklamash?",
-          "answer": "Po. Bëjmë audit, ristrukturim dhe optimizim pa rebuild të panevojshëm."
+          "question": "A menaxhoni llogaritë ekzistuese të reklamave?",
+          "answer": "po. Ne auditojmë, ristrukturojmë dhe optimizojmë pa filluar në mënyrë të panevojshme nga e para."
         },
         {
           "id": "ads-12",
-          "question": "Si e parandaloni shpenzimin e kotë?",
-          "answer": "Negatives, exclusions, caps, geo controls, frequency limits dhe kill switches të shpejtë."
+          "question": "Si të parandaloni shpenzimin e buxhetit të reklamave?",
+          "answer": "Ne parandalojmë humbjet me fjalë kyçe negative, përjashtime të audiencës, kufizime buxhetore, gjeografike, kontrollin e frekuencës dhe ndalimin e shpejtë të performuesve të dobët."
         },
         {
           "id": "ads-13",
-          "question": "A ia vlen ende remarketing?",
-          "answer": "Po, kur është privacy-compliant me oferta të forta — shpesh shtresa më efikase."
+          "question": "A është ende i rëndësishëm marketingu i ri?",
+          "answer": "Po, kur është në përputhje me privatësinë dhe shoqërohet me kreativa dhe oferta të forta. Shpesh mbetet shtresa më efikase në gyp."
         }
       ]
     },
     {
       "id": "design",
-      "title": "Dizajni",
+      "title": "Dizajn",
       "items": [
         {
           "id": "des-1",
-          "question": "Çfarë shërbimesh dizajni ofroni?",
-          "answer": "Logo, identitet marke, karta biznesi, letterhead, flyers, postera, stickers, revista/broshura dhe vizuale digjitale."
+          "question": "Cilat shërbime dizajni ofroni?",
+          "answer": "Ne ofrojmë logo, identitet të markës, kartëvizita, letra me letra, fletushka, postera, ngjitëse, revista ose broshura dhe pamje dixhitale."
         },
         {
           "id": "des-2",
-          "question": "Cilat mjete përdorni?",
-          "answer": "Adobe Photoshop, Illustrator dhe InDesign për deliverables profesionale, të gatshme për print."
+          "question": "Në cilat mjete punoni?",
+          "answer": "Ne punojmë në Adobe Photoshop, Illustrator dhe InDesign në mënyrë që skedarët të jenë të gatshëm për printim dhe të këmbyeshëm profesionalisht."
         },
         {
           "id": "des-3",
-          "question": "A dorëzoni skedarë print-ready?",
-          "answer": "Po: CMYK, bleed, crop marks dhe eksportime të sakta PDF, plus variante për ekran."
+          "question": "A dorëzoni skedarë të gatshëm për printim?",
+          "answer": "po. Ne ofrojmë CMYK, gjakderdhje, shenja të prerjes dhe eksportin e duhur PDF/X aty ku nevojitet, plus variante ekrani për përdorim dixhital."
         },
         {
           "id": "des-4",
-          "question": "Si funksionon një projekt logoje?",
-          "answer": "Brief → koncepte → raunde feedback-u → vektorë finalë (SVG/PDF/AI) dhe udhëzime bazë përdorimi."
+          "question": "Si funksionon një projekt logo?",
+          "answer": "Një projekt logo fillon nga informimi te konceptet, më pas raundet e reagimeve dhe përfundon me skedarët vektorial përfundimtar (SVG/PDF/AI) dhe udhëzimet bazë."
         },
         {
           "id": "des-5",
-          "question": "A mund të rifreskoni një markë ekzistuese?",
-          "answer": "Po — përditësim logoje, ngjyrash dhe tipografie duke ruajtur njohjen."
+          "question": "Mund të përditësoni markën tonë ekzistuese?",
+          "answer": "po. Ne rifreskojmë logon, ngjyrën, tipografinë dhe aplikacionet pa u prishur njohje."
         },
         {
           "id": "des-6",
-          "question": "A krijoni template për rrjetet sociale?",
-          "answer": "Po, që ekipi juaj të publikojë në mënyrë konsistente dhe shpejt."
+          "question": "A bëni edhe shabllone sociale?",
+          "answer": "po. Ne krijojmë shabllone të qëndrueshme për postime, histori dhe reklama në mënyrë që ekipi juaj të mund të publikojë shpejt dhe në mënyrë të dallueshme."
         },
         {
           "id": "des-7",
-          "question": "Dizajn digjital vs print?",
-          "answer": "Print kërkon hapësirë ngjyrash, rezolucion dhe margjina; digjitali kërkon mprehtësi në ekran dhe shpejtësi. I dorëzojmë të dyja siç duhet."
+          "question": "Cili është ndryshimi midis dizajnit dixhital dhe atij të printuar?",
+          "answer": "Printimi ka nevojë për hapësirë ​​ngjyrash, rezolucion dhe margjina të shkurtimit; dixhitali ka nevojë për mprehtësi në ekran dhe kohë të shpejtë të ngarkimit. Ne i dorëzojmë të dyja në mënyrë korrekte, të përshtatura sipas kanalit."
         },
         {
           "id": "des-8",
-          "question": "A mund të bëni layout për revista ose broshura?",
-          "answer": "Po, punë shumëfaqëshe në InDesign me gride, stile dhe kontrolle prepress."
+          "question": "A mund të hartoni revista ose broshura?",
+          "answer": "po. Ne krijojmë paraqitje me shumë faqe në InDesign me rrjet, stile dhe kontrolle para shtypjes, të gatshme për printim ose shpërndarje dixhitale."
         },
         {
           "id": "des-9",
-          "question": "A e menaxhoni printimin?",
-          "answer": "Po. Ne dizajnojmë dhe mund të printojmë në sasi të vogla ose të mëdha — nga karta biznesi dhe stickers te flyers, postera dhe broshura — me prova dhe koordinim prodhimi."
+          "question": "A ndihmoni me printimin?",
+          "answer": "po. Ne dizenjojmë dhe mund të printojmë në sasi të vogla ose të mëdha - nga kartat e biznesit dhe ngjitëset deri te fletushkat, posterat dhe broshurat - me prova dhe koordinim përmes dorëzimit."
         },
         {
           "id": "des-10",
-          "question": "Sa raunde feedback-u përfshihen?",
-          "answer": "Zakonisht 2–3 raunde të strukturuara; më shumë me marrëveshje."
+          "question": "Sa raunde reagimesh janë përfshirë?",
+          "answer": "Zakonisht përfshihen 2 deri në 3 raunde të strukturuara. Raunde shtesë janë të mundshme me marrëveshje."
         },
         {
           "id": "des-11",
-          "question": "A marrim source files?",
-          "answer": "Po, siç biem dakord (AI/PSD/INDD ose export packs)."
+          "question": "A marrim skedarë burimor?",
+          "answer": "Po, brenda dorëzimit të rënë dakord. Kjo mund të jetë AI, PSD ose INDD, ose një paketë eksporti - në varësi të asaj që kemi rënë dakord."
         },
         {
           "id": "des-12",
-          "question": "A mund të përputhen dizajni dhe web dizajni?",
-          "answer": "Po. Sistemet e markës dhe UI mbeten konsistente në print dhe web."
+          "question": "A mund të funksionojnë së bashku dizajni dhe dizajni i internetit?",
+          "answer": "po. Ne lidhim dizajnin e markës dhe sistemet e ndërfaqes së përdoruesit, në mënyrë që printimi dhe faqja e internetit të formojnë një të tërë."
         },
         {
           "id": "des-13",
-          "question": "Ku mund të mësoj më shumë për Digital Design?",
-          "answer": "Vizitoni /digital-design dhe shërbimet Digital Design në menu."
+          "question": "Ku mund të mësoj më shumë rreth Dizajnit Dixhital?",
+          "answer": "Më shumë informacion është në /digital-design dhe nëpërmjet shërbimeve të Dizajnit Dixhital në meny."
         }
       ]
     },
@@ -371,367 +371,367 @@
       "items": [
         {
           "id": "mkt-1",
-          "question": "Çfarë shërbimesh marketingu ofroni?",
-          "answer": "AEO/GEO/SEO, përmbajtje, social, ads, rritje ecommerce, product listing, community management dhe data entry."
+          "question": "Cilat shërbime marketingu ofroni?",
+          "answer": "Ne ofrojmë AEO/GEO/SEO, përmbajtje, sociale, reklama, rritje të tregtisë elektronike, listën e produkteve, menaxhimin e komunitetit dhe futjen e të dhënave."
         },
         {
           "id": "mkt-2",
-          "question": "Si ndërtoni një strategji marketingu?",
-          "answer": "Objektiva, audiencë, pozicionim, miks kanalesh, content pipeline dhe KPI — praktike dhe e zbatueshme."
+          "question": "Si të ndërtoni një strategji marketingu?",
+          "answer": "Ne ndërtojmë një strategji rreth qëllimeve, audiencës, pozicionimit, përzierjes së kanaleve, tubacionit të përmbajtjes dhe KPI-ve — praktike dhe të ekzekutueshme, jo vetëm në letër."
         },
         {
           "id": "mkt-3",
-          "question": "Çfarë është full-funnel marketing për ju?",
-          "answer": "Awareness → consideration → conversion → retention, me role të qarta të kanaleve."
+          "question": "Çfarë është për ju marketingu me gyp të plotë?",
+          "answer": "Gypa e plotë shkon nga ndërgjegjësimi (përmbajtja dhe reklamat) përmes shqyrtimit (rastet dhe SEO) te konvertimi (faqet e uljes dhe CRM) dhe më pas mbajtja, kështu që çdo fazë ka një rol të qartë."
         },
         {
           "id": "mkt-4",
           "question": "A ndihmoni me pozicionimin?",
-          "answer": "Po. Pozicionimi i qartë shmang fushata të shpërndara dhe konvertim të dobët."
+          "answer": "po. Pozicionimi i qartë parandalon fushatat e fragmentuara dhe konvertimin e dobët."
         },
         {
           "id": "mkt-5",
-          "question": "A ofroni shkrim përmbajtjeje?",
-          "answer": "Po: blog, website copy, newsletters, landing pages dhe copy shitjesh."
+          "question": "A mund të jepni shkrimin e përmbajtjes?",
+          "answer": "po. Ne shkruajmë bloge, kopje të uebsajteve, gazeta, faqe uljeje dhe kopje të shitjeve – të fokusuara në SEO dhe në konvertim."
         },
         {
           "id": "mkt-6",
-          "question": "A bëni ecommerce marketing?",
-          "answer": "Po: feeds, cilësi listing-esh, CRO, ads dhe SEO për kategori/produkte."
+          "question": "A bëni marketing e-commerce?",
+          "answer": "po. Ne punojmë në furnizimet e produkteve, cilësinë e listimit, CRO, reklamat dhe SEO për kategoritë dhe produktet."
         },
         {
           "id": "mkt-7",
           "question": "Çfarë është CRO?",
-          "answer": "Conversion Rate Optimization — përmirësimi i faqeve dhe funnels që më shumë vizitorë të konvertojnë."
+          "answer": "CRO është Optimizimi i Normës së Konvertimit: duke përmirësuar faqet, gypat dhe UX në mënyrë që më shumë vizitorë të konvertohen."
         },
         {
           "id": "mkt-8",
-          "question": "Si raportoni rezultatet e marketingut?",
-          "answer": "Raporte/dashboard me trafik, leads, shitje, CPA/ROAS dhe mësime sipas kanalit."
+          "question": "Si i raportoni rezultatet e marketingut?",
+          "answer": "Ne raportojmë përmes tabelave ose raporteve me trafikun, drejtimet, shitjet, CPA/ROAS dhe mësimet për kanal, duke përfshirë atë që bëjmë më pas."
         },
         {
           "id": "mkt-9",
-          "question": "A mund të punoni me ekipin tonë in-house?",
-          "answer": "Po — ekzekutim, këshillim, ose marrim përsipër një pjesë specialistike (vetëm SEO, vetëm ads, etj.)."
+          "question": "A punoni me ekipin tonë të marketingut të brendshëm?",
+          "answer": "po. Ne mund të ekzekutojmë, sparojmë ose marrim përsipër një pjesë të specializuar, për shembull vetëm SEO ose vetëm reklama."
         },
         {
           "id": "mkt-10",
-          "question": "Sa shpejt mund të lansohen fushatat?",
-          "answer": "Shpesh brenda 1–2 javësh pas tracking/setup; përmbajtja ecën paralelisht."
+          "question": "Sa shpejt i nisni fushatat?",
+          "answer": "Pas gjurmimit dhe konfigurimit, fushatat shpesh dalin drejtpërdrejt brenda 1 deri në 2 javë. Puna e përmbajtjes shkon paralelisht, kështu që krijuesit dhe faqet janë gati në kohë."
         },
         {
           "id": "mkt-11",
-          "question": "A mbështesni email marketing?",
-          "answer": "Po: flow, newsletters dhe copy, përfshirë integrime CRM/ecommerce."
+          "question": "A ndihmoni me marketingun me email?",
+          "answer": "po. Ne krijojmë flukse, buletine dhe kopjojmë. Integrimi me CRM ose e-commerce është i mundur."
         },
         {
           "id": "mkt-12",
-          "question": "A është marketingu gjithmonë retainer mujor?",
-          "answer": "Retainers janë të përshtatshëm për rritje të vazhdueshme; audit, redesign dhe launch mund të jenë projekte."
+          "question": "A është marketing një kontratë mujore?",
+          "answer": "Mbajtësit janë të zakonshëm për rritjen e vazhdueshme. Projekte të tilla si auditimi, ridizajnimi ose lançimi mund të jenë një herë."
         },
         {
           "id": "mkt-13",
-          "question": "Si e shmangni busywork pa rezultate?",
-          "answer": "Çdo aktivitet lidhet me KPI. Ajo që nuk performon rregullohet ose ndalet."
+          "question": "Si të parandaloni \"marketingun e zënë\" pa rezultate?",
+          "answer": "Çdo aktivitet është i lidhur me KPI. Taktikat me performancë të dobët ndalohen ose përmirësohen me të dhëna, kështu që buxheti shkon në atë që funksionon."
         }
       ]
     },
     {
       "id": "social-media",
-      "title": "Rrjetet sociale",
+      "title": "Media sociale",
       "items": [
         {
           "id": "soc-1",
           "question": "Cilat kanale sociale menaxhoni?",
-          "answer": "Kryesisht LinkedIn, Instagram, Facebook, dhe kur është e nevojshme X/TikTok — bazuar në përshtatjen me audiencën."
+          "answer": "Ne menaxhojmë kryesisht LinkedIn, Instagram dhe Facebook, dhe aty ku është e rëndësishme X ose TikTok - bazuar në audiencë, jo në reklama."
         },
         {
           "id": "soc-2",
-          "question": "Çfarë përfshin menaxhimi i rrjeteve sociale?",
-          "answer": "Strategji, kalendar, krijim/planifikim, përgjigje komunitetit, raportim dhe iterim."
+          "question": "Çfarë përfshihet në menaxhimin e mediave sociale?",
+          "answer": "Menaxhimi i mediave sociale mbulon strategjinë, kalendarin e përmbajtjes, krijimin dhe planifikimin, përgjigjet e komunitetit, raportimin dhe optimizimin e vazhdueshëm."
         },
         {
           "id": "soc-3",
-          "question": "A krijoni vizuale dhe video?",
-          "answer": "Po përmes media creation: imazhe, karusele, short-form video dhe template."
+          "question": "A krijoni edhe pamjet dhe videot?",
+          "answer": "Po, nëpërmjet krijimit të mediave: fotografi, karusele, video me formë të shkurtër dhe shabllone."
         },
         {
           "id": "soc-4",
           "question": "Sa shpesh postoni?",
-          "answer": "Varet nga objektivat — zakonisht 3–5 herë/javë në kanalet kryesore, cilësi mbi sasi."
+          "answer": "Kjo varet nga kanali dhe qëllimet. Zakonisht ne postojmë 3 deri në 5 herë në javë për kanalin bazë, me cilësi mbi vëllim."
         },
         {
           "id": "soc-5",
-          "question": "A ofroni community management?",
-          "answer": "Po: moderim, komente, DM dhe kujdes reputacioni me udhëzime të zërit të markës."
+          "question": "A ndihmoni me menaxhimin e komunitetit?",
+          "answer": "po. Ne trajtojmë moderimin, përgjigjet, DM-të dhe kujdesin për reputacionin sipas tonit të rënë dakord të zërit."
         },
         {
           "id": "soc-6",
-          "question": "A mund të punojnë bashkë social dhe ads?",
-          "answer": "Po. Fituesit organikë kthehen në creatives për ads; ads amplifikojnë atë që funksionon."
+          "question": "A mund të kombinohen social dhe reklamat?",
+          "answer": "po. Përmbajtja organike ushqen krijimet e reklamave; reklamat shkallëzojnë atë që funksionon në mënyrë organike."
         },
         {
           "id": "soc-7",
-          "question": "Si e matni suksesin në rrjete sociale?",
-          "answer": "Reach, engagement, klikime, leads dhe assisted conversions — jo vetëm likes."
+          "question": "Si e matni suksesin social?",
+          "answer": "Ne matim shtrirjen, angazhimin, klikim-out, drejtimet dhe konvertimet e asistuara - jo vetëm pëlqimet. Kjo tregon se çfarë vërtet kontribuon në rritje."
         },
         {
           "id": "soc-8",
-          "question": "A punoni me influencerë?",
-          "answer": "Me kërkesë: përzgjedhje, brief dhe tracking të fokusuar në rezultate të matshme."
+          "question": "A punoni me ndikues?",
+          "answer": "Sipas kërkesës: përzgjedhja, informimi dhe gjurmimi. Ne fokusohemi në rezultate të përshtatshme dhe të matshme, jo të arrijmë vetëm."
         },
         {
           "id": "soc-9",
-          "question": "A mund të mbështesni komunikim në krizë?",
-          "answer": "Po, me protokolle përgjigjeje të shpejtë të koordinuara me ekipin tuaj."
+          "question": "A mund të mbështesni komunikimin në krizë?",
+          "answer": "po. Ne përdorim protokolle të reagimit të shpejtë dhe lidhemi me ekipin tuaj, në mënyrë që përgjigjet të qëndrojnë të qëndrueshme dhe nën kontroll."
         },
         {
           "id": "soc-10",
-          "question": "A ndihmoni me LinkedIn thought leadership?",
-          "answer": "Po: përmbajtje personale + e kompanisë, karusele, raste dhe employee advocacy."
+          "question": "A ndihmoni me LinkedIn për udhëheqjen e mendimit B2B?",
+          "answer": "po. Ne krijojmë përmbajtje personale dhe të kompanisë, karusele, raste dhe mbrojtje të punonjësve në mënyrë që ekspertiza të bëhet e dukshme."
         },
         {
           "id": "soc-11",
-          "question": "A ofroni një kalendar përmbajtjeje?",
-          "answer": "Po — tema mujore ose tremujore, formate dhe afate."
+          "question": "A jepni një kalendar me përmbajtje?",
+          "answer": "po. Ne ofrojmë një plan mujor ose tremujor me tema, formate dhe afate."
         },
         {
           "id": "soc-12",
-          "question": "Po nëse kemi tashmë një social manager?",
-          "answer": "Mund të specializohemi (creatives, ads, strategji) ose të mbështesim periudha piku."
+          "question": "Po sikur të kemi tashmë një menaxher social?",
+          "answer": "Më pas ne mund të specializojmë në kreativitete, reklama ose strategji, ose të mbështesim periudhat e pikut pa zëvendësuar ekipin ekzistues."
         },
         {
           "id": "soc-13",
-          "question": "Sa shpejt do të rriten rrjetet sociale?",
-          "answer": "Konsistenca sjell rezultate me kohë. Rritja domethënëse zakonisht kërkon javë deri muaj; më shpejt me mbështetje nga ads."
+          "question": "Sa shpejt do të shohim rritje në social?",
+          "answer": "Konsistenca ka rëndësi. Rritja e konsiderueshme zakonisht zgjat me javë deri në muaj; me mbështetjen e reklamave shpesh shkon më shpejt."
         }
       ]
     },
     {
       "id": "support",
-      "title": "Mbështetja",
+      "title": "Mbështetje",
       "items": [
         {
           "id": "sup-1",
           "question": "Çfarë mbështetje ofroni?",
-          "answer": "Mbështetje WordPress, mbështetje për faqe custom, tickets/live chat, mirëmbajtje, siguri, performancë dhe reagim ndaj incidenteve."
+          "answer": "Ne ofrojmë mbështetje për WordPress, mbështetje me porosi të faqes në internet, bileta dhe biseda të drejtpërdrejta, mirëmbajtje, siguri, performancë dhe reagim ndaj incidenteve."
         },
         {
           "id": "sup-2",
-          "question": "Si ta kontaktoj support-in?",
-          "answer": "Përmes kontaktit, booking, tickets në dashboard ose live chat. Rastet urgjente marrin prioritet."
+          "question": "Si mund të arrij mbështetje?",
+          "answer": "Përmes kontaktit, një takimi, biletave në panelin e kontrollit ose bisedës së drejtpërdrejtë në sit. Rastet urgjente janë shënuar si prioritet."
         },
         {
           "id": "sup-3",
-          "question": "Cila është koha e reagimit?",
-          "answer": "Përgjigje e shpejtë fillestare (shpesh brenda një dite pune; downtime kritik më shpejt). SLA-të e sakta varen nga paketa."
+          "question": "Sa është koha juaj e përgjigjes?",
+          "answer": "Ne synojmë për një përgjigje të shpejtë të parë, shpesh brenda një dite pune. Për ndërprerjet kritike ne përgjigjemi më shpejt. SLA-të e sakta janë në paketat mbështetëse."
         },
         {
           "id": "sup-4",
           "question": "A ofroni monitorim 24/7?",
-          "answer": "Po në paketat përkatëse të support-it/hostingu: monitorim, backups dhe alerts."
+          "answer": "Po, në paketat përkatëse të mbështetjes dhe pritjes: monitorim, kopje rezervë dhe sinjalizime në mënyrë që problemet të bëhen të dukshme më herët."
         },
         {
           "id": "sup-5",
-          "question": "A mund të hiqni malware?",
-          "answer": "Po — WordPress dhe stack-e custom — duke përfshirë hardening dhe kujdes pasues."
+          "question": "Mund të hiqni malware?",
+          "answer": "Po — në WordPress si dhe në rafte të personalizuara — duke përfshirë forcimin dhe kujdesin e mëvonshëm, në mënyrë që faqja të kthehet e pastër dhe e mbrojtur më mirë."
         },
         {
           "id": "sup-6",
-          "question": "A i menaxhoni update-et e WordPress?",
-          "answer": "Po përmes WordPress maintenance & updates: core/plugins/themes me backups dhe kontrolle."
+          "question": "A trajtoni përditësimet e WordPress për ne?",
+          "answer": "Po, nëpërmjet \"Mirëmbajtja dhe përditësimet\": bërthama, shtojcat dhe temat, me kopje rezervë dhe kontrolle përpara dhe pas përditësimit."
         },
         {
           "id": "sup-7",
-          "question": "A mund të ndihmoni me çështje hostingu?",
-          "answer": "Po — diagnostikim, migrim ose optimizim i hostingu/VPS/domenit."
+          "question": "A ndihmoni me problemet e pritjes?",
+          "answer": "po. Ne diagnostikojmë, migrojmë ose optimizojmë hostin, VPS dhe domenet derisa faqja të funksionojë përsëri në mënyrë të qëndrueshme."
         },
         {
           "id": "sup-8",
-          "question": "Po nëse faqja ime është down?",
-          "answer": "Raportoni urgjencën. Restaurojmë përmes backups, kontrolleve të serverit dhe hotfix-eve me përditësime statusi."
+          "question": "Po sikur faqja ime të mos funksionojë?",
+          "answer": "Raportojeni si urgjente. Ne rivendosim aty ku është e mundur nëpërmjet kopjeve rezervë, kontrolleve të serverit dhe një rregullimi të drejtpërdrejtë dhe ju mbajmë të përditësuar për statusin gjatë rrugës."
         },
         {
           "id": "sup-9",
-          "question": "A ka portal klienti?",
-          "answer": "Po. Klientët e kyçur shohin dashboard, tickets, projekte dhe CRM/fatura relevante."
+          "question": "A ka një portal klienti?",
+          "answer": "po. Klientët e regjistruar shohin panelin e kontrollit, biletat, projektet dhe sipas rastit CRM ose faturat."
         },
         {
           "id": "sup-10",
-          "question": "A mund të hapin tickets disa anëtarë të ekipit?",
-          "answer": "Po, në varësi të roleve të llogarisë (client/manager/admin)."
+          "question": "A mund të hapin bileta shumë shokë skuadre?",
+          "answer": "Po, në varësi të roleve të llogarisë (klient, menaxher ose administrator)."
         },
         {
           "id": "sup-11",
-          "question": "Çfarë përfshin Basic/Standard/Premium support?",
-          "answer": "Më shumë faqe, ndjekje më e shpejtë dhe mbulim më i gjerë (updates, malware, shpejtësi, SEO). Shihni faqet e support-it për detaje."
+          "question": "Çfarë përfshihet në mbështetjen Basic/Standard/Premium?",
+          "answer": "Paketat më të larta mbulojnë më shumë sajte, ndjekje më të shpejtë dhe mbulim më të gjerë (përditësime, malware, shpejtësi, SEO). Detajet janë në faqet e mbështetjes."
         },
         {
           "id": "sup-12",
-          "question": "A ndihmoni edhe me pyetje jo-teknike?",
-          "answer": "Po — shërbime, faturim dhe pyetje llogarie, me thellësi teknike sipas paketës."
+          "question": "A ndihmoni edhe me pyetje jo teknike?",
+          "answer": "Po, për shërbimet, faturimin dhe llogarinë. Sa thellë shkojmë teknikisht varet nga paketa juaj."
         },
         {
           "id": "sup-13",
-          "question": "A mund ta përmirësoj support-in më vonë?",
-          "answer": "Po, ndërsa rriten trafiku, rreziku ose nevojat e ekipit."
+          "question": "A mund ta përmirësoj mbështetjen më vonë?",
+          "answer": "po. Ju mund të rriteni kur rriten nevojat e trafikut, rrezikut ose ekipit."
         }
       ]
     },
     {
       "id": "webdesign",
-      "title": "Web dizajn",
+      "title": "Dizajni i faqes në internet",
       "items": [
         {
           "id": "web-1",
           "question": "A ndërtoni vetëm faqe WordPress?",
-          "answer": "Jo. Përveç WordPress ndërtojmë faqe custom në HTML/CSS/JS, PHP dhe Next.js — veçmas nga shërbimet WordPress."
+          "answer": "Jo. Përveç WordPress-it, ne bëjmë dizajnim me porosi të internetit në HTML/CSS/JS, PHP dhe Next.js — veçmas nga shërbimet e WordPress."
         },
         {
           "id": "web-2",
-          "question": "Çfarë është Website Support?",
-          "answer": "Dizajn, zhvillim, mirëmbajtje, siguri, performancë, backup/migrim dhe integrime API për stack-e custom."
+          "question": "Çfarë përfshin Mbështetja e Uebsajtit?",
+          "answer": "Mbështetja e faqes në internet mbulon dizajnin, zhvillimin, mirëmbajtjen, sigurinë, performancën, kopjet rezervë ose migrimin dhe integrimet e API-ve për grupe të personalizuara."
         },
         {
           "id": "web-3",
           "question": "A mund të ridizajnoni një faqe ekzistuese?",
-          "answer": "Po: rifreskim UX/UI, përmirësime konvertimi dhe modernizim teknik pa rewrite të plotë kur është e mundur."
+          "answer": "po. Ne bëjmë një rifreskim UX/UI, përmirësime të konvertimit dhe modernizim teknik, pa hedhur gjithçka nëse nuk është e nevojshme."
         },
         {
           "id": "web-4",
           "question": "A punoni me Next.js?",
-          "answer": "Po — i shkëlqyer për faqe marketingu të shpejta, SEO-ready dhe dashboard."
+          "answer": "po. Next.js është ideal për faqet e marketingut dhe panelet e shpejta, të gatshme për SEO."
         },
         {
           "id": "web-5",
-          "question": "A ndërtoni aplikacione PHP?",
-          "answer": "Po: portale, API, modernizim legacy dhe hardening i performancës/sigurisë."
+          "question": "A ndërtoni edhe aplikacione PHP?",
+          "answer": "po. Ne ndërtojmë portale dhe API, modernizojmë trashëgiminë dhe forcojmë performancën dhe sigurinë."
         },
         {
           "id": "web-6",
-          "question": "Si e trajtoni mobile?",
-          "answer": "Dizajn mobile-first, layout responsive dhe testim në pajisje/shfletues të zakonshëm."
+          "question": "Si i siguroni faqet e internetit për celular?",
+          "answer": "Ne projektojmë së pari celularin, ndërtojmë paraqitje të përgjegjshme dhe testojmë në pajisjet dhe shfletuesit e zakonshëm në mënyrë që faqja të funksionojë kudo."
         },
         {
           "id": "web-7",
-          "question": "A përfshihet aksesueshmëria?",
-          "answer": "Ndjekim bazat e forta a11y; programe më të rrepta WCAG mund të përfshihen në scope."
+          "question": "A përfshihet aksesueshmëria (a11y)?",
+          "answer": "Ne ndërtojmë me praktika bazë të arritshme. Programet më të rrepta WCAG mund të përfshihen si shtrirje shtesë."
         },
         {
           "id": "web-8",
-          "question": "Opsione CMS pa WordPress?",
-          "answer": "Po: headless CMS, admin custom ose konfigurime statike sipas ekipit tuaj."
+          "question": "A mund të ofroni opsione CMS pa WordPress?",
+          "answer": "po. Ky mund të jetë një CMS pa kokë, administrator i personalizuar ose një konfigurim statik – në varësi të ekipit dhe nevojave tuaja."
         },
         {
           "id": "web-9",
-          "question": "Sa zgjat një projekt web dizajni?",
-          "answer": "Landing page në disa javë; faqe/aplikacione më të mëdha në disa sprint-e pas planifikimit fillestar."
+          "question": "Sa kohë zgjat një projekt i dizajnit të internetit?",
+          "answer": "Faqet e uljes zakonisht zgjasin disa javë; sajte ose aplikacione më të mëdha funksionojnë në sprint për disa javë. Planifikimi vijon pas marrjes."
         },
         {
           "id": "web-10",
-          "question": "A përfshini copy dhe SEO në launch?",
-          "answer": "Po kur kombinohet me përmbajtje/SEO që faqja të lançohet e kërkueshme dhe gati për konvertim."
+          "question": "A trajtoni gjithashtu kopjimin dhe SEO në fillim?",
+          "answer": "Po, e kombinuar me përmbajtjen dhe shërbimet e SEO, në mënyrë që faqja të shfaqet menjëherë e kërkueshme dhe e fokusuar në konvertim."
         },
         {
           "id": "web-11",
-          "question": "Po performance pas launch-it?",
-          "answer": "Optimizojmë Core Web Vitals, caching/CDN dhe monitorim përmes paketave të mirëmbajtjes."
+          "question": "Po performanca pas nisjes?",
+          "answer": "Ne optimizojmë Core Web Vitals, caching ose CDN dhe monitorimin. Kujdesi i mëpasshëm vazhdon më pas nëpërmjet paketave të mirëmbajtjes."
         },
         {
           "id": "web-12",
-          "question": "A mund të integroni API (CRM, pagesa, AI)?",
-          "answer": "Po, me error handling të rregullt, logging dhe dokumentacion."
+          "question": "A mund të lidhni API (CRM, pagesa, AI)?",
+          "answer": "po. Ne ndërtojmë integrime me trajtimin e pastër të gabimeve, regjistrimin dhe dokumentacionin."
         },
         {
           "id": "web-13",
-          "question": "Si dorëzohet kodi?",
-          "answer": "Përmes repo/deploy pipelines kur është e mundur, me staging/production dhe handover."
+          "question": "Si e dorëzoni kodin?",
+          "answer": "Aty ku është e mundur, ne dorëzojmë përmes depove dhe vendosim tubacion, me mjedise (instalim dhe prodhim) dhe një dorëzim të qartë."
         },
         {
           "id": "web-14",
-          "question": "A ndihmoni me CRO në faqe?",
-          "answer": "Po: përmirësime UX, forma, CTA, eksperimente dhe shpejtësi faqeje."
+          "question": "A ndihmoni me optimizimin e konvertimit në vend?",
+          "answer": "po. Ne kryejmë teste A/B, përmirësime UX, formularë, CTA dhe shpejtësi të faqes në mënyrë që më shumë vizitorë të konvertohen."
         }
       ]
     },
     {
       "id": "webhosting",
-      "title": "Web hosting dhe domenet",
+      "title": "Webhosting dhe domenet",
       "items": [
         {
           "id": "host-1",
-          "question": "Çfarë hosting ofroni?",
-          "answer": "Shared, WordPress dhe VPS hosting në nivele Basic/Plus/Business, plus domenet."
+          "question": "Cilin hosting ofroni?",
+          "answer": "Ne ofrojmë pritje të përbashkët, pritje të WordPress dhe VPS – në nivelet Basic, Plus dhe Business – plus domenet."
         },
         {
           "id": "host-2",
-          "question": "Shared vs WordPress vs VPS?",
-          "answer": "Shared është për faqe më të vogla. WordPress hosting është i optimizuar për WP. VPS ofron më shumë resurse/kontroll për ngarkesa më të mëdha."
+          "question": "Cili është ndryshimi midis të përbashkët, WordPress dhe VPS?",
+          "answer": "Shared është me kosto efektive për sajte më të vogla. Pritja e WordPress është optimizuar për WP. VPS jep më shumë burime dhe kontroll për ngarkesa më të rënda."
         },
         {
           "id": "host-3",
           "question": "A ndihmoni me regjistrimin e domenit?",
-          "answer": "Po — këshillim, regjistrim/transfer dhe konfigurim korrekt të DNS."
+          "answer": "po. Ne këshillojmë, regjistrojmë ose transferojmë domenin dhe lidhim saktë DNS."
         },
         {
           "id": "host-4",
-          "question": "A është SSL i përfshirë?",
-          "answer": "Po, SSL është i përfshirë në planet përkatëse të hostingu."
+          "question": "A përfshihet SSL me pritjen?",
+          "answer": "po. SSL është standard në planet tona përkatëse të pritjes."
         },
         {
           "id": "host-5",
-          "question": "A mund ta migroni faqen time në hostingun tuaj?",
-          "answer": "Po: backup, migrim, DNS cutover, SSL dhe smoke tests me downtime minimal."
+          "question": "A mund ta migroni faqen time në hostin tuaj?",
+          "answer": "po. Ne trajtojmë rezervimin, migrimin, ndërprerjen e DNS, SSL dhe testet e tymit, me kohë minimale joproduktive."
         },
         {
           "id": "host-6",
-          "question": "Si funksionojnë backup-et?",
-          "answer": "Varet nga plani: backup-e të thjeshta ose të automatizuara. Ruajtje shtesë off-site është e disponueshme."
+          "question": "Si funksionojnë kopjet rezervë në pritje?",
+          "answer": "Kjo varet nga plani: kopje rezervë të thjeshta ose të automatizuara. Mbajtja shtesë jashtë vendit është e disponueshme."
         },
         {
           "id": "host-7",
-          "question": "Po nëse trafiku rritet?",
-          "answer": "Shkallëzojmë në Plus/Business ose VPS dhe optimizojmë caching/CDN."
+          "question": "Po sikur të marr më shumë trafik?",
+          "answer": "Pastaj ne shkallëzojmë në Plus, Business ose VPS dhe optimizojmë caching-un dhe CDN-në në mënyrë që faqja të mund të përballojë rritjen."
         },
         {
           "id": "host-8",
-          "question": "A përfshihet email me domenet?",
-          "answer": "Varet nga konfigurimi. Këshillojmë zgjidhje të besueshme email dhe DNS auth (SPF/DKIM/DMARC)."
+          "question": "A ofroni email me domene?",
+          "answer": "Kjo varet nga paketa dhe konfigurimi. Ne këshillojmë zgjidhje të besueshme të postës dhe vendosim saktë DNS (SPF, DKIM dhe DMARC)."
         },
         {
           "id": "host-9",
-          "question": "Sa i sigurt është hostingu juaj?",
-          "answer": "SSL/firewall, updates, monitorim dhe hardening, me shërbime sigurie opsionale shtesë."
+          "question": "Sa i sigurt është hostimi juaj?",
+          "answer": "Ne përdorim firewall, SSL, përditësime, monitorim dhe forcim. Shërbimet shtesë të sigurisë mund të shtojnë më shumë shtresa në krye."
         },
         {
           "id": "host-10",
-          "question": "A mund të kaloj më vonë nga shared në VPS?",
-          "answer": "Po — migrim i planifikuar me testim dhe rollback."
+          "question": "A mund të kaloj nga shared në VPS më vonë?",
+          "answer": "po. Ne planifikojmë migrimin së bashku, duke përfshirë testet dhe rikthimin, në mënyrë që kalimi të qëndrojë i kontrolluar."
         },
         {
           "id": "host-11",
-          "question": "A mbështesni CDN?",
-          "answer": "Po kur është e nevojshme (shpesh e përfshirë në WordPress hosting) për shpërndarje më të shpejtë globale."
+          "question": "A e mbështet CDN?",
+          "answer": "Po, aty ku është e rëndësishme – shpesh një CDN falas përfshihet në planet e pritjes së WP – për shpërndarje më të shpejtë globale."
         },
         {
           "id": "host-12",
-          "question": "Cila është qasja juaj ndaj uptime?",
-          "answer": "Monitorim, reagim i shpejtë ndaj incidenteve dhe komunikim i qartë për dritaret e mirëmbajtjes."
+          "question": "Cila është qasja juaj në kohën e duhur?",
+          "answer": "Ne monitorojmë, reagojmë shpejt ndaj incidenteve dhe komunikojmë qartë rreth dritareve të mirëmbajtjes, në mënyrë që të dini se çfarë po ndodh."
         },
         {
           "id": "host-13",
-          "question": "A mund të rregulloni probleme DNS?",
-          "answer": "Po: records, propagim, mail auth dhe lidhje domeni."
+          "question": "A ndihmoni në zgjidhjen e problemeve DNS?",
+          "answer": "po. Ne rregullojmë regjistrimet, përhapjen, auth-in e postës dhe lidhjet e domenit derisa DNS të jetë përsëri i saktë."
         },
         {
           "id": "host-14",
-          "question": "Si ta zgjedh planin e duhur?",
-          "answer": "Bazuar në trafik, stack (WP vs custom), resurse dhe rritje. Këshillojmë me ndershmëri."
+          "question": "Si mund të zgjedh planin e duhur të pritjes?",
+          "answer": "Bazuar në trafikun, grumbullin (WordPress ose me porosi), burimet dhe rritjen. Ne këshillojmë sinqerisht - ne nuk e teprojmë."
         },
         {
           "id": "host-15",
-          "question": "Ku mund të shoh çmimet e hostingu?",
-          "answer": "Te faqet e shërbimeve të hostingu nën Services → Webhosting & Domains."
+          "question": "Ku mund të shoh çmimet e pritjes?",
+          "answer": "Në faqet e shërbimit të pritjes nën Shërbimet → Webhosting dhe domenet, me opsione mujore ose vjetore sipas rastit."
         }
       ]
     }

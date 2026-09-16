@@ -610,8 +610,8 @@
   },
   "agent000": {
     "name": "Agent 000",
-    "role": "Virtual FAQ & support assistant",
-    "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
+    "role": "Virtual FAQ & knowledge assistant",
+    "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I search our FAQ and knowledge base, share links, and can help you book or open a ticket.",
     "placeholder": "Ask Agent 000 a question…",
     "send": "Send",
     "thinking": "Agent 000 is thinking…",
@@ -620,7 +620,11 @@
     "actionBook": "Book appointment",
     "actionTicket": "Open live chat / ticket",
     "actionContact": "Contact",
-    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket."
+    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket.",
+    "pickOption": "Pick the best match",
+    "relatedLinks": "Helpful links",
+    "linkFaq": "FAQ",
+    "linkKb": "Knowledge base"
   },
   "appointment": {
     "title": "Book an appointment",

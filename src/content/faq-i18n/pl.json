@@ -1,149 +1,149 @@
 {
-  "title": "Najczęściej zadawane pytania",
-  "subtitle": "Szczegółowe odpowiedzi o TripleZero iT — od AI i SEO po design, marketing, wsparcie i hosting.",
-  "ctaTitle": "Wciąż potrzebujesz pomocy?",
-  "ctaText": "Nie możesz znaleźć odpowiedzi? Skontaktuj się z naszym zespołem, a szybko wrócimy do Ciebie.",
+  "title": "Często zadawane pytania",
+  "subtitle": "Szczegółowe pytania i odpowiedzi — od AI, AEO, GEO i SEO po projektowanie, domeny, hosting, marketing, media społecznościowe, wsparcie i nie tylko.",
+  "ctaTitle": "Nadal potrzebujesz pomocy?",
+  "ctaText": "Nie możesz znaleźć swojego pytania? Skontaktuj się z nami – skontaktujemy się z Tobą tak szybko, jak to możliwe.",
   "ctaButton": "Skontaktuj się z nami",
   "categories": [
     {
       "id": "general",
-      "title": "Ogólne",
+      "title": "Ogólny",
       "items": [
         {
           "id": "gen-1",
-          "question": "Czym zajmuje się TripleZero iT?",
-          "answer": "Łączymy webdesign, wsparcie WordPress, marketing cyfrowy, widoczność w wyszukiwarce (AEO, GEO/lokalne i SEO), design oraz hosting — pomagając markom być znajdowanymi, konwertować i rosnąć."
+          "question": "Co dokładnie robi TripleZero iT?",
+          "answer": "TripleZero iT łączy projektowanie stron internetowych, obsługę WordPress, marketing cyfrowy, widoczność w wyszukiwarkach (AEO, GEO/lokalnie i SEO), projektowanie i hosting. Pomagamy markom szybciej się znajdować, budować lepsze strony internetowe i rozwijać się w wymierny sposób."
         },
         {
           "id": "gen-2",
-          "question": "Jak zacząć?",
-          "answer": "Umów rozmowę lub skontaktuj się z nami. Robimy krótkie wprowadzenie, analizujemy cele i stack, a następnie proponujemy jasny plan z harmonogramem i KPI."
+          "question": "Jak rozpocząć pracę z TripleZero iT?",
+          "answer": "Skontaktuj się z nami lub zarezerwuj termin. Przeprowadzamy krótki przegląd, przeglądamy cele i układamy, a następnie przygotowujemy konkretną propozycję wraz z planowaniem i wskaźnikami KPI."
         },
         {
           "id": "gen-3",
-          "question": "Z jakimi firmami współpracujecie?",
-          "answer": "MŚP, scale-upy, ecommerce, agencje i marki międzynarodowe. Współpracujemy z istniejącymi zespołami oraz jako partner full-service."
+          "question": "Z jakimi rodzajami firm współpracujesz?",
+          "answer": "Współpracujemy z małymi i średnimi przedsiębiorstwami, przedsiębiorstwami typu Scale-up, e-commerce, agencjami i międzynarodowymi markami. Może to działać w ramach istniejącego zespołu lub jako partner świadczący kompleksowe usługi."
         },
         {
           "id": "gen-4",
-          "question": "Czy działacie tylko w Holandii?",
-          "answer": "Nie. Obsługujemy klientów w Beneluksie i międzynarodowo, w języku niderlandzkim i angielskim."
+          "question": "Czy pracujesz tylko w Holandii?",
+          "answer": "Nie. Obsługujemy klientów w krajach Beneluksu i na całym świecie, realizując zlecenia w języku niderlandzkim i angielskim."
         },
         {
           "id": "gen-5",
-          "question": "Jak wygląda typowa współpraca?",
-          "answer": "Wprowadzenie → audyt/scan → plan → realizacja w sprintach → pomiar → optymalizacja, z jasnymi kamieniami milowymi."
+          "question": "Jak wygląda typowe zaręczyny?",
+          "answer": "Typowe zaangażowanie przebiega w ten sposób: przyjęcie → audyt lub skanowanie → plan → wykonanie sprintu → pomiar → optymalizacja. Otrzymujesz jasne kamienie milowe i raporty, dzięki czemu zawsze wiesz, na czym stoimy."
         },
         {
           "id": "gen-6",
-          "question": "Czy mogę łączyć kilka usług?",
-          "answer": "Tak. Częste połączenia: webdesign + SEO + ads albo utrzymanie WordPress + hosting + bezpieczeństwo."
+          "question": "Czy mogę łączyć wiele usług?",
+          "answer": "Tak. Wielu klientów łączy projektowanie stron internetowych + SEO + reklamy lub utrzymanie WordPress + hosting + bezpieczeństwo. Dopasowujemy mieszankę do Twoich celów i budżetu."
         },
         {
           "id": "gen-7",
-          "question": "Jak szybko możecie zacząć?",
-          "answer": "Często w ciągu kilku dni roboczych po akceptacji. Pilne problemy (malware, downtime) mają priorytet."
+          "question": "Jak szybko możesz zacząć?",
+          "answer": "Zależy to od naszych możliwości, ale po akceptacji często rozpoczynamy w ciągu kilku dni roboczych. Pilne prace — takie jak błędy, złośliwe oprogramowanie lub przestoje — są traktowane priorytetowo, abyśmy mogli zająć się nimi tak szybko, jak to możliwe."
         },
         {
           "id": "gen-8",
-          "question": "Pracujecie zdalnie czy na miejscu?",
-          "answer": "Głównie zdalnie, ze strukturą komunikacji. Praca na miejscu jest dostępna na życzenie."
+          "question": "Pracujesz zdalnie czy na miejscu?",
+          "answer": "Pracujemy przede wszystkim zdalnie, z jasną komunikacją poprzez e-mail, czat i rozmowy telefoniczne. Na miejscu jest dostępny na żądanie, jeśli projekt tego wymaga."
         },
         {
           "id": "gen-9",
-          "question": "Jak komunikujecie postępy?",
-          "answer": "Regularne aktualizacje, ticketing/dashboard tam, gdzie ma to sens, plus raporty sprintowe lub miesięczne."
+          "question": "Jak zespół komunikuje postępy?",
+          "answer": "Informujemy Cię na bieżąco za pomocą regularnych aktualizacji, zgłoszeń lub pulpitu nawigacyjnego, w stosownych przypadkach, a także raportów sprinterskich lub miesięcznych z działaniami i wynikami."
         },
         {
           "id": "gen-10",
-          "question": "Czego potrzebujecie od nas na start?",
-          "answer": "Dostępów (jeśli potrzebne), celów, materiałów brandowych, kont analitycznych oraz istniejących danych logowania do narzędzi."
+          "question": "Czego potrzebujesz od nas na start?",
+          "answer": "Na początek potrzebujemy dostępu do strony internetowej i hostingu (jeśli jest wymagany), Twoich celów, wytycznych dotyczących marki, kont analitycznych i wszelkich istniejących narzędzi. Jeśli czegoś brakuje, najpierw pomagamy to umieścić na miejscu."
         },
         {
           "id": "gen-11",
-          "question": "Czy jesteście odpowiedni dla startupów?",
-          "answer": "Tak — od lean landing page’y i AI scanów po pełne systemy wzrostu, gdy skalujesz."
+          "question": "Czy Twoje usługi są odpowiednie dla startupów?",
+          "answer": "Tak. Skalujemy się od prostych stron docelowych i skanów AI po konfiguracje o pełnym rozwoju, więc podejście rośnie wraz z Tobą."
         },
         {
           "id": "gen-12",
-          "question": "Kto jest właścicielem efektów pracy i kont?",
-          "answer": "Ty jesteś właścicielem domen, treści, repozytoriów i kont reklamowych. Przy przekazaniu dostarczamy pliki i dokumentację."
+          "question": "Kto jest właścicielem dzieła i kont?",
+          "answer": "Twoja domena, treść, repozytoria kodów i konta reklamowe pozostają Twoje. Przy odbiorze dostarczamy pliki i dokumentację, dzięki czemu wszystko pozostaje pod Twoją kontrolą."
         },
         {
           "id": "gen-13",
-          "question": "Czy możecie współpracować z naszymi obecnymi dostawcami?",
-          "answer": "Tak. Pracujemy obok Twoich developerów/marketerów albo przejmujemy utrzymanie w uporządkowany sposób."
+          "question": "Czy możesz przejąć lub współpracować z istniejącymi dostawcami?",
+          "answer": "Tak. Płynnie współpracujemy z programistami, marketerami czy agencjami lub przejmujemy utrzymanie i optymalizację bez niepotrzebnego zakłócania dotychczasowej pracy."
         }
       ]
     },
     {
       "id": "ai",
-      "title": "AI",
+      "title": "sztuczna inteligencja",
       "items": [
         {
           "id": "ai-1",
-          "question": "Czym jest Wasz AI scan?",
-          "answer": "Scan gotowości na AI, który ocenia, jak dobrze Twoja strona radzi sobie w klasycznej wyszukiwarce, odpowiedziach AI i widoczności lokalnej/geograficznej (AEO, GEO, SEO oraz fundamenty techniczne)."
+          "question": "Czym jest skan AI w TripleZero iT?",
+          "answer": "Skanowanie gotowości do AI ocenia, jak dobrze Twoja witryna może zostać znaleziona przez klasyczne wyszukiwarki, odpowiedzi AI oraz wyniki wyszukiwania lokalne lub geograficzne (AEO, GEO, SEO i podstawy techniczne)."
         },
         {
           "id": "ai-2",
-          "question": "Co mierzy AI scan?",
-          "answer": "Sygnały AEO, widoczność GEO/lokalną, fundamenty SEO, strukturę treści, wskaźniki wydajności oraz gotowość na AI — z listą priorytetowych poprawek."
+          "question": "Co dokładnie mierzy skanowanie AI?",
+          "answer": "Skanowanie mierzy sygnały AEO, widoczność GEO/lokalną, podstawy SEO, strukturę treści, wskaźniki wydajności i gotowość AI. Otrzymujesz wyniki i konkretne punkty ulepszeń."
         },
         {
           "id": "ai-3",
-          "question": "Jak często powinniśmy robić AI scan?",
-          "answer": "Po większych zmianach na stronie lub kampaniach; dla aktywnych marek rekomendujemy cykliczne skany (np. kwartalnie)."
+          "question": "Jak często powinienem uruchamiać skanowanie AI?",
+          "answer": "Co najmniej po dużych zmianach w witrynie lub kampaniach. W przypadku aktywnych marek zalecamy skanowanie okresowe, np. co kwartał, dzięki czemu będziesz widoczny w wynikach wyszukiwania i AI."
         },
         {
           "id": "ai-4",
-          "question": "Czy AI to tylko pisanie treści?",
-          "answer": "Nie. To także techniczna widoczność, dane strukturalne, linkowanie wewnętrzne oraz to, jak systemy AI streszczają Twoją markę."
+          "question": "Czy sztuczna inteligencja pomaga tylko w zakresie treści?",
+          "answer": "Nie. Sztuczna inteligencja wpływa również na wykrywalność techniczną, dane strukturalne, linki wewnętrzne, bloki często zadawanych pytań i sposób, w jaki informacje o marce są podsumowywane w odpowiedziach AI."
         },
         {
           "id": "ai-5",
-          "question": "Czy możecie zintegrować AI z naszymi procesami?",
-          "answer": "Tak: wsparcie tworzenia treści, automatyzacje, przepływy chat/ticket oraz niestandardowe integracje przez API AI."
+          "question": "Czy możesz zintegrować sztuczną inteligencję z naszym przepływem pracy?",
+          "answer": "Tak. Możemy używać sztucznej inteligencji do wspomagania treści, automatyzacji, chatbota lub przepływu biletów, połączeń danych i niestandardowych interfejsów API wokół narzędzi sztucznej inteligencji."
         },
         {
           "id": "ai-6",
-          "question": "Czy AI zastępuje Waszą pracę strategiczną?",
-          "answer": "Nie. AI przyspiesza analizę i produkcję; strategia, ton marki i decyzje konwersyjne pozostają po stronie ludzi."
+          "question": "Czy sztuczna inteligencja zastępuje Twoją pracę strategiczną?",
+          "answer": "Nie. Sztuczna inteligencja przyspiesza analizę i produkcję, ale strategia, głos marki i decyzje dotyczące konwersji pozostają ludzkie i wymierne."
         },
         {
           "id": "ai-7",
-          "question": "Czy treści generowane przez AI są bezpieczne dla SEO?",
-          "answer": "Tylko z ludzką weryfikacją, unikalnym insightem i E-E-A-T. Unikamy cienkich, generycznych stron, które szkodzą rankingom."
+          "question": "Czy treści AI są bezpieczne dla SEO?",
+          "answer": "Tylko z ludzką oceną, unikalnymi spostrzeżeniami i E-E-A-T. Unikamy cienkiego, ogólnego tekstu, który szkodzi rankingom."
         },
         {
           "id": "ai-8",
-          "question": "Co to jest AI readiness?",
-          "answer": "To, jak dobrze Twoja strona, treści i dane są uporządkowane, aby systemy AI mogły poprawnie cytować, rekomendować i wyjaśniać Twoją markę."
+          "question": "Jaka jest gotowość AI dla mojej marki?",
+          "answer": "Jest to stopień, w jakim Twoja witryna, treść i dane są skonfigurowane tak, aby systemy AI mogły poprawnie cytować, polecać i wyjaśniać Twoją markę."
         },
         {
           "id": "ai-9",
-          "question": "Czy używacie agentów AI w dashboardzie?",
-          "answer": "Tak. Klienci mogą zobaczyć agentów dla SEO, treści, social i ads wraz ze statusem i zadaniami."
+          "question": "Czy możesz używać agentów AI w panelu kontrolnym?",
+          "answer": "Tak. W portalu klienta widzisz agentów AI do SEO, treści, mediów społecznościowych i reklam – w tym status i zadania."
         },
         {
           "id": "ai-10",
-          "question": "Z jakich narzędzi AI korzystacie?",
-          "answer": "Dobieramy narzędzia do zastosowania, z governance: źródła, fact-checking, zasady marki i prywatność."
+          "question": "Czy pracujesz z ChatGPT, Claude lub innymi narzędziami?",
+          "answer": "Narzędzia dobieramy według przypadku użycia. Zarządzanie ma znaczenie: źródła, sprawdzanie faktów, wytyczne dotyczące marki i prywatność, dzięki czemu wykorzystanie sztucznej inteligencji pozostaje niezawodne."
         },
         {
           "id": "ai-11",
-          "question": "Czy AI może pomóc w ticketach wsparcia?",
-          "answer": "Tak — w triage i szybszych odpowiedziach, z eskalacją do człowieka w sprawach złożonych lub wrażliwych."
+          "question": "Czy sztuczna inteligencja pomaga w przypadku zgłoszeń do pomocy technicznej?",
+          "answer": "Tak, w celu segregacji i szybszych odpowiedzi. Skomplikowane lub wrażliwe przypadki są zawsze eskalowane do członka zespołu – człowieka."
         },
         {
           "id": "ai-12",
-          "question": "Jak wyceniacie prace związane z AI?",
-          "answer": "Od podstawowego AI scanu po miesięczne retainer’y AI + marketing. Po wprowadzeniu otrzymasz jasną ofertę."
+          "question": "Ile kosztuje zaangażowanie w sztuczną inteligencję?",
+          "answer": "Obejmuje ona bezpłatne lub podstawowe skanowanie AI, a także miesięczne wsparcie AI i marketingowe. Po przyjęciu otrzymasz jasną propozycję."
         },
         {
           "id": "ai-13",
-          "question": "Jak mierzymy ROI z AI?",
-          "answer": "KPI takie jak ruch, leady, oszczędność czasu, output treści, czas rozwiązania ticketów i konwersje — ustalane z góry."
+          "question": "Jak mierzyć ROI inicjatyw AI?",
+          "answer": "Poprzez KPI, takie jak ruch, potencjalni klienci, zaoszczędzony czas, zawartość wyjściowa, rozwiązywanie zgłoszeń i konwersja. Definiujemy je od razu w planie, aby wyniki były widoczne."
         }
       ]
     },
@@ -154,72 +154,72 @@
         {
           "id": "seo-1",
           "question": "Jaka jest różnica między AEO, GEO i SEO?",
-          "answer": "AEO (Answer Engine Optimization) optymalizuje pod odpowiedzi AI. GEO (Geographic Search Engine Optimization) wzmacnia widoczność lokalną i regionalną w Maps, local packach i wyszukiwaniu opartym o lokalizację. SEO dotyczy klasycznych wyszukiwarek."
+          "answer": "AEO (Answer Engine Optimization) skupia się na odpowiedziach AI. GEO (Geographic Search Engine Optimization) zwiększa widoczność lokalną i regionalną w Mapach, pakietach lokalnych i wyszukiwaniu opartym na lokalizacji. Optymalizacja SEO pod kątem klasycznych wyszukiwarek."
         },
         {
           "id": "seo-2",
-          "question": "Dlaczego AEO/GEO są teraz ważne?",
-          "answer": "Coraz więcej osób dostaje odpowiedzi przez AI i szuka lokalnie („blisko mnie”). Bez AEO tracisz cytowania AI; bez GEO tracisz leady z okolicy — nawet jeśli klasyczne SEO jest mocne."
+          "question": "Dlaczego AEO/GEO ma teraz znaczenie?",
+          "answer": "Więcej osób poszukujących uzyskuje odpowiedzi za pośrednictwem sztucznej inteligencji, a także wyszukuje lokalnie („blisko mnie”). Bez AEO brakuje Ci cytatów AI; bez GEO tęsknisz za lokalnymi leadami – nawet jeśli klasyczne SEO jest solidne."
         },
         {
           "id": "seo-3",
-          "question": "Jak zaczynacie współpracę SEO?",
-          "answer": "Audyt techniczny, research keywordów/intencji, analiza luk treści i priorytetyzowana roadmapa powiązana z KPI biznesowymi."
+          "question": "Jak rozpocząć współpracę z SEO?",
+          "answer": "Zaczynamy od audytu technicznego, badania słów kluczowych i zamiarów, analizy luk w treści i planu działania dotyczącego priorytetów powiązanego z KPI Twojej firmy."
         },
         {
           "id": "seo-4",
-          "question": "Kiedy zobaczymy efekty SEO?",
-          "answer": "Wygrane techniczne mogą pojawić się szybko. Wzrost organiczny zwykle narasta w tygodniach lub miesiącach, zależnie od konkurencji."
+          "question": "Po jakim czasie będą widoczne efekty SEO?",
+          "answer": "Zwycięstwa techniczne mogą szybko się ujawnić. Wzrost organiczny zwykle rozwija się w ciągu tygodni lub miesięcy, w zależności od konkurencji i konsekwentnej realizacji celów."
         },
         {
           "id": "seo-5",
-          "question": "Czy oferujecie local SEO?",
-          "answer": "Tak: Google Business Profile, lokalne landing page’e, spójność NAP, opinie i lokalne klastry treści."
+          "question": "Czy zajmujesz się również SEO lokalnym?",
+          "answer": "Tak. Pracujemy nad profilem firmy w Google, lokalnymi stronami docelowymi, spójnością NAP, recenzjami i lokalnymi klastrami treści, dzięki czemu znajdziesz się lepiej w swoim regionie."
         },
         {
           "id": "seo-6",
-          "question": "Co oznacza dla Was technical SEO?",
-          "answer": "Crawlability, indeksacja, Core Web Vitals, dane strukturalne, sitemap/robots, canonicale, linkowanie wewnętrzne i porządkowanie błędów."
+          "question": "Czym jest dla Ciebie techniczne SEO?",
+          "answer": "Techniczne SEO obejmuje możliwość indeksowania, indeksację, podstawowe wskaźniki internetowe, dane strukturalne, mapę witryny i roboty, elementy kanoniczne, linki wewnętrzne i usuwanie błędów – wszystko, czego wyszukiwarki potrzebują, aby dobrze zrozumieć witrynę."
         },
         {
           "id": "seo-7",
-          "question": "Czy tworzycie treści SEO?",
-          "answer": "Tak: briefy, outline’y, blogi, landing page’e i FAQ dopasowane do intencji oraz ustrukturyzowane pod widoczność w AI."
+          "question": "Czy pomagasz w tworzeniu treści dla SEO?",
+          "answer": "Tak. Tworzymy briefy, konspekty, blogi, strony docelowe i często zadawane pytania, które odpowiadają celom wyszukiwania i mają strukturę przyjazną sztucznej inteligencji."
         },
         {
           "id": "seo-8",
-          "question": "Co to jest E-E-A-T?",
-          "answer": "Experience, Expertise, Authoritativeness, Trust — kluczowe dla rankingów i wiarygodności w podsumowaniach AI."
+          "question": "Co to jest E-E-A-T i dlaczego ma to znaczenie?",
+          "answer": "E-E-A-T oznacza doświadczenie, wiedzę specjalistyczną, autorytatywność i zaufanie. Silny E-E-A-T pomaga w rankingach i wiarygodności Twojej marki w podsumowaniach AI."
         },
         {
           "id": "seo-9",
-          "question": "Czy robicie link building?",
-          "answer": "Tak, etyczny i relewantny: digital PR, partnerstwa i content assety — bez spamerskich schematów."
+          "question": "Czy zajmujesz się budowaniem linków?",
+          "answer": "Tak, etycznie i stosownie: cyfrowy PR, partnerstwa i zasoby treści. Nie korzystamy ze schematów linków spamujących."
         },
         {
           "id": "seo-10",
-          "question": "Czy potraficie wyjść z problemów po spadkach SEO?",
-          "answer": "Tak: recovery po zmianach algorytmów, toksyczne linki, problemy z indeksacją i naprawa kanibalizacji treści."
+          "question": "Czy możesz naprawić istniejące szkody SEO?",
+          "answer": "Tak. Naprawiamy szkody po aktualizacjach, toksyczne linki, problemy z indeksacją czy kanibalizmem treści, a następnie wyznaczamy czystą ścieżkę rozwoju."
         },
         {
           "id": "seo-11",
-          "question": "Jak raportujecie postępy SEO?",
-          "answer": "Miesięcznie lub per sprint: pozycje, ruch, konwersje, problemy techniczne i kolejne działania."
+          "question": "Jak raportujesz postęp SEO?",
+          "answer": "Co miesiąc lub na sprint raportujemy rankingi, ruch, konwersje, problemy techniczne i kolejne działania, dzięki czemu jest jasne, co zrobiliśmy i co będzie dalej."
         },
         {
           "id": "seo-12",
-          "question": "Czy SEO działa w ecommerce?",
-          "answer": "Tak: SEO dla produktów i kategorii, nawigacja fasetowa, opinie, dane strukturalne i huby treści z intencją zakupową."
+          "question": "Czy SEO sprawdza się w e-commerce?",
+          "answer": "Absolutnie. Optymalizujemy SEO produktów i kategorii, nawigację aspektową, recenzje, dane strukturalne i centra treści wokół zamiaru zakupu."
         },
         {
           "id": "seo-13",
-          "question": "Czy SEO to jednorazowa usługa czy ciągły proces?",
-          "answer": "Najlepsze efekty daje ciągła optymalizacja. Jednorazowe audyty pomagają, ale konkurencja nie stoi w miejscu."
+          "question": "Czy SEO to projekt jednorazowy czy ciągły?",
+          "answer": "Najlepsze wyniki wynikają z ciągłej optymalizacji. Jednorazowe audyty pomagają, ale konkurencja nie stoi w miejscu – dlatego ciągle mierzymy i dostosowujemy."
         },
         {
           "id": "seo-14",
-          "question": "Czy wspieracie international SEO?",
-          "answer": "Tak: hreflang, research per locale, lokalizacja i techniczne setupy multi-locale."
+          "question": "Czy pomagasz w międzynarodowym SEO?",
+          "answer": "Tak. Zajmujemy się hreflangiem, badaniami rynku według kraju lub języka, lokalizacją treści i technicznymi konfiguracjami wielu lokalizacji."
         }
       ]
     },
@@ -229,139 +229,139 @@
       "items": [
         {
           "id": "ads-1",
-          "question": "Na jakich kanałach prowadzicie kampanie?",
-          "answer": "Google Ads, Meta, LinkedIn oraz — gdy ma to sens — YouTube/retargeting, w zależności od lejka i budżetu."
+          "question": "Jakie kanały reklamowe wspieracie?",
+          "answer": "Obsługujemy Google Ads, Meta (Facebook/Instagram), LinkedIn i tam, gdzie to konieczne, YouTube lub retargeting – dostosowany do ścieżki i budżetu."
         },
         {
           "id": "ads-2",
-          "question": "Jak ustalacie budżety reklamowe?",
-          "answer": "Na podstawie celów (leady/sprzedaż), docelowego CAC, cen aukcyjnych i fazy testów. Startujemy lean i skalujemy zwycięzców."
+          "question": "Jak ustalić odpowiedni budżet reklamowy?",
+          "answer": "Budżet ustalamy w oparciu o cele (potencjalne leady lub sprzedaż), cele CAC, ceny rynkowe i fazę testową. Zaczynamy od Lean i skalujemy to, co się sprawdza."
         },
         {
           "id": "ads-3",
-          "question": "Jak podchodzicie do Google Ads?",
-          "answer": "Struktura konta, mapowanie intencji, wykluczające słowa kluczowe, dopasowanie landing page, tracking konwersji i cotygodniowa optymalizacja."
+          "question": "Jakie jest Twoje podejście do Google Ads?",
+          "answer": "Ustalamy przejrzystą strukturę konta, mapujemy intencje wyszukiwania, dodajemy wykluczające słowa kluczowe, sprawdzamy dopasowanie strony docelowej, konfigurujemy śledzenie konwersji i cotygodniową optymalizację."
         },
         {
           "id": "ads-4",
-          "question": "Czy możecie prowadzić Meta Ads dla ecommerce?",
-          "answer": "Tak: katalogi/retargeting, kreacje, grupy odbiorców i testy kreacji, aby poprawić ROAS."
+          "question": "Czy możesz wyświetlać reklamy Meta Ads w handlu elektronicznym?",
+          "answer": "Tak. Prowadzimy kampanie katalogowe i retargetingowe, testujemy kreacje i odbiorców oraz optymalizujemy pod kątem poprawy ROAS."
         },
         {
           "id": "ads-5",
-          "question": "Jak mierzycie skuteczność reklam?",
-          "answer": "Konwersje, CPA/CAC, ROAS, jakość leadów i pipeline — nie „puste” kliknięcia."
+          "question": "Jak mierzyć sukces reklamy?",
+          "answer": "Mierzymy konwersje, CPA/CAC, ROAS, jakość leadów i liczbę potencjalnych klientów – a nie same kliknięcia. W ten sposób optymalizujemy pod kątem wyników, a nie wolumenu."
         },
         {
           "id": "ads-6",
-          "question": "Co jeśli tracking jest zepsuty?",
-          "answer": "Naprawiamy GTM/GA4/pixele, ustawienia consent, gdy trzeba, i wdrażamy lepsze opcje pomiaru."
+          "question": "A co jeśli śledzenie jest nieprawidłowe?",
+          "answer": "Następnie poprawiamy tagowanie (GTM, GA4 i piksele), tryb zgody, jeśli to konieczne, oraz opcje po stronie serwera, aby uzyskać bardziej niezawodne dane."
         },
         {
           "id": "ads-7",
-          "question": "Czy prowadzicie B2B LinkedIn Ads?",
-          "answer": "Tak — z precyzyjnym targetowaniem, lead formami lub landing page’ami i komunikatami do decydentów."
+          "question": "Czy prowadzisz również reklamy B2B na LinkedIn?",
+          "answer": "Tak. Używamy ostrego targetowania, formularzy lead-gen lub stron docelowych i treści, które przemawiają do decydentów."
         },
         {
           "id": "ads-8",
-          "question": "Jak szybko reklamy dają efekty?",
-          "answer": "Ruch może być natychmiastowy. Stabilny CPA/ROAS zwykle wymaga 2–6 tygodni uczenia i iteracji."
+          "question": "Jak szybko zobaczę wyniki reklam?",
+          "answer": "Ruch może pojawić się natychmiast. Stabilny CPA lub ROAS zwykle wymaga od 2 do 6 tygodni nauki i kreatywnych iteracji."
         },
         {
           "id": "ads-9",
-          "question": "Czy tworzycie kreacje reklamowe?",
-          "answer": "Tak: copy, grafiki i warianty testowe — w razie potrzeby także design/media creation."
+          "question": "Czy tworzysz także kreacje reklamowe?",
+          "answer": "Tak. Tworzymy copy, wizualizacje i warianty testowe. Można uwzględnić projektowanie i tworzenie mediów, dzięki czemu kampanie nie czekają na kreacje."
         },
         {
           "id": "ads-10",
-          "question": "Czy reklamy i SEO mogą się wzmacniać?",
-          "answer": "Tak. Insighty z wyszukiwania pomagają SEO; mocne strony organiczne poprawiają Quality Score i obniżają CPA."
+          "question": "Czy reklamy i SEO mogą się wzajemnie wzmacniać?",
+          "answer": "Absolutnie. Wyszukaj dane z kanałów reklamowych SEO; mocne strony organiczne obniżają CPA i podnoszą Wynik Jakości."
         },
         {
           "id": "ads-11",
-          "question": "Czy możecie przejąć istniejące konta reklamowe?",
-          "answer": "Tak. Robimy audyt, porządkujemy strukturę i optymalizujemy bez zbędnych przebudów."
+          "question": "Czy zarządzasz istniejącymi kontami reklamowymi?",
+          "answer": "Tak. Audytujemy, restrukturyzujemy i optymalizujemy bez niepotrzebnego zaczynania od nowa."
         },
         {
           "id": "ads-12",
-          "question": "Jak zapobiegacie marnowaniu budżetu?",
-          "answer": "Słowa wykluczające, wykluczenia, limity, kontrola geo, limity częstotliwości i szybkie kill switche."
+          "question": "Jak zapobiec marnowaniu budżetu reklamowego?",
+          "answer": "Zapobiegamy marnotrawieniu dzięki wykluczającym słowom kluczowym, wykluczeniom odbiorców, limitom budżetowym, geofencingowi, kontroli częstotliwości i szybkiemu wstrzymywaniu słabszych wyników."
         },
         {
           "id": "ads-13",
-          "question": "Czy remarketing nadal ma sens?",
-          "answer": "Tak — jeśli jest zgodny z prywatnością i wsparty mocną ofertą; często to najbardziej efektywna warstwa."
+          "question": "Czy remarketing jest nadal aktualny?",
+          "answer": "Tak, jeśli jest zgodny z zasadami ochrony prywatności i połączony z atrakcyjnymi kreacjami i ofertami. Często pozostaje najbardziej efektywną warstwą w lejku."
         }
       ]
     },
     {
       "id": "design",
-      "title": "Design",
+      "title": "Projekt",
       "items": [
         {
           "id": "des-1",
           "question": "Jakie usługi projektowe oferujecie?",
-          "answer": "Logo, identyfikacja wizualna, wizytówki, papier firmowy, ulotki, plakaty, naklejki, magazyny/broszury oraz materiały cyfrowe."
+          "answer": "Oferujemy logo, identyfikację marki, wizytówki, papier firmowy, ulotki, plakaty, naklejki, czasopisma lub broszury oraz wizualizacje cyfrowe."
         },
         {
           "id": "des-2",
-          "question": "Jakich narzędzi używacie?",
-          "answer": "Adobe Photoshop, Illustrator i InDesign do profesjonalnych materiałów gotowych do druku."
+          "question": "W jakich narzędziach pracujesz?",
+          "answer": "Pracujemy w programach Adobe Photoshop, Illustrator i InDesign, dzięki czemu pliki są gotowe do druku i profesjonalnie wymienialne."
         },
         {
           "id": "des-3",
           "question": "Czy dostarczacie pliki gotowe do druku?",
-          "answer": "Tak: CMYK, bleed, znaczniki cięcia i poprawne eksporty PDF, plus wersje ekranowe."
+          "answer": "Tak. Dostarczamy CMYK, spady, znaczniki przycięcia i odpowiedni eksport do formatu PDF/X tam, gdzie jest to potrzebne, a także warianty ekranów do użytku cyfrowego."
         },
         {
           "id": "des-4",
           "question": "Jak wygląda projekt logo?",
-          "answer": "Brief → koncepcje → rundy feedbacku → finalne wektory (SVG/PDF/AI) oraz podstawowe wytyczne użycia."
+          "answer": "Projekt logo obejmuje etapy odprawy, koncepcje, następnie rundy zbierania informacji zwrotnych i kończy się ostatecznymi plikami wektorowymi (SVG/PDF/AI) i podstawowymi wytycznymi."
         },
         {
           "id": "des-5",
-          "question": "Czy możecie odświeżyć istniejącą markę?",
-          "answer": "Tak — aktualizujemy logo, kolory i typografię, zachowując rozpoznawalność."
+          "question": "Czy możesz zaktualizować naszą istniejącą markę?",
+          "answer": "Tak. Odświeżamy logo, kolorystykę, typografię i aplikacje nie psując rozpoznawalności."
         },
         {
           "id": "des-6",
-          "question": "Czy przygotowujecie szablony do social?",
-          "answer": "Tak, aby Twój zespół publikował spójnie i szybko."
+          "question": "Czy tworzysz także szablony społecznościowe?",
+          "answer": "Tak. Tworzymy spójne szablony postów, historii i reklam, aby Twój zespół mógł publikować szybko i rozpoznawalnie."
         },
         {
           "id": "des-7",
-          "question": "Design cyfrowy vs druk?",
-          "answer": "Druk wymaga przestrzeni barw, rozdzielczości i marginesów; digital wymaga ostrości na ekranie i szybkości. Dostarczamy oba poprawnie."
+          "question": "Jaka jest różnica między projektowaniem cyfrowym a drukowanym?",
+          "answer": "Druk wymaga przestrzeni kolorów, rozdzielczości i przycięcia marginesów; Digital potrzebuje ostrości na ekranach i szybkiego ładowania. Dostarczamy oba poprawnie, dopasowane do kanału."
         },
         {
           "id": "des-8",
-          "question": "Czy składacie magazyny lub broszury?",
-          "answer": "Tak — wielostronicowe projekty w InDesign z siatkami, stylami i kontrolą prepress."
+          "question": "Czy potrafisz układać czasopisma lub broszury?",
+          "answer": "Tak. Tworzymy wielostronicowe układy w programie InDesign z siatką, stylami i kontrolą przygotowania do druku, gotowe do druku lub dystrybucji cyfrowej."
         },
         {
           "id": "des-9",
-          "question": "Czy zajmujecie się drukiem?",
-          "answer": "Tak. Projektujemy i możemy drukować w małych lub dużych nakładach — od wizytówek i naklejek po ulotki, plakaty i broszury — z proofami i koordynacją produkcji."
+          "question": "Czy pomagasz w drukowaniu?",
+          "answer": "Tak. Projektujemy i drukujemy w małych lub dużych ilościach — od wizytówek i naklejek po ulotki, plakaty i broszury — z próbami i koordynacją aż do momentu dostawy."
         },
         {
           "id": "des-10",
-          "question": "Ile rund feedbacku jest wliczone?",
-          "answer": "Zwykle 2–3 ustrukturyzowane rundy; więcej możliwe po uzgodnieniu."
+          "question": "Ile rund przekazywania informacji zwrotnych obejmuje?",
+          "answer": "Zwykle uwzględniane są od 2 do 3 rund strukturalnych. Dodatkowe rundy są możliwe po uzgodnieniu."
         },
         {
           "id": "des-11",
-          "question": "Czy dostajemy pliki źródłowe?",
-          "answer": "Tak, zgodnie z ustaleniami (AI/PSD/INDD lub paczki eksportów)."
+          "question": "Czy otrzymamy pliki źródłowe?",
+          "answer": "Tak, w ramach uzgodnionej dostawy. Może to być AI, PSD lub INDD albo pakiet eksportowy – w zależności od tego, co uzgodniliśmy."
         },
         {
           "id": "des-12",
-          "question": "Czy design i webdesign mogą być spójne?",
-          "answer": "Tak. Systemy marki i UI pozostają spójne w druku i w webie."
+          "question": "Czy projektowanie i projektowanie stron internetowych mogą iść w parze?",
+          "answer": "Tak. Dopasowujemy projekt marki i systemy UI, aby druk i strona internetowa stanowiły jedną całość."
         },
         {
           "id": "des-13",
-          "question": "Gdzie mogę dowiedzieć się więcej o Digital Design?",
-          "answer": "Odwiedź /digital-design oraz usługi Digital Design w menu."
+          "question": "Gdzie mogę dowiedzieć się więcej o projektowaniu cyfrowym?",
+          "answer": "Więcej informacji można znaleźć na stronie /digital-design oraz w usługach Digital Design w menu."
         }
       ]
     },
@@ -372,67 +372,67 @@
         {
           "id": "mkt-1",
           "question": "Jakie usługi marketingowe oferujecie?",
-          "answer": "AEO/GEO/SEO, treści, social, ads, wzrost ecommerce, product listing, community management oraz data entry."
+          "answer": "Oferujemy AEO/GEO/SEO, treści, społecznościowe, reklamy, rozwój e-commerce, listy produktów, zarządzanie społecznością i wprowadzanie danych."
         },
         {
           "id": "mkt-2",
-          "question": "Jak budujecie strategię marketingową?",
-          "answer": "Cele, odbiorcy, pozycjonowanie, mix kanałów, pipeline treści i KPI — praktycznie i do wdrożenia."
+          "question": "Jak zbudować strategię marketingową?",
+          "answer": "Budujemy strategię wokół celów, odbiorców, pozycjonowania, miksu kanałów, contentu i KPI – praktyczną i wykonalną, nie tylko na papierze."
         },
         {
           "id": "mkt-3",
-          "question": "Czym jest dla Was marketing full-funnel?",
-          "answer": "Awareness → consideration → conversion → retention, z jasno zdefiniowaną rolą kanałów."
+          "question": "Czym jest dla Ciebie marketing pełnościeżkowy?",
+          "answer": "Pełna ścieżka przebiega od świadomości (treść i reklamy), poprzez rozważanie (przypadki i SEO), konwersję (strony docelowe i CRM), a następnie utrzymanie, więc każdy etap ma jasno określoną rolę."
         },
         {
           "id": "mkt-4",
-          "question": "Czy pomagacie w pozycjonowaniu?",
-          "answer": "Tak. Jasne pozycjonowanie zapobiega chaotycznym kampaniom i słabej konwersji."
+          "question": "Czy pomagasz w pozycjonowaniu?",
+          "answer": "Tak. Jasne pozycjonowanie zapobiega fragmentaryzacji kampanii i słabej konwersji."
         },
         {
           "id": "mkt-5",
-          "question": "Czy zapewniacie content writing?",
-          "answer": "Tak: blogi, treści na stronę, newslettery, landing page’e i copy sprzedażowe."
+          "question": "Czy możesz dostarczyć pisanie treści?",
+          "answer": "Tak. Piszemy blogi, teksty stron internetowych, biuletyny, strony docelowe i teksty sprzedażowe — skupiając się na SEO i konwersji."
         },
         {
           "id": "mkt-6",
-          "question": "Czy robicie marketing dla ecommerce?",
-          "answer": "Tak: feedy, jakość listingów, CRO, reklamy i SEO kategorii/produktów."
+          "question": "Czy zajmujesz się marketingiem e-commerce?",
+          "answer": "Tak. Pracujemy nad plikami produktowymi, jakością ofert, CRO, reklamami i SEO dla kategorii i produktów."
         },
         {
           "id": "mkt-7",
           "question": "Co to jest CRO?",
-          "answer": "Conversion Rate Optimization — usprawnianie stron i lejków, aby więcej odwiedzających konwertowało."
+          "answer": "CRO to optymalizacja współczynnika konwersji: ulepszanie stron, ścieżek i UX, aby zwiększyć liczbę odwiedzających."
         },
         {
           "id": "mkt-8",
-          "question": "Jak raportujecie wyniki marketingu?",
-          "answer": "Raporty/dashboardy z ruchem, leadami, sprzedażą, CPA/ROAS i wnioskami z kanałów."
+          "question": "Jak raportować wyniki marketingowe?",
+          "answer": "Za pomocą dashboardów lub raportów przedstawiamy ruch, potencjalnych klientów, sprzedaż, CPA/ROAS i wnioski na każdy kanał, łącznie z tym, co będziemy dalej robić."
         },
         {
           "id": "mkt-9",
-          "question": "Czy możecie pracować z naszym zespołem in-house?",
-          "answer": "Tak — realizujemy, doradzamy albo prowadzimy wyspecjalizowaną ścieżkę (tylko SEO, tylko ads itd.)."
+          "question": "Czy współpracujesz z naszym wewnętrznym zespołem ds. marketingu?",
+          "answer": "Tak. Możemy wykonać, sparować lub przejąć część specjalistyczną np. tylko SEO lub same reklamy."
         },
         {
           "id": "mkt-10",
-          "question": "Jak szybko da się uruchomić kampanie?",
-          "answer": "Często w 1–2 tygodnie po setupie/tracking’u; treści idą równolegle."
+          "question": "Jak szybko uruchamiacie kampanie?",
+          "answer": "Po śledzeniu i konfiguracji kampanie często stają się aktywne w ciągu 1–2 tygodni. Prace nad treścią przebiegają równolegle, dzięki czemu kreacje i strony są gotowe na czas."
         },
         {
           "id": "mkt-11",
-          "question": "Czy wspieracie email marketing?",
-          "answer": "Tak: flowy, newslettery i copy, w tym integracje CRM/ecommerce."
+          "question": "Czy pomagasz w marketingu e-mailowym?",
+          "answer": "Tak. Tworzymy flow, newslettery i copy. Możliwa jest integracja z CRM lub e-commerce."
         },
         {
           "id": "mkt-12",
-          "question": "Czy marketing to zawsze miesięczny retainer?",
-          "answer": "Retainery są dobre dla ciągłego wzrostu; audyty, redesigny i launch’e mogą być projektowe."
+          "question": "Czy marketing to umowa miesięczna?",
+          "answer": "Osoby utrzymujące są powszechne w przypadku ciągłego wzrostu. Projekty takie jak audyt, redesign czy uruchomienie mogą mieć charakter jednorazowy."
         },
         {
           "id": "mkt-13",
-          "question": "Jak unikacie pracy bez efektu?",
-          "answer": "Każde działanie jest powiązane z KPI. To, co nie działa, poprawiamy albo zatrzymujemy."
+          "question": "Jak zapobiec „zajętemu marketingowi” bez rezultatów?",
+          "answer": "Każde działanie jest powiązane z KPI. Taktyki o niskiej skuteczności są zatrzymywane lub ulepszane dzięki danym, więc budżet przeznaczany jest na to, co się sprawdza."
         }
       ]
     },
@@ -442,68 +442,68 @@
       "items": [
         {
           "id": "soc-1",
-          "question": "Jakimi kanałami social zarządzacie?",
-          "answer": "Głównie LinkedIn, Instagram, Facebook oraz — gdy ma to sens — X/TikTok, w zależności od dopasowania do odbiorców."
+          "question": "Jakimi kanałami społecznościowymi zarządzasz?",
+          "answer": "Zarządzamy głównie LinkedIn, Instagramem i Facebookiem, a tam, gdzie to konieczne, X lub TikTok – w oparciu o odbiorców, a nie szum."
         },
         {
           "id": "soc-2",
-          "question": "Co obejmuje obsługa social media?",
-          "answer": "Strategia, kalendarz, tworzenie/publikacja, odpowiedzi społeczności, raportowanie i iteracje."
+          "question": "Co obejmuje zarządzanie mediami społecznościowymi?",
+          "answer": "Zarządzanie mediami społecznościowymi obejmuje strategię, kalendarz treści, tworzenie i planowanie, odpowiedzi społeczności, raportowanie i ciągłą optymalizację."
         },
         {
           "id": "soc-3",
-          "question": "Czy tworzycie grafiki i wideo?",
-          "answer": "Tak w ramach media creation: grafiki, karuzele, short-form video i szablony."
+          "question": "Czy tworzysz także wizualizacje i filmy?",
+          "answer": "Tak, poprzez tworzenie multimediów: fotosy, karuzele, krótkie filmy i szablony."
         },
         {
           "id": "soc-4",
-          "question": "Jak często publikujecie?",
-          "answer": "Zależy od celów — zwykle 3–5 razy w tygodniu na kanałach kluczowych; jakość ponad ilość."
+          "question": "Jak często publikujesz posty?",
+          "answer": "To zależy od kanału i celów. Zazwyczaj publikujemy od 3 do 5 razy w tygodniu na każdy główny kanał, a jakość ponad objętość."
         },
         {
           "id": "soc-5",
-          "question": "Czy oferujecie community management?",
-          "answer": "Tak: moderacja, komentarze, DM i dbanie o reputację zgodnie z wytycznymi tonu marki."
+          "question": "Czy pomagasz w zarządzaniu społecznością?",
+          "answer": "Tak. Zajmujemy się moderacją, odpowiedziami, DM i dbaniem o reputację zgodnie z ustalonym tonem głosu."
         },
         {
           "id": "soc-6",
-          "question": "Czy social i reklamy mogą działać razem?",
-          "answer": "Tak. Najlepsze treści organiczne stają się kreacjami reklam; reklamy wzmacniają to, co działa."
+          "question": "Czy można łączyć media społecznościowe i reklamy?",
+          "answer": "Tak. Organiczne źródła treści reklamowych, kreacje reklamowe; reklamy skalują to, co jest skuteczne organicznie."
         },
         {
           "id": "soc-7",
-          "question": "Jak mierzycie sukces w social media?",
-          "answer": "Zasięg, zaangażowanie, kliknięcia, leady i konwersje wspomagane — nie tylko polubienia."
+          "question": "Jak mierzyć sukces społeczny?",
+          "answer": "Mierzymy zasięg, zaangażowanie, kliknięcia, potencjalnych klientów i konwersje wspomagane – nie tylko polubienia. To pokazuje, co naprawdę przyczynia się do wzrostu."
         },
         {
           "id": "soc-8",
-          "question": "Czy współpracujecie z influencerami?",
-          "answer": "Na życzenie: dobór, briefing i tracking nastawiony na mierzalne wyniki."
+          "question": "Współpracujesz z influencerami?",
+          "answer": "Na życzenie: selekcja, odprawa i śledzenie. Koncentrujemy się na dopasowaniu i mierzalnych wynikach, a nie samym zasięgu."
         },
         {
           "id": "soc-9",
-          "question": "Czy możecie wesprzeć komunikację kryzysową?",
-          "answer": "Tak, z szybkimi protokołami reakcji skoordynowanymi z Twoim zespołem."
+          "question": "Czy możesz wspierać komunikację kryzysową?",
+          "answer": "Tak. Korzystamy z protokołów szybkiego reagowania i współpracujemy z Twoim zespołem, dzięki czemu odpowiedzi pozostają spójne i pod kontrolą."
         },
         {
           "id": "soc-10",
-          "question": "Czy pomagacie w thought leadership na LinkedIn?",
-          "answer": "Tak: treści personalne + firmowe, karuzele, case’y i employee advocacy."
+          "question": "Czy pomagasz w LinkedIn w zakresie przywództwa myślowego B2B?",
+          "answer": "Tak. Tworzymy treści osobiste i firmowe, karuzele, sprawy i rzecznictwo pracowników, aby wiedza specjalistyczna stała się widoczna."
         },
         {
           "id": "soc-11",
-          "question": "Czy przygotowujecie kalendarz treści?",
-          "answer": "Tak — miesięczne lub kwartalne tematy, formaty i terminy."
+          "question": "Czy dostarczacie kalendarz treści?",
+          "answer": "Tak. Dostarczamy plan miesięczny lub kwartalny z tematami, formatami i terminami."
         },
         {
           "id": "soc-12",
-          "question": "Co jeśli mamy już social managera?",
-          "answer": "Możemy się wyspecjalizować (kreacje, reklamy, strategia) lub wesprzeć w okresach szczytowych."
+          "question": "A co jeśli mamy już menadżera społecznościowego?",
+          "answer": "Wtedy możemy specjalizować się w kreacjach, reklamach czy strategii, bądź wspierać okresy szczytowe bez wymiany istniejącego zespołu."
         },
         {
           "id": "soc-13",
-          "question": "Jak szybko rosną social media?",
-          "answer": "Konsekwencja działa kumulacyjnie. Znaczący wzrost zwykle zajmuje tygodnie lub miesiące; szybciej z wsparciem ads."
+          "question": "Jak szybko odnotujemy rozwój w mediach społecznościowych?",
+          "answer": "Spójność ma znaczenie. Znaczący wzrost zwykle trwa od tygodni do miesięcy; dzięki obsłudze reklam często idzie to szybciej."
         }
       ]
     },
@@ -514,143 +514,143 @@
         {
           "id": "sup-1",
           "question": "Jakie wsparcie oferujecie?",
-          "answer": "Wsparcie WordPress, wsparcie dla stron custom, tickety/live chat, utrzymanie, bezpieczeństwo, wydajność i incident response."
+          "answer": "Oferujemy wsparcie WordPress, wsparcie dla niestandardowej strony internetowej, bilety i czat na żywo, konserwację, bezpieczeństwo, wydajność i reakcję na incydenty."
         },
         {
           "id": "sup-2",
-          "question": "Jak skontaktować się ze wsparciem?",
-          "answer": "Przez kontakt, booking, tickety w dashboardzie lub live chat. Pilne sprawy dostają flagę priorytetu."
+          "question": "Jak dotrzeć do wsparcia?",
+          "answer": "Poprzez kontakt, spotkanie, bilety w panelu kontrolnym lub czat na żywo na stronie. Sprawy pilne są oznaczone jako priorytetowe."
         },
         {
           "id": "sup-3",
-          "question": "Jaki jest Wasz czas reakcji?",
-          "answer": "Szybka pierwsza odpowiedź (często w 1 dzień roboczy; krytyczny downtime szybciej). Dokładne SLA zależą od pakietu."
+          "question": "Jaki jest Twój czas reakcji?",
+          "answer": "Naszym celem jest szybka pierwsza reakcja, często w ciągu jednego dnia roboczego. W przypadku krytycznych przestojów reagujemy szybciej. Dokładne umowy SLA znajdują się w pakietach wsparcia."
         },
         {
           "id": "sup-4",
           "question": "Czy oferujecie monitoring 24/7?",
-          "answer": "Tak w odpowiednich pakietach wsparcia/hostingu: monitoring, backupy i alerty."
+          "answer": "Tak, w odpowiednich pakietach wsparcia i hostingu: monitorowanie, kopie zapasowe i alerty, aby problemy były widoczne wcześniej."
         },
         {
           "id": "sup-5",
-          "question": "Czy usuwacie malware?",
-          "answer": "Tak — zarówno WordPress, jak i stacki custom — wraz z hardeningiem i aftercare."
+          "question": "Czy możesz usunąć złośliwe oprogramowanie?",
+          "answer": "Tak – na WordPressie, a także na niestandardowych stosach – łącznie z utwardzaniem i pielęgnacją, aby witryna wróciła czysta i lepiej chroniona."
         },
         {
           "id": "sup-6",
-          "question": "Czy zajmujecie się aktualizacjami WordPress?",
-          "answer": "Tak w ramach utrzymania i aktualizacji WordPress: core/plugins/themes z backupami i kontrolą."
+          "question": "Czy zajmujesz się dla nas aktualizacjami WordPressa?",
+          "answer": "Tak, poprzez „Konserwację i aktualizacje”: rdzeń, wtyczki i motywy, z kopią zapasową i kontrolami przed i po aktualizacji."
         },
         {
           "id": "sup-7",
-          "question": "Czy możecie pomóc w problemach z hostingiem?",
-          "answer": "Tak — diagnoza, migracje lub optymalizacja hostingu/VPS/domen."
+          "question": "Czy pomagacie w problemach z hostingiem?",
+          "answer": "Tak. Diagnozujemy, migrujemy lub optymalizujemy hosting, VPS i domeny do czasu, aż witryna znów będzie działać stabilnie."
         },
         {
           "id": "sup-8",
-          "question": "Co jeśli moja strona nie działa?",
-          "answer": "Zgłoś pilność. Przywracamy przez backupy, kontrolę serwera i hotfixy, ze stałymi aktualizacjami statusu."
+          "question": "Co się stanie, jeśli moja witryna nie będzie działać?",
+          "answer": "Zgłoś to jako pilne. Przywracamy, jeśli to możliwe, za pomocą kopii zapasowych, kontroli serwera i poprawki, a na bieżąco informujemy Cię o stanie."
         },
         {
           "id": "sup-9",
-          "question": "Czy jest portal klienta?",
-          "answer": "Tak. Zalogowani klienci widzą dashboard, tickety, projekty oraz — gdy dotyczy — CRM/faktury."
+          "question": "Czy istnieje portal klienta?",
+          "answer": "Tak. Zalogowani klienci widzą pulpit nawigacyjny, bilety, projekty i, w stosownych przypadkach, CRM lub faktury."
         },
         {
           "id": "sup-10",
-          "question": "Czy wielu członków zespołu może zgłaszać tickety?",
-          "answer": "Tak, zależnie od ról w koncie (client/manager/admin)."
+          "question": "Czy wielu członków drużyny może otwierać bilety?",
+          "answer": "Tak, w zależności od roli na koncie (klient, menedżer lub administrator)."
         },
         {
           "id": "sup-11",
-          "question": "Co obejmuje wsparcie Basic/Standard/Premium?",
-          "answer": "Więcej stron, szybszy follow-up i szerszy zakres (aktualizacje, malware, szybkość, SEO). Szczegóły znajdziesz na stronach wsparcia."
+          "question": "Co obejmuje wsparcie podstawowe/standardowe/premium?",
+          "answer": "Wyższe pakiety obejmują więcej witryn, szybszą kontynuację i szerszy zasięg (aktualizacje, złośliwe oprogramowanie, szybkość, SEO). Szczegóły znajdują się na stronach wsparcia."
         },
         {
           "id": "sup-12",
-          "question": "Czy pomagacie też w kwestiach nietechnicznych?",
-          "answer": "Tak — usługi, billing i pytania dotyczące konta, z głębokością techniczną zależną od pakietu."
+          "question": "Czy pomagacie także w przypadku pytań nietechnicznych?",
+          "answer": "Tak, jeśli chodzi o usługi, rozliczenia i konto. To, jak głęboko technicznie wejdziemy, zależy od Twojego pakietu."
         },
         {
           "id": "sup-13",
-          "question": "Czy mogę później podnieść pakiet wsparcia?",
-          "answer": "Tak, gdy rosną ruch, ryzyko lub potrzeby zespołu."
+          "question": "Czy mogę uaktualnić wsparcie później?",
+          "answer": "Tak. Możesz skalować w miarę wzrostu ruchu, ryzyka lub potrzeb zespołu."
         }
       ]
     },
     {
       "id": "webdesign",
-      "title": "Projektowanie stron",
+      "title": "Projektowanie stron internetowych",
       "items": [
         {
           "id": "web-1",
-          "question": "Czy budujecie tylko strony WordPress?",
-          "answer": "Nie. Oprócz WordPress budujemy strony custom w HTML/CSS/JS, PHP oraz Next.js — niezależnie od usług WordPress."
+          "question": "Czy tworzysz tylko witryny WordPress?",
+          "answer": "Nie. Poza WordPressem zajmujemy się projektowaniem stron internetowych na zamówienie w HTML/CSS/JS, PHP i Next.js – niezależnie od usług WordPress."
         },
         {
           "id": "web-2",
-          "question": "Czym jest Website Support?",
-          "answer": "Design, development, utrzymanie, bezpieczeństwo, wydajność, backup/migracja oraz integracje API dla stacków custom."
+          "question": "Co obejmuje wsparcie witryny internetowej?",
+          "answer": "Wsparcie witryny internetowej obejmuje projektowanie, rozwój, konserwację, bezpieczeństwo, wydajność, kopie zapasowe lub migrację oraz integrację API dla niestandardowych stosów."
         },
         {
           "id": "web-3",
-          "question": "Czy możecie odświeżyć istniejącą stronę?",
-          "answer": "Tak: odświeżenie UX/UI, poprawa konwersji i modernizacja techniczna bez pełnego rewrite’u, jeśli da się tego uniknąć."
+          "question": "Czy możesz przeprojektować istniejącą witrynę?",
+          "answer": "Tak. Wykonujemy odświeżenie UX/UI, ulepszenia konwersji i modernizację techniczną, nie wyrzucając wszystkiego, co nie jest potrzebne."
         },
         {
           "id": "web-4",
-          "question": "Czy pracujecie w Next.js?",
-          "answer": "Tak — świetne rozwiązanie dla szybkich, SEO-ready stron marketingowych i dashboardów."
+          "question": "Czy współpracujesz z Next.js?",
+          "answer": "Tak. Next.js jest idealny do szybkich, gotowych do SEO witryn marketingowych i dashboardów."
         },
         {
           "id": "web-5",
-          "question": "Czy tworzycie aplikacje PHP?",
-          "answer": "Tak: portale, API, modernizacja legacy oraz hardening wydajności i bezpieczeństwa."
+          "question": "Czy tworzysz także aplikacje w języku PHP?",
+          "answer": "Tak. Budujemy portale i interfejsy API, modernizujemy starsze rozwiązania oraz zwiększamy wydajność i bezpieczeństwo."
         },
         {
           "id": "web-6",
-          "question": "Jak podchodzicie do mobile?",
-          "answer": "Mobile-first design, responsywne layouty i testy na popularnych urządzeniach/przeglądarkach."
+          "question": "Jak zadbać o strony mobilne?",
+          "answer": "Projektujemy z myślą o urządzeniach mobilnych, tworzymy responsywne układy i testujemy na popularnych urządzeniach i przeglądarkach, aby witryna działała wszędzie."
         },
         {
           "id": "web-7",
-          "question": "Czy dostępność jest wliczona?",
-          "answer": "Stosujemy solidne podstawy a11y; bardziej rygorystyczne programy WCAG mogą być włączone do zakresu."
+          "question": "Czy dostępność (a11y) jest uwzględniona?",
+          "answer": "Budujemy w oparciu o dostępne praktyki podstawowe. W ramach dodatkowego zakresu można uwzględnić bardziej rygorystyczne programy WCAG."
         },
         {
           "id": "web-8",
-          "question": "Opcje CMS bez WordPress?",
-          "answer": "Tak: headless CMS, custom admin lub rozwiązania statyczne — zależnie od zespołu."
+          "question": "Czy możesz zaoferować opcje CMS bez WordPressa?",
+          "answer": "Tak. Może to być bezgłowy CMS, niestandardowy administrator lub konfiguracja statyczna — w zależności od Twojego zespołu i potrzeb."
         },
         {
           "id": "web-9",
-          "question": "Ile trwa projekt web design?",
-          "answer": "Landing page’e w kilka tygodni; większe strony/aplikacje w wielu sprintach po planowaniu."
+          "question": "Jak długo trwa projekt webdesignu?",
+          "answer": "Strony docelowe zwykle trwają kilka tygodni; większe witryny lub aplikacje działają w sprintach przez wiele tygodni. Planowanie następuje po przyjęciu."
         },
         {
           "id": "web-10",
-          "question": "Czy przy starcie uwzględniacie copy i SEO?",
-          "answer": "Tak, gdy jest to połączone z content/SEO, aby strona wystartowała „wyszukiwalna” i gotowa do konwersji."
+          "question": "Czy zajmujesz się także kopiowaniem i SEO w momencie premiery?",
+          "answer": "Tak, w połączeniu z treścią i usługami SEO, dzięki czemu witryna będzie od razu dostępna do wyszukiwania i skupiona na konwersji."
         },
         {
           "id": "web-11",
-          "question": "A wydajność po uruchomieniu?",
-          "answer": "Optymalizujemy Core Web Vitals, caching/CDN oraz monitoring w ramach pakietów utrzymania."
+          "question": "A co z wydajnością po uruchomieniu?",
+          "answer": "Optymalizujemy Core Web Vitals, buforowanie lub CDN i monitorowanie. Opieka posprzedażna jest następnie kontynuowana w ramach pakietów konserwacyjnych."
         },
         {
           "id": "web-12",
-          "question": "Czy integrujecie API (CRM, płatności, AI)?",
-          "answer": "Tak — z poprawnym error handlingiem, loggingiem i dokumentacją."
+          "question": "Czy można łączyć API (CRM, płatności, AI)?",
+          "answer": "Tak. Budujemy integracje z czystą obsługą błędów, logowaniem i dokumentacją."
         },
         {
           "id": "web-13",
-          "question": "Jak dostarczacie kod?",
-          "answer": "Przez repo/pipeline’y wdrożeniowe, gdy to możliwe, ze staging/production i przekazaniem."
+          "question": "Jak dostarczyć kod?",
+          "answer": "Tam, gdzie to możliwe, dostarczamy za pośrednictwem repozytorium i wdrażamy potok, ze środowiskami (pomostowymi i produkcyjnymi) oraz jasnym przekazaniem."
         },
         {
           "id": "web-14",
-          "question": "Czy pomagacie w CRO na stronie?",
-          "answer": "Tak: poprawa UX, formularzy, CTA, eksperymenty i szybkość stron."
+          "question": "Czy pomagacie w optymalizacji konwersji na stronie?",
+          "answer": "Tak. Przeprowadzamy testy A/B, ulepszenia UX, formularze, wezwania do działania i szybkość strony, aby zwiększyć liczbę odwiedzających."
         }
       ]
     },
@@ -661,77 +661,77 @@
         {
           "id": "host-1",
           "question": "Jaki hosting oferujecie?",
-          "answer": "Hosting shared, WordPress i VPS w wariantach Basic/Plus/Business oraz domeny."
+          "answer": "Oferujemy hosting współdzielony, hosting WordPress i VPS – w poziomach Basic, Plus i Business – oraz domeny."
         },
         {
           "id": "host-2",
-          "question": "Shared vs WordPress vs VPS?",
-          "answer": "Shared pasuje do mniejszych stron. Hosting WordPress jest zoptymalizowany pod WP. VPS daje więcej zasobów i kontroli dla większych obciążeń."
+          "question": "Jaka jest różnica między współdzielonym, WordPress i VPS?",
+          "answer": "Udostępnianie jest opłacalne w przypadku mniejszych witryn. Hosting WordPress jest zoptymalizowany pod kątem WP. VPS zapewnia więcej zasobów i kontrolę przy cięższych ładunkach."
         },
         {
           "id": "host-3",
-          "question": "Czy pomagacie w rejestracji domen?",
-          "answer": "Tak — doradzamy, rejestrujemy/przenosimy i poprawnie konfigurujemy DNS."
+          "question": "Czy pomagacie przy rejestracji domeny?",
+          "answer": "Tak. Doradzamy, rejestrujemy lub przenosimy domenę i prawidłowo łączymy DNS."
         },
         {
           "id": "host-4",
-          "question": "Czy SSL jest wliczony?",
-          "answer": "Tak, SSL jest wliczony w odpowiednich planach hostingowych."
+          "question": "Czy protokół SSL jest wliczony w cenę hostingu?",
+          "answer": "Tak. SSL jest standardem w naszych odpowiednich planach hostingowych."
         },
         {
           "id": "host-5",
-          "question": "Czy możecie przenieść moją stronę na Wasz hosting?",
-          "answer": "Tak: backup, migracja, przełączenie DNS, SSL i smoke testy z minimalnym downtime."
+          "question": "Czy możecie przenieść moją witrynę na swój hosting?",
+          "answer": "Tak. Zajmujemy się tworzeniem kopii zapasowych, migracją, przełączaniem DNS, SSL i testami dymnymi przy minimalnych przestojach."
         },
         {
           "id": "host-6",
-          "question": "Jak działają backupy?",
-          "answer": "Zależy od planu: backupy łatwe lub automatyczne. Dostępna dodatkowa retencja off-site."
+          "question": "Jak działają kopie zapasowe na hostingu?",
+          "answer": "To zależy od planu: proste lub automatyczne kopie zapasowe. Dostępne jest dodatkowe przechowywanie poza siedzibą firmy."
         },
         {
           "id": "host-7",
-          "question": "Co jeśli ruch wzrośnie?",
-          "answer": "Skalujemy do Plus/Business lub VPS i optymalizujemy caching/CDN."
+          "question": "Co się stanie, jeśli uzyskam większy ruch?",
+          "answer": "Następnie skalujemy do Plus, Business lub VPS i optymalizujemy buforowanie i CDN, aby witryna była w stanie obsłużyć rozwój."
         },
         {
           "id": "host-8",
-          "question": "Czy email jest wliczony z domenami?",
-          "answer": "Zależy od setupu. Doradzamy niezawodne rozwiązania mailowe i DNS auth (SPF/DKIM/DMARC)."
+          "question": "Czy oferujecie pocztę e-mail z domenami?",
+          "answer": "To zależy od pakietu i konfiguracji. Doradzamy niezawodne rozwiązania pocztowe i prawidłowo ustawiamy DNS (SPF, DKIM i DMARC)."
         },
         {
           "id": "host-9",
-          "question": "Jak bezpieczny jest Wasz hosting?",
-          "answer": "SSL/firewall, aktualizacje, monitoring i hardening, plus opcjonalne usługi bezpieczeństwa."
+          "question": "Jak bezpieczny jest Twój hosting?",
+          "answer": "Stosujemy firewall, SSL, aktualizacje, monitoring i hartowanie. Dodatkowe usługi bezpieczeństwa mogą dodać więcej warstw na górze."
         },
         {
           "id": "host-10",
-          "question": "Czy mogę później przejść ze shared na VPS?",
-          "answer": "Tak — zaplanowana migracja z testami i możliwością rollbacku."
+          "question": "Czy mogę później przejść z udostępnionego na VPS?",
+          "answer": "Tak. Wspólnie planujemy migrację, łącznie z testami i wycofywaniem zmian, aby przełącznik pozostał pod kontrolą."
         },
         {
           "id": "host-11",
-          "question": "Czy wspieracie CDN?",
-          "answer": "Tak, gdy ma to sens (często wliczone w hosting WP), aby przyspieszyć globalną dostawę."
+          "question": "Czy wspierasz CDN?",
+          "answer": "Tak, w stosownych przypadkach — często darmowy CDN jest zawarty w planach hostingowych WP — w celu szybszej dostawy globalnej."
         },
         {
           "id": "host-12",
-          "question": "Jak podchodzicie do uptime?",
-          "answer": "Monitoring, szybka reakcja na incydenty i jasna komunikacja okien serwisowych."
+          "question": "Jakie jest Twoje podejście do kwestii dostępności?",
+          "answer": "Monitorujemy, szybko reagujemy na incydenty i wyraźnie komunikujemy się w trakcie okresów konserwacji, dzięki czemu wiesz, co się dzieje."
         },
         {
           "id": "host-13",
-          "question": "Czy naprawiacie problemy DNS?",
-          "answer": "Tak: rekordy, propagacja, mail auth i podpięcie domen."
+          "question": "Czy pomagasz w rozwiązywaniu problemów z DNS?",
+          "answer": "Tak. Naprawiamy rekordy, propagację, autoryzację poczty i połączenia domenowe, dopóki DNS nie będzie znów poprawny."
         },
         {
           "id": "host-14",
-          "question": "Jak wybrać właściwy plan?",
-          "answer": "Na podstawie ruchu, stacku (WP vs custom), zasobów i planów wzrostu. Doradzamy uczciwie."
+          "question": "Jak wybrać odpowiedni plan hostingowy?",
+          "answer": "Na podstawie ruchu, stosu (WordPress lub niestandardowy), zasobów i wzrostu. Doradzamy uczciwie – nie przeceniamy."
         },
         {
           "id": "host-15",
-          "question": "Gdzie zobaczę ceny hostingu?",
-          "answer": "Na stronach usług hostingowych w Services → Webhosting & Domains."
+          "question": "Gdzie mogę zobaczyć ceny hostingu?",
+          "answer": "Na stronach usług hostingowych w zakładce Usługi → Hosting i domeny, w stosownych przypadkach z opcjami miesięcznymi lub rocznymi."
         }
       ]
     }

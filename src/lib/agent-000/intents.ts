@@ -1,4 +1,4 @@
-import { normalizeFaqText } from "@/lib/agent-000/match-faq";
+import { normalizeAgentText } from "@/lib/agent-000/text";
 
 export type AgentIntent = "book_appointment" | "open_ticket" | "contact" | "human";
 
@@ -22,7 +22,7 @@ const INTENT_PATTERNS: Array<{ intent: AgentIntent; re: RegExp }> = [
 ];
 
 export function detectIntents(question: string): AgentIntent[] {
-  const text = normalizeFaqText(question);
+  const text = normalizeAgentText(question);
   const found = new Set<AgentIntent>();
   for (const { intent, re } of INTENT_PATTERNS) {
     if (re.test(text) || re.test(question)) found.add(intent);

@@ -236,8 +236,8 @@ export const staticPageSeo: PageSeo[] = [
       en: "Frequently asked questions — TripleZero iT",
     },
     description: {
-      nl: "Uitgebreide vragen en antwoorden — van AI en SEO tot design, marketing, support en hosting.",
-      en: "In-depth answers about TripleZero iT — from AI and SEO to design, marketing, support and hosting.",
+      nl: "Uitgebreide vragen en antwoorden — van AI, AEO, GEO en SEO tot design, domeinnamen, hosting, marketing, social media, support en meer.",
+      en: "In-depth questions and answers — from AI, AEO, GEO and SEO to design, domains, hosting, marketing, social media, support and more.",
     },
     keywords: {
       nl: [...CORE_NL, "veelgestelde vragen", "hulp"],

@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
@@ -10,6 +10,12 @@ import type { FaqContent } from "@/content/faq";
 import { localizedHref } from "@/i18n/pathnames";
 
 const OPEN_CHAT_EVENT = "tz-open-live-chat";
+
+function parseFaqHash(hash: string): string | null {
+  const raw = hash.replace(/^#/, "");
+  const match = raw.match(/^faq-item-(.+)$/);
+  return match?.[1] || null;
+}
 
 export function FaqPageClient({
   locale,
@@ -24,6 +30,37 @@ export function FaqPageClient({
     null,
   );
 
+  const applyFaqId = useCallback(
+    (faqId: string | null, categoryId: string | null = null) => {
+      if (!faqId) {
+        setHighlightFaqId(null);
+        setHighlightCategoryId(null);
+        return;
+      }
+      let resolvedCategory = categoryId;
+      if (!resolvedCategory) {
+        for (const category of content.categories) {
+          if (category.items.some((item) => item.id === faqId)) {
+            resolvedCategory = category.id;
+            break;
+          }
+        }
+      }
+      setHighlightFaqId(faqId);
+      setHighlightCategoryId(resolvedCategory);
+    },
+    [content.categories],
+  );
+
+  useEffect(() => {
+    function syncFromHash() {
+      applyFaqId(parseFaqHash(window.location.hash));
+    }
+    syncFromHash();
+    window.addEventListener("hashchange", syncFromHash);
+    return () => window.removeEventListener("hashchange", syncFromHash);
+  }, [applyFaqId]);
+
   const openLiveChat = useCallback((prefill?: string) => {
     window.dispatchEvent(
       new CustomEvent(OPEN_CHAT_EVENT, { detail: { prefill: prefill || "" } }),
@@ -34,7 +71,7 @@ export function FaqPageClient({
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-10 md:px-6 md:py-14">
-      <header className="mb-6 max-w-2xl">
+      <header className="mb-6">
         <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
           {t("eyebrow")}
         </p>
@@ -53,8 +90,13 @@ export function FaqPageClient({
       <Agent000ChatPane
         className="mb-10"
         onMatchFaq={(faqId, categoryId) => {
-          setHighlightFaqId(faqId);
-          setHighlightCategoryId(categoryId);
+          applyFaqId(faqId, categoryId);
+          if (faqId && typeof window !== "undefined") {
+            const next = `#faq-item-${faqId}`;
+            if (window.location.hash !== next) {
+              window.history.replaceState(null, "", next);
+            }
+          }
         }}
         onOpenLiveChat={openLiveChat}
       />

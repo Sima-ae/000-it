@@ -1,9 +1,9 @@
 {
   "title": "Gyakran ismételt kérdések",
-  "subtitle": "Részletes válaszok a TripleZero iT-ről — az AI-tól és SEO-tól a designon, marketingen, támogatáson és tárhelyen át.",
-  "ctaTitle": "Még mindig segítségre van szükséged?",
-  "ctaText": "Nem találod a választ? Vedd fel a kapcsolatot a csapatunkkal, és gyorsan visszajelzünk.",
-  "ctaButton": "Kapcsolat",
+  "subtitle": "Mélyreható kérdések és válaszok – az AI-tól, az AEO-tól, a GEO-tól és a SEO-tól a tervezésig, domainekig, tárhelyig, marketingig, közösségi médiáig, támogatásig és egyebekig.",
+  "ctaTitle": "Még mindig segítségre van szüksége?",
+  "ctaText": "Nem találja a kérdését? Vegye fel velünk a kapcsolatot – a lehető leghamarabb felvesszük Önnel a kapcsolatot.",
+  "ctaButton": "Vegye fel velünk a kapcsolatot",
   "categories": [
     {
       "id": "general",
@@ -11,68 +11,68 @@
       "items": [
         {
           "id": "gen-1",
-          "question": "Mit csinál a TripleZero iT?",
-          "answer": "A webdesign, WordPress támogatás, digitális marketing, keresési láthatóság (AEO, GEO/local és SEO), design és tárhely kombinációja — segítünk a márkáknak, hogy megtalálják őket, konvertáljanak és növekedjenek."
+          "question": "Mit csinál pontosan a TripleZero iT?",
+          "answer": "A TripleZero iT egyesíti a webdesignt, a WordPress támogatást, a digitális marketinget, a keresési láthatóságot (AEO, GEO/helyi és SEO), a tervezést és a hostingot. Segítünk a márkáknak gyorsabban megtalálni, jobb weboldalakat készíteni és mérhető módon növekedni."
         },
         {
           "id": "gen-2",
-          "question": "Hogyan kezdjek hozzá?",
-          "answer": "Foglalj egy hívást vagy írj nekünk. Rövid igényfelmérést végzünk, áttekintjük a célokat és a stack-et, majd javaslunk egy világos tervet ütemezéssel és KPI-okkal."
+          "question": "Hogyan kezdhetem el a TripleZero iT-t?",
+          "answer": "Vegye fel velünk a kapcsolatot, vagy foglaljon időpontot. Lefutunk egy rövid felvételt, áttekintjük a célokat és halmozzuk, majd elkészítjük a konkrét javaslatot tervezéssel és KPI-kkel."
         },
         {
           "id": "gen-3",
-          "question": "Milyen típusú vállalkozásokkal dolgoztok?",
-          "answer": "KKV-k, scale-upok, ecommerce, ügynökségek és nemzetközi márkák. Dolgozunk meglévő csapatokkal és teljes körű partnerként is."
+          "question": "Milyen típusú vállalkozásokkal dolgozik?",
+          "answer": "Együttműködünk kis- és középvállalkozásokkal, bővítéssel, e-kereskedelemmel, ügynökségekkel és nemzetközi márkákkal. Ez történhet egy meglévő csapat mellett, vagy teljes körű szolgáltatást nyújtó partnerként."
         },
         {
           "id": "gen-4",
-          "question": "Csak Hollandiában dolgoztok?",
-          "answer": "Nem. Benelux és nemzetközi ügyfeleket is kiszolgálunk hollandul és angolul."
+          "question": "Csak Hollandiában dolgozol?",
+          "answer": "Nem. Ügyfeleinket a Benelux államokban és nemzetközi szinten szolgáljuk ki holland és angol nyelvű megbízásokkal."
         },
         {
           "id": "gen-5",
-          "question": "Hogy néz ki egy tipikus együttműködés?",
-          "answer": "Igényfelmérés → audit/scan → terv → sprintes megvalósítás → mérés → optimalizálás, egyértelmű mérföldkövekkel."
+          "question": "Hogyan néz ki egy tipikus eljegyzés?",
+          "answer": "Egy tipikus megbízás a következőképpen fut: felvétel → audit vagy vizsgálat → terv → sprint végrehajtás → mérés → optimalizálás. Világos mérföldköveket és jelentéseket kap, így mindig világos, hogy hol tartunk."
         },
         {
           "id": "gen-6",
           "question": "Kombinálhatok több szolgáltatást?",
-          "answer": "Igen. Gyakori kombinációk: webdesign + SEO + hirdetések, vagy WordPress karbantartás + tárhely + biztonság."
+          "answer": "Igen. Sok ügyfél kombinálja a webdesign + SEO + hirdetések vagy a WordPress karbantartás + tárhely + biztonság kombinációját. A keveréket az Ön céljaihoz és költségvetéséhez igazítjuk."
         },
         {
           "id": "gen-7",
-          "question": "Milyen gyorsan tudtok kezdeni?",
-          "answer": "Jóváhagyás után gyakran néhány munkanapon belül. Sürgős esetek (malware, leállás) elsőbbséget kapnak."
+          "question": "Meddig lehet kezdeni?",
+          "answer": "Kapacitásunktól függ, de a jóváhagyás után gyakran néhány munkanapon belül elkezdjük. A sürgős munkákat – például hibákat, rosszindulatú programokat vagy leállást – előnyben részesítjük, hogy a lehető leggyorsabban elvégezhessük azokat."
         },
         {
           "id": "gen-8",
-          "question": "Távolról vagy helyszínen dolgoztok?",
-          "answer": "Főként távolról, strukturált kommunikációval. Helyszíni munka kérésre elérhető."
+          "question": "Távoli vagy helyben dolgozol?",
+          "answer": "Elsősorban távolról dolgozunk, egyértelmű kommunikációval e-mailben, chaten és telefonálásban. Igény esetén a helyszínen is rendelkezésre áll, amikor a projektnek szüksége van rá."
         },
         {
           "id": "gen-9",
-          "question": "Hogyan kommunikáljátok az előrehaladást?",
-          "answer": "Rendszeres frissítések, ahol releváns ticketek/dashboard, plusz sprint- vagy havi riportok."
+          "question": "Hogyan kommunikálja a csapat a fejlődést?",
+          "answer": "Folyamatos frissítésekkel, jegyekkel vagy adott esetben irányítópulton, valamint sprint- vagy havi jelentésekkel tájékoztatjuk Önt az akciókról és eredményekről."
         },
         {
           "id": "gen-10",
-          "question": "Mire van szükségetek a kezdéshez?",
-          "answer": "Hozzáférések (ha szükséges), célok, arculati anyagok, analitikai fiókok és meglévő eszközök belépési adatai."
+          "question": "Mi kell tőlünk az induláshoz?",
+          "answer": "A kezdéshez hozzá kell férnünk a webhelyhez és a tárhelyhez (ha szükséges), az Ön céljaihoz, márkairányelveihez, analitikai fiókjaihoz és minden meglévő eszközhöz. Ha valami hiányzik, először segítünk a helyére tenni."
         },
         {
           "id": "gen-11",
-          "question": "Illik hozzátok egy startup is?",
-          "answer": "Igen — a lean landing page-ektől és AI scan-ektől a teljes növekedési rendszerig, ahogy skálázódtok."
+          "question": "Alkalmasak-e szolgáltatásai induló vállalkozások számára?",
+          "answer": "Igen. Az egyszerű céloldalaktól és az AI-vizsgálatoktól a teljes növekedési beállításokig terjedünk, így a megközelítés Önnel együtt fejlődik."
         },
         {
           "id": "gen-12",
-          "question": "Kié a munka és a fiókok tulajdonjoga?",
-          "answer": "A domainek, tartalmak, repo-k és hirdetési fiókok a tiétek. Átadáskor fájlokat és dokumentációt adunk."
+          "question": "Kié a munka és a számlák?",
+          "answer": "A domain, a tartalom, a kódtárak és a hirdetési fiókok az Öné marad. Átadáskor átadjuk az aktákat és a dokumentációt, így minden az Ön irányítása alatt marad."
         },
         {
           "id": "gen-13",
-          "question": "Tudtok együttműködni a jelenlegi beszállítóinkkal?",
-          "answer": "Igen. Dolgozunk a fejlesztőitekkel/marketingeseitekkel együtt, vagy tisztán átvesszük a karbantartást."
+          "question": "Át tudja venni a meglévő szállítókat, vagy együttműködhet velük?",
+          "answer": "Igen. Zökkenőmentesen dolgozunk együtt fejlesztőkkel, marketingesekkel vagy ügynökségekkel, vagy átvállaljuk a karbantartást és az optimalizálást anélkül, hogy szükségtelenül megzavarnánk a meglévő munkát."
         }
       ]
     },
@@ -82,68 +82,68 @@
       "items": [
         {
           "id": "ai-1",
-          "question": "Mi az AI scan?",
-          "answer": "Egy AI felkészültségi scan, ami pontozza, mennyire teljesít jól a weboldalad a klasszikus keresésben, az AI válaszokban és a helyi/földrajzi láthatóságban (AEO, GEO, SEO és technikai alapok)."
+          "question": "Mi az AI-vizsgálat a TripleZero iT-nél?",
+          "answer": "Az AI-reainess vizsgálat felméri, hogy webhelyét mennyire találják meg a klasszikus keresőmotorok, a mesterséges intelligencia válaszai és a helyi vagy földrajzi keresési eredmények (AEO, GEO, SEO és a technikai alapok)."
         },
         {
           "id": "ai-2",
-          "question": "Mit mér az AI scan?",
-          "answer": "AEO jeleket, GEO/helyi láthatóságot, SEO alapokat, tartalmi struktúrát, teljesítmény mutatókat és AI readiness-t — prioritás szerinti javítási listával."
+          "question": "Mit mér pontosan az AI-szkennelés?",
+          "answer": "A vizsgálat méri az AEO jeleket, a GEO/helyi láthatóságot, a SEO alapjait, a tartalomszerkezetet, a teljesítménymutatókat és az AI-készültséget. Pontokat és konkrét fejlesztési pontokat kapsz."
         },
         {
           "id": "ai-3",
-          "question": "Milyen gyakran érdemes AI scan-t futtatni?",
-          "answer": "Nagyobb weboldal-változások vagy kampányok után; aktív márkáknak időszakosan javasolt (pl. negyedévente)."
+          "question": "Milyen gyakran kell AI-vizsgálatot futtatnom?",
+          "answer": "Legalábbis jelentős webhelymódosítások vagy kampányok után. Az aktív márkák esetében javasoljuk az időszakos vizsgálatot, például negyedévente, hogy látható maradjon a keresési és a mesterséges intelligencia találatai között."
         },
         {
           "id": "ai-4",
-          "question": "Az AI csak tartalomírásról szól?",
-          "answer": "Nem. Ide tartozik a technikai megtalálhatóság, a strukturált adatok, a belső linkelés és az is, hogyan foglalják össze az AI rendszerek a márkádat."
+          "question": "Az AI csak a tartalomban segít?",
+          "answer": "Nem. A mesterséges intelligencia hatással van a technikai felfedezhetőségre, a strukturált adatokra, a belső linkekre, a GYIK-blokkokra és arra is, hogy a márkainformációkat hogyan foglalják össze az AI-válaszokban."
         },
         {
           "id": "ai-5",
-          "question": "Tudtok AI-t integrálni a folyamatainkba?",
-          "answer": "Igen: tartalomtámogatás, automatizálás, chat/ticket flow-k és egyedi AI API integrációk."
+          "question": "Integrálhatja az AI-t a munkafolyamatunkba?",
+          "answer": "Igen. Az AI-t tartalomsegítésre, automatizálásra, chatbot- vagy jegyfolyamokhoz, adatkapcsolatokhoz és egyéni API-khoz használhatjuk az AI-eszközök körül."
         },
         {
           "id": "ai-6",
-          "question": "Kiváltja az AI a stratégiai munkát?",
-          "answer": "Nem. Az AI gyorsítja az elemzést és a gyártást; a stratégia, a márkahang és a konverziós döntések emberi vezetéssel maradnak."
+          "question": "Az AI helyettesíti a stratégiai munkáját?",
+          "answer": "Nem. A mesterséges intelligencia felgyorsítja az elemzést és a termelést, de a stratégia, a márkahang és a konverziós döntések emberiek és mérhetőek maradnak."
         },
         {
           "id": "ai-7",
-          "question": "Biztonságos az AI-generált tartalom SEO szempontból?",
-          "answer": "Csak emberi ellenőrzéssel, egyedi insighttal és E-E-A-T-tel. Kerüljük a vékony, generikus oldalakat, amelyek rontják a rangsorolást."
+          "question": "Biztonságos az AI-tartalom a SEO számára?",
+          "answer": "Csak emberi felülvizsgálattal, egyedi betekintésekkel és E-E-A-T-vel. Kerüljük a vékony, általános szövegeket, amelyek árthatnak a rangsorolásnak."
         },
         {
           "id": "ai-8",
-          "question": "Mi az AI readiness?",
-          "answer": "Az, mennyire vannak úgy felépítve a weboldalad, a tartalmad és az adataid, hogy az AI rendszerek helyesen tudják idézni, ajánlani és elmagyarázni a márkádat."
+          "question": "Milyen az AI-készültség a márkám számára?",
+          "answer": "Ez a webhely, a tartalom és az adatok beállításának mértéke, hogy az AI-rendszerek helyesen tudják idézni, ajánlani és elmagyarázni a márkáját."
         },
         {
           "id": "ai-9",
-          "question": "Használtok AI agenteket a dashboardban?",
-          "answer": "Igen. Az ügyfelek láthatnak agenteket SEO-hoz, tartalomhoz, socialhoz és hirdetésekhez státusszal és feladatokkal."
+          "question": "Használhatok mesterséges intelligencia-ügynököket az irányítópulton?",
+          "answer": "Igen. Az ügyfélportálon mesterséges intelligencia-ügynököket láthat a keresőoptimalizáláshoz, a tartalomhoz, a közösségi oldalhoz és a hirdetésekhez – beleértve az állapotot és a feladatokat is."
         },
         {
           "id": "ai-10",
-          "question": "Milyen AI eszközöket használtok?",
-          "answer": "Use case alapján választunk eszközöket, governance-szel: források, fact-check, brand szabályok és privacy."
+          "question": "Dolgozik a ChatGPT-vel, Claude-dal vagy más eszközökkel?",
+          "answer": "Az eszközöket használati esetenként választjuk ki. Az irányítás számít: források, tények ellenőrzése, márkairányelvek és adatvédelem, így az AI-használat megbízható marad."
         },
         {
           "id": "ai-11",
-          "question": "Segíthet az AI a support ticketekben?",
-          "answer": "Igen, triage-ra és gyorsabb válaszokra, emberi eszkalációval összetett vagy érzékeny eseteknél."
+          "question": "Az AI segít a támogatási jegyekben?",
+          "answer": "Igen, az osztályozás és a gyorsabb válaszok érdekében. A bonyolult vagy kényes eseteket mindig az emberi csapattárshoz továbbítják."
         },
         {
           "id": "ai-12",
-          "question": "Hogyan árazott az AI munka?",
-          "answer": "Belépő szintű AI scan-től havi AI + marketing retainerekig. Igényfelmérés után egyértelmű ajánlatot adunk."
+          "question": "Mennyibe kerül egy AI elköteleződés?",
+          "answer": "Az ingyenes vagy belépő szintű AI-vizsgálattól a havi mesterségesintelligencia- és marketingmegtartókig terjed. A felvétel után egyértelmű javaslatot kap."
         },
         {
           "id": "ai-13",
-          "question": "Hogyan mérjük az AI ROI-t?",
-          "answer": "KPI-okkal, mint forgalom, leadek, megtakarított idő, tartalomkimenet, ticket megoldási idő és konverzió — előre rögzítve."
+          "question": "Hogyan mérhetem az AI-kezdeményezések ROI-ját?",
+          "answer": "Olyan KPI-k révén, mint a forgalom, a leadek, a megtakarított idő, a tartalomkimenet, a jegyfelbontás és a konverzió. Ezeket előre meghatározzuk a tervben, hogy az eredmények láthatóak maradjanak."
         }
       ]
     },
@@ -153,215 +153,215 @@
       "items": [
         {
           "id": "seo-1",
-          "question": "Mi a különbség az AEO, GEO és SEO között?",
-          "answer": "Az AEO (Answer Engine Optimization) az AI válaszokra optimalizál. A GEO (Geographic Search Engine Optimization) erősíti a helyi és regionális láthatóságot a Maps-ben, a local packokban és a helyalapú keresésekben. A SEO a klasszikus keresőmotorokra fókuszál."
+          "question": "Mi a különbség az AEO, a GEO és a SEO között?",
+          "answer": "Az AEO (Answer Engine Optimization) az AI-válaszokra összpontosít. A GEO (Geographic Search Engine Optimization) erősíti a helyi és regionális láthatóságot a Térképekben, a helyi csomagokban és a helyalapú keresésben. A SEO a klasszikus keresőmotorokhoz optimalizál."
         },
         {
           "id": "seo-2",
-          "question": "Miért fontos most az AEO/GEO?",
-          "answer": "Egyre több felhasználó AI-on keresztül kap választ és helyben keres („near me”). AEO nélkül kimaradsz az AI idézetekből; GEO nélkül kimaradsz a közeli leadekből — akkor is, ha a klasszikus SEO rendben van."
+          "question": "Miért számít most az AEO/GEO?",
+          "answer": "Több kereső kap választ a mesterséges intelligencia segítségével, és helyileg (\"közelben\") is keres. AEO nélkül hiányzik az AI idézetek; GEO nélkül hiányoznak a helyi potenciális ügyfelek – még akkor is, ha a klasszikus SEO szilárd."
         },
         {
           "id": "seo-3",
-          "question": "Hogyan indítotok egy SEO együttműködést?",
-          "answer": "Technikai audit, keyword/intent kutatás, content gap elemzés és egy priorizált roadmap, üzleti KPI-okhoz kötve."
+          "question": "Hogyan kezdj el egy SEO elkötelezettséget?",
+          "answer": "Kezdjük egy műszaki audittal, kulcsszó- és szándékkutatással, egy tartalmi hiányelemzéssel és egy prioritási ütemtervvel, amely az Ön üzleti teljesítménymutatóihoz kapcsolódik."
         },
         {
           "id": "seo-4",
-          "question": "Mennyi idő, mire látszanak a SEO eredmények?",
-          "answer": "A technikai nyereségek gyorsak lehetnek. Az organikus növekedés jellemzően hetek-hónapok alatt épül fel, a versenytől függően."
+          "question": "Mennyi idő múlva válnak láthatóvá a SEO eredményei?",
+          "answer": "A technikai győzelmek gyorsan megmutatkozhatnak. Az organikus növekedés általában hetek vagy hónapok alatt alakul ki, a versenytől és attól függően, hogy milyen következetesen hajtjuk végre."
         },
         {
           "id": "seo-5",
-          "question": "Vállaltok local SEO-t?",
-          "answer": "Igen: Google Business Profile, helyi landing oldalak, NAP konzisztencia, értékelések és helyi tartalom klaszterek."
+          "question": "Te is foglalkozol helyi SEO-val?",
+          "answer": "Igen. Dolgozunk a Google vállalkozásprofilon, a helyi céloldalakon, a NAP-konzisztencián, az áttekintéseken és a helyi tartalomklasztereken, hogy jobban megtalálják a régiójában."
         },
         {
           "id": "seo-6",
-          "question": "Mit jelent nálatok a technikai SEO?",
-          "answer": "Feltérképezhetőség, indexelhetőség, Core Web Vitals, strukturált adatok, sitemap/robots, canonicals, belső linkelés és hibatisztítás."
+          "question": "Mi az Ön számára a technikai SEO?",
+          "answer": "A technikai SEO lefedi a feltérképezést, az indexelést, az alapvető webes vitalokat, a strukturált adatokat, a webhelytérképet és a robotokat, a kanonikusokat, a belső linkeket és a hibaelhárítást – mindent, amire a keresőmotoroknak szüksége van ahhoz, hogy jól megértsék a webhelyet."
         },
         {
           "id": "seo-7",
-          "question": "Készítetek SEO tartalmat?",
-          "answer": "Igen: briefek, vázlatok, blogok, landing oldalak és FAQ-k intenthez illesztve és AI láthatóságra strukturálva."
+          "question": "Segítesz a SEO tartalommal kapcsolatban?",
+          "answer": "Igen. Olyan rövid összefoglalókat, vázlatokat, blogokat, nyitóoldalakat és GYIK-eket készítünk, amelyek megfelelnek a keresési szándéknak, és MI-barát módon vannak felépítve."
         },
         {
           "id": "seo-8",
-          "question": "Mi az E-E-A-T?",
-          "answer": "Experience, Expertise, Authoritativeness, Trust — kritikus a rangsorolás és az AI összefoglalók hitelessége szempontjából."
+          "question": "Mi az E-E-A-T és miért számít?",
+          "answer": "Az E-E-A-T az Experience, Expertise, Authoritativeness és Trust rövidítése. Az erős E-E-A-T segíti a rangsorolást és a márka hitelességét az AI-összefoglalókban."
         },
         {
           "id": "seo-9",
-          "question": "Csináltok link buildinget?",
-          "answer": "Igen, etikus és releváns módon: digitális PR, partnerségek és tartalmi assetek — soha nem spam sémák."
+          "question": "Linképítéssel foglalkozol?",
+          "answer": "Igen, etikusan és relevánsan: digitális PR, partnerségek és tartalmi eszközök. Nem használunk spam jellegű linkrendszereket."
         },
         {
           "id": "seo-10",
-          "question": "Tudtok segíteni SEO károk helyreállításában?",
-          "answer": "Igen: algoritmus-visszaesés, toxikus linkek, indexelési problémák és content cannibalization javítása."
+          "question": "Kijavíthatja a meglévő SEO károkat?",
+          "answer": "Igen. Frissítések, mérgező hivatkozások, indexelési problémák vagy tartalom kannibalizálása után kijavítjuk a károkat, majd meghatározzuk a tiszta növekedési utat."
         },
         {
           "id": "seo-11",
-          "question": "Hogyan riportoljátok a SEO előrehaladást?",
-          "answer": "Havi vagy sprintenkénti riport: rangsorok, forgalom, konverziók, technikai problémák és következő lépések."
+          "question": "Hogyan jelenti a SEO előrehaladását?",
+          "answer": "Havonta vagy sprintenként jelentjük a helyezéseket, a forgalmat, a konverziókat, a technikai problémákat és a következő akciókat, így egyértelmű, hogy mit tettünk, és mi következik."
         },
         {
           "id": "seo-12",
-          "question": "Működik a SEO ecommerce esetén?",
-          "answer": "Igen: termék/kategória SEO, faceted navigation, értékelések, strukturált adatok és vásárlási intentű tartalmi hubok."
+          "question": "Működik a SEO az e-kereskedelemben?",
+          "answer": "Teljesen. A termék- és kategória SEO-t, az összetett navigációt, az ismertetőket, a strukturált adatokat és a tartalomközpontokat a vásárlási szándék köré optimalizáljuk."
         },
         {
           "id": "seo-13",
-          "question": "A SEO egyszeri vagy folyamatos?",
-          "answer": "A legjobb eredmény folyamatos optimalizálásból jön. Az egyszeri audit hasznos, de a versenytársak folyamatosan mozognak."
+          "question": "A SEO egyszeri vagy folyamatban lévő projekt?",
+          "answer": "A legjobb eredményeket a folyamatos optimalizálás eredményezi. Az egyszeri auditok segítenek, de a versenytársak nem állnak meg – ezért folyamatosan mérünk és igazítunk."
         },
         {
           "id": "seo-14",
-          "question": "Támogatjátok a nemzetközi SEO-t?",
-          "answer": "Igen: hreflang, piackutatás locale-onként, lokalizáció és több-locale technikai beállítások."
+          "question": "Segítesz a nemzetközi SEO-ban?",
+          "answer": "Igen. Vállaljuk a hreflang-t, a piackutatást országonként vagy nyelvenként, a tartalom lokalizációját és a több helyben történő műszaki beállításokat."
         }
       ]
     },
     {
       "id": "advertising",
-      "title": "Hirdetés",
+      "title": "Hirdető",
       "items": [
         {
           "id": "ads-1",
-          "question": "Mely hirdetési csatornákat kezelitek?",
-          "answer": "Google Ads, Meta, LinkedIn, és ahol releváns YouTube/retargeting — a funnel és a büdzsé alapján."
+          "question": "Milyen hirdetési csatornákat támogat?",
+          "answer": "Támogatjuk a Google Ads-t, a Métát (Facebook/Instagram), a LinkedIn-t és ahol releváns a YouTube-ot vagy az újracélzást – a csatornához és a költségvetéshez igazodva."
         },
         {
           "id": "ads-2",
-          "question": "Hogyan állítjátok be a hirdetési büdzsét?",
-          "answer": "A célokból (lead/eladás), célzott CAC-ból, aukciós árakból és egy teszt fázisból. Lean indulunk és a nyerteseket skálázzuk."
+          "question": "Hogyan határozza meg a megfelelő hirdetési költségvetést?",
+          "answer": "A költségvetést a célok (leadek vagy eladások), a CAC-célok, a piaci árak és a tesztfázis alapján határozzuk meg. Lean kezdjük, és azt méretezzük, ami működik."
         },
         {
           "id": "ads-3",
-          "question": "Mi a Google Ads megközelítésetek?",
-          "answer": "Account struktúra, intent mapping, negatív kulcsszavak, landing-page illeszkedés, konverziókövetés és heti optimalizálás."
+          "question": "Mi a megközelítése a Google Ads-hez?",
+          "answer": "Egyértelmű fiókstruktúrát állítunk be, a keresési szándékot feltérképezzük, kizáró kulcsszavakat adunk hozzá, ellenőrizzük a céloldal illeszkedését, beállítjuk a konverziókövetést, és hetente optimalizálunk."
         },
         {
           "id": "ads-4",
-          "question": "Tudtok Meta Ads-et futtatni ecommerce-re?",
-          "answer": "Igen: katalógusok/retargeting, kreatívok, célközönségek és kreatív tesztelés a ROAS javításához."
+          "question": "Futtathat metahirdetéseket az e-kereskedelemhez?",
+          "answer": "Igen. Katalógus- és újracélzási kampányokat futtatunk, kreatívokat és közönségeket tesztelünk, valamint optimalizálunk a ROAS javítása érdekében."
         },
         {
           "id": "ads-5",
-          "question": "Hogyan mérjük a hirdetések sikerét?",
-          "answer": "Konverziók, CPA/CAC, ROAS, lead minőség és pipeline — nem hiúsági kattintások."
+          "question": "Hogyan méri a reklám sikerét?",
+          "answer": "Mérjük a konverziókat, a CPA/CAC-ot, a ROAS-t, a lead minőségét és a folyamatot – nem csak a kattintásokat. Így a mennyiség helyett az eredményekre optimalizálunk."
         },
         {
           "id": "ads-6",
-          "question": "Mi van, ha a tracking elromlott?",
-          "answer": "Javítjuk a GTM/GA4/pixel beállításokat, ahol kell a consent setupot, és erősebb mérési opciókat."
+          "question": "Mi van, ha rossz a követés?",
+          "answer": "Ezután javítjuk a címkézést (GTM, GA4 és képpontok), a hozzájárulási módot, ahol szükséges, és a szerveroldali beállításokat a megbízhatóbb adatok érdekében."
         },
         {
           "id": "ads-7",
-          "question": "Futtattok B2B LinkedIn Ads-et?",
-          "answer": "Igen, éles célzással, lead formokkal vagy landing oldalakkal és döntéshozói üzenetekkel."
+          "question": "Ön is futtat B2B LinkedIn hirdetéseket?",
+          "answer": "Igen. Éles célzást, lead-gen űrlapokat vagy céloldalakat és olyan tartalmat használunk, amely megszólítja a döntéshozókat."
         },
         {
           "id": "ads-8",
-          "question": "Milyen gyorsan hoznak eredményt a hirdetések?",
-          "answer": "A forgalom azonnali lehet. Stabil CPA/ROAS jellemzően 2–6 hét tanulási és iterációs idő után alakul ki."
+          "question": "Milyen gyorsan láthatom a hirdetések eredményeit?",
+          "answer": "A forgalom azonnal megérkezhet. A stabil CPA vagy ROAS általában 2–6 hét tanulást és kreatív iterációt igényel."
         },
         {
           "id": "ads-9",
-          "question": "Készítetek hirdetési kreatívokat?",
-          "answer": "Igen: szöveg, vizuálok és teszt variánsok — igény szerint design/media creation is."
+          "question": "Ön is készít hirdetési kreatívokat?",
+          "answer": "Igen. Másolatot, látványelemeket és tesztváltozatokat készítünk. A dizájn és a médiaalkotás is beépíthető, így a kampányok nem várnak a kreatívokra."
         },
         {
           "id": "ads-10",
-          "question": "Erősítheti egymást a hirdetés és a SEO?",
-          "answer": "Igen. A keresési insightok táplálják a SEO-t; a jó organikus oldalak javítják a Quality Score-t és csökkentik a CPA-t."
+          "question": "A hirdetések és a SEO erősíthetik egymást?",
+          "answer": "Teljesen. Adatok keresése a hirdetések hírcsatornáiból SEO; Az erős organikus oldalak csökkentik a CPA-t és növelik a minőségi mutatót."
         },
         {
           "id": "ads-11",
-          "question": "Át tudtok venni meglévő hirdetési fiókokat?",
-          "answer": "Igen. Auditálunk, restrukturálunk és optimalizálunk felesleges újraépítés nélkül."
+          "question": "Kezeli a meglévő hirdetési fiókokat?",
+          "answer": "Igen. Felesleges újrakezdés nélkül auditálunk, átalakítunk és optimalizálunk."
         },
         {
           "id": "ads-12",
-          "question": "Hogyan előzitek meg a pazarló költést?",
-          "answer": "Negatívok, kizárások, limitek, geo kontrollok, frekvencia limit és gyors kill switch-ek."
+          "question": "Hogyan előzheti meg a hirdetési költségkeret elpazarlását?",
+          "answer": "Megakadályozzuk a pazarlást kizáró kulcsszavakkal, közönségkizárással, költségkeret-korlátozással, geokerítéssel, gyakoriságszabályozással és az alulteljesítők gyors szüneteltetésével."
         },
         {
           "id": "ads-13",
-          "question": "Megéri még a remarketing?",
-          "answer": "Igen, privacy-kompatibilisen és erős ajánlatokkal — gyakran a leghatékonyabb réteg."
+          "question": "A remarketing továbbra is releváns?",
+          "answer": "Igen, ha az adatvédelemnek megfelelő, és erős kreatívokkal és ajánlatokkal párosul. Gyakran ez marad a tölcsér leghatékonyabb rétege."
         }
       ]
     },
     {
       "id": "design",
-      "title": "Design",
+      "title": "Tervezés",
       "items": [
         {
           "id": "des-1",
-          "question": "Milyen design szolgáltatásokat kínáltok?",
-          "answer": "Logó, arculat, névjegykártya, levélpapír, szórólap, plakát, matrica, magazin/brosúra és digitális vizuálok."
+          "question": "Milyen tervezési szolgáltatásokat kínál?",
+          "answer": "Kínálunk logókat, márkaidentitást, névjegykártyákat, fejléces papírokat, szórólapokat, posztereket, matricákat, magazinokat vagy brosúrákat és digitális látványelemeket."
         },
         {
           "id": "des-2",
-          "question": "Milyen eszközöket használtok?",
-          "answer": "Adobe Photoshop, Illustrator és InDesign nyomdakész, professzionális anyagokhoz."
+          "question": "Milyen eszközökkel dolgozol?",
+          "answer": "Adobe Photoshop, Illustrator és InDesign programokkal dolgozunk, így a fájlok nyomtatásra készek és professzionálisan felcserélhetők."
         },
         {
           "id": "des-3",
-          "question": "Adtok nyomdakész fájlokat?",
-          "answer": "Igen: CMYK, kifutó, vágójelek és korrekt PDF export, plusz képernyős változatok."
+          "question": "Szállít-e nyomtatásra kész fájlokat?",
+          "answer": "Igen. CMYK-t, kivágást, vágójeleket és megfelelő PDF/X exportot szállítunk, ahol szükséges, valamint képernyőváltozatokat digitális használatra."
         },
         {
           "id": "des-4",
-          "question": "Hogyan zajlik egy logóprojekt?",
-          "answer": "Brief → koncepciók → feedback körök → végső vektorok (SVG/PDF/AI) és alap használati irányelvek."
+          "question": "Hogyan működik egy logóprojekt?",
+          "answer": "A logóprojekt az eligazítástól a koncepciókig, majd a visszajelzésekig tart, és a végső vektorfájlokkal (SVG/PDF/AI) és az alapvető irányelvekkel zárul."
         },
         {
           "id": "des-5",
-          "question": "Tudtok frissíteni egy meglévő brandet?",
-          "answer": "Igen — logó, színek és tipográfia frissítése úgy, hogy közben megmaradjon a felismerhetőség."
+          "question": "Frissítheti a meglévő márkánkat?",
+          "answer": "Igen. Felfrissítjük a logót, a színt, a tipográfiát és az alkalmazásokat anélkül, hogy a felismerést megzavarnánk."
         },
         {
           "id": "des-6",
-          "question": "Készítetek social template-eket?",
-          "answer": "Igen, hogy a csapatod következetesen és gyorsan tudjon posztolni."
+          "question": "Te is csinálsz közösségi sablonokat?",
+          "answer": "Igen. Konzisztens sablonokat készítünk a bejegyzésekhez, történetekhez és hirdetésekhez, hogy csapata gyorsan és felismerhetően publikálhasson."
         },
         {
           "id": "des-7",
-          "question": "Digitális vs nyomdai design?",
-          "answer": "A nyomda színtérrel, felbontással és margókkal dolgozik; a digitális élességet és sebességet igényel. Mindkettőt helyesen szállítjuk."
+          "question": "Mi a különbség a digitális és a nyomtatott design között?",
+          "answer": "A nyomtatáshoz színtérre, felbontásra és margókra van szükség; a digitálisnak élességre és gyors betöltési időre van szüksége a képernyőn. Mindkettőt korrektül, csatornára szabva szállítjuk."
         },
         {
           "id": "des-8",
-          "question": "Tudtok magazinokat vagy brosúrákat tördelni?",
-          "answer": "Igen, többoldalas InDesign munka rácsokkal, stílusokkal és prepress ellenőrzéssel."
+          "question": "Tudsz magazinokat vagy prospektusokat elrendezni?",
+          "answer": "Igen. Az InDesignban többoldalas elrendezéseket készítünk rácsokkal, stílusokkal és nyomtatás előtti ellenőrzésekkel, nyomtatásra vagy digitális terjesztésre készen."
         },
         {
           "id": "des-9",
-          "question": "Vállaljátok a nyomtatást is?",
-          "answer": "Igen. Tervezünk, és kis vagy nagy mennyiségben nyomtatunk is — névjegykártyától és matricától a szórólapokon, plakátokon át a brosúrákig — proofokkal és gyártási koordinációval."
+          "question": "Segítesz a nyomtatásban?",
+          "answer": "Igen. Tervezünk és nyomtatunk kis vagy nagy mennyiségben – a névjegykártyáktól és matricáktól a szórólapokig, poszterekig és prospektusokig – próbanyomatokkal és egyeztetéssel a szállításig."
         },
         {
           "id": "des-10",
-          "question": "Hány feedback kör van benne?",
-          "answer": "Általában 2–3 strukturált kör; több is elérhető megállapodás szerint."
+          "question": "Hány visszajelzési kört tartalmaz?",
+          "answer": "Általában 2-3 strukturált kört tartalmaz. További fordulók egyeztetés alapján lehetségesek."
         },
         {
           "id": "des-11",
-          "question": "Megkapjuk a forrásfájlokat?",
-          "answer": "Igen, megállapodás szerint (AI/PSD/INDD vagy export csomagok)."
+          "question": "Kapunk forrásfájlokat?",
+          "answer": "Igen, a megbeszélt szállításon belül. Ez lehet AI, PSD vagy INDD, vagy exportcsomag – attól függően, hogy miben állapodtunk meg."
         },
         {
           "id": "des-12",
-          "question": "Összehangolható a design és a webdesign?",
-          "answer": "Igen. Az arculati rendszer és a UI következetes marad printen és weben is."
+          "question": "A design és a webdesign együtt futhat?",
+          "answer": "Igen. Összehangoljuk a márkatervezést és a felhasználói felület rendszereit, így a nyomtatás és a weboldal egy egészet alkotnak."
         },
         {
           "id": "des-13",
-          "question": "Hol tudok többet megtudni a Digital Designról?",
-          "answer": "Látogasd meg a /digital-design oldalt és a menüben a Digital Design szolgáltatásokat."
+          "question": "Hol tudhatok meg többet a digitális tervezésről?",
+          "answer": "További információ a /digital-design oldalon és a Digitális Tervezési szolgáltatások menüpontban található."
         }
       ]
     },
@@ -371,68 +371,68 @@
       "items": [
         {
           "id": "mkt-1",
-          "question": "Milyen marketing szolgáltatásokat kínáltok?",
-          "answer": "AEO/GEO/SEO, tartalom, social, hirdetések, ecommerce növekedés, product listing, community management és data entry."
+          "question": "Milyen marketing szolgáltatásokat kínál?",
+          "answer": "Kínálunk AEO/GEO/SEO, tartalom, közösségi, hirdetések, e-kereskedelem növekedést, terméklistát, közösségi kezelést és adatbevitelt."
         },
         {
           "id": "mkt-2",
-          "question": "Hogyan építetek marketingstratégiát?",
-          "answer": "Célok, célcsoport, pozicionálás, csatornamix, tartalom pipeline és KPI-ok — gyakorlatiasan, végrehajthatóan."
+          "question": "Hogyan építs fel marketing stratégiát?",
+          "answer": "Stratégiát építünk a célok, a közönség, a pozicionálás, a csatornamix, a tartalomfolyamat és a KPI-k köré – praktikus és végrehajtható, nem csak papíron."
         },
         {
           "id": "mkt-3",
-          "question": "Mit jelent nálatok a full-funnel marketing?",
-          "answer": "Awareness → consideration → conversion → retention, egyértelmű csatornaszerepekkel."
+          "question": "Mit jelent számodra a teljes csatornás marketing?",
+          "answer": "A teljes csatorna a tudatosságtól (tartalom és hirdetések) a megfontoláson (esetek és SEO) át a konverzióig (céloldalak és CRM), majd a megőrzésig tart, így minden szakasznak egyértelmű szerepe van."
         },
         {
           "id": "mkt-4",
-          "question": "Segítetek pozicionálásban?",
-          "answer": "Igen. A tiszta pozicionálás megakadályozza a szétaprózott kampányokat és a gyenge konverziót."
+          "question": "Segítesz a pozicionálásban?",
+          "answer": "Igen. Az egyértelmű pozicionálás megakadályozza a kampányok töredezettségét és a gyenge konverziót."
         },
         {
           "id": "mkt-5",
-          "question": "Vállaltok szövegírást?",
-          "answer": "Igen: blogok, weboldalszöveg, hírlevelek, landing oldalak és sales copy."
+          "question": "Tudsz tartalmat írni?",
+          "answer": "Igen. Blogokat, webhelymásolatokat, hírleveleket, nyitóoldalakat és értékesítési szövegeket írunk – SEO- és konverzióközpontúan."
         },
         {
           "id": "mkt-6",
-          "question": "Csináltok ecommerce marketinget?",
-          "answer": "Igen: feedek, listing minőség, CRO, hirdetések és kategória/termék SEO."
+          "question": "E-kereskedelmi marketinget folytat?",
+          "answer": "Igen. Dolgozunk a termékhírcsatornákon, a listázás minőségén, a CRO-n, a hirdetéseken és a kategóriák és termékek SEO-ján."
         },
         {
           "id": "mkt-7",
           "question": "Mi az a CRO?",
-          "answer": "Conversion Rate Optimization — oldalak és funnelök javítása, hogy több látogató konvertáljon."
+          "answer": "A CRO a konverziós arány optimalizálása: javítja az oldalakat, a csatornákat és a felhasználói élményt, hogy több látogató konvertáljon."
         },
         {
           "id": "mkt-8",
-          "question": "Hogyan riportoljátok a marketing eredményeket?",
-          "answer": "Riportok/dashboardok forgalommal, leadekkel, eladásokkal, CPA/ROAS-szal és csatorna learnings-szel."
+          "question": "Hogyan jelenti a marketing eredményeit?",
+          "answer": "Az irányítópultok vagy jelentések segítségével csatornánként forgalommal, potenciális ügyfelekkel, értékesítésekkel, CPA/ROAS-értékkel és tanulságokkal számolunk be, beleértve a következő lépéseinket is."
         },
         {
           "id": "mkt-9",
-          "question": "Tudtok együtt dolgozni az in-house csapatunkkal?",
-          "answer": "Igen — kivitelezünk, tanácsadunk, vagy viszünk egy specialist lane-t (csak SEO, csak hirdetés, stb.)."
+          "question": "Dolgozik a belső marketing csapatunkkal?",
+          "answer": "Igen. Speciális alkatrészt, például csak SEO-t vagy csak hirdetéseket tudunk kivitelezni, spórolni vagy átvenni."
         },
         {
           "id": "mkt-10",
-          "question": "Milyen gyorsan indulhatnak a kampányok?",
-          "answer": "Gyakran 1–2 héten belül a tracking/setup után; a tartalom párhuzamosan fut."
+          "question": "Milyen gyorsan indítanak kampányokat?",
+          "answer": "A nyomon követést és a beállítást követően a kampányok gyakran 1-2 héten belül életbe lépnek. A tartalmi munka párhuzamosan fut, így a hirdetések és az oldalak időben elkészülnek."
         },
         {
           "id": "mkt-11",
-          "question": "Támogatjátok az email marketinget?",
-          "answer": "Igen: flow-k, hírlevelek és szöveg, CRM/ecommerce integrációkkal is."
+          "question": "Segítesz az e-mail marketingben?",
+          "answer": "Igen. Folyamatokat, hírleveleket készítünk és másolunk. CRM-mel vagy e-kereskedelemmel való integráció lehetséges."
         },
         {
           "id": "mkt-12",
-          "question": "A marketing mindig havi retainer?",
-          "answer": "A retainerek jók a folyamatos növekedéshez; auditok, redesignok és launchok lehetnek projektalapúak."
+          "question": "A marketing havi szerződés?",
+          "answer": "A rögzítők gyakoriak a folyamatos növekedéshez. Az olyan projektek, mint az audit, az újratervezés vagy az indítás, egyszeriek lehetnek."
         },
         {
           "id": "mkt-13",
-          "question": "Hogyan kerüljük el a busyworköt eredmények nélkül?",
-          "answer": "Minden aktivitás KPI-okhoz kapcsolódik. A gyengén teljesítőket javítjuk vagy leállítjuk."
+          "question": "Hogyan lehet megakadályozni az eredmény nélküli „elfoglalt marketinget”?",
+          "answer": "Minden tevékenység KPI-hez van kötve. Az alulteljesítő taktikákat leállítják vagy javítják az adatokkal, így a költségvetés arra megy, ami működik."
         }
       ]
     },
@@ -442,68 +442,68 @@
       "items": [
         {
           "id": "soc-1",
-          "question": "Mely social csatornákat kezelitek?",
-          "answer": "Főként LinkedIn, Instagram, Facebook, és ahol releváns X/TikTok — a célcsoport illeszkedése alapján."
+          "question": "Milyen közösségi csatornákat kezel?",
+          "answer": "Főleg a LinkedIn-t, az Instagramot és a Facebookot, valamint adott esetben az X-et vagy a TikTok-ot kezeljük – a közönség, nem a hype alapján."
         },
         {
           "id": "soc-2",
-          "question": "Mit tartalmaz a social media menedzsment?",
-          "answer": "Stratégia, naptár, készítés/időzítés, community válaszok, riportálás és iteráció."
+          "question": "Mit tartalmaz a közösségi média menedzsment?",
+          "answer": "A közösségi média kezelése kiterjed a stratégiára, a tartalomnaptárra, a létrehozásra és ütemezésre, a közösségi válaszokra, a jelentésekre és a folyamatos optimalizálásra."
         },
         {
           "id": "soc-3",
-          "question": "Készítetek vizuálokat és videót?",
-          "answer": "Igen, media creation keretében: képek, carouselök, short-form videó és template-ek."
+          "question": "Te is készíted a látványelemeket és a videókat?",
+          "answer": "Igen, médiaalkotással: állóképek, körhinta, rövid formátumú videók és sablonok."
         },
         {
           "id": "soc-4",
-          "question": "Milyen gyakran posztoltok?",
-          "answer": "Céloktól függ — tipikusan heti 3–5 poszt a fő csatornákon, minőség a mennyiség felett."
+          "question": "Milyen gyakran posztol?",
+          "answer": "Ez a csatornától és a céloktól függ. Általában hetente 3-5 alkalommal teszünk közzé központi csatornánként, minőségileg a mennyiség felett."
         },
         {
           "id": "soc-5",
-          "question": "Vállaltok community managementet?",
-          "answer": "Igen: moderálás, kommentek, DM-ek és reputáció gondozás brand voice irányelvekkel."
+          "question": "Segítesz a közösség menedzselésében?",
+          "answer": "Igen. A moderálást, a válaszokat, a DM-eket és a hírnévgondozást az egyeztetett hangnem szerint kezeljük."
         },
         {
           "id": "soc-6",
-          "question": "Működhet együtt a social és a hirdetés?",
-          "answer": "Igen. Az organikus nyertesekből lesznek ad kreatívok; a hirdetés felerősíti, ami rezonál."
+          "question": "Kombinálhatók a közösségi oldalak és a hirdetések?",
+          "answer": "Igen. Organikus tartalom táplálja a hirdetéseket; a hirdetések méretezhetik azt, ami szervesen teljesít."
         },
         {
           "id": "soc-7",
-          "question": "Hogyan mérjük a social sikert?",
-          "answer": "Elérés, engagement, átkattintások, leadek és asszisztált konverziók — nem csak like-ok."
+          "question": "Hogyan méri a társadalmi sikert?",
+          "answer": "Mérjük az elérést, az elköteleződést, a kattintásokat, a leadeket és a támogatott konverziókat – nem csak a kedveléseket. Ez megmutatja, mi járul hozzá igazán a növekedéshez."
         },
         {
           "id": "soc-8",
-          "question": "Dolgoztok influenszerekkel?",
-          "answer": "Kérésre: kiválasztás, briefing és tracking, mérhető eredményekre fókuszálva."
+          "question": "Dolgozol influencerekkel?",
+          "answer": "Kérésre: kiválasztás, eligazítás és nyomon követés. Az illeszkedésre és a mérhető eredményekre összpontosítunk, nem egyedül az elérésre."
         },
         {
           "id": "soc-9",
-          "question": "Tudtok támogatni kríziskommunikációt?",
-          "answer": "Igen, gyors reakció protokollokkal a csapatoddal koordinálva."
+          "question": "Tudod támogatni a kríziskommunikációt?",
+          "answer": "Igen. Gyors válaszadási protokollokat használunk, és igazodunk a csapatához, így a válaszok konzisztensek és ellenőrzés alatt állnak."
         },
         {
           "id": "soc-10",
-          "question": "Segítetek LinkedIn thought leadershipben?",
-          "answer": "Igen: személyes + céges tartalom, carouselök, case-ek és employee advocacy."
+          "question": "Segítesz a LinkedInben a B2B gondolatvezetéshez?",
+          "answer": "Igen. Személyes és céges tartalmakat, körhintákat, ügyeket és alkalmazottak érdekképviseletét készítjük, így a szakértelem láthatóvá válik."
         },
         {
           "id": "soc-11",
-          "question": "Adtok tartalomnaptárt?",
-          "answer": "Igen — havi vagy negyedéves témák, formátumok és határidők."
+          "question": "Szállítasz tartalomnaptárt?",
+          "answer": "Igen. Havi vagy negyedéves tervet készítünk témákkal, formátumokkal és határidőkkel."
         },
         {
           "id": "soc-12",
-          "question": "Mi van, ha már van social menedzserünk?",
-          "answer": "Specializálódhatunk (kreatívok, hirdetés, stratégia) vagy segítünk csúcsidőszakokban."
+          "question": "Mi van, ha már van szociális menedzserünk?",
+          "answer": "Ezután kreatívokra, hirdetésekre vagy stratégiákra szakosodhatunk, vagy támogathatjuk a csúcsidőszakokat anélkül, hogy lecserélnénk a meglévő csapatot."
         },
         {
           "id": "soc-13",
-          "question": "Milyen gyorsan nő a social?",
-          "answer": "A következetesség összeadódik. Érdemi növekedés jellemzően hetek-hónapok; hirdetéssel gyorsabb."
+          "question": "Milyen gyorsan fogunk növekedni a közösségi oldalon?",
+          "answer": "A következetesség számít. A jelentős növekedés általában hetekig vagy hónapokig tart; a hirdetések támogatásával gyakran gyorsabban megy."
         }
       ]
     },
@@ -513,68 +513,68 @@
       "items": [
         {
           "id": "sup-1",
-          "question": "Milyen támogatást nyújtotok?",
-          "answer": "WordPress support, egyedi weboldal support, ticketek/live chat, karbantartás, biztonság, teljesítmény és incident response."
+          "question": "Milyen támogatást ajánl?",
+          "answer": "Kínálunk WordPress támogatást, egyedi webhelytámogatást, jegyeket és élő csevegést, karbantartást, biztonságot, teljesítményt és reagálást az eseményekre."
         },
         {
           "id": "sup-2",
-          "question": "Hogyan érem el a supportot?",
-          "answer": "Kapcsolatfelvételen, foglaláson, dashboard ticketeken vagy live chat-en keresztül. A sürgős ügyek prioritás jelölést kapnak."
+          "question": "Hogyan érhetem el a támogatást?",
+          "answer": "Kapcsolatfelvétel, időpont egyeztetés, jegyek a műszerfalon vagy élő chaten keresztül az oldalon. A sürgős esetek prioritásként vannak megjelölve."
         },
         {
           "id": "sup-3",
-          "question": "Mennyi a válaszidőtök?",
-          "answer": "Gyors első válasz (gyakran egy munkanapon belül; kritikus leállás esetén gyorsabban). A pontos SLA a csomagtól függ."
+          "question": "Mennyi a válaszidőd?",
+          "answer": "Célunk a gyors első válaszadás, gyakran egy munkanapon belül. Kritikus állásidő esetén gyorsabban reagálunk. A pontos SLA-k a támogatási csomagokban találhatók."
         },
         {
           "id": "sup-4",
-          "question": "Van 24/7 monitoring?",
-          "answer": "Igen, releváns support/hosting csomagokban: monitoring, backupok és riasztások."
+          "question": "24 órás felügyeletet kínál?",
+          "answer": "Igen, a megfelelő támogatási és tárhelycsomagokban: figyelés, biztonsági mentések és riasztások, így a problémák korábban láthatóvá válnak."
         },
         {
           "id": "sup-5",
-          "question": "El tudjátok távolítani a malware-t?",
-          "answer": "Igen — WordPress és egyedi stackek esetén is — hardeninggel és utókövetéssel."
+          "question": "El tudod távolítani a rosszindulatú programokat?",
+          "answer": "Igen – a WordPress-en és az egyéni stack-eken is – beleértve a keményítést és az utókezelést is, így a webhely tiszta és jobban védett lesz."
         },
         {
           "id": "sup-6",
-          "question": "Kezelitek a WordPress frissítéseket?",
-          "answer": "Igen WordPress maintenance & updates keretében: core/plugin/theme frissítések backupokkal és ellenőrzésekkel."
+          "question": "Te kezeled helyettünk a WordPress frissítéseit?",
+          "answer": "Igen, a „Karbantartás és frissítések” menüpontban: mag, bővítmények és témák, biztonsági mentéssel és ellenőrzésekkel a frissítés előtt és után."
         },
         {
           "id": "sup-7",
-          "question": "Tudtok segíteni hosting problémáknál?",
-          "answer": "Igen — diagnosztika, migráció vagy hosting/VPS/domainekkel kapcsolatos optimalizálás."
+          "question": "Segítesz hosting problémákban?",
+          "answer": "Igen. Diagnosztizáljuk, migráljuk vagy optimalizáljuk a tárhelyet, a VPS-t és a domaineket, amíg az oldal újra stabilan nem fut."
         },
         {
           "id": "sup-8",
-          "question": "Mi van, ha a weboldalam leáll?",
-          "answer": "Jelezd a sürgősséget. Backupok, szerver ellenőrzések és hotfixek alapján helyreállítunk, státusz frissítésekkel."
+          "question": "Mi van, ha a webhelyem nem működik?",
+          "answer": "Sürgősként jelentse be. Ahol lehetséges, biztonsági mentésekkel, szerverellenőrzésekkel és gyorsjavítással visszaállítjuk, és folyamatosan tájékoztatjuk az állapotról."
         },
         {
           "id": "sup-9",
-          "question": "Van ügyfélportál?",
-          "answer": "Igen. A bejelentkezett ügyfelek látják a dashboardot, ticketeket, projekteket és a releváns CRM/számlákat."
+          "question": "Van ügyfélkapu?",
+          "answer": "Igen. A bejelentkezett ügyfelek láthatják az irányítópultot, a jegyeket, a projekteket és adott esetben a CRM-et vagy a számlákat."
         },
         {
           "id": "sup-10",
-          "question": "Több csapattag is nyithat ticketet?",
-          "answer": "Igen, a fiókszerepektől függően (client/manager/admin)."
+          "question": "Több csapattárs is nyithat jegyet?",
+          "answer": "Igen, a fiók szerepkörétől függően (ügyfél, kezelő vagy rendszergazda)."
         },
         {
           "id": "sup-11",
-          "question": "Mi van a Basic/Standard/Premium supportban?",
-          "answer": "Több site, gyorsabb follow-up és szélesebb lefedettség (frissítések, malware, sebesség, SEO). Részletek a support oldalakon."
+          "question": "Mit tartalmaz az Alap/Standard/Prémium támogatás?",
+          "answer": "A magasabb csomagok több webhelyet, gyorsabb nyomon követést és szélesebb lefedettséget (frissítések, rosszindulatú programok, sebesség, SEO) fednek le. Részletek a támogatási oldalakon."
         },
         {
           "id": "sup-12",
-          "question": "Nem technikai kérdésekben is segítetek?",
-          "answer": "Igen — szolgáltatás, számlázás és fiókkérdések, technikai mélységgel a csomagod szerint."
+          "question": "Nem technikai jellegű kérdésekben is segítesz?",
+          "answer": "Igen, a szolgáltatásokról, a számlázásról és a fiókról. Az, hogy műszakilag milyen mélyre megyünk, a csomagtól függ."
         },
         {
           "id": "sup-13",
-          "question": "Később tudok supportot bővíteni?",
-          "answer": "Igen, ahogy nő a forgalom, a kockázat vagy a csapat igénye."
+          "question": "Frissíthetem a támogatást később?",
+          "answer": "Igen. Növelheti a méretet, ha a forgalom, a kockázat vagy a csapat igényei nőnek."
         }
       ]
     },
@@ -584,154 +584,154 @@
       "items": [
         {
           "id": "web-1",
-          "question": "Csak WordPress oldalakat készítetek?",
-          "answer": "Nem. WordPress mellett egyedi oldalakat is készítünk HTML/CSS/JS-ben, PHP-ban és Next.js-ben — külön a WordPress szolgáltatásoktól."
+          "question": "Csak WordPress oldalakat készítesz?",
+          "answer": "Nem. A WordPress mellett egyedi webdesignt végzünk HTML/CSS/JS, PHP és Next.js nyelven – a WordPress szolgáltatásoktól elkülönülten."
         },
         {
           "id": "web-2",
-          "question": "Mi az a Website Support?",
-          "answer": "Design, fejlesztés, karbantartás, biztonság, teljesítmény, backup/migráció és API integrációk egyedi stackekhez."
+          "question": "Mit tartalmaz a webhelytámogatás?",
+          "answer": "A webhelytámogatás kiterjed a tervezésre, a fejlesztésre, a karbantartásra, a biztonságra, a teljesítményre, a biztonsági mentésekre vagy az áttelepítésre, valamint az egyedi veremekhez tartozó API-integrációkra."
         },
         {
           "id": "web-3",
-          "question": "Újra tudtok tervezni egy meglévő oldalt?",
-          "answer": "Igen: UX/UI frissítés, konverziós javítások és technikai modernizálás teljes újraírás nélkül, ha elkerülhető."
+          "question": "Át lehet tervezni egy meglévő webhelyet?",
+          "answer": "Igen. UX/UI frissítést, konverziós fejlesztéseket és műszaki korszerűsítést végzünk anélkül, hogy mindent kidobnánk, ha nincs rá szükség."
         },
         {
           "id": "web-4",
-          "question": "Dolgoztok Next.js-szel?",
-          "answer": "Igen — kiváló gyors, SEO-ready marketing oldalakhoz és dashboardokhoz."
+          "question": "Dolgozik a Next.js-szal?",
+          "answer": "Igen. A Next.js ideális gyors, SEO-kompatibilis marketingoldalakhoz és irányítópultokhoz."
         },
         {
           "id": "web-5",
-          "question": "Készítetek PHP alkalmazásokat?",
-          "answer": "Igen: portálok, API-k, legacy modernizálás és teljesítmény/biztonság hardening."
+          "question": "Te is készítesz PHP alkalmazásokat?",
+          "answer": "Igen. Portálokat és API-kat építünk, modernizáljuk a régebbieket, valamint fokozzuk a teljesítményt és a biztonságot."
         },
         {
           "id": "web-6",
-          "question": "Hogy kezelitek a mobilos megjelenést?",
-          "answer": "Mobile-first design, reszponzív layoutok és tesztelés gyakori eszközökön/böngészőkben."
+          "question": "Hogyan biztosítod a mobilwebhelyeket?",
+          "answer": "Elsősorban mobileszközöket tervezünk, reszponzív elrendezéseket készítünk, és gyakori eszközökön és böngészőkön tesztelünk, így a webhely mindenhol működik."
         },
         {
           "id": "web-7",
-          "question": "Benne van az akadálymentesítés?",
-          "answer": "Követjük a stabil a11y alapokat; szigorúbb WCAG programok külön scope-olhatók."
+          "question": "Az akadálymentesítés (a11y) benne van?",
+          "answer": "Hozzáférhető alapelvekkel építünk. A szigorúbb WCAG programok extra hatókörként beépíthetők."
         },
         {
           "id": "web-8",
-          "question": "CMS opciók WordPress nélkül?",
-          "answer": "Igen: headless CMS, egyedi admin vagy statikus setup a csapatodtól függően."
+          "question": "Tud ajánlani CMS-beállításokat WordPress nélkül?",
+          "answer": "Igen. Ez lehet fej nélküli CMS, egyéni adminisztrátor vagy statikus beállítás – csapatától és igényeitől függően."
         },
         {
           "id": "web-9",
           "question": "Mennyi ideig tart egy webdesign projekt?",
-          "answer": "Landing oldalak hetek alatt; nagyobb site-ok/appok több sprinten át az igényfelméréses tervezés után."
+          "answer": "A céloldalak megjelenése általában néhány hetet vesz igénybe; nagyobb webhelyek vagy alkalmazások több héten keresztül futnak. A tervezés a felvétel után következik."
         },
         {
           "id": "web-10",
-          "question": "A launchnál benne van a szöveg és SEO?",
-          "answer": "Igen, ha tartalom/SEO-val kombináljuk, így a site kereshetően és konverzióra készen indul."
+          "question": "A másolást és a SEO-t is kezeli az induláskor?",
+          "answer": "Igen, tartalommal és SEO szolgáltatásokkal kombinálva, így az oldal azonnal kereshetővé és konverzióközpontúvá válik."
         },
         {
           "id": "web-11",
-          "question": "Mi a helyzet a teljesítménnyel launch után?",
-          "answer": "Optimalizáljuk a Core Web Vitals-t, caching/CDN-t és monitoringot adunk maintenance csomagokban."
+          "question": "Mi a helyzet az indítás utáni teljesítménnyel?",
+          "answer": "Optimalizáljuk a Core Web Vitalokat, a gyorsítótárat vagy a CDN-t és a felügyeletet. Az utógondozás ezután karbantartási csomagokon keresztül folytatódik."
         },
         {
           "id": "web-12",
-          "question": "Tudtok API-kat integrálni (CRM, fizetés, AI)?",
-          "answer": "Igen, megfelelő error handlinggel, logginggal és dokumentációval."
+          "question": "Lehet API-kat csatlakoztatni (CRM, fizetések, AI)?",
+          "answer": "Igen. Integrációkat építünk tiszta hibakezeléssel, naplózással és dokumentációval."
         },
         {
           "id": "web-13",
-          "question": "Hogyan adjátok át a kódot?",
-          "answer": "Repo/deploy pipeline-okon keresztül, ahol lehet, staging/production környezettel és handoverrel."
+          "question": "Hogyan szállítod a kódot?",
+          "answer": "Ahol lehetséges, adattáron és telepítési folyamaton keresztül szállítunk, környezetekkel (staging és termelés) és egyértelmű átadás-átvétellel."
         },
         {
           "id": "web-14",
-          "question": "Segítetek on-site CRO-ban?",
-          "answer": "Igen: UX fejlesztések, űrlapok, CTA-k, kísérletek és page speed."
+          "question": "Segít a helyszíni konverzióoptimalizálásban?",
+          "answer": "Igen. A/B teszteket, UX fejlesztéseket, űrlapokat, CTA-kat és oldalsebességet futtatunk, hogy több látogató konvertáljon."
         }
       ]
     },
     {
       "id": "webhosting",
-      "title": "Webtárhely és domainek",
+      "title": "Webhosting és domainek",
       "items": [
         {
           "id": "host-1",
-          "question": "Milyen tárhelyet kínáltok?",
-          "answer": "Shared, WordPress és VPS hosting Basic/Plus/Business csomagokban, plusz domainek."
+          "question": "Melyik tárhelyet ajánlod?",
+          "answer": "Megosztott tárhelyet, WordPress tárhelyet és VPS-t kínálunk – Basic, Plus és Business szinten – plusz domaineket."
         },
         {
           "id": "host-2",
-          "question": "Shared vs WordPress vs VPS?",
-          "answer": "A shared kisebb oldalakhoz jó. A WordPress hosting WP-re optimalizált. A VPS több erőforrást/irányítást ad nagyobb terheléshez."
+          "question": "Mi a különbség a megosztott, a WordPress és a VPS között?",
+          "answer": "A megosztott költséghatékony kisebb webhelyek esetében. A WordPress hosting WP-re van optimalizálva. A VPS több erőforrást és irányítást biztosít a nagyobb terhelésekhez."
         },
         {
           "id": "host-3",
-          "question": "Segítetek domain regisztrációban?",
-          "answer": "Igen — tanácsadás, regisztráció/átvitel és korrekt DNS beállítás."
+          "question": "Segítesz a domain regisztrációban?",
+          "answer": "Igen. Tanácsot adunk, regisztráljuk vagy átruházzuk a domaint, és megfelelően csatlakoztatjuk a DNS-t."
         },
         {
           "id": "host-4",
-          "question": "Benne van az SSL?",
-          "answer": "Igen, releváns hosting csomagokban az SSL benne van."
+          "question": "Tartalmazza az SSL-t a tárhelyszolgáltatáshoz?",
+          "answer": "Igen. Az SSL szabvány a vonatkozó tárhelyszolgáltatásainkban."
         },
         {
           "id": "host-5",
-          "question": "Át tudjátok költöztetni a site-omat a tárhelyetekre?",
-          "answer": "Igen: backup, migráció, DNS átállás, SSL és smoke tesztek minimális leállással."
+          "question": "Áttelepítheti a webhelyemet a tárhelyére?",
+          "answer": "Igen. Kezeljük a biztonsági mentést, a migrációt, a DNS átkapcsolást, az SSL-t és a füstteszteket, minimális állásidővel."
         },
         {
           "id": "host-6",
-          "question": "Hogyan működnek a backupok?",
-          "answer": "Csomagtól függ: egyszerű vagy automatizált backupok. Extra off-site retention is elérhető."
+          "question": "Hogyan működnek a biztonsági mentések a tárhelyen?",
+          "answer": "Ez a tervtől függ: egyszerű vagy automatizált biztonsági mentések. Extra telephelyen kívüli megőrzés is rendelkezésre áll."
         },
         {
           "id": "host-7",
-          "question": "Mi van, ha nő a forgalom?",
-          "answer": "Skálázunk Plus/Business vagy VPS irányba, és optimalizáljuk a caching/CDN-t."
+          "question": "Mi van, ha nagyobb lesz a forgalom?",
+          "answer": "Ezután Plus, Business vagy VPS-re skálázzuk, és optimalizáljuk a gyorsítótárat és a CDN-t, hogy a webhely kezelni tudja a növekedést."
         },
         {
           "id": "host-8",
-          "question": "A domainhez jár email is?",
-          "answer": "Setup-függő. Megbízható mail megoldásokat és DNS auth-ot (SPF/DKIM/DMARC) javaslunk."
+          "question": "Kínál e-mailt domainekkel?",
+          "answer": "Ez a csomagtól és a beállítástól függ. Megbízható levelezési megoldásokat ajánlunk, és helyesen állítjuk be a DNS-t (SPF, DKIM és DMARC)."
         },
         {
           "id": "host-9",
-          "question": "Mennyire biztonságos a tárhelyetek?",
-          "answer": "SSL/tűzfal, frissítések, monitoring és hardening, plusz opcionális security szolgáltatások."
+          "question": "Mennyire biztonságos a tárhely?",
+          "answer": "Tűzfalat, SSL-t, frissítéseket, monitorozást és keményítést használunk. Az extra biztonsági szolgáltatások további rétegeket adhatnak a tetejére."
         },
         {
           "id": "host-10",
-          "question": "Később válthatok sharedről VPS-re?",
-          "answer": "Igen — tervezett migráció teszteléssel és visszaállási opcióval."
+          "question": "Áttérhetek később megosztottról VPS-re?",
+          "answer": "Igen. Együtt tervezzük meg a migrációt, beleértve a teszteket és a visszaállítást is, így a váltás kontroll alatt marad."
         },
         {
           "id": "host-11",
-          "question": "Támogattok CDN-t?",
-          "answer": "Igen, ahol releváns (gyakran WP hostingban is benne van) a gyorsabb globális kiszolgálásért."
+          "question": "Támogatod a CDN-t?",
+          "answer": "Igen, ahol releváns – gyakran ingyenes CDN is szerepel a WP-tárhelycsomagokban – a gyorsabb globális kézbesítés érdekében."
         },
         {
           "id": "host-12",
-          "question": "Mi az uptime megközelítésetek?",
-          "answer": "Monitoring, gyors incident response és világos kommunikáció a karbantartási ablakokról."
+          "question": "Mi az Ön rendelkezésre állási megközelítése?",
+          "answer": "Felügyeljük, gyorsan reagálunk az incidensekre, és egyértelműen kommunikálunk a karbantartási ablakok körül, így Ön tudja, mi történik."
         },
         {
           "id": "host-13",
-          "question": "Tudtok DNS problémákat megoldani?",
-          "answer": "Igen: rekordok, propagáció, mail auth és domain bekötés."
+          "question": "Segítesz megoldani a DNS-problémákat?",
+          "answer": "Igen. Javítjuk a rekordokat, a terjedést, a levélhitelesítést és a tartományi kapcsolatokat, amíg a DNS újra nem lesz megfelelő."
         },
         {
           "id": "host-14",
-          "question": "Hogyan válasszam ki a megfelelő csomagot?",
-          "answer": "Forgalom, stack (WP vs egyedi), erőforrások és növekedés alapján. Őszintén tanácsolunk."
+          "question": "Hogyan válasszam ki a megfelelő tárhelytervet?",
+          "answer": "Forgalom, verem (WordPress vagy egyéni), erőforrások és növekedés alapján. Őszintén tanácsoljuk – nem adjuk túl."
         },
         {
           "id": "host-15",
-          "question": "Hol látom a tárhely árakat?",
-          "answer": "A hosting szolgáltatás oldalakon a Szolgáltatások → Webtárhely és domainek alatt."
+          "question": "Hol láthatom a hosting árakat?",
+          "answer": "A tárhelyszolgáltatás oldalain a Szolgáltatások → Webtárhely és tartományok alatt, adott esetben havi vagy éves opciókkal."
         }
       ]
     }
