@@ -1022,7 +1022,16 @@ export function toInternalPath(locale: string, pathWithoutLocale: string): strin
   if (bare.length > 1 && bare.endsWith("/")) bare = bare.slice(0, -1);
   if (bare === "/") return "/";
 
-  const parts = bare.split("/").filter(Boolean);
+  const parts = bare.split("/").filter(Boolean).map((part) => {
+    // Mirror page-param decoding: script-locale segments may still be %XX-encoded.
+    try {
+      return /%[0-9A-Fa-f]{2}/.test(part)
+        ? decodeURIComponent(part).normalize("NFC")
+        : part.normalize("NFC");
+    } catch {
+      return part;
+    }
+  });
   if (!parts.length) return "/";
 
   const reverse = reverseSegmentMap(locale);

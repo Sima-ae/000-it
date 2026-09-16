@@ -27,6 +27,28 @@ function emptyMaps(at = Date.now()): LocaleMaps {
   return { at, forward: new Map(), reverse: new Map() };
 }
 
+/**
+ * Next.js route params for non-ASCII segments often arrive still percent-encoded
+ * (`%CF%80…`). EntitySlug rows + cache keys are decoded Unicode (NFC).
+ * Normalize before every Map lookup / compare so script locales resolve.
+ */
+export function normalizeEntityParam(value: string): string {
+  if (!value) return value;
+  let out = value.trim();
+  try {
+    if (/%[0-9A-Fa-f]{2}/.test(out)) {
+      out = decodeURIComponent(out);
+    }
+  } catch {
+    // keep raw when malformed
+  }
+  try {
+    return out.normalize("NFC");
+  } catch {
+    return out;
+  }
+}
+
 export function entitySlugCacheAge(locale: string) {
   const hit = memory.get(locale);
   return hit ? Date.now() - hit.at : Number.POSITIVE_INFINITY;
@@ -39,6 +61,8 @@ export function replaceEntitySlugCache(
   const maps = emptyMaps();
   for (const row of rows) {
     if (!row.entityType || !row.entityKey || !row.slug) continue;
+    const entityKey = normalizeEntityParam(row.entityKey);
+    const slug = normalizeEntityParam(row.slug);
     let fwd = maps.forward.get(row.entityType);
     if (!fwd) {
       fwd = new Map();
@@ -49,10 +73,10 @@ export function replaceEntitySlugCache(
       rev = new Map();
       maps.reverse.set(row.entityType, rev);
     }
-    fwd.set(row.entityKey, row.slug);
-    rev.set(row.slug, row.entityKey);
+    fwd.set(entityKey, slug);
+    rev.set(slug, entityKey);
     // Canonical also resolves to itself
-    rev.set(row.entityKey, row.entityKey);
+    rev.set(entityKey, entityKey);
   }
   memory.set(locale, maps);
 }
@@ -78,11 +102,13 @@ export function rememberEntitySlug(
     rev = new Map();
     maps.reverse.set(entityType, rev);
   }
-  const prev = fwd.get(entityKey);
-  if (prev && prev !== slug) rev.delete(prev);
-  fwd.set(entityKey, slug);
-  rev.set(slug, entityKey);
-  rev.set(entityKey, entityKey);
+  const key = normalizeEntityParam(entityKey);
+  const publicSlug = normalizeEntityParam(slug);
+  const prev = fwd.get(key);
+  if (prev && prev !== publicSlug) rev.delete(prev);
+  fwd.set(key, publicSlug);
+  rev.set(publicSlug, key);
+  rev.set(key, key);
 }
 
 /** Public slug for a canonical key (falls back to canonical). */
@@ -91,8 +117,9 @@ export function publicEntitySlug(
   entityType: EntityType,
   canonicalKey: string,
 ): string {
-  const slug = memory.get(locale)?.forward.get(entityType)?.get(canonicalKey);
-  return slug || canonicalKey;
+  const normalized = normalizeEntityParam(canonicalKey);
+  const slug = memory.get(locale)?.forward.get(entityType)?.get(normalized);
+  return slug || normalized;
 }
 
 /** Canonical key for a public slug (falls back to input). */
@@ -101,11 +128,9 @@ export function canonicalEntityKey(
   entityType: EntityType,
   publicOrCanonical: string,
 ): string {
-  const key = memory
-    .get(locale)
-    ?.reverse.get(entityType)
-    ?.get(publicOrCanonical);
-  return key || publicOrCanonical;
+  const normalized = normalizeEntityParam(publicOrCanonical);
+  const key = memory.get(locale)?.reverse.get(entityType)?.get(normalized);
+  return key || normalized;
 }
 
 export function hasEntitySlugMaps(locale: string) {

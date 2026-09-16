@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import {
   canonicalEntityKey,
+  normalizeEntityParam,
   publicEntitySlug,
   type EntityType,
 } from "@/lib/entity-slug-cache";
@@ -21,9 +22,10 @@ export async function resolveEntityParam(opts: {
   internalPathFor: (canonicalKey: string) => string;
 }): Promise<string> {
   await hydrateEntitySlugs(opts.locale);
-  const canonical = canonicalEntityKey(opts.locale, opts.entityType, opts.param);
+  const param = normalizeEntityParam(opts.param);
+  const canonical = canonicalEntityKey(opts.locale, opts.entityType, param);
   const preferred = publicEntitySlug(opts.locale, opts.entityType, canonical);
-  if (preferred && preferred !== opts.param) {
+  if (preferred && preferred !== param) {
     redirect(localizedHref(opts.locale, opts.internalPathFor(canonical)));
   }
   return canonical;
@@ -35,27 +37,29 @@ export async function resolveKennisbankParams(opts: {
   articleParam?: string;
 }): Promise<{ categoryKey: string; articleKey?: string }> {
   await hydrateEntitySlugs(opts.locale);
+  const categoryParam = normalizeEntityParam(opts.categoryParam);
   const categoryKey = canonicalEntityKey(
     opts.locale,
     "kb_category",
-    opts.categoryParam,
+    categoryParam,
   );
   const preferredCat = publicEntitySlug(opts.locale, "kb_category", categoryKey);
 
   if (!opts.articleParam) {
-    if (preferredCat !== opts.categoryParam) {
+    if (preferredCat !== categoryParam) {
       redirect(localizedHref(opts.locale, `/kennisbank/${categoryKey}`));
     }
     return { categoryKey };
   }
 
+  const articleParam = normalizeEntityParam(opts.articleParam);
   const articleKey = canonicalEntityKey(
     opts.locale,
     "kb_article",
-    opts.articleParam,
+    articleParam,
   );
   const preferredArt = publicEntitySlug(opts.locale, "kb_article", articleKey);
-  if (preferredCat !== opts.categoryParam || preferredArt !== opts.articleParam) {
+  if (preferredCat !== categoryParam || preferredArt !== articleParam) {
     redirect(
       localizedHref(opts.locale, `/kennisbank/${categoryKey}/${articleKey}`),
     );
