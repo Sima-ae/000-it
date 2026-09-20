@@ -4,22 +4,22 @@ const motifs: Record<
   string,
   { c1: string; c2: string; motif: "shield" | "mail" | "server" | "globe" | "bot" | "doc" }
 > = {
-  domeinnamen: { c1: "#5b3c8b", c2: "#1aa68a", motif: "globe" },
-  bloggen: { c1: "#5b3c8b", c2: "#9b7fc0", motif: "doc" },
-  hosting: { c1: "#2f3a48", c2: "#5b3c8b", motif: "server" },
-  "e-mail": { c1: "#5b3c8b", c2: "#1aa68a", motif: "mail" },
-  directadmin: { c1: "#5b3c8b", c2: "#2f3a48", motif: "server" },
-  cyberpanel: { c1: "#1aa68a", c2: "#5b3c8b", motif: "server" },
-  beveiliging: { c1: "#5b3c8b", c2: "#e11d48", motif: "shield" },
-  "crm-klantenpanel": { c1: "#5b3c8b", c2: "#1aa68a", motif: "doc" },
-  wordpress: { c1: "#21759b", c2: "#5b3c8b", motif: "doc" },
-  "veilig-online": { c1: "#1aa68a", c2: "#5b3c8b", motif: "shield" },
-  support: { c1: "#5b3c8b", c2: "#9b7fc0", motif: "mail" },
-  plesk: { c1: "#52bce6", c2: "#5b3c8b", motif: "server" },
-  "ai-scan": { c1: "#5b3c8b", c2: "#1aa68a", motif: "bot" },
-  "aeo-geo-seo": { c1: "#5b3c8b", c2: "#1aa68a", motif: "globe" },
-  "ai-agents": { c1: "#5b3c8b", c2: "#9b7fc0", motif: "bot" },
-  "shop-en-pakketten": { c1: "#5b3c8b", c2: "#1aa68a", motif: "doc" },
+  domeinnamen: { c1: "#5e3b88", c2: "#007c8d", motif: "globe" },
+  bloggen: { c1: "#5e3b88", c2: "#9b7fc0", motif: "doc" },
+  hosting: { c1: "#2f3a48", c2: "#5e3b88", motif: "server" },
+  "e-mail": { c1: "#5e3b88", c2: "#007c8d", motif: "mail" },
+  directadmin: { c1: "#5e3b88", c2: "#2f3a48", motif: "server" },
+  cyberpanel: { c1: "#007c8d", c2: "#5e3b88", motif: "server" },
+  beveiliging: { c1: "#5e3b88", c2: "#e11d48", motif: "shield" },
+  "crm-klantenpanel": { c1: "#5e3b88", c2: "#007c8d", motif: "doc" },
+  wordpress: { c1: "#21759b", c2: "#5e3b88", motif: "doc" },
+  "veilig-online": { c1: "#007c8d", c2: "#5e3b88", motif: "shield" },
+  support: { c1: "#5e3b88", c2: "#9b7fc0", motif: "mail" },
+  plesk: { c1: "#52bce6", c2: "#5e3b88", motif: "server" },
+  "ai-scan": { c1: "#5e3b88", c2: "#007c8d", motif: "bot" },
+  "aeo-geo-seo": { c1: "#5e3b88", c2: "#007c8d", motif: "globe" },
+  "ai-agents": { c1: "#5e3b88", c2: "#9b7fc0", motif: "bot" },
+  "shop-en-pakketten": { c1: "#5e3b88", c2: "#007c8d", motif: "doc" },
 };
 
 function motifPath(motif: string) {
@@ -53,8 +53,8 @@ export function KennisbankIllustration({
   caption?: string;
 }) {
   const theme = motifs[categorySlug] || {
-    c1: "#5b3c8b",
-    c2: "#1aa68a",
+    c1: "#5e3b88",
+    c2: "#007c8d",
     motif: "doc" as const,
   };
   const label = categoryLabel || "TripleZero iT Hosting";

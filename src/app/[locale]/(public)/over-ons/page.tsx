@@ -192,7 +192,7 @@ export default async function AboutPage({
 
         <Reveal delay={0.06}>
           <div className="relative flex h-full min-h-55 flex-col justify-between overflow-hidden rounded-3xl p-6 text-white">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(91,60,139,0.55),transparent_45%),linear-gradient(145deg,#2a1845,#14181f_60%,#0f1720)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(94,59,136,0.55),transparent_45%),linear-gradient(145deg,#2a1845,#14181f_60%,#0f1720)]" />
             <div className="relative">
               <p className="font-display text-2xl font-semibold tracking-tight">
                 {t("readyTitle")}

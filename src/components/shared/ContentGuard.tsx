@@ -133,7 +133,7 @@ export function ContentGuard() {
           left: `${popup.x}px`,
           top: `${popup.y}px`,
           width: "180px",
-          backgroundColor: "#5b3c8b",
+          backgroundColor: "#5e3b88",
         }}
       >
         TripleZero iT © {popup.year}

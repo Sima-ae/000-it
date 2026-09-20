@@ -249,8 +249,8 @@ export function ServicesMegaMenu({
                 className={cn(
                   "group inline-flex items-center gap-2 rounded-2xl bg-primary px-5 py-2.5",
                   "text-sm font-semibold text-primary-foreground",
-                  "shadow-[0_10px_28px_rgba(91,60,139,0.35)] transition",
-                  "hover:bg-primary/90 hover:shadow-[0_14px_34px_rgba(91,60,139,0.42)]",
+                  "shadow-[0_10px_28px_rgba(94,59,136,0.35)] transition",
+                  "hover:bg-primary/90 hover:shadow-[0_14px_34px_rgba(94,59,136,0.42)]",
                   "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50",
                 )}
                 onClick={(event) => navigateFromMenu(localizedHref(locale, "/diensten"), event)}
