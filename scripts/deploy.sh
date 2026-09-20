@@ -26,10 +26,30 @@ if [[ ! -f .env ]]; then
   exit 1
 fi
 
-set -a
-# shellcheck disable=SC1091
-source .env
-set +a
+# Load .env without bash interpreting &, $, spaces in values (e.g. DATABASE_URL query params).
+eval "$(
+  node --input-type=module <<'NODE'
+import fs from "node:fs";
+const text = fs.readFileSync(".env", "utf8");
+for (const raw of text.split(/\n/)) {
+  const line = raw.trim();
+  if (!line || line.startsWith("#")) continue;
+  const eq = line.indexOf("=");
+  if (eq <= 0) continue;
+  const key = line.slice(0, eq).trim();
+  if (!/^[A-Za-z_][A-Za-z0-9_]*$/.test(key)) continue;
+  let val = line.slice(eq + 1);
+  if (
+    (val.startsWith('"') && val.endsWith('"')) ||
+    (val.startsWith("'") && val.endsWith("'"))
+  ) {
+    val = val.slice(1, -1);
+  }
+  const escaped = val.replace(/'/g, `'\\''`);
+  process.stdout.write(`export ${key}='${escaped}'\n`);
+}
+NODE
+)"
 
 echo "==> Install dependencies"
 if [[ "${SKIP_BUILD:-}" == "1" ]]; then
@@ -52,7 +72,7 @@ else
 fi
 
 echo "==> Test MariaDB before restart"
-if ! node scripts/check-db.mjs; then
+if ! node --env-file=.env scripts/check-db.mjs; then
   echo "ERROR: Cannot connect to MariaDB with .env on this server."
   exit 1
 fi
