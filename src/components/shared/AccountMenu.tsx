@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import { localizedHref } from "@/i18n/pathnames";
 
 const CLOSE_DELAY_MS = 180;
+const WEBMAIL_URL = "https://000-it.com/webmail";
 
 export function AccountMenu({ className }: { className?: string }) {
   const t = useTranslations("nav");
@@ -113,6 +114,16 @@ export function AccountMenu({ className }: { className?: string }) {
                 </SoftLink>
               </>
             )}
+            <a
+              href={WEBMAIL_URL}
+              role="menuitem"
+              className={itemClass}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+            >
+              {t("webmail")}
+            </a>
           </div>
         </div>
       ) : null}

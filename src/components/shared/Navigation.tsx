@@ -23,6 +23,8 @@ import {
 } from "@/i18n/pathnames";
 import { cn } from "@/lib/utils";
 
+const WEBMAIL_URL = "https://000-it.com/webmail";
+
 const primaryLinks = [
   { href: "/", key: "home" },
   { href: "/over-ons", key: "info", info: true },
@@ -32,6 +34,7 @@ const primaryLinks = [
   { href: "#prijzen", key: "pricing" },
   { href: "/nieuws", key: "blog" },
   { href: "/contact", key: "contact" },
+  { href: WEBMAIL_URL, key: "webmail", external: true },
 ] as const;
 
 function isLocaleHome(pathname: string, locale: string) {
@@ -142,6 +145,20 @@ export function Navigation() {
 
           <nav className="hidden items-center gap-0.5 xl:flex">
             {primaryLinks.map((link) => {
+              if ("external" in link && link.external) {
+                return (
+                  <a
+                    key={link.key}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-xl px-2.5 py-1.5 text-[13px] text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
+                  >
+                    {t(link.key)}
+                  </a>
+                );
+              }
+
               const href = localizedHref(locale, link.href);
               const pathOnly = href.split("#")[0];
               const active = linkActive(link.href, pathOnly);
@@ -219,6 +236,20 @@ export function Navigation() {
           <div className="max-h-[70vh] overflow-y-auto border-t border-border/60 px-3 py-3 xl:hidden">
             <div className="flex flex-col gap-1">
               {primaryLinks.map((link) => {
+                if ("external" in link && link.external) {
+                  return (
+                    <a
+                      key={link.key}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-xl px-3 py-2.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
+                    >
+                      {t(link.key)}
+                    </a>
+                  );
+                }
+
                 const href = localizedHref(locale, link.href);
                 const pathOnly = href.split("#")[0];
                 const active = linkActive(link.href, pathOnly);

@@ -5,9 +5,10 @@ import { SoftLink } from "@/components/shared/SoftLink";
 import { CopyrightBar } from "@/components/shared/CopyrightBar";
 import { localizedHref } from "@/i18n/pathnames";
 
+const WEBMAIL_URL = "https://000-it.com/webmail";
+
 const handyLinkPages = [
   { href: "/afspraak", key: "book", external: false },
-  { href: "/kennisbank", key: "kennisbank", external: false },
   { href: "/faq", key: "faq", external: false },
   { href: "/privacy", key: "privacy", external: true },
   { href: "/cookies", key: "cookies", external: true },
@@ -67,8 +68,10 @@ export function Footer() {
         <div className="glass overflow-hidden rounded-3xl">
           <div className="grid gap-8 px-6 py-7 sm:grid-cols-2 md:grid-cols-3 md:gap-6 md:px-8 md:py-8">
             <div>
-              <p className="font-display text-lg font-semibold tracking-tight text-foreground">
-                TripleZero iT
+              <p className="font-display text-lg font-semibold tracking-tight">
+                <span className="bg-linear-to-r from-primary via-[#7a5aa8] to-accent bg-clip-text text-transparent">
+                  TripleZero iT
+                </span>
               </p>
               <p className="mt-2 max-w-[16rem] text-sm leading-snug text-muted-foreground">
                 {t("tagline")}
@@ -105,6 +108,9 @@ export function Footer() {
               <SoftLink href={localizedHref(locale, "/diensten")} className="leading-snug transition hover:text-foreground">
                 {nav("services")}
               </SoftLink>
+              <SoftLink href={localizedHref(locale, "/kennisbank")} className="leading-snug transition hover:text-foreground">
+                {nav("kennisbank")}
+              </SoftLink>
               <SoftLink href={localizedHref(locale, "/portfolio")} className="leading-snug transition hover:text-foreground">
                 {nav("portfolio")}
               </SoftLink>
@@ -132,6 +138,14 @@ export function Footer() {
                   {nav(page.key)}
                 </SoftLink>
               ))}
+              <a
+                href={WEBMAIL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="leading-snug transition hover:text-foreground"
+              >
+                {nav("webmail")}
+              </a>
             </div>
           </div>
         </div>
