@@ -3,7 +3,7 @@
  * Browser-safe path helpers live in `cover-paths.ts`.
  */
 import { createHash } from "node:crypto";
-import { access, mkdir, readFile, rename, writeFile } from "node:fs/promises";
+import { access, mkdir, readFile, rename, stat, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import sharp from "sharp";
 import {
@@ -48,10 +48,21 @@ const COVER_HEIGHT = 630;
 const WATERMARK_MIN_PX = 52;
 const WATERMARK_RATIO = 0.09;
 const COVER_CLEAN_TAG = "000it-cover-clean";
+const COVER_FALLBACK_TAG = "000it-cover-fallback";
+/** Heuristic: SVG fallback JPEGs are much smaller than Pollinations covers. */
+const FALLBACK_MAX_BYTES = 40_000;
+
+function exifIncludes(exif: Buffer | undefined, tag: string) {
+  if (!exif) return false;
+  return Buffer.from(exif).toString("latin1").includes(tag);
+}
 
 function isTaggedClean(exif?: Buffer) {
-  if (!exif) return false;
-  return Buffer.from(exif).toString("latin1").includes(COVER_CLEAN_TAG);
+  return exifIncludes(exif, COVER_CLEAN_TAG);
+}
+
+function isTaggedFallback(exif?: Buffer) {
+  return exifIncludes(exif, COVER_FALLBACK_TAG);
 }
 
 async function isCoverClean(path: string) {
@@ -60,6 +71,18 @@ async function isCoverClean(path: string) {
     return isTaggedClean(meta.exif);
   } catch {
     return false;
+  }
+}
+
+/** Abstract SVG fallbacks (or very small stubs) that should be upgraded when download is on. */
+async function isWeakOrFallbackCover(path: string) {
+  try {
+    const bytes = (await stat(path)).size;
+    if (bytes > 0 && bytes < FALLBACK_MAX_BYTES) return true;
+    const meta = await sharp(path, { failOn: "none" }).metadata();
+    return isTaggedFallback(meta.exif);
+  } catch {
+    return true;
   }
 }
 
@@ -175,7 +198,7 @@ export async function writeFallbackNewsCover(
 
   await sharp(Buffer.from(svg))
     .jpeg({ quality: 86 })
-    .withExif({ IFD0: { ImageDescription: COVER_CLEAN_TAG } })
+    .withExif({ IFD0: { ImageDescription: COVER_FALLBACK_TAG } })
     .toFile(absPath);
 }
 
@@ -201,21 +224,28 @@ export async function ensureNewsCoverImage(
   const abs = join(dir, filename);
   const publicPath = localNewsCoverPath(input.id);
 
-  if (!opts?.force && (await fileExists(abs))) {
-    if (!(await isCoverClean(abs))) {
-      try {
-        await stripStoredCoverWatermark(abs);
-      } catch (error) {
-        console.warn(
-          `[news-cover] watermark strip failed for ${input.id}`,
-          error instanceof Error ? error.message : error,
-        );
+  const shouldDownload = opts?.download !== false;
+  const exists = await fileExists(abs);
+
+  if (!opts?.force && exists) {
+    const weak = await isWeakOrFallbackCover(abs);
+    if (!weak) {
+      if (!(await isCoverClean(abs))) {
+        try {
+          await stripStoredCoverWatermark(abs);
+        } catch (error) {
+          console.warn(
+            `[news-cover] watermark strip failed for ${input.id}`,
+            error instanceof Error ? error.message : error,
+          );
+        }
       }
+      return publicPath;
     }
-    return publicPath;
+    // Weak/fallback on disk: upgrade when downloads are allowed; otherwise keep serving it.
+    if (!shouldDownload) return publicPath;
   }
 
-  const shouldDownload = opts?.download !== false;
   const remote = buildNewsCoverRemoteUrl(input);
   const retries = opts?.retries ?? 6;
 
@@ -252,6 +282,9 @@ export async function ensureNewsCoverImage(
     }
   }
 
-  await writeFallbackNewsCover(input, abs);
+  // Keep any existing file if Pollinations failed; only invent a fallback when missing.
+  if (!(await fileExists(abs))) {
+    await writeFallbackNewsCover(input, abs);
+  }
   return publicPath;
 }

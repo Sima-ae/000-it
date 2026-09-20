@@ -33,6 +33,7 @@ export async function GET(_request: Request, { params }: Params) {
     return NextResponse.json({ error: "Not found" }, { status: 404 });
   }
 
+  // Prefer cached file; download:true upgrades weak SVG fallbacks to Pollinations covers.
   const coverImage = await ensureNewsCoverImage(
     {
       id: post.id,
@@ -41,7 +42,7 @@ export async function GET(_request: Request, { params }: Params) {
       excerpt: post.excerpt,
       tags: Array.isArray(post.tags) ? post.tags.map(String) : [],
     },
-    { download: false },
+    { download: true, retries: 2, delayMs: 800 },
   );
 
   if (post.coverImage !== coverImage) {

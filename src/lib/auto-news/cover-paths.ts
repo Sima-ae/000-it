@@ -25,5 +25,5 @@ export function isCustomRemoteCover(coverImage?: string | null) {
 
 /** On-demand cover endpoint used when the static upload 404s. */
 export function coverApiPath(id: string) {
-  return `/api/news/cover/${encodeURIComponent(id)}?v=2`;
+  return `/api/news/cover/${encodeURIComponent(id)}?v=3`;
 }
