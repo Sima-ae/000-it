@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { GlassCard } from "@/components/marketing/GlassCard";
+import { AnimatedCounter } from "@/components/marketing/AnimatedCounter";
+import { HeroVisual } from "@/components/marketing/HeroVisual";
 import { HomeHeroBanner } from "@/components/marketing/HomeHeroBanner";
 import { Reveal } from "@/components/marketing/Reveal";
 import { PricingPlans } from "@/components/marketing/PricingPlans";
@@ -15,6 +18,7 @@ import {
 } from "@/components/ui/accordion";
 import { localizedHref } from "@/i18n/pathnames";
 import { cn } from "@/lib/utils";
+import { getAiScanCount } from "@/lib/ai-scan-count";
 import { buildStaticPageMetadata, organizationJsonLd } from "@/lib/seo";
 import {
   catalogGroupSummary,
@@ -45,6 +49,8 @@ export default async function HomePage({
   const pricing = await getTranslations("pricing");
   const faq = await getTranslations("faq");
 
+  const scanCount = getAiScanCount();
+
   const plans = [
     {
       id: "starter" as const,
@@ -73,6 +79,37 @@ export default async function HomePage({
     <div className="overflow-x-hidden">
       <JsonLd data={organizationJsonLd()} />
       <HomeHeroBanner />
+
+      <section className="relative bg-transparent">
+        <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 pb-4 pt-8 md:px-6 md:pb-6 md:pt-10 lg:grid-cols-2 lg:gap-10">
+          <div className="max-w-xl">
+            <h2 className="font-display text-2xl font-semibold leading-[1.15] tracking-tight text-foreground sm:text-3xl md:text-4xl lg:text-5xl">
+              {hero("introTitle")}
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
+              {hero("introSubtitle")}
+            </p>
+            <div className="mt-8 space-y-3">
+              <p className="font-display text-xl font-semibold tracking-tight text-foreground md:text-2xl">
+                {hero("ctaHeroTitle")}
+              </p>
+              <div className="flex flex-wrap items-center gap-3">
+                <Button asChild size="lg" className="rounded-2xl px-7">
+                  <SoftLink href={localizedHref(locale, "/ai-scan")}>{hero("ctaScan")}</SoftLink>
+                </Button>
+                <div className="inline-flex items-center gap-2 rounded-2xl border border-border/70 px-3 py-2">
+                  <Sparkles className="h-3.5 w-3.5 text-primary" />
+                  <span className="font-display text-base font-bold tracking-tight text-foreground">
+                    <AnimatedCounter value={scanCount} />
+                  </span>
+                  <span className="text-xs text-muted-foreground">{hero("scansLabel")}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <HeroVisual />
+        </div>
+      </section>
 
       <PricingPlans
         plans={plans}

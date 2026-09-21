@@ -1,4 +1,5 @@
 "use client";
+/* Checkpoint: approved Agent 000 pose and proportions. Not used by the app. */
 
 import { useId } from "react";
 import { cn } from "@/lib/utils";
@@ -31,7 +32,6 @@ export function Agent000Avatar({
   const armL = `a000armL-${uid}`;
   const armR = `a000armR-${uid}`;
   const hand = `a000hand-${uid}`;
-  const form = `a000form-${uid}`;
   const armMask = `a000armMask-${uid}`;
 
   const dim =
@@ -48,22 +48,20 @@ export function Agent000Avatar({
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
-          <linearGradient id={plate} x1="0%" y1="0%" x2="70%" y2="100%">
+          <linearGradient id={plate} x1="0%" y1="0%" x2="35%" y2="100%">
             <stop offset="0%" stopColor="#ffffff" />
-            <stop offset="28%" stopColor="#f8fafc" />
-            <stop offset="58%" stopColor="#d5dee8" />
-            <stop offset="100%" stopColor="#8ea0b4" />
+            <stop offset="45%" stopColor="#e8eef5" />
+            <stop offset="100%" stopColor="#b8c4d4" />
           </linearGradient>
-          <linearGradient id={body} x1="8%" y1="0%" x2="100%" y2="100%">
+          <linearGradient id={body} x1="15%" y1="0%" x2="85%" y2="100%">
             <stop offset="0%" stopColor="#ffffff" />
-            <stop offset="24%" stopColor="#f8fafc" />
-            <stop offset="52%" stopColor="#d7e0ea" />
-            <stop offset="100%" stopColor="#7f90a3" />
+            <stop offset="40%" stopColor="#e2e8f0" />
+            <stop offset="100%" stopColor="#94a3b8" />
           </linearGradient>
-          <linearGradient id={cap} x1="12%" y1="0%" x2="88%" y2="100%">
+          <linearGradient id={cap} x1="20%" y1="0%" x2="80%" y2="100%">
             <stop offset="0%" stopColor="#ffffff" />
-            <stop offset="32%" stopColor="#eef3f8" />
-            <stop offset="100%" stopColor="#8ea0b4" />
+            <stop offset="35%" stopColor="#e2e8f0" />
+            <stop offset="100%" stopColor="#94a3b8" />
           </linearGradient>
           <linearGradient id={brim} x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="0%" stopColor="#64748b" />
@@ -76,24 +74,18 @@ export function Agent000Avatar({
           </linearGradient>
           <linearGradient id={armL} x1="100%" y1="0%" x2="0%" y2="100%">
             <stop offset="0%" stopColor="#ffffff" />
-            <stop offset="36%" stopColor="#e7eef5" />
-            <stop offset="100%" stopColor="#8093a8" />
+            <stop offset="40%" stopColor="#e2e8f0" />
+            <stop offset="100%" stopColor="#94a3b8" />
           </linearGradient>
           <linearGradient id={armR} x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#ffffff" />
-            <stop offset="36%" stopColor="#e7eef5" />
-            <stop offset="100%" stopColor="#8093a8" />
+            <stop offset="40%" stopColor="#e2e8f0" />
+            <stop offset="100%" stopColor="#94a3b8" />
           </linearGradient>
-          <linearGradient id={hand} x1="0%" y1="0%" x2="40%" y2="100%">
-            <stop offset="0%" stopColor="#ffffff" />
-            <stop offset="55%" stopColor="#e2e8f0" />
-            <stop offset="100%" stopColor="#8ea0b4" />
+          <linearGradient id={hand} x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="#f8fafc" />
+            <stop offset="100%" stopColor="#94a3b8" />
           </linearGradient>
-          <radialGradient id={form} cx="28%" cy="16%" r="78%">
-            <stop offset="0%" stopColor="#ffffff" stopOpacity="0.72" />
-            <stop offset="42%" stopColor="#ffffff" stopOpacity="0" />
-            <stop offset="100%" stopColor="#1e293b" stopOpacity="0.2" />
-          </radialGradient>
           <radialGradient id={eye} cx="50%" cy="50%" r="50%">
             <stop offset="0%" stopColor="#ecfeff" />
             <stop offset="45%" stopColor="#22d3ee" />
@@ -115,8 +107,7 @@ export function Agent000Avatar({
           </mask>
         </defs>
 
-        <ellipse className="a000-shadow" cx="100" cy="280" rx="46" ry="4.2" fill="#0f172a" opacity="0.18" />
-        <ellipse className="a000-shadow" cx="100" cy="280" rx="34" ry="2.4" fill="#22d3ee" />
+        <ellipse className="a000-shadow" cx="100" cy="280" rx="52" ry="5" fill="#0ea5e9" />
 
         {/* Legs behind the torso so the hips read as attached */}
         <g className="a000-leg-left">
@@ -134,18 +125,6 @@ export function Agent000Avatar({
             stroke="#8fa0b5"
             strokeWidth="1"
             strokeLinejoin="round"
-          />
-          <path
-            d="
-              M74 176
-              C68 196 64 216 66 234
-              C67 244 72 250 80 250
-              L90 249
-              C96 247 100 240 100 230
-              C102 212 100 194 94 176
-              Z
-            "
-            fill={`url(#${form})`}
           />
           <path
             d="M80 182 C74 200 70 220 72 238"
@@ -177,7 +156,6 @@ export function Agent000Avatar({
             strokeWidth="0.85"
             strokeLinejoin="round"
           />
-          <ellipse cx="76" cy="252" rx="12" ry="3.2" fill="#ffffff" opacity="0.22" />
           <path
             d="M56 260 C64 256 74 254 82 256"
             fill="none"
@@ -203,18 +181,6 @@ export function Agent000Avatar({
             stroke="#8fa0b5"
             strokeWidth="1"
             strokeLinejoin="round"
-          />
-          <path
-            d="
-              M126 176
-              C132 196 136 216 134 234
-              C133 244 128 250 120 250
-              L110 249
-              C104 247 100 240 100 230
-              C98 212 100 194 106 176
-              Z
-            "
-            fill={`url(#${form})`}
           />
           <path
             d="M120 182 C126 200 130 220 128 238"
@@ -246,7 +212,6 @@ export function Agent000Avatar({
             strokeWidth="0.85"
             strokeLinejoin="round"
           />
-          <ellipse cx="124" cy="252" rx="12" ry="3.2" fill="#ffffff" opacity="0.22" />
           <path
             d="M144 260 C136 256 126 254 118 256"
             fill="none"
@@ -278,20 +243,6 @@ export function Agent000Avatar({
             strokeLinejoin="round"
           />
           <path
-            d="
-              M66 100
-              C50 103 40 114 37 132
-              C34 148 34 162 40 172
-              C41 176 45 178 50 178
-              L54 176
-              C52 174 49 170 48 166
-              C46 156 46 144 49 130
-              C52 116 59 106 70 102
-              Z
-            "
-            fill={`url(#${form})`}
-          />
-          <path
             d="M62 104 C52 110 45 124 43 138"
             fill="none"
             stroke="#ffffff"
@@ -305,10 +256,6 @@ export function Agent000Avatar({
               fill={`url(#${hand})`}
               stroke="#8fa0b5"
               strokeWidth="0.9"
-            />
-            <path
-              d="M42 174 C38 175 35 179 36 184 C37 189 41 192 46 191 C51 190 54 186 54 181 C54 176 50 173 46 173 C44 173 43 173.5 42 174 Z"
-              fill={`url(#${form})`}
             />
             <path
               d="M40 175 C36 173 33 175 33 178.5 C33 181.5 36 183 39 182 C41.5 181 42 177 40 175 Z"
@@ -345,21 +292,6 @@ export function Agent000Avatar({
             strokeLinejoin="round"
           />
           <path
-            d="
-              M126 114
-              L172 88
-              Q180 84 176 78
-              L170 58
-              L160 38
-              L152 40
-              L162 60
-              L164 81
-              L126 102
-              Z
-            "
-            fill={`url(#${form})`}
-          />
-          <path
             d="M146 97 L166 86"
             fill="none"
             stroke="#ffffff"
@@ -375,10 +307,6 @@ export function Agent000Avatar({
           fill={`url(#${body})`}
           stroke="#8fa0b5"
           strokeWidth="1.15"
-        />
-        <path
-          d="M66 112 C66 100 80 92 100 92 C120 92 134 100 134 112 L144 162 C144 180 126 194 100 194 C74 194 56 180 56 162 Z"
-          fill={`url(#${form})`}
         />
         <ellipse cx="88" cy="118" rx="16" ry="11" fill="#ffffff" opacity="0.28" />
         <g transform="translate(100 140) scale(0.74) translate(-100 -140)">
@@ -402,7 +330,6 @@ export function Agent000Avatar({
 
         {/* Neck */}
         <rect x="91" y="78" width="18" height="16" rx="4" fill={`url(#${dark})`} />
-        <rect x="93" y="81" width="3" height="10" rx="1.2" fill="#ffffff" opacity="0.22" />
         <rect x="94" y="82" width="12" height="2.5" rx="1" fill="#22d3ee" opacity="0.35" />
 
         <g className="a000-head">
@@ -415,7 +342,6 @@ export function Agent000Avatar({
             stroke="#8fa0b5"
             strokeWidth="1.25"
           />
-          <ellipse cx="100" cy="56" rx="40" ry="44" fill={`url(#${form})`} />
           <ellipse cx="88" cy="42" rx="13" ry="9" fill="#ffffff" opacity="0.28" />
 
           <g className="a000-glasses" fill="none" stroke="#334155" strokeWidth="3.3" strokeLinejoin="round">
@@ -448,8 +374,6 @@ export function Agent000Avatar({
           <circle cx="119.5" cy="52.5" r="3.2" fill="#0f172a" opacity="0.92" />
           <circle cx="78.6" cy="50.2" r="1.25" fill="#ecfeff" opacity="0.95" />
           <circle cx="117.6" cy="50.2" r="1.25" fill="#ecfeff" opacity="0.95" />
-          <ellipse cx="78.4" cy="49.2" rx="4.4" ry="2.1" fill="#ffffff" opacity="0.42" />
-          <ellipse cx="117.4" cy="49.2" rx="4.4" ry="2.1" fill="#ffffff" opacity="0.42" />
 
           <path
             className="a000-mouth"
@@ -488,16 +412,6 @@ export function Agent000Avatar({
               strokeLinejoin="round"
             />
             <path
-              d="
-                M66 31
-                C64 16 78 4 100 1
-                C122 -1 138 10 140 24
-                C141 30 132 33 116 33
-                C98 35 80 33 66 31 Z
-              "
-              fill={`url(#${form})`}
-            />
-            <path
               d="M70 29 C88 34 114 33 136 26"
               fill="none"
               stroke="#64748b"
@@ -521,10 +435,6 @@ export function Agent000Avatar({
               fill={`url(#${hand})`}
               stroke="#8fa0b5"
               strokeWidth="0.9"
-            />
-            <path
-              d="M158 42 C162 41 165 37 164 32 C163 27 159 24 154 25 C149 26 146 30 146 35 C146 40 150 43 154 43 C156 43 157 42.5 158 42 Z"
-              fill={`url(#${form})`}
             />
             <path
               d="M160 41 C164 43 167 41 167 37.5 C167 34.5 164 33 161 34 C158.5 35 158 39 160 41 Z"
