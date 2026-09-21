@@ -63,14 +63,22 @@ export function Agent000ChatPane({
   const [draft, setDraft] = useState("");
   const [busy, setBusy] = useState(false);
   const [turns, setTurns] = useState<ChatTurn[]>([]);
+  const listRef = useRef<HTMLDivElement>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
   const booted = useRef(false);
   const lastClarifyLinks = useRef<AgentLink[]>([]);
 
   const state: Agent000State = busy ? "thinking" : speaking ? "speaking" : "idle";
 
+  // Keep new replies visible inside the chat list only — never scroll the page.
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (!turns.length && !busy) return;
+    const list = listRef.current;
+    if (list) {
+      list.scrollTop = list.scrollHeight;
+      return;
+    }
+    bottomRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }, [turns, busy]);
 
   const ask = useCallback(
@@ -312,7 +320,10 @@ export function Agent000ChatPane({
         </div>
 
         <div className="flex min-h-56 flex-1 flex-col rounded-xl border border-white/10 bg-black/25 backdrop-blur-sm">
-          <div className="min-h-40 flex-1 space-y-2.5 overflow-y-auto px-3 py-3">
+          <div
+            ref={listRef}
+            className="min-h-40 flex-1 space-y-2.5 overflow-y-auto px-3 py-3"
+          >
             {!turns.length && !busy ? (
               <p className="text-sm leading-relaxed text-slate-300">{t("intro")}</p>
             ) : null}
