@@ -24,8 +24,6 @@ import {
 import { BrandLogo } from "@/components/shared/BrandLogo";
 import { cn } from "@/lib/utils";
 
-const WEBMAIL_URL = "https://000-it.com/webmail";
-
 const primaryLinks = [
   { href: "/", key: "home" },
   { href: "/over-ons", key: "info", info: true },
@@ -35,7 +33,6 @@ const primaryLinks = [
   { href: "#prijzen", key: "pricing" },
   { href: "/nieuws", key: "blog" },
   { href: "/contact", key: "contact" },
-  { href: WEBMAIL_URL, key: "webmail", external: true },
 ] as const;
 
 function isLocaleHome(pathname: string, locale: string) {
@@ -52,14 +49,12 @@ export function Navigation() {
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileInfoOpen, setMobileInfoOpen] = useState(false);
   const [hash, setHash] = useState("");
-  const [pricingInView, setPricingInView] = useState(false);
 
   const onHome = isLocaleHome(pathname, locale);
   const pricingHash = hashFor(locale, "prijzen");
-  const pricingHashActive =
+  const pricingActive =
     onHome &&
     (resolveHashElementId(hash) === "prijzen" || hash === pricingHash);
-  const pricingActive = pricingHashActive || (onHome && pricingInView);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -84,42 +79,11 @@ export function Navigation() {
     setOpen(false);
     setMobileServicesOpen(false);
     setMobileInfoOpen(false);
-    setPricingInView(false);
   }, [pathname]);
-
-  // Highlight Prijzen only while the homepage pricing block is actually visible.
-  useEffect(() => {
-    if (!onHome) {
-      setPricingInView(false);
-      return;
-    }
-    const el =
-      document.getElementById(pricingHash) ||
-      document.getElementById("prijzen");
-    if (!el) {
-      setPricingInView(false);
-      return;
-    }
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setPricingInView(Boolean(entry?.isIntersecting));
-      },
-      {
-        // Require a meaningful portion of the section in view (not just a peek).
-        root: null,
-        rootMargin: "-20% 0px -45% 0px",
-        threshold: [0, 0.15, 0.35],
-      },
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [onHome, pricingHash, pathname]);
 
   function linkActive(linkHref: string, pathOnly: string) {
     if (linkHref === "#prijzen") return pricingActive;
     if (linkHref === "/") {
-      // Home stays active on the homepage, except while the pricing section is focused.
       return onHome && !pricingActive;
     }
     return pathname === pathOnly || pathname.startsWith(`${pathOnly}/`);
@@ -145,20 +109,6 @@ export function Navigation() {
 
           <nav className="hidden items-center gap-0.5 xl:flex">
             {primaryLinks.map((link) => {
-              if ("external" in link && link.external) {
-                return (
-                  <a
-                    key={link.key}
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="rounded-xl px-2.5 py-1.5 text-[13px] text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
-                  >
-                    {t(link.key)}
-                  </a>
-                );
-              }
-
               const href = localizedHref(locale, link.href);
               const pathOnly = href.split("#")[0];
               const active = linkActive(link.href, pathOnly);
@@ -236,20 +186,6 @@ export function Navigation() {
           <div className="max-h-[70vh] overflow-y-auto border-t border-border/60 px-3 py-3 xl:hidden">
             <div className="flex flex-col gap-1">
               {primaryLinks.map((link) => {
-                if ("external" in link && link.external) {
-                  return (
-                    <a
-                      key={link.key}
-                      href={link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="rounded-xl px-3 py-2.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
-                    >
-                      {t(link.key)}
-                    </a>
-                  );
-                }
-
                 const href = localizedHref(locale, link.href);
                 const pathOnly = href.split("#")[0];
                 const active = linkActive(link.href, pathOnly);
