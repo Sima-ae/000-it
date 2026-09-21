@@ -111,6 +111,8 @@ export function LiveChatWidget() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const loggedIn = status === "authenticated" && !!session?.user;
+  const accountName = session?.user?.name?.trim() || "";
+  const accountEmail = session?.user?.email?.trim() || "";
 
   const restore = useCallback(async () => {
     const stored = loadStored();
@@ -132,6 +134,13 @@ export function LiveChatWidget() {
     void restore();
   }, [restore, loggedIn]);
 
+  // Logged-in users: pull identity from the account — never ask for name/email.
+  useEffect(() => {
+    if (!loggedIn) return;
+    if (accountName) setGuestName(accountName);
+    if (accountEmail) setGuestEmail(accountEmail);
+  }, [loggedIn, accountName, accountEmail]);
+
   useEffect(() => {
     if (hideWidget || open) return;
     try {
@@ -145,7 +154,10 @@ export function LiveChatWidget() {
 
   useEffect(() => {
     if (!open) return;
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    const list = bottomRef.current?.parentElement;
+    if (list) {
+      list.scrollTop = list.scrollHeight;
+    }
     const focusTimer = window.setTimeout(() => inputRef.current?.focus(), 120);
     return () => window.clearTimeout(focusTimer);
   }, [ticket?.messages, open]);
@@ -162,7 +174,8 @@ export function LiveChatWidget() {
     return () => clearInterval(timer);
   }, [open, ticket?.id, guestToken]);
 
-  const needsIdentity = !loggedIn && !ticket;
+  // Guests only. Hide while auth is resolving so logged-in users never see a flash of fields.
+  const needsIdentity = status === "unauthenticated" && !ticket;
 
   const copy = useMemo(
     () => ({
@@ -347,7 +360,7 @@ export function LiveChatWidget() {
 
   async function handlePrimarySubmit(e?: React.FormEvent) {
     e?.preventDefault();
-    if (busy) return;
+    if (busy || status === "loading") return;
     if (mode === "ticket") {
       if (!subject.trim() || !draft.trim()) return;
       if (needsIdentity && (!guestName.trim() || !guestEmail.trim())) return;
@@ -362,8 +375,12 @@ export function LiveChatWidget() {
     if (!ticket) {
       if (!draft.trim()) return;
       if (needsIdentity && (!guestName.trim() || !guestEmail.trim())) return;
+      const who =
+        (loggedIn ? accountName : guestName.trim()) ||
+        accountName ||
+        copy.visitor;
       await startConversation({
-        subject: `${copy.subjectPrefix} — ${guestName || session?.user?.name || copy.visitor}`,
+        subject: `${copy.subjectPrefix} — ${who}`,
         message: draft.trim(),
         source: "CHAT",
       });
@@ -396,19 +413,32 @@ export function LiveChatWidget() {
   if (hideWidget) return null;
 
   return (
-    <div className="pointer-events-none fixed bottom-5 right-5 z-9998 flex flex-col items-end gap-3">
+    <div
+      className={cn(
+        "pointer-events-none fixed z-9998 flex flex-col items-end justify-end gap-3",
+        // Pin to safe insets so the stack always has a real height and never clips.
+        "top-[max(1rem,env(safe-area-inset-top))] bottom-[max(1rem,env(safe-area-inset-bottom))]",
+        "right-[max(1rem,env(safe-area-inset-right))]",
+      )}
+    >
       {open ? (
-        <div className="pointer-events-auto flex max-h-[min(70vh,520px)] w-[min(92vw,380px)] flex-col overflow-hidden rounded-2xl border border-border bg-background shadow-2xl">
-          <div className="shrink-0 border-b border-border bg-primary px-4 py-3 text-primary-foreground">
+        <div
+          className={cn(
+            "pointer-events-auto flex min-h-0 w-[min(calc(100vw-2rem),380px)] flex-col overflow-hidden rounded-2xl border border-border bg-background shadow-2xl",
+            // Leave room for the FAB + gap; parent height is definite via top/bottom.
+            "max-h-[min(520px,calc(100%-4.25rem))]",
+          )}
+        >
+          <div className="shrink-0 border-b border-border bg-primary px-3 py-2.5 text-primary-foreground">
             <div className="flex items-start justify-between gap-2">
-              <div className="flex items-start gap-2.5">
+              <div className="flex min-w-0 items-start gap-2.5">
                 <Agent000Avatar state="idle" size="sm" className="mt-0.5" />
-                <div>
-                  <p className="font-display text-sm font-semibold tracking-tight">
+                <div className="min-w-0">
+                  <p className="font-display truncate text-sm font-semibold leading-tight tracking-tight">
                     {copy.agentLabel}
+                    <span className="font-normal opacity-90"> · {copy.subtitle}</span>
                   </p>
-                  <p className="text-[11px] opacity-90">{copy.subtitle}</p>
-                  <p className="mt-1 flex items-center gap-1.5 text-[11px] opacity-95">
+                  <p className="mt-1 flex items-center gap-1.5 text-[11px] leading-none opacity-95">
                     <span className="relative flex h-2 w-2">
                       <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
                       <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
@@ -420,10 +450,10 @@ export function LiveChatWidget() {
               <button
                 type="button"
                 onClick={() => setOpen(false)}
-                className="rounded-lg p-1.5 transition hover:bg-white/15"
+                className="shrink-0 rounded-lg p-1 transition hover:bg-white/15"
                 aria-label={copy.closeChat}
               >
-                <X className="h-5 w-5" />
+                <X className="h-4 w-4" />
               </button>
             </div>
           </div>
@@ -453,7 +483,7 @@ export function LiveChatWidget() {
             </button>
           </div>
 
-          <div className="min-h-45 flex-1 space-y-2 overflow-y-auto px-3 py-3">
+          <div className="min-h-0 flex-1 space-y-2 overflow-y-auto overscroll-contain px-3 py-3">
             {mode === "chat" && ticket?.messages?.length ? (
               ticket.messages.map((msg) => {
                 const mine = msg.senderKind === "GUEST" || msg.senderKind === "CLIENT";
@@ -565,7 +595,7 @@ export function LiveChatWidget() {
                 className="h-10"
                 disabled={busy}
               />
-              <Button type="submit" size="icon" className="h-10 w-10 shrink-0" disabled={busy}>
+              <Button type="submit" size="icon" className="h-10 w-10 shrink-0" disabled={busy || status === "loading"}>
                 <Send className="h-4 w-4" />
               </Button>
             </div>

@@ -57,8 +57,8 @@ export function KennisbankIllustration({
     c2: "#007c8d",
     motif: "doc" as const,
   };
-  const label = categoryLabel || "TripleZero iT Hosting";
-  const footer = footerLabel || "TripleZero iT Hosting";
+  const label = categoryLabel || "TripleZero iT";
+  const footer = footerLabel || "TripleZero iT";
   const h = variant === "hero" ? 220 : 180;
 
   return (

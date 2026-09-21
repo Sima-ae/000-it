@@ -22,7 +22,7 @@ export async function generateMetadata({
   if (locale === "nl" || locale === "en") return base;
   return {
     ...base,
-    title: `${t("title")} — TripleZero iT Hosting`,
+    title: `${t("title")} — TripleZero iT`,
     description: t("subtitle"),
   };
 }

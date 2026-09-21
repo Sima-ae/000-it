@@ -127,7 +127,7 @@ export function isGoodArticleTranslation(opts: {
   if (/knowledge-base article explains/i.test(bodyHtml)) return false;
   if (
     locale !== "en" &&
-    /Professional TripleZero iT Hosting guide:/i.test(bodyHtml)
+    /Professional TripleZero iT(?: Hosting)? guide:/i.test(bodyHtml)
   ) {
     return false;
   }
@@ -404,7 +404,7 @@ export async function fillArticleTranslations(opts: {
         await sleep(120);
         const seoTitle = opts.source.seoTitle
           ? await translateField(opts.source.seoTitle, locale, sourceLocale)
-          : `${title} | TripleZero iT Hosting`;
+          : `${title} | TripleZero iT`;
         await sleep(80);
         const seoDescription = opts.source.seoDescription
           ? await translateField(opts.source.seoDescription, locale, sourceLocale)

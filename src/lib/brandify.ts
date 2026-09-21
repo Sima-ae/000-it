@@ -12,13 +12,14 @@ export function brandify(text: string) {
     .replace(/Fix[\s-]?Web/gi, "TripleZero iT")
     .replace(/FIX[\s-]?WEB/gi, "TripleZero iT")
     // Competitor / agency names — never present as our brand
-    .replace(/\bJust[\s-]?Host\b/g, "TripleZero iT Hosting")
-    .replace(/\bJustHost(?:ing)?\b/gi, "TripleZero iT Hosting")
+    .replace(/\bJust[\s-]?Host\b/g, "TripleZero iT")
+    .replace(/\bJustHost(?:ing)?\b/gi, "TripleZero iT")
     .replace(/\bMiss[\s-]?Hack\b/gi, "TripleZero iT")
     .replace(/\bIndigo[\s-]?Webstudio\b/gi, "TripleZero iT")
     .replace(/\bIndigo[\s-]?Web[\s-]?Studio\b/gi, "TripleZero iT")
     .replace(/\bWebbouwers?\b/gi, "TripleZero iT")
-    .replace(/Hosted on Namecheap Cloud/gi, "Hosted on TripleZero iT Hosting")
-    .replace(/Namecheap Cloud/gi, "TripleZero iT Hosting")
-    .replace(/\bNamecheap\b/gi, "TripleZero iT Hosting");
+    .replace(/Hosted on Namecheap Cloud/gi, "Hosted on TripleZero iT")
+    .replace(/Namecheap Cloud/gi, "TripleZero iT")
+    .replace(/\bNamecheap\b/gi, "TripleZero iT")
+    .replace(/TripleZero iT Hosting/g, "TripleZero iT");
 }

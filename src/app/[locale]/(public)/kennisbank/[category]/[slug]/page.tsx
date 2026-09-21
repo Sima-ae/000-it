@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   if (!article) return {};
   const title =
     article.seoTitle ||
-    `${article.title} | TripleZero iT Hosting ${t("seoTitleSuffix")}`;
+    `${article.title} | TripleZero iT ${t("seoTitleSuffix")}`;
   const description = article.seoDescription || article.excerpt;
   const path = `/kennisbank/${category}/${slug}`;
   const alts = hreflangAlternates(path);

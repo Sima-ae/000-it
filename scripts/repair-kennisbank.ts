@@ -59,7 +59,7 @@ const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 function isGenericEnglishBody(html: string) {
   return (
     /knowledge-base article explains/i.test(html) ||
-    /Professional TripleZero iT Hosting guide:/i.test(html)
+    /Professional TripleZero iT(?: Hosting)? guide:/i.test(html)
   );
 }
 
@@ -156,7 +156,7 @@ async function main() {
       title: cat.title,
       excerpt: excerptNl,
       bodyHtml: bodyNl,
-      seoTitle: `${cat.title} | TripleZero iT Hosting`,
+      seoTitle: `${cat.title} | TripleZero iT`,
       seoDescription: excerptNl,
     };
 
@@ -249,7 +249,7 @@ async function main() {
           await sleep(fieldDelayMs);
           const seoTitle =
             (await translateText(nlPayload.seoTitle, "en", "nl")) ||
-            `${title} | TripleZero iT Hosting`;
+            `${title} | TripleZero iT`;
           await sleep(Math.max(200, Math.floor(fieldDelayMs * 0.7)));
           const seoDescription =
             (await translateText(nlPayload.seoDescription, "en", "nl")) || excerpt;

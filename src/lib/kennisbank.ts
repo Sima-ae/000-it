@@ -11,6 +11,7 @@ import {
   translateText,
 } from "@/lib/google-translate";
 import { ensureEntitySlugFromTitle } from "@/lib/entity-slugs";
+import { brandify } from "@/lib/brandify";
 
 export { slugifyKennisbank } from "@/lib/kennisbank-slug";
 
@@ -122,8 +123,8 @@ export async function listCategories(opts?: {
         slug: row.slug,
         sortKey: row.sortKey,
         published: row.published,
-        name: tr?.name || row.sortKey,
-        description: tr?.description ?? null,
+        name: brandify(tr?.name || row.sortKey),
+        description: tr?.description != null ? brandify(tr.description) : null,
         articleCount: row._count.articles,
         createdAt: row.createdAt.toISOString(),
         updatedAt: row.updatedAt.toISOString(),
@@ -158,8 +159,8 @@ export async function getCategoryBySlug(
     slug: row.slug,
     sortKey: row.sortKey,
     published: row.published,
-    name: tr?.name || row.sortKey,
-    description: tr?.description ?? null,
+    name: brandify(tr?.name || row.sortKey),
+    description: tr?.description != null ? brandify(tr.description) : null,
     articleCount: row._count.articles,
     createdAt: row.createdAt.toISOString(),
     updatedAt: row.updatedAt.toISOString(),
@@ -207,8 +208,8 @@ export async function createCategory(input: z.infer<typeof categoryUpsertSchema>
     slug: row.slug,
     sortKey: row.sortKey,
     published: row.published,
-    name: tr?.name || row.sortKey,
-    description: tr?.description ?? null,
+    name: brandify(tr?.name || row.sortKey),
+    description: tr?.description != null ? brandify(tr.description) : null,
     articleCount: row._count.articles,
     createdAt: row.createdAt.toISOString(),
     updatedAt: row.updatedAt.toISOString(),
@@ -369,7 +370,7 @@ function mapArticleListItem(
       const cTr = pickTranslation(link.category.translations, locale);
       return {
         slug: link.category.slug,
-        name: cTr?.name || link.category.sortKey,
+        name: brandify(cTr?.name || link.category.sortKey),
       };
     })
     .sort((a, b) => localeCompareFor(locale, a.name, b.name));
@@ -378,8 +379,8 @@ function mapArticleListItem(
     id: row.id,
     slug: row.slug,
     published: row.published,
-    title: tr?.title || row.slug,
-    excerpt: tr?.excerpt || "",
+    title: brandify(tr?.title || row.slug),
+    excerpt: brandify(tr?.excerpt || ""),
     categorySlugs: cats.map((c) => c.slug),
     categoryNames: cats.map((c) => c.name),
     createdAt: row.createdAt.toISOString(),
@@ -449,9 +450,9 @@ export async function getArticleBySlug(
   const base = mapArticleListItem(full, locale);
   return {
     ...base,
-    bodyHtml: tr?.bodyHtml || "",
-    seoTitle: tr?.seoTitle ?? null,
-    seoDescription: tr?.seoDescription ?? null,
+    bodyHtml: brandify(tr?.bodyHtml || ""),
+    seoTitle: tr?.seoTitle ? brandify(tr.seoTitle) : null,
+    seoDescription: tr?.seoDescription ? brandify(tr.seoDescription) : null,
     createdById: full.createdById,
   };
 }
@@ -470,9 +471,9 @@ export async function getArticleById(
   const base = mapArticleListItem(full, locale);
   return {
     ...base,
-    bodyHtml: tr?.bodyHtml || "",
-    seoTitle: tr?.seoTitle ?? null,
-    seoDescription: tr?.seoDescription ?? null,
+    bodyHtml: brandify(tr?.bodyHtml || ""),
+    seoTitle: tr?.seoTitle ? brandify(tr.seoTitle) : null,
+    seoDescription: tr?.seoDescription ? brandify(tr.seoDescription) : null,
     createdById: full.createdById,
   };
 }

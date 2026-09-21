@@ -1,9 +1,9 @@
 /**
- * Generates original Dutch HTML knowledge-base articles for TripleZero iT Hosting.
+ * Generates original Dutch HTML knowledge-base articles for TripleZero iT.
  * Content is topic-driven — not copied from third-party hosts.
  */
 
-const BRAND = "TripleZero iT Hosting";
+const BRAND = "TripleZero iT";
 
 function p(...paras: string[]) {
   return paras.map((t) => `<p>${t}</p>`).join("\n");
@@ -105,7 +105,7 @@ const topicBuilders: Record<string, (ctx: Ctx) => string> = {
       p(
         `DKIM ondertekent uitgaande e-mail cryptografisch. Ontvangende servers controleren of de inhoud onderweg niet is gewijzigd en of de handtekening bij jouw domein hoort.`,
       ),
-      h2("DKIM activeren bij TripleZero iT Hosting"),
+      h2("DKIM activeren bij TripleZero iT"),
       ol([
         "Log in op DirectAdmin en selecteer het juiste domein.",
         "Open E-mailgegevens / E-mailauthenticatie (of DNS-beheer).",
@@ -1193,7 +1193,7 @@ function genericBody(ctx: Ctx): string {
     focusBlocks.push(
       h2("Klantenservice en accountbeheer"),
       p(
-        `In het TripleZero iT Hosting klantenpanel regel je facturen, betaalmethoden, tickets en accountinstellingen. Vermeld altijd je klantnummer of domeinnaam in tickets voor snellere opvolging.`,
+        `In het TripleZero iT klantenpanel regel je facturen, betaalmethoden, tickets en accountinstellingen. Vermeld altijd je klantnummer of domeinnaam in tickets voor snellere opvolging.`,
         `Supporttijden en belafspraken staan in je welkomstmail en op de contactpagina; voor spoed bij uitval: ticket met impact en tijdstip van de storing.`,
       ),
     );
@@ -1208,7 +1208,7 @@ function genericBody(ctx: Ctx): string {
   }
   if (/ai-scan|aeo|geo|seo-analyse|ai-agent|business-pakket|extra growth|checkout|btw|ticket|live.?chat|crm|factuur|vps/.test(lower) || topic.startsWith("tz-")) {
     focusBlocks.push(
-      h2("TripleZero iT Hosting-platform"),
+      h2("TripleZero iT-platform"),
       p(
         `Deze handleiding hoort bij het ${BRAND}-platform: shop/pakketten, AI-scan, AEO/GEO/SEO, AI-agents, CRM (facturen, berichten, projecten) en tickets/live chat. Gebruik altijd de menu’s in je ingelogde dashboard voor actuele schermen.`,
       ),

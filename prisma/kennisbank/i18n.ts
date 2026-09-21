@@ -10,32 +10,32 @@ export const CATEGORY_I18N: Record<
     en: {
       name: "Domain names",
       description:
-        "Domain registration, DNS, locks, SIDN and redirects at TripleZero iT Hosting.",
+        "Domain registration, DNS, locks, SIDN and redirects at TripleZero iT.",
     },
     de: {
       name: "Domainnamen",
       description:
-        "Domainregistrierung, DNS, Sperren, SIDN und Weiterleitungen bei TripleZero iT Hosting.",
+        "Domainregistrierung, DNS, Sperren, SIDN und Weiterleitungen bei TripleZero iT.",
     },
     fr: {
       name: "Noms de domaine",
       description:
-        "Enregistrement de domaine, DNS, verrous, SIDN et redirections chez TripleZero iT Hosting.",
+        "Enregistrement de domaine, DNS, verrous, SIDN et redirections chez TripleZero iT.",
     },
     es: {
       name: "Nombres de dominio",
       description:
-        "Registro de dominios, DNS, bloqueos, SIDN y redirecciones en TripleZero iT Hosting.",
+        "Registro de dominios, DNS, bloqueos, SIDN y redirecciones en TripleZero iT.",
     },
     pt: {
       name: "Nomes de domínio",
       description:
-        "Registo de domínio, DNS, bloqueios, SIDN e redirecionamentos na TripleZero iT Hosting.",
+        "Registo de domínio, DNS, bloqueios, SIDN e redirecionamentos na TripleZero iT.",
     },
     it: {
       name: "Nomi di dominio",
       description:
-        "Registrazione domini, DNS, lock, SIDN e redirect su TripleZero iT Hosting.",
+        "Registrazione domini, DNS, lock, SIDN e redirect su TripleZero iT.",
     },
   },
   bloggen: {
@@ -223,27 +223,27 @@ export const CATEGORY_I18N: Record<
   wordpress: {
     en: {
       name: "WordPress",
-      description: "Install, update, secure and optimize WordPress at TripleZero iT Hosting.",
+      description: "Install, update, secure and optimize WordPress at TripleZero iT.",
     },
     de: {
       name: "WordPress",
-      description: "WordPress installieren, aktualisieren, absichern und optimieren bei TripleZero iT Hosting.",
+      description: "WordPress installieren, aktualisieren, absichern und optimieren bei TripleZero iT.",
     },
     fr: {
       name: "WordPress",
-      description: "Installer, mettre à jour, sécuriser et optimiser WordPress chez TripleZero iT Hosting.",
+      description: "Installer, mettre à jour, sécuriser et optimiser WordPress chez TripleZero iT.",
     },
     es: {
       name: "WordPress",
-      description: "Instalar, actualizar, proteger y optimizar WordPress en TripleZero iT Hosting.",
+      description: "Instalar, actualizar, proteger y optimizar WordPress en TripleZero iT.",
     },
     pt: {
       name: "WordPress",
-      description: "Instalar, atualizar, proteger e otimizar WordPress na TripleZero iT Hosting.",
+      description: "Instalar, atualizar, proteger e otimizar WordPress na TripleZero iT.",
     },
     it: {
       name: "WordPress",
-      description: "Installare, aggiornare, proteggere e ottimizzare WordPress su TripleZero iT Hosting.",
+      description: "Installare, aggiornare, proteggere e ottimizzare WordPress su TripleZero iT.",
     },
   },
   "veilig-online": {
@@ -275,27 +275,27 @@ export const CATEGORY_I18N: Record<
   support: {
     en: {
       name: "Support",
-      description: "Tickets, live chat, appointments and how to get help from TripleZero iT Hosting.",
+      description: "Tickets, live chat, appointments and how to get help from TripleZero iT.",
     },
     de: {
       name: "Support",
-      description: "Tickets, Live-Chat, Termine und Hilfe von TripleZero iT Hosting.",
+      description: "Tickets, Live-Chat, Termine und Hilfe von TripleZero iT.",
     },
     fr: {
       name: "Support",
-      description: "Tickets, chat en direct, rendez-vous et aide TripleZero iT Hosting.",
+      description: "Tickets, chat en direct, rendez-vous et aide TripleZero iT.",
     },
     es: {
       name: "Soporte",
-      description: "Tickets, chat en vivo, citas y cómo obtener ayuda de TripleZero iT Hosting.",
+      description: "Tickets, chat en vivo, citas y cómo obtener ayuda de TripleZero iT.",
     },
     pt: {
       name: "Suporte",
-      description: "Tickets, chat ao vivo, marcações e como obter ajuda da TripleZero iT Hosting.",
+      description: "Tickets, chat ao vivo, marcações e como obter ajuda da TripleZero iT.",
     },
     it: {
       name: "Supporto",
-      description: "Ticket, live chat, appuntamenti e come ottenere aiuto da TripleZero iT Hosting.",
+      description: "Ticket, live chat, appuntamenti e come ottenere aiuto da TripleZero iT.",
     },
   },
   plesk: {

@@ -1,5 +1,5 @@
 /**
- * Idempotent seed for TripleZero iT Hosting Kennisbank.
+ * Idempotent seed for TripleZero iT Kennisbank.
  * Seeds curated Dutch (primary) from catalog.json.
  * English + all other locales: run `npm run kennisbank:repair` then
  * `npm run kennisbank:repair -- --all` (or kennisbank:translate after EN is clean).
@@ -96,7 +96,7 @@ async function main() {
       title: article.title,
       excerpt: excerptNl,
       bodyHtml: bodyNl,
-      seoTitle: `${article.title} | TripleZero iT Hosting`,
+      seoTitle: `${article.title} | TripleZero iT`,
       seoDescription: excerptNl,
     };
 

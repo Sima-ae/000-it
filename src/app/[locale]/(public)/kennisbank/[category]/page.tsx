@@ -23,10 +23,10 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "kennisbank" });
   const cat = await getCategoryBySlug(category, { locale }).catch(() => null);
   if (!cat) return {};
-  const title = `${cat.name} — ${t("seoTitleSuffix")} | TripleZero iT Hosting`;
+  const title = `${cat.name} — ${t("seoTitleSuffix")} | TripleZero iT`;
   const description =
     cat.description ||
-    `${t("title")}: ${cat.name} · TripleZero iT Hosting`;
+    `${t("title")}: ${cat.name} · TripleZero iT`;
   const path = `/kennisbank/${category}`;
   const alts = hreflangAlternates(path);
   return {

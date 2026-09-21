@@ -250,8 +250,8 @@ export const staticPageSeo: PageSeo[] = [
     priority: 0.85,
     changeFrequency: "weekly",
     title: {
-      nl: "Kennisbank — TripleZero iT Hosting",
-      en: "Knowledge base — TripleZero iT Hosting",
+      nl: "Kennisbank — TripleZero iT",
+      en: "Knowledge base — TripleZero iT",
     },
     description: {
       nl: "Informatie over domeinnamen, hosting, e-mail, control panels, WordPress, beveiliging en onze TripleZero-producten — stap voor stap, met professionele uitleg.",
