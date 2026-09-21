@@ -3,6 +3,7 @@
  * Content is topic-driven — not copied from third-party hosts.
  */
 import { buildGapArticleHtml } from "./gap-bodies";
+import { agentTopicBuilders } from "./agent-bodies";
 
 const BRAND = "TripleZero iT";
 
@@ -1341,7 +1342,7 @@ export function buildArticleHtml(
   if (topic.startsWith("gap-")) {
     return buildGapArticleHtml(title, topic);
   }
-  const builder = topicBuilders[topic];
+  const builder = topicBuilders[topic] || agentTopicBuilders[topic];
   if (builder) return builder(ctx);
   return genericBody(ctx);
 }

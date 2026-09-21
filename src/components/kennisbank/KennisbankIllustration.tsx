@@ -50,6 +50,11 @@ const motifs: Record<
   "directadmin-e-mail": { c1: "#5e3b88", c2: "#007c8d", motif: "mail" },
   "directadmin-wordpress": { c1: "#21759b", c2: "#5e3b88", motif: "doc" },
   "microsoft-mail": { c1: "#5e3b88", c2: "#0078d4", motif: "mail" },
+  "ai-agents-types": { c1: "#5e3b88", c2: "#9b7fc0", motif: "bot" },
+  "ai-agents-beheer": { c1: "#5e3b88", c2: "#007c8d", motif: "bot" },
+  "ai-agents-pakketten": { c1: "#5e3b88", c2: "#2f3a48", motif: "bot" },
+  "ai-agents-workflows": { c1: "#5e3b88", c2: "#007c8d", motif: "bot" },
+  "ai-agents-problemen": { c1: "#5e3b88", c2: "#e11d48", motif: "bot" },
 };
 
 function motifPath(motif: string) {

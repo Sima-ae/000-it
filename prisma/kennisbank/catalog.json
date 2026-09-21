@@ -323,6 +323,36 @@
       "Overige",
       "Overige artikelen in WordPress die niet onder een specifiek onderwerp vallen.",
       "wordpress"
+    ],
+    [
+      "ai-agents-types",
+      "Agenttypen",
+      "SEO-, content-, social-, ads-, analytics-, chatbot- en research-agents bij TripleZero iT.",
+      "ai-agents"
+    ],
+    [
+      "ai-agents-beheer",
+      "Beheer en status",
+      "Statussen, taken, projectkoppeling en veilig meerdere agents beheren.",
+      "ai-agents"
+    ],
+    [
+      "ai-agents-pakketten",
+      "Pakketten en toegang",
+      "Quota, upgrades, provisioning en wie agents mag starten of pauzeren.",
+      "ai-agents"
+    ],
+    [
+      "ai-agents-workflows",
+      "Workflows en resultaten",
+      "Agents combineren met AI-scan, SEO, marketing en meetbare resultaten.",
+      "ai-agents"
+    ],
+    [
+      "ai-agents-problemen",
+      "Problemen oplossen",
+      "ERROR-status, agents die niet starten, conflicten en supportgegevens.",
+      "ai-agents"
     ]
   ],
   "articles": [
@@ -3427,7 +3457,8 @@
       "slug": "wat-zijn-ai-agents-bij-triplezero-it-hosting",
       "title": "Wat zijn AI-agents bij TripleZero iT?",
       "categories": [
-        "ai-agents"
+        "ai-agents",
+        "ai-agents-types"
       ],
       "topic": "tz-agents-what"
     },
@@ -3437,7 +3468,8 @@
       "categories": [
         "ai-agents",
         "shop-en-pakketten",
-        "business-pakketten"
+        "business-pakketten",
+        "ai-agents-pakketten"
       ],
       "topic": "tz-agents-quota"
     },
@@ -3447,7 +3479,8 @@
       "categories": [
         "ai-agents",
         "crm-klantenpanel",
-        "crm-klantenpanel-overige"
+        "crm-klantenpanel-overige",
+        "ai-agents-beheer"
       ],
       "topic": "tz-agents-open"
     },
@@ -3455,7 +3488,8 @@
       "slug": "hoe-start-pauzeer-of-zet-ik-een-ai-agent-op-idle",
       "title": "Hoe start, pauzeer of zet ik een AI-agent op idle?",
       "categories": [
-        "ai-agents"
+        "ai-agents",
+        "ai-agents-beheer"
       ],
       "topic": "tz-agents-control"
     },
@@ -3463,7 +3497,8 @@
       "slug": "wat-betekenen-de-statussen-running-paused-en-idle",
       "title": "Wat betekenen de statussen RUNNING, PAUSED en IDLE?",
       "categories": [
-        "ai-agents"
+        "ai-agents",
+        "ai-agents-beheer"
       ],
       "topic": "tz-agents-status"
     },
@@ -3473,7 +3508,8 @@
       "categories": [
         "ai-agents",
         "support",
-        "support-overige"
+        "support-overige",
+        "ai-agents-problemen"
       ],
       "topic": "tz-agents-empty"
     },
@@ -3482,7 +3518,8 @@
       "title": "Hoe passen AI-agents bij AEO, GEO, SEO en marketing?",
       "categories": [
         "ai-agents",
-        "aeo-geo-seo"
+        "aeo-geo-seo",
+        "ai-agents-workflows"
       ],
       "topic": "tz-agents-use"
     },
@@ -3556,7 +3593,8 @@
         "crm-klantenpanel",
         "ai-scan",
         "ai-agents",
-        "tickets-en-berichten"
+        "tickets-en-berichten",
+        "ai-agents-beheer"
       ],
       "topic": "tz-crm-quicklinks"
     },
@@ -5974,6 +6012,381 @@
         "plesk"
       ],
       "topic": "gap-plesk"
+    },
+    {
+      "slug": "wat-doet-de-seo-agent-bij-triplezero-it",
+      "title": "Wat doet de SEO-agent bij TripleZero iT?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-types"
+      ],
+      "topic": "tz-agents-seo-type"
+    },
+    {
+      "slug": "wat-doet-de-content-agent-en-wanneer-zet-ik-die-in",
+      "title": "Wat doet de content-agent en wanneer zet ik die in?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-types"
+      ],
+      "topic": "tz-agents-content-type"
+    },
+    {
+      "slug": "wat-doet-de-social-agent-voor-mijn-kanalen",
+      "title": "Wat doet de social-agent voor mijn kanalen?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-types"
+      ],
+      "topic": "tz-agents-social-type"
+    },
+    {
+      "slug": "wat-doet-de-ads-agent-bij-campagnes",
+      "title": "Wat doet de ads-agent bij campagnes?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-types"
+      ],
+      "topic": "tz-agents-ads-type"
+    },
+    {
+      "slug": "wat-doet-de-analytics-agent-met-mijn-data",
+      "title": "Wat doet de analytics-agent met mijn data?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-types"
+      ],
+      "topic": "tz-agents-analytics-type"
+    },
+    {
+      "slug": "wat-doet-de-chatbot-agent-op-mijn-website-of-in-support",
+      "title": "Wat doet de chatbot-agent op mijn website of in support?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-types"
+      ],
+      "topic": "tz-agents-chatbot-type"
+    },
+    {
+      "slug": "wat-doet-de-research-agent-bij-marktonderzoek",
+      "title": "Wat doet de research-agent bij marktonderzoek?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-types"
+      ],
+      "topic": "tz-agents-research-type"
+    },
+    {
+      "slug": "welk-agenttype-kies-ik-als-eerste-in-business-1-agent",
+      "title": "Welk agenttype kies ik als eerste in Business (1 agent)?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-types",
+        "shop-en-pakketten"
+      ],
+      "topic": "tz-agents-first-business"
+    },
+    {
+      "slug": "welke-twee-agenttypen-combineer-ik-het-best-in-extra-growth",
+      "title": "Welke twee agenttypen combineer ik het best in Extra Growth?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-types",
+        "shop-en-pakketten"
+      ],
+      "topic": "tz-agents-pair-growth"
+    },
+    {
+      "slug": "kan-een-agent-meerdere-typen-tegelijk-zijn",
+      "title": "Kan één agent meerdere typen tegelijk zijn?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-types"
+      ],
+      "topic": "tz-agents-one-type"
+    },
+    {
+      "slug": "wat-betekenen-de-statussen-error-en-completed-bij-ai-agents",
+      "title": "Wat betekenen de statussen ERROR en COMPLETED bij AI-agents?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-beheer"
+      ],
+      "topic": "tz-agents-status-error-completed"
+    },
+    {
+      "slug": "wat-betekent-tasks-completed-bij-een-ai-agent",
+      "title": "Wat betekent “Tasks completed” bij een AI-agent?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-beheer"
+      ],
+      "topic": "tz-agents-tasks-completed"
+    },
+    {
+      "slug": "hoe-koppel-ik-een-ai-agent-aan-een-project",
+      "title": "Hoe koppel ik een AI-agent aan een project?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-beheer",
+        "crm-klantenpanel"
+      ],
+      "topic": "tz-agents-link-project"
+    },
+    {
+      "slug": "hoe-hernoem-of-herken-ik-mijn-ai-agents-in-het-overzicht",
+      "title": "Hoe hernoem of herken ik mijn AI-agents in het overzicht?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-beheer"
+      ],
+      "topic": "tz-agents-rename-recognize"
+    },
+    {
+      "slug": "wanneer-zet-ik-een-agent-op-paused-versus-idle",
+      "title": "Wanneer zet ik een agent op PAUSED versus IDLE?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-beheer"
+      ],
+      "topic": "tz-agents-paused-vs-idle"
+    },
+    {
+      "slug": "wat-gebeurt-er-als-ik-een-running-agent-pauzer",
+      "title": "Wat gebeurt er als ik een RUNNING agent pauzer?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-beheer"
+      ],
+      "topic": "tz-agents-pause-running"
+    },
+    {
+      "slug": "hoe-zie-ik-wanneer-een-agent-voor-het-laatst-actief-was",
+      "title": "Hoe zie ik wanneer een agent voor het laatst actief was?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-beheer"
+      ],
+      "topic": "tz-agents-last-active"
+    },
+    {
+      "slug": "hoe-werk-ik-veilig-met-meerdere-agents-tegelijk-zonder-conflicten",
+      "title": "Hoe werk ik veilig met meerdere agents tegelijk zonder conflicten?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-beheer"
+      ],
+      "topic": "tz-agents-multi-safe"
+    },
+    {
+      "slug": "hoe-krijg-ik-ai-agents-in-mijn-account-na-het-bestellen-van-een-pakket",
+      "title": "Hoe krijg ik AI-agents in mijn account na het bestellen van een pakket?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-pakketten",
+        "shop-en-pakketten"
+      ],
+      "topic": "tz-agents-after-order"
+    },
+    {
+      "slug": "hoe-upgrade-ik-van-1-naar-2-ai-agents-business-extra-growth",
+      "title": "Hoe upgrade ik van 1 naar 2 AI-agents (Business → Extra Growth)?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-pakketten",
+        "shop-en-pakketten",
+        "business-pakketten"
+      ],
+      "topic": "tz-agents-upgrade-growth"
+    },
+    {
+      "slug": "wat-betekent-onbeperkt-ai-agents-in-enterprise",
+      "title": "Wat betekent “onbeperkt AI-agents” in Enterprise?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-pakketten",
+        "shop-en-pakketten"
+      ],
+      "topic": "tz-agents-enterprise-unlimited"
+    },
+    {
+      "slug": "kan-ik-losse-ai-agents-bijbestellen-zonder-pakketwisseling",
+      "title": "Kan ik losse AI-agents bijbestellen zonder pakketwisseling?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-pakketten",
+        "shop-en-pakketten"
+      ],
+      "topic": "tz-agents-buy-extra"
+    },
+    {
+      "slug": "wie-mag-ai-agents-starten-of-pauzeren-in-mijn-teamaccount",
+      "title": "Wie mag AI-agents starten of pauzeren in mijn teamaccount?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-pakketten",
+        "crm-klantenpanel"
+      ],
+      "topic": "tz-agents-team-permissions"
+    },
+    {
+      "slug": "verschil-ai-agents-dashboard-en-agent-000-chat",
+      "title": "Wat is het verschil tussen AI-agents in het dashboard en Agent 000 in de chat?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-pakketten"
+      ],
+      "topic": "tz-agents-vs-agent000"
+    },
+    {
+      "slug": "hoe-gebruik-ik-ai-agents-samen-met-de-ai-scan",
+      "title": "Hoe gebruik ik AI-agents samen met de AI-scan?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-workflows",
+        "ai-scan"
+      ],
+      "topic": "tz-agents-with-scan"
+    },
+    {
+      "slug": "hoe-ondersteunt-de-seo-agent-aeo-geo-en-klassieke-seo",
+      "title": "Hoe ondersteunt de SEO-agent AEO, GEO en klassieke SEO?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-workflows",
+        "aeo-geo-seo"
+      ],
+      "topic": "tz-agents-seo-aeo-geo"
+    },
+    {
+      "slug": "hoe-helpen-content-agents-bij-blogs-landingspaginas-en-faqs",
+      "title": "Hoe helpen content-agents bij blogs, landingspagina’s en FAQ’s?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-workflows",
+        "bloggen"
+      ],
+      "topic": "tz-agents-content-pages"
+    },
+    {
+      "slug": "hoe-zet-ik-social-en-ads-agents-in-als-een-marketingworkflow",
+      "title": "Hoe zet ik social- en ads-agents in als één marketingworkflow?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-workflows"
+      ],
+      "topic": "tz-agents-social-ads-flow"
+    },
+    {
+      "slug": "hoe-meet-ik-of-mijn-ai-agents-resultaat-opleveren",
+      "title": "Hoe meet ik of mijn AI-agents resultaat opleveren?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-workflows"
+      ],
+      "topic": "tz-agents-measure-results"
+    },
+    {
+      "slug": "welke-taken-zijn-geschikt-voor-agents-en-welke-niet",
+      "title": "Welke taken zijn geschikt voor agents en welke niet?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-workflows"
+      ],
+      "topic": "tz-agents-suitable-tasks"
+    },
+    {
+      "slug": "hoe-combineer-ik-research-agent-en-content-agent-voor-nieuwe-diensten",
+      "title": "Hoe combineer ik research-agent en content-agent voor nieuwe diensten?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-workflows"
+      ],
+      "topic": "tz-agents-research-content"
+    },
+    {
+      "slug": "hoe-gebruik-ik-de-chatbot-agent-naast-live-chat-en-tickets",
+      "title": "Hoe gebruik ik de chatbot-agent naast live chat en tickets?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-workflows",
+        "support"
+      ],
+      "topic": "tz-agents-chatbot-support"
+    },
+    {
+      "slug": "hoe-passen-ai-agents-bij-e-commerce-of-een-webshop",
+      "title": "Hoe passen AI-agents bij e-commerce of een webshop?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-workflows"
+      ],
+      "topic": "tz-agents-ecommerce"
+    },
+    {
+      "slug": "beste-praktijken-weekplanning-met-ai-agents-voor-zzp-en-mkb",
+      "title": "Beste praktijken: weekplanning met AI-agents voor zzp’ers en MKB",
+      "categories": [
+        "ai-agents",
+        "ai-agents-workflows"
+      ],
+      "topic": "tz-agents-week-planning"
+    },
+    {
+      "slug": "wat-doe-ik-als-een-ai-agent-op-error-blijft-staan",
+      "title": "Wat doe ik als een AI-agent op ERROR blijft staan?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-problemen"
+      ],
+      "topic": "tz-agents-stuck-error"
+    },
+    {
+      "slug": "waarom-start-mijn-ai-agent-niet-blijft-idle",
+      "title": "Waarom start mijn AI-agent niet (blijft IDLE)?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-problemen"
+      ],
+      "topic": "tz-agents-wont-start"
+    },
+    {
+      "slug": "wat-doe-ik-als-taken-niet-toenemen-bij-een-running-agent",
+      "title": "Wat doe ik als taken niet toenemen bij een RUNNING agent?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-problemen"
+      ],
+      "topic": "tz-agents-no-task-growth"
+    },
+    {
+      "slug": "wat-als-ik-meer-of-te-weinig-agents-zie-dan-mijn-pakket",
+      "title": "Wat als ik meer agents zie dan mijn pakket toestaat — of juist te weinig?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-problemen",
+        "shop-en-pakketten"
+      ],
+      "topic": "tz-agents-quota-mismatch"
+    },
+    {
+      "slug": "hoe-voorkom-ik-dat-agents-tijdens-migratie-of-onderhoud-conflicteren",
+      "title": "Hoe voorkom ik dat agents tijdens migratie of onderhoud conflicteren?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-problemen"
+      ],
+      "topic": "tz-agents-migration-safe"
+    },
+    {
+      "slug": "welke-gegevens-stuur-ik-naar-support-bij-een-ai-agentprobleem",
+      "title": "Welke gegevens stuur ik naar support bij een AI-agentprobleem?",
+      "categories": [
+        "ai-agents",
+        "ai-agents-problemen",
+        "support"
+      ],
+      "topic": "tz-agents-support-info"
     }
   ]
 }
