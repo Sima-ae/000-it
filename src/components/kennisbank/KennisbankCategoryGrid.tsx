@@ -43,7 +43,7 @@ export function KennisbankCategoryGrid({
 
   return (
     <div className="space-y-6">
-      <label className="block">
+      <label className="mx-auto block max-w-3xl">
         <span className="sr-only">{searchPlaceholder}</span>
         <input
           type="search"

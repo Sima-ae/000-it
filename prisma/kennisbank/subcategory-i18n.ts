@@ -272,4 +272,460 @@ export const SUBCATEGORY_I18N: Record<string, LocaleCopy> = {
     ["Resolução de problemas", "Estado ERROR, agentes que não iniciam, conflitos e dados para suporte."],
     ["Risoluzione problemi", "Stato ERROR, agent che non partono, conflitti e dati per il supporto."],
   ),
+  "aeo-antwoordengines": loc(
+    [
+      "AEO (answer engines)",
+      "Answer Engine Optimization: citations, FAQs, entities and answer-ready content at TripleZero iT.",
+    ],
+    [
+      "AEO (Antwortmaschinen)",
+      "Answer Engine Optimization: Zitate, FAQs, Entities und antwortklare Inhalte bei TripleZero iT.",
+    ],
+    [
+      "AEO (moteurs de réponses)",
+      "Answer Engine Optimization : citations, FAQ, entités et contenu prêt pour les réponses chez TripleZero iT.",
+    ],
+    [
+      "AEO (motores de respuesta)",
+      "Answer Engine Optimization: citas, FAQ, entidades y contenido listo para respuestas en TripleZero iT.",
+    ],
+    [
+      "AEO (motores de resposta)",
+      "Answer Engine Optimization: citações, FAQ, entidades e conteúdo pronto para respostas na TripleZero iT.",
+    ],
+    [
+      "AEO (motori di risposta)",
+      "Answer Engine Optimization: citazioni, FAQ, entità e contenuti pronti per le risposte su TripleZero iT.",
+    ],
+  ),
+  "geo-lokaal": loc(
+    [
+      "GEO (local)",
+      "Local visibility: Google Business Profile, NAP, Maps, location pages and service areas.",
+    ],
+    [
+      "GEO (lokal)",
+      "Lokale Sichtbarkeit: Google Business Profile, NAP, Maps, Standortseiten und Service Areas.",
+    ],
+    [
+      "GEO (local)",
+      "Visibilité locale : Google Business Profile, NAP, Maps, pages locales et zones de service.",
+    ],
+    [
+      "GEO (local)",
+      "Visibilidad local: Google Business Profile, NAP, Maps, páginas de ubicación y áreas de servicio.",
+    ],
+    [
+      "GEO (local)",
+      "Visibilidade local: Google Business Profile, NAP, Maps, páginas de localização e áreas de serviço.",
+    ],
+    [
+      "GEO (locale)",
+      "Visibilità locale: Google Business Profile, NAP, Maps, pagine località e aree di servizio.",
+    ],
+  ),
+  "seo-klassiek": loc(
+    [
+      "SEO (classic)",
+      "Technical SEO, on-page, indexation, Core Web Vitals, WordPress and ecommerce SEO.",
+    ],
+    [
+      "SEO (klassisch)",
+      "Technisches SEO, On-Page, Indexierung, Core Web Vitals, WordPress und Shop-SEO.",
+    ],
+    [
+      "SEO (classique)",
+      "SEO technique, on-page, indexation, Core Web Vitals, WordPress et SEO e-commerce.",
+    ],
+    [
+      "SEO (clásico)",
+      "SEO técnico, on-page, indexación, Core Web Vitals, WordPress y SEO de tienda.",
+    ],
+    [
+      "SEO (clássico)",
+      "SEO técnico, on-page, indexação, Core Web Vitals, WordPress e SEO de loja.",
+    ],
+    [
+      "SEO (classico)",
+      "SEO tecnico, on-page, indicizzazione, Core Web Vitals, WordPress e SEO e-commerce.",
+    ],
+  ),
+  "aeo-geo-seo-trajecten": loc(
+    [
+      "Programs and plans",
+      "Basic, plus and pro; ordering; AI scan versus full program; AEO, GEO and SEO services.",
+    ],
+    [
+      "Programme und Pakete",
+      "Basic, Plus und Pro; Bestellung; AI-Scan versus volles Programm; AEO-, GEO- und SEO-Dienste.",
+    ],
+    [
+      "Parcours et forfaits",
+      "Basic, plus et pro ; commande ; AI-scan versus parcours complet ; services AEO, GEO et SEO.",
+    ],
+    [
+      "Trayectos y planes",
+      "Basic, plus y pro; pedido; AI-scan frente a trayecto completo; servicios AEO, GEO y SEO.",
+    ],
+    [
+      "Percursos e planos",
+      "Basic, plus e pro; encomenda; AI-scan versus percurso completo; serviços AEO, GEO e SEO.",
+    ],
+    [
+      "Percorsi e pacchetti",
+      "Basic, plus e pro; ordine; AI-scan versus percorso completo; servizi AEO, GEO e SEO.",
+    ],
+  ),
+  "aeo-geo-seo-resultaten": loc(
+    [
+      "Content, measurement and issues",
+      "Content calendar, KPIs, audits, regressions and common AEO/GEO/SEO problems.",
+    ],
+    [
+      "Content, Messung und Fehler",
+      "Content-Kalender, KPIs, Audits, Regressionen und häufige AEO/GEO/SEO-Probleme.",
+    ],
+    [
+      "Contenu, mesure et erreurs",
+      "Calendrier éditorial, KPI, audits, régressions et problèmes courants AEO/GEO/SEO.",
+    ],
+    [
+      "Contenido, medición y errores",
+      "Calendario de contenido, KPI, auditorías, regresiones y problemas frecuentes de AEO/GEO/SEO.",
+    ],
+    [
+      "Conteúdo, medição e erros",
+      "Calendário de conteúdo, KPI, auditorias, regressões e problemas comuns de AEO/GEO/SEO.",
+    ],
+    [
+      "Contenuti, misurazione ed errori",
+      "Calendario contenuti, KPI, audit, regressioni e problemi comuni di AEO/GEO/SEO.",
+    ],
+  ),
+  "ai-scan-starten": loc(
+    ["Getting started", "What the AI scan is, how to start, URL choice, free use and how often to scan."],
+    ["Start und Grundlagen", "Was der AI-Scan ist, Start, URL-Wahl, kostenlose Nutzung und Scan-Häufigkeit."],
+    ["Démarrage", "Ce qu'est l'AI-scan, comment démarrer, choix d'URL, usage gratuit et fréquence."],
+    ["Primeros pasos", "Qué es el AI-scan, cómo empezar, URL, uso gratuito y frecuencia."],
+    ["Começar", "O que é o AI-scan, como começar, URL, uso gratuito e frequência."],
+    ["Per iniziare", "Cos'è l'AI-scan, come partire, URL, uso gratuito e frequenza."],
+  ),
+  "ai-scan-scores": loc(
+    ["Understanding scores", "Reading the scorecard: AEO, GEO, SEO, Performance, AI Readiness and priorities."],
+    ["Scores verstehen", "Scorekarte lesen: AEO, GEO, SEO, Performance, AI Readiness und Prioritäten."],
+    ["Comprendre les scores", "Lire la grille: AEO, GEO, SEO, Performance, AI Readiness et priorités."],
+    ["Entender las puntuaciones", "Leer la tarjeta: AEO, GEO, SEO, Performance, AI Readiness y prioridades."],
+    ["Compreender as pontuações", "Ler o quadro: AEO, GEO, SEO, Performance, AI Readiness e prioridades."],
+    ["Capire i punteggi", "Leggere la scorecard: AEO, GEO, SEO, Performance, AI Readiness e priorità."],
+  ),
+  "ai-scan-verbeteren": loc(
+    ["Improving scores", "Fixing low scores, quick wins and measuring after changes."],
+    ["Scores verbessern", "Niedrige Scores angehen, Quick Wins und Messen nach Änderungen."],
+    ["Améliorer les scores", "Corriger les scores bas, gains rapides et mesure après changements."],
+    ["Mejorar puntuaciones", "Abordar scores bajos, mejoras rápidas y medir tras cambios."],
+    ["Melhorar pontuações", "Corrigir scores baixos, ganhos rápidos e medir após alterações."],
+    ["Migliorare i punteggi", "Correggere score bassi, quick win e misurare dopo le modifiche."],
+  ),
+  "ai-scan-dashboard": loc(
+    ["Dashboard and history", "Past scans, SEO analysis, contacting about results and scan issues."],
+    ["Dashboard und Verlauf", "Frühere Scans, SEO-Analyse, Kontakt zu Ergebnissen und Scan-Probleme."],
+    ["Tableau de bord et historique", "Scans passés, analyse SEO, contact sur les résultats et problèmes."],
+    ["Panel e historial", "Escaneos previos, análisis SEO, contacto por resultados y fallos."],
+    ["Painel e histórico", "Scans anteriores, análise SEO, contacto sobre resultados e falhas."],
+    ["Dashboard e cronologia", "Scan precedenti, analisi SEO, contatto sui risultati e problemi."],
+  ),
+  "ai-scan-oplossingen": loc(
+    ["Solutions and programs", "Packages, AEO/GEO/SEO services, agents, redesign and agency use."],
+    ["Lösungen und Programme", "Pakete, AEO/GEO/SEO-Dienste, Agents, Redesign und Agenturnutzung."],
+    ["Solutions et parcours", "Forfaits, services AEO/GEO/SEO, agents, redesign et usage agence."],
+    ["Soluciones y programas", "Paquetes, servicios AEO/GEO/SEO, agentes, redesign y uso de agencias."],
+    ["Soluções e programas", "Pacotes, serviços AEO/GEO/SEO, agentes, redesign e uso por agências."],
+    ["Soluzioni e percorsi", "Pacchetti, servizi AEO/GEO/SEO, agent, redesign e uso per agenzie."],
+  ),
+  "bloggen-starten": loc(
+    [
+      "Getting started and platforms",
+      "WordPress.org, WordPress.com, Blogger, own domain, migration and hosting choice.",
+    ],
+    [
+      "Start und Plattformen",
+      "WordPress.org, WordPress.com, Blogger, eigene Domain, Migration und Hostingwahl.",
+    ],
+    [
+      "Démarrage et plateformes",
+      "WordPress.org, WordPress.com, Blogger, domaine propre, migration et choix d'hébergement.",
+    ],
+    [
+      "Inicio y plataformas",
+      "WordPress.org, WordPress.com, Blogger, dominio propio, migración y elección de hosting.",
+    ],
+    [
+      "Começar e plataformas",
+      "WordPress.org, WordPress.com, Blogger, domínio próprio, migração e escolha de hosting.",
+    ],
+    [
+      "Avvio e piattaforme",
+      "WordPress.org, WordPress.com, Blogger, dominio proprio, migrazione e scelta hosting.",
+    ],
+  ),
+  "bloggen-schrijven": loc(
+    [
+      "Writing and publishing",
+      "Writing posts, editor, planning, post SEO, categories and tags.",
+    ],
+    [
+      "Schreiben und Veröffentlichen",
+      "Beiträge schreiben, Editor, Planung, Post-SEO, Kategorien und Tags.",
+    ],
+    [
+      "Rédaction et publication",
+      "Rédiger des posts, éditeur, planning, SEO des articles, catégories et tags.",
+    ],
+    [
+      "Escritura y publicación",
+      "Escribir posts, editor, planificación, SEO de artículos, categorías y etiquetas.",
+    ],
+    [
+      "Escrita e publicação",
+      "Escrever posts, editor, planeamento, SEO de artigos, categorias e tags.",
+    ],
+    [
+      "Scrittura e pubblicazione",
+      "Scrivere post, editor, pianificazione, SEO degli articoli, categorie e tag.",
+    ],
+  ),
+  "bloggen-vormgeving": loc(
+    [
+      "Design and media",
+      "Themes, images, featured media, layout and readability.",
+    ],
+    [
+      "Gestaltung und Medien",
+      "Themes, Bilder, Beitragsbild, Layout und Lesbarkeit.",
+    ],
+    [
+      "Design et médias",
+      "Thèmes, images, image mise en avant, mise en page et lisibilité.",
+    ],
+    [
+      "Diseño y medios",
+      "Temas, imágenes, imagen destacada, diseño y legibilidad.",
+    ],
+    [
+      "Design e média",
+      "Temas, imagens, imagem de destaque, layout e legibilidade.",
+    ],
+    [
+      "Design e media",
+      "Temi, immagini, immagine in evidenza, layout e leggibilità.",
+    ],
+  ),
+  "bloggen-groei": loc(
+    [
+      "Growth and reach",
+      "Comments, newsletter, social, monetization, forms and measurement.",
+    ],
+    [
+      "Wachstum und Reichweite",
+      "Kommentare, Newsletter, Social, Monetarisierung, Formulare und Messung.",
+    ],
+    [
+      "Croissance et portée",
+      "Commentaires, newsletter, social, monétisation, formulaires et mesure.",
+    ],
+    [
+      "Crecimiento y alcance",
+      "Comentarios, boletín, social, monetización, formularios y medición.",
+    ],
+    [
+      "Crescimento e alcance",
+      "Comentários, newsletter, social, monetização, formulários e medição.",
+    ],
+    [
+      "Crescita e portata",
+      "Commenti, newsletter, social, monetizzazione, form e misurazione.",
+    ],
+  ),
+  "bloggen-beheer": loc(
+    [
+      "Operations and issues",
+      "Updates, spam, backups, performance, errors and monthly maintenance.",
+    ],
+    [
+      "Betrieb und Probleme",
+      "Updates, Spam, Backups, Performance, Fehler und monatliche Wartung.",
+    ],
+    [
+      "Exploitation et problèmes",
+      "Mises à jour, spam, sauvegardes, performance, erreurs et entretien mensuel.",
+    ],
+    [
+      "Operación y problemas",
+      "Actualizaciones, spam, copias, rendimiento, errores y mantenimiento mensual.",
+    ],
+    [
+      "Operação e problemas",
+      "Atualizações, spam, backups, desempenho, erros e manutenção mensal.",
+    ],
+    [
+      "Gestione e problemi",
+      "Aggiornamenti, spam, backup, performance, errori e manutenzione mensile.",
+    ],
+  ),
+  "cyberpanel-starten": loc(
+    [
+      "Getting started and access",
+      "Login, 2FA, users/ACL, panel URL/port 8090 and limits.",
+    ],
+    [
+      "Start und Zugang",
+      "Login, 2FA, Benutzer/ACL, Panel-URL/Port 8090 und Limits.",
+    ],
+    [
+      "Démarrage et accès",
+      "Connexion, 2FA, utilisateurs/ACL, URL du panel/port 8090 et limites.",
+    ],
+    [
+      "Inicio y acceso",
+      "Inicio de sesión, 2FA, usuarios/ACL, URL del panel/puerto 8090 y límites.",
+    ],
+    [
+      "Começar e acesso",
+      "Login, 2FA, utilizadores/ACL, URL do painel/porta 8090 e limites.",
+    ],
+    [
+      "Avvio e accesso",
+      "Accesso, 2FA, utenti/ACL, URL del panel/porta 8090 e limiti.",
+    ],
+  ),
+  "cyberpanel-websites": loc(
+    [
+      "Websites and domains",
+      "Sites, aliases, redirects, subdomains, migration and document roots.",
+    ],
+    [
+      "Websites und Domains",
+      "Sites, Aliase, Redirects, Subdomains, Migration und Document Roots.",
+    ],
+    [
+      "Sites et domaines",
+      "Sites, alias, redirections, sous-domaines, migration et document roots.",
+    ],
+    [
+      "Sitios y dominios",
+      "Sitios, alias, redirecciones, subdominios, migración y document roots.",
+    ],
+    [
+      "Sites e domínios",
+      "Sites, aliases, redirects, subdomínios, migração e document roots.",
+    ],
+    [
+      "Siti e domini",
+      "Siti, alias, redirect, sottodomini, migrazione e document root.",
+    ],
+  ),
+  "cyberpanel-email-dns": loc(
+    [
+      "Email and DNS",
+      "Mailboxes, SPF/DKIM, webmail, mail queue, zones and MX records.",
+    ],
+    [
+      "E-Mail und DNS",
+      "Postfächer, SPF/DKIM, Webmail, Mailqueue, Zonen und MX-Records.",
+    ],
+    [
+      "E-mail et DNS",
+      "Boîtes mail, SPF/DKIM, webmail, file d'attente, zones et enregistrements MX.",
+    ],
+    [
+      "Correo y DNS",
+      "Buzones, SPF/DKIM, webmail, cola de correo, zonas y registros MX.",
+    ],
+    [
+      "E-mail e DNS",
+      "Caixas de correio, SPF/DKIM, webmail, fila de mail, zonas e registos MX.",
+    ],
+    [
+      "Email e DNS",
+      "Caselle, SPF/DKIM, webmail, coda mail, zone e record MX.",
+    ],
+  ),
+  "cyberpanel-ssl-beveiliging": loc(
+    [
+      "SSL and security",
+      "Let's Encrypt, custom SSL, firewall, ModSecurity and brute-force.",
+    ],
+    [
+      "SSL und Sicherheit",
+      "Let's Encrypt, Custom-SSL, Firewall, ModSecurity und Brute-Force.",
+    ],
+    [
+      "SSL et sécurité",
+      "Let's Encrypt, SSL personnalisé, pare-feu, ModSecurity et brute-force.",
+    ],
+    [
+      "SSL y seguridad",
+      "Let's Encrypt, SSL personalizado, firewall, ModSecurity y fuerza bruta.",
+    ],
+    [
+      "SSL e segurança",
+      "Let's Encrypt, SSL personalizado, firewall, ModSecurity e força bruta.",
+    ],
+    [
+      "SSL e sicurezza",
+      "Let's Encrypt, SSL personalizzato, firewall, ModSecurity e brute-force.",
+    ],
+  ),
+  "cyberpanel-bestanden-databases": loc(
+    [
+      "Files, FTP and databases",
+      "File Manager, permissions, MySQL/phpMyAdmin and WordPress via CyberPanel.",
+    ],
+    [
+      "Dateien, FTP und Datenbanken",
+      "File Manager, Rechte, MySQL/phpMyAdmin und WordPress über CyberPanel.",
+    ],
+    [
+      "Fichiers, FTP et bases de données",
+      "File Manager, droits, MySQL/phpMyAdmin et WordPress via CyberPanel.",
+    ],
+    [
+      "Archivos, FTP y bases de datos",
+      "File Manager, permisos, MySQL/phpMyAdmin y WordPress vía CyberPanel.",
+    ],
+    [
+      "Ficheiros, FTP e bases de dados",
+      "File Manager, permissões, MySQL/phpMyAdmin e WordPress via CyberPanel.",
+    ],
+    [
+      "File, FTP e database",
+      "File Manager, permessi, MySQL/phpMyAdmin e WordPress tramite CyberPanel.",
+    ],
+  ),
+  "cyberpanel-php-ols": loc(
+    [
+      "PHP, OpenLiteSpeed, backups and issues",
+      "PHP, OLS, cache, cron, backups and common errors.",
+    ],
+    [
+      "PHP, OpenLiteSpeed, Backups und Probleme",
+      "PHP, OLS, Cache, Cron, Backups und häufige Fehler.",
+    ],
+    [
+      "PHP, OpenLiteSpeed, sauvegardes et problèmes",
+      "PHP, OLS, cache, cron, sauvegardes et erreurs courantes.",
+    ],
+    [
+      "PHP, OpenLiteSpeed, copias y problemas",
+      "PHP, OLS, caché, cron, copias y errores frecuentes.",
+    ],
+    [
+      "PHP, OpenLiteSpeed, backups e problemas",
+      "PHP, OLS, cache, cron, backups e erros comuns.",
+    ],
+    [
+      "PHP, OpenLiteSpeed, backup e problemi",
+      "PHP, OLS, cache, cron, backup e errori comuni.",
+    ],
+  ),
 };

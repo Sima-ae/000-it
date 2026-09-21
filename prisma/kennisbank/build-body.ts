@@ -4,6 +4,10 @@
  */
 import { buildGapArticleHtml } from "./gap-bodies";
 import { agentTopicBuilders } from "./agent-bodies";
+import { aeoGeoSeoTopicBuilders } from "./aeo-geo-seo-bodies";
+import { aiScanTopicBuilders } from "./ai-scan-bodies";
+import { bloggenTopicBuilders } from "./bloggen-bodies";
+import { cyberpanelTopicBuilders } from "./cyberpanel-bodies";
 
 const BRAND = "TripleZero iT";
 
@@ -1342,7 +1346,13 @@ export function buildArticleHtml(
   if (topic.startsWith("gap-")) {
     return buildGapArticleHtml(title, topic);
   }
-  const builder = topicBuilders[topic] || agentTopicBuilders[topic];
+  const builder =
+    topicBuilders[topic] ||
+    agentTopicBuilders[topic] ||
+    aeoGeoSeoTopicBuilders[topic] ||
+    aiScanTopicBuilders[topic] ||
+    bloggenTopicBuilders[topic] ||
+    cyberpanelTopicBuilders[topic];
   if (builder) return builder(ctx);
   return genericBody(ctx);
 }

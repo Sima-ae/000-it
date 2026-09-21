@@ -53,24 +53,16 @@ export default async function KennisbankPage({
       />
       <div className="relative mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
         <Reveal>
-          <header className="mb-10 max-w-3xl">
+          <header className="mx-auto mb-10 max-w-5xl text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
               {t("brandEyebrow")}
             </p>
             <h1 className="font-display mt-3 text-4xl font-semibold tracking-tight text-primary md:text-5xl">
               {t("title")}
             </h1>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
+            <p className="mx-auto mt-4 max-w-4xl text-base leading-relaxed text-muted-foreground md:text-lg">
               {t("subtitle")}
             </p>
-            <div className="mt-5 flex flex-wrap gap-2">
-              <span className="rounded-full border border-border/70 bg-background/70 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur">
-                {categories.length} {t("categoriesLabel")}
-              </span>
-              <span className="rounded-full border border-border/70 bg-background/70 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur">
-                {total} {t("articlesLabel")}
-              </span>
-            </div>
           </header>
         </Reveal>
 
@@ -81,13 +73,22 @@ export default async function KennisbankPage({
           searchPlaceholder={t("searchPlaceholder")}
         />
 
+        <div className="mt-6 flex flex-wrap justify-center gap-2">
+          <span className="rounded-full border border-border/70 bg-background/70 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur">
+            {categories.length} {t("categoriesLabel")}
+          </span>
+          <span className="rounded-full border border-border/70 bg-background/70 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur">
+            {total} {t("articlesLabel")}
+          </span>
+        </div>
+
         <aside className="mt-12">
-          <GlassCard className="flex flex-col gap-4 p-6 sm:flex-row sm:items-center sm:justify-between md:p-8">
-            <div>
+          <GlassCard className="flex flex-col items-center gap-4 p-6 text-center sm:flex-row sm:justify-center sm:text-left md:p-8">
+            <div className="max-w-xl">
               <h2 className="font-display text-xl font-semibold tracking-tight text-primary">
                 {t("ctaTitle")}
               </h2>
-              <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 {t("ctaBody")}
               </p>
             </div>
