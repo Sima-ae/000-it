@@ -592,7 +592,8 @@
     "illustrationFooter": "База знања TripleZero iT",
     "seoTitleSuffix": "База знања",
     "tipLabel": "Савет",
-    "warnLabel": "Напомена"
+    "warnLabel": "Напомена",
+    "subcategoriesLabel": "Подкатегорије"
   },
   "faqPage": {
     "eyebrow": "FAQ",

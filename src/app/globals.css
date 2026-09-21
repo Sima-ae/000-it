@@ -416,7 +416,7 @@ body::before {
   margin-bottom: 0.85rem;
   padding-bottom: 0.45rem;
   border-bottom: 1px solid var(--border);
-  color: var(--foreground);
+  color: var(--primary);
 }
 
 .kb-article-body h3 {
@@ -426,6 +426,7 @@ body::before {
   letter-spacing: -0.015em;
   margin-top: 1.75rem;
   margin-bottom: 0.55rem;
+  color: var(--primary);
 }
 
 .kb-article-body p {

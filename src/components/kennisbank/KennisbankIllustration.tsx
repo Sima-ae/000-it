@@ -20,6 +20,36 @@ const motifs: Record<
   "aeo-geo-seo": { c1: "#5e3b88", c2: "#007c8d", motif: "globe" },
   "ai-agents": { c1: "#5e3b88", c2: "#9b7fc0", motif: "bot" },
   "shop-en-pakketten": { c1: "#5e3b88", c2: "#007c8d", motif: "doc" },
+  microsoft: { c1: "#5e3b88", c2: "#0078d4", motif: "mail" },
+  vps: { c1: "#2f3a48", c2: "#007c8d", motif: "server" },
+  "ssl-certificaten": { c1: "#5e3b88", c2: "#e11d48", motif: "shield" },
+  "dns-records": { c1: "#5e3b88", c2: "#007c8d", motif: "globe" },
+  "domein-verhuizen": { c1: "#5e3b88", c2: "#007c8d", motif: "globe" },
+  "domein-registratie": { c1: "#5e3b88", c2: "#9b7fc0", motif: "globe" },
+  webmail: { c1: "#5e3b88", c2: "#007c8d", motif: "mail" },
+  "e-mail-instellen": { c1: "#5e3b88", c2: "#007c8d", motif: "mail" },
+  "spam-en-veiligheid": { c1: "#5e3b88", c2: "#e11d48", motif: "mail" },
+  "mailbox-beheer": { c1: "#5e3b88", c2: "#9b7fc0", motif: "mail" },
+  "php-en-scripts": { c1: "#2f3a48", c2: "#5e3b88", motif: "server" },
+  "ftp-en-bestanden": { c1: "#2f3a48", c2: "#9b7fc0", motif: "server" },
+  "opslag-en-verkeer": { c1: "#2f3a48", c2: "#007c8d", motif: "server" },
+  "wordpress-beveiliging": { c1: "#21759b", c2: "#e11d48", motif: "shield" },
+  "wordpress-installatie": { c1: "#21759b", c2: "#5e3b88", motif: "doc" },
+  "wordpress-onderhoud": { c1: "#21759b", c2: "#9b7fc0", motif: "doc" },
+  "windows-vps": { c1: "#2f3a48", c2: "#0078d4", motif: "server" },
+  "linux-vps": { c1: "#2f3a48", c2: "#007c8d", motif: "server" },
+  "vps-beheer": { c1: "#2f3a48", c2: "#5e3b88", motif: "server" },
+  "facturen-en-betalen": { c1: "#5e3b88", c2: "#007c8d", motif: "doc" },
+  "tickets-en-berichten": { c1: "#5e3b88", c2: "#9b7fc0", motif: "mail" },
+  "account-en-inloggen": { c1: "#5e3b88", c2: "#007c8d", motif: "doc" },
+  "tickets-en-chat": { c1: "#5e3b88", c2: "#9b7fc0", motif: "mail" },
+  "betalen-en-btw": { c1: "#5e3b88", c2: "#007c8d", motif: "doc" },
+  hostingpakketten: { c1: "#5e3b88", c2: "#2f3a48", motif: "server" },
+  "business-pakketten": { c1: "#5e3b88", c2: "#007c8d", motif: "doc" },
+  "firewall-en-hacks": { c1: "#5e3b88", c2: "#e11d48", motif: "shield" },
+  "directadmin-e-mail": { c1: "#5e3b88", c2: "#007c8d", motif: "mail" },
+  "directadmin-wordpress": { c1: "#21759b", c2: "#5e3b88", motif: "doc" },
+  "microsoft-mail": { c1: "#5e3b88", c2: "#0078d4", motif: "mail" },
 };
 
 function motifPath(motif: string) {
@@ -52,11 +82,16 @@ export function KennisbankIllustration({
   variant?: "hero" | "mid";
   caption?: string;
 }) {
-  const theme = motifs[categorySlug] || {
-    c1: "#5e3b88",
-    c2: "#007c8d",
-    motif: "doc" as const,
-  };
+  const parentSlug = categorySlug.endsWith("-overige")
+    ? categorySlug.slice(0, -"-overige".length)
+    : null;
+  const theme =
+    motifs[categorySlug] ||
+    (parentSlug ? motifs[parentSlug] : undefined) || {
+      c1: "#5e3b88",
+      c2: "#007c8d",
+      motif: "doc" as const,
+    };
   const label = categoryLabel || "TripleZero iT";
   const footer = footerLabel || "TripleZero iT";
   const h = variant === "hero" ? 220 : 180;

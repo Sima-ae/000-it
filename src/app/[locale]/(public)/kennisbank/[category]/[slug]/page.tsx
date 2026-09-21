@@ -106,6 +106,17 @@ export default async function KennisbankArticlePage({ params }: Params) {
           >
             {t("breadcrumb")}
           </SoftLink>
+          {cat.parentSlug && cat.parentName ? (
+            <>
+              <span className="mx-2 opacity-50">/</span>
+              <SoftLink
+                href={localizedHref(locale, `/kennisbank/${cat.parentSlug}`)}
+                className="transition hover:text-foreground"
+              >
+                {cat.parentName}
+              </SoftLink>
+            </>
+          ) : null}
           <span className="mx-2 opacity-50">/</span>
           <SoftLink
             href={localizedHref(locale, `/kennisbank/${category}`)}
@@ -124,7 +135,7 @@ export default async function KennisbankArticlePage({ params }: Params) {
                 <p className="text-xs font-semibold uppercase tracking-[0.14em] text-primary">
                   {cat.name}
                 </p>
-                <h1 className="font-display mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
+                <h1 className="font-display mt-3 text-3xl font-semibold tracking-tight text-primary md:text-4xl">
                   {article.title}
                 </h1>
                 <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
@@ -183,7 +194,7 @@ export default async function KennisbankArticlePage({ params }: Params) {
 
         {related.length ? (
           <aside className="mt-14">
-            <h2 className="font-display text-2xl font-semibold tracking-tight">
+            <h2 className="font-display text-2xl font-semibold tracking-tight text-primary">
               {t("relatedTitle")}
             </h2>
             <p className="mt-2 text-sm text-muted-foreground">
@@ -197,7 +208,7 @@ export default async function KennisbankArticlePage({ params }: Params) {
                     className="block h-full"
                   >
                     <GlassCard className="group h-full p-5 transition hover:border-primary/40 hover:shadow-md">
-                      <h3 className="font-display text-base font-semibold tracking-tight transition group-hover:text-primary">
+                      <h3 className="font-display text-base font-semibold tracking-tight text-primary">
                         {item.title}
                       </h3>
                       <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-muted-foreground">

@@ -70,7 +70,7 @@ export function KennisbankArticleList({
                         {article.title.slice(0, 1).toUpperCase()}
                       </div>
                       <div className="min-w-0 flex-1">
-                        <h2 className="font-display text-base font-semibold tracking-tight transition group-hover:text-primary md:text-lg">
+                        <h2 className="font-display text-base font-semibold tracking-tight text-primary md:text-lg">
                           {article.title}
                         </h2>
                         <p className="mt-1.5 line-clamp-2 text-sm leading-relaxed text-muted-foreground">

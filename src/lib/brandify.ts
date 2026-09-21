@@ -21,5 +21,12 @@ export function brandify(text: string) {
     .replace(/Hosted on Namecheap Cloud/gi, "Hosted on TripleZero iT")
     .replace(/Namecheap Cloud/gi, "TripleZero iT")
     .replace(/\bNamecheap\b/gi, "TripleZero iT")
-    .replace(/TripleZero iT Hosting/g, "TripleZero iT");
+    .replace(/TripleZero iT Hosting/g, "TripleZero iT")
+    .replace(/\bMijn Yourhosting\b/gi, "het klantenpanel")
+    .replace(/\bYourWebsite\b/gi, "de websitebouwer")
+    .replace(/\bYourWebshop\b/gi, "je webshop")
+    .replace(/\bYourhosting\b/gi, "TripleZero iT")
+    .replace(/\bYour Hosting\b/gi, "TripleZero iT")
+    .replace(/\bVevida\b/gi, "TripleZero iT")
+    .replace(/\bArgeweb\b/gi, "TripleZero iT");
 }

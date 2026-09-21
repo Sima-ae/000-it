@@ -592,7 +592,8 @@
     "illustrationFooter": "Base de connaissances TripleZero iT",
     "seoTitleSuffix": "Base de connaissances",
     "tipLabel": "Astuce",
-    "warnLabel": "Attention"
+    "warnLabel": "Attention",
+    "subcategoriesLabel": "Sous-catégories"
   },
   "faqPage": {
     "eyebrow": "FAQ",

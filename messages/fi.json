@@ -592,7 +592,8 @@
     "illustrationFooter": "TripleZero iT -tietopankki",
     "seoTitleSuffix": "Tietopankki",
     "tipLabel": "Vinkki",
-    "warnLabel": "Huomio"
+    "warnLabel": "Huomio",
+    "subcategoriesLabel": "Alakategoriat"
   },
   "faqPage": {
     "eyebrow": "FAQ",

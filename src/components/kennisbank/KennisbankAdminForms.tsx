@@ -15,6 +15,7 @@ export type CategoryFormValues = {
   name: string;
   description: string;
   published: boolean;
+  parentId: string | null;
 };
 
 const emptyCategory: CategoryFormValues = {
@@ -23,14 +24,17 @@ const emptyCategory: CategoryFormValues = {
   name: "",
   description: "",
   published: true,
+  parentId: null,
 };
 
 export function KennisbankCategoryForm({
   initial,
+  parentOptions,
   onSaved,
   onCancel,
 }: {
   initial?: Partial<CategoryFormValues>;
+  parentOptions: { id: string; name: string }[];
   onSaved: () => void;
   onCancel: () => void;
 }) {
@@ -51,6 +55,7 @@ export function KennisbankCategoryForm({
         name: form.name,
         description: form.description || null,
         published: form.published,
+        parentId: form.parentId,
         locale: "nl",
       };
       const res = await fetch(
@@ -109,6 +114,26 @@ export function KennisbankCategoryForm({
             onChange={(e) => setForm((p) => ({ ...p, sortKey: e.target.value }))}
           />
         </div>
+      </div>
+      <div className="space-y-2">
+        <Label htmlFor="cat-parent">Bovenliggende categorie</Label>
+        <select
+          id="cat-parent"
+          className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm"
+          value={form.parentId || ""}
+          onChange={(e) =>
+            setForm((p) => ({ ...p, parentId: e.target.value || null }))
+          }
+        >
+          <option value="">— Geen (hoofdcategorie) —</option>
+          {parentOptions
+            .filter((opt) => opt.id !== form.id)
+            .map((opt) => (
+              <option key={opt.id} value={opt.id}>
+                {opt.name}
+              </option>
+            ))}
+        </select>
       </div>
       <div className="space-y-2">
         <Label htmlFor="cat-desc">Beschrijving</Label>

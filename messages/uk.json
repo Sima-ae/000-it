@@ -592,7 +592,8 @@
     "illustrationFooter": "База знань TripleZero iT",
     "seoTitleSuffix": "База знань",
     "tipLabel": "Порада",
-    "warnLabel": "Увага"
+    "warnLabel": "Увага",
+    "subcategoriesLabel": "Підкатегорії"
   },
   "faqPage": {
     "eyebrow": "FAQ",

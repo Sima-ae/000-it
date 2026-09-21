@@ -152,7 +152,7 @@ function loadKennisbankCatalogFallback(): {
     const raw = JSON.parse(
       readFileSync(join(process.cwd(), "prisma/kennisbank/catalog.json"), "utf8"),
     ) as {
-      categories: Array<[string, string, string]>;
+      categories: Array<[string, string, string] | [string, string, string, string]>;
       articles: Array<{ slug: string; categories: string[] }>;
     };
     return {

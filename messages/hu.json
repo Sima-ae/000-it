@@ -592,7 +592,8 @@
     "illustrationFooter": "TripleZero iT tudástár",
     "seoTitleSuffix": "Tudástár",
     "tipLabel": "Tipp",
-    "warnLabel": "Figyelem"
+    "warnLabel": "Figyelem",
+    "subcategoriesLabel": "Alkategóriák"
   },
   "faqPage": {
     "eyebrow": "FAQ",

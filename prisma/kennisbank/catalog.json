@@ -33,7 +33,7 @@
     [
       "beveiliging",
       "Beveiliging",
-      "SSL, firewalls, Wordfence, hacks voorkomen en accountbeveiliging."
+      "SSL, firewalls, Wordfence en hacks voorkomen — inclusief de subcategorieën SSL-certificaten en Firewall en hacks."
     ],
     [
       "crm-klantenpanel",
@@ -79,6 +79,250 @@
       "shop-en-pakketten",
       "Shop en pakketten",
       "Business, Extra Growth, hostingkeuze, checkout, btw en wat er in je pakket zit."
+    ],
+    [
+      "microsoft",
+      "Microsoft 365",
+      "Microsoft 365, Exchange Online, Teams, OneDrive en Outlook koppelen via TripleZero iT."
+    ],
+    [
+      "vps",
+      "VPS",
+      "VPS starten en beveiligen, snapshots, SSH/RDP, managed en unmanaged bij TripleZero iT."
+    ],
+    [
+      "ssl-certificaten",
+      "SSL-certificaten",
+      "Let’s Encrypt, betaalde certificaten, CSR, HSTS en HTTPS bij TripleZero iT.",
+      "beveiliging"
+    ],
+    [
+      "dns-records",
+      "DNS-records",
+      "A, AAAA, CNAME, MX, SPF, DKIM, DMARC, nameservers en DNSSEC bij TripleZero iT.",
+      "domeinnamen"
+    ],
+    [
+      "domein-verhuizen",
+      "Domein verhuizen",
+      "Verhuizen, autorisatiecode, quarantaine, lock en overdracht van domeinen.",
+      "domeinnamen"
+    ],
+    [
+      "domein-registratie",
+      "Domeinregistratie",
+      "Registreren, WHOIS, houdergegevens, extensies en SIDN-regels voor je domein.",
+      "domeinnamen"
+    ],
+    [
+      "webmail",
+      "Webmail",
+      "Inloggen, Roundcube, Webmail Pro, mappen, handtekeningen en webmail-problemen.",
+      "e-mail"
+    ],
+    [
+      "e-mail-instellen",
+      "E-mail instellen",
+      "Mailbox koppelen in Outlook, Apple Mail, Gmail, Thunderbird, iPhone en Android.",
+      "e-mail"
+    ],
+    [
+      "spam-en-veiligheid",
+      "Spam en e-mailveiligheid",
+      "Spamfilters, spoofing, phishingmails en aflevering in de spambox.",
+      "e-mail"
+    ],
+    [
+      "mailbox-beheer",
+      "Mailbox beheren",
+      "Aanmaken, quota, wachtwoord, doorsturen, catch-all en automatisch antwoord.",
+      "e-mail"
+    ],
+    [
+      "php-en-scripts",
+      "PHP en scripts",
+      "PHP-versie, cronjobs, phpinfo en Installatron op je hostingpakket.",
+      "hosting"
+    ],
+    [
+      "opslag-en-verkeer",
+      "Opslag en dataverkeer",
+      "Schijfruimte, inodes, bandbreedte en wat je kunt doen als het pakket vol raakt.",
+      "hosting"
+    ],
+    [
+      "ftp-en-bestanden",
+      "FTP en bestanden",
+      "FileZilla, FTP-accounts, rechten (CHMOD) en bestanden uploaden of verwijderen.",
+      "hosting"
+    ],
+    [
+      "wordpress-beveiliging",
+      "WordPress-beveiliging",
+      "Wordfence, hacks voorkomen, XML-RPC uitzetten en een gehackte site herstellen.",
+      "wordpress"
+    ],
+    [
+      "wordpress-installatie",
+      "WordPress installeren",
+      "WordPress zetten via Installatron, Toolkit of een snelstart, en een site toevoegen of verwijderen.",
+      "wordpress"
+    ],
+    [
+      "wordpress-onderhoud",
+      "WordPress onderhouden",
+      "Updates, permalinks, widgets, extra gebruikers en backups in het dashboard.",
+      "wordpress"
+    ],
+    [
+      "windows-vps",
+      "Windows VPS",
+      "IIS, RDP, application pools, bindings, MSSQL en sites op een Windows-server.",
+      "vps"
+    ],
+    [
+      "linux-vps",
+      "Linux VPS",
+      "SSH, Fail2Ban, console, CentOS/CloudLinux en kernel-updates op je Linux-VPS.",
+      "vps"
+    ],
+    [
+      "vps-beheer",
+      "VPS beheren",
+      "Starten en stoppen, snapshots, IP-adressen, managed versus unmanaged.",
+      "vps"
+    ],
+    [
+      "facturen-en-betalen",
+      "Facturen en betalen",
+      "Facturen bekijken, incasso, openstaande posten en betaalmethoden in het klantenpanel.",
+      "crm-klantenpanel"
+    ],
+    [
+      "tickets-en-berichten",
+      "Tickets en berichten",
+      "Supporttickets, CRM-berichten en de status van je aanvragen.",
+      "crm-klantenpanel"
+    ],
+    [
+      "account-en-inloggen",
+      "Account en inloggen",
+      "Inloggen, 2FA, wachtwoord en extra gebruikers op je klantenpanel.",
+      "crm-klantenpanel"
+    ],
+    [
+      "tickets-en-chat",
+      "Tickets, chat en belafspraak",
+      "Live chat, tickets en belafspraken bij TripleZero iT support.",
+      "support"
+    ],
+    [
+      "betalen-en-btw",
+      "Betalen en btw",
+      "Checkout, btw, incasso, korting en wat er na een betaling gebeurt.",
+      "shop-en-pakketten"
+    ],
+    [
+      "hostingpakketten",
+      "Hostingpakketten",
+      "Shared, WordPress-hosting en VPS: Basic, Plus, Pro/Business, upgraden en downgraden.",
+      "shop-en-pakketten"
+    ],
+    [
+      "business-pakketten",
+      "Business-pakketten",
+      "Business, Extra Growth, Enterprise en wat er in welk pakket zit.",
+      "shop-en-pakketten"
+    ],
+    [
+      "firewall-en-hacks",
+      "Firewall en hacks",
+      "Firewalls, brute-force, DDoS, hotlink-protectie en wat je doet bij een hack.",
+      "beveiliging"
+    ],
+    [
+      "directadmin-e-mail",
+      "E-mail in DirectAdmin",
+      "Mailboxen, spamfilter, quota en webmail vanuit DirectAdmin.",
+      "directadmin"
+    ],
+    [
+      "directadmin-wordpress",
+      "WordPress in DirectAdmin",
+      "Installatron, WordPress-updates, backups en multisite in DirectAdmin.",
+      "directadmin"
+    ],
+    [
+      "microsoft-mail",
+      "Microsoft-mail",
+      "Exchange Online, Outlook, OWA en Microsoft 365-mailboxen koppelen.",
+      "microsoft"
+    ],
+    [
+      "beveiliging-overige",
+      "Overige",
+      "Overige artikelen in Beveiliging die niet onder een specifiek onderwerp vallen.",
+      "beveiliging"
+    ],
+    [
+      "crm-klantenpanel-overige",
+      "Overige",
+      "Overige artikelen in CRM en Klantenpanel die niet onder een specifiek onderwerp vallen.",
+      "crm-klantenpanel"
+    ],
+    [
+      "directadmin-overige",
+      "Overige",
+      "Overige artikelen in DirectAdmin controlpanel die niet onder een specifiek onderwerp vallen.",
+      "directadmin"
+    ],
+    [
+      "domeinnamen-overige",
+      "Overige",
+      "Overige artikelen in Domeinnamen die niet onder een specifiek onderwerp vallen.",
+      "domeinnamen"
+    ],
+    [
+      "e-mail-overige",
+      "Overige",
+      "Overige artikelen in E-mail die niet onder een specifiek onderwerp vallen.",
+      "e-mail"
+    ],
+    [
+      "hosting-overige",
+      "Overige",
+      "Overige artikelen in Hosting die niet onder een specifiek onderwerp vallen.",
+      "hosting"
+    ],
+    [
+      "microsoft-overige",
+      "Overige",
+      "Overige artikelen in Microsoft 365 die niet onder een specifiek onderwerp vallen.",
+      "microsoft"
+    ],
+    [
+      "shop-en-pakketten-overige",
+      "Overige",
+      "Overige artikelen in Shop en pakketten die niet onder een specifiek onderwerp vallen.",
+      "shop-en-pakketten"
+    ],
+    [
+      "support-overige",
+      "Overige",
+      "Overige artikelen in Support die niet onder een specifiek onderwerp vallen.",
+      "support"
+    ],
+    [
+      "vps-overige",
+      "Overige",
+      "Overige artikelen in VPS die niet onder een specifiek onderwerp vallen.",
+      "vps"
+    ],
+    [
+      "wordpress-overige",
+      "Overige",
+      "Overige artikelen in WordPress die niet onder een specifiek onderwerp vallen.",
+      "wordpress"
     ]
   ],
   "articles": [
@@ -88,7 +332,10 @@
       "categories": [
         "domeinnamen",
         "hosting",
-        "directadmin"
+        "directadmin",
+        "directadmin-overige",
+        "domeinnamen-overige",
+        "hosting-overige"
       ],
       "topic": "directadmin-reseller-domain"
     },
@@ -97,7 +344,9 @@
       "title": "Domeinnaam staat niet in DirectAdmin of werkt niet",
       "categories": [
         "domeinnamen",
-        "directadmin"
+        "directadmin",
+        "directadmin-overige",
+        "domeinnamen-overige"
       ],
       "topic": "domain-missing-da"
     },
@@ -105,7 +354,8 @@
       "slug": "spf-record-voor-je-domeinnaam",
       "title": "SPF-record voor je domeinnaam",
       "categories": [
-        "domeinnamen"
+        "domeinnamen",
+        "dns-records"
       ],
       "topic": "spf"
     },
@@ -114,7 +364,9 @@
       "title": "Hoe kan ik een DMARC record toevoegen?",
       "categories": [
         "domeinnamen",
-        "e-mail"
+        "e-mail",
+        "dns-records",
+        "e-mail-overige"
       ],
       "topic": "dmarc"
     },
@@ -122,7 +374,8 @@
       "slug": "nl-control-jouw-domein-beschermen",
       "title": ".nl Control: jouw .nl domein beschermen",
       "categories": [
-        "domeinnamen"
+        "domeinnamen",
+        "domeinnamen-overige"
       ],
       "topic": "nl-control"
     },
@@ -130,7 +383,8 @@
       "slug": "triplezero-it-hosting-niet-terug-te-vinden-op-website-sidn",
       "title": "TripleZero iT is niet terug te vinden op website SIDN?",
       "categories": [
-        "domeinnamen"
+        "domeinnamen",
+        "domeinnamen-overige"
       ],
       "topic": "sidn"
     },
@@ -139,7 +393,9 @@
       "title": "Kan ik meerdere domeinen koppelen aan dezelfde website?",
       "categories": [
         "domeinnamen",
-        "hosting"
+        "hosting",
+        "domeinnamen-overige",
+        "hosting-overige"
       ],
       "topic": "multi-domain"
     },
@@ -147,7 +403,8 @@
       "slug": "protect-id-domein-anoniem-registreren",
       "title": "Anoniem domein registreren",
       "categories": [
-        "domeinnamen"
+        "domeinnamen",
+        "domein-registratie"
       ],
       "topic": "whois-privacy"
     },
@@ -155,7 +412,8 @@
       "slug": "domein-quarantaine-halen",
       "title": ".nl domein uit quarantaine halen",
       "categories": [
-        "domeinnamen"
+        "domeinnamen",
+        "domein-verhuizen"
       ],
       "topic": "quarantine"
     },
@@ -163,7 +421,8 @@
       "slug": "mijn-nieuwe-domeinnaam-werkt-niet",
       "title": "Mijn nieuwe domeinnaam werkt niet",
       "categories": [
-        "domeinnamen"
+        "domeinnamen",
+        "domeinnamen-overige"
       ],
       "topic": "new-domain-dns"
     },
@@ -171,7 +430,8 @@
       "slug": "hoe-stel-ik-een-forward-redirect-in-met-meta-tag",
       "title": "Hoe stel ik een forward / redirect in met meta tag?",
       "categories": [
-        "domeinnamen"
+        "domeinnamen",
+        "domeinnamen-overige"
       ],
       "topic": "meta-redirect"
     },
@@ -180,7 +440,9 @@
       "title": "Waarom is mijn domein gelockt?",
       "categories": [
         "domeinnamen",
-        "hosting"
+        "hosting",
+        "domein-verhuizen",
+        "hosting-overige"
       ],
       "topic": "domain-lock"
     },
@@ -188,7 +450,8 @@
       "slug": "wat-is-een-trustee",
       "title": "Wat is een trustee?",
       "categories": [
-        "domeinnamen"
+        "domeinnamen",
+        "domein-registratie"
       ],
       "topic": "trustee"
     },
@@ -198,7 +461,10 @@
       "categories": [
         "domeinnamen",
         "e-mail",
-        "directadmin"
+        "directadmin",
+        "dns-records",
+        "directadmin-overige",
+        "e-mail-overige"
       ],
       "topic": "dkim"
     },
@@ -208,7 +474,10 @@
       "categories": [
         "domeinnamen",
         "hosting",
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "crm-klantenpanel-overige",
+        "domeinnamen-overige",
+        "hosting-overige"
       ],
       "topic": "cancel"
     },
@@ -217,7 +486,9 @@
       "title": "Domein forward / redirect naar een andere URL",
       "categories": [
         "domeinnamen",
-        "directadmin"
+        "directadmin",
+        "directadmin-overige",
+        "domeinnamen-overige"
       ],
       "topic": "domain-forward"
     },
@@ -226,7 +497,8 @@
       "title": "Hoe koppel ik een domein aan wordpress.com?",
       "categories": [
         "domeinnamen",
-        "bloggen"
+        "bloggen",
+        "domeinnamen-overige"
       ],
       "topic": "wpcom-domain"
     },
@@ -235,7 +507,9 @@
       "title": "Wat is een autorisatiecode?",
       "categories": [
         "domeinnamen",
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "domein-verhuizen",
+        "crm-klantenpanel-overige"
       ],
       "topic": "auth-code"
     },
@@ -244,7 +518,9 @@
       "title": "Waar kan ik DNS records beheren?",
       "categories": [
         "domeinnamen",
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "dns-records",
+        "crm-klantenpanel-overige"
       ],
       "topic": "dns-manage"
     },
@@ -253,7 +529,8 @@
       "title": "Hoe koppel ik een domein aan Blogger?",
       "categories": [
         "domeinnamen",
-        "bloggen"
+        "bloggen",
+        "domeinnamen-overige"
       ],
       "topic": "blogger-domain"
     },
@@ -262,7 +539,9 @@
       "title": "Beheren WHOIS gegevens domeinnaam",
       "categories": [
         "domeinnamen",
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "domein-registratie",
+        "crm-klantenpanel-overige"
       ],
       "topic": "whois"
     },
@@ -270,7 +549,8 @@
       "slug": "hoe-lang-duurt-het-voor-mijn-geregistreerde-domein-actief-is",
       "title": "Hoe lang duurt het voor mijn geregistreerde domein actief is?",
       "categories": [
-        "domeinnamen"
+        "domeinnamen",
+        "domein-registratie"
       ],
       "topic": "domain-propagation"
     },
@@ -280,7 +560,10 @@
       "categories": [
         "domeinnamen",
         "hosting",
-        "directadmin"
+        "directadmin",
+        "directadmin-overige",
+        "domeinnamen-overige",
+        "hosting-overige"
       ],
       "topic": "add-domain-da"
     },
@@ -290,7 +573,9 @@
       "categories": [
         "bloggen",
         "hosting",
-        "wordpress"
+        "wordpress",
+        "wordpress-onderhoud",
+        "hosting-overige"
       ],
       "topic": "wp-down-update"
     },
@@ -299,7 +584,8 @@
       "title": "Ik wil overstappen van wordpress.com naar wordpress.org?",
       "categories": [
         "bloggen",
-        "wordpress"
+        "wordpress",
+        "wordpress-installatie"
       ],
       "topic": "wpcom-to-org"
     },
@@ -308,7 +594,8 @@
       "title": "Mijn comments worden als spam gezien",
       "categories": [
         "bloggen",
-        "wordpress"
+        "wordpress",
+        "wordpress-overige"
       ],
       "topic": "wp-comments-spam"
     },
@@ -317,7 +604,8 @@
       "title": "E-mailadres op eigen domein bij wordpress.com",
       "categories": [
         "bloggen",
-        "e-mail"
+        "e-mail",
+        "e-mail-overige"
       ],
       "topic": "wpcom-email"
     },
@@ -326,7 +614,8 @@
       "title": "Overstappen van Weebly naar WordPress",
       "categories": [
         "bloggen",
-        "wordpress"
+        "wordpress",
+        "wordpress-overige"
       ],
       "topic": "weebly-to-wp"
     },
@@ -336,7 +625,9 @@
       "categories": [
         "bloggen",
         "directadmin",
-        "wordpress"
+        "wordpress",
+        "wordpress-installatie",
+        "directadmin-wordpress"
       ],
       "topic": "wp-install"
     },
@@ -346,7 +637,9 @@
       "categories": [
         "bloggen",
         "directadmin",
-        "wordpress"
+        "wordpress",
+        "directadmin-wordpress",
+        "wordpress-overige"
       ],
       "topic": "wp-critical"
     },
@@ -363,7 +656,9 @@
       "title": "Verschillen tussen Roundcube en Webmail Pro",
       "categories": [
         "hosting",
-        "e-mail"
+        "e-mail",
+        "webmail",
+        "hosting-overige"
       ],
       "topic": "webmail-compare"
     },
@@ -371,7 +666,8 @@
       "slug": "onbeperkte-opslag-en-dataverkeer",
       "title": "Onbeperkte opslag en dataverkeer?",
       "categories": [
-        "hosting"
+        "hosting",
+        "opslag-en-verkeer"
       ],
       "topic": "unlimited"
     },
@@ -380,7 +676,9 @@
       "title": "Wat zijn inodes en wat is mijn inode limiet?",
       "categories": [
         "hosting",
-        "directadmin"
+        "directadmin",
+        "opslag-en-verkeer",
+        "directadmin-overige"
       ],
       "topic": "inodes"
     },
@@ -389,7 +687,9 @@
       "title": "Persistent object cache in WordPress",
       "categories": [
         "hosting",
-        "wordpress"
+        "wordpress",
+        "hosting-overige",
+        "wordpress-overige"
       ],
       "topic": "object-cache"
     },
@@ -398,7 +698,9 @@
       "title": "Heb ik SSH toegang op mijn hosting?",
       "categories": [
         "hosting",
-        "beveiliging"
+        "beveiliging",
+        "beveiliging-overige",
+        "hosting-overige"
       ],
       "topic": "ssh"
     },
@@ -407,7 +709,9 @@
       "title": "Geen vermindering schijfruimte DirectAdmin na verwijderen bestanden?",
       "categories": [
         "hosting",
-        "directadmin"
+        "directadmin",
+        "opslag-en-verkeer",
+        "directadmin-overige"
       ],
       "topic": "disk-usage-da"
     },
@@ -416,7 +720,9 @@
       "title": "Kan mijn accountnaam / login van de hosting worden gewijzigd?",
       "categories": [
         "hosting",
-        "directadmin"
+        "directadmin",
+        "directadmin-overige",
+        "hosting-overige"
       ],
       "topic": "rename-account"
     },
@@ -424,7 +730,8 @@
       "slug": "hostingpakket-verkleinen-of-vergroten",
       "title": "Hostingpakket verkleinen of vergroten",
       "categories": [
-        "hosting"
+        "hosting",
+        "hosting-overige"
       ],
       "topic": "package-resize"
     },
@@ -433,7 +740,9 @@
       "title": "Wat is bandbreedte of dataverkeer?",
       "categories": [
         "hosting",
-        "directadmin"
+        "directadmin",
+        "opslag-en-verkeer",
+        "directadmin-overige"
       ],
       "topic": "bandwidth"
     },
@@ -443,7 +752,10 @@
       "categories": [
         "hosting",
         "e-mail",
-        "directadmin"
+        "directadmin",
+        "mailbox-beheer",
+        "opslag-en-verkeer",
+        "directadmin-e-mail"
       ],
       "topic": "quota-full"
     },
@@ -452,7 +764,9 @@
       "title": "User xxxx has used up –% of their bandwidth and –% of his/her allocated disk space",
       "categories": [
         "hosting",
-        "directadmin"
+        "directadmin",
+        "directadmin-overige",
+        "hosting-overige"
       ],
       "topic": "usage-warning"
     },
@@ -462,7 +776,10 @@
       "categories": [
         "hosting",
         "e-mail",
-        "directadmin"
+        "directadmin",
+        "directadmin-e-mail",
+        "e-mail-overige",
+        "hosting-overige"
       ],
       "topic": "troubleshoot"
     },
@@ -471,7 +788,9 @@
       "title": "Website of e-mail verhuizen? Regelen wij voor je!",
       "categories": [
         "hosting",
-        "e-mail"
+        "e-mail",
+        "e-mail-overige",
+        "hosting-overige"
       ],
       "topic": "migration"
     },
@@ -480,7 +799,9 @@
       "title": "robots.txt – waar is het voor en hoe maak je die?",
       "categories": [
         "hosting",
-        "wordpress"
+        "wordpress",
+        "hosting-overige",
+        "wordpress-overige"
       ],
       "topic": "robots-txt"
     },
@@ -489,7 +810,9 @@
       "title": "Wat verbruikt opslag in mijn hostingpakket?",
       "categories": [
         "hosting",
-        "directadmin"
+        "directadmin",
+        "opslag-en-verkeer",
+        "directadmin-overige"
       ],
       "topic": "storage-usage"
     },
@@ -498,7 +821,9 @@
       "title": "Wat is Installatron?",
       "categories": [
         "hosting",
-        "directadmin"
+        "directadmin",
+        "php-en-scripts",
+        "directadmin-wordpress"
       ],
       "topic": "installatron"
     },
@@ -506,7 +831,8 @@
       "slug": "ontvangen-mappenlijst-is-mislukt-filezilla",
       "title": "Ontvangen van mappenlijst is mislukt in FileZilla",
       "categories": [
-        "hosting"
+        "hosting",
+        "ftp-en-bestanden"
       ],
       "topic": "filezilla-list"
     },
@@ -515,7 +841,9 @@
       "title": "Hoge bandbreedte door bezoeken van bots, crawlers en spiders",
       "categories": [
         "hosting",
-        "beveiliging"
+        "beveiliging",
+        "opslag-en-verkeer",
+        "beveiliging-overige"
       ],
       "topic": "bots-bandwidth"
     },
@@ -524,7 +852,9 @@
       "title": "Hoeveel opslag gebruikt je WordPress website?",
       "categories": [
         "hosting",
-        "wordpress"
+        "wordpress",
+        "opslag-en-verkeer",
+        "wordpress-overige"
       ],
       "topic": "wp-storage"
     },
@@ -532,7 +862,8 @@
       "slug": "bestanden-uploaden-wijzigen-of-verwijderen-met-ftp-filezilla",
       "title": "Bestanden uploaden, wijzigen of verwijderen met FTP / FileZilla",
       "categories": [
-        "hosting"
+        "hosting",
+        "ftp-en-bestanden"
       ],
       "topic": "ftp-filezilla"
     },
@@ -541,7 +872,9 @@
       "title": "PHP versie wijzigen voor domein",
       "categories": [
         "hosting",
-        "directadmin"
+        "directadmin",
+        "php-en-scripts",
+        "directadmin-overige"
       ],
       "topic": "php-version"
     },
@@ -550,7 +883,9 @@
       "title": "Voorkomen dat je hostingpakket vol raakt",
       "categories": [
         "hosting",
-        "directadmin"
+        "directadmin",
+        "opslag-en-verkeer",
+        "directadmin-overige"
       ],
       "topic": "prevent-full"
     },
@@ -560,7 +895,10 @@
       "categories": [
         "hosting",
         "directadmin",
-        "beveiliging"
+        "beveiliging",
+        "ssl-certificaten",
+        "directadmin-overige",
+        "hosting-overige"
       ],
       "topic": "letsencrypt-da"
     },
@@ -568,7 +906,8 @@
       "slug": "microsoft-blokkeert-legitieme-e-mails",
       "title": "Microsoft Blacklist",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-overige"
       ],
       "topic": "microsoft-blacklist"
     },
@@ -576,7 +915,8 @@
       "slug": "hoe-voeg-ik-een-handtekening-to-in-webmail-pro",
       "title": "Hoe voeg ik een handtekening toe in WebMail Pro?",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "webmail"
       ],
       "topic": "signature-webmailpro"
     },
@@ -584,7 +924,8 @@
       "slug": "regels-en-filters-aanmaken-in-webmail-pro",
       "title": "Regels en filters aanmaken in WebMail Pro",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "webmail"
       ],
       "topic": "filters-webmailpro"
     },
@@ -592,7 +933,8 @@
       "slug": "aan-de-slag-met-spamfilter-pro",
       "title": "Aan de slag met Spamfilter Pro",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "spam-en-veiligheid"
       ],
       "topic": "spamfilter-pro"
     },
@@ -600,7 +942,8 @@
       "slug": "e-mail-instellen-op-android",
       "title": "E-mail instellen op Android",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-instellen"
       ],
       "topic": "email-android"
     },
@@ -608,7 +951,8 @@
       "slug": "e-mail-instellen-in-outlook-op-mac",
       "title": "E-mail instellen in Outlook op Mac",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-instellen"
       ],
       "topic": "email-outlook-mac"
     },
@@ -616,7 +960,8 @@
       "slug": "e-mail-instellen-op-iphone",
       "title": "E-mail instellen op iPhone",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-instellen"
       ],
       "topic": "email-iphone"
     },
@@ -625,7 +970,9 @@
       "title": "Out of office reply instellen",
       "categories": [
         "e-mail",
-        "directadmin"
+        "directadmin",
+        "mailbox-beheer",
+        "directadmin-overige"
       ],
       "topic": "ooo"
     },
@@ -633,7 +980,8 @@
       "slug": "waarom-worden-mails-niet-verstuurd-vanuit-de-website",
       "title": "Waarom worden mails niet verstuurd vanuit de website?",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-overige"
       ],
       "topic": "web-mail-send"
     },
@@ -641,7 +989,8 @@
       "slug": "kan-ik-een-mailing-sturen-naar-een-groot-adressenbestand",
       "title": "Kan ik een mailing sturen naar een groot adressenbestand?",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-overige"
       ],
       "topic": "bulk-mail"
     },
@@ -649,7 +998,8 @@
       "slug": "gmail-melding-the-certificate-doesnt-match-the-host",
       "title": "Gmail melding: the certificate doesn’t match the host",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-overige"
       ],
       "topic": "gmail-cert"
     },
@@ -657,7 +1007,8 @@
       "slug": "instellen-e-mail-apple-mac-mail",
       "title": "Instellen e-mail in Apple Mac Mail",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-instellen"
       ],
       "topic": "email-macmail"
     },
@@ -666,7 +1017,9 @@
       "title": "Afzenders en trefwoorden toevoegen aan spamfilter",
       "categories": [
         "e-mail",
-        "directadmin"
+        "directadmin",
+        "spam-en-veiligheid",
+        "directadmin-e-mail"
       ],
       "topic": "spam-keywords"
     },
@@ -675,7 +1028,9 @@
       "title": "Catch-all e-mailadres aanmaken in DirectAdmin",
       "categories": [
         "e-mail",
-        "directadmin"
+        "directadmin",
+        "mailbox-beheer",
+        "directadmin-e-mail"
       ],
       "topic": "catchall"
     },
@@ -684,7 +1039,9 @@
       "title": "Nieuwe maatregelen tegen backscatter spam",
       "categories": [
         "e-mail",
-        "beveiliging"
+        "beveiliging",
+        "spam-en-veiligheid",
+        "beveiliging-overige"
       ],
       "topic": "backscatter"
     },
@@ -693,7 +1050,9 @@
       "title": "Spamfilter instellen in DirectAdmin",
       "categories": [
         "e-mail",
-        "directadmin"
+        "directadmin",
+        "spam-en-veiligheid",
+        "directadmin-e-mail"
       ],
       "topic": "spamassassin-setup"
     },
@@ -701,7 +1060,8 @@
       "slug": "ik-kan-e-mail-ontvangen-maar-niet-verzenden",
       "title": "Ik kan e-mail ontvangen maar niet verzenden?",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-overige"
       ],
       "topic": "send-fail"
     },
@@ -710,7 +1070,9 @@
       "title": "Aanpassen E-mail quota",
       "categories": [
         "e-mail",
-        "directadmin"
+        "directadmin",
+        "mailbox-beheer",
+        "directadmin-e-mail"
       ],
       "topic": "email-quota"
     },
@@ -718,7 +1080,8 @@
       "slug": "instellen-e-mail-outlook",
       "title": "E-mail instellen in Outlook voor Windows",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-instellen"
       ],
       "topic": "email-outlook-win"
     },
@@ -727,7 +1090,9 @@
       "title": "Automatisch antwoord e-mail maken in DirectAdmin",
       "categories": [
         "e-mail",
-        "directadmin"
+        "directadmin",
+        "mailbox-beheer",
+        "directadmin-e-mail"
       ],
       "topic": "autoresponder"
     },
@@ -736,7 +1101,9 @@
       "title": "Hoe gebruik je webmail vanuit DirectAdmin",
       "categories": [
         "e-mail",
-        "directadmin"
+        "directadmin",
+        "webmail",
+        "directadmin-e-mail"
       ],
       "topic": "webmail-da"
     },
@@ -745,7 +1112,9 @@
       "title": "Spam vanaf je eigen e-mailadres?",
       "categories": [
         "e-mail",
-        "beveiliging"
+        "beveiliging",
+        "spam-en-veiligheid",
+        "beveiliging-overige"
       ],
       "topic": "spoofed-spam"
     },
@@ -754,7 +1123,9 @@
       "title": "E-mail doorsturen naar een ander mailadres",
       "categories": [
         "e-mail",
-        "directadmin"
+        "directadmin",
+        "mailbox-beheer",
+        "directadmin-e-mail"
       ],
       "topic": "email-forward"
     },
@@ -762,7 +1133,8 @@
       "slug": "hoe-kom-ik-bij-mijn-webmail",
       "title": "Hoe kom ik bij mijn webmail?",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "webmail"
       ],
       "topic": "webmail-access"
     },
@@ -770,7 +1142,8 @@
       "slug": "mijn-e-mail-is-weg-of-webmail-is-niet-bereikbaar",
       "title": "Mijn e-mail is weg of webmail is niet bereikbaar?",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "webmail"
       ],
       "topic": "email-missing"
     },
@@ -778,7 +1151,8 @@
       "slug": "foutmelding-berichten-verwijderen-roundcube",
       "title": "Foutmelding bij berichten verwijderen in Roundcube",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "webmail"
       ],
       "topic": "roundcube-delete"
     },
@@ -786,7 +1160,8 @@
       "slug": "handtekening-instellen-in-roundcube-webmail",
       "title": "Handtekening instellen in Roundcube webmail",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "webmail"
       ],
       "topic": "signature-roundcube"
     },
@@ -794,7 +1169,8 @@
       "slug": "verschil-tussen-pop-en-imap",
       "title": "Verschil tussen POP en IMAP?",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-instellen"
       ],
       "topic": "pop-imap"
     },
@@ -802,7 +1178,8 @@
       "slug": "e-mail-beheren-en-versturen-met-gmail",
       "title": "E-mail beheren en versturen met Gmail",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-overige"
       ],
       "topic": "gmail-smtp"
     },
@@ -811,7 +1188,9 @@
       "title": "Wachtwoord van e-mailadres wijzigen",
       "categories": [
         "e-mail",
-        "directadmin"
+        "directadmin",
+        "mailbox-beheer",
+        "directadmin-e-mail"
       ],
       "topic": "email-password"
     },
@@ -820,7 +1199,9 @@
       "title": "Nieuw e-mailadres aanmaken in DirectAdmin",
       "categories": [
         "e-mail",
-        "directadmin"
+        "directadmin",
+        "mailbox-beheer",
+        "directadmin-e-mail"
       ],
       "topic": "create-mailbox"
     },
@@ -828,7 +1209,8 @@
       "slug": "wat-zijn-mijn-e-mail-instellingen",
       "title": "Wat zijn mijn e-mail instellingen?",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-overige"
       ],
       "topic": "email-settings"
     },
@@ -836,7 +1218,8 @@
       "slug": "serverfout-550-bij-versturen-van-e-mail",
       "title": "Serverfout 550 bij versturen van e-mail",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-overige"
       ],
       "topic": "error-550"
     },
@@ -845,7 +1228,9 @@
       "title": "Voorkom spam – versleutel e-mailadres op website",
       "categories": [
         "e-mail",
-        "beveiliging"
+        "beveiliging",
+        "spam-en-veiligheid",
+        "beveiliging-overige"
       ],
       "topic": "obfuscate-email"
     },
@@ -853,7 +1238,8 @@
       "slug": "e-mail-instellen-op-ipad",
       "title": "E-mail instellen op iPad",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-instellen"
       ],
       "topic": "email-ipad"
     },
@@ -862,7 +1248,9 @@
       "title": "IP-adres geblokkeerd?",
       "categories": [
         "e-mail",
-        "beveiliging"
+        "beveiliging",
+        "beveiliging-overige",
+        "e-mail-overige"
       ],
       "topic": "ip-blocked"
     },
@@ -871,7 +1259,9 @@
       "title": "Ontvang je veel spam? Gebruik SpamAssassin!",
       "categories": [
         "e-mail",
-        "directadmin"
+        "directadmin",
+        "spam-en-veiligheid",
+        "directadmin-e-mail"
       ],
       "topic": "spamassassin"
     },
@@ -879,7 +1269,8 @@
       "slug": "serveridentiteit-niet-gecontroleerd",
       "title": "Serveridentiteit niet gecontroleerd bij e-mail",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-overige"
       ],
       "topic": "server-identity"
     },
@@ -888,7 +1279,9 @@
       "title": "2FA instellen in DirectAdmin",
       "categories": [
         "directadmin",
-        "beveiliging"
+        "beveiliging",
+        "beveiliging-overige",
+        "directadmin-overige"
       ],
       "topic": "2fa-da"
     },
@@ -896,7 +1289,8 @@
       "slug": "wat-is-jetbackup-en-waar-gebruik-ik-het-voor",
       "title": "Wat is JetBackup en waar gebruik ik het voor?",
       "categories": [
-        "directadmin"
+        "directadmin",
+        "directadmin-overige"
       ],
       "topic": "jetbackup"
     },
@@ -905,7 +1299,9 @@
       "title": "WordPress website kopiëren naar ander domein",
       "categories": [
         "directadmin",
-        "wordpress"
+        "wordpress",
+        "directadmin-wordpress",
+        "wordpress-overige"
       ],
       "topic": "wp-clone"
     },
@@ -914,7 +1310,9 @@
       "title": "Afschermen – beveiligen bestanden via htaccess",
       "categories": [
         "directadmin",
-        "beveiliging"
+        "beveiliging",
+        "beveiliging-overige",
+        "directadmin-overige"
       ],
       "topic": "htaccess"
     },
@@ -923,7 +1321,9 @@
       "title": "WordPress heeft gedetecteerd dat je site een onveilige versie van PHP gebruikt",
       "categories": [
         "directadmin",
-        "wordpress"
+        "wordpress",
+        "directadmin-wordpress",
+        "wordpress-overige"
       ],
       "topic": "wp-php-unsafe"
     },
@@ -932,7 +1332,9 @@
       "title": "Mappen beschermen met een wachtwoord in DirectAdmin",
       "categories": [
         "directadmin",
-        "beveiliging"
+        "beveiliging",
+        "beveiliging-overige",
+        "directadmin-overige"
       ],
       "topic": "dir-password"
     },
@@ -940,7 +1342,8 @@
       "slug": "waar-vind-ik-de-logingegevens-van-directadmin",
       "title": "Waar vind ik de logingegevens van DirectAdmin?",
       "categories": [
-        "directadmin"
+        "directadmin",
+        "directadmin-overige"
       ],
       "topic": "da-login"
     },
@@ -948,7 +1351,8 @@
       "slug": "reseller-account-directadmin",
       "title": "Reseller account DirectAdmin",
       "categories": [
-        "directadmin"
+        "directadmin",
+        "directadmin-overige"
       ],
       "topic": "reseller"
     },
@@ -956,7 +1360,8 @@
       "slug": "database-aanmaken",
       "title": "Een MySQL database aanmaken in DirectAdmin",
       "categories": [
-        "directadmin"
+        "directadmin",
+        "directadmin-overige"
       ],
       "topic": "mysql"
     },
@@ -964,7 +1369,8 @@
       "slug": "domein-verwijzing-aanmaken-directadmin",
       "title": "Domein verwijzing aanmaken in DirectAdmin",
       "categories": [
-        "directadmin"
+        "directadmin",
+        "directadmin-overige"
       ],
       "topic": "domain-pointer"
     },
@@ -972,7 +1378,8 @@
       "slug": "een-extra-ftp-adres-aanmaken",
       "title": "Een extra FTP adres aanmaken",
       "categories": [
-        "directadmin"
+        "directadmin",
+        "directadmin-overige"
       ],
       "topic": "extra-ftp"
     },
@@ -981,7 +1388,9 @@
       "title": "WordPress multisite in DirectAdmin",
       "categories": [
         "directadmin",
-        "wordpress"
+        "wordpress",
+        "directadmin-wordpress",
+        "wordpress-overige"
       ],
       "topic": "wp-multisite"
     },
@@ -989,7 +1398,8 @@
       "slug": "wachtwoord-wijzigen-directadmin",
       "title": "Wachtwoord wijzigen in DirectAdmin",
       "categories": [
-        "directadmin"
+        "directadmin",
+        "directadmin-overige"
       ],
       "topic": "da-password"
     },
@@ -997,7 +1407,8 @@
       "slug": "cronjob-instellen-directadmin",
       "title": "Cronjob instellen in DirectAdmin",
       "categories": [
-        "directadmin"
+        "directadmin",
+        "directadmin-overige"
       ],
       "topic": "cron"
     },
@@ -1006,7 +1417,9 @@
       "title": "Website weg uit Installatron? Voeg je site toe!",
       "categories": [
         "directadmin",
-        "wordpress"
+        "wordpress",
+        "wordpress-installatie",
+        "directadmin-wordpress"
       ],
       "topic": "installatron-import"
     },
@@ -1015,7 +1428,9 @@
       "title": "WordPress website verwijderen in Installatron",
       "categories": [
         "directadmin",
-        "wordpress"
+        "wordpress",
+        "wordpress-installatie",
+        "directadmin-wordpress"
       ],
       "topic": "installatron-delete"
     },
@@ -1023,7 +1438,8 @@
       "slug": "uitleg-directadmin-filemanager",
       "title": "Uitleg over de DirectAdmin Filemanager",
       "categories": [
-        "directadmin"
+        "directadmin",
+        "directadmin-overige"
       ],
       "topic": "filemanager"
     },
@@ -1031,7 +1447,8 @@
       "slug": "subdomein-aanmaken-directadmin",
       "title": "Subdomein aanmaken in DirectAdmin",
       "categories": [
-        "directadmin"
+        "directadmin",
+        "directadmin-overige"
       ],
       "topic": "subdomain"
     },
@@ -1040,7 +1457,9 @@
       "title": "Ik kan niet meer inloggen?",
       "categories": [
         "directadmin",
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "account-en-inloggen",
+        "directadmin-overige"
       ],
       "topic": "cant-login"
     },
@@ -1049,7 +1468,9 @@
       "title": "WordPress updaten in Installatron",
       "categories": [
         "directadmin",
-        "wordpress"
+        "wordpress",
+        "wordpress-installatie",
+        "directadmin-wordpress"
       ],
       "topic": "installatron-update"
     },
@@ -1058,7 +1479,9 @@
       "title": "WordPress backup maken of verwijderen in Installatron",
       "categories": [
         "directadmin",
-        "wordpress"
+        "wordpress",
+        "wordpress-installatie",
+        "directadmin-wordpress"
       ],
       "topic": "installatron-backup"
     },
@@ -1066,7 +1489,8 @@
       "slug": "wat-is-directadmin",
       "title": "Uitleg over DirectAdmin controlpanel",
       "categories": [
-        "directadmin"
+        "directadmin",
+        "directadmin-overige"
       ],
       "topic": "what-is-da"
     },
@@ -1074,7 +1498,8 @@
       "slug": "google-verificatie",
       "title": "Google verificatie",
       "categories": [
-        "directadmin"
+        "directadmin",
+        "directadmin-overige"
       ],
       "topic": "google-verify"
     },
@@ -1082,7 +1507,8 @@
       "slug": "backup-maken-en-terugzetten-directadmin",
       "title": "Backup maken en terugzetten in DirectAdmin",
       "categories": [
-        "directadmin"
+        "directadmin",
+        "directadmin-overige"
       ],
       "topic": "backup-da"
     },
@@ -1092,7 +1518,10 @@
       "categories": [
         "directadmin",
         "beveiliging",
-        "wordpress"
+        "wordpress",
+        "directadmin-wordpress",
+        "beveiliging-overige",
+        "wordpress-overige"
       ],
       "topic": "wp-https"
     },
@@ -1100,7 +1529,8 @@
       "slug": "lets-encrypt-notificaties-vervallen",
       "title": "Lets Encrypt notificaties vervallen",
       "categories": [
-        "beveiliging"
+        "beveiliging",
+        "ssl-certificaten"
       ],
       "topic": "le-expire"
     },
@@ -1108,7 +1538,8 @@
       "slug": "e-mail-beveiligen-met-pgp-encryptie",
       "title": "E-mail beveiligen met PGP encryptie",
       "categories": [
-        "beveiliging"
+        "beveiliging",
+        "beveiliging-overige"
       ],
       "topic": "pgp"
     },
@@ -1117,7 +1548,9 @@
       "title": "Wordfence en LiteSpeed",
       "categories": [
         "beveiliging",
-        "wordpress"
+        "wordpress",
+        "wordpress-beveiliging",
+        "beveiliging-overige"
       ],
       "topic": "wordfence-litespeed"
     },
@@ -1126,7 +1559,8 @@
       "title": "Hoe installeer ik een gratis Let’s Encrypt SSL-certificaat in Plesk?",
       "categories": [
         "beveiliging",
-        "plesk"
+        "plesk",
+        "ssl-certificaten"
       ],
       "topic": "letsencrypt-plesk"
     },
@@ -1135,7 +1569,9 @@
       "title": "Akismet – WordPress plugin tegen spam",
       "categories": [
         "beveiliging",
-        "wordpress"
+        "wordpress",
+        "beveiliging-overige",
+        "wordpress-overige"
       ],
       "topic": "akismet"
     },
@@ -1144,7 +1580,9 @@
       "title": "Activeren 2FA klantenpanel",
       "categories": [
         "beveiliging",
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "account-en-inloggen",
+        "beveiliging-overige"
       ],
       "topic": "2fa-crm"
     },
@@ -1152,7 +1590,8 @@
       "slug": "wat-is-ssl-en-waarom-heb-je-het-nodig",
       "title": "Wat is SSL en waarom heb je het nodig?",
       "categories": [
-        "beveiliging"
+        "beveiliging",
+        "ssl-certificaten"
       ],
       "topic": "what-is-ssl"
     },
@@ -1160,7 +1599,8 @@
       "slug": "jullie-servers-voorkomen-dat-mijn-site-gehackt-wordt",
       "title": "Jullie servers voorkomen dat mijn site gehackt wordt?",
       "categories": [
-        "beveiliging"
+        "beveiliging",
+        "firewall-en-hacks"
       ],
       "topic": "server-security"
     },
@@ -1169,7 +1609,9 @@
       "title": "Waarom WordPress onderhoud belangrijk is",
       "categories": [
         "beveiliging",
-        "wordpress"
+        "wordpress",
+        "wordpress-onderhoud",
+        "beveiliging-overige"
       ],
       "topic": "wp-maintenance"
     },
@@ -1178,7 +1620,9 @@
       "title": "Wordfence gecrasht – verwijderen – opnieuw installeren",
       "categories": [
         "beveiliging",
-        "wordpress"
+        "wordpress",
+        "wordpress-beveiliging",
+        "beveiliging-overige"
       ],
       "topic": "wordfence-reinstall"
     },
@@ -1187,7 +1631,9 @@
       "title": "Mijn website is gehackt, kunnen jullie dat oplossen?",
       "categories": [
         "beveiliging",
-        "wordpress"
+        "wordpress",
+        "wordpress-beveiliging",
+        "firewall-en-hacks"
       ],
       "topic": "hacked-site"
     },
@@ -1196,7 +1642,9 @@
       "title": "De Wordfence firewall instellen",
       "categories": [
         "beveiliging",
-        "wordpress"
+        "wordpress",
+        "wordpress-beveiliging",
+        "firewall-en-hacks"
       ],
       "topic": "wordfence-firewall"
     },
@@ -1205,7 +1653,9 @@
       "title": "Backup plugin voor WordPress: BackWPup",
       "categories": [
         "beveiliging",
-        "wordpress"
+        "wordpress",
+        "wordpress-onderhoud",
+        "beveiliging-overige"
       ],
       "topic": "backwpup"
     },
@@ -1214,7 +1664,9 @@
       "title": "Website beschermen tegen hacks",
       "categories": [
         "beveiliging",
-        "wordpress"
+        "wordpress",
+        "wordpress-beveiliging",
+        "firewall-en-hacks"
       ],
       "topic": "protect-hacks"
     },
@@ -1223,7 +1675,9 @@
       "title": "Wat is xmlrpc.php en hoe zet je XML-RPC uit?",
       "categories": [
         "beveiliging",
-        "wordpress"
+        "wordpress",
+        "wordpress-beveiliging",
+        "beveiliging-overige"
       ],
       "topic": "xmlrpc"
     },
@@ -1231,7 +1685,8 @@
       "slug": "nieuwe-dns-service-voor-meer-snelheid-en-privacy",
       "title": "Nieuwe DNS-service voor meer snelheid en privacy",
       "categories": [
-        "beveiliging"
+        "beveiliging",
+        "beveiliging-overige"
       ],
       "topic": "dns-privacy"
     },
@@ -1239,7 +1694,8 @@
       "slug": "verschil-lets-encrypt-en-ssl-certificaten",
       "title": "Verschil Let’s Encrypt en betaalde SSL certificaten?",
       "categories": [
-        "beveiliging"
+        "beveiliging",
+        "ssl-certificaten"
       ],
       "topic": "ssl-compare"
     },
@@ -1248,7 +1704,9 @@
       "title": "WordPress beveiligen – Wordfence handleiding",
       "categories": [
         "beveiliging",
-        "wordpress"
+        "wordpress",
+        "wordpress-beveiliging",
+        "beveiliging-overige"
       ],
       "topic": "wordfence-guide"
     },
@@ -1256,7 +1714,8 @@
       "slug": "logingegevens-klantenpanel-kwijt",
       "title": "Logingegevens van CRM of Klantenpanel kwijt?",
       "categories": [
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "crm-klantenpanel-overige"
       ],
       "topic": "lost-login"
     },
@@ -1264,7 +1723,8 @@
       "slug": "meest-gestelde-vragen-over-het-klantenpanel",
       "title": "Meest gestelde vragen over het klantenpanel",
       "categories": [
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "crm-klantenpanel-overige"
       ],
       "topic": "crm-faq"
     },
@@ -1272,7 +1732,8 @@
       "slug": "contactformulier-werkt-niet-meer",
       "title": "Contactformulier werkt niet meer?",
       "categories": [
-        "wordpress"
+        "wordpress",
+        "wordpress-overige"
       ],
       "topic": "contact-form"
     },
@@ -1280,7 +1741,8 @@
       "slug": "grote-bestanden-in-wordpress-media-bibliotheek",
       "title": "Grote bestanden in WordPress Media bibliotheek",
       "categories": [
-        "wordpress"
+        "wordpress",
+        "wordpress-overige"
       ],
       "topic": "wp-media-large"
     },
@@ -1288,7 +1750,8 @@
       "slug": "wordpress-onderhouds-en-beveligingsupdates",
       "title": "WordPress onderhouds- en beveiligingsupdates",
       "categories": [
-        "wordpress"
+        "wordpress",
+        "wordpress-beveiliging"
       ],
       "topic": "wp-updates"
     },
@@ -1296,7 +1759,8 @@
       "slug": "wordpress-zonder-reclame",
       "title": "WordPress zonder reclame?",
       "categories": [
-        "wordpress"
+        "wordpress",
+        "wordpress-overige"
       ],
       "topic": "wp-no-ads"
     },
@@ -1304,7 +1768,8 @@
       "slug": "wat-heb-je-nodig-voor-een-wordpress-website",
       "title": "Wat heb je nodig voor een WordPress website?",
       "categories": [
-        "wordpress"
+        "wordpress",
+        "wordpress-overige"
       ],
       "topic": "wp-requirements"
     },
@@ -1312,7 +1777,8 @@
       "slug": "wordpress-updaten-wordpress-dashboard",
       "title": "WordPress updaten in WordPress dashboard",
       "categories": [
-        "wordpress"
+        "wordpress",
+        "wordpress-onderhoud"
       ],
       "topic": "wp-dashboard-update"
     },
@@ -1321,7 +1787,8 @@
       "title": "Virussen – Veilig Online",
       "categories": [
         "veilig-online",
-        "beveiliging"
+        "beveiliging",
+        "beveiliging-overige"
       ],
       "topic": "viruses"
     },
@@ -1338,7 +1805,8 @@
       "title": "Wat zijn de risico’s van een openbaar Wifi-Netwerk? – Veilig Online",
       "categories": [
         "veilig-online",
-        "beveiliging"
+        "beveiliging",
+        "beveiliging-overige"
       ],
       "topic": "public-wifi"
     },
@@ -1347,7 +1815,8 @@
       "title": "Hoe herken ik een phishing e-mail? – Veilig Online",
       "categories": [
         "veilig-online",
-        "beveiliging"
+        "beveiliging",
+        "beveiliging-overige"
       ],
       "topic": "phishing"
     },
@@ -1356,7 +1825,8 @@
       "title": "Social Engineering – Veilig Online",
       "categories": [
         "veilig-online",
-        "beveiliging"
+        "beveiliging",
+        "beveiliging-overige"
       ],
       "topic": "social-engineering"
     },
@@ -1372,7 +1842,8 @@
       "slug": "mijn-site-doet-het-niet-meer-hebben-jullie-een-backup",
       "title": "Mijn site doet het niet meer. Hebben jullie een backup?",
       "categories": [
-        "support"
+        "support",
+        "support-overige"
       ],
       "topic": "support-backup"
     },
@@ -1380,7 +1851,8 @@
       "slug": "hoe-gebruik-ik-teamviewer-voor-mac",
       "title": "Hoe gebruik ik TeamViewer voor Mac",
       "categories": [
-        "support"
+        "support",
+        "support-overige"
       ],
       "topic": "teamviewer-mac"
     },
@@ -1388,7 +1860,8 @@
       "slug": "hoe-gebruik-ik-teamviewer-voor-windows",
       "title": "Hoe gebruik ik TeamViewer voor Windows",
       "categories": [
-        "support"
+        "support",
+        "support-overige"
       ],
       "topic": "teamviewer-win"
     },
@@ -1396,7 +1869,8 @@
       "slug": "digitale-assistent-triplezero-it-hosting",
       "title": "Even voorstellen: de digitale assistent van TripleZero iT",
       "categories": [
-        "support"
+        "support",
+        "support-overige"
       ],
       "topic": "digital-assistant"
     },
@@ -1444,7 +1918,9 @@
       "slug": "lets-encrypt-ssl-installeren-in-cyberpanel",
       "title": "Let’s Encrypt SSL installeren in CyberPanel",
       "categories": [
-        "cyberpanel"
+        "cyberpanel",
+        "ssl-certificaten",
+        "beveiliging"
       ],
       "topic": "cp-ssl"
     },
@@ -1572,7 +2048,8 @@
       "slug": "hoe-kies-ik-de-juiste-domeinnaam-voor-mijn-bedrijf-of-project",
       "title": "Hoe kies ik de juiste domeinnaam voor mijn bedrijf of project?",
       "categories": [
-        "domeinnamen"
+        "domeinnamen",
+        "domeinnamen-overige"
       ],
       "topic": "ext-hoe-kies-ik-de-juiste-domeinnaam-voor-mijn-bedri"
     },
@@ -1580,7 +2057,8 @@
       "slug": "hoe-verleng-ik-mijn-domeinnaam-en-wat-zijn-de-kosten",
       "title": "Hoe verleng ik mijn domeinnaam en wat zijn de kosten?",
       "categories": [
-        "domeinnamen"
+        "domeinnamen",
+        "domeinnamen-overige"
       ],
       "topic": "ext-hoe-verleng-ik-mijn-domeinnaam-en-wat-zijn-de-ko"
     },
@@ -1588,7 +2066,8 @@
       "slug": "hoe-wijzig-ik-de-eigenaar-van-een-domeinnaam",
       "title": "Hoe wijzig ik de eigenaar van een domeinnaam?",
       "categories": [
-        "domeinnamen"
+        "domeinnamen",
+        "domeinnamen-overige"
       ],
       "topic": "ext-hoe-wijzig-ik-de-eigenaar-van-een-domeinnaam"
     },
@@ -1596,7 +2075,8 @@
       "slug": "wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein",
       "title": "Wat is DNSSEC en hoe voeg ik het toe aan mijn domein?",
       "categories": [
-        "domeinnamen"
+        "domeinnamen",
+        "dns-records"
       ],
       "topic": "ext-wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-do"
     },
@@ -1604,7 +2084,8 @@
       "slug": "hoe-verhuis-ik-mijn-domeinnaam-van-een-andere-provider-naar-triplezero-it-hosting",
       "title": "Hoe verhuis ik mijn domeinnaam van een andere provider naar TripleZero iT?",
       "categories": [
-        "domeinnamen"
+        "domeinnamen",
+        "domein-verhuizen"
       ],
       "topic": "ext-hoe-verhuis-ik-mijn-domeinnaam-van-een-andere-pr"
     },
@@ -1612,7 +2093,8 @@
       "slug": "hoe-stel-ik-een-cname-record-in-voor-mijn-domein",
       "title": "Hoe stel ik een CNAME-record in voor mijn domein?",
       "categories": [
-        "domeinnamen"
+        "domeinnamen",
+        "dns-records"
       ],
       "topic": "ext-hoe-stel-ik-een-cname-record-in-voor-mijn-domein"
     },
@@ -1620,7 +2102,8 @@
       "slug": "hoe-stel-ik-een-a-record-in-voor-mijn-domein",
       "title": "Hoe stel ik een A-record in voor mijn domein?",
       "categories": [
-        "domeinnamen"
+        "domeinnamen",
+        "dns-records"
       ],
       "topic": "ext-hoe-stel-ik-een-a-record-in-voor-mijn-domein"
     },
@@ -1628,7 +2111,8 @@
       "slug": "hoe-lang-blijft-mijn-domeinnaam-van-mij-na-het-verlopen",
       "title": "Hoe lang blijft mijn domeinnaam van mij na het verlopen?",
       "categories": [
-        "domeinnamen"
+        "domeinnamen",
+        "domeinnamen-overige"
       ],
       "topic": "ext-hoe-lang-blijft-mijn-domeinnaam-van-mij-na-het-v"
     },
@@ -1636,7 +2120,8 @@
       "slug": "wat-zijn-nameservers-en-hoe-wijzig-ik-ze",
       "title": "Wat zijn nameservers en hoe wijzig ik ze?",
       "categories": [
-        "domeinnamen"
+        "domeinnamen",
+        "domeinnamen-overige"
       ],
       "topic": "ext-wat-zijn-nameservers-en-hoe-wijzig-ik-ze"
     },
@@ -1644,7 +2129,8 @@
       "slug": "hoe-kan-ik-mijn-domeinnaam-beschermen-tegen-kaping",
       "title": "Hoe kan ik mijn domeinnaam beschermen tegen kaping?",
       "categories": [
-        "domeinnamen"
+        "domeinnamen",
+        "domeinnamen-overige"
       ],
       "topic": "ext-hoe-kan-ik-mijn-domeinnaam-beschermen-tegen-kapi"
     },
@@ -1669,7 +2155,8 @@
       "title": "Hoe maak ik een back-up van mijn WordPress website?",
       "categories": [
         "bloggen",
-        "wordpress"
+        "wordpress",
+        "wordpress-overige"
       ],
       "topic": "ext-hoe-maak-ik-een-back-up-van-mijn-wordpress-websi"
     },
@@ -1679,7 +2166,9 @@
       "categories": [
         "bloggen",
         "wordpress",
-        "beveiliging"
+        "beveiliging",
+        "wordpress-beveiliging",
+        "beveiliging-overige"
       ],
       "topic": "ext-hoe-beveilig-ik-mijn-wordpress-website"
     },
@@ -1697,7 +2186,9 @@
       "categories": [
         "bloggen",
         "wordpress",
-        "hosting"
+        "hosting",
+        "hosting-overige",
+        "wordpress-overige"
       ],
       "topic": "ext-hoe-verplaats-ik-mijn-wordpress-website-naar-tri"
     },
@@ -1714,7 +2205,8 @@
       "title": "Hoe voeg ik een webshop toe aan mijn WordPress site? (WooCommerce)",
       "categories": [
         "bloggen",
-        "wordpress"
+        "wordpress",
+        "wordpress-overige"
       ],
       "topic": "ext-hoe-voeg-ik-een-webshop-toe-aan-mijn-wordpress-s"
     },
@@ -1732,7 +2224,9 @@
       "categories": [
         "bloggen",
         "wordpress",
-        "beveiliging"
+        "beveiliging",
+        "wordpress-beveiliging",
+        "firewall-en-hacks"
       ],
       "topic": "ext-hoe-voorkom-ik-dat-mijn-wordpress-website-wordt-"
     },
@@ -1740,7 +2234,8 @@
       "slug": "hoe-kies-ik-het-juiste-hostingpakket",
       "title": "Hoe kies ik het juiste hostingpakket?",
       "categories": [
-        "hosting"
+        "hosting",
+        "hosting-overige"
       ],
       "topic": "ext-hoe-kies-ik-het-juiste-hostingpakket"
     },
@@ -1749,7 +2244,9 @@
       "title": "Wat is DirectAdmin en hoe gebruik ik het?",
       "categories": [
         "hosting",
-        "directadmin"
+        "directadmin",
+        "directadmin-overige",
+        "hosting-overige"
       ],
       "topic": "ext-wat-is-directadmin-en-hoe-gebruik-ik-het"
     },
@@ -1757,7 +2254,8 @@
       "slug": "hoe-maak-ik-een-back-up-van-mijn-hostingaccount",
       "title": "Hoe maak ik een back-up van mijn hostingaccount?",
       "categories": [
-        "hosting"
+        "hosting",
+        "hosting-overige"
       ],
       "topic": "ext-hoe-maak-ik-een-back-up-van-mijn-hostingaccount"
     },
@@ -1766,7 +2264,9 @@
       "title": "Hoe beheer ik mijn databases in DirectAdmin?",
       "categories": [
         "hosting",
-        "directadmin"
+        "directadmin",
+        "directadmin-overige",
+        "hosting-overige"
       ],
       "topic": "ext-hoe-beheer-ik-mijn-databases-in-directadmin"
     },
@@ -1775,7 +2275,9 @@
       "title": "Hoe stel ik cronjobs in via DirectAdmin?",
       "categories": [
         "hosting",
-        "directadmin"
+        "directadmin",
+        "php-en-scripts",
+        "directadmin-overige"
       ],
       "topic": "ext-hoe-stel-ik-cronjobs-in-via-directadmin"
     },
@@ -1784,7 +2286,9 @@
       "title": "Hoe wijzig ik de PHP-instellingen in DirectAdmin?",
       "categories": [
         "hosting",
-        "directadmin"
+        "directadmin",
+        "php-en-scripts",
+        "directadmin-overige"
       ],
       "topic": "ext-hoe-wijzig-ik-de-php-instellingen-in-directadmin"
     },
@@ -1792,7 +2296,8 @@
       "slug": "hoe-verplaats-ik-mijn-website-naar-triplezero-it-hosting",
       "title": "Hoe verplaats ik mijn website naar TripleZero iT?",
       "categories": [
-        "hosting"
+        "hosting",
+        "hosting-overige"
       ],
       "topic": "ext-hoe-verplaats-ik-mijn-website-naar-triplezero-it"
     },
@@ -1800,7 +2305,8 @@
       "slug": "hoe-zorg-ik-voor-een-snelle-laadtijd-van-mijn-website",
       "title": "Hoe zorg ik voor een snelle laadtijd van mijn website?",
       "categories": [
-        "hosting"
+        "hosting",
+        "hosting-overige"
       ],
       "topic": "ext-hoe-zorg-ik-voor-een-snelle-laadtijd-van-mijn-we"
     },
@@ -1808,7 +2314,8 @@
       "slug": "hoe-bescherm-ik-mijn-website-tegen-ddos-aanvallen",
       "title": "Hoe bescherm ik mijn website tegen DDoS-aanvallen?",
       "categories": [
-        "hosting"
+        "hosting",
+        "hosting-overige"
       ],
       "topic": "ext-hoe-bescherm-ik-mijn-website-tegen-ddos-aanvalle"
     },
@@ -1817,7 +2324,9 @@
       "title": "Hoe gebruik ik de File Manager in DirectAdmin?",
       "categories": [
         "hosting",
-        "directadmin"
+        "directadmin",
+        "ftp-en-bestanden",
+        "directadmin-overige"
       ],
       "topic": "ext-hoe-gebruik-ik-de-file-manager-in-directadmin"
     },
@@ -1825,7 +2334,8 @@
       "slug": "hoe-kies-ik-het-juiste-e-mailpakket",
       "title": "Hoe kies ik het juiste e-mailpakket?",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-overige"
       ],
       "topic": "ext-hoe-kies-ik-het-juiste-e-mailpakket"
     },
@@ -1833,7 +2343,8 @@
       "slug": "hoe-stel-ik-een-e-mailalias-in",
       "title": "Hoe stel ik een e-mailalias in?",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-overige"
       ],
       "topic": "ext-hoe-stel-ik-een-e-mailalias-in"
     },
@@ -1841,7 +2352,8 @@
       "slug": "hoe-archiveer-ik-mijn-e-mail-om-ruimte-vrij-te-maken",
       "title": "Hoe archiveer ik mijn e-mail om ruimte vrij te maken?",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-overige"
       ],
       "topic": "ext-hoe-archiveer-ik-mijn-e-mail-om-ruimte-vrij-te-m"
     },
@@ -1849,7 +2361,8 @@
       "slug": "hoe-verstuur-ik-een-nieuwsbrief-via-triplezero-it-hosting",
       "title": "Hoe verstuur ik een nieuwsbrief via TripleZero iT?",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-overige"
       ],
       "topic": "ext-hoe-verstuur-ik-een-nieuwsbrief-via-triplezero-i"
     },
@@ -1857,7 +2370,8 @@
       "slug": "hoe-stel-ik-tweefactorauthenticatie-2fa-in-voor-mijn-e-mail",
       "title": "Hoe stel ik tweefactorauthenticatie (2FA) in voor mijn e-mail?",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-overige"
       ],
       "topic": "ext-hoe-stel-ik-tweefactorauthenticatie-2fa-in-voor-"
     },
@@ -1865,7 +2379,8 @@
       "slug": "hoe-stel-ik-een-e-mailhandtekening-in-voor-alle-uitgaande-berichten",
       "title": "Hoe stel ik een e-mailhandtekening in voor alle uitgaande berichten?",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "mailbox-beheer"
       ],
       "topic": "ext-hoe-stel-ik-een-e-mailhandtekening-in-voor-alle-"
     },
@@ -1873,7 +2388,8 @@
       "slug": "hoe-stel-ik-een-e-mail-in-op-een-samsung-telefoon",
       "title": "Hoe stel ik een e-mail in op een Samsung-telefoon?",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-overige"
       ],
       "topic": "ext-hoe-stel-ik-een-e-mail-in-op-een-samsung-telefoo"
     },
@@ -1881,7 +2397,8 @@
       "slug": "hoe-los-ik-een-relay-not-permitted-fout-op",
       "title": "Hoe los ik een 'Relay not permitted' fout op?",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-overige"
       ],
       "topic": "ext-hoe-los-ik-een-relay-not-permitted-fout-op"
     },
@@ -1889,7 +2406,8 @@
       "slug": "hoe-voorkom-ik-dat-mijn-e-mail-in-de-spambox-belandt",
       "title": "Hoe voorkom ik dat mijn e-mail in de spambox belandt?",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "spam-en-veiligheid"
       ],
       "topic": "ext-hoe-voorkom-ik-dat-mijn-e-mail-in-de-spambox-bel"
     },
@@ -1897,7 +2415,8 @@
       "slug": "hoe-maak-ik-een-groeps-e-mailadres-aan",
       "title": "Hoe maak ik een groeps-e-mailadres aan?",
       "categories": [
-        "e-mail"
+        "e-mail",
+        "e-mail-overige"
       ],
       "topic": "ext-hoe-maak-ik-een-groeps-e-mailadres-aan"
     },
@@ -1905,7 +2424,8 @@
       "slug": "hoe-wijzig-ik-bestandspermissies-chmod-in-de-file-manager",
       "title": "Hoe wijzig ik bestandspermissies (CHMOD) in de File Manager?",
       "categories": [
-        "directadmin"
+        "directadmin",
+        "directadmin-overige"
       ],
       "topic": "ext-hoe-wijzig-ik-bestandspermissies-chmod-in-de-fil"
     },
@@ -1913,7 +2433,8 @@
       "slug": "hoe-gebruik-ik-de-dns-zone-editor-in-directadmin",
       "title": "Hoe gebruik ik de DNS Zone Editor in DirectAdmin?",
       "categories": [
-        "directadmin"
+        "directadmin",
+        "directadmin-overige"
       ],
       "topic": "ext-hoe-gebruik-ik-de-dns-zone-editor-in-directadmin"
     },
@@ -1921,7 +2442,8 @@
       "slug": "hoe-voeg-ik-een-extra-ftp-account-toe-in-directadmin",
       "title": "Hoe voeg ik een extra FTP-account toe in DirectAdmin?",
       "categories": [
-        "directadmin"
+        "directadmin",
+        "directadmin-overige"
       ],
       "topic": "ext-hoe-voeg-ik-een-extra-ftp-account-toe-in-directa"
     },
@@ -1929,7 +2451,8 @@
       "slug": "hoe-maak-ik-een-volledige-site-back-up-in-directadmin",
       "title": "Hoe maak ik een volledige site-back-up in DirectAdmin?",
       "categories": [
-        "directadmin"
+        "directadmin",
+        "directadmin-overige"
       ],
       "topic": "ext-hoe-maak-ik-een-volledige-site-back-up-in-direct"
     },
@@ -1937,7 +2460,8 @@
       "slug": "hoe-gebruik-ik-de-brute-force-monitor-in-directadmin",
       "title": "Hoe gebruik ik de Brute Force Monitor in DirectAdmin?",
       "categories": [
-        "directadmin"
+        "directadmin",
+        "directadmin-overige"
       ],
       "topic": "ext-hoe-gebruik-ik-de-brute-force-monitor-in-directa"
     },
@@ -1945,7 +2469,8 @@
       "slug": "hoe-voeg-ik-een-domeinalias-domain-pointer-toe-in-directadmin",
       "title": "Hoe voeg ik een domeinalias (domain pointer) toe in DirectAdmin?",
       "categories": [
-        "directadmin"
+        "directadmin",
+        "directadmin-overige"
       ],
       "topic": "ext-hoe-voeg-ik-een-domeinalias-domain-pointer-toe-i"
     },
@@ -1953,7 +2478,8 @@
       "slug": "hoe-bekijk-ik-de-statistieken-van-mijn-website-in-directadmin",
       "title": "Hoe bekijk ik de statistieken van mijn website in DirectAdmin?",
       "categories": [
-        "directadmin"
+        "directadmin",
+        "directadmin-overige"
       ],
       "topic": "ext-hoe-bekijk-ik-de-statistieken-van-mijn-website-i"
     },
@@ -1961,7 +2487,8 @@
       "slug": "hoe-blokkeer-ik-een-ip-adres-in-directadmin",
       "title": "Hoe blokkeer ik een IP-adres in DirectAdmin?",
       "categories": [
-        "directadmin"
+        "directadmin",
+        "directadmin-overige"
       ],
       "topic": "ext-hoe-blokkeer-ik-een-ip-adres-in-directadmin"
     },
@@ -1969,7 +2496,8 @@
       "slug": "hoe-voeg-ik-een-extra-domein-toe-aan-mijn-hostingpakket",
       "title": "Hoe voeg ik een extra domein toe aan mijn hostingpakket?",
       "categories": [
-        "directadmin"
+        "directadmin",
+        "directadmin-overige"
       ],
       "topic": "ext-hoe-voeg-ik-een-extra-domein-toe-aan-mijn-hostin"
     },
@@ -1977,7 +2505,8 @@
       "slug": "hoe-gebruik-ik-de-mysql-management-tool-in-directadmin",
       "title": "Hoe gebruik ik de MySQL Management tool in DirectAdmin?",
       "categories": [
-        "directadmin"
+        "directadmin",
+        "directadmin-overige"
       ],
       "topic": "ext-hoe-gebruik-ik-de-mysql-management-tool-in-direc"
     },
@@ -1986,7 +2515,8 @@
       "title": "Hoe maak ik een sterk wachtwoord en bewaar ik het veilig?",
       "categories": [
         "beveiliging",
-        "veilig-online"
+        "veilig-online",
+        "beveiliging-overige"
       ],
       "topic": "ext-hoe-maak-ik-een-sterk-wachtwoord-en-bewaar-ik-he"
     },
@@ -1995,7 +2525,8 @@
       "title": "Hoe herken ik een nep website en voorkom ik phishing?",
       "categories": [
         "beveiliging",
-        "veilig-online"
+        "veilig-online",
+        "beveiliging-overige"
       ],
       "topic": "ext-hoe-herken-ik-een-nep-website-en-voorkom-ik-phis"
     },
@@ -2003,7 +2534,8 @@
       "slug": "hoe-herken-en-verwijder-ik-malware-van-mijn-website",
       "title": "Hoe herken en verwijder ik malware van mijn website?",
       "categories": [
-        "beveiliging"
+        "beveiliging",
+        "beveiliging-overige"
       ],
       "topic": "ext-hoe-herken-en-verwijder-ik-malware-van-mijn-webs"
     },
@@ -2011,7 +2543,8 @@
       "slug": "hoe-beveilig-ik-mijn-mobiele-apparaten",
       "title": "Hoe beveilig ik mijn mobiele apparaten?",
       "categories": [
-        "beveiliging"
+        "beveiliging",
+        "beveiliging-overige"
       ],
       "topic": "ext-hoe-beveilig-ik-mijn-mobiele-apparaten"
     },
@@ -2020,7 +2553,8 @@
       "title": "Hoe bescherm ik mijn kinderen online?",
       "categories": [
         "beveiliging",
-        "veilig-online"
+        "veilig-online",
+        "beveiliging-overige"
       ],
       "topic": "ext-hoe-bescherm-ik-mijn-kinderen-online"
     },
@@ -2028,7 +2562,8 @@
       "slug": "hoe-stel-ik-een-firewall-in-op-mijn-website-zonder-plugin",
       "title": "Hoe stel ik een firewall in op mijn website (zonder plugin)?",
       "categories": [
-        "beveiliging"
+        "beveiliging",
+        "firewall-en-hacks"
       ],
       "topic": "ext-hoe-stel-ik-een-firewall-in-op-mijn-website-zond"
     },
@@ -2036,7 +2571,8 @@
       "slug": "hoe-beveilig-ik-mijn-database-tegen-sql-injecties",
       "title": "Hoe beveilig ik mijn database tegen SQL-injecties?",
       "categories": [
-        "beveiliging"
+        "beveiliging",
+        "beveiliging-overige"
       ],
       "topic": "ext-hoe-beveilig-ik-mijn-database-tegen-sql-injectie"
     },
@@ -2044,7 +2580,8 @@
       "slug": "hoe-stel-ik-een-content-security-policy-csp-in",
       "title": "Hoe stel ik een Content Security Policy (CSP) in?",
       "categories": [
-        "beveiliging"
+        "beveiliging",
+        "beveiliging-overige"
       ],
       "topic": "ext-hoe-stel-ik-een-content-security-policy-csp-in"
     },
@@ -2052,7 +2589,8 @@
       "slug": "hoe-houd-ik-mijn-plugins-en-thema-s-veilig-en-up-to-date",
       "title": "Hoe houd ik mijn plugins en thema's veilig en up-to-date?",
       "categories": [
-        "beveiliging"
+        "beveiliging",
+        "beveiliging-overige"
       ],
       "topic": "ext-hoe-houd-ik-mijn-plugins-en-thema-s-veilig-en-up"
     },
@@ -2060,7 +2598,8 @@
       "slug": "hoe-zorg-ik-voor-een-veilige-verbinding-met-sftp-in-plaats-van-ftp",
       "title": "Hoe zorg ik voor een veilige verbinding met SFTP in plaats van FTP?",
       "categories": [
-        "beveiliging"
+        "beveiliging",
+        "beveiliging-overige"
       ],
       "topic": "ext-hoe-zorg-ik-voor-een-veilige-verbinding-met-sftp"
     },
@@ -2068,7 +2607,8 @@
       "slug": "wat-is-het-klantenpanel-en-waarvoor-gebruik-ik-het",
       "title": "Wat is het klantenpanel en waarvoor gebruik ik het?",
       "categories": [
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "crm-klantenpanel-overige"
       ],
       "topic": "ext-wat-is-het-klantenpanel-en-waarvoor-gebruik-ik-h"
     },
@@ -2076,7 +2616,8 @@
       "slug": "hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode",
       "title": "Hoe wijzig ik mijn factuurgegevens en betaalmethode?",
       "categories": [
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "facturen-en-betalen"
       ],
       "topic": "ext-hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmeth"
     },
@@ -2084,7 +2625,8 @@
       "slug": "hoe-betaal-ik-mijn-facturen-in-het-klantenpanel",
       "title": "Hoe betaal ik mijn facturen in het klantenpanel?",
       "categories": [
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "facturen-en-betalen"
       ],
       "topic": "ext-hoe-betaal-ik-mijn-facturen-in-het-klantenpanel"
     },
@@ -2093,7 +2635,9 @@
       "title": "Hoe stel ik een ticket in voor support via het klantenpanel?",
       "categories": [
         "crm-klantenpanel",
-        "support"
+        "support",
+        "tickets-en-berichten",
+        "tickets-en-chat"
       ],
       "topic": "ext-hoe-stel-ik-een-ticket-in-voor-support-via-het-k"
     },
@@ -2102,7 +2646,9 @@
       "title": "Hoe schakel ik tweefactorauthenticatie (2FA) in voor mijn klantenpanel?",
       "categories": [
         "crm-klantenpanel",
-        "beveiliging"
+        "beveiliging",
+        "account-en-inloggen",
+        "beveiliging-overige"
       ],
       "topic": "ext-hoe-schakel-ik-tweefactorauthenticatie-2fa-in-vo"
     },
@@ -2110,7 +2656,8 @@
       "slug": "hoe-wijzig-ik-mijn-wachtwoord-voor-het-klantenpanel",
       "title": "Hoe wijzig ik mijn wachtwoord voor het klantenpanel?",
       "categories": [
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "account-en-inloggen"
       ],
       "topic": "ext-hoe-wijzig-ik-mijn-wachtwoord-voor-het-klantenpa"
     },
@@ -2118,7 +2665,8 @@
       "slug": "hoe-bekijk-en-download-ik-mijn-facturen-in-het-klantenpanel",
       "title": "Hoe bekijk en download ik mijn facturen in het klantenpanel?",
       "categories": [
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "facturen-en-betalen"
       ],
       "topic": "ext-hoe-bekijk-en-download-ik-mijn-facturen-in-het-k"
     },
@@ -2126,7 +2674,8 @@
       "slug": "hoe-voeg-ik-een-extra-gebruiker-toe-aan-mijn-klantenpanel",
       "title": "Hoe voeg ik een extra gebruiker toe aan mijn klantenpanel?",
       "categories": [
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "crm-klantenpanel-overige"
       ],
       "topic": "ext-hoe-voeg-ik-een-extra-gebruiker-toe-aan-mijn-kla"
     },
@@ -2134,7 +2683,8 @@
       "slug": "hoe-kies-ik-het-juiste-wordpress-thema",
       "title": "Hoe kies ik het juiste WordPress-thema?",
       "categories": [
-        "wordpress"
+        "wordpress",
+        "wordpress-overige"
       ],
       "topic": "ext-hoe-kies-ik-het-juiste-wordpress-thema"
     },
@@ -2142,7 +2692,8 @@
       "slug": "hoe-voeg-ik-een-google-analytics-trackingcode-toe-aan-wordpress",
       "title": "Hoe voeg ik een Google Analytics-trackingcode toe aan WordPress?",
       "categories": [
-        "wordpress"
+        "wordpress",
+        "wordpress-overige"
       ],
       "topic": "ext-hoe-voeg-ik-een-google-analytics-trackingcode-to"
     },
@@ -2150,7 +2701,8 @@
       "slug": "hoe-voeg-ik-een-menu-toe-in-wordpress",
       "title": "Hoe voeg ik een menu toe in WordPress?",
       "categories": [
-        "wordpress"
+        "wordpress",
+        "wordpress-overige"
       ],
       "topic": "ext-hoe-voeg-ik-een-menu-toe-in-wordpress"
     },
@@ -2158,7 +2710,8 @@
       "slug": "hoe-voeg-ik-afbeeldingen-en-media-toe-in-wordpress",
       "title": "Hoe voeg ik afbeeldingen en media toe in WordPress?",
       "categories": [
-        "wordpress"
+        "wordpress",
+        "wordpress-overige"
       ],
       "topic": "ext-hoe-voeg-ik-afbeeldingen-en-media-toe-in-wordpre"
     },
@@ -2166,7 +2719,8 @@
       "slug": "hoe-voeg-ik-een-youtube-video-toe-in-wordpress",
       "title": "Hoe voeg ik een YouTube-video toe in WordPress?",
       "categories": [
-        "wordpress"
+        "wordpress",
+        "wordpress-overige"
       ],
       "topic": "ext-hoe-voeg-ik-een-youtube-video-toe-in-wordpress"
     },
@@ -2174,7 +2728,8 @@
       "slug": "hoe-maak-ik-een-wordpress-website-met-een-page-builder",
       "title": "Hoe maak ik een WordPress website met een page builder?",
       "categories": [
-        "wordpress"
+        "wordpress",
+        "wordpress-overige"
       ],
       "topic": "ext-hoe-maak-ik-een-wordpress-website-met-een-page-b"
     },
@@ -2182,7 +2737,8 @@
       "slug": "hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress",
       "title": "Hoe voeg ik een GDPR/AVG-cookiebanner toe in WordPress?",
       "categories": [
-        "wordpress"
+        "wordpress",
+        "wordpress-overige"
       ],
       "topic": "ext-hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wor"
     },
@@ -2190,7 +2746,8 @@
       "slug": "hoe-maak-ik-een-wordpress-website-meertalig",
       "title": "Hoe maak ik een WordPress website meertalig?",
       "categories": [
-        "wordpress"
+        "wordpress",
+        "wordpress-overige"
       ],
       "topic": "ext-hoe-maak-ik-een-wordpress-website-meertalig"
     },
@@ -2198,7 +2755,8 @@
       "slug": "hoe-verplaats-ik-een-wordpress-website-van-een-staging-omgeving-naar-de-live-website",
       "title": "Hoe verplaats ik een WordPress website van een staging-omgeving naar de live website?",
       "categories": [
-        "wordpress"
+        "wordpress",
+        "wordpress-overige"
       ],
       "topic": "ext-hoe-verplaats-ik-een-wordpress-website-van-een-s"
     },
@@ -2207,7 +2765,8 @@
       "title": "Hoe voeg ik een webshop toe aan WordPress met WooCommerce?",
       "categories": [
         "wordpress",
-        "bloggen"
+        "bloggen",
+        "wordpress-overige"
       ],
       "topic": "ext-hoe-voeg-ik-een-webshop-toe-aan-wordpress-met-wo"
     },
@@ -2264,7 +2823,8 @@
       "title": "Hoe stel ik een sterk wachtwoord in en bewaar ik het veilig?",
       "categories": [
         "veilig-online",
-        "beveiliging"
+        "beveiliging",
+        "beveiliging-overige"
       ],
       "topic": "ext-hoe-stel-ik-een-sterk-wachtwoord-in-en-bewaar-ik"
     },
@@ -2280,7 +2840,8 @@
       "slug": "hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting",
       "title": "Hoe neem ik contact op met de support van TripleZero iT?",
       "categories": [
-        "support"
+        "support",
+        "support-overige"
       ],
       "topic": "ext-hoe-neem-ik-contact-op-met-de-support-van-triple"
     },
@@ -2289,7 +2850,9 @@
       "title": "Hoe maak ik een support ticket aan in het klantenpanel?",
       "categories": [
         "support",
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "tickets-en-berichten",
+        "tickets-en-chat"
       ],
       "topic": "ext-hoe-maak-ik-een-support-ticket-aan-in-het-klante"
     },
@@ -2297,7 +2860,8 @@
       "slug": "hoe-werkt-de-belafspraak-bij-triplezero-it-hosting",
       "title": "Hoe werkt de belafspraak bij TripleZero iT?",
       "categories": [
-        "support"
+        "support",
+        "tickets-en-chat"
       ],
       "topic": "ext-hoe-werkt-de-belafspraak-bij-triplezero-it-hosti"
     },
@@ -2305,7 +2869,8 @@
       "slug": "wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support",
       "title": "Wat kan ik zelf doen voordat ik contact opneem met support?",
       "categories": [
-        "support"
+        "support",
+        "support-overige"
       ],
       "topic": "ext-wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-m"
     },
@@ -2313,7 +2878,8 @@
       "slug": "hoe-gebruik-ik-de-triplezero-it-hosting-app-voor-support",
       "title": "Hoe gebruik ik de TripleZero iT App voor support?",
       "categories": [
-        "support"
+        "support",
+        "support-overige"
       ],
       "topic": "ext-hoe-gebruik-ik-de-triplezero-it-hosting-app-voor"
     },
@@ -2321,7 +2887,8 @@
       "slug": "hoe-werkt-de-samenwerking-met-teamviewer-voor-support",
       "title": "Hoe werkt de samenwerking met TeamViewer voor support?",
       "categories": [
-        "support"
+        "support",
+        "support-overige"
       ],
       "topic": "ext-hoe-werkt-de-samenwerking-met-teamviewer-voor-su"
     },
@@ -2329,7 +2896,8 @@
       "slug": "hoe-kan-ik-mijn-supportvraag-het-beste-formuleren",
       "title": "Hoe kan ik mijn supportvraag het beste formuleren?",
       "categories": [
-        "support"
+        "support",
+        "support-overige"
       ],
       "topic": "ext-hoe-kan-ik-mijn-supportvraag-het-beste-formulere"
     },
@@ -2337,7 +2905,8 @@
       "slug": "wat-zijn-de-support-tijden-van-triplezero-it-hosting",
       "title": "Wat zijn de support tijden van TripleZero iT?",
       "categories": [
-        "support"
+        "support",
+        "support-overige"
       ],
       "topic": "ext-wat-zijn-de-support-tijden-van-triplezero-it-hos"
     },
@@ -2345,7 +2914,8 @@
       "slug": "hoe-worden-back-ups-gemaakt-en-hoe-vraag-ik-een-back-up-aan",
       "title": "Hoe worden back-ups gemaakt en hoe vraag ik een back-up aan?",
       "categories": [
-        "support"
+        "support",
+        "support-overige"
       ],
       "topic": "ext-hoe-worden-back-ups-gemaakt-en-hoe-vraag-ik-een-"
     },
@@ -2353,7 +2923,8 @@
       "slug": "hoe-werkt-de-samenwerking-met-externe-specialisten",
       "title": "Hoe werkt de samenwerking met externe specialisten?",
       "categories": [
-        "support"
+        "support",
+        "support-overige"
       ],
       "topic": "ext-hoe-werkt-de-samenwerking-met-externe-specialist"
     },
@@ -2502,7 +3073,8 @@
       "title": "Waar vind ik mijn eerdere AI-scans in het dashboard (SEO-analyse)?",
       "categories": [
         "ai-scan",
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "crm-klantenpanel-overige"
       ],
       "topic": "tz-aiscan-history"
     },
@@ -2520,7 +3092,8 @@
       "title": "Welke vervolgstappen zet ik na mijn AI-scan?",
       "categories": [
         "ai-scan",
-        "support"
+        "support",
+        "support-overige"
       ],
       "topic": "tz-aiscan-next"
     },
@@ -2577,7 +3150,8 @@
       "title": "Hoe bestel of start ik SEO-optimalisatie via TripleZero iT?",
       "categories": [
         "aeo-geo-seo",
-        "shop-en-pakketten"
+        "shop-en-pakketten",
+        "shop-en-pakketten-overige"
       ],
       "topic": "tz-seo-order"
     },
@@ -2586,7 +3160,8 @@
       "title": "Wat zit er in AEO/GEO/SEO basic versus plus in de pakketten?",
       "categories": [
         "aeo-geo-seo",
-        "shop-en-pakketten"
+        "shop-en-pakketten",
+        "shop-en-pakketten-overige"
       ],
       "topic": "tz-aeo-basic-plus"
     },
@@ -2610,7 +3185,8 @@
       "slug": "wat-is-het-verschil-tussen-business-en-extra-growth",
       "title": "Wat is het verschil tussen Business en Extra Growth?",
       "categories": [
-        "shop-en-pakketten"
+        "shop-en-pakketten",
+        "business-pakketten"
       ],
       "topic": "tz-shop-business-growth"
     },
@@ -2618,7 +3194,8 @@
       "slug": "wat-zit-er-in-het-business-pakket-van-triplezero-it-hosting",
       "title": "Wat zit er in het Business-pakket van TripleZero iT?",
       "categories": [
-        "shop-en-pakketten"
+        "shop-en-pakketten",
+        "business-pakketten"
       ],
       "topic": "tz-shop-business"
     },
@@ -2626,7 +3203,8 @@
       "slug": "wat-zit-er-in-het-extra-growth-pakket",
       "title": "Wat zit er in het Extra Growth-pakket?",
       "categories": [
-        "shop-en-pakketten"
+        "shop-en-pakketten",
+        "business-pakketten"
       ],
       "topic": "tz-shop-growth"
     },
@@ -2634,7 +3212,8 @@
       "slug": "hoe-bestel-ik-een-pakket-in-de-shop",
       "title": "Hoe bestel ik een pakket in de shop?",
       "categories": [
-        "shop-en-pakketten"
+        "shop-en-pakketten",
+        "shop-en-pakketten-overige"
       ],
       "topic": "tz-shop-order"
     },
@@ -2642,7 +3221,8 @@
       "slug": "hoe-werkt-de-checkout-en-welke-betaalmethoden-zijn-er",
       "title": "Hoe werkt de checkout en welke betaalmethoden zijn er?",
       "categories": [
-        "shop-en-pakketten"
+        "shop-en-pakketten",
+        "betalen-en-btw"
       ],
       "topic": "tz-shop-checkout"
     },
@@ -2650,7 +3230,8 @@
       "slug": "hoe-werkt-btw-21-op-shopprijzen-bij-triplezero-it-hosting",
       "title": "Hoe werkt btw (21%) op shopprijzen bij TripleZero iT?",
       "categories": [
-        "shop-en-pakketten"
+        "shop-en-pakketten",
+        "betalen-en-btw"
       ],
       "topic": "tz-shop-vat"
     },
@@ -2658,7 +3239,8 @@
       "slug": "maandelijkse-versus-jaarlijkse-betaling-hoe-werkt-de-korting",
       "title": "Maandelijkse versus jaarlijkse betaling: hoe werkt de korting?",
       "categories": [
-        "shop-en-pakketten"
+        "shop-en-pakketten",
+        "betalen-en-btw"
       ],
       "topic": "tz-shop-yearly"
     },
@@ -2667,7 +3249,9 @@
       "title": "Wat gebeurt er na een geslaagde betaling in de shop?",
       "categories": [
         "shop-en-pakketten",
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "facturen-en-betalen",
+        "betalen-en-btw"
       ],
       "topic": "tz-shop-after"
     },
@@ -2675,7 +3259,8 @@
       "slug": "kan-ik-losse-diensten-bestellen-naast-een-pakket",
       "title": "Kan ik losse diensten bestellen naast een pakket?",
       "categories": [
-        "shop-en-pakketten"
+        "shop-en-pakketten",
+        "shop-en-pakketten-overige"
       ],
       "topic": "tz-shop-addons"
     },
@@ -2683,7 +3268,8 @@
       "slug": "wanneer-kies-ik-enterprise-of-contact-in-plaats-van-een-standaardpakket",
       "title": "Wanneer kies ik Enterprise of contact in plaats van een standaardpakket?",
       "categories": [
-        "shop-en-pakketten"
+        "shop-en-pakketten",
+        "business-pakketten"
       ],
       "topic": "tz-shop-enterprise"
     },
@@ -2692,7 +3278,9 @@
       "title": "Hoe kies ik tussen shared hosting, WordPress hosting en VPS?",
       "categories": [
         "shop-en-pakketten",
-        "hosting"
+        "hosting",
+        "hostingpakketten",
+        "hosting-overige"
       ],
       "topic": "tz-host-choose"
     },
@@ -2701,7 +3289,9 @@
       "title": "Wat is shared hosting Basic, Plus en Business?",
       "categories": [
         "shop-en-pakketten",
-        "hosting"
+        "hosting",
+        "hostingpakketten",
+        "hosting-overige"
       ],
       "topic": "tz-host-shared"
     },
@@ -2711,7 +3301,10 @@
       "categories": [
         "shop-en-pakketten",
         "hosting",
-        "wordpress"
+        "wordpress",
+        "hostingpakketten",
+        "hosting-overige",
+        "wordpress-overige"
       ],
       "topic": "tz-host-wp"
     },
@@ -2720,7 +3313,9 @@
       "title": "Wat is VPS hosting Basic, Plus en Business?",
       "categories": [
         "shop-en-pakketten",
-        "hosting"
+        "hosting",
+        "hostingpakketten",
+        "hosting-overige"
       ],
       "topic": "tz-host-vps"
     },
@@ -2729,7 +3324,9 @@
       "title": "Wanneer stap ik over van shared naar VPS?",
       "categories": [
         "shop-en-pakketten",
-        "hosting"
+        "hosting",
+        "hosting-overige",
+        "shop-en-pakketten-overige"
       ],
       "topic": "tz-host-upgrade"
     },
@@ -2738,7 +3335,9 @@
       "title": "Hosting in Business/Extra Growth versus losse hosting in de shop",
       "categories": [
         "shop-en-pakketten",
-        "hosting"
+        "hosting",
+        "business-pakketten",
+        "hosting-overige"
       ],
       "topic": "tz-host-in-plan"
     },
@@ -2746,7 +3345,8 @@
       "slug": "hoe-werkt-live-chat-op-de-website-van-triplezero-it-hosting",
       "title": "Hoe werkt live chat op de website van TripleZero iT?",
       "categories": [
-        "support"
+        "support",
+        "tickets-en-chat"
       ],
       "topic": "tz-chat-what"
     },
@@ -2754,7 +3354,8 @@
       "slug": "hoe-open-ik-een-live-chat-gesprek-als-gast",
       "title": "Hoe open ik een live-chat gesprek als gast?",
       "categories": [
-        "support"
+        "support",
+        "tickets-en-chat"
       ],
       "topic": "tz-chat-start"
     },
@@ -2763,7 +3364,9 @@
       "title": "Hoe wordt een live chat een supportticket?",
       "categories": [
         "support",
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "tickets-en-berichten",
+        "tickets-en-chat"
       ],
       "topic": "tz-chat-to-ticket"
     },
@@ -2772,7 +3375,9 @@
       "title": "Hoe open ik een ticket vanuit mijn dashboard of CRM?",
       "categories": [
         "support",
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "tickets-en-berichten",
+        "tickets-en-chat"
       ],
       "topic": "tz-ticket-open"
     },
@@ -2781,7 +3386,9 @@
       "title": "Welke ticketstatussen zijn er (Open, In behandeling, Wachtend, Opgelost, Gesloten)?",
       "categories": [
         "support",
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "tickets-en-berichten",
+        "tickets-en-chat"
       ],
       "topic": "tz-ticket-status"
     },
@@ -2790,7 +3397,9 @@
       "title": "Hoe beantwoord ik berichten in een bestaand ticket?",
       "categories": [
         "support",
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "tickets-en-berichten",
+        "tickets-en-chat"
       ],
       "topic": "tz-ticket-reply"
     },
@@ -2799,7 +3408,9 @@
       "title": "Waar vind ik al mijn tickets in het klantenportaal?",
       "categories": [
         "support",
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "tickets-en-berichten",
+        "tickets-en-chat"
       ],
       "topic": "tz-ticket-list"
     },
@@ -2807,7 +3418,8 @@
       "slug": "chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer",
       "title": "Chat versus ticket versus belafspraak: wat kies ik wanneer?",
       "categories": [
-        "support"
+        "support",
+        "tickets-en-chat"
       ],
       "topic": "tz-support-channels"
     },
@@ -2824,7 +3436,8 @@
       "title": "Hoeveel AI-agents krijg ik in Business versus Extra Growth?",
       "categories": [
         "ai-agents",
-        "shop-en-pakketten"
+        "shop-en-pakketten",
+        "business-pakketten"
       ],
       "topic": "tz-agents-quota"
     },
@@ -2833,7 +3446,8 @@
       "title": "Hoe open ik het AI-agents overzicht in mijn account?",
       "categories": [
         "ai-agents",
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "crm-klantenpanel-overige"
       ],
       "topic": "tz-agents-open"
     },
@@ -2858,7 +3472,8 @@
       "title": "Wat doe ik als ik nog geen AI-agents zie in mijn dashboard?",
       "categories": [
         "ai-agents",
-        "support"
+        "support",
+        "support-overige"
       ],
       "topic": "tz-agents-empty"
     },
@@ -2875,7 +3490,8 @@
       "slug": "hoe-werkt-het-moderne-klantendashboard-van-triplezero-it-hosting",
       "title": "Hoe werkt het moderne klantendashboard van TripleZero iT?",
       "categories": [
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "crm-klantenpanel-overige"
       ],
       "topic": "tz-crm-dashboard"
     },
@@ -2883,7 +3499,8 @@
       "slug": "hoe-bekijk-ik-mijn-openstaande-facturen",
       "title": "Hoe bekijk ik mijn openstaande facturen?",
       "categories": [
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "facturen-en-betalen"
       ],
       "topic": "tz-crm-invoices-view"
     },
@@ -2891,7 +3508,8 @@
       "slug": "hoe-download-of-raadpleeg-ik-factuurdetails",
       "title": "Hoe download of raadpleeg ik factuurdetails?",
       "categories": [
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "facturen-en-betalen"
       ],
       "topic": "tz-crm-invoices-detail"
     },
@@ -2899,7 +3517,8 @@
       "slug": "hoe-gebruik-ik-berichten-in-het-crm-inbox-en-opstellen",
       "title": "Hoe gebruik ik berichten in het CRM (inbox en opstellen)?",
       "categories": [
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "tickets-en-berichten"
       ],
       "topic": "tz-crm-messages"
     },
@@ -2907,7 +3526,8 @@
       "slug": "hoe-bekijk-ik-ongelezen-berichten-vanaf-het-crm-overzicht",
       "title": "Hoe bekijk ik ongelezen berichten vanaf het CRM-overzicht?",
       "categories": [
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "tickets-en-berichten"
       ],
       "topic": "tz-crm-unread"
     },
@@ -2915,7 +3535,8 @@
       "slug": "hoe-maak-ik-een-project-aan-website-seo-ads-ai",
       "title": "Hoe maak ik een project aan (website, SEO, ads, AI)?",
       "categories": [
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "crm-klantenpanel-overige"
       ],
       "topic": "tz-crm-projects-create"
     },
@@ -2923,7 +3544,8 @@
       "slug": "hoe-volg-ik-de-status-van-mijn-projecten",
       "title": "Hoe volg ik de status van mijn projecten?",
       "categories": [
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "crm-klantenpanel-overige"
       ],
       "topic": "tz-crm-projects-status"
     },
@@ -2933,7 +3555,8 @@
       "categories": [
         "crm-klantenpanel",
         "ai-scan",
-        "ai-agents"
+        "ai-agents",
+        "tickets-en-berichten"
       ],
       "topic": "tz-crm-quicklinks"
     },
@@ -2941,7 +3564,8 @@
       "slug": "verschil-tussen-klassiek-klantenpanel-taken-en-het-crm-dashboard",
       "title": "Verschil tussen klassiek klantenpanel-taken en het CRM-dashboard",
       "categories": [
-        "crm-klantenpanel"
+        "crm-klantenpanel",
+        "crm-klantenpanel-overige"
       ],
       "topic": "tz-crm-classic-vs-new"
     },
@@ -2950,9 +3574,2406 @@
       "title": "Hoe vraag ik support het snelst aan vanuit het CRM?",
       "categories": [
         "crm-klantenpanel",
-        "support"
+        "support",
+        "crm-klantenpanel-overige",
+        "support-overige"
       ],
       "topic": "tz-crm-support-fast"
+    },
+    {
+      "slug": "iso-certificering",
+      "title": "ISO Certificering",
+      "categories": [
+        "support",
+        "support-overige"
+      ],
+      "topic": "gap-support"
+    },
+    {
+      "slug": "herroepingsknop-instellen-in-webshop",
+      "title": "Herroepingsknop instellen in je webshop",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "betalingen",
+      "title": "Betalingen",
+      "categories": [
+        "crm-klantenpanel",
+        "shop-en-pakketten",
+        "facturen-en-betalen",
+        "betalen-en-btw"
+      ],
+      "topic": "gap-admin"
+    },
+    {
+      "slug": "linux-kwetsbaarheid-cve-2026-31431",
+      "title": "Linux‑kwetsbaarheid CVE‑2026‑31431",
+      "categories": [
+        "vps",
+        "linux-vps"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "verhuizing-escaleren-nl-domeinnaam",
+      "title": "Verhuizing escaleren voor .nl-domeinnaam",
+      "categories": [
+        "domeinnamen",
+        "domeinnamen-overige"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "contactpersonen-webmail",
+      "title": "Contactpersonen webmail",
+      "categories": [
+        "e-mail",
+        "webmail"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "bijlage-toevoegen-in-de-webmail",
+      "title": "Bijlage toevoegen in de webmail",
+      "categories": [
+        "e-mail",
+        "webmail"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "scammers-actief-met-nepmails",
+      "title": "Scammers actief met nepmails",
+      "categories": [
+        "veilig-online",
+        "beveiliging",
+        "beveiliging-overige"
+      ],
+      "topic": "gap-sec"
+    },
+    {
+      "slug": "migreren-naar-microsoft-365",
+      "title": "Migreren naar Microsoft 365",
+      "categories": [
+        "microsoft",
+        "e-mail",
+        "e-mail-overige",
+        "microsoft-overige"
+      ],
+      "topic": "gap-ms"
+    },
+    {
+      "slug": "mail-als-bijlage-sturen",
+      "title": "Mail als bijlage sturen",
+      "categories": [
+        "e-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "website-verhuizen",
+      "title": "Website verhuizen",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "vps-starten-of-stoppen",
+      "title": "VPS starten of stoppen",
+      "categories": [
+        "vps",
+        "vps-beheer"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "security-alert-op-windows-servers",
+      "title": "Security alert op Windows servers",
+      "categories": [
+        "vps",
+        "windows-vps"
+      ],
+      "topic": "gap-win"
+    },
+    {
+      "slug": "bindings-toevoegen-op-een-windows-vps",
+      "title": "Bindings toevoegen op een Windows VPS",
+      "categories": [
+        "vps",
+        "windows-vps"
+      ],
+      "topic": "gap-win"
+    },
+    {
+      "slug": "mssql-express-installeren-op-een-windows-server",
+      "title": "MSSQL Express installeren op een Windows server",
+      "categories": [
+        "vps",
+        "windows-vps"
+      ],
+      "topic": "gap-win"
+    },
+    {
+      "slug": "vps-updaten",
+      "title": "VPS updaten",
+      "categories": [
+        "vps",
+        "vps-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "ssl-certificaat-aanvragen-op-windows-server",
+      "title": "SSL certificaat aanvragen op een Windows server",
+      "categories": [
+        "vps",
+        "ssl-certificaten",
+        "beveiliging",
+        "windows-vps"
+      ],
+      "topic": "gap-win"
+    },
+    {
+      "slug": "wijziging-contactgegevens-nl-domeinnamen",
+      "title": "Wijziging contactgegevens .nl-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domeinnamen-overige"
+      ],
+      "topic": "gap-tld"
+    },
+    {
+      "slug": "local-presence-bij-domeinnamen",
+      "title": "Local presence bij domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "google-tag-manager",
+      "title": "Google Tag Manager",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "microsoft-sql-server-databases",
+      "title": "Microsoft SQL Server Databases",
+      "categories": [
+        "microsoft",
+        "microsoft-overige"
+      ],
+      "topic": "gap-ms"
+    },
+    {
+      "slug": "screenshot-maken",
+      "title": "Screenshots maken",
+      "categories": [
+        "support",
+        "support-overige"
+      ],
+      "topic": "gap-support"
+    },
+    {
+      "slug": "sha2-en-ssl",
+      "title": "SHA2 en SSL",
+      "categories": [
+        "ssl-certificaten",
+        "beveiliging"
+      ],
+      "topic": "gap-ssl"
+    },
+    {
+      "slug": "application-pool-aanmaken-op-je-vps",
+      "title": "Application pool en site aanmaken op je VPS",
+      "categories": [
+        "vps",
+        "windows-vps"
+      ],
+      "topic": "gap-win"
+    },
+    {
+      "slug": "access-database-converteren-naar-microsoft-sql",
+      "title": "Access database converteren naar Microsoft SQL",
+      "categories": [
+        "microsoft",
+        "microsoft-overige"
+      ],
+      "topic": "gap-ms"
+    },
+    {
+      "slug": "mailadres-toevoegen-aan-mailprogramma",
+      "title": "Mailadres toevoegen aan mailprogramma",
+      "categories": [
+        "e-mail",
+        "e-mail-instellen"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "aan-de-slag-met-microsoft",
+      "title": "Aan de slag met Microsoft",
+      "categories": [
+        "microsoft",
+        "microsoft-overige"
+      ],
+      "topic": "gap-ms"
+    },
+    {
+      "slug": "onedrive-installeren",
+      "title": "OneDrive Installeren",
+      "categories": [
+        "microsoft",
+        "microsoft-overige"
+      ],
+      "topic": "gap-ms"
+    },
+    {
+      "slug": "site-aanmaken-op-windows-vps",
+      "title": "Site aanmaken op Windows VPS",
+      "categories": [
+        "vps",
+        "windows-vps"
+      ],
+      "topic": "gap-win"
+    },
+    {
+      "slug": "aan-de-slag-exchange-online",
+      "title": "Aan de slag met Exchange Online",
+      "categories": [
+        "microsoft",
+        "e-mail",
+        "microsoft-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-ms"
+    },
+    {
+      "slug": "probleemoplossing-exchange-online",
+      "title": "Probleemoplossing Exchange Online",
+      "categories": [
+        "microsoft",
+        "e-mail",
+        "microsoft-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-ms"
+    },
+    {
+      "slug": "directadmin-gebruiken-als-reseller",
+      "title": "DirectAdmin gebruiken als reseller",
+      "categories": [
+        "directadmin",
+        "crm-klantenpanel",
+        "crm-klantenpanel-overige",
+        "directadmin-overige"
+      ],
+      "topic": "gap-admin"
+    },
+    {
+      "slug": "resellers",
+      "title": "Resellers",
+      "categories": [
+        "crm-klantenpanel",
+        "shop-en-pakketten",
+        "crm-klantenpanel-overige",
+        "shop-en-pakketten-overige"
+      ],
+      "topic": "gap-admin"
+    },
+    {
+      "slug": "webshop-maken-in-websitebouwer",
+      "title": "Een webshop maken in de websitebouwer",
+      "categories": [
+        "hosting",
+        "wordpress",
+        "hosting-overige",
+        "wordpress-overige"
+      ],
+      "topic": "gap-builder"
+    },
+    {
+      "slug": "bestandsrechten-aanpassen",
+      "title": "Bestandsrechten aanpassen",
+      "categories": [
+        "hosting",
+        "ftp-en-bestanden"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "recaptcha-instellen-op-je-website",
+      "title": "reCAPTCHA instellen op je website",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "hotlink-protection",
+      "title": "Hotlink Protection",
+      "categories": [
+        "veilig-online",
+        "beveiliging",
+        "firewall-en-hacks"
+      ],
+      "topic": "gap-sec"
+    },
+    {
+      "slug": "logfiles-bekijken-in-plesk",
+      "title": "Logfiles bekijken in Plesk",
+      "categories": [
+        "plesk"
+      ],
+      "topic": "gap-plesk"
+    },
+    {
+      "slug": "website-laten-maken",
+      "title": "Website laten maken",
+      "categories": [
+        "hosting",
+        "wordpress",
+        "hosting-overige",
+        "wordpress-overige"
+      ],
+      "topic": "gap-builder"
+    },
+    {
+      "slug": "microsoft-365-tenant-importeren",
+      "title": "Microsoft 365 tenant importeren",
+      "categories": [
+        "microsoft",
+        "microsoft-overige"
+      ],
+      "topic": "gap-ms"
+    },
+    {
+      "slug": "storing-oplossen-in-microsoft",
+      "title": "Storing oplossen in Microsoft",
+      "categories": [
+        "microsoft",
+        "microsoft-overige"
+      ],
+      "topic": "gap-ms"
+    },
+    {
+      "slug": "hoe-werkt-microsoft-teams",
+      "title": "Hoe werkt Microsoft Teams",
+      "categories": [
+        "microsoft",
+        "microsoft-overige"
+      ],
+      "topic": "gap-ms"
+    },
+    {
+      "slug": "hoe-stel-ik-een-favicon-in-voor-mijn-wordpress-website",
+      "title": "Hoe stel ik een favicon in voor mijn WordPress-website?",
+      "categories": [
+        "vps",
+        "wordpress",
+        "windows-vps",
+        "wordpress-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "mijn-nieuwe-website-wordt-niet-getoond-wat-kan-ik-doen",
+      "title": "Mijn nieuwe website wordt niet getoond. Wat kan ik doen?",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "brute-force-aanval-en-man-in-the-middle-aanval",
+      "title": "Wat zijn een brute-force aanval en een man-in-the-middle aanval?",
+      "categories": [
+        "veilig-online",
+        "beveiliging",
+        "firewall-en-hacks"
+      ],
+      "topic": "gap-sec"
+    },
+    {
+      "slug": "alles-over-ddos-aanvallen",
+      "title": "Alles over DDoS-aanvallen",
+      "categories": [
+        "veilig-online",
+        "beveiliging",
+        "firewall-en-hacks"
+      ],
+      "topic": "gap-sec"
+    },
+    {
+      "slug": "website-offline-vanwege-verdachte-scripts-wat-nu",
+      "title": "Website offline vanwege verdachte scripts – wat nu?",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "website-gehackt-zo-herstel-je-jouw-website",
+      "title": "Website gehackt? Zo herstel je jouw website",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "directory-aanmaken-op-een-windows-vps",
+      "title": "Directory aanmaken op een Windows VPS",
+      "categories": [
+        "vps",
+        "windows-vps"
+      ],
+      "topic": "gap-win"
+    },
+    {
+      "slug": "gebruikers-aanmaken-op-een-vps",
+      "title": "Gebruikers aanmaken op een Windows VPS",
+      "categories": [
+        "vps",
+        "windows-vps"
+      ],
+      "topic": "gap-win"
+    },
+    {
+      "slug": "vps-beheren-via-console",
+      "title": "VPS beheren via console",
+      "categories": [
+        "vps",
+        "linux-vps"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "iis-installeren-op-windows",
+      "title": "IIS installeren op Windows",
+      "categories": [
+        "vps",
+        "windows-vps"
+      ],
+      "topic": "gap-win"
+    },
+    {
+      "slug": "magento-2-installeren-op-een-vps",
+      "title": "Magento 2 installeren op een VPS",
+      "categories": [
+        "vps",
+        "vps-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "cloudlinux-lve-manager",
+      "title": "CloudLinux LVE Manager",
+      "categories": [
+        "vps",
+        "linux-vps"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "domein-koppelen-aan-een-vps",
+      "title": "Domein koppelen aan een VPS",
+      "categories": [
+        "vps",
+        "domeinnamen",
+        "domeinnamen-overige",
+        "vps-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "cloud-vps-opnieuw-installeren",
+      "title": "Cloud VPS opnieuw installeren",
+      "categories": [
+        "vps",
+        "vps-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "snapshot-maken-van-je-vps",
+      "title": "Snapshot maken van je VPS",
+      "categories": [
+        "vps",
+        "vps-beheer"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "vps-service-management-beheren-in-plesk",
+      "title": "VPS Service management beheren in Plesk",
+      "categories": [
+        "vps",
+        "plesk",
+        "vps-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "centos-vps-beveiligen",
+      "title": "CentOS VPS beveiligen",
+      "categories": [
+        "vps",
+        "linux-vps"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "sni-inschakelen-op-een-directadmin-server",
+      "title": "SNI inschakelen op een DirectAdmin server",
+      "categories": [
+        "directadmin",
+        "directadmin-overige"
+      ],
+      "topic": "gap-da"
+    },
+    {
+      "slug": "beveilig-een-linux-vps-met-fail2ban",
+      "title": "Linux VPS beveiligen met Fail2Ban",
+      "categories": [
+        "vps",
+        "linux-vps"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "http-2-activeren-op-centos-7",
+      "title": "HTTP/2 activeren op CentOS 7",
+      "categories": [
+        "vps",
+        "linux-vps"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "private-network-aanmaken",
+      "title": "Private Network aanmaken",
+      "categories": [
+        "vps",
+        "vps-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "directadmin-custombuild-2-updaten",
+      "title": "DirectAdmin Custombuild 2 updaten",
+      "categories": [
+        "directadmin",
+        "directadmin-overige"
+      ],
+      "topic": "gap-da"
+    },
+    {
+      "slug": "reverse-dns-instellen",
+      "title": "Reverse DNS instellen",
+      "categories": [
+        "vps",
+        "domeinnamen",
+        "dns-records",
+        "vps-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "rsa-keys-beheren",
+      "title": "RSA keys beheren",
+      "categories": [
+        "vps",
+        "vps-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "rdp-verbinding-maken-met-vps",
+      "title": "RDP verbinding maken met VPS",
+      "categories": [
+        "vps",
+        "windows-vps"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "support-op-managed-vps",
+      "title": "Support op Managed VPS",
+      "categories": [
+        "vps",
+        "vps-beheer"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "support-op-unmanaged-vps",
+      "title": "Support op Unmanaged VPS",
+      "categories": [
+        "vps",
+        "vps-beheer"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "plesk-updaten-op-je-vps",
+      "title": "Plesk updaten op je VPS",
+      "categories": [
+        "vps",
+        "plesk",
+        "vps-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "inloggen-op-managed-vps-bij-triplezero-it",
+      "title": "Inloggen op een managed VPS bij TripleZero iT",
+      "categories": [
+        "vps",
+        "vps-beheer"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "webmail-applicatie-instellen-in-plesk",
+      "title": "Webmail applicatie instellen in Plesk",
+      "categories": [
+        "vps",
+        "plesk",
+        "e-mail",
+        "webmail",
+        "vps-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "php-mail-versturen-vanaf-je-website",
+      "title": "PHP-mail versturen vanaf je website",
+      "categories": [
+        "e-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "je-website-werkt-niet-dit-kun-je-zelf-controleren",
+      "title": "Je website werkt niet? Dit kun je zelf controleren",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "postmaster-mailadres",
+      "title": "Postmaster mailadres",
+      "categories": [
+        "e-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "mailserver-configuratie-voor-plesk",
+      "title": "Mailserver configuratie voor Plesk",
+      "categories": [
+        "vps",
+        "plesk",
+        "e-mail",
+        "e-mail-overige",
+        "vps-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "mailaccount-geblokkeerd-vanwege-misbruik",
+      "title": "Mailaccount geblokkeerd vanwege misbruik",
+      "categories": [
+        "e-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "return-path-voor-crm",
+      "title": "Return-path voor CRM",
+      "categories": [
+        "e-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "eigen-error-of-404-pagina-instellen-voor-je-website",
+      "title": "Eigen error of 404-pagina instellen voor je website",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "mail-backup-in-webmail",
+      "title": "Mail backup in webmail",
+      "categories": [
+        "e-mail",
+        "webmail"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "403-forbidden-melding-op-je-website-oplossen",
+      "title": "403 Forbidden-melding op je website oplossen",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "caldav-en-carddav-instellen",
+      "title": "CalDAV en CardDAV instellen",
+      "categories": [
+        "e-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "submappen-in-je-webmail",
+      "title": "Submappen in je webmail",
+      "categories": [
+        "e-mail",
+        "webmail"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "handleiding-instellingen-beheren-in-websitebouwer",
+      "title": "Instellingen beheren in de websitebouwer",
+      "categories": [
+        "hosting",
+        "wordpress",
+        "hosting-overige",
+        "wordpress-overige"
+      ],
+      "topic": "gap-builder"
+    },
+    {
+      "slug": "verzonden-mails-niet-in-de-juiste-map",
+      "title": "Verzonden mails niet in de juiste map",
+      "categories": [
+        "e-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "uurlimiet-uitgaande-mail",
+      "title": "Uurlimiet uitgaande mail",
+      "categories": [
+        "e-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "malware",
+      "title": "Malware",
+      "categories": [
+        "e-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "bounce-berichten",
+      "title": "Bounce berichten",
+      "categories": [
+        "e-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "mailberichten-met-een-winmail-dat-bestand",
+      "title": "Mailberichten met een Winmail.dat bestand",
+      "categories": [
+        "e-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "blacklisting",
+      "title": "Blacklisting",
+      "categories": [
+        "e-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "mail-extern-laten-afhandelen",
+      "title": "Mail extern laten afhandelen",
+      "categories": [
+        "e-mail",
+        "domeinnamen",
+        "domeinnamen-overige",
+        "e-mail-overige"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "uitleg-over-spoofing",
+      "title": "Uitleg over spoofing",
+      "categories": [
+        "e-mail",
+        "spam-en-veiligheid"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "mail-als-eml-bestand-opslaan",
+      "title": "Mail als .eml-bestand opslaan",
+      "categories": [
+        "e-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "ssl-certificaat-melding",
+      "title": "SSL certificaat melding",
+      "categories": [
+        "ssl-certificaten",
+        "beveiliging",
+        "e-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-ssl"
+    },
+    {
+      "slug": "mailservice-uitschakelen",
+      "title": "Mailservice uitschakelen",
+      "categories": [
+        "e-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "mailinglijst-aanmaken",
+      "title": "Mailinglijst aanmaken",
+      "categories": [
+        "e-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "mail-verhuizen-via-plesk",
+      "title": "Mail verhuizen via Plesk",
+      "categories": [
+        "plesk",
+        "e-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "postvak-is-vol",
+      "title": "Postvak is vol",
+      "categories": [
+        "e-mail",
+        "mailbox-beheer"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "postvak-capaciteit-aanpassen",
+      "title": "Postvak capaciteit aanpassen",
+      "categories": [
+        "e-mail",
+        "mailbox-beheer"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "handleiding-je-website-maken-met-websitebouwer",
+      "title": "Een website maken met de visuele editor",
+      "categories": [
+        "hosting",
+        "wordpress",
+        "hosting-overige",
+        "wordpress-overige"
+      ],
+      "topic": "gap-builder"
+    },
+    {
+      "slug": "wat-is-websitebouwer-van-triplezero-it",
+      "title": "Wat is de visuele websitebouwer van TripleZero iT?",
+      "categories": [
+        "hosting",
+        "wordpress",
+        "hosting-overige",
+        "wordpress-overige"
+      ],
+      "topic": "gap-builder"
+    },
+    {
+      "slug": "e-mailheaders-opvragen",
+      "title": "E-mailheaders opvragen",
+      "categories": [
+        "e-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "voorkom-dat-mail-als-spam-wordt-gezien",
+      "title": "Voorkom dat mail als spam wordt gezien",
+      "categories": [
+        "e-mail",
+        "spam-en-veiligheid"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "mail-backup-in-thunderbird",
+      "title": "Mail backup in Thunderbird",
+      "categories": [
+        "e-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "mail-backup-in-outlook",
+      "title": "Mail backup in Outlook",
+      "categories": [
+        "e-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "afzender-en-handtekening-in-je-mailprogramma",
+      "title": "Afzender en handtekening in je mailprogramma",
+      "categories": [
+        "e-mail",
+        "mailbox-beheer"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "wordpress-toolkit",
+      "title": "WordPress Toolkit",
+      "categories": [
+        "vps",
+        "wordpress",
+        "wordpress-installatie",
+        "windows-vps"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "access-database-omzetten-naar-mysql",
+      "title": "Access-database omzetten naar MySQL",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "mail-versturen-met-asp",
+      "title": "Mail versturen met ASP",
+      "categories": [
+        "e-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "web-platform-installer-voor-windows",
+      "title": "Web Platform Installer voor Windows",
+      "categories": [
+        "vps",
+        "windows-vps"
+      ],
+      "topic": "gap-win"
+    },
+    {
+      "slug": "bestandsbeheer-in-directadmin",
+      "title": "Bestandsbeheer op een DirectAdmin VPS",
+      "categories": [
+        "vps",
+        "directadmin",
+        "directadmin-overige",
+        "vps-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "hoofdmap-van-een-website-wijzigen-in-plesk",
+      "title": "Hoofdmap van een website wijzigen in Plesk",
+      "categories": [
+        "plesk"
+      ],
+      "topic": "gap-plesk"
+    },
+    {
+      "slug": "extra-gebruikers-aanmaken-in-wordpress",
+      "title": "Extra gebruikers aanmaken in WordPress",
+      "categories": [
+        "vps",
+        "wordpress",
+        "wordpress-onderhoud",
+        "windows-vps"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "wordpress-permalinks",
+      "title": "WordPress permalinks",
+      "categories": [
+        "vps",
+        "wordpress",
+        "wordpress-onderhoud",
+        "windows-vps"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "standaarddocumenten-instellen-op-een-server",
+      "title": "Standaarddocumenten instellen op een server",
+      "categories": [
+        "vps",
+        "vps-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "script-installer",
+      "title": "Script Installer",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "directadmin-wachtwoord-aanpassen",
+      "title": "DirectAdmin wachtwoord aanpassen",
+      "categories": [
+        "directadmin",
+        "veilig-online",
+        "beveiliging",
+        "beveiliging-overige",
+        "directadmin-overige"
+      ],
+      "topic": "gap-da"
+    },
+    {
+      "slug": "website-apps",
+      "title": "Website Apps",
+      "categories": [
+        "hosting",
+        "wordpress",
+        "hosting-overige",
+        "wordpress-overige"
+      ],
+      "topic": "gap-builder"
+    },
+    {
+      "slug": "web-config-configuratiebestanden",
+      "title": "Web.config configuratiebestanden",
+      "categories": [
+        "vps",
+        "windows-vps"
+      ],
+      "topic": "gap-win"
+    },
+    {
+      "slug": "widgets-toevoegen-in-wordpress",
+      "title": "Widgets toevoegen in WordPress",
+      "categories": [
+        "vps",
+        "wordpress",
+        "wordpress-onderhoud",
+        "windows-vps"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "wordpress-website-verhuizen",
+      "title": "WordPress website verhuizen",
+      "categories": [
+        "vps",
+        "wordpress",
+        "domeinnamen",
+        "windows-vps",
+        "domeinnamen-overige",
+        "wordpress-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "website-maken-met-wordpress",
+      "title": "Website maken met WordPress",
+      "categories": [
+        "vps",
+        "wordpress",
+        "windows-vps",
+        "wordpress-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "inloggen-op-het-wordpress-dashboard",
+      "title": "Inloggen op het WordPress dashboard",
+      "categories": [
+        "vps",
+        "wordpress",
+        "windows-vps",
+        "wordpress-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "server-side-includes-gebruiken-bij-triplezero-it",
+      "title": "Server Side Includes (SSI) gebruiken",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "website-tijdelijk-offline-zetten",
+      "title": "Website tijdelijk offline zetten",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "asp-hosting",
+      "title": "ASP Hosting",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "handmatig-een-nieuwe-plesk-licentie-installeren",
+      "title": "Handmatig een nieuwe Plesk licentie installeren",
+      "categories": [
+        "vps",
+        "plesk",
+        "vps-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "een-phpinfo-bestand-maken",
+      "title": "Een phpinfo bestand maken",
+      "categories": [
+        "hosting",
+        "php-en-scripts"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "joomla-updaten",
+      "title": "Joomla updaten",
+      "categories": [
+        "hosting",
+        "bloggen",
+        "hosting-overige"
+      ],
+      "topic": "gap-cms"
+    },
+    {
+      "slug": "een-website-maken-met-joomla",
+      "title": "Een website maken met Joomla",
+      "categories": [
+        "hosting",
+        "wordpress",
+        "hosting-overige",
+        "wordpress-overige"
+      ],
+      "topic": "gap-builder"
+    },
+    {
+      "slug": "mysql-database-probleemoplossing",
+      "title": "MySQL database probleemoplossing",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "mysql-databases-beheren-in-phpmyadmin",
+      "title": "MySQL databases beheren in PhpMyAdmin",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "mysql-database-aanmaken-in-het-control-panel",
+      "title": "Database aanmaken",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "hsts-inschakelen",
+      "title": "HSTS inschakelen",
+      "categories": [
+        "ssl-certificaten",
+        "beveiliging"
+      ],
+      "topic": "gap-ssl"
+    },
+    {
+      "slug": "host-bestand-wijzigen",
+      "title": "Host bestand wijzigen",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "informatie-over-xxx-domeinnamen",
+      "title": "Informatie over .xxx-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "topic": "gap-tld"
+    },
+    {
+      "slug": "alles-over-tv-domeinnamen",
+      "title": "Alles over .tv-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "topic": "gap-tld"
+    },
+    {
+      "slug": "domeinen-als-reseller-verhuizen",
+      "title": "Domeinen als reseller verhuizen",
+      "categories": [
+        "domeinnamen",
+        "domeinnamen-overige"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "domeinnamen-wijzigen",
+      "title": "Domeinnamen wijzigen",
+      "categories": [
+        "domeinnamen",
+        "domeinnamen-overige"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "domeinhouders-beheren",
+      "title": "Domein houdergegevens beheren",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "alles-over-es-domeinnamen",
+      "title": "Alles over .es-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "topic": "gap-tld"
+    },
+    {
+      "slug": "alles-over-eu-domeinnamen",
+      "title": "Alles over .eu-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "topic": "gap-tld"
+    },
+    {
+      "slug": "alles-over-info-domeinnamen",
+      "title": "Alles over .info-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "topic": "gap-tld"
+    },
+    {
+      "slug": "alles-over-biz-domeinnamen",
+      "title": "Alles over .biz-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "topic": "gap-tld"
+    },
+    {
+      "slug": "alles-over-nu-domeinnamen",
+      "title": "Alles over .nu-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "topic": "gap-tld"
+    },
+    {
+      "slug": "alles-over-fr-domeinnamen",
+      "title": "Alles over .fr-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "topic": "gap-tld"
+    },
+    {
+      "slug": "alles-over-be-domeinnamen",
+      "title": "Alles over .be-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "topic": "gap-tld"
+    },
+    {
+      "slug": "alles-over-de-domeinnamen",
+      "title": "Alles over .de-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "topic": "gap-tld"
+    },
+    {
+      "slug": "alles-over-co-uk-domeinnamen",
+      "title": "Alles over .co.uk-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "topic": "gap-tld"
+    },
+    {
+      "slug": "alles-over-com-domeinnamen",
+      "title": "Alles over .com-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "topic": "gap-tld"
+    },
+    {
+      "slug": "alles-over-nl-domeinnamen",
+      "title": "Alles over .nl-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "topic": "gap-tld"
+    },
+    {
+      "slug": "een-co-uk-domeinnaam-verhuizen",
+      "title": "Een .co.uk-domeinnaam verhuizen",
+      "categories": [
+        "domeinnamen",
+        "domeinnamen-overige"
+      ],
+      "topic": "gap-tld"
+    },
+    {
+      "slug": "probleemoplossing-domeinnaam-verhuizen",
+      "title": "Probleemoplossing domeinnaam verhuizen",
+      "categories": [
+        "domeinnamen",
+        "domeinnamen-overige"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "domeinnaam-koppelen-aan-een-pakket",
+      "title": "Domeinnaam koppelen aan een pakket",
+      "categories": [
+        "domeinnamen",
+        "domeinnamen-overige"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "domeinnaam-taxatie",
+      "title": "Domeinnaam taxatie",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "caa-records",
+      "title": "CAA records",
+      "categories": [
+        "domeinnamen",
+        "dns-records"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "aaaa-records-ipv6",
+      "title": "AAAA records (IPv6)",
+      "categories": [
+        "domeinnamen",
+        "dns-records"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "tlsa-records-beheren",
+      "title": "TLSA records beheren",
+      "categories": [
+        "domeinnamen",
+        "dns-records"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "soa-records",
+      "title": "SOA records",
+      "categories": [
+        "domeinnamen",
+        "dns-records"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "cname-records",
+      "title": "CNAME records",
+      "categories": [
+        "domeinnamen",
+        "dns-records"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "srv-records",
+      "title": "SRV records",
+      "categories": [
+        "domeinnamen",
+        "dns-records"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "mx-records",
+      "title": "MX records",
+      "categories": [
+        "domeinnamen",
+        "dns-records"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "a-records",
+      "title": "A records",
+      "categories": [
+        "domeinnamen",
+        "domeinnamen-overige"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "nameservers-beheren",
+      "title": "Nameservers beheren",
+      "categories": [
+        "domeinnamen",
+        "domeinnamen-overige"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "premium-dns",
+      "title": "Premium DNS",
+      "categories": [
+        "domeinnamen",
+        "dns-records"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "alles-over-dnssec",
+      "title": "Alles over DNSSEC",
+      "categories": [
+        "domeinnamen",
+        "dns-records"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "extra-gebruiker-toevoegen-aan-je-klantomgeving",
+      "title": "Extra gebruiker toevoegen aan je klantomgeving",
+      "categories": [
+        "crm-klantenpanel",
+        "shop-en-pakketten",
+        "account-en-inloggen",
+        "shop-en-pakketten-overige"
+      ],
+      "topic": "gap-admin"
+    },
+    {
+      "slug": "automatische-incasso-mislukt",
+      "title": "Automatische incasso mislukt",
+      "categories": [
+        "crm-klantenpanel",
+        "shop-en-pakketten",
+        "facturen-en-betalen",
+        "betalen-en-btw"
+      ],
+      "topic": "gap-admin"
+    },
+    {
+      "slug": "downgraden",
+      "title": "Downgraden",
+      "categories": [
+        "crm-klantenpanel",
+        "shop-en-pakketten",
+        "hostingpakketten",
+        "crm-klantenpanel-overige"
+      ],
+      "topic": "gap-admin"
+    },
+    {
+      "slug": "producten-overdragen-naar-ander-account",
+      "title": "Producten overdragen naar ander account",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "klantenpanel-functies-uitgelegd",
+      "title": "Functies van het klantenpanel uitgelegd",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "overzicht-producten-en-diensten",
+      "title": "Overzicht producten en diensten",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "geval-van-overlijden",
+      "title": "Geval van overlijden",
+      "categories": [
+        "crm-klantenpanel",
+        "shop-en-pakketten",
+        "crm-klantenpanel-overige",
+        "shop-en-pakketten-overige"
+      ],
+      "topic": "gap-admin"
+    },
+    {
+      "slug": "dubbele-betaling",
+      "title": "Dubbele betaling",
+      "categories": [
+        "crm-klantenpanel",
+        "shop-en-pakketten",
+        "facturen-en-betalen",
+        "betalen-en-btw"
+      ],
+      "topic": "gap-admin"
+    },
+    {
+      "slug": "factuur-bij-het-incassobureau",
+      "title": "Factuur bij het incassobureau",
+      "categories": [
+        "crm-klantenpanel",
+        "shop-en-pakketten",
+        "facturen-en-betalen",
+        "betalen-en-btw"
+      ],
+      "topic": "gap-admin"
+    },
+    {
+      "slug": "je-klantnummer-opzoeken",
+      "title": "Je klantnummer opzoeken",
+      "categories": [
+        "crm-klantenpanel",
+        "shop-en-pakketten",
+        "facturen-en-betalen",
+        "shop-en-pakketten-overige"
+      ],
+      "topic": "gap-admin"
+    },
+    {
+      "slug": "klantaccount-activeren-in-klantenpanel",
+      "title": "Klantaccount activeren in het klantenpanel",
+      "categories": [
+        "crm-klantenpanel",
+        "shop-en-pakketten",
+        "account-en-inloggen",
+        "shop-en-pakketten-overige"
+      ],
+      "topic": "gap-admin"
+    },
+    {
+      "slug": "wachtwoorden-veilig-versturen-met-pep",
+      "title": "Wachtwoorden veilig versturen met PEP",
+      "categories": [
+        "veilig-online",
+        "beveiliging",
+        "beveiliging-overige"
+      ],
+      "topic": "gap-sec"
+    },
+    {
+      "slug": "automatische-incasso-instellen",
+      "title": "Automatische incasso instellen",
+      "categories": [
+        "crm-klantenpanel",
+        "shop-en-pakketten",
+        "facturen-en-betalen",
+        "betalen-en-btw"
+      ],
+      "topic": "gap-admin"
+    },
+    {
+      "slug": "mail-versturen-met-wordpress",
+      "title": "Mail versturen met WordPress",
+      "categories": [
+        "vps",
+        "wordpress",
+        "e-mail",
+        "windows-vps",
+        "e-mail-overige",
+        "wordpress-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "domeinnaam-verhuizen",
+      "title": "Domeinnaam verhuizen",
+      "categories": [
+        "domeinnamen",
+        "domeinnamen-overige"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "wordpress-smart-start-bij-triplezero-it",
+      "title": "WordPress snelstart bij TripleZero iT",
+      "categories": [
+        "vps",
+        "wordpress",
+        "wordpress-installatie",
+        "windows-vps"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "webshop-toevoegen-aan-wordpress",
+      "title": "je webshop toevoegen aan WordPress",
+      "categories": [
+        "vps",
+        "wordpress",
+        "windows-vps",
+        "wordpress-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "website-beveiligen-met-ssl",
+      "title": "Je website beveiligen met een SSL-certificaat",
+      "categories": [
+        "ssl-certificaten",
+        "beveiliging"
+      ],
+      "topic": "gap-ssl"
+    },
+    {
+      "slug": "internal-server-500-of-wit-scherm-oplossen",
+      "title": "Internal Server 500 of wit scherm oplossen",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "gedeelde-postvakken-toevoegen-in-microsoft-365",
+      "title": "Gedeelde postvakken toevoegen in Microsoft 365",
+      "categories": [
+        "microsoft",
+        "e-mail",
+        "mailbox-beheer",
+        "microsoft-mail"
+      ],
+      "topic": "gap-ms"
+    },
+    {
+      "slug": "wachtwoord-kopieren-uit-browser-of-tool",
+      "title": "Wachtwoord kopiëren uit browser of tool",
+      "categories": [
+        "veilig-online",
+        "beveiliging",
+        "beveiliging-overige"
+      ],
+      "topic": "gap-sec"
+    },
+    {
+      "slug": "ssl-bestellen-beheren",
+      "title": "SSL-certificaat bestellen en beheren via het klantenpanel",
+      "categories": [
+        "ssl-certificaten",
+        "beveiliging"
+      ],
+      "topic": "gap-ssl"
+    },
+    {
+      "slug": "root-wachtwoord-herstellen-vps",
+      "title": "Root wachtwoord herstellen VPS",
+      "categories": [
+        "vps",
+        "veilig-online",
+        "beveiliging",
+        "linux-vps",
+        "beveiliging-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "microsoft-gebruikers-beheren",
+      "title": "Microsoft 365 gebruikers aanmaken en beheren",
+      "categories": [
+        "microsoft",
+        "microsoft-overige"
+      ],
+      "topic": "gap-ms"
+    },
+    {
+      "slug": "onedrive-bij-triplezero-it",
+      "title": "Aan de slag met OneDrive",
+      "categories": [
+        "microsoft",
+        "microsoft-overige"
+      ],
+      "topic": "gap-ms"
+    },
+    {
+      "slug": "klachtenprocedure",
+      "title": "Klachtenprocedure",
+      "categories": [
+        "support",
+        "support-overige"
+      ],
+      "topic": "gap-support"
+    },
+    {
+      "slug": "alles-over-de-tel-domeinnaam",
+      "title": "Alles over de .tel-domeinnaam",
+      "categories": [
+        "domeinnamen",
+        "domeinnamen-overige"
+      ],
+      "topic": "gap-tld"
+    },
+    {
+      "slug": "ssl-validatie",
+      "title": "SSL validatie door Certificate Signing Request",
+      "categories": [
+        "ssl-certificaten",
+        "beveiliging"
+      ],
+      "topic": "gap-ssl"
+    },
+    {
+      "slug": "ip-adressen-beheren-op-je-vps",
+      "title": "IP-adressen beheren op je VPS",
+      "categories": [
+        "vps",
+        "vps-beheer"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "kwaliteitsgarantie",
+      "title": "Kwaliteitsgarantie",
+      "categories": [
+        "support",
+        "support-overige"
+      ],
+      "topic": "gap-support"
+    },
+    {
+      "slug": "probleemoplossing-novnc-console",
+      "title": "Probleemoplossing noVNC-console",
+      "categories": [
+        "vps",
+        "linux-vps"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "software-voor-de-applicatie-vps-triplezero-it",
+      "title": "Software voor een applicatie-VPS bij TripleZero iT",
+      "categories": [
+        "vps",
+        "vps-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "managed-vps-beheren-bij-triplezero-it",
+      "title": "Een managed VPS beheren bij TripleZero iT",
+      "categories": [
+        "vps",
+        "vps-beheer"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "cpu-cores-en-ram-voor-vps",
+      "title": "CPU Cores en RAM voor VPS",
+      "categories": [
+        "vps",
+        "vps-beheer"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "vps-hosting",
+      "title": "VPS hosting",
+      "categories": [
+        "vps",
+        "vps-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "dns-service-en-externe-domeinnamen",
+      "title": "DNS-service en externe domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domeinnamen-overige"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "domeinnaam-doorsturen",
+      "title": "Domeinnaam doorsturen of doorlinken",
+      "categories": [
+        "domeinnamen",
+        "domeinnamen-overige"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "domein-verhuizen-naar-een-andere-provider",
+      "title": "Domein verhuizen naar een andere provider",
+      "categories": [
+        "domeinnamen",
+        "domeinnamen-overige"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "domeinnaam-overdragen-via-je-klantomgeving",
+      "title": "Domeinnaam overdragen via je klantomgeving",
+      "categories": [
+        "domeinnamen",
+        "domein-verhuizen"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "domeinnaam-probleemoplossing",
+      "title": "Domeinnaam probleemoplossing",
+      "categories": [
+        "domeinnamen",
+        "domeinnamen-overige"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "domeinnaam-kopen-zonder-hosting",
+      "title": "Domeinnaam kopen zonder hosting",
+      "categories": [
+        "domeinnamen",
+        "domeinnamen-overige"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "domeinnamen-bij-triplezero-it-verkopen-via-sedo",
+      "title": "Domeinnamen verkopen via Sedo",
+      "categories": [
+        "domeinnamen",
+        "domeinnamen-overige"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "validatiemail-voor-topleveldomeinnamen",
+      "title": "Validatiemail voor topleveldomeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "domeinnaamregistratie",
+      "title": "Domeinnaamregistratie",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "premium-domeinnamen",
+      "title": "Premium domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "topic": "gap-dns"
+    },
+    {
+      "slug": "fraude-voorkomen",
+      "title": "Fraude voorkomen",
+      "categories": [
+        "veilig-online",
+        "beveiliging",
+        "beveiliging-overige"
+      ],
+      "topic": "gap-sec"
+    },
+    {
+      "slug": "begrippenlijst",
+      "title": "Begrippenlijst",
+      "categories": [
+        "support",
+        "support-overige"
+      ],
+      "topic": "gap-support"
+    },
+    {
+      "slug": "probleemoplossing-mail",
+      "title": "Probleemoplossing e-mail",
+      "categories": [
+        "e-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "uitgaande-e-mailserver-wijzigen",
+      "title": "Uitgaande e-mailserver wijzigen",
+      "categories": [
+        "e-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "nieuw-e-mailwachtwoord-instellen",
+      "title": "Nieuw e-mailwachtwoord instellen",
+      "categories": [
+        "e-mail",
+        "veilig-online",
+        "beveiliging",
+        "beveiliging-overige",
+        "e-mail-overige"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "website-vindbaar-maken-in-google",
+      "title": "Website vindbaar maken in Google",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "mappen-beveiligen-hostingpakket",
+      "title": "Mappen beveiligen in een hostingpakket",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "mail-instellen-in-thunderbird",
+      "title": "E-mail instellen in Thunderbird",
+      "categories": [
+        "e-mail",
+        "e-mail-instellen"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "inloggen-op-je-klantomgeving",
+      "title": "Inloggen op je klantomgeving en wachtwoord wijzigen",
+      "categories": [
+        "crm-klantenpanel",
+        "shop-en-pakketten",
+        "veilig-online",
+        "account-en-inloggen",
+        "shop-en-pakketten-overige"
+      ],
+      "topic": "gap-admin"
+    },
+    {
+      "slug": "mailadressen-en-postvakken-aanmaken",
+      "title": "Mailadressen en postvakken aanmaken",
+      "categories": [
+        "e-mail",
+        "mailbox-beheer"
+      ],
+      "topic": "gap-email"
+    },
+    {
+      "slug": "backups-terugplaatsen",
+      "title": "Backups terugplaatsen",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "betekenis-http-statuscodes",
+      "title": "Betekenis van HTTP-statuscodes",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "veilige-wachtwoorden-maken",
+      "title": "Veilige wachtwoorden maken",
+      "categories": [
+        "veilig-online",
+        "beveiliging",
+        "beveiliging-overige"
+      ],
+      "topic": "gap-sec"
+    },
+    {
+      "slug": "inloggen-op-je-mysql-database",
+      "title": "Inloggen op je MySQL database",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "patchman",
+      "title": "Patchman",
+      "categories": [
+        "veilig-online",
+        "beveiliging",
+        "beveiliging-overige"
+      ],
+      "topic": "gap-sec"
+    },
+    {
+      "slug": "beveiliging-en-privacy-microsoft-data",
+      "title": "Beveiliging en privacy voor je Microsoft data",
+      "categories": [
+        "microsoft",
+        "microsoft-overige"
+      ],
+      "topic": "gap-ms"
+    },
+    {
+      "slug": "domeinnaam-koppelen-aan-microsoft-365",
+      "title": "Domeinnaam koppelen aan Microsoft 365",
+      "categories": [
+        "microsoft",
+        "domeinnamen",
+        "domeinnamen-overige",
+        "microsoft-overige"
+      ],
+      "topic": "gap-ms"
+    },
+    {
+      "slug": "microsoft-365-mail-van-triplezero-it-toevoegen-in-outlook",
+      "title": "Microsoft 365 mail toevoegen in Outlook",
+      "categories": [
+        "microsoft",
+        "e-mail",
+        "microsoft-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-ms"
+    },
+    {
+      "slug": "microsoft-365-mail-toevoegen-in-outlook-op-je-telefoon",
+      "title": "Microsoft 365 mail toevoegen in Outlook op je telefoon",
+      "categories": [
+        "microsoft",
+        "e-mail",
+        "microsoft-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-ms"
+    },
+    {
+      "slug": "de-outlook-web-app-bij-triplezero-it",
+      "title": "De Outlook Web App (OWA) gebruiken",
+      "categories": [
+        "microsoft",
+        "e-mail",
+        "microsoft-mail",
+        "e-mail-overige"
+      ],
+      "topic": "gap-ms"
+    },
+    {
+      "slug": "imicrosoft-inloggen-wachtwoordbeheer",
+      "title": "Microsoft inloggen en wachtwoordbeheer",
+      "categories": [
+        "microsoft",
+        "veilig-online",
+        "beveiliging",
+        "beveiliging-overige",
+        "microsoft-overige"
+      ],
+      "topic": "gap-ms"
+    },
+    {
+      "slug": "faq-en-support-onedrive",
+      "title": "Veelgestelde vragen en support voor OneDrive",
+      "categories": [
+        "microsoft",
+        "microsoft-overige"
+      ],
+      "topic": "gap-ms"
+    },
+    {
+      "slug": "kopie-id-veilig-versturen",
+      "title": "Kopie ID veilig versturen",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "microsoft-onderdelen-uitgelegd",
+      "title": "Microsoft-onderdelen uitgelegd",
+      "categories": [
+        "microsoft",
+        "microsoft-overige"
+      ],
+      "topic": "gap-ms"
+    },
+    {
+      "slug": "gegevens-wijzigen-in-je-klantomgeving",
+      "title": "Gegevens wijzigen in je klantomgeving",
+      "categories": [
+        "crm-klantenpanel",
+        "shop-en-pakketten",
+        "crm-klantenpanel-overige",
+        "shop-en-pakketten-overige"
+      ],
+      "topic": "gap-admin"
+    },
+    {
+      "slug": "microsoft-licentie-bestellen-en-beheren",
+      "title": "Bestellen en beheren van je Microsoft-producten",
+      "categories": [
+        "microsoft",
+        "microsoft-overige"
+      ],
+      "topic": "gap-ms"
+    },
+    {
+      "slug": "producten-bestellen-in-je-klantomgeving",
+      "title": "Producten bestellen in je klantomgeving",
+      "categories": [
+        "crm-klantenpanel",
+        "shop-en-pakketten",
+        "crm-klantenpanel-overige",
+        "shop-en-pakketten-overige"
+      ],
+      "topic": "gap-admin"
+    },
+    {
+      "slug": "wordpress-onderhouden-bij-triplezero-it",
+      "title": "WordPress onderhouden bij TripleZero iT",
+      "categories": [
+        "vps",
+        "wordpress",
+        "wordpress-onderhoud",
+        "windows-vps"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "website-statistieken",
+      "title": "Website statistieken",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "informatie-over-wordpress",
+      "title": "Informatie over WordPress",
+      "categories": [
+        "vps",
+        "wordpress",
+        "windows-vps",
+        "wordpress-overige"
+      ],
+      "topic": "gap-vps"
+    },
+    {
+      "slug": "browsergeschiedenis-wissen",
+      "title": "Browsergeschiedenis wissen",
+      "categories": [
+        "support",
+        "support-overige"
+      ],
+      "topic": "gap-support"
+    },
+    {
+      "slug": "bestandsbeheer-in-plesk",
+      "title": "Bestandsbeheer in Plesk",
+      "categories": [
+        "plesk"
+      ],
+      "topic": "gap-plesk"
+    },
+    {
+      "slug": "upgraden",
+      "title": "Producten upgraden",
+      "categories": [
+        "crm-klantenpanel",
+        "shop-en-pakketten",
+        "hostingpakketten",
+        "crm-klantenpanel-overige"
+      ],
+      "topic": "gap-admin"
+    },
+    {
+      "slug": "privemodus-gebruiken",
+      "title": "Privémodus gebruiken",
+      "categories": [
+        "support",
+        "support-overige"
+      ],
+      "topic": "gap-support"
+    },
+    {
+      "slug": "website-backup-maken",
+      "title": "Website backup maken",
+      "categories": [
+        "hosting",
+        "hosting-overige"
+      ],
+      "topic": "gap-host"
+    },
+    {
+      "slug": "software-installeren-drupal-prestashop-joomla",
+      "title": "Software installeren (Drupal, Prestashop, Joomla)",
+      "categories": [
+        "hosting",
+        "wordpress",
+        "wordpress-installatie",
+        "hosting-overige"
+      ],
+      "topic": "gap-builder"
+    },
+    {
+      "slug": "gratis-ssl-activeren-beheren",
+      "title": "Gratis SSL-certificaat activeren en beheren",
+      "categories": [
+        "ssl-certificaten",
+        "beveiliging"
+      ],
+      "topic": "gap-ssl"
+    },
+    {
+      "slug": "gebruikers-beheren-in-plesk",
+      "title": "Gebruikers beheren in Plesk",
+      "categories": [
+        "plesk"
+      ],
+      "topic": "gap-plesk"
+    },
+    {
+      "slug": "acties-en-kortingen",
+      "title": "Acties en kortingen",
+      "categories": [
+        "crm-klantenpanel",
+        "shop-en-pakketten",
+        "betalen-en-btw",
+        "crm-klantenpanel-overige"
+      ],
+      "topic": "gap-admin"
+    },
+    {
+      "slug": "overzicht-menu-items-in-plesk",
+      "title": "Overzicht menu items in Plesk",
+      "categories": [
+        "plesk"
+      ],
+      "topic": "gap-plesk"
     }
   ]
 }

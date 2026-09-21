@@ -592,7 +592,8 @@
     "illustrationFooter": "TripleZero iT Wissensdatenbank",
     "seoTitleSuffix": "Wissensdatenbank",
     "tipLabel": "Tipp",
-    "warnLabel": "Hinweis"
+    "warnLabel": "Hinweis",
+    "subcategoriesLabel": "Unterkategorien"
   },
   "faqPage": {
     "eyebrow": "FAQ",

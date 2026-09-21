@@ -41,7 +41,7 @@ import {
 } from "../src/lib/google-translate";
 
 type Catalog = {
-  categories: [string, string, string][];
+  categories: Array<[string, string, string] | [string, string, string, string]>;
   articles: { slug: string; title: string; categories: string[]; topic: string }[];
 };
 

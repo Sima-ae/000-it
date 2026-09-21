@@ -10,12 +10,19 @@ import { PrismaClient } from "@prisma/client";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { buildArticleHtml, buildExcerpt } from "./kennisbank/build-body";
-import { CATEGORY_I18N, categoryCopy } from "./kennisbank/i18n";
+import {
+  CATEGORY_I18N,
+  OVERIGE_I18N,
+  categoryCopy,
+  isOverigeCategorySlug,
+} from "./kennisbank/i18n";
 
 const prisma = new PrismaClient();
 
+type CatalogCategory = [string, string, string] | [string, string, string, string];
+
 type Catalog = {
-  categories: [string, string, string][];
+  categories: CatalogCategory[];
   articles: { slug: string; title: string; categories: string[]; topic: string }[];
 };
 
@@ -34,7 +41,8 @@ async function main() {
   const catalog = JSON.parse(readFileSync(catalogPath, "utf8")) as Catalog;
   const categoryIdBySlug = new Map<string, string>();
 
-  for (const [slug, name, description] of catalog.categories) {
+  for (const row of catalog.categories) {
+    const [slug, name, description] = row;
     let cat = await prisma.kennisbankCategory.findUnique({ where: { slug } });
     if (!cat) {
       cat = await prisma.kennisbankCategory.create({
@@ -53,11 +61,33 @@ async function main() {
       update: { name, description },
     });
 
-    for (const locale of CATEGORY_LOCALES) {
+    if (isOverigeCategorySlug(slug)) {
+      await prisma.entitySlug.upsert({
+        where: {
+          entityType_entityKey_locale: {
+            entityType: "kb_category",
+            entityKey: slug,
+            locale: "nl",
+          },
+        },
+        create: {
+          entityType: "kb_category",
+          entityKey: slug,
+          locale: "nl",
+          slug,
+        },
+        update: {},
+      });
+    }
+
+    const localesToWrite = isOverigeCategorySlug(slug)
+      ? Object.keys(OVERIGE_I18N)
+      : [...CATEGORY_LOCALES];
+    for (const locale of localesToWrite) {
       const copy = categoryCopy(slug, locale, { name, description });
       // Prefer explicit map; fall back to English map for missing locale rows
       const mapped = CATEGORY_I18N[slug]?.[locale] || CATEGORY_I18N[slug]?.en;
-      const finalCopy = mapped || copy;
+      const finalCopy = isOverigeCategorySlug(slug) ? copy : mapped || copy;
       await prisma.kennisbankCategoryTranslation.upsert({
         where: { categoryId_locale: { categoryId: cat.id, locale } },
         create: {
@@ -71,9 +101,39 @@ async function main() {
           description: finalCopy.description,
         },
       });
+      if (isOverigeCategorySlug(slug)) {
+        await prisma.entitySlug.upsert({
+          where: {
+            entityType_entityKey_locale: {
+              entityType: "kb_category",
+              entityKey: slug,
+              locale,
+            },
+          },
+          create: {
+            entityType: "kb_category",
+            entityKey: slug,
+            locale,
+            slug,
+          },
+          update: {},
+        });
+      }
     }
 
     categoryIdBySlug.set(slug, cat.id);
+  }
+
+  for (const row of catalog.categories) {
+    const slug = row[0];
+    const parentSlug = row[3];
+    const id = categoryIdBySlug.get(slug);
+    if (!id) continue;
+    const parentId = parentSlug ? categoryIdBySlug.get(parentSlug) || null : null;
+    await prisma.kennisbankCategory.update({
+      where: { id },
+      data: { parentId: parentId && parentId !== id ? parentId : null },
+    });
   }
 
   let created = 0;

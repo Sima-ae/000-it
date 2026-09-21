@@ -645,12 +645,16 @@ model KennisbankCategory {
   slug         String   @unique
   sortKey      String
   published    Boolean  @default(true)
+  parentId     String?
+  parent       KennisbankCategory?  @relation("KennisbankCategoryTree", fields: [parentId], references: [id], onDelete: SetNull)
+  children     KennisbankCategory[] @relation("KennisbankCategoryTree")
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
   translations KennisbankCategoryTranslation[]
   articles     KennisbankArticleCategory[]
 
   @@index([published, sortKey])
+  @@index([parentId])
 }
 
 model KennisbankCategoryTranslation {

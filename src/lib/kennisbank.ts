@@ -26,6 +26,10 @@ export type KennisbankCategoryView = {
   name: string;
   description: string | null;
   articleCount: number;
+  parentId: string | null;
+  parentSlug: string | null;
+  parentName: string | null;
+  children: KennisbankCategoryView[];
   createdAt: string;
   updatedAt: string;
 };
@@ -57,6 +61,7 @@ export const categoryUpsertSchema = z.object({
   name: z.string().min(1).max(160),
   description: z.string().max(2000).nullable().optional(),
   locale: z.string().min(2).max(10).default("nl"),
+  parentId: z.string().min(1).max(40).nullable().optional(),
 });
 
 export const articleUpsertSchema = z.object({
@@ -104,6 +109,7 @@ export async function listCategories(opts?: {
   const rows = await prisma.kennisbankCategory.findMany({
     where: opts?.all ? undefined : { published: true },
     include: {
+      parent: { include: { translations: true } },
       translations: true,
       _count: {
         select: {
@@ -115,22 +121,77 @@ export async function listCategories(opts?: {
     },
   });
 
-  return rows
-    .map((row) => {
-      const tr = pickTranslation(row.translations, locale);
-      return {
-        id: row.id,
-        slug: row.slug,
-        sortKey: row.sortKey,
-        published: row.published,
-        name: brandify(tr?.name || row.sortKey),
-        description: tr?.description != null ? brandify(tr.description) : null,
-        articleCount: row._count.articles,
-        createdAt: row.createdAt.toISOString(),
-        updatedAt: row.updatedAt.toISOString(),
-      };
-    })
-    .sort((a, b) => localeCompareFor(locale, a.name, b.name));
+  const mapped = rows.map((row) => {
+    const tr = pickTranslation(row.translations, locale);
+    const parentTr = row.parent
+      ? pickTranslation(row.parent.translations, locale)
+      : undefined;
+    return {
+      id: row.id,
+      slug: row.slug,
+      sortKey: row.sortKey,
+      published: row.published,
+      name: brandify(tr?.name || row.sortKey),
+      description: tr?.description != null ? brandify(tr.description) : null,
+      articleCount: row._count.articles,
+      parentId: row.parentId,
+      parentSlug: row.parent?.slug || null,
+      parentName: parentTr
+        ? brandify(parentTr.name)
+        : row.parent
+          ? brandify(row.parent.sortKey)
+          : null,
+      children: [] as KennisbankCategoryView[],
+      createdAt: row.createdAt.toISOString(),
+      updatedAt: row.updatedAt.toISOString(),
+    } satisfies KennisbankCategoryView;
+  });
+
+  const byId = new Map(mapped.map((c) => [c.id, c]));
+  for (const cat of mapped) {
+    if (!cat.parentId) continue;
+    const parent = byId.get(cat.parentId);
+    if (parent) parent.children.push(cat);
+  }
+  for (const cat of mapped) {
+    cat.children.sort((a, b) => {
+      const aOverige = a.slug.endsWith("-overige") ? 1 : 0;
+      const bOverige = b.slug.endsWith("-overige") ? 1 : 0;
+      if (aOverige !== bOverige) return aOverige - bOverige;
+      return localeCompareFor(locale, a.name, b.name);
+    });
+  }
+
+  const links = await prisma.kennisbankArticleCategory.findMany({
+    where: opts?.all ? undefined : { article: { published: true } },
+    select: { articleId: true, categoryId: true },
+  });
+  const articlesByCat = new Map<string, Set<string>>();
+  for (const link of links) {
+    const set = articlesByCat.get(link.categoryId) || new Set<string>();
+    set.add(link.articleId);
+    articlesByCat.set(link.categoryId, set);
+  }
+  const uniqueInTree = (id: string, seenCats: Set<string>): Set<string> => {
+    if (seenCats.has(id)) return new Set();
+    seenCats.add(id);
+    const ids = new Set(articlesByCat.get(id) || []);
+    const node = byId.get(id);
+    if (!node) return ids;
+    for (const child of node.children) {
+      for (const articleId of uniqueInTree(child.id, seenCats)) ids.add(articleId);
+    }
+    return ids;
+  };
+  for (const cat of mapped) {
+    cat.articleCount = uniqueInTree(cat.id, new Set()).size;
+  }
+
+  return mapped.sort((a, b) => localeCompareFor(locale, a.name, b.name));
+}
+
+export function topLevelCategories(categories: KennisbankCategoryView[]) {
+  return categories.filter((c) => !c.parentId);
 }
 
 export async function getCategoryBySlug(
@@ -138,33 +199,8 @@ export async function getCategoryBySlug(
   opts?: { locale?: string; all?: boolean },
 ): Promise<KennisbankCategoryView | null> {
   const locale = opts?.locale || KENNISBANK_FALLBACK_LOCALE;
-  const row = await prisma.kennisbankCategory.findUnique({
-    where: { slug },
-    include: {
-      translations: true,
-      _count: {
-        select: {
-          articles: opts?.all
-            ? true
-            : { where: { article: { published: true } } },
-        },
-      },
-    },
-  });
-  if (!row) return null;
-  if (!opts?.all && !row.published) return null;
-  const tr = pickTranslation(row.translations, locale);
-  return {
-    id: row.id,
-    slug: row.slug,
-    sortKey: row.sortKey,
-    published: row.published,
-    name: brandify(tr?.name || row.sortKey),
-    description: tr?.description != null ? brandify(tr.description) : null,
-    articleCount: row._count.articles,
-    createdAt: row.createdAt.toISOString(),
-    updatedAt: row.updatedAt.toISOString(),
-  };
+  const all = await listCategories({ locale, all: opts?.all });
+  return all.find((c) => c.slug === slug) || null;
 }
 
 export async function createCategory(input: z.infer<typeof categoryUpsertSchema>) {
@@ -179,6 +215,7 @@ export async function createCategory(input: z.infer<typeof categoryUpsertSchema>
       slug,
       sortKey,
       published: input.published ?? true,
+      parentId: input.parentId || null,
       translations: {
         create: {
           locale,
@@ -187,7 +224,6 @@ export async function createCategory(input: z.infer<typeof categoryUpsertSchema>
         },
       },
     },
-    include: { translations: true, _count: { select: { articles: true } } },
   });
 
   // Propagate to English (source for other langs) + all enabled locales.
@@ -202,18 +238,9 @@ export async function createCategory(input: z.infer<typeof categoryUpsertSchema>
     title: name,
   }).catch((error) => console.warn("[kennisbank] category slug", error));
 
-  const tr = pickTranslation(row.translations, locale);
-  return {
-    id: row.id,
-    slug: row.slug,
-    sortKey: row.sortKey,
-    published: row.published,
-    name: brandify(tr?.name || row.sortKey),
-    description: tr?.description != null ? brandify(tr.description) : null,
-    articleCount: row._count.articles,
-    createdAt: row.createdAt.toISOString(),
-    updatedAt: row.updatedAt.toISOString(),
-  } satisfies KennisbankCategoryView;
+  const view = await getCategoryBySlug(slug, { locale, all: true });
+  if (!view) throw new Error("Category not found after create");
+  return view;
 }
 
 export async function updateCategory(
@@ -226,12 +253,20 @@ export async function updateCategory(
   const name = input.name.trim();
   const description = input.description?.trim() || null;
 
+  const parentId =
+    input.parentId === undefined
+      ? undefined
+      : input.parentId && input.parentId !== id
+        ? input.parentId
+        : null;
+
   await prisma.kennisbankCategory.update({
     where: { id },
     data: {
       slug,
       sortKey,
       published: input.published ?? true,
+      ...(parentId !== undefined ? { parentId } : {}),
     },
   });
 
@@ -406,12 +441,30 @@ export async function listArticles(opts?: {
   const locale = opts?.locale || KENNISBANK_FALLBACK_LOCALE;
   const search = opts?.search?.trim();
 
+  let categoryFilter: { categories?: { some: { categoryId?: { in: string[] }; category?: { slug: string } } } } = {};
+  if (opts?.categorySlug) {
+    const tree = await listCategories({ locale, all: opts?.all });
+    const node = tree.find((c) => c.slug === opts.categorySlug);
+    const ids = new Set<string>();
+    const walk = (cat: KennisbankCategoryView | undefined) => {
+      if (!cat) return;
+      ids.add(cat.id);
+      cat.children.forEach(walk);
+    };
+    walk(node);
+    if (ids.size) {
+      categoryFilter = { categories: { some: { categoryId: { in: [...ids] } } } };
+    } else {
+      categoryFilter = {
+        categories: { some: { category: { slug: opts.categorySlug } } },
+      };
+    }
+  }
+
   const rows = await prisma.kennisbankArticle.findMany({
     where: {
       ...(opts?.all ? {} : { published: true }),
-      ...(opts?.categorySlug
-        ? { categories: { some: { category: { slug: opts.categorySlug } } } }
-        : {}),
+      ...categoryFilter,
       ...(search
         ? {
             translations: {

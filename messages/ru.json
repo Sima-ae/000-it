@@ -592,7 +592,8 @@
     "illustrationFooter": "База знаний TripleZero iT",
     "seoTitleSuffix": "База знаний",
     "tipLabel": "Совет",
-    "warnLabel": "Важно"
+    "warnLabel": "Важно",
+    "subcategoriesLabel": "Подкатегории"
   },
   "faqPage": {
     "eyebrow": "FAQ",

@@ -592,7 +592,8 @@
     "illustrationFooter": "TripleZero iT bilgi bankası",
     "seoTitleSuffix": "Bilgi bankası",
     "tipLabel": "İpucu",
-    "warnLabel": "Dikkat"
+    "warnLabel": "Dikkat",
+    "subcategoriesLabel": "Alt kategoriler"
   },
   "faqPage": {
     "eyebrow": "FAQ",

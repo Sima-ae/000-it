@@ -28,11 +28,17 @@ export function KennisbankCategoryGrid({
   const filtered = useMemo(() => {
     const needle = q.trim().toLowerCase();
     if (!needle) return categories;
-    return categories.filter(
-      (c) =>
+    return categories.filter((c) => {
+      const inParent =
         c.name.toLowerCase().includes(needle) ||
-        (c.description || "").toLowerCase().includes(needle),
-    );
+        (c.description || "").toLowerCase().includes(needle);
+      const inChild = c.children.some(
+        (ch) =>
+          ch.name.toLowerCase().includes(needle) ||
+          (ch.description || "").toLowerCase().includes(needle),
+      );
+      return inParent || inChild;
+    });
   }, [categories, q]);
 
   return (
@@ -51,18 +57,18 @@ export function KennisbankCategoryGrid({
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {filtered.map((cat, i) => (
           <Reveal key={cat.id} delay={Math.min(i, 8) * 0.04}>
-            <SoftLink
-              href={localizedHref(locale, `/kennisbank/${cat.slug}`)}
-              className="block h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
-            >
-              <GlassCard className="group h-full overflow-hidden p-0 transition hover:border-primary/40 hover:shadow-md">
+            <GlassCard className="group h-full overflow-hidden p-0 transition hover:border-primary/40 hover:shadow-md">
+              <SoftLink
+                href={localizedHref(locale, `/kennisbank/${cat.slug}`)}
+                className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+              >
                 <div
                   className={`h-2 w-full bg-linear-to-r ${accents[i % accents.length]}`}
                   aria-hidden
                 />
                 <div className="p-5">
                   <div className="flex items-start justify-between gap-3">
-                    <h2 className="font-display text-lg font-semibold tracking-tight transition group-hover:text-primary">
+                    <h2 className="font-display text-lg font-semibold tracking-tight text-primary">
                       {cat.name}
                     </h2>
                     <span className="shrink-0 rounded-full bg-primary/10 px-2.5 py-1 text-[11px] font-semibold text-primary">
@@ -78,8 +84,8 @@ export function KennisbankCategoryGrid({
                     {cat.articleCount} {articlesLabel} →
                   </p>
                 </div>
-              </GlassCard>
-            </SoftLink>
+              </SoftLink>
+            </GlassCard>
           </Reveal>
         ))}
       </div>

@@ -592,7 +592,8 @@
     "illustrationFooter": "Knowledge base TripleZero iT",
     "seoTitleSuffix": "Base di conoscenza",
     "tipLabel": "Suggerimento",
-    "warnLabel": "Attenzione"
+    "warnLabel": "Attenzione",
+    "subcategoriesLabel": "Sottocategorie"
   },
   "faqPage": {
     "eyebrow": "FAQ",

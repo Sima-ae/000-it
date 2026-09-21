@@ -571,8 +571,9 @@
   },
   "kennisbank": {
     "title": "Kennisbank",
-    "subtitle": "Informatie over domeinnamen, hosting, e-mail, control panels, WordPress, beveiliging en onze TripleZero-producten — stap voor stap, met professionele uitleg.",
+    "subtitle": "Informatie over domeinnamen, hosting, e-mail, VPS, Microsoft 365, SSL, control panels, WordPress, beveiliging en onze TripleZero-producten — stap voor stap, met professionele uitleg.",
     "categoriesLabel": "categorieën",
+    "subcategoriesLabel": "Subcategorieën",
     "articlesLabel": "artikelen",
     "articlesInCategory": "artikelen in deze categorie",
     "searchPlaceholder": "Zoeken in de kennisbank…",

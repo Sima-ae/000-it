@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/marketing/Reveal";
 import { GlassCard } from "@/components/marketing/GlassCard";
 import { KennisbankCategoryGrid } from "@/components/kennisbank/KennisbankCategoryGrid";
-import { listArticles, listCategories } from "@/lib/kennisbank";
+import { listArticles, listCategories, topLevelCategories } from "@/lib/kennisbank";
 import { buildStaticPageMetadata } from "@/lib/seo";
 import { localizedHref } from "@/i18n/pathnames";
 
@@ -38,7 +38,7 @@ export default async function KennisbankPage({
   let categories: Awaited<ReturnType<typeof listCategories>> = [];
   let total = 0;
   try {
-    categories = await listCategories({ locale });
+    categories = topLevelCategories(await listCategories({ locale }));
     const articles = await listArticles({ locale });
     total = articles.length;
   } catch (error) {
@@ -57,7 +57,7 @@ export default async function KennisbankPage({
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
               {t("brandEyebrow")}
             </p>
-            <h1 className="font-display mt-3 text-4xl font-semibold tracking-tight md:text-5xl">
+            <h1 className="font-display mt-3 text-4xl font-semibold tracking-tight text-primary md:text-5xl">
               {t("title")}
             </h1>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
@@ -84,7 +84,7 @@ export default async function KennisbankPage({
         <aside className="mt-12">
           <GlassCard className="flex flex-col gap-4 p-6 sm:flex-row sm:items-center sm:justify-between md:p-8">
             <div>
-              <h2 className="font-display text-xl font-semibold tracking-tight">
+              <h2 className="font-display text-xl font-semibold tracking-tight text-primary">
                 {t("ctaTitle")}
               </h2>
               <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">

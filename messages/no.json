@@ -592,7 +592,8 @@
     "illustrationFooter": "TripleZero iT kunnskapsbase",
     "seoTitleSuffix": "Kunnskapsbase",
     "tipLabel": "Tips",
-    "warnLabel": "Merk"
+    "warnLabel": "Merk",
+    "subcategoriesLabel": "Underkategorier"
   },
   "faqPage": {
     "eyebrow": "FAQ",

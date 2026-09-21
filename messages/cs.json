@@ -592,7 +592,8 @@
     "illustrationFooter": "Znalostní báze TripleZero iT",
     "seoTitleSuffix": "Znalostní báze",
     "tipLabel": "Tip",
-    "warnLabel": "Pozor"
+    "warnLabel": "Pozor",
+    "subcategoriesLabel": "Podkategorie"
   },
   "faqPage": {
     "eyebrow": "FAQ",

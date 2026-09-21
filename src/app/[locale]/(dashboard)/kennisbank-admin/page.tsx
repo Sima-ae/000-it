@@ -143,6 +143,13 @@ export default function KennisbankAdminPage() {
                   <div className="flex flex-wrap items-center gap-2">
                     <p className="font-medium">{item.name}</p>
                     <Badge variant="secondary">{item.articleCount} artikelen</Badge>
+                    {item.parentName ? (
+                      <Badge variant="outline">in {item.parentName}</Badge>
+                    ) : item.children.length ? (
+                      <Badge variant="outline">
+                        {item.children.length} subcategorie{item.children.length === 1 ? "" : "ën"}
+                      </Badge>
+                    ) : null}
                     {!item.published ? (
                       <Badge variant="outline">Concept</Badge>
                     ) : null}
@@ -166,6 +173,7 @@ export default function KennisbankAdminPage() {
                         name: item.name,
                         description: item.description || "",
                         published: item.published,
+                        parentId: item.parentId,
                       });
                       setCatOpen(true);
                     }}
@@ -318,6 +326,7 @@ export default function KennisbankAdminPage() {
             <KennisbankCategoryForm
               key={editingCat?.id || "create-cat"}
               initial={editingCat || undefined}
+              parentOptions={categoryOptions}
               onCancel={() => {
                 setCatOpen(false);
                 setEditingCat(null);

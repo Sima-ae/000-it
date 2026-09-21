@@ -2,6 +2,7 @@
  * Generates original Dutch HTML knowledge-base articles for TripleZero iT.
  * Content is topic-driven — not copied from third-party hosts.
  */
+import { buildGapArticleHtml } from "./gap-bodies";
 
 const BRAND = "TripleZero iT";
 
@@ -1336,6 +1337,9 @@ export function buildArticleHtml(
   const ctx = { title, topic };
   if (locale !== "nl") {
     return englishGenericBody(ctx);
+  }
+  if (topic.startsWith("gap-")) {
+    return buildGapArticleHtml(title, topic);
   }
   const builder = topicBuilders[topic];
   if (builder) return builder(ctx);

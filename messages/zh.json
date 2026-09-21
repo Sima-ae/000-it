@@ -592,7 +592,8 @@
     "illustrationFooter": "TripleZero iT 知识库",
     "seoTitleSuffix": "知识库",
     "tipLabel": "提示",
-    "warnLabel": "注意"
+    "warnLabel": "注意",
+    "subcategoriesLabel": "子分类"
   },
   "faqPage": {
     "eyebrow": "FAQ",

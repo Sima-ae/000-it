@@ -2,6 +2,152 @@
  * Locale → English title helpers + category translations for kennisbank seed/UI.
  * Article bodies: NL (primary) + EN (fallback for all other locales).
  */
+import { SUBCATEGORY_I18N } from "./subcategory-i18n";
+
+/** Catch-all subcategory for leftover articles (display names in every site locale). */
+export const OVERIGE_I18N: Record<string, { name: string; description: string }> = {
+  en: {
+    name: "Other",
+    description: "Remaining articles in this category that do not belong to a specific topic.",
+  },
+  de: {
+    name: "Sonstiges",
+    description: "Weitere Artikel in dieser Kategorie, die zu keinem spezifischen Thema gehören.",
+  },
+  fr: {
+    name: "Autres",
+    description: "Articles restants dans cette catégorie qui n'appartiennent à aucun sujet spécifique.",
+  },
+  es: {
+    name: "Otros",
+    description: "Artículos restantes de esta categoría que no pertenecen a un tema concreto.",
+  },
+  pt: {
+    name: "Outros",
+    description: "Artigos restantes nesta categoria que não pertencem a um tema específico.",
+  },
+  it: {
+    name: "Altri",
+    description: "Articoli restanti in questa categoria che non appartengono a un argomento specifico.",
+  },
+  el: {
+    name: "Άλλα",
+    description: "Τα υπόλοιπα άρθρα αυτής της κατηγορίας που δεν ανήκουν σε συγκεκριμένο θέμα.",
+  },
+  pl: {
+    name: "Pozostałe",
+    description: "Pozostałe artykuły w tej kategorii, które nie należą do konkretnego tematu.",
+  },
+  cs: {
+    name: "Ostatní",
+    description: "Zbývající články v této kategorii, které nepatří ke konkrétnímu tématu.",
+  },
+  sk: {
+    name: "Ostatné",
+    description: "Zostávajúce články v tejto kategórii, ktoré nepatria ku konkrétnej téme.",
+  },
+  hu: {
+    name: "Egyéb",
+    description: "A kategória fennmaradó cikkei, amelyek nem tartoznak egy adott témához.",
+  },
+  ro: {
+    name: "Altele",
+    description: "Articolele rămase din această categorie care nu aparțin unui subiect anume.",
+  },
+  bg: {
+    name: "Други",
+    description: "Останалите статии в тази категория, които не принадлежат към конкретна тема.",
+  },
+  hr: {
+    name: "Ostalo",
+    description: "Preostali članci u ovoj kategoriji koji ne spadaju u određenu temu.",
+  },
+  sr: {
+    name: "Остало",
+    description: "Преостали чланци у овој категорији који не припадају одређеној теми.",
+  },
+  bs: {
+    name: "Ostalo",
+    description: "Preostali članci u ovoj kategoriji koji ne spadaju u određenu temu.",
+  },
+  cnr: {
+    name: "Ostalo",
+    description: "Preostali članci u ovoj kategoriji koji ne spadaju u određenu temu.",
+  },
+  sq: {
+    name: "Të tjera",
+    description: "Artikujt e mbetur në këtë kategori që nuk i përkasin një teme të caktuar.",
+  },
+  mk: {
+    name: "Останато",
+    description: "Останатите статии во оваа категорија што не припаѓаат на конкретна тема.",
+  },
+  lt: {
+    name: "Kiti",
+    description: "Likusieji šios kategorijos straipsniai, nepriskirti konkrečiai temai.",
+  },
+  da: {
+    name: "Øvrige",
+    description: "Øvrige artikler i denne kategori, der ikke hører til et bestemt emne.",
+  },
+  sv: {
+    name: "Övrigt",
+    description: "Övriga artiklar i den här kategorin som inte hör till ett specifikt ämne.",
+  },
+  no: {
+    name: "Øvrige",
+    description: "Øvrige artikler i denne kategorien som ikke hører til et bestemt emne.",
+  },
+  fi: {
+    name: "Muut",
+    description: "Muut tämän kategorian artikkelit, jotka eivät kuulu tiettyyn aiheeseen.",
+  },
+  uk: {
+    name: "Інше",
+    description: "Інші статті цієї категорії, які не належать до конкретної теми.",
+  },
+  ru: {
+    name: "Прочее",
+    description: "Остальные статьи этой категории, которые не относятся к конкретной теме.",
+  },
+  tr: {
+    name: "Diğer",
+    description: "Bu kategoride belirli bir konuya girmeyen kalan makaleler.",
+  },
+  he: {
+    name: "אחר",
+    description: "המאמרים הנותרים בקטגוריה זו שאינם שייכים לנושא מסוים.",
+  },
+  ar: {
+    name: "أخرى",
+    description: "المقالات المتبقية في هذه الفئة التي لا تنتمي إلى موضوع محدد.",
+  },
+  ka: {
+    name: "სხვა",
+    description: "ამ კატეგორიის დარჩენილი სტატიები, რომლებიც კონკრეტულ თემას არ მიეკუთვნება.",
+  },
+  hy: {
+    name: "Այլ",
+    description: "Այս կատեգորիայի մնացած հոդվածները, որոնք որևէ կոնկրետ թեմայի չեն պատկանում։",
+  },
+  az: {
+    name: "Digər",
+    description: "Bu kateqoriyada konkret mövzuya düşməyən qalan məqalələr.",
+  },
+  zh: {
+    name: "其他",
+    description: "本分类中不属于特定主题的其余文章。",
+  },
+  ja: {
+    name: "その他",
+    description: "このカテゴリで特定のテーマに属さない残りの記事。",
+  },
+};
+
+export function isOverigeCategorySlug(slug: string) {
+  return slug.endsWith("-overige");
+}
+
 export const CATEGORY_I18N: Record<
   string,
   Record<string, { name: string; description: string }>
@@ -171,7 +317,7 @@ export const CATEGORY_I18N: Record<
   beveiliging: {
     en: {
       name: "Security",
-      description: "SSL, firewalls, Wordfence, preventing hacks and account security.",
+      description: "SSL, firewalls, Wordfence and preventing hacks — including the SSL certificates and firewall subcategories.",
     },
     de: {
       name: "Sicherheit",
@@ -428,6 +574,103 @@ export const CATEGORY_I18N: Record<
       description: "Piani Business ed Extra Growth, checkout, IVA e ordini su TripleZero iT.",
     },
   },
+  microsoft: {
+    en: {
+      name: "Microsoft 365",
+      description:
+        "Microsoft 365, Exchange Online, Teams, OneDrive and Outlook via TripleZero iT.",
+    },
+    de: {
+      name: "Microsoft 365",
+      description:
+        "Microsoft 365, Exchange Online, Teams, OneDrive und Outlook über TripleZero iT.",
+    },
+    fr: {
+      name: "Microsoft 365",
+      description:
+        "Microsoft 365, Exchange Online, Teams, OneDrive et Outlook via TripleZero iT.",
+    },
+    es: {
+      name: "Microsoft 365",
+      description:
+        "Microsoft 365, Exchange Online, Teams, OneDrive y Outlook a través de TripleZero iT.",
+    },
+    pt: {
+      name: "Microsoft 365",
+      description:
+        "Microsoft 365, Exchange Online, Teams, OneDrive e Outlook via TripleZero iT.",
+    },
+    it: {
+      name: "Microsoft 365",
+      description:
+        "Microsoft 365, Exchange Online, Teams, OneDrive e Outlook tramite TripleZero iT.",
+    },
+  },
+  vps: {
+    en: {
+      name: "VPS",
+      description:
+        "Start and secure your VPS, snapshots, SSH/RDP, managed and unmanaged at TripleZero iT.",
+    },
+    de: {
+      name: "VPS",
+      description:
+        "VPS starten und absichern, Snapshots, SSH/RDP, managed und unmanaged bei TripleZero iT.",
+    },
+    fr: {
+      name: "VPS",
+      description:
+        "Démarrer et sécuriser votre VPS, snapshots, SSH/RDP, managé et non managé chez TripleZero iT.",
+    },
+    es: {
+      name: "VPS",
+      description:
+        "Arrancar y proteger tu VPS, instantáneas, SSH/RDP, gestionado y no gestionado en TripleZero iT.",
+    },
+    pt: {
+      name: "VPS",
+      description:
+        "Iniciar e proteger o VPS, snapshots, SSH/RDP, gerido e não gerido na TripleZero iT.",
+    },
+    it: {
+      name: "VPS",
+      description:
+        "Avviare e proteggere il VPS, snapshot, SSH/RDP, managed e unmanaged su TripleZero iT.",
+    },
+  },
+  "ssl-certificaten": {
+    en: {
+      name: "SSL certificates",
+      description:
+        "Let’s Encrypt, paid certificates, CSR, HSTS and HTTPS at TripleZero iT.",
+    },
+    de: {
+      name: "SSL-Zertifikate",
+      description:
+        "Let’s Encrypt, kostenpflichtige Zertifikate, CSR, HSTS und HTTPS bei TripleZero iT.",
+    },
+    fr: {
+      name: "Certificats SSL",
+      description:
+        "Let’s Encrypt, certificats payants, CSR, HSTS et HTTPS chez TripleZero iT.",
+    },
+    es: {
+      name: "Certificados SSL",
+      description:
+        "Let’s Encrypt, certificados de pago, CSR, HSTS y HTTPS en TripleZero iT.",
+    },
+    pt: {
+      name: "Certificados SSL",
+      description:
+        "Let’s Encrypt, certificados pagos, CSR, HSTS e HTTPS na TripleZero iT.",
+    },
+    it: {
+      name: "Certificati SSL",
+      description:
+        "Let’s Encrypt, certificati a pagamento, CSR, HSTS e HTTPS su TripleZero iT.",
+    },
+  },
+  ...SUBCATEGORY_I18N,
 };
 
 /** Prefer locale → en → first available for category copy. */
@@ -436,9 +679,12 @@ export function categoryCopy(
   locale: string,
   fallbackNl: { name: string; description: string },
 ): { name: string; description: string } {
+  if (locale === "nl") return fallbackNl;
+  if (isOverigeCategorySlug(slug)) {
+    return OVERIGE_I18N[locale] || OVERIGE_I18N.en || fallbackNl;
+  }
   const row = CATEGORY_I18N[slug];
   if (!row) return fallbackNl;
-  if (locale === "nl") return fallbackNl;
   return row[locale] || row.en || fallbackNl;
 }
 

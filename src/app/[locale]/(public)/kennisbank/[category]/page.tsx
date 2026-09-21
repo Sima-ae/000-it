@@ -66,6 +66,17 @@ export default async function KennisbankCategoryPage({ params }: Params) {
           >
             {t("breadcrumb")}
           </SoftLink>
+          {cat.parentSlug && cat.parentName ? (
+            <>
+              <span className="mx-2 opacity-50">/</span>
+              <SoftLink
+                href={localizedHref(locale, `/kennisbank/${cat.parentSlug}`)}
+                className="transition hover:text-foreground"
+              >
+                {cat.parentName}
+              </SoftLink>
+            </>
+          ) : null}
           <span className="mx-2 opacity-50">/</span>
           <span className="text-foreground">{cat.name}</span>
         </nav>
@@ -73,7 +84,7 @@ export default async function KennisbankCategoryPage({ params }: Params) {
         <Reveal>
           <header className="mb-8 grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
             <div>
-              <h1 className="font-display text-3xl font-semibold tracking-tight md:text-4xl">
+              <h1 className="font-display text-3xl font-semibold tracking-tight text-primary md:text-4xl">
                 {cat.name}
               </h1>
               {cat.description ? (
@@ -94,6 +105,35 @@ export default async function KennisbankCategoryPage({ params }: Params) {
             />
           </header>
         </Reveal>
+
+        {cat.children.length ? (
+          <section className="mb-10">
+            <h2 className="mb-4 text-sm font-semibold uppercase tracking-[0.14em] text-accent">
+              {t("subcategoriesLabel")}
+            </h2>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {cat.children.map((child) => (
+                <SoftLink
+                  key={child.id}
+                  href={localizedHref(locale, `/kennisbank/${child.slug}`)}
+                  className="rounded-2xl border border-border/70 bg-background/70 px-4 py-3 transition hover:border-primary/40"
+                >
+                  <div className="flex items-center justify-between gap-3">
+                    <p className="font-medium text-primary">{child.name}</p>
+                    <span className="rounded-full bg-primary/10 px-2 py-0.5 text-[11px] font-semibold text-primary">
+                      {child.articleCount}
+                    </span>
+                  </div>
+                  {child.description ? (
+                    <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">
+                      {child.description}
+                    </p>
+                  ) : null}
+                </SoftLink>
+              ))}
+            </div>
+          </section>
+        ) : null}
 
         <KennisbankArticleList
           articles={articles}

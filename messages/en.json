@@ -571,7 +571,7 @@
   },
   "kennisbank": {
     "title": "Knowledge base",
-    "subtitle": "Information about domains, hosting, email, control panels, WordPress, security and our TripleZero products — step by step, with professional explanations.",
+    "subtitle": "Information about domains, hosting, email, VPS, Microsoft 365, SSL, control panels, WordPress, security and our TripleZero products — step by step, with professional explanations.",
     "categoriesLabel": "categories",
     "articlesLabel": "articles",
     "articlesInCategory": "articles in this category",
@@ -592,7 +592,8 @@
     "illustrationFooter": "TripleZero iT knowledge base",
     "seoTitleSuffix": "Knowledge base",
     "tipLabel": "Tip",
-    "warnLabel": "Note"
+    "warnLabel": "Note",
+    "subcategoriesLabel": "Subcategories"
   },
   "faqPage": {
     "eyebrow": "FAQ",

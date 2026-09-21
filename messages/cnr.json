@@ -592,7 +592,8 @@
     "illustrationFooter": "Baza znanja TripleZero iT",
     "seoTitleSuffix": "Baza znanja",
     "tipLabel": "Savjet",
-    "warnLabel": "Napomena"
+    "warnLabel": "Napomena",
+    "subcategoriesLabel": "Podkategorije"
   },
   "faqPage": {
     "eyebrow": "FAQ",

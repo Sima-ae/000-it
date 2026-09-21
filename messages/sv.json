@@ -592,7 +592,8 @@
     "illustrationFooter": "TripleZero iT kunskapsbank",
     "seoTitleSuffix": "Kunskapsbank",
     "tipLabel": "Tips",
-    "warnLabel": "Obs"
+    "warnLabel": "Obs",
+    "subcategoriesLabel": "Underkategorier"
   },
   "faqPage": {
     "eyebrow": "FAQ",

@@ -592,7 +592,8 @@
     "illustrationFooter": "TripleZero iT ナレッジベース",
     "seoTitleSuffix": "ナレッジベース",
     "tipLabel": "ヒント",
-    "warnLabel": "注意"
+    "warnLabel": "注意",
+    "subcategoriesLabel": "サブカテゴリ"
   },
   "faqPage": {
     "eyebrow": "FAQ",
