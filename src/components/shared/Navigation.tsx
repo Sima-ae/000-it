@@ -21,6 +21,7 @@ import {
   localizedHref,
   resolveHashElementId,
 } from "@/i18n/pathnames";
+import { BrandLogo } from "@/components/shared/BrandLogo";
 import { cn } from "@/lib/utils";
 
 const WEBMAIL_URL = "https://000-it.com/webmail";
@@ -136,11 +137,10 @@ export function Navigation() {
         <div className="flex items-center justify-between gap-3 px-3 py-2.5 md:px-4 md:py-3">
           <SoftLink
             href={localizedHref(locale, "/")}
-            className="font-display shrink-0 text-base font-semibold tracking-tight md:text-lg"
+            aria-label="TripleZero iT"
+            className="shrink-0"
           >
-            <span className="bg-linear-to-r from-primary via-[#7a5aa8] to-accent bg-clip-text text-transparent">
-              TripleZero iT
-            </span>
+            <BrandLogo priority />
           </SoftLink>
 
           <nav className="hidden items-center gap-0.5 xl:flex">

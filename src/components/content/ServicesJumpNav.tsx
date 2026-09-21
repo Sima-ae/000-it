@@ -27,14 +27,21 @@ export function ServicesJumpNav({
   useEffect(() => {
     const sentinel = sentinelRef.current;
     if (!sentinel) return;
+    const desktopMq = window.matchMedia("(min-width: 768px)");
 
     const update = () => {
+      // Tabs only stick on desktop; on mobile they scroll away with the page.
+      if (!desktopMq.matches) {
+        setStuck(false);
+        return null;
+      }
+
       const styles = getComputedStyle(document.documentElement);
       const navOffsetRaw = styles.getPropertyValue("--nav-offset").trim() || "5.75rem";
       const navOffsetPx = navOffsetRaw.endsWith("rem")
         ? parseFloat(navOffsetRaw) * 16
         : parseFloat(navOffsetRaw);
-      const stickyTop = Math.max(navOffsetPx - 8, 0); // matches top-[calc(var(--nav-offset)-0.5rem)]
+      const stickyTop = Math.max(navOffsetPx - 8, 0); // matches md:top-[calc(var(--nav-offset)-0.5rem)]
 
       const observer = new IntersectionObserver(
         ([entry]) => setStuck(!entry.isIntersecting),
@@ -49,21 +56,23 @@ export function ServicesJumpNav({
     };
 
     let observer = update();
-    const onResize = () => {
-      observer.disconnect();
+    const onChange = () => {
+      observer?.disconnect();
       observer = update();
     };
-    window.addEventListener("resize", onResize);
+    desktopMq.addEventListener("change", onChange);
+    window.addEventListener("resize", onChange);
     return () => {
-      observer.disconnect();
-      window.removeEventListener("resize", onResize);
+      observer?.disconnect();
+      desktopMq.removeEventListener("change", onChange);
+      window.removeEventListener("resize", onChange);
     };
   }, []);
 
   return (
     <>
       <div ref={sentinelRef} className="h-px w-full" aria-hidden />
-      <div className="sticky top-[calc(var(--nav-offset)-0.5rem)] z-30 -mx-4 bg-transparent px-4 py-1 md:-mx-6 md:px-6">
+      <div className="-mx-4 bg-transparent px-4 py-1 md:sticky md:top-[calc(var(--nav-offset)-0.5rem)] md:z-30 md:-mx-6 md:px-6">
         <div className="flex flex-wrap justify-center gap-1.5">
           {links.map((link) => (
             <Button

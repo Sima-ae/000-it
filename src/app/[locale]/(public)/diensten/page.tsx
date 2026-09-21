@@ -180,7 +180,8 @@ export default async function ServicesPage({
       ),
   ];
 
-  const cardScrollClass = "scroll-mt-[calc(var(--nav-offset)+3.25rem)]";
+  const cardScrollClass =
+    "scroll-mt-[var(--nav-offset)] md:scroll-mt-[calc(var(--nav-offset)+3.25rem)]";
 
   return (
     <div className="mx-auto max-w-6xl px-4 pb-14 pt-0 md:px-6 md:pb-20">
@@ -188,7 +189,7 @@ export default async function ServicesPage({
 
       <section
         id={hashFor(locale, "meest-populair")}
-        className="mt-6 scroll-mt-[calc(var(--nav-offset)+3.25rem)]"
+        className="mt-6 scroll-mt-[var(--nav-offset)] md:scroll-mt-[calc(var(--nav-offset)+3.25rem)]"
       >
         <Reveal>
           <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
@@ -213,7 +214,7 @@ export default async function ServicesPage({
         <section
           key={group.id}
           id={group.id}
-          className="mt-16 scroll-mt-[calc(var(--nav-offset)+3.25rem)]"
+          className="mt-16 scroll-mt-[var(--nav-offset)] md:scroll-mt-[calc(var(--nav-offset)+3.25rem)]"
         >
           <Reveal>
             <div className="flex flex-wrap items-end justify-between gap-3">

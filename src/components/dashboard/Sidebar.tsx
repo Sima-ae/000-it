@@ -27,6 +27,7 @@ import { localizedHref } from "@/i18n/pathnames";
 import { ThemeToggle } from "@/components/shared/ThemeToggle";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
+import { BrandLogo } from "@/components/shared/BrandLogo";
 import { cn } from "@/lib/utils";
 import { navForRole } from "@/lib/roles";
 
@@ -68,10 +69,8 @@ export function Sidebar({ user }: { user: SidebarUser }) {
     <aside className="w-full p-3 md:sticky md:top-3 md:h-[calc(100svh-1.5rem)] md:w-72 md:self-start md:p-3">
       <div className="glass flex h-full flex-col rounded-[1.75rem] p-4">
         <div className="mb-6 flex items-center justify-between gap-2">
-          <SoftLink href={`/${locale}`} className="font-display text-lg font-semibold tracking-tight">
-            <span className="bg-linear-to-r from-primary to-accent bg-clip-text text-transparent">
-              TripleZero iT
-            </span>
+          <SoftLink href={`/${locale}`} aria-label="TripleZero iT" className="min-w-0">
+            <BrandLogo />
           </SoftLink>
           <ThemeToggle />
         </div>

@@ -3,6 +3,7 @@
 import { useTranslations, useLocale } from "next-intl";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { CopyrightBar } from "@/components/shared/CopyrightBar";
+import { BrandLogo } from "@/components/shared/BrandLogo";
 import { localizedHref } from "@/i18n/pathnames";
 
 const WEBMAIL_URL = "https://000-it.com/webmail";
@@ -68,11 +69,13 @@ export function Footer() {
         <div className="glass overflow-hidden rounded-3xl">
           <div className="grid gap-8 px-6 py-7 sm:grid-cols-2 md:grid-cols-3 md:gap-6 md:px-8 md:py-8">
             <div>
-              <p className="font-display text-lg font-semibold tracking-tight">
-                <span className="bg-linear-to-r from-primary via-[#7a5aa8] to-accent bg-clip-text text-transparent">
-                  TripleZero iT
-                </span>
-              </p>
+              <SoftLink
+                href={localizedHref(locale, "/")}
+                aria-label="TripleZero iT"
+                className="inline-block"
+              >
+                <BrandLogo className="h-9 w-auto md:h-10" />
+              </SoftLink>
               <p className="mt-2 max-w-[16rem] text-sm leading-snug text-muted-foreground">
                 {t("tagline")}
               </p>
