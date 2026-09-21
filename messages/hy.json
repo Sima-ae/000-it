@@ -28,8 +28,8 @@
     "title": "Լեզու"
   },
   "hero": {
-    "title": "Աճեք ավելի արագ AI-ի և TripleZero iT-ի հետ",
-    "subtitle": "Գովազդ, AI ինտեգրում, AEO, GEO, SEO, առցանց մարքեթինգ և սոցիալական մեդիա կառավարում մեկ աճի հարթակում բիզնեսի և ֆրիլանսերի համար:",
+    "title": "Hassle with your website, AI or online growth...",
+    "subtitle": "... really isn’t of this time.",
     "ctaScanTitle": "Ձեռնարկատե՞ր, թե՞ ֆրիլանսեր.",
     "ctaHeroTitle": "Ստացեք անվճար AI սկանավորում",
     "ctaScan": "Սեղմեք այստեղ",
@@ -40,7 +40,14 @@
     "aiReady": "AI պատրա՞ստ եք:",
     "score": "Միավոր",
     "agentsActive": "Գործակալներ",
-    "serversOnline": "Սերվերներ առցանց"
+    "serversOnline": "Սերվերներ առցանց",
+    "bullet1": "Dutch IT and AI services that are secure, fast and stable",
+    "bullet2": "Always support in your language — including Agent 000",
+    "bullet3": "Free AI scan to start growing right away",
+    "ctaServices": "View services",
+    "ctaHelpChoose": "Help me choose",
+    "agentName": "Agent 000",
+    "openChatWithAgent": "Open chat with Agent 000"
   },
   "services": {
     "title": "Ծառայություններ",

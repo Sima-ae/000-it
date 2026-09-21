@@ -28,8 +28,8 @@
     "title": "言語"
   },
   "hero": {
-    "title": "AI および TripleZero iT で成長を加速する",
-    "subtitle": "企業とフリーランサー向けの 1 つの成長プラットフォームで、広告、AI 統合、AEO、GEO、SEO、オンライン マーケティング、ソーシャル メディア管理を統合します。",
+    "title": "Hassle with your website, AI or online growth...",
+    "subtitle": "... really isn’t of this time.",
     "ctaScanTitle": "起業家かフリーランサーか？",
     "ctaHeroTitle": "無料の AI スキャンを取得する",
     "ctaScan": "ここをクリックしてください",
@@ -40,7 +40,14 @@
     "aiReady": "AI の準備はできていますか?",
     "score": "スコア",
     "agentsActive": "アクティブなエージェント",
-    "serversOnline": "オンラインのサーバー"
+    "serversOnline": "オンラインのサーバー",
+    "bullet1": "Dutch IT and AI services that are secure, fast and stable",
+    "bullet2": "Always support in your language — including Agent 000",
+    "bullet3": "Free AI scan to start growing right away",
+    "ctaServices": "View services",
+    "ctaHelpChoose": "Help me choose",
+    "agentName": "Agent 000",
+    "openChatWithAgent": "Open chat with Agent 000"
   },
   "services": {
     "title": "サービス",

@@ -28,8 +28,14 @@
     "title": "Language"
   },
   "hero": {
-    "title": "Grow faster with AI and TripleZero iT",
-    "subtitle": "Advertising, AI integration, AEO, GEO, SEO, online marketing and social media management in one growth platform for businesses and freelancers.",
+    "title": "Hassle with your website, AI or online growth...",
+    "subtitle": "... really isn’t of this time.",
+    "bullet1": "Dutch IT and AI services that are secure, fast and stable",
+    "bullet2": "Always support in your language — including Agent 000",
+    "bullet3": "Free AI scan to start growing right away",
+    "ctaServices": "View services",
+    "ctaHelpChoose": "Help me choose",
+    "agentName": "Agent 000",
     "ctaScanTitle": "Entrepreneur or freelancer?",
     "ctaHeroTitle": "Get a free AI scan",
     "ctaScan": "Click here",
@@ -40,7 +46,8 @@
     "aiReady": "AI Ready?",
     "score": "Score",
     "agentsActive": "Agents active",
-    "serversOnline": "Servers online"
+    "serversOnline": "Servers online",
+    "openChatWithAgent": "Open chat with Agent 000"
   },
   "services": {
     "title": "Services",

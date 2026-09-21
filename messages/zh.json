@@ -28,8 +28,8 @@
     "title": "语言"
   },
   "hero": {
-    "title": "通过 AI 和 TripleZero iT 更快成长",
-    "subtitle": "广告、AI 集成、AEO、GEO、SEO、在线营销和社交媒体管理在一个为企业和自由职业者提供的成长平台中。",
+    "title": "Hassle with your website, AI or online growth...",
+    "subtitle": "... really isn’t of this time.",
     "ctaScanTitle": "企业家还是自由职业者？",
     "ctaHeroTitle": "获取免费的 AI 扫描",
     "ctaScan": "点击这里",
@@ -40,7 +40,14 @@
     "aiReady": "人工智能准备好了吗？",
     "score": "分数",
     "agentsActive": "代理活跃",
-    "serversOnline": "服务器在线"
+    "serversOnline": "服务器在线",
+    "bullet1": "Dutch IT and AI services that are secure, fast and stable",
+    "bullet2": "Always support in your language — including Agent 000",
+    "bullet3": "Free AI scan to start growing right away",
+    "ctaServices": "View services",
+    "ctaHelpChoose": "Help me choose",
+    "agentName": "Agent 000",
+    "openChatWithAgent": "Open chat with Agent 000"
   },
   "services": {
     "title": "服务",

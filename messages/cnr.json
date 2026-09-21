@@ -28,8 +28,8 @@
     "title": "Jezik"
   },
   "hero": {
-    "title": "Rastite brže uz AI i TripleZero iT",
-    "subtitle": "Oglašavanje, AI integracija, AEO, GEO, SEO, online marketing i upravljanje društvenim mrežama na jednoj platformi za rast kompanija i samostalnih profesionalaca.",
+    "title": "Hassle with your website, AI or online growth...",
+    "subtitle": "... really isn’t of this time.",
     "ctaScanTitle": "Preduzetnik ili slobodni profesionalac?",
     "ctaHeroTitle": "Zatražite besplatno AI skeniranje",
     "ctaScan": "Kliknite ovdje",
@@ -40,7 +40,14 @@
     "aiReady": "АИ Реади?",
     "score": "Резултат",
     "agentsActive": "Агенти активни",
-    "serversOnline": "Сервери на мрежи"
+    "serversOnline": "Сервери на мрежи",
+    "bullet1": "Dutch IT and AI services that are secure, fast and stable",
+    "bullet2": "Always support in your language — including Agent 000",
+    "bullet3": "Free AI scan to start growing right away",
+    "ctaServices": "View services",
+    "ctaHelpChoose": "Help me choose",
+    "agentName": "Agent 000",
+    "openChatWithAgent": "Open chat with Agent 000"
   },
   "services": {
     "title": "Usluge",

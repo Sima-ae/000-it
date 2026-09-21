@@ -28,8 +28,14 @@
     "title": "Taal"
   },
   "hero": {
-    "title": "Groei sneller door AI en TripleZero iT",
-    "subtitle": "Adverteren, AI-integratie, AEO, GEO, SEO, online marketing en social media laten beheren, speciaal voor ondernemers en zzp'ers.",
+    "title": "Problemen met AI, online groei of je website / webshop?",
+    "subtitle": "Wij staan voor je klaar met advies, diensten en support.",
+    "bullet1": "Europese AI en IT-diensten die snel, stabiel en veilig zijn.",
+    "bullet2": "Hulp in het Engels en Nederlands — inclusief Agent 000.",
+    "bullet3": "Gratis AI-scan om direct te starten met online groeien!",
+    "ctaServices": "Bekijk alle diensten",
+    "ctaHelpChoose": "Help mij kiezen",
+    "agentName": "Agent 000",
     "ctaScanTitle": "Ondernemer of ZZP'er?",
     "ctaHeroTitle": "Gratis een AI-scan laten uitvoeren?",
     "ctaScan": "KLIK HIER",
@@ -40,7 +46,8 @@
     "aiReady": "AI-ready?",
     "score": "Score",
     "agentsActive": "Agents actief",
-    "serversOnline": "Servers online"
+    "serversOnline": "Servers online",
+    "openChatWithAgent": "Open chat met Agent 000"
   },
   "services": {
     "title": "Diensten",

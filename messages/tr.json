@@ -28,8 +28,8 @@
     "title": "Dil"
   },
   "hero": {
-    "title": "AI ve TripleZero iT ile daha hızlı büyüyün",
-    "subtitle": "İşletmeler ve serbest çalışanlar için tek bir büyüme platformunda reklamcılık, AI entegrasyonu, AEO, GEO, SEO, çevrimiçi pazarlama ve sosyal medya yönetimi.",
+    "title": "Hassle with your website, AI or online growth...",
+    "subtitle": "... really isn’t of this time.",
     "ctaScanTitle": "Girişimci mi yoksa serbest çalışan mı?",
     "ctaHeroTitle": "Ücretsiz bir AI taraması edinin",
     "ctaScan": "Buraya tıklayın",
@@ -40,7 +40,14 @@
     "aiReady": "Yapay Zeka Hazır mı?",
     "score": "Gol",
     "agentsActive": "Temsilciler etkin",
-    "serversOnline": "Çevrimiçi sunucular"
+    "serversOnline": "Çevrimiçi sunucular",
+    "bullet1": "Dutch IT and AI services that are secure, fast and stable",
+    "bullet2": "Always support in your language — including Agent 000",
+    "bullet3": "Free AI scan to start growing right away",
+    "ctaServices": "View services",
+    "ctaHelpChoose": "Help me choose",
+    "agentName": "Agent 000",
+    "openChatWithAgent": "Open chat with Agent 000"
   },
   "services": {
     "title": "Hizmetler",

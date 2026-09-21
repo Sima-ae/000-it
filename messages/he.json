@@ -28,8 +28,8 @@
     "title": "שפה"
   },
   "hero": {
-    "title": "גדל מהר יותר עם AI ו-TripleZero iT",
-    "subtitle": "פרסום, שילוב AI, AEO, GEO, SEO, שיווק מקוון וניהול מדיה חברתית בפלטפורמת צמיחה אחת לעסקים ולעצמאיים.",
+    "title": "Hassle with your website, AI or online growth...",
+    "subtitle": "... really isn’t of this time.",
     "ctaScanTitle": "יזם או פרילנסר?",
     "ctaHeroTitle": "קבל סריקת AI בחינם",
     "ctaScan": "לחץ כאן",
@@ -40,7 +40,14 @@
     "aiReady": "AI מוכן?",
     "score": "צִיוּן",
     "agentsActive": "סוכנים פעילים",
-    "serversOnline": "שרתים מקוונים"
+    "serversOnline": "שרתים מקוונים",
+    "bullet1": "Dutch IT and AI services that are secure, fast and stable",
+    "bullet2": "Always support in your language — including Agent 000",
+    "bullet3": "Free AI scan to start growing right away",
+    "ctaServices": "View services",
+    "ctaHelpChoose": "Help me choose",
+    "agentName": "Agent 000",
+    "openChatWithAgent": "Open chat with Agent 000"
   },
   "services": {
     "title": "שירותים",

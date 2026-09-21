@@ -548,17 +548,18 @@ body::before {
 .agent000 .a000-eye {
   opacity: 0.9;
 }
-.agent000 .a000-ear {
-  stroke-opacity: 0.75;
-}
 .agent000 .a000-led {
   opacity: 0.45;
 }
 .agent000 .a000-hand {
-  opacity: 0.3;
-  transform: translate(8px, 12px) scale(0.82);
+  opacity: 1;
   transform-box: fill-box;
   transform-origin: center;
+}
+.agent000 .a000-arm-left,
+.agent000 .a000-arm-right {
+  transform-box: fill-box;
+  transform-origin: top center;
 }
 .agent000 .a000-head {
   transform-box: fill-box;
@@ -572,9 +573,6 @@ body::before {
 .agent000.is-idle .a000-eye {
   animation: a000-pulse 2.8s ease-in-out infinite;
 }
-.agent000.is-idle .a000-ear {
-  animation: a000-pulse 2.8s ease-in-out infinite;
-}
 .agent000.is-idle .a000-led {
   animation: a000-led 2.4s ease-in-out infinite;
 }
@@ -585,12 +583,15 @@ body::before {
 .agent000.is-thinking .a000-head {
   animation: a000-tilt 2.2s ease-in-out infinite;
 }
-.agent000.is-thinking .a000-hand {
-  opacity: 1;
+.agent000.is-thinking .a000-hand:not(.a000-wave) {
   animation: a000-hand 2.2s ease-in-out infinite;
 }
-.agent000.is-thinking .a000-eye,
-.agent000.is-thinking .a000-ear {
+.agent000 .a000-hand.a000-wave {
+  transform-box: fill-box;
+  transform-origin: center bottom;
+  animation: a000-wave 1.05s ease-in-out infinite;
+}
+.agent000.is-thinking .a000-eye {
   animation: a000-pulse 1s ease-in-out infinite;
 }
 .agent000.is-thinking .a000-led {
@@ -600,8 +601,7 @@ body::before {
 .agent000.is-speaking {
   animation-duration: 1.8s;
 }
-.agent000.is-speaking .a000-eye,
-.agent000.is-speaking .a000-ear {
+.agent000.is-speaking .a000-eye {
   animation: a000-pulse 0.5s ease-in-out infinite;
 }
 .agent000.is-speaking .a000-led {
@@ -609,9 +609,6 @@ body::before {
 }
 .agent000.is-speaking .a000-mouth {
   animation: a000-mouth 0.4s ease-in-out infinite;
-}
-.agent000.is-speaking .a000-hand {
-  opacity: 0.35;
 }
 .agent000.is-speaking .a000-shadow {
   animation: a000-shadow 1.8s ease-in-out infinite;
@@ -642,6 +639,15 @@ body::before {
   }
   50% {
     transform: translate(-3px, -6px) rotate(-10deg);
+  }
+}
+@keyframes a000-wave {
+  0%,
+  100% {
+    transform: rotate(-16deg);
+  }
+  50% {
+    transform: rotate(14deg);
   }
 }
 @keyframes a000-pulse {

@@ -28,8 +28,8 @@
     "title": "Kalba"
   },
   "hero": {
-    "title": "Greičiau augkite naudodami AI ir TripleZero iT",
-    "subtitle": "Reklama, AI integracija, AEO, GEO, SEO, internetinė rinkodara ir socialinės žiniasklaidos valdymas vienoje augimo platformoje įmonėms ir laisvai samdomiems darbuotojams.",
+    "title": "Hassle with your website, AI or online growth...",
+    "subtitle": "... really isn’t of this time.",
     "ctaScanTitle": "Verslininkas ar laisvai samdomas darbuotojas?",
     "ctaHeroTitle": "Gaukite nemokamą AI nuskaitymą",
     "ctaScan": "Spauskite čia",
@@ -40,7 +40,14 @@
     "aiReady": "AI pasirengęs?",
     "score": "Rezultatas",
     "agentsActive": "Agentai aktyvūs",
-    "serversOnline": "Serveriai internete"
+    "serversOnline": "Serveriai internete",
+    "bullet1": "Dutch IT and AI services that are secure, fast and stable",
+    "bullet2": "Always support in your language — including Agent 000",
+    "bullet3": "Free AI scan to start growing right away",
+    "ctaServices": "View services",
+    "ctaHelpChoose": "Help me choose",
+    "agentName": "Agent 000",
+    "openChatWithAgent": "Open chat with Agent 000"
   },
   "services": {
     "title": "Paslaugos",
