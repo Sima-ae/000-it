@@ -253,6 +253,8 @@ function formatPublishedDate(iso: string | null, locale: "en-GB" | "nl-NL" = "en
   });
 }
 
+export { formatPublishedDate };
+
 function topicHint(title: string) {
   const cleaned = truncate(title.replace(/[“”"']/g, ""), 110).replace(/\.*$/, "");
   return cleaned;
@@ -357,22 +359,77 @@ function buildImplications(story: NewsStory, industry: string, isResearch: boole
   return hashPick(seed, pool);
 }
 
+export function buildClosingEn(sourceName: string, published: string | null) {
+  const src = (sourceName || "").trim() || "the original source";
+  if (published) {
+    return `Readers can view the full article ${src} from ${published} via the link below.`;
+  }
+  return `Readers can view the full article ${src} via the link below.`;
+}
+
 function buildClosing(story: NewsStory, published: string | null) {
-  const seed = `close|${story.url}`;
-  return hashPick(
-    seed,
-    published
-      ? [
-          `Full details remain in the original ${story.sourceName} report from ${published}.`,
-          `For primary sourcing and quotes, see the ${story.sourceName} article dated ${published}.`,
-          `Readers who need the full timeline should open the ${story.sourceName} write-up from ${published}.`,
-        ]
-      : [
-          `Full details remain in the original ${story.sourceName} coverage.`,
-          `For primary sourcing, open the linked ${story.sourceName} article.`,
-          `The ${story.sourceName} report remains the best place for the complete context.`,
-        ],
+  return buildClosingEn(story.sourceName, published);
+}
+
+/** Dutch closing paired with English (avoids awkward MT of the closer). */
+export function buildClosingNl(sourceName: string, published: string | null) {
+  const src = (sourceName || "").trim() || "de originele bron";
+  if (published) {
+    return `Lezers kunnen het volledige artikel ${src} van ${published} bekijken via de onderstaande link.`;
+  }
+  return `Lezers kunnen het volledige artikel ${src} bekijken via de onderstaande link.`;
+}
+
+/** Detect old / intermediate closings that should be replaced. */
+export const AWKWARD_CLOSING_RE =
+  /readers who need the full timeline|lezers die de volledige tijdlijn|for primary sourcing and quotes|voor primaire bronnen en citaten|full details remain in the original|volledige details (blijven|staan) in|for primary sourcing, open the linked|voor primaire bronnen,? open|the .+ report remains the best place for the complete context|het .+(-)?rapport blijft de beste plek|leser,? die (die )?vollst[aä]ndige|lecteurs qui ont besoin de la chronologie|lectores que necesitan la (cronolog[ií]a|l[ií]nea de tiempo)|czytelnicy,? którzy potrzebują pełnej|читатели,? которым нужна полная|readers can open the full article on|you can read the full article on|the full article is available on|lezers kunnen het volledige artikel op .+ openen/i;
+
+const DESIRED_CLOSING_RE =
+  /bekijken via de onderstaande link\.?$|via the link below\.?$/i;
+
+export function isAwkwardClosingParagraph(text: string) {
+  const t = (text || "").trim();
+  if (!t) return false;
+  if (DESIRED_CLOSING_RE.test(t)) return false;
+  return AWKWARD_CLOSING_RE.test(t);
+}
+
+/** True when the last paragraph is a source-closer that is not yet the desired template. */
+export function isOutdatedClosingParagraph(text: string) {
+  const t = (text || "").trim();
+  if (!t) return false;
+  if (DESIRED_CLOSING_RE.test(t)) return false;
+  return (
+    isAwkwardClosingParagraph(t) ||
+    /lezers kunnen het volledige artikel/i.test(t) ||
+    /readers can (open|view|read) the full article/i.test(t) ||
+    /the full article is available/i.test(t) ||
+    /you can read the full article/i.test(t)
   );
+}
+
+export function replaceLastParagraph(text: string, nextClosing: string) {
+  const parts = (text || "")
+    .split(/\n\s*\n/)
+    .map((p) => p.trim())
+    .filter(Boolean);
+  if (!parts.length) return nextClosing.trim();
+  if (!isAwkwardClosingParagraph(parts[parts.length - 1]!)) {
+    return text.trim();
+  }
+  parts[parts.length - 1] = nextClosing.trim();
+  return parts.join("\n\n");
+}
+
+/** Always rewrite the final paragraph (used when repairing known-bad closings). */
+export function setLastParagraph(text: string, nextClosing: string) {
+  const parts = (text || "")
+    .split(/\n\s*\n/)
+    .map((p) => p.trim())
+    .filter(Boolean);
+  if (!parts.length) return nextClosing.trim();
+  parts[parts.length - 1] = nextClosing.trim();
+  return parts.join("\n\n");
 }
 
 export function buildEnglishDraft(

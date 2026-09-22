@@ -6,10 +6,13 @@
  *   npm run news:repair -- --force-covers
  *   npm run news:repair -- --takeaways
  *     → remove long "TripleZero iT takeaway…" / short source-check footers from descriptions
+ *   npm run news:repair -- --closings
+ *     → replace awkward “full timeline” closings with natural “full article” lines (+ all locales)
  *   npm run news:repair -- --rewrite-copy
  *     → rebuild bodies that still contain the shared boilerplate sentence
  *   npm run news:repair -- --rewrite-copy --limit=80
  *   npm run news:repair -- --takeaways --limit=100
+ *   npm run news:repair -- --closings --limit=300
  */
 import { Prisma } from "@prisma/client";
 import { prisma } from "../src/lib/prisma";
@@ -19,7 +22,7 @@ import {
   generateBilingualNewsDraft,
   looksLikeRawFeedCopy,
 } from "../src/lib/auto-news/generate";
-import { rewriteBoilerplateNewsPosts } from "../src/lib/auto-news/rewrite";
+import { rewriteBoilerplateNewsPosts, repairAwkwardNewsClosings } from "../src/lib/auto-news/rewrite";
 import {
   parseNewsTranslations,
   type NewsTranslationsMap,
@@ -121,10 +124,18 @@ async function main() {
   const forceCovers = argFlag("force-covers");
   const takeawaysOnly = argFlag("takeaways");
   const rewriteCopy = argFlag("rewrite-copy");
+  const closingsOnly = argFlag("closings");
   const limit = Math.max(1, Number(argValue("limit") || "500") || 500);
 
   if (takeawaysOnly) {
     await repairTakeaways(limit);
+    return;
+  }
+
+  if (closingsOnly) {
+    const result = await repairAwkwardNewsClosings({ limit });
+    console.log(JSON.stringify(result, null, 2));
+    if (!result.ok) process.exit(1);
     return;
   }
 

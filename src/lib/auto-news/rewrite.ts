@@ -9,9 +9,17 @@ import {
   looksLikeRawFeedCopy,
   sanitizeNewsDraft,
   stripBoilerplateCopy,
+  buildClosingEn,
+  buildClosingNl,
+  formatPublishedDate,
+  isOutdatedClosingParagraph,
+  setLastParagraph,
 } from "@/lib/auto-news/generate";
 import type { NewsTranslationsMap } from "@/lib/news-i18n";
+import { parseNewsTranslations } from "@/lib/news-i18n";
 import { completeNewsTranslations } from "@/lib/news";
+import { translateText } from "@/lib/google-translate";
+import { routing } from "@/i18n/routing";
 
 export type RewriteNewsOptions = {
   limit?: number;
@@ -91,7 +99,14 @@ export function extractSummaryFromStoredDescription(description: string) {
     .filter(Boolean)
     .filter((p) => {
       if (
-        /^(?:on\s+\d|new ai research|according to|fresh from|full details remain|for primary sourcing|readers who need|a closer look at why|what builders)/i.test(
+        /^(?:on\s+\d|new ai research|according to|fresh from|full details remain|for primary sourcing|readers who need|readers can open the full|you can read the full|the full article is available|a closer look at why|what builders)/i.test(
+          p,
+        )
+      ) {
+        return false;
+      }
+      if (
+        /^(?:lezers die de volledige|lezers kunnen het volledige artikel|voor primaire bronnen|volledige details blijven)/i.test(
           p,
         )
       ) {
@@ -291,6 +306,149 @@ export async function rewriteBoilerplateNewsPosts(
       const message = error instanceof Error ? error.message : String(error);
       result.errors.push(`${post.id}: ${message}`);
       console.warn("[rewrite-news] failed", post.id, message);
+    }
+  }
+
+  if (result.errors.length && !result.rewritten) result.ok = false;
+  return result;
+}
+
+function lastParagraph(text: string | null | undefined) {
+  const parts = (text || "")
+    .split(/\n\s*\n/)
+    .map((p) => p.trim())
+    .filter(Boolean);
+  return parts[parts.length - 1] || "";
+}
+
+function looksLikeClosingParagraph(text: string) {
+  const t = (text || "").trim();
+  if (!t) return false;
+  return (
+    isOutdatedClosingParagraph(t) ||
+    /bekijken via de onderstaande link\.?$/i.test(t) ||
+    /via the link below\.?$/i.test(t) ||
+    /volledige artikel/i.test(t) ||
+    /full article/i.test(t)
+  );
+}
+
+function needsClosingRepair(post: {
+  description: string;
+  descriptionNl: string | null;
+  translations: unknown;
+  expectedEn: string;
+  expectedNl: string;
+}) {
+  const lastEn = lastParagraph(post.description);
+  const lastNl = lastParagraph(post.descriptionNl);
+  if (lastEn === post.expectedEn && lastNl === post.expectedNl) {
+    // EN+NL already exact; still repair if a translated locale still has an old closer.
+    const map = parseNewsTranslations(post.translations);
+    return Object.entries(map).some(([locale, copy]) => {
+      if (locale === "en" || locale === "nl") return false;
+      return isOutdatedClosingParagraph(lastParagraph(copy.description));
+    });
+  }
+  return looksLikeClosingParagraph(lastEn) || looksLikeClosingParagraph(lastNl);
+}
+
+/**
+ * Replace awkward / intermediate closings with:
+ * EN: "Readers can view the full article {source} from {date} via the link below."
+ * NL: "Lezers kunnen het volledige artikel {source} van {date} bekijken via de onderstaande link."
+ * then re-translate the closer for every other locale.
+ */
+export async function repairAwkwardNewsClosings(
+  options: RewriteNewsOptions = {},
+): Promise<RewriteNewsResult> {
+  const limit = Math.min(Math.max(options.limit ?? 250, 1), 500);
+  const result: RewriteNewsResult = {
+    ok: true,
+    checked: 0,
+    rewritten: 0,
+    skipped: 0,
+    errors: [],
+  };
+
+  const posts = await prisma.newsPost.findMany({
+    where: {
+      deletedAt: null,
+      id: { startsWith: "auto-" },
+    },
+    orderBy: [{ date: "desc" }, { createdAt: "desc" }],
+    take: limit,
+  });
+
+  for (const post of posts) {
+    result.checked += 1;
+
+    try {
+      const tags = Array.isArray(post.tags) ? post.tags.map(String) : [];
+      const inferred = inferSourceFromPost({
+        projectUrl: post.projectUrl,
+        tags,
+        description: post.description,
+        descriptionNl: post.descriptionNl,
+      });
+      const publishedEn = formatPublishedDate(post.date, "en-GB");
+      const publishedNl = formatPublishedDate(post.date, "nl-NL");
+      const closingEn = buildClosingEn(inferred.sourceName, publishedEn);
+      const closingNl = buildClosingNl(inferred.sourceName, publishedNl);
+
+      if (
+        !needsClosingRepair({
+          description: post.description,
+          descriptionNl: post.descriptionNl,
+          translations: post.translations,
+          expectedEn: closingEn,
+          expectedNl: closingNl,
+        })
+      ) {
+        result.skipped += 1;
+        continue;
+      }
+
+      const description = setLastParagraph(post.description, closingEn);
+      const descriptionNl = setLastParagraph(post.descriptionNl || "", closingNl);
+
+      const translations = parseNewsTranslations(post.translations);
+      translations.nl = {
+        title: translations.nl?.title || post.titleNl || post.title,
+        excerpt: translations.nl?.excerpt || post.excerptNl || post.excerpt,
+        description: descriptionNl,
+      };
+
+      for (const locale of routing.locales) {
+        if (locale === "en" || locale === "nl") continue;
+        const copy = translations[locale];
+        if (!copy?.description?.trim()) continue;
+        const translated = await translateText(closingEn, locale, "en");
+        const nextClosing =
+          translated && translated.trim() && translated !== closingEn
+            ? translated.trim()
+            : closingEn;
+        translations[locale] = {
+          ...copy,
+          description: setLastParagraph(copy.description, nextClosing),
+        };
+      }
+
+      await prisma.newsPost.update({
+        where: { id: post.id },
+        data: {
+          description,
+          descriptionNl,
+          translations: translations as Prisma.InputJsonValue,
+        },
+      });
+
+      result.rewritten += 1;
+      console.log(`[repair-closings] fixed ${post.id}`);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      result.errors.push(`${post.id}: ${message}`);
+      console.warn("[repair-closings] failed", post.id, message);
     }
   }
 
