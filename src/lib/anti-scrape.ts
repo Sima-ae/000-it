@@ -56,17 +56,20 @@ const UNIQUE_WINDOW_MS = 120_000;
 const LIMITS = {
   search: 240,
   social: 80,
-  default: 140,
-  content: 90,
-  article: 40,
-  api: 80,
-  agent: 18,
-  contact: 12,
+  // Raised for real browsers — Next.js RSC + prefetch used to trip these quickly.
+  default: 360,
+  content: 240,
+  article: 180,
+  api: 160,
+  agent: 24,
+  contact: 16,
   sitemap: 30,
 } as const;
 
-const UNIQUE_ARTICLE_MAX = 24;
+/** Unique article pages per 2 minutes — news/kennisbank prefetch burns this fast. */
+const UNIQUE_ARTICLE_MAX = 90;
 
+type LimitBucket = keyof typeof LIMITS;
 type CounterBucket = { count: number; resetAt: number };
 type UniqueBucket = { paths: Set<string>; resetAt: number };
 
@@ -236,6 +239,31 @@ function looksLikeBrowser(request: NextRequest, ua: string) {
   return false;
 }
 
+function limitBucketFor(pathname: string, internalPath: string): LimitBucket {
+  if (pathname.startsWith("/api/agent-000")) return "agent";
+  if (pathname.startsWith("/api/contact") || pathname.startsWith("/api/scans")) {
+    return "contact";
+  }
+  if (pathname.startsWith("/api/")) return "api";
+  if (pathname.startsWith("/sitemaps/") || pathname === "/sitemap.xml") {
+    return "sitemap";
+  }
+  if (isArticlePath(internalPath)) return "article";
+  if (isSensitiveContentPath(internalPath, pathname)) return "content";
+  return "default";
+}
+
+/** Soft navigations / RSC / same-site clicks from a real browser session. */
+function isInteractiveBrowser(request: NextRequest, kind: string) {
+  if (kind !== "browser") return false;
+  const site = (request.headers.get("sec-fetch-site") || "").toLowerCase();
+  if (site === "same-origin" || site === "same-site") return true;
+  if (request.headers.get("rsc")) return true;
+  if (request.headers.get("next-router-prefetch")) return true;
+  if (request.headers.get("next-url")) return true;
+  return isSameSiteRequest(request);
+}
+
 export function classifyClient(request: NextRequest): "search" | "social" | "browser" | "scraper" {
   const ua = request.headers.get("user-agent") || "";
   if (SOCIAL_BOT_RE.test(ua)) return "social";
@@ -254,12 +282,23 @@ function denied(request: NextRequest, status: 403 | 429, retryAfter?: number) {
   applySecurityHeaders(headers, request.nextUrl.pathname, "/");
   if (retryAfter) headers.set("Retry-After", String(retryAfter));
   if (wantsJson) {
-    return new NextResponse(JSON.stringify({ error: "Forbidden" }), {
+    const body =
+      status === 429
+        ? { error: "Too many requests", retryAfter: retryAfter ?? 60 }
+        : { error: "Forbidden" };
+    return new NextResponse(JSON.stringify(body), {
       status,
       headers: { ...Object.fromEntries(headers), "content-type": "application/json" },
     });
   }
   headers.set("content-type", "text/html; charset=utf-8");
+  if (status === 429) {
+    const wait = Math.max(1, retryAfter ?? 30);
+    return new NextResponse(
+      `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="refresh" content="${wait}"><title>Even geduld</title></head><body style="font-family:system-ui,sans-serif;max-width:32rem;margin:4rem auto;padding:0 1rem;line-height:1.5"><h1 style="font-size:1.25rem">Even geduld…</h1><p>Je bladert even te snel. Deze pagina vernieuwt automatisch over ${wait} seconden.</p><p><a href="">Opnieuw proberen</a></p></body></html>`,
+      { status, headers },
+    );
+  }
   return new NextResponse(
     `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Forbidden</title></head><body><p>Access denied.</p></body></html>`,
     { status, headers },
@@ -337,22 +376,25 @@ export function antiScrapeResponse(
   const now = Date.now();
   prune(now);
 
-  let limit: number = LIMITS.default;
-  if (kind === "search") limit = LIMITS.search;
-  else if (kind === "social") limit = LIMITS.social;
-  else if (pathname.startsWith("/api/agent-000")) limit = LIMITS.agent;
-  else if (pathname.startsWith("/api/contact") || pathname.startsWith("/api/scans")) {
-    limit = LIMITS.contact;
-  } else if (pathname.startsWith("/api/")) limit = LIMITS.api;
-  else if (pathname.startsWith("/sitemaps/") || pathname === "/sitemap.xml") {
-    limit = LIMITS.sitemap;
-  } else if (isArticlePath(internalPath)) limit = LIMITS.article;
-  else if (isSensitiveContentPath(internalPath, pathname)) limit = LIMITS.content;
+  const interactive = isInteractiveBrowser(request, kind);
+  const bucket = limitBucketFor(pathname, internalPath);
 
-  const counted = take(`${kind}:${ip}`, limit, now);
+  // Real in-site browsing (RSC / same-origin) should not trip scrape caps on pages.
+  // Keep tighter limits only for contact/agent/API abuse and anonymous scrapers.
+  if (interactive && (bucket === "default" || bucket === "content" || bucket === "article")) {
+    return null;
+  }
+
+  let limit: number = LIMITS[bucket];
+  if (kind === "search") limit = LIMITS.search;
+  else if (kind === "social") limit = Math.min(limit, LIMITS.social);
+
+  // Separate counters per bucket so page hits never exhaust the API budget.
+  const counted = take(`${kind}:${bucket}:${ip}`, limit, now);
   if (!counted.ok) return denied(request, 429, counted.retryAfter);
 
-  if (kind === "browser" && isArticlePath(internalPath)) {
+  // Unique-article cap only for non-interactive clients (harvesting many slugs).
+  if (kind === "browser" && !interactive && isArticlePath(internalPath)) {
     const unique = takeUnique(`article:${ip}`, pathname.split("?")[0] || pathname, now);
     if (!unique.ok) return denied(request, 429, unique.retryAfter);
   }
