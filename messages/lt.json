@@ -624,9 +624,9 @@
   },
   "appointment": {
     "title": "Registruotis",
-    "selectService": "Pasirinkite tau reikalingą paslaugą:",
+    "selectService": "Pasirinkite kategoriją:",
     "service": "Paslaugos",
-    "selectAService": "Pasirinkti paslaugą",
+    "selectAService": "Pasirinkite...",
     "serviceFallback": "Šiai paslaugai suplanuosime tikslinį skambutį arba nuotolinį seansą.",
     "optionalExtras": "Pasirinktinai – pridėkite priedus prie savo susitikimo:",
     "skipExtras": "Šį veiksmą taip pat galite praleisti.",

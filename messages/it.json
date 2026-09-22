@@ -624,9 +624,9 @@
   },
   "appointment": {
     "title": "Fissare un appuntamento",
-    "selectService": "Seleziona il servizio di cui hai bisogno:",
+    "selectService": "Seleziona una categoria:",
     "service": "Servizio",
-    "selectAService": "Seleziona un servizio",
+    "selectAService": "Fai una scelta...",
     "serviceFallback": "Pianificheremo una chiamata mirata o una sessione remota per questo servizio.",
     "optionalExtras": "Opzionale: aggiungi servizi extra al tuo appuntamento:",
     "skipExtras": "Puoi anche saltare questo passaggio.",

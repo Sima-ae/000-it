@@ -624,9 +624,9 @@
   },
   "appointment": {
     "title": "הזמנת פגישה",
-    "selectService": "בחר את השירות הדרוש לך:",
+    "selectService": "בחר קטגוריה:",
     "service": "שירות תחזוקת אתרים",
-    "selectAService": "בחר שירות",
+    "selectAService": "בחר...",
     "serviceFallback": "אנחנו נקבע שיחה ממוקדת או הפעלה מרחוק עבור שירות זה.",
     "optionalExtras": "אופציונלי — הוסף תוספות לפגישה שלך:",
     "skipExtras": "אפשר גם לדלג על השלב הזה.",

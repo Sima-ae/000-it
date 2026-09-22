@@ -624,9 +624,9 @@
   },
   "appointment": {
     "title": "预订预约",
-    "selectService": "选择你需要的服务：",
+    "selectService": "请选择一个类别：",
     "service": "服务",
-    "selectAService": "选择服务",
+    "selectAService": "请选择...",
     "serviceFallback": "我们将为此服务安排重点呼叫或远程会话。",
     "optionalExtras": "可选—为你的预约添加额外服务：",
     "skipExtras": "你也可以跳过此步骤。",

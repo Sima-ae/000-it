@@ -624,9 +624,9 @@
   },
   "appointment": {
     "title": "احجز موعدًا",
-    "selectService": "اختر الخدمة التي تحتاجها:",
+    "selectService": "اختر فئة:",
     "service": "الخدمة (موظف)",
-    "selectAService": "اختر خدمه",
+    "selectAService": "اختر...",
     "serviceFallback": "سنقوم بجدولة مكالمة مركزة أو جلسة عن بعد لهذه الخدمة.",
     "optionalExtras": "اختياري — أضف إضافات إلى موعدك:",
     "skipExtras": "يمكنك أيضًا تخطي هذه الخطوة.",

@@ -624,9 +624,9 @@
   },
   "appointment": {
     "title": "Boka ett besök",
-    "selectService": "Välj den tjänst du behöver:",
+    "selectService": "Välj en kategori:",
     "service": "Service/Tjänster",
-    "selectAService": "Välj om du vill ha instruktör",
+    "selectAService": "Gör ett val...",
     "serviceFallback": "Vi schemalägger ett fokuserat samtal eller en fjärrsession för den här tjänsten.",
     "optionalExtras": "Valfritt — lägg till extra till ditt möte:",
     "skipExtras": "Du kan också hoppa över det här steget.",

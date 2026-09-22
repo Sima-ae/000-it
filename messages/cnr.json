@@ -624,9 +624,9 @@
   },
   "appointment": {
     "title": "Zakazati sastanak",
-    "selectService": "Izaberite uslugu koja ti je potrebna:",
+    "selectService": "Izaberite kategoriju:",
     "service": "Servis",
-    "selectAService": "Izaberite vrstu usluge:",
+    "selectAService": "Napravite izbor...",
     "serviceFallback": "Заказаћемо фокусирани позив или сесију на даљину за ову услугу.",
     "optionalExtras": "Опционо — додајте додатне услуге свом термину:",
     "skipExtras": "Ovaj korak možete i da preskočite.",

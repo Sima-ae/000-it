@@ -624,9 +624,9 @@
   },
   "appointment": {
     "title": "Book en konsultation",
-    "selectService": "Vælg den service, du har brug for:",
+    "selectService": "Vælg en kategori:",
     "service": "Service",
-    "selectAService": "Vælg en service",
+    "selectAService": "Foretag et valg...",
     "serviceFallback": "Vi planlægger et fokuseret opkald eller en fjernsession for denne tjeneste.",
     "optionalExtras": "Valgfrit — tilføj ekstra til din aftale:",
     "skipExtras": "Du kan også springe dette trin over.",

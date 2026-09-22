@@ -624,9 +624,9 @@
   },
   "appointment": {
     "title": "Rezervați o programare. ",
-    "selectService": "Selecciona el servicio que necesitas:",
+    "selectService": "Selecciona una categoría:",
     "service": "Servicio",
-    "selectAService": "Selecciona un servicio",
+    "selectAService": "Haz una elección...",
     "serviceFallback": "Programaremos una llamada específica o una sesión remota para este servicio.",
     "optionalExtras": "Opcional — añada extras a tu cita:",
     "skipExtras": "Puede saltarse este paso.",

@@ -624,9 +624,9 @@
   },
   "appointment": {
     "title": "Provést rezervaci",
-    "selectService": "Vyber službu, kterou potřebuješ:",
+    "selectService": "Vyber kategorii:",
     "service": "Služba",
-    "selectAService": "Vybrat službu",
+    "selectAService": "Proveď výběr...",
     "serviceFallback": "Pro tuto službu naplánujeme cílený hovor nebo vzdálenou relaci.",
     "optionalExtras": "Volitelné – přidejte si k schůzce doplňky:",
     "skipExtras": "Tento krok můžete také přeskočit.",

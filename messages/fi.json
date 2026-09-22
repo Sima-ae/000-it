@@ -624,9 +624,9 @@
   },
   "appointment": {
     "title": "Varaa aika",
-    "selectService": "Valitse tarvitsemasi palvelu:",
+    "selectService": "Valitse kategoria:",
     "service": "Palvelu",
-    "selectAService": "Valitse kuvaus",
+    "selectAService": "Tee valinta...",
     "serviceFallback": "Sovimme tälle palvelulle kohdennetun puhelun tai etäistunnon.",
     "optionalExtras": "Valinnainen — lisää lisävarusteita tapaamiseesi:",
     "skipExtras": "Voit myös ohittaa tämän vaiheen.",

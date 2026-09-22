@@ -624,9 +624,9 @@
   },
   "appointment": {
     "title": "objednať sa",
-    "selectService": "Vyber službu, ktorú potrebujete:",
+    "selectService": "Vyber kategóriu:",
     "service": "Služby",
-    "selectAService": "Vybrať službu",
+    "selectAService": "Vykonaj výber...",
     "serviceFallback": "Pre túto službu si naplánujeme cielený hovor alebo stretnutie na diaľku.",
     "optionalExtras": "Voliteľné – pridajte k svojmu stretnutiu doplnky:",
     "skipExtras": "Tento krok môžete tiež preskočiť.",

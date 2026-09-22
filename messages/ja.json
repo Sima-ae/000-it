@@ -624,9 +624,9 @@
   },
   "appointment": {
     "title": "ご予約",
-    "selectService": "必要なサービスを選択してください。",
+    "selectService": "カテゴリを選択してください：",
     "service": "サービス",
-    "selectAService": "サービスを選択",
+    "selectAService": "選択してください...",
     "serviceFallback": "このサービスのフォーカスコールまたはリモートセッションをスケジュールします。",
     "optionalExtras": "オプション—アポイントメントにエクストラを追加します。",
     "skipExtras": "こちらの手順は省略することもできます。",

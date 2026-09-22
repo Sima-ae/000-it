@@ -624,9 +624,9 @@
   },
   "appointment": {
     "title": "Görüş bron edin",
-    "selectService": "Sizə lazım olan xidməti seçin:",
+    "selectService": "Kateqoriya seçin:",
     "service": "Funksiyası",
-    "selectAService": "Xidmət seçin",
+    "selectAService": "Seçim edin...",
     "serviceFallback": "Bu xidmət üçün fokuslanmış zəng və ya uzaq seans planlaşdıracağıq.",
     "optionalExtras": "Qeyri-məcburi — görüşünüzə əlavələr əlavə edin:",
     "skipExtras": "Bu addımı ötürə də bilərsiniz.",

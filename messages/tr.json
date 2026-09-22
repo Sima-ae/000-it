@@ -624,9 +624,9 @@
   },
   "appointment": {
     "title": "Rezervasyon Yap",
-    "selectService": "İhtiyacınız olan hizmeti seçin:",
+    "selectService": "Bir kategori seçin:",
     "service": "Hizmet",
-    "selectAService": "Bir Hizmet Seçin",
+    "selectAService": "Bir seçim yapın...",
     "serviceFallback": "Bu hizmet için odaklanmış bir arama veya uzaktan oturum planlayacağız.",
     "optionalExtras": "İsteğe bağlı — randevunuza ekstralar ekleyin:",
     "skipExtras": "*Bu adımı atlayabilirsiniz.",

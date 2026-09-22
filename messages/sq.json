@@ -624,9 +624,9 @@
   },
   "appointment": {
     "title": "Prenoto një takim",
-    "selectService": "Zgjidh shërbimin që të duhet:",
+    "selectService": "Zgjidh një kategori:",
     "service": "Shërbim",
-    "selectAService": "Zgjidhni një shërbim",
+    "selectAService": "Bëj një zgjedhje...",
     "serviceFallback": "Do të programojmë një telefonatë të fokusuar ose seancë në distancë për këtë shërbim.",
     "optionalExtras": "Opsionale — shto shtesa shtesë në takimin tënd:",
     "skipExtras": "Mund ta kalosh edhe këtë hap.",

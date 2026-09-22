@@ -664,7 +664,7 @@
     "when": "Wanneer",
     "none": "geen",
     "requestReceived": "Aanvraag ontvangen",
-    "thankYou": "Bedankt! We bevestigen jouw afspraak zo snel mogelijk per e-mail (meestal binnen één werkdag).",
+    "thankYou": "Bedankt! We bevestigen iedere afspraak zo snel mogelijk per e-mail (meestal binnen één werkdag).",
     "back": "Terug",
     "next": "Volgende",
     "submit": "Afspraak aanvragen",
@@ -681,7 +681,7 @@
     "stepSchedule": "Planning",
     "stepConfirm": "Bevestigen",
     "allServicesCta": "Klik hier voor alle diensten!",
-    "pageIntro": "Kies een dienst, datum en tijd — we bevestigen jouw afspraak per e-mail."
+    "pageIntro": "Kies een dienst, datum en tijd — we bevestigen iedere afspraak per e-mail."
   },
   "digitalDesign": {
     "title": "Digital design",

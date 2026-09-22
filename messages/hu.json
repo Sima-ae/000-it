@@ -624,9 +624,9 @@
   },
   "appointment": {
     "title": "Foglaljon időpontot",
-    "selectService": "Válassza ki a kívánt szolgáltatást:",
+    "selectService": "Válassz egy kategóriát:",
     "service": "Szolgáltatás",
-    "selectAService": "Válasszon szolgáltatást",
+    "selectAService": "Válassz...",
     "serviceFallback": "Beütemezünk egy fókuszált hívást vagy távoli munkamenetet ehhez a szolgáltatáshoz.",
     "optionalExtras": "Opcionális – adjon hozzá extrákat az időpontjához:",
     "skipExtras": "Ezt a lépést is kihagyhatod.",

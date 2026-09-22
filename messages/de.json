@@ -624,9 +624,9 @@
   },
   "appointment": {
     "title": "Einen Termin vereinbaren",
-    "selectService": "Wähle dein Hilfethema.",
+    "selectService": "Wähle eine Kategorie:",
     "service": "Service",
-    "selectAService": "Wähle eine Schulung",
+    "selectAService": "Triff eine Auswahl...",
     "serviceFallback": "Wir planen einen fokussierten Anruf oder eine Remote-Sitzung für diesen Service.",
     "optionalExtras": "Optional — füge deinem Termin Extras hinzu:",
     "skipExtras": "Du kannst diesen Schritt überspringen.",

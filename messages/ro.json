@@ -624,9 +624,9 @@
   },
   "appointment": {
     "title": "Rezervă",
-    "selectService": "Selectați serviciul de care aveți nevoie:",
+    "selectService": "Selectează o categorie:",
     "service": "Serviciu",
-    "selectAService": "Selectează un serviciu",
+    "selectAService": "Fă o alegere...",
     "serviceFallback": "Vom programa un apel telefonic specific sau o sesiune la distanță pentru acest serviciu.",
     "optionalExtras": "Opțional — adaugă elemente suplimentare la programarea ta:",
     "skipExtras": "De asemenea, poți sări peste acest pas.",

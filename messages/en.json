@@ -642,9 +642,9 @@
   },
   "appointment": {
     "title": "Book an appointment",
-    "selectService": "Select the service you need:",
+    "selectService": "Select a category:",
     "service": "Service",
-    "selectAService": "Select a service",
+    "selectAService": "Make a choice...",
     "serviceFallback": "We'll schedule a focused call or remote session for this service.",
     "optionalExtras": "Optional — add extras to your appointment:",
     "skipExtras": "You can also skip this step.",

@@ -624,9 +624,9 @@
   },
   "appointment": {
     "title": "Marque uma consulta",
-    "selectService": "Selecione o serviço de que precisa:",
+    "selectService": "Selecione uma categoria:",
     "service": "Serviço",
-    "selectAService": "Selecione um serviço",
+    "selectAService": "Faça uma escolha...",
     "serviceFallback": "Agendaremos uma chamada focada ou sessão remota para este serviço.",
     "optionalExtras": "Opcional — adicione serviços extras à sua consulta:",
     "skipExtras": "Também pode ignorar este passo.",

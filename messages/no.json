@@ -624,9 +624,9 @@
   },
   "appointment": {
     "title": "Bestill en synsundersøkelse",
-    "selectService": "Velg tjenesten du trenger:",
+    "selectService": "Velg en kategori:",
     "service": "Tjeneste",
-    "selectAService": "Velg en tjeneste",
+    "selectAService": "Ta et valg...",
     "serviceFallback": "Vi avtaler en fokusert samtale eller fjernsamtale for denne tjenesten.",
     "optionalExtras": "Valgfritt – legg til ekstra til avtalen din:",
     "skipExtras": "Du kan også hoppe over dette trinnet.",

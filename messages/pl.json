@@ -624,9 +624,9 @@
   },
   "appointment": {
     "title": "Umów spotkanie",
-    "selectService": "Wybierz usługę, której potrzebujesz:",
+    "selectService": "Wybierz kategorię:",
     "service": "Usługa",
-    "selectAService": "Wybierz usługę",
+    "selectAService": "Dokonaj wyboru...",
     "serviceFallback": "Zaplanujemy ukierunkowaną rozmowę telefoniczną lub sesję zdalną dla tej usługi.",
     "optionalExtras": "Opcjonalnie — dodaj dodatki do swojego spotkania:",
     "skipExtras": "Możesz również pominąć ten krok.",

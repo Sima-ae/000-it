@@ -624,9 +624,9 @@
   },
   "appointment": {
     "title": "Prendre rendez-tu",
-    "selectService": "Sélectionne le service dont tu as besoin :",
+    "selectService": "Sélectionne une catégorie :",
     "service": "Service",
-    "selectAService": "Sélectionnez un service",
+    "selectAService": "Fais un choix...",
     "serviceFallback": "Nous programmerons un appel dédié ou une session à distance pour ce service.",
     "optionalExtras": "Facultatif — ajoutez des options à ton rendez-tu :",
     "skipExtras": "Tu peux aussi ignorer cette étape.",
