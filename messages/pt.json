@@ -29,12 +29,12 @@
   },
   "hero": {
     "title": "Precisa de ajuda com IA, crescimento online ou um site/loja virtual?",
-    "subtitle": "Estamos prontos 7 dias por semana com aconselhamento, serviços, soluções personalizadas, manutenção e suporte.",
+    "subtitle": "Estamos prontos 7 dias por semana com aconselhamento, soluções personalizadas, manutenção e suporte.",
     "introTitle": "Cresça mais rápido com IA e TripleZero iT",
     "introSubtitle": "Publicidade, integração de IA, AEO, GEO, SEO, marketing online e gerenciamento de mídia social — especialmente para empreendedores e freelancers.",
     "bullet1": "Serviços de IA e TI — acessíveis, rápidos, estáveis ​​e seguros.",
     "bullet2": "Varredura de IA gratuita para começar a crescer online imediatamente!",
-    "bullet3": "Ajuda em inglês e holandês — também através do Agent 000",
+    "bullet3": "Suporte em inglês e holandês.",
     "ctaServices": "Ver todos os serviços",
     "ctaHelpChoose": "Ajude-me a escolher",
     "agentName": "Agent 000",
@@ -49,7 +49,7 @@
     "score": "Score",
     "agentsActive": "Agentes ativos",
     "serversOnline": "Servidores on-line",
-    "openChatWithAgent": "Abra o chat com o Agent 000"
+    "openChatWithAgent": "Abra o chat com o Agente 000 — Agent 000"
   },
   "services": {
     "title": "Serviços",

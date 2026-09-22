@@ -29,12 +29,12 @@
   },
   "hero": {
     "title": "AI、オンラインの成長、またはウェブサイト/ウェブショップに関するサポートが必要ですか?",
-    "subtitle": "アドバイス、サービス、カスタム ソリューション、メンテナンス、サポートを年中無休でご提供いたします。",
+    "subtitle": "アドバイス、カスタム ソリューション、メンテナンス、サポートを年中無休でご提供いたします。",
     "introTitle": "AI と TripleZero iT で成長を加速する",
     "introSubtitle": "広告、AI 統合、AEO、GEO、SEO、オンライン マーケティング、ソーシャル メディア管理 – 特に起業家やフリーランサー向け。",
     "bullet1": "AI および IT サービス - 手頃な価格、高速、安定性、安全性。",
     "bullet2": "無料の AI スキャンですぐにオンラインでの成長を始めましょう!",
-    "bullet3": "英語とオランダ語でのサポート — Agent 000 経由でも。",
+    "bullet3": "英語とオランダ語でのサポート。",
     "ctaServices": "すべてのサービスを見る",
     "ctaHelpChoose": "選択を手伝ってください",
     "agentName": "Agent 000",
@@ -49,7 +49,7 @@
     "score": "Score",
     "agentsActive": "アクティブなエージェント",
     "serversOnline": "オンラインのサーバー",
-    "openChatWithAgent": "Agent 000 とチャットを開く"
+    "openChatWithAgent": "エージェント 000 とチャットを開く — Agent 000"
   },
   "services": {
     "title": "サービス",

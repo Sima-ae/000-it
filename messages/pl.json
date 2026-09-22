@@ -29,12 +29,12 @@
   },
   "hero": {
     "title": "Potrzebujesz pomocy ze sztuczną inteligencją, rozwojem online lub stroną internetową/sklepem internetowym?",
-    "subtitle": "Jesteśmy gotowi 7 dni w tygodniu z poradą, usługami, niestandardowymi rozwiązaniami, konserwacją i wsparciem.",
+    "subtitle": "Jesteśmy gotowi 7 dni w tygodniu z poradą, niestandardowymi rozwiązaniami, konserwacją i wsparciem.",
     "introTitle": "Rozwijaj się szybciej dzięki sztucznej inteligencji i TripleZero iT",
     "introSubtitle": "Reklama, integracja AI, AEO, GEO, SEO, marketing online i zarządzanie mediami społecznościowymi – szczególnie dla przedsiębiorców i freelancerów.",
     "bullet1": "Usługi AI i IT — niedrogie, szybkie, stabilne i bezpieczne.",
     "bullet2": "Bezpłatny skan AI, aby od razu zacząć rozwijać się online!",
-    "bullet3": "Pomoc w języku angielskim i niderlandzkim — także za pośrednictwem Agent 000",
+    "bullet3": "Wsparcie w języku angielskim i holenderskim.",
     "ctaServices": "Zobacz wszystkie usługi",
     "ctaHelpChoose": "Pomóż mi wybrać",
     "agentName": "Agent 000",
@@ -49,7 +49,7 @@
     "score": "Score",
     "agentsActive": "Agenci aktywni",
     "serversOnline": "Serwery w Internecie",
-    "openChatWithAgent": "Otwórz czat z Agent 000"
+    "openChatWithAgent": "Otwórz czat z Agentem 000 — Agent 000"
   },
   "services": {
     "title": "Usługi",

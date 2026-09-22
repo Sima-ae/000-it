@@ -29,12 +29,12 @@
   },
   "hero": {
     "title": "Potřebujete pomoc s AI, online růstem nebo webem / internetovým obchodem?",
-    "subtitle": "Jsme připraveni 7 dní v týdnu s poradenstvím, službami, zakázkovými řešeními, údržbou a podporou.",
+    "subtitle": "Jsme připraveni 7 dní v týdnu s poradenstvím, vlastními řešeními, údržbou a podporou.",
     "introTitle": "Roste rychleji s AI a TripleZero iT",
     "introSubtitle": "Reklama, integrace AI, AEO, GEO, SEO, online marketing a správa sociálních médií — zejména pro podnikatele a živnostníky.",
     "bullet1": "Služby AI a IT – dostupné, rychlé, stabilní a bezpečné.",
     "bullet2": "Bezplatný sken AI, abyste mohli začít růst online hned!",
-    "bullet3": "Nápověda v angličtině a holandštině — také prostřednictvím Agent 000",
+    "bullet3": "Podpora v angličtině a holandštině.",
     "ctaServices": "Zobrazit všechny služby",
     "ctaHelpChoose": "Pomozte mi vybrat",
     "agentName": "Agent 000",
@@ -49,7 +49,7 @@
     "score": "Score",
     "agentsActive": "Aktivní agenti",
     "serversOnline": "Servery online",
-    "openChatWithAgent": "Otevřete chat s Agent 000"
+    "openChatWithAgent": "Otevřete chat s agentem 000 — Agent 000"
   },
   "services": {
     "title": "Služby",
