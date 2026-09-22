@@ -28,28 +28,28 @@
     "title": "Gjuha"
   },
   "hero": {
-    "title": "Probleme me faqen, AI ose rritjen online...",
-    "subtitle": "... kjo vërtet nuk është më e kësaj kohe.",
+    "title": "Keni nevojë për ndihmë me AI, rritjen në internet ose një uebsajt/dyqan në internet?",
+    "subtitle": "Ne jemi gati 7 ditë në javë me këshilla, shërbime, zgjidhje me porosi, mirëmbajtje dhe mbështetje.",
     "introTitle": "Rriteni më shpejt me AI dhe TripleZero iT",
-    "introSubtitle": "Reklamim, integrim AI, AEO, GEO, SEO, marketing online dhe menaxhimi i mediave sociale në një platformë rritjeje për bizneset dhe përkthyes të pavarur.",
-    "bullet1": "Shërbime IT dhe AI holandeze që janë të sigurta, të shpejta dhe të qëndrueshme",
-    "bullet2": "Gjithmonë mbështetje në gjuhën tuaj — duke përfshirë Agent 000",
-    "bullet3": "Skanim falas AI për të filluar menjëherë rritjen",
-    "ctaServices": "Shiko shërbimet",
+    "introSubtitle": "Reklamimi, integrimi i AI, AEO, GEO, SEO, marketingu në internet dhe menaxhimi i mediave sociale — veçanërisht për sipërmarrësit dhe përkthyes të pavarur.",
+    "bullet1": "Shërbimet e AI dhe IT - të përballueshme, të shpejta, të qëndrueshme dhe të sigurta.",
+    "bullet2": "Skanim falas i AI për të filluar të rritet menjëherë në internet!",
+    "bullet3": "Ndihmë në anglisht dhe holandisht - gjithashtu nëpërmjet Agjentit 000. — Agent 000",
+    "ctaServices": "Shikoni të gjitha shërbimet",
     "ctaHelpChoose": "Më ndihmo të zgjedh",
     "agentName": "Agent 000",
     "ctaScanTitle": "Sipërmarrës apo freelancer?",
-    "ctaHeroTitle": "Merrni një skanim AI falas",
-    "ctaScan": "Kliko këtu",
+    "ctaHeroTitle": "Dëshironi një skanim falas të AI?",
+    "ctaScan": "KLIKONI KËTU",
     "ctaBannerText": "Ne jemi të lumtur t'u përgjigjemi të gjitha pyetjeve tuaja dhe të ndihmojmë në zbatimin e AI në operacionet tuaja të përditshme.",
     "ctaApproach": "Shihni qasjen tonë",
-    "scansLabel": "skanimet e thella AI përfunduan",
+    "scansLabel": "Përfunduan skanimet e thelluara të AI",
     "liveSignals": "Sinjale të gjalla të rritjes",
-    "aiReady": "Gati AI?",
-    "score": "Rezultati",
+    "aiReady": "Gati për AI?",
+    "score": "Score",
     "agentsActive": "Agjentë aktivë",
     "serversOnline": "Serverë në internet",
-    "openChatWithAgent": "Hap bisedën me Agent 000"
+    "openChatWithAgent": "Hapni bisedën me agjentin 000 — Agent 000"
   },
   "services": {
     "title": "Shërbimet",
@@ -448,7 +448,7 @@
     "resultsTitle": "Rezultatet e skanimit të AI",
     "contactTitle": "Kontaktoni në lidhje me skanimin e AI",
     "contactDescription": "Lini të dhënat tuaja - ne do t'ju ndihmojmë të interpretojmë rezultatet dhe të përshkruajmë një plan.",
-    "contactMessageLead": "Hi TripleZero iT,\n\nI've run an AI scan and would like to discuss the results.\n\nWebsite URL: {url}\n\nScores:\n{scores}\n\nQuestion / notes:"
+    "contactMessageLead": "Përshëndetje TripleZero iT,\n\nUnë kam kryer një skanim të AI dhe do të doja të diskutoja rezultatet.\n\nURL e faqes në internet: {url}\n\nRezultatet:\n{scores}\n\nPyetje / shënime:"
   },
   "portfolio": {
     "title": "Portofoli",
@@ -626,7 +626,7 @@
   },
   "appointment": {
     "title": "Prenoto një takim",
-    "selectService": "Zgjidh një kategori:",
+    "selectService": "Zgjidhni një kategori:",
     "service": "Shërbim",
     "selectAService": "Bëj një zgjedhje...",
     "serviceFallback": "Do të programojmë një telefonatë të fokusuar ose seancë në distancë për këtë shërbim.",

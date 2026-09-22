@@ -28,28 +28,28 @@
     "title": "Jazyk"
   },
   "hero": {
-    "title": "Potíže s webem, AI nebo online růstem...",
-    "subtitle": "... to už opravdu není z této doby.",
+    "title": "Potřebujete pomoc s AI, online růstem nebo webem / internetovým obchodem?",
+    "subtitle": "Jsme připraveni 7 dní v týdnu s poradenstvím, službami, zakázkovými řešeními, údržbou a podporou.",
     "introTitle": "Roste rychleji s AI a TripleZero iT",
-    "introSubtitle": "Reklama, integrace AI, AEO, GEO, SEO, online marketing a správa sociálních médií v jedné růstové platformě pro firmy a nezávislé pracovníky.",
-    "bullet1": "Nizozemské IT a AI služby, které jsou bezpečné, rychlé a stabilní",
-    "bullet2": "Vždy podpora ve vašem jazyce — včetně Agent 000",
-    "bullet3": "Bezplatný AI scan, abyste mohli ihned růst",
-    "ctaServices": "Zobrazit služby",
+    "introSubtitle": "Reklama, integrace AI, AEO, GEO, SEO, online marketing a správa sociálních médií — zejména pro podnikatele a živnostníky.",
+    "bullet1": "Služby AI a IT – dostupné, rychlé, stabilní a bezpečné.",
+    "bullet2": "Bezplatný sken AI, abyste mohli začít růst online hned!",
+    "bullet3": "Nápověda v angličtině a holandštině — také prostřednictvím Agent 000",
+    "ctaServices": "Zobrazit všechny služby",
     "ctaHelpChoose": "Pomozte mi vybrat",
     "agentName": "Agent 000",
     "ctaScanTitle": "Podnikatel nebo OSVČ?",
-    "ctaHeroTitle": "Získejte zdarma skenování AI",
-    "ctaScan": "Klikněte zde",
-    "ctaBannerText": "Rádi odpovíme na všechny tvoje otázky a pomůžeme implementovat AI do vašich každodenních operací.",
+    "ctaHeroTitle": "Chcete skenování AI zdarma?",
+    "ctaScan": "KLIKNĚTE ZDE",
+    "ctaBannerText": "Rádi zodpovíme všechny vaše dotazy a pomůžeme vám implementovat AI do vašich každodenních operací.",
     "ctaApproach": "Podívejte se na náš přístup",
     "scansLabel": "hloubkové skenování AI dokončeno",
     "liveSignals": "Živé signály růstu",
-    "aiReady": "Připravena AI?",
-    "score": "Skóre",
+    "aiReady": "Připraveni na AI?",
+    "score": "Score",
     "agentsActive": "Aktivní agenti",
     "serversOnline": "Servery online",
-    "openChatWithAgent": "Otevřít chat s Agent 000"
+    "openChatWithAgent": "Otevřete chat s Agent 000"
   },
   "services": {
     "title": "Služby",
@@ -448,7 +448,7 @@
     "resultsTitle": "Výsledky skenování AI",
     "contactTitle": "Kontakt ohledně skenování AI",
     "contactDescription": "Zanechte své údaje – pomůžeme vám interpretovat skóre a navrhneme plán.",
-    "contactMessageLead": "Hi TripleZero iT,\n\nI've run an AI scan and would like to discuss the results.\n\nWebsite URL: {url}\n\nScores:\n{scores}\n\nQuestion / notes:"
+    "contactMessageLead": "Ahoj TripleZero iT,\n\nSpustil jsem skenování AI a rád bych probral výsledky.\n\nURL webových stránek: {url}\n\nskóre:\n{scores}\n\nOtázka / poznámky:"
   },
   "portfolio": {
     "title": "Portfolio",
@@ -626,9 +626,9 @@
   },
   "appointment": {
     "title": "Provést rezervaci",
-    "selectService": "Vyber kategorii:",
+    "selectService": "Vyberte kategorii:",
     "service": "Služba",
-    "selectAService": "Proveď výběr...",
+    "selectAService": "Vyberte si...",
     "serviceFallback": "Pro tuto službu naplánujeme cílený hovor nebo vzdálenou relaci.",
     "optionalExtras": "Volitelné – přidejte si k schůzce doplňky:",
     "skipExtras": "Tento krok můžete také přeskočit.",
@@ -725,16 +725,16 @@
     "breadcrumb": "Místa",
     "cityTitle": "AI, AEO, GEO & SEO v {name}",
     "cityIntro": "TripleZero iT pomáhá podnikatelům a týmům v {name} růst rychleji díky integraci AI, AEO, GEO, SEO, online marketingu a zakázkovému softwaru. Místní přehled, měřitelné výsledky.",
-    "bulletScan": "Bezplatné skenování AI pro weby v {name}",
+    "bulletScan": "Bezplatné skenování AI pro webové stránky v {name}",
     "bulletSeo": "AEO, GEO a SEO optimalizace pro klasické a AI vyhledávače",
     "bulletStack": "Webdesign, WordPress, hosting a digitální marketing"
   },
   "inquiry": {
     "websiteHint": "webové stránky / internetový obchod",
-    "defaultMessage": "Dobrý den, TripleZero iT,\n\nChtěl bych se dozvědět více o {service} pro naši {hint}.\n\nAdresa URL webu:\nCíl (např. chatbot, produktový asistent, AI obsahu, vlastní):",
+    "defaultMessage": "Dobrý den, TripleZero iT,\n\nChtěl bych se dozvědět více o {service} pro naše {hint}.\n\nAdresa URL webu:\nCíl (např. chatbot, produktový asistent, AI obsahu, vlastní):",
     "requestAi": "Požádejte o integraci AI",
     "sendRequest": "Odeslat žádost",
-    "dialogTitle": "Kontakt ohledně {service}",
+    "dialogTitle": "Kontakt na {service}",
     "dialogDesc": "Zanechte své údaje – my vám rychle odpovíme poznámkou o proveditelnosti a dalšími kroky."
   },
   "legal": {

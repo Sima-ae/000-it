@@ -28,28 +28,28 @@
     "title": "Jazyk"
   },
   "hero": {
-    "title": "Problémy s webom, AI alebo online rastom...",
-    "subtitle": "... to už naozaj nie je z tejto doby.",
+    "title": "Potrebujete pomoc s AI, online rastom alebo webovou stránkou/internetovým obchodom?",
+    "subtitle": "Sme pripravení 7 dní v týždni s radami, službami, riešeniami na mieru, údržbou a podporou.",
     "introTitle": "Rastiete rýchlejšie s AI a TripleZero iT",
-    "introSubtitle": "Reklama, integrácia AI, AEO, GEO, SEO, online marketing a správa sociálnych médií v jednej rastovej platforme pre firmy a živnostníkov.",
-    "bullet1": "Holandské IT a AI služby, ktoré sú bezpečné, rýchle a stabilné",
-    "bullet2": "Vždy podpora vo vašom jazyku — vrátane Agent 000",
-    "bullet3": "Bezplatný AI scan, aby ste mohli hneď rásť",
-    "ctaServices": "Zobraziť služby",
+    "introSubtitle": "Reklama, integrácia AI, AEO, GEO, SEO, online marketing a správa sociálnych médií – najmä pre podnikateľov a živnostníkov.",
+    "bullet1": "Služby AI a IT – cenovo dostupné, rýchle, stabilné a bezpečné.",
+    "bullet2": "Bezplatné skenovanie AI, aby ste mohli začať rásť online ihneď!",
+    "bullet3": "Pomoc v angličtine a holandčine – aj cez Agent 000",
+    "ctaServices": "Zobraziť všetky služby",
     "ctaHelpChoose": "Pomôžte mi vybrať",
     "agentName": "Agent 000",
     "ctaScanTitle": "Podnikateľ alebo živnostník?",
-    "ctaHeroTitle": "Získajte bezplatný sken AI",
-    "ctaScan": "Klikni sem",
-    "ctaBannerText": "Radi odpovieme na všetky tvoje otázky a pomôžeme implementovať AI do vašich každodenných operácií.",
+    "ctaHeroTitle": "Chcete bezplatné skenovanie AI?",
+    "ctaScan": "KLIKNITE TU",
+    "ctaBannerText": "Radi odpovieme na všetky vaše otázky a pomôžeme vám implementovať AI do vašich každodenných operácií.",
     "ctaApproach": "Pozrite si náš prístup",
     "scansLabel": "dokončené hĺbkové skenovanie AI",
     "liveSignals": "Živé rastové signály",
-    "aiReady": "Pripravená AI?",
-    "score": "skóre",
+    "aiReady": "Pripravený na AI?",
+    "score": "Score",
     "agentsActive": "Aktívni agenti",
     "serversOnline": "Servery online",
-    "openChatWithAgent": "Otvoriť chat s Agent 000"
+    "openChatWithAgent": "Otvorte chat s agentom 000 — Agent 000"
   },
   "services": {
     "title": "Služby",
@@ -448,7 +448,7 @@
     "resultsTitle": "Výsledky skenovania AI",
     "contactTitle": "Kontakt o skenovaní AI",
     "contactDescription": "Nechajte svoje podrobnosti – pomôžeme vám interpretovať skóre a načrtneme plán.",
-    "contactMessageLead": "Hi TripleZero iT,\n\nI've run an AI scan and would like to discuss the results.\n\nWebsite URL: {url}\n\nScores:\n{scores}\n\nQuestion / notes:"
+    "contactMessageLead": "Ahoj TripleZero iT,\n\nSpustil som skenovanie AI a rád by som prediskutoval výsledky.\n\nURL webovej stránky: {url}\n\nSkóre:\n{scores}\n\nOtázka / poznámky:"
   },
   "portfolio": {
     "title": "Portfólio",
@@ -626,9 +626,9 @@
   },
   "appointment": {
     "title": "objednať sa",
-    "selectService": "Vyber kategóriu:",
+    "selectService": "Vyberte kategóriu:",
     "service": "Služby",
-    "selectAService": "Vykonaj výber...",
+    "selectAService": "Vyberte si...",
     "serviceFallback": "Pre túto službu si naplánujeme cielený hovor alebo stretnutie na diaľku.",
     "optionalExtras": "Voliteľné – pridajte k svojmu stretnutiu doplnky:",
     "skipExtras": "Tento krok môžete tiež preskočiť.",
@@ -731,7 +731,7 @@
   },
   "inquiry": {
     "websiteHint": "webová stránka / internetový obchod",
-    "defaultMessage": "Dobrý deň, TripleZero iT,\n\nChcel by som sa dozvedieť viac o {service} pre náš {hint}.\n\nURL webovej stránky:\nCieľ (napr. chatbot, produktový asistent, umelá inteligencia obsahu, vlastné):",
+    "defaultMessage": "Dobrý deň, TripleZero iT,\n\nChcel by som sa dozvedieť viac o {service} pre naše {hint}.\n\nURL webovej stránky:\nCieľ (napr. chatbot, produktový asistent, umelá inteligencia obsahu, vlastné):",
     "requestAi": "Požiadajte o integráciu AI",
     "sendRequest": "Odoslať žiadosť",
     "dialogTitle": "Kontakt o {service}",

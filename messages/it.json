@@ -28,28 +28,28 @@
     "title": "Lingua"
   },
   "hero": {
-    "title": "Problemi con sito, AI o crescita online...",
-    "subtitle": "... non è davvero di questi tempi.",
-    "introTitle": "Cresci più velocemente con AI e TripleZero iT",
-    "introSubtitle": "Pubblicità, integrazione AI, AEO, GEO, SEO, marketing online e gestione dei social media in un'unica piattaforma di crescita per aziende e liberi professionisti.",
-    "bullet1": "Servizi IT e AI olandesi: sicuri, veloci e stabili",
-    "bullet2": "Sempre assistenza nella tua lingua — incluso Agent 000",
-    "bullet3": "AI scan gratuito per iniziare subito a crescere",
-    "ctaServices": "Vedi i servizi",
+    "title": "Hai bisogno di aiuto con l'intelligenza artificiale, la crescita online o un sito web/negozio online?",
+    "subtitle": "Siamo pronti 7 giorni su 7 con consulenza, servizi, soluzioni personalizzate, manutenzione e supporto.",
+    "introTitle": "Cresci più velocemente con l'intelligenza artificiale e TripleZero iT",
+    "introSubtitle": "Pubblicità, integrazione AI, AEO, GEO, SEO, marketing online e gestione dei social media, in particolare per imprenditori e liberi professionisti.",
+    "bullet1": "Servizi IA e IT: convenienti, veloci, stabili e sicuri.",
+    "bullet2": "Scansione AI gratuita per iniziare subito a crescere online!",
+    "bullet3": "Aiuto in inglese e olandese, anche tramite l'Agent 000",
+    "ctaServices": "Visualizza tutti i servizi",
     "ctaHelpChoose": "Aiutami a scegliere",
     "agentName": "Agent 000",
     "ctaScanTitle": "Imprenditore o libero professionista?",
-    "ctaHeroTitle": "Ottieni una scansione AI gratuita",
-    "ctaScan": "Clicca qui",
-    "ctaBannerText": "Siamo felici di rispondere a tutte le tue domande e di aiutarti a implementare AI nelle tue operazioni quotidiane.",
+    "ctaHeroTitle": "Vuoi una scansione AI gratuita?",
+    "ctaScan": "CLICCA QUI",
+    "ctaBannerText": "Siamo felici di rispondere a tutte le tue domande e di aiutarti a implementare l'intelligenza artificiale nelle tue operazioni quotidiane.",
     "ctaApproach": "Guarda il nostro approccio",
-    "scansLabel": "scansioni approfondite AI completate",
+    "scansLabel": "scansioni AI approfondite completate",
     "liveSignals": "Segnali di crescita in tempo reale",
-    "aiReady": "AI pronto?",
-    "score": "Punto",
+    "aiReady": "Pronto per l'intelligenza artificiale?",
+    "score": "Score",
     "agentsActive": "Agenti attivi",
     "serversOnline": "Server in linea",
-    "openChatWithAgent": "Apri chat con Agent 000"
+    "openChatWithAgent": "Apri la chat con l'Agent 000"
   },
   "services": {
     "title": "Servizi",
@@ -448,7 +448,7 @@
     "resultsTitle": "Risultati della scansione AI",
     "contactTitle": "Contatto per la scansione AI",
     "contactDescription": "Lascia i tuoi dati: ti aiuteremo a interpretare i punteggi e a delineare un piano.",
-    "contactMessageLead": "Hi TripleZero iT,\n\nI've run an AI scan and would like to discuss the results.\n\nWebsite URL: {url}\n\nScores:\n{scores}\n\nQuestion / notes:"
+    "contactMessageLead": "Ciao TripleZero iT,\n\nHo eseguito una scansione AI e vorrei discutere i risultati.\n\nURL del sito web: {url}\n\nPunteggi:\n{scores}\n\nDomanda/note:"
   },
   "portfolio": {
     "title": "Portafoglio",
@@ -723,18 +723,18 @@
     "startFreeAiScan": "Avvia la scansione AI gratuita",
     "allServices": "Tutti i servizi",
     "breadcrumb": "Posizioni",
-    "cityTitle": "AI, AEO, GEO e SEO in {nome}",
-    "cityIntro": "TripleZero iT aiuta gli imprenditori e i team di {name} a crescere più rapidamente con l'integrazione dell'intelligenza artificiale, AEO, GEO, SEO, marketing online e software personalizzato. Approfondimento locale, risultati misurabili.",
-    "bulletScan": "Scansione AI gratuita per i siti web in {name}",
+    "cityTitle": "AI, AEO, GEO e SEO in {name}",
+    "cityIntro": "TripleZero iT aiuta gli imprenditori e i team in {name} a crescere più velocemente con integrazione AI, AEO, GEO, SEO, marketing online e software personalizzato. Approfondimento locale, risultati misurabili.",
+    "bulletScan": "Scansione AI gratuita per siti Web in {name}",
     "bulletSeo": "Ottimizzazione AEO, GEO e SEO per motori di ricerca classici e AI",
     "bulletStack": "Web design, WordPress, hosting e marketing digitale"
   },
   "inquiry": {
     "websiteHint": "sito web/negozio online",
-    "defaultMessage": "Ciao TripleZero IT,\n\nVorrei saperne di più su {service} per il nostro {hint}.\n\nURL del sito web:\nObiettivo (ad es. chatbot, assistente prodotto, intelligenza artificiale dei contenuti, personalizzato):",
+    "defaultMessage": "Ciao TripleZero iT,\n\nVorrei saperne di più su {service} per il nostro {hint}.\n\nURL del sito web:\nObiettivo (ad es. chatbot, assistente prodotto, intelligenza artificiale dei contenuti, personalizzato):",
     "requestAi": "Richiedi l'integrazione dell'IA",
     "sendRequest": "Invia richiesta",
-    "dialogTitle": "Contatto per {servizio}",
+    "dialogTitle": "Contatto per {service}",
     "dialogDesc": "Lascia i tuoi dati: ti risponderemo rapidamente con una nota di fattibilità e i passaggi successivi."
   },
   "legal": {

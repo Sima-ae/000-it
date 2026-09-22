@@ -28,28 +28,28 @@
     "title": "Jezik"
   },
   "hero": {
-    "title": "Problemi s web stranicom, AI-jem ili online rastom...",
-    "subtitle": "... to stvarno više nije od ovog vremena.",
+    "title": "Trebate pomoć s umjetnom inteligencijom, internetskim rastom ili web-stranicom/webshopom?",
+    "subtitle": "Spremni smo 7 dana u tjednu sa savjetima, uslugama, prilagođenim rješenjima, održavanjem i podrškom.",
     "introTitle": "Rastite brže uz AI i TripleZero iT",
-    "introSubtitle": "Oglašavanje, integracija AI, AEO, GEO, SEO, internetski marketing i upravljanje društvenim medijima u jednoj platformi za rast za tvrtke i slobodnjake.",
-    "bullet1": "Nizozemske IT i AI usluge koje su sigurne, brze i stabilne",
-    "bullet2": "Uvijek podrška na tvojem jeziku — uključujući Agent 000",
-    "bullet3": "Besplatni AI sken da odmah počnete rasti",
-    "ctaServices": "Pogledaj usluge",
-    "ctaHelpChoose": "Pomozi mi odabrati",
+    "introSubtitle": "Oglašavanje, AI integracija, AEO, GEO, SEO, online marketing i upravljanje društvenim medijima — posebno za poduzetnike i slobodnjake.",
+    "bullet1": "AI i IT usluge — pristupačne, brze, stabilne i sigurne.",
+    "bullet2": "Besplatno AI skeniranje za početak rasta na mreži odmah!",
+    "bullet3": "Pomoć na engleskom i nizozemskom — također putem Agent 000",
+    "ctaServices": "Pogledajte sve usluge",
+    "ctaHelpChoose": "Pomozi mi pri odabiru",
     "agentName": "Agent 000",
     "ctaScanTitle": "Poduzetnik ili freelancer?",
-    "ctaHeroTitle": "Dobijte besplatno skeniranje AI",
-    "ctaScan": "Klikni ovdje",
-    "ctaBannerText": "Rado ćemo odgovoriti na sva tvoja pitanja i pomoći implementirati AI u tvoje svakodnevne operacije.",
+    "ctaHeroTitle": "Želite besplatno AI skeniranje?",
+    "ctaScan": "KLIKNITE OVDJE",
+    "ctaBannerText": "Rado ćemo odgovoriti na sva vaša pitanja i pomoći implementirati AI u vaše svakodnevne operacije.",
     "ctaApproach": "Pogledajte naš pristup",
     "scansLabel": "dovršena dubinska AI skeniranja",
     "liveSignals": "Živi signali rasta",
-    "aiReady": "AI spreman?",
-    "score": "Postići",
+    "aiReady": "AI-spreman?",
+    "score": "Score",
     "agentsActive": "Agenti aktivni",
     "serversOnline": "Poslužitelji na mreži",
-    "openChatWithAgent": "Otvori chat s Agent 000"
+    "openChatWithAgent": "Otvorite chat s agentom 000 — Agent 000"
   },
   "services": {
     "title": "Usluge",
@@ -448,7 +448,7 @@
     "resultsTitle": "Rezultati AI skeniranja",
     "contactTitle": "Kontakt o AI skeniranju",
     "contactDescription": "Ostavite svoje podatke — pomoći ćemo ti u tumačenju rezultata i izraditi plan.",
-    "contactMessageLead": "Hi TripleZero iT,\n\nI've run an AI scan and would like to discuss the results.\n\nWebsite URL: {url}\n\nScores:\n{scores}\n\nQuestion / notes:"
+    "contactMessageLead": "Bok TripleZero iT,\n\nIzvršio sam AI skeniranje i želio bih razgovarati o rezultatima.\n\nURL web stranice: {url}\n\nRezultati:\n{scores}\n\nPitanje/napomene:"
   },
   "portfolio": {
     "title": "Portfelj",
@@ -626,9 +626,9 @@
   },
   "appointment": {
     "title": "Rezervirajte sastanak na dan",
-    "selectService": "Odaberi kategoriju:",
+    "selectService": "Odaberite kategoriju:",
     "service": "Usluga",
-    "selectAService": "Napravi izbor...",
+    "selectAService": "Odaberi...",
     "serviceFallback": "Zakazat ćemo ciljani poziv ili sesiju na daljinu za ovu uslugu.",
     "optionalExtras": "Neobavezno — dodaj dodatke svom terminu:",
     "skipExtras": "Ovaj korak možete i preskočiti.",

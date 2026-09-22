@@ -28,28 +28,28 @@
     "title": "Limbă"
   },
   "hero": {
-    "title": "Probleme cu site-ul, AI sau creșterea online...",
-    "subtitle": "... asta chiar nu mai este de epoca noastră.",
+    "title": "Aveți nevoie de ajutor cu inteligența artificială, creșterea online sau un site web/magazin online?",
+    "subtitle": "Suntem pregătiți 7 zile pe săptămână cu sfaturi, servicii, soluții personalizate, întreținere și asistență.",
     "introTitle": "Creșteți mai repede cu AI și TripleZero iT",
-    "introSubtitle": "Publicitate, integrare AI, AEO, GEO, SEO, marketing online și management al rețelelor sociale într-o singură platformă de creștere pentru afaceri și liber profesioniști.",
-    "bullet1": "Servicii IT și AI olandeze, sigure, rapide și stabile",
-    "bullet2": "Întotdeauna suport în limba ta — inclusiv Agent 000",
-    "bullet3": "Scanare AI gratuită ca să începi să crești imediat",
-    "ctaServices": "Vezi serviciile",
+    "introSubtitle": "Publicitate, integrare AI, AEO, GEO, SEO, marketing online și management al rețelelor sociale – în special pentru antreprenori și freelanceri.",
+    "bullet1": "Servicii AI și IT — accesibile, rapide, stabile și sigure.",
+    "bullet2": "Scanare AI gratuită pentru a începe să crească online imediat!",
+    "bullet3": "Ajutor în engleză și olandeză — tot prin Agent 000.",
+    "ctaServices": "Vezi toate serviciile",
     "ctaHelpChoose": "Ajută-mă să aleg",
     "agentName": "Agent 000",
     "ctaScanTitle": "Antreprenor sau freelancer?",
-    "ctaHeroTitle": "Obțineți o scanare AI gratuită",
-    "ctaScan": "Click aici",
-    "ctaBannerText": "Suntem bucuroși să-ți răspundem la toate întrebările și să te ajutăm la implementarea AI în operațiunile tale de zi cu zi.",
+    "ctaHeroTitle": "Doriți o scanare AI gratuită?",
+    "ctaScan": "CLICK AICI",
+    "ctaBannerText": "Suntem bucuroși să vă răspundem la toate întrebările și să vă ajutăm la implementarea AI în operațiunile dvs. de zi cu zi.",
     "ctaApproach": "Vezi abordarea noastră",
     "scansLabel": "scanări AI aprofundate finalizate",
     "liveSignals": "Semnale vii de creștere",
-    "aiReady": "AI gata?",
-    "score": "Scor",
+    "aiReady": "Pregătit pentru AI?",
+    "score": "Score",
     "agentsActive": "Agenți activi",
     "serversOnline": "Servere online",
-    "openChatWithAgent": "Deschide chatul cu Agent 000"
+    "openChatWithAgent": "Deschideți chatul cu agentul 000 — Agent 000"
   },
   "services": {
     "title": "Servicii",
@@ -448,7 +448,7 @@
     "resultsTitle": "Rezultatele scanării AI",
     "contactTitle": "Contact despre scanarea AI",
     "contactDescription": "Lasă-ți detaliile - te vom ajuta la interpretarea scorurilor și te vom contura un plan.",
-    "contactMessageLead": "Hi TripleZero iT,\n\nI've run an AI scan and would like to discuss the results.\n\nWebsite URL: {url}\n\nScores:\n{scores}\n\nQuestion / notes:"
+    "contactMessageLead": "Bună, TripleZero iT,\n\nAm efectuat o scanare AI și aș dori să discut despre rezultate.\n\nAdresa URL a site-ului web: {url}\n\nScoruri:\n{scores}\n\nÎntrebare/note:"
   },
   "portfolio": {
     "title": "Portofoliu",
@@ -626,9 +626,9 @@
   },
   "appointment": {
     "title": "Rezervă",
-    "selectService": "Selectează o categorie:",
+    "selectService": "Selectați o categorie:",
     "service": "Serviciu",
-    "selectAService": "Fă o alegere...",
+    "selectAService": "Faceți o alegere...",
     "serviceFallback": "Vom programa un apel telefonic specific sau o sesiune la distanță pentru acest serviciu.",
     "optionalExtras": "Opțional — adaugă elemente suplimentare la programarea ta:",
     "skipExtras": "De asemenea, poți sări peste acest pas.",
@@ -725,7 +725,7 @@
     "breadcrumb": "Locații",
     "cityTitle": "AI, AEO, GEO și SEO în {name}",
     "cityIntro": "TripleZero iT ajută antreprenorii și echipele din {name} să crească mai rapid cu integrarea AI, AEO, GEO, SEO, marketing online și software personalizat. Perspectivă locală, rezultate măsurabile.",
-    "bulletScan": "Scanare AI gratuită pentru site-uri în {name}",
+    "bulletScan": "Scanare AI gratuită pentru site-uri web în {name}",
     "bulletSeo": "Optimizare AEO, GEO și SEO pentru motoarele de căutare clasice și AI",
     "bulletStack": "Web design, WordPress, hosting și marketing digital"
   },

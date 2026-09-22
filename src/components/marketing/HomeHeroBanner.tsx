@@ -68,7 +68,7 @@ export function HomeHeroBanner() {
       />
 
       <div className="relative mx-auto grid max-w-6xl items-center gap-6 px-4 py-8 md:gap-8 md:px-6 md:py-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-12">
-        <div className="flex max-w-xl flex-col gap-2.5 text-white md:gap-3">
+        <div className="mx-auto flex max-w-xl flex-col items-center gap-2.5 text-center text-white md:gap-3 lg:mx-0 lg:items-start lg:text-left">
           <motion.h1
             className="font-display text-3xl font-semibold leading-[1.06] tracking-tight sm:text-4xl md:text-5xl lg:text-[3.25rem]"
             {...item(0.05)}
@@ -82,11 +82,11 @@ export function HomeHeroBanner() {
             {t("subtitle")}
           </motion.p>
 
-          <ul className="space-y-1">
+          <ul className="w-full space-y-1">
             {bullets.map((bullet, i) => (
               <motion.li
                 key={bullet}
-                className="flex items-center gap-2 text-sm leading-tight text-white/95 sm:text-[0.9375rem] md:text-[0.975rem] md:whitespace-nowrap"
+                className="flex items-center justify-center gap-2 text-sm leading-tight text-white/95 sm:text-[0.9375rem] md:text-[0.975rem] md:whitespace-nowrap lg:justify-start"
                 {...item(0.22 + i * 0.07)}
               >
                 <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-white/20">
@@ -97,18 +97,21 @@ export function HomeHeroBanner() {
             ))}
           </ul>
 
-          <motion.div className="flex flex-wrap items-center gap-2.5 pt-0.5" {...item(0.48)}>
+          <motion.div
+            className="flex w-full max-w-md flex-nowrap items-center justify-center gap-2 pt-0.5 sm:gap-2.5 lg:max-w-none lg:justify-start"
+            {...item(0.48)}
+          >
             <Button
               asChild
               size="default"
-              className="h-11 rounded-full border-0 bg-white px-7 text-base font-semibold text-brand hover:bg-white/90"
+              className="h-10 min-w-0 flex-1 rounded-full border-0 bg-white px-3 text-sm font-semibold text-brand hover:bg-white/90 sm:h-11 sm:flex-none sm:px-7 sm:text-base"
             >
               <SoftLink href={localizedHref(locale, "/diensten")}>{t("ctaServices")}</SoftLink>
             </Button>
             <Button
               asChild
               size="default"
-              className="h-11 rounded-full border-0 bg-primary px-7 text-base font-semibold text-primary-foreground hover:bg-primary/90"
+              className="h-10 min-w-0 flex-1 rounded-full border-0 bg-primary px-3 text-sm font-semibold text-primary-foreground hover:bg-primary/90 sm:h-11 sm:flex-none sm:px-7 sm:text-base"
             >
               <SoftLink href={localizedHref(locale, "/afspraak")}>{tNav("book")}</SoftLink>
             </Button>

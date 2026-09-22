@@ -28,28 +28,28 @@
     "title": "语言"
   },
   "hero": {
-    "title": "网站、人工智能或线上增长的烦恼...",
-    "subtitle": "...这真的已经过时了。",
-    "introTitle": "通过 AI 和 TripleZero iT 更快成长",
-    "introSubtitle": "广告、AI 集成、AEO、GEO、SEO、在线营销和社交媒体管理在一个为企业和自由职业者提供的成长平台中。",
-    "bullet1": "安全、快速、稳定的荷兰 IT 与人工智能服务",
-    "bullet2": "始终用你的语言提供支持 — 包括 Agent 000",
-    "bullet3": "免费 AI 扫描，立即开始增长",
-    "ctaServices": "查看服务",
+    "title": "需要人工智能、在线增长或网站/网上商店方面的帮助吗？",
+    "subtitle": "我们每周 7 天随时准备提供建议、服务、定制解决方案、维护和支持。",
+    "introTitle": "借助 AI 和 TripleZero iT 实现更快增长",
+    "introSubtitle": "广告、人工智能集成、AEO、GEO、SEO、在线营销和社交媒体管理——特别适合企业家和自由职业者。",
+    "bullet1": "人工智能和 IT 服务 — 价格实惠、快速、稳定且安全。",
+    "bullet2": "免费人工智能扫描，立即开始在线成长！",
+    "bullet3": "以英语和荷兰语提供帮助 — 也可通过 Agent 000 获得帮助。",
+    "ctaServices": "查看所有服务",
     "ctaHelpChoose": "帮我选择",
     "agentName": "Agent 000",
     "ctaScanTitle": "企业家还是自由职业者？",
-    "ctaHeroTitle": "获取免费的 AI 扫描",
+    "ctaHeroTitle": "想要免费的人工智能扫描吗？",
     "ctaScan": "点击这里",
-    "ctaBannerText": "我们很高兴回答你的所有问题并帮助你在日常运营中实施 AI。",
+    "ctaBannerText": "我们很高兴回答您的所有问题，并帮助您在日常运营中实施人工智能。",
     "ctaApproach": "查看我们的方法",
-    "scansLabel": "深度 AI 扫描已完成",
+    "scansLabel": "深度AI扫描完成",
     "liveSignals": "实时生长信号",
     "aiReady": "人工智能准备好了吗？",
-    "score": "分数",
+    "score": "Score",
     "agentsActive": "代理活跃",
     "serversOnline": "服务器在线",
-    "openChatWithAgent": "打开与 Agent 000 的聊天"
+    "openChatWithAgent": "打开与Agent 000 的聊天"
   },
   "services": {
     "title": "服务",
@@ -448,7 +448,7 @@
     "resultsTitle": "AI扫描结果",
     "contactTitle": "关于AI扫描的联系方式",
     "contactDescription": "留下你的详细信息 - 我们将帮助解释分数并制定计划。",
-    "contactMessageLead": "Hi TripleZero iT,\n\nI've run an AI scan and would like to discuss the results.\n\nWebsite URL: {url}\n\nScores:\n{scores}\n\nQuestion / notes:"
+    "contactMessageLead": "您好 TripleZero iT，\n\n我已经运行了人工智能扫描，并想讨论一下结果。\n\n网站网址：{url}\n\n分数：\n{scores}\n\n问题/注意事项："
   },
   "portfolio": {
     "title": "投资组合",
@@ -626,9 +626,9 @@
   },
   "appointment": {
     "title": "预订预约",
-    "selectService": "请选择一个类别：",
+    "selectService": "选择类别：",
     "service": "服务",
-    "selectAService": "请选择...",
+    "selectAService": "做出选择...",
     "serviceFallback": "我们将为此服务安排重点呼叫或远程会话。",
     "optionalExtras": "可选—为你的预约添加额外服务：",
     "skipExtras": "你也可以跳过此步骤。",
@@ -723,18 +723,18 @@
     "startFreeAiScan": "开始免费AI扫描",
     "allServices": "所有服务",
     "breadcrumb": "地点",
-    "cityTitle": "{name} 中的 AI、AEO、GEO 和 SEO",
+    "cityTitle": "{name} 中的人工智能、AEO、GEO 和 SEO",
     "cityIntro": "TripleZero iT 通过人工智能集成、AEO、GEO、SEO、在线营销和定制软件帮助{name}的企业家和团队更快成长。本地洞察力，可衡量的结果。",
-    "bulletScan": "免费 AI 扫描 {name} 中的网站",
+    "bulletScan": "免费人工智能扫描{name}网站",
     "bulletSeo": "针对经典和人工智能搜索引擎的 AEO、GEO 和 SEO 优化",
     "bulletStack": "网页设计、WordPress、托管和数字营销"
   },
   "inquiry": {
     "websiteHint": "网站/网上商店",
-    "defaultMessage": "你好 TripleZero iT，\n\n我想了解有关我们的{hint}的{service}的更多信息。\n\n网站网址：\n目标（例如聊天机器人、产品助理、内容人工智能、定制）：",
+    "defaultMessage": "你好 TripleZero iT，\n\n我想为我们的 {service} 了解更多关于 {hint} 的信息。\n\n网站网址：\n目标（例如聊天机器人、产品助理、内容 AI、定制）：",
     "requestAi": "请求人工智能集成",
     "sendRequest": "发送请求",
-    "dialogTitle": "关于{服务}的联系方式",
+    "dialogTitle": "联系{service}",
     "dialogDesc": "留下你的详细信息 - 我们将快速回复并提供可行性说明和后续步骤。"
   },
   "legal": {

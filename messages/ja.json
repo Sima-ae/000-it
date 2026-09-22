@@ -28,28 +28,28 @@
     "title": "言語"
   },
   "hero": {
-    "title": "ウェブサイト、AI、オンライン成長の悩み...",
-    "subtitle": "...もうこの時代には合いません。",
-    "introTitle": "AI および TripleZero iT で成長を加速する",
-    "introSubtitle": "企業とフリーランサー向けの 1 つの成長プラットフォームで、広告、AI 統合、AEO、GEO、SEO、オンライン マーケティング、ソーシャル メディア管理を統合します。",
-    "bullet1": "安全・高速・安定したオランダのITおよびAIサービス",
-    "bullet2": "いつでもあなたの言語でサポート — Agent 000も含む",
-    "bullet3": "すぐに成長を始めるための無料AIスキャン",
-    "ctaServices": "サービスを見る",
-    "ctaHelpChoose": "選び方をサポート",
+    "title": "AI、オンラインの成長、またはウェブサイト/ウェブショップに関するサポートが必要ですか?",
+    "subtitle": "アドバイス、サービス、カスタム ソリューション、メンテナンス、サポートを年中無休でご提供いたします。",
+    "introTitle": "AI と TripleZero iT で成長を加速する",
+    "introSubtitle": "広告、AI 統合、AEO、GEO、SEO、オンライン マーケティング、ソーシャル メディア管理 – 特に起業家やフリーランサー向け。",
+    "bullet1": "AI および IT サービス - 手頃な価格、高速、安定性、安全性。",
+    "bullet2": "無料の AI スキャンですぐにオンラインでの成長を始めましょう!",
+    "bullet3": "英語とオランダ語でのサポート — Agent 000 経由でも。",
+    "ctaServices": "すべてのサービスを見る",
+    "ctaHelpChoose": "選択を手伝ってください",
     "agentName": "Agent 000",
     "ctaScanTitle": "起業家かフリーランサーか？",
-    "ctaHeroTitle": "無料の AI スキャンを取得する",
-    "ctaScan": "ここをクリックしてください",
-    "ctaBannerText": "皆様のご質問に喜んでお答えし、日常業務への AI の導入をお手伝いいたします。",
-    "ctaApproach": "私たちのアプローチをご覧ください",
-    "scansLabel": "詳細な AI スキャンが完了しました",
+    "ctaHeroTitle": "無料の AI スキャンをご希望ですか?",
+    "ctaScan": "ここをクリック",
+    "ctaBannerText": "あらゆるご質問に喜んでお答えし、日常業務への AI の導入をお手伝いいたします。",
+    "ctaApproach": "私たちのアプローチを見る",
+    "scansLabel": "詳細なAIスキャンが完了",
     "liveSignals": "生の成長シグナル",
-    "aiReady": "AI の準備はできていますか?",
-    "score": "スコア",
+    "aiReady": "AI 対応ですか?",
+    "score": "Score",
     "agentsActive": "アクティブなエージェント",
     "serversOnline": "オンラインのサーバー",
-    "openChatWithAgent": "Agent 000とのチャットを開く"
+    "openChatWithAgent": "Agent 000 とチャットを開く"
   },
   "services": {
     "title": "サービス",
@@ -448,7 +448,7 @@
     "resultsTitle": "AIスキャン結果",
     "contactTitle": "AIスキャンに関するお問い合わせ",
     "contactDescription": "詳細を残してください。スコアの解釈と計画の概要をお手伝いします。",
-    "contactMessageLead": "Hi TripleZero iT,\n\nI've run an AI scan and would like to discuss the results.\n\nWebsite URL: {url}\n\nScores:\n{scores}\n\nQuestion / notes:"
+    "contactMessageLead": "TripleZero iT さん、こんにちは。\n\nAI スキャンを実行したので、その結果についてお話したいと思います。\n\nウェブサイトURL: {url}\n\nスコア:\n{scores}\n\n質問/メモ:"
   },
   "portfolio": {
     "title": "ポートフォリオ",
@@ -626,7 +626,7 @@
   },
   "appointment": {
     "title": "ご予約",
-    "selectService": "カテゴリを選択してください：",
+    "selectService": "カテゴリを選択してください:",
     "service": "サービス",
     "selectAService": "選択してください...",
     "serviceFallback": "このサービスのフォーカスコールまたはリモートセッションをスケジュールします。",
@@ -724,17 +724,17 @@
     "allServices": "すべてのサービス",
     "breadcrumb": "所在地",
     "cityTitle": "{name} の AI、AEO、GEO、SEO",
-    "cityIntro": "TripleZero iT は、AI 統合、AEO、GEO、SEO、オンライン マーケティング、カスタム ソフトウェアを使用して、{name} の起業家やチームがより迅速に成長できるよう支援します。ローカルな洞察、測定可能な結果。",
+    "cityIntro": "TripleZero iT は、AI 統合、AEO、GEO、SEO、オンライン マーケティング、カスタム ソフトウェアを使用して、{name} の起業家とチームがより迅速に成長できるよう支援します。ローカルな洞察、測定可能な結果。",
     "bulletScan": "{name} のウェブサイトの無料 AI スキャン",
     "bulletSeo": "従来の検索エンジンと AI 検索エンジンの AEO、GEO、SEO の最適化",
     "bulletStack": "Web デザイン、WordPress、ホスティング、デジタル マーケティング"
   },
   "inquiry": {
     "websiteHint": "ウェブサイト / ウェブショップ",
-    "defaultMessage": "TripleZero iT さん、こんにちは。\n\n{ヒント} の {service} について詳しく知りたいです。\n\nウェブサイトの URL:\n目標 (例: チャットボット、プロダクト アシスタント、コンテンツ AI、カスタム):",
+    "defaultMessage": "TripleZero iT さん、こんにちは。\n\n{service} の {hint} について詳しく知りたいです。\n\nウェブサイトの URL:\n目標 (例: チャットボット、プロダクト アシスタント、コンテンツ AI、カスタム):",
     "requestAi": "AIの統合をリクエストする",
     "sendRequest": "リクエストの送信",
-    "dialogTitle": "{サービス}に関するお問い合わせ",
+    "dialogTitle": "{service}に関するお問い合わせ",
     "dialogDesc": "詳細を残してください。実現可能性に関するメモと次のステップをすぐに返信します。"
   },
   "legal": {
