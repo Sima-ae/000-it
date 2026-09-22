@@ -195,7 +195,7 @@ export function AppointmentBooking() {
 
   return (
     <GlassCard interactive={false} className="mx-auto w-full max-w-3xl p-5 md:p-8">
-      <h1 className="font-display text-3xl font-semibold tracking-tight md:text-4xl">
+      <h1 className="font-display text-3xl font-semibold tracking-tight text-brand md:text-4xl">
         {t("title")}
       </h1>
 
@@ -227,7 +227,7 @@ export function AppointmentBooking() {
       <div className="mt-8 min-h-88">
         {stepId === "service" && (
           <div className="space-y-5">
-            <p className="text-sm text-muted-foreground">{t("selectService")}</p>
+            <p className="text-sm font-medium text-brand-mint">{t("selectService")}</p>
             <div className="flex flex-wrap gap-2">
               {groups.map((g) => (
                 <button

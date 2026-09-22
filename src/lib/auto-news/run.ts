@@ -1,10 +1,15 @@
 import { prisma } from "@/lib/prisma";
 import { createNewsPost, slugifyNewsId } from "@/lib/news";
-import { AUTO_NEWS_AUTHOR, AUTO_NEWS_PER_RUN } from "@/lib/auto-news/config";
+import {
+  AUTO_NEWS_AUTHOR,
+  AUTO_NEWS_MAX_PER_SOURCE_PER_RUN,
+  AUTO_NEWS_PER_RUN,
+} from "@/lib/auto-news/config";
 import { ensureNewsCoverImage } from "@/lib/auto-news/cover-image";
 import { fetchRecentAiStories } from "@/lib/auto-news/fetch-stories";
 import {
   generateBilingualNewsDraft,
+  looksLikeBoilerplateCopy,
   looksLikeRawFeedCopy,
   sanitizeNewsDraft,
 } from "@/lib/auto-news/generate";
@@ -129,7 +134,7 @@ export async function runAutoNewsPublish(
   );
   const usedTitles = new Set(existing.map((p) => p.title.toLowerCase().trim()));
 
-  const candidates = stories.filter((story) => {
+  const filtered = stories.filter((story) => {
     const url = normalizeUrl(story.url);
     if (usedUrls.has(url)) return false;
     if (usedTitles.has(story.title.toLowerCase().trim())) return false;
@@ -137,6 +142,21 @@ export async function runAutoNewsPublish(
     if (looksLikeRawFeedCopy(story.summary) && story.summary.length < 120) return false;
     return true;
   });
+
+  // Prefer unused sources first so TechCrunch (etc.) cannot fill every slot.
+  const sourceCounts = new Map<string, number>();
+  const candidates: typeof filtered = [];
+  const deferred: typeof filtered = [];
+  for (const story of filtered) {
+    const count = sourceCounts.get(story.sourceId) || 0;
+    if (count >= AUTO_NEWS_MAX_PER_SOURCE_PER_RUN) {
+      deferred.push(story);
+      continue;
+    }
+    sourceCounts.set(story.sourceId, count + 1);
+    candidates.push(story);
+  }
+  candidates.push(...deferred);
 
   if (!candidates.length) {
     return {
@@ -155,9 +175,18 @@ export async function runAutoNewsPublish(
     })) || null;
 
   let indexOffset = alreadyToday;
+  const usedSourcesThisRun = new Set<string>();
   // Try extra candidates if some fail quality checks
-  for (const story of candidates.slice(0, Math.max(remaining * 4, remaining))) {
+  for (const story of candidates.slice(0, Math.max(remaining * 6, remaining))) {
     if (result.published.length >= remaining) break;
+    if (usedSourcesThisRun.has(story.sourceId)) {
+      const laterAlt = candidates.some(
+        (s) =>
+          !usedSourcesThisRun.has(s.sourceId) &&
+          !usedUrls.has(normalizeUrl(s.url)),
+      );
+      if (laterAlt) continue;
+    }
 
     try {
       const draft = sanitizeNewsDraft(await generateBilingualNewsDraft(story));
@@ -165,6 +194,8 @@ export async function runAutoNewsPublish(
       if (
         !draft.excerpt ||
         draft.excerpt.length < 40 ||
+        looksLikeBoilerplateCopy(draft.description) ||
+        looksLikeBoilerplateCopy(draft.descriptionNl) ||
         looksLikeRawFeedCopy(draft.excerpt) ||
         looksLikeRawFeedCopy(draft.excerptNl) ||
         looksLikeRawFeedCopy(draft.description) ||
@@ -217,6 +248,7 @@ export async function runAutoNewsPublish(
 
       usedUrls.add(normalizeUrl(story.url));
       usedTitles.add(created.title.toLowerCase().trim());
+      usedSourcesThisRun.add(story.sourceId);
       result.published.push({
         id: created.id,
         title: created.title,

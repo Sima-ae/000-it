@@ -119,6 +119,31 @@ export function looksLikeRawFeedCopy(text: string) {
   );
 }
 
+/** Old auto-news drafts reused one fixed implication sentence in almost every post. */
+const BOILERPLATE_PATTERNS = [
+  /The announcement matters for teams that rely on models, automation and digital production[^.]*\./gi,
+  /De aankondiging is belangrijk voor teams die afhankelijk zijn van modellen, automatisering en digitale productie[^.]*\./gi,
+  /The paper explores ideas that may influence how teams evaluate models, automation and AI-assisted workflows in the months ahead\./gi,
+  /Het artikel onderzoekt ideeën die van invloed kunnen zijn op hoe teams modellen, automatisering en AI-ondersteunde workflows de komende maanden evalueren\./gi,
+];
+
+export function looksLikeBoilerplateCopy(text: string) {
+  if (!text) return false;
+  return BOILERPLATE_PATTERNS.some((re) => {
+    re.lastIndex = 0;
+    return re.test(text);
+  });
+}
+
+export function stripBoilerplateCopy(text: string) {
+  if (!text) return "";
+  let out = text;
+  for (const re of BOILERPLATE_PATTERNS) {
+    out = out.replace(re, " ");
+  }
+  return out.replace(/[ \t]+\n/g, "\n").replace(/\n{3,}/g, "\n\n").replace(/[ \t]{2,}/g, " ").trim();
+}
+
 function truncate(value: string, max: number) {
   const text = cleanText(value);
   if (text.length <= max) return text;
@@ -127,15 +152,52 @@ function truncate(value: string, max: number) {
   return `${(cut > 40 ? sliced.slice(0, cut) : sliced).trim()}…`;
 }
 
+function hashPick<T>(seed: string, items: readonly T[]): T {
+  let h = 2166136261;
+  for (let i = 0; i < seed.length; i += 1) {
+    h ^= seed.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  // >>> 0 keeps the index non-negative (JS % can be negative for signed ints).
+  return items[(h >>> 0) % items.length];
+}
+
 function paragraphize(summary: string) {
   const text = cleanSourceSummary(summary);
   if (!text) return [];
   const parts = text
     .split(/(?<=[.!?])\s+/)
     .map((p) => p.trim())
-    .filter((p) => p.length > 40);
-  if (parts.length >= 2) return parts.slice(0, 4);
-  if (text.length < 280) return [text];
+    .filter((p) => p.length > 28);
+  if (parts.length >= 2) {
+    // Group short sentences into richer paragraphs (2–3 sentences each).
+    const grouped: string[] = [];
+    for (let i = 0; i < parts.length && grouped.length < 6; ) {
+      const chunk = [parts[i]];
+      i += 1;
+      while (i < parts.length && chunk.join(" ").length < 220 && chunk.length < 3) {
+        chunk.push(parts[i]);
+        i += 1;
+      }
+      grouped.push(chunk.join(" "));
+    }
+    return grouped;
+  }
+  if (text.length < 320) return [text];
+  const third = Math.floor(text.length / 3);
+  const cuts = [third, third * 2]
+    .map((at) => {
+      const left = text.lastIndexOf(" ", at);
+      return left > 80 ? left : at;
+    })
+    .filter((c, i, arr) => arr.indexOf(c) === i);
+  if (cuts.length >= 2) {
+    return [
+      text.slice(0, cuts[0]).trim(),
+      text.slice(cuts[0], cuts[1]).trim(),
+      text.slice(cuts[1]).trim(),
+    ].filter((p) => p.length > 40);
+  }
   const mid = Math.floor(text.length / 2);
   const splitAt = text.lastIndexOf(" ", mid);
   if (splitAt > 80) {
@@ -151,6 +213,9 @@ function inferIndustry(story: NewsStory) {
   if (/\b(agent|workflow|automat|n8n|zapier|orchestr)\b/.test(blob)) return "AI / Automation";
   if (/\b(robot|embodied|hardware)\b/.test(blob)) return "AI / Robotics";
   if (/\b(security|cyber|mythos)\b/.test(blob)) return "AI / Security";
+  if (/\b(energy|water|datacenter|data center|grid|sustainab)\b/.test(blob)) {
+    return "AI / Infrastructure";
+  }
   if (/\b(api|model|gpt|claude|gemini|llm|openai|anthropic)\b/.test(blob)) return "AI / Models";
   return "AI / Industry";
 }
@@ -159,21 +224,158 @@ function inferTags(story: NewsStory) {
   const blob = `${story.title} ${story.summary}`.toLowerCase();
   const tags = new Set<string>(["AI"]);
   if (blob.includes("openai") || blob.includes("gpt")) tags.add("OpenAI");
-  if (blob.includes("google") || blob.includes("gemini")) tags.add("Google");
+  if (blob.includes("google") || blob.includes("gemini") || blob.includes("deepmind")) {
+    tags.add("Google");
+  }
   if (blob.includes("anthropic") || blob.includes("claude")) tags.add("Anthropic");
   if (blob.includes("microsoft") || blob.includes("copilot") || blob.includes("azure")) {
     tags.add("Microsoft");
   }
+  if (blob.includes("nvidia")) tags.add("NVIDIA");
   if (/\b(video|sora|veo|runway)\b/.test(blob)) tags.add("Video");
   if (/\b(image|midjourney|flux)\b/.test(blob)) tags.add("Image");
   if (/\b(agent|workflow|automat)\b/.test(blob)) tags.add("Automation");
   if (/\b(api|model|llm)\b/.test(blob)) tags.add("Models");
   if (story.sourceId === "arxiv-ai") tags.add("Research");
-  tags.add(story.sourceName.split(" ")[0] || story.sourceId);
+  const brand = story.sourceName.split(" ")[0] || story.sourceId;
+  if (brand && !/^(auto|repair)$/i.test(brand)) tags.add(brand);
   return Array.from(tags).slice(0, 6);
 }
 
-function buildEnglishDraft(
+function formatPublishedDate(iso: string | null, locale: "en-GB" | "nl-NL" = "en-GB") {
+  if (!iso) return null;
+  const t = Date.parse(iso);
+  if (!Number.isFinite(t)) return null;
+  return new Date(t).toLocaleDateString(locale, {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+}
+
+function topicHint(title: string) {
+  const cleaned = truncate(title.replace(/[“”"']/g, ""), 110).replace(/\.*$/, "");
+  return cleaned;
+}
+
+function quotedTopic(title: string) {
+  return `“${topicHint(title)}”`;
+}
+
+function buildLead(story: NewsStory, published: string | null, isResearch: boolean) {
+  const topic = quotedTopic(story.title);
+  const seed = `${story.url}|${story.sourceId}`;
+
+  if (isResearch) {
+    return hashPick(
+      seed,
+      published
+        ? [
+            `New AI research published on ${published} looks at ${topic}.`,
+            `A research update from ${published} focuses on ${topic}.`,
+            `Researchers outlined fresh findings on ${published} around ${topic}.`,
+          ]
+        : [
+            `New AI research worth following explores ${topic}.`,
+            `A recent paper digs into ${topic}.`,
+            `Fresh research highlights progress on ${topic}.`,
+          ],
+    );
+  }
+
+  if (published) {
+    return hashPick(seed, [
+      `On ${published}, ${story.sourceName} reported new developments around ${topic}.`,
+      `${story.sourceName} published a briefing on ${published} covering ${topic}.`,
+      `${story.sourceName} (${published}) highlighted movement on ${topic}.`,
+      `According to ${story.sourceName} on ${published}, attention is on ${topic}.`,
+    ]);
+  }
+
+  return hashPick(seed, [
+    `${story.sourceName} reports a notable AI development: ${topic}.`,
+    `Fresh coverage from ${story.sourceName} centers on ${topic}.`,
+    `${story.sourceName} flagged an AI-industry update about ${topic}.`,
+  ]);
+}
+
+function buildImplications(story: NewsStory, industry: string, isResearch: boolean) {
+  const seed = `${story.title}|${story.sourceId}|${industry}`;
+
+  if (isResearch) {
+    return hashPick(seed, [
+      "The findings matter for labs and product teams that need clearer signals before committing to a new evaluation stack.",
+      "If the approach holds up, it could change how practitioners compare baselines, failure modes and deployment readiness.",
+      "Readers tracking research-to-product transfer will watch whether follow-up work turns these ideas into reproducible tooling.",
+    ]);
+  }
+
+  const byIndustry: Record<string, string[]> = {
+    "AI / Models": [
+      "For teams shipping on foundation models, the immediate checklist is evaluation cost, latency under load, and how quickly the change reaches production APIs.",
+      "Model watchers will focus on pricing, rate limits and whether tooling keeps pace with the headline capabilities.",
+      "Practically, this is less about hype and more about how fast builders can validate quality, safety and unit economics.",
+    ],
+    "AI / Automation": [
+      "Automation-heavy teams should map where this lands in existing workflows — especially hand-offs, monitoring and rollback paths.",
+      "The useful question is which repetitive steps become cheaper or safer once the update is in day-to-day tooling.",
+      "Operators will care about reliability and observability as much as the feature list.",
+    ],
+    "AI / Video": [
+      "Creative and product teams will weigh generation quality against turnaround time, licensing constraints and revision loops.",
+      "For video pipelines, the bottleneck often shifts from rendering minutes to review capacity and brand consistency.",
+      "Production leads should test whether the update cuts iteration cost without introducing brittle artifacts.",
+    ],
+    "AI / Image": [
+      "Design and marketing teams will look at consistency, rights clearance and how well outputs fit existing brand systems.",
+      "Image tooling only helps when review cycles shrink — not when teams spend longer cleaning up near-misses.",
+      "The practical test is whether this improves first-pass quality for real briefs, not just demos.",
+    ],
+    "AI / Robotics": [
+      "Hardware-adjacent AI moves tend to show up first as better perception, planning reliability or safer human-machine hand-offs.",
+      "Teams in physical automation will watch deployment constraints: sensors, latency and failure recovery.",
+      "Progress here is measured in field reliability, not just lab demos.",
+    ],
+    "AI / Security": [
+      "Security and platform teams should treat this as a reminder to revisit threat models, access boundaries and model misuse paths.",
+      "The update is most relevant where AI systems touch sensitive data, privileged tools or customer-facing automation.",
+      "Defenders will care about auditability and how quickly controls can be tuned after the change.",
+    ],
+    "AI / Infrastructure": [
+      "Infrastructure and finance owners will feel this first through energy, capacity planning and where workloads can legally run.",
+      "Datacenter and cloud decisions increasingly sit next to model strategy — not after it.",
+      "Expect knock-on effects on cost forecasts, location choices and long-term compute contracts.",
+    ],
+    "AI / Industry": [
+      "Industry shifts like this usually reshape budgets and tooling choices before they rewrite product roadmaps.",
+      "Teams that depend on AI delivery speed should note what changes for vendors, partners and internal build-vs-buy calls.",
+      "The signal for operators is whether this reduces friction in shipping, compliance or supplier lock-in.",
+    ],
+  };
+
+  const pool = byIndustry[industry] || byIndustry["AI / Industry"];
+  return hashPick(seed, pool);
+}
+
+function buildClosing(story: NewsStory, published: string | null) {
+  const seed = `close|${story.url}`;
+  return hashPick(
+    seed,
+    published
+      ? [
+          `Full details remain in the original ${story.sourceName} report from ${published}.`,
+          `For primary sourcing and quotes, see the ${story.sourceName} article dated ${published}.`,
+          `Readers who need the full timeline should open the ${story.sourceName} write-up from ${published}.`,
+        ]
+      : [
+          `Full details remain in the original ${story.sourceName} coverage.`,
+          `For primary sourcing, open the linked ${story.sourceName} article.`,
+          `The ${story.sourceName} report remains the best place for the complete context.`,
+        ],
+  );
+}
+
+export function buildEnglishDraft(
   story: NewsStory,
 ): Omit<
   GeneratedNewsDraft,
@@ -181,49 +383,64 @@ function buildEnglishDraft(
 > {
   const title = truncate(story.title, 140);
   const paragraphs = paragraphize(story.summary);
-  const published = story.publishedAt
-    ? (() => {
-        const t = Date.parse(story.publishedAt);
-        return Number.isFinite(t)
-          ? new Date(t).toLocaleDateString("en-GB", {
-              day: "numeric",
-              month: "long",
-              year: "numeric",
-            })
-          : null;
-      })()
-    : null;
-
+  const published = formatPublishedDate(story.publishedAt);
   const isResearch = story.sourceId === "arxiv-ai" || /arxiv\.org/i.test(story.url);
+  const industry = inferIndustry(story);
 
-  const lead = isResearch
-    ? published
-      ? `New AI research (${published}): ${title}.`
-      : `New AI research worth following: ${title}.`
-    : published
-      ? `${story.sourceName} published an update on ${published} about ${title}.`
-      : `${story.sourceName} reports a notable AI development: ${title}.`;
-
-  const context = isResearch
-    ? "The paper explores ideas that may influence how teams evaluate models, automation and AI-assisted workflows in the months ahead."
-    : "The announcement matters for teams that rely on models, automation and digital production — especially around cost, tooling and delivery speed.";
+  const lead = buildLead(story, published, isResearch);
+  const implications = buildImplications(story, industry, isResearch);
+  const closing = buildClosing(story, published);
 
   const body =
     paragraphs.length > 0
-      ? paragraphs.join("\n\n")
-      : `${story.sourceName} shared a new AI-industry update focused on practical developments for builders and operators.`;
+      ? paragraphs
+      : [
+          `${story.sourceName} shared a practical AI-industry update for builders and operators following ${topicHint(title)}.`,
+        ];
 
-  const description = [lead, context, body].join("\n\n");
-  const excerptSource = paragraphs[0] || context;
-  const excerpt = truncate(excerptSource, 220);
+  // Unique subtitle teaser — keep the full factual summary in the body.
+  const excerpt = truncate(
+    hashPick(`${story.url}|excerpt`, [
+      `A closer look at today’s AI industry move from ${story.sourceName}.`,
+      `${story.sourceName} covers a timely development for AI builders and operators.`,
+      `What changed — and why teams following AI delivery should pay attention.`,
+      `Fresh reporting from ${story.sourceName} on a notable shift in the AI stack.`,
+      `Context for product, infrastructure and automation teams watching this space.`,
+    ]),
+    220,
+  );
+
+  const excerptNorm = cleanText(excerpt).toLowerCase();
+  const descriptionParts: string[] = [];
+  for (const part of [lead, ...body, implications, closing]) {
+    const cleaned = cleanText(part);
+    if (!cleaned) continue;
+    if (cleaned.toLowerCase() === excerptNorm) continue;
+    if (descriptionParts.some((p) => p.toLowerCase() === cleaned.toLowerCase())) {
+      continue;
+    }
+    descriptionParts.push(cleaned);
+  }
+
+  const description = descriptionParts.join("\n\n");
 
   return {
     title,
     excerpt,
     description,
-    industry: inferIndustry(story),
+    industry,
     tags: inferTags(story),
   };
+}
+
+async function translateMultiline(text: string, target: string, source: string) {
+  const parts = text.split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
+  if (parts.length <= 1) return translateText(text, target, source);
+  const translated: string[] = [];
+  for (const part of parts) {
+    translated.push(await translateText(part, target, source));
+  }
+  return translated.join("\n\n");
 }
 
 /**
@@ -253,7 +470,7 @@ export async function generateBilingualNewsDraft(
     try {
       titleNl = await translateText(en.title, "nl", "en");
       excerptNl = await translateText(en.excerpt, "nl", "en");
-      descriptionNl = await translateText(en.description, "nl", "en");
+      descriptionNl = await translateMultiline(en.description, "nl", "en");
       if (
         isAcceptableTranslation(en.title, titleNl, "en", "nl") &&
         isAcceptableTranslation(en.excerpt, excerptNl, "en", "nl") &&

@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+# Rebuilds existing auto-news bodies that still contain the shared boilerplate sentence.
+name: Rewrite news copy
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Max posts to rewrite in this run"
+        required: false
+        default: "50"
+        type: string
+
+concurrency:
+  group: rewrite-news
+  cancel-in-progress: false
+
+jobs:
+  rewrite:
+    name: Rewrite boilerplate news posts
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Trigger rewrite-news endpoint
+        env:
+          APP_URL: ${{ secrets.AUTO_NEWS_APP_URL }}
+          LIMIT: ${{ github.event.inputs.limit || '50' }}
+        run: |
+          set -euo pipefail
+          BASE_URL="${APP_URL:-https://000-it.com}"
+          URL="${BASE_URL%/}/api/cron/rewrite-news?limit=${LIMIT}"
+          echo "POST ${URL}"
+          HTTP=$(curl -sS -o /tmp/rewrite-news.json -w "%{http_code}" -X POST \
+            -H "Accept: application/json" \
+            --max-time 880 \
+            "$URL")
+          echo "HTTP ${HTTP}"
+          head -c 6000 /tmp/rewrite-news.json; echo
+          HTTP_CODE="$HTTP" node -e '
+            const fs = require("fs");
+            const http = process.env.HTTP_CODE;
+            if (http !== "200") {
+              console.error("rewrite-news failed with HTTP", http);
+              process.exit(1);
+            }
+            const data = JSON.parse(fs.readFileSync("/tmp/rewrite-news.json","utf8"));
+            console.log(JSON.stringify({
+              ok: data.ok,
+              checked: data.checked,
+              rewritten: data.rewritten,
+              skipped: data.skipped,
+              errors: (data.errors||[]).length,
+            }, null, 2));
+            if (data.ok === false) process.exit(1);
+          '

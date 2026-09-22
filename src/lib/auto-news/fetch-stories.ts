@@ -69,7 +69,8 @@ function parseFeed(xml: string, sourceId: string, sourceName: string): NewsStory
       return {
         title,
         url,
-        summary: scrubFeedSummary(summary).slice(0, 1200),
+        // Keep enough source text for multi-paragraph drafts.
+        summary: scrubFeedSummary(summary).slice(0, 2800),
         publishedAt,
         sourceId,
         sourceName,
@@ -79,7 +80,40 @@ function parseFeed(xml: string, sourceId: string, sourceName: string): NewsStory
 }
 
 const AI_HINT =
-  /\b(ai|artificial intelligence|gpt|claude|gemini|openai|anthropic|llm|agent|automation|workflow|midjourney|runway|sora|veo|flux|copilot|robotics|machine learning|deepseek|nvidia|model)\b/i;
+  /\b(ai|artificial intelligence|gpt|claude|gemini|openai|anthropic|llm|agent|automation|workflow|midjourney|runway|sora|veo|flux|copilot|robotics|machine learning|deepseek|nvidia|model|neural|transformer|datacenter|data center)\b/i;
+
+/**
+ * Round-robin across sources so high-volume feeds do not crowd out others.
+ * Within each source, stories stay newest-first.
+ */
+export function diversifyStories(ranked: NewsStory[], limit: number): NewsStory[] {
+  if (limit <= 0 || ranked.length === 0) return [];
+
+  const bySource = new Map<string, NewsStory[]>();
+  for (const story of ranked) {
+    const list = bySource.get(story.sourceId) || [];
+    list.push(story);
+    bySource.set(story.sourceId, list);
+  }
+
+  const sourceIds = Array.from(bySource.keys());
+  const out: NewsStory[] = [];
+  let cursor = 0;
+
+  while (out.length < limit && sourceIds.length > 0) {
+    const idx = cursor % sourceIds.length;
+    const sourceId = sourceIds[idx];
+    const list = bySource.get(sourceId) || [];
+    if (!list.length) {
+      sourceIds.splice(idx, 1);
+      continue;
+    }
+    out.push(list.shift()!);
+    cursor += 1;
+  }
+
+  return out;
+}
 
 export async function fetchRecentAiStories(limit = 24): Promise<NewsStory[]> {
   const collected: NewsStory[] = [];
@@ -119,5 +153,18 @@ export async function fetchRecentAiStories(limit = 24): Promise<NewsStory[]> {
       return tb - ta;
     });
 
-  return ranked.slice(0, limit);
+  // Pull a wider pool then diversify so callers get mixed sources.
+  const pool = ranked.slice(0, Math.max(limit * 4, limit));
+  return diversifyStories(pool, limit);
+}
+
+/** Match a story URL against the current feed pool (for rewrite/repair). */
+export async function findStoryByUrl(url: string): Promise<NewsStory | null> {
+  const target = url.split("?")[0].replace(/\/$/, "").toLowerCase();
+  if (!target) return null;
+  const stories = await fetchRecentAiStories(160);
+  return (
+    stories.find((s) => s.url.split("?")[0].replace(/\/$/, "").toLowerCase() === target) ||
+    null
+  );
 }

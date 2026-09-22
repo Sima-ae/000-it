@@ -6,6 +6,9 @@
  *   npm run news:repair -- --force-covers
  *   npm run news:repair -- --takeaways
  *     → remove long "TripleZero iT takeaway…" / short source-check footers from descriptions
+ *   npm run news:repair -- --rewrite-copy
+ *     → rebuild bodies that still contain the shared boilerplate sentence
+ *   npm run news:repair -- --rewrite-copy --limit=80
  *   npm run news:repair -- --takeaways --limit=100
  */
 import { Prisma } from "@prisma/client";
@@ -16,6 +19,7 @@ import {
   generateBilingualNewsDraft,
   looksLikeRawFeedCopy,
 } from "../src/lib/auto-news/generate";
+import { rewriteBoilerplateNewsPosts } from "../src/lib/auto-news/rewrite";
 import {
   parseNewsTranslations,
   type NewsTranslationsMap,
@@ -116,10 +120,21 @@ async function repairTakeaways(limit: number) {
 async function main() {
   const forceCovers = argFlag("force-covers");
   const takeawaysOnly = argFlag("takeaways");
+  const rewriteCopy = argFlag("rewrite-copy");
   const limit = Math.max(1, Number(argValue("limit") || "500") || 500);
 
   if (takeawaysOnly) {
     await repairTakeaways(limit);
+    return;
+  }
+
+  if (rewriteCopy) {
+    const result = await rewriteBoilerplateNewsPosts({
+      limit: Math.min(limit, 200),
+      includeShort: true,
+    });
+    console.log(JSON.stringify(result, null, 2));
+    if (!result.ok) process.exit(1);
     return;
   }
 
