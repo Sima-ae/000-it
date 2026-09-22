@@ -38,7 +38,11 @@ export function ShopProductCard({ product }: { product: ShopProduct }) {
       </SoftLink>
       <div className="flex flex-1 flex-col p-5">
         <p className="text-xs uppercase tracking-wide text-muted-foreground">
-          {product.type === "plan" ? t("typePlan") : t("typeService")}
+          {product.type === "plan"
+            ? t("typePlan")
+            : product.type === "product"
+              ? t("typeProduct")
+              : t("typeService")}
         </p>
         <SoftLink href={localizedHref(locale, `/shop/${product.slug}`)}>
           <h2 className="font-display mt-1 text-lg font-semibold tracking-tight">

@@ -4,7 +4,7 @@ import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
 import { AddToCartButton } from "@/components/shop/AddToCartButton";
 import { ShopProductImage } from "@/components/shop/ShopProductImage";
-import { getShopProductBySlug, localizeShopProduct } from "@/lib/shop/catalog";
+import { getShopProductBySlug, loadShopCatalogFromDb, localizeShopProduct } from "@/lib/shop/catalog";
 import { centsToEuros, formatShopEuro } from "@/lib/shop/vat";
 import { localizedHref } from "@/i18n/pathnames";
 import { resolveEntityParam } from "@/lib/resolve-entity-param";
@@ -25,6 +25,7 @@ export default async function ShopProductPage({
     internalPathFor: (key) => `/shop/${key}`,
   });
   const t = await getTranslations("shop");
+  await loadShopCatalogFromDb();
   const product = getShopProductBySlug(slug);
   if (!product) notFound();
 
@@ -53,7 +54,11 @@ export default async function ShopProductPage({
 
         <div>
           <p className="text-xs uppercase tracking-wide text-muted-foreground">
-            {product.type === "plan" ? t("typePlan") : t("typeService")}
+            {product.type === "plan"
+              ? t("typePlan")
+              : product.type === "product"
+                ? t("typeProduct")
+                : t("typeService")}
           </p>
           <h1 className="font-display mt-2 text-4xl font-semibold tracking-tight">
             {localized.localizedName}

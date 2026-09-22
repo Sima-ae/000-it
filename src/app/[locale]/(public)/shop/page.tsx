@@ -1,7 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Reveal } from "@/components/marketing/Reveal";
 import { ShopProductCard } from "@/components/shop/ShopProductCard";
-import { listShopProducts } from "@/lib/shop/catalog";
+import { loadShopCatalogFromDb } from "@/lib/shop/catalog";
 
 export const dynamic = "force-dynamic";
 
@@ -13,8 +13,11 @@ export default async function ShopPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("shop");
-  const plans = listShopProducts({ type: "plan" });
-  const services = listShopProducts({ type: "service" });
+  const catalog = await loadShopCatalogFromDb();
+  const plans = catalog.filter((p) => p.type === "plan");
+  const services = catalog.filter(
+    (p) => p.type === "service" || p.type === "product",
+  );
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">

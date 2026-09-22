@@ -2,13 +2,16 @@ import importedProducts from "@/content/fixweb/imported-products.json";
 import localImages from "@/content/fixweb/local-images.json";
 import { getProductI18n } from "@/content/fixweb/product-i18n";
 import { brandify } from "@/lib/brandify";
+import type { ShopAdminBillingInterval } from "@/lib/shop/admin";
 import { eurosToCents } from "@/lib/shop/vat";
 
 export type ShopBillingPeriod = "monthly" | "yearly";
-export type ShopProductType = "plan" | "service";
+export type ShopProductType = "plan" | "service" | "product";
+export type ShopBillingInterval = ShopAdminBillingInterval;
 
 export type ShopProduct = {
   id: string;
+  sku?: string;
   slug: string;
   type: ShopProductType;
   name: { nl: string; en: string };
@@ -23,9 +26,17 @@ export type ShopProduct = {
   checkoutMonths?: number;
   currency: "EUR";
   image?: string | null;
+  /** Legacy monthly/yearly flag for plans */
   billingPeriod?: ShopBillingPeriod;
+  /** Full billing model for admin-managed catalog */
+  billingInterval?: ShopBillingInterval;
+  billAsYearlyPackage?: boolean;
+  category?: string | null;
   planKey?: "starter" | "growth";
   featured?: boolean;
+  published?: boolean;
+  sortOrder?: number;
+  tags?: string[];
 };
 
 /** Hosting plans listed monthly but sold as a 12-month package. */
@@ -43,9 +54,12 @@ export const HOSTING_YEARLY_SLUGS = new Set([
 
 /** Charged unit price (incl. VAT cents) used in cart / Stripe. */
 export function shopChargeInclCents(product: ShopProduct) {
-  const months = product.checkoutMonths && product.checkoutMonths > 1
-    ? product.checkoutMonths
-    : 1;
+  const months =
+    product.checkoutMonths && product.checkoutMonths > 1
+      ? product.checkoutMonths
+      : product.billAsYearlyPackage
+        ? 12
+        : 1;
   return product.priceInclCents * months;
 }
 
@@ -142,6 +156,7 @@ function buildPlanProduct(
 
   return {
     id: `plan-${planKey}-${period}`,
+    sku: `PLAN-${planKey.toUpperCase()}-${period === "yearly" ? "YR" : "MO"}`,
     slug: `plan-${planKey}-${period}`,
     type: "plan",
     name: {
@@ -160,13 +175,17 @@ function buildPlanProduct(
     currency: "EUR",
     image: "/uploads/fixweb/ai-integratie.png",
     billingPeriod: period,
+    billingInterval: period === "yearly" ? "yearly" : "monthly",
+    category: "plans",
     planKey,
     featured: planKey === "growth",
+    published: true,
+    sortOrder: planKey === "growth" ? 1 : 2,
   };
 }
 
 function buildServiceProducts(): ShopProduct[] {
-  return imported.map((p) => {
+  return imported.map((p, index) => {
     const i18nNl = getProductI18n(p.slug, "nl");
     const i18nEn = getProductI18n(p.slug, "en");
     const image = imageMap[p.slug] || p.images?.[0] || null;
@@ -181,21 +200,30 @@ function buildServiceProducts(): ShopProduct[] {
 
     return {
       id: `service-${p.slug}`,
+      sku: `SVC-${p.slug.toUpperCase().replace(/[^A-Z0-9]+/g, "-").slice(0, 40)}`,
       slug: p.slug,
-      type: "service",
+      type: "service" as const,
       name: { nl: nameNl, en: nameEn },
       shortDescription: { nl: shortNl, en: shortEn },
       description: { nl: descNl, en: descEn },
       priceInclCents: eurosToCents(p.price),
       checkoutMonths: yearlyHosting ? 12 : undefined,
-      billingPeriod: yearlyHosting ? "yearly" : undefined,
-      currency: "EUR",
+      billAsYearlyPackage: yearlyHosting,
+      billingPeriod: yearlyHosting ? ("yearly" as const) : undefined,
+      billingInterval: yearlyHosting
+        ? ("yearly" as const)
+        : ("one_time" as const),
+      category: yearlyHosting ? "hosting" : "other",
+      currency: "EUR" as const,
       image,
+      published: true,
+      sortOrder: 100 + index,
     };
   });
 }
 
-const CATALOG: ShopProduct[] = [
+/** Built-in catalog used as seed + fallback when the DB is empty. */
+export const STATIC_SHOP_CATALOG: ShopProduct[] = [
   buildPlanProduct("starter", "monthly"),
   buildPlanProduct("starter", "yearly"),
   buildPlanProduct("growth", "monthly"),
@@ -203,12 +231,28 @@ const CATALOG: ShopProduct[] = [
   ...buildServiceProducts(),
 ];
 
-const byId = new Map(CATALOG.map((p) => [p.id, p]));
-const bySlug = new Map(CATALOG.map((p) => [p.slug, p]));
+let activeCatalog: ShopProduct[] = STATIC_SHOP_CATALOG;
+let byId = new Map(activeCatalog.map((p) => [p.id, p]));
+let bySlug = new Map(activeCatalog.map((p) => [p.slug, p]));
+
+function rebuildIndexes(catalog: ShopProduct[]) {
+  activeCatalog = catalog;
+  byId = new Map(catalog.map((p) => [p.id, p]));
+  bySlug = new Map(catalog.map((p) => [p.slug, p]));
+}
+
+/** Hydrate client/runtime catalog from API or DB rows. */
+export function setRuntimeShopCatalog(products: ShopProduct[]) {
+  if (!products.length) {
+    rebuildIndexes(STATIC_SHOP_CATALOG);
+    return;
+  }
+  rebuildIndexes(products);
+}
 
 export function listShopProducts(opts?: { type?: ShopProductType }) {
-  if (!opts?.type) return CATALOG;
-  return CATALOG.filter((p) => p.type === opts.type);
+  if (!opts?.type) return activeCatalog;
+  return activeCatalog.filter((p) => p.type === opts.type);
 }
 
 export function getShopProductById(id: string) {
@@ -234,4 +278,102 @@ export function localizeShopProduct(product: ShopProduct, locale: string) {
     localizedShort: product.shortDescription[lang],
     localizedDescription: product.description[lang],
   };
+}
+
+type DbShopRow = {
+  id: string;
+  sku: string;
+  slug: string;
+  type: string;
+  nameNl: string;
+  nameEn: string;
+  shortDescriptionNl: string;
+  shortDescriptionEn: string;
+  descriptionNl: string;
+  descriptionEn: string;
+  priceInclCents: number;
+  currency: string;
+  billingInterval: string;
+  billAsYearlyPackage: boolean;
+  checkoutMonths: number | null;
+  category: string | null;
+  image: string | null;
+  featured: boolean;
+  published: boolean;
+  sortOrder: number;
+  planKey: string | null;
+  tags: unknown;
+};
+
+export function mapDbShopProduct(row: DbShopRow): ShopProduct {
+  const billingInterval = (
+    ["one_time", "weekly", "monthly", "yearly"].includes(row.billingInterval)
+      ? row.billingInterval
+      : "one_time"
+  ) as ShopBillingInterval;
+
+  const type = (
+    ["plan", "service", "product"].includes(row.type) ? row.type : "service"
+  ) as ShopProductType;
+
+  const planKey =
+    row.planKey === "starter" || row.planKey === "growth" ? row.planKey : undefined;
+
+  const billingPeriod: ShopBillingPeriod | undefined =
+    billingInterval === "yearly"
+      ? "yearly"
+      : billingInterval === "monthly"
+        ? "monthly"
+        : undefined;
+
+  const tags = Array.isArray(row.tags) ? row.tags.map(String) : [];
+
+  return {
+    id: row.id,
+    sku: row.sku,
+    slug: row.slug,
+    type,
+    name: { nl: row.nameNl, en: row.nameEn },
+    shortDescription: {
+      nl: row.shortDescriptionNl,
+      en: row.shortDescriptionEn,
+    },
+    description: { nl: row.descriptionNl, en: row.descriptionEn },
+    priceInclCents: row.priceInclCents,
+    checkoutMonths: row.checkoutMonths ?? undefined,
+    billAsYearlyPackage: row.billAsYearlyPackage,
+    currency: "EUR",
+    image: row.image,
+    billingInterval,
+    billingPeriod,
+    category: row.category,
+    planKey,
+    featured: row.featured,
+    published: row.published,
+    sortOrder: row.sortOrder,
+    tags,
+  };
+}
+
+/** Server-side: load published products from DB, fall back to static catalog. */
+export async function loadShopCatalogFromDb(opts?: {
+  includeUnpublished?: boolean;
+}): Promise<ShopProduct[]> {
+  try {
+    const { prisma } = await import("@/lib/prisma");
+    const rows = await prisma.shopCatalogProduct.findMany({
+      where: opts?.includeUnpublished ? undefined : { published: true },
+      orderBy: [{ sortOrder: "asc" }, { createdAt: "desc" }],
+    });
+    if (!rows.length) return STATIC_SHOP_CATALOG;
+    const mapped = rows.map(mapDbShopProduct);
+    if (!opts?.includeUnpublished) setRuntimeShopCatalog(mapped);
+    return mapped;
+  } catch (error) {
+    console.warn(
+      "[shop] DB catalog unavailable, using static fallback",
+      error instanceof Error ? error.message : error,
+    );
+    return STATIC_SHOP_CATALOG;
+  }
 }

@@ -23,7 +23,7 @@ import {
   catalogServiceTitle,
 } from "@/content/fixweb/catalog-title";
 import { formatEuro, getServiceCardMeta, getServiceContent } from "@/lib/fixweb-content";
-import { getShopProductBySlug } from "@/lib/shop/catalog";
+import { getShopProductBySlug, loadShopCatalogFromDb } from "@/lib/shop/catalog";
 import { buildServiceMetadata } from "@/lib/seo";
 import { resolveEntityParam } from "@/lib/resolve-entity-param";
 import { canonicalEntityKey } from "@/lib/entity-slug-cache";
@@ -96,8 +96,11 @@ export default async function ServiceDetailPage({
   const meta = getCatalogItem(slug);
   const groupLabel = serviceGroups.find((g) => g.id === meta?.group);
   const inquiry = aiInquiryBySlug[slug];
-  const shopProduct =
-    HOSTING_ORDER_SLUGS.has(slug) ? getShopProductBySlug(slug) : null;
+  let shopProduct = null;
+  if (HOSTING_ORDER_SLUGS.has(slug)) {
+    await loadShopCatalogFromDb();
+    shopProduct = getShopProductBySlug(slug);
+  }
   const relatedCandidates = serviceCatalog.filter(
     (item) =>
       item.group === meta?.group &&

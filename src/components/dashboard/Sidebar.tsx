@@ -22,6 +22,7 @@ import {
   Ticket,
   CheckSquare,
   Building2,
+  ShoppingBag,
 } from "lucide-react";
 import { localizedHref } from "@/i18n/pathnames";
 import { ThemeToggle } from "@/components/shared/ThemeToggle";
@@ -39,6 +40,7 @@ const icons: Record<string, React.ComponentType<{ className?: string }>> = {
   "/case-studies-admin": BriefcaseBusiness,
   "/kennisbank-admin": BookOpen,
   "/crm/leads": Inbox,
+  "/shop-admin": ShoppingBag,
   "/crm/tickets": Ticket,
   "/todos": CheckSquare,
   "/users": Shield,

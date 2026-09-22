@@ -45,6 +45,7 @@ model User {
   newsPosts          NewsPost[]
   caseStudies        CaseStudy[]
   shopOrders         ShopOrder[]
+  shopProducts       ShopCatalogProduct[]
   kennisbankArticles KennisbankArticle[]
 }
 
@@ -319,6 +320,46 @@ model ShopOrderItem {
 
   @@index([orderId])
   @@index([productId])
+}
+
+/// Admin-managed shop catalog (products & services). Public /shop reads published rows.
+model ShopCatalogProduct {
+  id                   String               @id @default(cuid())
+  sku                  String               @unique
+  slug                 String               @unique
+  /// product | service | plan
+  type                 String               @default("service")
+  nameNl               String
+  nameEn               String
+  shortDescriptionNl   String               @db.Text
+  shortDescriptionEn   String               @db.Text
+  descriptionNl        String               @db.LongText
+  descriptionEn        String               @db.LongText
+  /// Unit price including 21% VAT, in euro cents
+  priceInclCents       Int
+  currency             String               @default("EUR")
+  /// one_time | weekly | monthly | yearly
+  billingInterval      String               @default("one_time")
+  /// When true, checkout charges priceInclCents × checkoutMonths (e.g. 12 for yearly hosting)
+  billAsYearlyPackage  Boolean              @default(false)
+  checkoutMonths       Int?
+  category             String?
+  image                String?              @db.Text
+  featured             Boolean              @default(false)
+  published            Boolean              @default(true)
+  sortOrder            Int                  @default(0)
+  /// Optional plan family key (starter | growth) for mutual exclusivity
+  planKey              String?
+  tags                 Json?
+  createdById          String?
+  createdBy            User?                @relation(fields: [createdById], references: [id], onDelete: SetNull)
+  createdAt            DateTime             @default(now())
+  updatedAt            DateTime             @updatedAt
+
+  @@index([published, sortOrder])
+  @@index([type, category])
+  @@index([billingInterval])
+  @@index([createdById])
 }
 
 model ContactLead {
