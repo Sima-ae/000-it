@@ -215,7 +215,9 @@ export function Navigation() {
             >
               {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
-            <ThemeToggle />
+            <span className="hidden xl:inline-flex">
+              <ThemeToggle />
+            </span>
             <AccountMenu />
             <CartNavButton />
             <LanguageSwitcher />
@@ -225,6 +227,9 @@ export function Navigation() {
         {open && (
           <div className="max-h-[70vh] overflow-y-auto border-t border-border/60 px-3 py-3 xl:hidden">
             <div className="flex flex-col gap-1">
+              <div className="flex items-center px-1 py-0.5">
+                <ThemeToggle />
+              </div>
               {primaryLinks.map((link) => {
                 const href = localizedHref(locale, link.href);
                 const pathOnly = href.split("#")[0];

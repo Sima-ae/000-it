@@ -189,7 +189,9 @@ export function isAntiScrapeAllowlisted(pathname: string) {
     pathname === "/api/social-preview" ||
     // Product/media assets — never count toward API rate limits (shop grids load many).
     pathname.startsWith("/uploads/") ||
-    pathname.startsWith("/api/uploads/")
+    pathname.startsWith("/api/uploads/") ||
+    // On-demand news cover generation + serving (grid loads many in parallel).
+    pathname.startsWith("/api/news/cover/")
   );
 }
 

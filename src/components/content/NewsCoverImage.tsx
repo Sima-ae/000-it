@@ -1,14 +1,40 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
-import { coverApiPath, isCustomRemoteCover } from "@/lib/auto-news/cover-paths";
+import {
+  coverApiPath,
+  featuredCoverUrl,
+  isCustomRemoteCover,
+} from "@/lib/auto-news/cover-paths";
 
-function initialCoverSrc(id: string, coverImage?: string | null) {
+const BRAND_FALLBACK = "/branding/WEBLOGO-TripleZero-iT.png";
+
+function resolveCoverSrc(id: string, coverImage?: string | null) {
   if (isCustomRemoteCover(coverImage)) return (coverImage || "").trim();
-  return coverApiPath(id);
+  const stored = (coverImage || "").trim();
+  // Prefer the DB path (usually /uploads/nieuws/{slug}.jpg) — files already on disk.
+  if (stored.startsWith("/api/uploads/")) return stored.slice(4);
+  if (stored.startsWith("/uploads/") || (stored.startsWith("/") && !stored.startsWith("/api/"))) {
+    return stored;
+  }
+  return featuredCoverUrl(id, coverImage);
 }
 
+function shouldUnoptimize(src: string) {
+  return (
+    src.startsWith("/api/") ||
+    src.startsWith("/uploads/") ||
+    src.startsWith("/branding/") ||
+    src.startsWith("http://") ||
+    src.startsWith("https://")
+  );
+}
+
+/**
+ * News covers: load static `/uploads/nieuws/...` first (fast, allowlisted).
+ * Only hit `/api/news/cover/{id}` when the file is missing so it can be generated.
+ */
 export function NewsCoverImage({
   id,
   coverImage,
@@ -24,10 +50,14 @@ export function NewsCoverImage({
   sizes: string;
   priority?: boolean;
 }) {
-  const [src, setSrc] = useState(() => initialCoverSrc(id, coverImage));
-  const [usedApi, setUsedApi] = useState(
-    () => initialCoverSrc(id, coverImage).startsWith("/api/"),
-  );
+  const primary = resolveCoverSrc(id, coverImage);
+  const [src, setSrc] = useState(primary);
+  const [stage, setStage] = useState<"primary" | "api" | "fallback">("primary");
+
+  useEffect(() => {
+    setSrc(resolveCoverSrc(id, coverImage));
+    setStage("primary");
+  }, [id, coverImage]);
 
   return (
     <Image
@@ -35,13 +65,23 @@ export function NewsCoverImage({
       alt={alt}
       fill
       priority={priority}
-      className={className}
+      className={
+        stage === "fallback"
+          ? `${className} object-contain p-6 opacity-70`.trim()
+          : className
+      }
       sizes={sizes}
-      unoptimized={src.includes("image.pollinations.ai") || src.startsWith("/api/")}
+      unoptimized={shouldUnoptimize(src)}
       onError={() => {
-        if (usedApi) return;
-        setUsedApi(true);
-        setSrc(coverApiPath(id));
+        if (stage === "primary") {
+          setStage("api");
+          setSrc(coverApiPath(id));
+          return;
+        }
+        if (stage === "api") {
+          setStage("fallback");
+          setSrc(BRAND_FALLBACK);
+        }
       }}
     />
   );
