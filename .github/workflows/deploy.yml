@@ -78,9 +78,9 @@ jobs:
             exit 1
           fi
           # Runtime uses `next start` (see scripts/deploy.sh), not the standalone server.
-          # Exclude cache/standalone/diagnostics so the upload stays small and reliable.
+          # Exclude cache/standalone/diagnostics — still report size for visibility.
           echo "==> .next size breakdown (before package)"
-          du -sh .next .next/* 2>/dev/null | sort -hr | head -30
+          du -sh .next .next/*/ 2>/dev/null | sort -hr | head -30
           tar -czf next-build.tar.gz \
             --exclude='.next/cache' \
             --exclude='.next/trace' \
@@ -91,10 +91,12 @@ jobs:
             .next
           ls -lh next-build.tar.gz
           BYTES="$(wc -c < next-build.tar.gz | tr -d ' ')"
+          echo "artifact_bytes=$BYTES" >> "$GITHUB_OUTPUT"
           # Soft guard: something unexpected ballooned the artifact
-          if [[ "$BYTES" -gt 150000000 ]]; then
-            echo "::warning::next-build.tar.gz is larger than 150MB (${BYTES} bytes). Check excludes."
+          if [[ "$BYTES" -gt 120000000 ]]; then
+            echo "::warning::next-build.tar.gz is ${BYTES} bytes. Deploy will build on the VPS instead of scp."
           fi
+        id: package_next
 
       - name: Deploy over SSH
         env:
@@ -103,6 +105,7 @@ jobs:
           VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
           VPS_SSH_PORT: ${{ secrets.VPS_SSH_PORT }}
           VPS_APP_PATH: ${{ secrets.VPS_APP_PATH }}
+          ARTIFACT_BYTES: ${{ steps.package_next.outputs.artifact_bytes }}
           # Avoid interactive/profile noise during non-TTY uploads
           TERM: dumb
         run: |
@@ -111,6 +114,14 @@ jobs:
           PORT="${VPS_SSH_PORT:-22}"
           APP_DIR="${VPS_APP_PATH:-/var/www/000-it.com}"
           REPO_URL="https://github.com/${{ github.repository }}.git"
+          # GitHub→VPS scp often crawls at <100KB/s; large .next/server prerenders
+          # make uploads unreliable. Prefer VPS build when the archive is large.
+          MAX_SCP_BYTES="${MAX_SCP_BYTES:-120000000}"
+          ARTIFACT_BYTES="${ARTIFACT_BYTES:-0}"
+          USE_SCP=0
+          if [[ -f next-build.tar.gz ]] && [[ "$ARTIFACT_BYTES" -gt 0 ]] && [[ "$ARTIFACT_BYTES" -le "$MAX_SCP_BYTES" ]]; then
+            USE_SCP=1
+          fi
 
           mkdir -p ~/.ssh
           umask 077
@@ -144,18 +155,22 @@ jobs:
           echo "==> Free space on VPS /tmp"
           ssh "${SSH_OPTS[@]}" "${VPS_USER}@${VPS_HOST}" 'df -h /tmp /var/tmp / 2>/dev/null | head -20'
 
-          echo "==> Upload pre-built .next to VPS (scp)"
-          ls -lh next-build.tar.gz
-          # scp is more reliable than piping a large archive through ssh stdin.
-          # 20m budget — slow GitHub→VPS links have stalled ~373MB uploads before.
-          rm -f /tmp/next-build.tar.gz.upload
-          if ! timeout 1200 scp "${SCP_OPTS[@]}" next-build.tar.gz "${VPS_USER}@${VPS_HOST}:/tmp/next-build.tar.gz.upload"; then
-            echo "::error::Upload of next-build.tar.gz timed out or failed (scp)."
-            ssh "${SSH_OPTS[@]}" "${VPS_USER}@${VPS_HOST}" 'rm -f /tmp/next-build.tar.gz.upload' || true
-            exit 1
+          SKIP_BUILD=0
+          if [[ "$USE_SCP" == "1" ]]; then
+            echo "==> Upload pre-built .next to VPS (scp) — ${ARTIFACT_BYTES} bytes"
+            ls -lh next-build.tar.gz
+            if timeout 900 scp "${SCP_OPTS[@]}" next-build.tar.gz "${VPS_USER}@${VPS_HOST}:/tmp/next-build.tar.gz.upload"; then
+              ssh "${SSH_OPTS[@]}" "${VPS_USER}@${VPS_HOST}" \
+                'mv -f /tmp/next-build.tar.gz.upload /tmp/next-build.tar.gz && ls -lh /tmp/next-build.tar.gz && test -s /tmp/next-build.tar.gz'
+              SKIP_BUILD=1
+            else
+              echo "::warning::scp failed/timed out — falling back to build on VPS"
+              ssh "${SSH_OPTS[@]}" "${VPS_USER}@${VPS_HOST}" 'rm -f /tmp/next-build.tar.gz.upload /tmp/next-build.tar.gz' || true
+              SKIP_BUILD=0
+            fi
+          else
+            echo "==> Skipping scp (artifact ${ARTIFACT_BYTES} bytes > ${MAX_SCP_BYTES}). Building on VPS."
           fi
-          ssh "${SSH_OPTS[@]}" "${VPS_USER}@${VPS_HOST}" \
-            'mv -f /tmp/next-build.tar.gz.upload /tmp/next-build.tar.gz && ls -lh /tmp/next-build.tar.gz && test -s /tmp/next-build.tar.gz'
 
           REMOTE_SCRIPT="$(mktemp)"
           trap 'rm -f "$REMOTE_SCRIPT"' EXIT
@@ -163,6 +178,7 @@ jobs:
           set -euo pipefail
           : "${APP_DIR:?}"
           : "${REPO_URL:?}"
+          : "${SKIP_BUILD:?}"
 
           git config --global --add safe.directory "$APP_DIR" 2>/dev/null || true
 
@@ -192,22 +208,26 @@ jobs:
           git clean -fd -e .env -e public/uploads -e 'public/uploads/**'
           echo "==> $(git log -1 --oneline)"
 
-          echo "==> Install pre-built .next from CI"
-          rm -rf .next
-          tar -xzf /tmp/next-build.tar.gz -C .
-          rm -f /tmp/next-build.tar.gz
-          if [[ ! -f .next/BUILD_ID ]]; then
-            echo "ERROR: extracted .next is missing BUILD_ID"
-            exit 1
+          if [[ "$SKIP_BUILD" == "1" ]]; then
+            echo "==> Install pre-built .next from CI"
+            rm -rf .next
+            tar -xzf /tmp/next-build.tar.gz -C .
+            rm -f /tmp/next-build.tar.gz
+            if [[ ! -f .next/BUILD_ID ]]; then
+              echo "ERROR: extracted .next is missing BUILD_ID"
+              exit 1
+            fi
+          else
+            rm -f /tmp/next-build.tar.gz /tmp/next-build.tar.gz.upload
           fi
 
           chmod +x scripts/deploy.sh 2>/dev/null || true
-          SKIP_BUILD=1 bash scripts/deploy.sh
+          SKIP_BUILD="$SKIP_BUILD" bash scripts/deploy.sh
           curl -sf -o /dev/null -w "000-it :3066 HTTP %{http_code}\n" http://127.0.0.1:3066/ || echo "WARN: :3066 not reachable"
           REMOTE
 
           if ! ssh "${SSH_OPTS[@]}" "${VPS_USER}@${VPS_HOST}" \
-            "APP_DIR=$(printf '%q' "$APP_DIR") REPO_URL=$(printf '%q' "$REPO_URL") bash -s" < "$REMOTE_SCRIPT"; then
+            "APP_DIR=$(printf '%q' "$APP_DIR") REPO_URL=$(printf '%q' "$REPO_URL") SKIP_BUILD=$(printf '%q' "$SKIP_BUILD") bash -s" < "$REMOTE_SCRIPT"; then
             echo "::error::Deploy SSH session failed."
             exit 1
           fi
