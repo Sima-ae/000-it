@@ -341,41 +341,143 @@ function quotedTopic(title: string) {
   return `“${topicHint(title)}”`;
 }
 
-function buildLead(story: NewsStory, published: string | null, isResearch: boolean) {
+function buildLead(story: NewsStory, _published: string | null, isResearch: boolean) {
   const topic = quotedTopic(story.title);
-  const seed = `${story.url}|${story.sourceId}`;
-
+  // Never put the date in the opening line — keep a stable "source reported on …" form.
   if (isResearch) {
-    return hashPick(
-      seed,
-      published
-        ? [
-            `New AI research published on ${published} looks at ${topic}.`,
-            `A research update from ${published} focuses on ${topic}.`,
-            `Researchers outlined fresh findings on ${published} around ${topic}.`,
-          ]
-        : [
-            `New AI research worth following explores ${topic}.`,
-            `A recent paper digs into ${topic}.`,
-            `Fresh research highlights progress on ${topic}.`,
-          ],
+    return `New AI research explores ${topic}.`;
+  }
+  return `${story.sourceName} reported on ${topic}.`;
+}
+
+/** Canonical Dutch opening paired with English (skip awkward MT of the lead). */
+export function buildLeadNl(sourceName: string, titleNl: string, isResearch: boolean) {
+  const topic = quotedTopic(titleNl || "");
+  if (isResearch) {
+    return `Nieuw AI-onderzoek verkent ${topic}.`;
+  }
+  const src = (sourceName || "").trim() || "AI-pers";
+  return `${src} rapporteerde over ${topic}.`;
+}
+
+/**
+ * Strip dates from the opening paragraph and normalize to:
+ * EN: "{source} reported on …"
+ * NL: "{source} rapporteerde over …"
+ */
+export function normalizeLeadParagraph(text: string) {
+  if (!text) return text;
+  const parts = text
+    .split(/\n\s*\n/)
+    .map((p) => p.trim())
+    .filter(Boolean);
+  if (!parts.length) return text.trim();
+
+  let lead = parts[0]!;
+
+  // Drop parenthetical dates: (21 september 2026)
+  lead = lead.replace(/\s*\(\d{1,2}\s+[A-Za-zà-üÀ-Ü.]+\s+\d{4}\)\s*/gi, " ");
+
+  // Drop "op/on 21 september 2026" anywhere in the lead
+  lead = lead.replace(
+    /\s*(?:op|on)\s+\d{1,2}\s+[A-Za-zà-üÀ-Ü.]+\s+\d{4}\b/gi,
+    "",
+  );
+
+  // "Op/On DATE, …" already stripped date — also strip leftover leading Op/On
+  lead = lead.replace(/^(?:Op|On)\s+/i, "");
+
+  // EN variants → "{source} reported on {topic…}"
+  lead = lead
+    .replace(
+      /^According to\s+(.+?),\s+attention is on\s+/i,
+      "$1 reported on ",
+    )
+    .replace(
+      /^(.+?)\s+published a briefing\s+(?:covering\s+)?/i,
+      "$1 reported on ",
+    )
+    .replace(
+      /^(.+?)\s+highlighted movement on\s+/i,
+      "$1 reported on ",
+    )
+    .replace(
+      /^(.+?)\s+reported new developments around\s+/i,
+      "$1 reported on ",
+    )
+    .replace(
+      /^(.+?)\s+reports a notable AI development:\s*/i,
+      "$1 reported on ",
+    )
+    .replace(
+      /^Fresh coverage from\s+(.+?)\s+centers on\s+/i,
+      "$1 reported on ",
+    )
+    .replace(
+      /^(.+?)\s+flagged an AI-industry update about\s+/i,
+      "$1 reported on ",
+    )
+    .replace(/^(.+?)\s+reported on\s+/i, "$1 reported on ");
+
+  // NL variants → "{source} rapporteerde over {topic…}"
+  // Handle "Op DATE rapporteerde SOURCE …" before stripping the date alone.
+  lead = lead
+    .replace(
+      /^(?:Op|On)\s+\d{1,2}\s+\S+\s+\d{4},?\s+rapporteerde\s+(.+?)\s+(?:nieuwe ontwikkelingen rond|over)\s+/i,
+      "$1 rapporteerde over ",
+    )
+    .replace(
+      /^(.+?)\s+publiceerde\s+(?:een briefing over|over)\s+/i,
+      "$1 rapporteerde over ",
+    )
+    .replace(
+      /^(.+?)\s+benadrukte\s+de beweging rond\s+/i,
+      "$1 rapporteerde over ",
+    )
+    .replace(
+      /^(.+?)\s+rapporteerde\s+nieuwe ontwikkelingen rond\s+/i,
+      "$1 rapporteerde over ",
+    )
+    .replace(
+      /^rapporteerde\s+(.+?)\s+nieuwe ontwikkelingen rond\s+/i,
+      "$1 rapporteerde over ",
+    )
+    .replace(
+      /^rapporteerde\s+(.+?)\s+over\s+/i,
+      "$1 rapporteerde over ",
+    )
+    .replace(/^(.+?)\s+rapporteerde over\s+/i, "$1 rapporteerde over ");
+
+  // Research EN/NL without date
+  lead = lead
+    .replace(
+      /^New AI research(?: published| worth following)?(?: looks at| explores| focuses on)?\s+/i,
+      "New AI research explores ",
+    )
+    .replace(
+      /^A research update(?: from)?(?: focuses on)?\s+/i,
+      "New AI research explores ",
+    )
+    .replace(
+      /^Researchers outlined fresh findings(?: around)?\s+/i,
+      "New AI research explores ",
+    )
+    .replace(
+      /^A recent paper digs into\s+/i,
+      "New AI research explores ",
+    )
+    .replace(
+      /^Fresh research highlights progress on\s+/i,
+      "New AI research explores ",
+    )
+    .replace(
+      /^Nieuw AI-onderzoek(?: gepubliceerd)?(?: kijkt naar| verkent| richt zich op)?\s+/i,
+      "Nieuw AI-onderzoek verkent ",
     );
-  }
 
-  if (published) {
-    return hashPick(seed, [
-      `On ${published}, ${story.sourceName} reported new developments around ${topic}.`,
-      `${story.sourceName} published a briefing on ${published} covering ${topic}.`,
-      `${story.sourceName} (${published}) highlighted movement on ${topic}.`,
-      `According to ${story.sourceName} on ${published}, attention is on ${topic}.`,
-    ]);
-  }
-
-  return hashPick(seed, [
-    `${story.sourceName} reports a notable AI development: ${topic}.`,
-    `Fresh coverage from ${story.sourceName} centers on ${topic}.`,
-    `${story.sourceName} flagged an AI-industry update about ${topic}.`,
-  ]);
+  lead = lead.replace(/[ \t]{2,}/g, " ").trim();
+  parts[0] = lead;
+  return parts.join("\n\n");
 }
 
 function buildImplications(story: NewsStory, industry: string, isResearch: boolean) {
@@ -495,6 +597,17 @@ export function replaceLastParagraph(text: string, nextClosing: string) {
     return text.trim();
   }
   parts[parts.length - 1] = nextClosing.trim();
+  return parts.join("\n\n");
+}
+
+/** Always rewrite the first paragraph (used when normalizing leads). */
+export function setFirstParagraph(text: string, nextLead: string) {
+  const parts = (text || "")
+    .split(/\n\s*\n/)
+    .map((p) => p.trim())
+    .filter(Boolean);
+  if (!parts.length) return nextLead.trim();
+  parts[0] = nextLead.trim();
   return parts.join("\n\n");
 }
 
@@ -643,6 +756,17 @@ export async function generateBilingualNewsDraft(
     excerpt: excerptNl,
     description: descriptionNl,
   };
+
+  // Keep a fixed Dutch lead ("{source} rapporteerde over …") — never leave dates in the opener.
+  if (nlSeed.description && nlSeed.title) {
+    const isResearch =
+      cleaned.sourceId === "arxiv-ai" || /arxiv\.org/i.test(cleaned.url);
+    nlSeed.description = setFirstParagraph(
+      nlSeed.description,
+      buildLeadNl(cleaned.sourceName, nlSeed.title, isResearch),
+    );
+  }
+
   const translations: NewsTranslationsMap = {};
   if (nlSeed.title && nlSeed.excerpt && nlSeed.description) {
     translations.nl = nlSeed;
@@ -650,6 +774,7 @@ export async function generateBilingualNewsDraft(
 
   const draft = sanitizeNewsDraft({
     ...en,
+    description: normalizeLeadParagraph(en.description),
     titleNl: nlSeed.title,
     excerptNl: nlSeed.excerpt,
     descriptionNl: nlSeed.description,
@@ -675,7 +800,7 @@ export function sanitizeNewsDraft(draft: GeneratedNewsDraft): GeneratedNewsDraft
     translations[locale] = {
       title: cleanText(copy.title),
       excerpt: cleanSourceSummary(copy.excerpt),
-      description: cleanSourceSummary(copy.description),
+      description: normalizeLeadParagraph(cleanSourceSummary(copy.description)),
     };
   }
 
@@ -685,8 +810,8 @@ export function sanitizeNewsDraft(draft: GeneratedNewsDraft): GeneratedNewsDraft
     titleNl: cleanText(draft.titleNl),
     excerpt: cleanSourceSummary(draft.excerpt),
     excerptNl: cleanSourceSummary(draft.excerptNl),
-    description: cleanSourceSummary(draft.description),
-    descriptionNl: cleanSourceSummary(draft.descriptionNl),
+    description: normalizeLeadParagraph(cleanSourceSummary(draft.description)),
+    descriptionNl: normalizeLeadParagraph(cleanSourceSummary(draft.descriptionNl)),
     translations,
     industry: cleanText(draft.industry),
     tags: draft.tags

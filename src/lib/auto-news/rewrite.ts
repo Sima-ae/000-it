@@ -11,9 +11,12 @@ import {
   stripBoilerplateCopy,
   buildClosingEn,
   buildClosingNl,
+  buildLeadNl,
   formatPublishedDate,
   finishTruncatedCopy,
   isOutdatedClosingParagraph,
+  normalizeLeadParagraph,
+  setFirstParagraph,
   setLastParagraph,
   sliceAtSentence,
 } from "@/lib/auto-news/generate";
@@ -101,7 +104,7 @@ export function extractSummaryFromStoredDescription(description: string) {
     .filter(Boolean)
     .filter((p) => {
       if (
-        /^(?:on\s+\d|new ai research|according to|fresh from|full details remain|for primary sourcing|readers who need|readers can open the full|you can read the full|the full article is available|a closer look at why|what builders)/i.test(
+        /^(?:on\s+\d|new ai research|according to|fresh from|full details remain|for primary sourcing|readers who need|readers can open the full|readers can view the full|you can read the full|the full article is available|a closer look at why|what builders)/i.test(
           p,
         )
       ) {
@@ -115,7 +118,7 @@ export function extractSummaryFromStoredDescription(description: string) {
         return false;
       }
       if (
-        /\b(published an update|publiceerde op|reports a notable|reported new developments|published a briefing|highlighted movement|flagged an ai)\b/i.test(
+        /\b(published an update|publiceerde op|reports a notable|reported new developments|reported on|rapporteerde over|published a briefing|highlighted movement|flagged an ai|benadrukte de beweging)\b/i.test(
           p,
         )
       ) {
@@ -451,6 +454,146 @@ export async function repairAwkwardNewsClosings(
       const message = error instanceof Error ? error.message : String(error);
       result.errors.push(`${post.id}: ${message}`);
       console.warn("[repair-closings] failed", post.id, message);
+    }
+  }
+
+  if (result.errors.length && !result.rewritten) result.ok = false;
+  return result;
+}
+
+const LEAD_DATE_RE =
+  /\(\d{1,2}\s+[A-Za-zà-üÀ-Ü.]+\s+\d{4}\)|(?:^|\s)(?:op|on)\s+\d{1,2}\s+[A-Za-zà-üÀ-Ü.]+\s+\d{4}\b/i;
+
+const LEAD_VARIANT_RE =
+  /publiceerde|benadrukte de beweging|published a briefing|highlighted movement|reported new developments|According to .+ on |^Op\s+\d|^On\s+\d|rapporteerde nieuwe ontwikkelingen/i;
+
+function needsLeadRepair(text: string | null | undefined) {
+  const first = (text || "")
+    .split(/\n\s*\n/)
+    .map((p) => p.trim())
+    .filter(Boolean)[0];
+  if (!first) return false;
+  return LEAD_DATE_RE.test(first) || LEAD_VARIANT_RE.test(first);
+}
+
+/**
+ * Normalize opening paragraphs: no dates, always "{source} reported on / rapporteerde over …".
+ */
+export async function repairNewsLeads(
+  options: RewriteNewsOptions = {},
+): Promise<RewriteNewsResult> {
+  const limit = Math.min(Math.max(options.limit ?? 500, 1), 1000);
+  const result: RewriteNewsResult = {
+    ok: true,
+    checked: 0,
+    rewritten: 0,
+    skipped: 0,
+    errors: [],
+  };
+
+  const posts = await prisma.newsPost.findMany({
+    where: {
+      deletedAt: null,
+      id: { startsWith: "auto-" },
+    },
+    orderBy: [{ date: "desc" }, { createdAt: "desc" }],
+    take: limit,
+  });
+
+  for (const post of posts) {
+    result.checked += 1;
+    const translations = parseNewsTranslations(post.translations);
+    const needs =
+      needsLeadRepair(post.description) ||
+      needsLeadRepair(post.descriptionNl) ||
+      Object.values(translations).some((copy) => needsLeadRepair(copy.description));
+
+    if (!needs) {
+      result.skipped += 1;
+      continue;
+    }
+
+    try {
+      const tags = Array.isArray(post.tags) ? post.tags.map(String) : [];
+      const inferred = inferSourceFromPost({
+        projectUrl: post.projectUrl,
+        tags,
+        description: post.description,
+        descriptionNl: post.descriptionNl,
+      });
+      const isResearch =
+        inferred.sourceId === "arxiv-ai" ||
+        /arxiv\.org/i.test(post.projectUrl || "");
+
+      const titleEn = post.title;
+      const titleNl = post.titleNl || translations.nl?.title || post.title;
+      const leadEn = isResearch
+        ? `New AI research explores “${titleEn.replace(/[“”"']/g, "").replace(/\.*$/, "")}”.`
+        : `${inferred.sourceName} reported on “${titleEn.replace(/[“”"']/g, "").replace(/\.*$/, "")}”.`;
+      const leadNl = buildLeadNl(inferred.sourceName, titleNl, isResearch);
+
+      let description = setFirstParagraph(
+        normalizeLeadParagraph(post.description),
+        leadEn,
+      );
+      let descriptionNl = setFirstParagraph(
+        normalizeLeadParagraph(post.descriptionNl || ""),
+        leadNl,
+      );
+
+      const nextTranslations: NewsTranslationsMap = { ...translations };
+      nextTranslations.nl = {
+        title: translations.nl?.title || titleNl,
+        excerpt: translations.nl?.excerpt || post.excerptNl || post.excerpt,
+        description: descriptionNl,
+      };
+
+      for (const locale of routing.locales) {
+        if (locale === "en" || locale === "nl") continue;
+        const copy = nextTranslations[locale];
+        if (!copy?.description?.trim()) continue;
+        const localeTitle = (copy.title || titleEn).trim();
+        const closingForLocale = isResearch
+          ? `New AI research explores “${localeTitle.replace(/[“”"']/g, "").replace(/\.*$/, "")}”.`
+          : `${inferred.sourceName} reported on “${localeTitle.replace(/[“”"']/g, "").replace(/\.*$/, "")}”.`;
+        const translated = await translateText(closingForLocale, locale, "en");
+        const nextLead =
+          translated && translated.trim() && translated !== closingForLocale
+            ? translated.trim()
+            : closingForLocale;
+        // Still strip any date the MT might invent.
+        nextTranslations[locale] = {
+          ...copy,
+          description: setFirstParagraph(
+            normalizeLeadParagraph(copy.description),
+            normalizeLeadParagraph(nextLead),
+          ),
+        };
+      }
+
+      // Ensure EN column matches.
+      description = setFirstParagraph(description, leadEn);
+      descriptionNl = setFirstParagraph(descriptionNl, leadNl);
+      nextTranslations.nl = {
+        ...nextTranslations.nl!,
+        description: descriptionNl,
+      };
+
+      await prisma.newsPost.update({
+        where: { id: post.id },
+        data: {
+          description,
+          descriptionNl: descriptionNl || null,
+          translations: nextTranslations as Prisma.InputJsonValue,
+        },
+      });
+
+      result.rewritten += 1;
+      console.log(`[repair-leads] fixed ${post.id}`);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      result.errors.push(`${post.id}: ${message}`);
+      console.warn("[repair-leads] failed", post.id, message);
     }
   }
 
