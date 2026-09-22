@@ -57,7 +57,7 @@
         {
           "id": "gen-10",
           "question": "Čo od nás na začiatok potrebujete?",
-          "answer": "Na začiatok potrebujeme prístup na webovú stránku a hosting (ak je to potrebné), vaše ciele, pokyny pre značku, analytické účty a všetky existujúce nástroje. Ak niečo chýba, najskôr to pomôžeme umiestniť."
+          "answer": "Na začiatok potrebujeme prístup na webovú stránku a hosting (ak je to potrebné), tvoje ciele, pokyny pre značku, analytické účty a všetky existujúce nástroje. Ak niečo chýba, najskôr to pomôžeme umiestniť."
         },
         {
           "id": "gen-11",
@@ -83,7 +83,7 @@
         {
           "id": "ai-1",
           "question": "Čo je skenovanie AI v TripleZero iT?",
-          "answer": "Skenovanie pripravenosti na AI hodnotí, do akej miery môžu byť vaše stránky nájdené klasickými vyhľadávačmi, odpoveďami AI a výsledkami miestneho alebo geografického vyhľadávania (AEO, GEO, SEO a technické základy)."
+          "answer": "Skenovanie pripravenosti na AI hodnotí, do akej miery môžu byť tvoje stránky nájdené klasickými vyhľadávačmi, odpoveďami AI a výsledkami miestneho alebo geografického vyhľadávania (AEO, GEO, SEO a technické základy)."
         },
         {
           "id": "ai-2",
@@ -118,7 +118,7 @@
         {
           "id": "ai-8",
           "question": "Aká je pripravenosť AI pre moju značku?",
-          "answer": "Ide o mieru, do akej sú vaše stránky, obsah a údaje nastavené tak, aby systémy AI mohli správne citovať, odporúčať a vysvetľovať vašu značku."
+          "answer": "Ide o mieru, do akej sú tvoje stránky, obsah a údaje nastavené tak, aby systémy AI mohli správne citovať, odporúčať a vysvetľovať vašu značku."
         },
         {
           "id": "ai-9",
@@ -326,7 +326,7 @@
         {
           "id": "des-6",
           "question": "Robíte aj sociálne šablóny?",
-          "answer": "áno. Vytvárame konzistentné šablóny pre príspevky, príbehy a reklamy, aby váš tím mohol publikovať rýchlo a rozpoznateľne."
+          "answer": "áno. Vytvárame konzistentné šablóny pre príspevky, príbehy a reklamy, aby tvoj tím mohol publikovať rýchlo a rozpoznateľne."
         },
         {
           "id": "des-7",

@@ -109,7 +109,7 @@ export const staticPageSeo: PageSeo[] = [
       en: "Free AI scan — AEO, GEO & SEO scores",
     },
     description: {
-      nl: "Laat uw website scannen op AEO, GEO, SEO en AI-readiness. Ontvang scores en verbeterpunten van TripleZero iT.",
+      nl: "Laat jouw website scannen op AEO, GEO, SEO en AI-readiness. Ontvang scores en verbeterpunten van TripleZero iT.",
       en: "Scan your website for AEO, GEO, SEO and AI readiness. Get scores and prioritized fixes from TripleZero iT.",
     },
     keywords: {
@@ -327,7 +327,7 @@ export const staticPageSeo: PageSeo[] = [
       en: "Cookie Policy",
     },
     description: {
-      nl: "Cookiebeleid van TripleZero iT: welke cookies wij gebruiken en hoe u voorkeuren beheert.",
+      nl: "Cookiebeleid van TripleZero iT: welke cookies wij gebruiken en hoe je voorkeuren beheert.",
       en: "Cookie Policy of TripleZero iT: which cookies we use and how you manage preferences.",
     },
     keywords: {

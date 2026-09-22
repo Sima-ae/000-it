@@ -8,6 +8,7 @@ import { ContentBlocks } from "@/components/content/ContentBlocks";
 import { ServiceCard } from "@/components/content/ServiceCard";
 import { Reveal } from "@/components/marketing/Reveal";
 import { ServiceInquiryDialog } from "@/components/marketing/ServiceInquiryDialog";
+import { AddToCartButton } from "@/components/shop/AddToCartButton";
 import {
   getCatalogItem,
   getServiceSlugs,
@@ -22,6 +23,7 @@ import {
   catalogServiceTitle,
 } from "@/content/fixweb/catalog-title";
 import { formatEuro, getServiceCardMeta, getServiceContent } from "@/lib/fixweb-content";
+import { getShopProductBySlug } from "@/lib/shop/catalog";
 import { buildServiceMetadata } from "@/lib/seo";
 import { resolveEntityParam } from "@/lib/resolve-entity-param";
 import { canonicalEntityKey } from "@/lib/entity-slug-cache";
@@ -35,6 +37,19 @@ const aiInquiryBySlug: Record<
   "ai-in-ecommerce": { source: "AI_IN_ECOMMERCE", key: "ecom" },
   "ai-in-website": { source: "AI_IN_WEBSITE", key: "web" },
 };
+
+/** Hosting plans that are orderable via the shop cart / checkout. */
+const HOSTING_ORDER_SLUGS = new Set([
+  "shared-hosting-basic",
+  "shared-hosting-plus",
+  "shared-hosting-business",
+  "wordpress-hosting-basic",
+  "wordpress-hosting-plus",
+  "wordpress-hosting-business",
+  "vps-hosting-basic",
+  "vps-hosting-plus",
+  "vps-hosting-business",
+]);
 
 export function generateStaticParams() {
   return getServiceSlugs().map((slug) => ({ slug }));
@@ -74,12 +89,15 @@ export default async function ServiceDetailPage({
   });
   const tNav = await getTranslations("nav");
   const t = await getTranslations("services");
+  const tShop = await getTranslations("shop");
   const content = await getServiceContent(slug, locale);
   if (!content) notFound();
 
   const meta = getCatalogItem(slug);
   const groupLabel = serviceGroups.find((g) => g.id === meta?.group);
   const inquiry = aiInquiryBySlug[slug];
+  const shopProduct =
+    HOSTING_ORDER_SLUGS.has(slug) ? getShopProductBySlug(slug) : null;
   const relatedCandidates = serviceCatalog.filter(
     (item) =>
       item.group === meta?.group &&
@@ -166,31 +184,48 @@ export default async function ServiceDetailPage({
                   </ul>
                 ) : null}
                 <div className="mt-8 flex flex-wrap gap-3">
-                  {inquiry ? (
-                    <ServiceInquiryDialog
-                      serviceTitle={content.title}
-                      source={inquiry.source}
-                      messageHint={t(`inquiry.${inquiry.key}.hint`)}
-                      triggerLabel={t(`inquiry.${inquiry.key}.trigger`)}
-                    />
-                  ) : slug === "ai-scan" ? (
-                    <Button asChild size="lg" className="rounded-2xl">
-                      <SoftLink href={localizedHref(locale, "/ai-scan")}>
-                        {t("startFreeAiScan")}
-                      </SoftLink>
-                    </Button>
+                  {shopProduct ? (
+                    <>
+                      <AddToCartButton
+                        productId={shopProduct.id}
+                        label={tShop("order")}
+                        size="lg"
+                      />
+                      <Button asChild size="lg" variant="outline" className="rounded-2xl">
+                        <SoftLink href={localizedHref(locale, "/shop/cart")}>
+                          {tShop("goToCart")}
+                        </SoftLink>
+                      </Button>
+                    </>
                   ) : (
-                    <Button asChild size="lg" className="rounded-2xl">
-                      <SoftLink href={localizedHref(locale, "/afspraak")}>
-                        {tNav("book")}
-                      </SoftLink>
-                    </Button>
+                    <>
+                      {inquiry ? (
+                        <ServiceInquiryDialog
+                          serviceTitle={content.title}
+                          source={inquiry.source}
+                          messageHint={t(`inquiry.${inquiry.key}.hint`)}
+                          triggerLabel={t(`inquiry.${inquiry.key}.trigger`)}
+                        />
+                      ) : slug === "ai-scan" ? (
+                        <Button asChild size="lg" className="rounded-2xl">
+                          <SoftLink href={localizedHref(locale, "/ai-scan")}>
+                            {t("startFreeAiScan")}
+                          </SoftLink>
+                        </Button>
+                      ) : (
+                        <Button asChild size="lg" className="rounded-2xl">
+                          <SoftLink href={localizedHref(locale, "/afspraak")}>
+                            {tNav("book")}
+                          </SoftLink>
+                        </Button>
+                      )}
+                      <Button asChild size="lg" variant="outline" className="rounded-2xl">
+                        <SoftLink href={localizedHref(locale, "/contact")}>
+                          {t("contact")}
+                        </SoftLink>
+                      </Button>
+                    </>
                   )}
-                  <Button asChild size="lg" variant="outline" className="rounded-2xl">
-                    <SoftLink href={localizedHref(locale, "/contact")}>
-                      {t("contact")}
-                    </SoftLink>
-                  </Button>
                 </div>
               </div>
               {content.image ? (
@@ -211,50 +246,8 @@ export default async function ServiceDetailPage({
       </section>
 
       <div className="mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
-        <Reveal delay={0.05}>
-          <div className="glass glow-hover relative overflow-hidden rounded-[1.75rem] p-6 md:p-10">
-            {content.blocks.length ? (
-              <ContentBlocks blocks={content.blocks} />
-            ) : (
-              <p className="text-muted-foreground">{t("emptyBody")}</p>
-            )}
-          </div>
-        </Reveal>
-
-        <Reveal delay={0.08}>
-          <div className="mt-10 rounded-[1.75rem] border border-border/70 bg-linear-to-br from-primary/10 via-background to-accent/10 px-6 py-8 md:px-10">
-            <h2 className="font-display text-2xl font-semibold tracking-tight">
-              {inquiry ? t(`inquiry.${inquiry.key}.ctaTitle`) : t("readyTitle")}
-            </h2>
-            <p className="mt-2 max-w-2xl text-muted-foreground">
-              {inquiry ? t(`inquiry.${inquiry.key}.ctaText`) : t("readyBody")}
-            </p>
-            <div className="mt-5 flex flex-wrap gap-3">
-              {inquiry ? (
-                <ServiceInquiryDialog
-                  serviceTitle={content.title}
-                  source={inquiry.source}
-                  messageHint={t(`inquiry.${inquiry.key}.hint`)}
-                  triggerLabel={t("openContactForm")}
-                />
-              ) : (
-                <Button asChild className="rounded-2xl">
-                  <SoftLink href={localizedHref(locale, "/afspraak")}>
-                    {tNav("book")}
-                  </SoftLink>
-                </Button>
-              )}
-              <Button asChild variant="outline" className="rounded-2xl">
-                <SoftLink href={localizedHref(locale, "/ai-scan")}>
-                  {t("freeAiScan")}
-                </SoftLink>
-              </Button>
-            </div>
-          </div>
-        </Reveal>
-
         {related.length ? (
-          <section className="mt-14">
+          <section className="mb-14">
             <Reveal>
               <h2 className="font-display text-2xl font-semibold tracking-tight">
                 {t("related")}
@@ -275,6 +268,69 @@ export default async function ServiceDetailPage({
             </div>
           </section>
         ) : null}
+
+        <Reveal delay={0.05}>
+          <div className="glass glow-hover relative overflow-hidden rounded-[1.75rem] p-6 md:p-10">
+            {content.blocks.length ? (
+              <ContentBlocks blocks={content.blocks} />
+            ) : (
+              <p className="text-muted-foreground">{t("emptyBody")}</p>
+            )}
+          </div>
+        </Reveal>
+
+        <Reveal delay={0.08}>
+          <div className="mt-10 rounded-[1.75rem] border border-border/70 bg-linear-to-br from-primary/10 via-background to-accent/10 px-6 py-8 md:px-10">
+            <h2 className="font-display text-2xl font-semibold tracking-tight">
+              {inquiry ? t(`inquiry.${inquiry.key}.ctaTitle`) : t("readyTitle")}
+            </h2>
+            <p className="mt-2 max-w-2xl text-muted-foreground">
+              {inquiry ? t(`inquiry.${inquiry.key}.ctaText`) : t("readyBody")}
+            </p>
+            <div className="mt-5 flex flex-wrap gap-3">
+              {shopProduct ? (
+                <>
+                  <AddToCartButton
+                    productId={shopProduct.id}
+                    label={tShop("order")}
+                  />
+                  <Button asChild variant="outline" className="rounded-2xl">
+                    <SoftLink href={localizedHref(locale, "/shop/cart")}>
+                      {tShop("goToCart")}
+                    </SoftLink>
+                  </Button>
+                </>
+              ) : inquiry ? (
+                <>
+                  <ServiceInquiryDialog
+                    serviceTitle={content.title}
+                    source={inquiry.source}
+                    messageHint={t(`inquiry.${inquiry.key}.hint`)}
+                    triggerLabel={t("openContactForm")}
+                  />
+                  <Button asChild variant="outline" className="rounded-2xl">
+                    <SoftLink href={localizedHref(locale, "/ai-scan")}>
+                      {t("freeAiScan")}
+                    </SoftLink>
+                  </Button>
+                </>
+              ) : (
+                <>
+                  <Button asChild className="rounded-2xl">
+                    <SoftLink href={localizedHref(locale, "/afspraak")}>
+                      {tNav("book")}
+                    </SoftLink>
+                  </Button>
+                  <Button asChild variant="outline" className="rounded-2xl">
+                    <SoftLink href={localizedHref(locale, "/ai-scan")}>
+                      {t("freeAiScan")}
+                    </SoftLink>
+                  </Button>
+                </>
+              )}
+            </div>
+          </div>
+        </Reveal>
       </div>
     </div>
   );

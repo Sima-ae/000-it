@@ -27,11 +27,11 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
     nl: {
       title: "WordPress Support",
       subtitle:
-        "Professionele monitoring, updates, backups en technische zorg voor uw WordPress-websites — met vaste pakketten die passen bij één of meerdere sites.",
+        "Professionele monitoring, updates, backups en technische zorg voor jouw WordPress-websites — met vaste pakketten die passen bij één of meerdere sites.",
       blocks: [
         h("Waarom WordPress Support?"),
         p(
-          "Een WordPress-site vraagt continue aandacht: updates, beveiliging, backups en snelle hulp bij fouten. TripleZero iT neemt die zorg over, zodat u zich kunt richten op content en groei.",
+          "Een WordPress-site vraagt continue aandacht: updates, beveiliging, backups en snelle hulp bij fouten. TripleZero iT neemt die zorg over, zodat je kunt richten op content en groei.",
         ),
         h("Wat zit er in onze supportpakketten?"),
         l([
@@ -42,13 +42,13 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "Malwareverwijdering en beveiligingsmaatregelen",
           "Snelheids- en SEO-optimalisatie (afhankelijk van pakket)",
         ]),
-        h("Kies het pakket dat bij u past"),
+        h("Kies het pakket dat bij je past"),
         p(
           "Basic is ideaal voor één website. Standard dekt twee sites met extra performancezorg. Premium ondersteunt meerdere websites inclusief SEO-aandacht. Jaarabonnementen bieden vaak een aantrekkelijke besparing.",
         ),
         h("Zo werken wij"),
         p(
-          "Wij starten met een korte intake, zetten monitoring en backups klaar en werken volgens een vaste cadans. U weet altijd wat er is gedaan en wanneer er actie nodig is.",
+          "Wij starten met een korte intake, zetten monitoring en backups klaar en werken volgens een vaste cadans. Je weet altijd wat er is gedaan en wanneer er actie nodig is.",
         ),
       ],
     },
@@ -86,11 +86,11 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
     nl: {
       title: "Digital Marketing",
       subtitle:
-        "Versterk uw online bereik met gerichte digital marketing: van SEO en content tot campagnes die meetbare resultaten opleveren.",
+        "Versterk jouw online bereik met gerichte digital marketing: van SEO en content tot campagnes die meetbare resultaten opleveren.",
       blocks: [
         h("Groei met een duidelijke marketingaanpak"),
         p(
-          "In een druk digitaal landschap wilt u zichtbaar zijn bij de juiste doelgroep. TripleZero iT helpt u met strategieën die merkbekendheid, verkeer en conversies versterken — zonder ruis.",
+          "In een druk digitaal landschap wil je zichtbaar zijn bij de juiste doelgroep. TripleZero iT helpt je met strategieën die merkbekendheid, verkeer en conversies versterken — zonder ruis.",
         ),
         h("Onze diensten"),
         l([
@@ -100,9 +100,9 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
           "Analytics, tracking en rapportage",
           "Lokale zichtbaarheid en Google Business-profielen",
         ]),
-        h("Wat u van ons mag verwachten"),
+        h("Wat je van ons mag verwachten"),
         p(
-          "Wij starten met doelen en uitgangssituatie, kiezen daarna de kanalen die écht bijdragen en sturen bij op basis van data. U krijgt heldere updates en prioriteiten in plaats van vage beloftes.",
+          "Wij starten met doelen en uitgangssituatie, kiezen daarna de kanalen die écht bijdragen en sturen bij op basis van data. Je krijgt heldere updates en prioriteiten in plaats van vage beloftes.",
         ),
         h("Van strategie naar verbetering"),
         p(
@@ -153,11 +153,11 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
     nl: {
       title: "Content Writing",
       subtitle:
-        "Professionele teksten die uw merk versterken, bezoekers boeien en bijdragen aan betere vindbaarheid en conversie.",
+        "Professionele teksten die jouw merk versterken, bezoekers boeien en bijdragen aan betere vindbaarheid en conversie.",
       blocks: [
-        h("Content die werkt voor uw merk"),
+        h("Content die werkt voor jouw merk"),
         p(
-          "Sterke content trekt aandacht, bouwt autoriteit op en ondersteunt SEO. TripleZero iT schrijft teksten die passen bij uw tone of voice en doelgroep — helder, overtuigend en bruikbaar.",
+          "Sterke content trekt aandacht, bouwt autoriteit op en ondersteunt SEO. TripleZero iT schrijft teksten die passen bij jouw tone of voice en doelgroep — helder, overtuigend en bruikbaar.",
         ),
         h("Wat wij schrijven"),
         l([
@@ -169,7 +169,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ]),
         h("Onze werkwijze"),
         p(
-          "Na een korte briefing over doelen, doelgroep en merkstijl leveren wij concepten die u kunt reviewen. Feedback verwerken wij snel, zodat publicatie soepel verloopt.",
+          "Na een korte briefing over doelen, doelgroep en merkstijl leveren wij concepten die je kunt reviewen. Feedback verwerken wij snel, zodat publicatie soepel verloopt.",
         ),
         h("Resultaatgericht"),
         p(
@@ -177,11 +177,11 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ),
         h("Van briefing tot publicatie"),
         p(
-          "We stemmen onderwerp, zoekintentie, gewenste actie en publicatiemoment af voordat we schrijven. Na uw review verwerken we gerichte feedback en leveren we tekst die eenvoudig in uw CMS, nieuwsbrief of campagne kan worden geplaatst.",
+          "We stemmen onderwerp, zoekintentie, gewenste actie en publicatiemoment af voordat we schrijven. Na jouw review verwerken we gerichte feedback en leveren we tekst die eenvoudig in jouw CMS, nieuwsbrief of campagne kan worden geplaatst.",
         ),
         h("Wat het oplevert"),
         p(
-          "U bouwt een herkenbare contentbasis op die vragen van prospects beantwoordt, uw expertise onderbouwt en commerciële pagina’s ondersteunt. Daardoor ontstaat er meer samenhang tussen zichtbaarheid, vertrouwen en conversie.",
+          "Je bouwt een herkenbare contentbasis op die vragen van prospects beantwoordt, jouw expertise onderbouwt en commerciële pagina’s ondersteunt. Daardoor ontstaat er meer samenhang tussen zichtbaarheid, vertrouwen en conversie.",
         ),
         h("Contact"),
       ],
@@ -228,11 +228,11 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
     nl: {
       title: "Social Media Management",
       subtitle:
-        "Bouw een consistente social media-aanwezigheid met strategie, content en community-aandacht die bij uw merk past.",
+        "Bouw een consistente social media-aanwezigheid met strategie, content en community-aandacht die bij jouw merk past.",
       blocks: [
         h("Social media met focus"),
         p(
-          "Social platforms zijn krachtig voor bekendheid en klantcontact — mits er een plan is. TripleZero iT helpt u met strategie, contentplanning en beheer zodat uw kanalen professioneel en herkenbaar blijven.",
+          "Social platforms zijn krachtig voor bekendheid en klantcontact — mits er een plan is. TripleZero iT helpt je met strategie, contentplanning en beheer zodat jouw kanalen professioneel en herkenbaar blijven.",
         ),
         h("Wat wij doen"),
         l([
@@ -244,7 +244,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ]),
         h("Consistent en merkwaardig"),
         p(
-          "Wij bewaken tone of voice, frequentie en kwaliteit. U voorkomt stilte op kanalen én toevallige posts zonder richting.",
+          "Wij bewaken tone of voice, frequentie en kwaliteit. Je voorkomt stilte op kanalen én toevallige posts zonder richting.",
         ),
         h("Van planning naar publicatie"),
         p(
@@ -303,11 +303,11 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
     nl: {
       title: "Media Creatie",
       subtitle:
-        "Professionele media voor een sterkere merkuitstraling: van visuals en banners tot video en audio die uw boodschap laten landen.",
+        "Professionele media voor een sterkere merkuitstraling: van visuals en banners tot video en audio die jouw boodschap laten landen.",
       blocks: [
         h("Media die aandacht trekt"),
         p(
-          "Goede beelden en geluid maken het verschil tussen scrollen en blijven kijken. TripleZero iT creëert media die past bij uw merk en inzetbaar is op website, social en campagnes.",
+          "Goede beelden en geluid maken het verschil tussen scrollen en blijven kijken. TripleZero iT creëert media die past bij jouw merk en inzetbaar is op website, social en campagnes.",
         ),
         h("Onze media-oplossingen"),
         l([
@@ -319,19 +319,19 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ]),
         h("Praktisch en merkgericht"),
         p(
-          "Wij werken vanuit uw doelen en bestaande huisstijl (of helpen die te versterken). Leveringen zijn klaar voor gebruik in de kanalen die u écht inzet.",
+          "Wij werken vanuit jouw doelen en bestaande huisstijl (of helpen die te versterken). Leveringen zijn klaar voor gebruik in de kanalen die je écht inzet.",
         ),
         h("Van idee naar bruikbaar bestand"),
         p(
-          "We bepalen eerst doel, doelgroep, boodschap en benodigde formaten. Daarna werken we concepten uit, stemmen we de richting met u af en ronden we de gekozen uitwerking zorgvuldig af voor digitale of campagne-inzet.",
+          "We bepalen eerst doel, doelgroep, boodschap en benodigde formaten. Daarna werken we concepten uit, stemmen we de richting met je af en ronden we de gekozen uitwerking zorgvuldig af voor digitale of campagne-inzet.",
         ),
         h("Consistent op ieder contactmoment"),
         p(
-          "Door media op elkaar en op uw merkverhaal af te stemmen, ontstaat een professionele uitstraling die sneller herkenning oproept. U beschikt over assets die uw team direct kan gebruiken en opnieuw kan inzetten.",
+          "Door media op elkaar en op jouw merkverhaal af te stemmen, ontstaat een professionele uitstraling die sneller herkenning oproept. Je beschikt over assets die jouw team direct kan gebruiken en opnieuw kan inzetten.",
         ),
         h("Samenwerking"),
         p(
-          "U levert briefing en voorbeelden; wij komen met concepten, verwerken feedback en leveren bestanden in de juiste formaten.",
+          "Je levert briefing en voorbeelden; wij komen met concepten, verwerken feedback en leveren bestanden in de juiste formaten.",
         ),
         h("Contact"),
       ],
@@ -378,11 +378,11 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
     nl: {
       title: "E-commerce",
       subtitle:
-        "Bouw, optimaliseer en groei uw webshop met e-commerceoplossingen die verkoop, gebruiksgemak en schaalbaarheid combineren.",
+        "Bouw, optimaliseer en groei jouw webshop met e-commerceoplossingen die verkoop, gebruiksgemak en schaalbaarheid combineren.",
       blocks: [
         h("Online verkopen met een stevige basis"),
         p(
-          "Een succesvolle webshop vraagt meer dan een mooie etalage. TripleZero iT helpt u bij ontwikkeling, optimalisatie en doorontwikkeling van e-commerceplatforms — van eerste setup tot groei.",
+          "Een succesvolle webshop vraagt meer dan een mooie etalage. TripleZero iT helpt je bij ontwikkeling, optimalisatie en doorontwikkeling van e-commerceplatforms — van eerste setup tot groei.",
         ),
         h("Wat wij bieden"),
         l([
@@ -398,15 +398,15 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ),
         h("Onze aanpak"),
         p(
-          "We starten met uw assortiment, processen, doelgroepen en huidige techniek. Daarna prioriteren we verbeteringen, bouwen of configureren we in overzichtelijke stappen en testen we de belangrijkste klantpaden vóór livegang.",
+          "We starten met jouw assortiment, processen, doelgroepen en huidige techniek. Daarna prioriteren we verbeteringen, bouwen of configureren we in overzichtelijke stappen en testen we de belangrijkste klantpaden vóór livegang.",
         ),
         h("Klaar voor beheer en groei"),
         p(
-          "U krijgt een webshop die niet alleen prettig verkoopt, maar ook beheersbaar blijft voor uw team. Heldere structuur, betrouwbare integraties en ruimte voor nieuwe producten, markten of campagnes maken doorgroeien eenvoudiger.",
+          "Je krijgt een webshop die niet alleen prettig verkoopt, maar ook beheersbaar blijft voor jouw team. Heldere structuur, betrouwbare integraties en ruimte voor nieuwe producten, markten of campagnes maken doorgroeien eenvoudiger.",
         ),
         h("Voor nieuwe en bestaande shops"),
         p(
-          "Of u nu start of een bestaande shop wilt verbeteren: wij werken pragmatisch, met duidelijke mijlpalen en ruimte voor uw merkwensen.",
+          "Of je nu start of een bestaande shop wilt verbeteren: wij werken pragmatisch, met duidelijke mijlpalen en ruimte voor jouw merkwensen.",
         ),
         h("Neem contact op"),
       ],
@@ -469,11 +469,11 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ]),
         h("Platformexpertise"),
         p(
-          "Wij werken onder meer met WooCommerce, Shopify, Joomla en Magento. U krijgt consistente listings die aansluiten op de regels en mogelijkheden van uw platform.",
+          "Wij werken onder meer met WooCommerce, Shopify, Joomla en Magento. Je krijgt consistente listings die aansluiten op de regels en mogelijkheden van jouw platform.",
         ),
         h("Kwaliteit boven volume"),
         p(
-          "Wij focussen op volledigheid, leesbaarheid en zoekintentie — zodat shoppers sneller begrijpen wat u aanbiedt en waarom het past.",
+          "Wij focussen op volledigheid, leesbaarheid en zoekintentie — zodat shoppers sneller begrijpen wat je aanbiedt en waarom het past.",
         ),
         h("Een gecontroleerd listingproces"),
         p(
@@ -481,7 +481,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ),
         h("Meer vertrouwen in de productpagina"),
         p(
-          "Consistente, complete informatie vermindert twijfel bij shoppers en beperkt fouten in uw catalogus. Dat ondersteunt filters, interne zoekfuncties, vindbaarheid en een overtuigender aankoopbesluit.",
+          "Consistente, complete informatie vermindert twijfel bij shoppers en beperkt fouten in jouw catalogus. Dat ondersteunt filters, interne zoekfuncties, vindbaarheid en een overtuigender aankoopbesluit.",
         ),
         h("Contact"),
       ],
@@ -528,11 +528,11 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
     nl: {
       title: "Community Management",
       subtitle:
-        "Bouw en verzorg een betrokken community met actieve moderatie, gesprekken en merkwaardige interactie op uw kanalen.",
+        "Bouw en verzorg een betrokken community met actieve moderatie, gesprekken en merkwaardige interactie op jouw kanalen.",
       blocks: [
         h("Van volgers naar ambassadeurs"),
         p(
-          "Een community groeit door luisteren, reageren en consistent aanwezig zijn. TripleZero iT beheert interacties zodat uw merk warm, betrouwbaar en herkenbaar blijft.",
+          "Een community groeit door luisteren, reageren en consistent aanwezig zijn. TripleZero iT beheert interacties zodat jouw merk warm, betrouwbaar en herkenbaar blijft.",
         ),
         h("Wat community management inhoudt"),
         l([
@@ -550,13 +550,13 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         p(
           "Samen bepalen we welke kanalen, reactietijden, onderwerpen en escalaties van toepassing zijn. We leggen veelgestelde vragen en merktaal vast, zodat reacties consistent blijven en gevoelige cases tijdig bij de juiste persoon terechtkomen.",
         ),
-        h("Wat u terugziet"),
+        h("Wat je terugziet"),
         p(
-          "U krijgt zicht op terugkerende vragen, sentiment en signalen uit uw community. Zo verbetert u niet alleen de dagelijkse interactie, maar ook content, service en productcommunicatie op basis van wat uw doelgroep echt bespreekt.",
+          "Je krijgt zicht op terugkerende vragen, sentiment en signalen uit jouw community. Zo verbetert je niet alleen de dagelijkse interactie, maar ook content, service en productcommunicatie op basis van wat jouw doelgroep echt bespreekt.",
         ),
         h("Voor merken met actieve kanalen"),
         p(
-          "Geschikt wanneer u social media, forums of communitygroepen serieus wilt onderhouden zonder alles zelf te hoeven bewaken.",
+          "Geschikt wanneer je social media, forums of communitygroepen serieus wilt onderhouden zonder alles zelf te hoeven bewaken.",
         ),
         h("Neem contact op"),
       ],
@@ -603,9 +603,9 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
     nl: {
       title: "Data Entry",
       subtitle:
-        "Accurate en efficiënte data-invoer zodat uw systemen, catalogi en administratie schoon, volledig en bruikbaar blijven.",
+        "Accurate en efficiënte data-invoer zodat jouw systemen, catalogi en administratie schoon, volledig en bruikbaar blijven.",
       blocks: [
-        h("Data die u kunt vertrouwen"),
+        h("Data die je kunt vertrouwen"),
         p(
           "Rommelige of incomplete data remt processen en rapportages. TripleZero iT verzorgt professionele data-invoer met aandacht voor precisie, consistentie en doorlooptijd.",
         ),
@@ -619,19 +619,19 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ]),
         h("Nauwkeurig en veilig"),
         p(
-          "Wij werken met duidelijke afspraken over formaten, validatie en privacy. U ontvangt nette datasets die direct inzetbaar zijn in uw tools of webshop.",
+          "Wij werken met duidelijke afspraken over formaten, validatie en privacy. Je ontvangt nette datasets die direct inzetbaar zijn in jouw tools of webshop.",
         ),
         h("Een beheersbaar invoerproces"),
         p(
-          "We starten met een voorbeeldbestand en concrete invoerregels voor velden, brondata en uitzonderingen. Tijdens de uitvoering voeren we controles uit op volledigheid en afwijkingen, zodat u grip houdt op voortgang en kwaliteit.",
+          "We starten met een voorbeeldbestand en concrete invoerregels voor velden, brondata en uitzonderingen. Tijdens de uitvoering voeren we controles uit op volledigheid en afwijkingen, zodat je grip houdt op voortgang en kwaliteit.",
         ),
         h("Operationele rust"),
         p(
-          "Correcte, uniforme data voorkomt herstelwerk en maakt uw systemen betrouwbaarder voor collega’s en klanten. Uw team kan sneller rapporteren, publiceren en beslissen zonder steeds records te hoeven nalopen.",
+          "Correcte, uniforme data voorkomt herstelwerk en maakt jouw systemen betrouwbaarder voor collega’s en klanten. Jouw team kan sneller rapporteren, publiceren en beslissen zonder steeds records te hoeven nalopen.",
         ),
         h("Voor bedrijven die schaal nodig hebben"),
         p(
-          "Ideaal wanneer u pieken wilt opvangen of structureel datawerk wilt uitbesteden zonder interne capaciteit te belasten.",
+          "Ideaal wanneer je pieken wilt opvangen of structureel datawerk wilt uitbesteden zonder interne capaciteit te belasten.",
         ),
         h("Contact"),
       ],
@@ -680,24 +680,24 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
       subtitle:
         "Betrouwbare hosting bij TripleZero iT: kies shared, WordPress of VPS — plus domeinregistratie vanaf scherpe tarieven.",
       blocks: [
-        h("Hosting die bij uw site past"),
+        h("Hosting die bij jouw site past"),
         p(
-          "Of u een eenvoudige website, een WordPress-site of een veeleisende applicatie runt: de juiste hosting bepaalt snelheid, stabiliteit en groeiruimte. TripleZero iT biedt duidelijke hostinglijnen zodat u snel de juiste keuze maakt.",
+          "Of je een eenvoudige website, een WordPress-site of een veeleisende applicatie runt: de juiste hosting bepaalt snelheid, stabiliteit en groeiruimte. TripleZero iT biedt duidelijke hostinglijnen zodat je snel de juiste keuze maakt.",
         ),
         h("Onze hostingopties"),
         l([
           "Shared Hosting — betaalbaar en compleet voor kleinere sites",
           "WordPress Hosting — geoptimaliseerd voor WordPress-prestaties",
           "VPS Hosting — meer resources en controle voor groeiende projecten",
-          "Domeinregistratie — vind en registreer uw domeinnaam",
+          "Domeinregistratie — vind en registreer jouw domeinnaam",
         ]),
-        h("Wat u mag verwachten"),
+        h("Wat je mag verwachten"),
         p(
-          "U krijgt moderne resources, SSL waar van toepassing, support en backups afhankelijk van het plan. Wij helpen u graag kiezen op basis van verkeer, techniek en budget.",
+          "Je krijgt moderne resources, SSL waar van toepassing, support en backups afhankelijk van het plan. Wij helpen je graag kiezen op basis van verkeer, techniek en budget.",
         ),
         h("Domeinen"),
         p(
-          "Registreer een domein vanaf scherpe starttarieven en koppel het eenvoudig aan uw hosting. Zo houdt u merk, e-mail en website bij één partner.",
+          "Registreer een domein vanaf scherpe starttarieven en koppel het eenvoudig aan jouw hosting. Zo houd je merk, e-mail en website bij één partner.",
         ),
         h("Advies nodig?"),
       ],
@@ -739,7 +739,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
       blocks: [
         h("Shared Hosting van TripleZero iT"),
         p(
-          "Shared Hosting is een kostenefficiënte basis voor blogs, bedrijfssites en kleinere projecten. U deelt serverresources slim, terwijl essentiële features standaard meegaan.",
+          "Shared Hosting is een kostenefficiënte basis voor blogs, bedrijfssites en kleinere projecten. Je deelt serverresources slim, terwijl essentiële features standaard meegaan.",
         ),
         h("Plannen in het kort"),
         l([
@@ -755,15 +755,15 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ]),
         h("Voor wie is shared hosting geschikt?"),
         p(
-          "Perfect als u betrouwbaar wilt starten zonder overbodige complexiteit. Groeit uw verkeer of wilt u meer controle, dan kijkt u naar WordPress- of VPS-hosting.",
+          "Perfect als je betrouwbaar wilt starten zonder overbodige complexiteit. Groeit jouw verkeer of wil je meer controle, dan kijk je naar WordPress- of VPS-hosting.",
         ),
         h("Snel en overzichtelijk aan de slag"),
         p(
-          "Kies het plan op basis van het aantal websites, benodigde opslag en e-mailgebruik. Daarna koppelt u uw domein, zet u uw website of builder klaar en richt u mailboxen in. TripleZero iT helpt wanneer u bij de inrichting ondersteuning nodig heeft.",
+          "Kies het plan op basis van het aantal websites, benodigde opslag en e-mailgebruik. Daarna koppel je jouw domein, zet je jouw website of builder klaar en richt je mailboxen in. TripleZero iT helpt wanneer je bij de inrichting ondersteuning nodig hebt.",
         ),
-        h("Een praktische basis voor uw online aanwezigheid"),
+        h("Een praktische basis voor jouw online aanwezigheid"),
         p(
-          "U krijgt de essentiële voorzieningen voor een professionele website op één plek: opslag, e-mail, backups en hulp wanneer dat nodig is. Dat houdt de technische basis overzichtelijk terwijl uw organisatie online zichtbaar wordt.",
+          "Je krijgt de essentiële voorzieningen voor een professionele website op één plek: opslag, e-mail, backups en hulp wanneer dat nodig is. Dat houdt de technische basis overzichtelijk terwijl jouw organisatie online zichtbaar wordt.",
         ),
         h("Bestellen of advies"),
       ],
@@ -814,7 +814,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
       blocks: [
         h("WordPress Hosting met focus op prestaties"),
         p(
-          "WordPress verdient een omgeving die is ingericht op snelheid, updates en veiligheid. TripleZero iT biedt WordPress Hosting met resources die meegroeien met uw verkeer.",
+          "WordPress verdient een omgeving die is ingericht op snelheid, updates en veiligheid. TripleZero iT biedt WordPress Hosting met resources die meegroeien met jouw verkeer.",
         ),
         h("Plannen"),
         l([
@@ -824,19 +824,19 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ]),
         h("Waarom WordPress Hosting?"),
         p(
-          "U krijgt een stack die is geoptimaliseerd voor WordPress-workloads, met eenvoudige backups en 24/7 support. Minder gedoe, meer focus op content en conversie.",
+          "Je krijgt een stack die is geoptimaliseerd voor WordPress-workloads, met eenvoudige backups en 24/7 support. Minder gedoe, meer focus op content en conversie.",
         ),
-        h("Schaal wanneer u klaar bent"),
+        h("Schaal wanneer je klaar bent"),
         p(
           "Start lean en upgrade wanneer bezoek en resourcebehoefte toenemen. Jaarlijkse betaling kan aantrekkelijke korting opleveren op het eerste jaar.",
         ),
         h("Zo maken we de overstap eenvoudig"),
         p(
-          "We bekijken uw huidige website, verwacht verkeer, plugins en benodigde functionaliteit. Op basis daarvan kiest u een passend plan en plannen we de inrichting of migratie zorgvuldig, met aandacht voor bereikbaarheid en een gecontroleerde livegang.",
+          "We bekijken jouw huidige website, verwacht verkeer, plugins en benodigde functionaliteit. Op basis daarvan kies je een passend plan en plannen we de inrichting of migratie zorgvuldig, met aandacht voor bereikbaarheid en een gecontroleerde livegang.",
         ),
         h("Meer ruimte voor groei"),
         p(
-          "Een passende WordPress-omgeving ondersteunt een snelle gebruikerservaring en een stabiele basis voor campagnes, content en conversie. U kunt opschalen zodra uw website meer bezoekers of capaciteit vraagt.",
+          "Een passende WordPress-omgeving ondersteunt een snelle gebruikerservaring en een stabiele basis voor campagnes, content en conversie. Je kunt opschalen zodra jouw website meer bezoekers of capaciteit vraagt.",
         ),
         h("Hulp bij kiezen"),
       ],
@@ -885,7 +885,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
       blocks: [
         h("VPS wanneer shared niet meer volstaat"),
         p(
-          "Een Virtual Private Server geeft u gereserveerde resources in een flexibele omgeving. TripleZero iT biedt VPS-hosting voor sites en applicaties die meer prestatie en isolatie nodig hebben.",
+          "Een Virtual Private Server geef je gereserveerde resources in een flexibele omgeving. TripleZero iT biedt VPS-hosting voor sites en applicaties die meer prestatie en isolatie nodig hebben.",
         ),
         h("Onze VPS-plannen"),
         l([
@@ -895,19 +895,19 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ]),
         h("Voor wie is VPS geschikt?"),
         p(
-          "Voor groeiende websites, maatwerkapplicaties, hogere trafficpieken of situaties waarin u meer controle wilt over de serveromgeving.",
+          "Voor groeiende websites, maatwerkapplicaties, hogere trafficpieken of situaties waarin je meer controle wilt over de serveromgeving.",
         ),
         h("Betrouwbare basis"),
         p(
-          "SSD RAID 10 en duidelijke resourcegrenzen geven voorspelbare prestaties. U schaalt omhoog wanneer uw project dat vraagt.",
+          "SSD RAID 10 en duidelijke resourcegrenzen geven voorspelbare prestaties. Je schaalt omhoog wanneer jouw project dat vraagt.",
         ),
         h("Van behoefte naar serverconfiguratie"),
         p(
-          "We bespreken uw applicatie, verwachte belasting, opslag, beveiliging en gewenste beheerniveau. Daarmee kiest u geen capaciteit op gevoel, maar een VPS-plan dat aansluit op de technische eisen van vandaag en de volgende groeifase.",
+          "We bespreken jouw applicatie, verwachte belasting, opslag, beveiliging en gewenste beheerniveau. Daarmee kies je geen capaciteit op gevoel, maar een VPS-plan dat aansluit op de technische eisen van vandaag en de volgende groeifase.",
         ),
         h("Controle voor bedrijfskritische workloads"),
         p(
-          "Met gereserveerde capaciteit creëert u meer rust voor veeleisende websites en applicaties. Uw omgeving kan zich beter aanpassen aan pieken, nieuwe functionaliteit en veranderende prestaties zonder direct van platform te hoeven wisselen.",
+          "Met gereserveerde capaciteit creëert je meer rust voor veeleisende websites en applicaties. Jouw omgeving kan zich beter aanpassen aan pieken, nieuwe functionaliteit en veranderende prestaties zonder direct van platform te hoeven wisselen.",
         ),
         h("Advies"),
       ],
@@ -952,11 +952,11 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
     nl: {
       title: "Domeinen",
       subtitle:
-        "Registreer uw domeinnaam scherp en koppel hem eenvoudig aan hosting, e-mail en uw merk bij TripleZero iT.",
+        "Registreer jouw domeinnaam scherp en koppel hem eenvoudig aan hosting, e-mail en jouw merk bij TripleZero iT.",
       blocks: [
-        h("Uw digitale adres begint hier"),
+        h("Jouw digitale adres begint hier"),
         p(
-          "Een sterke domeinnaam is de basis van uw online identiteit. Bij TripleZero iT registreert u domeinen vanaf aantrekkelijke starttarieven en houdt u merk, site en mail overzichtelijk bij elkaar.",
+          "Een sterke domeinnaam is de basis van jouw online identiteit. Bij TripleZero iT registreer je domeinen vanaf aantrekkelijke starttarieven en houd je merk, site en mail overzichtelijk bij elkaar.",
         ),
         h("Wat wij bieden"),
         l([
@@ -967,15 +967,15 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ]),
         h("Waarom bij ons registreren?"),
         p(
-          "U voorkomt versnippering tussen meerdere leveranciers. Hosting, domein en support zitten bij één partner: TripleZero iT.",
+          "Je voorkomt versnippering tussen meerdere leveranciers. Hosting, domein en support zitten bij één partner: TripleZero iT.",
         ),
-        h("De juiste keuze voor uw merk"),
+        h("De juiste keuze voor jouw merk"),
         p(
-          "We helpen u kijken naar herkenbaarheid, doelgroep, markten en toekomstige uitbreiding. Een passende extensie ondersteunt een duidelijke, professionele uitstraling en voorkomt dat u later onnodig moet wijzigen.",
+          "We helpen je kijken naar herkenbaarheid, doelgroep, markten en toekomstige uitbreiding. Een passende extensie ondersteunt een duidelijke, professionele uitstraling en voorkomt dat je later onnodig moet wijzigen.",
         ),
         h("Van registratie tot verbinding"),
         p(
-          "Na registratie begeleiden we desgewenst de DNS-instellingen, koppeling met hosting en e-mailconfiguratie. Zo wordt uw domein niet alleen vastgelegd, maar ook correct ingezet voor uw website en zakelijke communicatie.",
+          "Na registratie begeleiden we desgewenst de DNS-instellingen, koppeling met hosting en e-mailconfiguratie. Zo wordt jouw domein niet alleen vastgelegd, maar ook correct ingezet voor jouw website en zakelijke communicatie.",
         ),
         h("Aan de slag"),
       ],

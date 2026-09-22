@@ -65,9 +65,23 @@ export default async function ShopProductPage({
           <p className="mt-4 text-muted-foreground">{localized.localizedShort}</p>
           <p className="font-display mt-6 text-3xl font-bold">
             {formatShopEuro(centsToEuros(product.priceInclCents), locale)}
+            {product.checkoutMonths && product.checkoutMonths > 1 ? (
+              <span className="ml-2 text-base font-medium text-muted-foreground">
+                {t("perMonth")}
+              </span>
+            ) : null}
           </p>
           <p className="text-sm text-muted-foreground">{t("inclVat")}</p>
-          <AddToCartButton productId={product.id} label={t("addToCart")} />
+          {product.checkoutMonths && product.checkoutMonths > 1 ? (
+            <p className="mt-1 text-sm text-muted-foreground">
+              {t("billedYearly", { months: product.checkoutMonths })}
+            </p>
+          ) : null}
+          <AddToCartButton
+            productId={product.id}
+            label={t("addToCart")}
+            className="mt-6"
+          />
         </div>
       </div>
 

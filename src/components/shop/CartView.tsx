@@ -64,8 +64,17 @@ export function CartView() {
                   {localized.localizedName}
                 </SoftLink>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  {unit} <span aria-hidden>·</span> {t("inclVat")}
+                  {unit}
+                  {line.product.checkoutMonths && line.product.checkoutMonths > 1
+                    ? ` ${t("perMonth")}`
+                    : null}{" "}
+                  <span aria-hidden>·</span> {t("inclVat")}
                 </p>
+                {line.product.checkoutMonths && line.product.checkoutMonths > 1 ? (
+                  <p className="mt-1 text-xs text-muted-foreground">
+                    {t("billedYearly", { months: line.product.checkoutMonths })}
+                  </p>
+                ) : null}
                 <div className="mt-3 flex flex-wrap items-center gap-4">
                   <QuantityStepper
                     label={t("quantity")}

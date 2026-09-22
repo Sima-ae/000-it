@@ -123,7 +123,7 @@ function productFeatures(shortDescription: string) {
       (line) =>
         line.length > 1 &&
         !/^what can you expect/i.test(line) &&
-        !/^wat kunt u verwachten/i.test(line),
+        !/^wat kun je verwachten/i.test(line),
     );
 }
 

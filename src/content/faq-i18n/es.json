@@ -2,7 +2,7 @@
   "title": "Preguntas frecuentes",
   "subtitle": "Preguntas y respuestas detalladas: desde AI, AEO, GEO y SEO hasta diseño, dominios, hosting, marketing, redes sociales, soporte y más.",
   "ctaTitle": "¿Aún necesitas ayuda?",
-  "ctaText": "¿No encuentras tu pregunta? Contáctenos: nos comunicaremos con usted lo antes posible.",
+  "ctaText": "¿No encuentras tu pregunta? Contáctanos: nos comunicaremos contigo lo antes posible.",
   "ctaButton": "Contacta con nosotras",
   "categories": [
     {
@@ -62,12 +62,12 @@
         {
           "id": "gen-11",
           "question": "¿Son sus servicios aptos para nuevas empresas?",
-          "answer": "Sí. Escalamos desde páginas de destino ajustadas y escaneos de IA hasta configuraciones de crecimiento completo, para que el enfoque crezca con usted."
+          "answer": "Sí. Escalamos desde páginas de destino ajustadas y escaneos de IA hasta configuraciones de crecimiento completo, para que el enfoque crezca contigo."
         },
         {
           "id": "gen-12",
           "question": "¿A quién pertenece el trabajo y las cuentas?",
-          "answer": "Su dominio, contenido, repositorios de códigos y cuentas publicitarias siguen siendo suyos. En el momento de la entrega te entregamos los archivos y la documentación para que todo quede bajo tu control."
+          "answer": "Tu dominio, contenido, repositorios de códigos y cuentas publicitarias siguen siendo tuyos. En el momento de la entrega te entregamos los archivos y la documentación para que todo quede bajo tu control."
         },
         {
           "id": "gen-13",
@@ -716,7 +716,7 @@
         {
           "id": "host-12",
           "question": "¿Cuál es su enfoque de tiempo de actividad?",
-          "answer": "Monitoreamos, respondemos rápidamente a los incidentes y nos comunicamos claramente durante los períodos de mantenimiento para que usted sepa lo que está sucediendo."
+          "answer": "Monitoreamos, respondemos rápidamente a los incidentes y nos comunicamos claramente durante los períodos de mantenimiento para que tú sepa lo que está sucediendo."
         },
         {
           "id": "host-13",

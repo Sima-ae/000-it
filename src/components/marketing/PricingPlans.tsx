@@ -103,7 +103,7 @@ export function PricingPlans({
     >
       <Reveal>
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-display text-[1.65rem] font-semibold tracking-tight md:text-[2.05rem]">
+          <h2 className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
             {labels.title}
           </h2>
           <p className="mt-1 text-sm font-normal text-muted-foreground md:text-base">

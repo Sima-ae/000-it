@@ -43,7 +43,7 @@ const customServices: Record<string, CustomService> = {
     subtitle:
       "Keep your WordPress site healthy with scheduled core, plugin and theme updates, backups and proactive monitoring.",
     subtitleNl:
-      "Houd uw WordPress-site gezond met geplande core-, plugin- en theme-updates, backups en proactieve monitoring.",
+      "Houd jouw WordPress-site gezond met geplande core-, plugin- en theme-updates, backups en proactieve monitoring.",
     image: "/uploads/fixweb/wordpress-maintenance-updates.png",
     blocks: [
       h("Why maintenance matters"),
@@ -87,7 +87,7 @@ const customServices: Record<string, CustomService> = {
     blocksNl: [
       h("Waarom onderhoud telt"),
       p(
-        "Verouderde plugins en themes zijn de #1 oorzaak van WordPress-hacks, kapotte checkouts en plotselinge downtime. Professioneel onderhoud houdt uw site veilig, snel en compatible — zonder dat u in wp-admin hoeft te leven.",
+        "Verouderde plugins en themes zijn de #1 oorzaak van WordPress-hacks, kapotte checkouts en plotselinge downtime. Professioneel onderhoud houdt jouw site veilig, snel en compatible — zonder dat je in wp-admin hoeft te leven.",
       ),
       h("Wat erbij zit"),
       l([
@@ -102,7 +102,7 @@ const customServices: Record<string, CustomService> = {
       ]),
       h("Werkwijze"),
       p(
-        "We werken in een rustig, herhaalbaar ritme: backup → update op staging of in een rustig moment → smoke test (forms, checkout, login) → livegang → rapport. U weet altijd wat er veranderde en waarom.",
+        "We werken in een rustig, herhaalbaar ritme: backup → update op staging of in een rustig moment → smoke test (forms, checkout, login) → livegang → rapport. Je weet altijd wat er veranderde en waarom.",
       ),
       h("Ideaal voor"),
       l([
@@ -120,7 +120,7 @@ const customServices: Record<string, CustomService> = {
       ]),
       h("Aan de slag"),
       p(
-        "Vertel ons hoeveel sites u heeft en hoe kritiek ze zijn. Wij stellen een Basic-, Standard- of Premium-onderhoudsritme voor dat bij uw risico en budget past — en nemen updates van uw bord.",
+        "Vertel ons hoeveel sites je hebt en hoe kritiek ze zijn. Wij stellen een Basic-, Standard- of Premium-onderhoudsritme voor dat bij jouw risico en budget past — en nemen updates van jouw bord.",
       ),
     ],
   },
@@ -158,8 +158,8 @@ const customServices: Record<string, CustomService> = {
       p("Share your website, current challenges and preferred way of working. We assess the starting point and propose a focused first sprint or an ongoing support arrangement."),
     ],
     blocksNl: [
-      h("Support voor websites die om uw bedrijf zijn gebouwd"),
-      p("Een maatwerkwebsite heeft meer nodig dan af en toe een developer. TripleZero iT is uw betrouwbare technische partner voor PHP-, HTML-, JavaScript- en Next.js-sites: we lossen problemen op, verbeteren wat telt en houden het platform klaar voor uw volgende stap."),
+      h("Support voor websites die om jouw bedrijf zijn gebouwd"),
+      p("Een maatwerkwebsite heeft meer nodig dan af en toe een developer. TripleZero iT is jouw betrouwbare technische partner voor PHP-, HTML-, JavaScript- en Next.js-sites: we lossen problemen op, verbeteren wat telt en houden het platform klaar voor jouw volgende stap."),
       h("Wat we doen"),
       l([
         "Maatwerk UI/UX en front-end implementatie",
@@ -174,20 +174,20 @@ const customServices: Record<string, CustomService> = {
         "Monitoring, bugfixes en performance-zorg",
       ]),
       h("Een praktische supportvorm"),
-      p("We starten met een technische intake: uw stack, hosting, broncode, integraties en bedrijfskritische klantreizen. Daarna bepalen we prioriteiten, responstijden en een passend ritme voor gepland werk en spoedfixes."),
-      h("Wat u krijgt"),
+      p("We starten met een technische intake: jouw stack, hosting, broncode, integraties en bedrijfskritische klantreizen. Daarna bepalen we prioriteiten, responstijden en een passend ritme voor gepland werk en spoedfixes."),
+      h("Wat je krijgt"),
       l(["Een heldere backlog met scope en prioriteit", "Duidelijke updates over uitgevoerd werk", "Tests van kritieke paden vóór release", "Documentatie van wijzigingen, toegang en terugkerende taken", "Eén team voor design, ontwikkeling en technisch beheer"]),
       h("Ideaal voor"),
       l(["Bedrijven zonder intern webteam", "Groeiende platforms die regelmatig moeten doorontwikkelen", "Bureaus die ervaren ontwikkelcapaciteit zoeken", "Teams die een maatwerk- of legacywebsite overnemen"]),
       h("Aan de slag"),
-      p("Deel uw website, huidige uitdagingen en gewenste samenwerking. Wij beoordelen de startsituatie en doen een voorstel voor een gerichte eerste sprint of doorlopende support."),
+      p("Deel jouw website, huidige uitdagingen en gewenste samenwerking. Wij beoordelen de startsituatie en doen een voorstel voor een gerichte eerste sprint of doorlopende support."),
     ],
   },
   "custom-webdesign": {
     title: "Custom Webdesign",
     titleNl: "Maatwerk webdesign",
     subtitle: "Conversion-focused websites designed and coded for your brand.",
-    subtitleNl: "Conversiegerichte websites, ontworpen en gecodeerd voor uw merk.",
+    subtitleNl: "Conversiegerichte websites, ontworpen en gecodeerd voor jouw merk.",
     image: "/uploads/fixweb/custom-webdesign.png",
     blocks: [
       h("A website designed to support commercial goals"),
@@ -210,7 +210,7 @@ const customServices: Record<string, CustomService> = {
     ],
     blocksNl: [
       h("Een website die commerciële doelen ondersteunt"),
-      p("Een sterke website maakt snel duidelijk wat u aanbiedt en welke volgende stap de juiste bezoeker kan zetten. We combineren merk, contentstructuur en conversiegerichte UX in een maatwerkontwerp dat schoon gebouwd en goed beheerd kan worden."),
+      p("Een sterke website maakt snel duidelijk wat je aanbiedt en welke volgende stap de juiste bezoeker kan zetten. We combineren merk, contentstructuur en conversiegerichte UX in een maatwerkontwerp dat schoon gebouwd en goed beheerd kan worden."),
       h("Wat we ontwerpen"),
       l([
         "Merkgerichte layouts en componenten",
@@ -220,7 +220,7 @@ const customServices: Record<string, CustomService> = {
       ]),
       h("Onze aanpak"),
       p("We stemmen eerst doelgroepen, doelen en content af. Wireframes toetsen hiërarchie en klantreizen; het visuele ontwerp vertaalt de gekozen richting vervolgens naar een consistent componentsysteem, klaar voor ontwikkeling."),
-      h("Wat u krijgt"),
+      h("Wat je krijgt"),
       l(["Discovery en advies over paginastructuur", "Wireframes voor kernpagina’s en conversiepaden", "High-fidelity responsive ontwerpen", "Herbruikbare componenten en interactierichtlijnen", "Production-ready front-end of een geordende developer handover"]),
       h("Gebouwd voor langdurig gebruik"),
       p("We ontwerpen voor echte content, verschillende schermformaten en toekomstige pagina’s—niet alleen voor een presentatie. Toegankelijkheid, performance en Core Web Vitals nemen we vanaf de eerste concepten mee."),
@@ -255,7 +255,7 @@ const customServices: Record<string, CustomService> = {
     ],
     blocksNl: [
       h("Betrouwbare PHP voor bedrijfskritisch werk"),
-      p("PHP draait nog altijd veel belangrijke klantportalen, platforms en interne tools. Wij ontwikkelen nieuwe functionaliteit en verbeteren bestaande applicaties met aandacht voor veiligheid, onderhoudbaarheid en een releaseproces waarop uw organisatie kan rekenen."),
+      p("PHP draait nog altijd veel belangrijke klantportalen, platforms en interne tools. Wij ontwikkelen nieuwe functionaliteit en verbeteren bestaande applicaties met aandacht voor veiligheid, onderhoudbaarheid en een releaseproces waarop jouw organisatie kan rekenen."),
       h("Wat we bouwen en verbeteren"),
       l([
         "Maatwerk portals en dashboards",
@@ -266,7 +266,7 @@ const customServices: Record<string, CustomService> = {
       h("Onze ontwikkelaanpak"),
       p("We brengen eerst de codebase, dependencies en risicovolle gebruikersflows in kaart. Het werk verdelen we in overzichtelijke releases, testen we aan de hand van afgesproken acceptatiecriteria en documenteren we voor eenvoudiger beheer."),
       h("Typische opleveringen"),
-      l(["Technische beoordeling en geprioriteerd verbeterplan", "Veilige, gereviewde applicatiecode", "API-contracten en integratiedocumentatie", "Database- en performanceverbeteringen waar nodig", "Deploynotities en overdracht aan uw team"]),
+      l(["Technische beoordeling en geprioriteerd verbeterplan", "Veilige, gereviewde applicatiecode", "API-contracten en integratiedocumentatie", "Database- en performanceverbeteringen waar nodig", "Deploynotities en overdracht aan jouw team"]),
       h("Ideaal voor"),
       l(["Bedrijven met een maatwerk PHP-portaal of applicatie", "Teams die een legacyplatform gefaseerd moderniseren", "Organisaties die PHP-systemen met nieuwe diensten koppelen", "Bedrijven die betrouwbare externe ontwikkelcapaciteit zoeken"]),
       h("Start met een beoordeling"),
@@ -306,23 +306,23 @@ const customServices: Record<string, CustomService> = {
         "Marketing sites en SaaS front-ends",
         "i18n, auth en dashboard-modules",
         "Edge-vriendelijke performance-patronen",
-        "Deploys op Vercel, Node of uw VPS",
+        "Deploys op Vercel, Node of jouw VPS",
       ]),
       h("Hoe we werken"),
       p("We bepalen eerst de benodigde klantreizen, het contentmodel en integraties voordat we rendering en hosting kiezen. Ontwikkeling gebeurt in gerichte mijlpalen met previews, kwaliteitscontroles en een gecontroleerde release."),
-      h("Wat u krijgt"),
+      h("Wat je krijgt"),
       l(["Een schaalbare Next.js-applicatiestructuur", "Responsive interfaces met herbruikbare componenten", "SEO-, metadata- en analyticsfundament", "Koppelingen met CMS, API’s, authenticatie of betalingen", "Deploydocumentatie en optionele doorlopende support"]),
       h("Wanneer Next.js past"),
       l(["Snelle marketing- en meertalige websites", "SaaS-dashboards en afgeschermde portalen", "Headless CMS-implementaties", "Teams die een trage of lastig te beheren front-end vervangen"]),
       h("Aan de slag"),
-      p("Deel uw doelen, bestaande systemen en gewenste livegang. Wij vertalen dit naar een pragmatische technische scope en gefaseerd opleverplan."),
+      p("Deel jouw doelen, bestaande systemen en gewenste livegang. Wij vertalen dit naar een pragmatische technische scope en gefaseerd opleverplan."),
     ],
   },
   "html-css-javascript": {
     title: "HTML / CSS / JavaScript",
     titleNl: "HTML / CSS / JavaScript",
     subtitle: "Lean front-end builds when you do not need a CMS.",
-    subtitleNl: "Slanke front-end builds wanneer u geen cms nodig heeft.",
+    subtitleNl: "Slanke front-end builds wanneer je geen cms nodig hebt.",
     image: "/uploads/fixweb/html-css-javascript.png",
     blocks: [
       h("Lean front ends with no unnecessary platform"),
@@ -351,16 +351,16 @@ const customServices: Record<string, CustomService> = {
         "Landingspagina’s en microsites",
         "Interactieve UI en animaties",
         "Cross-browser QA",
-        "Opleverklare assets voor uw team",
+        "Opleverklare assets voor jouw team",
       ]),
       h("Hoe we bouwen"),
-      p("We vertalen uw ontwerp en content naar semantische markup, responsive styling en doelgerichte interacties. Elke build testen we in actuele browsers en op apparaten, met aandacht voor toegankelijkheid, paginagewicht en formulieren."),
-      h("Wat u krijgt"),
+      p("We vertalen jouw ontwerp en content naar semantische markup, responsive styling en doelgerichte interacties. Elke build testen we in actuele browsers en op apparaten, met aandacht voor toegankelijkheid, paginagewicht en formulieren."),
+      h("Wat je krijgt"),
       l(["Schone, onderhoudbare broncode", "Responsive pagina’s en herbruikbare stijlen", "Geoptimaliseerde assets en performancechecks", "Analytics, formulieren of API-koppelingen waar nodig", "Deployadvies of launchsupport"]),
       h("Ideaal voor"),
       l(["Campagnelandingspagina’s en productlanceringen", "Microsites en eventpagina’s", "Teams met een uitgewerkt ontwerp die betrouwbare implementatie zoeken", "Bedrijven die een snelle site zonder CMS-overhead willen"]),
       h("Aan de slag"),
-      p("Stuur uw doelen, sitemap en eventuele bestaande ontwerpen of merkassets. We bepalen eerst pagina’s, interacties en launchvereisten."),
+      p("Stuur jouw doelen, sitemap en eventuele bestaande ontwerpen of merkassets. We bepalen eerst pagina’s, interacties en launchvereisten."),
     ],
   },
   "website-maintenance": {
@@ -389,8 +389,8 @@ const customServices: Record<string, CustomService> = {
       p("We review your stack, hosting and current risks, then propose the right maintenance cadence and a first set of priorities."),
     ],
     blocksNl: [
-      h("Houd uw maatwerkwebsite betrouwbaar na livegang"),
-      p("Livegang is het begin, niet het einde. Dependencies veranderen, integraties kunnen falen en bedrijfsprioriteiten verschuiven. Met ons onderhoud krijgt uw maatwerkwebsite of applicatie een vast ritme voor beheer, fixes en verbetering."),
+      h("Houd jouw maatwerkwebsite betrouwbaar na livegang"),
+      p("Livegang is het begin, niet het einde. Dependencies veranderen, integraties kunnen falen en bedrijfsprioriteiten verschuiven. Met ons onderhoud krijgt jouw maatwerkwebsite of applicatie een vast ritme voor beheer, fixes en verbetering."),
       h("Wat erbij zit"),
       l([
         "Security- en dependency-updates",
@@ -399,20 +399,20 @@ const customServices: Record<string, CustomService> = {
         "Maandelijkse performance- en SEO-notities",
       ]),
       h("Hoe we werken"),
-      p("We spreken een praktisch serviceritme af dat past bij het belang van uw site. Gepland werk prioriteren we in een zichtbare backlog; incidenten beoordelen we op afgesproken kritieke paden zoals leadformulieren, login, checkout en integraties."),
-      h("Wat u krijgt"),
-      l(["Regelmatige technische health checks", "Een geprioriteerde backlog met transparante inschattingen", "Releasetests en aandacht voor rollback", "Beknopte rapportage over updates, incidenten en adviezen", "Toegang tot een team dat uw stack kent"]),
+      p("We spreken een praktisch serviceritme af dat past bij het belang van jouw site. Gepland werk prioriteren we in een zichtbare backlog; incidenten beoordelen we op afgesproken kritieke paden zoals leadformulieren, login, checkout en integraties."),
+      h("Wat je krijgt"),
+      l(["Regelmatige technische health checks", "Een geprioriteerde backlog met transparante inschattingen", "Releasetests en aandacht voor rollback", "Beknopte rapportage over updates, incidenten en adviezen", "Toegang tot een team dat jouw stack kent"]),
       h("Ideaal voor"),
       l(["Maatwerk PHP-, Next.js- en statische websites", "Leadgeneratiesites waar downtime aanvragen kost", "Productteams die een flexibele externe partner nodig hebben", "Organisaties zonder vaste weboperationsrol"]),
       h("Start met een health check"),
-      p("We beoordelen uw stack, hosting en huidige risico’s en stellen daarna het juiste onderhoudsritme en een eerste prioriteitenlijst voor."),
+      p("We beoordelen jouw stack, hosting en huidige risico’s en stellen daarna het juiste onderhoudsritme en een eerste prioriteitenlijst voor."),
     ],
   },
   "api-integrations": {
     title: "API Integrations",
     titleNl: "API-integraties",
     subtitle: "Connect the tools your business already runs on.",
-    subtitleNl: "Koppel de tools waarmee uw bedrijf al werkt.",
+    subtitleNl: "Koppel de tools waarmee jouw bedrijf al werkt.",
     image: "/uploads/fixweb/api-integrations.png",
     blocks: [
       h("Make the systems behind your business work together"),
@@ -434,7 +434,7 @@ const customServices: Record<string, CustomService> = {
       p("Tell us the systems, the process and the outcome you need. We assess the available APIs and scope a robust integration path."),
     ],
     blocksNl: [
-      h("Laat de systemen achter uw bedrijf samenwerken"),
+      h("Laat de systemen achter jouw bedrijf samenwerken"),
       p("Handmatig kopiëren tussen CRM, finance, e-commerce en interne tools kost tijd en veroorzaakt fouten. Wij bouwen betrouwbare API-integraties die de juiste data verplaatsen, met duidelijk eigenaarschap en inzicht in de werking."),
       h("Veelvoorkomende integraties"),
       l([
@@ -445,12 +445,12 @@ const customServices: Record<string, CustomService> = {
       ]),
       h("Onze aanpak"),
       p("Voor we code schrijven brengen we het bedrijfsproces in kaart: welk systeem is leidend, wat triggert een actie, welke data mag bewegen en wat gebeurt er als een externe dienst niet beschikbaar is. Zo voorkomen we kwetsbare punt-naar-puntkoppelingen."),
-      h("Wat u krijgt"),
+      h("Wat je krijgt"),
       l(["Integratieontwerp en documentatie van datamapping", "Veilige geauthenticeerde koppelingen en secretbeheer", "Validatie, retrylogica en bruikbare foutlogging", "Tests met representatieve records en uitzonderingen", "Overdrachtsnotities en monitoringadvies"]),
       h("Ideaal voor"),
       l(["Bedrijven die CRM, ERP, facturatie of klantportalen koppelen", "Webshops die orders, voorraad of klantdata synchroniseren", "Teams die repeterende spreadsheetprocessen vervangen", "Platforms die betrouwbare API’s aan klanten of partners bieden"]),
       h("Aan de slag"),
-      p("Vertel welke systemen, welk proces en welke uitkomst u nodig heeft. Wij beoordelen de beschikbare API’s en bakenen een robuuste integratieroute af."),
+      p("Vertel welke systemen, welk proces en welke uitkomst je nodig hebt. Wij beoordelen de beschikbare API’s en bakenen een robuuste integratieroute af."),
     ],
   },
   "website-malware-removal": {
@@ -459,7 +459,7 @@ const customServices: Record<string, CustomService> = {
     subtitle:
       "Detect and remove malware from custom PHP, HTML and Next.js websites — without breaking your application.",
     subtitleNl:
-      "Detecteer en verwijder malware van maatwerk PHP-, HTML- en Next.js-websites — zonder uw applicatie te breken.",
+      "Detecteer en verwijder malware van maatwerk PHP-, HTML- en Next.js-websites — zonder jouw applicatie te breken.",
     image: "/uploads/fixweb/website-malware-removal.png",
     blocks: [
       h("Malware removal for custom websites"),
@@ -510,7 +510,7 @@ const customServices: Record<string, CustomService> = {
       ]),
       h("Na de cleanup"),
       p(
-        "U krijgt een helder rapport en vervolgstappen. Voor structurele bescherming combineert u dit met onze aparte dienst Beveiliging — deze pagina gaat alleen over malware verwijderen.",
+        "Je krijgt een helder rapport en vervolgstappen. Voor structurele bescherming combineert je dit met onze aparte dienst Beveiliging — deze pagina gaat alleen over malware verwijderen.",
       ),
     ],
   },
@@ -551,7 +551,7 @@ const customServices: Record<string, CustomService> = {
     blocksNl: [
       h("Firewall, security en SSL voor maatwerkwebsites"),
       p(
-        "Preventie telt net zo zwaar als opruimen. Wij hardenen uw non-WordPress stack met SSL/HTTPS, firewall/WAF-advies en toegangscontrole — los van malware verwijderen en los van WordPress-securitypakketten.",
+        "Preventie telt net zo zwaar als opruimen. Wij hardenen jouw non-WordPress stack met SSL/HTTPS, firewall/WAF-advies en toegangscontrole — los van malware verwijderen en los van WordPress-securitypakketten.",
       ),
       h("Wat we beveiligen"),
       l([
@@ -571,7 +571,7 @@ const customServices: Record<string, CustomService> = {
       ]),
       h("Samenwerkingsvormen"),
       p(
-        "Eenmalig harden na launch of audit, of een retainer met periodieke checks. Bent u al geïnfecteerd? Start met Malware verwijderen — harden daarna met Firewall, Security en SSL.",
+        "Eenmalig harden na launch of audit, of een retainer met periodieke checks. Ben je al geïnfecteerd? Start met Malware verwijderen — harden daarna met Firewall, Security en SSL.",
       ),
     ],
   },
@@ -606,7 +606,7 @@ const customServices: Record<string, CustomService> = {
     ],
     blocksNl: [
       h("Performance die zichtbaarheid en conversie ondersteunt"),
-      p("Trage pagina’s kosten aandacht, aanvragen en vertrouwen. We onderzoeken de echte oorzaken in front-end, hosting en API’s en verbeteren gericht wat bezoekers en uw Core Web Vitals helpt—niet alleen met een generieke cache-plugin."),
+      p("Trage pagina’s kosten aandacht, aanvragen en vertrouwen. We onderzoeken de echte oorzaken in front-end, hosting en API’s en verbeteren gericht wat bezoekers en jouw Core Web Vitals helpt—niet alleen met een generieke cache-plugin."),
       h("Wat we onderzoeken en optimaliseren"),
       l([
         "Lighthouse / Web Vitals-baseline en doelplan",
@@ -617,8 +617,8 @@ const customServices: Record<string, CustomService> = {
         "Voor/na-rapport met meetbare winst",
       ]),
       h("Onze aanpak"),
-      p("We starten met een nulmeting op de pagina’s en apparaten die voor uw doelgroep tellen. We prioriteren op verwachte impact en technische inspanning, testen veilig en meten na livegang opnieuw."),
-      h("Wat u krijgt"),
+      p("We starten met een nulmeting op de pagina’s en apparaten die voor jouw doelgroep tellen. We prioriteren op verwachte impact en technische inspanning, testen veilig en meten na livegang opnieuw."),
+      h("Wat je krijgt"),
       l(["Performance-baseline en geprioriteerd actieplan", "Geïmplementeerde verbeteringen in code, assets of infrastructuur", "Voor- en nameting van Core Web Vitals", "Heldere uitleg van afwegingen en resterende kansen", "Advies om performance stabiel te houden terwijl de site groeit"]),
       h("Ideaal voor"),
       l(["Leadgeneratie- en e-commercewebsites", "Maatwerk PHP- of Next.js-applicaties met trage klantreizen", "Teams die een campagne, redesign of SEO-traject voorbereiden", "Bedrijven die bewijs willen vóór ze in een rebuild investeren"]),
@@ -657,7 +657,7 @@ const customServices: Record<string, CustomService> = {
     ],
     blocksNl: [
       h("Verhuis infrastructuur gecontroleerd, zonder verstoring"),
-      p("Een hostingmigratie of herstel is een bedrijfskritische wijziging. We bereiden data, omgevingen, DNS en verificatiestappen voor zodat uw maatwerkwebsite of applicatie schoon verhuist, met een geteste rollbackoptie als iets onverwachts gebeurt."),
+      p("Een hostingmigratie of herstel is een bedrijfskritische wijziging. We bereiden data, omgevingen, DNS en verificatiestappen voor zodat jouw maatwerkwebsite of applicatie schoon verhuist, met een geteste rollbackoptie als iets onverwachts gebeurt."),
       h("Wat erbij zit"),
       l([
         "Volledige backup van bestanden, databases en environment-config",
@@ -669,10 +669,10 @@ const customServices: Record<string, CustomService> = {
       ]),
       h("Ons migratieproces"),
       p("We auditen de huidige omgeving, maken en controleren backups, bouwen de doelomgeving en oefenen kritieke checks. Tijdens de cutover monitoren we de wijziging, valideren we data en klantreizen en houden we een duidelijke weg terug totdat de nieuwe setup bewezen is."),
-      h("Wat u krijgt"),
+      h("Wat je krijgt"),
       l(["Migratieplan met planning, verantwoordelijkheden en risicopunten", "Geverifieerde backup- en herstelwerkwijze", "Geconfigureerde doelomgeving en deploynotities", "Checks na migratie voor kernpagina’s, formulieren en integraties", "Overdrachtsdocumentatie voor doorlopende backup en herstel"]),
       h("Ideaal wanneer"),
-      l(["U van shared of legacy hosting verhuist", "U PHP-applicaties of Next.js-projecten migreert", "Uw bedrijf een betrouwbare disaster-recoveryroutine nodig heeft", "U hosting wilt consolideren of van cloudprovider verandert"]),
+      l(["Je van shared of legacy hosting verhuist", "Je PHP-applicaties of Next.js-projecten migreert", "Jouw bedrijf een betrouwbare disaster-recoveryroutine nodig heeft", "Je hosting wilt consolideren of van cloudprovider verandert"]),
       h("Aan de slag"),
       p("Vertel wat er verhuist, waar het draait en welke klantreizen niet onderbroken mogen worden. Wij beoordelen de complexiteit en stellen een veilig migratiemoment voor."),
     ],
@@ -704,7 +704,7 @@ const customServices: Record<string, CustomService> = {
     ],
     blocksNl: [
       h("Een herkenbare identiteit voor elk contactmoment"),
-      p("Een logo werkt pas goed wanneer het consistent werkt op uw website, social kanalen, salesmateriaal en drukwerk. We ontwikkelen praktische merkidentiteiten die onderscheidend, helder en direct bruikbaar zijn voor uw team en leveranciers."),
+      p("Een logo werkt pas goed wanneer het consistent werkt op jouw website, social kanalen, salesmateriaal en drukwerk. We ontwikkelen praktische merkidentiteiten die onderscheidend, helder en direct bruikbaar zijn voor jouw team en leveranciers."),
       h("Wat we creëren"),
       l([
         "Logo-concepten en uitwerking",
@@ -713,13 +713,13 @@ const customServices: Record<string, CustomService> = {
         "Social- en stationery-varianten",
       ]),
       h("Ons ontwerpproces"),
-      p("We starten bij uw markt, doelgroep en positionering en verkennen vervolgens een klein aantal doordachte richtingen. Met feedback verfijnen we één route tot een complete, bruikbare identiteit, zonder eindeloze losse concepten."),
-      h("Wat u krijgt"),
+      p("We starten bij jouw markt, doelgroep en positionering en verkennen vervolgens een klein aantal doordachte richtingen. Met feedback verfijnen we één route tot een complete, bruikbare identiteit, zonder eindeloze losse concepten."),
+      h("Wat je krijgt"),
       l(["Verfijnd hoofdlogo en ondersteunende varianten", "Kleurenpalet en typografieadvies", "Duidelijke gebruiksrichtlijnen voor digitaal en print", "Geordende bestanden voor web, social en productie", "Optionele doorvertaling naar website, stationery en campagne-assets"]),
       h("Ideaal voor"),
       l(["Nieuwe bedrijven die professioneel willen starten", "Organisaties die een rebrand voorbereiden", "Teams waarvan de huidige identiteit inconsistent is", "Bedrijven die bestanden nodig hebben die drukkers en developers goed kunnen gebruiken"]),
       h("Aan de slag"),
-      p("Deel uw bedrijf, doelgroep, huidige identiteit en de plekken waar het merk moet verschijnen. Wij stellen een gerichte identiteitsscope en beslisproces voor."),
+      p("Deel jouw bedrijf, doelgroep, huidige identiteit en de plekken waar het merk moet verschijnen. Wij stellen een gerichte identiteitsscope en beslisproces voor."),
     ],
   },
   "business-cards": {
@@ -763,7 +763,7 @@ const customServices: Record<string, CustomService> = {
     blocksNl: [
       h("Visitekaartjes ontwerp & drukwerk"),
       p(
-        "Wij ontwerpen visitekaartjes die uw merk uitstralen bij handshakes en meetings — en we kunnen ze voor u drukken in kleine of grote oplages, met de afwerkingen die bij uw merk passen.",
+        "Wij ontwerpen visitekaartjes die jouw merk uitstralen bij handshakes en meetings — en we kunnen ze voor je drukken in kleine of grote oplages, met de afwerkingen die bij jouw merk passen.",
       ),
       l([
         "Enkel- of dubbelzijdige layouts",
@@ -774,7 +774,7 @@ const customServices: Record<string, CustomService> = {
       ]),
       h("Drukwerk voor klanten"),
       p(
-        "Fysieke kaarten nodig? Wij regelen drukwerk in kleine oplages (startsets, pilots, persoonlijke sets) of grote oplages (hele teams, events, rebrands). U krijgt proofs, heldere papier-/afwerkingskeuzes en leveringscoördinatie.",
+        "Fysieke kaarten nodig? Wij regelen drukwerk in kleine oplages (startsets, pilots, persoonlijke sets) of grote oplages (hele teams, events, rebrands). Je krijgt proofs, heldere papier-/afwerkingskeuzes en leveringscoördinatie.",
       ),
       l([
         "Kleine oplages voor individuen of soft launches",
@@ -831,7 +831,7 @@ const customServices: Record<string, CustomService> = {
     blocksNl: [
       h("Briefpapier & huisstijl-drukwerk"),
       p(
-        "Wij ontwerpen briefpapier en bijpassende stationery die uw merk consistent houden in correspondentie — en we kunnen ze voor u drukken in kleine kantoorpakketten of grote bedrijfsruns.",
+        "Wij ontwerpen briefpapier en bijpassende stationery die jouw merk consistent houden in correspondentie — en we kunnen ze voor je drukken in kleine kantoorpakketten of grote bedrijfsruns.",
       ),
       l([
         "A4-briefpapiertemplates (digitaal en print)",
@@ -842,7 +842,7 @@ const customServices: Record<string, CustomService> = {
       ]),
       h("Drukwerk voor klanten"),
       p(
-        "Bestel wat u nodig heeft: een kleine oplage voor dagelijks gebruik, of een grote oplage voor de hele organisatie. Wij regelen specs, proofs en productie zodat uw stationery klaar is voor gebruik.",
+        "Bestel wat je nodig hebt: een kleine oplage voor dagelijks gebruik, of een grote oplage voor de hele organisatie. Wij regelen specs, proofs en productie zodat jouw stationery klaar is voor gebruik.",
       ),
       l([
         "Kleine drukoplages voor startups en afdelingen",
@@ -909,13 +909,13 @@ const customServices: Record<string, CustomService> = {
       l([
         "A-formaat flyers (A6, A5, A4 en maatwerk)",
         "Posters voor indoor, retail en outdoor formats",
-        "Campagneconcepten afgestemd op uw merk",
+        "Campagneconcepten afgestemd op jouw merk",
         "Drukveilige kleur (CMYK), resolutie en bleed",
         "Digitale varianten voor social ads indien nuttig",
       ]),
       h("Drukwerk in kleine of grote oplages"),
       p(
-        "Na het ontwerp kunnen we voor u drukken. Een kleine batch nodig voor een lokale promo of pop-up? Of een grote run voor een launch, winkelnetwerk of event? Wij schalen de drukoplage mee met uw campagne — met proofs en leveringscoördinatie.",
+        "Na het ontwerp kunnen we voor je drukken. Een kleine batch nodig voor een lokale promo of pop-up? Of een grote run voor een launch, winkelnetwerk of event? Wij schalen de drukoplage mee met jouw campagne — met proofs en leveringscoördinatie.",
       ),
       l([
         "Kleine oplages voor tests, soft launches en lokale events",
@@ -933,7 +933,7 @@ const customServices: Record<string, CustomService> = {
       ]),
       h("Werkwijze"),
       p(
-        "Briefing → concepten → feedback → finale drukbestanden → optioneel drukwerk in de oplage die u nodig heeft. Eén partner voor ontwerp en printing, zodat er niets tussen bureaus verdwijnt.",
+        "Briefing → concepten → feedback → finale drukbestanden → optioneel drukwerk in de oplage die je nodig hebt. Eén partner voor ontwerp en printing, zodat er niets tussen bureaus verdwijnt.",
       ),
     ],
   },
@@ -978,7 +978,7 @@ const customServices: Record<string, CustomService> = {
     blocksNl: [
       h("Stickerontwerp & drukwerk"),
       p(
-        "Wij ontwerpen stickers die scherp staan op product, event en merch — en drukken ze voor u in kleine of grote oplages, met juiste bleed, snijlijnen en afwerkingen.",
+        "Wij ontwerpen stickers die scherp staan op product, event en merch — en drukken ze voor je in kleine of grote oplages, met juiste bleed, snijlijnen en afwerkingen.",
       ),
       l([
         "Maatwerk stickerartwork en merkconforme varianten",
@@ -989,7 +989,7 @@ const customServices: Record<string, CustomService> = {
       ]),
       h("Drukwerk voor klanten"),
       p(
-        "Van een kleine merch drop of giveaway tot een grote product- of eventrun — wij schalen stickerdrukwerk naar de hoeveelheid die u nodig heeft, met proofs vóór productie.",
+        "Van een kleine merch drop of giveaway tot een grote product- of eventrun — wij schalen stickerdrukwerk naar de hoeveelheid die je nodig hebt, met proofs vóór productie.",
       ),
       l([
         "Kleine oplages voor pilots, merch en personal branding",
@@ -1061,12 +1061,12 @@ const customServices: Record<string, CustomService> = {
         "Advies over papier, binding en afwerking",
         "Proof-controle vóór volle productie",
       ]),
-      h("Wat u krijgt"),
+      h("Wat je krijgt"),
       l(["Een gestructureerde editorial layout en herbruikbaar paginasysteem", "Drukklare PDF-bestanden met juiste afloop en specificaties", "Digitale PDF-versie waar nodig", "Productiecoördinatie en proofcontrole op verzoek", "Overdracht van bronbestanden in overleg"]),
       h("Ideaal voor"),
       l(["Bedrijfsbrochures en capability documents", "Productcatalogi en lookbooks", "Redactionele magazines en jaarverslagen", "Salespakketten voor events, retail of direct mail"]),
       h("Aan de slag"),
-      p("Stuur uw doel, globale paginatelling, contentstatus en gewenste verspreiding. We helpen het formaat, de productieroute en een realistische layoutplanning bepalen."),
+      p("Stuur jouw doel, globale paginatelling, contentstatus en gewenste verspreiding. We helpen het formaat, de productieroute en een realistische layoutplanning bepalen."),
     ],
   },
 };

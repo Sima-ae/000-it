@@ -2,7 +2,7 @@
   "title": "Întrebări frecvente",
   "subtitle": "Întrebări și răspunsuri aprofundate — de la AI, AEO, GEO și SEO până la design, domenii, găzduire, marketing, social media, asistență și multe altele.",
   "ctaTitle": "Mai ai nevoie de ajutor?",
-  "ctaText": "Nu găsești întrebarea ta? Contactați-ne - vă vom contacta cât mai curând posibil.",
+  "ctaText": "Nu găsești întrebarea ta? Contactează-ne - te vom contacta cât mai curând posibil.",
   "ctaButton": "Contactaţi-ne",
   "categories": [
     {
@@ -17,7 +17,7 @@
         {
           "id": "gen-2",
           "question": "Cum încep să utilizez TripleZero iT?",
-          "answer": "Contactați-ne sau rezervați o programare. Efectuăm o scurtă aport, revizuim obiectivele și stivuim, apoi pregătim o propunere concretă cu planificare și KPI."
+          "answer": "Contactează-ne sau rezervați o programare. Efectuăm o scurtă aport, revizuim obiectivele și stivuim, apoi pregătim o propunere concretă cu planificare și KPI."
         },
         {
           "id": "gen-3",
@@ -37,7 +37,7 @@
         {
           "id": "gen-6",
           "question": "Pot combina mai multe servicii?",
-          "answer": "Da. Mulți clienți combină webdesign + SEO + reclame, sau întreținere WordPress + hosting + securitate. Adaptăm mixul la obiectivele și bugetul dumneavoastră."
+          "answer": "Da. Mulți clienți combină webdesign + SEO + reclame, sau întreținere WordPress + hosting + securitate. Adaptăm mixul la obiectivele și bugetul ta."
         },
         {
           "id": "gen-7",
@@ -52,12 +52,12 @@
         {
           "id": "gen-9",
           "question": "Cum comunică echipa progresul?",
-          "answer": "Vă ținem la curent prin actualizări regulate, bilete sau un tablou de bord, acolo unde este cazul, plus rapoarte de sprint sau lunare cu acțiuni și rezultate."
+          "answer": "Te ținem la curent prin actualizări regulate, bilete sau un tablou de bord, acolo unde este cazul, plus rapoarte de sprint sau lunare cu acțiuni și rezultate."
         },
         {
           "id": "gen-10",
           "question": "De ce ai nevoie de la noi pentru a începe?",
-          "answer": "Pentru a începe, avem nevoie de acces la site-ul web și găzduire (dacă este necesar), obiectivele dvs., liniile directoare ale mărcii, conturile de analiză și orice instrumente existente. Dacă lipsește ceva, ajutăm mai întâi să-l punem la loc."
+          "answer": "Pentru a începe, avem nevoie de acces la site-ul web și găzduire (dacă este necesar), obiectivele tale., liniile directoare ale mărcii, conturile de analiză și orice instrumente existente. Dacă lipsește ceva, ajutăm mai întâi să-l punem la loc."
         },
         {
           "id": "gen-11",
@@ -67,7 +67,7 @@
         {
           "id": "gen-12",
           "question": "Cine deține lucrarea și conturile?",
-          "answer": "Domeniul, conținutul, depozitele de coduri și conturile de anunțuri rămân ale dvs. La predare livrăm fișierele și documentația, astfel încât totul să rămână sub controlul dumneavoastră."
+          "answer": "Domeniul, conținutul, depozitele de coduri și conturile de anunțuri rămân ale tale La predare livrăm fișierele și documentația, astfel încât totul să rămână sub controlul ta."
         },
         {
           "id": "gen-13",
@@ -83,7 +83,7 @@
         {
           "id": "ai-1",
           "question": "Ce este o scanare AI la TripleZero iT?",
-          "answer": "O scanare de pregătire AI evaluează cât de bine poate fi găsit site-ul dvs. de motoarele de căutare clasice, răspunsurile AI și rezultatele căutării locale sau geografice (AEO, GEO, SEO și bazele tehnice)."
+          "answer": "O scanare de pregătire AI evaluează cât de bine poate fi găsit site-ul tău de motoarele de căutare clasice, răspunsurile AI și rezultatele căutării locale sau geografice (AEO, GEO, SEO și bazele tehnice)."
         },
         {
           "id": "ai-2",
@@ -118,7 +118,7 @@
         {
           "id": "ai-8",
           "question": "Ce este pregătirea AI pentru marca mea?",
-          "answer": "Este gradul în care site-ul, conținutul și datele sunt configurate astfel încât sistemele AI să poată cita, recomanda și explica corect marca dvs."
+          "answer": "Este gradul în care site-ul, conținutul și datele sunt configurate astfel încât sistemele AI să poată cita, recomanda și explica corect marca ta "
         },
         {
           "id": "ai-9",
@@ -164,7 +164,7 @@
         {
           "id": "seo-3",
           "question": "Cum incepi un angajament SEO?",
-          "answer": "Începem cu un audit tehnic, o cercetare a cuvintelor cheie și a intențiilor, o analiză a decalajului de conținut și o foaie de parcurs prioritară legată de KPI-urile afacerii dvs."
+          "answer": "Începem cu un audit tehnic, o cercetare a cuvintelor cheie și a intențiilor, o analiză a decalajului de conținut și o foaie de parcurs prioritară legată de KPI-urile afacerii ta "
         },
         {
           "id": "seo-4",
@@ -174,7 +174,7 @@
         {
           "id": "seo-5",
           "question": "Faceți și SEO local?",
-          "answer": "Da. Lucrăm la Google Business Profile, paginile de destinație locale, consistența NAP, recenzii și clustere de conținut local, astfel încât să fiți găsit mai bine în regiunea dvs."
+          "answer": "Da. Lucrăm la Google Business Profile, paginile de destinație locale, consistența NAP, recenzii și clustere de conținut local, astfel încât să fiți găsit mai bine în regiunea ta "
         },
         {
           "id": "seo-6",
@@ -189,7 +189,7 @@
         {
           "id": "seo-8",
           "question": "Ce este E-E-A-T și de ce contează?",
-          "answer": "E-E-A-T înseamnă Experience, Expertise, Authoritativeness and Trust. E-E-A-T puternică ajută la clasarea și la credibilitatea mărcii dvs. în rezumatele AI."
+          "answer": "E-E-A-T înseamnă Experience, Expertise, Authoritativeness and Trust. E-E-A-T puternică ajută la clasarea și la credibilitatea mărcii tale în rezumatele AI."
         },
         {
           "id": "seo-9",
@@ -326,7 +326,7 @@
         {
           "id": "des-6",
           "question": "Faceți și șabloane sociale?",
-          "answer": "Da. Creăm șabloane consistente pentru postări, povești și reclame, astfel încât echipa dvs. să poată publica rapid și ușor de recunoscut."
+          "answer": "Da. Creăm șabloane consistente pentru postări, povești și reclame, astfel încât echipa ta să poată publica rapid și ușor de recunoscut."
         },
         {
           "id": "des-7",
@@ -483,7 +483,7 @@
         {
           "id": "soc-9",
           "question": "Puteți sprijini comunicarea de criză?",
-          "answer": "Da. Folosim protocoale de răspuns rapid și ne aliniem cu echipa dvs., astfel încât răspunsurile să rămână consistente și sub control."
+          "answer": "Da. Folosim protocoale de răspuns rapid și ne aliniem cu echipa ta , astfel încât răspunsurile să rămână consistente și sub control."
         },
         {
           "id": "soc-10",
@@ -549,7 +549,7 @@
         {
           "id": "sup-8",
           "question": "Ce se întâmplă dacă site-ul meu este oprit?",
-          "answer": "Raportați-l ca urgent. Restaurăm acolo unde este posibil prin backup-uri, verificări de server și o remediere rapidă și vă ținem la curent cu starea pe parcurs."
+          "answer": "Raportați-l ca urgent. Restaurăm acolo unde este posibil prin backup-uri, verificări de server și o remediere rapidă și te ținem la curent cu starea pe parcurs."
         },
         {
           "id": "sup-9",
@@ -569,7 +569,7 @@
         {
           "id": "sup-12",
           "question": "Ajuți și cu întrebări non-tehnice?",
-          "answer": "Da, despre servicii, facturare și cont. Cât de adânc ajungem din punct de vedere tehnic depinde de pachetul dvs."
+          "answer": "Da, despre servicii, facturare și cont. Cât de adânc ajungem din punct de vedere tehnic depinde de pachetul ta "
         },
         {
           "id": "sup-13",
@@ -696,7 +696,7 @@
         {
           "id": "host-8",
           "question": "Oferiți e-mail cu domenii?",
-          "answer": "Asta depinde de pachet și de configurare. Vă sfătuim soluții de e-mail de încredere și setăm corect DNS (SPF, DKIM și DMARC)."
+          "answer": "Asta depinde de pachet și de configurare. Te sfătuim soluții de e-mail de încredere și setăm corect DNS (SPF, DKIM și DMARC)."
         },
         {
           "id": "host-9",
@@ -726,7 +726,7 @@
         {
           "id": "host-14",
           "question": "Cum aleg planul de gazduire potrivit?",
-          "answer": "Pe baza traficului, stivă (WordPress sau personalizat), resurse și creștere. Vă sfătuim cu sinceritate - nu exagerăm."
+          "answer": "Pe baza traficului, stivă (WordPress sau personalizat), resurse și creștere. Te sfătuim cu sinceritate - nu exagerăm."
         },
         {
           "id": "host-15",

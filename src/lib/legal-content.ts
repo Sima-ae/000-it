@@ -150,7 +150,7 @@ function sectionBlocks(section: ImportedSection): ContentBlock[] {
   }
 
   const closingIdx = paragraphs.findIndex((p) =>
-    /^(If you have any questions|Als u vragen heeft)/i.test(p),
+    /^(If you have any questions|Als je vragen hebt|Als u vragen heeft)/i.test(p),
   );
 
   for (let i = 0; i < paragraphs.length; i++) {

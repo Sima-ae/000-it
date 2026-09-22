@@ -128,7 +128,7 @@ export function CartNavButton({ className }: { className?: string }) {
                           </p>
                           <p className="mt-0.5 text-xs text-muted-foreground">
                             {line.quantity}×{" "}
-                            {formatShopEuro(centsToEuros(line.product.priceInclCents), locale)}
+                            {formatShopEuro(centsToEuros(line.unitInclCents), locale)}
                           </p>
                         </div>
                         <p className="shrink-0 text-sm font-semibold tabular-nums">

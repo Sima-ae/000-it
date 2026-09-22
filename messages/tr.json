@@ -28,10 +28,16 @@
     "title": "Dil"
   },
   "hero": {
-    "title": "Hassle with your website, AI or online growth...",
-    "subtitle": "... really isn’t of this time.",
+    "title": "Web sitesi, yapay zeka veya online büyüme derdi...",
+    "subtitle": "... bu gerçekten bu zamana ait değil.",
     "introTitle": "AI ve TripleZero iT ile daha hızlı büyüyün",
     "introSubtitle": "İşletmeler ve serbest çalışanlar için tek bir büyüme platformunda reklamcılık, AI entegrasyonu, AEO, GEO, SEO, çevrimiçi pazarlama ve sosyal medya yönetimi.",
+    "bullet1": "Güvenli, hızlı ve istikrarlı Hollanda IT ve yapay zeka hizmetleri",
+    "bullet2": "Her zaman kendi dilinizde destek — Agent 000 dahil",
+    "bullet3": "Hemen büyümeye başlamak için ücretsiz AI taraması",
+    "ctaServices": "Hizmetleri gör",
+    "ctaHelpChoose": "Seçmeme yardımcı ol",
+    "agentName": "Agent 000",
     "ctaScanTitle": "Girişimci mi yoksa serbest çalışan mı?",
     "ctaHeroTitle": "Ücretsiz bir AI taraması edinin",
     "ctaScan": "Buraya tıklayın",
@@ -43,13 +49,7 @@
     "score": "Gol",
     "agentsActive": "Temsilciler etkin",
     "serversOnline": "Çevrimiçi sunucular",
-    "bullet1": "Dutch IT and AI services that are secure, fast and stable",
-    "bullet2": "Always support in your language — including Agent 000",
-    "bullet3": "Free AI scan to start growing right away",
-    "ctaServices": "View services",
-    "ctaHelpChoose": "Help me choose",
-    "agentName": "Agent 000",
-    "openChatWithAgent": "Open chat with Agent 000"
+    "openChatWithAgent": "Agent 000 ile sohbeti aç"
   },
   "services": {
     "title": "Hizmetler",
@@ -89,7 +89,7 @@
     "freeAiScan": "Ücretsiz AI taraması",
     "openContactForm": "İletişim formunu aç",
     "contact": "Temas etmek",
-    "emptyBody": "Size özel teklif için bizimle iletişime geçin.",
+    "emptyBody": "Sana özel teklif için bizimle iletişime geçin.",
     "readyTitle": "Başlamaya hazır mısınız?",
     "readyBody": "Giriş rezervasyonu yapın veya mesaj gönderin; somut bir teklifle hızlı bir şekilde yanıt vereceğiz.",
     "groupMarketing": "İçerik, Veri, E-ticaret, Pazarlama, Medya Oluşturma ve Sosyal Medya",
@@ -197,7 +197,7 @@
     "billingPeriod": "Fatura dönemi",
     "contactEnterprise": "Kurumsal hakkında iletişim",
     "enterpriseHint": "Kurumsal plan",
-    "enterpriseDesc": "Bize neye ihtiyacınız olduğunu kısaca anlatın; size özel bir teklif göndereceğiz.",
+    "enterpriseDesc": "Bize neye ihtiyacınız olduğunu kısaca anlatın; sana özel bir teklif göndereceğiz.",
     "hostingMonth": "1× web barındırma (1 ay)",
     "hostingYear": "1× web barındırma (12 ay)"
   },
@@ -238,7 +238,10 @@
     "typePlan": "Planı",
     "typeService": "Hizmet",
     "inclVat": "%21 KDV dahil",
+    "perMonth": "/ay",
+    "billedYearly": "Yıllık faturalandırılır ({months} ay).",
     "addToCart": "Sepete ekle",
+    "order": "Sipariş ver",
     "cartTitle": "Sepet",
     "cartSubtitle": "Ödeme yapmadan önce siparişinizi inceleyin.",
     "emptyCart": "Sepetiniz boş.",
@@ -420,7 +423,7 @@
     "company": "Şirket",
     "message": "Mesaj",
     "send": "Gönder",
-    "success": "Teşekkürler! Yakında size geri döneceğiz."
+    "success": "Teşekkürler! Yakında sana geri döneceğiz."
   },
   "aiScan": {
     "title": "Ücretsiz AI Hazırlık Taraması",

@@ -1,12 +1,15 @@
 import { centsToEuros, splitInclusiveVatCents, VAT_RATE } from "@/lib/shop/vat";
 import {
   getShopProductById,
+  shopChargeInclCents,
   type ShopProduct,
 } from "@/lib/shop/catalog";
 
 export type ResolvedCartLine = {
   product: ShopProduct;
   quantity: number;
+  /** Charged unit price (e.g. monthly × 12 for yearly hosting). */
+  unitInclCents: number;
   lineInclCents: number;
   lineExclCents: number;
   lineVatCents: number;
@@ -29,11 +32,13 @@ export function resolveCartItems(
     const product = getShopProductById(item.productId);
     if (!product) continue;
     const quantity = Math.max(1, Math.floor(item.quantity || 1));
-    const lineInclCents = product.priceInclCents * quantity;
+    const unitInclCents = shopChargeInclCents(product);
+    const lineInclCents = unitInclCents * quantity;
     const { exclCents, vatCents } = splitInclusiveVatCents(lineInclCents);
     lines.push({
       product,
       quantity,
+      unitInclCents,
       lineInclCents,
       lineExclCents: exclCents,
       lineVatCents: vatCents,

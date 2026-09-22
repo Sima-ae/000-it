@@ -30,7 +30,7 @@ export const aiInWordpressService: CustomService = {
   subtitle:
     "Bring practical AI into your WordPress site — chatbots, content assistance, WooCommerce helpers, automation and custom plugins — secure, on-brand and built to convert.",
   subtitleNl:
-    "Breng praktische AI in uw WordPress-site — chatbots, contenthulp, WooCommerce-assistenten, automatisering en maatwerkplugins — veilig, on-brand en gebouwd om te converteren.",
+    "Breng praktische AI in jouw WordPress-site — chatbots, contenthulp, WooCommerce-assistenten, automatisering en maatwerkplugins — veilig, on-brand en gebouwd om te converteren.",
   image: "/uploads/fixweb/ai-in-wordpress.png",
   blocks: [
     h("What “AI in WordPress” means"),
@@ -115,23 +115,23 @@ export const aiInWordpressService: CustomService = {
   blocksNl: [
     h("Wat “AI in WordPress” betekent"),
     p(
-      "WordPress draait al miljoenen bedrijfssites. AI maakt die sites sneller te beheren en slimmer voor bezoekers: vragen beantwoorden, content draften, leads routeren, producten aanbevelen en supportlast verlagen — zonder uw merkstem of redactionele controle te vervangen.",
+      "WordPress draait al miljoenen bedrijfssites. AI maakt die sites sneller te beheren en slimmer voor bezoekers: vragen beantwoorden, content draften, leads routeren, producten aanbevelen en supportlast verlagen — zonder jouw merkstem of redactionele controle te vervangen.",
     ),
     p(
-      "TripleZero iT ontwerpt, bouwt en onderhoudt AI-features die passen bij uw bestaande theme, plugins en hosting — met duidelijke guardrails voor privacy, juistheid en performance.",
+      "TripleZero iT ontwerpt, bouwt en onderhoudt AI-features die passen bij jouw bestaande theme, plugins en hosting — met duidelijke guardrails voor privacy, juistheid en performance.",
     ),
     h("Wat er mogelijk is"),
     l([
-      "On-site AI-chat getraind op uw pagina’s, FAQ, policies en productcatalogus",
+      "On-site AI-chat getraind op jouw pagina’s, FAQ, policies en productcatalogus",
       "Leadkwalificatie en afspraakassistenten",
       "WooCommerce-hulp: product-Q&A, maat/fit-advies, orderstatus-samenvattingen",
       "AI-ondersteund contentdraften in wp-admin (posts, pages, productteksten)",
       "Slimme search en knowledge retrieval over docs en mediabibliotheek",
-      "Supportticket-drafts en triage gekoppeld aan uw helpdesk",
+      "Supportticket-drafts en triage gekoppeld aan jouw helpdesk",
       "Interne copilots voor editors, sales of support",
       "Automatisering: taggen, comments samenvatten, CRM-velden verrijken",
       "Meertalige antwoorden en contenthulp voor NL/EN-sites",
-      "Maatwerk AI-plugins en API-integraties op uw stack",
+      "Maatwerk AI-plugins en API-integraties op jouw stack",
     ]),
     h("Populaire use-cases per branche"),
     l([
@@ -157,7 +157,7 @@ export const aiInWordpressService: CustomService = {
     ]),
     h("Plugins vs maatwerk"),
     p(
-      "Soms volstaat een goed geconfigureerde premium plugin. Soms heeft u een custom plugin nodig die praat met uw models, CRM of PIM. Wij adviseren eerlijk — build vs buy — en leveren wat past bij budget en risico.",
+      "Soms volstaat een goed geconfigureerde premium plugin. Soms heb je een custom plugin nodig die praat met jouw models, CRM of PIM. Wij adviseren eerlijk — build vs buy — en leveren wat past bij budget en risico.",
     ),
     l([
       "Geconfigureerde AI-plugins met merkprompts en knowledge-sync",
@@ -171,9 +171,9 @@ export const aiInWordpressService: CustomService = {
     ),
     h("Content-AI voor editors"),
     p(
-      "Editors blijven baas. We kunnen draft-helpers in WordPress toevoegen die titles, outlines, meta descriptions en AEO-klare FAQ-blokken voorstellen — met uw review vóór publicatie.",
+      "Editors blijven baas. We kunnen draft-helpers in WordPress toevoegen die titles, outlines, meta descriptions en AEO-klare FAQ-blokken voorstellen — met jouw review vóór publicatie.",
     ),
-    h("Wat u krijgt"),
+    h("Wat je krijgt"),
     l([
       "Werkende AI-feature(s) op staging, daarna productie",
       "Admin-documentatie en een korte training",
@@ -187,9 +187,9 @@ export const aiInWordpressService: CustomService = {
       "WooCommerce product-Q&A voor top-SKU’s",
       "Editor-copilots voor een content-zware blog of magazine",
     ]),
-    h("Klaar om AI in uw WordPress-site te zetten?"),
+    h("Klaar om AI in jouw WordPress-site te zetten?"),
     p(
-      "Vertel ons uw URL, wat bezoekers het meest vragen, en of u WooCommerce gebruikt. Gebruik de contactknop voor een kort verzoek — we reageren met een haalbaarheidsadvies en vervolgstappen.",
+      "Vertel ons jouw URL, wat bezoekers het meest vragen, en of je WooCommerce gebruikt. Gebruik de contactknop voor een kort verzoek — we reageren met een haalbaarheidsadvies en vervolgstappen.",
     ),
   ],
 };

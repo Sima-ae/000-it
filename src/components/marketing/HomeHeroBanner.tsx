@@ -14,6 +14,7 @@ import { localizedHref } from "@/i18n/pathnames";
  */
 export function HomeHeroBanner() {
   const t = useTranslations("hero");
+  const tNav = useTranslations("nav");
   const locale = useLocale();
   const bullets = [t("bullet1"), t("bullet2"), t("bullet3")];
 
@@ -35,21 +36,21 @@ export function HomeHeroBanner() {
 
       <div className="relative mx-auto grid max-w-6xl items-center gap-8 px-4 py-12 md:gap-10 md:px-6 md:py-16 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
         <div className="max-w-xl text-white">
-          <p className="font-display text-sm font-semibold uppercase tracking-[0.22em] text-white/85 md:text-base">
-            TripleZero iT
-          </p>
-          <h1 className="mt-3 font-display text-3xl font-semibold leading-[1.12] tracking-tight sm:text-4xl md:text-5xl lg:text-[3.25rem]">
+          <h1 className="font-display text-3xl font-semibold leading-[1.12] tracking-tight sm:text-4xl md:text-5xl lg:text-[3.25rem]">
             {t("title")}
           </h1>
           <p className="mt-4 text-lg leading-relaxed text-white/90 md:text-xl">
             {t("subtitle")}
           </p>
 
-          <ul className="mt-7 space-y-3">
+          <ul className="mt-6 space-y-2">
             {bullets.map((item) => (
-              <li key={item} className="flex items-start gap-3 text-base text-white/95 md:text-lg">
-                <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/20">
-                  <Check className="h-3.5 w-3.5 text-white" strokeWidth={3} aria-hidden />
+              <li
+                key={item}
+                className="flex items-center gap-2.5 text-sm leading-snug text-white/95 sm:text-[0.95rem] md:text-base md:whitespace-nowrap"
+              >
+                <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-white/20">
+                  <Check className="h-3 w-3 text-white" strokeWidth={3} aria-hidden />
                 </span>
                 <span>{item}</span>
               </li>
@@ -67,10 +68,9 @@ export function HomeHeroBanner() {
             <Button
               asChild
               size="lg"
-              variant="outline"
-              className="rounded-full border-white/70 bg-transparent px-8 text-base font-semibold text-white hover:bg-white/15 hover:text-white"
+              className="rounded-full border-0 bg-primary px-8 text-base font-semibold text-primary-foreground hover:bg-primary/90"
             >
-              <SoftLink href={localizedHref(locale, "/afspraak")}>{t("ctaHelpChoose")}</SoftLink>
+              <SoftLink href={localizedHref(locale, "/afspraak")}>{tNav("book")}</SoftLink>
             </Button>
           </div>
         </div>

@@ -14,14 +14,40 @@ export type ShopProduct = {
   name: { nl: string; en: string };
   description: { nl: string; en: string };
   shortDescription: { nl: string; en: string };
-  /** Unit price including 21% VAT, in euro cents */
+  /** Unit price including 21% VAT, in euro cents (list/display price) */
   priceInclCents: number;
+  /**
+   * When set, checkout charges this many list periods (e.g. 12 for yearly
+   * hosting packages that are advertised per month).
+   */
+  checkoutMonths?: number;
   currency: "EUR";
   image?: string | null;
   billingPeriod?: ShopBillingPeriod;
   planKey?: "starter" | "growth";
   featured?: boolean;
 };
+
+/** Hosting plans listed monthly but sold as a 12-month package. */
+export const HOSTING_YEARLY_SLUGS = new Set([
+  "shared-hosting-basic",
+  "shared-hosting-plus",
+  "shared-hosting-business",
+  "wordpress-hosting-basic",
+  "wordpress-hosting-plus",
+  "wordpress-hosting-business",
+  "vps-hosting-basic",
+  "vps-hosting-plus",
+  "vps-hosting-business",
+]);
+
+/** Charged unit price (incl. VAT cents) used in cart / Stripe. */
+export function shopChargeInclCents(product: ShopProduct) {
+  const months = product.checkoutMonths && product.checkoutMonths > 1
+    ? product.checkoutMonths
+    : 1;
+  return product.priceInclCents * months;
+}
 
 type ImportedProduct = {
   slug: string;
@@ -151,6 +177,8 @@ function buildServiceProducts(): ShopProduct[] {
     const descNl = brandify(i18nNl?.description || p.description || shortNl);
     const descEn = brandify(i18nEn?.description || p.description || shortEn);
 
+    const yearlyHosting = HOSTING_YEARLY_SLUGS.has(p.slug);
+
     return {
       id: `service-${p.slug}`,
       slug: p.slug,
@@ -159,6 +187,8 @@ function buildServiceProducts(): ShopProduct[] {
       shortDescription: { nl: shortNl, en: shortEn },
       description: { nl: descNl, en: descEn },
       priceInclCents: eurosToCents(p.price),
+      checkoutMonths: yearlyHosting ? 12 : undefined,
+      billingPeriod: yearlyHosting ? "yearly" : undefined,
       currency: "EUR",
       image,
     };

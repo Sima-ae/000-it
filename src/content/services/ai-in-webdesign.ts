@@ -85,7 +85,7 @@ export const aiInEcommerceService: CustomService = {
   blocksNl: [
     h("AI gebouwd voor webshops"),
     p(
-      "E-commerce-AI is geen generieke chatbot op uw homepage. Wij ontwerpen AI die uw catalogus, voorraad, prijsregels en merktoon begrijpt — op maatwerkshops, headless commerce, Shopify-achtige stacks of PHP- / Next.js-storefronts (los van WordPress/WooCommerce-pakketten wanneer u een custom stack nodig heeft).",
+      "E-commerce-AI is geen generieke chatbot op jouw homepage. Wij ontwerpen AI die jouw catalogus, voorraad, prijsregels en merktoon begrijpt — op maatwerkshops, headless commerce, Shopify-achtige stacks of PHP- / Next.js-storefronts (los van WordPress/WooCommerce-pakketten wanneer je een custom stack nodig hebt).",
     ),
     h("Wat er mogelijk is"),
     l([
@@ -96,7 +96,7 @@ export const aiInEcommerceService: CustomService = {
       "Orderstatus- en retourantwoorden met veilige escalatie naar mensen",
       "Gepersonaliseerde aanbevelingen binnen duidelijke merchandisingregels",
       "Contenthulp voor productteksten en categorieteksten",
-      "Support-deflection voor vragen die uw inbox verstoppen",
+      "Support-deflection voor vragen die jouw inbox verstoppen",
       "Ops-automatisering: taggen, tickets samenvatten, CRM verrijken",
       "Meertalige shopassistenten voor NL/EN (meer op verzoek)",
     ]),
@@ -110,7 +110,7 @@ export const aiInEcommerceService: CustomService = {
     ]),
     h("Hoe we het veilig houden"),
     p(
-      "Prijzen, voorraad en acties moeten kloppen. We baseren antwoorden op uw productdata en policies, zetten guardrails tegen hallucinaties, en bieden altijd een pad naar menselijke support bij klachten, betalingen en edge cases.",
+      "Prijzen, voorraad en acties moeten kloppen. We baseren antwoorden op jouw productdata en policies, zetten guardrails tegen hallucinaties, en bieden altijd een pad naar menselijke support bij klachten, betalingen en edge cases.",
     ),
     l([
       "Catalogus-aware retrieval (PIM, feed of storefront-data)",
@@ -119,17 +119,17 @@ export const aiInEcommerceService: CustomService = {
       "Performance-vriendelijke widgets zodat Core Web Vitals gezond blijven",
       "GDPR-bewuste logging en dataverwerking",
     ]),
-    h("Wat u krijgt"),
+    h("Wat je krijgt"),
     l([
       "Discovery van shoppervragen en conversieknelpunten",
       "Werkende AI-feature(s) op staging, daarna productie",
-      "Admin-docs en korte training voor uw team",
+      "Admin-docs en korte training voor jouw team",
       "KPI’s: assisted conversion, deflection, AOV-invloed, CSAT-proxies",
       "Optioneel retainer voor catalogus-sync, prompts en optimalisatie",
     ]),
-    h("Klaar om AI in uw webshop te zetten?"),
+    h("Klaar om AI in jouw webshop te zetten?"),
     p(
-      "Deel uw shop-URL, platform en de topvragen van klanten. Gebruik de contactknop voor een kort verzoek — we reageren met haalbaarheid en vervolgstappen.",
+      "Deel jouw shop-URL, platform en de topvragen van klanten. Gebruik de contactknop voor een kort verzoek — we reageren met haalbaarheid en vervolgstappen.",
     ),
   ],
 };
@@ -199,11 +199,11 @@ export const aiInWebsiteService: CustomService = {
   blocksNl: [
     h("AI voor moderne websites"),
     p(
-      "Als uw site maatwerk is — Next.js, PHP, statische front-ends of hybride stacks — bouwen we AI die past bij uw architectuur, merk en conversiedoelen. Deze dienst is bewust los van AI in WordPress.",
+      "Als jouw site maatwerk is — Next.js, PHP, statische front-ends of hybride stacks — bouwen we AI die past bij jouw architectuur, merk en conversiedoelen. Deze dienst is bewust los van AI in WordPress.",
     ),
     h("Wat er mogelijk is"),
     l([
-      "On-site assistenten getraind op uw pagina’s, FAQ’s en documenten",
+      "On-site assistenten getraind op jouw pagina’s, FAQ’s en documenten",
       "Leadkwalificatie en afspraakflows",
       "Slimme sitesearch over content en knowledge bases",
       "Service finders en “welk pakket past bij mij?”-gidsen",
@@ -211,7 +211,7 @@ export const aiInWebsiteService: CustomService = {
       "Formulier- en CRM-verrijking uit gesprekken",
       "Content-draft helpers met menselijke publish-controle",
       "Meertalige NL/EN-ervaringen",
-      "Maatwerk AI-features via API’s, RAG en uw eigen data",
+      "Maatwerk AI-features via API’s, RAG en jouw eigen data",
     ]),
     h("Typische websitedoelen"),
     l([
@@ -219,15 +219,15 @@ export const aiInWebsiteService: CustomService = {
       "Inbound leads kwalificeren buiten kantooruren",
       "Repetitieve support- en sales-follow-ups verminderen",
       "Complexe aanbiedingen makkelijker maken",
-      "Content- en knowledge-workflows voor uw team versnellen",
+      "Content- en knowledge-workflows voor jouw team versnellen",
     ]),
     h("Hoe we implementeren"),
     l([
       "Discovery: doelen, stack, traffic en compliance",
       "Knowledge-prep uit goedgekeurde pagina’s en docs",
-      "Architectuur: widget, API-route of volle feature in uw app",
+      "Architectuur: widget, API-route of volle feature in jouw app",
       "Guardrails voor prijzen, juridische en merkclaims",
-      "UX die bij uw design system en accessibility past",
+      "UX die bij jouw design system en accessibility past",
       "Performance: async laden en caching waar mogelijk",
       "Handover met docs, training en optioneel retainership",
     ]),
@@ -238,16 +238,16 @@ export const aiInWebsiteService: CustomService = {
       "HTML / CSS / JavaScript landingsites",
       "Headless CMS + front-end combinaties",
     ]),
-    h("Wat u krijgt"),
+    h("Wat je krijgt"),
     l([
       "Een helder AI-featureplan gekoppeld aan business-KPI’s",
       "Werkende integratie op staging en productie",
       "Meting van engagement, assisted leads en deflection",
       "Een pad om later uit te breiden naar automatisering of e-commerce-AI",
     ]),
-    h("Klaar om AI in uw website te zetten?"),
+    h("Klaar om AI in jouw website te zetten?"),
     p(
-      "Vertel ons uw URL, tech stack en wat bezoekers het meest vragen. Gebruik de contactknop — we reageren met een haalbaarheidsadvies en concrete stappen.",
+      "Vertel ons jouw URL, tech stack en wat bezoekers het meest vragen. Gebruik de contactknop — we reageren met een haalbaarheidsadvies en concrete stappen.",
     ),
   ],
 };

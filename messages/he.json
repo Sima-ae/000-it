@@ -28,10 +28,16 @@
     "title": "שפה"
   },
   "hero": {
-    "title": "Hassle with your website, AI or online growth...",
-    "subtitle": "... really isn’t of this time.",
+    "title": "טרחה עם האתר, הבינה המלאכותית או הצמיחה באינטרנט...",
+    "subtitle": "... זה באמת כבר לא מהזמן הזה.",
     "introTitle": "גדל מהר יותר עם AI ו-TripleZero iT",
     "introSubtitle": "פרסום, שילוב AI, AEO, GEO, SEO, שיווק מקוון וניהול מדיה חברתית בפלטפורמת צמיחה אחת לעסקים ולעצמאיים.",
+    "bullet1": "שירותי IT ו-AI הולנדיים מאובטחים, מהירים ויציבים",
+    "bullet2": "תמיד תמיכה בשפה שלך — כולל Agent 000",
+    "bullet3": "סריקת AI חינם כדי להתחיל לגדול מיד",
+    "ctaServices": "צפו בשירותים",
+    "ctaHelpChoose": "עזרו לי לבחור",
+    "agentName": "Agent 000",
     "ctaScanTitle": "יזם או פרילנסר?",
     "ctaHeroTitle": "קבל סריקת AI בחינם",
     "ctaScan": "לחץ כאן",
@@ -43,13 +49,7 @@
     "score": "צִיוּן",
     "agentsActive": "סוכנים פעילים",
     "serversOnline": "שרתים מקוונים",
-    "bullet1": "Dutch IT and AI services that are secure, fast and stable",
-    "bullet2": "Always support in your language — including Agent 000",
-    "bullet3": "Free AI scan to start growing right away",
-    "ctaServices": "View services",
-    "ctaHelpChoose": "Help me choose",
-    "agentName": "Agent 000",
-    "openChatWithAgent": "Open chat with Agent 000"
+    "openChatWithAgent": "פתחו צ'אט עם Agent 000"
   },
   "services": {
     "title": "שירותים",
@@ -149,7 +149,7 @@
   "pricing": {
     "title": "תמחור",
     "subtitle": "כולל 21% מע\"מ",
-    "plansHeadline": "חנות אונליין או אתר משלכם עם טכנולוגיות בינה מלאכותית!",
+    "plansHeadline": "חנות אונליין או אתר משלך עם טכנולוגיות בינה מלאכותית!",
     "cta": "בחר תוכנית",
     "ctaContact": "צור איתנו קשר",
     "starter": "Business",
@@ -238,7 +238,10 @@
     "typePlan": "תכנן",
     "typeService": "שירות",
     "inclVat": "כולל 21% מע\"מ",
+    "perMonth": "/חודש",
+    "billedYearly": "חיוב שנתי ({months} חודשים).",
     "addToCart": "הוסף לעגלה",
+    "order": "הזמן",
     "cartTitle": "עגלה",
     "cartSubtitle": "בדוק את ההזמנה שלך לפני התשלום.",
     "emptyCart": "העגלה שלך ריקה.",
@@ -587,7 +590,7 @@
     "searchPlaceholder": "חיפוש במאגר הידע…",
     "searchCategoryPlaceholder": "חיפוש בקטגוריה זו…",
     "emptyArticles": "לא נמצאו מאמרים.",
-    "ctaTitle": "לא מצאתם את מה שחיפשתם?",
+    "ctaTitle": "לא מצאתה את מה שחיפשתם?",
     "ctaBody": "צרו קשר עם התמיכה של TripleZero iT — נשמח לעזור.",
     "ctaButton": "צור קשר",
     "breadcrumb": "מאגר ידע",
@@ -637,7 +640,7 @@
     "companyOptional": "חברה (אופציונלי)",
     "notesOptional": "הערות (אופציונלי)",
     "notesPlaceholder": "כתובת אתר, דחיפות, מה קורה...",
-    "choosePayment": "אתם יכולים לבחור איך תרצו לשלם. ניתן לבצע תשלום מקוון באמצעות קישור מאובטח.",
+    "choosePayment": "אתה יכולים לבחור איך תרצו לשלם. ניתן לבצע תשלום מקוון באמצעות קישור מאובטח.",
     "summary": "תקציר",
     "extras": "תוספות",
     "when": "כש ",
@@ -660,7 +663,7 @@
     "stepSchedule": "תזמון",
     "stepConfirm": "אישור",
     "allServicesCta": "לחץ כאן לכל השירותים!",
-    "pageIntro": "יש לבחור שירות, תאריך ושעה — אנחנו נאשר את הפגישה שלכם באימייל."
+    "pageIntro": "יש לבחור שירות, תאריך ושעה — אנחנו נאשר את הפגישה שלך באימייל."
   },
   "digitalDesign": {
     "title": "עיצוב דיגיטלי",

@@ -111,7 +111,7 @@ export const serviceCatalog: ServiceNavItem[] = [
     kind: "page",
     group: "ai",
     summary: "Custom AI features, RAG and APIs in your product stack.",
-    summaryNl: "Maatwerk AI-features, RAG en API’s in uw productstack.",
+    summaryNl: "Maatwerk AI-features, RAG en API’s in jouw productstack.",
   },
   {
     slug: "ai-consultancy",
@@ -133,7 +133,7 @@ export const serviceCatalog: ServiceNavItem[] = [
     summary:
       "Chatbots, content AI, automation and custom AI features built into your WordPress site.",
     summaryNl:
-      "Chatbots, content-AI, automatisering en maatwerk AI in uw WordPress-website.",
+      "Chatbots, content-AI, automatisering en maatwerk AI in jouw WordPress-website.",
   },
   {
     slug: "wordpress-support",
@@ -142,7 +142,7 @@ export const serviceCatalog: ServiceNavItem[] = [
     kind: "page",
     group: "wordpress",
     summary: "Expert WordPress support to keep your site running smoothly.",
-    summaryNl: "Expert WordPress support zodat uw site soepel blijft draaien.",
+    summaryNl: "Expert WordPress support zodat jouw site soepel blijft draaien.",
   },
   {
     slug: "wordpress-error-fix",
@@ -396,7 +396,7 @@ export const serviceCatalog: ServiceNavItem[] = [
     kind: "page",
     group: "marketing",
     summary: "Build, optimize and grow your online store end to end.",
-    summaryNl: "Bouw, optimaliseer en groei uw webshop van A tot Z.",
+    summaryNl: "Bouw, optimaliseer en groei jouw webshop van A tot Z.",
   },
   {
     slug: "product-listing",

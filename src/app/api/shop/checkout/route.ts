@@ -83,7 +83,7 @@ export async function POST(request: Request) {
             productId: line.product.id,
             name: line.product.name[locale === "nl" ? "nl" : "en"],
             quantity: line.quantity,
-            unitPriceIncl: line.product.priceInclCents / 100,
+            unitPriceIncl: line.unitInclCents / 100,
             vatRate: VAT_RATE,
           })),
         },
@@ -108,21 +108,28 @@ export async function POST(request: Request) {
       payment_method_types: ["card", "ideal", "bancontact", "sepa_debit", "klarna", "paypal"],
       billing_address_collection: "auto",
       submit_type: "pay",
-      line_items: totals.lines.map((line) => ({
-        quantity: line.quantity,
-        price_data: {
-          currency: "eur",
-          unit_amount: line.product.priceInclCents,
-          product_data: {
-            name: line.product.name[catalogLocale],
-            description: line.product.shortDescription[catalogLocale].slice(
-              0,
-              400,
-            ),
-            metadata: { productId: line.product.id },
+      line_items: totals.lines.map((line) => {
+        const months = line.product.checkoutMonths;
+        const periodNote =
+          months && months > 1
+            ? catalogLocale === "nl"
+              ? `Jaarlijks pakket (${months} maanden). `
+              : `Yearly package (${months} months). `
+            : "";
+        const baseDesc = line.product.shortDescription[catalogLocale];
+        return {
+          quantity: line.quantity,
+          price_data: {
+            currency: "eur",
+            unit_amount: line.unitInclCents,
+            product_data: {
+              name: line.product.name[catalogLocale],
+              description: `${periodNote}${baseDesc}`.slice(0, 400),
+              metadata: { productId: line.product.id },
+            },
           },
-        },
-      })),
+        };
+      }),
       success_url: `${origin}/${locale}/shop/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${origin}/${locale}/shop/checkout?cancelled=1`,
     };

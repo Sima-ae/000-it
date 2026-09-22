@@ -33,7 +33,7 @@ export const appointmentExtras: AppointmentExtra[] = [
     title: "Screen-share deep dive",
     titleNl: "Schermdeling deep-dive",
     description: "Longer live walkthrough of your site or dashboard.",
-    descriptionNl: "Uitgebreide live walkthrough van uw site of dashboard.",
+    descriptionNl: "Uitgebreide live walkthrough van jouw site of dashboard.",
   },
   {
     id: "follow-up",

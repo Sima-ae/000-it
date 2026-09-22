@@ -203,8 +203,10 @@ export function ServicesMegaMenu({
           onMouseLeave={scheduleClose}
         >
           <div className="w-full max-w-[min(100%,98rem)] rounded-3xl border border-border/60 bg-white p-4 shadow-xl dark:bg-zinc-950 md:p-5">
-            <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 lg:gap-4">
-              {sortedServiceGroups(locale).map((group) => {
+            <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-4">
+              {sortedServiceGroups(locale)
+                .filter((group) => group.id !== "hosting")
+                .map((group) => {
                 const slugs = featuredByGroup[group.id] || [];
                 const items = sortFeaturedItems(
                   slugs

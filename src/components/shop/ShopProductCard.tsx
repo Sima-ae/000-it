@@ -57,8 +57,20 @@ export function ShopProductCard({ product }: { product: ShopProduct }) {
         <p className="mt-2 line-clamp-3 flex-1 text-sm text-muted-foreground">
           {localized.localizedShort}
         </p>
-        <p className="font-display mt-4 text-2xl font-semibold">{price}</p>
+        <p className="font-display mt-4 text-2xl font-semibold">
+          {price}
+          {product.checkoutMonths && product.checkoutMonths > 1 ? (
+            <span className="ml-1 text-base font-medium text-muted-foreground">
+              {t("perMonth")}
+            </span>
+          ) : null}
+        </p>
         <p className="text-xs text-muted-foreground">{t("inclVat")}</p>
+        {product.checkoutMonths && product.checkoutMonths > 1 ? (
+          <p className="mt-1 text-xs text-muted-foreground">
+            {t("billedYearly", { months: product.checkoutMonths })}
+          </p>
+        ) : null}
         <Button className="mt-4 w-full rounded-2xl" onClick={handleAdd}>
           {t("addToCart")}
         </Button>

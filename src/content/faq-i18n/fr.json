@@ -1,9 +1,9 @@
 {
   "title": "Questions fréquemment posées",
   "subtitle": "Questions et réponses approfondies – de l'IA, de l'AEO, du GEO et du SEO à la conception, aux domaines, à l'hébergement, au marketing, aux médias sociaux, à l'assistance et bien plus encore.",
-  "ctaTitle": "Vous avez encore besoin d'aide ?",
-  "ctaText": "Vous ne trouvez pas votre question ? Contactez-nous, nous vous répondrons dans les plus brefs délais.",
-  "ctaButton": "Contactez-nous",
+  "ctaTitle": "Tu as encore besoin d'aide ?",
+  "ctaText": "Tu ne trouves pas ta question ? Contacte-nous, nous te répondrons dans les plus brefs délais.",
+  "ctaButton": "Contacte-nous",
   "categories": [
     {
       "id": "general",
@@ -17,7 +17,7 @@
         {
           "id": "gen-2",
           "question": "Comment puis-je démarrer avec TripleZero iT ?",
-          "answer": "Contactez-nous ou prenez rendez-vous. Nous organisons une courte séance, examinons les objectifs et les empilons, puis préparons une proposition concrète avec une planification et des KPI."
+          "answer": "Contacte-nous ou prenez rendez-tu. Nous organisons une courte séance, examinons les objectifs et les empilons, puis préparons une proposition concrète avec une planification et des KPI."
         },
         {
           "id": "gen-3",
@@ -32,12 +32,12 @@
         {
           "id": "gen-5",
           "question": "À quoi ressemble un engagement type ?",
-          "answer": "Un engagement typique se déroule comme ceci : admission → audit ou analyse → plan → exécution du sprint → mesure → optimisation. Vous obtenez des jalons et des rapports clairs, de sorte que votre position soit toujours claire."
+          "answer": "Un engagement typique se déroule comme ceci : admission → audit ou analyse → plan → exécution du sprint → mesure → optimisation. Tu obtenez des jalons et des rapports clairs, de sorte que ton position soit toujours claire."
         },
         {
           "id": "gen-6",
           "question": "Puis-je combiner plusieurs services ?",
-          "answer": "Oui. De nombreux clients combinent webdesign + SEO + publicités, ou maintenance WordPress + hébergement + sécurité. Nous adaptons la combinaison à vos objectifs et à votre budget."
+          "answer": "Oui. De nombreux clients combinent webdesign + SEO + publicités, ou maintenance WordPress + hébergement + sécurité. Nous adaptons la combinaison à tes objectifs et à ton budget."
         },
         {
           "id": "gen-7",
@@ -52,22 +52,22 @@
         {
           "id": "gen-9",
           "question": "Comment l’équipe communique-t-elle les progrès ?",
-          "answer": "Nous vous tenons informé via des mises à jour régulières, des tickets ou un tableau de bord le cas échéant, ainsi que des rapports sprint ou mensuels avec les actions et les résultats."
+          "answer": "Nous te tenons informé via des mises à jour régulières, des tickets ou un tableau de bord le cas échéant, ainsi que des rapports sprint ou mensuels avec les actions et les résultats."
         },
         {
           "id": "gen-10",
           "question": "Qu’avez-vous besoin de nous pour commencer ?",
-          "answer": "Pour commencer, nous avons besoin d'accéder au site Web et à l'hébergement (si nécessaire), à ​​vos objectifs, aux directives de votre marque, aux comptes d'analyse et à tous les outils existants. S’il manque quelque chose, nous aidons d’abord à le mettre en place."
+          "answer": "Pour commencer, nous avons besoin d'accéder au site Web et à l'hébergement (si nécessaire), à ​​tes objectifs, aux directives de ta marque, aux comptes d'analyse et à tous les outils existants. S’il manque quelque chose, nous aidons d’abord à le mettre en place."
         },
         {
           "id": "gen-11",
           "question": "Vos services sont-ils adaptés aux startups ?",
-          "answer": "Oui. Nous passons de pages de destination simplifiées et d'analyses IA à des configurations de croissance complète, de sorte que l'approche évolue avec vous."
+          "answer": "Oui. Nous passons de pages de destination simplifiées et d'analyses IA à des configurations de croissance complète, de sorte que l'approche évolue avec tu."
         },
         {
           "id": "gen-12",
           "question": "À qui appartiennent les œuvres et les comptes ?",
-          "answer": "Votre domaine, votre contenu, vos référentiels de code et vos comptes publicitaires restent les vôtres. Lors de la remise, nous livrons les fichiers et la documentation afin que tout reste sous votre contrôle."
+          "answer": "Ton domaine, ton contenu, tes référentiels de code et tes comptes publicitaires restent les vôtres. Lors de la remise, nous livrons les fichiers et la documentation afin que tout reste sous ton contrôle."
         },
         {
           "id": "gen-13",
@@ -83,17 +83,17 @@
         {
           "id": "ai-1",
           "question": "Qu'est-ce qu'un scan IA chez TripleZero iT ?",
-          "answer": "Une analyse de préparation à l'IA évalue dans quelle mesure votre site peut être trouvé par les moteurs de recherche classiques, les réponses de l'IA et les résultats de recherche locaux ou géographiques (AEO, GEO, SEO et les fondements techniques)."
+          "answer": "Une analyse de préparation à l'IA évalue dans quelle mesure ton site peut être trouvé par les moteurs de recherche classiques, les réponses de l'IA et les résultats de recherche locaux ou géographiques (AEO, GEO, SEO et les fondements techniques)."
         },
         {
           "id": "ai-2",
           "question": "Que mesure exactement l’analyse IA ?",
-          "answer": "L'analyse mesure les signaux AEO, la visibilité GEO/locale, les fondamentaux du référencement, la structure du contenu, les indicateurs de performance et l'état de préparation à l'IA. Vous recevez des scores et des points d'amélioration concrets."
+          "answer": "L'analyse mesure les signaux AEO, la visibilité GEO/locale, les fondamentaux du référencement, la structure du contenu, les indicateurs de performance et l'état de préparation à l'IA. Tu recevez des scores et des points d'amélioration concrets."
         },
         {
           "id": "ai-3",
           "question": "À quelle fréquence dois-je exécuter une analyse IA ?",
-          "answer": "Au minimum après des modifications majeures du site ou des campagnes. Pour les marques actives, nous recommandons des analyses périodiques, par exemple chaque trimestre, afin que vous restiez visible dans les résultats de recherche et d'IA."
+          "answer": "Au minimum après des modifications majeures du site ou des campagnes. Pour les marques actives, nous recommandons des analyses périodiques, par exemple chaque trimestre, afin que tu restiez visible dans les résultats de recherche et d'IA."
         },
         {
           "id": "ai-4",
@@ -118,12 +118,12 @@
         {
           "id": "ai-8",
           "question": "Qu’est-ce que la préparation à l’IA pour ma marque ?",
-          "answer": "Il s'agit de la mesure dans laquelle votre site, votre contenu et vos données sont configurés pour que les systèmes d'IA puissent citer, recommander et expliquer correctement votre marque."
+          "answer": "Il s'agit de la mesure dans laquelle ton site, ton contenu et tes données sont configurés pour que les systèmes d'IA puissent citer, recommander et expliquer correctement ta marque."
         },
         {
           "id": "ai-9",
           "question": "Pouvez-vous utiliser des agents IA dans le tableau de bord ?",
-          "answer": "Oui. Dans le portail client, vous voyez des agents IA pour le référencement, le contenu, les réseaux sociaux et les publicités, y compris le statut et les tâches."
+          "answer": "Oui. Dans le portail client, tu voyez des agents IA pour le référencement, le contenu, les réseaux sociaux et les publicités, y compris le statut et les tâches."
         },
         {
           "id": "ai-10",
@@ -138,7 +138,7 @@
         {
           "id": "ai-12",
           "question": "Combien coûte un engagement IA ?",
-          "answer": "Cela va d’une analyse d’IA gratuite ou d’entrée de gamme à des honoraires mensuels d’IA et de marketing. Après l'admission, vous recevez une proposition claire."
+          "answer": "Cela va d’une analyse d’IA gratuite ou d’entrée de gamme à des honoraires mensuels d’IA et de marketing. Après l'admission, tu recevez une proposition claire."
         },
         {
           "id": "ai-13",
@@ -159,12 +159,12 @@
         {
           "id": "seo-2",
           "question": "Pourquoi l’AEO/GEO est-il important maintenant ?",
-          "answer": "De plus en plus de chercheurs obtiennent des réponses via l'IA et effectuent également des recherches localement (« près de chez moi »). Sans AEO, vous manquez les citations de l'IA ; sans GEO, vous manquez de prospects locaux, même lorsque le référencement classique est solide."
+          "answer": "De plus en plus de chercheurs obtiennent des réponses via l'IA et effectuent également des recherches localement (« près de chez moi »). Sans AEO, tu manquez les citations de l'IA ; sans GEO, tu manquez de prospects locaux, même lorsque le référencement classique est solide."
         },
         {
           "id": "seo-3",
           "question": "Comment démarrer un engagement SEO ?",
-          "answer": "Nous commençons par un audit technique, une recherche de mots clés et d'intentions, une analyse des lacunes de contenu et une feuille de route prioritaire liée aux KPI de votre entreprise."
+          "answer": "Nous commençons par un audit technique, une recherche de mots clés et d'intentions, une analyse des lacunes de contenu et une feuille de route prioritaire liée aux KPI de ta entreprise."
         },
         {
           "id": "seo-4",
@@ -174,7 +174,7 @@
         {
           "id": "seo-5",
           "question": "Faites-vous également du référencement local ?",
-          "answer": "Oui. Nous travaillons sur le profil d'entreprise Google, les pages de destination locales, la cohérence NAP, les avis et les clusters de contenu local afin que vous soyez mieux trouvé dans votre région."
+          "answer": "Oui. Nous travaillons sur le profil d'entreprise Google, les pages de destination locales, la cohérence NAP, les avis et les clusters de contenu local afin que tu soyez mieux trouvé dans ton région."
         },
         {
           "id": "seo-6",
@@ -189,7 +189,7 @@
         {
           "id": "seo-8",
           "question": "Qu’est-ce que E-E-A-T et pourquoi est-ce important ?",
-          "answer": "E-E-A-T signifie Expérience, Expertise, Autorité et Confiance. Strong E-E-A-T contribue au classement et à la crédibilité de votre marque dans les résumés d’IA."
+          "answer": "E-E-A-T signifie Expérience, Expertise, Autorité et Confiance. Strong E-E-A-T contribue au classement et à la crédibilité de ta marque dans les résumés d’IA."
         },
         {
           "id": "seo-9",
@@ -326,7 +326,7 @@
         {
           "id": "des-6",
           "question": "Créez-vous également des modèles sociaux ?",
-          "answer": "Oui. Nous créons des modèles cohérents pour les publications, les histoires et les publicités afin que votre équipe puisse publier rapidement et de manière reconnaissable."
+          "answer": "Oui. Nous créons des modèles cohérents pour les publications, les histoires et les publicités afin que ton équipe puisse publier rapidement et de manière reconnaissable."
         },
         {
           "id": "des-7",
@@ -483,7 +483,7 @@
         {
           "id": "soc-9",
           "question": "Pouvez-vous soutenir la communication de crise ?",
-          "answer": "Oui. Nous utilisons des protocoles de réponse rapides et nous nous alignons sur votre équipe afin que les réponses restent cohérentes et sous contrôle."
+          "answer": "Oui. Nous utilisons des protocoles de réponse rapides et nous nous alignons sur ton équipe afin que les réponses restent cohérentes et sous contrôle."
         },
         {
           "id": "soc-10",
@@ -493,7 +493,7 @@
         {
           "id": "soc-11",
           "question": "Fournissez-vous un calendrier de contenu ?",
-          "answer": "Oui. Nous vous livrons un plan mensuel ou trimestriel avec des thèmes, des formats et des délais."
+          "answer": "Oui. Nous te livrons un plan mensuel ou trimestriel avec des thèmes, des formats et des délais."
         },
         {
           "id": "soc-12",
@@ -519,7 +519,7 @@
         {
           "id": "sup-2",
           "question": "Comment puis-je joindre l'assistance ?",
-          "answer": "Via contact, rendez-vous, tickets dans le tableau de bord ou chat en direct sur le site. Les cas urgents sont marqués comme prioritaires."
+          "answer": "Via contact, rendez-tu, tickets dans le tableau de bord ou chat en direct sur le site. Les cas urgents sont marqués comme prioritaires."
         },
         {
           "id": "sup-3",
@@ -549,7 +549,7 @@
         {
           "id": "sup-8",
           "question": "Et si mon site est en panne ?",
-          "answer": "Signalez-le comme urgent. Nous restaurons dans la mesure du possible via des sauvegardes, des vérifications du serveur et un correctif, et vous tenons informés de l'état tout au long du processus."
+          "answer": "Signalez-le comme urgent. Nous restaurons dans la mesure du possible via des sauvegardes, des vérifications du serveur et un correctif, et tu tenons informés de l'état tout au long du processus."
         },
         {
           "id": "sup-9",
@@ -569,12 +569,12 @@
         {
           "id": "sup-12",
           "question": "Aidez-vous également pour les questions non techniques ?",
-          "answer": "Oui, à propos des services, de la facturation et du compte. La profondeur à laquelle nous allons techniquement dépend de votre forfait."
+          "answer": "Oui, à propos des services, de la facturation et du compte. La profondeur à laquelle nous allons techniquement dépend de ton forfait."
         },
         {
           "id": "sup-13",
           "question": "Puis-je mettre à niveau le support plus tard ?",
-          "answer": "Oui. Vous pouvez évoluer lorsque le trafic, les risques ou les besoins de l'équipe augmentent."
+          "answer": "Oui. Tu pouvez évoluer lorsque le trafic, les risques ou les besoins de l'équipe augmentent."
         }
       ]
     },
@@ -620,7 +620,7 @@
         {
           "id": "web-8",
           "question": "Pouvez-vous proposer des options CMS sans WordPress ?",
-          "answer": "Oui. Il peut s'agir d'un CMS sans tête, d'un administrateur personnalisé ou d'une configuration statique, en fonction de votre équipe et de vos besoins."
+          "answer": "Oui. Il peut s'agir d'un CMS sans tête, d'un administrateur personnalisé ou d'une configuration statique, en fonction de ton équipe et de tes besoins."
         },
         {
           "id": "web-9",
@@ -716,7 +716,7 @@
         {
           "id": "host-12",
           "question": "Quelle est votre approche en matière de disponibilité ?",
-          "answer": "Nous surveillons, répondons rapidement aux incidents et communiquons clairement autour des fenêtres de maintenance afin que vous sachiez ce qui se passe."
+          "answer": "Nous surveillons, répondons rapidement aux incidents et communiquons clairement autour des fenêtres de maintenance afin que tu sachiez ce qui se passe."
         },
         {
           "id": "host-13",

@@ -2,8 +2,8 @@
   "title": "Često postavljana pitanja",
   "subtitle": "Detaljna pitanja i odgovori — od AI, AEO, GEO i SEO do dizajna, domena, hostinga, marketinga, društvenih medija, podrške i još mnogo toga.",
   "ctaTitle": "Još uvijek trebate pomoć?",
-  "ctaText": "Ne možete pronaći svoje pitanje? Kontaktirajte nas — javićemo vam se u najkraćem mogućem roku.",
-  "ctaButton": "Kontaktirajte nas",
+  "ctaText": "Ne možete pronaći svoje pitanje? Kontaktiraj nas — javićemo ti se u najkraćem mogućem roku.",
+  "ctaButton": "Kontaktiraj nas",
   "categories": [
     {
       "id": "general",
@@ -17,7 +17,7 @@
         {
           "id": "gen-2",
           "question": "Kako da počnem sa TripleZero iT-om?",
-          "answer": "Kontaktirajte nas ili zakažite termin. Vodimo kratak unos, pregledamo ciljeve i skup, zatim pripremamo konkretan prijedlog s planiranjem i KPI-ovima."
+          "answer": "Kontaktiraj nas ili zakažite termin. Vodimo kratak unos, pregledamo ciljeve i skup, zatim pripremamo konkretan prijedlog s planiranjem i KPI-ovima."
         },
         {
           "id": "gen-3",
@@ -37,7 +37,7 @@
         {
           "id": "gen-6",
           "question": "Mogu li kombinirati više usluga?",
-          "answer": "Da. Mnogi klijenti kombinuju web dizajn + SEO + reklame ili održavanje WordPressa + hosting + sigurnost. Mi prilagođavamo kombinaciju prema vašim ciljevima i budžetu."
+          "answer": "Da. Mnogi klijenti kombinuju web dizajn + SEO + reklame ili održavanje WordPressa + hosting + sigurnost. Mi prilagođavamo kombinaciju prema tvojim ciljevima i budžetu."
         },
         {
           "id": "gen-7",
@@ -52,12 +52,12 @@
         {
           "id": "gen-9",
           "question": "Kako tim komunicira napredak?",
-          "answer": "Obavještavamo vas putem redovnih ažuriranja, ulaznica ili kontrolne table gdje je relevantno, plus sprint ili mjesečne izvještaje s akcijama i rezultatima."
+          "answer": "Obavještavamo te putem redovnih ažuriranja, ulaznica ili kontrolne table gdje je relevantno, plus sprint ili mjesečne izvještaje s akcijama i rezultatima."
         },
         {
           "id": "gen-10",
           "question": "Šta vam treba od nas za početak?",
-          "answer": "Za početak, potreban nam je pristup web stranici i hostingu (ako je potrebno), vašim ciljevima, smjernicama za brend, nalozima za analizu i svim postojećim alatima. Ako nešto nedostaje, prvo pomažemo da se to postavi."
+          "answer": "Za početak, potreban nam je pristup web stranici i hostingu (ako je potrebno), tvojim ciljevima, smjernicama za brend, nalozima za analizu i svim postojećim alatima. Ako nešto nedostaje, prvo pomažemo da se to postavi."
         },
         {
           "id": "gen-11",
@@ -67,7 +67,7 @@
         {
           "id": "gen-12",
           "question": "Ko je vlasnik rada i računa?",
-          "answer": "Vaša domena, sadržaj, spremišta kodova i računi oglasa ostaju vaši. Prilikom primopredaje dostavljamo dosijee i dokumentaciju tako da sve ostaje pod Vašom kontrolom."
+          "answer": "Tvoja domena, sadržaj, spremišta kodova i računi oglasa ostaju tvoji. Prilikom primopredaje dostavljamo dosijee i dokumentaciju tako da sve ostaje pod Vašom kontrolom."
         },
         {
           "id": "gen-13",
@@ -83,7 +83,7 @@
         {
           "id": "ai-1",
           "question": "Šta je AI skeniranje u TripleZero iT-u?",
-          "answer": "Skeniranje spremnosti AI-a procjenjuje koliko dobro se vaša web lokacija može pronaći pomoću klasičnih pretraživača, AI odgovora i lokalnih ili geografskih rezultata pretraživanja (AEO, GEO, SEO i tehničke osnove)."
+          "answer": "Skeniranje spremnosti AI-a procjenjuje koliko dobro se tvoja web lokacija može pronaći pomoću klasičnih pretraživača, AI odgovora i lokalnih ili geografskih rezultata pretraživanja (AEO, GEO, SEO i tehničke osnove)."
         },
         {
           "id": "ai-2",
@@ -118,7 +118,7 @@
         {
           "id": "ai-8",
           "question": "Šta je AI spremnost za moj brend?",
-          "answer": "To je stepen do kojeg su vaša stranica, sadržaj i podaci postavljeni tako da AI sistemi mogu ispravno citirati, preporučiti i objasniti vaš brend."
+          "answer": "To je stepen do kojeg su tvoja stranica, sadržaj i podaci postavljeni tako da AI sistemi mogu ispravno citirati, preporučiti i objasniti vaš brend."
         },
         {
           "id": "ai-9",
@@ -159,12 +159,12 @@
         {
           "id": "seo-2",
           "question": "Zašto su AEO/GEO sada važni?",
-          "answer": "Više ljudi koji traže odgovore dobijaju odgovore putem veštačke inteligencije i takođe pretražuju lokalno („blizu mene“). Bez AEO propuštate AI citate; bez GEO-a vam nedostaju lokalni potencijalni klijenti — čak i kada je klasični SEO solidan."
+          "answer": "Više ljudi koji traže odgovore dobijaju odgovore putem veštačke inteligencije i takođe pretražuju lokalno („blizu mene“). Bez AEO propuštate AI citate; bez GEO-a ti nedostaju lokalni potencijalni klijenti — čak i kada je klasični SEO solidan."
         },
         {
           "id": "seo-3",
           "question": "Kako započeti SEO angažman?",
-          "answer": "Započinjemo sa tehničkom revizijom, istraživanjem ključnih riječi i namjera, analizom jaza u sadržaju i mapom prioriteta koja je povezana s KPI-jem vašeg poslovanja."
+          "answer": "Započinjemo sa tehničkom revizijom, istraživanjem ključnih riječi i namjera, analizom jaza u sadržaju i mapom prioriteta koja je povezana s KPI-jem tvojeg poslovanja."
         },
         {
           "id": "seo-4",
@@ -174,7 +174,7 @@
         {
           "id": "seo-5",
           "question": "Da li se bavite i lokalnim SEO-om?",
-          "answer": "Da. Radimo na Google poslovnom profilu, lokalnim odredišnim stranicama, konzistentnosti NAP-a, recenzijama i klasterima lokalnog sadržaja kako bismo vas bolje pronašli u svojoj regiji."
+          "answer": "Da. Radimo na Google poslovnom profilu, lokalnim odredišnim stranicama, konzistentnosti NAP-a, recenzijama i klasterima lokalnog sadržaja kako bismo te bolje pronašli u svojoj regiji."
         },
         {
           "id": "seo-6",
@@ -189,7 +189,7 @@
         {
           "id": "seo-8",
           "question": "Šta je E-E-A-T i zašto je to važno?",
-          "answer": "E-E-A-T je skraćenica za Iskustvo, Ekspertizu, Autoritativnost i Povjerenje. Snažan E-E-A-T pomaže rangiranju i kredibilitetu vašeg brenda u AI sažetcima."
+          "answer": "E-E-A-T je skraćenica za Iskustvo, Ekspertizu, Autoritativnost i Povjerenje. Snažan E-E-A-T pomaže rangiranju i kredibilitetu tvojeg brenda u AI sažetcima."
         },
         {
           "id": "seo-9",
@@ -483,7 +483,7 @@
         {
           "id": "soc-9",
           "question": "Možete li podržati kriznu komunikaciju?",
-          "answer": "Da. Koristimo protokole brzog odgovora i usklađujemo se s vašim timom kako bi odgovori ostali dosljedni i pod kontrolom."
+          "answer": "Da. Koristimo protokole brzog odgovora i usklađujemo se s tvojim timom kako bi odgovori ostali dosljedni i pod kontrolom."
         },
         {
           "id": "soc-10",
@@ -549,7 +549,7 @@
         {
           "id": "sup-8",
           "question": "Šta ako moja web stranica ne radi?",
-          "answer": "Prijavite to kao hitno. Vraćamo gdje je to moguće putem rezervnih kopija, provjera servera i hitne ispravke, a usput vas obavještavamo o statusu."
+          "answer": "Prijavi to kao hitno. Vraćamo gdje je to moguće putem rezervnih kopija, provjera servera i hitne ispravke, a usput te obavještavamo o statusu."
         },
         {
           "id": "sup-9",
@@ -569,7 +569,7 @@
         {
           "id": "sup-12",
           "question": "Pomažete li i sa netehničkim pitanjima?",
-          "answer": "Da, o uslugama, naplati i računu. Koliko duboko idemo tehnički zavisi od vašeg paketa."
+          "answer": "Da, o uslugama, naplati i računu. Koliko duboko idemo tehnički zavisi od tvojeg paketa."
         },
         {
           "id": "sup-13",
@@ -620,7 +620,7 @@
         {
           "id": "web-8",
           "question": "Možete li ponuditi CMS opcije bez WordPress-a?",
-          "answer": "Da. To može biti CMS bez glave, prilagođeni administrator ili statična postavka — ovisno o vašem timu i potrebama."
+          "answer": "Da. To može biti CMS bez glave, prilagođeni administrator ili statična postavka — ovisno o tvojem timu i potrebama."
         },
         {
           "id": "web-9",

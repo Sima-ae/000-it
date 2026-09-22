@@ -11,7 +11,7 @@ export const productI18n: Record<string, { nl: ProductI18n; en: ProductI18n }> =
   "basic-support": {
     nl: {
       name: "Basic Support",
-      shortDescription: `Wat kunt u verwachten?
+      shortDescription: `Wat kun je verwachten?
 – 1 website
 – 24/7 monitoring & support
 – Dagelijkse backups
@@ -20,9 +20,9 @@ export const productI18n: Record<string, { nl: ProductI18n; en: ProductI18n }> =
 – Malware verwijderen & beveiliging`,
       description: `Basic Support is er voor ondernemers met één WordPress-website die een betrouwbare technische basis willen zonder zelf elk probleem te hoeven oplossen.
 
-Wij monitoren uw site dag en nacht, maken dagelijkse back-ups en houden WordPress en plugins actueel. Ook lossen we fouten op, verwijderen we malware en passen we praktische beveiligingsmaatregelen toe om uw website beschikbaar en beschermd te houden.
+Wij monitoren jouw site dag en nacht, maken dagelijkse back-ups en houden WordPress en plugins actueel. Ook lossen we fouten op, verwijderen we malware en passen we praktische beveiligingsmaatregelen toe om jouw website beschikbaar en beschermd te houden.
 
-TripleZero iT pakt incidenten zorgvuldig aan, controleert de werking na herstel en helpt risico’s voor te blijven. Zo kunt u zich richten op uw onderneming terwijl wij de technische continuïteit bewaken.`,
+TripleZero iT pakt incidenten zorgvuldig aan, controleert de werking na herstel en helpt risico’s voor te blijven. Zo kun je je richten op jouw onderneming terwijl wij de technische continuïteit bewaken.`,
     },
     en: {
       name: "Basic Support",
@@ -44,7 +44,7 @@ TripleZero iT handles incidents carefully, verifies the site after recovery and 
   "standard-support": {
     nl: {
       name: "Standard Support",
-      shortDescription: `Wat kunt u verwachten?
+      shortDescription: `Wat kun je verwachten?
 – 2 websites
 – 24/7 monitoring & support
 – Dagelijkse backups
@@ -54,9 +54,9 @@ TripleZero iT handles incidents carefully, verifies the site after recovery and 
 – Snelheid optimaliseren`,
       description: `Standard Support is geschikt voor organisaties met maximaal twee WordPress-websites die naast dagelijks onderhoud ook aandacht voor snelheid en continuïteit nodig hebben.
 
-U krijgt 24/7 monitoring, dagelijkse back-ups, updates, foutoplossing, malwareverwijdering en beveiliging. Wij optimaliseren daarnaast caching, afbeeldingen en code waar dat de prestaties van uw websites verbetert.
+Je krijgt 24/7 monitoring, dagelijkse back-ups, updates, foutoplossing, malwareverwijdering en beveiliging. Wij optimaliseren daarnaast caching, afbeeldingen en code waar dat de prestaties van jouw websites verbetert.
 
-TripleZero iT werkt proactief: we signaleren aandachtspunten, pakken technische problemen gericht aan en houden uw websites stabiel voor bezoekers en beheerders.`,
+TripleZero iT werkt proactief: we signaleren aandachtspunten, pakken technische problemen gericht aan en houden jouw websites stabiel voor bezoekers en beheerders.`,
     },
     en: {
       name: "Standard Support",
@@ -79,7 +79,7 @@ TripleZero iT works proactively: we flag issues, resolve technical problems with
   "premium-support": {
     nl: {
       name: "Premium Support",
-      shortDescription: `Wat kunt u verwachten?
+      shortDescription: `Wat kun je verwachten?
 – 3-5 websites
 – 24/7 monitoring & support
 – Dagelijkse backups
@@ -90,9 +90,9 @@ TripleZero iT works proactively: we flag issues, resolve technical problems with
 – SEO optimalisatie`,
       description: `Premium Support is voor groeiende organisaties met drie tot vijf WordPress-websites die één partner zoeken voor onderhoud, beveiliging, prestaties en online zichtbaarheid.
 
-Naast 24/7 monitoring, back-ups, updates, foutoplossing en malwareverwijdering verbeteren we laadtijden en verzorgen we praktische SEO-optimalisaties. Daarmee krijgen uw websites een sterke, consistente basis voor bezoekers én zoekmachines.
+Naast 24/7 monitoring, back-ups, updates, foutoplossing en malwareverwijdering verbeteren we laadtijden en verzorgen we praktische SEO-optimalisaties. Daarmee krijgen jouw websites een sterke, consistente basis voor bezoekers én zoekmachines.
 
-TripleZero iT bewaakt uw omgeving proactief en vertaalt technische werkzaamheden naar heldere verbeteringen, zodat u grip houdt terwijl wij het dagelijkse beheer verzorgen.`,
+TripleZero iT bewaakt jouw omgeving proactief en vertaalt technische werkzaamheden naar heldere verbeteringen, zodat je grip houdt terwijl wij het dagelijkse beheer verzorgen.`,
     },
     en: {
       name: "Premium Support",
@@ -116,17 +116,17 @@ TripleZero iT monitors your environment proactively and turns technical work int
   "seo-optimization": {
     nl: {
       name: "SEO-optimalisatie",
-      shortDescription: `Wat kunt u verwachten?
+      shortDescription: `Wat kun je verwachten?
 – Volledige automatische + handmatige backup
 – SEO-prestatie-audit
 – On-page, technische, off-page, lokale en e-commerce SEO
 – Analytics en rapportage
 – Gratis support gedurende 7 dagen`,
-      description: `Versterk uw online zichtbaarheid met professionele SEO-optimalisatie van TripleZero iT. Goede SEO verhoogt organisch verkeer, zoekposities en de kwaliteit van bezoekers die uw website bereiken.
+      description: `Versterk jouw online zichtbaarheid met professionele SEO-optimalisatie van TripleZero iT. Goede SEO verhoogt organisch verkeer, zoekposities en de kwaliteit van bezoekers die jouw website bereiken.
 
 Wij combineren een duidelijke prestatie-audit met gerichte acties: on-page optimalisatie, technische SEO, off-page signalen, lokale vindbaarheid en — indien relevant — e-commerce SEO voor product- en categorietrajecten.
 
-U ontvangt inzichtelijke rapportage over voortgang en prioriteiten, zodat u weet wat er is gedaan en wat de volgende stap is. Na oplevering krijgt u 7 dagen gratis support voor vragen over de uitgevoerde werkzaamheden.`,
+Je ontvangt inzichtelijke rapportage over voortgang en prioriteiten, zodat je weet wat er is gedaan en wat de volgende stap is. Na oplevering krijg je 7 dagen gratis support voor vragen over de uitgevoerde werkzaamheden.`,
     },
     en: {
       name: "SEO Optimization",
@@ -156,9 +156,9 @@ You receive clear reporting on progress and priorities, so you always know what 
 – AutoBackup`,
       description: `Shared Hosting Basic is ideaal voor starters, zelfstandigen en kleine teams die een professionele thuisbasis voor maximaal drie websites zoeken.
 
-U beschikt over 20 GB SSD-opslag, 30 mailboxen, een websitebouwer, AI-tools en automatische back-ups. Zo heeft u de essentiële ruimte en hulpmiddelen om uw online aanwezigheid betrouwbaar op te bouwen.
+Je beschikt over 20 GB SSD-opslag, 30 mailboxen, een websitebouwer, AI-tools en automatische back-ups. Zo heb je de essentiële ruimte en hulpmiddelen om jouw online aanwezigheid betrouwbaar op te bouwen.
 
-TripleZero iT zorgt voor een stabiele hostingomgeving en 24/7 support wanneer u hulp nodig heeft. U houdt het eenvoudig, terwijl uw websites en e-mail professioneel blijven draaien.`,
+TripleZero iT zorgt voor een stabiele hostingomgeving en 24/7 support wanneer je hulp nodig hebt. Je houdt het eenvoudig, terwijl jouw websites en e-mail professioneel blijven draaien.`,
     },
     en: {
       name: "Shared Hosting Basic",
@@ -189,9 +189,9 @@ TripleZero iT provides a stable hosting environment and 24/7 support whenever yo
 – AutoBackup`,
       description: `Shared Hosting Plus is gemaakt voor ondernemers en groeiende teams die meerdere websites en mailboxen zonder krappe limieten willen beheren.
 
-Met onbeperkte websites, SSD-opslag en mailboxen, plus een websitebouwer, AI-tools en AutoBackup, krijgt u de flexibiliteit om nieuwe projecten en communicatie eenvoudig toe te voegen.
+Met onbeperkte websites, SSD-opslag en mailboxen, plus een websitebouwer, AI-tools en AutoBackup, krijg je de flexibiliteit om nieuwe projecten en communicatie eenvoudig toe te voegen.
 
-TripleZero iT levert een toegankelijke, betrouwbare hostingbasis met 24/7 support. Zo groeit uw digitale omgeving mee zonder dat u het dagelijkse beheer ingewikkeld maakt.`,
+TripleZero iT levert een toegankelijke, betrouwbare hostingbasis met 24/7 support. Zo groeit jouw digitale omgeving mee zonder dat je het dagelijkse beheer ingewikkeld maakt.`,
     },
     en: {
       name: "Shared Hosting Plus",
@@ -222,9 +222,9 @@ TripleZero iT delivers an accessible, dependable hosting foundation with 24/7 su
 – AutoBackup & Cloud Storage`,
       description: `Shared Hosting Business past bij organisaties die meerdere websites, e-mail en bestanden centraal en professioneel willen onderbrengen.
 
-U krijgt onbeperkte websites en mailboxen, 50 GB SSD-opslag, een websitebouwer, AI-tools en AutoBackup met cloudopslag. Dat combineert ruimte voor uw dagelijkse werk met extra zekerheid voor belangrijke data.
+Je krijgt onbeperkte websites en mailboxen, 50 GB SSD-opslag, een websitebouwer, AI-tools en AutoBackup met cloudopslag. Dat combineert ruimte voor jouw dagelijkse werk met extra zekerheid voor belangrijke data.
 
-TripleZero iT biedt een stabiele omgeving en 24/7 support als uw organisatie vragen heeft of hulp nodig heeft. Zo houdt u uw online infrastructuur overzichtelijk en klaar voor groei.`,
+TripleZero iT biedt een stabiele omgeving en 24/7 support als jouw organisatie vragen heeft of hulp nodig heeft. Zo houd je jouw online infrastructuur overzichtelijk en klaar voor groei.`,
     },
     en: {
       name: "Shared Hosting Business",
@@ -252,9 +252,9 @@ TripleZero iT provides a stable environment and 24/7 support whenever your organ
 – 1000 GB bandbreedte`,
       description: `VPS Hosting Basic is geschikt voor ontwikkelaars, kleine applicaties en websites die meer controle en voorspelbare resources nodig hebben dan shared hosting biedt.
 
-Met 2 CPU-cores, 2 GB RAM, 40 GB SSD RAID 10-opslag en 1000 GB bandbreedte krijgt u een solide virtuele server voor lichte tot gemiddelde workloads.
+Met 2 CPU-cores, 2 GB RAM, 40 GB SSD RAID 10-opslag en 1000 GB bandbreedte krijg je een solide virtuele server voor lichte tot gemiddelde workloads.
 
-TripleZero iT helpt u met een betrouwbare infrastructuurbasis, zodat u kunt focussen op uw applicatie, website of ontwikkelomgeving. U schaalt door wanneer uw vraag toeneemt.`,
+TripleZero iT helpt je met een betrouwbare infrastructuurbasis, zodat je kunt focussen op jouw applicatie, website of ontwikkelomgeving. Je schaalt door wanneer jouw vraag toeneemt.`,
     },
     en: {
       name: "VPS Hosting Basic",
@@ -281,7 +281,7 @@ TripleZero iT gives you a dependable infrastructure foundation, so you can focus
 
 De server combineert 4 CPU-cores en 6 GB RAM met 120 GB SSD RAID 10-opslag en 3000 GB bandbreedte. Daarmee is er ruimte voor zwaardere workloads, meerdere services of toenemend verkeer.
 
-TripleZero iT levert een betrouwbare VPS-basis waarop u uw omgeving naar eigen behoefte kunt inrichten. Zo krijgt u de flexibiliteit van een virtuele server met een professionele partner dichtbij.`,
+TripleZero iT levert een betrouwbare VPS-basis waarop je jouw omgeving naar eigen behoefte kunt inrichten. Zo krijg je de flexibiliteit van een virtuele server met een professionele partner dichtbij.`,
     },
     en: {
       name: "VPS Hosting Plus",
@@ -308,7 +308,7 @@ TripleZero iT delivers a dependable VPS foundation that you can configure around
 
 Met 8 CPU-cores, 12 GB RAM, 240 GB SSD RAID 10-opslag en 6000 GB bandbreedte biedt dit pakket een krachtige basis voor intensieve workloads, meerdere omgevingen en hogere bezoekersaantallen.
 
-TripleZero iT helpt u een betrouwbare infrastructuur neer te zetten die met uw ambities meebeweegt. U houdt de controle over uw VPS, met een deskundige partij bereikbaar voor ondersteuning.`,
+TripleZero iT helpt je een betrouwbare infrastructuur neer te zetten die met jouw ambities meebeweegt. Je houdt de controle over jouw VPS, met een deskundige partij bereikbaar voor ondersteuning.`,
     },
     en: {
       name: "VPS Hosting Business",
@@ -335,9 +335,9 @@ TripleZero iT helps you build dependable infrastructure that moves with your amb
 – Eenvoudige backups`,
       description: `WordPress Hosting Basic is een slimme keuze voor starters en kleine bedrijven die hun WordPress-website snel, veilig en professioneel online willen houden.
 
-U krijgt 10 GB SSD-opslag, capaciteit voor circa 50.000 bezoekers per maand, een gratis CDN en SSL-certificaat. Eenvoudige back-ups en 24/7 support helpen u om met vertrouwen te publiceren en uw site te beheren.
+Je krijgt 10 GB SSD-opslag, capaciteit voor circa 50.000 bezoekers per maand, een gratis CDN en SSL-certificaat. Eenvoudige back-ups en 24/7 support helpen je om met vertrouwen te publiceren en jouw site te beheren.
 
-TripleZero iT biedt de technische basis waarop uw WordPress-site stabiel kan presteren, zodat u tijd overhoudt voor uw content, klanten en onderneming.`,
+TripleZero iT biedt de technische basis waarop jouw WordPress-site stabiel kan presteren, zodat je tijd overhoudt voor jouw content, klanten en onderneming.`,
     },
     en: {
       name: "WordPress Hosting Basic",
@@ -369,9 +369,9 @@ TripleZero iT provides the technical foundation your WordPress site needs to per
 – Gratis Brizy Site Builder (NIEUW)`,
       description: `WordPress Hosting Plus is bedoeld voor groeiende bedrijven, campagnes en contentrijke websites die meer ruimte en rekenkracht nodig hebben.
 
-Met 50 GB SSD-opslag, capaciteit voor circa 200.000 bezoekers per maand en 1,5× meer CPU en RAM kan uw site comfortabel meegroeien. Gratis CDN, SSL, back-ups, 24/7 support en Brizy Site Builder maken bouwen en beheren eenvoudiger.
+Met 50 GB SSD-opslag, capaciteit voor circa 200.000 bezoekers per maand en 1,5× meer CPU en RAM kan jouw site comfortabel meegroeien. Gratis CDN, SSL, back-ups, 24/7 support en Brizy Site Builder maken bouwen en beheren eenvoudiger.
 
-TripleZero iT levert een krachtige WordPress-omgeving die prestaties en gebruiksgemak combineert. Zo blijft uw website snel en betrouwbaar terwijl uw bereik groeit.`,
+TripleZero iT levert een krachtige WordPress-omgeving die prestaties en gebruiksgemak combineert. Zo blijft jouw website snel en betrouwbaar terwijl jouw bereik groeit.`,
     },
     en: {
       name: "WordPress Hosting Plus",
@@ -407,9 +407,9 @@ TripleZero iT delivers a powerful WordPress environment that combines performanc
 – Gratis Brizy Site Builder (NIEUW)`,
       description: `WordPress Hosting Pro is voor ambitieuze organisaties, drukbezochte websites en zakelijke teams die maximale WordPress-capaciteit en continuïteit verwachten.
 
-U krijgt 100 GB SSD-opslag, capaciteit voor circa 500.000 bezoekers per maand en 2,0× meer CPU en RAM. De 99,9% uptime-garantie, gratis CDN en SSL, back-ups, 24/7 support en Brizy Site Builder ondersteunen een professionele online operatie.
+Je krijgt 100 GB SSD-opslag, capaciteit voor circa 500.000 bezoekers per maand en 2,0× meer CPU en RAM. De 99,9% uptime-garantie, gratis CDN en SSL, back-ups, 24/7 support en Brizy Site Builder ondersteunen een professionele online operatie.
 
-TripleZero iT biedt een robuuste hostingomgeving waarin snelheid, bereikbaarheid en schaalbaarheid centraal staan. Zo kan uw WordPress-site ook onder hogere belasting betrouwbaar blijven presteren.`,
+TripleZero iT biedt een robuuste hostingomgeving waarin snelheid, bereikbaarheid en schaalbaarheid centraal staan. Zo kan jouw WordPress-site ook onder hogere belasting betrouwbaar blijven presteren.`,
     },
     en: {
       name: "WordPress Hosting Pro",
@@ -434,16 +434,16 @@ TripleZero iT provides a robust hosting environment focused on speed, availabili
   "wordpress-backup-hosting-migration": {
     nl: {
       name: "Back-ups en migratie",
-      shortDescription: `Wat kunt u verwachten?
+      shortDescription: `Wat kun je verwachten?
 – Volledige automatische + handmatige backup
 – Migratie naar nieuwe webhosting
 – Setup van de nieuwe hostingomgeving
 – Gratis support gedurende 7 dagen`,
-      description: `Bescherm uw WordPress-website en verhuis zorgeloos met de backup- en migratieservice van TripleZero iT. Of u nu van host wisselt, een plan upgrade of gewoon een betrouwbare backup wilt: wij zorgen voor een veilige overstap zonder onnodige downtime.
+      description: `Bescherm jouw WordPress-website en verhuis zorgeloos met de backup- en migratieservice van TripleZero iT. Of je nu van host wisselt, een plan upgrade of gewoon een betrouwbare backup wilt: wij zorgen voor een veilige overstap zonder onnodige downtime.
 
-Wij maken een volledige backup van bestanden, database, thema’s, plugins en media. Daarna migreren wij uw site naar de nieuwe omgeving, controleren we compatibiliteit en zetten we essentiële hostinginstellingen correct klaar.
+Wij maken een volledige backup van bestanden, database, thema’s, plugins en media. Daarna migreren wij jouw site naar de nieuwe omgeving, controleren we compatibiliteit en zetten we essentiële hostinginstellingen correct klaar.
 
-Na oplevering krijgt u 7 dagen gratis support voor vragen over backup, herstel of de migratie. Zo blijft uw site integer, bereikbaar en klaar voor verder groeien.`,
+Na oplevering krijg je 7 dagen gratis support voor vragen over backup, herstel of de migratie. Zo blijft jouw site integer, bereikbaar en klaar voor verder groeien.`,
     },
     en: {
       name: "Backups and Migration",
@@ -465,12 +465,12 @@ After delivery you receive 7 days of free support for questions about backup, re
       name: "Bugs en fouten herstellen",
       shortDescription: `WordPress-bugs of -fouten herstellen, met focus op prestaties, beveiliging, updates en stabiliteit.
 
-Wij helpen bij veelvoorkomende problemen en best practices zodat uw WordPress-website weer optimaal werkt voor u, ontwikkelaars en bezoekers.`,
-      description: `WordPress is krachtig, maar foutmeldingen, pluginconflicten of thema-problemen kunnen uw site snel verstoren. TripleZero iT herstelt WordPress-fouten snel en gericht, zodat downtime beperkt blijft en functionaliteit terugkeert.
+Wij helpen bij veelvoorkomende problemen en best practices zodat jouw WordPress-website weer optimaal werkt voor je, ontwikkelaars en bezoekers.`,
+      description: `WordPress is krachtig, maar foutmeldingen, pluginconflicten of thema-problemen kunnen jouw site snel verstoren. TripleZero iT herstelt WordPress-fouten snel en gericht, zodat downtime beperkt blijft en functionaliteit terugkeert.
 
 Wij diagnosticeren de oorzaak — van white screens en HTTP-fouten tot databaseproblemen — en lossen het structureel op. Daarna controleren wij kritieke flows zoals login, formulieren en (indien van toepassing) checkout.
 
-U krijgt een duidelijke aanpak en praktische aanbevelingen om herhaling te voorkomen. Zo blijft uw online aanwezigheid stabiel en professioneel.`,
+Je krijgt een duidelijke aanpak en praktische aanbevelingen om herhaling te voorkomen. Zo blijft jouw online aanwezigheid stabiel en professioneel.`,
     },
     en: {
       name: "Fix Bugs and Errors",
@@ -488,18 +488,18 @@ You receive practical recommendations to reduce recurrence, so your online prese
   "wordpress-malware-removal": {
     nl: {
       name: "Malware verwijderen",
-      shortDescription: `Wat kunt u verwachten?
+      shortDescription: `Wat kun je verwachten?
 – Een schone, werkende WordPress-site
 – Verwijderen van gedetecteerde malware en redirects
 – Oorzaak opsporen en herstellen
 – Backup vóór en na de opschoning
 
-Na een succesvolle opschoning ontvangt u ook instructies om malware in de toekomst te voorkomen.`,
-      description: `Bescherm uw WordPress-website tegen kwaadaardige dreigingen met malwareverwijdering van TripleZero iT. Malware schaadt beveiliging, reputatie en uptime — wij focussen op snelle detectie, grondige opschoning en herstel.
+Na een succesvolle opschoning ontvangt je ook instructies om malware in de toekomst te voorkomen.`,
+      description: `Bescherm jouw WordPress-website tegen kwaadaardige dreigingen met malwareverwijdering van TripleZero iT. Malware schaadt beveiliging, reputatie en uptime — wij focussen op snelle detectie, grondige opschoning en herstel.
 
 Wij scannen bestanden, database en kwetsbare onderdelen, verwijderen malware en ongewenste redirects, en herstellen waar nodig gecompromitteerde onderdelen. Voor en na de schoonmaak maken wij een backup.
 
-Na afronding ontvangt u preventietips zodat uw site beter bestand is tegen herinfectie. Zo kunt u weer veilig verder met uw bedrijf.`,
+Na afronding ontvangt je preventietips zodat jouw site beter bestand is tegen herinfectie. Zo kun je weer veilig verder met jouw bedrijf.`,
     },
     en: {
       name: "Malware Removal",
@@ -521,16 +521,16 @@ You also receive prevention guidance to reduce the chance of reinfection, so you
   "wordpress-plugin-theme-installation": {
     nl: {
       name: "WordPress plugin- / theme-installatie",
-      shortDescription: `Wat kunt u verwachten?
+      shortDescription: `Wat kun je verwachten?
 – Volledige automatische + handmatige backup
 – Compatibiliteitscontroles
 – Installatie van de gewenste plugin of het gewenste thema
 – Gratis support gedurende 7 dagen`,
-      description: `Laat TripleZero iT uw WordPress-plugins en -thema’s professioneel installeren. De juiste uitbreidingen verbeteren functionaliteit en uitstraling — maar een verkeerde installatie kan conflicten of downtime veroorzaken.
+      description: `Laat TripleZero iT jouw WordPress-plugins en -thema’s professioneel installeren. De juiste uitbreidingen verbeteren functionaliteit en uitstraling — maar een verkeerde installatie kan conflicten of downtime veroorzaken.
 
 Wij maken eerst een backup, controleren compatibiliteit en installeren daarna de gewenste plugin of het gewenste thema. Basisconfiguratie en een snelle werkingstest horen erbij, zodat alles stabiel meedraait.
 
-Na oplevering krijgt u 7 dagen gratis support voor vragen over de installatie. Zo blijft uw site veilig, overzichtelijk en klaar voor gebruik.`,
+Na oplevering krijg je 7 dagen gratis support voor vragen over de installatie. Zo blijft jouw site veilig, overzichtelijk en klaar voor gebruik.`,
     },
     en: {
       name: "WordPress Plugin / Theme Installation",
@@ -550,7 +550,7 @@ After delivery you get 7 days of free support for questions about the installati
   "wordpress-security": {
     nl: {
       name: "Firewall, beveiliging & SSL",
-      shortDescription: `Wat kunt u verwachten?
+      shortDescription: `Wat kun je verwachten?
 – Volledige automatische + handmatige backup
 – Installatie van Wordfence Basic of Premium
 – Geavanceerde beveiligingsaudit
@@ -560,11 +560,11 @@ After delivery you get 7 days of free support for questions about the installati
 – SSL-certificaatinstallatie
 – Gebruikersrechtenbeheer
 – Gratis support gedurende 7 dagen`,
-      description: `Bescherm uw WordPress-website met de beveiligingsservice van TripleZero iT. Wij versterken uw site tegen hacks, malware en misbruik met een praktische, goed gecontroleerde aanpak.
+      description: `Bescherm jouw WordPress-website met de beveiligingsservice van TripleZero iT. Wij versterken jouw site tegen hacks, malware en misbruik met een praktische, goed gecontroleerde aanpak.
 
 Na een backup voeren wij een beveiligingsaudit uit, installeren we Wordfence (Basic of Premium), zetten we firewall- en brute-forcebescherming klaar en verzorgen we SSL waar nodig. Ook gebruikersrechten en updates krijgen aandacht, zodat kwetsbaarheden minder kans krijgen.
 
-U ontvangt 7 dagen gratis support na oplevering. Zo blijft uw data, reputatie en bedrijfscontinuïteit beter beschermd.`,
+Je ontvangt 7 dagen gratis support na oplevering. Zo blijft jouw data, reputatie en bedrijfscontinuïteit beter beschermd.`,
     },
     en: {
       name: "Firewall, Security & SSL",
@@ -589,7 +589,7 @@ You receive 7 days of free support after delivery — keeping your data, reputat
   "wordpress-speed-optimization": {
     nl: {
       name: "WordPress snelheidsoptimalisatie",
-      shortDescription: `Wat kunt u verwachten?
+      shortDescription: `Wat kun je verwachten?
 – Volledige automatische + handmatige backup
 – Websiteprestatie-audit
 – Optimalisatie van code, database, afbeeldingen, plugins, thema en hosting
@@ -599,7 +599,7 @@ You receive 7 days of free support after delivery — keeping your data, reputat
 
 Wij starten met een prestatie-audit en verbeteren daarna knelpunten in code, database, afbeeldingen, plugins, thema en hostingconfiguratie. Caching en gerichte optimalisaties brengen meetbare winst in laadtijd.
 
-Na oplevering krijgt u 7 dagen gratis support voor vragen over de uitgevoerde optimalisatie. Zo blijft uw site sneller, soepeler en professioneler.`,
+Na oplevering krijg je 7 dagen gratis support voor vragen over de uitgevoerde optimalisatie. Zo blijft jouw site sneller, soepeler en professioneler.`,
     },
     en: {
       name: "WordPress Speed Optimization",

@@ -9,28 +9,26 @@ import { cn } from "@/lib/utils";
 
 const CLOSE_DELAY_MS = 220;
 
-const legalLinks = [
-  { href: "/voorwaarden", labelKey: "terms" },
-  { href: "/cookies", labelKey: "cookies" },
-  { href: "/privacy", labelKey: "privacy" },
-] as const;
-
 export function InfoDropdown({
   locale,
   label,
+  contactLabel,
   aboutLabel,
   faqLabel,
   termsLabel,
   cookiesLabel,
+  newsLabel,
   privacyLabel,
   active,
 }: {
   locale: string;
   label: string;
+  contactLabel: string;
   aboutLabel: string;
   faqLabel: string;
   termsLabel: string;
   cookiesLabel: string;
+  newsLabel: string;
   privacyLabel: string;
   active: boolean;
 }) {
@@ -56,16 +54,15 @@ export function InfoDropdown({
 
   useEffect(() => () => clearCloseTimer(), []);
 
+  const contactHref = localizedHref(locale, "/contact");
+  const contactActive =
+    pathname === contactHref || pathname.startsWith(`${contactHref}/`);
   const aboutHref = localizedHref(locale, "/over-ons");
   const aboutActive = pathname === aboutHref || pathname.startsWith(`${aboutHref}/`);
+  const newsHref = localizedHref(locale, "/nieuws");
+  const newsActive = pathname === newsHref || pathname.startsWith(`${newsHref}/`);
   const faqHref = localizedHref(locale, "/faq");
   const faqActive = pathname === faqHref || pathname.startsWith(`${faqHref}/`);
-
-  const legalLabels = {
-    terms: termsLabel,
-    cookies: cookiesLabel,
-    privacy: privacyLabel,
-  } as const;
 
   const itemClass =
     "block rounded-xl px-3 py-2 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground";
@@ -101,24 +98,53 @@ export function InfoDropdown({
         >
           <div className="min-w-56 rounded-2xl border border-border/60 bg-white p-1.5 shadow-xl dark:bg-zinc-950">
             <SoftLink
+              href={contactHref}
+              className={cn(itemClass, contactActive && "bg-primary text-primary-foreground")}
+              onClick={() => setOpen(false)}
+            >
+              {contactLabel}
+            </SoftLink>
+            <SoftLink
               href={aboutHref}
               className={cn(itemClass, aboutActive && "bg-primary text-primary-foreground")}
               onClick={() => setOpen(false)}
             >
               {aboutLabel}
             </SoftLink>
-            {legalLinks.map((item) => (
-              <SoftLink
-                key={item.href}
-                href={localizedHref(locale, item.href)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={itemClass}
-                onClick={() => setOpen(false)}
-              >
-                {legalLabels[item.labelKey]}
-              </SoftLink>
-            ))}
+            <SoftLink
+              href={localizedHref(locale, "/voorwaarden")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={itemClass}
+              onClick={() => setOpen(false)}
+            >
+              {termsLabel}
+            </SoftLink>
+            <SoftLink
+              href={localizedHref(locale, "/cookies")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={itemClass}
+              onClick={() => setOpen(false)}
+            >
+              {cookiesLabel}
+            </SoftLink>
+            <SoftLink
+              href={newsHref}
+              className={cn(itemClass, newsActive && "bg-primary text-primary-foreground")}
+              onClick={() => setOpen(false)}
+            >
+              {newsLabel}
+            </SoftLink>
+            <SoftLink
+              href={localizedHref(locale, "/privacy")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={itemClass}
+              onClick={() => setOpen(false)}
+            >
+              {privacyLabel}
+            </SoftLink>
             <SoftLink
               href={faqHref}
               className={cn(itemClass, faqActive && "bg-primary text-primary-foreground")}

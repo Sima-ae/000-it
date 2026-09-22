@@ -58,19 +58,19 @@ function greeting(locale: string) {
 
 function lowConfidenceCopy(locale: string) {
   return isNl(locale)
-    ? "Ik kan dit nog niet zeker beantwoorden vanuit onze FAQ of kennisbank. U kunt hieronder gerelateerde onderwerpen bekijken, een ticket openen, een afspraak boeken, of contact opnemen — ons team helpt u verder."
+    ? "Ik kan dit nog niet zeker beantwoorden vanuit onze FAQ of kennisbank. Je kunt hieronder gerelateerde onderwerpen bekijken, een ticket openen, een afspraak boeken, of contact opnemen — ons team helpt je verder."
     : "I'm not fully sure from our FAQ or knowledge base yet. You can browse related topics below, open a ticket, book an appointment, or contact us — our team will help.";
 }
 
 function escalateHint(locale: string) {
   return isNl(locale)
-    ? "\n\nWil u liever een mens? Open een ticket of boek een afspraak."
+    ? "\n\nWil je liever een mens? Open een ticket of boek een afspraak."
     : "\n\nPrefer a human? Open a ticket or book an appointment.";
 }
 
 function clarifyCopy(locale: string) {
   return isNl(locale)
-    ? "Ik vond meerdere relevante onderwerpen. Welke past het best bij wat u zoekt? Kies een optie hieronder — dan geef ik een gericht antwoord."
+    ? "Ik vond meerdere relevante onderwerpen. Welke past het best bij wat je zoekt? Kies een optie hieronder — dan geef ik een gericht antwoord."
     : "I found several relevant topics. Which one matches what you're looking for? Pick an option below and I'll give a focused answer.";
 }
 

@@ -1,9 +1,9 @@
 {
   "title": "Häufig gestellte Fragen",
   "subtitle": "Ausführliche Fragen und Antworten – von KI, AEO, GEO und SEO bis hin zu Design, Domains, Hosting, Marketing, Social Media, Support und mehr.",
-  "ctaTitle": "Brauchen Sie noch Hilfe?",
-  "ctaText": "Sie können Ihre Frage nicht finden? Kontaktieren Sie uns – wir werden uns so schnell wie möglich bei Ihnen melden.",
-  "ctaButton": "Kontaktieren Sie uns",
+  "ctaTitle": "Brauchst du noch Hilfe?",
+  "ctaText": "Du kannst deine Frage nicht finden? Kontaktiere uns – wir werden uns so schnell wie möglich bei dir melden.",
+  "ctaButton": "Kontaktiere uns",
   "categories": [
     {
       "id": "general",
@@ -17,7 +17,7 @@
         {
           "id": "gen-2",
           "question": "Wie starte ich mit TripleZero iT?",
-          "answer": "Kontaktieren Sie uns oder vereinbaren Sie einen Termin. Wir führen eine kurze Aufnahme durch, überprüfen die Ziele und den Stack und bereiten dann einen konkreten Vorschlag mit Planung und KPIs vor."
+          "answer": "Kontaktiere uns oder vereinbare einen Termin. Wir führen eine kurze Aufnahme durch, überprüfen die Ziele und den Stack und bereiten dann einen konkreten Vorschlag mit Planung und KPIs vor."
         },
         {
           "id": "gen-3",
@@ -32,12 +32,12 @@
         {
           "id": "gen-5",
           "question": "Wie sieht ein typisches Engagement aus?",
-          "answer": "Ein typisches Engagement läuft wie folgt ab: Aufnahme → Audit oder Scan → Plan → Sprint-Ausführung → Messung → Optimierung. Sie erhalten klare Meilensteine ​​und Berichte, sodass immer klar ist, wo wir stehen."
+          "answer": "Ein typisches Engagement läuft wie folgt ab: Aufnahme → Audit oder Scan → Plan → Sprint-Ausführung → Messung → Optimierung. Du erhalten klare Meilensteine ​​und Berichte, sodass immer klar ist, wo wir stehen."
         },
         {
           "id": "gen-6",
           "question": "Kann ich mehrere Leistungen kombinieren?",
-          "answer": "Ja. Viele Kunden kombinieren Webdesign + SEO + Anzeigen oder WordPress-Wartung + Hosting + Sicherheit. Wir passen den Mix an Ihre Ziele und Ihr Budget an."
+          "answer": "Ja. Viele Kunden kombinieren Webdesign + SEO + Anzeigen oder WordPress-Wartung + Hosting + Sicherheit. Wir passen den Mix an deine Ziele und dein Budget an."
         },
         {
           "id": "gen-7",
@@ -52,22 +52,22 @@
         {
           "id": "gen-9",
           "question": "Wie kommuniziert das Team den Fortschritt?",
-          "answer": "Wir halten Sie durch regelmäßige Updates, Tickets oder ein Dashboard, sofern relevant, sowie Sprint- oder Monatsberichte mit Aktionen und Ergebnissen auf dem Laufenden."
+          "answer": "Wir halten dich durch regelmäßige Updates, Tickets oder ein Dashboard, sofern relevant, sowie Sprint- oder Monatsberichte mit Aktionen und Ergebnissen auf dem Laufenden."
         },
         {
           "id": "gen-10",
           "question": "Was benötigen Sie von uns für den Start?",
-          "answer": "Zunächst benötigen wir Zugriff auf die Website und das Hosting (falls erforderlich), Ihre Ziele, Markenrichtlinien, Analysekonten und eventuell vorhandene Tools. Wenn etwas fehlt, helfen wir zunächst, es in Ordnung zu bringen."
+          "answer": "Zunächst brauchen wir Zugriff auf die Website und das Hosting (falls erforderlich), deine Ziele, Markenrichtlinien, Analysekonten und eventuell vorhandene Tools. Wenn etwas fehlt, helfen wir zunächst, es in Ordnung zu bringen."
         },
         {
           "id": "gen-11",
           "question": "Sind Ihre Dienstleistungen start-up-tauglich?",
-          "answer": "Ja. Wir skalieren von schlanken Landingpages und KI-Scans bis hin zu vollständigen Wachstums-Setups, sodass der Ansatz mit Ihnen wächst."
+          "answer": "Ja. Wir skalieren von schlanken Landingpages und KI-Scans bis hin zu vollständigen Wachstums-Setups, sodass der Ansatz mit dir wächst."
         },
         {
           "id": "gen-12",
           "question": "Wem gehören die Arbeit und die Konten?",
-          "answer": "Ihre Domain, Inhalte, Code-Repositories und Werbekonten bleiben Ihr Eigentum. Bei der Übergabe übergeben wir die Akten und Dokumentationen, sodass alles unter Ihrer Kontrolle bleibt."
+          "answer": "Deine Domain, Inhalte, Code-Repositories und Werbekonten bleiben dein Eigentum. Bei der Übergabe übergeben wir die Akten und Dokumentationen, sodass alles unter deiner Kontrolle bleibt."
         },
         {
           "id": "gen-13",
@@ -83,17 +83,17 @@
         {
           "id": "ai-1",
           "question": "Was ist ein KI-Scan bei TripleZero iT?",
-          "answer": "Ein AI-Readiness-Scan beurteilt, wie gut Ihre Seite von klassischen Suchmaschinen, KI-Antworten und lokalen oder geografischen Suchergebnissen gefunden wird (AEO, GEO, SEO und die technischen Grundlagen)."
+          "answer": "Ein AI-Readiness-Scan beurteilt, wie gut deine Seite von klassischen Suchmaschinen, KI-Antworten und lokalen oder geografischen Suchergebnissen gefunden wird (AEO, GEO, SEO und die technischen Grundlagen)."
         },
         {
           "id": "ai-2",
           "question": "Was misst der KI-Scan genau?",
-          "answer": "Der Scan misst AEO-Signale, GEO/lokale Sichtbarkeit, SEO-Grundlagen, Inhaltsstruktur, Leistungsindikatoren und KI-Bereitschaft. Sie erhalten Punkte und konkrete Verbesserungspunkte."
+          "answer": "Der Scan misst AEO-Signale, GEO/lokale Sichtbarkeit, SEO-Grundlagen, Inhaltsstruktur, Leistungsindikatoren und KI-Bereitschaft. Du erhalten Punkte und konkrete Verbesserungspunkte."
         },
         {
           "id": "ai-3",
           "question": "Wie oft sollte ich einen AI-Scan durchführen?",
-          "answer": "Zumindest nach größeren Website-Änderungen oder Kampagnen. Für aktive Marken empfehlen wir regelmäßige Scans, beispielsweise vierteljährlich, damit Sie in Such- und KI-Ergebnissen sichtbar bleiben."
+          "answer": "Zumindest nach größeren Website-Änderungen oder Kampagnen. Für aktive Marken empfehlen wir regelmäßige Scans, beispielsweise vierteljährlich, damit du in Such- und KI-Ergebnissen sichtbar bleiben."
         },
         {
           "id": "ai-4",
@@ -118,12 +118,12 @@
         {
           "id": "ai-8",
           "question": "Was bedeutet KI-Bereitschaft für meine Marke?",
-          "answer": "Es geht um den Grad, in dem Ihre Website, Inhalte und Daten so eingerichtet sind, dass KI-Systeme Ihre Marke korrekt zitieren, empfehlen und erklären können."
+          "answer": "Es geht um den Grad, in dem deine Website, Inhalte und Daten so eingerichtet sind, dass KI-Systeme deine Marke korrekt zitieren, empfehlen und erklären können."
         },
         {
           "id": "ai-9",
           "question": "Können Sie KI-Agenten im Dashboard verwenden?",
-          "answer": "Ja. Im Kundenportal sehen Sie KI-Agenten für SEO, Inhalte, soziale Netzwerke und Anzeigen – einschließlich Status und Aufgaben."
+          "answer": "Ja. Im Kundenportal siehst du KI-Agenten für SEO, Inhalte, soziale Netzwerke und Anzeigen – einschließlich Status und Aufgaben."
         },
         {
           "id": "ai-10",
@@ -138,7 +138,7 @@
         {
           "id": "ai-12",
           "question": "Was kostet ein KI-Engagement?",
-          "answer": "Es reicht von einem kostenlosen oder Einstiegs-KI-Scan bis hin zu monatlichen KI- und Marketing-Vergütungen. Nach der Aufnahme erhalten Sie ein klares Angebot."
+          "answer": "Es reicht von einem kostenlosen oder Einstiegs-KI-Scan bis hin zu monatlichen KI- und Marketing-Vergütungen. Nach der Aufnahme erhalten du ein klares Angebot."
         },
         {
           "id": "ai-13",
@@ -159,12 +159,12 @@
         {
           "id": "seo-2",
           "question": "Warum ist AEO/GEO jetzt wichtig?",
-          "answer": "Mehr Suchende erhalten Antworten über KI und suchen auch lokal („in meiner Nähe“). Ohne AEO entgehen Ihnen AI-Zitate; Ohne GEO verpassen Sie lokale Leads – selbst wenn klassisches SEO solide ist."
+          "answer": "Mehr Suchende erhalten Antworten über KI und suchen auch lokal („in meiner Nähe“). Ohne AEO entgehen dir AI-Zitate; Ohne GEO verpassen du lokale Leads – selbst wenn klassisches SEO solide ist."
         },
         {
           "id": "seo-3",
           "question": "Wie startet man ein SEO-Engagement?",
-          "answer": "Wir beginnen mit einem technischen Audit, einer Stichwort- und Absichtsrecherche, einer Inhaltslückenanalyse und einer Prioritäts-Roadmap, die mit Ihren Geschäfts-KPIs verknüpft ist."
+          "answer": "Wir beginnen mit einem technischen Audit, einer Stichwort- und Absichtsrecherche, einer Inhaltslückenanalyse und einer Prioritäts-Roadmap, die mit deinen Geschäfts-KPIs verknüpft ist."
         },
         {
           "id": "seo-4",
@@ -174,7 +174,7 @@
         {
           "id": "seo-5",
           "question": "Machen Sie auch lokales SEO?",
-          "answer": "Ja. Wir arbeiten an Google Business Profile, lokalen Landingpages, NAP-Konsistenz, Bewertungen und lokalen Content-Clustern, damit Sie in Ihrer Region besser gefunden werden."
+          "answer": "Ja. Wir arbeiten an Google Business Profile, lokalen Landingpages, NAP-Konsistenz, Bewertungen und lokalen Content-Clustern, damit du in deiner Region besser gefunden werden."
         },
         {
           "id": "seo-6",
@@ -189,7 +189,7 @@
         {
           "id": "seo-8",
           "question": "Was ist E-E-A-T und warum ist es wichtig?",
-          "answer": "E-E-A-T steht für Erfahrung, Fachwissen, Autorität und Vertrauen. Ein starkes E-E-A-T hilft bei Rankings und der Glaubwürdigkeit Ihrer Marke in KI-Zusammenfassungen."
+          "answer": "E-E-A-T steht für Erfahrung, Fachwissen, Autorität und Vertrauen. Ein starkes E-E-A-T hilft bei Rankings und der Glaubwürdigkeit deiner Marke in KI-Zusammenfassungen."
         },
         {
           "id": "seo-9",
@@ -326,7 +326,7 @@
         {
           "id": "des-6",
           "question": "Erstellen Sie auch soziale Vorlagen?",
-          "answer": "Ja. Wir erstellen konsistente Vorlagen für Beiträge, Storys und Anzeigen, damit Ihr Team schnell und erkennbar veröffentlichen kann."
+          "answer": "Ja. Wir erstellen konsistente Vorlagen für Beiträge, Storys und Anzeigen, damit dein Team schnell und erkennbar veröffentlichen kann."
         },
         {
           "id": "des-7",
@@ -361,7 +361,7 @@
         {
           "id": "des-13",
           "question": "Wo kann ich mehr über digitales Design erfahren?",
-          "answer": "Weitere Informationen finden Sie unter /digital-design und über die Digital Design Services im Menü."
+          "answer": "Weitere Informationen finden du unter /digital-design und über die Digital Design Services im Menü."
         }
       ]
     },
@@ -483,7 +483,7 @@
         {
           "id": "soc-9",
           "question": "Können Sie die Krisenkommunikation unterstützen?",
-          "answer": "Ja. Wir verwenden schnelle Reaktionsprotokolle und stimmen uns mit Ihrem Team ab, damit die Antworten konsistent und unter Kontrolle bleiben."
+          "answer": "Ja. Wir verwenden schnelle Reaktionsprotokolle und stimmen uns mit deinem Team ab, damit die Antworten konsistent und unter Kontrolle bleiben."
         },
         {
           "id": "soc-10",
@@ -524,7 +524,7 @@
         {
           "id": "sup-3",
           "question": "Wie lange ist Ihre Reaktionszeit?",
-          "answer": "Unser Ziel ist eine schnelle erste Antwort, oft innerhalb eines Werktages. Bei kritischen Ausfallzeiten reagieren wir schneller. Genaue SLAs finden Sie in den Supportpaketen."
+          "answer": "Unser Ziel ist eine schnelle erste Antwort, oft innerhalb eines Werktages. Bei kritischen Ausfallzeiten reagieren wir schneller. Genaue SLAs finden du in den Supportpaketen."
         },
         {
           "id": "sup-4",
@@ -549,7 +549,7 @@
         {
           "id": "sup-8",
           "question": "Was passiert, wenn meine Website nicht verfügbar ist?",
-          "answer": "Melden Sie es als dringend. Wir stellen, soweit möglich, mithilfe von Backups, Serverprüfungen und einem Hotfix wieder her und halten Sie unterwegs über den Status auf dem Laufenden."
+          "answer": "Melden du es als dringend. Wir stellen, soweit möglich, mithilfe von Backups, Serverprüfungen und einem Hotfix wieder her und halten du unterwegs über den Status auf dem Laufenden."
         },
         {
           "id": "sup-9",
@@ -564,17 +564,17 @@
         {
           "id": "sup-11",
           "question": "Was ist im Basic-/Standard-/Premium-Support enthalten?",
-          "answer": "Höhere Pakete decken mehr Websites, schnellere Nachverfolgung und breitere Abdeckung (Updates, Malware, Geschwindigkeit, SEO) ab. Einzelheiten finden Sie auf den Support-Seiten."
+          "answer": "Höhere Pakete decken mehr Websites, schnellere Nachverfolgung und breitere Abdeckung (Updates, Malware, Geschwindigkeit, SEO) ab. Einzelheiten finden du auf den Support-Seiten."
         },
         {
           "id": "sup-12",
           "question": "Helfen Sie auch bei nicht-technischen Fragen?",
-          "answer": "Ja, zu Leistungen, Abrechnung und Konto. Wie tief wir technisch gehen, hängt von Ihrem Paket ab."
+          "answer": "Ja, zu Leistungen, Abrechnung und Konto. Wie tief wir technisch gehen, hängt von deinem Paket ab."
         },
         {
           "id": "sup-13",
           "question": "Kann ich den Support später upgraden?",
-          "answer": "Ja. Sie können skalieren, wenn der Datenverkehr, das Risiko oder die Teamanforderungen zunehmen."
+          "answer": "Ja. Du können skalieren, wenn der Datenverkehr, das Risiko oder die Teamanforderungen zunehmen."
         }
       ]
     },
@@ -620,7 +620,7 @@
         {
           "id": "web-8",
           "question": "Können Sie CMS-Optionen ohne WordPress anbieten?",
-          "answer": "Ja. Das kann ein Headless-CMS, ein benutzerdefinierter Administrator oder ein statisches Setup sein – je nach Ihrem Team und Ihren Anforderungen."
+          "answer": "Ja. Das kann ein Headless-CMS, ein benutzerdefinierter Administrator oder ein statisches Setup sein – je nach deinem Team und deinen Anforderungen."
         },
         {
           "id": "web-9",
@@ -671,7 +671,7 @@
         {
           "id": "host-3",
           "question": "Helfen Sie bei der Domainregistrierung?",
-          "answer": "Ja. Wir beraten Sie, registrieren oder übertragen die Domain und binden DNS korrekt an."
+          "answer": "Ja. Wir beraten du, registrieren oder übertragen die Domain und binden DNS korrekt an."
         },
         {
           "id": "host-4",
@@ -716,7 +716,7 @@
         {
           "id": "host-12",
           "question": "Was ist Ihr Uptime-Ansatz?",
-          "answer": "Wir überwachen Vorfälle, reagieren schnell auf Vorfälle und kommunizieren rund um die Wartungsfenster klar, damit Sie wissen, was passiert."
+          "answer": "Wir überwachen Vorfälle, reagieren schnell auf Vorfälle und kommunizieren rund um die Wartungsfenster klar, damit du wissen, was passiert."
         },
         {
           "id": "host-13",
