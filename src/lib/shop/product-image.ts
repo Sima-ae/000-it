@@ -2,13 +2,15 @@
 export const SHOP_IMAGE_FALLBACK = "/branding/WEBLOGO-TripleZero-iT.png";
 
 /**
- * Local `/uploads/...` files are served through `/api/uploads/...` (middleware rewrite).
- * Point Next/Image at the API path so the optimizer never fetches a rewritten URL.
+ * Keep public `/uploads/...` URLs. Middleware rewrites them to `/api/uploads/...`
+ * (disk-backed). Do not point the browser at `/api/uploads` directly — that path
+ * shared the anti-scrape API budget and caused shop cards to fall back to the logo.
  */
 export function resolveShopImageSrc(image?: string | null): string {
   const src = (image || "").trim();
   if (!src) return SHOP_IMAGE_FALLBACK;
-  if (src.startsWith("/uploads/")) return `/api${src}`;
+  // Normalize accidental API paths back to the public uploads URL.
+  if (src.startsWith("/api/uploads/")) return src.slice(4);
   return src;
 }
 

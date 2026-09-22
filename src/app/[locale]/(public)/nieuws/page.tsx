@@ -65,10 +65,10 @@ export default async function NieuwsPage({
       />
 
       <Reveal>
-        <h1 className="font-display text-4xl font-semibold tracking-tight md:text-5xl">
+        <h1 className="font-display text-4xl font-semibold tracking-tight text-brand md:text-5xl">
           {tNav("blog")}
         </h1>
-        <p className="mt-3 max-w-2xl text-muted-foreground">{t("subtitle")}</p>
+        <p className="mt-3 max-w-2xl text-brand-mint">{t("subtitle")}</p>
       </Reveal>
 
       <div className="mt-8">
