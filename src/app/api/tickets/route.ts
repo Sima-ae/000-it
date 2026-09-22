@@ -85,7 +85,9 @@ export async function POST(request: Request) {
     const source = data.source ?? (isClientUser ? "DASHBOARD" : "CHAT");
     const locale = data.locale || "en";
     const agent =
-      source === "CHAT" ? buildAgentReply(locale, data.message) : null;
+      source === "CHAT"
+        ? await buildAgentReply(locale, data.message)
+        : null;
 
     const ticket = await prisma.supportTicket.create({
       data: {

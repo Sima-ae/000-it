@@ -13,45 +13,64 @@ export type FaqMatch = {
   confidence: number;
 };
 
-function scoreItem(queryTokens: string[], item: FaqItem): number {
+function scoreItem(
+  queryTokens: string[],
+  item: FaqItem,
+  categoryTitle: string,
+): number {
   if (!queryTokens.length) return 0;
   const qNorm = normalizeAgentText(item.question);
   const aNorm = normalizeAgentText(item.answer);
+  const catNorm = normalizeAgentText(categoryTitle);
   const qTok = new Set(tokenizeAgentText(item.question));
   const aTok = new Set(tokenizeAgentText(item.answer));
+  const catTok = new Set(tokenizeAgentText(categoryTitle));
 
   let hitQ = 0;
   let hitA = 0;
+  let hitCat = 0;
   let phraseBonus = 0;
   const joined = queryTokens.join(" ");
-  if (joined.length > 6 && qNorm.includes(joined)) phraseBonus += 0.45;
-  else if (joined.length > 6 && aNorm.includes(joined)) phraseBonus += 0.2;
+  if (joined.length > 6 && qNorm.includes(joined)) phraseBonus += 0.5;
+  else if (joined.length > 6 && aNorm.includes(joined)) phraseBonus += 0.28;
 
   for (const t of queryTokens) {
     hitQ += tokenHitScore(t, qTok, qNorm);
-    hitA += tokenHitScore(t, aTok, aNorm) * 0.55;
+    hitA += tokenHitScore(t, aTok, aNorm) * 0.7;
+    hitCat += tokenHitScore(t, catTok, catNorm) * 0.35;
   }
 
-  const coverage = (hitQ + hitA) / queryTokens.length;
-  const weighted = (hitQ * 1.4 + hitA * 0.5) / (queryTokens.length * 1.4);
-  let score = Math.min(1, Math.max(coverage * 0.55 + weighted * 0.45 + phraseBonus, 0));
+  const coverage = (hitQ + hitA + hitCat * 0.5) / queryTokens.length;
+  const weighted =
+    (hitQ * 1.45 + hitA * 0.65 + hitCat * 0.35) / (queryTokens.length * 1.45);
+  let score = Math.min(
+    1,
+    Math.max(coverage * 0.5 + weighted * 0.5 + phraseBonus, 0),
+  );
 
   // Prefer question hits; demote answer-only / partial-question keyword noise.
   const questionCoverage = hitQ / queryTokens.length;
-  if (questionCoverage < 0.2) score *= 0.5;
-  else if (questionCoverage < 0.45) score *= 0.78;
-  else if (questionCoverage < 0.7) score *= 0.92;
+  if (questionCoverage < 0.15 && hitA / queryTokens.length >= 0.45) {
+    // Strong answer-only match still usable (full FAQ body knowledge).
+    score *= 0.85;
+  } else if (questionCoverage < 0.2) {
+    score *= 0.55;
+  } else if (questionCoverage < 0.45) {
+    score *= 0.8;
+  } else if (questionCoverage < 0.7) {
+    score *= 0.93;
+  }
 
   return score;
 }
 
 /**
- * Rank FAQ items for a free-text question. Confidence 0–1.
+ * Rank every FAQ item (all categories) for a free-text question. Confidence 0–1.
  */
 export function rankFaq(
   locale: string,
   question: string,
-  limit = 6,
+  limit = 8,
 ): FaqMatch[] {
   const q = question.trim();
   if (q.length < 2) return [];
@@ -63,8 +82,8 @@ export function rankFaq(
   const scored: FaqMatch[] = [];
   for (const category of pack.categories) {
     for (const item of category.items) {
-      const confidence = scoreItem(queryTokens, item);
-      if (confidence < 0.12) continue;
+      const confidence = scoreItem(queryTokens, item, category.title);
+      if (confidence < 0.1) continue;
       scored.push({
         faqId: item.id,
         categoryId: category.id,
@@ -101,8 +120,16 @@ export function getFaqById(locale: string, faqId: string): FaqMatch | null {
   return null;
 }
 
+/** Count FAQ items available for a locale (debug / health). */
+export function countFaqItems(locale: string): number {
+  return getFaqContent(locale).categories.reduce(
+    (n, c) => n + c.items.length,
+    0,
+  );
+}
+
 /** Minimum confidence to treat as a solid FAQ hit. */
-export const FAQ_CONFIDENCE_HIT = 0.28;
-export const FAQ_CONFIDENCE_STRONG = 0.42;
+export const FAQ_CONFIDENCE_HIT = 0.26;
+export const FAQ_CONFIDENCE_STRONG = 0.4;
 /** Near-tie gap: if #2 is within this of #1, ask which topic. */
 export const FAQ_CLARIFY_GAP = 0.09;

@@ -28,7 +28,11 @@ export async function POST(request: Request) {
 
   const { locale, question, ticketId, guestToken, faqId } = parsed.data;
   const persist = parsed.data.persist ?? Boolean(ticketId);
-  const result = buildAgentReply(locale, question, faqId ? { faqId } : undefined);
+  const result = await buildAgentReply(
+    locale,
+    question,
+    faqId ? { faqId } : undefined,
+  );
 
   let systemMessageId: string | null = null;
 

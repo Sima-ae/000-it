@@ -99,10 +99,11 @@ export function tokenizeAgentText(text: string): string[] {
     .filter((t) => t.length > 1 && !STOP.has(t));
 }
 
-/** Soft token match: exact, contains, or shared prefix (min 4 chars). */
+/** Soft token match: exact, contains (len≥4), or shared prefix (min 4 chars). */
 export function tokenHitScore(needle: string, hayTokens: Set<string>, hayNorm: string): number {
   if (hayTokens.has(needle)) return 1;
-  if (hayNorm.includes(needle)) return 0.65;
+  // Avoid false positives like "aan" inside "aanmaken" / "account".
+  if (needle.length >= 4 && hayNorm.includes(needle)) return 0.65;
   if (needle.length >= 4) {
     for (const t of hayTokens) {
       if (t.length < 4) continue;

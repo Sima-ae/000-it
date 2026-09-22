@@ -64,7 +64,10 @@ export async function POST(request: Request, { params }: Params) {
     let agentMessage = null;
     if (!parsed.data.skipAgent && ticket.source === "CHAT") {
       try {
-        const agent = buildAgentReply(parsed.data.locale || "en", parsed.data.body);
+        const agent = await buildAgentReply(
+          parsed.data.locale || "en",
+          parsed.data.body,
+        );
         agentMessage = await prisma.ticketMessage.create({
           data: {
             ticketId: id,

@@ -70,8 +70,8 @@ function escalateHint(locale: string) {
 
 function clarifyCopy(locale: string) {
   return isNl(locale)
-    ? "Ik vond meerdere relevante onderwerpen. Welke past het best bij wat je zoekt? Kies een optie hieronder — dan geef ik een gericht antwoord."
-    : "I found several relevant topics. Which one matches what you're looking for? Pick an option below and I'll give a focused answer.";
+    ? "Ik vond meerdere relevante onderwerpen in onze FAQ en kennisbank. Welke past het best bij wat je zoekt? Kies een optie hieronder — dan geef ik een gericht antwoord."
+    : "I found several relevant topics in our FAQ and knowledge base. Which one matches what you're looking for? Pick an option below and I'll give a focused answer.";
 }
 
 function relatedIntro(locale: string) {
@@ -112,15 +112,25 @@ function formatLinksInAnswer(locale: string, links: AgentLink[]): string {
   const lines = links.map((link, i) => {
     const label =
       link.kind === "faq"
-        ? isNl(locale)
-          ? "FAQ"
-          : "FAQ"
+        ? "FAQ"
         : isNl(locale)
           ? "Kennisbank"
           : "Knowledge base";
     return `${i + 1}. [${label}] ${link.title}\n   ${link.href}`;
   });
   return `${relatedIntro(locale)}\n${lines.join("\n")}`;
+}
+
+function kbAnswerLead(locale: string, match: KennisbankMatch): string {
+  const body = match.excerpt?.trim();
+  if (body) {
+    return isNl(locale)
+      ? `Volgens onze kennisbank (“${match.title}”): ${body}`
+      : `From our knowledge base (“${match.title}”): ${body}`;
+  }
+  return isNl(locale)
+    ? `Ik vond dit in onze kennisbank: “${match.title}”. Open het artikel voor de volledige uitleg.`
+    : `I found this in our knowledge base: “${match.title}”. Open the article for the full guide.`;
 }
 
 function collectIntents(question: string) {
@@ -134,7 +144,7 @@ function collectIntents(question: string) {
   return { intents, actions };
 }
 
-function uniqueLinks(links: AgentLink[], limit = 5): AgentLink[] {
+function uniqueLinks(links: AgentLink[], limit = 6): AgentLink[] {
   const seen = new Set<string>();
   const out: AgentLink[] = [];
   for (const link of links) {
@@ -194,29 +204,29 @@ function relatedKbLinks(
     .filter(
       (m) =>
         m.confidence >= KB_CONFIDENCE_HIT &&
-        sharesTopic(seedText, `${m.title} ${m.topic} ${m.categorySlug}`),
+        sharesTopic(seedText, `${m.title} ${m.excerpt} ${m.topic} ${m.categorySlug}`),
     )
     .slice(0, limit)
     .map((m) => kbLink(locale, m));
 }
 
 /**
- * Build Agent 000 reply from FAQ + kennisbank keyword retrieval + intents.
+ * Build Agent 000 reply from the full FAQ pack + full kennisbank corpus.
  */
-export function buildAgentReply(
+export async function buildAgentReply(
   locale: string,
   question: string,
   opts?: BuildAgentReplyOptions,
-): AgentAskResult {
+): Promise<AgentAskResult> {
   const { intents, actions } = collectIntents(question);
 
   if (opts?.faqId) {
     const forced = getFaqById(locale, opts.faqId);
     if (forced) {
-      const kb = rankKennisbank(`${forced.question} ${question}`, 6);
+      const kb = await rankKennisbank(locale, `${forced.question} ${question}`, 8);
       const links = uniqueLinks([
         faqLink(locale, forced),
-        ...relatedKbLinks(locale, forced.question, kb, 3),
+        ...relatedKbLinks(locale, forced.question, kb, 4),
       ]);
       const answer = `${greeting(locale)} ${forced.answer}${formatLinksInAnswer(locale, links)}`;
       return {
@@ -233,8 +243,10 @@ export function buildAgentReply(
     }
   }
 
-  const faqHits = rankFaq(locale, question, 6);
-  const kbHits = rankKennisbank(question, 6);
+  const [faqHits, kbHits] = await Promise.all([
+    Promise.resolve(rankFaq(locale, question, 8)),
+    rankKennisbank(locale, question, 8),
+  ]);
   const bestFaq = faqHits[0] ?? null;
   const secondFaq = faqHits[1] ?? null;
   const bestKb = kbHits[0] ?? null;
@@ -251,7 +263,7 @@ export function buildAgentReply(
     (t) => !TOPIC_NOISE.has(t),
   );
   const minCover =
-    contentQueryTokens.length >= 2 ? 0.6 : faqStrong ? 0.25 : 0.45;
+    contentQueryTokens.length >= 2 ? 0.55 : faqStrong ? 0.25 : 0.4;
   const faqReliable =
     Boolean(bestFaq) && faqHit && faqQuestionCover >= minCover;
 
@@ -264,8 +276,14 @@ export function buildAgentReply(
 
   const multiKb =
     kbHit &&
+    bestKb &&
     kbHits.filter((m) => m.confidence >= KB_CONFIDENCE_HIT).length >= 2 &&
-    !faqStrong;
+    !faqStrong &&
+    (kbHits[1]?.confidence ?? 0) >= bestKb.confidence - 0.04 &&
+    Math.abs(
+      queryCoveredByQuestion(question, bestKb.title) -
+        queryCoveredByQuestion(question, kbHits[1]?.title || ""),
+    ) < 0.12;
 
   const faqVsKbAmbiguous =
     faqHit &&
@@ -285,7 +303,7 @@ export function buildAgentReply(
       .filter((m) => m.confidence >= KB_CONFIDENCE_HIT)
       .slice(0, 4)
       .map((m) => kbLink(locale, m));
-    const links = uniqueLinks([...clarifyFaq, ...clarifyKb], 6);
+    const links = uniqueLinks([...clarifyFaq, ...clarifyKb], 8);
     actions.add("open_ticket");
     actions.add("book_appointment");
     actions.add("contact");
@@ -308,9 +326,9 @@ export function buildAgentReply(
     const links = uniqueLinks(
       [
         faqLink(locale, bestFaq),
-        ...relatedKbLinks(locale, `${bestFaq.question} ${question}`, kbHits, 3),
+        ...relatedKbLinks(locale, `${bestFaq.question} ${question}`, kbHits, 4),
       ],
-      5,
+      6,
     );
     let answer = `${greeting(locale)} ${bestFaq.answer}`;
     answer += formatLinksInAnswer(locale, links);
@@ -334,19 +352,23 @@ export function buildAgentReply(
     };
   }
 
-  // KB-only strong hit (no FAQ)
-  if (kbHit && bestKb) {
+  // Prefer strong KB when FAQ cover is weak but KB is solid
+  if (kbHit && bestKb && (kbStrong || !faqReliable)) {
     const links = uniqueLinks(
-      kbHits
-        .filter((m) => m.confidence >= KB_CONFIDENCE_HIT)
-        .slice(0, 4)
-        .map((m) => kbLink(locale, m)),
-      4,
+      [
+        kbLink(locale, bestKb),
+        ...kbHits
+          .filter((m) => m.slug !== bestKb.slug && m.confidence >= KB_CONFIDENCE_HIT)
+          .slice(0, 3)
+          .map((m) => kbLink(locale, m)),
+        ...faqHits
+          .filter((m) => m.confidence >= FAQ_CONFIDENCE_HIT)
+          .slice(0, 2)
+          .map((m) => faqLink(locale, m)),
+      ],
+      6,
     );
-    const lead = isNl(locale)
-      ? `Ik vond dit in onze kennisbank: “${bestKb.title}”. Open het artikel voor de volledige uitleg.`
-      : `I found this in our knowledge base: “${bestKb.title}”. Open the article for the full guide.`;
-    let answer = `${greeting(locale)} ${lead}${formatLinksInAnswer(locale, links)}`;
+    let answer = `${greeting(locale)} ${kbAnswerLead(locale, bestKb)}${formatLinksInAnswer(locale, links)}`;
     if (!kbStrong) {
       answer += escalateHint(locale);
       actions.add("open_ticket");
@@ -358,11 +380,11 @@ export function buildAgentReply(
       answer,
       faqId: null,
       categoryId: null,
-      matchedQuestion: null,
+      matchedQuestion: bestKb.title,
       confidence: bestKb.confidence,
       actions: [...actions],
       intents,
-      mode: links.length > 1 ? "clarify" : "answer",
+      mode: "answer",
       links,
     };
   }
@@ -370,10 +392,10 @@ export function buildAgentReply(
   // Soft suggestions + escalate
   const softLinks = uniqueLinks(
     [
-      ...faqHits.slice(0, 3).map((m) => faqLink(locale, m)),
-      ...kbHits.slice(0, 3).map((m) => kbLink(locale, m)),
+      ...faqHits.slice(0, 4).map((m) => faqLink(locale, m)),
+      ...kbHits.slice(0, 4).map((m) => kbLink(locale, m)),
     ],
-    5,
+    6,
   );
   actions.add("open_ticket");
   actions.add("book_appointment");
