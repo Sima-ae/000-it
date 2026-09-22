@@ -21,6 +21,7 @@
     "news:repair": "npx --yes tsx --env-file=.env scripts/repair-auto-news.ts",
     "news:rewrite": "npx --yes tsx --env-file=.env scripts/repair-auto-news.ts --rewrite-copy",
     "news:closings": "npx --yes tsx --env-file=.env scripts/repair-auto-news.ts --closings",
+    "news:truncations": "npx --yes tsx --env-file=.env scripts/repair-auto-news.ts --truncations",
     "shop:seed": "npx --yes tsx --env-file=.env scripts/seed-shop-catalog.ts",
     "news:translate": "npx --yes tsx --env-file=.env scripts/translate-news.ts",
     "kennisbank:translate": "npx --yes tsx --env-file=.env scripts/translate-kennisbank.ts",

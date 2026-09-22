@@ -43,6 +43,81 @@ export function decodeHtmlEntities(value: string) {
 }
 
 /**
+ * Strip feed truncation markers ([…], [...], trailing …) and keep only complete
+ * sentences so article bodies never end mid-thought with an ellipsis bracket.
+ */
+export function finishTruncatedCopy(text: string) {
+  if (!text) return "";
+  const TRUNC_MARK = /\[\s*(?:\.{2,}|…)\s*\]/;
+
+  const fixPara = (para: string) => {
+    let p = para.replace(/[ \t]+/g, " ").trim();
+    if (!p) return "";
+
+    if (TRUNC_MARK.test(p) || /(?:\u2026|\.{3})\s*$/u.test(p)) {
+      const markAt = p.search(TRUNC_MARK);
+      const before =
+        markAt >= 0
+          ? p.slice(0, markAt).trim()
+          : p.replace(/(?:\u2026|\.{3})\s*$/u, "").trim();
+
+      // Prefer dropping the incomplete trailing sentence.
+      const stop = Math.max(
+        before.lastIndexOf(". "),
+        before.lastIndexOf("! "),
+        before.lastIndexOf("? "),
+      );
+      if (stop > 20) {
+        p = before.slice(0, stop + 1).trim();
+      } else if (/[.!?]"?$/.test(before)) {
+        p = before;
+      } else if (before.length > 12) {
+        p = `${before.replace(/[,:;–—\-|]\s*$/u, "").trim()}.`;
+      } else {
+        return "";
+      }
+    }
+
+    // Hard length cuts sometimes leave dangling mid-sentence tails without a mark.
+    if (p.length > 40 && !/[.!?]"?[)”']?\s*$/u.test(p) && /\.\s/.test(p)) {
+      const stop = Math.max(p.lastIndexOf(". "), p.lastIndexOf("! "), p.lastIndexOf("? "));
+      if (stop > 20) p = p.slice(0, stop + 1).trim();
+    }
+
+    return p;
+  };
+
+  if (/\n\s*\n/.test(text)) {
+    return text
+      .split(/\n\s*\n/)
+      .map((para) => fixPara(para))
+      .filter(Boolean)
+      .join("\n\n");
+  }
+
+  return fixPara(text.replace(/\s+/g, " ").trim());
+}
+
+/** Cut long source text on a sentence boundary (never mid-word / mid-sentence). */
+export function sliceAtSentence(text: string, max: number) {
+  const cleaned = (text || "").trim();
+  if (cleaned.length <= max) return cleaned;
+  const window = cleaned.slice(0, max);
+  const stop = Math.max(
+    window.lastIndexOf(". "),
+    window.lastIndexOf("! "),
+    window.lastIndexOf("? "),
+    window.lastIndexOf(".\n"),
+  );
+  if (stop > Math.floor(max * 0.45)) {
+    return finishTruncatedCopy(window.slice(0, stop + 1).trim());
+  }
+  const space = window.lastIndexOf(" ");
+  const cut = (space > 40 ? window.slice(0, space) : window).trim();
+  return finishTruncatedCopy(`${cut.replace(/[,:;–—\-|]\s*$/u, "")}.`);
+}
+
+/**
  * Strip arXiv / feed preambles so posts never show metadata junk.
  * Handles EN + NL variants, including spaced translations like "Aankondiging Type:".
  * Example removed: "arXiv:2608.07480v1 Aankondigingstype: nieuw Samenvatting:"
@@ -98,15 +173,17 @@ export function cleanSourceSummary(summary: string) {
       .replace(/[ \t]+/g, " ")
       .trim();
 
-    return text;
+    return finishTruncatedCopy(text);
   };
 
   if (/\n\s*\n/.test(summary)) {
-    return summary
-      .split(/\n\s*\n/)
-      .map((para) => scrubChunk(para))
-      .filter(Boolean)
-      .join("\n\n");
+    return finishTruncatedCopy(
+      summary
+        .split(/\n\s*\n/)
+        .map((para) => scrubChunk(para))
+        .filter(Boolean)
+        .join("\n\n"),
+    );
   }
 
   return scrubChunk(summary);
@@ -362,9 +439,9 @@ function buildImplications(story: NewsStory, industry: string, isResearch: boole
 export function buildClosingEn(sourceName: string, published: string | null) {
   const src = (sourceName || "").trim() || "the original source";
   if (published) {
-    return `Readers can view the full article ${src} from ${published} via the link below.`;
+    return `Readers can view the full article written by: ${src} as of ${published} via the link below.`;
   }
-  return `Readers can view the full article ${src} via the link below.`;
+  return `Readers can view the full article written by: ${src} via the link below.`;
 }
 
 function buildClosing(story: NewsStory, published: string | null) {
@@ -375,9 +452,9 @@ function buildClosing(story: NewsStory, published: string | null) {
 export function buildClosingNl(sourceName: string, published: string | null) {
   const src = (sourceName || "").trim() || "de originele bron";
   if (published) {
-    return `Lezers kunnen het volledige artikel ${src} van ${published} bekijken via de onderstaande link.`;
+    return `Lezers kunnen het volledige artikel geschreven door: ${src} vanaf ${published} bekijken via de onderstaande link.`;
   }
-  return `Lezers kunnen het volledige artikel ${src} bekijken via de onderstaande link.`;
+  return `Lezers kunnen het volledige artikel geschreven door: ${src} bekijken via de onderstaande link.`;
 }
 
 /** Detect old / intermediate closings that should be replaced. */

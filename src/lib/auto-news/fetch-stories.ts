@@ -24,13 +24,41 @@ function decodeXml(value: string) {
 
 /** Remove arXiv and similar feed preambles before ranking/drafting. */
 export function scrubFeedSummary(summary: string) {
-  return summary
+  const cleaned = summary
     .replace(/^arXiv:\s*[\w./-]+\s*/i, "")
     .replace(/(?:Announce\s*Type|Aankondigings?\s*type|Aankondigingstype)\s*:\s*[\w-]+\s*/gi, "")
     .replace(/^(?:Abstract|Samenvatting)\s*:\s*/i, "")
     .replace(/\bComments:\s*[^.]+\./gi, "")
     .replace(/\s+/g, " ")
     .trim();
+  // Drop feed "[…]" tails so drafts never inherit mid-sentence cuts.
+  return cleaned
+    .replace(/\s*\[\s*(?:\.{2,}|…)\s*\]\s*$/u, "")
+    .replace(/(?:\u2026|\.{3})\s*$/u, "")
+    .trim();
+}
+
+function sliceFeedSummary(summary: string, max = 2800) {
+  const cleaned = scrubFeedSummary(summary);
+  if (cleaned.length <= max) {
+    // Still drop an incomplete final sentence if a truncation mark sits mid-text.
+    const markAt = cleaned.search(/\[\s*(?:\.{2,}|…)\s*\]/);
+    if (markAt < 0) return cleaned;
+    const before = cleaned.slice(0, markAt).trim();
+    const stop = Math.max(before.lastIndexOf(". "), before.lastIndexOf("! "), before.lastIndexOf("? "));
+    if (stop > 20) return before.slice(0, stop + 1).trim();
+    return before.length > 12 ? `${before.replace(/[,:;–—\-|]\s*$/u, "").trim()}.` : before;
+  }
+  const window = cleaned.slice(0, max);
+  const stop = Math.max(
+    window.lastIndexOf(". "),
+    window.lastIndexOf("! "),
+    window.lastIndexOf("? "),
+  );
+  if (stop > Math.floor(max * 0.45)) return window.slice(0, stop + 1).trim();
+  const space = window.lastIndexOf(" ");
+  const cut = (space > 40 ? window.slice(0, space) : window).trim();
+  return `${cut.replace(/[,:;–—\-|]\s*$/u, "")}.`;
 }
 
 function pickTag(block: string, tag: string) {
@@ -70,7 +98,7 @@ function parseFeed(xml: string, sourceId: string, sourceName: string): NewsStory
         title,
         url,
         // Keep enough source text for multi-paragraph drafts.
-        summary: scrubFeedSummary(summary).slice(0, 2800),
+        summary: sliceFeedSummary(summary, 2800),
         publishedAt,
         sourceId,
         sourceName,

@@ -8,11 +8,14 @@
  *     → remove long "TripleZero iT takeaway…" / short source-check footers from descriptions
  *   npm run news:repair -- --closings
  *     → replace awkward “full timeline” closings with natural “full article” lines (+ all locales)
+ *   npm run news:repair -- --truncations
+ *     → remove “[…]” mid-sentence feed cuts so paragraphs end on a full stop
  *   npm run news:repair -- --rewrite-copy
  *     → rebuild bodies that still contain the shared boilerplate sentence
  *   npm run news:repair -- --rewrite-copy --limit=80
  *   npm run news:repair -- --takeaways --limit=100
  *   npm run news:repair -- --closings --limit=300
+ *   npm run news:repair -- --truncations --limit=500
  */
 import { Prisma } from "@prisma/client";
 import { prisma } from "../src/lib/prisma";
@@ -22,7 +25,7 @@ import {
   generateBilingualNewsDraft,
   looksLikeRawFeedCopy,
 } from "../src/lib/auto-news/generate";
-import { rewriteBoilerplateNewsPosts, repairAwkwardNewsClosings } from "../src/lib/auto-news/rewrite";
+import { rewriteBoilerplateNewsPosts, repairAwkwardNewsClosings, repairTruncatedNewsBodies } from "../src/lib/auto-news/rewrite";
 import {
   parseNewsTranslations,
   type NewsTranslationsMap,
@@ -125,6 +128,7 @@ async function main() {
   const takeawaysOnly = argFlag("takeaways");
   const rewriteCopy = argFlag("rewrite-copy");
   const closingsOnly = argFlag("closings");
+  const truncationsOnly = argFlag("truncations");
   const limit = Math.max(1, Number(argValue("limit") || "500") || 500);
 
   if (takeawaysOnly) {
@@ -134,6 +138,13 @@ async function main() {
 
   if (closingsOnly) {
     const result = await repairAwkwardNewsClosings({ limit });
+    console.log(JSON.stringify(result, null, 2));
+    if (!result.ok) process.exit(1);
+    return;
+  }
+
+  if (truncationsOnly) {
+    const result = await repairTruncatedNewsBodies({ limit });
     console.log(JSON.stringify(result, null, 2));
     if (!result.ok) process.exit(1);
     return;

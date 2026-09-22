@@ -12,8 +12,10 @@ import {
   buildClosingEn,
   buildClosingNl,
   formatPublishedDate,
+  finishTruncatedCopy,
   isOutdatedClosingParagraph,
   setLastParagraph,
+  sliceAtSentence,
 } from "@/lib/auto-news/generate";
 import type { NewsTranslationsMap } from "@/lib/news-i18n";
 import { parseNewsTranslations } from "@/lib/news-i18n";
@@ -129,7 +131,7 @@ export function extractSummaryFromStoredDescription(description: string) {
       return p.length > 40;
     });
 
-  return cleanSourceSummary(paras.join("\n\n")).slice(0, 2800);
+  return sliceAtSentence(cleanSourceSummary(paras.join("\n\n")), 2800);
 }
 
 function needsRewrite(
@@ -355,8 +357,8 @@ function needsClosingRepair(post: {
 
 /**
  * Replace awkward / intermediate closings with:
- * EN: "Readers can view the full article {source} from {date} via the link below."
- * NL: "Lezers kunnen het volledige artikel {source} van {date} bekijken via de onderstaande link."
+ * EN: "Readers can view the full article written by: {source} as of {date} via the link below."
+ * NL: "Lezers kunnen het volledige artikel geschreven door: {source} vanaf {date} bekijken via de onderstaande link."
  * then re-translate the closer for every other locale.
  */
 export async function repairAwkwardNewsClosings(
@@ -449,6 +451,100 @@ export async function repairAwkwardNewsClosings(
       const message = error instanceof Error ? error.message : String(error);
       result.errors.push(`${post.id}: ${message}`);
       console.warn("[repair-closings] failed", post.id, message);
+    }
+  }
+
+  if (result.errors.length && !result.rewritten) result.ok = false;
+  return result;
+}
+
+const TRUNCATION_RE = /\[\s*(?:\.{2,}|…)\s*\]/;
+
+function hasTruncationMarker(text: string | null | undefined) {
+  return TRUNCATION_RE.test(text || "");
+}
+
+/**
+ * Remove "[…]" / "[...]" mid-sentence cuts from stored descriptions (all locales).
+ * Keeps the last complete sentence instead of leaving a dangling ellipsis.
+ */
+export async function repairTruncatedNewsBodies(
+  options: RewriteNewsOptions = {},
+): Promise<RewriteNewsResult> {
+  const limit = Math.min(Math.max(options.limit ?? 500, 1), 1000);
+  const result: RewriteNewsResult = {
+    ok: true,
+    checked: 0,
+    rewritten: 0,
+    skipped: 0,
+    errors: [],
+  };
+
+  const posts = await prisma.newsPost.findMany({
+    where: {
+      deletedAt: null,
+      id: { startsWith: "auto-" },
+    },
+    orderBy: [{ date: "desc" }, { createdAt: "desc" }],
+    take: limit,
+  });
+
+  for (const post of posts) {
+    result.checked += 1;
+    const translations = parseNewsTranslations(post.translations);
+    const needs =
+      hasTruncationMarker(post.description) ||
+      hasTruncationMarker(post.descriptionNl) ||
+      Object.values(translations).some((copy) =>
+        hasTruncationMarker(copy.description),
+      );
+
+    if (!needs) {
+      result.skipped += 1;
+      continue;
+    }
+
+    try {
+      const description = finishTruncatedCopy(post.description);
+      const descriptionNl = finishTruncatedCopy(post.descriptionNl || "");
+      const nextTranslations: NewsTranslationsMap = { ...translations };
+
+      if (nextTranslations.nl) {
+        nextTranslations.nl = {
+          ...nextTranslations.nl,
+          description: finishTruncatedCopy(nextTranslations.nl.description),
+        };
+      } else if (descriptionNl) {
+        nextTranslations.nl = {
+          title: post.titleNl || post.title,
+          excerpt: post.excerptNl || post.excerpt,
+          description: descriptionNl,
+        };
+      }
+
+      for (const [locale, copy] of Object.entries(nextTranslations)) {
+        if (locale === "nl" || !copy?.description) continue;
+        nextTranslations[locale] = {
+          ...copy,
+          description: finishTruncatedCopy(copy.description),
+        };
+      }
+
+      await prisma.newsPost.update({
+        where: { id: post.id },
+        data: {
+          description,
+          descriptionNl: descriptionNl || null,
+          translations: nextTranslations as Prisma.InputJsonValue,
+        },
+      });
+
+      result.rewritten += 1;
+      console.log(`[repair-truncations] fixed ${post.id}`);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      result.errors.push(`${post.id}: ${message}`);
+      console.warn("[repair-truncations] failed", post.id, message);
     }
   }
 
