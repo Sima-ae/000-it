@@ -9,21 +9,18 @@ import {
 import { prisma } from "@/lib/prisma";
 
 export async function GET(request: Request) {
+  const authResult = await requireRole(["SUPER_ADMIN", "ADMIN"]);
+  if (authResult.error) return authResult.error;
+
   const { searchParams } = new URL(request.url);
   const all = searchParams.get("all") === "1";
   const locale = searchParams.get("locale") || "nl";
   const categorySlug = searchParams.get("category") || undefined;
   const search = searchParams.get("q") || undefined;
 
-  if (all) {
-    const authResult = await requireRole(["SUPER_ADMIN", "ADMIN"]);
-    if (authResult.error) return authResult.error;
-    return NextResponse.json(
-      await listArticles({ locale, all: true, categorySlug, search }),
-    );
-  }
-
-  return NextResponse.json(await listArticles({ locale, categorySlug, search }));
+  return NextResponse.json(
+    await listArticles({ locale, all, categorySlug, search }),
+  );
 }
 
 export async function POST(request: Request) {

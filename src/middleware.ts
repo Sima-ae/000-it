@@ -7,6 +7,11 @@ import { localizePath, toInternalPath } from "@/i18n/pathnames";
 import { hydrateEntitySlugs } from "@/lib/entity-slugs";
 import { normalizeEntityParam } from "@/lib/entity-slug-cache";
 import { canAccessPath, dashboardNav } from "@/lib/roles";
+import {
+  SOCIAL_BOT_RE,
+  antiScrapeResponse,
+  withSecurityHeaders,
+} from "@/lib/anti-scrape";
 
 /** Compare paths ignoring %XX vs Unicode differences (script-locale slugs). */
 function pathsEquivalent(a: string, b: string) {
@@ -24,10 +29,6 @@ const localePattern = routing.locales
   .map((l) => l.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
   .join("|");
 const localePathRe = new RegExp(`^/(${localePattern})(?=/|$)`);
-
-/** Meta/WhatsApp/etc. — previews often fail if the first response is a redirect. */
-const SOCIAL_BOT_RE =
-  /facebookexternalhit|Facebot|WhatsApp|meta-externalagent|Twitterbot|LinkedInBot|Slackbot|Discordbot|TelegramBot/i;
 
 const CANONICAL_HOST = "000-it.com";
 
@@ -76,6 +77,8 @@ export default async function middleware(request: NextRequest) {
 
   // Always read uploads from disk via API (covers written after boot).
   if (pathname.startsWith("/uploads/")) {
+    const blockedUploads = antiScrapeResponse(request, "/uploads");
+    if (blockedUploads) return blockedUploads;
     const url = request.nextUrl.clone();
     url.pathname = `/api${pathname}`;
     return NextResponse.rewrite(url);
@@ -85,6 +88,20 @@ export default async function middleware(request: NextRequest) {
   // Serve a tiny OG-first HTML shell to social crawlers — no redirects.
   if (isSocialBot && isProductionHost(host)) {
     return socialPreviewRewrite(request, pathname);
+  }
+
+  const localeMatchEarly = pathname.match(localePathRe);
+  const localeEarly = localeMatchEarly?.[1] ?? routing.defaultLocale;
+  const pathWithoutLocaleEarly = pathname.replace(localePathRe, "") || "/";
+  const internalEarly = pathname.startsWith("/api/")
+    ? pathname
+    : toInternalPath(localeEarly, pathWithoutLocaleEarly);
+
+  const blocked = antiScrapeResponse(request, internalEarly);
+  if (blocked) return blocked;
+
+  if (pathname.startsWith("/api/") || pathname.startsWith("/sitemaps/")) {
+    return withSecurityHeaders(NextResponse.next(), pathname, internalEarly);
   }
 
   // Humans: canonicalize www → apex (never leak internal :3066 port).
@@ -163,7 +180,8 @@ export default async function middleware(request: NextRequest) {
     }
   }
 
-  return intlMiddleware(request);
+  const intlResponse = intlMiddleware(request) as NextResponse;
+  return withSecurityHeaders(intlResponse, pathname, internalPath);
 }
 
 export const config = {
@@ -172,6 +190,8 @@ export const config = {
   matcher: [
     // Include uploads even though they have file extensions (normally excluded).
     "/uploads/:path*",
+    "/api/:path*",
+    "/sitemaps/:path*",
     "/((?!api|_next|_vercel|.*\\..*).*)",
   ],
 };

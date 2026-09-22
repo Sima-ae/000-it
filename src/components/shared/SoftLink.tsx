@@ -68,6 +68,7 @@ export const SoftLink = forwardRef<HTMLAnchorElement, SoftLinkProps>(
     const targetHref = normalizeHref(hrefString);
 
     function prefetchTarget() {
+      if (prefetch === false) return;
       if (!targetHref.startsWith("/")) return;
       // Avoid blocking prerender: compare path only for prefetch skip.
       if (normalizePath(pathname) === normalizePath(targetHref) && !targetHref.includes("?")) {

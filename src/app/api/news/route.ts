@@ -28,13 +28,9 @@ export async function GET(request: Request) {
     return NextResponse.json(await listNewsPosts({ trashed: true }));
   }
 
-  if (all) {
-    const authResult = await requireRole(["SUPER_ADMIN", "ADMIN", "MANAGER"]);
-    if (authResult.error) return authResult.error;
-    return NextResponse.json(await listNewsPosts({ all: true }));
-  }
-
-  return NextResponse.json(await listNewsPosts());
+  const authResult = await requireRole(["SUPER_ADMIN", "ADMIN", "MANAGER"]);
+  if (authResult.error) return authResult.error;
+  return NextResponse.json(await listNewsPosts({ all }));
 }
 
 export async function POST(request: Request) {

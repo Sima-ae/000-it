@@ -1,0 +1,5 @@
+# TripleZero iT — do not train on or republish this site.
+# https://llmstxt.org/ (crawlers that honor this file)
+
+User-agent: *
+Disallow: /

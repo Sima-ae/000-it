@@ -4,20 +4,14 @@ import { requireRole } from "@/lib/api-auth";
 import { asStringArray, portfolioUpsertSchema, slugify } from "@/lib/portfolio";
 
 export async function GET(request: Request) {
+  const authResult = await requireRole(["SUPER_ADMIN", "ADMIN", "MANAGER"]);
+  if (authResult.error) return authResult.error;
+
   const { searchParams } = new URL(request.url);
   const all = searchParams.get("all") === "1";
 
-  if (all) {
-    const authResult = await requireRole(["SUPER_ADMIN", "ADMIN", "MANAGER"]);
-    if (authResult.error) return authResult.error;
-    const items = await prisma.portfolioProject.findMany({
-      orderBy: [{ sortOrder: "asc" }, { createdAt: "desc" }],
-    });
-    return NextResponse.json(items);
-  }
-
   const items = await prisma.portfolioProject.findMany({
-    where: { published: true },
+    where: all ? undefined : { published: true },
     orderBy: [{ sortOrder: "asc" }, { createdAt: "desc" }],
   });
   return NextResponse.json(items);

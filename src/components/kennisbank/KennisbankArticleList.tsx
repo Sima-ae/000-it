@@ -55,6 +55,7 @@ export function KennisbankArticleList({
               <li>
                 <SoftLink
                   href={localizedHref(locale, `/kennisbank/${categorySlug}/${article.slug}`)}
+                  prefetch={false}
                   className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
                 >
                   <GlassCard className="group flex gap-4 overflow-hidden p-0 transition hover:border-primary/40 hover:shadow-md sm:gap-5">

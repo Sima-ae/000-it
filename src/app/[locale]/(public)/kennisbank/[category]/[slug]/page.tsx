@@ -205,6 +205,7 @@ export default async function KennisbankArticlePage({ params }: Params) {
                 <li key={item.id}>
                   <SoftLink
                     href={localizedHref(locale, `/kennisbank/${category}/${item.slug}`)}
+                    prefetch={false}
                     className="block h-full"
                   >
                     <GlassCard className="group h-full p-5 transition hover:border-primary/40 hover:shadow-md">

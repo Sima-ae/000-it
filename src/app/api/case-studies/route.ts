@@ -10,13 +10,12 @@ import {
 } from "@/lib/case-studies";
 
 export async function GET(request: Request) {
+  const authResult = await requireRole(["SUPER_ADMIN", "ADMIN", "MANAGER"]);
+  if (authResult.error) return authResult.error;
   const { searchParams } = new URL(request.url);
-  if (searchParams.get("all") === "1") {
-    const authResult = await requireRole(["SUPER_ADMIN", "ADMIN", "MANAGER"]);
-    if (authResult.error) return authResult.error;
-    return NextResponse.json(await listCaseStudies({ all: true }));
-  }
-  return NextResponse.json(await listCaseStudies());
+  return NextResponse.json(
+    await listCaseStudies({ all: searchParams.get("all") === "1" }),
+  );
 }
 
 export async function POST(request: Request) {

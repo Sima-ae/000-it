@@ -8,18 +8,15 @@ export async function GET(
   _request: Request,
   { params }: { params: Promise<{ id: string }> },
 ) {
+  const authResult = await requireRole(["SUPER_ADMIN", "ADMIN", "MANAGER"]);
+  if (authResult.error) return authResult.error;
+
   const { id } = await params;
   const item = await prisma.portfolioProject.findFirst({
     where: { OR: [{ id }, { slug: id }] },
   });
   if (!item) {
     return NextResponse.json({ error: "Not found" }, { status: 404 });
-  }
-  if (!item.published) {
-    const authResult = await requireRole(["SUPER_ADMIN", "ADMIN", "MANAGER"]);
-    if (authResult.error) {
-      return NextResponse.json({ error: "Not found" }, { status: 404 });
-    }
   }
   return NextResponse.json(item);
 }

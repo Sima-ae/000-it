@@ -4,6 +4,7 @@ import { auth } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { buildAgentReply } from "@/lib/agent-000/ask";
 import { canAccessTicket } from "@/lib/support";
+import { isSameSiteRequest } from "@/lib/anti-scrape";
 
 export const runtime = "nodejs";
 
@@ -21,6 +22,10 @@ const bodySchema = z.object({
 });
 
 export async function POST(request: Request) {
+  if (!isSameSiteRequest(request)) {
+    return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+  }
+
   const parsed = bodySchema.safeParse(await request.json().catch(() => null));
   if (!parsed.success) {
     return NextResponse.json({ error: "Invalid input" }, { status: 400 });

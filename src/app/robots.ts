@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { sitemapPublicOrigin } from "@/lib/seo";
+import { ROBOTS_DISALLOW_ALL_AGENTS } from "@/lib/anti-scrape";
 
 export default function robots(): MetadataRoute.Robots {
   // Always point crawlers at the public production host.
@@ -24,6 +25,10 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "*",
         allow: "/",
         disallow,
+      },
+      {
+        userAgent: [...ROBOTS_DISALLOW_ALL_AGENTS],
+        disallow: "/",
       },
       // Explicit allow for Meta link-preview crawlers (WhatsApp / Messenger / Facebook)
       {
