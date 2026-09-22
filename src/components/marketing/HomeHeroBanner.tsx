@@ -98,7 +98,7 @@ export function HomeHeroBanner() {
           </ul>
 
           <motion.div
-            className="flex w-full max-w-md flex-nowrap items-center justify-center gap-2 pt-0.5 sm:gap-2.5 lg:max-w-none lg:justify-start"
+            className="flex w-full max-w-md flex-nowrap items-center justify-center gap-2 pt-2.5 sm:gap-2.5 lg:max-w-none lg:justify-start"
             {...item(0.48)}
           >
             <Button
