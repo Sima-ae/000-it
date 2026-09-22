@@ -1,11 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { useMemo } from "react";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
 import { QuantityStepper } from "@/components/shop/QuantityStepper";
+import { ShopProductImage } from "@/components/shop/ShopProductImage";
 import { useCartStore } from "@/lib/shop/cart-store";
 import { resolveCartItems, cartTotalsInEuros } from "@/lib/shop/cart";
 import { localizeShopProduct } from "@/lib/shop/catalog";
@@ -45,16 +45,11 @@ export function CartView() {
               className="flex flex-col gap-4 rounded-2xl border border-border/70 bg-background/60 p-4 sm:flex-row"
             >
               <div className="relative h-24 w-full shrink-0 overflow-hidden rounded-xl bg-muted sm:h-20 sm:w-20">
-                {line.product.image ? (
-                  <Image
-                    src={line.product.image}
-                    alt={localized.localizedName}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 640px) 100vw, 80px"
-                    unoptimized={line.product.image.startsWith("http")}
-                  />
-                ) : null}
+                <ShopProductImage
+                  src={line.product.image}
+                  alt={localized.localizedName}
+                  sizes="(max-width: 640px) 100vw, 80px"
+                />
               </div>
               <div className="min-w-0 flex-1">
                 <SoftLink

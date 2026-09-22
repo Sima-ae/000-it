@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Button } from "@/components/ui/button";
@@ -9,6 +8,7 @@ import { ServiceCard } from "@/components/content/ServiceCard";
 import { Reveal } from "@/components/marketing/Reveal";
 import { ServiceInquiryDialog } from "@/components/marketing/ServiceInquiryDialog";
 import { AddToCartButton } from "@/components/shop/AddToCartButton";
+import { ShopProductImage } from "@/components/shop/ShopProductImage";
 import {
   getCatalogItem,
   getServiceSlugs,
@@ -230,12 +230,10 @@ export default async function ServiceDetailPage({
               </div>
               {content.image ? (
                 <div className="relative aspect-4/3 overflow-hidden rounded-[1.75rem] border border-border/70 shadow-sm">
-                  <Image
+                  <ShopProductImage
                     src={content.image}
                     alt={content.title}
-                    fill
-                    className="object-cover"
-                    unoptimized
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     priority
                   />
                 </div>

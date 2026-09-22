@@ -1,11 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { GlassCard } from "@/components/marketing/GlassCard";
 import { SoftLink } from "@/components/shared/SoftLink";
+import { ShopProductImage } from "@/components/shop/ShopProductImage";
 import { useCartStore } from "@/lib/shop/cart-store";
 import { centsToEuros, formatShopEuro } from "@/lib/shop/vat";
 import type { ShopProduct } from "@/lib/shop/catalog";
@@ -29,20 +29,11 @@ export function ShopProductCard({ product }: { product: ShopProduct }) {
     <GlassCard className="flex h-full flex-col overflow-hidden p-0">
       <SoftLink href={localizedHref(locale, `/shop/${product.slug}`)} className="block">
         <div className="relative h-40 w-full bg-muted/40">
-          {product.image ? (
-            <Image
-              src={product.image}
-              alt={localized.localizedName}
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 33vw"
-              unoptimized={product.image.startsWith("http")}
-            />
-          ) : (
-            <div className="flex h-full items-center justify-center text-sm text-muted-foreground">
-              TripleZero iT
-            </div>
-          )}
+          <ShopProductImage
+            src={product.image}
+            alt={localized.localizedName}
+            sizes="(max-width: 768px) 100vw, 33vw"
+          />
         </div>
       </SoftLink>
       <div className="flex flex-1 flex-col p-5">

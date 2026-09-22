@@ -1,6 +1,8 @@
-import Image from "next/image";
+"use client";
+
 import { SoftLink } from "@/components/shared/SoftLink";
 import { GlassCard } from "@/components/marketing/GlassCard";
+import { ShopProductImage } from "@/components/shop/ShopProductImage";
 import { formatEuro } from "@/lib/format-euro";
 
 export function ServiceCard({
@@ -21,7 +23,11 @@ export function ServiceCard({
       <GlassCard className="flex h-full flex-col overflow-hidden p-0">
         {image ? (
           <div className="relative h-36 w-full bg-muted/40">
-            <Image src={image} alt={title} fill className="object-cover" sizes="(max-width:768px) 100vw, 33vw" />
+            <ShopProductImage
+              src={image}
+              alt={title}
+              sizes="(max-width:768px) 100vw, 33vw"
+            />
           </div>
         ) : null}
         <div className="flex flex-1 flex-col p-5">

@@ -1,9 +1,9 @@
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
 import { AddToCartButton } from "@/components/shop/AddToCartButton";
+import { ShopProductImage } from "@/components/shop/ShopProductImage";
 import { getShopProductBySlug, localizeShopProduct } from "@/lib/shop/catalog";
 import { centsToEuros, formatShopEuro } from "@/lib/shop/vat";
 import { localizedHref } from "@/i18n/pathnames";
@@ -42,18 +42,14 @@ export default async function ShopProductPage({
 
       <div className="grid gap-10 md:grid-cols-2">
         <div className="relative aspect-video overflow-hidden rounded-2xl border border-border/60 bg-muted">
-          {product.image ? (
-            <Image
-              src={product.image}
-              alt={localized.localizedName}
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-              priority
-              unoptimized={product.image.startsWith("http")}
-            />
-          ) : null}
+          <ShopProductImage
+            src={product.image}
+            alt={localized.localizedName}
+            sizes="(max-width: 768px) 100vw, 50vw"
+            priority
+          />
         </div>
+
 
         <div>
           <p className="text-xs uppercase tracking-wide text-muted-foreground">

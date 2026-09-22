@@ -84,7 +84,7 @@ function inferSourceFromPost(input: {
 
 /** Drop old lead + boilerplate so remaining text can seed a fresh draft. */
 export function extractSummaryFromStoredDescription(description: string) {
-  let text = stripBoilerplateCopy(cleanSourceSummary(description || ""));
+  const text = stripBoilerplateCopy(cleanSourceSummary(description || ""));
   const paras = text
     .split(/\n\s*\n/)
     .map((p) => p.trim())
