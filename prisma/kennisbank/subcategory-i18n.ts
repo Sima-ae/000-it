@@ -232,6 +232,38 @@ export const SUBCATEGORY_I18N: Record<string, LocaleCopy> = {
     ["Correio Microsoft", "Exchange Online, Outlook, OWA e ligar caixas Microsoft 365."],
     ["Posta Microsoft", "Exchange Online, Outlook, OWA e collegare caselle Microsoft 365."],
   ),
+  "microsoft-teams": loc(
+    ["Teams", "Meetings, channels, guests and sharing files in Microsoft Teams."],
+    ["Teams", "Besprechungen, Kanäle, Gäste und Dateien in Microsoft Teams."],
+    ["Teams", "Réunions, canaux, invités et partage de fichiers dans Microsoft Teams."],
+    ["Teams", "Reuniones, canales, invitados y archivos en Microsoft Teams."],
+    ["Teams", "Reuniões, canais, convidados e ficheiros no Microsoft Teams."],
+    ["Teams", "Riunioni, canali, ospiti e file in Microsoft Teams."],
+  ),
+  "microsoft-onedrive": loc(
+    ["OneDrive and SharePoint", "Sync, sharing, storage, versions and SharePoint team sites."],
+    ["OneDrive und SharePoint", "Sync, Freigabe, Speicher, Versionen und SharePoint-Teamsites."],
+    ["OneDrive et SharePoint", "Sync, partage, stockage, versions et sites d'équipe SharePoint."],
+    ["OneDrive y SharePoint", "Sincronización, uso compartido, almacenamiento, versiones y sitios de equipo."],
+    ["OneDrive e SharePoint", "Sincronização, partilha, armazenamento, versões e sites de equipa SharePoint."],
+    ["OneDrive e SharePoint", "Sincronizzazione, condivisione, archiviazione, versioni e siti team SharePoint."],
+  ),
+  "microsoft-beheer": loc(
+    ["Tenant, licenses and admin", "Licenses, users, DNS, domain, migration and offboarding in Microsoft 365."],
+    ["Tenant, Lizenzen und Verwaltung", "Lizenzen, Benutzer, DNS, Domäne, Migration und Offboarding in Microsoft 365."],
+    ["Locataire, licences et admin", "Licences, utilisateurs, DNS, domaine, migration et offboarding dans Microsoft 365."],
+    ["Inquilino, licencias y administración", "Licencias, usuarios, DNS, dominio, migración y offboarding en Microsoft 365."],
+    ["Inquilino, licenças e administração", "Licenças, utilizadores, DNS, domínio, migração e offboarding no Microsoft 365."],
+    ["Tenant, licenze e amministrazione", "Licenze, utenti, DNS, dominio, migrazione e offboarding in Microsoft 365."],
+  ),
+  "microsoft-beveiliging": loc(
+    ["Security and accounts", "MFA, sign-in, phishing, passwords and account security in Microsoft 365."],
+    ["Sicherheit und Konten", "MFA, Anmeldung, Phishing, Passwörter und Kontosicherheit in Microsoft 365."],
+    ["Sécurité et comptes", "MFA, connexion, phishing, mots de passe et sécurité des comptes dans Microsoft 365."],
+    ["Seguridad y cuentas", "MFA, inicio de sesión, phishing, contraseñas y seguridad de cuentas en Microsoft 365."],
+    ["Segurança e contas", "MFA, início de sessão, phishing, palavras-passe e segurança de contas no Microsoft 365."],
+    ["Sicurezza e account", "MFA, accesso, phishing, password e sicurezza degli account in Microsoft 365."],
+  ),
   "ai-agents-types": loc(
     ["Agent types", "SEO, content, social, ads, analytics, chatbot and research agents at TripleZero iT."],
     ["Agenttypen", "SEO-, Content-, Social-, Ads-, Analytics-, Chatbot- und Research-Agents bei TripleZero iT."],
@@ -726,6 +758,344 @@ export const SUBCATEGORY_I18N: Record<string, LocaleCopy> = {
     [
       "PHP, OpenLiteSpeed, backup e problemi",
       "PHP, OLS, cache, cron, backup e errori comuni.",
+    ],
+  ),
+  "plesk-starten": loc(
+    [
+      "Getting started and access",
+      "Login, 2FA, extra users, panel URL/port 8443 and limits.",
+    ],
+    [
+      "Start und Zugang",
+      "Login, 2FA, zusätzliche Benutzer, Panel-URL/Port 8443 und Limits.",
+    ],
+    [
+      "Démarrage et accès",
+      "Connexion, 2FA, utilisateurs extra, URL du panel/port 8443 et limites.",
+    ],
+    [
+      "Inicio y acceso",
+      "Inicio de sesión, 2FA, usuarios extra, URL del panel/puerto 8443 y límites.",
+    ],
+    [
+      "Começar e acesso",
+      "Login, 2FA, utilizadores extra, URL do painel/porta 8443 e limites.",
+    ],
+    [
+      "Avvio e accesso",
+      "Accesso, 2FA, utenti extra, URL del panel/porta 8443 e limiti.",
+    ],
+  ),
+  "plesk-websites": loc(
+    [
+      "Websites and domains",
+      "Domains, aliases, redirects, subdomains, staging and document roots.",
+    ],
+    [
+      "Websites und Domains",
+      "Domains, Aliase, Redirects, Subdomains, Staging und Document Roots.",
+    ],
+    [
+      "Sites et domaines",
+      "Domaines, alias, redirections, sous-domaines, staging et document roots.",
+    ],
+    [
+      "Sitios y dominios",
+      "Dominios, alias, redirecciones, subdominios, staging y document roots.",
+    ],
+    [
+      "Sites e domínios",
+      "Domínios, aliases, redirects, subdomínios, staging e document roots.",
+    ],
+    [
+      "Siti e domini",
+      "Domini, alias, redirect, sottodomini, staging e document root.",
+    ],
+  ),
+  "plesk-email-dns": loc(
+    [
+      "Email and DNS",
+      "Mailboxes, SPF/DKIM, webmail, spam filter, zones and MX records.",
+    ],
+    [
+      "E-Mail und DNS",
+      "Postfächer, SPF/DKIM, Webmail, Spamfilter, Zonen und MX-Records.",
+    ],
+    [
+      "E-mail et DNS",
+      "Boîtes mail, SPF/DKIM, webmail, antispam, zones et enregistrements MX.",
+    ],
+    [
+      "Correo y DNS",
+      "Buzones, SPF/DKIM, webmail, filtro antispam, zonas y registros MX.",
+    ],
+    [
+      "E-mail e DNS",
+      "Caixas de correio, SPF/DKIM, webmail, filtro de spam, zonas e registos MX.",
+    ],
+    [
+      "Email e DNS",
+      "Caselle, SPF/DKIM, webmail, filtro antispam, zone e record MX.",
+    ],
+  ),
+  "plesk-ssl-beveiliging": loc(
+    [
+      "SSL and security",
+      "Let's Encrypt, custom SSL, Fail2Ban, directory protection and brute-force.",
+    ],
+    [
+      "SSL und Sicherheit",
+      "Let's Encrypt, Custom-SSL, Fail2Ban, Verzeichnisschutz und Brute-Force.",
+    ],
+    [
+      "SSL et sécurité",
+      "Let's Encrypt, SSL personnalisé, Fail2Ban, protection de dossier et brute-force.",
+    ],
+    [
+      "SSL y seguridad",
+      "Let's Encrypt, SSL personalizado, Fail2Ban, protección de carpetas y fuerza bruta.",
+    ],
+    [
+      "SSL e segurança",
+      "Let's Encrypt, SSL personalizado, Fail2Ban, proteção de pastas e força bruta.",
+    ],
+    [
+      "SSL e sicurezza",
+      "Let's Encrypt, SSL personalizzato, Fail2Ban, protezione directory e brute-force.",
+    ],
+  ),
+  "plesk-bestanden-wordpress": loc(
+    [
+      "Files, databases and WordPress",
+      "File Manager, FTP/SFTP, phpMyAdmin and WordPress Toolkit.",
+    ],
+    [
+      "Dateien, Datenbanken und WordPress",
+      "File Manager, FTP/SFTP, phpMyAdmin und WordPress Toolkit.",
+    ],
+    [
+      "Fichiers, bases de données et WordPress",
+      "File Manager, FTP/SFTP, phpMyAdmin et WordPress Toolkit.",
+    ],
+    [
+      "Archivos, bases de datos y WordPress",
+      "File Manager, FTP/SFTP, phpMyAdmin y WordPress Toolkit.",
+    ],
+    [
+      "Ficheiros, bases de dados e WordPress",
+      "File Manager, FTP/SFTP, phpMyAdmin e WordPress Toolkit.",
+    ],
+    [
+      "File, database e WordPress",
+      "File Manager, FTP/SFTP, phpMyAdmin e WordPress Toolkit.",
+    ],
+  ),
+  "plesk-php-vps": loc(
+    [
+      "PHP, backups and VPS",
+      "PHP, cron, backups, logs, services, license and updates.",
+    ],
+    [
+      "PHP, Backups und VPS",
+      "PHP, Cron, Backups, Logs, Dienste, Lizenz und Updates.",
+    ],
+    [
+      "PHP, sauvegardes et VPS",
+      "PHP, cron, sauvegardes, journaux, services, licence et mises à jour.",
+    ],
+    [
+      "PHP, copias y VPS",
+      "PHP, cron, copias, registros, servicios, licencia y actualizaciones.",
+    ],
+    [
+      "PHP, backups e VPS",
+      "PHP, cron, backups, logs, serviços, licença e atualizações.",
+    ],
+    [
+      "PHP, backup e VPS",
+      "PHP, cron, backup, log, servizi, licenza e aggiornamenti.",
+    ],
+  ),
+  "plesk-reseller": loc(
+    [
+      "Reseller and subscriptions",
+      "Service plans, customer accounts, limits and extensions.",
+    ],
+    [
+      "Reseller und Abonnements",
+      "Service-Pläne, Kundenkonten, Limits und Erweiterungen.",
+    ],
+    [
+      "Revendeur et abonnements",
+      "Plans de service, comptes clients, limites et extensions.",
+    ],
+    [
+      "Reseller y suscripciones",
+      "Planes de servicio, cuentas de cliente, límites y extensiones.",
+    ],
+    [
+      "Reseller e subscrições",
+      "Planos de serviço, contas de cliente, limites e extensões.",
+    ],
+    [
+      "Reseller e abbonamenti",
+      "Piani di servizio, account clienti, limiti ed estensioni.",
+    ],
+  ),
+  "veilig-online-basis": loc(
+    [
+      "Basics and awareness",
+      "Why staying safe online matters, general tips and fraud overview.",
+    ],
+    [
+      "Grundlagen und Bewusstsein",
+      "Warum Online-Sicherheit wichtig ist, allgemeine Tipps und Betrugsüberblick.",
+    ],
+    [
+      "Bases et sensibilisation",
+      "Pourquoi la sécurité en ligne compte, conseils généraux et aperçu des fraudes.",
+    ],
+    [
+      "Bases y concienciación",
+      "Por qué importa la seguridad online, consejos generales y visión del fraude.",
+    ],
+    [
+      "Bases e consciencialização",
+      "Porque a segurança online importa, dicas gerais e visão geral da fraude.",
+    ],
+    [
+      "Basi e consapevolezza",
+      "Perché la sicurezza online conta, consigli generali e panoramica sulle frodi.",
+    ],
+  ),
+  "veilig-online-phishing": loc(
+    [
+      "Phishing and scams",
+      "Phishing, fake websites, social engineering, smishing, scams and fraud.",
+    ],
+    [
+      "Phishing und Betrug",
+      "Phishing, Fake-Websites, Social Engineering, Smishing, Scams und Betrug.",
+    ],
+    [
+      "Phishing et arnaques",
+      "Phishing, faux sites, ingénierie sociale, smishing, arnaques et fraude.",
+    ],
+    [
+      "Phishing y estafas",
+      "Phishing, webs falsas, ingeniería social, smishing, estafas y fraude.",
+    ],
+    [
+      "Phishing e burla",
+      "Phishing, sites falsos, engenharia social, smishing, burla e fraude.",
+    ],
+    [
+      "Phishing e truffe",
+      "Phishing, siti falsi, social engineering, smishing, truffe e frodi.",
+    ],
+  ),
+  "veilig-online-wachtwoorden": loc(
+    [
+      "Passwords and accounts",
+      "Passwords, 2FA, account security, sign-in and recovery.",
+    ],
+    [
+      "Passwörter und Konten",
+      "Passwörter, 2FA, Kontosicherheit, Anmeldung und Wiederherstellung.",
+    ],
+    [
+      "Mots de passe et comptes",
+      "Mots de passe, 2FA, sécurité des comptes, connexion et récupération.",
+    ],
+    [
+      "Contraseñas y cuentas",
+      "Contraseñas, 2FA, seguridad de cuentas, acceso y recuperación.",
+    ],
+    [
+      "Palavras-passe e contas",
+      "Palavras-passe, 2FA, segurança de contas, login e recuperação.",
+    ],
+    [
+      "Password e account",
+      "Password, 2FA, sicurezza account, accesso e recupero.",
+    ],
+  ),
+  "veilig-online-malware": loc(
+    [
+      "Malware and devices",
+      "Viruses, malware, ransomware, updates, downloads and device security.",
+    ],
+    [
+      "Malware und Geräte",
+      "Viren, Malware, Ransomware, Updates, Downloads und Gerätesicherheit.",
+    ],
+    [
+      "Logiciels malveillants et appareils",
+      "Virus, malware, ransomware, mises à jour, téléchargements et sécurité des appareils.",
+    ],
+    [
+      "Malware y dispositivos",
+      "Virus, malware, ransomware, actualizaciones, descargas y seguridad del dispositivo.",
+    ],
+    [
+      "Malware e dispositivos",
+      "Vírus, malware, ransomware, atualizações, transferências e segurança do dispositivo.",
+    ],
+    [
+      "Malware e dispositivi",
+      "Virus, malware, ransomware, aggiornamenti, download e sicurezza dei dispositivi.",
+    ],
+  ),
+  "veilig-online-netwerk": loc(
+    [
+      "Network, Wi-Fi and VPN",
+      "Public Wi-Fi, router security, VPN, MITM, brute-force and DDoS.",
+    ],
+    [
+      "Netzwerk, WLAN und VPN",
+      "Öffentliches WLAN, Router-Sicherheit, VPN, MITM, Brute-Force und DDoS.",
+    ],
+    [
+      "Réseau, Wi-Fi et VPN",
+      "Wi-Fi public, sécurité du routeur, VPN, MITM, force brute et DDoS.",
+    ],
+    [
+      "Red, Wi-Fi y VPN",
+      "Wi-Fi público, seguridad del router, VPN, MITM, fuerza bruta y DDoS.",
+    ],
+    [
+      "Rede, Wi-Fi e VPN",
+      "Wi-Fi público, segurança do router, VPN, MITM, força bruta e DDoS.",
+    ],
+    [
+      "Rete, Wi-Fi e VPN",
+      "Wi-Fi pubblico, sicurezza del router, VPN, MITM, brute-force e DDoS.",
+    ],
+  ),
+  "veilig-online-privacy": loc(
+    [
+      "Privacy, data and family",
+      "Data breaches, kids online, social privacy, shopping and identity.",
+    ],
+    [
+      "Datenschutz, Daten und Familie",
+      "Datenlecks, Kinder online, Social-Privacy, Einkaufen und Identität.",
+    ],
+    [
+      "Confidentialité, données et famille",
+      "Fuites de données, enfants en ligne, vie privée sociale, achats et identité.",
+    ],
+    [
+      "Privacidad, datos y familia",
+      "Filtraciones, niños online, privacidad social, compras e identidad.",
+    ],
+    [
+      "Privacidade, dados e família",
+      "Fugas de dados, crianças online, privacidade social, compras e identidade.",
+    ],
+    [
+      "Privacy, dati e famiglia",
+      "Data breach, bambini online, privacy social, shopping e identità.",
     ],
   ),
 };

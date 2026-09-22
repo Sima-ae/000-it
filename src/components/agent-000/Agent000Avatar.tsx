@@ -258,18 +258,18 @@ export function Agent000Avatar({
           <circle cx="126" cy="246" r="1.05" fill="#22d3ee" className="a000-led" />
         </g>
 
-        {/* Left arm tube — behind torso at shoulder, continuous to wrist */}
-        <g className="a000-arm-left" transform="translate(8 0)">
+        {/* Left upper arm behind torso — continuous tube tucked under shoulder */}
+        <g className="a000-arm-left" transform="translate(6 0)">
           <path
             d="
-              M66 100
-              C50 103 40 114 37 132
-              C34 148 34 162 40 172
-              C41 176 45 178 50 178
-              L54 176
-              C52 174 49 170 48 166
-              C46 156 46 144 49 130
-              C52 116 59 106 70 102
+              M74 98
+              C58 102 48 112 42 130
+              C40 148 40 162 45 174
+              C46 178 49.5 181.5 54 182
+              L58.5 180
+              C55.5 178 53 174 52 168
+              C50.5 154 50.5 140 53 126
+              C56 112 64 102 76 98
               Z
             "
             fill={`url(#${armL})`}
@@ -279,49 +279,26 @@ export function Agent000Avatar({
           />
           <path
             d="
-              M66 100
-              C50 103 40 114 37 132
-              C34 148 34 162 40 172
-              C41 176 45 178 50 178
-              L54 176
-              C52 174 49 170 48 166
-              C46 156 46 144 49 130
-              C52 116 59 106 70 102
+              M74 98
+              C58 102 48 112 42 130
+              C40 148 40 162 45 174
+              C46 178 49.5 181.5 54 182
+              L58.5 180
+              C55.5 178 53 174 52 168
+              C50.5 154 50.5 140 53 126
+              C56 112 64 102 76 98
               Z
             "
             fill={`url(#${form})`}
           />
           <path
-            d="M62 104 C52 110 45 124 43 138"
+            d="M64 104 C54 114 49 128 48 146"
             fill="none"
             stroke="#ffffff"
-            strokeWidth="2.2"
+            strokeWidth="1.8"
             strokeLinecap="round"
-            opacity="0.35"
+            opacity="0.3"
           />
-          <g className="a000-hand a000-hand-left">
-            <path
-              d="M42 174 C38 175 35 179 36 184 C37 189 41 192 46 191 C51 190 54 186 54 181 C54 176 50 173 46 173 C44 173 43 173.5 42 174 Z"
-              fill={`url(#${hand})`}
-              stroke="#8fa0b5"
-              strokeWidth="0.9"
-            />
-            <path
-              d="M42 174 C38 175 35 179 36 184 C37 189 41 192 46 191 C51 190 54 186 54 181 C54 176 50 173 46 173 C44 173 43 173.5 42 174 Z"
-              fill={`url(#${form})`}
-            />
-            <path
-              d="M40 175 C36 173 33 175 33 178.5 C33 181.5 36 183 39 182 C41.5 181 42 177 40 175 Z"
-              fill={`url(#${hand})`}
-              stroke="#8fa0b5"
-              strokeWidth="0.7"
-            />
-            <rect x="38" y="188" width="2.6" height="7.5" rx="1.3" fill={`url(#${hand})`} stroke="#8fa0b5" strokeWidth="0.55" />
-            <rect x="42" y="189" width="2.6" height="8.5" rx="1.3" fill={`url(#${hand})`} stroke="#8fa0b5" strokeWidth="0.55" />
-            <rect x="46" y="188.5" width="2.6" height="7.8" rx="1.3" fill={`url(#${hand})`} stroke="#8fa0b5" strokeWidth="0.55" />
-            <rect x="50" y="187.5" width="2.4" height="6.8" rx="1.2" fill={`url(#${hand})`} stroke="#8fa0b5" strokeWidth="0.55" />
-            <circle cx="44" cy="180" r="0.95" fill="#22d3ee" className="a000-led" />
-          </g>
         </g>
 
         {/* Raised upper arm tucked under the shoulder like the other arm; forearm unchanged */}
@@ -398,6 +375,73 @@ export function Agent000Avatar({
           <circle className="a000-led" cx="90" cy="138" r="2.1" fill="#22d3ee" />
           <circle className="a000-led" cx="100" cy="142" r="2.1" fill="#22d3ee" />
           <circle className="a000-led" cx="110" cy="138" r="2.1" fill="#22d3ee" />
+        </g>
+
+        {/* Elbow → forearm → wrist → hand in front of body (same curve, overlaps upper arm) */}
+        <g className="a000-arm-left" transform="translate(6 0)">
+          <path
+            d="
+              M41 136
+              C40 148 40 162 45 174
+              C46 178 49.5 181.5 54 182
+              L58.5 180
+              C55.5 178 53 174 52 168
+              C50.5 154 50.5 145 51 136
+              L41 136
+              Z
+            "
+            fill={`url(#${armL})`}
+            stroke="#8fa0b5"
+            strokeWidth="1"
+            strokeLinejoin="round"
+          />
+          <path
+            d="
+              M41 136
+              C40 148 40 162 45 174
+              C46 178 49.5 181.5 54 182
+              L58.5 180
+              C55.5 178 53 174 52 168
+              C50.5 154 50.5 145 51 136
+              L41 136
+              Z
+            "
+            fill={`url(#${form})`}
+          />
+          <path
+            d="M48 140 C48 152 49 164 52 176"
+            fill="none"
+            stroke="#ffffff"
+            strokeWidth="1.6"
+            strokeLinecap="round"
+            opacity="0.28"
+          />
+          <g transform="translate(9 0) rotate(-20 46 182)">
+            <g className="a000-hand a000-hand-left">
+              <path
+                d="M42 174 C38 175 35 179 36 184 C37 189 41 192 46 191 C51 190 54 186 54 181 C54 176 50 173 46 173 C44 173 43 173.5 42 174 Z"
+                fill={`url(#${hand})`}
+                stroke="#8fa0b5"
+                strokeWidth="0.9"
+              />
+              <path
+                d="M42 174 C38 175 35 179 36 184 C37 189 41 192 46 191 C51 190 54 186 54 181 C54 176 50 173 46 173 C44 173 43 173.5 42 174 Z"
+                fill={`url(#${form})`}
+              />
+              {/* Thumb inward toward the body */}
+              <path
+                d="M52 175 C56 173 59 175 59 178.5 C59 181.5 56 183 53 182 C50.5 181 50 177 52 175 Z"
+                fill={`url(#${hand})`}
+                stroke="#8fa0b5"
+                strokeWidth="0.7"
+              />
+              <rect x="38" y="187.5" width="2.4" height="6.8" rx="1.2" fill={`url(#${hand})`} stroke="#8fa0b5" strokeWidth="0.55" />
+              <rect x="42" y="188.5" width="2.6" height="7.8" rx="1.3" fill={`url(#${hand})`} stroke="#8fa0b5" strokeWidth="0.55" />
+              <rect x="46" y="189" width="2.6" height="8.5" rx="1.3" fill={`url(#${hand})`} stroke="#8fa0b5" strokeWidth="0.55" />
+              <rect x="50" y="188" width="2.6" height="7.5" rx="1.3" fill={`url(#${hand})`} stroke="#8fa0b5" strokeWidth="0.55" />
+              <circle cx="44" cy="180" r="0.95" fill="#22d3ee" className="a000-led" />
+            </g>
+          </g>
         </g>
 
         {/* Neck */}
@@ -526,16 +570,17 @@ export function Agent000Avatar({
               d="M158 42 C162 41 165 37 164 32 C163 27 159 24 154 25 C149 26 146 30 146 35 C146 40 150 43 154 43 C156 43 157 42.5 158 42 Z"
               fill={`url(#${form})`}
             />
+            {/* Thumb inward toward the head/body */}
             <path
-              d="M160 41 C164 43 167 41 167 37.5 C167 34.5 164 33 161 34 C158.5 35 158 39 160 41 Z"
+              d="M148 41 C144 43 141 41 141 37.5 C141 34.5 144 33 147 34 C149.5 35 150 39 148 41 Z"
               fill={`url(#${hand})`}
               stroke="#8fa0b5"
               strokeWidth="0.7"
             />
-            <rect x="147.6" y="21.7" width="2.4" height="6.8" rx="1.2" fill={`url(#${hand})`} stroke="#8fa0b5" strokeWidth="0.55" />
-            <rect x="151.4" y="19.7" width="2.6" height="7.8" rx="1.3" fill={`url(#${hand})`} stroke="#8fa0b5" strokeWidth="0.55" />
-            <rect x="155.4" y="18.5" width="2.6" height="8.5" rx="1.3" fill={`url(#${hand})`} stroke="#8fa0b5" strokeWidth="0.55" />
-            <rect x="159.4" y="20.5" width="2.6" height="7.5" rx="1.3" fill={`url(#${hand})`} stroke="#8fa0b5" strokeWidth="0.55" />
+            <rect x="150" y="20.5" width="2.6" height="7.5" rx="1.3" fill={`url(#${hand})`} stroke="#8fa0b5" strokeWidth="0.55" />
+            <rect x="154" y="18.5" width="2.6" height="8.5" rx="1.3" fill={`url(#${hand})`} stroke="#8fa0b5" strokeWidth="0.55" />
+            <rect x="158" y="19.7" width="2.6" height="7.8" rx="1.3" fill={`url(#${hand})`} stroke="#8fa0b5" strokeWidth="0.55" />
+            <rect x="162" y="21.7" width="2.4" height="6.8" rx="1.2" fill={`url(#${hand})`} stroke="#8fa0b5" strokeWidth="0.55" />
             <circle cx="156" cy="36" r="0.95" fill="#22d3ee" className="a000-led" />
           </g>
         </g>

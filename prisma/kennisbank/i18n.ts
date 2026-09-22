@@ -447,27 +447,33 @@ export const CATEGORY_I18N: Record<
   plesk: {
     en: {
       name: "Plesk",
-      description: "Working with Plesk: domains, email, databases and subscriptions.",
+      description:
+        "Working with Plesk: login, websites, email, SSL, databases, WordPress Toolkit, reseller and VPS.",
     },
     de: {
       name: "Plesk",
-      description: "Arbeiten mit Plesk: Domains, E-Mail, Datenbanken und Abonnements.",
+      description:
+        "Arbeiten mit Plesk: Login, Websites, E-Mail, SSL, Datenbanken, WordPress Toolkit, Reseller und VPS.",
     },
     fr: {
       name: "Plesk",
-      description: "Travailler avec Plesk : domaines, e-mail, bases de données et abonnements.",
+      description:
+        "Travailler avec Plesk : connexion, sites, e-mail, SSL, bases de données, WordPress Toolkit, revendeur et VPS.",
     },
     es: {
       name: "Plesk",
-      description: "Trabajar con Plesk: dominios, correo, bases de datos y suscripciones.",
+      description:
+        "Trabajar con Plesk: acceso, sitios, correo, SSL, bases de datos, WordPress Toolkit, reseller y VPS.",
     },
     pt: {
       name: "Plesk",
-      description: "Trabalhar com Plesk: domínios, e-mail, bases de dados e subscrições.",
+      description:
+        "Trabalhar com Plesk: login, sites, e-mail, SSL, bases de dados, WordPress Toolkit, reseller e VPS.",
     },
     it: {
       name: "Plesk",
-      description: "Lavorare con Plesk: domini, e-mail, database e abbonamenti.",
+      description:
+        "Lavorare con Plesk: accesso, siti, e-mail, SSL, database, WordPress Toolkit, reseller e VPS.",
     },
   },
   "ai-scan": {

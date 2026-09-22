@@ -8,6 +8,9 @@ import { aeoGeoSeoTopicBuilders } from "./aeo-geo-seo-bodies";
 import { aiScanTopicBuilders } from "./ai-scan-bodies";
 import { bloggenTopicBuilders } from "./bloggen-bodies";
 import { cyberpanelTopicBuilders } from "./cyberpanel-bodies";
+import { microsoftTopicBuilders } from "./microsoft-bodies";
+import { pleskTopicBuilders } from "./plesk-bodies";
+import { veiligOnlineTopicBuilders } from "./veilig-online-bodies";
 
 const BRAND = "TripleZero iT";
 
@@ -1352,7 +1355,10 @@ export function buildArticleHtml(
     aeoGeoSeoTopicBuilders[topic] ||
     aiScanTopicBuilders[topic] ||
     bloggenTopicBuilders[topic] ||
-    cyberpanelTopicBuilders[topic];
+    cyberpanelTopicBuilders[topic] ||
+    microsoftTopicBuilders[topic] ||
+    pleskTopicBuilders[topic] ||
+    veiligOnlineTopicBuilders[topic];
   if (builder) return builder(ctx);
   return genericBody(ctx);
 }

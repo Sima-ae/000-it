@@ -48,7 +48,7 @@
     [
       "veilig-online",
       "Veilig Online",
-      "Bewust veilig internetten: phishing, wifi, social engineering en meer."
+      "Bewust veilig internetten: phishing, wachtwoorden, malware, wifi, VPN, privacy en gezin — inclusief de subcategorieën Basis, Phishing, Wachtwoorden, Malware, Netwerk en Privacy."
     ],
     [
       "support",
@@ -58,7 +58,7 @@
     [
       "plesk",
       "Plesk controlpanel",
-      "Reseller- en accountbeheer in Plesk, inclusief SSL."
+      "Werken met Plesk: inloggen, websites, e-mail, SSL, databases, WordPress Toolkit, reseller en VPS."
     ],
     [
       "ai-scan",
@@ -479,6 +479,108 @@
       "PHP, OpenLiteSpeed, backups en problemen",
       "PHP, OLS, cache, cron, backups en veelvoorkomende fouten.",
       "cyberpanel"
+    ],
+    [
+      "microsoft-teams",
+      "Teams",
+      "Vergaderen, kanalen, gasten en bestanden delen in Microsoft Teams.",
+      "microsoft"
+    ],
+    [
+      "microsoft-onedrive",
+      "OneDrive en SharePoint",
+      "Synchronisatie, delen, opslag, versies en SharePoint-teamsites.",
+      "microsoft"
+    ],
+    [
+      "microsoft-beheer",
+      "Tenant, licenties en beheer",
+      "Licenties, gebruikers, DNS, domein, migratie en offboarding in Microsoft 365.",
+      "microsoft"
+    ],
+    [
+      "microsoft-beveiliging",
+      "Beveiliging en accounts",
+      "MFA, inloggen, phishing, wachtwoorden en accountbeveiliging in Microsoft 365.",
+      "microsoft"
+    ],
+    [
+      "plesk-starten",
+      "Starten en toegang",
+      "Inloggen, 2FA, extra gebruikers, panel-URL/poort 8443 en limieten.",
+      "plesk"
+    ],
+    [
+      "plesk-websites",
+      "Websites en domeinen",
+      "Domeinen, aliases, redirects, subdomeinen, staging en document roots.",
+      "plesk"
+    ],
+    [
+      "plesk-email-dns",
+      "E-mail en DNS",
+      "Mailboxen, SPF/DKIM, webmail, spamfilter, zones en MX-records.",
+      "plesk"
+    ],
+    [
+      "plesk-ssl-beveiliging",
+      "SSL en beveiliging",
+      "Let’s Encrypt, custom SSL, Fail2Ban, mapbeveiliging en brute-force.",
+      "plesk"
+    ],
+    [
+      "plesk-bestanden-wordpress",
+      "Bestanden, databases en WordPress",
+      "File Manager, FTP/SFTP, phpMyAdmin en WordPress Toolkit.",
+      "plesk"
+    ],
+    [
+      "plesk-php-vps",
+      "PHP, backups en VPS",
+      "PHP, cron, backups, logs, services, licentie en updates.",
+      "plesk"
+    ],
+    [
+      "plesk-reseller",
+      "Reseller en abonnementen",
+      "Service plans, klantaccounts, limieten en extensies.",
+      "plesk"
+    ],
+    [
+      "veilig-online-basis",
+      "Basis en bewustwording",
+      "Waarom veilig online belangrijk is, algemene tips en fraude-overzicht.",
+      "veilig-online"
+    ],
+    [
+      "veilig-online-phishing",
+      "Phishing en oplichting",
+      "Phishing, nepwebsites, social engineering, smishing, scams en fraude.",
+      "veilig-online"
+    ],
+    [
+      "veilig-online-wachtwoorden",
+      "Wachtwoorden en accounts",
+      "Wachtwoorden, 2FA, accountbeveiliging, login en herstel.",
+      "veilig-online"
+    ],
+    [
+      "veilig-online-malware",
+      "Malware en apparaten",
+      "Virussen, malware, ransomware, updates, downloads en apparaatbeveiliging.",
+      "veilig-online"
+    ],
+    [
+      "veilig-online-netwerk",
+      "Netwerk, wifi en VPN",
+      "Openbare wifi, routerbeveiliging, VPN, MITM, brute-force en DDoS.",
+      "veilig-online"
+    ],
+    [
+      "veilig-online-privacy",
+      "Privacy, gegevens en gezin",
+      "Datalekken, kinderen online, social privacy, winkelen en identiteit.",
+      "veilig-online"
     ]
   ],
   "articles": [
@@ -1726,7 +1828,8 @@
       "categories": [
         "beveiliging",
         "plesk",
-        "ssl-certificaten"
+        "ssl-certificaten",
+        "plesk-ssl-beveiliging"
       ],
       "topic": "letsencrypt-plesk"
     },
@@ -1954,7 +2057,8 @@
       "categories": [
         "veilig-online",
         "beveiliging",
-        "beveiliging-overige"
+        "beveiliging-overige",
+        "veilig-online-malware"
       ],
       "topic": "viruses"
     },
@@ -1962,7 +2066,8 @@
       "slug": "tips-voor-veilig-internetten-veilig-online",
       "title": "Tips voor veilig internetten – Veilig Online",
       "categories": [
-        "veilig-online"
+        "veilig-online",
+        "veilig-online-basis"
       ],
       "topic": "safe-internet"
     },
@@ -1972,7 +2077,8 @@
       "categories": [
         "veilig-online",
         "beveiliging",
-        "beveiliging-overige"
+        "beveiliging-overige",
+        "veilig-online-netwerk"
       ],
       "topic": "public-wifi"
     },
@@ -1982,7 +2088,8 @@
       "categories": [
         "veilig-online",
         "beveiliging",
-        "beveiliging-overige"
+        "beveiliging-overige",
+        "veilig-online-phishing"
       ],
       "topic": "phishing"
     },
@@ -1992,7 +2099,8 @@
       "categories": [
         "veilig-online",
         "beveiliging",
-        "beveiliging-overige"
+        "beveiliging-overige",
+        "veilig-online-phishing"
       ],
       "topic": "social-engineering"
     },
@@ -2000,7 +2108,8 @@
       "slug": "een-eigen-url-shortener-hoe-doe-ik-dat",
       "title": "Een eigen URL shortener – hoe doe ik dat?",
       "categories": [
-        "veilig-online"
+        "veilig-online",
+        "veilig-online-malware"
       ],
       "topic": "url-shortener"
     },
@@ -2044,7 +2153,8 @@
       "slug": "een-hostingpakket-aanmaken-in-plesk-als-reseller",
       "title": "Een hostingpakket aanmaken in Plesk als reseller",
       "categories": [
-        "plesk"
+        "plesk",
+        "plesk-reseller"
       ],
       "topic": "plesk-package"
     },
@@ -2052,7 +2162,8 @@
       "slug": "toevoegen-account-in-plesk-onder-resellerpakket",
       "title": "Toevoegen account in Plesk onder resellerpakket",
       "categories": [
-        "plesk"
+        "plesk",
+        "plesk-reseller"
       ],
       "topic": "plesk-account"
     },
@@ -2060,7 +2171,8 @@
       "slug": "verplaatsen-domein-naar-een-ander-account-in-plesk",
       "title": "Verplaatsen domein naar een ander account in Plesk",
       "categories": [
-        "plesk"
+        "plesk",
+        "plesk-websites"
       ],
       "topic": "plesk-move"
     },
@@ -2710,7 +2822,8 @@
       "categories": [
         "beveiliging",
         "veilig-online",
-        "beveiliging-overige"
+        "beveiliging-overige",
+        "veilig-online-wachtwoorden"
       ],
       "topic": "ext-hoe-maak-ik-een-sterk-wachtwoord-en-bewaar-ik-he"
     },
@@ -2720,7 +2833,8 @@
       "categories": [
         "beveiliging",
         "veilig-online",
-        "beveiliging-overige"
+        "beveiliging-overige",
+        "veilig-online-phishing"
       ],
       "topic": "ext-hoe-herken-ik-een-nep-website-en-voorkom-ik-phis"
     },
@@ -2748,7 +2862,8 @@
       "categories": [
         "beveiliging",
         "veilig-online",
-        "beveiliging-overige"
+        "beveiliging-overige",
+        "veilig-online-privacy"
       ],
       "topic": "ext-hoe-bescherm-ik-mijn-kinderen-online"
     },
@@ -2969,7 +3084,8 @@
       "slug": "waarom-is-het-belangrijk-om-veilig-online-te-zijn",
       "title": "Waarom is het belangrijk om Veilig Online te zijn?",
       "categories": [
-        "veilig-online"
+        "veilig-online",
+        "veilig-online-basis"
       ],
       "topic": "ext-waarom-is-het-belangrijk-om-veilig-online-te-zij"
     },
@@ -2977,7 +3093,8 @@
       "slug": "hoe-bescherm-ik-mijn-online-accounts-tegen-hackers",
       "title": "Hoe bescherm ik mijn online accounts tegen hackers?",
       "categories": [
-        "veilig-online"
+        "veilig-online",
+        "veilig-online-wachtwoorden"
       ],
       "topic": "ext-hoe-bescherm-ik-mijn-online-accounts-tegen-hacke"
     },
@@ -2985,7 +3102,8 @@
       "slug": "hoe-herken-en-voorkom-ik-een-malware-infectie",
       "title": "Hoe herken en voorkom ik een malware-infectie?",
       "categories": [
-        "veilig-online"
+        "veilig-online",
+        "veilig-online-malware"
       ],
       "topic": "ext-hoe-herken-en-voorkom-ik-een-malware-infectie"
     },
@@ -2993,7 +3111,8 @@
       "slug": "hoe-bescherm-ik-mijn-gegevens-bij-een-datalek",
       "title": "Hoe bescherm ik mijn gegevens bij een datalek?",
       "categories": [
-        "veilig-online"
+        "veilig-online",
+        "veilig-online-privacy"
       ],
       "topic": "ext-hoe-bescherm-ik-mijn-gegevens-bij-een-datalek"
     },
@@ -3001,7 +3120,8 @@
       "slug": "hoe-beveilig-ik-mijn-netwerk-en-router",
       "title": "Hoe beveilig ik mijn netwerk en router?",
       "categories": [
-        "veilig-online"
+        "veilig-online",
+        "veilig-online-netwerk"
       ],
       "topic": "ext-hoe-beveilig-ik-mijn-netwerk-en-router"
     },
@@ -3009,7 +3129,8 @@
       "slug": "wat-is-social-engineering-en-hoe-bescherm-ik-me-ertegen",
       "title": "Wat is social engineering en hoe bescherm ik me ertegen?",
       "categories": [
-        "veilig-online"
+        "veilig-online",
+        "veilig-online-phishing"
       ],
       "topic": "ext-wat-is-social-engineering-en-hoe-bescherm-ik-me-"
     },
@@ -3019,7 +3140,8 @@
       "categories": [
         "veilig-online",
         "beveiliging",
-        "beveiliging-overige"
+        "beveiliging-overige",
+        "veilig-online-wachtwoorden"
       ],
       "topic": "ext-hoe-stel-ik-een-sterk-wachtwoord-in-en-bewaar-ik"
     },
@@ -3027,7 +3149,8 @@
       "slug": "hoe-gebruik-ik-een-vpn-voor-een-veilige-internetverbinding",
       "title": "Hoe gebruik ik een VPN voor een veilige internetverbinding?",
       "categories": [
-        "veilig-online"
+        "veilig-online",
+        "veilig-online-netwerk"
       ],
       "topic": "ext-hoe-gebruik-ik-een-vpn-voor-een-veilige-internet"
     },
@@ -3127,7 +3250,8 @@
       "slug": "wat-is-plesk-en-hoe-log-ik-in",
       "title": "Wat is Plesk en hoe log ik in?",
       "categories": [
-        "plesk"
+        "plesk",
+        "plesk-starten"
       ],
       "topic": "ext-wat-is-plesk-en-hoe-log-ik-in"
     },
@@ -3135,7 +3259,8 @@
       "slug": "hoe-voeg-ik-een-domein-toe-in-plesk",
       "title": "Hoe voeg ik een domein toe in Plesk?",
       "categories": [
-        "plesk"
+        "plesk",
+        "plesk-websites"
       ],
       "topic": "ext-hoe-voeg-ik-een-domein-toe-in-plesk"
     },
@@ -3143,7 +3268,8 @@
       "slug": "hoe-maak-ik-een-e-mailaccount-aan-in-plesk",
       "title": "Hoe maak ik een e-mailaccount aan in Plesk?",
       "categories": [
-        "plesk"
+        "plesk",
+        "plesk-email-dns"
       ],
       "topic": "ext-hoe-maak-ik-een-e-mailaccount-aan-in-plesk"
     },
@@ -3151,7 +3277,8 @@
       "slug": "hoe-maak-ik-een-database-aan-in-plesk",
       "title": "Hoe maak ik een database aan in Plesk?",
       "categories": [
-        "plesk"
+        "plesk",
+        "plesk-bestanden-wordpress"
       ],
       "topic": "ext-hoe-maak-ik-een-database-aan-in-plesk"
     },
@@ -3159,7 +3286,8 @@
       "slug": "hoe-installeer-ik-wordpress-in-plesk",
       "title": "Hoe installeer ik WordPress in Plesk?",
       "categories": [
-        "plesk"
+        "plesk",
+        "plesk-bestanden-wordpress"
       ],
       "topic": "ext-hoe-installeer-ik-wordpress-in-plesk"
     },
@@ -3167,7 +3295,8 @@
       "slug": "hoe-maak-ik-een-back-up-van-mijn-website-in-plesk",
       "title": "Hoe maak ik een back-up van mijn website in Plesk?",
       "categories": [
-        "plesk"
+        "plesk",
+        "plesk-php-vps"
       ],
       "topic": "ext-hoe-maak-ik-een-back-up-van-mijn-website-in-ples"
     },
@@ -3175,7 +3304,8 @@
       "slug": "hoe-wijzig-ik-de-php-versie-in-plesk",
       "title": "Hoe wijzig ik de PHP-versie in Plesk?",
       "categories": [
-        "plesk"
+        "plesk",
+        "plesk-php-vps"
       ],
       "topic": "ext-hoe-wijzig-ik-de-php-versie-in-plesk"
     },
@@ -3183,7 +3313,8 @@
       "slug": "hoe-beheer-ik-dns-records-in-plesk",
       "title": "Hoe beheer ik DNS-records in Plesk?",
       "categories": [
-        "plesk"
+        "plesk",
+        "plesk-email-dns"
       ],
       "topic": "ext-hoe-beheer-ik-dns-records-in-plesk"
     },
@@ -3191,7 +3322,8 @@
       "slug": "hoe-beveilig-ik-mijn-website-in-plesk",
       "title": "Hoe beveilig ik mijn website in Plesk?",
       "categories": [
-        "plesk"
+        "plesk",
+        "plesk-ssl-beveiliging"
       ],
       "topic": "ext-hoe-beveilig-ik-mijn-website-in-plesk"
     },
@@ -3199,7 +3331,8 @@
       "slug": "hoe-verplaats-ik-een-website-naar-een-ander-domein-in-plesk",
       "title": "Hoe verplaats ik een website naar een ander domein in Plesk?",
       "categories": [
-        "plesk"
+        "plesk",
+        "plesk-websites"
       ],
       "topic": "ext-hoe-verplaats-ik-een-website-naar-een-ander-dome"
     },
@@ -3881,7 +4014,8 @@
       "categories": [
         "veilig-online",
         "beveiliging",
-        "beveiliging-overige"
+        "beveiliging-overige",
+        "veilig-online-phishing"
       ],
       "topic": "gap-sec"
     },
@@ -3892,7 +4026,7 @@
         "microsoft",
         "e-mail",
         "e-mail-overige",
-        "microsoft-overige"
+        "microsoft-beheer"
       ],
       "topic": "gap-ms"
     },
@@ -4056,7 +4190,7 @@
       "title": "Aan de slag met Microsoft",
       "categories": [
         "microsoft",
-        "microsoft-overige"
+        "microsoft-beheer"
       ],
       "topic": "gap-ms"
     },
@@ -4065,7 +4199,7 @@
       "title": "OneDrive Installeren",
       "categories": [
         "microsoft",
-        "microsoft-overige"
+        "microsoft-onedrive"
       ],
       "topic": "gap-ms"
     },
@@ -4157,7 +4291,8 @@
       "categories": [
         "veilig-online",
         "beveiliging",
-        "firewall-en-hacks"
+        "firewall-en-hacks",
+        "veilig-online-malware"
       ],
       "topic": "gap-sec"
     },
@@ -4165,7 +4300,8 @@
       "slug": "logfiles-bekijken-in-plesk",
       "title": "Logfiles bekijken in Plesk",
       "categories": [
-        "plesk"
+        "plesk",
+        "plesk-php-vps"
       ],
       "topic": "gap-plesk"
     },
@@ -4185,7 +4321,7 @@
       "title": "Microsoft 365 tenant importeren",
       "categories": [
         "microsoft",
-        "microsoft-overige"
+        "microsoft-beheer"
       ],
       "topic": "gap-ms"
     },
@@ -4203,7 +4339,7 @@
       "title": "Hoe werkt Microsoft Teams",
       "categories": [
         "microsoft",
-        "microsoft-overige"
+        "microsoft-teams"
       ],
       "topic": "gap-ms"
     },
@@ -4233,7 +4369,8 @@
       "categories": [
         "veilig-online",
         "beveiliging",
-        "firewall-en-hacks"
+        "firewall-en-hacks",
+        "veilig-online-netwerk"
       ],
       "topic": "gap-sec"
     },
@@ -4243,7 +4380,8 @@
       "categories": [
         "veilig-online",
         "beveiliging",
-        "firewall-en-hacks"
+        "firewall-en-hacks",
+        "veilig-online-netwerk"
       ],
       "topic": "gap-sec"
     },
@@ -4354,7 +4492,8 @@
       "categories": [
         "vps",
         "plesk",
-        "vps-overige"
+        "vps-overige",
+        "plesk-php-vps"
       ],
       "topic": "gap-vps"
     },
@@ -4465,7 +4604,8 @@
       "categories": [
         "vps",
         "plesk",
-        "vps-overige"
+        "vps-overige",
+        "plesk-php-vps"
       ],
       "topic": "gap-vps"
     },
@@ -4486,7 +4626,8 @@
         "plesk",
         "e-mail",
         "webmail",
-        "vps-overige"
+        "vps-overige",
+        "plesk-email-dns"
       ],
       "topic": "gap-vps"
     },
@@ -4525,7 +4666,8 @@
         "plesk",
         "e-mail",
         "e-mail-overige",
-        "vps-overige"
+        "vps-overige",
+        "plesk-email-dns"
       ],
       "topic": "gap-vps"
     },
@@ -4721,7 +4863,8 @@
       "categories": [
         "plesk",
         "e-mail",
-        "e-mail-overige"
+        "e-mail-overige",
+        "plesk-email-dns"
       ],
       "topic": "gap-email"
     },
@@ -4863,7 +5006,8 @@
       "slug": "hoofdmap-van-een-website-wijzigen-in-plesk",
       "title": "Hoofdmap van een website wijzigen in Plesk",
       "categories": [
-        "plesk"
+        "plesk",
+        "plesk-websites"
       ],
       "topic": "gap-plesk"
     },
@@ -4915,7 +5059,8 @@
         "veilig-online",
         "beveiliging",
         "beveiliging-overige",
-        "directadmin-overige"
+        "directadmin-overige",
+        "veilig-online-wachtwoorden"
       ],
       "topic": "gap-da"
     },
@@ -5018,7 +5163,8 @@
       "categories": [
         "vps",
         "plesk",
-        "vps-overige"
+        "vps-overige",
+        "plesk-php-vps"
       ],
       "topic": "gap-vps"
     },
@@ -5498,7 +5644,8 @@
       "categories": [
         "veilig-online",
         "beveiliging",
-        "beveiliging-overige"
+        "beveiliging-overige",
+        "veilig-online-wachtwoorden"
       ],
       "topic": "gap-sec"
     },
@@ -5592,7 +5739,8 @@
       "categories": [
         "veilig-online",
         "beveiliging",
-        "beveiliging-overige"
+        "beveiliging-overige",
+        "veilig-online-wachtwoorden"
       ],
       "topic": "gap-sec"
     },
@@ -5613,7 +5761,8 @@
         "veilig-online",
         "beveiliging",
         "linux-vps",
-        "beveiliging-overige"
+        "beveiliging-overige",
+        "veilig-online-wachtwoorden"
       ],
       "topic": "gap-vps"
     },
@@ -5622,7 +5771,7 @@
       "title": "Microsoft 365 gebruikers aanmaken en beheren",
       "categories": [
         "microsoft",
-        "microsoft-overige"
+        "microsoft-beheer"
       ],
       "topic": "gap-ms"
     },
@@ -5631,7 +5780,7 @@
       "title": "Aan de slag met OneDrive",
       "categories": [
         "microsoft",
-        "microsoft-overige"
+        "microsoft-onedrive"
       ],
       "topic": "gap-ms"
     },
@@ -5821,7 +5970,8 @@
       "categories": [
         "veilig-online",
         "beveiliging",
-        "beveiliging-overige"
+        "beveiliging-overige",
+        "veilig-online-basis"
       ],
       "topic": "gap-sec"
     },
@@ -5860,7 +6010,8 @@
         "veilig-online",
         "beveiliging",
         "beveiliging-overige",
-        "e-mail-overige"
+        "e-mail-overige",
+        "veilig-online-wachtwoorden"
       ],
       "topic": "gap-email"
     },
@@ -5899,7 +6050,8 @@
         "shop-en-pakketten",
         "veilig-online",
         "account-en-inloggen",
-        "shop-en-pakketten-overige"
+        "shop-en-pakketten-overige",
+        "veilig-online-wachtwoorden"
       ],
       "topic": "gap-admin"
     },
@@ -5936,7 +6088,8 @@
       "categories": [
         "veilig-online",
         "beveiliging",
-        "beveiliging-overige"
+        "beveiliging-overige",
+        "veilig-online-wachtwoorden"
       ],
       "topic": "gap-sec"
     },
@@ -5955,7 +6108,8 @@
       "categories": [
         "veilig-online",
         "beveiliging",
-        "beveiliging-overige"
+        "beveiliging-overige",
+        "veilig-online-malware"
       ],
       "topic": "gap-sec"
     },
@@ -5964,7 +6118,7 @@
       "title": "Beveiliging en privacy voor je Microsoft data",
       "categories": [
         "microsoft",
-        "microsoft-overige"
+        "microsoft-beveiliging"
       ],
       "topic": "gap-ms"
     },
@@ -5975,7 +6129,7 @@
         "microsoft",
         "domeinnamen",
         "domeinnamen-overige",
-        "microsoft-overige"
+        "microsoft-beheer"
       ],
       "topic": "gap-ms"
     },
@@ -6020,7 +6174,8 @@
         "veilig-online",
         "beveiliging",
         "beveiliging-overige",
-        "microsoft-overige"
+        "microsoft-beveiliging",
+        "veilig-online-wachtwoorden"
       ],
       "topic": "gap-ms"
     },
@@ -6029,7 +6184,7 @@
       "title": "Veelgestelde vragen en support voor OneDrive",
       "categories": [
         "microsoft",
-        "microsoft-overige"
+        "microsoft-onedrive"
       ],
       "topic": "gap-ms"
     },
@@ -6047,7 +6202,7 @@
       "title": "Microsoft-onderdelen uitgelegd",
       "categories": [
         "microsoft",
-        "microsoft-overige"
+        "microsoft-beheer"
       ],
       "topic": "gap-ms"
     },
@@ -6067,7 +6222,7 @@
       "title": "Bestellen en beheren van je Microsoft-producten",
       "categories": [
         "microsoft",
-        "microsoft-overige"
+        "microsoft-beheer"
       ],
       "topic": "gap-ms"
     },
@@ -6126,7 +6281,8 @@
       "slug": "bestandsbeheer-in-plesk",
       "title": "Bestandsbeheer in Plesk",
       "categories": [
-        "plesk"
+        "plesk",
+        "plesk-bestanden-wordpress"
       ],
       "topic": "gap-plesk"
     },
@@ -6183,7 +6339,8 @@
       "slug": "gebruikers-beheren-in-plesk",
       "title": "Gebruikers beheren in Plesk",
       "categories": [
-        "plesk"
+        "plesk",
+        "plesk-starten"
       ],
       "topic": "gap-plesk"
     },
@@ -6202,7 +6359,8 @@
       "slug": "overzicht-menu-items-in-plesk",
       "title": "Overzicht menu items in Plesk",
       "categories": [
-        "plesk"
+        "plesk",
+        "plesk-starten"
       ],
       "topic": "gap-plesk"
     },
@@ -7993,6 +8151,796 @@
         "cyberpanel-php-ols"
       ],
       "topic": "tz-cp-8090-503"
+    },
+    {
+      "slug": "alias-toevoegen-microsoft-365-mailbox",
+      "title": "Alias of proxy-adres toevoegen aan een Microsoft 365-mailbox",
+      "categories": [
+        "microsoft",
+        "microsoft-mail",
+        "e-mail"
+      ],
+      "topic": "tz-m365-alias-mailbox"
+    },
+    {
+      "slug": "distributiegroep-of-microsoft-365-groep-aanmaken",
+      "title": "Distributiegroep of Microsoft 365-groep aanmaken",
+      "categories": [
+        "microsoft",
+        "microsoft-mail",
+        "e-mail"
+      ],
+      "topic": "tz-m365-distributiegroep"
+    },
+    {
+      "slug": "agenda-delen-in-outlook-microsoft-365",
+      "title": "Agenda delen in Outlook met Microsoft 365",
+      "categories": [
+        "microsoft",
+        "microsoft-mail"
+      ],
+      "topic": "tz-m365-agenda-delen"
+    },
+    {
+      "slug": "automatisch-antwoord-out-of-office-exchange-online",
+      "title": "Automatisch antwoord (Out of Office) in Exchange Online",
+      "categories": [
+        "microsoft",
+        "microsoft-mail",
+        "e-mail"
+      ],
+      "topic": "tz-m365-out-of-office"
+    },
+    {
+      "slug": "e-mail-doorsturen-exchange-online",
+      "title": "E-mail doorsturen vanuit Exchange Online",
+      "categories": [
+        "microsoft",
+        "microsoft-mail",
+        "e-mail"
+      ],
+      "topic": "tz-m365-mail-doorsturen"
+    },
+    {
+      "slug": "outlook-profiel-en-autodiscover-problemen-oplossen",
+      "title": "Outlook-profiel en Autodiscover-problemen oplossen",
+      "categories": [
+        "microsoft",
+        "microsoft-mail",
+        "e-mail"
+      ],
+      "topic": "tz-m365-autodiscover-outlook"
+    },
+    {
+      "slug": "microsoft-teams-installeren-desktop-en-telefoon",
+      "title": "Microsoft Teams installeren op desktop en telefoon",
+      "categories": [
+        "microsoft",
+        "microsoft-teams"
+      ],
+      "topic": "tz-m365-teams-installeren"
+    },
+    {
+      "slug": "vergadering-plannen-en-starten-in-teams",
+      "title": "Vergadering plannen en starten in Teams",
+      "categories": [
+        "microsoft",
+        "microsoft-teams"
+      ],
+      "topic": "tz-m365-teams-vergadering"
+    },
+    {
+      "slug": "gastgebruikers-uitnodigen-in-microsoft-teams",
+      "title": "Gastgebruikers uitnodigen in Microsoft Teams",
+      "categories": [
+        "microsoft",
+        "microsoft-teams"
+      ],
+      "topic": "tz-m365-teams-gasten"
+    },
+    {
+      "slug": "bestanden-delen-via-teams-kanalen",
+      "title": "Bestanden delen via Teams-kanalen",
+      "categories": [
+        "microsoft",
+        "microsoft-teams"
+      ],
+      "topic": "tz-m365-teams-bestanden"
+    },
+    {
+      "slug": "teams-meldingen-en-beschikbaarheid-beheren",
+      "title": "Teams-meldingen en beschikbaarheid beheren",
+      "categories": [
+        "microsoft",
+        "microsoft-teams"
+      ],
+      "topic": "tz-m365-teams-meldingen"
+    },
+    {
+      "slug": "verschil-onedrive-en-sharepoint",
+      "title": "Verschil tussen OneDrive en SharePoint",
+      "categories": [
+        "microsoft",
+        "microsoft-onedrive"
+      ],
+      "topic": "tz-m365-onedrive-vs-sharepoint"
+    },
+    {
+      "slug": "bestanden-delen-externe-personen-onedrive",
+      "title": "Bestanden veilig delen met externe personen via OneDrive",
+      "categories": [
+        "microsoft",
+        "microsoft-onedrive"
+      ],
+      "topic": "tz-m365-onedrive-extern-delen"
+    },
+    {
+      "slug": "onedrive-synchronisatieproblemen-oplossen",
+      "title": "OneDrive-synchronisatieproblemen oplossen",
+      "categories": [
+        "microsoft",
+        "microsoft-onedrive"
+      ],
+      "topic": "tz-m365-onedrive-sync"
+    },
+    {
+      "slug": "bestanden-herstellen-onedrive-versiegeschiedenis",
+      "title": "Bestanden herstellen met versiegeschiedenis of prullenbak",
+      "categories": [
+        "microsoft",
+        "microsoft-onedrive"
+      ],
+      "topic": "tz-m365-onedrive-herstellen"
+    },
+    {
+      "slug": "onedrive-opslag-vol",
+      "title": "Wat te doen als OneDrive-opslag vol is",
+      "categories": [
+        "microsoft",
+        "microsoft-onedrive"
+      ],
+      "topic": "tz-m365-onedrive-opslag-vol"
+    },
+    {
+      "slug": "sharepoint-teamsite-aanmaken-en-rechten",
+      "title": "Een SharePoint-teamsite aanmaken en rechten geven",
+      "categories": [
+        "microsoft",
+        "microsoft-onedrive"
+      ],
+      "topic": "tz-m365-sharepoint-teamsite"
+    },
+    {
+      "slug": "welk-microsoft-365-abonnement-past-bij-mijn-bedrijf",
+      "title": "Welk Microsoft 365-abonnement past bij mijn bedrijf?",
+      "categories": [
+        "microsoft",
+        "microsoft-beheer"
+      ],
+      "topic": "tz-m365-abonnement-keuze"
+    },
+    {
+      "slug": "licentie-toewijzen-of-intrekken-microsoft-365",
+      "title": "Licentie toewijzen of intrekken aan een gebruiker",
+      "categories": [
+        "microsoft",
+        "microsoft-beheer"
+      ],
+      "topic": "tz-m365-licentie-toewijzen"
+    },
+    {
+      "slug": "rollen-global-admin-versus-gebruiker",
+      "title": "Rollen in Microsoft 365: global admin versus gebruiker",
+      "categories": [
+        "microsoft",
+        "microsoft-beheer"
+      ],
+      "topic": "tz-m365-rollen-admin"
+    },
+    {
+      "slug": "dns-records-microsoft-365-controleren",
+      "title": "DNS-records voor Microsoft 365 controleren (MX, SPF, DKIM, Autodiscover)",
+      "categories": [
+        "microsoft",
+        "microsoft-beheer",
+        "domeinnamen"
+      ],
+      "topic": "tz-m365-dns-controleren"
+    },
+    {
+      "slug": "gebruiker-offboarden-mailbox-onedrive-overdragen",
+      "title": "Gebruiker offboarden: mailbox en OneDrive overdragen",
+      "categories": [
+        "microsoft",
+        "microsoft-beheer"
+      ],
+      "topic": "tz-m365-offboarding"
+    },
+    {
+      "slug": "imap-mailboxen-migreren-naar-exchange-online",
+      "title": "IMAP-mailboxen migreren naar Exchange Online",
+      "categories": [
+        "microsoft",
+        "microsoft-beheer",
+        "e-mail"
+      ],
+      "topic": "tz-m365-imap-migratie"
+    },
+    {
+      "slug": "microsoft-365-apps-installeren-windows-en-mac",
+      "title": "Microsoft 365 Apps (Office) installeren op Windows en Mac",
+      "categories": [
+        "microsoft",
+        "microsoft-beheer"
+      ],
+      "topic": "tz-m365-apps-installeren"
+    },
+    {
+      "slug": "mfa-inschakelen-microsoft-365",
+      "title": "Multifactorauthenticatie (MFA) inschakelen voor Microsoft 365",
+      "categories": [
+        "microsoft",
+        "microsoft-beveiliging",
+        "beveiliging"
+      ],
+      "topic": "tz-m365-mfa-inschakelen"
+    },
+    {
+      "slug": "microsoft-authenticator-koppelen",
+      "title": "Microsoft Authenticator koppelen aan je account",
+      "categories": [
+        "microsoft",
+        "microsoft-beveiliging",
+        "beveiliging"
+      ],
+      "topic": "tz-m365-authenticator"
+    },
+    {
+      "slug": "wachtwoord-resetten-microsoft-365",
+      "title": "Wachtwoord resetten of self-service wachtwoordherstel",
+      "categories": [
+        "microsoft",
+        "microsoft-beveiliging",
+        "beveiliging"
+      ],
+      "topic": "tz-m365-wachtwoord-reset"
+    },
+    {
+      "slug": "verdachte-inlogpogingen-microsoft-365",
+      "title": "Verdachte inlogpogingen en geblokkeerde accounts",
+      "categories": [
+        "microsoft",
+        "microsoft-beveiliging",
+        "beveiliging"
+      ],
+      "topic": "tz-m365-verdachte-login"
+    },
+    {
+      "slug": "phishingmails-herkennen-outlook-microsoft-365",
+      "title": "Phishingmails herkennen in Outlook en Microsoft 365",
+      "categories": [
+        "microsoft",
+        "microsoft-beveiliging",
+        "beveiliging",
+        "e-mail"
+      ],
+      "topic": "tz-m365-phishing"
+    },
+    {
+      "slug": "microsoft-365-servicestatus-en-storingen",
+      "title": "Microsoft 365-servicestatus en storingen controleren",
+      "categories": [
+        "microsoft",
+        "microsoft-overige"
+      ],
+      "topic": "tz-m365-servicestatus"
+    },
+    {
+      "slug": "plesk-wachtwoord-veilig-resetten",
+      "title": "Plesk-wachtwoord veilig resetten",
+      "categories": [
+        "plesk",
+        "plesk-starten"
+      ],
+      "topic": "tz-pl-password-reset"
+    },
+    {
+      "slug": "twee-factorauthenticatie-2fa-inschakelen-in-plesk",
+      "title": "Twee-factorauthenticatie (2FA) inschakelen in Plesk",
+      "categories": [
+        "plesk",
+        "plesk-starten",
+        "beveiliging"
+      ],
+      "topic": "tz-pl-2fa"
+    },
+    {
+      "slug": "eerste-stappen-na-oplevering-van-een-plesk-server-bij-triplezero-it",
+      "title": "Eerste stappen na oplevering van een Plesk-server bij TripleZero iT",
+      "categories": [
+        "plesk",
+        "plesk-starten"
+      ],
+      "topic": "tz-pl-first-steps"
+    },
+    {
+      "slug": "inloggen-lukt-niet-poort-8443-hostname-en-panel-ssl",
+      "title": "Inloggen lukt niet: poort 8443, hostname en panel-SSL",
+      "categories": [
+        "plesk",
+        "plesk-starten",
+        "ssl-certificaten"
+      ],
+      "topic": "tz-pl-login-8443"
+    },
+    {
+      "slug": "resourcegebruik-en-abonnementslimieten-bekijken-in-plesk",
+      "title": "Resourcegebruik en abonnementslimieten bekijken in Plesk",
+      "categories": [
+        "plesk",
+        "plesk-starten"
+      ],
+      "topic": "tz-pl-resource-limits"
+    },
+    {
+      "slug": "subdomein-aanmaken-in-plesk",
+      "title": "Subdomein aanmaken in Plesk",
+      "categories": [
+        "plesk",
+        "plesk-websites",
+        "domeinnamen"
+      ],
+      "topic": "tz-pl-subdomain"
+    },
+    {
+      "slug": "domeinalias-of-parked-domain-toevoegen-in-plesk",
+      "title": "Domeinalias of parked domain toevoegen in Plesk",
+      "categories": [
+        "plesk",
+        "plesk-websites",
+        "domeinnamen"
+      ],
+      "topic": "tz-pl-domain-alias"
+    },
+    {
+      "slug": "www-en-https-redirects-instellen-in-plesk",
+      "title": "WWW- en HTTPS-redirects instellen in Plesk",
+      "categories": [
+        "plesk",
+        "plesk-websites",
+        "ssl-certificaten"
+      ],
+      "topic": "tz-pl-www-https-redirects"
+    },
+    {
+      "slug": "een-website-tijdelijk-uitschakelen-suspend-in-plesk",
+      "title": "Een website tijdelijk uitschakelen (suspend) in Plesk",
+      "categories": [
+        "plesk",
+        "plesk-websites"
+      ],
+      "topic": "tz-pl-suspend-site"
+    },
+    {
+      "slug": "website-kopieren-of-een-staging-omgeving-maken-in-plesk",
+      "title": "Website kopiëren of een staging-omgeving maken in Plesk",
+      "categories": [
+        "plesk",
+        "plesk-websites"
+      ],
+      "topic": "tz-pl-copy-staging"
+    },
+    {
+      "slug": "e-mailforwarders-en-aliases-aanmaken-in-plesk",
+      "title": "E-mailforwarders en aliases aanmaken in Plesk",
+      "categories": [
+        "plesk",
+        "plesk-email-dns",
+        "e-mail"
+      ],
+      "topic": "tz-pl-mail-forwarders"
+    },
+    {
+      "slug": "spf-dkim-en-dmarc-instellen-vanuit-plesk",
+      "title": "SPF, DKIM en DMARC instellen vanuit Plesk",
+      "categories": [
+        "plesk",
+        "plesk-email-dns",
+        "e-mail"
+      ],
+      "topic": "tz-pl-spf-dkim-dmarc"
+    },
+    {
+      "slug": "mailboxquota-en-volle-mailboxen-in-plesk",
+      "title": "Mailboxquota en volle mailboxen in Plesk",
+      "categories": [
+        "plesk",
+        "plesk-email-dns",
+        "e-mail"
+      ],
+      "topic": "tz-pl-mailbox-quota"
+    },
+    {
+      "slug": "spamfilter-instellen-in-plesk",
+      "title": "Spamfilter instellen in Plesk",
+      "categories": [
+        "plesk",
+        "plesk-email-dns",
+        "e-mail"
+      ],
+      "topic": "tz-pl-spamfilter"
+    },
+    {
+      "slug": "imap-en-smtp-instellingen-voor-outlook-en-apple-mail-vanuit-plesk",
+      "title": "IMAP- en SMTP-instellingen voor Outlook en Apple Mail vanuit Plesk",
+      "categories": [
+        "plesk",
+        "plesk-email-dns",
+        "e-mail"
+      ],
+      "topic": "tz-pl-imap-smtp"
+    },
+    {
+      "slug": "eigen-ssl-certificaat-uploaden-in-plesk",
+      "title": "Eigen SSL-certificaat uploaden in Plesk",
+      "categories": [
+        "plesk",
+        "plesk-ssl-beveiliging",
+        "ssl-certificaten"
+      ],
+      "topic": "tz-pl-ssl-custom"
+    },
+    {
+      "slug": "wildcard-lets-encrypt-aanvragen-in-plesk",
+      "title": "Wildcard Let’s Encrypt aanvragen in Plesk",
+      "categories": [
+        "plesk",
+        "plesk-ssl-beveiliging",
+        "ssl-certificaten"
+      ],
+      "topic": "tz-pl-ssl-wildcard"
+    },
+    {
+      "slug": "ssl-vernieuwing-faalt-in-plesk-oorzaken-en-oplossing",
+      "title": "SSL-vernieuwing faalt in Plesk: oorzaken en oplossing",
+      "categories": [
+        "plesk",
+        "plesk-ssl-beveiliging",
+        "ssl-certificaten"
+      ],
+      "topic": "tz-pl-ssl-renew-fail"
+    },
+    {
+      "slug": "fail2ban-in-plesk-brute-force-tegenhouden",
+      "title": "Fail2Ban in Plesk: brute-force tegenhouden",
+      "categories": [
+        "plesk",
+        "plesk-ssl-beveiliging",
+        "beveiliging"
+      ],
+      "topic": "tz-pl-fail2ban"
+    },
+    {
+      "slug": "map-beveiligen-met-een-wachtwoord-in-plesk",
+      "title": "Map beveiligen met een wachtwoord in Plesk",
+      "categories": [
+        "plesk",
+        "plesk-ssl-beveiliging",
+        "beveiliging"
+      ],
+      "topic": "tz-pl-password-protect"
+    },
+    {
+      "slug": "extra-ftp-of-sftp-account-aanmaken-in-plesk",
+      "title": "Extra FTP- of SFTP-account aanmaken in Plesk",
+      "categories": [
+        "plesk",
+        "plesk-bestanden-wordpress"
+      ],
+      "topic": "tz-pl-ftp-sftp"
+    },
+    {
+      "slug": "phpmyadmin-databases-importeren-of-exporteren-in-plesk",
+      "title": "phpMyAdmin: databases importeren of exporteren in Plesk",
+      "categories": [
+        "plesk",
+        "plesk-bestanden-wordpress"
+      ],
+      "topic": "tz-pl-phpmyadmin"
+    },
+    {
+      "slug": "bestandsrechten-chmod-veilig-zetten-via-de-plesk-file-manager",
+      "title": "Bestandsrechten (CHMOD) veilig zetten via de Plesk File Manager",
+      "categories": [
+        "plesk",
+        "plesk-bestanden-wordpress"
+      ],
+      "topic": "tz-pl-chmod"
+    },
+    {
+      "slug": "wordpress-toolkit-updates-en-beveiligingsscan-in-plesk",
+      "title": "WordPress Toolkit: updates en beveiligingsscan in Plesk",
+      "categories": [
+        "plesk",
+        "plesk-bestanden-wordpress",
+        "wordpress"
+      ],
+      "topic": "tz-pl-wp-toolkit-updates"
+    },
+    {
+      "slug": "wordpress-klonen-of-staging-via-wordpress-toolkit-in-plesk",
+      "title": "WordPress klonen of staging via WordPress Toolkit in Plesk",
+      "categories": [
+        "plesk",
+        "plesk-bestanden-wordpress",
+        "wordpress"
+      ],
+      "topic": "tz-pl-wp-toolkit-clone"
+    },
+    {
+      "slug": "php-instellingen-memory-limit-uploadgrootte-aanpassen-in-plesk",
+      "title": "PHP-instellingen (memory_limit, uploadgrootte) aanpassen in Plesk",
+      "categories": [
+        "plesk",
+        "plesk-php-vps"
+      ],
+      "topic": "tz-pl-php-ini"
+    },
+    {
+      "slug": "cronjobs-instellen-in-plesk",
+      "title": "Cronjobs instellen in Plesk",
+      "categories": [
+        "plesk",
+        "plesk-php-vps"
+      ],
+      "topic": "tz-pl-cron"
+    },
+    {
+      "slug": "geplande-backups-falen-in-plesk-checklist",
+      "title": "Geplande backups falen in Plesk: checklist",
+      "categories": [
+        "plesk",
+        "plesk-php-vps"
+      ],
+      "topic": "tz-pl-backup-fail"
+    },
+    {
+      "slug": "een-website-terugzetten-zonder-andere-sites-te-overschrijven-in-plesk",
+      "title": "Eén website terugzetten zonder andere sites te overschrijven in Plesk",
+      "categories": [
+        "plesk",
+        "plesk-php-vps"
+      ],
+      "topic": "tz-pl-restore-one-site"
+    },
+    {
+      "slug": "service-plans-versus-subscriptions-in-plesk",
+      "title": "Service plans versus subscriptions in Plesk",
+      "categories": [
+        "plesk",
+        "plesk-reseller"
+      ],
+      "topic": "tz-pl-plans-vs-subscriptions"
+    },
+    {
+      "slug": "klantabonnement-opschorten-of-limieten-wijzigen-als-reseller",
+      "title": "Klantabonnement opschorten of limieten wijzigen als reseller",
+      "categories": [
+        "plesk",
+        "plesk-reseller"
+      ],
+      "topic": "tz-pl-reseller-suspend-limits"
+    },
+    {
+      "slug": "plesk-extensies-beheren-voor-je-klanten-wp-toolkit-git-lets-encrypt",
+      "title": "Plesk-extensies beheren voor je klanten (WP Toolkit, Git, Let’s Encrypt)",
+      "categories": [
+        "plesk",
+        "plesk-reseller"
+      ],
+      "topic": "tz-pl-reseller-extensions"
+    },
+    {
+      "slug": "twee-factorauthenticatie-2fa-inschakelen-online-accounts",
+      "title": "Twee-factorauthenticatie (2FA) inschakelen voor je online accounts",
+      "categories": [
+        "veilig-online",
+        "veilig-online-wachtwoorden",
+        "beveiliging"
+      ],
+      "topic": "tz-vo-2fa"
+    },
+    {
+      "slug": "smishing-phishing-via-sms-en-whatsapp-herkennen",
+      "title": "Smishing: phishing via sms en WhatsApp herkennen",
+      "categories": [
+        "veilig-online",
+        "veilig-online-phishing",
+        "beveiliging"
+      ],
+      "topic": "tz-vo-smishing"
+    },
+    {
+      "slug": "ceo-fraude-en-factuurfraude-herkennen",
+      "title": "CEO-fraude en factuurfraude herkennen",
+      "categories": [
+        "veilig-online",
+        "veilig-online-phishing",
+        "beveiliging"
+      ],
+      "topic": "tz-vo-ceo-fraude"
+    },
+    {
+      "slug": "qr-code-phishing-quishing-herkennen",
+      "title": "QR-code phishing (quishing) herkennen",
+      "categories": [
+        "veilig-online",
+        "veilig-online-phishing",
+        "beveiliging"
+      ],
+      "topic": "tz-vo-quishing"
+    },
+    {
+      "slug": "nep-helpdesk-en-tech-support-scams-herkennen",
+      "title": "Nep-helpdesk en tech support-scams herkennen",
+      "categories": [
+        "veilig-online",
+        "veilig-online-phishing",
+        "beveiliging"
+      ],
+      "topic": "tz-vo-tech-support-scam"
+    },
+    {
+      "slug": "deepfake-en-voice-scams-herkennen",
+      "title": "Deepfake- en voice-scams herkennen",
+      "categories": [
+        "veilig-online",
+        "veilig-online-phishing",
+        "beveiliging"
+      ],
+      "topic": "tz-vo-deepfake"
+    },
+    {
+      "slug": "wachtwoordmanager-kiezen-en-veilig-gebruiken",
+      "title": "Een wachtwoordmanager kiezen en veilig gebruiken",
+      "categories": [
+        "veilig-online",
+        "veilig-online-wachtwoorden",
+        "beveiliging"
+      ],
+      "topic": "tz-vo-password-manager"
+    },
+    {
+      "slug": "account-terugkrijgen-na-een-hack",
+      "title": "Account terugkrijgen na een hack",
+      "categories": [
+        "veilig-online",
+        "veilig-online-wachtwoorden",
+        "beveiliging"
+      ],
+      "topic": "tz-vo-account-recovery"
+    },
+    {
+      "slug": "sim-swap-fraude-voorkomen",
+      "title": "SIM-swap fraude voorkomen",
+      "categories": [
+        "veilig-online",
+        "veilig-online-wachtwoorden",
+        "beveiliging"
+      ],
+      "topic": "tz-vo-sim-swap"
+    },
+    {
+      "slug": "ransomware-herkennen-en-wat-te-doen",
+      "title": "Ransomware herkennen en wat te doen bij een infectie",
+      "categories": [
+        "veilig-online",
+        "veilig-online-malware",
+        "beveiliging"
+      ],
+      "topic": "tz-vo-ransomware"
+    },
+    {
+      "slug": "veilig-bestanden-downloaden-en-bijlagen-openen",
+      "title": "Veilig bestanden downloaden en bijlagen openen",
+      "categories": [
+        "veilig-online",
+        "veilig-online-malware",
+        "beveiliging"
+      ],
+      "topic": "tz-vo-safe-downloads"
+    },
+    {
+      "slug": "browseruitbreidingen-veilig-kiezen-en-controleren",
+      "title": "Browseruitbreidingen veilig kiezen en controleren",
+      "categories": [
+        "veilig-online",
+        "veilig-online-malware",
+        "beveiliging"
+      ],
+      "topic": "tz-vo-browser-extensions"
+    },
+    {
+      "slug": "software-updates-essentieel-voor-veiligheid",
+      "title": "Software-updates: waarom ze essentieel zijn voor je veiligheid",
+      "categories": [
+        "veilig-online",
+        "veilig-online-malware",
+        "beveiliging"
+      ],
+      "topic": "tz-vo-software-updates"
+    },
+    {
+      "slug": "wat-betekent-het-slotje-https-in-de-browser",
+      "title": "Wat betekent het slotje (HTTPS) in de browser?",
+      "categories": [
+        "veilig-online",
+        "veilig-online-basis",
+        "beveiliging",
+        "ssl-certificaten"
+      ],
+      "topic": "tz-vo-https-slotje"
+    },
+    {
+      "slug": "back-ups-als-beveiligingsmaatregel",
+      "title": "Back-ups als beveiligingsmaatregel",
+      "categories": [
+        "veilig-online",
+        "veilig-online-basis",
+        "beveiliging",
+        "support"
+      ],
+      "topic": "tz-vo-backups-security"
+    },
+    {
+      "slug": "veilig-online-winkelen-waar-let-je-op",
+      "title": "Veilig online winkelen: waar let je op?",
+      "categories": [
+        "veilig-online",
+        "veilig-online-privacy",
+        "beveiliging"
+      ],
+      "topic": "tz-vo-online-shopping"
+    },
+    {
+      "slug": "identiteitsdiefstal-herkennen-en-melden",
+      "title": "Identiteitsdiefstal herkennen en melden",
+      "categories": [
+        "veilig-online",
+        "veilig-online-privacy",
+        "beveiliging"
+      ],
+      "topic": "tz-vo-identity-theft"
+    },
+    {
+      "slug": "privacy-instellingen-op-social-media-controleren",
+      "title": "Privacy-instellingen op social media controleren",
+      "categories": [
+        "veilig-online",
+        "veilig-online-privacy",
+        "beveiliging"
+      ],
+      "topic": "tz-vo-social-privacy"
+    },
+    {
+      "slug": "iot-en-slimme-apparaten-beveiligen-thuis",
+      "title": "IoT en slimme apparaten beveiligen thuis",
+      "categories": [
+        "veilig-online",
+        "veilig-online-netwerk",
+        "beveiliging"
+      ],
+      "topic": "tz-vo-iot"
+    },
+    {
+      "slug": "smartphone-beveiligen-vergrendeling-apps-toestemmingen",
+      "title": "Smartphone beveiligen: vergrendeling, apps en toestemmingen",
+      "categories": [
+        "veilig-online",
+        "veilig-online-malware",
+        "beveiliging"
+      ],
+      "topic": "tz-vo-smartphone"
     }
   ]
 }

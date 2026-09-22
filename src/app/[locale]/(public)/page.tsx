@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { GlassCard } from "@/components/marketing/GlassCard";
-import { AnimatedCounter } from "@/components/marketing/AnimatedCounter";
-import { HeroVisual } from "@/components/marketing/HeroVisual";
 import { HomeHeroBanner } from "@/components/marketing/HomeHeroBanner";
+import { HomeIntroSection } from "@/components/marketing/HomeIntroSection";
 import { Reveal } from "@/components/marketing/Reveal";
 import { PricingPlans } from "@/components/marketing/PricingPlans";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -80,35 +78,59 @@ export default async function HomePage({
       <JsonLd data={organizationJsonLd()} />
       <HomeHeroBanner />
 
-      <section className="relative bg-transparent">
-        <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 pb-4 pt-8 md:px-6 md:pb-6 md:pt-10 lg:grid-cols-2 lg:gap-10">
-          <div className="max-w-xl">
-            <h2 className="font-display text-2xl font-semibold leading-[1.15] tracking-tight text-foreground sm:text-3xl md:text-4xl lg:text-5xl">
-              {hero("introTitle")}
+      <HomeIntroSection scanCount={scanCount} />
+
+      <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
+        <Reveal from="up" duration={0.6}>
+          <div className="mx-auto mb-10 max-w-2xl text-center">
+            <h2 className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
+              {services("title")}
             </h2>
-            <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
-              {hero("introSubtitle")}
-            </p>
-            <div className="mt-8 space-y-3">
-              <p className="font-display text-xl font-semibold tracking-tight text-foreground md:text-2xl">
-                {hero("ctaHeroTitle")}
-              </p>
-              <div className="flex flex-wrap items-center gap-3">
-                <Button asChild size="lg" className="rounded-2xl px-7">
-                  <SoftLink href={localizedHref(locale, "/ai-scan")}>{hero("ctaScan")}</SoftLink>
-                </Button>
-                <div className="inline-flex items-center gap-2 rounded-2xl border border-border/70 px-3 py-2">
-                  <Sparkles className="h-3.5 w-3.5 text-primary" />
-                  <span className="font-display text-base font-bold tracking-tight text-foreground">
-                    <AnimatedCounter value={scanCount} />
-                  </span>
-                  <span className="text-xs text-muted-foreground">{hero("scansLabel")}</span>
-                </div>
-              </div>
-            </div>
+            <p className="mt-3 text-muted-foreground md:text-lg">{services("subtitle")}</p>
           </div>
-          <HeroVisual />
+        </Reveal>
+
+        <div className="grid gap-3 md:grid-cols-6">
+          {sortedServiceGroups(locale).map((group, index) => {
+            const span =
+              index < 2
+                ? "md:col-span-3"
+                : index === 5
+                  ? "md:col-span-6"
+                  : "md:col-span-2";
+            const from =
+              index % 3 === 0 ? "left" : index % 3 === 1 ? "up" : "right";
+
+            return (
+              <Reveal
+                key={group.id}
+                from={from}
+                delay={Math.min(index * 0.07, 0.35)}
+                duration={0.55}
+                className={cn("h-full", span)}
+              >
+                <SoftLink href={serviceGroupHref(locale, group.id)} className="block h-full">
+                  <GlassCard className="flex h-full flex-col p-5 md:p-5">
+                    <h3 className="font-display text-lg font-semibold tracking-tight md:text-xl">
+                      {catalogGroupTitle(group.id, locale, group.title)}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                      {catalogGroupSummary(group.id, locale)}
+                    </p>
+                  </GlassCard>
+                </SoftLink>
+              </Reveal>
+            );
+          })}
         </div>
+
+        <Reveal from="scale" delay={0.1} duration={0.5}>
+          <div className="mt-8 flex justify-center md:mt-10">
+            <Button asChild size="lg" className="rounded-2xl px-7">
+              <SoftLink href={localizedHref(locale, "/diensten")}>{services("viewAll")}</SoftLink>
+            </Button>
+          </div>
+        </Reveal>
       </section>
 
       <PricingPlans
@@ -130,59 +152,14 @@ export default async function HomePage({
       />
 
       <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
-        <Reveal>
-          <div className="mx-auto mb-10 max-w-2xl text-center">
-            <h2 className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
-              {services("title")}
-            </h2>
-            <p className="mt-3 text-muted-foreground md:text-lg">{services("subtitle")}</p>
-          </div>
-        </Reveal>
-
-        <div className="grid gap-3 md:grid-cols-6">
-          {sortedServiceGroups(locale).map((group, index) => {
-            const span =
-              index < 2
-                ? "md:col-span-3"
-                : index === 5
-                  ? "md:col-span-6"
-                  : "md:col-span-2";
-
-            return (
-              <Reveal key={group.id} delay={index * 0.05} className={cn("h-full", span)}>
-                <SoftLink href={serviceGroupHref(locale, group.id)} className="block h-full">
-                  <GlassCard className="flex h-full flex-col p-5 md:p-5">
-                    <h3 className="font-display text-lg font-semibold tracking-tight md:text-xl">
-                      {catalogGroupTitle(group.id, locale, group.title)}
-                    </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                      {catalogGroupSummary(group.id, locale)}
-                    </p>
-                  </GlassCard>
-                </SoftLink>
-              </Reveal>
-            );
-          })}
-        </div>
-
-        <Reveal delay={0.12}>
-          <div className="mt-8 flex justify-center md:mt-10">
-            <Button asChild size="lg" className="rounded-2xl px-7">
-              <SoftLink href={localizedHref(locale, "/diensten")}>{services("viewAll")}</SoftLink>
-            </Button>
-          </div>
-        </Reveal>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-          <Reveal>
+          <Reveal from="left" duration={0.6}>
             <h2 className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
               {faq("title")}
             </h2>
             <p className="mt-3 max-w-sm text-muted-foreground">{hero("ctaBannerText")}</p>
           </Reveal>
-          <Reveal delay={0.08}>
+          <Reveal from="right" delay={0.1} duration={0.65}>
             <div className="glass glow-hover relative overflow-hidden rounded-[1.75rem] px-5 md:px-6">
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="1" className="border-border/60">
@@ -210,7 +187,7 @@ export default async function HomePage({
       </section>
 
       <section className="mx-auto max-w-6xl px-4 pb-8 md:px-6 md:pb-12">
-        <Reveal>
+        <Reveal from="scale" duration={0.7}>
           <div className="glow-hover relative overflow-hidden rounded-4xl">
             <div className="glow-bg absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(94,59,136,0.45),transparent_40%),radial-gradient(circle_at_80%_80%,rgba(0,124,141,0.28),transparent_42%),linear-gradient(135deg,#2a1845,#14181f_55%,#0f1720)]" />
             <div className="relative z-1 px-8 py-14 text-center text-white md:px-14 md:py-20">

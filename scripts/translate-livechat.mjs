@@ -10,7 +10,8 @@ const EN = {
   title: "Live chat",
   subtitle: "TripleZero iT support",
   online: "Online — we reply as soon as possible",
-  teaser: "Need help? Chat with us.",
+  teaserLine1: "Need help?",
+  teaserLine2: "Open the chat...",
   emptyChat: "Ask a question. Our team will reply as soon as possible.",
   emptyTicket:
     "Describe your request — we'll open a ticket synced to your dashboard.",
@@ -40,7 +41,8 @@ const NL = {
   title: "Live chat",
   subtitle: "TripleZero iT support",
   online: "Online — we antwoorden zo snel mogelijk",
-  teaser: "Hulp nodig? Chat met ons.",
+  teaserLine1: "Hulp nodig?",
+  teaserLine2: "Open de Chat...",
   emptyChat: "Stel uw vraag. Ons team antwoordt zo snel mogelijk.",
   emptyTicket:
     "Beschrijf uw vraag — we openen een ticket dat zichtbaar is in uw dashboard.",

@@ -182,7 +182,8 @@ export function LiveChatWidget() {
       title: t("title"),
       subtitle: t("subtitle"),
       online: t("online"),
-      teaser: t("teaser"),
+      teaserLine1: t("teaserLine1"),
+      teaserLine2: t("teaserLine2"),
       emptyChat: t("emptyChat"),
       emptyTicket: t("emptyTicket"),
       placeholder: t("placeholder"),
@@ -615,9 +616,10 @@ export function LiveChatWidget() {
           >
             <X className="h-3.5 w-3.5" />
           </button>
-          <button type="button" onClick={openChat} className="pr-4 text-left">
-            <span className="font-medium text-foreground">{copy.teaser}</span>
-            <span className="mt-0.5 block text-xs text-muted-foreground">{copy.online}</span>
+          <button type="button" onClick={openChat} className="pr-4 text-left leading-snug">
+            <span className="block font-medium text-foreground">{copy.teaserLine1}</span>
+            <span className="block font-medium text-foreground">{copy.teaserLine2}</span>
+            <span className="mt-1 block text-xs text-muted-foreground">{copy.online}</span>
           </button>
         </div>
       ) : null}

@@ -101,7 +101,7 @@ export function PricingPlans({
       id={hashFor(locale, "prijzen")}
       className="mx-auto max-w-6xl scroll-mt-28 px-4 py-10 md:scroll-mt-32 md:px-6 md:py-12"
     >
-      <Reveal>
+      <Reveal from="up" duration={0.55}>
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
             {labels.title}
@@ -160,7 +160,12 @@ export function PricingPlans({
           const featuredIdlePulse = plan.featured && hoveredPlanId === null;
 
           return (
-          <Reveal key={plan.id} delay={index * 0.06}>
+          <Reveal
+            key={plan.id}
+            from={index === 0 ? "left" : index === 2 ? "right" : "up"}
+            delay={index * 0.08}
+            duration={0.55}
+          >
             <div
               onMouseEnter={() => setHoveredPlanId(plan.id)}
               className="h-full"
