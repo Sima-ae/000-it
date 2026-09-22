@@ -77,14 +77,24 @@ jobs:
             ls -la
             exit 1
           fi
-          # Cache is not needed at runtime and can make the upload huge/slow.
+          # Runtime uses `next start` (see scripts/deploy.sh), not the standalone server.
+          # Exclude cache/standalone/diagnostics so the upload stays small and reliable.
+          echo "==> .next size breakdown (before package)"
+          du -sh .next .next/* 2>/dev/null | sort -hr | head -30
           tar -czf next-build.tar.gz \
             --exclude='.next/cache' \
             --exclude='.next/trace' \
             --exclude='.next/types' \
+            --exclude='.next/standalone' \
+            --exclude='.next/diagnostics' \
+            --exclude='.next/analyze' \
             .next
           ls -lh next-build.tar.gz
-          du -sh .next .next/cache 2>/dev/null || true
+          BYTES="$(wc -c < next-build.tar.gz | tr -d ' ')"
+          # Soft guard: something unexpected ballooned the artifact
+          if [[ "$BYTES" -gt 150000000 ]]; then
+            echo "::warning::next-build.tar.gz is larger than 150MB (${BYTES} bytes). Check excludes."
+          fi
 
       - name: Deploy over SSH
         env:
@@ -136,13 +146,16 @@ jobs:
 
           echo "==> Upload pre-built .next to VPS (scp)"
           ls -lh next-build.tar.gz
-          # scp is more reliable than piping 100MB+ through ssh stdin (which often looks "stuck").
-          # Fail clearly if upload stalls longer than 10 minutes.
-          if ! timeout 600 scp "${SCP_OPTS[@]}" next-build.tar.gz "${VPS_USER}@${VPS_HOST}:/tmp/next-build.tar.gz"; then
+          # scp is more reliable than piping a large archive through ssh stdin.
+          # 20m budget — slow GitHub→VPS links have stalled ~373MB uploads before.
+          rm -f /tmp/next-build.tar.gz.upload
+          if ! timeout 1200 scp "${SCP_OPTS[@]}" next-build.tar.gz "${VPS_USER}@${VPS_HOST}:/tmp/next-build.tar.gz.upload"; then
             echo "::error::Upload of next-build.tar.gz timed out or failed (scp)."
+            ssh "${SSH_OPTS[@]}" "${VPS_USER}@${VPS_HOST}" 'rm -f /tmp/next-build.tar.gz.upload' || true
             exit 1
           fi
-          ssh "${SSH_OPTS[@]}" "${VPS_USER}@${VPS_HOST}" 'ls -lh /tmp/next-build.tar.gz && test -s /tmp/next-build.tar.gz'
+          ssh "${SSH_OPTS[@]}" "${VPS_USER}@${VPS_HOST}" \
+            'mv -f /tmp/next-build.tar.gz.upload /tmp/next-build.tar.gz && ls -lh /tmp/next-build.tar.gz && test -s /tmp/next-build.tar.gz'
 
           REMOTE_SCRIPT="$(mktemp)"
           trap 'rm -f "$REMOTE_SCRIPT"' EXIT
