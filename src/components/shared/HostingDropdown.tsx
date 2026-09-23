@@ -8,25 +8,28 @@ import { serviceCatalog, serviceGroupHref, serviceHref } from "@/content/fixweb/
 import {
   catalogGroupTitle,
   catalogServiceTitle,
+  catalogUiLabel,
 } from "@/content/fixweb/catalog-title";
 import { cn } from "@/lib/utils";
 
 const CLOSE_DELAY_MS = 220;
 
-/** Same hosting submenu order as the former Diensten mega column */
-const HOSTING_SLUGS = [
-  "web-hosting",
+/** Hosting product links after Domeinen + Webhosting overview */
+const HOSTING_MENU_SLUGS = [
   "domains",
   "shared-hosting-basic",
   "shared-hosting-business",
   "shared-hosting-plus",
-  "wordpress-hosting-basic",
-  "wordpress-hosting-business",
-  "wordpress-hosting-plus",
   "vps-hosting-basic",
   "vps-hosting-business",
   "vps-hosting-plus",
+  "wordpress-hosting-basic",
+  "wordpress-hosting-business",
+  "wordpress-hosting-plus",
 ] as const;
+
+/** All hosting-related slugs used for active-state detection (includes legacy web-hosting) */
+const HOSTING_SLUGS = ["web-hosting", ...HOSTING_MENU_SLUGS] as const;
 
 export function HostingDropdown({
   locale,
@@ -59,12 +62,30 @@ export function HostingDropdown({
 
   const groupHref = serviceGroupHref(locale, "hosting");
   const label = catalogGroupTitle("hosting", locale, "Webhosting & Domains");
-  const items = HOSTING_SLUGS.map((slug) => serviceCatalog.find((s) => s.slug === slug)).filter(
-    (item): item is NonNullable<typeof item> => Boolean(item),
-  );
+  /** Category overview link — short label for /diensten/categorie/hosting */
+  const categoryLabel = catalogUiLabel("hostingCategory", locale, "Webhosting");
+  const domainsItem = serviceCatalog.find((s) => s.slug === "domains");
+  const productItems = HOSTING_MENU_SLUGS.filter((slug) => slug !== "domains")
+    .map((slug) => serviceCatalog.find((s) => s.slug === slug))
+    .filter((item): item is NonNullable<typeof item> => Boolean(item));
 
   const itemClass =
     "block rounded-xl px-3 py-2 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground";
+
+  function renderServiceLink(item: NonNullable<typeof domainsItem>) {
+    const href = serviceHref(locale, item);
+    const itemActive = pathname === href || pathname.startsWith(`${href}/`);
+    return (
+      <SoftLink
+        key={item.slug}
+        href={href}
+        className={cn(itemClass, itemActive && "bg-primary text-primary-foreground")}
+        onClick={() => setOpen(false)}
+      >
+        {catalogServiceTitle(item.slug, locale, item.title)}
+      </SoftLink>
+    );
+  }
 
   return (
     <div
@@ -96,6 +117,7 @@ export function HostingDropdown({
           onMouseLeave={scheduleClose}
         >
           <div className="max-h-[min(70vh,28rem)] min-w-64 overflow-y-auto rounded-2xl border border-border/60 bg-white p-1.5 shadow-xl dark:bg-zinc-950">
+            {domainsItem ? renderServiceLink(domainsItem) : null}
             <SoftLink
               href={groupHref}
               className={cn(
@@ -106,22 +128,9 @@ export function HostingDropdown({
               )}
               onClick={() => setOpen(false)}
             >
-              {label}
+              {categoryLabel}
             </SoftLink>
-            {items.map((item) => {
-              const href = serviceHref(locale, item);
-              const itemActive = pathname === href || pathname.startsWith(`${href}/`);
-              return (
-                <SoftLink
-                  key={item.slug}
-                  href={href}
-                  className={cn(itemClass, itemActive && "bg-primary text-primary-foreground")}
-                  onClick={() => setOpen(false)}
-                >
-                  {catalogServiceTitle(item.slug, locale, item.title)}
-                </SoftLink>
-              );
-            })}
+            {productItems.map((item) => renderServiceLink(item))}
           </div>
         </div>
       ) : null}
@@ -129,4 +138,4 @@ export function HostingDropdown({
   );
 }
 
-export { HOSTING_SLUGS };
+export { HOSTING_SLUGS, HOSTING_MENU_SLUGS };

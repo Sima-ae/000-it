@@ -8,7 +8,7 @@ import { ThemeToggle } from "@/components/shared/ThemeToggle";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { ServicesMegaMenu } from "@/components/shared/ServicesMegaMenu";
 import { InfoDropdown } from "@/components/shared/InfoDropdown";
-import { HostingDropdown, HOSTING_SLUGS } from "@/components/shared/HostingDropdown";
+import { HostingDropdown, HOSTING_MENU_SLUGS, HOSTING_SLUGS } from "@/components/shared/HostingDropdown";
 import { LanguageSwitcher } from "@/components/shared/LanguageSwitcher";
 import { CartNavButton } from "@/components/shop/CartNavButton";
 import { AccountMenu } from "@/components/shared/AccountMenu";
@@ -16,6 +16,7 @@ import { serviceCatalog, serviceGroupHref, serviceHref, sortedServiceGroups } fr
 import {
   catalogGroupTitle,
   catalogServiceTitle,
+  catalogUiLabel,
 } from "@/content/fixweb/catalog-title";
 import {
   localizedHref,
@@ -385,13 +386,29 @@ export function Navigation() {
                       </button>
                       {mobileHostingOpen ? (
                         <div className="mb-2 ml-2 space-y-1 border-l border-border/60 pl-3">
+                          {(() => {
+                            const domainsItem = serviceCatalog.find((s) => s.slug === "domains");
+                            return domainsItem ? (
+                              <SoftLink
+                                key={domainsItem.slug}
+                                href={serviceHref(locale, domainsItem)}
+                                className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
+                              >
+                                {catalogServiceTitle(
+                                  domainsItem.slug,
+                                  locale,
+                                  domainsItem.title,
+                                )}
+                              </SoftLink>
+                            ) : null;
+                          })()}
                           <SoftLink
                             href={serviceGroupHref(locale, "hosting")}
                             className="block rounded-lg px-2 py-1.5 text-sm font-medium text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
                           >
-                            {hostingLabel}
+                            {catalogUiLabel("hostingCategory", locale, "Webhosting")}
                           </SoftLink>
-                          {HOSTING_SLUGS.map((slug) => {
+                          {HOSTING_MENU_SLUGS.filter((slug) => slug !== "domains").map((slug) => {
                             const item = serviceCatalog.find((s) => s.slug === slug);
                             if (!item) return null;
                             return (

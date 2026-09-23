@@ -4382,109 +4382,144 @@
   },
   "labels": {
     "en": {
-      "perMonth": "/ month"
+      "perMonth": "/ month",
+      "hostingCategory": "Webhosting"
     },
     "nl": {
-      "perMonth": "/ maand"
+      "perMonth": "/ maand",
+      "hostingCategory": "Webhosting"
     },
     "fr": {
-      "perMonth": "/ mois"
+      "perMonth": "/ mois",
+      "hostingCategory": "Hébergement web"
     },
     "de": {
-      "perMonth": "/ Monat"
+      "perMonth": "/ Monat",
+      "hostingCategory": "Webhosting"
     },
     "es": {
-      "perMonth": "/ mes"
+      "perMonth": "/ mes",
+      "hostingCategory": "Alojamiento web"
     },
     "pt": {
-      "perMonth": "/ mês"
+      "perMonth": "/ mês",
+      "hostingCategory": "Hospedagem web"
     },
     "it": {
-      "perMonth": "/ mese"
+      "perMonth": "/ mese",
+      "hostingCategory": "Web hosting"
     },
     "el": {
-      "perMonth": "/ μήνα"
+      "perMonth": "/ μήνα",
+      "hostingCategory": "Φιλοξενία ιστού"
     },
     "pl": {
-      "perMonth": "/ miesiąc"
+      "perMonth": "/ miesiąc",
+      "hostingCategory": "Hosting"
     },
     "cs": {
-      "perMonth": "/ měsíc"
+      "perMonth": "/ měsíc",
+      "hostingCategory": "Webhosting"
     },
     "sk": {
-      "perMonth": "/ mesiac"
+      "perMonth": "/ mesiac",
+      "hostingCategory": "Webhosting"
     },
     "hu": {
-      "perMonth": "/ hónap"
+      "perMonth": "/ hónap",
+      "hostingCategory": "Webtárhely"
     },
     "ro": {
-      "perMonth": "/luna"
+      "perMonth": "/luna",
+      "hostingCategory": "Găzduire web"
     },
     "bg": {
-      "perMonth": "/ месец"
+      "perMonth": "/ месец",
+      "hostingCategory": "Уеб хостинг"
     },
     "hr": {
-      "perMonth": "/ mjesecu"
+      "perMonth": "/ mjesecu",
+      "hostingCategory": "Webhosting"
     },
     "sr": {
-      "perMonth": "/ месец"
+      "perMonth": "/ месец",
+      "hostingCategory": "Veb hosting"
     },
     "bs": {
-      "perMonth": "/ mjesec"
+      "perMonth": "/ mjesec",
+      "hostingCategory": "Web hosting"
     },
     "cnr": {
-      "perMonth": "/ месец"
+      "perMonth": "/ месец",
+      "hostingCategory": "Veb hosting"
     },
     "sq": {
-      "perMonth": "/ muaj"
+      "perMonth": "/ muaj",
+      "hostingCategory": "Web hosting"
     },
     "mk": {
-      "perMonth": "/ месец"
+      "perMonth": "/ месец",
+      "hostingCategory": "Веб-хостинг"
     },
     "lt": {
-      "perMonth": "/ mėn"
+      "perMonth": "/ mėn",
+      "hostingCategory": "Priegloba"
     },
     "da": {
-      "perMonth": "/ måned"
+      "perMonth": "/ måned",
+      "hostingCategory": "Webhosting"
     },
     "sv": {
-      "perMonth": "/ månad"
+      "perMonth": "/ månad",
+      "hostingCategory": "Webbhotell"
     },
     "no": {
-      "perMonth": "/ måned"
+      "perMonth": "/ måned",
+      "hostingCategory": "Webhotell"
     },
     "fi": {
-      "perMonth": "/ kuukausi"
+      "perMonth": "/ kuukausi",
+      "hostingCategory": "Webhotelli"
     },
     "uk": {
-      "perMonth": "/ місяць"
+      "perMonth": "/ місяць",
+      "hostingCategory": "Веб-хостинг"
     },
     "ru": {
-      "perMonth": "/ месяц"
+      "perMonth": "/ месяц",
+      "hostingCategory": "Веб-хостинг"
     },
     "tr": {
-      "perMonth": "/ ay"
+      "perMonth": "/ ay",
+      "hostingCategory": "Web barındırma"
     },
     "he": {
-      "perMonth": "/ חודש"
+      "perMonth": "/ חודש",
+      "hostingCategory": "אחסון אתרים"
     },
     "ar": {
-      "perMonth": "/ شهر"
+      "perMonth": "/ شهر",
+      "hostingCategory": "استضافة المواقع"
     },
     "ka": {
-      "perMonth": "/ თვე"
+      "perMonth": "/ თვე",
+      "hostingCategory": "ვებჰოსტინგი"
     },
     "hy": {
-      "perMonth": "/ ամիս"
+      "perMonth": "/ ամիս",
+      "hostingCategory": "Վեբհոստինգ"
     },
     "az": {
-      "perMonth": "/ ay"
+      "perMonth": "/ ay",
+      "hostingCategory": "Veb hostinq"
     },
     "zh": {
-      "perMonth": "/ 月"
+      "perMonth": "/ 月",
+      "hostingCategory": "虚拟主机"
     },
     "ja": {
-      "perMonth": "/ 月"
+      "perMonth": "/ 月",
+      "hostingCategory": "ウェブホスティング"
     }
   }
 }
