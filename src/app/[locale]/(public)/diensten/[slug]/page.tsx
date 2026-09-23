@@ -43,6 +43,9 @@ const aiInquiryBySlug: Record<
   "ai-in-website": { source: "AI_IN_WEBSITE", key: "web" },
 };
 
+/** Live shop catalog drives price/specs — must not bake stale static product data. */
+export const dynamic = "force-dynamic";
+
 export function generateStaticParams() {
   return getServiceSlugs().map((slug) => ({ slug }));
 }
@@ -170,14 +173,40 @@ export default async function ServiceDetailPage({
                   </p>
                 ) : null}
                 {typeof content.price === "number" ? (
-                  <p className="mt-6 font-display text-3xl font-bold text-foreground">
-                    {formatEuro(content.price)}
-                    {"priceSuffix" in content && content.priceSuffix ? (
-                      <span className="ml-2 text-base font-medium text-muted-foreground">
-                        {content.priceSuffix}
-                      </span>
+                  <div className="mt-6">
+                    {"listPrice" in content &&
+                    typeof content.listPrice === "number" ? (
+                      <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                        <p className="font-display text-xl font-medium text-muted-foreground line-through decoration-2">
+                          {formatEuro(content.listPrice)}
+                        </p>
+                        <p className="font-display text-3xl font-bold text-primary">
+                          {formatEuro(content.price)}
+                          {"priceSuffix" in content && content.priceSuffix ? (
+                            <span className="ml-2 text-base font-medium text-muted-foreground">
+                              {content.priceSuffix}
+                            </span>
+                          ) : null}
+                        </p>
+                      </div>
+                    ) : (
+                      <p className="font-display text-3xl font-bold text-foreground">
+                        {formatEuro(content.price)}
+                        {"priceSuffix" in content && content.priceSuffix ? (
+                          <span className="ml-2 text-base font-medium text-muted-foreground">
+                            {content.priceSuffix}
+                          </span>
+                        ) : null}
+                      </p>
+                    )}
+                    {"checkoutMonths" in content &&
+                    typeof content.checkoutMonths === "number" &&
+                    content.checkoutMonths > 1 ? (
+                      <p className="mt-1 text-sm text-muted-foreground">
+                        {tShop("billedYearly", { months: content.checkoutMonths })}
+                      </p>
                     ) : null}
-                  </p>
+                  </div>
                 ) : null}
                 {"features" in content && Array.isArray(content.features) && content.features.length ? (
                   <ul className="mt-5 grid gap-1.5 text-sm text-muted-foreground sm:grid-cols-2">
@@ -334,6 +363,14 @@ export default async function ServiceDetailPage({
                     title={catalogServiceTitle(item.slug, locale, item.title)}
                     summary={relatedContent?.subtitle || ""}
                     price={relatedContent?.price ?? undefined}
+                    listPrice={
+                      relatedContent && "listPrice" in relatedContent
+                        ? (relatedContent.listPrice as
+                            | number
+                            | null
+                            | undefined) ?? undefined
+                        : undefined
+                    }
                     image={relatedContent?.image ?? undefined}
                   />
                 </Reveal>

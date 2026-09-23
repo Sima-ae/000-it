@@ -14,6 +14,7 @@ export type ServiceGroupCard = {
   title: string;
   summary: string;
   price?: number | null;
+  listPrice?: number | null;
   image?: string | null;
 };
 
@@ -42,6 +43,10 @@ export async function listServiceGroupCards(
         title,
         summary,
         price: content?.price ?? undefined,
+        listPrice:
+          content && "listPrice" in content
+            ? ((content.listPrice as number | null | undefined) ?? undefined)
+            : undefined,
         image: content?.image ?? undefined,
         hasBody: Boolean(content?.hasBody || item.href || summary),
       };

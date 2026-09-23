@@ -19,6 +19,9 @@ import { getServiceCardMeta } from "@/lib/fixweb-content";
 import { buildStaticPageMetadata } from "@/lib/seo";
 import { hashFor, localizedHref } from "@/i18n/pathnames";
 
+/** Shop catalog prices/specs must stay live. */
+export const dynamic = "force-dynamic";
+
 export async function generateMetadata({
   params,
 }: {
@@ -268,6 +271,12 @@ export default async function ServicesPage({
                       title={title}
                       summary={summary}
                       price={content?.price ?? undefined}
+                      listPrice={
+                        content && "listPrice" in content
+                          ? (content.listPrice as number | null | undefined) ??
+                            undefined
+                          : undefined
+                      }
                       image={content?.image ?? undefined}
                     />
                   </Reveal>

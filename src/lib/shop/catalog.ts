@@ -537,6 +537,7 @@ export async function loadShopCatalogFromDb(opts?: {
       "[shop] DB catalog unavailable, using static fallback",
       error instanceof Error ? error.message : error,
     );
+    setRuntimeShopCatalog(STATIC_SHOP_CATALOG);
     return STATIC_SHOP_CATALOG;
   }
 }

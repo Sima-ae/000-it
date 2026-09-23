@@ -12,6 +12,12 @@ import { getCustomServiceContent } from "@/content/services/custom";
 import { brandify } from "@/lib/brandify";
 import { formatEuro as formatEuroShared } from "@/lib/format-euro";
 import { hydrateLocalizedCopy } from "@/lib/localized-copy";
+import {
+  getShopProductBySlug,
+  loadShopCatalogFromDb,
+  localizeShopProduct,
+  shopUnitPriceInclCents,
+} from "@/lib/shop/catalog";
 
 export { brandify } from "@/lib/brandify";
 
@@ -125,6 +131,62 @@ function productFeatures(shortDescription: string) {
         !/^what can you expect/i.test(line) &&
         !/^wat kun je verwachten/i.test(line),
     );
+}
+
+/** Prefer live shop-catalog copy/price over static imported products. */
+function shopCatalogOverlay(slug: string, locale: string) {
+  const shop = getShopProductBySlug(slug);
+  if (!shop || shop.published === false || shop.priceInclCents <= 0) {
+    return null;
+  }
+
+  const unitCents = shopUnitPriceInclCents(shop);
+  const listCents = shop.priceInclCents;
+  const priceOverlay = {
+    price: unitCents / 100,
+    listPrice: unitCents < listCents ? listCents / 100 : null,
+    currency: "EUR" as const,
+    image: shop.image || null,
+    checkoutMonths: shop.checkoutMonths ?? null,
+  };
+
+  // Shop catalog only stores NL/EN copy — keep localized i18n body elsewhere.
+  if (locale !== "nl" && locale !== "en") {
+    return {
+      title: null as string | null,
+      shortDescription: null as string | null,
+      description: null as string | null,
+      features: [] as string[],
+      blocks: [] as ContentBlock[],
+      ...priceOverlay,
+    };
+  }
+
+  const localized = localizeShopProduct(shop, locale);
+  const shortDescription = brandify(localized.localizedShort || "");
+  const description = brandify(localized.localizedDescription || "");
+  const features = productFeatures(shortDescription);
+  const planHeading = locale === "nl" ? "Planhighlights" : "Plan highlights";
+  const descriptionBlocks = textToBlocks(description || shortDescription, {
+    maxBlocks: 12,
+  });
+  const blocks: ContentBlock[] =
+    features.length >= 2
+      ? [
+          { type: "heading", text: planHeading },
+          { type: "list", items: features },
+          ...descriptionBlocks,
+        ]
+      : descriptionBlocks;
+
+  return {
+    title: brandify(localized.localizedName),
+    shortDescription,
+    description,
+    features,
+    blocks,
+    ...priceOverlay,
+  };
 }
 
 export function getImportedPage(slug: string, options?: { maxBlocks?: number }) {
@@ -332,15 +394,48 @@ function buildServiceContent(slug: string, locale: string) {
 
 export async function getServiceContent(slug: string, locale: string = "nl") {
   await hydrateLocalizedCopy(locale);
+  await loadShopCatalogFromDb();
   const key = `${locale}:${slug}`;
+  let content: ReturnType<typeof buildServiceContent>;
   if (locale === "nl" || locale === "en") {
-    if (serviceContentCache.has(key)) return serviceContentCache.get(key)!;
+    if (serviceContentCache.has(key)) {
+      content = serviceContentCache.get(key)!;
+    } else {
+      content = buildServiceContent(slug, locale);
+      serviceContentCache.set(key, content);
+    }
+  } else {
+    content = buildServiceContent(slug, locale);
   }
-  const content = buildServiceContent(slug, locale);
-  if (locale === "nl" || locale === "en") {
-    serviceContentCache.set(key, content);
-  }
-  return content;
+
+  if (!content) return content;
+
+  const overlay = shopCatalogOverlay(slug, locale);
+  if (!overlay) return content;
+
+  const featureSubtitle =
+    overlay.features.length > 0
+      ? overlay.features.slice(0, 4).join(" · ")
+      : overlay.shortDescription
+        ? overlay.shortDescription.split("\n")[0] || content.subtitle || ""
+        : content.subtitle || "";
+
+  return {
+    ...content,
+    title: overlay.title || content.title,
+    subtitle: featureSubtitle || content.subtitle,
+    price: overlay.price,
+    listPrice: overlay.listPrice,
+    currency: overlay.currency,
+    priceSuffix:
+      content.meta.group === "hosting"
+        ? catalogUiLabel("perMonth", locale, locale === "nl" ? "/ maand" : "/ month")
+        : content.priceSuffix ?? null,
+    image: overlay.image || content.image,
+    blocks: overlay.blocks.length ? overlay.blocks : content.blocks,
+    features: overlay.features.length ? overlay.features : content.features,
+    checkoutMonths: overlay.checkoutMonths,
+  };
 }
 
 function buildServiceCardMeta(slug: string, locale: string) {
@@ -418,15 +513,41 @@ function buildServiceCardMeta(slug: string, locale: string) {
 /** Lightweight card data — skips full block parsing for listings. */
 export async function getServiceCardMeta(slug: string, locale: string = "nl") {
   await hydrateLocalizedCopy(locale);
+  await loadShopCatalogFromDb();
   const key = `${locale}:${slug}`;
+  let meta: ReturnType<typeof buildServiceCardMeta>;
   if (locale === "nl" || locale === "en") {
-    if (serviceCardCache.has(key)) return serviceCardCache.get(key)!;
+    if (serviceCardCache.has(key)) {
+      meta = serviceCardCache.get(key)!;
+    } else {
+      meta = buildServiceCardMeta(slug, locale);
+      serviceCardCache.set(key, meta);
+    }
+  } else {
+    meta = buildServiceCardMeta(slug, locale);
   }
-  const meta = buildServiceCardMeta(slug, locale);
-  if (locale === "nl" || locale === "en") {
-    serviceCardCache.set(key, meta);
-  }
-  return meta;
+
+  if (!meta) return meta;
+
+  const overlay = shopCatalogOverlay(slug, locale);
+  if (!overlay) return meta;
+
+  const subtitle =
+    overlay.features.length > 0
+      ? overlay.features.slice(0, 4).join(" · ")
+      : overlay.shortDescription
+        ? overlay.shortDescription.split("\n")[0] || meta.subtitle
+        : meta.subtitle;
+
+  return {
+    ...meta,
+    title: overlay.title || meta.title,
+    subtitle,
+    price: overlay.price,
+    listPrice: overlay.listPrice,
+    image: overlay.image || meta.image,
+    hasBody: true,
+  };
 }
 
 export function listProductsByGroup(group: ServiceNavItem["group"]) {

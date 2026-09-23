@@ -110,6 +110,7 @@ export default async function DesignCategoryPage({ params }: Params) {
                 title={card.title}
                 summary={card.summary}
                 price={card.price}
+                listPrice={card.listPrice}
                 image={card.image}
               />
             </Reveal>

@@ -24,6 +24,9 @@ import { localizedHref } from "@/i18n/pathnames";
 
 type Params = { params: Promise<{ locale: string; group: string }> };
 
+/** Shop catalog prices/specs must stay live. */
+export const dynamic = "force-dynamic";
+
 export function generateStaticParams() {
   return serviceGroups
     .filter((group) => group.id !== "design")
@@ -125,6 +128,7 @@ export default async function ServiceCategoryPage({ params }: Params) {
                 title={card.title}
                 summary={card.summary}
                 price={card.price}
+                listPrice={card.listPrice}
                 image={card.image}
               />
             </Reveal>

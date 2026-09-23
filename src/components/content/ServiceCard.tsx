@@ -10,14 +10,21 @@ export function ServiceCard({
   title,
   summary,
   price,
+  listPrice,
   image,
 }: {
   href: string;
   title: string;
   summary?: string;
   price?: number | null;
+  listPrice?: number | null;
   image?: string | null;
 }) {
+  const hasDiscount =
+    typeof price === "number" &&
+    typeof listPrice === "number" &&
+    listPrice > price;
+
   return (
     <SoftLink href={href} className="block h-full">
       <GlassCard className="flex h-full flex-col overflow-hidden p-0">
@@ -38,9 +45,20 @@ export function ServiceCard({
             <p className="mt-2 line-clamp-3 text-sm text-muted-foreground">{summary}</p>
           ) : null}
           {typeof price === "number" ? (
-            <p className="mt-auto pt-4 font-display text-base font-semibold text-foreground">
-              {formatEuro(price)}
-            </p>
+            hasDiscount ? (
+              <div className="mt-auto flex flex-wrap items-baseline gap-x-2 gap-y-0.5 pt-4">
+                <p className="font-display text-sm font-medium text-muted-foreground line-through decoration-2">
+                  {formatEuro(listPrice)}
+                </p>
+                <p className="font-display text-base font-semibold text-primary">
+                  {formatEuro(price)}
+                </p>
+              </div>
+            ) : (
+              <p className="mt-auto pt-4 font-display text-base font-semibold text-foreground">
+                {formatEuro(price)}
+              </p>
+            )
           ) : null}
         </div>
       </GlassCard>
