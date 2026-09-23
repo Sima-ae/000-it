@@ -199,7 +199,8 @@
     "enterpriseHint": "Plani i ndërmarrjes",
     "enterpriseDesc": "Na tregoni shkurtimisht çfarë ju nevojitet - ne do të dërgojmë një propozim të përshtatur.",
     "hostingMonth": "1× hosting në internet (1 muaj)",
-    "hostingYear": "1× hosting në internet (12 muaj)"
+    "hostingYear": "1× hosting në internet (12 muaj)",
+    "viewAll": "Klikoni këtu për të gjitha çmimet"
   },
   "faq": {
     "title": "FAQ",
@@ -232,8 +233,8 @@
   },
   "shop": {
     "title": "Dyqan",
-    "subtitle": "Porositni planet dhe shërbimet në internet. Çmimet përfshijnë TVSH 21%. Siguroni pagesë përmes Stripe.",
-    "plans": "Planet",
+    "subtitle": "Të gjitha çmimet përfshijnë 21% TVSH.",
+    "plans": "Ready To Go - Paketa e plotë AI",
     "services": "Shërbime dhe produkte",
     "typePlan": "Planifikoni",
     "typeService": "Shërbimi",

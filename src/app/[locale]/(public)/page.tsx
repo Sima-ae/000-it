@@ -46,6 +46,7 @@ export default async function HomePage({
   const services = await getTranslations("services");
   const pricing = await getTranslations("pricing");
   const faq = await getTranslations("faq");
+  const shop = await getTranslations("shop");
 
   const scanCount = getAiScanCount();
 
@@ -83,10 +84,10 @@ export default async function HomePage({
       <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
         <Reveal from="up" duration={0.6}>
           <div className="mx-auto mb-10 max-w-2xl text-center">
-            <h2 className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
+            <h2 className="font-display text-3xl font-semibold tracking-tight text-primary md:text-5xl">
               {services("title")}
             </h2>
-            <p className="mt-3 text-muted-foreground md:text-lg">{services("subtitle")}</p>
+            <p className="mt-3 text-muted-foreground">{services("subtitle")}</p>
           </div>
         </Reveal>
 
@@ -137,7 +138,8 @@ export default async function HomePage({
         plans={plans}
         labels={{
           title: pricing("title"),
-          subtitle: pricing("subtitle"),
+          subtitle: shop("subtitle"),
+          categoryTitle: shop("plans"),
           plansHeadline: pricing("plansHeadline"),
           monthly: pricing("monthly"),
           yearly: pricing("yearly"),
@@ -148,6 +150,7 @@ export default async function HomePage({
           ctaContact: pricing("ctaContact"),
           custom: pricing("custom"),
           mostChosen: pricing("mostChosen"),
+          viewAll: pricing("viewAll"),
         }}
       />
 

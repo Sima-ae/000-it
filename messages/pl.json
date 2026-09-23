@@ -199,7 +199,8 @@
     "enterpriseHint": "Plan korporacyjny",
     "enterpriseDesc": "Powiedz nam krótko, czego potrzebujesz – prześlemy dopasowaną ofertę.",
     "hostingMonth": "1× hosting (1 miesiąc)",
-    "hostingYear": "1× hosting (12 miesięcy)"
+    "hostingYear": "1× hosting (12 miesięcy)",
+    "viewAll": "Kliknij tutaj, aby zobaczyć wszystkie ceny"
   },
   "faq": {
     "title": "Często zadawane pytania",
@@ -232,8 +233,8 @@
   },
   "shop": {
     "title": "Sklep",
-    "subtitle": "Zamów plany i usługi online. Ceny zawierają 21% podatku VAT. Bezpieczna płatność za pośrednictwem Stripe.",
-    "plans": "Plany",
+    "subtitle": "Wszystkie ceny zawierają 21% VAT.",
+    "plans": "Ready To Go - Kompletny pakiet AI",
     "services": "Usługi i produkty",
     "typePlan": "Plan",
     "typeService": "Serwis",

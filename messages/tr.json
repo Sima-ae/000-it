@@ -199,7 +199,8 @@
     "enterpriseHint": "Kurumsal plan",
     "enterpriseDesc": "Bize neye ihtiyacınız olduğunu kısaca anlatın; sana özel bir teklif göndereceğiz.",
     "hostingMonth": "1× web barındırma (1 ay)",
-    "hostingYear": "1× web barındırma (12 ay)"
+    "hostingYear": "1× web barındırma (12 ay)",
+    "viewAll": "Tüm fiyatlar için buraya tıklayın"
   },
   "faq": {
     "title": "SSS",
@@ -232,8 +233,8 @@
   },
   "shop": {
     "title": "Mağaza",
-    "subtitle": "Planları ve hizmetleri çevrimiçi sipariş edin. Fiyatlara %21 KDV dahildir. Stripe aracılığıyla güvenli ödeme.",
-    "plans": "Planlar",
+    "subtitle": "Tüm fiyatlara %21 KDV dahildir.",
+    "plans": "Ready To Go - Tam AI paketi",
     "services": "Hizmetler ve ürünler",
     "typePlan": "Planı",
     "typeService": "Hizmet",

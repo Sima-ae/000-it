@@ -199,7 +199,8 @@
     "enterpriseHint": "Företagsplan",
     "enterpriseDesc": "Berätta kort vad du behöver – vi skickar ett skräddarsytt förslag.",
     "hostingMonth": "1× webbhotell (1 månad)",
-    "hostingYear": "1× webbhotell (12 månader)"
+    "hostingYear": "1× webbhotell (12 månader)",
+    "viewAll": "Klicka här för alla priser"
   },
   "faq": {
     "title": "FAQ",
@@ -232,8 +233,8 @@
   },
   "shop": {
     "title": "Handla",
-    "subtitle": "Beställ planer och tjänster online. Priserna inkluderar 21% moms. Säker betalning via Stripe.",
-    "plans": "Planer",
+    "subtitle": "Alla priser är inkl. 21% moms.",
+    "plans": "Ready To Go - AI komplett paket",
     "services": "Tjänster & produkter",
     "typePlan": "Planera",
     "typeService": "Service/Tjänster",

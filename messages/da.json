@@ -199,7 +199,8 @@
     "enterpriseHint": "Virksomhedsplan",
     "enterpriseDesc": "Fortæl os kort, hvad du har brug for - vi sender et skræddersyet forslag.",
     "hostingMonth": "1× webhosting (1 måned)",
-    "hostingYear": "1× webhosting (12 måneder)"
+    "hostingYear": "1× webhosting (12 måneder)",
+    "viewAll": "Klik her for alle priser"
   },
   "faq": {
     "title": "FAQ",
@@ -232,8 +233,8 @@
   },
   "shop": {
     "title": "Butik",
-    "subtitle": "Bestil planer og tjenester online. Priserne er inklusiv 21% moms. Sikker betaling via Stripe.",
-    "plans": "Planer",
+    "subtitle": "Alle priser er inkl. 21% moms.",
+    "plans": "Ready To Go - AI komplet pakke",
     "services": "Tjenester og produkter",
     "typePlan": "Plan",
     "typeService": "Service",

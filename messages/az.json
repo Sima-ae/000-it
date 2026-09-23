@@ -199,7 +199,8 @@
     "enterpriseHint": "Müəssisə planı",
     "enterpriseDesc": "Nəyə ehtiyacınız olduğunu bizə qısaca deyin - biz xüsusi təklif göndərəcəyik.",
     "hostingMonth": "1× veb hostinq (1 ay)",
-    "hostingYear": "1× veb hostinq (12 ay)"
+    "hostingYear": "1× veb hostinq (12 ay)",
+    "viewAll": "Bütün qiymətlər üçün buraya klikləyin"
   },
   "faq": {
     "title": "Tez-tez verilən suallar",
@@ -232,8 +233,8 @@
   },
   "shop": {
     "title": "Mağaza",
-    "subtitle": "Planları və xidmətləri onlayn sifariş edin. Qiymətlərə 21% ƏDV daxildir. Stripe vasitəsilə təhlükəsiz ödəniş.",
-    "plans": "Planlar",
+    "subtitle": "Bütün qiymətlərə 21% ƏDV daxildir.",
+    "plans": "Ready To Go - Tam AI paketi",
     "services": "Xidmətlər və məhsullar",
     "typePlan": "Plan",
     "typeService": "Xidmət",

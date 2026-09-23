@@ -199,7 +199,8 @@
     "enterpriseHint": "Enterprise plan",
     "enterpriseDesc": "Tell us briefly what you need — we’ll send a tailored proposal.",
     "hostingMonth": "1× web hosting (1 month)",
-    "hostingYear": "1× web hosting (12 months)"
+    "hostingYear": "1× web hosting (12 months)",
+    "viewAll": "Click here for all prices"
   },
   "faq": {
     "title": "FAQ",
@@ -232,8 +233,8 @@
   },
   "shop": {
     "title": "Shop",
-    "subtitle": "Order plans and services online. Prices include 21% VAT. Secure payment via Stripe.",
-    "plans": "Plans",
+    "subtitle": "All prices include 21% VAT.",
+    "plans": "Ready To Go - AI complete package",
     "services": "Services & products",
     "typePlan": "Plan",
     "typeService": "Service",

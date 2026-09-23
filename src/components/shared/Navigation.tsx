@@ -18,9 +18,7 @@ import {
   catalogServiceTitle,
 } from "@/content/fixweb/catalog-title";
 import {
-  hashFor,
   localizedHref,
-  resolveHashElementId,
 } from "@/i18n/pathnames";
 import { BrandLogo } from "@/components/shared/BrandLogo";
 import { cn } from "@/lib/utils";
@@ -31,7 +29,7 @@ const primaryLinks = [
   { href: "/diensten", key: "services", mega: true },
   { href: "/kennisbank", key: "kennisbank" },
   { href: "/portfolio", key: "portfolio" },
-  { href: "#prijzen", key: "pricing" },
+  { href: "/shop", key: "pricing" },
   { href: "/diensten/categorie/hosting", key: "hosting", hosting: true },
 ] as const;
 
@@ -49,13 +47,11 @@ export function Navigation() {
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileInfoOpen, setMobileInfoOpen] = useState(false);
   const [mobileHostingOpen, setMobileHostingOpen] = useState(false);
-  const [hash, setHash] = useState("");
 
   const onHome = isLocaleHome(pathname, locale);
-  const pricingHash = hashFor(locale, "prijzen");
+  const shopHref = localizedHref(locale, "/shop");
   const pricingActive =
-    onHome &&
-    (resolveHashElementId(hash) === "prijzen" || hash === pricingHash);
+    pathname === shopHref || pathname.startsWith(`${shopHref}/`);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -65,18 +61,6 @@ export function Navigation() {
   }, []);
 
   useEffect(() => {
-    const syncHash = () =>
-      setHash(window.location.hash.replace(/^#/, "").trim());
-    syncHash();
-    window.addEventListener("hashchange", syncHash);
-    window.addEventListener("popstate", syncHash);
-    return () => {
-      window.removeEventListener("hashchange", syncHash);
-      window.removeEventListener("popstate", syncHash);
-    };
-  }, [pathname]);
-
-  useEffect(() => {
     setOpen(false);
     setMobileServicesOpen(false);
     setMobileInfoOpen(false);
@@ -84,9 +68,9 @@ export function Navigation() {
   }, [pathname]);
 
   function linkActive(linkHref: string, pathOnly: string) {
-    if (linkHref === "#prijzen") return pricingActive;
+    if (linkHref === "/shop") return pricingActive;
     if (linkHref === "/") {
-      return onHome && !pricingActive;
+      return onHome;
     }
     if (linkHref === "/diensten/categorie/hosting") {
       const hostingGroup = serviceGroupHref(locale, "hosting");

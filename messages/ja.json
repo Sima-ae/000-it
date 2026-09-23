@@ -199,7 +199,8 @@
     "enterpriseHint": "エンタープライズプラン",
     "enterpriseDesc": "必要なものを簡単にお知らせください。カスタマイズされた提案をお送りします。",
     "hostingMonth": "1× ウェブホスティング (1 か月)",
-    "hostingYear": "1× Web ホスティング (12 か月)"
+    "hostingYear": "1× Web ホスティング (12 か月)",
+    "viewAll": "すべての料金はこちら"
   },
   "faq": {
     "title": "よくある質問",
@@ -232,8 +233,8 @@
   },
   "shop": {
     "title": "ショップ",
-    "subtitle": "プランとサービスをオンラインで注文します。価格には 21% の付加価値税が含まれています。 Stripe 経由で安全にお支払いいただけます。",
-    "plans": "計画",
+    "subtitle": "すべての料金は消費税21%込みです。",
+    "plans": "Ready To Go - AIコンプリートパッケージ",
     "services": "サービスと製品",
     "typePlan": "計画",
     "typeService": "サービス",

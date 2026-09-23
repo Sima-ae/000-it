@@ -192,7 +192,7 @@ export default async function ServicesPage({
         className="mt-6 scroll-mt-(--nav-offset) md:scroll-mt-[calc(var(--nav-offset)+3.25rem)]"
       >
         <Reveal>
-          <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
+          <h2 className="font-display text-2xl font-semibold tracking-tight text-accent md:text-3xl">
             {t("mostPopular")}
           </h2>
         </Reveal>
@@ -219,10 +219,10 @@ export default async function ServicesPage({
           <Reveal>
             <div className="flex flex-wrap items-end justify-between gap-3">
               <div>
-                <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
+                <h2 className="font-display text-2xl font-semibold tracking-tight text-accent md:text-3xl">
                   <SoftLink
                     href={serviceGroupHref(locale, group.id)}
-                    className="transition hover:text-primary"
+                    className="transition hover:text-accent/80"
                   >
                     {groupLabel(group)}
                   </SoftLink>

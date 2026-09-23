@@ -199,7 +199,8 @@
     "enterpriseHint": "Unternehmensplan",
     "enterpriseDesc": "Sag uns kurz, was du brauchst – wir unterbreiten dir ein maßgeschneidertes Angebot.",
     "hostingMonth": "1× Webhosting (1 Monat)",
-    "hostingYear": "1× Webhosting (12 Monate)"
+    "hostingYear": "1× Webhosting (12 Monate)",
+    "viewAll": "Hier klicken für alle Preise"
   },
   "faq": {
     "title": "FAQ",
@@ -232,8 +233,8 @@
   },
   "shop": {
     "title": "Einkaufen",
-    "subtitle": "Bestelle Pläne und Dienstleistungen online. Die Preise verstehen sich inklusive 21 % Mehrwertsteuer. Sichere Zahlung über Stripe.",
-    "plans": "Pläne",
+    "subtitle": "Alle Preise sind inklusive 21% MwSt.",
+    "plans": "Ready To Go - KI-Komplettpaket",
     "services": "Dienstleistungen & Produkte",
     "typePlan": "Planen",
     "typeService": "Service",

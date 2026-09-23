@@ -199,7 +199,8 @@
     "enterpriseHint": "Enterprise plan",
     "enterpriseDesc": "Recite nam ukratko što ti je potrebno - poslat ćemo prilagođeni prijedlog.",
     "hostingMonth": "1× web hosting (1 mjesec)",
-    "hostingYear": "1× web hosting (12 mjeseci)"
+    "hostingYear": "1× web hosting (12 mjeseci)",
+    "viewAll": "Klikni ovdje za sve cijene"
   },
   "faq": {
     "title": "FAQ",
@@ -232,8 +233,8 @@
   },
   "shop": {
     "title": "Dućan",
-    "subtitle": "Naručite planove i usluge online. Cijene uključuju 21% PDV-a. Sigurno plaćanje putem Stripe.",
-    "plans": "Planovi",
+    "subtitle": "Sve cijene uključuju 21% PDV-a.",
+    "plans": "Ready To Go - Kompletan AI paket",
     "services": "Usluge i proizvodi",
     "typePlan": "Plan",
     "typeService": "Servis",

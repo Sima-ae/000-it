@@ -30,7 +30,7 @@ export function ServicesJumpNav({
     const desktopMq = window.matchMedia("(min-width: 768px)");
 
     const update = () => {
-      // Tabs only stick on desktop; on mobile they scroll away with the page.
+      // Collapse/hide only on desktop; on mobile tabs scroll away with the page.
       if (!desktopMq.matches) {
         setStuck(false);
         return null;
@@ -41,7 +41,7 @@ export function ServicesJumpNav({
       const navOffsetPx = navOffsetRaw.endsWith("rem")
         ? parseFloat(navOffsetRaw) * 16
         : parseFloat(navOffsetRaw);
-      const stickyTop = Math.max(navOffsetPx - 8, 0); // matches md:top-[calc(var(--nav-offset)-0.5rem)]
+      const stickyTop = Math.max(navOffsetPx - 8, 0);
 
       const observer = new IntersectionObserver(
         ([entry]) => setStuck(!entry.isIntersecting),
@@ -72,20 +72,36 @@ export function ServicesJumpNav({
   return (
     <>
       <div ref={sentinelRef} className="h-px w-full" aria-hidden />
-      <div className="-mx-4 bg-transparent px-4 py-1 md:sticky md:top-[calc(var(--nav-offset)-0.5rem)] md:z-30 md:-mx-6 md:px-6">
-        <div className="flex flex-wrap justify-center gap-1.5">
+      <div
+        className={cn(
+          "-mx-4 bg-transparent px-4 py-1 md:-mx-6 md:px-6",
+          "md:sticky md:top-[calc(var(--nav-offset)-0.5rem)] md:z-30",
+          "transition-[padding] duration-300 ease-out",
+          stuck && "md:pointer-events-none md:py-0",
+        )}
+      >
+        <div
+          className={cn(
+            "flex flex-wrap justify-center gap-1.5 overflow-hidden",
+            "transition-[max-height,opacity,margin] duration-300 ease-out",
+            stuck
+              ? "md:max-h-0 md:opacity-0 md:m-0"
+              : "max-h-112 opacity-100",
+          )}
+          aria-hidden={stuck || undefined}
+        >
           {links.map((link) => (
             <Button
               key={link.key}
               asChild
               size="sm"
               variant="outline"
-              className={cn(
-                "h-8 rounded-xl px-3 text-xs transition-[background-color,box-shadow]",
-                stuck && "bg-white shadow-sm hover:bg-white dark:bg-background dark:hover:bg-background",
-              )}
+              className="h-8 rounded-xl px-3 text-xs"
+              tabIndex={stuck ? -1 : undefined}
             >
-              <SoftLink href={`${localizedHref(locale, basePath)}#${link.id}`}>{link.label}</SoftLink>
+              <SoftLink href={`${localizedHref(locale, basePath)}#${link.id}`}>
+                {link.label}
+              </SoftLink>
             </Button>
           ))}
         </div>

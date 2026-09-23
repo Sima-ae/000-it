@@ -1,5 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Reveal } from "@/components/marketing/Reveal";
+import { PricingPlans } from "@/components/marketing/PricingPlans";
 import { ShopProductCard } from "@/components/shop/ShopProductCard";
 import { loadShopCatalogFromDb } from "@/lib/shop/catalog";
 
@@ -13,33 +13,68 @@ export default async function ShopPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("shop");
+  const pricing = await getTranslations("pricing");
   const catalog = await loadShopCatalogFromDb();
-  const plans = catalog.filter((p) => p.type === "plan");
   const services = catalog.filter(
     (p) => p.type === "service" || p.type === "product",
   );
 
+  const plans = [
+    {
+      id: "starter" as const,
+      name: pricing("starter"),
+      monthlyPrice: 39.95,
+      features: pricing.raw("features.starter") as string[],
+      featured: false,
+    },
+    {
+      id: "growth" as const,
+      name: pricing("growth"),
+      monthlyPrice: 64.95,
+      features: pricing.raw("features.growth") as string[],
+      featured: true,
+    },
+    {
+      id: "enterprise" as const,
+      name: pricing("enterprise"),
+      monthlyPrice: null,
+      features: pricing.raw("features.enterprise") as string[],
+      featured: false,
+    },
+  ];
+
   return (
-    <div className="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
-      <Reveal>
-        <h1 className="font-display text-4xl font-semibold tracking-tight md:text-5xl">
-          {t("title")}
-        </h1>
-        <p className="mt-3 max-w-2xl text-muted-foreground">{t("subtitle")}</p>
-      </Reveal>
+    <div className="mx-auto max-w-6xl px-4 pb-14 pt-6 md:px-6 md:pb-20 md:pt-8">
+      <h1 className="sr-only">{t("title")}</h1>
 
-      <section className="mt-12">
-        <h2 className="font-display text-2xl font-semibold tracking-tight">{t("plans")}</h2>
-        <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-          {plans.map((product) => (
-            <ShopProductCard key={product.id} product={product} />
-          ))}
-        </div>
-      </section>
+      <PricingPlans
+        variant="embedded"
+        plans={plans}
+        labels={{
+          title: t("plans"),
+          subtitle: pricing("subtitle"),
+          plansHeadline: pricing("plansHeadline"),
+          monthly: pricing("monthly"),
+          yearly: pricing("yearly"),
+          save: pricing("saveYearly"),
+          perMonth: pricing("month"),
+          perYear: pricing("year"),
+          cta: pricing("cta"),
+          ctaContact: pricing("ctaContact"),
+          custom: pricing("custom"),
+          mostChosen: pricing("mostChosen"),
+        }}
+      />
 
-      <section className="mt-16">
-        <h2 className="font-display text-2xl font-semibold tracking-tight">{t("services")}</h2>
-        <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+      <p className="mx-auto mt-6 max-w-2xl text-center text-muted-foreground">
+        {t("subtitle")}
+      </p>
+
+      <section className="mt-16 text-center">
+        <h2 className="font-display text-2xl font-semibold tracking-tight text-accent">
+          {t("services")}
+        </h2>
+        <div className="mt-6 grid gap-4 text-left md:grid-cols-2 xl:grid-cols-3">
           {services.map((product) => (
             <ShopProductCard key={product.id} product={product} />
           ))}

@@ -149,7 +149,7 @@
   "pricing": {
     "title": "Prijzen",
     "subtitle": "inclusief 21% BTW",
-    "plansHeadline": "Een eigen webshop of website met AI technologieën!",
+    "plansHeadline": "Een eigen volledige webshop of website met de nieuwste AI technologieën!",
     "cta": "Bestellen",
     "ctaContact": "Contact opnemen",
     "starter": "Business",
@@ -199,7 +199,8 @@
     "enterpriseHint": "Enterprise-plan",
     "enterpriseDesc": "Vertel kort wat je nodig hebt — we sturen een voorstel op maat.",
     "hostingMonth": "1× webhosting (1 maand)",
-    "hostingYear": "1× webhosting (12 maanden)"
+    "hostingYear": "1× webhosting (12 maanden)",
+    "viewAll": "Klik hier voor alle prijzen"
   },
   "faq": {
     "title": "Veelgestelde vragen",
@@ -232,9 +233,9 @@
   },
   "shop": {
     "title": "Winkel",
-    "subtitle": "Bestel plannen en diensten online. Prijzen inclusief 21% BTW. Veilig betalen via Stripe.",
-    "plans": "Plannen",
-    "services": "Diensten & producten",
+    "subtitle": "Alle prijzen zijn inclusief 21% BTW.",
+    "plans": "Ready To Go - AI compleet pakket",
+    "services": "Diensten en producten",
     "typePlan": "Plan",
     "typeService": "Dienst",
     "typeProduct": "Product",

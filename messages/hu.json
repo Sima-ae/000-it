@@ -199,7 +199,8 @@
     "enterpriseHint": "Vállalati terv",
     "enterpriseDesc": "Mondja el röviden, mire van szüksége – személyre szabott ajánlatot küldünk.",
     "hostingMonth": "1× webtárhely (1 hónap)",
-    "hostingYear": "1× webtárhely (12 hónap)"
+    "hostingYear": "1× webtárhely (12 hónap)",
+    "viewAll": "Kattintson ide az összes árhoz"
   },
   "faq": {
     "title": "GYIK",
@@ -232,8 +233,8 @@
   },
   "shop": {
     "title": "Bolt",
-    "subtitle": "Rendeljen terveket és szolgáltatásokat online. Az árak a 21% ÁFA-t tartalmazzák. Biztonságos fizetés az Stripe segítségével.",
-    "plans": "Tervek",
+    "subtitle": "Minden ár tartalmazza a 21% ÁFÁ-t.",
+    "plans": "Ready To Go - Teljes AI csomag",
     "services": "Szolgáltatások és termékek",
     "typePlan": "Csomag",
     "typeService": "Szolgáltatás",

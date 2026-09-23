@@ -199,7 +199,8 @@
     "enterpriseHint": "Forfait entreprise",
     "enterpriseDesc": "Dis-nous brièvement ce dont tu as besoin – nous te enverrons une proposition sur mesure.",
     "hostingMonth": "1× hébergement web (1 mois)",
-    "hostingYear": "1× hébergement Web (12 mois)"
+    "hostingYear": "1× hébergement Web (12 mois)",
+    "viewAll": "Clique ici pour tous les prix"
   },
   "faq": {
     "title": "FAQ",
@@ -232,8 +233,8 @@
   },
   "shop": {
     "title": "Boutique",
-    "subtitle": "Commandez des plans et des services en ligne. Les prix incluent 21% de TVA. Paiement sécurisé via Stripe.",
-    "plans": "Forfaits",
+    "subtitle": "Tous les prix sont TTC (21% de TVA).",
+    "plans": "Ready To Go - Pack IA complet",
     "services": "Services et produits",
     "typePlan": "Formule",
     "typeService": "Service",

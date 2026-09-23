@@ -199,7 +199,8 @@
     "enterpriseHint": "Bedriftsplan",
     "enterpriseDesc": "Fortell oss kort hva du trenger – vi sender et skreddersydd forslag.",
     "hostingMonth": "1× webhotell (1 måned)",
-    "hostingYear": "1× webhotell (12 måneder)"
+    "hostingYear": "1× webhotell (12 måneder)",
+    "viewAll": "Klikk her for alle priser"
   },
   "faq": {
     "title": "FAQ",
@@ -232,8 +233,8 @@
   },
   "shop": {
     "title": "Butikk",
-    "subtitle": "Bestill planer og tjenester online. Prisene inkluderer 21 % mva. Sikker betaling via Stripe.",
-    "plans": "Planer",
+    "subtitle": "Alle priser er inkl. 21% MVA.",
+    "plans": "Ready To Go - AI komplett pakke",
     "services": "Tjenester og produkter",
     "typePlan": "Plan",
     "typeService": "Tjeneste",

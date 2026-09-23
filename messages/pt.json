@@ -199,7 +199,8 @@
     "enterpriseHint": "Plano empresarial",
     "enterpriseDesc": "Diga-nos brevemente o que você precisa – enviaremos uma proposta personalizada.",
     "hostingMonth": "1× hospedagem web (1 mês)",
-    "hostingYear": "1× hospedagem web (12 meses)"
+    "hostingYear": "1× hospedagem web (12 meses)",
+    "viewAll": "Clique aqui para todos os preços"
   },
   "faq": {
     "title": "Perguntas frequentes",
@@ -232,8 +233,8 @@
   },
   "shop": {
     "title": "Loja",
-    "subtitle": "Solicite planos e serviços online. Os preços incluem 21% de IVA. Pagamento seguro via Stripe.",
-    "plans": "Planos",
+    "subtitle": "Todos os preços incluem 21% de IVA.",
+    "plans": "Ready To Go - Pacote IA completo",
     "services": "Serviços e produtos",
     "typePlan": "Plano",
     "typeService": "Serviço",

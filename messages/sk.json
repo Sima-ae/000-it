@@ -199,7 +199,8 @@
     "enterpriseHint": "Podnikový plán",
     "enterpriseDesc": "Stručne nám povedzte, čo potrebujete – pošleme vám ponuku na mieru.",
     "hostingMonth": "1× webhosting (1 mesiac)",
-    "hostingYear": "1× webhosting (12 mesiacov)"
+    "hostingYear": "1× webhosting (12 mesiacov)",
+    "viewAll": "Klikni sem pre všetky ceny"
   },
   "faq": {
     "title": "FAQ",
@@ -232,8 +233,8 @@
   },
   "shop": {
     "title": "Obchod",
-    "subtitle": "Objednajte si plány a služby online. Ceny sú vrátane 21% DPH. Bezpečná platba cez Stripe.",
-    "plans": "Plány",
+    "subtitle": "Všetky ceny zahŕňajú 21% DPH.",
+    "plans": "Ready To Go - Kompletný AI balík",
     "services": "Služby a produkty",
     "typePlan": "Plán",
     "typeService": "servis",

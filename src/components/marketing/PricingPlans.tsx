@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { GlassCard } from "@/components/marketing/GlassCard";
 import { Reveal } from "@/components/marketing/Reveal";
 import { ServiceInquiryDialog } from "@/components/marketing/ServiceInquiryDialog";
+import { SoftLink } from "@/components/shared/SoftLink";
 import { useCartStore } from "@/lib/shop/cart-store";
 import { cn } from "@/lib/utils";
 import { hashFor, localizedHref } from "@/i18n/pathnames";
@@ -32,11 +33,14 @@ function formatEuro(amount: number, locale: string) {
 export function PricingPlans({
   plans,
   labels,
+  variant = "standalone",
 }: {
   plans: PricingPlan[];
   labels: {
     title: string;
     subtitle: string;
+    /** Green section label under the page title (homepage). Embedded uses `title` for this. */
+    categoryTitle?: string;
     plansHeadline: string;
     monthly: string;
     yearly: string;
@@ -47,7 +51,10 @@ export function PricingPlans({
     ctaContact: string;
     custom: string;
     mostChosen: string;
+    viewAll?: string;
   };
+  /** `embedded` = shop block under Winkel (category title only). */
+  variant?: "standalone" | "embedded";
 }) {
   const locale = useLocale();
   const t = useTranslations("pricing");
@@ -55,6 +62,8 @@ export function PricingPlans({
   const addPlan = useCartStore((s) => s.addPlan);
   const [billing, setBilling] = useState<Billing>("monthly");
   const [hoveredPlanId, setHoveredPlanId] = useState<string | null>(null);
+  const embedded = variant === "embedded";
+  const categoryLabel = embedded ? labels.title : labels.categoryTitle;
 
   function withHostingPeriod(feature: string, period: Billing) {
     const isHosting =
@@ -98,22 +107,23 @@ export function PricingPlans({
 
   return (
     <section
-      id={hashFor(locale, "prijzen")}
-      className="mx-auto max-w-6xl scroll-mt-28 px-4 py-10 md:scroll-mt-32 md:px-6 md:py-12"
+      id={embedded ? undefined : hashFor(locale, "prijzen")}
+      className={cn(
+        embedded
+          ? "scroll-mt-28 md:scroll-mt-32"
+          : "mx-auto max-w-6xl scroll-mt-28 px-4 pt-10 pb-0 md:scroll-mt-32 md:px-6 md:pt-12",
+      )}
     >
-      <Reveal from="up" duration={0.55}>
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
-            {labels.title}
-          </h2>
-          <p className="mt-1 text-sm font-normal text-muted-foreground md:text-base">
-            ({labels.subtitle})
-          </p>
-        </div>
-      </Reveal>
+      {categoryLabel ? (
+        <Reveal from="up" duration={0.45}>
+          <h3 className="text-center font-display text-2xl font-semibold tracking-tight text-accent">
+            {categoryLabel}
+          </h3>
+        </Reveal>
+      ) : null}
 
-      <div className="mb-6 mt-8 flex flex-col items-center gap-3 md:mt-10">
-        <p className="max-w-xl text-center font-display text-lg font-semibold tracking-tight text-foreground md:text-xl">
+      <div className="mb-6 mt-6 flex flex-col items-center gap-3">
+        <p className="max-w-4xl text-center text-muted-foreground md:whitespace-nowrap">
           {labels.plansHeadline}
         </p>
         <div
@@ -240,6 +250,26 @@ export function PricingPlans({
           );
         })}
       </div>
+
+      {!embedded ? (
+        <Reveal from="up" duration={0.55}>
+          <div className="mx-auto mt-12 max-w-2xl text-center md:mt-14">
+            <h2 className="font-display text-4xl font-semibold tracking-tight text-primary md:text-5xl">
+              {labels.title}
+            </h2>
+            <p className="mt-3 text-muted-foreground">{labels.subtitle}</p>
+            {labels.viewAll ? (
+              <div className="mt-8 flex justify-center md:mt-10">
+                <Button asChild size="lg" className="rounded-2xl px-7">
+                  <SoftLink href={localizedHref(locale, "/shop")}>
+                    {labels.viewAll}
+                  </SoftLink>
+                </Button>
+              </div>
+            ) : null}
+          </div>
+        </Reveal>
+      ) : null}
     </section>
   );
 }

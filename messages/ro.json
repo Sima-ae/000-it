@@ -199,7 +199,8 @@
     "enterpriseHint": "Planul de întreprindere",
     "enterpriseDesc": "Spune-ne pe scurt de ce aveți nevoie - te vom trimite o propunere personalizată.",
     "hostingMonth": "1× găzduire web (1 lună)",
-    "hostingYear": "1× gazduire web (12 luni)"
+    "hostingYear": "1× gazduire web (12 luni)",
+    "viewAll": "Faceți clic aici pentru toate prețurile"
   },
   "faq": {
     "title": "FAQ",
@@ -232,8 +233,8 @@
   },
   "shop": {
     "title": "Magazin",
-    "subtitle": "Comandați planuri și servicii online. Preturile includ TVA 21%. Plată securizată prin Stripe.",
-    "plans": "Planuri",
+    "subtitle": "Toate prețurile includ TVA 21%.",
+    "plans": "Ready To Go - Pachet AI complet",
     "services": "Servicii și produse",
     "typePlan": "Plan",
     "typeService": "Serviciu",

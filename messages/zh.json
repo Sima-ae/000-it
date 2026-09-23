@@ -199,7 +199,8 @@
     "enterpriseHint": "企业计划",
     "enterpriseDesc": "请简要告诉我们你的需求 - 我们将发送量身定制的提案。",
     "hostingMonth": "1× 虚拟主机（1 个月）",
-    "hostingYear": "1× 虚拟主机（12 个月）"
+    "hostingYear": "1× 虚拟主机（12 个月）",
+    "viewAll": "点击此处查看全部价格"
   },
   "faq": {
     "title": "常见问题解答",
@@ -232,8 +233,8 @@
   },
   "shop": {
     "title": "商店",
-    "subtitle": "在线订购计划和服务。价格包含 21% 的增值税。通过 Stripe 进行安全付款。",
-    "plans": "计划",
+    "subtitle": "所有价格均含21%增值税。",
+    "plans": "Ready To Go - AI 完整套餐",
     "services": "服务与产品",
     "typePlan": "计划",
     "typeService": "服务",

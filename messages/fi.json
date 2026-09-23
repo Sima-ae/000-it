@@ -199,7 +199,8 @@
     "enterpriseHint": "Yrityssuunnitelma",
     "enterpriseDesc": "Kerro meille lyhyesti, mitä tarvitset – lähetämme räätälöidyn ehdotuksen.",
     "hostingMonth": "1× web hosting (1 kuukausi)",
-    "hostingYear": "1× web hosting (12 kuukautta)"
+    "hostingYear": "1× web hosting (12 kuukautta)",
+    "viewAll": "Napsauta tästä kaikkiin hintoihin"
   },
   "faq": {
     "title": "FAQ",
@@ -232,8 +233,8 @@
   },
   "shop": {
     "title": "Kauppa",
-    "subtitle": "Tilaa suunnitelmat ja palvelut verkosta. Hinnat sisältävät arvonlisäveron 21 %. Turvallinen maksu Stripe:n kautta.",
-    "plans": "Suunnitelmat",
+    "subtitle": "Kaikki hinnat sisältävät 21% ALV:n.",
+    "plans": "Ready To Go - AI-kokonaispaketti",
     "services": "Palvelut & tuotteet",
     "typePlan": "Suunnittele",
     "typeService": "Palvelu",

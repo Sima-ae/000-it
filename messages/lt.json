@@ -199,7 +199,8 @@
     "enterpriseHint": "Įmonės planas",
     "enterpriseDesc": "Trumpai papasakokite, ko tau reikia – atsiųsime pritaikytą pasiūlymą.",
     "hostingMonth": "1× interneto priegloba (1 mėnuo)",
-    "hostingYear": "1 × žiniatinklio priegloba (12 mėnesių)"
+    "hostingYear": "1 × žiniatinklio priegloba (12 mėnesių)",
+    "viewAll": "Spustelėkite čia visoms kainoms"
   },
   "faq": {
     "title": "DUK",
@@ -232,8 +233,8 @@
   },
   "shop": {
     "title": "Parduotuvė",
-    "subtitle": "Užsisakykite planus ir paslaugas internetu. Kainos nurodytos su 21% PVM. Saugus mokėjimas per Stripe.",
-    "plans": "Planai",
+    "subtitle": "Visos kainos su 21% PVM.",
+    "plans": "Ready To Go - Visas AI paketas",
     "services": "Paslaugos ir produktai",
     "typePlan": "Planuoti",
     "typeService": "Aptarnavimas",
