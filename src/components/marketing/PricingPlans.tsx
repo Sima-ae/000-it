@@ -111,7 +111,7 @@ export function PricingPlans({
       className={cn(
         embedded
           ? "scroll-mt-28 md:scroll-mt-32"
-          : "mx-auto max-w-6xl scroll-mt-28 px-4 pt-10 pb-0 md:scroll-mt-32 md:px-6 md:pt-12",
+          : "mx-auto max-w-6xl scroll-mt-28 px-4 pt-6 pb-0 md:scroll-mt-32 md:px-6 md:pt-8",
       )}
     >
       {categoryLabel ? (
@@ -122,7 +122,12 @@ export function PricingPlans({
         </Reveal>
       ) : null}
 
-      <div className="mb-6 mt-6 flex flex-col items-center gap-3">
+      <div
+        className={cn(
+          "mb-5 flex flex-col items-center gap-2.5",
+          categoryLabel ? "mt-2.5" : "mt-0",
+        )}
+      >
         <p className="max-w-4xl text-center text-muted-foreground md:whitespace-nowrap">
           {labels.plansHeadline}
         </p>
