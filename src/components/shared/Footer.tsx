@@ -76,7 +76,7 @@ export function Footer() {
   const handy = sortFooterLinks(buildHandyLinks(locale), labelFor, locale);
 
   const columnTitleClass =
-    "flex h-9 md:h-10 items-center justify-center text-[11px] font-semibold uppercase leading-none tracking-[0.14em] text-foreground";
+    "flex h-9 md:h-10 items-center justify-center text-xs font-bold uppercase leading-none tracking-[0.14em] text-foreground";
 
   return (
     <footer className="relative mt-16">
@@ -92,7 +92,7 @@ export function Footer() {
               >
                 <BrandLogo className="h-9 w-auto md:h-10" />
               </SoftLink>
-              <div className="mt-3 max-w-[20rem] text-sm leading-relaxed text-muted-foreground [text-wrap:pretty] lg:max-w-none">
+              <div className="mt-3 max-w-[20rem] text-sm leading-relaxed text-muted-foreground text-pretty lg:max-w-none">
                 <p>{t("tagline")}</p>
                 <p className="mt-2 font-bold">{t("taglineClose")}</p>
               </div>

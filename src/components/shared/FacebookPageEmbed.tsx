@@ -58,20 +58,14 @@ export function FacebookPageEmbed({ locale }: { locale: string }) {
         className="block overflow-hidden rounded-lg border border-primary/25 bg-white shadow-[0_8px_22px_rgba(94,59,136,0.14)] ring-1 ring-accent/20 transition hover:border-primary/40 hover:shadow-[0_10px_26px_rgba(94,59,136,0.18)]"
       >
         {/* Cover / banner */}
-        <div
-          className="relative h-14 overflow-hidden"
-          style={{
-            background:
-              "linear-gradient(135deg, color-mix(in oklab, var(--primary) 88%, #1a1028), color-mix(in oklab, var(--accent) 75%, #0a2a2e))",
-          }}
-        >
-          <div
-            className="pointer-events-none absolute inset-0 opacity-40"
-            style={{
-              backgroundImage:
-                "radial-gradient(ellipse 80% 90% at 85% 40%, color-mix(in oklab, var(--accent) 55%, transparent), transparent 60%)",
-            }}
-            aria-hidden
+        <div className="relative h-14 overflow-hidden bg-muted">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/branding/banner.png"
+            alt=""
+            width={2538}
+            height={463}
+            className="absolute inset-0 h-full w-full object-cover object-center"
           />
         </div>
 
