@@ -43,6 +43,12 @@ export async function POST(request: Request) {
       typeof body.priceIncl === "number"
         ? body.priceIncl
         : Number(body.priceIncl),
+    discountPriceIncl:
+      body.discountPriceIncl === "" || body.discountPriceIncl == null
+        ? null
+        : typeof body.discountPriceIncl === "number"
+          ? body.discountPriceIncl
+          : Number(body.discountPriceIncl),
     checkoutMonths:
       body.checkoutMonths === "" || body.checkoutMonths == null
         ? null
@@ -85,6 +91,10 @@ export async function POST(request: Request) {
       descriptionNl: data.descriptionNl,
       descriptionEn: data.descriptionEn,
       priceInclCents: eurosToCentsSafe(data.priceIncl),
+      discountPriceInclCents:
+        data.discountPriceIncl != null
+          ? eurosToCentsSafe(data.discountPriceIncl)
+          : null,
       currency: "EUR",
       billingInterval: data.billingInterval,
       billAsYearlyPackage,

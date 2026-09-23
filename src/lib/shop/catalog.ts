@@ -20,6 +20,11 @@ export type ShopProduct = {
   /** Unit price including 21% VAT, in euro cents (list/display price) */
   priceInclCents: number;
   /**
+   * Optional sale/discount unit price incl. VAT (euro cents).
+   * When set and lower than list price, shop cards strike through the list price.
+   */
+  discountPriceInclCents?: number | null;
+  /**
    * When set, checkout charges this many list periods (e.g. 12 for yearly
    * hosting packages that are advertised per month).
    */
@@ -91,6 +96,24 @@ export function isSupportPackageSlug(slug: string) {
   );
 }
 
+/** Effective unit price (discount when set, otherwise list). */
+export function shopUnitPriceInclCents(product: ShopProduct) {
+  const discount = product.discountPriceInclCents;
+  if (
+    typeof discount === "number" &&
+    Number.isFinite(discount) &&
+    discount > 0 &&
+    discount < product.priceInclCents
+  ) {
+    return discount;
+  }
+  return product.priceInclCents;
+}
+
+export function shopHasDiscount(product: ShopProduct) {
+  return shopUnitPriceInclCents(product) < product.priceInclCents;
+}
+
 /** Charged unit price (incl. VAT cents) used in cart / Stripe. */
 export function shopChargeInclCents(product: ShopProduct) {
   const months =
@@ -99,7 +122,7 @@ export function shopChargeInclCents(product: ShopProduct) {
       : product.billAsYearlyPackage
         ? 12
         : 1;
-  return product.priceInclCents * months;
+  return shopUnitPriceInclCents(product) * months;
 }
 
 type ImportedProduct = {
@@ -402,6 +425,7 @@ type DbShopRow = {
   descriptionNl: string;
   descriptionEn: string;
   priceInclCents: number;
+  discountPriceInclCents: number | null;
   currency: string;
   billingInterval: string;
   billAsYearlyPackage: boolean;
@@ -450,6 +474,7 @@ export function mapDbShopProduct(row: DbShopRow): ShopProduct {
     },
     description: { nl: row.descriptionNl, en: row.descriptionEn },
     priceInclCents: row.priceInclCents,
+    discountPriceInclCents: row.discountPriceInclCents ?? null,
     checkoutMonths: row.checkoutMonths ?? undefined,
     billAsYearlyPackage: row.billAsYearlyPackage,
     currency: "EUR",

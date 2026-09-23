@@ -4,7 +4,7 @@ import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
 import { AddToCartButton } from "@/components/shop/AddToCartButton";
 import { ShopProductImage } from "@/components/shop/ShopProductImage";
-import { getShopProductBySlug, loadShopCatalogFromDb, localizeShopProduct } from "@/lib/shop/catalog";
+import { getShopProductBySlug, loadShopCatalogFromDb, localizeShopProduct, shopHasDiscount, shopUnitPriceInclCents } from "@/lib/shop/catalog";
 import { centsToEuros, formatShopEuro } from "@/lib/shop/vat";
 import { localizedHref } from "@/i18n/pathnames";
 import { resolveEntityParam } from "@/lib/resolve-entity-param";
@@ -64,14 +64,33 @@ export default async function ShopProductPage({
             {localized.localizedName}
           </h1>
           <p className="mt-4 text-muted-foreground">{localized.localizedShort}</p>
-          <p className="font-display mt-6 text-3xl font-bold">
-            {formatShopEuro(centsToEuros(product.priceInclCents), locale)}
-            {product.checkoutMonths && product.checkoutMonths > 1 ? (
-              <span className="ml-2 text-base font-medium text-muted-foreground">
-                {t("perMonth")}
-              </span>
-            ) : null}
-          </p>
+          {shopHasDiscount(product) ? (
+            <div className="mt-6 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <p className="font-display text-xl font-medium text-muted-foreground line-through decoration-2">
+                {formatShopEuro(centsToEuros(product.priceInclCents), locale)}
+              </p>
+              <p className="font-display text-4xl font-bold tracking-tight text-primary">
+                {formatShopEuro(
+                  centsToEuros(shopUnitPriceInclCents(product)),
+                  locale,
+                )}
+                {product.checkoutMonths && product.checkoutMonths > 1 ? (
+                  <span className="ml-2 text-base font-medium text-muted-foreground">
+                    {t("perMonth")}
+                  </span>
+                ) : null}
+              </p>
+            </div>
+          ) : (
+            <p className="font-display mt-6 text-3xl font-bold">
+              {formatShopEuro(centsToEuros(product.priceInclCents), locale)}
+              {product.checkoutMonths && product.checkoutMonths > 1 ? (
+                <span className="ml-2 text-base font-medium text-muted-foreground">
+                  {t("perMonth")}
+                </span>
+              ) : null}
+            </p>
+          )}
           <p className="text-sm text-muted-foreground">{t("inclVat")}</p>
           {product.checkoutMonths && product.checkoutMonths > 1 ? (
             <p className="mt-1 text-sm text-muted-foreground">

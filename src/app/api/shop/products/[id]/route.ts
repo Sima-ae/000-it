@@ -55,6 +55,14 @@ export async function PATCH(
         : typeof body.priceIncl === "number"
           ? body.priceIncl
           : Number(body.priceIncl),
+    discountPriceIncl:
+      body.discountPriceIncl === undefined
+        ? undefined
+        : body.discountPriceIncl === "" || body.discountPriceIncl == null
+          ? null
+          : typeof body.discountPriceIncl === "number"
+            ? body.discountPriceIncl
+            : Number(body.discountPriceIncl),
     checkoutMonths:
       body.checkoutMonths === undefined
         ? undefined
@@ -97,6 +105,12 @@ export async function PATCH(
   if (data.tags !== undefined) update.tags = data.tags;
   if (data.priceIncl !== undefined) {
     update.priceInclCents = eurosToCentsSafe(data.priceIncl);
+  }
+  if (data.discountPriceIncl !== undefined) {
+    update.discountPriceInclCents =
+      data.discountPriceIncl == null
+        ? null
+        : eurosToCentsSafe(data.discountPriceIncl);
   }
 
   if (data.billAsYearlyPackage === true && data.checkoutMonths == null) {

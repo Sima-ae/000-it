@@ -18,14 +18,14 @@ const HOSTING_SLUGS = [
   "web-hosting",
   "domains",
   "shared-hosting-basic",
-  "shared-hosting-plus",
   "shared-hosting-business",
+  "shared-hosting-plus",
   "wordpress-hosting-basic",
-  "wordpress-hosting-plus",
   "wordpress-hosting-business",
+  "wordpress-hosting-plus",
   "vps-hosting-basic",
-  "vps-hosting-plus",
   "vps-hosting-business",
+  "vps-hosting-plus",
 ] as const;
 
 export function HostingDropdown({

@@ -39,7 +39,7 @@ export function CartView() {
       <div className="space-y-4">
         {totals.lines.map((line) => {
           const localized = localizeShopProduct(line.product, locale);
-          const unit = formatShopEuro(centsToEuros(line.product.priceInclCents), locale);
+          const unit = formatShopEuro(centsToEuros(line.unitInclCents), locale);
           return (
             <div
               key={line.product.id}

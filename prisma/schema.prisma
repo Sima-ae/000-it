@@ -337,6 +337,8 @@ model ShopCatalogProduct {
   descriptionEn        String               @db.LongText
   /// Unit price including 21% VAT, in euro cents
   priceInclCents       Int
+  /// Optional sale/discount unit price incl. VAT (euro cents). When set, shop shows list price struck through.
+  discountPriceInclCents Int?
   currency             String               @default("EUR")
   /// one_time | weekly | monthly | yearly
   billingInterval      String               @default("one_time")

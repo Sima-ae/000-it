@@ -137,9 +137,9 @@ export function WordPressSupportPlans() {
             {tPricing("yearly")}
           </button>
         </div>
-        <p className="text-center text-sm text-muted-foreground">
-          {t("saveYearlyHint")}
-        </p>
+        {billing === "yearly" ? (
+          <p className="text-xs font-medium text-primary">{tPricing("saveYearly")}</p>
+        ) : null}
       </div>
 
       <div

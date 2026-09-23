@@ -37,6 +37,7 @@ type Item = {
   descriptionNl: string;
   descriptionEn: string;
   priceInclCents: number;
+  discountPriceInclCents?: number | null;
   billingInterval: string;
   billAsYearlyPackage: boolean;
   checkoutMonths: number | null;
@@ -115,6 +116,9 @@ export default function ShopAdminPage() {
       descriptionNl: item.descriptionNl,
       descriptionEn: item.descriptionEn,
       priceIncl: String(centsToEurosNumber(item.priceInclCents)),
+      discountPriceIncl: item.discountPriceInclCents
+        ? String(centsToEurosNumber(item.discountPriceInclCents))
+        : "",
       billingInterval: (["one_time", "weekly", "monthly", "yearly"].includes(
         item.billingInterval,
       )

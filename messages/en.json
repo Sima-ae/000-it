@@ -161,7 +161,7 @@
     "year": "/year",
     "monthly": "Monthly",
     "yearly": "Yearly",
-    "saveYearly": "Save 10% with yearly billing",
+    "saveYearly": "Save 10% with yearly billing!",
     "mostChosen": "Most popular",
     "features": {
       "starter": [
@@ -236,6 +236,8 @@
     "title": "Shop",
     "subtitle": "All prices include 21% VAT.",
     "plans": "Ready To Go - AI complete package",
+    "support": "Support",
+    "webhosting": "Web hosting",
     "services": "Services & products",
     "typePlan": "Plan",
     "typeService": "Service",
@@ -778,7 +780,7 @@
     "subtitle": "Stay up to date with all developments."
   },
   "wordpressSupport": {
-    "saveYearlyHint": "Save up to 20% for yearly monitoring & support!",
+    "saveYearlyHint": "Save 10% with yearly billing!",
     "savePercent": "Save {percent}%",
     "orderNow": "Order Now",
     "noCreditCard": "No credit card required",

@@ -28,6 +28,8 @@ export type ShopAdminFormValues = {
   descriptionNl: string;
   descriptionEn: string;
   priceIncl: string;
+  /** Optional sale price; empty string clears */
+  discountPriceIncl: string;
   billingInterval: (typeof SHOP_BILLING_INTERVALS)[number];
   billAsYearlyPackage: boolean;
   checkoutMonths: string;
@@ -51,6 +53,7 @@ const empty: ShopAdminFormValues = {
   descriptionNl: "",
   descriptionEn: "",
   priceIncl: "",
+  discountPriceIncl: "",
   billingInterval: "one_time",
   billAsYearlyPackage: false,
   checkoutMonths: "",
@@ -159,6 +162,19 @@ export function ShopAdminForm({
       if (!Number.isFinite(priceIncl) || priceIncl <= 0) {
         throw new Error("Enter a valid price");
       }
+      const discountRaw = form.discountPriceIncl.trim().replace(",", ".");
+      const discountPriceIncl = discountRaw
+        ? Number(discountRaw)
+        : null;
+      if (
+        discountPriceIncl != null &&
+        (!Number.isFinite(discountPriceIncl) || discountPriceIncl <= 0)
+      ) {
+        throw new Error("Enter a valid aanbieding price or leave it empty");
+      }
+      if (discountPriceIncl != null && discountPriceIncl >= priceIncl) {
+        throw new Error("Aanbieding must be lower than the regular price");
+      }
 
       const payload = {
         sku: form.sku.trim().toUpperCase() || `SKU-${Date.now().toString(36).toUpperCase()}`,
@@ -171,6 +187,7 @@ export function ShopAdminForm({
         descriptionNl: form.descriptionNl,
         descriptionEn: form.descriptionEn,
         priceIncl,
+        discountPriceIncl,
         billingInterval: form.billingInterval,
         billAsYearlyPackage: form.billAsYearlyPackage,
         checkoutMonths: form.billAsYearlyPackage
@@ -322,7 +339,7 @@ export function ShopAdminForm({
         </Section>
 
         <Section title="Pricing & catalog" description="Billing, category and sort position.">
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
             <Field label="Price incl. VAT (€)" htmlFor="price">
               <Input
                 id="price"
@@ -332,6 +349,20 @@ export function ShopAdminForm({
                 placeholder="64.95"
                 className="rounded-xl bg-background"
                 required
+              />
+            </Field>
+            <Field
+              label="Aanbieding (€)"
+              htmlFor="discountPrice"
+              hint="Optional sale price. Leave empty for no discount."
+            >
+              <Input
+                id="discountPrice"
+                inputMode="decimal"
+                value={form.discountPriceIncl}
+                onChange={(e) => setField("discountPriceIncl", e.target.value)}
+                placeholder="4.99"
+                className="rounded-xl bg-background"
               />
             </Field>
             <Field label="Billing" htmlFor="billing">

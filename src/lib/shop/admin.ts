@@ -57,6 +57,8 @@ export const shopProductUpsertSchema = z.object({
   descriptionEn: z.string().max(50000).default(""),
   /** Euro amount including VAT, e.g. 64.95 */
   priceIncl: z.number().positive().max(1_000_000),
+  /** Optional sale price incl. VAT; empty/null clears discount */
+  discountPriceIncl: z.number().positive().max(1_000_000).nullable().optional(),
   currency: z.literal("EUR").default("EUR"),
   billingInterval: z.enum(SHOP_BILLING_INTERVALS).default("one_time"),
   billAsYearlyPackage: z.boolean().default(false),

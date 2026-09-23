@@ -177,9 +177,9 @@ TripleZero iT provides a stable hosting environment and 24/7 support whenever yo
     },
   },
 
-  "shared-hosting-plus": {
+  "shared-hosting-business": {
     nl: {
-      name: "Shared Hosting Plus",
+      name: "Shared Hosting Business",
       shortDescription: `– Onbeperkt Websites
 – Onbeperkt SSD
 – Onbeperkt Mailboxen
@@ -187,14 +187,14 @@ TripleZero iT provides a stable hosting environment and 24/7 support whenever yo
 – AI Tools
 – 24/7 Support
 – AutoBackup`,
-      description: `Shared Hosting Plus is gemaakt voor ondernemers en groeiende teams die meerdere websites en mailboxen zonder krappe limieten willen beheren.
+      description: `Shared Hosting Business is gemaakt voor ondernemers en groeiende teams die meerdere websites en mailboxen zonder krappe limieten willen beheren.
 
 Met onbeperkte websites, SSD-opslag en mailboxen, plus een websitebouwer, AI-tools en AutoBackup, krijg je de flexibiliteit om nieuwe projecten en communicatie eenvoudig toe te voegen.
 
 TripleZero iT levert een toegankelijke, betrouwbare hostingbasis met 24/7 support. Zo groeit jouw digitale omgeving mee zonder dat je het dagelijkse beheer ingewikkeld maakt.`,
     },
     en: {
-      name: "Shared Hosting Plus",
+      name: "Shared Hosting Business",
       shortDescription: `– Unlimited Websites
 – Unmetered SSD
 – Unlimited Mailboxes
@@ -202,7 +202,7 @@ TripleZero iT levert een toegankelijke, betrouwbare hostingbasis met 24/7 suppor
 – AI Tools
 – 24/7 Support
 – AutoBackup`,
-      description: `Shared Hosting Plus is built for entrepreneurs and growing teams that want to manage multiple websites and mailboxes without restrictive limits.
+      description: `Shared Hosting Business is built for entrepreneurs and growing teams that want to manage multiple websites and mailboxes without restrictive limits.
 
 With unlimited websites, SSD storage and mailboxes, plus a website builder, AI tools and AutoBackup, you have the flexibility to add projects and communication as you grow.
 
@@ -210,9 +210,9 @@ TripleZero iT delivers an accessible, dependable hosting foundation with 24/7 su
     },
   },
 
-  "shared-hosting-business": {
+  "shared-hosting-plus": {
     nl: {
-      name: "Shared Hosting Business",
+      name: "Shared Hosting Plus",
       shortDescription: `– Onbeperkt Websites
 – 50 GB SSD
 – Onbeperkt Mailboxen
@@ -220,14 +220,14 @@ TripleZero iT delivers an accessible, dependable hosting foundation with 24/7 su
 – AI Tools
 – 24/7 Support
 – AutoBackup & Cloud Storage`,
-      description: `Shared Hosting Business past bij organisaties die meerdere websites, e-mail en bestanden centraal en professioneel willen onderbrengen.
+      description: `Shared Hosting Plus past bij organisaties die meerdere websites, e-mail en bestanden centraal en professioneel willen onderbrengen.
 
 Je krijgt onbeperkte websites en mailboxen, 50 GB SSD-opslag, een websitebouwer, AI-tools en AutoBackup met cloudopslag. Dat combineert ruimte voor jouw dagelijkse werk met extra zekerheid voor belangrijke data.
 
 TripleZero iT biedt een stabiele omgeving en 24/7 support als jouw organisatie vragen heeft of hulp nodig heeft. Zo houd je jouw online infrastructuur overzichtelijk en klaar voor groei.`,
     },
     en: {
-      name: "Shared Hosting Business",
+      name: "Shared Hosting Plus",
       shortDescription: `– Unlimited Websites
 – 50 GB SSD
 – Unlimited Mailboxes
@@ -235,7 +235,7 @@ TripleZero iT biedt een stabiele omgeving en 24/7 support als jouw organisatie v
 – AI Tools
 – 24/7 Support
 – AutoBackup & Cloud Storage`,
-      description: `Shared Hosting Business fits organisations that want to host multiple websites, email and files centrally and professionally.
+      description: `Shared Hosting Plus fits organisations that want to host multiple websites, email and files centrally and professionally.
 
 You receive unlimited websites and mailboxes, 50 GB SSD storage, a website builder, AI tools and AutoBackup with cloud storage. It combines room for daily operations with added reassurance for important data.
 
@@ -270,26 +270,26 @@ TripleZero iT gives you a dependable infrastructure foundation, so you can focus
     },
   },
 
-  "vps-hosting-plus": {
+  "vps-hosting-business": {
     nl: {
-      name: "VPS Hosting Plus",
+      name: "VPS Hosting Business",
       shortDescription: `– 4 CPU-cores
 – 6 GB RAM
 – 120 GB SSD RAID 10
 – 3000 GB bandbreedte`,
-      description: `VPS Hosting Plus is voor groeiende webprojecten, zakelijke applicaties en ontwikkelteams die extra capaciteit en consistente prestaties nodig hebben.
+      description: `VPS Hosting Business is voor groeiende webprojecten, zakelijke applicaties en ontwikkelteams die extra capaciteit en consistente prestaties nodig hebben.
 
 De server combineert 4 CPU-cores en 6 GB RAM met 120 GB SSD RAID 10-opslag en 3000 GB bandbreedte. Daarmee is er ruimte voor zwaardere workloads, meerdere services of toenemend verkeer.
 
 TripleZero iT levert een betrouwbare VPS-basis waarop je jouw omgeving naar eigen behoefte kunt inrichten. Zo krijg je de flexibiliteit van een virtuele server met een professionele partner dichtbij.`,
     },
     en: {
-      name: "VPS Hosting Plus",
+      name: "VPS Hosting Business",
       shortDescription: `– 4 CPU cores
 – 6 GB RAM
 – 120 GB SSD RAID 10
 – 3000 GB bandwidth`,
-      description: `VPS Hosting Plus is for growing web projects, business applications and development teams that need additional capacity and consistent performance.
+      description: `VPS Hosting Business is for growing web projects, business applications and development teams that need additional capacity and consistent performance.
 
 The server combines 4 CPU cores and 6 GB RAM with 120 GB SSD RAID 10 storage and 3000 GB bandwidth. This leaves room for heavier workloads, multiple services or increasing traffic.
 
@@ -297,26 +297,26 @@ TripleZero iT delivers a dependable VPS foundation that you can configure around
     },
   },
 
-  "vps-hosting-business": {
+  "vps-hosting-plus": {
     nl: {
-      name: "VPS Hosting Business",
+      name: "VPS Hosting Plus",
       shortDescription: `– 8 CPU-cores
 – 12 GB RAM
 – 240 GB SSD RAID 10
 – 6000 GB bandbreedte`,
-      description: `VPS Hosting Business is ontworpen voor bedrijfskritische websites, veeleisende applicaties en organisaties die ruime capaciteit en stabiele prestaties verwachten.
+      description: `VPS Hosting Plus is ontworpen voor bedrijfskritische websites, veeleisende applicaties en organisaties die ruime capaciteit en stabiele prestaties verwachten.
 
 Met 8 CPU-cores, 12 GB RAM, 240 GB SSD RAID 10-opslag en 6000 GB bandbreedte biedt dit pakket een krachtige basis voor intensieve workloads, meerdere omgevingen en hogere bezoekersaantallen.
 
 TripleZero iT helpt je een betrouwbare infrastructuur neer te zetten die met jouw ambities meebeweegt. Je houdt de controle over jouw VPS, met een deskundige partij bereikbaar voor ondersteuning.`,
     },
     en: {
-      name: "VPS Hosting Business",
+      name: "VPS Hosting Plus",
       shortDescription: `– 8 CPU cores
 – 12 GB RAM
 – 240 GB SSD RAID 10
 – 6000 GB bandwidth`,
-      description: `VPS Hosting Business is designed for business-critical websites, demanding applications and organisations that expect ample capacity and stable performance.
+      description: `VPS Hosting Plus is designed for business-critical websites, demanding applications and organisations that expect ample capacity and stable performance.
 
 With 8 CPU cores, 12 GB RAM, 240 GB SSD RAID 10 storage and 6000 GB bandwidth, this plan provides a powerful base for intensive workloads, multiple environments and higher visitor volumes.
 
@@ -355,9 +355,9 @@ TripleZero iT provides the technical foundation your WordPress site needs to per
     },
   },
 
-  "wordpress-hosting-plus": {
+  "wordpress-hosting-business": {
     nl: {
-      name: "WordPress Hosting Plus",
+      name: "WordPress Hosting Business",
       shortDescription: `– 50 GB SSD
 – 200k bezoekers/maand
 – 1,5× meer CPU
@@ -367,14 +367,14 @@ TripleZero iT provides the technical foundation your WordPress site needs to per
 – 24/7 Support
 – Eenvoudige backups
 – Gratis Brizy Site Builder (NIEUW)`,
-      description: `WordPress Hosting Plus is bedoeld voor groeiende bedrijven, campagnes en contentrijke websites die meer ruimte en rekenkracht nodig hebben.
+      description: `WordPress Hosting Business is bedoeld voor groeiende bedrijven, campagnes en contentrijke websites die meer ruimte en rekenkracht nodig hebben.
 
 Met 50 GB SSD-opslag, capaciteit voor circa 200.000 bezoekers per maand en 1,5× meer CPU en RAM kan jouw site comfortabel meegroeien. Gratis CDN, SSL, back-ups, 24/7 support en Brizy Site Builder maken bouwen en beheren eenvoudiger.
 
 TripleZero iT levert een krachtige WordPress-omgeving die prestaties en gebruiksgemak combineert. Zo blijft jouw website snel en betrouwbaar terwijl jouw bereik groeit.`,
     },
     en: {
-      name: "WordPress Hosting Plus",
+      name: "WordPress Hosting Business",
       shortDescription: `– 50 GB SSD
 – 200k visitors/month
 – 1.5x more CPU
@@ -384,7 +384,7 @@ TripleZero iT levert een krachtige WordPress-omgeving die prestaties en gebruiks
 – 24/7 Support
 – Easy Backups
 – Free Brizy Site Builder (NEW)`,
-      description: `WordPress Hosting Plus is designed for growing businesses, campaigns and content-rich websites that need more room and processing power.
+      description: `WordPress Hosting Business is designed for growing businesses, campaigns and content-rich websites that need more room and processing power.
 
 With 50 GB SSD storage, capacity for around 200,000 visitors per month and 1.5x more CPU and RAM, your site can grow comfortably. A free CDN, SSL, backups, 24/7 support and Brizy Site Builder make building and managing easier.
 
@@ -392,9 +392,9 @@ TripleZero iT delivers a powerful WordPress environment that combines performanc
     },
   },
 
-  "wordpress-hosting-business": {
+  "wordpress-hosting-plus": {
     nl: {
-      name: "WordPress Hosting Pro",
+      name: "WordPress Hosting Plus",
       shortDescription: `– 100 GB SSD
 – 500k bezoekers/maand
 – 2,0× meer CPU
@@ -405,14 +405,14 @@ TripleZero iT delivers a powerful WordPress environment that combines performanc
 – 24/7 Support
 – Eenvoudige backups
 – Gratis Brizy Site Builder (NIEUW)`,
-      description: `WordPress Hosting Pro is voor ambitieuze organisaties, drukbezochte websites en zakelijke teams die maximale WordPress-capaciteit en continuïteit verwachten.
+      description: `WordPress Hosting Plus is voor ambitieuze organisaties, drukbezochte websites en zakelijke teams die maximale WordPress-capaciteit en continuïteit verwachten.
 
 Je krijgt 100 GB SSD-opslag, capaciteit voor circa 500.000 bezoekers per maand en 2,0× meer CPU en RAM. De 99,9% uptime-garantie, gratis CDN en SSL, back-ups, 24/7 support en Brizy Site Builder ondersteunen een professionele online operatie.
 
 TripleZero iT biedt een robuuste hostingomgeving waarin snelheid, bereikbaarheid en schaalbaarheid centraal staan. Zo kan jouw WordPress-site ook onder hogere belasting betrouwbaar blijven presteren.`,
     },
     en: {
-      name: "WordPress Hosting Pro",
+      name: "WordPress Hosting Plus",
       shortDescription: `– 100 GB SSD
 – 500k visitors/month
 – 2.0x more CPU
@@ -423,7 +423,7 @@ TripleZero iT biedt een robuuste hostingomgeving waarin snelheid, bereikbaarheid
 – 24/7 Support
 – Easy Backups
 – Free Brizy Site Builder (NEW)`,
-      description: `WordPress Hosting Pro is for ambitious organisations, high-traffic websites and business teams that expect maximum WordPress capacity and continuity.
+      description: `WordPress Hosting Plus is for ambitious organisations, high-traffic websites and business teams that expect maximum WordPress capacity and continuity.
 
 You receive 100 GB SSD storage, capacity for around 500,000 visitors per month and 2.0x more CPU and RAM. The 99.9% uptime guarantee, free CDN and SSL, backups, 24/7 support and Brizy Site Builder support a professional online operation.
 

@@ -102,7 +102,7 @@ export default async function DesignCategoryPage({ params }: Params) {
           <div
             key={card.item.slug}
             id={card.item.slug}
-            className="scroll-mt-[var(--nav-offset)] md:scroll-mt-[calc(var(--nav-offset)+3.25rem)]"
+            className="scroll-mt-(--nav-offset) md:scroll-mt-[calc(var(--nav-offset)+3.25rem)]"
           >
             <Reveal delay={Math.min(i, 8) * 0.03}>
               <ServiceCard

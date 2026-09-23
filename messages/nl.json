@@ -161,7 +161,7 @@
     "year": "/jaar",
     "monthly": "Maandelijks",
     "yearly": "Jaarlijks",
-    "saveYearly": "Bespaar 10% bij jaarlijkse betaling",
+    "saveYearly": "Bespaar 10% bij jaarlijkse betaling!",
     "mostChosen": "Meest gekozen",
     "features": {
       "starter": [
@@ -236,6 +236,8 @@
     "title": "Winkel",
     "subtitle": "Alle prijzen zijn inclusief 21% BTW.",
     "plans": "Ready To Go - AI compleet pakket",
+    "support": "Support",
+    "webhosting": "Webhosting",
     "services": "Diensten en producten",
     "typePlan": "Plan",
     "typeService": "Dienst",
@@ -778,7 +780,7 @@
     "subtitle": "Blijf op de hoogte van alle ontwikkelingen."
   },
   "wordpressSupport": {
-    "saveYearlyHint": "Bespaar tot 20% bij jaarlijkse monitoring & support!",
+    "saveYearlyHint": "Bespaar 10% bij jaarlijkse betaling!",
     "savePercent": "Bespaar {percent}%",
     "orderNow": "Bestel nu",
     "noCreditCard": "Geen creditcard vereist",
