@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { useNavigationProgress } from "@/hooks/useNavigationProgress";
-import { serviceCatalog, serviceGroupHref, serviceHref, sortedServiceGroups } from "@/content/fixweb/catalog";
+import { serviceCatalog, serviceGroupHref, serviceHref, sortedServiceGroups, sortOptimizationMenuItems } from "@/content/fixweb/catalog";
 import {
   catalogGroupTitle,
   catalogServiceTitle,
@@ -27,7 +27,17 @@ const featuredByGroup: Record<string, string[]> = {
     "ai-integration",
     "ai-consultancy",
   ],
-  optimization: ["aeo-optimization", "geo-optimization", "seo-optimization", "text-optimization"],
+  optimization: [
+    "aeo-optimization",
+    "geo-optimization",
+    "seo-optimization",
+    "ecommerce-seo",
+    "text-optimization",
+    "conversion-optimization",
+    "speed-optimization",
+    "analytics-optimization",
+    "accessibility-optimization",
+  ],
   wordpress: [
     "ai-in-wordpress",
     "wordpress-maintenance-updates",
@@ -90,7 +100,8 @@ function sortFeaturedItems(
   locale: string,
   groupId: string,
 ) {
-  if (groupId === "hosting" || groupId === "ai" || groupId === "optimization") return items;
+  if (groupId === "hosting" || groupId === "ai") return items;
+  if (groupId === "optimization") return sortOptimizationMenuItems(items, locale);
   return [...items].sort((a, b) =>
     catalogServiceTitle(a.slug, locale, a.title).localeCompare(
       catalogServiceTitle(b.slug, locale, b.title),

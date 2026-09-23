@@ -123,7 +123,12 @@
       "custom": "საბაჟო",
       "wordpress": "WordPress",
       "maintenance": "მოვლა",
-      "support": "მხარდაჭერა"
+      "support": "მხარდაჭერა",
+      "ecommerceSeo": "E-commerce SEO",
+      "conversion": "Conversion",
+      "speedOpt": "Core Web Vitals და სიჩქარე",
+      "analytics": "Analytics",
+      "accessibility": "ხელმისაწვდომობა"
     },
     "inquiry": {
       "wp": {

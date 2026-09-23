@@ -12,7 +12,7 @@ import { HostingDropdown, HOSTING_MENU_SLUGS, HOSTING_SLUGS } from "@/components
 import { LanguageSwitcher } from "@/components/shared/LanguageSwitcher";
 import { CartNavButton } from "@/components/shop/CartNavButton";
 import { AccountMenu } from "@/components/shared/AccountMenu";
-import { serviceCatalog, serviceGroupHref, serviceHref, sortedServiceGroups } from "@/content/fixweb/catalog";
+import { serviceCatalog, serviceGroupHref, serviceHref, sortedServiceGroups, sortOptimizationMenuItems } from "@/content/fixweb/catalog";
 import {
   catalogGroupTitle,
   catalogServiceTitle,
@@ -254,15 +254,17 @@ export function Navigation() {
                             .map((group) => {
                             const groupItems = serviceCatalog.filter((s) => s.group === group.id);
                             const sorted =
-                              group.id === "ai" || group.id === "optimization"
+                              group.id === "ai"
                                 ? groupItems
-                                : [...groupItems].sort((a, b) =>
-                                    catalogServiceTitle(a.slug, locale, a.title).localeCompare(
-                                      catalogServiceTitle(b.slug, locale, b.title),
-                                      locale,
-                                      { sensitivity: "base" },
-                                    ),
-                                  );
+                                : group.id === "optimization"
+                                  ? sortOptimizationMenuItems(groupItems, locale)
+                                  : [...groupItems].sort((a, b) =>
+                                      catalogServiceTitle(a.slug, locale, a.title).localeCompare(
+                                        catalogServiceTitle(b.slug, locale, b.title),
+                                        locale,
+                                        { sensitivity: "base" },
+                                      ),
+                                    );
                             return (
                               <div key={group.id}>
                                 <SoftLink
@@ -276,6 +278,8 @@ export function Navigation() {
                                     0,
                                     group.id === "ai"
                                       ? 10
+                                      : group.id === "optimization"
+                                        ? 9
                                       : group.id === "webdesign"
                                         ? 11
                                         : group.id === "wordpress"

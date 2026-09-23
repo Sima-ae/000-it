@@ -123,7 +123,12 @@
       "custom": "Skikk",
       "wordpress": "WordPress",
       "maintenance": "Vedlikehold",
-      "support": "Støtte"
+      "support": "Støtte",
+      "ecommerceSeo": "E-commerce SEO",
+      "conversion": "Conversion",
+      "speedOpt": "Core Web Vitals og hastighet",
+      "analytics": "Analytics",
+      "accessibility": "Tilgjengelighet"
     },
     "inquiry": {
       "wp": {

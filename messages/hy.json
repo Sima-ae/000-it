@@ -123,7 +123,12 @@
       "custom": "Պատվերով",
       "wordpress": "WordPress",
       "maintenance": "Տեխնիկական սպասարկում",
-      "support": "Աջակցություն"
+      "support": "Աջակցություն",
+      "ecommerceSeo": "E-commerce SEO",
+      "conversion": "Conversion",
+      "speedOpt": "Core Web Vitals և արագություն",
+      "analytics": "Analytics",
+      "accessibility": "Հասանելիություն"
     },
     "inquiry": {
       "wp": {

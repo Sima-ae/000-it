@@ -123,7 +123,12 @@
       "custom": "Custom",
       "wordpress": "WordPress",
       "maintenance": "Технічне обслуговування",
-      "support": "Підтримка"
+      "support": "Підтримка",
+      "ecommerceSeo": "E-commerce SEO",
+      "conversion": "Conversion",
+      "speedOpt": "Core Web Vitals і швидкість",
+      "analytics": "Analytics",
+      "accessibility": "Доступність"
     },
     "inquiry": {
       "wp": {

@@ -47,6 +47,17 @@ export const serviceCatalog: ServiceNavItem[] = [
     summaryNl: "Hoger ranken met technische SEO, content en autoriteit.",
   },
   {
+    slug: "ecommerce-seo",
+    title: "E-commerce SEO",
+    titleNl: "E-commerce SEO",
+    kind: "page",
+    group: "optimization",
+    summary:
+      "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+    summaryNl:
+      "Product-, categorie- en technische SEO voor webshops — meer organisch verkeer en beter gekwalificeerde kopers.",
+  },
+  {
     slug: "text-optimization",
     title: "Text Optimization",
     titleNl: "Teksten optimaliseren",
@@ -56,6 +67,50 @@ export const serviceCatalog: ServiceNavItem[] = [
       "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
     summaryNl:
       "Scherpe webteksten: heldere koppen, sterkere pagina’s en conversiegerichte formulering die SEO, AEO en UX versterkt.",
+  },
+  {
+    slug: "conversion-optimization",
+    title: "Conversion Optimization",
+    titleNl: "Conversie-optimalisatie",
+    kind: "page",
+    group: "optimization",
+    summary:
+      "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+    summaryNl:
+      "CRO voor landings, funnels en CTA’s — meer aanvragen en verkopen uit het verkeer dat je al hebt.",
+  },
+  {
+    slug: "speed-optimization",
+    title: "Core Web Vitals & speed",
+    titleNl: "Core Web Vitals en snelheid",
+    kind: "page",
+    group: "optimization",
+    summary:
+      "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+    summaryNl:
+      "Snellere pagina’s en sterkere Core Web Vitals — betere UX, rankings en conversie op elke stack.",
+  },
+  {
+    slug: "analytics-optimization",
+    title: "Analytics and measurement",
+    titleNl: "Analytics en meting",
+    kind: "page",
+    group: "optimization",
+    summary:
+      "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+    summaryNl:
+      "GA4, Search Console en heldere rapportage zodat je weet wat leads en omzet aandrijft.",
+  },
+  {
+    slug: "accessibility-optimization",
+    title: "Accessibility",
+    titleNl: "Toegankelijkheid",
+    kind: "page",
+    group: "optimization",
+    summary:
+      "WCAG-minded improvements so more people can use your site — and search engines understand it better.",
+    summaryNl:
+      "WCAG-gerichte verbeteringen zodat meer mensen jouw site kunnen gebruiken — en zoekmachines hem beter begrijpen.",
   },
   {
     slug: "ai-scan",
@@ -651,6 +706,34 @@ export function getServiceSlugs() {
   return serviceCatalog.filter((item) => !item.href).map((item) => item.slug);
 }
 
+const OPTIMIZATION_PINNED = [
+  "aeo-optimization",
+  "geo-optimization",
+  "seo-optimization",
+] as const;
+
+/** AEO → GEO → SEO fixed, then remaining optimization items A–Z by locale title. */
+export function sortOptimizationMenuItems<T extends { slug: string; title: string }>(
+  items: T[],
+  locale: string,
+): T[] {
+  const bySlug = new Map(items.map((item) => [item.slug, item]));
+  const pinned = OPTIMIZATION_PINNED.map((slug) => bySlug.get(slug)).filter(
+    (item): item is T => Boolean(item),
+  );
+  const pinnedSet = new Set<string>(OPTIMIZATION_PINNED);
+  const rest = items
+    .filter((item) => !pinnedSet.has(item.slug))
+    .sort((a, b) =>
+      catalogServiceTitle(a.slug, locale, a.title).localeCompare(
+        catalogServiceTitle(b.slug, locale, b.title),
+        locale,
+        { sensitivity: "base" },
+      ),
+    );
+  return [...pinned, ...rest];
+}
+
 export function serviceHref(locale: string, item: ServiceNavItem) {
   if (item.href) return localizedHref(locale, item.href);
   return localizedHref(locale, `/diensten/${item.slug}`);
@@ -683,8 +766,8 @@ const serviceGroupSummaries: Record<ServiceGroupId, { en: string; nl: string }> 
     nl: "Chatbots, workflows, AI in websites en shops, integratie en AI-advies.",
   },
   optimization: {
-    en: "AEO, GEO and SEO so your site is found in search and answer engines.",
-    nl: "AEO, GEO en SEO zodat je site gevonden wordt in zoek- en antwoordmachines.",
+    en: "AEO, GEO, SEO, e-commerce SEO, copy, CRO, speed, analytics and accessibility — so your site is found and converts.",
+    nl: "AEO, GEO, SEO, e-commerce SEO, teksten, CRO, snelheid, analytics en toegankelijkheid — zodat je site gevonden wordt én converteert.",
   },
   wordpress: {
     en: "Maintenance, security, malware removal, speed, backups and WordPress support.",

@@ -69,7 +69,12 @@
       "vps-hosting-business": "VPS Hosting Business",
       "privacy-policy": "Privacy Policy",
       "cookie-policy": "Cookie Policy",
-      "terms-and-conditions": "Terms and Conditions"
+      "terms-and-conditions": "Terms and Conditions",
+      "ecommerce-seo": "E-commerce SEO",
+      "conversion-optimization": "Conversion Optimization",
+      "speed-optimization": "Core Web Vitals & speed",
+      "analytics-optimization": "Analytics and measurement",
+      "accessibility-optimization": "Accessibility"
     },
     "nl": {
       "aeo-optimization": "AEO optimalisatie",
@@ -140,7 +145,12 @@
       "vps-hosting-business": "VPS hosting business",
       "privacy-policy": "Privacybeleid",
       "cookie-policy": "Cookiebeleid",
-      "terms-and-conditions": "Algemene voorwaarden"
+      "terms-and-conditions": "Algemene voorwaarden",
+      "ecommerce-seo": "E-commerce SEO",
+      "conversion-optimization": "Conversie-optimalisatie",
+      "speed-optimization": "Core Web Vitals en snelheid",
+      "analytics-optimization": "Analytics en meting",
+      "accessibility-optimization": "Toegankelijkheid"
     },
     "fr": {
       "aeo-optimization": "Optimisation OEA",
@@ -211,7 +221,12 @@
       "vps-hosting-business": "Entreprise d'hébergement VPS",
       "privacy-policy": "Politique de Confidentialité",
       "cookie-policy": "Politique d'utilisation de cookies",
-      "terms-and-conditions": "Conditions d’utilisation"
+      "terms-and-conditions": "Conditions d’utilisation",
+      "ecommerce-seo": "SEO e-commerce",
+      "conversion-optimization": "Optimisation de la conversion",
+      "speed-optimization": "Core Web Vitals et vitesse",
+      "analytics-optimization": "Analytics et mesure",
+      "accessibility-optimization": "Accessibilité"
     },
     "de": {
       "aeo-optimization": "AEO-Optimierung",
@@ -282,7 +297,12 @@
       "vps-hosting-business": "VPS-Hosting-Geschäft",
       "privacy-policy": "Datenschutzrichtlinie",
       "cookie-policy": "Cookie-Richtlinie",
-      "terms-and-conditions": "Allgemeine Geschäftsbedingungen"
+      "terms-and-conditions": "Allgemeine Geschäftsbedingungen",
+      "ecommerce-seo": "E-Commerce-SEO",
+      "conversion-optimization": "Conversion-Optimierung",
+      "speed-optimization": "Core Web Vitals und Geschwindigkeit",
+      "analytics-optimization": "Analytics und Messung",
+      "accessibility-optimization": "Barrierefreiheit"
     },
     "es": {
       "aeo-optimization": "Optimización AEO",
@@ -353,7 +373,12 @@
       "vps-hosting-business": "Negocio de alojamiento VPS",
       "privacy-policy": "Política de privacidad",
       "cookie-policy": "Política de cookies",
-      "terms-and-conditions": "Términos y condiciones"
+      "terms-and-conditions": "Términos y condiciones",
+      "ecommerce-seo": "SEO e-commerce",
+      "conversion-optimization": "Optimización de conversión",
+      "speed-optimization": "Core Web Vitals y velocidad",
+      "analytics-optimization": "Analytics y medición",
+      "accessibility-optimization": "Accesibilidad"
     },
     "pt": {
       "aeo-optimization": "Otimização de AEO",
@@ -424,7 +449,12 @@
       "vps-hosting-business": "Negócio de Hospedagem VPS",
       "privacy-policy": "Política de privacidade",
       "cookie-policy": "Política de cookies",
-      "terms-and-conditions": "Termos e Condições do Cartão"
+      "terms-and-conditions": "Termos e Condições do Cartão",
+      "ecommerce-seo": "SEO e-commerce",
+      "conversion-optimization": "Otimização de conversão",
+      "speed-optimization": "Core Web Vitals e velocidade",
+      "analytics-optimization": "Analytics e medição",
+      "accessibility-optimization": "Acessibilidade"
     },
     "it": {
       "aeo-optimization": "Ottimizzazione AEO",
@@ -495,7 +525,12 @@
       "vps-hosting-business": "Attività di hosting VPS",
       "privacy-policy": "Nella politica sulla protezione dei dati",
       "cookie-policy": "Informativa sui cookie",
-      "terms-and-conditions": "Termini e condizioni"
+      "terms-and-conditions": "Termini e condizioni",
+      "ecommerce-seo": "SEO e-commerce",
+      "conversion-optimization": "Ottimizzazione della conversione",
+      "speed-optimization": "Core Web Vitals e velocità",
+      "analytics-optimization": "Analytics e misurazione",
+      "accessibility-optimization": "Accessibilità"
     },
     "el": {
       "aeo-optimization": "Βελτιστοποίηση ΑΕΟ",
@@ -566,7 +601,12 @@
       "vps-hosting-business": "Επιχείρηση φιλοξενίας VPS",
       "privacy-policy": "Πολιτική Aπορρήτου",
       "cookie-policy": "Πολιτική Cookies",
-      "terms-and-conditions": "Όροι και προϋποθέσεις"
+      "terms-and-conditions": "Όροι και προϋποθέσεις",
+      "ecommerce-seo": "E-commerce SEO",
+      "conversion-optimization": "Conversion Optimization",
+      "speed-optimization": "Core Web Vitals και ταχύτητα",
+      "analytics-optimization": "Analytics και μέτρηση",
+      "accessibility-optimization": "Προσβασιμότητα"
     },
     "pl": {
       "aeo-optimization": "Optymalizacja AEO",
@@ -637,7 +677,12 @@
       "vps-hosting-business": "Firma hostingowa VPS",
       "privacy-policy": "Polityce prywatności",
       "cookie-policy": "Polityka cookies",
-      "terms-and-conditions": "Warunki i postanowienia"
+      "terms-and-conditions": "Warunki i postanowienia",
+      "ecommerce-seo": "SEO e-commerce",
+      "conversion-optimization": "Optymalizacja konwersji",
+      "speed-optimization": "Core Web Vitals i szybkość",
+      "analytics-optimization": "Analytics i pomiary",
+      "accessibility-optimization": "Dostępność"
     },
     "cs": {
       "aeo-optimization": "Optimalizace AEO",
@@ -708,7 +753,12 @@
       "vps-hosting-business": "VPS hosting podnikání",
       "privacy-policy": "Zásady ochrany osobních údajů",
       "cookie-policy": "Zásady používání souborů cookie",
-      "terms-and-conditions": "Podmínky a pravidla"
+      "terms-and-conditions": "Podmínky a pravidla",
+      "ecommerce-seo": "E-commerce SEO",
+      "conversion-optimization": "Conversion Optimization",
+      "speed-optimization": "Core Web Vitals a rychlost",
+      "analytics-optimization": "Analytics a měření",
+      "accessibility-optimization": "Přístupnost"
     },
     "sk": {
       "aeo-optimization": "Optimalizácia AEO",
@@ -779,7 +829,12 @@
       "vps-hosting-business": "VPS hosting podnikania",
       "privacy-policy": "Zásady ochrany osobných údajov",
       "cookie-policy": "Zásady používania súborov cookie",
-      "terms-and-conditions": "Podmienky a pravidlá"
+      "terms-and-conditions": "Podmienky a pravidlá",
+      "ecommerce-seo": "E-commerce SEO",
+      "conversion-optimization": "Conversion Optimization",
+      "speed-optimization": "Core Web Vitals a rýchlosť",
+      "analytics-optimization": "Analytics a meranie",
+      "accessibility-optimization": "Prístupnosť"
     },
     "hu": {
       "aeo-optimization": "AEO-optimalizálás",
@@ -850,7 +905,12 @@
       "vps-hosting-business": "VPS tárhely üzlet",
       "privacy-policy": "Adatvédelmi szabályzat",
       "cookie-policy": "Süti (cookie) szabályzat",
-      "terms-and-conditions": "Általános szerződési feltételek"
+      "terms-and-conditions": "Általános szerződési feltételek",
+      "ecommerce-seo": "E-commerce SEO",
+      "conversion-optimization": "Conversion Optimization",
+      "speed-optimization": "Core Web Vitals és sebesség",
+      "analytics-optimization": "Analytics és mérés",
+      "accessibility-optimization": "Akadálymentesség"
     },
     "ro": {
       "aeo-optimization": "Optimizare AEO",
@@ -921,7 +981,12 @@
       "vps-hosting-business": "Găzduire VPS Business",
       "privacy-policy": "Politica de Confidențialitate a acestui site.",
       "cookie-policy": "Politica privind modulele cookie",
-      "terms-and-conditions": "Termeni și condiții"
+      "terms-and-conditions": "Termeni și condiții",
+      "ecommerce-seo": "E-commerce SEO",
+      "conversion-optimization": "Conversion Optimization",
+      "speed-optimization": "Core Web Vitals și viteză",
+      "analytics-optimization": "Analytics și măsurare",
+      "accessibility-optimization": "Accesibilitate"
     },
     "bg": {
       "aeo-optimization": "Оптимизация на ОИО",
@@ -992,7 +1057,12 @@
       "vps-hosting-business": "Бизнес за настаняване на гости чрез VPS",
       "privacy-policy": "Политика на поверителност",
       "cookie-policy": "Политика за бисквитките",
-      "terms-and-conditions": "Общи условия"
+      "terms-and-conditions": "Общи условия",
+      "ecommerce-seo": "E-commerce SEO",
+      "conversion-optimization": "Conversion Optimization",
+      "speed-optimization": "Core Web Vitals и скорост",
+      "analytics-optimization": "Analytics и измерване",
+      "accessibility-optimization": "Достъпност"
     },
     "hr": {
       "aeo-optimization": "Optimizacija AEO-a",
@@ -1063,7 +1133,12 @@
       "vps-hosting-business": "VPS hosting poslovanje",
       "privacy-policy": "Pravila o privatnosti",
       "cookie-policy": "POLITIKA KOLAČIĆA",
-      "terms-and-conditions": "Uvjeti i odredbe"
+      "terms-and-conditions": "Uvjeti i odredbe",
+      "ecommerce-seo": "E-commerce SEO",
+      "conversion-optimization": "Conversion Optimization",
+      "speed-optimization": "Core Web Vitals i brzina",
+      "analytics-optimization": "Analytics i mjerenje",
+      "accessibility-optimization": "Pristupačnost"
     },
     "sr": {
       "aeo-optimization": "Optimizacija AEO",
@@ -1134,7 +1209,12 @@
       "vps-hosting-business": "VPS hosting poslovanje",
       "privacy-policy": "Politika privatnosti",
       "cookie-policy": "Pravila o kolačićima",
-      "terms-and-conditions": "Uslovi i Odredbe"
+      "terms-and-conditions": "Uslovi i Odredbe",
+      "ecommerce-seo": "E-commerce SEO",
+      "conversion-optimization": "Conversion Optimization",
+      "speed-optimization": "Core Web Vitals i brzina",
+      "analytics-optimization": "Analytics i merenje",
+      "accessibility-optimization": "Pristupačnost"
     },
     "bs": {
       "aeo-optimization": "Optimizacija AEO-a",
@@ -1205,7 +1285,12 @@
       "vps-hosting-business": "VPS hosting preduzeće",
       "privacy-policy": "Pravila o privatnosti",
       "cookie-policy": "Politika kolačića",
-      "terms-and-conditions": "Uslovi"
+      "terms-and-conditions": "Uslovi",
+      "ecommerce-seo": "E-commerce SEO",
+      "conversion-optimization": "Conversion Optimization",
+      "speed-optimization": "Core Web Vitals i brzina",
+      "analytics-optimization": "Analytics i mjerenje",
+      "accessibility-optimization": "Pristupačnost"
     },
     "cnr": {
       "aeo-optimization": "Optimizacija AEO",
@@ -1276,7 +1361,12 @@
       "vps-hosting-business": "VPS hosting poslovanje",
       "privacy-policy": "Politika privatnosti",
       "cookie-policy": "Pravila o kolačićima",
-      "terms-and-conditions": "Uslovi i Odredbe"
+      "terms-and-conditions": "Uslovi i Odredbe",
+      "ecommerce-seo": "E-commerce SEO",
+      "conversion-optimization": "Conversion Optimization",
+      "speed-optimization": "Core Web Vitals i brzina",
+      "analytics-optimization": "Analytics i mjerenje",
+      "accessibility-optimization": "Pristupačnost"
     },
     "sq": {
       "aeo-optimization": "Optimizimi i AEO",
@@ -1347,7 +1437,12 @@
       "vps-hosting-business": "Biznesi i pritjes së vizitorëve në VPS",
       "privacy-policy": "Politika e privatësisë",
       "cookie-policy": "Politika e Cookie",
-      "terms-and-conditions": "Termat e Kushtet"
+      "terms-and-conditions": "Termat e Kushtet",
+      "ecommerce-seo": "E-commerce SEO",
+      "conversion-optimization": "Conversion Optimization",
+      "speed-optimization": "Core Web Vitals dhe shpejtësia",
+      "analytics-optimization": "Analytics dhe matje",
+      "accessibility-optimization": "Aksesueshmëria"
     },
     "mk": {
       "aeo-optimization": "Оптимизација на ОИО",
@@ -1418,7 +1513,12 @@
       "vps-hosting-business": "Бизнис со угостување преку VPS",
       "privacy-policy": "Политика за приватност",
       "cookie-policy": "Нова политика за колачиња",
-      "terms-and-conditions": "Правила за користење"
+      "terms-and-conditions": "Правила за користење",
+      "ecommerce-seo": "E-commerce SEO",
+      "conversion-optimization": "Conversion Optimization",
+      "speed-optimization": "Core Web Vitals и брзина",
+      "analytics-optimization": "Analytics и мерење",
+      "accessibility-optimization": "Пристапност"
     },
     "lt": {
       "aeo-optimization": "AEO optimizavimas",
@@ -1489,7 +1589,12 @@
       "vps-hosting-business": "VPS svečių priėmimo verslas",
       "privacy-policy": "Privatumo politika",
       "cookie-policy": "Slapukų naudojimo politika",
-      "terms-and-conditions": "Sąlygos"
+      "terms-and-conditions": "Sąlygos",
+      "ecommerce-seo": "E-commerce SEO",
+      "conversion-optimization": "Conversion Optimization",
+      "speed-optimization": "Core Web Vitals ir greitis",
+      "analytics-optimization": "Analytics ir matavimas",
+      "accessibility-optimization": "Prieinamumas"
     },
     "da": {
       "aeo-optimization": "AEO-optimering",
@@ -1560,7 +1665,12 @@
       "vps-hosting-business": "VPS-værtsvirksomhed",
       "privacy-policy": "Fortrolighedspolitik",
       "cookie-policy": "Cookiepolitik",
-      "terms-and-conditions": "Vilkår og Betingelser"
+      "terms-and-conditions": "Vilkår og Betingelser",
+      "ecommerce-seo": "E-handels-SEO",
+      "conversion-optimization": "Konverteringsoptimering",
+      "speed-optimization": "Core Web Vitals og hastighed",
+      "analytics-optimization": "Analytics og måling",
+      "accessibility-optimization": "Tilgængelighed"
     },
     "sv": {
       "aeo-optimization": "AEO-optimering",
@@ -1631,7 +1741,12 @@
       "vps-hosting-business": "VPS Hosting Business",
       "privacy-policy": "Sekretesspolicy",
       "cookie-policy": "Cookiepolicy",
-      "terms-and-conditions": "Regler och villkor"
+      "terms-and-conditions": "Regler och villkor",
+      "ecommerce-seo": "E-handels-SEO",
+      "conversion-optimization": "Konverteringsoptimering",
+      "speed-optimization": "Core Web Vitals och hastighet",
+      "analytics-optimization": "Analytics och mätning",
+      "accessibility-optimization": "Tillgänglighet"
     },
     "no": {
       "aeo-optimization": "AEO-optimalisering",
@@ -1702,7 +1817,12 @@
       "vps-hosting-business": "VPS Hosting Business",
       "privacy-policy": "Personvernerklæring",
       "cookie-policy": "Retningslinjer for informasjonskapsler",
-      "terms-and-conditions": "Vilkår og betingelser"
+      "terms-and-conditions": "Vilkår og betingelser",
+      "ecommerce-seo": "E-handels-SEO",
+      "conversion-optimization": "Konverteringsoptimalisering",
+      "speed-optimization": "Core Web Vitals og hastighet",
+      "analytics-optimization": "Analytics og måling",
+      "accessibility-optimization": "Tilgjengelighet"
     },
     "fi": {
       "aeo-optimization": "AEO-optimointi",
@@ -1773,7 +1893,12 @@
       "vps-hosting-business": "VPS-hosting-liiketoiminta",
       "privacy-policy": "Tietosuojakäytäntö",
       "cookie-policy": "Evästekäytäntö",
-      "terms-and-conditions": "Ehdot"
+      "terms-and-conditions": "Ehdot",
+      "ecommerce-seo": "E-commerce SEO",
+      "conversion-optimization": "Conversion Optimization",
+      "speed-optimization": "Core Web Vitals ja nopeus",
+      "analytics-optimization": "Analytics ja mittaus",
+      "accessibility-optimization": "Saavutettavuus"
     },
     "uk": {
       "aeo-optimization": "Оптимізація AEO",
@@ -1844,7 +1969,12 @@
       "vps-hosting-business": "VPS хостинг бізнес",
       "privacy-policy": "Політика конфіденційності",
       "cookie-policy": "Політика використання файлів cookie",
-      "terms-and-conditions": "Правила та умови"
+      "terms-and-conditions": "Правила та умови",
+      "ecommerce-seo": "SEO для e-commerce",
+      "conversion-optimization": "Оптимізація конверсії",
+      "speed-optimization": "Core Web Vitals і швидкість",
+      "analytics-optimization": "Analytics і вимірювання",
+      "accessibility-optimization": "Доступність"
     },
     "ru": {
       "aeo-optimization": "Оптимизация УЭО",
@@ -1915,7 +2045,12 @@
       "vps-hosting-business": "VPS-хостинг для бизнеса",
       "privacy-policy": "политика конфиденциальности",
       "cookie-policy": "Политика использования файлов cookie",
-      "terms-and-conditions": "Условия и положения"
+      "terms-and-conditions": "Условия и положения",
+      "ecommerce-seo": "SEO для e-commerce",
+      "conversion-optimization": "Оптимизация конверсии",
+      "speed-optimization": "Core Web Vitals и скорость",
+      "analytics-optimization": "Analytics и измерение",
+      "accessibility-optimization": "Доступность"
     },
     "tr": {
       "aeo-optimization": "Yetki Yöneticisi Optimizasyonu",
@@ -1986,7 +2121,12 @@
       "vps-hosting-business": "VPS Barındırma İşi",
       "privacy-policy": "Gizlilik Politikası",
       "cookie-policy": "Çerez Politikası",
-      "terms-and-conditions": "Şartlar ve koşullar"
+      "terms-and-conditions": "Şartlar ve koşullar",
+      "ecommerce-seo": "E-ticaret SEO",
+      "conversion-optimization": "Dönüşüm optimizasyonu",
+      "speed-optimization": "Core Web Vitals ve hız",
+      "analytics-optimization": "Analytics ve ölçüm",
+      "accessibility-optimization": "Erişilebilirlik"
     },
     "he": {
       "aeo-optimization": "אופטימיזציה של AEO",
@@ -2057,7 +2197,12 @@
       "vps-hosting-business": "עסק אירוח VPS",
       "privacy-policy": "מדיניות פרטיות",
       "cookie-policy": "מדיניות עוגיות",
-      "terms-and-conditions": "תנאים והגבלות"
+      "terms-and-conditions": "תנאים והגבלות",
+      "ecommerce-seo": "SEO למסחר אלקטרוני",
+      "conversion-optimization": "אופטימיזציית המרה",
+      "speed-optimization": "Core Web Vitals ומהירות",
+      "analytics-optimization": "Analytics ומדידה",
+      "accessibility-optimization": "נגישות"
     },
     "ar": {
       "aeo-optimization": "تحسين AEO",
@@ -2128,7 +2273,12 @@
       "vps-hosting-business": "أعمال استضافة VPS",
       "privacy-policy": "سياسة الخصوصية",
       "cookie-policy": "سياسة ملفات تعريف الارتباط",
-      "terms-and-conditions": "الشروط والأحكام"
+      "terms-and-conditions": "الشروط والأحكام",
+      "ecommerce-seo": "تحسين محركات البحث للتجارة الإلكترونية",
+      "conversion-optimization": "تحسين التحويل",
+      "speed-optimization": "Core Web Vitals والسرعة",
+      "analytics-optimization": "Analytics والقياس",
+      "accessibility-optimization": "إمكانية الوصول"
     },
     "ka": {
       "aeo-optimization": "AEO ოპტიმიზაცია",
@@ -2199,7 +2349,12 @@
       "vps-hosting-business": "VPS ჰოსტინგის ბიზნესი",
       "privacy-policy": "კონფიდენციალურობის პოლიტიკა",
       "cookie-policy": "ქუქიების პოლიტიკა",
-      "terms-and-conditions": "წესები და პირობები"
+      "terms-and-conditions": "წესები და პირობები",
+      "ecommerce-seo": "E-commerce SEO",
+      "conversion-optimization": "Conversion Optimization",
+      "speed-optimization": "Core Web Vitals და სიჩქარე",
+      "analytics-optimization": "Analytics და გაზომვა",
+      "accessibility-optimization": "ხელმისაწვდომობა"
     },
     "hy": {
       "aeo-optimization": "AEO օպտիմիզացում",
@@ -2270,7 +2425,12 @@
       "vps-hosting-business": "VPS հոստինգ բիզնես",
       "privacy-policy": "Գաղտնիության քաղաքականություն",
       "cookie-policy": "Cookie քաղաքականություն",
-      "terms-and-conditions": "Պայմաններ և դրույթներ"
+      "terms-and-conditions": "Պայմաններ և դրույթներ",
+      "ecommerce-seo": "E-commerce SEO",
+      "conversion-optimization": "Conversion Optimization",
+      "speed-optimization": "Core Web Vitals և արագություն",
+      "analytics-optimization": "Analytics և չափում",
+      "accessibility-optimization": "Հասանելիություն"
     },
     "az": {
       "aeo-optimization": "AEO Optimizasiyası",
@@ -2341,7 +2501,12 @@
       "vps-hosting-business": "VPS Hosting Biznesi",
       "privacy-policy": "Məxfilik Siyasəti",
       "cookie-policy": "Kuki Siyasəti",
-      "terms-and-conditions": "Qaydalar və Şərtlər"
+      "terms-and-conditions": "Qaydalar və Şərtlər",
+      "ecommerce-seo": "E-commerce SEO",
+      "conversion-optimization": "Conversion Optimization",
+      "speed-optimization": "Core Web Vitals və sürət",
+      "analytics-optimization": "Analytics və ölçmə",
+      "accessibility-optimization": "Əlçatanlıq"
     },
     "zh": {
       "aeo-optimization": "AEO优化",
@@ -2412,7 +2577,12 @@
       "vps-hosting-business": "VPS主机业务",
       "privacy-policy": "隐私政策",
       "cookie-policy": "Cookie 政策",
-      "terms-and-conditions": "条款和条件"
+      "terms-and-conditions": "条款和条件",
+      "ecommerce-seo": "电商 SEO",
+      "conversion-optimization": "转化优化",
+      "speed-optimization": "Core Web Vitals 与速度",
+      "analytics-optimization": "Analytics 与衡量",
+      "accessibility-optimization": "无障碍"
     },
     "ja": {
       "aeo-optimization": "AEOの最適化",
@@ -2483,7 +2653,12 @@
       "vps-hosting-business": "VPSホスティングビジネス",
       "privacy-policy": "プライバシーポリシー",
       "cookie-policy": "Cookieポリシー",
-      "terms-and-conditions": "ご利用条件"
+      "terms-and-conditions": "ご利用条件",
+      "ecommerce-seo": "ECサイト SEO",
+      "conversion-optimization": "コンバージョン最適化",
+      "speed-optimization": "Core Web Vitals と速度",
+      "analytics-optimization": "Analytics と計測",
+      "accessibility-optimization": "アクセシビリティ"
     }
   },
   "groups": {
@@ -2847,7 +3022,12 @@
       "flyers-posters": "Flyer and poster design plus printing in small or large quantities.",
       "stickers-packaging": "Sticker design and printing — small batches or large runs.",
       "magazines-brochures": "Brochure and magazine design plus printing in small or large quantities.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "nl": {
       "aeo-optimization": "Answer Engine Optimization voor citeerbare, antwoordklare content.",
@@ -2892,7 +3072,12 @@
       "flyers-posters": "Flyer- en posterontwerp plus drukwerk in kleine of grote oplages.",
       "stickers-packaging": "Stickerontwerp en drukwerk — kleine batches of grote runs.",
       "magazines-brochures": "Brochure- en magazine-ontwerp plus drukwerk in kleine of grote oplages.",
-      "text-optimization": "Scherpe webteksten: heldere koppen, sterkere pagina’s en conversiegerichte formulering die SEO, AEO en UX versterkt."
+      "text-optimization": "Scherpe webteksten: heldere koppen, sterkere pagina’s en conversiegerichte formulering die SEO, AEO en UX versterkt.",
+      "ecommerce-seo": "Product-, categorie- en technische SEO voor webshops — meer organisch verkeer en beter gekwalificeerde kopers.",
+      "conversion-optimization": "CRO voor landings, funnels en CTA’s — meer aanvragen en verkopen uit het verkeer dat je al hebt.",
+      "speed-optimization": "Snellere pagina’s en sterkere Core Web Vitals — betere UX, rankings en conversie op elke stack.",
+      "analytics-optimization": "GA4, Search Console en heldere rapportage zodat je weet wat leads en omzet aandrijft.",
+      "accessibility-optimization": "WCAG-gerichte verbeteringen zodat meer mensen jouw site kunnen gebruiken — en zoekmachines hem beter begrijpen."
     },
     "fr": {
       "aeo-optimization": "Optimisation du moteur de réponse pour un contenu citable et prêt à répondre.",
@@ -2937,7 +3122,12 @@
       "flyers-posters": "Conception de flyers et d'affiches ainsi que impression en petite ou grande quantité.",
       "stickers-packaging": "Conception et impression d’autocollants – petits lots ou grandes séries.",
       "magazines-brochures": "Conception de brochures et de magazines ainsi que impression en petite ou grande quantité.",
-      "text-optimization": "Des textes web plus percutants : titres clairs, pages plus fortes et formulation orientée conversion pour le SEO, l’AEO et l’UX."
+      "text-optimization": "Des textes web plus percutants : titres clairs, pages plus fortes et formulation orientée conversion pour le SEO, l’AEO et l’UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "de": {
       "aeo-optimization": "Antwort-Engine-Optimierung für zitierfähige, antwortbereite Inhalte.",
@@ -2982,7 +3172,12 @@
       "flyers-posters": "Flyer- und Plakatgestaltung sowie Druck in kleinen oder großen Auflagen.",
       "stickers-packaging": "Aufkleberdesign und -druck – kleine Auflagen oder große Auflagen.",
       "magazines-brochures": "Broschüren- und Zeitschriftendesign sowie Druck in kleinen oder großen Auflagen.",
-      "text-optimization": "Schärfere Webtexte: klarere Überschriften, stärkere Seiten und conversion-orientierte Formulierungen für SEO, AEO und UX."
+      "text-optimization": "Schärfere Webtexte: klarere Überschriften, stärkere Seiten und conversion-orientierte Formulierungen für SEO, AEO und UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "es": {
       "aeo-optimization": "Optimización del motor de respuesta para contenido citable y listo para responder.",
@@ -3027,7 +3222,12 @@
       "stickers-packaging": "Diseño e impresión de pegatinas: lotes pequeños o tiradas grandes.",
       "magazines-brochures": "Diseño de folletos y revistas e impresión en pequeñas o grandes cantidades.",
       "website-maintenance": "Actualizaciones, monitoreo, corrección de errores y cuidado del rendimiento para pilas personalizadas.",
-      "text-optimization": "Textos web más claros: titulares precisos, páginas más fuertes y redacción orientada a conversiones para SEO, AEO y UX."
+      "text-optimization": "Textos web más claros: titulares precisos, páginas más fuertes y redacción orientada a conversiones para SEO, AEO y UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "pt": {
       "aeo-optimization": "Otimização do mecanismo de resposta para conteúdo citável e pronto para resposta.",
@@ -3072,7 +3272,12 @@
       "flyers-posters": "Criação de flyers e pôsteres e impressão em pequenas ou grandes quantidades.",
       "stickers-packaging": "Design e impressão de adesivos – pequenos lotes ou grandes tiragens.",
       "magazines-brochures": "Design de brochuras e revistas, além de impressão em pequenas ou grandes quantidades.",
-      "text-optimization": "Textos web mais claros: títulos precisos, páginas mais fortes e redação focada em conversão para SEO, AEO e UX."
+      "text-optimization": "Textos web mais claros: títulos precisos, páginas mais fortes e redação focada em conversão para SEO, AEO e UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "it": {
       "aeo-optimization": "Ottimizzazione del motore di risposta per contenuti citabili e pronti a rispondere.",
@@ -3117,7 +3322,12 @@
       "flyers-posters": "Progettazione di volantini e poster più stampa in piccole o grandi quantità.",
       "stickers-packaging": "Progettazione e stampa di adesivi: piccoli lotti o grandi tirature.",
       "magazines-brochures": "Progettazione di brochure e riviste più stampa in piccole o grandi quantità.",
-      "text-optimization": "Testi web più efficaci: titoli chiari, pagine più forti e formulazioni orientate alla conversione per SEO, AEO e UX."
+      "text-optimization": "Testi web più efficaci: titoli chiari, pagine più forti e formulazioni orientate alla conversione per SEO, AEO e UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "el": {
       "aeo-optimization": "Answer Engine Optimization για περιεχόμενο με δυνατότητα αναφοράς, έτοιμο για απαντήσεις.",
@@ -3162,7 +3372,12 @@
       "flyers-posters": "Σχεδιασμός φυλλαδίου και αφίσας και εκτύπωση σε μικρές ή μεγάλες ποσότητες.",
       "stickers-packaging": "Σχεδιασμός και εκτύπωση αυτοκόλλητων — μικρές παρτίδες ή μεγάλες σειρές.",
       "magazines-brochures": "Σχεδιασμός φυλλαδίων και περιοδικών και εκτύπωση σε μικρές ή μεγάλες ποσότητες.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "pl": {
       "aeo-optimization": "Optymalizacja silnika odpowiedzi pod kątem treści, które można cytować i gotowych odpowiedzieć.",
@@ -3207,7 +3422,12 @@
       "flyers-posters": "Projekt ulotek i plakatów oraz druk w małych i dużych nakładach.",
       "stickers-packaging": "Projektowanie i druk naklejek – małe serie lub duże serie.",
       "magazines-brochures": "Projekt broszur i magazynów oraz druk w małych lub dużych nakładach.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "cs": {
       "aeo-optimization": "Answer Engine Optimization pro citovatelný obsah připravený k odpovědím.",
@@ -3252,7 +3472,12 @@
       "flyers-posters": "Návrh letáků a plakátů plus tisk v malých nebo velkých množstvích.",
       "stickers-packaging": "Návrh a tisk samolepek — malé série nebo velké série.",
       "magazines-brochures": "Návrh brožur a časopisů plus tisk v malém nebo velkém množství.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "sk": {
       "aeo-optimization": "Optimalizácia vyhľadávacieho nástroja pre citovateľný obsah pripravený na odpovede.",
@@ -3297,7 +3522,12 @@
       "flyers-posters": "Návrh letákov a plagátov plus tlač v malom alebo veľkom množstve.",
       "stickers-packaging": "Návrh a tlač nálepiek – malé série alebo veľké série.",
       "magazines-brochures": "Návrh brožúr a časopisov plus tlač v malom alebo veľkom množstve.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "hu": {
       "aeo-optimization": "Answer Engine Optimization az idézhető, válaszkész tartalomhoz.",
@@ -3342,7 +3572,12 @@
       "flyers-posters": "Szórólap és plakát tervezés, valamint nyomtatás kis vagy nagy mennyiségben.",
       "stickers-packaging": "Matricák tervezése és nyomtatása – kis tételekben vagy nagy szériákban.",
       "magazines-brochures": "Brosúrák és folyóiratok tervezése, valamint nyomtatás kis vagy nagy mennyiségben.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "ro": {
       "aeo-optimization": "Optimizarea motorului de răspunsuri pentru conținut citabil, gata de răspuns.",
@@ -3387,7 +3622,12 @@
       "flyers-posters": "Design de pliante și afișe plus tipărire în cantități mici sau mari.",
       "stickers-packaging": "Design și imprimare autocolante — loturi mici sau tiraje mari.",
       "magazines-brochures": "Design de broșuri și reviste plus tipărire în cantități mici sau mari.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "bg": {
       "aeo-optimization": "Оптимизация на Answer Engine за цитируемо, готово за отговор съдържание.",
@@ -3432,7 +3672,12 @@
       "flyers-posters": "Дизайн на флаери и плакати плюс печат в малки или големи количества.",
       "stickers-packaging": "Дизайн и печат на стикери — малки партиди или големи тиражи.",
       "magazines-brochures": "Дизайн на брошури и списания плюс печат в малки или големи тиражи.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "hr": {
       "aeo-optimization": "Answer Engine Optimization za sadržaj spreman za citiranje.",
@@ -3477,7 +3722,12 @@
       "flyers-posters": "Dizajn letaka i plakata plus tisak je malim i velikim nakladama.",
       "stickers-packaging": "Dizajn i tisak naljepnica — male serije ili velike naklade.",
       "magazines-brochures": "Dizajn brošura i časopisa plus tisak je malim i velikim nakladama.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "sr": {
       "aeo-optimization": "Оптимизација мотора за одговоре за садржај који се може цитирати, спреман за одговоре.",
@@ -3522,7 +3772,12 @@
       "ai-in-wordpress": "Ботови за ћаскање, АИ садржаја, аутоматизација и прилагођене АИ функције уграђене у вашу ВордПресс локацију.",
       "wordpress-support": "Стручна подршка за ВордПресс да би ваша веб локација радила несметано.",
       "wordpress-maintenance-updates": "Стално ажурирање језгра ВордПресс-а, додатака и тема са резервним копијама, праћењем и бригом.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "bs": {
       "aeo-optimization": "Answer Engine Optimizacija za sadržaj koji se može citirati, spreman za odgovore.",
@@ -3567,7 +3822,12 @@
       "flyers-posters": "Dizajn flajera i postera plus štampa je malim ili velikim količinama.",
       "stickers-packaging": "Dizajn i štampa naljepnica — male serije ili velike serije.",
       "magazines-brochures": "Dizajn brošura i časopisa plus štampa je malim ili velikim količinama.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "cnr": {
       "aeo-optimization": "Оптимизација мотора за одговоре за садржај који се може цитирати, спреман за одговоре.",
@@ -3612,7 +3872,12 @@
       "flyers-posters": "Дизајн флајера и постера плус штампа у малим или великим количинама.",
       "stickers-packaging": "Дизајн и штампа налепница — мале серије или велике серије.",
       "magazines-brochures": "Дизајн брошура и часописа плус штампа у малим или великим количинама.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "sq": {
       "aeo-optimization": "Përgjigju Optimizimit të Motorit për përmbajtje të citueshme dhe të gatshme për përgjigje.",
@@ -3657,7 +3922,12 @@
       "flyers-posters": "Dizajni i fletushkave dhe posterëve plus printim në sasi të vogla ose të mëdha.",
       "stickers-packaging": "Dizajni dhe printimi i ngjitëseve - tufa të vogla ose të mëdha.",
       "magazines-brochures": "Dizajn broshurash dhe reviste plus printim në sasi të vogla ose të mëdha.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "mk": {
       "aeo-optimization": "Одговори за оптимизација на моторот за цитирана содржина подготвена за одговори.",
@@ -3702,7 +3972,12 @@
       "flyers-posters": "Дизајн на флаери и постери плус печатење во мали или големи количини.",
       "stickers-packaging": "Дизајн и печатење на налепници - мали серии или големи парчиња.",
       "magazines-brochures": "Дизајн на брошура и списанија плус печатење во мали или големи количини.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "lt": {
       "aeo-optimization": "Atsakymų variklio optimizavimas, skirtas cituotinam, atsakymams paruoštam turiniui.",
@@ -3747,7 +4022,12 @@
       "flyers-posters": "Skrajučių ir plakatų dizainas bei spausdinimas nedideliais arba dideliais kiekiais.",
       "stickers-packaging": "Lipdukų dizainas ir spausdinimas – mažos partijos arba dideli tiražai.",
       "magazines-brochures": "Brošiūrų ir žurnalų dizainas bei spausdinimas nedideliais arba dideliais kiekiais.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "da": {
       "aeo-optimization": "Answer Engine Optimization for citerbart, svarklart indhold.",
@@ -3792,7 +4072,12 @@
       "flyers-posters": "Flyer- og plakatdesign plus tryk i små eller store mængder.",
       "stickers-packaging": "Klistermærkedesign og udskrivning — små partier eller store oplag.",
       "magazines-brochures": "Brochure- og magasindesign plus tryk i små eller store mængder.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "sv": {
       "aeo-optimization": "Answer Engine Optimization för citerbart, svarsfärdigt innehåll.",
@@ -3837,7 +4122,12 @@
       "flyers-posters": "Flyer och affischdesign plus tryck i små eller stora mängder.",
       "stickers-packaging": "Klistermärkesdesign och utskrift — små partier eller stora upplagor.",
       "magazines-brochures": "Broschyr- och tidningsdesign samt tryck i små eller stora mängder.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "no": {
       "aeo-optimization": "Answer Engine Optimization for siterbart, svarklart innhold.",
@@ -3882,7 +4172,12 @@
       "flyers-posters": "Flyer og plakatdesign pluss trykk i små eller store mengder.",
       "stickers-packaging": "Klistremerkedesign og utskrift – små partier eller store opplag.",
       "magazines-brochures": "Brosjyre- og magasindesign pluss trykk i små eller store opplag.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "fi": {
       "aeo-optimization": "Answer Engine Optimization lainattavalle, vastausvalmiille sisällölle.",
@@ -3927,7 +4222,12 @@
       "flyers-posters": "Esitteiden ja julisteiden suunnittelu sekä painatus pienissä tai suurissa määrissä.",
       "stickers-packaging": "Tarran suunnittelu ja painatus – pienet erät tai suuret erät.",
       "magazines-brochures": "Esite- ja aikakauslehtien suunnittelu sekä painatus pienissä tai suurissa määrissä.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "uk": {
       "aeo-optimization": "Оптимізація системи відповідей для цитування вмісту, готового до відповідей.",
@@ -3972,7 +4272,12 @@
       "flyers-posters": "Дизайн листівок і плакатів плюс друк малими або великими тиражами.",
       "stickers-packaging": "Дизайн та друк наклейок — малими партіями або великими тиражами.",
       "magazines-brochures": "Розробка дизайну брошур і журналів, а також друк малих і великих тиражів.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "ru": {
       "aeo-optimization": "Оптимизация механизма ответов для цитируемого контента, готового к ответам.",
@@ -4017,7 +4322,12 @@
       "flyers-posters": "Дизайн флаеров и плакатов, а также печать в небольших или больших тиражах.",
       "stickers-packaging": "Дизайн и печать наклеек — малыми партиями или большими тиражами.",
       "magazines-brochures": "Дизайн брошюр и журналов, а также печать небольшими или большими тиражами.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "tr": {
       "aeo-optimization": "Alıntı yapılabilir, yanıta hazır içerik için Yanıt Motoru Optimizasyonu.",
@@ -4062,7 +4372,12 @@
       "flyers-posters": "El ilanı ve poster tasarımı artı küçük veya büyük miktarlarda baskı.",
       "stickers-packaging": "Etiket tasarımı ve baskısı — küçük partiler veya büyük işler.",
       "magazines-brochures": "Broşür ve dergi tasarımı artı küçük veya büyük miktarlarda baskı.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "he": {
       "aeo-optimization": "אופטימיזציה למנועי תשובה עבור תוכן שניתן לצטט, מוכן לתשובה.",
@@ -4107,7 +4422,12 @@
       "flyers-posters": "עיצוב פליירים ופוסטרים בתוספת הדפסה בכמויות קטנות או גדולות.",
       "stickers-packaging": "עיצוב והדפסה של מדבקות - קבוצות קטנות או ריצות גדולות.",
       "magazines-brochures": "עיצוב חוברות ומגזינים בתוספת הדפסה בכמויות קטנות או גדולות.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "ar": {
       "aeo-optimization": "تحسين محرك الإجابة للحصول على محتوى جاهز للإجابة.",
@@ -4152,7 +4472,12 @@
       "flyers-posters": "تصميم النشرات والملصقات بالإضافة إلى الطباعة بكميات صغيرة أو كبيرة.",
       "stickers-packaging": "تصميم الملصقات وطباعتها – دفعات صغيرة أو كميات كبيرة.",
       "magazines-brochures": "تصميم الكتيبات والمجلات بالإضافة إلى الطباعة بكميات صغيرة أو كبيرة.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "ka": {
       "aeo-optimization": "უპასუხეთ ძრავის ოპტიმიზაციას ციტირებადი, პასუხებისთვის მზა შინაარსისთვის.",
@@ -4197,7 +4522,12 @@
       "flyers-posters": "ფლაერის და პლაკატის დიზაინი პლუს ბეჭდვა მცირე ან დიდი რაოდენობით.",
       "stickers-packaging": "სტიკერების დიზაინი და ბეჭდვა - მცირე პარტიები ან დიდი სერიები.",
       "magazines-brochures": "ბროშურის და ჟურნალის დიზაინი პლუს ბეჭდვა მცირე ან დიდი რაოდენობით.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "hy": {
       "aeo-optimization": "Պատասխանեք Շարժիչի օպտիմիզացմանը վկայակոչվող, պատասխանների համար պատրաստ բովանդակության համար:",
@@ -4242,7 +4572,12 @@
       "flyers-posters": "Թռուցիկների և պաստառների ձևավորում և տպագրություն փոքր կամ մեծ քանակությամբ:",
       "stickers-packaging": "Կպչուն պիտակների ձևավորում և տպագրություն — փոքր խմբաքանակներ կամ մեծ շարք:",
       "magazines-brochures": "Գրքույկների և ամսագրերի ձևավորում և տպագրություն փոքր կամ մեծ քանակությամբ:",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "az": {
       "aeo-optimization": "İstinad edilə bilən, cavab verməyə hazır məzmun üçün Cavab Mühərrikinin Optimizasiyası.",
@@ -4287,7 +4622,12 @@
       "flyers-posters": "Flyer və poster dizaynı və kiçik və ya böyük miqdarda çap.",
       "stickers-packaging": "Etiket dizaynı və çapı - kiçik partiyalar və ya böyük seriyalar.",
       "magazines-brochures": "Broşür və jurnal dizaynı və kiçik və ya böyük miqdarda çap.",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "zh": {
       "aeo-optimization": "答案引擎优化可引用、可答案的内容。",
@@ -4332,7 +4672,12 @@
       "flyers-posters": "传单和海报设计以及小批量或大批量印刷。",
       "stickers-packaging": "贴纸设计和印刷——小批量或大批量。",
       "magazines-brochures": "小册子和杂志设计以及小批量或大批量印刷。",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     },
     "ja": {
       "aeo-optimization": "引用可能な、すぐに回答できるコンテンツのための回答エンジンの最適化。",
@@ -4377,7 +4722,12 @@
       "flyers-posters": "フライヤーやポスターのデザインと、少量から大量までの印刷。",
       "stickers-packaging": "ステッカーのデザインと印刷 - 少量のバッチでも大量の印刷でも。",
       "magazines-brochures": "パンフレットや雑誌のデザインと、少量から大量までの印刷。",
-      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX."
+      "text-optimization": "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+      "ecommerce-seo": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "conversion-optimization": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "speed-optimization": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "analytics-optimization": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "accessibility-optimization": "WCAG-minded improvements so more people can use your site — and search engines understand it better."
     }
   },
   "labels": {

@@ -123,7 +123,12 @@
       "custom": "Gelenek",
       "wordpress": "WordPress",
       "maintenance": "Bakım",
-      "support": "Destek"
+      "support": "Destek",
+      "ecommerceSeo": "E-commerce SEO",
+      "conversion": "Conversion",
+      "speedOpt": "Core Web Vitals ve hız",
+      "analytics": "Analytics",
+      "accessibility": "Erişilebilirlik"
     },
     "inquiry": {
       "wp": {

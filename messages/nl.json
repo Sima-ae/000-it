@@ -124,7 +124,12 @@
       "custom": "Maatwerk",
       "wordpress": "WordPress",
       "maintenance": "Onderhoud",
-      "support": "Support"
+      "support": "Support",
+      "ecommerceSeo": "E-commerce SEO",
+      "conversion": "Conversie",
+      "speedOpt": "Core Web Vitals",
+      "analytics": "Analytics",
+      "accessibility": "Toegankelijkheid"
     },
     "inquiry": {
       "wp": {

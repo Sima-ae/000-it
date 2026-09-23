@@ -123,7 +123,12 @@
       "custom": "Vlastné",
       "wordpress": "WordPress",
       "maintenance": "Údržba",
-      "support": "Podpora"
+      "support": "Podpora",
+      "ecommerceSeo": "E-commerce SEO",
+      "conversion": "Conversion",
+      "speedOpt": "Core Web Vitals a rýchlosť",
+      "analytics": "Analytics",
+      "accessibility": "Prístupnosť"
     },
     "inquiry": {
       "wp": {

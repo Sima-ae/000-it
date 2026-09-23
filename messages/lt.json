@@ -123,7 +123,12 @@
       "custom": "Pasirinktinis",
       "wordpress": "WordPress",
       "maintenance": "Priežiūra",
-      "support": "Palaikymas"
+      "support": "Palaikymas",
+      "ecommerceSeo": "E-commerce SEO",
+      "conversion": "Conversion",
+      "speedOpt": "Core Web Vitals ir greitis",
+      "analytics": "Analytics",
+      "accessibility": "Prieinamumas"
     },
     "inquiry": {
       "wp": {

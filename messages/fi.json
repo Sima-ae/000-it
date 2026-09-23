@@ -123,7 +123,12 @@
       "custom": "Mukautettu",
       "wordpress": "WordPress",
       "maintenance": "Huolto",
-      "support": "Tukea"
+      "support": "Tukea",
+      "ecommerceSeo": "E-commerce SEO",
+      "conversion": "Conversion",
+      "speedOpt": "Core Web Vitals ja nopeus",
+      "analytics": "Analytics",
+      "accessibility": "Saavutettavuus"
     },
     "inquiry": {
       "wp": {

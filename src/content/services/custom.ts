@@ -5,6 +5,7 @@ import {
   aiInEcommerceService,
   aiInWebsiteService,
 } from "@/content/services/ai-in-webdesign";
+import optimizationI18nPack from "@/content/services/optimization-i18n-pack.json";
 
 type ContentBlock =
   | { type: "heading"; text: string }
@@ -1092,6 +1093,25 @@ export function getCustomServiceSource(slug: string) {
   };
 }
 
+const OPTIMIZATION_I18N_SLUGS = new Set([
+  "ecommerce-seo",
+  "conversion-optimization",
+  "speed-optimization",
+  "analytics-optimization",
+  "accessibility-optimization",
+]);
+
+function getOptimizationI18nPage(slug: string, locale: string) {
+  if (!OPTIMIZATION_I18N_SLUGS.has(slug) || locale === "en" || locale === "nl") {
+    return null;
+  }
+  const localePack = (optimizationI18nPack as Record<
+    string,
+    Record<string, { title: string; subtitle: string; blocks: ContentBlock[] }>
+  >)[locale];
+  return localePack?.[slug] ?? null;
+}
+
 export function getCustomServiceContent(slug: string, locale: string) {
   const entry = customServices[slug];
   if (!entry) return null;
@@ -1103,6 +1123,18 @@ export function getCustomServiceContent(slug: string, locale: string) {
       currency: entry.price != null ? "EUR" : null,
       image: entry.image ?? null,
       blocks: entry.blocksNl,
+      kind: "page" as const,
+    };
+  }
+  const packPage = getOptimizationI18nPage(slug, locale);
+  if (packPage) {
+    return {
+      title: packPage.title,
+      subtitle: packPage.subtitle,
+      price: entry.price ?? null,
+      currency: entry.price != null ? "EUR" : null,
+      image: entry.image ?? null,
+      blocks: packPage.blocks?.length ? packPage.blocks : entry.blocks,
       kind: "page" as const,
     };
   }

@@ -123,7 +123,12 @@
       "custom": "Прилагодено",
       "wordpress": "WordPress",
       "maintenance": "Одржување",
-      "support": "Поддршка"
+      "support": "Поддршка",
+      "ecommerceSeo": "E-commerce SEO",
+      "conversion": "Conversion",
+      "speedOpt": "Core Web Vitals и брзина",
+      "analytics": "Analytics",
+      "accessibility": "Пристапност"
     },
     "inquiry": {
       "wp": {

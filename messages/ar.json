@@ -123,7 +123,12 @@
       "custom": "مخصص",
       "wordpress": "ووردبريس",
       "maintenance": "صيانة",
-      "support": "يدعم"
+      "support": "يدعم",
+      "ecommerceSeo": "E-commerce SEO",
+      "conversion": "Conversion",
+      "speedOpt": "Core Web Vitals والسرعة",
+      "analytics": "Analytics",
+      "accessibility": "إمكانية الوصول"
     },
     "inquiry": {
       "wp": {

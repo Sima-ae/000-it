@@ -123,7 +123,12 @@
       "custom": "Szokás",
       "wordpress": "WordPress",
       "maintenance": "Karbantartás",
-      "support": "Támogatás"
+      "support": "Támogatás",
+      "ecommerceSeo": "E-commerce SEO",
+      "conversion": "Conversion",
+      "speedOpt": "Core Web Vitals és sebesség",
+      "analytics": "Analytics",
+      "accessibility": "Akadálymentesség"
     },
     "inquiry": {
       "wp": {

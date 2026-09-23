@@ -123,7 +123,12 @@
       "custom": "Εθιμο",
       "wordpress": "WordPress",
       "maintenance": "Συντήρηση",
-      "support": "Υποστήριξη"
+      "support": "Υποστήριξη",
+      "ecommerceSeo": "E-commerce SEO",
+      "conversion": "Conversion",
+      "speedOpt": "Core Web Vitals και ταχύτητα",
+      "analytics": "Analytics",
+      "accessibility": "Προσβασιμότητα"
     },
     "inquiry": {
       "wp": {

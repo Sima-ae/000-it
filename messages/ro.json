@@ -123,7 +123,12 @@
       "custom": "Personalizat",
       "wordpress": "WordPress",
       "maintenance": "Întreţinere",
-      "support": "Sprijin"
+      "support": "Sprijin",
+      "ecommerceSeo": "E-commerce SEO",
+      "conversion": "Conversion",
+      "speedOpt": "Core Web Vitals și viteză",
+      "analytics": "Analytics",
+      "accessibility": "Accesibilitate"
     },
     "inquiry": {
       "wp": {

@@ -123,7 +123,12 @@
       "custom": "风俗",
       "wordpress": "WordPress",
       "maintenance": "维护",
-      "support": "支持"
+      "support": "支持",
+      "ecommerceSeo": "E-commerce SEO",
+      "conversion": "Conversion",
+      "speedOpt": "Core Web Vitals 与速度",
+      "analytics": "Analytics",
+      "accessibility": "无障碍"
     },
     "inquiry": {
       "wp": {

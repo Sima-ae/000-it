@@ -123,7 +123,12 @@
       "custom": "Coutume",
       "wordpress": "WordPress",
       "maintenance": "Entretien",
-      "support": "Soutien"
+      "support": "Soutien",
+      "ecommerceSeo": "SEO e-commerce",
+      "conversion": "Conversion",
+      "speedOpt": "Core Web Vitals et vitesse",
+      "analytics": "Analytics",
+      "accessibility": "Accessibilité"
     },
     "inquiry": {
       "wp": {

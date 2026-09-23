@@ -123,7 +123,12 @@
       "custom": "Xüsusi",
       "wordpress": "WordPress",
       "maintenance": "Baxım",
-      "support": "Dəstək"
+      "support": "Dəstək",
+      "ecommerceSeo": "E-commerce SEO",
+      "conversion": "Conversion",
+      "speedOpt": "Core Web Vitals və sürət",
+      "analytics": "Analytics",
+      "accessibility": "Əlçatanlıq"
     },
     "inquiry": {
       "wp": {

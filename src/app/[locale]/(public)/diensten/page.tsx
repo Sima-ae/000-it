@@ -101,7 +101,12 @@ export default async function ServicesPage({
     { key: "aeo", id: "aeo-optimization" },
     { key: "geo", id: "geo-optimization" },
     { key: "seo", id: "seo-optimization" },
+    { key: "ecommerceSeo", id: "ecommerce-seo" },
     { key: "texts", id: "text-optimization" },
+    { key: "conversion", id: "conversion-optimization" },
+    { key: "speedOpt", id: "speed-optimization" },
+    { key: "analytics", id: "analytics-optimization" },
+    { key: "accessibility", id: "accessibility-optimization" },
   ] as const;
 
   const designJumpButtons = [

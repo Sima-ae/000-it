@@ -350,6 +350,346 @@ export const aiCustomServices: Record<string, CustomService> = {
     ],
   },
 
+  "ecommerce-seo": {
+    title: "E-commerce SEO",
+    titleNl: "E-commerce SEO",
+    subtitle:
+      "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+    subtitleNl:
+      "Product-, categorie- en technische SEO voor webshops — meer organisch verkeer en beter gekwalificeerde kopers.",
+    image: "/uploads/fixweb/seo-optimization.png",
+    blocks: [
+      h("SEO built for shops"),
+      p(
+        "Webshops need more than a few blog posts. We optimise product and category architecture, filters, indexation and commercial search intent so organic traffic turns into baskets — not bounce.",
+      ),
+      h("What we optimise"),
+      l([
+        "Category and product page templates (titles, descriptions, schema)",
+        "Faceted navigation, crawl budget and duplicate-content control",
+        "Internal linking between collections, products and guides",
+        "Technical hygiene: speed signals, mobile UX, XML sitemaps",
+        "Content for commercial queries: comparisons, FAQs and buying guides",
+        "International / multilingual setups when relevant",
+      ]),
+      h("Outcomes"),
+      l([
+        "Stronger rankings for money keywords and category terms",
+        "Cleaner indexation and less wasted crawl on thin or duplicate URLs",
+        "More qualified organic sessions that reach product and checkout",
+        "A repeatable SEO playbook as your catalogue grows",
+      ]),
+      h("Best paired with"),
+      p(
+        "SEO optimization, conversion optimization, Core Web Vitals & speed and AI in e-commerce — so visibility, experience and conversion reinforce each other.",
+      ),
+      h("How to start"),
+      p(
+        "Share your shop URL, CMS (WooCommerce, Shopify, custom) and top revenue categories. We propose an audit plus a fixed sprint or monthly e-commerce SEO retainer.",
+      ),
+    ],
+    blocksNl: [
+      h("SEO gebouwd voor webshops"),
+      p(
+        "Webshops hebben meer nodig dan een paar blogposts. Wij optimaliseren product- en categoriearchitectuur, filters, indexatie en commerciële zoekintentie zodat organisch verkeer in mandjes eindigt — niet in bounce.",
+      ),
+      h("Wat we optimaliseren"),
+      l([
+        "Categorie- en productpagina-templates (titels, beschrijvingen, schema)",
+        "Gefacetteerde navigatie, crawl budget en duplicate-content-controle",
+        "Interne linking tussen collecties, producten en gidsen",
+        "Technische hygiene: snelheidssignalen, mobile UX, XML-sitemaps",
+        "Content voor commerciële queries: vergelijkingen, FAQ’s en koopgidsen",
+        "Internationale / meertalige setups indien relevant",
+      ]),
+      h("Resultaten"),
+      l([
+        "Sterkere rankings op money-keywords en categorietermen",
+        "Schonere indexatie en minder verspilde crawl op dunne of dubbele URL’s",
+        "Meer gekwalificeerde organische sessies die product en checkout bereiken",
+        "Een herhaalbaar SEO-playbook terwijl jouw catalogus groeit",
+      ]),
+      h("Sterk in combinatie met"),
+      p(
+        "SEO-optimalisatie, conversie-optimalisatie, Core Web Vitals en snelheid en AI in e-commerce — zodat vindbaarheid, ervaring en conversie elkaar versterken.",
+      ),
+      h("Aan de slag"),
+      p(
+        "Deel jouw shop-URL, CMS (WooCommerce, Shopify, maatwerk) en top-omzetcategorieën. Wij stellen een audit plus een vaste sprint of maandelijkse e-commerce SEO-retainer voor.",
+      ),
+    ],
+  },
+
+  "conversion-optimization": {
+    title: "Conversion Optimization",
+    titleNl: "Conversie-optimalisatie",
+    subtitle:
+      "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+    subtitleNl:
+      "CRO voor landings, funnels en CTA’s — meer aanvragen en verkopen uit het verkeer dat je al hebt.",
+    image: "/uploads/fixweb/digital-marketing.png",
+    blocks: [
+      h("Why CRO matters"),
+      p(
+        "More traffic without conversion is expensive noise. We improve the journeys that turn visits into leads and sales — messaging, layout, friction and proof — with tests you can measure.",
+      ),
+      h("What we improve"),
+      l([
+        "Landing pages, service pages and checkout / form flows",
+        "Headlines, CTAs, trust signals and offer clarity",
+        "Mobile UX friction and form length",
+        "A/B and multivariate tests with clear hypotheses",
+        "Heatmaps, session insights and funnel drop-off analysis",
+        "Post-click alignment between ads and landing experience",
+      ]),
+      h("How we work"),
+      p(
+        "Baseline → hypotheses → design/copy variants → test → learn → roll out winners. You get a prioritised backlog, not random tweaks.",
+      ),
+      h("Deliverables"),
+      l([
+        "Conversion audit with quick wins and deeper experiments",
+        "Wireframe or copy variants for priority pages",
+        "Test plan with success metrics",
+        "Implementation support on your CMS or front-end",
+        "Report with results and next experiments",
+      ]),
+      h("Best paired with"),
+      p(
+        "Text optimization, analytics and measurement, Core Web Vitals & speed and digital marketing — so acquisition, experience and proof work as one system.",
+      ),
+    ],
+    blocksNl: [
+      h("Waarom CRO telt"),
+      p(
+        "Meer traffic zonder conversie is dure ruis. Wij verbeteren de journeys die bezoeken omzetten in leads en verkopen — boodschap, layout, frictie en bewijs — met tests die je kunt meten.",
+      ),
+      h("Wat we verbeteren"),
+      l([
+        "Landings-, dienstpagina’s en checkout- / form-flows",
+        "Koppen, CTA’s, trust-signalen en aanbodduidelijkheid",
+        "Mobile UX-frictie en formuliervragen",
+        "A/B- en multivariate tests met heldere hypothesen",
+        "Heatmaps, sessie-inzichten en funnel drop-off-analyse",
+        "Post-click-afstemming tussen ads en landingservaring",
+      ]),
+      h("Werkwijze"),
+      p(
+        "Baseline → hypothesen → design-/copyvarianten → test → leren → winnaars uitrollen. Je krijgt een geprioriteerde backlog, geen willekeurige tweaks.",
+      ),
+      h("Opleveringen"),
+      l([
+        "Conversie-audit met quick wins en diepere experimenten",
+        "Wireframe- of copyvarianten voor prioriteitspagina’s",
+        "Testplan met succesmetrics",
+        "Implementatie-ondersteuning op jouw CMS of front-end",
+        "Rapport met resultaten en volgende experimenten",
+      ]),
+      h("Sterk in combinatie met"),
+      p(
+        "Teksten optimaliseren, analytics en meting, Core Web Vitals en snelheid en digital marketing — zodat acquisitie, ervaring en bewijs als één systeem werken.",
+      ),
+    ],
+  },
+
+  "speed-optimization": {
+    title: "Core Web Vitals & speed",
+    titleNl: "Core Web Vitals en snelheid",
+    subtitle:
+      "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+    subtitleNl:
+      "Snellere pagina’s en sterkere Core Web Vitals — betere UX, rankings en conversie op elke stack.",
+    image: "/uploads/fixweb/website-speed-optimization.png",
+    blocks: [
+      h("Performance as a growth lever"),
+      p(
+        "Slow pages hurt rankings, bounce rates and trust. We improve load times and Core Web Vitals with a stack-agnostic approach — then route to WordPress- or custom-specific work when needed.",
+      ),
+      h("What we optimise"),
+      l([
+        "LCP, INP and CLS baselines and targets",
+        "Images, fonts, scripts and third-party weight",
+        "Caching, CDN and server response time",
+        "Critical rendering path and above-the-fold priorities",
+        "Hosting and application bottlenecks",
+        "Before/after measurement on the pages that matter",
+      ]),
+      h("WordPress or custom?"),
+      p(
+        "This page is the starting point for performance as an optimization service. For deep WordPress tune-ups we can continue with WordPress speed optimization; for PHP/Next.js stacks we use website performance & speed.",
+      ),
+      h("Deliverables"),
+      l([
+        "Performance audit with prioritised actions",
+        "Implemented quick wins and structural fixes",
+        "Before/after Core Web Vitals evidence",
+        "Guidance to keep speed stable as content grows",
+      ]),
+      h("How to start"),
+      p(
+        "Share your URLs, stack and current hosting. We baseline the key journeys and propose a focused speed sprint.",
+      ),
+    ],
+    blocksNl: [
+      h("Performance als groeifactor"),
+      p(
+        "Trage pagina’s schaden rankings, bounce en vertrouwen. Wij verbeteren laadtijden en Core Web Vitals stack-agnostisch — en sturen door naar WordPress- of maatwerkspecifiek werk wanneer nodig.",
+      ),
+      h("Wat we optimaliseren"),
+      l([
+        "LCP-, INP- en CLS-baselines en doelen",
+        "Images, fonts, scripts en third-party gewicht",
+        "Caching, CDN en serverresponstijd",
+        "Critical rendering path en above-the-fold prioriteiten",
+        "Hosting- en applicatieknelpunten",
+        "Voor/na-meting op de pagina’s die ertoe doen",
+      ]),
+      h("WordPress of maatwerk?"),
+      p(
+        "Deze pagina is het startpunt voor performance als optimalisatiedienst. Voor diepe WordPress-tune-ups gaan we verder met WordPress-snelheidsoptimalisatie; voor PHP/Next.js-stacks met prestaties en snelheid voor maatwerksites.",
+      ),
+      h("Opleveringen"),
+      l([
+        "Performance-audit met geprioriteerde acties",
+        "Geïmplementeerde quick wins en structurele fixes",
+        "Voor/na-bewijs van Core Web Vitals",
+        "Advies om snelheid stabiel te houden terwijl content groeit",
+      ]),
+      h("Aan de slag"),
+      p(
+        "Deel jouw URL’s, stack en huidige hosting. Wij baselinen de kernjourneys en stellen een gerichte snelheidssprint voor.",
+      ),
+    ],
+  },
+
+  "analytics-optimization": {
+    title: "Analytics and measurement",
+    titleNl: "Analytics en meting",
+    subtitle:
+      "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+    subtitleNl:
+      "GA4, Search Console en heldere rapportage zodat je weet wat leads en omzet aandrijft.",
+    image: "/uploads/fixweb/seo-optimization.png",
+    blocks: [
+      h("Measurement you can act on"),
+      p(
+        "Without clean data, SEO, ads and CRO are guesswork. We set up and refine analytics so you see which channels, pages and campaigns create real business outcomes.",
+      ),
+      h("What we set up and improve"),
+      l([
+        "GA4 property structure, events and conversions",
+        "Google Search Console coverage and query insights",
+        "Tag hygiene (GTM) and consent-aware tracking",
+        "Dashboards for traffic, leads, revenue and content",
+        "Attribution that matches how your sales cycle works",
+        "Alerts for tracking breakage and sudden drops",
+      ]),
+      h("Deliverables"),
+      l([
+        "Tracking audit and fix plan",
+        "Configured events / conversions for priority goals",
+        "A practical dashboard your team will actually use",
+        "Documentation for marketing and developers",
+        "Optional monthly readout with next actions",
+      ]),
+      h("Best paired with"),
+      p(
+        "SEO, conversion optimization and digital marketing — so every euro in acquisition is measured against outcomes, not vanity metrics.",
+      ),
+    ],
+    blocksNl: [
+      h("Meting waarop je kunt sturen"),
+      p(
+        "Zonder schone data zijn SEO, ads en CRO giswerk. Wij richten analytics in en verfijnen die zodat je ziet welke kanalen, pagina’s en campagnes echte businessresultaten opleveren.",
+      ),
+      h("Wat we inrichten en verbeteren"),
+      l([
+        "GA4-propertystructuur, events en conversies",
+        "Google Search Console-dekking en query-inzichten",
+        "Tag-hygiëne (GTM) en consent-bewuste tracking",
+        "Dashboards voor traffic, leads, omzet en content",
+        "Attributie die past bij jouw salescyclus",
+        "Alerts bij trackingfouten en plotselinge dips",
+      ]),
+      h("Opleveringen"),
+      l([
+        "Tracking-audit en herstelplan",
+        "Geconfigureerde events / conversies voor prioriteitsdoelen",
+        "Een praktisch dashboard dat jouw team echt gebruikt",
+        "Documentatie voor marketing en developers",
+        "Optionele maandelijkse readout met vervolgacties",
+      ]),
+      h("Sterk in combinatie met"),
+      p(
+        "SEO, conversie-optimalisatie en digital marketing — zodat elke euro in acquisitie wordt gemeten aan uitkomsten, niet aan vanity metrics.",
+      ),
+    ],
+  },
+
+  "accessibility-optimization": {
+    title: "Accessibility",
+    titleNl: "Toegankelijkheid",
+    subtitle:
+      "WCAG-minded improvements so more people can use your site — and search engines understand it better.",
+    subtitleNl:
+      "WCAG-gerichte verbeteringen zodat meer mensen jouw site kunnen gebruiken — en zoekmachines hem beter begrijpen.",
+    image: "/uploads/fixweb/custom-webdesign.png",
+    blocks: [
+      h("Access is good for people and for business"),
+      p(
+        "Accessible sites reach more customers, reduce legal risk and often improve SEO and UX at the same time. We harden the foundations: structure, contrast, keyboard use and assistive technology support.",
+      ),
+      h("What we improve"),
+      l([
+        "Semantic HTML, headings and landmark structure",
+        "Keyboard navigation and focus states",
+        "Colour contrast and readable typography",
+        "Alt text, forms, errors and ARIA where needed",
+        "Media alternatives and skip links",
+        "Automated + manual checks against WCAG 2.2 AA targets",
+      ]),
+      h("Deliverables"),
+      l([
+        "Accessibility audit with severity and effort",
+        "Prioritised fix backlog for design and development",
+        "Implementation support or review of your team’s PRs",
+        "Retest evidence after remediations",
+        "Practical guidelines so new pages stay accessible",
+      ]),
+      h("How to start"),
+      p(
+        "Share your key templates (home, service, product, form). We audit those first and propose a remediation sprint aligned with your release calendar.",
+      ),
+    ],
+    blocksNl: [
+      h("Toegang is goed voor mensen én business"),
+      p(
+        "Toegankelijke sites bereiken meer klanten, verlagen juridisch risico en verbeteren vaak tegelijk SEO en UX. Wij versterken de basis: structuur, contrast, toetsenbordgebruik en ondersteuning voor hulptechnologie.",
+      ),
+      h("Wat we verbeteren"),
+      l([
+        "Semantische HTML, headings en landmark-structuur",
+        "Toetsenbordnavigatie en focusstates",
+        "Kleurcontrast en leesbare typografie",
+        "Alt-teksten, formulieren, foutmeldingen en ARIA waar nodig",
+        "Media-alternatieven en skiplinks",
+        "Geautomatiseerde + handmatige checks tegen WCAG 2.2 AA-doelen",
+      ]),
+      h("Opleveringen"),
+      l([
+        "Toegankelijkheidsaudit met ernst en effort",
+        "Geprioriteerde fix-backlog voor design en development",
+        "Implementatie-ondersteuning of review van PR’s van jouw team",
+        "Hertest-bewijs na remediaties",
+        "Praktische richtlijnen zodat nieuwe pagina’s toegankelijk blijven",
+      ]),
+      h("Aan de slag"),
+      p(
+        "Deel jouw kern-templates (home, dienst, product, formulier). Wij auditen die eerst en stellen een remediatiesprint voor die past bij jouw releasekalender.",
+      ),
+    ],
+  },
+
   "ai-content-strategy": {
     title: "AI Content Strategy",
     titleNl: "AI contentstrategie",
