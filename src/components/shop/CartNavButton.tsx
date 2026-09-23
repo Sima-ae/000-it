@@ -1,6 +1,6 @@
 "use client";
 
-import { ShoppingCart } from "lucide-react";
+import { ShoppingCart, Trash2 } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -163,9 +163,11 @@ export function CartNavButton({ className }: { className?: string }) {
                           <button
                             type="button"
                             onClick={() => removeItem(line.product.id)}
-                            className="text-sm text-muted-foreground underline-offset-2 hover:underline"
+                            aria-label={t("remove")}
+                            title={t("remove")}
+                            className="inline-flex h-8 w-8 items-center justify-center rounded-lg text-red-600 transition hover:bg-red-600/10 hover:text-red-700"
                           >
-                            {t("remove")}
+                            <Trash2 className="h-4 w-4" aria-hidden />
                           </button>
                         </div>
                       </li>

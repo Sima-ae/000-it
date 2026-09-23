@@ -16,7 +16,9 @@ export default async function ShopPage({
   const pricing = await getTranslations("pricing");
   const catalog = await loadShopCatalogFromDb();
   const services = catalog.filter(
-    (p) => p.type === "service" || p.type === "product",
+    (p) =>
+      (p.type === "service" || p.type === "product") &&
+      !p.slug.endsWith("-support-yearly"),
   );
 
   const plans = [

@@ -775,5 +775,67 @@
     "relatedLinks": "Helpful links",
     "linkFaq": "FAQ",
     "linkKb": "Knowledge base"
+  },
+  "wordpressSupport": {
+    "saveYearlyHint": "Sparen Sie bis zu 20% bei jährlichem Monitoring & Support!",
+    "savePercent": "Sparen Sie {percent}%",
+    "orderNow": "Jetzt bestellen",
+    "noCreditCard": "Keine Kreditkarte erforderlich",
+    "packages": {
+      "basic": {
+        "name": "Basic",
+        "tagline": "All-in-One Support-Paket"
+      },
+      "standard": {
+        "name": "Standard",
+        "tagline": "All-in-One Support-Paket"
+      },
+      "premium": {
+        "name": "Premium",
+        "tagline": "All-in-One Support-Paket"
+      }
+    },
+    "features": {
+      "sites": {
+        "basic": "1 Website",
+        "standard": "2 Websites",
+        "premium": "3-5 Websites"
+      },
+      "monitoring": {
+        "basic": "24/7 Monitoring & Support",
+        "standard": "24/7 Monitoring & Support",
+        "premium": "24/7 Monitoring & Support"
+      },
+      "backups": {
+        "basic": "Tägliche Backups",
+        "standard": "Tägliche Backups",
+        "premium": "Tägliche Backups"
+      },
+      "updates": {
+        "basic": "WordPress- & Plugin-Updates",
+        "standard": "WordPress- & Plugin-Updates",
+        "premium": "WordPress- & Plugin-Updates"
+      },
+      "errors": {
+        "basic": "Website-Fehler beheben",
+        "standard": "Website-Fehler beheben",
+        "premium": "Website-Fehler beheben"
+      },
+      "malware": {
+        "basic": "Malware-Entfernung & Sicherheit",
+        "standard": "Malware-Entfernung & Sicherheit",
+        "premium": "Malware-Entfernung & Sicherheit"
+      },
+      "speed": {
+        "basic": "Geschwindigkeitsoptimierung",
+        "standard": "Geschwindigkeitsoptimierung",
+        "premium": "Geschwindigkeitsoptimierung"
+      },
+      "seo": {
+        "basic": "SEO-Optimierung",
+        "standard": "SEO-Optimierung",
+        "premium": "SEO-Optimierung"
+      }
+    }
   }
 }

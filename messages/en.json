@@ -775,5 +775,67 @@
     "back": "Back to news",
     "viewSource": "View original source",
     "subtitle": "Stay up to date with all developments."
+  },
+  "wordpressSupport": {
+    "saveYearlyHint": "Save up to 20% for yearly monitoring & support!",
+    "savePercent": "Save {percent}%",
+    "orderNow": "Order Now",
+    "noCreditCard": "No credit card required",
+    "packages": {
+      "basic": {
+        "name": "Basic",
+        "tagline": "All-in-One Support Package"
+      },
+      "standard": {
+        "name": "Standard",
+        "tagline": "All-in-One Support Package"
+      },
+      "premium": {
+        "name": "Premium",
+        "tagline": "All-in-One Support Package"
+      }
+    },
+    "features": {
+      "sites": {
+        "basic": "1 website",
+        "standard": "2 websites",
+        "premium": "3-5 websites"
+      },
+      "monitoring": {
+        "basic": "24/7 monitoring & support",
+        "standard": "24/7 monitoring & support",
+        "premium": "24/7 monitoring & support"
+      },
+      "backups": {
+        "basic": "Daily backups",
+        "standard": "Daily backups",
+        "premium": "Daily backups"
+      },
+      "updates": {
+        "basic": "WordPress & plugin updates",
+        "standard": "WordPress & plugin updates",
+        "premium": "WordPress & plugin updates"
+      },
+      "errors": {
+        "basic": "Fix website errors",
+        "standard": "Fix website errors",
+        "premium": "Fix website errors"
+      },
+      "malware": {
+        "basic": "Malware removal & security",
+        "standard": "Malware removal & security",
+        "premium": "Malware removal & security"
+      },
+      "speed": {
+        "basic": "Speed optimization",
+        "standard": "Speed optimization",
+        "premium": "Speed optimization"
+      },
+      "seo": {
+        "basic": "SEO optimization",
+        "standard": "SEO optimization",
+        "premium": "SEO optimization"
+      }
+    }
   }
 }

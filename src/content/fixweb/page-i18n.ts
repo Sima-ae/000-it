@@ -29,27 +29,61 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
       subtitle:
         "Professionele monitoring, updates, backups en technische zorg voor jouw WordPress-websites — met vaste pakketten die passen bij één of meerdere sites.",
       blocks: [
-        h("Waarom WordPress Support?"),
+        h("Zorg dat jouw WordPress-website soepel blijft draaien"),
         p(
-          "Een WordPress-site vraagt continue aandacht: updates, beveiliging, backups en snelle hulp bij fouten. TripleZero iT neemt die zorg over, zodat je kunt richten op content en groei.",
+          "Zorg dat jouw WordPress-website soepel blijft draaien met onze dedicated WordPress Support-diensten. Ons team van ervaren specialisten helpt je bij technische uitdagingen, updates en optimalisaties. Of je nu hulp nodig hebt bij foutoplossing, pluginconfiguratie of betere siteprestaties — wij staan voor je klaar.",
         ),
-        h("Wat zit er in onze supportpakketten?"),
+        h("Uitgebreide troubleshooting en foutoplossing"),
+        p(
+          "Een van de meest frustrerende onderdelen van WordPress-beheer is onverwachte fouten of technische problemen. Ons supportteam blinkt uit in het diagnosticeren en oplossen van een breed scala aan issues: van PHP-fouten en databaseproblemen tot theme-conflicten en plugin-incompatibiliteit. Elke minuut dat jouw site offline is of niet goed werkt, kan jouw bedrijf raken. Wij geven prioriteit aan snelle, effectieve oplossingen zodat de verstoring minimaal blijft en bezoekers een naadloze ervaring houden.",
+        ),
+        h("Expert pluginconfiguratie en maatwerk"),
+        p(
+          "Plugins vormen de ruggengraat van WordPress-functionaliteit. Ze goed configureren — vooral wanneer meerdere plugins samen moeten werken — is vaak complex. Ons team richt plugins in en past ze aan op jouw eisen, of het nu WooCommerce, Yoast SEO of andere tools betreft. Zo werkt alles harmonieus samen zonder conflicten, met maximale prestaties en gebruiksgemak.",
+        ),
+        h("Betere siteprestaties en snelheid"),
+        p(
+          "Een snelle website is cruciaal voor gebruikerservaring én SEO. Trage laadtijden frustreren bezoekers en verhogen bounce rates. Onze WordPress-support omvat grondige performance-optimalisatie: we sporen bottlenecks op (ongeoptimaliseerde beelden, inefficiënte code, te veel plugins) en passen bewezen technieken toe zoals caching, image-optimalisatie en code-minificatie. Een snellere site houdt bezoekers tevreden en ondersteunt betere zoekresultaten.",
+        ),
+        h("SEO-optimalisatie"),
+        p(
+          "SEO is essentieel voor zichtbaarheid en organisch verkeer. Onze specialisten helpen jouw WordPress-site hoger te ranken via zoekwoordonderzoek, geoptimaliseerde meta tags, een betere sitestructuur en SEO-vriendelijke content. We geven ook richtlijnen voor doorlopende SEO, zodat je concurrentieel blijft en waardevol organisch verkeer blijft aantrekken.",
+        ),
+        h("Beveiliging en onderhoud"),
+        p(
+          "WordPress-beveiliging is cruciaal. Met constante dreiging van hacks en malware zijn regelmatige controles en updates noodzakelijk. Wij bieden stevige maatregelen: malware-scans, firewall-setup en security-updates. Daarnaast houden we WordPress-core, themes en plugins actueel om risico’s en compatibiliteitsproblemen te verkleinen — zodat jij met een gerust hart kunt groeien.",
+        ),
+        h("Regelmatige backups en disaster recovery"),
+        p(
+          "Dataverlies kan desastreus zijn. Daarom maken wij regelmatig backups zodat bestanden, instellingen en klantgegevens veilig zijn en snel hersteld kunnen worden. Onze disaster-recoveryaanpak minimaliseert downtime en dataverlies, met een stevig vangnet voor jouw online business.",
+        ),
+        h("Op maat gemaakte supportpakketten"),
+        p(
+          "Iedere organisatie heeft andere behoeften. Daarom bieden we flexibele supportpakketten: van Basic voor één website tot Premium voor meerdere sites. Zo kies je het niveau dat past bij jouw doelen en budget — zonder onnodige kosten.",
+        ),
+        h("Focus op de groei van jouw bedrijf"),
+        p(
+          "Met TripleZero iT WordPress Support krijg je tijd en ruimte terug voor content, klanten en groei. Wij nemen het technische beheer over, zodat jouw site veilig, snel en stabiel blijft terwijl jij je online doelen nastreeft.",
+        ),
+        h("Toegewijde klantensupport"),
+        p(
+          "Wij staan klaar met persoonlijk advies en snelle hulp — van eenvoudige vragen tot complexe issues. Je hebt altijd een deskundige partner die meedenkt, precies wanneer je dat nodig hebt.",
+        ),
+        h("Veelgestelde vragen"),
         l([
-          "24/7 monitoring en snelle respons bij problemen",
-          "Dagelijkse backups van bestanden en database",
-          "WordPress-core- en plugin-updates met controles",
-          "Websitefouten herstellen",
-          "Malwareverwijdering en beveiligingsmaatregelen",
-          "Snelheids- en SEO-optimalisatie (afhankelijk van pakket)",
+          "Hoe start ik met TripleZero iT? Neem contact op via de website voor een consult. We bekijken jouw behoeften en stellen een passend plan op.",
+          "Welke bugs en fouten kunnen jullie oplossen? Onder meer kapotte links, formulierfouten, weergaveproblemen en functionaliteitsstoringen.",
+          "Hoe vinden jullie problemen op mijn website? Via audits op performance, security en gebruikerservaring, met duidelijke prioriteiten.",
+          "Hoe verbeteren jullie de beveiliging? Onder meer SSL, firewalls, malware-scans, updates en veilige configuraties.",
+          "Hoe verbeteren jullie de snelheid? Caching, code-minificatie, image-optimalisatie en snellere serverrespons.",
+          "Wat levert SEO op? Betere rankings, meer organisch verkeer en zichtbaarheid via content, meta tags, zoekwoorden en structuur.",
+          "Hoe snel zie ik verbeteringen? Dat hangt af van complexiteit: sommige resultaten zijn direct, andere vragen enkele weken.",
+          "Is er downtime tijdens werkzaamheden? We minimaliseren verstoring en plannen noodzakelijke downtime buiten piekuren.",
+          "Voor welke websites is dit geschikt? Voor blogs, portfolio’s, business sites en e-commerce op WordPress.",
+          "Bieden jullie doorlopend onderhoud? Ja — updates, backups, security monitoring en performance-optimalisatie.",
+          "Probleem met mijn account? Neem contact op via de contactpagina; we helpen je snel verder.",
+          "Kan ik op elk moment opzeggen? Ja. Neem contact op met support om de opzegging te regelen.",
         ]),
-        h("Kies het pakket dat bij je past"),
-        p(
-          "Basic is ideaal voor één website. Standard dekt twee sites met extra performancezorg. Premium ondersteunt meerdere websites inclusief SEO-aandacht. Jaarabonnementen bieden vaak een aantrekkelijke besparing.",
-        ),
-        h("Zo werken wij"),
-        p(
-          "Wij starten met een korte intake, zetten monitoring en backups klaar en werken volgens een vaste cadans. Je weet altijd wat er is gedaan en wanneer er actie nodig is.",
-        ),
       ],
     },
     en: {
@@ -57,27 +91,61 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
       subtitle:
         "Professional monitoring, updates, backups and technical care for your WordPress websites — with fixed packages for one or multiple sites.",
       blocks: [
-        h("Why WordPress Support?"),
+        h("Keep your WordPress website running smoothly"),
         p(
-          "WordPress needs ongoing attention: updates, security, backups and fast help when something breaks. TripleZero iT takes that care off your plate so you can focus on content and growth.",
+          "Ensure your WordPress website runs smoothly with our dedicated WordPress Support services. Our team of experienced professionals is here to help you with any technical challenges, updates, and optimizations. Whether you need assistance with troubleshooting errors, configuring plugins, or enhancing site performance, we’ve got you covered.",
         ),
-        h("What’s included"),
+        h("Comprehensive Troubleshooting and Error Resolution"),
+        p(
+          "One of the most frustrating aspects of managing a WordPress site is dealing with unexpected errors or technical issues. Our support team excels at diagnosing and resolving a wide range of problems, from PHP errors and database issues to theme conflicts and plugin incompatibilities. Every minute your site is down or malfunctioning can impact your business. We prioritize quick and effective solutions to get you back on track swiftly, ensuring minimal disruption to your online presence.",
+        ),
+        h("Expert Plugin Configuration and Customization"),
+        p(
+          "Plugins are the backbone of WordPress functionality, allowing you to extend the capabilities of your website without extensive coding. However, configuring these plugins correctly can be challenging, especially when you have multiple plugins that need to work together seamlessly. Our team excels in setting up and customizing plugins to meet your specific requirements — from WooCommerce to Yoast and beyond — without conflicts.",
+        ),
+        h("Enhancing Site Performance and Speed"),
+        p(
+          "A fast-loading website is crucial for user experience and SEO rankings. Slow loading times can frustrate visitors and lead to higher bounce rates. Our WordPress support services include comprehensive performance optimization: we identify bottlenecks and apply caching, image optimization and code minification so your site performs optimally.",
+        ),
+        h("SEO Optimization"),
+        p(
+          "Search Engine Optimization (SEO) is essential for improving your site’s visibility and attracting organic traffic. Our SEO experts help optimize your WordPress site with keyword research, meta tags, site structure and SEO-friendly content — plus guidance for ongoing SEO efforts.",
+        ),
+        h("Security and Maintenance"),
+        p(
+          "Keeping your WordPress site secure is of paramount importance. Our team provides robust security measures, including malware scanning, firewall setup and regular security updates. We also keep WordPress core, themes and plugins up to date to reduce the risk of breaches and compatibility issues.",
+        ),
+        h("Regular Backups and Disaster Recovery"),
+        p(
+          "Data loss can be catastrophic for any business. We provide regular backup services so your website’s data is securely stored and can be restored quickly. Our disaster recovery approach is designed to minimize downtime and data loss.",
+        ),
+        h("Tailored Support Packages"),
+        p(
+          "Different businesses have different needs. That’s why we offer support packages tailored to various requirements and budgets — from Basic for a single site to Premium for multiple websites — so you get the right level of service without unnecessary costs.",
+        ),
+        h("Focus on Your Business Growth"),
+        p(
+          "By choosing our WordPress support services, you free up valuable time and resources for content, customers and growth. We take care of the technical work so your website stays secure, fast and reliable.",
+        ),
+        h("Dedicated Customer Support"),
+        p(
+          "Our team is available to answer questions, provide advice and assist whenever you need it — from simple questions to complex issues — with personalized support tailored to your needs.",
+        ),
+        h("Frequently Asked Questions"),
         l([
-          "24/7 monitoring and fast response when issues appear",
-          "Daily backups of files and database",
-          "WordPress core and plugin updates with checks",
-          "Fix website errors",
-          "Malware removal and security measures",
-          "Speed and SEO optimization (depending on package)",
+          "How do I get started with TripleZero iT? Contact us through our website to schedule a consultation. We’ll assess your needs and provide a customized plan.",
+          "What types of bugs and errors can be fixed? Broken links, form errors, display problems, functionality glitches and more.",
+          "How do you identify issues on my website? Through comprehensive audits covering performance, security and user experience.",
+          "How do we enhance website security? SSL, firewalls, malware scanning, regular updates and secure configuration practices.",
+          "How can you improve my website’s speed? Caching, code minification, image optimization and improved server response times.",
+          "What are the benefits of your SEO services? Better rankings, more organic traffic and improved visibility.",
+          "How long does it take to see improvements? Some changes are immediate; others may take a few weeks depending on complexity.",
+          "Will my website experience downtime during the fixes? We minimize disruption and schedule necessary downtime off-peak.",
+          "Are your services suitable for all types of websites? Yes — blogs, portfolios, business sites and e-commerce on WordPress.",
+          "Can you help with ongoing maintenance? Yes — updates, backups, security monitoring and performance optimization.",
+          "I have an issue with my account, what can I do? Contact our support team via the contact page.",
+          "Can I cancel at anytime? Yes. Contact support to assist with the cancellation process.",
         ]),
-        h("Choose the right package"),
-        p(
-          "Basic suits a single website. Standard covers two sites with extra performance care. Premium supports multiple websites including SEO attention. Yearly plans often offer attractive savings.",
-        ),
-        h("How we work"),
-        p(
-          "We start with a short intake, set up monitoring and backups, and follow a clear cadence. You always know what was done and when action is needed.",
-        ),
       ],
     },
   },

@@ -2,7 +2,12 @@
 
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import { planProductId, type ShopBillingPeriod } from "@/lib/shop/catalog";
+import {
+  planProductId,
+  supportProductId,
+  type ShopBillingPeriod,
+  type SupportPackageKey,
+} from "@/lib/shop/catalog";
 
 export type CartLine = {
   productId: string;
@@ -15,6 +20,12 @@ type CartState = {
   /** Add a plan SKU and remove the other billing period for the same plan. */
   addPlan: (
     planKey: "starter" | "growth",
+    period: ShopBillingPeriod,
+    quantity?: number,
+  ) => void;
+  /** Add a WordPress support package and swap billing period if needed. */
+  addSupportPackage: (
+    key: SupportPackageKey,
     period: ShopBillingPeriod,
     quantity?: number,
   ) => void;
@@ -46,8 +57,31 @@ export const useCartStore = create<CartState>()(
       },
       addPlan: (planKey, period, quantity = 1) => {
         const productId = planProductId(planKey, period);
-        const otherPeriod: ShopBillingPeriod = period === "yearly" ? "monthly" : "yearly";
+        const otherPeriod: ShopBillingPeriod =
+          period === "yearly" ? "monthly" : "yearly";
         const otherId = planProductId(planKey, otherPeriod);
+        const qty = Math.max(1, Math.floor(quantity));
+
+        set((state) => {
+          const withoutOther = state.items.filter((i) => i.productId !== otherId);
+          const existing = withoutOther.find((i) => i.productId === productId);
+          if (existing) {
+            return {
+              items: withoutOther.map((i) =>
+                i.productId === productId
+                  ? { ...i, quantity: Math.min(99, i.quantity + qty) }
+                  : i,
+              ),
+            };
+          }
+          return { items: [...withoutOther, { productId, quantity: qty }] };
+        });
+      },
+      addSupportPackage: (key, period, quantity = 1) => {
+        const productId = supportProductId(key, period);
+        const otherPeriod: ShopBillingPeriod =
+          period === "yearly" ? "monthly" : "yearly";
+        const otherId = supportProductId(key, otherPeriod);
         const qty = Math.max(1, Math.floor(quantity));
 
         set((state) => {

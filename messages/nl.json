@@ -775,5 +775,67 @@
     "back": "Terug naar nieuws",
     "viewSource": "Bekijk originele bron",
     "subtitle": "Blijf op de hoogte van alle ontwikkelingen."
+  },
+  "wordpressSupport": {
+    "saveYearlyHint": "Bespaar tot 20% bij jaarlijkse monitoring & support!",
+    "savePercent": "Bespaar {percent}%",
+    "orderNow": "Bestel nu",
+    "noCreditCard": "Geen creditcard vereist",
+    "packages": {
+      "basic": {
+        "name": "Basic",
+        "tagline": "All-in-One Support Pakket"
+      },
+      "standard": {
+        "name": "Standard",
+        "tagline": "All-in-One Support Pakket"
+      },
+      "premium": {
+        "name": "Premium",
+        "tagline": "All-in-One Support Pakket"
+      }
+    },
+    "features": {
+      "sites": {
+        "basic": "1 website",
+        "standard": "2 websites",
+        "premium": "3-5 websites"
+      },
+      "monitoring": {
+        "basic": "24/7 monitoring & support",
+        "standard": "24/7 monitoring & support",
+        "premium": "24/7 monitoring & support"
+      },
+      "backups": {
+        "basic": "Dagelijkse backups",
+        "standard": "Dagelijkse backups",
+        "premium": "Dagelijkse backups"
+      },
+      "updates": {
+        "basic": "WordPress & plugin updates",
+        "standard": "WordPress & plugin updates",
+        "premium": "WordPress & plugin updates"
+      },
+      "errors": {
+        "basic": "Websitefouten herstellen",
+        "standard": "Websitefouten herstellen",
+        "premium": "Websitefouten herstellen"
+      },
+      "malware": {
+        "basic": "Malware verwijderen & beveiliging",
+        "standard": "Malware verwijderen & beveiliging",
+        "premium": "Malware verwijderen & beveiliging"
+      },
+      "speed": {
+        "basic": "Snelheid optimaliseren",
+        "standard": "Snelheid optimaliseren",
+        "premium": "Snelheid optimaliseren"
+      },
+      "seo": {
+        "basic": "SEO optimalisatie",
+        "standard": "SEO optimalisatie",
+        "premium": "SEO optimalisatie"
+      }
+    }
   }
 }

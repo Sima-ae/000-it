@@ -9,6 +9,7 @@ import { Reveal } from "@/components/marketing/Reveal";
 import { ServiceInquiryDialog } from "@/components/marketing/ServiceInquiryDialog";
 import { AddToCartButton } from "@/components/shop/AddToCartButton";
 import { ShopProductImage } from "@/components/shop/ShopProductImage";
+import { WordPressSupportPlans } from "@/components/marketing/WordPressSupportPlans";
 import {
   getCatalogItem,
   getServiceSlugs,
@@ -23,11 +24,15 @@ import {
   catalogServiceTitle,
 } from "@/content/fixweb/catalog-title";
 import { formatEuro, getServiceCardMeta, getServiceContent } from "@/lib/fixweb-content";
-import { getShopProductBySlug, loadShopCatalogFromDb } from "@/lib/shop/catalog";
+import {
+  getShopProductBySlug,
+  loadShopCatalogFromDb,
+} from "@/lib/shop/catalog";
 import { buildServiceMetadata } from "@/lib/seo";
 import { resolveEntityParam } from "@/lib/resolve-entity-param";
 import { canonicalEntityKey } from "@/lib/entity-slug-cache";
 import { hydrateEntitySlugs } from "@/lib/entity-slugs";
+import { cn } from "@/lib/utils";
 
 const aiInquiryBySlug: Record<
   string,
@@ -37,19 +42,6 @@ const aiInquiryBySlug: Record<
   "ai-in-ecommerce": { source: "AI_IN_ECOMMERCE", key: "ecom" },
   "ai-in-website": { source: "AI_IN_WEBSITE", key: "web" },
 };
-
-/** Hosting plans that are orderable via the shop cart / checkout. */
-const HOSTING_ORDER_SLUGS = new Set([
-  "shared-hosting-basic",
-  "shared-hosting-plus",
-  "shared-hosting-business",
-  "wordpress-hosting-basic",
-  "wordpress-hosting-plus",
-  "wordpress-hosting-business",
-  "vps-hosting-basic",
-  "vps-hosting-plus",
-  "vps-hosting-business",
-]);
 
 export function generateStaticParams() {
   return getServiceSlugs().map((slug) => ({ slug }));
@@ -96,11 +88,17 @@ export default async function ServiceDetailPage({
   const meta = getCatalogItem(slug);
   const groupLabel = serviceGroups.find((g) => g.id === meta?.group);
   const inquiry = aiInquiryBySlug[slug];
-  let shopProduct = null;
-  if (HOSTING_ORDER_SLUGS.has(slug)) {
-    await loadShopCatalogFromDb();
-    shopProduct = getShopProductBySlug(slug);
-  }
+  const showSupportPlans = slug === "wordpress-support";
+
+  // Any shop catalog product with this slug (and a price) is orderable —
+  // including products that receive a price later via admin / seed.
+  await loadShopCatalogFromDb();
+  const shopProduct = getShopProductBySlug(slug);
+  const canOrder = Boolean(
+    shopProduct &&
+      shopProduct.published !== false &&
+      shopProduct.priceInclCents > 0,
+  );
   const relatedCandidates = serviceCatalog.filter(
     (item) =>
       item.group === meta?.group &&
@@ -120,7 +118,12 @@ export default async function ServiceDetailPage({
 
   return (
     <div>
-      <section className="relative overflow-hidden border-b border-border/60">
+      <section
+        className={cn(
+          "relative overflow-hidden",
+          !showSupportPlans && "border-b border-border/60",
+        )}
+      >
         <div
           className="pointer-events-none absolute inset-0 opacity-70"
           style={{
@@ -187,7 +190,7 @@ export default async function ServiceDetailPage({
                   </ul>
                 ) : null}
                 <div className="mt-8 flex flex-wrap gap-3">
-                  {shopProduct ? (
+                  {canOrder && shopProduct ? (
                     <>
                       <AddToCartButton
                         productId={shopProduct.id}
@@ -247,26 +250,9 @@ export default async function ServiceDetailPage({
       </section>
 
       <div className="mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
-        {related.length ? (
-          <section className="mb-14">
-            <Reveal>
-              <h2 className="font-display text-2xl font-semibold tracking-tight">
-                {t("related")}
-              </h2>
-            </Reveal>
-            <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {related.map(({ item, relatedContent }, i) => (
-                <Reveal key={item.slug} delay={i * 0.04}>
-                  <ServiceCard
-                    href={serviceHref(locale, item)}
-                    title={catalogServiceTitle(item.slug, locale, item.title)}
-                    summary={relatedContent?.subtitle || ""}
-                    price={relatedContent?.price ?? undefined}
-                    image={relatedContent?.image ?? undefined}
-                  />
-                </Reveal>
-              ))}
-            </div>
+        {showSupportPlans ? (
+          <section className="mb-14 border-b border-border/60 pb-14">
+            <WordPressSupportPlans />
           </section>
         ) : null}
 
@@ -289,7 +275,7 @@ export default async function ServiceDetailPage({
               {inquiry ? t(`inquiry.${inquiry.key}.ctaText`) : t("readyBody")}
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
-              {shopProduct ? (
+              {canOrder && shopProduct ? (
                 <>
                   <AddToCartButton
                     productId={shopProduct.id}
@@ -332,6 +318,29 @@ export default async function ServiceDetailPage({
             </div>
           </div>
         </Reveal>
+
+        {related.length ? (
+          <section className="mt-14">
+            <Reveal>
+              <h2 className="font-display text-2xl font-semibold tracking-tight">
+                {t("related")}
+              </h2>
+            </Reveal>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {related.map(({ item, relatedContent }, i) => (
+                <Reveal key={item.slug} delay={i * 0.04}>
+                  <ServiceCard
+                    href={serviceHref(locale, item)}
+                    title={catalogServiceTitle(item.slug, locale, item.title)}
+                    summary={relatedContent?.subtitle || ""}
+                    price={relatedContent?.price ?? undefined}
+                    image={relatedContent?.image ?? undefined}
+                  />
+                </Reveal>
+              ))}
+            </div>
+          </section>
+        ) : null}
       </div>
     </div>
   );

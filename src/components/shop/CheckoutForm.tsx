@@ -2,6 +2,7 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useMemo, useState } from "react";
+import { Trash2 } from "lucide-react";
 import { useSession } from "next-auth/react";
 import { Button } from "@/components/ui/button";
 import { SoftLink } from "@/components/shared/SoftLink";
@@ -165,9 +166,11 @@ export function CheckoutForm() {
                   <button
                     type="button"
                     onClick={() => removeItem(line.product.id)}
-                    className="shrink-0 text-xs text-muted-foreground underline-offset-2 hover:underline"
+                    aria-label={t("remove")}
+                    title={t("remove")}
+                    className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-red-600 transition hover:bg-red-600/10 hover:text-red-700"
                   >
-                    {t("remove")}
+                    <Trash2 className="h-4 w-4" aria-hidden />
                   </button>
                 </div>
                 <div className="flex flex-wrap items-center justify-between gap-3">

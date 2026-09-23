@@ -775,5 +775,67 @@
     "relatedLinks": "Helpful links",
     "linkFaq": "FAQ",
     "linkKb": "Knowledge base"
+  },
+  "wordpressSupport": {
+    "saveYearlyHint": "Risparmia fino al 20% con monitoraggio e supporto annuale!",
+    "savePercent": "Risparmia il {percent}%",
+    "orderNow": "Ordina ora",
+    "noCreditCard": "Nessuna carta di credito richiesta",
+    "packages": {
+      "basic": {
+        "name": "Basic",
+        "tagline": "Pacchetto supporto all-in-one"
+      },
+      "standard": {
+        "name": "Standard",
+        "tagline": "Pacchetto supporto all-in-one"
+      },
+      "premium": {
+        "name": "Premium",
+        "tagline": "Pacchetto supporto all-in-one"
+      }
+    },
+    "features": {
+      "sites": {
+        "basic": "1 sito web",
+        "standard": "2 siti web",
+        "premium": "3-5 siti web"
+      },
+      "monitoring": {
+        "basic": "Monitoraggio e supporto 24/7",
+        "standard": "Monitoraggio e supporto 24/7",
+        "premium": "Monitoraggio e supporto 24/7"
+      },
+      "backups": {
+        "basic": "Backup giornalieri",
+        "standard": "Backup giornalieri",
+        "premium": "Backup giornalieri"
+      },
+      "updates": {
+        "basic": "Aggiornamenti WordPress e plugin",
+        "standard": "Aggiornamenti WordPress e plugin",
+        "premium": "Aggiornamenti WordPress e plugin"
+      },
+      "errors": {
+        "basic": "Risoluzione errori del sito",
+        "standard": "Risoluzione errori del sito",
+        "premium": "Risoluzione errori del sito"
+      },
+      "malware": {
+        "basic": "Rimozione malware e sicurezza",
+        "standard": "Rimozione malware e sicurezza",
+        "premium": "Rimozione malware e sicurezza"
+      },
+      "speed": {
+        "basic": "Ottimizzazione velocità",
+        "standard": "Ottimizzazione velocità",
+        "premium": "Ottimizzazione velocità"
+      },
+      "seo": {
+        "basic": "Ottimizzazione SEO",
+        "standard": "Ottimizzazione SEO",
+        "premium": "Ottimizzazione SEO"
+      }
+    }
   }
 }

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Button } from "@/components/ui/button";
 import { SoftLink } from "@/components/shared/SoftLink";
@@ -192,7 +193,31 @@ export default async function HomePage({
       <section className="mx-auto max-w-6xl px-4 pb-8 md:px-6 md:pb-12">
         <Reveal from="scale" duration={0.7}>
           <div className="glow-hover relative overflow-hidden rounded-4xl">
-            <div className="glow-bg absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(94,59,136,0.45),transparent_40%),radial-gradient(circle_at_80%_80%,rgba(0,124,141,0.28),transparent_42%),linear-gradient(135deg,#2a1845,#14181f_55%,#0f1720)]" />
+            <div className="glow-bg absolute inset-0" aria-hidden>
+              <Image
+                src="/branding/banner1-nieuw.jpg"
+                alt=""
+                fill
+                sizes="(max-width: 1152px) 100vw, 1152px"
+                className="-scale-x-100 object-cover object-center"
+              />
+            </div>
+            <div
+              className="glow-bg pointer-events-none absolute inset-0"
+              aria-hidden
+              style={{
+                backgroundImage:
+                  "linear-gradient(90deg, rgba(50, 28, 78, 0.78) 0%, rgba(0, 78, 92, 0.78) 100%)",
+              }}
+            />
+            <div
+              className="glow-bg pointer-events-none absolute inset-0 opacity-50"
+              aria-hidden
+              style={{
+                backgroundImage:
+                  "radial-gradient(ellipse 70% 80% at 85% 50%, rgba(255,255,255,0.12), transparent 55%), radial-gradient(ellipse 50% 60% at 10% 80%, rgba(0,0,0,0.22), transparent 50%)",
+              }}
+            />
             <div className="relative z-1 px-8 py-14 text-center text-white md:px-14 md:py-20">
               <p className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
                 {t("hero.ctaScanTitle")}

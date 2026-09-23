@@ -2,6 +2,7 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { useMemo } from "react";
+import { Trash2 } from "lucide-react";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
 import { QuantityStepper } from "@/components/shop/QuantityStepper";
@@ -79,9 +80,11 @@ export function CartView() {
                   <button
                     type="button"
                     onClick={() => removeItem(line.product.id)}
-                    className="text-sm text-muted-foreground underline-offset-2 hover:underline"
+                    aria-label={t("remove")}
+                    title={t("remove")}
+                    className="inline-flex h-9 w-9 items-center justify-center rounded-lg text-red-600 transition hover:bg-red-600/10 hover:text-red-700"
                   >
-                    {t("remove")}
+                    <Trash2 className="h-4 w-4" aria-hidden />
                   </button>
                 </div>
               </div>

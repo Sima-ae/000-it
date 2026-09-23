@@ -775,5 +775,67 @@
     "relatedLinks": "Helpful links",
     "linkFaq": "FAQ",
     "linkKb": "Knowledge base"
+  },
+  "wordpressSupport": {
+    "saveYearlyHint": "Économisez jusqu’à 20 % avec le monitoring & support annuel !",
+    "savePercent": "Économisez {percent} %",
+    "orderNow": "Commander",
+    "noCreditCard": "Aucune carte de crédit requise",
+    "packages": {
+      "basic": {
+        "name": "Basic",
+        "tagline": "Pack Support tout-en-un"
+      },
+      "standard": {
+        "name": "Standard",
+        "tagline": "Pack Support tout-en-un"
+      },
+      "premium": {
+        "name": "Premium",
+        "tagline": "Pack Support tout-en-un"
+      }
+    },
+    "features": {
+      "sites": {
+        "basic": "1 site web",
+        "standard": "2 sites web",
+        "premium": "3-5 sites web"
+      },
+      "monitoring": {
+        "basic": "Monitoring & support 24/7",
+        "standard": "Monitoring & support 24/7",
+        "premium": "Monitoring & support 24/7"
+      },
+      "backups": {
+        "basic": "Sauvegardes quotidiennes",
+        "standard": "Sauvegardes quotidiennes",
+        "premium": "Sauvegardes quotidiennes"
+      },
+      "updates": {
+        "basic": "Mises à jour WordPress & plugins",
+        "standard": "Mises à jour WordPress & plugins",
+        "premium": "Mises à jour WordPress & plugins"
+      },
+      "errors": {
+        "basic": "Correction des erreurs du site",
+        "standard": "Correction des erreurs du site",
+        "premium": "Correction des erreurs du site"
+      },
+      "malware": {
+        "basic": "Suppression de malware & sécurité",
+        "standard": "Suppression de malware & sécurité",
+        "premium": "Suppression de malware & sécurité"
+      },
+      "speed": {
+        "basic": "Optimisation de la vitesse",
+        "standard": "Optimisation de la vitesse",
+        "premium": "Optimisation de la vitesse"
+      },
+      "seo": {
+        "basic": "Optimisation SEO",
+        "standard": "Optimisation SEO",
+        "premium": "Optimisation SEO"
+      }
+    }
   }
 }

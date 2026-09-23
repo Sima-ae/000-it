@@ -52,6 +52,45 @@ export const HOSTING_YEARLY_SLUGS = new Set([
   "vps-hosting-business",
 ]);
 
+/** WordPress support packages with monthly + discounted yearly billing. */
+export const SUPPORT_PACKAGE_KEYS = ["basic", "standard", "premium"] as const;
+export type SupportPackageKey = (typeof SUPPORT_PACKAGE_KEYS)[number];
+
+export const SUPPORT_PACKAGE_PRICES: Record<
+  SupportPackageKey,
+  { monthly: number; yearly: number; savePercent: number }
+> = {
+  basic: { monthly: 29.99, yearly: 323.91, savePercent: 10 },
+  standard: { monthly: 54.99, yearly: 560.83, savePercent: 15 },
+  premium: { monthly: 89.99, yearly: 863.88, savePercent: 20 },
+};
+
+const SUPPORT_BASE_SLUGS = new Set(
+  SUPPORT_PACKAGE_KEYS.map((key) => `${key}-support`),
+);
+
+export function supportPackageSlug(
+  key: SupportPackageKey,
+  period: ShopBillingPeriod,
+) {
+  const base = `${key}-support`;
+  return period === "yearly" ? `${base}-yearly` : base;
+}
+
+export function supportProductId(
+  key: SupportPackageKey,
+  period: ShopBillingPeriod,
+) {
+  return `service-${supportPackageSlug(key, period)}`;
+}
+
+export function isSupportPackageSlug(slug: string) {
+  return (
+    SUPPORT_BASE_SLUGS.has(slug) ||
+    SUPPORT_PACKAGE_KEYS.some((key) => slug === `${key}-support-yearly`)
+  );
+}
+
 /** Charged unit price (incl. VAT cents) used in cart / Stripe. */
 export function shopChargeInclCents(product: ShopProduct) {
   const months =
@@ -184,8 +223,78 @@ function buildPlanProduct(
   };
 }
 
+function buildSupportProducts(): ShopProduct[] {
+  const products: ShopProduct[] = [];
+
+  for (const key of SUPPORT_PACKAGE_KEYS) {
+    const baseSlug = `${key}-support`;
+    const source = imported.find((p) => p.slug === baseSlug);
+    const i18nNl = getProductI18n(baseSlug, "nl");
+    const i18nEn = getProductI18n(baseSlug, "en");
+    const image = imageMap[baseSlug] || source?.images?.[0] || null;
+    const nameNl = brandify(i18nNl?.name || source?.name || `${key} Support`);
+    const nameEn = brandify(i18nEn?.name || source?.name || `${key} Support`);
+    const shortNl = brandify(
+      i18nNl?.shortDescription || source?.shortDescription || "",
+    );
+    const shortEn = brandify(
+      i18nEn?.shortDescription || source?.shortDescription || "",
+    );
+    const descNl = brandify(i18nNl?.description || source?.description || shortNl);
+    const descEn = brandify(i18nEn?.description || source?.description || shortEn);
+    const pricing = SUPPORT_PACKAGE_PRICES[key];
+    const sortBase = key === "basic" ? 40 : key === "standard" ? 41 : 42;
+
+    for (const period of ["monthly", "yearly"] as const) {
+      const slug = supportPackageSlug(key, period);
+      const price = period === "yearly" ? pricing.yearly : pricing.monthly;
+      const periodLabel =
+        period === "yearly"
+          ? { nl: "jaarlijks", en: "yearly" }
+          : { nl: "maandelijks", en: "monthly" };
+
+      products.push({
+        id: supportProductId(key, period),
+        sku: `SVC-${slug.toUpperCase().replace(/[^A-Z0-9]+/g, "-").slice(0, 40)}`,
+        slug,
+        type: "service",
+        name: {
+          nl: `${nameNl} (${periodLabel.nl})`,
+          en: `${nameEn} (${periodLabel.en})`,
+        },
+        shortDescription: {
+          nl: `${shortNl}\n\nFacturatie: ${periodLabel.nl}. Inclusief 21% BTW.`,
+          en: `${shortEn}\n\nBilling: ${periodLabel.en}. Including 21% VAT.`,
+        },
+        description: {
+          nl: `${descNl}\n\nBetaling: ${periodLabel.nl}${
+            period === "yearly" ? ` (bespaar ${pricing.savePercent}%)` : ""
+          }. Inclusief 21% BTW.`,
+          en: `${descEn}\n\nPayment: ${periodLabel.en}${
+            period === "yearly" ? ` (save ${pricing.savePercent}%)` : ""
+          }. Including 21% VAT.`,
+        },
+        priceInclCents: eurosToCents(price),
+        currency: "EUR",
+        image,
+        billingPeriod: period,
+        billingInterval: period,
+        category: "wordpress-support",
+        featured: key === "standard",
+        published: true,
+        sortOrder: sortBase + (period === "yearly" ? 3 : 0),
+        tags: ["wordpress-support", key, period],
+      });
+    }
+  }
+
+  return products;
+}
+
 function buildServiceProducts(): ShopProduct[] {
-  return imported.map((p, index) => {
+  return imported
+    .filter((p) => !SUPPORT_BASE_SLUGS.has(p.slug))
+    .map((p, index) => {
     const i18nNl = getProductI18n(p.slug, "nl");
     const i18nEn = getProductI18n(p.slug, "en");
     const image = imageMap[p.slug] || p.images?.[0] || null;
@@ -228,6 +337,7 @@ export const STATIC_SHOP_CATALOG: ShopProduct[] = [
   buildPlanProduct("starter", "yearly"),
   buildPlanProduct("growth", "monthly"),
   buildPlanProduct("growth", "yearly"),
+  ...buildSupportProducts(),
   ...buildServiceProducts(),
 ];
 
