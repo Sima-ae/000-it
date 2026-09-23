@@ -1,0 +1,1 @@
+Como podemos melhorar a segurança do site? SSL, firewalls, verificação de malware, atualizações regulares e práticas de configuração seguras.

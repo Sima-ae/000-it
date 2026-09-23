@@ -1,0 +1,1 @@
+Bezpieczeństwo witryny WordPress ma ogromne znaczenie. Nasz zespół zapewnia solidne środki bezpieczeństwa, w tym skanowanie złośliwego oprogramowania, konfigurację zapory ogniowej i regularne aktualizacje zabezpieczeń. Aktualizujemy także rdzeń, motywy i wtyczki WordPress, aby zmniejszyć ryzyko naruszeń i problemów ze zgodnością.

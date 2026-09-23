@@ -1,0 +1,1 @@
+Brže stranice i jači Core Web Vitals — bolji korisnički doživljaj, rangiranje i pretvorba na nizovima.

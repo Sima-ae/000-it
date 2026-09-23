@@ -104,7 +104,7 @@
       "community": "Community-Management",
       "webhosting": "Webhosting",
       "domains": "Domänen",
-      "ai": "KI",
+      "ai": "AI",
       "aeo": "AEO",
       "geo": "GEO",
       "seo": "SEO",
@@ -125,10 +125,11 @@
       "maintenance": "Wartung",
       "support": "Unterstützung",
       "ecommerceSeo": "E-Commerce-SEO",
-      "conversion": "Conversion",
+      "conversion": "Konvertierung",
       "speedOpt": "Core Web Vitals und Geschwindigkeit",
-      "analytics": "Analytics",
-      "accessibility": "Barrierefreiheit"
+      "analytics": "Analytik",
+      "accessibility": "Barrierefreiheit",
+      "texts": "Texte"
     },
     "inquiry": {
       "wp": {
@@ -169,7 +170,7 @@
     "mostChosen": "Am beliebtesten",
     "features": {
       "starter": [
-        "1× Domainname .COM / .EU / .NL",
+        "1× Domainname .COM / .EU / .DE",
         "1× Webhosting",
         "1× E-Commerce-Shop / Website",
         "1× AI-Agent",
@@ -179,7 +180,7 @@
         "24/7 Überwachung"
       ],
       "growth": [
-        "1× Domainname .COM / .EU / .NL",
+        "1× Domainname .COM / .EU / .DE",
         "1× Webhosting",
         "1× E-Commerce-Shop / Website",
         "2× AI Agenten",
@@ -241,10 +242,10 @@
     "subtitle": "Alle Preise sind inklusive 21% MwSt.",
     "plans": "Ready To Go - KI-Komplettpaket",
     "support": "Support",
-    "sharedHosting": "Shared Hosting",
-    "wordpressHosting": "WordPress Hosting",
-    "vpsHosting": "VPS Hosting",
-    "webhosting": "Shared Hosting",
+    "sharedHosting": "Geteiltes Hosting",
+    "wordpressHosting": "Wordpress-Hosting",
+    "vpsHosting": "VPS-Hosting",
+    "webhosting": "Geteiltes Hosting",
     "services": "Dienstleistungen & Produkte",
     "typePlan": "Planen",
     "typeService": "Service",
@@ -329,13 +330,13 @@
     "newsTrash": "News trash",
     "caseStudies": "Fallstudien",
     "leads": "Führt",
-    "shop": "Shop",
+    "shop": "Geschäft",
     "tickets": "Tickets",
     "todos": "Aufgaben",
     "users": "Benutzer",
     "clients": "Kunden",
     "agents": "AI Agenten",
-    "seo": "SEO Analyses",
+    "seo": "SEO-Analysen",
     "content": "Inhaltsgenerator",
     "settings": "Einstellungen",
     "logout": "Abmelden",
@@ -438,7 +439,25 @@
     "company": "Unternehmen",
     "message": "Nachricht",
     "send": "Senden",
-    "success": "Danke! Wir werden uns bald bei dir melden."
+    "success": "Danke! Wir werden uns bald bei dir melden.",
+    "detailsTitle": "Kontaktdaten",
+    "companyName": "TripleZero iT",
+    "addressLabel": "Adresse",
+    "addressLine1": "Burlington Tower, 19th floor",
+    "addressLine2": "Business Bay, Al Abraj St.",
+    "addressLine3": "Dubai – United Arab Emirates",
+    "addressLine4": "",
+    "emailLabel": "E-Mails",
+    "emailAddress": "info@000-it.com",
+    "detailsNote": "Sende deine Nachricht über das Formular — wir antworten so schnell wie möglich.",
+    "routeLabel": "Route",
+    "routeOpenAria": "Route in Google Maps öffnen",
+    "emailAddresses": [
+      "info@000-it.com",
+      "privacy@000-it.com",
+      "sales@000-it.com",
+      "support@000-it.com"
+    ]
   },
   "aiScan": {
     "title": "Kostenloser AI Readiness Scan",
@@ -461,7 +480,7 @@
     "resultsTitle": "Ergebnisse des KI-Scans",
     "contactTitle": "Kontakt zum KI-Scan",
     "contactDescription": "Hinterlasse deine Daten – wir helfen dir bei der Interpretation der Ergebnisse und entwerfen einen Plan.",
-    "contactMessageLead": "Hallo TripleZero iT,\n\nIch habe einen KI-Scan durchgeführt und möchte die Ergebnisse besprechen.\n\nWebsite-URL: {url}\n\nErgebnisse:\n{scores}\n\nFrage/Anmerkungen:"
+    "contactMessageLead": "Hallo TripleZero iT, Ich habe einen KI-Scan durchgeführt und möchte die Ergebnisse besprechen. Website-URL: {url} Ergebnisse: {scores} Frage/Anmerkungen:"
   },
   "portfolio": {
     "title": "Portfolio",
@@ -659,8 +678,8 @@
     "results": "Ergebnisse",
     "forQuery": "für",
     "empty": "Keine Ergebnisse gefunden.",
-    "browseTitle": "Browse all questions",
-    "matchedHint": "Matched FAQ highlighted below"
+    "browseTitle": "Durchsuchen Sie alle Fragen",
+    "matchedHint": "Passende FAQ unten hervorgehoben"
   },
   "appointment": {
     "title": "Einen Termin vereinbaren",
@@ -697,7 +716,7 @@
     "stepService": "Service",
     "stepExtras": "Extras",
     "stepTime": "Uhrzeit",
-    "stepDetails": "Details",
+    "stepDetails": "Einzelheiten",
     "stepPayment": "Zahlungs-",
     "stepDone": "Erledigt",
     "stepSchedule": "Deine Behandlungstermine",
@@ -729,9 +748,9 @@
     "title": "Live-Chat",
     "subtitle": "TripleZero iT",
     "online": "Online",
-    "teaserLine1": "Need help?",
-    "teaserLine2": "Open the chat...",
-    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
+    "teaserLine1": "Brauchen Sie Hilfe?",
+    "teaserLine2": "Öffne den Chat...",
+    "emptyChat": "Stellen Sie Agent 000 eine Frage – FAQ-Antworten zuerst, bei Bedarf Menschen.",
     "emptyTicket": "Beschreibe deine Anfrage – wir öffnen ein Ticket, das mit deinem Dashboard synchronisiert wird.",
     "placeholder": "Gib deine Nachricht ein ...",
     "newTicket": "Neues Ticket",
@@ -769,7 +788,7 @@
   },
   "inquiry": {
     "websiteHint": "Website / Webshop",
-    "defaultMessage": "Hallo TripleZero iT,\n\nIch würde gerne mehr über {service} für unseren {hint} erfahren.\n\nWebsite-URL:\nZiel (z. B. Chatbot, Produktassistent, Content-KI, benutzerdefiniert):",
+    "defaultMessage": "Hallo TripleZero iT, Ich würde gerne mehr über {service} für unseren {hint} erfahren. Website-URL: Ziel (z. B. Chatbot, Produktassistent, Content-KI, benutzerdefiniert):",
     "requestAi": "KI-Integration anfordern",
     "sendRequest": "Anfrage senden",
     "dialogTitle": "Kontakt zu {service}",
@@ -797,39 +816,39 @@
   },
   "agent000": {
     "name": "Agent 000",
-    "role": "Virtual FAQ & support assistant",
+    "role": "Virtueller FAQ- und Wissensassistent",
     "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
-    "placeholder": "Ask Agent 000 a question…",
-    "send": "Send",
-    "thinking": "Agent 000 is thinking…",
-    "mute": "Mute voice",
-    "unmute": "Unmute voice",
-    "actionBook": "Book appointment",
-    "actionTicket": "Open live chat / ticket",
+    "placeholder": "Stellen Sie Agent 000 eine Frage…",
+    "send": "Schicken",
+    "thinking": "Agent 000 denkt ...",
+    "mute": "Stumme Stimme",
+    "unmute": "Stummschaltung der Stimme aufheben",
+    "actionBook": "Termin buchen",
+    "actionTicket": "Live-Chat/Ticket öffnen",
     "actionContact": "Contact",
-    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket.",
-    "pickOption": "Pick the best match",
-    "relatedLinks": "Helpful links",
+    "error": "Entschuldigung – ich konnte meine Wissensdatenbank nicht erreichen. Bitte versuchen Sie es erneut oder eröffnen Sie ein Ticket.",
+    "pickOption": "Wählen Sie die beste Übereinstimmung",
+    "relatedLinks": "Hilfreiche Links",
     "linkFaq": "FAQ",
-    "linkKb": "Knowledge base"
+    "linkKb": "Wissensdatenbank"
   },
   "wordpressSupport": {
-    "saveYearlyHint": "Sparen Sie bis zu 20% bei jährlichem Monitoring & Support!",
+    "saveYearlyHint": "Sparen Sie 10 % mit jährlicher Abrechnung!",
     "savePercent": "Sparen Sie {percent}%",
     "orderNow": "Jetzt bestellen",
     "noCreditCard": "Keine Kreditkarte erforderlich",
     "packages": {
       "pro": {
         "name": "Pro",
-        "tagline": "All-in-One Support-Paket"
+        "tagline": "All-in-One-Supportpaket"
       },
       "double": {
         "name": "Double",
-        "tagline": "All-in-One Support-Paket"
+        "tagline": "All-in-One-Supportpaket"
       },
       "premium": {
         "name": "Premium",
-        "tagline": "All-in-One Support-Paket"
+        "tagline": "All-in-One-Supportpaket"
       }
     },
     "features": {
@@ -839,9 +858,9 @@
         "premium": "3-5 Websites"
       },
       "monitoring": {
-        "pro": "24/7 Monitoring & Support",
-        "double": "24/7 Monitoring & Support",
-        "premium": "24/7 Monitoring & Support"
+        "pro": "Überwachung und Support rund um die Uhr",
+        "double": "Überwachung und Support rund um die Uhr",
+        "premium": "Überwachung und Support rund um die Uhr"
       },
       "backups": {
         "pro": "Tägliche Backups",

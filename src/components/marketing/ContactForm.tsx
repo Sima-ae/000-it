@@ -26,6 +26,7 @@ export function ContactForm({
   submitLabel,
   className,
   centered = false,
+  fillHeight = false,
 }: {
   defaultMessage?: string;
   source?: string;
@@ -33,6 +34,7 @@ export function ContactForm({
   submitLabel?: string;
   className?: string;
   centered?: boolean;
+  fillHeight?: boolean;
 }) {
   const t = useTranslations("contact");
   const common = useTranslations("common");
@@ -59,7 +61,10 @@ export function ContactForm({
   return (
     <form
       onSubmit={form.handleSubmit(onSubmit)}
-      className={className ?? (centered ? "space-y-4 text-center" : "space-y-4")}
+      className={
+        className ??
+        (centered ? "space-y-4 text-center" : "space-y-4")
+      }
     >
       <div className="space-y-2">
         <Label htmlFor="name">{t("name")}</Label>
@@ -82,16 +87,22 @@ export function ContactForm({
           className={centered ? "text-center" : undefined}
         />
       </div>
-      <div className="space-y-2">
+      <div className={fillHeight ? "flex min-h-0 flex-1 flex-col space-y-2" : "space-y-2"}>
         <Label htmlFor="message">{t("message")}</Label>
         <Textarea
           id="message"
-          rows={5}
+          rows={fillHeight ? 8 : 5}
           {...form.register("message")}
-          className={centered ? "text-center" : undefined}
+          className={
+            centered
+              ? "text-center"
+              : fillHeight
+                ? "h-full min-h-44 flex-1 resize-none"
+                : undefined
+          }
         />
       </div>
-      <div className={centered ? "flex justify-center" : undefined}>
+      <div className={centered ? "flex justify-center" : "mt-auto"}>
         <Button type="submit" disabled={form.formState.isSubmitting} className="w-full sm:w-auto">
           {submitLabel || t("send")}
         </Button>

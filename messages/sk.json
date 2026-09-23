@@ -124,11 +124,12 @@
       "wordpress": "WordPress",
       "maintenance": "Údržba",
       "support": "Podpora",
-      "ecommerceSeo": "E-commerce SEO",
-      "conversion": "Conversion",
+      "ecommerceSeo": "SEO pre elektronický obchod",
+      "conversion": "Konverzia",
       "speedOpt": "Core Web Vitals a rýchlosť",
       "analytics": "Analytics",
-      "accessibility": "Prístupnosť"
+      "accessibility": "Prístupnosť",
+      "texts": "Texty"
     },
     "inquiry": {
       "wp": {
@@ -169,7 +170,7 @@
     "mostChosen": "Najpopulárnejšie",
     "features": {
       "starter": [
-        "1× názov domény .COM / .EU / .NL",
+        "1× názov domény .COM / .EU / .SK",
         "1× webhosting",
         "1× e-shop / webstránka",
         "1× agent AI",
@@ -179,7 +180,7 @@
         "Monitorovanie 24/7"
       ],
       "growth": [
-        "1× názov domény .COM / .EU / .NL",
+        "1× názov domény .COM / .EU / .SK",
         "1× webhosting",
         "1× e-shop / webstránka",
         "2× AI agentov",
@@ -241,10 +242,10 @@
     "subtitle": "Všetky ceny zahŕňajú 21% DPH.",
     "plans": "Ready To Go - Kompletný AI balík",
     "support": "Support",
-    "sharedHosting": "Shared Hosting",
-    "wordpressHosting": "WordPress Hosting",
-    "vpsHosting": "VPS Hosting",
-    "webhosting": "Shared Hosting",
+    "sharedHosting": "Zdieľané hostiteľstvo",
+    "wordpressHosting": "WordPress hosting",
+    "vpsHosting": "Hostiteľstvo VPS",
+    "webhosting": "Zdieľané hostiteľstvo",
     "services": "Služby a produkty",
     "typePlan": "Plán",
     "typeService": "servis",
@@ -287,7 +288,7 @@
     "backHome": "Späť domov"
   },
   "footer": {
-    "tagline": "Ponúkame služby a produkty pre podnikateľov a freelancerov — od reklamy, AI integrácie, AEO, GEO a SEO, tlače, e‑mail marketingu, grafického dizajnu, online marketingu, údržby, optimalizácie, správy sociálnych médií, webdizajnu a podpory WordPress až po webhosting a doménové mená.",
+    "tagline": "Ponúkame služby a produkty pre podnikateľov a freelancerov — od reklamy, AI integrácie, AEO, GEO a SEO, tlače, e‑mail marketingu, grafického dizajnu, online marketingu, údržby, optimalizácie, správy sociálnych médií, webdizajnu a podpory WordPress až po webhosting a doménové mená.",
     "rights": "Všetky práva vyhradené.",
     "usefulLinks": "Užitočné odkazy",
     "socialMedia": "Sociálne médiá",
@@ -438,7 +439,25 @@
     "company": "Spoločnosť",
     "message": "Správa",
     "send": "Odoslať",
-    "success": "Ďakujem! Čoskoro sa vám ozveme."
+    "success": "Ďakujem! Čoskoro sa vám ozveme.",
+    "detailsTitle": "Kontaktné údaje",
+    "companyName": "TripleZero iT",
+    "addressLabel": "Adresa",
+    "addressLine1": "Burlington Tower, 19th floor",
+    "addressLine2": "Business Bay, Al Abraj St.",
+    "addressLine3": "Dubai – United Arab Emirates",
+    "addressLine4": "",
+    "emailLabel": "E-maily",
+    "emailAddress": "info@000-it.com",
+    "detailsNote": "Pošlite správu cez formulár — odpovieme čo najskôr.",
+    "routeLabel": "Trasa",
+    "routeOpenAria": "Otvoriť trasu v Google Maps",
+    "emailAddresses": [
+      "info@000-it.com",
+      "privacy@000-it.com",
+      "sales@000-it.com",
+      "support@000-it.com"
+    ]
   },
   "aiScan": {
     "title": "Bezplatné skenovanie pripravenosti AI",
@@ -461,7 +480,7 @@
     "resultsTitle": "Výsledky skenovania AI",
     "contactTitle": "Kontakt o skenovaní AI",
     "contactDescription": "Nechajte svoje podrobnosti – pomôžeme vám interpretovať skóre a načrtneme plán.",
-    "contactMessageLead": "Ahoj TripleZero iT,\n\nSpustil som skenovanie AI a rád by som prediskutoval výsledky.\n\nURL webovej stránky: {url}\n\nSkóre:\n{scores}\n\nOtázka / poznámky:"
+    "contactMessageLead": "Ahoj TripleZero iT, Spustil som skenovanie AI a rád by som prediskutoval výsledky. URL webovej stránky: {url} Skóre: {scores} Otázka / poznámky:"
   },
   "portfolio": {
     "title": "Portfólio",
@@ -659,8 +678,8 @@
     "results": "výsledky",
     "forQuery": "pre",
     "empty": "Nenašli sa žiadne výsledky.",
-    "browseTitle": "Browse all questions",
-    "matchedHint": "Matched FAQ highlighted below"
+    "browseTitle": "Prezrite si všetky otázky",
+    "matchedHint": "Zodpovedajúce často kladené otázky zvýraznené nižšie"
   },
   "appointment": {
     "title": "objednať sa",
@@ -698,7 +717,7 @@
     "stepExtras": "Doplnky",
     "stepTime": "Čas",
     "stepDetails": "Podrobnosti",
-    "stepPayment": "Platba ",
+    "stepPayment": "Platba",
     "stepDone": "Dokončené",
     "stepSchedule": "Harmonogram",
     "stepConfirm": "Potvrdiť",
@@ -729,9 +748,9 @@
     "title": "Živý chat",
     "subtitle": "TripleZero iT",
     "online": "Online",
-    "teaserLine1": "Need help?",
-    "teaserLine2": "Open the chat...",
-    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
+    "teaserLine1": "Potrebujete pomoc?",
+    "teaserLine2": "Otvoriť chat...",
+    "emptyChat": "Opýtajte sa agenta 000 otázku – najskôr odpovedia na najčastejšie otázky, v prípade potreby ľudia.",
     "emptyTicket": "Popíšte svoju požiadavku – otvoríme tiket synchronizovaný s vaším informačným panelom.",
     "placeholder": "Napíšte svoju správu…",
     "newTicket": "Nový lístok",
@@ -769,7 +788,7 @@
   },
   "inquiry": {
     "websiteHint": "webová stránka / internetový obchod",
-    "defaultMessage": "Dobrý deň, TripleZero iT,\n\nChcel by som sa dozvedieť viac o {service} pre naše {hint}.\n\nURL webovej stránky:\nCieľ (napr. chatbot, produktový asistent, umelá inteligencia obsahu, vlastné):",
+    "defaultMessage": "Dobrý deň, TripleZero iT, Chcel by som sa dozvedieť viac o {service} pre naše {hint}. URL webovej stránky: Cieľ (napr. chatbot, produktový asistent, umelá inteligencia obsahu, vlastné):",
     "requestAi": "Požiadajte o integráciu AI",
     "sendRequest": "Odoslať žiadosť",
     "dialogTitle": "Kontakt o {service}",
@@ -797,81 +816,81 @@
   },
   "agent000": {
     "name": "Agent 000",
-    "role": "Virtual FAQ & support assistant",
+    "role": "Virtuálny FAQ & znalostný asistent",
     "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
-    "placeholder": "Ask Agent 000 a question…",
-    "send": "Send",
-    "thinking": "Agent 000 is thinking…",
-    "mute": "Mute voice",
-    "unmute": "Unmute voice",
-    "actionBook": "Book appointment",
-    "actionTicket": "Open live chat / ticket",
+    "placeholder": "Opýtajte sa agenta 000 otázku...",
+    "send": "Odoslať",
+    "thinking": "Agent 000 premýšľa...",
+    "mute": "Stlmiť hlas",
+    "unmute": "Zapnúť zvuk",
+    "actionBook": "Rezervovať termín",
+    "actionTicket": "Otvoriť live chat / tiket",
     "actionContact": "Contact",
-    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket.",
-    "pickOption": "Pick the best match",
-    "relatedLinks": "Helpful links",
+    "error": "Ospravedlňujem sa – nepodarilo sa mi získať prístup k svojej znalostnej báze. Skúste to znova alebo otvorte lístok.",
+    "pickOption": "Vyberte najlepšiu zhodu",
+    "relatedLinks": "Užitočné odkazy",
     "linkFaq": "FAQ",
-    "linkKb": "Knowledge base"
+    "linkKb": "Znalostná báza"
   },
   "wordpressSupport": {
-    "saveYearlyHint": "Save up to 20% for yearly monitoring & support!",
-    "savePercent": "Save {percent}%",
-    "orderNow": "Order Now",
-    "noCreditCard": "No credit card required",
+    "saveYearlyHint": "Ušetrite 10 % s ročným vyúčtovaním!",
+    "savePercent": "Ušetrite {percent} %",
+    "orderNow": "Objednajte teraz",
+    "noCreditCard": "Nevyžaduje sa žiadna kreditná karta",
     "packages": {
       "pro": {
         "name": "Pro",
-        "tagline": "All-in-One Support Package"
+        "tagline": "Balík podpory všetko v jednom"
       },
       "double": {
         "name": "Double",
-        "tagline": "All-in-One Support Package"
+        "tagline": "Balík podpory všetko v jednom"
       },
       "premium": {
         "name": "Premium",
-        "tagline": "All-in-One Support Package"
+        "tagline": "Balík podpory všetko v jednom"
       }
     },
     "features": {
       "sites": {
-        "pro": "1 website",
-        "double": "2 websites",
-        "premium": "3-5 websites"
+        "pro": "1 web",
+        "double": "2 webové stránky",
+        "premium": "3-5 webových stránok"
       },
       "monitoring": {
-        "pro": "24/7 monitoring & support",
-        "double": "24/7 monitoring & support",
-        "premium": "24/7 monitoring & support"
+        "pro": "24/7 monitorovanie a podpora",
+        "double": "24/7 monitorovanie a podpora",
+        "premium": "24/7 monitorovanie a podpora"
       },
       "backups": {
-        "pro": "Daily backups",
-        "double": "Daily backups",
-        "premium": "Daily backups"
+        "pro": "Denné zálohy",
+        "double": "Denné zálohy",
+        "premium": "Denné zálohy"
       },
       "updates": {
-        "pro": "WordPress & plugin updates",
-        "double": "WordPress & plugin updates",
-        "premium": "WordPress & plugin updates"
+        "pro": "Aktualizácie WordPress a doplnkov",
+        "double": "Aktualizácie WordPress a doplnkov",
+        "premium": "Aktualizácie WordPress a doplnkov"
       },
       "errors": {
-        "pro": "Fix website errors",
-        "double": "Fix website errors",
-        "premium": "Fix website errors"
+        "pro": "Opravte chyby webových stránok",
+        "double": "Opravte chyby webových stránok",
+        "premium": "Opravte chyby webových stránok"
       },
       "malware": {
-        "pro": "Malware removal & security",
-        "double": "Malware removal & security",
-        "premium": "Malware removal & security"
+        "pro": "Odstránenie škodlivého softvéru a zabezpečenie",
+        "double": "Odstránenie škodlivého softvéru a zabezpečenie",
+        "premium": "Odstránenie škodlivého softvéru a zabezpečenie"
       },
       "speed": {
-        "pro": "Speed optimization",
-        "double": "Speed optimization",
-        "premium": "Speed optimization"
+        "pro": "Optimalizácia rýchlosti",
+        "double": "Optimalizácia rýchlosti",
+        "premium": "Optimalizácia rýchlosti"
       },
       "seo": {
-        "pro": "SEO optimization",
-        "double": "SEO optimization",
-        "premium": "SEO optimization"
+        "pro": "SEO optimalizácia",
+        "double": "SEO optimalizácia",
+        "premium": "SEO optimalizácia"
       }
     }
   }

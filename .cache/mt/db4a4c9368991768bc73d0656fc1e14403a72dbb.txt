@@ -1,0 +1,1 @@
+WordPress sitenizi güvende tutmak çok önemlidir. Ekibimiz, kötü amaçlı yazılım taraması, güvenlik duvarı kurulumu ve düzenli güvenlik güncellemeleri dahil olmak üzere güçlü güvenlik önlemleri sağlar. Ayrıca ihlal ve uyumluluk sorunları riskini azaltmak için WordPress çekirdeğini, temalarını ve eklentilerini güncel tutuyoruz.

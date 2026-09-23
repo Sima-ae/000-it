@@ -46,9 +46,11 @@ function parseFaqItem(raw: string): FaqItem | null {
 export function ContentBlocks({
   blocks,
   className,
+  compact = false,
 }: {
   blocks: ContentBlock[];
   className?: string;
+  compact?: boolean;
 }) {
   const nodes: ReactNode[] = [];
 
@@ -63,20 +65,36 @@ export function ContentBlocks({
           .filter((item): item is FaqItem => Boolean(item));
 
         nodes.push(
-          <div key={`faq-wrap-${i}`} className="space-y-4 pt-2">
-            <h2 className="font-display text-xl font-semibold tracking-tight text-foreground md:text-2xl">
+          <div
+            key={`faq-wrap-${i}`}
+            className={cn(compact ? "space-y-2.5 pt-1" : "space-y-4 pt-2")}
+          >
+            <h2
+              className={cn(
+                "font-display font-semibold tracking-tight text-foreground",
+                compact ? "text-base md:text-lg" : "text-xl md:text-2xl",
+              )}
+            >
               {block.text}
             </h2>
             {items.length ? (
               <ContentFaqAccordion items={items} />
             ) : (
-              <ul className="space-y-2 pl-1">
+              <ul className={cn("pl-1", compact ? "space-y-1" : "space-y-2")}>
                 {next.items.map((item) => (
                   <li
                     key={item}
-                    className="flex gap-2 text-sm leading-relaxed md:text-base"
+                    className={cn(
+                      "flex gap-2 leading-relaxed",
+                      compact ? "text-sm" : "text-sm md:text-base",
+                    )}
                   >
-                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                    <span
+                      className={cn(
+                        "shrink-0 rounded-full bg-accent",
+                        compact ? "mt-1.5 h-1 w-1" : "mt-2 h-1.5 w-1.5",
+                      )}
+                    />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -91,7 +109,12 @@ export function ContentBlocks({
       nodes.push(
         <h2
           key={i}
-          className="font-display pt-2 text-xl font-semibold tracking-tight text-foreground md:text-2xl"
+          className={cn(
+            "font-display font-semibold tracking-tight text-foreground",
+            compact
+              ? "pt-1 text-base md:text-lg"
+              : "pt-2 text-xl md:text-2xl",
+          )}
         >
           {block.text}
         </h2>,
@@ -101,13 +124,21 @@ export function ContentBlocks({
 
     if (block.type === "list") {
       nodes.push(
-        <ul key={i} className="space-y-2 pl-1">
+        <ul key={i} className={cn("pl-1", compact ? "space-y-1" : "space-y-2")}>
           {block.items.map((item) => (
             <li
               key={item}
-              className="flex gap-2 text-sm leading-relaxed md:text-base"
+              className={cn(
+                "flex gap-2 leading-relaxed",
+                compact ? "text-sm" : "text-sm md:text-base",
+              )}
             >
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+              <span
+                className={cn(
+                  "shrink-0 rounded-full bg-accent",
+                  compact ? "mt-1.5 h-1 w-1" : "mt-2 h-1.5 w-1.5",
+                )}
+              />
               <span>{item}</span>
             </li>
           ))}
@@ -117,14 +148,26 @@ export function ContentBlocks({
     }
 
     nodes.push(
-      <p key={i} className="text-sm leading-relaxed md:text-base">
+      <p
+        key={i}
+        className={cn(
+          "leading-relaxed",
+          compact ? "text-sm" : "text-sm md:text-base",
+        )}
+      >
         {block.text}
       </p>,
     );
   }
 
   return (
-    <div className={cn("space-y-5 text-muted-foreground", className)}>
+    <div
+      className={cn(
+        "text-muted-foreground",
+        compact ? "space-y-2.5" : "space-y-5",
+        className,
+      )}
+    >
       {nodes}
     </div>
   );

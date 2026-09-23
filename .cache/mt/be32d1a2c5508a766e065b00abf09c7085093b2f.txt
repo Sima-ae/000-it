@@ -1,0 +1,1 @@
+Kuinka parannamme verkkosivuston turvallisuutta? SSL, palomuurit, haittaohjelmien tarkistus, säännölliset päivitykset ja suojatut määrityskäytännöt.

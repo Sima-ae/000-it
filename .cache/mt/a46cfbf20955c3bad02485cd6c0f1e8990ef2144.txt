@@ -1,0 +1,1 @@
+Zabezpečenie vašej stránky WordPress je mimoriadne dôležité. Náš tím poskytuje robustné bezpečnostné opatrenia vrátane skenovania škodlivého softvéru, nastavenia brány firewall a pravidelných aktualizácií zabezpečenia. Jadro, témy a doplnky WordPress tiež aktualizujeme, aby sme znížili riziko narušenia a problémov s kompatibilitou.

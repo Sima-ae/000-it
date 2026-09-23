@@ -47,8 +47,35 @@ export const GOOGLE_TRANSLATE_TL: Record<string, string> = {
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
+/** Google Translate wraps some phrases in `<g id="…">` tags. Those are not content. */
+function stripMtGTags(value: string) {
+  let out = value;
+  if (out.includes("<g") || out.includes("</g")) {
+    out = out.replace(/<\/?g\b[^>]*>/gi, "");
+  }
+  out = out
+    .replace(/&#10;/gi, "\n")
+    .replace(/&#39;/gi, "'")
+    .replace(/&apos;/gi, "'")
+    .replace(/&quot;/gi, '"')
+    .replace(/&amp;/gi, "&")
+    .replace(/&#(\d+);/g, (_, n) => {
+      const code = Number(n);
+      if (code === 10) return "\n";
+      if (code === 39) return "'";
+      try {
+        return String.fromCodePoint(code);
+      } catch {
+        return " ";
+      }
+    })
+    .replace(/\[[^\]]*(?:ترجمة|Translation|Übersetz|Traduction|Traducción)[^\]]*:\s*([^\]]+)\]/gi, "$1")
+    .replace(/\[[^\]]*(?:ترجمة|Translation|Übersetz|Traduction|Traducción)[^\]]*\]/gi, "");
+  return out;
+}
+
 function cleanText(value: string) {
-  return value.replace(/\s+/g, " ").trim();
+  return stripMtGTags(value).replace(/\s+/g, " ").trim();
 }
 
 function stripHtml(value: string) {
@@ -62,6 +89,9 @@ function isBad(out: string | null | undefined) {
       out,
     )
   ) {
+    return true;
+  }
+  if (/amnesty international|منظمة العفو|amnisti[aá]|amnestie international/i.test(out)) {
     return true;
   }
   return false;
@@ -603,7 +633,7 @@ export async function translateText(
     if (i > 0) await sleep(450);
     out.push(await translateChunkWithRetry(chunks[i], from, to, fromLocale, toLocale));
   }
-  const joined = !collapse ? out.join("") : cleanText(out.join("\n\n"));
+  const joined = !collapse ? stripMtGTags(out.join("")) : cleanText(out.join("\n\n"));
   const restored = restoreTerms(restorePlaceholders(joined, placeholders.tokens), brands.tokens);
 
   if (!isAcceptableTranslation(input, restored, fromLocale, toLocale)) {

@@ -1,0 +1,1 @@
+Hvordan forbedrer vi nettstedets sikkerhet? SSL, brannmurer, skanning av skadelig programvare, regelmessige oppdateringer og sikker konfigurasjonspraksis.

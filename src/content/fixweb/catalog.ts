@@ -1,6 +1,7 @@
 import {
   catalogGroupTitle,
   catalogServiceTitle,
+  catalogGroupSummary as catalogGroupSummaryI18n,
 } from "@/content/fixweb/catalog-title";
 import { localizedHref } from "@/i18n/pathnames";
 
@@ -792,6 +793,8 @@ const serviceGroupSummaries: Record<ServiceGroupId, { en: string; nl: string }> 
 };
 
 export function catalogGroupSummary(id: string, locale: string) {
+  const fromPack = catalogGroupSummaryI18n(id, locale, "");
+  if (fromPack) return fromPack;
   const row = serviceGroupSummaries[id as ServiceGroupId];
   if (!row) return "";
   return locale === "nl" ? row.nl : row.en;

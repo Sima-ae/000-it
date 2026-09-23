@@ -124,11 +124,12 @@
       "wordpress": "WordPress",
       "maintenance": "Karbantartás",
       "support": "Támogatás",
-      "ecommerceSeo": "E-commerce SEO",
-      "conversion": "Conversion",
+      "ecommerceSeo": "E-kereskedelem SEO",
+      "conversion": "Átalakítás",
       "speedOpt": "Core Web Vitals és sebesség",
-      "analytics": "Analytics",
-      "accessibility": "Akadálymentesség"
+      "analytics": "Analitika",
+      "accessibility": "Akadálymentesség",
+      "texts": "Szövegek"
     },
     "inquiry": {
       "wp": {
@@ -241,10 +242,10 @@
     "subtitle": "Minden ár tartalmazza a 21% ÁFÁ-t.",
     "plans": "Ready To Go - Teljes AI csomag",
     "support": "Support",
-    "sharedHosting": "Shared Hosting",
-    "wordpressHosting": "WordPress Hosting",
-    "vpsHosting": "VPS Hosting",
-    "webhosting": "Shared Hosting",
+    "sharedHosting": "Közös vendégfogadás",
+    "wordpressHosting": "WordPress tárhely",
+    "vpsHosting": "VPS tárhely",
+    "webhosting": "Közös vendégfogadás",
     "services": "Szolgáltatások és termékek",
     "typePlan": "Csomag",
     "typeService": "Szolgáltatás",
@@ -287,7 +288,7 @@
     "backHome": "Vissza haza"
   },
   "footer": {
-    "tagline": "Szolgáltatásokat és termékeket kínálunk vállalkozóknak és szabadúszóknak — hirdetéstől, AI‑integrációtól, AEO-tól, GEO-tól és SEO-tól, nyomdai termékektől, e‑mail marketingtől, grafikai tervezéstől, online marketingtől, karbantartástól, optimalizálástól, közösségimédia-kezeléstől, webdesigntól és WordPress-támogatástól a webhostingig és domainnevekig.",
+    "tagline": "Szolgáltatásokat és termékeket kínálunk vállalkozóknak és szabadúszóknak — hirdetéstől, AI‑integrációtól, AEO-tól, GEO-tól és SEO-tól, nyomdai termékektől, e‑mail marketingtől, grafikai tervezéstől, online marketingtől, karbantartástól, optimalizálástól, közösségimédia-kezeléstől, webdesigntól és WordPress-támogatástól a webhostingig és domainnevekig.",
     "rights": "Minden jog fenntartva.",
     "usefulLinks": "Hasznos linkek",
     "socialMedia": "Közösségi média",
@@ -438,7 +439,25 @@
     "company": "Társaság",
     "message": "Üzenet",
     "send": "Küldés",
-    "success": "Köszönöm! Hamarosan jelentkezünk."
+    "success": "Köszönöm! Hamarosan jelentkezünk.",
+    "detailsTitle": "Kapcsolati adatok",
+    "companyName": "TripleZero iT",
+    "addressLabel": "Cím",
+    "addressLine1": "Burlington Tower, 19th floor",
+    "addressLine2": "Business Bay, Al Abraj St.",
+    "addressLine3": "Dubai – United Arab Emirates",
+    "addressLine4": "",
+    "emailLabel": "E-mailek",
+    "emailAddress": "info@000-it.com",
+    "detailsNote": "Küldd el üzeneted az űrlapon — a lehető leggyorsabban válaszolunk.",
+    "routeLabel": "Útvonal",
+    "routeOpenAria": "Útvonal megnyitása a Google Mapsben",
+    "emailAddresses": [
+      "info@000-it.com",
+      "privacy@000-it.com",
+      "sales@000-it.com",
+      "support@000-it.com"
+    ]
   },
   "aiScan": {
     "title": "Ingyenes AI készenléti vizsgálat",
@@ -461,7 +480,7 @@
     "resultsTitle": "AI szkennelési eredmények",
     "contactTitle": "Kapcsolatfelvétel az AI szkenneléssel kapcsolatban",
     "contactDescription": "Hagyja meg adatait – segítünk értelmezni a pontszámokat és felvázolni a tervet.",
-    "contactMessageLead": "Szia TripleZero iT!\n\nLefuttattam egy mesterséges intelligencia vizsgálatot, és szeretném megvitatni az eredményeket.\n\nWebhely URL-címe: {url}\n\nPontszámok:\n{scores}\n\nKérdés / megjegyzések:"
+    "contactMessageLead": "Szia TripleZero iT! Lefuttattam egy mesterséges intelligencia vizsgálatot, és szeretném megvitatni az eredményeket. Webhely URL-címe: {url} Pontszámok: {scores} Kérdés / megjegyzések:"
   },
   "portfolio": {
     "title": "Portfólió",
@@ -659,8 +678,8 @@
     "results": "találat",
     "forQuery": "erre",
     "empty": "Nincs találat.",
-    "browseTitle": "Browse all questions",
-    "matchedHint": "Matched FAQ highlighted below"
+    "browseTitle": "Böngésszen az összes kérdésben",
+    "matchedHint": "Egyező GYIK az alábbiakban kiemelve"
   },
   "appointment": {
     "title": "Foglaljon időpontot",
@@ -729,9 +748,9 @@
     "title": "Élő chat",
     "subtitle": "TripleZero iT",
     "online": "Online",
-    "teaserLine1": "Need help?",
-    "teaserLine2": "Open the chat...",
-    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
+    "teaserLine1": "Segítségre van szüksége?",
+    "teaserLine2": "Nyissa meg a chat...",
+    "emptyChat": "Tegyen fel kérdést a 000-es ügynöknek – a GYIK először válaszol, szükség esetén az emberek.",
     "emptyTicket": "Írja le kérését – megnyitunk egy jegyet, amely szinkronizálva van az irányítópultjával.",
     "placeholder": "Írja be üzenetét…",
     "newTicket": "Új jegy",
@@ -769,7 +788,7 @@
   },
   "inquiry": {
     "websiteHint": "weboldal / webáruház",
-    "defaultMessage": "Szia TripleZero iT!\n\nSzeretnék többet megtudni a {service}-ről a {hint}-ünkhöz.\n\nWebhely URL:\nCél (pl. chatbot, termékasszisztens, tartalom-AI, egyéni):",
+    "defaultMessage": "Szia TripleZero iT! Szeretnék többet megtudni a {service}-ről a {hint}-ünkhöz. Webhely URL: Cél (pl. chatbot, termékasszisztens, tartalom-AI, egyéni):",
     "requestAi": "AI integráció kérése",
     "sendRequest": "Kérelem küldése",
     "dialogTitle": "Kapcsolatfelvétel a következővel kapcsolatban: {service}",
@@ -797,81 +816,81 @@
   },
   "agent000": {
     "name": "Agent 000",
-    "role": "Virtual FAQ & support assistant",
+    "role": "Virtuális GYIK és tudásasszisztens",
     "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
-    "placeholder": "Ask Agent 000 a question…",
-    "send": "Send",
-    "thinking": "Agent 000 is thinking…",
-    "mute": "Mute voice",
-    "unmute": "Unmute voice",
-    "actionBook": "Book appointment",
-    "actionTicket": "Open live chat / ticket",
+    "placeholder": "Tegyen fel kérdést a 000 ügynöknek…",
+    "send": "Elküld",
+    "thinking": "000 ügynök gondolkodik…",
+    "mute": "Néma hang",
+    "unmute": "Hang némításának feloldása",
+    "actionBook": "Foglaljon időpontot",
+    "actionTicket": "Nyissa meg az élő chat / jegyet",
     "actionContact": "Contact",
-    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket.",
-    "pickOption": "Pick the best match",
-    "relatedLinks": "Helpful links",
+    "error": "Sajnálom, nem tudtam elérni a tudásbázisomat. Kérjük, próbálja újra, vagy nyisson jegyet.",
+    "pickOption": "Válassza ki a legjobb egyezést",
+    "relatedLinks": "Hasznos linkek",
     "linkFaq": "FAQ",
-    "linkKb": "Knowledge base"
+    "linkKb": "Tudásbázis"
   },
   "wordpressSupport": {
-    "saveYearlyHint": "Save up to 20% for yearly monitoring & support!",
-    "savePercent": "Save {percent}%",
-    "orderNow": "Order Now",
-    "noCreditCard": "No credit card required",
+    "saveYearlyHint": "Takarítson meg 10%-ot éves számlázással!",
+    "savePercent": "{percent}% megtakarítás",
+    "orderNow": "Rendeljen most",
+    "noCreditCard": "Hitelkártya nem szükséges",
     "packages": {
       "pro": {
         "name": "Pro",
-        "tagline": "All-in-One Support Package"
+        "tagline": "All-in-One támogatási csomag"
       },
       "double": {
         "name": "Double",
-        "tagline": "All-in-One Support Package"
+        "tagline": "All-in-One támogatási csomag"
       },
       "premium": {
         "name": "Premium",
-        "tagline": "All-in-One Support Package"
+        "tagline": "All-in-One támogatási csomag"
       }
     },
     "features": {
       "sites": {
-        "pro": "1 website",
-        "double": "2 websites",
-        "premium": "3-5 websites"
+        "pro": "1 weboldal",
+        "double": "2 weboldal",
+        "premium": "3-5 weboldal"
       },
       "monitoring": {
-        "pro": "24/7 monitoring & support",
-        "double": "24/7 monitoring & support",
-        "premium": "24/7 monitoring & support"
+        "pro": "24 órás felügyelet és támogatás",
+        "double": "24 órás felügyelet és támogatás",
+        "premium": "24 órás felügyelet és támogatás"
       },
       "backups": {
-        "pro": "Daily backups",
-        "double": "Daily backups",
-        "premium": "Daily backups"
+        "pro": "Napi biztonsági mentések",
+        "double": "Napi biztonsági mentések",
+        "premium": "Napi biztonsági mentések"
       },
       "updates": {
-        "pro": "WordPress & plugin updates",
-        "double": "WordPress & plugin updates",
-        "premium": "WordPress & plugin updates"
+        "pro": "WordPress és plugin frissítések",
+        "double": "WordPress és plugin frissítések",
+        "premium": "WordPress és plugin frissítések"
       },
       "errors": {
-        "pro": "Fix website errors",
-        "double": "Fix website errors",
-        "premium": "Fix website errors"
+        "pro": "Javítsa ki a webhely hibáit",
+        "double": "Javítsa ki a webhely hibáit",
+        "premium": "Javítsa ki a webhely hibáit"
       },
       "malware": {
-        "pro": "Malware removal & security",
-        "double": "Malware removal & security",
-        "premium": "Malware removal & security"
+        "pro": "Malware eltávolítás és biztonság",
+        "double": "Malware eltávolítás és biztonság",
+        "premium": "Malware eltávolítás és biztonság"
       },
       "speed": {
-        "pro": "Speed optimization",
-        "double": "Speed optimization",
-        "premium": "Speed optimization"
+        "pro": "Sebesség optimalizálás",
+        "double": "Sebesség optimalizálás",
+        "premium": "Sebesség optimalizálás"
       },
       "seo": {
-        "pro": "SEO optimization",
-        "double": "SEO optimization",
-        "premium": "SEO optimization"
+        "pro": "SEO optimalizálás",
+        "double": "SEO optimalizálás",
+        "premium": "SEO optimalizálás"
       }
     }
   }

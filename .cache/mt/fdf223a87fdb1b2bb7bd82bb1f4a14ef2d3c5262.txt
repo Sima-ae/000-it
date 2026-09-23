@@ -1,0 +1,1 @@
+Jak zvýšíme bezpečnost webových stránek? SSL, firewally, skenování malwaru, pravidelné aktualizace a postupy bezpečné konfigurace.

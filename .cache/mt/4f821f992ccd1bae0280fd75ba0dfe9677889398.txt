@@ -1,0 +1,1 @@
+Att hålla din WordPress-webbplats säker är av största vikt. Vårt team tillhandahåller robusta säkerhetsåtgärder, inklusive skanning av skadlig programvara, brandväggsinstallation och regelbundna säkerhetsuppdateringar. Vi håller även WordPress kärna, teman och plugins uppdaterade för att minska risken för intrång och kompatibilitetsproblem.

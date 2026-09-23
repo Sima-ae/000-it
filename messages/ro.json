@@ -124,11 +124,12 @@
       "wordpress": "WordPress",
       "maintenance": "Întreţinere",
       "support": "Sprijin",
-      "ecommerceSeo": "E-commerce SEO",
-      "conversion": "Conversion",
+      "ecommerceSeo": "SEO pentru comerț electronic",
+      "conversion": "Conversie",
       "speedOpt": "Core Web Vitals și viteză",
       "analytics": "Analytics",
-      "accessibility": "Accesibilitate"
+      "accessibility": "Accesibilitate",
+      "texts": "Texte"
     },
     "inquiry": {
       "wp": {
@@ -169,7 +170,7 @@
     "mostChosen": "Cel mai popular",
     "features": {
       "starter": [
-        "1× nume de domeniu .COM / .EU / .NL",
+        "1× nume de domeniu .COM / .EU / .RO",
         "1× gazduire web",
         "1× magazin / site de comerț electronic",
         "1× agent AI",
@@ -179,7 +180,7 @@
         "Monitorizare 24/7"
       ],
       "growth": [
-        "1× nume de domeniu .COM / .EU / .NL",
+        "1× nume de domeniu .COM / .EU / .RO",
         "1× gazduire web",
         "1× magazin / site de comerț electronic",
         "2× agenți AI",
@@ -241,10 +242,10 @@
     "subtitle": "Toate prețurile includ TVA 21%.",
     "plans": "Ready To Go - Pachet AI complet",
     "support": "Support",
-    "sharedHosting": "Shared Hosting",
-    "wordpressHosting": "WordPress Hosting",
-    "vpsHosting": "VPS Hosting",
-    "webhosting": "Shared Hosting",
+    "sharedHosting": "Găzduire partajată",
+    "wordpressHosting": "Găzduire WordPress",
+    "vpsHosting": "Găzduire VPS",
+    "webhosting": "Găzduire partajată",
     "services": "Servicii și produse",
     "typePlan": "Plan",
     "typeService": "Serviciu",
@@ -287,7 +288,7 @@
     "backHome": "Înapoi acasă"
   },
   "footer": {
-    "tagline": "Oferim servicii și produse pentru antreprenori și freelanceri — de la publicitate, integrare AI, AEO, GEO și SEO, tipografie, email marketing, design grafic, marketing online, mentenanță, optimizare, gestionarea rețelelor sociale, webdesign și suport WordPress până la webhosting și nume de domeniu.",
+    "tagline": "Oferim servicii și produse pentru antreprenori și freelanceri — de la publicitate, integrare AI, AEO, GEO și SEO, tipografie, email marketing, design grafic, marketing online, mentenanță, optimizare, gestionarea rețelelor sociale, webdesign și suport WordPress până la webhosting și nume de domeniu.",
     "rights": "Toate drepturile rezervate.",
     "usefulLinks": "Link-uri utile",
     "socialMedia": "Social media",
@@ -438,7 +439,25 @@
     "company": "Companie",
     "message": "Mesaj",
     "send": "Trimite",
-    "success": "Mulţumesc! Te vom reveni în curând."
+    "success": "Mulţumesc! Te vom reveni în curând.",
+    "detailsTitle": "Date de contact",
+    "companyName": "TripleZero iT",
+    "addressLabel": "Adresă",
+    "addressLine1": "Burlington Tower, 19th floor",
+    "addressLine2": "Business Bay, Al Abraj St.",
+    "addressLine3": "Dubai – United Arab Emirates",
+    "addressLine4": "",
+    "emailLabel": "E-mailuri",
+    "emailAddress": "info@000-it.com",
+    "detailsNote": "Trimite mesajul prin formular — răspundem cât de curând posibil.",
+    "routeLabel": "Traseu",
+    "routeOpenAria": "Deschide traseul în Google Maps",
+    "emailAddresses": [
+      "info@000-it.com",
+      "privacy@000-it.com",
+      "sales@000-it.com",
+      "support@000-it.com"
+    ]
   },
   "aiScan": {
     "title": "Scanare gratuită de pregătire AI",
@@ -461,7 +480,7 @@
     "resultsTitle": "Rezultatele scanării AI",
     "contactTitle": "Contact despre scanarea AI",
     "contactDescription": "Lasă-ți detaliile - te vom ajuta la interpretarea scorurilor și te vom contura un plan.",
-    "contactMessageLead": "Bună, TripleZero iT,\n\nAm efectuat o scanare AI și aș dori să discut despre rezultate.\n\nAdresa URL a site-ului web: {url}\n\nScoruri:\n{scores}\n\nÎntrebare/note:"
+    "contactMessageLead": "Bună, TripleZero iT, Am efectuat o scanare AI și aș dori să discut despre rezultate. Adresa URL a site-ului web: {url} Scoruri: {scores} Întrebare/note:"
   },
   "portfolio": {
     "title": "Portofoliu",
@@ -659,8 +678,8 @@
     "results": "rezultate",
     "forQuery": "pentru",
     "empty": "Nu s-au găsit rezultate.",
-    "browseTitle": "Browse all questions",
-    "matchedHint": "Matched FAQ highlighted below"
+    "browseTitle": "Răsfoiți toate întrebările",
+    "matchedHint": "Întrebări frecvente potrivite evidențiate mai jos"
   },
   "appointment": {
     "title": "Rezervă",
@@ -685,7 +704,7 @@
     "extras": "Suplimente",
     "when": "Data",
     "none": "niciuna",
-    "requestReceived": "A primit cererea                                                                                           ",
+    "requestReceived": "A primit cererea",
     "thankYou": "Mulțumim! Îți vom confirma programarea prin e-mail cât mai curând posibil (de obicei, în termen de o zi lucrătoare).",
     "back": "Înapoi",
     "next": "Următor",
@@ -700,7 +719,7 @@
     "stepDetails": "Detalii",
     "stepPayment": "Plata",
     "stepDone": "Terminat",
-    "stepSchedule": "Programați ",
+    "stepSchedule": "Programați",
     "stepConfirm": "Confirmare",
     "allServicesCta": "Click aici pentru toate serviciile!",
     "pageIntro": "Alege un serviciu, o dată și o oră — te vom confirma programarea prin e-mail."
@@ -729,9 +748,9 @@
     "title": "Chat live",
     "subtitle": "TripleZero iT",
     "online": "Online",
-    "teaserLine1": "Need help?",
-    "teaserLine2": "Open the chat...",
-    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
+    "teaserLine1": "Ai nevoie de ajutor?",
+    "teaserLine2": "Deschide chatul...",
+    "emptyChat": "Puneți o întrebare agentului 000 — Întrebările frecvente răspund mai întâi, oamenii când au nevoie.",
     "emptyTicket": "Descrie solicitarea ta — vom deschide un bilet sincronizat cu tabloul de bord.",
     "placeholder": "Introdu mesajul tău…",
     "newTicket": "Bilet nou",
@@ -769,7 +788,7 @@
   },
   "inquiry": {
     "websiteHint": "site web / magazin online",
-    "defaultMessage": "Bună ziua TripleZero iT,\n\nAș dori să aflu mai multe despre {service} pentru {hint}.\n\nAdresa URL a site-ului web:\nObiectiv (de exemplu, chatbot, asistent de produs, AI de conținut, personalizat):",
+    "defaultMessage": "Bună ziua TripleZero iT, Aș dori să aflu mai multe despre {service} pentru {hint}. Adresa URL a site-ului web: Obiectiv (de exemplu, chatbot, asistent de produs, AI de conținut, personalizat):",
     "requestAi": "Solicitați integrarea AI",
     "sendRequest": "Trimite cererea",
     "dialogTitle": "Contact despre {service}",
@@ -797,81 +816,81 @@
   },
   "agent000": {
     "name": "Agent 000",
-    "role": "Virtual FAQ & support assistant",
+    "role": "Întrebări frecvente virtuale și asistent de cunoștințe",
     "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
-    "placeholder": "Ask Agent 000 a question…",
-    "send": "Send",
-    "thinking": "Agent 000 is thinking…",
-    "mute": "Mute voice",
-    "unmute": "Unmute voice",
-    "actionBook": "Book appointment",
-    "actionTicket": "Open live chat / ticket",
+    "placeholder": "Pune o întrebare agentului 000...",
+    "send": "Trimite",
+    "thinking": "Agentul 000 se gândește...",
+    "mute": "Voce mută",
+    "unmute": "Activați vocea",
+    "actionBook": "Rezervați o programare",
+    "actionTicket": "Deschide chatul live / bilet",
     "actionContact": "Contact",
-    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket.",
-    "pickOption": "Pick the best match",
-    "relatedLinks": "Helpful links",
+    "error": "Îmi pare rău, nu am putut ajunge la baza mea de cunoștințe. Vă rugăm să încercați din nou sau deschideți un bilet.",
+    "pickOption": "Alege cel mai bun meci",
+    "relatedLinks": "Linkuri utile",
     "linkFaq": "FAQ",
-    "linkKb": "Knowledge base"
+    "linkKb": "Baza de cunoștințe"
   },
   "wordpressSupport": {
-    "saveYearlyHint": "Save up to 20% for yearly monitoring & support!",
-    "savePercent": "Save {percent}%",
-    "orderNow": "Order Now",
-    "noCreditCard": "No credit card required",
+    "saveYearlyHint": "Economisiți 10% cu facturarea anuală!",
+    "savePercent": "Economisiți {%}%",
+    "orderNow": "Comanda acum",
+    "noCreditCard": "Nu este necesar un card de credit",
     "packages": {
       "pro": {
         "name": "Pro",
-        "tagline": "All-in-One Support Package"
+        "tagline": "Pachet de asistență All-in-One"
       },
       "double": {
         "name": "Double",
-        "tagline": "All-in-One Support Package"
+        "tagline": "Pachet de asistență All-in-One"
       },
       "premium": {
         "name": "Premium",
-        "tagline": "All-in-One Support Package"
+        "tagline": "Pachet de asistență All-in-One"
       }
     },
     "features": {
       "sites": {
-        "pro": "1 website",
-        "double": "2 websites",
-        "premium": "3-5 websites"
+        "pro": "1 site web",
+        "double": "2 site-uri web",
+        "premium": "3-5 site-uri web"
       },
       "monitoring": {
-        "pro": "24/7 monitoring & support",
-        "double": "24/7 monitoring & support",
-        "premium": "24/7 monitoring & support"
+        "pro": "Monitorizare și asistență 24/7",
+        "double": "Monitorizare și asistență 24/7",
+        "premium": "Monitorizare și asistență 24/7"
       },
       "backups": {
-        "pro": "Daily backups",
-        "double": "Daily backups",
-        "premium": "Daily backups"
+        "pro": "Backup-uri zilnice",
+        "double": "Backup-uri zilnice",
+        "premium": "Backup-uri zilnice"
       },
       "updates": {
-        "pro": "WordPress & plugin updates",
-        "double": "WordPress & plugin updates",
-        "premium": "WordPress & plugin updates"
+        "pro": "Actualizări WordPress și pluginuri",
+        "double": "Actualizări WordPress și pluginuri",
+        "premium": "Actualizări WordPress și pluginuri"
       },
       "errors": {
-        "pro": "Fix website errors",
-        "double": "Fix website errors",
-        "premium": "Fix website errors"
+        "pro": "Remediați erorile site-ului web",
+        "double": "Remediați erorile site-ului web",
+        "premium": "Remediați erorile site-ului web"
       },
       "malware": {
-        "pro": "Malware removal & security",
-        "double": "Malware removal & security",
-        "premium": "Malware removal & security"
+        "pro": "Eliminarea programelor malware și securitate",
+        "double": "Eliminarea programelor malware și securitate",
+        "premium": "Eliminarea programelor malware și securitate"
       },
       "speed": {
-        "pro": "Speed optimization",
-        "double": "Speed optimization",
-        "premium": "Speed optimization"
+        "pro": "Optimizarea vitezei",
+        "double": "Optimizarea vitezei",
+        "premium": "Optimizarea vitezei"
       },
       "seo": {
-        "pro": "SEO optimization",
-        "double": "SEO optimization",
-        "premium": "SEO optimization"
+        "pro": "Optimizare SEO",
+        "double": "Optimizare SEO",
+        "premium": "Optimizare SEO"
       }
     }
   }

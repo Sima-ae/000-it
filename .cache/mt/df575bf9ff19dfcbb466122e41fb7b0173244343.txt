@@ -1,0 +1,1 @@
+A WordPress webhelyének biztonságban tartása kiemelten fontos. Csapatunk robusztus biztonsági intézkedéseket kínál, beleértve a rosszindulatú programok ellenőrzését, a tűzfal beállítását és a rendszeres biztonsági frissítéseket. A WordPress magját, témáit és bővítményeit is naprakészen tartjuk, hogy csökkentsük a jogsértések és a kompatibilitási problémák kockázatát.

@@ -1,8 +1,11 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import Image from "next/image";
 import { PricingPlans } from "@/components/marketing/PricingPlans";
 import { ShopProductCard } from "@/components/shop/ShopProductCard";
 import { ShopHostingSection } from "@/components/shop/ShopHostingSection";
 import { ShopSupportSection } from "@/components/shop/ShopSupportSection";
+import { Reveal } from "@/components/marketing/Reveal";
+import { BRANDING_IMAGES } from "@/lib/branding-images";
 import {
   isSupportPackageSlug,
   loadShopCatalogFromDb,
@@ -125,6 +128,21 @@ export default async function ShopPage({
   return (
     <div className="mx-auto max-w-6xl px-4 pb-14 pt-6 md:px-6 md:pb-20 md:pt-8">
       <h1 className="sr-only">{t("title")}</h1>
+
+      <Reveal>
+        <div className="mb-6 flex justify-center md:mb-8">
+          <div className="relative h-32 w-40 overflow-hidden sm:h-36 sm:w-48">
+            <Image
+              src={BRANDING_IMAGES.consultantLaptop}
+              alt=""
+              fill
+              unoptimized
+              sizes="192px"
+              className="object-contain object-bottom"
+            />
+          </div>
+        </div>
+      </Reveal>
 
       <PricingPlans
         variant="embedded"

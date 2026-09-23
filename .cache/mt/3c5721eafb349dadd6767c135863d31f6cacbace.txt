@@ -1,0 +1,1 @@
+Daha sürətli səhifələr və daha güclü Core Web Vitals — daha yaxşı UX, sıralamalar və yığınlar arasında dönüşüm.

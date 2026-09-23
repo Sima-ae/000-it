@@ -39,7 +39,7 @@ function expandContactBlocks(blocks: ContentBlock[]): ContentBlock[] {
 
 function LegalBlocks({ blocks }: { blocks: ContentBlock[] }) {
   if (!blocks.length) return null;
-  return <ContentBlocks blocks={expandContactBlocks(blocks)} />;
+  return <ContentBlocks blocks={expandContactBlocks(blocks)} compact />;
 }
 
 export async function LegalDocument({
@@ -56,53 +56,57 @@ export async function LegalDocument({
       : "info@000-it.com";
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-14 md:px-6 md:py-20">
-      <header className="space-y-3">
-        <p className="text-sm font-medium tracking-wide text-muted-foreground">TripleZero iT</p>
-        <h1 className="font-display text-4xl font-semibold tracking-tight md:text-5xl">
+    <div className="mx-auto max-w-3xl px-4 py-8 md:px-6 md:py-10">
+      <header className="space-y-1">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-primary">
+          TripleZero iT
+        </p>
+        <h1 className="font-display text-2xl font-semibold tracking-tight md:text-4xl">
           {page.title}
         </h1>
-        <p className="text-sm text-muted-foreground md:text-base">{page.updatedLabel}</p>
+        <p className="text-xs text-muted-foreground md:text-sm">{page.updatedLabel}</p>
       </header>
 
-      <div className="mt-10 space-y-10">
-        <article className="rounded-[1.75rem] border border-border/60 bg-background/70 p-6 shadow-sm md:p-10">
+      <div className="mt-6 space-y-5">
+        <article className="rounded-2xl border border-border/60 bg-background/70 p-4 shadow-sm md:p-6">
           <LegalBlocks blocks={page.beforeVendors} />
 
           {page.cookieVendors.length > 0 ? (
-            <div className="mt-10 space-y-8">
+            <div className="mt-5 space-y-4">
               {page.cookieVendors.map((vendor) => (
                 <section
                   key={vendor.name}
-                  className="space-y-4 border-t border-border/50 pt-8"
+                  className="space-y-2 border-t border-border/50 pt-4"
                 >
-                  <div className="space-y-1">
-                    <h2 className="font-display text-xl font-semibold tracking-tight text-foreground md:text-2xl">
+                  <div className="space-y-0.5">
+                    <h2 className="font-display text-base font-semibold tracking-tight text-foreground md:text-lg">
                       {vendor.name}
                     </h2>
                     {vendor.category ? (
-                      <p className="text-sm text-muted-foreground">{vendor.category}</p>
+                      <p className="text-xs text-muted-foreground md:text-sm">
+                        {vendor.category}
+                      </p>
                     ) : null}
                   </div>
                   {vendor.usage ? (
-                    <p className="text-sm leading-relaxed text-muted-foreground md:text-base">
+                    <p className="text-sm leading-relaxed text-muted-foreground">
                       {vendor.usage}
                     </p>
                   ) : null}
                   {vendor.sharing ? (
-                    <p className="text-sm leading-relaxed text-muted-foreground md:text-base">
-                      <span className="font-medium text-foreground">{t("sharingData")}</span>
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                      <span className="font-medium text-foreground">{t("sharingData")} </span>
                       {vendor.sharing}
                     </p>
                   ) : null}
                   {vendor.cookies.length > 0 ? (
                     <div className="overflow-x-auto rounded-xl border border-border/60">
-                      <table className="min-w-full text-left text-sm">
+                      <table className="min-w-full text-left text-xs md:text-sm">
                         <thead className="bg-muted/40 text-foreground">
                           <tr>
-                            <th className="px-3 py-2 font-medium">{t("name")}</th>
-                            <th className="px-3 py-2 font-medium">{t("expiration")}</th>
-                            <th className="px-3 py-2 font-medium">{t("function")}</th>
+                            <th className="px-2.5 py-1.5 font-medium">{t("name")}</th>
+                            <th className="px-2.5 py-1.5 font-medium">{t("expiration")}</th>
+                            <th className="px-2.5 py-1.5 font-medium">{t("function")}</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -111,13 +115,13 @@ export async function LegalDocument({
                               key={`${vendor.name}-${cookie.name}-${idx}`}
                               className="border-t border-border/50"
                             >
-                              <td className="px-3 py-2 align-top font-mono text-xs text-foreground md:text-sm">
+                              <td className="px-2.5 py-1.5 align-top font-mono text-[11px] text-foreground md:text-xs">
                                 {cookie.name}
                               </td>
-                              <td className="px-3 py-2 align-top text-muted-foreground">
+                              <td className="px-2.5 py-1.5 align-top text-muted-foreground">
                                 {cookie.expiration}
                               </td>
-                              <td className="px-3 py-2 align-top text-muted-foreground">
+                              <td className="px-2.5 py-1.5 align-top text-muted-foreground">
                                 {cookie.function}
                               </td>
                             </tr>
@@ -132,13 +136,13 @@ export async function LegalDocument({
           ) : null}
 
           {page.afterVendors.length > 0 ? (
-            <div className="mt-10">
+            <div className="mt-5">
               <LegalBlocks blocks={page.afterVendors} />
             </div>
           ) : null}
         </article>
 
-        <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground">
+        <nav className="flex flex-wrap gap-x-4 gap-y-1.5 text-xs text-muted-foreground md:text-sm">
           {page.related.map((item) => (
             <SoftLink
               key={item.href}

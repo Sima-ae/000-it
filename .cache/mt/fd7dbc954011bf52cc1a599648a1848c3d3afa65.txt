@@ -1,0 +1,1 @@
+Kako možemo poboljšati sigurnost web stranice? SSL, vatrozidi, skeniranje zlonamjernog softvera, redovita ažuriranja i sigurne konfiguracijske prakse.

@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { GlassCard } from "@/components/marketing/GlassCard";
 import { Reveal } from "@/components/marketing/Reveal";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
+import { BRANDING_IMAGES } from "@/lib/branding-images";
 import { buildStaticPageMetadata } from "@/lib/seo";
 import { localizedHref } from "@/i18n/pathnames";
 
@@ -85,7 +87,7 @@ export default async function AboutPage({
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8 md:px-6 md:py-10">
-      <section className="grid items-end gap-6 lg:grid-cols-[1.25fr_0.75fr]">
+      <section className="grid items-center gap-6 lg:grid-cols-[1.15fr_0.85fr]">
         <Reveal>
           <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-primary">
             {t("eyebrow")}
@@ -108,10 +110,7 @@ export default async function AboutPage({
               </SoftLink>
             </Button>
           </div>
-        </Reveal>
-
-        <Reveal delay={0.05}>
-          <div className="grid grid-cols-3 gap-2">
+          <div className="mt-5 grid grid-cols-3 gap-2">
             {stats.map((stat) => (
               <div
                 key={stat.valueKey}
@@ -125,6 +124,20 @@ export default async function AboutPage({
                 </p>
               </div>
             ))}
+          </div>
+        </Reveal>
+
+        <Reveal delay={0.05}>
+          <div className="relative aspect-4/3 overflow-hidden rounded-3xl bg-muted/40 shadow-sm">
+            <Image
+              src={BRANDING_IMAGES.duoSuccess}
+              alt=""
+              fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 42vw"
+              unoptimized
+              className="object-cover object-center"
+            />
           </div>
         </Reveal>
       </section>
@@ -155,19 +168,31 @@ export default async function AboutPage({
 
       <section className="mt-9">
         <Reveal>
-          <GlassCard className="p-5 md:p-6" interactive={false}>
-            <h2 className="font-display text-xl font-semibold tracking-tight md:text-2xl">
-              {t("storyTitle")}
-            </h2>
-            <p className="mt-2 text-sm font-medium leading-relaxed text-foreground md:text-base">
-              {t("storyLead")}
-            </p>
-            <div className="mt-3 space-y-2.5 text-sm leading-relaxed text-muted-foreground md:text-[15px]">
-              <p>{t("storyP1")}</p>
-              <p>{t("storyP2")}</p>
-              <p>{t("storyP3")}</p>
+          <div className="grid items-stretch gap-3 lg:grid-cols-[0.9fr_1.1fr]">
+            <div className="relative min-h-56 overflow-hidden rounded-3xl bg-muted/40 lg:min-h-full">
+              <Image
+                src={BRANDING_IMAGES.consultantLaptop}
+                alt=""
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                unoptimized
+                className="object-cover object-[center_20%]"
+              />
             </div>
-          </GlassCard>
+            <GlassCard className="p-5 md:p-6" interactive={false}>
+              <h2 className="font-display text-xl font-semibold tracking-tight md:text-2xl">
+                {t("storyTitle")}
+              </h2>
+              <p className="mt-2 text-sm font-medium leading-relaxed text-foreground md:text-base">
+                {t("storyLead")}
+              </p>
+              <div className="mt-3 space-y-2.5 text-sm leading-relaxed text-muted-foreground md:text-[15px]">
+                <p>{t("storyP1")}</p>
+                <p>{t("storyP2")}</p>
+                <p>{t("storyP3")}</p>
+              </div>
+            </GlassCard>
+          </div>
         </Reveal>
       </section>
 
@@ -241,14 +266,26 @@ export default async function AboutPage({
 
       <section className="mt-9 grid gap-2.5 lg:grid-cols-[0.95fr_1.05fr]">
         <Reveal>
-          <GlassCard className="h-full p-5" interactive={false}>
-            <h2 className="font-display text-xl font-semibold tracking-tight md:text-2xl">
-              {t("serveTitle")}
-            </h2>
-            <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground md:text-[15px]">
-              {t("serveText")}
-            </p>
-          </GlassCard>
+          <div className="grid h-full gap-2.5 sm:grid-cols-2 lg:grid-cols-1">
+            <div className="relative min-h-44 overflow-hidden rounded-3xl bg-muted/40">
+              <Image
+                src={BRANDING_IMAGES.collaboration}
+                alt=""
+                fill
+                sizes="(max-width: 1024px) 50vw, 30vw"
+                unoptimized
+                className="object-cover"
+              />
+            </div>
+            <GlassCard className="h-full p-5" interactive={false}>
+              <h2 className="font-display text-xl font-semibold tracking-tight md:text-2xl">
+                {t("serveTitle")}
+              </h2>
+              <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground md:text-[15px]">
+                {t("serveText")}
+              </p>
+            </GlassCard>
+          </div>
         </Reveal>
 
         <Reveal delay={0.04}>
@@ -273,7 +310,17 @@ export default async function AboutPage({
       <section className="mt-8">
         <Reveal>
           <div className="relative flex min-h-44 flex-col justify-between overflow-hidden rounded-3xl p-5 text-white md:p-6">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(94,59,136,0.55),transparent_45%),linear-gradient(145deg,#2a1845,#14181f_60%,#0f1720)]" />
+            <div className="absolute inset-0">
+              <Image
+                src={BRANDING_IMAGES.tabletMarketer}
+                alt=""
+                fill
+                sizes="(max-width: 1152px) 100vw, 1152px"
+                unoptimized
+                className="object-cover object-center opacity-45"
+              />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(94,59,136,0.55),transparent_45%),linear-gradient(145deg,rgba(42,24,69,0.88),rgba(20,24,31,0.92)_60%,rgba(15,23,32,0.94))]" />
+            </div>
             <div className="relative max-w-xl">
               <p className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
                 {t("readyTitle")}

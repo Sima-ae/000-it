@@ -104,8 +104,8 @@
       "community": "Gestão comunitária",
       "webhosting": "Hospedagem na web",
       "domains": "Domínios",
-      "ai": "IA",
-      "aeo": "OEA",
+      "ai": "AI",
+      "aeo": "AEO",
       "geo": "GEO",
       "seo": "SEO",
       "chatbots": "Bots de bate-papo",
@@ -127,8 +127,9 @@
       "ecommerceSeo": "SEO e-commerce",
       "conversion": "Conversão",
       "speedOpt": "Core Web Vitals e velocidade",
-      "analytics": "Analytics",
-      "accessibility": "Acessibilidade"
+      "analytics": "Análise",
+      "accessibility": "Acessibilidade",
+      "texts": "Textos"
     },
     "inquiry": {
       "wp": {
@@ -169,7 +170,7 @@
     "mostChosen": "Mais popular",
     "features": {
       "starter": [
-        "1× nome de domínio .COM / .EU / .NL",
+        "1× nome de domínio .COM / .EU / .PT",
         "1× hospedagem na web",
         "1× loja/site de comércio eletrônico",
         "1× agente AI",
@@ -179,7 +180,7 @@
         "Monitoramento 24/7"
       ],
       "growth": [
-        "1× nome de domínio .COM / .EU / .NL",
+        "1× nome de domínio .COM / .EU / .PT",
         "1× hospedagem na web",
         "1× loja/site de comércio eletrônico",
         "2× agentes AI",
@@ -241,10 +242,10 @@
     "subtitle": "Todos os preços incluem 21% de IVA.",
     "plans": "Ready To Go - Pacote IA completo",
     "support": "Support",
-    "sharedHosting": "Shared Hosting",
-    "wordpressHosting": "WordPress Hosting",
-    "vpsHosting": "VPS Hosting",
-    "webhosting": "Shared Hosting",
+    "sharedHosting": "Hospedagem partilhada",
+    "wordpressHosting": "Hospedagem WordPress",
+    "vpsHosting": "hosting vps",
+    "webhosting": "Hospedagem partilhada",
     "services": "Serviços e produtos",
     "typePlan": "Plano",
     "typeService": "Serviço",
@@ -287,7 +288,7 @@
     "backHome": "De volta para casa"
   },
   "footer": {
-    "tagline": "Oferecemos serviços e produtos para empresários e freelancers, desde publicidade, integração de IA, AEO, GEO e SEO, impressão, email marketing, design gráfico, marketing online, manutenção, otimização, gestão de redes sociais, web design e suporte WordPress até alojamento web e nomes de domínio.",
+    "tagline": "Oferecemos serviços e produtos para empresários e freelancers, desde publicidade, integração de IA, AEO, GEO e SEO, impressão, email marketing, design gráfico, marketing online, manutenção, otimização, gestão de redes sociais, web design e suporte WordPress até alojamento web e nomes de domínio.",
     "rights": "Todos os direitos reservados.",
     "usefulLinks": "Ligações úteis",
     "socialMedia": "Redes sociais",
@@ -438,7 +439,25 @@
     "company": "Empresa",
     "message": "Mensagem",
     "send": "Enviar",
-    "success": "Obrigado! Entraremos em contato com você em breve."
+    "success": "Obrigado! Entraremos em contato com você em breve.",
+    "detailsTitle": "Dados de contacto",
+    "companyName": "TripleZero iT",
+    "addressLabel": "Morada",
+    "addressLine1": "Burlington Tower, 19th floor",
+    "addressLine2": "Business Bay, Al Abraj St.",
+    "addressLine3": "Dubai – United Arab Emirates",
+    "addressLine4": "",
+    "emailLabel": "E-mails",
+    "emailAddress": "info@000-it.com",
+    "detailsNote": "Envie a mensagem pelo formulário — respondemos o mais depressa possível.",
+    "routeLabel": "Como chegar",
+    "routeOpenAria": "Abrir como chegar no Google Maps",
+    "emailAddresses": [
+      "info@000-it.com",
+      "privacy@000-it.com",
+      "sales@000-it.com",
+      "support@000-it.com"
+    ]
   },
   "aiScan": {
     "title": "Verificação de prontidão AI gratuita",
@@ -461,7 +480,7 @@
     "resultsTitle": "Resultados da verificação de IA",
     "contactTitle": "Contato sobre varredura de IA",
     "contactDescription": "Deixe seus dados – nós ajudaremos a interpretar as pontuações e traçar um plano.",
-    "contactMessageLead": "Olá TripleZero iT,\n\nExecutei uma varredura de IA e gostaria de discutir os resultados.\n\nURL do site: {url}\n\nPontuações:\n{scores}\n\nPergunta/notas:"
+    "contactMessageLead": "Olá TripleZero iT, Executei uma varredura de IA e gostaria de discutir os resultados. URL do site: {url} Pontuações: {scores} Pergunta/notas:"
   },
   "portfolio": {
     "title": "Portfólio",
@@ -659,8 +678,8 @@
     "results": "resultados",
     "forQuery": "para",
     "empty": "Nenhum resultado encontrado.",
-    "browseTitle": "Browse all questions",
-    "matchedHint": "Matched FAQ highlighted below"
+    "browseTitle": "Navegue por todas as perguntas",
+    "matchedHint": "Perguntas frequentes correspondentes destacadas abaixo"
   },
   "appointment": {
     "title": "Marque uma consulta",
@@ -729,9 +748,9 @@
     "title": "Bate-papo ao vivo",
     "subtitle": "TripleZero iT",
     "online": "Online",
-    "teaserLine1": "Need help?",
-    "teaserLine2": "Open the chat...",
-    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
+    "teaserLine1": "Precisar de ajuda?",
+    "teaserLine2": "Abra o bate-papo...",
+    "emptyChat": "Faça uma pergunta ao Agente 000 – as perguntas frequentes respondem primeiro, humanos quando necessário.",
     "emptyTicket": "Descreva sua solicitação — abriremos um ticket sincronizado com seu painel.",
     "placeholder": "Digite sua mensagem…",
     "newTicket": "Novo ingresso",
@@ -769,7 +788,7 @@
   },
   "inquiry": {
     "websiteHint": "site/loja virtual",
-    "defaultMessage": "Olá TripleZero iT,\n\nEu gostaria de saber mais sobre {service} para nosso {hint}.\n\nURL do site:\nObjetivo (por exemplo, chatbot, assistente de produto, IA de conteúdo, personalizado):",
+    "defaultMessage": "Olá TripleZero iT, Eu gostaria de saber mais sobre {service} para nosso {hint}. URL do site: Objetivo (por exemplo, chatbot, assistente de produto, IA de conteúdo, personalizado):",
     "requestAi": "Solicitar integração de IA",
     "sendRequest": "Enviar solicitação",
     "dialogTitle": "Contato sobre {service}",
@@ -797,81 +816,81 @@
   },
   "agent000": {
     "name": "Agent 000",
-    "role": "Virtual FAQ & support assistant",
+    "role": "FAQ virtual e assistente de conhecimento",
     "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
-    "placeholder": "Ask Agent 000 a question…",
-    "send": "Send",
-    "thinking": "Agent 000 is thinking…",
-    "mute": "Mute voice",
-    "unmute": "Unmute voice",
-    "actionBook": "Book appointment",
-    "actionTicket": "Open live chat / ticket",
+    "placeholder": "Faça uma pergunta ao Agente 000…",
+    "send": "Enviar",
+    "thinking": "O Agente 000 está pensando…",
+    "mute": "Voz muda",
+    "unmute": "Ativar voz",
+    "actionBook": "Marcar consulta",
+    "actionTicket": "Abrir chat/ticket ao vivo",
     "actionContact": "Contact",
-    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket.",
-    "pickOption": "Pick the best match",
-    "relatedLinks": "Helpful links",
+    "error": "Desculpe, não consegui acessar minha base de conhecimento. Por favor, tente novamente ou abra um ticket.",
+    "pickOption": "Escolha a melhor combinação",
+    "relatedLinks": "Links úteis",
     "linkFaq": "FAQ",
-    "linkKb": "Knowledge base"
+    "linkKb": "Base de conhecimento"
   },
   "wordpressSupport": {
-    "saveYearlyHint": "Save up to 20% for yearly monitoring & support!",
-    "savePercent": "Save {percent}%",
-    "orderNow": "Order Now",
-    "noCreditCard": "No credit card required",
+    "saveYearlyHint": "Economize 10% com faturamento anual!",
+    "savePercent": "Economize {percent}%",
+    "orderNow": "Encomende agora",
+    "noCreditCard": "Não é necessário cartão de crédito",
     "packages": {
       "pro": {
         "name": "Pro",
-        "tagline": "All-in-One Support Package"
+        "tagline": "Pacote de suporte multifuncional"
       },
       "double": {
         "name": "Double",
-        "tagline": "All-in-One Support Package"
+        "tagline": "Pacote de suporte multifuncional"
       },
       "premium": {
         "name": "Premium",
-        "tagline": "All-in-One Support Package"
+        "tagline": "Pacote de suporte multifuncional"
       }
     },
     "features": {
       "sites": {
-        "pro": "1 website",
-        "double": "2 websites",
-        "premium": "3-5 websites"
+        "pro": "1 site",
+        "double": "2 sites",
+        "premium": "3-5 sites"
       },
       "monitoring": {
-        "pro": "24/7 monitoring & support",
-        "double": "24/7 monitoring & support",
-        "premium": "24/7 monitoring & support"
+        "pro": "Monitoramento e suporte 24 horas por dia, 7 dias por semana",
+        "double": "Monitoramento e suporte 24 horas por dia, 7 dias por semana",
+        "premium": "Monitoramento e suporte 24 horas por dia, 7 dias por semana"
       },
       "backups": {
-        "pro": "Daily backups",
-        "double": "Daily backups",
-        "premium": "Daily backups"
+        "pro": "Backups diários",
+        "double": "Backups diários",
+        "premium": "Backups diários"
       },
       "updates": {
-        "pro": "WordPress & plugin updates",
-        "double": "WordPress & plugin updates",
-        "premium": "WordPress & plugin updates"
+        "pro": "Atualizações de WordPress e plug-ins",
+        "double": "Atualizações de WordPress e plug-ins",
+        "premium": "Atualizações de WordPress e plug-ins"
       },
       "errors": {
-        "pro": "Fix website errors",
-        "double": "Fix website errors",
-        "premium": "Fix website errors"
+        "pro": "Corrigir erros do site",
+        "double": "Corrigir erros do site",
+        "premium": "Corrigir erros do site"
       },
       "malware": {
-        "pro": "Malware removal & security",
-        "double": "Malware removal & security",
-        "premium": "Malware removal & security"
+        "pro": "Remoção de malware e segurança",
+        "double": "Remoção de malware e segurança",
+        "premium": "Remoção de malware e segurança"
       },
       "speed": {
-        "pro": "Speed optimization",
-        "double": "Speed optimization",
-        "premium": "Speed optimization"
+        "pro": "Otimização de velocidade",
+        "double": "Otimização de velocidade",
+        "premium": "Otimização de velocidade"
       },
       "seo": {
-        "pro": "SEO optimization",
-        "double": "SEO optimization",
-        "premium": "SEO optimization"
+        "pro": "Otimização SEO",
+        "double": "Otimização SEO",
+        "premium": "Otimização SEO"
       }
     }
   }

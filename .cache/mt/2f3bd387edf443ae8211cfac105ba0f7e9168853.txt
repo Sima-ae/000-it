@@ -1,0 +1,1 @@
+Kaip pageriname svetainės saugumą? SSL, ugniasienės, kenkėjiškų programų nuskaitymas, reguliarūs atnaujinimai ir saugi konfigūravimo praktika.

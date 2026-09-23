@@ -25,7 +25,47 @@ function deepMergeMessages(
   return out;
 }
 
-function sanitizePaginationCopy(messages: Record<string, unknown>) {
+/** Google Translate sometimes wraps words in `<g id="…">`, which next-intl rejects. */
+function stripMtGTags(value: string) {
+  let out = value;
+  if (out.includes("<g") || out.includes("</g")) {
+    out = out.replace(/<\/?g\b[^>]*>/gi, "");
+  }
+  out = out
+    .replace(/&#10;/gi, "\n")
+    .replace(/&#39;/gi, "'")
+    .replace(/&apos;/gi, "'")
+    .replace(/&quot;/gi, '"')
+    .replace(/&amp;/gi, "&")
+    .replace(/&#(\d+);/g, (_, n) => {
+      const code = Number(n);
+      if (code === 10) return "\n";
+      if (code === 39) return "'";
+      try {
+        return String.fromCodePoint(code);
+      } catch {
+        return " ";
+      }
+    })
+    .replace(/\[[^\]]*(?:ترجمة|Translation|Übersetz|Traduction|Traducción)[^\]]*:\s*([^\]]+)\]/gi, "$1")
+    .replace(/\[[^\]]*(?:ترجمة|Translation|Übersetz|Traduction|Traducción)[^\]]*\]/gi, "");
+  return out.replace(/[ \t]+\n/g, "\n").replace(/\n{3,}/g, "\n\n").replace(/[ \t]{2,}/g, " ").trim();
+}
+
+function stripMtGTagsInMessages(messages: Record<string, unknown>) {
+  for (const [key, value] of Object.entries(messages)) {
+    if (typeof value === "string") {
+      const next = stripMtGTags(value);
+      if (next !== value) messages[key] = next;
+    } else if (isPlainObject(value)) {
+      stripMtGTagsInMessages(value);
+    }
+  }
+  return messages;
+}
+
+function sanitizeMessages(messages: Record<string, unknown>) {
+  stripMtGTagsInMessages(messages);
   const news = messages.news;
   if (isPlainObject(news) && typeof news.pageOf === "string") {
     news.pageOf = canonicalizeNewsPageOf(news.pageOf);
@@ -45,13 +85,13 @@ export default getRequestConfig(async ({ requestLocale }) => {
   >;
 
   if (locale === "nl" || locale === "en") {
-    return { locale, messages: sanitizePaginationCopy(fileMessages) };
+    return { locale, messages: sanitizeMessages(fileMessages) };
   }
 
   await hydrateLocalizedCopy(locale);
   const overlay = getUiMessageOverlaySync(locale);
   return {
     locale,
-    messages: sanitizePaginationCopy(deepMergeMessages(fileMessages, overlay)),
+    messages: sanitizeMessages(deepMergeMessages(fileMessages, overlay)),
   };
 });

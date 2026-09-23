@@ -1,0 +1,1 @@
+Îmbunătățiri bazate pe WCAG, astfel încât mai mulți oameni să vă poată folosi site-ul - iar motoarele de căutare îl înțeleg mai bine.

@@ -1,0 +1,1 @@
+Hur förbättrar vi webbplatsens säkerhet? SSL, brandväggar, skanning av skadlig kod, regelbundna uppdateringar och säker konfiguration.

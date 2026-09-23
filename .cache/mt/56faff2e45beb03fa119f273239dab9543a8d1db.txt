@@ -1,0 +1,1 @@
+Jak můžete zlepšit rychlost mého webu? Ukládání do mezipaměti, minifikace kódu, optimalizace obrázků a vylepšené doby odezvy serveru.

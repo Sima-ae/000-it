@@ -104,7 +104,7 @@
       "community": "Gestione della comunità",
       "webhosting": "Hosting Web",
       "domains": "Domini",
-      "ai": "IA",
+      "ai": "AI",
       "aeo": "AEO",
       "geo": "GEO",
       "seo": "SEO",
@@ -127,8 +127,9 @@
       "ecommerceSeo": "SEO e-commerce",
       "conversion": "Conversione",
       "speedOpt": "Core Web Vitals e velocità",
-      "analytics": "Analytics",
-      "accessibility": "Accessibilità"
+      "analytics": "Analitica",
+      "accessibility": "Accessibilità",
+      "texts": "Testi"
     },
     "inquiry": {
       "wp": {
@@ -169,7 +170,7 @@
     "mostChosen": "Il più popolare",
     "features": {
       "starter": [
-        "1× nome di dominio .COM / .EU / .NL",
+        "1× nome di dominio .COM / .EU / .IT",
         "1× hosting web",
         "1× negozio di e-commerce/sito web",
         "1 × agente AI",
@@ -179,7 +180,7 @@
         "24/7 monitoraggio"
       ],
       "growth": [
-        "1× nome di dominio .COM / .EU / .NL",
+        "1× nome di dominio .COM / .EU / .IT",
         "1× hosting web",
         "1× negozio di e-commerce/sito web",
         "2 agenti AI",
@@ -241,10 +242,10 @@
     "subtitle": "Tutti i prezzi includono il 21% di IVA.",
     "plans": "Ready To Go - Pacchetto AI completo",
     "support": "Support",
-    "sharedHosting": "Shared Hosting",
-    "wordpressHosting": "WordPress Hosting",
-    "vpsHosting": "VPS Hosting",
-    "webhosting": "Shared Hosting",
+    "sharedHosting": "Hosting Condiviso",
+    "wordpressHosting": "Hosting WordPress",
+    "vpsHosting": "Hosting VPS",
+    "webhosting": "Hosting Condiviso",
     "services": "Servizi e prodotti",
     "typePlan": "Piano",
     "typeService": "Servizio",
@@ -287,7 +288,7 @@
     "backHome": "Ritorno a casa"
   },
   "footer": {
-    "tagline": "Offriamo servizi e prodotti per imprenditori e liberi professionisti, da advertising, integrazione IA, AEO, GEO e SEO, stampa, email marketing, graphic design, marketing online, manutenzione, ottimizzazione, gestione dei social media, web design e supporto WordPress fino a web hosting e nomi di dominio.",
+    "tagline": "Offriamo servizi e prodotti per imprenditori e liberi professionisti, da advertising, integrazione IA, AEO, GEO e SEO, stampa, email marketing, graphic design, marketing online, manutenzione, ottimizzazione, gestione dei social media, web design e supporto WordPress fino a web hosting e nomi di dominio.",
     "rights": "Tutti i diritti riservati.",
     "usefulLinks": "Link utili",
     "socialMedia": "Social media",
@@ -438,7 +439,25 @@
     "company": "Compagnia",
     "message": "Messaggio",
     "send": "Invia",
-    "success": "Grazie! Ti risponderemo presto."
+    "success": "Grazie! Ti risponderemo presto.",
+    "detailsTitle": "Dati di contatto",
+    "companyName": "TripleZero iT",
+    "addressLabel": "Indirizzo",
+    "addressLine1": "Burlington Tower, 19th floor",
+    "addressLine2": "Business Bay, Al Abraj St.",
+    "addressLine3": "Dubai – United Arab Emirates",
+    "addressLine4": "",
+    "emailLabel": "E-mail",
+    "emailAddress": "info@000-it.com",
+    "detailsNote": "Invia il messaggio dal modulo — rispondiamo il prima possibile.",
+    "routeLabel": "Indicazioni",
+    "routeOpenAria": "Apri indicazioni in Google Maps",
+    "emailAddresses": [
+      "info@000-it.com",
+      "privacy@000-it.com",
+      "sales@000-it.com",
+      "support@000-it.com"
+    ]
   },
   "aiScan": {
     "title": "Scansione di preparazione AI gratuita",
@@ -461,7 +480,7 @@
     "resultsTitle": "Risultati della scansione AI",
     "contactTitle": "Contatto per la scansione AI",
     "contactDescription": "Lascia i tuoi dati: ti aiuteremo a interpretare i punteggi e a delineare un piano.",
-    "contactMessageLead": "Ciao TripleZero iT,\n\nHo eseguito una scansione AI e vorrei discutere i risultati.\n\nURL del sito web: {url}\n\nPunteggi:\n{scores}\n\nDomanda/note:"
+    "contactMessageLead": "Ciao TripleZero iT, Ho eseguito una scansione AI e vorrei discutere i risultati. URL del sito web: {url} Punteggi: {scores} Domanda/note:"
   },
   "portfolio": {
     "title": "Portafoglio",
@@ -659,8 +678,8 @@
     "results": "risultati",
     "forQuery": "per",
     "empty": "Nessun risultato trovato.",
-    "browseTitle": "Browse all questions",
-    "matchedHint": "Matched FAQ highlighted below"
+    "browseTitle": "Sfoglia tutte le domande",
+    "matchedHint": "Domande frequenti con corrispondenza evidenziate di seguito"
   },
   "appointment": {
     "title": "Fissare un appuntamento",
@@ -673,7 +692,7 @@
     "pickDateTime": "Scegli una data e un orario preferiti (giorni feriali, CET):",
     "date": "Data",
     "time": "Tempo",
-    "enterDetails": "Inserisci i tuoi dati per consentirci di confermare l&#39;appuntamento:",
+    "enterDetails": "Inserisci i tuoi dati per consentirci di confermare l'appuntamento:",
     "name": "Nome",
     "email": "E-mail",
     "phoneOptional": "Telefono (facoltativo)",
@@ -729,9 +748,9 @@
     "title": "Chatta dal vivo",
     "subtitle": "TripleZero iT",
     "online": "Online",
-    "teaserLine1": "Need help?",
-    "teaserLine2": "Open the chat...",
-    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
+    "teaserLine1": "Hai bisogno di aiuto?",
+    "teaserLine2": "Apri la chat...",
+    "emptyChat": "Fai una domanda all'agente 000: prima le risposte alle domande frequenti, gli esseri umani quando necessario.",
     "emptyTicket": "Descrivi la tua richiesta: apriremo un ticket sincronizzato con la tua dashboard.",
     "placeholder": "Scrivi il tuo messaggio...",
     "newTicket": "Nuovo biglietto",
@@ -769,7 +788,7 @@
   },
   "inquiry": {
     "websiteHint": "sito web/negozio online",
-    "defaultMessage": "Ciao TripleZero iT,\n\nVorrei saperne di più su {service} per il nostro {hint}.\n\nURL del sito web:\nObiettivo (ad es. chatbot, assistente prodotto, intelligenza artificiale dei contenuti, personalizzato):",
+    "defaultMessage": "Ciao TripleZero iT, Vorrei saperne di più su {service} per il nostro {hint}. URL del sito web: Obiettivo (ad es. chatbot, assistente prodotto, intelligenza artificiale dei contenuti, personalizzato):",
     "requestAi": "Richiedi l'integrazione dell'IA",
     "sendRequest": "Invia richiesta",
     "dialogTitle": "Contatto per {service}",
@@ -797,21 +816,21 @@
   },
   "agent000": {
     "name": "Agent 000",
-    "role": "Virtual FAQ & support assistant",
+    "role": "Domande frequenti virtuali e assistente della conoscenza",
     "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
-    "placeholder": "Ask Agent 000 a question…",
-    "send": "Send",
-    "thinking": "Agent 000 is thinking…",
-    "mute": "Mute voice",
-    "unmute": "Unmute voice",
-    "actionBook": "Book appointment",
-    "actionTicket": "Open live chat / ticket",
+    "placeholder": "Fai una domanda all'Agente 000...",
+    "send": "Inviare",
+    "thinking": "L'agente 000 sta pensando...",
+    "mute": "Voce muta",
+    "unmute": "Attiva voce",
+    "actionBook": "Prenota appuntamento",
+    "actionTicket": "Apri chat / ticket dal vivo",
     "actionContact": "Contact",
-    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket.",
-    "pickOption": "Pick the best match",
-    "relatedLinks": "Helpful links",
+    "error": "Mi spiace, non sono riuscito a raggiungere la mia knowledge base. Riprova o apri un ticket.",
+    "pickOption": "Scegli la migliore corrispondenza",
+    "relatedLinks": "Collegamenti utili",
     "linkFaq": "FAQ",
-    "linkKb": "Knowledge base"
+    "linkKb": "Base di conoscenza"
   },
   "wordpressSupport": {
     "saveYearlyHint": "Risparmia fino al 20% con monitoraggio e supporto annuale!",
@@ -821,15 +840,15 @@
     "packages": {
       "pro": {
         "name": "Pro",
-        "tagline": "Pacchetto supporto all-in-one"
+        "tagline": "Pacchetto di supporto tutto in uno"
       },
       "double": {
         "name": "Double",
-        "tagline": "Pacchetto supporto all-in-one"
+        "tagline": "Pacchetto di supporto tutto in uno"
       },
       "premium": {
         "name": "Premium",
-        "tagline": "Pacchetto supporto all-in-one"
+        "tagline": "Pacchetto di supporto tutto in uno"
       }
     },
     "features": {

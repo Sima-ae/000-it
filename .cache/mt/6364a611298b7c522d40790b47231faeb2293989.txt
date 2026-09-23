@@ -1,0 +1,1 @@
+Milyen típusú hibákat és hibákat lehet javítani? Megszakadt hivatkozások, űrlaphibák, megjelenítési problémák, működési hibák és egyebek.

@@ -28,6 +28,7 @@
     "kennisbank:translate": "npx --yes tsx --env-file=.env scripts/translate-kennisbank.ts",
     "kennisbank:repair": "npx --yes tsx --env-file=.env scripts/repair-kennisbank.ts",
     "content:translate": "npx --yes tsx --env-file=.env scripts/translate-content.ts",
+    "messages:finish": "npx --yes tsx scripts/finish-ui-messages.mjs",
     "generate-sitemap": "npx --yes tsx --env-file=.env scripts/generate-sitemap.ts",
     "indexnow": "npx --yes tsx --env-file=.env scripts/indexnow.ts",
     "postinstall": "prisma generate"

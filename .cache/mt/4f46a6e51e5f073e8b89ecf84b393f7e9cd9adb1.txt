@@ -1,0 +1,1 @@
+Hur kan du förbättra hastigheten på min webbplats? Cachning, kodminifiering, bildoptimering och förbättrade serversvarstider.

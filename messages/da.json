@@ -124,11 +124,12 @@
       "wordpress": "WordPress",
       "maintenance": "Opretholdelse",
       "support": "Støtte",
-      "ecommerceSeo": "E-commerce SEO",
-      "conversion": "Conversion",
+      "ecommerceSeo": "E-handel SEO",
+      "conversion": "Omdannelse",
       "speedOpt": "Core Web Vitals og hastighed",
       "analytics": "Analytics",
-      "accessibility": "Tilgængelighed"
+      "accessibility": "Tilgængelighed",
+      "texts": "Tekster"
     },
     "inquiry": {
       "wp": {
@@ -169,7 +170,7 @@
     "mostChosen": "Mest populær",
     "features": {
       "starter": [
-        "1× domænenavn .COM / .EU / .NL",
+        "1× domænenavn .COM / .EU / .DK",
         "1× webhotel",
         "1× e-handel butik / hjemmeside",
         "1× AI agent",
@@ -179,7 +180,7 @@
         "24/7 overvågning"
       ],
       "growth": [
-        "1× domænenavn .COM / .EU / .NL",
+        "1× domænenavn .COM / .EU / .DK",
         "1× webhotel",
         "1× e-handel butik / hjemmeside",
         "2× AI agenter",
@@ -241,10 +242,10 @@
     "subtitle": "Alle priser er inkl. 21% moms.",
     "plans": "Ready To Go - AI komplet pakke",
     "support": "Support",
-    "sharedHosting": "Shared Hosting",
-    "wordpressHosting": "WordPress Hosting",
-    "vpsHosting": "VPS Hosting",
-    "webhosting": "Shared Hosting",
+    "sharedHosting": "Delt værtskab",
+    "wordpressHosting": "WordPress-hosting",
+    "vpsHosting": "VPS-hosting",
+    "webhosting": "Delt værtskab",
     "services": "Tjenester og produkter",
     "typePlan": "Plan",
     "typeService": "Service",
@@ -287,7 +288,7 @@
     "backHome": "Hjemme igen"
   },
   "footer": {
-    "tagline": "Vi tilbyder services og produkter til iværksættere og freelancere — fra annoncering, AI‑integration, AEO, GEO og SEO, tryksager, e‑mail marketing, grafisk design, online marketing, vedligeholdelse, optimering, social media management, webdesign og WordPress-support til webhosting og domænenavne.",
+    "tagline": "Vi tilbyder services og produkter til iværksættere og freelancere — fra annoncering, AI‑integration, AEO, GEO og SEO, tryksager, e‑mail marketing, grafisk design, online marketing, vedligeholdelse, optimering, social media management, webdesign og WordPress-support til webhosting og domænenavne.",
     "rights": "Alle rettigheder forbeholdes.",
     "usefulLinks": "Nyttige link",
     "socialMedia": "Sociale medier",
@@ -438,7 +439,25 @@
     "company": "Selskab",
     "message": "Besked",
     "send": "Sende",
-    "success": "Tak! Vi vender snart tilbage til dig."
+    "success": "Tak! Vi vender snart tilbage til dig.",
+    "detailsTitle": "Kontaktoplysninger",
+    "companyName": "TripleZero iT",
+    "addressLabel": "Adresse",
+    "addressLine1": "Burlington Tower, 19th floor",
+    "addressLine2": "Business Bay, Al Abraj St.",
+    "addressLine3": "Dubai – United Arab Emirates",
+    "addressLine4": "",
+    "emailLabel": "E-mails",
+    "emailAddress": "info@000-it.com",
+    "detailsNote": "Send din besked via formularen — vi svarer så hurtigt som muligt.",
+    "routeLabel": "Rute",
+    "routeOpenAria": "Åbn rute i Google Maps",
+    "emailAddresses": [
+      "info@000-it.com",
+      "privacy@000-it.com",
+      "sales@000-it.com",
+      "support@000-it.com"
+    ]
   },
   "aiScan": {
     "title": "Gratis AI Readiness Scan",
@@ -461,7 +480,7 @@
     "resultsTitle": "AI-scanningsresultater",
     "contactTitle": "Kontakt om AI-scanning",
     "contactDescription": "Efterlad dine oplysninger - vi hjælper med at fortolke resultaterne og skitsere en plan.",
-    "contactMessageLead": "Hej TripleZero iT,\n\nJeg har kørt en AI-scanning og vil gerne diskutere resultaterne.\n\nWebstedets URL: {url}\n\nResultater:\n{scores}\n\nSpørgsmål/noter:"
+    "contactMessageLead": "Hej TripleZero iT, Jeg har kørt en AI-scanning og vil gerne diskutere resultaterne. Webstedets URL: {url} Resultater: {scores} Spørgsmål/noter:"
   },
   "portfolio": {
     "title": "Portefølje",
@@ -563,9 +582,9 @@
     "statAvailable": "tilgængelige",
     "statMonitoringValue": "24/7",
     "statMonitoring": "overvågning & support",
-    "mission": "Mission",
+    "mission": "Komissorium",
     "missionText": "Hjælpe virksomheder med praktiske AI-vækstsystemer — fra hurtige websites og stabil hosting til synlighed, konvertering og automatisering, der reel aflaster.",
-    "vision": "Vision",
+    "vision": "Syn",
     "visionText": "Bygge den rigtige digitale løsning for hver iværksætter — skalerbar, klar og rettet mod vækst, ikke trends uden resultater.",
     "philosophy": "TripleZero-filosofien",
     "philosophyText": "000 betyder nul gætteri, nul mangel og nul spild: beslutninger baseret på data, nok kapacitet til at vokse og intet budget eller tid på det, der ikke virker.",
@@ -591,7 +610,7 @@
     "pillarAiDesc": "Agenter, workflows og AI-integrationer, der accelererer marketing, support og drift.",
     "pillarOptTitle": "AEO, GEO & SEO",
     "pillarOptDesc": "Bliv fundet i Google, lokalt og i AI-svar — med indhold og teknik, der ranker.",
-    "pillarWebTitle": "Websites & shops",
+    "pillarWebTitle": "Hjemmesider og butikker",
     "pillarWebDesc": "Hurtige, konverteringsfokuserede sites og shops, der gør besøgende til kunder.",
     "pillarWpTitle": "WordPress-pleje",
     "pillarWpDesc": "Bugs, malware, hastighed, backups og migrationer — hurtigt og omhyggeligt.",
@@ -659,8 +678,8 @@
     "results": "resultater",
     "forQuery": "for",
     "empty": "Ingen resultater fundet.",
-    "browseTitle": "Browse all questions",
-    "matchedHint": "Matched FAQ highlighted below"
+    "browseTitle": "Gennemse alle spørgsmål",
+    "matchedHint": "Matchede ofte stillede spørgsmål fremhævet nedenfor"
   },
   "appointment": {
     "title": "Book en konsultation",
@@ -729,9 +748,9 @@
     "title": "Live chat",
     "subtitle": "TripleZero iT",
     "online": "Online",
-    "teaserLine1": "Need help?",
-    "teaserLine2": "Open the chat...",
-    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
+    "teaserLine1": "Har du brug for hjælp?",
+    "teaserLine2": "Åbn chatten...",
+    "emptyChat": "Stil Agent 000 et spørgsmål — FAQ-svar først, mennesker, når det er nødvendigt.",
     "emptyTicket": "Beskriv din anmodning – vi åbner en billet, der er synkroniseret med dit betjeningspanel.",
     "placeholder": "Skriv din besked...",
     "newTicket": "Ny billet",
@@ -769,7 +788,7 @@
   },
   "inquiry": {
     "websiteHint": "hjemmeside / webshop",
-    "defaultMessage": "Hej TripleZero iT,\n\nJeg vil gerne lære mere om {service} til vores {hint}.\n\nWebstedets URL:\nMål (f.eks. chatbot, produktassistent, indholds-AI, brugerdefineret):",
+    "defaultMessage": "Hej TripleZero iT, Jeg vil gerne lære mere om {service} til vores {hint}. Webstedets URL: Mål (f.eks. chatbot, produktassistent, indholds-AI, brugerdefineret):",
     "requestAi": "Anmod om AI-integration",
     "sendRequest": "Send anmodning",
     "dialogTitle": "Kontakt om {service}",
@@ -797,81 +816,81 @@
   },
   "agent000": {
     "name": "Agent 000",
-    "role": "Virtual FAQ & support assistant",
+    "role": "Virtuel FAQ & vidensassistent",
     "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
-    "placeholder": "Ask Agent 000 a question…",
-    "send": "Send",
-    "thinking": "Agent 000 is thinking…",
-    "mute": "Mute voice",
-    "unmute": "Unmute voice",
-    "actionBook": "Book appointment",
-    "actionTicket": "Open live chat / ticket",
+    "placeholder": "Stil et spørgsmål til Agent 000...",
+    "send": "Sende",
+    "thinking": "Agent 000 tænker...",
+    "mute": "Dæmp stemme",
+    "unmute": "Slå lyden til",
+    "actionBook": "Bestil tid",
+    "actionTicket": "Åbn live chat / billet",
     "actionContact": "Contact",
-    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket.",
-    "pickOption": "Pick the best match",
-    "relatedLinks": "Helpful links",
+    "error": "Beklager – jeg kunne ikke nå min vidensbase. Prøv venligst igen, eller åbn en billet.",
+    "pickOption": "Vælg det bedste match",
+    "relatedLinks": "Nyttige links",
     "linkFaq": "FAQ",
-    "linkKb": "Knowledge base"
+    "linkKb": "Vidensgrundlag"
   },
   "wordpressSupport": {
-    "saveYearlyHint": "Save up to 20% for yearly monitoring & support!",
-    "savePercent": "Save {percent}%",
-    "orderNow": "Order Now",
-    "noCreditCard": "No credit card required",
+    "saveYearlyHint": "Spar 10% med årlig fakturering!",
+    "savePercent": "Spar {percent} %",
+    "orderNow": "Bestil nu",
+    "noCreditCard": "Intet kreditkort påkrævet",
     "packages": {
       "pro": {
         "name": "Pro",
-        "tagline": "All-in-One Support Package"
+        "tagline": "Alt-i-en supportpakke"
       },
       "double": {
         "name": "Double",
-        "tagline": "All-in-One Support Package"
+        "tagline": "Alt-i-en supportpakke"
       },
       "premium": {
         "name": "Premium",
-        "tagline": "All-in-One Support Package"
+        "tagline": "Alt-i-en supportpakke"
       }
     },
     "features": {
       "sites": {
-        "pro": "1 website",
-        "double": "2 websites",
-        "premium": "3-5 websites"
+        "pro": "1 hjemmeside",
+        "double": "2 hjemmesider",
+        "premium": "3-5 hjemmesider"
       },
       "monitoring": {
-        "pro": "24/7 monitoring & support",
-        "double": "24/7 monitoring & support",
-        "premium": "24/7 monitoring & support"
+        "pro": "24/7 overvågning og support",
+        "double": "24/7 overvågning og support",
+        "premium": "24/7 overvågning og support"
       },
       "backups": {
-        "pro": "Daily backups",
-        "double": "Daily backups",
-        "premium": "Daily backups"
+        "pro": "Daglige backups",
+        "double": "Daglige backups",
+        "premium": "Daglige backups"
       },
       "updates": {
-        "pro": "WordPress & plugin updates",
-        "double": "WordPress & plugin updates",
-        "premium": "WordPress & plugin updates"
+        "pro": "WordPress og plugin-opdateringer",
+        "double": "WordPress og plugin-opdateringer",
+        "premium": "WordPress og plugin-opdateringer"
       },
       "errors": {
-        "pro": "Fix website errors",
-        "double": "Fix website errors",
-        "premium": "Fix website errors"
+        "pro": "Ret webstedsfejl",
+        "double": "Ret webstedsfejl",
+        "premium": "Ret webstedsfejl"
       },
       "malware": {
-        "pro": "Malware removal & security",
-        "double": "Malware removal & security",
-        "premium": "Malware removal & security"
+        "pro": "Malwarefjernelse og sikkerhed",
+        "double": "Malwarefjernelse og sikkerhed",
+        "premium": "Malwarefjernelse og sikkerhed"
       },
       "speed": {
-        "pro": "Speed optimization",
-        "double": "Speed optimization",
-        "premium": "Speed optimization"
+        "pro": "Hastighedsoptimering",
+        "double": "Hastighedsoptimering",
+        "premium": "Hastighedsoptimering"
       },
       "seo": {
-        "pro": "SEO optimization",
-        "double": "SEO optimization",
-        "premium": "SEO optimization"
+        "pro": "SEO optimering",
+        "double": "SEO optimering",
+        "premium": "SEO optimering"
       }
     }
   }

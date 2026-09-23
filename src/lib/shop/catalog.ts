@@ -193,7 +193,7 @@ const PLAN_COPY = {
       "24/7 monitoring",
     ],
     featuresEn: [
-      "1× domain .COM / .EU / .NL",
+      "1× domain .COM / .EU / .UK",
       "1× web hosting",
       "1× e-commerce shop / website",
       "1× AI agent",
@@ -220,7 +220,7 @@ const PLAN_COPY = {
       "24/7 monitoring",
     ],
     featuresEn: [
-      "1× domain .COM / .EU / .NL",
+      "1× domain .COM / .EU / .UK",
       "1× web hosting",
       "1× e-commerce shop / website",
       "2× AI agents",

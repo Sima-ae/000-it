@@ -124,11 +124,12 @@
       "wordpress": "וורדפרס",
       "maintenance": "תַחזוּקָה",
       "support": "תְמִיכָה",
-      "ecommerceSeo": "E-commerce SEO",
-      "conversion": "Conversion",
+      "ecommerceSeo": "קידום אתרים במסחר אלקטרוני",
+      "conversion": "הֲמָרָה",
       "speedOpt": "Core Web Vitals ומהירות",
-      "analytics": "Analytics",
-      "accessibility": "נגישות"
+      "analytics": "אנליטיקס",
+      "accessibility": "נגישות",
+      "texts": "טקסטים"
     },
     "inquiry": {
       "wp": {
@@ -169,7 +170,7 @@
     "mostChosen": "הכי פופולרי",
     "features": {
       "starter": [
-        "1× שם דומיין .COM / .EU / .NL",
+        "1× שם דומיין .COM / .EU / .IL",
         "1× אירוח אתרים",
         "1× חנות מסחר אלקטרוני / אתר אינטרנט",
         "1× סוכן AI",
@@ -179,7 +180,7 @@
         "ניטור 24/7"
       ],
       "growth": [
-        "1× שם דומיין .COM / .EU / .NL",
+        "1× שם דומיין .COM / .EU / .IL",
         "1× אירוח אתרים",
         "1× חנות מסחר אלקטרוני / אתר אינטרנט",
         "2× סוכני AI",
@@ -241,10 +242,10 @@
     "subtitle": "כל המחירים כוללים מע״מ 21%.",
     "plans": "Ready To Go - חבילת AI מלאה",
     "support": "Support",
-    "sharedHosting": "Shared Hosting",
-    "wordpressHosting": "WordPress Hosting",
-    "vpsHosting": "VPS Hosting",
-    "webhosting": "Shared Hosting",
+    "sharedHosting": "אירוח משותף",
+    "wordpressHosting": "אחסון וורדפרס",
+    "vpsHosting": "אירוח VPS",
+    "webhosting": "אירוח משותף",
     "services": "שירותים ומוצרים",
     "typePlan": "תכנן",
     "typeService": "שירות",
@@ -287,7 +288,7 @@
     "backHome": "בחזרה הביתה"
   },
   "footer": {
-    "tagline": "אנו מציעים שירותים ומוצרים ליזמים ולעצמאים — מפרסום, אינטגרציית AI, AEO, GEO ו‑SEO, דפוס, שיווק בדוא״ל, עיצוב גרפי, שיווק אונליין, תחזוקה, אופטימיזציה, ניהול רשתות חברתיות, עיצוב אתרים ותמיכת WordPress ועד אחסון אתרים ושמות דומיין.",
+    "tagline": "אנו מציעים שירותים ומוצרים ליזמים ולעצמאים — מפרסום, אינטגרציית AI, AEO, GEO ו‑SEO, דפוס, שיווק בדוא״ל, עיצוב גרפי, שיווק אונליין, תחזוקה, אופטימיזציה, ניהול רשתות חברתיות, עיצוב אתרים ותמיכת WordPress ועד אחסון אתרים ושמות דומיין.",
     "rights": "כל הזכויות שמורות.",
     "usefulLinks": "קישורים שימושיים",
     "socialMedia": "רשתות חברתיות",
@@ -438,7 +439,25 @@
     "company": "חברה",
     "message": "הודעה",
     "send": "שלח",
-    "success": "תודה! נחזור אליך בהקדם."
+    "success": "תודה! נחזור אליך בהקדם.",
+    "detailsTitle": "פרטי קשר",
+    "companyName": "TripleZero iT",
+    "addressLabel": "כתובת",
+    "addressLine1": "Burlington Tower, 19th floor",
+    "addressLine2": "Business Bay, Al Abraj St.",
+    "addressLine3": "Dubai – United Arab Emirates",
+    "addressLine4": "",
+    "emailLabel": "אימיילים",
+    "emailAddress": "info@000-it.com",
+    "detailsNote": "שלחו הודעה דרך הטופס — נשיב בהקדם האפשרי.",
+    "routeLabel": "ניווט",
+    "routeOpenAria": "פתח ניווט ב-Google Maps",
+    "emailAddresses": [
+      "info@000-it.com",
+      "privacy@000-it.com",
+      "sales@000-it.com",
+      "support@000-it.com"
+    ]
   },
   "aiScan": {
     "title": "סריקת מוכנות AI בחינם",
@@ -461,7 +480,7 @@
     "resultsTitle": "תוצאות סריקת AI",
     "contactTitle": "צור קשר לגבי סריקת AI",
     "contactDescription": "השאר את הפרטים שלך - אנחנו נעזור לפרש את הציונים ולהתווה תוכנית.",
-    "contactMessageLead": "היי TripleZero iT,\n\nהפעלתי סריקת AI וברצוני לדון בתוצאות.\n\nכתובת אתר: {url}\n\nציונים:\n{scores}\n\nשאלה/הערות:"
+    "contactMessageLead": "היי TripleZero iT, הפעלתי סריקת AI וברצוני לדון בתוצאות. כתובת אתר: {url} ציונים: {scores} שאלה/הערות:"
   },
   "portfolio": {
     "title": "תיק השקעות",
@@ -564,54 +583,54 @@
     "statMonitoringValue": "24/7",
     "statMonitoring": "ניטור ותמיכה",
     "mission": "משימה",
-    "missionText": "Help businesses with practical AI growth systems — from fast websites and reliable hosting to visibility, conversion and automation that genuinely takes work off your plate.",
+    "missionText": "לעזור לעסקים עם מערכות צמיחה מעשיות מבוססות AI — מאתרים מהירים ואחסון אמין ועד נראות, המרה ואוטומציה שממש מקלה על העבודה.",
     "vision": "חזון",
-    "visionText": "Build the right digital solution for every entrepreneur — scalable, clear and designed for growth, not trendy tools without outcomes.",
+    "visionText": "לבנות את הפתרון הדיגיטלי הנכון לכל יזם — ניתן להרחבה, ברור ומכוון צמיחה, לא כלים אופנתיים בלי תוצאות.",
     "philosophy": "הפילוסופיה של TripleZero",
-    "philosophyText": "000 means zero guesswork, zero shortfall and zero waste: decisions backed by data, enough capacity to grow, and no budget or time spent on what does not work.",
+    "philosophyText": "000 פירושו אפס ניחושים, אפס מחסור ואפס בזבוז: החלטות מבוססות נתונים, מספיק קיבולת לצמוח, ובלי תקציב או זמן על מה שלא עובד.",
     "storyTitle": "מי אנחנו",
-    "storyLead": "TripleZero iT is your technical growth partner — from the first scan to ongoing optimisation.",
-    "storyP1": "We combine AI integration, AEO, GEO, SEO, web design, WordPress care, hosting and full-funnel marketing in one approach. Your online presence stays fast, secure, findable and focused on leads or revenue.",
-    "storyP2": "Whether it is a bug, malware, migration, performance sprint or a new growth system: we act with focus, explain what is happening and deliver measurable results — so you can focus on your business.",
-    "storyP3": "We work from the Netherlands and Belgium with European entrepreneurs, freelancers and SME teams that want dependable IT without enterprise overhead.",
+    "storyLead": "TripleZero iT הוא שותף הצמיחה הטכני שלכם — מהסריקה הראשונה ועד אופטימיזציה מתמשכת.",
+    "storyP1": "אנחנו משלבים אינטגרציית AI, AEO, GEO, SEO, עיצוב אתרים, טיפול ב-WordPress, אחסון ושיווק full-funnel בגישה אחת. הנוכחות המקוונת שלכם נשארת מהירה, מאובטחת, ניתנת לגילוי וממוקדת בלידים או בהכנסות.",
+    "storyP2": "בין אם באג, נוזקה, מיגרציה, ספרינט ביצועים או מערכת צמיחה חדשה: אנחנו פועלים בפוקוס, מסבירים את הדרך ומספקים תוצאות מדידות — כדי שתתמקדו בעסק.",
+    "storyP3": "אנחנו עובדים מהולנד ומבלגיה עם יזמים, פרילנסרים וצוותי SMB באירופה שרוצים IT אמין בלי overhead ארגוני.",
     "approachTitle": "איך אנחנו עובדים",
-    "approachSubtitle": "Clear steps, short lines of communication and improvements you can measure — no black box.",
-    "approach1Title": "Understand",
-    "approach1Desc": "Map goals, stack and bottlenecks: what is growing, what is blocking, and where AI or optimisation pays off most.",
-    "approach2Title": "Build",
-    "approach2Desc": "Focused implementation: fixes, features, content, tracking or infrastructure — prioritised by impact.",
-    "approach3Title": "Measure",
-    "approach3Desc": "We track speed, visibility, conversion and stability with concrete signals — not vanity metrics.",
-    "approach4Title": "Improve",
-    "approach4Desc": "Iterate on what works: retention, scale and continuous improvement so growth stays sustainable.",
+    "approachSubtitle": "צעדים ברורים, תקשורת קצרה ושיפורים שניתן למדוד — בלי קופסה שחורה.",
+    "approach1Title": "להבין",
+    "approach1Desc": "ממפים מטרות, סטאק וצווארי בקבוק: מה צומח, מה חוסם ואיפה AI או אופטימיזציה משתלמים ביותר.",
+    "approach2Title": "לבנות",
+    "approach2Desc": "יישום ממוקד: תיקונים, פיצ'רים, תוכן, מעקב או תשתית — לפי השפעה.",
+    "approach3Title": "למדוד",
+    "approach3Desc": "עוקבים אחרי מהירות, נראות, המרה ויציבות עם אותות קונקרטיים — לא vanity metrics.",
+    "approach4Title": "לשפר",
+    "approach4Desc": "מבצעים איטרציה על מה שעובד: שימור, סקייל ושיפור מתמשך לצמיחה בת-קיימא.",
     "whatWeDo": "מה אנחנו עושים",
-    "whatWeDoSubtitle": "One partner for growth, technology and visibility — from AI to hosting.",
+    "whatWeDoSubtitle": "שותף אחד לצמיחה, טכנולוגיה ונראות — מ-AI ועד אחסון.",
     "allServicesArrow": "כל השירותים →",
-    "pillarAiTitle": "AI & automation",
-    "pillarAiDesc": "Agents, workflows and AI integrations that accelerate marketing, support and operations.",
-    "pillarOptTitle": "AEO, GEO & SEO",
-    "pillarOptDesc": "Get found in Google, locally and in AI answers — with content and technical work that ranks.",
-    "pillarWebTitle": "Websites & shops",
-    "pillarWebDesc": "Fast, conversion-focused sites and shops that turn visitors into customers.",
-    "pillarWpTitle": "WordPress care",
-    "pillarWpDesc": "Bugs, malware, speed, backups and migrations — handled quickly and delivered carefully.",
-    "pillarHostTitle": "Hosting & infrastructure",
-    "pillarHostDesc": "Reliable web hosting, WordPress hosting and VPS with support when you need it.",
-    "pillarMarketTitle": "Marketing & content",
-    "pillarMarketDesc": "Campaigns, content and social aligned with your funnel and measurable acquisition.",
-    "pillarDesignTitle": "Graphic design",
-    "pillarDesignDesc": "Logos, print and brand assets that fit your digital presence professionally.",
+    "pillarAiTitle": "AI ואוטומציה",
+    "pillarAiDesc": "סוכנים, workflows ואינטגרציות AI שמאיצים שיווק, תמיכה ותפעול.",
+    "pillarOptTitle": "AEO, GEO ו-SEO",
+    "pillarOptDesc": "להימצא בגוגל, מקומית ובתשובות AI — עם תוכן וטכניקה שמדרגים.",
+    "pillarWebTitle": "אתרים וחנויות",
+    "pillarWebDesc": "אתרים וחנויות מהירים ממוקדי המרה שהופכים מבקרים ללקוחות.",
+    "pillarWpTitle": "טיפול ב-WordPress",
+    "pillarWpDesc": "באגים, נוזקות, מהירות, גיבויים ומיגרציות — מהר ובזהירות.",
+    "pillarHostTitle": "אחסון ותשתית",
+    "pillarHostDesc": "אחסון ווב, WordPress ו-VPS יציבים עם תמיכה כשצריך.",
+    "pillarMarketTitle": "שיווק ותוכן",
+    "pillarMarketDesc": "קמפיינים, תוכן וסושיאל מיושרים למשפך ולרכישה מדידה.",
+    "pillarDesignTitle": "עיצוב גרפי",
+    "pillarDesignDesc": "לוגואים, דפוס ונכסי מותג שמתאימים מקצועית לנוכחות הדיגיטלית.",
     "serveTitle": "עם מי אנחנו עובדים",
-    "serveText": "Freelancers, startups and established SMEs that want to grow online without a ten-person IT or marketing team. You get a clear point of contact, transparent proposals and delivery that matches your pace and budget.",
+    "serveText": "עם פרילנסרים, סטארטאפים ו-SMB מבוססים שרוצים לצמוח אונליין בלי צוות IT או שיווק פנימי של עשרה אנשים. מקבלים נקודת קשר ברורה, הצעות שקופות ומסירה בקצב ובתקציב המתאימים.",
     "whyEyebrow": "למה",
-    "why1Title": "Practical, not theoretical",
-    "why1Desc": "Advice that continues into implementation — with clear deliverables and next steps.",
-    "why2Title": "One system, less friction",
-    "why2Desc": "AI, site, hosting, SEO and marketing reinforce each other instead of living in silos.",
-    "why3Title": "Quick to reach",
-    "why3Desc": "Short response times, available 7 days a week and monitoring when your environment needs it.",
+    "why1Title": "מעשי, לא תיאורטי",
+    "why1Desc": "ייעוץ שמגיע עד ליישום — עם תוצרים ברורים וצעדים הבאים.",
+    "why2Title": "מערכת אחת, פחות חיכוך",
+    "why2Desc": "AI, אתר, אחסון, SEO ושיווק מחזקים זה את זה במקום לחיות בסיילואים.",
+    "why3Title": "זמינים במהירות",
+    "why3Desc": "זמני תגובה קצרים, זמינים 7 ימים וניטור כשהסביבה דורשת זאת.",
     "readyTitle": "מוכנים להתחיל?",
-    "readySubtitle": "קבעו שיחה, התחילו סריקת AI בחינם או צרו קשר — נשמח לשרטט יחד את הדרך המהירה ביותר לתוצאה."
+    "readySubtitle": "קבעו שיחה, התחילו סריקת AI בחינם או צרו קשר — נשרטט יחד את הדרך המהירה ביותר לתוצאה."
   },
   "cases": {
     "title": "תיאורי מקרה",
@@ -659,8 +678,8 @@
     "results": "תוצאות",
     "forQuery": "עבור",
     "empty": "לא נמצאו תוצאות.",
-    "browseTitle": "Browse all questions",
-    "matchedHint": "Matched FAQ highlighted below"
+    "browseTitle": "עיין בכל השאלות",
+    "matchedHint": "שאלות נפוצות תואמות מודגשות למטה"
   },
   "appointment": {
     "title": "הזמנת פגישה",
@@ -683,7 +702,7 @@
     "choosePayment": "אתה יכולים לבחור איך תרצו לשלם. ניתן לבצע תשלום מקוון באמצעות קישור מאובטח.",
     "summary": "תקציר",
     "extras": "תוספות",
-    "when": "כש ",
+    "when": "כש",
     "none": "אין",
     "requestReceived": "תאריך קבלת הבקשה",
     "thankYou": "תודה! נאשר את הפגישה שלך בדוא\"ל בהקדם האפשרי (בדרך כלל תוך יום עסקים אחד).",
@@ -691,7 +710,7 @@
     "next": "הבא",
     "submit": "בקשת שיחה",
     "confirm": "אישור",
-    "sending": "שולח...   ",
+    "sending": "שולח...",
     "toastSuccess": "התקבלה בקשה לפגישה",
     "toastError": "לא הצלחנו לשלוח — כדאי לנסות שוב",
     "stepService": "שירות תחזוקת אתרים",
@@ -729,9 +748,9 @@
     "title": "צ'אט חי",
     "subtitle": "TripleZero iT",
     "online": "מקוון",
-    "teaserLine1": "Need help?",
-    "teaserLine2": "Open the chat...",
-    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
+    "teaserLine1": "צריך עזרה?",
+    "teaserLine2": "פתח את הצ'אט...",
+    "emptyChat": "שאל את Agent 000 שאלה - תחילה תשובות לשאלות נפוצות, בני אדם בעת הצורך.",
     "emptyTicket": "תאר את בקשתך - נפתח כרטיס המסונכרן ללוח המחוונים שלך.",
     "placeholder": "הקלד את ההודעה שלך...",
     "newTicket": "כרטיס חדש",
@@ -769,7 +788,7 @@
   },
   "inquiry": {
     "websiteHint": "אתר / חנות אינטרנט",
-    "defaultMessage": "שלום TripleZero iT,\n\nאני רוצה ללמוד עוד על {service} עבור {hint} שלנו.\n\nכתובת אתר:\nיעד (למשל צ'אט בוט, עוזר מוצר, תוכן בינה מלאכותית, מותאם אישית):",
+    "defaultMessage": "שלום TripleZero iT, אני רוצה ללמוד עוד על {service} עבור {hint} שלנו. כתובת אתר: יעד (למשל צ'אט בוט, עוזר מוצר, תוכן בינה מלאכותית, מותאם אישית):",
     "requestAi": "בקש שילוב AI",
     "sendRequest": "שלח בקשה",
     "dialogTitle": "יצירת קשר לגבי {service}",
@@ -797,81 +816,81 @@
   },
   "agent000": {
     "name": "Agent 000",
-    "role": "Virtual FAQ & support assistant",
+    "role": "וירטואלי שאלות נפוצות ועוזר ידע",
     "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
-    "placeholder": "Ask Agent 000 a question…",
-    "send": "Send",
-    "thinking": "Agent 000 is thinking…",
-    "mute": "Mute voice",
-    "unmute": "Unmute voice",
-    "actionBook": "Book appointment",
-    "actionTicket": "Open live chat / ticket",
+    "placeholder": "שאל את הסוכן 000 שאלה...",
+    "send": "לִשְׁלוֹחַ",
+    "thinking": "סוכן 000 חושב...",
+    "mute": "השתיק קול",
+    "unmute": "בטל השתקת קול",
+    "actionBook": "הזמינו פגישה",
+    "actionTicket": "פתח צ'אט חי / כרטיס",
     "actionContact": "Contact",
-    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket.",
-    "pickOption": "Pick the best match",
-    "relatedLinks": "Helpful links",
+    "error": "סליחה - לא הצלחתי להגיע למאגר הידע שלי. אנא נסה שוב או פתח כרטיס.",
+    "pickOption": "בחר את ההתאמה הטובה ביותר",
+    "relatedLinks": "קישורים מועילים",
     "linkFaq": "FAQ",
-    "linkKb": "Knowledge base"
+    "linkKb": "בסיס ידע"
   },
   "wordpressSupport": {
-    "saveYearlyHint": "Save up to 20% for yearly monitoring & support!",
-    "savePercent": "Save {percent}%",
-    "orderNow": "Order Now",
-    "noCreditCard": "No credit card required",
+    "saveYearlyHint": "חסוך 10% עם חיוב שנתי!",
+    "savePercent": "חסכון {%}%",
+    "orderNow": "הזמינו עכשיו",
+    "noCreditCard": "אין צורך בכרטיס אשראי",
     "packages": {
       "pro": {
         "name": "Pro",
-        "tagline": "All-in-One Support Package"
+        "tagline": "חבילת תמיכה All-in-One"
       },
       "double": {
         "name": "Double",
-        "tagline": "All-in-One Support Package"
+        "tagline": "חבילת תמיכה All-in-One"
       },
       "premium": {
         "name": "Premium",
-        "tagline": "All-in-One Support Package"
+        "tagline": "חבילת תמיכה All-in-One"
       }
     },
     "features": {
       "sites": {
-        "pro": "1 website",
-        "double": "2 websites",
-        "premium": "3-5 websites"
+        "pro": "אתר 1",
+        "double": "2 אתרי אינטרנט",
+        "premium": "3-5 אתרי אינטרנט"
       },
       "monitoring": {
-        "pro": "24/7 monitoring & support",
-        "double": "24/7 monitoring & support",
-        "premium": "24/7 monitoring & support"
+        "pro": "ניטור ותמיכה 24/7",
+        "double": "ניטור ותמיכה 24/7",
+        "premium": "ניטור ותמיכה 24/7"
       },
       "backups": {
-        "pro": "Daily backups",
-        "double": "Daily backups",
-        "premium": "Daily backups"
+        "pro": "גיבויים יומיים",
+        "double": "גיבויים יומיים",
+        "premium": "גיבויים יומיים"
       },
       "updates": {
-        "pro": "WordPress & plugin updates",
-        "double": "WordPress & plugin updates",
-        "premium": "WordPress & plugin updates"
+        "pro": "עדכוני וורדפרס ותוספים",
+        "double": "עדכוני וורדפרס ותוספים",
+        "premium": "עדכוני וורדפרס ותוספים"
       },
       "errors": {
-        "pro": "Fix website errors",
-        "double": "Fix website errors",
-        "premium": "Fix website errors"
+        "pro": "תקן שגיאות באתר",
+        "double": "תקן שגיאות באתר",
+        "premium": "תקן שגיאות באתר"
       },
       "malware": {
-        "pro": "Malware removal & security",
-        "double": "Malware removal & security",
-        "premium": "Malware removal & security"
+        "pro": "הסרת תוכנות זדוניות ואבטחה",
+        "double": "הסרת תוכנות זדוניות ואבטחה",
+        "premium": "הסרת תוכנות זדוניות ואבטחה"
       },
       "speed": {
-        "pro": "Speed optimization",
-        "double": "Speed optimization",
-        "premium": "Speed optimization"
+        "pro": "אופטימיזציה של מהירות",
+        "double": "אופטימיזציה של מהירות",
+        "premium": "אופטימיזציה של מהירות"
       },
       "seo": {
-        "pro": "SEO optimization",
-        "double": "SEO optimization",
-        "premium": "SEO optimization"
+        "pro": "אופטימיזציה של SEO",
+        "double": "אופטימיזציה של SEO",
+        "premium": "אופטימיזציה של SEO"
       }
     }
   }

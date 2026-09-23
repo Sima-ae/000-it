@@ -1,0 +1,1 @@
+Kako možete poboljšati brzinu moje web stranice? Keširanje, minifikacija koda, optimizacija slike i poboljšano vrijeme odgovora servera.

@@ -1,0 +1,1 @@
+Cum puteți îmbunătăți viteza site-ului meu? Memorarea în cache, minimizarea codului, optimizarea imaginii și timpii de răspuns îmbunătățiți ale serverului.

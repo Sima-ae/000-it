@@ -15,6 +15,7 @@ import {
   catalogServiceSummary,
   catalogServiceTitle,
 } from "@/content/fixweb/catalog-title";
+import { brandingFallbackForServiceSlug } from "@/lib/branding-images";
 import { getServiceCardMeta } from "@/lib/fixweb-content";
 import { buildStaticPageMetadata } from "@/lib/seo";
 import { hashFor, localizedHref } from "@/i18n/pathnames";
@@ -282,7 +283,11 @@ export default async function ServicesPage({
                             undefined
                           : undefined
                       }
-                      image={content?.image ?? undefined}
+                      image={
+                        content?.image ??
+                        brandingFallbackForServiceSlug(item.slug, group.id) ??
+                        undefined
+                      }
                     />
                   </Reveal>
                 </div>

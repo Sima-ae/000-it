@@ -1,0 +1,1 @@
+Hogyan fokozzuk a weboldal biztonságát? SSL, tűzfalak, rosszindulatú programok ellenőrzése, rendszeres frissítések és biztonságos konfigurációs gyakorlatok.

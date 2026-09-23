@@ -1,0 +1,1 @@
+Veb saytın təhlükəsizliyini necə artırırıq? SSL, təhlükəsizlik duvarları, zərərli proqramların skan edilməsi, müntəzəm yeniləmələr və təhlükəsiz konfiqurasiya təcrübələri.

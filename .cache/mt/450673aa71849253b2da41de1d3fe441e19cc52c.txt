@@ -1,0 +1,1 @@
+At holde dit WordPress-websted sikkert er af største vigtighed. Vores team leverer robuste sikkerhedsforanstaltninger, herunder malware-scanning, firewall-opsætning og regelmæssige sikkerhedsopdateringer. Vi holder også WordPress kerne, temaer og plugins opdateret for at reducere risikoen for brud og kompatibilitetsproblemer.

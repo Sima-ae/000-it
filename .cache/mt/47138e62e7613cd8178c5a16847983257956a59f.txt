@@ -1,0 +1,1 @@
+Mejoras orientadas a las WCAG para que más personas puedan utilizar su sitio y los motores de búsqueda lo entiendan mejor.

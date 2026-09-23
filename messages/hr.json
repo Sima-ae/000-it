@@ -104,7 +104,7 @@
       "community": "Upravljanje zajednicom",
       "webhosting": "Web hosting",
       "domains": "Domene",
-      "ai": "UI",
+      "ai": "AI",
       "aeo": "AEO",
       "geo": "GEO",
       "seo": "SEO",
@@ -124,11 +124,12 @@
       "wordpress": "WordPress",
       "maintenance": "Održavanje",
       "support": "podrška",
-      "ecommerceSeo": "E-commerce SEO",
-      "conversion": "Conversion",
+      "ecommerceSeo": "SEO za e-trgovinu",
+      "conversion": "Pretvorba",
       "speedOpt": "Core Web Vitals i brzina",
-      "analytics": "Analytics",
-      "accessibility": "Pristupačnost"
+      "analytics": "Analitika",
+      "accessibility": "Pristupačnost",
+      "texts": "Tekstovi"
     },
     "inquiry": {
       "wp": {
@@ -169,7 +170,7 @@
     "mostChosen": "Najpopularniji",
     "features": {
       "starter": [
-        "1× naziv domene .COM / .EU / .NL",
+        "1× naziv domene .COM / .EU / .HR",
         "1× web hosting",
         "1 × e-trgovina / web stranica",
         "1× AI agent",
@@ -179,7 +180,7 @@
         "24/7 praćenje"
       ],
       "growth": [
-        "1× naziv domene .COM / .EU / .NL",
+        "1× naziv domene .COM / .EU / .HR",
         "1× web hosting",
         "1 × e-trgovina / web stranica",
         "2× AI agenti",
@@ -241,10 +242,10 @@
     "subtitle": "Sve cijene uključuju 21% PDV-a.",
     "plans": "Ready To Go - Kompletan AI paket",
     "support": "Support",
-    "sharedHosting": "Shared Hosting",
+    "sharedHosting": "Zajedničko ugošćivanje",
     "wordpressHosting": "WordPress Hosting",
-    "vpsHosting": "VPS Hosting",
-    "webhosting": "Shared Hosting",
+    "vpsHosting": "VPS hosting",
+    "webhosting": "Zajedničko ugošćivanje",
     "services": "Usluge i proizvodi",
     "typePlan": "Plan",
     "typeService": "Servis",
@@ -287,7 +288,7 @@
     "backHome": "Povratak kući"
   },
   "footer": {
-    "tagline": "Nudimo usluge i proizvode za poduzetnike i freelancere — od oglašavanja, AI integracije, AEO, GEO i SEO, tiska, e‑mail marketinga, grafičkog dizajna, online marketinga, održavanja, optimizacije, upravljanja društvenim mrežama, web dizajna i WordPress podrške do web hostinga i naziva domena.",
+    "tagline": "Nudimo usluge i proizvode za poduzetnike i freelancere — od oglašavanja, AI integracije, AEO, GEO i SEO, tiska, e‑mail marketinga, grafičkog dizajna, online marketinga, održavanja, optimizacije, upravljanja društvenim mrežama, web dizajna i WordPress podrške do web hostinga i naziva domena.",
     "rights": "Sva prava pridržana.",
     "usefulLinks": "Korisni linkovi",
     "socialMedia": "Društvene mreže",
@@ -438,7 +439,25 @@
     "company": "Tvrtka",
     "message": "Poruka",
     "send": "Poslati",
-    "success": "Hvala! Uskoro ćemo ti se javiti."
+    "success": "Hvala! Uskoro ćemo ti se javiti.",
+    "detailsTitle": "Kontaktni podaci",
+    "companyName": "TripleZero iT",
+    "addressLabel": "Adresa",
+    "addressLine1": "Burlington Tower, 19th floor",
+    "addressLine2": "Business Bay, Al Abraj St.",
+    "addressLine3": "Dubai – United Arab Emirates",
+    "addressLine4": "",
+    "emailLabel": "E-pošte",
+    "emailAddress": "info@000-it.com",
+    "detailsNote": "Pošaljite poruku putem obrasca — odgovaramo što prije možemo.",
+    "routeLabel": "Ruta",
+    "routeOpenAria": "Otvori rutu u Google Mapsu",
+    "emailAddresses": [
+      "info@000-it.com",
+      "privacy@000-it.com",
+      "sales@000-it.com",
+      "support@000-it.com"
+    ]
   },
   "aiScan": {
     "title": "Besplatno skeniranje spremnosti AI",
@@ -461,7 +480,7 @@
     "resultsTitle": "Rezultati AI skeniranja",
     "contactTitle": "Kontakt o AI skeniranju",
     "contactDescription": "Ostavite svoje podatke — pomoći ćemo ti u tumačenju rezultata i izraditi plan.",
-    "contactMessageLead": "Bok TripleZero iT,\n\nIzvršio sam AI skeniranje i želio bih razgovarati o rezultatima.\n\nURL web stranice: {url}\n\nRezultati:\n{scores}\n\nPitanje/napomene:"
+    "contactMessageLead": "Bok TripleZero iT, Izvršio sam AI skeniranje i želio bih razgovarati o rezultatima. URL web stranice: {url} Rezultati: {scores} Pitanje/napomene:"
   },
   "portfolio": {
     "title": "Portfelj",
@@ -555,63 +574,63 @@
   "about": {
     "eyebrow": "O nama",
     "title": "O TripleZero iT",
-    "heroSubtitle": "Pomagamy przedsiębiorcom i organizacjom w Europie rosnąć dzięki AI, stronom, hostingowi, SEO i marketingowi — praktycznie, mierzalnie i bez zbędnej złożoności.",
+    "heroSubtitle": "Pomažemo poduzetnicima i organizacijama u Europi rasti uz AI, web stranice, hosting, SEO i marketing — praktično, mjerljivo i bez nepotrebne složenosti.",
     "viewServices": "Pogledaj usluge",
     "statResponseValue": "1–4 sata",
     "statResponse": "prosječni odgovor",
     "statAvailableValue": "7 dana",
     "statAvailable": "dostupni",
     "statMonitoringValue": "24/7",
-    "statMonitoring": "monitoring i wsparcie",
+    "statMonitoring": "monitoring i podrška",
     "mission": "Misija",
-    "missionText": "Pomagamy firmom praktycznymi systemami wzrostu opartymi o AI — od szybkich stron i stabilnego hostingu po widoczność, konwersję i automatyzację, która realnie odciąża pracę.",
+    "missionText": "Pomagati tvrtkama praktičnim AI sustavima rasta — od brzih web stranica i pouzdanog hostinga do vidljivosti, konverzije i automatizacije koja stvarno rasterećuje posao.",
     "vision": "Vizija",
-    "visionText": "Budować właściwe rozwiązanie cyfrowe dla każdego przedsiębiorcy — skalowalne, przejrzyste i nastawione na wzrost, nie na modne narzędzia bez efektów.",
+    "visionText": "Graditi pravo digitalno rješenje za svakog poduzetnika — skalabilno, jasno i usmjereno na rast, a ne na moderne alate bez rezultata.",
     "philosophy": "Filozofija TripleZero",
-    "philosophyText": "000 oznacza zero zgadywania, zero niedoboru i zero marnotrawstwa: decyzje oparte na danych, wystarczająca pojemność do wzrostu i żaden budżet ani czas na to, co nie działa.",
+    "philosophyText": "000 znači nula nagađanja, nula manjka i nula rasipanja: odluke temeljene na podacima, dovoljno kapaciteta za rast i nikakav budžet ili vrijeme na ono što ne radi.",
     "storyTitle": "Tko smo",
-    "storyLead": "TripleZero iT to Wasz techniczny partner wzrostu — od pierwszego skanu po ciągłą optymalizację.",
-    "storyP1": "Łączymy integrację AI, AEO, GEO, SEO, webdesign, opiekę WordPress, hosting i marketing full-funnel w jednym podejściu. Wasza obecność online pozostaje szybka, bezpieczna, widoczna i ukierunkowana na leady lub przychód.",
-    "storyP2": "Czy to bug, malware, migracja, sprint wydajnościowy czy nowy system wzrostu: działamy z fokusem, wyjaśniamy drogę i dostarczamy mierzalne rezultaty — żebyście mogli skupić się na biznesie.",
-    "storyP3": "Pracujemy z Holandii i Belgii z europejskimi przedsiębiorcami, freelancersami i zespołami MŚP, które chcą niezawodnego IT bez enterprise’owego narzutu.",
+    "storyLead": "TripleZero iT je vaš tehnički partner rasta — od prvog skena do kontinuirane optimizacije.",
+    "storyP1": "Spajamo AI integraciju, AEO, GEO, SEO, web dizajn, WordPress skrb, hosting i full-funnel marketing u jedan pristup. Vaša online prisutnost ostaje brza, sigurna, pronalaziva i usmjerena na leadove ili prihod.",
+    "storyP2": "Bilo da je riječ o bugu, malwareu, migraciji, performance sprintu ili novom sustavu rasta: djelujemo fokusirano, objašnjavamo put i isporučujemo mjerljive rezultate — kako biste se vi fokusirali na poslovanje.",
+    "storyP3": "Radimo iz Nizozemske i Belgije s europskim poduzetnicima, freelanceraima i SME timovima koji žele pouzdan IT bez enterprise overheada.",
     "approachTitle": "Kako radimo",
-    "approachSubtitle": "Jasne kroki, krótkie linie komunikacji i ulepszenia, które możecie zmierzyć — bez czarnej skrzynki.",
-    "approach1Title": "Zrozumieć",
-    "approach1Desc": "Mapujemy cele, stack i wąskie gardła: co rośnie, co hamuje i gdzie AI lub optymalizacja daje najwięcej.",
-    "approach2Title": "Budować",
-    "approach2Desc": "Skupiona implementacja: poprawki, funkcje, treść, tracking lub infrastruktura — priorytet wg wpływu.",
-    "approach3Title": "Mierzyć",
-    "approach3Desc": "Śledzimy szybkość, widoczność, konwersję i stabilność konkretnymi sygnałami — nie vanity metrics.",
-    "approach4Title": "Ulepszać",
-    "approach4Desc": "Iterujemy to, co działa: retencja, skala i ciągłe doskonalenie dla trwałego wzrostu.",
+    "approachSubtitle": "Jasni koraci, kratka komunikacija i poboljšanja koja možete mjeriti — bez crne kutije.",
+    "approach1Title": "Razumjeti",
+    "approach1Desc": "Mapiramo ciljeve, stack i uska grla: što raste, što koči i gdje AI ili optimizacija najviše donose.",
+    "approach2Title": "Graditi",
+    "approach2Desc": "Fokusirana implementacija: popravci, značajke, sadržaj, praćenje ili infrastruktura — prema utjecaju.",
+    "approach3Title": "Mjeriti",
+    "approach3Desc": "Pratimo brzinu, vidljivost, konverziju i stabilnost konkretnim signalima — ne vanity metrikama.",
+    "approach4Title": "Poboljšati",
+    "approach4Desc": "Iteriramo ono što radi: zadržavanje, skala i kontinuirano poboljšanje za održiv rast.",
     "whatWeDo": "Što radimo",
-    "whatWeDoSubtitle": "Jeden partner od wzrostu, technologii i widoczności — od AI po hosting.",
+    "whatWeDoSubtitle": "Jedan partner za rast, tehnologiju i vidljivost — od AI-a do hostinga.",
     "allServicesArrow": "Sve usluge →",
-    "pillarAiTitle": "AI i automatyzacja",
-    "pillarAiDesc": "Agenci, workflow i integracje AI przyspieszające marketing, support i operacje.",
+    "pillarAiTitle": "AI i automatizacija",
+    "pillarAiDesc": "Agenti, workflowi i AI integracije koje ubrzavaju marketing, podršku i operacije.",
     "pillarOptTitle": "AEO, GEO i SEO",
-    "pillarOptDesc": "Widoczność w Google, lokalnie i w odpowiedziach AI — z treścią i techniką, które rankują.",
-    "pillarWebTitle": "Strony i sklepy",
-    "pillarWebDesc": "Szybkie, konwersyjne strony i sklepy, które zamieniają odwiedzających w klientów.",
-    "pillarWpTitle": "Opieka WordPress",
-    "pillarWpDesc": "Błędy, malware, szybkość, backupy i migracje — szybko i starannie.",
+    "pillarOptDesc": "Biti pronađeni na Googleu, lokalno i u AI odgovorima — sa sadržajem i tehnikom koja rangira.",
+    "pillarWebTitle": "Web stranice i trgovine",
+    "pillarWebDesc": "Brze, konverzijski usmjerene stranice i shopovi koji pretvaraju posjetitelje u kupce.",
+    "pillarWpTitle": "WordPress skrb",
+    "pillarWpDesc": "Bugovi, malware, brzina, backupi i migracije — brzo i pažljivo.",
     "pillarHostTitle": "Hosting i infrastruktura",
-    "pillarHostDesc": "Stabilny hosting WWW, WordPress i VPS ze wsparciem, gdy go potrzebujecie.",
-    "pillarMarketTitle": "Marketing i treść",
-    "pillarMarketDesc": "Kampanie, treść i social dopasowane do lejka i mierzalnej pozyskania klientów.",
-    "pillarDesignTitle": "Grafika",
-    "pillarDesignDesc": "Logotypy, druk i materiały marki spójne z Waszą obecnością cyfrową.",
+    "pillarHostDesc": "Pouzdani web hosting, WordPress hosting i VPS s podrškom kada vam treba.",
+    "pillarMarketTitle": "Marketing i sadržaj",
+    "pillarMarketDesc": "Kampanje, sadržaj i social usklađeni s funnelom i mjerljivom akvizicijom.",
+    "pillarDesignTitle": "Grafički dizajn",
+    "pillarDesignDesc": "Logotipi, print i brand materijali koji profesionalno pristaju digitalnoj prisutnosti.",
     "serveTitle": "S kime radimo",
-    "serveText": "Dla freelancerów, startupów i ugruntowanych MŚP, które chcą rosnąć online bez dziesięcioosobowego zespołu IT lub marketingu. Macie jasny punkt kontaktu, przejrzyste oferty i realizację dopasowaną do tempa i budżetu.",
+    "serveText": "S freelanceraima, startupima i etabliranim SME-ima koji žele rasti online bez internog IT ili marketing tima od deset ljudi. Dobivate jasnu kontaktnu točku, transparentne ponude i isporuku u tempu i budžetu koji odgovaraju.",
     "whyEyebrow": "Zašto",
-    "why1Title": "Praktycznie, nie teoretycznie",
-    "why1Desc": "Doradztwo, które przechodzi w wdrożenie — z jasnymi deliverables i kolejnymi krokami.",
-    "why2Title": "Jeden system, mniej tarć",
-    "why2Desc": "AI, strona, hosting, SEO i marketing wzmacniają się nawzajem zamiast żyć w silosach.",
-    "why3Title": "Szybko dostępni",
-    "why3Desc": "Krótki czas odpowiedzi, dostępni 7 dni i monitoring, gdy środowisko tego wymaga.",
+    "why1Title": "Praktično, ne teoretski",
+    "why1Desc": "Savjetovanje koje ide do implementacije — s jasnim deliverablesima i sljedećim koracima.",
+    "why2Title": "Jedan sustav, manje trenja",
+    "why2Desc": "AI, stranica, hosting, SEO i marketing se međusobno jačaju umjesto da žive u silosima.",
+    "why3Title": "Brzo dostupni",
+    "why3Desc": "Kratka vremena odgovora, dostupni 7 dana i monitoring kada okruženje to zahtijeva.",
     "readyTitle": "Spremni za početak?",
-    "readySubtitle": "Umówcie rozmowę, uruchomcie darmowy skan AI lub napiszcie — chętnie wytyczymy najszybszą drogę do wyniku."
+    "readySubtitle": "Dogovorite razgovor, pokrenite besplatni AI sken ili nas kontaktirajte — zajedno crtamo najbrži put do rezultata."
   },
   "cases": {
     "title": "Studije slučaja",
@@ -659,8 +678,8 @@
     "results": "rezultata",
     "forQuery": "za",
     "empty": "Nema pronađenih rezultata.",
-    "browseTitle": "Browse all questions",
-    "matchedHint": "Matched FAQ highlighted below"
+    "browseTitle": "Pregledaj sva pitanja",
+    "matchedHint": "Podudarni FAQ istaknut je u nastavku"
   },
   "appointment": {
     "title": "Rezervirajte sastanak na dan",
@@ -729,9 +748,9 @@
     "title": "Razgovor uživo",
     "subtitle": "TripleZero iT",
     "online": "Online",
-    "teaserLine1": "Need help?",
-    "teaserLine2": "Open the chat...",
-    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
+    "teaserLine1": "Trebate pomoć?",
+    "teaserLine2": "Otvori chat...",
+    "emptyChat": "Postavite pitanje Agentu 000 — prvo odgovori na FAQ, ljudi po potrebi.",
     "emptyTicket": "Opišite svoj zahtjev — otvorit ćemo kartu sinkroniziranu s vašom nadzornom pločom.",
     "placeholder": "Upišite svoju poruku…",
     "newTicket": "Nova karta",
@@ -769,7 +788,7 @@
   },
   "inquiry": {
     "websiteHint": "web stranica / webshop",
-    "defaultMessage": "Pozdrav TripleZero iT,\n\nŽelio bih saznati više o {service} za naš {hint}.\n\nURL web stranice:\nCilj (npr. chatbot, pomoćnik proizvoda, AI sadržaja, prilagođeno):",
+    "defaultMessage": "Pozdrav TripleZero iT, Želio bih saznati više o {service} za naš {hint}. URL web stranice: Cilj (npr. chatbot, pomoćnik proizvoda, AI sadržaja, prilagođeno):",
     "requestAi": "Zahtjev za integraciju umjetne inteligencije",
     "sendRequest": "Pošalji zahtjev",
     "dialogTitle": "Kontakt o {service}",
@@ -797,81 +816,81 @@
   },
   "agent000": {
     "name": "Agent 000",
-    "role": "Virtual FAQ & support assistant",
+    "role": "Virtualni FAQ & pomoćnik znanja",
     "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
-    "placeholder": "Ask Agent 000 a question…",
-    "send": "Send",
-    "thinking": "Agent 000 is thinking…",
-    "mute": "Mute voice",
-    "unmute": "Unmute voice",
-    "actionBook": "Book appointment",
-    "actionTicket": "Open live chat / ticket",
+    "placeholder": "Postavite pitanje agentu 000...",
+    "send": "Poslati",
+    "thinking": "Agent 000 razmišlja...",
+    "mute": "Isključi glas",
+    "unmute": "Uključi glas",
+    "actionBook": "Rezervirajte termin",
+    "actionTicket": "Otvorite live chat / ulaznicu",
     "actionContact": "Contact",
-    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket.",
-    "pickOption": "Pick the best match",
-    "relatedLinks": "Helpful links",
+    "error": "Žao mi je — nisam mogao pristupiti svojoj bazi znanja. Pokušajte ponovno ili otvorite kartu.",
+    "pickOption": "Odaberite najbolji spoj",
+    "relatedLinks": "Korisni linkovi",
     "linkFaq": "FAQ",
-    "linkKb": "Knowledge base"
+    "linkKb": "Baza znanja"
   },
   "wordpressSupport": {
-    "saveYearlyHint": "Save up to 20% for yearly monitoring & support!",
-    "savePercent": "Save {percent}%",
-    "orderNow": "Order Now",
-    "noCreditCard": "No credit card required",
+    "saveYearlyHint": "Uštedite 10% uz godišnju naplatu!",
+    "savePercent": "Uštedite {percent}%",
+    "orderNow": "Naručite odmah",
+    "noCreditCard": "Kreditna kartica nije potrebna",
     "packages": {
       "pro": {
         "name": "Pro",
-        "tagline": "All-in-One Support Package"
+        "tagline": "Sve-u-jednom paket podrške"
       },
       "double": {
         "name": "Double",
-        "tagline": "All-in-One Support Package"
+        "tagline": "Sve-u-jednom paket podrške"
       },
       "premium": {
         "name": "Premium",
-        "tagline": "All-in-One Support Package"
+        "tagline": "Sve-u-jednom paket podrške"
       }
     },
     "features": {
       "sites": {
-        "pro": "1 website",
-        "double": "2 websites",
-        "premium": "3-5 websites"
+        "pro": "1 web stranica",
+        "double": "2 web stranice",
+        "premium": "3-5 web stranica"
       },
       "monitoring": {
-        "pro": "24/7 monitoring & support",
-        "double": "24/7 monitoring & support",
-        "premium": "24/7 monitoring & support"
+        "pro": "24/7 praćenje i podrška",
+        "double": "24/7 praćenje i podrška",
+        "premium": "24/7 praćenje i podrška"
       },
       "backups": {
-        "pro": "Daily backups",
-        "double": "Daily backups",
-        "premium": "Daily backups"
+        "pro": "Dnevne sigurnosne kopije",
+        "double": "Dnevne sigurnosne kopije",
+        "premium": "Dnevne sigurnosne kopije"
       },
       "updates": {
-        "pro": "WordPress & plugin updates",
-        "double": "WordPress & plugin updates",
-        "premium": "WordPress & plugin updates"
+        "pro": "WordPress i ažuriranja dodataka",
+        "double": "WordPress i ažuriranja dodataka",
+        "premium": "WordPress i ažuriranja dodataka"
       },
       "errors": {
-        "pro": "Fix website errors",
-        "double": "Fix website errors",
-        "premium": "Fix website errors"
+        "pro": "Ispravite pogreške web stranice",
+        "double": "Ispravite pogreške web stranice",
+        "premium": "Ispravite pogreške web stranice"
       },
       "malware": {
-        "pro": "Malware removal & security",
-        "double": "Malware removal & security",
-        "premium": "Malware removal & security"
+        "pro": "Uklanjanje zlonamjernog softvera i sigurnost",
+        "double": "Uklanjanje zlonamjernog softvera i sigurnost",
+        "premium": "Uklanjanje zlonamjernog softvera i sigurnost"
       },
       "speed": {
-        "pro": "Speed optimization",
-        "double": "Speed optimization",
-        "premium": "Speed optimization"
+        "pro": "Optimizacija brzine",
+        "double": "Optimizacija brzine",
+        "premium": "Optimizacija brzine"
       },
       "seo": {
-        "pro": "SEO optimization",
-        "double": "SEO optimization",
-        "premium": "SEO optimization"
+        "pro": "SEO optimizacija",
+        "double": "SEO optimizacija",
+        "premium": "SEO optimizacija"
       }
     }
   }

@@ -170,7 +170,7 @@
     "mostChosen": "Most popular",
     "features": {
       "starter": [
-        "1× domain name .COM / .EU / .NL",
+        "1× domain name .COM / .EU / .UK",
         "1× web hosting",
         "1× e-commerce shop / website",
         "1× AI agent",
@@ -180,7 +180,7 @@
         "24/7 monitoring"
       ],
       "growth": [
-        "1× domain name .COM / .EU / .NL",
+        "1× domain name .COM / .EU / .UK",
         "1× web hosting",
         "1× e-commerce shop / website",
         "2× AI agents",
@@ -439,7 +439,25 @@
     "company": "Company",
     "message": "Message",
     "send": "Send",
-    "success": "Thanks! We'll get back to you soon."
+    "success": "Thanks! We'll get back to you soon.",
+    "detailsTitle": "Contact details",
+    "companyName": "TripleZero iT",
+    "addressLabel": "Address",
+    "addressLine1": "Burlington Tower, 19th floor",
+    "addressLine2": "Business Bay, Al Abraj St.",
+    "addressLine3": "Dubai – United Arab Emirates",
+    "addressLine4": "",
+    "emailLabel": "Emails",
+    "emailAddress": "info@000-it.com",
+    "detailsNote": "Send your message via the form — we reply as soon as we can.",
+    "routeLabel": "Directions",
+    "routeOpenAria": "Open directions in Google Maps",
+    "emailAddresses": [
+      "info@000-it.com",
+      "privacy@000-it.com",
+      "sales@000-it.com",
+      "support@000-it.com"
+    ]
   },
   "aiScan": {
     "title": "Free AI Readiness Scan",
@@ -462,7 +480,7 @@
     "resultsTitle": "AI scan results",
     "contactTitle": "Contact about AI scan",
     "contactDescription": "Leave your details — we'll help interpret the scores and outline a plan.",
-    "contactMessageLead": "Hi TripleZero iT,\n\nI've run an AI scan and would like to discuss the results.\n\nWebsite URL: {url}\n\nScores:\n{scores}\n\nQuestion / notes:\n"
+    "contactMessageLead": "Hi TripleZero iT,\n\nI've run an AI scan and would like to discuss the results.\n\nWebsite URL: {url}\n\nScores:\n{scores}\n\nQuestion / notes:"
   },
   "portfolio": {
     "title": "Portfolio",
@@ -788,14 +806,14 @@
   },
   "inquiry": {
     "websiteHint": "website / webshop",
-    "defaultMessage": "Hello TripleZero iT,\n\nI would like to learn more about {service} for our {hint}.\n\nWebsite URL:\nGoal (e.g. chatbot, product assistant, content AI, custom):\n\n",
+    "defaultMessage": "Hello TripleZero iT,\n\nI would like to learn more about {service} for our {hint}.\n\nWebsite URL:\nGoal (e.g. chatbot, product assistant, content AI, custom):",
     "requestAi": "Request AI integration",
     "sendRequest": "Send request",
     "dialogTitle": "Contact about {service}",
     "dialogDesc": "Leave your details — we’ll reply quickly with a feasibility note and next steps."
   },
   "legal": {
-    "sharingData": "Sharing data: ",
+    "sharingData": "Sharing data:",
     "name": "Name",
     "expiration": "Expiration",
     "function": "Function"

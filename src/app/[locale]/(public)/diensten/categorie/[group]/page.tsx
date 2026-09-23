@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound, redirect } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Button } from "@/components/ui/button";
@@ -18,6 +19,7 @@ import {
   sortedServiceGroups,
 } from "@/content/fixweb/catalog";
 import { catalogGroupTitle } from "@/content/fixweb/catalog-title";
+import { brandingFallbackForServiceSlug, brandingImageForServiceGroup } from "@/lib/branding-images";
 import { listServiceGroupCards } from "@/lib/service-group-listing";
 import { buildPageMetadata } from "@/lib/seo";
 import { localizedHref } from "@/i18n/pathnames";
@@ -92,16 +94,29 @@ export default async function ServiceCategoryPage({ params }: Params) {
       </p>
 
       <Reveal>
-        <header className="mt-6 max-w-3xl">
-          <h1 className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
-            {title}
-          </h1>
-          {summary ? (
-            <p className="mt-3 text-muted-foreground md:text-lg">{summary}</p>
-          ) : null}
-          <p className="mt-2 text-sm text-muted-foreground">
-            {cards.length} {t("countLabel")}
-          </p>
+        <header className="mt-6 grid items-center gap-6 lg:grid-cols-[1.15fr_0.85fr]">
+          <div className="max-w-3xl">
+            <h1 className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
+              {title}
+            </h1>
+            {summary ? (
+              <p className="mt-3 text-muted-foreground md:text-lg">{summary}</p>
+            ) : null}
+            <p className="mt-2 text-sm text-muted-foreground">
+              {cards.length} {t("countLabel")}
+            </p>
+          </div>
+          <div className="relative aspect-5/4 overflow-hidden rounded-3xl bg-muted/40 shadow-sm">
+            <Image
+              src={brandingImageForServiceGroup(group.id)}
+              alt=""
+              fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 40vw"
+              unoptimized
+              className="object-cover object-center"
+            />
+          </div>
         </header>
       </Reveal>
 
@@ -129,7 +144,10 @@ export default async function ServiceCategoryPage({ params }: Params) {
                 summary={card.summary}
                 price={card.price}
                 listPrice={card.listPrice}
-                image={card.image}
+                image={
+                  card.image ||
+                  brandingFallbackForServiceSlug(card.item.slug, group.id)
+                }
               />
             </Reveal>
           </div>

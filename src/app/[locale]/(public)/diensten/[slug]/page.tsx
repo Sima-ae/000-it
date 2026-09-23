@@ -24,6 +24,7 @@ import {
   catalogServiceTitle,
 } from "@/content/fixweb/catalog-title";
 import { formatEuro, getServiceCardMeta, getServiceContent } from "@/lib/fixweb-content";
+import { brandingFallbackForServiceSlug } from "@/lib/branding-images";
 import {
   getShopProductBySlug,
   loadShopCatalogFromDb,
@@ -118,6 +119,10 @@ export default async function ServiceDetailPage({
   )
     .filter(({ relatedContent }) => Boolean(relatedContent?.hasBody))
     .slice(0, 3);
+
+  const heroImage =
+    content.image ||
+    brandingFallbackForServiceSlug(slug, meta?.group);
 
   return (
     <div>
@@ -263,10 +268,10 @@ export default async function ServiceDetailPage({
                   )}
                 </div>
               </div>
-              {content.image ? (
+              {heroImage ? (
                 <div className="relative aspect-4/3 overflow-hidden rounded-[1.75rem] border border-border/70 shadow-sm">
                   <ShopProductImage
-                    src={content.image}
+                    src={heroImage}
                     alt={content.title}
                     sizes="(max-width: 768px) 100vw, 50vw"
                     priority
@@ -371,7 +376,11 @@ export default async function ServiceDetailPage({
                             | undefined) ?? undefined
                         : undefined
                     }
-                    image={relatedContent?.image ?? undefined}
+                    image={
+                      relatedContent?.image ??
+                      brandingFallbackForServiceSlug(item.slug, meta?.group) ??
+                      undefined
+                    }
                   />
                 </Reveal>
               ))}

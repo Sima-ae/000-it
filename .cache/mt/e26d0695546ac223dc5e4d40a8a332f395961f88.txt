@@ -1,0 +1,1 @@
+Comment pouvez-vous améliorer la vitesse de mon site Web ? Mise en cache, minification du code, optimisation des images et amélioration des temps de réponse du serveur.

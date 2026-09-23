@@ -1,0 +1,1 @@
+Hvordan kan du forbedre nettstedets hastighet? Caching, kodeminifisering, bildeoptimalisering og forbedrede serverresponstider.

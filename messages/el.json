@@ -104,8 +104,8 @@
       "community": "κοινοτική διαχείριση",
       "webhosting": "Φιλοξενία ιστοσελίδων",
       "domains": "Τομείς",
-      "ai": "Όλα συμπεριλαμβάνονται",
-      "aeo": "ΕΟΦ",
+      "ai": "AI",
+      "aeo": "AEO",
       "geo": "GEO",
       "seo": "SEO",
       "chatbots": "Chatbots",
@@ -124,11 +124,12 @@
       "wordpress": "WordPress",
       "maintenance": "Συντήρηση",
       "support": "Υποστήριξη",
-      "ecommerceSeo": "E-commerce SEO",
-      "conversion": "Conversion",
+      "ecommerceSeo": "SEO ηλεκτρονικού εμπορίου",
+      "conversion": "Μετατροπή",
       "speedOpt": "Core Web Vitals και ταχύτητα",
       "analytics": "Analytics",
-      "accessibility": "Προσβασιμότητα"
+      "accessibility": "Προσβασιμότητα",
+      "texts": "Κείμενα"
     },
     "inquiry": {
       "wp": {
@@ -169,7 +170,7 @@
     "mostChosen": "Το πιο δημοφιλές",
     "features": {
       "starter": [
-        "1× όνομα τομέα .COM / .EU / .NL",
+        "1× όνομα τομέα .COM / .EU / .GR",
         "1× φιλοξενία ιστοσελίδων",
         "1× κατάστημα / ιστότοπο ηλεκτρονικού εμπορίου",
         "1× AI πράκτορας",
@@ -179,7 +180,7 @@
         "Παρακολούθηση 24/7"
       ],
       "growth": [
-        "1× όνομα τομέα .COM / .EU / .NL",
+        "1× όνομα τομέα .COM / .EU / .GR",
         "1× φιλοξενία ιστοσελίδων",
         "1× κατάστημα / ιστότοπο ηλεκτρονικού εμπορίου",
         "2× AI πράκτορες",
@@ -241,10 +242,10 @@
     "subtitle": "Όλες οι τιμές περιλαμβάνουν ΦΠΑ 21%.",
     "plans": "Ready To Go - Πλήρες πακέτο AI",
     "support": "Support",
-    "sharedHosting": "Shared Hosting",
-    "wordpressHosting": "WordPress Hosting",
+    "sharedHosting": "Κοινόχρηστη φιλοξενία",
+    "wordpressHosting": "Φιλοξενία WordPress",
     "vpsHosting": "VPS Hosting",
-    "webhosting": "Shared Hosting",
+    "webhosting": "Κοινόχρηστη φιλοξενία",
     "services": "Υπηρεσίες & προϊόντα",
     "typePlan": "Πρόγραμμα",
     "typeService": "Υπηρεσία",
@@ -287,7 +288,7 @@
     "backHome": "Πίσω στο σπίτι"
   },
   "footer": {
-    "tagline": "Προσφέρουμε υπηρεσίες και προϊόντα για επιχειρηματίες και ελεύθερους επαγγελματίες — από διαφήμιση, ενσωμάτωση AI, AEO, GEO και SEO, εκτυπώσεις, email marketing, γραφιστικό σχεδιασμό, online marketing, συντήρηση, βελτιστοποίηση, διαχείριση social media, web design και υποστήριξη WordPress έως web hosting και ονόματα domain.",
+    "tagline": "Προσφέρουμε υπηρεσίες και προϊόντα για επιχειρηματίες και ελεύθερους επαγγελματίες — από διαφήμιση, ενσωμάτωση AI, AEO, GEO και SEO, εκτυπώσεις, email marketing, γραφιστικό σχεδιασμό, online marketing, συντήρηση, βελτιστοποίηση, διαχείριση social media, web design και υποστήριξη WordPress έως web hosting και ονόματα domain.",
     "rights": "Με την επιφύλαξη παντός δικαιώματος.",
     "usefulLinks": "Χρήσιμοι Σύνδεσμοι",
     "socialMedia": "Κοινωνικά δίκτυα",
@@ -438,7 +439,25 @@
     "company": "Εταιρεία",
     "message": "Μήνυμα",
     "send": "Αποστολή",
-    "success": "Ευχαριστώ! Θα επικοινωνήσουμε μαζί σου σύντομα."
+    "success": "Ευχαριστώ! Θα επικοινωνήσουμε μαζί σου σύντομα.",
+    "detailsTitle": "Στοιχεία επικοινωνίας",
+    "companyName": "TripleZero iT",
+    "addressLabel": "Διεύθυνση",
+    "addressLine1": "Burlington Tower, 19th floor",
+    "addressLine2": "Business Bay, Al Abraj St.",
+    "addressLine3": "Dubai – United Arab Emirates",
+    "addressLine4": "",
+    "emailLabel": "Email",
+    "emailAddress": "info@000-it.com",
+    "detailsNote": "Στείλτε μήνυμα μέσω της φόρμας — απαντάμε το συντομότερο δυνατό.",
+    "routeLabel": "Διαδρομή",
+    "routeOpenAria": "Άνοιγμα διαδρομής στο Google Maps",
+    "emailAddresses": [
+      "info@000-it.com",
+      "privacy@000-it.com",
+      "sales@000-it.com",
+      "support@000-it.com"
+    ]
   },
   "aiScan": {
     "title": "Δωρεάν σάρωση ετοιμότητας AI",
@@ -461,7 +480,7 @@
     "resultsTitle": "Αποτελέσματα σάρωσης AI",
     "contactTitle": "Επικοινωνία σχετικά με τη σάρωση AI",
     "contactDescription": "Αφήστε τα στοιχεία σου — θα σου βοηθήσουμε να ερμηνεύσουμε τις βαθμολογίες και να σχεδιάσουμε ένα σχέδιο.",
-    "contactMessageLead": "Γεια σου TripleZero iT,\n\nΈχω εκτελέσει μια σάρωση AI και θα ήθελα να συζητήσω τα αποτελέσματα.\n\nΔιεύθυνση URL ιστότοπου: {url}\n\nΒαθμολογίες:\n{scores}\n\nΕρώτηση / σημειώσεις:"
+    "contactMessageLead": "Γεια σου TripleZero iT, Έχω εκτελέσει μια σάρωση AI και θα ήθελα να συζητήσω τα αποτελέσματα. Διεύθυνση URL ιστότοπου: {url} Βαθμολογίες: {scores} Ερώτηση / σημειώσεις:"
   },
   "portfolio": {
     "title": "Χαρτοφυλάκιο",
@@ -564,52 +583,52 @@
     "statMonitoringValue": "24/7",
     "statMonitoring": "παρακολούθηση και υποστήριξη",
     "mission": "Αποστολή",
-    "missionText": "Help businesses with practical AI growth systems — from fast websites and reliable hosting to visibility, conversion and automation that genuinely takes work off your plate.",
+    "missionText": "Να βοηθάμε επιχειρήσεις με πρακτικά συστήματα ανάπτυξης AI — από γρήγορα sites και αξιόπιστο hosting έως ορατότητα, μετατροπές και αυτοματισμό που πραγματικά μειώνει τον φόρτο εργασίας.",
     "vision": "Όραμα",
-    "visionText": "Build the right digital solution for every entrepreneur — scalable, clear and designed for growth, not trendy tools without outcomes.",
+    "visionText": "Να χτίζουμε τη σωστή ψηφιακή λύση για κάθε επιχειρηματία — επεκτάσιμη, σαφή και σχεδιασμένη για ανάπτυξη, όχι για μοντέρνα εργαλεία χωρίς αποτελέσματα.",
     "philosophy": "Η φιλοσοφία TripleZero",
-    "philosophyText": "000 means zero guesswork, zero shortfall and zero waste: decisions backed by data, enough capacity to grow, and no budget or time spent on what does not work.",
+    "philosophyText": "Το 000 σημαίνει μηδέν εικασίες, μηδέν έλλειψη και μηδέν σπατάλη: αποφάσεις βάσει δεδομένων, αρκετή χωρητικότητα για ανάπτυξη και κανένας προϋπολογισμός ή χρόνος σε ό,τι δεν αποδίδει.",
     "storyTitle": "Ποιοι είμαστε",
-    "storyLead": "TripleZero iT is your technical growth partner — from the first scan to ongoing optimisation.",
-    "storyP1": "We combine AI integration, AEO, GEO, SEO, web design, WordPress care, hosting and full-funnel marketing in one approach. Your online presence stays fast, secure, findable and focused on leads or revenue.",
-    "storyP2": "Whether it is a bug, malware, migration, performance sprint or a new growth system: we act with focus, explain what is happening and deliver measurable results — so you can focus on your business.",
-    "storyP3": "We work from the Netherlands and Belgium with European entrepreneurs, freelancers and SME teams that want dependable IT without enterprise overhead.",
+    "storyLead": "Η TripleZero iT είναι ο τεχνικός σας συνεργάτης ανάπτυξης — από την πρώτη σάρωση έως τη συνεχή βελτιστοποίηση.",
+    "storyP1": "Συνδυάζουμε ενσωμάτωση AI, AEO, GEO, SEO, web design, φροντίδα WordPress, hosting και full-funnel marketing σε μία προσέγγιση. Η online παρουσία σας παραμένει γρήγορη, ασφαλής, ανευρέσιμη και εστιασμένη σε leads ή έσοδα.",
+    "storyP2": "Είτε πρόκειται για bug, malware, μετεγκατάσταση, performance sprint ή νέο σύστημα ανάπτυξης: ενεργούμε με εστίαση, εξηγούμε τη διαδρομή και παραδίδουμε μετρήσιμα αποτελέσματα — ώστε να εστιάζετε στην επιχείρησή σας.",
+    "storyP3": "Εργαζόμαστε από τις Κάτω Χώρες και το Βέλγιο με Ευρωπαίους επιχειρηματίες, freelancers και ομάδες ΜΜΕ που θέλουν αξιόπιστη IT χωρίς enterprise overhead.",
     "approachTitle": "Πώς δουλεύουμε",
-    "approachSubtitle": "Clear steps, short lines of communication and improvements you can measure — no black box.",
-    "approach1Title": "Understand",
-    "approach1Desc": "Map goals, stack and bottlenecks: what is growing, what is blocking, and where AI or optimisation pays off most.",
-    "approach2Title": "Build",
-    "approach2Desc": "Focused implementation: fixes, features, content, tracking or infrastructure — prioritised by impact.",
-    "approach3Title": "Measure",
-    "approach3Desc": "We track speed, visibility, conversion and stability with concrete signals — not vanity metrics.",
-    "approach4Title": "Improve",
-    "approach4Desc": "Iterate on what works: retention, scale and continuous improvement so growth stays sustainable.",
+    "approachSubtitle": "Σαφή βήματα, σύντομη επικοινωνία και βελτιώσεις που μπορείτε να μετρήσετε — χωρίς μαύρο κουτί.",
+    "approach1Title": "Κατανόηση",
+    "approach1Desc": "Χαρτογραφούμε στόχους, stack και σημεία συμφόρησης: τι αναπτύσσεται, τι εμποδίζει και πού το AI ή η βελτιστοποίηση αποδίδει περισσότερο.",
+    "approach2Title": "Κατασκευή",
+    "approach2Desc": "Εστιασμένη υλοποίηση: διορθώσεις, λειτουργίες, περιεχόμενο, tracking ή υποδομή — με προτεραιότητα στον αντίκτυπο.",
+    "approach3Title": "Μέτρηση",
+    "approach3Desc": "Παρακολουθούμε ταχύτητα, ορατότητα, μετατροπές και σταθερότητα με συγκεκριμένα σήματα — όχι vanity metrics.",
+    "approach4Title": "Βελτίωση",
+    "approach4Desc": "Επαναλαμβάνουμε ό,τι αποδίδει: διατήρηση, κλίμακα και συνεχής βελτίωση για βιώσιμη ανάπτυξη.",
     "whatWeDo": "Τι κάνουμε",
-    "whatWeDoSubtitle": "One partner for growth, technology and visibility — from AI to hosting.",
+    "whatWeDoSubtitle": "Ένας συνεργάτης για ανάπτυξη, τεχνολογία και ορατότητα — από το AI έως το hosting.",
     "allServicesArrow": "Όλες οι υπηρεσίες →",
-    "pillarAiTitle": "AI & automation",
-    "pillarAiDesc": "Agents, workflows and AI integrations that accelerate marketing, support and operations.",
-    "pillarOptTitle": "AEO, GEO & SEO",
-    "pillarOptDesc": "Get found in Google, locally and in AI answers — with content and technical work that ranks.",
-    "pillarWebTitle": "Websites & shops",
-    "pillarWebDesc": "Fast, conversion-focused sites and shops that turn visitors into customers.",
-    "pillarWpTitle": "WordPress care",
-    "pillarWpDesc": "Bugs, malware, speed, backups and migrations — handled quickly and delivered carefully.",
-    "pillarHostTitle": "Hosting & infrastructure",
-    "pillarHostDesc": "Reliable web hosting, WordPress hosting and VPS with support when you need it.",
-    "pillarMarketTitle": "Marketing & content",
-    "pillarMarketDesc": "Campaigns, content and social aligned with your funnel and measurable acquisition.",
-    "pillarDesignTitle": "Graphic design",
-    "pillarDesignDesc": "Logos, print and brand assets that fit your digital presence professionally.",
+    "pillarAiTitle": "AI και αυτοματισμός",
+    "pillarAiDesc": "Agents, workflows και ενσωματώσεις AI που επιταχύνουν marketing, υποστήριξη και λειτουργίες.",
+    "pillarOptTitle": "AEO, GEO και SEO",
+    "pillarOptDesc": "Να σας βρίσκουν στο Google, τοπικά και στις απαντήσεις AI — με περιεχόμενο και τεχνική που κατατάσσεται.",
+    "pillarWebTitle": "Ιστοσελίδες και καταστήματα",
+    "pillarWebDesc": "Γρήγορα sites και shops με έμφαση στη μετατροπή, που μετατρέπουν επισκέπτες σε πελάτες.",
+    "pillarWpTitle": "Φροντίδα WordPress",
+    "pillarWpDesc": "Bugs, malware, ταχύτητα, backups και μετεγκαταστάσεις — γρήγορα και προσεκτικά.",
+    "pillarHostTitle": "Hosting και υποδομή",
+    "pillarHostDesc": "Αξιόπιστο web hosting, WordPress hosting και VPS με υποστήριξη όταν τη χρειάζεστε.",
+    "pillarMarketTitle": "Marketing και περιεχόμενο",
+    "pillarMarketDesc": "Καμπάνιες, περιεχόμενο και social ευθυγραμμισμένα με το funnel και μετρήσιμη απόκτηση.",
+    "pillarDesignTitle": "Γραφιστικός σχεδιασμός",
+    "pillarDesignDesc": "Λογότυπα, έντυπα και brand assets που ταιριάζουν επαγγελματικά στην ψηφιακή σας παρουσία.",
     "serveTitle": "Με ποιους συνεργαζόμαστε",
-    "serveText": "Freelancers, startups and established SMEs that want to grow online without a ten-person IT or marketing team. You get a clear point of contact, transparent proposals and delivery that matches your pace and budget.",
+    "serveText": "Με freelancers, startups και καθιερωμένες ΜΜΕ που θέλουν να αναπτυχθούν online χωρίς εσωτερική ομάδα IT ή marketing δέκα ατόμων. Έχετε σαφές σημείο επαφής, διαφανείς προτάσεις και παράδοση στον ρυθμό και τον προϋπολογισμό σας.",
     "whyEyebrow": "Γιατί",
-    "why1Title": "Practical, not theoretical",
-    "why1Desc": "Advice that continues into implementation — with clear deliverables and next steps.",
-    "why2Title": "One system, less friction",
-    "why2Desc": "AI, site, hosting, SEO and marketing reinforce each other instead of living in silos.",
-    "why3Title": "Quick to reach",
-    "why3Desc": "Short response times, available 7 days a week and monitoring when your environment needs it.",
+    "why1Title": "Πρακτικά, όχι θεωρητικά",
+    "why1Desc": "Συμβουλές που φτάνουν έως την υλοποίηση — με σαφή παραδοτέα και επόμενα βήματα.",
+    "why2Title": "Ένα σύστημα, λιγότερη τριβή",
+    "why2Desc": "AI, site, hosting, SEO και marketing ενισχύονται μεταξύ τους αντί να ζουν σε σιλό.",
+    "why3Title": "Γρήγορα διαθέσιμοι",
+    "why3Desc": "Σύντομοι χρόνοι απόκρισης, διαθέσιμοι 7 ημέρες την εβδομάδα και παρακολούθηση όταν το περιβάλλον το απαιτεί.",
     "readyTitle": "Έτοιμοι να ξεκινήσετε;",
     "readySubtitle": "Κλείστε μια συνομιλία, ξεκινήστε δωρεάν AI scan ή επικοινωνήστε — χαράσσουμε μαζί την ταχύτερη διαδρομή στο αποτέλεσμα."
   },
@@ -659,8 +678,8 @@
     "results": "αποτελέσματα",
     "forQuery": "για",
     "empty": "Δεν βρέθηκαν αποτελέσματα.",
-    "browseTitle": "Browse all questions",
-    "matchedHint": "Matched FAQ highlighted below"
+    "browseTitle": "Περιηγηθείτε σε όλες τις ερωτήσεις",
+    "matchedHint": "Αντιστοιχισμένες συχνές ερωτήσεις που επισημαίνονται παρακάτω"
   },
   "appointment": {
     "title": "Κάντε κράτηση",
@@ -729,9 +748,9 @@
     "title": "Ζωντανή συνομιλία",
     "subtitle": "TripleZero iT",
     "online": "Διαδικτυακά",
-    "teaserLine1": "Need help?",
-    "teaserLine2": "Open the chat...",
-    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
+    "teaserLine1": "Χρειάζεστε βοήθεια;",
+    "teaserLine2": "Άνοιξε τη συνομιλία...",
+    "emptyChat": "Κάντε μια ερώτηση στον Πράκτορα 000 — Οι συχνές ερωτήσεις απαντούν πρώτα, οι άνθρωποι όταν χρειάζεται.",
     "emptyTicket": "Περιγράψτε το αίτημά σου — θα ανοίξουμε ένα εισιτήριο συγχρονισμένο με τον πίνακα ελέγχου σου.",
     "placeholder": "Πληκτρολογήστε το μήνυμά σου…",
     "newTicket": "Νέο εισιτήριο",
@@ -769,7 +788,7 @@
   },
   "inquiry": {
     "websiteHint": "ιστοσελίδα / ηλεκτρονικό κατάστημα",
-    "defaultMessage": "Γεια σου TripleZero iT,\n\nΘα ήθελα να μάθω περισσότερα για το {service} για το {hint} μας.\n\nΔιεύθυνση URL ιστότοπου:\nΣτόχος (π.χ. chatbot, βοηθός προϊόντος, AI περιεχομένου, προσαρμοσμένο):",
+    "defaultMessage": "Γεια σου TripleZero iT, Θα ήθελα να μάθω περισσότερα για το {service} για το {hint} μας. Διεύθυνση URL ιστότοπου: Στόχος (π.χ. chatbot, βοηθός προϊόντος, AI περιεχομένου, προσαρμοσμένο):",
     "requestAi": "Ζητήστε ενσωμάτωση AI",
     "sendRequest": "Αποστολή αιτήματος",
     "dialogTitle": "Επικοινωνία για {service}",
@@ -797,81 +816,81 @@
   },
   "agent000": {
     "name": "Agent 000",
-    "role": "Virtual FAQ & support assistant",
+    "role": "Εικονικές Συχνές Ερωτήσεις και βοηθός γνώσεων",
     "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
-    "placeholder": "Ask Agent 000 a question…",
-    "send": "Send",
-    "thinking": "Agent 000 is thinking…",
-    "mute": "Mute voice",
-    "unmute": "Unmute voice",
-    "actionBook": "Book appointment",
-    "actionTicket": "Open live chat / ticket",
+    "placeholder": "Κάντε μια ερώτηση στον πράκτορα 000…",
+    "send": "Στέλνω",
+    "thinking": "Ο πράκτορας 000 σκέφτεται…",
+    "mute": "Σίγαση φωνής",
+    "unmute": "Κατάργηση σίγασης φωνής",
+    "actionBook": "Κλείστε ραντεβού",
+    "actionTicket": "Ανοίξτε τη ζωντανή συνομιλία / εισιτήριο",
     "actionContact": "Contact",
-    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket.",
-    "pickOption": "Pick the best match",
-    "relatedLinks": "Helpful links",
+    "error": "Λυπούμαστε — δεν μπόρεσα να βρω τη βάση γνώσεων μου. Δοκιμάστε ξανά ή ανοίξτε ένα εισιτήριο.",
+    "pickOption": "Επιλέξτε το καλύτερο ταίρι",
+    "relatedLinks": "Χρήσιμοι σύνδεσμοι",
     "linkFaq": "FAQ",
-    "linkKb": "Knowledge base"
+    "linkKb": "Βάση γνώσεων"
   },
   "wordpressSupport": {
-    "saveYearlyHint": "Save up to 20% for yearly monitoring & support!",
-    "savePercent": "Save {percent}%",
-    "orderNow": "Order Now",
-    "noCreditCard": "No credit card required",
+    "saveYearlyHint": "Εξοικονομήστε 10% με ετήσια χρέωση!",
+    "savePercent": "Εξοικονόμηση {percent}%",
+    "orderNow": "Παραγγείλετε τώρα",
+    "noCreditCard": "Δεν απαιτείται πιστωτική κάρτα",
     "packages": {
       "pro": {
         "name": "Pro",
-        "tagline": "All-in-One Support Package"
+        "tagline": "Πακέτο Υποστήριξης Όλα σε Ένα"
       },
       "double": {
         "name": "Double",
-        "tagline": "All-in-One Support Package"
+        "tagline": "Πακέτο Υποστήριξης Όλα σε Ένα"
       },
       "premium": {
         "name": "Premium",
-        "tagline": "All-in-One Support Package"
+        "tagline": "Πακέτο Υποστήριξης Όλα σε Ένα"
       }
     },
     "features": {
       "sites": {
-        "pro": "1 website",
-        "double": "2 websites",
-        "premium": "3-5 websites"
+        "pro": "1 ιστότοπος",
+        "double": "2 ιστοσελίδες",
+        "premium": "3-5 ιστοσελίδες"
       },
       "monitoring": {
-        "pro": "24/7 monitoring & support",
-        "double": "24/7 monitoring & support",
-        "premium": "24/7 monitoring & support"
+        "pro": "24/7 παρακολούθηση & υποστήριξη",
+        "double": "24/7 παρακολούθηση & υποστήριξη",
+        "premium": "24/7 παρακολούθηση & υποστήριξη"
       },
       "backups": {
-        "pro": "Daily backups",
-        "double": "Daily backups",
-        "premium": "Daily backups"
+        "pro": "Καθημερινά αντίγραφα ασφαλείας",
+        "double": "Καθημερινά αντίγραφα ασφαλείας",
+        "premium": "Καθημερινά αντίγραφα ασφαλείας"
       },
       "updates": {
-        "pro": "WordPress & plugin updates",
-        "double": "WordPress & plugin updates",
-        "premium": "WordPress & plugin updates"
+        "pro": "Ενημερώσεις WordPress και πρόσθετων",
+        "double": "Ενημερώσεις WordPress και πρόσθετων",
+        "premium": "Ενημερώσεις WordPress και πρόσθετων"
       },
       "errors": {
-        "pro": "Fix website errors",
-        "double": "Fix website errors",
-        "premium": "Fix website errors"
+        "pro": "Διορθώστε σφάλματα ιστότοπου",
+        "double": "Διορθώστε σφάλματα ιστότοπου",
+        "premium": "Διορθώστε σφάλματα ιστότοπου"
       },
       "malware": {
-        "pro": "Malware removal & security",
-        "double": "Malware removal & security",
-        "premium": "Malware removal & security"
+        "pro": "Αφαίρεση κακόβουλου λογισμικού και ασφάλεια",
+        "double": "Αφαίρεση κακόβουλου λογισμικού και ασφάλεια",
+        "premium": "Αφαίρεση κακόβουλου λογισμικού και ασφάλεια"
       },
       "speed": {
-        "pro": "Speed optimization",
-        "double": "Speed optimization",
-        "premium": "Speed optimization"
+        "pro": "Βελτιστοποίηση ταχύτητας",
+        "double": "Βελτιστοποίηση ταχύτητας",
+        "premium": "Βελτιστοποίηση ταχύτητας"
       },
       "seo": {
-        "pro": "SEO optimization",
-        "double": "SEO optimization",
-        "premium": "SEO optimization"
+        "pro": "Βελτιστοποίηση SEO",
+        "double": "Βελτιστοποίηση SEO",
+        "premium": "Βελτιστοποίηση SEO"
       }
     }
   }

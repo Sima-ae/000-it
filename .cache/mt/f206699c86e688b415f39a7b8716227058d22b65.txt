@@ -1,0 +1,1 @@
+Veri kaybı herhangi bir işletme için felaket olabilir. Web sitenizin verilerinin güvenli bir şekilde saklanması ve hızlı bir şekilde geri yüklenebilmesi için düzenli yedekleme hizmetleri sağlıyoruz. Olağanüstü durum kurtarma yaklaşımımız, kesinti süresini ve veri kaybını en aza indirecek şekilde tasarlanmıştır.

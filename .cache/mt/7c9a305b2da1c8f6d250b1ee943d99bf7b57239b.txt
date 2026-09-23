@@ -1,0 +1,1 @@
+Como você pode melhorar a velocidade do meu site? Cache, minificação de código, otimização de imagem e tempos de resposta do servidor aprimorados.

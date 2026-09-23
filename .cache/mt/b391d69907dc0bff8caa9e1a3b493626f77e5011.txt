@@ -1,0 +1,1 @@
+Hogyan javíthatja a weboldalam sebességét? Gyorsítótárazás, kódminimalizálás, képoptimalizálás és javított szerver válaszidő.

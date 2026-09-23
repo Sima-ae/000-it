@@ -1,0 +1,1 @@
+Hvordan kan du forbedre min hjemmesides hastighed? Caching, kodeminificering, billedoptimering og forbedrede serversvartider.

@@ -1,0 +1,1 @@
+Jak możesz poprawić szybkość mojej witryny? Buforowanie, minifikacja kodu, optymalizacja obrazu i skrócony czas reakcji serwera.

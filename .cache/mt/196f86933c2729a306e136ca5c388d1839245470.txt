@@ -1,0 +1,1 @@
+Leállás lesz a webhelyemen a javítások során? Minimálisra csökkentjük a fennakadásokat, és a szükséges leállásokat csúcsidőn kívülre ütemezzük.

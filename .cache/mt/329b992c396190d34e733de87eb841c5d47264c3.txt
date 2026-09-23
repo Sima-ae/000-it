@@ -1,0 +1,1 @@
+WordPress saytınızı təhlükəsiz saxlamaq çox vacibdir. Komandamız zərərli proqramların skan edilməsi, firewall quraşdırması və müntəzəm təhlükəsizlik yeniləmələri daxil olmaqla güclü təhlükəsizlik tədbirləri təqdim edir. Biz həmçinin pozuntular və uyğunluq problemləri riskini azaltmaq üçün WordPress əsasını, mövzularını və plaginlərini yeniləyirik.

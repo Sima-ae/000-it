@@ -88,6 +88,36 @@ function writeCache(key, value) {
   writeFileSync(join(CACHE_DIR, `${key}.txt`), value, "utf8");
 }
 
+/** Google Translate markup / MT artifacts that must never ship in UI copy. */
+export function stripMtArtifacts(value) {
+  if (!value || typeof value !== "string") return value;
+  let out = value;
+  if (out.includes("<g") || out.includes("</g")) {
+    out = out.replace(/<\/?g\b[^>]*>/gi, "");
+  }
+  out = out
+    .replace(/&#10;/gi, "\n")
+    .replace(/&#39;/gi, "'")
+    .replace(/&apos;/gi, "'")
+    .replace(/&quot;/gi, '"')
+    .replace(/&amp;/gi, "&")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">")
+    .replace(/&#(\d+);/g, (_, n) => {
+      const code = Number(n);
+      if (code === 10) return "\n";
+      if (code === 39) return "'";
+      try {
+        return String.fromCodePoint(code);
+      } catch {
+        return " ";
+      }
+    })
+    .replace(/\[[^\]]*(?:ترجمة|Translation|Übersetz|Traduction|Traducción)[^\]]*:\s*([^\]]+)\]/gi, "$1")
+    .replace(/\[[^\]]*(?:ترجمة|Translation|Übersetz|Traduction|Traducción)[^\]]*\]/gi, "");
+  return out.replace(/[ \t]+\n/g, "\n").replace(/\n{3,}/g, "\n\n").replace(/[ \t]{2,}/g, " ").trim();
+}
+
 function isBad(out) {
   if (!out || typeof out !== "string") return true;
   const trimmed = out.trim();
@@ -101,6 +131,10 @@ function isBad(out) {
   // Only treat English error payloads as bad — do NOT match translated words like "errores"
   if (/^(Error|ERROR)([:\s]|$)/.test(trimmed)) return true;
   if (/^<!DOCTYPE|^<html/i.test(trimmed)) return true;
+  // Google often mistranslates the acronym "AI" as Amnesty International.
+  if (/amnesty international|منظمة العفو|amnisti[aá]|amnestie international/i.test(trimmed)) {
+    return true;
+  }
   return false;
 }
 
@@ -424,7 +458,8 @@ export async function translateText(text, toLocale, fromLocale = "en") {
   const key = cacheKey(text, from, to);
   const cached = readCache(key);
   if (cached != null && !(cached === text && from !== to)) {
-    return cached;
+    const cleaned = stripMtArtifacts(cached);
+    if (!isBad(cleaned)) return cleaned;
   }
 
   const providers = [
@@ -445,7 +480,7 @@ export async function translateText(text, toLocale, fromLocale = "en") {
     if (!providerReady(name)) continue;
     try {
       await throttleLive();
-      const out = await fn();
+      const out = stripMtArtifacts(await fn());
       if (!isBad(out)) {
         if (!(out === text && from !== to)) writeCache(key, out);
         if (process.env.MT_DEBUG) {

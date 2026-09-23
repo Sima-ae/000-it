@@ -1,0 +1,1 @@
+Jak zwiększamy bezpieczeństwo stron internetowych? SSL, zapory ogniowe, skanowanie złośliwego oprogramowania, regularne aktualizacje i bezpieczne praktyki konfiguracyjne.

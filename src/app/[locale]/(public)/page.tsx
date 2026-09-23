@@ -6,6 +6,7 @@ import { SoftLink } from "@/components/shared/SoftLink";
 import { GlassCard } from "@/components/marketing/GlassCard";
 import { HomeHeroBanner } from "@/components/marketing/HomeHeroBanner";
 import { HomeIntroSection } from "@/components/marketing/HomeIntroSection";
+import { BrandingCollage } from "@/components/marketing/BrandingCollage";
 import { Reveal } from "@/components/marketing/Reveal";
 import { PricingPlans } from "@/components/marketing/PricingPlans";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -196,7 +197,7 @@ export default async function HomePage({
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 pb-8 md:px-6 md:pb-12">
+      <section className="mx-auto max-w-6xl px-4 pb-4 md:px-6 md:pb-5">
         <Reveal from="scale" duration={0.7}>
           <div className="glow-hover relative overflow-hidden rounded-4xl">
             <div className="glow-bg absolute inset-0" aria-hidden>
@@ -242,6 +243,11 @@ export default async function HomePage({
           </div>
         </Reveal>
       </section>
+
+      <BrandingCollage
+        href={localizedHref(locale, "/diensten")}
+        className="-mb-6 md:-mb-8"
+      />
     </div>
   );
 }

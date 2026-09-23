@@ -1,0 +1,1 @@
+Cum îmbunătățim securitatea site-ului web? SSL, firewall-uri, scanare malware, actualizări regulate și practici de configurare sigură.

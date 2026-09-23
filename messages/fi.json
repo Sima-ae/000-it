@@ -124,11 +124,12 @@
       "wordpress": "WordPress",
       "maintenance": "Huolto",
       "support": "Tukea",
-      "ecommerceSeo": "E-commerce SEO",
-      "conversion": "Conversion",
+      "ecommerceSeo": "Verkkokaupan SEO",
+      "conversion": "Muuntaminen",
       "speedOpt": "Core Web Vitals ja nopeus",
       "analytics": "Analytics",
-      "accessibility": "Saavutettavuus"
+      "accessibility": "Saavutettavuus",
+      "texts": "Tekstit"
     },
     "inquiry": {
       "wp": {
@@ -169,7 +170,7 @@
     "mostChosen": "Suosituin",
     "features": {
       "starter": [
-        "1× verkkotunnus .COM / .EU / .NL",
+        "1× verkkotunnus .COM / .EU / .FI",
         "1× web hosting",
         "1× verkkokauppa/verkkosivusto",
         "1× AI agentti",
@@ -179,7 +180,7 @@
         "24/7 valvonta"
       ],
       "growth": [
-        "1× verkkotunnus .COM / .EU / .NL",
+        "1× verkkotunnus .COM / .EU / .FI",
         "1× web hosting",
         "1× verkkokauppa/verkkosivusto",
         "2 × AI agenttia",
@@ -241,10 +242,10 @@
     "subtitle": "Kaikki hinnat sisältävät 21% ALV:n.",
     "plans": "Ready To Go - AI-kokonaispaketti",
     "support": "Support",
-    "sharedHosting": "Shared Hosting",
-    "wordpressHosting": "WordPress Hosting",
-    "vpsHosting": "VPS Hosting",
-    "webhosting": "Shared Hosting",
+    "sharedHosting": "Jaettu hosting",
+    "wordpressHosting": "WordPress hosting",
+    "vpsHosting": "VPS hosting",
+    "webhosting": "Jaettu hosting",
     "services": "Palvelut & tuotteet",
     "typePlan": "Suunnittele",
     "typeService": "Palvelu",
@@ -438,7 +439,25 @@
     "company": "Yritys",
     "message": "Viesti",
     "send": "Lähetä",
-    "success": "Kiitos! Palaamme asiaan pian."
+    "success": "Kiitos! Palaamme asiaan pian.",
+    "detailsTitle": "Yhteystiedot",
+    "companyName": "TripleZero iT",
+    "addressLabel": "Osoite",
+    "addressLine1": "Burlington Tower, 19th floor",
+    "addressLine2": "Business Bay, Al Abraj St.",
+    "addressLine3": "Dubai – United Arab Emirates",
+    "addressLine4": "",
+    "emailLabel": "Sähköpostit",
+    "emailAddress": "info@000-it.com",
+    "detailsNote": "Lähetä viesti lomakkeella — vastaamme mahdollisimman pian.",
+    "routeLabel": "Reitti",
+    "routeOpenAria": "Avaa reitti Google Mapsissa",
+    "emailAddresses": [
+      "info@000-it.com",
+      "privacy@000-it.com",
+      "sales@000-it.com",
+      "support@000-it.com"
+    ]
   },
   "aiScan": {
     "title": "Ilmainen AI Readiness Scan",
@@ -461,7 +480,7 @@
     "resultsTitle": "AI-skannauksen tulokset",
     "contactTitle": "Ota yhteyttä tekoälyskannaukseen liittyen",
     "contactDescription": "Jätä tietosi – autamme tulkitsemaan pisteet ja laatimaan suunnitelman.",
-    "contactMessageLead": "Hei TripleZero iT,\n\nOlen suorittanut tekoälyskannauksen ja haluaisin keskustella tuloksista.\n\nVerkkosivuston URL-osoite: {url}\n\nPisteet:\n{scores}\n\nKysymys / huomautukset:"
+    "contactMessageLead": "Hei TripleZero iT, Olen suorittanut tekoälyskannauksen ja haluaisin keskustella tuloksista. Verkkosivuston URL-osoite: {url} Pisteet: {scores} Kysymys / huomautukset:"
   },
   "portfolio": {
     "title": "Portfolio",
@@ -659,8 +678,8 @@
     "results": "tulosta",
     "forQuery": "haulle",
     "empty": "Ei tuloksia.",
-    "browseTitle": "Browse all questions",
-    "matchedHint": "Matched FAQ highlighted below"
+    "browseTitle": "Selaa kaikkia kysymyksiä",
+    "matchedHint": "Vastaava UKK alla korostettuna"
   },
   "appointment": {
     "title": "Varaa aika",
@@ -729,9 +748,9 @@
     "title": "Live-chat",
     "subtitle": "TripleZero iT",
     "online": "Online",
-    "teaserLine1": "Need help?",
-    "teaserLine2": "Open the chat...",
-    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
+    "teaserLine1": "Tarvitsetko apua?",
+    "teaserLine2": "Avaa chat...",
+    "emptyChat": "Esitä Agent 000:lle kysymys – FAQ vastaa ensin, ihmiset tarvittaessa.",
     "emptyTicket": "Kuvaile pyyntöäsi – avaamme lipun, joka on synkronoitu kojelautaasi.",
     "placeholder": "Kirjoita viestisi…",
     "newTicket": "Uusi lippu",
@@ -769,7 +788,7 @@
   },
   "inquiry": {
     "websiteHint": "verkkosivusto / verkkokauppa",
-    "defaultMessage": "Hei TripleZero iT,\n\nHaluaisin lisätietoja {service}:stä meidän {hint}.\n\nVerkkosivuston URL-osoite:\nTavoite (esim. chatbot, tuoteassistentti, sisällön tekoäly, mukautettu):",
+    "defaultMessage": "Hei TripleZero iT, Haluaisin lisätietoja {service}:stä meidän {hint}. Verkkosivuston URL-osoite: Tavoite (esim. chatbot, tuoteassistentti, sisällön tekoäly, mukautettu):",
     "requestAi": "Pyydä AI-integraatiota",
     "sendRequest": "Lähetä pyyntö",
     "dialogTitle": "Ota yhteyttä aiheesta {service}",
@@ -797,81 +816,81 @@
   },
   "agent000": {
     "name": "Agent 000",
-    "role": "Virtual FAQ & support assistant",
+    "role": "Virtuaalinen UKK ja tietoavustaja",
     "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
-    "placeholder": "Ask Agent 000 a question…",
-    "send": "Send",
-    "thinking": "Agent 000 is thinking…",
-    "mute": "Mute voice",
-    "unmute": "Unmute voice",
-    "actionBook": "Book appointment",
-    "actionTicket": "Open live chat / ticket",
+    "placeholder": "Esitä Agent 000:lle kysymys…",
+    "send": "Lähetä",
+    "thinking": "Agentti 000 ajattelee…",
+    "mute": "Mykistä ääni",
+    "unmute": "Poista äänen mykistys",
+    "actionBook": "Varaa tapaaminen",
+    "actionTicket": "Avaa live chat / lippu",
     "actionContact": "Contact",
-    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket.",
-    "pickOption": "Pick the best match",
-    "relatedLinks": "Helpful links",
+    "error": "Anteeksi, en päässyt tietokantaani. Yritä uudelleen tai avaa lippu.",
+    "pickOption": "Valitse paras ottelu",
+    "relatedLinks": "Hyödyllisiä linkkejä",
     "linkFaq": "FAQ",
-    "linkKb": "Knowledge base"
+    "linkKb": "Tietopohja"
   },
   "wordpressSupport": {
-    "saveYearlyHint": "Save up to 20% for yearly monitoring & support!",
-    "savePercent": "Save {percent}%",
-    "orderNow": "Order Now",
-    "noCreditCard": "No credit card required",
+    "saveYearlyHint": "Säästä 10% vuosittaisella laskutuksella!",
+    "savePercent": "Säästä {percent} %",
+    "orderNow": "Tilaa nyt",
+    "noCreditCard": "Luottokorttia ei vaadita",
     "packages": {
       "pro": {
         "name": "Pro",
-        "tagline": "All-in-One Support Package"
+        "tagline": "All-in-One-tukipaketti"
       },
       "double": {
         "name": "Double",
-        "tagline": "All-in-One Support Package"
+        "tagline": "All-in-One-tukipaketti"
       },
       "premium": {
         "name": "Premium",
-        "tagline": "All-in-One Support Package"
+        "tagline": "All-in-One-tukipaketti"
       }
     },
     "features": {
       "sites": {
-        "pro": "1 website",
-        "double": "2 websites",
-        "premium": "3-5 websites"
+        "pro": "1 verkkosivusto",
+        "double": "2 verkkosivustoa",
+        "premium": "3-5 sivustoa"
       },
       "monitoring": {
-        "pro": "24/7 monitoring & support",
-        "double": "24/7 monitoring & support",
-        "premium": "24/7 monitoring & support"
+        "pro": "24/7 seuranta ja tuki",
+        "double": "24/7 seuranta ja tuki",
+        "premium": "24/7 seuranta ja tuki"
       },
       "backups": {
-        "pro": "Daily backups",
-        "double": "Daily backups",
-        "premium": "Daily backups"
+        "pro": "Päivittäiset varmuuskopiot",
+        "double": "Päivittäiset varmuuskopiot",
+        "premium": "Päivittäiset varmuuskopiot"
       },
       "updates": {
-        "pro": "WordPress & plugin updates",
-        "double": "WordPress & plugin updates",
-        "premium": "WordPress & plugin updates"
+        "pro": "WordPress- ja laajennuspäivitykset",
+        "double": "WordPress- ja laajennuspäivitykset",
+        "premium": "WordPress- ja laajennuspäivitykset"
       },
       "errors": {
-        "pro": "Fix website errors",
-        "double": "Fix website errors",
-        "premium": "Fix website errors"
+        "pro": "Korjaa verkkosivuston virheet",
+        "double": "Korjaa verkkosivuston virheet",
+        "premium": "Korjaa verkkosivuston virheet"
       },
       "malware": {
-        "pro": "Malware removal & security",
-        "double": "Malware removal & security",
-        "premium": "Malware removal & security"
+        "pro": "Haittaohjelmien poisto ja suojaus",
+        "double": "Haittaohjelmien poisto ja suojaus",
+        "premium": "Haittaohjelmien poisto ja suojaus"
       },
       "speed": {
-        "pro": "Speed optimization",
-        "double": "Speed optimization",
-        "premium": "Speed optimization"
+        "pro": "Nopeuden optimointi",
+        "double": "Nopeuden optimointi",
+        "premium": "Nopeuden optimointi"
       },
       "seo": {
-        "pro": "SEO optimization",
-        "double": "SEO optimization",
-        "premium": "SEO optimization"
+        "pro": "SEO optimointi",
+        "double": "SEO optimointi",
+        "premium": "SEO optimointi"
       }
     }
   }

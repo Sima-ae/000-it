@@ -1,0 +1,1 @@
+Web s rychlým načítáním je zásadní pro uživatelskou zkušenost a hodnocení SEO. Pomalé načítání může frustrovat návštěvníky a vést k vyšší míře okamžitého opuštění. Naše služby podpory WordPress zahrnují komplexní optimalizaci výkonu: identifikujeme úzká hrdla a aplikujeme ukládání do mezipaměti, optimalizaci obrázků a minifikaci kódu, aby vaše stránky fungovaly optimálně.

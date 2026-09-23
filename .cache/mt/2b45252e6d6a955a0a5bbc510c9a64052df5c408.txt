@@ -1,0 +1,1 @@
+Si mund ta përmirësoni shpejtësinë e faqes sime? Caching, minifikimi i kodit, optimizimi i imazhit dhe koha e përmirësuar e përgjigjes së serverit.

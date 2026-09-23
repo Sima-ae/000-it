@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
@@ -6,6 +7,7 @@ import { Reveal } from "@/components/marketing/Reveal";
 import { GlassCard } from "@/components/marketing/GlassCard";
 import { KennisbankCategoryGrid } from "@/components/kennisbank/KennisbankCategoryGrid";
 import { listArticles, listCategories, topLevelCategories } from "@/lib/kennisbank";
+import { BRANDING_IMAGES } from "@/lib/branding-images";
 import { buildStaticPageMetadata } from "@/lib/seo";
 import { localizedHref } from "@/i18n/pathnames";
 
@@ -53,16 +55,28 @@ export default async function KennisbankPage({
       />
       <div className="relative mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
         <Reveal>
-          <header className="mx-auto mb-10 max-w-5xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
-              {t("brandEyebrow")}
-            </p>
-            <h1 className="font-display mt-3 text-4xl font-semibold tracking-tight text-primary md:text-5xl">
-              {t("title")}
-            </h1>
-            <p className="mx-auto mt-4 max-w-4xl text-base leading-relaxed text-muted-foreground md:text-lg">
-              {t("subtitle")}
-            </p>
+          <header className="mx-auto mb-10 grid max-w-5xl items-center gap-6 text-center lg:grid-cols-[1fr_auto] lg:text-left">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
+                {t("brandEyebrow")}
+              </p>
+              <h1 className="font-display mt-3 text-4xl font-semibold tracking-tight text-primary md:text-5xl">
+                {t("title")}
+              </h1>
+              <p className="mx-auto mt-4 max-w-4xl text-base leading-relaxed text-muted-foreground md:text-lg lg:mx-0">
+                {t("subtitle")}
+              </p>
+            </div>
+            <div className="relative mx-auto hidden h-40 w-44 overflow-hidden lg:block">
+              <Image
+                src={BRANDING_IMAGES.tabletMarketer}
+                alt=""
+                fill
+                unoptimized
+                sizes="176px"
+                className="object-contain object-bottom"
+              />
+            </div>
           </header>
         </Reveal>
 

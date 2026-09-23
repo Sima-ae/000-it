@@ -104,10 +104,10 @@
       "community": "社区管理",
       "webhosting": "虚拟主机",
       "domains": "域名",
-      "ai": "人工智能",
+      "ai": "AI",
       "aeo": "AEO",
-      "geo": "地球轨道",
-      "seo": "搜索引擎优化",
+      "geo": "GEO",
+      "seo": "SEO",
       "chatbots": "聊天机器人",
       "workflows": "工作流程",
       "advice": "建议",
@@ -124,11 +124,12 @@
       "wordpress": "WordPress",
       "maintenance": "维护",
       "support": "支持",
-      "ecommerceSeo": "E-commerce SEO",
-      "conversion": "Conversion",
+      "ecommerceSeo": "电子商务搜索引擎优化",
+      "conversion": "转换",
       "speedOpt": "Core Web Vitals 与速度",
-      "analytics": "Analytics",
-      "accessibility": "无障碍"
+      "analytics": "分析",
+      "accessibility": "无障碍",
+      "texts": "文本"
     },
     "inquiry": {
       "wp": {
@@ -169,7 +170,7 @@
     "mostChosen": "最受欢迎",
     "features": {
       "starter": [
-        "1×域名 .COM / .EU / .NL",
+        "1×域名 .COM / .EU / .CN",
         "1× 虚拟主机",
         "1× 电子商务商店/网站",
         "1× AI 代理",
@@ -179,7 +180,7 @@
         "24/7监控"
       ],
       "growth": [
-        "1×域名 .COM / .EU / .NL",
+        "1×域名 .COM / .EU / .CN",
         "1× 虚拟主机",
         "1× 电子商务商店/网站",
         "2× AI 代理",
@@ -241,10 +242,10 @@
     "subtitle": "所有价格均含21%增值税。",
     "plans": "Ready To Go - AI 完整套餐",
     "support": "Support",
-    "sharedHosting": "Shared Hosting",
-    "wordpressHosting": "WordPress Hosting",
-    "vpsHosting": "VPS Hosting",
-    "webhosting": "Shared Hosting",
+    "sharedHosting": "共享主机",
+    "wordpressHosting": "WordPress 托管",
+    "vpsHosting": "VPS 托管",
+    "webhosting": "共享主机",
     "services": "服务与产品",
     "typePlan": "计划",
     "typeService": "服务",
@@ -438,7 +439,25 @@
     "company": "公司简介",
     "message": "留言",
     "send": "发送",
-    "success": "谢谢！我们会尽快回复你。"
+    "success": "谢谢！我们会尽快回复你。",
+    "detailsTitle": "联系方式",
+    "companyName": "TripleZero iT",
+    "addressLabel": "地址",
+    "addressLine1": "Burlington Tower, 19th floor",
+    "addressLine2": "Business Bay, Al Abraj St.",
+    "addressLine3": "Dubai – United Arab Emirates",
+    "addressLine4": "",
+    "emailLabel": "电子邮箱",
+    "emailAddress": "info@000-it.com",
+    "detailsNote": "请通过表单留言——我们会尽快回复。",
+    "routeLabel": "路线",
+    "routeOpenAria": "在 Google Maps 中打开路线",
+    "emailAddresses": [
+      "info@000-it.com",
+      "privacy@000-it.com",
+      "sales@000-it.com",
+      "support@000-it.com"
+    ]
   },
   "aiScan": {
     "title": "免费 AI 准备情况扫描",
@@ -461,7 +480,7 @@
     "resultsTitle": "AI扫描结果",
     "contactTitle": "关于AI扫描的联系方式",
     "contactDescription": "留下你的详细信息 - 我们将帮助解释分数并制定计划。",
-    "contactMessageLead": "您好 TripleZero iT，\n\n我已经运行了人工智能扫描，并想讨论一下结果。\n\n网站网址：{url}\n\n分数：\n{scores}\n\n问题/注意事项："
+    "contactMessageLead": "您好 TripleZero iT， 我已经运行了人工智能扫描，并想讨论一下结果。 网站网址：{url} 分数： {scores} 问题/注意事项："
   },
   "portfolio": {
     "title": "投资组合",
@@ -659,8 +678,8 @@
     "results": "条结果",
     "forQuery": "关于",
     "empty": "未找到结果。",
-    "browseTitle": "Browse all questions",
-    "matchedHint": "Matched FAQ highlighted below"
+    "browseTitle": "浏览所有问题",
+    "matchedHint": "下面突出显示了匹配的常见问题解答"
   },
   "appointment": {
     "title": "预订预约",
@@ -729,9 +748,9 @@
     "title": "实时聊天",
     "subtitle": "TripleZero iT",
     "online": "在线",
-    "teaserLine1": "Need help?",
-    "teaserLine2": "Open the chat...",
-    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
+    "teaserLine1": "需要帮助吗？",
+    "teaserLine2": "打开聊天...",
+    "emptyChat": "向 Agent 000 提问 - FAQ 首先回答，需要时由人工回答。",
     "emptyTicket": "描述你的请求 - 我们将打开一张同步到你的仪表板的票证。",
     "placeholder": "输入你的消息...",
     "newTicket": "新票",
@@ -769,7 +788,7 @@
   },
   "inquiry": {
     "websiteHint": "网站/网上商店",
-    "defaultMessage": "你好 TripleZero iT，\n\n我想为我们的 {service} 了解更多关于 {hint} 的信息。\n\n网站网址：\n目标（例如聊天机器人、产品助理、内容 AI、定制）：",
+    "defaultMessage": "你好 TripleZero iT， 我想为我们的 {service} 了解更多关于 {hint} 的信息。 网站网址： 目标（例如聊天机器人、产品助理、内容 AI、定制）：",
     "requestAi": "请求人工智能集成",
     "sendRequest": "发送请求",
     "dialogTitle": "联系{service}",
@@ -797,81 +816,81 @@
   },
   "agent000": {
     "name": "Agent 000",
-    "role": "Virtual FAQ & support assistant",
+    "role": "虚拟常见问题解答和知识助手",
     "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
-    "placeholder": "Ask Agent 000 a question…",
-    "send": "Send",
-    "thinking": "Agent 000 is thinking…",
-    "mute": "Mute voice",
-    "unmute": "Unmute voice",
-    "actionBook": "Book appointment",
-    "actionTicket": "Open live chat / ticket",
+    "placeholder": "问特工 000 一个问题……",
+    "send": "发送",
+    "thinking": "特工000正在思考……",
+    "mute": "静音",
+    "unmute": "取消静音",
+    "actionBook": "预约",
+    "actionTicket": "打开实时聊天/票证",
     "actionContact": "Contact",
-    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket.",
-    "pickOption": "Pick the best match",
-    "relatedLinks": "Helpful links",
+    "error": "抱歉 - 我无法访问我的知识库。请重试或开票。",
+    "pickOption": "选择最佳匹配",
+    "relatedLinks": "有用的链接",
     "linkFaq": "FAQ",
-    "linkKb": "Knowledge base"
+    "linkKb": "知识库"
   },
   "wordpressSupport": {
-    "saveYearlyHint": "Save up to 20% for yearly monitoring & support!",
-    "savePercent": "Save {percent}%",
-    "orderNow": "Order Now",
-    "noCreditCard": "No credit card required",
+    "saveYearlyHint": "按年计费可节省 10%！",
+    "savePercent": "节省 {percent}%",
+    "orderNow": "立即订购",
+    "noCreditCard": "无需信用卡",
     "packages": {
       "pro": {
         "name": "Pro",
-        "tagline": "All-in-One Support Package"
+        "tagline": "多合一支持包"
       },
       "double": {
         "name": "Double",
-        "tagline": "All-in-One Support Package"
+        "tagline": "多合一支持包"
       },
       "premium": {
         "name": "Premium",
-        "tagline": "All-in-One Support Package"
+        "tagline": "多合一支持包"
       }
     },
     "features": {
       "sites": {
-        "pro": "1 website",
-        "double": "2 websites",
-        "premium": "3-5 websites"
+        "pro": "1 个网站",
+        "double": "2 个网站",
+        "premium": "3-5个网站"
       },
       "monitoring": {
-        "pro": "24/7 monitoring & support",
-        "double": "24/7 monitoring & support",
-        "premium": "24/7 monitoring & support"
+        "pro": "24/7 监控和支持",
+        "double": "24/7 监控和支持",
+        "premium": "24/7 监控和支持"
       },
       "backups": {
-        "pro": "Daily backups",
-        "double": "Daily backups",
-        "premium": "Daily backups"
+        "pro": "每日备份",
+        "double": "每日备份",
+        "premium": "每日备份"
       },
       "updates": {
-        "pro": "WordPress & plugin updates",
-        "double": "WordPress & plugin updates",
-        "premium": "WordPress & plugin updates"
+        "pro": "WordPress 和插件更新",
+        "double": "WordPress 和插件更新",
+        "premium": "WordPress 和插件更新"
       },
       "errors": {
-        "pro": "Fix website errors",
-        "double": "Fix website errors",
-        "premium": "Fix website errors"
+        "pro": "修复网站错误",
+        "double": "修复网站错误",
+        "premium": "修复网站错误"
       },
       "malware": {
-        "pro": "Malware removal & security",
-        "double": "Malware removal & security",
-        "premium": "Malware removal & security"
+        "pro": "恶意软件清除和安全",
+        "double": "恶意软件清除和安全",
+        "premium": "恶意软件清除和安全"
       },
       "speed": {
-        "pro": "Speed optimization",
-        "double": "Speed optimization",
-        "premium": "Speed optimization"
+        "pro": "速度优化",
+        "double": "速度优化",
+        "premium": "速度优化"
       },
       "seo": {
-        "pro": "SEO optimization",
-        "double": "SEO optimization",
-        "premium": "SEO optimization"
+        "pro": "搜索引擎优化",
+        "double": "搜索引擎优化",
+        "premium": "搜索引擎优化"
       }
     }
   }

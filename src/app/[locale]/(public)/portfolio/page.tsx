@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { prisma } from "@/lib/prisma";
 import { PortfolioGrid } from "@/components/portfolio/PortfolioGrid";
+import { Reveal } from "@/components/marketing/Reveal";
+import { BRANDING_IMAGES } from "@/lib/branding-images";
 import { buildStaticPageMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
@@ -50,12 +53,27 @@ export default async function PortfolioPage({
   return (
     <div className="min-h-screen">
       <div className="mx-auto max-w-6xl px-4 py-10 md:px-8 md:py-14 lg:px-10">
-        <div className="mb-8 max-w-2xl">
-          <h1 className="font-display text-4xl font-semibold tracking-tight md:text-5xl">
-            {t("title")}
-          </h1>
-          <p className="mt-3 text-muted-foreground">{t("subtitle")}</p>
-        </div>
+        <Reveal>
+          <div className="mb-8 grid items-center gap-6 lg:grid-cols-[1.15fr_0.85fr]">
+            <div className="max-w-2xl">
+              <h1 className="font-display text-4xl font-semibold tracking-tight md:text-5xl">
+                {t("title")}
+              </h1>
+              <p className="mt-3 text-muted-foreground">{t("subtitle")}</p>
+            </div>
+            <div className="relative mx-auto hidden h-44 w-full max-w-sm overflow-hidden lg:block">
+              <Image
+                src={BRANDING_IMAGES.duoSuccess}
+                alt=""
+                fill
+                unoptimized
+                priority
+                sizes="384px"
+                className="object-contain object-center"
+              />
+            </div>
+          </div>
+        </Reveal>
 
         {items.length === 0 ? (
           <p className="pb-10 text-muted-foreground">{t("empty")}</p>
@@ -63,12 +81,12 @@ export default async function PortfolioPage({
           <PortfolioGrid
             items={serializable}
             labels={{
-          client: t("client"),
-          industry: t("industry"),
-          technologies: t("technologies"),
-          visit: t("visit"),
-          repo: t("repo"),
-        }}
+              client: t("client"),
+              industry: t("industry"),
+              technologies: t("technologies"),
+              visit: t("visit"),
+              repo: t("repo"),
+            }}
           />
         )}
       </div>

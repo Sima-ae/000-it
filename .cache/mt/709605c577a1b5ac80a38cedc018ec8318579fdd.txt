@@ -1,0 +1,1 @@
+Hvordan forbedrer vi webstedets sikkerhed? SSL, firewalls, malware-scanning, regelmæssige opdateringer og sikker konfigurationspraksis.

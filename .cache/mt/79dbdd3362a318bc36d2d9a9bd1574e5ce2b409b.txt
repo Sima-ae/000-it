@@ -1,0 +1,1 @@
+WCAG-szemléletű fejlesztések, így többen használhatják webhelyét – és a keresőmotorok jobban megértik.

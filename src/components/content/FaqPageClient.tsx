@@ -1,12 +1,14 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
 import { FaqCategories } from "@/components/content/FaqAccordion";
 import { Agent000ChatPane } from "@/components/agent-000/Agent000ChatPane";
 import type { FaqContent } from "@/content/faq";
+import { BRANDING_IMAGES } from "@/lib/branding-images";
 import { localizedHref } from "@/i18n/pathnames";
 
 const OPEN_CHAT_EVENT = "tz-open-live-chat";
@@ -71,20 +73,32 @@ export function FaqPageClient({
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-10 md:px-6 md:py-14">
-      <header className="mb-6">
-        <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
-          {t("eyebrow")}
-        </p>
-        <h1 className="font-display mt-2 text-3xl font-semibold tracking-tight md:text-4xl">
-          {content.title}
-        </h1>
-        <p className="mt-2 text-sm text-muted-foreground md:text-base">
-          {content.subtitle}
-        </p>
-        <p className="mt-1.5 text-xs text-muted-foreground">
-          {content.categories.length} {t("categoriesLabel")} · {total}{" "}
-          {t("questionsLabel")}
-        </p>
+      <header className="mb-6 grid items-end gap-4 sm:grid-cols-[1fr_auto]">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
+            {t("eyebrow")}
+          </p>
+          <h1 className="font-display mt-2 text-3xl font-semibold tracking-tight md:text-4xl">
+            {content.title}
+          </h1>
+          <p className="mt-2 text-sm text-muted-foreground md:text-base">
+            {content.subtitle}
+          </p>
+          <p className="mt-1.5 text-xs text-muted-foreground">
+            {content.categories.length} {t("categoriesLabel")} · {total}{" "}
+            {t("questionsLabel")}
+          </p>
+        </div>
+        <div className="relative mx-auto hidden h-28 w-36 overflow-hidden sm:block">
+          <Image
+            src={BRANDING_IMAGES.duoSuccess}
+            alt=""
+            fill
+            unoptimized
+            sizes="144px"
+            className="object-contain object-bottom"
+          />
+        </div>
       </header>
 
       <Agent000ChatPane

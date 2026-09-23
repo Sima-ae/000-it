@@ -60,3 +60,18 @@ export function catalogGroupTitle(
     fallback
   );
 }
+
+export function catalogGroupSummary(
+  id: string,
+  locale: string,
+  fallback: string = "",
+): string {
+  const pack = data as CatalogPack & {
+    groupSummaries?: Record<string, Record<string, string>>;
+  };
+  return (
+    pack.groupSummaries?.[locale]?.[id] ||
+    pack.groupSummaries?.en?.[id] ||
+    fallback
+  );
+}

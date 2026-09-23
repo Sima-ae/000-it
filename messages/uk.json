@@ -104,7 +104,7 @@
       "community": "Управління громадою",
       "webhosting": "Веб-хостинг",
       "domains": "Домени",
-      "ai": "ШІ",
+      "ai": "AI",
       "aeo": "AEO",
       "geo": "GEO",
       "seo": "SEO",
@@ -124,11 +124,12 @@
       "wordpress": "WordPress",
       "maintenance": "Технічне обслуговування",
       "support": "Підтримка",
-      "ecommerceSeo": "E-commerce SEO",
-      "conversion": "Conversion",
+      "ecommerceSeo": "SEO електронної комерції",
+      "conversion": "Перетворення",
       "speedOpt": "Core Web Vitals і швидкість",
-      "analytics": "Analytics",
-      "accessibility": "Доступність"
+      "analytics": "Аналітика",
+      "accessibility": "Доступність",
+      "texts": "Тексти"
     },
     "inquiry": {
       "wp": {
@@ -169,7 +170,7 @@
     "mostChosen": "Найпопулярніший",
     "features": {
       "starter": [
-        "1× доменне ім’я .COM / .EU / .NL",
+        "1× доменне ім’я .COM / .EU / .UA",
         "1 × веб-хостинг",
         "1 × магазин/веб-сайт електронної комерції",
         "1 × агент AI",
@@ -179,7 +180,7 @@
         "Моніторинг 24/7"
       ],
       "growth": [
-        "1× доменне ім’я .COM / .EU / .NL",
+        "1× доменне ім’я .COM / .EU / .UA",
         "1 × веб-хостинг",
         "1 × магазин/веб-сайт електронної комерції",
         "2 × агенти AI",
@@ -241,10 +242,10 @@
     "subtitle": "Усі ціни включають 21% ПДВ.",
     "plans": "Ready To Go - Повний AI-пакет",
     "support": "Support",
-    "sharedHosting": "Shared Hosting",
-    "wordpressHosting": "WordPress Hosting",
-    "vpsHosting": "VPS Hosting",
-    "webhosting": "Shared Hosting",
+    "sharedHosting": "Віртуальний хостинг",
+    "wordpressHosting": "Хостинг WordPress",
+    "vpsHosting": "VPS хостинг",
+    "webhosting": "Віртуальний хостинг",
     "services": "Послуги та продукти",
     "typePlan": "План",
     "typeService": "Сервіс",
@@ -287,7 +288,7 @@
     "backHome": "Назад додому"
   },
   "footer": {
-    "tagline": "Ми пропонуємо послуги та продукти для підприємців і фрілансерів — від реклами, інтеграції AI, AEO, GEO та SEO, поліграфії, email‑маркетингу, графічного дизайну, онлайн‑маркетингу, обслуговування, оптимізації, ведення соцмереж, вебдизайну та підтримки WordPress до вебхостингу й доменних імен.",
+    "tagline": "Ми пропонуємо послуги та продукти для підприємців і фрілансерів — від реклами, інтеграції AI, AEO, GEO та SEO, поліграфії, email‑маркетингу, графічного дизайну, онлайн‑маркетингу, обслуговування, оптимізації, ведення соцмереж, вебдизайну та підтримки WordPress до вебхостингу й доменних імен.",
     "rights": "Всі права захищені.",
     "usefulLinks": "Корисні посилання",
     "socialMedia": "Соцмережі",
@@ -438,7 +439,25 @@
     "company": "Компанія",
     "message": "повідомлення",
     "send": "Надіслати",
-    "success": "дякую Ми зв'яжемося з тобою найближчим часом."
+    "success": "дякую Ми зв'яжемося з тобою найближчим часом.",
+    "detailsTitle": "Контактні дані",
+    "companyName": "TripleZero iT",
+    "addressLabel": "Адреса",
+    "addressLine1": "Burlington Tower, 19th floor",
+    "addressLine2": "Business Bay, Al Abraj St.",
+    "addressLine3": "Dubai – United Arab Emirates",
+    "addressLine4": "",
+    "emailLabel": "Ел. пошта",
+    "emailAddress": "info@000-it.com",
+    "detailsNote": "Надішліть повідомлення через форму — відповімо якомога швидше.",
+    "routeLabel": "Маршрут",
+    "routeOpenAria": "Відкрити маршрут у Google Maps",
+    "emailAddresses": [
+      "info@000-it.com",
+      "privacy@000-it.com",
+      "sales@000-it.com",
+      "support@000-it.com"
+    ]
   },
   "aiScan": {
     "title": "Безкоштовне сканування готовності AI",
@@ -461,7 +480,7 @@
     "resultsTitle": "Результати AI сканування",
     "contactTitle": "Контакт щодо AI scan",
     "contactDescription": "Залиште свої дані — ми допоможемо розібрати бали та накреслимо план.",
-    "contactMessageLead": "Привіт TripleZero iT,\n\nЯ провів сканування AI і хотів би обговорити результати.\n\nURL-адреса веб-сайту: {url}\n\nОцінки:\n{scores}\n\nПитання / примітки:"
+    "contactMessageLead": "Привіт TripleZero iT, Я провів сканування AI і хотів би обговорити результати. URL-адреса веб-сайту: {url} Оцінки: {scores} Питання / примітки:"
   },
   "portfolio": {
     "title": "Портфоліо",
@@ -659,11 +678,11 @@
     "results": "результати",
     "forQuery": "для",
     "empty": "Результатів не знайдено.",
-    "browseTitle": "Browse all questions",
-    "matchedHint": "Matched FAQ highlighted below"
+    "browseTitle": "Переглянути всі запитання",
+    "matchedHint": "Відповідні поширені запитання виділено нижче"
   },
   "appointment": {
-    "title": "Записатись на прийом ",
+    "title": "Записатись на прийом",
     "selectService": "Виберіть категорію:",
     "service": "Послуга",
     "selectAService": "Зробіть вибір...",
@@ -729,9 +748,9 @@
     "title": "Живий чат",
     "subtitle": "TripleZero iT",
     "online": "Онлайн",
-    "teaserLine1": "Need help?",
-    "teaserLine2": "Open the chat...",
-    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
+    "teaserLine1": "Потрібна допомога?",
+    "teaserLine2": "Відкрийте чат...",
+    "emptyChat": "Задайте питання Агенту 000 — спочатку відповіді на поширені запитання, а за потреби — люди.",
     "emptyTicket": "Опишіть свій запит — ми відкриємо заявку, синхронізовану з вашою інформаційною панеллю.",
     "placeholder": "Введіть своє повідомлення…",
     "newTicket": "Новий квиток",
@@ -769,7 +788,7 @@
   },
   "inquiry": {
     "websiteHint": "веб-сайт / інтернет-магазин",
-    "defaultMessage": "Привіт TripleZero iT,\n\nЯ хотів би дізнатися більше про {service} для нашого {hint}.\n\nURL веб-сайту:\nЦіль (наприклад, чат-бот, помічник продукту, штучний інтелект контенту, спеціальний):",
+    "defaultMessage": "Привіт TripleZero iT, Я хотів би дізнатися більше про {service} для нашого {hint}. URL веб-сайту: Ціль (наприклад, чат-бот, помічник продукту, штучний інтелект контенту, спеціальний):",
     "requestAi": "Запит на інтеграцію ШІ",
     "sendRequest": "Надіслати запит",
     "dialogTitle": "Контакти щодо {service}",
@@ -797,81 +816,81 @@
   },
   "agent000": {
     "name": "Agent 000",
-    "role": "Virtual FAQ & support assistant",
+    "role": "Віртуальний FAQ & помічник із знань",
     "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
-    "placeholder": "Ask Agent 000 a question…",
-    "send": "Send",
-    "thinking": "Agent 000 is thinking…",
-    "mute": "Mute voice",
-    "unmute": "Unmute voice",
-    "actionBook": "Book appointment",
-    "actionTicket": "Open live chat / ticket",
+    "placeholder": "Задайте питання Агенту 000…",
+    "send": "Надіслати",
+    "thinking": "Агент 000 думає...",
+    "mute": "Вимкнути голос",
+    "unmute": "Увімкнути голос",
+    "actionBook": "Забронювати зустріч",
+    "actionTicket": "Відкрити чат/квиток",
     "actionContact": "Contact",
-    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket.",
-    "pickOption": "Pick the best match",
-    "relatedLinks": "Helpful links",
+    "error": "Вибачте, мені не вдалося отримати доступ до своєї бази знань. Спробуйте ще раз або відкрийте заявку.",
+    "pickOption": "Виберіть найкращий збіг",
+    "relatedLinks": "Корисні посилання",
     "linkFaq": "FAQ",
-    "linkKb": "Knowledge base"
+    "linkKb": "База знань"
   },
   "wordpressSupport": {
-    "saveYearlyHint": "Save up to 20% for yearly monitoring & support!",
-    "savePercent": "Save {percent}%",
-    "orderNow": "Order Now",
-    "noCreditCard": "No credit card required",
+    "saveYearlyHint": "Заощаджуйте 10% із річною оплатою!",
+    "savePercent": "Зекономте {percent}%",
+    "orderNow": "Замовляйте зараз",
+    "noCreditCard": "Кредитна картка не потрібна",
     "packages": {
       "pro": {
         "name": "Pro",
-        "tagline": "All-in-One Support Package"
+        "tagline": "Пакет підтримки «все в одному»."
       },
       "double": {
         "name": "Double",
-        "tagline": "All-in-One Support Package"
+        "tagline": "Пакет підтримки «все в одному»."
       },
       "premium": {
         "name": "Premium",
-        "tagline": "All-in-One Support Package"
+        "tagline": "Пакет підтримки «все в одному»."
       }
     },
     "features": {
       "sites": {
-        "pro": "1 website",
-        "double": "2 websites",
-        "premium": "3-5 websites"
+        "pro": "1 сайт",
+        "double": "2 веб-сайти",
+        "premium": "3-5 сайтів"
       },
       "monitoring": {
-        "pro": "24/7 monitoring & support",
-        "double": "24/7 monitoring & support",
-        "premium": "24/7 monitoring & support"
+        "pro": "Моніторинг і підтримка 24/7",
+        "double": "Моніторинг і підтримка 24/7",
+        "premium": "Моніторинг і підтримка 24/7"
       },
       "backups": {
-        "pro": "Daily backups",
-        "double": "Daily backups",
-        "premium": "Daily backups"
+        "pro": "Щоденне резервне копіювання",
+        "double": "Щоденне резервне копіювання",
+        "premium": "Щоденне резервне копіювання"
       },
       "updates": {
-        "pro": "WordPress & plugin updates",
-        "double": "WordPress & plugin updates",
-        "premium": "WordPress & plugin updates"
+        "pro": "Оновлення WordPress і плагінів",
+        "double": "Оновлення WordPress і плагінів",
+        "premium": "Оновлення WordPress і плагінів"
       },
       "errors": {
-        "pro": "Fix website errors",
-        "double": "Fix website errors",
-        "premium": "Fix website errors"
+        "pro": "Виправте помилки веб-сайту",
+        "double": "Виправте помилки веб-сайту",
+        "premium": "Виправте помилки веб-сайту"
       },
       "malware": {
-        "pro": "Malware removal & security",
-        "double": "Malware removal & security",
-        "premium": "Malware removal & security"
+        "pro": "Видалення зловмисного програмного забезпечення та безпека",
+        "double": "Видалення зловмисного програмного забезпечення та безпека",
+        "premium": "Видалення зловмисного програмного забезпечення та безпека"
       },
       "speed": {
-        "pro": "Speed optimization",
-        "double": "Speed optimization",
-        "premium": "Speed optimization"
+        "pro": "Оптимізація швидкості",
+        "double": "Оптимізація швидкості",
+        "premium": "Оптимізація швидкості"
       },
       "seo": {
-        "pro": "SEO optimization",
-        "double": "SEO optimization",
-        "premium": "SEO optimization"
+        "pro": "SEO оптимізація",
+        "double": "SEO оптимізація",
+        "premium": "SEO оптимізація"
       }
     }
   }

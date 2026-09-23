@@ -1,0 +1,1 @@
+Održavanje sigurnosti vaše WordPress stranice je od najveće važnosti. Naš tim pruža robusne sigurnosne mjere, uključujući skeniranje zlonamjernog softvera, postavljanje zaštitnog zida i redovna sigurnosna ažuriranja. Također održavamo WordPress jezgru, teme i dodatke ažurnim kako bismo smanjili rizik od kršenja i problema s kompatibilnošću.

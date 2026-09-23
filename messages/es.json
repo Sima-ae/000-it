@@ -105,7 +105,7 @@
       "webhosting": "alojamiento web",
       "domains": "Dominios",
       "ai": "AI",
-      "aeo": "OEA",
+      "aeo": "AEO",
       "geo": "GEO",
       "seo": "SEO",
       "chatbots": "Chatbots",
@@ -127,8 +127,9 @@
       "ecommerceSeo": "SEO e-commerce",
       "conversion": "Conversión",
       "speedOpt": "Core Web Vitals y velocidad",
-      "analytics": "Analytics",
-      "accessibility": "Accesibilidad"
+      "analytics": "Analítica",
+      "accessibility": "Accesibilidad",
+      "texts": "Textos"
     },
     "inquiry": {
       "wp": {
@@ -169,7 +170,7 @@
     "mostChosen": "mas popular",
     "features": {
       "starter": [
-        "1× nombre de dominio .COM / .EU / .NL",
+        "1× nombre de dominio .COM / .EU / .ES",
         "1× alojamiento web",
         "1× tienda de comercio electrónico/sitio web",
         "1× agente AI",
@@ -179,7 +180,7 @@
         "Monitoreo 24/7"
       ],
       "growth": [
-        "1× nombre de dominio .COM / .EU / .NL",
+        "1× nombre de dominio .COM / .EU / .ES",
         "1× alojamiento web",
         "1× tienda de comercio electrónico/sitio web",
         "2× agentes AI",
@@ -241,10 +242,10 @@
     "subtitle": "Todos los precios incluyen el 21% de IVA.",
     "plans": "Ready To Go - Paquete IA completo",
     "support": "Support",
-    "sharedHosting": "Shared Hosting",
-    "wordpressHosting": "WordPress Hosting",
-    "vpsHosting": "VPS Hosting",
-    "webhosting": "Shared Hosting",
+    "sharedHosting": "HOSTING COMPARTIDO",
+    "wordpressHosting": "Hosting de WordPress",
+    "vpsHosting": "hosting vps",
+    "webhosting": "HOSTING COMPARTIDO",
     "services": "Servicios y productos",
     "typePlan": "Plan",
     "typeService": "Servicio",
@@ -287,7 +288,7 @@
     "backHome": "De vuelta a casa"
   },
   "footer": {
-    "tagline": "Ofrecemos servicios y productos para emprendedores y autónomos, desde publicidad, integración de IA, AEO, GEO y SEO, imprenta, email marketing, diseño gráfico, marketing online, mantenimiento, optimización, gestión de redes sociales, diseño web y soporte WordPress hasta hosting web y nombres de dominio.",
+    "tagline": "Ofrecemos servicios y productos para emprendedores y autónomos, desde publicidad, integración de IA, AEO, GEO y SEO, imprenta, email marketing, diseño gráfico, marketing online, mantenimiento, optimización, gestión de redes sociales, diseño web y soporte WordPress hasta hosting web y nombres de dominio.",
     "rights": "Todos los derechos reservados.",
     "usefulLinks": "Enlaces útiles",
     "socialMedia": "Redes sociales",
@@ -438,7 +439,25 @@
     "company": "Empresa",
     "message": "Mensaje",
     "send": "enviar",
-    "success": "¡Gracias! Nos comunicaremos contigo pronto."
+    "success": "¡Gracias! Nos comunicaremos contigo pronto.",
+    "detailsTitle": "Datos de contacto",
+    "companyName": "TripleZero iT",
+    "addressLabel": "Dirección",
+    "addressLine1": "Burlington Tower, 19th floor",
+    "addressLine2": "Business Bay, Al Abraj St.",
+    "addressLine3": "Dubai – United Arab Emirates",
+    "addressLine4": "",
+    "emailLabel": "Correos electrónicos",
+    "emailAddress": "info@000-it.com",
+    "detailsNote": "Envía tu mensaje por el formulario — respondemos lo antes posible.",
+    "routeLabel": "Cómo llegar",
+    "routeOpenAria": "Abrir cómo llegar en Google Maps",
+    "emailAddresses": [
+      "info@000-it.com",
+      "privacy@000-it.com",
+      "sales@000-it.com",
+      "support@000-it.com"
+    ]
   },
   "aiScan": {
     "title": "Escaneo de preparación AI gratuito",
@@ -461,7 +480,7 @@
     "resultsTitle": "Resultados del escaneo de IA",
     "contactTitle": "Contacto sobre escaneo AI",
     "contactDescription": "Deje sus datos: le ayudaremos a interpretar las puntuaciones y a diseñar un plan.",
-    "contactMessageLead": "Hola TripleZero iT,\n\nRealicé un análisis de IA y me gustaría comentar los resultados.\n\nURL del sitio web: {url}\n\nPuntuaciones:\n{scores}\n\nPregunta/notas:"
+    "contactMessageLead": "Hola TripleZero iT, Realicé un análisis de IA y me gustaría comentar los resultados. URL del sitio web: {url} Puntuaciones: {scores} Pregunta/notas:"
   },
   "portfolio": {
     "title": "Portafolio",
@@ -659,11 +678,11 @@
     "results": "resultados",
     "forQuery": "para",
     "empty": "No se encontraron resultados.",
-    "browseTitle": "Browse all questions",
-    "matchedHint": "Matched FAQ highlighted below"
+    "browseTitle": "Explorar todas las preguntas",
+    "matchedHint": "Preguntas frecuentes coincidentes destacadas a continuación"
   },
   "appointment": {
-    "title": "Rezervați o programare. ",
+    "title": "Rezervați o programare.",
     "selectService": "Seleccione una categoría:",
     "service": "Servicio",
     "selectAService": "Haz una elección...",
@@ -729,9 +748,9 @@
     "title": "chat en vivo",
     "subtitle": "TripleZero iT",
     "online": "En línea",
-    "teaserLine1": "Need help?",
-    "teaserLine2": "Open the chat...",
-    "emptyChat": "Ask Agent 000 a question — or our team will follow up.",
+    "teaserLine1": "¿Necesitar ayuda?",
+    "teaserLine2": "Abre el chat...",
+    "emptyChat": "Haga una pregunta al Agente 000: las preguntas frecuentes responden primero y, cuando sea necesario, los humanos.",
     "emptyTicket": "Describe tu solicitud: abriremos un ticket sincronizado con tu panel de control.",
     "placeholder": "Escribe tu mensaje…",
     "newTicket": "Nuevo billete",
@@ -769,7 +788,7 @@
   },
   "inquiry": {
     "websiteHint": "sitio web / tienda web",
-    "defaultMessage": "Hola TripleZero iT,\n\nMe gustaría obtener más información sobre {service} para nuestro {hint}.\n\nURL del sitio web:\nObjetivo (por ejemplo, chatbot, asistente de producto, IA de contenido, personalizado):",
+    "defaultMessage": "Hola TripleZero iT, Me gustaría obtener más información sobre {service} para nuestro {hint}. URL del sitio web: Objetivo (por ejemplo, chatbot, asistente de producto, IA de contenido, personalizado):",
     "requestAi": "Solicitar integración de IA",
     "sendRequest": "Enviar solicitud",
     "dialogTitle": "Contacto sobre {service}",
@@ -797,21 +816,21 @@
   },
   "agent000": {
     "name": "Agent 000",
-    "role": "Virtual FAQ & support assistant",
+    "role": "Asistente virtual de preguntas frecuentes y conocimientos",
     "intro": "Ask me anything about TripleZero iT — AI, SEO, design, hosting, support and more. I'll answer from our FAQ and can help you book or open a ticket.",
-    "placeholder": "Ask Agent 000 a question…",
-    "send": "Send",
-    "thinking": "Agent 000 is thinking…",
-    "mute": "Mute voice",
-    "unmute": "Unmute voice",
-    "actionBook": "Book appointment",
-    "actionTicket": "Open live chat / ticket",
+    "placeholder": "Hazle una pregunta al Agente 000...",
+    "send": "Enviar",
+    "thinking": "El agente 000 está pensando...",
+    "mute": "voz muda",
+    "unmute": "Activar voz",
+    "actionBook": "Reservar cita",
+    "actionTicket": "Abrir chat en vivo / ticket",
     "actionContact": "Contact",
-    "error": "Sorry — I couldn't reach my knowledge base. Please try again or open a ticket.",
-    "pickOption": "Pick the best match",
-    "relatedLinks": "Helpful links",
+    "error": "Lo siento, no pude acceder a mi base de conocimientos. Inténtelo de nuevo o abra un ticket.",
+    "pickOption": "Elige la mejor combinación",
+    "relatedLinks": "Enlaces útiles",
     "linkFaq": "FAQ",
-    "linkKb": "Knowledge base"
+    "linkKb": "base de conocimientos"
   },
   "wordpressSupport": {
     "saveYearlyHint": "¡Ahorra hasta un 20% con monitorización y soporte anual!",
