@@ -68,6 +68,36 @@ const nextConfig: NextConfig = {
         destination: "/:locale/diensten/aeo-optimization",
         permanent: true,
       },
+      {
+        source: "/:locale/diensten/basic-support",
+        destination: "/:locale/diensten/pro-support",
+        permanent: true,
+      },
+      {
+        source: "/:locale/diensten/standard-support",
+        destination: "/:locale/diensten/double-support",
+        permanent: true,
+      },
+      {
+        source: "/:locale/shop/basic-support",
+        destination: "/:locale/shop/pro-support",
+        permanent: true,
+      },
+      {
+        source: "/:locale/shop/standard-support",
+        destination: "/:locale/shop/double-support",
+        permanent: true,
+      },
+      {
+        source: "/:locale/shop/basic-support-yearly",
+        destination: "/:locale/shop/pro-support-yearly",
+        permanent: true,
+      },
+      {
+        source: "/:locale/shop/standard-support-yearly",
+        destination: "/:locale/shop/double-support-yearly",
+        permanent: true,
+      },
       ...graphicDesignRedirects.map(([from, to]) => ({
         source: `/:locale/${from}`,
         destination: `/:locale/${to}`,

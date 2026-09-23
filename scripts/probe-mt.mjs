@@ -4,7 +4,7 @@ const samples = [
   ["es", "What can you expect?\n– 1 website\n– 24/7 monitoring & support"],
   [
     "it",
-    "Basic Support is for businesses with one WordPress website that want a dependable technical foundation without having to solve every issue themselves.",
+    "Pro Support is for businesses with one WordPress website that want a dependable technical foundation without having to solve every issue themselves.",
   ],
   ["fr", "Collaboration"],
 ];

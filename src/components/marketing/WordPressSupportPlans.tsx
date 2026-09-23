@@ -31,7 +31,7 @@ const PACKAGE_FEATURES: Record<
   SupportPackageKey,
   { key: FeatureKey; included: boolean }[]
 > = {
-  basic: [
+  pro: [
     { key: "sites", included: true },
     { key: "monitoring", included: true },
     { key: "backups", included: true },
@@ -41,7 +41,7 @@ const PACKAGE_FEATURES: Record<
     { key: "speed", included: false },
     { key: "seo", included: false },
   ],
-  standard: [
+  double: [
     { key: "sites", included: true },
     { key: "monitoring", included: true },
     { key: "backups", included: true },
@@ -93,7 +93,7 @@ export function WordPressSupportPlans() {
           period: billing === "yearly" ? tPricing("year") : tPricing("month"),
           savePercent: pricing.savePercent,
           features: PACKAGE_FEATURES[key],
-          featured: key === "standard",
+          featured: key === "double",
         };
       }),
     [billing, t, tPricing],

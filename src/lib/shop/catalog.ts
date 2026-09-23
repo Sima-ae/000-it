@@ -53,15 +53,15 @@ export const HOSTING_YEARLY_SLUGS = new Set([
 ]);
 
 /** WordPress support packages with monthly + discounted yearly billing. */
-export const SUPPORT_PACKAGE_KEYS = ["basic", "standard", "premium"] as const;
+export const SUPPORT_PACKAGE_KEYS = ["pro", "double", "premium"] as const;
 export type SupportPackageKey = (typeof SUPPORT_PACKAGE_KEYS)[number];
 
 export const SUPPORT_PACKAGE_PRICES: Record<
   SupportPackageKey,
   { monthly: number; yearly: number; savePercent: number }
 > = {
-  basic: { monthly: 29.99, yearly: 323.91, savePercent: 10 },
-  standard: { monthly: 54.99, yearly: 560.83, savePercent: 15 },
+  pro: { monthly: 29.99, yearly: 323.91, savePercent: 10 },
+  double: { monthly: 54.99, yearly: 560.83, savePercent: 15 },
   premium: { monthly: 89.99, yearly: 863.88, savePercent: 20 },
 };
 
@@ -243,7 +243,7 @@ function buildSupportProducts(): ShopProduct[] {
     const descNl = brandify(i18nNl?.description || source?.description || shortNl);
     const descEn = brandify(i18nEn?.description || source?.description || shortEn);
     const pricing = SUPPORT_PACKAGE_PRICES[key];
-    const sortBase = key === "basic" ? 40 : key === "standard" ? 41 : 42;
+    const sortBase = key === "pro" ? 40 : key === "double" ? 41 : 42;
 
     for (const period of ["monthly", "yearly"] as const) {
       const slug = supportPackageSlug(key, period);
@@ -280,7 +280,7 @@ function buildSupportProducts(): ShopProduct[] {
         billingPeriod: period,
         billingInterval: period,
         category: "wordpress-support",
-        featured: key === "standard",
+        featured: key === "double",
         published: true,
         sortOrder: sortBase + (period === "yearly" ? 3 : 0),
         tags: ["wordpress-support", key, period],

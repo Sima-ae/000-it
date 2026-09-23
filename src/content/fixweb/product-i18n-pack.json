@@ -1,14 +1,14 @@
 {
   "en": {
-    "basic-support": {
-      "name": "Basic Support",
+    "pro-support": {
+      "name": "Pro Support",
       "shortDescription": "What can you expect?\n– 1 website\n– 24/7 monitoring & support\n– Daily backups\n– WordPress & plugin updates\n– Fix website errors\n– Malware removal & security",
-      "description": "Basic Support is for businesses with one WordPress website that want a dependable technical foundation without having to resolve every issue themselves.\n\nWe monitor your site around the clock, create daily backups and keep WordPress and plugins current. We also fix errors, remove malware and apply practical security measures to keep your website available and protected.\n\nTripleZero iT handles incidents carefully, verifies the site after recovery and helps reduce future risk. You can focus on your business while we look after its technical continuity."
+      "description": "Pro Support is for businesses with one WordPress website that want a dependable technical foundation without having to resolve every issue themselves.\n\nWe monitor your site around the clock, create daily backups and keep WordPress and plugins current. We also fix errors, remove malware and apply practical security measures to keep your website available and protected.\n\nTripleZero iT handles incidents carefully, verifies the site after recovery and helps reduce future risk. You can focus on your business while we look after its technical continuity."
     },
-    "standard-support": {
-      "name": "Standard Support",
+    "double-support": {
+      "name": "Double Support",
       "shortDescription": "What can you expect?\n– 2 websites\n– 24/7 monitoring & support\n– Daily backups\n– WordPress & plugin updates\n– Fix website errors\n– Malware removal & security\n– Speed optimization",
-      "description": "Standard Support suits organisations with up to two WordPress websites that need everyday maintenance as well as attention to speed and continuity.\n\nYou receive 24/7 monitoring, daily backups, updates, error resolution, malware removal and security care. We also optimise caching, images and code where it improves your websites’ performance.\n\nTripleZero iT works proactively: we flag issues, resolve technical problems with focus and keep your websites stable for visitors and administrators."
+      "description": "Double Support suits organisations with up to two WordPress websites that need everyday maintenance as well as attention to speed and continuity.\n\nYou receive 24/7 monitoring, daily backups, updates, error resolution, malware removal and security care. We also optimise caching, images and code where it improves your websites’ performance.\n\nTripleZero iT works proactively: we flag issues, resolve technical problems with focus and keep your websites stable for visitors and administrators."
     },
     "premium-support": {
       "name": "Premium Support",
@@ -97,15 +97,15 @@
     }
   },
   "nl": {
-    "basic-support": {
-      "name": "Basic Support",
+    "pro-support": {
+      "name": "Pro Support",
       "shortDescription": "Wat kun je verwachten?\n– 1 website\n– 24/7 monitoring & support\n– Dagelijkse backups\n– WordPress & plugin updates\n– Websitefouten herstellen\n– Malware verwijderen & beveiliging",
-      "description": "Basic Support is er voor ondernemers met één WordPress-website die een betrouwbare technische basis willen zonder zelf elk probleem te hoeven oplossen.\n\nWij monitoren jouw site dag en nacht, maken dagelijkse back-ups en houden WordPress en plugins actueel. Ook lossen we fouten op, verwijderen we malware en passen we praktische beveiligingsmaatregelen toe om jouw website beschikbaar en beschermd te houden.\n\nTripleZero iT pakt incidenten zorgvuldig aan, controleert de werking na herstel en helpt risico’s voor te blijven. Zo kun je je richten op jouw onderneming terwijl wij de technische continuïteit bewaken."
+      "description": "Pro Support is er voor ondernemers met één WordPress-website die een betrouwbare technische basis willen zonder zelf elk probleem te hoeven oplossen.\n\nWij monitoren jouw site dag en nacht, maken dagelijkse back-ups en houden WordPress en plugins actueel. Ook lossen we fouten op, verwijderen we malware en passen we praktische beveiligingsmaatregelen toe om jouw website beschikbaar en beschermd te houden.\n\nTripleZero iT pakt incidenten zorgvuldig aan, controleert de werking na herstel en helpt risico’s voor te blijven. Zo kun je je richten op jouw onderneming terwijl wij de technische continuïteit bewaken."
     },
-    "standard-support": {
-      "name": "Standard Support",
+    "double-support": {
+      "name": "Double Support",
       "shortDescription": "Wat kun je verwachten?\n– 2 websites\n– 24/7 monitoring & support\n– Dagelijkse backups\n– WordPress & plugin updates\n– Websitefouten herstellen\n– Malware verwijderen & beveiliging\n– Snelheid optimaliseren",
-      "description": "Standard Support is geschikt voor organisaties met maximaal twee WordPress-websites die naast dagelijks onderhoud ook aandacht voor snelheid en continuïteit nodig hebben.\n\nJe krijgt 24/7 monitoring, dagelijkse back-ups, updates, foutoplossing, malwareverwijdering en beveiliging. Wij optimaliseren daarnaast caching, afbeeldingen en code waar dat de prestaties van jouw websites verbetert.\n\nTripleZero iT werkt proactief: we signaleren aandachtspunten, pakken technische problemen gericht aan en houden jouw websites stabiel voor bezoekers en beheerders."
+      "description": "Double Support is geschikt voor organisaties met maximaal twee WordPress-websites die naast dagelijks onderhoud ook aandacht voor snelheid en continuïteit nodig hebben.\n\nJe krijgt 24/7 monitoring, dagelijkse back-ups, updates, foutoplossing, malwareverwijdering en beveiliging. Wij optimaliseren daarnaast caching, afbeeldingen en code waar dat de prestaties van jouw websites verbetert.\n\nTripleZero iT werkt proactief: we signaleren aandachtspunten, pakken technische problemen gericht aan en houden jouw websites stabiel voor bezoekers en beheerders."
     },
     "premium-support": {
       "name": "Premium Support",
@@ -194,12 +194,12 @@
     }
   },
   "fr": {
-    "basic-support": {
+    "pro-support": {
       "name": "Support simple",
       "shortDescription": "À quoi pouvez-vous vous attendre ?\n– 1 site Internet\n– Surveillance et assistance 24h/24 et 7j/7\n– Sauvegardes quotidiennes\n– Mises à jour de WordPress et des plugins\n– Corriger les erreurs du site Web\n– Suppression et sécurité des logiciels malveillants",
       "description": "Le support de base est destiné aux entreprises disposant d’un site Web WordPress qui souhaitent disposer d’une base technique fiable sans avoir à résoudre elles-mêmes tous les problèmes.\n\nNous surveillons votre site 24 heures sur 24, créons des sauvegardes quotidiennes et maintenons WordPress et les plugins à jour. Nous corrigeons également les erreurs, supprimons les logiciels malveillants et appliquons des mesures de sécurité pratiques pour maintenir votre site Web disponible et protégé.\n\nTripleZero iT gère les incidents avec soin, vérifie le site après la récupération et contribue à réduire les risques futurs. Vous pouvez vous concentrer sur votre activité pendant que nous veillons à sa continuité technique."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Support standard",
       "shortDescription": "À quoi pouvez-vous vous attendre ?\n– 2 sites Internet\n– Surveillance et assistance 24h/24 et 7j/7\n– Sauvegardes quotidiennes\n– Mises à jour de WordPress et des plugins\n– Corriger les erreurs du site Web\n– Suppression et sécurité des logiciels malveillants\n– Optimisation de la vitesse",
       "description": "Le support standard convient aux organisations possédant jusqu'à deux sites Web WordPress nécessitant une maintenance quotidienne ainsi qu'une attention particulière à la vitesse et à la continuité.\n\nVous bénéficiez d'une surveillance 24h/24 et 7j/7, de sauvegardes quotidiennes, de mises à jour, d'une résolution d'erreurs, de la suppression de logiciels malveillants et de soins de sécurité. Nous optimisons également la mise en cache, les images et le code là où cela améliore les performances de vos sites Web.\n\nTripleZero iT fonctionne de manière proactive : nous signalons les problèmes, résolvons les problèmes techniques avec précision et maintenons la stabilité de vos sites Web pour les visiteurs et les administrateurs."
@@ -291,12 +291,12 @@
     }
   },
   "de": {
-    "basic-support": {
+    "pro-support": {
       "name": "Grundlegende Unterstützung",
       "shortDescription": "Was können Sie erwarten?\n– 1 Website\n– Überwachung und Support rund um die Uhr\n– Tägliche Backups\n– WordPress- und Plugin-Updates\n– Beheben Sie Website-Fehler\n– Malware-Entfernung und Sicherheit",
       "description": "Der Basis-Support richtet sich an Unternehmen mit einer WordPress-Website, die eine zuverlässige technische Grundlage wünschen, ohne jedes Problem selbst lösen zu müssen.\n\nWir überwachen Ihre Seite rund um die Uhr, erstellen tägliche Backups und halten WordPress und Plugins aktuell. Wir beheben außerdem Fehler, entfernen Malware und wenden praktische Sicherheitsmaßnahmen an, um die Verfügbarkeit und den Schutz Ihrer Website zu gewährleisten.\n\nTripleZero iT geht sorgfältig mit Vorfällen um, überprüft den Standort nach der Wiederherstellung und hilft, zukünftige Risiken zu reduzieren. Sie können sich auf Ihr Geschäft konzentrieren, während wir für die technische Kontinuität sorgen."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Standard-Support",
       "shortDescription": "Was können Sie erwarten?\n– 2 Websites\n– Überwachung und Support rund um die Uhr\n– Tägliche Backups\n– WordPress- und Plugin-Updates\n– Beheben Sie Website-Fehler\n– Malware-Entfernung und Sicherheit\n– Geschwindigkeitsoptimierung",
       "description": "Der Standard-Support eignet sich für Organisationen mit bis zu zwei WordPress-Websites, die eine tägliche Wartung sowie Aufmerksamkeit auf Geschwindigkeit und Kontinuität benötigen.\n\nSie erhalten rund um die Uhr Überwachung, tägliche Backups, Updates, Fehlerbehebung, Malware-Entfernung und Sicherheitsbetreuung. Wir optimieren auch Caching, Bilder und Code, um die Leistung Ihrer Websites zu verbessern.\n\nTripleZero iT arbeitet proaktiv: Wir kennzeichnen Probleme, lösen technische Probleme gezielt und halten Ihre Websites für Besucher und Administratoren stabil."
@@ -388,12 +388,12 @@
     }
   },
   "es": {
-    "basic-support": {
+    "pro-support": {
       "name": "Ayuda básica",
       "shortDescription": "¿Qué puedes esperar?\n– 1 sitio web\n– Monitoreo y soporte 24 horas al día, 7 días a la semana\n– Copias de seguridad diarias\n– Actualizaciones de WordPress y complementos\n– Corregir errores del sitio web\n– Eliminación de malware y seguridad",
       "description": "El soporte básico es para empresas con un sitio web de WordPress que desean una base técnica confiable sin tener que resolver todos los problemas por sí mismas.\n\nMonitoreamos su sitio las 24 horas del día, creamos copias de seguridad diarias y mantenemos WordPress y sus complementos actualizados. También reparamos errores, eliminamos malware y aplicamos medidas de seguridad prácticas para mantener su sitio web disponible y protegido.\n\nTripleZero iT maneja los incidentes con cuidado, verifica el sitio después de la recuperación y ayuda a reducir riesgos futuros. Podrás centrarte en tu negocio mientras nosotros velamos por su continuidad técnica."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Soporte estandar",
       "shortDescription": "¿Qué puedes esperar?\n– 2 sitios web\n– Monitoreo y soporte 24 horas al día, 7 días a la semana\n– Copias de seguridad diarias\n– Actualizaciones de WordPress y complementos\n– Corregir errores del sitio web\n– Eliminación de malware y seguridad\n– Optimización de velocidad",
       "description": "El soporte estándar se adapta a organizaciones con hasta dos sitios web de WordPress que necesitan mantenimiento diario, así como atención a la velocidad y la continuidad.\n\nRecibe monitoreo las 24 horas del día, los 7 días de la semana, copias de seguridad diarias, actualizaciones, resolución de errores, eliminación de malware y atención de seguridad. También optimizamos el almacenamiento en caché, las imágenes y el código para mejorar el rendimiento de sus sitios web.\n\nTripleZero iT funciona de manera proactiva: señalamos problemas, resolvemos problemas técnicos con enfoque y mantenemos sus sitios web estables para visitantes y administradores."
@@ -485,12 +485,12 @@
     }
   },
   "pt": {
-    "basic-support": {
+    "pro-support": {
       "name": "Suporte Básico",
       "shortDescription": "O que você pode esperar?\n– 1 site\n– Monitoramento e suporte 24 horas por dia, 7 dias por semana\n– Backups diários\n– Atualizações de WordPress e plug-ins\n– Corrigir erros do site\n– Remoção de malware e segurança",
       "description": "O Suporte Básico é para empresas com um site WordPress que desejam uma base técnica confiável sem ter que resolver todos os problemas sozinhas.\n\nMonitoramos seu site 24 horas por dia, criamos backups diários e mantemos o WordPress e os plugins atualizados. Também corrigimos erros, removemos malware e aplicamos medidas práticas de segurança para manter o seu site disponível e protegido.\n\nTripleZero iT lida com incidentes com cuidado, verifica o local após a recuperação e ajuda a reduzir riscos futuros. Você pode se concentrar no seu negócio enquanto nós cuidamos de sua continuidade técnica."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Suporte Padrão",
       "shortDescription": "O que você pode esperar?\n– 2 sites\n– Monitoramento e suporte 24 horas por dia, 7 dias por semana\n– Backups diários\n– Atualizações de WordPress e plug-ins\n– Corrigir erros do site\n– Remoção de malware e segurança\n– Otimização de velocidade",
       "description": "O Suporte Padrão é adequado para organizações com até dois sites WordPress que precisam de manutenção diária, bem como atenção à velocidade e continuidade.\n\nVocê recebe monitoramento 24 horas por dia, 7 dias por semana, backups diários, atualizações, resolução de erros, remoção de malware e cuidados de segurança. Também otimizamos o cache, as imagens e o código, melhorando o desempenho dos seus sites.\n\nTripleZero iT trabalha de forma proativa: sinalizamos problemas, resolvemos problemas técnicos com foco e mantemos seus sites estáveis ​​para visitantes e administradores."
@@ -582,12 +582,12 @@
     }
   },
   "it": {
-    "basic-support": {
+    "pro-support": {
       "name": "Supporto di base",
       "shortDescription": "Cosa puoi aspettarti?\n– 1 sito web\n– Monitoraggio e supporto 24 ore su 24, 7 giorni su 7\n– Backup giornalieri\n– Aggiornamenti WordPress e plugin\n– Correggi gli errori del sito web\n– Rimozione e sicurezza del malware",
       "description": "Il supporto di base è rivolto alle aziende con un sito Web WordPress che desiderano una base tecnica affidabile senza dover risolvere da soli ogni problema.\n\nMonitoriamo il tuo sito 24 ore su 24, creiamo backup giornalieri e manteniamo WordPress e plugin aggiornati. Correggiamo anche errori, rimuoviamo malware e applichiamo pratiche misure di sicurezza per mantenere il tuo sito web disponibile e protetto.\n\nTripleZero iT gestisce gli incidenti con attenzione, verifica il sito dopo il ripristino e aiuta a ridurre i rischi futuri. Puoi concentrarti sulla tua attività mentre noi ci occupiamo della sua continuità tecnica."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Supporto Standard",
       "shortDescription": "Cosa puoi aspettarti?\n– 2 siti web\n– Monitoraggio e supporto 24 ore su 24, 7 giorni su 7\n– Backup giornalieri\n– Aggiornamenti WordPress e plugin\n– Correggi gli errori del sito web\n– Rimozione e sicurezza del malware\n– Ottimizzazione della velocità",
       "description": "Il Supporto Standard è adatto alle organizzazioni con un massimo di due siti Web WordPress che necessitano di manutenzione quotidiana e attenzione alla velocità e alla continuità.\n\nRicevi monitoraggio 24 ore su 24, 7 giorni su 7, backup giornalieri, aggiornamenti, risoluzione degli errori, rimozione di malware e assistenza per la sicurezza. Ottimizziamo anche la memorizzazione nella cache, le immagini e il codice in modo da migliorare le prestazioni dei tuoi siti web.\n\nTripleZero iT funziona in modo proattivo: segnaliamo problemi, risolviamo problemi tecnici con attenzione e manteniamo stabili i tuoi siti web per visitatori e amministratori."
@@ -679,15 +679,15 @@
     }
   },
   "el": {
-    "basic-support": {
+    "pro-support": {
       "name": "Βασική υποστήριξη",
       "shortDescription": "Τι μπορείτε να περιμένετε;\n– 1 ιστότοπος\n– Παρακολούθηση & υποστήριξη 24/7\n– Καθημερινά αντίγραφα ασφαλείας\n– Ενημερώσεις WordPress και πρόσθετων\n– Διόρθωση σφαλμάτων ιστότοπου\n– Αφαίρεση κακόβουλου λογισμικού και ασφάλεια",
       "description": "Η Βασική Υποστήριξη απευθύνεται σε επιχειρήσεις με έναν ιστότοπο WordPress που θέλουν μια αξιόπιστη τεχνική βάση χωρίς να χρειάζεται να επιλύσουν κάθε πρόβλημα μόνες τους.\n\nΠαρακολουθούμε τον ιστότοπό σας όλο το εικοσιτετράωρο, δημιουργούμε καθημερινά αντίγραφα ασφαλείας και διατηρούμε ενημερωμένα το WordPress και τα πρόσθετα. Διορθώνουμε επίσης σφάλματα, αφαιρούμε κακόβουλο λογισμικό και εφαρμόζουμε πρακτικά μέτρα ασφαλείας για να διατηρήσουμε τον ιστότοπό σας διαθέσιμο και προστατευμένο.\n\nΤο TripleZero iT χειρίζεται τα περιστατικά προσεκτικά, επαληθεύει τον ιστότοπο μετά την ανάκτηση και συμβάλλει στη μείωση του μελλοντικού κινδύνου. Μπορείτε να εστιάσετε στην επιχείρησή σας ενώ φροντίζουμε για την τεχνική της συνέχεια."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Βασική υποστήριξη",
       "shortDescription": "Τι μπορείτε να περιμένετε;\n– 2 ιστοσελίδες\n– Παρακολούθηση & υποστήριξη 24/7\n– Καθημερινά αντίγραφα ασφαλείας\n– Ενημερώσεις WordPress και πρόσθετων\n– Διόρθωση σφαλμάτων ιστότοπου\n– Αφαίρεση κακόβουλου λογισμικού και ασφάλεια\n– Βελτιστοποίηση ταχύτητας",
-      "description": "Η Standard Support ταιριάζει σε οργανισμούς με έως και δύο ιστότοπους WordPress που χρειάζονται καθημερινή συντήρηση καθώς και προσοχή στην ταχύτητα και τη συνέχεια.\n\nΛαμβάνετε παρακολούθηση 24/7, καθημερινά αντίγραφα ασφαλείας, ενημερώσεις, επίλυση σφαλμάτων, αφαίρεση κακόβουλου λογισμικού και φροντίδα ασφαλείας. Βελτιστοποιούμε επίσης την προσωρινή αποθήκευση, τις εικόνες και τον κώδικα όπου βελτιώνει την απόδοση των ιστοτόπων σας.\n\nΤο TripleZero iT λειτουργεί προληπτικά: επισημαίνουμε ζητήματα, επιλύουμε τεχνικά προβλήματα με εστίαση και διατηρούμε τους ιστότοπούς σας σταθερούς για επισκέπτες και διαχειριστές."
+      "description": "Η Double Support ταιριάζει σε οργανισμούς με έως και δύο ιστότοπους WordPress που χρειάζονται καθημερινή συντήρηση καθώς και προσοχή στην ταχύτητα και τη συνέχεια.\n\nΛαμβάνετε παρακολούθηση 24/7, καθημερινά αντίγραφα ασφαλείας, ενημερώσεις, επίλυση σφαλμάτων, αφαίρεση κακόβουλου λογισμικού και φροντίδα ασφαλείας. Βελτιστοποιούμε επίσης την προσωρινή αποθήκευση, τις εικόνες και τον κώδικα όπου βελτιώνει την απόδοση των ιστοτόπων σας.\n\nΤο TripleZero iT λειτουργεί προληπτικά: επισημαίνουμε ζητήματα, επιλύουμε τεχνικά προβλήματα με εστίαση και διατηρούμε τους ιστότοπούς σας σταθερούς για επισκέπτες και διαχειριστές."
     },
     "premium-support": {
       "name": "高级支持",
@@ -776,12 +776,12 @@
     }
   },
   "pl": {
-    "basic-support": {
+    "pro-support": {
       "name": "Podstawowe czynności resuscytacyjne u osób dorosłych",
       "shortDescription": "Czego możesz się spodziewać?\n– 1 witryna\n– Całodobowy monitoring i wsparcie\n– Codzienne kopie zapasowe\n– Aktualizacje WordPressa i wtyczek\n– Napraw błędy witryny\n– Usuwanie złośliwego oprogramowania i bezpieczeństwo",
       "description": "Wsparcie podstawowe jest przeznaczone dla firm posiadających jedną witrynę WordPress, które chcą niezawodnych podstaw technicznych bez konieczności samodzielnego rozwiązywania każdego problemu.\n\nMonitorujemy Twoją witrynę przez całą dobę, tworzymy codzienne kopie zapasowe i dbamy o aktualność WordPressa i wtyczek. Naprawiamy również błędy, usuwamy złośliwe oprogramowanie i stosujemy praktyczne środki bezpieczeństwa, aby Twoja witryna była dostępna i chroniona.\n\nTripleZero iT ostrożnie obsługuje incydenty, weryfikuje witrynę po odzyskaniu i pomaga zmniejszyć przyszłe ryzyko. Ty możesz skupić się na swoim biznesie, a my dbamy o jego ciągłość techniczną."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Standardowa pomoc techniczna",
       "shortDescription": "Czego możesz się spodziewać?\n– 2 strony internetowe\n– Całodobowy monitoring i wsparcie\n– Codzienne kopie zapasowe\n– Aktualizacje WordPressa i wtyczek\n– Napraw błędy witryny\n– Usuwanie złośliwego oprogramowania i bezpieczeństwo\n– Optymalizacja prędkości",
       "description": "Wsparcie standardowe jest odpowiednie dla organizacji posiadających maksymalnie dwie witryny WordPress, które wymagają codziennej konserwacji, a także dbałości o szybkość i ciągłość.\n\nOtrzymujesz monitorowanie 24 godziny na dobę, 7 dni w tygodniu, codzienne kopie zapasowe, aktualizacje, rozwiązywanie błędów, usuwanie złośliwego oprogramowania i opiekę nad bezpieczeństwem. Optymalizujemy również pamięć podręczną, obrazy i kod, gdzie poprawia to wydajność Twoich witryn.\n\nTripleZero iT działa proaktywnie: sygnalizujemy problemy, skupiamy się na rozwiązywaniu problemów technicznych i zapewniamy stabilność witryn internetowych dla odwiedzających i administratorów."
@@ -873,12 +873,12 @@
     }
   },
   "cs": {
-    "basic-support": {
+    "pro-support": {
       "name": "Základní podpora",
       "shortDescription": "Co můžete očekávat?\n– 1 web\n– 24/7 monitorování a podpora\n– Denní zálohy\n– Aktualizace WordPressu a pluginů\n– Opravte chyby na webu\n– Odstranění malwaru a zabezpečení",
       "description": "Základní podpora je pro firmy s jedním webem WordPress, které chtějí spolehlivý technický základ, aniž by musely každý problém řešit samy.\n\nVáš web nepřetržitě monitorujeme, vytváříme denní zálohy a udržujeme WordPress a pluginy aktuální. Opravujeme také chyby, odstraňujeme malware a uplatňujeme praktická bezpečnostní opatření, abychom zajistili dostupnost a ochranu vašeho webu.\n\nTripleZero iT zpracovává incidenty opatrně, ověřuje web po obnovení a pomáhá snižovat budoucí rizika. Vy se můžete soustředit na své podnikání, zatímco my se postaráme o jeho technickou kontinuitu."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Standardní podpora",
       "shortDescription": "Co můžete očekávat?\n– 2 webové stránky\n– 24/7 monitorování a podpora\n– Denní zálohy\n– Aktualizace WordPressu a pluginů\n– Opravte chyby na webu\n– Odstranění malwaru a zabezpečení\n– Optimalizace rychlosti",
       "description": "Standardní podpora vyhovuje organizacím s až dvěma weby WordPress, které potřebují každodenní údržbu a také pozornost věnovanou rychlosti a kontinuitě.\n\nZískáte nepřetržité monitorování, denní zálohy, aktualizace, řešení chyb, odstraňování malwaru a péči o zabezpečení. Optimalizujeme také ukládání do mezipaměti, obrázky a kód tam, kde to zlepšuje výkon vašich webových stránek.\n\nTripleZero iT funguje proaktivně: nahlašujeme problémy, řešíme technické problémy s důrazem a udržujeme vaše webové stránky stabilní pro návštěvníky a administrátory."
@@ -970,12 +970,12 @@
     }
   },
   "sk": {
-    "basic-support": {
+    "pro-support": {
       "name": "Základná podpora",
       "shortDescription": "Čo môžete očakávať?\n– 1 webová stránka\n– 24/7 monitorovanie a podpora\n- Denné zálohy\n- Aktualizácie WordPress a doplnkov\n- Opravte chyby webových stránok\n- Odstránenie škodlivého softvéru a zabezpečenie",
       "description": "Základná podpora je určená pre podniky s jednou webovou stránkou WordPress, ktoré chcú spoľahlivý technický základ bez toho, aby museli sami riešiť každý problém.\n\nVáš web nepretržite monitorujeme, vytvárame denné zálohy a udržiavame WordPress a doplnky aktuálne. Tiež opravujeme chyby, odstraňujeme malvér a uplatňujeme praktické bezpečnostné opatrenia, aby bola vaša webová lokalita dostupná a chránená.\n\nTripleZero iT rieši incidenty opatrne, overuje lokalitu po obnove a pomáha znižovať budúce riziko. Môžete sa sústrediť na svoje podnikanie, zatiaľ čo my sa postaráme o jeho technickú kontinuitu."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Štandardná podpora",
       "shortDescription": "Čo môžete očakávať?\n- 2 webové stránky\n– 24/7 monitorovanie a podpora\n- Denné zálohy\n- Aktualizácie WordPress a doplnkov\n- Opravte chyby webových stránok\n- Odstránenie škodlivého softvéru a zabezpečenie\n- Optimalizácia rýchlosti",
       "description": "Štandardná podpora vyhovuje organizáciám s až dvoma webovými stránkami WordPress, ktoré potrebujú každodennú údržbu, ako aj pozornosť na rýchlosť a kontinuitu.\n\nDostanete 24/7 monitorovanie, denné zálohy, aktualizácie, riešenie chýb, odstránenie škodlivého softvéru a starostlivosť o bezpečnosť. Optimalizujeme tiež ukladanie do vyrovnávacej pamäte, obrázky a kód tam, kde to zlepšuje výkon vašich webových stránok.\n\nTripleZero iT funguje proaktívne: nahlasujeme problémy, sústredene riešime technické problémy a udržujeme vaše webové stránky stabilné pre návštevníkov a správcov."
@@ -1067,12 +1067,12 @@
     }
   },
   "hu": {
-    "basic-support": {
+    "pro-support": {
       "name": "Alap támogatás",
       "shortDescription": "mire számíthatsz?\n– 1 weboldal\n– 24 órás felügyelet és támogatás\n– Napi biztonsági mentések\n– WordPress és plugin frissítések\n- Javítsa ki a webhely hibáit\n- Rosszindulatú programok eltávolítása és biztonsága",
       "description": "Az alaptámogatás azoknak a vállalkozásoknak szól, amelyek egyetlen WordPress-webhellyel rendelkeznek, és amelyek megbízható műszaki alapot szeretnének anélkül, hogy maguknak kellene megoldaniuk minden problémát.\n\nÉjjel-nappal figyeljük webhelyét, napi biztonsági mentéseket készítünk, és naprakészen tartjuk a WordPress-t és a bővítményeket. Ezenkívül kijavítjuk a hibákat, eltávolítjuk a rosszindulatú programokat, és gyakorlati biztonsági intézkedéseket alkalmazunk, hogy webhelye elérhető és védett legyen.\n\nA TripleZero iT gondosan kezeli az incidenseket, a helyreállítás után ellenőrzi a helyszínt, és segít csökkenteni a jövőbeni kockázatokat. Ön üzletére összpontosíthat, miközben mi ügyelünk annak műszaki folytonosságára."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Standard támogatás",
       "shortDescription": "mire számíthatsz?\n– 2 weboldal\n– 24 órás felügyelet és támogatás\n– Napi biztonsági mentések\n– WordPress és plugin frissítések\n- Javítsa ki a webhely hibáit\n- Rosszindulatú programok eltávolítása és biztonsága\n– Sebességoptimalizálás",
       "description": "A szabványos támogatás azoknak a szervezeteknek felel meg, amelyek legfeljebb két WordPress-webhellyel rendelkeznek, és amelyeknek mindennapi karbantartásra, valamint a sebességre és a folytonosságra kell figyelniük.\n\nA hét minden napján, 24 órában felügyeletet, napi biztonsági mentéseket, frissítéseket, hibaelhárítást, rosszindulatú programok eltávolítását és biztonsági gondoskodást kap. A gyorsítótárazást, a képeket és a kódot is optimalizáljuk, ahol ez javítja webhelye teljesítményét.\n\nA TripleZero iT proaktívan működik: megjelöljük a problémákat, fókuszáltan megoldjuk a technikai problémákat, és stabilan tartjuk webhelyeit a látogatók és a rendszergazdák számára."
@@ -1164,12 +1164,12 @@
     }
   },
   "ro": {
-    "basic-support": {
+    "pro-support": {
       "name": "Suport Vital de Bază",
       "shortDescription": "La ce te poti astepta?\n– 1 site web\n– Monitorizare și asistență 24/7\n– Backup-uri zilnice\n– Actualizări WordPress și plugin\n- Remediați erorile site-ului\n– Eliminarea programelor malware și securitate",
       "description": "Asistența de bază este pentru companiile cu un site web WordPress care doresc o bază tehnică de încredere fără a fi nevoite să rezolve singure fiecare problemă.\n\nMonitorizăm site-ul dvs. non-stop, creăm copii de rezervă zilnice și menținem WordPress și pluginurile la zi. De asemenea, reparăm erorile, eliminăm programele malware și aplicăm măsuri practice de securitate pentru a vă menține site-ul disponibil și protejat.\n\nTripleZero iT gestionează incidentele cu atenție, verifică site-ul după recuperare și ajută la reducerea riscurilor viitoare. Vă puteți concentra asupra afacerii dvs. în timp ce noi ne ocupăm de continuitatea tehnică a acesteia."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Suport non standard,",
       "shortDescription": "La ce te poti astepta?\n– 2 site-uri web\n– Monitorizare și asistență 24/7\n– Backup-uri zilnice\n– Actualizări WordPress și plugin\n- Remediați erorile site-ului\n– Eliminarea programelor malware și securitate\n– Optimizarea vitezei",
       "description": "Asistența standard se potrivește organizațiilor cu până la două site-uri web WordPress care necesită întreținere zilnică, precum și atenție la viteză și continuitate.\n\nPrimiți monitorizare 24/7, backup-uri zilnice, actualizări, rezolvarea erorilor, eliminarea programelor malware și îngrijire de securitate. De asemenea, optimizăm stocarea în cache, imaginile și codul în cazul în care îmbunătățesc performanța site-urilor dvs. web.\n\nTripleZero iT funcționează proactiv: semnalăm problemele, rezolvăm problemele tehnice cu atenție și menținem site-urile dvs. stabile pentru vizitatori și administratori."
@@ -1261,12 +1261,12 @@
     }
   },
   "bg": {
-    "basic-support": {
+    "pro-support": {
       "name": "Основна поддръжка",
       "shortDescription": "Какво можете да очаквате?\n– 1 уебсайт\n– 24/7 наблюдение и поддръжка\n– Ежедневно архивиране\n– Актуализации на WordPress и плъгини\n– Коригиране на грешки в уебсайта\n– Премахване на зловреден софтуер и сигурност",
       "description": "Основната поддръжка е за фирми с един уебсайт на WordPress, които искат надеждна техническа основа, без да се налага сами да решават всеки проблем.\n\nНие наблюдаваме вашия сайт денонощно, създаваме ежедневни резервни копия и поддържаме WordPress и плъгините актуални. Ние също така коригираме грешки, премахваме злонамерен софтуер и прилагаме практически мерки за сигурност, за да поддържаме вашия уебсайт достъпен и защитен.\n\nTripleZero iT обработва инцидентите внимателно, проверява сайта след възстановяване и помага за намаляване на бъдещия риск. Можете да се съсредоточите върху бизнеса си, докато ние се грижим за неговата техническа непрекъснатост."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Стандартна поддръжка",
       "shortDescription": "Какво можете да очаквате?\n– 2 уебсайта\n– 24/7 наблюдение и поддръжка\n– Ежедневно архивиране\n– Актуализации на WordPress и плъгини\n– Коригиране на грешки в уебсайта\n– Премахване на зловреден софтуер и сигурност\n– Оптимизация на скоростта",
       "description": "Стандартната поддръжка подхожда на организации с до два уебсайта на WordPress, които се нуждаят от ежедневна поддръжка, както и внимание към скоростта и непрекъснатостта.\n\nПолучавате 24/7 наблюдение, ежедневно архивиране, актуализации, разрешаване на грешки, премахване на зловреден софтуер и грижа за сигурността. Ние също така оптимизираме кеширането, изображенията и кода, където това подобрява ефективността на вашите уебсайтове.\n\nTripleZero iT работи проактивно: маркираме проблеми, решаваме технически проблеми с фокус и поддържаме вашите уебсайтове стабилни за посетители и администратори."
@@ -1358,12 +1358,12 @@
     }
   },
   "hr": {
-    "basic-support": {
+    "pro-support": {
       "name": "S - osnovna podrška",
       "shortDescription": "Što možete očekivati?\n– 1 web stranica\n– 24/7 praćenje i podrška\n– Dnevne sigurnosne kopije\n– Ažuriranja WordPressa i dodataka\n– Ispravite pogreške na web stranici\n– Uklanjanje zlonamjernog softvera i sigurnost",
       "description": "Osnovna podrška namijenjena je tvrtkama s jednim WordPress web mjestom koje žele pouzdanu tehničku osnovu bez potrebe da same rješavaju svaki problem.\n\nPratimo vašu stranicu 24 sata dnevno, svakodnevno stvaramo sigurnosne kopije i održavamo WordPress i dodatke ažuriranima. Također ispravljamo pogreške, uklanjamo zlonamjerni softver i primjenjujemo praktične sigurnosne mjere kako bi vaše web mjesto bilo dostupno i zaštićeno.\n\nTripleZero iT pažljivo rješava incidente, provjerava mjesto nakon oporavka i pomaže smanjiti budući rizik. Možete se usredotočiti na svoje poslovanje dok mi brinemo o njegovom tehničkom kontinuitetu."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Standardna podrška za podatke:",
       "shortDescription": "Što možete očekivati?\n– 2 web stranice\n– 24/7 praćenje i podrška\n– Dnevne sigurnosne kopije\n– Ažuriranja WordPressa i dodataka\n– Ispravite pogreške na web stranici\n– Uklanjanje zlonamjernog softvera i sigurnost\n– Optimizacija brzine",
       "description": "Standardna podrška odgovara organizacijama s do dvije WordPress web stranice kojima je potrebno svakodnevno održavanje, kao i pozornost na brzinu i kontinuitet.\n\nDobivate nadzor 24/7, dnevne sigurnosne kopije, ažuriranja, rješavanje pogrešaka, uklanjanje zlonamjernog softvera i brigu o sigurnosti. Također optimiziramo predmemoriju, slike i kôd tamo gdje to poboljšava performanse vaših web stranica.\n\nTripleZero iT radi proaktivno: označavamo probleme, fokusirano rješavamo tehničke probleme i održavamo vaše web stranice stabilnima za posjetitelje i administratore."
@@ -1455,12 +1455,12 @@
     }
   },
   "sr": {
-    "basic-support": {
+    "pro-support": {
       "name": "Osnovna podrška",
       "shortDescription": "Шта можете очекивати?\n– 1 веб страница\n– Праћење и подршка 24/7\n– Свакодневне резервне копије\n– Ажурирања ВордПресс-а и додатака\n– Исправите грешке на веб локацији\n– Уклањање злонамерног софтвера и безбедност",
       "description": "Основна подршка је за предузећа са једном ВордПресс веб локацијом која желе поуздану техничку основу без потребе да сами решавају сваки проблем.\n\nНадгледамо вашу веб локацију 24 сата дневно, креирамо дневне резервне копије и одржавамо ВордПресс и додатке актуелним. Такође поправљамо грешке, уклањамо злонамерни софтвер и примењујемо практичне безбедносне мере да би ваша веб локација била доступна и заштићена.\n\nТриплеЗеро иТ пажљиво поступа са инцидентима, верификује локацију након опоравка и помаже у смањењу ризика у будућности. Можете се фокусирати на своје пословање док ми бринемо о његовом техничком континуитету."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Standardna podrška",
       "shortDescription": "Шта можете очекивати?\n– 2 веб странице\n– Праћење и подршка 24/7\n– Свакодневне резервне копије\n– Ажурирања ВордПресс-а и додатака\n– Исправите грешке на веб локацији\n– Уклањање злонамерног софтвера и безбедност\n– Оптимизација брзине",
       "description": "Стандардна подршка одговара организацијама са до две ВордПресс веб локације којима је потребно свакодневно одржавање, као и пажња на брзину и континуитет.\n\nДобијате надзор 24/7, дневне резервне копије, ажурирања, решавање грешака, уклањање малвера и бригу о безбедности. Такође оптимизујемо кеширање, слике и код где то побољшава перформансе ваших веб локација.\n\nТриплеЗеро иТ ради проактивно: обележавамо проблеме, решавамо техничке проблеме са фокусом и одржавамо ваше веб странице стабилним за посетиоце и администраторе."
@@ -1552,12 +1552,12 @@
     }
   },
   "bs": {
-    "basic-support": {
+    "pro-support": {
       "name": "Osnovna podrška",
       "shortDescription": "Šta možete očekivati?\n– 1 web stranica\n– Praćenje i podrška 24/7\n– Svakodnevne sigurnosne kopije\n– Ažuriranja WordPress-a i dodataka\n– Ispravite greške web stranice\n– Uklanjanje zlonamjernog softvera i sigurnost",
       "description": "Osnovna podrška je za preduzeća s jednom WordPress web lokacijom koja žele pouzdanu tehničku osnovu bez potrebe da sami rješavaju svaki problem.\n\nPratimo vašu web lokaciju 24 sata dnevno, kreiramo dnevne sigurnosne kopije i održavamo WordPress i dodatke ažurnim. Također ispravljamo greške, uklanjamo zlonamjerni softver i primjenjujemo praktične sigurnosne mjere kako bi vaša web stranica bila dostupna i zaštićena.\n\nTripleZero iT pažljivo postupa sa incidentima, provjerava lokaciju nakon oporavka i pomaže u smanjenju rizika u budućnosti. Možete se fokusirati na svoje poslovanje dok mi brinemo o njegovom tehničkom kontinuitetu."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Standardna podrška",
       "shortDescription": "Šta možete očekivati?\n– 2 web stranice\n– Praćenje i podrška 24/7\n– Svakodnevne sigurnosne kopije\n– Ažuriranja WordPress-a i dodataka\n– Ispravite greške web stranice\n– Uklanjanje zlonamjernog softvera i sigurnost\n– Optimizacija brzine",
       "description": "Standardna podrška odgovara organizacijama s do dvije WordPress web stranice kojima je potrebno svakodnevno održavanje, kao i pažnja na brzinu i kontinuitet.\n\nPrimate nadzor 24/7, dnevne sigurnosne kopije, ažuriranja, rješavanje grešaka, uklanjanje zlonamjernog softvera i brigu o sigurnosti. Također optimiziramo keširanje, slike i kod gdje to poboljšava performanse vaših web stranica.\n\nTripleZero iT radi proaktivno: označavamo probleme, rješavamo tehničke probleme sa fokusom i održavamo vaše web stranice stabilnim za posjetitelje i administratore."
@@ -1649,12 +1649,12 @@
     }
   },
   "cnr": {
-    "basic-support": {
+    "pro-support": {
       "name": "Osnovna podrška",
       "shortDescription": "Шта можете очекивати?\n– 1 веб страница\n– Праћење и подршка 24/7\n– Свакодневне резервне копије\n– Ажурирања ВордПресс-а и додатака\n– Исправите грешке на веб локацији\n– Уклањање злонамерног софтвера и безбедност",
       "description": "Основна подршка је за предузећа са једном ВордПресс веб локацијом која желе поуздану техничку основу без потребе да сами решавају сваки проблем.\n\nНадгледамо вашу веб локацију 24 сата дневно, креирамо дневне резервне копије и одржавамо ВордПресс и додатке актуелним. Такође поправљамо грешке, уклањамо злонамерни софтвер и примењујемо практичне безбедносне мере да би ваша веб локација била доступна и заштићена.\n\nТриплеЗеро иТ пажљиво поступа са инцидентима, верификује локацију након опоравка и помаже у смањењу ризика у будућности. Можете се фокусирати на своје пословање док ми бринемо о његовом техничком континуитету."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Standardna podrška",
       "shortDescription": "Шта можете очекивати?\n– 2 веб странице\n– Праћење и подршка 24/7\n– Свакодневне резервне копије\n– Ажурирања ВордПресс-а и додатака\n– Исправите грешке на веб локацији\n– Уклањање злонамерног софтвера и безбедност\n– Оптимизација брзине",
       "description": "Стандардна подршка одговара организацијама са до две ВордПресс веб локације којима је потребно свакодневно одржавање, као и пажња на брзину и континуитет.\n\nДобијате надзор 24/7, дневне резервне копије, ажурирања, решавање грешака, уклањање малвера и бригу о безбедности. Такође оптимизујемо кеширање, слике и код где то побољшава перформансе ваших веб локација.\n\nТриплеЗеро иТ ради проактивно: обележавамо проблеме, решавамо техничке проблеме са фокусом и одржавамо ваше веб странице стабилним за посетиоце и администраторе."
@@ -1746,12 +1746,12 @@
     }
   },
   "sq": {
-    "basic-support": {
+    "pro-support": {
       "name": "Asistenca bazë",
       "shortDescription": "Çfarë mund të presësh?\n– 1 faqe interneti\n– Monitorim dhe mbështetje 24/7\n– Rezervime ditore\n– Përditësimet e WordPress dhe shtojcave\n– Rregulloni gabimet e faqes në internet\n– Heqja e malware dhe siguria",
       "description": "Mbështetja themelore është për bizneset me një uebfaqe të WordPress që duan një bazë teknike të besueshme pa pasur nevojë të zgjidhin vetë çdo çështje.\n\nNe monitorojmë faqen tuaj gjatë gjithë kohës, krijojmë kopje rezervë të përditshme dhe mbajmë WordPress dhe shtojcat aktuale. Ne gjithashtu rregullojmë gabimet, heqim malware dhe zbatojmë masa praktike sigurie për ta mbajtur faqen tuaj të internetit të disponueshme dhe të mbrojtur.\n\nTripleZero iT trajton me kujdes incidentet, verifikon sitin pas rikuperimit dhe ndihmon në reduktimin e rrezikut në të ardhmen. Ju mund të përqendroheni në biznesin tuaj ndërkohë që ne kujdesemi për vazhdimësinë e tij teknike."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Asistencë standarde",
       "shortDescription": "Çfarë mund të presësh?\n– 2 faqe interneti\n– Monitorim dhe mbështetje 24/7\n– Rezervime ditore\n– Përditësimet e WordPress dhe shtojcave\n– Rregulloni gabimet e faqes në internet\n– Heqja e malware dhe siguria\n– Optimizimi i shpejtësisë",
       "description": "Mbështetja standarde u përshtatet organizatave me deri në dy faqe interneti të WordPress që kanë nevojë për mirëmbajtje të përditshme, si dhe vëmendje ndaj shpejtësisë dhe vazhdimësisë.\n\nJu merrni monitorim 24/7, kopje rezervë ditore, përditësime, zgjidhje gabimesh, heqje malware dhe kujdes për sigurinë. Ne gjithashtu optimizojmë ruajtjen e memories, imazhet dhe kodin ku përmirëson performancën e faqeve tuaja të internetit.\n\nTripleZero iT funksionon në mënyrë proaktive: ne raportojmë problemet, zgjidhim problemet teknike me fokus dhe i mbajmë faqet tuaja të internetit të qëndrueshme për vizitorët dhe administratorët."
@@ -1843,12 +1843,12 @@
     }
   },
   "mk": {
-    "basic-support": {
+    "pro-support": {
       "name": "Основна поддршка",
       "shortDescription": "Што можете да очекувате?\n– 1 веб-страница\n– 24/7 мониторинг и поддршка\n– Дневни бекап\n– Надградби на WordPress и приклучоци\n– Поправете ги грешките на веб-страницата\n– Отстранување и безбедност на малициозен софтвер",
       "description": "Основната поддршка е за бизниси со една веб-страница на WordPress кои сакаат сигурна техничка основа без да мора сами да го решаваат секое прашање.\n\nНие ја следиме вашата страница деноноќно, создаваме дневни резервни копии и ги одржуваме актуелните WordPress и додатоците. Ние, исто така, поправаме грешки, отстрануваме малициозен софтвер и применуваме практични безбедносни мерки за да ја одржиме вашата веб-страница достапна и заштитена.\n\nTripleZero iT внимателно се справува со инциденти, ја потврдува страницата по опоравувањето и помага да се намали ризикот во иднина. Можете да се фокусирате на вашиот бизнис додека ние се грижиме за неговиот технички континуитет."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Стандардна поддршка",
       "shortDescription": "Што можете да очекувате?\n– 2 веб-страници\n– 24/7 мониторинг и поддршка\n– Дневни бекап\n– Надградби на WordPress и приклучоци\n– Поправете ги грешките на веб-страницата\n– Отстранување и безбедност на малициозен софтвер\n– Оптимизација на брзината",
       "description": "Стандардна поддршка одговара на организации со најмногу две веб-локации на WordPress на кои им е потребно секојдневно одржување, како и внимание на брзината и континуитетот.\n\nДобивате 24/7 мониторинг, дневни бекап, ажурирања, резолуција на грешки, отстранување на малициозен софтвер и безбедносна грижа. Ние исто така го оптимизираме кеширањето, сликите и кодот каде што ги подобрува перформансите на вашите веб-локации.\n\nTripleZero iT работи проактивно: ги означуваме проблемите, ги решаваме техничките проблеми со фокус и ги одржуваме вашите веб-локации стабилни за посетителите и администраторите."
@@ -1940,12 +1940,12 @@
     }
   },
   "lt": {
-    "basic-support": {
+    "pro-support": {
       "name": "Pagrindinė pagalba",
       "shortDescription": "Ko galima tikėtis?\n– 1 svetainė\n– 24/7 stebėjimas ir palaikymas\n- Kasdieninės atsarginės kopijos\n– „WordPress“ ir papildinių atnaujinimai\n- Ištaisykite svetainės klaidas\n- Kenkėjiškų programų pašalinimas ir apsauga",
       "description": "Pagrindinis palaikymas skirtas įmonėms, turinčioms vieną „WordPress“ svetainę, kurioms reikia patikimo techninio pagrindo ir nereikia patiems išspręsti visų problemų.\n\nStebime jūsų svetainę visą parą, kasdien kuriame atsargines kopijas ir nuolat atnaujiname „WordPress“ bei papildinius. Taip pat taisome klaidas, pašaliname kenkėjiškas programas ir taikome praktines saugos priemones, kad jūsų svetainė būtų prieinama ir apsaugota.\n\nTripleZero iT atidžiai tvarko incidentus, patikrina svetainę po atkūrimo ir padeda sumažinti riziką ateityje. Galite sutelkti dėmesį į savo verslą, o mes rūpinamės jo techniniu tęstinumu."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Standartinė pagalba",
       "shortDescription": "Ko galima tikėtis?\n– 2 svetainės\n– 24/7 stebėjimas ir palaikymas\n- Kasdieninės atsarginės kopijos\n– „WordPress“ ir papildinių atnaujinimai\n- Ištaisykite svetainės klaidas\n- Kenkėjiškų programų pašalinimas ir apsauga\n– Greičio optimizavimas",
       "description": "Standartinis palaikymas tinka organizacijoms, turinčioms iki dviejų „WordPress“ svetainių, kurioms reikia kasdienės priežiūros, taip pat dėmesio greitumui ir tęstinumui.\n\nJūs gaunate stebėjimą 24 valandas per parą, kasdienę atsargines kopijas, atnaujinimus, klaidų sprendimą, kenkėjiškų programų pašalinimą ir saugos priežiūrą. Taip pat optimizuojame talpyklą, vaizdus ir kodą, kai tai pagerina jūsų svetainių našumą.\n\nTripleZero iT veikia aktyviai: pažymime problemas, sprendžiame technines problemas ir užtikriname, kad jūsų svetainės būtų stabilios lankytojams ir administratoriams."
@@ -2037,15 +2037,15 @@
     }
   },
   "da": {
-    "basic-support": {
+    "pro-support": {
       "name": "Basissupport",
       "shortDescription": "Hvad kan du forvente?\n– 1 hjemmeside\n– 24/7 overvågning og support\n– Daglige backups\n– WordPress og plugin-opdateringer\n– Ret webstedsfejl\n– Malwarefjernelse og sikkerhed",
       "description": "Grundlæggende support er for virksomheder med ét WordPress-websted, der ønsker et pålideligt teknisk fundament uden selv at skulle løse alle problemer.\n\nVi overvåger dit websted døgnet rundt, laver daglige backups og holder WordPress og plugins opdaterede. Vi retter også fejl, fjerner malware og anvender praktiske sikkerhedsforanstaltninger for at holde din hjemmeside tilgængelig og beskyttet.\n\nTripleZero iT håndterer hændelser omhyggeligt, verificerer webstedet efter gendannelse og hjælper med at reducere fremtidig risiko. Du kan fokusere på din virksomhed, mens vi passer på dens tekniske kontinuitet."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Standardsupport",
       "shortDescription": "Hvad kan du forvente?\n– 2 hjemmesider\n– 24/7 overvågning og support\n– Daglige backups\n– WordPress og plugin-opdateringer\n– Ret webstedsfejl\n– Malwarefjernelse og sikkerhed\n– Hastighedsoptimering",
-      "description": "Standard Support passer til organisationer med op til to WordPress-websteder, der har brug for daglig vedligeholdelse samt opmærksomhed på hastighed og kontinuitet.\n\nDu modtager overvågning døgnet rundt, daglige backups, opdateringer, fejlløsning, fjernelse af malware og sikkerhedspleje. Vi optimerer også caching, billeder og kode, hvor det forbedrer din hjemmesides ydeevne.\n\nTripleZero iT arbejder proaktivt: Vi markerer problemer, løser tekniske problemer med fokus og holder dine hjemmesider stabile for besøgende og administratorer."
+      "description": "Double Support passer til organisationer med op til to WordPress-websteder, der har brug for daglig vedligeholdelse samt opmærksomhed på hastighed og kontinuitet.\n\nDu modtager overvågning døgnet rundt, daglige backups, opdateringer, fejlløsning, fjernelse af malware og sikkerhedspleje. Vi optimerer også caching, billeder og kode, hvor det forbedrer din hjemmesides ydeevne.\n\nTripleZero iT arbejder proaktivt: Vi markerer problemer, løser tekniske problemer med fokus og holder dine hjemmesider stabile for besøgende og administratorer."
     },
     "premium-support": {
       "name": "Premium-support",
@@ -2134,12 +2134,12 @@
     }
   },
   "sv": {
-    "basic-support": {
+    "pro-support": {
       "name": "Grundläggande support",
       "shortDescription": "Vad kan du förvänta dig?\n– 1 webbplats\n– 24/7 övervakning och support\n– Dagliga backuper\n– WordPress och plugin-uppdateringar\n– Åtgärda webbplatsfel\n– Borttagning av skadlig programvara och säkerhet",
-      "description": "Basic Support är för företag med en WordPress-webbplats som vill ha en pålitlig teknisk grund utan att behöva lösa alla problem själva.\n\nVi övervakar din sida dygnet runt, skapar dagliga säkerhetskopior och håller WordPress och plugins aktuella. Vi åtgärdar även fel, tar bort skadlig programvara och tillämpar praktiska säkerhetsåtgärder för att hålla din webbplats tillgänglig och skyddad.\n\nTripleZero iT hanterar incidenter noggrant, verifierar platsen efter återställning och hjälper till att minska framtida risker. Du kan fokusera på ditt företag samtidigt som vi ser till dess tekniska kontinuitet."
+      "description": "Pro Support är för företag med en WordPress-webbplats som vill ha en pålitlig teknisk grund utan att behöva lösa alla problem själva.\n\nVi övervakar din sida dygnet runt, skapar dagliga säkerhetskopior och håller WordPress och plugins aktuella. Vi åtgärdar även fel, tar bort skadlig programvara och tillämpar praktiska säkerhetsåtgärder för att hålla din webbplats tillgänglig och skyddad.\n\nTripleZero iT hanterar incidenter noggrant, verifierar platsen efter återställning och hjälper till att minska framtida risker. Du kan fokusera på ditt företag samtidigt som vi ser till dess tekniska kontinuitet."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Standardstöd",
       "shortDescription": "Vad kan du förvänta dig?\n– 2 hemsidor\n– 24/7 övervakning och support\n– Dagliga backuper\n– WordPress och plugin-uppdateringar\n– Åtgärda webbplatsfel\n– Borttagning av skadlig programvara och säkerhet\n– Hastighetsoptimering",
       "description": "Standardsupport passar organisationer med upp till två WordPress-webbplatser som behöver dagligt underhåll samt uppmärksamhet på hastighet och kontinuitet.\n\nDu får övervakning dygnet runt, dagliga säkerhetskopior, uppdateringar, fellösning, borttagning av skadlig programvara och säkerhetsvård. Vi optimerar även cachning, bilder och kod där det förbättrar dina webbplatsers prestanda.\n\nTripleZero iT arbetar proaktivt: vi flaggar problem, löser tekniska problem med fokus och håller dina webbplatser stabila för besökare och administratörer."
@@ -2231,15 +2231,15 @@
     }
   },
   "no": {
-    "basic-support": {
+    "pro-support": {
       "name": "Grunnleggende støtte",
       "shortDescription": "Hva kan du forvente?\n– 1 nettside\n– 24/7 overvåking og support\n– Daglige sikkerhetskopier\n– WordPress og plugin-oppdateringer\n– Rett opp nettstedsfeil\n– Fjerning av skadelig programvare og sikkerhet",
       "description": "Grunnleggende støtte er for bedrifter med ett WordPress-nettsted som ønsker et pålitelig teknisk grunnlag uten å måtte løse alle problemer selv.\n\nVi overvåker nettstedet ditt døgnet rundt, lager daglige sikkerhetskopier og holder WordPress og plugins oppdatert. Vi fikser også feil, fjerner skadelig programvare og bruker praktiske sikkerhetstiltak for å holde nettstedet ditt tilgjengelig og beskyttet.\n\nTripleZero iT håndterer hendelser nøye, verifiserer nettstedet etter gjenoppretting og bidrar til å redusere fremtidig risiko. Du kan fokusere på virksomheten din mens vi tar vare på den tekniske kontinuiteten."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Standard støtte",
       "shortDescription": "Hva kan du forvente?\n– 2 nettsider\n– 24/7 overvåking og support\n– Daglige sikkerhetskopier\n– WordPress og plugin-oppdateringer\n– Rett opp nettstedsfeil\n– Fjerning av skadelig programvare og sikkerhet\n– Hastighetsoptimalisering",
-      "description": "Standard Support passer organisasjoner med opptil to WordPress-nettsteder som trenger daglig vedlikehold samt oppmerksomhet på hastighet og kontinuitet.\n\nDu mottar 24/7 overvåking, daglige sikkerhetskopier, oppdateringer, feilløsning, fjerning av skadelig programvare og sikkerhetshjelp. Vi optimaliserer også caching, bilder og kode der det forbedrer ytelsen til nettstedet ditt.\n\nTripleZero iT jobber proaktivt: vi flagger problemer, løser tekniske problemer med fokus og holder nettsidene dine stabile for besøkende og administratorer."
+      "description": "Double Support passer organisasjoner med opptil to WordPress-nettsteder som trenger daglig vedlikehold samt oppmerksomhet på hastighet og kontinuitet.\n\nDu mottar 24/7 overvåking, daglige sikkerhetskopier, oppdateringer, feilløsning, fjerning av skadelig programvare og sikkerhetshjelp. Vi optimaliserer også caching, bilder og kode der det forbedrer ytelsen til nettstedet ditt.\n\nTripleZero iT jobber proaktivt: vi flagger problemer, løser tekniske problemer med fokus og holder nettsidene dine stabile for besøkende og administratorer."
     },
     "premium-support": {
       "name": "Premium Support",
@@ -2328,15 +2328,15 @@
     }
   },
   "fi": {
-    "basic-support": {
+    "pro-support": {
       "name": "Perustuki",
       "shortDescription": "Mitä voit odottaa?\n– 1 verkkosivusto\n– 24/7 seuranta ja tuki\n– Päivittäiset varmuuskopiot\n– WordPress- ja laajennuspäivitykset\n- Korjaa verkkosivuston virheet\n- Haittaohjelmien poisto ja suojaus",
       "description": "Perustuki on tarkoitettu yrityksille, joilla on yksi WordPress-verkkosivusto ja jotka haluavat luotettavan teknisen perustan ilman, että heidän tarvitsee ratkaista kaikkia ongelmia itse.\n\nValvomme sivustoasi kellon ympäri, luomme päivittäisiä varmuuskopioita ja pidämme WordPressin ja laajennukset ajan tasalla. Korjaamme myös virheet, poistamme haittaohjelmat ja käytämme käytännöllisiä turvatoimia pitääksemme sivustosi saatavilla ja suojattuna.\n\nTripleZero iT käsittelee tapaukset huolellisesti, tarkistaa sivuston palautumisen jälkeen ja auttaa vähentämään tulevaa riskiä. Voit keskittyä yritykseesi, kun me huolehdimme sen teknisestä jatkuvuudesta."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Vakiotuki",
       "shortDescription": "Mitä voit odottaa?\n– 2 verkkosivustoa\n– 24/7 seuranta ja tuki\n– Päivittäiset varmuuskopiot\n– WordPress- ja laajennuspäivitykset\n- Korjaa verkkosivuston virheet\n- Haittaohjelmien poisto ja suojaus\n– Nopeuden optimointi",
-      "description": "Standard Support sopii organisaatioille, joilla on jopa kaksi WordPress-sivustoa, jotka tarvitsevat päivittäistä ylläpitoa sekä huomiota nopeuteen ja jatkuvuuteen.\n\nSaat 24/7 valvontaa, päivittäisiä varmuuskopioita, päivityksiä, virheenratkaisua, haittaohjelmien poistoa ja tietoturvaa. Optimoimme myös välimuistin, kuvat ja koodin, kun se parantaa verkkosivustojesi suorituskykyä.\n\nTripleZero iT toimii ennakoivasti: ilmoitamme ongelmista, ratkaisemme tekniset ongelmat tarkasti ja pidämme sivustosi vakaina vierailijoille ja ylläpitäjille."
+      "description": "Double Support sopii organisaatioille, joilla on jopa kaksi WordPress-sivustoa, jotka tarvitsevat päivittäistä ylläpitoa sekä huomiota nopeuteen ja jatkuvuuteen.\n\nSaat 24/7 valvontaa, päivittäisiä varmuuskopioita, päivityksiä, virheenratkaisua, haittaohjelmien poistoa ja tietoturvaa. Optimoimme myös välimuistin, kuvat ja koodin, kun se parantaa verkkosivustojesi suorituskykyä.\n\nTripleZero iT toimii ennakoivasti: ilmoitamme ongelmista, ratkaisemme tekniset ongelmat tarkasti ja pidämme sivustosi vakaina vierailijoille ja ylläpitäjille."
     },
     "premium-support": {
       "name": "Premium-tuki",
@@ -2425,12 +2425,12 @@
     }
   },
   "uk": {
-    "basic-support": {
+    "pro-support": {
       "name": "Базова підтримка",
       "shortDescription": "Чого можна очікувати?\n– 1 сайт\n– Цілодобовий моніторинг і підтримка\n– Щоденне резервне копіювання\n– Оновлення WordPress і плагінів\n– Виправлення помилок веб-сайту\n– Видалення зловмисного програмного забезпечення та безпека",
       "description": "Базова підтримка призначена для компаній з одним веб-сайтом WordPress, яким потрібна надійна технічна основа без необхідності самостійно вирішувати всі проблеми.\n\nМи цілодобово контролюємо ваш сайт, створюємо щоденні резервні копії та підтримуємо актуальність WordPress і плагінів. Ми також виправляємо помилки, видаляємо зловмисне програмне забезпечення та застосовуємо практичні заходи безпеки, щоб ваш веб-сайт був доступним і захищеним.\n\nTripleZero iT ретельно обробляє інциденти, перевіряє сайт після відновлення та допомагає зменшити майбутні ризики. Ви можете зосередитися на своєму бізнесі, а ми піклуємося про його технічну безперебійність."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Стандартна підтримка",
       "shortDescription": "Чого можна очікувати?\n– 2 сайти\n– Цілодобовий моніторинг і підтримка\n– Щоденне резервне копіювання\n– Оновлення WordPress і плагінів\n– Виправлення помилок веб-сайту\n– Видалення зловмисного програмного забезпечення та безпека\n– Оптимізація швидкості",
       "description": "Стандартна підтримка підходить організаціям із двома веб-сайтами WordPress, які потребують щоденного обслуговування, а також уваги до швидкості та безперервності.\n\nВи отримуєте цілодобовий моніторинг, щоденне резервне копіювання, оновлення, вирішення помилок, видалення зловмисного програмного забезпечення та підтримку безпеки. Ми також оптимізуємо кешування, зображення та код там, де це покращує ефективність ваших веб-сайтів.\n\nTripleZero iT працює проактивно: ми позначаємо проблеми, зосереджено вирішуємо технічні проблеми та підтримуємо стабільність ваших веб-сайтів для відвідувачів і адміністраторів."
@@ -2522,12 +2522,12 @@
     }
   },
   "ru": {
-    "basic-support": {
+    "pro-support": {
       "name": "Базовая поддержка",
       "shortDescription": "Чего можно ожидать?\n– 1 веб-сайт\n– Круглосуточный мониторинг и поддержка\n– Ежедневное резервное копирование\n– Обновления WordPress и плагинов\n- Исправить ошибки сайта\n– Удаление вредоносных программ и безопасность",
       "description": "Базовая поддержка предназначена для компаний с одним веб-сайтом WordPress, которым нужна надежная техническая основа без необходимости решать все проблемы самостоятельно.\n\nМы круглосуточно следим за вашим сайтом, создаем ежедневные резервные копии и поддерживаем актуальность WordPress и плагинов. Мы также исправляем ошибки, удаляем вредоносное ПО и применяем практические меры безопасности, чтобы ваш сайт был доступен и защищен.\n\nTripleZero iT тщательно обрабатывает инциденты, проверяет сайт после восстановления и помогает снизить будущие риски. Вы можете сосредоточиться на своем бизнесе, а мы позаботимся о его технической непрерывности."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Стандартная поддержка",
       "shortDescription": "Чего можно ожидать?\n– 2 веб-сайта\n– Круглосуточный мониторинг и поддержка\n– Ежедневное резервное копирование\n– Обновления WordPress и плагинов\n- Исправить ошибки сайта\n– Удаление вредоносных программ и безопасность\n– Оптимизация скорости",
       "description": "Стандартная поддержка подходит организациям, имеющим до двух веб-сайтов WordPress, которым требуется ежедневное обслуживание, а также внимание к скорости и непрерывности.\n\nВы получаете круглосуточный мониторинг, ежедневное резервное копирование, обновления, устранение ошибок, удаление вредоносных программ и обеспечение безопасности. Мы также оптимизируем кеширование, изображения и код, что повышает производительность ваших веб-сайтов.\n\nTripleZero iT работает проактивно: мы отмечаем проблемы, целенаправленно решаем технические проблемы и поддерживаем стабильность ваших веб-сайтов для посетителей и администраторов."
@@ -2619,12 +2619,12 @@
     }
   },
   "tr": {
-    "basic-support": {
+    "pro-support": {
       "name": "Temel Destek",
       "shortDescription": "Ne bekleyebilirsiniz?\n– 1 web sitesi\n– 7/24 izleme ve destek\n– Günlük yedeklemeler\n– WordPress ve eklenti güncellemeleri\n– Web sitesi hatalarını düzeltin\n– Kötü amaçlı yazılımların kaldırılması ve güvenliği",
       "description": "Temel Destek, her sorunu kendileri çözmek zorunda kalmadan güvenilir bir teknik temel isteyen, tek bir WordPress web sitesine sahip işletmeler içindir.\n\nSitenizi günün her saati izliyor, günlük yedeklemeler oluşturuyor ve WordPress ile eklentileri güncel tutuyoruz. Ayrıca web sitenizin kullanılabilir ve korunmasını sağlamak için hataları düzeltir, kötü amaçlı yazılımları kaldırır ve pratik güvenlik önlemleri uygularız.\n\nTripleZero iT olayları dikkatli bir şekilde ele alır, kurtarma sonrasında siteyi doğrular ve gelecekteki risklerin azaltılmasına yardımcı olur. Biz teknik devamlılığıyla ilgilenirken siz de işinize odaklanabilirsiniz."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Standart Destek",
       "shortDescription": "Ne bekleyebilirsiniz?\n– 2 web sitesi\n– 7/24 izleme ve destek\n– Günlük yedeklemeler\n– WordPress ve eklenti güncellemeleri\n– Web sitesi hatalarını düzeltin\n– Kötü amaçlı yazılımların kaldırılması ve güvenliği\n– Hız optimizasyonu",
       "description": "Standart Destek, günlük bakımın yanı sıra hız ve sürekliliğe dikkat edilmesi gereken en fazla iki WordPress web sitesine sahip kuruluşlara uygundur.\n\n7/24 izleme, günlük yedeklemeler, güncellemeler, hata çözümü, kötü amaçlı yazılımların kaldırılması ve güvenlik bakımı alırsınız. Ayrıca web sitelerinizin performansını iyileştirecek şekilde önbelleğe almayı, resimleri ve kodu da optimize ediyoruz.\n\nTripleZero iT proaktif olarak çalışır: sorunları işaretler, teknik sorunları odaklanarak çözer ve web sitelerinizi ziyaretçiler ve yöneticiler için istikrarlı tutarız."
@@ -2716,12 +2716,12 @@
     }
   },
   "he": {
-    "basic-support": {
+    "pro-support": {
       "name": "תמיכה בסיסית",
       "shortDescription": "למה אתה יכול לצפות?\n– אתר 1\n- ניטור ותמיכה 24/7\n- גיבויים יומיים\n- עדכוני וורדפרס ותוספים\n- תקן שגיאות באתר\n- הסרת תוכנות זדוניות ואבטחה",
       "description": "תמיכה בסיסית מיועדת לעסקים עם אתר וורדפרס אחד שרוצים בסיס טכני אמין מבלי שהם צריכים לפתור כל בעיה בעצמם.\n\nאנו עוקבים אחר האתר שלך מסביב לשעון, יוצרים גיבויים יומיים ושומרים על וורדפרס ותוספים מעודכנים. אנו גם מתקנים שגיאות, מסירים תוכנות זדוניות ומיישמים אמצעי אבטחה מעשיים כדי לשמור על האתר שלך זמין ומוגן.\n\nTripleZero iT מטפל בתקריות בזהירות, מאמת את האתר לאחר התאוששות ומסייע בהפחתת סיכון עתידי. אתה יכול להתמקד בעסק שלך בזמן שאנו דואגים להמשכיות הטכנית שלו."
     },
-    "standard-support": {
+    "double-support": {
       "name": "תמיכה סטנדרטית",
       "shortDescription": "למה אתה יכול לצפות?\n– 2 אתרי אינטרנט\n- ניטור ותמיכה 24/7\n- גיבויים יומיים\n- עדכוני וורדפרס ותוספים\n- תקן שגיאות באתר\n- הסרת תוכנות זדוניות ואבטחה\n- מיטוב מהירות",
       "description": "תמיכה סטנדרטית מתאימה לארגונים עם עד שני אתרי וורדפרס הזקוקים לתחזוקה יומיומית וכן לתשומת לב למהירות ולהמשכיות.\n\nאתה מקבל ניטור 24/7, גיבויים יומיים, עדכונים, פתרון שגיאות, הסרת תוכנות זדוניות וטיפול אבטחה. אנו גם מבצעים אופטימיזציה של מטמון, תמונות וקוד כאשר זה משפר את ביצועי האתרים שלך.\n\nTripleZero iT פועל באופן יזום: אנו מסמנים בעיות, פותרים בעיות טכניות תוך מיקוד ושומרים על יציבות אתרי האינטרנט שלך עבור מבקרים ומנהלי מערכת."
@@ -2813,12 +2813,12 @@
     }
   },
   "ar": {
-    "basic-support": {
+    "pro-support": {
       "name": "الدعم الأساسي",
       "shortDescription": "ماذا يمكنك أن تتوقع؟\n- 1 موقع الكتروني\n- مراقبة ودعم على مدار 24 ساعة طوال أيام الأسبوع\n– النسخ الاحتياطية اليومية\n– تحديثات ووردبريس والمكونات الإضافية\n– إصلاح أخطاء الموقع\n– إزالة البرامج الضارة والأمن",
       "description": "الدعم الأساسي مخصص للشركات التي لديها موقع ويب WordPress واحد وتريد أساسًا تقنيًا يمكن الاعتماد عليه دون الحاجة إلى حل كل مشكلة بنفسها.\n\nنحن نراقب موقعك على مدار الساعة وننشئ نسخًا احتياطية يومية ونحافظ على تحديث WordPress والمكونات الإضافية. نقوم أيضًا بإصلاح الأخطاء وإزالة البرامج الضارة وتطبيق إجراءات أمنية عملية للحفاظ على موقع الويب الخاص بك متاحًا ومحميًا.\n\nيتعامل TripleZero iT مع الحوادث بعناية، ويتحقق من الموقع بعد التعافي ويساعد في تقليل المخاطر المستقبلية. يمكنك التركيز على عملك بينما نعتني باستمراريته الفنية."
     },
-    "standard-support": {
+    "double-support": {
       "name": "الدعم القياسي",
       "shortDescription": "ماذا يمكنك أن تتوقع؟\n– 2 مواقع\n- مراقبة ودعم على مدار 24 ساعة طوال أيام الأسبوع\n– النسخ الاحتياطية اليومية\n– تحديثات ووردبريس والمكونات الإضافية\n– إصلاح أخطاء الموقع\n– إزالة البرامج الضارة والأمن\n- تحسين السرعة",
       "description": "يناسب الدعم القياسي المؤسسات التي لديها ما يصل إلى موقعين من مواقع WordPress التي تحتاج إلى صيانة يومية بالإضافة إلى الاهتمام بالسرعة والاستمرارية.\n\nتتلقى مراقبة على مدار الساعة طوال أيام الأسبوع ونسخًا احتياطية يومية وتحديثات وحل الأخطاء وإزالة البرامج الضارة والرعاية الأمنية. نقوم أيضًا بتحسين التخزين المؤقت والصور والتعليمات البرمجية حيث تعمل على تحسين أداء مواقع الويب الخاصة بك.\n\nيعمل TripleZero iT بشكل استباقي: فنحن نحدد المشكلات ونحل المشكلات الفنية مع التركيز ونحافظ على استقرار مواقع الويب الخاصة بك للزوار والمسؤولين."
@@ -2910,12 +2910,12 @@
     }
   },
   "ka": {
-    "basic-support": {
+    "pro-support": {
       "name": "ძირითადი მხარდაჭერა",
       "shortDescription": "რას შეიძლება ველოდოთ?\n- 1 საიტი\n- 24/7 მონიტორინგი და მხარდაჭერა\n- ყოველდღიური სარეზერვო ასლები\n– WordPress და მოდულის განახლებები\n- შეასწორეთ ვებგვერდის შეცდომები\n– მავნე პროგრამების მოცილება და უსაფრთხოება",
       "description": "ძირითადი მხარდაჭერა განკუთვნილია ბიზნესებისთვის, რომლებსაც აქვთ WordPress ვებსაიტი, რომლებსაც სურთ საიმედო ტექნიკური საფუძველი ყველა საკითხის თავად გადაჭრის გარეშე.\n\nჩვენ ვაკვირდებით თქვენს საიტს მთელი საათის განმავლობაში, ვქმნით ყოველდღიურ სარეზერვო ასლებს და ვაგრძელებთ WordPress-ისა და დანამატების მიმდინარეობას. ჩვენ ასევე ვასწორებთ შეცდომებს, ვხსნით მავნე პროგრამას და ვიყენებთ უსაფრთხოების პრაქტიკულ ზომებს თქვენი ვებსაიტის ხელმისაწვდომი და დაცული შესანარჩუნებლად.\n\nTripleZero iT ყურადღებით ამუშავებს ინციდენტებს, ამოწმებს საიტს აღდგენის შემდეგ და ეხმარება მომავალში რისკის შემცირებაში. თქვენ შეგიძლიათ ფოკუსირება მოახდინოთ თქვენს ბიზნესზე, სანამ ჩვენ ვზრუნავთ მის ტექნიკურ უწყვეტობაზე."
     },
-    "standard-support": {
+    "double-support": {
       "name": "სტანდარტული მხარდაჭერა",
       "shortDescription": "რას შეიძლება ველოდოთ?\n- 2 საიტი\n- 24/7 მონიტორინგი და მხარდაჭერა\n- ყოველდღიური სარეზერვო ასლები\n– WordPress და მოდულის განახლებები\n- შეასწორეთ ვებგვერდის შეცდომები\n– მავნე პროგრამების მოცილება და უსაფრთხოება\n- სიჩქარის ოპტიმიზაცია",
       "description": "სტანდარტული მხარდაჭერა შეესაბამება ორგანიზაციებს, რომლებსაც აქვთ WordPress-ის ორი ვებსაიტი, რომლებსაც სჭირდებათ ყოველდღიური მოვლა, ასევე ყურადღება სისწრაფესა და უწყვეტობაზე.\n\nთქვენ იღებთ 24/7 მონიტორინგს, ყოველდღიურ სარეზერვო ასლებს, განახლებებს, შეცდომების გადაჭრას, მავნე პროგრამების მოცილებას და უსაფრთხოების დაცვას. ჩვენ ასევე ვახდენთ ქეშირების, სურათების და კოდის ოპტიმიზაციას, სადაც ის აუმჯობესებს თქვენი ვებსაიტების მუშაობას.\n\nTripleZero iT მუშაობს პროაქტიულად: ჩვენ ვნიშნავთ საკითხებს, ვწყვეტთ ტექნიკურ პრობლემებს ფოკუსით და ვინარჩუნებთ თქვენს ვებსაიტებს სტაბილურად ვიზიტორებისთვის და ადმინისტრატორებისთვის."
@@ -3007,12 +3007,12 @@
     }
   },
   "hy": {
-    "basic-support": {
+    "pro-support": {
       "name": "Հիմնական աջակցություն",
       "shortDescription": "Ինչ կարող եք ակնկալել:\n- 1 կայք\n- 24/7 մոնիտորինգ և աջակցություն\n- Ամենօրյա կրկնօրինակում\n– WordPress-ի և plugin-ի թարմացումներ\n- Ուղղել կայքի սխալները\n- Չարամիտ ծրագրերի հեռացում և անվտանգություն",
       "description": "Հիմնական աջակցությունը նախատեսված է մեկ WordPress կայք ունեցող բիզնեսների համար, որոնք ցանկանում են հուսալի տեխնիկական հիմք ունենալ՝ առանց յուրաքանչյուր խնդիր ինքնուրույն լուծելու:\n\nՄենք վերահսկում ենք ձեր կայքը շուրջօրյա, ստեղծում ենք ամենօրյա կրկնօրինակներ և պահում ենք WordPress-ը և պլագինները ընթացիկ: Մենք նաև ուղղում ենք սխալները, հեռացնում չարամիտ ծրագրերը և կիրառում անվտանգության գործնական միջոցներ՝ ձեր կայքը հասանելի և պաշտպանված պահելու համար:\n\nTripleZero iT-ը զգույշ է վերաբերվում միջադեպերին, ստուգում է կայքը վերականգնումից հետո և օգնում է նվազեցնել ապագա ռիսկերը: Դուք կարող եք կենտրոնանալ ձեր բիզնեսի վրա, մինչ մենք հետևում ենք դրա տեխնիկական շարունակականությանը:"
     },
-    "standard-support": {
+    "double-support": {
       "name": "Ստանդարտ աջակցություն",
       "shortDescription": "Ինչ կարող եք ակնկալել:\n- 2 կայք\n- 24/7 մոնիտորինգ և աջակցություն\n- Ամենօրյա կրկնօրինակում\n– WordPress-ի և plugin-ի թարմացումներ\n- Ուղղել կայքի սխալները\n- Չարամիտ ծրագրերի հեռացում և անվտանգություն\n- Արագության օպտիմիզացում",
       "description": "Ստանդարտ աջակցությունը համապատասխանում է մինչև երկու WordPress կայք ունեցող կազմակերպություններին, որոնք ամենօրյա սպասարկման կարիք ունեն, ինչպես նաև ուշադրություն արագության և շարունակականության վրա:\n\nԴուք ստանում եք 24/7 մոնիտորինգ, ամենօրյա կրկնօրինակումներ, թարմացումներ, սխալների լուծում, չարամիտ ծրագրերի հեռացում և անվտանգության խնամք: Մենք նաև օպտիմիզացնում ենք քեշավորումը, պատկերները և ծածկագիրը, որտեղ այն բարելավում է ձեր վեբ կայքերի աշխատանքը:\n\nTripleZero iT-ն աշխատում է ակտիվորեն. մենք նշում ենք խնդիրները, լուծում տեխնիկական խնդիրները կենտրոնացվածությամբ և ձեր վեբկայքերը կայուն են պահում այցելուների և ադմինիստրատորների համար:"
@@ -3104,12 +3104,12 @@
     }
   },
   "az": {
-    "basic-support": {
+    "pro-support": {
       "name": "Əsas Dəstək",
       "shortDescription": "Nə gözləmək olar?\n– 1 sayt\n- 24/7 monitorinq və dəstək\n- Gündəlik ehtiyat nüsxələri\n– WordPress və plagin yeniləmələri\n- Veb sayt səhvlərini düzəldin\n- Zərərli proqramların çıxarılması və təhlükəsizliyi",
       "description": "Əsas Dəstək, hər bir problemi özləri həll etmədən etibarlı texniki təməl istəyən bir WordPress veb saytı olan bizneslər üçündür.\n\nSaytınızı gecə-gündüz izləyirik, gündəlik ehtiyat nüsxələri yaradırıq və WordPress və plaginləri aktual saxlayırıq. Biz həmçinin səhvləri düzəldirik, zərərli proqram təminatını silir və veb saytınızı əlçatan və qorunmaq üçün praktiki təhlükəsizlik tədbirləri tətbiq edirik.\n\nTripleZero iT insidentləri diqqətlə idarə edir, bərpa edildikdən sonra saytı yoxlayır və gələcək riskləri azaltmağa kömək edir. Biz onun texniki davamlılığına baxarkən, siz öz biznesinizə diqqət yetirə bilərsiniz."
     },
-    "standard-support": {
+    "double-support": {
       "name": "Standart Dəstək",
       "shortDescription": "Nə gözləmək olar?\n- 2 sayt\n- 24/7 monitorinq və dəstək\n- Gündəlik ehtiyat nüsxələri\n– WordPress və plagin yeniləmələri\n- Veb sayt səhvlərini düzəldin\n- Zərərli proqramların çıxarılması və təhlükəsizliyi\n- Sürətin optimallaşdırılması",
       "description": "Standart Dəstək, sürət və davamlılığa diqqət etməklə yanaşı, gündəlik texniki xidmətə ehtiyacı olan ikiyə qədər WordPress veb-saytı olan təşkilatlara uyğun gəlir.\n\nSiz 24/7 monitorinq, gündəlik ehtiyat nüsxələr, yeniləmələr, xətaların həlli, zərərli proqramların silinməsi və təhlükəsizlik xidməti alırsınız. Veb saytlarınızın performansını yaxşılaşdıran keşləmə, şəkillər və kodu da optimallaşdırırıq.\n\nTripleZero iT proaktiv işləyir: biz problemləri qeyd edirik, texniki problemləri diqqət mərkəzində saxlayırıq və vebsaytlarınızı ziyarətçilər və idarəçilər üçün sabit saxlayırıq."
@@ -3201,12 +3201,12 @@
     }
   },
   "zh": {
-    "basic-support": {
+    "pro-support": {
       "name": "基础支持",
       "shortDescription": "你能期待什么？\n– 1 个网站\n– 24/7 监控和支持\n– 每日备份\n– WordPress 和插件更新\n– 修复网站错误\n– 恶意软件清除和安全",
       "description": "基本支持适用于拥有一个 WordPress 网站的企业，这些企业需要可靠的技术基础，而不必自己解决每一个问题。\n\n我们全天候监控您的网站，创建每日备份并保持 WordPress 和插件最新。我们还修复错误、删除恶意软件并应用实用的安全措施，以确保您的网站可用并受到保护。\n\nTripleZero iT 谨慎处理事件，在恢复后验证现场并帮助降低未来风险。您可以专注于您的业务，而我们则负责其技术连续性。"
     },
-    "standard-support": {
+    "double-support": {
       "name": "标准支持",
       "shortDescription": "你能期待什么？\n– 2 个网站\n– 24/7 监控和支持\n– 每日备份\n– WordPress 和插件更新\n– 修复网站错误\n– 恶意软件清除和安全\n– 速度优化",
       "description": "标准支持适合拥有最多两个 WordPress 网站、需要日常维护以及需要关注速度和连续性的组织。\n\n您可以获得 24/7 监控、每日备份、更新、错误解决、恶意软件删除和安全维护。我们还优化缓存、图像和代码，从而提高您网站的性能。\n\nTripleZero iT 积极主动地开展工作：我们标记问题、集中解决技术问题，并为访问者和管理员保持网站稳定。"
@@ -3298,12 +3298,12 @@
     }
   },
   "ja": {
-    "basic-support": {
+    "pro-support": {
       "name": "基本サポート",
       "shortDescription": "何が期待できますか?\n– 1 つのウェブサイト\n– 24時間365日の監視とサポート\n– 毎日のバックアップ\n– WordPress とプラグインのアップデート\n– ウェブサイトのエラーを修正\n– マルウェアの削除とセキュリティ",
       "description": "基本サポートは、すべての問題を自分たちで解決する必要がなく、信頼できる技術基盤を必要とする 1 つの WordPress Web サイトを持つ企業向けです。\n\n私たちはあなたのサイトを 24 時間監視し、毎日バックアップを作成し、WordPress とプラグインを最新の状態に保ちます。また、エラーを修正し、マルウェアを削除し、実際的なセキュリティ対策を適用して、Web サイトの可用性と保護を維持します。\n\nTripleZero iT はインシデントを慎重に処理し、復旧後にサイトを検証し、将来のリスクを軽減します。弊社が技術的な継続性を確保している間、お客様はビジネスに集中していただけます。"
     },
-    "standard-support": {
+    "double-support": {
       "name": "標準サポート",
       "shortDescription": "何が期待できますか?\n– 2 つのウェブサイト\n– 24時間365日の監視とサポート\n– 毎日のバックアップ\n– WordPress とプラグインのアップデート\n– ウェブサイトのエラーを修正\n– マルウェアの削除とセキュリティ\n– 速度の最適化",
       "description": "標準サポートは、速度と継続性だけでなく毎日のメンテナンスも必要とする WordPress Web サイトを 2 つまで持つ組織に適しています。\n\n24 時間 365 日の監視、毎日のバックアップ、アップデート、エラー解決、マルウェアの削除、セキュリティ ケアが受けられます。また、ウェブサイトのパフォーマンスを向上させるために、キャッシュ、画像、コードも最適化します。\n\nTripleZero iT は積極的に機能します。問題にフラグを立て、技術的な問題を重点的に解決し、訪問者や管理者にとって Web サイトの安定性を維持します。"

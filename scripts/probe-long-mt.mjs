@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 
 const prod = JSON.parse(readFileSync("src/content/fixweb/product-i18n-pack.json", "utf8"));
-const text = prod.en["basic-support"].description;
+const text = prod.en["pro-support"].description;
 console.log("src len", text.length);
 
 async function tryDict() {

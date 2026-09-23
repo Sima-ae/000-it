@@ -782,12 +782,12 @@
     "orderNow": "Ordina ora",
     "noCreditCard": "Nessuna carta di credito richiesta",
     "packages": {
-      "basic": {
-        "name": "Basic",
+      "pro": {
+        "name": "Pro",
         "tagline": "Pacchetto supporto all-in-one"
       },
-      "standard": {
-        "name": "Standard",
+      "double": {
+        "name": "Double",
         "tagline": "Pacchetto supporto all-in-one"
       },
       "premium": {
@@ -797,43 +797,43 @@
     },
     "features": {
       "sites": {
-        "basic": "1 sito web",
-        "standard": "2 siti web",
+        "pro": "1 sito web",
+        "double": "2 siti web",
         "premium": "3-5 siti web"
       },
       "monitoring": {
-        "basic": "Monitoraggio e supporto 24/7",
-        "standard": "Monitoraggio e supporto 24/7",
+        "pro": "Monitoraggio e supporto 24/7",
+        "double": "Monitoraggio e supporto 24/7",
         "premium": "Monitoraggio e supporto 24/7"
       },
       "backups": {
-        "basic": "Backup giornalieri",
-        "standard": "Backup giornalieri",
+        "pro": "Backup giornalieri",
+        "double": "Backup giornalieri",
         "premium": "Backup giornalieri"
       },
       "updates": {
-        "basic": "Aggiornamenti WordPress e plugin",
-        "standard": "Aggiornamenti WordPress e plugin",
+        "pro": "Aggiornamenti WordPress e plugin",
+        "double": "Aggiornamenti WordPress e plugin",
         "premium": "Aggiornamenti WordPress e plugin"
       },
       "errors": {
-        "basic": "Risoluzione errori del sito",
-        "standard": "Risoluzione errori del sito",
+        "pro": "Risoluzione errori del sito",
+        "double": "Risoluzione errori del sito",
         "premium": "Risoluzione errori del sito"
       },
       "malware": {
-        "basic": "Rimozione malware e sicurezza",
-        "standard": "Rimozione malware e sicurezza",
+        "pro": "Rimozione malware e sicurezza",
+        "double": "Rimozione malware e sicurezza",
         "premium": "Rimozione malware e sicurezza"
       },
       "speed": {
-        "basic": "Ottimizzazione velocità",
-        "standard": "Ottimizzazione velocità",
+        "pro": "Ottimizzazione velocità",
+        "double": "Ottimizzazione velocità",
         "premium": "Ottimizzazione velocità"
       },
       "seo": {
-        "basic": "Ottimizzazione SEO",
-        "standard": "Ottimizzazione SEO",
+        "pro": "Ottimizzazione SEO",
+        "double": "Ottimizzazione SEO",
         "premium": "Ottimizzazione SEO"
       }
     }

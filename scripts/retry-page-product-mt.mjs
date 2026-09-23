@@ -71,7 +71,7 @@ for (const locale of locales) {
   }
   const list = [...need].filter((t) => {
     // skip brand-like short tokens that legitimately stay English
-    return !/^(WordPress|WooCommerce|AI|AEO|GEO|SEO|TripleZero iT|Basic Support|Premium Support)$/i.test(
+    return !/^(WordPress|WooCommerce|AI|AEO|GEO|SEO|TripleZero iT|Pro Support|Premium Support)$/i.test(
       t.trim(),
     );
   });

@@ -10,7 +10,7 @@ const locales = readdirSync("messages")
   .map((f) => f.replace(".json", ""))
   .sort();
 
-const INTENTIONAL = /^(FAQ|Portfolio|TripleZero|TripleZero iT|WordPress|WooCommerce|AI|AEO|GEO|SEO|Enterprise|Business|Support|Chatbots|Workflows|Webdesign|Webhosting|E-commerce|Marketing|Social Media|Printing|Graphic Design|Grafisch Design|Digital Design|Digital design|Contact|Account|Home|Login|CRM|Extra Growth|Custom|Newsletter|Cookies|Force majeure|Privacy|Download|Name|Basic Support|Premium Support|Standard Support|Plan highlights|VPS Hosting.*|Shared Hosting.*|WordPress Hosting.*|WordPress Support|Social Media Management|Community Management|24\/7 support|Fix website errors|Fix Bugs and Errors)$/i;
+const INTENTIONAL = /^(FAQ|Portfolio|TripleZero|TripleZero iT|WordPress|WooCommerce|AI|AEO|GEO|SEO|Enterprise|Business|Support|Chatbots|Workflows|Webdesign|Webhosting|E-commerce|Marketing|Social Media|Printing|Graphic Design|Grafisch Design|Digital Design|Digital design|Contact|Account|Home|Login|CRM|Extra Growth|Custom|Newsletter|Cookies|Force majeure|Privacy|Download|Name|Pro Support|Premium Support|Double Support|Plan highlights|VPS Hosting.*|Shared Hosting.*|WordPress Hosting.*|WordPress Support|Social Media Management|Community Management|24\/7 support|Fix website errors|Fix Bugs and Errors)$/i;
 
 function leaves(obj, prefix = "", out = []) {
   if (obj == null) return out;

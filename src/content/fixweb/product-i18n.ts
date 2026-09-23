@@ -8,9 +8,9 @@ export type ProductI18n = {
 };
 
 export const productI18n: Record<string, { nl: ProductI18n; en: ProductI18n }> = {
-  "basic-support": {
+  "pro-support": {
     nl: {
-      name: "Basic Support",
+      name: "Pro Support",
       shortDescription: `Wat kun je verwachten?
 – 1 website
 – 24/7 monitoring & support
@@ -18,14 +18,14 @@ export const productI18n: Record<string, { nl: ProductI18n; en: ProductI18n }> =
 – WordPress & plugin updates
 – Websitefouten herstellen
 – Malware verwijderen & beveiliging`,
-      description: `Basic Support is er voor ondernemers met één WordPress-website die een betrouwbare technische basis willen zonder zelf elk probleem te hoeven oplossen.
+      description: `Pro Support is er voor ondernemers met één WordPress-website die een betrouwbare technische basis willen zonder zelf elk probleem te hoeven oplossen.
 
 Wij monitoren jouw site dag en nacht, maken dagelijkse back-ups en houden WordPress en plugins actueel. Ook lossen we fouten op, verwijderen we malware en passen we praktische beveiligingsmaatregelen toe om jouw website beschikbaar en beschermd te houden.
 
 TripleZero iT pakt incidenten zorgvuldig aan, controleert de werking na herstel en helpt risico’s voor te blijven. Zo kun je je richten op jouw onderneming terwijl wij de technische continuïteit bewaken.`,
     },
     en: {
-      name: "Basic Support",
+      name: "Pro Support",
       shortDescription: `What can you expect?
 – 1 website
 – 24/7 monitoring & support
@@ -33,7 +33,7 @@ TripleZero iT pakt incidenten zorgvuldig aan, controleert de werking na herstel 
 – WordPress & plugin updates
 – Fix website errors
 – Malware removal & security`,
-      description: `Basic Support is for businesses with one WordPress website that want a dependable technical foundation without having to resolve every issue themselves.
+      description: `Pro Support is for businesses with one WordPress website that want a dependable technical foundation without having to resolve every issue themselves.
 
 We monitor your site around the clock, create daily backups and keep WordPress and plugins current. We also fix errors, remove malware and apply practical security measures to keep your website available and protected.
 
@@ -41,9 +41,9 @@ TripleZero iT handles incidents carefully, verifies the site after recovery and 
     },
   },
 
-  "standard-support": {
+  "double-support": {
     nl: {
-      name: "Standard Support",
+      name: "Double Support",
       shortDescription: `Wat kun je verwachten?
 – 2 websites
 – 24/7 monitoring & support
@@ -52,14 +52,14 @@ TripleZero iT handles incidents carefully, verifies the site after recovery and 
 – Websitefouten herstellen
 – Malware verwijderen & beveiliging
 – Snelheid optimaliseren`,
-      description: `Standard Support is geschikt voor organisaties met maximaal twee WordPress-websites die naast dagelijks onderhoud ook aandacht voor snelheid en continuïteit nodig hebben.
+      description: `Double Support is geschikt voor organisaties met maximaal twee WordPress-websites die naast dagelijks onderhoud ook aandacht voor snelheid en continuïteit nodig hebben.
 
 Je krijgt 24/7 monitoring, dagelijkse back-ups, updates, foutoplossing, malwareverwijdering en beveiliging. Wij optimaliseren daarnaast caching, afbeeldingen en code waar dat de prestaties van jouw websites verbetert.
 
 TripleZero iT werkt proactief: we signaleren aandachtspunten, pakken technische problemen gericht aan en houden jouw websites stabiel voor bezoekers en beheerders.`,
     },
     en: {
-      name: "Standard Support",
+      name: "Double Support",
       shortDescription: `What can you expect?
 – 2 websites
 – 24/7 monitoring & support
@@ -68,7 +68,7 @@ TripleZero iT werkt proactief: we signaleren aandachtspunten, pakken technische 
 – Fix website errors
 – Malware removal & security
 – Speed optimization`,
-      description: `Standard Support suits organisations with up to two WordPress websites that need everyday maintenance as well as attention to speed and continuity.
+      description: `Double Support suits organisations with up to two WordPress websites that need everyday maintenance as well as attention to speed and continuity.
 
 You receive 24/7 monitoring, daily backups, updates, error resolution, malware removal and security care. We also optimise caching, images and code where it improves your websites’ performance.
 

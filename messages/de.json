@@ -782,12 +782,12 @@
     "orderNow": "Jetzt bestellen",
     "noCreditCard": "Keine Kreditkarte erforderlich",
     "packages": {
-      "basic": {
-        "name": "Basic",
+      "pro": {
+        "name": "Pro",
         "tagline": "All-in-One Support-Paket"
       },
-      "standard": {
-        "name": "Standard",
+      "double": {
+        "name": "Double",
         "tagline": "All-in-One Support-Paket"
       },
       "premium": {
@@ -797,43 +797,43 @@
     },
     "features": {
       "sites": {
-        "basic": "1 Website",
-        "standard": "2 Websites",
+        "pro": "1 Website",
+        "double": "2 Websites",
         "premium": "3-5 Websites"
       },
       "monitoring": {
-        "basic": "24/7 Monitoring & Support",
-        "standard": "24/7 Monitoring & Support",
+        "pro": "24/7 Monitoring & Support",
+        "double": "24/7 Monitoring & Support",
         "premium": "24/7 Monitoring & Support"
       },
       "backups": {
-        "basic": "Tägliche Backups",
-        "standard": "Tägliche Backups",
+        "pro": "Tägliche Backups",
+        "double": "Tägliche Backups",
         "premium": "Tägliche Backups"
       },
       "updates": {
-        "basic": "WordPress- & Plugin-Updates",
-        "standard": "WordPress- & Plugin-Updates",
+        "pro": "WordPress- & Plugin-Updates",
+        "double": "WordPress- & Plugin-Updates",
         "premium": "WordPress- & Plugin-Updates"
       },
       "errors": {
-        "basic": "Website-Fehler beheben",
-        "standard": "Website-Fehler beheben",
+        "pro": "Website-Fehler beheben",
+        "double": "Website-Fehler beheben",
         "premium": "Website-Fehler beheben"
       },
       "malware": {
-        "basic": "Malware-Entfernung & Sicherheit",
-        "standard": "Malware-Entfernung & Sicherheit",
+        "pro": "Malware-Entfernung & Sicherheit",
+        "double": "Malware-Entfernung & Sicherheit",
         "premium": "Malware-Entfernung & Sicherheit"
       },
       "speed": {
-        "basic": "Geschwindigkeitsoptimierung",
-        "standard": "Geschwindigkeitsoptimierung",
+        "pro": "Geschwindigkeitsoptimierung",
+        "double": "Geschwindigkeitsoptimierung",
         "premium": "Geschwindigkeitsoptimierung"
       },
       "seo": {
-        "basic": "SEO-Optimierung",
-        "standard": "SEO-Optimierung",
+        "pro": "SEO-Optimierung",
+        "double": "SEO-Optimierung",
         "premium": "SEO-Optimierung"
       }
     }

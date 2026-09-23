@@ -783,12 +783,12 @@
     "orderNow": "Order Now",
     "noCreditCard": "No credit card required",
     "packages": {
-      "basic": {
-        "name": "Basic",
+      "pro": {
+        "name": "Pro",
         "tagline": "All-in-One Support Package"
       },
-      "standard": {
-        "name": "Standard",
+      "double": {
+        "name": "Double",
         "tagline": "All-in-One Support Package"
       },
       "premium": {
@@ -798,43 +798,43 @@
     },
     "features": {
       "sites": {
-        "basic": "1 website",
-        "standard": "2 websites",
+        "pro": "1 website",
+        "double": "2 websites",
         "premium": "3-5 websites"
       },
       "monitoring": {
-        "basic": "24/7 monitoring & support",
-        "standard": "24/7 monitoring & support",
+        "pro": "24/7 monitoring & support",
+        "double": "24/7 monitoring & support",
         "premium": "24/7 monitoring & support"
       },
       "backups": {
-        "basic": "Daily backups",
-        "standard": "Daily backups",
+        "pro": "Daily backups",
+        "double": "Daily backups",
         "premium": "Daily backups"
       },
       "updates": {
-        "basic": "WordPress & plugin updates",
-        "standard": "WordPress & plugin updates",
+        "pro": "WordPress & plugin updates",
+        "double": "WordPress & plugin updates",
         "premium": "WordPress & plugin updates"
       },
       "errors": {
-        "basic": "Fix website errors",
-        "standard": "Fix website errors",
+        "pro": "Fix website errors",
+        "double": "Fix website errors",
         "premium": "Fix website errors"
       },
       "malware": {
-        "basic": "Malware removal & security",
-        "standard": "Malware removal & security",
+        "pro": "Malware removal & security",
+        "double": "Malware removal & security",
         "premium": "Malware removal & security"
       },
       "speed": {
-        "basic": "Speed optimization",
-        "standard": "Speed optimization",
+        "pro": "Speed optimization",
+        "double": "Speed optimization",
         "premium": "Speed optimization"
       },
       "seo": {
-        "basic": "SEO optimization",
-        "standard": "SEO optimization",
+        "pro": "SEO optimization",
+        "double": "SEO optimization",
         "premium": "SEO optimization"
       }
     }

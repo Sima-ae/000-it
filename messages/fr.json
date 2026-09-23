@@ -782,12 +782,12 @@
     "orderNow": "Commander",
     "noCreditCard": "Aucune carte de crédit requise",
     "packages": {
-      "basic": {
-        "name": "Basic",
+      "pro": {
+        "name": "Pro",
         "tagline": "Pack Support tout-en-un"
       },
-      "standard": {
-        "name": "Standard",
+      "double": {
+        "name": "Double",
         "tagline": "Pack Support tout-en-un"
       },
       "premium": {
@@ -797,43 +797,43 @@
     },
     "features": {
       "sites": {
-        "basic": "1 site web",
-        "standard": "2 sites web",
+        "pro": "1 site web",
+        "double": "2 sites web",
         "premium": "3-5 sites web"
       },
       "monitoring": {
-        "basic": "Monitoring & support 24/7",
-        "standard": "Monitoring & support 24/7",
+        "pro": "Monitoring & support 24/7",
+        "double": "Monitoring & support 24/7",
         "premium": "Monitoring & support 24/7"
       },
       "backups": {
-        "basic": "Sauvegardes quotidiennes",
-        "standard": "Sauvegardes quotidiennes",
+        "pro": "Sauvegardes quotidiennes",
+        "double": "Sauvegardes quotidiennes",
         "premium": "Sauvegardes quotidiennes"
       },
       "updates": {
-        "basic": "Mises à jour WordPress & plugins",
-        "standard": "Mises à jour WordPress & plugins",
+        "pro": "Mises à jour WordPress & plugins",
+        "double": "Mises à jour WordPress & plugins",
         "premium": "Mises à jour WordPress & plugins"
       },
       "errors": {
-        "basic": "Correction des erreurs du site",
-        "standard": "Correction des erreurs du site",
+        "pro": "Correction des erreurs du site",
+        "double": "Correction des erreurs du site",
         "premium": "Correction des erreurs du site"
       },
       "malware": {
-        "basic": "Suppression de malware & sécurité",
-        "standard": "Suppression de malware & sécurité",
+        "pro": "Suppression de malware & sécurité",
+        "double": "Suppression de malware & sécurité",
         "premium": "Suppression de malware & sécurité"
       },
       "speed": {
-        "basic": "Optimisation de la vitesse",
-        "standard": "Optimisation de la vitesse",
+        "pro": "Optimisation de la vitesse",
+        "double": "Optimisation de la vitesse",
         "premium": "Optimisation de la vitesse"
       },
       "seo": {
-        "basic": "Optimisation SEO",
-        "standard": "Optimisation SEO",
+        "pro": "Optimisation SEO",
+        "double": "Optimisation SEO",
         "premium": "Optimisation SEO"
       }
     }
