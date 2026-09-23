@@ -27,13 +27,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– Unlimited Websites\n– 50 GB SSD\n– Unlimited Mailboxes\n– Website Builder\n– AI Tools\n– 24/7 Support\n– AutoBackup & Cloud Storage",
-      "description": "Shared Hosting Plus fits organisations that want to host multiple websites, email and files centrally and professionally.\n\nYou receive unlimited websites and mailboxes, 50 GB SSD storage, a website builder, AI tools and AutoBackup with cloud storage. It combines room for daily operations with added reassurance for important data.\n\nTripleZero iT provides a stable environment and 24/7 support whenever your organisation needs assistance. Keep your online infrastructure organised and ready to grow."
+      "shortDescription": "– Unlimited Websites\n– Unmetered SSD\n– Unlimited Mailboxes\n– Website Builder\n– AI Tools\n– 24/7 Support\n– AutoBackup",
+      "description": "Shared Hosting Plus is built for entrepreneurs and growing teams that want to manage multiple websites and mailboxes without restrictive limits.\n\nWith unlimited websites, SSD storage and mailboxes, plus a website builder, AI tools and AutoBackup, you have the flexibility to add projects and communication as you grow.\n\nTripleZero iT delivers an accessible, dependable hosting foundation with 24/7 support. Your digital environment can expand without making daily administration complicated."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– Unlimited Websites\n– Unmetered SSD\n– Unlimited Mailboxes\n– Website Builder\n– AI Tools\n– 24/7 Support\n– AutoBackup",
-      "description": "Shared Hosting Business is built for entrepreneurs and growing teams that want to manage multiple websites and mailboxes without restrictive limits.\n\nWith unlimited websites, SSD storage and mailboxes, plus a website builder, AI tools and AutoBackup, you have the flexibility to add projects and communication as you grow.\n\nTripleZero iT delivers an accessible, dependable hosting foundation with 24/7 support. Your digital environment can expand without making daily administration complicated."
+      "shortDescription": "– Unlimited Websites\n– 50 GB SSD\n– Unlimited Mailboxes\n– Website Builder\n– AI Tools\n– 24/7 Support\n– AutoBackup & Cloud Storage",
+      "description": "Shared Hosting Business fits organisations that want to host multiple websites, email and files centrally and professionally.\n\nYou receive unlimited websites and mailboxes, 50 GB SSD storage, a website builder, AI tools and AutoBackup with cloud storage. It combines room for daily operations with added reassurance for important data.\n\nTripleZero iT provides a stable environment and 24/7 support whenever your organisation needs assistance. Keep your online infrastructure organised and ready to grow."
     },
     "vps-hosting-basic": {
       "name": "VPS Hosting Basic",
@@ -124,13 +124,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– Onbeperkt Websites\n– 50 GB SSD\n– Onbeperkt Mailboxen\n– Website Builder\n– AI Tools\n– 24/7 Support\n– AutoBackup & Cloud Storage",
-      "description": "Shared Hosting Plus past bij organisaties die meerdere websites, e-mail en bestanden centraal en professioneel willen onderbrengen.\n\nJe krijgt onbeperkte websites en mailboxen, 50 GB SSD-opslag, een websitebouwer, AI-tools en AutoBackup met cloudopslag. Dat combineert ruimte voor jouw dagelijkse werk met extra zekerheid voor belangrijke data.\n\nTripleZero iT biedt een stabiele omgeving en 24/7 support als jouw organisatie vragen heeft of hulp nodig heeft. Zo houd je jouw online infrastructuur overzichtelijk en klaar voor groei."
+      "shortDescription": "– Onbeperkt Websites\n– Onbeperkt SSD\n– Onbeperkt Mailboxen\n– Website Builder\n– AI Tools\n– 24/7 Support\n– AutoBackup",
+      "description": "Shared Hosting Plus is gemaakt voor ondernemers en groeiende teams die meerdere websites en mailboxen zonder krappe limieten willen beheren.\n\nMet onbeperkte websites, SSD-opslag en mailboxen, plus een websitebouwer, AI-tools en AutoBackup, krijg je de flexibiliteit om nieuwe projecten en communicatie eenvoudig toe te voegen.\n\nTripleZero iT levert een toegankelijke, betrouwbare hostingbasis met 24/7 support. Zo groeit jouw digitale omgeving mee zonder dat je het dagelijkse beheer ingewikkeld maakt."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– Onbeperkt Websites\n– Onbeperkt SSD\n– Onbeperkt Mailboxen\n– Website Builder\n– AI Tools\n– 24/7 Support\n– AutoBackup",
-      "description": "Shared Hosting Business is gemaakt voor ondernemers en groeiende teams die meerdere websites en mailboxen zonder krappe limieten willen beheren.\n\nMet onbeperkte websites, SSD-opslag en mailboxen, plus een websitebouwer, AI-tools en AutoBackup, krijg je de flexibiliteit om nieuwe projecten en communicatie eenvoudig toe te voegen.\n\nTripleZero iT levert een toegankelijke, betrouwbare hostingbasis met 24/7 support. Zo groeit jouw digitale omgeving mee zonder dat je het dagelijkse beheer ingewikkeld maakt."
+      "shortDescription": "– Onbeperkt Websites\n– 50 GB SSD\n– Onbeperkt Mailboxen\n– Website Builder\n– AI Tools\n– 24/7 Support\n– AutoBackup & Cloud Storage",
+      "description": "Shared Hosting Business past bij organisaties die meerdere websites, e-mail en bestanden centraal en professioneel willen onderbrengen.\n\nJe krijgt onbeperkte websites en mailboxen, 50 GB SSD-opslag, een websitebouwer, AI-tools en AutoBackup met cloudopslag. Dat combineert ruimte voor jouw dagelijkse werk met extra zekerheid voor belangrijke data.\n\nTripleZero iT biedt een stabiele omgeving en 24/7 support als jouw organisatie vragen heeft of hulp nodig heeft. Zo houd je jouw online infrastructuur overzichtelijk en klaar voor groei."
     },
     "vps-hosting-basic": {
       "name": "VPS Hosting Basic",
@@ -221,13 +221,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– Sites Web illimités\n– Disque SSD de 50 Go\n– Boîtes aux lettres illimitées\n– Constructeur de site Web\n– Outils d'IA\n– Assistance 24h/24 et 7j/7\n– Sauvegarde automatique et stockage cloud",
-      "description": "Shared Hosting Plus convient aux organisations qui souhaitent héberger plusieurs sites Web, e-mails et fichiers de manière centralisée et professionnelle.\n\nVous recevez un nombre illimité de sites Web et de boîtes aux lettres, 50 Go de stockage SSD, un créateur de sites Web, des outils d'IA et AutoBackup avec stockage cloud. Il combine un espace pour les opérations quotidiennes avec une sécurité supplémentaire pour les données importantes.\n\nTripleZero iT fournit un environnement stable et une assistance 24h/24 et 7j/7 chaque fois que votre organisation a besoin d'aide. Gardez votre infrastructure en ligne organisée et prête à croître."
+      "shortDescription": "– Sites Web illimités\n– SSD illimité\n– Boîtes aux lettres illimitées\n– Constructeur de site Web\n– Outils d'IA\n– Assistance 24h/24 et 7j/7\n– Sauvegarde automatique",
+      "description": "Shared Hosting Plus est conçu pour les entrepreneurs et les équipes en pleine croissance qui souhaitent gérer plusieurs sites Web et boîtes aux lettres sans limites restrictives.\n\nAvec des sites Web illimités, un stockage SSD et des boîtes aux lettres, ainsi qu'un créateur de sites Web, des outils d'IA et AutoBackup, vous avez la flexibilité d'ajouter des projets et des communications au fur et à mesure de votre croissance.\n\nTripleZero iT offre une base d'hébergement accessible et fiable avec une assistance 24h/24 et 7j/7. Votre environnement numérique peut s’étendre sans compliquer l’administration quotidienne."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– Sites Web illimités\n– SSD illimité\n– Boîtes aux lettres illimitées\n– Constructeur de site Web\n– Outils d'IA\n– Assistance 24h/24 et 7j/7\n– Sauvegarde automatique",
-      "description": "Shared Hosting Business est conçu pour les entrepreneurs et les équipes en pleine croissance qui souhaitent gérer plusieurs sites Web et boîtes aux lettres sans limites restrictives.\n\nAvec des sites Web illimités, un stockage SSD et des boîtes aux lettres, ainsi qu'un créateur de sites Web, des outils d'IA et AutoBackup, vous avez la flexibilité d'ajouter des projets et des communications au fur et à mesure de votre croissance.\n\nTripleZero iT offre une base d'hébergement accessible et fiable avec une assistance 24h/24 et 7j/7. Votre environnement numérique peut s’étendre sans compliquer l’administration quotidienne."
+      "shortDescription": "– Sites Web illimités\n– Disque SSD de 50 Go\n– Boîtes aux lettres illimitées\n– Constructeur de site Web\n– Outils d'IA\n– Assistance 24h/24 et 7j/7\n– Sauvegarde automatique et stockage cloud",
+      "description": "Shared Hosting Business convient aux organisations qui souhaitent héberger plusieurs sites Web, e-mails et fichiers de manière centralisée et professionnelle.\n\nVous recevez un nombre illimité de sites Web et de boîtes aux lettres, 50 Go de stockage SSD, un créateur de sites Web, des outils d'IA et AutoBackup avec stockage cloud. Il combine un espace pour les opérations quotidiennes avec une sécurité supplémentaire pour les données importantes.\n\nTripleZero iT fournit un environnement stable et une assistance 24h/24 et 7j/7 chaque fois que votre organisation a besoin d'aide. Gardez votre infrastructure en ligne organisée et prête à croître."
     },
     "vps-hosting-basic": {
       "name": "Hébergement VPS de base",
@@ -318,13 +318,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– Unbegrenzte Websites\n– 50 GB SSD\n– Unbegrenzte Postfächer\n– Website-Builder\n– KI-Tools\n– Support rund um die Uhr\n– AutoBackup und Cloud-Speicher",
-      "description": "Shared Hosting Plus eignet sich für Organisationen, die mehrere Websites, E-Mails und Dateien zentral und professionell hosten möchten.\n\nSie erhalten unbegrenzte Websites und Postfächer, 50 GB SSD-Speicher, einen Website-Builder, KI-Tools und AutoBackup mit Cloud-Speicher. Es vereint Platz für den täglichen Betrieb mit zusätzlicher Sicherheit für wichtige Daten.\n\nTripleZero iT bietet eine stabile Umgebung und Support rund um die Uhr, wann immer Ihr Unternehmen Hilfe benötigt. Sorgen Sie dafür, dass Ihre Online-Infrastruktur organisiert und wachstumsbereit ist."
+      "shortDescription": "– Unbegrenzte Websites\n– Ungemessene SSD\n– Unbegrenzte Postfächer\n– Website-Builder\n– KI-Tools\n– Support rund um die Uhr\n– AutoBackup",
+      "description": "Shared Hosting Plus wurde für Unternehmer und wachsende Teams entwickelt, die mehrere Websites und Postfächer ohne restriktive Einschränkungen verwalten möchten.\n\nMit unbegrenzten Websites, SSD-Speicher und Postfächern sowie einem Website-Builder, KI-Tools und AutoBackup haben Sie die Flexibilität, Projekte und Kommunikation hinzuzufügen, wenn Sie wachsen.\n\nTripleZero iT bietet eine zugängliche, zuverlässige Hosting-Grundlage mit 24/7-Support. Ihre digitale Umgebung kann erweitert werden, ohne dass die tägliche Verwaltung kompliziert wird."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– Unbegrenzte Websites\n– Ungemessene SSD\n– Unbegrenzte Postfächer\n– Website-Builder\n– KI-Tools\n– Support rund um die Uhr\n– AutoBackup",
-      "description": "Shared Hosting Business wurde für Unternehmer und wachsende Teams entwickelt, die mehrere Websites und Postfächer ohne restriktive Einschränkungen verwalten möchten.\n\nMit unbegrenzten Websites, SSD-Speicher und Postfächern sowie einem Website-Builder, KI-Tools und AutoBackup haben Sie die Flexibilität, Projekte und Kommunikation hinzuzufügen, wenn Sie wachsen.\n\nTripleZero iT bietet eine zugängliche, zuverlässige Hosting-Grundlage mit 24/7-Support. Ihre digitale Umgebung kann erweitert werden, ohne dass die tägliche Verwaltung kompliziert wird."
+      "shortDescription": "– Unbegrenzte Websites\n– 50 GB SSD\n– Unbegrenzte Postfächer\n– Website-Builder\n– KI-Tools\n– Support rund um die Uhr\n– AutoBackup und Cloud-Speicher",
+      "description": "Shared Hosting Business eignet sich für Organisationen, die mehrere Websites, E-Mails und Dateien zentral und professionell hosten möchten.\n\nSie erhalten unbegrenzte Websites und Postfächer, 50 GB SSD-Speicher, einen Website-Builder, KI-Tools und AutoBackup mit Cloud-Speicher. Es vereint Platz für den täglichen Betrieb mit zusätzlicher Sicherheit für wichtige Daten.\n\nTripleZero iT bietet eine stabile Umgebung und Support rund um die Uhr, wann immer Ihr Unternehmen Hilfe benötigt. Sorgen Sie dafür, dass Ihre Online-Infrastruktur organisiert und wachstumsbereit ist."
     },
     "vps-hosting-basic": {
       "name": "VPS-Hosting Basic",
@@ -415,13 +415,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– Sitios web ilimitados\n– SSD de 50GB\n– Buzones ilimitados\n– Creador de sitios web\n– Herramientas de IA\n– Soporte 24 horas al día, 7 días a la semana\n– Copia de seguridad automática y almacenamiento en la nube",
-      "description": "Shared Hosting Plus se adapta a organizaciones que desean alojar múltiples sitios web, correos electrónicos y archivos de forma centralizada y profesional.\n\nRecibe sitios web y buzones de correo ilimitados, almacenamiento SSD de 50 GB, un creador de sitios web, herramientas de inteligencia artificial y copia de seguridad automática con almacenamiento en la nube. Combina espacio para las operaciones diarias con mayor seguridad para los datos importantes.\n\nTripleZero iT proporciona un entorno estable y soporte 24 horas al día, 7 días a la semana siempre que su organización necesite ayuda. Mantenga su infraestructura en línea organizada y lista para crecer."
+      "shortDescription": "– Sitios web ilimitados\n– SSD no medido\n– Buzones ilimitados\n– Creador de sitios web\n– Herramientas de IA\n– Soporte 24 horas al día, 7 días a la semana\n– Copia de seguridad automática",
+      "description": "Shared Hosting Plus está diseñado para emprendedores y equipos en crecimiento que desean administrar múltiples sitios web y buzones de correo sin límites restrictivos.\n\nCon sitios web ilimitados, almacenamiento SSD y buzones de correo, además de un creador de sitios web, herramientas de inteligencia artificial y copia de seguridad automática, tiene la flexibilidad de agregar proyectos y comunicaciones a medida que crece.\n\nTripleZero iT ofrece una base de alojamiento accesible y confiable con soporte las 24 horas, los 7 días de la semana. Su entorno digital puede expandirse sin complicar la administración diaria."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– Sitios web ilimitados\n– SSD no medido\n– Buzones ilimitados\n– Creador de sitios web\n– Herramientas de IA\n– Soporte 24 horas al día, 7 días a la semana\n– Copia de seguridad automática",
-      "description": "Shared Hosting Business está diseñado para emprendedores y equipos en crecimiento que desean administrar múltiples sitios web y buzones de correo sin límites restrictivos.\n\nCon sitios web ilimitados, almacenamiento SSD y buzones de correo, además de un creador de sitios web, herramientas de inteligencia artificial y copia de seguridad automática, tiene la flexibilidad de agregar proyectos y comunicaciones a medida que crece.\n\nTripleZero iT ofrece una base de alojamiento accesible y confiable con soporte las 24 horas, los 7 días de la semana. Su entorno digital puede expandirse sin complicar la administración diaria."
+      "shortDescription": "– Sitios web ilimitados\n– SSD de 50GB\n– Buzones ilimitados\n– Creador de sitios web\n– Herramientas de IA\n– Soporte 24 horas al día, 7 días a la semana\n– Copia de seguridad automática y almacenamiento en la nube",
+      "description": "Shared Hosting Business se adapta a organizaciones que desean alojar múltiples sitios web, correos electrónicos y archivos de forma centralizada y profesional.\n\nRecibe sitios web y buzones de correo ilimitados, almacenamiento SSD de 50 GB, un creador de sitios web, herramientas de inteligencia artificial y copia de seguridad automática con almacenamiento en la nube. Combina espacio para las operaciones diarias con mayor seguridad para los datos importantes.\n\nTripleZero iT proporciona un entorno estable y soporte 24 horas al día, 7 días a la semana siempre que su organización necesite ayuda. Mantenga su infraestructura en línea organizada y lista para crecer."
     },
     "vps-hosting-basic": {
       "name": "Alojamiento VPS Básico",
@@ -512,13 +512,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– Sites ilimitados\n–SSD de 50 GB\n– Caixas de correio ilimitadas\n– Construtor de sites\n– Ferramentas de IA\n– Suporte 24 horas por dia, 7 dias por semana\n– Backup automático e armazenamento em nuvem",
-      "description": "O Shared Hosting Plus é adequado para organizações que desejam hospedar vários sites, e-mails e arquivos de maneira centralizada e profissional.\n\nVocê recebe sites e caixas de correio ilimitados, armazenamento SSD de 50 GB, construtor de sites, ferramentas de IA e AutoBackup com armazenamento em nuvem. Combina espaço para operações diárias com segurança adicional para dados importantes.\n\nTripleZero iT fornece um ambiente estável e suporte 24 horas por dia, 7 dias por semana, sempre que sua organização precisar de assistência. Mantenha sua infraestrutura online organizada e pronta para crescer."
+      "shortDescription": "– Sites ilimitados\n– SSD ilimitado\n– Caixas de correio ilimitadas\n– Construtor de sites\n– Ferramentas de IA\n– Suporte 24 horas por dia, 7 dias por semana\n– Backup automático",
+      "description": "Shared Hosting Plus foi desenvolvido para empreendedores e equipes em crescimento que desejam gerenciar vários sites e caixas de correio sem limites restritivos.\n\nCom sites ilimitados, armazenamento SSD e caixas de correio, além de um construtor de sites, ferramentas de IA e AutoBackup, você tem flexibilidade para adicionar projetos e comunicação à medida que cresce.\n\nTripleZero iT oferece uma base de hospedagem acessível e confiável com suporte 24 horas por dia, 7 dias por semana. Seu ambiente digital pode se expandir sem complicar a administração diária."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– Sites ilimitados\n– SSD ilimitado\n– Caixas de correio ilimitadas\n– Construtor de sites\n– Ferramentas de IA\n– Suporte 24 horas por dia, 7 dias por semana\n– Backup automático",
-      "description": "Shared Hosting Business foi desenvolvido para empreendedores e equipes em crescimento que desejam gerenciar vários sites e caixas de correio sem limites restritivos.\n\nCom sites ilimitados, armazenamento SSD e caixas de correio, além de um construtor de sites, ferramentas de IA e AutoBackup, você tem flexibilidade para adicionar projetos e comunicação à medida que cresce.\n\nTripleZero iT oferece uma base de hospedagem acessível e confiável com suporte 24 horas por dia, 7 dias por semana. Seu ambiente digital pode se expandir sem complicar a administração diária."
+      "shortDescription": "– Sites ilimitados\n–SSD de 50 GB\n– Caixas de correio ilimitadas\n– Construtor de sites\n– Ferramentas de IA\n– Suporte 24 horas por dia, 7 dias por semana\n– Backup automático e armazenamento em nuvem",
+      "description": "O Shared Hosting Business é adequado para organizações que desejam hospedar vários sites, e-mails e arquivos de maneira centralizada e profissional.\n\nVocê recebe sites e caixas de correio ilimitados, armazenamento SSD de 50 GB, construtor de sites, ferramentas de IA e AutoBackup com armazenamento em nuvem. Combina espaço para operações diárias com segurança adicional para dados importantes.\n\nTripleZero iT fornece um ambiente estável e suporte 24 horas por dia, 7 dias por semana, sempre que sua organização precisar de assistência. Mantenha sua infraestrutura online organizada e pronta para crescer."
     },
     "vps-hosting-basic": {
       "name": "Hospedagem VPS Básica",
@@ -609,13 +609,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– Siti Web illimitati\n– SSD da 50GB\n– Caselle di posta illimitate\n– Costruttore di siti web\n– Strumenti IA\n– Assistenza 24 ore su 24, 7 giorni su 7\n– Backup automatico e archiviazione nel cloud",
-      "description": "Shared Hosting Plus è adatto alle organizzazioni che desiderano ospitare più siti Web, e-mail e file in modo centralizzato e professionale.\n\nRicevi siti Web e caselle di posta illimitati, spazio di archiviazione SSD da 50 GB, un costruttore di siti Web, strumenti AI e Backup automatico con archiviazione cloud. Combina spazio per le operazioni quotidiane con ulteriore sicurezza per i dati importanti.\n\nTripleZero iT fornisce un ambiente stabile e supporto 24 ore su 24, 7 giorni su 7, ogni volta che la tua organizzazione ha bisogno di assistenza. Mantieni la tua infrastruttura online organizzata e pronta a crescere."
+      "shortDescription": "– Siti Web illimitati\n– SSD illimitato\n– Caselle di posta illimitate\n– Costruttore di siti web\n– Strumenti IA\n– Assistenza 24 ore su 24, 7 giorni su 7\n– Backup automatico",
+      "description": "Shared Hosting Plus è progettato per imprenditori e team in crescita che desiderano gestire più siti Web e caselle di posta senza limiti restrittivi.\n\nCon siti Web illimitati, spazio di archiviazione SSD e caselle di posta, oltre a uno strumento per la creazione di siti Web, strumenti di intelligenza artificiale e Backup automatico, hai la flessibilità di aggiungere progetti e comunicazioni man mano che cresci.\n\nTripleZero iT offre una base di hosting accessibile e affidabile con supporto 24 ore su 24, 7 giorni su 7. Il tuo ambiente digitale può espandersi senza complicare l'amministrazione quotidiana."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– Siti Web illimitati\n– SSD illimitato\n– Caselle di posta illimitate\n– Costruttore di siti web\n– Strumenti IA\n– Assistenza 24 ore su 24, 7 giorni su 7\n– Backup automatico",
-      "description": "Shared Hosting Business è progettato per imprenditori e team in crescita che desiderano gestire più siti Web e caselle di posta senza limiti restrittivi.\n\nCon siti Web illimitati, spazio di archiviazione SSD e caselle di posta, oltre a uno strumento per la creazione di siti Web, strumenti di intelligenza artificiale e Backup automatico, hai la flessibilità di aggiungere progetti e comunicazioni man mano che cresci.\n\nTripleZero iT offre una base di hosting accessibile e affidabile con supporto 24 ore su 24, 7 giorni su 7. Il tuo ambiente digitale può espandersi senza complicare l'amministrazione quotidiana."
+      "shortDescription": "– Siti Web illimitati\n– SSD da 50GB\n– Caselle di posta illimitate\n– Costruttore di siti web\n– Strumenti IA\n– Assistenza 24 ore su 24, 7 giorni su 7\n– Backup automatico e archiviazione nel cloud",
+      "description": "Shared Hosting Business è adatto alle organizzazioni che desiderano ospitare più siti Web, e-mail e file in modo centralizzato e professionale.\n\nRicevi siti Web e caselle di posta illimitati, spazio di archiviazione SSD da 50 GB, un costruttore di siti Web, strumenti AI e Backup automatico con archiviazione cloud. Combina spazio per le operazioni quotidiane con ulteriore sicurezza per i dati importanti.\n\nTripleZero iT fornisce un ambiente stabile e supporto 24 ore su 24, 7 giorni su 7, ogni volta che la tua organizzazione ha bisogno di assistenza. Mantieni la tua infrastruttura online organizzata e pronta a crescere."
     },
     "vps-hosting-basic": {
       "name": "Hosting VPS di base",
@@ -706,13 +706,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– Απεριόριστες ιστοσελίδες\n– 50 GB SSD\n– Απεριόριστα γραμματοκιβώτια\n– Δημιουργός Ιστοσελίδων\n– Εργαλεία AI\n– Υποστήριξη 24/7\n– AutoBackup & Cloud Storage",
-      "description": "Το Shared Hosting Plus ταιριάζει σε οργανισμούς που θέλουν να φιλοξενούν πολλούς ιστότοπους, email και αρχεία κεντρικά και επαγγελματικά.\n\nΛαμβάνετε απεριόριστους ιστότοπους και γραμματοκιβώτια, χώρο αποθήκευσης SSD 50 GB, πρόγραμμα δημιουργίας ιστοτόπων, εργαλεία AI και AutoBackup με αποθήκευση cloud. Συνδυάζει χώρο για καθημερινές λειτουργίες με πρόσθετη σιγουριά για σημαντικά δεδομένα.\n\nΤο TripleZero iT παρέχει σταθερό περιβάλλον και υποστήριξη 24/7, όποτε ο οργανισμός σας χρειάζεται βοήθεια. Διατηρήστε την online υποδομή σας οργανωμένη και έτοιμη να αναπτυχθεί."
+      "shortDescription": "– Απεριόριστες ιστοσελίδες\n– SSD χωρίς μέτρηση\n– Απεριόριστα γραμματοκιβώτια\n– Δημιουργός Ιστοσελίδων\n– Εργαλεία AI\n– Υποστήριξη 24/7\n– AutoBackup",
+      "description": "Το Shared Hosting Plus έχει σχεδιαστεί για επιχειρηματίες και αναπτυσσόμενες ομάδες που θέλουν να διαχειρίζονται πολλούς ιστότοπους και γραμματοκιβώτια χωρίς περιοριστικά όρια.\n\nΜε απεριόριστους ιστότοπους, χώρο αποθήκευσης SSD και γραμματοκιβώτια, καθώς και ένα εργαλείο δημιουργίας ιστοτόπων, εργαλεία AI και AutoBackup, έχετε την ευελιξία να προσθέτετε έργα και επικοινωνία καθώς μεγαλώνετε.\n\nΤο TripleZero iT προσφέρει ένα προσβάσιμο, αξιόπιστο ίδρυμα φιλοξενίας με υποστήριξη 24/7. Το ψηφιακό σας περιβάλλον μπορεί να επεκταθεί χωρίς να κάνει την καθημερινή διαχείριση περίπλοκη."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– Απεριόριστες ιστοσελίδες\n– SSD χωρίς μέτρηση\n– Απεριόριστα γραμματοκιβώτια\n– Δημιουργός Ιστοσελίδων\n– Εργαλεία AI\n– Υποστήριξη 24/7\n– AutoBackup",
-      "description": "Το Shared Hosting Business έχει σχεδιαστεί για επιχειρηματίες και αναπτυσσόμενες ομάδες που θέλουν να διαχειρίζονται πολλούς ιστότοπους και γραμματοκιβώτια χωρίς περιοριστικά όρια.\n\nΜε απεριόριστους ιστότοπους, χώρο αποθήκευσης SSD και γραμματοκιβώτια, καθώς και ένα εργαλείο δημιουργίας ιστοτόπων, εργαλεία AI και AutoBackup, έχετε την ευελιξία να προσθέτετε έργα και επικοινωνία καθώς μεγαλώνετε.\n\nΤο TripleZero iT προσφέρει ένα προσβάσιμο, αξιόπιστο ίδρυμα φιλοξενίας με υποστήριξη 24/7. Το ψηφιακό σας περιβάλλον μπορεί να επεκταθεί χωρίς να κάνει την καθημερινή διαχείριση περίπλοκη."
+      "shortDescription": "– Απεριόριστες ιστοσελίδες\n– 50 GB SSD\n– Απεριόριστα γραμματοκιβώτια\n– Δημιουργός Ιστοσελίδων\n– Εργαλεία AI\n– Υποστήριξη 24/7\n– AutoBackup & Cloud Storage",
+      "description": "Το Shared Hosting Business ταιριάζει σε οργανισμούς που θέλουν να φιλοξενούν πολλούς ιστότοπους, email και αρχεία κεντρικά και επαγγελματικά.\n\nΛαμβάνετε απεριόριστους ιστότοπους και γραμματοκιβώτια, χώρο αποθήκευσης SSD 50 GB, πρόγραμμα δημιουργίας ιστοτόπων, εργαλεία AI και AutoBackup με αποθήκευση cloud. Συνδυάζει χώρο για καθημερινές λειτουργίες με πρόσθετη σιγουριά για σημαντικά δεδομένα.\n\nΤο TripleZero iT παρέχει σταθερό περιβάλλον και υποστήριξη 24/7, όποτε ο οργανισμός σας χρειάζεται βοήθεια. Διατηρήστε την online υποδομή σας οργανωμένη και έτοιμη να αναπτυχθεί."
     },
     "vps-hosting-basic": {
       "name": "Βασική Φιλοξενία VPS",
@@ -803,13 +803,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– Nieograniczona liczba stron internetowych\n– Dysk SSD 50GB\n– Nieograniczona liczba skrzynek pocztowych\n– Kreator stron internetowych\n– Narzędzia AI\n– Wsparcie 24/7\n– Automatyczna kopia zapasowa i przechowywanie w chmurze",
-      "description": "Shared Hosting Plus jest odpowiedni dla organizacji, które chcą centralnie i profesjonalnie hostować wiele witryn internetowych, poczty e-mail i plików.\n\nOtrzymujesz nieograniczoną liczbę stron internetowych i skrzynek pocztowych, 50 GB miejsca na dysku SSD, narzędzie do tworzenia stron internetowych, narzędzia AI i funkcję AutoBackup z magazynem w chmurze. Łączy w sobie miejsce na codzienne operacje z dodatkową gwarancją bezpieczeństwa ważnych danych.\n\nTripleZero iT zapewnia stabilne środowisko i wsparcie 24/7, gdy Twoja organizacja potrzebuje pomocy. Utrzymuj infrastrukturę online zorganizowaną i gotową do rozwoju."
+      "shortDescription": "– Nieograniczona liczba stron internetowych\n– Niezmierzony dysk SSD\n– Nieograniczona liczba skrzynek pocztowych\n– Kreator stron internetowych\n– Narzędzia AI\n– Wsparcie 24/7\n– Automatyczna kopia zapasowa",
+      "description": "Shared Hosting Plus jest przeznaczony dla przedsiębiorców i rozwijających się zespołów, które chcą zarządzać wieloma witrynami internetowymi i skrzynkami pocztowymi bez restrykcyjnych limitów.\n\nDzięki nieograniczonej liczbie stron internetowych, pamięci SSD i skrzynce pocztowej, a także narzędziu do tworzenia witryn internetowych, narzędziom AI i funkcji AutoBackup, masz elastyczność dodawania projektów i komunikacji w miarę rozwoju.\n\nTripleZero iT zapewnia dostępną, niezawodną podstawę hostingową z całodobową obsługą. Twoje środowisko cyfrowe może się rozwijać bez komplikowania codziennej administracji."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– Nieograniczona liczba stron internetowych\n– Niezmierzony dysk SSD\n– Nieograniczona liczba skrzynek pocztowych\n– Kreator stron internetowych\n– Narzędzia AI\n– Wsparcie 24/7\n– Automatyczna kopia zapasowa",
-      "description": "Shared Hosting Business jest przeznaczony dla przedsiębiorców i rozwijających się zespołów, które chcą zarządzać wieloma witrynami internetowymi i skrzynkami pocztowymi bez restrykcyjnych limitów.\n\nDzięki nieograniczonej liczbie stron internetowych, pamięci SSD i skrzynce pocztowej, a także narzędziu do tworzenia witryn internetowych, narzędziom AI i funkcji AutoBackup, masz elastyczność dodawania projektów i komunikacji w miarę rozwoju.\n\nTripleZero iT zapewnia dostępną, niezawodną podstawę hostingową z całodobową obsługą. Twoje środowisko cyfrowe może się rozwijać bez komplikowania codziennej administracji."
+      "shortDescription": "– Nieograniczona liczba stron internetowych\n– Dysk SSD 50GB\n– Nieograniczona liczba skrzynek pocztowych\n– Kreator stron internetowych\n– Narzędzia AI\n– Wsparcie 24/7\n– Automatyczna kopia zapasowa i przechowywanie w chmurze",
+      "description": "Shared Hosting Business jest odpowiedni dla organizacji, które chcą centralnie i profesjonalnie hostować wiele witryn internetowych, poczty e-mail i plików.\n\nOtrzymujesz nieograniczoną liczbę stron internetowych i skrzynek pocztowych, 50 GB miejsca na dysku SSD, narzędzie do tworzenia stron internetowych, narzędzia AI i funkcję AutoBackup z magazynem w chmurze. Łączy w sobie miejsce na codzienne operacje z dodatkową gwarancją bezpieczeństwa ważnych danych.\n\nTripleZero iT zapewnia stabilne środowisko i wsparcie 24/7, gdy Twoja organizacja potrzebuje pomocy. Utrzymuj infrastrukturę online zorganizowaną i gotową do rozwoju."
     },
     "vps-hosting-basic": {
       "name": "Hosting VPS Basic",
@@ -900,13 +900,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– Neomezené webové stránky\n– 50 GB SSD\n– Neomezené poštovní schránky\n– Tvůrce webových stránek\n– Nástroje AI\n– Podpora 24/7\n– Automatické zálohování a cloudové úložiště",
-      "description": "Shared Hosting Plus vyhovuje organizacím, které chtějí centrálně a profesionálně hostovat více webových stránek, e-mailů a souborů.\n\nZískáte neomezený počet webových stránek a poštovních schránek, 50 GB úložiště SSD, nástroj pro tvorbu webových stránek, nástroje AI a AutoBackup s cloudovým úložištěm. Kombinuje prostor pro každodenní operace s přidanou jistotou pro důležitá data.\n\nTripleZero iT poskytuje stabilní prostředí a nepřetržitou podporu, kdykoli vaše organizace potřebuje pomoc. Udržujte svou online infrastrukturu organizovanou a připravenou k růstu."
+      "shortDescription": "– Neomezené webové stránky\n– Neměřený SSD\n– Neomezené poštovní schránky\n– Tvůrce webových stránek\n– Nástroje AI\n– Podpora 24/7\n– Automatické zálohování",
+      "description": "Shared Hosting Plus je vytvořen pro podnikatele a rostoucí týmy, které chtějí spravovat více webových stránek a poštovních schránek bez omezujících omezení.\n\nDíky neomezenému počtu webů, úložišti SSD a poštovním schránkám a navíc nástroji pro tvorbu webových stránek, nástrojům AI a AutoBackup máte flexibilitu přidávat projekty a komunikaci, jak budete růst.\n\nTripleZero iT poskytuje dostupnou a spolehlivou hostingovou základnu s nepřetržitou podporou. Vaše digitální prostředí se může rozšířit, aniž by byla každodenní správa komplikovaná."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– Neomezené webové stránky\n– Neměřený SSD\n– Neomezené poštovní schránky\n– Tvůrce webových stránek\n– Nástroje AI\n– Podpora 24/7\n– Automatické zálohování",
-      "description": "Shared Hosting Business je vytvořen pro podnikatele a rostoucí týmy, které chtějí spravovat více webových stránek a poštovních schránek bez omezujících omezení.\n\nDíky neomezenému počtu webů, úložišti SSD a poštovním schránkám a navíc nástroji pro tvorbu webových stránek, nástrojům AI a AutoBackup máte flexibilitu přidávat projekty a komunikaci, jak budete růst.\n\nTripleZero iT poskytuje dostupnou a spolehlivou hostingovou základnu s nepřetržitou podporou. Vaše digitální prostředí se může rozšířit, aniž by byla každodenní správa komplikovaná."
+      "shortDescription": "– Neomezené webové stránky\n– 50 GB SSD\n– Neomezené poštovní schránky\n– Tvůrce webových stránek\n– Nástroje AI\n– Podpora 24/7\n– Automatické zálohování a cloudové úložiště",
+      "description": "Shared Hosting Business vyhovuje organizacím, které chtějí centrálně a profesionálně hostovat více webových stránek, e-mailů a souborů.\n\nZískáte neomezený počet webových stránek a poštovních schránek, 50 GB úložiště SSD, nástroj pro tvorbu webových stránek, nástroje AI a AutoBackup s cloudovým úložištěm. Kombinuje prostor pro každodenní operace s přidanou jistotou pro důležitá data.\n\nTripleZero iT poskytuje stabilní prostředí a nepřetržitou podporu, kdykoli vaše organizace potřebuje pomoc. Udržujte svou online infrastrukturu organizovanou a připravenou k růstu."
     },
     "vps-hosting-basic": {
       "name": "Základní hosting VPS",
@@ -997,13 +997,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "- Neobmedzené webové stránky\n– 50 GB SSD\n- Neobmedzené poštové schránky\n– Tvorca webových stránok\n- Nástroje AI\n– 24/7 podpora\n– Automatické zálohovanie a cloudové úložisko",
-      "description": "Zdieľaný hosting je vhodný pre organizácie, ktoré chcú centrálne a profesionálne hostiť viacero webových stránok, e-mailov a súborov.\n\nZískate neobmedzený počet webových stránok a poštových schránok, 50 GB úložisko SSD, nástroj na tvorbu webových stránok, nástroje AI a automatické zálohovanie s cloudovým úložiskom. Spája priestor pre každodenné operácie s dodatočnou istotou pre dôležité údaje.\n\nTripleZero iT poskytuje stabilné prostredie a 24/7 podporu vždy, keď vaša organizácia potrebuje pomoc. Udržujte svoju online infraštruktúru organizovanú a pripravenú na rast."
+      "shortDescription": "- Neobmedzené webové stránky\n– Nemeraný SSD\n- Neobmedzené poštové schránky\n– Tvorca webových stránok\n- Nástroje AI\n– 24/7 podpora\n– Automatické zálohovanie",
+      "description": "Shared Hosting Plus je vytvorený pre podnikateľov a rastúce tímy, ktoré chcú spravovať viacero webových stránok a poštových schránok bez obmedzujúcich obmedzení.\n\nVďaka neobmedzeným webovým stránkam, úložiskám SSD a poštovým schránkam, ako aj nástrojom na tvorbu webových stránok, nástrojom AI a funkcii AutoBackup máte flexibilitu na pridávanie projektov a komunikácie podľa toho, ako rastiete.\n\nTripleZero iT poskytuje dostupnú a spoľahlivú hostingovú základňu s 24/7 podporou. Vaše digitálne prostredie sa môže rozšíriť bez toho, aby bola každodenná správa komplikovaná."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "- Neobmedzené webové stránky\n– Nemeraný SSD\n- Neobmedzené poštové schránky\n– Tvorca webových stránok\n- Nástroje AI\n– 24/7 podpora\n– Automatické zálohovanie",
-      "description": "Shared Hosting Business je vytvorený pre podnikateľov a rastúce tímy, ktoré chcú spravovať viacero webových stránok a poštových schránok bez obmedzujúcich obmedzení.\n\nVďaka neobmedzeným webovým stránkam, úložiskám SSD a poštovým schránkam, ako aj nástrojom na tvorbu webových stránok, nástrojom AI a funkcii AutoBackup máte flexibilitu na pridávanie projektov a komunikácie podľa toho, ako rastiete.\n\nTripleZero iT poskytuje dostupnú a spoľahlivú hostingovú základňu s 24/7 podporou. Vaše digitálne prostredie sa môže rozšíriť bez toho, aby bola každodenná správa komplikovaná."
+      "shortDescription": "- Neobmedzené webové stránky\n– 50 GB SSD\n- Neobmedzené poštové schránky\n– Tvorca webových stránok\n- Nástroje AI\n– 24/7 podpora\n– Automatické zálohovanie a cloudové úložisko",
+      "description": "Zdieľaný hosting je vhodný pre organizácie, ktoré chcú centrálne a profesionálne hostiť viacero webových stránok, e-mailov a súborov.\n\nZískate neobmedzený počet webových stránok a poštových schránok, 50 GB úložisko SSD, nástroj na tvorbu webových stránok, nástroje AI a automatické zálohovanie s cloudovým úložiskom. Spája priestor pre každodenné operácie s dodatočnou istotou pre dôležité údaje.\n\nTripleZero iT poskytuje stabilné prostredie a 24/7 podporu vždy, keď vaša organizácia potrebuje pomoc. Udržujte svoju online infraštruktúru organizovanú a pripravenú na rast."
     },
     "vps-hosting-basic": {
       "name": "VPS Hosting Basic",
@@ -1094,13 +1094,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "- Korlátlan számú webhely\n- 50 GB SSD\n- Korlátlan számú postafiók\n– Weboldalkészítő\n– AI eszközök\n– 24 órás támogatás\n– AutoBackup és Cloud Storage",
-      "description": "A Shared Hosting Plus olyan szervezeteknek felel meg, amelyek több webhelyet, e-maileket és fájlokat szeretnének központilag és professzionálisan tárolni.\n\nKorlátlan számú webhelyet és postafiókot, 50 GB SSD-tárhelyet, webhelykészítőt, mesterséges intelligencia-eszközöket és AutoBackup-ot felhőtárhellyel kap. Egyesíti a teret a napi műveletekhez a fontos adatok további biztonságával.\n\nA TripleZero iT stabil környezetet és 24 órás támogatást biztosít, amikor szervezetének segítségre van szüksége. Tartsa szervezett online infrastruktúráját, és készen áll a növekedésre."
+      "shortDescription": "- Korlátlan számú webhely\n- Méretlen SSD\n- Korlátlan számú postafiók\n– Weboldalkészítő\n– AI eszközök\n– 24 órás támogatás\n– Automatikus biztonsági mentés",
+      "description": "A Shared Hosting Plus olyan vállalkozók és növekvő csapatok számára készült, akik több webhelyet és postafiókot kívánnak kezelni korlátozások nélkül.\n\nA korlátlan számú webhely, az SSD-tárhely és a postafiókok, valamint a webhelykészítő, az AI-eszközök és az AutoBackup segítségével rugalmasan bővítheti projektjeit és kommunikációját a növekedés során.\n\nA TripleZero iT elérhető, megbízható tárhely-alapot biztosít a hét minden napján, 24 órájában. Digitális környezete bővülhet anélkül, hogy bonyolulttá tenné a napi adminisztrációt."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "- Korlátlan számú webhely\n- Méretlen SSD\n- Korlátlan számú postafiók\n– Weboldalkészítő\n– AI eszközök\n– 24 órás támogatás\n– Automatikus biztonsági mentés",
-      "description": "A Shared Hosting Business olyan vállalkozók és növekvő csapatok számára készült, akik több webhelyet és postafiókot kívánnak kezelni korlátozások nélkül.\n\nA korlátlan számú webhely, az SSD-tárhely és a postafiókok, valamint a webhelykészítő, az AI-eszközök és az AutoBackup segítségével rugalmasan bővítheti projektjeit és kommunikációját a növekedés során.\n\nA TripleZero iT elérhető, megbízható tárhely-alapot biztosít a hét minden napján, 24 órájában. Digitális környezete bővülhet anélkül, hogy bonyolulttá tenné a napi adminisztrációt."
+      "shortDescription": "- Korlátlan számú webhely\n- 50 GB SSD\n- Korlátlan számú postafiók\n– Weboldalkészítő\n– AI eszközök\n– 24 órás támogatás\n– AutoBackup és Cloud Storage",
+      "description": "A Shared Hosting Business olyan szervezeteknek felel meg, amelyek több webhelyet, e-maileket és fájlokat szeretnének központilag és professzionálisan tárolni.\n\nKorlátlan számú webhelyet és postafiókot, 50 GB SSD-tárhelyet, webhelykészítőt, mesterséges intelligencia-eszközöket és AutoBackup-ot felhőtárhellyel kap. Egyesíti a teret a napi műveletekhez a fontos adatok további biztonságával.\n\nA TripleZero iT stabil környezetet és 24 órás támogatást biztosít, amikor szervezetének segítségre van szüksége. Tartsa szervezett online infrastruktúráját, és készen áll a növekedésre."
     },
     "vps-hosting-basic": {
       "name": "VPS hosting alap",
@@ -1191,13 +1191,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– Site-uri web nelimitate\n– SSD de 50 GB\n– Cutii poștale nelimitate\n– Creator de site-uri web\n– Instrumente AI\n– Asistență 24/7\n– AutoBackup și stocare în cloud",
-      "description": "Shared Hosting Plus se potrivește organizațiilor care doresc să găzduiască mai multe site-uri web, e-mail și fișiere central și profesional.\n\nPrimești site-uri web și cutii poștale nelimitate, stocare SSD de 50 GB, un generator de site-uri web, instrumente AI și AutoBackup cu stocare în cloud. Combină spațiul pentru operațiunile zilnice cu o siguranță suplimentară pentru datele importante.\n\nTripleZero iT oferă un mediu stabil și asistență 24/7 ori de câte ori organizația dvs. are nevoie de asistență. Păstrați-vă infrastructura online organizată și pregătită să crească."
+      "shortDescription": "– Site-uri web nelimitate\n– SSD necontorizat\n– Cutii poștale nelimitate\n– Creator de site-uri web\n– Instrumente AI\n– Asistență 24/7\n– Backup automat",
+      "description": "Shared Hosting Plus este creat pentru antreprenori și echipe în creștere care doresc să gestioneze mai multe site-uri web și cutii poștale fără limite restrictive.\n\nCu site-uri web nelimitate, stocare SSD și cutii poștale, plus un generator de site-uri web, instrumente AI și AutoBackup, aveți flexibilitatea de a adăuga proiecte și comunicare pe măsură ce creșteți.\n\nTripleZero iT oferă o bază de găzduire accesibilă, de încredere, cu asistență 24/7. Mediul dumneavoastră digital se poate extinde fără a complica administrarea zilnică."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– Site-uri web nelimitate\n– SSD necontorizat\n– Cutii poștale nelimitate\n– Creator de site-uri web\n– Instrumente AI\n– Asistență 24/7\n– Backup automat",
-      "description": "Shared Hosting Business este creat pentru antreprenori și echipe în creștere care doresc să gestioneze mai multe site-uri web și cutii poștale fără limite restrictive.\n\nCu site-uri web nelimitate, stocare SSD și cutii poștale, plus un generator de site-uri web, instrumente AI și AutoBackup, aveți flexibilitatea de a adăuga proiecte și comunicare pe măsură ce creșteți.\n\nTripleZero iT oferă o bază de găzduire accesibilă, de încredere, cu asistență 24/7. Mediul dumneavoastră digital se poate extinde fără a complica administrarea zilnică."
+      "shortDescription": "– Site-uri web nelimitate\n– SSD de 50 GB\n– Cutii poștale nelimitate\n– Creator de site-uri web\n– Instrumente AI\n– Asistență 24/7\n– AutoBackup și stocare în cloud",
+      "description": "Shared Hosting Business se potrivește organizațiilor care doresc să găzduiască mai multe site-uri web, e-mail și fișiere central și profesional.\n\nPrimești site-uri web și cutii poștale nelimitate, stocare SSD de 50 GB, un generator de site-uri web, instrumente AI și AutoBackup cu stocare în cloud. Combină spațiul pentru operațiunile zilnice cu o siguranță suplimentară pentru datele importante.\n\nTripleZero iT oferă un mediu stabil și asistență 24/7 ori de câte ori organizația dvs. are nevoie de asistență. Păstrați-vă infrastructura online organizată și pregătită să crească."
     },
     "vps-hosting-basic": {
       "name": "Găzduire VPS de bază",
@@ -1288,13 +1288,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– Неограничен брой уебсайтове\n– 50 GB SSD\n– Неограничени пощенски кутии\n– Създател на уебсайтове\n– AI инструменти\n– 24/7 поддръжка\n– Автоматично архивиране и облачно съхранение",
-      "description": "Бизнесът със споделен хостинг е подходящ за организации, които искат да хостват множество уебсайтове, имейли и файлове централно и професионално.\n\nПолучавате неограничен брой уебсайтове и пощенски кутии, 50 GB SSD хранилище, програма за създаване на уебсайтове, AI инструменти и AutoBackup с облачно съхранение. Той съчетава място за ежедневни операции с допълнителна увереност за важни данни.\n\nTripleZero iT осигурява стабилна среда и 24/7 поддръжка, когато вашата организация се нуждае от помощ. Поддържайте своята онлайн инфраструктура организирана и готова за растеж."
+      "shortDescription": "– Неограничен брой уебсайтове\n– SSD без измерване\n– Неограничени пощенски кутии\n– Създател на уебсайтове\n– AI инструменти\n– 24/7 поддръжка\n– Автоматично архивиране",
+      "description": "Споделеният хостинг Plus е създаден за предприемачи и разрастващи се екипи, които искат да управляват множество уебсайтове и пощенски кутии без ограничителни ограничения.\n\nС неограничени уебсайтове, SSD хранилище и пощенски кутии, плюс създател на уебсайтове, AI инструменти и AutoBackup, имате гъвкавостта да добавяте проекти и комуникация, докато растете.\n\nTripleZero iT предоставя достъпна, надеждна хостинг основа с поддръжка 24/7. Вашата цифрова среда може да се разшири, без да усложнява ежедневната администрация."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– Неограничен брой уебсайтове\n– SSD без измерване\n– Неограничени пощенски кутии\n– Създател на уебсайтове\n– AI инструменти\n– 24/7 поддръжка\n– Автоматично архивиране",
-      "description": "Споделеният хостинг Plus е създаден за предприемачи и разрастващи се екипи, които искат да управляват множество уебсайтове и пощенски кутии без ограничителни ограничения.\n\nС неограничени уебсайтове, SSD хранилище и пощенски кутии, плюс създател на уебсайтове, AI инструменти и AutoBackup, имате гъвкавостта да добавяте проекти и комуникация, докато растете.\n\nTripleZero iT предоставя достъпна, надеждна хостинг основа с поддръжка 24/7. Вашата цифрова среда може да се разшири, без да усложнява ежедневната администрация."
+      "shortDescription": "– Неограничен брой уебсайтове\n– 50 GB SSD\n– Неограничени пощенски кутии\n– Създател на уебсайтове\n– AI инструменти\n– 24/7 поддръжка\n– Автоматично архивиране и облачно съхранение",
+      "description": "Бизнесът със споделен хостинг е подходящ за организации, които искат да хостват множество уебсайтове, имейли и файлове централно и професионално.\n\nПолучавате неограничен брой уебсайтове и пощенски кутии, 50 GB SSD хранилище, програма за създаване на уебсайтове, AI инструменти и AutoBackup с облачно съхранение. Той съчетава място за ежедневни операции с допълнителна увереност за важни данни.\n\nTripleZero iT осигурява стабилна среда и 24/7 поддръжка, когато вашата организация се нуждае от помощ. Поддържайте своята онлайн инфраструктура организирана и готова за растеж."
     },
     "vps-hosting-basic": {
       "name": "Основен хостинг на VPS",
@@ -1385,13 +1385,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– Neograničene web stranice\n– SSD od 50 GB\n– Neograničeni poštanski sandučići\n– Graditelj web stranice\n– AI Alati\n– Podrška 24/7\n– AutoBackup & Cloud Storage",
-      "description": "Shared Hosting Plus odgovara organizacijama koje žele centralno i profesionalno ugostiti više web stranica, e-poštu i datoteke.\n\nDobivate neograničen broj web stranica i poštanskih sandučića, 50 GB SSD pohrane, alat za izradu web stranica, AI alate i AutoBackup s pohranom u oblaku. Kombinira prostor za dnevne operacije s dodatnom sigurnošću za važne podatke.\n\nTripleZero iT pruža stabilno okruženje i podršku 24/7 kad god vaša organizacija treba pomoć. Držite svoju online infrastrukturu organiziranom i spremnom za rast."
+      "shortDescription": "– Neograničene web stranice\n– SSD bez mjerenja\n– Neograničeni poštanski sandučići\n– Graditelj web stranice\n– AI Alati\n– Podrška 24/7\n– AutoBackup",
+      "description": "Shared Hosting Plus izgrađen je za poduzetnike i rastuće timove koji žele upravljati s više web stranica i poštanskih sandučića bez ograničavajućih ograničenja.\n\nS neograničenim brojem web-mjesta, SSD pohranom i poštanskim sandučićima, plus programom za izradu web-mjesta, AI alatima i AutoBackupom, imate fleksibilnost dodavanja projekata i komunikacije kako rastete.\n\nTripleZero iT pruža pristupačnu, pouzdanu osnovu za hosting s podrškom 24/7. Vaše digitalno okruženje može se proširiti bez kompliciranja dnevne administracije."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– Neograničene web stranice\n– SSD bez mjerenja\n– Neograničeni poštanski sandučići\n– Graditelj web stranice\n– AI Alati\n– Podrška 24/7\n– AutoBackup",
-      "description": "Shared Hosting Business izgrađen je za poduzetnike i rastuće timove koji žele upravljati s više web stranica i poštanskih sandučića bez ograničavajućih ograničenja.\n\nS neograničenim brojem web-mjesta, SSD pohranom i poštanskim sandučićima, plus programom za izradu web-mjesta, AI alatima i AutoBackupom, imate fleksibilnost dodavanja projekata i komunikacije kako rastete.\n\nTripleZero iT pruža pristupačnu, pouzdanu osnovu za hosting s podrškom 24/7. Vaše digitalno okruženje može se proširiti bez kompliciranja dnevne administracije."
+      "shortDescription": "– Neograničene web stranice\n– SSD od 50 GB\n– Neograničeni poštanski sandučići\n– Graditelj web stranice\n– AI Alati\n– Podrška 24/7\n– AutoBackup & Cloud Storage",
+      "description": "Shared Hosting Business odgovara organizacijama koje žele centralno i profesionalno ugostiti više web stranica, e-poštu i datoteke.\n\nDobivate neograničen broj web stranica i poštanskih sandučića, 50 GB SSD pohrane, alat za izradu web stranica, AI alate i AutoBackup s pohranom u oblaku. Kombinira prostor za dnevne operacije s dodatnom sigurnošću za važne podatke.\n\nTripleZero iT pruža stabilno okruženje i podršku 24/7 kad god vaša organizacija treba pomoć. Držite svoju online infrastrukturu organiziranom i spremnom za rast."
     },
     "vps-hosting-basic": {
       "name": "VPS Hosting Basic",
@@ -1482,13 +1482,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– Неограничене веб странице\n– 50 ГБ ССД\n– Неограничени поштански сандучићи\n– Креатор веб страница\n– АИ алати\n– Подршка 24/7\n– АутоБацкуп & Цлоуд Стораге",
-      "description": "Схаред Хостинг Бусинесс одговара организацијама које желе централно и професионално да хостују више веб локација, е-поште и фајлова.\n\nДобијате неограничене веб локације и поштанске сандучиће, 50 ГБ ССД складишта, програм за прављење веб локација, АИ алате и АутоБацкуп са складиштем у облаку. Комбинује простор за свакодневне операције са додатном сигурношћу за важне податке.\n\nТриплеЗеро иТ пружа стабилно окружење и подршку 24/7 кад год је вашој организацији потребна помоћ. Нека ваша онлајн инфраструктура буде организована и спремна за раст."
+      "shortDescription": "– Неограничене веб странице\n– ССД без мерења\n– Неограничени поштански сандучићи\n– Креатор веб страница\n– АИ алати\n– Подршка 24/7\n– АутоБацкуп",
+      "description": "Схаред Хостинг Плус је направљен за предузетнике и растуће тимове који желе да управљају више веб локација и поштанских сандучића без ограничења.\n\nСа неограниченим веб локацијама, ССД складиштем и поштанским сандучићима, плус програмом за прављење веб локација, АИ алатима и АутоБацкупом, имате флексибилност да додајете пројекте и комуникацију како растете.\n\nТриплеЗеро иТ пружа приступачну, поуздану основу за хостинг са подршком 24/7. Ваше дигитално окружење се може проширити без отежавања дневне администрације."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– Неограничене веб странице\n– ССД без мерења\n– Неограничени поштански сандучићи\n– Креатор веб страница\n– АИ алати\n– Подршка 24/7\n– АутоБацкуп",
-      "description": "Схаред Хостинг Плус је направљен за предузетнике и растуће тимове који желе да управљају више веб локација и поштанских сандучића без ограничења.\n\nСа неограниченим веб локацијама, ССД складиштем и поштанским сандучићима, плус програмом за прављење веб локација, АИ алатима и АутоБацкупом, имате флексибилност да додајете пројекте и комуникацију како растете.\n\nТриплеЗеро иТ пружа приступачну, поуздану основу за хостинг са подршком 24/7. Ваше дигитално окружење се може проширити без отежавања дневне администрације."
+      "shortDescription": "– Неограничене веб странице\n– 50 ГБ ССД\n– Неограничени поштански сандучићи\n– Креатор веб страница\n– АИ алати\n– Подршка 24/7\n– АутоБацкуп & Цлоуд Стораге",
+      "description": "Схаред Хостинг Бусинесс одговара организацијама које желе централно и професионално да хостују више веб локација, е-поште и фајлова.\n\nДобијате неограничене веб локације и поштанске сандучиће, 50 ГБ ССД складишта, програм за прављење веб локација, АИ алате и АутоБацкуп са складиштем у облаку. Комбинује простор за свакодневне операције са додатном сигурношћу за важне податке.\n\nТриплеЗеро иТ пружа стабилно окружење и подршку 24/7 кад год је вашој организацији потребна помоћ. Нека ваша онлајн инфраструктура буде организована и спремна за раст."
     },
     "vps-hosting-basic": {
       "name": "ВПС хостинг Басиц",
@@ -1579,13 +1579,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– Neograničene web stranice\n– 50 GB SSD\n– Neograničeni poštanski sandučići\n– Website Builder\n– AI alati\n– Podrška 24/7\n– AutoBackup & Cloud Storage",
-      "description": "Shared Hosting Plus odgovara organizacijama koje žele centralno i profesionalno ugostiti više web stranica, e-poštu i datoteke.\n\nDobijate neograničene web stranice i poštanske sandučiće, 50 GB SSD prostora za pohranu, program za izradu web stranica, AI alate i AutoBackup sa pohranom u oblaku. Kombinira prostor za svakodnevne operacije s dodatnom sigurnošću za važne podatke.\n\nTripleZero iT pruža stabilno okruženje i podršku 24/7 kad god je vašoj organizaciji potrebna pomoć. Neka vaša mrežna infrastruktura bude organizirana i spremna za rast."
+      "shortDescription": "– Neograničene web stranice\n– SSD bez ograničenja\n– Neograničeni poštanski sandučići\n– Website Builder\n– AI alati\n– Podrška 24/7\n– AutoBackup",
+      "description": "Shared Hosting Plus je napravljen za poduzetnike i rastuće timove koji žele upravljati više web stranica i poštanskih sandučića bez ograničenja.\n\nS neograničenim web lokacijama, SSD pohranom i poštanskim sandučićima, plus programom za izradu web stranica, AI alatima i AutoBackupom, imate fleksibilnost da dodajete projekte i komunikaciju kako rastete.\n\nTripleZero iT pruža pristupačnu, pouzdanu osnovu za hosting sa podrškom 24/7. Vaše digitalno okruženje se može proširiti bez kompliciranja dnevne administracije."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– Neograničene web stranice\n– SSD bez ograničenja\n– Neograničeni poštanski sandučići\n– Website Builder\n– AI alati\n– Podrška 24/7\n– AutoBackup",
-      "description": "Shared Hosting Business je napravljen za poduzetnike i rastuće timove koji žele upravljati više web stranica i poštanskih sandučića bez ograničenja.\n\nS neograničenim web lokacijama, SSD pohranom i poštanskim sandučićima, plus programom za izradu web stranica, AI alatima i AutoBackupom, imate fleksibilnost da dodajete projekte i komunikaciju kako rastete.\n\nTripleZero iT pruža pristupačnu, pouzdanu osnovu za hosting sa podrškom 24/7. Vaše digitalno okruženje se može proširiti bez kompliciranja dnevne administracije."
+      "shortDescription": "– Neograničene web stranice\n– 50 GB SSD\n– Neograničeni poštanski sandučići\n– Website Builder\n– AI alati\n– Podrška 24/7\n– AutoBackup & Cloud Storage",
+      "description": "Shared Hosting Business odgovara organizacijama koje žele centralno i profesionalno ugostiti više web stranica, e-poštu i datoteke.\n\nDobijate neograničene web stranice i poštanske sandučiće, 50 GB SSD prostora za pohranu, program za izradu web stranica, AI alate i AutoBackup sa pohranom u oblaku. Kombinira prostor za svakodnevne operacije s dodatnom sigurnošću za važne podatke.\n\nTripleZero iT pruža stabilno okruženje i podršku 24/7 kad god je vašoj organizaciji potrebna pomoć. Neka vaša mrežna infrastruktura bude organizirana i spremna za rast."
     },
     "vps-hosting-basic": {
       "name": "VPS hosting Basic",
@@ -1676,13 +1676,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– Неограничене веб странице\n– 50 ГБ ССД\n– Неограничени поштански сандучићи\n– Креатор веб страница\n– АИ алати\n– Подршка 24/7\n– АутоБацкуп & Цлоуд Стораге",
-      "description": "Схаред Хостинг Бусинесс одговара организацијама које желе централно и професионално да хостују више веб локација, е-поште и фајлова.\n\nДобијате неограничене веб локације и поштанске сандучиће, 50 ГБ ССД складишта, програм за прављење веб локација, АИ алате и АутоБацкуп са складиштем у облаку. Комбинује простор за свакодневне операције са додатном сигурношћу за важне податке.\n\nТриплеЗеро иТ пружа стабилно окружење и подршку 24/7 кад год је вашој организацији потребна помоћ. Нека ваша онлајн инфраструктура буде организована и спремна за раст."
+      "shortDescription": "– Неограничене веб странице\n– ССД без мерења\n– Неограничени поштански сандучићи\n– Креатор веб страница\n– АИ алати\n– Подршка 24/7\n– АутоБацкуп",
+      "description": "Схаред Хостинг Плус је направљен за предузетнике и растуће тимове који желе да управљају више веб локација и поштанских сандучића без ограничења.\n\nСа неограниченим веб локацијама, ССД складиштем и поштанским сандучићима, плус програмом за прављење веб локација, АИ алатима и АутоБацкупом, имате флексибилност да додајете пројекте и комуникацију како растете.\n\nТриплеЗеро иТ пружа приступачну, поуздану основу за хостинг са подршком 24/7. Ваше дигитално окружење се може проширити без отежавања дневне администрације."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– Неограничене веб странице\n– ССД без мерења\n– Неограничени поштански сандучићи\n– Креатор веб страница\n– АИ алати\n– Подршка 24/7\n– АутоБацкуп",
-      "description": "Схаред Хостинг Плус је направљен за предузетнике и растуће тимове који желе да управљају више веб локација и поштанских сандучића без ограничења.\n\nСа неограниченим веб локацијама, ССД складиштем и поштанским сандучићима, плус програмом за прављење веб локација, АИ алатима и АутоБацкупом, имате флексибилност да додајете пројекте и комуникацију како растете.\n\nТриплеЗеро иТ пружа приступачну, поуздану основу за хостинг са подршком 24/7. Ваше дигитално окружење се може проширити без отежавања дневне администрације."
+      "shortDescription": "– Неограничене веб странице\n– 50 ГБ ССД\n– Неограничени поштански сандучићи\n– Креатор веб страница\n– АИ алати\n– Подршка 24/7\n– АутоБацкуп & Цлоуд Стораге",
+      "description": "Схаред Хостинг Бусинесс одговара организацијама које желе централно и професионално да хостују више веб локација, е-поште и фајлова.\n\nДобијате неограничене веб локације и поштанске сандучиће, 50 ГБ ССД складишта, програм за прављење веб локација, АИ алате и АутоБацкуп са складиштем у облаку. Комбинује простор за свакодневне операције са додатном сигурношћу за важне податке.\n\nТриплеЗеро иТ пружа стабилно окружење и подршку 24/7 кад год је вашој организацији потребна помоћ. Нека ваша онлајн инфраструктура буде организована и спремна за раст."
     },
     "vps-hosting-basic": {
       "name": "ВПС хостинг Басиц",
@@ -1773,13 +1773,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– Uebfaqe të pakufizuara\n– 50 GB SSD\n– Kuti postare të pakufizuara\n– Ndërtues i faqes në internet\n– Mjetet e AI\n– Mbështetje 24/7\n– AutoBackup & Cloud Storage",
-      "description": "Shared Hosting Plus u përshtatet organizatave që duan të strehojnë shumë faqe interneti, email dhe skedarë në mënyrë qendrore dhe profesionale.\n\nJu merrni faqe interneti dhe kuti postare të pakufizuara, 50 GB hapësirë ​​ruajtëse SSD, një ndërtues uebsajti, mjete AI dhe AutoBackup me hapësirë ​​ruajtëse në renë kompjuterike. Ai kombinon hapësirën për operacionet e përditshme me sigurinë e shtuar për të dhëna të rëndësishme.\n\nTripleZero iT ofron një mjedis të qëndrueshëm dhe mbështetje 24/7 sa herë që organizata juaj ka nevojë për ndihmë. Mbajeni infrastrukturën tuaj në internet të organizuar dhe gati për t'u rritur."
+      "shortDescription": "– Uebfaqe të pakufizuara\n– SSD pa matje\n– Kuti postare të pakufizuara\n– Ndërtues i faqes në internet\n– Mjetet e AI\n– Mbështetje 24/7\n– AutoBackup",
+      "description": "Shared Hosting Plus është ndërtuar për sipërmarrësit dhe ekipet në rritje që duan të menaxhojnë faqet e internetit dhe kutitë postare të shumta pa kufizime kufizuese.\n\nMe uebsajte të pakufizuara, memorie SSD dhe kuti postare, plus një ndërtues uebsajti, mjete AI dhe AutoBackup, ju keni fleksibilitetin për të shtuar projekte dhe komunikim ndërsa rriteni.\n\nTripleZero iT ofron një bazë pritëse të aksesueshme dhe të besueshme me mbështetje 24/7. Mjedisi juaj dixhital mund të zgjerohet pa e komplikuar administrimin e përditshëm."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– Uebfaqe të pakufizuara\n– SSD pa matje\n– Kuti postare të pakufizuara\n– Ndërtues i faqes në internet\n– Mjetet e AI\n– Mbështetje 24/7\n– AutoBackup",
-      "description": "Shared Hosting Business është ndërtuar për sipërmarrësit dhe ekipet në rritje që duan të menaxhojnë faqet e internetit dhe kutitë postare të shumta pa kufizime kufizuese.\n\nMe uebsajte të pakufizuara, memorie SSD dhe kuti postare, plus një ndërtues uebsajti, mjete AI dhe AutoBackup, ju keni fleksibilitetin për të shtuar projekte dhe komunikim ndërsa rriteni.\n\nTripleZero iT ofron një bazë pritëse të aksesueshme dhe të besueshme me mbështetje 24/7. Mjedisi juaj dixhital mund të zgjerohet pa e komplikuar administrimin e përditshëm."
+      "shortDescription": "– Uebfaqe të pakufizuara\n– 50 GB SSD\n– Kuti postare të pakufizuara\n– Ndërtues i faqes në internet\n– Mjetet e AI\n– Mbështetje 24/7\n– AutoBackup & Cloud Storage",
+      "description": "Shared Hosting Business u përshtatet organizatave që duan të strehojnë shumë faqe interneti, email dhe skedarë në mënyrë qendrore dhe profesionale.\n\nJu merrni faqe interneti dhe kuti postare të pakufizuara, 50 GB hapësirë ​​ruajtëse SSD, një ndërtues uebsajti, mjete AI dhe AutoBackup me hapësirë ​​ruajtëse në renë kompjuterike. Ai kombinon hapësirën për operacionet e përditshme me sigurinë e shtuar për të dhëna të rëndësishme.\n\nTripleZero iT ofron një mjedis të qëndrueshëm dhe mbështetje 24/7 sa herë që organizata juaj ka nevojë për ndihmë. Mbajeni infrastrukturën tuaj në internet të organizuar dhe gati për t'u rritur."
     },
     "vps-hosting-basic": {
       "name": "Bazike për pritjen e vizitorëve në VPS",
@@ -1870,13 +1870,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "- Неограничени веб-страници\n- 50 GB SSD\n- Неограничени поштенски сандачиња\n– Градител на веб-страници\n– Алатки за вештачка интелигенција\n– Поддршка 24/7\n– Автоматска резервна копија и складирање во облак",
-      "description": "Заедничкиот бизнис со хостинг одговара на организации кои сакаат да хостираат повеќе веб-локации, е-пошта и датотеки централно и професионално.\n\nДобивате неограничени веб-локации и поштенски сандачиња, складирање на SSD од 50 GB, градител на веб-локации, алатки за вештачка интелигенција и AutoBackup со складирање во облак. Комбинира простор за дневни операции со дополнителна сигурност за важни податоци.\n\nTripleZero iT обезбедува стабилна средина и 24/7 поддршка секогаш кога вашата организација има потреба од помош. Чувајте ја вашата онлајн инфраструктура организирана и подготвена да расте."
+      "shortDescription": "- Неограничени веб-страници\n– Немерен SSD\n- Неограничени поштенски сандачиња\n– Градител на веб-страници\n– Алатки за вештачка интелигенција\n– Поддршка 24/7\n– Автоматска резервна копија",
+      "description": "Shared Hosting Plus е создаден за претприемачи и растечки тимови кои сакаат да управуваат со повеќе веб-страници и поштенски сандачиња без рестриктивни ограничувања.\n\nСо неограничени веб-локации, складирање SSD и поштенски сандачиња, плус градител на веб-локации, алатки за вештачка интелигенција и AutoBackup, имате флексибилност да додавате проекти и комуникација додека растете.\n\nTripleZero iT обезбедува пристапна, доверлива основа за хостирање со поддршка 24/7. Вашата дигитална средина може да се прошири без да ја комплицира секојдневната администрација."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "- Неограничени веб-страници\n– Немерен SSD\n- Неограничени поштенски сандачиња\n– Градител на веб-страници\n– Алатки за вештачка интелигенција\n– Поддршка 24/7\n– Автоматска резервна копија",
-      "description": "Shared Hosting Business е создаден за претприемачи и растечки тимови кои сакаат да управуваат со повеќе веб-страници и поштенски сандачиња без рестриктивни ограничувања.\n\nСо неограничени веб-локации, складирање SSD и поштенски сандачиња, плус градител на веб-локации, алатки за вештачка интелигенција и AutoBackup, имате флексибилност да додавате проекти и комуникација додека растете.\n\nTripleZero iT обезбедува пристапна, доверлива основа за хостирање со поддршка 24/7. Вашата дигитална средина може да се прошири без да ја комплицира секојдневната администрација."
+      "shortDescription": "- Неограничени веб-страници\n- 50 GB SSD\n- Неограничени поштенски сандачиња\n– Градител на веб-страници\n– Алатки за вештачка интелигенција\n– Поддршка 24/7\n– Автоматска резервна копија и складирање во облак",
+      "description": "Заедничкиот бизнис со хостинг одговара на организации кои сакаат да хостираат повеќе веб-локации, е-пошта и датотеки централно и професионално.\n\nДобивате неограничени веб-локации и поштенски сандачиња, складирање на SSD од 50 GB, градител на веб-локации, алатки за вештачка интелигенција и AutoBackup со складирање во облак. Комбинира простор за дневни операции со дополнителна сигурност за важни податоци.\n\nTripleZero iT обезбедува стабилна средина и 24/7 поддршка секогаш кога вашата организација има потреба од помош. Чувајте ја вашата онлајн инфраструктура организирана и подготвена да расте."
     },
     "vps-hosting-basic": {
       "name": "Основно угостување преку VPS",
@@ -1967,13 +1967,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "- Neribotas svetainių skaičius\n- 50 GB SSD\n- Neribotas pašto dėžučių skaičius\n– Svetainių kūrėjas\n- AI įrankiai\n– Palaikymas visą parą\n- Automatinis atsarginis kopijavimas ir saugykla debesyje",
-      "description": "Bendrojo prieglobos verslas tinka organizacijoms, kurios nori centralizuotai ir profesionaliai priglobti kelias svetaines, el. paštą ir failus.\n\nGaunate neribotą svetainių ir pašto dėžučių skaičių, 50 GB SSD saugyklą, svetainių kūrimo priemonę, AI įrankius ir automatinę atsarginę kopiją su saugykla debesyje. Jame yra erdvė kasdienėms operacijoms ir papildomas užtikrinimas svarbiems duomenims.\n\n„TripleZero iT“ suteikia stabilią aplinką ir palaikymą visą parą, 7 dienas per savaitę, kai jūsų organizacijai reikia pagalbos. Tvarkykite savo internetinę infrastruktūrą ir pasiruoškite augti."
+      "shortDescription": "- Neribotas svetainių skaičius\n- Nematuojamas SSD\n- Neribotas pašto dėžučių skaičius\n– Svetainių kūrėjas\n- AI įrankiai\n– Palaikymas visą parą\n- Automatinis atsarginis kopijavimas",
+      "description": "Shared Hosting Plus sukurta verslininkams ir augančioms komandoms, norinčioms valdyti kelias svetaines ir pašto dėžutes be ribojančių apribojimų.\n\nTurėdami neribotą svetainių skaičių, SSD saugyklą ir pašto dėžutes, taip pat svetainių kūrimo priemonę, AI įrankius ir automatinę atsarginę kopiją, galite lanksčiai pridėti projektų ir bendrauti, kai augate.\n\n„TripleZero iT“ siūlo prieinamą, patikimą prieglobos pagrindą su 24 valandas per parą, 7 dienas per savaitę. Jūsų skaitmeninė aplinka gali plėstis nesudėtinant kasdienio administravimo."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "- Neribotas svetainių skaičius\n- Nematuojamas SSD\n- Neribotas pašto dėžučių skaičius\n– Svetainių kūrėjas\n- AI įrankiai\n– Palaikymas visą parą\n- Automatinis atsarginis kopijavimas",
-      "description": "Shared Hosting Business sukurta verslininkams ir augančioms komandoms, norinčioms valdyti kelias svetaines ir pašto dėžutes be ribojančių apribojimų.\n\nTurėdami neribotą svetainių skaičių, SSD saugyklą ir pašto dėžutes, taip pat svetainių kūrimo priemonę, AI įrankius ir automatinę atsarginę kopiją, galite lanksčiai pridėti projektų ir bendrauti, kai augate.\n\n„TripleZero iT“ siūlo prieinamą, patikimą prieglobos pagrindą su 24 valandas per parą, 7 dienas per savaitę. Jūsų skaitmeninė aplinka gali plėstis nesudėtinant kasdienio administravimo."
+      "shortDescription": "- Neribotas svetainių skaičius\n- 50 GB SSD\n- Neribotas pašto dėžučių skaičius\n– Svetainių kūrėjas\n- AI įrankiai\n– Palaikymas visą parą\n- Automatinis atsarginis kopijavimas ir saugykla debesyje",
+      "description": "Bendrojo prieglobos verslas tinka organizacijoms, kurios nori centralizuotai ir profesionaliai priglobti kelias svetaines, el. paštą ir failus.\n\nGaunate neribotą svetainių ir pašto dėžučių skaičių, 50 GB SSD saugyklą, svetainių kūrimo priemonę, AI įrankius ir automatinę atsarginę kopiją su saugykla debesyje. Jame yra erdvė kasdienėms operacijoms ir papildomas užtikrinimas svarbiems duomenims.\n\n„TripleZero iT“ suteikia stabilią aplinką ir palaikymą visą parą, 7 dienas per savaitę, kai jūsų organizacijai reikia pagalbos. Tvarkykite savo internetinę infrastruktūrą ir pasiruoškite augti."
     },
     "vps-hosting-basic": {
       "name": "VPS Hosting Basic",
@@ -2064,13 +2064,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– Ubegrænset websteder\n– 50 GB SSD\n– Ubegrænsede postkasser\n– Hjemmesidebygger\n– AI-værktøjer\n– 24/7 support\n– AutoBackup & Cloud Storage",
-      "description": "Shared Hosting Plus passer til organisationer, der ønsker at hoste flere websteder, e-mail og filer centralt og professionelt.\n\nDu modtager et ubegrænset antal hjemmesider og postkasser, 50 GB SSD-lagerplads, en hjemmesidebygger, AI-værktøjer og AutoBackup med cloud-lagring. Den kombinerer plads til daglig drift med øget sikkerhed for vigtige data.\n\nTripleZero iT giver et stabilt miljø og 24/7 support, når din organisation har brug for assistance. Hold din online infrastruktur organiseret og klar til at vokse."
+      "shortDescription": "– Ubegrænset websteder\n– Umålt SSD\n– Ubegrænsede postkasser\n– Hjemmesidebygger\n– AI-værktøjer\n– 24/7 support\n– Autobackup",
+      "description": "Shared Hosting Plus er bygget til iværksættere og voksende teams, der ønsker at administrere flere websteder og postkasser uden restriktive begrænsninger.\n\nMed ubegrænset websteder, SSD-lagring og postkasser, plus en webstedsbygger, AI-værktøjer og AutoBackup, har du fleksibiliteten til at tilføje projekter og kommunikation, efterhånden som du vokser.\n\nTripleZero iT leverer et tilgængeligt, pålideligt hostingfundament med 24/7 support. Dit digitale miljø kan udvides uden at gøre den daglige administration kompliceret."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– Ubegrænset websteder\n– Umålt SSD\n– Ubegrænsede postkasser\n– Hjemmesidebygger\n– AI-værktøjer\n– 24/7 support\n– Autobackup",
-      "description": "Shared Hosting Business er bygget til iværksættere og voksende teams, der ønsker at administrere flere websteder og postkasser uden restriktive begrænsninger.\n\nMed ubegrænset websteder, SSD-lagring og postkasser, plus en webstedsbygger, AI-værktøjer og AutoBackup, har du fleksibiliteten til at tilføje projekter og kommunikation, efterhånden som du vokser.\n\nTripleZero iT leverer et tilgængeligt, pålideligt hostingfundament med 24/7 support. Dit digitale miljø kan udvides uden at gøre den daglige administration kompliceret."
+      "shortDescription": "– Ubegrænset websteder\n– 50 GB SSD\n– Ubegrænsede postkasser\n– Hjemmesidebygger\n– AI-værktøjer\n– 24/7 support\n– AutoBackup & Cloud Storage",
+      "description": "Shared Hosting Business passer til organisationer, der ønsker at hoste flere websteder, e-mail og filer centralt og professionelt.\n\nDu modtager et ubegrænset antal hjemmesider og postkasser, 50 GB SSD-lagerplads, en hjemmesidebygger, AI-værktøjer og AutoBackup med cloud-lagring. Den kombinerer plads til daglig drift med øget sikkerhed for vigtige data.\n\nTripleZero iT giver et stabilt miljø og 24/7 support, når din organisation har brug for assistance. Hold din online infrastruktur organiseret og klar til at vokse."
     },
     "vps-hosting-basic": {
       "name": "VPS Hosting Basic",
@@ -2161,13 +2161,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– Obegränsat antal webbplatser\n– 50 GB SSD\n– Obegränsade brevlådor\n– Webbplatsbyggare\n– AI-verktyg\n– Support dygnet runt\n– Autobackup och molnlagring",
-      "description": "Shared Hosting Plus passar organisationer som vill ha flera webbplatser, e-post och filer centralt och professionellt.\n\nDu får obegränsat med webbplatser och brevlådor, 50 GB SSD-lagring, en webbplatsbyggare, AI-verktyg och AutoBackup med molnlagring. Den kombinerar utrymme för daglig verksamhet med extra trygghet för viktig data.\n\nTripleZero iT ger en stabil miljö och 24/7 support närhelst din organisation behöver hjälp. Håll din onlineinfrastruktur organiserad och redo att växa."
+      "shortDescription": "– Obegränsat antal webbplatser\n– Omätad SSD\n– Obegränsade brevlådor\n– Webbplatsbyggare\n– AI-verktyg\n– Support dygnet runt\n– Autobackup",
+      "description": "Shared Hosting Plus är byggd för entreprenörer och växande team som vill hantera flera webbplatser och brevlådor utan restriktiva begränsningar.\n\nMed obegränsade webbplatser, SSD-lagring och postlådor, plus en webbplatsbyggare, AI-verktyg och AutoBackup, har du flexibiliteten att lägga till projekt och kommunikation när du växer.\n\nTripleZero iT levererar en tillgänglig, pålitlig värdbas med support dygnet runt. Din digitala miljö kan expandera utan att göra den dagliga administrationen komplicerad."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– Obegränsat antal webbplatser\n– Omätad SSD\n– Obegränsade brevlådor\n– Webbplatsbyggare\n– AI-verktyg\n– Support dygnet runt\n– Autobackup",
-      "description": "Shared Hosting Business är byggd för entreprenörer och växande team som vill hantera flera webbplatser och brevlådor utan restriktiva begränsningar.\n\nMed obegränsade webbplatser, SSD-lagring och postlådor, plus en webbplatsbyggare, AI-verktyg och AutoBackup, har du flexibiliteten att lägga till projekt och kommunikation när du växer.\n\nTripleZero iT levererar en tillgänglig, pålitlig värdbas med support dygnet runt. Din digitala miljö kan expandera utan att göra den dagliga administrationen komplicerad."
+      "shortDescription": "– Obegränsat antal webbplatser\n– 50 GB SSD\n– Obegränsade brevlådor\n– Webbplatsbyggare\n– AI-verktyg\n– Support dygnet runt\n– Autobackup och molnlagring",
+      "description": "Shared Hosting Business passar organisationer som vill ha flera webbplatser, e-post och filer centralt och professionellt.\n\nDu får obegränsat med webbplatser och brevlådor, 50 GB SSD-lagring, en webbplatsbyggare, AI-verktyg och AutoBackup med molnlagring. Den kombinerar utrymme för daglig verksamhet med extra trygghet för viktig data.\n\nTripleZero iT ger en stabil miljö och 24/7 support närhelst din organisation behöver hjälp. Håll din onlineinfrastruktur organiserad och redo att växa."
     },
     "vps-hosting-basic": {
       "name": "VPS Hosting Basic",
@@ -2258,13 +2258,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– Ubegrenset nettsteder\n– 50 GB SSD\n– Ubegrensede postkasser\n– Nettstedbygger\n– AI-verktøy\n– 24/7 support\n– Autosikkerhetskopiering og skylagring",
-      "description": "Shared Hosting Plus passer organisasjoner som ønsker å være vert for flere nettsteder, e-post og filer sentralt og profesjonelt.\n\nDu mottar ubegrensede nettsteder og postbokser, 50 GB SSD-lagring, en nettstedbygger, AI-verktøy og AutoBackup med skylagring. Den kombinerer rom for daglig drift med ekstra trygghet for viktige data.\n\nTripleZero iT gir et stabilt miljø og 24/7 support når organisasjonen din trenger assistanse. Hold nettinfrastrukturen din organisert og klar til å vokse."
+      "shortDescription": "– Ubegrenset nettsteder\n– Umålt SSD\n– Ubegrensede postkasser\n– Nettstedbygger\n– AI-verktøy\n– 24/7 support\n– AutoBackup",
+      "description": "Shared Hosting Plus er bygget for gründere og voksende team som ønsker å administrere flere nettsteder og postbokser uten restriktive begrensninger.\n\nMed ubegrensede nettsteder, SSD-lagring og postbokser, pluss en nettstedbygger, AI-verktøy og AutoBackup, har du fleksibiliteten til å legge til prosjekter og kommunikasjon etter hvert som du vokser.\n\nTripleZero iT leverer et tilgjengelig, pålitelig hostingfundament med 24/7 support. Ditt digitale miljø kan utvides uten å gjøre daglig administrasjon komplisert."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– Ubegrenset nettsteder\n– Umålt SSD\n– Ubegrensede postkasser\n– Nettstedbygger\n– AI-verktøy\n– 24/7 support\n– AutoBackup",
-      "description": "Shared Hosting Business er bygget for gründere og voksende team som ønsker å administrere flere nettsteder og postbokser uten restriktive begrensninger.\n\nMed ubegrensede nettsteder, SSD-lagring og postbokser, pluss en nettstedbygger, AI-verktøy og AutoBackup, har du fleksibiliteten til å legge til prosjekter og kommunikasjon etter hvert som du vokser.\n\nTripleZero iT leverer et tilgjengelig, pålitelig hostingfundament med 24/7 support. Ditt digitale miljø kan utvides uten å gjøre daglig administrasjon komplisert."
+      "shortDescription": "– Ubegrenset nettsteder\n– 50 GB SSD\n– Ubegrensede postkasser\n– Nettstedbygger\n– AI-verktøy\n– 24/7 support\n– Autosikkerhetskopiering og skylagring",
+      "description": "Shared Hosting Business passer organisasjoner som ønsker å være vert for flere nettsteder, e-post og filer sentralt og profesjonelt.\n\nDu mottar ubegrensede nettsteder og postbokser, 50 GB SSD-lagring, en nettstedbygger, AI-verktøy og AutoBackup med skylagring. Den kombinerer rom for daglig drift med ekstra trygghet for viktige data.\n\nTripleZero iT gir et stabilt miljø og 24/7 support når organisasjonen din trenger assistanse. Hold nettinfrastrukturen din organisert og klar til å vokse."
     },
     "vps-hosting-basic": {
       "name": "Grunnleggende VPS Hosting",
@@ -2355,13 +2355,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "- Rajoittamaton määrä verkkosivustoja\n– 50GB SSD\n- Rajoittamaton postilaatikko\n– Verkkosivustojen rakentaja\n– AI-työkalut\n– 24/7 tuki\n- Automaattinen varmuuskopiointi ja pilvitallennus",
-      "description": "Shared Hosting Plus sopii organisaatioille, jotka haluavat isännöidä useita verkkosivustoja, sähköpostia ja tiedostoja keskitetysti ja ammattimaisesti.\n\nSaat rajoittamattoman määrän verkkosivustoja ja postilaatikoita, 50 Gt:n SSD-tallennustilaa, verkkosivustojen rakentajan, tekoälytyökaluja ja AutoBackupin pilvitallennustilalla. Siinä yhdistyy tilaa päivittäiselle toiminnalle ja lisävarmuutta tärkeille tiedoille.\n\nTripleZero iT tarjoaa vakaan ympäristön ja 24/7-tuen aina, kun organisaatiosi tarvitsee apua. Pidä verkkoinfrastruktuurisi järjestyksessä ja valmis kasvamaan."
+      "shortDescription": "- Rajoittamaton määrä verkkosivustoja\n– Mittaamaton SSD\n- Rajoittamaton postilaatikko\n– Verkkosivustojen rakentaja\n– AI-työkalut\n– 24/7 tuki\n– Automaattinen varmuuskopiointi",
+      "description": "Shared Hosting Plus on suunniteltu yrittäjille ja kasvaville tiimeille, jotka haluavat hallita useita verkkosivustoja ja postilaatikoita ilman rajoituksia.\n\nRajoittamattoman määrän verkkosivustoja, SSD-tallennustilaa ja postilaatikoita sekä verkkosivustojen rakentajaa, tekoälytyökaluja ja AutoBackupia voit lisätä projekteja ja viestintää joustavasti kasvaessasi.\n\nTripleZero iT tarjoaa helppokäyttöisen, luotettavan hosting-säätiön 24/7-tuella. Digitaalinen ympäristösi voi laajentua vaikeuttamatta päivittäistä hallintoa."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "- Rajoittamaton määrä verkkosivustoja\n– Mittaamaton SSD\n- Rajoittamaton postilaatikko\n– Verkkosivustojen rakentaja\n– AI-työkalut\n– 24/7 tuki\n– Automaattinen varmuuskopiointi",
-      "description": "Shared Hosting Business on suunniteltu yrittäjille ja kasvaville tiimeille, jotka haluavat hallita useita verkkosivustoja ja postilaatikoita ilman rajoituksia.\n\nRajoittamattoman määrän verkkosivustoja, SSD-tallennustilaa ja postilaatikoita sekä verkkosivustojen rakentajaa, tekoälytyökaluja ja AutoBackupia voit lisätä projekteja ja viestintää joustavasti kasvaessasi.\n\nTripleZero iT tarjoaa helppokäyttöisen, luotettavan hosting-säätiön 24/7-tuella. Digitaalinen ympäristösi voi laajentua vaikeuttamatta päivittäistä hallintoa."
+      "shortDescription": "- Rajoittamaton määrä verkkosivustoja\n– 50GB SSD\n- Rajoittamaton postilaatikko\n– Verkkosivustojen rakentaja\n– AI-työkalut\n– 24/7 tuki\n- Automaattinen varmuuskopiointi ja pilvitallennus",
+      "description": "Shared Hosting Business sopii organisaatioille, jotka haluavat isännöidä useita verkkosivustoja, sähköpostia ja tiedostoja keskitetysti ja ammattimaisesti.\n\nSaat rajoittamattoman määrän verkkosivustoja ja postilaatikoita, 50 Gt:n SSD-tallennustilaa, verkkosivustojen rakentajan, tekoälytyökaluja ja AutoBackupin pilvitallennustilalla. Siinä yhdistyy tilaa päivittäiselle toiminnalle ja lisävarmuutta tärkeille tiedoille.\n\nTripleZero iT tarjoaa vakaan ympäristön ja 24/7-tuen aina, kun organisaatiosi tarvitsee apua. Pidä verkkoinfrastruktuurisi järjestyksessä ja valmis kasvamaan."
     },
     "vps-hosting-basic": {
       "name": "VPS-hosting Basic",
@@ -2452,13 +2452,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– Необмежена кількість веб-сайтів\n– SSD на 50 Гб\n– Необмежена кількість поштових скриньок\n– Конструктор веб-сайтів\n– Інструменти ШІ\n– Підтримка 24/7\n– Автоматичне резервне копіювання та хмарне сховище",
-      "description": "Shared Hosting Plus підходить організаціям, які хочуть централізовано та професійно розмістити декілька веб-сайтів, електронної пошти та файлів.\n\nВи отримуєте необмежену кількість веб-сайтів і поштових скриньок, 50 ГБ SSD-накопичувач, конструктор веб-сайтів, інструменти AI та AutoBackup із хмарним сховищем. Він поєднує в собі простір для щоденних операцій із додатковою гарантією для важливих даних.\n\nTripleZero iT забезпечує стабільне середовище та цілодобову підтримку, коли ваша організація потребує допомоги. Підтримуйте свою онлайн-інфраструктуру організованою та готовою до зростання."
+      "shortDescription": "– Необмежена кількість веб-сайтів\n– SSD без обліку\n– Необмежена кількість поштових скриньок\n– Конструктор веб-сайтів\n– Інструменти ШІ\n– Підтримка 24/7\n– Автоматичне резервне копіювання",
+      "description": "Спільний хостинг Plus створений для підприємців і команд, що розвиваються, які хочуть керувати кількома веб-сайтами та поштовими скриньками без обмежень.\n\nЗавдяки необмеженій кількості веб-сайтів, пам’яті SSD і поштовим скринькам, а також конструктору веб-сайтів, інструментам штучного інтелекту та автоматичному резервному копіюванню у вас є можливість додавати проекти та спілкуватися в міру зростання.\n\nTripleZero iT надає доступну, надійну базу хостингу з підтримкою 24/7. Ваше цифрове середовище може розширюватися, не ускладнюючи щоденне адміністрування."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– Необмежена кількість веб-сайтів\n– SSD без обліку\n– Необмежена кількість поштових скриньок\n– Конструктор веб-сайтів\n– Інструменти ШІ\n– Підтримка 24/7\n– Автоматичне резервне копіювання",
-      "description": "Спільний хостинг Plus створений для підприємців і команд, що розвиваються, які хочуть керувати кількома веб-сайтами та поштовими скриньками без обмежень.\n\nЗавдяки необмеженій кількості веб-сайтів, пам’яті SSD і поштовим скринькам, а також конструктору веб-сайтів, інструментам штучного інтелекту та автоматичному резервному копіюванню у вас є можливість додавати проекти та спілкуватися в міру зростання.\n\nTripleZero iT надає доступну, надійну базу хостингу з підтримкою 24/7. Ваше цифрове середовище може розширюватися, не ускладнюючи щоденне адміністрування."
+      "shortDescription": "– Необмежена кількість веб-сайтів\n– SSD на 50 Гб\n– Необмежена кількість поштових скриньок\n– Конструктор веб-сайтів\n– Інструменти ШІ\n– Підтримка 24/7\n– Автоматичне резервне копіювання та хмарне сховище",
+      "description": "Shared Hosting Business підходить організаціям, які хочуть централізовано та професійно розмістити декілька веб-сайтів, електронної пошти та файлів.\n\nВи отримуєте необмежену кількість веб-сайтів і поштових скриньок, 50 ГБ SSD-накопичувач, конструктор веб-сайтів, інструменти AI та AutoBackup із хмарним сховищем. Він поєднує в собі простір для щоденних операцій із додатковою гарантією для важливих даних.\n\nTripleZero iT забезпечує стабільне середовище та цілодобову підтримку, коли ваша організація потребує допомоги. Підтримуйте свою онлайн-інфраструктуру організованою та готовою до зростання."
     },
     "vps-hosting-basic": {
       "name": "Базовий хостинг VPS",
@@ -2549,13 +2549,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "- Неограниченное количество веб-сайтов\n— SSD-накопитель на 50 ГБ\n- Неограниченное количество почтовых ящиков\n– Конструктор веб-сайтов\n– Инструменты ИИ\n– Круглосуточная поддержка 7 дней в неделю\n– Авторезервное копирование и облачное хранилище",
-      "description": "Виртуальный хостинг Business подходит организациям, которые хотят централизованно и профессионально размещать несколько веб-сайтов, электронной почты и файлов.\n\nВы получаете неограниченное количество веб-сайтов и почтовых ящиков, твердотельное хранилище объемом 50 ГБ, конструктор веб-сайтов, инструменты искусственного интеллекта и автоматическое резервное копирование с облачным хранилищем. Он сочетает в себе пространство для ежедневных операций и дополнительную надежность при хранении важных данных.\n\nTripleZero iT обеспечивает стабильную среду и круглосуточную поддержку, когда вашей организации понадобится помощь. Держите свою онлайн-инфраструктуру организованной и готовой к росту."
+      "shortDescription": "- Неограниченное количество веб-сайтов\n– Безлимитный SSD\n- Неограниченное количество почтовых ящиков\n– Конструктор веб-сайтов\n– Инструменты ИИ\n– Круглосуточная поддержка 7 дней в неделю\n– Авторезервное копирование",
+      "description": "Shared Hosting Plus создан для предпринимателей и растущих команд, которые хотят управлять несколькими веб-сайтами и почтовыми ящиками без ограничений.\n\nБлагодаря неограниченному количеству веб-сайтов, твердотельному хранилищу и почтовым ящикам, а также конструктору веб-сайтов, инструментам искусственного интеллекта и авторезервному копированию у вас есть возможность добавлять проекты и общаться по мере роста.\n\nTripleZero iT предоставляет доступную и надежную основу хостинга с круглосуточной поддержкой. Ваша цифровая среда может расширяться, не усложняя ежедневное администрирование."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "- Неограниченное количество веб-сайтов\n– Безлимитный SSD\n- Неограниченное количество почтовых ящиков\n– Конструктор веб-сайтов\n– Инструменты ИИ\n– Круглосуточная поддержка 7 дней в неделю\n– Авторезервное копирование",
-      "description": "Shared Hosting Business создан для предпринимателей и растущих команд, которые хотят управлять несколькими веб-сайтами и почтовыми ящиками без ограничений.\n\nБлагодаря неограниченному количеству веб-сайтов, твердотельному хранилищу и почтовым ящикам, а также конструктору веб-сайтов, инструментам искусственного интеллекта и авторезервному копированию у вас есть возможность добавлять проекты и общаться по мере роста.\n\nTripleZero iT предоставляет доступную и надежную основу хостинга с круглосуточной поддержкой. Ваша цифровая среда может расширяться, не усложняя ежедневное администрирование."
+      "shortDescription": "- Неограниченное количество веб-сайтов\n— SSD-накопитель на 50 ГБ\n- Неограниченное количество почтовых ящиков\n– Конструктор веб-сайтов\n– Инструменты ИИ\n– Круглосуточная поддержка 7 дней в неделю\n– Авторезервное копирование и облачное хранилище",
+      "description": "Виртуальный хостинг Business подходит организациям, которые хотят централизованно и профессионально размещать несколько веб-сайтов, электронной почты и файлов.\n\nВы получаете неограниченное количество веб-сайтов и почтовых ящиков, твердотельное хранилище объемом 50 ГБ, конструктор веб-сайтов, инструменты искусственного интеллекта и автоматическое резервное копирование с облачным хранилищем. Он сочетает в себе пространство для ежедневных операций и дополнительную надежность при хранении важных данных.\n\nTripleZero iT обеспечивает стабильную среду и круглосуточную поддержку, когда вашей организации понадобится помощь. Держите свою онлайн-инфраструктуру организованной и готовой к росту."
     },
     "vps-hosting-basic": {
       "name": "Базовый VPS-хостинг",
@@ -2646,13 +2646,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– Sınırsız Web Sitesi\n– 50GB SSD\n– Sınırsız Posta Kutusu\n– Web Sitesi Oluşturucu\n– Yapay Zeka Araçları\n– 7/24 Destek\n– Otomatik Yedekleme ve Bulut Depolama",
-      "description": "Paylaşımlı Barındırma İşi, birden fazla web sitesini, e-postayı ve dosyayı merkezi ve profesyonel olarak barındırmak isteyen kuruluşlara uygundur.\n\nSınırsız web sitesi ve posta kutusu, 50 GB SSD depolama alanı, web sitesi oluşturucu, yapay zeka araçları ve bulut depolamalı Otomatik Yedekleme alırsınız. Önemli veriler için ek güvence ile günlük işlemlere olanak tanır.\n\nTripleZero iT, kuruluşunuzun yardıma ihtiyacı olduğunda istikrarlı bir ortam ve 7/24 destek sağlar. Çevrimiçi altyapınızı düzenli ve büyümeye hazır tutun."
+      "shortDescription": "– Sınırsız Web Sitesi\n– Ölçülmemiş SSD\n– Sınırsız Posta Kutusu\n– Web Sitesi Oluşturucu\n– Yapay Zeka Araçları\n– 7/24 Destek\n– Otomatik Yedekleme",
+      "description": "Paylaşımlı Hosting Plus, birden fazla web sitesini ve posta kutusunu kısıtlayıcı sınırlar olmadan yönetmek isteyen girişimciler ve büyüyen ekipler için tasarlanmıştır.\n\nSınırsız web sitesi, SSD depolama alanı ve posta kutularının yanı sıra web sitesi oluşturucu, yapay zeka araçları ve Otomatik Yedekleme ile büyüdükçe proje ekleme ve iletişim kurma esnekliğine sahip olursunuz.\n\nTripleZero iT, 7/24 destekle erişilebilir, güvenilir bir barındırma temeli sunar. Dijital ortamınız günlük yönetimi karmaşık hale getirmeden genişleyebilir."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– Sınırsız Web Sitesi\n– Ölçülmemiş SSD\n– Sınırsız Posta Kutusu\n– Web Sitesi Oluşturucu\n– Yapay Zeka Araçları\n– 7/24 Destek\n– Otomatik Yedekleme",
-      "description": "Paylaşımlı Hosting Plus, birden fazla web sitesini ve posta kutusunu kısıtlayıcı sınırlar olmadan yönetmek isteyen girişimciler ve büyüyen ekipler için tasarlanmıştır.\n\nSınırsız web sitesi, SSD depolama alanı ve posta kutularının yanı sıra web sitesi oluşturucu, yapay zeka araçları ve Otomatik Yedekleme ile büyüdükçe proje ekleme ve iletişim kurma esnekliğine sahip olursunuz.\n\nTripleZero iT, 7/24 destekle erişilebilir, güvenilir bir barındırma temeli sunar. Dijital ortamınız günlük yönetimi karmaşık hale getirmeden genişleyebilir."
+      "shortDescription": "– Sınırsız Web Sitesi\n– 50GB SSD\n– Sınırsız Posta Kutusu\n– Web Sitesi Oluşturucu\n– Yapay Zeka Araçları\n– 7/24 Destek\n– Otomatik Yedekleme ve Bulut Depolama",
+      "description": "Paylaşımlı Barındırma İşi, birden fazla web sitesini, e-postayı ve dosyayı merkezi ve profesyonel olarak barındırmak isteyen kuruluşlara uygundur.\n\nSınırsız web sitesi ve posta kutusu, 50 GB SSD depolama alanı, web sitesi oluşturucu, yapay zeka araçları ve bulut depolamalı Otomatik Yedekleme alırsınız. Önemli veriler için ek güvence ile günlük işlemlere olanak tanır.\n\nTripleZero iT, kuruluşunuzun yardıma ihtiyacı olduğunda istikrarlı bir ortam ve 7/24 destek sağlar. Çevrimiçi altyapınızı düzenli ve büyümeye hazır tutun."
     },
     "vps-hosting-basic": {
       "name": "VPS Barındırma Temeli",
@@ -2743,13 +2743,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "- אתרים ללא הגבלה\n- SSD בנפח 50 ג'יגה-בייט\n- תיבות דואר ללא הגבלה\n- בונה אתרים\n- כלי בינה מלאכותית\n- תמיכה 24/7\n- גיבוי אוטומטי ואחסון בענן",
-      "description": "Shared Hosting Plus מתאים לארגונים שרוצים לארח מספר אתרים, מיילים וקבצים באופן מרכזי ומקצועי.\n\nאתה מקבל אתרים ותיבות דואר ללא הגבלה, אחסון SSD בנפח 50 GB, בונה אתרים, כלי בינה מלאכותית וגיבוי אוטומטי עם אחסון בענן. הוא משלב מקום לפעולות יומיומיות עם ביטחון נוסף לנתונים חשובים.\n\nTripleZero iT מספק סביבה יציבה ותמיכה 24/7 בכל פעם שהארגון שלך זקוק לסיוע. שמור על התשתית המקוונת שלך מאורגנת ומוכנה לצמוח."
+      "shortDescription": "- אתרים ללא הגבלה\n- SSD ללא מדדים\n- תיבות דואר ללא הגבלה\n- בונה אתרים\n- כלי בינה מלאכותית\n- תמיכה 24/7\n- גיבוי אוטומטי",
+      "description": "Shared Hosting Plus נבנה עבור יזמים וצוותים צומחים שרוצים לנהל מספר רב של אתרים ותיבות דואר ללא מגבלות מגבילות.\n\nעם אתרים ללא הגבלה, אחסון SSD ותיבות דואר, בתוספת בונה אתרים, כלי בינה מלאכותית וגיבוי אוטומטי, יש לך את הגמישות להוסיף פרויקטים ותקשורת תוך כדי צמיחה.\n\nTripleZero iT מספק בסיס אירוח נגיש ואמין עם תמיכה 24/7. הסביבה הדיגיטלית שלך יכולה להתרחב מבלי להפוך את הניהול היומיומי למסובך."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "- אתרים ללא הגבלה\n- SSD ללא מדדים\n- תיבות דואר ללא הגבלה\n- בונה אתרים\n- כלי בינה מלאכותית\n- תמיכה 24/7\n- גיבוי אוטומטי",
-      "description": "Shared Hosting Business נבנה עבור יזמים וצוותים צומחים שרוצים לנהל מספר רב של אתרים ותיבות דואר ללא מגבלות מגבילות.\n\nעם אתרים ללא הגבלה, אחסון SSD ותיבות דואר, בתוספת בונה אתרים, כלי בינה מלאכותית וגיבוי אוטומטי, יש לך את הגמישות להוסיף פרויקטים ותקשורת תוך כדי צמיחה.\n\nTripleZero iT מספק בסיס אירוח נגיש ואמין עם תמיכה 24/7. הסביבה הדיגיטלית שלך יכולה להתרחב מבלי להפוך את הניהול היומיומי למסובך."
+      "shortDescription": "- אתרים ללא הגבלה\n- SSD בנפח 50 ג'יגה-בייט\n- תיבות דואר ללא הגבלה\n- בונה אתרים\n- כלי בינה מלאכותית\n- תמיכה 24/7\n- גיבוי אוטומטי ואחסון בענן",
+      "description": "Shared Hosting Business מתאים לארגונים שרוצים לארח מספר אתרים, מיילים וקבצים באופן מרכזי ומקצועי.\n\nאתה מקבל אתרים ותיבות דואר ללא הגבלה, אחסון SSD בנפח 50 GB, בונה אתרים, כלי בינה מלאכותית וגיבוי אוטומטי עם אחסון בענן. הוא משלב מקום לפעולות יומיומיות עם ביטחון נוסף לנתונים חשובים.\n\nTripleZero iT מספק סביבה יציבה ותמיכה 24/7 בכל פעם שהארגון שלך זקוק לסיוע. שמור על התשתית המקוונת שלך מאורגנת ומוכנה לצמוח."
     },
     "vps-hosting-basic": {
       "name": "VPS אירוח בסיסי",
@@ -2840,13 +2840,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "- مواقع غير محدودة\n– 50 جيجابايت SSD\n- صناديق بريد غير محدودة\n- منشئ الموقع\n- أدوات الذكاء الاصطناعي\n– دعم 24/7\n- النسخ الاحتياطي التلقائي والتخزين السحابي",
-      "description": "تناسب أعمال الاستضافة المشتركة المؤسسات التي ترغب في استضافة العديد من مواقع الويب والبريد الإلكتروني والملفات بشكل مركزي ومهني.\n\nتتلقى عددًا غير محدود من مواقع الويب وصناديق البريد، وسعة تخزين SSD تبلغ 50 جيجابايت، ومنشئ مواقع الويب، وأدوات الذكاء الاصطناعي، والنسخ الاحتياطي التلقائي مع التخزين السحابي. فهو يجمع بين مساحة العمليات اليومية والطمأنينة الإضافية للبيانات المهمة.\n\nيوفر TripleZero iT بيئة مستقرة ودعمًا على مدار الساعة طوال أيام الأسبوع عندما تحتاج مؤسستك إلى المساعدة. حافظ على البنية التحتية الخاصة بك على الإنترنت منظمة وجاهزة للنمو."
+      "shortDescription": "- مواقع غير محدودة\n- SSD غير محدود\n- صناديق بريد غير محدودة\n- منشئ الموقع\n- أدوات الذكاء الاصطناعي\n– دعم 24/7\n- النسخ الاحتياطي التلقائي",
+      "description": "تم تصميم Shared Hosting Plus لرواد الأعمال والفرق المتنامية التي ترغب في إدارة مواقع ويب وصناديق بريد متعددة دون حدود مقيدة.\n\nمع عدد غير محدود من مواقع الويب وتخزين SSD وصناديق البريد، بالإضافة إلى أداة إنشاء مواقع الويب وأدوات الذكاء الاصطناعي والنسخ الاحتياطي التلقائي، لديك المرونة اللازمة لإضافة المشاريع والاتصالات أثناء نموك.\n\nيوفر TripleZero iT أساس استضافة يمكن الاعتماد عليه ويمكن الوصول إليه مع دعم على مدار الساعة طوال أيام الأسبوع. يمكن أن تتوسع بيئتك الرقمية دون تعقيد الإدارة اليومية."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "- مواقع غير محدودة\n- SSD غير محدود\n- صناديق بريد غير محدودة\n- منشئ الموقع\n- أدوات الذكاء الاصطناعي\n– دعم 24/7\n- النسخ الاحتياطي التلقائي",
-      "description": "تم تصميم Shared Hosting Business لرواد الأعمال والفرق المتنامية التي ترغب في إدارة مواقع ويب وصناديق بريد متعددة دون حدود مقيدة.\n\nمع عدد غير محدود من مواقع الويب وتخزين SSD وصناديق البريد، بالإضافة إلى أداة إنشاء مواقع الويب وأدوات الذكاء الاصطناعي والنسخ الاحتياطي التلقائي، لديك المرونة اللازمة لإضافة المشاريع والاتصالات أثناء نموك.\n\nيوفر TripleZero iT أساس استضافة يمكن الاعتماد عليه ويمكن الوصول إليه مع دعم على مدار الساعة طوال أيام الأسبوع. يمكن أن تتوسع بيئتك الرقمية دون تعقيد الإدارة اليومية."
+      "shortDescription": "- مواقع غير محدودة\n– 50 جيجابايت SSD\n- صناديق بريد غير محدودة\n- منشئ الموقع\n- أدوات الذكاء الاصطناعي\n– دعم 24/7\n- النسخ الاحتياطي التلقائي والتخزين السحابي",
+      "description": "تناسب أعمال الاستضافة المشتركة المؤسسات التي ترغب في استضافة العديد من مواقع الويب والبريد الإلكتروني والملفات بشكل مركزي ومهني.\n\nتتلقى عددًا غير محدود من مواقع الويب وصناديق البريد، وسعة تخزين SSD تبلغ 50 جيجابايت، ومنشئ مواقع الويب، وأدوات الذكاء الاصطناعي، والنسخ الاحتياطي التلقائي مع التخزين السحابي. فهو يجمع بين مساحة العمليات اليومية والطمأنينة الإضافية للبيانات المهمة.\n\nيوفر TripleZero iT بيئة مستقرة ودعمًا على مدار الساعة طوال أيام الأسبوع عندما تحتاج مؤسستك إلى المساعدة. حافظ على البنية التحتية الخاصة بك على الإنترنت منظمة وجاهزة للنمو."
     },
     "vps-hosting-basic": {
       "name": "استضافة VPS الأساسية",
@@ -2937,13 +2937,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "- შეუზღუდავი საიტები\n- 50 GB SSD\n- შეუზღუდავი საფოსტო ყუთები\n– ვებსაიტის შემქმნელი\n- AI ინსტრუმენტები\n- 24/7 მხარდაჭერა\n– ავტომატური სარეზერვო და ღრუბლოვანი შენახვა",
-      "description": "გაზიარებული ჰოსტინგის ბიზნესი ერგება ორგანიზაციებს, რომლებსაც სურთ მრავალი ვებსაიტის, ელექტრონული ფოსტისა და ფაილების მასპინძლობა ცენტრალიზებულად და პროფესიონალურად.\n\nთქვენ იღებთ შეუზღუდავი ვებსაიტებსა და საფოსტო ყუთებს, 50 GB SSD მეხსიერებას, ვებსაიტის შემქმნელს, AI ინსტრუმენტებს და ავტომატურ სარეზერვო ასლს ღრუბლოვანი მეხსიერებით. ის აერთიანებს ადგილს ყოველდღიური ოპერაციებისთვის და მნიშვნელოვანი მონაცემების დამატებით დარწმუნებას.\n\nTripleZero iT უზრუნველყოფს სტაბილურ გარემოს და 24/7 მხარდაჭერას, როცა თქვენს ორგანიზაციას დახმარება სჭირდება. შეინახეთ თქვენი ონლაინ ინფრასტრუქტურა ორგანიზებული და მზად განვითარებისთვის."
+      "shortDescription": "- შეუზღუდავი საიტები\n- უზომო SSD\n- შეუზღუდავი საფოსტო ყუთები\n– ვებსაიტის შემქმნელი\n- AI ინსტრუმენტები\n- 24/7 მხარდაჭერა\n- ავტომატური სარეზერვო",
+      "description": "Shared Hosting Plus შექმნილია მეწარმეებისთვის და მზარდი გუნდებისთვის, რომლებსაც სურთ მართონ მრავალი ვებსაიტი და საფოსტო ყუთი შეზღუდვის გარეშე.\n\nშეუზღუდავი ვებსაიტებით, SSD საცავებითა და საფოსტო ყუთებით, პლუს ვებსაიტების შემქმნელით, AI ინსტრუმენტებითა და ავტომატური სარეზერვო ასლებით, თქვენ გაქვთ მოქნილობა, რომ დაამატოთ პროექტები და კომუნიკაცია, როცა იზრდება.\n\nTripleZero iT გთავაზობთ ხელმისაწვდომი, საიმედო ჰოსტინგის ფონდს 24/7 მხარდაჭერით. თქვენი ციფრული გარემო შეიძლება გაფართოვდეს ყოველდღიური ადმინისტრაციის გართულების გარეშე."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "- შეუზღუდავი საიტები\n- უზომო SSD\n- შეუზღუდავი საფოსტო ყუთები\n– ვებსაიტის შემქმნელი\n- AI ინსტრუმენტები\n- 24/7 მხარდაჭერა\n- ავტომატური სარეზერვო",
-      "description": "Shared Hosting Business შექმნილია მეწარმეებისთვის და მზარდი გუნდებისთვის, რომლებსაც სურთ მართონ მრავალი ვებსაიტი და საფოსტო ყუთი შეზღუდვის გარეშე.\n\nშეუზღუდავი ვებსაიტებით, SSD საცავებითა და საფოსტო ყუთებით, პლუს ვებსაიტების შემქმნელით, AI ინსტრუმენტებითა და ავტომატური სარეზერვო ასლებით, თქვენ გაქვთ მოქნილობა, რომ დაამატოთ პროექტები და კომუნიკაცია, როცა იზრდება.\n\nTripleZero iT გთავაზობთ ხელმისაწვდომი, საიმედო ჰოსტინგის ფონდს 24/7 მხარდაჭერით. თქვენი ციფრული გარემო შეიძლება გაფართოვდეს ყოველდღიური ადმინისტრაციის გართულების გარეშე."
+      "shortDescription": "- შეუზღუდავი საიტები\n- 50 GB SSD\n- შეუზღუდავი საფოსტო ყუთები\n– ვებსაიტის შემქმნელი\n- AI ინსტრუმენტები\n- 24/7 მხარდაჭერა\n– ავტომატური სარეზერვო და ღრუბლოვანი შენახვა",
+      "description": "გაზიარებული ჰოსტინგის ბიზნესი ერგება ორგანიზაციებს, რომლებსაც სურთ მრავალი ვებსაიტის, ელექტრონული ფოსტისა და ფაილების მასპინძლობა ცენტრალიზებულად და პროფესიონალურად.\n\nთქვენ იღებთ შეუზღუდავი ვებსაიტებსა და საფოსტო ყუთებს, 50 GB SSD მეხსიერებას, ვებსაიტის შემქმნელს, AI ინსტრუმენტებს და ავტომატურ სარეზერვო ასლს ღრუბლოვანი მეხსიერებით. ის აერთიანებს ადგილს ყოველდღიური ოპერაციებისთვის და მნიშვნელოვანი მონაცემების დამატებით დარწმუნებას.\n\nTripleZero iT უზრუნველყოფს სტაბილურ გარემოს და 24/7 მხარდაჭერას, როცა თქვენს ორგანიზაციას დახმარება სჭირდება. შეინახეთ თქვენი ონლაინ ინფრასტრუქტურა ორგანიზებული და მზად განვითარებისთვის."
     },
     "vps-hosting-basic": {
       "name": "VPS ჰოსტინგი ძირითადი",
@@ -3034,13 +3034,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "- Անսահմանափակ կայքեր\n- 50 ԳԲ SSD\n- Անսահմանափակ փոստարկղեր\n- Կայքի ստեղծող\n- AI գործիքներ\n- 24/7 աջակցություն\n– Ավտոպահուստավորում և ամպային պահեստավորում",
-      "description": "Համօգտագործվող հոստինգ բիզնեսը համապատասխանում է այն կազմակերպություններին, որոնք ցանկանում են հյուրընկալել բազմաթիվ կայքեր, էլփոստ և ֆայլեր կենտրոնական և մասնագիտորեն:\n\nԴուք ստանում եք անսահմանափակ կայքեր և փոստարկղեր, 50 ԳԲ SSD պահեստ, վեբկայքի ստեղծող, AI գործիքներ և ԱվտոՊահուստավորում՝ ամպային պահեստով: Այն համատեղում է ամենօրյա գործառնությունների համար նախատեսված տարածքը կարևոր տվյալների հավելյալ վստահության հետ:\n\nTripleZero iT-ն ապահովում է կայուն միջավայր և 24/7 աջակցություն, երբ ձեր կազմակերպությունն օգնության կարիք ունի: Պահպանեք ձեր առցանց ենթակառուցվածքը կազմակերպված և պատրաստ զարգանալու:"
+      "shortDescription": "- Անսահմանափակ կայքեր\n- Չհաշվառված SSD\n- Անսահմանափակ փոստարկղեր\n- Կայքի ստեղծող\n- AI գործիքներ\n- 24/7 աջակցություն\n- Ավտոպահուստավորում",
+      "description": "Shared Hosting Plus-ը ստեղծվել է ձեռնարկատերերի և աճող թիմերի համար, որոնք ցանկանում են կառավարել բազմաթիվ կայքեր և փոստարկղեր՝ առանց սահմանափակումների:\n\nԱնսահմանափակ կայքերի, SSD պահեստի և փոստարկղերի, ինչպես նաև վեբ կայքի ստեղծողի, AI գործիքների և AutoBackup-ի շնորհիվ դուք ունեք ճկունություն՝ ավելացնելու նախագծեր և հաղորդակցություն, երբ աճում եք:\n\nTripleZero iT-ն ապահովում է հասանելի, հուսալի հոսթինգ հիմնադրամ՝ 24/7 աջակցությամբ: Ձեր թվային միջավայրը կարող է ընդլայնվել առանց ամենօրյա կառավարումը բարդացնելու:"
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "- Անսահմանափակ կայքեր\n- Չհաշվառված SSD\n- Անսահմանափակ փոստարկղեր\n- Կայքի ստեղծող\n- AI գործիքներ\n- 24/7 աջակցություն\n- Ավտոպահուստավորում",
-      "description": "Shared Hosting Business-ը ստեղծվել է ձեռնարկատերերի և աճող թիմերի համար, որոնք ցանկանում են կառավարել բազմաթիվ կայքեր և փոստարկղեր՝ առանց սահմանափակումների:\n\nԱնսահմանափակ կայքերի, SSD պահեստի և փոստարկղերի, ինչպես նաև վեբ կայքի ստեղծողի, AI գործիքների և AutoBackup-ի շնորհիվ դուք ունեք ճկունություն՝ ավելացնելու նախագծեր և հաղորդակցություն, երբ աճում եք:\n\nTripleZero iT-ն ապահովում է հասանելի, հուսալի հոսթինգ հիմնադրամ՝ 24/7 աջակցությամբ: Ձեր թվային միջավայրը կարող է ընդլայնվել առանց ամենօրյա կառավարումը բարդացնելու:"
+      "shortDescription": "- Անսահմանափակ կայքեր\n- 50 ԳԲ SSD\n- Անսահմանափակ փոստարկղեր\n- Կայքի ստեղծող\n- AI գործիքներ\n- 24/7 աջակցություն\n– Ավտոպահուստավորում և ամպային պահեստավորում",
+      "description": "Համօգտագործվող հոստինգ բիզնեսը համապատասխանում է այն կազմակերպություններին, որոնք ցանկանում են հյուրընկալել բազմաթիվ կայքեր, էլփոստ և ֆայլեր կենտրոնական և մասնագիտորեն:\n\nԴուք ստանում եք անսահմանափակ կայքեր և փոստարկղեր, 50 ԳԲ SSD պահեստ, վեբկայքի ստեղծող, AI գործիքներ և ԱվտոՊահուստավորում՝ ամպային պահեստով: Այն համատեղում է ամենօրյա գործառնությունների համար նախատեսված տարածքը կարևոր տվյալների հավելյալ վստահության հետ:\n\nTripleZero iT-ն ապահովում է կայուն միջավայր և 24/7 աջակցություն, երբ ձեր կազմակերպությունն օգնության կարիք ունի: Պահպանեք ձեր առցանց ենթակառուցվածքը կազմակերպված և պատրաստ զարգանալու:"
     },
     "vps-hosting-basic": {
       "name": "VPS հոստինգ Հիմնական",
@@ -3131,13 +3131,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "- Limitsiz Vebsaytlar\n– 50 GB SSD\n- Limitsiz poçt qutuları\n- Veb sayt qurucusu\n- AI Alətləri\n- 24/7 dəstək\n- Avtomatik Yedəkləmə və Bulud Saxlama",
-      "description": "Paylaşılan Hosting Biznesi birdən çox veb-sayt, e-poçt və faylları mərkəzləşdirilmiş və peşəkar şəkildə yerləşdirmək istəyən təşkilatlara uyğun gəlir.\n\nSiz limitsiz veb-saytlar və poçt qutuları, 50 GB SSD yaddaş, veb sayt qurucusu, AI alətləri və bulud yaddaşı ilə AutoBackup alırsınız. O, gündəlik əməliyyatlar üçün yerləri mühüm məlumatlar üçün əlavə əminliklə birləşdirir.\n\nTripleZero iT sabit mühit və təşkilatınızın yardıma ehtiyacı olduqda 24/7 dəstək təmin edir. Onlayn infrastrukturunuzu mütəşəkkil və böyüməyə hazır saxlayın."
+      "shortDescription": "- Limitsiz Vebsaytlar\n- Ölçülməmiş SSD\n- Limitsiz poçt qutuları\n- Veb sayt qurucusu\n- AI Alətləri\n- 24/7 dəstək\n- Avtomatik Yedəkləmə",
+      "description": "Paylaşılan Hosting Plus, məhdudiyyətsiz məhdudiyyətlər olmadan çoxsaylı veb saytları və poçt qutularını idarə etmək istəyən sahibkarlar və böyüyən komandalar üçün qurulmuşdur.\n\nLimitsiz veb-saytlar, SSD yaddaşı və poçt qutuları, üstəgəl veb sayt qurucusu, AI alətləri və AutoBackup ilə siz böyüdükcə layihələr və kommunikasiyalar əlavə etmək çevikliyiniz var.\n\nTripleZero iT 24/7 dəstəyi ilə əlçatan, etibarlı hostinq bazası təqdim edir. Rəqəmsal mühitiniz gündəlik idarəetməni çətinləşdirmədən genişlənə bilər."
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "- Limitsiz Vebsaytlar\n- Ölçülməmiş SSD\n- Limitsiz poçt qutuları\n- Veb sayt qurucusu\n- AI Alətləri\n- 24/7 dəstək\n- Avtomatik Yedəkləmə",
-      "description": "Paylaşılan Hosting Plus, məhdudiyyətsiz məhdudiyyətlər olmadan çoxsaylı veb saytları və poçt qutularını idarə etmək istəyən sahibkarlar və böyüyən komandalar üçün qurulmuşdur.\n\nLimitsiz veb-saytlar, SSD yaddaşı və poçt qutuları, üstəgəl veb sayt qurucusu, AI alətləri və AutoBackup ilə siz böyüdükcə layihələr və kommunikasiyalar əlavə etmək çevikliyiniz var.\n\nTripleZero iT 24/7 dəstəyi ilə əlçatan, etibarlı hostinq bazası təqdim edir. Rəqəmsal mühitiniz gündəlik idarəetməni çətinləşdirmədən genişlənə bilər."
+      "shortDescription": "- Limitsiz Vebsaytlar\n– 50 GB SSD\n- Limitsiz poçt qutuları\n- Veb sayt qurucusu\n- AI Alətləri\n- 24/7 dəstək\n- Avtomatik Yedəkləmə və Bulud Saxlama",
+      "description": "Paylaşılan Hosting Biznesi birdən çox veb-sayt, e-poçt və faylları mərkəzləşdirilmiş və peşəkar şəkildə yerləşdirmək istəyən təşkilatlara uyğun gəlir.\n\nSiz limitsiz veb-saytlar və poçt qutuları, 50 GB SSD yaddaş, veb sayt qurucusu, AI alətləri və bulud yaddaşı ilə AutoBackup alırsınız. O, gündəlik əməliyyatlar üçün yerləri mühüm məlumatlar üçün əlavə əminliklə birləşdirir.\n\nTripleZero iT sabit mühit və təşkilatınızın yardıma ehtiyacı olduqda 24/7 dəstək təmin edir. Onlayn infrastrukturunuzu mütəşəkkil və böyüməyə hazır saxlayın."
     },
     "vps-hosting-basic": {
       "name": "VPS Hosting Basic",
@@ -3228,13 +3228,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– 无限网站\n– 50 GB 固态硬盘\n– 无限邮箱\n– 网站建设者\n– 人工智能工具\n– 24/7 支持\n– 自动备份和云存储",
-      "description": "共享托管业务适合想要集中专业地托管多个网站、电子邮件和文件的组织。\n\n您将获得无限的网站和邮箱、50 GB SSD 存储、网站构建器、AI 工具和带有云存储的 AutoBackup。它将日常操作的空间与重要数据的额外保证结合起来。\n\n当您的组织需要帮助时，TripleZero iT 提供稳定的环境和 24/7 支持。让您的在线基础设施井井有条并做好成长准备。"
+      "shortDescription": "– 无限网站\n– 不计量SSD\n– 无限邮箱\n– 网站建设者\n– 人工智能工具\n– 24/7 支持\n– 自动备份",
+      "description": "Shared Hosting Plus 专为希望不受限制地管理多个网站和邮箱的企业家和成长型团队而打造。\n\n借助无限的网站、SSD 存储和邮箱，再加上网站构建器、AI 工具和 AutoBackup，您可以随着您的成长灵活地添加项目和通信。\n\nTripleZero iT 提供可访问、可靠的托管基础​​以及 24/7 支持。您的数字环境可以扩展，而不会使日常管理变得复杂。"
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– 无限网站\n– 不计量SSD\n– 无限邮箱\n– 网站建设者\n– 人工智能工具\n– 24/7 支持\n– 自动备份",
-      "description": "Shared Hosting Business 专为希望不受限制地管理多个网站和邮箱的企业家和成长型团队而打造。\n\n借助无限的网站、SSD 存储和邮箱，再加上网站构建器、AI 工具和 AutoBackup，您可以随着您的成长灵活地添加项目和通信。\n\nTripleZero iT 提供可访问、可靠的托管基础​​以及 24/7 支持。您的数字环境可以扩展，而不会使日常管理变得复杂。"
+      "shortDescription": "– 无限网站\n– 50 GB 固态硬盘\n– 无限邮箱\n– 网站建设者\n– 人工智能工具\n– 24/7 支持\n– 自动备份和云存储",
+      "description": "共享托管业务适合想要集中专业地托管多个网站、电子邮件和文件的组织。\n\n您将获得无限的网站和邮箱、50 GB SSD 存储、网站构建器、AI 工具和带有云存储的 AutoBackup。它将日常操作的空间与重要数据的额外保证结合起来。\n\n当您的组织需要帮助时，TripleZero iT 提供稳定的环境和 24/7 支持。让您的在线基础设施井井有条并做好成长准备。"
     },
     "vps-hosting-basic": {
       "name": "VPS 主机基本",
@@ -3325,13 +3325,13 @@
     },
     "shared-hosting-plus": {
       "name": "Shared Hosting Plus",
-      "shortDescription": "– 無制限のウェブサイト\n– 50GB SSD\n– 無制限のメールボックス\n– ウェブサイトビルダー\n– AIツール\n– 年中無休のサポート\n– 自動バックアップとクラウドストレージ",
-      "description": "共有ホスティング ビジネスは、複数の Web サイト、電子メール、ファイルを一元的かつ専門的にホストしたい組織に適しています。\n\n無制限の Web サイトとメールボックス、50 GB SSD ストレージ、Web サイト ビルダー、AI ツール、クラウド ストレージによる自動バックアップを利用できます。日常業務のためのスペースと、重要なデータに対するさらなる安心感を兼ね備えています。\n\nTripleZero iT は、組織がサポートを必要とするときはいつでも、安定した環境と年中無休のサポートを提供します。オンライン インフラストラクチャを整理し、成長に備えた状態に保ちます。"
+      "shortDescription": "– 無制限のウェブサイト\n– 従量制の SSD\n– 無制限のメールボックス\n– ウェブサイトビルダー\n– AIツール\n– 年中無休のサポート\n– 自動バックアップ",
+      "description": "Shared Hosting Plus は、複数の Web サイトやメールボックスを無制限に管理したい起業家や成長中のチーム向けに構築されています。\n\n無制限の Web サイト、SSD ストレージ、メールボックスに加え、Web サイト ビルダー、AI ツール、自動バックアップを備えているため、成長に合わせてプロジェクトやコミュニケーションを柔軟に追加できます。\n\nTripleZero iT は、年中無休のサポートを備えたアクセス可能で信頼性の高いホスティング基盤を提供します。日常の管理を複雑にすることなく、デジタル環境を拡張できます。"
     },
     "shared-hosting-business": {
       "name": "Shared Hosting Business",
-      "shortDescription": "– 無制限のウェブサイト\n– 従量制の SSD\n– 無制限のメールボックス\n– ウェブサイトビルダー\n– AIツール\n– 年中無休のサポート\n– 自動バックアップ",
-      "description": "Shared Hosting Business は、複数の Web サイトやメールボックスを無制限に管理したい起業家や成長中のチーム向けに構築されています。\n\n無制限の Web サイト、SSD ストレージ、メールボックスに加え、Web サイト ビルダー、AI ツール、自動バックアップを備えているため、成長に合わせてプロジェクトやコミュニケーションを柔軟に追加できます。\n\nTripleZero iT は、年中無休のサポートを備えたアクセス可能で信頼性の高いホスティング基盤を提供します。日常の管理を複雑にすることなく、デジタル環境を拡張できます。"
+      "shortDescription": "– 無制限のウェブサイト\n– 50GB SSD\n– 無制限のメールボックス\n– ウェブサイトビルダー\n– AIツール\n– 年中無休のサポート\n– 自動バックアップとクラウドストレージ",
+      "description": "共有ホスティング ビジネスは、複数の Web サイト、電子メール、ファイルを一元的かつ専門的にホストしたい組織に適しています。\n\n無制限の Web サイトとメールボックス、50 GB SSD ストレージ、Web サイト ビルダー、AI ツール、クラウド ストレージによる自動バックアップを利用できます。日常業務のためのスペースと、重要なデータに対するさらなる安心感を兼ね備えています。\n\nTripleZero iT は、組織がサポートを必要とするときはいつでも、安定した環境と年中無休のサポートを提供します。オンライン インフラストラクチャを整理し、成長に備えた状態に保ちます。"
     },
     "vps-hosting-basic": {
       "name": "VPSホスティングベーシック",

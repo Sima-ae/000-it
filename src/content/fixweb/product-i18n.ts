@@ -181,32 +181,32 @@ TripleZero iT provides a stable hosting environment and 24/7 support whenever yo
     nl: {
       name: "Shared Hosting Business",
       shortDescription: `– Onbeperkt Websites
-– Onbeperkt SSD
+– 50 GB SSD
 – Onbeperkt Mailboxen
 – Website Builder
 – AI Tools
 – 24/7 Support
-– AutoBackup`,
-      description: `Shared Hosting Business is gemaakt voor ondernemers en groeiende teams die meerdere websites en mailboxen zonder krappe limieten willen beheren.
+– AutoBackup & Cloud Storage`,
+      description: `Shared Hosting Business past bij organisaties die meerdere websites, e-mail en bestanden centraal en professioneel willen onderbrengen.
 
-Met onbeperkte websites, SSD-opslag en mailboxen, plus een websitebouwer, AI-tools en AutoBackup, krijg je de flexibiliteit om nieuwe projecten en communicatie eenvoudig toe te voegen.
+Je krijgt onbeperkte websites en mailboxen, 50 GB SSD-opslag, een websitebouwer, AI-tools en AutoBackup met cloudopslag. Dat combineert ruimte voor jouw dagelijkse werk met extra zekerheid voor belangrijke data.
 
-TripleZero iT levert een toegankelijke, betrouwbare hostingbasis met 24/7 support. Zo groeit jouw digitale omgeving mee zonder dat je het dagelijkse beheer ingewikkeld maakt.`,
+TripleZero iT biedt een stabiele omgeving en 24/7 support als jouw organisatie vragen heeft of hulp nodig heeft. Zo houd je jouw online infrastructuur overzichtelijk en klaar voor groei.`,
     },
     en: {
       name: "Shared Hosting Business",
       shortDescription: `– Unlimited Websites
-– Unmetered SSD
+– 50 GB SSD
 – Unlimited Mailboxes
 – Website Builder
 – AI Tools
 – 24/7 Support
-– AutoBackup`,
-      description: `Shared Hosting Business is built for entrepreneurs and growing teams that want to manage multiple websites and mailboxes without restrictive limits.
+– AutoBackup & Cloud Storage`,
+      description: `Shared Hosting Business fits organisations that want to host multiple websites, email and files centrally and professionally.
 
-With unlimited websites, SSD storage and mailboxes, plus a website builder, AI tools and AutoBackup, you have the flexibility to add projects and communication as you grow.
+You receive unlimited websites and mailboxes, 50 GB SSD storage, a website builder, AI tools and AutoBackup with cloud storage. It combines room for daily operations with added reassurance for important data.
 
-TripleZero iT delivers an accessible, dependable hosting foundation with 24/7 support. Your digital environment can expand without making daily administration complicated.`,
+TripleZero iT provides a stable environment and 24/7 support whenever your organisation needs assistance. Keep your online infrastructure organised and ready to grow.`,
     },
   },
 
@@ -214,32 +214,32 @@ TripleZero iT delivers an accessible, dependable hosting foundation with 24/7 su
     nl: {
       name: "Shared Hosting Plus",
       shortDescription: `– Onbeperkt Websites
-– 50 GB SSD
+– Onbeperkt SSD
 – Onbeperkt Mailboxen
 – Website Builder
 – AI Tools
 – 24/7 Support
-– AutoBackup & Cloud Storage`,
-      description: `Shared Hosting Plus past bij organisaties die meerdere websites, e-mail en bestanden centraal en professioneel willen onderbrengen.
+– AutoBackup`,
+      description: `Shared Hosting Plus is gemaakt voor ondernemers en groeiende teams die meerdere websites en mailboxen zonder krappe limieten willen beheren.
 
-Je krijgt onbeperkte websites en mailboxen, 50 GB SSD-opslag, een websitebouwer, AI-tools en AutoBackup met cloudopslag. Dat combineert ruimte voor jouw dagelijkse werk met extra zekerheid voor belangrijke data.
+Met onbeperkte websites, SSD-opslag en mailboxen, plus een websitebouwer, AI-tools en AutoBackup, krijg je de flexibiliteit om nieuwe projecten en communicatie eenvoudig toe te voegen.
 
-TripleZero iT biedt een stabiele omgeving en 24/7 support als jouw organisatie vragen heeft of hulp nodig heeft. Zo houd je jouw online infrastructuur overzichtelijk en klaar voor groei.`,
+TripleZero iT levert een toegankelijke, betrouwbare hostingbasis met 24/7 support. Zo groeit jouw digitale omgeving mee zonder dat je het dagelijkse beheer ingewikkeld maakt.`,
     },
     en: {
       name: "Shared Hosting Plus",
       shortDescription: `– Unlimited Websites
-– 50 GB SSD
+– Unmetered SSD
 – Unlimited Mailboxes
 – Website Builder
 – AI Tools
 – 24/7 Support
-– AutoBackup & Cloud Storage`,
-      description: `Shared Hosting Plus fits organisations that want to host multiple websites, email and files centrally and professionally.
+– AutoBackup`,
+      description: `Shared Hosting Plus is built for entrepreneurs and growing teams that want to manage multiple websites and mailboxes without restrictive limits.
 
-You receive unlimited websites and mailboxes, 50 GB SSD storage, a website builder, AI tools and AutoBackup with cloud storage. It combines room for daily operations with added reassurance for important data.
+With unlimited websites, SSD storage and mailboxes, plus a website builder, AI tools and AutoBackup, you have the flexibility to add projects and communication as you grow.
 
-TripleZero iT provides a stable environment and 24/7 support whenever your organisation needs assistance. Keep your online infrastructure organised and ready to grow.`,
+TripleZero iT delivers an accessible, dependable hosting foundation with 24/7 support. Your digital environment can expand without making daily administration complicated.`,
     },
   },
 
