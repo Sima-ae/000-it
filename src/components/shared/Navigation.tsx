@@ -243,12 +243,26 @@ export function Navigation() {
                       </button>
                       {mobileServicesOpen ? (
                         <div className="mb-2 ml-2 space-y-3 border-l border-border/60 pl-3">
-                          <SoftLink
-                            href={localizedHref(locale, "/diensten")}
-                            className="block rounded-lg px-2 py-1 text-sm font-medium text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
-                          >
-                            {t("services")}
-                          </SoftLink>
+                          {(() => {
+                            const allServicesHref = localizedHref(locale, "/diensten");
+                            const allServicesActive =
+                              pathname === allServicesHref ||
+                              pathname.startsWith(`${allServicesHref}/`);
+                            return (
+                              <SoftLink
+                                href={allServicesHref}
+                                className={cn(
+                                  "block rounded-lg px-2 py-1 text-sm font-medium transition",
+                                  allServicesActive
+                                    ? "bg-primary text-primary-foreground"
+                                    : "text-muted-foreground hover:bg-primary hover:text-primary-foreground",
+                                )}
+                                aria-current={allServicesActive ? "page" : undefined}
+                              >
+                                {t("services")}
+                              </SoftLink>
+                            );
+                          })()}
                           {sortedServiceGroups(locale)
                             .filter((group) => group.id !== "hosting")
                             .map((group) => {
@@ -265,11 +279,20 @@ export function Navigation() {
                                         { sensitivity: "base" },
                                       ),
                                     );
+                            const groupHref = serviceGroupHref(locale, group.id);
+                            const groupActive =
+                              pathname === groupHref || pathname.startsWith(`${groupHref}/`);
                             return (
                               <div key={group.id}>
                                 <SoftLink
-                                  href={serviceGroupHref(locale, group.id)}
-                                  className="mb-1 block text-xs font-semibold uppercase tracking-wide text-foreground transition hover:text-primary"
+                                  href={groupHref}
+                                  className={cn(
+                                    "mb-1 block rounded-lg px-2 py-1 text-xs font-semibold uppercase tracking-wide transition",
+                                    groupActive
+                                      ? "bg-primary text-primary-foreground"
+                                      : "text-foreground hover:text-primary",
+                                  )}
+                                  aria-current={groupActive ? "page" : undefined}
                                 >
                                   {catalogGroupTitle(group.id, locale, group.title)}
                                 </SoftLink>
@@ -286,15 +309,26 @@ export function Navigation() {
                                           ? 9
                                           : 8,
                                   )
-                                  .map((item) => (
+                                  .map((item) => {
+                                    const href = serviceHref(locale, item);
+                                    const itemActive =
+                                      pathname === href || pathname.startsWith(`${href}/`);
+                                    return (
                                     <SoftLink
                                       key={item.slug}
-                                      href={serviceHref(locale, item)}
-                                      className="block rounded-lg px-2 py-1 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
+                                      href={href}
+                                      className={cn(
+                                        "block rounded-lg px-2 py-1 text-sm transition",
+                                        itemActive
+                                          ? "bg-primary text-primary-foreground"
+                                          : "text-muted-foreground hover:bg-primary hover:text-primary-foreground",
+                                      )}
+                                      aria-current={itemActive ? "page" : undefined}
                                     >
                                       {catalogServiceTitle(item.slug, locale, item.title)}
                                     </SoftLink>
-                                  ))}
+                                    );
+                                  })}
                               </div>
                             );
                           })}
@@ -327,42 +361,38 @@ export function Navigation() {
                       </button>
                       {mobileInfoOpen ? (
                         <div className="mb-2 ml-2 border-l border-border/60 pl-3">
-                          <SoftLink
-                            href={localizedHref(locale, "/over-ons")}
-                            className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
-                          >
-                            {t("about")}
-                          </SoftLink>
-                          <SoftLink
-                            href={localizedHref(locale, "/voorwaarden")}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
-                          >
-                            {t("terms")}
-                          </SoftLink>
-                          <SoftLink
-                            href={localizedHref(locale, "/cookies")}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
-                          >
-                            {t("cookies")}
-                          </SoftLink>
-                          <SoftLink
-                            href={localizedHref(locale, "/privacy")}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
-                          >
-                            {t("privacy")}
-                          </SoftLink>
-                          <SoftLink
-                            href={localizedHref(locale, "/faq")}
-                            className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
-                          >
-                            {t("faq")}
-                          </SoftLink>
+                          {(
+                            [
+                              [aboutHref, "about"],
+                              [localizedHref(locale, "/voorwaarden"), "terms"],
+                              [localizedHref(locale, "/cookies"), "cookies"],
+                              [localizedHref(locale, "/privacy"), "privacy"],
+                              [faqHref, "faq"],
+                            ] as const
+                          ).map(([href, key]) => {
+                            const itemActive =
+                              pathname === href || pathname.startsWith(`${href}/`);
+                            const external =
+                              key === "terms" || key === "cookies" || key === "privacy";
+                            return (
+                              <SoftLink
+                                key={key}
+                                href={href}
+                                {...(external
+                                  ? { target: "_blank", rel: "noopener noreferrer" }
+                                  : {})}
+                                className={cn(
+                                  "block rounded-lg px-2 py-1.5 text-sm transition",
+                                  itemActive
+                                    ? "bg-primary text-primary-foreground"
+                                    : "text-muted-foreground hover:bg-primary hover:text-primary-foreground",
+                                )}
+                                aria-current={itemActive ? "page" : undefined}
+                              >
+                                {t(key)}
+                              </SoftLink>
+                            );
+                          })}
                         </div>
                       ) : null}
                     </div>
@@ -392,11 +422,21 @@ export function Navigation() {
                         <div className="mb-2 ml-2 space-y-1 border-l border-border/60 pl-3">
                           {(() => {
                             const domainsItem = serviceCatalog.find((s) => s.slug === "domains");
-                            return domainsItem ? (
+                            if (!domainsItem) return null;
+                            const href = serviceHref(locale, domainsItem);
+                            const itemActive =
+                              pathname === href || pathname.startsWith(`${href}/`);
+                            return (
                               <SoftLink
                                 key={domainsItem.slug}
-                                href={serviceHref(locale, domainsItem)}
-                                className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
+                                href={href}
+                                className={cn(
+                                  "block rounded-lg px-2 py-1.5 text-sm transition",
+                                  itemActive
+                                    ? "bg-primary text-primary-foreground"
+                                    : "text-muted-foreground hover:bg-primary hover:text-primary-foreground",
+                                )}
+                                aria-current={itemActive ? "page" : undefined}
                               >
                                 {catalogServiceTitle(
                                   domainsItem.slug,
@@ -404,22 +444,44 @@ export function Navigation() {
                                   domainsItem.title,
                                 )}
                               </SoftLink>
-                            ) : null;
+                            );
                           })()}
-                          <SoftLink
-                            href={serviceGroupHref(locale, "hosting")}
-                            className="block rounded-lg px-2 py-1.5 text-sm font-medium text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
-                          >
-                            {catalogUiLabel("hostingCategory", locale, "Webhosting")}
-                          </SoftLink>
+                          {(() => {
+                            const href = serviceGroupHref(locale, "hosting");
+                            const itemActive =
+                              pathname === href || pathname.startsWith(`${href}/`);
+                            return (
+                              <SoftLink
+                                href={href}
+                                className={cn(
+                                  "block rounded-lg px-2 py-1.5 text-sm font-medium transition",
+                                  itemActive
+                                    ? "bg-primary text-primary-foreground"
+                                    : "text-muted-foreground hover:bg-primary hover:text-primary-foreground",
+                                )}
+                                aria-current={itemActive ? "page" : undefined}
+                              >
+                                {catalogUiLabel("hostingCategory", locale, "Webhosting")}
+                              </SoftLink>
+                            );
+                          })()}
                           {HOSTING_MENU_SLUGS.filter((slug) => slug !== "domains").map((slug) => {
                             const item = serviceCatalog.find((s) => s.slug === slug);
                             if (!item) return null;
+                            const href = serviceHref(locale, item);
+                            const itemActive =
+                              pathname === href || pathname.startsWith(`${href}/`);
                             return (
                               <SoftLink
                                 key={item.slug}
-                                href={serviceHref(locale, item)}
-                                className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
+                                href={href}
+                                className={cn(
+                                  "block rounded-lg px-2 py-1.5 text-sm transition",
+                                  itemActive
+                                    ? "bg-primary text-primary-foreground"
+                                    : "text-muted-foreground hover:bg-primary hover:text-primary-foreground",
+                                )}
+                                aria-current={itemActive ? "page" : undefined}
                               >
                                 {catalogServiceTitle(item.slug, locale, item.title)}
                               </SoftLink>

@@ -160,16 +160,16 @@ export const staticPageSeo: PageSeo[] = [
     priority: 0.8,
     changeFrequency: "monthly",
     title: {
-      nl: "Over TripleZero iT — missie, visie & aanpak",
-      en: "About TripleZero iT — mission, vision & approach",
+      nl: "Over TripleZero iT — AI, websites, hosting & groei",
+      en: "About TripleZero iT — AI, websites, hosting & growth",
     },
     description: {
-      nl: "Leer TripleZero iT kennen: AI-gedreven groei voor bedrijven in Nederland en België, met zero guesswork.",
-      en: "Meet TripleZero iT: AI-driven growth for businesses in the Netherlands and Belgium, with zero guesswork.",
+      nl: "Leer TripleZero iT kennen: praktische AI-groei, websites, WordPress, hosting, SEO en marketing voor ondernemers in Europa — zero giswerk, meetbaar resultaat.",
+      en: "Meet TripleZero iT: practical AI growth, websites, WordPress, hosting, SEO and marketing for entrepreneurs across Europe — zero guesswork, measurable results.",
     },
     keywords: {
-      nl: [...CORE_NL, "over ons", "missie", "visie", "TripleZero"],
-      en: [...CORE_EN, "about us", "mission", "vision", "TripleZero"],
+      nl: [...CORE_NL, "over ons", "missie", "visie", "TripleZero", "aanpak"],
+      en: [...CORE_EN, "about us", "mission", "vision", "TripleZero", "approach"],
     },
   },
   {

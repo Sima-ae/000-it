@@ -18,46 +18,59 @@ export async function generateMetadata({
 
 const pillars = [
   {
-    titleKey: "pillarBugsTitle",
-    descKey: "pillarBugsDesc",
+    titleKey: "pillarAiTitle",
+    descKey: "pillarAiDesc",
+    href: "/diensten/ai-integration",
+  },
+  {
+    titleKey: "pillarOptTitle",
+    descKey: "pillarOptDesc",
+    href: "/diensten/seo-optimization",
+  },
+  {
+    titleKey: "pillarWebTitle",
+    descKey: "pillarWebDesc",
+    href: "/diensten/custom-webdesign",
+  },
+  {
+    titleKey: "pillarWpTitle",
+    descKey: "pillarWpDesc",
     href: "/diensten/wordpress-error-fix",
   },
   {
-    titleKey: "pillarMalwareTitle",
-    descKey: "pillarMalwareDesc",
-    href: "/diensten/wordpress-malware-removal",
+    titleKey: "pillarHostTitle",
+    descKey: "pillarHostDesc",
+    href: "/diensten/web-hosting",
   },
   {
-    titleKey: "pillarSpeedTitle",
-    descKey: "pillarSpeedDesc",
-    href: "/diensten/wordpress-speed-optimization",
-  },
-  {
-    titleKey: "pillarBackupTitle",
-    descKey: "pillarBackupDesc",
-    href: "/diensten/wordpress-backup-hosting-migration",
+    titleKey: "pillarMarketTitle",
+    descKey: "pillarMarketDesc",
+    href: "/diensten/digital-marketing",
   },
   {
     titleKey: "pillarDesignTitle",
     descKey: "pillarDesignDesc",
-    href: "/diensten/webdesign-support",
-  },
-  {
-    titleKey: "pillarDigitalTitle",
-    descKey: "pillarDigitalDesc",
     href: "/grafisch-design",
-  },
-  {
-    titleKey: "pillarHostingTitle",
-    descKey: "pillarHostingDesc",
-    href: "/diensten/web-hosting",
   },
 ] as const;
 
+const approachSteps = [
+  ["approach1Title", "approach1Desc"],
+  ["approach2Title", "approach2Desc"],
+  ["approach3Title", "approach3Desc"],
+  ["approach4Title", "approach4Desc"],
+] as const;
+
+const whyItems = [
+  ["why1Title", "why1Desc"],
+  ["why2Title", "why2Desc"],
+  ["why3Title", "why3Desc"],
+] as const;
+
 const stats = [
-  { value: "1-4 uur", labelKey: "statResponse" as const },
-  { value: "7 dagen", labelKey: "statAvailable" as const },
-  { value: "24 uur", labelKey: "statMonitoring" as const },
+  { valueKey: "statResponseValue" as const, labelKey: "statResponse" as const },
+  { valueKey: "statAvailableValue" as const, labelKey: "statAvailable" as const },
+  { valueKey: "statMonitoringValue" as const, labelKey: "statMonitoring" as const },
 ];
 
 export default async function AboutPage({
@@ -71,16 +84,19 @@ export default async function AboutPage({
   const t = await getTranslations("about");
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-10 md:px-6 md:py-14">
-      <section className="grid items-end gap-8 lg:grid-cols-[1.2fr_0.8fr]">
+    <div className="mx-auto max-w-6xl px-4 py-8 md:px-6 md:py-10">
+      <section className="grid items-end gap-6 lg:grid-cols-[1.25fr_0.75fr]">
         <Reveal>
-          <h1 className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-primary">
+            {t("eyebrow")}
+          </p>
+          <h1 className="font-display mt-1.5 text-3xl font-semibold tracking-tight md:text-5xl">
             {t("title")}
           </h1>
-          <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground md:text-base">
+          <p className="mt-2.5 max-w-2xl text-sm leading-relaxed text-muted-foreground md:text-base">
             {t("heroSubtitle")}
           </p>
-          <div className="mt-5 flex flex-wrap gap-2.5">
+          <div className="mt-4 flex flex-wrap gap-2.5">
             <Button asChild size="sm" className="rounded-xl">
               <SoftLink href={localizedHref(locale, "/diensten")}>
                 {t("viewServices")}
@@ -94,17 +110,17 @@ export default async function AboutPage({
           </div>
         </Reveal>
 
-        <Reveal delay={0.06}>
+        <Reveal delay={0.05}>
           <div className="grid grid-cols-3 gap-2">
             {stats.map((stat) => (
               <div
-                key={stat.value}
-                className="glass glow-hover rounded-2xl px-3 py-4 text-center"
+                key={stat.valueKey}
+                className="glass glow-hover rounded-2xl px-2.5 py-3.5 text-center"
               >
-                <p className="font-display text-xl font-bold tracking-tight text-foreground md:text-2xl">
-                  {stat.value}
+                <p className="font-display text-lg font-bold tracking-tight text-foreground md:text-xl">
+                  {t(stat.valueKey)}
                 </p>
-                <p className="mt-1 text-[11px] leading-snug text-muted-foreground">
+                <p className="mt-0.5 text-[11px] leading-snug text-muted-foreground">
                   {t(stat.labelKey)}
                 </p>
               </div>
@@ -113,7 +129,7 @@ export default async function AboutPage({
         </Reveal>
       </section>
 
-      <section className="mt-10 grid gap-3 md:grid-cols-3">
+      <section className="mt-8 grid gap-2.5 md:grid-cols-3">
         {(
           [
             ["mission", "missionText"],
@@ -121,15 +137,15 @@ export default async function AboutPage({
             ["philosophy", "philosophyText"],
           ] as const
         ).map(([title, body], i) => (
-          <Reveal key={title} delay={i * 0.05}>
-            <GlassCard className="h-full p-5">
+          <Reveal key={title} delay={i * 0.04}>
+            <GlassCard className="h-full p-4 md:p-5">
               <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-primary">
                 0{i + 1}
               </p>
-              <h2 className="font-display mt-2 text-lg font-semibold tracking-tight">
+              <h2 className="font-display mt-1.5 text-lg font-semibold tracking-tight">
                 {t(title)}
               </h2>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
                 {t(body)}
               </p>
             </GlassCard>
@@ -137,14 +153,62 @@ export default async function AboutPage({
         ))}
       </section>
 
-      <section className="mt-12">
+      <section className="mt-9">
         <Reveal>
-          <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
+          <GlassCard className="p-5 md:p-6" interactive={false}>
+            <h2 className="font-display text-xl font-semibold tracking-tight md:text-2xl">
+              {t("storyTitle")}
+            </h2>
+            <p className="mt-2 text-sm font-medium leading-relaxed text-foreground md:text-base">
+              {t("storyLead")}
+            </p>
+            <div className="mt-3 space-y-2.5 text-sm leading-relaxed text-muted-foreground md:text-[15px]">
+              <p>{t("storyP1")}</p>
+              <p>{t("storyP2")}</p>
+              <p>{t("storyP3")}</p>
+            </div>
+          </GlassCard>
+        </Reveal>
+      </section>
+
+      <section className="mt-9">
+        <Reveal>
+          <div className="mb-4">
+            <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
+              {t("approachTitle")}
+            </h2>
+            <p className="mt-1 max-w-2xl text-sm text-muted-foreground">
+              {t("approachSubtitle")}
+            </p>
+          </div>
+        </Reveal>
+        <div className="grid gap-2.5 sm:grid-cols-2 lg:grid-cols-4">
+          {approachSteps.map(([titleKey, descKey], i) => (
+            <Reveal key={titleKey} delay={i * 0.04}>
+              <GlassCard className="h-full p-4" interactive={false}>
+                <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-primary">
+                  {String(i + 1).padStart(2, "0")}
+                </p>
+                <h3 className="font-display mt-1.5 text-base font-semibold tracking-tight">
+                  {t(titleKey)}
+                </h3>
+                <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                  {t(descKey)}
+                </p>
+              </GlassCard>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-9">
+        <Reveal>
+          <div className="mb-4 flex flex-wrap items-end justify-between gap-2.5">
             <div>
               <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
                 {t("whatWeDo")}
               </h2>
-              <p className="mt-1 max-w-lg text-sm text-muted-foreground">
+              <p className="mt-1 max-w-xl text-sm text-muted-foreground">
                 {t("whatWeDoSubtitle")}
               </p>
             </div>
@@ -157,15 +221,15 @@ export default async function AboutPage({
           </div>
         </Reveal>
 
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-2.5 sm:grid-cols-2 lg:grid-cols-3">
           {pillars.map((item, i) => (
-            <Reveal key={item.href} delay={Math.min(i, 5) * 0.04}>
+            <Reveal key={item.href} delay={Math.min(i, 5) * 0.03}>
               <SoftLink href={localizedHref(locale, item.href)} className="block h-full">
-                <GlassCard className="h-full p-5 transition hover:border-primary/25">
+                <GlassCard className="h-full p-4 transition hover:border-primary/25 md:p-5">
                   <h3 className="font-display text-base font-semibold tracking-tight">
                     {t(item.titleKey)}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
                     {t(item.descKey)}
                   </p>
                 </GlassCard>
@@ -175,33 +239,50 @@ export default async function AboutPage({
         </div>
       </section>
 
-      <section className="mt-12 grid gap-3 lg:grid-cols-[1.1fr_0.9fr]">
+      <section className="mt-9 grid gap-2.5 lg:grid-cols-[0.95fr_1.05fr]">
         <Reveal>
-          <GlassCard className="h-full p-6" interactive={false}>
+          <GlassCard className="h-full p-5" interactive={false}>
             <h2 className="font-display text-xl font-semibold tracking-tight md:text-2xl">
-              {t("storyTitle")}
+              {t("serveTitle")}
             </h2>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
-              {t("storyP1")}
-            </p>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
-              {t("storyP2")}
+            <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground md:text-[15px]">
+              {t("serveText")}
             </p>
           </GlassCard>
         </Reveal>
 
-        <Reveal delay={0.06}>
-          <div className="relative flex h-full min-h-55 flex-col justify-between overflow-hidden rounded-3xl p-6 text-white">
+        <Reveal delay={0.04}>
+          <div className="grid gap-2.5 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
+            {whyItems.map(([titleKey, descKey], i) => (
+              <GlassCard key={titleKey} className="h-full p-4" interactive={false}>
+                <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-primary">
+                  {t("whyEyebrow")} {String(i + 1).padStart(2, "0")}
+                </p>
+                <h3 className="font-display mt-1.5 text-base font-semibold tracking-tight">
+                  {t(titleKey)}
+                </h3>
+                <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                  {t(descKey)}
+                </p>
+              </GlassCard>
+            ))}
+          </div>
+        </Reveal>
+      </section>
+
+      <section className="mt-8">
+        <Reveal>
+          <div className="relative flex min-h-44 flex-col justify-between overflow-hidden rounded-3xl p-5 text-white md:p-6">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(94,59,136,0.55),transparent_45%),linear-gradient(145deg,#2a1845,#14181f_60%,#0f1720)]" />
-            <div className="relative">
-              <p className="font-display text-2xl font-semibold tracking-tight">
+            <div className="relative max-w-xl">
+              <p className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
                 {t("readyTitle")}
               </p>
-              <p className="mt-2 max-w-sm text-sm text-white/70">
+              <p className="mt-2 text-sm text-white/75 md:text-[15px]">
                 {t("readySubtitle")}
               </p>
             </div>
-            <div className="relative mt-6 flex flex-wrap gap-2.5">
+            <div className="relative mt-5 flex flex-wrap gap-2.5">
               <Button asChild size="sm" className="rounded-xl bg-white text-primary hover:bg-white/90">
                 <SoftLink href={localizedHref(locale, "/afspraak")}>
                   {tNav("book")}
@@ -214,6 +295,14 @@ export default async function AboutPage({
                 className="rounded-xl border-white/30 bg-transparent text-white hover:bg-white/10"
               >
                 <SoftLink href={localizedHref(locale, "/ai-scan")}>{tNav("aiScan")}</SoftLink>
+              </Button>
+              <Button
+                asChild
+                size="sm"
+                variant="outline"
+                className="rounded-xl border-white/30 bg-transparent text-white hover:bg-white/10"
+              >
+                <SoftLink href={localizedHref(locale, "/contact")}>{tNav("contact")}</SoftLink>
               </Button>
             </div>
           </div>

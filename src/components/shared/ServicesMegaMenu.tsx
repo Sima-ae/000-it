@@ -225,26 +225,41 @@ export function ServicesMegaMenu({
                   locale,
                   group.id,
                 );
+                const groupHref = serviceGroupHref(locale, group.id);
+                const groupActive =
+                  pathname === groupHref || pathname.startsWith(`${groupHref}/`);
                 return (
                   <div key={group.id} className="min-w-0 bg-transparent">
                     <SoftLink
-                      href={serviceGroupHref(locale, group.id)}
-                      className="mb-2 block whitespace-nowrap px-1.5 text-[11px] font-semibold text-foreground transition hover:text-primary md:px-2 md:text-xs"
-                      onClick={(event) =>
-                        navigateFromMenu(serviceGroupHref(locale, group.id), event)
-                      }
+                      href={groupHref}
+                      className={cn(
+                        "mb-2 block whitespace-nowrap rounded-lg px-1.5 py-1 text-[11px] font-semibold transition md:px-2 md:text-xs",
+                        groupActive
+                          ? "bg-primary text-primary-foreground"
+                          : "text-foreground hover:text-primary",
+                      )}
+                      onClick={(event) => navigateFromMenu(groupHref, event)}
+                      aria-current={groupActive ? "page" : undefined}
                     >
                       {catalogGroupTitle(group.id, locale, group.title)}
                     </SoftLink>
                     <div className="flex max-h-[min(70vh,28rem)] flex-col overflow-y-auto bg-transparent">
                       {items.map((item) => {
                         const href = serviceHref(locale, item);
+                        const itemActive =
+                          pathname === href || pathname.startsWith(`${href}/`);
                         return (
                           <SoftLink
                             key={item.slug}
                             href={href}
-                            className="rounded-lg px-1.5 py-1.5 text-[12px] leading-snug text-muted-foreground transition hover:bg-primary hover:text-primary-foreground md:px-2 md:text-[13px]"
+                            className={cn(
+                              "rounded-lg px-1.5 py-1.5 text-[12px] leading-snug transition md:px-2 md:text-[13px]",
+                              itemActive
+                                ? "bg-primary text-primary-foreground"
+                                : "text-muted-foreground hover:bg-primary hover:text-primary-foreground",
+                            )}
                             onClick={(event) => navigateFromMenu(href, event)}
+                            aria-current={itemActive ? "page" : undefined}
                           >
                             {catalogServiceTitle(item.slug, locale, item.title)}
                           </SoftLink>
