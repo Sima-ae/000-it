@@ -282,9 +282,11 @@
     "backHome": "Evə qayıt"
   },
   "footer": {
-    "tagline": "Bizneslər üçün AI əsaslı artım.",
+    "tagline": "Sahibkarlar və frilanserlər üçün reklam, AI inteqrasiyası, AEO, GEO və SEO, çap, e‑poçt marketinqi, qrafik dizayn, onlayn marketinq, texniki xidmət, optimallaşdırma, sosial media idarəetməsi, veb dizayn və WordPress dəstəyindən veb hosting və domen adlarına qədər xidmətlər və məhsullar təklif edirik.",
     "rights": "Bütün hüquqlar qorunur.",
-    "usefulLinks": "Faydalı linklər"
+    "usefulLinks": "Faydalı linklər",
+    "socialMedia": "Sosial media",
+    "taglineClose": "Həftənin 7 günü hazırıq."
   },
   "auth": {
     "loginTitle": "Xoş gəldiniz",

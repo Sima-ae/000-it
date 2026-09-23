@@ -282,9 +282,11 @@
     "backHome": "Takaisin kotiin"
   },
   "footer": {
-    "tagline": "AI-vetoinen kasvu yrityksille.",
+    "tagline": "Tarjoamme palveluita ja tuotteita yrittäjille ja freelancereille — mainonnasta, AI‑integraatiosta, AEO:sta, GEO:sta ja SEO:sta, painotuotteista, sähköpostimarkkinoinnista, graafisesta suunnittelusta, digimarkkinoinnista, ylläpidosta, optimoinnista, somehallinnasta, verkkosuunnittelusta ja WordPress-tuesta webhotelliin ja verkkotunnuksiin.",
     "rights": "Kaikki oikeudet pidätetään.",
-    "usefulLinks": "Hyödyllisiä linkkejä"
+    "usefulLinks": "Hyödyllisiä linkkejä",
+    "socialMedia": "Sosiaalinen media",
+    "taglineClose": "Olemme valmiina 7 päivää viikossa."
   },
   "auth": {
     "loginTitle": "Tervetuloa takaisin",

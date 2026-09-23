@@ -64,7 +64,7 @@ function lowConfidenceCopy(locale: string) {
 
 function escalateHint(locale: string) {
   return isNl(locale)
-    ? "\n\nWil je liever een mens? Open een ticket of boek een afspraak."
+    ? "\n\nWil je liever een mens? Open een ticket of maak een afspraak."
     : "\n\nPrefer a human? Open a ticket or book an appointment.";
 }
 

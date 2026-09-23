@@ -282,9 +282,11 @@
     "backHome": "Späť domov"
   },
   "footer": {
-    "tagline": "AI riadený rast pre podniky.",
+    "tagline": "Ponúkame služby a produkty pre podnikateľov a freelancerov — od reklamy, AI integrácie, AEO, GEO a SEO, tlače, e‑mail marketingu, grafického dizajnu, online marketingu, údržby, optimalizácie, správy sociálnych médií, webdizajnu a podpory WordPress až po webhosting a doménové mená.",
     "rights": "Všetky práva vyhradené.",
-    "usefulLinks": "Užitočné odkazy"
+    "usefulLinks": "Užitočné odkazy",
+    "socialMedia": "Sociálne médiá",
+    "taglineClose": "Sme pripravení 7 dní v týždni."
   },
   "auth": {
     "loginTitle": "Vitajte späť",

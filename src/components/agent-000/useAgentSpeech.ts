@@ -217,7 +217,7 @@ function prepareSpeechText(text: string, locale: string): string {
     "",
   );
   out = out.replace(
-    /\s*(?:Open een ticket|boek een afspraak|book an appointment|contact (?:us|opnemen)|open a ticket)[^.]*\.?/gi,
+    /\s*(?:Open een ticket|maak een afspraak|boek een afspraak|book an appointment|contact (?:us|opnemen)|open a ticket)[^.]*\.?/gi,
     "",
   );
   out = out.replace(/https?:\/\/\S+/gi, " ");

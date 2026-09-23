@@ -282,9 +282,11 @@
     "backHome": "Назад на почетну"
   },
   "footer": {
-    "tagline": "AI раст за предузећа.",
+    "tagline": "Nudimo usluge i proizvode za preduzetnike i freelancere — od oglašavanja, AI integracije, AEO, GEO i SEO, štampe, e‑mail marketinga, grafičkog dizajna, online marketinga, održavanja, optimizacije, upravljanja društvenim mrežama, web dizajna i WordPress podrške do web hostinga i naziva domena.",
     "rights": "Сва права придржана.",
-    "usefulLinks": "Korisni linkovi"
+    "usefulLinks": "Korisni linkovi",
+    "socialMedia": "Društvene mreže",
+    "taglineClose": "Stojimo na raspolaganju 7 dana u nedelji."
   },
   "auth": {
     "loginTitle": "Добродошли назад",

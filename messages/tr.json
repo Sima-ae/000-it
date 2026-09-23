@@ -282,9 +282,11 @@
     "backHome": "Eve dön"
   },
   "footer": {
-    "tagline": "İşletmeler için AI odaklı büyüme.",
+    "tagline": "Girişimciler ve serbest çalışanlar için reklam, AI entegrasyonu, AEO, GEO ve SEO, baskı, e‑posta pazarlaması, grafik tasarım, dijital pazarlama, bakım, optimizasyon, sosyal medya yönetimi, web tasarımı ve WordPress desteğinden web hosting ve alan adlarına kadar hizmetler ve ürünler sunuyoruz.",
     "rights": "Tüm hakları saklıdır.",
-    "usefulLinks": "Faydalı linkler"
+    "usefulLinks": "Faydalı linkler",
+    "socialMedia": "Sosyal medya",
+    "taglineClose": "Haftanın 7 günü yanınızdayız."
   },
   "auth": {
     "loginTitle": "Tekrar hoş geldiniz",

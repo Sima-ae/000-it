@@ -282,9 +282,11 @@
     "backHome": "Powrót do domu"
   },
   "footer": {
-    "tagline": "AI rozwój przedsiębiorstw napędzany.",
+    "tagline": "Oferujemy usługi i produkty dla przedsiębiorców i freelanserów — od reklamy, integracji AI, AEO, GEO i SEO, druku, e‑mail marketingu, grafiki, marketingu online, utrzymania, optymalizacji, zarządzania mediami społecznościowymi, webdesignu i wsparcia WordPress po hosting WWW i nazwy domen.",
     "rights": "Wszelkie prawa zastrzeżone.",
-    "usefulLinks": "Przydatne łącza"
+    "usefulLinks": "Przydatne łącza",
+    "socialMedia": "Media społecznościowe",
+    "taglineClose": "Jesteśmy gotowi 7 dni w tygodniu."
   },
   "auth": {
     "loginTitle": "Witamy z powrotem",

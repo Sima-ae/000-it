@@ -282,9 +282,11 @@
     "backHome": "Hjemme igen"
   },
   "footer": {
-    "tagline": "AI-drevet vækst for virksomheder.",
+    "tagline": "Vi tilbyder services og produkter til iværksættere og freelancere — fra annoncering, AI‑integration, AEO, GEO og SEO, tryksager, e‑mail marketing, grafisk design, online marketing, vedligeholdelse, optimering, social media management, webdesign og WordPress-support til webhosting og domænenavne.",
     "rights": "Alle rettigheder forbeholdes.",
-    "usefulLinks": "Nyttige link"
+    "usefulLinks": "Nyttige link",
+    "socialMedia": "Sociale medier",
+    "taglineClose": "Vi står klar 7 dage om ugen."
   },
   "auth": {
     "loginTitle": "Velkommen tilbage",

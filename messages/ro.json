@@ -282,9 +282,11 @@
     "backHome": "Înapoi acasă"
   },
   "footer": {
-    "tagline": "Creștere bazată pe AI pentru companii.",
+    "tagline": "Oferim servicii și produse pentru antreprenori și freelanceri — de la publicitate, integrare AI, AEO, GEO și SEO, tipografie, email marketing, design grafic, marketing online, mentenanță, optimizare, gestionarea rețelelor sociale, webdesign și suport WordPress până la webhosting și nume de domeniu.",
     "rights": "Toate drepturile rezervate.",
-    "usefulLinks": "Link-uri utile"
+    "usefulLinks": "Link-uri utile",
+    "socialMedia": "Social media",
+    "taglineClose": "Suntem disponibili 7 zile pe săptămână."
   },
   "auth": {
     "loginTitle": "Bine ai revenit",

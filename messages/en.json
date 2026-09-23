@@ -283,9 +283,11 @@
     "backHome": "Back home"
   },
   "footer": {
-    "tagline": "AI-driven growth for businesses.",
+    "tagline": "We offer services and products for entrepreneurs and freelancers, from advertising, AI integration, AEO, GEO and SEO, print, email marketing, graphic design, online marketing, maintenance, optimisation, social media management, web design and WordPress support to web hosting and domain names.",
     "rights": "All rights reserved.",
-    "usefulLinks": "Useful links"
+    "usefulLinks": "Useful links",
+    "socialMedia": "Social media",
+    "taglineClose": "We are ready for you 7 days a week."
   },
   "auth": {
     "loginTitle": "Welcome back",

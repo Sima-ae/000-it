@@ -282,9 +282,11 @@
     "backHome": "Zpátky domů"
   },
   "footer": {
-    "tagline": "Růst podniků řízený AI.",
+    "tagline": "Nabízíme služby a produkty pro podnikatele a freelancery — od reklamy, AI integrace, AEO, GEO a SEO, tisku, e‑mail marketingu, grafického designu, online marketingu, údržby, optimalizace, správy sociálních sítí, webdesignu a podpory WordPress až po webhosting a doménová jména.",
     "rights": "Všechna práva vyhrazena.",
-    "usefulLinks": "Kontakty"
+    "usefulLinks": "Užitečné odkazy",
+    "socialMedia": "Sociální sítě",
+    "taglineClose": "Jsme připraveni 7 dní v týdnu."
   },
   "auth": {
     "loginTitle": "Vítejte zpět",

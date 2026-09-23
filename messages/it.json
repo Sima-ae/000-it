@@ -282,9 +282,11 @@
     "backHome": "Ritorno a casa"
   },
   "footer": {
-    "tagline": "AI crescita guidata per le imprese.",
+    "tagline": "Offriamo servizi e prodotti per imprenditori e liberi professionisti, da advertising, integrazione IA, AEO, GEO e SEO, stampa, email marketing, graphic design, marketing online, manutenzione, ottimizzazione, gestione dei social media, web design e supporto WordPress fino a web hosting e nomi di dominio.",
     "rights": "Tutti i diritti riservati.",
-    "usefulLinks": "Link utili"
+    "usefulLinks": "Link utili",
+    "socialMedia": "Social media",
+    "taglineClose": "Siamo disponibili 7 giorni su 7."
   },
   "auth": {
     "loginTitle": "Bentornato",

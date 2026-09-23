@@ -282,9 +282,11 @@
     "backHome": "De retour à la maison"
   },
   "footer": {
-    "tagline": "Croissance pilotée par AI pour les entreprises.",
+    "tagline": "Nous proposons des services et produits pour les entrepreneurs et indépendants, de la publicité, l'intégration IA, AEO, GEO et SEO, l'impression, l'e‑mail marketing, le design graphique, le marketing en ligne, la maintenance, l'optimisation, la gestion des réseaux sociaux, le webdesign et le support WordPress jusqu'à l'hébergement web et les noms de domaine.",
     "rights": "Tous droits réservés.",
-    "usefulLinks": "Liens utiles"
+    "usefulLinks": "Liens utiles",
+    "socialMedia": "Réseaux sociaux",
+    "taglineClose": "Nous sommes disponibles 7 jours sur 7."
   },
   "auth": {
     "loginTitle": "Bon retour",

@@ -282,9 +282,11 @@
     "backHome": "Zurück zur Startseite"
   },
   "footer": {
-    "tagline": "AI-getriebenes Wachstum für Unternehmen.",
+    "tagline": "Wir bieten Dienstleistungen und Produkte für Unternehmer und Freiberufler — von Werbung, KI‑Integration, AEO, GEO und SEO, Druckprodukten, E‑Mail‑Marketing, Grafikdesign, Online‑Marketing, Wartung, Optimierung, Social‑Media‑Management, Webdesign und WordPress‑Support bis hin zu Webhosting und Domainnamen.",
     "rights": "Alle Rechte vorbehalten.",
-    "usefulLinks": "Nützliche Links"
+    "usefulLinks": "Nützliche Links",
+    "socialMedia": "Social Media",
+    "taglineClose": "7 Tage die Woche stehen wir für Sie bereit."
   },
   "auth": {
     "loginTitle": "Willkommen zurück",

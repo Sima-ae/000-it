@@ -28,9 +28,11 @@ const primaryLinks = [
   { href: "/over-ons", key: "info", info: true },
   { href: "/diensten", key: "services", mega: true },
   { href: "/kennisbank", key: "kennisbank" },
+  { href: "/nieuws", key: "blog" },
   { href: "/portfolio", key: "portfolio" },
   { href: "/shop", key: "pricing" },
   { href: "/diensten/categorie/hosting", key: "hosting", hosting: true },
+  { href: "/contact", key: "contact" },
 ] as const;
 
 function isLocaleHome(pathname: string, locale: string) {
@@ -91,12 +93,12 @@ export function Navigation() {
     <header className="pointer-events-none fixed inset-x-0 top-0 z-50 px-3 pt-3 md:px-4 md:pt-4">
       <div
         className={cn(
-          "pointer-events-auto mx-auto max-w-6xl rounded-[1.75rem] transition-all duration-300",
+          "pointer-events-auto mx-auto max-w-7xl rounded-[1.75rem] transition-all duration-300",
           "glass border border-white/40 dark:border-white/10",
           scrolled && "glass-strong shadow-[0_18px_50px_rgba(15,23,42,0.12)]",
         )}
       >
-        <div className="flex items-center justify-between gap-3 px-3 py-2.5 md:px-4 md:py-3">
+        <div className="flex items-center justify-between gap-2 px-3 py-2.5 md:gap-3 md:px-4 md:py-3">
           <SoftLink
             href={localizedHref(locale, "/")}
             aria-label="TripleZero iT"
@@ -105,7 +107,7 @@ export function Navigation() {
             <BrandLogo priority />
           </SoftLink>
 
-          <nav className="hidden items-center gap-0.5 xl:flex">
+          <nav className="hidden items-center gap-0.5 lg:flex">
             {primaryLinks.map((link) => {
               const href = localizedHref(locale, link.href);
               const pathOnly = href.split("#")[0];
@@ -134,27 +136,21 @@ export function Navigation() {
 
               if ("info" in link && link.info) {
                 const faqHref = localizedHref(locale, "/faq");
-                const contactHref = localizedHref(locale, "/contact");
-                const newsHref = localizedHref(locale, "/nieuws");
+                const aboutHref = localizedHref(locale, "/over-ons");
                 const infoActive =
-                  active ||
+                  pathname === aboutHref ||
+                  pathname.startsWith(`${aboutHref}/`) ||
                   pathname === faqHref ||
-                  pathname.startsWith(`${faqHref}/`) ||
-                  pathname === contactHref ||
-                  pathname.startsWith(`${contactHref}/`) ||
-                  pathname === newsHref ||
-                  pathname.startsWith(`${newsHref}/`);
+                  pathname.startsWith(`${faqHref}/`);
                 return (
                   <InfoDropdown
                     key={link.key}
                     locale={locale}
                     label={t("info")}
-                    contactLabel={t("contact")}
                     aboutLabel={t("about")}
                     faqLabel={t("faq")}
                     termsLabel={t("terms")}
                     cookiesLabel={t("cookies")}
-                    newsLabel={t("blog")}
                     privacyLabel={t("privacy")}
                     active={infoActive}
                   />
@@ -172,7 +168,7 @@ export function Navigation() {
                   key={link.key}
                   href={href}
                   className={cn(
-                    "rounded-xl px-2.5 py-1.5 text-[13px] text-muted-foreground transition hover:bg-primary hover:text-primary-foreground",
+                    "rounded-xl px-2 py-1.5 text-[13px] text-muted-foreground transition hover:bg-primary hover:text-primary-foreground",
                     active && "bg-primary text-primary-foreground",
                   )}
                 >
@@ -193,13 +189,13 @@ export function Navigation() {
             </SoftLink>
             <button
               type="button"
-              className="rounded-xl p-2 text-muted-foreground transition hover:bg-muted/70 xl:hidden"
+              className="rounded-xl p-2 text-muted-foreground transition hover:bg-muted/70 lg:hidden"
               onClick={() => setOpen((v) => !v)}
               aria-label={tCommon("openMenu")}
             >
               {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
-            <span className="hidden xl:inline-flex">
+            <span className="hidden lg:inline-flex">
               <ThemeToggle />
             </span>
             <AccountMenu />
@@ -209,7 +205,7 @@ export function Navigation() {
         </div>
 
         {open && (
-          <div className="max-h-[70vh] overflow-y-auto border-t border-border/60 px-3 py-3 xl:hidden">
+          <div className="max-h-[70vh] overflow-y-auto border-t border-border/60 px-3 py-3 lg:hidden">
             <div className="flex flex-col gap-1">
               <div className="flex items-center px-1 py-0.5">
                 <ThemeToggle />
@@ -305,16 +301,12 @@ export function Navigation() {
 
                 if ("info" in link && link.info) {
                   const faqHref = localizedHref(locale, "/faq");
-                  const contactHref = localizedHref(locale, "/contact");
-                  const newsHref = localizedHref(locale, "/nieuws");
+                  const aboutHref = localizedHref(locale, "/over-ons");
                   const infoActive =
-                    active ||
+                    pathname === aboutHref ||
+                    pathname.startsWith(`${aboutHref}/`) ||
                     pathname === faqHref ||
-                    pathname.startsWith(`${faqHref}/`) ||
-                    pathname === contactHref ||
-                    pathname.startsWith(`${contactHref}/`) ||
-                    pathname === newsHref ||
-                    pathname.startsWith(`${newsHref}/`);
+                    pathname.startsWith(`${faqHref}/`);
                   return (
                     <div key={link.key}>
                       <button
@@ -330,12 +322,6 @@ export function Navigation() {
                       </button>
                       {mobileInfoOpen ? (
                         <div className="mb-2 ml-2 border-l border-border/60 pl-3">
-                          <SoftLink
-                            href={localizedHref(locale, "/contact")}
-                            className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
-                          >
-                            {t("contact")}
-                          </SoftLink>
                           <SoftLink
                             href={localizedHref(locale, "/over-ons")}
                             className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
@@ -357,12 +343,6 @@ export function Navigation() {
                             className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
                           >
                             {t("cookies")}
-                          </SoftLink>
-                          <SoftLink
-                            href={localizedHref(locale, "/nieuws")}
-                            className="block rounded-lg px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground"
-                          >
-                            {t("blog")}
                           </SoftLink>
                           <SoftLink
                             href={localizedHref(locale, "/privacy")}

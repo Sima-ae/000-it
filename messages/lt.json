@@ -282,9 +282,11 @@
     "backHome": "Grįžo namo"
   },
   "footer": {
-    "tagline": "AI skatinamas verslo augimas.",
+    "tagline": "Siūlome paslaugas ir produktus verslininkams ir laisvai samdomiems darbuotojams — nuo reklamos, AI integracijos, AEO, GEO ir SEO, spaudos, el. pašto rinkodaros, grafinio dizaino, internetinės rinkodaros, priežiūros, optimizavimo, socialinės žiniasklaidos valdymo, interneto dizaino ir WordPress palaikymo iki internetinio hostingo ir domenų vardų.",
     "rights": "Visos teisės saugomos.",
-    "usefulLinks": "Naudingos nuorodos"
+    "usefulLinks": "Naudingos nuorodos",
+    "socialMedia": "Socialinė žiniasklaida",
+    "taglineClose": "Esame pasirengę 7 dienas per savaitę."
   },
   "auth": {
     "loginTitle": "Sveiki sugrįžę",

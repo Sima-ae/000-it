@@ -282,9 +282,11 @@
     "backHome": "回到家"
   },
   "footer": {
-    "tagline": "AI 驱动企业增长。",
+    "tagline": "我们为创业者与自由职业者提供服务与产品，涵盖广告、AI 集成、AEO、GEO 与 SEO、印刷、邮件营销、平面设计、网络营销、维护、优化、社交媒体管理、网页设计与 WordPress 支持，直至网站主机与域名。",
     "rights": "保留所有权利。",
-    "usefulLinks": "相关链接"
+    "usefulLinks": "相关链接",
+    "socialMedia": "社交媒体",
+    "taglineClose": "我们每周 7 天随时为您服务。"
   },
   "auth": {
     "loginTitle": "欢迎回来",

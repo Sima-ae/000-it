@@ -35,7 +35,7 @@ const EN_UI = {
 };
 
 const NL_UI = {
-  title: "Boek een afspraak",
+  title: "Maak een afspraak",
   selectService: "Selecteer de gewenste service:",
   service: "Dienst",
   selectAService: "Selecteer service",

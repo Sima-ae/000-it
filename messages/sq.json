@@ -282,9 +282,11 @@
     "backHome": "Kthehu në shtëpi"
   },
   "footer": {
-    "tagline": "Rritja e drejtuar nga AI për bizneset.",
+    "tagline": "Ofrojmë shërbime dhe produkte për sipërmarrës dhe freelancers — nga reklamimi, integrimi AI, AEO, GEO dhe SEO, shtypi, email marketing, dizajni grafik, marketingu online, mirëmbajtja, optimizimi, menaxhimi i rrjeteve sociale, web design dhe mbështetja WordPress deri te web hosting dhe emrat e domains.",
     "rights": "Të gjitha të drejtat e rezervuara.",
-    "usefulLinks": "Lidhje të dobishme"
+    "usefulLinks": "Lidhje të dobishme",
+    "socialMedia": "Rrjetet sociale",
+    "taglineClose": "Jemi gati 7 ditë në javë."
   },
   "auth": {
     "loginTitle": "Mirë se vini përsëri",

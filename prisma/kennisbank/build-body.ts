@@ -605,7 +605,7 @@ const topicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Noteer de twee laagste scores die je omzet of leads raken.",
         "Los snelle technische issues op (HTTPS, 404’s, trage homepage).",
         "Verbeter content voor AEO/SEO of lokale signalen voor GEO.",
-        "Open een ticket of boek een afspraak voor een gericht plan.",
+        "Open een ticket of maak een afspraak voor een gericht plan.",
         "Overweeg Business of Extra Growth als je AEO/GEO/SEO + AI-agents structureel wilt.",
       ]),
       outro(),
@@ -826,7 +826,7 @@ const topicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-shop-enterprise": () =>
     [
       p(
-        `Enterprise is bedoeld voor maatwerk zonder vaste shopprijs. Neem contact op of boek een afspraak wanneer je meerdere merken, complexe AI-integraties of custom SLA’s nodig hebt.`,
+        `Enterprise is bedoeld voor maatwerk zonder vaste shopprijs. Neem contact op of maak een afspraak wanneer je meerdere merken, complexe AI-integraties of custom SLA’s nodig hebt.`,
       ),
       outro(),
     ].join("\n"),

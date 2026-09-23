@@ -16,7 +16,7 @@
     "contact": "Contact",
     "aiScan": "AI-scan",
     "faq": "Veelgestelde vragen",
-    "book": "Boek een afspraak",
+    "book": "Maak een afspraak",
     "login": "Inloggen",
     "register": "Registreren",
     "dashboard": "Dashboard",
@@ -283,9 +283,11 @@
     "backHome": "Naar home"
   },
   "footer": {
-    "tagline": "AI-gedreven advies, diensten, groei en support voor ondernemers en zzp'ers.",
+    "tagline": "Wij bieden diensten en producten voor ondernemers en zzp'ers van adverteren, AI‑integratie, AEO, GEO en SEO, drukwerk, e‑mail marketing, grafisch design, online marketing, onderhoud, optimalisatie, Social Media beheer, webdesign en WordPress-support tot webhosting en domeinnamen.",
     "rights": "Alle rechten voorbehouden.",
-    "usefulLinks": "Handige links"
+    "usefulLinks": "Handige links",
+    "socialMedia": "Social media",
+    "taglineClose": "7 dagen per week staan wij voor je klaar."
   },
   "auth": {
     "loginTitle": "Welkom terug",
@@ -650,7 +652,7 @@
     "linkKb": "Kennisbank"
   },
   "appointment": {
-    "title": "Boek een afspraak",
+    "title": "Maak een afspraak",
     "selectService": "Selecteer een categorie:",
     "service": "Dienst",
     "selectAService": "Maak een keuze...",

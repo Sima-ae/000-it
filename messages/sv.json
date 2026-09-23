@@ -282,9 +282,11 @@
     "backHome": "Hemma igen"
   },
   "footer": {
-    "tagline": "AI-driven tillväxt för företag.",
+    "tagline": "Vi erbjuder tjänster och produkter för entreprenörer och frilansare — från annonsering, AI‑integration, AEO, GEO och SEO, trycksaker, e‑postmarknadsföring, grafisk design, online marknadsföring, underhåll, optimering, hantering av sociala medier, webbdesign och WordPress-support till webbhosting och domännamn.",
     "rights": "Alla rättigheter reserverade.",
-    "usefulLinks": "Användbara länkar"
+    "usefulLinks": "Användbara länkar",
+    "socialMedia": "Sociala medier",
+    "taglineClose": "Vi står redo 7 dagar i veckan."
   },
   "auth": {
     "loginTitle": "Välkommen tillbaka",

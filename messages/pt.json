@@ -282,9 +282,11 @@
     "backHome": "De volta para casa"
   },
   "footer": {
-    "tagline": "Crescimento impulsionado por AI para empresas.",
+    "tagline": "Oferecemos serviços e produtos para empresários e freelancers, desde publicidade, integração de IA, AEO, GEO e SEO, impressão, email marketing, design gráfico, marketing online, manutenção, otimização, gestão de redes sociais, web design e suporte WordPress até alojamento web e nomes de domínio.",
     "rights": "Todos os direitos reservados.",
-    "usefulLinks": "Ligações úteis"
+    "usefulLinks": "Ligações úteis",
+    "socialMedia": "Redes sociais",
+    "taglineClose": "Estamos disponíveis 7 dias por semana."
   },
   "auth": {
     "loginTitle": "Bem vindo de volta",

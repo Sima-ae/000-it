@@ -12,23 +12,19 @@ const CLOSE_DELAY_MS = 220;
 export function InfoDropdown({
   locale,
   label,
-  contactLabel,
   aboutLabel,
   faqLabel,
   termsLabel,
   cookiesLabel,
-  newsLabel,
   privacyLabel,
   active,
 }: {
   locale: string;
   label: string;
-  contactLabel: string;
   aboutLabel: string;
   faqLabel: string;
   termsLabel: string;
   cookiesLabel: string;
-  newsLabel: string;
   privacyLabel: string;
   active: boolean;
 }) {
@@ -54,13 +50,8 @@ export function InfoDropdown({
 
   useEffect(() => () => clearCloseTimer(), []);
 
-  const contactHref = localizedHref(locale, "/contact");
-  const contactActive =
-    pathname === contactHref || pathname.startsWith(`${contactHref}/`);
   const aboutHref = localizedHref(locale, "/over-ons");
   const aboutActive = pathname === aboutHref || pathname.startsWith(`${aboutHref}/`);
-  const newsHref = localizedHref(locale, "/nieuws");
-  const newsActive = pathname === newsHref || pathname.startsWith(`${newsHref}/`);
   const faqHref = localizedHref(locale, "/faq");
   const faqActive = pathname === faqHref || pathname.startsWith(`${faqHref}/`);
 
@@ -79,7 +70,7 @@ export function InfoDropdown({
       <button
         type="button"
         className={cn(
-          "inline-flex items-center gap-1 rounded-xl px-2.5 py-1.5 text-[13px] text-muted-foreground transition hover:bg-primary hover:text-primary-foreground",
+          "inline-flex items-center gap-1 rounded-xl px-2 py-1.5 text-[13px] text-muted-foreground transition hover:bg-primary hover:text-primary-foreground",
           (active || open) && "bg-primary text-primary-foreground",
         )}
         aria-expanded={open}
@@ -97,13 +88,6 @@ export function InfoDropdown({
           onMouseLeave={scheduleClose}
         >
           <div className="min-w-56 rounded-2xl border border-border/60 bg-white p-1.5 shadow-xl dark:bg-zinc-950">
-            <SoftLink
-              href={contactHref}
-              className={cn(itemClass, contactActive && "bg-primary text-primary-foreground")}
-              onClick={() => setOpen(false)}
-            >
-              {contactLabel}
-            </SoftLink>
             <SoftLink
               href={aboutHref}
               className={cn(itemClass, aboutActive && "bg-primary text-primary-foreground")}
@@ -128,13 +112,6 @@ export function InfoDropdown({
               onClick={() => setOpen(false)}
             >
               {cookiesLabel}
-            </SoftLink>
-            <SoftLink
-              href={newsHref}
-              className={cn(itemClass, newsActive && "bg-primary text-primary-foreground")}
-              onClick={() => setOpen(false)}
-            >
-              {newsLabel}
             </SoftLink>
             <SoftLink
               href={localizedHref(locale, "/privacy")}

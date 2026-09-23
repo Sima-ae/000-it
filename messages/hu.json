@@ -282,9 +282,11 @@
     "backHome": "Vissza haza"
   },
   "footer": {
-    "tagline": "AI-vezérelt növekedés a vállalkozások számára.",
+    "tagline": "Szolgáltatásokat és termékeket kínálunk vállalkozóknak és szabadúszóknak — hirdetéstől, AI‑integrációtól, AEO-tól, GEO-tól és SEO-tól, nyomdai termékektől, e‑mail marketingtől, grafikai tervezéstől, online marketingtől, karbantartástól, optimalizálástól, közösségimédia-kezeléstől, webdesigntól és WordPress-támogatástól a webhostingig és domainnevekig.",
     "rights": "Minden jog fenntartva.",
-    "usefulLinks": "Hasznos címek"
+    "usefulLinks": "Hasznos linkek",
+    "socialMedia": "Közösségi média",
+    "taglineClose": "A hét 7 napján készen állunk."
   },
   "auth": {
     "loginTitle": "Isten hozott",
