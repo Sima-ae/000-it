@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Reveal } from "@/components/marketing/Reveal";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { BRANDING_COLLAGE } from "@/lib/branding-images";
 import { cn } from "@/lib/utils";
@@ -16,17 +15,15 @@ export function BrandingCollage({
   className?: string;
 }) {
   const tiles = (
-    <div className="flex h-40 flex-nowrap items-stretch justify-center gap-1.5 sm:h-48 sm:gap-2 md:h-56 md:gap-2.5 lg:h-64">
+    <div className="flex h-40 w-full min-w-0 items-stretch justify-center gap-1.5 sm:h-48 sm:gap-2 md:h-56 md:gap-2.5 lg:h-64">
       {BRANDING_COLLAGE.map((src, i) => {
         const isMiddle = i === Math.floor(BRANDING_COLLAGE.length / 2);
         return (
           <div
             key={src}
             className={cn(
-              "relative h-full shrink-0 overflow-hidden rounded-2xl bg-muted/20",
-              isMiddle
-                ? "w-44 sm:w-52 md:w-64 lg:w-72"
-                : "w-28 sm:w-32 md:w-36 lg:w-40",
+              "relative h-full min-w-0 bg-background",
+              isMiddle ? "flex-[1.85]" : "flex-1",
             )}
           >
             <Image
@@ -34,7 +31,7 @@ export function BrandingCollage({
               alt=""
               fill
               unoptimized
-              sizes={isMiddle ? "288px" : "160px"}
+              sizes={isMiddle ? "30vw" : "16vw"}
               className="object-contain object-bottom transition duration-500 group-hover:scale-[1.03]"
             />
           </div>
@@ -46,23 +43,21 @@ export function BrandingCollage({
   return (
     <section
       className={cn(
-        "mx-auto w-full max-w-[72rem] overflow-x-auto px-3 pb-1 sm:px-4 md:max-w-[80rem] md:px-6 md:pb-2",
+        "mx-auto w-full max-w-6xl px-4 pb-1 md:max-w-7xl md:px-6 md:pb-2",
         className,
       )}
     >
-      <Reveal from="up" duration={0.55}>
-        {href ? (
-          <SoftLink
-            href={href}
-            className="group block"
-            aria-label="Services"
-          >
-            {tiles}
-          </SoftLink>
-        ) : (
-          <div aria-hidden>{tiles}</div>
-        )}
-      </Reveal>
+      {href ? (
+        <SoftLink
+          href={href}
+          className="group block overflow-visible"
+          aria-label="Services"
+        >
+          {tiles}
+        </SoftLink>
+      ) : (
+        <div aria-hidden>{tiles}</div>
+      )}
     </section>
   );
 }

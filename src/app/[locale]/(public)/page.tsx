@@ -87,7 +87,7 @@ export default async function HomePage({
   ];
 
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-clip">
       <JsonLd data={organizationJsonLd()} />
       <HomeHeroBanner />
 
@@ -244,10 +244,7 @@ export default async function HomePage({
         </Reveal>
       </section>
 
-      <BrandingCollage
-        href={localizedHref(locale, "/diensten")}
-        className="-mb-6 md:-mb-8"
-      />
+      <BrandingCollage href={localizedHref(locale, "/diensten")} />
     </div>
   );
 }
