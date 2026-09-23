@@ -71,7 +71,7 @@ export function FacebookPageEmbed({ locale }: { locale: string }) {
 
         <div className="relative px-2.5 pb-2.5">
           {/* Round page avatar with black ring */}
-          <div className="-mt-6 mb-2 h-12 w-12 overflow-hidden rounded-full border-2 border-black bg-white shadow-md">
+          <div className="-mt-7 mb-0 h-12 w-12 overflow-hidden rounded-full border-2 border-black bg-white shadow-md">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={avatarSrc}
@@ -87,7 +87,7 @@ export function FacebookPageEmbed({ locale }: { locale: string }) {
             />
           </div>
 
-          <p className="font-display text-[13px] font-semibold leading-tight text-foreground">
+          <p className="-mt-0.5 font-display text-[13px] font-semibold leading-tight text-foreground">
             {name}
           </p>
           {followersLabel ? (
