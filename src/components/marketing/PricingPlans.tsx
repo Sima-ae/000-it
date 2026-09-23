@@ -17,6 +17,11 @@ export type PricingPlan = {
   name: string;
   /** Monthly price in euros, or null for custom/enterprise */
   monthlyPrice: number | null;
+  /**
+   * Optional catalog yearly price (euros). When set, used instead of
+   * computing monthly × 12 × 0.9.
+   */
+  yearlyPrice?: number | null;
   features: string[];
   featured: boolean;
 };
@@ -84,7 +89,10 @@ export function PricingPlans({
           };
         }
         if (billing === "yearly") {
-          const yearly = Math.round(plan.monthlyPrice * 12 * 0.9 * 100) / 100;
+          const yearly =
+            plan.yearlyPrice != null && Number.isFinite(plan.yearlyPrice)
+              ? plan.yearlyPrice
+              : Math.round(plan.monthlyPrice * 12 * 0.9 * 100) / 100;
           return {
             ...plan,
             displayPrice: formatEuro(yearly, locale),

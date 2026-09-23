@@ -7,6 +7,7 @@ import {
   isSupportPackageSlug,
   loadShopCatalogFromDb,
   localizeShopProduct,
+  resolvePlanPricesFromCatalog,
   type ShopProduct,
 } from "@/lib/shop/catalog";
 
@@ -61,6 +62,7 @@ export default async function ShopPage({
   const t = await getTranslations("shop");
   const pricing = await getTranslations("pricing");
   const catalog = await loadShopCatalogFromDb();
+  const planPrices = resolvePlanPricesFromCatalog(catalog);
   const supportServices = catalog.filter(
     (p) =>
       (p.type === "service" || p.type === "product") &&
@@ -98,14 +100,16 @@ export default async function ShopPage({
     {
       id: "starter" as const,
       name: pricing("starter"),
-      monthlyPrice: 39.95,
+      monthlyPrice: planPrices.starter.monthly,
+      yearlyPrice: planPrices.starter.yearly,
       features: pricing.raw("features.starter") as string[],
       featured: false,
     },
     {
       id: "growth" as const,
       name: pricing("growth"),
-      monthlyPrice: 64.95,
+      monthlyPrice: planPrices.growth.monthly,
+      yearlyPrice: planPrices.growth.yearly,
       features: pricing.raw("features.growth") as string[],
       featured: true,
     },

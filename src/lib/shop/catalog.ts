@@ -147,6 +147,34 @@ function yearlyFromMonthly(monthly: number) {
   return Math.round(monthly * 12 * 0.9 * 100) / 100;
 }
 
+/** Resolve AI plan display prices (euros) from shop catalog rows. */
+export function resolvePlanPricesFromCatalog(catalog: ShopProduct[]) {
+  const bySlug = new Map(catalog.map((p) => [p.slug, p]));
+
+  function eurosFor(slug: string, fallback: number) {
+    const product = bySlug.get(slug);
+    if (!product) return fallback;
+    return shopUnitPriceInclCents(product) / 100;
+  }
+
+  return {
+    starter: {
+      monthly: eurosFor("plan-starter-monthly", PLAN_MONTHLY_EUR.starter),
+      yearly: eurosFor(
+        "plan-starter-yearly",
+        yearlyFromMonthly(PLAN_MONTHLY_EUR.starter),
+      ),
+    },
+    growth: {
+      monthly: eurosFor("plan-growth-monthly", PLAN_MONTHLY_EUR.growth),
+      yearly: eurosFor(
+        "plan-growth-yearly",
+        yearlyFromMonthly(PLAN_MONTHLY_EUR.growth),
+      ),
+    },
+  } as const;
+}
+
 const PLAN_COPY = {
   starter: {
     name: { nl: "Business", en: "Business" },

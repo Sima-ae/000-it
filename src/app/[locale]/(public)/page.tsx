@@ -20,11 +20,17 @@ import { cn } from "@/lib/utils";
 import { getAiScanCount } from "@/lib/ai-scan-count";
 import { buildStaticPageMetadata, organizationJsonLd } from "@/lib/seo";
 import {
+  loadShopCatalogFromDb,
+  resolvePlanPricesFromCatalog,
+} from "@/lib/shop/catalog";
+import {
   catalogGroupSummary,
   serviceGroupHref,
   sortedServiceGroups,
 } from "@/content/fixweb/catalog";
 import { catalogGroupTitle } from "@/content/fixweb/catalog-title";
+
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,
@@ -50,19 +56,23 @@ export default async function HomePage({
   const shop = await getTranslations("shop");
 
   const scanCount = getAiScanCount();
+  const catalog = await loadShopCatalogFromDb();
+  const planPrices = resolvePlanPricesFromCatalog(catalog);
 
   const plans = [
     {
       id: "starter" as const,
       name: pricing("starter"),
-      monthlyPrice: 39.95,
+      monthlyPrice: planPrices.starter.monthly,
+      yearlyPrice: planPrices.starter.yearly,
       features: pricing.raw("features.starter") as string[],
       featured: false,
     },
     {
       id: "growth" as const,
       name: pricing("growth"),
-      monthlyPrice: 64.95,
+      monthlyPrice: planPrices.growth.monthly,
+      yearlyPrice: planPrices.growth.yearly,
       features: pricing.raw("features.growth") as string[],
       featured: true,
     },
