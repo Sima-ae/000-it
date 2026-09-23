@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
@@ -21,6 +20,7 @@ import {
   ShopAdminForm,
   type ShopAdminFormValues,
 } from "@/components/shop/ShopAdminForm";
+import { ShopProductImage } from "@/components/shop/ShopProductImage";
 import { localizedHref } from "@/i18n/pathnames";
 import { canDelete, canEditResource } from "@/lib/roles";
 import { centsToEurosNumber } from "@/lib/shop/admin";
@@ -188,15 +188,12 @@ export default function ShopAdminPage() {
                 className="flex flex-col gap-3 rounded-xl border border-border p-3 sm:flex-row sm:items-center"
               >
                 <div className="relative h-20 w-full overflow-hidden rounded-lg bg-muted sm:w-28">
-                  {item.image ? (
-                    <Image
-                      src={item.image}
-                      alt=""
-                      fill
-                      className="object-cover"
-                      unoptimized
-                    />
-                  ) : null}
+                  <ShopProductImage
+                    src={item.image}
+                    alt={locale === "nl" ? item.nameNl : item.nameEn}
+                    sizes="112px"
+                    fallbackClassName="p-3"
+                  />
                 </div>
                 <div className="min-w-0 flex-1 space-y-1">
                   <div className="flex flex-wrap items-center gap-2">
@@ -244,24 +241,26 @@ export default function ShopAdminPage() {
       </Card>
 
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="max-h-[90vh] max-w-3xl overflow-y-auto">
-          <DialogHeader>
-            <DialogTitle>
+        <DialogContent className="w-[min(96vw,56rem)] gap-0 p-0">
+          <DialogHeader className="shrink-0 border-b border-border/60 bg-muted/20 px-5 py-4 pr-14 md:px-6">
+            <DialogTitle className="text-xl md:text-2xl">
               {isEdit ? "Edit product / service" : "Add product / service"}
             </DialogTitle>
-            <DialogDescription>
-              Set title, description, price, SKU, category and billing interval.
+            <DialogDescription className="text-sm">
+              Titles, copy, pricing, media and catalog settings — structured for a clear shop entry.
             </DialogDescription>
           </DialogHeader>
-          <ShopAdminForm
-            key={initialEdit?.id || "new"}
-            initial={initialEdit || undefined}
-            onCancel={() => setOpen(false)}
-            onSaved={() => {
-              setOpen(false);
-              void qc.invalidateQueries({ queryKey: ["shop-admin"] });
-            }}
-          />
+          <div className="flex min-h-0 flex-1 flex-col overflow-hidden px-5 py-4 md:px-6">
+            <ShopAdminForm
+              key={initialEdit?.id || "new"}
+              initial={initialEdit || undefined}
+              onCancel={() => setOpen(false)}
+              onSaved={() => {
+                setOpen(false);
+                void qc.invalidateQueries({ queryKey: ["shop-admin"] });
+              }}
+            />
+          </div>
         </DialogContent>
       </Dialog>
     </div>

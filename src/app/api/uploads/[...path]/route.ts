@@ -39,11 +39,13 @@ export async function GET(
 
   const ext = abs.slice(abs.lastIndexOf(".")).toLowerCase();
   const type = MIME[ext] || "application/octet-stream";
+  const { size } = statSync(abs);
   const stream = createReadStream(abs);
   return new NextResponse(Readable.toWeb(stream) as unknown as BodyInit, {
     status: 200,
     headers: {
       "Content-Type": type,
+      "Content-Length": String(size),
       "Cache-Control": "public, max-age=86400, stale-while-revalidate=604800",
     },
   });
