@@ -282,7 +282,7 @@ export function Navigation() {
                                       : group.id === "webdesign"
                                         ? 11
                                         : group.id === "wordpress"
-                                          ? 8
+                                          ? 9
                                           : 8,
                                   )
                                   .map((item) => (
