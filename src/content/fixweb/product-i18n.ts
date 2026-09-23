@@ -462,7 +462,7 @@ After delivery you receive 7 days of free support for questions about backup, re
 
   "wordpress-error-fix": {
     nl: {
-      name: "Bugs en fouten herstellen",
+      name: "Bugs en errors verhelpen",
       shortDescription: `WordPress-bugs of -fouten herstellen, met focus op prestaties, beveiliging, updates en stabiliteit.
 
 Wij helpen bij veelvoorkomende problemen en best practices zodat jouw WordPress-website weer optimaal werkt voor je, ontwikkelaars en bezoekers.`,
