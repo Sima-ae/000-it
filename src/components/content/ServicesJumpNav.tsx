@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import { SoftLink } from "@/components/shared/SoftLink";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { localizedHref } from "@/i18n/pathnames";
 
@@ -12,6 +11,10 @@ type JumpLink = {
   label: string;
 };
 
+/**
+ * Jump strip for the main services index.
+ * Category pages embed chips inside CategoryHero instead.
+ */
 export function ServicesJumpNav({
   locale,
   links,
@@ -30,7 +33,6 @@ export function ServicesJumpNav({
     const desktopMq = window.matchMedia("(min-width: 768px)");
 
     const update = () => {
-      // Collapse/hide only on desktop; on mobile tabs scroll away with the page.
       if (!desktopMq.matches) {
         setStuck(false);
         return null;
@@ -74,7 +76,7 @@ export function ServicesJumpNav({
       <div ref={sentinelRef} className="h-px w-full" aria-hidden />
       <div
         className={cn(
-          "-mx-4 bg-transparent px-4 py-1 md:-mx-6 md:px-6",
+          "bg-transparent py-0.5",
           "md:sticky md:top-[calc(var(--nav-offset)-0.5rem)] md:z-30",
           "transition-[padding] duration-300 ease-out",
           stuck && "md:pointer-events-none md:py-0",
@@ -82,27 +84,27 @@ export function ServicesJumpNav({
       >
         <div
           className={cn(
-            "flex flex-wrap justify-center gap-1.5 overflow-hidden",
+            "flex max-w-full flex-wrap justify-start gap-1.5",
             "transition-[max-height,opacity,margin] duration-300 ease-out",
             stuck
-              ? "md:max-h-0 md:opacity-0 md:m-0"
-              : "max-h-112 opacity-100",
+              ? "md:max-h-0 md:m-0 md:overflow-hidden md:opacity-0"
+              : "opacity-100",
           )}
           aria-hidden={stuck || undefined}
         >
           {links.map((link) => (
-            <Button
+            <SoftLink
               key={link.key}
-              asChild
-              size="sm"
-              variant="outline"
-              className="h-8 rounded-xl px-3 text-xs"
+              href={`${localizedHref(locale, basePath)}#${link.id}`}
               tabIndex={stuck ? -1 : undefined}
+              className={cn(
+                "inline-flex h-7 items-center rounded-md border border-border/40",
+                "bg-background/50 px-2.5 text-[11px] font-medium text-muted-foreground",
+                "transition hover:border-border hover:bg-background hover:text-foreground",
+              )}
             >
-              <SoftLink href={`${localizedHref(locale, basePath)}#${link.id}`}>
-                {link.label}
-              </SoftLink>
-            </Button>
+              {link.label}
+            </SoftLink>
           ))}
         </div>
       </div>

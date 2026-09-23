@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { notFound, redirect } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/marketing/Reveal";
 import { GlassCard } from "@/components/marketing/GlassCard";
+import { CategoryHero } from "@/components/content/CategoryHero";
 import { ServiceCard } from "@/components/content/ServiceCard";
-import { ServicesJumpNav } from "@/components/content/ServicesJumpNav";
 import { SoftLink } from "@/components/shared/SoftLink";
 import {
   catalogGroupSummary,
@@ -19,7 +18,7 @@ import {
   sortedServiceGroups,
 } from "@/content/fixweb/catalog";
 import { catalogGroupTitle } from "@/content/fixweb/catalog-title";
-import { brandingFallbackForServiceSlug, brandingImageForServiceGroup } from "@/lib/branding-images";
+import { brandingFallbackForServiceSlug } from "@/lib/branding-images";
 import { listServiceGroupCards } from "@/lib/service-group-listing";
 import { buildPageMetadata } from "@/lib/seo";
 import { localizedHref } from "@/i18n/pathnames";
@@ -84,53 +83,21 @@ export default async function ServiceCategoryPage({ params }: Params) {
   }));
 
   return (
-    <div className="mx-auto max-w-6xl px-4 pb-14 pt-8 md:px-6 md:pb-20 md:pt-10">
-      <p className="text-sm text-muted-foreground">
-        <SoftLink href={localizedHref(locale, "/diensten")} className="hover:text-foreground">
-          {tNav("services")}
-        </SoftLink>
-        <span className="mx-2">/</span>
-        <span>{title}</span>
-      </p>
+    <div className="mx-auto max-w-6xl px-4 pb-12 pt-6 sm:px-5 sm:pb-14 sm:pt-8 md:px-6 md:pb-20 md:pt-10">
+      <CategoryHero
+        locale={locale}
+        groupId={group.id}
+        title={title}
+        summary={summary || undefined}
+        count={cards.length}
+        countLabel={t("countLabel")}
+        servicesLabel={tNav("services")}
+        servicesHref={localizedHref(locale, "/diensten")}
+        jumpLinks={jumpLinks.length > 2 ? jumpLinks : undefined}
+        jumpBasePath={serviceGroupPath(group.id)}
+      />
 
-      <Reveal>
-        <header className="mt-6 grid items-center gap-6 lg:grid-cols-[1.15fr_0.85fr]">
-          <div className="max-w-3xl">
-            <h1 className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
-              {title}
-            </h1>
-            {summary ? (
-              <p className="mt-3 text-muted-foreground md:text-lg">{summary}</p>
-            ) : null}
-            <p className="mt-2 text-sm text-muted-foreground">
-              {cards.length} {t("countLabel")}
-            </p>
-          </div>
-          <div className="relative aspect-5/4 overflow-hidden rounded-3xl bg-muted/40 shadow-sm">
-            <Image
-              src={brandingImageForServiceGroup(group.id)}
-              alt=""
-              fill
-              priority
-              sizes="(max-width: 1024px) 100vw, 40vw"
-              unoptimized
-              className="object-cover object-center"
-            />
-          </div>
-        </header>
-      </Reveal>
-
-      {jumpLinks.length > 2 ? (
-        <div className="mt-8">
-          <ServicesJumpNav
-            locale={locale}
-            links={jumpLinks}
-            basePath={serviceGroupPath(group.id)}
-          />
-        </div>
-      ) : null}
-
-      <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-8 grid gap-3 sm:grid-cols-2 sm:mt-10 lg:grid-cols-3 md:mt-12">
         {cards.map((card, i) => (
           <div
             key={card.item.slug}

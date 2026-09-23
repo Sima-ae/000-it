@@ -20,6 +20,8 @@ export const BRANDING_IMAGES = {
   tabletCrm: "/branding/images/tablet-01.png",
   /** Tablet analytics overview — reporting, AI readiness, optimization */
   tabletAnalytics: "/branding/images/tablet-02.png",
+  /** WordPress admin / dashboard mock — WordPress support category */
+  wordpressDashboard: "/branding/wordpress-dashboard.jpg",
   /** Full analytics overview UI — dashboards, AI scan, reporting */
   dashboardOverview: "/branding/images/dashboard-08.png",
   /** Man with laptop + metrics chips — consulting, contact, pricing */
@@ -49,19 +51,19 @@ export function brandingImageForServiceGroup(
 ): (typeof BRANDING_IMAGES)[BrandingImageKey] {
   switch (groupId) {
     case "ai":
-      return BRANDING_IMAGES.dashboardOverview;
+      return BRANDING_IMAGES.socialEngagement;
     case "optimization":
       return BRANDING_IMAGES.analyticsDashboard;
     case "marketing":
-      return BRANDING_IMAGES.socialEngagement;
+      return BRANDING_IMAGES.duoSuccess;
     case "webdesign":
       return BRANDING_IMAGES.development;
     case "wordpress":
-      return BRANDING_IMAGES.tabletAnalytics;
+      return BRANDING_IMAGES.wordpressDashboard;
     case "hosting":
       return BRANDING_IMAGES.tabletCrm;
     case "design":
-      return BRANDING_IMAGES.duoSuccess;
+      return BRANDING_IMAGES.teamWorkshop;
     default:
       return BRANDING_IMAGES.teamWorkshop;
   }
