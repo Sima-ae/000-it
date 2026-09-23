@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { PricingPlans } from "@/components/marketing/PricingPlans";
 import { ShopProductCard } from "@/components/shop/ShopProductCard";
+import { ShopHostingSection } from "@/components/shop/ShopHostingSection";
 import { ShopSupportSection } from "@/components/shop/ShopSupportSection";
 import {
   isSupportPackageSlug,
@@ -11,22 +12,32 @@ import {
 
 export const dynamic = "force-dynamic";
 
-const HOSTING_SLUG_ORDER = [
+const SHARED_HOSTING_SLUG_ORDER = [
   "shared-hosting-basic",
   "shared-hosting-business",
   "shared-hosting-plus",
+] as const;
+
+const WORDPRESS_HOSTING_SLUG_ORDER = [
   "wordpress-hosting-basic",
   "wordpress-hosting-business",
   "wordpress-hosting-plus",
+] as const;
+
+const VPS_HOSTING_SLUG_ORDER = [
   "vps-hosting-basic",
   "vps-hosting-business",
   "vps-hosting-plus",
 ] as const;
 
-const HOSTING_SLUGS = new Set<string>(HOSTING_SLUG_ORDER);
+const HOSTING_SLUGS = new Set<string>([
+  ...SHARED_HOSTING_SLUG_ORDER,
+  ...WORDPRESS_HOSTING_SLUG_ORDER,
+  ...VPS_HOSTING_SLUG_ORDER,
+]);
 
-function sortHostingProducts(products: ShopProduct[]) {
-  const rank = new Map(HOSTING_SLUG_ORDER.map((slug, index) => [slug, index]));
+function sortBySlugOrder(products: ShopProduct[], order: readonly string[]) {
+  const rank = new Map<string, number>(order.map((slug, index) => [slug, index]));
   return [...products].sort(
     (a, b) => (rank.get(a.slug) ?? 999) - (rank.get(b.slug) ?? 999),
   );
@@ -60,8 +71,23 @@ export default async function ShopPage({
       (p.type === "service" || p.type === "product") &&
       !isSupportPackageSlug(p.slug),
   );
-  const hostingProducts = sortHostingProducts(
-    catalogProducts.filter((p) => HOSTING_SLUGS.has(p.slug)),
+  const sharedHostingProducts = sortBySlugOrder(
+    catalogProducts.filter((p) =>
+      (SHARED_HOSTING_SLUG_ORDER as readonly string[]).includes(p.slug),
+    ),
+    SHARED_HOSTING_SLUG_ORDER,
+  );
+  const wordpressHostingProducts = sortBySlugOrder(
+    catalogProducts.filter((p) =>
+      (WORDPRESS_HOSTING_SLUG_ORDER as readonly string[]).includes(p.slug),
+    ),
+    WORDPRESS_HOSTING_SLUG_ORDER,
+  );
+  const vpsHostingProducts = sortBySlugOrder(
+    catalogProducts.filter((p) =>
+      (VPS_HOSTING_SLUG_ORDER as readonly string[]).includes(p.slug),
+    ),
+    VPS_HOSTING_SLUG_ORDER,
   );
   const serviceProducts = sortServiceProducts(
     catalogProducts.filter((p) => !HOSTING_SLUGS.has(p.slug)),
@@ -121,18 +147,20 @@ export default async function ShopPage({
 
       <ShopSupportSection title={t("support")} products={supportServices} />
 
-      {hostingProducts.length > 0 ? (
-        <section className="mt-16 text-center">
-          <h2 className="font-display text-2xl font-semibold tracking-tight text-accent">
-            {t("webhosting")}
-          </h2>
-          <div className="mt-6 grid gap-4 text-left md:grid-cols-2 xl:grid-cols-3">
-            {hostingProducts.map((product) => (
-              <ShopProductCard key={product.id} product={product} />
-            ))}
-          </div>
-        </section>
-      ) : null}
+      <ShopHostingSection
+        title={t("sharedHosting")}
+        products={sharedHostingProducts}
+      />
+
+      <ShopHostingSection
+        title={t("wordpressHosting")}
+        products={wordpressHostingProducts}
+      />
+
+      <ShopHostingSection
+        title={t("vpsHosting")}
+        products={vpsHostingProducts}
+      />
 
       {serviceProducts.length > 0 ? (
         <section className="mt-16 text-center">

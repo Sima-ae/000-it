@@ -10,7 +10,7 @@ import { QuantityStepper } from "@/components/shop/QuantityStepper";
 import { ShopProductImage } from "@/components/shop/ShopProductImage";
 import { useCartStore } from "@/lib/shop/cart-store";
 import { resolveCartItems, cartTotalsInEuros } from "@/lib/shop/cart";
-import { localizeShopProduct } from "@/lib/shop/catalog";
+import { localizeShopProduct, shopUnitPriceInclCents } from "@/lib/shop/catalog";
 import { centsToEuros, formatShopEuro } from "@/lib/shop/vat";
 import { cn } from "@/lib/utils";
 import { localizedHref } from "@/i18n/pathnames";
@@ -135,7 +135,12 @@ export function CartNavButton({ className }: { className?: string }) {
                             </p>
                             <p className="mt-0.5 text-xs text-muted-foreground">
                               {formatShopEuro(
-                                centsToEuros(line.unitInclCents),
+                                centsToEuros(
+                                  line.product.checkoutMonths &&
+                                    line.product.checkoutMonths > 1
+                                    ? shopUnitPriceInclCents(line.product)
+                                    : line.unitInclCents,
+                                ),
                                 locale,
                               )}
                               {line.product.checkoutMonths &&

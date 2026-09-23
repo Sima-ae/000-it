@@ -12,6 +12,7 @@ import {
   SUPPORT_PACKAGE_KEYS,
   shopHasDiscount,
   shopUnitPriceInclCents,
+  type ShopBillingPeriod,
   type ShopProduct,
   type SupportPackageKey,
   localizeShopProduct,
@@ -27,32 +28,55 @@ function supportKeyFromSlug(slug: string): SupportPackageKey | null {
   return null;
 }
 
+function periodMonths(product: ShopProduct) {
+  if (product.checkoutMonths && product.checkoutMonths > 1) {
+    return product.checkoutMonths;
+  }
+  if (product.billAsYearlyPackage) return 12;
+  return 1;
+}
+
 export function ShopProductCard({
   product,
   cartMode = "default",
+  pricePeriod = "monthly",
 }: {
   product: ShopProduct;
   /** Use support cart helper so monthly/yearly variants swap cleanly. */
   cartMode?: "default" | "support";
+  /**
+   * For yearly-package hosting: monthly shows list/maand, yearly shows
+   * list × months /jaar.
+   */
+  pricePeriod?: ShopBillingPeriod;
 }) {
   const locale = useLocale();
   const t = useTranslations("shop");
+  const tPricing = useTranslations("pricing");
   const router = useRouter();
   const addItem = useCartStore((s) => s.addItem);
   const addSupportPackage = useCartStore((s) => s.addSupportPackage);
   const localized = localizeShopProduct(product, locale);
+
+  const months = periodMonths(product);
+  const showAsYearly = pricePeriod === "yearly" && months > 1;
+  const multiplier = showAsYearly ? months : 1;
+
   const hasDiscount = shopHasDiscount(product);
-  const listPrice = formatShopEuro(centsToEuros(product.priceInclCents), locale);
-  const salePrice = formatShopEuro(
-    centsToEuros(shopUnitPriceInclCents(product)),
-    locale,
-  );
-  const perMonth =
-    product.checkoutMonths && product.checkoutMonths > 1 ? (
-      <span className="ml-1 text-base font-medium text-muted-foreground">
-        {t("perMonth")}
-      </span>
-    ) : null;
+  const listCents = product.priceInclCents * multiplier;
+  const saleCents = shopUnitPriceInclCents(product) * multiplier;
+  const listPrice = formatShopEuro(centsToEuros(listCents), locale);
+  const salePrice = formatShopEuro(centsToEuros(saleCents), locale);
+
+  const periodLabel = showAsYearly ? (
+    <span className="ml-1 text-base font-medium text-muted-foreground">
+      {tPricing("year")}
+    </span>
+  ) : months > 1 ? (
+    <span className="ml-1 text-base font-medium text-muted-foreground">
+      {t("perMonth")}
+    </span>
+  ) : null;
 
   function handleAdd() {
     if (cartMode === "support") {
@@ -102,19 +126,19 @@ export function ShopProductCard({
             </p>
             <p className="font-display text-3xl font-semibold tracking-tight text-primary">
               {salePrice}
-              {perMonth}
+              {periodLabel}
             </p>
           </div>
         ) : (
           <p className="font-display mt-4 text-2xl font-semibold">
             {listPrice}
-            {perMonth}
+            {periodLabel}
           </p>
         )}
         <p className="text-xs text-muted-foreground">{t("inclVat")}</p>
-        {product.checkoutMonths && product.checkoutMonths > 1 ? (
+        {months > 1 && !showAsYearly ? (
           <p className="mt-1 text-xs text-muted-foreground">
-            {t("billedYearly", { months: product.checkoutMonths })}
+            {t("billedYearly", { months })}
           </p>
         ) : null}
         <Button className="mt-4 w-full rounded-2xl" onClick={handleAdd}>

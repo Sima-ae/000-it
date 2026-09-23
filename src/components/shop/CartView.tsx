@@ -9,7 +9,7 @@ import { QuantityStepper } from "@/components/shop/QuantityStepper";
 import { ShopProductImage } from "@/components/shop/ShopProductImage";
 import { useCartStore } from "@/lib/shop/cart-store";
 import { resolveCartItems, cartTotalsInEuros } from "@/lib/shop/cart";
-import { localizeShopProduct } from "@/lib/shop/catalog";
+import { localizeShopProduct, shopUnitPriceInclCents } from "@/lib/shop/catalog";
 import { centsToEuros, formatShopEuro } from "@/lib/shop/vat";
 import { localizedHref } from "@/i18n/pathnames";
 
@@ -39,7 +39,11 @@ export function CartView() {
       <div className="space-y-4">
         {totals.lines.map((line) => {
           const localized = localizeShopProduct(line.product, locale);
-          const unit = formatShopEuro(centsToEuros(line.unitInclCents), locale);
+          const unitPriceCents =
+            line.product.checkoutMonths && line.product.checkoutMonths > 1
+              ? shopUnitPriceInclCents(line.product)
+              : line.unitInclCents;
+          const unit = formatShopEuro(centsToEuros(unitPriceCents), locale);
           return (
             <div
               key={line.product.id}
