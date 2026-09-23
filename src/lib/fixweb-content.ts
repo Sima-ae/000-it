@@ -202,6 +202,8 @@ const pageImageFallback: Record<string, string> = {
   "vps-hosting": "/uploads/fixweb/vps-hosting.png",
   domains: "/uploads/fixweb/domains.png",
   "wordpress-support": "/uploads/fixweb/wordpress-support.png",
+  "grafisch-design": "/uploads/fixweb/grafisch-design.png",
+  "text-optimization": "/uploads/fixweb/text-optimization.png",
 };
 
 function firstParagraphSubtitle(blocks: ContentBlock[], fallback = "") {

@@ -83,7 +83,7 @@
     "viewAll": "Bütün xidmətlər üçün buraya klikləyin",
     "mostPopular": "Ən populyar xidmətlər",
     "countLabel": "xidmətlər",
-    "openDigitalDesign": "Rəqəmsal Dizaynı açın",
+    "openDigitalDesign": "Qrafik dizaynı aç",
     "startFreeAiScan": "Pulsuz AI taramasına başlayın",
     "related": "Əlaqədar xidmətlər",
     "freeAiScan": "Pulsuz AI tarama",
@@ -113,7 +113,7 @@
       "advice": "Məsləhət",
       "integration": "İnteqrasiya",
       "automation": "Avtomatlaşdırma",
-      "digitalDesign": "Rəqəmsal Dizayn",
+      "digitalDesign": "Qrafik dizayn",
       "printing": "Çap",
       "webdesign": "Veb dizayn",
       "malware": "Zərərli proqramların çıxarılması",
@@ -571,7 +571,7 @@
     "pillarBackupDesc": "Təhlükəsiz ehtiyat nüsxələri və dayanma vaxtı olmadan hosting miqrasiyaları.",
     "pillarDesignTitle": "Dizayn və Fərdiləşdirin",
     "pillarDesignDesc": "Brendinizə uyğunlaşdırılmış unikal, həssas dizayn.",
-    "pillarDigitalTitle": "Rəqəmsal Dizayn",
+    "pillarDigitalTitle": "Qrafik dizayn",
     "pillarDigitalDesc": "Loqolar, vizit kartları, flayerlər, posterlər və Adobe-də çap.",
     "pillarHostingTitle": "Veb Hostinq",
     "pillarHostingDesc": "İllik 21,96 avrodan başlayan sürətli, etibarlı hostinq."
@@ -669,7 +669,7 @@
     "pageIntro": "Xidmət, tarix və vaxt seçin — görüşünüzü e-poçt vasitəsilə təsdiq edəcəyik."
   },
   "digitalDesign": {
-    "title": "Rəqəmsal Dizayn",
+    "title": "Qrafik dizayn",
     "subtitle": "Peşəkar brend və çap dizaynı: loqolar, vizit kartları, flayerlər, stikerlər, jurnallar və posterlər — Photoshop, Illustrator və InDesign proqramlarında hazırlanmışdır.",
     "viewPortfolio": "Portfelinə baxın",
     "whatWeDesign": "Nə dizayn edirik",

@@ -169,8 +169,8 @@ const customServices: Record<string, CustomService> = {
         "API-integraties en automatisering",
         "Malware verwijderen",
         "Firewall, Security en SSL",
-        "Performance en snelheid",
-        "Backup / migratie zonder downtime",
+        "Prestaties en snelheid",
+        "Backups en migratie zonder downtime",
         "Monitoring, bugfixes en performance-zorg",
       ]),
       h("Een praktische supportvorm"),
@@ -364,8 +364,8 @@ const customServices: Record<string, CustomService> = {
     ],
   },
   "website-maintenance": {
-    title: "Daily Maintenance",
-    titleNl: "Dagelijks onderhoud",
+    title: "Maintenance & Updates",
+    titleNl: "Onderhoud en updates",
     subtitle: "Keep custom sites healthy after launch.",
     subtitleNl: "Houd maatwerk sites gezond na livegang.",
     image: "/uploads/fixweb/website-maintenance.png",
@@ -577,7 +577,7 @@ const customServices: Record<string, CustomService> = {
   },
   "website-speed-optimization": {
     title: "Performance & Speed Optimization",
-    titleNl: "Performance en snelheid",
+    titleNl: "Prestaties en snelheid",
     subtitle:
       "Cut load times and improve Core Web Vitals for custom front-ends and APIs — not a WordPress cache plugin.",
     subtitleNl:
@@ -627,8 +627,8 @@ const customServices: Record<string, CustomService> = {
     ],
   },
   "website-backup-migration": {
-    title: "Backup / Migration",
-    titleNl: "Backup / migratie",
+    title: "Backups and Migration",
+    titleNl: "Backups en migratie",
     subtitle:
       "Reliable backups and low-downtime migrations for custom websites, PHP apps and Next.js projects.",
     subtitleNl:

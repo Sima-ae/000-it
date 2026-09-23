@@ -242,6 +242,114 @@ export const aiCustomServices: Record<string, CustomService> = {
     ],
   },
 
+  "text-optimization": {
+    title: "Text Optimization",
+    titleNl: "Teksten optimaliseren",
+    subtitle:
+      "Professional copy that ranks, persuades and converts — clearer headlines, stronger page structure and wording aligned with SEO, AEO and your brand voice.",
+    subtitleNl:
+      "Professionele teksten die ranken, overtuigen en converteren — heldere koppen, sterkere paginastructuur en formulering afgestemd op AEO, GEO en SEO plus jouw bedrijfsnaam en/of merknaam.",
+    image: "/uploads/fixweb/text-optimization.png",
+    blocks: [
+      h("Why text optimization matters"),
+      p(
+        "Search engines, AI answer systems and real visitors all judge your pages by the quality of the writing. Weak headlines, vague benefits and thin paragraphs cost rankings and leads — even when the design and technical SEO look fine.",
+      ),
+      h("What we optimize"),
+      l([
+        "Page titles, H1–H3 hierarchy and meta descriptions",
+        "Hero copy, value propositions and CTAs",
+        "Service, product and landing-page body text",
+        "FAQs and answer-ready blocks for AEO",
+        "Internal link anchors and supporting microcopy",
+        "Tone of voice consistency across NL and EN (and more locales on request)",
+      ]),
+      h("How we work"),
+      p(
+        "We start from your offer, audience and search intent — then rewrite or restructure the highest-impact pages first. Every edit balances clarity for humans with signals that help classic SEO and answer engines extract trustworthy statements.",
+      ),
+      l([
+        "Audit of current copy against competitors and intent",
+        "Keyword and question research woven into natural language",
+        "Rewrite drafts with clear hierarchy and scannable sections",
+        "Review round with your team before go-live",
+        "Optional CMS implementation on WordPress, Next.js or your stack",
+      ]),
+      h("Deliverables"),
+      l([
+        "Prioritized text audit with quick wins and deeper rewrites",
+        "Optimized copy for agreed pages (or a fixed package of URLs)",
+        "Headline and CTA variants ready to test",
+        "Style notes so future content stays on-brand",
+        "Handover document for your marketing or content team",
+      ]),
+      h("Ideal for"),
+      l([
+        "Sites that rank but convert poorly",
+        "New services or products that need sharp positioning",
+        "Teams refreshing outdated or AI-generic copy",
+        "Businesses aligning SEO/AEO with clearer customer language",
+      ]),
+      h("Best paired with"),
+      p(
+        "SEO optimization, AEO optimization, AI content strategy and content writing — so technical visibility and persuasive copy reinforce each other.",
+      ),
+      h("How to start"),
+      p(
+        "Share your priority URLs and goals (leads, rankings or clarity). We propose a focused rewrite scope or a monthly text-optimization retainer.",
+      ),
+    ],
+    blocksNl: [
+      h("Waarom teksten optimaliseren telt"),
+      p(
+        "Zoekmachines, AI-antwoordsystemen én echte bezoekers beoordelen jouw pagina’s op de kwaliteit van de tekst. Zwakke koppen, vage voordelen en dunne alinea’s kosten rankings én leads — ook als design en technische SEO op orde lijken.",
+      ),
+      h("Wat we optimaliseren"),
+      l([
+        "Paginatitels, H1–H3-hiërarchie en meta descriptions",
+        "Hero-teksten, value propositions en CTA’s",
+        "Dienst-, product- en landingspaginateksten",
+        "FAQ’s en antwoordklare blokken voor AEO",
+        "Ankerteksten van interne links en ondersteunende microcopy",
+        "Consistente merkstem in NL en EN (meer talen op aanvraag)",
+      ]),
+      h("Hoe we werken"),
+      p(
+        "We starten bij jouw aanbod, doelgroep en zoekintentie — en herschrijven of herstructureren eerst de pagina’s met de grootste impact. Elke aanpassing balanseert helderheid voor mensen met signalen waarmee klassieke SEO en answer engines betrouwbare statements kunnen extraheren.",
+      ),
+      l([
+        "Audit van huidige copy ten opzichte van concurrenten en intentie",
+        "Keyword- en vraagonderzoek verwerkt in natuurlijke taal",
+        "Herschrijfvoorstellen met duidelijke hiërarchie en scanbare secties",
+        "Reviewronde met jouw team vóór livegang",
+        "Optionele CMS-implementatie op WordPress, Next.js of jouw stack",
+      ]),
+      h("Opleveringen"),
+      l([
+        "Geprioriteerde tekstaudit met quick wins en diepere herschrijvingen",
+        "Geoptimaliseerde copy voor afgesproken pagina’s (of een vast URL-pakket)",
+        "Headline- en CTA-varianten klaar om te testen",
+        "Style notes zodat nieuwe content on-brand blijft",
+        "Overdrachtsdocument voor marketing of contentteam",
+      ]),
+      h("Ideaal voor"),
+      l([
+        "Sites die ranken maar slecht converteren",
+        "Nieuwe diensten of producten die scherpe positionering nodig hebben",
+        "Teams die verouderde of generieke AI-copy willen aanscherpen",
+        "Bedrijven die SEO/AEO willen koppelen aan heldere klanttaal",
+      ]),
+      h("Sterk in combinatie met"),
+      p(
+        "SEO-optimalisatie, AEO-optimalisatie, AI-contentstrategie en content writing — zodat technische vindbaarheid en overtuigende copy elkaar versterken.",
+      ),
+      h("Aan de slag"),
+      p(
+        "Deel jouw prioritaire URL’s en doelen (leads, rankings of duidelijkheid). Wij stellen een gerichte herschrijfscope of een maandelijkse retainer voor teksten optimaliseren voor.",
+      ),
+    ],
+  },
+
   "ai-content-strategy": {
     title: "AI Content Strategy",
     titleNl: "AI contentstrategie",

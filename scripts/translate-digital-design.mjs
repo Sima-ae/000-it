@@ -7,7 +7,7 @@ import { join } from "node:path";
 import { ALL_TARGET_LOCALES, translateText } from "./lib/translate.mjs";
 
 const EN = {
-  title: "Digital Design",
+  title: "Graphic Design",
   subtitle:
     "Professional brand and print design: logos, business cards, flyers, stickers, magazines and posters — crafted in Photoshop, Illustrator and InDesign.",
   viewPortfolio: "View portfolio",
@@ -32,7 +32,7 @@ const EN = {
 };
 
 const NL = {
-  title: "Digital design",
+  title: "Grafisch Design",
   subtitle:
     "Professioneel beeldmerk- en printdesign: logo’s, visitekaartjes, flyers, stickers, magazines en posters — gemaakt in Photoshop, Illustrator en InDesign.",
   viewPortfolio: "Bekijk portfolio",
@@ -40,7 +40,7 @@ const NL = {
   whatWeDesignSubtitle:
     "Elk deliverable is drukklaar of screen-ready, met nette bestandsstructuur voor uw drukker of team.",
   learnMore: "Meer info",
-  toolsTitle: "Gereedschap dat print overleeft",
+  toolsTitle: "Het juiste gereedschap",
   toolsSubtitle:
     "Wij werken in de Adobe-stack zodat uw bestanden openen bij elke professionele drukkerij.",
   ctaTitle: "Klaar voor een strak merkbeeld?",

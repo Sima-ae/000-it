@@ -83,7 +83,7 @@
     "viewAll": "Haz clic aquí para todos los servicios",
     "mostPopular": "Servicios más populares",
     "countLabel": "servicios",
-    "openDigitalDesign": "Diseño digital abierto",
+    "openDigitalDesign": "Abrir Diseño gráfico",
     "startFreeAiScan": "Iniciar escaneo AI gratuito",
     "related": "Servicios relacionados",
     "freeAiScan": "Escaneo AI gratuito",
@@ -113,7 +113,7 @@
       "advice": "Consejo",
       "integration": "Integración",
       "automation": "Automatización",
-      "digitalDesign": "Digital design",
+      "digitalDesign": "Diseño gráfico",
       "printing": "Impresión",
       "webdesign": "Diseño web",
       "malware": "Eliminación de malware",
@@ -571,7 +571,7 @@
     "pillarBackupDesc": "Copias de seguridad seguras y migraciones de alojamiento sin tiempo de inactividad.",
     "pillarDesignTitle": "Personalizar diseño",
     "pillarDesignDesc": "Diseño único y receptivo adaptado a tu marca.",
-    "pillarDigitalTitle": "Digital design",
+    "pillarDigitalTitle": "Diseño gráfico",
     "pillarDigitalDesc": "Logotipos, tarjetas de visita, folletos, carteles e impresión en Adobe.",
     "pillarHostingTitle": "Alojamiento web",
     "pillarHostingDesc": "Hospedar de forma rápida y fiable a partir de € 21.96 por año."
@@ -669,7 +669,7 @@
     "pageIntro": "Elige un servicio, fecha y hora: le confirmaremos tu cita por correo electrónico."
   },
   "digitalDesign": {
-    "title": "Digital design",
+    "title": "Diseño gráfico",
     "subtitle": "Diseño de marca e impresión profesional: logotipos, tarjetas de presentación, folletos, pegatinas, revistas y carteles, elaborados en Photoshop, Illustrator e InDesign.",
     "viewPortfolio": "Ver portafolio",
     "whatWeDesign": "que diseñamos",

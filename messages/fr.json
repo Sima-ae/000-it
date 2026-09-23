@@ -83,7 +83,7 @@
     "viewAll": "Clique ici pour tous les services",
     "mostPopular": "Services les plus populaires",
     "countLabel": "services",
-    "openDigitalDesign": "Conception numérique ouverte",
+    "openDigitalDesign": "Ouvrir Design graphique",
     "startFreeAiScan": "Lancer une analyse IA gratuite",
     "related": "Services associés",
     "freeAiScan": "Analyse IA gratuite",
@@ -113,7 +113,7 @@
       "advice": "Conseil",
       "integration": "Intégration",
       "automation": "Automation",
-      "digitalDesign": "Conception numérique",
+      "digitalDesign": "Design graphique",
       "printing": "Impression",
       "webdesign": "Conception de sites Web",
       "malware": "Suppression des logiciels malveillants",
@@ -571,7 +571,7 @@
     "pillarBackupDesc": "Sauvegardes et migrations d'hébergement sécurisées sans temps d'arrêt.",
     "pillarDesignTitle": "Conception personnalisée",
     "pillarDesignDesc": "Un design unique et réactif adapté à ta marque.",
-    "pillarDigitalTitle": "Conception numérique",
+    "pillarDigitalTitle": "Design graphique",
     "pillarDigitalDesc": "Logos, cartes de visite, dépliants, affiches et imprimés dans Adobe.",
     "pillarHostingTitle": "Hébergement Web",
     "pillarHostingDesc": "Hébergement rapide et fiable à partir de 21,96 € par an."
@@ -669,7 +669,7 @@
     "pageIntro": "Choisis un service, une date et une heure — nous te confirmerons ton rendez-tu par e-mail."
   },
   "digitalDesign": {
-    "title": "Conception numérique",
+    "title": "Design graphique",
     "subtitle": "Conception professionnelle de marque et d'impression : logos, cartes de visite, dépliants, autocollants, magazines et affiches, réalisés dans Photoshop, Illustrator et InDesign.",
     "viewPortfolio": "Voir le portefeuille",
     "whatWeDesign": "Ce que nous concevons",

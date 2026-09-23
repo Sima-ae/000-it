@@ -83,7 +83,7 @@
     "viewAll": "Klikoni këtu për të gjitha shërbimet",
     "mostPopular": "Shërbimet më të njohura",
     "countLabel": "shërbimet",
-    "openDigitalDesign": "Dizajn dixhital i hapur",
+    "openDigitalDesign": "Hap Dizajn grafik",
     "startFreeAiScan": "Filloni skanimin falas të AI",
     "related": "Shërbime të ngjashme",
     "freeAiScan": "Skanim falas i AI",
@@ -113,7 +113,7 @@
       "advice": "Këshilla",
       "integration": "Integrimi",
       "automation": "Automatizimi",
-      "digitalDesign": "Dizajni dixhital",
+      "digitalDesign": "Dizajn grafik",
       "printing": "Shtypje",
       "webdesign": "Dizajni i faqes në internet",
       "malware": "Heqja e malware",
@@ -571,7 +571,7 @@
     "pillarBackupDesc": "Rezervime të sigurta dhe migrime të pritjes së vizitorëve pa ndërprerje.",
     "pillarDesignTitle": "Dizajno dhe personalizo",
     "pillarDesignDesc": "Dizajn unik dhe i përgjegjshëm i përshtatur për markën tuaj.",
-    "pillarDigitalTitle": "Dizajni dixhital",
+    "pillarDigitalTitle": "Dizajn grafik",
     "pillarDigitalDesc": "Logot, kartat e biznesit, fletushkat, posterat dhe printoni në Adobe.",
     "pillarHostingTitle": "Pritja e vizitorëve në internet",
     "pillarHostingDesc": "Pritje e shpejtë dhe e besueshme e vizitorëve duke filluar nga 21.96 € në vit."
@@ -669,7 +669,7 @@
     "pageIntro": "Zgjidh një shërbim, datën dhe orën — do ta konfirmojmë takimin tënd me email."
   },
   "digitalDesign": {
-    "title": "Dizajni dixhital",
+    "title": "Dizajn grafik",
     "subtitle": "Markë profesionale dhe dizajn printimi: logo, kartëvizita, fletushka, ngjitëse, revista dhe postera — të krijuara në Photoshop, Illustrator dhe InDesign.",
     "viewPortfolio": "Shikoni portofolin",
     "whatWeDesign": "Ajo që ne projektojmë",

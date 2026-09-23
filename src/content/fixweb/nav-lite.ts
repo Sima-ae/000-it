@@ -9,10 +9,10 @@ export const footerServiceLinks = [
     href: undefined as string | undefined,
   },
   {
-    slug: "digital-design",
-    title: "Digital Design",
-    titleNl: "Digital design",
-    href: "/digital-design",
+    slug: "grafisch-design",
+    title: "Design",
+    titleNl: "Design",
+    href: "/design",
   },
   {
     slug: "wordpress-support",

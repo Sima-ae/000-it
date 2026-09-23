@@ -83,7 +83,7 @@
     "viewAll": "Hier klicken für alle Dienstleistungen",
     "mostPopular": "Die beliebtesten Dienste",
     "countLabel": "Dienstleistungen",
-    "openDigitalDesign": "Offenes digitales Design",
+    "openDigitalDesign": "Grafisches Design öffnen",
     "startFreeAiScan": "Starte den kostenlosen KI-Scan",
     "related": "Verwandte Dienstleistungen",
     "freeAiScan": "Kostenloser KI-Scan",
@@ -113,7 +113,7 @@
       "advice": "Beratung",
       "integration": "Integration",
       "automation": "Automatisierung",
-      "digitalDesign": "Digitales Design",
+      "digitalDesign": "Grafisches Design",
       "printing": "Drucken",
       "webdesign": "Webdesign",
       "malware": "Entfernung von Malware",
@@ -571,7 +571,7 @@
     "pillarBackupDesc": "Sichere Backups und Hosting-Migrationen ohne Ausfallzeiten.",
     "pillarDesignTitle": "Design bearbeiten",
     "pillarDesignDesc": "Einzigartiges, responsives Design, das auf deine Marke zugeschnitten ist.",
-    "pillarDigitalTitle": "Digitales Design",
+    "pillarDigitalTitle": "Grafisches Design",
     "pillarDigitalDesc": "Logos, Visitenkarten, Flyer, Poster und Druck in Adobe.",
     "pillarHostingTitle": "Web-Hosting",
     "pillarHostingDesc": "Schnelles, zuverlässiges Gastgeben ab 21,96 € pro Jahr."
@@ -669,7 +669,7 @@
     "pageIntro": "Wähle einen Service, ein Datum und eine Uhrzeit — wir bestätigen deinen Termin per E-Mail."
   },
   "digitalDesign": {
-    "title": "Digitales Design",
+    "title": "Grafisches Design",
     "subtitle": "Professionelles Marken- und Druckdesign: Logos, Visitenkarten, Flyer, Aufkleber, Zeitschriften und Poster – erstellt in Photoshop, Illustrator und InDesign.",
     "viewPortfolio": "Portfolio ansehen",
     "whatWeDesign": "Was wir entwerfen",

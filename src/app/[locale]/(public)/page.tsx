@@ -95,11 +95,7 @@ export default async function HomePage({
         <div className="grid gap-3 md:grid-cols-6">
           {sortedServiceGroups(locale).map((group, index) => {
             const span =
-              index < 2
-                ? "md:col-span-3"
-                : index === 5
-                  ? "md:col-span-6"
-                  : "md:col-span-2";
+              index < 2 || index >= 5 ? "md:col-span-3" : "md:col-span-2";
             const from =
               index % 3 === 0 ? "left" : index % 3 === 1 ? "up" : "right";
 

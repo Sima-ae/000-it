@@ -9,22 +9,22 @@ export type ServiceNavItem = {
   title: string;
   titleNl: string;
   kind: "page" | "product";
-  group: "ai" | "wordpress" | "webdesign" | "marketing" | "hosting" | "design";
+  group: "ai" | "optimization" | "wordpress" | "webdesign" | "marketing" | "hosting" | "design";
   summary?: string;
   summaryNl?: string;
-  /** Optional absolute path override (e.g. /digital-design) */
+  /** Optional absolute path override (e.g. /grafisch-design) */
   href?: string;
 };
 
 /** Service/page inventory mapped into TripleZero routes under /diensten/[slug] */
 export const serviceCatalog: ServiceNavItem[] = [
-  // AI (display order: AEO → GEO → SEO → AI-scan → chatbots → rest)
+  // Optimalisatie (display order: AEO → GEO → SEO)
   {
     slug: "aeo-optimization",
     title: "AEO Optimization",
     titleNl: "AEO optimalisatie",
     kind: "page",
-    group: "ai",
+    group: "optimization",
     summary: "Answer Engine Optimization for citable, answer-ready content.",
     summaryNl: "Answer Engine Optimization voor citeerbare, antwoordklare content.",
   },
@@ -33,7 +33,7 @@ export const serviceCatalog: ServiceNavItem[] = [
     title: "GEO Optimization",
     titleNl: "GEO optimalisatie",
     kind: "page",
-    group: "ai",
+    group: "optimization",
     summary: "Geographic Search Engine Optimization for Maps, local packs and regional search.",
     summaryNl: "Geographic Search Engine Optimization voor Maps, local packs en regionaal zoeken.",
   },
@@ -42,9 +42,20 @@ export const serviceCatalog: ServiceNavItem[] = [
     title: "SEO Optimization",
     titleNl: "SEO optimalisatie",
     kind: "product",
-    group: "ai",
+    group: "optimization",
     summary: "Rank higher with technical SEO, content and authority building.",
     summaryNl: "Hoger ranken met technische SEO, content en autoriteit.",
+  },
+  {
+    slug: "text-optimization",
+    title: "Text Optimization",
+    titleNl: "Teksten optimaliseren",
+    kind: "page",
+    group: "optimization",
+    summary:
+      "Sharper web copy: clearer headlines, stronger pages and conversion-focused wording that supports SEO, AEO and UX.",
+    summaryNl:
+      "Scherpe webteksten: heldere koppen, sterkere pagina’s en conversiegerichte formulering die SEO, AEO en UX versterkt.",
   },
   {
     slug: "ai-scan",
@@ -54,6 +65,28 @@ export const serviceCatalog: ServiceNavItem[] = [
     group: "ai",
     summary: "Readiness scan for AEO, GEO (local), SEO and AI answer engines.",
     summaryNl: "Readiness-scan voor AEO, GEO (lokaal), SEO en AI-antwoordenengines.",
+  },
+  {
+    slug: "ai-in-ecommerce",
+    title: "AI in E-commerce",
+    titleNl: "AI in e-commerce",
+    kind: "page",
+    group: "ai",
+    summary:
+      "AI for webshops: product assistants, smart search, cart help and conversion-focused automation.",
+    summaryNl:
+      "AI voor webshops: productassistenten, slimme search, cart-hulp en conversiegerichte automatisering.",
+  },
+  {
+    slug: "ai-in-website",
+    title: "AI in Website",
+    titleNl: "AI in website",
+    kind: "page",
+    group: "ai",
+    summary:
+      "AI for custom websites — chat, leads, knowledge search and automation on PHP, HTML/JS and Next.js.",
+    summaryNl:
+      "AI voor maatwerkwebsites — chat, leads, knowledge search en automatisering op PHP, HTML/JS en Next.js.",
   },
   {
     slug: "ai-chatbots",
@@ -168,7 +201,7 @@ export const serviceCatalog: ServiceNavItem[] = [
   {
     slug: "wordpress-speed-optimization",
     title: "WordPress Speed Optimization",
-    titleNl: "Performance en snelheid",
+    titleNl: "Prestaties en snelheid",
     kind: "product",
     group: "wordpress",
   },
@@ -221,28 +254,6 @@ export const serviceCatalog: ServiceNavItem[] = [
 
   // Webdesign & Support (non-WordPress)
   {
-    slug: "ai-in-ecommerce",
-    title: "AI in E-commerce",
-    titleNl: "AI in e-commerce",
-    kind: "page",
-    group: "webdesign",
-    summary:
-      "AI for webshops: product assistants, smart search, cart help and conversion-focused automation.",
-    summaryNl:
-      "AI voor webshops: productassistenten, slimme search, cart-hulp en conversiegerichte automatisering.",
-  },
-  {
-    slug: "ai-in-website",
-    title: "AI in Website",
-    titleNl: "AI in website",
-    kind: "page",
-    group: "webdesign",
-    summary:
-      "AI for custom websites — chat, leads, knowledge search and automation on PHP, HTML/JS and Next.js.",
-    summaryNl:
-      "AI voor maatwerkwebsites — chat, leads, knowledge search en automatisering op PHP, HTML/JS en Next.js.",
-  },
-  {
     slug: "webdesign-support",
     title: "Website Support",
     titleNl: "Website support",
@@ -291,8 +302,8 @@ export const serviceCatalog: ServiceNavItem[] = [
   },
   {
     slug: "website-maintenance",
-    title: "Daily Maintenance",
-    titleNl: "Dagelijks onderhoud",
+    title: "Maintenance & Updates",
+    titleNl: "Onderhoud en updates",
     kind: "page",
     group: "webdesign",
     summary: "Updates, monitoring, bugfixes and performance care for custom stacks.",
@@ -332,7 +343,7 @@ export const serviceCatalog: ServiceNavItem[] = [
   {
     slug: "website-speed-optimization",
     title: "Performance & Speed Optimization",
-    titleNl: "Performance en snelheid",
+    titleNl: "Prestaties en snelheid",
     kind: "page",
     group: "webdesign",
     summary:
@@ -342,8 +353,8 @@ export const serviceCatalog: ServiceNavItem[] = [
   },
   {
     slug: "website-backup-migration",
-    title: "Backup / Migration",
-    titleNl: "Backup / migratie",
+    title: "Backups and Migration",
+    titleNl: "Backups en migratie",
     kind: "page",
     group: "webdesign",
     summary:
@@ -374,7 +385,7 @@ export const serviceCatalog: ServiceNavItem[] = [
   {
     slug: "social-media-management",
     title: "Social Media Management",
-    titleNl: "Social media management",
+    titleNl: "Social media beheer",
     kind: "page",
     group: "marketing",
     summary: "Strategy, content calendar and community engagement on every channel.",
@@ -410,7 +421,7 @@ export const serviceCatalog: ServiceNavItem[] = [
   {
     slug: "community-management",
     title: "Community Management",
-    titleNl: "Community management",
+    titleNl: "Communitybeheer",
     kind: "page",
     group: "marketing",
     summary: "Moderation, replies and reputation care across communities.",
@@ -426,14 +437,14 @@ export const serviceCatalog: ServiceNavItem[] = [
     summaryNl: "Nauwkeurige catalogus-, CRM- en operations-data op schaal.",
   },
 
-  // Digital Design (print & brand visuals)
+  // Grafisch / Graphic Design (print & brand visuals)
   {
-    slug: "digital-design",
-    title: "Digital Design",
-    titleNl: "Digital design",
+    slug: "grafisch-design",
+    title: "Graphic Design",
+    titleNl: "Grafisch Design",
     kind: "page",
     group: "design",
-    href: "/digital-design",
+    href: "/grafisch-design",
     summary:
       "Logos, business cards, flyers, stickers, magazines and posters in Photoshop, Illustrator and InDesign.",
     summaryNl:
@@ -597,9 +608,10 @@ export const serviceCatalog: ServiceNavItem[] = [
 
 export const serviceGroups = [
   { id: "ai" as const, title: "AI", titleNl: "AI" },
+  { id: "optimization" as const, title: "Optimization", titleNl: "Optimalisatie" },
   { id: "wordpress" as const, title: "WordPress & Support", titleNl: "WordPress en support" },
   { id: "webdesign" as const, title: "Webdesign & Support", titleNl: "Webdesign en support" },
-  { id: "design" as const, title: "Digital Design", titleNl: "Digital design" },
+  { id: "design" as const, title: "Design", titleNl: "Design" },
   { id: "marketing" as const, title: "Marketing & Growth", titleNl: "Marketing en groei" },
   { id: "hosting" as const, title: "Webhosting & Domains", titleNl: "Webhosting en domeinen" },
 ];
@@ -657,6 +669,7 @@ export function getServiceGroup(id: string) {
 }
 
 export function serviceGroupPath(groupId: string) {
+  if (groupId === "design") return "/design";
   return `/diensten/categorie/${groupId}`;
 }
 
@@ -666,8 +679,12 @@ export function serviceGroupHref(locale: string, groupId: string) {
 
 const serviceGroupSummaries: Record<ServiceGroupId, { en: string; nl: string }> = {
   ai: {
-    en: "AEO, GEO, SEO, chatbots, workflows, integration and AI consultancy.",
-    nl: "AEO, GEO, SEO, chatbots, workflows, integratie en AI-advies.",
+    en: "Chatbots, workflows, AI in websites and shops, integration and AI consultancy.",
+    nl: "Chatbots, workflows, AI in websites en shops, integratie en AI-advies.",
+  },
+  optimization: {
+    en: "AEO, GEO and SEO so your site is found in search and answer engines.",
+    nl: "AEO, GEO en SEO zodat je site gevonden wordt in zoek- en antwoordmachines.",
   },
   wordpress: {
     en: "Maintenance, security, malware removal, speed, backups and WordPress support.",
@@ -703,7 +720,7 @@ export function sortServicesAz(
   locale: string,
   options?: { preserveGroupIds?: string[] },
 ) {
-  const preserve = new Set(options?.preserveGroupIds ?? ["hosting", "ai"]);
+  const preserve = new Set(options?.preserveGroupIds ?? ["hosting", "ai", "optimization"]);
   const byGroup = new Map<ServiceNavItem["group"], ServiceNavItem[]>();
   for (const item of items) {
     const list = byGroup.get(item.group) || [];

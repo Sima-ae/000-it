@@ -83,7 +83,7 @@
     "viewAll": "Klikni ovdje za sve usluge",
     "mostPopular": "Najpopularnije usluge",
     "countLabel": "usluge",
-    "openDigitalDesign": "Otvoreni digitalni dizajn",
+    "openDigitalDesign": "Otvori grafički dizajn",
     "startFreeAiScan": "Pokrenite besplatno AI skeniranje",
     "related": "Povezane usluge",
     "freeAiScan": "Besplatno AI skeniranje",
@@ -113,7 +113,7 @@
       "advice": "Savjet",
       "integration": "Integracija",
       "automation": "Automatizacija",
-      "digitalDesign": "Digitalni dizajn",
+      "digitalDesign": "Grafički dizajn",
       "printing": "Ispis",
       "webdesign": "Web dizajn",
       "malware": "Uklanjanje zlonamjernog softvera",
@@ -571,7 +571,7 @@
     "pillarBackupDesc": "Sigurne sigurnosne kopije i migracije hostinga bez zastoja.",
     "pillarDesignTitle": "Dizajniraj i prilagodi",
     "pillarDesignDesc": "Jedinstven, responzivan dizajn prilagođen tvojem brendu.",
-    "pillarDigitalTitle": "Digitalni dizajn",
+    "pillarDigitalTitle": "Grafički dizajn",
     "pillarDigitalDesc": "Logotipi, posjetnice, letci, plakati i tisak u Adobeu.",
     "pillarHostingTitle": "Web-hosting",
     "pillarHostingDesc": "Brzo i pouzdano ugošćivanje već od 21,96 € godišnje."
@@ -669,7 +669,7 @@
     "pageIntro": "Odaberi uslugu, datum i vrijeme — potvrdit ćemo tvoj termin e-poštom."
   },
   "digitalDesign": {
-    "title": "Digitalni dizajn",
+    "title": "Grafički dizajn",
     "subtitle": "Profesionalni dizajn robne marke i tiska: logotipi, posjetnice, letci, naljepnice, časopisi i posteri — izrađeni u Photoshopu, Illustratoru i InDesignu.",
     "viewPortfolio": "Pogledajte portfelj",
     "whatWeDesign": "Što dizajniramo",

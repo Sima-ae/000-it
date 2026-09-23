@@ -83,7 +83,7 @@
     "viewAll": "انقر هنا لجميع الخدمات",
     "mostPopular": "الخدمات الأكثر شعبية",
     "countLabel": "خدمات",
-    "openDigitalDesign": "افتح التصميم الرقمي",
+    "openDigitalDesign": "افتح التصميم الجرافيكي",
     "startFreeAiScan": "ابدأ فحص الذكاء الاصطناعي مجانًا",
     "related": "الخدمات ذات الصلة",
     "freeAiScan": "مسح مجاني بالذكاء الاصطناعي",
@@ -113,7 +113,7 @@
       "advice": "نصيحة",
       "integration": "اندماج",
       "automation": "الأتمتة",
-      "digitalDesign": "التصميم الرقمي",
+      "digitalDesign": "تصميم جرافيكي",
       "printing": "الطباعة",
       "webdesign": "تصميم الويب",
       "malware": "إزالة البرامج الضارة",
@@ -571,7 +571,7 @@
     "pillarBackupDesc": "النسخ الاحتياطية الآمنة واستضافة عمليات الترحيل دون توقف.",
     "pillarDesignTitle": "التصميم والتخصيص",
     "pillarDesignDesc": "تصميم فريد وسريع الاستجابة مصمم خصيصًا لعلامتك التجارية.",
-    "pillarDigitalTitle": "التصميم الرقمي",
+    "pillarDigitalTitle": "تصميم جرافيكي",
     "pillarDigitalDesc": "الشعارات وبطاقات العمل والنشرات والملصقات والطباعة في Adobe.",
     "pillarHostingTitle": "استضافة المواقع",
     "pillarHostingDesc": "استضافة سريعة وموثوقة تبدأ من 21.96 يورو سنويًا."
@@ -669,7 +669,7 @@
     "pageIntro": "اختر الخدمة والتاريخ والوقت — سنؤكد موعدك عبر البريد الإلكتروني."
   },
   "digitalDesign": {
-    "title": "التصميم الرقمي",
+    "title": "تصميم جرافيكي",
     "subtitle": "تصميم احترافي للعلامة التجارية والمطبوعات: الشعارات وبطاقات العمل والنشرات الإعلانية والملصقات والمجلات والملصقات - تم تصميمها باستخدام Photoshop وIllustrator وInDesign.",
     "viewPortfolio": "عرض المحفظة",
     "whatWeDesign": "ما نقوم بتصميمه",

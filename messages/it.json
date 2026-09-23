@@ -83,7 +83,7 @@
     "viewAll": "Clicca qui per tutti i servizi",
     "mostPopular": "Servizi più popolari",
     "countLabel": "servizi",
-    "openDigitalDesign": "Apri progettazione digitale",
+    "openDigitalDesign": "Apri Design grafico",
     "startFreeAiScan": "Avvia la scansione AI gratuita",
     "related": "Servizi correlati",
     "freeAiScan": "Scansione AI gratuita",
@@ -113,7 +113,7 @@
       "advice": "Consiglio",
       "integration": "Integrazione",
       "automation": "Automazione",
-      "digitalDesign": "Digital design",
+      "digitalDesign": "Design grafico",
       "printing": "Stampa",
       "webdesign": "Webdesign",
       "malware": "Rimozione malware",
@@ -571,7 +571,7 @@
     "pillarBackupDesc": "Backup sicuri e migrazioni di hosting senza tempi di inattività.",
     "pillarDesignTitle": "Progetta e personalizza",
     "pillarDesignDesc": "Design unico e reattivo su misura per il tuo marchio.",
-    "pillarDigitalTitle": "Digital design",
+    "pillarDigitalTitle": "Design grafico",
     "pillarDigitalDesc": "Loghi, biglietti da visita, volantini, poster e stampa in Adobe.",
     "pillarHostingTitle": "Oval.it - Internet provider, ADSL, HDSL, SHDSL, hosting, web design",
     "pillarHostingDesc": "Hosting veloce e affidabile a partire da € 21,96 all'anno."
@@ -669,7 +669,7 @@
     "pageIntro": "Scegli un servizio, una data e un orario: ti confermeremo l'appuntamento via e-mail."
   },
   "digitalDesign": {
-    "title": "Digital design",
+    "title": "Design grafico",
     "subtitle": "Design professionale di marchi e stampe: loghi, biglietti da visita, volantini, adesivi, riviste e poster, realizzati in Photoshop, Illustrator e InDesign.",
     "viewPortfolio": "Visualizza portafoglio",
     "whatWeDesign": "Cosa progettiamo",

@@ -294,7 +294,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
 
   "social-media-management": {
     nl: {
-      title: "Social Media Management",
+      title: "Social media beheer",
       subtitle:
         "Bouw een consistente social media-aanwezigheid met strategie, content en community-aandacht die bij jouw merk past.",
       blocks: [
@@ -316,7 +316,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ),
         h("Van planning naar publicatie"),
         p(
-          "We begin with your objectives, audiences and available brand material. From there, we create a workable content calendar, prepare posts for approval where needed and publish according to an agreed cadence.",
+          "We starten bij jouw doelen, doelgroepen en beschikbaar merkmateriaal. Daarna maken we een werkbare contentkalender, bereiden we posts voor goedkeuring voor waar nodig, en publiceren we volgens een afgesproken ritme.",
         ),
         h("Inzicht dat helpt bijsturen"),
         p(
@@ -545,7 +545,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ),
         h("Een gecontroleerd listingproces"),
         p(
-          "We agree the required fields, source data, naming conventions and quality checks in advance. Per productgroep werken we gestructureerd, controleren we varianten en attributen en signaleren we ontbrekende of tegenstrijdige informatie.",
+          "We spreken vooraf de vereiste velden, brondata, naamgevingsconventies en kwaliteitschecks af. Per productgroep werken we gestructureerd, controleren we varianten en attributen en signaleren we ontbrekende of tegenstrijdige informatie.",
         ),
         h("Meer vertrouwen in de productpagina"),
         p(
@@ -594,7 +594,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
 
   "community-management": {
     nl: {
-      title: "Community Management",
+      title: "Communitybeheer",
       subtitle:
         "Bouw en verzorg een betrokken community met actieve moderatie, gesprekken en merkwaardige interactie op jouw kanalen.",
       blocks: [
@@ -602,7 +602,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         p(
           "Een community groeit door luisteren, reageren en consistent aanwezig zijn. TripleZero iT beheert interacties zodat jouw merk warm, betrouwbaar en herkenbaar blijft.",
         ),
-        h("Wat community management inhoudt"),
+        h("Wat communitybeheer inhoudt"),
         l([
           "Moderatie van comments en berichten",
           "Snelle, merkwaardige antwoorden",

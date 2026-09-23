@@ -263,23 +263,42 @@ export const staticPageSeo: PageSeo[] = [
     },
   },
   {
-    path: "/digital-design",
+    path: "/design",
+    lastmod: REV,
+    priority: 0.74,
+    changeFrequency: "monthly",
+    title: {
+      nl: "Design — logo’s, print & branding",
+      en: "Design — logos, print & branding",
+    },
+    description: {
+      nl: "Design door TripleZero iT: logo’s, visitekaartjes, briefpapier, flyers, stickers, magazines en grafisch design.",
+      en: "Design by TripleZero iT: logos, business cards, letterhead, flyers, stickers, magazines and graphic design.",
+    },
+    keywords: {
+      nl: [...CORE_NL, "design", "grafisch design", "branding", "huisstijl", "drukwerk"],
+      en: [...CORE_EN, "design", "graphic design", "branding", "brand identity", "print"],
+    },
+    image: "/uploads/fixweb/grafisch-design.png",
+  },
+  {
+    path: "/grafisch-design",
     lastmod: REV,
     priority: 0.72,
     changeFrequency: "monthly",
     title: {
-      nl: "Digital design — branding & creatives",
-      en: "Digital design — branding & creatives",
+      nl: "Grafisch Design — branding & creatives",
+      en: "Graphic Design — branding & creatives",
     },
     description: {
-      nl: "Digital design door TripleZero iT: huisstijl, graphics en creatives die conversie en merksterkte versterken.",
-      en: "Digital design by TripleZero iT: brand systems, graphics and creatives that strengthen conversion and brand.",
+      nl: "Grafisch Design door TripleZero iT: huisstijl, graphics en creatives die conversie en merksterkte versterken.",
+      en: "Graphic design by TripleZero iT: brand systems, graphics and creatives that strengthen conversion and brand.",
     },
     keywords: {
-      nl: [...CORE_NL, "digital design", "branding", "huisstijl", "creatives"],
-      en: [...CORE_EN, "digital design", "branding", "brand identity", "creatives"],
+      nl: [...CORE_NL, "grafisch design", "branding", "huisstijl", "creatives"],
+      en: [...CORE_EN, "graphic design", "branding", "brand identity", "creatives"],
     },
-    image: "/uploads/fixweb/content-social.png",
+    image: "/uploads/fixweb/grafisch-design.png",
   },
   {
     path: "/locaties",

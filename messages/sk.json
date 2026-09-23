@@ -83,7 +83,7 @@
     "viewAll": "Klikni sem pre všetky služby",
     "mostPopular": "Najpopulárnejšie služby",
     "countLabel": "služby",
-    "openDigitalDesign": "Otvorte digitálny dizajn",
+    "openDigitalDesign": "Otvoriť grafický dizajn",
     "startFreeAiScan": "Spustite bezplatné skenovanie AI",
     "related": "Súvisiace služby",
     "freeAiScan": "Bezplatné skenovanie AI",
@@ -113,7 +113,7 @@
       "advice": "Poradenstvo",
       "integration": "integrácia",
       "automation": "automatizácia",
-      "digitalDesign": "Digitálny dizajn",
+      "digitalDesign": "Grafický dizajn",
       "printing": "Tlač",
       "webdesign": "Webdizajn",
       "malware": "Odstránenie škodlivého softvéru",
@@ -571,7 +571,7 @@
     "pillarBackupDesc": "Bezpečné zálohovanie a migrácia hostiteľov bez výpadkov.",
     "pillarDesignTitle": "Dizajn a prispôsobenie",
     "pillarDesignDesc": "Jedinečný, responzívny dizajn šitý na mieru vašej značke.",
-    "pillarDigitalTitle": "Digitálny dizajn",
+    "pillarDigitalTitle": "Grafický dizajn",
     "pillarDigitalDesc": "Logá, vizitky, letáky, plagáty a tlač v Adobe.",
     "pillarHostingTitle": "Webhosting",
     "pillarHostingDesc": "Rýchle a spoľahlivé hostiteľstvo už od 21,96 € ročne."
@@ -669,7 +669,7 @@
     "pageIntro": "Vyber službu, dátum a čas — tvoju schôdzku potvrdíme e-mailom."
   },
   "digitalDesign": {
-    "title": "Digitálny dizajn",
+    "title": "Grafický dizajn",
     "subtitle": "Profesionálny dizajn značky a tlače: logá, vizitky, letáky, nálepky, časopisy a plagáty – vytvorené v programoch Photoshop, Illustrator a InDesign.",
     "viewPortfolio": "Zobraziť portfólio",
     "whatWeDesign": "Čo navrhujeme",

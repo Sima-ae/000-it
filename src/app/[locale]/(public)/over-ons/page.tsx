@@ -45,7 +45,7 @@ const pillars = [
   {
     titleKey: "pillarDigitalTitle",
     descKey: "pillarDigitalDesc",
-    href: "/digital-design",
+    href: "/grafisch-design",
   },
   {
     titleKey: "pillarHostingTitle",

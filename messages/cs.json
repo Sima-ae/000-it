@@ -83,7 +83,7 @@
     "viewAll": "Klikněte sem pro všechny služby",
     "mostPopular": "Nejoblíbenější služby",
     "countLabel": "služby",
-    "openDigitalDesign": "Otevřete digitální design",
+    "openDigitalDesign": "Otevřít grafický design",
     "startFreeAiScan": "Spusťte bezplatné skenování AI",
     "related": "Související služby",
     "freeAiScan": "AI skenování zdarma",
@@ -113,7 +113,7 @@
       "advice": "Poradenství",
       "integration": "Integrace",
       "automation": "Automatizace",
-      "digitalDesign": "Digitální design",
+      "digitalDesign": "Grafický design",
       "printing": "Tisk",
       "webdesign": "Webdesign",
       "malware": "Odstranění malwaru",
@@ -571,7 +571,7 @@
     "pillarBackupDesc": "Bezpečné zálohování a migrace hostingu bez prostojů.",
     "pillarDesignTitle": "Design a přizpůsobení",
     "pillarDesignDesc": "Jedinečný, responzivní design šitý na míru vaší značce.",
-    "pillarDigitalTitle": "Digitální design",
+    "pillarDigitalTitle": "Grafický design",
     "pillarDigitalDesc": "Loga, vizitky, letáky, plakáty a tisk v Adobe.",
     "pillarHostingTitle": "Web",
     "pillarHostingDesc": "Rychlé a spolehlivé hostitelství od 21,96 € ročně."
@@ -669,7 +669,7 @@
     "pageIntro": "Vyberte si službu, datum a čas – termín vám potvrdíme e-mailem."
   },
   "digitalDesign": {
-    "title": "Digitální design",
+    "title": "Grafický design",
     "subtitle": "Profesionální design značky a tisku: loga, vizitky, letáky, samolepky, časopisy a plakáty – vytvořené ve Photoshopu, Illustratoru a InDesignu.",
     "viewPortfolio": "Zobrazit portfolio",
     "whatWeDesign": "Co navrhujeme",

@@ -83,7 +83,7 @@
     "viewAll": "Klicka här för alla tjänster",
     "mostPopular": "Mest populära tjänster",
     "countLabel": "tjänster",
-    "openDigitalDesign": "Öppen digital design",
+    "openDigitalDesign": "Öppna grafisk design",
     "startFreeAiScan": "Starta gratis AI-skanning",
     "related": "Relaterade tjänster",
     "freeAiScan": "Gratis AI-skanning",
@@ -113,7 +113,7 @@
       "advice": "Råd",
       "integration": "Integration",
       "automation": "Automatisering",
-      "digitalDesign": "Digital design",
+      "digitalDesign": "Grafisk design",
       "printing": "Utskrift",
       "webdesign": "Webbdesign",
       "malware": "Borttagning av skadlig programvara",
@@ -571,7 +571,7 @@
     "pillarBackupDesc": "Säkra säkerhetskopieringar och värdmigreringar utan driftstopp.",
     "pillarDesignTitle": "Designa och anpassa",
     "pillarDesignDesc": "Unik, responsiv design skräddarsydd för ditt varumärke.",
-    "pillarDigitalTitle": "Digital design",
+    "pillarDigitalTitle": "Grafisk design",
     "pillarDigitalDesc": "Logotyper, visitkort, flygblad, affischer och tryck i Adobe.",
     "pillarHostingTitle": "Webbhotell",
     "pillarHostingDesc": "Snabbt, pålitligt värdskap från 21,96 € per år."
@@ -669,7 +669,7 @@
     "pageIntro": "Välj en tjänst, datum och tid — vi bekräftar ditt möte via e-post."
   },
   "digitalDesign": {
-    "title": "Digital design",
+    "title": "Grafisk design",
     "subtitle": "Professionell varumärkes- och tryckdesign: logotyper, visitkort, flygblad, klistermärken, tidskrifter och affischer — tillverkade i Photoshop, Illustrator och InDesign.",
     "viewPortfolio": "Se portfölj",
     "whatWeDesign": "Vad vi designar",

@@ -127,7 +127,7 @@ const nl: FaqContent = {
         q("des-10", "Hoeveel feedbackrondes zitten erin?", "Meestal zitten er 2 tot 3 gestructureerde rondes in. Extra rondes zijn mogelijk in overleg."),
         q("des-11", "Krijgen we bronbestanden?", "Ja, binnen de afgesproken oplevering. Dat kan AI, PSD of INDD zijn, of een export pack — afhankelijk van wat we hebben afgesproken."),
         q("des-12", "Kunnen design en webdesign samen lopen?", "Ja. Merkdesign en UI-systemen stemmen we af, zodat print en website één geheel vormen."),
-        q("des-13", "Waar vind ik meer over Digital Design?", "Meer informatie staat op /digital-design en via de diensten Digital Design in het menu."),
+        q("des-13", "Waar vind ik meer over Design?", "Meer informatie staat op /design (alle design-diensten) en /grafisch-design voor Grafisch Design."),
       ],
     },
     {
@@ -333,7 +333,7 @@ const en: FaqContent = {
         q("des-10", "How many feedback rounds are included?", "Usually 2 to 3 structured rounds are included. Extra rounds are possible by agreement."),
         q("des-11", "Do we get source files?", "Yes, within the agreed delivery. That can be AI, PSD or INDD, or an export pack — depending on what we agreed."),
         q("des-12", "Can design and webdesign run together?", "Yes. We align brand design and UI systems so print and website form one whole."),
-        q("des-13", "Where can I learn more about Digital Design?", "More information is on /digital-design and via the Digital Design services in the menu."),
+        q("des-13", "Where can I learn more about Graphic Design?", "More information is on /graphic-design and via the Graphic Design services in the menu."),
       ],
     },
     {

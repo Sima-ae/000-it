@@ -83,7 +83,7 @@
     "viewAll": "Clique aqui para todos os serviços",
     "mostPopular": "Serviços mais populares",
     "countLabel": "serviços",
-    "openDigitalDesign": "Design Digital Aberto",
+    "openDigitalDesign": "Abrir Design gráfico",
     "startFreeAiScan": "Inicie uma verificação gratuita de IA",
     "related": "Serviços relacionados",
     "freeAiScan": "Verificação de IA gratuita",
@@ -113,7 +113,7 @@
       "advice": "Conselho",
       "integration": "Integração",
       "automation": "Automação",
-      "digitalDesign": "Design Digital",
+      "digitalDesign": "Design gráfico",
       "printing": "Impressão",
       "webdesign": "Webdesign",
       "malware": "Remoção de malware",
@@ -571,7 +571,7 @@
     "pillarBackupDesc": "Backups seguros e migrações de hospedagem sem tempo de inatividade.",
     "pillarDesignTitle": "Design personalizo",
     "pillarDesignDesc": "Design único e responsivo adaptado à sua marca.",
-    "pillarDigitalTitle": "Design Digital",
+    "pillarDigitalTitle": "Design gráfico",
     "pillarDigitalDesc": "Logotipos, cartões de visita, folhetos, cartazes e impressão em Adobe.",
     "pillarHostingTitle": "Hospedagem de sites",
     "pillarHostingDesc": "Hospedagem rápida e confiável a partir de € 21,96 por ano."
@@ -669,7 +669,7 @@
     "pageIntro": "Escolha um serviço, data e hora — confirmaremos a sua marcação por e-mail."
   },
   "digitalDesign": {
-    "title": "Design Digital",
+    "title": "Design gráfico",
     "subtitle": "Design profissional de marca e impressão: logotipos, cartões de visita, folhetos, adesivos, revistas e pôsteres — criados em Photoshop, Illustrator e InDesign.",
     "viewPortfolio": "Ver portfólio",
     "whatWeDesign": "O que projetamos",

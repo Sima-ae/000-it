@@ -83,7 +83,7 @@
     "viewAll": "Kattintson ide az összes szolgáltatáshoz",
     "mostPopular": "A legnépszerűbb szolgáltatások",
     "countLabel": "szolgáltatások",
-    "openDigitalDesign": "Nyissa meg a digitális tervezést",
+    "openDigitalDesign": "Grafikai tervezés megnyitása",
     "startFreeAiScan": "Indítsa el az ingyenes AI-vizsgálatot",
     "related": "Kapcsolódó szolgáltatások",
     "freeAiScan": "Ingyenes AI szkennelés",
@@ -113,7 +113,7 @@
       "advice": "Tanács",
       "integration": "Integráció",
       "automation": "Automatizálás",
-      "digitalDesign": "digitális tervezés",
+      "digitalDesign": "Grafikai tervezés",
       "printing": "Nyomtatás",
       "webdesign": "Webdesign",
       "malware": "Rosszindulatú programok eltávolítása",
@@ -571,7 +571,7 @@
     "pillarBackupDesc": "Biztonságos biztonsági mentés és vendégfogadás leállás nélkül.",
     "pillarDesignTitle": "Tervezés és testreszabás",
     "pillarDesignDesc": "Egyedi, reszponzív dizájn a te márkájára szabva.",
-    "pillarDigitalTitle": "digitális tervezés",
+    "pillarDigitalTitle": "Grafikai tervezés",
     "pillarDigitalDesc": "Logók, névjegykártyák, szórólapok, plakátok és nyomtatás Adobe-ban.",
     "pillarHostingTitle": "Webtárhely-szolgáltatás",
     "pillarHostingDesc": "Gyors, megbízható vendégfogadás már évi 21,96 € -tól."
@@ -669,7 +669,7 @@
     "pageIntro": "Válassz ki egy szolgáltatást, dátumot és időpontot — e-mailben visszaigazoljuk az időpontodat."
   },
   "digitalDesign": {
-    "title": "digitális tervezés",
+    "title": "Grafikai tervezés",
     "subtitle": "Professzionális márka- és nyomattervezés: logók, névjegykártyák, szórólapok, matricák, magazinok és poszterek – Photoshop, Illustrator és InDesign programokkal.",
     "viewPortfolio": "Portfólió megtekintése",
     "whatWeDesign": "Amit mi tervezünk",

@@ -16,10 +16,9 @@ import { cn } from "@/lib/utils";
 
 const featuredByGroup: Record<string, string[]> = {
   ai: [
-    "aeo-optimization",
-    "geo-optimization",
-    "seo-optimization",
     "ai-scan",
+    "ai-in-ecommerce",
+    "ai-in-website",
     "ai-chatbots",
     "ai-content-strategy",
     "ai-automation",
@@ -28,6 +27,7 @@ const featuredByGroup: Record<string, string[]> = {
     "ai-integration",
     "ai-consultancy",
   ],
+  optimization: ["aeo-optimization", "geo-optimization", "seo-optimization", "text-optimization"],
   wordpress: [
     "ai-in-wordpress",
     "wordpress-maintenance-updates",
@@ -39,8 +39,6 @@ const featuredByGroup: Record<string, string[]> = {
     "wordpress-support",
   ],
   webdesign: [
-    "ai-in-ecommerce",
-    "ai-in-website",
     "webdesign-support",
     "custom-webdesign",
     "website-malware-removal",
@@ -52,7 +50,7 @@ const featuredByGroup: Record<string, string[]> = {
     "website-maintenance",
   ],
   design: [
-    "digital-design",
+    "grafisch-design",
     "logo-brand-identity",
     "business-cards",
     "briefpapier",
@@ -91,7 +89,7 @@ function sortFeaturedItems(
   locale: string,
   groupId: string,
 ) {
-  if (groupId === "hosting" || groupId === "ai") return items;
+  if (groupId === "hosting" || groupId === "ai" || groupId === "optimization") return items;
   return [...items].sort((a, b) =>
     catalogServiceTitle(a.slug, locale, a.title).localeCompare(
       catalogServiceTitle(b.slug, locale, b.title),
@@ -203,7 +201,7 @@ export function ServicesMegaMenu({
           onMouseLeave={scheduleClose}
         >
           <div className="w-full max-w-[min(100%,98rem)] rounded-3xl border border-border/60 bg-white p-4 shadow-xl dark:bg-zinc-950 md:p-5">
-            <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-4">
+            <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 xl:gap-4">
               {sortedServiceGroups(locale)
                 .filter((group) => group.id !== "hosting")
                 .map((group) => {

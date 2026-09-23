@@ -83,7 +83,7 @@
     "viewAll": "Napsauta tästä kaikkiin palveluihin",
     "mostPopular": "Suosituimmat palvelut",
     "countLabel": "palvelut",
-    "openDigitalDesign": "Avaa digitaalinen suunnittelu",
+    "openDigitalDesign": "Avaa graafinen suunnittelu",
     "startFreeAiScan": "Aloita ilmainen AI-skannaus",
     "related": "Aiheeseen liittyvät palvelut",
     "freeAiScan": "Ilmainen AI-skannaus",
@@ -113,7 +113,7 @@
       "advice": "Neuvoja",
       "integration": "Integrointi",
       "automation": "Automaatio",
-      "digitalDesign": "Digitaalinen suunnittelu",
+      "digitalDesign": "Graafinen suunnittelu",
       "printing": "Tulostus",
       "webdesign": "Verkkosuunnittelu",
       "malware": "Haittaohjelmien poisto",
@@ -571,7 +571,7 @@
     "pillarBackupDesc": "Turvalliset varmuuskopiot ja hosting-siirrot ilman seisokkeja.",
     "pillarDesignTitle": "Suunnittele ja mukauta",
     "pillarDesignDesc": "Ainutlaatuinen, reagoiva muotoilu, joka on räätälöity brändisi mukaan.",
-    "pillarDigitalTitle": "Digitaalinen suunnittelu",
+    "pillarDigitalTitle": "Graafinen suunnittelu",
     "pillarDigitalDesc": "Logot, käyntikortit, lehtiset, julisteet ja painatus Adobessa.",
     "pillarHostingTitle": "Verkkosivuston isännöinti",
     "pillarHostingDesc": "Nopea ja luotettava majoittaminen alkaen 21,96 € vuodessa."
@@ -669,7 +669,7 @@
     "pageIntro": "Valitse palvelu, päivämäärä ja kellonaika — vahvistamme tapaamisesi sähköpostitse."
   },
   "digitalDesign": {
-    "title": "Digitaalinen suunnittelu",
+    "title": "Graafinen suunnittelu",
     "subtitle": "Ammattimainen tuotemerkki- ja painosuunnittelu: logot, käyntikortit, lentolehtiset, tarrat, aikakauslehdet ja julisteet – valmistettu Photoshopilla, Illustratorilla ja InDesignilla.",
     "viewPortfolio": "Näytä portfolio",
     "whatWeDesign": "Mitä suunnittelemme",

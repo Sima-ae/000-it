@@ -83,7 +83,7 @@
     "viewAll": "Klik her for alle tjenester",
     "mostPopular": "Mest populære tjenester",
     "countLabel": "tjenester",
-    "openDigitalDesign": "Åbent digitalt design",
+    "openDigitalDesign": "Åbn grafisk design",
     "startFreeAiScan": "Start gratis AI-scanning",
     "related": "Relaterede tjenester",
     "freeAiScan": "Gratis AI-scanning",
@@ -113,7 +113,7 @@
       "advice": "Råd",
       "integration": "Integration",
       "automation": "Automatisering",
-      "digitalDesign": "DIGITALT DESIGN",
+      "digitalDesign": "Grafisk design",
       "printing": "Trykning",
       "webdesign": "Webdesign",
       "malware": "Fjernelse af malware",
@@ -571,7 +571,7 @@
     "pillarBackupDesc": "Sikker sikkerhedskopiering og hostingmigreringer uden nedetid.",
     "pillarDesignTitle": "Design og tilpas",
     "pillarDesignDesc": "Unikt, responsivt design, der er skræddersyet til dit brand.",
-    "pillarDigitalTitle": "DIGITALT DESIGN",
+    "pillarDigitalTitle": "Grafisk design",
     "pillarDigitalDesc": "Logoer, visitkort, flyers, plakater og print i Adobe.",
     "pillarHostingTitle": "Webhosting",
     "pillarHostingDesc": "Hurtigt og pålideligt værtskab fra € 21,96 om året."
@@ -669,7 +669,7 @@
     "pageIntro": "Vælg en service, dato og klokkeslæt — vi bekræfter din aftale via e-mail."
   },
   "digitalDesign": {
-    "title": "DIGITALT DESIGN",
+    "title": "Grafisk design",
     "subtitle": "Professionelt brand- og printdesign: logoer, visitkort, flyers, klistermærker, magasiner og plakater — lavet i Photoshop, Illustrator og InDesign.",
     "viewPortfolio": "Se portefølje",
     "whatWeDesign": "Hvad vi designer",

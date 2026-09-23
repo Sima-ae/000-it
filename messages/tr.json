@@ -83,7 +83,7 @@
     "viewAll": "Tüm hizmetler için buraya tıklayın",
     "mostPopular": "En popüler hizmetler",
     "countLabel": "hizmetler",
-    "openDigitalDesign": "Açık Dijital Tasarım",
+    "openDigitalDesign": "Grafik tasarımı aç",
     "startFreeAiScan": "Ücretsiz AI taramasını başlatın",
     "related": "İlgili hizmetler",
     "freeAiScan": "Ücretsiz AI taraması",
@@ -113,7 +113,7 @@
       "advice": "Tavsiye",
       "integration": "Entegrasyon",
       "automation": "Otomasyon",
-      "digitalDesign": "Dijital Tasarım",
+      "digitalDesign": "Grafik tasarım",
       "printing": "Baskı",
       "webdesign": "Web tasarımı",
       "malware": "Kötü amaçlı yazılım temizleme",
@@ -571,7 +571,7 @@
     "pillarBackupDesc": "Kesinti olmadan güvenli yedeklemeler ve barındırma geçişleri.",
     "pillarDesignTitle": "Tasarla ve Özelleştir",
     "pillarDesignDesc": "Markanıza özel benzersiz, duyarlı tasarım.",
-    "pillarDigitalTitle": "Dijital Tasarım",
+    "pillarDigitalTitle": "Grafik tasarım",
     "pillarDigitalDesc": "Adobe'de logolar, kartvizitler, el ilanları, posterler ve baskılar.",
     "pillarHostingTitle": "Web Barındırma",
     "pillarHostingDesc": "Yıllık 21,96 €'dan başlayan hızlı, güvenilir barındırma."
@@ -669,7 +669,7 @@
     "pageIntro": "Bir hizmet, tarih ve saat seçin. Randevunuzu e — posta ile onaylayacağız."
   },
   "digitalDesign": {
-    "title": "Dijital Tasarım",
+    "title": "Grafik tasarım",
     "subtitle": "Profesyonel marka ve baskı tasarımı: Photoshop, Illustrator ve InDesign'da hazırlanmış logolar, kartvizitler, el ilanları, çıkartmalar, dergiler ve posterler.",
     "viewPortfolio": "Portfolyoyu görüntüle",
     "whatWeDesign": "Ne tasarlıyoruz",

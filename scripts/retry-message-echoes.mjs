@@ -10,7 +10,7 @@ const CONCURRENCY = Number(process.env.MT_CONCURRENCY || 1);
 const DELAY = Number(process.env.MT_DELAY_MS || 600);
 
 const BRAND_OK =
-  /^(FAQ|Portfolio|TripleZero iT( Hosting)?|WordPress|WooCommerce|AI|AEO|GEO|SEO|Enterprise|Business|Support|Chatbots|Workflows|Webdesign|Webhosting|E-commerce|Marketing|Social Media|Printing|Digital Design|Digital design|Contact|Account|Home|Login|CRM|Extra Growth|Custom|Score|Name|Collaboration|Newsletter|Cookies|Force majeure|Privacy|Download|Fix Bugs and Errors)$/i;
+  /^(FAQ|Portfolio|TripleZero iT( Hosting)?|WordPress|WooCommerce|AI|AEO|GEO|SEO|Enterprise|Business|Support|Chatbots|Workflows|Webdesign|Webhosting|E-commerce|Marketing|Social Media|Printing|Graphic Design|Grafisch Design|Digital Design|Digital design|Contact|Account|Home|Login|CRM|Extra Growth|Custom|Score|Name|Collaboration|Newsletter|Cookies|Force majeure|Privacy|Download|Fix Bugs and Errors)$/i;
 
 function leaves(obj, prefix = "", out = []) {
   if (obj == null) return out;

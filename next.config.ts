@@ -33,12 +33,46 @@ const nextConfig: NextConfig = {
     ],
   },
   async redirects() {
+    const graphicDesignRedirects = [
+      ["digital-design", "grafisch-design"],
+      ["design-numerique", "design-graphique"],
+      ["digitales-design", "grafisches-design"],
+      ["diseno-digital", "diseno-grafico"],
+      ["design-digital", "design-grafico"],
+      ["design-digitale", "design-grafico"],
+      ["psifiako-design", "grafikos-schediasmos"],
+      ["design-cyfrowy", "projektowanie-graficzne"],
+      ["digitalni-design", "graficky-design"],
+      ["digitalny-dizajn", "graficky-dizajn"],
+      ["digitalis-tervezes", "grafikai-tervezes"],
+      ["digitalen-dizajn", "grafichen-dizajn"],
+      ["digitalni-dizajn", "graficki-dizajn"],
+      ["dizajn-dixhital", "dizajn-grafik"],
+      ["skaitmeninis-dizainas", "grafikos-dizainas"],
+      ["digitaalinen-suunnittelu", "graafinen-suunnittelu"],
+      ["cyfrovyj-dyzajn", "grafichnyj-dyzajn"],
+      ["cifrovoj-dizajn", "graficheskij-dizajn"],
+      ["dijital-tasarim", "grafik-tasarim"],
+      ["itzuv-digitali", "itzuv-grafi"],
+      ["tasmim-raqami", "tasmim-grafiki"],
+      ["cipruli-dizaini", "grapikuli-dizaini"],
+      ["tvayin-dizayn", "grafikakan-dizayn"],
+      ["reqemsal-dizayn", "qrafik-dizayn"],
+      ["shuzi-sheji", "pingmian-sheji"],
+      ["dejitaru-dezain", "gurafikku-dezain"],
+    ] as const;
+
     return [
       {
         source: "/:locale/diensten/ai-search-visibility",
         destination: "/:locale/diensten/aeo-optimization",
         permanent: true,
       },
+      ...graphicDesignRedirects.map(([from, to]) => ({
+        source: `/:locale/${from}`,
+        destination: `/:locale/${to}`,
+        permanent: true,
+      })),
     ];
   },
   async headers() {

@@ -83,7 +83,7 @@
     "viewAll": "Kliknij tutaj, aby zobaczyć wszystkie usługi",
     "mostPopular": "Najpopularniejsze usługi",
     "countLabel": "usługi",
-    "openDigitalDesign": "Otwarty projekt cyfrowy",
+    "openDigitalDesign": "Otwórz projektowanie graficzne",
     "startFreeAiScan": "Rozpocznij bezpłatne skanowanie AI",
     "related": "Powiązane usługi",
     "freeAiScan": "Bezpłatny skan AI",
@@ -113,7 +113,7 @@
       "advice": "Rada",
       "integration": "Integracja",
       "automation": "Automatyzacja",
-      "digitalDesign": "projektowanie układów logicznych",
+      "digitalDesign": "Projektowanie graficzne",
       "printing": "Druk",
       "webdesign": "Projektowanie stron internetowych",
       "malware": "Usuwanie złośliwego oprogramowania",
@@ -571,7 +571,7 @@
     "pillarBackupDesc": "Bezpieczne kopie zapasowe i migracje hostów bez przestojów.",
     "pillarDesignTitle": "Zaprojektuj i dostosuj",
     "pillarDesignDesc": "Unikalny, responsywny design dopasowany do Twojej marki.",
-    "pillarDigitalTitle": "projektowanie układów logicznych",
+    "pillarDigitalTitle": "Projektowanie graficzne",
     "pillarDigitalDesc": "Logotypy, wizytówki, ulotki, plakaty i druk w Adobe.",
     "pillarHostingTitle": "Hosting",
     "pillarHostingDesc": "Szybki, niezawodny hosting już od 21,96 € rocznie."
@@ -669,7 +669,7 @@
     "pageIntro": "Wybierz usługę, datę i godzinę — potwierdzimy Twoje spotkanie e-mailem."
   },
   "digitalDesign": {
-    "title": "projektowanie układów logicznych",
+    "title": "Projektowanie graficzne",
     "subtitle": "Profesjonalny projekt marki i druku: logo, wizytówki, ulotki, naklejki, czasopisma i plakaty — wykonane w programach Photoshop, Illustrator i InDesign.",
     "viewPortfolio": "Zobacz portfolio",
     "whatWeDesign": "Co projektujemy",

@@ -83,7 +83,7 @@
     "viewAll": "点击此处查看全部服务",
     "mostPopular": "最受欢迎的服务",
     "countLabel": "服务",
-    "openDigitalDesign": "开放式数字设计",
+    "openDigitalDesign": "打开平面设计",
     "startFreeAiScan": "开始免费AI扫描",
     "related": "相关服务",
     "freeAiScan": "免费人工智能扫描",
@@ -113,7 +113,7 @@
       "advice": "建议",
       "integration": "一体化",
       "automation": "自动化",
-      "digitalDesign": "数字化设计",
+      "digitalDesign": "平面设计",
       "printing": "印刷",
       "webdesign": "网页设计",
       "malware": "恶意软件清除",
@@ -571,7 +571,7 @@
     "pillarBackupDesc": "安全备份和托管迁移，无需停机。",
     "pillarDesignTitle": "设计与定制",
     "pillarDesignDesc": "为你的品牌量身定制的独特、响应式设计。",
-    "pillarDigitalTitle": "数字化设计",
+    "pillarDigitalTitle": "平面设计",
     "pillarDigitalDesc": "Adobe 中的徽标、名片、传单、海报和印刷品。",
     "pillarHostingTitle": "虚拟主机",
     "pillarHostingDesc": "快速、可靠的托管，每年 21.96 欧元起。"
@@ -669,7 +669,7 @@
     "pageIntro": "选择服务、日期和时间—我们将通过电子邮件确认你的预约。"
   },
   "digitalDesign": {
-    "title": "数字化设计",
+    "title": "平面设计",
     "subtitle": "专业品牌和印刷设计：徽标、名片、传单、贴纸、杂志和海报 - 使用 Photoshop、Illustrator 和 InDesign 制作。",
     "viewPortfolio": "查看产品组合",
     "whatWeDesign": "我们设计什么",

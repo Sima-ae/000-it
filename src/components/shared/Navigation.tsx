@@ -257,7 +257,7 @@ export function Navigation() {
                             .map((group) => {
                             const groupItems = serviceCatalog.filter((s) => s.group === group.id);
                             const sorted =
-                              group.id === "ai"
+                              group.id === "ai" || group.id === "optimization"
                                 ? groupItems
                                 : [...groupItems].sort((a, b) =>
                                     catalogServiceTitle(a.slug, locale, a.title).localeCompare(

@@ -54,7 +54,7 @@ export default async function ServicesPage({
     await Promise.all(
       sortedServiceGroups(locale).map(async (group) => {
         const items = serviceCatalog.filter(
-          (item) => item.group === group.id && item.slug !== "digital-design",
+          (item) => item.group === group.id && item.slug !== "grafisch-design",
         );
         const cards = (
           await Promise.all(
@@ -87,14 +87,18 @@ export default async function ServicesPage({
 
   const aiJumpButtons = [
     { key: "ai", id: "ai" },
-    { key: "aeo", id: "aeo-optimization" },
-    { key: "geo", id: "geo-optimization" },
-    { key: "seo", id: "seo-optimization" },
     { key: "chatbots", id: "ai-chatbots" },
     { key: "workflows", id: "ai-workflows" },
     { key: "advice", id: "ai-consultancy" },
     { key: "integration", id: "ai-integration" },
     { key: "automation", id: "ai-automation" },
+  ] as const;
+
+  const optimizationJumpButtons = [
+    { key: "aeo", id: "aeo-optimization" },
+    { key: "geo", id: "geo-optimization" },
+    { key: "seo", id: "seo-optimization" },
+    { key: "texts", id: "text-optimization" },
   ] as const;
 
   const designJumpButtons = [
@@ -133,6 +137,13 @@ export default async function ServicesPage({
         if (group.id === "ai") {
           return aiJumpButtons.map((button) => ({
             key: `ai-${button.key}`,
+            id: button.id,
+            label: t(`jump.${button.key}`),
+          }));
+        }
+        if (group.id === "optimization") {
+          return optimizationJumpButtons.map((button) => ({
+            key: `optimization-${button.key}`,
             id: button.id,
             label: t(`jump.${button.key}`),
           }));
@@ -233,7 +244,7 @@ export default async function ServicesPage({
               </div>
               {group.id === "design" ? (
                 <SoftLink
-                  href={localizedHref(locale, "/digital-design")}
+                  href={localizedHref(locale, "/design")}
                   className="text-sm font-medium text-primary hover:underline"
                 >
                   {t("openDigitalDesign")}

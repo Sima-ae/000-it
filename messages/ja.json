@@ -83,7 +83,7 @@
     "viewAll": "すべてのサービスはこちら",
     "mostPopular": "最も人気のあるサービス",
     "countLabel": "サービス",
-    "openDigitalDesign": "オープンデジタルデザイン",
+    "openDigitalDesign": "グラフィックデザインを開く",
     "startFreeAiScan": "無料のAIスキャンを開始する",
     "related": "関連サービス",
     "freeAiScan": "無料のAIスキャン",
@@ -113,7 +113,7 @@
       "advice": "アドバイス",
       "integration": "統合",
       "automation": "オートメーション",
-      "digitalDesign": "デジタルデザイン",
+      "digitalDesign": "グラフィックデザイン",
       "printing": "印刷",
       "webdesign": "ウェブデザイン",
       "malware": "マルウェアの削除",
@@ -571,7 +571,7 @@
     "pillarBackupDesc": "ダウンタイムのない安全なバックアップと移行のホスティング。",
     "pillarDesignTitle": "デザインとカスタマイズ",
     "pillarDesignDesc": "あなたのブランドに合わせたユニークでレスポンシブなデザイン。",
-    "pillarDigitalTitle": "デジタルデザイン",
+    "pillarDigitalTitle": "グラフィックデザイン",
     "pillarDigitalDesc": "ロゴ、名刺、チラシ、ポスター、印刷物は Adob​​e で作成できます。",
     "pillarHostingTitle": "ウェブホスティング",
     "pillarHostingDesc": "高速で信頼性の高いホスティングが年間 21.96 ユーロから。"
@@ -669,7 +669,7 @@
     "pageIntro": "サービス、日付、時刻を選択してください。メールで予約を確認します。"
   },
   "digitalDesign": {
-    "title": "デジタルデザイン",
+    "title": "グラフィックデザイン",
     "subtitle": "プロのブランドおよび印刷デザイン: ロゴ、名刺、チラシ、ステッカー、雑誌、ポスター - Photoshop、Illustrator、InDesign で作成されます。",
     "viewPortfolio": "ポートフォリオを見る",
     "whatWeDesign": "私たちがデザインするもの",

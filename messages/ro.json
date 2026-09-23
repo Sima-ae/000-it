@@ -83,7 +83,7 @@
     "viewAll": "Faceți clic aici pentru toate serviciile",
     "mostPopular": "Cele mai populare servicii",
     "countLabel": "servicii",
-    "openDigitalDesign": "Deschide Design Digital",
+    "openDigitalDesign": "Deschide Design grafic",
     "startFreeAiScan": "Începeți scanarea AI gratuită",
     "related": "Servicii conexe",
     "freeAiScan": "Scanare AI gratuită",
@@ -113,7 +113,7 @@
       "advice": "Sfaturi",
       "integration": "Integrare",
       "automation": "Automatizare",
-      "digitalDesign": "Design digital",
+      "digitalDesign": "Design grafic",
       "printing": "Imprimare",
       "webdesign": "Webdesign",
       "malware": "Eliminarea programelor malware",
@@ -571,7 +571,7 @@
     "pillarBackupDesc": "Backup-uri sigure și migrări de găzduire fără perioade de nefuncționare.",
     "pillarDesignTitle": "Proiectare și personalizare",
     "pillarDesignDesc": "Design unic, receptiv, adaptat mărcii tale",
-    "pillarDigitalTitle": "Design digital",
+    "pillarDigitalTitle": "Design grafic",
     "pillarDigitalDesc": "Sigle, cărți de vizită, pliante, postere și imprimare în Adobe.",
     "pillarHostingTitle": "Găzduire web",
     "pillarHostingDesc": "Găzduire rapidă și fiabilă, începând de la 21,96 € pe an."
@@ -669,7 +669,7 @@
     "pageIntro": "Alege un serviciu, o dată și o oră — te vom confirma programarea prin e-mail."
   },
   "digitalDesign": {
-    "title": "Design digital",
+    "title": "Design grafic",
     "subtitle": "Design profesional de marcă și imprimare: logo-uri, cărți de vizită, fluturași, autocolante, reviste și postere - realizate în Photoshop, Illustrator și InDesign.",
     "viewPortfolio": "Vizualizați portofoliul",
     "whatWeDesign": "Ce proiectăm",

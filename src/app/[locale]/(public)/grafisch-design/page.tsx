@@ -15,8 +15,14 @@ import { localizedHref } from "@/i18n/pathnames";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Reveal } from "@/components/marketing/Reveal";
 import { Button } from "@/components/ui/button";
-import { serviceCatalog, serviceHref } from "@/content/fixweb/catalog";
-import { catalogServiceTitle } from "@/content/fixweb/catalog-title";
+import { ShopProductImage } from "@/components/shop/ShopProductImage";
+import {
+  getServiceGroup,
+  serviceCatalog,
+  serviceGroupHref,
+  serviceHref,
+} from "@/content/fixweb/catalog";
+import { catalogGroupTitle, catalogServiceTitle } from "@/content/fixweb/catalog-title";
 import { buildStaticPageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
@@ -25,8 +31,10 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  return buildStaticPageMetadata(locale, "/digital-design");
+  return buildStaticPageMetadata(locale, "/grafisch-design");
 }
+
+const HERO_IMAGE = "/uploads/fixweb/grafisch-design.png";
 
 const tools = [
   { name: "Adobe Photoshop", icon: ImageIcon },
@@ -43,7 +51,7 @@ const offerings = [
   { slug: "magazines-brochures", icon: Layers, blurbKey: "blurbBrochures" as const },
 ] as const;
 
-export default async function DigitalDesignPage({
+export default async function GraphicDesignPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -52,39 +60,72 @@ export default async function DigitalDesignPage({
   setRequestLocale(locale);
   const tNav = await getTranslations("nav");
   const t = await getTranslations("digitalDesign");
+  const designGroup = getServiceGroup("design");
+  const designLabel = designGroup
+    ? catalogGroupTitle(designGroup.id, locale, designGroup.title)
+    : "Design";
 
   return (
     <div>
       <section className="relative overflow-hidden border-b border-border/60">
         <div
-          className="pointer-events-none absolute inset-0 opacity-80"
+          className="pointer-events-none absolute inset-0 opacity-70"
           style={{
             background:
-              "radial-gradient(ellipse 80% 60% at 20% 10%, color-mix(in oklab, var(--primary) 22%, transparent), transparent 55%), radial-gradient(ellipse 70% 50% at 90% 80%, color-mix(in oklab, var(--accent) 18%, transparent), transparent 50%)",
+              "radial-gradient(ellipse 70% 55% at 15% 0%, color-mix(in oklab, var(--primary) 18%, transparent), transparent 55%), radial-gradient(ellipse 60% 45% at 95% 70%, color-mix(in oklab, var(--accent) 14%, transparent), transparent 50%)",
           }}
         />
-        <div className="relative mx-auto max-w-6xl px-4 pb-16 pt-14 md:px-6 md:pb-24 md:pt-20">
+        <div className="relative mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
           <Reveal>
-            <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-primary">
-              TripleZero iT
+            <p className="text-sm text-muted-foreground">
+              <SoftLink href={localizedHref(locale, "/diensten")} className="hover:text-foreground">
+                {tNav("services")}
+              </SoftLink>
+              <span className="mx-2">/</span>
+              <SoftLink
+                href={serviceGroupHref(locale, "design")}
+                className="hover:text-foreground"
+              >
+                {designLabel}
+              </SoftLink>
+              <span className="mx-2">/</span>
+              <span>{t("title")}</span>
             </p>
-            <h1 className="font-display mt-4 max-w-3xl text-4xl font-semibold tracking-tight md:text-6xl">
-              {t("title")}
-            </h1>
-            <p className="mt-5 max-w-xl text-base text-muted-foreground md:text-lg">
-              {t("subtitle")}
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Button asChild size="lg" className="rounded-2xl">
-                <SoftLink href={localizedHref(locale, "/afspraak")}>
-                  {tNav("book")}
+            <div className="mt-6 grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
+              <div>
+                <SoftLink
+                  href={serviceGroupHref(locale, "design")}
+                  className="text-xs font-semibold uppercase tracking-[0.16em] text-primary hover:underline"
+                >
+                  {designLabel}
                 </SoftLink>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="rounded-2xl">
-                <SoftLink href={localizedHref(locale, "/portfolio")}>
-                  {t("viewPortfolio")}
-                </SoftLink>
-              </Button>
+                <h1 className="font-display mt-3 text-4xl font-semibold tracking-tight md:text-5xl">
+                  {t("title")}
+                </h1>
+                <p className="mt-4 max-w-2xl text-muted-foreground md:text-lg">
+                  {t("subtitle")}
+                </p>
+                <div className="mt-8 flex flex-wrap gap-3">
+                  <Button asChild size="lg" className="rounded-2xl">
+                    <SoftLink href={localizedHref(locale, "/afspraak")}>
+                      {tNav("book")}
+                    </SoftLink>
+                  </Button>
+                  <Button asChild size="lg" variant="outline" className="rounded-2xl">
+                    <SoftLink href={localizedHref(locale, "/portfolio")}>
+                      {t("viewPortfolio")}
+                    </SoftLink>
+                  </Button>
+                </div>
+              </div>
+              <div className="relative aspect-4/3 overflow-hidden rounded-[1.75rem] border border-border/70 shadow-sm">
+                <ShopProductImage
+                  src={HERO_IMAGE}
+                  alt={t("title")}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority
+                />
+              </div>
             </div>
           </Reveal>
         </div>

@@ -83,7 +83,7 @@
     "viewAll": "לחצו כאן לכל השירותים",
     "mostPopular": "השירותים הפופולריים ביותר",
     "countLabel": "שירותים",
-    "openDigitalDesign": "עיצוב דיגיטלי פתוח",
+    "openDigitalDesign": "פתח עיצוב גרפי",
     "startFreeAiScan": "התחל סריקת AI בחינם",
     "related": "שירותים קשורים",
     "freeAiScan": "סריקת AI בחינם",
@@ -113,7 +113,7 @@
       "advice": "עֵצָה",
       "integration": "הִשׁתַלְבוּת",
       "automation": "אוטומציה",
-      "digitalDesign": "עיצוב דיגיטלי",
+      "digitalDesign": "עיצוב גרפי",
       "printing": "הַדפָּסָה",
       "webdesign": "עיצוב אתרים",
       "malware": "הסרת תוכנות זדוניות",
@@ -571,7 +571,7 @@
     "pillarBackupDesc": "גיבויים בטוחים והעברות אירוח ללא השבתה.",
     "pillarDesignTitle": "עיצוב והתאמה אישית",
     "pillarDesignDesc": "עיצוב ייחודי, רספונסיבי המותאם למותג שלך.",
-    "pillarDigitalTitle": "עיצוב דיגיטלי",
+    "pillarDigitalTitle": "עיצוב גרפי",
     "pillarDigitalDesc": "לוגו, כרטיסי ביקור, פליירים, פוסטרים והדפסה ב-Adobe.",
     "pillarHostingTitle": "אחסון אתרים",
     "pillarHostingDesc": "אירוח מהיר ואמין החל מ-21.96 אירו לשנה."
@@ -669,7 +669,7 @@
     "pageIntro": "יש לבחור שירות, תאריך ושעה — אנחנו נאשר את הפגישה שלך באימייל."
   },
   "digitalDesign": {
-    "title": "עיצוב דיגיטלי",
+    "title": "עיצוב גרפי",
     "subtitle": "עיצוב מותג ודפוס מקצועי: לוגואים, כרטיסי ביקור, פליירים, סטיקרים, מגזינים ופוסטרים - מעוצבים בפוטושופ, אילוסטרייטור ואינדיזיין.",
     "viewPortfolio": "הצג תיק עבודות",
     "whatWeDesign": "מה אנחנו מעצבים",

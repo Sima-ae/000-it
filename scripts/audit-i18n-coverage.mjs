@@ -38,7 +38,7 @@ for (const loc of locales.filter((l) => l !== "en")) {
     else if (map.get(k) === v && loc !== "en" && v.length > 2) {
       // allow intentional same strings
       if (
-        /^(FAQ|Portfolio|TripleZero|WordPress|AI|AEO|GEO|SEO|Enterprise|Business|Support|Chatbots|Workflows|Webdesign|Webhosting|E-commerce|Marketing|Social Media|Printing|Digital Design|Digital design)$/i.test(
+        /^(FAQ|Portfolio|TripleZero|WordPress|AI|AEO|GEO|SEO|Enterprise|Business|Support|Chatbots|Workflows|Webdesign|Webhosting|E-commerce|Marketing|Social Media|Printing|Graphic Design|Grafisch Design|Digital Design|Digital design)$/i.test(
           v.trim(),
         )
       ) {

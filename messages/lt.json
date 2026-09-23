@@ -83,7 +83,7 @@
     "viewAll": "Spustelėkite čia visoms paslaugoms",
     "mostPopular": "Populiariausios paslaugos",
     "countLabel": "paslaugas",
-    "openDigitalDesign": "Atidarykite skaitmeninį dizainą",
+    "openDigitalDesign": "Atidaryti grafikos dizainą",
     "startFreeAiScan": "Pradėkite nemokamą AI nuskaitymą",
     "related": "Susijusios paslaugos",
     "freeAiScan": "Nemokamas AI nuskaitymas",
@@ -113,7 +113,7 @@
       "advice": "Patarimas",
       "integration": "Integracija",
       "automation": "Automatika",
-      "digitalDesign": "Skaitmeninis dizainas",
+      "digitalDesign": "Grafikos dizainas",
       "printing": "Spausdinimas",
       "webdesign": "Interneto dizainas",
       "malware": "Kenkėjiškų programų pašalinimas",
@@ -571,7 +571,7 @@
     "pillarBackupDesc": "Saugus atsarginių kopijų kūrimas ir svečių priėmimas be prastovų.",
     "pillarDesignTitle": "Dizainas ir tinkinimas",
     "pillarDesignDesc": "Unikalus, reaguojantis dizainas, pritaikytas tavo prekės ženklui.",
-    "pillarDigitalTitle": "Skaitmeninis dizainas",
+    "pillarDigitalTitle": "Grafikos dizainas",
     "pillarDigitalDesc": "Logotipai, vizitinės kortelės, skrajutės, plakatai ir spausdinimas „Adobe“.",
     "pillarHostingTitle": "Priegloba",
     "pillarHostingDesc": "Greitas ir patikimas svečių priėmimas nuo 21,96 € per metus."
@@ -669,7 +669,7 @@
     "pageIntro": "Pasirinkite paslaugą, datą ir laiką — susitikimą patvirtinsime el. paštu."
   },
   "digitalDesign": {
-    "title": "Skaitmeninis dizainas",
+    "title": "Grafikos dizainas",
     "subtitle": "Profesionalus prekės ženklo ir spaudinių dizainas: logotipai, vizitinės kortelės, skrajutės, lipdukai, žurnalai ir plakatai – sukurti „Photoshop“, „Illustrator“ ir „InDesign“.",
     "viewPortfolio": "Peržiūrėkite portfelį",
     "whatWeDesign": "Ką mes projektuojame",

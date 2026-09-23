@@ -83,7 +83,7 @@
     "viewAll": "Klikni ovdje za sve usluge",
     "mostPopular": "Најпопуларније услуге",
     "countLabel": "услуге",
-    "openDigitalDesign": "Отворите дигитални дизајн",
+    "openDigitalDesign": "Otvori grafički dizajn",
     "startFreeAiScan": "Започните бесплатно АИ скенирање",
     "related": "Повезане услуге",
     "freeAiScan": "Бесплатно АИ скенирање",
@@ -113,7 +113,7 @@
       "advice": "Савет",
       "integration": "Интеграција",
       "automation": "Аутоматизација",
-      "digitalDesign": "Digitalni dizajn",
+      "digitalDesign": "Grafički dizajn",
       "printing": "Штампање",
       "webdesign": "Вебдесигн",
       "malware": "Уклањање злонамерног софтвера",
@@ -571,7 +571,7 @@
     "pillarBackupDesc": "Bezbedne rezervne kopije i hosting migracije bez zastoja.",
     "pillarDesignTitle": "Dizajnirajte i prilagodite",
     "pillarDesignDesc": "Jedinstven, prilagodljiv dizajn prilagođen tvojem brendu.",
-    "pillarDigitalTitle": "Digitalni dizajn",
+    "pillarDigitalTitle": "Grafički dizajn",
     "pillarDigitalDesc": "Logotipi, vizit karte, flajeri, plakati i štampa u Adobe-u.",
     "pillarHostingTitle": "Veb hosting",
     "pillarHostingDesc": "Brzo i pouzdano ugošćavanje već od 21,96 € godišnje."
@@ -669,7 +669,7 @@
     "pageIntro": "Изаберите услугу, датум и време — потврдићемо ваш термин путем е-поште."
   },
   "digitalDesign": {
-    "title": "Digitalni dizajn",
+    "title": "Grafički dizajn",
     "subtitle": "Професионални дизајн брендова и штампе: логотипи, визит карте, флајери, налепнице, часописи и постери — направљени у Пхотосхоп-у, Иллустратор-у и ИнДесигн-у.",
     "viewPortfolio": "Погледај портфолио",
     "whatWeDesign": "Оно што дизајнирамо",
