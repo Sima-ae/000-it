@@ -240,13 +240,11 @@ export function PricingPlans({
                   dialogDescription={t("enterpriseDesc")}
                   messageHint={t("enterpriseHint")}
                   variant="outline"
-                  size="sm"
-                  className="mt-5 w-full rounded-xl"
+                  className="mt-5 w-full rounded-2xl"
                 />
               ) : (
                 <Button
-                  className="mt-5 w-full rounded-xl"
-                  size="sm"
+                  className="mt-5 w-full rounded-2xl"
                   variant={plan.featured ? "default" : "outline"}
                   onClick={() => {
                     if (plan.id === "starter" || plan.id === "growth") {

@@ -99,7 +99,7 @@ export default async function ShopProductPage({
           ) : null}
           <AddToCartButton
             productId={product.id}
-            label={t("addToCart")}
+            label={t("order")}
             className="mt-6"
           />
         </div>

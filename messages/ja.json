@@ -253,7 +253,7 @@
     "inclVat": "21%の付加価値税を含む",
     "perMonth": "/月",
     "billedYearly": "年額請求（{months}か月）。",
-    "addToCart": "カートに追加",
+    "addToCart": "注文する",
     "order": "注文する",
     "cartTitle": "カート",
     "cartSubtitle": "チェックアウトする前に注文を確認してください。",

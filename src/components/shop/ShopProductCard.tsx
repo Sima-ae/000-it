@@ -142,7 +142,7 @@ export function ShopProductCard({
           </p>
         ) : null}
         <Button className="mt-4 w-full rounded-2xl" onClick={handleAdd}>
-          {t("addToCart")}
+          {t("order")}
         </Button>
       </div>
     </GlassCard>
