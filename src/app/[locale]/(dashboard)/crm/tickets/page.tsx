@@ -74,7 +74,7 @@ export default function CrmTicketsPage() {
   const staff = isStaffRole(session?.user?.role);
   const showDelete = canDelete(session?.user?.role);
   const labelsI18n = useTicketI18n();
-  const [view, setView] = useState<"overview" | "list">(staff ? "overview" : "list");
+  const [view, setView] = useState<"overview" | "list">("list");
   const [layout, setLayout] = useState<"list" | "grid">("list");
   const [filters, setFilters] = useState<TicketFiltersState>(emptyFilters);
   const [debouncedQ, setDebouncedQ] = useState("");
