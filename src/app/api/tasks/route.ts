@@ -109,11 +109,16 @@ export async function PATCH(request: Request) {
 export async function DELETE(request: Request) {
   const { session, error } = await requireUser();
   if (error) return error;
+  // CRM tasks: only SUPER_ADMIN may delete
   if (!canDelete(session.user.role)) {
     return NextResponse.json({ error: "Forbidden" }, { status: 403 });
   }
   const id = new URL(request.url).searchParams.get("id");
   if (!id) return NextResponse.json({ error: "Missing id" }, { status: 400 });
+
+  const existing = await prisma.task.findUnique({ where: { id } });
+  if (!existing) return NextResponse.json({ error: "Not found" }, { status: 404 });
+
   await prisma.task.delete({ where: { id } });
   return NextResponse.json({ ok: true });
 }

@@ -58,26 +58,54 @@ type DashboardData = {
   agentList: { id: string; name: string; status: string; type: string }[];
 };
 
+function workloadTone(value: number): string {
+  if (value <= 0) return "text-accent";
+  if (value <= 10) return "text-orange-500";
+  return "text-red-600";
+}
+
 function StatCard({
   label,
   value,
   hint,
+  valueClassName,
+  href,
 }: {
   label: string;
   value: number | string;
   hint?: string;
+  valueClassName?: string;
+  href?: string;
 }) {
-  return (
-    <Card className="overflow-hidden border-border/80 bg-card/60">
+  const card = (
+    <Card
+      className={
+        href
+          ? "h-full overflow-hidden border-border/80 bg-card/60 transition hover:border-primary/40"
+          : "overflow-hidden border-border/80 bg-card/60"
+      }
+    >
       <CardHeader className="pb-2">
         <CardTitle className="text-sm font-medium text-muted-foreground">{label}</CardTitle>
       </CardHeader>
       <CardContent>
-        <p className="font-display text-3xl font-semibold tracking-tight">{value}</p>
+        <p
+          className={
+            valueClassName
+              ? `font-display text-3xl font-semibold tracking-tight ${valueClassName}`
+              : "font-display text-3xl font-semibold tracking-tight"
+          }
+        >
+          {value}
+        </p>
         {hint ? <p className="mt-1 text-xs text-muted-foreground">{hint}</p> : null}
       </CardContent>
     </Card>
   );
+
+  if (!href) return card;
+
+  return <SoftLink href={href}>{card}</SoftLink>;
 }
 
 function QuickLink({
@@ -456,11 +484,37 @@ export default function DashboardPage() {
         </div>
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-        <StatCard label={t("statsProjects")} value={data.stats.projects} />
-        <StatCard label={t("tickets")} value={data.stats.openTickets} />
-        <StatCard label={t("clients")} value={data.stats.clients} />
-        <StatCard label={t("todos")} value={data.stats.todosOpen} />
+      <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
+        <StatCard
+          label={t("leads")}
+          value={data.stats.leads}
+          valueClassName={data.stats.leads > 0 ? "text-red-600" : undefined}
+          href={localizedHref(locale, "/crm/leads")}
+        />
+        <StatCard
+          label={t("tickets")}
+          value={data.stats.openTickets}
+          valueClassName={workloadTone(data.stats.openTickets)}
+          href={localizedHref(locale, "/crm/tickets")}
+        />
+        <StatCard
+          label={t("statsTasks")}
+          value={data.stats.tasks}
+          valueClassName={workloadTone(data.stats.tasks)}
+          href={localizedHref(locale, "/crm/tasks")}
+        />
+        <StatCard
+          label={t("statsProjects")}
+          value={data.stats.projects}
+          valueClassName="text-primary"
+          href={localizedHref(locale, "/projects")}
+        />
+        <StatCard
+          label={t("clients")}
+          value={data.stats.clients}
+          valueClassName="text-primary"
+          href={localizedHref(locale, "/crm/clients")}
+        />
       </div>
 
       <div className="grid gap-4 lg:grid-cols-2">

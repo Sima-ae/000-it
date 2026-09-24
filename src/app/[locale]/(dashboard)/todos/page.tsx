@@ -20,6 +20,9 @@ export default function TodosPage() {
   const t = useTranslations("dashboard");
   const qc = useQueryClient();
   const [title, setTitle] = useState("");
+  const [editingId, setEditingId] = useState<string | null>(null);
+  const [editTitle, setEditTitle] = useState("");
+  const [saving, setSaving] = useState(false);
 
   const { data: todos = [], isLoading } = useQuery({
     queryKey: ["todos"],
@@ -30,19 +33,50 @@ export default function TodosPage() {
     },
   });
 
+  function startEdit(todo: Todo) {
+    setEditingId(todo.id);
+    setEditTitle(todo.title);
+  }
+
+  function cancelEdit() {
+    setEditingId(null);
+    setEditTitle("");
+  }
+
   async function addTodo(e: React.FormEvent) {
     e.preventDefault();
     if (!title.trim()) return;
+    setSaving(true);
     const res = await fetch("/api/todos", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ title: title.trim() }),
     });
+    setSaving(false);
     if (!res.ok) {
-      toast.error("Failed");
+      toast.error(t("todoSaveFailed"));
       return;
     }
     setTitle("");
+    toast.success(t("todoSaved"));
+    void qc.invalidateQueries({ queryKey: ["todos"] });
+  }
+
+  async function saveEdit(id: string) {
+    if (!editTitle.trim()) return;
+    setSaving(true);
+    const res = await fetch("/api/todos", {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id, title: editTitle.trim() }),
+    });
+    setSaving(false);
+    if (!res.ok) {
+      toast.error(t("todoSaveFailed"));
+      return;
+    }
+    cancelEdit();
+    toast.success(t("todoSaved"));
     void qc.invalidateQueries({ queryKey: ["todos"] });
   }
 
@@ -56,12 +90,88 @@ export default function TodosPage() {
   }
 
   async function remove(id: string) {
-    await fetch(`/api/todos?id=${id}`, { method: "DELETE" });
+    const res = await fetch(`/api/todos?id=${id}`, { method: "DELETE" });
+    if (!res.ok) {
+      toast.error(t("todoDeleteFailed"));
+      return;
+    }
+    if (editingId === id) cancelEdit();
+    toast.success(t("todoDeleted"));
     void qc.invalidateQueries({ queryKey: ["todos"] });
   }
 
-  const open = todos.filter((t) => !t.done);
-  const done = todos.filter((t) => t.done);
+  const open = todos.filter((todo) => !todo.done);
+  const done = todos.filter((todo) => todo.done);
+
+  function renderTodo(todo: Todo) {
+    const isEditing = editingId === todo.id;
+    return (
+      <div
+        key={todo.id}
+        className={cn(
+          "flex items-center gap-3 rounded-xl border px-3 py-2",
+          todo.done ? "border-border/60 opacity-70" : "border-border",
+        )}
+      >
+        <button
+          type="button"
+          onClick={() => void toggle(todo)}
+          className={cn(
+            "flex h-5 w-5 shrink-0 items-center justify-center rounded border text-[10px]",
+            todo.done
+              ? "border-primary bg-primary text-primary-foreground"
+              : "border-border",
+          )}
+        >
+          {todo.done ? "✓" : null}
+        </button>
+        {isEditing ? (
+          <div className="flex min-w-0 flex-1 flex-wrap items-center gap-2">
+            <Input
+              value={editTitle}
+              onChange={(e) => setEditTitle(e.target.value)}
+              className="h-8 min-w-0 flex-1 text-sm"
+              autoFocus
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  e.preventDefault();
+                  void saveEdit(todo.id);
+                }
+                if (e.key === "Escape") cancelEdit();
+              }}
+            />
+            <Button
+              size="sm"
+              onClick={() => void saveEdit(todo.id)}
+              disabled={saving || !editTitle.trim()}
+            >
+              {t("save")}
+            </Button>
+            <Button size="sm" variant="outline" onClick={cancelEdit}>
+              {t("cancel")}
+            </Button>
+          </div>
+        ) : (
+          <>
+            <span
+              className={cn(
+                "min-w-0 flex-1 text-sm",
+                todo.done && "text-muted-foreground line-through",
+              )}
+            >
+              {todo.title}
+            </span>
+            <Button size="sm" variant="outline" onClick={() => startEdit(todo)}>
+              {t("edit")}
+            </Button>
+            <Button size="sm" variant="ghost" onClick={() => void remove(todo.id)}>
+              ×
+            </Button>
+          </>
+        )}
+      </div>
+    );
+  }
 
   return (
     <div className="mx-auto max-w-2xl space-y-6">
@@ -81,7 +191,9 @@ export default function TodosPage() {
               onChange={(e) => setTitle(e.target.value)}
               placeholder={t("taskPlaceholder")}
             />
-            <Button type="submit">{t("add")}</Button>
+            <Button type="submit" disabled={saving}>
+              {t("add")}
+            </Button>
           </form>
         </CardContent>
       </Card>
@@ -94,22 +206,7 @@ export default function TodosPage() {
         </CardHeader>
         <CardContent className="space-y-2">
           {isLoading ? <p className="text-muted-foreground">Loading…</p> : null}
-          {open.map((todo) => (
-            <div
-              key={todo.id}
-              className="flex items-center gap-3 rounded-xl border border-border px-3 py-2"
-            >
-              <button
-                type="button"
-                onClick={() => void toggle(todo)}
-                className="flex h-5 w-5 items-center justify-center rounded border border-border"
-              />
-              <span className="min-w-0 flex-1 text-sm">{todo.title}</span>
-              <Button size="sm" variant="ghost" onClick={() => void remove(todo.id)}>
-                ×
-              </Button>
-            </div>
-          ))}
+          {open.map(renderTodo)}
           {!isLoading && !open.length ? (
             <p className="text-sm text-muted-foreground">{t("allClear")}</p>
           ) : null}
@@ -123,26 +220,7 @@ export default function TodosPage() {
               {t("done")} ({done.length})
             </CardTitle>
           </CardHeader>
-          <CardContent className="space-y-2">
-            {done.map((todo) => (
-              <div
-                key={todo.id}
-                className="flex items-center gap-3 rounded-xl border border-border/60 px-3 py-2 opacity-70"
-              >
-                <button
-                  type="button"
-                  onClick={() => void toggle(todo)}
-                  className="flex h-5 w-5 items-center justify-center rounded border border-primary bg-primary text-[10px] text-primary-foreground"
-                >
-                  ✓
-                </button>
-                <span className={cn("min-w-0 flex-1 text-sm line-through")}>{todo.title}</span>
-                <Button size="sm" variant="ghost" onClick={() => void remove(todo.id)}>
-                  ×
-                </Button>
-              </div>
-            ))}
-          </CardContent>
+          <CardContent className="space-y-2">{done.map(renderTodo)}</CardContent>
         </Card>
       ) : null}
     </div>

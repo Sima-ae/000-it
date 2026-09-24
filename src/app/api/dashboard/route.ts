@@ -24,7 +24,12 @@ export async function GET() {
         prisma.aIAgent.count({
           where: { ...scope, status: "RUNNING" },
         }),
-        prisma.task.count({ where: { project: scope } }),
+        prisma.task.count({
+          where: {
+            project: scope,
+            status: { in: ["PENDING", "IN_PROGRESS", "REVIEW"] },
+          },
+        }),
         prisma.aIScan.count({ where: { userId } }),
         prisma.activity.findMany({
           where: isStaffRole(role) && !isManagerRole(role) ? {} : { userId },
@@ -35,7 +40,16 @@ export async function GET() {
           ? prisma.client.count({ where: scope })
           : Promise.resolve(0),
         isStaffRole(role)
-          ? prisma.contactLead.count()
+          ? Promise.all([
+              prisma.contactLead.count({ where: { status: "NEW" } }),
+              prisma.client.count({
+                where: {
+                  ...scope,
+                  isLead: true,
+                  OR: [{ leadStatus: "NEW" }, { leadStatus: null }],
+                },
+              }),
+            ]).then(([formLeads, pipelineLeads]) => formLeads + pipelineLeads)
           : Promise.resolve(0),
         prisma.supportTicket.count({
           where: {

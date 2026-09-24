@@ -92,7 +92,10 @@ export function brandingFallbackForServiceSlug(
   if (/analytics|aeo|geo|seo|conversion|speed-optimization/i.test(slug)) {
     return BRANDING_IMAGES.dashboardOverview;
   }
-  if (/ai-scan|ai-strateg|ai-consult/i.test(slug)) {
+  if (/ai-scan/i.test(slug)) {
+    return "/uploads/fixweb/ai-scan.png";
+  }
+  if (/ai-strateg|ai-consult/i.test(slug)) {
     return BRANDING_IMAGES.consultantLaptop;
   }
   if (/ai-|chatbot|workflow|automat/i.test(slug)) {

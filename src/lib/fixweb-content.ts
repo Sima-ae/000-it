@@ -134,6 +134,14 @@ function productFeatures(shortDescription: string) {
 }
 
 /** Prefer live shop-catalog copy/price over static imported products. */
+function preferDedicatedServiceImage(
+  contentImage: string | null | undefined,
+  shopImage: string | null | undefined,
+): string | null {
+  if (contentImage?.startsWith("/uploads/fixweb/")) return contentImage;
+  return shopImage || contentImage || null;
+}
+
 function shopCatalogOverlay(slug: string, locale: string) {
   const shop = getShopProductBySlug(slug);
   if (!shop || shop.published === false || shop.priceInclCents <= 0) {
@@ -436,7 +444,7 @@ export async function getServiceContent(slug: string, locale: string = "nl") {
       content.meta.group === "hosting"
         ? catalogUiLabel("perMonth", locale, locale === "nl" ? "/ maand" : "/ month")
         : content.priceSuffix ?? null,
-    image: overlay.image || content.image,
+    image: preferDedicatedServiceImage(content.image, overlay.image),
     blocks: overlay.blocks.length ? overlay.blocks : content.blocks,
     features: overlay.features.length ? overlay.features : content.features,
     checkoutMonths: overlay.checkoutMonths,
@@ -550,7 +558,7 @@ export async function getServiceCardMeta(slug: string, locale: string = "nl") {
     subtitle,
     price: overlay.price,
     listPrice: overlay.listPrice,
-    image: overlay.image || meta.image,
+    image: preferDedicatedServiceImage(meta.image, overlay.image),
     hasBody: true,
   };
 }

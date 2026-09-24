@@ -82,19 +82,14 @@ export const dashboardNav: DashboardNavItem[] = [
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
   },
   {
-    href: "/todos",
-    key: "todos",
-    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
-  },
-  {
     href: "/ai-agents",
     key: "agents",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
   },
   {
-    href: "/crm",
-    key: "crm",
-    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
+    href: "/crm/leads",
+    key: "leads",
+    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
   },
   {
     href: "/crm/tickets",
@@ -107,16 +102,6 @@ export const dashboardNav: DashboardNavItem[] = [
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
   },
   {
-    href: "/projects",
-    key: "projects",
-    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
-  },
-  {
-    href: "/crm/leads",
-    key: "leads",
-    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
-  },
-  {
     href: "/shop-admin",
     key: "shop",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
@@ -125,6 +110,11 @@ export const dashboardNav: DashboardNavItem[] = [
     href: "/crm/clients",
     key: "clients",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
+  },
+  {
+    href: "/crm",
+    key: "crm",
+    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
   },
   {
     href: "/kennisbank-admin",
@@ -148,6 +138,11 @@ export const dashboardNav: DashboardNavItem[] = [
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
   },
   {
+    href: "/projects",
+    key: "projects",
+    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
+  },
+  {
     href: "/case-studies-admin",
     key: "caseStudies",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
@@ -155,6 +150,11 @@ export const dashboardNav: DashboardNavItem[] = [
   {
     href: "/content-generator",
     key: "content",
+    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
+  },
+  {
+    href: "/todos",
+    key: "todos",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
   },
   {
