@@ -412,7 +412,7 @@
     "topic": "Onderwerp",
     "topicPh": "bijv. AEO voor e-commerce",
     "audience": "Doelgroep (optioneel)",
-    "audiencePh": "bijv. scale-ups in Benelux",
+    "audiencePh": "bijv. MKB in Azië, Europa, de VAE en de USA",
     "generateDraft": "Genereer concept",
     "copy": "Kopieer",
     "output": "Uitvoer",
@@ -464,7 +464,7 @@
     "subtitle": "Wij analyseren AEO, GEO (lokaal), SEO en AI-readiness scores.",
     "url": "Website-URL",
     "company": "Bedrijfsnaam",
-    "goals": "Doelen",
+    "goals": "Extra informatie en wensen",
     "start": "Start scannen",
     "startNew": "Start een nieuwe scan",
     "contact": "Contact opnemen",
@@ -480,7 +480,9 @@
     "resultsTitle": "AI-scan resultaten",
     "contactTitle": "Contact over AI-scan",
     "contactDescription": "Laat jouw gegevens achter — we helpen je de scores te interpreteren en een plan op te stellen.",
-    "contactMessageLead": "Hallo TripleZero iT, Ik heb een AI-scan gedaan en wil graag de resultaten bespreken. Website-URL: {url} Scores: {scores} Vraag / toelichting:"
+    "contactMessageLead": "Hallo TripleZero iT, Ik heb een AI-scan gedaan en wil graag de resultaten bespreken. Website-URL: {url} Scores: {scores} Vraag / toelichting:",
+    "country": "Land",
+    "audience": "Doelgroep"
   },
   "portfolio": {
     "title": "Portfolio",
@@ -574,7 +576,7 @@
   "about": {
     "eyebrow": "Over ons",
     "title": "Over TripleZero iT",
-    "heroSubtitle": "Wij helpen ondernemers en organisaties in Europa groeien met AI, websites, hosting, SEO en marketing — praktisch, meetbaar en zonder onnodige complexiteit.",
+    "heroSubtitle": "Wij helpen ondernemers en organisaties in Azië, Europa, de VAE en de USA groeien met AI, websites, hosting, SEO en marketing — praktisch, meetbaar en zonder onnodige complexiteit.",
     "viewServices": "Bekijk diensten",
     "statResponseValue": "1–4 uur",
     "statResponse": "gemiddelde response",
@@ -592,7 +594,7 @@
     "storyLead": "TripleZero iT is jouw technische groeipartner — van eerste scan tot structurele optimalisatie.",
     "storyP1": "Wij combineren AI-integratie, AEO, GEO, SEO, webdesign, WordPress-care, hosting en full-funnel marketing in één aanpak. Zo blijft jouw online aanwezigheid snel, veilig, vindbaar en gericht op leads of omzet.",
     "storyP2": "Of het nu gaat om een bug, malware, migratie, performance-sprint of een nieuw groeisysteem: we pakken gericht op, leggen uit wat er gebeurt en leveren meetbaar resultaat — zodat jij kunt focussen op jouw business.",
-    "storyP3": "We werken vanuit Nederland en België met Europese ondernemers, freelancers en MKB-teams die betrouwbare IT willen zonder enterprise-overhead.",
+    "storyP3": "We werken vanuit Nederland en België met ondernemers, freelancers en MKB-teams in Azië, Europa, de VAE en de USA die betrouwbare IT willen zonder enterprise-overhead.",
     "approachTitle": "Onze aanpak",
     "approachSubtitle": "Heldere stappen, korte lijnen en verbeteringen die je kunt meten — geen black box.",
     "approach1Title": "Begrijpen",
@@ -621,7 +623,7 @@
     "pillarDesignTitle": "Grafisch design",
     "pillarDesignDesc": "Logo’s, print en merkuitingen die professioneel aansluiten op jouw digitale aanwezigheid.",
     "serveTitle": "Voor wie we werken",
-    "serveText": "Voor freelancers, startups en gevestigde MKB-bedrijven die online willen groeien zonder een intern IT- of marketingteam van tien man. Je krijgt een vast aanspreekpunt, duidelijke voorstellen en uitvoering die past bij jouw tempo en budget.",
+    "serveText": "Voor freelancers, startups en gevestigde MKB-bedrijven die online willen groeien zonder een intern IT- of marketingteam. Je krijgt een vast aanspreekpunt, duidelijke voorstellen en uitvoering die past bij jouw tempo en budget.",
     "whyEyebrow": "Waarom",
     "why1Title": "Praktisch, niet theoretisch",
     "why1Desc": "Advies dat doorloopt tot implementatie — met duidelijke opleveringen en next steps.",
@@ -794,7 +796,7 @@
   },
   "locations": {
     "title": "Locaties",
-    "subtitle": "TripleZero iT ondersteunt bedrijven in heel Nederland en België met AI-integratie, AEO, GEO, SEO, marketing en software. Kies jouw stad voor lokale informatie.",
+    "subtitle": "TripleZero iT ondersteunt bedrijven in Azië, Europa, de VAE en de USA met AI-integratie, AEO, GEO, SEO, marketing en software. Kies jouw stad voor lokale informatie.",
     "startFreeAiScan": "Start gratis AI-scan",
     "allServices": "Alle diensten",
     "breadcrumb": "Locaties",
@@ -830,6 +832,8 @@
     "title": "Nieuws",
     "back": "Terug naar nieuws",
     "viewSource": "Bekijk originele bron",
+    "searchPlaceholder": "Zoeken in het nieuws…",
+    "searchEmpty": "Geen artikelen gevonden.",
     "subtitle": "Blijf op de hoogte van alle ontwikkelingen."
   },
   "wordpressSupport": {

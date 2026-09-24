@@ -130,7 +130,7 @@ export default async function AboutPage({
         <Reveal delay={0.05}>
           <div className="relative aspect-4/3 overflow-hidden rounded-3xl bg-muted/40 shadow-sm">
             <Image
-              src={BRANDING_IMAGES.duoSuccess}
+              src={BRANDING_IMAGES.teamWorkshop}
               alt=""
               fill
               priority
@@ -171,7 +171,7 @@ export default async function AboutPage({
           <div className="grid items-stretch gap-3 lg:grid-cols-[0.9fr_1.1fr]">
             <div className="relative min-h-56 overflow-hidden rounded-3xl bg-muted/40 lg:min-h-full">
               <Image
-                src={BRANDING_IMAGES.consultantLaptop}
+                src={BRANDING_IMAGES.workplaceFocus}
                 alt=""
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
@@ -312,7 +312,7 @@ export default async function AboutPage({
           <div className="relative flex min-h-44 flex-col justify-between overflow-hidden rounded-3xl p-5 text-white md:p-6">
             <div className="absolute inset-0">
               <Image
-                src={BRANDING_IMAGES.tabletMarketer}
+                src={BRANDING_IMAGES.duoSuccess}
                 alt=""
                 fill
                 sizes="(max-width: 1152px) 100vw, 1152px"

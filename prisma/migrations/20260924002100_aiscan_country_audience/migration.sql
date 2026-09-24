@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE `AIScan` ADD COLUMN `country` VARCHAR(191) NULL,
+    ADD COLUMN `audience` VARCHAR(191) NULL;

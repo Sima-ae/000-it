@@ -412,7 +412,7 @@
     "topic": "话题",
     "topicPh": "例如电子商务AEO",
     "audience": "观众（可选）",
-    "audiencePh": "例如比荷卢经济联盟扩大规模",
+    "audiencePh": "例如亚洲、欧洲、阿联酋与美国的中小企业",
     "generateDraft": "生成草稿",
     "copy": "复制",
     "output": "输出",
@@ -464,7 +464,7 @@
     "subtitle": "了解你的 AEO、GEO（本地）、SEO 和 AI 准备分数。",
     "url": "网站网址",
     "company": "公司名称",
-    "goals": "目标",
+    "goals": "补充信息与需求",
     "start": "开始扫描",
     "startNew": "开始新的扫描",
     "contact": "联系我们",
@@ -480,7 +480,9 @@
     "resultsTitle": "AI扫描结果",
     "contactTitle": "关于AI扫描的联系方式",
     "contactDescription": "留下你的详细信息 - 我们将帮助解释分数并制定计划。",
-    "contactMessageLead": "您好 TripleZero iT， 我已经运行了人工智能扫描，并想讨论一下结果。 网站网址：{url} 分数： {scores} 问题/注意事项："
+    "contactMessageLead": "您好 TripleZero iT， 我已经运行了人工智能扫描，并想讨论一下结果。 网站网址：{url} 分数： {scores} 问题/注意事项：",
+    "country": "国家",
+    "audience": "目标受众"
   },
   "portfolio": {
     "title": "投资组合",
@@ -574,7 +576,7 @@
   "about": {
     "eyebrow": "关于我们",
     "title": "关于 TripleZero iT",
-    "heroSubtitle": "我们帮助欧洲的企业家与机构借助 AI、网站、主机、SEO 与营销实现增长——务实、可衡量，且不增加无谓复杂度。",
+    "heroSubtitle": "我们帮助亚洲、欧洲、阿联酋与美国的企业家与机构借助 AI、网站、主机、SEO 与营销实现增长——务实、可衡量，且不增加无谓复杂度。",
     "viewServices": "查看服务",
     "statResponseValue": "1–4 小时",
     "statResponse": "平均响应",
@@ -592,7 +594,7 @@
     "storyLead": "TripleZero iT 是您的技术增长伙伴——从首次扫描到持续优化。",
     "storyP1": "我们将 AI 集成、AEO、GEO、SEO、网页设计、WordPress 运维、主机与全漏斗营销合为一体。您的线上形象保持快速、安全、可发现，并聚焦线索或营收。",
     "storyP2": "无论是故障、恶意软件、迁移、性能冲刺还是新的增长体系：我们聚焦执行、说明路径并交付可衡量结果——让您专注业务。",
-    "storyP3": "我们立足荷兰与比利时，服务希望获得可靠 IT、又无需企业级开销的欧洲创业者、自由职业者与中小企业团队。",
+    "storyP3": "我们立足荷兰与比利时，服务亚洲、欧洲、阿联酋与美国希望获得可靠 IT、又无需企业级开销的创业者、自由职业者与中小企业团队。",
     "approachTitle": "我们的方法",
     "approachSubtitle": "步骤清晰、沟通高效、改进可衡量——没有黑箱。",
     "approach1Title": "理解",
@@ -621,7 +623,7 @@
     "pillarDesignTitle": "平面设计",
     "pillarDesignDesc": "与数字形象专业契合的标识、印刷与品牌资产。",
     "serveTitle": "我们服务的对象",
-    "serveText": "希望在线增长、又无需十人 IT 或营销团队的自由职业者、初创公司与成熟中小企业。您将获得明确对接人、透明方案，以及匹配节奏与预算的交付。",
+    "serveText": "希望在线增长、又无需内部 IT 或营销团队的自由职业者、初创公司与成熟中小企业。您将获得明确对接人、透明方案，以及匹配节奏与预算的交付。",
     "whyEyebrow": "为什么",
     "why1Title": "务实，而非空谈",
     "why1Desc": "建议贯通到落地——交付物清晰，并有下一步。",
@@ -776,7 +778,7 @@
   },
   "locations": {
     "title": "地点",
-    "subtitle": "TripleZero iT 通过人工智能集成、AEO、GEO、SEO、营销和软件为荷兰和比利时的企业提供支持。 选择你所在的城市以获取当地详细信息。",
+    "subtitle": "TripleZero iT 以 AI 集成、AEO、GEO、SEO、营销与软件支持亚洲、欧洲、阿联酋与美国的企业。选择你的城市以获取本地详情。",
     "startFreeAiScan": "开始免费AI扫描",
     "allServices": "所有服务",
     "breadcrumb": "地点",
@@ -812,6 +814,8 @@
     "title": "消息",
     "back": "返回新闻",
     "viewSource": "查看原始来源",
+    "searchPlaceholder": "搜索新闻…",
+    "searchEmpty": "未找到文章。",
     "subtitle": "及时了解所有进展。"
   },
   "agent000": {

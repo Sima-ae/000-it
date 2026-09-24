@@ -263,14 +263,66 @@ export async function listNewsPosts(opts?: {
   return mapped.map((post) => localizeNewsPost(post, opts.locale!));
 }
 
+/** Lowercase + strip accents/punctuation so "GPT-5", "gpt 5", and "gpt5" align. */
+function compactNewsSearchText(value: string) {
+  return value
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/\p{M}/gu, "")
+    .replace(/[^a-z0-9]+/g, "");
+}
+
+function newsPostMatchesQuery(post: NewsPost, needle: string) {
+  const rawNeedle = needle.trim().toLowerCase();
+  if (!rawNeedle) return true;
+  const compactNeedle = compactNewsSearchText(rawNeedle);
+  const haystacks = [
+    post.title,
+    post.excerpt,
+    post.author,
+    post.industry || "",
+    ...post.tags,
+  ];
+  return haystacks.some((value) => {
+    const lower = value.toLowerCase();
+    if (lower.includes(rawNeedle)) return true;
+    return Boolean(
+      compactNeedle && compactNewsSearchText(value).includes(compactNeedle),
+    );
+  });
+}
+
 export async function listNewsPostsPage(opts: {
   locale?: string;
   page?: number;
   pageSize?: number;
   all?: boolean;
+  q?: string;
 }) {
   const pageSize = Math.max(1, opts.pageSize ?? NEWS_PAGE_SIZE);
   const page = Math.max(1, opts.page ?? 1);
+  const needle = opts.q?.trim().toLowerCase() || "";
+
+  // Search across localized copy, then paginate in memory.
+  if (needle) {
+    const all = await listNewsPosts({
+      locale: opts.locale,
+      all: opts.all,
+    });
+    const filtered = all.filter((post) => newsPostMatchesQuery(post, needle));
+    const total = filtered.length;
+    const totalPages = Math.max(1, Math.ceil(total / pageSize) || 1);
+    const safePage = Math.min(page, totalPages);
+    const start = (safePage - 1) * pageSize;
+    return {
+      items: filtered.slice(start, start + pageSize),
+      total,
+      page: safePage,
+      pageSize,
+      totalPages: total === 0 ? 1 : totalPages,
+    };
+  }
+
   const where = opts.all
     ? notTrashed
     : { published: true, ...notTrashed };

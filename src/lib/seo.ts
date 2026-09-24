@@ -28,6 +28,10 @@ export const SITE_SEO = {
       "SEO",
       "AI-integratie",
       "online marketing",
+      "Azië",
+      "Europa",
+      "VAE",
+      "USA",
       "Nederland",
       "België",
       "webdesign",
@@ -41,13 +45,17 @@ export const SITE_SEO = {
       "SEO",
       "AI integration",
       "online marketing",
+      "Asia",
+      "Europe",
+      "UAE",
+      "USA",
       "Netherlands",
       "Belgium",
       "web design",
       "automation",
     ],
   },
-  /** Netherlands-focused business (Europe/Amsterdam). */
+  /** HQ / primary geo meta (NL). Service coverage is Asia, Europe, UAE and USA. */
   geo: {
     region: "NL",
     placename: "Nederland",
@@ -59,7 +67,14 @@ export const SITE_SEO = {
     icbm: "52.1326, 5.2913",
     position: "52.1326;5.2913",
   },
-  areaServed: ["NL", "BE"],
+  areaServed: [
+    { type: "Continent", name: "Asia" },
+    { type: "Continent", name: "Europe" },
+    { type: "Country", name: "United Arab Emirates", code: "AE" },
+    { type: "Country", name: "United States", code: "US" },
+    { type: "Country", name: "Netherlands", code: "NL" },
+    { type: "Country", name: "Belgium", code: "BE" },
+  ],
   sameAs: [] as string[],
 } as const;
 
@@ -296,6 +311,10 @@ export function buildServiceMetadata(opts: {
         "GEO",
         "SEO",
         "AI",
+        "Azië",
+        "Europa",
+        "VAE",
+        "USA",
         "Nederland",
         "België",
         "diensten",
@@ -308,6 +327,10 @@ export function buildServiceMetadata(opts: {
         "GEO",
         "SEO",
         "AI",
+        "Asia",
+        "Europe",
+        "UAE",
+        "USA",
         "Netherlands",
         "Belgium",
         "services",
@@ -385,8 +408,34 @@ export function pageSeoToSitemapMeta(page: PageSeo) {
 export function buildNewsKeywords(post: NewsPost, locale: string) {
   const base =
     locale === "nl"
-      ? ["nieuws", "AI nieuws", "kunstmatige intelligentie", "TripleZero iT", "Nederland", "SEO", "AEO", "GEO"]
-      : ["news", "AI news", "artificial intelligence", "TripleZero iT", "Netherlands", "SEO", "AEO", "GEO"];
+      ? [
+          "nieuws",
+          "AI nieuws",
+          "kunstmatige intelligentie",
+          "TripleZero iT",
+          "Azië",
+          "Europa",
+          "VAE",
+          "USA",
+          "Nederland",
+          "SEO",
+          "AEO",
+          "GEO",
+        ]
+      : [
+          "news",
+          "AI news",
+          "artificial intelligence",
+          "TripleZero iT",
+          "Asia",
+          "Europe",
+          "UAE",
+          "USA",
+          "Netherlands",
+          "SEO",
+          "AEO",
+          "GEO",
+        ];
   return Array.from(
     new Set(
       [...base, post.industry || "", ...publicNewsTags(post.tags)]
@@ -481,8 +530,30 @@ export function buildNewsIndexMetadata(locale: string, page = 1): Metadata {
   const path = page > 1 ? `/nieuws?page=${page}` : "/nieuws";
   const url = absoluteUrl(localePath(locale, path.split("?")[0]));
   const keywords = isNl
-    ? ["nieuws", "AI nieuws", "tech nieuws", "TripleZero iT", "Nederland", "kunstmatige intelligentie"]
-    : ["news", "AI news", "tech news", "TripleZero iT", "Netherlands", "artificial intelligence"];
+    ? [
+        "nieuws",
+        "AI nieuws",
+        "tech nieuws",
+        "TripleZero iT",
+        "Azië",
+        "Europa",
+        "VAE",
+        "USA",
+        "Nederland",
+        "kunstmatige intelligentie",
+      ]
+    : [
+        "news",
+        "AI news",
+        "tech news",
+        "TripleZero iT",
+        "Asia",
+        "Europe",
+        "UAE",
+        "USA",
+        "Netherlands",
+        "artificial intelligence",
+      ];
   const langs = hreflangAlternates("/nieuws");
 
   return {
@@ -525,9 +596,12 @@ export function organizationJsonLd() {
     logo: absoluteUrl(SITE_SEO.defaultOgImage),
     image: absoluteUrl(SITE_SEO.defaultOgImage),
     description: SITE_SEO.defaultDescription.en,
-    areaServed: SITE_SEO.areaServed.map((code) => ({
-      "@type": "Country",
-      name: code === "NL" ? "Netherlands" : code === "BE" ? "Belgium" : code,
+    areaServed: SITE_SEO.areaServed.map((place) => ({
+      "@type": place.type,
+      name: place.name,
+      ...("code" in place && place.code
+        ? { identifier: place.code }
+        : {}),
     })),
     address: {
       "@type": "PostalAddress",

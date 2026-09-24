@@ -16,7 +16,7 @@ type TemplateId = "blog" | "ads" | "social" | "email" | "landing";
 function buildDraft(locale: string, id: TemplateId, topic: string, audience: string): string {
   const nl = locale === "nl";
   const t = topic.trim();
-  const a = audience.trim() || (nl ? "Europese MKB'ers" : "European SMBs");
+  const a = audience.trim() || (nl ? "MKB in Azië, Europa, de VAE en de USA" : "SMBs across Asia, Europe, the UAE and the USA");
 
   if (id === "blog") {
     return nl

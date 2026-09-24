@@ -412,7 +412,7 @@
     "topic": "Téma",
     "topicPh": "például AEO az e-kereskedelemhez",
     "audience": "Közönség (nem kötelező)",
-    "audiencePh": "például Benelux államok léptékének növelése",
+    "audiencePh": "pl. KKV-k Ázsiában, Európában, az UAE-ban és az USA-ban",
     "generateDraft": "Piszkozat létrehozása",
     "copy": "Másolat",
     "output": "Kimenet",
@@ -464,7 +464,7 @@
     "subtitle": "Fedezze fel AEO, GEO (helyi), SEO és AI készültségi pontszámait.",
     "url": "Webhely URL",
     "company": "Cégnév",
-    "goals": "Gólok",
+    "goals": "További információk és kívánságok",
     "start": "Indítsa el a szkennelést",
     "startNew": "Indítson el egy új vizsgálatot",
     "contact": "Vegye fel velünk a kapcsolatot",
@@ -480,7 +480,9 @@
     "resultsTitle": "AI szkennelési eredmények",
     "contactTitle": "Kapcsolatfelvétel az AI szkenneléssel kapcsolatban",
     "contactDescription": "Hagyja meg adatait – segítünk értelmezni a pontszámokat és felvázolni a tervet.",
-    "contactMessageLead": "Szia TripleZero iT! Lefuttattam egy mesterséges intelligencia vizsgálatot, és szeretném megvitatni az eredményeket. Webhely URL-címe: {url} Pontszámok: {scores} Kérdés / megjegyzések:"
+    "contactMessageLead": "Szia TripleZero iT! Lefuttattam egy mesterséges intelligencia vizsgálatot, és szeretném megvitatni az eredményeket. Webhely URL-címe: {url} Pontszámok: {scores} Kérdés / megjegyzések:",
+    "country": "Ország",
+    "audience": "Célcsoport"
   },
   "portfolio": {
     "title": "Portfólió",
@@ -574,7 +576,7 @@
   "about": {
     "eyebrow": "Rólunk",
     "title": "A TripleZero iT-ről",
-    "heroSubtitle": "Segítünk európai vállalkozóknak és szervezeteknek AI-val, weboldalakkal, hostinggal, SEO-val és marketinggel növekedni — gyakorlatiasan, mérhetően, felesleges bonyolultság nélkül.",
+    "heroSubtitle": "Segítünk ázsiai, európai, egyesült arab emírségekbeli és USA-beli vállalkozóknak és szervezeteknek AI-val, weboldalakkal, hostinggal, SEO-val és marketinggel növekedni — gyakorlatiasan, mérhetően, felesleges bonyolultság nélkül.",
     "viewServices": "Szolgáltatások",
     "statResponseValue": "1–4 óra",
     "statResponse": "átlagos válaszidő",
@@ -592,7 +594,7 @@
     "storyLead": "A TripleZero iT a technikai növekedési partnertetek — az első scantől a folyamatos optimalizálásig.",
     "storyP1": "Egy megközelítésben egyesítjük az AI-integrációt, AEO-t, GEO-t, SEO-t, webdesignt, WordPress-gondozást, hostingot és full-funnel marketinget. Az online jelenlét gyors, biztonságos, megtalálható és lead- vagy bevételfókuszú marad.",
     "storyP2": "Legyen bug, malware, migráció, performance-sprint vagy új növekedési rendszer: fókuszáltan dolgozunk, elmagyarázzuk az utat, és mérhető eredményt szállítunk — ti a businessre koncentrálhattok.",
-    "storyP3": "Hollandiából és Belgiumból dolgozunk európai vállalkozókkal, freelancerekkel és KKV-csapatokkal, akik megbízható IT-t akarnak enterprise overhead nélkül.",
+    "storyP3": "Hollandiából és Belgiumból dolgozunk ázsiai, európai, egyesült arab emírségekbeli és USA-beli vállalkozókkal, freelancerekkel és KKV-csapatokkal, akik megbízható IT-t akarnak enterprise-overhead nélkül.",
     "approachTitle": "Hogyan dolgozunk",
     "approachSubtitle": "Világos lépések, rövid kommunikáció és mérhető fejlesztések — nincs fekete doboz.",
     "approach1Title": "Megérteni",
@@ -621,7 +623,7 @@
     "pillarDesignTitle": "Grafikai tervezés",
     "pillarDesignDesc": "Logók, nyomtatványok és márkaanyagok, amelyek professzionálisan illeszkednek a digitális jelenléthez.",
     "serveTitle": "Kikkel dolgozunk",
-    "serveText": "Freelancerekkel, startupokkal és stabil KKV-kkel, akik online akarnak nőni tízfős belső IT- vagy marketingcsapat nélkül. Egyértelmű kapcsolattartót, átlátható ajánlatokat és tempóhoz s költségvetéshez illő szállítást kaptok.",
+    "serveText": "Freelancerekkel, startupokkal és stabil KKV-kkel, akik online akarnak nőni belső IT- vagy marketingcsapat nélkül. Egyértelmű kapcsolattartót, átlátható ajánlatokat és tempóhoz s költségvetéshez illő szállítást kaptok.",
     "whyEyebrow": "Miért",
     "why1Title": "Gyakorlati, nem elméleti",
     "why1Desc": "Tanácsadás, ami a megvalósításig jut — világos deliverable-ökkel és következő lépésekkel.",
@@ -776,7 +778,7 @@
   },
   "locations": {
     "title": "Helyszínek",
-    "subtitle": "A TripleZero iT AI integrációval, AEO-val, GEO-val, SEO-val, marketinggel és szoftverekkel támogatja a vállalkozásokat Hollandiában és Belgiumban. Válassza ki városát a helyi részletekért.",
+    "subtitle": "A TripleZero iT AI integrációval, AEO-val, GEO-val, SEO-val, marketinggel és szoftverekkel támogatja a vállalkozásokat Ázsiában, Európában, az Egyesült Arab Emírségekben és az USA-ban. Válassza ki városát a helyi részletekért.",
     "startFreeAiScan": "Indítsa el az ingyenes AI-vizsgálatot",
     "allServices": "Minden szolgáltatás",
     "breadcrumb": "Helyszínek",
@@ -812,6 +814,8 @@
     "title": "Hír",
     "back": "Vissza a hírekhez",
     "viewSource": "Eredeti forrás megtekintése",
+    "searchPlaceholder": "Keresés a hírekben…",
+    "searchEmpty": "Nem találhatók cikkek.",
     "subtitle": "Legyen naprakész minden fejleményről."
   },
   "agent000": {

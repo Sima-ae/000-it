@@ -412,7 +412,7 @@
     "topic": "Tema",
     "topicPh": "p.sh. OAE për tregtinë elektronike",
     "audience": "Audienca (opsionale)",
-    "audiencePh": "p.sh. Shkallëzimi i Beneluksit",
+    "audiencePh": "p.sh. SME në Azi, Europë, UAE dhe SHBA",
     "generateDraft": "Krijo draft",
     "copy": "Kopjo",
     "output": "Prodhimi",
@@ -464,7 +464,7 @@
     "subtitle": "Zbuloni rezultatet tuaja të gatishmërisë AEO, GEO (lokale), SEO dhe AI.",
     "url": "URL e faqes në internet",
     "company": "Emri i kompanisë",
-    "goals": "Golat",
+    "goals": "Informacione shtesë dhe dëshira",
     "start": "Filloni skanimin",
     "startNew": "Filloni një skanim të ri",
     "contact": "Na kontaktoni",
@@ -480,7 +480,9 @@
     "resultsTitle": "Rezultatet e skanimit të AI",
     "contactTitle": "Kontaktoni në lidhje me skanimin e AI",
     "contactDescription": "Lini të dhënat tuaja - ne do t'ju ndihmojmë të interpretojmë rezultatet dhe të përshkruajmë një plan.",
-    "contactMessageLead": "Përshëndetje TripleZero iT, Unë kam kryer një skanim të AI dhe do të doja të diskutoja rezultatet. URL e faqes në internet: {url} Rezultatet: {scores} Pyetje / shënime:"
+    "contactMessageLead": "Përshëndetje TripleZero iT, Unë kam kryer një skanim të AI dhe do të doja të diskutoja rezultatet. URL e faqes në internet: {url} Rezultatet: {scores} Pyetje / shënime:",
+    "country": "Shteti",
+    "audience": "Grupi i synuar"
   },
   "portfolio": {
     "title": "Portofoli",
@@ -574,7 +576,7 @@
   "about": {
     "eyebrow": "Rreth nesh",
     "title": "Rreth TripleZero iT",
-    "heroSubtitle": "Ndihmojmë sipërmarrës dhe organizata në Europë të rriten me AI, faqe, hosting, SEO dhe marketing — praktikisht, të matshëm dhe pa kompleksitet të panevojshëm.",
+    "heroSubtitle": "Ndihmojmë sipërmarrës dhe organizata në Azi, Europë, Emiratet e Bashkuara Arabe dhe SHBA të rriten me AI, faqe, hosting, SEO dhe marketing — praktikisht, të matshëm dhe pa kompleksitet të panevojshëm.",
     "viewServices": "Shiko shërbimet",
     "statResponseValue": "1–4 orë",
     "statResponse": "përgjigje mesatare",
@@ -592,7 +594,7 @@
     "storyLead": "TripleZero iT është partneri juaj teknik i rritjes — nga skanimi i parë te optimizimi i vazhdueshëm.",
     "storyP1": "Kombinojmë integrimin e AI, AEO, GEO, SEO, web design, kujdesin WordPress, hostingun dhe marketingun full-funnel në një qasje. Prania juaj online mbetet e shpejtë, e sigurt, e gjetshme dhe e orientuar nga lead-et ose të ardhurat.",
     "storyP2": "Qoftë bug, malware, migrim, sprint performance ose sistem i ri rritjeje: veprojmë me fokus, shpjegojmë rrugën dhe dorëzojmë rezultate të matshme — që ju të fokusoheni te biznesi.",
-    "storyP3": "Punojmë nga Holanda dhe Belgjika me sipërmarrës, freelancerë dhe ekipe SME europiane që duan IT të besueshme pa overhead enterprise.",
+    "storyP3": "Punojmë nga Holanda dhe Belgjika me sipërmarrës, freelancerë dhe ekipe SME në Azi, Europë, Emiratet e Bashkuara Arabe dhe SHBA që duan IT të besueshme pa overhead enterprise.",
     "approachTitle": "Si punojmë",
     "approachSubtitle": "Hapa të qartë, komunikim i shkurtër dhe përmirësime që mund t’i matni — pa kuti të zezë.",
     "approach1Title": "Kuptojmë",
@@ -621,7 +623,7 @@
     "pillarDesignTitle": "Design grafik",
     "pillarDesignDesc": "Logo, print dhe asete marke që përshtaten profesionalisht me praninë digjitale.",
     "serveTitle": "Me kë punojmë",
-    "serveText": "Me freelancerë, startup dhe SME të konsoliduara që duan të rriten online pa një ekip të brendshëm IT ose marketing prej dhjetë personash. Keni një pikë kontakti të qartë, propozime transparente dhe dorëzim sipas ritmit dhe buxhetit tuaj.",
+    "serveText": "Me freelancerë, startup dhe SME të konsoliduara që duan të rriten online pa një ekip të brendshëm IT ose marketing. Keni një pikë kontakti të qartë, propozime transparente dhe dorëzim sipas ritmit dhe buxhetit tuaj.",
     "whyEyebrow": "Pse",
     "why1Title": "Praktik, jo teorik",
     "why1Desc": "Këshilla që shkon deri te zbatimi — me dorëzime të qarta dhe hapa të ardhshëm.",
@@ -776,7 +778,7 @@
   },
   "locations": {
     "title": "Vendndodhjet",
-    "subtitle": "TripleZero iT mbështet bizneset në të gjithë Holandën dhe Belgjikën me integrimin e AI, AEO, GEO, SEO, marketing dhe softuer. Zgjidhni qytetin tuaj për detaje lokale.",
+    "subtitle": "TripleZero iT mbështet bizneset në Azi, Europë, Emiratet e Bashkuara Arabe dhe SHBA me integrimin e AI, AEO, GEO, SEO, marketing dhe softuer. Zgjidhni qytetin tuaj për detaje lokale.",
     "startFreeAiScan": "Filloni skanimin falas të AI",
     "allServices": "Te gjitha sherbimet",
     "breadcrumb": "Vendndodhjet",
@@ -812,6 +814,8 @@
     "title": "Lajme",
     "back": "Kthehu tek lajmet",
     "viewSource": "Shiko burimin origjinal",
+    "searchPlaceholder": "Kërko në lajme…",
+    "searchEmpty": "Nuk u gjet asnjë artikull.",
     "subtitle": "Qëndroni të përditësuar me të gjitha zhvillimet."
   },
   "agent000": {

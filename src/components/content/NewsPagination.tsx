@@ -37,6 +37,7 @@ export function NewsPagination({
   page,
   totalPages,
   labels,
+  query = "",
 }: {
   locale: string;
   page: number;
@@ -46,11 +47,18 @@ export function NewsPagination({
     next: string;
     pageOf: string;
   };
+  query?: string;
 }) {
   if (totalPages <= 1) return null;
 
-  const hrefFor = (n: number) =>
-    n <= 1 ? localizedHref(locale, "/nieuws") : `${localizedHref(locale, "/nieuws")}?page=${n}`;
+  const hrefFor = (n: number) => {
+    const base = localizedHref(locale, "/nieuws");
+    const params = new URLSearchParams();
+    if (query.trim()) params.set("q", query.trim());
+    if (n > 1) params.set("page", String(n));
+    const qs = params.toString();
+    return qs ? `${base}?${qs}` : base;
+  };
 
   const pages = buildPageList(page, totalPages);
   const prev = page > 1 ? page - 1 : null;

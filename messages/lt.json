@@ -412,7 +412,7 @@
     "topic": "Tema",
     "topicPh": "pvz. AEO elektroninei prekybai",
     "audience": "Auditorija (neprivaloma)",
-    "audiencePh": "pvz. Beniliukso mastai",
+    "audiencePh": "pvz. SVM Azijoje, Europoje, UAE ir JAV",
     "generateDraft": "Sugeneruoti juodraštį",
     "copy": "Kopijuoti",
     "output": "Išvestis",
@@ -464,7 +464,7 @@
     "subtitle": "Atraskite savo AEO, GEO (vietinis), SEO ir AI parengties balus.",
     "url": "Svetainės URL",
     "company": "Įmonės pavadinimas",
-    "goals": "Tikslai",
+    "goals": "Papildoma informacija ir pageidavimai",
     "start": "Pradėkite nuskaitymą",
     "startNew": "Pradėkite naują nuskaitymą",
     "contact": "Susisiekite su mumis",
@@ -480,7 +480,9 @@
     "resultsTitle": "AI nuskaitymo rezultatai",
     "contactTitle": "Susisiekite su AI skenavimu",
     "contactDescription": "Palikite savo duomenis – padėsime interpretuoti balus ir sudaryti planą.",
-    "contactMessageLead": "Sveiki, TripleZero iT, Atlikau AI nuskaitymą ir norėčiau aptarti rezultatus. Svetainės URL: {url} Rezultatai: {scores} Klausimas / pastabos:"
+    "contactMessageLead": "Sveiki, TripleZero iT, Atlikau AI nuskaitymą ir norėčiau aptarti rezultatus. Svetainės URL: {url} Rezultatai: {scores} Klausimas / pastabos:",
+    "country": "Šalis",
+    "audience": "Tikslinė auditorija"
   },
   "portfolio": {
     "title": "Portfelis",
@@ -574,7 +576,7 @@
   "about": {
     "eyebrow": "Apie mus",
     "title": "Apie TripleZero iT",
-    "heroSubtitle": "Padėdame Europos verslininkams ir organizacijoms augti su DI, svetainėmis, hostingu, SEO ir rinkodara — praktiškai, išmatuojamai ir be nereikalingo sudėtingumo.",
+    "heroSubtitle": "Padėdame Azijos, Europos, Jungtinių Arabų Emyratų ir JAV verslininkams ir organizacijoms augti su DI, svetainėmis, hostingu, SEO ir rinkodara — praktiškai, išmatuojamai ir be nereikalingo sudėtingumo.",
     "viewServices": "Žiūrėti paslaugas",
     "statResponseValue": "1–4 val.",
     "statResponse": "vidutinis atsakymas",
@@ -592,7 +594,7 @@
     "storyLead": "TripleZero iT yra jūsų techninis augimo partneris — nuo pirmo skenavimo iki nuolatinės optimizacijos.",
     "storyP1": "Sujungiame DI integraciją, AEO, GEO, SEO, web dizainą, WordPress priežiūrą, hostingą ir full-funnel rinkodarą į vieną požiūrį. Jūsų online buvimas išlieka greitas, saugus, randamas ir orientuotas į lead’us ar pajamas.",
     "storyP2": "Ar tai bug’as, kenkėjiška programa, migracija, našumo sprintas ar nauja augimo sistema: veikiame koncentruotai, paaiškiname kelią ir pateikiame išmatuojamus rezultatus — kad galėtumėte koncentruotis į verslą.",
-    "storyP3": "Dirbame iš Nyderlandų ir Belgijos su Europos verslininkais, freelanceriais ir SVM komandomis, norinčiomis patikimos IT be enterprise naštos.",
+    "storyP3": "Dirbame iš Nyderlandų ir Belgijos su verslininkais, freelanceriais ir SVM komandomis Azijoje, Europoje, Jungtiniuose Arabų Emyratuose ir JAV, norinčiomis patikimos IT be enterprise naštos.",
     "approachTitle": "Kaip dirbame",
     "approachSubtitle": "Aiškūs žingsniai, trumpa komunikacija ir patobulinimai, kuriuos galite išmatuoti — be juodosios dėžės.",
     "approach1Title": "Suprasti",
@@ -621,7 +623,7 @@
     "pillarDesignTitle": "Grafinis dizainas",
     "pillarDesignDesc": "Logotipai, spauda ir prekės ženklo medžiagos, profesionaliai derančios su skaitmeniniu buvimu.",
     "serveTitle": "Su kuo dirbame",
-    "serveText": "Su freelanceriais, startuoliais ir įsitvirtinusiomis SVM, norinčiomis augti online be dešimties žmonių IT ar rinkodaros komandos. Gaunate aiškų kontaktinį asmenį, skaidrius pasiūlymus ir pristatymą pagal jūsų tempą ir biudžetą.",
+    "serveText": "Su freelanceriais, startuoliais ir įsitvirtinusiomis SVM, norinčiomis augti online be vidinės IT ar rinkodaros komandos. Gaunate aiškų kontaktinį asmenį, skaidrius pasiūlymus ir pristatymą pagal jūsų tempą ir biudžetą.",
     "whyEyebrow": "Kodėl",
     "why1Title": "Praktiškai, ne teoriškai",
     "why1Desc": "Patarimai, kurie eina iki įgyvendinimo — su aiškiais rezultatais ir kitais žingsniais.",
@@ -776,7 +778,7 @@
   },
   "locations": {
     "title": "Vietos",
-    "subtitle": "„TripleZero iT“ palaiko įmones Nyderlanduose ir Belgijoje su AI integravimu, AEO, GEO, SEO, rinkodara ir programine įranga. Norėdami sužinoti daugiau apie vietinę informaciją, pasirinkite savo miestą.",
+    "subtitle": "„TripleZero iT“ palaiko įmones Azijoje, Europoje, Jungtiniuose Arabų Emyratuose ir JAV su AI integravimu, AEO, GEO, SEO, rinkodara ir programine įranga. Pasirinkite miestą vietinei informacijai.",
     "startFreeAiScan": "Pradėkite nemokamą AI nuskaitymą",
     "allServices": "Visos paslaugos",
     "breadcrumb": "Vietos",
@@ -812,6 +814,8 @@
     "title": "Naujienos",
     "back": "Atgal į naujienas",
     "viewSource": "Žiūrėti originalų šaltinį",
+    "searchPlaceholder": "Ieškoti naujienose…",
+    "searchEmpty": "Straipsnių nerasta.",
     "subtitle": "Sekite naujausią informaciją apie visus pokyčius."
   },
   "agent000": {

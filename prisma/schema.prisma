@@ -258,6 +258,8 @@ model AIScan {
   id        String     @id @default(cuid())
   url       String
   company   String?
+  country   String?
+  audience  String?
   goals     String?    @db.Text
   scanType  ScanType   @default(FULL)
   status    ScanStatus @default(PENDING)

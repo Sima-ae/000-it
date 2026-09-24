@@ -412,7 +412,7 @@
     "topic": "Subiect",
     "topicPh": "de ex. AEO pentru comerțul electronic",
     "audience": "Public (opțional)",
-    "audiencePh": "de ex. Creșterea în Benelux",
+    "audiencePh": "ex. IMM-uri în Asia, Europa, EAU și SUA",
     "generateDraft": "Generați schița",
     "copy": "Copie",
     "output": "Ieșire",
@@ -464,7 +464,7 @@
     "subtitle": "Descoperiți scorurile de pregătire AEO, GEO (local), SEO și AI.",
     "url": "Adresa URL a site-ului web",
     "company": "Numele companiei",
-    "goals": "Goluri",
+    "goals": "Informații suplimentare și dorințe",
     "start": "Începeți scanarea",
     "startNew": "Începeți o nouă scanare",
     "contact": "Contactaţi-ne",
@@ -480,7 +480,9 @@
     "resultsTitle": "Rezultatele scanării AI",
     "contactTitle": "Contact despre scanarea AI",
     "contactDescription": "Lasă-ți detaliile - te vom ajuta la interpretarea scorurilor și te vom contura un plan.",
-    "contactMessageLead": "Bună, TripleZero iT, Am efectuat o scanare AI și aș dori să discut despre rezultate. Adresa URL a site-ului web: {url} Scoruri: {scores} Întrebare/note:"
+    "contactMessageLead": "Bună, TripleZero iT, Am efectuat o scanare AI și aș dori să discut despre rezultate. Adresa URL a site-ului web: {url} Scoruri: {scores} Întrebare/note:",
+    "country": "Țară",
+    "audience": "Public țintă"
   },
   "portfolio": {
     "title": "Portofoliu",
@@ -574,7 +576,7 @@
   "about": {
     "eyebrow": "Despre noi",
     "title": "Despre TripleZero iT",
-    "heroSubtitle": "Ajutăm antreprenori și organizații din Europa să crească cu AI, site-uri, hosting, SEO și marketing — practic, măsurabil și fără complexitate inutilă.",
+    "heroSubtitle": "Ajutăm antreprenori și organizații din Asia, Europa, EAU și SUA să crească cu AI, site-uri, hosting, SEO și marketing — practic, măsurabil și fără complexitate inutilă.",
     "viewServices": "Vezi serviciile",
     "statResponseValue": "1–4 ore",
     "statResponse": "răspuns mediu",
@@ -592,7 +594,7 @@
     "storyLead": "TripleZero iT este partenerul vostru tehnic de creștere — de la primul scan la optimizare continuă.",
     "storyP1": "Combinăm integrarea AI, AEO, GEO, SEO, webdesign, îngrijirea WordPress, hosting și marketing full-funnel într-o singură abordare. Prezența online rămâne rapidă, sigură, găsibilă și orientată pe lead-uri sau venit.",
     "storyP2": "Fie bug, malware, migrare, sprint de performanță sau un sistem nou de creștere: acționăm concentrat, explicăm drumul și livrăm rezultate măsurabile — ca să vă concentrați pe business.",
-    "storyP3": "Lucrăm din Țările de Jos și Belgia cu antreprenori, freelanceri și echipe IMM din Europa care vor IT de încredere fără overhead de tip enterprise.",
+    "storyP3": "Lucrăm din Țările de Jos și Belgia cu antreprenori, freelanceri și echipe IMM din Asia, Europa, EAU și SUA care vor IT de încredere fără overhead de tip enterprise.",
     "approachTitle": "Cum lucrăm",
     "approachSubtitle": "Pași clari, comunicare scurtă și îmbunătățiri pe care le puteți măsura — fără cutie neagră.",
     "approach1Title": "Înțelege",
@@ -621,7 +623,7 @@
     "pillarDesignTitle": "Design grafic",
     "pillarDesignDesc": "Logo-uri, print și asset-uri de brand care se potrivesc profesional prezenței digitale.",
     "serveTitle": "Cu cine lucrăm",
-    "serveText": "Freelanceri, startup-uri și IMM-uri consolidate care vor să crească online fără o echipă internă de IT sau marketing de zece persoane. Aveți un punct de contact clar, propuneri transparente și livrare pe ritmul și bugetul potrivit.",
+    "serveText": "Freelanceri, startup-uri și IMM-uri consolidate care vor să crească online fără o echipă internă de IT sau marketing. Aveți un punct de contact clar, propuneri transparente și livrare pe ritmul și bugetul potrivit.",
     "whyEyebrow": "De ce",
     "why1Title": "Practic, nu teoretic",
     "why1Desc": "Consultanță care ajunge la implementare — cu livrabile clare și pași următori.",
@@ -776,7 +778,7 @@
   },
   "locations": {
     "title": "Locații",
-    "subtitle": "TripleZero iT sprijină companiile din Țările de Jos și Belgia cu integrare AI, AEO, GEO, SEO, marketing și software. Alege orașul tău pentru detalii locale.",
+    "subtitle": "TripleZero iT sprijină companiile din Asia, Europa, EAU și SUA cu integrare AI, AEO, GEO, SEO, marketing și software. Alege orașul tău pentru detalii locale.",
     "startFreeAiScan": "Începeți scanarea AI gratuită",
     "allServices": "Toate serviciile",
     "breadcrumb": "Locații",
@@ -812,6 +814,8 @@
     "title": "Ştiri",
     "back": "Înapoi la știri",
     "viewSource": "Vezi sursa originală",
+    "searchPlaceholder": "Caută în știri…",
+    "searchEmpty": "Nu au fost găsite articole.",
     "subtitle": "Fii la curent cu toate evoluțiile."
   },
   "agent000": {

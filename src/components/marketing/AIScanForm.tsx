@@ -16,6 +16,8 @@ import { ServiceInquiryDialog } from "@/components/marketing/ServiceInquiryDialo
 const schema = z.object({
   url: z.string().url(),
   company: z.string().optional(),
+  country: z.string().optional(),
+  audience: z.string().optional(),
   goals: z.string().optional(),
 });
 
@@ -38,7 +40,7 @@ export function AIScanForm() {
 
   const form = useForm<FormValues>({
     resolver: zodResolver(schema),
-    defaultValues: { url: "https://", company: "", goals: "" },
+    defaultValues: { url: "https://", company: "", country: "", audience: "", goals: "" },
   });
 
   async function onSubmit(values: FormValues) {
@@ -137,6 +139,14 @@ export function AIScanForm() {
         <div className="space-y-2">
           <Label htmlFor="company">{t("company")}</Label>
           <Input id="company" {...form.register("company")} />
+        </div>
+        <div className="space-y-2">
+          <Label htmlFor="country">{t("country")}</Label>
+          <Input id="country" {...form.register("country")} />
+        </div>
+        <div className="space-y-2">
+          <Label htmlFor="audience">{t("audience")}</Label>
+          <Input id="audience" {...form.register("audience")} />
         </div>
         <div className="space-y-2">
           <Label htmlFor="goals">{t("goals")}</Label>

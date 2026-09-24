@@ -412,7 +412,7 @@
     "topic": "Téma",
     "topicPh": "napr. AEO pre elektronický obchod",
     "audience": "publikum (voliteľné)",
-    "audiencePh": "napr. Benelux scale-ups",
+    "audiencePh": "napr. SME v Ázii, Európe, SAE a USA",
     "generateDraft": "Generovať koncept",
     "copy": "Kopírovať",
     "output": "Výstup",
@@ -464,7 +464,7 @@
     "subtitle": "Objavte svoje skóre pripravenosti AEO, GEO (miestne), SEO a AI.",
     "url": "URL webovej stránky",
     "company": "Názov spoločnosti",
-    "goals": "Ciele",
+    "goals": "Ďalšie informácie a želania",
     "start": "Spustite skenovanie",
     "startNew": "Spustite nové skenovanie",
     "contact": "Kontaktujte nás",
@@ -480,7 +480,9 @@
     "resultsTitle": "Výsledky skenovania AI",
     "contactTitle": "Kontakt o skenovaní AI",
     "contactDescription": "Nechajte svoje podrobnosti – pomôžeme vám interpretovať skóre a načrtneme plán.",
-    "contactMessageLead": "Ahoj TripleZero iT, Spustil som skenovanie AI a rád by som prediskutoval výsledky. URL webovej stránky: {url} Skóre: {scores} Otázka / poznámky:"
+    "contactMessageLead": "Ahoj TripleZero iT, Spustil som skenovanie AI a rád by som prediskutoval výsledky. URL webovej stránky: {url} Skóre: {scores} Otázka / poznámky:",
+    "country": "Krajina",
+    "audience": "Cieľová skupina"
   },
   "portfolio": {
     "title": "Portfólio",
@@ -574,7 +576,7 @@
   "about": {
     "eyebrow": "O nás",
     "title": "O TripleZero iT",
-    "heroSubtitle": "Pomáhame podnikateľom a organizáciám v Európe rásť s AI, webmi, hostingom, SEO a marketingom — prakticky, merateľne a bez zbytočnej zložitosti.",
+    "heroSubtitle": "Pomáhame podnikateľom a organizáciám v Ázii, Európe, SAE a USA rásť s AI, webmi, hostingom, SEO a marketingom — prakticky, merateľne a bez zbytočnej zložitosti.",
     "viewServices": "Zobraziť služby",
     "statResponseValue": "1–4 hod.",
     "statResponse": "priemerná odozva",
@@ -592,7 +594,7 @@
     "storyLead": "TripleZero iT je váš technický partner rastu — od prvého skenu po priebežnú optimalizáciu.",
     "storyP1": "Spojujeme integraci AI, AEO, GEO, SEO, webdesign, péči o WordPress, hosting a full-funnel marketing v jednom přístupu. Vaše online přítomnost zůstává rychlá, bezpečná, dohledatelná a zaměřená na leady nebo tržby.",
     "storyP2": "Ať jde o bug, malware, migraci, performance sprint nebo nový růstový systém: jedeme s fokusem, vysvětlujeme cestu a dodáváme měřitelné výsledky — abyste se mohli soustředit na byznys.",
-    "storyP3": "Pracujeme z Nizozemska a Belgie s evropskými podnikateli, freelancery a týmy SME, které chtějí spolehlivé IT bez enterprise overheadu.",
+    "storyP3": "Pracujeme z Holandska a Belgicka s podnikateľmi, freelancerami a SME tímami v Ázii, Európe, SAE a USA, ktorí chcú spoľahlivé IT bez enterprise overheadu.",
     "approachTitle": "Ako pracujeme",
     "approachSubtitle": "Jasné kroky, krátká komunikace a zlepšení, která můžete měřit — žádná black box.",
     "approach1Title": "Pochopit",
@@ -621,7 +623,7 @@
     "pillarDesignTitle": "Grafický design",
     "pillarDesignDesc": "Loga, tisk a brand materiály profesionálně laděné s digitální přítomností.",
     "serveTitle": "Pre koho pracujeme",
-    "serveText": "Pro freelancery, startupy a zavedené SME, které chtějí růst online bez interního IT nebo marketingového týmu o deseti lidech. Máte jasný kontakt, transparentní nabídky a dodávku v tempu a rozpočtu, který sedí.",
+    "serveText": "Pre freelancerov, startupy a zavedené SME, ktoré chcú rásť online bez interného IT alebo marketingového tímu. Máte jasný kontakt, transparentné ponuky a dodávku v tempe a rozpočte, ktorý sedí.",
     "whyEyebrow": "Prečo",
     "why1Title": "Prakticky, ne teoreticky",
     "why1Desc": "Poradenství, které dojde k implementaci — s jasnými deliverables a dalšími kroky.",
@@ -776,7 +778,7 @@
   },
   "locations": {
     "title": "Miesta",
-    "subtitle": "TripleZero iT podporuje podniky v Holandsku a Belgicku s integráciou AI, AEO, GEO, SEO, marketingom a softvérom. Vyber si mesto pre miestne podrobnosti.",
+    "subtitle": "TripleZero iT podporuje podniky v Ázii, Európe, SAE a USA s integráciou AI, AEO, GEO, SEO, marketingom a softvérom. Vyber si mesto pre miestne podrobnosti.",
     "startFreeAiScan": "Spustite bezplatné skenovanie AI",
     "allServices": "Všetky služby",
     "breadcrumb": "Miesta",
@@ -812,6 +814,8 @@
     "title": "Správy",
     "back": "Späť k novinkám",
     "viewSource": "Zobraziť pôvodný zdroj",
+    "searchPlaceholder": "Hľadať v novinkách…",
+    "searchEmpty": "Nenašli sa žiadne články.",
     "subtitle": "Buďte informovaní o všetkom vývoji."
   },
   "agent000": {

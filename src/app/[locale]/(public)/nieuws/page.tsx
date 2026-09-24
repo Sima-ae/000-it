@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Reveal } from "@/components/marketing/Reveal";
 import { NewsGrid } from "@/components/content/NewsGrid";
 import { NewsPagination } from "@/components/content/NewsPagination";
+import { NewsSearch } from "@/components/content/NewsSearch";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { listNewsPostsPage, NEWS_PAGE_SIZE } from "@/lib/news";
 import {
@@ -19,7 +20,7 @@ export async function generateMetadata({
   searchParams,
 }: {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<{ page?: string }>;
+  searchParams: Promise<{ page?: string; q?: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
   const { page: pageParam } = await searchParams;
@@ -32,19 +33,21 @@ export default async function NieuwsPage({
   searchParams,
 }: {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<{ page?: string }>;
+  searchParams: Promise<{ page?: string; q?: string }>;
 }) {
   const { locale } = await params;
-  const { page: pageParam } = await searchParams;
+  const { page: pageParam, q: qParam } = await searchParams;
   setRequestLocale(locale);
   const tNav = await getTranslations("nav");
   const t = await getTranslations("news");
 
+  const query = (qParam || "").trim();
   const requestedPage = Math.max(1, Number.parseInt(pageParam || "1", 10) || 1);
   const { items, page, totalPages } = await listNewsPostsPage({
     locale,
     page: requestedPage,
     pageSize: NEWS_PAGE_SIZE,
+    q: query,
   });
 
   const paginationLabels = {
@@ -72,25 +75,36 @@ export default async function NieuwsPage({
       </Reveal>
 
       <div className="mt-8">
+        <NewsSearch initialQuery={query} placeholder={t("searchPlaceholder")} />
+      </div>
+
+      <div className="mt-6">
         <NewsPagination
           locale={locale}
           page={page}
           totalPages={totalPages}
           labels={paginationLabels}
+          query={query}
         />
       </div>
 
-      <NewsGrid
-        locale={locale}
-        items={items}
-        labels={{
-          client: t("author"),
-          date: t("date"),
-          industry: t("category"),
-          visit: t("openLink"),
-          readMore: t("readArticle"),
-        }}
-      />
+      {items.length ? (
+        <NewsGrid
+          locale={locale}
+          items={items}
+          labels={{
+            client: t("author"),
+            date: t("date"),
+            industry: t("category"),
+            visit: t("openLink"),
+            readMore: t("readArticle"),
+          }}
+        />
+      ) : (
+        <p className="mt-6 rounded-2xl border border-dashed border-border/70 px-5 py-10 text-center text-sm text-muted-foreground">
+          {t("searchEmpty")}
+        </p>
+      )}
 
       <div className="mt-10">
         <NewsPagination
@@ -98,6 +112,7 @@ export default async function NieuwsPage({
           page={page}
           totalPages={totalPages}
           labels={paginationLabels}
+          query={query}
         />
       </div>
     </div>

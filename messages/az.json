@@ -412,7 +412,7 @@
     "topic": "Mövzu",
     "topicPh": "məs. Elektron ticarət üçün AEO",
     "audience": "Auditoriya (isteğe bağlı)",
-    "audiencePh": "məs. Benilüks miqyası böyüdü",
+    "audiencePh": "məs. Asiya, Avropa, BƏƏ və ABŞ-dakı KOBİ-lər",
     "generateDraft": "Qaralama yaradın",
     "copy": "Kopyalayın",
     "output": "Çıxış",
@@ -464,7 +464,7 @@
     "subtitle": "AEO, GEO (yerli), SEO və AI hazırlıq ballarınızı kəşf edin.",
     "url": "Veb sayt URL",
     "company": "Şirkət adı",
-    "goals": "Məqsədlər",
+    "goals": "Əlavə məlumat və istəklər",
     "start": "Skan etməyə başlayın",
     "startNew": "Yeni skan etməyə başlayın",
     "contact": "Bizimlə əlaqə saxlayın",
@@ -480,7 +480,9 @@
     "resultsTitle": "AI tarama nəticələri",
     "contactTitle": "AI taraması ilə bağlı əlaqə saxlayın",
     "contactDescription": "Təfərrüatlarınızı buraxın — biz xalları şərh etməyə və planı tərtib etməyə kömək edəcəyik.",
-    "contactMessageLead": "Salam TripleZero iT, Mən AI taraması keçirmişəm və nəticələri müzakirə etmək istərdim. Veb sayt URL: {url} Xallar: {scores} Sual / Qeyd:"
+    "contactMessageLead": "Salam TripleZero iT, Mən AI taraması keçirmişəm və nəticələri müzakirə etmək istərdim. Veb sayt URL: {url} Xallar: {scores} Sual / Qeyd:",
+    "country": "Ölkə",
+    "audience": "Hədəf auditoriya"
   },
   "portfolio": {
     "title": "Portfolio",
@@ -574,7 +576,7 @@
   "about": {
     "eyebrow": "Haqqımızda",
     "title": "TripleZero iT haqqında",
-    "heroSubtitle": "Avropada sahibkarlara və təşkilatlara AI, vebsaytlar, hosting, SEO və marketinq ilə böyüməkdə kömək edirik — praktiki, ölçülə bilən və lazımsız mürəkkəblik olmadan.",
+    "heroSubtitle": "Asiya, Avropa, BƏƏ və ABŞ-da sahibkarlara və təşkilatlara AI, vebsaytlar, hosting, SEO və marketinq ilə böyüməkdə kömək edirik — praktiki, ölçülə bilən və lazımsız mürəkkəblik olmadan.",
     "viewServices": "Xidmətlərə bax",
     "statResponseValue": "1–4 saat",
     "statResponse": "orta cavab",
@@ -592,7 +594,7 @@
     "storyLead": "TripleZero iT sizin texniki böyümə tərəfdaşınızdır — ilk skandan davamlı optimallaşdırmaya.",
     "storyP1": "AI inteqrasiyası, AEO, GEO, SEO, vebdizayn, WordPress qayğısı, hosting və full-funnel marketinqi bir yanaşmada birləşdiririk. Onlayn mövcudluğunuz sürətli, təhlükəsiz, tapıla bilən və lead və ya gəlirə fokuslu qalır.",
     "storyP2": "İstər səhv, zərərli proqram, miqrasiya, performans sprinti, istərsə də yeni böyümə sistemi olsun: fokusla hərəkət edir, yolu izah edir və ölçülə bilən nəticə təqdim edirik — siz biznesinizə fokuslanın.",
-    "storyP3": "Hollandiya və Belçikadan, etibarlı IT istəyən Avropa sahibkarları, frilanserlar və KOBİ komandaları ilə enterprise yükü olmadan işləyirik.",
+    "storyP3": "Hollandiya və Belgikadan Asiya, Avropa, BƏƏ və ABŞ-dakı sahibkarlar, frilanserlar və KOBİ komandaları ilə işləyirik — etibarlı IT istəyənlər, enterprise yükü olmadan.",
     "approachTitle": "Necə işləyirik",
     "approachSubtitle": "Aydın addımlar, qısa kommunikasiya və ölçə biləcəyiniz təkmilləşdirmələr — qara qutu yoxdur.",
     "approach1Title": "Anlamaq",
@@ -621,7 +623,7 @@
     "pillarDesignTitle": "Qrafik dizayn",
     "pillarDesignDesc": "Rəqəmsal mövcudluğunuza peşəkarca uyğun loqolar, çap və brend aktivləri.",
     "serveTitle": "Kimlərlə işləyirik",
-    "serveText": "On nəfərlik daxili IT və ya marketinq komandası olmadan onlayn böyümək istəyən frilanserlar, startaplar və möhkəmlənmiş KOBİ-lərlə. Aydın əlaqə nöqtəsi, şəffaf təkliflər və tempinizə və büdcənizə uyğun təslim alırsınız.",
+    "serveText": "Daxili IT və ya marketinq komandası olmadan onlayn böyümək istəyən frilanserlar, startaplar və möhkəmlənmiş KOBİ-lərlə. Aydın əlaqə nöqtəsi, şəffaf təkliflər və tempinizə və büdcənizə uyğun təslim alırsınız.",
     "whyEyebrow": "Niyə",
     "why1Title": "Praktiki, nəzəri deyil",
     "why1Desc": "Tətbiqə qədər gedən məsləhət — aydın təslimlər və növbəti addımlarla.",
@@ -776,7 +778,7 @@
   },
   "locations": {
     "title": "Məkanlar",
-    "subtitle": "TripleZero iT, AI inteqrasiyası, AEO, GEO, SEO, marketinq və proqram təminatı ilə Hollandiya və Belçikadakı biznesləri dəstəkləyir. Yerli təfərrüatlar üçün şəhərinizi seçin.",
+    "subtitle": "TripleZero iT Asiya, Avropa, BƏƏ və ABŞ-dakı biznesləri AI inteqrasiyası, AEO, GEO, SEO, marketinq və proqram təminatı ilə dəstəkləyir. Yerli detallar üçün şəhərinizi seçin.",
     "startFreeAiScan": "Pulsuz AI taramasına başlayın",
     "allServices": "Bütün xidmətlər",
     "breadcrumb": "Məkanlar",
@@ -812,6 +814,8 @@
     "title": "Xəbərlər",
     "back": "Xəbərlərə qayıt",
     "viewSource": "Orijinal mənbəyə baxın",
+    "searchPlaceholder": "Xəbərlərdə axtar…",
+    "searchEmpty": "Məqalə tapılmadı.",
     "subtitle": "Bütün inkişaflardan xəbərdar olun."
   },
   "agent000": {

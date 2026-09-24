@@ -412,7 +412,7 @@
     "topic": "Temat",
     "topicPh": "np. AEO dla handlu elektronicznego",
     "audience": "Odbiorcy (opcjonalnie)",
-    "audiencePh": "np. Skalowanie w krajach Beneluksu",
+    "audiencePh": "np. MŚP w Azji, Europie, ZEA i USA",
     "generateDraft": "Wygeneruj wersję roboczą",
     "copy": "Kopia",
     "output": "Wyjście",
@@ -464,7 +464,7 @@
     "subtitle": "Odkryj swoje wyniki gotowości AEO, GEO (lokalnie), SEO i AI.",
     "url": "Adres URL witryny",
     "company": "Nazwa firmy",
-    "goals": "Cele",
+    "goals": "Dodatkowe informacje i życzenia",
     "start": "Rozpocznij skanowanie",
     "startNew": "Rozpocznij nowe skanowanie",
     "contact": "Skontaktuj się z nami",
@@ -480,7 +480,9 @@
     "resultsTitle": "Wyniki skanowania AI",
     "contactTitle": "Kontakt w sprawie skanowania AI",
     "contactDescription": "Zostaw swoje dane – pomożemy zinterpretować wyniki i nakreślimy plan.",
-    "contactMessageLead": "Cześć TripleZero iT, Przeprowadziłem skanowanie AI i chciałbym omówić wyniki. Adres URL witryny: {url} Wyniki: {scores} Pytanie/uwagi:"
+    "contactMessageLead": "Cześć TripleZero iT, Przeprowadziłem skanowanie AI i chciałbym omówić wyniki. Adres URL witryny: {url} Wyniki: {scores} Pytanie/uwagi:",
+    "country": "Kraj",
+    "audience": "Grupa docelowa"
   },
   "portfolio": {
     "title": "Portfel",
@@ -574,7 +576,7 @@
   "about": {
     "eyebrow": "O nas",
     "title": "O TripleZero iT",
-    "heroSubtitle": "Pomagamy przedsiębiorcom i organizacjom w Europie rosnąć dzięki AI, stronom, hostingowi, SEO i marketingowi — praktycznie, mierzalnie i bez zbędnej złożoności.",
+    "heroSubtitle": "Pomagamy przedsiębiorcom i organizacjom w Azji, Europie, ZEA i USA rosnąć dzięki AI, stronom, hostingowi, SEO i marketingowi — praktycznie, mierzalnie i bez zbędnej złożoności.",
     "viewServices": "Zobacz usługi",
     "statResponseValue": "1–4 godz.",
     "statResponse": "średni czas odpowiedzi",
@@ -592,7 +594,7 @@
     "storyLead": "TripleZero iT to Wasz techniczny partner wzrostu — od pierwszego skanu po ciągłą optymalizację.",
     "storyP1": "Łączymy integrację AI, AEO, GEO, SEO, webdesign, opiekę WordPress, hosting i marketing full-funnel w jednym podejściu. Wasza obecność online pozostaje szybka, bezpieczna, widoczna i ukierunkowana na leady lub przychód.",
     "storyP2": "Czy to bug, malware, migracja, sprint wydajnościowy czy nowy system wzrostu: działamy z fokusem, wyjaśniamy drogę i dostarczamy mierzalne rezultaty — żebyście mogli skupić się na biznesie.",
-    "storyP3": "Pracujemy z Holandii i Belgii z europejskimi przedsiębiorcami, freelancersami i zespołami MŚP, które chcą niezawodnego IT bez enterprise’owego narzutu.",
+    "storyP3": "Pracujemy z Holandii i Belgii z przedsiębiorcami, freelancerami i zespołami MŚP w Azji, Europie, ZEA i USA, które chcą niezawodnego IT bez enterprise-overhead.",
     "approachTitle": "Jak pracujemy",
     "approachSubtitle": "Jasne kroki, krótkie linie komunikacji i ulepszenia, które możecie zmierzyć — bez czarnej skrzynki.",
     "approach1Title": "Zrozumieć",
@@ -621,7 +623,7 @@
     "pillarDesignTitle": "Grafika",
     "pillarDesignDesc": "Logotypy, druk i materiały marki spójne z Waszą obecnością cyfrową.",
     "serveTitle": "Dla kogo pracujemy",
-    "serveText": "Dla freelancerów, startupów i ugruntowanych MŚP, które chcą rosnąć online bez dziesięcioosobowego zespołu IT lub marketingu. Macie jasny punkt kontaktu, przejrzyste oferty i realizację dopasowaną do tempa i budżetu.",
+    "serveText": "Dla freelancerów, startupów i ugruntowanych MŚP, które chcą rosnąć online bez wewnętrznego zespołu IT lub marketingu. Macie jasny punkt kontaktu, przejrzyste oferty i realizację dopasowaną do tempa i budżetu.",
     "whyEyebrow": "Dlaczego",
     "why1Title": "Praktycznie, nie teoretycznie",
     "why1Desc": "Doradztwo, które przechodzi w wdrożenie — z jasnymi deliverables i kolejnymi krokami.",
@@ -776,7 +778,7 @@
   },
   "locations": {
     "title": "Lokalizacje",
-    "subtitle": "TripleZero iT wspiera firmy w Holandii i Belgii w zakresie integracji AI, AEO, GEO, SEO, marketingu i oprogramowania. Wybierz swoje miasto, aby uzyskać szczegółowe informacje lokalne.",
+    "subtitle": "TripleZero iT wspiera firmy w Azji, Europie, ZEA i USA w zakresie integracji AI, AEO, GEO, SEO, marketingu i oprogramowania. Wybierz swoje miasto, aby uzyskać szczegółowe informacje lokalne.",
     "startFreeAiScan": "Rozpocznij bezpłatne skanowanie AI",
     "allServices": "Wszystkie usługi",
     "breadcrumb": "Lokalizacje",
@@ -812,6 +814,8 @@
     "title": "Aktualności",
     "back": "Powrót do wiadomości",
     "viewSource": "Zobacz oryginalne źródło",
+    "searchPlaceholder": "Szukaj w aktualnościach…",
+    "searchEmpty": "Nie znaleziono artykułów.",
     "subtitle": "Bądź na bieżąco ze wszystkimi wydarzeniami."
   },
   "agent000": {

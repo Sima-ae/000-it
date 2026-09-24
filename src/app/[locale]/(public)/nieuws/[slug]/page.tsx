@@ -123,8 +123,8 @@ export default async function NewsArticlePage({
       {/* Hidden but crawlable keyword/geo hints for older crawlers */}
       <div className="sr-only">
         <p>{publicNewsTags(post.tags).join(", ")}</p>
-        <p>Nederland, Netherlands, NL, TripleZero iT, AI</p>
-        <address>TripleZero iT, Nederland</address>
+        <p>Asia, Europe, UAE, USA, Azië, Europa, VAE, Nederland, Netherlands, TripleZero iT, AI</p>
+        <address>TripleZero iT — Asia, Europe, UAE, USA</address>
       </div>
     </article>
   );

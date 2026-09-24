@@ -412,7 +412,7 @@
     "topic": "Thema",
     "topicPh": "z.B. AEO für E-Commerce",
     "audience": "Zielgruppe (optional)",
-    "audiencePh": "z.B. Benelux-Scale-Ups",
+    "audiencePh": "z. B. KMU in Asien, Europa, den VAE und den USA",
     "generateDraft": "Entwurf erstellen",
     "copy": "Kopie",
     "output": "Ausgabe",
@@ -464,7 +464,7 @@
     "subtitle": "Entdecke deine Bereitschaftswerte AEO, GEO (lokal), SEO und AI.",
     "url": "Website-URL",
     "company": "Firmenname",
-    "goals": "Ziele",
+    "goals": "Zusätzliche Informationen und Wünsche",
     "start": "Scan starten",
     "startNew": "Starte einen neuen Scan",
     "contact": "Kontaktiere uns",
@@ -480,7 +480,9 @@
     "resultsTitle": "Ergebnisse des KI-Scans",
     "contactTitle": "Kontakt zum KI-Scan",
     "contactDescription": "Hinterlasse deine Daten – wir helfen dir bei der Interpretation der Ergebnisse und entwerfen einen Plan.",
-    "contactMessageLead": "Hallo TripleZero iT, Ich habe einen KI-Scan durchgeführt und möchte die Ergebnisse besprechen. Website-URL: {url} Ergebnisse: {scores} Frage/Anmerkungen:"
+    "contactMessageLead": "Hallo TripleZero iT, Ich habe einen KI-Scan durchgeführt und möchte die Ergebnisse besprechen. Website-URL: {url} Ergebnisse: {scores} Frage/Anmerkungen:",
+    "country": "Land",
+    "audience": "Zielgruppe"
   },
   "portfolio": {
     "title": "Portfolio",
@@ -574,7 +576,7 @@
   "about": {
     "eyebrow": "Über uns",
     "title": "Über TripleZero iT",
-    "heroSubtitle": "Wir helfen Unternehmern und Organisationen in Europa, mit KI, Websites, Hosting, SEO und Marketing zu wachsen — praxisnah, messbar und ohne unnötige Komplexität.",
+    "heroSubtitle": "Wir helfen Unternehmern und Organisationen in Asien, Europa, den VAE und den USA, mit KI, Websites, Hosting, SEO und Marketing zu wachsen — praxisnah, messbar und ohne unnötige Komplexität.",
     "viewServices": "Leistungen ansehen",
     "statResponseValue": "1–4 Std.",
     "statResponse": "durchschnittliche Antwort",
@@ -592,7 +594,7 @@
     "storyLead": "TripleZero iT ist Ihr technischer Wachstumspartner — vom ersten Scan bis zur laufenden Optimierung.",
     "storyP1": "Wir verbinden KI-Integration, AEO, GEO, SEO, Webdesign, WordPress-Care, Hosting und Full-Funnel-Marketing in einem Ansatz. Ihre Online-Präsenz bleibt schnell, sicher, auffindbar und auf Leads oder Umsatz ausgerichtet.",
     "storyP2": "Ob Bug, Malware, Migration, Performance-Sprint oder neues Wachstumssystem: Wir handeln fokussiert, erklären den Weg und liefern messbare Ergebnisse — damit Sie sich auf Ihr Business konzentrieren können.",
-    "storyP3": "Wir arbeiten aus den Niederlanden und Belgien mit europäischen Unternehmern, Freiberuflern und KMU-Teams, die zuverlässige IT ohne Enterprise-Overhead wollen.",
+    "storyP3": "Wir arbeiten aus den Niederlanden und Belgien mit Unternehmern, Freiberuflern und KMU-Teams in Asien, Europa, den VAE und den USA, die zuverlässige IT ohne Enterprise-Overhead wollen.",
     "approachTitle": "Unser Vorgehen",
     "approachSubtitle": "Klare Schritte, kurze Wege und Verbesserungen, die Sie messen können — keine Blackbox.",
     "approach1Title": "Verstehen",
@@ -621,7 +623,7 @@
     "pillarDesignTitle": "Grafikdesign",
     "pillarDesignDesc": "Logos, Print und Markenassets, die professionell zu Ihrer digitalen Präsenz passen.",
     "serveTitle": "Für wen wir arbeiten",
-    "serveText": "Für Freiberufler, Start-ups und etablierte KMU, die online wachsen wollen — ohne ein internes IT- oder Marketingteam von zehn Personen. Sie bekommen einen klaren Ansprechpartner, transparente Angebote und Umsetzung im passenden Tempo und Budget.",
+    "serveText": "Für Freiberufler, Start-ups und etablierte KMU, die online wachsen wollen — ohne ein internes IT- oder Marketingteam. Sie bekommen einen klaren Ansprechpartner, transparente Angebote und Umsetzung im passenden Tempo und Budget.",
     "whyEyebrow": "Warum",
     "why1Title": "Praktisch, nicht theoretisch",
     "why1Desc": "Beratung, die in Umsetzung übergeht — mit klaren Deliverables und nächsten Schritten.",
@@ -776,7 +778,7 @@
   },
   "locations": {
     "title": "Standorte",
-    "subtitle": "TripleZero iT unterstützt Unternehmen in den Niederlanden und Belgien mit KI-Integration, AEO, GEO, SEO, Marketing und Software. Wähle deine Stadt aus, um lokale Informationen zu erhalten.",
+    "subtitle": "TripleZero iT unterstützt Unternehmen in Asien, Europa, den VAE und den USA mit KI-Integration, AEO, GEO, SEO, Marketing und Software. Wähle deine Stadt aus, um lokale Informationen zu erhalten.",
     "startFreeAiScan": "Starte den kostenlosen KI-Scan",
     "allServices": "Alle Dienstleistungen",
     "breadcrumb": "Standorte",
@@ -812,6 +814,8 @@
     "title": "Nachricht",
     "back": "Zurück zu den Neuigkeiten",
     "viewSource": "Originalquelle ansehen",
+    "searchPlaceholder": "In den Nachrichten suchen…",
+    "searchEmpty": "Keine Artikel gefunden.",
     "subtitle": "Bleib über alle Entwicklungen auf dem Laufenden."
   },
   "agent000": {

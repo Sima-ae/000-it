@@ -25,6 +25,10 @@ const CORE_NL = [
   "SEO",
   "AI-integratie",
   "online marketing",
+  "Azië",
+  "Europa",
+  "VAE",
+  "USA",
   "Nederland",
   "België",
 ];
@@ -36,6 +40,10 @@ const CORE_EN = [
   "SEO",
   "AI integration",
   "online marketing",
+  "Asia",
+  "Europe",
+  "UAE",
+  "USA",
   "Netherlands",
   "Belgium",
 ];
@@ -164,8 +172,8 @@ export const staticPageSeo: PageSeo[] = [
       en: "About TripleZero iT — AI, websites, hosting & growth",
     },
     description: {
-      nl: "Leer TripleZero iT kennen: praktische AI-groei, websites, WordPress, hosting, SEO en marketing voor ondernemers in Europa — zero giswerk, meetbaar resultaat.",
-      en: "Meet TripleZero iT: practical AI growth, websites, WordPress, hosting, SEO and marketing for entrepreneurs across Europe — zero guesswork, measurable results.",
+      nl: "Leer TripleZero iT kennen: praktische AI-groei, websites, WordPress, hosting, SEO en marketing voor ondernemers in Azië, Europa, de VAE en de USA — zero giswerk, meetbaar resultaat.",
+      en: "Meet TripleZero iT: practical AI growth, websites, WordPress, hosting, SEO and marketing for entrepreneurs across Asia, Europe, the UAE and the USA — zero guesswork, measurable results.",
     },
     keywords: {
       nl: [...CORE_NL, "over ons", "missie", "visie", "TripleZero", "aanpak"],

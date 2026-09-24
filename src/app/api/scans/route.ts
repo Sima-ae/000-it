@@ -8,6 +8,8 @@ import { canDelete } from "@/lib/roles";
 const schema = z.object({
   url: z.string().url(),
   company: z.string().optional(),
+  country: z.string().optional(),
+  audience: z.string().optional(),
   goals: z.string().optional(),
 });
 
@@ -39,6 +41,8 @@ export async function POST(request: Request) {
       data: {
         url: parsed.data.url,
         company: parsed.data.company,
+        country: parsed.data.country,
+        audience: parsed.data.audience,
         goals: parsed.data.goals,
         scanType: "FULL",
         status: "COMPLETED",

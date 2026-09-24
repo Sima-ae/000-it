@@ -412,7 +412,7 @@
     "topic": "Aihe",
     "topicPh": "esim. AEO sähköiseen kaupankäyntiin",
     "audience": "Yleisö (valinnainen)",
-    "audiencePh": "esim. Benelux-maiden laajennukset",
+    "audiencePh": "esim. pk-yritykset Aasiassa, Euroopassa, UAE:ssa ja USA:ssa",
     "generateDraft": "Luo luonnos",
     "copy": "Kopioida",
     "output": "Lähtö",
@@ -464,7 +464,7 @@
     "subtitle": "Löydä AEO, GEO (paikallinen), SEO ja AI valmiuspisteesi.",
     "url": "Verkkosivuston URL-osoite",
     "company": "Yrityksen nimi",
-    "goals": "Maalit",
+    "goals": "Lisätiedot ja toiveet",
     "start": "Aloita skannaus",
     "startNew": "Aloita uusi skannaus",
     "contact": "Ota yhteyttä",
@@ -480,7 +480,9 @@
     "resultsTitle": "AI-skannauksen tulokset",
     "contactTitle": "Ota yhteyttä tekoälyskannaukseen liittyen",
     "contactDescription": "Jätä tietosi – autamme tulkitsemaan pisteet ja laatimaan suunnitelman.",
-    "contactMessageLead": "Hei TripleZero iT, Olen suorittanut tekoälyskannauksen ja haluaisin keskustella tuloksista. Verkkosivuston URL-osoite: {url} Pisteet: {scores} Kysymys / huomautukset:"
+    "contactMessageLead": "Hei TripleZero iT, Olen suorittanut tekoälyskannauksen ja haluaisin keskustella tuloksista. Verkkosivuston URL-osoite: {url} Pisteet: {scores} Kysymys / huomautukset:",
+    "country": "Maa",
+    "audience": "Kohderyhmä"
   },
   "portfolio": {
     "title": "Portfolio",
@@ -574,7 +576,7 @@
   "about": {
     "eyebrow": "Tietoa meistä",
     "title": "Tietoa TripleZero iT:stä",
-    "heroSubtitle": "Autamme yrittäjiä ja organisaatioita Euroopassa kasvamaan AI:n, verkkosivujen, hostingin, SEO:n ja markkinoinnin avulla — käytännöllisesti, mitattavasti ja ilman turhaa monimutkaisuutta.",
+    "heroSubtitle": "Autamme yrittäjiä ja organisaatioita Aasiassa, Euroopassa, Arabiemiirikunnissa ja USA:ssa kasvamaan AI:n, verkkosivujen, hostingin, SEO:n ja markkinoinnin avulla — käytännöllisesti, mitattavasti ja ilman turhaa monimutkaisuutta.",
     "viewServices": "Katso palvelut",
     "statResponseValue": "1–4 t",
     "statResponse": "keskimääräinen vastaus",
@@ -592,7 +594,7 @@
     "storyLead": "TripleZero iT on tekninen kasvukumppaninne — ensimmäisestä skannauksesta jatkuvaan optimointiin.",
     "storyP1": "Yhdistämme AI-integraation, AEO:n, GEO:n, SEO:n, webdesignin, WordPress-huollon, hostingin ja full-funnel-markkinoinnin yhdeksi lähestymistavaksi. Online-näkyvyytenne pysyy nopeana, turvallisena, löydettävänä ja lead- tai liikevaihtokeskeisenä.",
     "storyP2": "Oli kyse bugista, haittaohjelmasta, migraatiosta, performance-sprintistä tai uudesta kasvujärjestelmästä: toimimme fokuksella, selitämme polun ja toimitamme mitattavia tuloksia — jotta voitte keskittyä bisnekseen.",
-    "storyP3": "Työskentelemme Alankomaista ja Belgiasta eurooppalaisten yrittäjien, freelancereiden ja pk-tiimien kanssa, jotka haluavat luotettavaa IT:tä ilman enterprise-ylikuormaa.",
+    "storyP3": "Työskentelemme Alankomaista ja Belgiasta käsin yrittäjien, freelancerien ja pk-tiimien kanssa Aasiassa, Euroopassa, Arabiemiirikunnissa ja USA:ssa, jotka haluavat luotettavaa IT:tä ilman enterprise-kuormaa.",
     "approachTitle": "Miten työskentelemme",
     "approachSubtitle": "Selkeät askeleet, lyhyet viestiketjut ja mittavat parannukset — ei black boxia.",
     "approach1Title": "Ymmärtää",
@@ -621,7 +623,7 @@
     "pillarDesignTitle": "Graafinen suunnittelu",
     "pillarDesignDesc": "Logot, printti ja brändimateriaalit, jotka sopivat digitaaliseen läsnäoloonne.",
     "serveTitle": "Keille työskentelemme",
-    "serveText": "Freelancereille, startupeille ja vakiintuneille pk-yrityksille, jotka haluavat kasvaa verkossa ilman kymmenen hengen IT- tai markkinointitiimiä. Saatte selkeän yhteyshenkilön, läpinäkyvät ehdotukset ja toimituksen oikeassa tahdissa ja budjetissa.",
+    "serveText": "Freelancereille, startupeille ja vakiintuneille pk-yrityksille, jotka haluavat kasvaa verkossa ilman sisäistä IT- tai markkinointitiimiä. Saatte selkeän yhteyshenkilön, läpinäkyvät ehdotukset ja toimituksen oikeassa tahdissa ja budjetissa.",
     "whyEyebrow": "Miksi",
     "why1Title": "Käytännöllistä, ei teoreettista",
     "why1Desc": "Neuvonta, joka jatkuu toteutukseen — selkein toimituksin ja seuraavin askelin.",
@@ -776,7 +778,7 @@
   },
   "locations": {
     "title": "Sijainnit",
-    "subtitle": "TripleZero iT tukee yrityksiä kaikkialla Alankomaissa ja Belgiassa tekoälyintegraation, AEO:n, GEO:n, SEO:n, markkinoinnin ja ohjelmistojen avulla. Valitse kaupunkisi saadaksesi paikallisia tietoja.",
+    "subtitle": "TripleZero iT tukee yrityksiä Aasiassa, Euroopassa, Arabiemiirikunnissa ja USA:ssa tekoälyintegraation, AEO:n, GEO:n, SEO:n, markkinoinnin ja ohjelmistojen avulla. Valitse kaupunkisi saadaksesi paikallisia tietoja.",
     "startFreeAiScan": "Aloita ilmainen AI-skannaus",
     "allServices": "Kaikki palvelut",
     "breadcrumb": "Sijainnit",
@@ -812,6 +814,8 @@
     "title": "Uutiset",
     "back": "Takaisin uutisiin",
     "viewSource": "Näytä alkuperäinen lähde",
+    "searchPlaceholder": "Hae uutisista…",
+    "searchEmpty": "Artikkeleita ei löytynyt.",
     "subtitle": "Pysy ajan tasalla kaikesta kehityksestä."
   },
   "agent000": {
