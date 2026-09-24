@@ -32,7 +32,7 @@ export function BrandingCollage({
               fill
               unoptimized
               sizes={isMiddle ? "30vw" : "16vw"}
-              className="object-contain object-bottom transition duration-500 group-hover:scale-[1.03]"
+              className="object-contain object-center transition duration-500 group-hover:scale-[1.03]"
             />
           </div>
         );
@@ -43,7 +43,7 @@ export function BrandingCollage({
   return (
     <section
       className={cn(
-        "mx-auto w-full max-w-6xl px-4 pb-1 md:max-w-7xl md:px-6 md:pb-2",
+        "mx-auto w-full max-w-6xl px-4 pt-8 pb-3 md:max-w-7xl md:px-6 md:pt-10 md:pb-4",
         className,
       )}
     >

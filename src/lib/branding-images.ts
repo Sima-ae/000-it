@@ -36,12 +36,10 @@ export const BRANDING_IMAGES = {
 
 export type BrandingImageKey = keyof typeof BRANDING_IMAGES;
 
-/** Homepage collage — latest five branding photos only (larger tiles). */
+/** Homepage collage — three branding photos (larger tiles). */
 export const BRANDING_COLLAGE: readonly string[] = [
   BRANDING_IMAGES.socialEngagement,
-  BRANDING_IMAGES.duoSuccess,
   BRANDING_IMAGES.dashboardOverview,
-  BRANDING_IMAGES.tabletMarketer,
   BRANDING_IMAGES.consultantLaptop,
 ];
 

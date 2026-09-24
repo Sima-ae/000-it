@@ -197,7 +197,7 @@ export default async function HomePage({
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 pb-4 md:px-6 md:pb-5">
+      <section className="mx-auto max-w-6xl px-4 pb-2 md:px-6 md:pb-3">
         <Reveal from="scale" duration={0.7}>
           <div className="glow-hover relative overflow-hidden rounded-4xl">
             <div className="glow-bg absolute inset-0" aria-hidden>

@@ -79,8 +79,8 @@ export function Footer() {
     "flex h-9 md:h-10 items-center justify-center text-xs font-bold uppercase leading-none tracking-[0.14em] text-foreground";
 
   return (
-    <footer className="relative mt-10">
-      <div className="mx-auto max-w-7xl px-3 pt-8 pb-4 md:px-4 md:pt-10 md:pb-5">
+    <footer className="relative mt-6">
+      <div className="mx-auto max-w-7xl px-3 pt-6 pb-4 md:px-4 md:pt-8 md:pb-5">
         <div className="glass overflow-hidden rounded-3xl">
           <div className="grid items-start gap-8 px-6 py-7 sm:grid-cols-2 lg:grid-cols-[1.15fr_1.3fr_1fr_1fr] lg:gap-x-5 lg:gap-y-8 lg:px-8 lg:py-8">
             {/* 1 — Brand */}
