@@ -849,7 +849,8 @@
     "ticketEditSectionDetails": "Details",
     "ticketEditSectionDetailsHint": "What this ticket is about.",
     "ticketEditSectionRouting": "Routing",
-    "ticketEditSectionRoutingHint": "Status, priority and classification."
+    "ticketEditSectionRoutingHint": "Status, priority and classification.",
+    "ticketDeleteHint": "This action is permanent and cannot be undone."
   },
   "about": {
     "eyebrow": "Rreth nesh",
@@ -1238,7 +1239,8 @@
     "deleteFailed": "Could not delete order",
     "invalidForm": "Fill in customer details and at least one valid item",
     "deleteTitle": "Delete order",
-    "deleteConfirm": "Permanently delete this order? This cannot be undone.",
-    "statOutstanding": "Në pritje"
+    "deleteConfirm": "Permanently delete {order} — {name}?",
+    "statOutstanding": "Në pritje",
+    "deleteHint": "This action is permanent and cannot be undone."
   }
 }

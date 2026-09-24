@@ -849,7 +849,8 @@
     "ticketEditSectionDetails": "Details",
     "ticketEditSectionDetailsHint": "Worum es in diesem Ticket geht.",
     "ticketEditSectionRouting": "Routing",
-    "ticketEditSectionRoutingHint": "Status, Priorität und Klassifizierung."
+    "ticketEditSectionRoutingHint": "Status, Priorität und Klassifizierung.",
+    "ticketDeleteHint": "Diese Aktion ist dauerhaft und kann nicht rückgängig gemacht werden."
   },
   "about": {
     "eyebrow": "Über uns",
@@ -1238,7 +1239,8 @@
     "deleteFailed": "Bestellung konnte nicht gelöscht werden",
     "invalidForm": "Kundendaten und mindestens einen gültigen Artikel ausfüllen",
     "deleteTitle": "Bestellung löschen",
-    "deleteConfirm": "Diese Bestellung dauerhaft löschen? Dies kann nicht rückgängig gemacht werden.",
-    "statOutstanding": "Offen"
+    "deleteConfirm": "{order} — {name} dauerhaft löschen?",
+    "statOutstanding": "Offen",
+    "deleteHint": "Diese Aktion ist dauerhaft und kann nicht rückgängig gemacht werden."
   }
 }

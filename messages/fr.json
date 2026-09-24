@@ -849,7 +849,8 @@
     "ticketEditSectionDetails": "Détails",
     "ticketEditSectionDetailsHint": "De quoi traite ce ticket.",
     "ticketEditSectionRouting": "Routage",
-    "ticketEditSectionRoutingHint": "Statut, priorité et classification."
+    "ticketEditSectionRoutingHint": "Statut, priorité et classification.",
+    "ticketDeleteHint": "Cette action est permanente et ne peut pas être annulée."
   },
   "about": {
     "eyebrow": "À propos",
@@ -1238,7 +1239,8 @@
     "deleteFailed": "Impossible de supprimer la commande",
     "invalidForm": "Renseignez le client et au moins un article valide",
     "deleteTitle": "Supprimer la commande",
-    "deleteConfirm": "Supprimer définitivement cette commande ? Cette action est irréversible.",
-    "statOutstanding": "En attente de paiement"
+    "deleteConfirm": "Supprimer définitivement {order} — {name} ?",
+    "statOutstanding": "En attente de paiement",
+    "deleteHint": "Cette action est permanente et ne peut pas être annulée."
   }
 }

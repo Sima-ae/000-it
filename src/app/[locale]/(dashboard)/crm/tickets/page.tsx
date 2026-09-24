@@ -830,25 +830,38 @@ export default function CrmTicketsPage() {
       </Dialog>
 
       <Dialog open={!!deleteTicket} onOpenChange={(open) => !open && setDeleteTicket(null)}>
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle>{t("ticketDeleteTitle")}</DialogTitle>
-            <DialogDescription>
-              {deleteTicket
-                ? t("ticketDeleteConfirm", {
-                    subject: deleteTicket.subject,
-                    key: ticketKey(deleteTicket.id),
-                  })
-                : null}
+        <DialogContent className="w-[min(96vw,28rem)] gap-0 overflow-hidden p-0">
+          <DialogHeader className="shrink-0 border-b border-border/60 bg-muted/20 px-5 py-4 pr-14">
+            <DialogTitle className="text-xl md:text-2xl">{t("ticketDeleteTitle")}</DialogTitle>
+            <DialogDescription className="text-sm">
+              {t("ticketDeleteHint")}
             </DialogDescription>
           </DialogHeader>
-          <DialogFooter>
-            <Button type="button" variant="outline" onClick={() => setDeleteTicket(null)}>
+          <div className="space-y-4 px-5 py-4">
+            <div className="rounded-2xl border border-destructive/20 bg-destructive/5 p-4">
+              <p className="text-sm font-medium text-foreground">
+                {deleteTicket
+                  ? t("ticketDeleteConfirm", {
+                      subject: deleteTicket.subject,
+                      key: ticketKey(deleteTicket.id),
+                    })
+                  : null}
+              </p>
+            </div>
+          </div>
+          <DialogFooter className="border-t border-border/60 bg-background/95 px-5 py-4">
+            <Button
+              type="button"
+              variant="outline"
+              className="rounded-xl"
+              onClick={() => setDeleteTicket(null)}
+            >
               {t("cancel")}
             </Button>
             <Button
               type="button"
               variant="destructive"
+              className="rounded-xl px-5"
               disabled={actionBusy}
               onClick={() => void confirmDelete()}
             >

@@ -12,6 +12,7 @@ import {
   Search,
   Trash2,
   Package,
+  AlertTriangle,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -22,6 +23,7 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
+  DialogFooter,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
@@ -122,7 +124,7 @@ export default function OrdersAdminPage() {
   const [active, setActive] = useState<Order | null>(null);
   const [form, setForm] = useState<FormState>(() => emptyForm(locale));
   const [busy, setBusy] = useState(false);
-  const [deleteId, setDeleteId] = useState<string | null>(null);
+  const [deleteOrder, setDeleteOrder] = useState<Order | null>(null);
 
   const { data: orders = [], isLoading } = useQuery({
     queryKey: ["shop-orders"],
@@ -314,15 +316,15 @@ export default function OrdersAdminPage() {
   }
 
   async function removeOrder() {
-    if (!deleteId || !showDelete) return;
+    if (!deleteOrder || !showDelete) return;
     setBusy(true);
     try {
-      const res = await fetch(`/api/shop/orders/${deleteId}`, {
+      const res = await fetch(`/api/shop/orders/${deleteOrder.id}`, {
         method: "DELETE",
       });
       if (!res.ok) throw new Error("Failed");
       toast.success(t("deleted"));
-      setDeleteId(null);
+      setDeleteOrder(null);
       void qc.invalidateQueries({ queryKey: ["shop-orders"] });
       void qc.invalidateQueries({ queryKey: ["dashboard-nav-badges"] });
     } catch {
@@ -502,7 +504,7 @@ export default function OrdersAdminPage() {
                               type="button"
                               size="sm"
                               variant="ghost"
-                              onClick={() => setDeleteId(order.id)}
+                              onClick={() => setDeleteOrder(order)}
                               title={t("delete")}
                             >
                               <Trash2 className="h-3.5 w-3.5 text-destructive" />
@@ -776,25 +778,62 @@ export default function OrdersAdminPage() {
         </DialogContent>
       </Dialog>
 
-      <Dialog open={!!deleteId} onOpenChange={(open) => !open && setDeleteId(null)}>
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle>{t("deleteTitle")}</DialogTitle>
-            <DialogDescription>{t("deleteConfirm")}</DialogDescription>
+      <Dialog
+        open={!!deleteOrder}
+        onOpenChange={(open) => !open && setDeleteOrder(null)}
+      >
+        <DialogContent className="w-[min(96vw,28rem)] gap-0 overflow-hidden p-0">
+          <DialogHeader className="shrink-0 border-b border-border/60 bg-muted/20 px-5 py-4 pr-14">
+            <DialogTitle className="text-xl md:text-2xl">{t("deleteTitle")}</DialogTitle>
+            <DialogDescription className="text-sm">
+              {t("deleteHint")}
+            </DialogDescription>
           </DialogHeader>
-          <div className="flex justify-end gap-2">
-            <Button type="button" variant="outline" onClick={() => setDeleteId(null)}>
+          <div className="space-y-4 px-5 py-4">
+            <div className="flex gap-3 rounded-2xl border border-destructive/20 bg-destructive/5 p-4">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-destructive/15 text-destructive">
+                <AlertTriangle className="h-5 w-5" />
+              </div>
+              <div className="min-w-0 space-y-1">
+                <p className="text-sm font-medium text-foreground">
+                  {deleteOrder
+                    ? t("deleteConfirm", {
+                        order: deleteOrder.orderNumber,
+                        name: deleteOrder.name,
+                      })
+                    : null}
+                </p>
+                {deleteOrder ? (
+                  <p className="text-xs text-muted-foreground">
+                    {deleteOrder.email}
+                    {" · "}
+                    {formatShopEuro(deleteOrder.totalIncl, locale)}
+                    {" · "}
+                    {t(`status${deleteOrder.status}`)}
+                  </p>
+                ) : null}
+              </div>
+            </div>
+          </div>
+          <DialogFooter className="border-t border-border/60 bg-background/95 px-5 py-4">
+            <Button
+              type="button"
+              variant="outline"
+              className="rounded-xl"
+              onClick={() => setDeleteOrder(null)}
+            >
               {t("cancel")}
             </Button>
             <Button
               type="button"
               variant="destructive"
+              className="rounded-xl px-5"
               disabled={busy}
               onClick={() => void removeOrder()}
             >
               {t("delete")}
             </Button>
-          </div>
+          </DialogFooter>
         </DialogContent>
       </Dialog>
     </div>
