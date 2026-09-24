@@ -724,7 +724,8 @@
     "stepSchedule": "Schema",
     "stepConfirm": "Godkänn",
     "allServicesCta": "Klicka här för alla tjänster!",
-    "pageIntro": "Välj en tjänst, datum och tid — vi bekräftar ditt möte via e-post."
+    "pageIntro": "Välj en tjänst, datum och tid — vi bekräftar ditt möte via e-post.",
+    "viewService": "Mer information"
   },
   "digitalDesign": {
     "title": "Grafisk design",

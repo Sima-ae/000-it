@@ -724,7 +724,8 @@
     "stepSchedule": "Załącznik",
     "stepConfirm": "Potwierdź",
     "allServicesCta": "Kliknij tutaj, aby uzyskać dostęp do wszystkich usług!",
-    "pageIntro": "Wybierz usługę, datę i godzinę — potwierdzimy Twoje spotkanie e-mailem."
+    "pageIntro": "Wybierz usługę, datę i godzinę — potwierdzimy Twoje spotkanie e-mailem.",
+    "viewService": "Więcej informacji"
   },
   "digitalDesign": {
     "title": "Projektowanie graficzne",

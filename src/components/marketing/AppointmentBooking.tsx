@@ -3,14 +3,16 @@
 import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { toast } from "sonner";
-import { Check, ChevronLeft, ChevronRight } from "lucide-react";
+import { Check, ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { GlassCard } from "@/components/marketing/GlassCard";
+import { ShopProductImage } from "@/components/shop/ShopProductImage";
 import {
   serviceCatalog,
+  serviceHref,
   sortedServiceGroups,
   type ServiceNavItem,
 } from "@/content/fixweb/catalog";
@@ -32,7 +34,15 @@ import {
   toDateKey,
   type PaymentPreference,
 } from "@/content/appointment";
+import { formatEuro } from "@/lib/format-euro";
 import { cn } from "@/lib/utils";
+
+export type AppointmentServicePreview = {
+  image?: string | null;
+  price?: number | null;
+  listPrice?: number | null;
+  perMonth?: boolean;
+};
 
 const STEP_IDS = [
   "service",
@@ -72,9 +82,14 @@ function appointmentGroupLabel(
   return catalogGroupTitle(group.id, locale, group.title);
 }
 
-export function AppointmentBooking() {
+export function AppointmentBooking({
+  servicePreviews = {},
+}: {
+  servicePreviews?: Record<string, AppointmentServicePreview>;
+}) {
   const locale = useLocale();
   const t = useTranslations("appointment");
+  const tShop = useTranslations("shop");
 
   const [stepIndex, setStepIndex] = useState(0);
   const [serviceSlug, setServiceSlug] = useState("");
@@ -198,6 +213,9 @@ export function AppointmentBooking() {
       <h1 className="font-display text-3xl font-semibold tracking-tight text-brand md:text-4xl">
         {t("title")}
       </h1>
+      <p className="mt-3 text-sm text-muted-foreground md:text-base">
+        {t("pageIntro")}
+      </p>
 
       <ol className="mt-8 grid grid-cols-3 gap-2 sm:grid-cols-6">
         {STEP_IDS.map((id, i) => {
@@ -267,13 +285,92 @@ export function AppointmentBooking() {
               </select>
             </div>
             {selectedService ? (
-              <p className="rounded-2xl bg-muted/50 px-4 py-3 text-sm text-muted-foreground">
-                {catalogServiceSummary(
+              (() => {
+                const preview = servicePreviews[selectedService.slug];
+                const title = catalogServiceTitle(
                   selectedService.slug,
                   locale,
-                  selectedService.summary || selectedService.summaryNl || "",
-                ) || t("serviceFallback")}
-              </p>
+                  selectedService.title,
+                );
+                const summary =
+                  catalogServiceSummary(
+                    selectedService.slug,
+                    locale,
+                    selectedService.summary || selectedService.summaryNl || "",
+                  ) || t("serviceFallback");
+                const href = serviceHref(locale, selectedService);
+                const price = preview?.price ?? null;
+                const listPrice = preview?.listPrice ?? null;
+                const hasDiscount =
+                  typeof price === "number" &&
+                  typeof listPrice === "number" &&
+                  listPrice > price;
+                const priceLocale = locale === "nl" ? "nl-NL" : "en-NL";
+
+                return (
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group block overflow-hidden rounded-2xl border border-border/70 bg-muted/30 transition hover:border-primary/40 hover:bg-muted/50"
+                  >
+                    <div className="flex flex-col gap-4 p-3 sm:flex-row sm:items-stretch sm:p-4">
+                      <div className="relative h-36 w-full shrink-0 overflow-hidden rounded-xl bg-muted/50 sm:h-28 sm:w-40">
+                        <ShopProductImage
+                          src={preview?.image}
+                          alt={title}
+                          sizes="160px"
+                          className="object-cover"
+                        />
+                      </div>
+                      <div className="flex min-w-0 flex-1 flex-col">
+                        <div className="flex items-start justify-between gap-3">
+                          <h3 className="font-display text-base font-semibold tracking-tight text-foreground group-hover:text-primary">
+                            {title}
+                          </h3>
+                          <ExternalLink className="mt-0.5 h-4 w-4 shrink-0 text-muted-foreground transition group-hover:text-primary" />
+                        </div>
+                        <p className="mt-1 line-clamp-3 text-sm text-muted-foreground">
+                          {summary}
+                        </p>
+                        <div className="mt-auto flex flex-wrap items-end justify-between gap-2 pt-3">
+                          {typeof price === "number" ? (
+                            hasDiscount ? (
+                              <div className="flex flex-wrap items-baseline gap-x-2">
+                                <span className="font-display text-sm font-medium text-muted-foreground line-through decoration-2">
+                                  {formatEuro(listPrice, priceLocale)}
+                                </span>
+                                <span className="font-display text-base font-semibold text-primary">
+                                  {formatEuro(price, priceLocale)}
+                                  {preview?.perMonth ? (
+                                    <span className="ml-1 text-xs font-medium text-muted-foreground">
+                                      {tShop("perMonth")}
+                                    </span>
+                                  ) : null}
+                                </span>
+                              </div>
+                            ) : (
+                              <p className="font-display text-base font-semibold text-foreground">
+                                {formatEuro(price, priceLocale)}
+                                {preview?.perMonth ? (
+                                  <span className="ml-1 text-xs font-medium text-muted-foreground">
+                                    {tShop("perMonth")}
+                                  </span>
+                                ) : null}
+                              </p>
+                            )
+                          ) : (
+                            <span />
+                          )}
+                          <span className="text-xs font-medium text-primary">
+                            {t("viewService")}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                );
+              })()
             ) : null}
           </div>
         )}

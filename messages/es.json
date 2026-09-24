@@ -724,7 +724,8 @@
     "stepSchedule": "Cronograma",
     "stepConfirm": "Confirmar",
     "allServicesCta": "¡Haz clic aquí para ver todos los servicios!",
-    "pageIntro": "Elige un servicio, fecha y hora: le confirmaremos tu cita por correo electrónico."
+    "pageIntro": "Elige un servicio, fecha y hora: le confirmaremos tu cita por correo electrónico.",
+    "viewService": "Más información"
   },
   "digitalDesign": {
     "title": "Diseño gráfico",

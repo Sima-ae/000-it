@@ -724,7 +724,8 @@
     "stepSchedule": "Tvarkaraštis",
     "stepConfirm": "Patvirtinti",
     "allServicesCta": "Spauskite čia, kad gautumėte visas paslaugas!",
-    "pageIntro": "Pasirinkite paslaugą, datą ir laiką — susitikimą patvirtinsime el. paštu."
+    "pageIntro": "Pasirinkite paslaugą, datą ir laiką — susitikimą patvirtinsime el. paštu.",
+    "viewService": "Daugiau informacijos"
   },
   "digitalDesign": {
     "title": "Grafikos dizainas",

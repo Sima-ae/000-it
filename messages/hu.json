@@ -724,7 +724,8 @@
     "stepSchedule": "Ütemterv",
     "stepConfirm": "Megerősítés",
     "allServicesCta": "Kattints ide az összes szolgáltatásért!",
-    "pageIntro": "Válassz ki egy szolgáltatást, dátumot és időpontot — e-mailben visszaigazoljuk az időpontodat."
+    "pageIntro": "Válassz ki egy szolgáltatást, dátumot és időpontot — e-mailben visszaigazoljuk az időpontodat.",
+    "viewService": "További információ"
   },
   "digitalDesign": {
     "title": "Grafikai tervezés",

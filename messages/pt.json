@@ -724,7 +724,8 @@
     "stepSchedule": "Agenda",
     "stepConfirm": "Confirmar",
     "allServicesCta": "Clique aqui para ver todos os serviços!",
-    "pageIntro": "Escolha um serviço, data e hora — confirmaremos a sua marcação por e-mail."
+    "pageIntro": "Escolha um serviço, data e hora — confirmaremos a sua marcação por e-mail.",
+    "viewService": "Mais informações"
   },
   "digitalDesign": {
     "title": "Design gráfico",

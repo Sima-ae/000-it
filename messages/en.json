@@ -742,7 +742,8 @@
     "stepSchedule": "Schedule",
     "stepConfirm": "Confirm",
     "allServicesCta": "Click here for all services!",
-    "pageIntro": "Pick a service, date and time — we'll confirm your appointment by email."
+    "pageIntro": "Pick a service, date and time — we'll confirm your appointment by email.",
+    "viewService": "More information"
   },
   "digitalDesign": {
     "title": "Graphic Design",

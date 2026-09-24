@@ -724,7 +724,8 @@
     "stepSchedule": "Zaman Çizelgesi",
     "stepConfirm": "Onayla",
     "allServicesCta": "Tüm hizmetler için tıklayınız!",
-    "pageIntro": "Bir hizmet, tarih ve saat seçin. Randevunuzu e — posta ile onaylayacağız."
+    "pageIntro": "Bir hizmet, tarih ve saat seçin. Randevunuzu e — posta ile onaylayacağız.",
+    "viewService": "Daha fazla bilgi"
   },
   "digitalDesign": {
     "title": "Grafik tasarım",

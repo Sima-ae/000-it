@@ -724,7 +724,8 @@
     "stepSchedule": "Legg i kø",
     "stepConfirm": "Bekreft",
     "allServicesCta": "Klikk her for alle tjenester!",
-    "pageIntro": "Velg en tjeneste, dato og klokkeslett – vi bekrefter avtalen din via e-post."
+    "pageIntro": "Velg en tjeneste, dato og klokkeslett – vi bekrefter avtalen din via e-post.",
+    "viewService": "Mer informasjon"
   },
   "digitalDesign": {
     "title": "Grafisk design",

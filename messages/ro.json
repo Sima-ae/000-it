@@ -724,7 +724,8 @@
     "stepSchedule": "Programați",
     "stepConfirm": "Confirmare",
     "allServicesCta": "Click aici pentru toate serviciile!",
-    "pageIntro": "Alege un serviciu, o dată și o oră — te vom confirma programarea prin e-mail."
+    "pageIntro": "Alege un serviciu, o dată și o oră — te vom confirma programarea prin e-mail.",
+    "viewService": "Mai multe informații"
   },
   "digitalDesign": {
     "title": "Design grafic",

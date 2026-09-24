@@ -724,7 +724,8 @@
     "stepSchedule": "Planifikuar",
     "stepConfirm": "Konfirmo",
     "allServicesCta": "Kliko këtu për të gjitha shërbimet!",
-    "pageIntro": "Zgjidh një shërbim, datën dhe orën — do ta konfirmojmë takimin tënd me email."
+    "pageIntro": "Zgjidh një shërbim, datën dhe orën — do ta konfirmojmë takimin tënd me email.",
+    "viewService": "Më shumë informacion"
   },
   "digitalDesign": {
     "title": "Dizajn grafik",

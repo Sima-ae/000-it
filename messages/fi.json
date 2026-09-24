@@ -724,7 +724,8 @@
     "stepSchedule": "Ajankohta",
     "stepConfirm": "Vahvista",
     "allServicesCta": "Klikkaa tästä kaikki palvelut!",
-    "pageIntro": "Valitse palvelu, päivämäärä ja kellonaika — vahvistamme tapaamisesi sähköpostitse."
+    "pageIntro": "Valitse palvelu, päivämäärä ja kellonaika — vahvistamme tapaamisesi sähköpostitse.",
+    "viewService": "Lisätietoja"
   },
   "digitalDesign": {
     "title": "Graafinen suunnittelu",

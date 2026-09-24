@@ -724,7 +724,8 @@
     "stepSchedule": "Harmonogram",
     "stepConfirm": "Potvrdiť",
     "allServicesCta": "Klikni sem pre všetky služby!",
-    "pageIntro": "Vyber službu, dátum a čas — tvoju schôdzku potvrdíme e-mailom."
+    "pageIntro": "Vyber službu, dátum a čas — tvoju schôdzku potvrdíme e-mailom.",
+    "viewService": "Viac informácií"
   },
   "digitalDesign": {
     "title": "Grafický dizajn",

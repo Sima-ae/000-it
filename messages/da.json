@@ -724,7 +724,8 @@
     "stepSchedule": "Tidsfrist",
     "stepConfirm": "Bekræft",
     "allServicesCta": "Klik her for alle tjenester!",
-    "pageIntro": "Vælg en service, dato og klokkeslæt — vi bekræfter din aftale via e-mail."
+    "pageIntro": "Vælg en service, dato og klokkeslæt — vi bekræfter din aftale via e-mail.",
+    "viewService": "Mere information"
   },
   "digitalDesign": {
     "title": "Grafisk design",

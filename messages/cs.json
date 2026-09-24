@@ -724,7 +724,8 @@
     "stepSchedule": "Naplánovat",
     "stepConfirm": "Potvrdit",
     "allServicesCta": "Klikněte zde pro všechny služby!",
-    "pageIntro": "Vyberte si službu, datum a čas – termín vám potvrdíme e-mailem."
+    "pageIntro": "Vyberte si službu, datum a čas – termín vám potvrdíme e-mailem.",
+    "viewService": "Více informací"
   },
   "digitalDesign": {
     "title": "Grafický design",

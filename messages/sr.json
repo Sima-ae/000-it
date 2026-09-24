@@ -724,7 +724,8 @@
     "stepSchedule": "Raspored",
     "stepConfirm": "Potvrdi",
     "allServicesCta": "Klikni ovde za sve usluge!",
-    "pageIntro": "Изаберите услугу, датум и време — потврдићемо ваш термин путем е-поште."
+    "pageIntro": "Изаберите услугу, датум и време — потврдићемо ваш термин путем е-поште.",
+    "viewService": "Više informacija"
   },
   "digitalDesign": {
     "title": "Графички дизајн",

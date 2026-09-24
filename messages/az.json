@@ -724,7 +724,8 @@
     "stepSchedule": "Zamanlama satış",
     "stepConfirm": "Təsdiq et",
     "allServicesCta": "Bütün xidmətlər üçün buraya klikləyin!",
-    "pageIntro": "Xidmət, tarix və vaxt seçin — görüşünüzü e-poçt vasitəsilə təsdiq edəcəyik."
+    "pageIntro": "Xidmət, tarix və vaxt seçin — görüşünüzü e-poçt vasitəsilə təsdiq edəcəyik.",
+    "viewService": "Ətraflı məlumat"
   },
   "digitalDesign": {
     "title": "Qrafik dizayn",

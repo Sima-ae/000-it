@@ -724,7 +724,8 @@
     "stepSchedule": "予定",
     "stepConfirm": "確認",
     "allServicesCta": "すべてのサービスについては、ここをクリックしてください！",
-    "pageIntro": "サービス、日付、時刻を選択してください。メールで予約を確認します。"
+    "pageIntro": "サービス、日付、時刻を選択してください。メールで予約を確認します。",
+    "viewService": "詳細を見る"
   },
   "digitalDesign": {
     "title": "グラフィックデザイン",

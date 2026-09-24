@@ -67,6 +67,8 @@ export function ContentGuard() {
     }
 
     function onKeyDown(event: KeyboardEvent) {
+      // Autofill, IME, and synthetic keydowns can fire without a key.
+      if (!event.key) return;
       const key = event.key.toLowerCase();
       const meta = event.metaKey || event.ctrlKey;
 

@@ -724,7 +724,8 @@
     "stepSchedule": "Deine Behandlungstermine",
     "stepConfirm": "Bestätigen",
     "allServicesCta": "Hier klicken für alle Dienstleistungen!",
-    "pageIntro": "Wähle einen Service, ein Datum und eine Uhrzeit — wir bestätigen deinen Termin per E-Mail."
+    "pageIntro": "Wähle einen Service, ein Datum und eine Uhrzeit — wir bestätigen deinen Termin per E-Mail.",
+    "viewService": "Mehr Informationen"
   },
   "digitalDesign": {
     "title": "Grafisches Design",

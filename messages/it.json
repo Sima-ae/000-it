@@ -724,7 +724,8 @@
     "stepSchedule": "Programma",
     "stepConfirm": "Confermi",
     "allServicesCta": "Clicca qui per tutti i servizi!",
-    "pageIntro": "Scegli un servizio, una data e un orario: ti confermeremo l'appuntamento via e-mail."
+    "pageIntro": "Scegli un servizio, una data e un orario: ti confermeremo l'appuntamento via e-mail.",
+    "viewService": "Maggiori informazioni"
   },
   "digitalDesign": {
     "title": "Design grafico",

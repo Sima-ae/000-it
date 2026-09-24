@@ -724,7 +724,8 @@
     "stepSchedule": "Horaire",
     "stepConfirm": "Confirmer",
     "allServicesCta": "Clique ici pour accéder à tous nos services !",
-    "pageIntro": "Choisis un service, une date et une heure — nous te confirmerons ton rendez-tu par e-mail."
+    "pageIntro": "Choisis un service, une date et une heure — nous te confirmerons ton rendez-tu par e-mail.",
+    "viewService": "Plus d'informations"
   },
   "digitalDesign": {
     "title": "Design graphique",

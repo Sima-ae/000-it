@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 import { AppointmentBooking } from "@/components/marketing/AppointmentBooking";
 import { Reveal } from "@/components/marketing/Reveal";
-import { BRANDING_IMAGES } from "@/lib/branding-images";
+import { serviceCatalog } from "@/content/fixweb/catalog";
+import { brandingFallbackForServiceSlug } from "@/lib/branding-images";
 import { buildStaticPageMetadata } from "@/lib/seo";
+import {
+  getShopProductBySlug,
+  loadShopCatalogFromDb,
+  shopHasDiscount,
+  shopUnitPriceInclCents,
+} from "@/lib/shop/catalog";
 
 export async function generateMetadata({
   params,
@@ -22,29 +28,43 @@ export default async function AppointmentPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("appointment");
+
+  await loadShopCatalogFromDb();
+
+  const servicePreviews = Object.fromEntries(
+    serviceCatalog.map((item) => {
+      const shop = getShopProductBySlug(item.slug);
+      const hasPrice =
+        Boolean(shop) &&
+        shop!.published !== false &&
+        shop!.priceInclCents > 0;
+      const unitCents = hasPrice ? shopUnitPriceInclCents(shop!) : null;
+      const listCents =
+        hasPrice && shopHasDiscount(shop!) ? shop!.priceInclCents : null;
+      const perMonth =
+        hasPrice &&
+        ((shop!.checkoutMonths != null && shop!.checkoutMonths > 1) ||
+          shop!.billingInterval === "monthly");
+
+      return [
+        item.slug,
+        {
+          image:
+            shop?.image ||
+            brandingFallbackForServiceSlug(item.slug, item.group) ||
+            null,
+          price: unitCents != null ? unitCents / 100 : null,
+          listPrice: listCents != null ? listCents / 100 : null,
+          perMonth,
+        },
+      ];
+    }),
+  );
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-14 md:px-6 md:py-20">
       <Reveal>
-        <div className="mb-8 flex flex-col items-center gap-4 text-center">
-          <div className="relative h-28 w-40 overflow-hidden sm:h-32 sm:w-48">
-            <Image
-              src={BRANDING_IMAGES.collaboration}
-              alt=""
-              fill
-              unoptimized
-              sizes="192px"
-              className="rounded-2xl object-cover"
-            />
-          </div>
-          <p className="max-w-xl text-sm text-muted-foreground md:text-base">
-            {t("pageIntro")}
-          </p>
-        </div>
-      </Reveal>
-      <Reveal delay={0.05}>
-        <AppointmentBooking />
+        <AppointmentBooking servicePreviews={servicePreviews} />
       </Reveal>
     </div>
   );

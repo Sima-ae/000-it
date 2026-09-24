@@ -724,7 +724,8 @@
     "stepSchedule": "赛程表",
     "stepConfirm": "確認",
     "allServicesCta": "点击此处查看所有服务！",
-    "pageIntro": "选择服务、日期和时间—我们将通过电子邮件确认你的预约。"
+    "pageIntro": "选择服务、日期和时间—我们将通过电子邮件确认你的预约。",
+    "viewService": "了解更多"
   },
   "digitalDesign": {
     "title": "平面设计",
