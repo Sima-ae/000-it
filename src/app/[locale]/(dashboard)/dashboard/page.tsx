@@ -578,7 +578,7 @@ export default function DashboardPage() {
             {data.recentTickets.map((ticket) => (
               <SoftLink
                 key={ticket.id}
-                href={localizedHref(locale, "/crm/tickets")}
+                href={localizedHref(locale, `/crm/tickets/${ticket.id}`)}
                 className="flex items-center justify-between rounded-lg border border-border px-3 py-2 transition hover:border-primary/40"
               >
                 <div className="min-w-0">

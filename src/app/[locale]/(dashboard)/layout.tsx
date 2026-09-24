@@ -34,7 +34,7 @@ export default async function DashboardLayout({
   const year = new Date().getFullYear();
 
   return (
-    <div className="mx-auto flex min-h-screen w-full max-w-7xl flex-col">
+    <div className="mx-auto flex min-h-screen w-full max-w-[100rem] flex-col">
       <DashboardSessionSync />
       <div className="flex flex-1 flex-col md:flex-row">
         <Sidebar

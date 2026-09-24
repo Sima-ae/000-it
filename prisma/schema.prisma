@@ -36,6 +36,7 @@ model User {
   supportTickets     SupportTicket[]       @relation("TicketOwner")
   assignedTickets    SupportTicket[]       @relation("TicketAssignee")
   ticketMessages     TicketMessage[]
+  ticketEvents       TicketEvent[]
   staffTodos         StaffTodo[]
   crmNotes           CrmNote[]
   invoicesCreated    Invoice[]             @relation("InvoiceCreator")
@@ -486,33 +487,45 @@ model PortfolioProject {
 
 /// Support / live-chat tickets (synced with CRM clients & projects)
 model SupportTicket {
-  id           String         @id @default(cuid())
-  subject      String
-  status       TicketStatus   @default(OPEN)
-  priority     TicketPriority @default(MEDIUM)
-  source       TicketSource   @default(CHAT)
-  ticketType   String?        @default("General")
-  userId       String?
-  user         User?          @relation("TicketOwner", fields: [userId], references: [id], onDelete: SetNull)
-  clientId     String?
-  client       Client?        @relation(fields: [clientId], references: [id], onDelete: SetNull)
-  projectId    String?
-  project      Project?       @relation(fields: [projectId], references: [id], onDelete: SetNull)
-  guestName    String?
-  guestEmail   String?
-  guestToken   String?        @unique
-  assignedToId String?
-  assignedTo   User?          @relation("TicketAssignee", fields: [assignedToId], references: [id], onDelete: SetNull)
-  messages     TicketMessage[]
-  notes        CrmNote[]
-  createdAt    DateTime       @default(now())
-  updatedAt    DateTime       @updatedAt
+  id              String         @id @default(cuid())
+  subject         String
+  description     String?        @db.Text
+  status          TicketStatus   @default(OPEN)
+  priority        TicketPriority @default(LOW)
+  source          TicketSource   @default(CHAT)
+  ticketType      String?        @default("General")
+  department      String?
+  category        String?
+  tags            Json?
+  dueAt           DateTime?
+  firstResponseAt DateTime?
+  resolvedAt      DateTime?
+  favorite        Boolean        @default(false)
+  userId          String?
+  user            User?          @relation("TicketOwner", fields: [userId], references: [id], onDelete: SetNull)
+  clientId        String?
+  client          Client?        @relation(fields: [clientId], references: [id], onDelete: SetNull)
+  projectId       String?
+  project         Project?       @relation(fields: [projectId], references: [id], onDelete: SetNull)
+  guestName       String?
+  guestEmail      String?
+  guestToken      String?        @unique
+  assignedToId    String?
+  assignedTo      User?          @relation("TicketAssignee", fields: [assignedToId], references: [id], onDelete: SetNull)
+  messages        TicketMessage[]
+  notes           CrmNote[]
+  events          TicketEvent[]
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
 
   @@index([status, updatedAt])
+  @@index([priority, updatedAt])
   @@index([userId])
   @@index([clientId])
   @@index([projectId])
   @@index([assignedToId])
+  @@index([department])
+  @@index([dueAt])
 }
 
 model TicketMessage {
@@ -526,6 +539,22 @@ model TicketMessage {
   createdAt  DateTime            @default(now())
 
   @@index([ticketId, createdAt])
+}
+
+/// Audit trail for ticket status/assignment/field changes
+model TicketEvent {
+  id        String        @id @default(cuid())
+  ticketId  String
+  ticket    SupportTicket @relation(fields: [ticketId], references: [id], onDelete: Cascade)
+  actorId   String?
+  actor     User?         @relation(fields: [actorId], references: [id], onDelete: SetNull)
+  kind      String
+  message   String
+  payload   Json?
+  createdAt DateTime      @default(now())
+
+  @@index([ticketId, createdAt])
+  @@index([actorId])
 }
 
 /// Internal staff to-dos — never public, never shown to clients

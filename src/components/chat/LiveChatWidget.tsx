@@ -18,6 +18,7 @@ import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { isStaffRole } from "@/lib/roles";
+import { prioritySelectClass, TICKET_PRIORITIES } from "@/lib/crm/tickets";
 import { Agent000Avatar } from "@/components/agent-000/Agent000Avatar";
 import { OPEN_CHAT_EVENT } from "@/components/content/FaqPageClient";
 import { useAgentSpeech } from "@/components/agent-000/useAgentSpeech";
@@ -102,6 +103,7 @@ export function LiveChatWidget() {
   const [guestName, setGuestName] = useState("");
   const [guestEmail, setGuestEmail] = useState("");
   const [subject, setSubject] = useState("");
+  const [priority, setPriority] = useState<(typeof TICKET_PRIORITIES)[number]>("LOW");
   const [draft, setDraft] = useState("");
   const [ticket, setTicket] = useState<TicketDetail | null>(null);
   const [guestToken, setGuestToken] = useState<string | undefined>();
@@ -163,16 +165,27 @@ export function LiveChatWidget() {
   }, [ticket?.messages, open]);
 
   useEffect(() => {
-    if (!open || !ticket?.id || isLocalTicketId(ticket.id)) return;
+    if (!ticket?.id || isLocalTicketId(ticket.id)) return;
+    // Keep polling so staff live-chat replies appear for this browser session.
+    const intervalMs = open ? 2000 : 8000;
+    let lastCount = ticket.messages?.length || 0;
     const timer = setInterval(async () => {
       const qs = guestToken ? `?token=${encodeURIComponent(guestToken)}` : "";
       const res = await fetch(`/api/tickets/${ticket.id}${qs}`);
       if (!res.ok) return;
       const data = (await res.json()) as TicketDetail;
+      const nextCount = data.messages?.length || 0;
+      if (nextCount > lastCount && open) {
+        const newest = data.messages[nextCount - 1];
+        if (newest?.senderKind === "STAFF" && newest.body) {
+          speak(newest.body);
+        }
+      }
+      lastCount = nextCount;
       setTicket(data);
-    }, 3500);
+    }, intervalMs);
     return () => clearInterval(timer);
-  }, [open, ticket?.id, guestToken]);
+  }, [open, ticket?.id, guestToken, speak]);
 
   // Guests only. Hide while auth is resolving so logged-in users never see a flash of fields.
   const needsIdentity = status === "unauthenticated" && !ticket;
@@ -192,6 +205,11 @@ export function LiveChatWidget() {
       email: t("email"),
       subject: t("subject"),
       subjectPh: t("subjectPh"),
+      priority: t("priority"),
+      priorityLow: t("priorityLow"),
+      priorityMedium: t("priorityMedium"),
+      priorityHigh: t("priorityHigh"),
+      priorityUrgent: t("priorityUrgent"),
       viewTickets: t("viewTickets"),
       sendFailed: t("sendFailed"),
       powered: t("powered"),
@@ -260,6 +278,7 @@ export function LiveChatWidget() {
     });
     setDraft("");
     setSubject("");
+    setPriority("LOW");
     setMode("chat");
     speak(answer);
   }
@@ -268,6 +287,7 @@ export function LiveChatWidget() {
     subject: string;
     message: string;
     source: "CHAT" | "DASHBOARD";
+    priority?: (typeof TICKET_PRIORITIES)[number];
   }) {
     setBusy(true);
     setError(null);
@@ -279,6 +299,7 @@ export function LiveChatWidget() {
           subject: opts.subject,
           message: opts.message,
           source: opts.source,
+          priority: opts.priority ?? "LOW",
           guestName: loggedIn ? undefined : guestName,
           guestEmail: loggedIn ? undefined : guestEmail,
           locale,
@@ -289,6 +310,9 @@ export function LiveChatWidget() {
         throw new Error(err.error || "Failed");
       }
       const data = await res.json();
+      if (typeof data.id === "string" && data.id.startsWith("local-")) {
+        throw new Error("local ticket rejected");
+      }
       const token = asGuestToken(data.guestToken);
       setGuestToken(token);
       saveStored({
@@ -300,6 +324,7 @@ export function LiveChatWidget() {
       setTicket(data);
       setDraft("");
       setSubject("");
+      setPriority("LOW");
       setMode("chat");
       const lastSystem = [...(data.messages || [])]
         .reverse()
@@ -368,7 +393,8 @@ export function LiveChatWidget() {
       await startConversation({
         subject: subject.trim(),
         message: draft.trim(),
-        source: "CHAT",
+        source: "DASHBOARD",
+        priority,
       });
       return;
     }
@@ -574,15 +600,39 @@ export function LiveChatWidget() {
             ) : null}
 
             {mode === "ticket" ? (
-              <div className="space-y-1">
-                <Label className="text-xs">{copy.subject}</Label>
-                <Input
-                  value={subject}
-                  onChange={(e) => setSubject(e.target.value)}
-                  placeholder={copy.subjectPh}
-                  required
-                  className="h-9"
-                />
+              <div className="space-y-2">
+                <div className="space-y-1">
+                  <Label className="text-xs" htmlFor="live-chat-priority">
+                    {copy.priority}
+                  </Label>
+                  <select
+                    id="live-chat-priority"
+                    value={priority}
+                    onChange={(e) =>
+                      setPriority(e.target.value as (typeof TICKET_PRIORITIES)[number])
+                    }
+                    className={cn(
+                      "h-9 w-full rounded-lg border px-2.5 text-xs font-medium",
+                      prioritySelectClass(priority),
+                    )}
+                    aria-label={copy.priority}
+                  >
+                    <option value="LOW">{copy.priorityLow}</option>
+                    <option value="MEDIUM">{copy.priorityMedium}</option>
+                    <option value="HIGH">{copy.priorityHigh}</option>
+                    <option value="URGENT">{copy.priorityUrgent}</option>
+                  </select>
+                </div>
+                <div className="space-y-1">
+                  <Label className="text-xs">{copy.subject}</Label>
+                  <Input
+                    value={subject}
+                    onChange={(e) => setSubject(e.target.value)}
+                    placeholder={copy.subjectPh}
+                    required
+                    className="h-9"
+                  />
+                </div>
               </div>
             ) : null}
 

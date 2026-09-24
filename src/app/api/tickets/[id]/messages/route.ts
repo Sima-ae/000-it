@@ -5,6 +5,7 @@ import { auth } from "@/lib/auth";
 import { isStaffRole } from "@/lib/roles";
 import { canAccessTicket } from "@/lib/support";
 import { buildAgentReply } from "@/lib/agent-000/ask";
+import { recordTicketEvent } from "@/lib/crm/ticket-events";
 
 type Params = { params: Promise<{ id: string }> };
 
@@ -82,20 +83,43 @@ export async function POST(request: Request, { params }: Params) {
       }
     }
 
+    const nextStatus =
+      ticket.status === "RESOLVED" || ticket.status === "CLOSED"
+        ? "OPEN"
+        : staff && ticket.status === "OPEN"
+          ? "IN_PROGRESS"
+          : ticket.status;
+
     await prisma.supportTicket.update({
       where: { id },
       data: {
         updatedAt: new Date(),
-        status:
-          ticket.status === "RESOLVED" || ticket.status === "CLOSED"
-            ? "OPEN"
-            : staff && ticket.status === "OPEN"
-              ? "IN_PROGRESS"
-              : ticket.status,
+        status: nextStatus,
         assignedToId:
           staff && !ticket.assignedToId ? session!.user.id : ticket.assignedToId,
+        firstResponseAt:
+          staff && !ticket.firstResponseAt ? new Date() : ticket.firstResponseAt,
       },
     });
+
+    if (staff && !ticket.firstResponseAt) {
+      await recordTicketEvent({
+        ticketId: id,
+        actorId: session!.user.id,
+        kind: "FIRST_RESPONSE",
+        message: "First staff response sent",
+      });
+    }
+
+    if (staff && ticket.status === "OPEN" && nextStatus === "IN_PROGRESS") {
+      await recordTicketEvent({
+        ticketId: id,
+        actorId: session!.user.id,
+        kind: "STATUS_CHANGED",
+        message: "Status changed from OPEN to IN_PROGRESS",
+        payload: { from: "OPEN", to: "IN_PROGRESS" },
+      });
+    }
 
     return NextResponse.json(
       agentMessage ? { message, agentMessage } : message,

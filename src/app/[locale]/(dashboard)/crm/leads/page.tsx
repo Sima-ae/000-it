@@ -58,6 +58,7 @@ export default function CrmLeadsPage() {
       return;
     }
     void qc.invalidateQueries({ queryKey: ["crm-leads"] });
+    void qc.invalidateQueries({ queryKey: ["dashboard-nav-badges"] });
   }
 
   async function convert(leadId: string) {
@@ -73,6 +74,7 @@ export default function CrmLeadsPage() {
     const client = await res.json();
     toast.success(t("converted"));
     void qc.invalidateQueries({ queryKey: ["crm-leads"] });
+    void qc.invalidateQueries({ queryKey: ["dashboard-nav-badges"] });
     window.location.href = `/${locale}/crm/clients/${client.id}`;
   }
 

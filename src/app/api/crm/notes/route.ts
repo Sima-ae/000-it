@@ -47,5 +47,16 @@ export async function POST(request: Request) {
     },
     include: { user: { select: { id: true, name: true } } },
   });
+
+  if (parsed.data.ticketId) {
+    const { recordTicketEvent } = await import("@/lib/crm/ticket-events");
+    await recordTicketEvent({
+      ticketId: parsed.data.ticketId,
+      actorId: authResult.session.user.id,
+      kind: "NOTE",
+      message: "Internal note added",
+    });
+  }
+
   return NextResponse.json(note, { status: 201 });
 }

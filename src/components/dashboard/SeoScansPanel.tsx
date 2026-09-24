@@ -3,10 +3,12 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useState, useTransition } from "react";
 import { useTranslations } from "next-intl";
+import { useQueryClient } from "@tanstack/react-query";
 import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { markSeoAnalysesSeen } from "@/lib/dashboard/nav-badges";
 
 export type SeoScanRow = {
   id: string;
@@ -28,6 +30,7 @@ export function SeoScansPanel({
 }) {
   const t = useTranslations("dashboard");
   const router = useRouter();
+  const qc = useQueryClient();
   const [scans, setScans] = useState(initialScans);
   const [pendingId, setPendingId] = useState<string | null>(null);
   const [deletingAll, setDeletingAll] = useState(false);
@@ -37,6 +40,16 @@ export function SeoScansPanel({
   useEffect(() => {
     setScans(initialScans);
   }, [initialScans]);
+
+  // Opening this page clears the sidebar badge until newer scans arrive.
+  useEffect(() => {
+    const newest = initialScans.reduce<string | null>((max, scan) => {
+      if (!max || scan.createdAt > max) return scan.createdAt;
+      return max;
+    }, null);
+    markSeoAnalysesSeen(newest || new Date().toISOString());
+    void qc.invalidateQueries({ queryKey: ["dashboard-nav-badges"] });
+  }, [initialScans, qc]);
 
   async function deleteOne(id: string) {
     if (!canManage || pendingId || deletingAll) return;

@@ -1,20 +1,29 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
+import type { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
 import { auth } from "@/lib/auth";
 import { canDelete, isStaffRole } from "@/lib/roles";
 import { canAccessTicket } from "@/lib/support";
+import { recordTicketEvent } from "@/lib/crm/ticket-events";
+import { parseTicketTags } from "@/lib/crm/tickets";
 
 type Params = { params: Promise<{ id: string }> };
 
 const patchSchema = z.object({
   subject: z.string().min(2).max(160).optional(),
+  description: z.string().max(10000).optional().nullable(),
   status: z.enum(["OPEN", "IN_PROGRESS", "WAITING", "RESOLVED", "CLOSED"]).optional(),
   priority: z.enum(["LOW", "MEDIUM", "HIGH", "URGENT"]).optional(),
   assignedToId: z.string().nullable().optional(),
   clientId: z.string().nullable().optional(),
   projectId: z.string().nullable().optional(),
   ticketType: z.string().max(80).optional().nullable(),
+  department: z.string().max(80).optional().nullable(),
+  category: z.string().max(80).optional().nullable(),
+  tags: z.array(z.string().min(1).max(40)).max(12).optional().nullable(),
+  dueAt: z.string().datetime().optional().nullable(),
+  favorite: z.boolean().optional(),
   guestToken: z.string().optional(),
 });
 
@@ -29,8 +38,13 @@ const ticketInclude = {
   },
   notes: {
     orderBy: { createdAt: "desc" as const },
-    take: 10,
+    take: 20,
     include: { user: { select: { id: true, name: true } } },
+  },
+  events: {
+    orderBy: { createdAt: "desc" as const },
+    take: 40,
+    include: { actor: { select: { id: true, name: true, email: true } } },
   },
 };
 
@@ -61,6 +75,7 @@ export async function GET(request: Request, { params }: Params) {
   const { guestToken: ticketGuestToken, ...safe } = ticket;
   return NextResponse.json({
     ...safe,
+    tags: parseTicketTags(ticket.tags),
     guestToken: guestToken && ticketGuestToken === guestToken ? ticketGuestToken : undefined,
   });
 }
@@ -81,21 +96,101 @@ export async function PATCH(request: Request, { params }: Params) {
   if (!existing) return NextResponse.json({ error: "Not found" }, { status: 404 });
 
   const data = parsed.data;
+  const events: {
+    kind: string;
+    message: string;
+    payload?: Prisma.InputJsonValue;
+  }[] = [];
+
+  if (data.status && data.status !== existing.status) {
+    events.push({
+      kind: "STATUS_CHANGED",
+      message: `Status changed from ${existing.status} to ${data.status}`,
+      payload: { from: existing.status, to: data.status },
+    });
+  }
+  if (data.priority && data.priority !== existing.priority) {
+    events.push({
+      kind: "PRIORITY_CHANGED",
+      message: `Priority changed from ${existing.priority} to ${data.priority}`,
+      payload: { from: existing.priority, to: data.priority },
+    });
+  }
+  if (data.assignedToId !== undefined && data.assignedToId !== existing.assignedToId) {
+    events.push({
+      kind: "ASSIGNED",
+      message: data.assignedToId
+        ? "Ticket assignment updated"
+        : "Ticket unassigned",
+      payload: {
+        from: existing.assignedToId ?? null,
+        to: data.assignedToId ?? null,
+      },
+    });
+  }
+  if (data.clientId !== undefined && data.clientId !== existing.clientId) {
+    events.push({
+      kind: "CLIENT_LINKED",
+      message: "Linked client updated",
+      payload: {
+        from: existing.clientId ?? null,
+        to: data.clientId ?? null,
+      },
+    });
+  }
+
+  const resolvedAt =
+    data.status === undefined
+      ? undefined
+      : data.status === "RESOLVED" || data.status === "CLOSED"
+        ? existing.resolvedAt ?? new Date()
+        : null;
+
   const ticket = await prisma.supportTicket.update({
     where: { id },
     data: {
       subject: data.subject,
+      description: data.description === undefined ? undefined : data.description,
       status: data.status,
       priority: data.priority,
       ticketType: data.ticketType === undefined ? undefined : data.ticketType,
+      department: data.department === undefined ? undefined : data.department,
+      category: data.category === undefined ? undefined : data.category,
+      tags:
+        data.tags === undefined
+          ? undefined
+          : data.tags === null
+            ? []
+            : parseTicketTags(data.tags),
+      dueAt:
+        data.dueAt === undefined
+          ? undefined
+          : data.dueAt
+            ? new Date(data.dueAt)
+            : null,
+      favorite: data.favorite,
       assignedToId: data.assignedToId === undefined ? undefined : data.assignedToId,
       clientId: data.clientId === undefined ? undefined : data.clientId,
       projectId: data.projectId === undefined ? undefined : data.projectId,
+      resolvedAt,
     },
     include: ticketInclude,
   });
 
-  return NextResponse.json(ticket);
+  for (const event of events) {
+    await recordTicketEvent({
+      ticketId: id,
+      actorId: session.user.id,
+      kind: event.kind,
+      message: event.message,
+      payload: event.payload,
+    });
+  }
+
+  return NextResponse.json({
+    ...ticket,
+    tags: parseTicketTags(ticket.tags),
+  });
 }
 
 export async function DELETE(_request: Request, { params }: Params) {

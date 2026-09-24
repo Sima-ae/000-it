@@ -2,6 +2,7 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
+import { useQuery } from "@tanstack/react-query";
 import { signOut } from "next-auth/react";
 import type { Role } from "@prisma/client";
 import {
@@ -23,6 +24,7 @@ import {
   CheckSquare,
   Building2,
   ShoppingBag,
+  ClipboardList,
 } from "lucide-react";
 import { localizedHref } from "@/i18n/pathnames";
 import { ThemeToggle } from "@/components/shared/ThemeToggle";
@@ -31,6 +33,7 @@ import { Button } from "@/components/ui/button";
 import { BrandLogo } from "@/components/shared/BrandLogo";
 import { cn } from "@/lib/utils";
 import { navForRole } from "@/lib/roles";
+import { readSeoSeenAt } from "@/lib/dashboard/nav-badges";
 
 const icons: Record<string, React.ComponentType<{ className?: string }>> = {
   "/dashboard": LayoutDashboard,
@@ -41,6 +44,7 @@ const icons: Record<string, React.ComponentType<{ className?: string }>> = {
   "/kennisbank-admin": BookOpen,
   "/crm/leads": Inbox,
   "/shop-admin": ShoppingBag,
+  "/orders": ClipboardList,
   "/crm/tickets": Ticket,
   "/todos": CheckSquare,
   "/users": Shield,
@@ -51,6 +55,30 @@ const icons: Record<string, React.ComponentType<{ className?: string }>> = {
   "/content-generator": Wand2,
   "/settings": Settings,
 };
+
+const BADGE_HREFS = ["/crm/leads", "/crm/tickets", "/seo-analysis", "/orders"] as const;
+
+type NavBadges = {
+  leads: number;
+  tickets: number;
+  seoAnalysis: number;
+  orders: number;
+};
+
+function badgeForHref(href: string, badges: NavBadges | undefined) {
+  if (!badges) return 0;
+  if (href === "/crm/leads") return badges.leads;
+  if (href === "/crm/tickets") return badges.tickets;
+  if (href === "/seo-analysis") return badges.seoAnalysis;
+  if (href === "/orders") return badges.orders;
+  return 0;
+}
+
+function formatBadgeCount(count: number) {
+  if (count <= 0) return null;
+  if (count > 99) return "99+";
+  return String(count);
+}
 
 export type SidebarUser = {
   name: string | null;
@@ -65,7 +93,39 @@ export function Sidebar({ user }: { user: SidebarUser }) {
   const role = user.role;
   const items = navForRole(role);
   const displayName = user.name?.trim() || user.email || "";
-  const displayRole = String(role).replaceAll("_", " ");
+  const displayRole = (() => {
+    const key = `role${role}` as
+      | "roleSUPER_ADMIN"
+      | "roleADMIN"
+      | "roleMANAGER"
+      | "roleCLIENT";
+    try {
+      return t(key);
+    } catch {
+      return String(role).replaceAll("_", " ");
+    }
+  })();
+
+  const showBadges = items.some((item) =>
+    BADGE_HREFS.includes(item.href as (typeof BADGE_HREFS)[number]),
+  );
+
+  const { data: badges } = useQuery({
+    queryKey: ["dashboard-nav-badges"],
+    enabled: showBadges,
+    queryFn: async () => {
+      const params = new URLSearchParams();
+      const seoSeenAt = readSeoSeenAt();
+      if (seoSeenAt) params.set("seoSeenAt", seoSeenAt);
+      const qs = params.toString();
+      const res = await fetch(
+        `/api/dashboard/nav-badges${qs ? `?${qs}` : ""}`,
+      );
+      if (!res.ok) throw new Error("Failed");
+      return (await res.json()) as NavBadges;
+    },
+    refetchInterval: 30_000,
+  });
 
   return (
     <aside className="w-full p-3 md:sticky md:top-3 md:h-[calc(100svh-1.5rem)] md:w-72 md:self-start md:p-3">
@@ -101,6 +161,7 @@ export function Sidebar({ user }: { user: SidebarUser }) {
               !longerMatch &&
               (pathname === href || pathname.startsWith(`${href}/`));
             const Icon = icons[item.href] || LayoutDashboard;
+            const badge = formatBadgeCount(badgeForHref(item.href, badges));
             return (
               <SoftLink
                 key={item.href}
@@ -110,8 +171,16 @@ export function Sidebar({ user }: { user: SidebarUser }) {
                   active && "bg-primary/10 text-foreground",
                 )}
               >
-                <Icon className="h-4 w-4" />
-                {t(item.key)}
+                <Icon className="h-4 w-4 shrink-0" />
+                <span className="min-w-0 flex-1 truncate">{t(item.key)}</span>
+                {badge ? (
+                  <span
+                    className="ml-auto inline-flex h-5 min-w-5 shrink-0 items-center justify-center rounded-full bg-accent px-1.5 text-[10px] font-semibold leading-none text-accent-foreground"
+                    aria-label={`${badge} new`}
+                  >
+                    {badge}
+                  </span>
+                ) : null}
               </SoftLink>
             );
           })}

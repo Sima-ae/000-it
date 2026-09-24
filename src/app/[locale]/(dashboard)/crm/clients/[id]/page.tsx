@@ -172,7 +172,7 @@ export default function CrmClientDetailPage() {
                 }) => (
                   <SoftLink
                     key={ticket.id}
-                    href={localizedHref(locale, "/crm/tickets")}
+                    href={localizedHref(locale, `/crm/tickets/${ticket.id}`)}
                     className="flex items-center justify-between rounded-xl border border-border px-3 py-2"
                   >
                     <span className="font-medium">{ticket.subject}</span>
