@@ -82,6 +82,12 @@ export const dashboardNav: DashboardNavItem[] = [
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
   },
   {
+    href: "/dashboard/activity-logs",
+    key: "activityLogs",
+    roles: ["SUPER_ADMIN", "ADMIN"],
+    sidebar: false,
+  },
+  {
     href: "/ai-agents",
     key: "agents",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],

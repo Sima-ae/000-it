@@ -4,12 +4,14 @@ import { useLocale, useTranslations } from "next-intl";
 import { useQuery } from "@tanstack/react-query";
 import {
   ArrowUpRight,
+  BookOpen,
   BriefcaseBusiness,
   FolderKanban,
+  Images,
   Inbox,
   Newspaper,
   Search,
-  Sparkles,
+  ShoppingBag,
   Ticket,
   Users,
 } from "lucide-react";
@@ -155,6 +157,7 @@ export default function DashboardPage() {
       return (await res.json()) as DashboardData;
     },
     retry: 1,
+    refetchInterval: 60 * 60 * 1000,
   });
 
   if (isLoading) {
@@ -484,6 +487,33 @@ export default function DashboardPage() {
         </div>
       </div>
 
+      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <QuickLink
+          href={localizedHref(locale, "/kennisbank-admin")}
+          title={t("kennisbank")}
+          description={t("adminQuickKennisbank")}
+          icon={BookOpen}
+        />
+        <QuickLink
+          href={localizedHref(locale, "/nieuws-admin")}
+          title={t("news")}
+          description={t("adminQuickNews")}
+          icon={Newspaper}
+        />
+        <QuickLink
+          href={localizedHref(locale, "/portfolio-admin")}
+          title={t("portfolio")}
+          description={t("adminQuickPortfolio")}
+          icon={Images}
+        />
+        <QuickLink
+          href={localizedHref(locale, "/shop-admin")}
+          title={t("shop")}
+          description={t("adminQuickShop")}
+          icon={ShoppingBag}
+        />
+      </div>
+
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
         <StatCard
           label={t("leads")}
@@ -517,8 +547,29 @@ export default function DashboardPage() {
         />
       </div>
 
+      <Card>
+        <CardHeader>
+          <CardTitle>{t("projects")}</CardTitle>
+        </CardHeader>
+        <CardContent className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {data.recentProjects.map((project) => (
+            <SoftLink
+              key={project.id}
+              href={`/${locale}/projects/${project.id}`}
+              className="rounded-xl border border-border p-4 transition hover:border-primary/50"
+            >
+              <div className="flex items-center justify-between gap-2">
+                <h3 className="font-medium">{project.name}</h3>
+                <Badge variant="secondary">{project.status}</Badge>
+              </div>
+              <p className="mt-1 text-xs text-muted-foreground">{project.type}</p>
+              <Progress className="mt-3" value={project.progress} />
+            </SoftLink>
+          ))}
+        </CardContent>
+      </Card>
+
       <div className="grid gap-4 lg:grid-cols-2">
-        <StaffTodoPanel />
         <Card>
           <CardHeader>
             <CardTitle>{t("tickets")}</CardTitle>
@@ -538,37 +589,11 @@ export default function DashboardPage() {
               </SoftLink>
             ))}
             {!data.recentTickets.length && (
-              <p className="text-sm text-muted-foreground">{t("noTicketsYet")}</p>
+              <p className="text-sm text-accent">{t("noTicketsYet")}</p>
             )}
           </CardContent>
         </Card>
-      </div>
-
-      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-        <QuickLink
-          href={localizedHref(locale, "/crm/tickets")}
-          title={t("tickets")}
-          description={t("liveChatInbox")}
-          icon={Ticket}
-        />
-        <QuickLink
-          href={localizedHref(locale, "/users")}
-          title={t("users")}
-          description={t("adminQuickUsers")}
-          icon={Sparkles}
-        />
-        <QuickLink
-          href={localizedHref(locale, "/crm/leads")}
-          title={t("leads")}
-          description={t("adminQuickLeads")}
-          icon={Inbox}
-        />
-        <QuickLink
-          href={localizedHref(locale, "/content-generator")}
-          title={t("content")}
-          description={t("adminQuickContent")}
-          icon={Newspaper}
-        />
+        <StaffTodoPanel />
       </div>
 
       <div className="grid gap-4 lg:grid-cols-2">
@@ -606,8 +631,13 @@ export default function DashboardPage() {
         </Card>
 
         <Card>
-          <CardHeader>
+          <CardHeader className="flex flex-row items-center justify-between gap-3 space-y-0">
             <CardTitle>{t("recentActivity")}</CardTitle>
+            <Button asChild variant="outline" size="sm">
+              <SoftLink href={localizedHref(locale, "/dashboard/activity-logs")}>
+                {t("viewAllActivity")}
+              </SoftLink>
+            </Button>
           </CardHeader>
           <CardContent className="space-y-3">
             {data.activities.map((activity) => (
@@ -624,28 +654,6 @@ export default function DashboardPage() {
           </CardContent>
         </Card>
       </div>
-
-      <Card>
-        <CardHeader>
-          <CardTitle>{t("projects")}</CardTitle>
-        </CardHeader>
-        <CardContent className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-          {data.recentProjects.map((project) => (
-            <SoftLink
-              key={project.id}
-              href={`/${locale}/projects/${project.id}`}
-              className="rounded-xl border border-border p-4 transition hover:border-primary/50"
-            >
-              <div className="flex items-center justify-between gap-2">
-                <h3 className="font-medium">{project.name}</h3>
-                <Badge variant="secondary">{project.status}</Badge>
-              </div>
-              <p className="mt-1 text-xs text-muted-foreground">{project.type}</p>
-              <Progress className="mt-3" value={project.progress} />
-            </SoftLink>
-          ))}
-        </CardContent>
-      </Card>
     </div>
   );
 }

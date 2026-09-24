@@ -71,7 +71,7 @@ export async function GET() {
     const agentList = await prisma.aIAgent.findMany({
       where: scope,
       take: 8,
-      orderBy: { updatedAt: "desc" },
+      orderBy: { name: "asc" },
     });
 
     const recentClients = isStaffRole(role)

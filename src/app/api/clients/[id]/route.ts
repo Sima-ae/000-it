@@ -65,7 +65,11 @@ export async function GET(
           _count: { select: { messages: true } },
         },
       },
-      invoices: { orderBy: { createdAt: "desc" }, take: 20 },
+      invoices: {
+        where: { deletedAt: null },
+        orderBy: { createdAt: "desc" },
+        take: 20,
+      },
       crmNotes: {
         orderBy: { createdAt: "desc" },
         take: 20,

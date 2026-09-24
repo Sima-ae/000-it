@@ -50,11 +50,16 @@ export async function GET() {
       staff
         ? prisma.invoice.count({
             where: canSeeAllInvoices(role)
-              ? { status: { in: ["DRAFT", "SENT", "OVERDUE"] } }
-              : { createdById: userId, status: { in: ["DRAFT", "SENT", "OVERDUE"] } },
+              ? { deletedAt: null, status: { in: ["DRAFT", "SENT", "OVERDUE"] } }
+              : {
+                  createdById: userId,
+                  deletedAt: null,
+                  status: { in: ["DRAFT", "SENT", "OVERDUE"] },
+                },
           })
         : prisma.invoice.count({
             where: {
+              deletedAt: null,
               status: { in: ["SENT", "OVERDUE", "PAID"] },
               client: { email: session.user.email || "" },
             },

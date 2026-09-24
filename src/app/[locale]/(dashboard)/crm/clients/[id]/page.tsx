@@ -206,17 +206,26 @@ export default function CrmClientDetailPage() {
               </CardHeader>
               <CardContent className="space-y-2">
                 {(client.invoices || []).map(
-                  (inv: { id: string; number: string; status: string; amount: number }) => (
-                    <div
-                      key={inv.id}
-                      className="flex items-center justify-between rounded-lg border border-border px-3 py-2 text-sm"
-                    >
-                      <span>{inv.number}</span>
-                      <span>
-                        €{inv.amount} · {inv.status}
-                      </span>
-                    </div>
-                  ),
+                  (inv: { id: string; number: string; status: string; amount: number }) => {
+                    const statusLabels: Record<string, string> = {
+                      DRAFT: t("invoiceStatusDraft"),
+                      SENT: t("invoiceStatusSent"),
+                      PAID: t("invoiceStatusPaid"),
+                      OVERDUE: t("invoiceStatusOverdue"),
+                      CANCELLED: t("invoiceStatusCancelled"),
+                    };
+                    return (
+                      <div
+                        key={inv.id}
+                        className="flex items-center justify-between rounded-lg border border-border px-3 py-2 text-sm"
+                      >
+                        <span>{inv.number}</span>
+                        <span>
+                          €{Number(inv.amount).toFixed(2)} · {statusLabels[inv.status] || inv.status}
+                        </span>
+                      </div>
+                    );
+                  },
                 )}
                 {!client.invoices?.length ? (
                   <p className="text-sm text-muted-foreground">{t("emptyInvoices")}</p>
