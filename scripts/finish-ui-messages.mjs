@@ -17,7 +17,7 @@ const CONCURRENCY = Number(process.env.MT_CONCURRENCY || 2);
 const DELAY = Number(process.env.MT_DELAY_MS || 350);
 
 const KEEP_AS_IS =
-  /^(FAQ|Portfolio|TripleZero iT( Hosting)?|WordPress|WooCommerce|AI|AEO|GEO|SEO|Enterprise|Business|Support|Chatbots|Workflows|Webdesign|Webhosting|E-commerce|Marketing|Social Media|Printing|Graphic Design|Grafisch Design|Digital Design|Digital design|Contact|Account|Home|Login|CRM|Extra Growth|Custom|Score|Name|Collaboration|Newsletter|Cookies|Force majeure|Privacy|Download|Fix Bugs and Errors|Webmail|Dashboard|Agent 000|Pro|Double|Premium|Online|URL|Generator|Super admin|Product|Shared Hosting|WordPress Hosting|VPS Hosting|info@000-it\.com|24\/7|Business Bay, Al Abraj St\.)$/i;
+  /^(FAQ|Portfolio|TripleZero iT( Hosting)?|WordPress|WooCommerce|AI|AEO|GEO|SEO|Enterprise|Business|Support|Chatbots|Workflows|Webdesign|Webhosting|E-commerce|Marketing|Social Media|Printing|Graphic Design|Grafisch Design|Digital Design|Digital design|Contact|Account|Home|Login|CRM|Extra Growth|Custom|Score|Name|Collaboration|Newsletter|Cookies|Force majeure|Privacy|Download|Fix Bugs and Errors|Webmail|Dashboard|Agent 000|Pro|Double|Premium|Online|URL|Generator|Super admin|Product|Shared Hosting|WordPress Hosting|VPS Hosting|info@000-it\.com|24\/7|57P7\+2R2 - Marasi Dr)$/i;
 
 const FORCE_PREFIXES = [
   "agent000.",

@@ -40,6 +40,7 @@ export default async function ContactPage({
     t("addressLine1"),
     t("addressLine2"),
     t("addressLine3"),
+    t("addressLine4"),
   ].filter(Boolean);
 
   return (
