@@ -36,10 +36,10 @@ export async function GET(req: NextRequest) {
     ...(q
       ? {
           OR: [
-            { description: { contains: q, mode: "insensitive" } },
-            { user: { name: { contains: q, mode: "insensitive" } } },
-            { user: { email: { contains: q, mode: "insensitive" } } },
-            { project: { name: { contains: q, mode: "insensitive" } } },
+            { description: { contains: q } },
+            { user: { name: { contains: q } } },
+            { user: { email: { contains: q } } },
+            { project: { name: { contains: q } } },
           ],
         }
       : {}),
