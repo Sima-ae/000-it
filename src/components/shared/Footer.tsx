@@ -9,7 +9,7 @@ import { serviceGroupHref } from "@/content/fixweb/catalog";
 import { catalogGroupTitle } from "@/content/fixweb/catalog-title";
 import { localizedHref } from "@/i18n/pathnames";
 
-const WEBMAIL_URL = "https://000-it.com/webmail";
+const WEBMAIL_URL = "https://web-mail.cloud";
 
 type FooterLink = {
   href: string;

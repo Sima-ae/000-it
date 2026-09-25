@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 import { localizedHref } from "@/i18n/pathnames";
 
 const CLOSE_DELAY_MS = 180;
-const WEBMAIL_URL = "https://000-it.com/webmail";
+const WEBMAIL_URL = "https://web-mail.cloud";
 
 export function AccountMenu({ className }: { className?: string }) {
   const t = useTranslations("nav");
