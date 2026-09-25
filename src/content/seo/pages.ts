@@ -68,7 +68,7 @@ export const staticPageSeo: PageSeo[] = [
       nl: [...CORE_NL, "AI-scan", "webdesign", "automatisering", "zzp"],
       en: [...CORE_EN, "AI scan", "web design", "automation", "freelancer"],
     },
-    image: "/branding/og-default.png",
+    image: "/branding/banner.png",
   },
   {
     path: "/diensten",
@@ -233,6 +233,7 @@ export const staticPageSeo: PageSeo[] = [
       nl: [...CORE_NL, "nieuws", "AI nieuws", "tech nieuws"],
       en: [...CORE_EN, "news", "AI news", "tech news"],
     },
+    image: "/branding/images/post-13-img.jpg",
   },
   {
     path: "/faq",
@@ -269,6 +270,7 @@ export const staticPageSeo: PageSeo[] = [
       nl: [...CORE_NL, "kennisbank", "hosting", "DirectAdmin", "WordPress", "e-mail"],
       en: [...CORE_EN, "knowledge base", "hosting", "DirectAdmin", "WordPress", "email"],
     },
+    image: "/branding/images/tablet-02.png",
   },
   {
     path: "/design",

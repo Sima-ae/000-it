@@ -4,17 +4,25 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { GlassCard } from "@/components/marketing/GlassCard";
 import { Reveal } from "@/components/marketing/Reveal";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { KennisbankArticleBody } from "@/components/kennisbank/KennisbankArticleBody";
 import {
   getArticleBySlug,
   getCategoryBySlug,
   listArticles,
 } from "@/lib/kennisbank";
+import { brandingImageForKennisbank } from "@/lib/branding-images";
 import { localizedHref } from "@/i18n/pathnames";
-import { absoluteUrl, hreflangAlternates, localePath } from "@/lib/seo";
+import {
+  breadcrumbJsonLd,
+  buildKennisbankArticleMetadata,
+  kennisbankArticleJsonLd,
+  localePath,
+  organizationJsonLd,
+} from "@/lib/seo";
 import { resolveKennisbankParams } from "@/lib/resolve-entity-param";
 import { canonicalEntityKey } from "@/lib/entity-slug-cache";
-import { hydrateEntitySlugs } from "@/lib/entity-slugs";
+import { hydrateAllEntitySlugs, hydrateEntitySlugs } from "@/lib/entity-slugs";
 
 export const dynamic = "force-dynamic";
 
@@ -25,25 +33,24 @@ type Params = {
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { locale, category: rawCategory, slug: rawSlug } = await params;
   await hydrateEntitySlugs(locale);
+  await hydrateAllEntitySlugs();
   const category = canonicalEntityKey(locale, "kb_category", rawCategory);
   const slug = canonicalEntityKey(locale, "kb_article", rawSlug);
-  const t = await getTranslations({ locale, namespace: "kennisbank" });
   const article = await getArticleBySlug(slug, { locale }).catch(() => null);
+  const cat = await getCategoryBySlug(category, { locale }).catch(() => null);
   if (!article) return {};
-  const title =
-    article.seoTitle ||
-    `${article.title} | TripleZero iT ${t("seoTitleSuffix")}`;
-  const description = article.seoDescription || article.excerpt;
-  const path = `/kennisbank/${category}/${slug}`;
-  const alts = hreflangAlternates(path);
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: absoluteUrl(localePath(locale, path)),
-      languages: alts.languages,
-    },
-  };
+  return buildKennisbankArticleMetadata({
+    locale,
+    categorySlug: category,
+    articleSlug: slug,
+    title: article.title,
+    description: article.seoDescription || article.excerpt,
+    seoTitle: article.seoTitle,
+    categoryName: cat?.name || article.categoryNames[0],
+    image: brandingImageForKennisbank(category),
+    tags: article.categoryNames,
+    updatedAt: article.updatedAt,
+  });
 }
 
 function extractToc(html: string): { id: string; text: string }[] {
@@ -91,9 +98,38 @@ export default async function KennisbankArticlePage({ params }: Params) {
 
   const bodyWithIds = injectHeadingIds(article.bodyHtml);
   const toc = extractToc(bodyWithIds);
+  const ogImage = brandingImageForKennisbank(category);
+  const articlePath = localePath(
+    locale,
+    `/kennisbank/${category}/${slug}`,
+  );
 
   return (
     <div className="relative overflow-hidden">
+      <JsonLd data={organizationJsonLd()} />
+      <JsonLd
+        data={kennisbankArticleJsonLd({
+          locale,
+          categorySlug: category,
+          articleSlug: slug,
+          title: article.title,
+          description: article.seoDescription || article.excerpt,
+          categoryName: cat.name,
+          image: ogImage,
+          updatedAt: article.updatedAt,
+        })}
+      />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "TripleZero iT", path: localizedHref(locale, "/") },
+          { name: t("breadcrumb"), path: localizedHref(locale, "/kennisbank") },
+          {
+            name: cat.name,
+            path: localizedHref(locale, `/kennisbank/${category}`),
+          },
+          { name: article.title, path: articlePath },
+        ])}
+      />
       <div
         className="pointer-events-none absolute inset-x-0 top-0 h-80 bg-linear-to-b from-primary/10 via-transparent to-transparent"
         aria-hidden

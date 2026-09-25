@@ -102,3 +102,26 @@ export function brandingFallbackForServiceSlug(
   if (groupId) return brandingImageForServiceGroup(groupId);
   return undefined;
 }
+
+/** Featured / OG image for kennisbank categories and articles. */
+export function brandingImageForKennisbank(categorySlug: string): string {
+  const slug = (categorySlug || "").toLowerCase();
+  if (/wordpress|bloggen/.test(slug)) return BRANDING_IMAGES.wordpressDashboard;
+  if (/ai-scan|ai-agents|aeo|geo|seo/.test(slug)) {
+    return BRANDING_IMAGES.analyticsDashboard;
+  }
+  if (/veilig|beveiliging|ssl|firewall|spam/.test(slug)) {
+    return BRANDING_IMAGES.tabletCrm;
+  }
+  if (/hosting|vps|directadmin|cyberpanel|plesk|php|ftp|opslag/.test(slug)) {
+    return BRANDING_IMAGES.tabletCrm;
+  }
+  if (/e-mail|webmail|microsoft|mail/.test(slug)) {
+    return BRANDING_IMAGES.consultantLaptop;
+  }
+  if (/domein|dns/.test(slug)) return BRANDING_IMAGES.development;
+  if (/shop|pakket|factuur|crm|ticket|account/.test(slug)) {
+    return BRANDING_IMAGES.dashboardOverview;
+  }
+  return BRANDING_IMAGES.tabletAnalytics;
+}

@@ -3,14 +3,21 @@ import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Reveal } from "@/components/marketing/Reveal";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { KennisbankArticleList } from "@/components/kennisbank/KennisbankArticleList";
 import { KennisbankIllustration } from "@/components/kennisbank/KennisbankIllustration";
 import { getCategoryBySlug, listArticles } from "@/lib/kennisbank";
-import { absoluteUrl, hreflangAlternates, localePath } from "@/lib/seo";
+import { brandingImageForKennisbank } from "@/lib/branding-images";
+import {
+  breadcrumbJsonLd,
+  buildKennisbankCategoryMetadata,
+  localePath,
+  organizationJsonLd,
+} from "@/lib/seo";
 import { localizedHref } from "@/i18n/pathnames";
 import { resolveKennisbankParams } from "@/lib/resolve-entity-param";
 import { canonicalEntityKey } from "@/lib/entity-slug-cache";
-import { hydrateEntitySlugs } from "@/lib/entity-slugs";
+import { hydrateAllEntitySlugs, hydrateEntitySlugs } from "@/lib/entity-slugs";
 
 export const dynamic = "force-dynamic";
 
@@ -19,24 +26,19 @@ type Params = { params: Promise<{ locale: string; category: string }> };
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { locale, category: rawCategory } = await params;
   await hydrateEntitySlugs(locale);
+  await hydrateAllEntitySlugs();
   const category = canonicalEntityKey(locale, "kb_category", rawCategory);
   const t = await getTranslations({ locale, namespace: "kennisbank" });
   const cat = await getCategoryBySlug(category, { locale }).catch(() => null);
   if (!cat) return {};
-  const title = `${cat.name} — ${t("seoTitleSuffix")} | TripleZero iT`;
-  const description =
-    cat.description ||
-    `${t("title")}: ${cat.name} · TripleZero iT`;
-  const path = `/kennisbank/${category}`;
-  const alts = hreflangAlternates(path);
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: absoluteUrl(localePath(locale, path)),
-      languages: alts.languages,
-    },
-  };
+  return buildKennisbankCategoryMetadata({
+    locale,
+    categorySlug: category,
+    name: cat.name,
+    description: cat.description || "",
+    image: brandingImageForKennisbank(category),
+    titleSuffix: t("seoTitleSuffix"),
+  });
 }
 
 export default async function KennisbankCategoryPage({ params }: Params) {
@@ -54,6 +56,17 @@ export default async function KennisbankCategoryPage({ params }: Params) {
 
   return (
     <div className="relative overflow-hidden">
+      <JsonLd data={organizationJsonLd()} />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "TripleZero iT", path: localizedHref(locale, "/") },
+          { name: t("breadcrumb"), path: localizedHref(locale, "/kennisbank") },
+          {
+            name: cat.name,
+            path: localePath(locale, `/kennisbank/${category}`),
+          },
+        ])}
+      />
       <div
         className="pointer-events-none absolute inset-x-0 top-0 h-88 bg-linear-to-b from-primary/10 via-transparent to-transparent"
         aria-hidden

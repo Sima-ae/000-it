@@ -14,7 +14,8 @@ export const SITE_SEO = {
     process.env.NEXT_PUBLIC_APP_URL ||
     "https://000-it.com",
   email: "info@000-it.com",
-  defaultOgImage: "/branding/og-default.png",
+  /** Prefer a real existing asset — used for OG/Twitter when no page image is set. */
+  defaultOgImage: "/branding/banner.png",
   defaultDescription: {
     nl: "Ontdek alle AI mogelijkheden voor ondernemers en zzp'ers: AI-integratie, AEO, GEO, SEO, marketing en maatwerk software.",
     en: "Discover all AI possibilities for entrepreneurs and freelancers: AI integration, AEO, GEO, SEO, marketing and custom software.",
@@ -167,9 +168,13 @@ export function geoMetadataOther(city?: Pick<SeoCity, "nameNl" | "nameEn" | "cou
       ICBM: `${city.latitude}, ${city.longitude}`,
     };
   }
+  const placename =
+    locale === "nl"
+      ? SITE_SEO.geo.placename
+      : SITE_SEO.geo.country;
   return {
     "geo.region": SITE_SEO.geo.region,
-    "geo.placename": SITE_SEO.geo.placename,
+    "geo.placename": placename,
     "geo.position": SITE_SEO.geo.position,
     ICBM: SITE_SEO.geo.icbm,
   };
@@ -179,6 +184,59 @@ function truncate(text: string, max = 160) {
   const clean = text.replace(/\s+/g, " ").trim();
   if (clean.length <= max) return clean;
   return `${clean.slice(0, max - 1).trim()}…`;
+}
+
+/** Open Graph locale codes for enabled site languages. */
+const OG_LOCALE_BY_CODE: Record<string, string> = {
+  nl: "nl_NL",
+  en: "en_US",
+  fr: "fr_FR",
+  de: "de_DE",
+  es: "es_ES",
+  pt: "pt_PT",
+  it: "it_IT",
+  el: "el_GR",
+  pl: "pl_PL",
+  cs: "cs_CZ",
+  sk: "sk_SK",
+  hu: "hu_HU",
+  ro: "ro_RO",
+  bg: "bg_BG",
+  hr: "hr_HR",
+  sr: "sr_RS",
+  bs: "bs_BA",
+  cnr: "sr_ME",
+  sq: "sq_AL",
+  mk: "mk_MK",
+  lt: "lt_LT",
+  da: "da_DK",
+  sv: "sv_SE",
+  no: "nb_NO",
+  fi: "fi_FI",
+  uk: "uk_UA",
+  ru: "ru_RU",
+  tr: "tr_TR",
+  he: "he_IL",
+  ar: "ar_SA",
+  ka: "ka_GE",
+  hy: "hy_AM",
+  az: "az_AZ",
+  zh: "zh_CN",
+  ja: "ja_JP",
+};
+
+export function openGraphLocale(locale: string) {
+  return OG_LOCALE_BY_CODE[locale] || (locale === "nl" ? "nl_NL" : "en_US");
+}
+
+export function htmlLangTag(locale: string) {
+  const og = openGraphLocale(locale);
+  return og.replace("_", "-");
+}
+
+function coreKeywordsForLocale(locale: string): string[] {
+  if (locale === "nl") return [...SITE_SEO.defaultKeywords.nl];
+  return [...SITE_SEO.defaultKeywords.en];
 }
 
 export function defaultOgImage(path?: string | null) {
@@ -199,7 +257,6 @@ export type BuildPageMetadataInput = {
 };
 
 export function buildPageMetadata(input: BuildPageMetadataInput): Metadata {
-  const isNl = input.locale === "nl";
   const path = input.path === "/" ? "" : input.path.startsWith("/") ? input.path : `/${input.path}`;
   const url = absoluteUrl(localePath(input.locale, path));
   const langs = hreflangAlternates(path || "/");
@@ -208,12 +265,15 @@ export function buildPageMetadata(input: BuildPageMetadataInput): Metadata {
   const keywords =
     input.keywords?.length
       ? input.keywords
-      : isNl
-        ? [...SITE_SEO.defaultKeywords.nl]
-        : [...SITE_SEO.defaultKeywords.en];
-  const ogLocale = isNl ? "nl_NL" : "en_US";
-  const altLocale = isNl ? "en_US" : "nl_NL";
+      : coreKeywordsForLocale(input.locale);
+  const ogLocale = openGraphLocale(input.locale);
+  const altLocale = openGraphLocale(input.locale === "nl" ? "en" : "nl");
   const description = truncate(input.description);
+  const imageType = image.toLowerCase().endsWith(".jpg") || image.toLowerCase().endsWith(".jpeg")
+    ? "image/jpeg"
+    : image.toLowerCase().endsWith(".webp")
+      ? "image/webp"
+      : "image/png";
 
   return {
     title: input.title,
@@ -251,7 +311,7 @@ export function buildPageMetadata(input: BuildPageMetadataInput): Metadata {
         {
           url: image,
           secureUrl: image,
-          type: "image/png",
+          type: imageType,
           width: 1200,
           height: 630,
           alt: imageAlt,
@@ -454,9 +514,9 @@ export function buildNewsArticleMetadata(
   const keywords = buildNewsKeywords(post, locale);
   const urlPath = newsArticlePath(locale, post.id);
   const url = absoluteUrl(urlPath);
-  const image = post.coverImage ? absoluteUrl(post.coverImage) : undefined;
-  const ogLocale = locale === "nl" ? "nl_NL" : "en_US";
-  const altLocale = locale === "nl" ? "en_US" : "nl_NL";
+  const image = post.coverImage ? absoluteUrl(post.coverImage) : defaultOgImage();
+  const ogLocale = openGraphLocale(locale);
+  const altLocale = openGraphLocale(locale === "nl" ? "en" : "nl");
   const published = post.date || undefined;
 
   return {
@@ -494,25 +554,23 @@ export function buildNewsArticleMetadata(
       modifiedTime: published,
       authors: [post.author || SITE_SEO.name],
       tags: keywords,
-      images: image
-        ? [
-            {
-              url: image,
-              width: 1200,
-              height: 630,
-              alt: title,
-            },
-          ]
-        : undefined,
+      images: [
+        {
+          url: image,
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: image ? [image] : undefined,
+      images: [image],
     },
     other: {
-      ...geoMetadataOther(),
+      ...geoMetadataOther(undefined, locale),
       "article:published_time": published || "",
       "article:author": post.author || SITE_SEO.name,
       "article:section": post.industry || "",
@@ -529,32 +587,14 @@ export function buildNewsIndexMetadata(locale: string, page = 1): Metadata {
     : "AI and tech news from TripleZero iT: analysis, product updates and practical insights.";
   const path = page > 1 ? `/nieuws?page=${page}` : "/nieuws";
   const url = absoluteUrl(localePath(locale, path.split("?")[0]));
-  const keywords = isNl
-    ? [
-        "nieuws",
-        "AI nieuws",
-        "tech nieuws",
-        "TripleZero iT",
-        "Azië",
-        "Europa",
-        "VAE",
-        "USA",
-        "Nederland",
-        "kunstmatige intelligentie",
-      ]
-    : [
-        "news",
-        "AI news",
-        "tech news",
-        "TripleZero iT",
-        "Asia",
-        "Europe",
-        "UAE",
-        "USA",
-        "Netherlands",
-        "artificial intelligence",
-      ];
+  const keywords = [
+    ...coreKeywordsForLocale(locale),
+    ...(isNl
+      ? ["nieuws", "AI nieuws", "tech nieuws", "kunstmatige intelligentie"]
+      : ["news", "AI news", "tech news", "artificial intelligence"]),
+  ];
   const langs = hreflangAlternates("/nieuws");
+  const image = defaultOgImage();
 
   return {
     title: page > 1 ? `${title} · ${isNl ? "Pagina" : "Page"} ${page}` : title,
@@ -574,14 +614,23 @@ export function buildNewsIndexMetadata(locale: string, page = 1): Metadata {
       title: `${title} · ${SITE_SEO.name}`,
       description,
       siteName: SITE_SEO.name,
-      locale: isNl ? "nl_NL" : "en_US",
+      locale: openGraphLocale(locale),
+      images: [
+        {
+          url: image,
+          width: 1200,
+          height: 630,
+          alt: `${title} · ${SITE_SEO.name}`,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: `${title} · ${SITE_SEO.name}`,
       description,
+      images: [image],
     },
-    other: geoMetadataOther(),
+    other: geoMetadataOther(undefined, locale),
   };
 }
 
@@ -654,7 +703,9 @@ export function cityServiceJsonLd(city: SeoCity, locale: string) {
 
 export function newsArticleJsonLd(post: NewsPost, locale: string) {
   const url = absoluteUrl(newsArticlePath(locale, post.id));
-  const image = post.coverImage ? absoluteUrl(post.coverImage) : undefined;
+  const image = post.coverImage
+    ? absoluteUrl(post.coverImage)
+    : defaultOgImage();
   const keywords = buildNewsKeywords(post, locale);
 
   return {
@@ -666,7 +717,7 @@ export function newsArticleJsonLd(post: NewsPost, locale: string) {
     },
     headline: post.title,
     description: truncate(post.excerpt || post.description || post.title),
-    image: image ? [image] : undefined,
+    image: [image],
     datePublished: post.date,
     dateModified: post.date,
     author: {
@@ -677,14 +728,218 @@ export function newsArticleJsonLd(post: NewsPost, locale: string) {
       "@type": "Organization",
       name: SITE_SEO.name,
       url: siteOrigin(),
+      logo: {
+        "@type": "ImageObject",
+        url: absoluteUrl("/branding/WEBLOGO-TripleZero-iT.png"),
+      },
     },
     articleSection: post.industry || (locale === "nl" ? "Nieuws" : "News"),
     keywords: keywords.join(", "),
-    inLanguage: locale === "nl" ? "nl-NL" : "en-US",
+    inLanguage: htmlLangTag(locale),
     isAccessibleForFree: true,
     about: {
       "@type": "Thing",
       name: post.industry || "Artificial Intelligence",
+    },
+    contentLocation: {
+      "@type": "Place",
+      name: SITE_SEO.geo.placename,
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: SITE_SEO.geo.countryCode,
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: SITE_SEO.geo.latitude,
+        longitude: SITE_SEO.geo.longitude,
+      },
+    },
+  };
+}
+
+export function buildKennisbankKeywords(opts: {
+  locale: string;
+  title: string;
+  categoryName?: string;
+  categorySlug?: string;
+  extra?: string[];
+}) {
+  const isNl = opts.locale === "nl";
+  const base = [
+    ...coreKeywordsForLocale(opts.locale),
+    opts.title,
+    opts.categoryName || "",
+    opts.categorySlug?.replace(/-/g, " ") || "",
+    ...(isNl
+      ? ["kennisbank", "handleiding", "uitleg", "hosting", "WordPress"]
+      : [
+          "knowledge base",
+          "guide",
+          "how to",
+          "hosting",
+          "WordPress",
+        ]),
+    ...(opts.extra || []),
+  ];
+  return Array.from(
+    new Set(base.map((k) => k.trim()).filter(Boolean)),
+  );
+}
+
+export function buildKennisbankCategoryMetadata(opts: {
+  locale: string;
+  categorySlug: string;
+  name: string;
+  description: string;
+  image?: string | null;
+  titleSuffix: string;
+}): Metadata {
+  const title = `${opts.name} — ${opts.titleSuffix} | ${SITE_SEO.name}`;
+  const description = truncate(
+    opts.description ||
+      (opts.locale === "nl"
+        ? `${opts.name} in de TripleZero iT kennisbank: stapsgewijze uitleg over AEO, GEO, SEO, hosting en AI.`
+        : `${opts.name} in the TripleZero iT knowledge base: step-by-step guidance on AEO, GEO, SEO, hosting and AI.`),
+  );
+  return buildPageMetadata({
+    locale: opts.locale,
+    path: `/kennisbank/${opts.categorySlug}`,
+    title,
+    description,
+    keywords: buildKennisbankKeywords({
+      locale: opts.locale,
+      title: opts.name,
+      categoryName: opts.name,
+      categorySlug: opts.categorySlug,
+    }),
+    image: opts.image || SITE_SEO.defaultOgImage,
+    imageAlt: opts.name,
+    type: "website",
+  });
+}
+
+export function buildKennisbankArticleMetadata(opts: {
+  locale: string;
+  categorySlug: string;
+  articleSlug: string;
+  title: string;
+  description: string;
+  seoTitle?: string | null;
+  image?: string | null;
+  categoryName?: string;
+  tags?: string[];
+  updatedAt?: string | Date | null;
+}): Metadata {
+  const title =
+    opts.seoTitle?.trim() ||
+    `${opts.title} | ${SITE_SEO.name}`;
+  const description = truncate(opts.description || opts.title);
+  const meta = buildPageMetadata({
+    locale: opts.locale,
+    path: `/kennisbank/${opts.categorySlug}/${opts.articleSlug}`,
+    title,
+    description,
+    keywords: buildKennisbankKeywords({
+      locale: opts.locale,
+      title: opts.title,
+      categoryName: opts.categoryName,
+      categorySlug: opts.categorySlug,
+      extra: opts.tags,
+    }),
+    image: opts.image || SITE_SEO.defaultOgImage,
+    imageAlt: opts.title,
+    type: "article",
+  });
+  const published =
+    opts.updatedAt instanceof Date
+      ? opts.updatedAt.toISOString()
+      : opts.updatedAt || undefined;
+  const keywords = buildKennisbankKeywords({
+    locale: opts.locale,
+    title: opts.title,
+    categoryName: opts.categoryName,
+    categorySlug: opts.categorySlug,
+    extra: opts.tags,
+  });
+  const other: Record<string, string> = {
+    ...(meta.other as Record<string, string> | undefined),
+    "article:section": opts.categoryName || "",
+    "article:tag": keywords.join(", "),
+  };
+  if (published) {
+    other["article:published_time"] = published;
+    other["article:modified_time"] = published;
+  }
+  return {
+    ...meta,
+    openGraph: {
+      ...meta.openGraph,
+      type: "article",
+      publishedTime: published,
+      modifiedTime: published,
+      tags: keywords,
+    },
+    other,
+  };
+}
+
+export function kennisbankArticleJsonLd(opts: {
+  locale: string;
+  categorySlug: string;
+  articleSlug: string;
+  title: string;
+  description: string;
+  categoryName?: string;
+  image?: string | null;
+  updatedAt?: string | Date | null;
+}) {
+  const path = `/kennisbank/${opts.categorySlug}/${opts.articleSlug}`;
+  const url = absoluteUrl(localePath(opts.locale, path));
+  const image = defaultOgImage(opts.image);
+  const modified =
+    opts.updatedAt instanceof Date
+      ? opts.updatedAt.toISOString()
+      : opts.updatedAt || undefined;
+  const keywords = buildKennisbankKeywords({
+    locale: opts.locale,
+    title: opts.title,
+    categoryName: opts.categoryName,
+    categorySlug: opts.categorySlug,
+  });
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
+    headline: opts.title,
+    description: truncate(opts.description || opts.title),
+    image: [image],
+    datePublished: modified,
+    dateModified: modified,
+    author: {
+      "@type": "Organization",
+      name: SITE_SEO.name,
+      url: siteOrigin(),
+    },
+    publisher: {
+      "@type": "Organization",
+      name: SITE_SEO.name,
+      url: siteOrigin(),
+      logo: {
+        "@type": "ImageObject",
+        url: absoluteUrl("/branding/WEBLOGO-TripleZero-iT.png"),
+      },
+    },
+    articleSection: opts.categoryName || (opts.locale === "nl" ? "Kennisbank" : "Knowledge base"),
+    keywords: keywords.join(", "),
+    inLanguage: htmlLangTag(opts.locale),
+    isAccessibleForFree: true,
+    about: {
+      "@type": "Thing",
+      name: opts.categoryName || opts.title,
     },
     contentLocation: {
       "@type": "Place",

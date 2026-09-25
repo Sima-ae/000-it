@@ -5,10 +5,15 @@ import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/marketing/Reveal";
 import { GlassCard } from "@/components/marketing/GlassCard";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { KennisbankCategoryGrid } from "@/components/kennisbank/KennisbankCategoryGrid";
 import { listArticles, listCategories, topLevelCategories } from "@/lib/kennisbank";
 import { BRANDING_IMAGES } from "@/lib/branding-images";
-import { buildStaticPageMetadata } from "@/lib/seo";
+import {
+  breadcrumbJsonLd,
+  buildStaticPageMetadata,
+  organizationJsonLd,
+} from "@/lib/seo";
 import { localizedHref } from "@/i18n/pathnames";
 
 export const dynamic = "force-dynamic";
@@ -49,6 +54,16 @@ export default async function KennisbankPage({
 
   return (
     <div className="relative overflow-hidden">
+      <JsonLd data={organizationJsonLd()} />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "TripleZero iT", path: localizedHref(locale, "/") },
+          {
+            name: t("breadcrumb"),
+            path: localizedHref(locale, "/kennisbank"),
+          },
+        ])}
+      />
       <div
         className="pointer-events-none absolute inset-x-0 top-0 h-112 bg-linear-to-b from-primary/12 via-accent/5 to-transparent"
         aria-hidden
