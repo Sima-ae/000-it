@@ -190,6 +190,7 @@ export function isAntiScrapeAllowlisted(pathname: string) {
     pathname.startsWith("/api/auth/") ||
     pathname === "/api/shop/webhook" ||
     pathname === "/api/social-preview" ||
+    pathname === "/api/facebook-page" ||
     // Product/media assets — never count toward API rate limits (shop grids load many).
     pathname.startsWith("/uploads/") ||
     pathname.startsWith("/api/uploads/") ||
