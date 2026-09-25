@@ -2,7 +2,8 @@
 export const FACEBOOK_PAGE_HREF = "https://www.facebook.com/TripleZero.iT";
 export const FACEBOOK_PAGE_ID = "100081017330204";
 export const FACEBOOK_PAGE_PLUGIN_HREF = `https://www.facebook.com/profile.php?id=${FACEBOOK_PAGE_ID}`;
-export const FACEBOOK_PAGE_AVATAR = `https://graph.facebook.com/${FACEBOOK_PAGE_ID}/picture?type=large`;
+/** Local brand mark — FB Graph/OG avatars often return a generic silhouette. */
+export const FACEBOOK_PAGE_AVATAR = "/branding/LOGO-TripleZero-iT.jpg";
 
 export type FacebookPageStats = {
   followers: number | null;
@@ -110,7 +111,8 @@ export async function fetchFacebookPageStats(): Promise<FacebookPageStats> {
     const html = await res.text();
     const description = metaContent(html, "og:description") || "";
     const name = metaContent(html, "og:title");
-    const image = metaContent(html, "og:image") || FACEBOOK_PAGE_AVATAR;
+    // Prefer local brand mark — FB og:image / Graph often returns a blank silhouette.
+    const image = FACEBOOK_PAGE_AVATAR;
     const scraped = parseFollowerCount(description);
 
     return {

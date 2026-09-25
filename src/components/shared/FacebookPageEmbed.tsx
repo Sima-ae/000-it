@@ -7,7 +7,6 @@ import {
   formatFollowerCount,
   type FacebookPageStats,
 } from "@/lib/facebook-page";
-import { BRAND_WEB_LOGO } from "@/components/shared/BrandLogo";
 
 export { FACEBOOK_PAGE_HREF };
 
@@ -18,7 +17,6 @@ export { FACEBOOK_PAGE_HREF };
  */
 export function FacebookPageEmbed({ locale }: { locale: string }) {
   const [stats, setStats] = useState<FacebookPageStats | null>(null);
-  const [avatarFailed, setAvatarFailed] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -45,9 +43,8 @@ export function FacebookPageEmbed({ locale }: { locale: string }) {
         ? `${followers} volgers`
         : `${followers} followers`;
   const followLabel = locale === "nl" ? "Pagina volgen" : "Follow Page";
-  const avatarSrc = avatarFailed
-    ? BRAND_WEB_LOGO
-    : stats?.image || FACEBOOK_PAGE_AVATAR;
+  // Always use the local brand logo — FB Graph/OG often serves a blank silhouette.
+  const avatarSrc = FACEBOOK_PAGE_AVATAR;
 
   return (
     <div className="w-full">
@@ -78,12 +75,7 @@ export function FacebookPageEmbed({ locale }: { locale: string }) {
               alt=""
               width={48}
               height={48}
-              className={
-                avatarFailed
-                  ? "h-full w-full object-contain p-1"
-                  : "h-full w-full object-cover"
-              }
-              onError={() => setAvatarFailed(true)}
+              className="h-full w-full object-contain p-0.5"
             />
           </div>
 
