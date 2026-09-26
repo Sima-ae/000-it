@@ -402,6 +402,24 @@ body::before {
   line-height: 1.75;
 }
 
+.kb-content-protect {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+@media print {
+  .kb-content-protect {
+    display: none !important;
+  }
+  body::after {
+    content: "Printing kennisbank content is not allowed.";
+    display: block;
+    padding: 2rem;
+    font-family: system-ui, sans-serif;
+  }
+}
+
 .kb-article-body > * + * {
   margin-top: 1.15rem;
 }

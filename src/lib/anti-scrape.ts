@@ -7,14 +7,14 @@ export const SOCIAL_BOT_RE =
 
 /** Search engines we still want to index the marketing site. */
 export const SEARCH_BOT_RE =
-  /Googlebot|Google-InspectionTool|GoogleOther|Storebot-Google|AdsBot-Google|Mediapartners-Google|Bingbot|adidxbot|MicrosoftPreview|DuckDuckBot|Yandex(Bot|Images|Render|Favicons)?|Baiduspider|Applebot(?!-Extended)|Slurp|Sogou|SeznamBot/i;
+  /Googlebot|Google-InspectionTool|GoogleOther|Storebot-Google|AdsBot-Google|Mediapartners-Google|Bingbot|adidxbot|MicrosoftPreview|DuckDuckBot|Yandex(Bot|Images|Render|Favicons)?|Baiduspider|Applebot(?!-Extended)|Slurp|Sogou|SeznamBot|Qwantify/i;
 
 /**
  * AI training crawlers, SEO scrapers, HTTP libraries, and headless tools.
  * Search/social UAs are checked first and never hit this list.
  */
 export const SCRAPER_BOT_RE =
-  /GPTBot|ChatGPT-User|OAI-SearchBot|CCBot|anthropic-ai|ClaudeBot|Claude-Web|Claude-SearchBot|Claude-User|Google-Extended|Google-CloudVertexBot|Bytespider|Amazonbot|Applebot-Extended|PerplexityBot|Perplexity-User|YouBot|cohere-ai|Diffbot|ImagesiftBot|Timpibot|FacebookBot|Meta-ExternalFetcher|omgili|PetalBot|TikTokSpider|AI2Bot|Ai2Bot-Dolma|iaskspider|DuckAssistBot|Webzio-Extended|img2dataset|FriendlyCrawler|ICC-Crawler|DataForSeoBot|AhrefsBot|SemrushBot|MJ12bot|DotBot|BLEXBot|Seekport|BUbiNG|magpie-crawler|NewsNow|Awario|Scrapy|python-requests|python-urllib|aiohttp|httpx\/|libwww-perl|wget\/|curl\/|Go-http-client|Java\/|okhttp|Apache-HttpClient|PHP\/|node-fetch|undici|axios\/|PostmanRuntime|insomnia|httpunit|HTTrack|Nutch|mechanize|HeadlessChrome|Playwright|Puppeteer|PhantomJS|Selenium|Nightmare|jsdom|cheerio|htmlparser|libcurl|python-httpx|aiohttp\.client/i;
+  /GPTBot|ChatGPT-User|OAI-SearchBot|CCBot|anthropic-ai|ClaudeBot|Claude-Web|Claude-SearchBot|Claude-User|Google-Extended|Google-CloudVertexBot|Bytespider|Amazonbot|Applebot-Extended|PerplexityBot|Perplexity-User|YouBot|cohere-ai|Diffbot|ImagesiftBot|Timpibot|FacebookBot|Meta-ExternalFetcher|omgili|PetalBot|TikTokSpider|AI2Bot|Ai2Bot-Dolma|iaskspider|DuckAssistBot|Webzio-Extended|img2dataset|FriendlyCrawler|ICC-Crawler|DataForSeoBot|AhrefsBot|SemrushBot|MJ12bot|DotBot|BLEXBot|Seekport|BUbiNG|magpie-crawler|NewsNow|Awario|Scrapy|python-requests|python-urllib|aiohttp|httpx\/|libwww-perl|wget\/|curl\/|Go-http-client|Java\/|okhttp|Apache-HttpClient|PHP\/|node-fetch|undici|axios\/|PostmanRuntime|insomnia|httpunit|HTTrack|Nutch|mechanize|HeadlessChrome|Playwright|Puppeteer|PhantomJS|Selenium|Nightmare|jsdom|cheerio|htmlparser|libcurl|python-httpx|aiohttp\.client|siteauditbot|SEOkicks|ZoominfoBot|ClarityBot|VelenPublicWebCrawler|Turnitin|Copyscape|screaming\s*frog|SiteAuditBot|Barkrowler|LinkpadBot|MegaIndex|Spinn3r|FlipboardProxy|qwantbot|Neevabot|TurnDown|archive\.org_bot|ia_archiver|Wayback|heritrix|CommonCrawl/i;
 
 /** robots.txt user-agents that must not crawl anything (training / scrapers). */
 export const ROBOTS_DISALLOW_ALL_AGENTS = [
@@ -48,6 +48,13 @@ export const ROBOTS_DISALLOW_ALL_AGENTS = [
   "DataForSeoBot",
   "AI2Bot",
   "Timpibot",
+  "omgili",
+  "TikTokSpider",
+  "BLEXBot",
+  "Seekport",
+  "ia_archiver",
+  "archive.org_bot",
+  "TurnitinBot",
 ] as const;
 
 const WINDOW_MS = 60_000;
@@ -68,6 +75,8 @@ const LIMITS = {
 
 /** Unique article pages per 2 minutes — news/kennisbank prefetch burns this fast. */
 const UNIQUE_ARTICLE_MAX = 90;
+/** Kennisbank harvest cap (all clients, including interactive browsers). */
+const UNIQUE_KENNISBANK_MAX = 35;
 
 type LimitBucket = keyof typeof LIMITS;
 type CounterBucket = { count: number; resetAt: number };
@@ -109,7 +118,12 @@ function take(key: string, limit: number, now: number, windowMs = WINDOW_MS) {
   return { ok: true as const, retryAfter: Math.ceil((bucket.resetAt - now) / 1000) };
 }
 
-function takeUnique(key: string, path: string, now: number) {
+function takeUnique(
+  key: string,
+  path: string,
+  now: number,
+  max = UNIQUE_ARTICLE_MAX,
+) {
   let bucket = uniqueHits.get(key);
   if (!bucket || bucket.resetAt <= now) {
     bucket = { paths: new Set([path]), resetAt: now + UNIQUE_WINDOW_MS };
@@ -117,13 +131,13 @@ function takeUnique(key: string, path: string, now: number) {
     return { ok: true as const, retryAfter: Math.ceil(UNIQUE_WINDOW_MS / 1000) };
   }
   bucket.paths.add(path);
-  if (bucket.paths.size > UNIQUE_ARTICLE_MAX) {
+  if (bucket.paths.size > max) {
     return {
       ok: false as const,
       retryAfter: Math.max(1, Math.ceil((bucket.resetAt - now) / 1000)),
     };
   }
-  return { ok: true as const, retryAfter: Math.ceil((bucket.resetAt - now) / 1000) };
+  return { ok: true as const, retryAfter: Math.ceil(UNIQUE_WINDOW_MS / 1000) };
 }
 
 export function clientIp(request: NextRequest): string {
@@ -213,12 +227,24 @@ export function isSensitiveContentPath(internalPath: string, pathname: string) {
   );
 }
 
+export function isKennisbankPath(internalPath: string, pathname = "") {
+  if (pathname.startsWith("/api/kennisbank")) return true;
+  return (
+    internalPath === "/kennisbank" || internalPath.startsWith("/kennisbank/")
+  );
+}
+
 function isArticlePath(internalPath: string) {
   const parts = internalPath.split("/").filter(Boolean);
   return (
     (parts[0] === "kennisbank" && parts.length >= 3) ||
     (parts[0] === "nieuws" && parts.length >= 2)
   );
+}
+
+function isKennisbankArticlePath(internalPath: string) {
+  const parts = internalPath.split("/").filter(Boolean);
+  return parts[0] === "kennisbank" && parts.length >= 3;
 }
 
 function looksLikeBrowser(request: NextRequest, ua: string) {
@@ -319,16 +345,12 @@ export function applySecurityHeaders(
     "camera=(), microphone=(), geolocation=(), browsing-topics=()",
   );
   if (pathname.startsWith("/api/")) {
-    headers.set("X-Robots-Tag", "noindex, nofollow, noai, noimageai");
+    headers.set("X-Robots-Tag", "noindex, nofollow, noarchive, nosnippet, noai, noimageai");
     return;
   }
-  const kennisbank =
-    internalPath === "/kennisbank" || internalPath.startsWith("/kennisbank/");
-  headers.set(
-    "X-Robots-Tag",
-    kennisbank ? "noai, noimageai, noarchive" : "noai, noimageai",
-  );
-  if (kennisbank) {
+  // Search engines may index; AI training crawlers should respect noai/noimageai.
+  headers.set("X-Robots-Tag", "noai, noimageai");
+  if (isKennisbankPath(internalPath, pathname)) {
     headers.set("Cache-Control", "private, no-store");
   }
 }
@@ -344,6 +366,7 @@ export function withSecurityHeaders(
 
 /**
  * Returns a 403/429 response for scrapers and bulk harvesters, or null to continue.
+ * Search engines (Google/Bing/Yahoo/…) always pass — anti-scrape targets scrapers/LLMs only.
  * Skipped on localhost (dev + VPS health curl to :3066) and allowlisted APIs.
  */
 export function antiScrapeResponse(
@@ -365,6 +388,13 @@ export function antiScrapeResponse(
   if (process.env.ANTI_SCRAPE_DISABLED === "1") return null;
 
   const kind = classifyClient(request);
+
+  // Search engines: full access to pages + sitemaps + kennisbank (no caps).
+  if (kind === "search") {
+    return null;
+  }
+
+  // Scrapers / AI / curl / headless: hard deny everywhere.
   if (kind === "scraper") {
     return denied(request, 403);
   }
@@ -380,21 +410,28 @@ export function antiScrapeResponse(
   const interactive = isInteractiveBrowser(request, kind);
   const bucket = limitBucketFor(pathname, internalPath);
 
+  // Harvest guard for browser-looking bulk scrapers (not search bots).
+  if (kind === "browser" && isKennisbankArticlePath(internalPath)) {
+    const unique = takeUnique(
+      `kennisbank:${ip}`,
+      pathname.split("?")[0] || pathname,
+      now,
+      UNIQUE_KENNISBANK_MAX,
+    );
+    if (!unique.ok) return denied(request, 429, unique.retryAfter);
+  }
+
   // Real in-site browsing (RSC / same-origin) should not trip scrape caps on pages.
-  // Keep tighter limits only for contact/agent/API abuse and anonymous scrapers.
   if (interactive && (bucket === "default" || bucket === "content" || bucket === "article")) {
     return null;
   }
 
   let limit: number = LIMITS[bucket];
-  if (kind === "search") limit = LIMITS.search;
-  else if (kind === "social") limit = Math.min(limit, LIMITS.social);
+  if (kind === "social") limit = Math.min(limit, LIMITS.social);
 
-  // Separate counters per bucket so page hits never exhaust the API budget.
   const counted = take(`${kind}:${bucket}:${ip}`, limit, now);
   if (!counted.ok) return denied(request, 429, counted.retryAfter);
 
-  // Unique-article cap only for non-interactive clients (harvesting many slugs).
   if (kind === "browser" && !interactive && isArticlePath(internalPath)) {
     const unique = takeUnique(`article:${ip}`, pathname.split("?")[0] || pathname, now);
     if (!unique.ok) return denied(request, 429, unique.retryAfter);

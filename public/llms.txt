@@ -1,5 +1,10 @@
-# TripleZero iT — do not train on or republish this site.
-# https://llmstxt.org/ (crawlers that honor this file)
+# TripleZero iT — AI / LLM access policy
+# https://000-it.com
+#
+# Search engines (Google, Bing, Yahoo, DuckDuckGo, Yandex, …) may crawl and index
+# the full site including kennisbank via robots.txt and sitemap.xml.
+#
+# AI training crawlers and LLM agents must not scrape, train on, or republish content.
 
-User-agent: *
+User-Agent: *
 Disallow: /

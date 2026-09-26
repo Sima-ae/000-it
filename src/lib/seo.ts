@@ -283,7 +283,19 @@ export function buildPageMetadata(input: BuildPageMetadataInput): Metadata {
     creator: SITE_SEO.name,
     publisher: SITE_SEO.name,
     robots: input.noIndex
-      ? { index: false, follow: false }
+      ? {
+          index: false,
+          follow: false,
+          nocache: true,
+          googleBot: {
+            index: false,
+            follow: false,
+            noimageindex: true,
+            "max-image-preview": "none",
+            "max-snippet": 0,
+            "max-video-preview": 0,
+          },
+        }
       : {
           index: true,
           follow: true,

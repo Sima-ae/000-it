@@ -21,16 +21,18 @@ export default function robots(): MetadataRoute.Robots {
 
   return {
     rules: [
+      // Google, Bing, Yahoo (Slurp), DuckDuckGo, Yandex, … — full site + kennisbank.
       {
         userAgent: "*",
         allow: "/",
         disallow,
       },
+      // AI training / SEO scrapers — nothing.
       {
         userAgent: [...ROBOTS_DISALLOW_ALL_AGENTS],
         disallow: "/",
       },
-      // Explicit allow for Meta link-preview crawlers (WhatsApp / Messenger / Facebook)
+      // Meta link-preview crawlers (WhatsApp / Messenger / Facebook)
       {
         userAgent: "WhatsApp",
         allow: "/",
@@ -48,7 +50,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    // Professional sitemap index (cities → pages → services → shop → kennisbank → news → portfolio)
     sitemap: `${origin}/sitemap.xml`,
     host: origin,
   };

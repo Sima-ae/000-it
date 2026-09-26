@@ -956,6 +956,27 @@ export function segmentFor(locale: string, key: SegmentKey): string {
   return SEGMENT_I18N[key][locale] || SEGMENT_I18N[key].en || String(key);
 }
 
+/** Unique public URL segments for a key (all locales) — for robots.txt disallow. */
+export function uniqueSegmentValues(key: SegmentKey): string[] {
+  return [...new Set(Object.values(SEGMENT_I18N[key]))];
+}
+
+/** robots.txt paths that cover every localized kennisbank URL. */
+export function kennisbankRobotsDisallowPaths(): string[] {
+  const disallow: string[] = [];
+  for (const segment of uniqueSegmentValues("kennisbank")) {
+    disallow.push(
+      `/${segment}`,
+      `/${segment}/`,
+      `/${segment}/*`,
+      `/*/${segment}`,
+      `/*/${segment}/`,
+      `/*/${segment}/*`,
+    );
+  }
+  return disallow;
+}
+
 export function hashFor(locale: string, key: HashKey): string {
   return HASH_I18N[key][locale] || HASH_I18N[key].en || String(key);
 }
