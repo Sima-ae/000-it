@@ -1,0 +1,817 @@
+[
+  {
+    "slug": "een-nieuw-domein-toevoegen-als-reseller-in-directadmin",
+    "title": "Een nieuw domein toevoegen als reseller in DirectAdmin",
+    "topic": "directadmin-reseller-domain",
+    "categories": [
+      "domeinnamen",
+      "hosting",
+      "directadmin",
+      "directadmin-overige",
+      "domeinnamen-overige",
+      "hosting-overige"
+    ]
+  },
+  {
+    "slug": "domeinnaam-staat-niet-in-directadmin-werkt-niet",
+    "title": "Domeinnaam staat niet in DirectAdmin of werkt niet",
+    "topic": "domain-missing-da",
+    "categories": [
+      "domeinnamen",
+      "directadmin",
+      "directadmin-overige",
+      "domeinnamen-overige"
+    ]
+  },
+  {
+    "slug": "dkim-record-toevoegen-aan-dns-domeinnaam",
+    "title": "DKIM-record toevoegen aan DNS domeinnaam",
+    "topic": "dkim",
+    "categories": [
+      "domeinnamen",
+      "e-mail",
+      "directadmin",
+      "dns-records",
+      "directadmin-overige",
+      "e-mail-overige"
+    ]
+  },
+  {
+    "slug": "domein-forwarden-naar-een-andere-url",
+    "title": "Domein forward / redirect naar een andere URL",
+    "topic": "domain-forward",
+    "categories": [
+      "domeinnamen",
+      "directadmin",
+      "directadmin-overige",
+      "domeinnamen-overige"
+    ]
+  },
+  {
+    "slug": "domein-toevoegen-directadmin",
+    "title": "Domein toevoegen in DirectAdmin",
+    "topic": "add-domain-da",
+    "categories": [
+      "domeinnamen",
+      "hosting",
+      "directadmin",
+      "directadmin-overige",
+      "domeinnamen-overige",
+      "hosting-overige"
+    ]
+  },
+  {
+    "slug": "handleiding-wordpress-installeren",
+    "title": "Handleiding WordPress installeren",
+    "topic": "wp-install",
+    "categories": [
+      "bloggen",
+      "directadmin",
+      "wordpress",
+      "wordpress-installatie",
+      "directadmin-wordpress",
+      "bloggen-starten"
+    ]
+  },
+  {
+    "slug": "kritieke-fout-wordpress",
+    "title": "Kritieke fout WordPress",
+    "topic": "wp-critical",
+    "categories": [
+      "bloggen",
+      "directadmin",
+      "wordpress",
+      "directadmin-wordpress",
+      "wordpress-overige",
+      "bloggen-beheer"
+    ]
+  },
+  {
+    "slug": "inodes-en-inode-limieten",
+    "title": "Wat zijn inodes en wat is mijn inode limiet?",
+    "topic": "inodes",
+    "categories": [
+      "hosting",
+      "directadmin",
+      "opslag-en-verkeer",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "geen-vermindering-schijfruimte-directadmin-na-verwijderen-bestanden",
+    "title": "Geen vermindering schijfruimte DirectAdmin na verwijderen bestanden?",
+    "topic": "disk-usage-da",
+    "categories": [
+      "hosting",
+      "directadmin",
+      "opslag-en-verkeer",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "kan-mijn-accountnaam-login-van-de-hosting-worden-gewijzigd",
+    "title": "Kan mijn accountnaam / login van de hosting worden gewijzigd?",
+    "topic": "rename-account",
+    "categories": [
+      "hosting",
+      "directadmin",
+      "directadmin-overige",
+      "hosting-overige"
+    ]
+  },
+  {
+    "slug": "is-bandbreedte-dataverkeer",
+    "title": "Wat is bandbreedte of dataverkeer?",
+    "topic": "bandwidth",
+    "categories": [
+      "hosting",
+      "directadmin",
+      "opslag-en-verkeer",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "mijn-mailbox-of-hostingpakket-is-vol",
+    "title": "Mijn mailbox of hostingpakket is vol?",
+    "topic": "quota-full",
+    "categories": [
+      "hosting",
+      "e-mail",
+      "directadmin",
+      "mailbox-beheer",
+      "opslag-en-verkeer",
+      "directadmin-e-mail"
+    ]
+  },
+  {
+    "slug": "user-xxxx-has-used-up-of-their-bandwidth-and-of-hisher-allocated-disk-space",
+    "title": "User xxxx has used up –% of their bandwidth and –% of his/her allocated disk space",
+    "topic": "usage-warning",
+    "categories": [
+      "hosting",
+      "directadmin",
+      "directadmin-overige",
+      "hosting-overige"
+    ]
+  },
+  {
+    "slug": "problemen-met-e-mail-website",
+    "title": "Problemen met e-mail / website / controlpanel?",
+    "topic": "troubleshoot",
+    "categories": [
+      "hosting",
+      "e-mail",
+      "directadmin",
+      "directadmin-e-mail",
+      "e-mail-overige",
+      "hosting-overige"
+    ]
+  },
+  {
+    "slug": "wat-verbruikt-opslag-in-mijn-hostingpakket",
+    "title": "Wat verbruikt opslag in mijn hostingpakket?",
+    "topic": "storage-usage",
+    "categories": [
+      "hosting",
+      "directadmin",
+      "opslag-en-verkeer",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "wat-is-installatron",
+    "title": "Wat is Installatron?",
+    "topic": "installatron",
+    "categories": [
+      "hosting",
+      "directadmin",
+      "php-en-scripts",
+      "directadmin-wordpress"
+    ]
+  },
+  {
+    "slug": "php-versie-wijzigen",
+    "title": "PHP versie wijzigen voor domein",
+    "topic": "php-version",
+    "categories": [
+      "hosting",
+      "directadmin",
+      "php-en-scripts",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "voorkomen-dat-je-hostingpakket-vol-raakt",
+    "title": "Voorkomen dat je hostingpakket vol raakt",
+    "topic": "prevent-full",
+    "categories": [
+      "hosting",
+      "directadmin",
+      "opslag-en-verkeer",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "hoe-installeer-ik-een-gratis-lets-encrypt-ssl-certificaat",
+    "title": "Hoe installeer ik een gratis Let’s Encrypt SSL-certificaat in DirectAdmin?",
+    "topic": "letsencrypt-da",
+    "categories": [
+      "hosting",
+      "directadmin",
+      "beveiliging",
+      "ssl-certificaten",
+      "directadmin-overige",
+      "hosting-overige"
+    ]
+  },
+  {
+    "slug": "out-of-office-reply-instellen",
+    "title": "Out of office reply instellen",
+    "topic": "ooo",
+    "categories": [
+      "e-mail",
+      "directadmin",
+      "mailbox-beheer",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "afzenders-trefwoorden-toevoegen-spamfilter",
+    "title": "Afzenders en trefwoorden toevoegen aan spamfilter",
+    "topic": "spam-keywords",
+    "categories": [
+      "e-mail",
+      "directadmin",
+      "spam-en-veiligheid",
+      "directadmin-e-mail"
+    ]
+  },
+  {
+    "slug": "catch-all-e-mailadres-aanmaken-directadmin",
+    "title": "Catch-all e-mailadres aanmaken in DirectAdmin",
+    "topic": "catchall",
+    "categories": [
+      "e-mail",
+      "directadmin",
+      "mailbox-beheer",
+      "directadmin-e-mail"
+    ]
+  },
+  {
+    "slug": "spamfilter-instellen-directadmin",
+    "title": "Spamfilter instellen in DirectAdmin",
+    "topic": "spamassassin-setup",
+    "categories": [
+      "e-mail",
+      "directadmin",
+      "spam-en-veiligheid",
+      "directadmin-e-mail"
+    ]
+  },
+  {
+    "slug": "aanpassen-e-mail-quota",
+    "title": "Aanpassen E-mail quota",
+    "topic": "email-quota",
+    "categories": [
+      "e-mail",
+      "directadmin",
+      "mailbox-beheer",
+      "directadmin-e-mail"
+    ]
+  },
+  {
+    "slug": "automatisch-antwoord-e-mail-maken-in-directadmin",
+    "title": "Automatisch antwoord e-mail maken in DirectAdmin",
+    "topic": "autoresponder",
+    "categories": [
+      "e-mail",
+      "directadmin",
+      "mailbox-beheer",
+      "directadmin-e-mail"
+    ]
+  },
+  {
+    "slug": "hoe-gebruik-je-webmail-vanuit-directadmin",
+    "title": "Hoe gebruik je webmail vanuit DirectAdmin",
+    "topic": "webmail-da",
+    "categories": [
+      "e-mail",
+      "directadmin",
+      "webmail",
+      "directadmin-e-mail"
+    ]
+  },
+  {
+    "slug": "email-doorsturen-naar-mailadres",
+    "title": "E-mail doorsturen naar een ander mailadres",
+    "topic": "email-forward",
+    "categories": [
+      "e-mail",
+      "directadmin",
+      "mailbox-beheer",
+      "directadmin-e-mail"
+    ]
+  },
+  {
+    "slug": "wachtwoord-van-e-mailadres-wijzigen",
+    "title": "Wachtwoord van e-mailadres wijzigen",
+    "topic": "email-password",
+    "categories": [
+      "e-mail",
+      "directadmin",
+      "mailbox-beheer",
+      "directadmin-e-mail"
+    ]
+  },
+  {
+    "slug": "nieuw-e-mailadres-aanmaken-in-directadmin",
+    "title": "Nieuw e-mailadres aanmaken in DirectAdmin",
+    "topic": "create-mailbox",
+    "categories": [
+      "e-mail",
+      "directadmin",
+      "mailbox-beheer",
+      "directadmin-e-mail"
+    ]
+  },
+  {
+    "slug": "ik-krijg-veel-spam-kan-ik-daar-wat-tegen-doen",
+    "title": "Ontvang je veel spam? Gebruik SpamAssassin!",
+    "topic": "spamassassin",
+    "categories": [
+      "e-mail",
+      "directadmin",
+      "spam-en-veiligheid",
+      "directadmin-e-mail"
+    ]
+  },
+  {
+    "slug": "2fa-instellen-in-directadmin",
+    "title": "2FA instellen in DirectAdmin",
+    "topic": "2fa-da",
+    "categories": [
+      "directadmin",
+      "beveiliging",
+      "beveiliging-overige",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "wat-is-jetbackup-en-waar-gebruik-ik-het-voor",
+    "title": "Wat is JetBackup en waar gebruik ik het voor?",
+    "topic": "jetbackup",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "wordpress-website-kopieren-naar-ander-domein",
+    "title": "WordPress website kopiëren naar ander domein",
+    "topic": "wp-clone",
+    "categories": [
+      "directadmin",
+      "wordpress",
+      "directadmin-wordpress",
+      "wordpress-overige"
+    ]
+  },
+  {
+    "slug": "afschermen-beveiligen-bestanden-via-htaccess",
+    "title": "Afschermen – beveiligen bestanden via htaccess",
+    "topic": "htaccess",
+    "categories": [
+      "directadmin",
+      "beveiliging",
+      "beveiliging-overige",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "wordpress-heeft-gedetecteerd-dat-je-site-een-onveilige-versie-van-php-gebruikt",
+    "title": "WordPress heeft gedetecteerd dat je site een onveilige versie van PHP gebruikt",
+    "topic": "wp-php-unsafe",
+    "categories": [
+      "directadmin",
+      "wordpress",
+      "directadmin-wordpress",
+      "wordpress-overige"
+    ]
+  },
+  {
+    "slug": "mappen-beschermen-wachtwoord-directadmin",
+    "title": "Mappen beschermen met een wachtwoord in DirectAdmin",
+    "topic": "dir-password",
+    "categories": [
+      "directadmin",
+      "beveiliging",
+      "beveiliging-overige",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "waar-vind-ik-de-logingegevens-van-directadmin",
+    "title": "Waar vind ik de logingegevens van DirectAdmin?",
+    "topic": "da-login",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "reseller-account-directadmin",
+    "title": "Reseller account DirectAdmin",
+    "topic": "reseller",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "database-aanmaken",
+    "title": "Een MySQL database aanmaken in DirectAdmin",
+    "topic": "mysql",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "domein-verwijzing-aanmaken-directadmin",
+    "title": "Domein verwijzing aanmaken in DirectAdmin",
+    "topic": "domain-pointer",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "een-extra-ftp-adres-aanmaken",
+    "title": "Een extra FTP adres aanmaken",
+    "topic": "extra-ftp",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "wordpress-multisite-directadmin",
+    "title": "WordPress multisite in DirectAdmin",
+    "topic": "wp-multisite",
+    "categories": [
+      "directadmin",
+      "wordpress",
+      "directadmin-wordpress",
+      "wordpress-overige"
+    ]
+  },
+  {
+    "slug": "wachtwoord-wijzigen-directadmin",
+    "title": "Wachtwoord wijzigen in DirectAdmin",
+    "topic": "da-password",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "cronjob-instellen-directadmin",
+    "title": "Cronjob instellen in DirectAdmin",
+    "topic": "cron",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "website-weg-uit-installatron-voeg-je-site-toe",
+    "title": "Website weg uit Installatron? Voeg je site toe!",
+    "topic": "installatron-import",
+    "categories": [
+      "directadmin",
+      "wordpress",
+      "wordpress-installatie",
+      "directadmin-wordpress"
+    ]
+  },
+  {
+    "slug": "wordpress-website-verwijderen-in-installatron",
+    "title": "WordPress website verwijderen in Installatron",
+    "topic": "installatron-delete",
+    "categories": [
+      "directadmin",
+      "wordpress",
+      "wordpress-installatie",
+      "directadmin-wordpress"
+    ]
+  },
+  {
+    "slug": "uitleg-directadmin-filemanager",
+    "title": "Uitleg over de DirectAdmin Filemanager",
+    "topic": "filemanager",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "subdomein-aanmaken-directadmin",
+    "title": "Subdomein aanmaken in DirectAdmin",
+    "topic": "subdomain",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "ik-kan-niet-meer-inloggen",
+    "title": "Ik kan niet meer inloggen?",
+    "topic": "cant-login",
+    "categories": [
+      "directadmin",
+      "crm-klantenpanel",
+      "account-en-inloggen",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "wordpress-updaten-installatron",
+    "title": "WordPress updaten in Installatron",
+    "topic": "installatron-update",
+    "categories": [
+      "directadmin",
+      "wordpress",
+      "wordpress-installatie",
+      "directadmin-wordpress"
+    ]
+  },
+  {
+    "slug": "wordpress-backup-maken-of-verwijderen-in-installatron",
+    "title": "WordPress backup maken of verwijderen in Installatron",
+    "topic": "installatron-backup",
+    "categories": [
+      "directadmin",
+      "wordpress",
+      "wordpress-installatie",
+      "directadmin-wordpress"
+    ]
+  },
+  {
+    "slug": "wat-is-directadmin",
+    "title": "Uitleg over DirectAdmin controlpanel",
+    "topic": "what-is-da",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "google-verificatie",
+    "title": "Google verificatie",
+    "topic": "google-verify",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "backup-maken-en-terugzetten-directadmin",
+    "title": "Backup maken en terugzetten in DirectAdmin",
+    "topic": "backup-da",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "wordpress-url-omzetten-van-http-naar-https",
+    "title": "WordPress URL omzetten van http naar https",
+    "topic": "wp-https",
+    "categories": [
+      "directadmin",
+      "beveiliging",
+      "wordpress",
+      "directadmin-wordpress",
+      "beveiliging-overige",
+      "wordpress-overige"
+    ]
+  },
+  {
+    "slug": "wat-is-directadmin-en-hoe-gebruik-ik-het",
+    "title": "Wat is DirectAdmin en hoe gebruik ik het?",
+    "topic": "ext-wat-is-directadmin-en-hoe-gebruik-ik-het",
+    "categories": [
+      "hosting",
+      "directadmin",
+      "directadmin-overige",
+      "hosting-overige"
+    ]
+  },
+  {
+    "slug": "hoe-beheer-ik-mijn-databases-in-directadmin",
+    "title": "Hoe beheer ik mijn databases in DirectAdmin?",
+    "topic": "ext-hoe-beheer-ik-mijn-databases-in-directadmin",
+    "categories": [
+      "hosting",
+      "directadmin",
+      "directadmin-overige",
+      "hosting-overige"
+    ]
+  },
+  {
+    "slug": "hoe-stel-ik-cronjobs-in-via-directadmin",
+    "title": "Hoe stel ik cronjobs in via DirectAdmin?",
+    "topic": "ext-hoe-stel-ik-cronjobs-in-via-directadmin",
+    "categories": [
+      "hosting",
+      "directadmin",
+      "php-en-scripts",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "hoe-wijzig-ik-de-php-instellingen-in-directadmin",
+    "title": "Hoe wijzig ik de PHP-instellingen in DirectAdmin?",
+    "topic": "ext-hoe-wijzig-ik-de-php-instellingen-in-directadmin",
+    "categories": [
+      "hosting",
+      "directadmin",
+      "php-en-scripts",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "hoe-gebruik-ik-de-file-manager-in-directadmin",
+    "title": "Hoe gebruik ik de File Manager in DirectAdmin?",
+    "topic": "ext-hoe-gebruik-ik-de-file-manager-in-directadmin",
+    "categories": [
+      "hosting",
+      "directadmin",
+      "ftp-en-bestanden",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "hoe-wijzig-ik-bestandspermissies-chmod-in-de-file-manager",
+    "title": "Hoe wijzig ik bestandspermissies (CHMOD) in de File Manager?",
+    "topic": "ext-hoe-wijzig-ik-bestandspermissies-chmod-in-de-fil",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "hoe-gebruik-ik-de-dns-zone-editor-in-directadmin",
+    "title": "Hoe gebruik ik de DNS Zone Editor in DirectAdmin?",
+    "topic": "ext-hoe-gebruik-ik-de-dns-zone-editor-in-directadmin",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "hoe-voeg-ik-een-extra-ftp-account-toe-in-directadmin",
+    "title": "Hoe voeg ik een extra FTP-account toe in DirectAdmin?",
+    "topic": "ext-hoe-voeg-ik-een-extra-ftp-account-toe-in-directa",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "hoe-maak-ik-een-volledige-site-back-up-in-directadmin",
+    "title": "Hoe maak ik een volledige site-back-up in DirectAdmin?",
+    "topic": "ext-hoe-maak-ik-een-volledige-site-back-up-in-direct",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "hoe-gebruik-ik-de-brute-force-monitor-in-directadmin",
+    "title": "Hoe gebruik ik de Brute Force Monitor in DirectAdmin?",
+    "topic": "ext-hoe-gebruik-ik-de-brute-force-monitor-in-directa",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "hoe-voeg-ik-een-domeinalias-domain-pointer-toe-in-directadmin",
+    "title": "Hoe voeg ik een domeinalias (domain pointer) toe in DirectAdmin?",
+    "topic": "ext-hoe-voeg-ik-een-domeinalias-domain-pointer-toe-i",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "hoe-bekijk-ik-de-statistieken-van-mijn-website-in-directadmin",
+    "title": "Hoe bekijk ik de statistieken van mijn website in DirectAdmin?",
+    "topic": "ext-hoe-bekijk-ik-de-statistieken-van-mijn-website-i",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "hoe-blokkeer-ik-een-ip-adres-in-directadmin",
+    "title": "Hoe blokkeer ik een IP-adres in DirectAdmin?",
+    "topic": "ext-hoe-blokkeer-ik-een-ip-adres-in-directadmin",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "hoe-voeg-ik-een-extra-domein-toe-aan-mijn-hostingpakket",
+    "title": "Hoe voeg ik een extra domein toe aan mijn hostingpakket?",
+    "topic": "ext-hoe-voeg-ik-een-extra-domein-toe-aan-mijn-hostin",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "hoe-gebruik-ik-de-mysql-management-tool-in-directadmin",
+    "title": "Hoe gebruik ik de MySQL Management tool in DirectAdmin?",
+    "topic": "ext-hoe-gebruik-ik-de-mysql-management-tool-in-direc",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "directadmin-gebruiken-als-reseller",
+    "title": "DirectAdmin gebruiken als reseller",
+    "topic": "da-reseller-usage",
+    "categories": [
+      "directadmin",
+      "crm-klantenpanel",
+      "crm-klantenpanel-overige",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "sni-inschakelen-op-een-directadmin-server",
+    "title": "SNI inschakelen op een DirectAdmin server",
+    "topic": "da-sni",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "directadmin-custombuild-2-updaten",
+    "title": "DirectAdmin Custombuild 2 updaten",
+    "topic": "da-custombuild",
+    "categories": [
+      "directadmin",
+      "directadmin-overige"
+    ]
+  },
+  {
+    "slug": "bestandsbeheer-in-directadmin",
+    "title": "Bestandsbeheer op een DirectAdmin VPS",
+    "topic": "tz-w2-rw-bestandsbeheer-op-een-directadmin-vpsbes-70d09",
+    "categories": [
+      "vps",
+      "directadmin",
+      "directadmin-overige",
+      "vps-overige"
+    ]
+  },
+  {
+    "slug": "directadmin-wachtwoord-aanpassen",
+    "title": "DirectAdmin wachtwoord aanpassen",
+    "topic": "da-password-change",
+    "categories": [
+      "directadmin",
+      "veilig-online",
+      "beveiliging",
+      "beveiliging-overige",
+      "directadmin-overige",
+      "veilig-online-wachtwoorden"
+    ]
+  },
+  {
+    "slug": "ftp-account-aanmaken-in-directadmin",
+    "title": "FTP-account aanmaken in DirectAdmin",
+    "topic": "tz-th-ftp-ftp-account-aanmaken-in-directadmin-20866",
+    "categories": [
+      "hosting",
+      "ftp-en-bestanden",
+      "directadmin"
+    ]
+  },
+  {
+    "slug": "jetbackup-restore-scenarios",
+    "title": "JetBackup restore-scenario’s",
+    "topic": "tz-w2-th-sec-jetbackup-restore-scenarios-e8bbb",
+    "categories": [
+      "beveiliging",
+      "hosting",
+      "directadmin"
+    ]
+  }
+]

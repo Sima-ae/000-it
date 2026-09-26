@@ -8,6 +8,19 @@ import { aeoGeoSeoTopicBuilders } from "./aeo-geo-seo-bodies";
 import { aiScanTopicBuilders } from "./ai-scan-bodies";
 import { bloggenTopicBuilders } from "./bloggen-bodies";
 import { cyberpanelTopicBuilders } from "./cyberpanel-bodies";
+import {
+  directadminExcerptsNl,
+  directadminTopicBuilders,
+} from "./directadmin-bodies";
+import {
+  qualityRemainingExcerptsNl,
+  qualityRemainingTopicBuilders,
+} from "./quality-remaining-bodies";
+import {
+  qualityW2ExcerptsNl,
+  qualityW2TopicBuilders,
+} from "./quality-w2-bodies";
+import { qualityPackExcerptsNl } from "./quality-pack-excerpts";
 import { microsoftTopicBuilders } from "./microsoft-bodies";
 import { pleskTopicBuilders } from "./plesk-bodies";
 import { veiligOnlineTopicBuilders } from "./veilig-online-bodies";
@@ -1358,6 +1371,13 @@ export function buildArticleHtml(
   if (locale !== "nl") {
     return englishGenericBody(ctx);
   }
+  // DirectAdmin / quality waves take precedence over generic/gap/thicken fillers.
+  const daBuilder = directadminTopicBuilders[topic];
+  if (daBuilder) return daBuilder(ctx);
+  const qualityBuilder = qualityRemainingTopicBuilders[topic];
+  if (qualityBuilder) return qualityBuilder(ctx);
+  const qualityW2Builder = qualityW2TopicBuilders[topic];
+  if (qualityW2Builder) return qualityW2Builder(ctx);
   if (topic.startsWith("gap-")) {
     return buildGapArticleHtml(title, topic);
   }
@@ -1387,10 +1407,26 @@ export function buildArticleHtml(
   return genericBody(ctx);
 }
 
-export function buildExcerpt(title: string, locale: string = "nl"): string {
-  const topic = title.replace(/\?$/, "").trim();
-  if (locale !== "nl") {
-    return `${topic}. Step-by-step explanation, key checks and tips for a stable configuration.`;
+export function buildExcerpt(
+  title: string,
+  locale: string = "nl",
+  topic?: string,
+): string {
+  if (locale === "nl" && topic && directadminExcerptsNl[topic]) {
+    return directadminExcerptsNl[topic];
   }
-  return `${topic}. Stapsgewijze uitleg, aandachtspunten en tips voor een stabiele configuratie.`;
+  if (locale === "nl" && topic && qualityRemainingExcerptsNl[topic]) {
+    return qualityRemainingExcerptsNl[topic];
+  }
+  if (locale === "nl" && topic && qualityW2ExcerptsNl[topic]) {
+    return qualityW2ExcerptsNl[topic];
+  }
+  if (locale === "nl" && topic && qualityPackExcerptsNl[topic]) {
+    return qualityPackExcerptsNl[topic];
+  }
+  const topicLabel = title.replace(/\?$/, "").trim();
+  if (locale !== "nl") {
+    return `${topicLabel}. Step-by-step explanation, key checks and tips for a stable configuration.`;
+  }
+  return `${topicLabel}: praktische handleiding van TripleZero iT met stappen, controles en wanneer je support inschakelt.`;
 }

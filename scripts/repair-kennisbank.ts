@@ -173,7 +173,7 @@ async function main() {
 
     // 1) Restore curated Dutch from catalog
     const bodyNl = buildArticleHtml(cat.title, cat.topic, "nl");
-    const excerptNl = buildExcerpt(cat.title, "nl");
+    const excerptNl = buildExcerpt(cat.title, "nl", cat.topic);
     const nlPayload = {
       title: cat.title,
       excerpt: excerptNl,

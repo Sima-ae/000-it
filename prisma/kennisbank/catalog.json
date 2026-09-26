@@ -4253,7 +4253,7 @@
         "support",
         "support-overige"
       ],
-      "topic": "gap-support"
+      "topic": "qr-iso-certificering"
     },
     {
       "slug": "herroepingsknop-instellen-in-webshop",
@@ -4262,7 +4262,7 @@
         "hosting",
         "hosting-overige"
       ],
-      "topic": "gap-host"
+      "topic": "qr-herroepingsknop-instellen-in-webshop"
     },
     {
       "slug": "betalingen",
@@ -4273,7 +4273,7 @@
         "facturen-en-betalen",
         "betalen-en-btw"
       ],
-      "topic": "gap-admin"
+      "topic": "qr-betalingen"
     },
     {
       "slug": "linux-kwetsbaarheid-cve-2026-31431",
@@ -4282,7 +4282,7 @@
         "vps",
         "linux-vps"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-linux-kwetsbaarheid-cve-2026-31431"
     },
     {
       "slug": "verhuizing-escaleren-nl-domeinnaam",
@@ -4291,7 +4291,7 @@
         "domeinnamen",
         "domeinnamen-overige"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-verhuizing-escaleren-nl-domeinnaam"
     },
     {
       "slug": "contactpersonen-webmail",
@@ -4300,7 +4300,7 @@
         "e-mail",
         "webmail"
       ],
-      "topic": "gap-email"
+      "topic": "qr-contactpersonen-webmail"
     },
     {
       "slug": "bijlage-toevoegen-in-de-webmail",
@@ -4309,7 +4309,7 @@
         "e-mail",
         "webmail"
       ],
-      "topic": "gap-email"
+      "topic": "qr-bijlage-toevoegen-in-de-webmail"
     },
     {
       "slug": "scammers-actief-met-nepmails",
@@ -4320,7 +4320,7 @@
         "beveiliging-overige",
         "veilig-online-phishing"
       ],
-      "topic": "gap-sec"
+      "topic": "qr-scammers-actief-met-nepmails"
     },
     {
       "slug": "migreren-naar-microsoft-365",
@@ -4331,7 +4331,7 @@
         "e-mail-overige",
         "microsoft-beheer"
       ],
-      "topic": "gap-ms"
+      "topic": "qr-migreren-naar-microsoft-365"
     },
     {
       "slug": "mail-als-bijlage-sturen",
@@ -4340,7 +4340,7 @@
         "e-mail",
         "e-mail-overige"
       ],
-      "topic": "gap-email"
+      "topic": "qr-mail-als-bijlage-sturen"
     },
     {
       "slug": "website-verhuizen",
@@ -4349,7 +4349,7 @@
         "hosting",
         "hosting-overige"
       ],
-      "topic": "gap-host"
+      "topic": "qr-website-verhuizen"
     },
     {
       "slug": "vps-starten-of-stoppen",
@@ -4358,7 +4358,7 @@
         "vps",
         "vps-beheer"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-vps-starten-of-stoppen"
     },
     {
       "slug": "security-alert-op-windows-servers",
@@ -4367,7 +4367,7 @@
         "vps",
         "windows-vps"
       ],
-      "topic": "gap-win"
+      "topic": "qr-security-alert-op-windows-servers"
     },
     {
       "slug": "bindings-toevoegen-op-een-windows-vps",
@@ -4385,7 +4385,7 @@
         "vps",
         "windows-vps"
       ],
-      "topic": "gap-win"
+      "topic": "qr-mssql-express-installeren-op-een-windows-server"
     },
     {
       "slug": "vps-updaten",
@@ -4394,7 +4394,7 @@
         "vps",
         "vps-overige"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-vps-updaten"
     },
     {
       "slug": "ssl-certificaat-aanvragen-op-windows-server",
@@ -4405,7 +4405,7 @@
         "beveiliging",
         "windows-vps"
       ],
-      "topic": "gap-win"
+      "topic": "qr-ssl-certificaat-aanvragen-op-windows-server"
     },
     {
       "slug": "wijziging-contactgegevens-nl-domeinnamen",
@@ -4414,7 +4414,7 @@
         "domeinnamen",
         "domeinnamen-overige"
       ],
-      "topic": "gap-tld"
+      "topic": "qr-wijziging-contactgegevens-nl-domeinnamen"
     },
     {
       "slug": "local-presence-bij-domeinnamen",
@@ -4423,7 +4423,7 @@
         "domeinnamen",
         "domein-registratie"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-local-presence-bij-domeinnamen"
     },
     {
       "slug": "google-tag-manager",
@@ -4432,7 +4432,7 @@
         "hosting",
         "hosting-overige"
       ],
-      "topic": "gap-host"
+      "topic": "qr-google-tag-manager"
     },
     {
       "slug": "microsoft-sql-server-databases",
@@ -4441,7 +4441,7 @@
         "microsoft",
         "microsoft-overige"
       ],
-      "topic": "gap-ms"
+      "topic": "qr-microsoft-sql-server-databases"
     },
     {
       "slug": "screenshot-maken",
@@ -4450,7 +4450,7 @@
         "support",
         "support-overige"
       ],
-      "topic": "gap-support"
+      "topic": "qr-screenshot-maken"
     },
     {
       "slug": "sha2-en-ssl",
@@ -4477,7 +4477,7 @@
         "microsoft",
         "microsoft-overige"
       ],
-      "topic": "gap-ms"
+      "topic": "qr-access-database-converteren-naar-microsoft-sql"
     },
     {
       "slug": "mailadres-toevoegen-aan-mailprogramma",
@@ -4486,7 +4486,7 @@
         "e-mail",
         "e-mail-instellen"
       ],
-      "topic": "gap-email"
+      "topic": "qr-mailadres-toevoegen-aan-mailprogramma"
     },
     {
       "slug": "aan-de-slag-met-microsoft",
@@ -4495,7 +4495,7 @@
         "microsoft",
         "microsoft-beheer"
       ],
-      "topic": "gap-ms"
+      "topic": "qr-aan-de-slag-met-microsoft"
     },
     {
       "slug": "onedrive-installeren",
@@ -4504,7 +4504,7 @@
         "microsoft",
         "microsoft-onedrive"
       ],
-      "topic": "gap-ms"
+      "topic": "qr-onedrive-installeren"
     },
     {
       "slug": "site-aanmaken-op-windows-vps",
@@ -4513,7 +4513,7 @@
         "vps",
         "windows-vps"
       ],
-      "topic": "gap-win"
+      "topic": "qr-site-aanmaken-op-windows-vps"
     },
     {
       "slug": "aan-de-slag-exchange-online",
@@ -4524,7 +4524,7 @@
         "microsoft-mail",
         "e-mail-overige"
       ],
-      "topic": "gap-ms"
+      "topic": "qr-aan-de-slag-exchange-online"
     },
     {
       "slug": "probleemoplossing-exchange-online",
@@ -4535,7 +4535,7 @@
         "microsoft-mail",
         "e-mail-overige"
       ],
-      "topic": "gap-ms"
+      "topic": "qr-probleemoplossing-exchange-online"
     },
     {
       "slug": "directadmin-gebruiken-als-reseller",
@@ -4546,7 +4546,7 @@
         "crm-klantenpanel-overige",
         "directadmin-overige"
       ],
-      "topic": "gap-admin"
+      "topic": "da-reseller-usage"
     },
     {
       "slug": "resellers",
@@ -4557,7 +4557,7 @@
         "crm-klantenpanel-overige",
         "shop-en-pakketten-overige"
       ],
-      "topic": "gap-admin"
+      "topic": "qr-resellers"
     },
     {
       "slug": "webshop-maken-in-websitebouwer",
@@ -4568,7 +4568,7 @@
         "hosting-overige",
         "wordpress-overige"
       ],
-      "topic": "gap-builder"
+      "topic": "qr-webshop-maken-in-websitebouwer"
     },
     {
       "slug": "bestandsrechten-aanpassen",
@@ -4577,7 +4577,7 @@
         "hosting",
         "ftp-en-bestanden"
       ],
-      "topic": "gap-host"
+      "topic": "qr-bestandsrechten-aanpassen"
     },
     {
       "slug": "recaptcha-instellen-op-je-website",
@@ -4586,7 +4586,7 @@
         "hosting",
         "hosting-overige"
       ],
-      "topic": "gap-host"
+      "topic": "qr-recaptcha-instellen-op-je-website"
     },
     {
       "slug": "hotlink-protection",
@@ -4597,7 +4597,7 @@
         "firewall-en-hacks",
         "veilig-online-malware"
       ],
-      "topic": "gap-sec"
+      "topic": "qr-hotlink-protection"
     },
     {
       "slug": "logfiles-bekijken-in-plesk",
@@ -4606,7 +4606,7 @@
         "plesk",
         "plesk-php-vps"
       ],
-      "topic": "gap-plesk"
+      "topic": "qr-logfiles-bekijken-in-plesk"
     },
     {
       "slug": "website-laten-maken",
@@ -4617,7 +4617,7 @@
         "hosting-overige",
         "wordpress-overige"
       ],
-      "topic": "gap-builder"
+      "topic": "qr-website-laten-maken"
     },
     {
       "slug": "microsoft-365-tenant-importeren",
@@ -4626,7 +4626,7 @@
         "microsoft",
         "microsoft-beheer"
       ],
-      "topic": "gap-ms"
+      "topic": "qr-microsoft-365-tenant-importeren"
     },
     {
       "slug": "storing-oplossen-in-microsoft",
@@ -4635,7 +4635,7 @@
         "microsoft",
         "microsoft-overige"
       ],
-      "topic": "gap-ms"
+      "topic": "qr-storing-oplossen-in-microsoft"
     },
     {
       "slug": "hoe-werkt-microsoft-teams",
@@ -4644,7 +4644,7 @@
         "microsoft",
         "microsoft-teams"
       ],
-      "topic": "gap-ms"
+      "topic": "qr-hoe-werkt-microsoft-teams"
     },
     {
       "slug": "hoe-stel-ik-een-favicon-in-voor-mijn-wordpress-website",
@@ -4655,7 +4655,7 @@
         "windows-vps",
         "wordpress-overige"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-hoe-stel-ik-een-favicon-in-voor-mijn-wordpress-website"
     },
     {
       "slug": "mijn-nieuwe-website-wordt-niet-getoond-wat-kan-ik-doen",
@@ -4664,7 +4664,7 @@
         "hosting",
         "hosting-overige"
       ],
-      "topic": "gap-host"
+      "topic": "qr-mijn-nieuwe-website-wordt-niet-getoond-wat-kan-ik-doen"
     },
     {
       "slug": "brute-force-aanval-en-man-in-the-middle-aanval",
@@ -4675,7 +4675,7 @@
         "firewall-en-hacks",
         "veilig-online-netwerk"
       ],
-      "topic": "gap-sec"
+      "topic": "qr-brute-force-aanval-en-man-in-the-middle-aanval"
     },
     {
       "slug": "alles-over-ddos-aanvallen",
@@ -4686,7 +4686,7 @@
         "firewall-en-hacks",
         "veilig-online-netwerk"
       ],
-      "topic": "gap-sec"
+      "topic": "qr-alles-over-ddos-aanvallen"
     },
     {
       "slug": "website-offline-vanwege-verdachte-scripts-wat-nu",
@@ -4695,7 +4695,7 @@
         "hosting",
         "hosting-overige"
       ],
-      "topic": "gap-host"
+      "topic": "qr-website-offline-vanwege-verdachte-scripts-wat-nu"
     },
     {
       "slug": "website-gehackt-zo-herstel-je-jouw-website",
@@ -4704,7 +4704,7 @@
         "hosting",
         "hosting-overige"
       ],
-      "topic": "gap-host"
+      "topic": "qr-website-gehackt-zo-herstel-je-jouw-website"
     },
     {
       "slug": "directory-aanmaken-op-een-windows-vps",
@@ -4731,7 +4731,7 @@
         "vps",
         "linux-vps"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-vps-beheren-via-console"
     },
     {
       "slug": "iis-installeren-op-windows",
@@ -4740,7 +4740,7 @@
         "vps",
         "windows-vps"
       ],
-      "topic": "gap-win"
+      "topic": "qr-iis-installeren-op-windows"
     },
     {
       "slug": "magento-2-installeren-op-een-vps",
@@ -4758,7 +4758,7 @@
         "vps",
         "linux-vps"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-cloudlinux-lve-manager"
     },
     {
       "slug": "domein-koppelen-aan-een-vps",
@@ -4787,7 +4787,7 @@
         "vps",
         "vps-beheer"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-snapshot-maken-van-je-vps"
     },
     {
       "slug": "vps-service-management-beheren-in-plesk",
@@ -4798,7 +4798,7 @@
         "vps-overige",
         "plesk-php-vps"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-vps-service-management-beheren-in-plesk"
     },
     {
       "slug": "centos-vps-beveiligen",
@@ -4816,7 +4816,7 @@
         "directadmin",
         "directadmin-overige"
       ],
-      "topic": "gap-da"
+      "topic": "da-sni"
     },
     {
       "slug": "beveilig-een-linux-vps-met-fail2ban",
@@ -4843,7 +4843,7 @@
         "vps",
         "vps-overige"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-private-network-aanmaken"
     },
     {
       "slug": "directadmin-custombuild-2-updaten",
@@ -4852,7 +4852,7 @@
         "directadmin",
         "directadmin-overige"
       ],
-      "topic": "gap-da"
+      "topic": "da-custombuild"
     },
     {
       "slug": "reverse-dns-instellen",
@@ -4872,7 +4872,7 @@
         "vps",
         "vps-overige"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-rsa-keys-beheren"
     },
     {
       "slug": "rdp-verbinding-maken-met-vps",
@@ -4890,7 +4890,7 @@
         "vps",
         "vps-beheer"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-support-op-managed-vps"
     },
     {
       "slug": "support-op-unmanaged-vps",
@@ -4899,7 +4899,7 @@
         "vps",
         "vps-beheer"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-support-op-unmanaged-vps"
     },
     {
       "slug": "plesk-updaten-op-je-vps",
@@ -4932,7 +4932,7 @@
         "vps-overige",
         "plesk-email-dns"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-webmail-applicatie-instellen-in-plesk"
     },
     {
       "slug": "php-mail-versturen-vanaf-je-website",
@@ -4950,7 +4950,7 @@
         "hosting",
         "hosting-overige"
       ],
-      "topic": "gap-host"
+      "topic": "qr-je-website-werkt-niet-dit-kun-je-zelf-controleren"
     },
     {
       "slug": "postmaster-mailadres",
@@ -4959,7 +4959,7 @@
         "e-mail",
         "e-mail-overige"
       ],
-      "topic": "gap-email"
+      "topic": "qr-postmaster-mailadres"
     },
     {
       "slug": "mailserver-configuratie-voor-plesk",
@@ -4972,7 +4972,7 @@
         "vps-overige",
         "plesk-email-dns"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-mailserver-configuratie-voor-plesk"
     },
     {
       "slug": "mailaccount-geblokkeerd-vanwege-misbruik",
@@ -4981,7 +4981,7 @@
         "e-mail",
         "e-mail-overige"
       ],
-      "topic": "gap-email"
+      "topic": "qr-mailaccount-geblokkeerd-vanwege-misbruik"
     },
     {
       "slug": "return-path-voor-crm",
@@ -4990,7 +4990,7 @@
         "e-mail",
         "e-mail-overige"
       ],
-      "topic": "gap-email"
+      "topic": "qr-return-path-voor-crm"
     },
     {
       "slug": "eigen-error-of-404-pagina-instellen-voor-je-website",
@@ -5026,7 +5026,7 @@
         "e-mail",
         "e-mail-overige"
       ],
-      "topic": "gap-email"
+      "topic": "qr-caldav-en-carddav-instellen"
     },
     {
       "slug": "submappen-in-je-webmail",
@@ -5035,7 +5035,7 @@
         "e-mail",
         "webmail"
       ],
-      "topic": "gap-email"
+      "topic": "qr-submappen-in-je-webmail"
     },
     {
       "slug": "handleiding-instellingen-beheren-in-websitebouwer",
@@ -5046,7 +5046,7 @@
         "hosting-overige",
         "wordpress-overige"
       ],
-      "topic": "gap-builder"
+      "topic": "qr-handleiding-instellingen-beheren-in-websitebouwer"
     },
     {
       "slug": "verzonden-mails-niet-in-de-juiste-map",
@@ -5055,7 +5055,7 @@
         "e-mail",
         "e-mail-overige"
       ],
-      "topic": "gap-email"
+      "topic": "qr-verzonden-mails-niet-in-de-juiste-map"
     },
     {
       "slug": "uurlimiet-uitgaande-mail",
@@ -5064,7 +5064,7 @@
         "e-mail",
         "e-mail-overige"
       ],
-      "topic": "gap-email"
+      "topic": "qr-uurlimiet-uitgaande-mail"
     },
     {
       "slug": "malware",
@@ -5073,7 +5073,7 @@
         "e-mail",
         "e-mail-overige"
       ],
-      "topic": "gap-email"
+      "topic": "qr-malware"
     },
     {
       "slug": "bounce-berichten",
@@ -5082,7 +5082,7 @@
         "e-mail",
         "e-mail-overige"
       ],
-      "topic": "gap-email"
+      "topic": "qr-bounce-berichten"
     },
     {
       "slug": "mailberichten-met-een-winmail-dat-bestand",
@@ -5091,7 +5091,7 @@
         "e-mail",
         "e-mail-overige"
       ],
-      "topic": "gap-email"
+      "topic": "qr-mailberichten-met-een-winmail-dat-bestand"
     },
     {
       "slug": "blacklisting",
@@ -5111,7 +5111,7 @@
         "domeinnamen-overige",
         "e-mail-overige"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-mail-extern-laten-afhandelen"
     },
     {
       "slug": "uitleg-over-spoofing",
@@ -5120,7 +5120,7 @@
         "e-mail",
         "spam-en-veiligheid"
       ],
-      "topic": "gap-email"
+      "topic": "qr-uitleg-over-spoofing"
     },
     {
       "slug": "mail-als-eml-bestand-opslaan",
@@ -5129,7 +5129,7 @@
         "e-mail",
         "e-mail-overige"
       ],
-      "topic": "gap-email"
+      "topic": "qr-mail-als-eml-bestand-opslaan"
     },
     {
       "slug": "ssl-certificaat-melding",
@@ -5140,7 +5140,7 @@
         "e-mail",
         "e-mail-overige"
       ],
-      "topic": "gap-ssl"
+      "topic": "qr-ssl-certificaat-melding"
     },
     {
       "slug": "mailservice-uitschakelen",
@@ -5149,7 +5149,7 @@
         "e-mail",
         "e-mail-overige"
       ],
-      "topic": "gap-email"
+      "topic": "qr-mailservice-uitschakelen"
     },
     {
       "slug": "mailinglijst-aanmaken",
@@ -5158,7 +5158,7 @@
         "e-mail",
         "e-mail-overige"
       ],
-      "topic": "gap-email"
+      "topic": "qr-mailinglijst-aanmaken"
     },
     {
       "slug": "mail-verhuizen-via-plesk",
@@ -5169,7 +5169,7 @@
         "e-mail-overige",
         "plesk-email-dns"
       ],
-      "topic": "gap-email"
+      "topic": "qr-mail-verhuizen-via-plesk"
     },
     {
       "slug": "postvak-is-vol",
@@ -5178,7 +5178,7 @@
         "e-mail",
         "mailbox-beheer"
       ],
-      "topic": "gap-email"
+      "topic": "qr-postvak-is-vol"
     },
     {
       "slug": "postvak-capaciteit-aanpassen",
@@ -5187,7 +5187,7 @@
         "e-mail",
         "mailbox-beheer"
       ],
-      "topic": "gap-email"
+      "topic": "qr-postvak-capaciteit-aanpassen"
     },
     {
       "slug": "handleiding-je-website-maken-met-websitebouwer",
@@ -5198,7 +5198,7 @@
         "hosting-overige",
         "wordpress-overige"
       ],
-      "topic": "gap-builder"
+      "topic": "qr-handleiding-je-website-maken-met-websitebouwer"
     },
     {
       "slug": "wat-is-websitebouwer-van-triplezero-it",
@@ -5209,7 +5209,7 @@
         "hosting-overige",
         "wordpress-overige"
       ],
-      "topic": "gap-builder"
+      "topic": "qr-wat-is-websitebouwer-van-triplezero-it"
     },
     {
       "slug": "e-mailheaders-opvragen",
@@ -5218,7 +5218,7 @@
         "e-mail",
         "e-mail-overige"
       ],
-      "topic": "gap-email"
+      "topic": "qr-e-mailheaders-opvragen"
     },
     {
       "slug": "voorkom-dat-mail-als-spam-wordt-gezien",
@@ -5227,7 +5227,7 @@
         "e-mail",
         "spam-en-veiligheid"
       ],
-      "topic": "gap-email"
+      "topic": "qr-voorkom-dat-mail-als-spam-wordt-gezien"
     },
     {
       "slug": "mail-backup-in-thunderbird",
@@ -5254,7 +5254,7 @@
         "e-mail",
         "mailbox-beheer"
       ],
-      "topic": "gap-email"
+      "topic": "qr-afzender-en-handtekening-in-je-mailprogramma"
     },
     {
       "slug": "wordpress-toolkit",
@@ -5265,7 +5265,7 @@
         "wordpress-installatie",
         "windows-vps"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-wordpress-toolkit"
     },
     {
       "slug": "access-database-omzetten-naar-mysql",
@@ -5283,7 +5283,7 @@
         "e-mail",
         "e-mail-overige"
       ],
-      "topic": "gap-email"
+      "topic": "qr-mail-versturen-met-asp"
     },
     {
       "slug": "web-platform-installer-voor-windows",
@@ -5292,7 +5292,7 @@
         "vps",
         "windows-vps"
       ],
-      "topic": "gap-win"
+      "topic": "qr-web-platform-installer-voor-windows"
     },
     {
       "slug": "bestandsbeheer-in-directadmin",
@@ -5312,7 +5312,7 @@
         "plesk",
         "plesk-websites"
       ],
-      "topic": "gap-plesk"
+      "topic": "qr-hoofdmap-van-een-website-wijzigen-in-plesk"
     },
     {
       "slug": "extra-gebruikers-aanmaken-in-wordpress",
@@ -5323,7 +5323,7 @@
         "wordpress-onderhoud",
         "windows-vps"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-extra-gebruikers-aanmaken-in-wordpress"
     },
     {
       "slug": "wordpress-permalinks",
@@ -5334,7 +5334,7 @@
         "wordpress-onderhoud",
         "windows-vps"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-wordpress-permalinks"
     },
     {
       "slug": "standaarddocumenten-instellen-op-een-server",
@@ -5343,7 +5343,7 @@
         "vps",
         "vps-overige"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-standaarddocumenten-instellen-op-een-server"
     },
     {
       "slug": "script-installer",
@@ -5352,7 +5352,7 @@
         "hosting",
         "hosting-overige"
       ],
-      "topic": "gap-host"
+      "topic": "qr-script-installer"
     },
     {
       "slug": "directadmin-wachtwoord-aanpassen",
@@ -5365,7 +5365,7 @@
         "directadmin-overige",
         "veilig-online-wachtwoorden"
       ],
-      "topic": "gap-da"
+      "topic": "da-password-change"
     },
     {
       "slug": "website-apps",
@@ -5376,7 +5376,7 @@
         "hosting-overige",
         "wordpress-overige"
       ],
-      "topic": "gap-builder"
+      "topic": "qr-website-apps"
     },
     {
       "slug": "web-config-configuratiebestanden",
@@ -5385,7 +5385,7 @@
         "vps",
         "windows-vps"
       ],
-      "topic": "gap-win"
+      "topic": "qr-web-config-configuratiebestanden"
     },
     {
       "slug": "widgets-toevoegen-in-wordpress",
@@ -5396,7 +5396,7 @@
         "wordpress-onderhoud",
         "windows-vps"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-widgets-toevoegen-in-wordpress"
     },
     {
       "slug": "wordpress-website-verhuizen",
@@ -5409,7 +5409,7 @@
         "domeinnamen-overige",
         "wordpress-overige"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-wordpress-website-verhuizen"
     },
     {
       "slug": "website-maken-met-wordpress",
@@ -5420,7 +5420,7 @@
         "windows-vps",
         "wordpress-overige"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-website-maken-met-wordpress"
     },
     {
       "slug": "inloggen-op-het-wordpress-dashboard",
@@ -5431,7 +5431,7 @@
         "windows-vps",
         "wordpress-overige"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-inloggen-op-het-wordpress-dashboard"
     },
     {
       "slug": "server-side-includes-gebruiken-bij-triplezero-it",
@@ -5440,7 +5440,7 @@
         "hosting",
         "hosting-overige"
       ],
-      "topic": "gap-host"
+      "topic": "qr-server-side-includes-gebruiken-bij-triplezero-it"
     },
     {
       "slug": "website-tijdelijk-offline-zetten",
@@ -5449,7 +5449,7 @@
         "hosting",
         "hosting-overige"
       ],
-      "topic": "gap-host"
+      "topic": "qr-website-tijdelijk-offline-zetten"
     },
     {
       "slug": "asp-hosting",
@@ -5458,7 +5458,7 @@
         "hosting",
         "hosting-overige"
       ],
-      "topic": "gap-host"
+      "topic": "qr-asp-hosting"
     },
     {
       "slug": "handmatig-een-nieuwe-plesk-licentie-installeren",
@@ -5469,7 +5469,7 @@
         "vps-overige",
         "plesk-php-vps"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-handmatig-een-nieuwe-plesk-licentie-installeren"
     },
     {
       "slug": "een-phpinfo-bestand-maken",
@@ -5489,7 +5489,7 @@
         "hosting-overige",
         "bloggen-beheer"
       ],
-      "topic": "gap-cms"
+      "topic": "qr-joomla-updaten"
     },
     {
       "slug": "een-website-maken-met-joomla",
@@ -5500,7 +5500,7 @@
         "hosting-overige",
         "wordpress-overige"
       ],
-      "topic": "gap-builder"
+      "topic": "qr-een-website-maken-met-joomla"
     },
     {
       "slug": "mysql-database-probleemoplossing",
@@ -5536,7 +5536,7 @@
         "ssl-certificaten",
         "beveiliging"
       ],
-      "topic": "gap-ssl"
+      "topic": "qr-hsts-inschakelen"
     },
     {
       "slug": "host-bestand-wijzigen",
@@ -5545,7 +5545,7 @@
         "hosting",
         "hosting-overige"
       ],
-      "topic": "gap-host"
+      "topic": "qr-host-bestand-wijzigen"
     },
     {
       "slug": "informatie-over-xxx-domeinnamen",
@@ -5554,7 +5554,7 @@
         "domeinnamen",
         "domein-registratie"
       ],
-      "topic": "gap-tld"
+      "topic": "qr-informatie-over-xxx-domeinnamen"
     },
     {
       "slug": "alles-over-tv-domeinnamen",
@@ -5563,7 +5563,7 @@
         "domeinnamen",
         "domein-registratie"
       ],
-      "topic": "gap-tld"
+      "topic": "qr-alles-over-tv-domeinnamen"
     },
     {
       "slug": "domeinen-als-reseller-verhuizen",
@@ -5572,7 +5572,7 @@
         "domeinnamen",
         "domeinnamen-overige"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-domeinen-als-reseller-verhuizen"
     },
     {
       "slug": "domeinnamen-wijzigen",
@@ -5581,7 +5581,7 @@
         "domeinnamen",
         "domeinnamen-overige"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-domeinnamen-wijzigen"
     },
     {
       "slug": "domeinhouders-beheren",
@@ -5590,7 +5590,7 @@
         "domeinnamen",
         "domein-registratie"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-domeinhouders-beheren"
     },
     {
       "slug": "alles-over-es-domeinnamen",
@@ -5599,7 +5599,7 @@
         "domeinnamen",
         "domein-registratie"
       ],
-      "topic": "gap-tld"
+      "topic": "qr-alles-over-es-domeinnamen"
     },
     {
       "slug": "alles-over-eu-domeinnamen",
@@ -5608,7 +5608,7 @@
         "domeinnamen",
         "domein-registratie"
       ],
-      "topic": "gap-tld"
+      "topic": "qr-alles-over-eu-domeinnamen"
     },
     {
       "slug": "alles-over-info-domeinnamen",
@@ -5617,7 +5617,7 @@
         "domeinnamen",
         "domein-registratie"
       ],
-      "topic": "gap-tld"
+      "topic": "qr-alles-over-info-domeinnamen"
     },
     {
       "slug": "alles-over-biz-domeinnamen",
@@ -5626,7 +5626,7 @@
         "domeinnamen",
         "domein-registratie"
       ],
-      "topic": "gap-tld"
+      "topic": "qr-alles-over-biz-domeinnamen"
     },
     {
       "slug": "alles-over-nu-domeinnamen",
@@ -5635,7 +5635,7 @@
         "domeinnamen",
         "domein-registratie"
       ],
-      "topic": "gap-tld"
+      "topic": "qr-alles-over-nu-domeinnamen"
     },
     {
       "slug": "alles-over-fr-domeinnamen",
@@ -5644,7 +5644,7 @@
         "domeinnamen",
         "domein-registratie"
       ],
-      "topic": "gap-tld"
+      "topic": "qr-alles-over-fr-domeinnamen"
     },
     {
       "slug": "alles-over-be-domeinnamen",
@@ -5653,7 +5653,7 @@
         "domeinnamen",
         "domein-registratie"
       ],
-      "topic": "gap-tld"
+      "topic": "qr-alles-over-be-domeinnamen"
     },
     {
       "slug": "alles-over-de-domeinnamen",
@@ -5662,7 +5662,7 @@
         "domeinnamen",
         "domein-registratie"
       ],
-      "topic": "gap-tld"
+      "topic": "qr-alles-over-de-domeinnamen"
     },
     {
       "slug": "alles-over-co-uk-domeinnamen",
@@ -5671,7 +5671,7 @@
         "domeinnamen",
         "domein-registratie"
       ],
-      "topic": "gap-tld"
+      "topic": "qr-alles-over-co-uk-domeinnamen"
     },
     {
       "slug": "alles-over-com-domeinnamen",
@@ -5680,7 +5680,7 @@
         "domeinnamen",
         "domein-registratie"
       ],
-      "topic": "gap-tld"
+      "topic": "qr-alles-over-com-domeinnamen"
     },
     {
       "slug": "alles-over-nl-domeinnamen",
@@ -5689,7 +5689,7 @@
         "domeinnamen",
         "domein-registratie"
       ],
-      "topic": "gap-tld"
+      "topic": "qr-alles-over-nl-domeinnamen"
     },
     {
       "slug": "een-co-uk-domeinnaam-verhuizen",
@@ -5698,7 +5698,7 @@
         "domeinnamen",
         "domeinnamen-overige"
       ],
-      "topic": "gap-tld"
+      "topic": "qr-een-co-uk-domeinnaam-verhuizen"
     },
     {
       "slug": "probleemoplossing-domeinnaam-verhuizen",
@@ -5707,7 +5707,7 @@
         "domeinnamen",
         "domeinnamen-overige"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-probleemoplossing-domeinnaam-verhuizen"
     },
     {
       "slug": "domeinnaam-koppelen-aan-een-pakket",
@@ -5716,7 +5716,7 @@
         "domeinnamen",
         "domeinnamen-overige"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-domeinnaam-koppelen-aan-een-pakket"
     },
     {
       "slug": "domeinnaam-taxatie",
@@ -5725,7 +5725,7 @@
         "domeinnamen",
         "domein-registratie"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-domeinnaam-taxatie"
     },
     {
       "slug": "caa-records",
@@ -5734,7 +5734,7 @@
         "domeinnamen",
         "dns-records"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-caa-records"
     },
     {
       "slug": "aaaa-records-ipv6",
@@ -5743,7 +5743,7 @@
         "domeinnamen",
         "dns-records"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-aaaa-records-ipv6"
     },
     {
       "slug": "tlsa-records-beheren",
@@ -5752,7 +5752,7 @@
         "domeinnamen",
         "dns-records"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-tlsa-records-beheren"
     },
     {
       "slug": "soa-records",
@@ -5761,7 +5761,7 @@
         "domeinnamen",
         "dns-records"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-soa-records"
     },
     {
       "slug": "cname-records",
@@ -5770,7 +5770,7 @@
         "domeinnamen",
         "dns-records"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-cname-records"
     },
     {
       "slug": "srv-records",
@@ -5779,7 +5779,7 @@
         "domeinnamen",
         "dns-records"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-srv-records"
     },
     {
       "slug": "mx-records",
@@ -5788,7 +5788,7 @@
         "domeinnamen",
         "dns-records"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-mx-records"
     },
     {
       "slug": "a-records",
@@ -5797,7 +5797,7 @@
         "domeinnamen",
         "domeinnamen-overige"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-a-records"
     },
     {
       "slug": "nameservers-beheren",
@@ -5806,7 +5806,7 @@
         "domeinnamen",
         "domeinnamen-overige"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-nameservers-beheren"
     },
     {
       "slug": "premium-dns",
@@ -5835,7 +5835,7 @@
         "account-en-inloggen",
         "shop-en-pakketten-overige"
       ],
-      "topic": "gap-admin"
+      "topic": "qr-extra-gebruiker-toevoegen-aan-je-klantomgeving"
     },
     {
       "slug": "automatische-incasso-mislukt",
@@ -5846,7 +5846,7 @@
         "facturen-en-betalen",
         "betalen-en-btw"
       ],
-      "topic": "gap-admin"
+      "topic": "qr-automatische-incasso-mislukt"
     },
     {
       "slug": "downgraden",
@@ -5857,7 +5857,7 @@
         "hostingpakketten",
         "crm-klantenpanel-overige"
       ],
-      "topic": "gap-admin"
+      "topic": "qr-downgraden"
     },
     {
       "slug": "producten-overdragen-naar-ander-account",
@@ -5866,7 +5866,7 @@
         "hosting",
         "hosting-overige"
       ],
-      "topic": "gap-host"
+      "topic": "qr-producten-overdragen-naar-ander-account"
     },
     {
       "slug": "klantenpanel-functies-uitgelegd",
@@ -5875,7 +5875,7 @@
         "hosting",
         "hosting-overige"
       ],
-      "topic": "gap-host"
+      "topic": "qr-klantenpanel-functies-uitgelegd"
     },
     {
       "slug": "overzicht-producten-en-diensten",
@@ -5884,7 +5884,7 @@
         "hosting",
         "hosting-overige"
       ],
-      "topic": "gap-host"
+      "topic": "qr-overzicht-producten-en-diensten"
     },
     {
       "slug": "geval-van-overlijden",
@@ -5895,7 +5895,7 @@
         "crm-klantenpanel-overige",
         "shop-en-pakketten-overige"
       ],
-      "topic": "gap-admin"
+      "topic": "qr-geval-van-overlijden"
     },
     {
       "slug": "dubbele-betaling",
@@ -5906,7 +5906,7 @@
         "facturen-en-betalen",
         "betalen-en-btw"
       ],
-      "topic": "gap-admin"
+      "topic": "qr-dubbele-betaling"
     },
     {
       "slug": "factuur-bij-het-incassobureau",
@@ -5917,7 +5917,7 @@
         "facturen-en-betalen",
         "betalen-en-btw"
       ],
-      "topic": "gap-admin"
+      "topic": "qr-factuur-bij-het-incassobureau"
     },
     {
       "slug": "je-klantnummer-opzoeken",
@@ -5928,7 +5928,7 @@
         "facturen-en-betalen",
         "shop-en-pakketten-overige"
       ],
-      "topic": "gap-admin"
+      "topic": "qr-je-klantnummer-opzoeken"
     },
     {
       "slug": "klantaccount-activeren-in-klantenpanel",
@@ -5939,7 +5939,7 @@
         "account-en-inloggen",
         "shop-en-pakketten-overige"
       ],
-      "topic": "gap-admin"
+      "topic": "qr-klantaccount-activeren-in-klantenpanel"
     },
     {
       "slug": "wachtwoorden-veilig-versturen-met-pep",
@@ -5950,7 +5950,7 @@
         "beveiliging-overige",
         "veilig-online-wachtwoorden"
       ],
-      "topic": "gap-sec"
+      "topic": "qr-wachtwoorden-veilig-versturen-met-pep"
     },
     {
       "slug": "automatische-incasso-instellen",
@@ -5961,7 +5961,7 @@
         "facturen-en-betalen",
         "betalen-en-btw"
       ],
-      "topic": "gap-admin"
+      "topic": "qr-automatische-incasso-instellen"
     },
     {
       "slug": "mail-versturen-met-wordpress",
@@ -5974,7 +5974,7 @@
         "e-mail-overige",
         "wordpress-overige"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-mail-versturen-met-wordpress"
     },
     {
       "slug": "domeinnaam-verhuizen",
@@ -5983,7 +5983,7 @@
         "domeinnamen",
         "domeinnamen-overige"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-domeinnaam-verhuizen"
     },
     {
       "slug": "wordpress-smart-start-bij-triplezero-it",
@@ -5994,7 +5994,7 @@
         "wordpress-installatie",
         "windows-vps"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-wordpress-smart-start-bij-triplezero-it"
     },
     {
       "slug": "webshop-toevoegen-aan-wordpress",
@@ -6005,7 +6005,7 @@
         "windows-vps",
         "wordpress-overige"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-webshop-toevoegen-aan-wordpress"
     },
     {
       "slug": "website-beveiligen-met-ssl",
@@ -6014,7 +6014,7 @@
         "ssl-certificaten",
         "beveiliging"
       ],
-      "topic": "gap-ssl"
+      "topic": "qr-website-beveiligen-met-ssl"
     },
     {
       "slug": "internal-server-500-of-wit-scherm-oplossen",
@@ -6034,7 +6034,7 @@
         "mailbox-beheer",
         "microsoft-mail"
       ],
-      "topic": "gap-ms"
+      "topic": "qr-gedeelde-postvakken-toevoegen-in-microsoft-365"
     },
     {
       "slug": "wachtwoord-kopieren-uit-browser-of-tool",
@@ -6045,7 +6045,7 @@
         "beveiliging-overige",
         "veilig-online-wachtwoorden"
       ],
-      "topic": "gap-sec"
+      "topic": "qr-wachtwoord-kopieren-uit-browser-of-tool"
     },
     {
       "slug": "ssl-bestellen-beheren",
@@ -6054,7 +6054,7 @@
         "ssl-certificaten",
         "beveiliging"
       ],
-      "topic": "gap-ssl"
+      "topic": "qr-ssl-bestellen-beheren"
     },
     {
       "slug": "root-wachtwoord-herstellen-vps",
@@ -6076,7 +6076,7 @@
         "microsoft",
         "microsoft-beheer"
       ],
-      "topic": "gap-ms"
+      "topic": "qr-microsoft-gebruikers-beheren"
     },
     {
       "slug": "onedrive-bij-triplezero-it",
@@ -6085,7 +6085,7 @@
         "microsoft",
         "microsoft-onedrive"
       ],
-      "topic": "gap-ms"
+      "topic": "qr-onedrive-bij-triplezero-it"
     },
     {
       "slug": "klachtenprocedure",
@@ -6094,7 +6094,7 @@
         "support",
         "support-overige"
       ],
-      "topic": "gap-support"
+      "topic": "qr-klachtenprocedure"
     },
     {
       "slug": "alles-over-de-tel-domeinnaam",
@@ -6103,7 +6103,7 @@
         "domeinnamen",
         "domeinnamen-overige"
       ],
-      "topic": "gap-tld"
+      "topic": "qr-alles-over-de-tel-domeinnaam"
     },
     {
       "slug": "ssl-validatie",
@@ -6112,7 +6112,7 @@
         "ssl-certificaten",
         "beveiliging"
       ],
-      "topic": "gap-ssl"
+      "topic": "qr-ssl-validatie"
     },
     {
       "slug": "ip-adressen-beheren-op-je-vps",
@@ -6130,7 +6130,7 @@
         "support",
         "support-overige"
       ],
-      "topic": "gap-support"
+      "topic": "qr-kwaliteitsgarantie"
     },
     {
       "slug": "probleemoplossing-novnc-console",
@@ -6139,7 +6139,7 @@
         "vps",
         "linux-vps"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-probleemoplossing-novnc-console"
     },
     {
       "slug": "software-voor-de-applicatie-vps-triplezero-it",
@@ -6148,7 +6148,7 @@
         "vps",
         "vps-overige"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-software-voor-de-applicatie-vps-triplezero-it"
     },
     {
       "slug": "managed-vps-beheren-bij-triplezero-it",
@@ -6175,7 +6175,7 @@
         "vps",
         "vps-overige"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-vps-hosting"
     },
     {
       "slug": "dns-service-en-externe-domeinnamen",
@@ -6193,7 +6193,7 @@
         "domeinnamen",
         "domeinnamen-overige"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-domeinnaam-doorsturen"
     },
     {
       "slug": "domein-verhuizen-naar-een-andere-provider",
@@ -6202,7 +6202,7 @@
         "domeinnamen",
         "domeinnamen-overige"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-domein-verhuizen-naar-een-andere-provider"
     },
     {
       "slug": "domeinnaam-overdragen-via-je-klantomgeving",
@@ -6211,7 +6211,7 @@
         "domeinnamen",
         "domein-verhuizen"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-domeinnaam-overdragen-via-je-klantomgeving"
     },
     {
       "slug": "domeinnaam-probleemoplossing",
@@ -6220,7 +6220,7 @@
         "domeinnamen",
         "domeinnamen-overige"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-domeinnaam-probleemoplossing"
     },
     {
       "slug": "domeinnaam-kopen-zonder-hosting",
@@ -6229,7 +6229,7 @@
         "domeinnamen",
         "domeinnamen-overige"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-domeinnaam-kopen-zonder-hosting"
     },
     {
       "slug": "domeinnamen-bij-triplezero-it-verkopen-via-sedo",
@@ -6238,7 +6238,7 @@
         "domeinnamen",
         "domeinnamen-overige"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-domeinnamen-bij-triplezero-it-verkopen-via-sedo"
     },
     {
       "slug": "validatiemail-voor-topleveldomeinnamen",
@@ -6247,7 +6247,7 @@
         "domeinnamen",
         "domein-registratie"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-validatiemail-voor-topleveldomeinnamen"
     },
     {
       "slug": "domeinnaamregistratie",
@@ -6256,7 +6256,7 @@
         "domeinnamen",
         "domein-registratie"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-domeinnaamregistratie"
     },
     {
       "slug": "premium-domeinnamen",
@@ -6265,7 +6265,7 @@
         "domeinnamen",
         "domein-registratie"
       ],
-      "topic": "gap-dns"
+      "topic": "qr-premium-domeinnamen"
     },
     {
       "slug": "fraude-voorkomen",
@@ -6276,7 +6276,7 @@
         "beveiliging-overige",
         "veilig-online-basis"
       ],
-      "topic": "gap-sec"
+      "topic": "qr-fraude-voorkomen"
     },
     {
       "slug": "begrippenlijst",
@@ -6285,7 +6285,7 @@
         "support",
         "support-overige"
       ],
-      "topic": "gap-support"
+      "topic": "qr-begrippenlijst"
     },
     {
       "slug": "probleemoplossing-mail",
@@ -6294,7 +6294,7 @@
         "e-mail",
         "e-mail-overige"
       ],
-      "topic": "gap-email"
+      "topic": "qr-probleemoplossing-mail"
     },
     {
       "slug": "uitgaande-e-mailserver-wijzigen",
@@ -6303,7 +6303,7 @@
         "e-mail",
         "e-mail-overige"
       ],
-      "topic": "gap-email"
+      "topic": "qr-uitgaande-e-mailserver-wijzigen"
     },
     {
       "slug": "nieuw-e-mailwachtwoord-instellen",
@@ -6316,7 +6316,7 @@
         "e-mail-overige",
         "veilig-online-wachtwoorden"
       ],
-      "topic": "gap-email"
+      "topic": "qr-nieuw-e-mailwachtwoord-instellen"
     },
     {
       "slug": "website-vindbaar-maken-in-google",
@@ -6325,7 +6325,7 @@
         "hosting",
         "hosting-overige"
       ],
-      "topic": "gap-host"
+      "topic": "qr-website-vindbaar-maken-in-google"
     },
     {
       "slug": "mappen-beveiligen-hostingpakket",
@@ -6334,7 +6334,7 @@
         "hosting",
         "hosting-overige"
       ],
-      "topic": "gap-host"
+      "topic": "qr-mappen-beveiligen-hostingpakket"
     },
     {
       "slug": "mail-instellen-in-thunderbird",
@@ -6343,7 +6343,7 @@
         "e-mail",
         "e-mail-instellen"
       ],
-      "topic": "gap-email"
+      "topic": "qr-mail-instellen-in-thunderbird"
     },
     {
       "slug": "inloggen-op-je-klantomgeving",
@@ -6356,7 +6356,7 @@
         "shop-en-pakketten-overige",
         "veilig-online-wachtwoorden"
       ],
-      "topic": "gap-admin"
+      "topic": "qr-inloggen-op-je-klantomgeving"
     },
     {
       "slug": "mailadressen-en-postvakken-aanmaken",
@@ -6365,7 +6365,7 @@
         "e-mail",
         "mailbox-beheer"
       ],
-      "topic": "gap-email"
+      "topic": "qr-mailadressen-en-postvakken-aanmaken"
     },
     {
       "slug": "backups-terugplaatsen",
@@ -6394,7 +6394,7 @@
         "beveiliging-overige",
         "veilig-online-wachtwoorden"
       ],
-      "topic": "gap-sec"
+      "topic": "qr-veilige-wachtwoorden-maken"
     },
     {
       "slug": "inloggen-op-je-mysql-database",
@@ -6414,7 +6414,7 @@
         "beveiliging-overige",
         "veilig-online-malware"
       ],
-      "topic": "gap-sec"
+      "topic": "qr-patchman"
     },
     {
       "slug": "beveiliging-en-privacy-microsoft-data",
@@ -6423,7 +6423,7 @@
         "microsoft",
         "microsoft-beveiliging"
       ],
-      "topic": "gap-ms"
+      "topic": "qr-beveiliging-en-privacy-microsoft-data"
     },
     {
       "slug": "domeinnaam-koppelen-aan-microsoft-365",
@@ -6434,7 +6434,7 @@
         "domeinnamen-overige",
         "microsoft-beheer"
       ],
-      "topic": "gap-ms"
+      "topic": "qr-domeinnaam-koppelen-aan-microsoft-365"
     },
     {
       "slug": "microsoft-365-mail-van-triplezero-it-toevoegen-in-outlook",
@@ -6445,7 +6445,7 @@
         "microsoft-mail",
         "e-mail-overige"
       ],
-      "topic": "gap-ms"
+      "topic": "qr-microsoft-365-mail-van-triplezero-it-toevoegen-in-outlook"
     },
     {
       "slug": "microsoft-365-mail-toevoegen-in-outlook-op-je-telefoon",
@@ -6456,7 +6456,7 @@
         "microsoft-mail",
         "e-mail-overige"
       ],
-      "topic": "gap-ms"
+      "topic": "qr-microsoft-365-mail-toevoegen-in-outlook-op-je-telefoon"
     },
     {
       "slug": "de-outlook-web-app-bij-triplezero-it",
@@ -6467,7 +6467,7 @@
         "microsoft-mail",
         "e-mail-overige"
       ],
-      "topic": "gap-ms"
+      "topic": "qr-de-outlook-web-app-bij-triplezero-it"
     },
     {
       "slug": "imicrosoft-inloggen-wachtwoordbeheer",
@@ -6480,7 +6480,7 @@
         "microsoft-beveiliging",
         "veilig-online-wachtwoorden"
       ],
-      "topic": "gap-ms"
+      "topic": "qr-imicrosoft-inloggen-wachtwoordbeheer"
     },
     {
       "slug": "faq-en-support-onedrive",
@@ -6489,7 +6489,7 @@
         "microsoft",
         "microsoft-onedrive"
       ],
-      "topic": "gap-ms"
+      "topic": "qr-faq-en-support-onedrive"
     },
     {
       "slug": "kopie-id-veilig-versturen",
@@ -6498,7 +6498,7 @@
         "hosting",
         "hosting-overige"
       ],
-      "topic": "gap-host"
+      "topic": "qr-kopie-id-veilig-versturen"
     },
     {
       "slug": "microsoft-onderdelen-uitgelegd",
@@ -6507,7 +6507,7 @@
         "microsoft",
         "microsoft-beheer"
       ],
-      "topic": "gap-ms"
+      "topic": "qr-microsoft-onderdelen-uitgelegd"
     },
     {
       "slug": "gegevens-wijzigen-in-je-klantomgeving",
@@ -6518,7 +6518,7 @@
         "crm-klantenpanel-overige",
         "shop-en-pakketten-overige"
       ],
-      "topic": "gap-admin"
+      "topic": "qr-gegevens-wijzigen-in-je-klantomgeving"
     },
     {
       "slug": "microsoft-licentie-bestellen-en-beheren",
@@ -6527,7 +6527,7 @@
         "microsoft",
         "microsoft-beheer"
       ],
-      "topic": "gap-ms"
+      "topic": "qr-microsoft-licentie-bestellen-en-beheren"
     },
     {
       "slug": "producten-bestellen-in-je-klantomgeving",
@@ -6538,7 +6538,7 @@
         "crm-klantenpanel-overige",
         "shop-en-pakketten-overige"
       ],
-      "topic": "gap-admin"
+      "topic": "qr-producten-bestellen-in-je-klantomgeving"
     },
     {
       "slug": "wordpress-onderhouden-bij-triplezero-it",
@@ -6549,7 +6549,7 @@
         "wordpress-onderhoud",
         "windows-vps"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-wordpress-onderhouden-bij-triplezero-it"
     },
     {
       "slug": "website-statistieken",
@@ -6558,7 +6558,7 @@
         "hosting",
         "hosting-overige"
       ],
-      "topic": "gap-host"
+      "topic": "qr-website-statistieken"
     },
     {
       "slug": "informatie-over-wordpress",
@@ -6569,7 +6569,7 @@
         "windows-vps",
         "wordpress-overige"
       ],
-      "topic": "gap-vps"
+      "topic": "qr-informatie-over-wordpress"
     },
     {
       "slug": "browsergeschiedenis-wissen",
@@ -6578,7 +6578,7 @@
         "support",
         "support-overige"
       ],
-      "topic": "gap-support"
+      "topic": "qr-browsergeschiedenis-wissen"
     },
     {
       "slug": "bestandsbeheer-in-plesk",
@@ -6587,7 +6587,7 @@
         "plesk",
         "plesk-bestanden-wordpress"
       ],
-      "topic": "gap-plesk"
+      "topic": "qr-bestandsbeheer-in-plesk"
     },
     {
       "slug": "upgraden",
@@ -6598,7 +6598,7 @@
         "hostingpakketten",
         "crm-klantenpanel-overige"
       ],
-      "topic": "gap-admin"
+      "topic": "qr-upgraden"
     },
     {
       "slug": "privemodus-gebruiken",
@@ -6607,7 +6607,7 @@
         "support",
         "support-overige"
       ],
-      "topic": "gap-support"
+      "topic": "qr-privemodus-gebruiken"
     },
     {
       "slug": "website-backup-maken",
@@ -6616,7 +6616,7 @@
         "hosting",
         "hosting-overige"
       ],
-      "topic": "gap-host"
+      "topic": "qr-website-backup-maken"
     },
     {
       "slug": "software-installeren-drupal-prestashop-joomla",
@@ -6627,7 +6627,7 @@
         "wordpress-installatie",
         "hosting-overige"
       ],
-      "topic": "gap-builder"
+      "topic": "qr-software-installeren-drupal-prestashop-joomla"
     },
     {
       "slug": "gratis-ssl-activeren-beheren",
@@ -6645,7 +6645,7 @@
         "plesk",
         "plesk-starten"
       ],
-      "topic": "gap-plesk"
+      "topic": "qr-gebruikers-beheren-in-plesk"
     },
     {
       "slug": "acties-en-kortingen",
@@ -6656,7 +6656,7 @@
         "betalen-en-btw",
         "crm-klantenpanel-overige"
       ],
-      "topic": "gap-admin"
+      "topic": "qr-acties-en-kortingen"
     },
     {
       "slug": "overzicht-menu-items-in-plesk",
@@ -6665,7 +6665,7 @@
         "plesk",
         "plesk-starten"
       ],
-      "topic": "gap-plesk"
+      "topic": "qr-overzicht-menu-items-in-plesk"
     },
     {
       "slug": "wat-doet-de-seo-agent-bij-triplezero-it",

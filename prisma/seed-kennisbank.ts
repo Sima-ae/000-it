@@ -141,7 +141,7 @@ async function main() {
 
   for (const article of catalog.articles) {
     const bodyNl = buildArticleHtml(article.title, article.topic, "nl");
-    const excerptNl = buildExcerpt(article.title, "nl");
+    const excerptNl = buildExcerpt(article.title, "nl", article.topic);
     const categoryIds = article.categories
       .map((s) => categoryIdBySlug.get(s))
       .filter(Boolean) as string[];
