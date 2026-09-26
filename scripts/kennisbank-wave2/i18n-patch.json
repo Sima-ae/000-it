@@ -1,0 +1,600 @@
+{
+  "infrastructuur-servers": {
+    "en": {
+      "name": "Infrastructure & servers",
+      "description": "Dedicated concepts, rescue, Docker, apps on VPS, VPN and network hardening at TripleZero iT."
+    },
+    "de": {
+      "name": "Infrastructure & servers",
+      "description": "Dedicated concepts, rescue, Docker, apps on VPS, VPN and network hardening at TripleZero iT."
+    },
+    "fr": {
+      "name": "Infrastructure & servers",
+      "description": "Dedicated concepts, rescue, Docker, apps on VPS, VPN and network hardening at TripleZero iT."
+    },
+    "es": {
+      "name": "Infrastructure & servers",
+      "description": "Dedicated concepts, rescue, Docker, apps on VPS, VPN and network hardening at TripleZero iT."
+    },
+    "pt": {
+      "name": "Infrastructure & servers",
+      "description": "Dedicated concepts, rescue, Docker, apps on VPS, VPN and network hardening at TripleZero iT."
+    },
+    "it": {
+      "name": "Infrastructure & servers",
+      "description": "Dedicated concepts, rescue, Docker, apps on VPS, VPN and network hardening at TripleZero iT."
+    }
+  },
+  "foutmeldingen-troubleshooting": {
+    "en": {
+      "name": "Errors & troubleshooting",
+      "description": "HTTP codes, mail delivery, DNS/SSL, databases and performance incidents."
+    },
+    "de": {
+      "name": "Errors & troubleshooting",
+      "description": "HTTP codes, mail delivery, DNS/SSL, databases and performance incidents."
+    },
+    "fr": {
+      "name": "Errors & troubleshooting",
+      "description": "HTTP codes, mail delivery, DNS/SSL, databases and performance incidents."
+    },
+    "es": {
+      "name": "Errors & troubleshooting",
+      "description": "HTTP codes, mail delivery, DNS/SSL, databases and performance incidents."
+    },
+    "pt": {
+      "name": "Errors & troubleshooting",
+      "description": "HTTP codes, mail delivery, DNS/SSL, databases and performance incidents."
+    },
+    "it": {
+      "name": "Errors & troubleshooting",
+      "description": "HTTP codes, mail delivery, DNS/SSL, databases and performance incidents."
+    }
+  },
+  "privacy-juridisch-compliance": {
+    "en": {
+      "name": "Privacy, legal & compliance",
+      "description": "GDPR/AVG, cookies, webshop rules, required pages and EU tooling — educational, not legal advice."
+    },
+    "de": {
+      "name": "Privacy, legal & compliance",
+      "description": "GDPR/AVG, cookies, webshop rules, required pages and EU tooling — educational, not legal advice."
+    },
+    "fr": {
+      "name": "Privacy, legal & compliance",
+      "description": "GDPR/AVG, cookies, webshop rules, required pages and EU tooling — educational, not legal advice."
+    },
+    "es": {
+      "name": "Privacy, legal & compliance",
+      "description": "GDPR/AVG, cookies, webshop rules, required pages and EU tooling — educational, not legal advice."
+    },
+    "pt": {
+      "name": "Privacy, legal & compliance",
+      "description": "GDPR/AVG, cookies, webshop rules, required pages and EU tooling — educational, not legal advice."
+    },
+    "it": {
+      "name": "Privacy, legal & compliance",
+      "description": "GDPR/AVG, cookies, webshop rules, required pages and EU tooling — educational, not legal advice."
+    }
+  },
+  "vergelijkingen-keuzehulp": {
+    "en": {
+      "name": "Comparisons & decision guides",
+      "description": "Platform, hosting, payments and builder choices with clear SMB criteria."
+    },
+    "de": {
+      "name": "Comparisons & decision guides",
+      "description": "Platform, hosting, payments and builder choices with clear SMB criteria."
+    },
+    "fr": {
+      "name": "Comparisons & decision guides",
+      "description": "Platform, hosting, payments and builder choices with clear SMB criteria."
+    },
+    "es": {
+      "name": "Comparisons & decision guides",
+      "description": "Platform, hosting, payments and builder choices with clear SMB criteria."
+    },
+    "pt": {
+      "name": "Comparisons & decision guides",
+      "description": "Platform, hosting, payments and builder choices with clear SMB criteria."
+    },
+    "it": {
+      "name": "Comparisons & decision guides",
+      "description": "Platform, hosting, payments and builder choices with clear SMB criteria."
+    }
+  },
+  "dedicated-en-remote-mgmt": {
+    "en": {
+      "name": "Dedicated & remote management",
+      "description": "Dedicated concepts, IPMI/iLO/iDRAC and remote console basics."
+    },
+    "de": {
+      "name": "Dedicated & remote management",
+      "description": "Dedicated concepts, IPMI/iLO/iDRAC and remote console basics."
+    },
+    "fr": {
+      "name": "Dedicated & remote management",
+      "description": "Dedicated concepts, IPMI/iLO/iDRAC and remote console basics."
+    },
+    "es": {
+      "name": "Dedicated & remote management",
+      "description": "Dedicated concepts, IPMI/iLO/iDRAC and remote console basics."
+    },
+    "pt": {
+      "name": "Dedicated & remote management",
+      "description": "Dedicated concepts, IPMI/iLO/iDRAC and remote console basics."
+    },
+    "it": {
+      "name": "Dedicated & remote management",
+      "description": "Dedicated concepts, IPMI/iLO/iDRAC and remote console basics."
+    }
+  },
+  "rescue-recovery": {
+    "en": {
+      "name": "Rescue & recovery",
+      "description": "Rescue mode, netboot, password reset and recovery scenarios."
+    },
+    "de": {
+      "name": "Rescue & recovery",
+      "description": "Rescue mode, netboot, password reset and recovery scenarios."
+    },
+    "fr": {
+      "name": "Rescue & recovery",
+      "description": "Rescue mode, netboot, password reset and recovery scenarios."
+    },
+    "es": {
+      "name": "Rescue & recovery",
+      "description": "Rescue mode, netboot, password reset and recovery scenarios."
+    },
+    "pt": {
+      "name": "Rescue & recovery",
+      "description": "Rescue mode, netboot, password reset and recovery scenarios."
+    },
+    "it": {
+      "name": "Rescue & recovery",
+      "description": "Rescue mode, netboot, password reset and recovery scenarios."
+    }
+  },
+  "containers-docker": {
+    "en": {
+      "name": "Containers & Docker",
+      "description": "Docker on VPS, Compose, volumes and safe defaults."
+    },
+    "de": {
+      "name": "Containers & Docker",
+      "description": "Docker on VPS, Compose, volumes and safe defaults."
+    },
+    "fr": {
+      "name": "Containers & Docker",
+      "description": "Docker on VPS, Compose, volumes and safe defaults."
+    },
+    "es": {
+      "name": "Containers & Docker",
+      "description": "Docker on VPS, Compose, volumes and safe defaults."
+    },
+    "pt": {
+      "name": "Containers & Docker",
+      "description": "Docker on VPS, Compose, volumes and safe defaults."
+    },
+    "it": {
+      "name": "Containers & Docker",
+      "description": "Docker on VPS, Compose, volumes and safe defaults."
+    }
+  },
+  "apps-op-vps": {
+    "en": {
+      "name": "Apps on VPS",
+      "description": "Node.js, Python, Git deploy and process managers."
+    },
+    "de": {
+      "name": "Apps on VPS",
+      "description": "Node.js, Python, Git deploy and process managers."
+    },
+    "fr": {
+      "name": "Apps on VPS",
+      "description": "Node.js, Python, Git deploy and process managers."
+    },
+    "es": {
+      "name": "Apps on VPS",
+      "description": "Node.js, Python, Git deploy and process managers."
+    },
+    "pt": {
+      "name": "Apps on VPS",
+      "description": "Node.js, Python, Git deploy and process managers."
+    },
+    "it": {
+      "name": "Apps on VPS",
+      "description": "Node.js, Python, Git deploy and process managers."
+    }
+  },
+  "vpn-netwerk": {
+    "en": {
+      "name": "VPN & networking",
+      "description": "WireGuard, UFW/firewalld, Fail2ban and hardening."
+    },
+    "de": {
+      "name": "VPN & networking",
+      "description": "WireGuard, UFW/firewalld, Fail2ban and hardening."
+    },
+    "fr": {
+      "name": "VPN & networking",
+      "description": "WireGuard, UFW/firewalld, Fail2ban and hardening."
+    },
+    "es": {
+      "name": "VPN & networking",
+      "description": "WireGuard, UFW/firewalld, Fail2ban and hardening."
+    },
+    "pt": {
+      "name": "VPN & networking",
+      "description": "WireGuard, UFW/firewalld, Fail2ban and hardening."
+    },
+    "it": {
+      "name": "VPN & networking",
+      "description": "WireGuard, UFW/firewalld, Fail2ban and hardening."
+    }
+  },
+  "http-foutcodes": {
+    "en": {
+      "name": "HTTP status codes",
+      "description": "401, 403, 404, 500, 502 and 504 causes and fixes."
+    },
+    "de": {
+      "name": "HTTP status codes",
+      "description": "401, 403, 404, 500, 502 and 504 causes and fixes."
+    },
+    "fr": {
+      "name": "HTTP status codes",
+      "description": "401, 403, 404, 500, 502 and 504 causes and fixes."
+    },
+    "es": {
+      "name": "HTTP status codes",
+      "description": "401, 403, 404, 500, 502 and 504 causes and fixes."
+    },
+    "pt": {
+      "name": "HTTP status codes",
+      "description": "401, 403, 404, 500, 502 and 504 causes and fixes."
+    },
+    "it": {
+      "name": "HTTP status codes",
+      "description": "401, 403, 404, 500, 502 and 504 causes and fixes."
+    }
+  },
+  "mail-aflevering-fouten": {
+    "en": {
+      "name": "Mail delivery issues",
+      "description": "Blacklists, greylisting, bounces and SMTP problems."
+    },
+    "de": {
+      "name": "Mail delivery issues",
+      "description": "Blacklists, greylisting, bounces and SMTP problems."
+    },
+    "fr": {
+      "name": "Mail delivery issues",
+      "description": "Blacklists, greylisting, bounces and SMTP problems."
+    },
+    "es": {
+      "name": "Mail delivery issues",
+      "description": "Blacklists, greylisting, bounces and SMTP problems."
+    },
+    "pt": {
+      "name": "Mail delivery issues",
+      "description": "Blacklists, greylisting, bounces and SMTP problems."
+    },
+    "it": {
+      "name": "Mail delivery issues",
+      "description": "Blacklists, greylisting, bounces and SMTP problems."
+    }
+  },
+  "dns-ssl-fouten": {
+    "en": {
+      "name": "DNS & SSL errors",
+      "description": "Propagation, certificate errors, mixed content and HSTS."
+    },
+    "de": {
+      "name": "DNS & SSL errors",
+      "description": "Propagation, certificate errors, mixed content and HSTS."
+    },
+    "fr": {
+      "name": "DNS & SSL errors",
+      "description": "Propagation, certificate errors, mixed content and HSTS."
+    },
+    "es": {
+      "name": "DNS & SSL errors",
+      "description": "Propagation, certificate errors, mixed content and HSTS."
+    },
+    "pt": {
+      "name": "DNS & SSL errors",
+      "description": "Propagation, certificate errors, mixed content and HSTS."
+    },
+    "it": {
+      "name": "DNS & SSL errors",
+      "description": "Propagation, certificate errors, mixed content and HSTS."
+    }
+  },
+  "database-fouten": {
+    "en": {
+      "name": "Database errors",
+      "description": "Connections, corruption, MyISAM/InnoDB and import/export."
+    },
+    "de": {
+      "name": "Database errors",
+      "description": "Connections, corruption, MyISAM/InnoDB and import/export."
+    },
+    "fr": {
+      "name": "Database errors",
+      "description": "Connections, corruption, MyISAM/InnoDB and import/export."
+    },
+    "es": {
+      "name": "Database errors",
+      "description": "Connections, corruption, MyISAM/InnoDB and import/export."
+    },
+    "pt": {
+      "name": "Database errors",
+      "description": "Connections, corruption, MyISAM/InnoDB and import/export."
+    },
+    "it": {
+      "name": "Database errors",
+      "description": "Connections, corruption, MyISAM/InnoDB and import/export."
+    }
+  },
+  "performance-incidenten": {
+    "en": {
+      "name": "Performance incidents",
+      "description": "Traffic spikes, slow queries, CPU and full disks."
+    },
+    "de": {
+      "name": "Performance incidents",
+      "description": "Traffic spikes, slow queries, CPU and full disks."
+    },
+    "fr": {
+      "name": "Performance incidents",
+      "description": "Traffic spikes, slow queries, CPU and full disks."
+    },
+    "es": {
+      "name": "Performance incidents",
+      "description": "Traffic spikes, slow queries, CPU and full disks."
+    },
+    "pt": {
+      "name": "Performance incidents",
+      "description": "Traffic spikes, slow queries, CPU and full disks."
+    },
+    "it": {
+      "name": "Performance incidents",
+      "description": "Traffic spikes, slow queries, CPU and full disks."
+    }
+  },
+  "avg-website": {
+    "en": {
+      "name": "GDPR/AVG for websites",
+      "description": "Minimisation, processors and practical website checks."
+    },
+    "de": {
+      "name": "GDPR/AVG for websites",
+      "description": "Minimisation, processors and practical website checks."
+    },
+    "fr": {
+      "name": "GDPR/AVG for websites",
+      "description": "Minimisation, processors and practical website checks."
+    },
+    "es": {
+      "name": "GDPR/AVG for websites",
+      "description": "Minimisation, processors and practical website checks."
+    },
+    "pt": {
+      "name": "GDPR/AVG for websites",
+      "description": "Minimisation, processors and practical website checks."
+    },
+    "it": {
+      "name": "GDPR/AVG for websites",
+      "description": "Minimisation, processors and practical website checks."
+    }
+  },
+  "cookies-consent": {
+    "en": {
+      "name": "Cookies & consent",
+      "description": "When a banner is needed and Consent Mode."
+    },
+    "de": {
+      "name": "Cookies & consent",
+      "description": "When a banner is needed and Consent Mode."
+    },
+    "fr": {
+      "name": "Cookies & consent",
+      "description": "When a banner is needed and Consent Mode."
+    },
+    "es": {
+      "name": "Cookies & consent",
+      "description": "When a banner is needed and Consent Mode."
+    },
+    "pt": {
+      "name": "Cookies & consent",
+      "description": "When a banner is needed and Consent Mode."
+    },
+    "it": {
+      "name": "Cookies & consent",
+      "description": "When a banner is needed and Consent Mode."
+    }
+  },
+  "webshop-regels-nl": {
+    "en": {
+      "name": "NL/EU webshop rules",
+      "description": "Withdrawal, pricing display and consumer themes."
+    },
+    "de": {
+      "name": "NL/EU webshop rules",
+      "description": "Withdrawal, pricing display and consumer themes."
+    },
+    "fr": {
+      "name": "NL/EU webshop rules",
+      "description": "Withdrawal, pricing display and consumer themes."
+    },
+    "es": {
+      "name": "NL/EU webshop rules",
+      "description": "Withdrawal, pricing display and consumer themes."
+    },
+    "pt": {
+      "name": "NL/EU webshop rules",
+      "description": "Withdrawal, pricing display and consumer themes."
+    },
+    "it": {
+      "name": "NL/EU webshop rules",
+      "description": "Withdrawal, pricing display and consumer themes."
+    }
+  },
+  "juridische-paginas": {
+    "en": {
+      "name": "Legal pages",
+      "description": "Privacy, cookies, terms: what belongs (no copied templates)."
+    },
+    "de": {
+      "name": "Legal pages",
+      "description": "Privacy, cookies, terms: what belongs (no copied templates)."
+    },
+    "fr": {
+      "name": "Legal pages",
+      "description": "Privacy, cookies, terms: what belongs (no copied templates)."
+    },
+    "es": {
+      "name": "Legal pages",
+      "description": "Privacy, cookies, terms: what belongs (no copied templates)."
+    },
+    "pt": {
+      "name": "Legal pages",
+      "description": "Privacy, cookies, terms: what belongs (no copied templates)."
+    },
+    "it": {
+      "name": "Legal pages",
+      "description": "Privacy, cookies, terms: what belongs (no copied templates)."
+    }
+  },
+  "eu-tooling": {
+    "en": {
+      "name": "EU tooling & sovereignty",
+      "description": "European alternatives and vendor risk."
+    },
+    "de": {
+      "name": "EU tooling & sovereignty",
+      "description": "European alternatives and vendor risk."
+    },
+    "fr": {
+      "name": "EU tooling & sovereignty",
+      "description": "European alternatives and vendor risk."
+    },
+    "es": {
+      "name": "EU tooling & sovereignty",
+      "description": "European alternatives and vendor risk."
+    },
+    "pt": {
+      "name": "EU tooling & sovereignty",
+      "description": "European alternatives and vendor risk."
+    },
+    "it": {
+      "name": "EU tooling & sovereignty",
+      "description": "European alternatives and vendor risk."
+    }
+  },
+  "platform-vergelijkingen": {
+    "en": {
+      "name": "Platform comparisons",
+      "description": "WooCommerce, Shopify, PrestaShop and CMS choices."
+    },
+    "de": {
+      "name": "Platform comparisons",
+      "description": "WooCommerce, Shopify, PrestaShop and CMS choices."
+    },
+    "fr": {
+      "name": "Platform comparisons",
+      "description": "WooCommerce, Shopify, PrestaShop and CMS choices."
+    },
+    "es": {
+      "name": "Platform comparisons",
+      "description": "WooCommerce, Shopify, PrestaShop and CMS choices."
+    },
+    "pt": {
+      "name": "Platform comparisons",
+      "description": "WooCommerce, Shopify, PrestaShop and CMS choices."
+    },
+    "it": {
+      "name": "Platform comparisons",
+      "description": "WooCommerce, Shopify, PrestaShop and CMS choices."
+    }
+  },
+  "hosting-keuze": {
+    "en": {
+      "name": "Hosting choices",
+      "description": "Shared, managed, VPS and when each fits."
+    },
+    "de": {
+      "name": "Hosting choices",
+      "description": "Shared, managed, VPS and when each fits."
+    },
+    "fr": {
+      "name": "Hosting choices",
+      "description": "Shared, managed, VPS and when each fits."
+    },
+    "es": {
+      "name": "Hosting choices",
+      "description": "Shared, managed, VPS and when each fits."
+    },
+    "pt": {
+      "name": "Hosting choices",
+      "description": "Shared, managed, VPS and when each fits."
+    },
+    "it": {
+      "name": "Hosting choices",
+      "description": "Shared, managed, VPS and when each fits."
+    }
+  },
+  "betaalproviders": {
+    "en": {
+      "name": "Payment providers",
+      "description": "Mollie, Stripe and criteria for NL stores."
+    },
+    "de": {
+      "name": "Payment providers",
+      "description": "Mollie, Stripe and criteria for NL stores."
+    },
+    "fr": {
+      "name": "Payment providers",
+      "description": "Mollie, Stripe and criteria for NL stores."
+    },
+    "es": {
+      "name": "Payment providers",
+      "description": "Mollie, Stripe and criteria for NL stores."
+    },
+    "pt": {
+      "name": "Payment providers",
+      "description": "Mollie, Stripe and criteria for NL stores."
+    },
+    "it": {
+      "name": "Payment providers",
+      "description": "Mollie, Stripe and criteria for NL stores."
+    }
+  },
+  "builders-cms": {
+    "en": {
+      "name": "Builders & CMS",
+      "description": "Elementor, Gutenberg, custom themes and site builders."
+    },
+    "de": {
+      "name": "Builders & CMS",
+      "description": "Elementor, Gutenberg, custom themes and site builders."
+    },
+    "fr": {
+      "name": "Builders & CMS",
+      "description": "Elementor, Gutenberg, custom themes and site builders."
+    },
+    "es": {
+      "name": "Builders & CMS",
+      "description": "Elementor, Gutenberg, custom themes and site builders."
+    },
+    "pt": {
+      "name": "Builders & CMS",
+      "description": "Elementor, Gutenberg, custom themes and site builders."
+    },
+    "it": {
+      "name": "Builders & CMS",
+      "description": "Elementor, Gutenberg, custom themes and site builders."
+    }
+  }
+}

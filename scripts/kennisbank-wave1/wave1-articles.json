@@ -1,0 +1,4668 @@
+[
+  {
+    "slug": "next-js-app-router-uitleggen-voor-je-triplezero-it-project",
+    "title": "Next.js App Router uitleggen voor je TripleZero iT-project",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "nextjs-en-react"
+    ],
+    "topic": "tz-wd-next-js-app-router-uitleggen-voor-je-tripl-90b5a",
+    "module": "webdesign"
+  },
+  {
+    "slug": "ssr-versus-ssg-versus-isr-welke-rendering-kies-je",
+    "title": "SSR versus SSG versus ISR: welke rendering kies je?",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "nextjs-en-react"
+    ],
+    "topic": "tz-wd-ssr-versus-ssg-versus-isr-welke-rendering-22449",
+    "module": "webdesign"
+  },
+  {
+    "slug": "server-components-en-client-components-correct-scheiden",
+    "title": "Server Components en Client Components correct scheiden",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "nextjs-en-react"
+    ],
+    "topic": "tz-wd-server-components-en-client-components-cor-5764c",
+    "module": "webdesign"
+  },
+  {
+    "slug": "seo-meta-en-open-graph-in-next-js-app-router",
+    "title": "SEO-meta en Open Graph in Next.js App Router",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "nextjs-en-react"
+    ],
+    "topic": "tz-wd-seo-meta-en-open-graph-in-next-js-app-rout-4df23",
+    "module": "webdesign"
+  },
+  {
+    "slug": "omgevingsvariabelen-veilig-gebruiken-in-next-js",
+    "title": "Omgevingsvariabelen veilig gebruiken in Next.js",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "nextjs-en-react"
+    ],
+    "topic": "tz-wd-omgevingsvariabelen-veilig-gebruiken-in-ne-e19f6",
+    "module": "webdesign"
+  },
+  {
+    "slug": "next-js-deployen-op-een-vps-bij-triplezero-it",
+    "title": "Next.js deployen op een VPS bij TripleZero iT",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "nextjs-en-react"
+    ],
+    "topic": "tz-wd-next-js-deployen-op-een-vps-bij-triplezero-675e5",
+    "module": "webdesign"
+  },
+  {
+    "slug": "image-optimization-en-next-image-in-productie",
+    "title": "Image Optimization en next/image in productie",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "nextjs-en-react"
+    ],
+    "topic": "tz-wd-image-optimization-en-next-image-in-produc-cbd82",
+    "module": "webdesign"
+  },
+  {
+    "slug": "middleware-voor-redirects-auth-en-locale-routing",
+    "title": "Middleware voor redirects, auth en locale-routing",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "nextjs-en-react"
+    ],
+    "topic": "tz-wd-middleware-voor-redirects-auth-en-locale-r-8d52f",
+    "module": "webdesign"
+  },
+  {
+    "slug": "api-routes-en-route-handlers-in-next-js",
+    "title": "API-routes en Route Handlers in Next.js",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "nextjs-en-react"
+    ],
+    "topic": "tz-wd-api-routes-en-route-handlers-in-next-js-e2f5b",
+    "module": "webdesign"
+  },
+  {
+    "slug": "foutpaginas-en-loading-states-professioneel-inrichten",
+    "title": "Foutpagina’s en loading states professioneel inrichten",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "nextjs-en-react"
+    ],
+    "topic": "tz-wd-foutpaginas-en-loading-states-professionee-b4329",
+    "module": "webdesign"
+  },
+  {
+    "slug": "caching-en-revalidate-in-next-js-begrijpen",
+    "title": "Caching en revalidate in Next.js begrijpen",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "nextjs-en-react"
+    ],
+    "topic": "tz-wd-caching-en-revalidate-in-next-js-begrijpen-b23c7",
+    "module": "webdesign"
+  },
+  {
+    "slug": "internationale-sites-i18n-met-next-js",
+    "title": "Internationale sites (i18n) met Next.js",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "nextjs-en-react"
+    ],
+    "topic": "tz-wd-internationale-sites-i18n-met-next-js-510c7",
+    "module": "webdesign"
+  },
+  {
+    "slug": "react-server-actions-veilig-inzetten",
+    "title": "React Server Actions veilig inzetten",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "nextjs-en-react"
+    ],
+    "topic": "tz-wd-react-server-actions-veilig-inzetten-1573e",
+    "module": "webdesign"
+  },
+  {
+    "slug": "performance-bundle-size-en-dynamic-imports",
+    "title": "Performance: bundle size en dynamic imports",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "nextjs-en-react"
+    ],
+    "topic": "tz-wd-performance-bundle-size-en-dynamic-imports-5a566",
+    "module": "webdesign"
+  },
+  {
+    "slug": "next-js-verbinden-met-een-bestaande-wordpress-backend",
+    "title": "Next.js verbinden met een bestaande WordPress-backend",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "nextjs-en-react"
+    ],
+    "topic": "tz-wd-next-js-verbinden-met-een-bestaande-wordpr-36ceb",
+    "module": "webdesign"
+  },
+  {
+    "slug": "https-domein-en-reverse-proxy-voor-next-js",
+    "title": "HTTPS, domein en reverse proxy voor Next.js",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "nextjs-en-react"
+    ],
+    "topic": "tz-wd-https-domein-en-reverse-proxy-voor-next-js-d2dc9",
+    "module": "webdesign"
+  },
+  {
+    "slug": "logging-en-monitoring-voor-een-next-js-app",
+    "title": "Logging en monitoring voor een Next.js-app",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "nextjs-en-react"
+    ],
+    "topic": "tz-wd-logging-en-monitoring-voor-een-next-js-app-5d6d9",
+    "module": "webdesign"
+  },
+  {
+    "slug": "database-connecties-vanuit-next-js-prisma-mysql",
+    "title": "Database-connecties vanuit Next.js (Prisma/MySQL)",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "nextjs-en-react"
+    ],
+    "topic": "tz-wd-database-connecties-vanuit-next-js-prisma-33601",
+    "module": "webdesign"
+  },
+  {
+    "slug": "formulieren-en-validatie-in-react-next-js",
+    "title": "Formulieren en validatie in React/Next.js",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "nextjs-en-react"
+    ],
+    "topic": "tz-wd-formulieren-en-validatie-in-react-next-js-9fd99",
+    "module": "webdesign"
+  },
+  {
+    "slug": "migreren-van-pages-router-naar-app-router",
+    "title": "Migreren van Pages Router naar App Router",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "nextjs-en-react"
+    ],
+    "topic": "tz-wd-migreren-van-pages-router-naar-app-router-16413",
+    "module": "webdesign"
+  },
+  {
+    "slug": "php-maatwerk-wanneer-een-cms-niet-genoeg-is",
+    "title": "PHP-maatwerk: wanneer een CMS niet genoeg is",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "php-maatwerk"
+    ],
+    "topic": "tz-wd-php-maatwerk-wanneer-een-cms-niet-genoeg-i-8ce54",
+    "module": "webdesign"
+  },
+  {
+    "slug": "een-php-portal-veilig-hosten-bij-triplezero-it",
+    "title": "Een PHP-portal veilig hosten bij TripleZero iT",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "php-maatwerk"
+    ],
+    "topic": "tz-wd-een-php-portal-veilig-hosten-bij-triplezer-a79e1",
+    "module": "webdesign"
+  },
+  {
+    "slug": "composer-en-dependencies-op-shared-hosting-of-vps",
+    "title": "Composer en dependencies op shared hosting of VPS",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "php-maatwerk"
+    ],
+    "topic": "tz-wd-composer-en-dependencies-op-shared-hosting-568d2",
+    "module": "webdesign"
+  },
+  {
+    "slug": "php-versie-kiezen-voor-maatwerk-applicaties",
+    "title": "PHP-versie kiezen voor maatwerk applicaties",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "php-maatwerk"
+    ],
+    "topic": "tz-wd-php-versie-kiezen-voor-maatwerk-applicatie-d09ae",
+    "module": "webdesign"
+  },
+  {
+    "slug": "api-backends-in-php-rest-principes",
+    "title": "API-backends in PHP: REST-principes",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "php-maatwerk"
+    ],
+    "topic": "tz-wd-api-backends-in-php-rest-principes-dc072",
+    "module": "webdesign"
+  },
+  {
+    "slug": "authenticatie-en-sessies-in-php-apps",
+    "title": "Authenticatie en sessies in PHP-apps",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "php-maatwerk"
+    ],
+    "topic": "tz-wd-authenticatie-en-sessies-in-php-apps-26991",
+    "module": "webdesign"
+  },
+  {
+    "slug": "bestandsuploads-veilig-verwerken-in-php",
+    "title": "Bestandsuploads veilig verwerken in PHP",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "php-maatwerk"
+    ],
+    "topic": "tz-wd-bestandsuploads-veilig-verwerken-in-php-59359",
+    "module": "webdesign"
+  },
+  {
+    "slug": "cronjobs-voor-php-taken-in-directadmin-of-cyberpanel",
+    "title": "Cronjobs voor PHP-taken in DirectAdmin of CyberPanel",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "php-maatwerk"
+    ],
+    "topic": "tz-wd-cronjobs-voor-php-taken-in-directadmin-of-ae95e",
+    "module": "webdesign"
+  },
+  {
+    "slug": "database-migrations-en-backups-voor-php-projecten",
+    "title": "Database-migrations en backups voor PHP-projecten",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "php-maatwerk"
+    ],
+    "topic": "tz-wd-database-migrations-en-backups-voor-php-pr-022eb",
+    "module": "webdesign"
+  },
+  {
+    "slug": "foutlogging-en-display-errors-uitzetten-in-productie",
+    "title": "Foutlogging en display_errors uitzetten in productie",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "php-maatwerk"
+    ],
+    "topic": "tz-wd-foutlogging-en-display-errors-uitzetten-in-4666a",
+    "module": "webdesign"
+  },
+  {
+    "slug": "php-fpm-pools-en-performance-tuning",
+    "title": "PHP-FPM pools en performance-tuning",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "php-maatwerk"
+    ],
+    "topic": "tz-wd-php-fpm-pools-en-performance-tuning-92dd9",
+    "module": "webdesign"
+  },
+  {
+    "slug": "beveiliging-sql-injection-en-xss-voorkomen",
+    "title": "Beveiliging: SQL-injection en XSS voorkomen",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "php-maatwerk"
+    ],
+    "topic": "tz-wd-beveiliging-sql-injection-en-xss-voorkomen-2c3f4",
+    "module": "webdesign"
+  },
+  {
+    "slug": "mail-versturen-vanuit-php-via-smtp-van-triplezero-it",
+    "title": "Mail versturen vanuit PHP via SMTP van TripleZero iT",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "php-maatwerk"
+    ],
+    "topic": "tz-wd-mail-versturen-vanuit-php-via-smtp-van-tri-0279b",
+    "module": "webdesign"
+  },
+  {
+    "slug": "rate-limiting-en-captcha-bij-php-formulieren",
+    "title": "Rate limiting en CAPTCHA bij PHP-formulieren",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "php-maatwerk"
+    ],
+    "topic": "tz-wd-rate-limiting-en-captcha-bij-php-formulier-4c266",
+    "module": "webdesign"
+  },
+  {
+    "slug": "cli-scripts-en-worker-processen-op-een-vps",
+    "title": "CLI-scripts en worker-processen op een VPS",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "php-maatwerk"
+    ],
+    "topic": "tz-wd-cli-scripts-en-worker-processen-op-een-vps-49cdb",
+    "module": "webdesign"
+  },
+  {
+    "slug": "php-en-mysql-connection-pooling-en-timeouts",
+    "title": "PHP en MySQL: connection pooling en timeouts",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "php-maatwerk"
+    ],
+    "topic": "tz-wd-php-en-mysql-connection-pooling-en-timeout-9354a",
+    "module": "webdesign"
+  },
+  {
+    "slug": "structuur-van-een-maintainable-php-codebase",
+    "title": "Structuur van een maintainable PHP-codebase",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "php-maatwerk"
+    ],
+    "topic": "tz-wd-structuur-van-een-maintainable-php-codebas-e73e1",
+    "module": "webdesign"
+  },
+  {
+    "slug": "updates-en-dependency-audits-voor-php-apps",
+    "title": "Updates en dependency audits voor PHP-apps",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "php-maatwerk"
+    ],
+    "topic": "tz-wd-updates-en-dependency-audits-voor-php-apps-45303",
+    "module": "webdesign"
+  },
+  {
+    "slug": "een-lichte-html-css-js-site-hosten-zonder-cms",
+    "title": "Een lichte HTML/CSS/JS-site hosten zonder CMS",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "html-css-js"
+    ],
+    "topic": "tz-wd-een-lichte-html-css-js-site-hosten-zonder-19ba1",
+    "module": "webdesign"
+  },
+  {
+    "slug": "semantische-html-voor-seo-en-toegankelijkheid",
+    "title": "Semantische HTML voor SEO en toegankelijkheid",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "html-css-js"
+    ],
+    "topic": "tz-wd-semantische-html-voor-seo-en-toegankelijkh-80d5f",
+    "module": "webdesign"
+  },
+  {
+    "slug": "css-architectuur-utility-classes-versus-componenten",
+    "title": "CSS-architectuur: utility classes versus componenten",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "html-css-js"
+    ],
+    "topic": "tz-wd-css-architectuur-utility-classes-versus-co-16298",
+    "module": "webdesign"
+  },
+  {
+    "slug": "responsive-design-breakpoints-die-in-de-praktijk-werken",
+    "title": "Responsive design: breakpoints die in de praktijk werken",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "html-css-js"
+    ],
+    "topic": "tz-wd-responsive-design-breakpoints-die-in-de-pr-0b956",
+    "module": "webdesign"
+  },
+  {
+    "slug": "javascript-progressief-toevoegen-zonder-frameworks",
+    "title": "JavaScript progressief toevoegen zonder frameworks",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "html-css-js"
+    ],
+    "topic": "tz-wd-javascript-progressief-toevoegen-zonder-fr-0f24c",
+    "module": "webdesign"
+  },
+  {
+    "slug": "formulieren-valideren-met-native-html5-en-js",
+    "title": "Formulieren valideren met native HTML5 en JS",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "html-css-js"
+    ],
+    "topic": "tz-wd-formulieren-valideren-met-native-html5-en-13fc5",
+    "module": "webdesign"
+  },
+  {
+    "slug": "favicon-manifest-en-pwa-basics-voor-statische-sites",
+    "title": "Favicon, manifest en PWA-basics voor statische sites",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "html-css-js"
+    ],
+    "topic": "tz-wd-favicon-manifest-en-pwa-basics-voor-statis-53207",
+    "module": "webdesign"
+  },
+  {
+    "slug": "build-tools-wanneer-vite-of-esbuild-zinvol-is",
+    "title": "Build tools: wanneer Vite of esbuild zinvol is",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "html-css-js"
+    ],
+    "topic": "tz-wd-build-tools-wanneer-vite-of-esbuild-zinvol-52c55",
+    "module": "webdesign"
+  },
+  {
+    "slug": "assets-organiseren-css-js-en-afbeeldingen",
+    "title": "Assets organiseren: CSS, JS en afbeeldingen",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "html-css-js"
+    ],
+    "topic": "tz-wd-assets-organiseren-css-js-en-afbeeldingen-bdc6a",
+    "module": "webdesign"
+  },
+  {
+    "slug": "dark-mode-en-prefers-color-scheme",
+    "title": "Dark mode en prefers-color-scheme",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "html-css-js"
+    ],
+    "topic": "tz-wd-dark-mode-en-prefers-color-scheme-0200e",
+    "module": "webdesign"
+  },
+  {
+    "slug": "animaties-die-performance-niet-kapotmaken",
+    "title": "Animaties die performance niet kapotmaken",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "html-css-js"
+    ],
+    "topic": "tz-wd-animaties-die-performance-niet-kapotmaken-b2bf0",
+    "module": "webdesign"
+  },
+  {
+    "slug": "cdn-voor-statische-assets-bij-triplezero-it",
+    "title": "CDN voor statische assets bij TripleZero iT",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "html-css-js"
+    ],
+    "topic": "tz-wd-cdn-voor-statische-assets-bij-triplezero-i-738e4",
+    "module": "webdesign"
+  },
+  {
+    "slug": "contactformulier-koppelen-aan-e-mail-of-webhook",
+    "title": "Contactformulier koppelen aan e-mail of webhook",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "html-css-js"
+    ],
+    "topic": "tz-wd-contactformulier-koppelen-aan-e-mail-of-we-ac908",
+    "module": "webdesign"
+  },
+  {
+    "slug": "cookie-banner-en-consent-op-een-static-site",
+    "title": "Cookie-banner en consent op een static site",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "html-css-js"
+    ],
+    "topic": "tz-wd-cookie-banner-en-consent-op-een-static-sit-27b01",
+    "module": "webdesign"
+  },
+  {
+    "slug": "sitemap-en-robots-txt-voor-html-sites",
+    "title": "Sitemap en robots.txt voor HTML-sites",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "html-css-js"
+    ],
+    "topic": "tz-wd-sitemap-en-robots-txt-voor-html-sites-8839b",
+    "module": "webdesign"
+  },
+  {
+    "slug": "structuur-van-een-conversiegerichte-landingspagina",
+    "title": "Structuur van een conversiegerichte landingspagina",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "landingspaginas"
+    ],
+    "topic": "tz-wd-structuur-van-een-conversiegerichte-landin-9b185",
+    "module": "webdesign"
+  },
+  {
+    "slug": "headline-subkop-en-cta-hierarchie-die-converteert",
+    "title": "Headline, subkop en CTA: hiërarchie die converteert",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "landingspaginas"
+    ],
+    "topic": "tz-wd-headline-subkop-en-cta-hierarchie-die-conv-0d870",
+    "module": "webdesign"
+  },
+  {
+    "slug": "social-proof-en-trustsignalen-op-landingspaginas",
+    "title": "Social proof en trustsignalen op landingspagina’s",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "landingspaginas"
+    ],
+    "topic": "tz-wd-social-proof-en-trustsignalen-op-landingsp-d2c38",
+    "module": "webdesign"
+  },
+  {
+    "slug": "landingspagina-versus-homepage-wanneer-wat",
+    "title": "Landingspagina versus homepage: wanneer wat",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "landingspaginas"
+    ],
+    "topic": "tz-wd-landingspagina-versus-homepage-wanneer-wat-77a57",
+    "module": "webdesign"
+  },
+  {
+    "slug": "a-b-testen-van-landingspaginas-opzet-en-valkuilen",
+    "title": "A/B-testen van landingspagina’s: opzet en valkuilen",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "landingspaginas"
+    ],
+    "topic": "tz-wd-a-b-testen-van-landingspaginas-opzet-en-va-b09d9",
+    "module": "webdesign"
+  },
+  {
+    "slug": "snelheid-van-landingspaginas-meten-en-verbeteren",
+    "title": "Snelheid van landingspagina’s meten en verbeteren",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "landingspaginas"
+    ],
+    "topic": "tz-wd-snelheid-van-landingspaginas-meten-en-verb-8f0de",
+    "module": "webdesign"
+  },
+  {
+    "slug": "formulierlengte-en-friction-verminderen",
+    "title": "Formulierlengte en friction verminderen",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "landingspaginas"
+    ],
+    "topic": "tz-wd-formulierlengte-en-friction-verminderen-ac469",
+    "module": "webdesign"
+  },
+  {
+    "slug": "utm-parameters-en-campagnelandingspaginas",
+    "title": "UTM-parameters en campagnelandingspagina’s",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "landingspaginas"
+    ],
+    "topic": "tz-wd-utm-parameters-en-campagnelandingspaginas-d4d60",
+    "module": "webdesign"
+  },
+  {
+    "slug": "mobiele-landingspaginas-boven-de-vouw-prioriteiten",
+    "title": "Mobiele landingspagina’s: boven-de-vouw prioriteiten",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "landingspaginas"
+    ],
+    "topic": "tz-wd-mobiele-landingspaginas-boven-de-vouw-prio-70391",
+    "module": "webdesign"
+  },
+  {
+    "slug": "privacytekst-en-toestemming-bij-leadformulieren",
+    "title": "Privacytekst en toestemming bij leadformulieren",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "landingspaginas"
+    ],
+    "topic": "tz-wd-privacytekst-en-toestemming-bij-leadformul-cc205",
+    "module": "webdesign"
+  },
+  {
+    "slug": "meertalige-landingspaginas-zonder-dubbele-content",
+    "title": "Meertalige landingspagina’s zonder dubbele content",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "landingspaginas"
+    ],
+    "topic": "tz-wd-meertalige-landingspaginas-zonder-dubbele-f1e7b",
+    "module": "webdesign"
+  },
+  {
+    "slug": "landingspagina-koppelen-aan-crm-of-nieuwsbrief",
+    "title": "Landingspagina koppelen aan CRM of nieuwsbrief",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "landingspaginas"
+    ],
+    "topic": "tz-wd-landingspagina-koppelen-aan-crm-of-nieuwsb-3d102",
+    "module": "webdesign"
+  },
+  {
+    "slug": "heatmaps-en-scroll-depth-interpreteren",
+    "title": "Heatmaps en scroll depth interpreteren",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "landingspaginas"
+    ],
+    "topic": "tz-wd-heatmaps-en-scroll-depth-interpreteren-b17a5",
+    "module": "webdesign"
+  },
+  {
+    "slug": "exit-intent-en-pop-ups-wanneer-wel-of-niet",
+    "title": "Exit-intent en pop-ups: wanneer wel of niet",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "landingspaginas"
+    ],
+    "topic": "tz-wd-exit-intent-en-pop-ups-wanneer-wel-of-niet-f752a",
+    "module": "webdesign"
+  },
+  {
+    "slug": "designsystemen-hergebruiken-op-landingspaginas",
+    "title": "Designsystemen hergebruiken op landingspagina’s",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "landingspaginas"
+    ],
+    "topic": "tz-wd-designsystemen-hergebruiken-op-landingspag-d814a",
+    "module": "webdesign"
+  },
+  {
+    "slug": "landingspaginas-hosten-naast-wordpress-of-next-js",
+    "title": "Landingspagina’s hosten naast WordPress of Next.js",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "landingspaginas"
+    ],
+    "topic": "tz-wd-landingspaginas-hosten-naast-wordpress-of-b6b62",
+    "module": "webdesign"
+  },
+  {
+    "slug": "schema-org-voor-landingspaginas-offer-faq",
+    "title": "Schema.org voor landingspagina’s (Offer, FAQ)",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "landingspaginas"
+    ],
+    "topic": "tz-wd-schema-org-voor-landingspaginas-offer-faq-4de87",
+    "module": "webdesign"
+  },
+  {
+    "slug": "remarketing-landingspaginas-consistent-houden",
+    "title": "Remarketing-landingspagina’s consistent houden",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "landingspaginas"
+    ],
+    "topic": "tz-wd-remarketing-landingspaginas-consistent-hou-63f2b",
+    "module": "webdesign"
+  },
+  {
+    "slug": "onderhoudsplan-na-livegang-van-een-maatwerk-site",
+    "title": "Onderhoudsplan na livegang van een maatwerk site",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "onderhoud-maatwerk"
+    ],
+    "topic": "tz-wd-onderhoudsplan-na-livegang-van-een-maatwer-a7a6a",
+    "module": "webdesign"
+  },
+  {
+    "slug": "dependency-updates-zonder-downtime-plannen",
+    "title": "Dependency-updates zonder downtime plannen",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "onderhoud-maatwerk"
+    ],
+    "topic": "tz-wd-dependency-updates-zonder-downtime-plannen-f3c08",
+    "module": "webdesign"
+  },
+  {
+    "slug": "monitoring-uptime-ssl-en-error-rates",
+    "title": "Monitoring: uptime, SSL en error rates",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "onderhoud-maatwerk"
+    ],
+    "topic": "tz-wd-monitoring-uptime-ssl-en-error-rates-96355",
+    "module": "webdesign"
+  },
+  {
+    "slug": "staging-omgeving-gebruiken-voor-veilige-releases",
+    "title": "Staging-omgeving gebruiken voor veilige releases",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "onderhoud-maatwerk"
+    ],
+    "topic": "tz-wd-staging-omgeving-gebruiken-voor-veilige-re-b1272",
+    "module": "webdesign"
+  },
+  {
+    "slug": "rollback-strategie-bij-mislukte-deployments",
+    "title": "Rollback-strategie bij mislukte deployments",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "onderhoud-maatwerk"
+    ],
+    "topic": "tz-wd-rollback-strategie-bij-mislukte-deployment-7c61c",
+    "module": "webdesign"
+  },
+  {
+    "slug": "documentatie-bijhouden-voor-opvolgers-en-support",
+    "title": "Documentatie bijhouden voor opvolgers en support",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "onderhoud-maatwerk"
+    ],
+    "topic": "tz-wd-documentatie-bijhouden-voor-opvolgers-en-s-1e28f",
+    "module": "webdesign"
+  },
+  {
+    "slug": "performance-regressies-na-updates-voorkomen",
+    "title": "Performance-regressies na updates voorkomen",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "onderhoud-maatwerk"
+    ],
+    "topic": "tz-wd-performance-regressies-na-updates-voorkome-e627b",
+    "module": "webdesign"
+  },
+  {
+    "slug": "security-patches-prioriteren-voor-maatwerk-code",
+    "title": "Security patches prioriteren voor maatwerk code",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "onderhoud-maatwerk"
+    ],
+    "topic": "tz-wd-security-patches-prioriteren-voor-maatwerk-cc2e0",
+    "module": "webdesign"
+  },
+  {
+    "slug": "backup-ritme-voor-applicatie-en-database",
+    "title": "Backup-ritme voor applicatie én database",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "onderhoud-maatwerk"
+    ],
+    "topic": "tz-wd-backup-ritme-voor-applicatie-en-database-e1524",
+    "module": "webdesign"
+  },
+  {
+    "slug": "change-log-en-release-notes-voor-stakeholders",
+    "title": "Change log en release notes voor stakeholders",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "onderhoud-maatwerk"
+    ],
+    "topic": "tz-wd-change-log-en-release-notes-voor-stakehold-c2558",
+    "module": "webdesign"
+  },
+  {
+    "slug": "slas-en-responstijden-bij-triplezero-it-support",
+    "title": "SLA’s en responstijden bij TripleZero iT-support",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "onderhoud-maatwerk"
+    ],
+    "topic": "tz-wd-slas-en-responstijden-bij-triplezero-it-su-06e66",
+    "module": "webdesign"
+  },
+  {
+    "slug": "technische-schuld-systematisch-aflossen",
+    "title": "Technische schuld systematisch aflossen",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "onderhoud-maatwerk"
+    ],
+    "topic": "tz-wd-technische-schuld-systematisch-aflossen-69dba",
+    "module": "webdesign"
+  },
+  {
+    "slug": "feature-flags-voor-geleidelijke-uitrol",
+    "title": "Feature flags voor geleidelijke uitrol",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "onderhoud-maatwerk"
+    ],
+    "topic": "tz-wd-feature-flags-voor-geleidelijke-uitrol-bfee4",
+    "module": "webdesign"
+  },
+  {
+    "slug": "logrotatie-en-schijfruimte-op-vps-apps",
+    "title": "Logrotatie en schijfruimte op VPS-apps",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "onderhoud-maatwerk"
+    ],
+    "topic": "tz-wd-logrotatie-en-schijfruimte-op-vps-apps-1e7d8",
+    "module": "webdesign"
+  },
+  {
+    "slug": "jaarlijkse-security-review-van-maatwerk",
+    "title": "Jaarlijkse security review van maatwerk",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "onderhoud-maatwerk"
+    ],
+    "topic": "tz-wd-jaarlijkse-security-review-van-maatwerk-be3e7",
+    "module": "webdesign"
+  },
+  {
+    "slug": "content-updates-vs-code-updates-scheiden",
+    "title": "Content updates vs code updates scheiden",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "onderhoud-maatwerk"
+    ],
+    "topic": "tz-wd-content-updates-vs-code-updates-scheiden-672f0",
+    "module": "webdesign"
+  },
+  {
+    "slug": "toegang-en-rechten-voor-developers-en-klanten",
+    "title": "Toegang en rechten voor developers en klanten",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "onderhoud-maatwerk"
+    ],
+    "topic": "tz-wd-toegang-en-rechten-voor-developers-en-klan-28401",
+    "module": "webdesign"
+  },
+  {
+    "slug": "migratiepad-wanneer-het-cms-of-framework-veroudert",
+    "title": "Migratiepad wanneer het CMS of framework veroudert",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "onderhoud-maatwerk"
+    ],
+    "topic": "tz-wd-migratiepad-wanneer-het-cms-of-framework-v-86ba9",
+    "module": "webdesign"
+  },
+  {
+    "slug": "kosten-van-onderhoud-versus-nieuwbouw",
+    "title": "Kosten van onderhoud versus nieuwbouw",
+    "categories": [
+      "webdesign-en-maatwerk",
+      "onderhoud-maatwerk"
+    ],
+    "topic": "tz-wd-kosten-van-onderhoud-versus-nieuwbouw-d40ca",
+    "module": "webdesign"
+  },
+  {
+    "slug": "chatbot-op-je-website-use-cases-die-echt-helpen",
+    "title": "Chatbot op je website: use-cases die echt helpen",
+    "categories": [
+      "ai-integratie-automatisering",
+      "llm-en-chatbots"
+    ],
+    "topic": "tz-aii-chatbot-op-je-website-use-cases-die-echt-h-7c723",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "llm-integratie-veilig-opzetten-geen-geheimen-in-de-frontend",
+    "title": "LLM-integratie veilig opzetten (geen geheimen in de frontend)",
+    "categories": [
+      "ai-integratie-automatisering",
+      "llm-en-chatbots"
+    ],
+    "topic": "tz-aii-llm-integratie-veilig-opzetten-geen-geheim-258e5",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "prompting-voor-klantenservice-bots-bij-triplezero-it",
+    "title": "Prompting voor klantenservice-bots bij TripleZero iT",
+    "categories": [
+      "ai-integratie-automatisering",
+      "llm-en-chatbots"
+    ],
+    "topic": "tz-aii-prompting-voor-klantenservice-bots-bij-tri-7c559",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "hallucinaties-beperken-grounding-met-kennisbank-en-faq",
+    "title": "Hallucinaties beperken: grounding met kennisbank en FAQ",
+    "categories": [
+      "ai-integratie-automatisering",
+      "llm-en-chatbots"
+    ],
+    "topic": "tz-aii-hallucinaties-beperken-grounding-met-kenni-26edf",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "chatgpt-of-claude-via-api-koppelen-aan-je-site",
+    "title": "ChatGPT of Claude via API koppelen aan je site",
+    "categories": [
+      "ai-integratie-automatisering",
+      "llm-en-chatbots"
+    ],
+    "topic": "tz-aii-chatgpt-of-claude-via-api-koppelen-aan-je-d30a8",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "rate-limits-kosten-en-tokenbudget-bewaken",
+    "title": "Rate limits, kosten en tokenbudget bewaken",
+    "categories": [
+      "ai-integratie-automatisering",
+      "llm-en-chatbots"
+    ],
+    "topic": "tz-aii-rate-limits-kosten-en-tokenbudget-bewaken-c0016",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "privacy-welke-klantdata-mag-naar-een-llm",
+    "title": "Privacy: welke klantdata mag naar een LLM",
+    "categories": [
+      "ai-integratie-automatisering",
+      "llm-en-chatbots"
+    ],
+    "topic": "tz-aii-privacy-welke-klantdata-mag-naar-een-llm-29419",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "human-handoff-van-bot-naar-ticket-of-chat",
+    "title": "Human handoff: van bot naar ticket of chat",
+    "categories": [
+      "ai-integratie-automatisering",
+      "llm-en-chatbots"
+    ],
+    "topic": "tz-aii-human-handoff-van-bot-naar-ticket-of-chat-b78a9",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "meertalige-chatbots-voor-nl-en-en",
+    "title": "Meertalige chatbots voor NL en EN",
+    "categories": [
+      "ai-integratie-automatisering",
+      "llm-en-chatbots"
+    ],
+    "topic": "tz-aii-meertalige-chatbots-voor-nl-en-en-814fc",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "inhoudsfilters-en-veilige-system-prompts",
+    "title": "Inhoudsfilters en veilige system prompts",
+    "categories": [
+      "ai-integratie-automatisering",
+      "llm-en-chatbots"
+    ],
+    "topic": "tz-aii-inhoudsfilters-en-veilige-system-prompts-f5506",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "embedding-retrieval-rag-voor-bedrijfskennis",
+    "title": "Embedding + retrieval (RAG) voor bedrijfskennis",
+    "categories": [
+      "ai-integratie-automatisering",
+      "llm-en-chatbots"
+    ],
+    "topic": "tz-aii-embedding-retrieval-rag-voor-bedrijfskenni-59040",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "widget-inbedding-zonder-performance-te-schaden",
+    "title": "Widget-inbedding zonder performance te schaden",
+    "categories": [
+      "ai-integratie-automatisering",
+      "llm-en-chatbots"
+    ],
+    "topic": "tz-aii-widget-inbedding-zonder-performance-te-sch-f9bec",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "logging-van-gesprekken-avg-en-retentie",
+    "title": "Logging van gesprekken: AVG en retentie",
+    "categories": [
+      "ai-integratie-automatisering",
+      "llm-en-chatbots"
+    ],
+    "topic": "tz-aii-logging-van-gesprekken-avg-en-retentie-16c08",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "evalueren-van-botkwaliteit-met-testvragen",
+    "title": "Evalueren van botkwaliteit met testvragen",
+    "categories": [
+      "ai-integratie-automatisering",
+      "llm-en-chatbots"
+    ],
+    "topic": "tz-aii-evalueren-van-botkwaliteit-met-testvragen-107f0",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "chatbot-versus-agent-000-wanneer-wat",
+    "title": "Chatbot versus Agent 000: wanneer wat",
+    "categories": [
+      "ai-integratie-automatisering",
+      "llm-en-chatbots"
+    ],
+    "topic": "tz-aii-chatbot-versus-agent-000-wanneer-wat-cc481",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "offline-fallbacks-als-de-llm-api-down-is",
+    "title": "Offline fallbacks als de LLM-API down is",
+    "categories": [
+      "ai-integratie-automatisering",
+      "llm-en-chatbots"
+    ],
+    "topic": "tz-aii-offline-fallbacks-als-de-llm-api-down-is-27671",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "n8n-versus-zapier-keuzehulp-voor-mkb",
+    "title": "n8n versus Zapier: keuzehulp voor MKB",
+    "categories": [
+      "ai-integratie-automatisering",
+      "workflows-n8n-zapier"
+    ],
+    "topic": "tz-aii-n8n-versus-zapier-keuzehulp-voor-mkb-2aa3e",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "eerste-zapier-workflow-leadformulier-naar-e-mail",
+    "title": "Eerste Zapier-workflow: leadformulier naar e-mail",
+    "categories": [
+      "ai-integratie-automatisering",
+      "workflows-n8n-zapier"
+    ],
+    "topic": "tz-aii-eerste-zapier-workflow-leadformulier-naar-b9d87",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "n8n-self-hosten-op-een-vps-bij-triplezero-it",
+    "title": "n8n self-hosten op een VPS bij TripleZero iT",
+    "categories": [
+      "ai-integratie-automatisering",
+      "workflows-n8n-zapier"
+    ],
+    "topic": "tz-aii-n8n-self-hosten-op-een-vps-bij-triplezero-44769",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "webhooks-ontvangen-en-valideren-in-workflows",
+    "title": "Webhooks ontvangen en valideren in workflows",
+    "categories": [
+      "ai-integratie-automatisering",
+      "workflows-n8n-zapier"
+    ],
+    "topic": "tz-aii-webhooks-ontvangen-en-valideren-in-workflo-12018",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "crm-synchroniseren-met-website-aanvragen",
+    "title": "CRM synchroniseren met website-aanvragen",
+    "categories": [
+      "ai-integratie-automatisering",
+      "workflows-n8n-zapier"
+    ],
+    "topic": "tz-aii-crm-synchroniseren-met-website-aanvragen-bfa83",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "foutafhandeling-en-retries-in-automatisering",
+    "title": "Foutafhandeling en retries in automatisering",
+    "categories": [
+      "ai-integratie-automatisering",
+      "workflows-n8n-zapier"
+    ],
+    "topic": "tz-aii-foutafhandeling-en-retries-in-automatiseri-85286",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "geheimen-en-api-keys-veilig-opslaan-in-n8n",
+    "title": "Geheimen en API-keys veilig opslaan in n8n",
+    "categories": [
+      "ai-integratie-automatisering",
+      "workflows-n8n-zapier"
+    ],
+    "topic": "tz-aii-geheimen-en-api-keys-veilig-opslaan-in-n8n-b3a03",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "planning-cron-triggers-versus-event-triggers",
+    "title": "Planning: cron-triggers versus event-triggers",
+    "categories": [
+      "ai-integratie-automatisering",
+      "workflows-n8n-zapier"
+    ],
+    "topic": "tz-aii-planning-cron-triggers-versus-event-trigge-8924e",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "data-mapping-tussen-apps-velden-transformeren",
+    "title": "Data mapping tussen apps (velden transformeren)",
+    "categories": [
+      "ai-integratie-automatisering",
+      "workflows-n8n-zapier"
+    ],
+    "topic": "tz-aii-data-mapping-tussen-apps-velden-transforme-9b0df",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "automatische-factuurherinneringen-opzetten",
+    "title": "Automatische factuurherinneringen opzetten",
+    "categories": [
+      "ai-integratie-automatisering",
+      "workflows-n8n-zapier"
+    ],
+    "topic": "tz-aii-automatische-factuurherinneringen-opzetten-712c0",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "social-posts-plannen-via-automatisering",
+    "title": "Social posts plannen via automatisering",
+    "categories": [
+      "ai-integratie-automatisering",
+      "workflows-n8n-zapier"
+    ],
+    "topic": "tz-aii-social-posts-plannen-via-automatisering-e3a4e",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "backup-van-workflow-definities",
+    "title": "Backup van workflow-definities",
+    "categories": [
+      "ai-integratie-automatisering",
+      "workflows-n8n-zapier"
+    ],
+    "topic": "tz-aii-backup-van-workflow-definities-bd562",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "rate-limits-van-externe-apis-respecteren",
+    "title": "Rate limits van externe API’s respecteren",
+    "categories": [
+      "ai-integratie-automatisering",
+      "workflows-n8n-zapier"
+    ],
+    "topic": "tz-aii-rate-limits-van-externe-apis-respecteren-9aa1a",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "audittrail-wie-wijzigde-welke-workflow",
+    "title": "Audittrail: wie wijzigde welke workflow",
+    "categories": [
+      "ai-integratie-automatisering",
+      "workflows-n8n-zapier"
+    ],
+    "topic": "tz-aii-audittrail-wie-wijzigde-welke-workflow-0e26f",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "van-no-code-naar-code-nodes-wanneer-nodig",
+    "title": "Van no-code naar code nodes wanneer nodig",
+    "categories": [
+      "ai-integratie-automatisering",
+      "workflows-n8n-zapier"
+    ],
+    "topic": "tz-aii-van-no-code-naar-code-nodes-wanneer-nodig-2d172",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "kosten-en-fair-use-van-saas-automatisering",
+    "title": "Kosten en fair-use van SaaS-automatisering",
+    "categories": [
+      "ai-integratie-automatisering",
+      "workflows-n8n-zapier"
+    ],
+    "topic": "tz-aii-kosten-en-fair-use-van-saas-automatisering-28bdc",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "wat-is-een-webhook-en-wanneer-gebruik-je-die",
+    "title": "Wat is een webhook en wanneer gebruik je die?",
+    "categories": [
+      "ai-integratie-automatisering",
+      "api-webhooks"
+    ],
+    "topic": "tz-aii-wat-is-een-webhook-en-wanneer-gebruik-je-d-e4f5a",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "hmac-handtekeningen-verifieren-op-inkomende-webhooks",
+    "title": "HMAC-handtekeningen verifiëren op inkomende webhooks",
+    "categories": [
+      "ai-integratie-automatisering",
+      "api-webhooks"
+    ],
+    "topic": "tz-aii-hmac-handtekeningen-verifieren-op-inkomend-16cae",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "idempotency-dubbele-webhook-events-voorkomen",
+    "title": "Idempotency: dubbele webhook-events voorkomen",
+    "categories": [
+      "ai-integratie-automatisering",
+      "api-webhooks"
+    ],
+    "topic": "tz-aii-idempotency-dubbele-webhook-events-voorkom-4781a",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "rest-api-authenticatie-api-keys-versus-oauth",
+    "title": "REST API-authenticatie: API keys versus OAuth",
+    "categories": [
+      "ai-integratie-automatisering",
+      "api-webhooks"
+    ],
+    "topic": "tz-aii-rest-api-authenticatie-api-keys-versus-oau-efb95",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "timeouts-retries-en-backoff-ontwerpen",
+    "title": "Timeouts, retries en backoff ontwerpen",
+    "categories": [
+      "ai-integratie-automatisering",
+      "api-webhooks"
+    ],
+    "topic": "tz-aii-timeouts-retries-en-backoff-ontwerpen-08a83",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "webhook-endpoints-beveiligen-achter-https",
+    "title": "Webhook endpoints beveiligen achter HTTPS",
+    "categories": [
+      "ai-integratie-automatisering",
+      "api-webhooks"
+    ],
+    "topic": "tz-aii-webhook-endpoints-beveiligen-achter-https-d16ff",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "logging-en-debugging-van-mislukte-callbacks",
+    "title": "Logging en debugging van mislukte callbacks",
+    "categories": [
+      "ai-integratie-automatisering",
+      "api-webhooks"
+    ],
+    "topic": "tz-aii-logging-en-debugging-van-mislukte-callback-2361c",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "stripe-of-mollie-webhooks-correct-afhandelen",
+    "title": "Stripe- of Mollie-webhooks correct afhandelen",
+    "categories": [
+      "ai-integratie-automatisering",
+      "api-webhooks"
+    ],
+    "topic": "tz-aii-stripe-of-mollie-webhooks-correct-afhandel-2cd89",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "versionering-van-je-publieke-api",
+    "title": "Versionering van je publieke API",
+    "categories": [
+      "ai-integratie-automatisering",
+      "api-webhooks"
+    ],
+    "topic": "tz-aii-versionering-van-je-publieke-api-d8362",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "cors-en-browser-aanroepen-wanneer-wel-niet",
+    "title": "CORS en browser-aanroepen: wanneer wel/niet",
+    "categories": [
+      "ai-integratie-automatisering",
+      "api-webhooks"
+    ],
+    "topic": "tz-aii-cors-en-browser-aanroepen-wanneer-wel-niet-901f9",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "rate-limiting-aan-de-serverkant",
+    "title": "Rate limiting aan de serverkant",
+    "categories": [
+      "ai-integratie-automatisering",
+      "api-webhooks"
+    ],
+    "topic": "tz-aii-rate-limiting-aan-de-serverkant-96aae",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "openapi-swagger-documentatie-bijhouden",
+    "title": "OpenAPI/Swagger documentatie bijhouden",
+    "categories": [
+      "ai-integratie-automatisering",
+      "api-webhooks"
+    ],
+    "topic": "tz-aii-openapi-swagger-documentatie-bijhouden-c39c7",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "sandbox-versus-productie-endpoints",
+    "title": "Sandbox versus productie endpoints",
+    "categories": [
+      "ai-integratie-automatisering",
+      "api-webhooks"
+    ],
+    "topic": "tz-aii-sandbox-versus-productie-endpoints-415d1",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "payload-grootte-en-payload-validatie",
+    "title": "Payload-grootte en payload-validatie",
+    "categories": [
+      "ai-integratie-automatisering",
+      "api-webhooks"
+    ],
+    "topic": "tz-aii-payload-grootte-en-payload-validatie-9836d",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "async-jobs-na-een-webhook-starten",
+    "title": "Async jobs na een webhook starten",
+    "categories": [
+      "ai-integratie-automatisering",
+      "api-webhooks"
+    ],
+    "topic": "tz-aii-async-jobs-na-een-webhook-starten-7aa84",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "monitoring-van-webhook-success-rates",
+    "title": "Monitoring van webhook success rates",
+    "categories": [
+      "ai-integratie-automatisering",
+      "api-webhooks"
+    ],
+    "topic": "tz-aii-monitoring-van-webhook-success-rates-e510c",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "ai-contentstrategie-merkstem-behouden",
+    "title": "AI-contentstrategie: merkstem behouden",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-content-strategie"
+    ],
+    "topic": "tz-aii-ai-contentstrategie-merkstem-behouden-fb69b",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "contentkalender-maken-met-ai-ondersteuning",
+    "title": "Contentkalender maken met AI-ondersteuning",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-content-strategie"
+    ],
+    "topic": "tz-aii-contentkalender-maken-met-ai-ondersteuning-9c6b7",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "redactieproces-mens-blijft-eindverantwoordelijk",
+    "title": "Redactieproces: mens blijft eindverantwoordelijk",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-content-strategie"
+    ],
+    "topic": "tz-aii-redactieproces-mens-blijft-eindverantwoord-ebefd",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "ai-voor-blogoutlines-versus-volledige-teksten",
+    "title": "AI voor blogoutlines versus volledige teksten",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-content-strategie"
+    ],
+    "topic": "tz-aii-ai-voor-blogoutlines-versus-volledige-teks-ad928",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "feiten-checken-na-ai-gegenereerde-content",
+    "title": "Feiten checken na AI-gegenereerde content",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-content-strategie"
+    ],
+    "topic": "tz-aii-feiten-checken-na-ai-gegenereerde-content-7be92",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "interne-linking-plannen-met-ai-hulp",
+    "title": "Interne linking plannen met AI-hulp",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-content-strategie"
+    ],
+    "topic": "tz-aii-interne-linking-plannen-met-ai-hulp-0a7f5",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "faqs-genereren-en-valideren-voor-aeo",
+    "title": "FAQ’s genereren én valideren voor AEO",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-content-strategie"
+    ],
+    "topic": "tz-aii-faqs-genereren-en-valideren-voor-aeo-56f5a",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "meertalige-content-eerst-nl-en-goed-krijgen",
+    "title": "Meertalige content: eerst NL/EN goed krijgen",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-content-strategie"
+    ],
+    "topic": "tz-aii-meertalige-content-eerst-nl-en-goed-krijge-8da57",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "duplicate-content-voorkomen-bij-ai-schrijven",
+    "title": "Duplicate content voorkomen bij AI-schrijven",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-content-strategie"
+    ],
+    "topic": "tz-aii-duplicate-content-voorkomen-bij-ai-schrijv-a6f64",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "beeldprompts-en-alt-teksten-consistent-houden",
+    "title": "Beeldprompts en alt-teksten consistent houden",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-content-strategie"
+    ],
+    "topic": "tz-aii-beeldprompts-en-alt-teksten-consistent-hou-06860",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "content-briefs-schrijven-die-ai-bruikbaar-maken",
+    "title": "Content briefs schrijven die AI bruikbaar maken",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-content-strategie"
+    ],
+    "topic": "tz-aii-content-briefs-schrijven-die-ai-bruikbaar-a0b0f",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "kpis-voor-ai-ondersteunde-content",
+    "title": "KPI’s voor AI-ondersteunde content",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-content-strategie"
+    ],
+    "topic": "tz-aii-kpis-voor-ai-ondersteunde-content-aa73a",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "juridische-disclaimers-en-claims-vermijden",
+    "title": "Juridische disclaimers en claims vermijden",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-content-strategie"
+    ],
+    "topic": "tz-aii-juridische-disclaimers-en-claims-vermijden-9f863",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "hergebruik-van-kennisbankartikelen-in-marketing",
+    "title": "Hergebruik van kennisbankartikelen in marketing",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-content-strategie"
+    ],
+    "topic": "tz-aii-hergebruik-van-kennisbankartikelen-in-mark-6498a",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "ai-voor-social-captions-zonder-spammy-toon",
+    "title": "AI voor social captions zonder spammy toon",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-content-strategie"
+    ],
+    "topic": "tz-aii-ai-voor-social-captions-zonder-spammy-toon-8e0ab",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "editorial-guidelines-documenteren-voor-je-team",
+    "title": "Editorial guidelines documenteren voor je team",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-content-strategie"
+    ],
+    "topic": "tz-aii-editorial-guidelines-documenteren-voor-je-c87fd",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "ai-consultancy-van-idee-naar-haalbare-use-case",
+    "title": "AI-consultancy: van idee naar haalbare use-case",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-consultancy"
+    ],
+    "topic": "tz-aii-ai-consultancy-van-idee-naar-haalbare-use-425d3",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "quick-wins-versus-strategische-ai-projecten",
+    "title": "Quick wins versus strategische AI-projecten",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-consultancy"
+    ],
+    "topic": "tz-aii-quick-wins-versus-strategische-ai-projecte-66f5a",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "risicos-privacy-ip-en-leveranciersafhankelijkheid",
+    "title": "Risico’s: privacy, IP en leveranciersafhankelijkheid",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-consultancy"
+    ],
+    "topic": "tz-aii-risicos-privacy-ip-en-leveranciersafhankel-4a751",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "roi-van-ai-projecten-realistisch-inschatten",
+    "title": "ROI van AI-projecten realistisch inschatten",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-consultancy"
+    ],
+    "topic": "tz-aii-roi-van-ai-projecten-realistisch-inschatte-5254c",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "change-management-team-meenemen-in-ai-adoptie",
+    "title": "Change management: team meenemen in AI-adoptie",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-consultancy"
+    ],
+    "topic": "tz-aii-change-management-team-meenemen-in-ai-adop-7884a",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "tooling-stack-kiezen-zonder-vendor-lock-in",
+    "title": "Tooling stack kiezen zonder vendor lock-in",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-consultancy"
+    ],
+    "topic": "tz-aii-tooling-stack-kiezen-zonder-vendor-lock-in-f57a6",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "pilot-draaien-succescriteria-vooraf-vastleggen",
+    "title": "Pilot draaien: succescriteria vooraf vastleggen",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-consultancy"
+    ],
+    "topic": "tz-aii-pilot-draaien-succescriteria-vooraf-vastle-88d77",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "data-readiness-wat-moet-je-eerst-opruimen",
+    "title": "Data readiness: wat moet je eerst opruimen",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-consultancy"
+    ],
+    "topic": "tz-aii-data-readiness-wat-moet-je-eerst-opruimen-50a7c",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "ai-beleid-acceptable-use-voor-je-organisatie",
+    "title": "AI-beleid (acceptable use) voor je organisatie",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-consultancy"
+    ],
+    "topic": "tz-aii-ai-beleid-acceptable-use-voor-je-organisat-23021",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "koppeling-ai-scan-resultaten-aan-trajectkeuze",
+    "title": "Koppeling AI-scan resultaten aan trajectkeuze",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-consultancy"
+    ],
+    "topic": "tz-aii-koppeling-ai-scan-resultaten-aan-trajectke-f596f",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "bouwen-versus-kopen-van-ai-oplossingen",
+    "title": "Bouwen versus kopen van AI-oplossingen",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-consultancy"
+    ],
+    "topic": "tz-aii-bouwen-versus-kopen-van-ai-oplossingen-19fa6",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "security-review-van-ai-integraties",
+    "title": "Security review van AI-integraties",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-consultancy"
+    ],
+    "topic": "tz-aii-security-review-van-ai-integraties-d6724",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "roadmap-90-dagen-scan-pilot-opschalen",
+    "title": "Roadmap 90 dagen: scan, pilot, opschalen",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-consultancy"
+    ],
+    "topic": "tz-aii-roadmap-90-dagen-scan-pilot-opschalen-01802",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "stakeholders-alignen-marketing-it-en-directie",
+    "title": "Stakeholders alignen: marketing, IT en directie",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-consultancy"
+    ],
+    "topic": "tz-aii-stakeholders-alignen-marketing-it-en-direc-e90d7",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "naleving-avg-bij-ai-verwerking-van-klantdata",
+    "title": "Naleving AVG bij AI-verwerking van klantdata",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-consultancy"
+    ],
+    "topic": "tz-aii-naleving-avg-bij-ai-verwerking-van-klantda-f44a8",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "nazorg-en-optimalisatie-na-go-live",
+    "title": "Nazorg en optimalisatie na go-live",
+    "categories": [
+      "ai-integratie-automatisering",
+      "ai-consultancy"
+    ],
+    "topic": "tz-aii-nazorg-en-optimalisatie-na-go-live-2fbc0",
+    "module": "ai-integratie"
+  },
+  {
+    "slug": "google-tag-manager-basiscontainer-opzetten",
+    "title": "Google Tag Manager: basiscontainer opzetten",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "analytics-gtm-matomo"
+    ],
+    "topic": "tz-act-google-tag-manager-basiscontainer-opzetten-8a78a",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "matomo-als-privacyvriendelijk-alternatief",
+    "title": "Matomo als privacyvriendelijk alternatief",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "analytics-gtm-matomo"
+    ],
+    "topic": "tz-act-matomo-als-privacyvriendelijk-alternatief-0a527",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "consent-mode-en-cookiebanners-correct-koppelen",
+    "title": "Consent Mode en cookiebanners correct koppelen",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "analytics-gtm-matomo"
+    ],
+    "topic": "tz-act-consent-mode-en-cookiebanners-correct-kopp-6c172",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "events-meten-clicks-forms-en-downloads",
+    "title": "Events meten: clicks, forms en downloads",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "analytics-gtm-matomo"
+    ],
+    "topic": "tz-act-events-meten-clicks-forms-en-downloads-5ebc3",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "enhanced-conversions-versus-basis-e-commerce-events",
+    "title": "Enhanced conversions versus basis e-commerce events",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "analytics-gtm-matomo"
+    ],
+    "topic": "tz-act-enhanced-conversions-versus-basis-e-commer-2697b",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "server-side-tagging-wanneer-zinvol",
+    "title": "Server-side tagging: wanneer zinvol",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "analytics-gtm-matomo"
+    ],
+    "topic": "tz-act-server-side-tagging-wanneer-zinvol-3b991",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "debuggen-met-gtm-preview-en-tag-assistant",
+    "title": "Debuggen met GTM Preview en Tag Assistant",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "analytics-gtm-matomo"
+    ],
+    "topic": "tz-act-debuggen-met-gtm-preview-en-tag-assistant-abf51",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "cross-domain-tracking-voor-landingspagina-shop",
+    "title": "Cross-domain tracking voor landingspagina + shop",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "analytics-gtm-matomo"
+    ],
+    "topic": "tz-act-cross-domain-tracking-voor-landingspagina-93624",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "datalayer-ontwerpen-die-marketeers-begrijpen",
+    "title": "DataLayer ontwerpen die marketeers begrijpen",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "analytics-gtm-matomo"
+    ],
+    "topic": "tz-act-datalayer-ontwerpen-die-marketeers-begrijp-79260",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "pii-uit-tags-houden-avg",
+    "title": "PII uit tags houden (AVG)",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "analytics-gtm-matomo"
+    ],
+    "topic": "tz-act-pii-uit-tags-houden-avg-f0297",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "looker-studio-of-exports-rapportages-delen",
+    "title": "Looker Studio of exports: rapportages delen",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "analytics-gtm-matomo"
+    ],
+    "topic": "tz-act-looker-studio-of-exports-rapportages-delen-f3702",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "spas-en-next-js-pageviews-correct-meten",
+    "title": "SPA’s en Next.js: pageviews correct meten",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "analytics-gtm-matomo"
+    ],
+    "topic": "tz-act-spas-en-next-js-pageviews-correct-meten-28b09",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "uitfaseren-van-verouderde-universal-analytics-restanten",
+    "title": "Uitfaseren van verouderde Universal Analytics-restanten",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "analytics-gtm-matomo"
+    ],
+    "topic": "tz-act-uitfaseren-van-verouderde-universal-analyt-7be4b",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "doelen-en-conversies-definieren-in-matomo",
+    "title": "Doelen en conversies definiëren in Matomo",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "analytics-gtm-matomo"
+    ],
+    "topic": "tz-act-doelen-en-conversies-definieren-in-matomo-a8bbd",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "tag-governance-wie-mag-wat-publiceren",
+    "title": "Tag governance: wie mag wat publiceren",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "analytics-gtm-matomo"
+    ],
+    "topic": "tz-act-tag-governance-wie-mag-wat-publiceren-5c5d2",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "default-consent-state-voor-nl-bezoekers",
+    "title": "Default consent state voor NL-bezoekers",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "analytics-gtm-matomo"
+    ],
+    "topic": "tz-act-default-consent-state-voor-nl-bezoekers-72030",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "cro-basis-hypothese-voor-je-iets-wijzigt",
+    "title": "CRO-basis: hypothese vóór je iets wijzigt",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "conversie-optimalisatie"
+    ],
+    "topic": "tz-act-cro-basis-hypothese-voor-je-iets-wijzigt-f97a3",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "funnelanalyse-waar-haken-bezoekers-af",
+    "title": "Funnelanalyse: waar haken bezoekers af?",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "conversie-optimalisatie"
+    ],
+    "topic": "tz-act-funnelanalyse-waar-haken-bezoekers-af-bb53b",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "cta-teksten-testen-zonder-designchaos",
+    "title": "CTA-teksten testen zonder designchaos",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "conversie-optimalisatie"
+    ],
+    "topic": "tz-act-cta-teksten-testen-zonder-designchaos-e9ad0",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "formulieroptimalisatie-velden-schrappen",
+    "title": "Formulieroptimalisatie: velden schrappen",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "conversie-optimalisatie"
+    ],
+    "topic": "tz-act-formulieroptimalisatie-velden-schrappen-c4619",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "social-proof-plaatsen-zonder-nep-reviews",
+    "title": "Social proof plaatsen zonder nep-reviews",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "conversie-optimalisatie"
+    ],
+    "topic": "tz-act-social-proof-plaatsen-zonder-nep-reviews-504e9",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "prijsweergave-en-ankerprijzen-ethisch-inzetten",
+    "title": "Prijsweergave en ankerprijzen ethisch inzetten",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "conversie-optimalisatie"
+    ],
+    "topic": "tz-act-prijsweergave-en-ankerprijzen-ethisch-inze-4a09f",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "mobiele-conversie-duimvriendelijke-ui",
+    "title": "Mobiele conversie: duimvriendelijke UI",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "conversie-optimalisatie"
+    ],
+    "topic": "tz-act-mobiele-conversie-duimvriendelijke-ui-e10d2",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "paginasnelheid-als-conversiefactor",
+    "title": "Paginasnelheid als conversiefactor",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "conversie-optimalisatie"
+    ],
+    "topic": "tz-act-paginasnelheid-als-conversiefactor-de7a0",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "trust-badges-en-betaallogos-bij-checkout",
+    "title": "Trust badges en betaallogo’s bij checkout",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "conversie-optimalisatie"
+    ],
+    "topic": "tz-act-trust-badges-en-betaallogos-bij-checkout-d5563",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "microcopy-die-twijfel-wegneemt",
+    "title": "Microcopy die twijfel wegneemt",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "conversie-optimalisatie"
+    ],
+    "topic": "tz-act-microcopy-die-twijfel-wegneemt-451ef",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "segmentatie-niet-iedereen-dezelfde-cro-test",
+    "title": "Segmentatie: niet iedereen dezelfde CRO-test",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "conversie-optimalisatie"
+    ],
+    "topic": "tz-act-segmentatie-niet-iedereen-dezelfde-cro-tes-2c597",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "statistische-significantie-begrijpen",
+    "title": "Statistische significantie begrijpen",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "conversie-optimalisatie"
+    ],
+    "topic": "tz-act-statistische-significantie-begrijpen-ed613",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "kwalitatief-onderzoek-interviews-naast-cijfers",
+    "title": "Kwalitatief onderzoek: interviews naast cijfers",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "conversie-optimalisatie"
+    ],
+    "topic": "tz-act-kwalitatief-onderzoek-interviews-naast-cij-fc2c6",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "checkout-abandon-e-mailherstel-ethisch",
+    "title": "Checkout abandon: e-mailherstel ethisch",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "conversie-optimalisatie"
+    ],
+    "topic": "tz-act-checkout-abandon-e-mailherstel-ethisch-05c0d",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "landing-to-offer-alignment",
+    "title": "Landing-to-offer alignment",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "conversie-optimalisatie"
+    ],
+    "topic": "tz-act-landing-to-offer-alignment-fa82d",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "cro-roadmap-koppelen-aan-ai-scan-scores",
+    "title": "CRO-roadmap koppelen aan AI-scan scores",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "conversie-optimalisatie"
+    ],
+    "topic": "tz-act-cro-roadmap-koppelen-aan-ai-scan-scores-7c407",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "lcp-verbeteren-hero-afbeeldingen-en-fonts",
+    "title": "LCP verbeteren: hero-afbeeldingen en fonts",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "core-web-vitals"
+    ],
+    "topic": "tz-act-lcp-verbeteren-hero-afbeeldingen-en-fonts-07247",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "inp-verbeteren-zware-javascript-vermijden",
+    "title": "INP verbeteren: zware JavaScript vermijden",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "core-web-vitals"
+    ],
+    "topic": "tz-act-inp-verbeteren-zware-javascript-vermijden-299f4",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "cls-voorkomen-afmetingen-reserveren",
+    "title": "CLS voorkomen: afmetingen reserveren",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "core-web-vitals"
+    ],
+    "topic": "tz-act-cls-voorkomen-afmetingen-reserveren-6ca75",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "field-data-versus-lab-data-crux-pagespeed",
+    "title": "Field data versus lab data (CrUX/PageSpeed)",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "core-web-vitals"
+    ],
+    "topic": "tz-act-field-data-versus-lab-data-crux-pagespeed-84df3",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "critical-css-en-above-the-fold-strategie",
+    "title": "Critical CSS en above-the-fold strategie",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "core-web-vitals"
+    ],
+    "topic": "tz-act-critical-css-en-above-the-fold-strategie-8bd2d",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "third-party-scripts-die-vitals-breken",
+    "title": "Third-party scripts die vitals breken",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "core-web-vitals"
+    ],
+    "topic": "tz-act-third-party-scripts-die-vitals-breken-a4e7c",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "font-display-en-font-swapping-beheersen",
+    "title": "Font-display en font swapping beheersen",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "core-web-vitals"
+    ],
+    "topic": "tz-act-font-display-en-font-swapping-beheersen-d54da",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "server-response-time-ttfb-verlagen",
+    "title": "Server response time (TTFB) verlagen",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "core-web-vitals"
+    ],
+    "topic": "tz-act-server-response-time-ttfb-verlagen-4fafb",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "wordpress-plugins-die-vitals-schaden",
+    "title": "WordPress-plugins die vitals schaden",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "core-web-vitals"
+    ],
+    "topic": "tz-act-wordpress-plugins-die-vitals-schaden-dd97e",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "next-js-en-core-web-vitals-checklist",
+    "title": "Next.js en Core Web Vitals: checklist",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "core-web-vitals"
+    ],
+    "topic": "tz-act-next-js-en-core-web-vitals-checklist-e43f3",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "afbeeldingformaten-kiezen-voor-lcp",
+    "title": "Afbeeldingformaten kiezen voor LCP",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "core-web-vitals"
+    ],
+    "topic": "tz-act-afbeeldingformaten-kiezen-voor-lcp-5ce68",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "lazy-load-wat-je-juist-niet-lazy-laadt",
+    "title": "Lazy load: wat je juist niet lazy laadt",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "core-web-vitals"
+    ],
+    "topic": "tz-act-lazy-load-wat-je-juist-niet-lazy-laadt-395df",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "cdn-en-vitals-edge-dichterbij-de-gebruiker",
+    "title": "CDN en vitals: edge dichterbij de gebruiker",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "core-web-vitals"
+    ],
+    "topic": "tz-act-cdn-en-vitals-edge-dichterbij-de-gebruiker-1b3a1",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "meten-in-search-console-en-pagespeed-insights",
+    "title": "Meten in Search Console en PageSpeed Insights",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "core-web-vitals"
+    ],
+    "topic": "tz-act-meten-in-search-console-en-pagespeed-insig-3b9f6",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "prioriteiten-mobile-first-voor-rankings",
+    "title": "Prioriteiten: mobile-first voor rankings",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "core-web-vitals"
+    ],
+    "topic": "tz-act-prioriteiten-mobile-first-voor-rankings-11baa",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "budget-voor-js-kilobytes-afspreken-met-developers",
+    "title": "Budget voor JS-kilobytes afspreken met developers",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "core-web-vitals"
+    ],
+    "topic": "tz-act-budget-voor-js-kilobytes-afspreken-met-dev-c95e1",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "wcag-2-2-wat-mkb-minimaal-moet-regelen",
+    "title": "WCAG 2.2: wat MKB-minimaal moet regelen",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "toegankelijkheid-wcag"
+    ],
+    "topic": "tz-act-wcag-2-2-wat-mkb-minimaal-moet-regelen-8612c",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "kleurcontrast-controleren-en-fixen",
+    "title": "Kleurcontrast controleren en fixen",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "toegankelijkheid-wcag"
+    ],
+    "topic": "tz-act-kleurcontrast-controleren-en-fixen-feffb",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "toetsenbordnavigatie-en-focus-states",
+    "title": "Toetsenbordnavigatie en focus states",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "toegankelijkheid-wcag"
+    ],
+    "topic": "tz-act-toetsenbordnavigatie-en-focus-states-dee33",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "alt-teksten-die-echt-beschrijven",
+    "title": "Alt-teksten die écht beschrijven",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "toegankelijkheid-wcag"
+    ],
+    "topic": "tz-act-alt-teksten-die-echt-beschrijven-f91aa",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "formulierlabels-en-foutmeldingen-toegankelijk",
+    "title": "Formulierlabels en foutmeldingen toegankelijk",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "toegankelijkheid-wcag"
+    ],
+    "topic": "tz-act-formulierlabels-en-foutmeldingen-toegankel-576de",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "aria-wanneer-wel-en-wanneer-niet",
+    "title": "ARIA: wanneer wel en wanneer niet",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "toegankelijkheid-wcag"
+    ],
+    "topic": "tz-act-aria-wanneer-wel-en-wanneer-niet-256c3",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "videos-ondertiteling-en-transcript",
+    "title": "Video’s: ondertiteling en transcript",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "toegankelijkheid-wcag"
+    ],
+    "topic": "tz-act-videos-ondertiteling-en-transcript-6b3b3",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "skip-links-en-landmarks",
+    "title": "Skip links en landmarks",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "toegankelijkheid-wcag"
+    ],
+    "topic": "tz-act-skip-links-en-landmarks-8fdee",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "screenreader-testen-zonder-expert-te-zijn",
+    "title": "Screenreader-testen zonder expert te zijn",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "toegankelijkheid-wcag"
+    ],
+    "topic": "tz-act-screenreader-testen-zonder-expert-te-zijn-6c076",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "toegankelijke-pdfs-en-downloads",
+    "title": "Toegankelijke PDF’s en downloads",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "toegankelijkheid-wcag"
+    ],
+    "topic": "tz-act-toegankelijke-pdfs-en-downloads-cdc89",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "motion-en-prefers-reduced-motion",
+    "title": "Motion en prefers-reduced-motion",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "toegankelijkheid-wcag"
+    ],
+    "topic": "tz-act-motion-en-prefers-reduced-motion-7bac1",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "captchas-toegankelijk-houden",
+    "title": "Captcha’s toegankelijk houden",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "toegankelijkheid-wcag"
+    ],
+    "topic": "tz-act-captchas-toegankelijk-houden-a3e4d",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "taalattribuut-en-meertalige-paginas",
+    "title": "Taalattribuut en meertalige pagina’s",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "toegankelijkheid-wcag"
+    ],
+    "topic": "tz-act-taalattribuut-en-meertalige-paginas-0028b",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "componentbibliotheken-auditen-op-a11y",
+    "title": "Componentbibliotheken auditen op a11y",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "toegankelijkheid-wcag"
+    ],
+    "topic": "tz-act-componentbibliotheken-auditen-op-a11y-0ac45",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "juridische-context-nl-toegankelijkheidseisen",
+    "title": "Juridische context NL: toegankelijkheidseisen",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "toegankelijkheid-wcag"
+    ],
+    "topic": "tz-act-juridische-context-nl-toegankelijkheidseis-22686",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "doorlopende-a11y-in-je-releaseproces",
+    "title": "Doorlopende a11y in je releaseproces",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "toegankelijkheid-wcag"
+    ],
+    "topic": "tz-act-doorlopende-a11y-in-je-releaseproces-b62ff",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "json-ld-toevoegen-zonder-de-layout-te-breken",
+    "title": "JSON-LD toevoegen zonder de layout te breken",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "structured-data-schema"
+    ],
+    "topic": "tz-act-json-ld-toevoegen-zonder-de-layout-te-brek-2dc51",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "organization-en-localbusiness-schema",
+    "title": "Organization en LocalBusiness schema",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "structured-data-schema"
+    ],
+    "topic": "tz-act-organization-en-localbusiness-schema-96a67",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "faq-schema-dat-bij-zichtbare-content-past",
+    "title": "FAQ-schema dat bij zichtbare content past",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "structured-data-schema"
+    ],
+    "topic": "tz-act-faq-schema-dat-bij-zichtbare-content-past-b3f0a",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "howto-schema-alleen-bij-echte-stappen",
+    "title": "HowTo-schema: alleen bij echte stappen",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "structured-data-schema"
+    ],
+    "topic": "tz-act-howto-schema-alleen-bij-echte-stappen-09a97",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "product-en-offer-schema-voor-webshops",
+    "title": "Product- en Offer-schema voor webshops",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "structured-data-schema"
+    ],
+    "topic": "tz-act-product-en-offer-schema-voor-webshops-da42f",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "breadcrumblist-voor-betere-navigatie",
+    "title": "BreadcrumbList voor betere navigatie",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "structured-data-schema"
+    ],
+    "topic": "tz-act-breadcrumblist-voor-betere-navigatie-8a470",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "article-schema-voor-nieuws-en-blogs",
+    "title": "Article-schema voor nieuws en blogs",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "structured-data-schema"
+    ],
+    "topic": "tz-act-article-schema-voor-nieuws-en-blogs-60af0",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "review-schema-richtlijnen-respecteren",
+    "title": "Review-schema: richtlijnen respecteren",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "structured-data-schema"
+    ],
+    "topic": "tz-act-review-schema-richtlijnen-respecteren-b710f",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "validatie-met-rich-results-test",
+    "title": "Validatie met Rich Results Test",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "structured-data-schema"
+    ],
+    "topic": "tz-act-validatie-met-rich-results-test-70496",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "meerdere-schema-blokken-op-een-pagina",
+    "title": "Meerdere schema-blokken op één pagina",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "structured-data-schema"
+    ],
+    "topic": "tz-act-meerdere-schema-blokken-op-een-pagina-9ee2b",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "structured-data-en-aeo-antwoorden-markeren",
+    "title": "Structured data en AEO: antwoorden markeren",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "structured-data-schema"
+    ],
+    "topic": "tz-act-structured-data-en-aeo-antwoorden-markeren-80d08",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "fouten-lege-faqs-en-misleading-markup",
+    "title": "Fouten: lege FAQ’s en misleading markup",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "structured-data-schema"
+    ],
+    "topic": "tz-act-fouten-lege-faqs-en-misleading-markup-bc1a3",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "cms-plugins-versus-handmatige-json-ld",
+    "title": "CMS-plugins versus handmatige JSON-LD",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "structured-data-schema"
+    ],
+    "topic": "tz-act-cms-plugins-versus-handmatige-json-ld-c21ec",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "schema-bijhouden-na-redesigns",
+    "title": "Schema bijhouden na redesigns",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "structured-data-schema"
+    ],
+    "topic": "tz-act-schema-bijhouden-na-redesigns-02f2c",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "speakable-en-experimental-types-voorzichtig",
+    "title": "Speakable en experimental types: voorzichtig",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "structured-data-schema"
+    ],
+    "topic": "tz-act-speakable-en-experimental-types-voorzichti-aec23",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "koppeling-nap-consistentie-met-localbusiness",
+    "title": "Koppeling NAP-consistentie met LocalBusiness",
+    "categories": [
+      "analytics-conversie-toegankelijkheid",
+      "structured-data-schema"
+    ],
+    "topic": "tz-act-koppeling-nap-consistentie-met-localbusine-e377f",
+    "module": "analytics-cro"
+  },
+  {
+    "slug": "woocommerce-catalogusstructuur-categorieen-en-tags",
+    "title": "WooCommerce catalogusstructuur: categorieën en tags",
+    "categories": [
+      "e-commerce-webshops",
+      "woocommerce-diepte"
+    ],
+    "topic": "tz-ec-woocommerce-catalogusstructuur-categorieen-911e5",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "productvariaties-en-attributen-correct-instellen",
+    "title": "Productvariaties en attributen correct instellen",
+    "categories": [
+      "e-commerce-webshops",
+      "woocommerce-diepte"
+    ],
+    "topic": "tz-ec-productvariaties-en-attributen-correct-ins-d18b2",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "voorraadbeheer-en-backorders",
+    "title": "Voorraadbeheer en backorders",
+    "categories": [
+      "e-commerce-webshops",
+      "woocommerce-diepte"
+    ],
+    "topic": "tz-ec-voorraadbeheer-en-backorders-cf952",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "checkout-velden-minimaliseren",
+    "title": "Checkout-velden minimaliseren",
+    "categories": [
+      "e-commerce-webshops",
+      "woocommerce-diepte"
+    ],
+    "topic": "tz-ec-checkout-velden-minimaliseren-055da",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "verzendzones-en-tarieven-in-nl-eu",
+    "title": "Verzendzones en tarieven in NL/EU",
+    "categories": [
+      "e-commerce-webshops",
+      "woocommerce-diepte"
+    ],
+    "topic": "tz-ec-verzendzones-en-tarieven-in-nl-eu-b9854",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "belastingen-en-btw-instellingen",
+    "title": "Belastingen en btw-instellingen",
+    "categories": [
+      "e-commerce-webshops",
+      "woocommerce-diepte"
+    ],
+    "topic": "tz-ec-belastingen-en-btw-instellingen-0afa1",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "woocommerce-e-mails-personaliseren",
+    "title": "WooCommerce e-mails personaliseren",
+    "categories": [
+      "e-commerce-webshops",
+      "woocommerce-diepte"
+    ],
+    "topic": "tz-ec-woocommerce-e-mails-personaliseren-eead2",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "coupons-en-kortingsregels-zonder-chaos",
+    "title": "Coupons en kortingsregels zonder chaos",
+    "categories": [
+      "e-commerce-webshops",
+      "woocommerce-diepte"
+    ],
+    "topic": "tz-ec-coupons-en-kortingsregels-zonder-chaos-a8217",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "gastcheckout-versus-accounts",
+    "title": "Gastcheckout versus accounts",
+    "categories": [
+      "e-commerce-webshops",
+      "woocommerce-diepte"
+    ],
+    "topic": "tz-ec-gastcheckout-versus-accounts-7ae13",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "multisite-of-meerdere-shops-aandachtspunten",
+    "title": "Multisite of meerdere shops: aandachtspunten",
+    "categories": [
+      "e-commerce-webshops",
+      "woocommerce-diepte"
+    ],
+    "topic": "tz-ec-multisite-of-meerdere-shops-aandachtspunte-739b9",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "rest-api-van-woocommerce-beveiligen",
+    "title": "REST API van WooCommerce beveiligen",
+    "categories": [
+      "e-commerce-webshops",
+      "woocommerce-diepte"
+    ],
+    "topic": "tz-ec-rest-api-van-woocommerce-beveiligen-6eb8d",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "blocks-versus-classic-checkout",
+    "title": "Blocks versus classic checkout",
+    "categories": [
+      "e-commerce-webshops",
+      "woocommerce-diepte"
+    ],
+    "topic": "tz-ec-blocks-versus-classic-checkout-21aab",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "productgalerijen-en-zoom-performance",
+    "title": "Productgalerijen en zoom performance",
+    "categories": [
+      "e-commerce-webshops",
+      "woocommerce-diepte"
+    ],
+    "topic": "tz-ec-productgalerijen-en-zoom-performance-dbd0f",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "abonnementen-en-terugkerende-betalingen",
+    "title": "Abonnementen en terugkerende betalingen",
+    "categories": [
+      "e-commerce-webshops",
+      "woocommerce-diepte"
+    ],
+    "topic": "tz-ec-abonnementen-en-terugkerende-betalingen-72711",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "migratie-van-magento-prestashop-naar-woocommerce",
+    "title": "Migratie van Magento/PrestaShop naar WooCommerce",
+    "categories": [
+      "e-commerce-webshops",
+      "woocommerce-diepte"
+    ],
+    "topic": "tz-ec-migratie-van-magento-prestashop-naar-wooco-a2210",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "staging-shop-veilig-testen-met-echte-plugins",
+    "title": "Staging-shop veilig testen met echte plugins",
+    "categories": [
+      "e-commerce-webshops",
+      "woocommerce-diepte"
+    ],
+    "topic": "tz-ec-staging-shop-veilig-testen-met-echte-plugi-de097",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "mollie-koppelen-aan-woocommerce",
+    "title": "Mollie koppelen aan WooCommerce",
+    "categories": [
+      "e-commerce-webshops",
+      "betalingen-mollie-ideal"
+    ],
+    "topic": "tz-ec-mollie-koppelen-aan-woocommerce-dec74",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "ideal-als-standaard-betaalmethode-in-nl",
+    "title": "iDEAL als standaard betaalmethode in NL",
+    "categories": [
+      "e-commerce-webshops",
+      "betalingen-mollie-ideal"
+    ],
+    "topic": "tz-ec-ideal-als-standaard-betaalmethode-in-nl-fb712",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "creditcard-en-apple-pay-via-mollie",
+    "title": "Creditcard en Apple Pay via Mollie",
+    "categories": [
+      "e-commerce-webshops",
+      "betalingen-mollie-ideal"
+    ],
+    "topic": "tz-ec-creditcard-en-apple-pay-via-mollie-6f9b8",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "webhook-urls-en-statusupdates-controleren",
+    "title": "Webhook-URL’s en statusupdates controleren",
+    "categories": [
+      "e-commerce-webshops",
+      "betalingen-mollie-ideal"
+    ],
+    "topic": "tz-ec-webhook-urls-en-statusupdates-controleren-6b39f",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "terugbetalingen-en-chargebacks-afhandelen",
+    "title": "Terugbetalingen en chargebacks afhandelen",
+    "categories": [
+      "e-commerce-webshops",
+      "betalingen-mollie-ideal"
+    ],
+    "topic": "tz-ec-terugbetalingen-en-chargebacks-afhandelen-46378",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "testmodus-versus-live-keys",
+    "title": "Testmodus versus live keys",
+    "categories": [
+      "e-commerce-webshops",
+      "betalingen-mollie-ideal"
+    ],
+    "topic": "tz-ec-testmodus-versus-live-keys-92017",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "meerdere-websites-op-een-mollie-account",
+    "title": "Meerdere websites op één Mollie-account",
+    "categories": [
+      "e-commerce-webshops",
+      "betalingen-mollie-ideal"
+    ],
+    "topic": "tz-ec-meerdere-websites-op-een-mollie-account-924aa",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "valutas-en-eu-klanten",
+    "title": "Valuta’s en EU-klanten",
+    "categories": [
+      "e-commerce-webshops",
+      "betalingen-mollie-ideal"
+    ],
+    "topic": "tz-ec-valutas-en-eu-klanten-3c33b",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "foutmelding-betaling-mislukt-diagnose",
+    "title": "Foutmelding ‘betaling mislukt’: diagnose",
+    "categories": [
+      "e-commerce-webshops",
+      "betalingen-mollie-ideal"
+    ],
+    "topic": "tz-ec-foutmelding-betaling-mislukt-diagnose-c3f71",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "pci-scope-verkleinen-met-hosted-checkout",
+    "title": "PCI-scope verkleinen met hosted checkout",
+    "categories": [
+      "e-commerce-webshops",
+      "betalingen-mollie-ideal"
+    ],
+    "topic": "tz-ec-pci-scope-verkleinen-met-hosted-checkout-1bebc",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "facturen-en-betaalbewijzen-naar-klanten",
+    "title": "Facturen en betaalbewijzen naar klanten",
+    "categories": [
+      "e-commerce-webshops",
+      "betalingen-mollie-ideal"
+    ],
+    "topic": "tz-ec-facturen-en-betaalbewijzen-naar-klanten-48bd9",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "abonnementsbetalingen-via-mollie",
+    "title": "Abonnementsbetalingen via Mollie",
+    "categories": [
+      "e-commerce-webshops",
+      "betalingen-mollie-ideal"
+    ],
+    "topic": "tz-ec-abonnementsbetalingen-via-mollie-5dd7f",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "security-keys-nooit-in-de-frontend",
+    "title": "Security: keys nooit in de frontend",
+    "categories": [
+      "e-commerce-webshops",
+      "betalingen-mollie-ideal"
+    ],
+    "topic": "tz-ec-security-keys-nooit-in-de-frontend-64320",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "rapportages-aansluiten-op-boekhouding",
+    "title": "Rapportages aansluiten op boekhouding",
+    "categories": [
+      "e-commerce-webshops",
+      "betalingen-mollie-ideal"
+    ],
+    "topic": "tz-ec-rapportages-aansluiten-op-boekhouding-6f55c",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "3-d-secure-en-frauderegels",
+    "title": "3-D Secure en frauderegels",
+    "categories": [
+      "e-commerce-webshops",
+      "betalingen-mollie-ideal"
+    ],
+    "topic": "tz-ec-3-d-secure-en-frauderegels-98c74",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "alternatieven-stripe-naast-mollie",
+    "title": "Alternatieven: Stripe naast Mollie",
+    "categories": [
+      "e-commerce-webshops",
+      "betalingen-mollie-ideal"
+    ],
+    "topic": "tz-ec-alternatieven-stripe-naast-mollie-03a71",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "productfeed-opzetten-voor-google-merchant",
+    "title": "Productfeed opzetten voor Google Merchant",
+    "categories": [
+      "e-commerce-webshops",
+      "productfeed-seo"
+    ],
+    "topic": "tz-ec-productfeed-opzetten-voor-google-merchant-df00e",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "titels-en-beschrijvingen-voor-product-seo",
+    "title": "Titels en beschrijvingen voor product-SEO",
+    "categories": [
+      "e-commerce-webshops",
+      "productfeed-seo"
+    ],
+    "topic": "tz-ec-titels-en-beschrijvingen-voor-product-seo-e367a",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "gtin-mpn-en-merkvelden-verplicht-maken",
+    "title": "GTIN, MPN en merkvelden verplicht maken",
+    "categories": [
+      "e-commerce-webshops",
+      "productfeed-seo"
+    ],
+    "topic": "tz-ec-gtin-mpn-en-merkvelden-verplicht-maken-7e82b",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "afbeeldingen-in-feeds-eisen-en-valkuilen",
+    "title": "Afbeeldingen in feeds: eisen en valkuilen",
+    "categories": [
+      "e-commerce-webshops",
+      "productfeed-seo"
+    ],
+    "topic": "tz-ec-afbeeldingen-in-feeds-eisen-en-valkuilen-d6855",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "voorraad-en-prijs-synchroon-houden",
+    "title": "Voorraad en prijs synchroon houden",
+    "categories": [
+      "e-commerce-webshops",
+      "productfeed-seo"
+    ],
+    "topic": "tz-ec-voorraad-en-prijs-synchroon-houden-45eca",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "localized-feeds-voor-nl-en-en",
+    "title": "Localized feeds voor NL en EN",
+    "categories": [
+      "e-commerce-webshops",
+      "productfeed-seo"
+    ],
+    "topic": "tz-ec-localized-feeds-voor-nl-en-en-02c88",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "structured-data-product-naast-de-feed",
+    "title": "Structured data Product naast de feed",
+    "categories": [
+      "e-commerce-webshops",
+      "productfeed-seo"
+    ],
+    "topic": "tz-ec-structured-data-product-naast-de-feed-85880",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "categorie-mapping-naar-google-taxonomy",
+    "title": "Categorie-mapping naar Google taxonomy",
+    "categories": [
+      "e-commerce-webshops",
+      "productfeed-seo"
+    ],
+    "topic": "tz-ec-categorie-mapping-naar-google-taxonomy-6ae80",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "feed-fouten-in-merchant-center-oplossen",
+    "title": "Feed-fouten in Merchant Center oplossen",
+    "categories": [
+      "e-commerce-webshops",
+      "productfeed-seo"
+    ],
+    "topic": "tz-ec-feed-fouten-in-merchant-center-oplossen-65499",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "vergelijkingssites-en-affiliate-feeds",
+    "title": "Vergelijkingssites en affiliate feeds",
+    "categories": [
+      "e-commerce-webshops",
+      "productfeed-seo"
+    ],
+    "topic": "tz-ec-vergelijkingssites-en-affiliate-feeds-f7e10",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "faceted-navigation-zonder-seo-schade",
+    "title": "Faceted navigation zonder SEO-schade",
+    "categories": [
+      "e-commerce-webshops",
+      "productfeed-seo"
+    ],
+    "topic": "tz-ec-faceted-navigation-zonder-seo-schade-7c3ea",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "canonieke-urls-voor-productvarianten",
+    "title": "Canonieke URL’s voor productvarianten",
+    "categories": [
+      "e-commerce-webshops",
+      "productfeed-seo"
+    ],
+    "topic": "tz-ec-canonieke-urls-voor-productvarianten-cbce8",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "dunne-productpaginas-verrijken",
+    "title": "Dunne productpagina’s verrijken",
+    "categories": [
+      "e-commerce-webshops",
+      "productfeed-seo"
+    ],
+    "topic": "tz-ec-dunne-productpaginas-verrijken-129ee",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "schema-aggregateoffer-bij-prijsranges",
+    "title": "Schema AggregateOffer bij prijsranges",
+    "categories": [
+      "e-commerce-webshops",
+      "productfeed-seo"
+    ],
+    "topic": "tz-ec-schema-aggregateoffer-bij-prijsranges-4e2a7",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "performance-impact-van-feed-plugins",
+    "title": "Performance impact van feed-plugins",
+    "categories": [
+      "e-commerce-webshops",
+      "productfeed-seo"
+    ],
+    "topic": "tz-ec-performance-impact-van-feed-plugins-edd44",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "interne-links-van-categorie-naar-bestsellers",
+    "title": "Interne links van categorie naar bestsellers",
+    "categories": [
+      "e-commerce-webshops",
+      "productfeed-seo"
+    ],
+    "topic": "tz-ec-interne-links-van-categorie-naar-bestselle-64781",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "webshop-snelheid-database-queries-optimaliseren",
+    "title": "Webshop-snelheid: database queries optimaliseren",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-performance"
+    ],
+    "topic": "tz-ec-webshop-snelheid-database-queries-optimali-da451",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "object-caching-redis-voor-woocommerce",
+    "title": "Object caching (Redis) voor WooCommerce",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-performance"
+    ],
+    "topic": "tz-ec-object-caching-redis-voor-woocommerce-49b6b",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "full-page-cache-en-cart-excepties",
+    "title": "Full-page cache en cart-excepties",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-performance"
+    ],
+    "topic": "tz-ec-full-page-cache-en-cart-excepties-9070e",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "afbeeldingen-en-productgalerijen-comprimeren",
+    "title": "Afbeeldingen en productgalerijen comprimeren",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-performance"
+    ],
+    "topic": "tz-ec-afbeeldingen-en-productgalerijen-comprimer-930ed",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "onnodige-plugins-inventariseren-en-verwijderen",
+    "title": "Onnodige plugins inventariseren en verwijderen",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-performance"
+    ],
+    "topic": "tz-ec-onnodige-plugins-inventariseren-en-verwijd-7faa6",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "checkout-asynchroon-houden",
+    "title": "Checkout asynchroon houden",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-performance"
+    ],
+    "topic": "tz-ec-checkout-asynchroon-houden-260c6",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "cdn-voor-productmedia",
+    "title": "CDN voor productmedia",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-performance"
+    ],
+    "topic": "tz-ec-cdn-voor-productmedia-3a452",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "php-workers-en-concurrency-bij-pieken",
+    "title": "PHP workers en concurrency bij pieken",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-performance"
+    ],
+    "topic": "tz-ec-php-workers-en-concurrency-bij-pieken-0cc38",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "search-en-filters-die-de-db-niet-platleggen",
+    "title": "Search en filters die de DB niet platleggen",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-performance"
+    ],
+    "topic": "tz-ec-search-en-filters-die-de-db-niet-platlegge-2a296",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "critical-path-css-voor-shop-templates",
+    "title": "Critical path CSS voor shop-templates",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-performance"
+    ],
+    "topic": "tz-ec-critical-path-css-voor-shop-templates-4acef",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "lazy-load-onder-de-vouw-producten",
+    "title": "Lazy load onder-de-vouw producten",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-performance"
+    ],
+    "topic": "tz-ec-lazy-load-onder-de-vouw-producten-59623",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "staging-loadtesten-voor-campagnes",
+    "title": "Staging loadtesten voor campagnes",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-performance"
+    ],
+    "topic": "tz-ec-staging-loadtesten-voor-campagnes-7d00f",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "cart-fragments-en-ajax-overhead",
+    "title": "Cart fragments en AJAX overhead",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-performance"
+    ],
+    "topic": "tz-ec-cart-fragments-en-ajax-overhead-795ca",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "hostingkeuze-shared-versus-vps-voor-shops",
+    "title": "Hostingkeuze: shared versus VPS voor shops",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-performance"
+    ],
+    "topic": "tz-ec-hostingkeuze-shared-versus-vps-voor-shops-67243",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "monitoring-tijdens-black-friday-pieken",
+    "title": "Monitoring tijdens Black Friday-pieken",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-performance"
+    ],
+    "topic": "tz-ec-monitoring-tijdens-black-friday-pieken-0cca6",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "query-monitor-gebruiken-zonder-productie-te-vertragen",
+    "title": "Query Monitor gebruiken zonder productie te vertragen",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-performance"
+    ],
+    "topic": "tz-ec-query-monitor-gebruiken-zonder-productie-t-73cf7",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "webshop-hardening-admin-url-en-rechten",
+    "title": "Webshop hardening: admin-URL en rechten",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-beveiliging"
+    ],
+    "topic": "tz-ec-webshop-hardening-admin-url-en-rechten-a68a4",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "2fa-voor-winkelbeheerders",
+    "title": "2FA voor winkelbeheerders",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-beveiliging"
+    ],
+    "topic": "tz-ec-2fa-voor-winkelbeheerders-f3e7d",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "malware-scans-na-verdachte-orders",
+    "title": "Malware-scans na verdachte orders",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-beveiliging"
+    ],
+    "topic": "tz-ec-malware-scans-na-verdachte-orders-b083a",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "brute-force-op-wp-login-beperken",
+    "title": "Brute-force op wp-login beperken",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-beveiliging"
+    ],
+    "topic": "tz-ec-brute-force-op-wp-login-beperken-918b4",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "file-permissions-en-uploads-directory",
+    "title": "File permissions en uploads directory",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-beveiliging"
+    ],
+    "topic": "tz-ec-file-permissions-en-uploads-directory-cdba9",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "fraudulent-orders-herkennen",
+    "title": "Fraudulent orders herkennen",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-beveiliging"
+    ],
+    "topic": "tz-ec-fraudulent-orders-herkennen-bd826",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "security-headers-voor-checkout-paginas",
+    "title": "Security headers voor checkout-pagina’s",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-beveiliging"
+    ],
+    "topic": "tz-ec-security-headers-voor-checkout-paginas-a8a6a",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "ssl-overal-forceren-inclusief-assets",
+    "title": "SSL overal forceren inclusief assets",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-beveiliging"
+    ],
+    "topic": "tz-ec-ssl-overal-forceren-inclusief-assets-64978",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "plugin-kwetsbaarheden-patchen",
+    "title": "Plugin-kwetsbaarheden patchen",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-beveiliging"
+    ],
+    "topic": "tz-ec-plugin-kwetsbaarheden-patchen-f431a",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "waf-cloudflare-regels-voor-admin-paden",
+    "title": "WAF/Cloudflare regels voor admin-paden",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-beveiliging"
+    ],
+    "topic": "tz-ec-waf-cloudflare-regels-voor-admin-paden-c4693",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "backups-voor-elke-shop-update",
+    "title": "Backups vóór elke shop-update",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-beveiliging"
+    ],
+    "topic": "tz-ec-backups-voor-elke-shop-update-cf038",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "klantaccounts-wachtwoordbeleid",
+    "title": "Klantaccounts: wachtwoordbeleid",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-beveiliging"
+    ],
+    "topic": "tz-ec-klantaccounts-wachtwoordbeleid-ad6e2",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "logins-van-developers-tijdelijk-maken",
+    "title": "Logins van developers tijdelijk maken",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-beveiliging"
+    ],
+    "topic": "tz-ec-logins-van-developers-tijdelijk-maken-b7b6c",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "pci-dss-awareness-voor-mkb-shops",
+    "title": "PCI-DSS awareness voor MKB-shops",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-beveiliging"
+    ],
+    "topic": "tz-ec-pci-dss-awareness-voor-mkb-shops-bee9b",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "incident-response-shop-offline-zetten",
+    "title": "Incident response: shop offline zetten",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-beveiliging"
+    ],
+    "topic": "tz-ec-incident-response-shop-offline-zetten-050ea",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "audit-van-betaalplugins-en-webhooks",
+    "title": "Audit van betaalplugins en webhooks",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-beveiliging"
+    ],
+    "topic": "tz-ec-audit-van-betaalplugins-en-webhooks-7f092",
+    "module": "ecommerce"
+  },
+  {
+    "slug": "wat-een-cdn-doet-voor-je-website",
+    "title": "Wat een CDN doet voor je website",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cdn-basics"
+    ],
+    "topic": "tz-cdn-wat-een-cdn-doet-voor-je-website-6c505",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "origin-versus-edge-begrippen-uitgelegd",
+    "title": "Origin versus edge: begrippen uitgelegd",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cdn-basics"
+    ],
+    "topic": "tz-cdn-origin-versus-edge-begrippen-uitgelegd-88f69",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "wanneer-een-cdn-wel-en-niet-helpt",
+    "title": "Wanneer een CDN wél en niet helpt",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cdn-basics"
+    ],
+    "topic": "tz-cdn-wanneer-een-cdn-wel-en-niet-helpt-ae6d1",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "cdn-kiezen-naast-hosting-bij-triplezero-it",
+    "title": "CDN kiezen naast hosting bij TripleZero iT",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cdn-basics"
+    ],
+    "topic": "tz-cdn-cdn-kiezen-naast-hosting-bij-triplezero-it-19bf3",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "statische-assets-via-cdn-serveren",
+    "title": "Statische assets via CDN serveren",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cdn-basics"
+    ],
+    "topic": "tz-cdn-statische-assets-via-cdn-serveren-d1285",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "ttls-begrijpen-en-instellen",
+    "title": "TTL’s begrijpen en instellen",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cdn-basics"
+    ],
+    "topic": "tz-cdn-ttls-begrijpen-en-instellen-6bca0",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "cache-hit-ratio-verbeteren",
+    "title": "Cache hit ratio verbeteren",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cdn-basics"
+    ],
+    "topic": "tz-cdn-cache-hit-ratio-verbeteren-97e46",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "geolocatie-en-latency-meten",
+    "title": "Geolocatie en latency meten",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cdn-basics"
+    ],
+    "topic": "tz-cdn-geolocatie-en-latency-meten-9cf5d",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "cdn-en-cookies-let-op-wat-je-cached",
+    "title": "CDN en cookies: let op wat je cached",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cdn-basics"
+    ],
+    "topic": "tz-cdn-cdn-en-cookies-let-op-wat-je-cached-19279",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "https-op-de-edge-correct-configureren",
+    "title": "HTTPS op de edge correct configureren",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cdn-basics"
+    ],
+    "topic": "tz-cdn-https-op-de-edge-correct-configureren-f068e",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "failover-origin-bereikbaar-houden",
+    "title": "Failover: origin bereikbaar houden",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cdn-basics"
+    ],
+    "topic": "tz-cdn-failover-origin-bereikbaar-houden-e49dc",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "kostenmodellen-van-cdn-verkeer",
+    "title": "Kostenmodellen van CDN-verkeer",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cdn-basics"
+    ],
+    "topic": "tz-cdn-kostenmodellen-van-cdn-verkeer-727b1",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "cdn-voor-apis-caching-regels",
+    "title": "CDN voor API’s: caching-regels",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cdn-basics"
+    ],
+    "topic": "tz-cdn-cdn-voor-apis-caching-regels-2f40c",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "purge-strategie-na-contentupdates",
+    "title": "Purge strategie na contentupdates",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cdn-basics"
+    ],
+    "topic": "tz-cdn-purge-strategie-na-contentupdates-fa52b",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "cloudflare-dns-naast-triplezero-it-nameservers",
+    "title": "Cloudflare DNS naast TripleZero iT nameservers",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cloudflare-dns-proxy"
+    ],
+    "topic": "tz-cdn-cloudflare-dns-naast-triplezero-it-nameser-13cfc",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "oranje-wolk-proxy-versus-dns-only",
+    "title": "Oranje wolk (proxy) versus DNS-only",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cloudflare-dns-proxy"
+    ],
+    "topic": "tz-cdn-oranje-wolk-proxy-versus-dns-only-c6953",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "ssl-tls-modes-flexible-full-full-strict",
+    "title": "SSL/TLS-modes: Flexible, Full, Full (strict)",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cloudflare-dns-proxy"
+    ],
+    "topic": "tz-cdn-ssl-tls-modes-flexible-full-full-strict-d042e",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "authenticated-origin-pulls-uitleg",
+    "title": "Authenticated Origin Pulls uitleg",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cloudflare-dns-proxy"
+    ],
+    "topic": "tz-cdn-authenticated-origin-pulls-uitleg-340c6",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "firewall-rules-voor-admin-en-wp-login",
+    "title": "Firewall rules voor admin en wp-login",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cloudflare-dns-proxy"
+    ],
+    "topic": "tz-cdn-firewall-rules-voor-admin-en-wp-login-5b82e",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "bot-fight-mode-en-echte-gebruikers",
+    "title": "Bot Fight Mode en echte gebruikers",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cloudflare-dns-proxy"
+    ],
+    "topic": "tz-cdn-bot-fight-mode-en-echte-gebruikers-03ded",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "page-rules-versus-cache-rules",
+    "title": "Page Rules versus Cache Rules",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cloudflare-dns-proxy"
+    ],
+    "topic": "tz-cdn-page-rules-versus-cache-rules-d5eaa",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "e-mail-mx-niet-per-ongeluk-proxien",
+    "title": "E-mail (MX) niet per ongeluk proxien",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cloudflare-dns-proxy"
+    ],
+    "topic": "tz-cdn-e-mail-mx-niet-per-ongeluk-proxien-afd3e",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "always-use-https-en-hsts-in-cloudflare",
+    "title": "Always Use HTTPS en HSTS in Cloudflare",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cloudflare-dns-proxy"
+    ],
+    "topic": "tz-cdn-always-use-https-en-hsts-in-cloudflare-4c415",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "ip-allowlist-voor-rdp-ssh-achter-cloudflare",
+    "title": "IP allowlist voor RDP/SSH achter Cloudflare",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cloudflare-dns-proxy"
+    ],
+    "topic": "tz-cdn-ip-allowlist-voor-rdp-ssh-achter-cloudflar-de2cc",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "workers-wanneer-wel-inzetten",
+    "title": "Workers: wanneer wél inzetten",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cloudflare-dns-proxy"
+    ],
+    "topic": "tz-cdn-workers-wanneer-wel-inzetten-e5659",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "development-mode-tijdens-deployments",
+    "title": "Development Mode tijdens deployments",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cloudflare-dns-proxy"
+    ],
+    "topic": "tz-cdn-development-mode-tijdens-deployments-c3bbc",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "analytics-in-cloudflare-interpreteren",
+    "title": "Analytics in Cloudflare interpreteren",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cloudflare-dns-proxy"
+    ],
+    "topic": "tz-cdn-analytics-in-cloudflare-interpreteren-7b1e3",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "problemen-met-websockets-of-apis",
+    "title": "Problemen met WebSockets of API’s",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cloudflare-dns-proxy"
+    ],
+    "topic": "tz-cdn-problemen-met-websockets-of-apis-e2cbd",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "browsercache-cache-control-headers",
+    "title": "Browsercache: Cache-Control headers",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "caching-strategie"
+    ],
+    "topic": "tz-cdn-browsercache-cache-control-headers-1d2e0",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "edge-cache-versus-origin-cache",
+    "title": "Edge cache versus origin cache",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "caching-strategie"
+    ],
+    "topic": "tz-cdn-edge-cache-versus-origin-cache-00c04",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "purge-on-publish-voor-wordpress",
+    "title": "Purge on publish voor WordPress",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "caching-strategie"
+    ],
+    "topic": "tz-cdn-purge-on-publish-voor-wordpress-5d724",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "cache-bypass-voor-winkelwagen-en-account",
+    "title": "Cache bypass voor winkelwagen en account",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "caching-strategie"
+    ],
+    "topic": "tz-cdn-cache-bypass-voor-winkelwagen-en-account-0b2cb",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "stale-while-revalidate-begrijpen",
+    "title": "Stale-while-revalidate begrijpen",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "caching-strategie"
+    ],
+    "topic": "tz-cdn-stale-while-revalidate-begrijpen-49d9e",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "html-cachen-risicos-en-voordelen",
+    "title": "HTML cachen: risico’s en voordelen",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "caching-strategie"
+    ],
+    "topic": "tz-cdn-html-cachen-risicos-en-voordelen-43366",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "querystrings-en-cache-keys",
+    "title": "Querystrings en cache keys",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "caching-strategie"
+    ],
+    "topic": "tz-cdn-querystrings-en-cache-keys-f93b2",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "cdn-cache-litespeed-openlitespeed",
+    "title": "CDN cache + LiteSpeed/OpenLiteSpeed",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "caching-strategie"
+    ],
+    "topic": "tz-cdn-cdn-cache-litespeed-openlitespeed-146dc",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "api-responses-cachen-met-korte-ttl",
+    "title": "API-responses cachen met korte TTL",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "caching-strategie"
+    ],
+    "topic": "tz-cdn-api-responses-cachen-met-korte-ttl-9d8c4",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "authenticated-pages-nooit-publiek-cachen",
+    "title": "Authenticated pages nooit publiek cachen",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "caching-strategie"
+    ],
+    "topic": "tz-cdn-authenticated-pages-nooit-publiek-cachen-36f90",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "warm-up-na-purge-bij-campagnes",
+    "title": "Warm-up na purge bij campagnes",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "caching-strategie"
+    ],
+    "topic": "tz-cdn-warm-up-na-purge-bij-campagnes-8b186",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "versioned-assets-hash-in-filename",
+    "title": "Versioned assets (hash in filename)",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "caching-strategie"
+    ],
+    "topic": "tz-cdn-versioned-assets-hash-in-filename-5d4ba",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "debuggen-waarom-zie-ik-oude-content",
+    "title": "Debuggen: waarom zie ik oude content?",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "caching-strategie"
+    ],
+    "topic": "tz-cdn-debuggen-waarom-zie-ik-oude-content-b1d1f",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "cache-hierarchie-documenteren-voor-je-team",
+    "title": "Cache hiërarchie documenteren voor je team",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "caching-strategie"
+    ],
+    "topic": "tz-cdn-cache-hierarchie-documenteren-voor-je-team-bd415",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "webp-en-avif-formaten-kiezen",
+    "title": "WebP en AVIF: formaten kiezen",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "image-performance"
+    ],
+    "topic": "tz-cdn-webp-en-avif-formaten-kiezen-07bde",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "responsive-images-met-srcset",
+    "title": "Responsive images met srcset",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "image-performance"
+    ],
+    "topic": "tz-cdn-responsive-images-met-srcset-90d3a",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "lazy-loading-correct-toepassen",
+    "title": "Lazy loading correct toepassen",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "image-performance"
+    ],
+    "topic": "tz-cdn-lazy-loading-correct-toepassen-e0fba",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "hero-image-niet-lazy-en-wel-gecomprimeerd",
+    "title": "Hero-image: niet lazy en wel gecomprimeerd",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "image-performance"
+    ],
+    "topic": "tz-cdn-hero-image-niet-lazy-en-wel-gecomprimeerd-a6116",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "cms-uploads-automatisch-verkleinen",
+    "title": "CMS-uploads automatisch verkleinen",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "image-performance"
+    ],
+    "topic": "tz-cdn-cms-uploads-automatisch-verkleinen-c630c",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "cdn-image-resizing-versus-vooraf-exporteren",
+    "title": "CDN image resizing versus vooraf exporteren",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "image-performance"
+    ],
+    "topic": "tz-cdn-cdn-image-resizing-versus-vooraf-exportere-3db0d",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "art-direction-andere-crop-op-mobiel",
+    "title": "Art direction: andere crop op mobiel",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "image-performance"
+    ],
+    "topic": "tz-cdn-art-direction-andere-crop-op-mobiel-ff92f",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "svg-voor-iconen-raster-voor-fotos",
+    "title": "SVG voor iconen, raster voor foto’s",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "image-performance"
+    ],
+    "topic": "tz-cdn-svg-voor-iconen-raster-voor-fotos-7989c",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "exif-data-strippen-voor-privacy-en-bytes",
+    "title": "Exif-data strippen voor privacy en bytes",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "image-performance"
+    ],
+    "topic": "tz-cdn-exif-data-strippen-voor-privacy-en-bytes-034cb",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "lcp-element-voorselecteren-fetchpriority",
+    "title": "LCP-element voorselecteren (fetchpriority)",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "image-performance"
+    ],
+    "topic": "tz-cdn-lcp-element-voorselecteren-fetchpriority-56c4f",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "galleries-placeholders-tegen-cls",
+    "title": "Galleries: placeholders tegen CLS",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "image-performance"
+    ],
+    "topic": "tz-cdn-galleries-placeholders-tegen-cls-e134e",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "wordpress-media-library-opruimen",
+    "title": "WordPress media library opruimen",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "image-performance"
+    ],
+    "topic": "tz-cdn-wordpress-media-library-opruimen-39274",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "next-js-image-component-best-practices",
+    "title": "Next.js Image component best practices",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "image-performance"
+    ],
+    "topic": "tz-cdn-next-js-image-component-best-practices-8904a",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "background-images-versus-img",
+    "title": "Background images versus <img>",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "image-performance"
+    ],
+    "topic": "tz-cdn-background-images-versus-img-9bd63",
+    "module": "cdn-performance"
+  },
+  {
+    "slug": "filezilla-verbinden-met-je-hostingaccount",
+    "title": "FileZilla verbinden met je hostingaccount",
+    "categories": [
+      "hosting",
+      "ftp-en-bestanden"
+    ],
+    "topic": "tz-th-ftp-filezilla-verbinden-met-je-hostingaccount-5996d",
+    "module": "thicken"
+  },
+  {
+    "slug": "ftp-account-aanmaken-in-directadmin",
+    "title": "FTP-account aanmaken in DirectAdmin",
+    "categories": [
+      "hosting",
+      "ftp-en-bestanden",
+      "directadmin"
+    ],
+    "topic": "tz-th-ftp-ftp-account-aanmaken-in-directadmin-20866",
+    "module": "thicken"
+  },
+  {
+    "slug": "ftp-account-aanmaken-in-cyberpanel",
+    "title": "FTP-account aanmaken in CyberPanel",
+    "categories": [
+      "hosting",
+      "ftp-en-bestanden",
+      "cyberpanel"
+    ],
+    "topic": "tz-th-ftp-ftp-account-aanmaken-in-cyberpanel-af77c",
+    "module": "thicken"
+  },
+  {
+    "slug": "sftp-gebruiken-in-plaats-van-plain-ftp",
+    "title": "SFTP gebruiken in plaats van plain FTP",
+    "categories": [
+      "hosting",
+      "ftp-en-bestanden",
+      "beveiliging"
+    ],
+    "topic": "tz-th-ftp-sftp-gebruiken-in-plaats-van-plain-ftp-4d846",
+    "module": "thicken"
+  },
+  {
+    "slug": "bestandsrechten-chmod-veilig-instellen",
+    "title": "Bestandsrechten (CHMOD) veilig instellen",
+    "categories": [
+      "hosting",
+      "ftp-en-bestanden",
+      "beveiliging"
+    ],
+    "topic": "tz-th-ftp-bestandsrechten-chmod-veilig-instellen-ffc30",
+    "module": "thicken"
+  },
+  {
+    "slug": "grote-bestanden-uploaden-zonder-timeout",
+    "title": "Grote bestanden uploaden zonder timeout",
+    "categories": [
+      "hosting",
+      "ftp-en-bestanden"
+    ],
+    "topic": "tz-th-ftp-grote-bestanden-uploaden-zonder-timeout-f7006",
+    "module": "thicken"
+  },
+  {
+    "slug": "verborgen-bestanden-htaccess-bewerken-via-ftp",
+    "title": "Verborgen bestanden (.htaccess) bewerken via FTP",
+    "categories": [
+      "hosting",
+      "ftp-en-bestanden"
+    ],
+    "topic": "tz-th-ftp-verborgen-bestanden-htaccess-bewerken-via-a663e",
+    "module": "thicken"
+  },
+  {
+    "slug": "ftp-toegang-intrekken-voor-oud-personeel",
+    "title": "FTP-toegang intrekken voor oud personeel",
+    "categories": [
+      "hosting",
+      "ftp-en-bestanden",
+      "beveiliging"
+    ],
+    "topic": "tz-th-ftp-ftp-toegang-intrekken-voor-oud-personeel-aafd9",
+    "module": "thicken"
+  },
+  {
+    "slug": "php-versie-wijzigen-per-domein",
+    "title": "PHP-versie wijzigen per domein",
+    "categories": [
+      "hosting",
+      "php-en-scripts"
+    ],
+    "topic": "tz-th-php-php-versie-wijzigen-per-domein-f6f84",
+    "module": "thicken"
+  },
+  {
+    "slug": "phpinfo-veilig-bekijken-en-weer-uitzetten",
+    "title": "phpinfo veilig bekijken en weer uitzetten",
+    "categories": [
+      "hosting",
+      "php-en-scripts",
+      "beveiliging"
+    ],
+    "topic": "tz-th-php-phpinfo-veilig-bekijken-en-weer-uitzetten-26dd3",
+    "module": "thicken"
+  },
+  {
+    "slug": "cronjob-toevoegen-voor-onderhoudsscripts",
+    "title": "Cronjob toevoegen voor onderhoudsscripts",
+    "categories": [
+      "hosting",
+      "php-en-scripts"
+    ],
+    "topic": "tz-th-php-cronjob-toevoegen-voor-onderhoudsscripts-a9d60",
+    "module": "thicken"
+  },
+  {
+    "slug": "memory-limit-en-max-execution-time-verhogen",
+    "title": "memory_limit en max_execution_time verhogen",
+    "categories": [
+      "hosting",
+      "php-en-scripts"
+    ],
+    "topic": "tz-th-php-memory-limit-en-max-execution-time-verhoge-187ad",
+    "module": "thicken"
+  },
+  {
+    "slug": "installatron-applicatie-updaten",
+    "title": "Installatron: applicatie updaten",
+    "categories": [
+      "hosting",
+      "php-en-scripts",
+      "wordpress"
+    ],
+    "topic": "tz-th-php-installatron-applicatie-updaten-ae03e",
+    "module": "thicken"
+  },
+  {
+    "slug": "php-fouten-in-error-log-vinden",
+    "title": "PHP-fouten in error_log vinden",
+    "categories": [
+      "hosting",
+      "php-en-scripts"
+    ],
+    "topic": "tz-th-php-php-fouten-in-error-log-vinden-7be7e",
+    "module": "thicken"
+  },
+  {
+    "slug": "composer-op-shared-hosting-beperkingen",
+    "title": "Composer op shared hosting: beperkingen",
+    "categories": [
+      "hosting",
+      "php-en-scripts"
+    ],
+    "topic": "tz-th-php-composer-op-shared-hosting-beperkingen-5040a",
+    "module": "thicken"
+  },
+  {
+    "slug": "opcache-inschakelen-voor-snellere-php",
+    "title": "Opcache inschakelen voor snellere PHP",
+    "categories": [
+      "hosting",
+      "php-en-scripts"
+    ],
+    "topic": "tz-th-php-opcache-inschakelen-voor-snellere-php-5f6da",
+    "module": "thicken"
+  },
+  {
+    "slug": "schijfruimte-vrijmaken-logs-en-backups",
+    "title": "Schijfruimte vrijmaken: logs en backups",
+    "categories": [
+      "hosting",
+      "opslag-en-verkeer"
+    ],
+    "topic": "tz-th-disk-schijfruimte-vrijmaken-logs-en-backups-efc60",
+    "module": "thicken"
+  },
+  {
+    "slug": "inode-limiet-bereikt-wat-nu",
+    "title": "Inode-limiet bereikt: wat nu?",
+    "categories": [
+      "hosting",
+      "opslag-en-verkeer"
+    ],
+    "topic": "tz-th-disk-inode-limiet-bereikt-wat-nu-5a289",
+    "module": "thicken"
+  },
+  {
+    "slug": "dataverkeer-pieken-onderzoeken",
+    "title": "Dataverkeer pieken onderzoeken",
+    "categories": [
+      "hosting",
+      "opslag-en-verkeer"
+    ],
+    "topic": "tz-th-disk-dataverkeer-pieken-onderzoeken-bbaac",
+    "module": "thicken"
+  },
+  {
+    "slug": "mailopslag-die-je-hosting-vol-laat-lopen",
+    "title": "Mailopslag die je hosting vol laat lopen",
+    "categories": [
+      "hosting",
+      "opslag-en-verkeer",
+      "e-mail"
+    ],
+    "topic": "tz-th-disk-mailopslag-die-je-hosting-vol-laat-lopen-265b9",
+    "module": "thicken"
+  },
+  {
+    "slug": "upgrade-naar-groter-hostingpakket-plannen",
+    "title": "Upgrade naar groter hostingpakket plannen",
+    "categories": [
+      "hosting",
+      "opslag-en-verkeer",
+      "shop-en-pakketten",
+      "hostingpakketten"
+    ],
+    "topic": "tz-th-disk-upgrade-naar-groter-hostingpakket-plannen-346a4",
+    "module": "thicken"
+  },
+  {
+    "slug": "domein-verhuizen-met-autorisatiecode",
+    "title": "Domein verhuizen met autorisatiecode",
+    "categories": [
+      "domeinnamen",
+      "domein-verhuizen"
+    ],
+    "topic": "tz-th-xfer-domein-verhuizen-met-autorisatiecode-574df",
+    "module": "thicken"
+  },
+  {
+    "slug": "domeinlock-uitzetten-voor-transfer",
+    "title": "Domeinlock uitzetten vóór transfer",
+    "categories": [
+      "domeinnamen",
+      "domein-verhuizen"
+    ],
+    "topic": "tz-th-xfer-domeinlock-uitzetten-voor-transfer-26af4",
+    "module": "thicken"
+  },
+  {
+    "slug": "quarantaineperiode-na-nl-verhuizing",
+    "title": "Quarantaineperiode na .nl-verhuizing",
+    "categories": [
+      "domeinnamen",
+      "domein-verhuizen"
+    ],
+    "topic": "tz-th-xfer-quarantaineperiode-na-nl-verhuizing-b2085",
+    "module": "thicken"
+  },
+  {
+    "slug": "dns-behouden-tijdens-domeinverhuizing",
+    "title": "DNS behouden tijdens domeinverhuizing",
+    "categories": [
+      "domeinnamen",
+      "domein-verhuizen",
+      "dns-records"
+    ],
+    "topic": "tz-th-xfer-dns-behouden-tijdens-domeinverhuizing-0fdde",
+    "module": "thicken"
+  },
+  {
+    "slug": "e-mail-draaiende-houden-tijdens-transfer",
+    "title": "E-mail draaiende houden tijdens transfer",
+    "categories": [
+      "domeinnamen",
+      "domein-verhuizen",
+      "e-mail"
+    ],
+    "topic": "tz-th-xfer-e-mail-draaiende-houden-tijdens-transfer-0159b",
+    "module": "thicken"
+  },
+  {
+    "slug": "mislukte-transfer-veelvoorkomende-oorzaken",
+    "title": "Mislukte transfer: veelvoorkomende oorzaken",
+    "categories": [
+      "domeinnamen",
+      "domein-verhuizen"
+    ],
+    "topic": "tz-th-xfer-mislukte-transfer-veelvoorkomende-oorzaken-c2276",
+    "module": "thicken"
+  },
+  {
+    "slug": "domein-overdragen-naar-andere-houder",
+    "title": "Domein overdragen naar andere houder",
+    "categories": [
+      "domeinnamen",
+      "domein-verhuizen",
+      "domein-registratie"
+    ],
+    "topic": "tz-th-xfer-domein-overdragen-naar-andere-houder-b4774",
+    "module": "thicken"
+  },
+  {
+    "slug": "caa-record-toevoegen-voor-ssl-issuers",
+    "title": "CAA-record toevoegen voor SSL-issuers",
+    "categories": [
+      "domeinnamen",
+      "dns-records",
+      "ssl-certificaten"
+    ],
+    "topic": "tz-th-dns-caa-record-toevoegen-voor-ssl-issuers-8084a",
+    "module": "thicken"
+  },
+  {
+    "slug": "srv-records-voor-microsoft-365-of-voip",
+    "title": "SRV-records voor Microsoft 365 of VoIP",
+    "categories": [
+      "domeinnamen",
+      "dns-records",
+      "microsoft"
+    ],
+    "topic": "tz-th-dns-srv-records-voor-microsoft-365-of-voip-e9a47",
+    "module": "thicken"
+  },
+  {
+    "slug": "ttl-strategisch-verlagen-voor-migratie",
+    "title": "TTL strategisch verlagen vóór migratie",
+    "categories": [
+      "domeinnamen",
+      "dns-records"
+    ],
+    "topic": "tz-th-dns-ttl-strategisch-verlagen-voor-migratie-a31b7",
+    "module": "thicken"
+  },
+  {
+    "slug": "dnssec-inschakelen-en-ds-records",
+    "title": "DNSSEC inschakelen en DS-records",
+    "categories": [
+      "domeinnamen",
+      "dns-records",
+      "beveiliging"
+    ],
+    "topic": "tz-th-dns-dnssec-inschakelen-en-ds-records-62dc7",
+    "module": "thicken"
+  },
+  {
+    "slug": "split-horizon-dns-wanneer-relevant",
+    "title": "Split-horizon DNS: wanneer relevant",
+    "categories": [
+      "domeinnamen",
+      "dns-records"
+    ],
+    "topic": "tz-th-dns-split-horizon-dns-wanneer-relevant-1297a",
+    "module": "thicken"
+  },
+  {
+    "slug": "teams-gasttoegang-veilig-instellen",
+    "title": "Teams gasttoegang veilig instellen",
+    "categories": [
+      "microsoft",
+      "microsoft-teams"
+    ],
+    "topic": "tz-th-ms-teams-gasttoegang-veilig-instellen-fbf36",
+    "module": "thicken"
+  },
+  {
+    "slug": "teams-vergaderbeleid-en-lobby",
+    "title": "Teams vergaderbeleid en lobby",
+    "categories": [
+      "microsoft",
+      "microsoft-teams"
+    ],
+    "topic": "tz-th-ms-teams-vergaderbeleid-en-lobby-75154",
+    "module": "thicken"
+  },
+  {
+    "slug": "teams-bestanden-in-sharepoint-beheren",
+    "title": "Teams bestanden in SharePoint beheren",
+    "categories": [
+      "microsoft",
+      "microsoft-teams",
+      "microsoft-onedrive"
+    ],
+    "topic": "tz-th-ms-teams-bestanden-in-sharepoint-beheren-f85dc",
+    "module": "thicken"
+  },
+  {
+    "slug": "conditional-access-basics-voor-m365",
+    "title": "Conditional Access basics voor M365",
+    "categories": [
+      "microsoft",
+      "microsoft-beveiliging"
+    ],
+    "topic": "tz-th-ms-conditional-access-basics-voor-m365-c9190",
+    "module": "thicken"
+  },
+  {
+    "slug": "suspicious-sign-in-alerts-opvolgen",
+    "title": "Suspicious sign-in alerts opvolgen",
+    "categories": [
+      "microsoft",
+      "microsoft-beveiliging"
+    ],
+    "topic": "tz-th-ms-suspicious-sign-in-alerts-opvolgen-32ddb",
+    "module": "thicken"
+  },
+  {
+    "slug": "adminrollen-minimaliseren-in-entra-id",
+    "title": "Adminrollen minimaliseren in Entra ID",
+    "categories": [
+      "microsoft",
+      "microsoft-beveiliging"
+    ],
+    "topic": "tz-th-ms-adminrollen-minimaliseren-in-entra-id-2cce7",
+    "module": "thicken"
+  },
+  {
+    "slug": "passkeys-en-wachtwoordloze-login-in-m365",
+    "title": "Passkeys en wachtwoordloze login in M365",
+    "categories": [
+      "microsoft",
+      "microsoft-beveiliging"
+    ],
+    "topic": "tz-th-ms-passkeys-en-wachtwoordloze-login-in-m365-e138f",
+    "module": "thicken"
+  },
+  {
+    "slug": "eenmalige-toegang-voor-externe-consultants",
+    "title": "Eenmalige toegang voor externe consultants",
+    "categories": [
+      "microsoft",
+      "microsoft-beveiliging",
+      "microsoft-overige"
+    ],
+    "topic": "tz-th-ms-eenmalige-toegang-voor-externe-consultants-bcec7",
+    "module": "thicken"
+  },
+  {
+    "slug": "basis-cyberhygiene-voor-ondernemers",
+    "title": "Basis cyberhygiëne voor ondernemers",
+    "categories": [
+      "veilig-online",
+      "veilig-online-basis",
+      "beveiliging"
+    ],
+    "topic": "tz-th-vo-basis-cyberhygiene-voor-ondernemers-bee4a",
+    "module": "thicken"
+  },
+  {
+    "slug": "phishing-herkennen-in-60-seconden",
+    "title": "Phishing herkennen in 60 seconden",
+    "categories": [
+      "veilig-online",
+      "veilig-online-phishing",
+      "beveiliging"
+    ],
+    "topic": "tz-th-vo-phishing-herkennen-in-60-seconden-909ed",
+    "module": "thicken"
+  },
+  {
+    "slug": "avg-dataminimalisatie-in-de-praktijk",
+    "title": "AVG: dataminimalisatie in de praktijk",
+    "categories": [
+      "veilig-online",
+      "veilig-online-privacy",
+      "beveiliging"
+    ],
+    "topic": "tz-th-vo-avg-dataminimalisatie-in-de-praktijk-b9567",
+    "module": "thicken"
+  },
+  {
+    "slug": "verwerkersovereenkomsten-wanneer-nodig",
+    "title": "Verwerkersovereenkomsten: wanneer nodig",
+    "categories": [
+      "veilig-online",
+      "veilig-online-privacy"
+    ],
+    "topic": "tz-th-vo-verwerkersovereenkomsten-wanneer-nodig-617e1",
+    "module": "thicken"
+  },
+  {
+    "slug": "vpn-kiezen-voor-openbare-wifi",
+    "title": "VPN kiezen voor openbare wifi",
+    "categories": [
+      "veilig-online",
+      "veilig-online-netwerk",
+      "beveiliging"
+    ],
+    "topic": "tz-th-vo-vpn-kiezen-voor-openbare-wifi-4a017",
+    "module": "thicken"
+  },
+  {
+    "slug": "thuisrouter-firmware-en-wachtwoord",
+    "title": "Thuisrouter firmware en wachtwoord",
+    "categories": [
+      "veilig-online",
+      "veilig-online-netwerk"
+    ],
+    "topic": "tz-th-vo-thuisrouter-firmware-en-wachtwoord-7bf97",
+    "module": "thicken"
+  },
+  {
+    "slug": "passkeys-uitleggen-aan-niet-technische-collegas",
+    "title": "Passkeys uitleggen aan niet-technische collega’s",
+    "categories": [
+      "veilig-online",
+      "veilig-online-wachtwoorden",
+      "beveiliging"
+    ],
+    "topic": "tz-th-vo-passkeys-uitleggen-aan-niet-technische-col-abb7a",
+    "module": "thicken"
+  },
+  {
+    "slug": "wachtwoordmanager-rollen-uit-in-een-klein-team",
+    "title": "Wachtwoordmanager rollen uit in een klein team",
+    "categories": [
+      "veilig-online",
+      "veilig-online-wachtwoorden"
+    ],
+    "topic": "tz-th-vo-wachtwoordmanager-rollen-uit-in-een-klein-96c94",
+    "module": "thicken"
+  },
+  {
+    "slug": "eerste-ai-scan-starten-wat-invullen",
+    "title": "Eerste AI-scan starten: wat invullen",
+    "categories": [
+      "ai-scan",
+      "ai-scan-starten"
+    ],
+    "topic": "tz-th-scan-eerste-ai-scan-starten-wat-invullen-a9d6e",
+    "module": "thicken"
+  },
+  {
+    "slug": "ai-scan-historie-vergelijken-over-tijd",
+    "title": "AI-scan historie vergelijken over tijd",
+    "categories": [
+      "ai-scan",
+      "ai-scan-dashboard"
+    ],
+    "topic": "tz-th-scan-ai-scan-historie-vergelijken-over-tijd-70eee",
+    "module": "thicken"
+  },
+  {
+    "slug": "lage-technische-score-snelle-fixes",
+    "title": "Lage technische score: snelle fixes",
+    "categories": [
+      "ai-scan",
+      "ai-scan-scores",
+      "ai-scan-verbeteren"
+    ],
+    "topic": "tz-th-scan-lage-technische-score-snelle-fixes-39f7f",
+    "module": "thicken"
+  },
+  {
+    "slug": "lage-content-score-verbeteren",
+    "title": "Lage content-score verbeteren",
+    "categories": [
+      "ai-scan",
+      "ai-scan-scores",
+      "ai-scan-verbeteren",
+      "aeo-geo-seo"
+    ],
+    "topic": "tz-th-scan-lage-content-score-verbeteren-50d64",
+    "module": "thicken"
+  },
+  {
+    "slug": "van-scan-naar-aeo-geo-seo-traject",
+    "title": "Van scan naar AEO/GEO/SEO-traject",
+    "categories": [
+      "ai-scan",
+      "ai-scan-oplossingen",
+      "aeo-geo-seo"
+    ],
+    "topic": "tz-th-scan-van-scan-naar-aeo-geo-seo-traject-81cbf",
+    "module": "thicken"
+  },
+  {
+    "slug": "scan-delen-met-je-marketingbureau",
+    "title": "Scan delen met je marketingbureau",
+    "categories": [
+      "ai-scan",
+      "ai-scan-dashboard"
+    ],
+    "topic": "tz-th-scan-scan-delen-met-je-marketingbureau-dc710",
+    "module": "thicken"
+  },
+  {
+    "slug": "agentstatus-running-versus-paused",
+    "title": "Agentstatus RUNNING versus PAUSED",
+    "categories": [
+      "ai-agents",
+      "ai-agents-beheer"
+    ],
+    "topic": "tz-th-ag-agentstatus-running-versus-paused-4e3da",
+    "module": "thicken"
+  },
+  {
+    "slug": "geen-agent-slot-beschikbaar-wat-nu",
+    "title": "Geen agent-slot beschikbaar: wat nu",
+    "categories": [
+      "ai-agents",
+      "ai-agents-pakketten",
+      "shop-en-pakketten"
+    ],
+    "topic": "tz-th-ag-geen-agent-slot-beschikbaar-wat-nu-c2a0c",
+    "module": "thicken"
+  },
+  {
+    "slug": "agent-levert-geen-output-checklist",
+    "title": "Agent levert geen output: checklist",
+    "categories": [
+      "ai-agents",
+      "ai-agents-problemen"
+    ],
+    "topic": "tz-th-ag-agent-levert-geen-output-checklist-fddfa",
+    "module": "thicken"
+  },
+  {
+    "slug": "meerdere-agenttypen-combineren",
+    "title": "Meerdere agenttypen combineren",
+    "categories": [
+      "ai-agents",
+      "ai-agents-workflows",
+      "ai-agents-types"
+    ],
+    "topic": "tz-th-ag-meerdere-agenttypen-combineren-85e46",
+    "module": "thicken"
+  },
+  {
+    "slug": "plesk-reseller-klantabonnement-aanmaken",
+    "title": "Plesk reseller: klantabonnement aanmaken",
+    "categories": [
+      "plesk",
+      "plesk-reseller"
+    ],
+    "topic": "tz-th-pl-plesk-reseller-klantabonnement-aanmaken-7a071",
+    "module": "thicken"
+  },
+  {
+    "slug": "plesk-reseller-white-label-merkinstellingen",
+    "title": "Plesk reseller: white-label merkinstellingen",
+    "categories": [
+      "plesk",
+      "plesk-reseller"
+    ],
+    "topic": "tz-th-pl-plesk-reseller-white-label-merkinstellinge-4bd6b",
+    "module": "thicken"
+  },
+  {
+    "slug": "plesk-ssl-via-lets-encrypt-vernieuwen",
+    "title": "Plesk SSL via Let’s Encrypt vernieuwen",
+    "categories": [
+      "plesk",
+      "plesk-ssl-beveiliging",
+      "ssl-certificaten"
+    ],
+    "topic": "tz-th-pl-plesk-ssl-via-lets-encrypt-vernieuwen-85282",
+    "module": "thicken"
+  },
+  {
+    "slug": "hostingpakket-kiezen-checklist",
+    "title": "Hostingpakket kiezen: checklist",
+    "categories": [
+      "shop-en-pakketten",
+      "hostingpakketten"
+    ],
+    "topic": "tz-th-shop-hostingpakket-kiezen-checklist-41fe1",
+    "module": "thicken"
+  },
+  {
+    "slug": "business-pakket-wat-zit-erin",
+    "title": "Business-pakket: wat zit erin",
+    "categories": [
+      "shop-en-pakketten",
+      "business-pakketten"
+    ],
+    "topic": "tz-th-shop-business-pakket-wat-zit-erin-da6cc",
+    "module": "thicken"
+  },
+  {
+    "slug": "extra-growth-versus-business-vergelijken",
+    "title": "Extra Growth versus Business vergelijken",
+    "categories": [
+      "shop-en-pakketten",
+      "business-pakketten"
+    ],
+    "topic": "tz-th-shop-extra-growth-versus-business-vergelijken-b976b",
+    "module": "thicken"
+  },
+  {
+    "slug": "wachtwoord-vergeten-voor-klantenpanel",
+    "title": "Wachtwoord vergeten voor klantenpanel",
+    "categories": [
+      "crm-klantenpanel",
+      "account-en-inloggen"
+    ],
+    "topic": "tz-th-crm-wachtwoord-vergeten-voor-klantenpanel-34c8b",
+    "module": "thicken"
+  },
+  {
+    "slug": "2fa-inschakelen-op-je-triplezero-account",
+    "title": "2FA inschakelen op je TripleZero-account",
+    "categories": [
+      "crm-klantenpanel",
+      "account-en-inloggen",
+      "beveiliging"
+    ],
+    "topic": "tz-th-crm-2fa-inschakelen-op-je-triplezero-account-48312",
+    "module": "thicken"
+  },
+  {
+    "slug": "facturen-downloaden-en-btw-check",
+    "title": "Facturen downloaden en btw-check",
+    "categories": [
+      "crm-klantenpanel",
+      "facturen-en-betalen",
+      "betalen-en-btw"
+    ],
+    "topic": "tz-th-crm-facturen-downloaden-en-btw-check-548f3",
+    "module": "thicken"
+  },
+  {
+    "slug": "elementor-basispagina-bouwen",
+    "title": "Elementor: basispagina bouwen",
+    "categories": [
+      "wordpress",
+      "wordpress-overige",
+      "bloggen"
+    ],
+    "topic": "tz-th-wp-elementor-basispagina-bouwen-5622d",
+    "module": "thicken"
+  },
+  {
+    "slug": "elementor-en-caching-conflicten-vermijden",
+    "title": "Elementor en caching: conflicten vermijden",
+    "categories": [
+      "wordpress",
+      "wordpress-onderhoud"
+    ],
+    "topic": "tz-th-wp-elementor-en-caching-conflicten-vermijden-bb78f",
+    "module": "thicken"
+  },
+  {
+    "slug": "gutenberg-blokken-herbruikbaar-maken",
+    "title": "Gutenberg-blokken herbruikbaar maken",
+    "categories": [
+      "wordpress",
+      "wordpress-overige"
+    ],
+    "topic": "tz-th-wp-gutenberg-blokken-herbruikbaar-maken-8a151",
+    "module": "thicken"
+  },
+  {
+    "slug": "wordpress-migreren-naar-triplezero-it",
+    "title": "WordPress migreren naar TripleZero iT",
+    "categories": [
+      "wordpress",
+      "wordpress-installatie",
+      "hosting"
+    ],
+    "topic": "tz-th-wp-wordpress-migreren-naar-triplezero-it-a211f",
+    "module": "thicken"
+  },
+  {
+    "slug": "search-replace-na-domeinwijziging",
+    "title": "Search Replace na domeinwijziging",
+    "categories": [
+      "wordpress",
+      "wordpress-onderhoud"
+    ],
+    "topic": "tz-th-wp-search-replace-na-domeinwijziging-3121f",
+    "module": "thicken"
+  },
+  {
+    "slug": "e-commerce-seo-categoriepaginas",
+    "title": "E-commerce SEO: categoriepagina’s",
+    "categories": [
+      "aeo-geo-seo",
+      "seo-klassiek",
+      "e-commerce-webshops"
+    ],
+    "topic": "tz-th-aeo-e-commerce-seo-categoriepaginas-53cba",
+    "module": "thicken"
+  },
+  {
+    "slug": "productpaginas-schrijven-voor-aeo",
+    "title": "Productpagina’s schrijven voor AEO",
+    "categories": [
+      "aeo-geo-seo",
+      "aeo-antwoordengines",
+      "e-commerce-webshops"
+    ],
+    "topic": "tz-th-aeo-productpaginas-schrijven-voor-aeo-95e71",
+    "module": "thicken"
+  },
+  {
+    "slug": "lokale-landingspaginas-zonder-doorway-spam",
+    "title": "Lokale landingspagina’s zonder doorway-spam",
+    "categories": [
+      "aeo-geo-seo",
+      "geo-lokaal"
+    ],
+    "topic": "tz-th-aeo-lokale-landingspaginas-zonder-doorway-spam-7b892",
+    "module": "thicken"
+  },
+  {
+    "slug": "answer-engine-voorbeelden-meten-in-de-praktijk",
+    "title": "Answer-engine voorbeelden meten in de praktijk",
+    "categories": [
+      "aeo-geo-seo",
+      "aeo-geo-seo-resultaten"
+    ],
+    "topic": "tz-th-aeo-answer-engine-voorbeelden-meten-in-de-prak-111b7",
+    "module": "thicken"
+  }
+]

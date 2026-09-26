@@ -1,0 +1,6019 @@
+[
+  {
+    "slug": "wat-is-een-dedicated-server-en-wanneer-kies-je-die",
+    "title": "Wat is een dedicated server en wanneer kies je die?",
+    "titleEn": "What is a dedicated server and when kies your die?",
+    "categories": [
+      "infrastructuur-servers",
+      "dedicated-en-remote-mgmt"
+    ],
+    "topic": "tz-w2-infra-wat-is-een-dedicated-server-en-wanneer-k-156bc",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "verschil-tussen-dedicated-vps-en-shared-hosting",
+    "title": "Verschil tussen dedicated, VPS en shared hosting",
+    "titleEn": "Verschil tussen dedicated, VPS and shared hosting",
+    "categories": [
+      "infrastructuur-servers",
+      "dedicated-en-remote-mgmt"
+    ],
+    "topic": "tz-w2-infra-verschil-tussen-dedicated-vps-en-shared-64998",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "remote-console-ipmi-ilo-en-idrac-uitgelegd",
+    "title": "Remote console: IPMI, iLO en iDRAC uitgelegd",
+    "titleEn": "Remote console: IPMI, iLO and iDRAC explained",
+    "categories": [
+      "infrastructuur-servers",
+      "dedicated-en-remote-mgmt"
+    ],
+    "topic": "tz-w2-infra-remote-console-ipmi-ilo-en-idrac-uitgele-4e21f",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "veilig-inloggen-op-een-remote-management-interface",
+    "title": "Veilig inloggen op een remote management interface",
+    "titleEn": "Safely inloggen on a remote management interface",
+    "categories": [
+      "infrastructuur-servers",
+      "dedicated-en-remote-mgmt"
+    ],
+    "topic": "tz-w2-infra-veilig-inloggen-op-een-remote-management-30e8e",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "iso-mounten-via-virtual-media-conceptueel",
+    "title": "ISO mounten via virtual media (conceptueel)",
+    "titleEn": "ISO mounten via virtual media (conceptueel)",
+    "categories": [
+      "infrastructuur-servers",
+      "dedicated-en-remote-mgmt"
+    ],
+    "topic": "tz-w2-infra-iso-mounten-via-virtual-media-conceptuee-2552a",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "out-of-band-management-waarom-het-telt-bij-storingen",
+    "title": "Out-of-band management: waarom het telt bij storingen",
+    "titleEn": "Out-of-band management: why the telt at storingen",
+    "categories": [
+      "infrastructuur-servers",
+      "dedicated-en-remote-mgmt"
+    ],
+    "topic": "tz-w2-infra-out-of-band-management-waarom-het-telt-b-d11bf",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "hardware-monitoring-smart-temperatuur-en-alerts",
+    "title": "Hardware monitoring: SMART, temperatuur en alerts",
+    "titleEn": "Hardware monitoring: SMART, temperatuur and alerts",
+    "categories": [
+      "infrastructuur-servers",
+      "dedicated-en-remote-mgmt"
+    ],
+    "topic": "tz-w2-infra-hardware-monitoring-smart-temperatuur-en-ca882",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "raid-niveaus-kiezen-voor-web-en-databaseworkloads",
+    "title": "RAID-niveaus kiezen voor web- en databaseworkloads",
+    "titleEn": "RAID-niveaus choose for web- and databaseworkloads",
+    "categories": [
+      "infrastructuur-servers",
+      "dedicated-en-remote-mgmt"
+    ],
+    "topic": "tz-w2-infra-raid-niveaus-kiezen-voor-web-en-database-9141e",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "firmware-updates-plannen-zonder-lange-downtime",
+    "title": "Firmware-updates plannen zonder lange downtime",
+    "titleEn": "Firmware-updates plannen without lange downtime",
+    "categories": [
+      "infrastructuur-servers",
+      "dedicated-en-remote-mgmt"
+    ],
+    "topic": "tz-w2-infra-firmware-updates-plannen-zonder-lange-do-761b3",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "netwerkkaarten-bonding-en-redundantie-op-servers",
+    "title": "Netwerkkaarten, bonding en redundantie op servers",
+    "titleEn": "Netwerkkaarten, bonding and redundantie on servers",
+    "categories": [
+      "infrastructuur-servers",
+      "dedicated-en-remote-mgmt"
+    ],
+    "topic": "tz-w2-infra-netwerkkaarten-bonding-en-redundantie-op-9edec",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "kvm-ip-console-gebruiken-bij-netwerkproblemen",
+    "title": "KVM/IP-console gebruiken bij netwerkproblemen",
+    "titleEn": "KVM/IP-console gebruiken at netwerkproblemen",
+    "categories": [
+      "infrastructuur-servers",
+      "dedicated-en-remote-mgmt"
+    ],
+    "topic": "tz-w2-infra-kvm-ip-console-gebruiken-bij-netwerkprob-07ab1",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "dedicated-resources-versus-burstable-vps",
+    "title": "Dedicated resources versus burstable VPS",
+    "titleEn": "Dedicated resources vs burstable VPS",
+    "categories": [
+      "infrastructuur-servers",
+      "dedicated-en-remote-mgmt"
+    ],
+    "topic": "tz-w2-infra-dedicated-resources-versus-burstable-vps-b3a91",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "colocation-versus-dedicated-hosting-keuzehulp",
+    "title": "Colocation versus dedicated hosting: keuzehulp",
+    "titleEn": "Colocation vs dedicated hosting: keuzehulp",
+    "categories": [
+      "infrastructuur-servers",
+      "dedicated-en-remote-mgmt"
+    ],
+    "topic": "tz-w2-infra-colocation-versus-dedicated-hosting-keuz-63c63",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "serverschijven-sata-nvme-en-endurance-dwpd",
+    "title": "Serverschijven: SATA, NVMe en endurance (DWPD)",
+    "titleEn": "Serverschijven: SATA, NVMe and endurance (DWPD)",
+    "categories": [
+      "infrastructuur-servers",
+      "dedicated-en-remote-mgmt"
+    ],
+    "topic": "tz-w2-infra-serverschijven-sata-nvme-en-endurance-dw-c8321",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "bmc-wachtwoorden-en-netwerkisolatie",
+    "title": "BMC-wachtwoorden en netwerkisolatie",
+    "titleEn": "BMC-wachtwoorden and netwerkisolatie",
+    "categories": [
+      "infrastructuur-servers",
+      "dedicated-en-remote-mgmt"
+    ],
+    "topic": "tz-w2-infra-bmc-wachtwoorden-en-netwerkisolatie-59ae6",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "documenteer-je-hardwareconfiguratie-voor-support",
+    "title": "Documenteer je hardwareconfiguratie voor support",
+    "titleEn": "Documenteer your hardwareconfiguratie for support",
+    "categories": [
+      "infrastructuur-servers",
+      "dedicated-en-remote-mgmt"
+    ],
+    "topic": "tz-w2-infra-documenteer-je-hardwareconfiguratie-voor-dbeef",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "wat-is-een-dedicated-server-en-wanneer-kies-je-die-checklist-voor-mkb",
+    "title": "Wat is een dedicated server en wanneer kies je die?: checklist voor MKB",
+    "titleEn": "What is a dedicated server and when kies your die?: SMB checklist",
+    "categories": [
+      "infrastructuur-servers",
+      "dedicated-en-remote-mgmt"
+    ],
+    "topic": "tz-w2-infra-wat-is-een-dedicated-server-en-wanneer-k-312d3",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "verschil-tussen-dedicated-vps-en-shared-hosting-veelgemaakte-fouten",
+    "title": "Verschil tussen dedicated, VPS en shared hosting: veelgemaakte fouten",
+    "titleEn": "Verschil tussen dedicated, VPS and shared hosting: common mistakes",
+    "categories": [
+      "infrastructuur-servers",
+      "dedicated-en-remote-mgmt"
+    ],
+    "topic": "tz-w2-infra-verschil-tussen-dedicated-vps-en-shared-f82a3",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "remote-console-ipmi-ilo-en-idrac-uitgelegd-stappenplan-voor-beginners",
+    "title": "Remote console: IPMI, iLO en iDRAC uitgelegd: stappenplan voor beginners",
+    "titleEn": "Remote console: IPMI, iLO and iDRAC explained: beginner guide",
+    "categories": [
+      "infrastructuur-servers",
+      "dedicated-en-remote-mgmt"
+    ],
+    "topic": "tz-w2-infra-remote-console-ipmi-ilo-en-idrac-uitgele-5ebba",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "veilig-inloggen-op-een-remote-management-interface-tips-van-triplezero-it",
+    "title": "Veilig inloggen op een remote management interface — tips van TripleZero iT",
+    "titleEn": "Safely inloggen on a remote management interface — tips from TripleZero iT",
+    "categories": [
+      "infrastructuur-servers",
+      "dedicated-en-remote-mgmt"
+    ],
+    "topic": "tz-w2-infra-veilig-inloggen-op-een-remote-management-203ea",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "iso-mounten-via-virtual-media-conceptueel-in-productie",
+    "title": "ISO mounten via virtual media (conceptueel) in productie",
+    "titleEn": "ISO mounten via virtual media (conceptueel) in production",
+    "categories": [
+      "infrastructuur-servers",
+      "dedicated-en-remote-mgmt"
+    ],
+    "topic": "tz-w2-infra-iso-mounten-via-virtual-media-conceptuee-bacd5",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "out-of-band-management-waarom-het-telt-bij-storingen-wat-je-voor-livegang-checkt",
+    "title": "Out-of-band management: waarom het telt bij storingen: wat je vóór livegang checkt",
+    "titleEn": "Out-of-band management: why the telt at storingen: pre-go-live checks",
+    "categories": [
+      "infrastructuur-servers",
+      "dedicated-en-remote-mgmt"
+    ],
+    "topic": "tz-w2-infra-out-of-band-management-waarom-het-telt-b-e36d5",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "rescue-mode-wanneer-en-hoe-je-hem-inzet",
+    "title": "Rescue mode: wanneer en hoe je hem inzet",
+    "titleEn": "Rescue mode: when and how your hem inzet",
+    "categories": [
+      "infrastructuur-servers",
+      "rescue-recovery"
+    ],
+    "topic": "tz-w2-infra-rescue-mode-wanneer-en-hoe-je-hem-inzet-324b6",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "rootwachtwoord-resetten-via-rescue-single-user",
+    "title": "Rootwachtwoord resetten via rescue / single user",
+    "titleEn": "Rootwachtwoord resetten via rescue / single user",
+    "categories": [
+      "infrastructuur-servers",
+      "rescue-recovery"
+    ],
+    "topic": "tz-w2-infra-rootwachtwoord-resetten-via-rescue-singl-8c506",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "bestanden-redden-als-de-os-schijf-niet-meer-boot",
+    "title": "Bestanden redden als de OS-schijf niet meer boot",
+    "titleEn": "Bestanden redden als the OS-schijf niet meer boot",
+    "categories": [
+      "infrastructuur-servers",
+      "rescue-recovery"
+    ],
+    "topic": "tz-w2-infra-bestanden-redden-als-de-os-schijf-niet-m-99c0a",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "fstab-fouten-repareren-vanuit-rescue",
+    "title": "fstab-fouten repareren vanuit rescue",
+    "titleEn": "Fstab-fouten repareren vanuit rescue",
+    "categories": [
+      "infrastructuur-servers",
+      "rescue-recovery"
+    ],
+    "topic": "tz-w2-infra-fstab-fouten-repareren-vanuit-rescue-0bd03",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "netwerk-herstellen-na-verkeerde-firewallregels",
+    "title": "Netwerk herstellen na verkeerde firewallregels",
+    "titleEn": "Netwerk herstellen na verkeerde firewallregels",
+    "categories": [
+      "infrastructuur-servers",
+      "rescue-recovery"
+    ],
+    "topic": "tz-w2-infra-netwerk-herstellen-na-verkeerde-firewall-b9672",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "grub-bootloader-problemen-diagnosticeren",
+    "title": "Grub/bootloader problemen diagnosticeren",
+    "titleEn": "Grub/bootloader problemen diagnosticeren",
+    "categories": [
+      "infrastructuur-servers",
+      "rescue-recovery"
+    ],
+    "topic": "tz-w2-infra-grub-bootloader-problemen-diagnosticeren-e9176",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "snapshot-terugzetten-versus-full-backup-restore",
+    "title": "Snapshot terugzetten versus full backup restore",
+    "titleEn": "Snapshot terugzetten vs full backup restore",
+    "categories": [
+      "infrastructuur-servers",
+      "rescue-recovery"
+    ],
+    "topic": "tz-w2-infra-snapshot-terugzetten-versus-full-backup-cdfc8",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "disaster-recovery-rto-en-rpo-bepalen",
+    "title": "Disaster recovery: RTO en RPO bepalen",
+    "titleEn": "Disaster recovery: RTO and RPO bepalen",
+    "categories": [
+      "infrastructuur-servers",
+      "rescue-recovery"
+    ],
+    "topic": "tz-w2-infra-disaster-recovery-rto-en-rpo-bepalen-a95c4",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "3-2-1-backupstrategie-voor-vps-en-hosting",
+    "title": "3-2-1 backupstrategie voor VPS en hosting",
+    "titleEn": "3-2-1 backupstrategie for VPS and hosting",
+    "categories": [
+      "infrastructuur-servers",
+      "rescue-recovery"
+    ],
+    "topic": "tz-w2-infra-3-2-1-backupstrategie-voor-vps-en-hostin-2514d",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "testen-van-restores-voor-je-ze-nodig-hebt",
+    "title": "Testen van restores vóór je ze nodig hebt",
+    "titleEn": "Testen of restores vóór your ze nodig hebt",
+    "categories": [
+      "infrastructuur-servers",
+      "rescue-recovery"
+    ],
+    "topic": "tz-w2-infra-testen-van-restores-voor-je-ze-nodig-heb-2ef05",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "corrupted-filesystem-check-fsck-veilig-uitvoeren",
+    "title": "Corrupted filesystem check (fsck) veilig uitvoeren",
+    "titleEn": "Corrupted filesystem check (fsck) safely uitvoeren",
+    "categories": [
+      "infrastructuur-servers",
+      "rescue-recovery"
+    ],
+    "topic": "tz-w2-infra-corrupted-filesystem-check-fsck-veilig-u-9a0b8",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "data-redden-naar-een-tweede-volume",
+    "title": "Data redden naar een tweede volume",
+    "titleEn": "Data redden to a tweede volume",
+    "categories": [
+      "infrastructuur-servers",
+      "rescue-recovery"
+    ],
+    "topic": "tz-w2-infra-data-redden-naar-een-tweede-volume-4942f",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "ssh-sleutels-herstellen-na-lock-out",
+    "title": "SSH-sleutels herstellen na lock-out",
+    "titleEn": "SSH-sleutels herstellen na lock-out",
+    "categories": [
+      "infrastructuur-servers",
+      "rescue-recovery"
+    ],
+    "topic": "tz-w2-infra-ssh-sleutels-herstellen-na-lock-out-18391",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "kernel-panic-eerste-triage-stappen",
+    "title": "Kernel panic: eerste triage stappen",
+    "titleEn": "Kernel panic: eerste triage stappen",
+    "categories": [
+      "infrastructuur-servers",
+      "rescue-recovery"
+    ],
+    "topic": "tz-w2-infra-kernel-panic-eerste-triage-stappen-57070",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "communiceren-met-support-tijdens-een-outage",
+    "title": "Communiceren met support tijdens een outage",
+    "titleEn": "Communiceren with support tijdens a outage",
+    "categories": [
+      "infrastructuur-servers",
+      "rescue-recovery"
+    ],
+    "topic": "tz-w2-infra-communiceren-met-support-tijdens-een-out-d8248",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "nazorg-post-mortem-na-een-herstelactie",
+    "title": "Nazorg: post-mortem na een herstelactie",
+    "titleEn": "Nazorg: post-mortem na a herstelactie",
+    "categories": [
+      "infrastructuur-servers",
+      "rescue-recovery"
+    ],
+    "topic": "tz-w2-infra-nazorg-post-mortem-na-een-herstelactie-060f3",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "rescue-mode-wanneer-en-hoe-je-hem-inzet-checklist-voor-mkb",
+    "title": "Rescue mode: wanneer en hoe je hem inzet: checklist voor MKB",
+    "titleEn": "Rescue mode: when and how your hem inzet: SMB checklist",
+    "categories": [
+      "infrastructuur-servers",
+      "rescue-recovery"
+    ],
+    "topic": "tz-w2-infra-rescue-mode-wanneer-en-hoe-je-hem-inzet-db61d",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "rootwachtwoord-resetten-via-rescue-single-user-veelgemaakte-fouten",
+    "title": "Rootwachtwoord resetten via rescue / single user: veelgemaakte fouten",
+    "titleEn": "Rootwachtwoord resetten via rescue / single user: common mistakes",
+    "categories": [
+      "infrastructuur-servers",
+      "rescue-recovery"
+    ],
+    "topic": "tz-w2-infra-rootwachtwoord-resetten-via-rescue-singl-a573e",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "bestanden-redden-als-de-os-schijf-niet-meer-boot-stappenplan-voor-beginners",
+    "title": "Bestanden redden als de OS-schijf niet meer boot: stappenplan voor beginners",
+    "titleEn": "Bestanden redden als the OS-schijf niet meer boot: beginner guide",
+    "categories": [
+      "infrastructuur-servers",
+      "rescue-recovery"
+    ],
+    "topic": "tz-w2-infra-bestanden-redden-als-de-os-schijf-niet-m-b4811",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "fstab-fouten-repareren-vanuit-rescue-tips-van-triplezero-it",
+    "title": "fstab-fouten repareren vanuit rescue — tips van TripleZero iT",
+    "titleEn": "Fstab-fouten repareren vanuit rescue — tips from TripleZero iT",
+    "categories": [
+      "infrastructuur-servers",
+      "rescue-recovery"
+    ],
+    "topic": "tz-w2-infra-fstab-fouten-repareren-vanuit-rescue-tip-148c5",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "netwerk-herstellen-na-verkeerde-firewallregels-in-productie",
+    "title": "Netwerk herstellen na verkeerde firewallregels in productie",
+    "titleEn": "Netwerk herstellen na verkeerde firewallregels in production",
+    "categories": [
+      "infrastructuur-servers",
+      "rescue-recovery"
+    ],
+    "topic": "tz-w2-infra-netwerk-herstellen-na-verkeerde-firewall-99815",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "grub-bootloader-problemen-diagnosticeren-wat-je-voor-livegang-checkt",
+    "title": "Grub/bootloader problemen diagnosticeren: wat je vóór livegang checkt",
+    "titleEn": "Grub/bootloader problemen diagnosticeren: pre-go-live checks",
+    "categories": [
+      "infrastructuur-servers",
+      "rescue-recovery"
+    ],
+    "topic": "tz-w2-infra-grub-bootloader-problemen-diagnosticeren-ec7be",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "docker-op-een-triplezero-it-vps-veilige-basis",
+    "title": "Docker op een TripleZero iT-VPS: veilige basis",
+    "titleEn": "Docker on a TripleZero iT-VPS: veilige basis",
+    "categories": [
+      "infrastructuur-servers",
+      "containers-docker"
+    ],
+    "topic": "tz-w2-infra-docker-op-een-triplezero-it-vps-veilige-42b2e",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "docker-compose-voor-een-simpele-webstack",
+    "title": "Docker Compose voor een simpele webstack",
+    "titleEn": "Docker Compose for a simpele webstack",
+    "categories": [
+      "infrastructuur-servers",
+      "containers-docker"
+    ],
+    "topic": "tz-w2-infra-docker-compose-voor-een-simpele-webstack-99069",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "volumes-en-persistente-data-in-containers",
+    "title": "Volumes en persistente data in containers",
+    "titleEn": "Volumes and persistente data in containers",
+    "categories": [
+      "infrastructuur-servers",
+      "containers-docker"
+    ],
+    "topic": "tz-w2-infra-volumes-en-persistente-data-in-container-f310e",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "poorten-publiceren-zonder-alles-open-te-zetten",
+    "title": "Poorten publiceren zonder alles open te zetten",
+    "titleEn": "Poorten publiceren without alles open te zetten",
+    "categories": [
+      "infrastructuur-servers",
+      "containers-docker"
+    ],
+    "topic": "tz-w2-infra-poorten-publiceren-zonder-alles-open-te-e0b2d",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "images-updaten-en-vulnerability-scans",
+    "title": "Images updaten en vulnerability scans",
+    "titleEn": "Images updaten and vulnerability scans",
+    "categories": [
+      "infrastructuur-servers",
+      "containers-docker"
+    ],
+    "topic": "tz-w2-infra-images-updaten-en-vulnerability-scans-c34b2",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "logs-van-containers-verzamelen-en-roteren",
+    "title": "Logs van containers verzamelen en roteren",
+    "titleEn": "Logs of containers verzamelen and roteren",
+    "categories": [
+      "infrastructuur-servers",
+      "containers-docker"
+    ],
+    "topic": "tz-w2-infra-logs-van-containers-verzamelen-en-rotere-b482f",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "reverse-proxy-caddy-nginx-voor-containers",
+    "title": "Reverse proxy (Caddy/Nginx) vóór containers",
+    "titleEn": "Reverse proxy (Caddy/Nginx) vóór containers",
+    "categories": [
+      "infrastructuur-servers",
+      "containers-docker"
+    ],
+    "topic": "tz-w2-infra-reverse-proxy-caddy-nginx-voor-container-4dd6e",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "resource-limits-cpu-en-memory-per-container",
+    "title": "Resource limits: CPU en memory per container",
+    "titleEn": "Resource limits: CPU and memory per container",
+    "categories": [
+      "infrastructuur-servers",
+      "containers-docker"
+    ],
+    "topic": "tz-w2-infra-resource-limits-cpu-en-memory-per-contai-335c9",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "secrets-niet-in-dockerfiles-stoppen",
+    "title": "Secrets niet in Dockerfiles stoppen",
+    "titleEn": "Secrets niet in Dockerfiles stoppen",
+    "categories": [
+      "infrastructuur-servers",
+      "containers-docker"
+    ],
+    "topic": "tz-w2-infra-secrets-niet-in-dockerfiles-stoppen-5bf9d",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "multi-stage-builds-voor-kleinere-images",
+    "title": "Multi-stage builds voor kleinere images",
+    "titleEn": "Multi-stage builds for kleinere images",
+    "categories": [
+      "infrastructuur-servers",
+      "containers-docker"
+    ],
+    "topic": "tz-w2-infra-multi-stage-builds-voor-kleinere-images-d1ab2",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "docker-netwerken-bridge-versus-host",
+    "title": "Docker netwerken: bridge versus host",
+    "titleEn": "Docker netwerken: bridge vs host",
+    "categories": [
+      "infrastructuur-servers",
+      "containers-docker"
+    ],
+    "topic": "tz-w2-infra-docker-netwerken-bridge-versus-host-a4456",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "healthchecks-en-restart-policies",
+    "title": "Healthchecks en restart policies",
+    "titleEn": "Healthchecks and restart policies",
+    "categories": [
+      "infrastructuur-servers",
+      "containers-docker"
+    ],
+    "topic": "tz-w2-infra-healthchecks-en-restart-policies-f93f2",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "backup-van-volumes-naast-applicatiecode",
+    "title": "Backup van volumes naast applicatiecode",
+    "titleEn": "Backup of volumes naast applicatiecode",
+    "categories": [
+      "infrastructuur-servers",
+      "containers-docker"
+    ],
+    "topic": "tz-w2-infra-backup-van-volumes-naast-applicatiecode-162bb",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "rootless-docker-wanneer-overwegen",
+    "title": "Rootless Docker: wanneer overwegen",
+    "titleEn": "Rootless Docker: when overwegen",
+    "categories": [
+      "infrastructuur-servers",
+      "containers-docker"
+    ],
+    "topic": "tz-w2-infra-rootless-docker-wanneer-overwegen-b8185",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "containers-versus-vms-keuzehulp-voor-mkb",
+    "title": "Containers versus VM’s: keuzehulp voor MKB",
+    "titleEn": "Containers vs VM’s: keuzehulp for MKB",
+    "categories": [
+      "infrastructuur-servers",
+      "containers-docker"
+    ],
+    "topic": "tz-w2-infra-containers-versus-vms-keuzehulp-voor-mkb-f9580",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "opschonen-dangling-images-en-build-cache",
+    "title": "Opschonen: dangling images en build cache",
+    "titleEn": "Opschonen: dangling images and build cache",
+    "categories": [
+      "infrastructuur-servers",
+      "containers-docker"
+    ],
+    "topic": "tz-w2-infra-opschonen-dangling-images-en-build-cache-7bee3",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "docker-op-een-triplezero-it-vps-veilige-basis-checklist-voor-mkb",
+    "title": "Docker op een TripleZero iT-VPS: veilige basis: checklist voor MKB",
+    "titleEn": "Docker on a TripleZero iT-VPS: veilige basis: SMB checklist",
+    "categories": [
+      "infrastructuur-servers",
+      "containers-docker"
+    ],
+    "topic": "tz-w2-infra-docker-op-een-triplezero-it-vps-veilige-f1d53",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "docker-compose-voor-een-simpele-webstack-veelgemaakte-fouten",
+    "title": "Docker Compose voor een simpele webstack: veelgemaakte fouten",
+    "titleEn": "Docker Compose for a simpele webstack: common mistakes",
+    "categories": [
+      "infrastructuur-servers",
+      "containers-docker"
+    ],
+    "topic": "tz-w2-infra-docker-compose-voor-een-simpele-webstack-9c2c3",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "volumes-en-persistente-data-in-containers-stappenplan-voor-beginners",
+    "title": "Volumes en persistente data in containers: stappenplan voor beginners",
+    "titleEn": "Volumes and persistente data in containers: beginner guide",
+    "categories": [
+      "infrastructuur-servers",
+      "containers-docker"
+    ],
+    "topic": "tz-w2-infra-volumes-en-persistente-data-in-container-2e4a3",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "poorten-publiceren-zonder-alles-open-te-zetten-tips-van-triplezero-it",
+    "title": "Poorten publiceren zonder alles open te zetten — tips van TripleZero iT",
+    "titleEn": "Poorten publiceren without alles open te zetten — tips from TripleZero iT",
+    "categories": [
+      "infrastructuur-servers",
+      "containers-docker"
+    ],
+    "topic": "tz-w2-infra-poorten-publiceren-zonder-alles-open-te-7a014",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "images-updaten-en-vulnerability-scans-in-productie",
+    "title": "Images updaten en vulnerability scans in productie",
+    "titleEn": "Images updaten and vulnerability scans in production",
+    "categories": [
+      "infrastructuur-servers",
+      "containers-docker"
+    ],
+    "topic": "tz-w2-infra-images-updaten-en-vulnerability-scans-in-0d48d",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "logs-van-containers-verzamelen-en-roteren-wat-je-voor-livegang-checkt",
+    "title": "Logs van containers verzamelen en roteren: wat je vóór livegang checkt",
+    "titleEn": "Logs of containers verzamelen and roteren: pre-go-live checks",
+    "categories": [
+      "infrastructuur-servers",
+      "containers-docker"
+    ],
+    "topic": "tz-w2-infra-logs-van-containers-verzamelen-en-rotere-cf576",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "node-js-app-draaien-met-systemd-of-pm2",
+    "title": "Node.js-app draaien met systemd of PM2",
+    "titleEn": "Node.js-app draaien with systemd of PM2",
+    "categories": [
+      "infrastructuur-servers",
+      "apps-op-vps"
+    ],
+    "topic": "tz-w2-infra-node-js-app-draaien-met-systemd-of-pm2-52e42",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "python-fastapi-django-deployen-op-een-vps",
+    "title": "Python (FastAPI/Django) deployen op een VPS",
+    "titleEn": "Python (FastAPI/Django) deployen on a VPS",
+    "categories": [
+      "infrastructuur-servers",
+      "apps-op-vps"
+    ],
+    "topic": "tz-w2-infra-python-fastapi-django-deployen-op-een-vp-3051b",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "git-based-deploy-pull-build-restart",
+    "title": "Git-based deploy: pull, build, restart",
+    "titleEn": "Git-based deploy: pull, build, restart",
+    "categories": [
+      "infrastructuur-servers",
+      "apps-op-vps"
+    ],
+    "topic": "tz-w2-infra-git-based-deploy-pull-build-restart-3c0f6",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "omgevingsvariabelen-veilig-beheren-op-de-server",
+    "title": "Omgevingsvariabelen veilig beheren op de server",
+    "titleEn": "Omgevingsvariabelen safely beheren on the server",
+    "categories": [
+      "infrastructuur-servers",
+      "apps-op-vps"
+    ],
+    "topic": "tz-w2-infra-omgevingsvariabelen-veilig-beheren-op-de-ac5f5",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "process-managers-pm2-versus-systemd",
+    "title": "Process managers: PM2 versus systemd",
+    "titleEn": "Process managers: PM2 vs systemd",
+    "categories": [
+      "infrastructuur-servers",
+      "apps-op-vps"
+    ],
+    "topic": "tz-w2-infra-process-managers-pm2-versus-systemd-d7ecc",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "zero-downtime-restart-van-node-processen",
+    "title": "Zero-downtime restart van Node-processen",
+    "titleEn": "Zero-downtime restart of Node-processen",
+    "categories": [
+      "infrastructuur-servers",
+      "apps-op-vps"
+    ],
+    "topic": "tz-w2-infra-zero-downtime-restart-van-node-processen-198f4",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "uvicorn-gunicorn-achter-nginx",
+    "title": "Uvicorn/Gunicorn achter Nginx",
+    "titleEn": "Uvicorn/Gunicorn achter Nginx",
+    "categories": [
+      "infrastructuur-servers",
+      "apps-op-vps"
+    ],
+    "topic": "tz-w2-infra-uvicorn-gunicorn-achter-nginx-cfac6",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "cron-versus-systemd-timers-voor-jobs",
+    "title": "Cron versus systemd timers voor jobs",
+    "titleEn": "Cron vs systemd timers for jobs",
+    "categories": [
+      "infrastructuur-servers",
+      "apps-op-vps"
+    ],
+    "topic": "tz-w2-infra-cron-versus-systemd-timers-voor-jobs-29e9e",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "logrotatie-voor-app-logs",
+    "title": "Logrotatie voor app-logs",
+    "titleEn": "Logrotatie for app-logs",
+    "categories": [
+      "infrastructuur-servers",
+      "apps-op-vps"
+    ],
+    "topic": "tz-w2-infra-logrotatie-voor-app-logs-dfddf",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "health-endpoint-en-uptime-monitoring",
+    "title": "Health endpoint en uptime monitoring",
+    "titleEn": "Health endpoint and uptime monitoring",
+    "categories": [
+      "infrastructuur-servers",
+      "apps-op-vps"
+    ],
+    "topic": "tz-w2-infra-health-endpoint-en-uptime-monitoring-9e655",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "deploy-keys-en-read-only-git-toegang",
+    "title": "Deploy keys en read-only Git-toegang",
+    "titleEn": "Deploy keys and read-only Git-toegang",
+    "categories": [
+      "infrastructuur-servers",
+      "apps-op-vps"
+    ],
+    "topic": "tz-w2-infra-deploy-keys-en-read-only-git-toegang-5bdd4",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "staging-vps-naast-productie",
+    "title": "Staging-VPS naast productie",
+    "titleEn": "Staging-VPS naast productie",
+    "categories": [
+      "infrastructuur-servers",
+      "apps-op-vps"
+    ],
+    "topic": "tz-w2-infra-staging-vps-naast-productie-ac5c1",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "firewall-alleen-poort-80-443-openbaar",
+    "title": "Firewall alleen poort 80/443 openbaar",
+    "titleEn": "Firewall alleen poort 80/443 openbaar",
+    "categories": [
+      "infrastructuur-servers",
+      "apps-op-vps"
+    ],
+    "topic": "tz-w2-infra-firewall-alleen-poort-80-443-openbaar-1cfb6",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "swap-en-oom-killer-bij-geheugenlekken",
+    "title": "Swap en OOM-killer bij geheugenlekken",
+    "titleEn": "Swap and OOM-killer at geheugenlekken",
+    "categories": [
+      "infrastructuur-servers",
+      "apps-op-vps"
+    ],
+    "topic": "tz-w2-infra-swap-en-oom-killer-bij-geheugenlekken-3efb1",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "node-version-managers-nvm-in-productie",
+    "title": "Node version managers (nvm) in productie",
+    "titleEn": "Node version managers (nvm) in production",
+    "categories": [
+      "infrastructuur-servers",
+      "apps-op-vps"
+    ],
+    "topic": "tz-w2-infra-node-version-managers-nvm-in-productie-bb69b",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "python-virtualenv-en-dependency-pinning",
+    "title": "Python virtualenv en dependency pinning",
+    "titleEn": "Python virtualenv and dependency pinning",
+    "categories": [
+      "infrastructuur-servers",
+      "apps-op-vps"
+    ],
+    "topic": "tz-w2-infra-python-virtualenv-en-dependency-pinning-aee1f",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "node-js-app-draaien-met-systemd-of-pm2-checklist-voor-mkb",
+    "title": "Node.js-app draaien met systemd of PM2: checklist voor MKB",
+    "titleEn": "Node.js-app draaien with systemd of PM2: SMB checklist",
+    "categories": [
+      "infrastructuur-servers",
+      "apps-op-vps"
+    ],
+    "topic": "tz-w2-infra-node-js-app-draaien-met-systemd-of-pm2-c-2a1cb",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "python-fastapi-django-deployen-op-een-vps-veelgemaakte-fouten",
+    "title": "Python (FastAPI/Django) deployen op een VPS: veelgemaakte fouten",
+    "titleEn": "Python (FastAPI/Django) deployen on a VPS: common mistakes",
+    "categories": [
+      "infrastructuur-servers",
+      "apps-op-vps"
+    ],
+    "topic": "tz-w2-infra-python-fastapi-django-deployen-op-een-vp-779a3",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "git-based-deploy-pull-build-restart-stappenplan-voor-beginners",
+    "title": "Git-based deploy: pull, build, restart: stappenplan voor beginners",
+    "titleEn": "Git-based deploy: pull, build, restart: beginner guide",
+    "categories": [
+      "infrastructuur-servers",
+      "apps-op-vps"
+    ],
+    "topic": "tz-w2-infra-git-based-deploy-pull-build-restart-stap-e96f9",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "omgevingsvariabelen-veilig-beheren-op-de-server-tips-van-triplezero-it",
+    "title": "Omgevingsvariabelen veilig beheren op de server — tips van TripleZero iT",
+    "titleEn": "Omgevingsvariabelen safely beheren on the server — tips from TripleZero iT",
+    "categories": [
+      "infrastructuur-servers",
+      "apps-op-vps"
+    ],
+    "topic": "tz-w2-infra-omgevingsvariabelen-veilig-beheren-op-de-1b8d7",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "process-managers-pm2-versus-systemd-in-productie",
+    "title": "Process managers: PM2 versus systemd in productie",
+    "titleEn": "Process managers: PM2 vs systemd in production",
+    "categories": [
+      "infrastructuur-servers",
+      "apps-op-vps"
+    ],
+    "topic": "tz-w2-infra-process-managers-pm2-versus-systemd-in-p-d5c24",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "zero-downtime-restart-van-node-processen-wat-je-voor-livegang-checkt",
+    "title": "Zero-downtime restart van Node-processen: wat je vóór livegang checkt",
+    "titleEn": "Zero-downtime restart of Node-processen: pre-go-live checks",
+    "categories": [
+      "infrastructuur-servers",
+      "apps-op-vps"
+    ],
+    "topic": "tz-w2-infra-zero-downtime-restart-van-node-processen-23272",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "wireguard-vpn-opzetten-op-je-vps",
+    "title": "WireGuard VPN opzetten op je VPS",
+    "titleEn": "WireGuard VPN set up on your VPS",
+    "categories": [
+      "infrastructuur-servers",
+      "vpn-netwerk"
+    ],
+    "topic": "tz-w2-infra-wireguard-vpn-opzetten-op-je-vps-0bffc",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "ufw-basisregels-voor-webservers",
+    "title": "UFW basisregels voor webservers",
+    "titleEn": "UFW basisregels for webservers",
+    "categories": [
+      "infrastructuur-servers",
+      "vpn-netwerk"
+    ],
+    "topic": "tz-w2-infra-ufw-basisregels-voor-webservers-b2e7c",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "firewalld-zones-begrijpen",
+    "title": "firewalld zones begrijpen",
+    "titleEn": "Firewalld zones begrijpen",
+    "categories": [
+      "infrastructuur-servers",
+      "vpn-netwerk"
+    ],
+    "topic": "tz-w2-infra-firewalld-zones-begrijpen-34047",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "fail2ban-jails-tunen-voor-ssh-en-webmail",
+    "title": "Fail2ban jails tunen voor SSH en webmail",
+    "titleEn": "Fail2ban jails tunen for SSH and webmail",
+    "categories": [
+      "infrastructuur-servers",
+      "vpn-netwerk"
+    ],
+    "topic": "tz-w2-infra-fail2ban-jails-tunen-voor-ssh-en-webmail-1e8aa",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "ssh-hardening-keys-allowusers-maxauthtries",
+    "title": "SSH hardening: keys, AllowUsers, MaxAuthTries",
+    "titleEn": "SSH hardening: keys, AllowUsers, MaxAuthTries",
+    "categories": [
+      "infrastructuur-servers",
+      "vpn-netwerk"
+    ],
+    "topic": "tz-w2-infra-ssh-hardening-keys-allowusers-maxauthtri-cb210",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "poortscanning-detecteren-en-reageren",
+    "title": "Poortscanning detecteren en reageren",
+    "titleEn": "Poortscanning detecteren and reageren",
+    "categories": [
+      "infrastructuur-servers",
+      "vpn-netwerk"
+    ],
+    "topic": "tz-w2-infra-poortscanning-detecteren-en-reageren-29b3d",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "private-networking-tussen-servers",
+    "title": "Private networking tussen servers",
+    "titleEn": "Private networking tussen servers",
+    "categories": [
+      "infrastructuur-servers",
+      "vpn-netwerk"
+    ],
+    "topic": "tz-w2-infra-private-networking-tussen-servers-f965e",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "split-tunnel-vpn-voor-remote-teams",
+    "title": "Split-tunnel VPN voor remote teams",
+    "titleEn": "Split-tunnel VPN for remote teams",
+    "categories": [
+      "infrastructuur-servers",
+      "vpn-netwerk"
+    ],
+    "topic": "tz-w2-infra-split-tunnel-vpn-voor-remote-teams-2176d",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "dns-lekken-via-vpn-voorkomen",
+    "title": "DNS lekken via VPN voorkomen",
+    "titleEn": "DNS lekken via VPN voorkomen",
+    "categories": [
+      "infrastructuur-servers",
+      "vpn-netwerk"
+    ],
+    "topic": "tz-w2-infra-dns-lekken-via-vpn-voorkomen-46e62",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "rate-limiting-op-ssh-met-fail2ban",
+    "title": "Rate limiting op SSH met Fail2ban",
+    "titleEn": "Rate limiting on SSH with Fail2ban",
+    "categories": [
+      "infrastructuur-servers",
+      "vpn-netwerk"
+    ],
+    "topic": "tz-w2-infra-rate-limiting-op-ssh-met-fail2ban-2b343",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "nftables-versus-iptables-korte-intro",
+    "title": "nftables versus iptables: korte intro",
+    "titleEn": "Nftables vs iptables: korte intro",
+    "categories": [
+      "infrastructuur-servers",
+      "vpn-netwerk"
+    ],
+    "topic": "tz-w2-infra-nftables-versus-iptables-korte-intro-f10de",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "geo-blocking-wanneer-wel-of-niet",
+    "title": "Geo-blocking: wanneer wel of niet",
+    "titleEn": "Geo-blocking: when wel of niet",
+    "categories": [
+      "infrastructuur-servers",
+      "vpn-netwerk"
+    ],
+    "topic": "tz-w2-infra-geo-blocking-wanneer-wel-of-niet-e5c89",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "openvpn-versus-wireguard-voor-mkb",
+    "title": "OpenVPN versus WireGuard voor MKB",
+    "titleEn": "OpenVPN vs WireGuard for MKB",
+    "categories": [
+      "infrastructuur-servers",
+      "vpn-netwerk"
+    ],
+    "topic": "tz-w2-infra-openvpn-versus-wireguard-voor-mkb-f6b6d",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "bastion-host-jump-host-patroon",
+    "title": "Bastion host / jump host patroon",
+    "titleEn": "Bastion host / jump host patroon",
+    "categories": [
+      "infrastructuur-servers",
+      "vpn-netwerk"
+    ],
+    "topic": "tz-w2-infra-bastion-host-jump-host-patroon-782d5",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "netwerkdiagram-documenteren-voor-support",
+    "title": "Netwerkdiagram documenteren voor support",
+    "titleEn": "Netwerkdiagram documenteren for support",
+    "categories": [
+      "infrastructuur-servers",
+      "vpn-netwerk"
+    ],
+    "topic": "tz-w2-infra-netwerkdiagram-documenteren-voor-support-8b7f2",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "incident-verdachte-outbound-connecties",
+    "title": "Incident: verdachte outbound connecties",
+    "titleEn": "Incident: verdachte outbound connecties",
+    "categories": [
+      "infrastructuur-servers",
+      "vpn-netwerk"
+    ],
+    "topic": "tz-w2-infra-incident-verdachte-outbound-connecties-9260d",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "wireguard-vpn-opzetten-op-je-vps-checklist-voor-mkb",
+    "title": "WireGuard VPN opzetten op je VPS: checklist voor MKB",
+    "titleEn": "WireGuard VPN set up on your VPS: SMB checklist",
+    "categories": [
+      "infrastructuur-servers",
+      "vpn-netwerk"
+    ],
+    "topic": "tz-w2-infra-wireguard-vpn-opzetten-op-je-vps-checkli-74031",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "ufw-basisregels-voor-webservers-veelgemaakte-fouten",
+    "title": "UFW basisregels voor webservers: veelgemaakte fouten",
+    "titleEn": "UFW basisregels for webservers: common mistakes",
+    "categories": [
+      "infrastructuur-servers",
+      "vpn-netwerk"
+    ],
+    "topic": "tz-w2-infra-ufw-basisregels-voor-webservers-veelgema-71f46",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "firewalld-zones-begrijpen-stappenplan-voor-beginners",
+    "title": "firewalld zones begrijpen: stappenplan voor beginners",
+    "titleEn": "Firewalld zones begrijpen: beginner guide",
+    "categories": [
+      "infrastructuur-servers",
+      "vpn-netwerk"
+    ],
+    "topic": "tz-w2-infra-firewalld-zones-begrijpen-stappenplan-vo-25e5a",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "fail2ban-jails-tunen-voor-ssh-en-webmail-tips-van-triplezero-it",
+    "title": "Fail2ban jails tunen voor SSH en webmail — tips van TripleZero iT",
+    "titleEn": "Fail2ban jails tunen for SSH and webmail — tips from TripleZero iT",
+    "categories": [
+      "infrastructuur-servers",
+      "vpn-netwerk"
+    ],
+    "topic": "tz-w2-infra-fail2ban-jails-tunen-voor-ssh-en-webmail-168ca",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "ssh-hardening-keys-allowusers-maxauthtries-in-productie",
+    "title": "SSH hardening: keys, AllowUsers, MaxAuthTries in productie",
+    "titleEn": "SSH hardening: keys, AllowUsers, MaxAuthTries in production",
+    "categories": [
+      "infrastructuur-servers",
+      "vpn-netwerk"
+    ],
+    "topic": "tz-w2-infra-ssh-hardening-keys-allowusers-maxauthtri-3ffc5",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "poortscanning-detecteren-en-reageren-wat-je-voor-livegang-checkt",
+    "title": "Poortscanning detecteren en reageren: wat je vóór livegang checkt",
+    "titleEn": "Poortscanning detecteren and reageren: pre-go-live checks",
+    "categories": [
+      "infrastructuur-servers",
+      "vpn-netwerk"
+    ],
+    "topic": "tz-w2-infra-poortscanning-detecteren-en-reageren-wat-cd511",
+    "module": "infra",
+    "rewrite": false
+  },
+  {
+    "slug": "http-401-unauthorized-oorzaken-en-fixes",
+    "title": "HTTP 401 Unauthorized: oorzaken en fixes",
+    "titleEn": "HTTP 401 Unauthorized: oorzaken and fixes",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "http-foutcodes"
+    ],
+    "topic": "tz-w2-ts-http-401-unauthorized-oorzaken-en-fixes-fd8a8",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "http-403-forbidden-op-je-website-oplossen",
+    "title": "HTTP 403 Forbidden op je website oplossen",
+    "titleEn": "HTTP 403 Forbidden on your website fix",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "http-foutcodes"
+    ],
+    "topic": "tz-w2-ts-http-403-forbidden-op-je-website-oplosse-f99db",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "http-404-echte-missers-versus-soft-404",
+    "title": "HTTP 404: echte missers versus soft-404",
+    "titleEn": "HTTP 404: echte missers vs soft-404",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "http-foutcodes"
+    ],
+    "topic": "tz-w2-ts-http-404-echte-missers-versus-soft-404-d1abf",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "http-500-internal-server-error-stapsgewijs",
+    "title": "HTTP 500 Internal Server Error stapsgewijs",
+    "titleEn": "HTTP 500 Internal Server Error stapsgewijs",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "http-foutcodes"
+    ],
+    "topic": "tz-w2-ts-http-500-internal-server-error-stapsgewi-134b1",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "http-502-bad-gateway-diagnosticeren",
+    "title": "HTTP 502 Bad Gateway diagnosticeren",
+    "titleEn": "HTTP 502 Bad Gateway diagnosticeren",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "http-foutcodes"
+    ],
+    "topic": "tz-w2-ts-http-502-bad-gateway-diagnosticeren-7440f",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "http-504-gateway-timeout-waar-kijk-je",
+    "title": "HTTP 504 Gateway Timeout: waar kijk je?",
+    "titleEn": "HTTP 504 Gateway Timeout: waar kijk your?",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "http-foutcodes"
+    ],
+    "topic": "tz-w2-ts-http-504-gateway-timeout-waar-kijk-je-25ab9",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "http-429-too-many-requests-en-rate-limits",
+    "title": "HTTP 429 Too Many Requests en rate limits",
+    "titleEn": "HTTP 429 Too Many Requests and rate limits",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "http-foutcodes"
+    ],
+    "topic": "tz-w2-ts-http-429-too-many-requests-en-rate-limit-c615b",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "mixed-content-na-https-migratie",
+    "title": "Mixed content na HTTPS-migratie",
+    "titleEn": "Mixed content na HTTPS-migratie",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "http-foutcodes"
+    ],
+    "topic": "tz-w2-ts-mixed-content-na-https-migratie-a073f",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "redirect-loops-err-too-many-redirects",
+    "title": "Redirect loops (ERR_TOO_MANY_REDIRECTS)",
+    "titleEn": "Redirect loops (ERR_TOO_MANY_REDIRECTS)",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "http-foutcodes"
+    ],
+    "topic": "tz-w2-ts-redirect-loops-err-too-many-redirects-1a694",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "403-na-verhuizing-rechten-en-ownership",
+    "title": "403 na verhuizing: rechten en ownership",
+    "titleEn": "403 na verhuizing: rechten and ownership",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "http-foutcodes"
+    ],
+    "topic": "tz-w2-ts-403-na-verhuizing-rechten-en-ownership-ddeb9",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "500-na-plugin-update-recovery-zonder-paniek",
+    "title": "500 na plugin-update: recovery zonder paniek",
+    "titleEn": "500 na plugin-update: recovery without paniek",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "http-foutcodes"
+    ],
+    "topic": "tz-w2-ts-500-na-plugin-update-recovery-zonder-pan-d2aa0",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "502-achter-reverse-proxy-of-cdn",
+    "title": "502 achter reverse proxy of CDN",
+    "titleEn": "502 achter reverse proxy of CDN",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "http-foutcodes"
+    ],
+    "topic": "tz-w2-ts-502-achter-reverse-proxy-of-cdn-645db",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "custom-error-pages-die-helpen-i-p-v-verwarren",
+    "title": "Custom error pages die helpen i.p.v. verwarren",
+    "titleEn": "Custom error pages die helpen i.p.v. verwarren",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "http-foutcodes"
+    ],
+    "topic": "tz-w2-ts-custom-error-pages-die-helpen-i-p-v-verw-1feca",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "logs-lezen-access-log-versus-error-log",
+    "title": "Logs lezen: access_log versus error_log",
+    "titleEn": "Logs lezen: access_log vs error_log",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "http-foutcodes"
+    ],
+    "topic": "tz-w2-ts-logs-lezen-access-log-versus-error-log-824f6",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "php-fatal-errors-omzetten-naar-bruikbare-fixes",
+    "title": "PHP fatal errors omzetten naar bruikbare fixes",
+    "titleEn": "PHP fatal errors omzetten to bruikbare fixes",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "http-foutcodes"
+    ],
+    "topic": "tz-w2-ts-php-fatal-errors-omzetten-naar-bruikbare-22efa",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "statuscodes-meten-in-monitoring",
+    "title": "Statuscodes meten in monitoring",
+    "titleEn": "Statuscodes meten in monitoring",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "http-foutcodes"
+    ],
+    "topic": "tz-w2-ts-statuscodes-meten-in-monitoring-48a03",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "http-401-unauthorized-oorzaken-en-fixes-checklist-voor-mkb",
+    "title": "HTTP 401 Unauthorized: oorzaken en fixes: checklist voor MKB",
+    "titleEn": "HTTP 401 Unauthorized: oorzaken and fixes: SMB checklist",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "http-foutcodes"
+    ],
+    "topic": "tz-w2-ts-http-401-unauthorized-oorzaken-en-fixes-4e16f",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "http-403-forbidden-op-je-website-oplossen-veelgemaakte-fouten",
+    "title": "HTTP 403 Forbidden op je website oplossen: veelgemaakte fouten",
+    "titleEn": "HTTP 403 Forbidden on your website fix: common mistakes",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "http-foutcodes"
+    ],
+    "topic": "tz-w2-ts-http-403-forbidden-op-je-website-oplosse-6d9e2",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "http-404-echte-missers-versus-soft-404-stappenplan-voor-beginners",
+    "title": "HTTP 404: echte missers versus soft-404: stappenplan voor beginners",
+    "titleEn": "HTTP 404: echte missers vs soft-404: beginner guide",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "http-foutcodes"
+    ],
+    "topic": "tz-w2-ts-http-404-echte-missers-versus-soft-404-s-d529d",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "http-500-internal-server-error-stapsgewijs-tips-van-triplezero-it",
+    "title": "HTTP 500 Internal Server Error stapsgewijs — tips van TripleZero iT",
+    "titleEn": "HTTP 500 Internal Server Error stapsgewijs — tips from TripleZero iT",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "http-foutcodes"
+    ],
+    "topic": "tz-w2-ts-http-500-internal-server-error-stapsgewi-4de11",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "blacklist-controleren-en-delisten",
+    "title": "Blacklist: controleren en delisten",
+    "titleEn": "Blacklist: controleren and delisten",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "mail-aflevering-fouten"
+    ],
+    "topic": "tz-w2-ts-blacklist-controleren-en-delisten-7b38b",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "greylisting-uitgelegd-voor-ondernemers",
+    "title": "Greylisting uitgelegd voor ondernemers",
+    "titleEn": "Greylisting explained for ondernemers",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "mail-aflevering-fouten"
+    ],
+    "topic": "tz-w2-ts-greylisting-uitgelegd-voor-ondernemers-2dfac",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "bouncecodes-lezen-4xx-versus-5xx",
+    "title": "Bouncecodes lezen (4xx versus 5xx)",
+    "titleEn": "Bouncecodes lezen (4xx vs 5xx)",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "mail-aflevering-fouten"
+    ],
+    "topic": "tz-w2-ts-bouncecodes-lezen-4xx-versus-5xx-e851b",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "smtp-poorten-25-465-en-587-wat-wanneer",
+    "title": "SMTP poorten 25, 465 en 587: wat wanneer",
+    "titleEn": "SMTP poorten 25, 465 and 587: wat when",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "mail-aflevering-fouten"
+    ],
+    "topic": "tz-w2-ts-smtp-poorten-25-465-en-587-wat-wanneer-d172e",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "outbound-mail-rate-limits-begrijpen",
+    "title": "Outbound mail rate limits begrijpen",
+    "titleEn": "Outbound mail rate limits begrijpen",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "mail-aflevering-fouten"
+    ],
+    "topic": "tz-w2-ts-outbound-mail-rate-limits-begrijpen-8d039",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "spf-flattening-wanneer-je-te-veel-lookups-hebt",
+    "title": "SPF flattening wanneer je te veel lookups hebt",
+    "titleEn": "SPF flattening when your te veel lookups hebt",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "mail-aflevering-fouten"
+    ],
+    "topic": "tz-w2-ts-spf-flattening-wanneer-je-te-veel-lookup-9f755",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "dmarc-rua-ruf-rapporten-interpreteren",
+    "title": "DMARC RUA/RUF-rapporten interpreteren",
+    "titleEn": "DMARC RUA/RUF-rapporten interpreteren",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "mail-aflevering-fouten"
+    ],
+    "topic": "tz-w2-ts-dmarc-rua-ruf-rapporten-interpreteren-5bceb",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "bimi-voor-merken-voorwaarden-en-dns",
+    "title": "BIMI voor merken: voorwaarden en DNS",
+    "titleEn": "BIMI for merken: voorwaarden and DNS",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "mail-aflevering-fouten"
+    ],
+    "topic": "tz-w2-ts-bimi-voor-merken-voorwaarden-en-dns-37e87",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "arc-waarom-forwards-spf-kapotmaken",
+    "title": "ARC: waarom forwards SPF kapotmaken",
+    "titleEn": "ARC: why forwards SPF kapotmaken",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "mail-aflevering-fouten"
+    ],
+    "topic": "tz-w2-ts-arc-waarom-forwards-spf-kapotmaken-d7307",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "gmail-als-client-voor-je-domeinmailbox",
+    "title": "Gmail als client voor je domeinmailbox",
+    "titleEn": "Gmail als client for your domeinmailbox",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "mail-aflevering-fouten"
+    ],
+    "topic": "tz-w2-ts-gmail-als-client-voor-je-domeinmailbox-98ab8",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "imap-migratie-tussen-hosts-conceptueel",
+    "title": "IMAP-migratie tussen hosts (conceptueel)",
+    "titleEn": "IMAP-migratie tussen hosts (conceptueel)",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "mail-aflevering-fouten"
+    ],
+    "topic": "tz-w2-ts-imap-migratie-tussen-hosts-conceptueel-08481",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "catch-all-risicos-en-alternatieven",
+    "title": "Catch-all: risico’s en alternatieven",
+    "titleEn": "Catch-all: risico’s and alternatieven",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "mail-aflevering-fouten"
+    ],
+    "topic": "tz-w2-ts-catch-all-risicos-en-alternatieven-189c8",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "shared-mailbox-versus-alias-versus-forward",
+    "title": "Shared mailbox versus alias versus forward",
+    "titleEn": "Shared mailbox vs alias vs forward",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "mail-aflevering-fouten"
+    ],
+    "topic": "tz-w2-ts-shared-mailbox-versus-alias-versus-forwa-a5dee",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "webmail-filters-die-mail-kwijtraken",
+    "title": "Webmail filters die mail ‘kwijtraken’",
+    "titleEn": "Webmail filters die mail ‘kwijtraken’",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "mail-aflevering-fouten"
+    ],
+    "topic": "tz-w2-ts-webmail-filters-die-mail-kwijtraken-e5100",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "autodiscover-troubleshooting",
+    "title": "Autodiscover troubleshooting",
+    "titleEn": "Autodiscover troubleshooting",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "mail-aflevering-fouten"
+    ],
+    "topic": "tz-w2-ts-autodiscover-troubleshooting-9dbb6",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "submission-versus-open-relay-het-verschil",
+    "title": "Submission versus open relay: het verschil",
+    "titleEn": "Submission vs open relay: the verschil",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "mail-aflevering-fouten"
+    ],
+    "topic": "tz-w2-ts-submission-versus-open-relay-het-verschi-d5284",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "blacklist-controleren-en-delisten-checklist-voor-mkb",
+    "title": "Blacklist: controleren en delisten: checklist voor MKB",
+    "titleEn": "Blacklist: controleren and delisten: SMB checklist",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "mail-aflevering-fouten"
+    ],
+    "topic": "tz-w2-ts-blacklist-controleren-en-delisten-checkl-34158",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "greylisting-uitgelegd-voor-ondernemers-veelgemaakte-fouten",
+    "title": "Greylisting uitgelegd voor ondernemers: veelgemaakte fouten",
+    "titleEn": "Greylisting explained for ondernemers: common mistakes",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "mail-aflevering-fouten"
+    ],
+    "topic": "tz-w2-ts-greylisting-uitgelegd-voor-ondernemers-v-8e48d",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "bouncecodes-lezen-4xx-versus-5xx-stappenplan-voor-beginners",
+    "title": "Bouncecodes lezen (4xx versus 5xx): stappenplan voor beginners",
+    "titleEn": "Bouncecodes lezen (4xx vs 5xx): beginner guide",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "mail-aflevering-fouten"
+    ],
+    "topic": "tz-w2-ts-bouncecodes-lezen-4xx-versus-5xx-stappen-9646b",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "smtp-poorten-25-465-en-587-wat-wanneer-tips-van-triplezero-it",
+    "title": "SMTP poorten 25, 465 en 587: wat wanneer — tips van TripleZero iT",
+    "titleEn": "SMTP poorten 25, 465 and 587: wat when — tips from TripleZero iT",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "mail-aflevering-fouten"
+    ],
+    "topic": "tz-w2-ts-smtp-poorten-25-465-en-587-wat-wanneer-t-dbdb8",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "dns-propagatie-ttl-en-caches-legen",
+    "title": "DNS propagatie: TTL en caches legen",
+    "titleEn": "DNS propagatie: TTL and caches legen",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "dns-ssl-fouten"
+    ],
+    "topic": "tz-w2-ts-dns-propagatie-ttl-en-caches-legen-1d75f",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "rdns-ptr-records-voor-mailservers",
+    "title": "rDNS / PTR records voor mailservers",
+    "titleEn": "RDNS / PTR records for mailservers",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "dns-ssl-fouten"
+    ],
+    "topic": "tz-w2-ts-rdns-ptr-records-voor-mailservers-eab2c",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "dnssec-troubleshooting-bij-validatiefouten",
+    "title": "DNSSEC troubleshooting bij validatiefouten",
+    "titleEn": "DNSSEC troubleshooting at validatiefouten",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "dns-ssl-fouten"
+    ],
+    "topic": "tz-w2-ts-dnssec-troubleshooting-bij-validatiefout-8d8b8",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "caa-policies-strakker-zetten",
+    "title": "CAA-policies strakker zetten",
+    "titleEn": "CAA-policies strakker zetten",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "dns-ssl-fouten"
+    ],
+    "topic": "tz-w2-ts-caa-policies-strakker-zetten-01b10",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "ssl-fout-net-err-cert-common-name-invalid",
+    "title": "SSL-fout: NET::ERR_CERT_COMMON_NAME_INVALID",
+    "titleEn": "SSL-fout: NET::ERR_CERT_COMMON_NAME_INVALID",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "dns-ssl-fouten"
+    ],
+    "topic": "tz-w2-ts-ssl-fout-net-err-cert-common-name-invali-ffa6c",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "lets-encrypt-authorization-failed-oplossen",
+    "title": "Let’s Encrypt authorization failed oplossen",
+    "titleEn": "Let’s Encrypt authorization failed fix",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "dns-ssl-fouten"
+    ],
+    "topic": "tz-w2-ts-lets-encrypt-authorization-failed-oploss-2d252",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "hsts-preload-wanneer-je-er-klaar-voor-bent",
+    "title": "HSTS preload: wanneer je er klaar voor bent",
+    "titleEn": "HSTS preload: when your er klaar for bent",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "dns-ssl-fouten"
+    ],
+    "topic": "tz-w2-ts-hsts-preload-wanneer-je-er-klaar-voor-be-75e1b",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "ev-ov-versus-dv-certificaten",
+    "title": "EV/OV versus DV certificaten",
+    "titleEn": "EV/OV vs DV certificaten",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "dns-ssl-fouten"
+    ],
+    "topic": "tz-w2-ts-ev-ov-versus-dv-certificaten-94f86",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "csr-genereren-met-openssl",
+    "title": "CSR genereren met OpenSSL",
+    "titleEn": "CSR genereren with OpenSSL",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "dns-ssl-fouten"
+    ],
+    "topic": "tz-w2-ts-csr-genereren-met-openssl-6a119",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "sni-en-meerdere-certificaten-op-een-ip",
+    "title": "SNI en meerdere certificaten op één IP",
+    "titleEn": "SNI and meerdere certificaten on één IP",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "dns-ssl-fouten"
+    ],
+    "topic": "tz-w2-ts-sni-en-meerdere-certificaten-op-een-ip-1b0f7",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "wildcard-ssl-dns-01-validatie",
+    "title": "Wildcard SSL: DNS-01 validatie",
+    "titleEn": "Wildcard SSL: DNS-01 validatie",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "dns-ssl-fouten"
+    ],
+    "topic": "tz-w2-ts-wildcard-ssl-dns-01-validatie-f8868",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "certificate-chain-incomplete-fixen",
+    "title": "Certificate chain incomplete fixen",
+    "titleEn": "Certificate chain incomplete fixen",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "dns-ssl-fouten"
+    ],
+    "topic": "tz-w2-ts-certificate-chain-incomplete-fixen-2e6a3",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "tls-versies-en-cipher-suites-updaten",
+    "title": "TLS-versies en cipher suites updaten",
+    "titleEn": "TLS-versies and cipher suites updaten",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "dns-ssl-fouten"
+    ],
+    "topic": "tz-w2-ts-tls-versies-en-cipher-suites-updaten-295ef",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "dns-alleen-versus-proxied-cloudflare-conflicten",
+    "title": "DNS alleen versus proxied (Cloudflare) conflicten",
+    "titleEn": "DNS alleen vs proxied (Cloudflare) conflicten",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "dns-ssl-fouten"
+    ],
+    "topic": "tz-w2-ts-dns-alleen-versus-proxied-cloudflare-con-46153",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "split-horizon-dns-valkuilen",
+    "title": "Split-horizon DNS: valkuilen",
+    "titleEn": "Split-horizon DNS: valkuilen",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "dns-ssl-fouten"
+    ],
+    "topic": "tz-w2-ts-split-horizon-dns-valkuilen-c1d9e",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "nameserver-wijziging-checklist",
+    "title": "Nameserver-wijziging checklist",
+    "titleEn": "Nameserver-wijziging checklist",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "dns-ssl-fouten"
+    ],
+    "topic": "tz-w2-ts-nameserver-wijziging-checklist-02b46",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "dns-propagatie-ttl-en-caches-legen-checklist-voor-mkb",
+    "title": "DNS propagatie: TTL en caches legen: checklist voor MKB",
+    "titleEn": "DNS propagatie: TTL and caches legen: SMB checklist",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "dns-ssl-fouten"
+    ],
+    "topic": "tz-w2-ts-dns-propagatie-ttl-en-caches-legen-check-19894",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "rdns-ptr-records-voor-mailservers-veelgemaakte-fouten",
+    "title": "rDNS / PTR records voor mailservers: veelgemaakte fouten",
+    "titleEn": "RDNS / PTR records for mailservers: common mistakes",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "dns-ssl-fouten"
+    ],
+    "topic": "tz-w2-ts-rdns-ptr-records-voor-mailservers-veelge-e34a8",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "dnssec-troubleshooting-bij-validatiefouten-stappenplan-voor-beginners",
+    "title": "DNSSEC troubleshooting bij validatiefouten: stappenplan voor beginners",
+    "titleEn": "DNSSEC troubleshooting at validatiefouten: beginner guide",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "dns-ssl-fouten"
+    ],
+    "topic": "tz-w2-ts-dnssec-troubleshooting-bij-validatiefout-5ae78",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "caa-policies-strakker-zetten-tips-van-triplezero-it",
+    "title": "CAA-policies strakker zetten — tips van TripleZero iT",
+    "titleEn": "CAA-policies strakker zetten — tips from TripleZero iT",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "dns-ssl-fouten"
+    ],
+    "topic": "tz-w2-ts-caa-policies-strakker-zetten-tips-van-tr-5250a",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "databaseconnectie-geweigerd-checklist",
+    "title": "Databaseconnectie geweigerd: checklist",
+    "titleEn": "Databaseconnectie geweigerd: checklist",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "database-fouten"
+    ],
+    "topic": "tz-w2-ts-databaseconnectie-geweigerd-checklist-4737a",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "myisam-naar-innodb-converteren",
+    "title": "MyISAM naar InnoDB converteren",
+    "titleEn": "MyISAM to InnoDB converteren",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "database-fouten"
+    ],
+    "topic": "tz-w2-ts-myisam-naar-innodb-converteren-d2815",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "export-en-import-van-grote-databases",
+    "title": "Export en import van grote databases",
+    "titleEn": "Export and import of grote databases",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "database-fouten"
+    ],
+    "topic": "tz-w2-ts-export-en-import-van-grote-databases-b6b52",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "table-corruptie-repair-versus-restore",
+    "title": "Table corruptie: repair versus restore",
+    "titleEn": "Table corruptie: repair vs restore",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "database-fouten"
+    ],
+    "topic": "tz-w2-ts-table-corruptie-repair-versus-restore-c7834",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "max-connections-bereikt-wat-nu",
+    "title": "Max connections bereikt: wat nu?",
+    "titleEn": "Max connections bereikt: wat nu?",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "database-fouten"
+    ],
+    "topic": "tz-w2-ts-max-connections-bereikt-wat-nu-ebe4a",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "slow-query-log-inschakelen-en-lezen",
+    "title": "Slow query log inschakelen en lezen",
+    "titleEn": "Slow query log inschakelen and lezen",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "database-fouten"
+    ],
+    "topic": "tz-w2-ts-slow-query-log-inschakelen-en-lezen-0b69a",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "charset-collation-mismatches-utf8mb4",
+    "title": "Charset/collation mismatches (utf8mb4)",
+    "titleEn": "Charset/collation mismatches (utf8mb4)",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "database-fouten"
+    ],
+    "topic": "tz-w2-ts-charset-collation-mismatches-utf8mb4-be6c6",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "deadlocks-in-webshops-herkennen",
+    "title": "Deadlocks in webshops herkennen",
+    "titleEn": "Deadlocks in webshops herkennen",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "database-fouten"
+    ],
+    "topic": "tz-w2-ts-deadlocks-in-webshops-herkennen-4fe5b",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "backup-van-db-los-van-files",
+    "title": "Backup van DB los van files",
+    "titleEn": "Backup of DB los of files",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "database-fouten"
+    ],
+    "topic": "tz-w2-ts-backup-van-db-los-van-files-3008b",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "replica-lag-conceptueel-bij-groei",
+    "title": "Replica lag (conceptueel) bij groei",
+    "titleEn": "Replica lag (conceptueel) at groei",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "database-fouten"
+    ],
+    "topic": "tz-w2-ts-replica-lag-conceptueel-bij-groei-47b73",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "plesk-directadmin-db-gebruikersrechten",
+    "title": "Plesk/DirectAdmin DB-gebruikersrechten",
+    "titleEn": "Plesk/DirectAdmin DB-gebruikersrechten",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "database-fouten"
+    ],
+    "topic": "tz-w2-ts-plesk-directadmin-db-gebruikersrechten-cf516",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "sql-dump-veilig-overzetten-via-ssh",
+    "title": "SQL-dump veilig overzetten via SSH",
+    "titleEn": "SQL-dump safely overzetten via SSH",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "database-fouten"
+    ],
+    "topic": "tz-w2-ts-sql-dump-veilig-overzetten-via-ssh-52091",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "schijf-vol-door-binary-logs",
+    "title": "Schijf vol door binary logs",
+    "titleEn": "Schijf vol door binary logs",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "database-fouten"
+    ],
+    "topic": "tz-w2-ts-schijf-vol-door-binary-logs-dae39",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "indexen-die-writes-vertragen",
+    "title": "Indexen die writes vertragen",
+    "titleEn": "Indexen die writes vertragen",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "database-fouten"
+    ],
+    "topic": "tz-w2-ts-indexen-die-writes-vertragen-ae098",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "staging-db-anonimiseren-voor-delen",
+    "title": "Staging-DB anonimiseren vóór delen",
+    "titleEn": "Staging-DB anonimiseren vóór delen",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "database-fouten"
+    ],
+    "topic": "tz-w2-ts-staging-db-anonimiseren-voor-delen-43c3a",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "mariadb-versus-mysql-praktische-verschillen",
+    "title": "MariaDB versus MySQL: praktische verschillen",
+    "titleEn": "MariaDB vs MySQL: praktische verschillen",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "database-fouten"
+    ],
+    "topic": "tz-w2-ts-mariadb-versus-mysql-praktische-verschil-63256",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "databaseconnectie-geweigerd-checklist-checklist-voor-mkb",
+    "title": "Databaseconnectie geweigerd: checklist: checklist voor MKB",
+    "titleEn": "Databaseconnectie geweigerd: checklist: SMB checklist",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "database-fouten"
+    ],
+    "topic": "tz-w2-ts-databaseconnectie-geweigerd-checklist-ch-5141f",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "myisam-naar-innodb-converteren-veelgemaakte-fouten",
+    "title": "MyISAM naar InnoDB converteren: veelgemaakte fouten",
+    "titleEn": "MyISAM to InnoDB converteren: common mistakes",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "database-fouten"
+    ],
+    "topic": "tz-w2-ts-myisam-naar-innodb-converteren-veelgemaa-7deba",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "export-en-import-van-grote-databases-stappenplan-voor-beginners",
+    "title": "Export en import van grote databases: stappenplan voor beginners",
+    "titleEn": "Export and import of grote databases: beginner guide",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "database-fouten"
+    ],
+    "topic": "tz-w2-ts-export-en-import-van-grote-databases-sta-d2d6c",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "table-corruptie-repair-versus-restore-tips-van-triplezero-it",
+    "title": "Table corruptie: repair versus restore — tips van TripleZero iT",
+    "titleEn": "Table corruptie: repair vs restore — tips from TripleZero iT",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "database-fouten"
+    ],
+    "topic": "tz-w2-ts-table-corruptie-repair-versus-restore-ti-4cb2c",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "traffic-spike-diagnose-in-15-minuten",
+    "title": "Traffic spike: diagnose in 15 minuten",
+    "titleEn": "Traffic spike: diagnose in 15 minuten",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "performance-incidenten"
+    ],
+    "topic": "tz-w2-ts-traffic-spike-diagnose-in-15-minuten-4aab6",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "cpu-100-processen-vinden-top-htop",
+    "title": "CPU 100%: processen vinden (top/htop)",
+    "titleEn": "CPU 100%: processen vinden (top/htop)",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "performance-incidenten"
+    ],
+    "topic": "tz-w2-ts-cpu-100-processen-vinden-top-htop-4ced2",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "schijf-of-inodes-vol-spoedacties",
+    "title": "Schijf of inodes vol: spoedacties",
+    "titleEn": "Schijf of inodes vol: spoedacties",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "performance-incidenten"
+    ],
+    "topic": "tz-w2-ts-schijf-of-inodes-vol-spoedacties-9d7e5",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "trage-ttfb-dns-php-of-database",
+    "title": "Trage TTFB: DNS, PHP of database?",
+    "titleEn": "Trage TTFB: DNS, PHP of database?",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "performance-incidenten"
+    ],
+    "topic": "tz-w2-ts-trage-ttfb-dns-php-of-database-72637",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "redis-object-cache-voor-wordpress",
+    "title": "Redis object cache voor WordPress",
+    "titleEn": "Redis object cache for WordPress",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "performance-incidenten"
+    ],
+    "topic": "tz-w2-ts-redis-object-cache-voor-wordpress-8b02f",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "memcached-wanneer-redis-niet-past",
+    "title": "Memcached wanneer Redis niet past",
+    "titleEn": "Memcached when Redis niet past",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "performance-incidenten"
+    ],
+    "topic": "tz-w2-ts-memcached-wanneer-redis-niet-past-1360b",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "litespeed-cache-diep-afstellen",
+    "title": "LiteSpeed Cache diep afstellen",
+    "titleEn": "LiteSpeed Cache diep afstellen",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "performance-incidenten"
+    ],
+    "topic": "tz-w2-ts-litespeed-cache-diep-afstellen-ca9d8",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "third-party-scripts-die-de-site-platleggen",
+    "title": "Third-party scripts die de site platleggen",
+    "titleEn": "Third-party scripts die the site platleggen",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "performance-incidenten"
+    ],
+    "topic": "tz-w2-ts-third-party-scripts-die-de-site-platlegg-0c098",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "http-3-en-quic-wanneer-het-helpt",
+    "title": "HTTP/3 en QUIC: wanneer het helpt",
+    "titleEn": "HTTP/3 and QUIC: when the helpt",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "performance-incidenten"
+    ],
+    "topic": "tz-w2-ts-http-3-en-quic-wanneer-het-helpt-b596f",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "hotlink-protection-tegen-bandbreedtediefstal",
+    "title": "Hotlink-protection tegen bandbreedtediefstal",
+    "titleEn": "Hotlink-protection tegen bandbreedtediefstal",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "performance-incidenten"
+    ],
+    "topic": "tz-w2-ts-hotlink-protection-tegen-bandbreedtedief-2ebdc",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "cronjobs-die-s-nachts-alles-vastzetten",
+    "title": "Cronjobs die ’s nachts alles vastzetten",
+    "titleEn": "Cronjobs die ’s nachts alles vastzetten",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "performance-incidenten"
+    ],
+    "topic": "tz-w2-ts-cronjobs-die-s-nachts-alles-vastzetten-c1f4a",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "opcache-en-php-fpm-workers-tunen",
+    "title": "Opcache en PHP-FPM workers tunen",
+    "titleEn": "Opcache and PHP-FPM workers tunen",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "performance-incidenten"
+    ],
+    "topic": "tz-w2-ts-opcache-en-php-fpm-workers-tunen-8a113",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "n-1-queries-in-webshops",
+    "title": "N+1 queries in webshops",
+    "titleEn": "N+1 queries in webshops",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "performance-incidenten"
+    ],
+    "topic": "tz-w2-ts-n-1-queries-in-webshops-250a2",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "cdn-origin-overload-voorkomen",
+    "title": "CDN origin overload voorkomen",
+    "titleEn": "CDN origin overload voorkomen",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "performance-incidenten"
+    ],
+    "topic": "tz-w2-ts-cdn-origin-overload-voorkomen-42ff2",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "incidentcommunicatie-naar-klanten",
+    "title": "Incidentcommunicatie naar klanten",
+    "titleEn": "Incidentcommunicatie to klanten",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "performance-incidenten"
+    ],
+    "topic": "tz-w2-ts-incidentcommunicatie-naar-klanten-25eed",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "post-incident-capacity-planning",
+    "title": "Post-incident: capacity planning",
+    "titleEn": "Post-incident: capacity planning",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "performance-incidenten"
+    ],
+    "topic": "tz-w2-ts-post-incident-capacity-planning-3fad3",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "traffic-spike-diagnose-in-15-minuten-checklist-voor-mkb",
+    "title": "Traffic spike: diagnose in 15 minuten: checklist voor MKB",
+    "titleEn": "Traffic spike: diagnose in 15 minuten: SMB checklist",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "performance-incidenten"
+    ],
+    "topic": "tz-w2-ts-traffic-spike-diagnose-in-15-minuten-che-28236",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "cpu-100-processen-vinden-top-htop-veelgemaakte-fouten",
+    "title": "CPU 100%: processen vinden (top/htop): veelgemaakte fouten",
+    "titleEn": "CPU 100%: processen vinden (top/htop): common mistakes",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "performance-incidenten"
+    ],
+    "topic": "tz-w2-ts-cpu-100-processen-vinden-top-htop-veelge-31ecc",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "schijf-of-inodes-vol-spoedacties-stappenplan-voor-beginners",
+    "title": "Schijf of inodes vol: spoedacties: stappenplan voor beginners",
+    "titleEn": "Schijf of inodes vol: spoedacties: beginner guide",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "performance-incidenten"
+    ],
+    "topic": "tz-w2-ts-schijf-of-inodes-vol-spoedacties-stappen-48098",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "trage-ttfb-dns-php-of-database-tips-van-triplezero-it",
+    "title": "Trage TTFB: DNS, PHP of database? — tips van TripleZero iT",
+    "titleEn": "Trage TTFB: DNS, PHP of database? — tips from TripleZero iT",
+    "categories": [
+      "foutmeldingen-troubleshooting",
+      "performance-incidenten"
+    ],
+    "topic": "tz-w2-ts-trage-ttfb-dns-php-of-database-tips-van-9ca7a",
+    "module": "troubleshooting",
+    "rewrite": false
+  },
+  {
+    "slug": "avg-checklist-voor-je-website-educatief",
+    "title": "AVG-checklist voor je website (educatief)",
+    "titleEn": "AVG-checklist for your website (educatief)",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "avg-website"
+    ],
+    "topic": "tz-w2-priv-avg-checklist-voor-je-website-educatief-6e672",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "dataminimalisatie-in-formulieren",
+    "title": "Dataminimalisatie in formulieren",
+    "titleEn": "Dataminimalisatie in formulieren",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "avg-website"
+    ],
+    "topic": "tz-w2-priv-dataminimalisatie-in-formulieren-c5750",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "verwerkersovereenkomsten-wanneer-relevant",
+    "title": "Verwerkersovereenkomsten: wanneer relevant",
+    "titleEn": "Verwerkersovereenkomsten: when relevant",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "avg-website"
+    ],
+    "topic": "tz-w2-priv-verwerkersovereenkomsten-wanneer-relevan-2d642",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "bewaartermijnen-voor-leads-en-logs",
+    "title": "Bewaartermijnen voor leads en logs",
+    "titleEn": "Bewaartermijnen for leads and logs",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "avg-website"
+    ],
+    "topic": "tz-w2-priv-bewaartermijnen-voor-leads-en-logs-43d0d",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "rechten-van-betrokkenen-inzage-en-verwijdering",
+    "title": "Rechten van betrokkenen: inzage en verwijdering",
+    "titleEn": "Rechten of betrokkenen: inzage and verwijdering",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "avg-website"
+    ],
+    "topic": "tz-w2-priv-rechten-van-betrokkenen-inzage-en-verwij-289c1",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "dpia-wanneer-overwegen-hoog-niveau",
+    "title": "DPIA: wanneer overwegen (hoog niveau)",
+    "titleEn": "DPIA: when overwegen (hoog niveau)",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "avg-website"
+    ],
+    "topic": "tz-w2-priv-dpia-wanneer-overwegen-hoog-niveau-fb46c",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "hosting-buiten-de-eer-risicos-benoemen",
+    "title": "Hosting buiten de EER: risico’s benoemen",
+    "titleEn": "Hosting buiten the EER: risico’s benoemen",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "avg-website"
+    ],
+    "topic": "tz-w2-priv-hosting-buiten-de-eer-risicos-benoemen-bc0f8",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "logging-zonder-onnodige-persoonsgegevens",
+    "title": "Logging zonder onnodige persoonsgegevens",
+    "titleEn": "Logging without onnodige persoonsgegevens",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "avg-website"
+    ],
+    "topic": "tz-w2-priv-logging-zonder-onnodige-persoonsgegevens-3aedc",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "toegang-tot-klantendata-least-privilege",
+    "title": "Toegang tot klantendata: least privilege",
+    "titleEn": "Toegang tot klantendata: least privilege",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "avg-website"
+    ],
+    "topic": "tz-w2-priv-toegang-tot-klantendata-least-privilege-6bc00",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "incidentmelding-procesklaar-maken",
+    "title": "Incidentmelding: procesklaar maken",
+    "titleEn": "Incidentmelding: procesklaar maken",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "avg-website"
+    ],
+    "topic": "tz-w2-priv-incidentmelding-procesklaar-maken-89923",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "nieuwsbrief-aantoonbare-toestemming",
+    "title": "Nieuwsbrief: aantoonbare toestemming",
+    "titleEn": "Nieuwsbrief: aantoonbare toestemming",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "avg-website"
+    ],
+    "topic": "tz-w2-priv-nieuwsbrief-aantoonbare-toestemming-1ee88",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "analytics-zonder-cookies-waar-mogelijk",
+    "title": "Analytics zonder cookies waar mogelijk",
+    "titleEn": "Analytics without cookies waar mogelijk",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "avg-website"
+    ],
+    "topic": "tz-w2-priv-analytics-zonder-cookies-waar-mogelijk-23e2b",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "kindgerichte-sites-extra-aandachtspunten",
+    "title": "Kindgerichte sites: extra aandachtspunten",
+    "titleEn": "Kindgerichte sites: extra aandachtspunten",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "avg-website"
+    ],
+    "topic": "tz-w2-priv-kindgerichte-sites-extra-aandachtspunten-d25fc",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "documenteer-je-verwerkingen-eenvoudig",
+    "title": "Documenteer je verwerkingen eenvoudig",
+    "titleEn": "Documenteer your verwerkingen eenvoudig",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "avg-website"
+    ],
+    "topic": "tz-w2-priv-documenteer-je-verwerkingen-eenvoudig-15bfe",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "avg-checklist-voor-je-website-educatief-checklist-voor-mkb",
+    "title": "AVG-checklist voor je website (educatief): checklist voor MKB",
+    "titleEn": "AVG-checklist for your website (educatief): SMB checklist",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "avg-website"
+    ],
+    "topic": "tz-w2-priv-avg-checklist-voor-je-website-educatief-e1c2a",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "dataminimalisatie-in-formulieren-veelgemaakte-fouten",
+    "title": "Dataminimalisatie in formulieren: veelgemaakte fouten",
+    "titleEn": "Dataminimalisatie in formulieren: common mistakes",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "avg-website"
+    ],
+    "topic": "tz-w2-priv-dataminimalisatie-in-formulieren-veelgem-7486b",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "wanneer-is-een-cookiebanner-verplicht",
+    "title": "Wanneer is een cookiebanner verplicht?",
+    "titleEn": "When is a cookiebanner verplicht?",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "cookies-consent"
+    ],
+    "topic": "tz-w2-priv-wanneer-is-een-cookiebanner-verplicht-136e2",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "functionele-versus-tracking-cookies",
+    "title": "Functionele versus tracking cookies",
+    "titleEn": "Functionele vs tracking cookies",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "cookies-consent"
+    ],
+    "topic": "tz-w2-priv-functionele-versus-tracking-cookies-647aa",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "consent-mode-v2-in-het-kort",
+    "title": "Consent Mode v2 in het kort",
+    "titleEn": "Consent Mode v2 in the kort",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "cookies-consent"
+    ],
+    "topic": "tz-w2-priv-consent-mode-v2-in-het-kort-5399a",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "cookiebanner-die-ux-niet-sloopt",
+    "title": "Cookiebanner die UX niet sloopt",
+    "titleEn": "Cookiebanner die UX niet sloopt",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "cookies-consent"
+    ],
+    "topic": "tz-w2-priv-cookiebanner-die-ux-niet-sloopt-fb90e",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "third-party-tags-pas-na-toestemming",
+    "title": "Third-party tags pas ná toestemming",
+    "titleEn": "Third-party tags pas ná toestemming",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "cookies-consent"
+    ],
+    "topic": "tz-w2-priv-third-party-tags-pas-na-toestemming-0522d",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "local-storage-en-consent",
+    "title": "Local storage en consent",
+    "titleEn": "Local storage and consent",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "cookies-consent"
+    ],
+    "topic": "tz-w2-priv-local-storage-en-consent-c040c",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "cmp-kiezen-criteria-voor-mkb",
+    "title": "CMP kiezen: criteria voor MKB",
+    "titleEn": "CMP choose: criteria for MKB",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "cookies-consent"
+    ],
+    "topic": "tz-w2-priv-cmp-kiezen-criteria-voor-mkb-36b21",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "server-side-tagging-en-privacy",
+    "title": "Server-side tagging en privacy",
+    "titleEn": "Server-side tagging and privacy",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "cookies-consent"
+    ],
+    "topic": "tz-w2-priv-server-side-tagging-en-privacy-8065c",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "matomo-cookieless-meten",
+    "title": "Matomo cookieless meten",
+    "titleEn": "Matomo cookieless meten",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "cookies-consent"
+    ],
+    "topic": "tz-w2-priv-matomo-cookieless-meten-34405",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "google-fonts-self-hosten-om-requests-te-vermijden",
+    "title": "Google fonts self-hosten om requests te vermijden",
+    "titleEn": "Google fonts self-hosten om requests te vermijden",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "cookies-consent"
+    ],
+    "topic": "tz-w2-priv-google-fonts-self-hosten-om-requests-te-47e04",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "youtube-embeds-privacyvriendelijk",
+    "title": "YouTube embeds privacyvriendelijk",
+    "titleEn": "YouTube embeds privacyvriendelijk",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "cookies-consent"
+    ],
+    "topic": "tz-w2-priv-youtube-embeds-privacyvriendelijk-6339a",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "a-b-tools-en-consent",
+    "title": "A/B-tools en consent",
+    "titleEn": "A/B-tools and consent",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "cookies-consent"
+    ],
+    "topic": "tz-w2-priv-a-b-tools-en-consent-eb063",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "jaarlijkse-cookie-audit",
+    "title": "Jaarlijkse cookie-audit",
+    "titleEn": "Jaarlijkse cookie-audit",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "cookies-consent"
+    ],
+    "topic": "tz-w2-priv-jaarlijkse-cookie-audit-f5a9f",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "documenteer-je-cookiedoelen",
+    "title": "Documenteer je cookiedoelen",
+    "titleEn": "Documenteer your cookiedoelen",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "cookies-consent"
+    ],
+    "topic": "tz-w2-priv-documenteer-je-cookiedoelen-0e989",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "wanneer-is-een-cookiebanner-verplicht-checklist-voor-mkb",
+    "title": "Wanneer is een cookiebanner verplicht?: checklist voor MKB",
+    "titleEn": "When is a cookiebanner verplicht?: SMB checklist",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "cookies-consent"
+    ],
+    "topic": "tz-w2-priv-wanneer-is-een-cookiebanner-verplicht-ch-172f3",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "functionele-versus-tracking-cookies-veelgemaakte-fouten",
+    "title": "Functionele versus tracking cookies: veelgemaakte fouten",
+    "titleEn": "Functionele vs tracking cookies: common mistakes",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "cookies-consent"
+    ],
+    "topic": "tz-w2-priv-functionele-versus-tracking-cookies-veel-77908",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "herroepingsrecht-wat-je-duidelijk-moet-tonen",
+    "title": "Herroepingsrecht: wat je duidelijk moet tonen",
+    "titleEn": "Herroepingsrecht: wat your duidelijk moet tonen",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "webshop-regels-nl"
+    ],
+    "topic": "tz-w2-priv-herroepingsrecht-wat-je-duidelijk-moet-t-46ab7",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "prijsvermelding-en-btw-op-productpaginas",
+    "title": "Prijsvermelding en BTW op productpagina’s",
+    "titleEn": "Prijsvermelding and BTW on productpagina’s",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "webshop-regels-nl"
+    ],
+    "topic": "tz-w2-priv-prijsvermelding-en-btw-op-productpaginas-0223d",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "bedrijfsgegevens-in-footer-en-impressum",
+    "title": "Bedrijfsgegevens in footer en impressum",
+    "titleEn": "Bedrijfsgegevens in footer and impressum",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "webshop-regels-nl"
+    ],
+    "topic": "tz-w2-priv-bedrijfsgegevens-in-footer-en-impressum-b1373",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "betaalmethoden-en-consumentenvertrouwen",
+    "title": "Betaalmethoden en consumentenvertrouwen",
+    "titleEn": "Betaalmethoden and consumentenvertrouwen",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "webshop-regels-nl"
+    ],
+    "topic": "tz-w2-priv-betaalmethoden-en-consumentenvertrouwen-416b8",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "levertijden-realistisch-communiceren",
+    "title": "Levertijden realistisch communiceren",
+    "titleEn": "Levertijden realistisch communiceren",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "webshop-regels-nl"
+    ],
+    "topic": "tz-w2-priv-levertijden-realistisch-communiceren-cd63c",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "klachtenafhandeling-online-shops",
+    "title": "Klachtenafhandeling online shops",
+    "titleEn": "Klachtenafhandeling online shops",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "webshop-regels-nl"
+    ],
+    "topic": "tz-w2-priv-klachtenafhandeling-online-shops-a30d0",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "productreviews-en-misleiding-vermijden",
+    "title": "Productreviews en misleiding vermijden",
+    "titleEn": "Productreviews and misleiding vermijden",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "webshop-regels-nl"
+    ],
+    "topic": "tz-w2-priv-productreviews-en-misleiding-vermijden-d380b",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "digitale-producten-versus-fysieke-goederen",
+    "title": "Digitale producten versus fysieke goederen",
+    "titleEn": "Digitale producten vs fysieke goederen",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "webshop-regels-nl"
+    ],
+    "topic": "tz-w2-priv-digitale-producten-versus-fysieke-goeder-1b5d1",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "geoblocking-binnen-de-eu-aandachtspunten",
+    "title": "Geoblocking binnen de EU: aandachtspunten",
+    "titleEn": "Geoblocking binnen the EU: aandachtspunten",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "webshop-regels-nl"
+    ],
+    "topic": "tz-w2-priv-geoblocking-binnen-de-eu-aandachtspunten-fefe2",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "duurzaamheidclaims-wees-concreet",
+    "title": "Duurzaamheidclaims: wees concreet",
+    "titleEn": "Duurzaamheidclaims: wees concreet",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "webshop-regels-nl"
+    ],
+    "topic": "tz-w2-priv-duurzaamheidclaims-wees-concreet-b4d50",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "b2b-versus-b2c-checkout-verschillen",
+    "title": "B2B versus B2C checkout-verschillen",
+    "titleEn": "B2B vs B2C checkout-verschillen",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "webshop-regels-nl"
+    ],
+    "topic": "tz-w2-priv-b2b-versus-b2c-checkout-verschillen-b2a6a",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "voorwaarden-wijzigen-hoe-communiceer-je",
+    "title": "Voorwaarden wijzigen: hoe communiceer je",
+    "titleEn": "Voorwaarden wijzigen: how communiceer your",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "webshop-regels-nl"
+    ],
+    "topic": "tz-w2-priv-voorwaarden-wijzigen-hoe-communiceer-je-c0d1b",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "bewijs-van-bestelling-en-ordermails",
+    "title": "Bewijs van bestelling en ordermails",
+    "titleEn": "Bewijs of bestelling and ordermails",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "webshop-regels-nl"
+    ],
+    "topic": "tz-w2-priv-bewijs-van-bestelling-en-ordermails-366ec",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "acm-themas-volgen-zonder-paniek",
+    "title": "ACM-thema’s volgen zonder paniek",
+    "titleEn": "ACM-thema’s volgen without paniek",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "webshop-regels-nl"
+    ],
+    "topic": "tz-w2-priv-acm-themas-volgen-zonder-paniek-a55d2",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "herroepingsrecht-wat-je-duidelijk-moet-tonen-checklist-voor-mkb",
+    "title": "Herroepingsrecht: wat je duidelijk moet tonen: checklist voor MKB",
+    "titleEn": "Herroepingsrecht: wat your duidelijk moet tonen: SMB checklist",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "webshop-regels-nl"
+    ],
+    "topic": "tz-w2-priv-herroepingsrecht-wat-je-duidelijk-moet-t-e9b49",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "prijsvermelding-en-btw-op-productpaginas-veelgemaakte-fouten",
+    "title": "Prijsvermelding en BTW op productpagina’s: veelgemaakte fouten",
+    "titleEn": "Prijsvermelding and BTW on productpagina’s: common mistakes",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "webshop-regels-nl"
+    ],
+    "topic": "tz-w2-priv-prijsvermelding-en-btw-op-productpaginas-9cc2e",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "welke-juridische-paginas-hoort-een-site-te-hebben",
+    "title": "Welke juridische pagina’s hoort een site te hebben?",
+    "titleEn": "Welke juridische pagina’s hoort a site te hebben?",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "juridische-paginas"
+    ],
+    "topic": "tz-w2-priv-welke-juridische-paginas-hoort-een-site-90dcc",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "privacyverklaring-inhoudsopgave-die-klopt",
+    "title": "Privacyverklaring: inhoudsopgave die klopt",
+    "titleEn": "Privacyverklaring: inhoudsopgave die klopt",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "juridische-paginas"
+    ],
+    "topic": "tz-w2-priv-privacyverklaring-inhoudsopgave-die-klop-60b88",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "cookiebeleid-koppelen-aan-echte-tags",
+    "title": "Cookiebeleid koppelen aan echte tags",
+    "titleEn": "Cookiebeleid koppelen aan echte tags",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "juridische-paginas"
+    ],
+    "topic": "tz-w2-priv-cookiebeleid-koppelen-aan-echte-tags-9d7ee",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "algemene-voorwaarden-scope-en-leesbaarheid",
+    "title": "Algemene voorwaarden: scope en leesbaarheid",
+    "titleEn": "Algemene voorwaarden: scope and leesbaarheid",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "juridische-paginas"
+    ],
+    "topic": "tz-w2-priv-algemene-voorwaarden-scope-en-leesbaarhe-ef7a8",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "herroepingsformulier-vindbaar-maken",
+    "title": "Herroepingsformulier vindbaar maken",
+    "titleEn": "Herroepingsformulier vindbaar maken",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "juridische-paginas"
+    ],
+    "topic": "tz-w2-priv-herroepingsformulier-vindbaar-maken-c0573",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "disclaimer-wat-wel-en-niet-zinvol-is",
+    "title": "Disclaimer: wat wel en niet zinvol is",
+    "titleEn": "Disclaimer: wat wel and niet zinvol is",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "juridische-paginas"
+    ],
+    "topic": "tz-w2-priv-disclaimer-wat-wel-en-niet-zinvol-is-afdd2",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "accessibiliteitsverklaring-waar-relevant",
+    "title": "Accessibiliteitsverklaring (waar relevant)",
+    "titleEn": "Accessibiliteitsverklaring (waar relevant)",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "juridische-paginas"
+    ],
+    "topic": "tz-w2-priv-accessibiliteitsverklaring-waar-relevant-51262",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "meertalige-juridische-teksten-consistent-houden",
+    "title": "Meertalige juridische teksten consistent houden",
+    "titleEn": "Meertalige juridische teksten consistent houden",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "juridische-paginas"
+    ],
+    "topic": "tz-w2-priv-meertalige-juridische-teksten-consistent-49f49",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "versiebeheer-van-voorwaarden",
+    "title": "Versiebeheer van voorwaarden",
+    "titleEn": "Versiebeheer of voorwaarden",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "juridische-paginas"
+    ],
+    "topic": "tz-w2-priv-versiebeheer-van-voorwaarden-c717f",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "links-vanuit-checkout-naar-voorwaarden",
+    "title": "Links vanuit checkout naar voorwaarden",
+    "titleEn": "Links vanuit checkout to voorwaarden",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "juridische-paginas"
+    ],
+    "topic": "tz-w2-priv-links-vanuit-checkout-naar-voorwaarden-fb724",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "geen-copy-paste-van-concurrenten",
+    "title": "Geen copy-paste van concurrenten",
+    "titleEn": "Geen copy-paste of concurrenten",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "juridische-paginas"
+    ],
+    "topic": "tz-w2-priv-geen-copy-paste-van-concurrenten-1f2f8",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "juridische-review-wanneer-inschakelen",
+    "title": "Juridische review: wanneer inschakelen",
+    "titleEn": "Juridische review: when inschakelen",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "juridische-paginas"
+    ],
+    "topic": "tz-w2-priv-juridische-review-wanneer-inschakelen-e0236",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "contactgegevens-consistent-met-kvk",
+    "title": "Contactgegevens consistent met KvK",
+    "titleEn": "Contactgegevens consistent with KvK",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "juridische-paginas"
+    ],
+    "topic": "tz-w2-priv-contactgegevens-consistent-met-kvk-991b9",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "pdf-downloads-van-voorwaarden",
+    "title": "PDF-downloads van voorwaarden",
+    "titleEn": "PDF-downloads of voorwaarden",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "juridische-paginas"
+    ],
+    "topic": "tz-w2-priv-pdf-downloads-van-voorwaarden-dfbc0",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "welke-juridische-paginas-hoort-een-site-te-hebben-checklist-voor-mkb",
+    "title": "Welke juridische pagina’s hoort een site te hebben?: checklist voor MKB",
+    "titleEn": "Welke juridische pagina’s hoort a site te hebben?: SMB checklist",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "juridische-paginas"
+    ],
+    "topic": "tz-w2-priv-welke-juridische-paginas-hoort-een-site-63f90",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "privacyverklaring-inhoudsopgave-die-klopt-veelgemaakte-fouten",
+    "title": "Privacyverklaring: inhoudsopgave die klopt: veelgemaakte fouten",
+    "titleEn": "Privacyverklaring: inhoudsopgave die klopt: common mistakes",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "juridische-paginas"
+    ],
+    "topic": "tz-w2-priv-privacyverklaring-inhoudsopgave-die-klop-3d6bf",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "europese-analytics-alternatieven-overwegen",
+    "title": "Europese analytics-alternatieven overwegen",
+    "titleEn": "Europese analytics-alternatieven overwegen",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "eu-tooling"
+    ],
+    "topic": "tz-w2-priv-europese-analytics-alternatieven-overweg-1545d",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "e-mailproviders-en-datalocatie",
+    "title": "E-mailproviders en datalocatie",
+    "titleEn": "E-mailproviders and datalocatie",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "eu-tooling"
+    ],
+    "topic": "tz-w2-priv-e-mailproviders-en-datalocatie-b0fad",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "cloud-act-wat-mkb-moet-snappen",
+    "title": "CLOUD Act: wat MKB moet snappen",
+    "titleEn": "CLOUD Act: wat MKB moet snappen",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "eu-tooling"
+    ],
+    "topic": "tz-w2-priv-cloud-act-wat-mkb-moet-snappen-ad84e",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "vendor-lock-in-verminderen",
+    "title": "Vendor lock-in verminderen",
+    "titleEn": "Vendor lock-in verminderen",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "eu-tooling"
+    ],
+    "topic": "tz-w2-priv-vendor-lock-in-verminderen-5cb05",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "self-host-matomo-op-je-vps",
+    "title": "Self-host Matomo op je VPS",
+    "titleEn": "Self-host Matomo on your VPS",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "eu-tooling"
+    ],
+    "topic": "tz-w2-priv-self-host-matomo-op-je-vps-f6c90",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "fonts-en-cdns-binnen-eu-keuzes",
+    "title": "Fonts en CDN’s binnen EU-keuzes",
+    "titleEn": "Fonts and CDN’s binnen EU-keuzes",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "eu-tooling"
+    ],
+    "topic": "tz-w2-priv-fonts-en-cdns-binnen-eu-keuzes-4e258",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "ai-tools-en-bedrijfsgeheimen",
+    "title": "AI-tools en bedrijfsgeheimen",
+    "titleEn": "AI-tools and bedrijfsgeheimen",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "eu-tooling"
+    ],
+    "topic": "tz-w2-priv-ai-tools-en-bedrijfsgeheimen-ebb68",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "exit-strategie-bij-saas-leveranciers",
+    "title": "Exit-strategie bij SaaS-leveranciers",
+    "titleEn": "Exit-strategie at SaaS-leveranciers",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "eu-tooling"
+    ],
+    "topic": "tz-w2-priv-exit-strategie-bij-saas-leveranciers-ab99e",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "open-source-stacks-voor-soevereiniteit",
+    "title": "Open-source stacks voor soevereiniteit",
+    "titleEn": "Open-source stacks for soevereiniteit",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "eu-tooling"
+    ],
+    "topic": "tz-w2-priv-open-source-stacks-voor-soevereiniteit-429bf",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "dns-en-registrar-spreid-risicos",
+    "title": "DNS en registrar: spreid risico’s",
+    "titleEn": "DNS and registrar: spreid risico’s",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "eu-tooling"
+    ],
+    "topic": "tz-w2-priv-dns-en-registrar-spreid-risicos-dd5ba",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "backup-bij-een-tweede-provider",
+    "title": "Backup bij een tweede provider",
+    "titleEn": "Backup at a tweede provider",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "eu-tooling"
+    ],
+    "topic": "tz-w2-priv-backup-bij-een-tweede-provider-8a6eb",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "contractuele-datalocatie-eisen",
+    "title": "Contractuele datalocatie-eisen",
+    "titleEn": "Contractuele datalocatie-eisen",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "eu-tooling"
+    ],
+    "topic": "tz-w2-priv-contractuele-datalocatie-eisen-6fd9d",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "transparantie-naar-klanten-over-tooling",
+    "title": "Transparantie naar klanten over tooling",
+    "titleEn": "Transparantie to klanten over tooling",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "eu-tooling"
+    ],
+    "topic": "tz-w2-priv-transparantie-naar-klanten-over-tooling-20d89",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "roadmap-eerst-meten-dan-migreren",
+    "title": "Roadmap: eerst meten, dan migreren",
+    "titleEn": "Roadmap: eerst meten, dan migreren",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "eu-tooling"
+    ],
+    "topic": "tz-w2-priv-roadmap-eerst-meten-dan-migreren-22e16",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "europese-analytics-alternatieven-overwegen-checklist-voor-mkb",
+    "title": "Europese analytics-alternatieven overwegen: checklist voor MKB",
+    "titleEn": "Europese analytics-alternatieven overwegen: SMB checklist",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "eu-tooling"
+    ],
+    "topic": "tz-w2-priv-europese-analytics-alternatieven-overweg-36a9c",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "e-mailproviders-en-datalocatie-veelgemaakte-fouten",
+    "title": "E-mailproviders en datalocatie: veelgemaakte fouten",
+    "titleEn": "E-mailproviders and datalocatie: common mistakes",
+    "categories": [
+      "privacy-juridisch-compliance",
+      "eu-tooling"
+    ],
+    "topic": "tz-w2-priv-e-mailproviders-en-datalocatie-veelgemaa-81ea0",
+    "module": "privacy",
+    "rewrite": false
+  },
+  {
+    "slug": "woocommerce-versus-shopify-criteria-voor-nl",
+    "title": "WooCommerce versus Shopify: criteria voor NL",
+    "titleEn": "WooCommerce vs Shopify: criteria for NL",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "platform-vergelijkingen"
+    ],
+    "topic": "tz-w2-vgl-woocommerce-versus-shopify-criteria-voor-4e6a9",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "woocommerce-versus-prestashop",
+    "title": "WooCommerce versus PrestaShop",
+    "titleEn": "WooCommerce vs PrestaShop",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "platform-vergelijkingen"
+    ],
+    "topic": "tz-w2-vgl-woocommerce-versus-prestashop-518df",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "wordpress-versus-wix-squarespace-eigenaarschap",
+    "title": "WordPress versus Wix/Squarespace: eigenaarschap",
+    "titleEn": "WordPress vs Wix/Squarespace: eigenaarschap",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "platform-vergelijkingen"
+    ],
+    "topic": "tz-w2-vgl-wordpress-versus-wix-squarespace-eigenaa-8c234",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "headless-commerce-wanneer-zinvol",
+    "title": "Headless commerce: wanneer zinvol",
+    "titleEn": "Headless commerce: when zinvol",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "platform-vergelijkingen"
+    ],
+    "topic": "tz-w2-vgl-headless-commerce-wanneer-zinvol-777bf",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "marketplace-versus-eigen-webshop",
+    "title": "Marketplace versus eigen webshop",
+    "titleEn": "Marketplace vs eigen online store",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "platform-vergelijkingen"
+    ],
+    "topic": "tz-w2-vgl-marketplace-versus-eigen-webshop-4424a",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "saas-cms-versus-self-hosted-cms",
+    "title": "SaaS-CMS versus self-hosted CMS",
+    "titleEn": "SaaS-CMS vs self-hosted CMS",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "platform-vergelijkingen"
+    ],
+    "topic": "tz-w2-vgl-saas-cms-versus-self-hosted-cms-91a8e",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "b2b-portals-maatwerk-versus-plugins",
+    "title": "B2B-portals: maatwerk versus plugins",
+    "titleEn": "B2B-portals: maatwerk vs plugins",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "platform-vergelijkingen"
+    ],
+    "topic": "tz-w2-vgl-b2b-portals-maatwerk-versus-plugins-d3bab",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "multi-store-een-platform-of-meerdere",
+    "title": "Multi-store: één platform of meerdere",
+    "titleEn": "Multi-store: één platform of meerdere",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "platform-vergelijkingen"
+    ],
+    "topic": "tz-w2-vgl-multi-store-een-platform-of-meerdere-85f46",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "app-store-kosten-meenemen-in-tco",
+    "title": "App Store-kosten meenemen in TCO",
+    "titleEn": "App Store-kosten meenemen in TCO",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "platform-vergelijkingen"
+    ],
+    "topic": "tz-w2-vgl-app-store-kosten-meenemen-in-tco-eb1d2",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "migratiekosten-realistisch-inschatten",
+    "title": "Migratiekosten realistisch inschatten",
+    "titleEn": "Migratiekosten realistisch inschatten",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "platform-vergelijkingen"
+    ],
+    "topic": "tz-w2-vgl-migratiekosten-realistisch-inschatten-766f2",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "seo-controle-wie-bezit-de-urls",
+    "title": "SEO-controle: wie bezit de URL’s?",
+    "titleEn": "SEO-controle: wie bezit the URL’s?",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "platform-vergelijkingen"
+    ],
+    "topic": "tz-w2-vgl-seo-controle-wie-bezit-de-urls-a0edd",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "extensie-ecosysteem-vergelijken",
+    "title": "Extensie-ecosysteem vergelijken",
+    "titleEn": "Extensie-ecosysteem vergelijken",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "platform-vergelijkingen"
+    ],
+    "topic": "tz-w2-vgl-extensie-ecosysteem-vergelijken-227cc",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "supportmodellen-ticket-versus-agency",
+    "title": "Supportmodellen: ticket versus agency",
+    "titleEn": "Supportmodellen: ticket vs agency",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "platform-vergelijkingen"
+    ],
+    "topic": "tz-w2-vgl-supportmodellen-ticket-versus-agency-8a384",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "keuze-matrix-invullen-met-stakeholders",
+    "title": "Keuze-matrix invullen met stakeholders",
+    "titleEn": "Keuze-matrix invullen with stakeholders",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "platform-vergelijkingen"
+    ],
+    "topic": "tz-w2-vgl-keuze-matrix-invullen-met-stakeholders-062f9",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "pilot-bewijs-voor-big-bang-migratie",
+    "title": "Pilot: bewijs vóór big-bang migratie",
+    "titleEn": "Pilot: bewijs vóór big-bang migratie",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "platform-vergelijkingen"
+    ],
+    "topic": "tz-w2-vgl-pilot-bewijs-voor-big-bang-migratie-22337",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "woocommerce-versus-shopify-criteria-voor-nl-checklist-voor-mkb",
+    "title": "WooCommerce versus Shopify: criteria voor NL: checklist voor MKB",
+    "titleEn": "WooCommerce vs Shopify: criteria for NL: SMB checklist",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "platform-vergelijkingen"
+    ],
+    "topic": "tz-w2-vgl-woocommerce-versus-shopify-criteria-voor-d91ec",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "woocommerce-versus-prestashop-veelgemaakte-fouten",
+    "title": "WooCommerce versus PrestaShop: veelgemaakte fouten",
+    "titleEn": "WooCommerce vs PrestaShop: common mistakes",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "platform-vergelijkingen"
+    ],
+    "topic": "tz-w2-vgl-woocommerce-versus-prestashop-veelgemaak-94a5d",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "wordpress-versus-wix-squarespace-eigenaarschap-stappenplan-voor-beginners",
+    "title": "WordPress versus Wix/Squarespace: eigenaarschap: stappenplan voor beginners",
+    "titleEn": "WordPress vs Wix/Squarespace: eigenaarschap: beginner guide",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "platform-vergelijkingen"
+    ],
+    "topic": "tz-w2-vgl-wordpress-versus-wix-squarespace-eigenaa-003ea",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "shared-versus-managed-wordpress-hosting",
+    "title": "Shared versus managed WordPress hosting",
+    "titleEn": "Shared vs managed WordPress hosting",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "hosting-keuze"
+    ],
+    "topic": "tz-w2-vgl-shared-versus-managed-wordpress-hosting-69d74",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "wanneer-is-een-vps-de-betere-keuze",
+    "title": "Wanneer is een VPS de betere keuze?",
+    "titleEn": "When is a VPS the betere keuze?",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "hosting-keuze"
+    ],
+    "topic": "tz-w2-vgl-wanneer-is-een-vps-de-betere-keuze-64223",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "reseller-versus-unmanaged-wat-je-zelf-doet",
+    "title": "Reseller versus unmanaged: wat je zelf doet",
+    "titleEn": "Reseller vs unmanaged: wat your zelf doet",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "hosting-keuze"
+    ],
+    "topic": "tz-w2-vgl-reseller-versus-unmanaged-wat-je-zelf-do-27897",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "resources-cpu-ram-inodes-en-traffic",
+    "title": "Resources: CPU, RAM, inodes en traffic",
+    "titleEn": "Resources: CPU, RAM, inodes and traffic",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "hosting-keuze"
+    ],
+    "topic": "tz-w2-vgl-resources-cpu-ram-inodes-en-traffic-bd9ce",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "uptime-slas-lezen-zonder-marketing",
+    "title": "Uptime-SLA’s lezen zonder marketing",
+    "titleEn": "Uptime-SLA’s lezen without marketing",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "hosting-keuze"
+    ],
+    "topic": "tz-w2-vgl-uptime-slas-lezen-zonder-marketing-46646",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "lokale-support-in-het-nederlands",
+    "title": "Lokale support in het Nederlands",
+    "titleEn": "Lokale support in the Nederlands",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "hosting-keuze"
+    ],
+    "topic": "tz-w2-vgl-lokale-support-in-het-nederlands-bbf9b",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "staging-omgeving-als-harde-eis",
+    "title": "Staging-omgeving als harde eis",
+    "titleEn": "Staging-omgeving als harde eis",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "hosting-keuze"
+    ],
+    "topic": "tz-w2-vgl-staging-omgeving-als-harde-eis-ae72f",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "backupretentie-vergelijken",
+    "title": "Backupretentie vergelijken",
+    "titleEn": "Backupretentie vergelijken",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "hosting-keuze"
+    ],
+    "topic": "tz-w2-vgl-backupretentie-vergelijken-19a8d",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "e-mail-op-dezelfde-host-of-apart",
+    "title": "E-mail op dezelfde host of apart?",
+    "titleEn": "E-mail on dezelfde host of apart?",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "hosting-keuze"
+    ],
+    "topic": "tz-w2-vgl-e-mail-op-dezelfde-host-of-apart-75455",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "schaalpad-shared-vps-cluster",
+    "title": "Schaalpad: shared → VPS → cluster",
+    "titleEn": "Schaalpad: shared → VPS → cluster",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "hosting-keuze"
+    ],
+    "topic": "tz-w2-vgl-schaalpad-shared-vps-cluster-f9af8",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "prijs-per-jaar-inclusief-ssl-en-backups",
+    "title": "Prijs per jaar inclusief SSL en backups",
+    "titleEn": "Prijs per jaar inclusief SSL and backups",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "hosting-keuze"
+    ],
+    "topic": "tz-w2-vgl-prijs-per-jaar-inclusief-ssl-en-backups-46fea",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "vendor-lock-in-bij-proprietary-panels",
+    "title": "Vendor lock-in bij proprietary panels",
+    "titleEn": "Vendor lock-in at proprietary panels",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "hosting-keuze"
+    ],
+    "topic": "tz-w2-vgl-vendor-lock-in-bij-proprietary-panels-c82b9",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "green-hosting-claims-beoordelen",
+    "title": "Green hosting claims beoordelen",
+    "titleEn": "Green hosting claims beoordelen",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "hosting-keuze"
+    ],
+    "topic": "tz-w2-vgl-green-hosting-claims-beoordelen-271ec",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "security-addons-imunify-waf-scans",
+    "title": "Security-addons: Imunify, WAF, scans",
+    "titleEn": "Security-addons: Imunify, WAF, scans",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "hosting-keuze"
+    ],
+    "topic": "tz-w2-vgl-security-addons-imunify-waf-scans-2c61e",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "beslisboom-voor-starters-en-agencies",
+    "title": "Beslisboom voor starters en agencies",
+    "titleEn": "Beslisboom for starters and agencies",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "hosting-keuze"
+    ],
+    "topic": "tz-w2-vgl-beslisboom-voor-starters-en-agencies-e8b57",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "shared-versus-managed-wordpress-hosting-checklist-voor-mkb",
+    "title": "Shared versus managed WordPress hosting: checklist voor MKB",
+    "titleEn": "Shared vs managed WordPress hosting: SMB checklist",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "hosting-keuze"
+    ],
+    "topic": "tz-w2-vgl-shared-versus-managed-wordpress-hosting-6f924",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "wanneer-is-een-vps-de-betere-keuze-veelgemaakte-fouten",
+    "title": "Wanneer is een VPS de betere keuze?: veelgemaakte fouten",
+    "titleEn": "When is a VPS the betere keuze?: common mistakes",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "hosting-keuze"
+    ],
+    "topic": "tz-w2-vgl-wanneer-is-een-vps-de-betere-keuze-veelg-d4b32",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "reseller-versus-unmanaged-wat-je-zelf-doet-stappenplan-voor-beginners",
+    "title": "Reseller versus unmanaged: wat je zelf doet: stappenplan voor beginners",
+    "titleEn": "Reseller vs unmanaged: wat your zelf doet: beginner guide",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "hosting-keuze"
+    ],
+    "topic": "tz-w2-vgl-reseller-versus-unmanaged-wat-je-zelf-do-56d37",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "mollie-versus-stripe-voor-nederlandse-shops",
+    "title": "Mollie versus Stripe voor Nederlandse shops",
+    "titleEn": "Mollie vs Stripe for Nederlandse shops",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "betaalproviders"
+    ],
+    "topic": "tz-w2-vgl-mollie-versus-stripe-voor-nederlandse-sh-13b94",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "ideal-als-default-conversie-impact",
+    "title": "iDEAL als default: conversie-impact",
+    "titleEn": "IDEAL als default: conversie-impact",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "betaalproviders"
+    ],
+    "topic": "tz-w2-vgl-ideal-als-default-conversie-impact-687fb",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "transactiekosten-eerlijk-vergelijken",
+    "title": "Transactiekosten eerlijk vergelijken",
+    "titleEn": "Transactiekosten eerlijk vergelijken",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "betaalproviders"
+    ],
+    "topic": "tz-w2-vgl-transactiekosten-eerlijk-vergelijken-b94a6",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "payout-snelheid-en-cashflow",
+    "title": "Payout-snelheid en cashflow",
+    "titleEn": "Payout-snelheid and cashflow",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "betaalproviders"
+    ],
+    "topic": "tz-w2-vgl-payout-snelheid-en-cashflow-38b6b",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "chargebacks-en-fraudetools",
+    "title": "Chargebacks en fraudetools",
+    "titleEn": "Chargebacks and fraudetools",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "betaalproviders"
+    ],
+    "topic": "tz-w2-vgl-chargebacks-en-fraudetools-d16a7",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "subscriptions-en-recurring-billing",
+    "title": "Subscriptions en recurring billing",
+    "titleEn": "Subscriptions and recurring billing",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "betaalproviders"
+    ],
+    "topic": "tz-w2-vgl-subscriptions-en-recurring-billing-6cb76",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "multi-currency-voor-eu-klanten",
+    "title": "Multi-currency voor EU-klanten",
+    "titleEn": "Multi-currency for EU-klanten",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "betaalproviders"
+    ],
+    "topic": "tz-w2-vgl-multi-currency-voor-eu-klanten-53374",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "pci-scope-verkleinen-met-hosted-fields",
+    "title": "PCI-scope verkleinen met hosted fields",
+    "titleEn": "PCI-scope verkleinen with hosted fields",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "betaalproviders"
+    ],
+    "topic": "tz-w2-vgl-pci-scope-verkleinen-met-hosted-fields-769b6",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "webhook-betrouwbaarheid-testen",
+    "title": "Webhook-betrouwbaarheid testen",
+    "titleEn": "Webhook-betrouwbaarheid testen",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "betaalproviders"
+    ],
+    "topic": "tz-w2-vgl-webhook-betrouwbaarheid-testen-017e5",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "sandbox-versus-live-checklist",
+    "title": "Sandbox versus live: checklist",
+    "titleEn": "Sandbox vs live: checklist",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "betaalproviders"
+    ],
+    "topic": "tz-w2-vgl-sandbox-versus-live-checklist-6be12",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "privacy-en-datalocatie-van-psps",
+    "title": "Privacy en datalocatie van PSP’s",
+    "titleEn": "Privacy and datalocatie of PSP’s",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "betaalproviders"
+    ],
+    "topic": "tz-w2-vgl-privacy-en-datalocatie-van-psps-005c6",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "apple-pay-google-pay-toevoegen",
+    "title": "Apple Pay / Google Pay toevoegen",
+    "titleEn": "Apple Pay / Google Pay toevoegen",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "betaalproviders"
+    ],
+    "topic": "tz-w2-vgl-apple-pay-google-pay-toevoegen-457f0",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "facturatie-koppelen-aan-boekhouding",
+    "title": "Facturatie koppelen aan boekhouding",
+    "titleEn": "Facturatie koppelen aan boekhouding",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "betaalproviders"
+    ],
+    "topic": "tz-w2-vgl-facturatie-koppelen-aan-boekhouding-f086c",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "failover-tweede-betaalprovider",
+    "title": "Failover: tweede betaalprovider?",
+    "titleEn": "Failover: tweede betaalprovider?",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "betaalproviders"
+    ],
+    "topic": "tz-w2-vgl-failover-tweede-betaalprovider-e030e",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "klantcommunicatie-bij-mislukte-betaling",
+    "title": "Klantcommunicatie bij mislukte betaling",
+    "titleEn": "Klantcommunicatie at mislukte betaling",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "betaalproviders"
+    ],
+    "topic": "tz-w2-vgl-klantcommunicatie-bij-mislukte-betaling-5fdb2",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "mollie-versus-stripe-voor-nederlandse-shops-checklist-voor-mkb",
+    "title": "Mollie versus Stripe voor Nederlandse shops: checklist voor MKB",
+    "titleEn": "Mollie vs Stripe for Nederlandse shops: SMB checklist",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "betaalproviders"
+    ],
+    "topic": "tz-w2-vgl-mollie-versus-stripe-voor-nederlandse-sh-a1d45",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "ideal-als-default-conversie-impact-veelgemaakte-fouten",
+    "title": "iDEAL als default: conversie-impact: veelgemaakte fouten",
+    "titleEn": "IDEAL als default: conversie-impact: common mistakes",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "betaalproviders"
+    ],
+    "topic": "tz-w2-vgl-ideal-als-default-conversie-impact-veelg-33378",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "transactiekosten-eerlijk-vergelijken-stappenplan-voor-beginners",
+    "title": "Transactiekosten eerlijk vergelijken: stappenplan voor beginners",
+    "titleEn": "Transactiekosten eerlijk vergelijken: beginner guide",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "betaalproviders"
+    ],
+    "topic": "tz-w2-vgl-transactiekosten-eerlijk-vergelijken-sta-cc530",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "elementor-versus-gutenberg-performance",
+    "title": "Elementor versus Gutenberg: performance",
+    "titleEn": "Elementor vs Gutenberg: performance",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "builders-cms"
+    ],
+    "topic": "tz-w2-vgl-elementor-versus-gutenberg-performance-88317",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "custom-theme-versus-pagebuilder",
+    "title": "Custom theme versus pagebuilder",
+    "titleEn": "Custom theme vs pagebuilder",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "builders-cms"
+    ],
+    "topic": "tz-w2-vgl-custom-theme-versus-pagebuilder-67d75",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "websitebuilders-wix-e-d-versus-wordpress",
+    "title": "Websitebuilders (Wix e.d.) versus WordPress",
+    "titleEn": "Websitebuilders (Wix e.d.) vs WordPress",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "builders-cms"
+    ],
+    "topic": "tz-w2-vgl-websitebuilders-wix-e-d-versus-wordpress-5244e",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "next-js-versus-wordpress-voor-content-sites",
+    "title": "Next.js versus WordPress voor content sites",
+    "titleEn": "Next.js vs WordPress for content sites",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "builders-cms"
+    ],
+    "topic": "tz-w2-vgl-next-js-versus-wordpress-voor-content-si-96e94",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "low-code-builders-voor-landingspaginas",
+    "title": "Low-code builders voor landingspagina’s",
+    "titleEn": "Low-code builders for landingspagina’s",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "builders-cms"
+    ],
+    "topic": "tz-w2-vgl-low-code-builders-voor-landingspaginas-f359d",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "design-system-hergebruiken-zonder-builder-lock",
+    "title": "Design system hergebruiken zonder builder-lock",
+    "titleEn": "Design system hergebruiken without builder-lock",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "builders-cms"
+    ],
+    "topic": "tz-w2-vgl-design-system-hergebruiken-zonder-builde-b94ca",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "toegankelijkheid-in-pagebuilders",
+    "title": "Toegankelijkheid in pagebuilders",
+    "titleEn": "Toegankelijkheid in pagebuilders",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "builders-cms"
+    ],
+    "topic": "tz-w2-vgl-toegankelijkheid-in-pagebuilders-9a3a6",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "updates-en-breaking-changes-bij-builders",
+    "title": "Updates en breaking changes bij builders",
+    "titleEn": "Updates and breaking changes at builders",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "builders-cms"
+    ],
+    "topic": "tz-w2-vgl-updates-en-breaking-changes-bij-builders-e7249",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "export-portabiliteit-van-content",
+    "title": "Export/portabiliteit van content",
+    "titleEn": "Export/portabiliteit of content",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "builders-cms"
+    ],
+    "topic": "tz-w2-vgl-export-portabiliteit-van-content-4c22e",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "agency-workflow-figma-naar-cms",
+    "title": "Agency-workflow: Figma naar CMS",
+    "titleEn": "Agency-workflow: Figma to CMS",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "builders-cms"
+    ],
+    "topic": "tz-w2-vgl-agency-workflow-figma-naar-cms-8966e",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "block-patterns-als-middenweg",
+    "title": "Block patterns als middenweg",
+    "titleEn": "Block patterns als middenweg",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "builders-cms"
+    ],
+    "topic": "tz-w2-vgl-block-patterns-als-middenweg-71e10",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "pagebuilder-plugins-die-je-site-trager-maken",
+    "title": "Pagebuilder-plugins die je site trager maken",
+    "titleEn": "Pagebuilder-plugins die your site trager maken",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "builders-cms"
+    ],
+    "topic": "tz-w2-vgl-pagebuilder-plugins-die-je-site-trager-m-0164e",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "headless-cms-extra-complexiteit",
+    "title": "Headless CMS: extra complexiteit?",
+    "titleEn": "Headless CMS: extra complexiteit?",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "builders-cms"
+    ],
+    "topic": "tz-w2-vgl-headless-cms-extra-complexiteit-8c753",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "keuzehulp-snelheid-flexibiliteit-kosten",
+    "title": "Keuzehulp: snelheid, flexibiliteit, kosten",
+    "titleEn": "Keuzehulp: snelheid, flexibiliteit, kosten",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "builders-cms"
+    ],
+    "topic": "tz-w2-vgl-keuzehulp-snelheid-flexibiliteit-kosten-90d75",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "migreren-van-builder-naar-custom-stappen",
+    "title": "Migreren van builder naar custom: stappen",
+    "titleEn": "Migreren of builder to custom: stappen",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "builders-cms"
+    ],
+    "topic": "tz-w2-vgl-migreren-van-builder-naar-custom-stappen-c68a1",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "elementor-versus-gutenberg-performance-checklist-voor-mkb",
+    "title": "Elementor versus Gutenberg: performance: checklist voor MKB",
+    "titleEn": "Elementor vs Gutenberg: performance: SMB checklist",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "builders-cms"
+    ],
+    "topic": "tz-w2-vgl-elementor-versus-gutenberg-performance-c-8b21f",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "custom-theme-versus-pagebuilder-veelgemaakte-fouten",
+    "title": "Custom theme versus pagebuilder: veelgemaakte fouten",
+    "titleEn": "Custom theme vs pagebuilder: common mistakes",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "builders-cms"
+    ],
+    "topic": "tz-w2-vgl-custom-theme-versus-pagebuilder-veelgema-d9faa",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "websitebuilders-wix-e-d-versus-wordpress-stappenplan-voor-beginners",
+    "title": "Websitebuilders (Wix e.d.) versus WordPress: stappenplan voor beginners",
+    "titleEn": "Websitebuilders (Wix e.d.) vs WordPress: beginner guide",
+    "categories": [
+      "vergelijkingen-keuzehulp",
+      "builders-cms"
+    ],
+    "topic": "tz-w2-vgl-websitebuilders-wix-e-d-versus-wordpress-5bae8",
+    "module": "vergelijkingen",
+    "rewrite": false
+  },
+  {
+    "slug": "bimi-dns-records-toevoegen-voor-je-merklogo-in-mail",
+    "title": "BIMI DNS-records toevoegen voor je merklogo in mail",
+    "titleEn": "BIMI DNS-records toevoegen for your merklogo in mail",
+    "categories": [
+      "e-mail",
+      "spam-en-veiligheid",
+      "dns-records"
+    ],
+    "topic": "tz-w2-th-mail-bimi-dns-records-toevoegen-voor-je-merkl-deae5",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "arc-begrijpen-bij-doorgestuurde-mail",
+    "title": "ARC begrijpen bij doorgestuurde mail",
+    "titleEn": "ARC begrijpen at doorgestuurde mail",
+    "categories": [
+      "e-mail",
+      "spam-en-veiligheid"
+    ],
+    "topic": "tz-w2-th-mail-arc-begrijpen-bij-doorgestuurde-mail-646f3",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "spf-flattening-wanneer-je-de-lookup-limiet-raakt",
+    "title": "SPF flattening wanneer je de lookup-limiet raakt",
+    "titleEn": "SPF flattening when your the lookup-limiet raakt",
+    "categories": [
+      "e-mail",
+      "dns-records",
+      "spam-en-veiligheid"
+    ],
+    "topic": "tz-w2-th-mail-spf-flattening-wanneer-je-de-lookup-limi-0c4bd",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "dmarc-aggregate-reports-rua-lezen",
+    "title": "DMARC aggregate reports (RUA) lezen",
+    "titleEn": "DMARC aggregate reports (RUA) lezen",
+    "categories": [
+      "e-mail",
+      "spam-en-veiligheid"
+    ],
+    "topic": "tz-w2-th-mail-dmarc-aggregate-reports-rua-lezen-368ae",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "dmarc-failure-reports-ruf-veilig-gebruiken",
+    "title": "DMARC failure reports (RUF) veilig gebruiken",
+    "titleEn": "DMARC failure reports (RUF) safely gebruiken",
+    "categories": [
+      "e-mail",
+      "spam-en-veiligheid"
+    ],
+    "topic": "tz-w2-th-mail-dmarc-failure-reports-ruf-veilig-gebruik-ec903",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "greylisting-vertraging-of-spamfilter",
+    "title": "Greylisting: vertraging of spamfilter?",
+    "titleEn": "Greylisting: vertraging of spamfilter?",
+    "categories": [
+      "e-mail",
+      "spam-en-veiligheid"
+    ],
+    "topic": "tz-w2-th-mail-greylisting-vertraging-of-spamfilter-836b1",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "smtp-587-submission-correct-instellen",
+    "title": "SMTP 587 submission correct instellen",
+    "titleEn": "SMTP 587 submission correct configure",
+    "categories": [
+      "e-mail",
+      "e-mail-instellen"
+    ],
+    "topic": "tz-w2-th-mail-smtp-587-submission-correct-instellen-1da11",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "poort-25-outbound-geblokkeerd-wat-nu",
+    "title": "Poort 25 outbound geblokkeerd: wat nu?",
+    "titleEn": "Poort 25 outbound geblokkeerd: wat nu?",
+    "categories": [
+      "e-mail",
+      "mail-aflevering-fouten"
+    ],
+    "topic": "tz-w2-th-mail-poort-25-outbound-geblokkeerd-wat-nu-2f6ab",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "gmail-koppelen-als-client-aan-je-hostingmailbox",
+    "title": "Gmail koppelen als client aan je hostingmailbox",
+    "titleEn": "Gmail koppelen als client aan your hostingmailbox",
+    "categories": [
+      "e-mail",
+      "e-mail-instellen"
+    ],
+    "topic": "tz-w2-th-mail-gmail-koppelen-als-client-aan-je-hosting-3b193",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "imap-mailbox-migreren-zonder-mailverlies",
+    "title": "IMAP-mailbox migreren zonder mailverlies",
+    "titleEn": "IMAP-mailbox migreren without mailverlies",
+    "categories": [
+      "e-mail",
+      "mailbox-beheer"
+    ],
+    "topic": "tz-w2-th-mail-imap-mailbox-migreren-zonder-mailverlies-02d5c",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "alias-versus-forward-versus-catch-all",
+    "title": "Alias versus forward versus catch-all",
+    "titleEn": "Alias vs forward vs catch-all",
+    "categories": [
+      "e-mail",
+      "mailbox-beheer"
+    ],
+    "topic": "tz-w2-th-mail-alias-versus-forward-versus-catch-all-5da34",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "webmail-zoekindex-en-filters-die-mail-verbergen",
+    "title": "Webmail zoekindex en filters die mail verbergen",
+    "titleEn": "Webmail zoekindex and filters die mail verbergen",
+    "categories": [
+      "e-mail",
+      "webmail"
+    ],
+    "topic": "tz-w2-th-mail-webmail-zoekindex-en-filters-die-mail-ve-9c145",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "autodiscover-records-controleren",
+    "title": "Autodiscover records controleren",
+    "titleEn": "Autodiscover records controleren",
+    "categories": [
+      "e-mail",
+      "dns-records",
+      "microsoft-mail"
+    ],
+    "topic": "tz-w2-th-mail-autodiscover-records-controleren-f350c",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "outbound-rate-limiting-bij-gedeelde-ips",
+    "title": "Outbound rate limiting bij gedeelde IP’s",
+    "titleEn": "Outbound rate limiting at gedeelde IP’s",
+    "categories": [
+      "e-mail",
+      "spam-en-veiligheid"
+    ],
+    "topic": "tz-w2-th-mail-outbound-rate-limiting-bij-gedeelde-ips-b33b1",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "shared-mailbox-in-roundcube-of-outlook",
+    "title": "Shared mailbox in Roundcube of Outlook",
+    "titleEn": "Shared mailbox in Roundcube of Outlook",
+    "categories": [
+      "e-mail",
+      "mailbox-beheer",
+      "webmail"
+    ],
+    "topic": "tz-w2-th-mail-shared-mailbox-in-roundcube-of-outlook-47fa3",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "caldav-carddav-conceptueel-naast-imap",
+    "title": "CalDAV/CardDAV conceptueel naast IMAP",
+    "titleEn": "CalDAV/CardDAV conceptueel naast IMAP",
+    "categories": [
+      "e-mail",
+      "e-mail-instellen"
+    ],
+    "topic": "tz-w2-th-mail-caldav-carddav-conceptueel-naast-imap-b87b8",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "wp-cli-wordpress-beheren-via-de-terminal",
+    "title": "WP-CLI: WordPress beheren via de terminal",
+    "titleEn": "WP-CLI: WordPress beheren via the terminal",
+    "categories": [
+      "wordpress",
+      "wordpress-onderhoud",
+      "vps"
+    ],
+    "topic": "tz-w2-th-wp-wp-cli-wordpress-beheren-via-de-terminal-8af0d",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "wordpress-org-versus-wordpress-com",
+    "title": "WordPress.org versus WordPress.com",
+    "titleEn": "WordPress.org vs WordPress.com",
+    "categories": [
+      "wordpress",
+      "wordpress-installatie"
+    ],
+    "topic": "tz-w2-th-wp-wordpress-org-versus-wordpress-com-1e335",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "excerpts-instellen-voor-seo-en-overzichten",
+    "title": "Excerpts instellen voor SEO en overzichten",
+    "titleEn": "Excerpts configure for SEO and overzichten",
+    "categories": [
+      "wordpress",
+      "bloggen",
+      "seo-klassiek"
+    ],
+    "topic": "tz-w2-th-wp-excerpts-instellen-voor-seo-en-overzicht-e644a",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "permalinks-veilig-wijzigen-zonder-404-chaos",
+    "title": "Permalinks veilig wijzigen zonder 404-chaos",
+    "titleEn": "Permalinks safely wijzigen without 404-chaos",
+    "categories": [
+      "wordpress",
+      "wordpress-onderhoud"
+    ],
+    "topic": "tz-w2-th-wp-permalinks-veilig-wijzigen-zonder-404-ch-9cccb",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "gravity-forms-basisformulier-en-notificaties",
+    "title": "Gravity Forms: basisformulier en notificaties",
+    "titleEn": "Gravity Forms: basisformulier and notificaties",
+    "categories": [
+      "wordpress",
+      "wordpress-overige"
+    ],
+    "topic": "tz-w2-th-wp-gravity-forms-basisformulier-en-notifica-70f93",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "staging-naar-live-checklist-zonder-dataverlies",
+    "title": "Staging naar live: checklist zonder dataverlies",
+    "titleEn": "Staging to live: checklist without dataverlies",
+    "categories": [
+      "wordpress",
+      "wordpress-onderhoud",
+      "hosting"
+    ],
+    "topic": "tz-w2-th-wp-staging-naar-live-checklist-zonder-datav-eeeaa",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "wordpress-multisite-wanneer-wel-of-niet",
+    "title": "WordPress Multisite: wanneer wel of niet",
+    "titleEn": "WordPress Multisite: when wel of niet",
+    "categories": [
+      "wordpress",
+      "wordpress-installatie"
+    ],
+    "topic": "tz-w2-th-wp-wordpress-multisite-wanneer-wel-of-niet-9f2ea",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "wp-cron-uitschakelen-en-echte-cron-gebruiken",
+    "title": "WP-Cron uitschakelen en echte cron gebruiken",
+    "titleEn": "WP-Cron uitschakelen and echte cron gebruiken",
+    "categories": [
+      "wordpress",
+      "php-en-scripts",
+      "wordpress-onderhoud"
+    ],
+    "topic": "tz-w2-th-wp-wp-cron-uitschakelen-en-echte-cron-gebru-a7aa5",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "xml-rpc-uitschakelen-of-beperken",
+    "title": "XML-RPC uitschakelen of beperken",
+    "titleEn": "XML-RPC uitschakelen of beperken",
+    "categories": [
+      "wordpress",
+      "wordpress-beveiliging",
+      "beveiliging"
+    ],
+    "topic": "tz-w2-th-wp-xml-rpc-uitschakelen-of-beperken-f14d9",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "user-enumeration-blokkeren",
+    "title": "User enumeration blokkeren",
+    "titleEn": "User enumeration blokkeren",
+    "categories": [
+      "wordpress",
+      "wordpress-beveiliging"
+    ],
+    "topic": "tz-w2-th-wp-user-enumeration-blokkeren-b0a52",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "hacked-wordpress-diep-herstelplan",
+    "title": "Hacked WordPress: diep herstelplan",
+    "titleEn": "Hacked WordPress: diep herstelplan",
+    "categories": [
+      "wordpress",
+      "wordpress-beveiliging",
+      "beveiliging"
+    ],
+    "topic": "tz-w2-th-wp-hacked-wordpress-diep-herstelplan-5dcee",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "object-cache-php-drop-in-voor-redis",
+    "title": "object-cache.php drop-in voor Redis",
+    "titleEn": "Object-cache.php drop-in for Redis",
+    "categories": [
+      "wordpress",
+      "wordpress-onderhoud",
+      "cdn-performance-cloudflare"
+    ],
+    "topic": "tz-w2-th-wp-object-cache-php-drop-in-voor-redis-ef3fb",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "wp-debug-veilig-gebruiken-op-staging",
+    "title": "WP_DEBUG veilig gebruiken op staging",
+    "titleEn": "WP_DEBUG safely gebruiken on staging",
+    "categories": [
+      "wordpress",
+      "wordpress-onderhoud"
+    ],
+    "topic": "tz-w2-th-wp-wp-debug-veilig-gebruiken-op-staging-4a255",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "rest-api-harden-zonder-de-site-te-breken",
+    "title": "REST API harden zonder de site te breken",
+    "titleEn": "REST API harden without the site te breken",
+    "categories": [
+      "wordpress",
+      "wordpress-beveiliging"
+    ],
+    "topic": "tz-w2-th-wp-rest-api-harden-zonder-de-site-te-breken-59bc7",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "file-integrity-monitoring-voor-wp-core",
+    "title": "File integrity monitoring voor WP-core",
+    "titleEn": "File integrity monitoring for WP-core",
+    "categories": [
+      "wordpress",
+      "wordpress-beveiliging"
+    ],
+    "topic": "tz-w2-th-wp-file-integrity-monitoring-voor-wp-core-9a9fd",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "gutenberg-patterns-herbruikbaar-maken",
+    "title": "Gutenberg patterns herbruikbaar maken",
+    "titleEn": "Gutenberg patterns herbruikbaar maken",
+    "categories": [
+      "wordpress",
+      "wordpress-overige"
+    ],
+    "topic": "tz-w2-th-wp-gutenberg-patterns-herbruikbaar-maken-0dfdb",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "elementor-performance-widgets-en-assets",
+    "title": "Elementor performance: widgets en assets",
+    "titleEn": "Elementor performance: widgets and assets",
+    "categories": [
+      "wordpress",
+      "wordpress-onderhoud"
+    ],
+    "topic": "tz-w2-th-wp-elementor-performance-widgets-en-assets-6d888",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "recaptcha-op-wordpress-formulieren",
+    "title": "reCAPTCHA op WordPress-formulieren",
+    "titleEn": "ReCAPTCHA on WordPress-formulieren",
+    "categories": [
+      "wordpress",
+      "wordpress-beveiliging"
+    ],
+    "topic": "tz-w2-th-wp-recaptcha-op-wordpress-formulieren-b7e35",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "wordpress-org-vs-com-updates-en-plugins",
+    "title": "WordPress.org vs .com: updates en plugins",
+    "titleEn": "WordPress.org vs .com: updates and plugins",
+    "categories": [
+      "wordpress",
+      "wordpress-installatie"
+    ],
+    "topic": "tz-w2-th-wp-wordpress-org-vs-com-updates-en-plugins-3b939",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "media-library-opruimen-zonder-broken-links",
+    "title": "Media library opruimen zonder broken links",
+    "titleEn": "Media library opruimen without broken links",
+    "categories": [
+      "wordpress",
+      "wordpress-onderhoud"
+    ],
+    "topic": "tz-w2-th-wp-media-library-opruimen-zonder-broken-lin-bb2a4",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "ev-en-ov-certificaten-wanneer-zinvol",
+    "title": "EV en OV certificaten: wanneer zinvol",
+    "titleEn": "EV and OV certificaten: when zinvol",
+    "categories": [
+      "beveiliging",
+      "ssl-certificaten"
+    ],
+    "topic": "tz-w2-th-sec-ev-en-ov-certificaten-wanneer-zinvol-78afd",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "csr-genereren-en-certificaat-installeren",
+    "title": "CSR genereren en certificaat installeren",
+    "titleEn": "CSR genereren and certificaat installeren",
+    "categories": [
+      "beveiliging",
+      "ssl-certificaten"
+    ],
+    "topic": "tz-w2-th-sec-csr-genereren-en-certificaat-installeren-bad7c",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "hsts-preload-checklist",
+    "title": "HSTS preload checklist",
+    "titleEn": "HSTS preload checklist",
+    "categories": [
+      "beveiliging",
+      "ssl-certificaten"
+    ],
+    "topic": "tz-w2-th-sec-hsts-preload-checklist-47d51",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "security-headers-csp-xfo-referrer-policy",
+    "title": "Security headers: CSP, XFO, Referrer-Policy",
+    "titleEn": "Security headers: CSP, XFO, Referrer-Policy",
+    "categories": [
+      "beveiliging",
+      "firewall-en-hacks"
+    ],
+    "topic": "tz-w2-th-sec-security-headers-csp-xfo-referrer-policy-62866",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "content-security-policy-voor-wordpress",
+    "title": "Content-Security-Policy voor WordPress",
+    "titleEn": "Content-Security-Policy for WordPress",
+    "categories": [
+      "beveiliging",
+      "wordpress-beveiliging"
+    ],
+    "topic": "tz-w2-th-sec-content-security-policy-voor-wordpress-59d2c",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "waf-regels-tunen-zonder-false-positives",
+    "title": "WAF-regels tunen zonder false positives",
+    "titleEn": "WAF-regels tunen without false positives",
+    "categories": [
+      "beveiliging",
+      "firewall-en-hacks",
+      "cdn-performance-cloudflare"
+    ],
+    "topic": "tz-w2-th-sec-waf-regels-tunen-zonder-false-positives-7a0d9",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "imunify-malware-scans-interpreteren",
+    "title": "Imunify/malware-scans interpreteren",
+    "titleEn": "Imunify/malware-scans interpreteren",
+    "categories": [
+      "beveiliging",
+      "wordpress-beveiliging"
+    ],
+    "topic": "tz-w2-th-sec-imunify-malware-scans-interpreteren-9efda",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "3-2-1-backups-in-de-praktijk",
+    "title": "3-2-1 backups in de praktijk",
+    "titleEn": "3-2-1 backups in practice",
+    "categories": [
+      "beveiliging",
+      "hosting",
+      "vps"
+    ],
+    "topic": "tz-w2-th-sec-3-2-1-backups-in-de-praktijk-fc35c",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "rto-en-rpo-uitleggen-aan-stakeholders",
+    "title": "RTO en RPO uitleggen aan stakeholders",
+    "titleEn": "RTO and RPO explain aan stakeholders",
+    "categories": [
+      "beveiliging",
+      "support",
+      "vps"
+    ],
+    "topic": "tz-w2-th-sec-rto-en-rpo-uitleggen-aan-stakeholders-3ba8a",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "incident-response-playbook-voor-je-site",
+    "title": "Incident response playbook voor je site",
+    "titleEn": "Incident response playbook for your site",
+    "categories": [
+      "beveiliging",
+      "support"
+    ],
+    "topic": "tz-w2-th-sec-incident-response-playbook-voor-je-site-3b2c0",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "passkeys-voor-website-logins",
+    "title": "Passkeys voor website-logins",
+    "titleEn": "Passkeys for website-logins",
+    "categories": [
+      "beveiliging",
+      "veilig-online-wachtwoorden"
+    ],
+    "topic": "tz-w2-th-sec-passkeys-voor-website-logins-ed5fc",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "have-i-been-pwned-lekchecks-voor-teams",
+    "title": "Have I Been Pwned: lekchecks voor teams",
+    "titleEn": "Have I Been Pwned: lekchecks for teams",
+    "categories": [
+      "beveiliging",
+      "veilig-online-wachtwoorden"
+    ],
+    "topic": "tz-w2-th-sec-have-i-been-pwned-lekchecks-voor-teams-6dfc6",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "modsecurity-false-positives-debuggen",
+    "title": "ModSecurity false positives debuggen",
+    "titleEn": "ModSecurity false positives debuggen",
+    "categories": [
+      "beveiliging",
+      "firewall-en-hacks"
+    ],
+    "topic": "tz-w2-th-sec-modsecurity-false-positives-debuggen-50cea",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "ddos-eerste-mitigatiestappen",
+    "title": "DDoS: eerste mitigatiestappen",
+    "titleEn": "DDoS: eerste mitigatiestappen",
+    "categories": [
+      "beveiliging",
+      "cdn-performance-cloudflare"
+    ],
+    "topic": "tz-w2-th-sec-ddos-eerste-mitigatiestappen-038ad",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "ssh-brute-force-stoppen",
+    "title": "SSH brute-force stoppen",
+    "titleEn": "SSH brute-force stoppen",
+    "categories": [
+      "beveiliging",
+      "vps",
+      "linux-vps"
+    ],
+    "topic": "tz-w2-th-sec-ssh-brute-force-stoppen-730a7",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "jetbackup-restore-scenarios",
+    "title": "JetBackup restore-scenario’s",
+    "titleEn": "JetBackup restore-scenario’s",
+    "categories": [
+      "beveiliging",
+      "hosting",
+      "directadmin"
+    ],
+    "topic": "tz-w2-th-sec-jetbackup-restore-scenarios-e8bbb",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "ptr-rdns-aanvragen-voor-je-mail-ip",
+    "title": "PTR / rDNS aanvragen voor je mail-IP",
+    "titleEn": "PTR / rDNS aanvragen for your mail-IP",
+    "categories": [
+      "domeinnamen",
+      "dns-records",
+      "e-mail"
+    ],
+    "topic": "tz-w2-th-dns-ptr-rdns-aanvragen-voor-je-mail-ip-c2601",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "geavanceerde-caa-policies-per-issuer",
+    "title": "Geavanceerde CAA-policies per issuer",
+    "titleEn": "Geavanceerde CAA-policies per issuer",
+    "categories": [
+      "domeinnamen",
+      "dns-records",
+      "ssl-certificaten"
+    ],
+    "topic": "tz-w2-th-dns-geavanceerde-caa-policies-per-issuer-2d2fa",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "dnssec-storingen-na-nameserver-wissel",
+    "title": "DNSSEC storingen na nameserver-wissel",
+    "titleEn": "DNSSEC storingen na nameserver-wissel",
+    "categories": [
+      "domeinnamen",
+      "dns-records",
+      "beveiliging"
+    ],
+    "topic": "tz-w2-th-dns-dnssec-storingen-na-nameserver-wissel-b32e9",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "aaaa-ipv6-naast-a-records",
+    "title": "AAAA (IPv6) naast A-records",
+    "titleEn": "AAAA (IPv6) naast A-records",
+    "categories": [
+      "domeinnamen",
+      "dns-records",
+      "hosting"
+    ],
+    "topic": "tz-w2-th-dns-aaaa-ipv6-naast-a-records-4c1c9",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "srv-records-troubleshooten",
+    "title": "SRV-records troubleshooten",
+    "titleEn": "SRV-records troubleshooten",
+    "categories": [
+      "domeinnamen",
+      "dns-records",
+      "microsoft"
+    ],
+    "topic": "tz-w2-th-dns-srv-records-troubleshooten-5571f",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "dns-load-balancing-met-meerdere-a-records",
+    "title": "DNS load balancing met meerdere A-records",
+    "titleEn": "DNS load balancing with meerdere A-records",
+    "categories": [
+      "domeinnamen",
+      "dns-records"
+    ],
+    "topic": "tz-w2-th-dns-dns-load-balancing-met-meerdere-a-record-aa25b",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "interne-docs-dns-change-window",
+    "title": "Interne docs: DNS change window",
+    "titleEn": "Interne docs: DNS change window",
+    "categories": [
+      "domeinnamen",
+      "dns-records",
+      "support"
+    ],
+    "topic": "tz-w2-th-dns-interne-docs-dns-change-window-41eae",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "nxdomain-versus-servfail-onderscheiden",
+    "title": "NXDOMAIN versus SERVFAIL onderscheiden",
+    "titleEn": "NXDOMAIN vs SERVFAIL onderscheiden",
+    "categories": [
+      "domeinnamen",
+      "dns-records"
+    ],
+    "topic": "tz-w2-th-dns-nxdomain-versus-servfail-onderscheiden-5d899",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "fair-use-en-dataverkeer-wat-betekent-het",
+    "title": "Fair use en dataverkeer: wat betekent het?",
+    "titleEn": "Fair use and dataverkeer: what does the?",
+    "categories": [
+      "shop-en-pakketten",
+      "hostingpakketten",
+      "opslag-en-verkeer"
+    ],
+    "topic": "tz-w2-th-crm-fair-use-en-dataverkeer-wat-betekent-het-58d1a",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "dienst-opzeggen-opzegtermijn-en-exports",
+    "title": "Dienst opzeggen: opzegtermijn en exports",
+    "titleEn": "Dienst opzeggen: opzegtermijn and exports",
+    "categories": [
+      "crm-klantenpanel",
+      "shop-en-pakketten"
+    ],
+    "topic": "tz-w2-th-crm-dienst-opzeggen-opzegtermijn-en-exports-bdcdb",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "automatische-incasso-mislukt-checklist",
+    "title": "Automatische incasso mislukt: checklist",
+    "titleEn": "Automatische incasso mislukt: checklist",
+    "categories": [
+      "crm-klantenpanel",
+      "facturen-en-betalen",
+      "betalen-en-btw"
+    ],
+    "topic": "tz-w2-th-crm-automatische-incasso-mislukt-checklist-f0369",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "affiliateprogramma-tracking-en-commissies",
+    "title": "Affiliateprogramma: tracking en commissies",
+    "titleEn": "Affiliateprogramma: tracking and commissies",
+    "categories": [
+      "shop-en-pakketten",
+      "crm-klantenpanel"
+    ],
+    "topic": "tz-w2-th-crm-affiliateprogramma-tracking-en-commissie-bc070",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "factuuradres-wijzigen-voor-btw-periode",
+    "title": "Factuuradres wijzigen vóór BTW-periode",
+    "titleEn": "Factuuradres wijzigen vóór BTW-periode",
+    "categories": [
+      "crm-klantenpanel",
+      "facturen-en-betalen"
+    ],
+    "topic": "tz-w2-th-crm-factuuradres-wijzigen-voor-btw-periode-bed02",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "extra-contactpersoon-toevoegen-aan-account",
+    "title": "Extra contactpersoon toevoegen aan account",
+    "titleEn": "Extra contactpersoon toevoegen aan account",
+    "categories": [
+      "crm-klantenpanel",
+      "account-en-inloggen"
+    ],
+    "topic": "tz-w2-th-crm-extra-contactpersoon-toevoegen-aan-accou-0cb99",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "downgrade-van-pakket-waar-let-je-op",
+    "title": "Downgrade van pakket: waar let je op?",
+    "titleEn": "Downgrade of pakket: waar let your on?",
+    "categories": [
+      "shop-en-pakketten",
+      "hostingpakketten"
+    ],
+    "topic": "tz-w2-th-crm-downgrade-van-pakket-waar-let-je-op-26edb",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "offerte-naar-bestelling-in-het-klantenpanel",
+    "title": "Offerte naar bestelling in het klantenpanel",
+    "titleEn": "Offerte to bestelling in the klantenpanel",
+    "categories": [
+      "crm-klantenpanel",
+      "shop-en-pakketten"
+    ],
+    "topic": "tz-w2-th-crm-offerte-naar-bestelling-in-het-klantenpa-13a4e",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "redis-als-object-cache-naast-page-cache",
+    "title": "Redis als object cache naast page cache",
+    "titleEn": "Redis als object cache naast page cache",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "caching-strategie",
+      "wordpress"
+    ],
+    "topic": "tz-w2-th-cdn-redis-als-object-cache-naast-page-cache-f83f6",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "memcached-voor-sessies-en-cache",
+    "title": "Memcached voor sessies en cache",
+    "titleEn": "Memcached for sessies and cache",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "caching-strategie",
+      "vps"
+    ],
+    "topic": "tz-w2-th-cdn-memcached-voor-sessies-en-cache-49c94",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "litespeed-cache-esi-en-login-excepties",
+    "title": "LiteSpeed Cache: ESI en login-excepties",
+    "titleEn": "LiteSpeed Cache: ESI and login-excepties",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "caching-strategie",
+      "wordpress"
+    ],
+    "topic": "tz-w2-th-cdn-litespeed-cache-esi-en-login-excepties-15b79",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "http-3-inschakelen-achter-cdn",
+    "title": "HTTP/3 inschakelen achter CDN",
+    "titleEn": "HTTP/3 inschakelen achter CDN",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "cdn-basics"
+    ],
+    "topic": "tz-w2-th-cdn-http-3-inschakelen-achter-cdn-a06b6",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "third-party-script-budget-afdwingen",
+    "title": "Third-party script budget afdwingen",
+    "titleEn": "Third-party script budget afdwingen",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "core-web-vitals",
+      "analytics-gtm-matomo"
+    ],
+    "topic": "tz-w2-th-cdn-third-party-script-budget-afdwingen-749f9",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "image-cdn-resizing-versus-vooraf-exporteren",
+    "title": "Image CDN resizing versus vooraf exporteren",
+    "titleEn": "Image CDN resizing vs vooraf exporteren",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "image-performance"
+    ],
+    "topic": "tz-w2-th-cdn-image-cdn-resizing-versus-vooraf-exporte-de23d",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "brotli-versus-gzip-op-origin",
+    "title": "Brotli versus Gzip op origin",
+    "titleEn": "Brotli vs Gzip on origin",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "caching-strategie"
+    ],
+    "topic": "tz-w2-th-cdn-brotli-versus-gzip-op-origin-4cd7d",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "early-hints-103-conceptueel",
+    "title": "Early Hints (103) conceptueel",
+    "titleEn": "Early Hints (103) conceptueel",
+    "categories": [
+      "cdn-performance-cloudflare",
+      "core-web-vitals"
+    ],
+    "topic": "tz-w2-th-cdn-early-hints-103-conceptueel-ea66f",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "woocommerce-hpos-wat-verandert-er",
+    "title": "WooCommerce HPOS: wat verandert er?",
+    "titleEn": "WooCommerce HPOS: wat verandert er?",
+    "categories": [
+      "e-commerce-webshops",
+      "woocommerce-diepte"
+    ],
+    "topic": "tz-w2-th-ec-woocommerce-hpos-wat-verandert-er-2a3f9",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "mollie-subscriptions-voor-lidmaatschappen",
+    "title": "Mollie subscriptions voor lidmaatschappen",
+    "titleEn": "Mollie subscriptions for lidmaatschappen",
+    "categories": [
+      "e-commerce-webshops",
+      "betalingen-mollie-ideal"
+    ],
+    "topic": "tz-w2-th-ec-mollie-subscriptions-voor-lidmaatschappe-431a8",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "woocommerce-blocks-checkout-optimaliseren",
+    "title": "WooCommerce Blocks checkout optimaliseren",
+    "titleEn": "WooCommerce Blocks checkout optimaliseren",
+    "categories": [
+      "e-commerce-webshops",
+      "woocommerce-diepte"
+    ],
+    "topic": "tz-w2-th-ec-woocommerce-blocks-checkout-optimalisere-01af8",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "b2b-prijzen-in-woocommerce",
+    "title": "B2B-prijzen in WooCommerce",
+    "titleEn": "B2B-prijzen in WooCommerce",
+    "categories": [
+      "e-commerce-webshops",
+      "woocommerce-diepte"
+    ],
+    "topic": "tz-w2-th-ec-b2b-prijzen-in-woocommerce-c0604",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "meertalige-webshop-zonder-duplicate-content",
+    "title": "Meertalige webshop zonder duplicate content",
+    "titleEn": "Meertalige online store without duplicate content",
+    "categories": [
+      "e-commerce-webshops",
+      "productfeed-seo",
+      "aeo-geo-seo"
+    ],
+    "topic": "tz-w2-th-ec-meertalige-webshop-zonder-duplicate-cont-cac8b",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "abandoned-cart-e-mails-ethisch-inzetten",
+    "title": "Abandoned cart e-mails ethisch inzetten",
+    "titleEn": "Abandoned cart e-mails ethisch inzetten",
+    "categories": [
+      "e-commerce-webshops",
+      "conversie-optimalisatie"
+    ],
+    "topic": "tz-w2-th-ec-abandoned-cart-e-mails-ethisch-inzetten-135fe",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "voorraad-en-backorders-helder-communiceren",
+    "title": "Voorraad en backorders helder communiceren",
+    "titleEn": "Voorraad and backorders helder communiceren",
+    "categories": [
+      "e-commerce-webshops",
+      "woocommerce-diepte"
+    ],
+    "topic": "tz-w2-th-ec-voorraad-en-backorders-helder-communicer-d7c28",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "ideal-qr-en-mobile-checkout",
+    "title": "iDEAL QR en mobile checkout",
+    "titleEn": "IDEAL QR and mobile checkout",
+    "categories": [
+      "e-commerce-webshops",
+      "betalingen-mollie-ideal"
+    ],
+    "topic": "tz-w2-th-ec-ideal-qr-en-mobile-checkout-056d1",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "productvarianten-en-seo-een-url-strategie",
+    "title": "Productvarianten en SEO: één URL-strategie",
+    "titleEn": "Productvarianten and SEO: één URL-strategie",
+    "categories": [
+      "e-commerce-webshops",
+      "productfeed-seo"
+    ],
+    "topic": "tz-w2-th-ec-productvarianten-en-seo-een-url-strategi-e56e4",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "retourproces-voor-webshops-technisch-ondersteunen",
+    "title": "Retourproces voor webshops technisch ondersteunen",
+    "titleEn": "Retourproces for webshops technisch ondersteunen",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-regels-nl"
+    ],
+    "topic": "tz-w2-th-ec-retourproces-voor-webshops-technisch-ond-bb17f",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "btw-tarieven-per-land-in-woocommerce",
+    "title": "BTW-tarieven per land in WooCommerce",
+    "titleEn": "BTW-tarieven per land in WooCommerce",
+    "categories": [
+      "e-commerce-webshops",
+      "betalingen-mollie-ideal"
+    ],
+    "topic": "tz-w2-th-ec-btw-tarieven-per-land-in-woocommerce-3d3e5",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "voorraadfeeds-synchroniseren-met-magazijn",
+    "title": "Voorraadfeeds synchroniseren met Magazijn",
+    "titleEn": "Voorraadfeeds synchroniseren with Magazijn",
+    "categories": [
+      "e-commerce-webshops",
+      "woocommerce-diepte"
+    ],
+    "topic": "tz-w2-th-ec-voorraadfeeds-synchroniseren-met-magazij-453ab",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "checkout-fields-minimaliseren-zonder-dataverlies",
+    "title": "Checkout fields minimaliseren zonder dataverlies",
+    "titleEn": "Checkout fields minimaliseren without dataverlies",
+    "categories": [
+      "e-commerce-webshops",
+      "conversie-optimalisatie"
+    ],
+    "topic": "tz-w2-th-ec-checkout-fields-minimaliseren-zonder-dat-1eb60",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "frauderegels-bij-hoge-aov-bestellingen",
+    "title": "Frauderegels bij hoge AOV-bestellingen",
+    "titleEn": "Frauderegels at hoge AOV-bestellingen",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-beveiliging"
+    ],
+    "topic": "tz-w2-th-ec-frauderegels-bij-hoge-aov-bestellingen-46c21",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "pakketpunten-en-verzendplugins-vergelijken",
+    "title": "Pakketpunten en verzendplugins vergelijken",
+    "titleEn": "Pakketpunten and verzendplugins vergelijken",
+    "categories": [
+      "e-commerce-webshops",
+      "woocommerce-diepte"
+    ],
+    "topic": "tz-w2-th-ec-pakketpunten-en-verzendplugins-vergelijk-71017",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "gift-cards-en-tegoeden-veilig-verwerken",
+    "title": "Gift cards en tegoeden veilig verwerken",
+    "titleEn": "Gift cards and tegoeden safely verwerken",
+    "categories": [
+      "e-commerce-webshops",
+      "betalingen-mollie-ideal"
+    ],
+    "topic": "tz-w2-th-ec-gift-cards-en-tegoeden-veilig-verwerken-8ea6c",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "pre-order-flows-zonder-voorraadchaos",
+    "title": "Pre-order flows zonder voorraadchaos",
+    "titleEn": "Pre-order flows without voorraadchaos",
+    "categories": [
+      "e-commerce-webshops",
+      "woocommerce-diepte"
+    ],
+    "topic": "tz-w2-th-ec-pre-order-flows-zonder-voorraadchaos-b5525",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "marketplace-feeds-naast-eigen-shop",
+    "title": "Marketplace-feeds naast eigen shop",
+    "titleEn": "Marketplace-feeds naast eigen shop",
+    "categories": [
+      "e-commerce-webshops",
+      "productfeed-seo"
+    ],
+    "topic": "tz-w2-th-ec-marketplace-feeds-naast-eigen-shop-a075b",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "woocommerce-rest-api-keys-roteren",
+    "title": "WooCommerce REST API-keys roteren",
+    "titleEn": "WooCommerce REST API-keys roteren",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-beveiliging"
+    ],
+    "topic": "tz-w2-th-ec-woocommerce-rest-api-keys-roteren-99796",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "performance-budget-voor-productpaginas",
+    "title": "Performance budget voor productpagina’s",
+    "titleEn": "Performance budget for productpagina’s",
+    "categories": [
+      "e-commerce-webshops",
+      "webshop-performance"
+    ],
+    "topic": "tz-w2-th-ec-performance-budget-voor-productpaginas-49671",
+    "module": "thicken",
+    "rewrite": false
+  },
+  {
+    "slug": "mysql-databases-beheren-in-phpmyadmin",
+    "title": "MySQL databases beheren in PhpMyAdmin",
+    "titleEn": "MySQL databases beheren in PhpMyAdmin",
+    "categories": [
+      "hosting",
+      "hosting-overige"
+    ],
+    "topic": "tz-w2-rw-mysql-databases-beheren-in-phpmyadminmys-e9ddc",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "403-forbidden-melding-op-je-website-oplossen",
+    "title": "403 Forbidden-melding op je website oplossen",
+    "titleEn": "403 Forbidden-melding on your website fix",
+    "categories": [
+      "hosting",
+      "hosting-overige"
+    ],
+    "topic": "tz-w2-rw-403-forbidden-melding-op-je-website-oplo-cba75",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "access-database-omzetten-naar-mysql",
+    "title": "Access-database omzetten naar MySQL",
+    "titleEn": "Access-database omzetten to MySQL",
+    "categories": [
+      "hosting",
+      "hosting-overige"
+    ],
+    "topic": "tz-w2-rw-access-database-omzetten-naar-mysqlacces-cc496",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "alles-over-dnssec",
+    "title": "Alles over DNSSEC",
+    "titleEn": "Alles over DNSSEC",
+    "categories": [
+      "domeinnamen",
+      "dns-records"
+    ],
+    "topic": "tz-w2-rw-alles-over-dnssecalles-over-dnssec-077f2",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "application-pool-aanmaken-op-je-vps",
+    "title": "Application pool en site aanmaken op je VPS",
+    "titleEn": "Application pool and site aanmaken on your VPS",
+    "categories": [
+      "vps",
+      "windows-vps"
+    ],
+    "topic": "tz-w2-rw-application-pool-en-site-aanmaken-op-je-024d1",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "backups-terugplaatsen",
+    "title": "Backups terugplaatsen",
+    "titleEn": "Backups terugplaatsen",
+    "categories": [
+      "hosting",
+      "hosting-overige"
+    ],
+    "topic": "tz-w2-rw-backups-terugplaatsenbackups-terugplaats-9436e",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "bestandsbeheer-in-directadmin",
+    "title": "Bestandsbeheer op een DirectAdmin VPS",
+    "titleEn": "Bestandsbeheer on a DirectAdmin VPS",
+    "categories": [
+      "vps",
+      "directadmin",
+      "directadmin-overige",
+      "vps-overige"
+    ],
+    "topic": "tz-w2-rw-bestandsbeheer-op-een-directadmin-vpsbes-70d09",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "betekenis-http-statuscodes",
+    "title": "Betekenis van HTTP-statuscodes",
+    "titleEn": "Betekenis of HTTP-statuscodes",
+    "categories": [
+      "hosting",
+      "hosting-overige"
+    ],
+    "topic": "tz-w2-rw-betekenis-van-http-statuscodesbetekenis-4d28c",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "beveilig-een-linux-vps-met-fail2ban",
+    "title": "Linux VPS beveiligen met Fail2Ban",
+    "titleEn": "Linux VPS secure with Fail2Ban",
+    "categories": [
+      "vps",
+      "linux-vps"
+    ],
+    "topic": "tz-w2-rw-linux-vps-beveiligen-met-fail2banbeveili-c610b",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "bindings-toevoegen-op-een-windows-vps",
+    "title": "Bindings toevoegen op een Windows VPS",
+    "titleEn": "Bindings toevoegen on a Windows VPS",
+    "categories": [
+      "vps",
+      "windows-vps"
+    ],
+    "topic": "tz-w2-rw-bindings-toevoegen-op-een-windows-vpsbin-fefbe",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "blacklisting",
+    "title": "Blacklisting",
+    "titleEn": "Blacklisting",
+    "categories": [
+      "e-mail",
+      "e-mail-overige"
+    ],
+    "topic": "tz-w2-rw-blacklistingblacklisting-e5ade",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "centos-vps-beveiligen",
+    "title": "CentOS VPS beveiligen",
+    "titleEn": "CentOS VPS secure",
+    "categories": [
+      "vps",
+      "linux-vps"
+    ],
+    "topic": "tz-w2-rw-centos-vps-beveiligencentos-vps-beveilig-00a7c",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "cloud-vps-opnieuw-installeren",
+    "title": "Cloud VPS opnieuw installeren",
+    "titleEn": "Cloud VPS opnieuw installeren",
+    "categories": [
+      "vps",
+      "vps-overige"
+    ],
+    "topic": "tz-w2-rw-cloud-vps-opnieuw-installerencloud-vps-o-5316e",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "cpu-cores-en-ram-voor-vps",
+    "title": "CPU Cores en RAM voor VPS",
+    "titleEn": "CPU Cores and RAM for VPS",
+    "categories": [
+      "vps",
+      "vps-beheer"
+    ],
+    "topic": "tz-w2-rw-cpu-cores-en-ram-voor-vpscpu-cores-en-ra-66ceb",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "directory-aanmaken-op-een-windows-vps",
+    "title": "Directory aanmaken op een Windows VPS",
+    "titleEn": "Directory aanmaken on a Windows VPS",
+    "categories": [
+      "vps",
+      "windows-vps"
+    ],
+    "topic": "tz-w2-rw-directory-aanmaken-op-een-windows-vpsdir-0c354",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "dns-service-en-externe-domeinnamen",
+    "title": "DNS-service en externe domeinnamen",
+    "titleEn": "DNS-service and externe domeinnamen",
+    "categories": [
+      "domeinnamen",
+      "domeinnamen-overige"
+    ],
+    "topic": "tz-w2-rw-dns-service-en-externe-domeinnamendns-se-36be0",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "domein-koppelen-aan-een-vps",
+    "title": "Domein koppelen aan een VPS",
+    "titleEn": "Domein koppelen aan a VPS",
+    "categories": [
+      "vps",
+      "domeinnamen",
+      "domeinnamen-overige",
+      "vps-overige"
+    ],
+    "topic": "tz-w2-rw-domein-koppelen-aan-een-vpsdomein-koppel-3a75d",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "een-phpinfo-bestand-maken",
+    "title": "Een phpinfo bestand maken",
+    "titleEn": "A phpinfo bestand maken",
+    "categories": [
+      "hosting",
+      "php-en-scripts"
+    ],
+    "topic": "tz-w2-rw-een-phpinfo-bestand-makeneen-phpinfo-bes-3c032",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "eigen-error-of-404-pagina-instellen-voor-je-website",
+    "title": "Eigen error of 404-pagina instellen voor je website",
+    "titleEn": "Eigen error of 404-pagina configure for your website",
+    "categories": [
+      "hosting",
+      "hosting-overige"
+    ],
+    "topic": "tz-w2-rw-eigen-error-of-404-pagina-instellen-voor-e16fe",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "gebruikers-aanmaken-op-een-vps",
+    "title": "Gebruikers aanmaken op een Windows VPS",
+    "titleEn": "Gebruikers aanmaken on a Windows VPS",
+    "categories": [
+      "vps",
+      "windows-vps"
+    ],
+    "topic": "tz-w2-rw-gebruikers-aanmaken-op-een-windows-vpsge-72076",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "gratis-ssl-activeren-beheren",
+    "title": "Gratis SSL-certificaat activeren en beheren",
+    "titleEn": "Gratis SSL-certificaat activeren and beheren",
+    "categories": [
+      "ssl-certificaten",
+      "beveiliging"
+    ],
+    "topic": "tz-w2-rw-gratis-ssl-certificaat-activeren-en-behe-44c5f",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "http-2-activeren-op-centos-7",
+    "title": "HTTP/2 activeren op CentOS 7",
+    "titleEn": "HTTP/2 activeren on CentOS 7",
+    "categories": [
+      "vps",
+      "linux-vps"
+    ],
+    "topic": "tz-w2-rw-http-2-activeren-op-centos-7http-2-activ-97c0b",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "inloggen-op-je-mysql-database",
+    "title": "Inloggen op je MySQL database",
+    "titleEn": "Inloggen on your MySQL database",
+    "categories": [
+      "hosting",
+      "hosting-overige"
+    ],
+    "topic": "tz-w2-rw-inloggen-op-je-mysql-databaseinloggen-op-cf638",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "inloggen-op-managed-vps-bij-triplezero-it",
+    "title": "Inloggen op een managed VPS bij TripleZero iT",
+    "titleEn": "Inloggen on a managed VPS at TripleZero iT",
+    "categories": [
+      "vps",
+      "vps-beheer"
+    ],
+    "topic": "tz-w2-rw-inloggen-op-een-managed-vps-bij-tripleze-865a8",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "internal-server-500-of-wit-scherm-oplossen",
+    "title": "Internal Server 500 of wit scherm oplossen",
+    "titleEn": "Internal Server 500 of wit scherm fix",
+    "categories": [
+      "hosting",
+      "hosting-overige"
+    ],
+    "topic": "tz-w2-rw-internal-server-500-of-wit-scherm-oploss-272ae",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "ip-adressen-beheren-op-je-vps",
+    "title": "IP-adressen beheren op je VPS",
+    "titleEn": "IP-adressen beheren on your VPS",
+    "categories": [
+      "vps",
+      "vps-beheer"
+    ],
+    "topic": "tz-w2-rw-ip-adressen-beheren-op-je-vpsip-adressen-f8342",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "magento-2-installeren-op-een-vps",
+    "title": "Magento 2 installeren op een VPS",
+    "titleEn": "Magento 2 installeren on a VPS",
+    "categories": [
+      "vps",
+      "vps-overige"
+    ],
+    "topic": "tz-w2-rw-magento-2-installeren-op-een-vpsmagento-7d497",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "mail-backup-in-outlook",
+    "title": "Mail backup in Outlook",
+    "titleEn": "Mail backup in Outlook",
+    "categories": [
+      "e-mail",
+      "e-mail-overige"
+    ],
+    "topic": "tz-w2-rw-mail-backup-in-outlookmail-backup-in-out-13ec3",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "mail-backup-in-thunderbird",
+    "title": "Mail backup in Thunderbird",
+    "titleEn": "Mail backup in Thunderbird",
+    "categories": [
+      "e-mail",
+      "e-mail-overige"
+    ],
+    "topic": "tz-w2-rw-mail-backup-in-thunderbirdmail-backup-in-a5da3",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "mail-backup-in-webmail",
+    "title": "Mail backup in webmail",
+    "titleEn": "Mail backup in webmail",
+    "categories": [
+      "e-mail",
+      "webmail"
+    ],
+    "topic": "tz-w2-rw-mail-backup-in-webmailmail-backup-in-web-e4ee7",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "managed-vps-beheren-bij-triplezero-it",
+    "title": "Een managed VPS beheren bij TripleZero iT",
+    "titleEn": "A managed VPS beheren at TripleZero iT",
+    "categories": [
+      "vps",
+      "vps-beheer"
+    ],
+    "topic": "tz-w2-rw-een-managed-vps-beheren-bij-triplezero-i-a5c48",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "mysql-database-aanmaken-in-het-control-panel",
+    "title": "Database aanmaken",
+    "titleEn": "Database aanmaken",
+    "categories": [
+      "hosting",
+      "hosting-overige"
+    ],
+    "topic": "tz-w2-rw-database-aanmakenmysql-database-aanmaken-f6761",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "mysql-database-probleemoplossing",
+    "title": "MySQL database probleemoplossing",
+    "titleEn": "MySQL database probleemoplossing",
+    "categories": [
+      "hosting",
+      "hosting-overige"
+    ],
+    "topic": "tz-w2-rw-mysql-database-probleemoplossingmysql-da-f2980",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "php-mail-versturen-vanaf-je-website",
+    "title": "PHP-mail versturen vanaf je website",
+    "titleEn": "PHP-mail versturen vanaf your website",
+    "categories": [
+      "e-mail",
+      "e-mail-overige"
+    ],
+    "topic": "tz-w2-rw-php-mail-versturen-vanaf-je-websitephp-m-aaec5",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "plesk-updaten-op-je-vps",
+    "title": "Plesk updaten op je VPS",
+    "titleEn": "Plesk updaten on your VPS",
+    "categories": [
+      "vps",
+      "plesk",
+      "vps-overige",
+      "plesk-php-vps"
+    ],
+    "topic": "tz-w2-rw-plesk-updaten-op-je-vpsplesk-updaten-op-c4936",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "premium-dns",
+    "title": "Premium DNS",
+    "titleEn": "Premium DNS",
+    "categories": [
+      "domeinnamen",
+      "dns-records"
+    ],
+    "topic": "tz-w2-rw-premium-dnspremium-dns-a8398",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "rdp-verbinding-maken-met-vps",
+    "title": "RDP verbinding maken met VPS",
+    "titleEn": "RDP verbinding maken with VPS",
+    "categories": [
+      "vps",
+      "windows-vps"
+    ],
+    "topic": "tz-w2-rw-rdp-verbinding-maken-met-vpsrdp-verbindi-296dd",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "reverse-dns-instellen",
+    "title": "Reverse DNS instellen",
+    "titleEn": "Reverse DNS configure",
+    "categories": [
+      "vps",
+      "domeinnamen",
+      "dns-records",
+      "vps-overige"
+    ],
+    "topic": "tz-w2-rw-reverse-dns-instellenreverse-dns-instell-93d03",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "root-wachtwoord-herstellen-vps",
+    "title": "Root wachtwoord herstellen VPS",
+    "titleEn": "Root wachtwoord herstellen VPS",
+    "categories": [
+      "vps",
+      "veilig-online",
+      "beveiliging",
+      "linux-vps",
+      "beveiliging-overige",
+      "veilig-online-wachtwoorden"
+    ],
+    "topic": "tz-w2-rw-root-wachtwoord-herstellen-vpsroot-wacht-6eed8",
+    "module": "rewrite",
+    "rewrite": true
+  },
+  {
+    "slug": "sha2-en-ssl",
+    "title": "SHA2 en SSL",
+    "titleEn": "SHA2 and SSL",
+    "categories": [
+      "ssl-certificaten",
+      "beveiliging"
+    ],
+    "topic": "tz-w2-rw-sha2-en-sslsha2-en-ssl-3612c",
+    "module": "rewrite",
+    "rewrite": true
+  }
+]

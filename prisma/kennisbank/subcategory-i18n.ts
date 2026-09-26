@@ -1098,4 +1098,1122 @@ export const SUBCATEGORY_I18N: Record<string, LocaleCopy> = {
       "Data breach, bambini online, privacy social, shopping e identità.",
     ],
   ),
+  "nextjs-en-react": loc(
+    [
+      "Next.js and React",
+      "App Router, SSR/SSG, server components and SEO-ready React apps.",
+    ],
+    [
+      "Next.js and React",
+      "App Router, SSR/SSG, server components and SEO-ready React apps.",
+    ],
+    [
+      "Next.js and React",
+      "App Router, SSR/SSG, server components and SEO-ready React apps.",
+    ],
+    [
+      "Next.js and React",
+      "App Router, SSR/SSG, server components and SEO-ready React apps.",
+    ],
+    [
+      "Next.js and React",
+      "App Router, SSR/SSG, server components and SEO-ready React apps.",
+    ],
+    [
+      "Next.js and React",
+      "App Router, SSR/SSG, server components and SEO-ready React apps.",
+    ],
+  ),
+  "php-maatwerk": loc(
+    [
+      "Custom PHP",
+      "PHP portals, API backends and custom applications.",
+    ],
+    [
+      "Custom PHP",
+      "PHP portals, API backends and custom applications.",
+    ],
+    [
+      "Custom PHP",
+      "PHP portals, API backends and custom applications.",
+    ],
+    [
+      "Custom PHP",
+      "PHP portals, API backends and custom applications.",
+    ],
+    [
+      "Custom PHP",
+      "PHP portals, API backends and custom applications.",
+    ],
+    [
+      "Custom PHP",
+      "PHP portals, API backends and custom applications.",
+    ],
+  ),
+  "html-css-js": loc(
+    [
+      "HTML, CSS and JavaScript",
+      "Lean front-end builds without a heavy CMS.",
+    ],
+    [
+      "HTML, CSS and JavaScript",
+      "Lean front-end builds without a heavy CMS.",
+    ],
+    [
+      "HTML, CSS and JavaScript",
+      "Lean front-end builds without a heavy CMS.",
+    ],
+    [
+      "HTML, CSS and JavaScript",
+      "Lean front-end builds without a heavy CMS.",
+    ],
+    [
+      "HTML, CSS and JavaScript",
+      "Lean front-end builds without a heavy CMS.",
+    ],
+    [
+      "HTML, CSS and JavaScript",
+      "Lean front-end builds without a heavy CMS.",
+    ],
+  ),
+  "landingspaginas": loc(
+    [
+      "Landing pages",
+      "Conversion-focused landing pages, structure and A/B testing.",
+    ],
+    [
+      "Landing pages",
+      "Conversion-focused landing pages, structure and A/B testing.",
+    ],
+    [
+      "Landing pages",
+      "Conversion-focused landing pages, structure and A/B testing.",
+    ],
+    [
+      "Landing pages",
+      "Conversion-focused landing pages, structure and A/B testing.",
+    ],
+    [
+      "Landing pages",
+      "Conversion-focused landing pages, structure and A/B testing.",
+    ],
+    [
+      "Landing pages",
+      "Conversion-focused landing pages, structure and A/B testing.",
+    ],
+  ),
+  "onderhoud-maatwerk": loc(
+    [
+      "Custom site maintenance",
+      "Updates, monitoring and iteration after go-live.",
+    ],
+    [
+      "Custom site maintenance",
+      "Updates, monitoring and iteration after go-live.",
+    ],
+    [
+      "Custom site maintenance",
+      "Updates, monitoring and iteration after go-live.",
+    ],
+    [
+      "Custom site maintenance",
+      "Updates, monitoring and iteration after go-live.",
+    ],
+    [
+      "Custom site maintenance",
+      "Updates, monitoring and iteration after go-live.",
+    ],
+    [
+      "Custom site maintenance",
+      "Updates, monitoring and iteration after go-live.",
+    ],
+  ),
+  "llm-en-chatbots": loc(
+    [
+      "LLMs and chatbots",
+      "ChatGPT/Claude integrations, site bots and safe prompts.",
+    ],
+    [
+      "LLMs and chatbots",
+      "ChatGPT/Claude integrations, site bots and safe prompts.",
+    ],
+    [
+      "LLMs and chatbots",
+      "ChatGPT/Claude integrations, site bots and safe prompts.",
+    ],
+    [
+      "LLMs and chatbots",
+      "ChatGPT/Claude integrations, site bots and safe prompts.",
+    ],
+    [
+      "LLMs and chatbots",
+      "ChatGPT/Claude integrations, site bots and safe prompts.",
+    ],
+    [
+      "LLMs and chatbots",
+      "ChatGPT/Claude integrations, site bots and safe prompts.",
+    ],
+  ),
+  "workflows-n8n-zapier": loc(
+    [
+      "n8n and Zapier workflows",
+      "Automation between tools, CRM and website.",
+    ],
+    [
+      "n8n and Zapier workflows",
+      "Automation between tools, CRM and website.",
+    ],
+    [
+      "n8n and Zapier workflows",
+      "Automation between tools, CRM and website.",
+    ],
+    [
+      "n8n and Zapier workflows",
+      "Automation between tools, CRM and website.",
+    ],
+    [
+      "n8n and Zapier workflows",
+      "Automation between tools, CRM and website.",
+    ],
+    [
+      "n8n and Zapier workflows",
+      "Automation between tools, CRM and website.",
+    ],
+  ),
+  "api-webhooks": loc(
+    [
+      "APIs and webhooks",
+      "Integrations, webhooks, auth and error handling.",
+    ],
+    [
+      "APIs and webhooks",
+      "Integrations, webhooks, auth and error handling.",
+    ],
+    [
+      "APIs and webhooks",
+      "Integrations, webhooks, auth and error handling.",
+    ],
+    [
+      "APIs and webhooks",
+      "Integrations, webhooks, auth and error handling.",
+    ],
+    [
+      "APIs and webhooks",
+      "Integrations, webhooks, auth and error handling.",
+    ],
+    [
+      "APIs and webhooks",
+      "Integrations, webhooks, auth and error handling.",
+    ],
+  ),
+  "ai-content-strategie": loc(
+    [
+      "AI content strategy",
+      "Content calendars, brand voice and AI-assisted writing.",
+    ],
+    [
+      "AI content strategy",
+      "Content calendars, brand voice and AI-assisted writing.",
+    ],
+    [
+      "AI content strategy",
+      "Content calendars, brand voice and AI-assisted writing.",
+    ],
+    [
+      "AI content strategy",
+      "Content calendars, brand voice and AI-assisted writing.",
+    ],
+    [
+      "AI content strategy",
+      "Content calendars, brand voice and AI-assisted writing.",
+    ],
+    [
+      "AI content strategy",
+      "Content calendars, brand voice and AI-assisted writing.",
+    ],
+  ),
+  "ai-consultancy": loc(
+    [
+      "AI consultancy",
+      "Strategy, use cases and implementation advice.",
+    ],
+    [
+      "AI consultancy",
+      "Strategy, use cases and implementation advice.",
+    ],
+    [
+      "AI consultancy",
+      "Strategy, use cases and implementation advice.",
+    ],
+    [
+      "AI consultancy",
+      "Strategy, use cases and implementation advice.",
+    ],
+    [
+      "AI consultancy",
+      "Strategy, use cases and implementation advice.",
+    ],
+    [
+      "AI consultancy",
+      "Strategy, use cases and implementation advice.",
+    ],
+  ),
+  "analytics-gtm-matomo": loc(
+    [
+      "Analytics, GTM and Matomo",
+      "Measurement, tags and privacy-friendly analytics.",
+    ],
+    [
+      "Analytics, GTM and Matomo",
+      "Measurement, tags and privacy-friendly analytics.",
+    ],
+    [
+      "Analytics, GTM and Matomo",
+      "Measurement, tags and privacy-friendly analytics.",
+    ],
+    [
+      "Analytics, GTM and Matomo",
+      "Measurement, tags and privacy-friendly analytics.",
+    ],
+    [
+      "Analytics, GTM and Matomo",
+      "Measurement, tags and privacy-friendly analytics.",
+    ],
+    [
+      "Analytics, GTM and Matomo",
+      "Measurement, tags and privacy-friendly analytics.",
+    ],
+  ),
+  "conversie-optimalisatie": loc(
+    [
+      "Conversion optimisation",
+      "CRO, funnels, CTAs and A/B testing.",
+    ],
+    [
+      "Conversion optimisation",
+      "CRO, funnels, CTAs and A/B testing.",
+    ],
+    [
+      "Conversion optimisation",
+      "CRO, funnels, CTAs and A/B testing.",
+    ],
+    [
+      "Conversion optimisation",
+      "CRO, funnels, CTAs and A/B testing.",
+    ],
+    [
+      "Conversion optimisation",
+      "CRO, funnels, CTAs and A/B testing.",
+    ],
+    [
+      "Conversion optimisation",
+      "CRO, funnels, CTAs and A/B testing.",
+    ],
+  ),
+  "core-web-vitals": loc(
+    [
+      "Core Web Vitals",
+      "LCP, INP, CLS and speed improvements.",
+    ],
+    [
+      "Core Web Vitals",
+      "LCP, INP, CLS and speed improvements.",
+    ],
+    [
+      "Core Web Vitals",
+      "LCP, INP, CLS and speed improvements.",
+    ],
+    [
+      "Core Web Vitals",
+      "LCP, INP, CLS and speed improvements.",
+    ],
+    [
+      "Core Web Vitals",
+      "LCP, INP, CLS and speed improvements.",
+    ],
+    [
+      "Core Web Vitals",
+      "LCP, INP, CLS and speed improvements.",
+    ],
+  ),
+  "toegankelijkheid-wcag": loc(
+    [
+      "Accessibility (WCAG)",
+      "WCAG, keyboard, contrast and screen readers.",
+    ],
+    [
+      "Accessibility (WCAG)",
+      "WCAG, keyboard, contrast and screen readers.",
+    ],
+    [
+      "Accessibility (WCAG)",
+      "WCAG, keyboard, contrast and screen readers.",
+    ],
+    [
+      "Accessibility (WCAG)",
+      "WCAG, keyboard, contrast and screen readers.",
+    ],
+    [
+      "Accessibility (WCAG)",
+      "WCAG, keyboard, contrast and screen readers.",
+    ],
+    [
+      "Accessibility (WCAG)",
+      "WCAG, keyboard, contrast and screen readers.",
+    ],
+  ),
+  "structured-data-schema": loc(
+    [
+      "Structured data (schema)",
+      "JSON-LD, FAQ, HowTo, Product and Organization.",
+    ],
+    [
+      "Structured data (schema)",
+      "JSON-LD, FAQ, HowTo, Product and Organization.",
+    ],
+    [
+      "Structured data (schema)",
+      "JSON-LD, FAQ, HowTo, Product and Organization.",
+    ],
+    [
+      "Structured data (schema)",
+      "JSON-LD, FAQ, HowTo, Product and Organization.",
+    ],
+    [
+      "Structured data (schema)",
+      "JSON-LD, FAQ, HowTo, Product and Organization.",
+    ],
+    [
+      "Structured data (schema)",
+      "JSON-LD, FAQ, HowTo, Product and Organization.",
+    ],
+  ),
+  "woocommerce-diepte": loc(
+    [
+      "WooCommerce deep dive",
+      "Catalogue, checkout, inventory and extensions.",
+    ],
+    [
+      "WooCommerce deep dive",
+      "Catalogue, checkout, inventory and extensions.",
+    ],
+    [
+      "WooCommerce deep dive",
+      "Catalogue, checkout, inventory and extensions.",
+    ],
+    [
+      "WooCommerce deep dive",
+      "Catalogue, checkout, inventory and extensions.",
+    ],
+    [
+      "WooCommerce deep dive",
+      "Catalogue, checkout, inventory and extensions.",
+    ],
+    [
+      "WooCommerce deep dive",
+      "Catalogue, checkout, inventory and extensions.",
+    ],
+  ),
+  "betalingen-mollie-ideal": loc(
+    [
+      "Mollie and iDEAL payments",
+      "Mollie, iDEAL, cards and refunds.",
+    ],
+    [
+      "Mollie and iDEAL payments",
+      "Mollie, iDEAL, cards and refunds.",
+    ],
+    [
+      "Mollie and iDEAL payments",
+      "Mollie, iDEAL, cards and refunds.",
+    ],
+    [
+      "Mollie and iDEAL payments",
+      "Mollie, iDEAL, cards and refunds.",
+    ],
+    [
+      "Mollie and iDEAL payments",
+      "Mollie, iDEAL, cards and refunds.",
+    ],
+    [
+      "Mollie and iDEAL payments",
+      "Mollie, iDEAL, cards and refunds.",
+    ],
+  ),
+  "productfeed-seo": loc(
+    [
+      "Product feeds and SEO",
+      "Feeds, rich results and product SEO.",
+    ],
+    [
+      "Product feeds and SEO",
+      "Feeds, rich results and product SEO.",
+    ],
+    [
+      "Product feeds and SEO",
+      "Feeds, rich results and product SEO.",
+    ],
+    [
+      "Product feeds and SEO",
+      "Feeds, rich results and product SEO.",
+    ],
+    [
+      "Product feeds and SEO",
+      "Feeds, rich results and product SEO.",
+    ],
+    [
+      "Product feeds and SEO",
+      "Feeds, rich results and product SEO.",
+    ],
+  ),
+  "webshop-performance": loc(
+    [
+      "Store performance",
+      "Speed, caching and scalability for shops.",
+    ],
+    [
+      "Store performance",
+      "Speed, caching and scalability for shops.",
+    ],
+    [
+      "Store performance",
+      "Speed, caching and scalability for shops.",
+    ],
+    [
+      "Store performance",
+      "Speed, caching and scalability for shops.",
+    ],
+    [
+      "Store performance",
+      "Speed, caching and scalability for shops.",
+    ],
+    [
+      "Store performance",
+      "Speed, caching and scalability for shops.",
+    ],
+  ),
+  "webshop-beveiliging": loc(
+    [
+      "Store security",
+      "PCI practice, fraud detection and hardening.",
+    ],
+    [
+      "Store security",
+      "PCI practice, fraud detection and hardening.",
+    ],
+    [
+      "Store security",
+      "PCI practice, fraud detection and hardening.",
+    ],
+    [
+      "Store security",
+      "PCI practice, fraud detection and hardening.",
+    ],
+    [
+      "Store security",
+      "PCI practice, fraud detection and hardening.",
+    ],
+    [
+      "Store security",
+      "PCI practice, fraud detection and hardening.",
+    ],
+  ),
+  "cdn-basics": loc(
+    [
+      "CDN basics",
+      "What a CDN does and when to use one.",
+    ],
+    [
+      "CDN basics",
+      "What a CDN does and when to use one.",
+    ],
+    [
+      "CDN basics",
+      "What a CDN does and when to use one.",
+    ],
+    [
+      "CDN basics",
+      "What a CDN does and when to use one.",
+    ],
+    [
+      "CDN basics",
+      "What a CDN does and when to use one.",
+    ],
+    [
+      "CDN basics",
+      "What a CDN does and when to use one.",
+    ],
+  ),
+  "cloudflare-dns-proxy": loc(
+    [
+      "Cloudflare DNS and proxy",
+      "Proxy, DNS, SSL modes and firewall rules.",
+    ],
+    [
+      "Cloudflare DNS and proxy",
+      "Proxy, DNS, SSL modes and firewall rules.",
+    ],
+    [
+      "Cloudflare DNS and proxy",
+      "Proxy, DNS, SSL modes and firewall rules.",
+    ],
+    [
+      "Cloudflare DNS and proxy",
+      "Proxy, DNS, SSL modes and firewall rules.",
+    ],
+    [
+      "Cloudflare DNS and proxy",
+      "Proxy, DNS, SSL modes and firewall rules.",
+    ],
+    [
+      "Cloudflare DNS and proxy",
+      "Proxy, DNS, SSL modes and firewall rules.",
+    ],
+  ),
+  "caching-strategie": loc(
+    [
+      "Caching strategy",
+      "Browser, edge and application cache.",
+    ],
+    [
+      "Caching strategy",
+      "Browser, edge and application cache.",
+    ],
+    [
+      "Caching strategy",
+      "Browser, edge and application cache.",
+    ],
+    [
+      "Caching strategy",
+      "Browser, edge and application cache.",
+    ],
+    [
+      "Caching strategy",
+      "Browser, edge and application cache.",
+    ],
+    [
+      "Caching strategy",
+      "Browser, edge and application cache.",
+    ],
+  ),
+  "image-performance": loc(
+    [
+      "Image performance",
+      "WebP/AVIF, lazy load and responsive images.",
+    ],
+    [
+      "Image performance",
+      "WebP/AVIF, lazy load and responsive images.",
+    ],
+    [
+      "Image performance",
+      "WebP/AVIF, lazy load and responsive images.",
+    ],
+    [
+      "Image performance",
+      "WebP/AVIF, lazy load and responsive images.",
+    ],
+    [
+      "Image performance",
+      "WebP/AVIF, lazy load and responsive images.",
+    ],
+    [
+      "Image performance",
+      "WebP/AVIF, lazy load and responsive images.",
+    ],
+  ),
+  "dedicated-en-remote-mgmt": loc(
+    [
+      "Dedicated & remote management",
+      "Dedicated concepts, IPMI/iLO/iDRAC and remote console basics.",
+    ],
+    [
+      "Dedicated & remote management",
+      "Dedicated concepts, IPMI/iLO/iDRAC and remote console basics.",
+    ],
+    [
+      "Dedicated & remote management",
+      "Dedicated concepts, IPMI/iLO/iDRAC and remote console basics.",
+    ],
+    [
+      "Dedicated & remote management",
+      "Dedicated concepts, IPMI/iLO/iDRAC and remote console basics.",
+    ],
+    [
+      "Dedicated & remote management",
+      "Dedicated concepts, IPMI/iLO/iDRAC and remote console basics.",
+    ],
+    [
+      "Dedicated & remote management",
+      "Dedicated concepts, IPMI/iLO/iDRAC and remote console basics.",
+    ],
+  ),
+  "rescue-recovery": loc(
+    [
+      "Rescue & recovery",
+      "Rescue mode, netboot, password reset and recovery scenarios.",
+    ],
+    [
+      "Rescue & recovery",
+      "Rescue mode, netboot, password reset and recovery scenarios.",
+    ],
+    [
+      "Rescue & recovery",
+      "Rescue mode, netboot, password reset and recovery scenarios.",
+    ],
+    [
+      "Rescue & recovery",
+      "Rescue mode, netboot, password reset and recovery scenarios.",
+    ],
+    [
+      "Rescue & recovery",
+      "Rescue mode, netboot, password reset and recovery scenarios.",
+    ],
+    [
+      "Rescue & recovery",
+      "Rescue mode, netboot, password reset and recovery scenarios.",
+    ],
+  ),
+  "containers-docker": loc(
+    [
+      "Containers & Docker",
+      "Docker on VPS, Compose, volumes and safe defaults.",
+    ],
+    [
+      "Containers & Docker",
+      "Docker on VPS, Compose, volumes and safe defaults.",
+    ],
+    [
+      "Containers & Docker",
+      "Docker on VPS, Compose, volumes and safe defaults.",
+    ],
+    [
+      "Containers & Docker",
+      "Docker on VPS, Compose, volumes and safe defaults.",
+    ],
+    [
+      "Containers & Docker",
+      "Docker on VPS, Compose, volumes and safe defaults.",
+    ],
+    [
+      "Containers & Docker",
+      "Docker on VPS, Compose, volumes and safe defaults.",
+    ],
+  ),
+  "apps-op-vps": loc(
+    [
+      "Apps on VPS",
+      "Node.js, Python, Git deploy and process managers.",
+    ],
+    [
+      "Apps on VPS",
+      "Node.js, Python, Git deploy and process managers.",
+    ],
+    [
+      "Apps on VPS",
+      "Node.js, Python, Git deploy and process managers.",
+    ],
+    [
+      "Apps on VPS",
+      "Node.js, Python, Git deploy and process managers.",
+    ],
+    [
+      "Apps on VPS",
+      "Node.js, Python, Git deploy and process managers.",
+    ],
+    [
+      "Apps on VPS",
+      "Node.js, Python, Git deploy and process managers.",
+    ],
+  ),
+  "vpn-netwerk": loc(
+    [
+      "VPN & networking",
+      "WireGuard, UFW/firewalld, Fail2ban and hardening.",
+    ],
+    [
+      "VPN & networking",
+      "WireGuard, UFW/firewalld, Fail2ban and hardening.",
+    ],
+    [
+      "VPN & networking",
+      "WireGuard, UFW/firewalld, Fail2ban and hardening.",
+    ],
+    [
+      "VPN & networking",
+      "WireGuard, UFW/firewalld, Fail2ban and hardening.",
+    ],
+    [
+      "VPN & networking",
+      "WireGuard, UFW/firewalld, Fail2ban and hardening.",
+    ],
+    [
+      "VPN & networking",
+      "WireGuard, UFW/firewalld, Fail2ban and hardening.",
+    ],
+  ),
+  "http-foutcodes": loc(
+    [
+      "HTTP status codes",
+      "401, 403, 404, 500, 502 and 504 causes and fixes.",
+    ],
+    [
+      "HTTP status codes",
+      "401, 403, 404, 500, 502 and 504 causes and fixes.",
+    ],
+    [
+      "HTTP status codes",
+      "401, 403, 404, 500, 502 and 504 causes and fixes.",
+    ],
+    [
+      "HTTP status codes",
+      "401, 403, 404, 500, 502 and 504 causes and fixes.",
+    ],
+    [
+      "HTTP status codes",
+      "401, 403, 404, 500, 502 and 504 causes and fixes.",
+    ],
+    [
+      "HTTP status codes",
+      "401, 403, 404, 500, 502 and 504 causes and fixes.",
+    ],
+  ),
+  "mail-aflevering-fouten": loc(
+    [
+      "Mail delivery issues",
+      "Blacklists, greylisting, bounces and SMTP problems.",
+    ],
+    [
+      "Mail delivery issues",
+      "Blacklists, greylisting, bounces and SMTP problems.",
+    ],
+    [
+      "Mail delivery issues",
+      "Blacklists, greylisting, bounces and SMTP problems.",
+    ],
+    [
+      "Mail delivery issues",
+      "Blacklists, greylisting, bounces and SMTP problems.",
+    ],
+    [
+      "Mail delivery issues",
+      "Blacklists, greylisting, bounces and SMTP problems.",
+    ],
+    [
+      "Mail delivery issues",
+      "Blacklists, greylisting, bounces and SMTP problems.",
+    ],
+  ),
+  "dns-ssl-fouten": loc(
+    [
+      "DNS & SSL errors",
+      "Propagation, certificate errors, mixed content and HSTS.",
+    ],
+    [
+      "DNS & SSL errors",
+      "Propagation, certificate errors, mixed content and HSTS.",
+    ],
+    [
+      "DNS & SSL errors",
+      "Propagation, certificate errors, mixed content and HSTS.",
+    ],
+    [
+      "DNS & SSL errors",
+      "Propagation, certificate errors, mixed content and HSTS.",
+    ],
+    [
+      "DNS & SSL errors",
+      "Propagation, certificate errors, mixed content and HSTS.",
+    ],
+    [
+      "DNS & SSL errors",
+      "Propagation, certificate errors, mixed content and HSTS.",
+    ],
+  ),
+  "database-fouten": loc(
+    [
+      "Database errors",
+      "Connections, corruption, MyISAM/InnoDB and import/export.",
+    ],
+    [
+      "Database errors",
+      "Connections, corruption, MyISAM/InnoDB and import/export.",
+    ],
+    [
+      "Database errors",
+      "Connections, corruption, MyISAM/InnoDB and import/export.",
+    ],
+    [
+      "Database errors",
+      "Connections, corruption, MyISAM/InnoDB and import/export.",
+    ],
+    [
+      "Database errors",
+      "Connections, corruption, MyISAM/InnoDB and import/export.",
+    ],
+    [
+      "Database errors",
+      "Connections, corruption, MyISAM/InnoDB and import/export.",
+    ],
+  ),
+  "performance-incidenten": loc(
+    [
+      "Performance incidents",
+      "Traffic spikes, slow queries, CPU and full disks.",
+    ],
+    [
+      "Performance incidents",
+      "Traffic spikes, slow queries, CPU and full disks.",
+    ],
+    [
+      "Performance incidents",
+      "Traffic spikes, slow queries, CPU and full disks.",
+    ],
+    [
+      "Performance incidents",
+      "Traffic spikes, slow queries, CPU and full disks.",
+    ],
+    [
+      "Performance incidents",
+      "Traffic spikes, slow queries, CPU and full disks.",
+    ],
+    [
+      "Performance incidents",
+      "Traffic spikes, slow queries, CPU and full disks.",
+    ],
+  ),
+  "avg-website": loc(
+    [
+      "GDPR/AVG for websites",
+      "Minimisation, processors and practical website checks.",
+    ],
+    [
+      "GDPR/AVG for websites",
+      "Minimisation, processors and practical website checks.",
+    ],
+    [
+      "GDPR/AVG for websites",
+      "Minimisation, processors and practical website checks.",
+    ],
+    [
+      "GDPR/AVG for websites",
+      "Minimisation, processors and practical website checks.",
+    ],
+    [
+      "GDPR/AVG for websites",
+      "Minimisation, processors and practical website checks.",
+    ],
+    [
+      "GDPR/AVG for websites",
+      "Minimisation, processors and practical website checks.",
+    ],
+  ),
+  "cookies-consent": loc(
+    [
+      "Cookies & consent",
+      "When a banner is needed and Consent Mode.",
+    ],
+    [
+      "Cookies & consent",
+      "When a banner is needed and Consent Mode.",
+    ],
+    [
+      "Cookies & consent",
+      "When a banner is needed and Consent Mode.",
+    ],
+    [
+      "Cookies & consent",
+      "When a banner is needed and Consent Mode.",
+    ],
+    [
+      "Cookies & consent",
+      "When a banner is needed and Consent Mode.",
+    ],
+    [
+      "Cookies & consent",
+      "When a banner is needed and Consent Mode.",
+    ],
+  ),
+  "webshop-regels-nl": loc(
+    [
+      "NL/EU webshop rules",
+      "Withdrawal, pricing display and consumer themes.",
+    ],
+    [
+      "NL/EU webshop rules",
+      "Withdrawal, pricing display and consumer themes.",
+    ],
+    [
+      "NL/EU webshop rules",
+      "Withdrawal, pricing display and consumer themes.",
+    ],
+    [
+      "NL/EU webshop rules",
+      "Withdrawal, pricing display and consumer themes.",
+    ],
+    [
+      "NL/EU webshop rules",
+      "Withdrawal, pricing display and consumer themes.",
+    ],
+    [
+      "NL/EU webshop rules",
+      "Withdrawal, pricing display and consumer themes.",
+    ],
+  ),
+  "juridische-paginas": loc(
+    [
+      "Legal pages",
+      "Privacy, cookies, terms: what belongs (no copied templates).",
+    ],
+    [
+      "Legal pages",
+      "Privacy, cookies, terms: what belongs (no copied templates).",
+    ],
+    [
+      "Legal pages",
+      "Privacy, cookies, terms: what belongs (no copied templates).",
+    ],
+    [
+      "Legal pages",
+      "Privacy, cookies, terms: what belongs (no copied templates).",
+    ],
+    [
+      "Legal pages",
+      "Privacy, cookies, terms: what belongs (no copied templates).",
+    ],
+    [
+      "Legal pages",
+      "Privacy, cookies, terms: what belongs (no copied templates).",
+    ],
+  ),
+  "eu-tooling": loc(
+    [
+      "EU tooling & sovereignty",
+      "European alternatives and vendor risk.",
+    ],
+    [
+      "EU tooling & sovereignty",
+      "European alternatives and vendor risk.",
+    ],
+    [
+      "EU tooling & sovereignty",
+      "European alternatives and vendor risk.",
+    ],
+    [
+      "EU tooling & sovereignty",
+      "European alternatives and vendor risk.",
+    ],
+    [
+      "EU tooling & sovereignty",
+      "European alternatives and vendor risk.",
+    ],
+    [
+      "EU tooling & sovereignty",
+      "European alternatives and vendor risk.",
+    ],
+  ),
+  "platform-vergelijkingen": loc(
+    [
+      "Platform comparisons",
+      "WooCommerce, Shopify, PrestaShop and CMS choices.",
+    ],
+    [
+      "Platform comparisons",
+      "WooCommerce, Shopify, PrestaShop and CMS choices.",
+    ],
+    [
+      "Platform comparisons",
+      "WooCommerce, Shopify, PrestaShop and CMS choices.",
+    ],
+    [
+      "Platform comparisons",
+      "WooCommerce, Shopify, PrestaShop and CMS choices.",
+    ],
+    [
+      "Platform comparisons",
+      "WooCommerce, Shopify, PrestaShop and CMS choices.",
+    ],
+    [
+      "Platform comparisons",
+      "WooCommerce, Shopify, PrestaShop and CMS choices.",
+    ],
+  ),
+  "hosting-keuze": loc(
+    [
+      "Hosting choices",
+      "Shared, managed, VPS and when each fits.",
+    ],
+    [
+      "Hosting choices",
+      "Shared, managed, VPS and when each fits.",
+    ],
+    [
+      "Hosting choices",
+      "Shared, managed, VPS and when each fits.",
+    ],
+    [
+      "Hosting choices",
+      "Shared, managed, VPS and when each fits.",
+    ],
+    [
+      "Hosting choices",
+      "Shared, managed, VPS and when each fits.",
+    ],
+    [
+      "Hosting choices",
+      "Shared, managed, VPS and when each fits.",
+    ],
+  ),
+  "betaalproviders": loc(
+    [
+      "Payment providers",
+      "Mollie, Stripe and criteria for NL stores.",
+    ],
+    [
+      "Payment providers",
+      "Mollie, Stripe and criteria for NL stores.",
+    ],
+    [
+      "Payment providers",
+      "Mollie, Stripe and criteria for NL stores.",
+    ],
+    [
+      "Payment providers",
+      "Mollie, Stripe and criteria for NL stores.",
+    ],
+    [
+      "Payment providers",
+      "Mollie, Stripe and criteria for NL stores.",
+    ],
+    [
+      "Payment providers",
+      "Mollie, Stripe and criteria for NL stores.",
+    ],
+  ),
+  "builders-cms": loc(
+    [
+      "Builders & CMS",
+      "Elementor, Gutenberg, custom themes and site builders.",
+    ],
+    [
+      "Builders & CMS",
+      "Elementor, Gutenberg, custom themes and site builders.",
+    ],
+    [
+      "Builders & CMS",
+      "Elementor, Gutenberg, custom themes and site builders.",
+    ],
+    [
+      "Builders & CMS",
+      "Elementor, Gutenberg, custom themes and site builders.",
+    ],
+    [
+      "Builders & CMS",
+      "Elementor, Gutenberg, custom themes and site builders.",
+    ],
+    [
+      "Builders & CMS",
+      "Elementor, Gutenberg, custom themes and site builders.",
+    ],
+  )
 };

@@ -11,6 +11,18 @@ import { cyberpanelTopicBuilders } from "./cyberpanel-bodies";
 import { microsoftTopicBuilders } from "./microsoft-bodies";
 import { pleskTopicBuilders } from "./plesk-bodies";
 import { veiligOnlineTopicBuilders } from "./veilig-online-bodies";
+import { webdesignTopicBuilders } from "./webdesign-bodies";
+import { aiIntegratieTopicBuilders } from "./ai-integratie-bodies";
+import { analyticsCroTopicBuilders } from "./analytics-cro-bodies";
+import { ecommerceTopicBuilders } from "./ecommerce-bodies";
+import { cdnPerformanceTopicBuilders } from "./cdn-performance-bodies";
+import { thickenTopicBuilders } from "./thicken-bodies";
+import { infraTopicBuilders } from "./infra-bodies";
+import { troubleshootingTopicBuilders } from "./troubleshooting-bodies";
+import { privacyComplianceTopicBuilders } from "./privacy-compliance-bodies";
+import { vergelijkingenTopicBuilders } from "./vergelijkingen-bodies";
+import { wave2ThickenTopicBuilders } from "./wave2-thicken-bodies";
+import { wave2RewriteTopicBuilders } from "./wave2-rewrite-bodies";
 
 const BRAND = "TripleZero iT";
 
@@ -1358,7 +1370,19 @@ export function buildArticleHtml(
     cyberpanelTopicBuilders[topic] ||
     microsoftTopicBuilders[topic] ||
     pleskTopicBuilders[topic] ||
-    veiligOnlineTopicBuilders[topic];
+    veiligOnlineTopicBuilders[topic] ||
+    webdesignTopicBuilders[topic] ||
+    aiIntegratieTopicBuilders[topic] ||
+    analyticsCroTopicBuilders[topic] ||
+    ecommerceTopicBuilders[topic] ||
+    cdnPerformanceTopicBuilders[topic] ||
+    thickenTopicBuilders[topic] ||
+    infraTopicBuilders[topic] ||
+    troubleshootingTopicBuilders[topic] ||
+    privacyComplianceTopicBuilders[topic] ||
+    vergelijkingenTopicBuilders[topic] ||
+    wave2ThickenTopicBuilders[topic] ||
+    wave2RewriteTopicBuilders[topic];
   if (builder) return builder(ctx);
   return genericBody(ctx);
 }

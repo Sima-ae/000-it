@@ -676,6 +676,296 @@ export const CATEGORY_I18N: Record<
         "Let’s Encrypt, certificati a pagamento, CSR, HSTS e HTTPS su TripleZero iT.",
     },
   },
+  "webdesign-en-maatwerk": {
+    en: {
+      name: "Web design & custom builds",
+      description:
+        "Next.js, PHP, HTML/CSS, landing pages and maintenance for custom sites at TripleZero iT.",
+    },
+    de: {
+      name: "Web design & custom builds",
+      description:
+        "Next.js, PHP, HTML/CSS, landing pages and maintenance for custom sites at TripleZero iT.",
+    },
+    fr: {
+      name: "Web design & custom builds",
+      description:
+        "Next.js, PHP, HTML/CSS, landing pages and maintenance for custom sites at TripleZero iT.",
+    },
+    es: {
+      name: "Web design & custom builds",
+      description:
+        "Next.js, PHP, HTML/CSS, landing pages and maintenance for custom sites at TripleZero iT.",
+    },
+    pt: {
+      name: "Web design & custom builds",
+      description:
+        "Next.js, PHP, HTML/CSS, landing pages and maintenance for custom sites at TripleZero iT.",
+    },
+    it: {
+      name: "Web design & custom builds",
+      description:
+        "Next.js, PHP, HTML/CSS, landing pages and maintenance for custom sites at TripleZero iT.",
+    },
+  },
+  "ai-integratie-automatisering": {
+    en: {
+      name: "AI integration & automation",
+      description:
+        "LLMs, chatbots, n8n/Zapier, APIs, webhooks and AI strategy alongside your hosting and website.",
+    },
+    de: {
+      name: "AI integration & automation",
+      description:
+        "LLMs, chatbots, n8n/Zapier, APIs, webhooks and AI strategy alongside your hosting and website.",
+    },
+    fr: {
+      name: "AI integration & automation",
+      description:
+        "LLMs, chatbots, n8n/Zapier, APIs, webhooks and AI strategy alongside your hosting and website.",
+    },
+    es: {
+      name: "AI integration & automation",
+      description:
+        "LLMs, chatbots, n8n/Zapier, APIs, webhooks and AI strategy alongside your hosting and website.",
+    },
+    pt: {
+      name: "AI integration & automation",
+      description:
+        "LLMs, chatbots, n8n/Zapier, APIs, webhooks and AI strategy alongside your hosting and website.",
+    },
+    it: {
+      name: "AI integration & automation",
+      description:
+        "LLMs, chatbots, n8n/Zapier, APIs, webhooks and AI strategy alongside your hosting and website.",
+    },
+  },
+  "analytics-conversie-toegankelijkheid": {
+    en: {
+      name: "Analytics, conversion & accessibility",
+      description:
+        "GTM, Matomo, CRO, Core Web Vitals, WCAG and structured data for measurable growth.",
+    },
+    de: {
+      name: "Analytics, conversion & accessibility",
+      description:
+        "GTM, Matomo, CRO, Core Web Vitals, WCAG and structured data for measurable growth.",
+    },
+    fr: {
+      name: "Analytics, conversion & accessibility",
+      description:
+        "GTM, Matomo, CRO, Core Web Vitals, WCAG and structured data for measurable growth.",
+    },
+    es: {
+      name: "Analytics, conversion & accessibility",
+      description:
+        "GTM, Matomo, CRO, Core Web Vitals, WCAG and structured data for measurable growth.",
+    },
+    pt: {
+      name: "Analytics, conversion & accessibility",
+      description:
+        "GTM, Matomo, CRO, Core Web Vitals, WCAG and structured data for measurable growth.",
+    },
+    it: {
+      name: "Analytics, conversion & accessibility",
+      description:
+        "GTM, Matomo, CRO, Core Web Vitals, WCAG and structured data for measurable growth.",
+    },
+  },
+  "e-commerce-webshops": {
+    en: {
+      name: "E-commerce & online stores",
+      description:
+        "WooCommerce, Mollie/iDEAL, product feeds, performance and store security.",
+    },
+    de: {
+      name: "E-commerce & online stores",
+      description:
+        "WooCommerce, Mollie/iDEAL, product feeds, performance and store security.",
+    },
+    fr: {
+      name: "E-commerce & online stores",
+      description:
+        "WooCommerce, Mollie/iDEAL, product feeds, performance and store security.",
+    },
+    es: {
+      name: "E-commerce & online stores",
+      description:
+        "WooCommerce, Mollie/iDEAL, product feeds, performance and store security.",
+    },
+    pt: {
+      name: "E-commerce & online stores",
+      description:
+        "WooCommerce, Mollie/iDEAL, product feeds, performance and store security.",
+    },
+    it: {
+      name: "E-commerce & online stores",
+      description:
+        "WooCommerce, Mollie/iDEAL, product feeds, performance and store security.",
+    },
+  },
+  "cdn-performance-cloudflare": {
+    en: {
+      name: "CDN, performance & Cloudflare",
+      description:
+        "CDN, Cloudflare, caching, images and speed for sites at TripleZero iT.",
+    },
+    de: {
+      name: "CDN, performance & Cloudflare",
+      description:
+        "CDN, Cloudflare, caching, images and speed for sites at TripleZero iT.",
+    },
+    fr: {
+      name: "CDN, performance & Cloudflare",
+      description:
+        "CDN, Cloudflare, caching, images and speed for sites at TripleZero iT.",
+    },
+    es: {
+      name: "CDN, performance & Cloudflare",
+      description:
+        "CDN, Cloudflare, caching, images and speed for sites at TripleZero iT.",
+    },
+    pt: {
+      name: "CDN, performance & Cloudflare",
+      description:
+        "CDN, Cloudflare, caching, images and speed for sites at TripleZero iT.",
+    },
+    it: {
+      name: "CDN, performance & Cloudflare",
+      description:
+        "CDN, Cloudflare, caching, images and speed for sites at TripleZero iT.",
+    },
+  },
+
+  "infrastructuur-servers": {
+    en: {
+      name: "Infrastructure & servers",
+      description:
+        "Dedicated concepts, rescue, Docker, apps on VPS, VPN and network hardening at TripleZero iT.",
+    },
+    de: {
+      name: "Infrastructure & servers",
+      description:
+        "Dedicated concepts, rescue, Docker, apps on VPS, VPN and network hardening at TripleZero iT.",
+    },
+    fr: {
+      name: "Infrastructure & servers",
+      description:
+        "Dedicated concepts, rescue, Docker, apps on VPS, VPN and network hardening at TripleZero iT.",
+    },
+    es: {
+      name: "Infrastructure & servers",
+      description:
+        "Dedicated concepts, rescue, Docker, apps on VPS, VPN and network hardening at TripleZero iT.",
+    },
+    pt: {
+      name: "Infrastructure & servers",
+      description:
+        "Dedicated concepts, rescue, Docker, apps on VPS, VPN and network hardening at TripleZero iT.",
+    },
+    it: {
+      name: "Infrastructure & servers",
+      description:
+        "Dedicated concepts, rescue, Docker, apps on VPS, VPN and network hardening at TripleZero iT.",
+    },
+  },
+  "foutmeldingen-troubleshooting": {
+    en: {
+      name: "Errors & troubleshooting",
+      description:
+        "HTTP codes, mail delivery, DNS/SSL, databases and performance incidents.",
+    },
+    de: {
+      name: "Errors & troubleshooting",
+      description:
+        "HTTP codes, mail delivery, DNS/SSL, databases and performance incidents.",
+    },
+    fr: {
+      name: "Errors & troubleshooting",
+      description:
+        "HTTP codes, mail delivery, DNS/SSL, databases and performance incidents.",
+    },
+    es: {
+      name: "Errors & troubleshooting",
+      description:
+        "HTTP codes, mail delivery, DNS/SSL, databases and performance incidents.",
+    },
+    pt: {
+      name: "Errors & troubleshooting",
+      description:
+        "HTTP codes, mail delivery, DNS/SSL, databases and performance incidents.",
+    },
+    it: {
+      name: "Errors & troubleshooting",
+      description:
+        "HTTP codes, mail delivery, DNS/SSL, databases and performance incidents.",
+    },
+  },
+  "privacy-juridisch-compliance": {
+    en: {
+      name: "Privacy, legal & compliance",
+      description:
+        "GDPR/AVG, cookies, webshop rules, required pages and EU tooling — educational, not legal advice.",
+    },
+    de: {
+      name: "Privacy, legal & compliance",
+      description:
+        "GDPR/AVG, cookies, webshop rules, required pages and EU tooling — educational, not legal advice.",
+    },
+    fr: {
+      name: "Privacy, legal & compliance",
+      description:
+        "GDPR/AVG, cookies, webshop rules, required pages and EU tooling — educational, not legal advice.",
+    },
+    es: {
+      name: "Privacy, legal & compliance",
+      description:
+        "GDPR/AVG, cookies, webshop rules, required pages and EU tooling — educational, not legal advice.",
+    },
+    pt: {
+      name: "Privacy, legal & compliance",
+      description:
+        "GDPR/AVG, cookies, webshop rules, required pages and EU tooling — educational, not legal advice.",
+    },
+    it: {
+      name: "Privacy, legal & compliance",
+      description:
+        "GDPR/AVG, cookies, webshop rules, required pages and EU tooling — educational, not legal advice.",
+    },
+  },
+  "vergelijkingen-keuzehulp": {
+    en: {
+      name: "Comparisons & decision guides",
+      description:
+        "Platform, hosting, payments and builder choices with clear SMB criteria.",
+    },
+    de: {
+      name: "Comparisons & decision guides",
+      description:
+        "Platform, hosting, payments and builder choices with clear SMB criteria.",
+    },
+    fr: {
+      name: "Comparisons & decision guides",
+      description:
+        "Platform, hosting, payments and builder choices with clear SMB criteria.",
+    },
+    es: {
+      name: "Comparisons & decision guides",
+      description:
+        "Platform, hosting, payments and builder choices with clear SMB criteria.",
+    },
+    pt: {
+      name: "Comparisons & decision guides",
+      description:
+        "Platform, hosting, payments and builder choices with clear SMB criteria.",
+    },
+    it: {
+      name: "Comparisons & decision guides",
+      description:
+        "Platform, hosting, payments and builder choices with clear SMB criteria.",
+    },
+  },
+
   ...SUBCATEGORY_I18N,
 };
 

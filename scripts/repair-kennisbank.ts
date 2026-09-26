@@ -115,20 +115,37 @@ async function main() {
   );
   const offset = Math.max(0, Number(argValue("offset") || "0") || 0);
   const maxRetries = Math.max(1, Number(argValue("retries") || "4") || 4);
+  const slugsFile = argValue("slugs-file");
 
   const catalogPath = join(__dirname, "../prisma/kennisbank/catalog.json");
   const catalog = JSON.parse(readFileSync(catalogPath, "utf8")) as Catalog;
   const bySlug = new Map(catalog.articles.map((a) => [a.slug, a]));
 
+  let slugFilter: Set<string> | null = null;
+  if (slugsFile) {
+    const raw = JSON.parse(readFileSync(slugsFile, "utf8")) as
+      | { slug: string }[]
+      | string[];
+    const list = Array.isArray(raw)
+      ? raw.map((row) => (typeof row === "string" ? row : row.slug)).filter(Boolean)
+      : [];
+    slugFilter = new Set(list);
+  }
+
   const articles = await prisma.kennisbankArticle.findMany({
     include: { translations: true },
     orderBy: { createdAt: "asc" },
-    skip: offset,
-    take: limit,
+    ...(slugFilter
+      ? { where: { slug: { in: [...slugFilter] } } }
+      : { skip: offset, take: limit }),
   });
 
+  const scoped = slugFilter
+    ? articles.slice(offset, offset + limit)
+    : articles;
+
   console.log(
-    `[repair-kennisbank] articles=${articles.length} offset=${offset} force=${force} nlOnly=${nlOnly} enOnly=${enOnly} all=${allLocales} delayMs=${delayMs} fieldDelayMs=${fieldDelayMs} retries=${maxRetries}`,
+    `[repair-kennisbank] articles=${scoped.length} offset=${offset} force=${force} nlOnly=${nlOnly} enOnly=${enOnly} all=${allLocales} delayMs=${delayMs} fieldDelayMs=${fieldDelayMs} retries=${maxRetries} slugsFile=${slugsFile || "-"}`,
   );
 
   let nlFixed = 0;
@@ -138,8 +155,8 @@ async function main() {
   let localesFixed = 0;
   let localesSkipped = 0;
 
-  for (let i = 0; i < articles.length; i += 1) {
-    const article = articles[i];
+  for (let i = 0; i < scoped.length; i += 1) {
+    const article = scoped[i];
     const cat = bySlug.get(article.slug);
     if (!cat) {
       console.warn(`[skip] ${article.slug} — not in catalog.json`);
@@ -194,7 +211,7 @@ async function main() {
     }
 
     if (nlOnly) {
-      console.log(`[nl] ${i + 1}/${articles.length} ${article.slug}`);
+      console.log(`[nl] ${i + 1}/${scoped.length} ${article.slug}`);
       continue;
     }
 
@@ -265,7 +282,7 @@ async function main() {
           enFixed += 1;
           ok = true;
           console.log(
-            `[en] ${i + 1}/${articles.length} ${article.slug} → ${title.slice(0, 70)}`,
+            `[en] ${i + 1}/${scoped.length} ${article.slug} → ${title.slice(0, 70)}`,
           );
           await sleep(delayMs);
           break;
@@ -291,7 +308,7 @@ async function main() {
     } else {
       enSkipped += 1;
       console.log(
-        `[en-skip] ${i + 1}/${articles.length} ${article.slug} (already OK)`,
+        `[en-skip] ${i + 1}/${scoped.length} ${article.slug} (already OK)`,
       );
     }
 

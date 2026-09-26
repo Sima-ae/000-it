@@ -1,0 +1,613 @@
+{
+  "catalogArticles": 1327,
+  "catalogCategories": 129,
+  "bySource": {
+    "yourhosting": 349,
+    "weboke": 224,
+    "nlhosting": 42,
+    "wiwi": 27,
+    "hostnet": 0,
+    "cloud86": 192,
+    "wphandleiding": 71
+  },
+  "competitorTopics": 1053,
+  "missingThemes": [
+    "docker",
+    "kubernetes",
+    "wp-cli",
+    "wireguard",
+    "openvpn",
+    "proxmox",
+    "raid",
+    "rdns",
+    "ptr",
+    "bimi",
+    "spf-flatten",
+    "greylist",
+    "http-401",
+    "http-403",
+    "http-404",
+    "http-500",
+    "http-502",
+    "http-504",
+    "imunify",
+    "node.js",
+    "nodejs",
+    "python",
+    "rescue",
+    "ipmi",
+    "idrac",
+    "wildcard-ssl",
+    "hsts-preload",
+    "memcached",
+    "gravity-forms",
+    "excerpt",
+    "shopify",
+    "avg-checklist",
+    "myisam",
+    "innodb",
+    "firewalld",
+    "ufw",
+    "logrotate",
+    "rto",
+    "rpo",
+    "http3",
+    "hibp",
+    "have-i-been-pwned"
+  ],
+  "uncoveredSample": [
+    {
+      "source": "yourhosting",
+      "url": "https://www.yourhosting.nl/kennisbank/bestellen-administratief/account-ondergebracht-bij-yourhosting",
+      "slug": "account-ondergebracht-bij-yourhosting",
+      "path": "kennisbank/bestellen-administratief/account-ondergebracht-bij-yourhosting"
+    },
+    {
+      "source": "yourhosting",
+      "url": "https://www.yourhosting.nl/kennisbank/bestellen-administratief/faq-overgang-naar-yourhosting",
+      "slug": "faq-overgang-naar-yourhosting",
+      "path": "kennisbank/bestellen-administratief/faq-overgang-naar-yourhosting"
+    },
+    {
+      "source": "yourhosting",
+      "url": "https://www.yourhosting.nl/kennisbank/bestellen-administratief/geverifieerd-e-mailadres-bij-argeweb",
+      "slug": "geverifieerd-e-mailadres-bij-argeweb",
+      "path": "kennisbank/bestellen-administratief/geverifieerd-e-mailadres-bij-argeweb"
+    },
+    {
+      "source": "yourhosting",
+      "url": "https://www.yourhosting.nl/kennisbank/bestellen-administratief/partnerprogramma-van-yourhosting",
+      "slug": "partnerprogramma-van-yourhosting",
+      "path": "kennisbank/bestellen-administratief/partnerprogramma-van-yourhosting"
+    },
+    {
+      "source": "yourhosting",
+      "url": "https://www.yourhosting.nl/kennisbank/bestellen-administratief/voormalige-hostingpakketten-bij-yourhosting",
+      "slug": "voormalige-hostingpakketten-bij-yourhosting",
+      "path": "kennisbank/bestellen-administratief/voormalige-hostingpakketten-bij-yourhosting"
+    },
+    {
+      "source": "yourhosting",
+      "url": "https://www.yourhosting.nl/kennisbank/domeinnamen-dns/advertentie-op-domeinnaam-bij-yourhosting",
+      "slug": "advertentie-op-domeinnaam-bij-yourhosting",
+      "path": "kennisbank/domeinnamen-dns/advertentie-op-domeinnaam-bij-yourhosting"
+    },
+    {
+      "source": "yourhosting",
+      "url": "https://www.yourhosting.nl/kennisbank/e-mail/spamfilters",
+      "slug": "spamfilters",
+      "path": "kennisbank/e-mail/spamfilters"
+    },
+    {
+      "source": "yourhosting",
+      "url": "https://www.yourhosting.nl/kennisbank/hosting-website/cgi-webhosting-bij-yourhosting",
+      "slug": "cgi-webhosting-bij-yourhosting",
+      "path": "kennisbank/hosting-website/cgi-webhosting-bij-yourhosting"
+    },
+    {
+      "source": "yourhosting",
+      "url": "https://www.yourhosting.nl/kennisbank/hosting-website/imunify360",
+      "slug": "imunify360",
+      "path": "kennisbank/hosting-website/imunify360"
+    },
+    {
+      "source": "yourhosting",
+      "url": "https://www.yourhosting.nl/kennisbank/hosting-website/site-pro-webbuilder-bij-yourhosting",
+      "slug": "site-pro-webbuilder-bij-yourhosting",
+      "path": "kennisbank/hosting-website/site-pro-webbuilder-bij-yourhosting"
+    },
+    {
+      "source": "yourhosting",
+      "url": "https://www.yourhosting.nl/kennisbank/hosting-website/wat-is-yourwebsite-van-yourhosting",
+      "slug": "wat-is-yourwebsite-van-yourhosting",
+      "path": "kennisbank/hosting-website/wat-is-yourwebsite-van-yourhosting"
+    },
+    {
+      "source": "yourhosting",
+      "url": "https://www.yourhosting.nl/kennisbank/overige-vragen/overgang-van-kpn-naar-yourhosting",
+      "slug": "overgang-van-kpn-naar-yourhosting",
+      "path": "kennisbank/overige-vragen/overgang-van-kpn-naar-yourhosting"
+    },
+    {
+      "source": "yourhosting",
+      "url": "https://www.yourhosting.nl/kennisbank/overige-vragen/privacybeleid",
+      "slug": "privacybeleid",
+      "path": "kennisbank/overige-vragen/privacybeleid"
+    },
+    {
+      "source": "nlhosting",
+      "url": "https://www.nlhosting.nl/kennisbank/tag/administratief",
+      "slug": "administratief",
+      "path": "kennisbank/tag/administratief"
+    },
+    {
+      "source": "nlhosting",
+      "url": "https://www.nlhosting.nl/kennisbank/tag/klantenpaneel",
+      "slug": "klantenpaneel",
+      "path": "kennisbank/tag/klantenpaneel"
+    },
+    {
+      "source": "wiwi",
+      "url": "https://wiwi.nl/kennisbank/amerikaanse-diensten-vervangen",
+      "slug": "amerikaanse-diensten-vervangen",
+      "path": "kennisbank/amerikaanse-diensten-vervangen"
+    },
+    {
+      "source": "wiwi",
+      "url": "https://wiwi.nl/kennisbank/amerikaanse-software-wat-als-het-stopt",
+      "slug": "amerikaanse-software-wat-als-het-stopt",
+      "path": "kennisbank/amerikaanse-software-wat-als-het-stopt"
+    },
+    {
+      "source": "wiwi",
+      "url": "https://wiwi.nl/kennisbank/anthropic-fable-verbod-europese-impact",
+      "slug": "anthropic-fable-verbod-europese-impact",
+      "path": "kennisbank/anthropic-fable-verbod-europese-impact"
+    },
+    {
+      "source": "cloud86",
+      "url": "https://support.cloud86.io/hc/nl/articles/18128680601117-Microsoft-365-Opleveringsmail-Pax8",
+      "slug": "microsoft-365-opleveringsmail-pax8",
+      "path": "hc/nl/articles/18128680601117-Microsoft-365-Opleveringsmail-Pax8"
+    },
+    {
+      "source": "cloud86",
+      "url": "https://support.cloud86.io/hc/nl/articles/18129029535261-Microsoft-365-Opleveringsmail-Cloud86",
+      "slug": "microsoft-365-opleveringsmail-cloud86",
+      "path": "hc/nl/articles/18129029535261-Microsoft-365-Opleveringsmail-Cloud86"
+    },
+    {
+      "source": "cloud86",
+      "url": "https://support.cloud86.io/hc/nl/articles/18367294547741-SIDN-De-houdernaam-is-veranderd",
+      "slug": "sidn-de-houdernaam-is-veranderd",
+      "path": "hc/nl/articles/18367294547741-SIDN-De-houdernaam-is-veranderd"
+    },
+    {
+      "source": "cloud86",
+      "url": "https://support.cloud86.io/hc/nl/articles/21202846022813-Beloningen-en-commissies-van-het-affiliateprogramma",
+      "slug": "beloningen-en-commissies-van-het-affiliateprogramma",
+      "path": "hc/nl/articles/21202846022813-Beloningen-en-commissies-van-het-affiliateprogramma"
+    },
+    {
+      "source": "cloud86",
+      "url": "https://support.cloud86.io/hc/nl/articles/32719634759197-Registrar-transferlock-in-of-uitschakelen",
+      "slug": "registrar-transferlock-in-of-uitschakelen",
+      "path": "hc/nl/articles/32719634759197-Registrar-transferlock-in-of-uitschakelen"
+    },
+    {
+      "source": "cloud86",
+      "url": "https://support.cloud86.io/hc/nl/articles/360016663517-Webhosting-Beginnershandleiding",
+      "slug": "webhosting-beginnershandleiding",
+      "path": "hc/nl/articles/360016663517-Webhosting-Beginnershandleiding"
+    },
+    {
+      "source": "cloud86",
+      "url": "https://support.cloud86.io/hc/nl/articles/4403507742737-Als-ik-heb-opgezegd-moet-ik-dan-nog-betalen",
+      "slug": "als-ik-heb-opgezegd-moet-ik-dan-nog-betalen",
+      "path": "hc/nl/articles/4403507742737-Als-ik-heb-opgezegd-moet-ik-dan-nog-betalen"
+    },
+    {
+      "source": "cloud86",
+      "url": "https://support.cloud86.io/hc/nl/articles/5927797522973-Webhosting-Pakket-contract-verlengen",
+      "slug": "webhosting-pakket-contract-verlengen",
+      "path": "hc/nl/articles/5927797522973-Webhosting-Pakket-contract-verlengen"
+    },
+    {
+      "source": "cloud86",
+      "url": "https://support.cloud86.io/hc/nl/sections/12726107476509-Algemeen",
+      "slug": "algemeen",
+      "path": "hc/nl/sections/12726107476509-Algemeen"
+    },
+    {
+      "source": "cloud86",
+      "url": "https://support.cloud86.io/hc/nl/sections/17563694795933-ICANN",
+      "slug": "icann",
+      "path": "hc/nl/sections/17563694795933-ICANN"
+    },
+    {
+      "source": "cloud86",
+      "url": "https://support.cloud86.io/hc/nl/sections/17563827116317-Verhuisservice",
+      "slug": "verhuisservice",
+      "path": "hc/nl/sections/17563827116317-Verhuisservice"
+    },
+    {
+      "source": "cloud86",
+      "url": "https://support.cloud86.io/hc/nl/sections/360002205678-Overig",
+      "slug": "overig",
+      "path": "hc/nl/sections/360002205678-Overig"
+    },
+    {
+      "source": "cloud86",
+      "url": "https://support.cloud86.io/hc/nl/sections/360005094137-Administratie",
+      "slug": "administratie",
+      "path": "hc/nl/sections/360005094137-Administratie"
+    },
+    {
+      "source": "cloud86",
+      "url": "https://support.cloud86.io/hc/nl/sections/9748775129117-Resources",
+      "slug": "resources",
+      "path": "hc/nl/sections/9748775129117-Resources"
+    },
+    {
+      "source": "wphandleiding",
+      "url": "https://wphandleiding.nl/kennisbank/categorie/builders",
+      "slug": "builders",
+      "path": "kennisbank/categorie/builders"
+    },
+    {
+      "source": "wphandleiding",
+      "url": "https://wphandleiding.nl/kennisbank/categorie/coderen",
+      "slug": "coderen",
+      "path": "kennisbank/categorie/coderen"
+    },
+    {
+      "source": "wphandleiding",
+      "url": "https://wphandleiding.nl/kennisbank/categorie/themas",
+      "slug": "themas",
+      "path": "kennisbank/categorie/themas"
+    },
+    {
+      "source": "wphandleiding",
+      "url": "https://wphandleiding.nl/kennisbank/embedden",
+      "slug": "embedden",
+      "path": "kennisbank/embedden"
+    },
+    {
+      "source": "wphandleiding",
+      "url": "https://wphandleiding.nl/kennisbank/excerpt",
+      "slug": "excerpt",
+      "path": "kennisbank/excerpt"
+    },
+    {
+      "source": "wphandleiding",
+      "url": "https://wphandleiding.nl/kennisbank/hoe-maak-je-een-audio-afspeellijst-aan",
+      "slug": "hoe-maak-je-een-audio-afspeellijst-aan",
+      "path": "kennisbank/hoe-maak-je-een-audio-afspeellijst-aan"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com",
+      "slug": "kb.leaseweb.com",
+      "path": "https://kb.leaseweb.com/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/wp-content/uploads/2024/06/cropped-icon-32x32.png",
+      "slug": "cropped-icon-32x32.png",
+      "path": "https://kb.leaseweb.com/wp-content/uploads/2024/06/cropped-icon-32x32.png"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/wp-content/uploads/2024/06/cropped-icon-192x192.png",
+      "slug": "cropped-icon-192x192.png",
+      "path": "https://kb.leaseweb.com/wp-content/uploads/2024/06/cropped-icon-192x192.png"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/wp-content/uploads/2024/06/cropped-icon-180x180.png",
+      "slug": "cropped-icon-180x180.png",
+      "path": "https://kb.leaseweb.com/wp-content/uploads/2024/06/cropped-icon-180x180.png"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/products",
+      "slug": "products",
+      "path": "https://kb.leaseweb.com/kb/products/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/dedicated-server/launching-the-dedicated-server-ordering-api",
+      "slug": "launching-the-dedicated-server-ordering-api",
+      "path": "https://kb.leaseweb.com/kb/dedicated-server/launching-the-dedicated-server-ordering-api/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/dedicated-server/dedicated-server-viewing-your-dedicated-servers",
+      "slug": "dedicated-server-viewing-your-dedicated-servers",
+      "path": "https://kb.leaseweb.com/kb/dedicated-server/dedicated-server-viewing-your-dedicated-servers/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/leaseweb-vps/ordering-api-for-vps",
+      "slug": "ordering-api-for-vps",
+      "path": "https://kb.leaseweb.com/kb/leaseweb-vps/ordering-api-for-vps/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/leaseweb-vps/setting-leaseweb-vps-data-traffic-notifications",
+      "slug": "setting-leaseweb-vps-data-traffic-notifications",
+      "path": "https://kb.leaseweb.com/kb/leaseweb-vps/setting-leaseweb-vps-data-traffic-notifications/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/leaseweb-vps/managing-leaseweb-vps-root-password",
+      "slug": "managing-leaseweb-vps-root-password",
+      "path": "https://kb.leaseweb.com/kb/leaseweb-vps/managing-leaseweb-vps-root-password/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/customer-portal-api/customer-portal-api-resetting-customer-portal-password",
+      "slug": "customer-portal-api-resetting-customer-portal-password",
+      "path": "https://kb.leaseweb.com/kb/customer-portal-api/customer-portal-api-resetting-customer-portal-password/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/managing-contacts/managing-contacts-overview",
+      "slug": "managing-contacts-overview",
+      "path": "https://kb.leaseweb.com/kb/managing-contacts/managing-contacts-overview/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/managing-contacts/customer-portal-api-account-management-managing-contacts-adding-and-removing-contacts",
+      "slug": "customer-portal-api-account-management-managing-contacts-adding-and-removing-contacts",
+      "path": "https://kb.leaseweb.com/kb/managing-contacts/customer-portal-api-account-management-managing-contacts-adding-and-removing-contacts/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/managing-users/managing-users-overview",
+      "slug": "managing-users-overview",
+      "path": "https://kb.leaseweb.com/kb/managing-users/managing-users-overview/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/managing-users/customer-portal-api-account-management-managing-users-adding-and-removing-users",
+      "slug": "customer-portal-api-account-management-managing-users-adding-and-removing-users",
+      "path": "https://kb.leaseweb.com/kb/managing-users/customer-portal-api-account-management-managing-users-adding-and-removing-users/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/compliance-security/compliance-and-security-contacting-abuse-prevention-department",
+      "slug": "compliance-and-security-contacting-abuse-prevention-department",
+      "path": "https://kb.leaseweb.com/kb/compliance-security/compliance-and-security-contacting-abuse-prevention-department/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/compliance-security/compliance-and-security-handling-abuse-notifications",
+      "slug": "compliance-and-security-handling-abuse-notifications",
+      "path": "https://kb.leaseweb.com/kb/compliance-security/compliance-and-security-handling-abuse-notifications/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/support/support-after-ordering-a-service-with-leaseweb-onboarding",
+      "slug": "support-after-ordering-a-service-with-leaseweb-onboarding",
+      "path": "https://kb.leaseweb.com/kb/support/support-after-ordering-a-service-with-leaseweb-onboarding/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/support/support-contacting-customer-care",
+      "slug": "support-contacting-customer-care",
+      "path": "https://kb.leaseweb.com/kb/support/support-contacting-customer-care/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/support/support-cheat-sheet",
+      "slug": "support-cheat-sheet",
+      "path": "https://kb.leaseweb.com/kb/support/support-cheat-sheet/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/billing",
+      "slug": "billing",
+      "path": "https://kb.leaseweb.com/kb/billing/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/billing/extended-lifecycle-support-els-fees",
+      "slug": "extended-lifecycle-support-els-fees",
+      "path": "https://kb.leaseweb.com/kb/billing/extended-lifecycle-support-els-fees/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/billing/billing-po-for-vendors",
+      "slug": "billing-po-for-vendors",
+      "path": "https://kb.leaseweb.com/kb/billing/billing-po-for-vendors/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/billing/billing-invoices",
+      "slug": "billing-invoices",
+      "path": "https://kb.leaseweb.com/kb/billing/billing-invoices/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/billing/billing-sales-contracts",
+      "slug": "billing-sales-contracts",
+      "path": "https://kb.leaseweb.com/kb/billing/billing-sales-contracts/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/public-cloud-new/how-to-connect-to-openstack-using-cli-new",
+      "slug": "how-to-connect-to-openstack-using-cli-new",
+      "path": "https://kb.leaseweb.com/kb/public-cloud-new/how-to-connect-to-openstack-using-cli-new/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/billing/billing-payments",
+      "slug": "billing-payments",
+      "path": "https://kb.leaseweb.com/kb/billing/billing-payments/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/colocation/colocation-viewing-your-colocation-services",
+      "slug": "colocation-viewing-your-colocation-services",
+      "path": "https://kb.leaseweb.com/kb/colocation/colocation-viewing-your-colocation-services/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/colocation/colocation-managing-your-colocation-details",
+      "slug": "colocation-managing-your-colocation-details",
+      "path": "https://kb.leaseweb.com/kb/colocation/colocation-managing-your-colocation-details/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/colocation/colocation-managing-colocation-notifications",
+      "slug": "colocation-managing-colocation-notifications",
+      "path": "https://kb.leaseweb.com/kb/colocation/colocation-managing-colocation-notifications/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/colocation/colocation-viewing-colocation-graphs",
+      "slug": "colocation-viewing-colocation-graphs",
+      "path": "https://kb.leaseweb.com/kb/colocation/colocation-viewing-colocation-graphs/"
+    },
+    {
+      "source": "leaseweb",
+      "url": "https://kb.leaseweb.com/kb/colocation",
+      "slug": "colocation",
+      "path": "https://kb.leaseweb.com/kb/colocation/"
+    },
+    {
+      "source": "hostnet",
+      "url": "https://www.hostnet.nl/academy/wp-content/themes/academy/fonts/Roboto-Light.woff2",
+      "slug": "roboto-light.woff2",
+      "path": "https://www.hostnet.nl/academy/wp-content/themes/academy/fonts/Roboto-Light.woff2"
+    },
+    {
+      "source": "hostnet",
+      "url": "https://www.hostnet.nl/academy/wp-content/themes/academy/fonts/Roboto-Medium.woff2",
+      "slug": "roboto-medium.woff2",
+      "path": "https://www.hostnet.nl/academy/wp-content/themes/academy/fonts/Roboto-Medium.woff2"
+    },
+    {
+      "source": "hostnet",
+      "url": "https://www.hostnet.nl/academy/wp-content/themes/academy/fonts/Roboto-Regular.woff2",
+      "slug": "roboto-regular.woff2",
+      "path": "https://www.hostnet.nl/academy/wp-content/themes/academy/fonts/Roboto-Regular.woff2"
+    },
+    {
+      "source": "hostnet",
+      "url": "https://www.hostnet.nl/academy/wp-content/themes/academy/fonts/Roboto-Bold.woff2",
+      "slug": "roboto-bold.woff2",
+      "path": "https://www.hostnet.nl/academy/wp-content/themes/academy/fonts/Roboto-Bold.woff2"
+    },
+    {
+      "source": "hostnet",
+      "url": "https://www.hostnet.nl/academy/wp-content/plugins/avatar-manager/assets/css/avatar-manager.min.css",
+      "slug": "avatar-manager.min.css?1790399792",
+      "path": "https://www.hostnet.nl/academy/wp-content/plugins/avatar-manager/assets/css/avatar-manager.min.css?1790399792"
+    },
+    {
+      "source": "hostnet",
+      "url": "https://www.hostnet.nl/academy/wp-content/plugins/wp-polls/polls-css.css",
+      "slug": "polls-css.css?1790399792",
+      "path": "https://www.hostnet.nl/academy/wp-content/plugins/wp-polls/polls-css.css?1790399792"
+    },
+    {
+      "source": "hostnet",
+      "url": "https://www.hostnet.nl/academy/wp-content/themes/academy/style.css",
+      "slug": "style.css?1790399792",
+      "path": "https://www.hostnet.nl/academy/wp-content/themes/academy/style.css?1790399792"
+    },
+    {
+      "source": "hostnet",
+      "url": "https://www.hostnet.nl/academy/wp-content/themes/academy/generated/styles.css",
+      "slug": "styles.css?1790399792",
+      "path": "https://www.hostnet.nl/academy/wp-content/themes/academy/generated/styles.css?1790399792"
+    },
+    {
+      "source": "hostnet",
+      "url": "https://www.hostnet.nl/academy/wp-content/themes/academy/css/plugins/swiper.min.css",
+      "slug": "swiper.min.css?1790399792",
+      "path": "https://www.hostnet.nl/academy/wp-content/themes/academy/css/plugins/swiper.min.css?1790399792"
+    },
+    {
+      "source": "hostnet",
+      "url": "https://www.hostnet.nl/academy/wp-content/plugins/add-to-any/addtoany.min.css",
+      "slug": "addtoany.min.css?1790399792",
+      "path": "https://www.hostnet.nl/academy/wp-content/plugins/add-to-any/addtoany.min.css?1790399792"
+    },
+    {
+      "source": "hostnet",
+      "url": "https://www.hostnet.nl/academy/wp-json/wp/v2/pages/7402",
+      "slug": "7402",
+      "path": "https://www.hostnet.nl/academy/wp-json/wp/v2/pages/7402"
+    },
+    {
+      "source": "hostnet",
+      "url": "https://www.hostnet.nl/academy/themas/websiteoptimalisatie",
+      "slug": "websiteoptimalisatie",
+      "path": "https://www.hostnet.nl/academy/themas/websiteoptimalisatie"
+    },
+    {
+      "source": "hostnet",
+      "url": "https://www.hostnet.nl/academy/themas/webteksten",
+      "slug": "webteksten",
+      "path": "https://www.hostnet.nl/academy/themas/webteksten"
+    },
+    {
+      "source": "hostnet",
+      "url": "https://www.hostnet.nl/academy/themas/adverteren",
+      "slug": "adverteren",
+      "path": "https://www.hostnet.nl/academy/themas/adverteren"
+    },
+    {
+      "source": "hostnet",
+      "url": "https://www.hostnet.nl/academy/themas/contentmarketing",
+      "slug": "contentmarketing",
+      "path": "https://www.hostnet.nl/academy/themas/contentmarketing"
+    },
+    {
+      "source": "hostnet",
+      "url": "https://www.hostnet.nl/academy/themas/e-mailmarketing",
+      "slug": "e-mailmarketing",
+      "path": "https://www.hostnet.nl/academy/themas/e-mailmarketing"
+    },
+    {
+      "source": "hostnet",
+      "url": "https://www.hostnet.nl/academy/themas/ondernemen",
+      "slug": "ondernemen",
+      "path": "https://www.hostnet.nl/academy/themas/ondernemen"
+    },
+    {
+      "source": "hostnet",
+      "url": "https://www.hostnet.nl/academy/themas",
+      "slug": "themas",
+      "path": "https://www.hostnet.nl/academy/themas"
+    },
+    {
+      "source": "hostnet",
+      "url": "https://www.hostnet.nl/academy/voor-jezelf-beginnen",
+      "slug": "voor-jezelf-beginnen",
+      "path": "https://www.hostnet.nl/academy/voor-jezelf-beginnen"
+    },
+    {
+      "source": "hostnet",
+      "url": "https://www.hostnet.nl/academy/dropshipping-beginnen",
+      "slug": "dropshipping-beginnen",
+      "path": "https://www.hostnet.nl/academy/dropshipping-beginnen"
+    },
+    {
+      "source": "hostnet",
+      "url": "https://www.hostnet.nl/academy/wat-is-dropshipping",
+      "slug": "wat-is-dropshipping",
+      "path": "https://www.hostnet.nl/academy/wat-is-dropshipping"
+    },
+    {
+      "source": "hostnet",
+      "url": "https://www.hostnet.nl/academy/websitestructuur",
+      "slug": "websitestructuur",
+      "path": "https://www.hostnet.nl/academy/websitestructuur"
+    }
+  ],
+  "uncoveredCount": 92
+}
