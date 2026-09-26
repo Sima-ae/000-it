@@ -418,7 +418,7 @@ export default function KennisbankAdminPage() {
                   <div className="flex flex-col gap-3 bg-muted/40 p-3 sm:flex-row sm:items-center">
                     <div className="min-w-0 flex-1">
                       <div className="flex flex-wrap items-center gap-2">
-                        <p className="font-semibold text-accent">{main.name}</p>
+                        <p className="font-semibold text-primary">{main.name}</p>
                         <Badge>Hoofd</Badge>
                         <Badge variant="secondary">
                           {main.articleCount} artikelen
