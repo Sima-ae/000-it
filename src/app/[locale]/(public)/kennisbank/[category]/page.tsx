@@ -6,7 +6,8 @@ import { Reveal } from "@/components/marketing/Reveal";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { KennisbankArticleList } from "@/components/kennisbank/KennisbankArticleList";
 import { KennisbankIllustration } from "@/components/kennisbank/KennisbankIllustration";
-import { getCategoryBySlug, listArticles } from "@/lib/kennisbank";
+import { KennisbankSearch } from "@/components/kennisbank/KennisbankSearch";
+import { getCategoryBySlug, listArticles, listCategories } from "@/lib/kennisbank";
 import { brandingImageForKennisbank } from "@/lib/branding-images";
 import {
   breadcrumbJsonLd,
@@ -53,6 +54,7 @@ export default async function KennisbankCategoryPage({ params }: Params) {
   if (!cat) notFound();
 
   const articles = await listArticles({ locale, categorySlug: category });
+  const allCategories = await listCategories({ locale }).catch(() => []);
 
   return (
     <div className="relative overflow-hidden">
@@ -153,13 +155,28 @@ export default async function KennisbankCategoryPage({ params }: Params) {
           </section>
         ) : null}
 
-        <KennisbankArticleList
-          articles={articles}
+        <KennisbankSearch
+          mode="category"
           locale={locale}
-          categorySlug={category}
-          searchPlaceholder={t("searchCategoryPlaceholder")}
-          emptyLabel={t("emptyArticles")}
-        />
+          categories={allCategories}
+          articlesLabel={t("articlesLabel")}
+          searchPlaceholder={t("searchPlaceholder")}
+          searchArticlesLabel={t("searchArticlesLabel")}
+          searchCategoriesLabel={t("searchCategoriesLabel")}
+          searchEmptyLabel={t("searchEmpty")}
+          searchLoadingLabel={t("searchLoading")}
+          searchInCategoryLabel={t.raw("searchInCategory") as string}
+          searchElsewhereLabel={t("searchElsewhere")}
+          preferCategorySlug={category}
+          preferCategoryName={cat.name}
+        >
+          <KennisbankArticleList
+            articles={articles}
+            locale={locale}
+            categorySlug={category}
+            emptyLabel={t("emptyArticles")}
+          />
+        </KennisbankSearch>
       </div>
     </div>
   );

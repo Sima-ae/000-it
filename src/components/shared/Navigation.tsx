@@ -22,6 +22,7 @@ import {
   localizedHref,
 } from "@/i18n/pathnames";
 import { BrandLogo } from "@/components/shared/BrandLogo";
+import { GlobalSearchButton } from "@/components/shared/GlobalSearch";
 import { cn } from "@/lib/utils";
 
 const primaryLinks = [
@@ -214,6 +215,7 @@ export function Navigation() {
           </nav>
 
           <div className="flex items-center gap-1.5 md:gap-2">
+            <GlobalSearchButton />
             <SoftLink
               href={localizedHref(locale, "/afspraak")}
               aria-label={t("book")}

@@ -945,7 +945,13 @@
     "seoTitleSuffix": "Tietopankki",
     "tipLabel": "Vinkki",
     "warnLabel": "Huomio",
-    "subcategoriesLabel": "Alakategoriat"
+    "subcategoriesLabel": "Alakategoriat",
+    "searchArticlesLabel": "Articles",
+    "searchCategoriesLabel": "Categories",
+    "searchEmpty": "No results found. Try different keywords.",
+    "searchLoading": "Searching…",
+    "searchInCategory": "In {category}",
+    "searchElsewhere": "Elsewhere in the knowledge base"
   },
   "faqPage": {
     "eyebrow": "FAQ",
@@ -1242,5 +1248,20 @@
     "deleteConfirm": "Permanently delete {order} — {name}?",
     "statOutstanding": "Avoinna",
     "deleteHint": "This action is permanent and cannot be undone."
+  },
+  "globalSearch": {
+    "open": "Search",
+    "close": "Close",
+    "title": "Search TripleZero iT",
+    "placeholder": "Search pages, services, knowledge base, news…",
+    "hint": "Tip: ⌘K / Ctrl+K opens search anywhere on the site.",
+    "idle": "Type at least 2 characters to search the whole site.",
+    "loading": "Searching…",
+    "empty": "No results found. Try different keywords.",
+    "sectionPages": "Pages",
+    "sectionServices": "Services",
+    "sectionKennisbank": "Knowledge base",
+    "sectionNews": "News",
+    "sectionFaq": "FAQ"
   }
 }

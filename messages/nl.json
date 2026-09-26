@@ -930,6 +930,12 @@
     "articlesInCategory": "artikelen in deze categorie",
     "searchPlaceholder": "Zoeken in de kennisbank…",
     "searchCategoryPlaceholder": "Zoeken in deze categorie…",
+    "searchArticlesLabel": "Artikelen",
+    "searchCategoriesLabel": "Categorieën",
+    "searchEmpty": "Geen resultaten gevonden. Probeer andere zoekwoorden.",
+    "searchLoading": "Zoeken…",
+    "searchInCategory": "In {category}",
+    "searchElsewhere": "Elders in de kennisbank",
     "emptyArticles": "Geen artikelen gevonden.",
     "ctaTitle": "Niet gevonden wat je zoekt?",
     "ctaBody": "Neem contact op met TripleZero iT support — we helpen je graag verder.",
@@ -1242,5 +1248,20 @@
     "deleteConfirm": "{order} — {name} permanent verwijderen?",
     "statOutstanding": "Openstaand",
     "deleteHint": "Deze actie is permanent en kan niet ongedaan worden gemaakt."
+  },
+  "globalSearch": {
+    "open": "Zoeken",
+    "close": "Sluiten",
+    "title": "Zoeken op TripleZero iT",
+    "placeholder": "Zoek pagina’s, diensten, kennisbank, nieuws…",
+    "hint": "Tip: ⌘K / Ctrl+K opent zoeken overal op de site.",
+    "idle": "Typ minstens 2 tekens om te zoeken in de hele site.",
+    "loading": "Zoeken…",
+    "empty": "Geen resultaten gevonden. Probeer andere zoekwoorden.",
+    "sectionPages": "Pagina’s",
+    "sectionServices": "Diensten",
+    "sectionKennisbank": "Kennisbank",
+    "sectionNews": "Nieuws",
+    "sectionFaq": "Veelgestelde vragen"
   }
 }

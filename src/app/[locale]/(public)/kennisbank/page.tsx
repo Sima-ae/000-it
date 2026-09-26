@@ -4,7 +4,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { OpenLiveChatButton } from "@/components/chat/OpenLiveChatButton";
 import { Reveal } from "@/components/marketing/Reveal";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { KennisbankCategoryGrid } from "@/components/kennisbank/KennisbankCategoryGrid";
+import { KennisbankSearch } from "@/components/kennisbank/KennisbankSearch";
 import { listArticles, listCategories, topLevelCategories } from "@/lib/kennisbank";
 import { BRANDING_IMAGES } from "@/lib/branding-images";
 import {
@@ -101,11 +101,17 @@ export default async function KennisbankPage({
           </header>
         </Reveal>
 
-        <KennisbankCategoryGrid
-          categories={categories}
+        <KennisbankSearch
           locale={locale}
+          categories={categories}
           articlesLabel={t("articlesLabel")}
           searchPlaceholder={t("searchPlaceholder")}
+          searchArticlesLabel={t("searchArticlesLabel")}
+          searchCategoriesLabel={t("searchCategoriesLabel")}
+          searchEmptyLabel={t("searchEmpty")}
+          searchLoadingLabel={t("searchLoading")}
+          searchInCategoryLabel={t.raw("searchInCategory") as string}
+          searchElsewhereLabel={t("searchElsewhere")}
         />
 
         <div className="mt-4 flex flex-wrap gap-2 sm:hidden">
