@@ -5,7 +5,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import cat from "../../prisma/kennisbank/catalog.json";
-import { buildArticleHtml, buildExcerpt } from "../../prisma/kennisbank/build-body.ts";
+import { buildArticleHtml, buildExcerpt } from "../../prisma/kennisbank/build-body";
 
 type Row = {
   slug: string;
