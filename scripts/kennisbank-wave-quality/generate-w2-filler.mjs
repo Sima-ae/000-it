@@ -11,8 +11,6 @@ const cat = JSON.parse(
   fs.readFileSync(path.join(ROOT, "prisma/kennisbank/catalog.json"), "utf8"),
 );
 
-const FILLER_RE = /Voer de stappen uit die bij|voer de handeling uit die dit artikel beschrijft/;
-
 /** Detect which articles still build filler HTML by importing build logic via dynamic check later —
  *  here we target known weak topic prefixes that live in infra/troubleshooting/vergelijkingen packs. */
 const WEAK_PREFIXES = ["tz-w2-infra-", "tz-w2-ts-", "tz-w2-vgl-"];

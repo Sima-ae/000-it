@@ -189,8 +189,7 @@ function explainPoints(a, k) {
 
 function packCompare(a) {
   const title = a.title;
-  const k = kof(a);
-  const sides = compareSides(a, k);
+  const sides = compareSides(a);
   return {
     mode: "compare",
     excerpt: excerpt(title, "compare"),
@@ -210,7 +209,7 @@ function packCompare(a) {
   };
 }
 
-function compareSides(a, k) {
+function compareSides(a) {
   const title = a.title;
   // Try to split versus
   const vs = title.split(/\bversus\b|\bvs\.?\b|\bof\b/i).map((s) => s.replace(/[:?-]/g, " ").trim()).filter(Boolean);
@@ -316,37 +315,37 @@ function packHowtoKeywords(a) {
     return htmlHowto(a, k);
   }
   if (cats.includes("landingspaginas")) {
-    return landingHowto(a, k);
+    return landingHowto(a);
   }
   if (cats.includes("onderhoud-maatwerk") || cats.includes("php-maatwerk") || cats.includes("php-en-scripts")) {
-    return maintainHowto(a, k);
+    return maintainHowto(a);
   }
   if (has(k, /\bspf\b|\bdkim\b|\bdmarc\b|\bmx\b/) || cats.includes("domeinnamen") || cats.includes("e-mail")) {
     return mailDnsHowto(a, k);
   }
   if (cats.includes("cdn-performance-cloudflare") || has(k, /\bcloudflare\b|\bcdn\b/)) {
-    return cdnHowto(a, k);
+    return cdnHowto(a);
   }
   if (cats.includes("wordpress") || cats.includes("e-commerce-webshops") || cats.includes("wordpress-onderhoud") || has(k, /wordpress|woocommerce/)) {
-    return wpHowto(a, k);
+    return wpHowto(a);
   }
   if (cats.includes("vps") || cats.includes("infrastructuur-servers") || has(k, /\bvps\b|\bdedicated\b|\brescue\b/)) {
-    return vpsHowto(a, k);
+    return vpsHowto(a);
   }
   if (cats.includes("plesk") || cats.includes("cyberpanel") || cats.includes("plesk-php-vps") || has(k, /\bplesk\b|cyberpanel/)) {
     return panelHowto(a, k);
   }
   if (cats.includes("crm-klantenpanel") || cats.includes("support")) {
-    return crmHowto(a, k);
+    return crmHowto(a);
   }
   if (cats.includes("ai-integratie-automatisering")) {
-    return aiHowto(a, k);
+    return aiHowto(a);
   }
   if (cats.includes("analytics-conversie-toegankelijkheid")) {
-    return analyticsHowto(a, k);
+    return analyticsHowto(a);
   }
   if (cats.includes("privacy-juridisch-compliance")) {
-    return privacyHowto(a, k);
+    return privacyHowto(a);
   }
   if (cats.includes("beveiliging") || cats.includes("ssl-certificaten") || cats.includes("hosting")) {
     return hostingHowto(a, k);
@@ -515,7 +514,7 @@ function htmlHowto(a, k) {
   };
 }
 
-function landingHowto(a, k) {
+function landingHowto(a) {
   const title = a.title;
   return {
     mode: "howto",
@@ -537,7 +536,7 @@ function landingHowto(a, k) {
   };
 }
 
-function maintainHowto(a, k) {
+function maintainHowto(a) {
   const title = a.title;
   return {
     mode: "howto",
@@ -620,7 +619,7 @@ function mailDnsHowto(a, k) {
   };
 }
 
-function cdnHowto(a, k) {
+function cdnHowto(a) {
   const title = a.title;
   return {
     mode: "howto",
@@ -642,7 +641,7 @@ function cdnHowto(a, k) {
   };
 }
 
-function wpHowto(a, k) {
+function wpHowto(a) {
   const title = a.title;
   return {
     mode: "howto",
@@ -664,7 +663,7 @@ function wpHowto(a, k) {
   };
 }
 
-function vpsHowto(a, k) {
+function vpsHowto(a) {
   const title = a.title;
   return {
     mode: "howto",
@@ -708,7 +707,7 @@ function panelHowto(a, k) {
   };
 }
 
-function crmHowto(a, k) {
+function crmHowto(a) {
   const title = a.title;
   return {
     mode: "howto",
@@ -729,7 +728,7 @@ function crmHowto(a, k) {
   };
 }
 
-function aiHowto(a, k) {
+function aiHowto(a) {
   const title = a.title;
   return {
     mode: "howto",
@@ -751,7 +750,7 @@ function aiHowto(a, k) {
   };
 }
 
-function analyticsHowto(a, k) {
+function analyticsHowto(a) {
   const title = a.title;
   return {
     mode: "howto",
@@ -773,7 +772,7 @@ function analyticsHowto(a, k) {
   };
 }
 
-function privacyHowto(a, k) {
+function privacyHowto(a) {
   const title = a.title;
   return {
     mode: "howto",

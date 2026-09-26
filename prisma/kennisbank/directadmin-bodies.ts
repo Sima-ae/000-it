@@ -2,8 +2,6 @@
  * Dutch kennisbank bodies for DirectAdmin topics (TripleZero iT).
  * Topic-specific how-tos with menu paths — not genericBody filler.
  */
-const BRAND = "TripleZero iT";
-
 function p(...paras: string[]) {
   return paras.map((t) => `<p>${t}</p>`).join("\n");
 }

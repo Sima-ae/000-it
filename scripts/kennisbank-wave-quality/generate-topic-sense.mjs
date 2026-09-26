@@ -47,18 +47,6 @@ function has(k, re) {
   return re.test(k);
 }
 
-function pick(arr, n, salt) {
-  // stable pseudo-shuffle by salt so siblings differ
-  let h = 0;
-  for (let i = 0; i < salt.length; i++) h = (h * 31 + salt.charCodeAt(i)) >>> 0;
-  const out = [...arr];
-  for (let i = out.length - 1; i > 0; i--) {
-    h = (h * 1664525 + 1013904223) >>> 0;
-    const j = h % (i + 1);
-    [out[i], out[j]] = [out[j], out[i]];
-  }
-  return out.slice(0, n);
-}
 
 /** @typedef {{intro:string[], why:string[], steps:string[], checks:string[], tip:string, warn:string, related:string, excerpt:string, prep?:string[]}} Pack */
 
@@ -660,7 +648,7 @@ function troubleshootingPack(a, k) {
   });
 }
 
-function privacyPack(a, k) {
+function privacyPack(a) {
   const title = a.title;
   return pack(title, {
     intro: [
@@ -685,7 +673,7 @@ function privacyPack(a, k) {
   });
 }
 
-function comparePack(a, k) {
+function comparePack(a) {
   const title = a.title;
   return pack(title, {
     intro: [
@@ -931,7 +919,7 @@ function crmSupportPack(a, k) {
   });
 }
 
-function microsoftPack(a, k) {
+function microsoftPack(a) {
   // Only for weak leftovers not in microsoftTopicBuilders
   const title = a.title;
   return pack(title, {
@@ -975,7 +963,7 @@ function pleskCyberFallback(a, k) {
   });
 }
 
-function veiligOnlinePack(a, k) {
+function veiligOnlinePack(a) {
   const title = a.title;
   return pack(title, {
     intro: [
@@ -1115,11 +1103,11 @@ function buildPack(a) {
   }
 
   if (cats.includes("vergelijkingen-keuzehulp") || has(k, /\bversus\b|\bvs\.?\b|vergelijk|keuzehulp/)) {
-    return fixBrandDeep(comparePack(a, k));
+    return fixBrandDeep(comparePack(a));
   }
 
   if (cats.includes("privacy-juridisch-compliance") || has(k, /\bavg\b|\bgdpr\b|privacy|cookie|verwerk|bewaarterm|consent|\bdpi\b/)) {
-    return fixBrandDeep(privacyPack(a, k));
+    return fixBrandDeep(privacyPack(a));
   }
 
   if (cats.includes("e-commerce-webshops") || cats.includes("wordpress") || cats.includes("bloggen") || cats.includes("wordpress-onderhoud") || has(k, /wordpress|woocommerce|\bwp-|plugin|thema/)) {
@@ -1143,11 +1131,11 @@ function buildPack(a) {
   }
 
   if (cats.includes("veilig-online") || has(k, /phishing|ransomware|smishing|quishing|wachtwoordmanager|sim.?swap/)) {
-    return fixBrandDeep(veiligOnlinePack(a, k));
+    return fixBrandDeep(veiligOnlinePack(a));
   }
 
   if (cats.includes("microsoft") || has(k, /microsoft|\bm365\b|office.?365|exchange|\bteams\b|onedrive|sharepoint/)) {
-    return fixBrandDeep(microsoftPack(a, k));
+    return fixBrandDeep(microsoftPack(a));
   }
 
   if (cats.includes("plesk") || cats.includes("cyberpanel") || cats.includes("plesk-php-vps") || has(k, /\bplesk\b|cyberpanel/)) {

@@ -2,8 +2,6 @@
  * Dutch kennisbank bodies for CyberPanel topics (TripleZero iT).
  * New articles use tz-cp-*; existing cp-* builders stay in build-body.ts.
  */
-const BRAND = "TripleZero iT";
-
 function p(...paras: string[]) {
   return paras.map((t) => `<p>${t}</p>`).join("\n");
 }

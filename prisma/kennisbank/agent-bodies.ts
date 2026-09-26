@@ -1,18 +1,12 @@
 /**
  * Dutch kennisbank bodies for AI-agents topics (TripleZero iT dashboard agents).
  */
-const BRAND = "TripleZero iT";
-
 function p(...paras: string[]) {
   return paras.map((t) => `<p>${t}</p>`).join("\n");
 }
 
 function h2(t: string) {
   return `<h2>${t}</h2>`;
-}
-
-function h3(t: string) {
-  return `<h3>${t}</h3>`;
 }
 
 function ol(items: string[]) {

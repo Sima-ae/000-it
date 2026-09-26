@@ -299,7 +299,7 @@ function specializedSteps(title, slug, pb) {
   return steps;
 }
 
-function specializedChecks(title, slug, pb) {
+function specializedChecks(title, slug) {
   const k = keywords(title, slug);
   if (/mail|outlook|imap|smtp|spf|dkim/.test(k)) {
     return ["Testmail komt aan en wordt verzonden", "Headers tonen verwachte auth-resultaten waar relevant", "Geen onbedoelde forward-loops"];
@@ -327,7 +327,7 @@ function specializedWarn(title, slug, pb) {
   return "Maak bij twijfel eerst een backup en wijzig productie niet tijdens piekuren.";
 }
 
-function specializedTip(title, slug, pb) {
+function specializedTip(title, slug) {
   const k = keywords(title, slug);
   if (/mail/.test(k)) return "Werkt webmail wél en je app niet, dan ligt de oorzaak in de clientinstellingen.";
   if (/wordpress|plugin/.test(k)) return "Schakel bij debuggen tijdelijk caching uit en noteer pluginversies.";

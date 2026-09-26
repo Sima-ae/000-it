@@ -2,8 +2,6 @@
  * Dutch kennisbank bodies for Plesk topics (TripleZero iT).
  * New articles use tz-pl-*.
  */
-const BRAND = "TripleZero iT";
-
 function p(...paras: string[]) {
   return paras.map((t) => `<p>${t}</p>`).join("\n");
 }

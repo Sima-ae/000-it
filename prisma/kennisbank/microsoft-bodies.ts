@@ -1,8 +1,6 @@
 /**
  * Dutch kennisbank bodies for Microsoft 365 topics (TripleZero iT).
  */
-const BRAND = "TripleZero iT";
-
 function p(...paras: string[]) {
   return paras.map((t) => `<p>${t}</p>`).join("\n");
 }

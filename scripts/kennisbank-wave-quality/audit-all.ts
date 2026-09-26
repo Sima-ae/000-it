@@ -86,10 +86,23 @@ const badStep = [
   /\$\{BRAND\}/,
 ];
 
+type CatalogArticle = {
+  slug: string;
+  title: string;
+  topic: string;
+  categories?: string[];
+};
+
+type Catalog = {
+  articles: CatalogArticle[];
+};
+
+const catalog = cat as Catalog;
+
 const rows: Row[] = [];
 const fpCount = new Map<string, number>();
 
-for (const a of cat.articles as any[]) {
+for (const a of catalog.articles) {
   const html = buildArticleHtml(a.title, a.topic, "nl");
   const ex = buildExcerpt(a.title, "nl", a.topic);
   const flags: string[] = [];

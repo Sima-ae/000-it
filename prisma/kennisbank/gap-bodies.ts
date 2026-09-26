@@ -3,8 +3,6 @@
  * competitor knowledge base but were missing here. Written in our own words —
  * never a verbatim copy, never competitor brand names.
  */
-const BRAND = "TripleZero iT";
-
 function p(...paras: string[]) {
   return paras.map((t) => `<p>${t}</p>`).join("\n");
 }

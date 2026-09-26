@@ -2,8 +2,6 @@
  * Quality NL bodies for kennisbank articles outside the DirectAdmin wave.
  * Overrides weak gap/thicken/ecommerce/privacy templates with topic-specific how-tos.
  */
-const BRAND = "TripleZero iT";
-
 function p(...paras: string[]) {
   return paras.map((t) => `<p>${t}</p>`).join("\n");
 }

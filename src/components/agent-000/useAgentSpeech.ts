@@ -264,7 +264,6 @@ function splitSpeechBeats(text: string): string[] {
 export function useAgentSpeech(locale: string) {
   const [muted, setMuted] = useState(false);
   const [speaking, setSpeaking] = useState(false);
-  const [voicesReady, setVoicesReady] = useState(false);
   const voicesReadyRef = useRef(false);
   const speakGenRef = useRef(0);
 
@@ -279,7 +278,6 @@ export function useAgentSpeech(locale: string) {
       const list = window.speechSynthesis?.getVoices() || [];
       if (list.length) {
         voicesReadyRef.current = true;
-        setVoicesReady(true);
       }
     };
 
@@ -376,7 +374,7 @@ export function useAgentSpeech(locale: string) {
       }
       run();
     },
-    [locale, muted, voicesReady],
+    [locale, muted],
   );
 
   return { muted, setMuted: setMutedPersist, speaking, speak, cancel };

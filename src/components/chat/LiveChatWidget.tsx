@@ -185,7 +185,7 @@ export function LiveChatWidget() {
       setTicket(data);
     }, intervalMs);
     return () => clearInterval(timer);
-  }, [open, ticket?.id, guestToken, speak]);
+  }, [open, ticket?.id, ticket?.messages?.length, guestToken, speak]);
 
   // Guests only. Hide while auth is resolving so logged-in users never see a flash of fields.
   const needsIdentity = status === "unauthenticated" && !ticket;

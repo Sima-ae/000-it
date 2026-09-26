@@ -1,8 +1,6 @@
 /**
  * Dutch kennisbank bodies for AI-scan topics (TripleZero iT free readiness scan).
  */
-const BRAND = "TripleZero iT";
-
 function p(...paras: string[]) {
   return paras.map((t) => `<p>${t}</p>`).join("\n");
 }

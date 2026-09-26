@@ -2,8 +2,6 @@
  * Quality NL bodies for remaining Wave-2 filler topics (infra / troubleshooting / vergelijkingen).
  * Overrides weak howto templates that contained “Voer de stappen uit die bij …”.
  */
-const BRAND = "TripleZero iT";
-
 function p(...paras: string[]) {
   return paras.map((t) => `<p>${t}</p>`).join("\n");
 }

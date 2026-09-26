@@ -6,7 +6,6 @@ export const BRAND_NAME = "TripleZero iT";
 
 /** @returns {Record<string, object>} */
 export function webdesignSlugPacks() {
-  const B = BRAND_NAME;
   return {
     // ---- Next.js ----
     "api-routes-en-route-handlers-in-next-js": {
