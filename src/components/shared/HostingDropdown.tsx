@@ -14,9 +14,8 @@ import { cn } from "@/lib/utils";
 
 const CLOSE_DELAY_MS = 220;
 
-/** Hosting product links after Domeinen + Webhosting overview */
+/** Hosting product links (Domeinen is a top-level nav item). */
 const HOSTING_MENU_SLUGS = [
-  "domains",
   "shared-hosting-basic",
   "shared-hosting-business",
   "shared-hosting-plus",
@@ -28,7 +27,7 @@ const HOSTING_MENU_SLUGS = [
   "wordpress-hosting-plus",
 ] as const;
 
-/** All hosting-related slugs used for active-state detection (includes legacy web-hosting) */
+/** Hosting-related slugs for active-state (excludes domains — separate main nav). */
 const HOSTING_SLUGS = ["web-hosting", ...HOSTING_MENU_SLUGS] as const;
 
 export function HostingDropdown({
@@ -61,18 +60,17 @@ export function HostingDropdown({
   useEffect(() => () => clearCloseTimer(), []);
 
   const groupHref = serviceGroupHref(locale, "hosting");
-  const label = catalogGroupTitle("hosting", locale, "Webhosting & Domains");
-  /** Category overview link — short label for /diensten/categorie/hosting */
-  const categoryLabel = catalogUiLabel("hostingCategory", locale, "Webhosting");
-  const domainsItem = serviceCatalog.find((s) => s.slug === "domains");
-  const productItems = HOSTING_MENU_SLUGS.filter((slug) => slug !== "domains")
-    .map((slug) => serviceCatalog.find((s) => s.slug === slug))
-    .filter((item): item is NonNullable<typeof item> => Boolean(item));
+  const label = catalogGroupTitle("hosting", locale, "Hosting");
+  /** Category overview link — /diensten/categorie/hosting */
+  const categoryLabel = catalogUiLabel("hostingCategory", locale, "Hosting");
+  const productItems = HOSTING_MENU_SLUGS.map((slug) =>
+    serviceCatalog.find((s) => s.slug === slug),
+  ).filter((item): item is NonNullable<typeof item> => Boolean(item));
 
   const itemClass =
     "block rounded-xl px-3 py-2 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground";
 
-  function renderServiceLink(item: NonNullable<typeof domainsItem>) {
+  function renderServiceLink(item: (typeof serviceCatalog)[number]) {
     const href = serviceHref(locale, item);
     const itemActive = pathname === href || pathname.startsWith(`${href}/`);
     return (
@@ -117,7 +115,6 @@ export function HostingDropdown({
           onMouseLeave={scheduleClose}
         >
           <div className="max-h-[min(70vh,28rem)] min-w-64 overflow-y-auto rounded-2xl border border-border/60 bg-white p-1.5 shadow-xl dark:bg-zinc-950">
-            {domainsItem ? renderServiceLink(domainsItem) : null}
             <SoftLink
               href={groupHref}
               className={cn(

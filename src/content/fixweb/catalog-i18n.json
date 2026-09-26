@@ -2668,7 +2668,7 @@
       "webdesign": "Webdesign & Support",
       "design": "Design",
       "marketing": "Marketing & Growth",
-      "hosting": "Webhosting & Domains",
+      "hosting": "Hosting",
       "optimization": "Optimization"
     },
     "nl": {
@@ -2677,7 +2677,7 @@
       "webdesign": "Webdesign en support",
       "design": "Design",
       "marketing": "Marketing en groei",
-      "hosting": "Webhosting en domeinen",
+      "hosting": "Hosting",
       "optimization": "Optimalisatie"
     },
     "fr": {
@@ -2686,7 +2686,7 @@
       "webdesign": "Conception Web et assistance",
       "design": "Design graphique",
       "marketing": "Marketing // Développement",
-      "hosting": "Hébergement Web &amp; Domaines",
+      "hosting": "Hébergement",
       "optimization": "Optimisation"
     },
     "de": {
@@ -2695,7 +2695,7 @@
       "webdesign": "Webdesign & Support",
       "design": "Grafisches Design",
       "marketing": "Marketing, Wachstum",
-      "hosting": "Webhosting & Domains",
+      "hosting": "Hosting",
       "optimization": "Optimierung"
     },
     "es": {
@@ -2704,7 +2704,7 @@
       "webdesign": "Diseño web y asistencia",
       "design": "Diseño gráfico",
       "marketing": "Marketing // Crecimiento",
-      "hosting": "Alojamiento web y dominios",
+      "hosting": "Hosting",
       "optimization": "Optimización"
     },
     "pt": {
@@ -2713,7 +2713,7 @@
       "webdesign": "Webdesign e suporte",
       "design": "Design gráfico",
       "marketing": "Marketing e crescimento",
-      "hosting": "Webhosting e domínios",
+      "hosting": "Hospedagem",
       "optimization": "Otimização"
     },
     "it": {
@@ -2722,7 +2722,7 @@
       "webdesign": "Webdesign & Supporto",
       "design": "Design grafico",
       "marketing": "Marketing // Crescita",
-      "hosting": "Webhosting e domini",
+      "hosting": "Hosting",
       "optimization": "Ottimizzazione"
     },
     "el": {
@@ -2731,7 +2731,7 @@
       "webdesign": "Σχεδιασμός & Υποστήριξη Ιστοσελίδων",
       "design": "Γραφικός σχεδιασμός",
       "marketing": "Μάρκετινγκ & Ανάπτυξη",
-      "hosting": "Φιλοξενία ιστοσελίδων & Domains",
+      "hosting": "Φιλοξενία",
       "optimization": "Βελτιστοποίηση"
     },
     "pl": {
@@ -2740,7 +2740,7 @@
       "webdesign": "Projektowanie stron internetowych i wsparcie",
       "design": "Projektowanie graficzne",
       "marketing": "Rozwój marketingu",
-      "hosting": "Hosting i domeny",
+      "hosting": "Hosting",
       "optimization": "Optymalizacja"
     },
     "cs": {
@@ -2749,7 +2749,7 @@
       "webdesign": "Webdesign a podpora",
       "design": "Grafický design",
       "marketing": "Marketing a růst",
-      "hosting": "Hosting a domény",
+      "hosting": "Hosting",
       "optimization": "Optimalizace"
     },
     "sk": {
@@ -2758,7 +2758,7 @@
       "webdesign": "Webdizajn a podpora",
       "design": "Grafický dizajn",
       "marketing": "Marketing a rast",
-      "hosting": "Webhosting a domény",
+      "hosting": "Hosting",
       "optimization": "Optimalizácia"
     },
     "hu": {
@@ -2767,7 +2767,7 @@
       "webdesign": "Webdizájn és támogatás",
       "design": "Grafikai tervezés",
       "marketing": "Marketing és növekedés",
-      "hosting": "Webtárhely és domainek",
+      "hosting": "Hosting",
       "optimization": "Optimalizálás"
     },
     "ro": {
@@ -2776,7 +2776,7 @@
       "webdesign": "Webdesign și asistență",
       "design": "Design grafic",
       "marketing": "Marketing și creștere",
-      "hosting": "Găzduire web și domenii",
+      "hosting": "Găzduire",
       "optimization": "Optimizare"
     },
     "bg": {
@@ -2785,7 +2785,7 @@
       "webdesign": "Уеб дизайн и поддръжка",
       "design": "Графичен дизайн",
       "marketing": "Маркетинг и растеж",
-      "hosting": "Уеб хостинг и домейни",
+      "hosting": "Хостинг",
       "optimization": "Оптимизация"
     },
     "hr": {
@@ -2794,7 +2794,7 @@
       "webdesign": "Web-dizajn i podrška",
       "design": "Grafički dizajn",
       "marketing": "Rast marketinga",
-      "hosting": "Webhosting i domene",
+      "hosting": "Hosting",
       "optimization": "Optimizacija"
     },
     "sr": {
@@ -2803,7 +2803,7 @@
       "webdesign": "Veb-dizajn i podrška",
       "design": "Графички дизајн",
       "marketing": "Marketing i rast",
-      "hosting": "Veb hosting i domeni",
+      "hosting": "Хостинг",
       "optimization": "Optimizacija"
     },
     "bs": {
@@ -2812,7 +2812,7 @@
       "webdesign": "Web dizajn i podrška",
       "design": "Grafički dizajn",
       "marketing": "Marketing i rast",
-      "hosting": "Web hosting i domene",
+      "hosting": "Hosting",
       "optimization": "Optimizacija"
     },
     "cnr": {
@@ -2821,7 +2821,7 @@
       "webdesign": "Veb-dizajn i podrška",
       "design": "Grafički dizajn",
       "marketing": "Marketing i rast",
-      "hosting": "Veb hosting i domeni",
+      "hosting": "Hosting",
       "optimization": "Optimizacija"
     },
     "sq": {
@@ -2830,7 +2830,7 @@
       "webdesign": "Dizajni i uebit dhe asistenca",
       "design": "Dizajn grafik",
       "marketing": "Marketingu dhe rritja",
-      "hosting": "Pritja e vizitorëve në internet dhe domenet",
+      "hosting": "Hosting",
       "optimization": "Optimizimi"
     },
     "mk": {
@@ -2839,7 +2839,7 @@
       "webdesign": "Веб дизајн и поддршка",
       "design": "Графички дизајн",
       "marketing": "Маркетинг и раст",
-      "hosting": "Веб-домаќин и домени",
+      "hosting": "Хостинг",
       "optimization": "Оптимизација"
     },
     "lt": {
@@ -2848,7 +2848,7 @@
       "webdesign": "Žiniatinklio dizainas ir palaikymas",
       "design": "Grafikos dizainas",
       "marketing": "Rinkodara ir augimas",
-      "hosting": "Žiniatinklio priegloba ir domenai",
+      "hosting": "Hostingas",
       "optimization": "Optimizavimas"
     },
     "da": {
@@ -2857,7 +2857,7 @@
       "webdesign": "Webdesign og support",
       "design": "Grafisk design",
       "marketing": "Marketing og vækst",
-      "hosting": "Webhosting og domæner",
+      "hosting": "Hosting",
       "optimization": "Optimering"
     },
     "sv": {
@@ -2866,7 +2866,7 @@
       "webdesign": "Webbdesign & Support",
       "design": "Grafisk design",
       "marketing": "Marknadsföring & Tillväxt",
-      "hosting": "Webbhotell och domäner",
+      "hosting": "Hosting",
       "optimization": "Optimering"
     },
     "no": {
@@ -2875,7 +2875,7 @@
       "webdesign": "Webdesign og support",
       "design": "Grafisk design",
       "marketing": "Markedsføring og vekst",
-      "hosting": "Webhotell og domener",
+      "hosting": "Hosting",
       "optimization": "Optimalisering"
     },
     "fi": {
@@ -2884,7 +2884,7 @@
       "webdesign": "Verkkosuunnittelu ja tuki",
       "design": "Graafinen suunnittelu",
       "marketing": "Markkinointi ja kasvu",
-      "hosting": "Webhotellipalvelut ja verkkotunnukset",
+      "hosting": "Hosting",
       "optimization": "Optimointi"
     },
     "uk": {
@@ -2893,7 +2893,7 @@
       "webdesign": "Веб-дизайн і підтримка",
       "design": "Графічний дизайн",
       "marketing": "Маркетинг і зростання",
-      "hosting": "Веб-хостинг і домени",
+      "hosting": "Хостинг",
       "optimization": "Оптимізація"
     },
     "ru": {
@@ -2902,7 +2902,7 @@
       "webdesign": "Веб-дизайн и поддержка",
       "design": "Графический дизайн",
       "marketing": "Маркетинг и рост",
-      "hosting": "Веб-хостинг и домены",
+      "hosting": "Хостинг",
       "optimization": "Оптимизация"
     },
     "tr": {
@@ -2911,7 +2911,7 @@
       "webdesign": "Web Tasarımı ve Destek",
       "design": "Grafik tasarım",
       "marketing": "Pazarlama ve Büyüme",
-      "hosting": "Web Barındırma ve Alan Adları",
+      "hosting": "Hosting",
       "optimization": "Optimizasyon"
     },
     "he": {
@@ -2920,7 +2920,7 @@
       "webdesign": "עיצוב אתרים ותמיכה",
       "design": "עיצוב גרפי",
       "marketing": "שיווק וצמיחה",
-      "hosting": "אחסון אתרים ודומיינים",
+      "hosting": "אחסון",
       "optimization": "אופטימיזציה"
     },
     "ar": {
@@ -2929,7 +2929,7 @@
       "webdesign": "تصميم المواقع والدعم",
       "design": "تصميم جرافيكي",
       "marketing": "التسويق والنمو",
-      "hosting": "استضافة المواقع والمجالات",
+      "hosting": "استضافة",
       "optimization": "التحسين"
     },
     "ka": {
@@ -2938,7 +2938,7 @@
       "webdesign": "ვებდიზაინი და მხარდაჭერა",
       "design": "გრაფიკული დიზაინი",
       "marketing": "მარკეტინგი და ზრდა",
-      "hosting": "ვებჰოსტინგი და დომენები",
+      "hosting": "ჰოსტინგი",
       "optimization": "ოპტიმიზაცია"
     },
     "hy": {
@@ -2947,7 +2947,7 @@
       "webdesign": "Վեբ դիզայն և աջակցություն",
       "design": "Գրաֆիկական դիզայն",
       "marketing": "Մարքեթինգ և աճ",
-      "hosting": "Վեբհոստինգ և տիրույթներ",
+      "hosting": "Հոստինգ",
       "optimization": "Օպտիմիզացիա"
     },
     "az": {
@@ -2956,7 +2956,7 @@
       "webdesign": "Veb Dizayn və Dəstək",
       "design": "Qrafik dizayn",
       "marketing": "Marketinq və İnkişaf",
-      "hosting": "Veb hostinq və domenlər",
+      "hosting": "Hostinq",
       "optimization": "Optimallaşdırma"
     },
     "zh": {
@@ -2965,7 +2965,7 @@
       "webdesign": "网页设计与支持",
       "design": "平面设计",
       "marketing": "营销与发展",
-      "hosting": "虚拟主机和域名",
+      "hosting": "托管",
       "optimization": "优化"
     },
     "ja": {
@@ -2974,7 +2974,7 @@
       "webdesign": "ウェブデザインとサポート",
       "design": "グラフィックデザイン",
       "marketing": "マーケティング//成長",
-      "hosting": "ウェブホスティングとドメイン",
+      "hosting": "ホスティング",
       "optimization": "最適化"
     }
   },
@@ -4733,35 +4733,35 @@
   "labels": {
     "en": {
       "perMonth": "/ month",
-      "hostingCategory": "Webhosting"
+      "hostingCategory": "Hosting"
     },
     "nl": {
       "perMonth": "/ maand",
-      "hostingCategory": "Webhosting"
+      "hostingCategory": "Hosting"
     },
     "fr": {
       "perMonth": "/ mois",
-      "hostingCategory": "Hébergement web"
+      "hostingCategory": "Hébergement"
     },
     "de": {
       "perMonth": "/ Monat",
-      "hostingCategory": "Webhosting"
+      "hostingCategory": "Hosting"
     },
     "es": {
       "perMonth": "/ mes",
-      "hostingCategory": "Alojamiento web"
+      "hostingCategory": "Hosting"
     },
     "pt": {
       "perMonth": "/ mês",
-      "hostingCategory": "Hospedagem web"
+      "hostingCategory": "Hospedagem"
     },
     "it": {
       "perMonth": "/ mese",
-      "hostingCategory": "Web hosting"
+      "hostingCategory": "Hosting"
     },
     "el": {
       "perMonth": "/ μήνα",
-      "hostingCategory": "Φιλοξενία ιστού"
+      "hostingCategory": "Φιλοξενία"
     },
     "pl": {
       "perMonth": "/ miesiąc",
@@ -4769,107 +4769,107 @@
     },
     "cs": {
       "perMonth": "/ měsíc",
-      "hostingCategory": "Webhosting"
+      "hostingCategory": "Hosting"
     },
     "sk": {
       "perMonth": "/ mesiac",
-      "hostingCategory": "Webhosting"
+      "hostingCategory": "Hosting"
     },
     "hu": {
       "perMonth": "/ hónap",
-      "hostingCategory": "Webtárhely"
+      "hostingCategory": "Hosting"
     },
     "ro": {
       "perMonth": "/luna",
-      "hostingCategory": "Găzduire web"
+      "hostingCategory": "Găzduire"
     },
     "bg": {
       "perMonth": "/ месец",
-      "hostingCategory": "Уеб хостинг"
+      "hostingCategory": "Хостинг"
     },
     "hr": {
       "perMonth": "/ mjesecu",
-      "hostingCategory": "Webhosting"
+      "hostingCategory": "Hosting"
     },
     "sr": {
       "perMonth": "/ месец",
-      "hostingCategory": "Veb hosting"
+      "hostingCategory": "Хостинг"
     },
     "bs": {
       "perMonth": "/ mjesec",
-      "hostingCategory": "Web hosting"
+      "hostingCategory": "Hosting"
     },
     "cnr": {
       "perMonth": "/ месец",
-      "hostingCategory": "Veb hosting"
+      "hostingCategory": "Hosting"
     },
     "sq": {
       "perMonth": "/ muaj",
-      "hostingCategory": "Web hosting"
+      "hostingCategory": "Hosting"
     },
     "mk": {
       "perMonth": "/ месец",
-      "hostingCategory": "Веб-хостинг"
+      "hostingCategory": "Хостинг"
     },
     "lt": {
       "perMonth": "/ mėn",
-      "hostingCategory": "Priegloba"
+      "hostingCategory": "Hostingas"
     },
     "da": {
       "perMonth": "/ måned",
-      "hostingCategory": "Webhosting"
+      "hostingCategory": "Hosting"
     },
     "sv": {
       "perMonth": "/ månad",
-      "hostingCategory": "Webbhotell"
+      "hostingCategory": "Hosting"
     },
     "no": {
       "perMonth": "/ måned",
-      "hostingCategory": "Webhotell"
+      "hostingCategory": "Hosting"
     },
     "fi": {
       "perMonth": "/ kuukausi",
-      "hostingCategory": "Webhotelli"
+      "hostingCategory": "Hosting"
     },
     "uk": {
       "perMonth": "/ місяць",
-      "hostingCategory": "Веб-хостинг"
+      "hostingCategory": "Хостинг"
     },
     "ru": {
       "perMonth": "/ месяц",
-      "hostingCategory": "Веб-хостинг"
+      "hostingCategory": "Хостинг"
     },
     "tr": {
       "perMonth": "/ ay",
-      "hostingCategory": "Web barındırma"
+      "hostingCategory": "Hosting"
     },
     "he": {
       "perMonth": "/ חודש",
-      "hostingCategory": "אחסון אתרים"
+      "hostingCategory": "אחסון"
     },
     "ar": {
       "perMonth": "/ شهر",
-      "hostingCategory": "استضافة المواقع"
+      "hostingCategory": "استضافة"
     },
     "ka": {
       "perMonth": "/ თვე",
-      "hostingCategory": "ვებჰოსტინგი"
+      "hostingCategory": "ჰოსტინგი"
     },
     "hy": {
       "perMonth": "/ ամիս",
-      "hostingCategory": "Վեբհոստինգ"
+      "hostingCategory": "Հոստինգ"
     },
     "az": {
       "perMonth": "/ ay",
-      "hostingCategory": "Veb hostinq"
+      "hostingCategory": "Hostinq"
     },
     "zh": {
       "perMonth": "/ 月",
-      "hostingCategory": "虚拟主机"
+      "hostingCategory": "托管"
     },
     "ja": {
       "perMonth": "/ 月",
-      "hostingCategory": "ウェブホスティング"
+      "hostingCategory": "ホスティング"
     }
   },
   "groupSummaries": {
@@ -4880,7 +4880,7 @@
       "webdesign": "Custom websites, conversion, security, speed and Next.js development.",
       "design": "Logos, branding, flyers, magazines, print and digital design.",
       "marketing": "Content, social media, ads, e-commerce, media and community management.",
-      "hosting": "Web hosting, WordPress hosting, VPS and domains."
+      "hosting": "Web hosting, WordPress hosting, VPS."
     },
     "nl": {
       "ai": "Chatbots, workflows, AI in websites en shops, integratie en AI-advies.",
@@ -4889,7 +4889,7 @@
       "webdesign": "Maatwerk websites, conversie, security, snelheid en Next.js-ontwikkeling.",
       "design": "Logo's, branding, flyers, magazines, drukwerk en digital design.",
       "marketing": "Content, social media, ads, e-commerce, media en community management.",
-      "hosting": "Webhosting, WordPress-hosting, VPS en domeinen."
+      "hosting": "Webhosting, WordPress-hosting, VPS."
     },
     "fr": {
       "ai": "Chatbots, workflows, IA dans les sites Web et les magasins, intégration et conseil en IA.",
@@ -4898,7 +4898,7 @@
       "webdesign": "Sites Web personnalisés, conversion, sécurité, vitesse et développement Next.js.",
       "design": "Logos, branding, dépliants, magazines, design imprimé et numérique.",
       "marketing": "Contenu, médias sociaux, publicités, e-commerce, médias et gestion de communauté.",
-      "hosting": "Hébergement Web, hébergement WordPress, VPS et domaines."
+      "hosting": "Hébergement Web, hébergement WordPress, VPS."
     },
     "de": {
       "ai": "Chatbots, Workflows, KI in Websites und Shops, Integration und KI-Beratung.",
@@ -4907,7 +4907,7 @@
       "webdesign": "Benutzerdefinierte Websites, Konvertierung, Sicherheit, Geschwindigkeit und Next.js-Entwicklung.",
       "design": "Logos, Branding, Flyer, Zeitschriften, Print- und Digitaldesign.",
       "marketing": "Inhalte, soziale Medien, Anzeigen, E-Commerce, Medien- und Community-Management.",
-      "hosting": "Webhosting, WordPress-Hosting, VPS und Domains."
+      "hosting": "Webhosting, WordPress-Hosting, VPS."
     },
     "es": {
       "ai": "Chatbots, flujos de trabajo, IA en sitios web y tiendas, integración y consultoría en IA.",
@@ -4916,7 +4916,7 @@
       "webdesign": "Sitios web personalizados, conversión, seguridad, velocidad y desarrollo Next.js.",
       "design": "Logotipos, branding, folletos, revistas, diseño impreso y digital.",
       "marketing": "Contenidos, redes sociales, anuncios, comercio electrónico, medios y community manager.",
-      "hosting": "Alojamiento web, hosting WordPress, VPS y dominios."
+      "hosting": "Alojamiento web, hosting WordPress, VPS."
     },
     "pt": {
       "ai": "Chatbots, fluxos de trabalho, IA em sites e lojas, integração e consultoria em IA.",
@@ -4925,7 +4925,7 @@
       "webdesign": "Sites customizados, conversão, segurança, velocidade e desenvolvimento Next.js.",
       "design": "Logotipos, branding, flyers, revistas, design impresso e digital.",
       "marketing": "Conteúdo, mídias sociais, anúncios, e-commerce, mídia e gerenciamento de comunidade.",
-      "hosting": "Hospedagem web, hospedagem WordPress, VPS e domínios."
+      "hosting": "Hospedagem web, hospedagem WordPress, VPS."
     },
     "it": {
       "ai": "Chatbot, flussi di lavoro, intelligenza artificiale nei siti web e nei negozi, integrazione e consulenza sull'intelligenza artificiale.",
@@ -4934,7 +4934,7 @@
       "webdesign": "Siti web personalizzati, conversione, sicurezza, velocità e sviluppo Next.js.",
       "design": "Loghi, branding, volantini, riviste, stampa e design digitale.",
       "marketing": "Gestione di contenuti, social media, pubblicità, e-commerce, media e community.",
-      "hosting": "Web hosting, hosting WordPress, VPS e domini."
+      "hosting": "Web hosting, hosting WordPress, VPS."
     },
     "el": {
       "ai": "Chatbots, ροές εργασίας, τεχνητή νοημοσύνη σε ιστότοπους και καταστήματα, ενοποίηση και συμβουλευτικές υπηρεσίες τεχνητής νοημοσύνης.",
@@ -4952,7 +4952,7 @@
       "webdesign": "Niestandardowe strony internetowe, konwersja, bezpieczeństwo, szybkość i rozwój Next.js.",
       "design": "Logo, branding, ulotki, czasopisma, projekty drukowane i cyfrowe.",
       "marketing": "Treść, media społecznościowe, reklamy, e-commerce, media i zarządzanie społecznością.",
-      "hosting": "Hosting stron internetowych, hosting WordPress, VPS i domeny."
+      "hosting": "Hosting stron internetowych, hosting WordPress, VPS."
     },
     "cs": {
       "ai": "Chatboti, workflow, AI na webech a obchodech, integrace a poradenství v oblasti AI.",
@@ -4961,7 +4961,7 @@
       "webdesign": "Vlastní webové stránky, konverze, bezpečnost, rychlost a vývoj Next.js.",
       "design": "Loga, značky, letáky, časopisy, tisk a digitální design.",
       "marketing": "Obsah, sociální média, reklamy, elektronický obchod, správa médií a komunity.",
-      "hosting": "Webhosting, WordPress hosting, VPS a domény."
+      "hosting": "Webhosting, WordPress hosting, VPS."
     },
     "sk": {
       "ai": "Chatboty, pracovné postupy, AI na weboch a obchodoch, integrácia a poradenstvo v oblasti AI.",
@@ -4970,7 +4970,7 @@
       "webdesign": "Vlastné webové stránky, konverzia, bezpečnosť, rýchlosť a vývoj Next.js.",
       "design": "Logá, značky, letáky, časopisy, tlač a digitálny dizajn.",
       "marketing": "Obsah, sociálne médiá, reklamy, elektronický obchod, správa médií a komunity.",
-      "hosting": "Webhosting, WordPress hosting, VPS a domény."
+      "hosting": "Webhosting, WordPress hosting, VPS."
     },
     "hu": {
       "ai": "Chatbotok, munkafolyamatok, mesterséges intelligencia webhelyeken és üzletekben, integráció és AI-tanácsadás.",
@@ -4979,7 +4979,7 @@
       "webdesign": "Egyedi webhelyek, átalakítás, biztonság, sebesség és Next.js fejlesztés.",
       "design": "Logók, márkajelzések, szórólapok, magazinok, nyomtatott és digitális tervezés.",
       "marketing": "Tartalom, közösségi média, hirdetések, e-kereskedelem, média és közösségi menedzsment.",
-      "hosting": "Webtárhely, WordPress hosting, VPS és domainek."
+      "hosting": "Webtárhely, WordPress hosting, VPS."
     },
     "ro": {
       "ai": "Chatbot, fluxuri de lucru, AI în site-uri web și magazine, integrare și consultanță AI.",
@@ -4988,7 +4988,7 @@
       "webdesign": "Site-uri web personalizate, conversie, securitate, viteză și dezvoltare Next.js.",
       "design": "Logo-uri, branding, fluturași, reviste, print și design digital.",
       "marketing": "Conținut, rețele sociale, reclame, comerț electronic, media și managementul comunității.",
-      "hosting": "Gazduire web, hosting WordPress, VPS si domenii."
+      "hosting": "Gazduire web, hosting WordPress, VPS."
     },
     "bg": {
       "ai": "Чатботове, работни процеси, AI в уебсайтове и магазини, интеграция и консултации с AI.",
@@ -4997,7 +4997,7 @@
       "webdesign": "Персонализирани уебсайтове, преобразуване, сигурност, скорост и разработка на Next.js.",
       "design": "Логота, брандиране, листовки, списания, печатен и дигитален дизайн.",
       "marketing": "Съдържание, социални медии, реклами, електронна търговия, медии и управление на общността.",
-      "hosting": "Уеб хостинг, WordPress хостинг, VPS и домейни."
+      "hosting": "Уеб хостинг, WordPress хостинг, VPS."
     },
     "hr": {
       "ai": "Chatbotovi, tijek rada, umjetna inteligencija na web stranicama i u trgovinama, integracija i savjetovanje o umjetnoj inteligenciji.",
@@ -5006,7 +5006,7 @@
       "webdesign": "Prilagođene web stranice, konverzija, sigurnost, brzina i razvoj Next.js.",
       "design": "Logotipi, brendiranje, letci, časopisi, tisak i digitalni dizajn.",
       "marketing": "Sadržaj, društveni mediji, oglasi, e-trgovina, upravljanje medijima i zajednicom.",
-      "hosting": "Web hosting, WordPress hosting, VPS i domene."
+      "hosting": "Web hosting, WordPress hosting, VPS."
     },
     "sr": {
       "ai": "Чет-ботови, токови посла, вештачка интелигенција на веб локацијама и продавницама, интеграција и саветовање за вештачку интелигенцију.",
@@ -5024,7 +5024,7 @@
       "webdesign": "Prilagođene web stranice, konverzija, sigurnost, brzina i razvoj Next.js.",
       "design": "Logotipi, brendiranje, letci, časopisi, print i digitalni dizajn.",
       "marketing": "Sadržaj, društvene mreže, oglasi, e-trgovina, upravljanje medijima i zajednicom.",
-      "hosting": "Web hosting, WordPress hosting, VPS i domeni."
+      "hosting": "Web hosting, WordPress hosting, VPS."
     },
     "cnr": {
       "ai": "Чет-ботови, токови посла, вештачка интелигенција на веб локацијама и продавницама, интеграција и саветовање за вештачку интелигенцију.",
@@ -5069,7 +5069,7 @@
       "webdesign": "Tilpassede hjemmesider, konvertering, sikkerhed, hastighed og Next.js udvikling.",
       "design": "Logoer, branding, flyers, magasiner, print og digitalt design.",
       "marketing": "Indhold, sociale medier, annoncer, e-handel, medier og community management.",
-      "hosting": "Webhosting, WordPress-hosting, VPS og domæner."
+      "hosting": "Webhosting, WordPress-hosting, VPS."
     },
     "sv": {
       "ai": "Chatbotar, arbetsflöden, AI på webbsidor och butiker, integration och AI-konsultverksamhet.",
@@ -5078,7 +5078,7 @@
       "webdesign": "Anpassade webbplatser, konvertering, säkerhet, hastighet och Next.js-utveckling.",
       "design": "Logotyper, varumärke, flygblad, tidningar, tryck och digital design.",
       "marketing": "Innehåll, sociala medier, annonser, e-handel, media och community management.",
-      "hosting": "Webbhotell, WordPress-hosting, VPS och domäner."
+      "hosting": "Webbhotell, WordPress-hosting, VPS."
     },
     "no": {
       "ai": "Chatboter, arbeidsflyter, AI på nettsider og butikker, integrasjon og AI-rådgivning.",
@@ -5087,7 +5087,7 @@
       "webdesign": "Tilpassede nettsider, konvertering, sikkerhet, hastighet og Next.js-utvikling.",
       "design": "Logoer, merkevarebygging, flyers, magasiner, print og digital design.",
       "marketing": "Innhold, sosiale medier, annonser, e-handel, media og community management.",
-      "hosting": "Webhotell, WordPress-hosting, VPS og domener."
+      "hosting": "Webhotell, WordPress-hosting, VPS."
     },
     "fi": {
       "ai": "Chatbotit, työnkulut, tekoäly verkkosivuilla ja kaupoissa, integrointi ja tekoälykonsultointi.",
@@ -5096,7 +5096,7 @@
       "webdesign": "Mukautetut verkkosivustot, muuntaminen, turvallisuus, nopeus ja Next.js-kehitys.",
       "design": "Logot, brändäys, lentolehtiset, aikakauslehdet, printti- ja digitaalinen suunnittelu.",
       "marketing": "Sisältö, sosiaalinen media, mainokset, sähköinen kaupankäynti, media ja yhteisön hallinta.",
-      "hosting": "Verkkohotelli, WordPress-isännöinti, VPS ja verkkotunnukset."
+      "hosting": "Verkkohotelli, WordPress-isännöinti, VPS."
     },
     "uk": {
       "ai": "Чат-боти, робочі процеси, штучний інтелект на веб-сайтах і в магазинах, інтеграція та консультації щодо штучного інтелекту.",
@@ -5105,7 +5105,7 @@
       "webdesign": "Спеціальні веб-сайти, конверсія, безпека, швидкість і розробка Next.js.",
       "design": "Логотипи, брендинг, флаєри, журнали, друкований та цифровий дизайн.",
       "marketing": "Вміст, соціальні медіа, реклама, електронна комерція, медіа та управління спільнотою.",
-      "hosting": "Веб-хостинг, хостинг WordPress, VPS і домени."
+      "hosting": "Веб-хостинг, хостинг WordPress, VPS."
     },
     "ru": {
       "ai": "Чат-боты, рабочие процессы, искусственный интеллект на веб-сайтах и ​​в магазинах, интеграция и консультации по искусственному интеллекту.",
@@ -5114,7 +5114,7 @@
       "webdesign": "Пользовательские веб-сайты, конверсия, безопасность, скорость и разработка Next.js.",
       "design": "Логотипы, брендинг, листовки, журналы, печатный и цифровой дизайн.",
       "marketing": "Контент, социальные сети, реклама, электронная коммерция, средства массовой информации и управление сообществом.",
-      "hosting": "Веб-хостинг, хостинг WordPress, VPS и домены."
+      "hosting": "Веб-хостинг, хостинг WordPress, VPS."
     },
     "tr": {
       "ai": "Sohbet robotları, iş akışları, web siteleri ve mağazalardaki yapay zeka, entegrasyon ve yapay zeka danışmanlığı.",
@@ -5123,7 +5123,7 @@
       "webdesign": "Özel web siteleri, dönüşüm, güvenlik, hız ve Next.js geliştirme.",
       "design": "Logolar, markalama, el ilanları, dergiler, basılı ve dijital tasarım.",
       "marketing": "İçerik, sosyal medya, reklamlar, e-ticaret, medya ve topluluk yönetimi.",
-      "hosting": "Web barındırma, WordPress barındırma, VPS ve etki alanları."
+      "hosting": "Web barındırma, WordPress barındırma, VPS."
     },
     "he": {
       "ai": "צ'טבוטים, תהליכי עבודה, בינה מלאכותית באתרים ובחנויות, אינטגרציה וייעוץ בינה מלאכותית.",
@@ -5132,7 +5132,7 @@
       "webdesign": "אתרים מותאמים אישית, המרה, אבטחה, מהירות ופיתוח Next.js.",
       "design": "לוגו, מיתוג, פליירים, מגזינים, דפוס ועיצוב דיגיטלי.",
       "marketing": "תוכן, מדיה חברתית, מודעות, מסחר אלקטרוני, ניהול מדיה וקהילה.",
-      "hosting": "אחסון אתרים, אחסון וורדפרס, VPS ודומיינים."
+      "hosting": "אחסון אתרים, אחסון וורדפרס, VPS"
     },
     "ar": {
       "ai": "روبوتات الدردشة وسير العمل والذكاء الاصطناعي في المواقع والمتاجر والتكامل واستشارات الذكاء الاصطناعي.",
@@ -5141,7 +5141,7 @@
       "webdesign": "مواقع الويب المخصصة والتحويل والأمن والسرعة وتطوير Next.js.",
       "design": "الشعارات والعلامات التجارية والنشرات والمجلات والتصميم المطبوع والرقمي.",
       "marketing": "المحتوى ووسائل التواصل الاجتماعي والإعلانات والتجارة الإلكترونية والإعلام وإدارة المجتمع.",
-      "hosting": "استضافة الويب، استضافة WordPress، VPS والمجالات."
+      "hosting": "استضافة الويب، استضافة WordPress، VPS"
     },
     "ka": {
       "ai": "Chatbots, workflows, AI ვებსაიტებსა და მაღაზიებში, ინტეგრაცია და AI კონსულტაცია.",
@@ -5150,7 +5150,7 @@
       "webdesign": "მორგებული ვებსაიტები, კონვერტაცია, უსაფრთხოება, სიჩქარე და Next.js განვითარება.",
       "design": "ლოგოები, ბრენდინგი, ფლაერები, ჟურნალები, ბეჭდური და ციფრული დიზაინი.",
       "marketing": "კონტენტი, სოციალური მედია, რეკლამა, ელექტრონული კომერცია, მედია და საზოგადოების მართვა.",
-      "hosting": "ვებ ჰოსტინგი, WordPress ჰოსტინგი, VPS და დომენები."
+      "hosting": "ვებ ჰოსტინგი, WordPress ჰოსტინგი, VPS"
     },
     "hy": {
       "ai": "Chatbots, workflows, AI կայքերում և խանութներում, ինտեգրում և AI խորհրդատվություն:",
@@ -5159,7 +5159,7 @@
       "webdesign": "Պատվերով կայքեր, փոխակերպում, անվտանգություն, արագություն և Next.js զարգացում:",
       "design": "Լոգոներ, բրենդինգ, թռուցիկներ, ամսագրեր, տպագիր և թվային ձևավորում:",
       "marketing": "Բովանդակություն, սոցիալական մեդիա, գովազդ, էլեկտրոնային առևտուր, մեդիա և համայնքի կառավարում:",
-      "hosting": "Վեբ հոստինգ, WordPress հոստինգ, VPS և տիրույթներ."
+      "hosting": "Վեբ հոստինգ, WordPress հոստինգ, VPS"
     },
     "az": {
       "ai": "Çatbotlar, iş axınları, vebsaytlarda və mağazalarda AI, inteqrasiya və AI məsləhəti.",
@@ -5168,7 +5168,7 @@
       "webdesign": "Fərdi vebsaytlar, konvertasiya, təhlükəsizlik, sürət və Next.js inkişafı.",
       "design": "Loqolar, brendinq, flayerlər, jurnallar, çap və rəqəmsal dizayn.",
       "marketing": "Məzmun, sosial media, reklamlar, e-ticarət, media və icma idarəçiliyi.",
-      "hosting": "Veb hostinq, WordPress hosting, VPS və domenlər."
+      "hosting": "Veb hostinq, WordPress hosting, VPS"
     },
     "zh": {
       "ai": "聊天机器人、工作流程、网站和商店中的人工智能、集成和人工智能咨询。",
@@ -5186,7 +5186,7 @@
       "webdesign": "カスタム Web サイト、変換、セキュリティ、スピード、Next.js 開発。",
       "design": "ロゴ、ブランディング、チラシ、雑誌、印刷物およびデジタル デザイン。",
       "marketing": "コンテンツ、ソーシャル メディア、広告、電子商取引、メディア、コミュニティの管理。",
-      "hosting": "ウェブホスティング、WordPress ホスティング、VPS、ドメイン。"
+      "hosting": "ウェブホスティング、WordPress ホスティング、VPS。"
     }
   }
 }

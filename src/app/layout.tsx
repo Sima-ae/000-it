@@ -111,6 +111,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="nl" suppressHydrationWarning data-scroll-behavior="smooth">
+      <head>
+        {/* Impact.com site verification */}
+        <meta
+          name="impact-site-verification"
+          content="2231b5f9-68a2-4efc-bf05-7248ba199077"
+          {...{ value: "2231b5f9-68a2-4efc-bf05-7248ba199077" }}
+        />
+      </head>
       <body className={`${display.variable} ${body.variable} ${geistMono.variable} antialiased`}>
         <GoogleTag />
         {children}

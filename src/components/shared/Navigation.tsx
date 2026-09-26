@@ -28,11 +28,12 @@ const primaryLinks = [
   { href: "/", key: "home" },
   { href: "/over-ons", key: "info", info: true },
   { href: "/diensten", key: "services", mega: true },
+  { href: "/diensten/domains", key: "domains", domains: true },
+  { href: "/diensten/categorie/hosting", key: "hosting", hosting: true },
   { href: "/kennisbank", key: "kennisbank" },
   { href: "/nieuws", key: "blog" },
   { href: "/portfolio", key: "portfolio" },
   { href: "/shop", key: "pricing" },
-  { href: "/diensten/categorie/hosting", key: "hosting", hosting: true },
   { href: "/contact", key: "contact" },
 ] as const;
 
@@ -75,6 +76,12 @@ export function Navigation() {
     if (linkHref === "/") {
       return onHome;
     }
+    if (linkHref === "/diensten/domains") {
+      const domainsItem = serviceCatalog.find((s) => s.slug === "domains");
+      if (!domainsItem) return false;
+      const href = serviceHref(locale, domainsItem);
+      return pathname === href || pathname.startsWith(`${href}/`);
+    }
     if (linkHref === "/diensten/categorie/hosting") {
       const hostingGroup = serviceGroupHref(locale, "hosting");
       if (pathname === hostingGroup || pathname.startsWith(`${hostingGroup}/`)) {
@@ -116,6 +123,13 @@ export function Navigation() {
 
               if ("mega" in link && link.mega) {
                 const hostingGroup = serviceGroupHref(locale, "hosting");
+                const domainsItem = serviceCatalog.find((s) => s.slug === "domains");
+                const domainsHref = domainsItem
+                  ? serviceHref(locale, domainsItem)
+                  : "";
+                const onDomains =
+                  Boolean(domainsHref) &&
+                  (pathname === domainsHref || pathname.startsWith(`${domainsHref}/`));
                 const onHosting =
                   pathname === hostingGroup ||
                   pathname.startsWith(`${hostingGroup}/`) ||
@@ -130,7 +144,7 @@ export function Navigation() {
                     key={link.key}
                     locale={locale}
                     label={t(link.key)}
-                    active={active && !onHosting}
+                    active={active && !onHosting && !onDomains}
                   />
                 );
               }
@@ -155,6 +169,26 @@ export function Navigation() {
                     privacyLabel={t("privacy")}
                     active={infoActive}
                   />
+                );
+              }
+
+              if ("domains" in link && link.domains) {
+                const domainsItem = serviceCatalog.find((s) => s.slug === "domains");
+                if (!domainsItem) return null;
+                const domainsHref = serviceHref(locale, domainsItem);
+                const domainsActive =
+                  pathname === domainsHref || pathname.startsWith(`${domainsHref}/`);
+                return (
+                  <SoftLink
+                    key={link.key}
+                    href={domainsHref}
+                    className={cn(
+                      "rounded-xl px-2 py-1.5 text-[13px] text-muted-foreground transition hover:bg-primary hover:text-primary-foreground",
+                      domainsActive && "bg-primary text-primary-foreground",
+                    )}
+                  >
+                    {catalogServiceTitle(domainsItem.slug, locale, domainsItem.title)}
+                  </SoftLink>
                 );
               }
 
@@ -218,6 +252,13 @@ export function Navigation() {
 
                 if ("mega" in link && link.mega) {
                   const hostingGroup = serviceGroupHref(locale, "hosting");
+                  const domainsItem = serviceCatalog.find((s) => s.slug === "domains");
+                  const domainsHref = domainsItem
+                    ? serviceHref(locale, domainsItem)
+                    : "";
+                  const onDomains =
+                    Boolean(domainsHref) &&
+                    (pathname === domainsHref || pathname.startsWith(`${domainsHref}/`));
                   const onHosting =
                     pathname === hostingGroup ||
                     pathname.startsWith(`${hostingGroup}/`) ||
@@ -227,7 +268,7 @@ export function Navigation() {
                       const itemHref = serviceHref(locale, item);
                       return pathname === itemHref || pathname.startsWith(`${itemHref}/`);
                     });
-                  const servicesActive = active && !onHosting;
+                  const servicesActive = active && !onHosting && !onDomains;
                   return (
                     <div key={link.key}>
                       <button
@@ -399,11 +440,31 @@ export function Navigation() {
                   );
                 }
 
+                if ("domains" in link && link.domains) {
+                  const domainsItem = serviceCatalog.find((s) => s.slug === "domains");
+                  if (!domainsItem) return null;
+                  const domainsHref = serviceHref(locale, domainsItem);
+                  const domainsActive =
+                    pathname === domainsHref || pathname.startsWith(`${domainsHref}/`);
+                  return (
+                    <SoftLink
+                      key={link.key}
+                      href={domainsHref}
+                      className={cn(
+                        "rounded-xl px-3 py-2.5 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground",
+                        domainsActive && "bg-primary text-primary-foreground",
+                      )}
+                    >
+                      {catalogServiceTitle(domainsItem.slug, locale, domainsItem.title)}
+                    </SoftLink>
+                  );
+                }
+
                 if ("hosting" in link && link.hosting) {
                   const hostingLabel = catalogGroupTitle(
                     "hosting",
                     locale,
-                    "Webhosting & Domains",
+                    "Hosting",
                   );
                   return (
                     <div key={link.key}>
@@ -421,32 +482,6 @@ export function Navigation() {
                       {mobileHostingOpen ? (
                         <div className="mb-2 ml-2 space-y-1 border-l border-border/60 pl-3">
                           {(() => {
-                            const domainsItem = serviceCatalog.find((s) => s.slug === "domains");
-                            if (!domainsItem) return null;
-                            const href = serviceHref(locale, domainsItem);
-                            const itemActive =
-                              pathname === href || pathname.startsWith(`${href}/`);
-                            return (
-                              <SoftLink
-                                key={domainsItem.slug}
-                                href={href}
-                                className={cn(
-                                  "block rounded-lg px-2 py-1.5 text-sm transition",
-                                  itemActive
-                                    ? "bg-primary text-primary-foreground"
-                                    : "text-muted-foreground hover:bg-primary hover:text-primary-foreground",
-                                )}
-                                aria-current={itemActive ? "page" : undefined}
-                              >
-                                {catalogServiceTitle(
-                                  domainsItem.slug,
-                                  locale,
-                                  domainsItem.title,
-                                )}
-                              </SoftLink>
-                            );
-                          })()}
-                          {(() => {
                             const href = serviceGroupHref(locale, "hosting");
                             const itemActive =
                               pathname === href || pathname.startsWith(`${href}/`);
@@ -461,11 +496,11 @@ export function Navigation() {
                                 )}
                                 aria-current={itemActive ? "page" : undefined}
                               >
-                                {catalogUiLabel("hostingCategory", locale, "Webhosting")}
+                                {catalogUiLabel("hostingCategory", locale, "Hosting")}
                               </SoftLink>
                             );
                           })()}
-                          {HOSTING_MENU_SLUGS.filter((slug) => slug !== "domains").map((slug) => {
+                          {HOSTING_MENU_SLUGS.map((slug) => {
                             const item = serviceCatalog.find((s) => s.slug === slug);
                             if (!item) return null;
                             const href = serviceHref(locale, item);

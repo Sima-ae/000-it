@@ -30,7 +30,7 @@ function buildInfoLinks(locale: string): FooterLink[] {
       label: catalogGroupTitle(
         "hosting",
         locale,
-        locale === "nl" ? "Webhosting en domeinen" : "Webhosting & Domains",
+        "Hosting",
       ),
     },
     { href: localizedHref(locale, "/voorwaarden"), key: "terms", external: true },

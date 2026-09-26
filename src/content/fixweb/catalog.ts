@@ -669,7 +669,7 @@ export const serviceGroups = [
   { id: "webdesign" as const, title: "Webdesign & Support", titleNl: "Webdesign en support" },
   { id: "design" as const, title: "Design", titleNl: "Design" },
   { id: "marketing" as const, title: "Marketing & Growth", titleNl: "Marketing en groei" },
-  { id: "hosting" as const, title: "Webhosting & Domains", titleNl: "Webhosting en domeinen" },
+  { id: "hosting" as const, title: "Hosting", titleNl: "Hosting" },
 ];
 
 /** AI first, then remaining categories A–Z by localized title. */
@@ -787,8 +787,8 @@ const serviceGroupSummaries: Record<ServiceGroupId, { en: string; nl: string }> 
     nl: "Content, social media, ads, e-commerce, media en community management.",
   },
   hosting: {
-    en: "Web hosting, WordPress hosting, VPS and domains.",
-    nl: "Webhosting, WordPress-hosting, VPS en domeinen.",
+    en: "Web hosting, WordPress hosting and VPS.",
+    nl: "Webhosting, WordPress-hosting en VPS.",
   },
 };
 
