@@ -14,8 +14,10 @@ export const SITE_SEO = {
     process.env.NEXT_PUBLIC_APP_URL ||
     "https://000-it.com",
   email: "info@000-it.com",
-  /** Prefer a real existing asset — used for OG/Twitter when no page image is set. */
-  defaultOgImage: "/branding/banner.png",
+  /** Prefer a real existing asset — used for OG/Twitter/geo when no page image is set. */
+  defaultOgImage: "/branding/LOGO-TripleZero-iT.jpg",
+  defaultOgImageWidth: 2000,
+  defaultOgImageHeight: 2000,
   defaultDescription: {
     nl: "Ontdek alle AI mogelijkheden voor ondernemers en zzp'ers: AI-integratie, AEO, GEO, SEO, marketing en maatwerk software.",
     en: "Discover all AI possibilities for entrepreneurs and freelancers: AI integration, AEO, GEO, SEO, marketing and custom software.",
@@ -243,6 +245,17 @@ export function defaultOgImage(path?: string | null) {
   return absoluteUrl(path || SITE_SEO.defaultOgImage);
 }
 
+export function ogImageDimensions(pathOrUrl?: string | null) {
+  const src = (pathOrUrl || SITE_SEO.defaultOgImage).toLowerCase();
+  if (src.includes("logo-triplezero-it.jpg")) {
+    return {
+      width: SITE_SEO.defaultOgImageWidth,
+      height: SITE_SEO.defaultOgImageHeight,
+    };
+  }
+  return { width: 1200, height: 630 };
+}
+
 export type BuildPageMetadataInput = {
   locale: string;
   path: string;
@@ -274,6 +287,7 @@ export function buildPageMetadata(input: BuildPageMetadataInput): Metadata {
     : image.toLowerCase().endsWith(".webp")
       ? "image/webp"
       : "image/png";
+  const { width: ogWidth, height: ogHeight } = ogImageDimensions(image);
 
   return {
     title: input.title,
@@ -324,8 +338,8 @@ export function buildPageMetadata(input: BuildPageMetadataInput): Metadata {
           url: image,
           secureUrl: image,
           type: imageType,
-          width: 1200,
-          height: 630,
+          width: ogWidth,
+          height: ogHeight,
           alt: imageAlt,
         },
       ],
@@ -530,6 +544,7 @@ export function buildNewsArticleMetadata(
   const ogLocale = openGraphLocale(locale);
   const altLocale = openGraphLocale(locale === "nl" ? "en" : "nl");
   const published = post.date || undefined;
+  const dims = ogImageDimensions(image);
 
   return {
     title,
@@ -569,8 +584,8 @@ export function buildNewsArticleMetadata(
       images: [
         {
           url: image,
-          width: 1200,
-          height: 630,
+          width: dims.width,
+          height: dims.height,
           alt: title,
         },
       ],
@@ -607,6 +622,7 @@ export function buildNewsIndexMetadata(locale: string, page = 1): Metadata {
   ];
   const langs = hreflangAlternates("/nieuws");
   const image = defaultOgImage();
+  const dims = ogImageDimensions(image);
 
   return {
     title: page > 1 ? `${title} · ${isNl ? "Pagina" : "Page"} ${page}` : title,
@@ -630,8 +646,8 @@ export function buildNewsIndexMetadata(locale: string, page = 1): Metadata {
       images: [
         {
           url: image,
-          width: 1200,
-          height: 630,
+          width: dims.width,
+          height: dims.height,
           alt: `${title} · ${SITE_SEO.name}`,
         },
       ],

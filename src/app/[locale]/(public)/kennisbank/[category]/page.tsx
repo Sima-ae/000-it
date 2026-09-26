@@ -68,11 +68,11 @@ export default async function KennisbankCategoryPage({ params }: Params) {
         ])}
       />
       <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-88 bg-linear-to-b from-primary/10 via-transparent to-transparent"
+        className="pointer-events-none absolute inset-x-0 top-0 h-56 bg-linear-to-b from-primary/8 via-transparent to-transparent"
         aria-hidden
       />
-      <div className="relative mx-auto max-w-5xl px-4 py-12 md:px-6 md:py-16">
-        <nav className="mb-8 text-sm text-muted-foreground">
+      <div className="relative mx-auto max-w-5xl px-4 py-8 md:px-6 md:py-10">
+        <nav className="mb-5 text-xs text-muted-foreground md:text-sm">
           <SoftLink
             href={localizedHref(locale, "/kennisbank")}
             className="transition hover:text-foreground"
@@ -81,7 +81,7 @@ export default async function KennisbankCategoryPage({ params }: Params) {
           </SoftLink>
           {cat.parentSlug && cat.parentName ? (
             <>
-              <span className="mx-2 opacity-50">/</span>
+              <span className="mx-1.5 opacity-40">/</span>
               <SoftLink
                 href={localizedHref(locale, `/kennisbank/${cat.parentSlug}`)}
                 className="transition hover:text-foreground"
@@ -90,58 +90,63 @@ export default async function KennisbankCategoryPage({ params }: Params) {
               </SoftLink>
             </>
           ) : null}
-          <span className="mx-2 opacity-50">/</span>
+          <span className="mx-1.5 opacity-40">/</span>
           <span className="text-foreground">{cat.name}</span>
         </nav>
 
         <Reveal>
-          <header className="mb-8 grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
-            <div>
-              <h1 className="font-display text-3xl font-semibold tracking-tight text-primary md:text-4xl">
-                {cat.name}
-              </h1>
-              {cat.description ? (
-                <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-                  {cat.description}
+          <header className="mb-6 overflow-hidden rounded-2xl border border-border/60 bg-background/75 shadow-sm">
+            <div className="grid md:grid-cols-[minmax(0,1.35fr)_minmax(11rem,0.65fr)]">
+              <div className="flex flex-col justify-center px-5 py-5 md:px-6 md:py-6">
+                <h1 className="font-display text-2xl font-semibold tracking-tight text-accent md:text-3xl">
+                  {cat.name}
+                </h1>
+                {cat.description ? (
+                  <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+                    {cat.description}
+                  </p>
+                ) : null}
+                <p className="mt-3 inline-flex w-fit items-center rounded-md bg-primary/10 px-2 py-0.5 text-[11px] font-semibold tabular-nums text-primary">
+                  {articles.length} {t("articlesInCategory")}
                 </p>
-              ) : null}
-              <p className="mt-4 text-xs font-medium text-muted-foreground">
-                {articles.length} {t("articlesInCategory")}
-              </p>
+              </div>
+              <div className="border-t border-border/50 md:border-t-0 md:border-l md:border-border/50">
+                <KennisbankIllustration
+                  categorySlug={category}
+                  categoryLabel={cat.name}
+                  footerLabel={t("illustrationFooter")}
+                  variant="compact"
+                />
+              </div>
             </div>
-            <KennisbankIllustration
-              categorySlug={category}
-              categoryLabel={cat.name}
-              footerLabel={t("illustrationFooter")}
-              variant="mid"
-              caption={t("categoryPickCaption")}
-            />
           </header>
         </Reveal>
 
         {cat.children.length ? (
-          <section className="mb-10">
-            <h2 className="mb-4 text-sm font-semibold uppercase tracking-[0.14em] text-accent">
+          <section className="mb-6">
+            <h2 className="mb-2.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-accent">
               {t("subcategoriesLabel")}
             </h2>
-            <div className="grid gap-3 sm:grid-cols-2">
+            <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
               {cat.children.map((child) => (
                 <SoftLink
                   key={child.id}
                   href={localizedHref(locale, `/kennisbank/${child.slug}`)}
-                  className="rounded-2xl border border-border/70 bg-background/70 px-4 py-3 transition hover:border-primary/40"
+                  className="group flex items-center gap-3 rounded-xl border border-border/60 bg-background/70 px-3.5 py-2.5 transition hover:border-primary/35 hover:bg-background"
                 >
-                  <div className="flex items-center justify-between gap-3">
-                    <p className="font-medium text-primary">{child.name}</p>
-                    <span className="rounded-full bg-primary/10 px-2 py-0.5 text-[11px] font-semibold text-primary">
-                      {child.articleCount}
-                    </span>
-                  </div>
-                  {child.description ? (
-                    <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">
-                      {child.description}
+                  <div className="min-w-0 flex-1">
+                    <p className="truncate text-sm font-semibold text-accent">
+                      {child.name}
                     </p>
-                  ) : null}
+                    {child.description ? (
+                      <p className="mt-0.5 line-clamp-1 text-xs text-muted-foreground">
+                        {child.description}
+                      </p>
+                    ) : null}
+                  </div>
+                  <span className="shrink-0 rounded-md bg-muted/80 px-1.5 py-0.5 text-[10px] font-semibold tabular-nums text-muted-foreground transition group-hover:bg-primary/10 group-hover:text-primary">
+                    {child.articleCount}
+                  </span>
                 </SoftLink>
               ))}
             </div>

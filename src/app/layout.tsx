@@ -84,9 +84,10 @@ export const metadata: Metadata = {
     images: [
       {
         url: absoluteUrl(SITE_SEO.defaultOgImage),
-        width: 1200,
-        height: 630,
+        width: SITE_SEO.defaultOgImageWidth,
+        height: SITE_SEO.defaultOgImageHeight,
         alt: SITE_SEO.name,
+        type: "image/jpeg",
       },
     ],
   },

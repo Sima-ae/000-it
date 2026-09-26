@@ -109,7 +109,7 @@ export function KennisbankIllustration({
   categorySlug: string;
   categoryLabel?: string;
   footerLabel?: string;
-  variant?: "hero" | "mid";
+  variant?: "hero" | "mid" | "compact";
   caption?: string;
 }) {
   const parentSlug = categorySlug.endsWith("-overige")
@@ -124,10 +124,13 @@ export function KennisbankIllustration({
     };
   const label = categoryLabel || "TripleZero iT";
   const footer = footerLabel || "TripleZero iT";
-  const h = variant === "hero" ? 220 : 180;
+  const h = variant === "hero" ? 220 : variant === "compact" ? 128 : 180;
+  const motifScale = variant === "compact" ? 0.62 : 0.85;
+  const motifX = variant === "hero" ? 120 : variant === "compact" ? 155 : 140;
+  const motifY = variant === "hero" ? 10 : variant === "compact" ? -6 : 0;
 
   return (
-    <figure className="kb-figure">
+    <figure className={variant === "compact" ? "kb-figure kb-figure-compact" : "kb-figure"}>
       <svg
         viewBox={`0 0 480 ${h}`}
         role="img"
@@ -141,10 +144,10 @@ export function KennisbankIllustration({
           </linearGradient>
         </defs>
         <rect width="480" height={h} fill={`url(#kb-g-${categorySlug}-${variant})`} />
-        <circle cx="420" cy="30" r="70" fill="#fff" opacity="0.08" />
-        <circle cx="40" cy={h - 20} r="90" fill="#fff" opacity="0.07" />
+        <circle cx="420" cy="24" r={variant === "compact" ? 48 : 70} fill="#fff" opacity="0.08" />
+        <circle cx="40" cy={h - 12} r={variant === "compact" ? 56 : 90} fill="#fff" opacity="0.07" />
         <g
-          transform={`translate(${variant === "hero" ? 120 : 140} ${variant === "hero" ? 10 : 0}) scale(0.85)`}
+          transform={`translate(${motifX} ${motifY}) scale(${motifScale})`}
           fill="none"
           stroke="#fff"
           strokeWidth="8"
@@ -154,29 +157,33 @@ export function KennisbankIllustration({
         >
           <path d={motifPath(theme.motif)} />
         </g>
-        <text
-          x="28"
-          y={h - 28}
-          fill="#fff"
-          fontFamily="ui-sans-serif, system-ui, sans-serif"
-          fontSize="18"
-          fontWeight="650"
-          opacity="0.95"
-        >
-          {label}
-        </text>
-        <text
-          x="28"
-          y={h - 10}
-          fill="#fff"
-          fontFamily="ui-sans-serif, system-ui, sans-serif"
-          fontSize="12"
-          opacity="0.75"
-        >
-          {footer}
-        </text>
+        {variant !== "compact" ? (
+          <>
+            <text
+              x="28"
+              y={h - 28}
+              fill="#fff"
+              fontFamily="ui-sans-serif, system-ui, sans-serif"
+              fontSize="18"
+              fontWeight="650"
+              opacity="0.95"
+            >
+              {label}
+            </text>
+            <text
+              x="28"
+              y={h - 10}
+              fill="#fff"
+              fontFamily="ui-sans-serif, system-ui, sans-serif"
+              fontSize="12"
+              opacity="0.75"
+            >
+              {footer}
+            </text>
+          </>
+        ) : null}
       </svg>
-      {caption ? <figcaption>{caption}</figcaption> : null}
+      {caption && variant !== "compact" ? <figcaption>{caption}</figcaption> : null}
     </figure>
   );
 }

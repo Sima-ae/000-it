@@ -2,15 +2,14 @@
 
 import { useMemo, useState } from "react";
 import { SoftLink } from "@/components/shared/SoftLink";
-import { GlassCard } from "@/components/marketing/GlassCard";
 import { Reveal } from "@/components/marketing/Reveal";
 import type { KennisbankCategoryView } from "@/lib/kennisbank";
 import { localizedHref } from "@/i18n/pathnames";
 
 const accents = [
-  "from-primary/30 via-primary/10 to-accent/20",
-  "from-accent/30 via-muted/40 to-primary/15",
-  "from-primary/20 via-accent/15 to-muted/50",
+  "from-primary/35 via-primary/12 to-accent/25",
+  "from-accent/30 via-primary/10 to-primary/20",
+  "from-primary/25 via-accent/15 to-muted/40",
 ];
 
 export function KennisbankCategoryGrid({
@@ -42,7 +41,7 @@ export function KennisbankCategoryGrid({
   }, [categories, q]);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4">
       <label className="mx-auto block max-w-3xl">
         <span className="sr-only">{searchPlaceholder}</span>
         <input
@@ -54,38 +53,36 @@ export function KennisbankCategoryGrid({
         />
       </label>
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {filtered.map((cat, i) => (
-          <Reveal key={cat.id} delay={Math.min(i, 8) * 0.04}>
-            <GlassCard className="group h-full overflow-hidden p-0 transition hover:border-primary/40 hover:shadow-md">
-              <SoftLink
-                href={localizedHref(locale, `/kennisbank/${cat.slug}`)}
-                className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
-              >
-                <div
-                  className={`h-2 w-full bg-linear-to-r ${accents[i % accents.length]}`}
-                  aria-hidden
-                />
-                <div className="p-5">
-                  <div className="flex items-start justify-between gap-3">
-                    <h2 className="font-display text-lg font-semibold tracking-tight text-primary">
-                      {cat.name}
-                    </h2>
-                    <span className="shrink-0 rounded-full bg-primary/10 px-2.5 py-1 text-[11px] font-semibold text-primary">
-                      {cat.articleCount}
-                    </span>
-                  </div>
-                  {cat.description ? (
-                    <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-muted-foreground">
-                      {cat.description}
-                    </p>
-                  ) : null}
-                  <p className="mt-4 text-xs font-medium text-muted-foreground">
-                    {cat.articleCount} {articlesLabel} →
-                  </p>
+          <Reveal key={cat.id} delay={Math.min(i, 8) * 0.03}>
+            <SoftLink
+              href={localizedHref(locale, `/kennisbank/${cat.slug}`)}
+              className="group block h-full overflow-hidden rounded-2xl border border-border/60 bg-background/80 shadow-sm transition hover:border-primary/40 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+            >
+              <div
+                className={`h-1 w-full bg-linear-to-r ${accents[i % accents.length]}`}
+                aria-hidden
+              />
+              <div className="flex h-full flex-col p-4">
+                <div className="flex items-start justify-between gap-2">
+                  <h2 className="font-display text-[0.95rem] font-semibold leading-snug tracking-tight text-accent md:text-base">
+                    {cat.name}
+                  </h2>
+                  <span className="shrink-0 rounded-md bg-primary/10 px-1.5 py-0.5 text-[10px] font-semibold tabular-nums text-primary">
+                    {cat.articleCount}
+                  </span>
                 </div>
-              </SoftLink>
-            </GlassCard>
+                {cat.description ? (
+                  <p className="mt-1.5 line-clamp-2 text-xs leading-relaxed text-muted-foreground">
+                    {cat.description}
+                  </p>
+                ) : null}
+                <p className="mt-auto pt-3 text-[11px] font-medium text-muted-foreground transition group-hover:text-primary">
+                  {cat.articleCount} {articlesLabel} →
+                </p>
+              </div>
+            </SoftLink>
           </Reveal>
         ))}
       </div>

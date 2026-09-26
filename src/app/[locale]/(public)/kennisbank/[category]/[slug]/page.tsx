@@ -168,7 +168,7 @@ export default async function KennisbankArticlePage({ params }: Params) {
           <article>
             <Reveal>
               <header className="mb-8 rounded-[1.75rem] border border-border/60 bg-background/70 p-6 shadow-sm md:p-8">
-                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-primary">
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-accent">
                   {cat.name}
                 </p>
                 <h1 className="font-display mt-3 text-3xl font-semibold tracking-tight text-primary md:text-4xl">

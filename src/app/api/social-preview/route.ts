@@ -8,6 +8,7 @@ import {
   absoluteUrl,
   defaultOgImage,
   localePath,
+  ogImageDimensions,
   siteOrigin,
 } from "@/lib/seo";
 import { getStaticPageSeo, getStaticPageSeoCopy } from "@/content/seo/pages";
@@ -126,6 +127,12 @@ export async function GET(request: NextRequest) {
   const url = escAttr(preview.url);
   const image = escAttr(preview.image);
   const locale = preview.locale === "nl" ? "nl_NL" : "en_US";
+  const dims = ogImageDimensions(preview.image);
+  const imageType = preview.image.toLowerCase().includes(".jpg") || preview.image.toLowerCase().includes(".jpeg")
+    ? "image/jpeg"
+    : preview.image.toLowerCase().includes(".webp")
+      ? "image/webp"
+      : "image/png";
 
   const html = `<!DOCTYPE html>
 <html lang="${preview.locale}">
@@ -141,9 +148,9 @@ export async function GET(request: NextRequest) {
 <meta property="og:locale" content="${locale}"/>
 <meta property="og:image" content="${image}"/>
 <meta property="og:image:secure_url" content="${image}"/>
-<meta property="og:image:type" content="image/png"/>
-<meta property="og:image:width" content="1200"/>
-<meta property="og:image:height" content="630"/>
+<meta property="og:image:type" content="${imageType}"/>
+<meta property="og:image:width" content="${dims.width}"/>
+<meta property="og:image:height" content="${dims.height}"/>
 <meta property="og:image:alt" content="${title}"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="${title}"/>

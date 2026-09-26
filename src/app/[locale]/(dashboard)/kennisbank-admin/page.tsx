@@ -291,7 +291,7 @@ export default function KennisbankAdminPage() {
     <div className="space-y-6">
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
-          <h1 className="text-3xl font-semibold">{t("kennisbank")}</h1>
+          <h1 className="text-3xl font-semibold text-primary">{t("kennisbank")}</h1>
           <p className="text-sm text-muted-foreground">
             Beheer categorieën en artikelen van de publieke kennisbank
           </p>
@@ -418,7 +418,7 @@ export default function KennisbankAdminPage() {
                   <div className="flex flex-col gap-3 bg-muted/40 p-3 sm:flex-row sm:items-center">
                     <div className="min-w-0 flex-1">
                       <div className="flex flex-wrap items-center gap-2">
-                        <p className="font-semibold">{main.name}</p>
+                        <p className="font-semibold text-accent">{main.name}</p>
                         <Badge>Hoofd</Badge>
                         <Badge variant="secondary">
                           {main.articleCount} artikelen
@@ -457,7 +457,7 @@ export default function KennisbankAdminPage() {
                         >
                           <div className="min-w-0 flex-1">
                             <div className="flex flex-wrap items-center gap-2">
-                              <p className="font-medium">{child.name}</p>
+                              <p className="font-medium text-accent">{child.name}</p>
                               <Badge variant="outline">Sub</Badge>
                               <Badge variant="secondary">
                                 {child.articleCount} artikelen

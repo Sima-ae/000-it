@@ -68,7 +68,7 @@ export const staticPageSeo: PageSeo[] = [
       nl: [...CORE_NL, "AI-scan", "webdesign", "automatisering", "zzp"],
       en: [...CORE_EN, "AI scan", "web design", "automation", "freelancer"],
     },
-    image: "/branding/banner.png",
+    image: "/branding/LOGO-TripleZero-iT.jpg",
   },
   {
     path: "/diensten",
