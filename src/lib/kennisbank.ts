@@ -12,8 +12,10 @@ import {
 } from "@/lib/google-translate";
 import { ensureEntitySlugFromTitle } from "@/lib/entity-slugs";
 import { brandify } from "@/lib/brandify";
+import { stripKennisbankExcerptPrefix } from "@/lib/kennisbank-excerpt";
 
 export { slugifyKennisbank } from "@/lib/kennisbank-slug";
+export { stripKennisbankExcerptPrefix };
 
 export const KENNISBANK_FALLBACK_LOCALE = "nl";
 export const KENNISBANK_SECONDARY_FALLBACK_LOCALE = "en";
@@ -415,7 +417,7 @@ function mapArticleListItem(
     slug: row.slug,
     published: row.published,
     title: brandify(tr?.title || row.slug),
-    excerpt: brandify(tr?.excerpt || ""),
+    excerpt: brandify(stripKennisbankExcerptPrefix(tr?.excerpt || "")),
     categorySlugs: cats.map((c) => c.slug),
     categoryNames: cats.map((c) => c.name),
     createdAt: row.createdAt.toISOString(),
@@ -505,7 +507,9 @@ export async function getArticleBySlug(
     ...base,
     bodyHtml: brandify(tr?.bodyHtml || ""),
     seoTitle: tr?.seoTitle ? brandify(tr.seoTitle) : null,
-    seoDescription: tr?.seoDescription ? brandify(tr.seoDescription) : null,
+    seoDescription: tr?.seoDescription
+      ? brandify(stripKennisbankExcerptPrefix(tr.seoDescription))
+      : null,
     createdById: full.createdById,
   };
 }
@@ -526,7 +530,9 @@ export async function getArticleById(
     ...base,
     bodyHtml: brandify(tr?.bodyHtml || ""),
     seoTitle: tr?.seoTitle ? brandify(tr.seoTitle) : null,
-    seoDescription: tr?.seoDescription ? brandify(tr.seoDescription) : null,
+    seoDescription: tr?.seoDescription
+      ? brandify(stripKennisbankExcerptPrefix(tr.seoDescription))
+      : null,
     createdById: full.createdById,
   };
 }

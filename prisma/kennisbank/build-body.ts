@@ -1388,8 +1388,9 @@ export function buildArticleHtml(
 }
 
 export function buildExcerpt(title: string, locale: string = "nl"): string {
+  const topic = title.replace(/\?$/, "").trim();
   if (locale !== "nl") {
-    return `Professional ${BRAND} guide: ${title.replace(/\?$/, "")}. Step-by-step explanation, key checks and tips for a stable configuration.`;
+    return `${topic}. Step-by-step explanation, key checks and tips for a stable configuration.`;
   }
-  return `Professionele handleiding van ${BRAND}: ${title.replace(/\?$/, "")}. Stapsgewijze uitleg, aandachtspunten en tips voor een stabiele configuratie.`;
+  return `${topic}. Stapsgewijze uitleg, aandachtspunten en tips voor een stabiele configuratie.`;
 }
