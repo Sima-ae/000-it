@@ -291,8 +291,20 @@ function isInteractiveBrowser(request: NextRequest, kind: string) {
   return isSameSiteRequest(request);
 }
 
+/** Impact.com (and similar) site-verification crawlers — must read homepage <meta>. */
+export const VERIFICATION_BOT_RE =
+  /impact|ImpactRadius|IRBot|Partnerize|site-verification|SiteVerification/i;
+
+function isMarketingHomePath(pathname: string) {
+  const p = pathname.replace(/\/+$/, "") || "/";
+  if (p === "/") return true;
+  // /nl, /en, /zh, … — locale home only (no nested path)
+  return /^\/[a-z]{2}(?:-[a-zA-Z0-9]+)?$/i.test(p);
+}
+
 export function classifyClient(request: NextRequest): "search" | "social" | "browser" | "scraper" {
   const ua = request.headers.get("user-agent") || "";
+  if (VERIFICATION_BOT_RE.test(ua)) return "social";
   if (SOCIAL_BOT_RE.test(ua)) return "social";
   if (SEARCH_BOT_RE.test(ua)) return "search";
   if (!ua.trim()) return "scraper";
@@ -394,7 +406,12 @@ export function antiScrapeResponse(
     return null;
   }
 
-  // Scrapers / AI / curl / headless: hard deny everywhere.
+  // Impact / partner verification must read homepage meta tags (often curl-like UAs).
+  if (kind === "scraper" && isMarketingHomePath(pathname)) {
+    return null;
+  }
+
+  // Scrapers / AI / curl / headless: hard deny everywhere else.
   if (kind === "scraper") {
     return denied(request, 403);
   }

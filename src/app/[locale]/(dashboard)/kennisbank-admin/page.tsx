@@ -341,17 +341,11 @@ export default function KennisbankAdminPage() {
 
       <Card>
         <CardHeader className="space-y-4">
-          <div className="flex flex-wrap items-center justify-between gap-2">
-            <CardTitle>
-              {tab === "categories"
-                ? "Categorieën (hoofd → sub)"
-                : "Artikelen"}
-            </CardTitle>
-            <p className="text-xs text-muted-foreground">
-              Totaal: {totals.mainCount} hoofd · {totals.subCount} sub ·{" "}
-              {totals.articleCount} artikelen
-            </p>
-          </div>
+          <CardTitle>
+            {tab === "categories"
+              ? "Categorieën (hoofd → sub)"
+              : "Artikelen"}
+          </CardTitle>
           <KennisbankTotals {...visibleTotals} />
           <div className="flex flex-col gap-2 lg:flex-row lg:items-center">
             <Input

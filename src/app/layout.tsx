@@ -102,7 +102,14 @@ export const metadata: Metadata = {
     "msapplication-config": "/browserconfig.xml",
     "theme-color": "#000000",
   },
+  verification: {
+    other: {
+      "impact-site-verification": "2231b5f9-68a2-4efc-bf05-7248ba199077",
+    },
+  },
 };
+
+const IMPACT_VERIFICATION_CODE = "2231b5f9-68a2-4efc-bf05-7248ba199077";
 
 export default function RootLayout({
   children,
@@ -112,11 +119,11 @@ export default function RootLayout({
   return (
     <html lang="nl" suppressHydrationWarning data-scroll-behavior="smooth">
       <head>
-        {/* Impact.com site verification */}
+        {/* Impact.com — exact `value` attribute from their verification instructions */}
         <meta
           name="impact-site-verification"
-          content="2231b5f9-68a2-4efc-bf05-7248ba199077"
-          {...{ value: "2231b5f9-68a2-4efc-bf05-7248ba199077" }}
+          content={IMPACT_VERIFICATION_CODE}
+          {...{ value: IMPACT_VERIFICATION_CODE }}
         />
       </head>
       <body className={`${display.variable} ${body.variable} ${geistMono.variable} antialiased`}>
