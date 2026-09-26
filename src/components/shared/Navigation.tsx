@@ -29,7 +29,7 @@ const primaryLinks = [
   { href: "/", key: "home" },
   { href: "/over-ons", key: "info", info: true },
   { href: "/diensten", key: "services", mega: true },
-  { href: "/diensten/domains", key: "domains", domains: true },
+  { href: "/domeinen", key: "domains", domains: true },
   { href: "/diensten/categorie/hosting", key: "hosting", hosting: true },
   { href: "/kennisbank", key: "kennisbank" },
   { href: "/nieuws", key: "blog" },
@@ -77,7 +77,7 @@ export function Navigation() {
     if (linkHref === "/") {
       return onHome;
     }
-    if (linkHref === "/diensten/domains") {
+    if (linkHref === "/domeinen") {
       const domainsItem = serviceCatalog.find((s) => s.slug === "domains");
       if (!domainsItem) return false;
       const href = serviceHref(locale, domainsItem);

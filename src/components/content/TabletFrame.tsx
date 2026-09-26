@@ -5,7 +5,7 @@ export const TABLET_FRAME_SIZE = "w-full max-w-60";
 
 /**
  * Device-style tablet bezel used for service/category heroes
- * (e.g. /diensten/domeinen, /diensten/categorie/*).
+ * (e.g. /domeinen, /diensten/categorie/*).
  */
 export function TabletFrame({
   children,

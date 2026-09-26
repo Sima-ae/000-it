@@ -63,11 +63,35 @@ async function resolvePreview(rawPath: string) {
       (isNl ? meta?.summaryNl : meta?.summary) ||
       (isNl ? SITE_SEO.defaultDescription.nl : SITE_SEO.defaultDescription.en);
     const image = defaultOgImage(content?.image || SITE_SEO.defaultOgImage);
+    const canonicalPath = meta?.href || `/diensten/${slug}`;
     return {
       locale,
       title,
       description,
-      url: absoluteUrl(localePath(locale, `/diensten/${slug}`)),
+      url: absoluteUrl(localePath(locale, canonicalPath)),
+      image,
+    };
+  }
+
+  // Standalone domains page: /domeinen
+  if (path === "/domeinen" || path === "/domeinen/") {
+    const slug = "domains";
+    const content = await getServiceContent(slug, locale);
+    const meta = getCatalogItem(slug);
+    const title =
+      content?.title ||
+      (isNl ? meta?.titleNl : meta?.title) ||
+      SITE_SEO.name;
+    const description =
+      content?.subtitle ||
+      (isNl ? meta?.summaryNl : meta?.summary) ||
+      (isNl ? SITE_SEO.defaultDescription.nl : SITE_SEO.defaultDescription.en);
+    const image = defaultOgImage(content?.image || SITE_SEO.defaultOgImage);
+    return {
+      locale,
+      title,
+      description,
+      url: absoluteUrl(localePath(locale, "/domeinen")),
       image,
     };
   }

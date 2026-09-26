@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { publicNewsTags, type NewsPost } from "@/lib/news";
 import type { SeoCity } from "@/content/seo/cities";
 import { getStaticPageSeo, getStaticPageSeoCopy, type PageSeo } from "@/content/seo/pages";
+import { getCatalogItem } from "@/content/fixweb/catalog";
 import { enabledLanguages } from "@/i18n/languages";
 import { localizedHref } from "@/i18n/pathnames";
 import { hydrateLocalizedCopy } from "@/lib/localized-copy";
@@ -388,7 +389,8 @@ export function buildServiceMetadata(opts: {
   image?: string | null;
 }): Metadata {
   const isNl = opts.locale === "nl";
-  const path = `/diensten/${opts.slug}`;
+  const item = getCatalogItem(opts.slug);
+  const path = item?.href || `/diensten/${opts.slug}`;
   const keywords = isNl
     ? [
         opts.title,

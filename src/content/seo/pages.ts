@@ -311,6 +311,25 @@ export const staticPageSeo: PageSeo[] = [
     image: "/uploads/fixweb/grafisch-design.png",
   },
   {
+    path: "/domeinen",
+    lastmod: REV,
+    priority: 0.9,
+    changeFrequency: "weekly",
+    title: {
+      nl: "Domeinen — registratie & DNS",
+      en: "Domains — registration & DNS",
+    },
+    description: {
+      nl: "Registreer en beheer domeinnamen bij TripleZero iT. Houd merk, website en e-mail overzichtelijk bij elkaar.",
+      en: "Register and manage domain names with TripleZero iT. Keep brand, website and email together in one place.",
+    },
+    keywords: {
+      nl: [...CORE_NL, "domeinen", "domeinnaam", "DNS", "registratie"],
+      en: [...CORE_EN, "domains", "domain name", "DNS", "registration"],
+    },
+    image: "/uploads/fixweb/domains.png",
+  },
+  {
     path: "/locaties",
     lastmod: REV,
     priority: 0.86,

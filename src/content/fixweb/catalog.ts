@@ -596,6 +596,7 @@ export const serviceCatalog: ServiceNavItem[] = [
     titleNl: "Domeinen",
     kind: "page",
     group: "hosting",
+    href: "/domeinen",
   },
   {
     slug: "shared-hosting-basic",
