@@ -20,7 +20,7 @@ import { SoftLink } from "@/components/shared/SoftLink";
 import { isStaffRole } from "@/lib/roles";
 import { prioritySelectClass, TICKET_PRIORITIES } from "@/lib/crm/tickets";
 import { Agent000Avatar } from "@/components/agent-000/Agent000Avatar";
-import { OPEN_CHAT_EVENT } from "@/components/content/FaqPageClient";
+import { OPEN_CHAT_EVENT } from "@/components/chat/open-live-chat";
 import { useAgentSpeech } from "@/components/agent-000/useAgentSpeech";
 
 type ChatMessage = {

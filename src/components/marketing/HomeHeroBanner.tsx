@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import { Agent000Avatar } from "@/components/agent-000/Agent000Avatar";
-import { OPEN_CHAT_EVENT } from "@/components/content/FaqPageClient";
+import { OPEN_CHAT_EVENT } from "@/components/chat/open-live-chat";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
 import { localizedHref } from "@/i18n/pathnames";

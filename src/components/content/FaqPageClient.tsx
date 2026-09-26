@@ -9,9 +9,11 @@ import { FaqCategories } from "@/components/content/FaqAccordion";
 import { Agent000ChatPane } from "@/components/agent-000/Agent000ChatPane";
 import type { FaqContent } from "@/content/faq";
 import { BRANDING_IMAGES } from "@/lib/branding-images";
+import { openLiveChat } from "@/components/chat/open-live-chat";
 import { localizedHref } from "@/i18n/pathnames";
 
-const OPEN_CHAT_EVENT = "tz-open-live-chat";
+/** @deprecated Prefer importing from `@/components/chat/open-live-chat`. */
+export { OPEN_CHAT_EVENT } from "@/components/chat/open-live-chat";
 
 function parseFaqHash(hash: string): string | null {
   const raw = hash.replace(/^#/, "");
@@ -62,12 +64,6 @@ export function FaqPageClient({
     window.addEventListener("hashchange", syncFromHash);
     return () => window.removeEventListener("hashchange", syncFromHash);
   }, [applyFaqId]);
-
-  const openLiveChat = useCallback((prefill?: string) => {
-    window.dispatchEvent(
-      new CustomEvent(OPEN_CHAT_EVENT, { detail: { prefill: prefill || "" } }),
-    );
-  }, []);
 
   const total = content.categories.reduce((sum, c) => sum + c.items.length, 0);
 
@@ -141,5 +137,3 @@ export function FaqPageClient({
     </div>
   );
 }
-
-export { OPEN_CHAT_EVENT };

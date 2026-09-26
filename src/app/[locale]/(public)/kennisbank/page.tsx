@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { SoftLink } from "@/components/shared/SoftLink";
-import { Button } from "@/components/ui/button";
+import { OpenLiveChatButton } from "@/components/chat/OpenLiveChatButton";
 import { Reveal } from "@/components/marketing/Reveal";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { KennisbankCategoryGrid } from "@/components/kennisbank/KennisbankCategoryGrid";
@@ -128,9 +127,9 @@ export default async function KennisbankPage({
                 {t("ctaBody")}
               </p>
             </div>
-            <Button asChild size="sm" className="shrink-0 rounded-xl">
-              <SoftLink href={localizedHref(locale, "/contact")}>{t("ctaButton")}</SoftLink>
-            </Button>
+            <OpenLiveChatButton size="sm" className="shrink-0 rounded-xl">
+              {t("ctaButton")}
+            </OpenLiveChatButton>
           </div>
         </aside>
       </div>

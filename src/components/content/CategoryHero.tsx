@@ -1,11 +1,12 @@
 import Image from "next/image";
 import { Reveal } from "@/components/marketing/Reveal";
 import { SoftLink } from "@/components/shared/SoftLink";
+import { TabletFrame } from "@/components/content/TabletFrame";
 import { brandingImageForServiceGroup } from "@/lib/branding-images";
 import { localizedHref } from "@/i18n/pathnames";
 import { cn } from "@/lib/utils";
 
-const TOP_LEFT_GROUPS = new Set(["wordpress", "optimization", "hosting"]);
+const TOP_LEFT_GROUPS = new Set(["wordpress", "optimization"]);
 
 type JumpLink = {
   key: string;
@@ -13,10 +14,11 @@ type JumpLink = {
   label: string;
 };
 
-function objectPositionForGroup(groupId: string) {
-  return TOP_LEFT_GROUPS.has(groupId)
-    ? "object-cover object-top-left"
-    : "object-cover object-center";
+function imageClassForGroup(groupId: string) {
+  if (TOP_LEFT_GROUPS.has(groupId)) {
+    return "object-cover object-top-left";
+  }
+  return "object-cover object-center";
 }
 
 function JumpChips({
@@ -116,20 +118,18 @@ export function CategoryHero({
             ) : null}
           </div>
 
-          <div className="mx-auto w-full max-w-56 shrink-0 sm:max-w-60 lg:mx-0 lg:w-56 xl:w-60">
-            <div className="rounded-2xl bg-neutral-950 p-1 shadow-[0_8px_24px_rgba(0,0,0,0.14)] ring-1 ring-black/30">
-              <div className="relative aspect-4/3 overflow-hidden rounded-[0.85rem] bg-white">
-                <Image
-                  src={brandingImageForServiceGroup(groupId)}
-                  alt=""
-                  fill
-                  priority
-                  sizes="(max-width: 1024px) 224px, 240px"
-                  unoptimized
-                  className={cn(objectPositionForGroup(groupId))}
-                />
-              </div>
-            </div>
+          <div className="mx-auto w-full max-w-60 shrink-0 lg:mx-0">
+            <TabletFrame>
+              <Image
+                src={brandingImageForServiceGroup(groupId)}
+                alt=""
+                fill
+                priority
+                sizes="240px"
+                unoptimized
+                className={cn(imageClassForGroup(groupId))}
+              />
+            </TabletFrame>
           </div>
 
           {showJump ? (

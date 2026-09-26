@@ -57,12 +57,6 @@ export function KennisbankArticleList({
                   prefetch={false}
                   className="group flex items-start gap-3 rounded-xl border border-border/60 bg-background/75 px-3.5 py-3 shadow-sm transition hover:border-primary/35 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 sm:gap-3.5 sm:px-4"
                 >
-                  <div
-                    className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/10 font-display text-xs font-semibold text-primary"
-                    aria-hidden
-                  >
-                    {article.title.slice(0, 1).toUpperCase()}
-                  </div>
                   <div className="min-w-0 flex-1">
                     <h2 className="font-display text-sm font-semibold tracking-tight text-primary md:text-[0.95rem]">
                       {article.title}

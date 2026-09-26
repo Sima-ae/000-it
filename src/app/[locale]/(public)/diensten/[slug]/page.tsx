@@ -9,6 +9,7 @@ import { Reveal } from "@/components/marketing/Reveal";
 import { ServiceInquiryDialog } from "@/components/marketing/ServiceInquiryDialog";
 import { AddToCartButton } from "@/components/shop/AddToCartButton";
 import { ShopProductImage } from "@/components/shop/ShopProductImage";
+import { TabletFrame } from "@/components/content/TabletFrame";
 import { WordPressSupportPlans } from "@/components/marketing/WordPressSupportPlans";
 import {
   getCatalogItem,
@@ -269,14 +270,16 @@ export default async function ServiceDetailPage({
                 </div>
               </div>
               {heroImage ? (
-                <div className="relative aspect-4/3 overflow-hidden rounded-[1.75rem] border border-border/70 shadow-sm">
+                <TabletFrame className="justify-self-center lg:justify-self-end">
                   <ShopProductImage
                     src={heroImage}
                     alt={content.title}
-                    sizes="(max-width: 768px) 100vw, 50vw"
+                    sizes="240px"
                     priority
+                    className="object-cover"
+                    fallbackClassName="object-cover p-0 opacity-90"
                   />
-                </div>
+                </TabletFrame>
               ) : null}
             </div>
           </Reveal>

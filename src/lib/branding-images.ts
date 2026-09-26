@@ -20,6 +20,8 @@ export const BRANDING_IMAGES = {
   tabletCrm: "/branding/images/tablet-01.png",
   /** Tablet analytics overview — reporting, AI readiness, optimization */
   tabletAnalytics: "/branding/images/tablet-02.png",
+  /** Soft 3D cloud + server — hosting / webhosting category heroes (no device bezel) */
+  hostingWebhosting: "/branding/images/hosting-webhosting.png",
   /** WordPress admin / dashboard mock — WordPress support category */
   wordpressDashboard: "/branding/wordpress-dashboard.jpg",
   /** Full analytics overview UI — dashboards, AI scan, reporting */
@@ -59,7 +61,7 @@ export function brandingImageForServiceGroup(
     case "wordpress":
       return BRANDING_IMAGES.wordpressDashboard;
     case "hosting":
-      return BRANDING_IMAGES.tabletCrm;
+      return BRANDING_IMAGES.hostingWebhosting;
     case "design":
       return BRANDING_IMAGES.teamWorkshop;
     default:
@@ -114,7 +116,7 @@ export function brandingImageForKennisbank(categorySlug: string): string {
     return BRANDING_IMAGES.tabletCrm;
   }
   if (/hosting|vps|directadmin|cyberpanel|plesk|php|ftp|opslag/.test(slug)) {
-    return BRANDING_IMAGES.tabletCrm;
+    return BRANDING_IMAGES.hostingWebhosting;
   }
   if (/e-mail|webmail|microsoft|mail/.test(slug)) {
     return BRANDING_IMAGES.consultantLaptop;
