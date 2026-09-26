@@ -29,7 +29,7 @@ function warn(t: string) {
 
 function outro(related?: string) {
   return p(
-    `Heb je na het volgen van deze stappen nog vragen? Neem contact op met ${BRAND} support via het ticketssysteem. Vermeld je Microsoft 365-domein, de betrokken gebruiker en wat je al geprobeerd hebt.`,
+    `Heb je na het volgen van deze stappen nog vragen? Neem contact op met TripleZero iT support via het ticketssysteem. Vermeld je Microsoft 365-domein, de betrokken gebruiker en wat je al geprobeerd hebt.`,
     related
       ? `Gerelateerd: ${related}`
       : `Bekijk ook andere artikelen in Microsoft 365 over mail, Teams, OneDrive, beheer en beveiliging.`,
@@ -325,7 +325,7 @@ export const microsoftTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Controleer later onder ‘Beheer toegang’ wie nog toegang heeft.",
       ]),
       warn("‘Iedereen met de link’ kan doorsturen. Gebruik dat alleen voor niet-gevoelige bestanden."),
-      tip("Organisatiebeleid kan externe delen beperken — vraag je beheerder of ${BRAND} als een optie grijs is."),
+      tip("Organisatiebeleid kan externe delen beperken — vraag je beheerder of TripleZero iT als een optie grijs is."),
       outro("OneDrive sync-problemen; phishing herkennen."),
     ].join("\n"),
 
@@ -384,7 +384,7 @@ export const microsoftTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Verplaats archief naar een SharePoint-projectbibliotheek of externe archive.",
         "Leeg de prullenbak (telt mee tot definitief verwijderd).",
         "Controleer of ‘Persoonlijke kluis’ of bekende mappen onnodig syncen.",
-        "Vraag bij ${BRAND} of een licentie-upgrade extra opslag geeft.",
+        "Vraag bij TripleZero iT of een licentie-upgrade extra opslag geeft.",
       ]),
       tip("Teams-bestanden tellen mee in de tenantopslag — ruim ook daar op."),
       warn("Alleen ‘lokaal verwijderen’ lost clouduimte niet op; verwijder of verplaats in OneDrive online."),
@@ -417,7 +417,7 @@ export const microsoftTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-m365-abonnement-keuze": () =>
     [
       p(
-        `Microsoft 365 Business-abonnementen verschillen in web-apps versus desktop-Office, Teams-telefonie-opties en beveiliging. ${BRAND} helpt je kiezen op basis van teamgrootte en werkwijze.`,
+        `Microsoft 365 Business-abonnementen verschillen in web-apps versus desktop-Office, Teams-telefonie-opties en beveiliging. TripleZero iT helpt je kiezen op basis van teamgrootte en werkwijze.`,
       ),
       h2("Richtlijnen"),
       ul([
@@ -439,7 +439,7 @@ export const microsoftTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-m365-licentie-toewijzen": () =>
     [
       p(
-        `Zonder toegewezen licentie heeft een gebruiker geen Exchange-, Teams- of OneDrive-rechten. Toewijzen en intrekken doe je in het Microsoft 365-beheercentrum (of via ${BRAND} als wij beheer doen).`,
+        `Zonder toegewezen licentie heeft een gebruiker geen Exchange-, Teams- of OneDrive-rechten. Toewijzen en intrekken doe je in het Microsoft 365-beheercentrum (of via TripleZero iT als wij beheer doen).`,
       ),
       h2("Licentie toewijzen"),
       ol([
@@ -483,7 +483,7 @@ export const microsoftTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-m365-dns-controleren": () =>
     [
       p(
-        `Microsoft 365 mail en Autodiscover hangen van juiste <strong>DNS-records</strong> af: MX, SPF (TXT), Autodiscover (CNAME) en vaak DKIM. Die zet je in DNS-beheer bij ${BRAND}.`,
+        `Microsoft 365 mail en Autodiscover hangen van juiste <strong>DNS-records</strong> af: MX, SPF (TXT), Autodiscover (CNAME) en vaak DKIM. Die zet je in DNS-beheer bij TripleZero iT.`,
       ),
       h2("Checklist"),
       ol([
@@ -531,7 +531,7 @@ export const microsoftTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       ]),
       h2("Aanpak"),
       ol([
-        "Start een IMAP-migratiebatch in het Exchange-beheercentrum (of laat ${BRAND} migreren).",
+        "Start een IMAP-migratiebatch in het Exchange-beheercentrum (of laat TripleZero iT migreren).",
         "Koppel bronserver (IMAP) aan doelmailboxen.",
         "Laat de sync lopen; controleer aantallen en steekproeven.",
         "Plan cutover: zet MX/SPF/DKIM naar Microsoft 365.",
@@ -609,7 +609,7 @@ export const microsoftTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-m365-wachtwoord-reset": () =>
     [
       p(
-        `Wachtwoorden reset je zelf via self-service (als SSPR aan staat) of via een beheerder / ${BRAND} support. Combineer altijd met MFA.`,
+        `Wachtwoorden reset je zelf via self-service (als SSPR aan staat) of via een beheerder / TripleZero iT support. Combineer altijd met MFA.`,
       ),
       h2("Self-service"),
       ol([
@@ -638,7 +638,7 @@ export const microsoftTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Beheercentrum → Gebruiker → Aanmeldingen: bekijk IP, locatie en app.",
         "Trek actieve sessies in (aanmeldingen intrekken / ‘afmelden overal’). ",
         "Controleer doorsturen-regels in Outlook en nieuwe inboxregels.",
-        "Informeer ${BRAND} als je mail-aflevering of DNS vermoedt te zijn gewijzigd.",
+        "Informeer TripleZero iT als je mail-aflevering of DNS vermoedt te zijn gewijzigd.",
       ]),
       warn("Vink geen MFA-goedkeuring aan die je niet zelf startte."),
       tip("Na een incident: review admin-rollen en externe doorsturen-beleid."),
@@ -662,7 +662,7 @@ export const microsoftTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Open geen link; ga zelf naar office.com via favorieten.",
         "Meld de mail als phishing in Outlook (lint / …).",
         "Bij twijfel na klik: wachtwoord resetten en MFA-check.",
-        "Meld intern bij je beheerder of ${BRAND} support.",
+        "Meld intern bij je beheerder of TripleZero iT support.",
       ]),
       tip("Beheerders: train gebruikers en beperk externe doorsturen + legacy-auth."),
       outro("Verdachte inlogpogingen; MFA."),
@@ -686,7 +686,7 @@ export const microsoftTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Controleer DNS, licenties en recente wijzigingen.",
         "Zie ook ‘Storing oplossen in Microsoft’ voor lokale checks.",
       ]),
-      tip("Screenshot van het incident in het beheercentrum helpt bij tickets naar ${BRAND}."),
+      tip("Screenshot van het incident in het beheercentrum helpt bij tickets naar TripleZero iT."),
       outro("Storing oplossen in Microsoft; Autodiscover/Outlook."),
     ].join("\n"),
 };

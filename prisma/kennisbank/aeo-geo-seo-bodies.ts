@@ -29,7 +29,7 @@ function warn(t: string) {
 
 function outro(related?: string) {
   return p(
-    `Heb je na het volgen van deze stappen nog vragen? Neem contact op met ${BRAND} support via het ticketssysteem of plan een afspraak. Vermeld je domein, doelen (AEO, GEO en/of SEO) en eventuele AI-scanresultaten.`,
+    `Heb je na het volgen van deze stappen nog vragen? Neem contact op met TripleZero iT support via het ticketssysteem of plan een afspraak. Vermeld je domein, doelen (AEO, GEO en/of SEO) en eventuele AI-scanresultaten.`,
     related
       ? `Gerelateerd: ${related}`
       : `Bekijk ook andere artikelen in AEO, GEO en SEO voor trajecten, content en metingen.`,
@@ -42,7 +42,7 @@ export const aeoGeoSeoTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-aeo-engines-overviews": () =>
     [
       p(
-        `Antwoordengines en AI-overviews vatten antwoorden samen uit meerdere bronnen. Jouw site wordt sneller gebruikt als content <strong>duidelijk, feitelijk en gestructureerd</strong> is — precies waar AEO bij ${BRAND} op inzet.`,
+        `Antwoordengines en AI-overviews vatten antwoorden samen uit meerdere bronnen. Jouw site wordt sneller gebruikt als content <strong>duidelijk, feitelijk en gestructureerd</strong> is — precies waar AEO bij TripleZero iT op inzet.`,
       ),
       h2("Wat dit betekent voor je site"),
       ul([
@@ -117,7 +117,7 @@ export const aeoGeoSeoTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "HowTo — echte stappenprocessen (niet elke blog forceren).",
         "Organization — wie je bent; LocalBusiness bij fysieke of lokale dienst.",
       ]),
-      h2(`Implementatie bij ${BRAND}`),
+      h2(`Implementatie bij TripleZero iT`),
       ol([
         "Kies schema dat bij de pagina-inhoud past (geen lege FAQ).",
         "Valideer in een schema-tester vóór livegang.",
@@ -194,7 +194,7 @@ export const aeoGeoSeoTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-aeo-dienst-traject": () =>
     [
       p(
-        `De dienst <strong>AEO-optimalisatie</strong> (<code>/diensten/aeo-optimization</code>) past in een doorlopend ${BRAND}-traject: meten → prioriteren → content/schema → nazorg.`,
+        `De dienst <strong>AEO-optimalisatie</strong> (<code>/diensten/aeo-optimization</code>) past in een doorlopend TripleZero iT-traject: meten → prioriteren → content/schema → nazorg.`,
       ),
       h2("Typische plaats in het traject"),
       ol([
@@ -215,7 +215,7 @@ export const aeoGeoSeoTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-geo-vs-local-seo": () =>
     [
       p(
-        `Bij ${BRAND} gebruiken we <strong>GEO (Geographic SEO)</strong> voor lokale en regionale vindbaarheid. “Local SEO” in de markt betekent vaak hetzelfde cluster — Maps, GBP, NAP, locatiecontent — maar GEO is onze productterm naast AEO en klassieke SEO.`,
+        `Bij TripleZero iT gebruiken we <strong>GEO (Geographic SEO)</strong> voor lokale en regionale vindbaarheid. “Local SEO” in de markt betekent vaak hetzelfde cluster — Maps, GBP, NAP, locatiecontent — maar GEO is onze productterm naast AEO en klassieke SEO.`,
       ),
       h2("Overlap"),
       ul([
@@ -349,7 +349,7 @@ export const aeoGeoSeoTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-geo-dienst-regio": () =>
     [
       p(
-        `GEO-optimalisatie bij ${BRAND} (<code>/diensten/geo-optimization</code>) koppelt je <strong>regio of stad</strong> aan GBP, NAP, locatiecontent en meetbare lokale acties.`,
+        `GEO-optimalisatie bij TripleZero iT (<code>/diensten/geo-optimization</code>) koppelt je <strong>regio of stad</strong> aan GBP, NAP, locatiecontent en meetbare lokale acties.`,
       ),
       h2("Wat we typisch aanpakken"),
       ul([
@@ -371,7 +371,7 @@ export const aeoGeoSeoTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-seo-technical": () =>
     [
       p(
-        `Technische SEO bij ${BRAND} gaat over <strong>crawlbaarheid, indexatie en sitemaps</strong> — de basis onder AEO en GEO.`,
+        `Technische SEO bij TripleZero iT gaat over <strong>crawlbaarheid, indexatie en sitemaps</strong> — de basis onder AEO en GEO.`,
       ),
       h2("Kernonderdelen"),
       ul([
@@ -469,7 +469,7 @@ export const aeoGeoSeoTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-seo-wordpress": () =>
     [
       p(
-        `Op WordPress doe je zelf de basis; ${BRAND} helpt met traject, techniek en AEO/GEO/SEO-diepte. Eén SEO-plugin is genoeg — niet drie.`,
+        `Op WordPress doe je zelf de basis; TripleZero iT helpt met traject, techniek en AEO/GEO/SEO-diepte. Eén SEO-plugin is genoeg — niet drie.`,
       ),
       h2("Zelf"),
       ul([
@@ -552,7 +552,7 @@ export const aeoGeoSeoTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       h2("Kies losse SEO-dienst als"),
       ul([
         "Je een gerichte technische of on-page klus nodig hebt.",
-        "Je hosting elders hebt maar SEO bij ${BRAND} wilt.",
+        "Je hosting elders hebt maar SEO bij TripleZero iT wilt.",
         "Je pakket al loopt en een extra SEO-sprint nodig is.",
       ]),
       h2("Kies pakkettraject als"),
@@ -610,7 +610,7 @@ export const aeoGeoSeoTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-aeo-access-handover": () =>
     [
       p(
-        `Voor een AEO/GEO/SEO-traject heeft ${BRAND} vaak toegang nodig tot meet- en publicatietools. Lever dit <strong>veilig en minimaal</strong>.`,
+        `Voor een AEO/GEO/SEO-traject heeft TripleZero iT vaak toegang nodig tot meet- en publicatietools. Lever dit <strong>veilig en minimaal</strong>.`,
       ),
       h2("Typisch gevraagd"),
       ul([
@@ -690,7 +690,7 @@ export const aeoGeoSeoTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-aeo-dienst-differences": () =>
     [
       p(
-        `${BRAND} biedt aparte diensten: <strong>AEO-</strong>, <strong>GEO-</strong> en <strong>SEO-optimalisatie</strong>. Ze overlappen in analyse, maar verschillen in focus.`,
+        `TripleZero iT biedt aparte diensten: <strong>AEO-</strong>, <strong>GEO-</strong> en <strong>SEO-optimalisatie</strong>. Ze overlappen in analyse, maar verschillen in focus.`,
       ),
       h2("Verschil"),
       ul([
@@ -752,7 +752,7 @@ export const aeoGeoSeoTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-aeo-gsc-analytics": () =>
     [
       p(
-        `Search Console toont zoekvraag en indexatie; Analytics toont gedrag en conversie. In een ${BRAND}-traject gebruik je ze <strong>samen</strong>.`,
+        `Search Console toont zoekvraag en indexatie; Analytics toont gedrag en conversie. In een TripleZero iT-traject gebruik je ze <strong>samen</strong>.`,
       ),
       h2("Search Console"),
       ul([
@@ -808,7 +808,7 @@ export const aeoGeoSeoTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       ul([
         "Vergelijk queries/pagina’s week-over-week.",
         "Herstel noindex/canonical-fouten.",
-        "Open een ticket bij ${BRAND} met tijdstip, screenshots en wijzigingen.",
+        "Open een ticket bij TripleZero iT met tijdstip, screenshots en wijzigingen.",
       ]),
       outro("Indexatie; supportgegevens in tickets."),
     ].join("\n"),
@@ -826,7 +826,7 @@ export const aeoGeoSeoTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       ]),
       h2("Werkwijze"),
       ol([
-        "AI mag drafts voorstellen — jij of ${BRAND} reviewt feiten en merkstem.",
+        "AI mag drafts voorstellen — jij of TripleZero iT reviewt feiten en merkstem.",
         "Publiceer alleen pagina’s met unieke toegevoegde waarde.",
         "Koppel content aan echte klantvragen en data.",
       ]),

@@ -30,7 +30,7 @@ function warn(t: string) {
 
 function outro(related?: string) {
   return p(
-    `Kom je er na deze stappen niet uit? Open een ticket bij ${BRAND} via het klantenpanel. Vermeld hostname, DirectAdmin-gebruikersnaam (geen wachtwoord), domein en wat je al probeerde.`,
+    `Kom je er na deze stappen niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld hostname, DirectAdmin-gebruikersnaam (geen wachtwoord), domein en wat je al probeerde.`,
     related
       ? `Gerelateerd: ${related}.`
       : `Bekijk ook andere DirectAdmin-artikelen over e-mail, SSL, bestanden en backups.`,
@@ -122,7 +122,7 @@ export const directadminExcerptsNl: Record<string, string> = {
 export const directadminTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "da-password-change": () => [
     p(`In DirectAdmin wijzig je het <strong>panelwachtwoord</strong> (user, reseller of admin) via Account Manager. Dit is niet hetzelfde als een mailbox- of FTP-wachtwoord.`,
-      `Wachtwoord vergeten? Gebruik “Forgot Password” op de loginpagina indien beschikbaar, of vraag een reset via het ${BRAND} klantenpanel / ticket.`),
+      `Wachtwoord vergeten? Gebruik “Forgot Password” op de loginpagina indien beschikbaar, of vraag een reset via het TripleZero iT klantenpanel / ticket.`),
     h2("Voorbereiding"),
     ul([
       "DirectAdmin-URL uit je welkomstmail (vaak poort <code>2222</code>).",
@@ -142,7 +142,7 @@ export const directadminTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       "Klik <strong>Forgot Password</strong> / “Wachtwoord vergeten” (als zichtbaar).",
       "Vul gebruikersnaam en het e-mailadres op het account in.",
       "Volg de resetlink en kies een nieuw sterk wachtwoord.",
-      "Werkt dit niet? Ticket naar ${BRAND} met hostname, gebruikersnaam (geen wachtwoord) en tijdstip.",
+      "Werkt dit niet? Ticket naar TripleZero iT met hostname, gebruikersnaam (geen wachtwoord) en tijdstip.",
     ]),
     h2("Controleren"),
     ul([
@@ -176,12 +176,12 @@ export const directadminTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "da-login": () => [
-    p(`Je DirectAdmin-gegevens staan in de ${BRAND}-oplevering: welkomstmail en/of productdetails in het klantenpanel. De URL wijst meestal naar poort <code>2222</code>.`),
+    p(`Je DirectAdmin-gegevens staan in de TripleZero iT-oplevering: welkomstmail en/of productdetails in het klantenpanel. De URL wijst meestal naar poort <code>2222</code>.`),
     h2("Gegevens vinden"),
     ol([
       "Zoek in je mailbox op DirectAdmin, control panel of de serverhostname.",
-      "Of: ${BRAND} klantenpanel → hosting/VPS-product → login-URL, gebruikersnaam, wachtwoord/reset.",
-      "Open uitsluitend de URL die ${BRAND} communiceert.",
+      "Of: TripleZero iT klantenpanel → hosting/VPS-product → login-URL, gebruikersnaam, wachtwoord/reset.",
+      "Open uitsluitend de URL die TripleZero iT communiceert.",
       "Log in met de DirectAdmin-gebruikersnaam (vaak niet je e-mailadres).",
     ]),
     warn("Phishing: typ de URL over uit het klantenpanel. Deel geen wachtwoorden via onbekende formulieren."),
@@ -212,7 +212,7 @@ export const directadminTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       "Controleer hostname + poort <code>2222</code> uit welkomstmail/klantenpanel.",
       "Probeer een privévenster.",
       "Gebruik de DirectAdmin-username, niet per se je e-mail.",
-      "Reset wachtwoord via Forgot Password of ${BRAND}-ticket.",
+      "Reset wachtwoord via Forgot Password of TripleZero iT-ticket.",
       "Bij 2FA: actuele app-code of backupcode.",
       "Test via 4G — mogelijk Brute Force / IP-block op vast netwerk.",
       "Reseller: check of de user niet suspended is.",
@@ -237,7 +237,7 @@ export const directadminTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "what-is-da": () => [
-    p(`DirectAdmin is het controlpanel voor websites, e-mail, DNS, databases, FTP en backups bij ${BRAND}.`),
+    p(`DirectAdmin is het controlpanel voor websites, e-mail, DNS, databases, FTP en backups bij TripleZero iT.`),
     h2("Voorbereiding"),
     ul(["DirectAdmin-login","Minstens één domein op het account"]),
     h2("Stappen"),
@@ -276,11 +276,11 @@ export const directadminTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "da-reseller-usage": () => [
-    p(`${BRAND}-resellers lossen first-line issues op in DirectAdmin; serverbeheer (CustomBuild, SNI) escaleer je via ticket.`),
+    p(`TripleZero iT-resellers lossen first-line issues op in DirectAdmin; serverbeheer (CustomBuild, SNI) escaleer je via ticket.`),
     h2("Voorbereiding"),
     ul(["Reseller credentials","Overzicht users"]),
     h2("Stappen"),
-    ol(["Log in op reseller-level","Controleer List Users en usage","Maak users alleen binnen contractlimieten","Escaleer httpd/mailqueue/CustomBuild-problemen naar ${BRAND}"]),
+    ol(["Log in op reseller-level","Controleer List Users en usage","Maak users alleen binnen contractlimieten","Escaleer httpd/mailqueue/CustomBuild-problemen naar TripleZero iT"]),
     h2("Controleren"),
     ul(["Users zien eigen user-panel","Geen overselling buiten contract"]),
     tip(`Houd een runbook: zelf oplossen vs. escaleren.`),
@@ -293,7 +293,7 @@ export const directadminTopicBuilders: Record<string, (ctx: Ctx) => string> = {
     h2("Voorbereiding"),
     ul(["Reseller-login","Package","DNS-toegang"]),
     h2("Stappen"),
-    ol(["Reseller Level → Create User","Vul username, e-mail, wachtwoord, package in","Noteer nameservers of A-record van ${BRAND}","Zet DNS en wacht op propagatie","Rond SSL/mail af op user-niveau"]),
+    ol(["Reseller Level → Create User","Vul username, e-mail, wachtwoord, package in","Noteer nameservers of A-record van TripleZero iT","Zet DNS en wacht op propagatie","Rond SSL/mail af op user-niveau"]),
     h2("Controleren"),
     ul(["User login werkt","Domein resolved naar server-IP"]),
     tip(`Vraag Let’s Encrypt pas aan als DNS klopt.`),
@@ -306,7 +306,7 @@ export const directadminTopicBuilders: Record<string, (ctx: Ctx) => string> = {
     h2("Voorbereiding"),
     ul(["User/reseller-login","Verwacht domein","DNS-toegang"]),
     h2("Stappen"),
-    ol(["Log in en zoek het domein onder Domain Setup","Ontbreekt het: als reseller — hangt het onder een andere user?","Controleer A/AAAA of nameservers naar ${BRAND}","Check of het account suspended is","Controleer document root in Domain Setup / File Manager"]),
+    ol(["Log in en zoek het domein onder Domain Setup","Ontbreekt het: als reseller — hangt het onder een andere user?","Controleer A/AAAA of nameservers naar TripleZero iT","Check of het account suspended is","Controleer document root in Domain Setup / File Manager"]),
     h2("Controleren"),
     ul(["Domein zichtbaar in het panel","HTTP bereikt de server"]),
     tip(`Vergelijk dig/nslookup met het server-IP uit het klantenpanel.`),
@@ -358,7 +358,7 @@ export const directadminTopicBuilders: Record<string, (ctx: Ctx) => string> = {
     h2("Voorbereiding"),
     ul(["Hoofddomein in DA","Gewenste subnaam"]),
     h2("Stappen"),
-    ol(["Selecteer hoofddomein","Domain Setup → Subdomain Management → Add Subdomain","Vul naam in (zonder hoofddomein)","Noteer de document root","Zet DNS indien nodig (vaak automatisch op ${BRAND}-nameservers)","Deploy content / SSL"]),
+    ol(["Selecteer hoofddomein","Domain Setup → Subdomain Management → Add Subdomain","Vul naam in (zonder hoofddomein)","Noteer de document root","Zet DNS indien nodig (vaak automatisch op TripleZero iT-nameservers)","Deploy content / SSL"]),
     h2("Controleren"),
     ul(["http(s)://sub.domein bereikbaar","Juiste map in File Manager"]),
     tip(`Gebruik aparte subdomeinen voor staging i.p.v. te mixen in productie-root.`),
@@ -731,7 +731,7 @@ export const directadminTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "jetbackup": () => [
-    p(`JetBackup (indien geïnstalleerd door ${BRAND}) biedt snapshots/restores van accounts, mail en DB’s via een eigen menu.`),
+    p(`JetBackup (indien geïnstalleerd door TripleZero iT) biedt snapshots/restores van accounts, mail en DB’s via een eigen menu.`),
     h2("Voorbereiding"),
     ul(["JetBackup zichtbaar in DA","Welk restore-punt"]),
     h2("Stappen"),
@@ -1034,7 +1034,7 @@ export const directadminTopicBuilders: Record<string, (ctx: Ctx) => string> = {
     h2("Voorbereiding"),
     ul(["Huidige username"]),
     h2("Stappen"),
-    ol(["Wijzig wat wél kan: Password, contact e-mail, FTP-users","Voor rename: ticket naar ${BRAND} met reden","Plan migratie (nieuwe user + content move) indien nodig"]),
+    ol(["Wijzig wat wél kan: Password, contact e-mail, FTP-users","Voor rename: ticket naar TripleZero iT met reden","Plan migratie (nieuwe user + content move) indien nodig"]),
     h2("Controleren"),
     ul(["Duidelijkheid over wel/niet mogelijk"]),
     tip(`Plan renames buiten kantoortijd — paths/credentials wijzigen.`),
@@ -1056,7 +1056,7 @@ export const directadminTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "ext-hoe-gebruik-ik-de-dns-zone-editor-in-directadmin": () => [
-    p(`DNS Zone Editor wijzigt records op ${BRAND}-nameservers. Één wijziging tegelijk, oude waarde noteren.`),
+    p(`DNS Zone Editor wijzigt records op TripleZero iT-nameservers. Één wijziging tegelijk, oude waarde noteren.`),
     h2("Voorbereiding"),
     ul(["Domein op DA-DNS","Welk record"]),
     h2("Stappen"),
@@ -1103,7 +1103,7 @@ export const directadminTopicBuilders: Record<string, (ctx: Ctx) => string> = {
     h2("Controleren"),
     ul(["IP krijgt 403","Legitieme users ok"]),
     tip(`Blokkeer geen hele ranges zonder noodzaak.`),
-    warn(`Bij serverbrede aanvallen: ticket ${BRAND} i.p.v. alleen user-blocker.`),
+    warn(`Bij serverbrede aanvallen: ticket TripleZero iT i.p.v. alleen user-blocker.`),
     outro(`troubleshoot; htaccess`),
   ].join("\n"),
 
@@ -1136,12 +1136,12 @@ export const directadminTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "da-sni": () => [
     p(`SNI laat de webserver het juiste certificaat kiezen per hostnaam. Op VPS activeer/controleer je dit op serverniveau.`),
     h2("Voorbereiding"),
-    ul(["Root/SSH of ${BRAND}-managed VPS","CustomBuild"]),
+    ul(["Root/SSH of TripleZero iT-managed VPS","CustomBuild"]),
     h2("Stappen"),
     ol(["Bevestig of SNI al standaard aan staat op moderne stacks","Bij eigen beheer: controleer Apache/Nginx/OpenLiteSpeed SNI-config via CustomBuild docs","Vraag certificaten per host in DirectAdmin SSL","Test meerdere HTTPS-vhosts op hetzelfde IP"]),
     h2("Controleren"),
     ul(["Elke host toont eigen cert SAN/CN"]),
-    tip(`Op shared hosting regelt ${BRAND} SNI — user hoeft niets te “enablen”.`),
+    tip(`Op shared hosting regelt TripleZero iT SNI — user hoeft niets te “enablen”.`),
     warn(`Zonder SNI op oude IP-based SSL faalt multi-cert.`),
     outro(`letsencrypt-da; da-custombuild`),
   ].join("\n"),

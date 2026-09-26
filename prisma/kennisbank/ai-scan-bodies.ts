@@ -29,7 +29,7 @@ function warn(t: string) {
 
 function outro(related?: string) {
   return p(
-    `Heb je na het volgen van deze stappen nog vragen? Neem contact op met ${BRAND} support via het ticketssysteem of via het contactformulier na je scan. Vermeld je website-URL en scores, zodat we sneller kunnen helpen.`,
+    `Heb je na het volgen van deze stappen nog vragen? Neem contact op met TripleZero iT support via het ticketssysteem of via het contactformulier na je scan. Vermeld je website-URL en scores, zodat we sneller kunnen helpen.`,
     related
       ? `Gerelateerd: ${related}`
       : `Bekijk ook andere artikelen in de categorie AI-scan voor scores, verbeteringen en oplossingen.`,
@@ -42,7 +42,7 @@ export const aiScanTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-aiscan-free-what": () =>
     [
       p(
-        `De AI-scan op <code>/ai-scan</code> is bij ${BRAND} gratis te starten: je vult een website-URL in en krijgt een scorekaart over AEO, GEO (lokaal), SEO, Performance en AI Readiness.`,
+        `De AI-scan op <code>/ai-scan</code> is bij TripleZero iT gratis te starten: je vult een website-URL in en krijgt een scorekaart over AEO, GEO (lokaal), SEO, Performance en AI Readiness.`,
         `Je krijgt geen volledige implementatie of doorlopend traject “gratis” — wel een heldere baseline en een startpunt voor gesprek of vervolgstappen.`,
       ),
       h2("Wat je precies krijgt"),
@@ -86,7 +86,7 @@ export const aiScanTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-aiscan-company-goals": () =>
     [
       p(
-        `Bedrijfsnaam en doelen zijn optioneel bij de AI-scan, maar helpen bij context: wie je bent, wat je wilt verbeteren en hoe ${BRAND} een vervolggesprek kan voeren.`,
+        `Bedrijfsnaam en doelen zijn optioneel bij de AI-scan, maar helpen bij context: wie je bent, wat je wilt verbeteren en hoe TripleZero iT een vervolggesprek kan voeren.`,
       ),
       h2("Waarom het nuttig is"),
       ul([
@@ -247,7 +247,7 @@ export const aiScanTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Stem AEO, GEO en SEO af: één backlog, geen losse silo’s.",
       ]),
       tip(
-        `Pakketten van ${BRAND} combineren AI-scanner met AEO/GEO/SEO basic of plus — ideaal als readiness structureel omhoog moet.`,
+        `Pakketten van TripleZero iT combineren AI-scanner met AEO/GEO/SEO basic of plus — ideaal als readiness structureel omhoog moet.`,
       ),
       outro("Wat is AI Readiness; AI-scan versus volledig traject."),
     ].join("\n"),
@@ -294,7 +294,7 @@ export const aiScanTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-aiscan-contact-results": () =>
     [
       p(
-        `Na je AI-scan kun je bij ${BRAND} contact opnemen over de resultaten via het contactformulier op de resultatensectie, of later via tickets/support in je account.`,
+        `Na je AI-scan kun je bij TripleZero iT contact opnemen over de resultaten via het contactformulier op de resultatensectie, of later via tickets/support in je account.`,
       ),
       h2("Zo doe je dat efficiënt"),
       ol([
@@ -358,7 +358,7 @@ export const aiScanTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Voor klanten met account: verwijzing naar SEO-analyse in het dashboard.",
       ]),
       tip(
-        "Gebruik het contactformulier na de scan: dat vult URL en scores al in voor ${BRAND}.",
+        "Gebruik het contactformulier na de scan: dat vult URL en scores al in voor TripleZero iT.",
       ),
       outro("Contact over resultaten; eerdere scans in dashboard."),
     ].join("\n"),
@@ -366,7 +366,7 @@ export const aiScanTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-aiscan-packages": () =>
     [
       p(
-        `De AI-scanner zit in de shoppakketten van ${BRAND} naast domein, hosting, website/shop, AEO/GEO/SEO en support. De gratis scan op <code>/ai-scan</code> blijft beschikbaar als startpunt.`,
+        `De AI-scanner zit in de shoppakketten van TripleZero iT naast domein, hosting, website/shop, AEO/GEO/SEO en support. De gratis scan op <code>/ai-scan</code> blijft beschikbaar als startpunt.`,
       ),
       h2("Pakketten (indicatie)"),
       ul([
@@ -394,7 +394,7 @@ export const aiScanTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Lage AI Readiness → vaak combinatie AEO + SEO (+ GEO als lokaal relevant).",
       ]),
       tip(
-        "Twijfel je? Open contact met URL + scores: ${BRAND} helpt prioriteren voordat je een volledig traject start.",
+        "Twijfel je? Open contact met URL + scores: TripleZero iT helpt prioriteren voordat je een volledig traject start.",
       ),
       outro("Versus volledig traject; prioriteren bij meerdere lage scores."),
     ].join("\n"),
@@ -427,7 +427,7 @@ export const aiScanTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Intake: scan klant-URL vóór het voorstel.",
         "Kick-off: prioriteiten delen met klant (twee laagste scores + doel).",
         "Sprints: herhaal scans na oplevering van fixes.",
-        "Upsell: koppel scan-bevindingen aan AEO/GEO/SEO of een ${BRAND}-pakket.",
+        "Upsell: koppel scan-bevindingen aan AEO/GEO/SEO of een TripleZero iT-pakket.",
       ]),
       tip(
         "Spreek met de klant af welke canonieke URL je scant (www/apex) zodat rapportages vergelijkbaar blijven.",

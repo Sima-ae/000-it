@@ -24,7 +24,7 @@ function warn(t: string) {
 }
 function outro(related?: string) {
   return p(
-    `Kom je er na deze stappen niet uit? Open een ticket bij ${BRAND} via het klantenpanel. Vermeld product, domein of hostname, tijdstip en wat je al probeerde.`,
+    `Kom je er na deze stappen niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld product, domein of hostname, tijdstip en wat je al probeerde.`,
     related
       ? `Gerelateerd: ${related}.`
       : `Bekijk ook andere artikelen over infrastructuur, troubleshooting en hostingkeuzes.`,
@@ -320,7 +320,7 @@ export const qualityW2ExcerptsNl: Record<string, string> = {
 
 export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-w2-infra-wat-is-een-dedicated-server-en-wanneer-k-156bc": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wat is een dedicated server en wanneer kies je die?</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wat is een dedicated server en wanneer kies je die?</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -333,7 +333,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-verschil-tussen-dedicated-vps-en-shared-64998": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Verschil tussen dedicated, VPS en shared hosting</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Verschil tussen dedicated, VPS en shared hosting</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -346,7 +346,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-remote-console-ipmi-ilo-en-idrac-uitgele-4e21f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Remote console: IPMI, iLO en iDRAC uitgelegd</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Remote console: IPMI, iLO en iDRAC uitgelegd</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -359,7 +359,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-veilig-inloggen-op-een-remote-management-30e8e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Veilig inloggen op een remote management interface</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Veilig inloggen op een remote management interface</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -372,7 +372,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-iso-mounten-via-virtual-media-conceptuee-2552a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>ISO mounten via virtual media (conceptueel)</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>ISO mounten via virtual media (conceptueel)</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -385,7 +385,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-out-of-band-management-waarom-het-telt-b-d11bf": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Out-of-band management: waarom het telt bij storingen</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Out-of-band management: waarom het telt bij storingen</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -398,7 +398,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-hardware-monitoring-smart-temperatuur-en-ca882": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hardware monitoring: SMART, temperatuur en alerts</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hardware monitoring: SMART, temperatuur en alerts</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -411,7 +411,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-raid-niveaus-kiezen-voor-web-en-database-9141e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>RAID-niveaus kiezen voor web- en databaseworkloads</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>RAID-niveaus kiezen voor web- en databaseworkloads</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -424,7 +424,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-firmware-updates-plannen-zonder-lange-do-761b3": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Firmware-updates plannen zonder lange downtime</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Firmware-updates plannen zonder lange downtime</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -437,7 +437,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-netwerkkaarten-bonding-en-redundantie-op-9edec": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Netwerkkaarten, bonding en redundantie op servers</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Netwerkkaarten, bonding en redundantie op servers</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -450,7 +450,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-kvm-ip-console-gebruiken-bij-netwerkprob-07ab1": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>KVM/IP-console gebruiken bij netwerkproblemen</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>KVM/IP-console gebruiken bij netwerkproblemen</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -463,7 +463,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-dedicated-resources-versus-burstable-vps-b3a91": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Dedicated resources versus burstable VPS</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Dedicated resources versus burstable VPS</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -476,7 +476,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-colocation-versus-dedicated-hosting-keuz-63c63": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Colocation versus dedicated hosting: keuzehulp</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Colocation versus dedicated hosting: keuzehulp</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -489,7 +489,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-serverschijven-sata-nvme-en-endurance-dw-c8321": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Serverschijven: SATA, NVMe en endurance (DWPD)</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Serverschijven: SATA, NVMe en endurance (DWPD)</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -502,7 +502,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-bmc-wachtwoorden-en-netwerkisolatie-59ae6": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>BMC-wachtwoorden en netwerkisolatie</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>BMC-wachtwoorden en netwerkisolatie</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -515,7 +515,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-documenteer-je-hardwareconfiguratie-voor-dbeef": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Documenteer je hardwareconfiguratie voor support</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Documenteer je hardwareconfiguratie voor support</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -528,7 +528,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-wat-is-een-dedicated-server-en-wanneer-k-312d3": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wat is een dedicated server en wanneer kies je die?: checklist voor MKB</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wat is een dedicated server en wanneer kies je die?: checklist voor MKB</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -541,7 +541,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-verschil-tussen-dedicated-vps-en-shared-f82a3": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Verschil tussen dedicated, VPS en shared hosting: veelgemaakte fouten</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Verschil tussen dedicated, VPS en shared hosting: veelgemaakte fouten</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -554,7 +554,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-remote-console-ipmi-ilo-en-idrac-uitgele-5ebba": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Remote console: IPMI, iLO en iDRAC uitgelegd: stappenplan voor beginners</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Remote console: IPMI, iLO en iDRAC uitgelegd: stappenplan voor beginners</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -567,7 +567,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-veilig-inloggen-op-een-remote-management-203ea": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Veilig inloggen op een remote management interface — tips van TripleZero iT</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Veilig inloggen op een remote management interface — tips van TripleZero iT</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -580,7 +580,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-iso-mounten-via-virtual-media-conceptuee-bacd5": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>ISO mounten via virtual media (conceptueel) in productie</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>ISO mounten via virtual media (conceptueel) in productie</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -593,7 +593,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-out-of-band-management-waarom-het-telt-b-e36d5": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Out-of-band management: waarom het telt bij storingen: wat je vóór livegang checkt</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Out-of-band management: waarom het telt bij storingen: wat je vóór livegang checkt</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -606,7 +606,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-rescue-mode-wanneer-en-hoe-je-hem-inzet-324b6": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Rescue mode: wanneer en hoe je hem inzet</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Rescue mode: wanneer en hoe je hem inzet</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -619,7 +619,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-rootwachtwoord-resetten-via-rescue-singl-8c506": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Rootwachtwoord resetten via rescue / single user</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Rootwachtwoord resetten via rescue / single user</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -632,7 +632,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-bestanden-redden-als-de-os-schijf-niet-m-99c0a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Bestanden redden als de OS-schijf niet meer boot</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Bestanden redden als de OS-schijf niet meer boot</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -645,7 +645,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-fstab-fouten-repareren-vanuit-rescue-0bd03": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>fstab-fouten repareren vanuit rescue</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>fstab-fouten repareren vanuit rescue</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -658,7 +658,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-netwerk-herstellen-na-verkeerde-firewall-b9672": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Netwerk herstellen na verkeerde firewallregels</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Netwerk herstellen na verkeerde firewallregels</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -671,7 +671,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-grub-bootloader-problemen-diagnosticeren-e9176": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Grub/bootloader problemen diagnosticeren</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Grub/bootloader problemen diagnosticeren</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -684,7 +684,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-snapshot-terugzetten-versus-full-backup-cdfc8": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Snapshot terugzetten versus full backup restore</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Snapshot terugzetten versus full backup restore</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -697,7 +697,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-disaster-recovery-rto-en-rpo-bepalen-a95c4": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Disaster recovery: RTO en RPO bepalen</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Disaster recovery: RTO en RPO bepalen</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -710,7 +710,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-3-2-1-backupstrategie-voor-vps-en-hostin-2514d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>3-2-1 backupstrategie voor VPS en hosting</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>3-2-1 backupstrategie voor VPS en hosting</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -723,7 +723,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-testen-van-restores-voor-je-ze-nodig-heb-2ef05": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Testen van restores vóór je ze nodig hebt</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Testen van restores vóór je ze nodig hebt</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -736,7 +736,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-corrupted-filesystem-check-fsck-veilig-u-9a0b8": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Corrupted filesystem check (fsck) veilig uitvoeren</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Corrupted filesystem check (fsck) veilig uitvoeren</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -749,7 +749,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-data-redden-naar-een-tweede-volume-4942f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Data redden naar een tweede volume</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Data redden naar een tweede volume</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -762,7 +762,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-ssh-sleutels-herstellen-na-lock-out-18391": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SSH-sleutels herstellen na lock-out</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SSH-sleutels herstellen na lock-out</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -775,7 +775,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-kernel-panic-eerste-triage-stappen-57070": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Kernel panic: eerste triage stappen</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Kernel panic: eerste triage stappen</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -788,7 +788,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-communiceren-met-support-tijdens-een-out-d8248": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Communiceren met support tijdens een outage</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Communiceren met support tijdens een outage</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -801,7 +801,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-nazorg-post-mortem-na-een-herstelactie-060f3": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Nazorg: post-mortem na een herstelactie</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Nazorg: post-mortem na een herstelactie</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -814,7 +814,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-rescue-mode-wanneer-en-hoe-je-hem-inzet-db61d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Rescue mode: wanneer en hoe je hem inzet: checklist voor MKB</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Rescue mode: wanneer en hoe je hem inzet: checklist voor MKB</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -827,7 +827,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-rootwachtwoord-resetten-via-rescue-singl-a573e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Rootwachtwoord resetten via rescue / single user: veelgemaakte fouten</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Rootwachtwoord resetten via rescue / single user: veelgemaakte fouten</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -840,7 +840,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-bestanden-redden-als-de-os-schijf-niet-m-b4811": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Bestanden redden als de OS-schijf niet meer boot: stappenplan voor beginners</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Bestanden redden als de OS-schijf niet meer boot: stappenplan voor beginners</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -853,7 +853,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-fstab-fouten-repareren-vanuit-rescue-tip-148c5": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>fstab-fouten repareren vanuit rescue — tips van TripleZero iT</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>fstab-fouten repareren vanuit rescue — tips van TripleZero iT</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -866,7 +866,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-netwerk-herstellen-na-verkeerde-firewall-99815": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Netwerk herstellen na verkeerde firewallregels in productie</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Netwerk herstellen na verkeerde firewallregels in productie</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -879,7 +879,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-grub-bootloader-problemen-diagnosticeren-ec7be": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Grub/bootloader problemen diagnosticeren: wat je vóór livegang checkt</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Grub/bootloader problemen diagnosticeren: wat je vóór livegang checkt</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -892,7 +892,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-docker-op-een-triplezero-it-vps-veilige-42b2e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Docker op een TripleZero iT-VPS: veilige basis</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Docker op een TripleZero iT-VPS: veilige basis</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -905,7 +905,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-docker-compose-voor-een-simpele-webstack-99069": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Docker Compose voor een simpele webstack</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Docker Compose voor een simpele webstack</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -918,7 +918,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-volumes-en-persistente-data-in-container-f310e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Volumes en persistente data in containers</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Volumes en persistente data in containers</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -931,7 +931,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-poorten-publiceren-zonder-alles-open-te-e0b2d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Poorten publiceren zonder alles open te zetten</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Poorten publiceren zonder alles open te zetten</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -944,7 +944,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-images-updaten-en-vulnerability-scans-c34b2": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Images updaten en vulnerability scans</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Images updaten en vulnerability scans</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -957,7 +957,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-logs-van-containers-verzamelen-en-rotere-b482f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Logs van containers verzamelen en roteren</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Logs van containers verzamelen en roteren</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -970,7 +970,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-reverse-proxy-caddy-nginx-voor-container-4dd6e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Reverse proxy (Caddy/Nginx) vóór containers</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Reverse proxy (Caddy/Nginx) vóór containers</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -983,7 +983,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-resource-limits-cpu-en-memory-per-contai-335c9": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Resource limits: CPU en memory per container</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Resource limits: CPU en memory per container</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -996,7 +996,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-secrets-niet-in-dockerfiles-stoppen-5bf9d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Secrets niet in Dockerfiles stoppen</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Secrets niet in Dockerfiles stoppen</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1009,7 +1009,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-multi-stage-builds-voor-kleinere-images-d1ab2": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Multi-stage builds voor kleinere images</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Multi-stage builds voor kleinere images</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1022,7 +1022,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-docker-netwerken-bridge-versus-host-a4456": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Docker netwerken: bridge versus host</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Docker netwerken: bridge versus host</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1035,7 +1035,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-healthchecks-en-restart-policies-f93f2": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Healthchecks en restart policies</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Healthchecks en restart policies</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1048,7 +1048,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-backup-van-volumes-naast-applicatiecode-162bb": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Backup van volumes naast applicatiecode</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Backup van volumes naast applicatiecode</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1061,7 +1061,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-rootless-docker-wanneer-overwegen-b8185": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Rootless Docker: wanneer overwegen</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Rootless Docker: wanneer overwegen</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1074,7 +1074,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-containers-versus-vms-keuzehulp-voor-mkb-f9580": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Containers versus VM’s: keuzehulp voor MKB</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Containers versus VM’s: keuzehulp voor MKB</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1087,7 +1087,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-opschonen-dangling-images-en-build-cache-7bee3": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Opschonen: dangling images en build cache</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Opschonen: dangling images en build cache</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1100,7 +1100,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-docker-op-een-triplezero-it-vps-veilige-f1d53": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Docker op een TripleZero iT-VPS: veilige basis: checklist voor MKB</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Docker op een TripleZero iT-VPS: veilige basis: checklist voor MKB</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1113,7 +1113,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-docker-compose-voor-een-simpele-webstack-9c2c3": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Docker Compose voor een simpele webstack: veelgemaakte fouten</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Docker Compose voor een simpele webstack: veelgemaakte fouten</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1126,7 +1126,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-volumes-en-persistente-data-in-container-2e4a3": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Volumes en persistente data in containers: stappenplan voor beginners</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Volumes en persistente data in containers: stappenplan voor beginners</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1139,7 +1139,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-poorten-publiceren-zonder-alles-open-te-7a014": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Poorten publiceren zonder alles open te zetten — tips van TripleZero iT</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Poorten publiceren zonder alles open te zetten — tips van TripleZero iT</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1152,7 +1152,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-images-updaten-en-vulnerability-scans-in-0d48d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Images updaten en vulnerability scans in productie</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Images updaten en vulnerability scans in productie</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1165,7 +1165,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-logs-van-containers-verzamelen-en-rotere-cf576": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Logs van containers verzamelen en roteren: wat je vóór livegang checkt</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Logs van containers verzamelen en roteren: wat je vóór livegang checkt</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1178,7 +1178,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-node-js-app-draaien-met-systemd-of-pm2-52e42": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Node.js-app draaien met systemd of PM2</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Node.js-app draaien met systemd of PM2</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1191,7 +1191,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-python-fastapi-django-deployen-op-een-vp-3051b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Python (FastAPI/Django) deployen op een VPS</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Python (FastAPI/Django) deployen op een VPS</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1204,7 +1204,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-git-based-deploy-pull-build-restart-3c0f6": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Git-based deploy: pull, build, restart</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Git-based deploy: pull, build, restart</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1217,7 +1217,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-omgevingsvariabelen-veilig-beheren-op-de-ac5f5": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Omgevingsvariabelen veilig beheren op de server</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Omgevingsvariabelen veilig beheren op de server</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1230,7 +1230,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-process-managers-pm2-versus-systemd-d7ecc": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Process managers: PM2 versus systemd</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Process managers: PM2 versus systemd</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1243,7 +1243,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-zero-downtime-restart-van-node-processen-198f4": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Zero-downtime restart van Node-processen</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Zero-downtime restart van Node-processen</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1256,7 +1256,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-uvicorn-gunicorn-achter-nginx-cfac6": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Uvicorn/Gunicorn achter Nginx</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Uvicorn/Gunicorn achter Nginx</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1269,7 +1269,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-cron-versus-systemd-timers-voor-jobs-29e9e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Cron versus systemd timers voor jobs</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Cron versus systemd timers voor jobs</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1282,7 +1282,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-logrotatie-voor-app-logs-dfddf": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Logrotatie voor app-logs</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Logrotatie voor app-logs</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1295,7 +1295,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-health-endpoint-en-uptime-monitoring-9e655": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Health endpoint en uptime monitoring</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Health endpoint en uptime monitoring</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1308,7 +1308,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-deploy-keys-en-read-only-git-toegang-5bdd4": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Deploy keys en read-only Git-toegang</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Deploy keys en read-only Git-toegang</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1321,7 +1321,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-staging-vps-naast-productie-ac5c1": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Staging-VPS naast productie</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Staging-VPS naast productie</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1334,7 +1334,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-firewall-alleen-poort-80-443-openbaar-1cfb6": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Firewall alleen poort 80/443 openbaar</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Firewall alleen poort 80/443 openbaar</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1347,7 +1347,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-swap-en-oom-killer-bij-geheugenlekken-3efb1": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Swap en OOM-killer bij geheugenlekken</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Swap en OOM-killer bij geheugenlekken</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1360,7 +1360,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-node-version-managers-nvm-in-productie-bb69b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Node version managers (nvm) in productie</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Node version managers (nvm) in productie</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1373,7 +1373,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-python-virtualenv-en-dependency-pinning-aee1f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Python virtualenv en dependency pinning</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Python virtualenv en dependency pinning</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1386,7 +1386,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-node-js-app-draaien-met-systemd-of-pm2-c-2a1cb": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Node.js-app draaien met systemd of PM2: checklist voor MKB</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Node.js-app draaien met systemd of PM2: checklist voor MKB</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1399,7 +1399,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-python-fastapi-django-deployen-op-een-vp-779a3": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Python (FastAPI/Django) deployen op een VPS: veelgemaakte fouten</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Python (FastAPI/Django) deployen op een VPS: veelgemaakte fouten</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1412,7 +1412,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-git-based-deploy-pull-build-restart-stap-e96f9": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Git-based deploy: pull, build, restart: stappenplan voor beginners</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Git-based deploy: pull, build, restart: stappenplan voor beginners</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1425,7 +1425,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-omgevingsvariabelen-veilig-beheren-op-de-1b8d7": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Omgevingsvariabelen veilig beheren op de server — tips van TripleZero iT</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Omgevingsvariabelen veilig beheren op de server — tips van TripleZero iT</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1438,7 +1438,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-process-managers-pm2-versus-systemd-in-p-d5c24": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Process managers: PM2 versus systemd in productie</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Process managers: PM2 versus systemd in productie</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1451,7 +1451,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-zero-downtime-restart-van-node-processen-23272": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Zero-downtime restart van Node-processen: wat je vóór livegang checkt</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Zero-downtime restart van Node-processen: wat je vóór livegang checkt</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1464,7 +1464,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-wireguard-vpn-opzetten-op-je-vps-0bffc": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WireGuard VPN opzetten op je VPS</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WireGuard VPN opzetten op je VPS</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1477,7 +1477,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-ufw-basisregels-voor-webservers-b2e7c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>UFW basisregels voor webservers</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>UFW basisregels voor webservers</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1490,7 +1490,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-firewalld-zones-begrijpen-34047": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>firewalld zones begrijpen</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>firewalld zones begrijpen</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1503,7 +1503,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-fail2ban-jails-tunen-voor-ssh-en-webmail-1e8aa": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Fail2ban jails tunen voor SSH en webmail</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Fail2ban jails tunen voor SSH en webmail</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1516,7 +1516,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-ssh-hardening-keys-allowusers-maxauthtri-cb210": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SSH hardening: keys, AllowUsers, MaxAuthTries</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SSH hardening: keys, AllowUsers, MaxAuthTries</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1529,7 +1529,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-poortscanning-detecteren-en-reageren-29b3d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Poortscanning detecteren en reageren</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Poortscanning detecteren en reageren</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1542,7 +1542,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-private-networking-tussen-servers-f965e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Private networking tussen servers</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Private networking tussen servers</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1555,7 +1555,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-split-tunnel-vpn-voor-remote-teams-2176d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Split-tunnel VPN voor remote teams</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Split-tunnel VPN voor remote teams</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1568,7 +1568,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-dns-lekken-via-vpn-voorkomen-46e62": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>DNS lekken via VPN voorkomen</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>DNS lekken via VPN voorkomen</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1581,7 +1581,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-rate-limiting-op-ssh-met-fail2ban-2b343": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Rate limiting op SSH met Fail2ban</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Rate limiting op SSH met Fail2ban</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1594,7 +1594,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-nftables-versus-iptables-korte-intro-f10de": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>nftables versus iptables: korte intro</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>nftables versus iptables: korte intro</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1607,7 +1607,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-geo-blocking-wanneer-wel-of-niet-e5c89": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Geo-blocking: wanneer wel of niet</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Geo-blocking: wanneer wel of niet</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1620,7 +1620,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-openvpn-versus-wireguard-voor-mkb-f6b6d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>OpenVPN versus WireGuard voor MKB</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>OpenVPN versus WireGuard voor MKB</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1633,7 +1633,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-bastion-host-jump-host-patroon-782d5": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Bastion host / jump host patroon</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Bastion host / jump host patroon</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1646,7 +1646,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-netwerkdiagram-documenteren-voor-support-8b7f2": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Netwerkdiagram documenteren voor support</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Netwerkdiagram documenteren voor support</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1659,7 +1659,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-incident-verdachte-outbound-connecties-9260d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Incident: verdachte outbound connecties</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Incident: verdachte outbound connecties</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1672,7 +1672,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-wireguard-vpn-opzetten-op-je-vps-checkli-74031": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WireGuard VPN opzetten op je VPS: checklist voor MKB</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WireGuard VPN opzetten op je VPS: checklist voor MKB</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1685,7 +1685,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-ufw-basisregels-voor-webservers-veelgema-71f46": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>UFW basisregels voor webservers: veelgemaakte fouten</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>UFW basisregels voor webservers: veelgemaakte fouten</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1698,7 +1698,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-firewalld-zones-begrijpen-stappenplan-vo-25e5a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>firewalld zones begrijpen: stappenplan voor beginners</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>firewalld zones begrijpen: stappenplan voor beginners</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1711,7 +1711,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-fail2ban-jails-tunen-voor-ssh-en-webmail-168ca": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Fail2ban jails tunen voor SSH en webmail — tips van TripleZero iT</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Fail2ban jails tunen voor SSH en webmail — tips van TripleZero iT</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1724,7 +1724,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-ssh-hardening-keys-allowusers-maxauthtri-3ffc5": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SSH hardening: keys, AllowUsers, MaxAuthTries in productie</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SSH hardening: keys, AllowUsers, MaxAuthTries in productie</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1737,7 +1737,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-infra-poortscanning-detecteren-en-reageren-wat-cd511": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Poortscanning detecteren en reageren: wat je vóór livegang checkt</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Poortscanning detecteren en reageren: wat je vóór livegang checkt</strong>. Je werkt in klantenpanel (VPS/dedicated) + console/IPMI + SSH waar van toepassing.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Productnaam en hostname/IP","Snapshot of offsite-backup vóór risicovolle stappen","Onderhoudsvenster en rollbackplan"]),
     h2("Stappen"),
@@ -1750,7 +1750,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-http-401-unauthorized-oorzaken-en-fixes-fd8a8": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>HTTP 401 Unauthorized: oorzaken en fixes</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>HTTP 401 Unauthorized: oorzaken en fixes</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -1763,7 +1763,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-http-403-forbidden-op-je-website-oplosse-f99db": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>HTTP 403 Forbidden op je website oplossen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>HTTP 403 Forbidden op je website oplossen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -1776,7 +1776,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-http-404-echte-missers-versus-soft-404-d1abf": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>HTTP 404: echte missers versus soft-404</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>HTTP 404: echte missers versus soft-404</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -1789,7 +1789,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-http-500-internal-server-error-stapsgewi-134b1": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>HTTP 500 Internal Server Error stapsgewijs</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>HTTP 500 Internal Server Error stapsgewijs</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -1802,7 +1802,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-http-502-bad-gateway-diagnosticeren-7440f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>HTTP 502 Bad Gateway diagnosticeren</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>HTTP 502 Bad Gateway diagnosticeren</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -1815,7 +1815,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-http-504-gateway-timeout-waar-kijk-je-25ab9": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>HTTP 504 Gateway Timeout: waar kijk je?</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>HTTP 504 Gateway Timeout: waar kijk je?</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -1828,7 +1828,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-http-429-too-many-requests-en-rate-limit-c615b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>HTTP 429 Too Many Requests en rate limits</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>HTTP 429 Too Many Requests en rate limits</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -1841,7 +1841,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-mixed-content-na-https-migratie-a073f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mixed content na HTTPS-migratie</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mixed content na HTTPS-migratie</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -1854,7 +1854,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-redirect-loops-err-too-many-redirects-1a694": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Redirect loops (ERR_TOO_MANY_REDIRECTS)</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Redirect loops (ERR_TOO_MANY_REDIRECTS)</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -1867,7 +1867,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-403-na-verhuizing-rechten-en-ownership-ddeb9": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>403 na verhuizing: rechten en ownership</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>403 na verhuizing: rechten en ownership</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -1880,7 +1880,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-500-na-plugin-update-recovery-zonder-pan-d2aa0": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>500 na plugin-update: recovery zonder paniek</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>500 na plugin-update: recovery zonder paniek</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -1893,7 +1893,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-502-achter-reverse-proxy-of-cdn-645db": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>502 achter reverse proxy of CDN</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>502 achter reverse proxy of CDN</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -1906,7 +1906,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-custom-error-pages-die-helpen-i-p-v-verw-1feca": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Custom error pages die helpen i.p.v. verwarren</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Custom error pages die helpen i.p.v. verwarren</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -1919,7 +1919,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-logs-lezen-access-log-versus-error-log-824f6": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Logs lezen: access_log versus error_log</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Logs lezen: access_log versus error_log</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -1932,7 +1932,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-php-fatal-errors-omzetten-naar-bruikbare-22efa": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>PHP fatal errors omzetten naar bruikbare fixes</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>PHP fatal errors omzetten naar bruikbare fixes</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -1945,7 +1945,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-statuscodes-meten-in-monitoring-48a03": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Statuscodes meten in monitoring</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Statuscodes meten in monitoring</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -1958,7 +1958,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-http-401-unauthorized-oorzaken-en-fixes-4e16f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>HTTP 401 Unauthorized: oorzaken en fixes: checklist voor MKB</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>HTTP 401 Unauthorized: oorzaken en fixes: checklist voor MKB</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -1971,7 +1971,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-http-403-forbidden-op-je-website-oplosse-6d9e2": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>HTTP 403 Forbidden op je website oplossen: veelgemaakte fouten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>HTTP 403 Forbidden op je website oplossen: veelgemaakte fouten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -1984,7 +1984,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-http-404-echte-missers-versus-soft-404-s-d529d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>HTTP 404: echte missers versus soft-404: stappenplan voor beginners</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>HTTP 404: echte missers versus soft-404: stappenplan voor beginners</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -1997,7 +1997,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-http-500-internal-server-error-stapsgewi-4de11": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>HTTP 500 Internal Server Error stapsgewijs — tips van TripleZero iT</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>HTTP 500 Internal Server Error stapsgewijs — tips van TripleZero iT</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2010,7 +2010,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-blacklist-controleren-en-delisten-7b38b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Blacklist: controleren en delisten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Blacklist: controleren en delisten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2023,7 +2023,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-greylisting-uitgelegd-voor-ondernemers-2dfac": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Greylisting uitgelegd voor ondernemers</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Greylisting uitgelegd voor ondernemers</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2036,7 +2036,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-bouncecodes-lezen-4xx-versus-5xx-e851b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Bouncecodes lezen (4xx versus 5xx)</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Bouncecodes lezen (4xx versus 5xx)</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2049,7 +2049,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-smtp-poorten-25-465-en-587-wat-wanneer-d172e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SMTP poorten 25, 465 en 587: wat wanneer</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SMTP poorten 25, 465 en 587: wat wanneer</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2062,7 +2062,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-outbound-mail-rate-limits-begrijpen-8d039": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Outbound mail rate limits begrijpen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Outbound mail rate limits begrijpen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2075,7 +2075,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-spf-flattening-wanneer-je-te-veel-lookup-9f755": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SPF flattening wanneer je te veel lookups hebt</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SPF flattening wanneer je te veel lookups hebt</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2088,7 +2088,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-dmarc-rua-ruf-rapporten-interpreteren-5bceb": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>DMARC RUA/RUF-rapporten interpreteren</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>DMARC RUA/RUF-rapporten interpreteren</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2101,7 +2101,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-bimi-voor-merken-voorwaarden-en-dns-37e87": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>BIMI voor merken: voorwaarden en DNS</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>BIMI voor merken: voorwaarden en DNS</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2114,7 +2114,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-arc-waarom-forwards-spf-kapotmaken-d7307": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>ARC: waarom forwards SPF kapotmaken</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>ARC: waarom forwards SPF kapotmaken</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2127,7 +2127,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-gmail-als-client-voor-je-domeinmailbox-98ab8": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Gmail als client voor je domeinmailbox</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Gmail als client voor je domeinmailbox</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2140,7 +2140,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-imap-migratie-tussen-hosts-conceptueel-08481": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>IMAP-migratie tussen hosts (conceptueel)</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>IMAP-migratie tussen hosts (conceptueel)</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2153,7 +2153,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-catch-all-risicos-en-alternatieven-189c8": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Catch-all: risico’s en alternatieven</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Catch-all: risico’s en alternatieven</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2166,7 +2166,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-shared-mailbox-versus-alias-versus-forwa-a5dee": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Shared mailbox versus alias versus forward</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Shared mailbox versus alias versus forward</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2179,7 +2179,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-webmail-filters-die-mail-kwijtraken-e5100": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Webmail filters die mail ‘kwijtraken’</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Webmail filters die mail ‘kwijtraken’</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2192,7 +2192,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-autodiscover-troubleshooting-9dbb6": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Autodiscover troubleshooting</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Autodiscover troubleshooting</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2205,7 +2205,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-submission-versus-open-relay-het-verschi-d5284": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Submission versus open relay: het verschil</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Submission versus open relay: het verschil</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2218,7 +2218,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-blacklist-controleren-en-delisten-checkl-34158": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Blacklist: controleren en delisten: checklist voor MKB</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Blacklist: controleren en delisten: checklist voor MKB</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2231,7 +2231,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-greylisting-uitgelegd-voor-ondernemers-v-8e48d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Greylisting uitgelegd voor ondernemers: veelgemaakte fouten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Greylisting uitgelegd voor ondernemers: veelgemaakte fouten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2244,7 +2244,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-bouncecodes-lezen-4xx-versus-5xx-stappen-9646b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Bouncecodes lezen (4xx versus 5xx): stappenplan voor beginners</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Bouncecodes lezen (4xx versus 5xx): stappenplan voor beginners</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2257,7 +2257,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-smtp-poorten-25-465-en-587-wat-wanneer-t-dbdb8": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SMTP poorten 25, 465 en 587: wat wanneer — tips van TripleZero iT</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SMTP poorten 25, 465 en 587: wat wanneer — tips van TripleZero iT</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2270,7 +2270,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-dns-propagatie-ttl-en-caches-legen-1d75f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>DNS propagatie: TTL en caches legen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>DNS propagatie: TTL en caches legen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2283,7 +2283,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-rdns-ptr-records-voor-mailservers-eab2c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>rDNS / PTR records voor mailservers</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>rDNS / PTR records voor mailservers</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2296,7 +2296,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-dnssec-troubleshooting-bij-validatiefout-8d8b8": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>DNSSEC troubleshooting bij validatiefouten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>DNSSEC troubleshooting bij validatiefouten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2309,7 +2309,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-caa-policies-strakker-zetten-01b10": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>CAA-policies strakker zetten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>CAA-policies strakker zetten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2322,7 +2322,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-ssl-fout-net-err-cert-common-name-invali-ffa6c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SSL-fout: NET::ERR_CERT_COMMON_NAME_INVALID</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SSL-fout: NET::ERR_CERT_COMMON_NAME_INVALID</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2335,7 +2335,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-lets-encrypt-authorization-failed-oploss-2d252": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Let’s Encrypt authorization failed oplossen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Let’s Encrypt authorization failed oplossen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2348,7 +2348,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-hsts-preload-wanneer-je-er-klaar-voor-be-75e1b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>HSTS preload: wanneer je er klaar voor bent</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>HSTS preload: wanneer je er klaar voor bent</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2361,7 +2361,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-ev-ov-versus-dv-certificaten-94f86": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>EV/OV versus DV certificaten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>EV/OV versus DV certificaten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2374,7 +2374,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-csr-genereren-met-openssl-6a119": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>CSR genereren met OpenSSL</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>CSR genereren met OpenSSL</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2387,7 +2387,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-sni-en-meerdere-certificaten-op-een-ip-1b0f7": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SNI en meerdere certificaten op één IP</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SNI en meerdere certificaten op één IP</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2400,7 +2400,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-wildcard-ssl-dns-01-validatie-f8868": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wildcard SSL: DNS-01 validatie</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wildcard SSL: DNS-01 validatie</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2413,7 +2413,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-certificate-chain-incomplete-fixen-2e6a3": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Certificate chain incomplete fixen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Certificate chain incomplete fixen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2426,7 +2426,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-tls-versies-en-cipher-suites-updaten-295ef": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>TLS-versies en cipher suites updaten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>TLS-versies en cipher suites updaten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2439,7 +2439,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-dns-alleen-versus-proxied-cloudflare-con-46153": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>DNS alleen versus proxied (Cloudflare) conflicten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>DNS alleen versus proxied (Cloudflare) conflicten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2452,7 +2452,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-split-horizon-dns-valkuilen-c1d9e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Split-horizon DNS: valkuilen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Split-horizon DNS: valkuilen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2465,7 +2465,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-nameserver-wijziging-checklist-02b46": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Nameserver-wijziging checklist</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Nameserver-wijziging checklist</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2478,7 +2478,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-dns-propagatie-ttl-en-caches-legen-check-19894": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>DNS propagatie: TTL en caches legen: checklist voor MKB</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>DNS propagatie: TTL en caches legen: checklist voor MKB</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2491,7 +2491,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-rdns-ptr-records-voor-mailservers-veelge-e34a8": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>rDNS / PTR records voor mailservers: veelgemaakte fouten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>rDNS / PTR records voor mailservers: veelgemaakte fouten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2504,7 +2504,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-dnssec-troubleshooting-bij-validatiefout-5ae78": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>DNSSEC troubleshooting bij validatiefouten: stappenplan voor beginners</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>DNSSEC troubleshooting bij validatiefouten: stappenplan voor beginners</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2517,7 +2517,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-caa-policies-strakker-zetten-tips-van-tr-5250a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>CAA-policies strakker zetten — tips van TripleZero iT</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>CAA-policies strakker zetten — tips van TripleZero iT</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2530,7 +2530,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-databaseconnectie-geweigerd-checklist-4737a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Databaseconnectie geweigerd: checklist</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Databaseconnectie geweigerd: checklist</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2543,7 +2543,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-myisam-naar-innodb-converteren-d2815": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>MyISAM naar InnoDB converteren</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>MyISAM naar InnoDB converteren</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2556,7 +2556,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-export-en-import-van-grote-databases-b6b52": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Export en import van grote databases</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Export en import van grote databases</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2569,7 +2569,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-table-corruptie-repair-versus-restore-c7834": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Table corruptie: repair versus restore</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Table corruptie: repair versus restore</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2582,7 +2582,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-max-connections-bereikt-wat-nu-ebe4a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Max connections bereikt: wat nu?</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Max connections bereikt: wat nu?</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2595,7 +2595,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-slow-query-log-inschakelen-en-lezen-0b69a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Slow query log inschakelen en lezen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Slow query log inschakelen en lezen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2608,7 +2608,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-charset-collation-mismatches-utf8mb4-be6c6": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Charset/collation mismatches (utf8mb4)</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Charset/collation mismatches (utf8mb4)</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2621,7 +2621,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-deadlocks-in-webshops-herkennen-4fe5b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Deadlocks in webshops herkennen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Deadlocks in webshops herkennen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2634,7 +2634,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-backup-van-db-los-van-files-3008b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Backup van DB los van files</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Backup van DB los van files</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2647,7 +2647,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-replica-lag-conceptueel-bij-groei-47b73": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Replica lag (conceptueel) bij groei</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Replica lag (conceptueel) bij groei</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2660,7 +2660,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-plesk-directadmin-db-gebruikersrechten-cf516": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Plesk/DirectAdmin DB-gebruikersrechten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Plesk/DirectAdmin DB-gebruikersrechten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2673,7 +2673,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-sql-dump-veilig-overzetten-via-ssh-52091": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SQL-dump veilig overzetten via SSH</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SQL-dump veilig overzetten via SSH</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2686,7 +2686,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-schijf-vol-door-binary-logs-dae39": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Schijf vol door binary logs</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Schijf vol door binary logs</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2699,7 +2699,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-indexen-die-writes-vertragen-ae098": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Indexen die writes vertragen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Indexen die writes vertragen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2712,7 +2712,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-staging-db-anonimiseren-voor-delen-43c3a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Staging-DB anonimiseren vóór delen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Staging-DB anonimiseren vóór delen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2725,7 +2725,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-mariadb-versus-mysql-praktische-verschil-63256": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>MariaDB versus MySQL: praktische verschillen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>MariaDB versus MySQL: praktische verschillen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2738,7 +2738,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-databaseconnectie-geweigerd-checklist-ch-5141f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Databaseconnectie geweigerd: checklist: checklist voor MKB</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Databaseconnectie geweigerd: checklist: checklist voor MKB</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2751,7 +2751,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-myisam-naar-innodb-converteren-veelgemaa-7deba": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>MyISAM naar InnoDB converteren: veelgemaakte fouten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>MyISAM naar InnoDB converteren: veelgemaakte fouten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2764,7 +2764,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-export-en-import-van-grote-databases-sta-d2d6c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Export en import van grote databases: stappenplan voor beginners</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Export en import van grote databases: stappenplan voor beginners</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2777,7 +2777,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-table-corruptie-repair-versus-restore-ti-4cb2c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Table corruptie: repair versus restore — tips van TripleZero iT</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Table corruptie: repair versus restore — tips van TripleZero iT</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2790,7 +2790,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-traffic-spike-diagnose-in-15-minuten-4aab6": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Traffic spike: diagnose in 15 minuten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Traffic spike: diagnose in 15 minuten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2803,7 +2803,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-cpu-100-processen-vinden-top-htop-4ced2": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>CPU 100%: processen vinden (top/htop)</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>CPU 100%: processen vinden (top/htop)</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2816,7 +2816,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-schijf-of-inodes-vol-spoedacties-9d7e5": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Schijf of inodes vol: spoedacties</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Schijf of inodes vol: spoedacties</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2829,7 +2829,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-trage-ttfb-dns-php-of-database-72637": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Trage TTFB: DNS, PHP of database?</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Trage TTFB: DNS, PHP of database?</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2842,7 +2842,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-redis-object-cache-voor-wordpress-8b02f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Redis object cache voor WordPress</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Redis object cache voor WordPress</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2855,7 +2855,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-memcached-wanneer-redis-niet-past-1360b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Memcached wanneer Redis niet past</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Memcached wanneer Redis niet past</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2868,7 +2868,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-litespeed-cache-diep-afstellen-ca9d8": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>LiteSpeed Cache diep afstellen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>LiteSpeed Cache diep afstellen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2881,7 +2881,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-third-party-scripts-die-de-site-platlegg-0c098": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Third-party scripts die de site platleggen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Third-party scripts die de site platleggen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2894,7 +2894,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-http-3-en-quic-wanneer-het-helpt-b596f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>HTTP/3 en QUIC: wanneer het helpt</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>HTTP/3 en QUIC: wanneer het helpt</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2907,7 +2907,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-hotlink-protection-tegen-bandbreedtedief-2ebdc": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hotlink-protection tegen bandbreedtediefstal</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hotlink-protection tegen bandbreedtediefstal</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2920,7 +2920,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-cronjobs-die-s-nachts-alles-vastzetten-c1f4a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Cronjobs die ’s nachts alles vastzetten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Cronjobs die ’s nachts alles vastzetten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2933,7 +2933,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-opcache-en-php-fpm-workers-tunen-8a113": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Opcache en PHP-FPM workers tunen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Opcache en PHP-FPM workers tunen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2946,7 +2946,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-n-1-queries-in-webshops-250a2": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>N+1 queries in webshops</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>N+1 queries in webshops</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2959,7 +2959,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-cdn-origin-overload-voorkomen-42ff2": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>CDN origin overload voorkomen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>CDN origin overload voorkomen</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2972,7 +2972,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-incidentcommunicatie-naar-klanten-25eed": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Incidentcommunicatie naar klanten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Incidentcommunicatie naar klanten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2985,7 +2985,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-post-incident-capacity-planning-3fad3": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Post-incident: capacity planning</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Post-incident: capacity planning</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -2998,7 +2998,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-traffic-spike-diagnose-in-15-minuten-che-28236": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Traffic spike: diagnose in 15 minuten: checklist voor MKB</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Traffic spike: diagnose in 15 minuten: checklist voor MKB</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -3011,7 +3011,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-cpu-100-processen-vinden-top-htop-veelge-31ecc": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>CPU 100%: processen vinden (top/htop): veelgemaakte fouten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>CPU 100%: processen vinden (top/htop): veelgemaakte fouten</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -3024,7 +3024,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-schijf-of-inodes-vol-spoedacties-stappen-48098": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Schijf of inodes vol: spoedacties: stappenplan voor beginners</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Schijf of inodes vol: spoedacties: stappenplan voor beginners</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -3037,7 +3037,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-ts-trage-ttfb-dns-php-of-database-tips-van-9ca7a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Trage TTFB: DNS, PHP of database? — tips van TripleZero iT</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Trage TTFB: DNS, PHP of database? — tips van TripleZero iT</strong>. Je werkt in hostingpanel, VPS-console of WordPress/logs — afhankelijk van de fout.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Letterlijke fouttekst / HTTP-status / tijdstip (timezone)","Recente wijzigingen (DNS, plugin, deploy, firewall)","Backup of staging indien beschikbaar"]),
     h2("Stappen"),
@@ -3050,7 +3050,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-woocommerce-versus-shopify-criteria-voor-4e6a9": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WooCommerce versus Shopify: criteria voor NL</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WooCommerce versus Shopify: criteria voor NL</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3063,7 +3063,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-woocommerce-versus-prestashop-518df": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WooCommerce versus PrestaShop</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WooCommerce versus PrestaShop</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3076,7 +3076,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-wordpress-versus-wix-squarespace-eigenaa-8c234": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WordPress versus Wix/Squarespace: eigenaarschap</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WordPress versus Wix/Squarespace: eigenaarschap</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3089,7 +3089,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-headless-commerce-wanneer-zinvol-777bf": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Headless commerce: wanneer zinvol</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Headless commerce: wanneer zinvol</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3102,7 +3102,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-marketplace-versus-eigen-webshop-4424a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Marketplace versus eigen webshop</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Marketplace versus eigen webshop</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3115,7 +3115,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-saas-cms-versus-self-hosted-cms-91a8e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SaaS-CMS versus self-hosted CMS</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SaaS-CMS versus self-hosted CMS</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3128,7 +3128,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-b2b-portals-maatwerk-versus-plugins-d3bab": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>B2B-portals: maatwerk versus plugins</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>B2B-portals: maatwerk versus plugins</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3141,7 +3141,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-multi-store-een-platform-of-meerdere-85f46": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Multi-store: één platform of meerdere</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Multi-store: één platform of meerdere</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3154,7 +3154,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-app-store-kosten-meenemen-in-tco-eb1d2": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>App Store-kosten meenemen in TCO</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>App Store-kosten meenemen in TCO</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3167,7 +3167,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-migratiekosten-realistisch-inschatten-766f2": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Migratiekosten realistisch inschatten</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Migratiekosten realistisch inschatten</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3180,7 +3180,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-seo-controle-wie-bezit-de-urls-a0edd": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SEO-controle: wie bezit de URL’s?</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SEO-controle: wie bezit de URL’s?</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3193,7 +3193,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-extensie-ecosysteem-vergelijken-227cc": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Extensie-ecosysteem vergelijken</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Extensie-ecosysteem vergelijken</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3206,7 +3206,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-supportmodellen-ticket-versus-agency-8a384": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Supportmodellen: ticket versus agency</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Supportmodellen: ticket versus agency</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3219,7 +3219,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-keuze-matrix-invullen-met-stakeholders-062f9": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Keuze-matrix invullen met stakeholders</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Keuze-matrix invullen met stakeholders</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3232,7 +3232,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-pilot-bewijs-voor-big-bang-migratie-22337": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Pilot: bewijs vóór big-bang migratie</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Pilot: bewijs vóór big-bang migratie</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3245,7 +3245,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-woocommerce-versus-shopify-criteria-voor-d91ec": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WooCommerce versus Shopify: criteria voor NL: checklist voor MKB</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WooCommerce versus Shopify: criteria voor NL: checklist voor MKB</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3258,7 +3258,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-woocommerce-versus-prestashop-veelgemaak-94a5d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WooCommerce versus PrestaShop: veelgemaakte fouten</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WooCommerce versus PrestaShop: veelgemaakte fouten</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3271,7 +3271,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-wordpress-versus-wix-squarespace-eigenaa-003ea": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WordPress versus Wix/Squarespace: eigenaarschap: stappenplan voor beginners</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WordPress versus Wix/Squarespace: eigenaarschap: stappenplan voor beginners</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3284,7 +3284,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-shared-versus-managed-wordpress-hosting-69d74": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Shared versus managed WordPress hosting</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Shared versus managed WordPress hosting</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3297,7 +3297,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-wanneer-is-een-vps-de-betere-keuze-64223": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wanneer is een VPS de betere keuze?</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wanneer is een VPS de betere keuze?</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3310,7 +3310,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-reseller-versus-unmanaged-wat-je-zelf-do-27897": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Reseller versus unmanaged: wat je zelf doet</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Reseller versus unmanaged: wat je zelf doet</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3323,7 +3323,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-resources-cpu-ram-inodes-en-traffic-bd9ce": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Resources: CPU, RAM, inodes en traffic</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Resources: CPU, RAM, inodes en traffic</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3336,7 +3336,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-uptime-slas-lezen-zonder-marketing-46646": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Uptime-SLA’s lezen zonder marketing</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Uptime-SLA’s lezen zonder marketing</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3349,7 +3349,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-lokale-support-in-het-nederlands-bbf9b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Lokale support in het Nederlands</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Lokale support in het Nederlands</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3362,7 +3362,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-staging-omgeving-als-harde-eis-ae72f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Staging-omgeving als harde eis</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Staging-omgeving als harde eis</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3375,7 +3375,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-backupretentie-vergelijken-19a8d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Backupretentie vergelijken</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Backupretentie vergelijken</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3388,7 +3388,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-e-mail-op-dezelfde-host-of-apart-75455": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>E-mail op dezelfde host of apart?</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>E-mail op dezelfde host of apart?</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3401,7 +3401,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-schaalpad-shared-vps-cluster-f9af8": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Schaalpad: shared → VPS → cluster</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Schaalpad: shared → VPS → cluster</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3414,7 +3414,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-prijs-per-jaar-inclusief-ssl-en-backups-46fea": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Prijs per jaar inclusief SSL en backups</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Prijs per jaar inclusief SSL en backups</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3427,7 +3427,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-vendor-lock-in-bij-proprietary-panels-c82b9": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Vendor lock-in bij proprietary panels</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Vendor lock-in bij proprietary panels</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3440,7 +3440,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-green-hosting-claims-beoordelen-271ec": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Green hosting claims beoordelen</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Green hosting claims beoordelen</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3453,7 +3453,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-security-addons-imunify-waf-scans-2c61e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Security-addons: Imunify, WAF, scans</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Security-addons: Imunify, WAF, scans</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3466,7 +3466,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-beslisboom-voor-starters-en-agencies-e8b57": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Beslisboom voor starters en agencies</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Beslisboom voor starters en agencies</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3479,7 +3479,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-shared-versus-managed-wordpress-hosting-6f924": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Shared versus managed WordPress hosting: checklist voor MKB</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Shared versus managed WordPress hosting: checklist voor MKB</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3492,7 +3492,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-wanneer-is-een-vps-de-betere-keuze-veelg-d4b32": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wanneer is een VPS de betere keuze?: veelgemaakte fouten</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wanneer is een VPS de betere keuze?: veelgemaakte fouten</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3505,7 +3505,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-reseller-versus-unmanaged-wat-je-zelf-do-56d37": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Reseller versus unmanaged: wat je zelf doet: stappenplan voor beginners</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Reseller versus unmanaged: wat je zelf doet: stappenplan voor beginners</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3518,7 +3518,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-mollie-versus-stripe-voor-nederlandse-sh-13b94": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mollie versus Stripe voor Nederlandse shops</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mollie versus Stripe voor Nederlandse shops</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3531,7 +3531,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-ideal-als-default-conversie-impact-687fb": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>iDEAL als default: conversie-impact</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>iDEAL als default: conversie-impact</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3544,7 +3544,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-transactiekosten-eerlijk-vergelijken-b94a6": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Transactiekosten eerlijk vergelijken</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Transactiekosten eerlijk vergelijken</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3557,7 +3557,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-payout-snelheid-en-cashflow-38b6b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Payout-snelheid en cashflow</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Payout-snelheid en cashflow</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3570,7 +3570,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-chargebacks-en-fraudetools-d16a7": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Chargebacks en fraudetools</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Chargebacks en fraudetools</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3583,7 +3583,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-subscriptions-en-recurring-billing-6cb76": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Subscriptions en recurring billing</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Subscriptions en recurring billing</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3596,7 +3596,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-multi-currency-voor-eu-klanten-53374": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Multi-currency voor EU-klanten</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Multi-currency voor EU-klanten</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3609,7 +3609,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-pci-scope-verkleinen-met-hosted-fields-769b6": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>PCI-scope verkleinen met hosted fields</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>PCI-scope verkleinen met hosted fields</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3622,7 +3622,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-webhook-betrouwbaarheid-testen-017e5": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Webhook-betrouwbaarheid testen</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Webhook-betrouwbaarheid testen</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3635,7 +3635,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-sandbox-versus-live-checklist-6be12": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Sandbox versus live: checklist</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Sandbox versus live: checklist</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3648,7 +3648,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-privacy-en-datalocatie-van-psps-005c6": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Privacy en datalocatie van PSP’s</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Privacy en datalocatie van PSP’s</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3661,7 +3661,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-apple-pay-google-pay-toevoegen-457f0": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Apple Pay / Google Pay toevoegen</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Apple Pay / Google Pay toevoegen</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3674,7 +3674,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-facturatie-koppelen-aan-boekhouding-f086c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Facturatie koppelen aan boekhouding</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Facturatie koppelen aan boekhouding</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3687,7 +3687,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-failover-tweede-betaalprovider-e030e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Failover: tweede betaalprovider?</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Failover: tweede betaalprovider?</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3700,7 +3700,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-klantcommunicatie-bij-mislukte-betaling-5fdb2": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Klantcommunicatie bij mislukte betaling</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Klantcommunicatie bij mislukte betaling</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3713,7 +3713,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-mollie-versus-stripe-voor-nederlandse-sh-a1d45": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mollie versus Stripe voor Nederlandse shops: checklist voor MKB</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mollie versus Stripe voor Nederlandse shops: checklist voor MKB</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3726,7 +3726,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-ideal-als-default-conversie-impact-veelg-33378": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>iDEAL als default: conversie-impact: veelgemaakte fouten</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>iDEAL als default: conversie-impact: veelgemaakte fouten</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3739,7 +3739,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-transactiekosten-eerlijk-vergelijken-sta-cc530": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Transactiekosten eerlijk vergelijken: stappenplan voor beginners</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Transactiekosten eerlijk vergelijken: stappenplan voor beginners</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3752,7 +3752,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-elementor-versus-gutenberg-performance-88317": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Elementor versus Gutenberg: performance</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Elementor versus Gutenberg: performance</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3765,7 +3765,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-custom-theme-versus-pagebuilder-67d75": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Custom theme versus pagebuilder</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Custom theme versus pagebuilder</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3778,7 +3778,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-websitebuilders-wix-e-d-versus-wordpress-5244e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Websitebuilders (Wix e.d.) versus WordPress</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Websitebuilders (Wix e.d.) versus WordPress</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3791,7 +3791,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-next-js-versus-wordpress-voor-content-si-96e94": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Next.js versus WordPress voor content sites</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Next.js versus WordPress voor content sites</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3804,7 +3804,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-low-code-builders-voor-landingspaginas-f359d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Low-code builders voor landingspagina’s</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Low-code builders voor landingspagina’s</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3817,7 +3817,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-design-system-hergebruiken-zonder-builde-b94ca": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Design system hergebruiken zonder builder-lock</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Design system hergebruiken zonder builder-lock</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3830,7 +3830,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-toegankelijkheid-in-pagebuilders-9a3a6": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Toegankelijkheid in pagebuilders</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Toegankelijkheid in pagebuilders</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3843,7 +3843,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-updates-en-breaking-changes-bij-builders-e7249": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Updates en breaking changes bij builders</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Updates en breaking changes bij builders</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3856,7 +3856,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-export-portabiliteit-van-content-4c22e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Export/portabiliteit van content</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Export/portabiliteit van content</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3869,7 +3869,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-agency-workflow-figma-naar-cms-8966e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Agency-workflow: Figma naar CMS</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Agency-workflow: Figma naar CMS</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3882,7 +3882,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-block-patterns-als-middenweg-71e10": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Block patterns als middenweg</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Block patterns als middenweg</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3895,7 +3895,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-pagebuilder-plugins-die-je-site-trager-m-0164e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Pagebuilder-plugins die je site trager maken</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Pagebuilder-plugins die je site trager maken</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3908,7 +3908,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-headless-cms-extra-complexiteit-8c753": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Headless CMS: extra complexiteit?</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Headless CMS: extra complexiteit?</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3921,7 +3921,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-keuzehulp-snelheid-flexibiliteit-kosten-90d75": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Keuzehulp: snelheid, flexibiliteit, kosten</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Keuzehulp: snelheid, flexibiliteit, kosten</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3934,7 +3934,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-migreren-van-builder-naar-custom-stappen-c68a1": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Migreren van builder naar custom: stappen</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Migreren van builder naar custom: stappen</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3947,7 +3947,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-elementor-versus-gutenberg-performance-c-8b21f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Elementor versus Gutenberg: performance: checklist voor MKB</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Elementor versus Gutenberg: performance: checklist voor MKB</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3960,7 +3960,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-custom-theme-versus-pagebuilder-veelgema-d9faa": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Custom theme versus pagebuilder: veelgemaakte fouten</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Custom theme versus pagebuilder: veelgemaakte fouten</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),
@@ -3973,7 +3973,7 @@ export const qualityW2TopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "tz-w2-vgl-websitebuilders-wix-e-d-versus-wordpress-5bae8": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Websitebuilders (Wix e.d.) versus WordPress: stappenplan voor beginners</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Websitebuilders (Wix e.d.) versus WordPress: stappenplan voor beginners</strong>. Je werkt in TripleZero iT shop / klantenpanel + huidige eisenlijst.`, `We geven een concrete aanpak met voorbereiding, gerichte stappen en duidelijke controles.`),
     h2("Voorbereiding"),
     ul(["Budget en groeiverwachting","Technische eisen (PHP, e-mail, compliance, teamvaardigheden)","Migratiebereidheid en downtime-tolerantie"]),
     h2("Stappen"),

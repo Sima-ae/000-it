@@ -24,7 +24,7 @@ function warn(t: string) {
 }
 function outro(related?: string) {
   return p(
-    `Heb je na het volgen van deze stappen nog vragen? Neem contact op met ${BRAND} support via het ticketssysteem.`,
+    `Heb je na het volgen van deze stappen nog vragen? Neem contact op met TripleZero iT support via het ticketssysteem.`,
     related ? `Gerelateerd: ${related}` : `Bekijk ook andere artikelen over e-mail, WordPress, DNS en beveiliging.`,
   );
 }
@@ -34,7 +34,7 @@ type Spec = { lead: string; why: string[]; steps: string[]; pitfalls: string[]; 
 
 function howto(title: string, spec: Spec): string {
   return [
-    p(spec.lead, `We schrijven vanuit de praktijk bij ${BRAND}: hosting, VPS, control panels en het klantenpanel.`),
+    p(spec.lead, `We schrijven vanuit de praktijk bij TripleZero iT: hosting, VPS, control panels en het klantenpanel.`),
     h2("Waarom dit belangrijk is"),
     ul(spec.why),
     h2(`Stappenplan: ${title}`),

@@ -28,7 +28,7 @@ function warn(t: string) {
 }
 function outro(related?: string) {
   return p(
-    `Kom je er na deze stappen niet uit? Open een ticket bij ${BRAND} via het klantenpanel. Vermeld je domeinnaam of VPS-hostname, het tijdstip en wat je al geprobeerd hebt.`,
+    `Kom je er na deze stappen niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld je domeinnaam of VPS-hostname, het tijdstip en wat je al geprobeerd hebt.`,
     related
       ? `Gerelateerd: ${related}`
       : `Bekijk ook andere handleidingen in deze kennisbank over hosting, e-mail, DNS en beveiliging.`,
@@ -37,7 +37,7 @@ function outro(related?: string) {
 
 function intro(title: string, lead: string, extra?: string) {
   return p(
-    `In deze handleiding van ${BRAND} behandelen we <strong>${title}</strong>. ${lead}`,
+    `In deze handleiding van TripleZero iT behandelen we <strong>${title}</strong>. ${lead}`,
     extra ||
       `We schrijven vanuit de werkwijze in ons klantenpanel en de control panels die bij jouw pakket horen (DirectAdmin, CyberPanel of Plesk). Volg de stappen in volgorde en test na elke wijziging.`,
   );
@@ -94,7 +94,7 @@ function keywordBlocks(title: string, topic: string): string[] {
       h2("Aanvalsvlak verkleinen"),
       p(
         `Beperk open poorten tot wat je écht nodig hebt, houd het besturingssysteem bijgewerkt en monitor auth-logs. Fail2Ban blokkeert herhaalde mislukte logins automatisch.`,
-        `DDoS-mitigatie op netwerkniveau zit bij ${BRAND} op de infrastructuur; applicatie-DDoS (trage requests, XML-RPC, login-spam) moet je in de website of WAF aanpakken.`,
+        `DDoS-mitigatie op netwerkniveau zit bij TripleZero iT op de infrastructuur; applicatie-DDoS (trage requests, XML-RPC, login-spam) moet je in de website of WAF aanpakken.`,
       ),
     );
   }
@@ -111,8 +111,8 @@ function keywordBlocks(title: string, topic: string): string[] {
     blocks.push(
       h2("Microsoft 365 in combinatie met je domein"),
       p(
-        `Koppel je domein in het Microsoft-beheercentrum en zet de MX-, SPF-, DKIM- en autodiscover-records in DNS bij ${BRAND}. Zolang MX nog naar onze mailservers wijst, blijft mail in de oude mailbox binnenkomen.`,
-        `Licenties, gebruikers en gedeelde postvakken beheer je in Microsoft; facturatie en koppeling van het abonnement lopen via je ${BRAND}-klantenpanel als je het product bij ons afneemt.`,
+        `Koppel je domein in het Microsoft-beheercentrum en zet de MX-, SPF-, DKIM- en autodiscover-records in DNS bij TripleZero iT. Zolang MX nog naar onze mailservers wijst, blijft mail in de oude mailbox binnenkomen.`,
+        `Licenties, gebruikers en gedeelde postvakken beheer je in Microsoft; facturatie en koppeling van het abonnement lopen via je TripleZero iT-klantenpanel als je het product bij ons afneemt.`,
       ),
     );
   }
@@ -138,7 +138,7 @@ function keywordBlocks(title: string, topic: string): string[] {
     blocks.push(
       h2("Mailclients en aflevering"),
       p(
-        `Standaardinstellingen bij ${BRAND}: IMAP 993, SMTP 587 met STARTTLS of 465 met SSL, gebruikersnaam is het volledige e-mailadres. Webmail is de referentie: werkt die wel, dan ligt het probleem in de client.`,
+        `Standaardinstellingen bij TripleZero iT: IMAP 993, SMTP 587 met STARTTLS of 465 met SSL, gebruikersnaam is het volledige e-mailadres. Webmail is de referentie: werkt die wel, dan ligt het probleem in de client.`,
         `Spoofing bestrijd je met SPF, DKIM en DMARC — niet met alleen een spamfilter. Bulkmail hoort via een gespecialiseerde verzenddienst, niet via de mailbox van je website.`,
       ),
     );
@@ -156,7 +156,7 @@ function keywordBlocks(title: string, topic: string): string[] {
     blocks.push(
       h2("Account en facturatie"),
       p(
-        `In het klantenpanel van ${BRAND} zie je openstaande posten, betaalmethoden en je klantnummer. Mislukte incasso’s leiden tot een herinnering; reageer daarop voordat diensten worden beperkt.`,
+        `In het klantenpanel van TripleZero iT zie je openstaande posten, betaalmethoden en je klantnummer. Mislukte incasso’s leiden tot een herinnering; reageer daarop voordat diensten worden beperkt.`,
         `Upgrades gaan meestal per eerstvolgende termijn in; downgrades kunnen pas als het verbruik binnen het kleinere pakket past.`,
       ),
     );
@@ -395,7 +395,7 @@ function tldExtra(title: string): string[] {
   const note = notes[ext] || `De extensie .${ext} heeft eigen registrybeleid. Wij zetten de eisen in de shop en in je bestelbevestiging.`;
   return [
     h2(`Specifiek voor .${ext}`),
-    p(note, `Bij ${BRAND} registreer, verleng en verhuis je de extensie vanuit het klantenpanel. DNS beheer je op dezelfde plek als je andere domeinen, tenzij je eigen nameservers gebruikt.`),
+    p(note, `Bij TripleZero iT registreer, verleng en verhuis je de extensie vanuit het klantenpanel. DNS beheer je op dezelfde plek als je andere domeinen, tenzij je eigen nameservers gebruikt.`),
   ];
 }
 
@@ -435,7 +435,7 @@ export function buildGapArticleHtml(title: string, topic: string): string {
     intro(title, conf.lead),
     h2("Voorbereiding"),
     ul([
-      `Inlog voor het ${BRAND} klantenpanel.`,
+      `Inlog voor het TripleZero iT klantenpanel.`,
       "Toegang tot DirectAdmin, CyberPanel, Plesk of de VPS-console — afhankelijk van je product.",
       "Een actuele backup of snapshot als je iets structureels wijzigt.",
       "De exacte hostname of het IP waarop je gaat testen.",
@@ -451,7 +451,7 @@ export function buildGapArticleHtml(title: string, topic: string): string {
     ]),
     h3("Als het nog misgaat"),
     p(
-      `Zet de vorige waarde terug als de wijziging duidelijk de boosdoener is. Noteer foutteksten letterlijk (geen parafrase). Stuur in een ticket naar ${BRAND} mee: product, domein/IP, timestamp en screenshot.`,
+      `Zet de vorige waarde terug als de wijziging duidelijk de boosdoener is. Noteer foutteksten letterlijk (geen parafrase). Stuur in een ticket naar TripleZero iT mee: product, domein/IP, timestamp en screenshot.`,
     ),
     tip(
       "Wijzig niet DNS, SSL en applicatie tegelijk. Isoleer de laag: eerst naamresolutie, dan certificaat, dan de app.",

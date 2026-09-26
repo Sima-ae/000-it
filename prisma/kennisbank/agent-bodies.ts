@@ -33,7 +33,7 @@ function warn(t: string) {
 
 function outro(related?: string) {
   return p(
-    `Heb je na het volgen van deze stappen nog vragen? Neem contact op met ${BRAND} support via het ticketssysteem. Vermeld je pakketnaam, agenttype en status, zodat we sneller kunnen helpen.`,
+    `Heb je na het volgen van deze stappen nog vragen? Neem contact op met TripleZero iT support via het ticketssysteem. Vermeld je pakketnaam, agenttype en status, zodat we sneller kunnen helpen.`,
     related
       ? `Gerelateerd: ${related}`
       : `Bekijk ook andere artikelen in de categorie AI-agents voor beheer, pakketten en workflows.`,
@@ -54,7 +54,7 @@ function typeArticle(opts: {
   return () =>
     [
       p(
-        `De <strong>${opts.typeLabel}</strong> (<code>${opts.typeCode}</code>) is een van de AI-agenttypen in je ${BRAND}-dashboard onder <code>/ai-agents</code>. ${opts.intro}`,
+        `De <strong>${opts.typeLabel}</strong> (<code>${opts.typeCode}</code>) is een van de AI-agenttypen in je TripleZero iT-dashboard onder <code>/ai-agents</code>. ${opts.intro}`,
       ),
       h2("Wat deze agent doet"),
       ul(opts.does),
@@ -291,7 +291,7 @@ export const agentTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-agents-one-type": () =>
     [
       p(
-        `In het ${BRAND}-dashboard heeft elke AI-agent <strong>één type</strong> (bijvoorbeeld <code>SEO_AGENT</code> of <code>CONTENT_AGENT</code>). Eén agentkaart is dus niet tegelijk SEO én ads.`,
+        `In het TripleZero iT-dashboard heeft elke AI-agent <strong>één type</strong> (bijvoorbeeld <code>SEO_AGENT</code> of <code>CONTENT_AGENT</code>). Eén agentkaart is dus niet tegelijk SEO én ads.`,
       ),
       h2("Wat dat betekent"),
       ul([
@@ -361,7 +361,7 @@ export const agentTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-agents-link-project": () =>
     [
       p(
-        `AI-agents kunnen aan een <strong>project</strong> in je ${BRAND}-omgeving hangen. Zo blijft agentwerk zichtbaar naast website-, SEO- of ads-projecten in het CRM.`,
+        `AI-agents kunnen aan een <strong>project</strong> in je TripleZero iT-omgeving hangen. Zo blijft agentwerk zichtbaar naast website-, SEO- of ads-projecten in het CRM.`,
       ),
       h2("Waarom koppelen"),
       ul([
@@ -961,7 +961,7 @@ export const agentTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-agents-support-info": () =>
     [
       p(
-        `Bij een AI-agentprobleem helpt een compleet ticket ${BRAND} support sneller. Stuur feiten, geen alleen “het werkt niet”.`,
+        `Bij een AI-agentprobleem helpt een compleet ticket TripleZero iT support sneller. Stuur feiten, geen alleen “het werkt niet”.`,
       ),
       h2("Stuur altijd mee"),
       ul([

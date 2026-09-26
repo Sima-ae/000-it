@@ -30,7 +30,7 @@ function warn(t: string) {
 
 function outro(related?: string) {
   return p(
-    `Heb je na het volgen van deze stappen nog vragen? Neem contact op met ${BRAND} support via het ticketssysteem. Vermeld hostname, Plesk-URL (poort 8443) en wat je precies ziet (foutmelding of screenshot).`,
+    `Heb je na het volgen van deze stappen nog vragen? Neem contact op met TripleZero iT support via het ticketssysteem. Vermeld hostname, Plesk-URL (poort 8443) en wat je precies ziet (foutmelding of screenshot).`,
     related
       ? `Gerelateerd: ${related}`
       : `Bekijk ook andere artikelen in Plesk over toegang, websites, e-mail, SSL, WordPress Toolkit en backups.`,
@@ -48,8 +48,8 @@ export const pleskTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       h2("Wie mag resetten"),
       ul([
         "Extra gebruiker of mailbox: de abonnementseigenaar reset het in <strong>Gebruikers</strong> of <strong>Mail</strong>.",
-        "Abonnementseigenaar: de reseller of ${BRAND}-beheer reset het in het klantaccount.",
-        "Serveradmin (VPS): alleen via servertoegang of een ticket bij ${BRAND}, niet door te gokken op poort 8443.",
+        "Abonnementseigenaar: de reseller of TripleZero iT-beheer reset het in het klantaccount.",
+        "Serveradmin (VPS): alleen via servertoegang of een ticket bij TripleZero iT, niet door te gokken op poort 8443.",
       ]),
       h2("Checklist na reset"),
       ol([
@@ -82,7 +82,7 @@ export const pleskTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-pl-first-steps": () =>
     [
       p(
-        `Na oplevering van een Plesk-server of -abonnement bij ${BRAND} volg je een vaste checklist: toegang beveiligen, DNS, eerste site en backups.`,
+        `Na oplevering van een Plesk-server of -abonnement bij TripleZero iT volg je een vaste checklist: toegang beveiligen, DNS, eerste site en backups.`,
       ),
       h2("Dag 1"),
       ol([
@@ -109,7 +109,7 @@ export const pleskTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       ),
       h2("Checklist"),
       ul([
-        "Gebruik de exacte URL uit de welkomstmail van ${BRAND} (niet http, niet poort 80).",
+        "Gebruik de exacte URL uit de welkomstmail van TripleZero iT (niet http, niet poort 80).",
         "A/AAAA van de hostname wijst naar de server.",
         "Poort 8443 (TCP) is bereikbaar; op een VPS kan de firewall die poort beperken tot jouw IP.",
         "Panel-SSL voor de hostname voorkomt browserwaarschuwingen.",
@@ -141,7 +141,7 @@ export const pleskTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Ruim oude backups, logs, cache en ongebruikte staging-sites op.",
         "Leeg prullenbakken in File Manager en WordPress.",
         "Verplaats grote mailarchieven naar IMAP-lokaal of verhoog mailboxquota.",
-        "Vraag ${BRAND} of je reseller om een plan-upgrade — niet om de limiet in php.ini te omzeilen.",
+        "Vraag TripleZero iT of je reseller om een plan-upgrade — niet om de limiet in php.ini te omzeilen.",
       ]),
       outro("Mailboxquota; geplande backups; File Manager."),
     ].join("\n"),
@@ -334,7 +334,7 @@ export const pleskTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Tools &amp; Settings → Spamfilter voor globale drempels.",
         "Combineer met SPF/DKIM; een filter alleen lost geen vervalste afzenders op.",
       ]),
-      warn("Serverbrede wijzigingen raken alle mailboxen. Overleg met ${BRAND} op een managed VPS."),
+      warn("Serverbrede wijzigingen raken alle mailboxen. Overleg met TripleZero iT op een managed VPS."),
       outro("SPF/DKIM/DMARC; mailboxquota; webmail."),
     ].join("\n"),
 
@@ -417,7 +417,7 @@ export const pleskTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       ul([
         "SSL/TLS → Let’s Encrypt opnieuw uitgeven voor het betreffende domein.",
         "Bekijk de taak in Tools &amp; Settings → Geplande taken / log als de knop faalt.",
-        "Blijft het stuk: ticket naar ${BRAND} met de exacte ACME-fouttekst.",
+        "Blijft het stuk: ticket naar TripleZero iT met de exacte ACME-fouttekst.",
       ]),
       outro("Let’s Encrypt installeren; panel-SSL op 8443; DNS-records."),
     ].join("\n"),
@@ -435,8 +435,8 @@ export const pleskTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       h2("Jezelf gebanned"),
       ol([
         "Herken het: timeout op 8443 of SSH vanaf één netwerk, elders wél bereikbaar.",
-        "VPS: unban via Plesk Tools &amp; Settings → IP-adresblokkering / Fail2Ban, of vraag ${BRAND}.",
-        "Shared/reseller: alleen ${BRAND} kan de ban opheffen — stuur je publieke IP mee.",
+        "VPS: unban via Plesk Tools &amp; Settings → IP-adresblokkering / Fail2Ban, of vraag TripleZero iT.",
+        "Shared/reseller: alleen TripleZero iT kan de ban opheffen — stuur je publieke IP mee.",
         "Zet daarna 2FA aan en stop met wachtwoordgokken.",
       ]),
       warn("Whitelist niet je hele kantoor-range “voor altijd” zonder noodzaak. Liever VPN of vast IP + 2FA."),
@@ -481,7 +481,7 @@ export const pleskTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Trek toegang in als een project stopt.",
         "Mislukte connecties: Fail2Ban, verkeerde home-map of TLS-verplichting in de client uit.",
       ]),
-      tip("Op veel ${BRAND}-servers is kale FTP (poort 21 zonder TLS) geweigerd. Zet “FTP over TLS” aan in de client."),
+      tip("Op veel TripleZero iT-servers is kale FTP (poort 21 zonder TLS) geweigerd. Zet “FTP over TLS” aan in de client."),
       outro("File Manager; CHMOD; Fail2Ban."),
     ].join("\n"),
 
@@ -503,7 +503,7 @@ export const pleskTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       h2("Importeren"),
       ol([
         "Maak een backup van de huidige DB voordat je overschrijft.",
-        "Import → kies het SQL/zip-bestand. Time-outs bij grote dumps: splitten of via ticket/${BRAND} op de server importeren.",
+        "Import → kies het SQL/zip-bestand. Time-outs bij grote dumps: splitten of via ticket/TripleZero iT op de server importeren.",
         "WordPress: na import search-replace van URL’s als het domein anders is (of gebruik WP Toolkit-kloon).",
       ]),
       warn("Verwijder geen systeemtabelen en wijzig geen gebruikersrechten “om te testen”. Eén DROP te veel maakt de site plat."),
@@ -637,7 +637,7 @@ export const pleskTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Download of controleer één archief remote (niet alleen “taak groen”).",
         "Test jaarlijks een restore op een staging-domein.",
       ]),
-      warn("${BRAND}-snapshots op VPS zijn geen vervanging van een Plesk-abonnementbackup als je één site terug wilt zonder de hele VM."),
+      warn("TripleZero iT-snapshots op VPS zijn geen vervanging van een Plesk-abonnementbackup als je één site terug wilt zonder de hele VM."),
       outro("Websitebackup maken; één site terugzetten; resourcegebruik."),
     ].join("\n"),
 
@@ -660,7 +660,7 @@ export const pleskTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Alleen database: handig bij kapotte WP na plugin; uploads blijven.",
         "WordPress Toolkit-backup is een extra, kleinere optie naast serverbackup.",
       ]),
-      warn("Restore overschrijft live data van het gekozen object. Zet bij twijfel eerst een kopie/staging, of vraag ${BRAND} meekijken."),
+      warn("Restore overschrijft live data van het gekozen object. Zet bij twijfel eerst een kopie/staging, of vraag TripleZero iT meekijken."),
       outro("Geplande backups; website kopiëren; phpMyAdmin export."),
     ].join("\n"),
 
@@ -716,7 +716,7 @@ export const pleskTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       ol([
         "Service plans → het plan → tabblad <strong>Permissies</strong> of extra’s: vink WP Toolkit, Git, planning, enz. aan.",
         "Abonnementen die het plan volgen, krijgen de extra’s na opslaan.",
-        "Extensions zelf installeren (catalogus) is admin/VPS-werk; op shared Plesk van ${BRAND} staat de set al klaar.",
+        "Extensions zelf installeren (catalogus) is admin/VPS-werk; op shared Plesk van TripleZero iT staat de set al klaar.",
       ]),
       h2("Veelgebruikte extra’s"),
       ul([

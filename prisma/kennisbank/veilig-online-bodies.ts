@@ -30,7 +30,7 @@ function warn(t: string) {
 
 function outro(related?: string) {
   return p(
-    `Heb je na het volgen van deze stappen nog vragen? Neem contact op met ${BRAND} support via het ticketssysteem. Vermeld je domeinnaam of dienst en een korte omschrijving van het risico of incident.`,
+    `Heb je na het volgen van deze stappen nog vragen? Neem contact op met TripleZero iT support via het ticketssysteem. Vermeld je domeinnaam of dienst en een korte omschrijving van het risico of incident.`,
     related
       ? `Gerelateerd: ${related}`
       : `Bekijk ook andere artikelen in Veilig Online over phishing, wachtwoorden, malware, netwerk en privacy.`,
@@ -138,7 +138,7 @@ export const veiligOnlineTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-vo-tech-support-scam": () =>
     [
       p(
-        `Bij een <strong>tech support-scam</strong> belt of mailt iemand die zich voordoet als Microsoft, Apple, je provider of ${BRAND}. Doel: toegang tot je computer of betaling voor ‘reparatie’.`,
+        `Bij een <strong>tech support-scam</strong> belt of mailt iemand die zich voordoet als Microsoft, Apple, je provider of TripleZero iT. Doel: toegang tot je computer of betaling voor ‘reparatie’.`,
       ),
       h2("Hoe herken je het"),
       ul([
@@ -154,7 +154,7 @@ export const veiligOnlineTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Bel zelf terug via het nummer op de officiële website of je factuur — niet via het nummer in de pop-up.",
         "Meld fraude bij je bank als er betaald is, en bij de politie indien nodig.",
       ]),
-      tip(`${BRAND} vraagt in supporttickets nooit om je volledige wachtwoord of om ongevraagd remote tools te installeren buiten een afgesproken sessie.`),
+      tip(`TripleZero iT vraagt in supporttickets nooit om je volledige wachtwoord of om ongevraagd remote tools te installeren buiten een afgesproken sessie.`),
       warn("Betaal nooit met cadeaukaarten voor ‘security support’ — dat is vrijwel altijd fraude."),
       outro("Malware herkennen; account herstellen; smishing."),
     ].join("\n"),
@@ -228,7 +228,7 @@ export const veiligOnlineTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Waarschuw contacten als er spam of oplichting vanaf jouw account is verstuurd.",
         "Bewaar bewijs (mails, logs) voor support of aangifte.",
       ]),
-      tip(`Voor hosting- of e-mailaccounts bij ${BRAND}: open een ticket met domeinnaam, tijdstip en wat je ziet — wij helpen met reset en controle.`),
+      tip(`Voor hosting- of e-mailaccounts bij TripleZero iT: open een ticket met domeinnaam, tijdstip en wat je ziet — wij helpen met reset en controle.`),
       warn("Betaal geen ‘herstelbedrijven’ die jou ongevraagd benaderen na een hackmelding."),
       outro("2FA; wachtwoordmanager; malware herkennen."),
     ].join("\n"),
@@ -277,7 +277,7 @@ export const veiligOnlineTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       ol([
         "Koppel het apparaat los van het netwerk (kabel/wifi uit) om verspreiding te beperken.",
         "Betaal niet blind — losgeld garandeert geen herstel en financiert criminaliteit.",
-        "Schakel IT-hulp of ${BRAND}-support in; documenteer wat er gebeurde.",
+        "Schakel IT-hulp of TripleZero iT-support in; documenteer wat er gebeurde.",
         "Herstel vanuit een schone, offline of offsite back-up ná verwijdering van de malware.",
         "Wijzig wachtwoorden vanaf een schoon apparaat; controleer of e-mail/hosting ook geraakt is.",
       ]),
@@ -310,7 +310,7 @@ export const veiligOnlineTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       ul([
         "Sluit het bestand; verbind tijdelijk geen netwerkschijven.",
         "Draai een volledige scan; wijzig wachtwoorden als er credentials gevraagd werden.",
-        "Meld het intern of via een ticket bij ${BRAND} als het om zakelijke mail/hosting gaat.",
+        "Meld het intern of via een ticket bij TripleZero iT als het om zakelijke mail/hosting gaat.",
       ]),
       tip("Heb je een bestand ‘moeten’ ontvangen? Vraag de afzender via een ander kanaal of het echt van hen komt."),
       warn("Crack-/keygen-sites en ‘gratis Office’ zijn een klassieke malwarebron."),
@@ -350,7 +350,7 @@ export const veiligOnlineTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Besturingssysteem (Windows, macOS, iOS, Android).",
         "Browsers en veelgebruikte apps.",
         "Firmware van router en slimme apparaten.",
-        "Website: CMS, plugins, thema’s en PHP — via hostingpanel of ${BRAND}-beheer.",
+        "Website: CMS, plugins, thema’s en PHP — via hostingpanel of TripleZero iT-beheer.",
       ]),
       h2("Praktische aanpak"),
       ol([
@@ -359,7 +359,7 @@ export const veiligOnlineTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Test kritieke zakelijke systemen kort na een update (of gebruik staging).",
         "Houd een back-up vóór grote CMS- of serverupdates.",
       ]),
-      tip(`Op hosting bij ${BRAND} helpen tools zoals Patchman en panel-updates om kwetsbare componenten sneller te spotten.`),
+      tip(`Op hosting bij TripleZero iT helpen tools zoals Patchman en panel-updates om kwetsbare componenten sneller te spotten.`),
       warn("Negeer geen ‘kritieke beveiligingsupdate’ omdat ‘alles nog werkt’ — aanvallers scannen juist op oude versies."),
       outro("Ransomware; malware; Patchman."),
     ].join("\n"),
@@ -387,7 +387,7 @@ export const veiligOnlineTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Controleer of je de officiële site zelf hebt getypt of via een vertrouwde bladwijzer kwam.",
         "Bij twijfel: niet inloggen; zoek het bedrijf via een andere bron.",
       ]),
-      tip(`Voor je eigen site bij ${BRAND}: activeer Let’s Encrypt of een SSL-certificaat en forceer HTTPS — zie ook de SSL-artikelen in de kennisbank.`),
+      tip(`Voor je eigen site bij TripleZero iT: activeer Let’s Encrypt of een SSL-certificaat en forceer HTTPS — zie ook de SSL-artikelen in de kennisbank.`),
       warn("Een rood waarschuwingsscherm over een ongeldig certificaat negeer je niet ‘even snel’ op een inlogpagina."),
       outro("Nepwebsites herkennen; openbare wifi; SSL-certificaten."),
     ].join("\n"),
@@ -406,7 +406,7 @@ export const veiligOnlineTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       ]),
       h2("Voor websites en e-mail"),
       ol([
-        "Gebruik de backupfunctie in je hostingpanel of de backups die ${BRAND} levert.",
+        "Gebruik de backupfunctie in je hostingpanel of de backups die TripleZero iT levert.",
         "Maak vóór grote updates of migraties een extra handmatige snapshot.",
         "Bewaar ook DNS- en mailbox-overzichten — niet alleen bestanden.",
       ]),

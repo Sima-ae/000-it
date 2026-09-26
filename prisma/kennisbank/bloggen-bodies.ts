@@ -29,7 +29,7 @@ function warn(t: string) {
 
 function outro(related?: string) {
   return p(
-    `Heb je na het volgen van deze stappen nog vragen? Neem contact op met ${BRAND} support via het ticketssysteem of plan een afspraak. Vermeld je domein, blogplatform en wat je wilt bereiken.`,
+    `Heb je na het volgen van deze stappen nog vragen? Neem contact op met TripleZero iT support via het ticketssysteem of plan een afspraak. Vermeld je domein, blogplatform en wat je wilt bereiken.`,
     related
       ? `Gerelateerd: ${related}`
       : `Bekijk ook andere artikelen in Bloggen over starten, schrijven, vormgeving, groei en beheer.`,
@@ -42,7 +42,7 @@ export const bloggenTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-blog-platform-choice": () =>
     [
       p(
-        `De keuze tussen <strong>WordPress.org</strong>, <strong>WordPress.com</strong> en <strong>Blogger</strong> bepaalt je vrijheid, kosten en groeiruimte. Bij ${BRAND} hosten we vooral zelfstandige WordPress-sites op een eigen domein.`,
+        `De keuze tussen <strong>WordPress.org</strong>, <strong>WordPress.com</strong> en <strong>Blogger</strong> bepaalt je vrijheid, kosten en groeiruimte. Bij TripleZero iT hosten we vooral zelfstandige WordPress-sites op een eigen domein.`,
       ),
       h2("Kort vergeleken"),
       ul([
@@ -64,7 +64,7 @@ export const bloggenTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-blog-start-wp-tz": () =>
     [
       p(
-        `Een blog op WordPress bij ${BRAND} combineert een eigen domein, snelle hosting en backups. Zo kun je schrijven zonder meteen in serverbeheer te verdwalen.`,
+        `Een blog op WordPress bij TripleZero iT combineert een eigen domein, snelle hosting en backups. Zo kun je schrijven zonder meteen in serverbeheer te verdwalen.`,
       ),
       h2("Voorbereiding"),
       ul([
@@ -97,7 +97,7 @@ export const bloggenTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       ]),
       h2("Eigen domein later"),
       ul([
-        "Registreer het domein (bij ${BRAND}) en volg de DNS/CNAME-stappen van Blogger.",
+        "Registreer het domein (bij TripleZero iT) en volg de DNS/CNAME-stappen van Blogger.",
         "Houd oude Blogger-URL’s in de gaten; plan redirects bij een eventuele verhuizing.",
         "Exporteer posts regelmatig als backup.",
       ]),
@@ -125,7 +125,7 @@ export const bloggenTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Huisstijl: logo, kleuren, typografie — consistent in posts.",
         "Juridisch: privacy, cookies, eventuele disclaimer bij affiliates.",
       ]),
-      tip(`Bij ${BRAND} kun je domein, hosting en e-mail in één traject regelen.`),
+      tip(`Bij TripleZero iT kun je domein, hosting en e-mail in één traject regelen.`),
       outro("Blog starten op WordPress; e-maillijst opbouwen."),
     ].join("\n"),
 
@@ -168,7 +168,7 @@ export const bloggenTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Je onafhankelijk wilt updaten of migreren.",
         "Eén site mag de andere niet platleggen bij een fout.",
       ]),
-      tip(`Twijfel je? Start met aparte installaties bij ${BRAND}; Multisite is moeilijker terug te draaien.`),
+      tip(`Twijfel je? Start met aparte installaties bij TripleZero iT; Multisite is moeilijker terug te draaien.`),
       outro("Starten op WordPress; veilige thema- en plugin-updates."),
     ].join("\n"),
 
@@ -576,7 +576,7 @@ export const bloggenTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "CSS die plugins/admin breekt.",
         "!important-oorlog zonder test op mobiel.",
       ]),
-      warn(`Bij twijfel: ticket bij ${BRAND} in plaats van live te ‘fixen’ op productie.`),
+      warn(`Bij twijfel: ticket bij TripleZero iT in plaats van live te ‘fixen’ op productie.`),
       outro("Thema kiezen; white screen na publiceren."),
     ].join("\n"),
 
@@ -693,7 +693,7 @@ export const bloggenTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       ul([
         "Affiliate links met disclosure.",
         "Sponsored posts / partnerships.",
-        "Eigen diensten soft-promoten (CTA naar ${BRAND}-aanbod).",
+        "Eigen diensten soft-promoten (CTA naar TripleZero iT-aanbod).",
       ]),
       h2("Regels"),
       ol([
@@ -722,7 +722,7 @@ export const bloggenTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Markeer belangrijke events (nieuwsbrief, contact).",
         "Filter interne hits als het team veel test.",
       ]),
-      tip(`Bij hosting bij ${BRAND} helpen we vaak met DNS-verificatie via ticket.`),
+      tip(`Bij hosting bij TripleZero iT helpen we vaak met DNS-verificatie via ticket.`),
       outro("RSS en sitemaps; blogresultaat meten."),
     ].join("\n"),
 
@@ -763,7 +763,7 @@ export const bloggenTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       ul([
         "Grote commenttabellen: opruimen/spam verwijderen.",
         "Conflict met pagebuilders of security-plugins.",
-        "Ticket bij ${BRAND} met tijdstip, URL en recente wijzigingen.",
+        "Ticket bij TripleZero iT met tijdstip, URL en recente wijzigingen.",
       ]),
       outro("White screen na publiceren; maandelijks onderhoud."),
     ].join("\n"),
@@ -777,7 +777,7 @@ export const bloggenTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       ol([
         "Berichten → Prullenbak: herstellen indien aanwezig.",
         "Revisies in de editor: eerdere versie terugzetten.",
-        "Hostbacking / ${BRAND}-backup: database + uploads terugzetten (zorgvuldig).",
+        "Hostbacking / TripleZero iT-backup: database + uploads terugzetten (zorgvuldig).",
         "Als alleen tekst weg is: lokale concepten, e-mail, Notion/Docs.",
       ]),
       warn("Overschrijf niet blind een hele database als alleen één post weg is — vraag support om een gerichte restore."),
@@ -836,7 +836,7 @@ export const bloggenTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       h2("Direct"),
       ol([
         "Open de post in de admin (als dat nog kan) en zet terug naar concept.",
-        "Activeer WP_DEBUG_LOG op staging of vraag logs bij ${BRAND}.",
+        "Activeer WP_DEBUG_LOG op staging of vraag logs bij TripleZero iT.",
         "Deactiveer recent toegevoegde plugins/blokken.",
         "Herstel vanuit revisie of backup als de site hard down is.",
       ]),
@@ -852,7 +852,7 @@ export const bloggenTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-blog-monthly-checklist": () =>
     [
       p(
-        `Maandelijks blogonderhoud bij ${BRAND} houdt content, techniek en meting in sync — zonder elke week brandjes te blussen.`,
+        `Maandelijks blogonderhoud bij TripleZero iT houdt content, techniek en meting in sync — zonder elke week brandjes te blussen.`,
       ),
       h2("Content"),
       ul([

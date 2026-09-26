@@ -21,6 +21,10 @@ import {
   qualityW2TopicBuilders,
 } from "./quality-w2-bodies";
 import { qualityPackExcerptsNl } from "./quality-pack-excerpts";
+import {
+  qualityTopicExcerptsNl,
+  qualityTopicBuilders,
+} from "./quality-topic-bodies";
 import { microsoftTopicBuilders } from "./microsoft-bodies";
 import { pleskTopicBuilders } from "./plesk-bodies";
 import { veiligOnlineTopicBuilders } from "./veilig-online-bodies";
@@ -1371,7 +1375,10 @@ export function buildArticleHtml(
   if (locale !== "nl") {
     return englishGenericBody(ctx);
   }
-  // DirectAdmin / quality waves take precedence over generic/gap/thicken fillers.
+  // Topic-sense / strict bodies override when present (incl. explain/compare without fake stappen).
+  // Hand-crafted DirectAdmin builders apply only when no qualityTopic entry exists.
+  const topicSenseBuilder = qualityTopicBuilders[topic];
+  if (topicSenseBuilder) return topicSenseBuilder(ctx);
   const daBuilder = directadminTopicBuilders[topic];
   if (daBuilder) return daBuilder(ctx);
   const qualityBuilder = qualityRemainingTopicBuilders[topic];
@@ -1414,6 +1421,9 @@ export function buildExcerpt(
 ): string {
   if (locale === "nl" && topic && directadminExcerptsNl[topic]) {
     return directadminExcerptsNl[topic];
+  }
+  if (locale === "nl" && topic && qualityTopicExcerptsNl[topic]) {
+    return qualityTopicExcerptsNl[topic];
   }
   if (locale === "nl" && topic && qualityRemainingExcerptsNl[topic]) {
     return qualityRemainingExcerptsNl[topic];

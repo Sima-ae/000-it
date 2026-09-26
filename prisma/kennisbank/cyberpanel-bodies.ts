@@ -30,7 +30,7 @@ function warn(t: string) {
 
 function outro(related?: string) {
   return p(
-    `Heb je na het volgen van deze stappen nog vragen? Neem contact op met ${BRAND} support via het ticketssysteem. Vermeld hostname, CyberPanel-URL en wat je precies ziet (foutmelding of screenshot).`,
+    `Heb je na het volgen van deze stappen nog vragen? Neem contact op met TripleZero iT support via het ticketssysteem. Vermeld hostname, CyberPanel-URL en wat je precies ziet (foutmelding of screenshot).`,
     related
       ? `Gerelateerd: ${related}`
       : `Bekijk ook andere artikelen in CyberPanel over toegang, websites, e-mail, SSL, bestanden en OpenLiteSpeed.`,
@@ -43,7 +43,7 @@ export const cyberpanelTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-cp-vs-other-panels": () =>
     [
       p(
-        `<strong>CyberPanel</strong> is een webcontrolpanel gebouwd rond <strong>OpenLiteSpeed</strong>. Bij ${BRAND} gebruik je het voor websites, SSL, e-mail, databases en WordPress — vergelijkbaar in doel met DirectAdmin of Plesk, maar anders in UI en webserver.`,
+        `<strong>CyberPanel</strong> is een webcontrolpanel gebouwd rond <strong>OpenLiteSpeed</strong>. Bij TripleZero iT gebruik je het voor websites, SSL, e-mail, databases en WordPress — vergelijkbaar in doel met DirectAdmin of Plesk, maar anders in UI en webserver.`,
       ),
       h2("Belangrijkste verschillen"),
       ul([
@@ -55,7 +55,7 @@ export const cyberpanelTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       h2("Wanneer CyberPanel past"),
       ol([
         "Je wilt snelle OLS/LSCache-prestaties voor PHP/WordPress.",
-        "Je server is opgeleverd met CyberPanel door ${BRAND}.",
+        "Je server is opgeleverd met CyberPanel door TripleZero iT.",
         "Je team kent de CyberPanel-workflows (of wil die leren).",
       ]),
       tip("Volg altijd de CyberPanel-artikelen voor stappen — DirectAdmin-screenshots kloppen hier niet."),
@@ -70,7 +70,7 @@ export const cyberpanelTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       h2("Opties"),
       ul([
         "Websitegebruiker: admin kan het wachtwoord resetten in Users / websites.",
-        "Admin-account: alleen via servertoegang of ${BRAND}-support (root/SSH), niet via gokken op poort 8090.",
+        "Admin-account: alleen via servertoegang of TripleZero iT-support (root/SSH), niet via gokken op poort 8090.",
         "Na reset: direct nieuw sterk wachtwoord + bij voorkeur 2FA.",
       ]),
       h2("Checklist na reset"),
@@ -107,7 +107,7 @@ export const cyberpanelTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       ),
       h2("Praktijk"),
       ul([
-        "Admin: serverbreed, alleen voor jou of ${BRAND}-beheer.",
+        "Admin: serverbreed, alleen voor jou of TripleZero iT-beheer.",
         "Website user: één of meerdere sites, e-mail, databases van die owner.",
         "Geef developers geen root/SSH tenzij strikt nodig.",
       ]),
@@ -131,7 +131,7 @@ export const cyberpanelTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "A/AAAA van de hostname wijst naar de server.",
         "Poort 8090 (TCP) open vanaf jouw IP of via VPN — niet onnodig wereldwijd zonder bescherming.",
         "Panel-SSL (Let’s Encrypt voor hostname) voorkomt browserwaarschuwingen.",
-        "Bookmark de URL uit je welkomstmail van ${BRAND}.",
+        "Bookmark de URL uit je welkomstmail van TripleZero iT.",
       ]),
       h2("Problemen"),
       ol([
@@ -157,7 +157,7 @@ export const cyberpanelTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       ol([
         "Ruim backups, logs en cache op.",
         "Verwijder ongebruikte staging-sites.",
-        "Vraag ${BRAND} om upgrade of schijfuitbreiding via ticket.",
+        "Vraag TripleZero iT om upgrade of schijfuitbreiding via ticket.",
       ]),
       outro("Schijfruimte en inodes; mislukte uploads."),
     ].join("\n"),
@@ -165,7 +165,7 @@ export const cyberpanelTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-cp-first-steps-tz": () =>
     [
       p(
-        `Na oplevering van een CyberPanel-server bij ${BRAND} volg je een vaste checklist: toegang beveiligen, DNS, eerste site en monitoring.`,
+        `Na oplevering van een CyberPanel-server bij TripleZero iT volg je een vaste checklist: toegang beveiligen, DNS, eerste site en monitoring.`,
       ),
       h2("Dag 1"),
       ol([
@@ -244,7 +244,7 @@ export const cyberpanelTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Ruim restanten in File Manager op als die blijven staan.",
         "Verwijder ongebruikte SSL/mailobjecten.",
       ]),
-      warn("Verwijderen is zelden omkeerbaar zonder backup — vraag ${BRAND} bij twijfel."),
+      warn("Verwijderen is zelden omkeerbaar zonder backup — vraag TripleZero iT bij twijfel."),
       outro("Backups; één website terugzetten."),
     ].join("\n"),
 
@@ -325,7 +325,7 @@ export const cyberpanelTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       ul([
         "Kleine wijzigingen: File Manager of SFTP.",
         "Volledige release: zip uploaden en uitpakken in public_html.",
-        "DevOps: Git pull op de server (SSH) als ${BRAND} dat toestaat.",
+        "DevOps: Git pull op de server (SSH) als TripleZero iT dat toestaat.",
       ]),
       h2("Veilig deployen"),
       ol([
@@ -422,7 +422,7 @@ export const cyberpanelTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       ol([
         "Reset wachtwoord bij vermoeden van misbruik.",
         "Pauzeer verdachte scripts/plugins die mail sturen.",
-        "Ticket bij ${BRAND} met Message-ID en tijdstip.",
+        "Ticket bij TripleZero iT met Message-ID en tijdstip.",
       ]),
       outro("SPF/DKIM/DMARC; brute-force/malware."),
     ].join("\n"),
@@ -454,7 +454,7 @@ export const cyberpanelTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       h2("CyberPanel NS"),
       ul([
         "Zones beheer je in het panel (PowerDNS).",
-        "Geschikt als ${BRAND} NS heeft geleverd en je alles centraal wilt.",
+        "Geschikt als TripleZero iT NS heeft geleverd en je alles centraal wilt.",
       ]),
       h2("Externe DNS"),
       ul([
@@ -535,7 +535,7 @@ export const cyberpanelTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Apex (+ www) heeft alsnog aparte dekking of apart cert.",
         "Automatische vernieuwing moet DNS-API of handmatige TXT aankunnen.",
       ]),
-      h2("Praktijk bij ${BRAND}"),
+      h2("Praktijk bij TripleZero iT"),
       ol([
         "Controleer of jouw CyberPanel-build wildcard/DNS-01 ondersteunt.",
         "Zet de gevraagde TXT, wacht op propagatie, voltooi issue.",
@@ -661,7 +661,7 @@ export const cyberpanelTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Herstel core/CMS vanuit schone bron + database-check.",
         "Draai opnieuw SSL/mail-checks; monitor queue.",
       ]),
-      tip(`Bij twijfel: ticket bij ${BRAND} — stuur geen malware-zips naar willekeurige inboxen.`),
+      tip(`Bij twijfel: ticket bij TripleZero iT — stuur geen malware-zips naar willekeurige inboxen.`),
       outro("Backups; brute-force; CHMOD."),
     ].join("\n"),
 
@@ -787,7 +787,7 @@ export const cyberpanelTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       ol([
         "Maak/gebruik een FTP-account in CyberPanel met juiste home (docroot).",
         "Genereer een SSH-key pair lokaal.",
-        "Plaats de public key volgens serverbeleid (authorized_keys) of vraag ${BRAND}.",
+        "Plaats de public key volgens serverbeleid (authorized_keys) of vraag TripleZero iT.",
         "Verbind met FileZilla/VS Code via SFTP (poort 22).",
       ]),
       tip("Schakel anonieme FTP nooit in; sluit poort 21 als je alleen SFTP gebruikt."),
@@ -865,7 +865,7 @@ export const cyberpanelTopicBuilders: Record<string, (ctx: Ctx) => string> = {
       h2("Hoe"),
       ol([
         "Gebruik de restart/reload-optie in CyberPanel indien aanwezig.",
-        "Of vraag ${BRAND} om graceful restart via ticket.",
+        "Of vraag TripleZero iT om graceful restart via ticket.",
         "Test homepage + panel URL daarna.",
       ]),
       warn("Hard kill van processen zonder graceful kan actieve requests afbreken."),
@@ -986,7 +986,7 @@ export const cyberpanelTopicBuilders: Record<string, (ctx: Ctx) => string> = {
         "Check resourcegebruik en logs op tijdstip.",
         "Test site vanaf ander netwerk/IP.",
         "Graceful OLS-restart indien veilig.",
-        "Ticket bij ${BRAND} met URL, tijdstip en foutcode.",
+        "Ticket bij TripleZero iT met URL, tijdstip en foutcode.",
       ]),
       outro("Panel-toegang; OLS herstarten; firewall; logs."),
     ].join("\n"),

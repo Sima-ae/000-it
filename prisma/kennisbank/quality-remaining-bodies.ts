@@ -24,7 +24,7 @@ function warn(t: string) {
 }
 function outro(related?: string) {
   return p(
-    `Kom je er na deze stappen niet uit? Open een ticket bij ${BRAND} via het klantenpanel. Vermeld product, domein of hostname, tijdstip en wat je al probeerde.`,
+    `Kom je er na deze stappen niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld product, domein of hostname, tijdstip en wat je al probeerde.`,
     related
       ? `Gerelateerd: ${related}.`
       : `Bekijk ook andere artikelen in deze kennisbank voor DNS, e-mail, hosting en beveiliging.`,
@@ -803,7 +803,7 @@ export const qualityRemainingExcerptsNl: Record<string, string> = {
 
 export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   "spf": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SPF-record voor je domeinnaam</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SPF-record voor je domeinnaam</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -816,7 +816,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "dmarc": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe kan ik een DMARC record toevoegen?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe kan ik een DMARC record toevoegen?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -829,7 +829,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "nl-control": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>.nl Control: jouw .nl domein beschermen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>.nl Control: jouw .nl domein beschermen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -842,7 +842,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "sidn": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>TripleZero iT is niet terug te vinden op website SIDN?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>TripleZero iT is niet terug te vinden op website SIDN?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -855,7 +855,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "multi-domain": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Kan ik meerdere domeinen koppelen aan dezelfde website?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Kan ik meerdere domeinen koppelen aan dezelfde website?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -868,7 +868,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "whois-privacy": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Anoniem domein registreren</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Anoniem domein registreren</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -881,7 +881,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "quarantine": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>.nl domein uit quarantaine halen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>.nl domein uit quarantaine halen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -894,7 +894,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "new-domain-dns": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mijn nieuwe domeinnaam werkt niet</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mijn nieuwe domeinnaam werkt niet</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -907,7 +907,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "meta-redirect": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe stel ik een forward / redirect in met meta tag?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe stel ik een forward / redirect in met meta tag?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -920,7 +920,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "domain-lock": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Waarom is mijn domein gelockt?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Waarom is mijn domein gelockt?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -933,7 +933,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "trustee": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wat is een trustee?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wat is een trustee?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -946,7 +946,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "cancel": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Abonnement of dienst opheffen / opzeggen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Abonnement of dienst opheffen / opzeggen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -959,7 +959,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "wpcom-domain": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe koppel ik een domein aan wordpress.com?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe koppel ik een domein aan wordpress.com?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -972,7 +972,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "auth-code": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wat is een autorisatiecode?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wat is een autorisatiecode?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -985,7 +985,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "dns-manage": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Waar kan ik DNS records beheren?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Waar kan ik DNS records beheren?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -998,7 +998,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "blogger-domain": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe koppel ik een domein aan Blogger?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe koppel ik een domein aan Blogger?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -1011,7 +1011,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "whois": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Beheren WHOIS gegevens domeinnaam</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Beheren WHOIS gegevens domeinnaam</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -1024,7 +1024,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "domain-propagation": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe lang duurt het voor mijn geregistreerde domein actief is?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe lang duurt het voor mijn geregistreerde domein actief is?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -1037,7 +1037,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "wp-down-update": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Website down na update WordPress?</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Website down na update WordPress?</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Sitelogin","Backup vóór migratie/update"]),
     h2("Stappen"),
@@ -1050,7 +1050,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "wpcom-to-org": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Ik wil overstappen van wordpress.com naar wordpress.org?</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Ik wil overstappen van wordpress.com naar wordpress.org?</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Sitelogin","Backup vóór migratie/update"]),
     h2("Stappen"),
@@ -1063,7 +1063,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "wp-comments-spam": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mijn comments worden als spam gezien</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mijn comments worden als spam gezien</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Sitelogin","Backup vóór migratie/update"]),
     h2("Stappen"),
@@ -1076,7 +1076,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "wpcom-email": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>E-mailadres op eigen domein bij wordpress.com</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>E-mailadres op eigen domein bij wordpress.com</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Sitelogin","Backup vóór migratie/update"]),
     h2("Stappen"),
@@ -1089,7 +1089,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "weebly-to-wp": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Overstappen van Weebly naar WordPress</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Overstappen van Weebly naar WordPress</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Sitelogin","Backup vóór migratie/update"]),
     h2("Stappen"),
@@ -1102,7 +1102,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "blog-own-domain": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Bloggen op eigen domein: WordPress en Blogger</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Bloggen op eigen domein: WordPress en Blogger</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Sitelogin","Backup vóór migratie/update"]),
     h2("Stappen"),
@@ -1115,7 +1115,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "webmail-compare": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Verschillen tussen Roundcube en Webmail Pro</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Verschillen tussen Roundcube en Webmail Pro</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -1128,7 +1128,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "unlimited": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Onbeperkte opslag en dataverkeer?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Onbeperkte opslag en dataverkeer?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -1141,7 +1141,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "object-cache": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Persistent object cache in WordPress</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Persistent object cache in WordPress</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -1154,7 +1154,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ssh": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Heb ik SSH toegang op mijn hosting?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Heb ik SSH toegang op mijn hosting?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -1167,7 +1167,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "package-resize": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hostingpakket verkleinen of vergroten</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hostingpakket verkleinen of vergroten</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -1180,7 +1180,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "migration": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Website of e-mail verhuizen? Regelen wij voor je!</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Website of e-mail verhuizen? Regelen wij voor je!</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -1193,7 +1193,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "robots-txt": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>robots.txt – waar is het voor en hoe maak je die?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>robots.txt – waar is het voor en hoe maak je die?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -1206,7 +1206,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "filezilla-list": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Ontvangen van mappenlijst is mislukt in FileZilla</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Ontvangen van mappenlijst is mislukt in FileZilla</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -1219,7 +1219,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "bots-bandwidth": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoge bandbreedte door bezoeken van bots, crawlers en spiders</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoge bandbreedte door bezoeken van bots, crawlers en spiders</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -1232,7 +1232,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "wp-storage": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoeveel opslag gebruikt je WordPress website?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoeveel opslag gebruikt je WordPress website?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -1245,7 +1245,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ftp-filezilla": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Bestanden uploaden, wijzigen of verwijderen met FTP / FileZilla</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Bestanden uploaden, wijzigen of verwijderen met FTP / FileZilla</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -1258,7 +1258,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "microsoft-blacklist": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Microsoft Blacklist</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Microsoft Blacklist</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1271,7 +1271,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "signature-webmailpro": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe voeg ik een handtekening toe in WebMail Pro?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe voeg ik een handtekening toe in WebMail Pro?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1284,7 +1284,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "filters-webmailpro": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Regels en filters aanmaken in WebMail Pro</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Regels en filters aanmaken in WebMail Pro</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1297,7 +1297,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "spamfilter-pro": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Aan de slag met Spamfilter Pro</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Aan de slag met Spamfilter Pro</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1310,7 +1310,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "email-android": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>E-mail instellen op Android</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>E-mail instellen op Android</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1323,7 +1323,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "email-outlook-mac": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>E-mail instellen in Outlook op Mac</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>E-mail instellen in Outlook op Mac</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1336,7 +1336,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "email-iphone": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>E-mail instellen op iPhone</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>E-mail instellen op iPhone</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1349,7 +1349,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "web-mail-send": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Waarom worden mails niet verstuurd vanuit de website?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Waarom worden mails niet verstuurd vanuit de website?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1362,7 +1362,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "bulk-mail": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Kan ik een mailing sturen naar een groot adressenbestand?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Kan ik een mailing sturen naar een groot adressenbestand?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1375,7 +1375,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "gmail-cert": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Gmail melding: the certificate doesn’t match the host</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Gmail melding: the certificate doesn’t match the host</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1388,7 +1388,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "email-macmail": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Instellen e-mail in Apple Mac Mail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Instellen e-mail in Apple Mac Mail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1401,7 +1401,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "backscatter": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Nieuwe maatregelen tegen backscatter spam</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Nieuwe maatregelen tegen backscatter spam</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1414,7 +1414,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "send-fail": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Ik kan e-mail ontvangen maar niet verzenden?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Ik kan e-mail ontvangen maar niet verzenden?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1427,7 +1427,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "email-outlook-win": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>E-mail instellen in Outlook voor Windows</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>E-mail instellen in Outlook voor Windows</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1440,7 +1440,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "spoofed-spam": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Spam vanaf je eigen e-mailadres?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Spam vanaf je eigen e-mailadres?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1453,7 +1453,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "webmail-access": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe kom ik bij mijn webmail?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe kom ik bij mijn webmail?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1466,7 +1466,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "email-missing": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mijn e-mail is weg of webmail is niet bereikbaar?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mijn e-mail is weg of webmail is niet bereikbaar?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1479,7 +1479,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "roundcube-delete": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Foutmelding bij berichten verwijderen in Roundcube</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Foutmelding bij berichten verwijderen in Roundcube</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1492,7 +1492,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "signature-roundcube": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Handtekening instellen in Roundcube webmail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Handtekening instellen in Roundcube webmail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1505,7 +1505,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "gmail-smtp": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>E-mail beheren en versturen met Gmail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>E-mail beheren en versturen met Gmail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1518,7 +1518,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "error-550": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Serverfout 550 bij versturen van e-mail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Serverfout 550 bij versturen van e-mail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1531,7 +1531,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "obfuscate-email": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Voorkom spam – versleutel e-mailadres op website</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Voorkom spam – versleutel e-mailadres op website</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1544,7 +1544,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "email-ipad": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>E-mail instellen op iPad</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>E-mail instellen op iPad</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1557,7 +1557,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ip-blocked": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>IP-adres geblokkeerd?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>IP-adres geblokkeerd?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1570,7 +1570,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "server-identity": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Serveridentiteit niet gecontroleerd bij e-mail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Serveridentiteit niet gecontroleerd bij e-mail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -1583,7 +1583,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "le-expire": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Lets Encrypt notificaties vervallen</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Lets Encrypt notificaties vervallen</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -1596,7 +1596,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "pgp": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>E-mail beveiligen met PGP encryptie</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>E-mail beveiligen met PGP encryptie</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -1609,7 +1609,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "wordfence-litespeed": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wordfence en LiteSpeed</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wordfence en LiteSpeed</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -1622,7 +1622,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "letsencrypt-plesk": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe installeer ik een gratis Let’s Encrypt SSL-certificaat in Plesk?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe installeer ik een gratis Let’s Encrypt SSL-certificaat in Plesk?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -1635,7 +1635,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "akismet": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Akismet – WordPress plugin tegen spam</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Akismet – WordPress plugin tegen spam</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -1648,7 +1648,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "2fa-crm": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Activeren 2FA klantenpanel</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Activeren 2FA klantenpanel</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -1661,7 +1661,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "server-security": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Jullie servers voorkomen dat mijn site gehackt wordt?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Jullie servers voorkomen dat mijn site gehackt wordt?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -1674,7 +1674,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "wp-maintenance": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Waarom WordPress onderhoud belangrijk is</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Waarom WordPress onderhoud belangrijk is</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -1687,7 +1687,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "wordfence-reinstall": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wordfence gecrasht – verwijderen – opnieuw installeren</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wordfence gecrasht – verwijderen – opnieuw installeren</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -1700,7 +1700,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "hacked-site": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mijn website is gehackt, kunnen jullie dat oplossen?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mijn website is gehackt, kunnen jullie dat oplossen?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -1713,7 +1713,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "wordfence-firewall": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>De Wordfence firewall instellen</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>De Wordfence firewall instellen</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -1726,7 +1726,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "backwpup": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Backup plugin voor WordPress: BackWPup</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Backup plugin voor WordPress: BackWPup</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -1739,7 +1739,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "protect-hacks": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Website beschermen tegen hacks</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Website beschermen tegen hacks</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -1752,7 +1752,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "xmlrpc": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wat is xmlrpc.php en hoe zet je XML-RPC uit?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wat is xmlrpc.php en hoe zet je XML-RPC uit?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -1765,7 +1765,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "dns-privacy": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Nieuwe DNS-service voor meer snelheid en privacy</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Nieuwe DNS-service voor meer snelheid en privacy</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -1778,7 +1778,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ssl-compare": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Verschil Let’s Encrypt en betaalde SSL certificaten?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Verschil Let’s Encrypt en betaalde SSL certificaten?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -1791,7 +1791,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "wordfence-guide": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WordPress beveiligen – Wordfence handleiding</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WordPress beveiligen – Wordfence handleiding</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -1804,7 +1804,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "lost-login": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Logingegevens van CRM of Klantenpanel kwijt?</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Logingegevens van CRM of Klantenpanel kwijt?</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -1817,7 +1817,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "crm-faq": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Meest gestelde vragen over het klantenpanel</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Meest gestelde vragen over het klantenpanel</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -1830,7 +1830,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "contact-form": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Contactformulier werkt niet meer?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Contactformulier werkt niet meer?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -1843,7 +1843,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "wp-media-large": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Grote bestanden in WordPress Media bibliotheek</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Grote bestanden in WordPress Media bibliotheek</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -1856,7 +1856,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "wp-updates": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WordPress onderhouds- en beveiligingsupdates</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WordPress onderhouds- en beveiligingsupdates</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -1869,7 +1869,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "wp-no-ads": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WordPress zonder reclame?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WordPress zonder reclame?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -1882,7 +1882,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "wp-requirements": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wat heb je nodig voor een WordPress website?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wat heb je nodig voor een WordPress website?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -1895,7 +1895,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "wp-dashboard-update": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WordPress updaten in WordPress dashboard</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WordPress updaten in WordPress dashboard</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -1908,7 +1908,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "viruses": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Virussen – Veilig Online</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Virussen – Veilig Online</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -1921,7 +1921,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "safe-internet": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Tips voor veilig internetten – Veilig Online</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Tips voor veilig internetten – Veilig Online</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -1934,7 +1934,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "public-wifi": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wat zijn de risico’s van een openbaar Wifi-Netwerk? – Veilig Online</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wat zijn de risico’s van een openbaar Wifi-Netwerk? – Veilig Online</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -1947,7 +1947,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "phishing": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe herken ik een phishing e-mail? – Veilig Online</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe herken ik een phishing e-mail? – Veilig Online</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -1960,7 +1960,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "social-engineering": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Social Engineering – Veilig Online</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Social Engineering – Veilig Online</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -1973,7 +1973,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "url-shortener": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Een eigen URL shortener – hoe doe ik dat?</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Een eigen URL shortener – hoe doe ik dat?</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -1986,7 +1986,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "support-backup": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mijn site doet het niet meer. Hebben jullie een backup?</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mijn site doet het niet meer. Hebben jullie een backup?</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein of VPS-hostname","Fouttekst/tijdstip","Wat je al probeerde"]),
     h2("Stappen"),
@@ -1999,7 +1999,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "teamviewer-mac": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe gebruik ik TeamViewer voor Mac</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe gebruik ik TeamViewer voor Mac</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein of VPS-hostname","Fouttekst/tijdstip","Wat je al probeerde"]),
     h2("Stappen"),
@@ -2012,7 +2012,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "teamviewer-win": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe gebruik ik TeamViewer voor Windows</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe gebruik ik TeamViewer voor Windows</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein of VPS-hostname","Fouttekst/tijdstip","Wat je al probeerde"]),
     h2("Stappen"),
@@ -2025,7 +2025,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "plesk-package": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Een hostingpakket aanmaken in Plesk als reseller</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Een hostingpakket aanmaken in Plesk als reseller</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Plesk-URL en login","Juiste subscription","Backup"]),
     h2("Stappen"),
@@ -2038,7 +2038,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "plesk-account": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Toevoegen account in Plesk onder resellerpakket</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Toevoegen account in Plesk onder resellerpakket</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Plesk-URL en login","Juiste subscription","Backup"]),
     h2("Stappen"),
@@ -2051,7 +2051,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "plesk-move": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Verplaatsen domein naar een ander account in Plesk</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Verplaatsen domein naar een ander account in Plesk</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Plesk-URL en login","Juiste subscription","Backup"]),
     h2("Stappen"),
@@ -2064,7 +2064,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-kies-ik-de-juiste-domeinnaam-voor-mijn-bedri": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe kies ik de juiste domeinnaam voor mijn bedrijf of project?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe kies ik de juiste domeinnaam voor mijn bedrijf of project?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -2077,7 +2077,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-verleng-ik-mijn-domeinnaam-en-wat-zijn-de-ko": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe verleng ik mijn domeinnaam en wat zijn de kosten?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe verleng ik mijn domeinnaam en wat zijn de kosten?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -2090,7 +2090,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-wijzig-ik-de-eigenaar-van-een-domeinnaam": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe wijzig ik de eigenaar van een domeinnaam?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe wijzig ik de eigenaar van een domeinnaam?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -2103,7 +2103,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-do": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wat is DNSSEC en hoe voeg ik het toe aan mijn domein?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wat is DNSSEC en hoe voeg ik het toe aan mijn domein?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -2116,7 +2116,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-verhuis-ik-mijn-domeinnaam-van-een-andere-pr": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe verhuis ik mijn domeinnaam van een andere provider naar TripleZero iT?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe verhuis ik mijn domeinnaam van een andere provider naar TripleZero iT?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -2129,7 +2129,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-stel-ik-een-cname-record-in-voor-mijn-domein": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe stel ik een CNAME-record in voor mijn domein?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe stel ik een CNAME-record in voor mijn domein?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -2142,7 +2142,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-stel-ik-een-a-record-in-voor-mijn-domein": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe stel ik een A-record in voor mijn domein?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe stel ik een A-record in voor mijn domein?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -2155,7 +2155,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-lang-blijft-mijn-domeinnaam-van-mij-na-het-v": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe lang blijft mijn domeinnaam van mij na het verlopen?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe lang blijft mijn domeinnaam van mij na het verlopen?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -2168,7 +2168,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-wat-zijn-nameservers-en-hoe-wijzig-ik-ze": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wat zijn nameservers en hoe wijzig ik ze?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wat zijn nameservers en hoe wijzig ik ze?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -2181,7 +2181,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-kan-ik-mijn-domeinnaam-beschermen-tegen-kapi": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe kan ik mijn domeinnaam beschermen tegen kaping?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe kan ik mijn domeinnaam beschermen tegen kaping?</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -2194,7 +2194,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-kies-ik-de-juiste-wordpress-hosting": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe kies ik de juiste WordPress hosting?</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe kies ik de juiste WordPress hosting?</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Sitelogin","Backup vóór migratie/update"]),
     h2("Stappen"),
@@ -2207,7 +2207,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-versnel-ik-mijn-wordpress-website": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe versnel ik mijn WordPress website?</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe versnel ik mijn WordPress website?</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Sitelogin","Backup vóór migratie/update"]),
     h2("Stappen"),
@@ -2220,7 +2220,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-maak-ik-een-back-up-van-mijn-wordpress-websi": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe maak ik een back-up van mijn WordPress website?</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe maak ik een back-up van mijn WordPress website?</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Sitelogin","Backup vóór migratie/update"]),
     h2("Stappen"),
@@ -2233,7 +2233,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-beveilig-ik-mijn-wordpress-website": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe beveilig ik mijn WordPress website?</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe beveilig ik mijn WordPress website?</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Sitelogin","Backup vóór migratie/update"]),
     h2("Stappen"),
@@ -2246,7 +2246,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-wat-is-het-verschil-tussen-wordpress-com-en-word": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wat is het verschil tussen WordPress.com en WordPress.org?</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wat is het verschil tussen WordPress.com en WordPress.org?</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Sitelogin","Backup vóór migratie/update"]),
     h2("Stappen"),
@@ -2259,7 +2259,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-verplaats-ik-mijn-wordpress-website-naar-tri": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe verplaats ik mijn WordPress website naar TripleZero iT?</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe verplaats ik mijn WordPress website naar TripleZero iT?</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Sitelogin","Backup vóór migratie/update"]),
     h2("Stappen"),
@@ -2272,7 +2272,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-voeg-ik-een-contactformulier-toe-aan-mijn-wo": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe voeg ik een contactformulier toe aan mijn WordPress site?</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe voeg ik een contactformulier toe aan mijn WordPress site?</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Sitelogin","Backup vóór migratie/update"]),
     h2("Stappen"),
@@ -2285,7 +2285,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-voeg-ik-een-webshop-toe-aan-mijn-wordpress-s": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe voeg ik een webshop toe aan mijn WordPress site? (WooCommerce)</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe voeg ik een webshop toe aan mijn WordPress site? (WooCommerce)</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Sitelogin","Backup vóór migratie/update"]),
     h2("Stappen"),
@@ -2298,7 +2298,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-optimaliseer-ik-mijn-wordpress-site-voor-seo": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe optimaliseer ik mijn WordPress site voor SEO?</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe optimaliseer ik mijn WordPress site voor SEO?</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Sitelogin","Backup vóór migratie/update"]),
     h2("Stappen"),
@@ -2311,7 +2311,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-voorkom-ik-dat-mijn-wordpress-website-wordt-": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe voorkom ik dat mijn WordPress website wordt gehackt?</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe voorkom ik dat mijn WordPress website wordt gehackt?</strong>. Je werkt in WordPress of blogplatform + hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Sitelogin","Backup vóór migratie/update"]),
     h2("Stappen"),
@@ -2324,7 +2324,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-kies-ik-het-juiste-hostingpakket": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe kies ik het juiste hostingpakket?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe kies ik het juiste hostingpakket?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -2337,7 +2337,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-maak-ik-een-back-up-van-mijn-hostingaccount": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe maak ik een back-up van mijn hostingaccount?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe maak ik een back-up van mijn hostingaccount?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -2350,7 +2350,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-verplaats-ik-mijn-website-naar-triplezero-it": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe verplaats ik mijn website naar TripleZero iT?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe verplaats ik mijn website naar TripleZero iT?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -2363,7 +2363,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-zorg-ik-voor-een-snelle-laadtijd-van-mijn-we": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe zorg ik voor een snelle laadtijd van mijn website?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe zorg ik voor een snelle laadtijd van mijn website?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -2376,7 +2376,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-bescherm-ik-mijn-website-tegen-ddos-aanvalle": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe bescherm ik mijn website tegen DDoS-aanvallen?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe bescherm ik mijn website tegen DDoS-aanvallen?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -2389,7 +2389,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-kies-ik-het-juiste-e-mailpakket": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe kies ik het juiste e-mailpakket?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe kies ik het juiste e-mailpakket?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -2402,7 +2402,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-stel-ik-een-e-mailalias-in": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe stel ik een e-mailalias in?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe stel ik een e-mailalias in?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -2415,7 +2415,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-archiveer-ik-mijn-e-mail-om-ruimte-vrij-te-m": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe archiveer ik mijn e-mail om ruimte vrij te maken?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe archiveer ik mijn e-mail om ruimte vrij te maken?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -2428,7 +2428,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-verstuur-ik-een-nieuwsbrief-via-triplezero-i": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe verstuur ik een nieuwsbrief via TripleZero iT?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe verstuur ik een nieuwsbrief via TripleZero iT?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -2441,7 +2441,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-stel-ik-tweefactorauthenticatie-2fa-in-voor-": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe stel ik tweefactorauthenticatie (2FA) in voor mijn e-mail?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe stel ik tweefactorauthenticatie (2FA) in voor mijn e-mail?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -2454,7 +2454,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-stel-ik-een-e-mailhandtekening-in-voor-alle-": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe stel ik een e-mailhandtekening in voor alle uitgaande berichten?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe stel ik een e-mailhandtekening in voor alle uitgaande berichten?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -2467,7 +2467,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-stel-ik-een-e-mail-in-op-een-samsung-telefoo": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe stel ik een e-mail in op een Samsung-telefoon?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe stel ik een e-mail in op een Samsung-telefoon?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -2480,7 +2480,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-los-ik-een-relay-not-permitted-fout-op": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe los ik een 'Relay not permitted' fout op?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe los ik een 'Relay not permitted' fout op?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -2493,7 +2493,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-voorkom-ik-dat-mijn-e-mail-in-de-spambox-bel": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe voorkom ik dat mijn e-mail in de spambox belandt?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe voorkom ik dat mijn e-mail in de spambox belandt?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -2506,7 +2506,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-maak-ik-een-groeps-e-mailadres-aan": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe maak ik een groeps-e-mailadres aan?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe maak ik een groeps-e-mailadres aan?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -2519,7 +2519,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-maak-ik-een-sterk-wachtwoord-en-bewaar-ik-he": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe maak ik een sterk wachtwoord en bewaar ik het veilig?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe maak ik een sterk wachtwoord en bewaar ik het veilig?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -2532,7 +2532,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-herken-ik-een-nep-website-en-voorkom-ik-phis": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe herken ik een nep website en voorkom ik phishing?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe herken ik een nep website en voorkom ik phishing?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -2545,7 +2545,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-herken-en-verwijder-ik-malware-van-mijn-webs": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe herken en verwijder ik malware van mijn website?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe herken en verwijder ik malware van mijn website?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -2558,7 +2558,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-beveilig-ik-mijn-mobiele-apparaten": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe beveilig ik mijn mobiele apparaten?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe beveilig ik mijn mobiele apparaten?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -2571,7 +2571,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-bescherm-ik-mijn-kinderen-online": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe bescherm ik mijn kinderen online?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe bescherm ik mijn kinderen online?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -2584,7 +2584,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-stel-ik-een-firewall-in-op-mijn-website-zond": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe stel ik een firewall in op mijn website (zonder plugin)?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe stel ik een firewall in op mijn website (zonder plugin)?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -2597,7 +2597,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-beveilig-ik-mijn-database-tegen-sql-injectie": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe beveilig ik mijn database tegen SQL-injecties?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe beveilig ik mijn database tegen SQL-injecties?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -2610,7 +2610,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-stel-ik-een-content-security-policy-csp-in": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe stel ik een Content Security Policy (CSP) in?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe stel ik een Content Security Policy (CSP) in?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -2623,7 +2623,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-houd-ik-mijn-plugins-en-thema-s-veilig-en-up": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe houd ik mijn plugins en thema's veilig en up-to-date?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe houd ik mijn plugins en thema's veilig en up-to-date?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -2636,7 +2636,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-zorg-ik-voor-een-veilige-verbinding-met-sftp": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe zorg ik voor een veilige verbinding met SFTP in plaats van FTP?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe zorg ik voor een veilige verbinding met SFTP in plaats van FTP?</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -2649,7 +2649,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-wat-is-het-klantenpanel-en-waarvoor-gebruik-ik-h": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wat is het klantenpanel en waarvoor gebruik ik het?</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wat is het klantenpanel en waarvoor gebruik ik het?</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -2662,7 +2662,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmeth": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe wijzig ik mijn factuurgegevens en betaalmethode?</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe wijzig ik mijn factuurgegevens en betaalmethode?</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -2675,7 +2675,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-betaal-ik-mijn-facturen-in-het-klantenpanel": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe betaal ik mijn facturen in het klantenpanel?</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe betaal ik mijn facturen in het klantenpanel?</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -2688,7 +2688,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-stel-ik-een-ticket-in-voor-support-via-het-k": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe stel ik een ticket in voor support via het klantenpanel?</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe stel ik een ticket in voor support via het klantenpanel?</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -2701,7 +2701,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-schakel-ik-tweefactorauthenticatie-2fa-in-vo": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe schakel ik tweefactorauthenticatie (2FA) in voor mijn klantenpanel?</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe schakel ik tweefactorauthenticatie (2FA) in voor mijn klantenpanel?</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -2714,7 +2714,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-wijzig-ik-mijn-wachtwoord-voor-het-klantenpa": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe wijzig ik mijn wachtwoord voor het klantenpanel?</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe wijzig ik mijn wachtwoord voor het klantenpanel?</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -2727,7 +2727,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-bekijk-en-download-ik-mijn-facturen-in-het-k": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe bekijk en download ik mijn facturen in het klantenpanel?</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe bekijk en download ik mijn facturen in het klantenpanel?</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -2740,7 +2740,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-voeg-ik-een-extra-gebruiker-toe-aan-mijn-kla": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe voeg ik een extra gebruiker toe aan mijn klantenpanel?</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe voeg ik een extra gebruiker toe aan mijn klantenpanel?</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -2753,7 +2753,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-kies-ik-het-juiste-wordpress-thema": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe kies ik het juiste WordPress-thema?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe kies ik het juiste WordPress-thema?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -2766,7 +2766,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-voeg-ik-een-google-analytics-trackingcode-to": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe voeg ik een Google Analytics-trackingcode toe aan WordPress?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe voeg ik een Google Analytics-trackingcode toe aan WordPress?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -2779,7 +2779,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-voeg-ik-een-menu-toe-in-wordpress": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe voeg ik een menu toe in WordPress?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe voeg ik een menu toe in WordPress?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -2792,7 +2792,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-voeg-ik-afbeeldingen-en-media-toe-in-wordpre": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe voeg ik afbeeldingen en media toe in WordPress?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe voeg ik afbeeldingen en media toe in WordPress?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -2805,7 +2805,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-voeg-ik-een-youtube-video-toe-in-wordpress": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe voeg ik een YouTube-video toe in WordPress?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe voeg ik een YouTube-video toe in WordPress?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -2818,7 +2818,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-maak-ik-een-wordpress-website-met-een-page-b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe maak ik een WordPress website met een page builder?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe maak ik een WordPress website met een page builder?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -2831,7 +2831,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wor": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe voeg ik een GDPR/AVG-cookiebanner toe in WordPress?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe voeg ik een GDPR/AVG-cookiebanner toe in WordPress?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -2844,7 +2844,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-maak-ik-een-wordpress-website-meertalig": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe maak ik een WordPress website meertalig?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe maak ik een WordPress website meertalig?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -2857,7 +2857,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-verplaats-ik-een-wordpress-website-van-een-s": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe verplaats ik een WordPress website van een staging-omgeving naar de live website?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe verplaats ik een WordPress website van een staging-omgeving naar de live website?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -2870,7 +2870,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-voeg-ik-een-webshop-toe-aan-wordpress-met-wo": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe voeg ik een webshop toe aan WordPress met WooCommerce?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe voeg ik een webshop toe aan WordPress met WooCommerce?</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -2883,7 +2883,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-waarom-is-het-belangrijk-om-veilig-online-te-zij": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Waarom is het belangrijk om Veilig Online te zijn?</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Waarom is het belangrijk om Veilig Online te zijn?</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -2896,7 +2896,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-bescherm-ik-mijn-online-accounts-tegen-hacke": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe bescherm ik mijn online accounts tegen hackers?</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe bescherm ik mijn online accounts tegen hackers?</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -2909,7 +2909,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-herken-en-voorkom-ik-een-malware-infectie": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe herken en voorkom ik een malware-infectie?</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe herken en voorkom ik een malware-infectie?</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -2922,7 +2922,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-bescherm-ik-mijn-gegevens-bij-een-datalek": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe bescherm ik mijn gegevens bij een datalek?</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe bescherm ik mijn gegevens bij een datalek?</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -2935,7 +2935,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-beveilig-ik-mijn-netwerk-en-router": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe beveilig ik mijn netwerk en router?</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe beveilig ik mijn netwerk en router?</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -2948,7 +2948,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-wat-is-social-engineering-en-hoe-bescherm-ik-me-": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wat is social engineering en hoe bescherm ik me ertegen?</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wat is social engineering en hoe bescherm ik me ertegen?</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -2961,7 +2961,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-stel-ik-een-sterk-wachtwoord-in-en-bewaar-ik": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe stel ik een sterk wachtwoord in en bewaar ik het veilig?</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe stel ik een sterk wachtwoord in en bewaar ik het veilig?</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -2974,7 +2974,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-gebruik-ik-een-vpn-voor-een-veilige-internet": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe gebruik ik een VPN voor een veilige internetverbinding?</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe gebruik ik een VPN voor een veilige internetverbinding?</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -2987,7 +2987,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-neem-ik-contact-op-met-de-support-van-triple": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe neem ik contact op met de support van TripleZero iT?</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe neem ik contact op met de support van TripleZero iT?</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein of VPS-hostname","Fouttekst/tijdstip","Wat je al probeerde"]),
     h2("Stappen"),
@@ -3000,7 +3000,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-maak-ik-een-support-ticket-aan-in-het-klante": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe maak ik een support ticket aan in het klantenpanel?</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe maak ik een support ticket aan in het klantenpanel?</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein of VPS-hostname","Fouttekst/tijdstip","Wat je al probeerde"]),
     h2("Stappen"),
@@ -3013,7 +3013,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-werkt-de-belafspraak-bij-triplezero-it-hosti": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe werkt de belafspraak bij TripleZero iT?</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe werkt de belafspraak bij TripleZero iT?</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein of VPS-hostname","Fouttekst/tijdstip","Wat je al probeerde"]),
     h2("Stappen"),
@@ -3026,7 +3026,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-m": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wat kan ik zelf doen voordat ik contact opneem met support?</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wat kan ik zelf doen voordat ik contact opneem met support?</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein of VPS-hostname","Fouttekst/tijdstip","Wat je al probeerde"]),
     h2("Stappen"),
@@ -3039,7 +3039,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-gebruik-ik-de-triplezero-it-hosting-app-voor": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe gebruik ik de TripleZero iT App voor support?</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe gebruik ik de TripleZero iT App voor support?</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein of VPS-hostname","Fouttekst/tijdstip","Wat je al probeerde"]),
     h2("Stappen"),
@@ -3052,7 +3052,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-werkt-de-samenwerking-met-teamviewer-voor-su": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe werkt de samenwerking met TeamViewer voor support?</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe werkt de samenwerking met TeamViewer voor support?</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein of VPS-hostname","Fouttekst/tijdstip","Wat je al probeerde"]),
     h2("Stappen"),
@@ -3065,7 +3065,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-kan-ik-mijn-supportvraag-het-beste-formulere": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe kan ik mijn supportvraag het beste formuleren?</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe kan ik mijn supportvraag het beste formuleren?</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein of VPS-hostname","Fouttekst/tijdstip","Wat je al probeerde"]),
     h2("Stappen"),
@@ -3078,7 +3078,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-wat-zijn-de-support-tijden-van-triplezero-it-hos": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wat zijn de support tijden van TripleZero iT?</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wat zijn de support tijden van TripleZero iT?</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein of VPS-hostname","Fouttekst/tijdstip","Wat je al probeerde"]),
     h2("Stappen"),
@@ -3091,7 +3091,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-worden-back-ups-gemaakt-en-hoe-vraag-ik-een-": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe worden back-ups gemaakt en hoe vraag ik een back-up aan?</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe worden back-ups gemaakt en hoe vraag ik een back-up aan?</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein of VPS-hostname","Fouttekst/tijdstip","Wat je al probeerde"]),
     h2("Stappen"),
@@ -3104,7 +3104,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-werkt-de-samenwerking-met-externe-specialist": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe werkt de samenwerking met externe specialisten?</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe werkt de samenwerking met externe specialisten?</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein of VPS-hostname","Fouttekst/tijdstip","Wat je al probeerde"]),
     h2("Stappen"),
@@ -3117,7 +3117,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-wat-is-plesk-en-hoe-log-ik-in": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wat is Plesk en hoe log ik in?</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wat is Plesk en hoe log ik in?</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Plesk-URL en login","Juiste subscription","Backup"]),
     h2("Stappen"),
@@ -3130,7 +3130,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-voeg-ik-een-domein-toe-in-plesk": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe voeg ik een domein toe in Plesk?</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe voeg ik een domein toe in Plesk?</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Plesk-URL en login","Juiste subscription","Backup"]),
     h2("Stappen"),
@@ -3143,7 +3143,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-maak-ik-een-e-mailaccount-aan-in-plesk": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe maak ik een e-mailaccount aan in Plesk?</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe maak ik een e-mailaccount aan in Plesk?</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Plesk-URL en login","Juiste subscription","Backup"]),
     h2("Stappen"),
@@ -3156,7 +3156,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-maak-ik-een-database-aan-in-plesk": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe maak ik een database aan in Plesk?</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe maak ik een database aan in Plesk?</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Plesk-URL en login","Juiste subscription","Backup"]),
     h2("Stappen"),
@@ -3169,7 +3169,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-installeer-ik-wordpress-in-plesk": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe installeer ik WordPress in Plesk?</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe installeer ik WordPress in Plesk?</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Plesk-URL en login","Juiste subscription","Backup"]),
     h2("Stappen"),
@@ -3182,7 +3182,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-maak-ik-een-back-up-van-mijn-website-in-ples": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe maak ik een back-up van mijn website in Plesk?</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe maak ik een back-up van mijn website in Plesk?</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Plesk-URL en login","Juiste subscription","Backup"]),
     h2("Stappen"),
@@ -3195,7 +3195,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-wijzig-ik-de-php-versie-in-plesk": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe wijzig ik de PHP-versie in Plesk?</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe wijzig ik de PHP-versie in Plesk?</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Plesk-URL en login","Juiste subscription","Backup"]),
     h2("Stappen"),
@@ -3208,7 +3208,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-beheer-ik-dns-records-in-plesk": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe beheer ik DNS-records in Plesk?</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe beheer ik DNS-records in Plesk?</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Plesk-URL en login","Juiste subscription","Backup"]),
     h2("Stappen"),
@@ -3221,7 +3221,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-beveilig-ik-mijn-website-in-plesk": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe beveilig ik mijn website in Plesk?</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe beveilig ik mijn website in Plesk?</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Plesk-URL en login","Juiste subscription","Backup"]),
     h2("Stappen"),
@@ -3234,7 +3234,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "ext-hoe-verplaats-ik-een-website-naar-een-ander-dome": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe verplaats ik een website naar een ander domein in Plesk?</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe verplaats ik een website naar een ander domein in Plesk?</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Plesk-URL en login","Juiste subscription","Backup"]),
     h2("Stappen"),
@@ -3247,7 +3247,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-iso-certificering": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>ISO Certificering</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>ISO Certificering</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein of VPS-hostname","Fouttekst/tijdstip","Wat je al probeerde"]),
     h2("Stappen"),
@@ -3260,7 +3260,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-herroepingsknop-instellen-in-webshop": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Herroepingsknop instellen in je webshop</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Herroepingsknop instellen in je webshop</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -3273,7 +3273,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-betalingen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Betalingen</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Betalingen</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -3286,7 +3286,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-linux-kwetsbaarheid-cve-2026-31431": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Linux‑kwetsbaarheid CVE‑2026‑31431</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Linux‑kwetsbaarheid CVE‑2026‑31431</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -3299,7 +3299,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-verhuizing-escaleren-nl-domeinnaam": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Verhuizing escaleren voor .nl-domeinnaam</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Verhuizing escaleren voor .nl-domeinnaam</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -3312,7 +3312,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-contactpersonen-webmail": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Contactpersonen webmail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Contactpersonen webmail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -3325,7 +3325,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-bijlage-toevoegen-in-de-webmail": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Bijlage toevoegen in de webmail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Bijlage toevoegen in de webmail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -3338,7 +3338,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-scammers-actief-met-nepmails": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Scammers actief met nepmails</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Scammers actief met nepmails</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -3351,7 +3351,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-migreren-naar-microsoft-365": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Migreren naar Microsoft 365</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Migreren naar Microsoft 365</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -3364,7 +3364,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-mail-als-bijlage-sturen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mail als bijlage sturen</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mail als bijlage sturen</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -3377,7 +3377,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-website-verhuizen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Website verhuizen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Website verhuizen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -3390,7 +3390,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-vps-starten-of-stoppen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>VPS starten of stoppen</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>VPS starten of stoppen</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -3403,7 +3403,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-security-alert-op-windows-servers": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Security alert op Windows servers</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Security alert op Windows servers</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -3416,7 +3416,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-bindings-toevoegen-op-een-windows-vpsbin-fefbe": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Bindings toevoegen op een Windows VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Bindings toevoegen op een Windows VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -3429,7 +3429,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-mssql-express-installeren-op-een-windows-server": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>MSSQL Express installeren op een Windows server</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>MSSQL Express installeren op een Windows server</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -3442,7 +3442,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-vps-updaten": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>VPS updaten</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>VPS updaten</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -3455,7 +3455,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-ssl-certificaat-aanvragen-op-windows-server": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SSL certificaat aanvragen op een Windows server</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SSL certificaat aanvragen op een Windows server</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -3468,7 +3468,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-wijziging-contactgegevens-nl-domeinnamen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wijziging contactgegevens .nl-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wijziging contactgegevens .nl-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -3481,7 +3481,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-local-presence-bij-domeinnamen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Local presence bij domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Local presence bij domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -3494,7 +3494,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-google-tag-manager": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Google Tag Manager</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Google Tag Manager</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -3507,7 +3507,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-microsoft-sql-server-databases": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Microsoft SQL Server Databases</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Microsoft SQL Server Databases</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -3520,7 +3520,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-screenshot-maken": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Screenshots maken</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Screenshots maken</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein of VPS-hostname","Fouttekst/tijdstip","Wat je al probeerde"]),
     h2("Stappen"),
@@ -3533,7 +3533,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-sha2-en-sslsha2-en-ssl-3612c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SHA2 en SSL</strong>. Je werkt in hostingpanel SSL of TripleZero SSL-product.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SHA2 en SSL</strong>. Je werkt in hostingpanel SSL of TripleZero SSL-product.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein met correcte DNS","Validatiemethode"]),
     h2("Stappen"),
@@ -3546,7 +3546,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-application-pool-en-site-aanmaken-op-je-024d1": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Application pool en site aanmaken op je VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Application pool en site aanmaken op je VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -3559,7 +3559,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-access-database-converteren-naar-microsoft-sql": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Access database converteren naar Microsoft SQL</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Access database converteren naar Microsoft SQL</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -3572,7 +3572,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-mailadres-toevoegen-aan-mailprogramma": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mailadres toevoegen aan mailprogramma</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mailadres toevoegen aan mailprogramma</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -3585,7 +3585,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-aan-de-slag-met-microsoft": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Aan de slag met Microsoft</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Aan de slag met Microsoft</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -3598,7 +3598,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-onedrive-installeren": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>OneDrive Installeren</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>OneDrive Installeren</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -3611,7 +3611,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-site-aanmaken-op-windows-vps": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Site aanmaken op Windows VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Site aanmaken op Windows VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -3624,7 +3624,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-aan-de-slag-exchange-online": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Aan de slag met Exchange Online</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Aan de slag met Exchange Online</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -3637,7 +3637,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-probleemoplossing-exchange-online": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Probleemoplossing Exchange Online</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Probleemoplossing Exchange Online</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -3650,7 +3650,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-resellers": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Resellers</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Resellers</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -3663,7 +3663,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-webshop-maken-in-websitebouwer": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Een webshop maken in de websitebouwer</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Een webshop maken in de websitebouwer</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -3676,7 +3676,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-bestandsrechten-aanpassen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Bestandsrechten aanpassen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Bestandsrechten aanpassen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -3689,7 +3689,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-recaptcha-instellen-op-je-website": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>reCAPTCHA instellen op je website</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>reCAPTCHA instellen op je website</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -3702,7 +3702,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-hotlink-protection": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hotlink Protection</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hotlink Protection</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -3715,7 +3715,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-logfiles-bekijken-in-plesk": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Logfiles bekijken in Plesk</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Logfiles bekijken in Plesk</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Plesk-URL en login","Juiste subscription","Backup"]),
     h2("Stappen"),
@@ -3728,7 +3728,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-website-laten-maken": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Website laten maken</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Website laten maken</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -3741,7 +3741,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-microsoft-365-tenant-importeren": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Microsoft 365 tenant importeren</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Microsoft 365 tenant importeren</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -3754,7 +3754,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-storing-oplossen-in-microsoft": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Storing oplossen in Microsoft</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Storing oplossen in Microsoft</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -3767,7 +3767,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-hoe-werkt-microsoft-teams": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe werkt Microsoft Teams</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe werkt Microsoft Teams</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -3780,7 +3780,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-hoe-stel-ik-een-favicon-in-voor-mijn-wordpress-website": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoe stel ik een favicon in voor mijn WordPress-website?</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoe stel ik een favicon in voor mijn WordPress-website?</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -3793,7 +3793,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-mijn-nieuwe-website-wordt-niet-getoond-wat-kan-ik-doen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mijn nieuwe website wordt niet getoond. Wat kan ik doen?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mijn nieuwe website wordt niet getoond. Wat kan ik doen?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -3806,7 +3806,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-brute-force-aanval-en-man-in-the-middle-aanval": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wat zijn een brute-force aanval en een man-in-the-middle aanval?</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wat zijn een brute-force aanval en een man-in-the-middle aanval?</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -3819,7 +3819,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-alles-over-ddos-aanvallen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Alles over DDoS-aanvallen</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Alles over DDoS-aanvallen</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -3832,7 +3832,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-website-offline-vanwege-verdachte-scripts-wat-nu": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Website offline vanwege verdachte scripts – wat nu?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Website offline vanwege verdachte scripts – wat nu?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -3845,7 +3845,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-website-gehackt-zo-herstel-je-jouw-website": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Website gehackt? Zo herstel je jouw website</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Website gehackt? Zo herstel je jouw website</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -3858,7 +3858,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-directory-aanmaken-op-een-windows-vpsdir-0c354": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Directory aanmaken op een Windows VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Directory aanmaken op een Windows VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -3871,7 +3871,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-gebruikers-aanmaken-op-een-windows-vpsge-72076": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Gebruikers aanmaken op een Windows VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Gebruikers aanmaken op een Windows VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -3884,7 +3884,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-vps-beheren-via-console": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>VPS beheren via console</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>VPS beheren via console</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -3897,7 +3897,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-iis-installeren-op-windows": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>IIS installeren op Windows</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>IIS installeren op Windows</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -3910,7 +3910,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-magento-2-installeren-op-een-vpsmagento-7d497": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Magento 2 installeren op een VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Magento 2 installeren op een VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -3923,7 +3923,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-cloudlinux-lve-manager": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>CloudLinux LVE Manager</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>CloudLinux LVE Manager</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -3936,7 +3936,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-domein-koppelen-aan-een-vpsdomein-koppel-3a75d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Domein koppelen aan een VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Domein koppelen aan een VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -3949,7 +3949,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-cloud-vps-opnieuw-installerencloud-vps-o-5316e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Cloud VPS opnieuw installeren</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Cloud VPS opnieuw installeren</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -3962,7 +3962,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-snapshot-maken-van-je-vps": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Snapshot maken van je VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Snapshot maken van je VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -3975,7 +3975,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-vps-service-management-beheren-in-plesk": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>VPS Service management beheren in Plesk</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>VPS Service management beheren in Plesk</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -3988,7 +3988,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-centos-vps-beveiligencentos-vps-beveilig-00a7c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>CentOS VPS beveiligen</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>CentOS VPS beveiligen</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4001,7 +4001,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-linux-vps-beveiligen-met-fail2banbeveili-c610b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Linux VPS beveiligen met Fail2Ban</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Linux VPS beveiligen met Fail2Ban</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4014,7 +4014,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-http-2-activeren-op-centos-7http-2-activ-97c0b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>HTTP/2 activeren op CentOS 7</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>HTTP/2 activeren op CentOS 7</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4027,7 +4027,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-private-network-aanmaken": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Private Network aanmaken</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Private Network aanmaken</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4040,7 +4040,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-reverse-dns-instellenreverse-dns-instell-93d03": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Reverse DNS instellen</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Reverse DNS instellen</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4053,7 +4053,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-rsa-keys-beheren": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>RSA keys beheren</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>RSA keys beheren</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4066,7 +4066,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-rdp-verbinding-maken-met-vpsrdp-verbindi-296dd": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>RDP verbinding maken met VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>RDP verbinding maken met VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4079,7 +4079,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-support-op-managed-vps": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Support op Managed VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Support op Managed VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4092,7 +4092,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-support-op-unmanaged-vps": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Support op Unmanaged VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Support op Unmanaged VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4105,7 +4105,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-plesk-updaten-op-je-vpsplesk-updaten-op-c4936": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Plesk updaten op je VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Plesk updaten op je VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4118,7 +4118,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-inloggen-op-een-managed-vps-bij-tripleze-865a8": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Inloggen op een managed VPS bij TripleZero iT</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Inloggen op een managed VPS bij TripleZero iT</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4131,7 +4131,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-webmail-applicatie-instellen-in-plesk": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Webmail applicatie instellen in Plesk</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Webmail applicatie instellen in Plesk</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4144,7 +4144,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-php-mail-versturen-vanaf-je-websitephp-m-aaec5": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>PHP-mail versturen vanaf je website</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>PHP-mail versturen vanaf je website</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4157,7 +4157,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-je-website-werkt-niet-dit-kun-je-zelf-controleren": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Je website werkt niet? Dit kun je zelf controleren</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Je website werkt niet? Dit kun je zelf controleren</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -4170,7 +4170,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-postmaster-mailadres": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Postmaster mailadres</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Postmaster mailadres</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4183,7 +4183,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-mailserver-configuratie-voor-plesk": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mailserver configuratie voor Plesk</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mailserver configuratie voor Plesk</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4196,7 +4196,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-mailaccount-geblokkeerd-vanwege-misbruik": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mailaccount geblokkeerd vanwege misbruik</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mailaccount geblokkeerd vanwege misbruik</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4209,7 +4209,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-return-path-voor-crm": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Return-path voor CRM</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Return-path voor CRM</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4222,7 +4222,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-eigen-error-of-404-pagina-instellen-voor-e16fe": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Eigen error of 404-pagina instellen voor je website</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Eigen error of 404-pagina instellen voor je website</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -4235,7 +4235,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-mail-backup-in-webmailmail-backup-in-web-e4ee7": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mail backup in webmail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mail backup in webmail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4248,7 +4248,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-403-forbidden-melding-op-je-website-oplo-cba75": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>403 Forbidden-melding op je website oplossen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>403 Forbidden-melding op je website oplossen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -4261,7 +4261,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-caldav-en-carddav-instellen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>CalDAV en CardDAV instellen</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>CalDAV en CardDAV instellen</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4274,7 +4274,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-submappen-in-je-webmail": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Submappen in je webmail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Submappen in je webmail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4287,7 +4287,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-handleiding-instellingen-beheren-in-websitebouwer": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Instellingen beheren in de websitebouwer</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Instellingen beheren in de websitebouwer</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -4300,7 +4300,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-verzonden-mails-niet-in-de-juiste-map": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Verzonden mails niet in de juiste map</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Verzonden mails niet in de juiste map</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4313,7 +4313,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-uurlimiet-uitgaande-mail": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Uurlimiet uitgaande mail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Uurlimiet uitgaande mail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4326,7 +4326,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-malware": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Malware</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Malware</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4339,7 +4339,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-bounce-berichten": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Bounce berichten</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Bounce berichten</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4352,7 +4352,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-mailberichten-met-een-winmail-dat-bestand": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mailberichten met een Winmail.dat bestand</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mailberichten met een Winmail.dat bestand</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4365,7 +4365,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-blacklistingblacklisting-e5ade": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Blacklisting</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Blacklisting</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4378,7 +4378,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-mail-extern-laten-afhandelen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mail extern laten afhandelen</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mail extern laten afhandelen</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4391,7 +4391,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-uitleg-over-spoofing": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Uitleg over spoofing</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Uitleg over spoofing</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4404,7 +4404,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-mail-als-eml-bestand-opslaan": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mail als .eml-bestand opslaan</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mail als .eml-bestand opslaan</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4417,7 +4417,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-ssl-certificaat-melding": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SSL certificaat melding</strong>. Je werkt in hostingpanel SSL of TripleZero SSL-product.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SSL certificaat melding</strong>. Je werkt in hostingpanel SSL of TripleZero SSL-product.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein met correcte DNS","Validatiemethode"]),
     h2("Stappen"),
@@ -4430,7 +4430,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-mailservice-uitschakelen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mailservice uitschakelen</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mailservice uitschakelen</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4443,7 +4443,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-mailinglijst-aanmaken": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mailinglijst aanmaken</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mailinglijst aanmaken</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4456,7 +4456,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-mail-verhuizen-via-plesk": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mail verhuizen via Plesk</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mail verhuizen via Plesk</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Plesk-URL en login","Juiste subscription","Backup"]),
     h2("Stappen"),
@@ -4469,7 +4469,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-postvak-is-vol": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Postvak is vol</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Postvak is vol</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4482,7 +4482,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-postvak-capaciteit-aanpassen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Postvak capaciteit aanpassen</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Postvak capaciteit aanpassen</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4495,7 +4495,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-handleiding-je-website-maken-met-websitebouwer": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Een website maken met de visuele editor</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Een website maken met de visuele editor</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -4508,7 +4508,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-wat-is-websitebouwer-van-triplezero-it": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wat is de visuele websitebouwer van TripleZero iT?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wat is de visuele websitebouwer van TripleZero iT?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -4521,7 +4521,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-e-mailheaders-opvragen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>E-mailheaders opvragen</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>E-mailheaders opvragen</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4534,7 +4534,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-voorkom-dat-mail-als-spam-wordt-gezien": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Voorkom dat mail als spam wordt gezien</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Voorkom dat mail als spam wordt gezien</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4547,7 +4547,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-mail-backup-in-thunderbirdmail-backup-in-a5da3": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mail backup in Thunderbird</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mail backup in Thunderbird</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4560,7 +4560,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-mail-backup-in-outlookmail-backup-in-out-13ec3": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mail backup in Outlook</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mail backup in Outlook</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4573,7 +4573,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-afzender-en-handtekening-in-je-mailprogramma": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Afzender en handtekening in je mailprogramma</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Afzender en handtekening in je mailprogramma</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4586,7 +4586,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-wordpress-toolkit": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WordPress Toolkit</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WordPress Toolkit</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4599,7 +4599,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-access-database-omzetten-naar-mysqlacces-cc496": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Access-database omzetten naar MySQL</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Access-database omzetten naar MySQL</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -4612,7 +4612,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-mail-versturen-met-asp": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mail versturen met ASP</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mail versturen met ASP</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -4625,7 +4625,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-web-platform-installer-voor-windows": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Web Platform Installer voor Windows</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Web Platform Installer voor Windows</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4638,7 +4638,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-hoofdmap-van-een-website-wijzigen-in-plesk": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hoofdmap van een website wijzigen in Plesk</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hoofdmap van een website wijzigen in Plesk</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Plesk-URL en login","Juiste subscription","Backup"]),
     h2("Stappen"),
@@ -4651,7 +4651,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-extra-gebruikers-aanmaken-in-wordpress": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Extra gebruikers aanmaken in WordPress</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Extra gebruikers aanmaken in WordPress</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4664,7 +4664,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-wordpress-permalinks": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WordPress permalinks</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WordPress permalinks</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4677,7 +4677,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-standaarddocumenten-instellen-op-een-server": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Standaarddocumenten instellen op een server</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Standaarddocumenten instellen op een server</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4690,7 +4690,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-script-installer": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Script Installer</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Script Installer</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -4703,7 +4703,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-website-apps": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Website Apps</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Website Apps</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -4716,7 +4716,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-web-config-configuratiebestanden": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Web.config configuratiebestanden</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Web.config configuratiebestanden</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4729,7 +4729,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-widgets-toevoegen-in-wordpress": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Widgets toevoegen in WordPress</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Widgets toevoegen in WordPress</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4742,7 +4742,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-wordpress-website-verhuizen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WordPress website verhuizen</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WordPress website verhuizen</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4755,7 +4755,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-website-maken-met-wordpress": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Website maken met WordPress</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Website maken met WordPress</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4768,7 +4768,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-inloggen-op-het-wordpress-dashboard": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Inloggen op het WordPress dashboard</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Inloggen op het WordPress dashboard</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4781,7 +4781,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-server-side-includes-gebruiken-bij-triplezero-it": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Server Side Includes (SSI) gebruiken</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Server Side Includes (SSI) gebruiken</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -4794,7 +4794,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-website-tijdelijk-offline-zetten": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Website tijdelijk offline zetten</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Website tijdelijk offline zetten</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -4807,7 +4807,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-asp-hosting": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>ASP Hosting</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>ASP Hosting</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -4820,7 +4820,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-handmatig-een-nieuwe-plesk-licentie-installeren": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Handmatig een nieuwe Plesk licentie installeren</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Handmatig een nieuwe Plesk licentie installeren</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -4833,7 +4833,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-een-phpinfo-bestand-makeneen-phpinfo-bes-3c032": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Een phpinfo bestand maken</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Een phpinfo bestand maken</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -4846,7 +4846,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-joomla-updaten": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Joomla updaten</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Joomla updaten</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -4859,7 +4859,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-een-website-maken-met-joomla": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Een website maken met Joomla</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Een website maken met Joomla</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -4872,7 +4872,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-mysql-database-probleemoplossingmysql-da-f2980": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>MySQL database probleemoplossing</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>MySQL database probleemoplossing</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -4885,7 +4885,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-mysql-databases-beheren-in-phpmyadminmys-e9ddc": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>MySQL databases beheren in PhpMyAdmin</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>MySQL databases beheren in PhpMyAdmin</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -4898,7 +4898,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-database-aanmakenmysql-database-aanmaken-f6761": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Database aanmaken</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Database aanmaken</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -4911,7 +4911,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-hsts-inschakelen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>HSTS inschakelen</strong>. Je werkt in hostingpanel SSL of TripleZero SSL-product.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>HSTS inschakelen</strong>. Je werkt in hostingpanel SSL of TripleZero SSL-product.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein met correcte DNS","Validatiemethode"]),
     h2("Stappen"),
@@ -4924,7 +4924,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-host-bestand-wijzigen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Host bestand wijzigen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Host bestand wijzigen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -4937,7 +4937,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-informatie-over-xxx-domeinnamen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Informatie over .xxx-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Informatie over .xxx-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -4950,7 +4950,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-alles-over-tv-domeinnamen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Alles over .tv-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Alles over .tv-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -4963,7 +4963,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-domeinen-als-reseller-verhuizen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Domeinen als reseller verhuizen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Domeinen als reseller verhuizen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -4976,7 +4976,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-domeinnamen-wijzigen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Domeinnamen wijzigen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Domeinnamen wijzigen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -4989,7 +4989,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-domeinhouders-beheren": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Domein houdergegevens beheren</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Domein houdergegevens beheren</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5002,7 +5002,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-alles-over-es-domeinnamen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Alles over .es-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Alles over .es-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5015,7 +5015,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-alles-over-eu-domeinnamen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Alles over .eu-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Alles over .eu-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5028,7 +5028,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-alles-over-info-domeinnamen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Alles over .info-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Alles over .info-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5041,7 +5041,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-alles-over-biz-domeinnamen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Alles over .biz-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Alles over .biz-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5054,7 +5054,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-alles-over-nu-domeinnamen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Alles over .nu-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Alles over .nu-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5067,7 +5067,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-alles-over-fr-domeinnamen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Alles over .fr-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Alles over .fr-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5080,7 +5080,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-alles-over-be-domeinnamen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Alles over .be-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Alles over .be-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5093,7 +5093,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-alles-over-de-domeinnamen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Alles over .de-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Alles over .de-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5106,7 +5106,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-alles-over-co-uk-domeinnamen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Alles over .co.uk-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Alles over .co.uk-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5119,7 +5119,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-alles-over-com-domeinnamen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Alles over .com-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Alles over .com-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5132,7 +5132,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-alles-over-nl-domeinnamen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Alles over .nl-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Alles over .nl-domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5145,7 +5145,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-een-co-uk-domeinnaam-verhuizen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Een .co.uk-domeinnaam verhuizen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Een .co.uk-domeinnaam verhuizen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5158,7 +5158,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-probleemoplossing-domeinnaam-verhuizen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Probleemoplossing domeinnaam verhuizen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Probleemoplossing domeinnaam verhuizen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5171,7 +5171,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-domeinnaam-koppelen-aan-een-pakket": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Domeinnaam koppelen aan een pakket</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Domeinnaam koppelen aan een pakket</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5184,7 +5184,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-domeinnaam-taxatie": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Domeinnaam taxatie</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Domeinnaam taxatie</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5197,7 +5197,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-caa-records": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>CAA records</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>CAA records</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5210,7 +5210,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-aaaa-records-ipv6": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>AAAA records (IPv6)</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>AAAA records (IPv6)</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5223,7 +5223,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-tlsa-records-beheren": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>TLSA records beheren</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>TLSA records beheren</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5236,7 +5236,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-soa-records": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SOA records</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SOA records</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5249,7 +5249,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-cname-records": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>CNAME records</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>CNAME records</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5262,7 +5262,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-srv-records": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SRV records</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SRV records</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5275,7 +5275,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-mx-records": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>MX records</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>MX records</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5288,7 +5288,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-a-records": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>A records</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>A records</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5301,7 +5301,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-nameservers-beheren": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Nameservers beheren</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Nameservers beheren</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5314,7 +5314,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-premium-dnspremium-dns-a8398": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Premium DNS</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Premium DNS</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5327,7 +5327,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-alles-over-dnssecalles-over-dnssec-077f2": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Alles over DNSSEC</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Alles over DNSSEC</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5340,7 +5340,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-extra-gebruiker-toevoegen-aan-je-klantomgeving": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Extra gebruiker toevoegen aan je klantomgeving</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Extra gebruiker toevoegen aan je klantomgeving</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -5353,7 +5353,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-automatische-incasso-mislukt": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Automatische incasso mislukt</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Automatische incasso mislukt</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -5366,7 +5366,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-downgraden": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Downgraden</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Downgraden</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -5379,7 +5379,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-producten-overdragen-naar-ander-account": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Producten overdragen naar ander account</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Producten overdragen naar ander account</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -5392,7 +5392,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-klantenpanel-functies-uitgelegd": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Functies van het klantenpanel uitgelegd</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Functies van het klantenpanel uitgelegd</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -5405,7 +5405,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-overzicht-producten-en-diensten": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Overzicht producten en diensten</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Overzicht producten en diensten</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -5418,7 +5418,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-geval-van-overlijden": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Geval van overlijden</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Geval van overlijden</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -5431,7 +5431,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-dubbele-betaling": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Dubbele betaling</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Dubbele betaling</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -5444,7 +5444,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-factuur-bij-het-incassobureau": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Factuur bij het incassobureau</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Factuur bij het incassobureau</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -5457,7 +5457,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-je-klantnummer-opzoeken": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Je klantnummer opzoeken</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Je klantnummer opzoeken</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -5470,7 +5470,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-klantaccount-activeren-in-klantenpanel": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Klantaccount activeren in het klantenpanel</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Klantaccount activeren in het klantenpanel</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -5483,7 +5483,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-wachtwoorden-veilig-versturen-met-pep": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wachtwoorden veilig versturen met PEP</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wachtwoorden veilig versturen met PEP</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -5496,7 +5496,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-automatische-incasso-instellen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Automatische incasso instellen</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Automatische incasso instellen</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -5509,7 +5509,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-mail-versturen-met-wordpress": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mail versturen met WordPress</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mail versturen met WordPress</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -5522,7 +5522,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-domeinnaam-verhuizen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Domeinnaam verhuizen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Domeinnaam verhuizen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5535,7 +5535,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-wordpress-smart-start-bij-triplezero-it": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WordPress snelstart bij TripleZero iT</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WordPress snelstart bij TripleZero iT</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -5548,7 +5548,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-webshop-toevoegen-aan-wordpress": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>je webshop toevoegen aan WordPress</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>je webshop toevoegen aan WordPress</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -5561,7 +5561,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-website-beveiligen-met-ssl": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Je website beveiligen met een SSL-certificaat</strong>. Je werkt in hostingpanel SSL of TripleZero SSL-product.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Je website beveiligen met een SSL-certificaat</strong>. Je werkt in hostingpanel SSL of TripleZero SSL-product.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein met correcte DNS","Validatiemethode"]),
     h2("Stappen"),
@@ -5574,7 +5574,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-internal-server-500-of-wit-scherm-oploss-272ae": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Internal Server 500 of wit scherm oplossen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Internal Server 500 of wit scherm oplossen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -5587,7 +5587,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-gedeelde-postvakken-toevoegen-in-microsoft-365": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Gedeelde postvakken toevoegen in Microsoft 365</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Gedeelde postvakken toevoegen in Microsoft 365</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -5600,7 +5600,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-wachtwoord-kopieren-uit-browser-of-tool": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wachtwoord kopiëren uit browser of tool</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wachtwoord kopiëren uit browser of tool</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -5613,7 +5613,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-ssl-bestellen-beheren": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SSL-certificaat bestellen en beheren via het klantenpanel</strong>. Je werkt in hostingpanel SSL of TripleZero SSL-product.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SSL-certificaat bestellen en beheren via het klantenpanel</strong>. Je werkt in hostingpanel SSL of TripleZero SSL-product.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein met correcte DNS","Validatiemethode"]),
     h2("Stappen"),
@@ -5626,7 +5626,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-root-wachtwoord-herstellen-vpsroot-wacht-6eed8": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Root wachtwoord herstellen VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Root wachtwoord herstellen VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -5639,7 +5639,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-microsoft-gebruikers-beheren": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Microsoft 365 gebruikers aanmaken en beheren</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Microsoft 365 gebruikers aanmaken en beheren</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -5652,7 +5652,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-onedrive-bij-triplezero-it": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Aan de slag met OneDrive</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Aan de slag met OneDrive</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -5665,7 +5665,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-klachtenprocedure": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Klachtenprocedure</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Klachtenprocedure</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein of VPS-hostname","Fouttekst/tijdstip","Wat je al probeerde"]),
     h2("Stappen"),
@@ -5678,7 +5678,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-alles-over-de-tel-domeinnaam": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Alles over de .tel-domeinnaam</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Alles over de .tel-domeinnaam</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5691,7 +5691,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-ssl-validatie": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SSL validatie door Certificate Signing Request</strong>. Je werkt in hostingpanel SSL of TripleZero SSL-product.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SSL validatie door Certificate Signing Request</strong>. Je werkt in hostingpanel SSL of TripleZero SSL-product.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein met correcte DNS","Validatiemethode"]),
     h2("Stappen"),
@@ -5704,7 +5704,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-ip-adressen-beheren-op-je-vpsip-adressen-f8342": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>IP-adressen beheren op je VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>IP-adressen beheren op je VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -5717,7 +5717,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-kwaliteitsgarantie": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Kwaliteitsgarantie</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Kwaliteitsgarantie</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein of VPS-hostname","Fouttekst/tijdstip","Wat je al probeerde"]),
     h2("Stappen"),
@@ -5730,7 +5730,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-probleemoplossing-novnc-console": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Probleemoplossing noVNC-console</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Probleemoplossing noVNC-console</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -5743,7 +5743,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-software-voor-de-applicatie-vps-triplezero-it": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Software voor een applicatie-VPS bij TripleZero iT</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Software voor een applicatie-VPS bij TripleZero iT</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -5756,7 +5756,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-een-managed-vps-beheren-bij-triplezero-i-a5c48": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Een managed VPS beheren bij TripleZero iT</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Een managed VPS beheren bij TripleZero iT</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -5769,7 +5769,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-cpu-cores-en-ram-voor-vpscpu-cores-en-ra-66ceb": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>CPU Cores en RAM voor VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>CPU Cores en RAM voor VPS</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -5782,7 +5782,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-vps-hosting": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>VPS hosting</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>VPS hosting</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -5795,7 +5795,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-dns-service-en-externe-domeinnamendns-se-36be0": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>DNS-service en externe domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>DNS-service en externe domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5808,7 +5808,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-domeinnaam-doorsturen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Domeinnaam doorsturen of doorlinken</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Domeinnaam doorsturen of doorlinken</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5821,7 +5821,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-domein-verhuizen-naar-een-andere-provider": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Domein verhuizen naar een andere provider</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Domein verhuizen naar een andere provider</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5834,7 +5834,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-domeinnaam-overdragen-via-je-klantomgeving": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Domeinnaam overdragen via je klantomgeving</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Domeinnaam overdragen via je klantomgeving</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5847,7 +5847,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-domeinnaam-probleemoplossing": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Domeinnaam probleemoplossing</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Domeinnaam probleemoplossing</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5860,7 +5860,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-domeinnaam-kopen-zonder-hosting": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Domeinnaam kopen zonder hosting</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Domeinnaam kopen zonder hosting</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5873,7 +5873,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-domeinnamen-bij-triplezero-it-verkopen-via-sedo": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Domeinnamen verkopen via Sedo</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Domeinnamen verkopen via Sedo</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5886,7 +5886,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-validatiemail-voor-topleveldomeinnamen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Validatiemail voor topleveldomeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Validatiemail voor topleveldomeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5899,7 +5899,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-domeinnaamregistratie": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Domeinnaamregistratie</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Domeinnaamregistratie</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5912,7 +5912,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-premium-domeinnamen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Premium domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Premium domeinnamen</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -5925,7 +5925,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-fraude-voorkomen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Fraude voorkomen</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Fraude voorkomen</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -5938,7 +5938,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-begrippenlijst": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Begrippenlijst</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Begrippenlijst</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein of VPS-hostname","Fouttekst/tijdstip","Wat je al probeerde"]),
     h2("Stappen"),
@@ -5951,7 +5951,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-probleemoplossing-mail": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Probleemoplossing e-mail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Probleemoplossing e-mail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -5964,7 +5964,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-uitgaande-e-mailserver-wijzigen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Uitgaande e-mailserver wijzigen</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Uitgaande e-mailserver wijzigen</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -5977,7 +5977,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-nieuw-e-mailwachtwoord-instellen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Nieuw e-mailwachtwoord instellen</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Nieuw e-mailwachtwoord instellen</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -5990,7 +5990,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-website-vindbaar-maken-in-google": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Website vindbaar maken in Google</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Website vindbaar maken in Google</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -6003,7 +6003,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-mappen-beveiligen-hostingpakket": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mappen beveiligen in een hostingpakket</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mappen beveiligen in een hostingpakket</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -6016,7 +6016,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-mail-instellen-in-thunderbird": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>E-mail instellen in Thunderbird</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>E-mail instellen in Thunderbird</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -6029,7 +6029,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-inloggen-op-je-klantomgeving": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Inloggen op je klantomgeving en wachtwoord wijzigen</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Inloggen op je klantomgeving en wachtwoord wijzigen</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -6042,7 +6042,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-mailadressen-en-postvakken-aanmaken": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mailadressen en postvakken aanmaken</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mailadressen en postvakken aanmaken</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -6055,7 +6055,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-backups-terugplaatsenbackups-terugplaats-9436e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Backups terugplaatsen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Backups terugplaatsen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -6068,7 +6068,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-betekenis-van-http-statuscodesbetekenis-4d28c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Betekenis van HTTP-statuscodes</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Betekenis van HTTP-statuscodes</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -6081,7 +6081,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-veilige-wachtwoorden-maken": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Veilige wachtwoorden maken</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Veilige wachtwoorden maken</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -6094,7 +6094,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-inloggen-op-je-mysql-databaseinloggen-op-cf638": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Inloggen op je MySQL database</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Inloggen op je MySQL database</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -6107,7 +6107,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-patchman": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Patchman</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Patchman</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -6120,7 +6120,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-beveiliging-en-privacy-microsoft-data": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Beveiliging en privacy voor je Microsoft data</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Beveiliging en privacy voor je Microsoft data</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -6133,7 +6133,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-domeinnaam-koppelen-aan-microsoft-365": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Domeinnaam koppelen aan Microsoft 365</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Domeinnaam koppelen aan Microsoft 365</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -6146,7 +6146,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-microsoft-365-mail-van-triplezero-it-toevoegen-in-outlook": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Microsoft 365 mail toevoegen in Outlook</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Microsoft 365 mail toevoegen in Outlook</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -6159,7 +6159,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-microsoft-365-mail-toevoegen-in-outlook-op-je-telefoon": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Microsoft 365 mail toevoegen in Outlook op je telefoon</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Microsoft 365 mail toevoegen in Outlook op je telefoon</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -6172,7 +6172,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-de-outlook-web-app-bij-triplezero-it": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>De Outlook Web App (OWA) gebruiken</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>De Outlook Web App (OWA) gebruiken</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -6185,7 +6185,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-imicrosoft-inloggen-wachtwoordbeheer": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Microsoft inloggen en wachtwoordbeheer</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Microsoft inloggen en wachtwoordbeheer</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -6198,7 +6198,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-faq-en-support-onedrive": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Veelgestelde vragen en support voor OneDrive</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Veelgestelde vragen en support voor OneDrive</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -6211,7 +6211,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-kopie-id-veilig-versturen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Kopie ID veilig versturen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Kopie ID veilig versturen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -6224,7 +6224,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-microsoft-onderdelen-uitgelegd": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Microsoft-onderdelen uitgelegd</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Microsoft-onderdelen uitgelegd</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -6237,7 +6237,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-gegevens-wijzigen-in-je-klantomgeving": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Gegevens wijzigen in je klantomgeving</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Gegevens wijzigen in je klantomgeving</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -6250,7 +6250,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-microsoft-licentie-bestellen-en-beheren": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Bestellen en beheren van je Microsoft-producten</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Bestellen en beheren van je Microsoft-producten</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -6263,7 +6263,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-producten-bestellen-in-je-klantomgeving": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Producten bestellen in je klantomgeving</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Producten bestellen in je klantomgeving</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -6276,7 +6276,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-wordpress-onderhouden-bij-triplezero-it": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WordPress onderhouden bij TripleZero iT</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WordPress onderhouden bij TripleZero iT</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -6289,7 +6289,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-website-statistieken": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Website statistieken</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Website statistieken</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -6302,7 +6302,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-informatie-over-wordpress": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Informatie over WordPress</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Informatie over WordPress</strong>. Je werkt in klantenpanel (VPS) + SSH/RDP/console.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["VPS-IP en credentials","Snapshot/backup","Onderhoudsvenster"]),
     h2("Stappen"),
@@ -6315,7 +6315,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-browsergeschiedenis-wissen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Browsergeschiedenis wissen</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Browsergeschiedenis wissen</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein of VPS-hostname","Fouttekst/tijdstip","Wat je al probeerde"]),
     h2("Stappen"),
@@ -6328,7 +6328,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-bestandsbeheer-in-plesk": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Bestandsbeheer in Plesk</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Bestandsbeheer in Plesk</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Plesk-URL en login","Juiste subscription","Backup"]),
     h2("Stappen"),
@@ -6341,7 +6341,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-upgraden": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Producten upgraden</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Producten upgraden</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -6354,7 +6354,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-privemodus-gebruiken": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Privémodus gebruiken</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Privémodus gebruiken</strong>. Je werkt in klantenpanel tickets / live chat / belafspraak.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein of VPS-hostname","Fouttekst/tijdstip","Wat je al probeerde"]),
     h2("Stappen"),
@@ -6367,7 +6367,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-website-backup-maken": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Website backup maken</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Website backup maken</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -6380,7 +6380,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-software-installeren-drupal-prestashop-joomla": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Software installeren (Drupal, Prestashop, Joomla)</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Software installeren (Drupal, Prestashop, Joomla)</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -6393,7 +6393,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-rw-gratis-ssl-certificaat-activeren-en-behe-44c5f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Gratis SSL-certificaat activeren en beheren</strong>. Je werkt in hostingpanel SSL of TripleZero SSL-product.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Gratis SSL-certificaat activeren en beheren</strong>. Je werkt in hostingpanel SSL of TripleZero SSL-product.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domein met correcte DNS","Validatiemethode"]),
     h2("Stappen"),
@@ -6406,7 +6406,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-gebruikers-beheren-in-plesk": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Gebruikers beheren in Plesk</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Gebruikers beheren in Plesk</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Plesk-URL en login","Juiste subscription","Backup"]),
     h2("Stappen"),
@@ -6419,7 +6419,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-acties-en-kortingen": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Acties en kortingen</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Acties en kortingen</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -6432,7 +6432,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "qr-overzicht-menu-items-in-plesk": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Overzicht menu items in Plesk</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Overzicht menu items in Plesk</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Plesk-URL en login","Juiste subscription","Backup"]),
     h2("Stappen"),
@@ -6445,7 +6445,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-woocommerce-catalogusstructuur-categorieen-911e5": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WooCommerce catalogusstructuur: categorieën en tags</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WooCommerce catalogusstructuur: categorieën en tags</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6458,7 +6458,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-productvariaties-en-attributen-correct-ins-d18b2": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Productvariaties en attributen correct instellen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Productvariaties en attributen correct instellen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6471,7 +6471,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-voorraadbeheer-en-backorders-cf952": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Voorraadbeheer en backorders</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Voorraadbeheer en backorders</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6484,7 +6484,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-checkout-velden-minimaliseren-055da": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Checkout-velden minimaliseren</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Checkout-velden minimaliseren</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6497,7 +6497,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-verzendzones-en-tarieven-in-nl-eu-b9854": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Verzendzones en tarieven in NL/EU</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Verzendzones en tarieven in NL/EU</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6510,7 +6510,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-belastingen-en-btw-instellingen-0afa1": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Belastingen en btw-instellingen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Belastingen en btw-instellingen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6523,7 +6523,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-woocommerce-e-mails-personaliseren-eead2": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WooCommerce e-mails personaliseren</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WooCommerce e-mails personaliseren</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6536,7 +6536,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-coupons-en-kortingsregels-zonder-chaos-a8217": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Coupons en kortingsregels zonder chaos</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Coupons en kortingsregels zonder chaos</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6549,7 +6549,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-gastcheckout-versus-accounts-7ae13": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Gastcheckout versus accounts</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Gastcheckout versus accounts</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6562,7 +6562,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-multisite-of-meerdere-shops-aandachtspunte-739b9": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Multisite of meerdere shops: aandachtspunten</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Multisite of meerdere shops: aandachtspunten</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6575,7 +6575,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-rest-api-van-woocommerce-beveiligen-6eb8d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>REST API van WooCommerce beveiligen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>REST API van WooCommerce beveiligen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6588,7 +6588,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-blocks-versus-classic-checkout-21aab": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Blocks versus classic checkout</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Blocks versus classic checkout</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6601,7 +6601,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-productgalerijen-en-zoom-performance-dbd0f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Productgalerijen en zoom performance</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Productgalerijen en zoom performance</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6614,7 +6614,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-abonnementen-en-terugkerende-betalingen-72711": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Abonnementen en terugkerende betalingen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Abonnementen en terugkerende betalingen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6627,7 +6627,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-migratie-van-magento-prestashop-naar-wooco-a2210": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Migratie van Magento/PrestaShop naar WooCommerce</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Migratie van Magento/PrestaShop naar WooCommerce</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6640,7 +6640,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-staging-shop-veilig-testen-met-echte-plugi-de097": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Staging-shop veilig testen met echte plugins</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Staging-shop veilig testen met echte plugins</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6653,7 +6653,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-mollie-koppelen-aan-woocommerce-dec74": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mollie koppelen aan WooCommerce</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mollie koppelen aan WooCommerce</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6666,7 +6666,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-ideal-als-standaard-betaalmethode-in-nl-fb712": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>iDEAL als standaard betaalmethode in NL</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>iDEAL als standaard betaalmethode in NL</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6679,7 +6679,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-creditcard-en-apple-pay-via-mollie-6f9b8": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Creditcard en Apple Pay via Mollie</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Creditcard en Apple Pay via Mollie</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6692,7 +6692,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-webhook-urls-en-statusupdates-controleren-6b39f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Webhook-URL’s en statusupdates controleren</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Webhook-URL’s en statusupdates controleren</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6705,7 +6705,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-terugbetalingen-en-chargebacks-afhandelen-46378": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Terugbetalingen en chargebacks afhandelen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Terugbetalingen en chargebacks afhandelen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6718,7 +6718,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-testmodus-versus-live-keys-92017": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Testmodus versus live keys</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Testmodus versus live keys</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6731,7 +6731,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-meerdere-websites-op-een-mollie-account-924aa": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Meerdere websites op één Mollie-account</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Meerdere websites op één Mollie-account</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6744,7 +6744,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-valutas-en-eu-klanten-3c33b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Valuta’s en EU-klanten</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Valuta’s en EU-klanten</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6757,7 +6757,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-foutmelding-betaling-mislukt-diagnose-c3f71": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Foutmelding ‘betaling mislukt’: diagnose</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Foutmelding ‘betaling mislukt’: diagnose</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6770,7 +6770,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-pci-scope-verkleinen-met-hosted-checkout-1bebc": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>PCI-scope verkleinen met hosted checkout</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>PCI-scope verkleinen met hosted checkout</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6783,7 +6783,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-facturen-en-betaalbewijzen-naar-klanten-48bd9": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Facturen en betaalbewijzen naar klanten</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Facturen en betaalbewijzen naar klanten</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6796,7 +6796,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-abonnementsbetalingen-via-mollie-5dd7f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Abonnementsbetalingen via Mollie</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Abonnementsbetalingen via Mollie</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6809,7 +6809,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-security-keys-nooit-in-de-frontend-64320": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Security: keys nooit in de frontend</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Security: keys nooit in de frontend</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6822,7 +6822,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-rapportages-aansluiten-op-boekhouding-6f55c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Rapportages aansluiten op boekhouding</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Rapportages aansluiten op boekhouding</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6835,7 +6835,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-3-d-secure-en-frauderegels-98c74": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>3-D Secure en frauderegels</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>3-D Secure en frauderegels</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6848,7 +6848,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-alternatieven-stripe-naast-mollie-03a71": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Alternatieven: Stripe naast Mollie</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Alternatieven: Stripe naast Mollie</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6861,7 +6861,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-productfeed-opzetten-voor-google-merchant-df00e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Productfeed opzetten voor Google Merchant</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Productfeed opzetten voor Google Merchant</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6874,7 +6874,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-titels-en-beschrijvingen-voor-product-seo-e367a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Titels en beschrijvingen voor product-SEO</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Titels en beschrijvingen voor product-SEO</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6887,7 +6887,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-gtin-mpn-en-merkvelden-verplicht-maken-7e82b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>GTIN, MPN en merkvelden verplicht maken</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>GTIN, MPN en merkvelden verplicht maken</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6900,7 +6900,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-afbeeldingen-in-feeds-eisen-en-valkuilen-d6855": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Afbeeldingen in feeds: eisen en valkuilen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Afbeeldingen in feeds: eisen en valkuilen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6913,7 +6913,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-voorraad-en-prijs-synchroon-houden-45eca": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Voorraad en prijs synchroon houden</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Voorraad en prijs synchroon houden</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6926,7 +6926,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-localized-feeds-voor-nl-en-en-02c88": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Localized feeds voor NL en EN</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Localized feeds voor NL en EN</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6939,7 +6939,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-structured-data-product-naast-de-feed-85880": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Structured data Product naast de feed</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Structured data Product naast de feed</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6952,7 +6952,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-categorie-mapping-naar-google-taxonomy-6ae80": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Categorie-mapping naar Google taxonomy</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Categorie-mapping naar Google taxonomy</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6965,7 +6965,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-feed-fouten-in-merchant-center-oplossen-65499": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Feed-fouten in Merchant Center oplossen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Feed-fouten in Merchant Center oplossen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6978,7 +6978,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-vergelijkingssites-en-affiliate-feeds-f7e10": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Vergelijkingssites en affiliate feeds</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Vergelijkingssites en affiliate feeds</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -6991,7 +6991,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-faceted-navigation-zonder-seo-schade-7c3ea": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Faceted navigation zonder SEO-schade</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Faceted navigation zonder SEO-schade</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7004,7 +7004,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-canonieke-urls-voor-productvarianten-cbce8": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Canonieke URL’s voor productvarianten</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Canonieke URL’s voor productvarianten</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7017,7 +7017,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-dunne-productpaginas-verrijken-129ee": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Dunne productpagina’s verrijken</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Dunne productpagina’s verrijken</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7030,7 +7030,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-schema-aggregateoffer-bij-prijsranges-4e2a7": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Schema AggregateOffer bij prijsranges</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Schema AggregateOffer bij prijsranges</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7043,7 +7043,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-performance-impact-van-feed-plugins-edd44": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Performance impact van feed-plugins</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Performance impact van feed-plugins</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7056,7 +7056,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-interne-links-van-categorie-naar-bestselle-64781": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Interne links van categorie naar bestsellers</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Interne links van categorie naar bestsellers</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7069,7 +7069,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-webshop-snelheid-database-queries-optimali-da451": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Webshop-snelheid: database queries optimaliseren</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Webshop-snelheid: database queries optimaliseren</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7082,7 +7082,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-object-caching-redis-voor-woocommerce-49b6b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Object caching (Redis) voor WooCommerce</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Object caching (Redis) voor WooCommerce</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7095,7 +7095,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-full-page-cache-en-cart-excepties-9070e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Full-page cache en cart-excepties</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Full-page cache en cart-excepties</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7108,7 +7108,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-afbeeldingen-en-productgalerijen-comprimer-930ed": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Afbeeldingen en productgalerijen comprimeren</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Afbeeldingen en productgalerijen comprimeren</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7121,7 +7121,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-onnodige-plugins-inventariseren-en-verwijd-7faa6": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Onnodige plugins inventariseren en verwijderen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Onnodige plugins inventariseren en verwijderen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7134,7 +7134,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-checkout-asynchroon-houden-260c6": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Checkout asynchroon houden</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Checkout asynchroon houden</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7147,7 +7147,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-cdn-voor-productmedia-3a452": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>CDN voor productmedia</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>CDN voor productmedia</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7160,7 +7160,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-php-workers-en-concurrency-bij-pieken-0cc38": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>PHP workers en concurrency bij pieken</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>PHP workers en concurrency bij pieken</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7173,7 +7173,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-search-en-filters-die-de-db-niet-platlegge-2a296": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Search en filters die de DB niet platleggen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Search en filters die de DB niet platleggen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7186,7 +7186,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-critical-path-css-voor-shop-templates-4acef": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Critical path CSS voor shop-templates</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Critical path CSS voor shop-templates</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7199,7 +7199,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-lazy-load-onder-de-vouw-producten-59623": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Lazy load onder-de-vouw producten</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Lazy load onder-de-vouw producten</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7212,7 +7212,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-staging-loadtesten-voor-campagnes-7d00f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Staging loadtesten voor campagnes</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Staging loadtesten voor campagnes</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7225,7 +7225,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-cart-fragments-en-ajax-overhead-795ca": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Cart fragments en AJAX overhead</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Cart fragments en AJAX overhead</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7238,7 +7238,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-hostingkeuze-shared-versus-vps-voor-shops-67243": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hostingkeuze: shared versus VPS voor shops</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hostingkeuze: shared versus VPS voor shops</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7251,7 +7251,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-monitoring-tijdens-black-friday-pieken-0cca6": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Monitoring tijdens Black Friday-pieken</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Monitoring tijdens Black Friday-pieken</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7264,7 +7264,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-query-monitor-gebruiken-zonder-productie-t-73cf7": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Query Monitor gebruiken zonder productie te vertragen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Query Monitor gebruiken zonder productie te vertragen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7277,7 +7277,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-webshop-hardening-admin-url-en-rechten-a68a4": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Webshop hardening: admin-URL en rechten</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Webshop hardening: admin-URL en rechten</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7290,7 +7290,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-2fa-voor-winkelbeheerders-f3e7d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>2FA voor winkelbeheerders</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>2FA voor winkelbeheerders</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7303,7 +7303,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-malware-scans-na-verdachte-orders-b083a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Malware-scans na verdachte orders</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Malware-scans na verdachte orders</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7316,7 +7316,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-brute-force-op-wp-login-beperken-918b4": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Brute-force op wp-login beperken</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Brute-force op wp-login beperken</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7329,7 +7329,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-file-permissions-en-uploads-directory-cdba9": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>File permissions en uploads directory</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>File permissions en uploads directory</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7342,7 +7342,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-fraudulent-orders-herkennen-bd826": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Fraudulent orders herkennen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Fraudulent orders herkennen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7355,7 +7355,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-security-headers-voor-checkout-paginas-a8a6a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Security headers voor checkout-pagina’s</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Security headers voor checkout-pagina’s</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7368,7 +7368,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-ssl-overal-forceren-inclusief-assets-64978": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SSL overal forceren inclusief assets</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SSL overal forceren inclusief assets</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7381,7 +7381,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-plugin-kwetsbaarheden-patchen-f431a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Plugin-kwetsbaarheden patchen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Plugin-kwetsbaarheden patchen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7394,7 +7394,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-waf-cloudflare-regels-voor-admin-paden-c4693": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WAF/Cloudflare regels voor admin-paden</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WAF/Cloudflare regels voor admin-paden</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7407,7 +7407,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-backups-voor-elke-shop-update-cf038": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Backups vóór elke shop-update</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Backups vóór elke shop-update</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7420,7 +7420,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-klantaccounts-wachtwoordbeleid-ad6e2": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Klantaccounts: wachtwoordbeleid</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Klantaccounts: wachtwoordbeleid</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7433,7 +7433,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-logins-van-developers-tijdelijk-maken-b7b6c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Logins van developers tijdelijk maken</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Logins van developers tijdelijk maken</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7446,7 +7446,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-pci-dss-awareness-voor-mkb-shops-bee9b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>PCI-DSS awareness voor MKB-shops</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>PCI-DSS awareness voor MKB-shops</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7459,7 +7459,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-incident-response-shop-offline-zetten-050ea": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Incident response: shop offline zetten</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Incident response: shop offline zetten</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7472,7 +7472,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-ec-audit-van-betaalplugins-en-webhooks-7f092": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Audit van betaalplugins en webhooks</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Audit van betaalplugins en webhooks</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -7485,7 +7485,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-ftp-filezilla-verbinden-met-je-hostingaccount-5996d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>FileZilla verbinden met je hostingaccount</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>FileZilla verbinden met je hostingaccount</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -7498,7 +7498,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-ftp-ftp-account-aanmaken-in-cyberpanel-af77c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>FTP-account aanmaken in CyberPanel</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>FTP-account aanmaken in CyberPanel</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -7511,7 +7511,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-ftp-sftp-gebruiken-in-plaats-van-plain-ftp-4d846": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SFTP gebruiken in plaats van plain FTP</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SFTP gebruiken in plaats van plain FTP</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -7524,7 +7524,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-ftp-bestandsrechten-chmod-veilig-instellen-ffc30": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Bestandsrechten (CHMOD) veilig instellen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Bestandsrechten (CHMOD) veilig instellen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -7537,7 +7537,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-ftp-grote-bestanden-uploaden-zonder-timeout-f7006": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Grote bestanden uploaden zonder timeout</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Grote bestanden uploaden zonder timeout</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -7550,7 +7550,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-ftp-verborgen-bestanden-htaccess-bewerken-via-a663e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Verborgen bestanden (.htaccess) bewerken via FTP</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Verborgen bestanden (.htaccess) bewerken via FTP</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -7563,7 +7563,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-ftp-ftp-toegang-intrekken-voor-oud-personeel-aafd9": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>FTP-toegang intrekken voor oud personeel</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>FTP-toegang intrekken voor oud personeel</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -7576,7 +7576,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-php-php-versie-wijzigen-per-domein-f6f84": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>PHP-versie wijzigen per domein</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>PHP-versie wijzigen per domein</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -7589,7 +7589,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-php-phpinfo-veilig-bekijken-en-weer-uitzetten-26dd3": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>phpinfo veilig bekijken en weer uitzetten</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>phpinfo veilig bekijken en weer uitzetten</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -7602,7 +7602,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-php-cronjob-toevoegen-voor-onderhoudsscripts-a9d60": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Cronjob toevoegen voor onderhoudsscripts</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Cronjob toevoegen voor onderhoudsscripts</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -7615,7 +7615,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-php-memory-limit-en-max-execution-time-verhoge-187ad": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>memory_limit en max_execution_time verhogen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>memory_limit en max_execution_time verhogen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -7628,7 +7628,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-php-installatron-applicatie-updaten-ae03e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Installatron: applicatie updaten</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Installatron: applicatie updaten</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -7641,7 +7641,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-php-php-fouten-in-error-log-vinden-7be7e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>PHP-fouten in error_log vinden</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>PHP-fouten in error_log vinden</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -7654,7 +7654,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-php-composer-op-shared-hosting-beperkingen-5040a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Composer op shared hosting: beperkingen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Composer op shared hosting: beperkingen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -7667,7 +7667,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-php-opcache-inschakelen-voor-snellere-php-5f6da": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Opcache inschakelen voor snellere PHP</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Opcache inschakelen voor snellere PHP</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -7680,7 +7680,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-disk-schijfruimte-vrijmaken-logs-en-backups-efc60": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Schijfruimte vrijmaken: logs en backups</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Schijfruimte vrijmaken: logs en backups</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -7693,7 +7693,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-disk-inode-limiet-bereikt-wat-nu-5a289": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Inode-limiet bereikt: wat nu?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Inode-limiet bereikt: wat nu?</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -7706,7 +7706,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-disk-dataverkeer-pieken-onderzoeken-bbaac": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Dataverkeer pieken onderzoeken</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Dataverkeer pieken onderzoeken</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -7719,7 +7719,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-disk-mailopslag-die-je-hosting-vol-laat-lopen-265b9": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mailopslag die je hosting vol laat lopen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mailopslag die je hosting vol laat lopen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -7732,7 +7732,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-disk-upgrade-naar-groter-hostingpakket-plannen-346a4": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Upgrade naar groter hostingpakket plannen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Upgrade naar groter hostingpakket plannen</strong>. Je werkt in DirectAdmin, CyberPanel of Plesk via TripleZero iT.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Hostinglogin","Domein","Recente backup bij risicovolle stappen"]),
     h2("Stappen"),
@@ -7745,7 +7745,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-xfer-domein-verhuizen-met-autorisatiecode-574df": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Domein verhuizen met autorisatiecode</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Domein verhuizen met autorisatiecode</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -7758,7 +7758,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-xfer-domeinlock-uitzetten-voor-transfer-26af4": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Domeinlock uitzetten vóór transfer</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Domeinlock uitzetten vóór transfer</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -7771,7 +7771,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-xfer-quarantaineperiode-na-nl-verhuizing-b2085": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Quarantaineperiode na .nl-verhuizing</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Quarantaineperiode na .nl-verhuizing</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -7784,7 +7784,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-xfer-dns-behouden-tijdens-domeinverhuizing-0fdde": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>DNS behouden tijdens domeinverhuizing</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>DNS behouden tijdens domeinverhuizing</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -7797,7 +7797,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-xfer-e-mail-draaiende-houden-tijdens-transfer-0159b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>E-mail draaiende houden tijdens transfer</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>E-mail draaiende houden tijdens transfer</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -7810,7 +7810,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-xfer-mislukte-transfer-veelvoorkomende-oorzaken-c2276": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mislukte transfer: veelvoorkomende oorzaken</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mislukte transfer: veelvoorkomende oorzaken</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -7823,7 +7823,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-xfer-domein-overdragen-naar-andere-houder-b4774": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Domein overdragen naar andere houder</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Domein overdragen naar andere houder</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -7836,7 +7836,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-dns-caa-record-toevoegen-voor-ssl-issuers-8084a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>CAA-record toevoegen voor SSL-issuers</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>CAA-record toevoegen voor SSL-issuers</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -7849,7 +7849,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-dns-srv-records-voor-microsoft-365-of-voip-e9a47": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SRV-records voor Microsoft 365 of VoIP</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SRV-records voor Microsoft 365 of VoIP</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -7862,7 +7862,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-dns-ttl-strategisch-verlagen-voor-migratie-a31b7": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>TTL strategisch verlagen vóór migratie</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>TTL strategisch verlagen vóór migratie</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -7875,7 +7875,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-dns-dnssec-inschakelen-en-ds-records-62dc7": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>DNSSEC inschakelen en DS-records</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>DNSSEC inschakelen en DS-records</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -7888,7 +7888,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-dns-split-horizon-dns-wanneer-relevant-1297a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Split-horizon DNS: wanneer relevant</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Split-horizon DNS: wanneer relevant</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -7901,7 +7901,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-ms-teams-gasttoegang-veilig-instellen-fbf36": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Teams gasttoegang veilig instellen</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Teams gasttoegang veilig instellen</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -7914,7 +7914,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-ms-teams-vergaderbeleid-en-lobby-75154": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Teams vergaderbeleid en lobby</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Teams vergaderbeleid en lobby</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -7927,7 +7927,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-ms-teams-bestanden-in-sharepoint-beheren-f85dc": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Teams bestanden in SharePoint beheren</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Teams bestanden in SharePoint beheren</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -7940,7 +7940,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-ms-conditional-access-basics-voor-m365-c9190": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Conditional Access basics voor M365</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Conditional Access basics voor M365</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -7953,7 +7953,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-ms-suspicious-sign-in-alerts-opvolgen-32ddb": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Suspicious sign-in alerts opvolgen</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Suspicious sign-in alerts opvolgen</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -7966,7 +7966,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-ms-adminrollen-minimaliseren-in-entra-id-2cce7": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Adminrollen minimaliseren in Entra ID</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Adminrollen minimaliseren in Entra ID</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -7979,7 +7979,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-ms-passkeys-en-wachtwoordloze-login-in-m365-e138f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Passkeys en wachtwoordloze login in M365</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Passkeys en wachtwoordloze login in M365</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -7992,7 +7992,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-ms-eenmalige-toegang-voor-externe-consultants-bcec7": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Eenmalige toegang voor externe consultants</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Eenmalige toegang voor externe consultants</strong>. Je werkt in Microsoft 365 admin center / Outlook / TripleZero klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Tenant- of mailboxlogin","DNS-toegang voor domein","Licentieoverzicht"]),
     h2("Stappen"),
@@ -8005,7 +8005,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-vo-basis-cyberhygiene-voor-ondernemers-bee4a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Basis cyberhygiëne voor ondernemers</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Basis cyberhygiëne voor ondernemers</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -8018,7 +8018,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-vo-phishing-herkennen-in-60-seconden-909ed": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Phishing herkennen in 60 seconden</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Phishing herkennen in 60 seconden</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -8031,7 +8031,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-vo-avg-dataminimalisatie-in-de-praktijk-b9567": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>AVG: dataminimalisatie in de praktijk</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>AVG: dataminimalisatie in de praktijk</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -8044,7 +8044,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-vo-verwerkersovereenkomsten-wanneer-nodig-617e1": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Verwerkersovereenkomsten: wanneer nodig</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Verwerkersovereenkomsten: wanneer nodig</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -8057,7 +8057,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-vo-vpn-kiezen-voor-openbare-wifi-4a017": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>VPN kiezen voor openbare wifi</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>VPN kiezen voor openbare wifi</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -8070,7 +8070,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-vo-thuisrouter-firmware-en-wachtwoord-7bf97": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Thuisrouter firmware en wachtwoord</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Thuisrouter firmware en wachtwoord</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -8083,7 +8083,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-vo-passkeys-uitleggen-aan-niet-technische-col-abb7a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Passkeys uitleggen aan niet-technische collega’s</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Passkeys uitleggen aan niet-technische collega’s</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -8096,7 +8096,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-vo-wachtwoordmanager-rollen-uit-in-een-klein-96c94": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wachtwoordmanager rollen uit in een klein team</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wachtwoordmanager rollen uit in een klein team</strong>. Je werkt in je apparaten, accounts en browser (educatief).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Apparaten die je gebruikt","Wachtwoordmanager indien beschikbaar"]),
     h2("Stappen"),
@@ -8109,7 +8109,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-scan-eerste-ai-scan-starten-wat-invullen-a9d6e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Eerste AI-scan starten: wat invullen</strong>. Je werkt in TripleZero iT AI-scan in het dashboard.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Eerste AI-scan starten: wat invullen</strong>. Je werkt in TripleZero iT AI-scan in het dashboard.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Ingelogd klantenpanel","URL om te scannen"]),
     h2("Stappen"),
@@ -8122,7 +8122,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-scan-ai-scan-historie-vergelijken-over-tijd-70eee": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>AI-scan historie vergelijken over tijd</strong>. Je werkt in TripleZero iT AI-scan in het dashboard.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>AI-scan historie vergelijken over tijd</strong>. Je werkt in TripleZero iT AI-scan in het dashboard.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Ingelogd klantenpanel","URL om te scannen"]),
     h2("Stappen"),
@@ -8135,7 +8135,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-scan-lage-technische-score-snelle-fixes-39f7f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Lage technische score: snelle fixes</strong>. Je werkt in TripleZero iT AI-scan in het dashboard.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Lage technische score: snelle fixes</strong>. Je werkt in TripleZero iT AI-scan in het dashboard.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Ingelogd klantenpanel","URL om te scannen"]),
     h2("Stappen"),
@@ -8148,7 +8148,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-scan-lage-content-score-verbeteren-50d64": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Lage content-score verbeteren</strong>. Je werkt in TripleZero iT AI-scan in het dashboard.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Lage content-score verbeteren</strong>. Je werkt in TripleZero iT AI-scan in het dashboard.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Ingelogd klantenpanel","URL om te scannen"]),
     h2("Stappen"),
@@ -8161,7 +8161,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-scan-van-scan-naar-aeo-geo-seo-traject-81cbf": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Van scan naar AEO/GEO/SEO-traject</strong>. Je werkt in TripleZero iT AI-scan in het dashboard.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Van scan naar AEO/GEO/SEO-traject</strong>. Je werkt in TripleZero iT AI-scan in het dashboard.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Ingelogd klantenpanel","URL om te scannen"]),
     h2("Stappen"),
@@ -8174,7 +8174,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-scan-scan-delen-met-je-marketingbureau-dc710": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Scan delen met je marketingbureau</strong>. Je werkt in TripleZero iT AI-scan in het dashboard.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Scan delen met je marketingbureau</strong>. Je werkt in TripleZero iT AI-scan in het dashboard.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Ingelogd klantenpanel","URL om te scannen"]),
     h2("Stappen"),
@@ -8187,7 +8187,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-ag-agentstatus-running-versus-paused-4e3da": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Agentstatus RUNNING versus PAUSED</strong>. Je werkt in TripleZero iT AI-agents in het dashboard.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Agentstatus RUNNING versus PAUSED</strong>. Je werkt in TripleZero iT AI-agents in het dashboard.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Actief pakket met agent-slots","Ingelogd dashboard"]),
     h2("Stappen"),
@@ -8200,7 +8200,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-ag-geen-agent-slot-beschikbaar-wat-nu-c2a0c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Geen agent-slot beschikbaar: wat nu</strong>. Je werkt in TripleZero iT AI-agents in het dashboard.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Geen agent-slot beschikbaar: wat nu</strong>. Je werkt in TripleZero iT AI-agents in het dashboard.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Actief pakket met agent-slots","Ingelogd dashboard"]),
     h2("Stappen"),
@@ -8213,7 +8213,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-ag-agent-levert-geen-output-checklist-fddfa": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Agent levert geen output: checklist</strong>. Je werkt in TripleZero iT AI-agents in het dashboard.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Agent levert geen output: checklist</strong>. Je werkt in TripleZero iT AI-agents in het dashboard.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Actief pakket met agent-slots","Ingelogd dashboard"]),
     h2("Stappen"),
@@ -8226,7 +8226,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-ag-meerdere-agenttypen-combineren-85e46": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Meerdere agenttypen combineren</strong>. Je werkt in TripleZero iT AI-agents in het dashboard.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Meerdere agenttypen combineren</strong>. Je werkt in TripleZero iT AI-agents in het dashboard.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Actief pakket met agent-slots","Ingelogd dashboard"]),
     h2("Stappen"),
@@ -8239,7 +8239,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-pl-plesk-reseller-klantabonnement-aanmaken-7a071": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Plesk reseller: klantabonnement aanmaken</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Plesk reseller: klantabonnement aanmaken</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Plesk-URL en login","Juiste subscription","Backup"]),
     h2("Stappen"),
@@ -8252,7 +8252,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-pl-plesk-reseller-white-label-merkinstellinge-4bd6b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Plesk reseller: white-label merkinstellingen</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Plesk reseller: white-label merkinstellingen</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Plesk-URL en login","Juiste subscription","Backup"]),
     h2("Stappen"),
@@ -8265,7 +8265,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-pl-plesk-ssl-via-lets-encrypt-vernieuwen-85282": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Plesk SSL via Let’s Encrypt vernieuwen</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Plesk SSL via Let’s Encrypt vernieuwen</strong>. Je werkt in Plesk (poort 8443).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Plesk-URL en login","Juiste subscription","Backup"]),
     h2("Stappen"),
@@ -8278,7 +8278,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-shop-hostingpakket-kiezen-checklist-41fe1": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hostingpakket kiezen: checklist</strong>. Je werkt in TripleZero iT shop / klantenpanel producten.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hostingpakket kiezen: checklist</strong>. Je werkt in TripleZero iT shop / klantenpanel producten.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Account","Huidig pakket"]),
     h2("Stappen"),
@@ -8291,7 +8291,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-shop-business-pakket-wat-zit-erin-da6cc": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Business-pakket: wat zit erin</strong>. Je werkt in TripleZero iT shop / klantenpanel producten.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Business-pakket: wat zit erin</strong>. Je werkt in TripleZero iT shop / klantenpanel producten.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Account","Huidig pakket"]),
     h2("Stappen"),
@@ -8304,7 +8304,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-shop-extra-growth-versus-business-vergelijken-b976b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Extra Growth versus Business vergelijken</strong>. Je werkt in TripleZero iT shop / klantenpanel producten.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Extra Growth versus Business vergelijken</strong>. Je werkt in TripleZero iT shop / klantenpanel producten.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Account","Huidig pakket"]),
     h2("Stappen"),
@@ -8317,7 +8317,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-crm-wachtwoord-vergeten-voor-klantenpanel-34c8b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wachtwoord vergeten voor klantenpanel</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wachtwoord vergeten voor klantenpanel</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -8330,7 +8330,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-crm-2fa-inschakelen-op-je-triplezero-account-48312": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>2FA inschakelen op je TripleZero-account</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>2FA inschakelen op je TripleZero-account</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -8343,7 +8343,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-crm-facturen-downloaden-en-btw-check-548f3": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Facturen downloaden en btw-check</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Facturen downloaden en btw-check</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -8356,7 +8356,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-wp-elementor-basispagina-bouwen-5622d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Elementor: basispagina bouwen</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Elementor: basispagina bouwen</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -8369,7 +8369,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-wp-elementor-en-caching-conflicten-vermijden-bb78f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Elementor en caching: conflicten vermijden</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Elementor en caching: conflicten vermijden</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -8382,7 +8382,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-wp-gutenberg-blokken-herbruikbaar-maken-8a151": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Gutenberg-blokken herbruikbaar maken</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Gutenberg-blokken herbruikbaar maken</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -8395,7 +8395,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-wp-wordpress-migreren-naar-triplezero-it-a211f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WordPress migreren naar TripleZero iT</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WordPress migreren naar TripleZero iT</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -8408,7 +8408,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-wp-search-replace-na-domeinwijziging-3121f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Search Replace na domeinwijziging</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Search Replace na domeinwijziging</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -8421,7 +8421,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-aeo-e-commerce-seo-categoriepaginas-53cba": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>E-commerce SEO: categoriepagina’s</strong>. Je werkt in website CMS + Search Console / AI-scan.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>E-commerce SEO: categoriepagina’s</strong>. Je werkt in website CMS + Search Console / AI-scan.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["CMS-toegang","Doelzoekwoorden/locatie"]),
     h2("Stappen"),
@@ -8434,7 +8434,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-aeo-productpaginas-schrijven-voor-aeo-95e71": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Productpagina’s schrijven voor AEO</strong>. Je werkt in website CMS + Search Console / AI-scan.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Productpagina’s schrijven voor AEO</strong>. Je werkt in website CMS + Search Console / AI-scan.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["CMS-toegang","Doelzoekwoorden/locatie"]),
     h2("Stappen"),
@@ -8447,7 +8447,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-aeo-lokale-landingspaginas-zonder-doorway-spam-7b892": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Lokale landingspagina’s zonder doorway-spam</strong>. Je werkt in website CMS + Search Console / AI-scan.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Lokale landingspagina’s zonder doorway-spam</strong>. Je werkt in website CMS + Search Console / AI-scan.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["CMS-toegang","Doelzoekwoorden/locatie"]),
     h2("Stappen"),
@@ -8460,7 +8460,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-th-aeo-answer-engine-voorbeelden-meten-in-de-prak-111b7": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Answer-engine voorbeelden meten in de praktijk</strong>. Je werkt in website CMS + Search Console / AI-scan.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Answer-engine voorbeelden meten in de praktijk</strong>. Je werkt in website CMS + Search Console / AI-scan.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["CMS-toegang","Doelzoekwoorden/locatie"]),
     h2("Stappen"),
@@ -8473,7 +8473,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-avg-checklist-voor-je-website-educatief-6e672": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>AVG-checklist voor je website (educatief)</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>AVG-checklist voor je website (educatief)</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8486,7 +8486,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-dataminimalisatie-in-formulieren-c5750": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Dataminimalisatie in formulieren</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Dataminimalisatie in formulieren</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8499,7 +8499,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-verwerkersovereenkomsten-wanneer-relevan-2d642": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Verwerkersovereenkomsten: wanneer relevant</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Verwerkersovereenkomsten: wanneer relevant</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8512,7 +8512,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-bewaartermijnen-voor-leads-en-logs-43d0d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Bewaartermijnen voor leads en logs</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Bewaartermijnen voor leads en logs</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8525,7 +8525,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-rechten-van-betrokkenen-inzage-en-verwij-289c1": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Rechten van betrokkenen: inzage en verwijdering</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Rechten van betrokkenen: inzage en verwijdering</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8538,7 +8538,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-dpia-wanneer-overwegen-hoog-niveau-fb46c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>DPIA: wanneer overwegen (hoog niveau)</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>DPIA: wanneer overwegen (hoog niveau)</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8551,7 +8551,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-hosting-buiten-de-eer-risicos-benoemen-bc0f8": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hosting buiten de EER: risico’s benoemen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hosting buiten de EER: risico’s benoemen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8564,7 +8564,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-logging-zonder-onnodige-persoonsgegevens-3aedc": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Logging zonder onnodige persoonsgegevens</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Logging zonder onnodige persoonsgegevens</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8577,7 +8577,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-toegang-tot-klantendata-least-privilege-6bc00": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Toegang tot klantendata: least privilege</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Toegang tot klantendata: least privilege</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8590,7 +8590,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-incidentmelding-procesklaar-maken-89923": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Incidentmelding: procesklaar maken</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Incidentmelding: procesklaar maken</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8603,7 +8603,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-nieuwsbrief-aantoonbare-toestemming-1ee88": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Nieuwsbrief: aantoonbare toestemming</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Nieuwsbrief: aantoonbare toestemming</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8616,7 +8616,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-analytics-zonder-cookies-waar-mogelijk-23e2b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Analytics zonder cookies waar mogelijk</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Analytics zonder cookies waar mogelijk</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8629,7 +8629,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-kindgerichte-sites-extra-aandachtspunten-d25fc": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Kindgerichte sites: extra aandachtspunten</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Kindgerichte sites: extra aandachtspunten</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8642,7 +8642,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-documenteer-je-verwerkingen-eenvoudig-15bfe": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Documenteer je verwerkingen eenvoudig</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Documenteer je verwerkingen eenvoudig</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8655,7 +8655,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-avg-checklist-voor-je-website-educatief-e1c2a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>AVG-checklist voor je website (educatief): checklist voor MKB</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>AVG-checklist voor je website (educatief): checklist voor MKB</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8668,7 +8668,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-dataminimalisatie-in-formulieren-veelgem-7486b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Dataminimalisatie in formulieren: veelgemaakte fouten</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Dataminimalisatie in formulieren: veelgemaakte fouten</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8681,7 +8681,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-wanneer-is-een-cookiebanner-verplicht-136e2": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wanneer is een cookiebanner verplicht?</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wanneer is een cookiebanner verplicht?</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8694,7 +8694,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-functionele-versus-tracking-cookies-647aa": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Functionele versus tracking cookies</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Functionele versus tracking cookies</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8707,7 +8707,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-consent-mode-v2-in-het-kort-5399a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Consent Mode v2 in het kort</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Consent Mode v2 in het kort</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8720,7 +8720,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-cookiebanner-die-ux-niet-sloopt-fb90e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Cookiebanner die UX niet sloopt</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Cookiebanner die UX niet sloopt</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8733,7 +8733,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-third-party-tags-pas-na-toestemming-0522d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Third-party tags pas ná toestemming</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Third-party tags pas ná toestemming</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8746,7 +8746,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-local-storage-en-consent-c040c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Local storage en consent</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Local storage en consent</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8759,7 +8759,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-cmp-kiezen-criteria-voor-mkb-36b21": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>CMP kiezen: criteria voor MKB</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>CMP kiezen: criteria voor MKB</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8772,7 +8772,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-server-side-tagging-en-privacy-8065c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Server-side tagging en privacy</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Server-side tagging en privacy</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8785,7 +8785,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-matomo-cookieless-meten-34405": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Matomo cookieless meten</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Matomo cookieless meten</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8798,7 +8798,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-google-fonts-self-hosten-om-requests-te-47e04": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Google fonts self-hosten om requests te vermijden</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Google fonts self-hosten om requests te vermijden</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8811,7 +8811,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-youtube-embeds-privacyvriendelijk-6339a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>YouTube embeds privacyvriendelijk</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>YouTube embeds privacyvriendelijk</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8824,7 +8824,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-a-b-tools-en-consent-eb063": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>A/B-tools en consent</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>A/B-tools en consent</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8837,7 +8837,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-jaarlijkse-cookie-audit-f5a9f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Jaarlijkse cookie-audit</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Jaarlijkse cookie-audit</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8850,7 +8850,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-documenteer-je-cookiedoelen-0e989": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Documenteer je cookiedoelen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Documenteer je cookiedoelen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8863,7 +8863,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-wanneer-is-een-cookiebanner-verplicht-ch-172f3": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Wanneer is een cookiebanner verplicht?: checklist voor MKB</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Wanneer is een cookiebanner verplicht?: checklist voor MKB</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8876,7 +8876,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-functionele-versus-tracking-cookies-veel-77908": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Functionele versus tracking cookies: veelgemaakte fouten</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Functionele versus tracking cookies: veelgemaakte fouten</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8889,7 +8889,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-herroepingsrecht-wat-je-duidelijk-moet-t-46ab7": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Herroepingsrecht: wat je duidelijk moet tonen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Herroepingsrecht: wat je duidelijk moet tonen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8902,7 +8902,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-prijsvermelding-en-btw-op-productpaginas-0223d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Prijsvermelding en BTW op productpagina’s</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Prijsvermelding en BTW op productpagina’s</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8915,7 +8915,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-bedrijfsgegevens-in-footer-en-impressum-b1373": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Bedrijfsgegevens in footer en impressum</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Bedrijfsgegevens in footer en impressum</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8928,7 +8928,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-betaalmethoden-en-consumentenvertrouwen-416b8": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Betaalmethoden en consumentenvertrouwen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Betaalmethoden en consumentenvertrouwen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8941,7 +8941,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-levertijden-realistisch-communiceren-cd63c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Levertijden realistisch communiceren</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Levertijden realistisch communiceren</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8954,7 +8954,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-klachtenafhandeling-online-shops-a30d0": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Klachtenafhandeling online shops</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Klachtenafhandeling online shops</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8967,7 +8967,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-productreviews-en-misleiding-vermijden-d380b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Productreviews en misleiding vermijden</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Productreviews en misleiding vermijden</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8980,7 +8980,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-digitale-producten-versus-fysieke-goeder-1b5d1": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Digitale producten versus fysieke goederen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Digitale producten versus fysieke goederen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -8993,7 +8993,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-geoblocking-binnen-de-eu-aandachtspunten-fefe2": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Geoblocking binnen de EU: aandachtspunten</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Geoblocking binnen de EU: aandachtspunten</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9006,7 +9006,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-duurzaamheidclaims-wees-concreet-b4d50": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Duurzaamheidclaims: wees concreet</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Duurzaamheidclaims: wees concreet</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9019,7 +9019,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-b2b-versus-b2c-checkout-verschillen-b2a6a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>B2B versus B2C checkout-verschillen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>B2B versus B2C checkout-verschillen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9032,7 +9032,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-voorwaarden-wijzigen-hoe-communiceer-je-c0d1b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Voorwaarden wijzigen: hoe communiceer je</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Voorwaarden wijzigen: hoe communiceer je</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9045,7 +9045,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-bewijs-van-bestelling-en-ordermails-366ec": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Bewijs van bestelling en ordermails</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Bewijs van bestelling en ordermails</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9058,7 +9058,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-acm-themas-volgen-zonder-paniek-a55d2": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>ACM-thema’s volgen zonder paniek</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>ACM-thema’s volgen zonder paniek</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9071,7 +9071,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-herroepingsrecht-wat-je-duidelijk-moet-t-e9b49": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Herroepingsrecht: wat je duidelijk moet tonen: checklist voor MKB</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Herroepingsrecht: wat je duidelijk moet tonen: checklist voor MKB</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9084,7 +9084,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-prijsvermelding-en-btw-op-productpaginas-9cc2e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Prijsvermelding en BTW op productpagina’s: veelgemaakte fouten</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Prijsvermelding en BTW op productpagina’s: veelgemaakte fouten</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9097,7 +9097,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-welke-juridische-paginas-hoort-een-site-90dcc": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Welke juridische pagina’s hoort een site te hebben?</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Welke juridische pagina’s hoort een site te hebben?</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9110,7 +9110,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-privacyverklaring-inhoudsopgave-die-klop-60b88": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Privacyverklaring: inhoudsopgave die klopt</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Privacyverklaring: inhoudsopgave die klopt</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9123,7 +9123,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-cookiebeleid-koppelen-aan-echte-tags-9d7ee": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Cookiebeleid koppelen aan echte tags</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Cookiebeleid koppelen aan echte tags</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9136,7 +9136,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-algemene-voorwaarden-scope-en-leesbaarhe-ef7a8": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Algemene voorwaarden: scope en leesbaarheid</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Algemene voorwaarden: scope en leesbaarheid</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9149,7 +9149,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-herroepingsformulier-vindbaar-maken-c0573": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Herroepingsformulier vindbaar maken</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Herroepingsformulier vindbaar maken</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9162,7 +9162,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-disclaimer-wat-wel-en-niet-zinvol-is-afdd2": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Disclaimer: wat wel en niet zinvol is</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Disclaimer: wat wel en niet zinvol is</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9175,7 +9175,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-accessibiliteitsverklaring-waar-relevant-51262": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Accessibiliteitsverklaring (waar relevant)</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Accessibiliteitsverklaring (waar relevant)</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9188,7 +9188,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-meertalige-juridische-teksten-consistent-49f49": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Meertalige juridische teksten consistent houden</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Meertalige juridische teksten consistent houden</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9201,7 +9201,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-versiebeheer-van-voorwaarden-c717f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Versiebeheer van voorwaarden</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Versiebeheer van voorwaarden</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9214,7 +9214,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-links-vanuit-checkout-naar-voorwaarden-fb724": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Links vanuit checkout naar voorwaarden</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Links vanuit checkout naar voorwaarden</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9227,7 +9227,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-geen-copy-paste-van-concurrenten-1f2f8": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Geen copy-paste van concurrenten</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Geen copy-paste van concurrenten</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9240,7 +9240,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-juridische-review-wanneer-inschakelen-e0236": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Juridische review: wanneer inschakelen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Juridische review: wanneer inschakelen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9253,7 +9253,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-contactgegevens-consistent-met-kvk-991b9": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Contactgegevens consistent met KvK</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Contactgegevens consistent met KvK</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9266,7 +9266,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-pdf-downloads-van-voorwaarden-dfbc0": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>PDF-downloads van voorwaarden</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>PDF-downloads van voorwaarden</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9279,7 +9279,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-welke-juridische-paginas-hoort-een-site-63f90": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Welke juridische pagina’s hoort een site te hebben?: checklist voor MKB</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Welke juridische pagina’s hoort een site te hebben?: checklist voor MKB</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9292,7 +9292,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-privacyverklaring-inhoudsopgave-die-klop-3d6bf": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Privacyverklaring: inhoudsopgave die klopt: veelgemaakte fouten</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Privacyverklaring: inhoudsopgave die klopt: veelgemaakte fouten</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9305,7 +9305,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-europese-analytics-alternatieven-overweg-1545d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Europese analytics-alternatieven overwegen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Europese analytics-alternatieven overwegen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9318,7 +9318,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-e-mailproviders-en-datalocatie-b0fad": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>E-mailproviders en datalocatie</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>E-mailproviders en datalocatie</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9331,7 +9331,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-cloud-act-wat-mkb-moet-snappen-ad84e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>CLOUD Act: wat MKB moet snappen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>CLOUD Act: wat MKB moet snappen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9344,7 +9344,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-vendor-lock-in-verminderen-5cb05": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Vendor lock-in verminderen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Vendor lock-in verminderen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9357,7 +9357,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-self-host-matomo-op-je-vps-f6c90": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Self-host Matomo op je VPS</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Self-host Matomo op je VPS</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9370,7 +9370,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-fonts-en-cdns-binnen-eu-keuzes-4e258": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Fonts en CDN’s binnen EU-keuzes</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Fonts en CDN’s binnen EU-keuzes</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9383,7 +9383,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-ai-tools-en-bedrijfsgeheimen-ebb68": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>AI-tools en bedrijfsgeheimen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>AI-tools en bedrijfsgeheimen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9396,7 +9396,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-exit-strategie-bij-saas-leveranciers-ab99e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Exit-strategie bij SaaS-leveranciers</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Exit-strategie bij SaaS-leveranciers</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9409,7 +9409,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-open-source-stacks-voor-soevereiniteit-429bf": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Open-source stacks voor soevereiniteit</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Open-source stacks voor soevereiniteit</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9422,7 +9422,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-dns-en-registrar-spreid-risicos-dd5ba": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>DNS en registrar: spreid risico’s</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>DNS en registrar: spreid risico’s</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9435,7 +9435,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-backup-bij-een-tweede-provider-8a6eb": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Backup bij een tweede provider</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Backup bij een tweede provider</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9448,7 +9448,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-contractuele-datalocatie-eisen-6fd9d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Contractuele datalocatie-eisen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Contractuele datalocatie-eisen</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9461,7 +9461,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-transparantie-naar-klanten-over-tooling-20d89": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Transparantie naar klanten over tooling</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Transparantie naar klanten over tooling</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9474,7 +9474,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-roadmap-eerst-meten-dan-migreren-22e16": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Roadmap: eerst meten, dan migreren</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Roadmap: eerst meten, dan migreren</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9487,7 +9487,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-europese-analytics-alternatieven-overweg-36a9c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Europese analytics-alternatieven overwegen: checklist voor MKB</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Europese analytics-alternatieven overwegen: checklist voor MKB</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9500,7 +9500,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-priv-e-mailproviders-en-datalocatie-veelgemaa-81ea0": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>E-mailproviders en datalocatie: veelgemaakte fouten</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>E-mailproviders en datalocatie: veelgemaakte fouten</strong>. Je werkt in website + documentatie (educatief, geen juridisch advies).`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Overzicht van formulieren/tools die persoonsgegevens verwerken","Huidige privacy-/cookieteksten"]),
     h2("Stappen"),
@@ -9513,7 +9513,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-mail-bimi-dns-records-toevoegen-voor-je-merkl-deae5": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>BIMI DNS-records toevoegen voor je merklogo in mail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>BIMI DNS-records toevoegen voor je merklogo in mail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -9526,7 +9526,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-mail-arc-begrijpen-bij-doorgestuurde-mail-646f3": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>ARC begrijpen bij doorgestuurde mail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>ARC begrijpen bij doorgestuurde mail</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -9539,7 +9539,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-mail-spf-flattening-wanneer-je-de-lookup-limi-0c4bd": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SPF flattening wanneer je de lookup-limiet raakt</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SPF flattening wanneer je de lookup-limiet raakt</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -9552,7 +9552,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-mail-dmarc-aggregate-reports-rua-lezen-368ae": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>DMARC aggregate reports (RUA) lezen</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>DMARC aggregate reports (RUA) lezen</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -9565,7 +9565,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-mail-dmarc-failure-reports-ruf-veilig-gebruik-ec903": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>DMARC failure reports (RUF) veilig gebruiken</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>DMARC failure reports (RUF) veilig gebruiken</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -9578,7 +9578,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-mail-greylisting-vertraging-of-spamfilter-836b1": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Greylisting: vertraging of spamfilter?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Greylisting: vertraging of spamfilter?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -9591,7 +9591,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-mail-smtp-587-submission-correct-instellen-1da11": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SMTP 587 submission correct instellen</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SMTP 587 submission correct instellen</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -9604,7 +9604,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-mail-poort-25-outbound-geblokkeerd-wat-nu-2f6ab": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Poort 25 outbound geblokkeerd: wat nu?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Poort 25 outbound geblokkeerd: wat nu?</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -9617,7 +9617,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-mail-gmail-koppelen-als-client-aan-je-hosting-3b193": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Gmail koppelen als client aan je hostingmailbox</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Gmail koppelen als client aan je hostingmailbox</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -9630,7 +9630,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-mail-imap-mailbox-migreren-zonder-mailverlies-02d5c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>IMAP-mailbox migreren zonder mailverlies</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>IMAP-mailbox migreren zonder mailverlies</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -9643,7 +9643,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-mail-alias-versus-forward-versus-catch-all-5da34": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Alias versus forward versus catch-all</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Alias versus forward versus catch-all</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -9656,7 +9656,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-mail-webmail-zoekindex-en-filters-die-mail-ve-9c145": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Webmail zoekindex en filters die mail verbergen</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Webmail zoekindex en filters die mail verbergen</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -9669,7 +9669,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-mail-autodiscover-records-controleren-f350c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Autodiscover records controleren</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Autodiscover records controleren</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -9682,7 +9682,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-mail-outbound-rate-limiting-bij-gedeelde-ips-b33b1": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Outbound rate limiting bij gedeelde IP’s</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Outbound rate limiting bij gedeelde IP’s</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -9695,7 +9695,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-mail-shared-mailbox-in-roundcube-of-outlook-47fa3": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Shared mailbox in Roundcube of Outlook</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Shared mailbox in Roundcube of Outlook</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -9708,7 +9708,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-mail-caldav-carddav-conceptueel-naast-imap-b87b8": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>CalDAV/CardDAV conceptueel naast IMAP</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>CalDAV/CardDAV conceptueel naast IMAP</strong>. Je werkt in webmail, DirectAdmin/CyberPanel/Plesk e-mail of Microsoft 365.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Mailboxadres en wachtwoord","Toegang tot DNS of control panel indien nodig","Apparaat of client die je wilt instellen"]),
     h2("Stappen"),
@@ -9721,7 +9721,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-wp-wp-cli-wordpress-beheren-via-de-terminal-8af0d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WP-CLI: WordPress beheren via de terminal</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WP-CLI: WordPress beheren via de terminal</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -9734,7 +9734,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-wp-wordpress-org-versus-wordpress-com-1e335": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WordPress.org versus WordPress.com</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WordPress.org versus WordPress.com</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -9747,7 +9747,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-wp-excerpts-instellen-voor-seo-en-overzicht-e644a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Excerpts instellen voor SEO en overzichten</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Excerpts instellen voor SEO en overzichten</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -9760,7 +9760,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-wp-permalinks-veilig-wijzigen-zonder-404-ch-9cccb": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Permalinks veilig wijzigen zonder 404-chaos</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Permalinks veilig wijzigen zonder 404-chaos</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -9773,7 +9773,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-wp-gravity-forms-basisformulier-en-notifica-70f93": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Gravity Forms: basisformulier en notificaties</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Gravity Forms: basisformulier en notificaties</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -9786,7 +9786,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-wp-staging-naar-live-checklist-zonder-datav-eeeaa": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Staging naar live: checklist zonder dataverlies</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Staging naar live: checklist zonder dataverlies</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -9799,7 +9799,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-wp-wordpress-multisite-wanneer-wel-of-niet-9f2ea": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WordPress Multisite: wanneer wel of niet</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WordPress Multisite: wanneer wel of niet</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -9812,7 +9812,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-wp-wp-cron-uitschakelen-en-echte-cron-gebru-a7aa5": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WP-Cron uitschakelen en echte cron gebruiken</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WP-Cron uitschakelen en echte cron gebruiken</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -9825,7 +9825,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-wp-xml-rpc-uitschakelen-of-beperken-f14d9": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>XML-RPC uitschakelen of beperken</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>XML-RPC uitschakelen of beperken</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -9838,7 +9838,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-wp-user-enumeration-blokkeren-b0a52": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>User enumeration blokkeren</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>User enumeration blokkeren</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -9851,7 +9851,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-wp-hacked-wordpress-diep-herstelplan-5dcee": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Hacked WordPress: diep herstelplan</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Hacked WordPress: diep herstelplan</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -9864,7 +9864,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-wp-object-cache-php-drop-in-voor-redis-ef3fb": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>object-cache.php drop-in voor Redis</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>object-cache.php drop-in voor Redis</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -9877,7 +9877,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-wp-wp-debug-veilig-gebruiken-op-staging-4a255": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WP_DEBUG veilig gebruiken op staging</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WP_DEBUG veilig gebruiken op staging</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -9890,7 +9890,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-wp-rest-api-harden-zonder-de-site-te-breken-59bc7": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>REST API harden zonder de site te breken</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>REST API harden zonder de site te breken</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -9903,7 +9903,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-wp-file-integrity-monitoring-voor-wp-core-9a9fd": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>File integrity monitoring voor WP-core</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>File integrity monitoring voor WP-core</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -9916,7 +9916,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-wp-gutenberg-patterns-herbruikbaar-maken-0dfdb": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Gutenberg patterns herbruikbaar maken</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Gutenberg patterns herbruikbaar maken</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -9929,7 +9929,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-wp-elementor-performance-widgets-en-assets-6d888": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Elementor performance: widgets en assets</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Elementor performance: widgets en assets</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -9942,7 +9942,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-wp-recaptcha-op-wordpress-formulieren-b7e35": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>reCAPTCHA op WordPress-formulieren</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>reCAPTCHA op WordPress-formulieren</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -9955,7 +9955,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-wp-wordpress-org-vs-com-updates-en-plugins-3b939": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WordPress.org vs .com: updates en plugins</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WordPress.org vs .com: updates en plugins</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -9968,7 +9968,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-wp-media-library-opruimen-zonder-broken-lin-bb2a4": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Media library opruimen zonder broken links</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Media library opruimen zonder broken links</strong>. Je werkt in WordPress admin + Installatron/hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin","Backup","FTP/File Manager voor noodgevallen"]),
     h2("Stappen"),
@@ -9981,7 +9981,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-sec-ev-en-ov-certificaten-wanneer-zinvol-78afd": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>EV en OV certificaten: wanneer zinvol</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>EV en OV certificaten: wanneer zinvol</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -9994,7 +9994,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-sec-csr-genereren-en-certificaat-installeren-bad7c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>CSR genereren en certificaat installeren</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>CSR genereren en certificaat installeren</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -10007,7 +10007,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-sec-hsts-preload-checklist-47d51": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>HSTS preload checklist</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>HSTS preload checklist</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -10020,7 +10020,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-sec-security-headers-csp-xfo-referrer-policy-62866": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Security headers: CSP, XFO, Referrer-Policy</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Security headers: CSP, XFO, Referrer-Policy</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -10033,7 +10033,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-sec-content-security-policy-voor-wordpress-59d2c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Content-Security-Policy voor WordPress</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Content-Security-Policy voor WordPress</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -10046,7 +10046,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-sec-waf-regels-tunen-zonder-false-positives-7a0d9": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WAF-regels tunen zonder false positives</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WAF-regels tunen zonder false positives</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -10059,7 +10059,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-sec-imunify-malware-scans-interpreteren-9efda": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Imunify/malware-scans interpreteren</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Imunify/malware-scans interpreteren</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -10072,7 +10072,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-sec-3-2-1-backups-in-de-praktijk-fc35c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>3-2-1 backups in de praktijk</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>3-2-1 backups in de praktijk</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -10085,7 +10085,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-sec-rto-en-rpo-uitleggen-aan-stakeholders-3ba8a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>RTO en RPO uitleggen aan stakeholders</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>RTO en RPO uitleggen aan stakeholders</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -10098,7 +10098,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-sec-incident-response-playbook-voor-je-site-3b2c0": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Incident response playbook voor je site</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Incident response playbook voor je site</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -10111,7 +10111,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-sec-passkeys-voor-website-logins-ed5fc": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Passkeys voor website-logins</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Passkeys voor website-logins</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -10124,7 +10124,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-sec-have-i-been-pwned-lekchecks-voor-teams-6dfc6": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Have I Been Pwned: lekchecks voor teams</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Have I Been Pwned: lekchecks voor teams</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -10137,7 +10137,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-sec-modsecurity-false-positives-debuggen-50cea": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>ModSecurity false positives debuggen</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>ModSecurity false positives debuggen</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -10150,7 +10150,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-sec-ddos-eerste-mitigatiestappen-038ad": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>DDoS: eerste mitigatiestappen</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>DDoS: eerste mitigatiestappen</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -10163,7 +10163,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-sec-ssh-brute-force-stoppen-730a7": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SSH brute-force stoppen</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SSH brute-force stoppen</strong>. Je werkt in hostingpanel + WordPress/security-plugins waar relevant.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Admin-toegang","Backup","Overzicht open poorten/plugins"]),
     h2("Stappen"),
@@ -10176,7 +10176,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-dns-ptr-rdns-aanvragen-voor-je-mail-ip-c2601": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>PTR / rDNS aanvragen voor je mail-IP</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>PTR / rDNS aanvragen voor je mail-IP</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -10189,7 +10189,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-dns-geavanceerde-caa-policies-per-issuer-2d2fa": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Geavanceerde CAA-policies per issuer</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Geavanceerde CAA-policies per issuer</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -10202,7 +10202,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-dns-dnssec-storingen-na-nameserver-wissel-b32e9": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>DNSSEC storingen na nameserver-wissel</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>DNSSEC storingen na nameserver-wissel</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -10215,7 +10215,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-dns-aaaa-ipv6-naast-a-records-4c1c9": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>AAAA (IPv6) naast A-records</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>AAAA (IPv6) naast A-records</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -10228,7 +10228,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-dns-srv-records-troubleshooten-5571f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>SRV-records troubleshooten</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>SRV-records troubleshooten</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -10241,7 +10241,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-dns-dns-load-balancing-met-meerdere-a-record-aa25b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>DNS load balancing met meerdere A-records</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>DNS load balancing met meerdere A-records</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -10254,7 +10254,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-dns-interne-docs-dns-change-window-41eae": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Interne docs: DNS change window</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Interne docs: DNS change window</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -10267,7 +10267,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-dns-nxdomain-versus-servfail-onderscheiden-5d899": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>NXDOMAIN versus SERVFAIL onderscheiden</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>NXDOMAIN versus SERVFAIL onderscheiden</strong>. Je werkt in klantenpanel (domeinbeheer) of DNS-zone.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Domeinnaam","Toegang tot registrar/DNS","Doel (website, mail, doorverwijzing)"]),
     h2("Stappen"),
@@ -10280,7 +10280,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-crm-fair-use-en-dataverkeer-wat-betekent-het-58d1a": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Fair use en dataverkeer: wat betekent het?</strong>. Je werkt in TripleZero iT shop / klantenpanel producten.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Fair use en dataverkeer: wat betekent het?</strong>. Je werkt in TripleZero iT shop / klantenpanel producten.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Account","Huidig pakket"]),
     h2("Stappen"),
@@ -10293,7 +10293,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-crm-dienst-opzeggen-opzegtermijn-en-exports-bdcdb": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Dienst opzeggen: opzegtermijn en exports</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Dienst opzeggen: opzegtermijn en exports</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -10306,7 +10306,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-crm-automatische-incasso-mislukt-checklist-f0369": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Automatische incasso mislukt: checklist</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Automatische incasso mislukt: checklist</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -10319,7 +10319,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-crm-affiliateprogramma-tracking-en-commissie-bc070": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Affiliateprogramma: tracking en commissies</strong>. Je werkt in TripleZero iT shop / klantenpanel producten.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Affiliateprogramma: tracking en commissies</strong>. Je werkt in TripleZero iT shop / klantenpanel producten.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Account","Huidig pakket"]),
     h2("Stappen"),
@@ -10332,7 +10332,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-crm-factuuradres-wijzigen-voor-btw-periode-bed02": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Factuuradres wijzigen vóór BTW-periode</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Factuuradres wijzigen vóór BTW-periode</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -10345,7 +10345,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-crm-extra-contactpersoon-toevoegen-aan-accou-0cb99": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Extra contactpersoon toevoegen aan account</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Extra contactpersoon toevoegen aan account</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -10358,7 +10358,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-crm-downgrade-van-pakket-waar-let-je-op-26edb": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Downgrade van pakket: waar let je op?</strong>. Je werkt in TripleZero iT shop / klantenpanel producten.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Downgrade van pakket: waar let je op?</strong>. Je werkt in TripleZero iT shop / klantenpanel producten.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Account","Huidig pakket"]),
     h2("Stappen"),
@@ -10371,7 +10371,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-crm-offerte-naar-bestelling-in-het-klantenpa-13a4e": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Offerte naar bestelling in het klantenpanel</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Offerte naar bestelling in het klantenpanel</strong>. Je werkt in TripleZero iT klantenpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["Login of resetlink","Klantnummer/domein bij tickets"]),
     h2("Stappen"),
@@ -10384,7 +10384,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-cdn-redis-als-object-cache-naast-page-cache-f83f6": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Redis als object cache naast page cache</strong>. Je werkt in CDN/Cloudflare + origin hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Redis als object cache naast page cache</strong>. Je werkt in CDN/Cloudflare + origin hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["CDN-login","Origin-IP/host","Cache-strategie"]),
     h2("Stappen"),
@@ -10397,7 +10397,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-cdn-memcached-voor-sessies-en-cache-49c94": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Memcached voor sessies en cache</strong>. Je werkt in CDN/Cloudflare + origin hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Memcached voor sessies en cache</strong>. Je werkt in CDN/Cloudflare + origin hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["CDN-login","Origin-IP/host","Cache-strategie"]),
     h2("Stappen"),
@@ -10410,7 +10410,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-cdn-litespeed-cache-esi-en-login-excepties-15b79": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>LiteSpeed Cache: ESI en login-excepties</strong>. Je werkt in CDN/Cloudflare + origin hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>LiteSpeed Cache: ESI en login-excepties</strong>. Je werkt in CDN/Cloudflare + origin hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["CDN-login","Origin-IP/host","Cache-strategie"]),
     h2("Stappen"),
@@ -10423,7 +10423,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-cdn-http-3-inschakelen-achter-cdn-a06b6": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>HTTP/3 inschakelen achter CDN</strong>. Je werkt in CDN/Cloudflare + origin hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>HTTP/3 inschakelen achter CDN</strong>. Je werkt in CDN/Cloudflare + origin hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["CDN-login","Origin-IP/host","Cache-strategie"]),
     h2("Stappen"),
@@ -10436,7 +10436,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-cdn-third-party-script-budget-afdwingen-749f9": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Third-party script budget afdwingen</strong>. Je werkt in CDN/Cloudflare + origin hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Third-party script budget afdwingen</strong>. Je werkt in CDN/Cloudflare + origin hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["CDN-login","Origin-IP/host","Cache-strategie"]),
     h2("Stappen"),
@@ -10449,7 +10449,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-cdn-image-cdn-resizing-versus-vooraf-exporte-de23d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Image CDN resizing versus vooraf exporteren</strong>. Je werkt in CDN/Cloudflare + origin hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Image CDN resizing versus vooraf exporteren</strong>. Je werkt in CDN/Cloudflare + origin hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["CDN-login","Origin-IP/host","Cache-strategie"]),
     h2("Stappen"),
@@ -10462,7 +10462,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-cdn-brotli-versus-gzip-op-origin-4cd7d": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Brotli versus Gzip op origin</strong>. Je werkt in CDN/Cloudflare + origin hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Brotli versus Gzip op origin</strong>. Je werkt in CDN/Cloudflare + origin hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["CDN-login","Origin-IP/host","Cache-strategie"]),
     h2("Stappen"),
@@ -10475,7 +10475,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-cdn-early-hints-103-conceptueel-ea66f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Early Hints (103) conceptueel</strong>. Je werkt in CDN/Cloudflare + origin hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Early Hints (103) conceptueel</strong>. Je werkt in CDN/Cloudflare + origin hosting.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["CDN-login","Origin-IP/host","Cache-strategie"]),
     h2("Stappen"),
@@ -10488,7 +10488,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-ec-woocommerce-hpos-wat-verandert-er-2a3f9": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WooCommerce HPOS: wat verandert er?</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WooCommerce HPOS: wat verandert er?</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -10501,7 +10501,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-ec-mollie-subscriptions-voor-lidmaatschappe-431a8": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Mollie subscriptions voor lidmaatschappen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Mollie subscriptions voor lidmaatschappen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -10514,7 +10514,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-ec-woocommerce-blocks-checkout-optimalisere-01af8": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WooCommerce Blocks checkout optimaliseren</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WooCommerce Blocks checkout optimaliseren</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -10527,7 +10527,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-ec-b2b-prijzen-in-woocommerce-c0604": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>B2B-prijzen in WooCommerce</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>B2B-prijzen in WooCommerce</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -10540,7 +10540,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-ec-meertalige-webshop-zonder-duplicate-cont-cac8b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Meertalige webshop zonder duplicate content</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Meertalige webshop zonder duplicate content</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -10553,7 +10553,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-ec-abandoned-cart-e-mails-ethisch-inzetten-135fe": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Abandoned cart e-mails ethisch inzetten</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Abandoned cart e-mails ethisch inzetten</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -10566,7 +10566,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-ec-voorraad-en-backorders-helder-communicer-d7c28": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Voorraad en backorders helder communiceren</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Voorraad en backorders helder communiceren</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -10579,7 +10579,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-ec-ideal-qr-en-mobile-checkout-056d1": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>iDEAL QR en mobile checkout</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>iDEAL QR en mobile checkout</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -10592,7 +10592,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-ec-productvarianten-en-seo-een-url-strategi-e56e4": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Productvarianten en SEO: één URL-strategie</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Productvarianten en SEO: één URL-strategie</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -10605,7 +10605,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-ec-retourproces-voor-webshops-technisch-ond-bb17f": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Retourproces voor webshops technisch ondersteunen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Retourproces voor webshops technisch ondersteunen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -10618,7 +10618,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-ec-btw-tarieven-per-land-in-woocommerce-3d3e5": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>BTW-tarieven per land in WooCommerce</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>BTW-tarieven per land in WooCommerce</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -10631,7 +10631,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-ec-voorraadfeeds-synchroniseren-met-magazij-453ab": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Voorraadfeeds synchroniseren met Magazijn</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Voorraadfeeds synchroniseren met Magazijn</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -10644,7 +10644,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-ec-checkout-fields-minimaliseren-zonder-dat-1eb60": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Checkout fields minimaliseren zonder dataverlies</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Checkout fields minimaliseren zonder dataverlies</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -10657,7 +10657,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-ec-frauderegels-bij-hoge-aov-bestellingen-46c21": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Frauderegels bij hoge AOV-bestellingen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Frauderegels bij hoge AOV-bestellingen</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -10670,7 +10670,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-ec-pakketpunten-en-verzendplugins-vergelijk-71017": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Pakketpunten en verzendplugins vergelijken</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Pakketpunten en verzendplugins vergelijken</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -10683,7 +10683,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-ec-gift-cards-en-tegoeden-veilig-verwerken-8ea6c": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Gift cards en tegoeden veilig verwerken</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Gift cards en tegoeden veilig verwerken</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -10696,7 +10696,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-ec-pre-order-flows-zonder-voorraadchaos-b5525": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Pre-order flows zonder voorraadchaos</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Pre-order flows zonder voorraadchaos</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -10709,7 +10709,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-ec-marketplace-feeds-naast-eigen-shop-a075b": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Marketplace-feeds naast eigen shop</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Marketplace-feeds naast eigen shop</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -10722,7 +10722,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-ec-woocommerce-rest-api-keys-roteren-99796": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>WooCommerce REST API-keys roteren</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>WooCommerce REST API-keys roteren</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),
@@ -10735,7 +10735,7 @@ export const qualityRemainingTopicBuilders: Record<string, (ctx: Ctx) => string>
   ].join("\n"),
 
   "tz-w2-th-ec-performance-budget-voor-productpaginas-49671": () => [
-    p(`In deze handleiding van ${BRAND} leggen we uit: <strong>Performance budget voor productpagina’s</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
+    p(`In deze handleiding van TripleZero iT leggen we uit: <strong>Performance budget voor productpagina’s</strong>. Je werkt in WooCommerce / WordPress admin + hostingpanel.`, `Doel: een werkbare, controleerbare aanpak met duidelijke menu’s en verificatie.`),
     h2("Voorbereiding"),
     ul(["wp-admin toegang","Staging indien mogelijk","Backup vóór checkout/betaalwijzigingen"]),
     h2("Stappen"),

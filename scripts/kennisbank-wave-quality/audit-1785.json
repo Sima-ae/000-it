@@ -1,0 +1,906 @@
+{
+  "summary": {
+    "total": 1785,
+    "passClean": 1726,
+    "failAny": 59,
+    "hardFail": 0,
+    "avgScore": 99,
+    "byFlag": {
+      "medium_title_overlap": 35,
+      "low_title_overlap": 6,
+      "shared_steps": 18
+    },
+    "sharedFpGte5": 1,
+    "conceptualWithSteps": 0
+  },
+  "fail": [
+    {
+      "slug": "wat-verbruikt-opslag-in-mijn-hostingpakket",
+      "title": "Wat verbruikt opslag in mijn hostingpakket?",
+      "topic": "storage-usage",
+      "categories": [
+        "hosting",
+        "directadmin",
+        "opslag-en-verkeer",
+        "directadmin-overige"
+      ],
+      "flags": [
+        "low_title_overlap"
+      ],
+      "score": 65,
+      "stepCount": 5
+    },
+    {
+      "slug": "voorkomen-dat-je-hostingpakket-vol-raakt",
+      "title": "Voorkomen dat je hostingpakket vol raakt",
+      "topic": "prevent-full",
+      "categories": [
+        "hosting",
+        "directadmin",
+        "opslag-en-verkeer",
+        "directadmin-overige"
+      ],
+      "flags": [
+        "low_title_overlap"
+      ],
+      "score": 65,
+      "stepCount": 5
+    },
+    {
+      "slug": "wie-mag-ai-agents-starten-of-pauzeren-in-mijn-teamaccount",
+      "title": "Wie mag AI-agents starten of pauzeren in mijn teamaccount?",
+      "topic": "tz-agents-team-permissions",
+      "categories": [
+        "ai-agents",
+        "ai-agents-pakketten",
+        "crm-klantenpanel"
+      ],
+      "flags": [
+        "low_title_overlap"
+      ],
+      "score": 65,
+      "stepCount": 0
+    },
+    {
+      "slug": "hoe-meet-ik-of-mijn-ai-agents-resultaat-opleveren",
+      "title": "Hoe meet ik of mijn AI-agents resultaat opleveren?",
+      "topic": "tz-agents-measure-results",
+      "categories": [
+        "ai-agents",
+        "ai-agents-workflows"
+      ],
+      "flags": [
+        "low_title_overlap"
+      ],
+      "score": 65,
+      "stepCount": 0
+    },
+    {
+      "slug": "hoe-kies-ik-een-wordpress-thema-dat-geschikt-is-om-te-bloggen",
+      "title": "Hoe kies ik een WordPress-thema dat geschikt is om te bloggen?",
+      "topic": "tz-blog-theme-choice",
+      "categories": [
+        "bloggen",
+        "bloggen-vormgeving",
+        "wordpress"
+      ],
+      "flags": [
+        "low_title_overlap"
+      ],
+      "score": 65,
+      "stepCount": 0
+    },
+    {
+      "slug": "verdachte-inlogpogingen-microsoft-365",
+      "title": "Verdachte inlogpogingen en geblokkeerde accounts",
+      "topic": "tz-m365-verdachte-login",
+      "categories": [
+        "microsoft",
+        "microsoft-beveiliging",
+        "beveiliging"
+      ],
+      "flags": [
+        "low_title_overlap"
+      ],
+      "score": 65,
+      "stepCount": 0
+    },
+    {
+      "slug": "alles-over-tv-domeinnamen",
+      "title": "Alles over .tv-domeinnamen",
+      "topic": "qr-alles-over-tv-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "flags": [
+        "shared_steps_x11"
+      ],
+      "score": 80,
+      "stepCount": 6
+    },
+    {
+      "slug": "alles-over-es-domeinnamen",
+      "title": "Alles over .es-domeinnamen",
+      "topic": "qr-alles-over-es-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "flags": [
+        "shared_steps_x11"
+      ],
+      "score": 80,
+      "stepCount": 6
+    },
+    {
+      "slug": "alles-over-eu-domeinnamen",
+      "title": "Alles over .eu-domeinnamen",
+      "topic": "qr-alles-over-eu-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "flags": [
+        "shared_steps_x11"
+      ],
+      "score": 80,
+      "stepCount": 6
+    },
+    {
+      "slug": "alles-over-biz-domeinnamen",
+      "title": "Alles over .biz-domeinnamen",
+      "topic": "qr-alles-over-biz-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "flags": [
+        "shared_steps_x11"
+      ],
+      "score": 80,
+      "stepCount": 6
+    },
+    {
+      "slug": "alles-over-nu-domeinnamen",
+      "title": "Alles over .nu-domeinnamen",
+      "topic": "qr-alles-over-nu-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "flags": [
+        "shared_steps_x11"
+      ],
+      "score": 80,
+      "stepCount": 6
+    },
+    {
+      "slug": "alles-over-fr-domeinnamen",
+      "title": "Alles over .fr-domeinnamen",
+      "topic": "qr-alles-over-fr-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "flags": [
+        "shared_steps_x11"
+      ],
+      "score": 80,
+      "stepCount": 6
+    },
+    {
+      "slug": "alles-over-be-domeinnamen",
+      "title": "Alles over .be-domeinnamen",
+      "topic": "qr-alles-over-be-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "flags": [
+        "shared_steps_x11"
+      ],
+      "score": 80,
+      "stepCount": 6
+    },
+    {
+      "slug": "alles-over-de-domeinnamen",
+      "title": "Alles over .de-domeinnamen",
+      "topic": "qr-alles-over-de-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "flags": [
+        "shared_steps_x11"
+      ],
+      "score": 80,
+      "stepCount": 6
+    },
+    {
+      "slug": "alles-over-co-uk-domeinnamen",
+      "title": "Alles over .co.uk-domeinnamen",
+      "topic": "qr-alles-over-co-uk-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "flags": [
+        "shared_steps_x11"
+      ],
+      "score": 80,
+      "stepCount": 6
+    },
+    {
+      "slug": "alles-over-com-domeinnamen",
+      "title": "Alles over .com-domeinnamen",
+      "topic": "qr-alles-over-com-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "flags": [
+        "shared_steps_x11"
+      ],
+      "score": 80,
+      "stepCount": 6
+    },
+    {
+      "slug": "alles-over-nl-domeinnamen",
+      "title": "Alles over .nl-domeinnamen",
+      "topic": "qr-alles-over-nl-domeinnamen",
+      "categories": [
+        "domeinnamen",
+        "domein-registratie"
+      ],
+      "flags": [
+        "shared_steps_x11"
+      ],
+      "score": 80,
+      "stepCount": 6
+    },
+    {
+      "slug": "kritieke-fout-wordpress",
+      "title": "Kritieke fout WordPress",
+      "topic": "wp-critical",
+      "categories": [
+        "bloggen",
+        "directadmin",
+        "wordpress",
+        "directadmin-wordpress",
+        "wordpress-overige",
+        "bloggen-beheer"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 6
+    },
+    {
+      "slug": "mijn-mailbox-of-hostingpakket-is-vol",
+      "title": "Mijn mailbox of hostingpakket is vol?",
+      "topic": "quota-full",
+      "categories": [
+        "hosting",
+        "e-mail",
+        "directadmin",
+        "mailbox-beheer",
+        "opslag-en-verkeer",
+        "directadmin-e-mail"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 5
+    },
+    {
+      "slug": "user-xxxx-has-used-up-of-their-bandwidth-and-of-hisher-allocated-disk-space",
+      "title": "User xxxx has used up –% of their bandwidth and –% of his/her allocated disk space",
+      "topic": "usage-warning",
+      "categories": [
+        "hosting",
+        "directadmin",
+        "directadmin-overige",
+        "hosting-overige"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 4
+    },
+    {
+      "slug": "problemen-met-e-mail-website",
+      "title": "Problemen met e-mail / website / controlpanel?",
+      "topic": "troubleshoot",
+      "categories": [
+        "hosting",
+        "e-mail",
+        "directadmin",
+        "directadmin-e-mail",
+        "e-mail-overige",
+        "hosting-overige"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 7
+    },
+    {
+      "slug": "out-of-office-reply-instellen",
+      "title": "Out of office reply instellen",
+      "topic": "ooo",
+      "categories": [
+        "e-mail",
+        "directadmin",
+        "mailbox-beheer",
+        "directadmin-overige"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 5
+    },
+    {
+      "slug": "spamfilter-instellen-directadmin",
+      "title": "Spamfilter instellen in DirectAdmin",
+      "topic": "spamassassin-setup",
+      "categories": [
+        "e-mail",
+        "directadmin",
+        "spam-en-veiligheid",
+        "directadmin-e-mail"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 5
+    },
+    {
+      "slug": "wachtwoord-van-e-mailadres-wijzigen",
+      "title": "Wachtwoord van e-mailadres wijzigen",
+      "topic": "email-password",
+      "categories": [
+        "e-mail",
+        "directadmin",
+        "mailbox-beheer",
+        "directadmin-e-mail"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 5
+    },
+    {
+      "slug": "nieuw-e-mailadres-aanmaken-in-directadmin",
+      "title": "Nieuw e-mailadres aanmaken in DirectAdmin",
+      "topic": "create-mailbox",
+      "categories": [
+        "e-mail",
+        "directadmin",
+        "mailbox-beheer",
+        "directadmin-e-mail"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 5
+    },
+    {
+      "slug": "ik-krijg-veel-spam-kan-ik-daar-wat-tegen-doen",
+      "title": "Ontvang je veel spam? Gebruik SpamAssassin!",
+      "topic": "spamassassin",
+      "categories": [
+        "e-mail",
+        "directadmin",
+        "spam-en-veiligheid",
+        "directadmin-e-mail"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 6
+    },
+    {
+      "slug": "wordpress-website-kopieren-naar-ander-domein",
+      "title": "WordPress website kopiëren naar ander domein",
+      "topic": "wp-clone",
+      "categories": [
+        "directadmin",
+        "wordpress",
+        "directadmin-wordpress",
+        "wordpress-overige"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 5
+    },
+    {
+      "slug": "afschermen-beveiligen-bestanden-via-htaccess",
+      "title": "Afschermen – beveiligen bestanden via htaccess",
+      "topic": "htaccess",
+      "categories": [
+        "directadmin",
+        "beveiliging",
+        "beveiliging-overige",
+        "directadmin-overige"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 5
+    },
+    {
+      "slug": "waar-vind-ik-de-logingegevens-van-directadmin",
+      "title": "Waar vind ik de logingegevens van DirectAdmin?",
+      "topic": "da-login",
+      "categories": [
+        "directadmin",
+        "directadmin-overige"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 0
+    },
+    {
+      "slug": "cronjob-instellen-directadmin",
+      "title": "Cronjob instellen in DirectAdmin",
+      "topic": "cron",
+      "categories": [
+        "directadmin",
+        "directadmin-overige"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 5
+    },
+    {
+      "slug": "wordpress-website-verwijderen-in-installatron",
+      "title": "WordPress website verwijderen in Installatron",
+      "topic": "installatron-delete",
+      "categories": [
+        "directadmin",
+        "wordpress",
+        "wordpress-installatie",
+        "directadmin-wordpress"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 5
+    },
+    {
+      "slug": "uitleg-directadmin-filemanager",
+      "title": "Uitleg over de DirectAdmin Filemanager",
+      "topic": "filemanager",
+      "categories": [
+        "directadmin",
+        "directadmin-overige"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 5
+    },
+    {
+      "slug": "subdomein-aanmaken-directadmin",
+      "title": "Subdomein aanmaken in DirectAdmin",
+      "topic": "subdomain",
+      "categories": [
+        "directadmin",
+        "directadmin-overige"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 6
+    },
+    {
+      "slug": "ik-kan-niet-meer-inloggen",
+      "title": "Ik kan niet meer inloggen?",
+      "topic": "cant-login",
+      "categories": [
+        "directadmin",
+        "crm-klantenpanel",
+        "account-en-inloggen",
+        "directadmin-overige"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 0
+    },
+    {
+      "slug": "wordpress-updaten-installatron",
+      "title": "WordPress updaten in Installatron",
+      "topic": "installatron-update",
+      "categories": [
+        "directadmin",
+        "wordpress",
+        "wordpress-installatie",
+        "directadmin-wordpress"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 5
+    },
+    {
+      "slug": "wordpress-url-omzetten-van-http-naar-https",
+      "title": "WordPress URL omzetten van http naar https",
+      "topic": "wp-https",
+      "categories": [
+        "directadmin",
+        "beveiliging",
+        "wordpress",
+        "directadmin-wordpress",
+        "beveiliging-overige",
+        "wordpress-overige"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 6
+    },
+    {
+      "slug": "hoe-stel-ik-cronjobs-in-via-directadmin",
+      "title": "Hoe stel ik cronjobs in via DirectAdmin?",
+      "topic": "ext-hoe-stel-ik-cronjobs-in-via-directadmin",
+      "categories": [
+        "hosting",
+        "directadmin",
+        "php-en-scripts",
+        "directadmin-overige"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 5
+    },
+    {
+      "slug": "hoe-wijzig-ik-de-php-instellingen-in-directadmin",
+      "title": "Hoe wijzig ik de PHP-instellingen in DirectAdmin?",
+      "topic": "ext-hoe-wijzig-ik-de-php-instellingen-in-directadmin",
+      "categories": [
+        "hosting",
+        "directadmin",
+        "php-en-scripts",
+        "directadmin-overige"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 4
+    },
+    {
+      "slug": "wat-betekenen-een-lage-aeo-score-en-hoe-verbeter-ik-die",
+      "title": "Wat betekenen een lage AEO-score en hoe verbeter ik die?",
+      "topic": "tz-aiscan-aeo-low",
+      "categories": [
+        "ai-scan",
+        "aeo-geo-seo",
+        "aeo-antwoordengines",
+        "ai-scan-verbeteren"
+      ],
+      "flags": [
+        "shared_steps_x3"
+      ],
+      "score": 85,
+      "stepCount": 6
+    },
+    {
+      "slug": "wat-betekenen-een-lage-geo-score-en-hoe-verbeter-ik-lokale-vindbaarheid",
+      "title": "Wat betekenen een lage GEO-score en hoe verbeter ik lokale vindbaarheid?",
+      "topic": "tz-aiscan-geo-low",
+      "categories": [
+        "ai-scan",
+        "aeo-geo-seo",
+        "geo-lokaal",
+        "ai-scan-verbeteren"
+      ],
+      "flags": [
+        "shared_steps_x3"
+      ],
+      "score": 85,
+      "stepCount": 6
+    },
+    {
+      "slug": "wat-betekenen-een-lage-seo-score-en-hoe-verbeter-ik-die",
+      "title": "Wat betekenen een lage SEO-score en hoe verbeter ik die?",
+      "topic": "tz-aiscan-seo-low",
+      "categories": [
+        "ai-scan",
+        "aeo-geo-seo",
+        "seo-klassiek",
+        "ai-scan-verbeteren"
+      ],
+      "flags": [
+        "shared_steps_x3"
+      ],
+      "score": 85,
+      "stepCount": 6
+    },
+    {
+      "slug": "sni-inschakelen-op-een-directadmin-server",
+      "title": "SNI inschakelen op een DirectAdmin server",
+      "topic": "da-sni",
+      "categories": [
+        "directadmin",
+        "directadmin-overige"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 4
+    },
+    {
+      "slug": "caa-records",
+      "title": "CAA records",
+      "topic": "qr-caa-records",
+      "categories": [
+        "domeinnamen",
+        "dns-records"
+      ],
+      "flags": [
+        "shared_steps_x4"
+      ],
+      "score": 85,
+      "stepCount": 6
+    },
+    {
+      "slug": "soa-records",
+      "title": "SOA records",
+      "topic": "qr-soa-records",
+      "categories": [
+        "domeinnamen",
+        "dns-records"
+      ],
+      "flags": [
+        "shared_steps_x4"
+      ],
+      "score": 85,
+      "stepCount": 6
+    },
+    {
+      "slug": "srv-records",
+      "title": "SRV records",
+      "topic": "qr-srv-records",
+      "categories": [
+        "domeinnamen",
+        "dns-records"
+      ],
+      "flags": [
+        "shared_steps_x4"
+      ],
+      "score": 85,
+      "stepCount": 6
+    },
+    {
+      "slug": "a-records",
+      "title": "A records",
+      "topic": "qr-a-records",
+      "categories": [
+        "domeinnamen",
+        "domeinnamen-overige"
+      ],
+      "flags": [
+        "shared_steps_x4"
+      ],
+      "score": 85,
+      "stepCount": 6
+    },
+    {
+      "slug": "hoe-houd-ik-aeo-content-actueel-zodat-antwoorden-betrouwbaar-blijven",
+      "title": "Hoe houd ik AEO-content actueel zodat antwoorden betrouwbaar blijven?",
+      "topic": "tz-aeo-keep-fresh",
+      "categories": [
+        "aeo-geo-seo",
+        "aeo-antwoordengines"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 0
+    },
+    {
+      "slug": "hoe-maak-ik-unieke-locatiepaginas-zonder-duplicate-content",
+      "title": "Hoe maak ik unieke locatiepagina’s zonder duplicate content?",
+      "topic": "tz-geo-location-pages",
+      "categories": [
+        "aeo-geo-seo",
+        "geo-lokaal"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 0
+    },
+    {
+      "slug": "seo-voor-webshops-categorien-productpaginas-en-filters",
+      "title": "SEO voor webshops: categorieën, productpagina’s en filters",
+      "topic": "tz-seo-ecommerce",
+      "categories": [
+        "aeo-geo-seo",
+        "seo-klassiek"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 0
+    },
+    {
+      "slug": "checklist-voor-go-live-aeo-geo-en-seo-gereed-voor-lancering",
+      "title": "Checklist vóór go-live: AEO, GEO en SEO gereed voor lancering",
+      "topic": "tz-aeo-golive-checklist",
+      "categories": [
+        "aeo-geo-seo",
+        "aeo-geo-seo-resultaten"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 0
+    },
+    {
+      "slug": "hoe-meet-ik-of-mijn-website-beter-scoort-na-aanpassingen",
+      "title": "Hoe meet ik of mijn website beter scoort na aanpassingen?",
+      "topic": "tz-aiscan-measure-after",
+      "categories": [
+        "ai-scan",
+        "ai-scan-verbeteren"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 0
+    },
+    {
+      "slug": "hoe-contacteer-ik-triplezero-it-over-mijn-ai-scanresultaten",
+      "title": "Hoe contacteer ik TripleZero iT over mijn AI-scanresultaten?",
+      "topic": "tz-aiscan-contact-results",
+      "categories": [
+        "ai-scan",
+        "ai-scan-dashboard",
+        "support"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 0
+    },
+    {
+      "slug": "wat-als-media-uploads-falen-of-de-mediabibliotheek-leeg-lijkt",
+      "title": "Wat als media-uploads falen of de mediabibliotheek leeg lijkt?",
+      "topic": "tz-blog-media-library-issues",
+      "categories": [
+        "bloggen",
+        "bloggen-beheer",
+        "wordpress"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 0
+    },
+    {
+      "slug": "mx-en-mailrecords-correct-zetten-in-cyberpanel-dns",
+      "title": "MX- en mailrecords correct zetten in CyberPanel DNS",
+      "topic": "tz-cp-mx-records",
+      "categories": [
+        "cyberpanel",
+        "cyberpanel-email-dns",
+        "e-mail",
+        "domeinnamen"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 4
+    },
+    {
+      "slug": "welk-microsoft-365-abonnement-past-bij-mijn-bedrijf",
+      "title": "Welk Microsoft 365-abonnement past bij mijn bedrijf?",
+      "topic": "tz-m365-abonnement-keuze",
+      "categories": [
+        "microsoft",
+        "microsoft-beheer"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 0
+    },
+    {
+      "slug": "e-mailforwarders-en-aliases-aanmaken-in-plesk",
+      "title": "E-mailforwarders en aliases aanmaken in Plesk",
+      "topic": "tz-pl-mail-forwarders",
+      "categories": [
+        "plesk",
+        "plesk-email-dns",
+        "e-mail"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 4
+    },
+    {
+      "slug": "cronjobs-instellen-in-plesk",
+      "title": "Cronjobs instellen in Plesk",
+      "topic": "tz-pl-cron",
+      "categories": [
+        "plesk",
+        "plesk-php-vps"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 5
+    },
+    {
+      "slug": "account-terugkrijgen-na-een-hack",
+      "title": "Account terugkrijgen na een hack",
+      "topic": "tz-vo-account-recovery",
+      "categories": [
+        "veilig-online",
+        "veilig-online-wachtwoorden",
+        "beveiliging"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 0
+    },
+    {
+      "slug": "identiteitsdiefstal-herkennen-en-melden",
+      "title": "Identiteitsdiefstal herkennen en melden",
+      "topic": "tz-vo-identity-theft",
+      "categories": [
+        "veilig-online",
+        "veilig-online-privacy",
+        "beveiliging"
+      ],
+      "flags": [
+        "medium_title_overlap"
+      ],
+      "score": 85,
+      "stepCount": 0
+    }
+  ]
+}
