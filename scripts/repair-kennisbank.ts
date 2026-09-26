@@ -132,13 +132,18 @@ async function main() {
     slugFilter = new Set(list);
   }
 
-  const articles = await prisma.kennisbankArticle.findMany({
-    include: { translations: true },
-    orderBy: { createdAt: "asc" },
-    ...(slugFilter
-      ? { where: { slug: { in: [...slugFilter] } } }
-      : { skip: offset, take: limit }),
-  });
+  const articles = slugFilter
+    ? await prisma.kennisbankArticle.findMany({
+        where: { slug: { in: [...slugFilter] } },
+        include: { translations: true },
+        orderBy: { createdAt: "asc" },
+      })
+    : await prisma.kennisbankArticle.findMany({
+        skip: offset,
+        take: limit,
+        include: { translations: true },
+        orderBy: { createdAt: "asc" },
+      });
 
   const scoped = slugFilter
     ? articles.slice(offset, offset + limit)

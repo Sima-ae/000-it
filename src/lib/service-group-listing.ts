@@ -55,5 +55,8 @@ export async function listServiceGroupCards(
 
   return cards
     .filter((card) => card.hasBody)
-    .map(({ hasBody: _hasBody, ...card }) => card);
+    .map(({ hasBody, ...card }) => {
+      void hasBody;
+      return card;
+    });
 }
