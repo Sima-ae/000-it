@@ -2,6 +2,11 @@ import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { requireUser } from "@/lib/api-auth";
 import { isClientRole, isManagerRole, isStaffRole, ownScope } from "@/lib/roles";
+import {
+  crmInvoiceClientWhere,
+  normalizedClientEmail,
+  portalOrderWhere,
+} from "@/lib/portal/scope";
 
 export async function GET() {
   const { session, error } = await requireUser();
@@ -116,6 +121,51 @@ export async function GET() {
         })
       : 0;
 
+    const clientEmail = normalizedClientEmail(
+      user?.email ?? session.user.email,
+    );
+    const portalOwnerWhere = portalOrderWhere(userId, clientEmail);
+
+    const [
+      portalDomains,
+      hostingOrdersCount,
+      serviceOrdersCount,
+      portalInvoices,
+      hostingPending,
+      servicePending,
+    ] = isClientRole(role)
+      ? await Promise.all([
+          prisma.ownedDomain.count({ where: { userId } }),
+          prisma.shopOrder.count({
+            where: { ...portalOwnerWhere, lineOfBusiness: "HOSTING" },
+          }),
+          prisma.shopOrder.count({
+            where: { ...portalOwnerWhere, lineOfBusiness: "SERVICE" },
+          }),
+          prisma.invoice.count({
+            where: {
+              deletedAt: null,
+              status: { not: "DRAFT" },
+              ...crmInvoiceClientWhere(clientEmail),
+            },
+          }),
+          prisma.shopOrder.count({
+            where: {
+              ...portalOwnerWhere,
+              lineOfBusiness: "HOSTING",
+              status: "PENDING",
+            },
+          }),
+          prisma.shopOrder.count({
+            where: {
+              ...portalOwnerWhere,
+              lineOfBusiness: "SERVICE",
+              status: "PENDING",
+            },
+          }),
+        ])
+      : [0, 0, 0, 0, 0, 0];
+
     return NextResponse.json({
       role,
       user: {
@@ -134,6 +184,12 @@ export async function GET() {
         caseStudies: isStaffRole(role) ? casesOwned : 0,
         openTickets,
         todosOpen: isStaffRole(role) ? todosOpen : 0,
+        domains: portalDomains,
+        hostingOrders: hostingOrdersCount,
+        serviceOrders: serviceOrdersCount,
+        hostingPending,
+        servicePending,
+        invoices: portalInvoices,
       },
       activities,
       recentProjects,

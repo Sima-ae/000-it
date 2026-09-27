@@ -7,7 +7,7 @@ import { useSession } from "next-auth/react";
 import { toast } from "sonner";
 import { Download, FilePlus2, Pencil, Trash2 } from "lucide-react";
 import { CrmShell } from "@/components/crm/CrmShell";
-import { openInvoicePdf, type InvoiceDocument } from "@/components/crm/InvoicePdf";
+import { type InvoiceDocument } from "@/components/crm/InvoicePdf";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -288,14 +288,30 @@ export default function CrmInvoicesPage() {
   }
 
   function downloadPdf(invoice: Invoice) {
-    const ok = openInvoicePdf(
-      {
-        ...invoice,
-        status: statusLabel(invoice.status),
-      },
-      locale,
-    );
-    if (!ok) toast.error(t("invoicePdfBlocked"));
+    void (async () => {
+      try {
+        const res = await fetch(`/api/crm/invoices/${invoice.id}/pdf`);
+        if (!res.ok) {
+          const body = await res.json().catch(() => ({}));
+          throw new Error(body.error || t("invoicePdfBlocked"));
+        }
+        const blob = await res.blob();
+        const disposition = res.headers.get("Content-Disposition") || "";
+        const match = /filename="([^"]+)"/.exec(disposition);
+        const filename = match?.[1] || `invoice-${invoice.number}.pdf`;
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+        toast.success(t("invoicePdfDownloaded"));
+      } catch (err) {
+        toast.error(err instanceof Error ? err.message : t("invoicePdfBlocked"));
+      }
+    })();
   }
 
   return (
@@ -320,6 +336,18 @@ export default function CrmInvoicesPage() {
         </div>
       }
     >
+      {!staff ? (
+        <p className="rounded-xl border border-border/70 bg-muted/20 px-4 py-3 text-sm text-muted-foreground">
+          {t("invoicesShopOrdersHint")}{" "}
+          <SoftLink
+            href={localizedHref(locale, "/my-orders")}
+            className="font-medium text-foreground underline-offset-2 hover:underline"
+          >
+            {t("myOrdersLink")}
+          </SoftLink>
+          .
+        </p>
+      ) : null}
       <div className="grid gap-4 md:grid-cols-4">
         {[
           { label: t("invoiceStatOpen"), value: invoices.filter((i) => ["DRAFT", "SENT", "OVERDUE"].includes(i.status)).length },

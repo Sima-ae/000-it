@@ -70,7 +70,7 @@ export async function POST(request: Request) {
           results.push({
             domain,
             ok: false,
-            error: "No WhoisGuard id",
+            error: "No WHOIS privacy id",
           });
           continue;
         }

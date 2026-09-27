@@ -224,17 +224,19 @@ async function deliverInvoice(
   return { sent: true as const };
 }
 
-export async function sendShopOrderInvoice(input: {
+export async function buildShopOrderInvoiceDocument(input: {
   orderId: string;
   session?: Stripe.Checkout.Session | null;
-}): Promise<{ sent: boolean; reason?: string }> {
+}): Promise<
+  | { ok: true; document: OrderInvoiceDocument; orderId: string }
+  | { ok: false; reason: string }
+> {
   const order = await prisma.shopOrder.findUnique({
     where: { id: input.orderId },
     include: { items: true },
   });
-  if (!order) return { sent: false, reason: "ORDER_NOT_FOUND" };
-  if (order.invoiceEmailedAt) return { sent: false, reason: "ALREADY_SENT" };
-  if (order.status !== "PAID") return { sent: false, reason: "NOT_PAID" };
+  if (!order) return { ok: false, reason: "ORDER_NOT_FOUND" };
+  if (order.status !== "PAID") return { ok: false, reason: "NOT_PAID" };
 
   const taxRate = order.vatRate > 1 ? order.vatRate / 100 : order.vatRate || VAT_RATE;
   const lines: OrderInvoiceLine[] = order.items.map((item) => {
@@ -267,7 +269,7 @@ export async function sendShopOrderInvoice(input: {
     currency: order.currency || "EUR",
     taxRate,
     issueDate: order.createdAt,
-    paidAt: new Date(),
+    paidAt: order.invoiceEmailedAt || order.updatedAt || new Date(),
     paymentMethod: paymentMethodLabel(input.session),
     stripeSessionId: order.stripeSessionId || input.session?.id || null,
     categoryLabel: categoryLabel(
@@ -281,24 +283,21 @@ export async function sendShopOrderInvoice(input: {
     totalIncl: order.totalIncl,
   };
 
-  try {
-    return await deliverInvoice({ type: "shop", id: order.id }, document);
-  } catch (error) {
-    console.error("[order-invoice] shop send failed", order.orderNumber, error);
-    return { sent: false, reason: "SEND_FAILED" };
-  }
+  return { ok: true, document, orderId: order.id };
 }
 
-export async function sendDomainOrderInvoice(input: {
+export async function buildDomainOrderInvoiceDocument(input: {
   orderId: string;
   session?: Stripe.Checkout.Session | null;
-}): Promise<{ sent: boolean; reason?: string }> {
+}): Promise<
+  | { ok: true; document: OrderInvoiceDocument; orderId: string }
+  | { ok: false; reason: string }
+> {
   const order = await prisma.domainOrder.findUnique({ where: { id: input.orderId } });
-  if (!order) return { sent: false, reason: "ORDER_NOT_FOUND" };
-  if (order.invoiceEmailedAt) return { sent: false, reason: "ALREADY_SENT" };
+  if (!order) return { ok: false, reason: "ORDER_NOT_FOUND" };
   // PENDING = unpaid; FAILED still means Stripe was charged (fulfillment failed later)
   if (order.status === "PENDING") {
-    return { sent: false, reason: "NOT_PAID" };
+    return { ok: false, reason: "NOT_PAID" };
   }
 
   const taxRate = VAT_RATE;
@@ -358,7 +357,7 @@ export async function sendDomainOrderInvoice(input: {
     currency: "EUR",
     taxRate,
     issueDate: order.createdAt,
-    paidAt: new Date(),
+    paidAt: order.invoiceEmailedAt || order.updatedAt || new Date(),
     paymentMethod: paymentMethodLabel(input.session),
     stripeSessionId: order.stripeSessionId || input.session?.id || null,
     categoryLabel: categoryLabel(order.locale, kind),
@@ -383,10 +382,49 @@ export async function sendDomainOrderInvoice(input: {
     totalIncl: lineIncl,
   };
 
+  return { ok: true, document, orderId: order.id };
+}
+
+export async function sendShopOrderInvoice(input: {
+  orderId: string;
+  session?: Stripe.Checkout.Session | null;
+}): Promise<{ sent: boolean; reason?: string }> {
+  const order = await prisma.shopOrder.findUnique({
+    where: { id: input.orderId },
+    select: { invoiceEmailedAt: true },
+  });
+  if (!order) return { sent: false, reason: "ORDER_NOT_FOUND" };
+  if (order.invoiceEmailedAt) return { sent: false, reason: "ALREADY_SENT" };
+
+  const built = await buildShopOrderInvoiceDocument(input);
+  if (!built.ok) return { sent: false, reason: built.reason };
+
   try {
-    return await deliverInvoice({ type: "domain", id: order.id }, document);
+    return await deliverInvoice({ type: "shop", id: built.orderId }, built.document);
   } catch (error) {
-    console.error("[order-invoice] domain send failed", order.orderNumber, error);
+    console.error("[order-invoice] shop send failed", built.document.orderNumber, error);
+    return { sent: false, reason: "SEND_FAILED" };
+  }
+}
+
+export async function sendDomainOrderInvoice(input: {
+  orderId: string;
+  session?: Stripe.Checkout.Session | null;
+}): Promise<{ sent: boolean; reason?: string }> {
+  const order = await prisma.domainOrder.findUnique({
+    where: { id: input.orderId },
+    select: { invoiceEmailedAt: true },
+  });
+  if (!order) return { sent: false, reason: "ORDER_NOT_FOUND" };
+  if (order.invoiceEmailedAt) return { sent: false, reason: "ALREADY_SENT" };
+
+  const built = await buildDomainOrderInvoiceDocument(input);
+  if (!built.ok) return { sent: false, reason: built.reason };
+
+  try {
+    return await deliverInvoice({ type: "domain", id: built.orderId }, built.document);
+  } catch (error) {
+    console.error("[order-invoice] domain send failed", built.document.orderNumber, error);
     return { sent: false, reason: "SEND_FAILED" };
   }
 }
@@ -438,7 +476,7 @@ export async function sendInvoiceForPaidCheckoutSession(
 
 /**
  * Success-page / backup path: verify Stripe payment, mark the order paid if
- * needed, then email the PDF invoice. Does not run Namecheap fulfillment
+ * needed, then email the PDF invoice. Does not run registrar fulfillment
  * (webhook owns that) but unlocks invoice sending for still-PENDING domains.
  */
 export async function ensurePaidCheckoutAndInvoice(

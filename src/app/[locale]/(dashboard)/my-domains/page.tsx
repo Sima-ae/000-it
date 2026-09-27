@@ -2,6 +2,7 @@
 
 import { Suspense, useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import { useSession } from "next-auth/react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
@@ -16,6 +17,8 @@ import {
 } from "@/components/ui/dialog";
 import { Label } from "@/components/ui/label";
 import { CheckoutInvoiceBackup } from "@/components/shop/CheckoutInvoiceBackup";
+import { CrmShell } from "@/components/crm/CrmShell";
+import { isStaffRole } from "@/lib/roles";
 
 type OwnedDomain = {
   id: string;
@@ -49,6 +52,8 @@ type Tab =
 export default function MyDomainsPage() {
   const t = useTranslations("myDomains");
   const locale = useLocale();
+  const { data: session } = useSession();
+  const staff = isStaffRole(session?.user?.role);
   const qc = useQueryClient();
   const [selected, setSelected] = useState<string[]>([]);
   const [active, setActive] = useState<OwnedDomain | null>(null);
@@ -345,23 +350,16 @@ export default function MyDomainsPage() {
   }
 
   return (
-    <div className="space-y-6 p-6 md:p-8">
-      <Suspense fallback={null}>
-        <CheckoutInvoiceBackup />
-      </Suspense>
-      <div className="flex flex-wrap items-start justify-between gap-3">
-        <div>
-          <h1 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
-            {t("title")}
-          </h1>
-          <p className="mt-1 max-w-2xl text-sm text-muted-foreground">
-            {t("subtitle")}
-          </p>
-        </div>
+    <CrmShell
+      title={t("title")}
+      subtitle={t("subtitle")}
+      actions={
         <div className="flex flex-wrap gap-2">
-          <Button variant="outline" disabled={busy} onClick={() => void syncAll()}>
-            {t("sync")}
-          </Button>
+          {staff ? (
+            <Button variant="outline" disabled={busy} onClick={() => void syncAll()}>
+              {t("sync")}
+            </Button>
+          ) : null}
           <Button
             variant="outline"
             disabled={busy}
@@ -391,7 +389,11 @@ export default function MyDomainsPage() {
             {t("bulkSync")}
           </Button>
         </div>
-      </div>
+      }
+    >
+      <Suspense fallback={null}>
+        <CheckoutInvoiceBackup />
+      </Suspense>
 
       <Card>
         <CardHeader>
@@ -701,6 +703,6 @@ export default function MyDomainsPage() {
           )}
         </DialogContent>
       </Dialog>
-    </div>
+    </CrmShell>
   );
 }

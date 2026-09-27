@@ -4,12 +4,12 @@ import {
   isNamecheapConfigured,
   namecheapMissingEnv,
 } from "@/lib/domains/namecheap";
+import { markupPercentForBuyPriceCents } from "@/lib/domains/pricing";
 
-/** Default sell markup for newly imported TLDs (0 fixed + 20%). Existing rows keep their markup. */
+/** Fixed markup is always €0 — sell margin is tiered % of buy price. */
 const DEFAULT_MARKUP_FIXED_CENTS = 0;
-const DEFAULT_MARKUP_PERCENT = 20;
 
-/** Seeded / curated TLDs — keep their custom markups when bulk-resetting newer ones. */
+/** Seeded / curated TLDs (kept for reference / reports). */
 export const CORE_DOMAIN_TLDS = [
   "nl",
   "com",
@@ -110,7 +110,7 @@ export async function syncDomainPricesFromNamecheap(): Promise<
           basePriceInCents,
           renewBasePriceInCents: renewBasePriceInCents ?? 0,
           markupFixedCents: DEFAULT_MARKUP_FIXED_CENTS,
-          markupPercent: DEFAULT_MARKUP_PERCENT,
+          markupPercent: markupPercentForBuyPriceCents(basePriceInCents),
           isActive: true,
         },
       });
@@ -123,6 +123,8 @@ export async function syncDomainPricesFromNamecheap(): Promise<
       where: { tld: row.tld },
       data: {
         basePriceInCents,
+        markupFixedCents: DEFAULT_MARKUP_FIXED_CENTS,
+        markupPercent: markupPercentForBuyPriceCents(basePriceInCents),
         ...(renewBasePriceInCents != null ? { renewBasePriceInCents } : {}),
       },
     });

@@ -5,12 +5,15 @@ import { useQuery } from "@tanstack/react-query";
 import {
   ArrowUpRight,
   BookOpen,
-  BriefcaseBusiness,
+  FileText,
   FolderKanban,
+  Globe,
   Images,
   Inbox,
+  MessageSquare,
   Newspaper,
   Search,
+  Server,
   ShoppingBag,
   Ticket,
   Users,
@@ -38,6 +41,12 @@ type DashboardData = {
     caseStudies: number;
     openTickets: number;
     todosOpen: number;
+    domains?: number;
+    hostingOrders?: number;
+    serviceOrders?: number;
+    hostingPending?: number;
+    servicePending?: number;
+    invoices?: number;
   };
   activities: { id: string; description: string; createdAt: string }[];
   recentProjects: {
@@ -206,10 +215,13 @@ export default function DashboardPage() {
           </p>
           <div className="mt-6 flex flex-wrap gap-2">
             <Button asChild>
-              <SoftLink href={localizedHref(locale, "/ai-scan")}>{t("runScan")}</SoftLink>
+              <SoftLink href={localizedHref(locale, "/my-orders")}>{t("myOrders")}</SoftLink>
             </Button>
             <Button asChild variant="outline">
-              <SoftLink href={localizedHref(locale, "/projects")}>{t("viewProjects")}</SoftLink>
+              <SoftLink href={localizedHref(locale, "/my-domains")}>{t("myDomains")}</SoftLink>
+            </Button>
+            <Button asChild variant="outline">
+              <SoftLink href={localizedHref(locale, "/crm/invoices")}>{t("invoices")}</SoftLink>
             </Button>
             <Button asChild variant="outline">
               <SoftLink href={localizedHref(locale, "/crm/tickets")}>{t("tickets")}</SoftLink>
@@ -218,13 +230,64 @@ export default function DashboardPage() {
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-          <StatCard label={t("statsProjects")} value={data.stats.projects} />
-          <StatCard label={t("statsAgents")} value={data.stats.agents} />
-          <StatCard label={t("statsScans")} value={data.stats.scans} />
-          <StatCard label={t("tickets")} value={data.stats.openTickets} />
+          <StatCard
+            label={t("portalDomains")}
+            value={data.stats.domains ?? 0}
+            href={localizedHref(locale, "/my-domains")}
+          />
+          <StatCard
+            label={t("portalHosting")}
+            value={data.stats.hostingOrders ?? 0}
+            hint={
+              (data.stats.hostingPending ?? 0) > 0
+                ? t("pendingOrdersHint", { count: data.stats.hostingPending ?? 0 })
+                : undefined
+            }
+            href={localizedHref(locale, "/my-orders")}
+          />
+          <StatCard
+            label={t("portalServices")}
+            value={data.stats.serviceOrders ?? 0}
+            hint={
+              (data.stats.servicePending ?? 0) > 0
+                ? t("pendingOrdersHint", { count: data.stats.servicePending ?? 0 })
+                : undefined
+            }
+            href={localizedHref(locale, "/my-orders")}
+          />
+          <StatCard
+            label={t("portalInvoices")}
+            value={data.stats.invoices ?? 0}
+            hint={t("invoicesPdfHint")}
+            href={localizedHref(locale, "/crm/invoices")}
+          />
         </div>
 
         <div className="grid gap-4 lg:grid-cols-3">
+          <QuickLink
+            href={localizedHref(locale, "/my-domains")}
+            title={t("portalDomains")}
+            description={t("clientQuickDomains")}
+            icon={Globe}
+          />
+          <QuickLink
+            href={localizedHref(locale, "/my-orders")}
+            title={t("portalHosting")}
+            description={t("clientQuickHosting")}
+            icon={Server}
+          />
+          <QuickLink
+            href={localizedHref(locale, "/my-orders")}
+            title={t("portalServices")}
+            description={t("clientQuickServices")}
+            icon={ShoppingBag}
+          />
+          <QuickLink
+            href={localizedHref(locale, "/crm/invoices")}
+            title={t("portalInvoices")}
+            description={t("clientQuickInvoices")}
+            icon={FileText}
+          />
           <QuickLink
             href={localizedHref(locale, "/projects")}
             title={t("projects")}
@@ -238,10 +301,10 @@ export default function DashboardPage() {
             icon={Ticket}
           />
           <QuickLink
-            href={localizedHref(locale, "/crm")}
-            title={t("crm")}
-            description={t("invoicesOverview")}
-            icon={BriefcaseBusiness}
+            href={localizedHref(locale, "/crm/messages")}
+            title={t("messages")}
+            description={t("clientQuickMessages")}
+            icon={MessageSquare}
           />
           <QuickLink
             href={localizedHref(locale, "/seo-analysis")}
@@ -260,7 +323,7 @@ export default function DashboardPage() {
               {data.recentTickets.map((ticket) => (
                 <SoftLink
                   key={ticket.id}
-                  href={localizedHref(locale, "/crm/tickets")}
+                  href={localizedHref(locale, `/crm/tickets/${ticket.id}`)}
                   className="flex items-center justify-between rounded-lg border border-border px-3 py-2 transition hover:border-primary/40"
                 >
                   <div className="min-w-0">

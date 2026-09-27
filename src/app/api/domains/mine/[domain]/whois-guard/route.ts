@@ -21,7 +21,7 @@ export async function GET(_request: Request, ctx: Ctx) {
   const list = await getWhoisGuardList();
   if (!list.ok) {
     return NextResponse.json(
-      { error: list.error || "Failed to load WhoisGuard" },
+      { error: list.error || "Failed to load WHOIS privacy" },
       { status: 502 },
     );
   }
@@ -49,7 +49,7 @@ export async function PUT(request: Request, ctx: Ctx) {
   const list = await getWhoisGuardList();
   if (!list.ok) {
     return NextResponse.json(
-      { error: list.error || "WhoisGuard list failed" },
+      { error: list.error || "WHOIS privacy list failed" },
       { status: 502 },
     );
   }
@@ -58,7 +58,7 @@ export async function PUT(request: Request, ctx: Ctx) {
     return NextResponse.json(
       {
         error:
-          "No WhoisGuard subscription found for this domain at Namecheap",
+          "No WHOIS privacy subscription found for this domain",
       },
       { status: 400 },
     );
@@ -70,7 +70,7 @@ export async function PUT(request: Request, ctx: Ctx) {
 
   if (!result.ok) {
     return NextResponse.json(
-      { error: result.error || "WhoisGuard update failed" },
+      { error: result.error || "WHOIS privacy update failed" },
       { status: 502 },
     );
   }

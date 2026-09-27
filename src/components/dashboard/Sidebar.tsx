@@ -25,6 +25,10 @@ import {
   Building2,
   ShoppingBag,
   ClipboardList,
+  Globe,
+  FileText,
+  MessageSquare,
+  Server,
 } from "lucide-react";
 import { localizedHref } from "@/i18n/pathnames";
 import { ThemeToggle } from "@/components/shared/ThemeToggle";
@@ -45,6 +49,14 @@ const icons: Record<string, React.ComponentType<{ className?: string }>> = {
   "/crm/leads": Inbox,
   "/shop-admin": ShoppingBag,
   "/orders": ClipboardList,
+  "/hosting-admin": Server,
+  "/hosting-orders": Server,
+  "/domains-admin": Globe,
+  "/domain-orders": Globe,
+  "/my-domains": Globe,
+  "/my-orders": ShoppingBag,
+  "/crm/invoices": FileText,
+  "/crm/messages": MessageSquare,
   "/crm/tickets": Ticket,
   "/todos": CheckSquare,
   "/users": Shield,

@@ -25,8 +25,6 @@ type Product = {
 };
 
 type Draft = {
-  fixed: string;
-  percent: string;
   offer: string;
   active: boolean;
 };
@@ -46,8 +44,6 @@ export default function DomainsAdminPage() {
   const [newTld, setNewTld] = useState("");
   const [newBuy, setNewBuy] = useState("10");
   const [newRenew, setNewRenew] = useState("10");
-  const [newFixed, setNewFixed] = useState("0");
-  const [newPercent, setNewPercent] = useState("20");
   const [drafts, setDrafts] = useState<Record<string, Draft>>({});
   const [tldSearch, setTldSearch] = useState("");
 
@@ -63,8 +59,6 @@ export default function DomainsAdminPage() {
   function draftFor(p: Product): Draft {
     return (
       drafts[p.tld] || {
-        fixed: String(centsToEurosNumber(p.markupFixedCents)),
-        percent: String(p.markupPercent),
         offer:
           p.offerPriceInCents != null && p.offerPriceInCents > 0
             ? String(centsToEurosNumber(p.offerPriceInCents))
@@ -83,8 +77,8 @@ export default function DomainsAdminPage() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         tld,
-        markupFixedCents: Math.round(Number(d.fixed.replace(",", ".")) * 100),
-        markupPercent: Number(d.percent.replace(",", ".")),
+        markupFixedCents: 0,
+        markupPercent: p.markupPercent,
         offerPriceInCents: parseOfferCents(d.offer),
         isActive: d.active,
       }),
@@ -125,11 +119,7 @@ export default function DomainsAdminPage() {
           tld,
           basePriceInCents: buyCents,
           renewBasePriceInCents: renewCents,
-          markupFixedCents: Math.max(
-            0,
-            Math.round(Number(newFixed.replace(",", ".")) * 100),
-          ),
-          markupPercent: Math.max(0, Number(newPercent.replace(",", ".")) || 0),
+          markupFixedCents: 0,
           isActive: true,
         }),
       });
@@ -197,9 +187,9 @@ export default function DomainsAdminPage() {
           Domains catalog
         </h1>
         <p className="mt-0.5 text-xs text-muted-foreground">
-          Namecheap buy prices sync nightly. Set markups for the public sell
-          price (incl. VAT). Fixed € is a flat markup; % is of the buy price.
-          Offer € overrides the sell price when set (leave empty for no offer).
+          Supplier buy prices sync nightly. Sell price = buy + tiered % of buy
+          (fixed markup is always €0). Offer € overrides the sell price when set
+          (leave empty for no offer).
         </p>
       </div>
 
@@ -248,26 +238,6 @@ export default function DomainsAdminPage() {
                 placeholder="same as buy"
               />
             </div>
-            <div>
-              <label className="mb-1 block text-xs text-muted-foreground">
-                Fixed €
-              </label>
-              <Input
-                className="h-8 w-20"
-                value={newFixed}
-                onChange={(e) => setNewFixed(e.target.value)}
-              />
-            </div>
-            <div>
-              <label className="mb-1 block text-xs text-muted-foreground">
-                %
-              </label>
-              <Input
-                className="h-8 w-16"
-                value={newPercent}
-                onChange={(e) => setNewPercent(e.target.value)}
-              />
-            </div>
             <Button
               size="sm"
               className="h-8"
@@ -278,10 +248,10 @@ export default function DomainsAdminPage() {
             </Button>
           </div>
           <p className="mt-1.5 text-xs text-muted-foreground">
-            Use Buy € and Renew buy € for manual TLDs (e.g. another registrar
-            when Namecheap does not offer it). Leave Renew empty to copy Buy.
-            For Namecheap TLDs, run Sync to refresh prices from their feed. New
-            TLDs default to 0 fixed + 20%.
+            Margin % is automatic from buy price (e.g. ≤ €2 → 40%, ≤ €5 → 35%,
+            ≤ €10 → 30%, …). Fixed markup is always €0. Use Buy € / Renew buy €
+            for manual TLDs; run Sync to refresh catalog prices from the
+            supplier.
           </p>
         </CardContent>
       </Card>
@@ -327,7 +297,7 @@ export default function DomainsAdminPage() {
                   <th className="py-2 pr-3">Buy</th>
                   <th className="py-2 pr-3">Renew buy</th>
                   <th className="py-2 pr-3">Fixed €</th>
-                  <th className="py-2 pr-3">%</th>
+                  <th className="py-2 pr-3">% (auto)</th>
                   <th className="py-2 pr-3">Sell</th>
                   <th className="py-2 pr-3">Offer €</th>
                   <th className="py-2 pr-3">Renew sell</th>
@@ -365,29 +335,9 @@ export default function DomainsAdminPage() {
                           2,
                         )}
                       </td>
-                      <td className="py-2 pr-3">
-                        <Input
-                          className="h-8 w-20"
-                          value={d.fixed}
-                          onChange={(e) =>
-                            setDrafts((prev) => ({
-                              ...prev,
-                              [p.tld]: { ...d, fixed: e.target.value },
-                            }))
-                          }
-                        />
-                      </td>
-                      <td className="py-2 pr-3">
-                        <Input
-                          className="h-8 w-20"
-                          value={d.percent}
-                          onChange={(e) =>
-                            setDrafts((prev) => ({
-                              ...prev,
-                              [p.tld]: { ...d, percent: e.target.value },
-                            }))
-                          }
-                        />
+                      <td className="py-2 pr-3 text-muted-foreground">€0.00</td>
+                      <td className="py-2 pr-3 tabular-nums text-muted-foreground">
+                        {p.markupPercent}%
                       </td>
                       <td className="py-2 pr-3">
                         {onOffer ? (

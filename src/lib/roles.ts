@@ -88,14 +88,29 @@ export const dashboardNav: DashboardNavItem[] = [
     sidebar: false,
   },
   {
-    href: "/ai-agents",
-    key: "agents",
+    href: "/my-orders",
+    key: "myOrders",
+    roles: ["CLIENT"],
+  },
+  {
+    href: "/my-domains",
+    key: "myDomains",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
   },
   {
-    href: "/crm/leads",
-    key: "leads",
-    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
+    href: "/crm",
+    key: "crm",
+    roles: ["CLIENT"],
+  },
+  {
+    href: "/crm/invoices",
+    key: "invoices",
+    roles: ["CLIENT"],
+  },
+  {
+    href: "/crm/messages",
+    key: "messages",
+    roles: ["CLIENT"],
   },
   {
     href: "/crm/tickets",
@@ -103,9 +118,24 @@ export const dashboardNav: DashboardNavItem[] = [
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
   },
   {
+    href: "/projects",
+    key: "projects",
+    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
+  },
+  {
+    href: "/ai-agents",
+    key: "agents",
+    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
+  },
+  {
     href: "/seo-analysis",
     key: "seo",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
+  },
+  {
+    href: "/crm/leads",
+    key: "leads",
+    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
   },
   {
     href: "/shop-admin",
@@ -138,11 +168,6 @@ export const dashboardNav: DashboardNavItem[] = [
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
   },
   {
-    href: "/my-domains",
-    key: "myDomains",
-    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
-  },
-  {
     href: "/crm/clients",
     key: "clients",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
@@ -150,7 +175,7 @@ export const dashboardNav: DashboardNavItem[] = [
   {
     href: "/crm",
     key: "crm",
-    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
+    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
   },
   {
     href: "/kennisbank-admin",
@@ -172,11 +197,6 @@ export const dashboardNav: DashboardNavItem[] = [
     href: "/portfolio-admin",
     key: "portfolio",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
-  },
-  {
-    href: "/projects",
-    key: "projects",
-    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
   },
   {
     href: "/case-studies-admin",

@@ -20,6 +20,10 @@ type Overview = {
     tasks: number;
     invoices: number;
     unreadMessages: number;
+    domains?: number;
+    hostingOrders?: number;
+    serviceOrders?: number;
+    domainOrders?: number;
   };
   recentTickets: {
     id: string;
@@ -84,10 +88,24 @@ export default function CrmHomePage() {
           { label: t("messages"), value: data.stats.unreadMessages, href: "/crm/messages" },
         ]
       : [
-          { label: t("tickets"), value: data.stats.openTickets, href: "/crm/tickets" },
+          {
+            label: td("portalDomains"),
+            value: data.stats.domains ?? 0,
+            href: "/my-domains",
+          },
+          {
+            label: td("portalHosting"),
+            value: data.stats.hostingOrders ?? 0,
+            href: "/my-orders",
+          },
+          {
+            label: td("portalServices"),
+            value: data.stats.serviceOrders ?? 0,
+            href: "/my-orders",
+          },
           { label: t("invoices"), value: data.stats.invoices, href: "/crm/invoices" },
+          { label: t("tickets"), value: data.stats.openTickets, href: "/crm/tickets" },
           { label: t("messages"), value: data.stats.unreadMessages, href: "/crm/messages" },
-          { label: t("projects"), value: data.stats.projects, href: "/projects" },
         ];
 
   return (
@@ -99,9 +117,20 @@ export default function CrmHomePage() {
           : t("overviewClientSubtitle")
       }
       actions={
-        <Button asChild>
-          <SoftLink href={localizedHref(locale, "/crm/tickets")}>{t("openTicket")}</SoftLink>
-        </Button>
+        data.view === "staff" ? (
+          <Button asChild>
+            <SoftLink href={localizedHref(locale, "/crm/tickets")}>{t("openTicket")}</SoftLink>
+          </Button>
+        ) : (
+          <div className="flex flex-wrap gap-2">
+            <Button asChild>
+              <SoftLink href={localizedHref(locale, "/my-orders")}>{td("myOrders")}</SoftLink>
+            </Button>
+            <Button asChild variant="outline">
+              <SoftLink href={localizedHref(locale, "/crm/tickets")}>{t("openTicket")}</SoftLink>
+            </Button>
+          </div>
+        )
       }
     >
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
@@ -153,12 +182,23 @@ export default function CrmHomePage() {
         ) : (
           <Card>
             <CardHeader>
-              <CardTitle>{t("messages")}</CardTitle>
+              <CardTitle>{td("myOrders")}</CardTitle>
             </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground">{t("clientMessagesHint")}</p>
-              <Button asChild className="mt-4" variant="outline">
-                <SoftLink href={localizedHref(locale, "/crm/messages")}>{t("messages")}</SoftLink>
+            <CardContent className="space-y-3">
+              <p className="text-sm text-muted-foreground">{t("clientOrdersHint")}</p>
+              <div className="flex flex-wrap gap-2 text-sm">
+                <span className="rounded-lg border border-border px-2.5 py-1">
+                  {td("portalHosting")}: {data.stats.hostingOrders ?? 0}
+                </span>
+                <span className="rounded-lg border border-border px-2.5 py-1">
+                  {td("portalServices")}: {data.stats.serviceOrders ?? 0}
+                </span>
+                <span className="rounded-lg border border-border px-2.5 py-1">
+                  {td("portalDomains")}: {data.stats.domainOrders ?? 0}
+                </span>
+              </div>
+              <Button asChild className="mt-2" variant="outline">
+                <SoftLink href={localizedHref(locale, "/my-orders")}>{td("myOrders")}</SoftLink>
               </Button>
             </CardContent>
           </Card>

@@ -44,7 +44,8 @@ export async function upsertOwnedDomain(input: {
       lastSyncedAt: new Date(),
     },
     update: {
-      userId: input.userId,
+      // Never steal ownership on sync/update — only claim unassigned rows.
+      ...(existing?.userId ? {} : { userId: input.userId }),
       ...(input.status ? { status: input.status } : {}),
       ...(expiresAt !== undefined ? { expiresAt } : {}),
       ...(input.autoRenewEnabled !== undefined

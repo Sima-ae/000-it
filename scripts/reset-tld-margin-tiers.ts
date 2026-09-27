@@ -1,8 +1,7 @@
 /**
- * @deprecated Use scripts/reset-tld-margin-tiers.ts — margins are buy-price tiers.
- * Kept so old docs/commands still zero fixed + refresh % from tiers for all TLDs.
+ * Enforce tiered domain margins: fixed €0 + % from buy-price brackets.
  *
- *   npx tsx scripts/reset-new-tld-margins.ts
+ *   npx tsx scripts/reset-tld-margin-tiers.ts
  */
 import { config } from "dotenv";
 config({ path: ".env" });
@@ -13,20 +12,32 @@ import { markupPercentForBuyPriceCents } from "../src/lib/domains/pricing";
 
 async function main() {
   const products = await prisma.domainProduct.findMany({
-    select: { id: true, basePriceInCents: true },
+    select: { id: true, tld: true, basePriceInCents: true },
   });
+
   let updated = 0;
   for (const p of products) {
+    const markupPercent = markupPercentForBuyPriceCents(p.basePriceInCents);
     await prisma.domainProduct.update({
       where: { id: p.id },
       data: {
         markupFixedCents: 0,
-        markupPercent: markupPercentForBuyPriceCents(p.basePriceInCents),
+        markupPercent,
       },
     });
     updated += 1;
   }
-  console.log(JSON.stringify({ updated, markup: "tiered % of buy, fixed 0" }, null, 2));
+
+  console.log(
+    JSON.stringify(
+      {
+        updated,
+        rule: "fixedCents=0, percent=tier(buyPrice)",
+      },
+      null,
+      2,
+    ),
+  );
   await prisma.$disconnect();
 }
 

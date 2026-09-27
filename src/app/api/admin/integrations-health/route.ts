@@ -81,7 +81,7 @@ export async function GET(request: Request) {
     };
   }
 
-  // Namecheap
+  // Domain registrar API
   if (!isNamecheapConfigured()) {
     report.namecheap = {
       ok: false,

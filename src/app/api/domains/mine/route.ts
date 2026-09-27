@@ -63,10 +63,14 @@ export async function PATCH(request: Request) {
   return NextResponse.json(updated);
 }
 
-/** Pull Namecheap account domains into inventory for the current user (staff: all listed). */
+/** Pull registrar account domains into inventory (staff only — never reassign client ownership). */
 export async function POST() {
   const authResult = await requireUser();
   if (authResult.error) return authResult.error;
+
+  if (!isStaffRole(authResult.session.user.role)) {
+    return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+  }
 
   const listed = await listDomains(1, 100);
   if (!listed.ok) {

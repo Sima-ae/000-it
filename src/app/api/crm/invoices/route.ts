@@ -8,6 +8,7 @@ import {
   defaultDueDate,
   type InvoiceLineItem,
 } from "@/lib/crm/invoices";
+import { crmInvoiceClientWhere } from "@/lib/portal/scope";
 
 const lineItemSchema = z.object({
   description: z.string().min(1).max(500),
@@ -37,7 +38,7 @@ const patchSchema = upsertSchema.partial().extend({
 function invoiceScope(role: string, userId: string, email: string | null | undefined) {
   if (isAdminRole(role)) return {};
   if (isStaffRole(role)) return { createdById: userId };
-  return { client: { email: email || "" } };
+  return crmInvoiceClientWhere(email);
 }
 
 function normalizeItems(items: InvoiceLineItem[]) {
@@ -61,6 +62,9 @@ export async function GET(request: Request) {
     where: {
       ...invoiceScope(session.user.role, session.user.id, session.user.email),
       deletedAt: trash ? { not: null } : null,
+      ...(!isStaffRole(session.user.role)
+        ? { status: { not: "DRAFT" as const } }
+        : {}),
     },
     orderBy: trash ? { deletedAt: "desc" } : { createdAt: "desc" },
     include: {

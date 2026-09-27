@@ -2,6 +2,11 @@ import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { requireUser } from "@/lib/api-auth";
 import { isClientRole, isStaffRole, ownScope } from "@/lib/roles";
+import {
+  crmInvoiceClientWhere,
+  normalizedClientEmail,
+  portalOrderWhere,
+} from "@/lib/portal/scope";
 
 export async function GET() {
   const { session, error } = await requireUser();
@@ -13,6 +18,8 @@ export async function GET() {
     const staff = isStaffRole(role);
     const clientScope = ownScope(role, userId);
     const ticketWhere = staff ? {} : { userId };
+    const email = normalizedClientEmail(session.user.email);
+    const orderWhere = portalOrderWhere(userId, email);
 
     const [
       clients,
@@ -25,10 +32,16 @@ export async function GET() {
       unreadMessages,
       recentTickets,
       recentClients,
+      domains,
+      hostingOrders,
+      serviceOrders,
+      domainOrders,
     ] = await Promise.all([
       staff
         ? prisma.client.count({ where: { ...clientScope, isLead: false } })
-        : prisma.client.count({ where: { email: session.user.email || undefined } }),
+        : prisma.client.count({
+            where: email ? { email } : { email: "__none__" },
+          }),
       staff
         ? prisma.client.count({ where: { ...clientScope, isLead: true } })
         : Promise.resolve(0),
@@ -61,7 +74,7 @@ export async function GET() {
             where: {
               deletedAt: null,
               status: { in: ["SENT", "OVERDUE", "PAID"] },
-              client: { email: session.user.email || "" },
+              ...crmInvoiceClientWhere(email),
             },
           }),
       prisma.crmMessage.count({
@@ -84,6 +97,22 @@ export async function GET() {
             take: 6,
           })
         : Promise.resolve([]),
+      staff
+        ? Promise.resolve(0)
+        : prisma.ownedDomain.count({ where: { userId } }),
+      staff
+        ? Promise.resolve(0)
+        : prisma.shopOrder.count({
+            where: { ...orderWhere, lineOfBusiness: "HOSTING" },
+          }),
+      staff
+        ? Promise.resolve(0)
+        : prisma.shopOrder.count({
+            where: { ...orderWhere, lineOfBusiness: "SERVICE" },
+          }),
+      staff
+        ? Promise.resolve(0)
+        : prisma.domainOrder.count({ where: orderWhere }),
     ]);
 
     return NextResponse.json({
@@ -97,6 +126,10 @@ export async function GET() {
         tasks,
         invoices,
         unreadMessages,
+        domains,
+        hostingOrders,
+        serviceOrders,
+        domainOrders,
       },
       recentTickets,
       recentClients,

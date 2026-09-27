@@ -102,7 +102,7 @@ async function fetchNamecheapXml(url: string): Promise<string> {
   const xml = String(stdout || "");
   if (!xml.trim()) {
     throw new Error(
-      `Namecheap SSH proxy returned empty response${stderr ? `: ${stderr}` : ""}`,
+      `Domain API SSH proxy returned empty response${stderr ? `: ${stderr}` : ""}`,
     );
   }
   return xml;
@@ -150,12 +150,13 @@ function friendlyNamecheapError(raw: string): string {
   const m = raw.match(/Invalid request IP:\s*([0-9.]+)/i);
   if (m) {
     return (
-      `Namecheap blocked this server IP (${m[1]}). ` +
-      `Add it under Namecheap → Profile → Tools → API Access (whitelist), ` +
+      `Domain API blocked this server IP (${m[1]}). ` +
+      `Whitelist it in the registrar API access settings, ` +
       `and set NAMECHEAP_CLIENT_IP to that IP (or auto).`
     );
   }
-  return raw;
+  // Never leak supplier brand names to API consumers / UI toasts.
+  return raw.replace(/Namecheap/gi, "domain provider");
 }
 
 export type DomainCheckResult = {
@@ -189,7 +190,7 @@ async function checkDomainList(
     return {
       ok: false,
       results: [],
-      error: friendlyNamecheapError(apiErrors(parsed) || "Namecheap check failed"),
+      error: friendlyNamecheapError(apiErrors(parsed) || "Domain check failed"),
     };
   }
   return { ok: true, results: parseCheckRows(parsed) };
@@ -301,7 +302,7 @@ export async function getDomainPricingCatalog(): Promise<{
 
   if (apiStatus(parsed) !== "OK") {
     throw new Error(
-      friendlyNamecheapError(apiErrors(parsed) || "Namecheap pricing failed"),
+      friendlyNamecheapError(apiErrors(parsed) || "Domain pricing failed"),
     );
   }
 
@@ -412,7 +413,7 @@ export async function createDomain(input: {
     ok: false,
     xml,
     error: friendlyNamecheapError(
-      apiErrors(parsed) || "Namecheap create failed",
+      apiErrors(parsed) || "Domain create failed",
     ),
   };
 }

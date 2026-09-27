@@ -68,7 +68,7 @@ export default function DomainOrdersPage() {
           Domain orders
         </h1>
         <p className="mt-1 text-sm text-muted-foreground">
-          Registrations paid via Stripe and fulfilled at Namecheap. Separate
+          Registrations paid via Stripe and fulfilled automatically. Separate
           from service and hosting orders.
         </p>
       </div>

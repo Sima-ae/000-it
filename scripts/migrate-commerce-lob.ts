@@ -59,18 +59,25 @@ async function main() {
   }
   console.log("orders tagged HOSTING", tagged);
 
+  const { markupPercentForBuyPriceCents } = await import(
+    "../src/lib/domains/pricing"
+  );
   const tlds = [
-    { tld: "nl", basePriceInCents: 550, markupFixedCents: 500, markupPercent: 0 },
-    { tld: "com", basePriceInCents: 1100, markupFixedCents: 500, markupPercent: 5 },
-    { tld: "eu", basePriceInCents: 650, markupFixedCents: 450, markupPercent: 0 },
-    { tld: "be", basePriceInCents: 700, markupFixedCents: 450, markupPercent: 0 },
-    { tld: "net", basePriceInCents: 1200, markupFixedCents: 500, markupPercent: 5 },
-    { tld: "org", basePriceInCents: 1100, markupFixedCents: 500, markupPercent: 5 },
-    { tld: "io", basePriceInCents: 3500, markupFixedCents: 700, markupPercent: 5 },
-    { tld: "app", basePriceInCents: 1400, markupFixedCents: 500, markupPercent: 5 },
-    { tld: "dev", basePriceInCents: 1400, markupFixedCents: 500, markupPercent: 5 },
-    { tld: "online", basePriceInCents: 300, markupFixedCents: 400, markupPercent: 0 },
-  ];
+    { tld: "nl", basePriceInCents: 550 },
+    { tld: "com", basePriceInCents: 1100 },
+    { tld: "eu", basePriceInCents: 650 },
+    { tld: "be", basePriceInCents: 700 },
+    { tld: "net", basePriceInCents: 1200 },
+    { tld: "org", basePriceInCents: 1100 },
+    { tld: "io", basePriceInCents: 3500 },
+    { tld: "app", basePriceInCents: 1400 },
+    { tld: "dev", basePriceInCents: 1400 },
+    { tld: "online", basePriceInCents: 300 },
+  ].map((t) => ({
+    ...t,
+    markupFixedCents: 0,
+    markupPercent: markupPercentForBuyPriceCents(t.basePriceInCents),
+  }));
   for (const t of tlds) {
     await prisma.domainProduct.upsert({
       where: { tld: t.tld },

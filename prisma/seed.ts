@@ -646,18 +646,24 @@ async function main() {
 
   
   // Domain TLD catalog (buy prices refreshed by cron / Namecheap sync)
+  // Sell = buy + tiered % of buy; fixed markup always 0
+  const { markupPercentForBuyPriceCents } = await import("@/lib/domains/pricing");
   const domainTlds = [
-    { tld: "nl", basePriceInCents: 550, markupFixedCents: 500, markupPercent: 0 },
-    { tld: "com", basePriceInCents: 1100, markupFixedCents: 500, markupPercent: 5 },
-    { tld: "eu", basePriceInCents: 650, markupFixedCents: 450, markupPercent: 0 },
-    { tld: "be", basePriceInCents: 700, markupFixedCents: 450, markupPercent: 0 },
-    { tld: "net", basePriceInCents: 1200, markupFixedCents: 500, markupPercent: 5 },
-    { tld: "org", basePriceInCents: 1100, markupFixedCents: 500, markupPercent: 5 },
-    { tld: "io", basePriceInCents: 3500, markupFixedCents: 700, markupPercent: 5 },
-    { tld: "app", basePriceInCents: 1400, markupFixedCents: 500, markupPercent: 5 },
-    { tld: "dev", basePriceInCents: 1400, markupFixedCents: 500, markupPercent: 5 },
-    { tld: "online", basePriceInCents: 300, markupFixedCents: 400, markupPercent: 0 },
-  ];
+    { tld: "nl", basePriceInCents: 550 },
+    { tld: "com", basePriceInCents: 1100 },
+    { tld: "eu", basePriceInCents: 650 },
+    { tld: "be", basePriceInCents: 700 },
+    { tld: "net", basePriceInCents: 1200 },
+    { tld: "org", basePriceInCents: 1100 },
+    { tld: "io", basePriceInCents: 3500 },
+    { tld: "app", basePriceInCents: 1400 },
+    { tld: "dev", basePriceInCents: 1400 },
+    { tld: "online", basePriceInCents: 300 },
+  ].map((item) => ({
+    ...item,
+    markupFixedCents: 0,
+    markupPercent: markupPercentForBuyPriceCents(item.basePriceInCents),
+  }));
   for (const item of domainTlds) {
     await prisma.domainProduct.upsert({
       where: { tld: item.tld },
