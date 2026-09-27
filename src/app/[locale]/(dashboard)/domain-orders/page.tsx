@@ -91,7 +91,7 @@ export default function DomainOrdersPage() {
           ) : !orders.length ? (
             <p className="text-sm text-muted-foreground">No domain orders yet.</p>
           ) : (
-            <table className="w-full min-w-[720px] border-collapse text-left text-sm">
+            <table className="w-full min-w-180 border-collapse text-left text-sm">
               <thead className="border-b border-border text-muted-foreground">
                 <tr>
                   <th className="py-2 pr-3">Order</th>

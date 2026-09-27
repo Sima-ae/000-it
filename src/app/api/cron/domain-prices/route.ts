@@ -43,7 +43,10 @@ async function handle(request: Request) {
 
   if (!isNamecheapConfigured()) {
     return NextResponse.json(
-      { error: "NAMECHEAP_NOT_CONFIGURED" },
+      {
+        error:
+          "NAMECHEAP_NOT_CONFIGURED — set NAMECHEAP_USER and NAMECHEAP_API_KEY, then restart the app",
+      },
       { status: 503 },
     );
   }

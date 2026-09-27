@@ -22,6 +22,11 @@ type Product = {
 export default function DomainsAdminPage() {
   const qc = useQueryClient();
   const [syncing, setSyncing] = useState(false);
+  const [adding, setAdding] = useState(false);
+  const [newTld, setNewTld] = useState("");
+  const [newBuy, setNewBuy] = useState("10");
+  const [newFixed, setNewFixed] = useState("5");
+  const [newPercent, setNewPercent] = useState("0");
   const [drafts, setDrafts] = useState<
     Record<string, { fixed: string; percent: string; active: boolean }>
   >({});
@@ -67,6 +72,45 @@ export default function DomainsAdminPage() {
     void qc.invalidateQueries({ queryKey: ["domains-admin-products"] });
   }
 
+  async function addTld() {
+    const tld = newTld.trim().toLowerCase().replace(/^\./, "");
+    if (!/^[a-z0-9-]{2,30}$/.test(tld)) {
+      toast.error("Enter a valid TLD (e.g. shop or com)");
+      return;
+    }
+    setAdding(true);
+    try {
+      const res = await fetch("/api/domains/admin/products", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          tld,
+          basePriceInCents: Math.max(
+            1,
+            Math.round(Number(newBuy.replace(",", ".")) * 100),
+          ),
+          markupFixedCents: Math.max(
+            0,
+            Math.round(Number(newFixed.replace(",", ".")) * 100),
+          ),
+          markupPercent: Math.max(0, Number(newPercent.replace(",", ".")) || 0),
+          isActive: true,
+        }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        throw new Error(data.error || "Could not add TLD");
+      }
+      toast.success(`.${tld} added`);
+      setNewTld("");
+      void qc.invalidateQueries({ queryKey: ["domains-admin-products"] });
+    } catch (error) {
+      toast.error(error instanceof Error ? error.message : "Add failed");
+    } finally {
+      setAdding(false);
+    }
+  }
+
   async function syncPrices() {
     setSyncing(true);
     try {
@@ -91,7 +135,7 @@ export default function DomainsAdminPage() {
           </h1>
           <p className="mt-1 text-sm text-muted-foreground">
             Namecheap buy prices sync nightly. Set markups for the public sell
-            price (incl. VAT).
+            price (incl. VAT). Fixed € is a flat markup; % is of the buy price.
           </p>
         </div>
         <Button onClick={() => void syncPrices()} disabled={syncing}>
@@ -101,13 +145,71 @@ export default function DomainsAdminPage() {
 
       <Card>
         <CardHeader>
+          <CardTitle className="text-base">Add TLD</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="flex flex-wrap items-end gap-3">
+            <div>
+              <label className="mb-1 block text-xs text-muted-foreground">
+                TLD
+              </label>
+              <Input
+                className="h-9 w-28"
+                placeholder="shop"
+                value={newTld}
+                onChange={(e) => setNewTld(e.target.value)}
+              />
+            </div>
+            <div>
+              <label className="mb-1 block text-xs text-muted-foreground">
+                Buy €
+              </label>
+              <Input
+                className="h-9 w-24"
+                value={newBuy}
+                onChange={(e) => setNewBuy(e.target.value)}
+              />
+            </div>
+            <div>
+              <label className="mb-1 block text-xs text-muted-foreground">
+                Fixed €
+              </label>
+              <Input
+                className="h-9 w-24"
+                value={newFixed}
+                onChange={(e) => setNewFixed(e.target.value)}
+              />
+            </div>
+            <div>
+              <label className="mb-1 block text-xs text-muted-foreground">
+                %
+              </label>
+              <Input
+                className="h-9 w-20"
+                value={newPercent}
+                onChange={(e) => setNewPercent(e.target.value)}
+              />
+            </div>
+            <Button onClick={() => void addTld()} disabled={adding}>
+              {adding ? "Adding…" : "Add TLD"}
+            </Button>
+          </div>
+          <p className="mt-2 text-xs text-muted-foreground">
+            After adding, run Sync to refresh the buy price from Namecheap when
+            that TLD is in their pricing feed.
+          </p>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
           <CardTitle className="text-base">TLD margins</CardTitle>
         </CardHeader>
         <CardContent className="overflow-x-auto">
           {isLoading ? (
             <p className="text-sm text-muted-foreground">Loading…</p>
           ) : (
-            <table className="w-full min-w-[640px] border-collapse text-left text-sm">
+            <table className="w-full min-w-160 border-collapse text-left text-sm">
               <thead className="border-b border-border text-muted-foreground">
                 <tr>
                   <th className="py-2 pr-3">TLD</th>

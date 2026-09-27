@@ -103,6 +103,8 @@ export async function GET(request: Request) {
     return NextResponse.json({ results });
   } catch (error) {
     console.error("[domains/check]", error);
-    return NextResponse.json({ error: "Check failed" }, { status: 502 });
+    const message =
+      error instanceof Error ? error.message : "Check failed";
+    return NextResponse.json({ error: message }, { status: 502 });
   }
 }
