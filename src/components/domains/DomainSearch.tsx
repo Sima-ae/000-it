@@ -708,14 +708,14 @@ export function DomainSearch() {
   }
 
   return (
-    <div className="w-full space-y-4">
+    <div className="w-full min-w-0 space-y-4">
       <form
         onSubmit={searchForm.handleSubmit((values) => {
           void runSearch(values.query);
         })}
         className="flex flex-col gap-3 sm:flex-row"
       >
-        <div className="flex-1">
+        <div className="min-w-0 flex-1">
           <Input
             {...searchForm.register("query", {
               onChange: (e) => {
@@ -723,7 +723,7 @@ export function DomainSearch() {
               },
             })}
             placeholder={t("placeholder")}
-            className="h-12 rounded-2xl"
+            className="h-12 w-full rounded-2xl"
             autoComplete="off"
             onKeyDown={(e) => {
               // Allow Enter to always start a fresh search, even mid-scan
@@ -745,7 +745,7 @@ export function DomainSearch() {
         <Button
           type="submit"
           size="lg"
-          className="h-12 rounded-2xl"
+          className="h-12 w-full shrink-0 rounded-2xl sm:w-auto sm:min-w-36"
         >
           {isSearching || isSearchingMore ? t("searching") : t("search")}
         </Button>
@@ -1136,11 +1136,11 @@ export function DomainSearch() {
                 return (
                   <div
                     key={row.domain}
-                    className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-border/70 bg-background/80 px-4 py-3.5"
+                    className="flex min-w-0 flex-col gap-3 rounded-2xl border border-border/70 bg-background/80 px-3 py-3.5 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between sm:px-4"
                   >
-                    <div className="min-w-0">
-                      <div className="flex flex-wrap items-center gap-2">
-                        <p className="truncate text-base font-semibold tracking-tight sm:text-lg">
+                    <div className="min-w-0 flex-1">
+                      <div className="flex min-w-0 flex-wrap items-center gap-2">
+                        <p className="max-w-full break-all text-base font-semibold tracking-tight sm:truncate sm:break-normal sm:text-lg">
                           {row.domain}
                         </p>
                         {premium ? <PremiumBadge /> : null}
@@ -1178,16 +1178,16 @@ export function DomainSearch() {
                     {row.available ? (
                       <Button
                         variant="accent"
-                        className="rounded-xl"
+                        className="w-full rounded-xl sm:w-auto"
                         onClick={() => setCheckoutDomain(row)}
                       >
                         {t("order")}
                       </Button>
                     ) : (
-                      <div className="flex flex-wrap items-center gap-2">
+                      <div className="flex w-full flex-col gap-2 sm:w-auto sm:flex-row sm:flex-wrap sm:items-center">
                         <Button
                           type="button"
-                          className="rounded-xl bg-muted text-muted-foreground hover:bg-accent hover:text-accent-foreground"
+                          className="w-full rounded-xl bg-muted text-muted-foreground hover:bg-accent hover:text-accent-foreground sm:w-auto"
                           onClick={() => openTransfer(row)}
                         >
                           <ArrowLeftRight className="h-3.5 w-3.5" />
@@ -1196,7 +1196,7 @@ export function DomainSearch() {
                         <Button
                           asChild
                           variant="destructive"
-                          className="rounded-xl"
+                          className="w-full rounded-xl sm:w-auto"
                         >
                           <a
                             href={whoisLookupUrl(row.domain, row.tld)}

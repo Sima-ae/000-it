@@ -59,7 +59,7 @@ export default async function DomainsPage({
   }
 
   return (
-    <div>
+    <div className="min-w-0 overflow-x-hidden">
       <section className="relative overflow-hidden border-b border-border/60">
         <div
           className="pointer-events-none absolute inset-0 opacity-70"
@@ -68,18 +68,20 @@ export default async function DomainsPage({
               "radial-gradient(ellipse 70% 55% at 15% 0%, color-mix(in oklab, var(--primary) 18%, transparent), transparent 55%), radial-gradient(ellipse 60% 45% at 95% 70%, color-mix(in oklab, var(--accent) 14%, transparent), transparent 50%)",
           }}
         />
-        <div className="relative mx-auto max-w-7xl px-4 py-14 md:px-6 md:py-20">
+        <div className="relative mx-auto w-full max-w-7xl px-4 py-10 sm:px-5 md:px-6 md:py-20">
           <Reveal>
-            <h1 className="font-display text-3xl font-semibold tracking-tight whitespace-nowrap sm:text-4xl md:text-5xl">
-              {t("heroTitle")}
-            </h1>
-            <div className="mt-4 max-w-5xl space-y-1.5 text-muted-foreground">
-              <p className="text-base leading-snug md:text-lg md:whitespace-nowrap">
-                {t("heroSubtitle")}
-              </p>
-              <p className="text-xs leading-snug md:text-sm md:whitespace-nowrap">
-                {t("heroSubtitleNote")}
-              </p>
+            <div className="mx-auto max-w-3xl text-center md:mx-0 md:max-w-none md:text-left">
+              <h1 className="font-display text-balance text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl">
+                {t("heroTitle")}
+              </h1>
+              <div className="mt-4 space-y-1.5 text-muted-foreground">
+                <p className="text-pretty text-base leading-snug md:max-w-3xl md:text-lg">
+                  {t("heroSubtitle")}
+                </p>
+                <p className="text-pretty text-xs leading-snug md:max-w-3xl md:text-sm">
+                  {t("heroSubtitleNote")}
+                </p>
+              </div>
             </div>
           </Reveal>
 
@@ -100,15 +102,15 @@ export default async function DomainsPage({
           ) : null}
 
           <Reveal delay={0.05}>
-            <div className="mt-10 w-full rounded-[1.75rem] border border-border/70 bg-background/80 p-4 shadow-sm backdrop-blur sm:p-5 md:p-6">
+            <div className="mt-8 w-full min-w-0 overflow-hidden rounded-[1.5rem] border border-border/70 bg-background/80 p-3 shadow-sm backdrop-blur sm:mt-10 sm:rounded-[1.75rem] sm:p-5 md:p-6">
               <DomainSearch />
             </div>
           </Reveal>
         </div>
       </section>
 
-      <div className="mx-auto max-w-7xl px-4 py-14 md:px-6 md:py-16">
-        <div className="grid gap-10 md:grid-cols-3">
+      <div className="mx-auto w-full max-w-7xl px-4 py-10 sm:px-5 md:px-6 md:py-16">
+        <div className="grid gap-8 text-center sm:gap-10 md:grid-cols-3 md:text-left">
           {(
             [
               ["step1Title", "step1Body"],
@@ -117,51 +119,55 @@ export default async function DomainsPage({
             ] as const
           ).map(([titleKey, bodyKey], i) => (
             <Reveal key={titleKey} delay={i * 0.04}>
-              <div>
+              <div className="mx-auto max-w-md md:mx-0 md:max-w-none">
                 <p className="text-xs font-semibold uppercase tracking-[0.14em] text-primary">
                   0{i + 1}
                 </p>
-                <h2 className="font-display mt-2 text-xl font-semibold tracking-tight">
+                <h2 className="font-display mt-2 text-balance text-xl font-semibold tracking-tight">
                   {t(titleKey)}
                 </h2>
-                <p className="mt-2 text-sm text-muted-foreground">{t(bodyKey)}</p>
+                <p className="mt-2 text-pretty text-sm text-muted-foreground">
+                  {t(bodyKey)}
+                </p>
               </div>
             </Reveal>
           ))}
         </div>
 
         <Reveal delay={0.08}>
-          <div className="mt-14 rounded-[1.75rem] border border-border/70 bg-linear-to-br from-primary/10 via-background to-accent/10 px-6 py-8 md:px-10">
-            <h2 className="font-display text-2xl font-semibold tracking-tight">
+          <div className="mt-12 rounded-[1.5rem] border border-border/70 bg-linear-to-br from-primary/10 via-background to-accent/10 px-4 py-7 sm:mt-14 sm:rounded-[1.75rem] sm:px-6 md:px-10 md:py-8">
+            <h2 className="font-display text-balance text-2xl font-semibold tracking-tight">
               {t("transferTitle")}
             </h2>
-            <p className="mt-2 max-w-2xl text-muted-foreground">
+            <p className="mt-2 max-w-2xl text-pretty text-muted-foreground">
               {t("transferBody")}
             </p>
-            <div className="mt-5">
+            <div className="mt-5 min-w-0">
               <DomainTransferForm />
             </div>
           </div>
         </Reveal>
 
         <Reveal delay={0.1}>
-          <div className="mt-14 rounded-[1.75rem] border border-border/70 bg-linear-to-br from-primary/10 via-background to-accent/10 px-6 py-8 md:px-10">
-            <h2 className="font-display text-2xl font-semibold tracking-tight">
+          <div className="mt-12 rounded-[1.5rem] border border-border/70 bg-linear-to-br from-primary/10 via-background to-accent/10 px-4 py-7 sm:mt-14 sm:rounded-[1.75rem] sm:px-6 md:px-10 md:py-8">
+            <h2 className="font-display text-balance text-2xl font-semibold tracking-tight">
               {t("dnsTitle")}
             </h2>
-            <p className="mt-2 max-w-2xl text-muted-foreground">{t("dnsBody")}</p>
-            <div className="mt-5 flex flex-wrap gap-3">
-              <Button asChild className="rounded-2xl">
+            <p className="mt-2 max-w-2xl text-pretty text-muted-foreground">
+              {t("dnsBody")}
+            </p>
+            <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <Button asChild className="w-full rounded-2xl sm:w-auto">
                 <SoftLink href={localizedHref(locale, "/my-domains")}>
                   {t("ctaMyDomains")}
                 </SoftLink>
               </Button>
-              <Button asChild variant="outline" className="rounded-2xl">
+              <Button asChild variant="outline" className="w-full rounded-2xl sm:w-auto">
                 <SoftLink href={localizedHref(locale, "/afspraak")}>
                   {t("ctaBook")}
                 </SoftLink>
               </Button>
-              <Button asChild variant="outline" className="rounded-2xl">
+              <Button asChild variant="outline" className="w-full rounded-2xl sm:w-auto">
                 <SoftLink href={localizedHref(locale, "/contact")}>
                   {t("ctaContact")}
                 </SoftLink>
