@@ -18,16 +18,16 @@ export type DomainRenewPricingInput = {
  * Fixed € markup is always 0 — sell = buy + (buy × this %).
  *
  * Tiers (buy price incl. converted EUR):
- * ≤ €2 → 40% · ≤ €5 → 35% · ≤ €10 → 30% · ≤ €50 → 25% · ≤ €100 → 20%
+ * ≤ €2 → 60% · ≤ €5 → 50% · ≤ €10 → 40% · ≤ €50 → 30% · ≤ €100 → 20%
  * ≤ €1.000 → 15% · ≤ €5.000 → 10% · ≤ €50.000 → 5% · ≤ €100.000 → 4%
  * ≤ €500.000 → 3% · ≤ €1.000.000 → 2% · above → 1%
  */
 export function markupPercentForBuyPriceCents(buyPriceInCents: number): number {
   const c = Math.max(0, Math.round(buyPriceInCents));
-  if (c <= 200) return 40; // ≤ €2,00
-  if (c <= 500) return 35; // ≤ €5,00
-  if (c <= 1_000) return 30; // ≤ €10,00
-  if (c <= 5_000) return 25; // ≤ €50,00
+  if (c <= 200) return 60; // ≤ €2,00
+  if (c <= 500) return 50; // ≤ €5,00
+  if (c <= 1_000) return 40; // ≤ €10,00
+  if (c <= 5_000) return 30; // ≤ €50,00
   if (c <= 10_000) return 20; // ≤ €100,00
   if (c <= 100_000) return 15; // ≤ €1.000,00
   if (c <= 500_000) return 10; // ≤ €5.000,00
