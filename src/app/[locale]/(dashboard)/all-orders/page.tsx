@@ -27,8 +27,8 @@ type DomainOrder = {
 
 const TABS: { id: TabId; icon: typeof ShoppingBag }[] = [
   { id: "services", icon: ShoppingBag },
-  { id: "hosting", icon: Server },
   { id: "domains", icon: Globe },
+  { id: "hosting", icon: Server },
 ];
 
 function parseTab(raw: string | null): TabId {

@@ -45,8 +45,10 @@ type DashboardData = {
     domains?: number;
     hostingOrders?: number;
     serviceOrders?: number;
+    domainOrders?: number;
     hostingPending?: number;
     servicePending?: number;
+    domainPending?: number;
     invoices?: number;
   };
   activities: { id: string; description: string; createdAt: string }[];
@@ -576,6 +578,33 @@ export default function DashboardPage() {
           title={t("shop")}
           description={t("adminQuickShop")}
           icon={ShoppingBag}
+        />
+      </div>
+
+      <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+        <StatCard
+          label={t("portalServices")}
+          value={data.stats.serviceOrders ?? 0}
+          valueClassName={workloadTone(data.stats.servicePending ?? 0)}
+          href={`${localizedHref(locale, "/all-orders")}?tab=services`}
+        />
+        <StatCard
+          label={t("portalDomains")}
+          value={data.stats.domainOrders ?? 0}
+          valueClassName={workloadTone(data.stats.domainPending ?? 0)}
+          href={`${localizedHref(locale, "/all-orders")}?tab=domains`}
+        />
+        <StatCard
+          label={t("portalHosting")}
+          value={data.stats.hostingOrders ?? 0}
+          valueClassName={workloadTone(data.stats.hostingPending ?? 0)}
+          href={`${localizedHref(locale, "/all-orders")}?tab=hosting`}
+        />
+        <StatCard
+          label={t("seo")}
+          value={data.stats.scans}
+          valueClassName="text-primary"
+          href={localizedHref(locale, "/seo-analysis")}
         />
       </div>
 

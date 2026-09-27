@@ -35,7 +35,10 @@ export async function GET() {
             status: { in: ["PENDING", "IN_PROGRESS", "REVIEW"] },
           },
         }),
-        prisma.aIScan.count({ where: { userId } }),
+        prisma.aIScan.count({
+          where:
+            isStaffRole(role) && !isManagerRole(role) ? {} : { userId },
+        }),
         prisma.activity.findMany({
           where: isStaffRole(role) && !isManagerRole(role) ? {} : { userId },
           orderBy: { createdAt: "desc" },
@@ -133,6 +136,8 @@ export async function GET() {
       portalInvoices,
       hostingPending,
       servicePending,
+      domainOrdersCount,
+      domainPending,
     ] = isClientRole(role)
       ? await Promise.all([
           prisma.ownedDomain.count({ where: { userId } }),
@@ -163,8 +168,25 @@ export async function GET() {
               status: "PENDING",
             },
           }),
+          Promise.resolve(0),
+          Promise.resolve(0),
         ])
-      : [0, 0, 0, 0, 0, 0];
+      : isStaffRole(role)
+        ? await Promise.all([
+            Promise.resolve(0),
+            prisma.shopOrder.count({ where: { lineOfBusiness: "HOSTING" } }),
+            prisma.shopOrder.count({ where: { lineOfBusiness: "SERVICE" } }),
+            Promise.resolve(0),
+            prisma.shopOrder.count({
+              where: { lineOfBusiness: "HOSTING", status: "PENDING" },
+            }),
+            prisma.shopOrder.count({
+              where: { lineOfBusiness: "SERVICE", status: "PENDING" },
+            }),
+            prisma.domainOrder.count(),
+            prisma.domainOrder.count({ where: { status: "PENDING" } }),
+          ])
+        : [0, 0, 0, 0, 0, 0, 0, 0];
 
     return NextResponse.json({
       role,
@@ -187,8 +209,10 @@ export async function GET() {
         domains: portalDomains,
         hostingOrders: hostingOrdersCount,
         serviceOrders: serviceOrdersCount,
+        domainOrders: domainOrdersCount,
         hostingPending,
         servicePending,
+        domainPending,
         invoices: portalInvoices,
       },
       activities,
