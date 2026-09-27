@@ -36,6 +36,11 @@ async function main() {
     console.error(`[generate-sitemap] INVALID localhost URL in sitemap: ${bad}`);
     process.exit(1);
   }
+
+  if (!result.indexFiles.length || result.urlCount < 1) {
+    console.error("[generate-sitemap] EMPTY sitemap — refusing to ship zero URLs");
+    process.exit(1);
+  }
 }
 
 main().catch((error) => {

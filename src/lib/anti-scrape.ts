@@ -391,6 +391,15 @@ export function antiScrapeResponse(
     return denied(request, 403);
   }
 
+  // Child sitemap XML must stay publicly readable (Google/Bing/validators).
+  // Only urls.json (IndexNow payload) stays blocked above.
+  if (
+    pathname === "/sitemap.xml" ||
+    (pathname.startsWith("/sitemaps/") && pathname.endsWith(".xml"))
+  ) {
+    return null;
+  }
+
   if (isAntiScrapeAllowlisted(pathname)) return null;
 
   if (process.env.NODE_ENV !== "production" || isLoopbackHost(request)) {

@@ -768,6 +768,8 @@ model DomainProduct {
   markupPercent         Float         @default(0)
   /// Optional promo sell price (EUR cents). When set and below list, used at checkout.
   offerPriceInCents     Int?
+  /// When true, nightly/supplier sync must not overwrite buy/renew prices (manual TLDs / missing supplier pricing).
+  manualPricing         Boolean       @default(false)
   isActive              Boolean       @default(true)
   createdAt             DateTime      @default(now())
   updatedAt             DateTime      @updatedAt

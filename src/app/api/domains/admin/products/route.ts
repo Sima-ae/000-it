@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 import { prisma } from "@/lib/prisma";
 import { requireRole } from "@/lib/api-auth";
+import { isSuperAdmin } from "@/lib/roles";
 import {
   sellPriceCents,
   renewSellPriceCents,
@@ -18,13 +19,15 @@ const upsertSchema = z.object({
     .max(30)
     .regex(/^[a-z0-9-]+$/i)
     .transform((v) => v.toLowerCase().replace(/^\./, "")),
-  /** Accepted for backwards compatibility; always forced to 0. */
   markupFixedCents: z.number().int().nonnegative().max(1_000_000).optional(),
-  /** Accepted for backwards compatibility; overwritten from buy-price tiers. */
   markupPercent: z.number().nonnegative().max(500).optional(),
   isActive: z.boolean().default(true),
+  /** SUPER_ADMIN only — registration buy price (EUR cents). */
   basePriceInCents: z.number().int().positive().max(10_000_000).optional(),
+  /** SUPER_ADMIN only — renew buy price (EUR cents). */
   renewBasePriceInCents: z.number().int().nonnegative().max(10_000_000).optional(),
+  /** SUPER_ADMIN only — lock prices against supplier sync. */
+  manualPricing: z.boolean().optional(),
   offerPriceInCents: z
     .number()
     .int()
@@ -63,8 +66,9 @@ export async function GET() {
   return NextResponse.json(rows.map((p) => withPrices(p)));
 }
 
+/** Create / upsert TLD — SUPER_ADMIN only (manual catalog entries). */
 export async function POST(request: Request) {
-  const authResult = await requireRole(["SUPER_ADMIN", "ADMIN", "MANAGER"]);
+  const authResult = await requireRole(["SUPER_ADMIN"]);
   if (authResult.error) return authResult.error;
 
   const parsed = upsertSchema.safeParse(await request.json().catch(() => null));
@@ -76,15 +80,16 @@ export async function POST(request: Request) {
   }
 
   const data = parsed.data;
-  const existing = await prisma.domainProduct.findUnique({
-    where: { tld: data.tld },
-  });
-  const basePriceInCents =
-    data.basePriceInCents ?? existing?.basePriceInCents ?? 1000;
+  if (data.basePriceInCents == null) {
+    return NextResponse.json(
+      { error: "basePriceInCents is required when adding a TLD" },
+      { status: 400 },
+    );
+  }
+
+  const basePriceInCents = data.basePriceInCents;
   const renewBasePriceInCents =
-    data.renewBasePriceInCents ??
-    existing?.renewBasePriceInCents ??
-    basePriceInCents;
+    data.renewBasePriceInCents ?? data.basePriceInCents;
   const markupPercent = markupPercentForBuyPriceCents(basePriceInCents);
 
   const item = await prisma.domainProduct.upsert({
@@ -95,19 +100,17 @@ export async function POST(request: Request) {
       renewBasePriceInCents,
       markupFixedCents: 0,
       markupPercent,
+      manualPricing: true,
       isActive: data.isActive,
       offerPriceInCents: data.offerPriceInCents ?? null,
     },
     update: {
+      basePriceInCents,
+      renewBasePriceInCents,
       markupFixedCents: 0,
       markupPercent,
+      manualPricing: true,
       isActive: data.isActive,
-      ...(data.basePriceInCents != null
-        ? { basePriceInCents: data.basePriceInCents }
-        : {}),
-      ...(data.renewBasePriceInCents != null
-        ? { renewBasePriceInCents: data.renewBasePriceInCents }
-        : {}),
       ...(data.offerPriceInCents !== undefined
         ? { offerPriceInCents: data.offerPriceInCents }
         : {}),
@@ -131,6 +134,19 @@ export async function PATCH(request: Request) {
   }
 
   const data = parsed.data;
+  const superAdmin = isSuperAdmin(authResult.session.user.role);
+  const wantsPriceEdit =
+    data.basePriceInCents != null ||
+    data.renewBasePriceInCents != null ||
+    data.manualPricing != null;
+
+  if (wantsPriceEdit && !superAdmin) {
+    return NextResponse.json(
+      { error: "Only SUPER_ADMIN may edit buy / renew prices" },
+      { status: 403 },
+    );
+  }
+
   const existing = await prisma.domainProduct.findUnique({
     where: { tld: data.tld },
   });
@@ -140,18 +156,27 @@ export async function PATCH(request: Request) {
 
   const basePriceInCents = data.basePriceInCents ?? existing.basePriceInCents;
 
+  const manualPricing = superAdmin
+    ? data.manualPricing != null
+      ? data.manualPricing
+      : data.basePriceInCents != null || data.renewBasePriceInCents != null
+        ? true
+        : existing.manualPricing
+    : existing.manualPricing;
+
   const item = await prisma.domainProduct.update({
     where: { tld: data.tld },
     data: {
       markupFixedCents: 0,
       markupPercent: markupPercentForBuyPriceCents(basePriceInCents),
       isActive: data.isActive,
-      ...(data.basePriceInCents != null
+      ...(superAdmin && data.basePriceInCents != null
         ? { basePriceInCents: data.basePriceInCents }
         : {}),
-      ...(data.renewBasePriceInCents != null
+      ...(superAdmin && data.renewBasePriceInCents != null
         ? { renewBasePriceInCents: data.renewBasePriceInCents }
         : {}),
+      ...(superAdmin ? { manualPricing } : {}),
       ...(data.offerPriceInCents !== undefined
         ? { offerPriceInCents: data.offerPriceInCents }
         : {}),

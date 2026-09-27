@@ -111,11 +111,17 @@ export async function syncDomainPricesFromNamecheap(): Promise<
           renewBasePriceInCents: renewBasePriceInCents ?? 0,
           markupFixedCents: DEFAULT_MARKUP_FIXED_CENTS,
           markupPercent: markupPercentForBuyPriceCents(basePriceInCents),
+          manualPricing: false,
           isActive: true,
         },
       });
       created += 1;
       if (renewBasePriceInCents != null) renewUpdated += 1;
+      continue;
+    }
+
+    // Manual buy/renew (e.g. .be or TLDs not sold by supplier) — never overwrite.
+    if (existing.manualPricing) {
       continue;
     }
 
@@ -139,7 +145,7 @@ export async function syncDomainPricesFromNamecheap(): Promise<
     const existing = await prisma.domainProduct.findUnique({
       where: { tld: row.tld },
     });
-    if (!existing) continue;
+    if (!existing || existing.manualPricing) continue;
     const renewBasePriceInCents = usdToEurCents(row.priceUsd, rate);
     await prisma.domainProduct.update({
       where: { tld: row.tld },

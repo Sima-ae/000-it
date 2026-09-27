@@ -20,14 +20,26 @@ import { hydrateAllEntitySlugs } from "@/lib/entity-slugs";
 
 const LOCALES = enabledLanguages().map((l) => l.code);
 
+/**
+ * ISO/BCP47 tags for sitemap xhtml:link. App locale `cnr` is not a valid
+ * ISO 639-1 hreflang — Google may discard urlsets that use it.
+ */
+const HREFLANG_BY_LOCALE: Record<string, string> = {
+  cnr: "sr-ME",
+};
+
+function hreflangForLocale(locale: string) {
+  return HREFLANG_BY_LOCALE[locale] || locale;
+}
+
 /** Bump when regenerating after a major content release. */
-const CONTENT_REV = "2026-09-14c";
+const CONTENT_REV = "2026-09-27a";
 
 /**
- * Soft cap per file. With ~35 hreflang alternates, keep well under the
- * 50MB / 50_000 URL sitemap protocol limits.
+ * Soft cap per file. With ~35 hreflang alternates, keep files well under
+ * Google's practical fetch limits (~10MB) and the 50MB / 50k URL protocol max.
  */
-const MAX_URLS_PER_FILE = 4000;
+const MAX_URLS_PER_FILE = 1000;
 
 export type SitemapUrlEntry = {
   loc: string;
@@ -65,15 +77,17 @@ function pushLocalized(
 ) {
   const langs = localizedUrls(path);
   const priority = Math.min(1, Math.max(0, opts.priority)).toFixed(2);
-  for (const locale of LOCALES) {
-    entries.push({
-      loc: langs[locale],
-      lastmod: opts.lastmod,
-      changefreq: opts.changefreq,
-      priority,
-      alternates: langs,
-    });
-  }
+  // One <url> per page (default locale) + xhtml hreflang for every language.
+  // Emitting all 35 locales as separate <loc> rows bloated files to 20MB+ and
+  // left Google Search Console at 0 discovered pages.
+  const defaultLocale = LOCALES.includes("nl") ? "nl" : LOCALES[0];
+  entries.push({
+    loc: langs[defaultLocale] || Object.values(langs)[0],
+    lastmod: opts.lastmod,
+    changefreq: opts.changefreq,
+    priority,
+    alternates: langs,
+  });
 }
 
 function escapeXml(value: string) {
@@ -85,19 +99,41 @@ function escapeXml(value: string) {
     .replace(/'/g, "&apos;");
 }
 
+/** Percent-encode non-ASCII path segments — required by the sitemap protocol. */
+function encodeSitemapUrl(raw: string): string {
+  try {
+    const u = new URL(raw);
+    u.pathname = u.pathname
+      .split("/")
+      .map((segment) => {
+        if (!segment) return segment;
+        try {
+          return encodeURIComponent(decodeURIComponent(segment));
+        } catch {
+          return encodeURIComponent(segment);
+        }
+      })
+      .join("/");
+    return u.toString();
+  } catch {
+    return raw;
+  }
+}
+
 function renderUrlset(entries: SitemapUrlEntry[]) {
   const body = entries
     .map((entry) => {
+      const loc = encodeSitemapUrl(entry.loc);
       const alts = entry.alternates
         ? Object.entries(entry.alternates)
             .map(
               ([lang, href]) =>
-                `    <xhtml:link rel="alternate" hreflang="${escapeXml(lang)}" href="${escapeXml(href)}" />`,
+                `    <xhtml:link rel="alternate" hreflang="${escapeXml(hreflangForLocale(lang))}" href="${escapeXml(encodeSitemapUrl(href))}" />`,
             )
             .concat(
               entry.alternates.nl
                 ? [
-                    `    <xhtml:link rel="alternate" hreflang="x-default" href="${escapeXml(entry.alternates.nl)}" />`,
+                    `    <xhtml:link rel="alternate" hreflang="x-default" href="${escapeXml(encodeSitemapUrl(entry.alternates.nl))}" />`,
                   ]
                 : [],
             )
@@ -106,7 +142,7 @@ function renderUrlset(entries: SitemapUrlEntry[]) {
 
       return [
         "  <url>",
-        `    <loc>${escapeXml(entry.loc)}</loc>`,
+        `    <loc>${escapeXml(loc)}</loc>`,
         `    <lastmod>${escapeXml(entry.lastmod)}</lastmod>`,
         `    <changefreq>${entry.changefreq}</changefreq>`,
         `    <priority>${entry.priority}</priority>`,
@@ -248,17 +284,11 @@ export async function collectSitemapSets() {
   try {
     const posts = await listPublishedNewsIds();
     for (const post of posts) {
-      const lastmod = toIsoDate(post.updatedAt || post.date);
-      const langs = localizedUrls(`/nieuws/${post.id}`);
-      for (const locale of LOCALES) {
-        news.push({
-          loc: langs[locale],
-          lastmod,
-          changefreq: "weekly",
-          priority: "0.80",
-          alternates: langs,
-        });
-      }
+      pushLocalized(news, `/nieuws/${post.id}`, {
+        lastmod: toIsoDate(post.updatedAt || post.date),
+        changefreq: "weekly",
+        priority: 0.8,
+      });
     }
   } catch (error) {
     console.warn("[sitemap] news unavailable:", error);
@@ -417,9 +447,19 @@ export async function writeSitemapFiles(rootDir = process.cwd()) {
         entries[0]?.lastmod || today,
       );
       indexFiles.push({ path: `/sitemaps/${name}`, lastmod: newest });
-      allUrls.push(...entries.map((e) => e.loc));
+      for (const entry of entries) {
+        allUrls.push(entry.loc);
+        if (entry.alternates) {
+          for (const href of Object.values(entry.alternates)) {
+            if (href && href !== entry.loc) allUrls.push(href);
+          }
+        }
+      }
     });
   }
+
+  // IndexNow wants every language URL once; sitemap <loc> stays nl-only.
+  const uniqueUrls = [...new Set(allUrls)];
 
   const indexXml = renderSitemapIndex(indexFiles);
   // Main entry for crawlers (also served by app/sitemap.xml/route.ts).
@@ -431,9 +471,9 @@ export async function writeSitemapFiles(rootDir = process.cwd()) {
       {
         generatedAt: new Date().toISOString(),
         localeCount: LOCALES.length,
-        urlCount: allUrls.length,
+        urlCount: uniqueUrls.length,
         origin: sitemapPublicOrigin(),
-        urls: allUrls,
+        urls: uniqueUrls,
       },
       null,
       2,
@@ -441,5 +481,5 @@ export async function writeSitemapFiles(rootDir = process.cwd()) {
     "utf8",
   );
 
-  return { indexFiles, urlCount: allUrls.length, urls: allUrls, indexXml };
+  return { indexFiles, urlCount: uniqueUrls.length, urls: uniqueUrls, indexXml };
 }
