@@ -114,7 +114,10 @@ export default function DomainsAdminPage() {
   async function syncPrices() {
     setSyncing(true);
     try {
-      const res = await fetch("/api/cron/domain-prices", { method: "POST" });
+      const res = await fetch("/api/domains/admin/sync", {
+        method: "POST",
+        credentials: "include",
+      });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(data.error || "Sync failed");
       toast.success(`Synced ${data.updated ?? 0} TLDs`);

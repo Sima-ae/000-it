@@ -9,6 +9,14 @@ export function isNamecheapConfigured() {
   return Boolean(env("NAMECHEAP_USER") && env("NAMECHEAP_API_KEY"));
 }
 
+/** Env var names that are missing (never returns secret values). */
+export function namecheapMissingEnv(): string[] {
+  const missing: string[] = [];
+  if (!env("NAMECHEAP_USER")) missing.push("NAMECHEAP_USER");
+  if (!env("NAMECHEAP_API_KEY")) missing.push("NAMECHEAP_API_KEY");
+  return missing;
+}
+
 function apiBase() {
   return env("NAMECHEAP_SANDBOX") === "1"
     ? "https://api.sandbox.namecheap.com/xml.response"

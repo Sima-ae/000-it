@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { prisma } from "@/lib/prisma";
-import { checkDomains, isNamecheapConfigured } from "@/lib/domains/namecheap";
+import { checkDomains, isNamecheapConfigured, namecheapMissingEnv } from "@/lib/domains/namecheap";
 import { sellPriceCents } from "@/lib/domains/pricing";
 
 export const runtime = "nodejs";
@@ -46,8 +46,13 @@ export async function GET(request: Request) {
   }
 
   if (!isNamecheapConfigured()) {
+    const missing = namecheapMissingEnv();
     return NextResponse.json(
-      { error: "Domain check is temporarily unavailable" },
+      {
+        error: missing.length
+          ? `Domain check unavailable — missing ${missing.join(", ")}. Restart the app after updating .env`
+          : "Domain check is temporarily unavailable",
+      },
       { status: 503 },
     );
   }
