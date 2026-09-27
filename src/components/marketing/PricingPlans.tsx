@@ -140,9 +140,6 @@ export function PricingPlans({
         <p className="max-w-4xl text-center text-muted-foreground md:whitespace-nowrap">
           {labels.plansHeadline}
         </p>
-        <p className="max-w-2xl text-center text-xs text-muted-foreground">
-          {t("plansServiceNote")}
-        </p>
         <div
           role="group"
           aria-label={t("billingPeriod")}

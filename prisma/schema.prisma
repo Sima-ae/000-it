@@ -91,6 +91,12 @@ model Project {
   id          String        @id @default(cuid())
   name        String
   description String?       @db.Text
+  /** Internal staff notes (editable workspace) */
+  notes       String?       @db.Text
+  /** Primary cover / hero image path under /uploads/projects */
+  coverImage  String?
+  /** Extra gallery image paths (JSON string[]) */
+  gallery     Json?
   status      ProjectStatus @default(PLANNING)
   type        ProjectType
   budget      Float?
@@ -104,7 +110,7 @@ model Project {
   tasks       Task[]
   activities  Activity[]
   tickets     SupportTicket[]
-  notes       CrmNote[]
+  crmNotes   CrmNote[]
   invoices    Invoice[]
   createdAt   DateTime      @default(now())
   updatedAt   DateTime      @updatedAt
