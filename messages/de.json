@@ -289,7 +289,8 @@
     "confirmationEmail": "Bestätigung an",
     "backHome": "Zurück zur Startseite",
     "mixedCart": "Hosting and services cannot be checked out together. Remove one and complete them separately.",
-    "invoiceEmailSent": "Your PDF invoice has been emailed to this address."
+    "invoiceEmailSent": "Ihre PDF-Rechnung wurde an diese Adresse gesendet.",
+    "invoiceEmailHint": "Die PDF-Rechnung wird an diese Adresse gesendet, sobald die Zahlung bestätigt ist."
   },
   "footer": {
     "tagline": "Wir bieten Dienstleistungen und Produkte für Unternehmer und Freiberufler — von Werbung, KI‑Integration, AEO, GEO und SEO, Druckprodukten, E‑Mail‑Marketing, Grafikdesign, Online‑Marketing, Wartung, Optimierung, Social‑Media‑Management, Webdesign und WordPress‑Support bis hin zu Webhosting und Domainnamen.",
@@ -1289,8 +1290,8 @@
     "whois": "Whois?",
     "transfer": "Transferieren",
     "transferDialogTitle": "Domain transferieren",
-    "transferDialogSubtitle": "Verschieben Sie {domain} zu TripleZero iT",
-    "transferAuthHelp": "Bitten Sie Ihren aktuellen Registrar, die Domain freizuschalten und Ihnen den Auth-/EPP-(Transfer-)Code zu senden. Fügen Sie ihn unten ein, um fortzufahren.",
+    "transferDialogSubtitle": "Transferieren Sie {domain} zu TripleZero iT",
+    "transferAuthHelp": "Bitten Sie Ihren aktuellen Registrar, die Domain freizuschalten und Ihnen den Auth-/EPP-Code zu senden. Fügen Sie ihn unten ein, um fortzufahren.",
     "transferAuthPlaceholder": "Auth- / EPP- / Transfercode",
     "transferAuthRequired": "Geben Sie einen gültigen Auth-/EPP-Code ein (mindestens 4 Zeichen).",
     "order": "Registrieren",
@@ -1313,7 +1314,7 @@
     "postalCode": "Postleitzahl",
     "country": "Land (NL)",
     "organization": "Organisation (optional)",
-    "successBanner": "Zahlung erhalten{order}. Wir schließen die Registrierung automatisch ab.",
+    "successBanner": "Zahlung erhalten{order}. Wir schließen die Registrierung automatisch ab. Sie erhalten eine PDF-Rechnung per E-Mail.",
     "canceledBanner": "Zahlung abgebrochen. Sie können erneut suchen und bestellen.",
     "step1Title": "Suchen",
     "step1Body": "Wählen Sie Namen und Endungen. Wir zeigen Live-Verfügbarkeit und Verkaufspreis.",
@@ -1358,16 +1359,16 @@
     "showingCount": "Zeigt {shown} von {total}",
     "scrollForMore": "Scrollen für mehr Ergebnisse…",
     "loadMore": "Mehr laden",
-    "transferTitle": "Übertragen Sie eine Domain",
-    "transferBody": "Verschieben Sie eine bestehende Domain zu TripleZero iT. Sie benötigen den Authentifizierungs-/EPP-Code von Ihrem aktuellen Registrar.",
-    "transferCta": "Übertragung starten",
-    "transferHint": "Nach der Bezahlung starten wir die Überweisung bei Namecheap.",
+    "transferTitle": "Domain transferieren",
+    "transferBody": "Transferieren Sie eine bestehende Domain zu TripleZero iT. Sie benötigen den Auth-/EPP-Code Ihres aktuellen Registrars.",
+    "transferCta": "Transfer starten",
+    "transferHint": "Nach der Zahlung starten wir den Transfer.",
     "transferDomain": "Domainname",
-    "transferAuthCode": "Authentifizierungs-/EPP-Code",
-    "transferPay": "Bezahlen und überweisen",
+    "transferAuthCode": "Auth- / EPP-Code",
+    "transferPay": "Bezahlen und transferieren",
     "ctaMyDomains": "Meine Domains verwalten",
     "yearsLabel": "Years",
-    "invoiceEmailSent": "A PDF invoice with VAT breakdown has been emailed to you."
+    "invoiceEmailSent": "Eine PDF-Rechnung mit MwSt.-Aufschlüsselung wurde per E-Mail gesendet."
   },
   "myDomains": {
     "title": "Meine Domains",

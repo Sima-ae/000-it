@@ -1362,7 +1362,7 @@
     "transferTitle": "Transfer a domain",
     "transferBody": "Move an existing domain to TripleZero iT. You need the auth/EPP code from your current registrar.",
     "transferCta": "Start transfer",
-    "transferHint": "After payment we start the transfer at Namecheap.",
+    "transferHint": "After payment we start the transfer.",
     "transferDomain": "Domain name",
     "transferAuthCode": "Auth / EPP code",
     "transferPay": "Pay and transfer",

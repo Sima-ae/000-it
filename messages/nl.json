@@ -1362,7 +1362,7 @@
     "transferTitle": "Domein transfereren",
     "transferBody": "Verhuis jouw bestaande domein naar TripleZero iT. Je hebt de auth/EPP-code van de huidige registrar nodig.",
     "transferCta": "Transfer starten",
-    "transferHint": "Na betaling starten we de transfer bij Namecheap.",
+    "transferHint": "Na betaling starten we de transfer.",
     "transferDomain": "Domeinnaam",
     "transferAuthCode": "Auth / EPP-code",
     "transferPay": "Betaal en transfer",

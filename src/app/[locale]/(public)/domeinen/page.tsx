@@ -7,7 +7,7 @@ import { DomainSearch } from "@/components/domains/DomainSearch";
 import { DomainTransferForm } from "@/components/domains/DomainTransferForm";
 import { localizedHref } from "@/i18n/pathnames";
 import { buildServiceMetadata } from "@/lib/seo";
-import { getServiceContent } from "@/lib/infoweb-content";
+import { getServiceContent } from "@/lib/fixweb-content";
 import { ensurePaidCheckoutAndInvoice } from "@/lib/shop/order-invoice";
 
 const SLUG = "domains";
