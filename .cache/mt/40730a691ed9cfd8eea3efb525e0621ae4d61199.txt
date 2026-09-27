@@ -1,0 +1,1 @@
+“{name}” ({email}) potansiyel müşterisi kalıcı olarak silinsin mi?

@@ -1,0 +1,1 @@
+Ši sąskaita faktūra buvo sugeneruota automatiškai po sėkmingo apmokėjimo per Stripe. Išsaugokite jį savo įrašams.

@@ -205,7 +205,7 @@ export default function TodosPage() {
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-2">
-          {isLoading ? <p className="text-muted-foreground">Loading…</p> : null}
+          {isLoading ? <p className="text-muted-foreground">{t("working")}</p> : null}
           {open.map(renderTodo)}
           {!isLoading && !open.length ? (
             <p className="text-sm text-muted-foreground">{t("allClear")}</p>

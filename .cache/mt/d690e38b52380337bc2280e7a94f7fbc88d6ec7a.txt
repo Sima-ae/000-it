@@ -1,0 +1,1 @@
+Registreringer betalt via Stripe og fullført automatisk. Atskilt fra service- og hostingordrer.

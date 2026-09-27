@@ -1,0 +1,1 @@
+Táto faktúra bola vygenerovaná automaticky po úspešnej platbe cez Stripe. Uschovajte si ho pre svoju evidenciu.

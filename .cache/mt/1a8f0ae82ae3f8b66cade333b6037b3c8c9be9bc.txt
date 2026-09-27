@@ -1,0 +1,1 @@
+Tarkistetaan {done}/{total}

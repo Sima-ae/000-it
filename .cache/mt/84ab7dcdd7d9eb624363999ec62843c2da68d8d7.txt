@@ -1,0 +1,1 @@
+Visszaállítás a következő ártól: {price}

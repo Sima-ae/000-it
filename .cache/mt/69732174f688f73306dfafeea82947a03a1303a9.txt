@@ -1,0 +1,1 @@
+Ne i përdorim këto detaje për regjistrimin në WHOIS. Pagesa trajtohet në mënyrë të sigurt përmes Stripe.

@@ -11,6 +11,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { useStatusI18n } from "@/hooks/useStatusI18n";
 
 type ClientRow = {
   id: string;
@@ -24,6 +25,7 @@ type ClientRow = {
 
 export default function CrmClientsPage() {
   const t = useTranslations("crm");
+  const status = useStatusI18n();
   const locale = useLocale();
   const qc = useQueryClient();
   const [open, setOpen] = useState(false);
@@ -46,7 +48,7 @@ export default function CrmClientsPage() {
       body: JSON.stringify({ ...form, status: "ACTIVE", isLead: false }),
     });
     if (!res.ok) {
-      toast.error("Failed");
+      toast.error(t("actionFailed"));
       return;
     }
     toast.success(t("clientCreated"));
@@ -69,7 +71,7 @@ export default function CrmClientsPage() {
           <CardContent>
             <form onSubmit={createClient} className="grid gap-3 md:grid-cols-4">
               <div className="space-y-1">
-                <Label>Name</Label>
+                <Label>{t("fieldName")}</Label>
                 <Input
                   value={form.name}
                   onChange={(e) => setForm((f) => ({ ...f, name: e.target.value }))}
@@ -77,7 +79,7 @@ export default function CrmClientsPage() {
                 />
               </div>
               <div className="space-y-1">
-                <Label>Email</Label>
+                <Label>{t("fieldEmail")}</Label>
                 <Input
                   type="email"
                   value={form.email}
@@ -86,7 +88,7 @@ export default function CrmClientsPage() {
                 />
               </div>
               <div className="space-y-1">
-                <Label>Company</Label>
+                <Label>{t("fieldCompany")}</Label>
                 <Input
                   value={form.company}
                   onChange={(e) => setForm((f) => ({ ...f, company: e.target.value }))}
@@ -102,16 +104,16 @@ export default function CrmClientsPage() {
 
       <Card>
         <CardContent className="pt-6">
-          {isLoading ? <p className="text-muted-foreground">Loading…</p> : null}
+          {isLoading ? <p className="text-muted-foreground">{t("loading")}</p> : null}
           <div className="overflow-x-auto">
             <table className="w-full text-left text-sm">
               <thead className="text-muted-foreground">
                 <tr>
-                  <th className="pb-3 pr-4">Name</th>
-                  <th className="pb-3 pr-4">Company</th>
-                  <th className="pb-3 pr-4">Email</th>
-                  <th className="pb-3 pr-4">Tickets</th>
-                  <th className="pb-3">Status</th>
+                  <th className="pb-3 pr-4">{t("fieldName")}</th>
+                  <th className="pb-3 pr-4">{t("fieldCompany")}</th>
+                  <th className="pb-3 pr-4">{t("fieldEmail")}</th>
+                  <th className="pb-3 pr-4">{t("tickets")}</th>
+                  <th className="pb-3">{t("fieldStatus")}</th>
                 </tr>
               </thead>
               <tbody>
@@ -129,7 +131,7 @@ export default function CrmClientsPage() {
                     <td className="py-3 pr-4">{client.email}</td>
                     <td className="py-3 pr-4">{client._count?.tickets ?? 0}</td>
                     <td className="py-3">
-                      <Badge variant="outline">{client.status}</Badge>
+                      <Badge variant="outline">{status.clientStatus(client.status)}</Badge>
                     </td>
                   </tr>
                 ))}

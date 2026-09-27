@@ -1,0 +1,1 @@
+Responder a [[PH0]]. El correo electrónico se enviará a [[PH1]].

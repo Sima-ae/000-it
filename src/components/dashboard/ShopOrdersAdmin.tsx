@@ -31,6 +31,18 @@ import { canDelete, canEditAny } from "@/lib/roles";
 import { cn } from "@/lib/utils";
 import { formatShopEuro } from "@/lib/shop/vat";
 import { centsToEurosNumber } from "@/lib/shop/admin";
+import { getProductI18n } from "@/content/fixweb/product-i18n";
+
+function productLabel(
+  product: CatalogProduct,
+  locale: string,
+) {
+  if (product.slug) {
+    const i18n = getProductI18n(product.slug, locale);
+    if (i18n?.name?.trim()) return i18n.name.trim();
+  }
+  return locale === "nl" ? product.nameNl : product.nameEn;
+}
 
 type OrderItem = {
   id?: string;
@@ -62,6 +74,7 @@ type Order = {
 
 type CatalogProduct = {
   id: string;
+  slug?: string;
   nameNl: string;
   nameEn: string;
   priceInclCents: number;
@@ -271,7 +284,7 @@ export function ShopOrdersAdmin({
       product.discountPriceInclCents != null && product.discountPriceInclCents > 0
         ? product.discountPriceInclCents
         : product.priceInclCents;
-    const name = locale === "nl" ? product.nameNl : product.nameEn;
+    const name = productLabel(product, locale);
     patchItem(index, {
       productId,
       name,
@@ -735,7 +748,7 @@ export function ShopOrdersAdmin({
                         <option value="">{t("customItem")}</option>
                         {products.map((p) => (
                           <option key={p.id} value={p.id}>
-                            {locale === "nl" ? p.nameNl : p.nameEn}
+                            {productLabel(p, locale)}
                           </option>
                         ))}
                       </select>

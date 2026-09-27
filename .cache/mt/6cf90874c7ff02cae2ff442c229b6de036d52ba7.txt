@@ -1,0 +1,1 @@
+Eliminare definitivamente il lead "{name}" ({email})?

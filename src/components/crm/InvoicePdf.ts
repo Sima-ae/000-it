@@ -5,6 +5,7 @@ import {
   formatInvoiceMoney,
   type InvoiceLineItem,
 } from "@/lib/crm/invoices";
+import { getInvoiceCopy, invoiceBcp47 } from "@/content/invoice-i18n";
 
 export type InvoiceDocument = {
   number: string;
@@ -53,7 +54,8 @@ function escapeHtml(value: string) {
 }
 
 export function openInvoicePdf(invoice: InvoiceDocument, locale = "nl") {
-  const loc = locale === "nl" ? "nl-NL" : "en-NL";
+  const loc = invoiceBcp47(locale);
+  const t = getInvoiceCopy(locale);
   const company = getCompanyProfile();
   const items = Array.isArray(invoice.items) ? invoice.items : [];
   const clientLines = [
@@ -63,7 +65,7 @@ export function openInvoicePdf(invoice: InvoiceDocument, locale = "nl") {
     [invoice.client.city, invoice.client.country].filter(Boolean).join(", ") || null,
     invoice.client.email,
     invoice.client.phone,
-    invoice.client.vatNumber ? `BTW: ${invoice.client.vatNumber}` : null,
+    invoice.client.vatNumber ? `${company.vatLabel}: ${invoice.client.vatNumber}` : null,
   ].filter(Boolean) as string[];
 
   const sellerLines = [
@@ -119,25 +121,25 @@ export function openInvoicePdf(invoice: InvoiceDocument, locale = "nl") {
   <div style="display:flex;justify-content:space-between;gap:24px;align-items:flex-start;">
     <div>
       <div class="muted">${escapeHtml(company.tradeName)}</div>
-      <h1>Factuur ${escapeHtml(invoice.number)}</h1>
+      <h1>${escapeHtml(t.title)} ${escapeHtml(invoice.number)}</h1>
       <div class="muted" style="margin-top:8px;">${escapeHtml(company.email)} · ${escapeHtml(company.website)}</div>
     </div>
     <div style="text-align:right;">
-      <div><strong>Status:</strong> ${escapeHtml(invoice.status)}</div>
-      <div class="muted">Factuurdatum: ${escapeHtml(formatDate(invoice.issueDate, loc))}</div>
-      <div class="muted">Vervaldatum: ${escapeHtml(formatDate(invoice.dueDate, loc))}</div>
-      ${invoice.reference ? `<div class="muted">Referentie: ${escapeHtml(invoice.reference)}</div>` : ""}
-      ${invoice.project?.name ? `<div class="muted">Project: ${escapeHtml(invoice.project.name)}</div>` : ""}
+      <div><strong>${escapeHtml(t.status)}:</strong> ${escapeHtml(invoice.status)}</div>
+      <div class="muted">${escapeHtml(t.issueDate)}: ${escapeHtml(formatDate(invoice.issueDate, loc))}</div>
+      <div class="muted">${escapeHtml(t.dueDate)}: ${escapeHtml(formatDate(invoice.dueDate, loc))}</div>
+      ${invoice.reference ? `<div class="muted">${escapeHtml(t.reference)}: ${escapeHtml(invoice.reference)}</div>` : ""}
+      ${invoice.project?.name ? `<div class="muted">${escapeHtml(t.project)}: ${escapeHtml(invoice.project.name)}</div>` : ""}
     </div>
   </div>
 
   <div class="grid">
     <div class="box">
-      <div class="label">Van</div>
+      <div class="label">${escapeHtml(t.from)}</div>
       ${sellerLines.map((line) => `<div>${escapeHtml(line)}</div>`).join("")}
     </div>
     <div class="box">
-      <div class="label">Factuur aan</div>
+      <div class="label">${escapeHtml(t.billTo)}</div>
       ${clientLines.map((line) => `<div>${escapeHtml(line)}</div>`).join("")}
     </div>
   </div>
@@ -145,26 +147,26 @@ export function openInvoicePdf(invoice: InvoiceDocument, locale = "nl") {
   <table>
     <thead>
       <tr>
-        <th>Omschrijving</th>
-        <th class="num">Aantal</th>
-        <th class="num">Prijs</th>
-        <th class="num">Totaal</th>
+        <th>${escapeHtml(t.description)}</th>
+        <th class="num">${escapeHtml(t.qty)}</th>
+        <th class="num">${escapeHtml(t.unitPrice)}</th>
+        <th class="num">${escapeHtml(t.lineTotal)}</th>
       </tr>
     </thead>
-    <tbody>${rows || `<tr><td colspan="4" class="muted">Geen regels</td></tr>`}</tbody>
+    <tbody>${rows || `<tr><td colspan="4" class="muted">${escapeHtml(t.emptyLines)}</td></tr>`}</tbody>
   </table>
 
   <div class="totals">
-    <div><span>Subtotaal</span><span>${escapeHtml(formatInvoiceMoney(invoice.subtotal, invoice.currency, loc))}</span></div>
-    <div><span>BTW (${invoice.taxRate}%)</span><span>${escapeHtml(formatInvoiceMoney(invoice.taxAmount, invoice.currency, loc))}</span></div>
-    <div class="grand"><span>Totaal</span><span>${escapeHtml(formatInvoiceMoney(invoice.amount, invoice.currency, loc))}</span></div>
+    <div><span>${escapeHtml(t.subtotalShort)}</span><span>${escapeHtml(formatInvoiceMoney(invoice.subtotal, invoice.currency, loc))}</span></div>
+    <div><span>${escapeHtml(t.vat)} (${invoice.taxRate}%)</span><span>${escapeHtml(formatInvoiceMoney(invoice.taxAmount, invoice.currency, loc))}</span></div>
+    <div class="grand"><span>${escapeHtml(t.totalShort)}</span><span>${escapeHtml(formatInvoiceMoney(invoice.amount, invoice.currency, loc))}</span></div>
   </div>
 
   ${
     invoice.paymentTerms || invoice.notes
       ? `<div class="notes">
-          ${invoice.paymentTerms ? `<div><strong>Betalingsvoorwaarden:</strong> ${escapeHtml(invoice.paymentTerms)}</div>` : ""}
-          ${invoice.notes ? `<div style="margin-top:8px;"><strong>Notities:</strong> ${escapeHtml(invoice.notes)}</div>` : ""}
+          ${invoice.paymentTerms ? `<div><strong>${escapeHtml(t.paymentTerms)}:</strong> ${escapeHtml(invoice.paymentTerms)}</div>` : ""}
+          ${invoice.notes ? `<div style="margin-top:8px;"><strong>${escapeHtml(t.notes)}:</strong> ${escapeHtml(invoice.notes)}</div>` : ""}
         </div>`
       : ""
   }

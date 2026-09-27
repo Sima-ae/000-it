@@ -1,0 +1,1 @@
+Biztonságos fizetés a Stripe segítségével (iDEAL, kártya és így tovább). Az árak a 21% ÁFA-t tartalmazzák.

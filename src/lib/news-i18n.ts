@@ -77,10 +77,15 @@ export function newsCopyLooksComplete(
     return false;
   }
   if (isNewsDescriptionStub(copy.description)) return false;
-  // Truncated / footer-only bodies vs full English article
+  // Truncated / footer-only bodies vs full English article.
+  // Compact scripts (zh/ja/…) naturally produce much shorter character counts.
+  const compactScript = /^(zh|ja|ko|ar|he|th|hi|bn|ka|hy)$/i.test(locale);
+  const minRatio = compactScript ? 0.12 : 0.4;
+  const minAbs = compactScript ? 20 : 60;
   if (
     en.description.trim().length > 120 &&
-    copy.description.trim().length < Math.max(60, en.description.trim().length * 0.4)
+    copy.description.trim().length <
+      Math.max(minAbs, en.description.trim().length * minRatio)
   ) {
     return false;
   }

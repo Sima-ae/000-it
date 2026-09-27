@@ -1,0 +1,1 @@
+Säker utcheckning via Stripe (iDEAL, kort med mera). Priserna inkluderar 21% moms.

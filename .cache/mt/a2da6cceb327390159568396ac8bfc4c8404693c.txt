@@ -1,0 +1,1 @@
+Poistetaanko liidi "{name}" ({email}) pysyvästi?

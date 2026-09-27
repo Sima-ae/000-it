@@ -1,0 +1,1 @@
+Registracije se plaćaju putem Stripea i ispunjavaju automatski. Odvojeno od narudžbi usluge i hostinga.

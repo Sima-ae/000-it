@@ -1,0 +1,1 @@
+名前を入力します (例: company または company.com)

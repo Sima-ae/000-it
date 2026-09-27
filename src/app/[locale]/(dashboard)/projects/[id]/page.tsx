@@ -1,6 +1,7 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
+import { useStatusI18n } from "@/hooks/useStatusI18n";
 import { useParams } from "next/navigation";
 import { useQuery } from "@tanstack/react-query";
 import { Badge } from "@/components/ui/badge";
@@ -9,6 +10,7 @@ import { Progress } from "@/components/ui/progress";
 
 export default function ProjectDetailPage() {
   const t = useTranslations("dashboard");
+  const status = useStatusI18n();
   const locale = useLocale();
   const params = useParams<{ id: string }>();
   const { data, isLoading } = useQuery({
@@ -31,7 +33,7 @@ export default function ProjectDetailPage() {
           <h1 className="text-3xl font-semibold">{data.name}</h1>
           <p className="text-muted-foreground">{data.description || data.type}</p>
         </div>
-        <Badge variant="secondary">{data.status}</Badge>
+        <Badge variant="secondary">{status.projectStatus(data.status)}</Badge>
       </div>
 
       <Card>
@@ -57,7 +59,7 @@ export default function ProjectDetailPage() {
                   className="flex items-center justify-between rounded-lg border border-border px-3 py-2 text-sm"
                 >
                   <span>{task.title}</span>
-                  <Badge variant="outline">{task.status}</Badge>
+                  <Badge variant="outline">{status.taskStatus(task.status)}</Badge>
                 </div>
               ),
             )}

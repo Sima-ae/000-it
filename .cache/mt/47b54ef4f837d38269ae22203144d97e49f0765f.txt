@@ -1,0 +1,1 @@
+Ezeket az adatokat a WHOIS regisztrációhoz használjuk. A fizetés biztonságosan történik a Stripe-on keresztül.

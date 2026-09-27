@@ -1,0 +1,1 @@
+Näytetään {shown}/{total}

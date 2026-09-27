@@ -1,0 +1,1 @@
+Ez a számla automatikusan létrejött a Stripe-on keresztüli sikeres fizetés után. Kérjük, őrizze meg nyilvántartása céljából.

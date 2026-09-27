@@ -1,0 +1,1 @@
+Regjistrimet paguhen përmes Stripe dhe plotësohen automatikisht. Të ndara nga porositë e shërbimit dhe pritjes.

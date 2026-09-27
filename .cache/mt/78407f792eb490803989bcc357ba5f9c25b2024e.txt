@@ -1,0 +1,1 @@
+Detalles del cliente, estado y artículos de línea con precios con IVA incluido.

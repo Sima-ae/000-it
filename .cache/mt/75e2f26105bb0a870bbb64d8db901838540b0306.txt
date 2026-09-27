@@ -1,0 +1,1 @@
+Alegeți un nume și extensii. Afișăm disponibilitatea live și prețul de vânzare.

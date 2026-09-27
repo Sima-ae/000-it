@@ -1,0 +1,1 @@
+Excluir permanentemente o lead “{name}” ({email})?

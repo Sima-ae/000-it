@@ -1,0 +1,1 @@
+Podaci o kupcima, status i stavke s PDV-om.

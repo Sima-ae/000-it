@@ -67,7 +67,7 @@ type FormState = {
   items: InvoiceLineItem[];
 };
 
-function emptyForm(): FormState {
+function emptyForm(paymentTermsDefault: string): FormState {
   const today = new Date();
   const due = new Date(today);
   due.setDate(due.getDate() + 14);
@@ -78,7 +78,7 @@ function emptyForm(): FormState {
     issueDate: toDateInputValue(today),
     dueDate: toDateInputValue(due),
     reference: "",
-    paymentTerms: "14 dagen netto",
+    paymentTerms: paymentTermsDefault,
     notes: "",
     taxRate: "21",
     items: [{ description: "", qty: 1, unitPrice: 0 }],
@@ -107,10 +107,11 @@ export default function CrmInvoicesPage() {
   const staff = isStaffRole(session?.user?.role);
   const showDelete = canDelete(session?.user?.role);
   const qc = useQueryClient();
+  const paymentTermsDefault = t("paymentTermsDefault");
 
   const [editorOpen, setEditorOpen] = useState(false);
   const [editingId, setEditingId] = useState<string | null>(null);
-  const [form, setForm] = useState<FormState>(emptyForm);
+  const [form, setForm] = useState<FormState>(() => emptyForm(paymentTermsDefault));
   const [saving, setSaving] = useState(false);
   const [deleteTarget, setDeleteTarget] = useState<Invoice | null>(null);
   const [deleting, setDeleting] = useState(false);
@@ -170,7 +171,7 @@ export default function CrmInvoicesPage() {
 
   function openCreate() {
     setEditingId(null);
-    setForm(emptyForm());
+    setForm(emptyForm(paymentTermsDefault));
     setEditorOpen(true);
   }
 
@@ -186,7 +187,7 @@ export default function CrmInvoicesPage() {
       issueDate: toDateInputValue(invoice.issueDate),
       dueDate: toDateInputValue(invoice.dueDate),
       reference: invoice.reference || "",
-      paymentTerms: invoice.paymentTerms || "14 dagen netto",
+      paymentTerms: invoice.paymentTerms || paymentTermsDefault,
       notes: invoice.notes || "",
       taxRate: String(invoice.taxRate ?? 21),
       items,
@@ -255,7 +256,7 @@ export default function CrmInvoicesPage() {
     toast.success(editingId ? t("invoiceUpdated") : t("invoiceCreated"));
     setEditorOpen(false);
     setEditingId(null);
-    setForm(emptyForm());
+    setForm(emptyForm(paymentTermsDefault));
     void qc.invalidateQueries({ queryKey: ["crm-invoices"] });
     setPreview(saved);
   }
@@ -290,7 +291,9 @@ export default function CrmInvoicesPage() {
   function downloadPdf(invoice: Invoice) {
     void (async () => {
       try {
-        const res = await fetch(`/api/crm/invoices/${invoice.id}/pdf`);
+        const res = await fetch(
+          `/api/crm/invoices/${invoice.id}/pdf?locale=${encodeURIComponent(locale)}`,
+        );
         if (!res.ok) {
           const body = await res.json().catch(() => ({}));
           throw new Error(body.error || t("invoicePdfBlocked"));
@@ -657,7 +660,9 @@ export default function CrmInvoicesPage() {
                     <p className="mt-1 font-medium">{preview.client.company || preview.client.name}</p>
                     <p className="text-muted-foreground">{preview.client.email}</p>
                     {preview.client.vatNumber ? (
-                      <p className="text-muted-foreground">BTW: {preview.client.vatNumber}</p>
+                      <p className="text-muted-foreground">
+                        {t("vatLabel")}: {preview.client.vatNumber}
+                      </p>
                     ) : null}
                   </div>
                   <div className="rounded-xl border border-border p-3">

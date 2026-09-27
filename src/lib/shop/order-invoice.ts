@@ -9,23 +9,24 @@ import {
   type OrderInvoiceLine,
 } from "@/lib/shop/invoice-pdf";
 import { getCompanyProfile } from "@/lib/company";
+import { getInvoiceCopy } from "@/content/invoice-i18n";
 
 function categoryLabel(
   locale: string,
   kind: "SERVICE" | "HOSTING" | "DOMAIN_REGISTRATION" | "DOMAIN_RENEWAL" | "DOMAIN_TRANSFER",
 ) {
-  const nl = locale === "nl";
+  const t = getInvoiceCopy(locale);
   switch (kind) {
     case "HOSTING":
-      return nl ? "Hosting" : "Hosting";
+      return t.hosting;
     case "SERVICE":
-      return nl ? "Diensten / producten" : "Services / products";
+      return t.services;
     case "DOMAIN_REGISTRATION":
-      return nl ? "Domeinregistratie" : "Domain registration";
+      return t.domainRegistration;
     case "DOMAIN_RENEWAL":
-      return nl ? "Domeinverlenging" : "Domain renewal";
+      return t.domainRenewal;
     case "DOMAIN_TRANSFER":
-      return nl ? "Domeintransfer" : "Domain transfer";
+      return t.domainTransfer;
   }
 }
 
@@ -35,23 +36,16 @@ function domainProductLabel(
   domainName: string,
   years: number,
 ) {
-  const nl = locale === "nl";
-  const yr = nl
-    ? `${years} ${years === 1 ? "jaar" : "jaar"}`
-    : `${years} ${years === 1 ? "year" : "years"}`;
+  const t = getInvoiceCopy(locale);
+  const unit = years === 1 ? t.year : t.years;
+  const yr = `${years} ${unit}`;
   if (orderType === "RENEWAL") {
-    return nl
-      ? `Domeinverlenging: ${domainName} (${yr})`
-      : `Domain renewal: ${domainName} (${yr})`;
+    return `${t.domainRenewal}: ${domainName} (${yr})`;
   }
   if (orderType === "TRANSFER") {
-    return nl
-      ? `Domeintransfer: ${domainName} (${yr})`
-      : `Domain transfer: ${domainName} (${yr})`;
+    return `${t.domainTransfer}: ${domainName} (${yr})`;
   }
-  return nl
-    ? `Domeinregistratie: ${domainName} (${yr})`
-    : `Domain registration: ${domainName} (${yr})`;
+  return `${t.domainRegistration}: ${domainName} (${yr})`;
 }
 
 function customerFromStripe(
@@ -86,16 +80,13 @@ function paymentMethodLabel(session: Stripe.Checkout.Session | null | undefined)
 
 function emailCopy(locale: string, invoiceNumber: string, orderNumber: string) {
   const company = getCompanyProfile();
+  const t = getInvoiceCopy(locale);
   const nl = locale === "nl";
-  const subject = nl
-    ? `Factuur ${invoiceNumber} — ${company.tradeName}`
-    : `Invoice ${invoiceNumber} — ${company.tradeName}`;
+  const subject = t.invoiceEmailSubject.replace("{number}", invoiceNumber);
   const addressBlock = company.addressLines.join(", ");
   const taxLine = company.vatNumber
     ? `${company.vatLabel}: ${company.vatNumber}`
-    : nl
-      ? "BTW 21% inbegrepen (uitgesplitst op de factuur)"
-      : "21% VAT included (broken down on the invoice)";
+    : t.vatIncluded;
   const text = nl
     ? [
         `Beste klant,`,
@@ -103,8 +94,8 @@ function emailCopy(locale: string, invoiceNumber: string, orderNumber: string) {
         `Bedankt voor je bestelling bij ${company.tradeName}.`,
         `Je betaling is succesvol ontvangen en verwerkt.`,
         ``,
-        `Factuurnummer: ${invoiceNumber}`,
-        `Bestelnummer: ${orderNumber}`,
+        `${t.invoiceNo}: ${invoiceNumber}`,
+        `${t.orderNo}: ${orderNumber}`,
         ``,
         `In de bijlage vind je je officiële PDF-factuur met:`,
         `- orderregels en bedragen`,
@@ -127,8 +118,8 @@ function emailCopy(locale: string, invoiceNumber: string, orderNumber: string) {
         `Thank you for your order with ${company.tradeName}.`,
         `Your payment was received and processed successfully.`,
         ``,
-        `Invoice number: ${invoiceNumber}`,
-        `Order number: ${orderNumber}`,
+        `${t.invoiceNo}: ${invoiceNumber}`,
+        `${t.orderNo}: ${orderNumber}`,
         ``,
         `Please find your official PDF invoice attached, including:`,
         `- line items and amounts`,
@@ -149,28 +140,28 @@ function emailCopy(locale: string, invoiceNumber: string, orderNumber: string) {
   const html = nl
     ? `
     <div style="font-family:Arial,Helvetica,sans-serif;max-width:560px;margin:0 auto;color:#14181f">
-      <h2 style="color:#5e3b88;margin-bottom:8px">Factuur ${invoiceNumber}</h2>
+      <h2 style="color:#5e3b88;margin-bottom:8px">${t.title} ${invoiceNumber}</h2>
       <p>Bedankt voor je bestelling bij <strong>${company.tradeName}</strong>. Je betaling is succesvol ontvangen en verwerkt.</p>
       <table style="width:100%;font-size:14px;margin:16px 0;border-collapse:collapse">
-        <tr><td style="padding:4px 0;color:#5b6573">Factuurnummer</td><td style="padding:4px 0;text-align:right"><strong>${invoiceNumber}</strong></td></tr>
-        <tr><td style="padding:4px 0;color:#5b6573">Bestelnummer</td><td style="padding:4px 0;text-align:right"><strong>${orderNumber}</strong></td></tr>
+        <tr><td style="padding:4px 0;color:#5b6573">${t.invoiceNo}</td><td style="padding:4px 0;text-align:right"><strong>${invoiceNumber}</strong></td></tr>
+        <tr><td style="padding:4px 0;color:#5b6573">${t.orderNo}</td><td style="padding:4px 0;text-align:right"><strong>${orderNumber}</strong></td></tr>
       </table>
       <p>In de bijlage vind je je <strong>officiële PDF-factuur</strong> met orderregels, BTW-specificatie (21%) en onze bedrijfsgegevens.</p>
       <p style="font-size:13px;color:#5b6573;line-height:1.5">${company.legalName}<br/>${addressBlock.replace(/, /g, "<br/>")}<br/>${taxLine}</p>
-      <p style="color:#5b6573;font-size:13px">Vragen? Mail <a href="mailto:${company.supportEmail}">${company.supportEmail}</a></p>
+      <p style="color:#5b6573;font-size:13px">${t.support} <a href="mailto:${company.supportEmail}">${company.supportEmail}</a></p>
       <p style="margin-top:24px">${company.tradeName}<br/><a href="${company.website}">${company.website}</a></p>
     </div>`
     : `
     <div style="font-family:Arial,Helvetica,sans-serif;max-width:560px;margin:0 auto;color:#14181f">
-      <h2 style="color:#5e3b88;margin-bottom:8px">Invoice ${invoiceNumber}</h2>
+      <h2 style="color:#5e3b88;margin-bottom:8px">${t.title} ${invoiceNumber}</h2>
       <p>Thank you for your order with <strong>${company.tradeName}</strong>. Your payment was received and processed successfully.</p>
       <table style="width:100%;font-size:14px;margin:16px 0;border-collapse:collapse">
-        <tr><td style="padding:4px 0;color:#5b6573">Invoice number</td><td style="padding:4px 0;text-align:right"><strong>${invoiceNumber}</strong></td></tr>
-        <tr><td style="padding:4px 0;color:#5b6573">Order number</td><td style="padding:4px 0;text-align:right"><strong>${orderNumber}</strong></td></tr>
+        <tr><td style="padding:4px 0;color:#5b6573">${t.invoiceNo}</td><td style="padding:4px 0;text-align:right"><strong>${invoiceNumber}</strong></td></tr>
+        <tr><td style="padding:4px 0;color:#5b6573">${t.orderNo}</td><td style="padding:4px 0;text-align:right"><strong>${orderNumber}</strong></td></tr>
       </table>
       <p>Please find your <strong>official PDF invoice</strong> attached, including line items, VAT breakdown (21%), and our company details.</p>
       <p style="font-size:13px;color:#5b6573;line-height:1.5">${company.legalName}<br/>${addressBlock.replace(/, /g, "<br/>")}<br/>${taxLine}</p>
-      <p style="color:#5b6573;font-size:13px">Questions? Email <a href="mailto:${company.supportEmail}">${company.supportEmail}</a></p>
+      <p style="color:#5b6573;font-size:13px">${t.support} <a href="mailto:${company.supportEmail}">${company.supportEmail}</a></p>
       <p style="margin-top:24px">${company.tradeName}<br/><a href="${company.website}">${company.website}</a></p>
     </div>`;
 

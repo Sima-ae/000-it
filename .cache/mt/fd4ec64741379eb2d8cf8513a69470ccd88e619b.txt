@@ -1,0 +1,1 @@
+Tilmeldinger betales via Stripe og opfyldes automatisk. Adskilt fra service- og hostingordrer.

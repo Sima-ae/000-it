@@ -13,12 +13,14 @@ import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { localizedHref } from "@/i18n/pathnames";
+import { useStatusI18n } from "@/hooks/useStatusI18n";
 
 export default function CrmClientDetailPage() {
   const params = useParams<{ id: string }>();
   const id = params.id;
   const t = useTranslations("crm");
   const td = useTranslations("dashboard");
+  const status = useStatusI18n();
   const locale = useLocale();
   const qc = useQueryClient();
   const [note, setNote] = useState("");
@@ -43,7 +45,7 @@ export default function CrmClientDetailPage() {
       body: JSON.stringify({ body: note.trim(), clientId: id }),
     });
     if (!res.ok) {
-      toast.error("Failed");
+      toast.error(t("actionFailed"));
       return;
     }
     setNote("");
@@ -63,7 +65,7 @@ export default function CrmClientDetailPage() {
       }),
     });
     if (!res.ok) {
-      toast.error("Failed");
+      toast.error(t("actionFailed"));
       return;
     }
     toast.success(t("ticketOpened"));
@@ -79,7 +81,7 @@ export default function CrmClientDetailPage() {
       body: JSON.stringify({ isLead: false, status: "ACTIVE", leadStatus: "WON" }),
     });
     if (!res.ok) {
-      toast.error("Failed");
+      toast.error(t("actionFailed"));
       return;
     }
     toast.success(t("converted"));
@@ -89,7 +91,7 @@ export default function CrmClientDetailPage() {
   if (isLoading) {
     return (
       <CrmShell title={t("clients")}>
-        <p className="text-muted-foreground">Loading…</p>
+        <p className="text-muted-foreground">{t("loading")}</p>
       </CrmShell>
     );
   }
@@ -112,7 +114,7 @@ export default function CrmClientDetailPage() {
   return (
     <CrmShell
       title={client.name}
-      subtitle={`${client.company || client.email} · ${client.isLead ? "Lead" : client.status}`}
+      subtitle={`${client.company || client.email} · ${client.isLead ? t("lead") : status.clientStatus(client.status)}`}
       actions={
         <div className="flex gap-2">
           {client.isLead ? (
@@ -133,24 +135,24 @@ export default function CrmClientDetailPage() {
           </CardHeader>
           <CardContent className="space-y-2 text-sm">
             <p>
-              <span className="text-muted-foreground">Email:</span> {client.email}
+              <span className="text-muted-foreground">{t("fieldEmail")}:</span> {client.email}
             </p>
             <p>
-              <span className="text-muted-foreground">Phone:</span> {client.phone || "—"}
+              <span className="text-muted-foreground">{t("fieldPhone")}:</span> {client.phone || "—"}
             </p>
             <p>
-              <span className="text-muted-foreground">Company:</span> {client.company || "—"}
+              <span className="text-muted-foreground">{t("fieldCompany")}:</span> {client.company || "—"}
             </p>
             <p>
-              <span className="text-muted-foreground">Industry:</span> {client.industry || "—"}
+              <span className="text-muted-foreground">{t("fieldIndustry")}:</span> {client.industry || "—"}
             </p>
             <p>
-              <span className="text-muted-foreground">Website:</span> {client.website || "—"}
+              <span className="text-muted-foreground">{t("fieldWebsite")}:</span> {client.website || "—"}
             </p>
             <p className="whitespace-pre-wrap text-muted-foreground">{client.notes || ""}</p>
             <div className="flex flex-wrap gap-2 pt-2">
-              <Badge>{client.status}</Badge>
-              {client.isLead ? <Badge variant="warning">Lead</Badge> : null}
+              <Badge>{status.clientStatus(client.status)}</Badge>
+              {client.isLead ? <Badge variant="warning">{t("lead")}</Badge> : null}
             </div>
           </CardContent>
         </Card>
@@ -176,7 +178,7 @@ export default function CrmClientDetailPage() {
                     className="flex items-center justify-between rounded-xl border border-border px-3 py-2"
                   >
                     <span className="font-medium">{ticket.subject}</span>
-                    <Badge variant="outline">{ticket.status.replace("_", " ")}</Badge>
+                    <Badge variant="outline">{status.ticketStatus(ticket.status)}</Badge>
                   </SoftLink>
                 ),
               )}
@@ -248,7 +250,7 @@ export default function CrmClientDetailPage() {
                     <div key={n.id} className="rounded-lg border border-border px-3 py-2 text-sm">
                       <p>{n.body}</p>
                       <p className="mt-1 text-xs text-muted-foreground">
-                        {n.user?.name || "Staff"} · {new Date(n.createdAt).toLocaleString()}
+                        {n.user?.name || t("staff")} · {new Date(n.createdAt).toLocaleString()}
                       </p>
                     </div>
                   ),

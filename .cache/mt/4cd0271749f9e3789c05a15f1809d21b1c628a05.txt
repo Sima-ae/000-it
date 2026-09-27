@@ -1,0 +1,1 @@
+Bezpieczne płatności za pośrednictwem Stripe (iDEAL, karta i inne). Ceny zawierają 21% podatku VAT.

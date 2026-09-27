@@ -1,0 +1,1 @@
+Kjo faturë u gjenerua automatikisht pas pagesës së suksesshme përmes Stripe. Ju lutemi mbajeni për të dhënat tuaja.

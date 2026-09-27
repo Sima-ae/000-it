@@ -107,7 +107,7 @@ export default async function HomePage({
           </div>
         </Reveal>
         <Reveal from="up" delay={0.05} duration={0.55}>
-          <div className="w-full min-w-0 overflow-hidden rounded-[1.5rem] border border-border/70 bg-background/80 p-3 shadow-sm backdrop-blur sm:rounded-[1.75rem] sm:p-5 md:p-6">
+          <div className="w-full min-w-0 overflow-hidden rounded-3xl border border-border/70 bg-background/80 p-3 shadow-sm backdrop-blur sm:rounded-[1.75rem] sm:p-5 md:p-6">
             <DomainSearch />
           </div>
         </Reveal>

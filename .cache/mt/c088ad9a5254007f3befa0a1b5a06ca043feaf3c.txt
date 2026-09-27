@@ -1,0 +1,1 @@
+Ilmoittautumiset maksetaan Stripen kautta ja täytetään automaattisesti. Erillään palvelu- ja isännöintitilauksista.

@@ -1,0 +1,1 @@
+Hosting och tjänster kan inte checkas ut tillsammans. Remove one and complete them separately.

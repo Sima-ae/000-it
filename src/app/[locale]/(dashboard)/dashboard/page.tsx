@@ -25,6 +25,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
+import { useStatusI18n } from "@/hooks/useStatusI18n";
 
 type DashboardData = {
   role: string;
@@ -151,6 +152,7 @@ function QuickLink({
 
 export default function DashboardPage() {
   const t = useTranslations("dashboard");
+  const status = useStatusI18n();
   const locale = useLocale();
   const { data, isLoading, isError, error, refetch, isFetching } = useQuery({
     queryKey: ["dashboard"],
@@ -328,9 +330,9 @@ export default function DashboardPage() {
                 >
                   <div className="min-w-0">
                     <p className="truncate font-medium">{ticket.subject}</p>
-                    <p className="text-xs text-muted-foreground">{ticket.source}</p>
+                    <p className="text-xs text-muted-foreground">{status.ticketSource(ticket.source)}</p>
                   </div>
-                  <Badge variant="outline">{ticket.status.replace("_", " ")}</Badge>
+                  <Badge variant="outline">{status.ticketStatus(ticket.status)}</Badge>
                 </SoftLink>
               ))}
               {!data.recentTickets.length && (
@@ -352,7 +354,7 @@ export default function DashboardPage() {
                 >
                   <div className="flex items-center justify-between gap-2">
                     <h3 className="font-medium">{project.name}</h3>
-                    <Badge variant="secondary">{project.status}</Badge>
+                    <Badge variant="secondary">{status.projectStatus(project.status)}</Badge>
                   </div>
                   <Progress className="mt-3" value={project.progress} />
                 </SoftLink>
@@ -412,9 +414,9 @@ export default function DashboardPage() {
                 >
                   <div className="min-w-0">
                     <p className="truncate font-medium">{ticket.subject}</p>
-                    <p className="text-xs text-muted-foreground">{ticket.source}</p>
+                    <p className="text-xs text-muted-foreground">{status.ticketSource(ticket.source)}</p>
                   </div>
-                  <Badge variant="outline">{ticket.status.replace("_", " ")}</Badge>
+                  <Badge variant="outline">{status.ticketStatus(ticket.status)}</Badge>
                 </SoftLink>
               ))}
               {!data.recentTickets.length && (
@@ -467,7 +469,7 @@ export default function DashboardPage() {
                     <p className="font-medium">{client.name}</p>
                     <p className="text-xs text-muted-foreground">{client.company || "—"}</p>
                   </div>
-                  <Badge variant="outline">{client.status}</Badge>
+                  <Badge variant="outline">{status.clientStatus(client.status)}</Badge>
                 </SoftLink>
               ))}
               {!data.recentClients.length && (
@@ -514,7 +516,7 @@ export default function DashboardPage() {
               >
                 <div className="flex items-center justify-between gap-2">
                   <h3 className="font-medium">{project.name}</h3>
-                  <Badge variant="secondary">{project.status}</Badge>
+                  <Badge variant="secondary">{status.projectStatus(project.status)}</Badge>
                 </div>
                 <p className="mt-1 text-xs text-muted-foreground">{project.type}</p>
                 <Progress className="mt-3" value={project.progress} />
@@ -623,7 +625,7 @@ export default function DashboardPage() {
             >
               <div className="flex items-center justify-between gap-2">
                 <h3 className="font-medium">{project.name}</h3>
-                <Badge variant="secondary">{project.status}</Badge>
+                <Badge variant="secondary">{status.projectStatus(project.status)}</Badge>
               </div>
               <p className="mt-1 text-xs text-muted-foreground">{project.type}</p>
               <Progress className="mt-3" value={project.progress} />
@@ -646,9 +648,9 @@ export default function DashboardPage() {
               >
                 <div className="min-w-0">
                   <p className="truncate font-medium">{ticket.subject}</p>
-                  <p className="text-xs text-muted-foreground">{ticket.source}</p>
+                  <p className="text-xs text-muted-foreground">{status.ticketSource(ticket.source)}</p>
                 </div>
-                <Badge variant="outline">{ticket.status.replace("_", " ")}</Badge>
+                <Badge variant="outline">{status.ticketStatus(ticket.status)}</Badge>
               </SoftLink>
             ))}
             {!data.recentTickets.length && (
@@ -683,7 +685,7 @@ export default function DashboardPage() {
                         : "outline"
                   }
                 >
-                  {agent.status}
+                  {status.agentStatus(agent.status)}
                 </Badge>
               </div>
             ))}

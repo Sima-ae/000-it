@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useSession } from "next-auth/react";
 import { useLocale, useTranslations } from "next-intl";
+import { useStatusI18n } from "@/hooks/useStatusI18n";
 import { Trash2 } from "lucide-react";
 import { toast } from "sonner";
 import { SoftLink } from "@/components/shared/SoftLink";
@@ -44,6 +45,7 @@ type PipelineClient = {
 
 export default function CrmLeadsPage() {
   const t = useTranslations("crm");
+  const status = useStatusI18n();
   const locale = useLocale();
   const { data: session } = useSession();
   const qc = useQueryClient();
@@ -129,7 +131,7 @@ export default function CrmLeadsPage() {
             <Card key={stage} className="min-h-40">
               <CardHeader className="pb-2">
                 <CardTitle className="flex items-center justify-between text-sm">
-                  <span>{stage}</span>
+                  <span>{status.leadStatus(stage)}</span>
                   <Badge variant="secondary">{items.length}</Badge>
                 </CardTitle>
               </CardHeader>
@@ -171,7 +173,7 @@ export default function CrmLeadsPage() {
                       >
                         {stages.map((s) => (
                           <option key={s} value={s}>
-                            {s}
+                            {status.leadStatus(s)}
                           </option>
                         ))}
                       </select>
@@ -217,7 +219,7 @@ export default function CrmLeadsPage() {
               >
                 <p className="font-medium">{c.name}</p>
                 <p className="text-xs text-muted-foreground">
-                  {c.email} · {c.leadStatus || "NEW"}
+                  {c.email} · {status.leadStatus(c.leadStatus || "NEW")}
                 </p>
               </SoftLink>
             ))}

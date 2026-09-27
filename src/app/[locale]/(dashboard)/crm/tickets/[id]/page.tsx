@@ -168,6 +168,7 @@ export default function CrmTicketDetailPage() {
             backToTickets: t("tickets"),
             channelChat: t("ticketChannelChat"),
             channelTicket: t("ticketChannelTicket"),
+            staff: t("staff"),
           }}
         />
       )}

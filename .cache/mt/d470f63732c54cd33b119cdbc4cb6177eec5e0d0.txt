@@ -1,0 +1,1 @@
+Detaliile clientului, starea și elementele rând cu prețuri cu TVA.

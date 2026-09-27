@@ -1,0 +1,1 @@
+Sikker utsjekking via Stripe (iDEAL, kort og mer). Prisene inkluderer 21 % mva.

@@ -1,0 +1,1 @@
+Chcete natrvalo odstrániť potenciálneho zákazníka „{name}“ ({email})?

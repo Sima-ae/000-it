@@ -1,0 +1,1 @@
+Tieto údaje používame na registráciu WHOIS. Platba prebieha bezpečne cez Stripe.

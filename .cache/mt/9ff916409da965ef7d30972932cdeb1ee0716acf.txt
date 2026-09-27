@@ -1,0 +1,1 @@
+Podrobnosti o zákazníkovi, stav a riadkové položky s cenami vrátane DPH.

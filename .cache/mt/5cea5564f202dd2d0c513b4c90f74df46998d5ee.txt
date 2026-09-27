@@ -1,0 +1,1 @@
+Înregistrări plătite prin Stripe și îndeplinite automat. Separat de comenzile de servicii și găzduire.

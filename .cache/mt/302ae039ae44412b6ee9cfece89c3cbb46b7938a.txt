@@ -1,0 +1,1 @@
+Sikker betaling via Stripe (iDEAL, kort og mere). Priserne er inklusiv 21% moms.

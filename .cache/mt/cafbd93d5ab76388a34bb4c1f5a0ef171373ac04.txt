@@ -1,0 +1,1 @@
+A Stripe-on keresztül fizetett regisztrációk automatikusan teljesülnek. Elkülönítve a szolgáltatási és fogadási megrendelésektől.

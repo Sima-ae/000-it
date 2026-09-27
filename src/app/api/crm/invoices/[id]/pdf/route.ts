@@ -29,13 +29,16 @@ function canAccessInvoice(
 }
 
 export async function GET(
-  _request: Request,
+  request: Request,
   context: { params: Promise<{ id: string }> },
 ) {
   const { session, error } = await requireUser();
   if (error) return error;
 
   const { id } = await context.params;
+  const url = new URL(request.url);
+  const localeParam = (url.searchParams.get("locale") || "en").toLowerCase();
+  const locale = localeParam.split("-")[0] || "en";
   const invoice = await prisma.invoice.findUnique({
     where: { id },
     include: {
@@ -90,7 +93,7 @@ export async function GET(
   const document: OrderInvoiceDocument = {
     invoiceNumber: invoice.number,
     orderNumber: invoice.reference || invoice.number,
-    locale: "nl",
+    locale,
     currency: invoice.currency || "EUR",
     taxRate: taxRateFrac,
     issueDate: invoice.issueDate,
@@ -98,8 +101,8 @@ export async function GET(
     paymentMethod: null,
     stripeSessionId: null,
     categoryLabel: invoice.project?.name
-      ? `Project — ${invoice.project.name}`
-      : "Factuur",
+      ? `${invoice.project.name}`
+      : invoice.number,
     customer: {
       name: invoice.client.name,
       company: invoice.client.company,

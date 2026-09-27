@@ -434,12 +434,19 @@ export function planProductId(
 }
 
 export function localizeShopProduct(product: ShopProduct, locale: string) {
+  const fromPack = product.slug ? getProductI18n(product.slug, locale) : null;
   const lang = locale === "nl" ? "nl" : "en";
   return {
     ...product,
-    localizedName: product.name[lang],
-    localizedShort: product.shortDescription[lang],
-    localizedDescription: product.description[lang],
+    localizedName: fromPack?.name || product.name[lang] || product.name.en,
+    localizedShort:
+      fromPack?.shortDescription ||
+      product.shortDescription[lang] ||
+      product.shortDescription.en,
+    localizedDescription:
+      fromPack?.description ||
+      product.description[lang] ||
+      product.description.en,
   };
 }
 

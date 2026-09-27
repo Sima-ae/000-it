@@ -1,0 +1,1 @@
+Kayıtlar Stripe aracılığıyla ödenir ve otomatik olarak gerçekleştirilir. Hizmet ve barındırma siparişlerinden ayrı.

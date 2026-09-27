@@ -1,0 +1,1 @@
+Bu faktura Stripe vasitəsilə uğurlu ödənişdən sonra avtomatik olaraq yaradılıb. Zəhmət olmasa qeydləriniz üçün saxlayın.

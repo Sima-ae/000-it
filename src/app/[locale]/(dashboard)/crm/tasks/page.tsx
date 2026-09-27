@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useTranslations } from "next-intl";
+import { useStatusI18n } from "@/hooks/useStatusI18n";
 import { toast } from "sonner";
 import { Trash2 } from "lucide-react";
 import { CrmShell } from "@/components/crm/CrmShell";
@@ -36,6 +37,7 @@ const priorities = ["LOW", "MEDIUM", "HIGH", "URGENT"] as const;
 
 export default function CrmTasksPage() {
   const t = useTranslations("crm");
+  const status = useStatusI18n();
   const { data: session } = useSession();
   const qc = useQueryClient();
   const showDelete = canDelete(session?.user?.role);
@@ -198,7 +200,7 @@ export default function CrmTasksPage() {
             >
               {priorities.map((p) => (
                 <option key={p} value={p}>
-                  {p}
+                  {status.ticketPriority(p)}
                 </option>
               ))}
             </select>
@@ -209,14 +211,14 @@ export default function CrmTasksPage() {
         </CardContent>
       </Card>
 
-      {isLoading ? <p className="text-muted-foreground">Loading…</p> : null}
+          {isLoading ? <p className="text-muted-foreground">{t("working")}</p> : null}
 
       <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
         {columns.map((col) => (
           <Card key={col}>
             <CardHeader className="pb-2">
               <CardTitle className="flex items-center justify-between text-sm">
-                <span>{col.replace("_", " ")}</span>
+                <span>{status.taskStatus(col)}</span>
                 <Badge variant="secondary">{grouped[col]?.length || 0}</Badge>
               </CardTitle>
             </CardHeader>
@@ -262,7 +264,7 @@ export default function CrmTasksPage() {
                         <p className="font-medium">{task.title}</p>
                         <p className="text-xs text-muted-foreground">
                           {task.project.name}
-                          {task.priority ? ` · ${task.priority}` : ""}
+                          {task.priority ? ` · ${status.ticketPriority(task.priority)}` : ""}
                         </p>
                         <div className="mt-2 flex flex-wrap gap-1">
                           <select

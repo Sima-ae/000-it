@@ -24,6 +24,13 @@ import { ShopProductImage } from "@/components/shop/ShopProductImage";
 import { localizedHref } from "@/i18n/pathnames";
 import { canDelete, canEditResource } from "@/lib/roles";
 import { centsToEurosNumber } from "@/lib/shop/admin";
+import { getProductI18n } from "@/content/fixweb/product-i18n";
+
+function itemName(item: Item, locale: string) {
+  const i18n = getProductI18n(item.slug, locale);
+  if (i18n?.name?.trim()) return i18n.name.trim();
+  return locale === "nl" ? item.nameNl : item.nameEn;
+}
 
 type Item = {
   id: string;
@@ -194,7 +201,7 @@ export default function ShopAdminPage() {
                 <div className="relative h-20 w-full overflow-hidden rounded-lg bg-muted sm:w-28">
                   <ShopProductImage
                     src={item.image}
-                    alt={locale === "nl" ? item.nameNl : item.nameEn}
+                    alt={itemName(item, locale)}
                     sizes="112px"
                     fallbackClassName="p-3"
                   />
@@ -202,7 +209,7 @@ export default function ShopAdminPage() {
                 <div className="min-w-0 flex-1 space-y-1">
                   <div className="flex flex-wrap items-center gap-2">
                     <p className="font-medium">
-                      {locale === "nl" ? item.nameNl : item.nameEn}
+                      {itemName(item, locale)}
                     </p>
                     <Badge variant="outline">{item.type}</Badge>
                     <Badge variant={item.published ? "default" : "secondary"}>

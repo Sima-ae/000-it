@@ -1,0 +1,1 @@
+Plată securizată prin Stripe (iDEAL, card și multe altele). Preturile includ TVA 21%.

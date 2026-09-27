@@ -1,0 +1,1 @@
+Ștergeți definitiv clientul potențial „{name}” ({email})?

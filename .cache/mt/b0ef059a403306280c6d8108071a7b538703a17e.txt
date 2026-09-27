@@ -1,0 +1,1 @@
+Siguroni arkë përmes Stripe (iDEAL, kartë dhe më shumë). Çmimet përfshijnë TVSH 21%.

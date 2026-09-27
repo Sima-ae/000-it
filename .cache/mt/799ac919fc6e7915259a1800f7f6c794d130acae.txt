@@ -1,0 +1,1 @@
+Esta fatura foi gerada automaticamente após pagamento bem-sucedido via Stripe. Por favor, guarde-o em seus registros.

@@ -1,0 +1,1 @@
+Dane te wykorzystujemy do rejestracji w WHOIS. Płatność jest realizowana bezpiecznie za pośrednictwem Stripe.

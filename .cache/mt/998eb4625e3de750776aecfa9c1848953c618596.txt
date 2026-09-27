@@ -1,0 +1,1 @@
+Registracija apmokėta per Stripe ir vykdoma automatiškai. Atskirai nuo aptarnavimo ir prieglobos užsakymų.

@@ -1,6 +1,7 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
+import { useStatusI18n } from "@/hooks/useStatusI18n";
 import { useState } from "react";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { toast } from "sonner";
@@ -56,6 +57,7 @@ function projectTypeLabel(
 
 export default function ProjectsPage() {
   const t = useTranslations("dashboard");
+  const status = useStatusI18n();
   const locale = useLocale();
   const { data: projects = [], isLoading } = useProjects();
   const createProject = useCreateProject();
@@ -131,7 +133,7 @@ export default function ProjectsPage() {
                 <Card className="h-full transition hover:border-primary/40">
                   <CardHeader className="flex-row items-center justify-between space-y-0">
                     <CardTitle className="text-base">{project.name}</CardTitle>
-                    <Badge>{project.status}</Badge>
+                    <Badge>{status.projectStatus(project.status)}</Badge>
                   </CardHeader>
                   <CardContent>
                     <p className="mb-3 text-xs text-muted-foreground">

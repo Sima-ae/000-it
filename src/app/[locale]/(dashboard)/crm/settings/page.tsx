@@ -13,6 +13,7 @@ import { localizedHref } from "@/i18n/pathnames";
 
 export default function CrmSettingsPage() {
   const t = useTranslations("crm");
+  const tChat = useTranslations("liveChat");
   const locale = useLocale();
   const router = useRouter();
   const { data: session, status } = useSession();
@@ -57,7 +58,7 @@ export default function CrmSettingsPage() {
       title: t("settingsIntegrations"),
       items: [
         {
-          label: "Live chat",
+          label: tChat("title"),
           href: "/crm/tickets",
           desc: t("settingsChatDesc"),
         },

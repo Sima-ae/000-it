@@ -220,6 +220,7 @@ export function LiveChatWidget() {
       visitor: t("visitor"),
       subjectPrefix: t("subjectPrefix"),
       agentLabel: t("agentLabel"),
+      dismiss: t("dismiss"),
     }),
     [t],
   );
@@ -662,7 +663,7 @@ export function LiveChatWidget() {
             type="button"
             onClick={dismissTeaser}
             className="absolute right-1.5 top-1.5 rounded p-0.5 text-muted-foreground hover:text-foreground"
-            aria-label="Dismiss"
+            aria-label={copy.dismiss}
           >
             <X className="h-3.5 w-3.5" />
           </button>
@@ -767,7 +768,7 @@ export function StaffTodoPanel({ className }: { className?: string }) {
                   "flex h-5 w-5 shrink-0 items-center justify-center rounded border",
                   todo.done ? "border-primary bg-primary text-primary-foreground" : "border-border",
                 )}
-                aria-label="Toggle"
+                aria-label={t("toggleDone")}
               >
                 {todo.done ? "✓" : null}
               </button>

@@ -1,0 +1,1 @@
+{order} — {name} kalıcı olarak silinsin mi?

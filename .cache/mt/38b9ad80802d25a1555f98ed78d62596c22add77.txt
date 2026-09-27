@@ -1,0 +1,1 @@
+Cette facture a été générée automatiquement après un paiement réussi via Stripe. Veuillez le conserver pour vos dossiers.

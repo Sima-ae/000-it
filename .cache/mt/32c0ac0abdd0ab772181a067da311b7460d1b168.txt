@@ -1,0 +1,1 @@
+Denna faktura genererades automatiskt efter framgångsrik betalning via Stripe. Vänligen spara det för dina register.

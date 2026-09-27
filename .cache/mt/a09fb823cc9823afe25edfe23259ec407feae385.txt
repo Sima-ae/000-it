@@ -1,0 +1,1 @@
+Faktura ta została wygenerowana automatycznie po pomyślnej płatności za pośrednictwem Stripe. Proszę zachować to w swojej dokumentacji.

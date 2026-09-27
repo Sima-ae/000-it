@@ -1,0 +1,1 @@
+Se afișează {shown} din {total}

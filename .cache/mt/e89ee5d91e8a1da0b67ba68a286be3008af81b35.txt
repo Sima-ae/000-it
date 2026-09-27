@@ -1,0 +1,1 @@
+Stripe aracılığıyla güvenli ödeme (iDEAL, kart ve daha fazlası). Fiyatlara %21 KDV dahildir.

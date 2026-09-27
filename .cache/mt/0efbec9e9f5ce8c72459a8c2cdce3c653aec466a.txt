@@ -1,0 +1,1 @@
+Bezpečná pokladna přes Stripe (iDEAL, karta a další). Ceny jsou včetně 21% DPH.

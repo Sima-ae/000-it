@@ -1,0 +1,1 @@
+Supprimer définitivement le prospect « {name} » ({email}) ?

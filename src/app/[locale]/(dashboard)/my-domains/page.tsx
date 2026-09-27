@@ -2,6 +2,7 @@
 
 import { Suspense, useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import { useStatusI18n } from "@/hooks/useStatusI18n";
 import { useSession } from "next-auth/react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { ArrowDown, ArrowUp, ArrowUpDown, Search } from "lucide-react";
@@ -75,6 +76,7 @@ function SortIcon({ active, dir }: { active: boolean; dir: SortDir }) {
 
 export default function MyDomainsPage() {
   const t = useTranslations("myDomains");
+  const status = useStatusI18n();
   const locale = useLocale();
   const { data: session } = useSession();
   const staff = isStaffRole(session?.user?.role);
@@ -645,7 +647,7 @@ export default function MyDomainsPage() {
                         </td>
                         <td className="py-2 pr-3 font-medium">{d.domainName}</td>
                         <td className="py-2 pr-3">
-                          <Badge variant="outline">{d.status}</Badge>
+                          <Badge variant="outline">{status.domainStatus(d.status)}</Badge>
                         </td>
                         <td
                           className={cn(
@@ -732,7 +734,7 @@ export default function MyDomainsPage() {
                 <div className="grid gap-3 sm:grid-cols-2">
                   {(
                     [
-                      [t("colStatus"), active.status],
+                      [t("colStatus"), status.domainStatus(active.status)],
                       [
                         t("colExpires"),
                         active.expiresAt

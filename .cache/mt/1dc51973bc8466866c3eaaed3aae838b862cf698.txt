@@ -1,0 +1,1 @@
+El alojamiento y los servicios no se pueden contratar juntos. Retire uno y complételos por separado.

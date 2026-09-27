@@ -102,7 +102,7 @@ export default async function DomainsPage({
           ) : null}
 
           <Reveal delay={0.05}>
-            <div className="mt-8 w-full min-w-0 overflow-hidden rounded-[1.5rem] border border-border/70 bg-background/80 p-3 shadow-sm backdrop-blur sm:mt-10 sm:rounded-[1.75rem] sm:p-5 md:p-6">
+            <div className="mt-8 w-full min-w-0 overflow-hidden rounded-3xl border border-border/70 bg-background/80 p-3 shadow-sm backdrop-blur sm:mt-10 sm:rounded-[1.75rem] sm:p-5 md:p-6">
               <DomainSearch />
             </div>
           </Reveal>
@@ -135,7 +135,7 @@ export default async function DomainsPage({
         </div>
 
         <Reveal delay={0.08}>
-          <div className="mt-12 rounded-[1.5rem] border border-border/70 bg-linear-to-br from-primary/10 via-background to-accent/10 px-4 py-7 sm:mt-14 sm:rounded-[1.75rem] sm:px-6 md:px-10 md:py-8">
+          <div className="mt-12 rounded-3xl border border-border/70 bg-linear-to-br from-primary/10 via-background to-accent/10 px-4 py-7 sm:mt-14 sm:rounded-[1.75rem] sm:px-6 md:px-10 md:py-8">
             <h2 className="font-display text-balance text-2xl font-semibold tracking-tight">
               {t("transferTitle")}
             </h2>
@@ -149,7 +149,7 @@ export default async function DomainsPage({
         </Reveal>
 
         <Reveal delay={0.1}>
-          <div className="mt-12 rounded-[1.5rem] border border-border/70 bg-linear-to-br from-primary/10 via-background to-accent/10 px-4 py-7 sm:mt-14 sm:rounded-[1.75rem] sm:px-6 md:px-10 md:py-8">
+          <div className="mt-12 rounded-3xl border border-border/70 bg-linear-to-br from-primary/10 via-background to-accent/10 px-4 py-7 sm:mt-14 sm:rounded-[1.75rem] sm:px-6 md:px-10 md:py-8">
             <h2 className="font-display text-balance text-2xl font-semibold tracking-tight">
               {t("dnsTitle")}
             </h2>

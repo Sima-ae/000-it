@@ -1,0 +1,1 @@
+Denne faktura blev genereret automatisk efter vellykket betaling via Stripe. Opbevar det venligst til din optegnelse.

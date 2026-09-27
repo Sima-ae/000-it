@@ -107,7 +107,7 @@ export default function CrmInvoiceTrashPage() {
           <CardTitle>{t("invoiceTrash")}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-3">
-          {isLoading ? <p className="text-muted-foreground">Loading…</p> : null}
+          {isLoading ? <p className="text-muted-foreground">{t("loading")}</p> : null}
           {invoices.map((inv) => (
             <div
               key={inv.id}

@@ -1,0 +1,1 @@
+Registrácie zaplatené cez Stripe a splnené automaticky. Oddelené od objednávok služieb a hostingu.

@@ -1,0 +1,1 @@
+Dane klienta, status i pozycje zamówienia z cenami zawierającymi podatek VAT.

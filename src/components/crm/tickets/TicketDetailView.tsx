@@ -134,6 +134,7 @@ export function TicketDetailView({
     backToTickets: string;
     channelChat: string;
     channelTicket: string;
+    staff: string;
   };
 }) {
   const labelsI18n = useTicketI18n();
@@ -305,7 +306,7 @@ export function TicketDetailView({
                   <div key={item.id} className="rounded-xl border border-border px-3 py-2">
                     <p className="text-sm whitespace-pre-wrap">{item.body}</p>
                     <p className="mt-1 text-xs text-muted-foreground">
-                      {item.user?.name || "Staff"} ·{" "}
+                      {item.user?.name || labels.staff} ·{" "}
                       {new Date(item.createdAt).toLocaleString(locale)}
                     </p>
                   </div>

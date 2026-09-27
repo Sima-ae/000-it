@@ -1,0 +1,1 @@
+Diese Rechnung wurde nach erfolgreicher Zahlung über Stripe automatisch generiert. Bitte bewahren Sie es für Ihre Unterlagen auf.

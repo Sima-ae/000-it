@@ -1,0 +1,1 @@
+Folosim aceste detalii pentru înregistrarea WHOIS. Plata este gestionată în siguranță prin Stripe.

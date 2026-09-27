@@ -1,0 +1,1 @@
+Vil du slette kundeemne "{navn}" ({email}) permanent?

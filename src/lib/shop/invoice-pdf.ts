@@ -2,6 +2,7 @@ import { existsSync } from "fs";
 import { join } from "path";
 import PDFDocument from "pdfkit";
 import { getCompanyProfile } from "@/lib/company";
+import { getInvoiceCopy, invoiceBcp47 } from "@/content/invoice-i18n";
 
 export type OrderInvoiceLine = {
   description: string;
@@ -59,7 +60,7 @@ function fontFile(name: "NotoSans-Regular.ttf" | "NotoSans-Bold.ttf") {
 
 function money(amount: number, locale: string, currency: string) {
   try {
-    return new Intl.NumberFormat(locale === "nl" ? "nl-NL" : "en-NL", {
+    return new Intl.NumberFormat(invoiceBcp47(locale), {
       style: "currency",
       currency,
     }).format(amount);
@@ -69,7 +70,7 @@ function money(amount: number, locale: string, currency: string) {
 }
 
 function dateLabel(value: Date, locale: string) {
-  return value.toLocaleDateString(locale === "nl" ? "nl-NL" : "en-GB", {
+  return value.toLocaleDateString(invoiceBcp47(locale), {
     day: "2-digit",
     month: "long",
     year: "numeric",
@@ -77,42 +78,7 @@ function dateLabel(value: Date, locale: string) {
 }
 
 function copy(locale: string) {
-  const nl = locale === "nl";
-  return {
-    title: nl ? "Factuur" : "Invoice",
-    taxInvoice: nl ? "BTW-factuur" : "VAT invoice",
-    paid: nl ? "BETAALD" : "PAID",
-    from: nl ? "Leverancier" : "Supplier",
-    billTo: nl ? "Factuur aan" : "Bill to",
-    invoiceNo: nl ? "Factuurnummer" : "Invoice number",
-    orderNo: nl ? "Bestelnummer" : "Order number",
-    issueDate: nl ? "Factuurdatum" : "Invoice date",
-    paidDate: nl ? "Betaaldatum" : "Payment date",
-    payment: nl ? "Betaalmethode" : "Payment method",
-    category: nl ? "Categorie" : "Category",
-    currency: nl ? "Valuta" : "Currency",
-    description: nl ? "Omschrijving" : "Description",
-    qty: nl ? "Aantal" : "Qty",
-    unitExcl: nl ? "Prijs excl." : "Unit excl.",
-    lineVat: nl ? "BTW" : "VAT",
-    lineIncl: nl ? "Totaal incl." : "Total incl.",
-    subtotal: nl ? "Subtotaal excl. BTW" : "Subtotal excl. VAT",
-    vat: nl ? "BTW" : "VAT",
-    total: nl ? "Totaal incl. BTW" : "Total incl. VAT",
-    thanks: nl
-      ? "Bedankt voor je bestelling bij TripleZero iT. Deze factuur bevestigt dat de betaling succesvol is ontvangen."
-      : "Thank you for your order with TripleZero iT. This invoice confirms that payment was received successfully.",
-    taxNote: nl
-      ? "Alle bedragen zijn in EUR. Getoonde verkoopprijzen zijn inclusief 21% Nederlandse BTW, tenzij anders vermeld. BTW is hieronder uitgesplitst."
-      : "All amounts are in EUR. Listed sell prices include 21% Dutch VAT (BTW) unless stated otherwise. VAT is broken down below.",
-    footer: nl
-      ? "Deze factuur is automatisch gegenereerd na succesvolle betaling via Stripe. Bewaar dit document voor je administratie."
-      : "This invoice was generated automatically after successful payment via Stripe. Please keep it for your records.",
-    support: nl ? "Vragen? Mail" : "Questions? Email",
-    stripeRef: nl ? "Stripe-referentie" : "Stripe reference",
-    email: nl ? "E-mail" : "Email",
-    website: nl ? "Website" : "Website",
-  };
+  return getInvoiceCopy(locale);
 }
 
 /** Build a professional A4 PDF invoice buffer. */
@@ -401,7 +367,7 @@ export async function buildOrderInvoicePdf(
       .font(headFont)
       .fontSize(9)
       .fillColor("#14181f")
-      .text(doc.locale === "nl" ? "Notities" : "Notes", left, y);
+      .text(t.notes, left, y);
     y += 12;
     pdf
       .font(bodyFont)

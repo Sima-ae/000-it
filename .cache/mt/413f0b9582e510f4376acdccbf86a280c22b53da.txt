@@ -1,0 +1,1 @@
+Anmälningar betalas via Stripe och fullföljs automatiskt. Separat från service- och värdorder.

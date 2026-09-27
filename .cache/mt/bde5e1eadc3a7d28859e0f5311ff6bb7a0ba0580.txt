@@ -1,0 +1,1 @@
+Ova faktura je generirana automatski nakon uspješnog plaćanja putem Stripea. Zadržite to za svoju evidenciju.

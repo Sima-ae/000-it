@@ -1,0 +1,1 @@
+Dettagli del cliente, stato e voci con prezzi IVA inclusa.

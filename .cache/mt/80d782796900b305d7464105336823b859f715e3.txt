@@ -1,0 +1,1 @@
+Detalhes do cliente, status e itens de linha com preços com IVA incluído.

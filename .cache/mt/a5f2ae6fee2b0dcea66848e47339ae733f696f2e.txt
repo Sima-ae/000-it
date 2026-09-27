@@ -1,0 +1,1 @@
+Kundedetaljer, status og ordrelinjer med priser inkludert mva.

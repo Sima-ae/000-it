@@ -1,0 +1,1 @@
+Denne fakturaen ble generert automatisk etter vellykket betaling via Stripe. Vennligst oppbevar det for journalen din.

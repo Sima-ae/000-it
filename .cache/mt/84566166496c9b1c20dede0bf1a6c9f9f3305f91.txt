@@ -1,0 +1,1 @@
+Ödeme yapıldıktan sonra alan adını otomatik olarak kaydederiz. Bir şeyler başarısız olursa destek alırsınız.

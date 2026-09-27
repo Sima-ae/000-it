@@ -98,6 +98,11 @@ export const dashboardNav: DashboardNavItem[] = [
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
   },
   {
+    href: "/all-orders",
+    key: "allOrders",
+    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
+  },
+  {
     href: "/crm",
     key: "crm",
     roles: ["CLIENT"],
@@ -138,6 +143,11 @@ export const dashboardNav: DashboardNavItem[] = [
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
   },
   {
+    href: "/crm",
+    key: "crm",
+    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
+  },
+  {
     href: "/shop-admin",
     key: "shop",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
@@ -171,20 +181,11 @@ export const dashboardNav: DashboardNavItem[] = [
     sidebar: false,
   },
   {
-    href: "/all-orders",
-    key: "allOrders",
-    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
-  },
-  {
     href: "/crm/clients",
     key: "clients",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
   },
-  {
-    href: "/crm",
-    key: "crm",
-    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
-  },
+
   {
     href: "/kennisbank-admin",
     key: "kennisbank",

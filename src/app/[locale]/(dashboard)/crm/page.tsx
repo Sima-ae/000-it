@@ -6,6 +6,7 @@ import { SoftLink } from "@/components/shared/SoftLink";
 import { CrmShell } from "@/components/crm/CrmShell";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { useStatusI18n } from "@/hooks/useStatusI18n";
 import { Button } from "@/components/ui/button";
 import { StaffTodoPanel } from "@/components/chat/LiveChatWidget";
 import { localizedHref } from "@/i18n/pathnames";
@@ -43,6 +44,7 @@ type Overview = {
 
 export default function CrmHomePage() {
   const t = useTranslations("crm");
+  const status = useStatusI18n();
   const td = useTranslations("dashboard");
   const locale = useLocale();
   const { data, isLoading, isError, refetch, isFetching } = useQuery({
@@ -168,7 +170,7 @@ export default function CrmHomePage() {
                     {ticket.client?.company || ticket.client?.name || ticket.source}
                   </p>
                 </div>
-                <Badge variant="outline">{ticket.status.replace("_", " ")}</Badge>
+                <Badge variant="outline">{status.ticketStatus(ticket.status)}</Badge>
               </SoftLink>
             ))}
             {!data.recentTickets.length ? (
@@ -219,7 +221,7 @@ export default function CrmHomePage() {
               >
                 <p className="font-medium">{client.name}</p>
                 <p className="text-xs text-muted-foreground">
-                  {client.company || "—"} · {client.isLead ? "Lead" : client.status}
+                  {client.company || "—"} · {client.isLead ? t("lead") : status.clientStatus(client.status)}
                 </p>
               </SoftLink>
             ))}

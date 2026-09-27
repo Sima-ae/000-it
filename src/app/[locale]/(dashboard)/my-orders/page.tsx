@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import { useStatusI18n } from "@/hooks/useStatusI18n";
 import { useQuery } from "@tanstack/react-query";
 import { Download, Globe, Server, ShoppingBag } from "lucide-react";
 import { toast } from "sonner";
@@ -135,6 +136,7 @@ async function downloadInvoice(id: string, type: "shop" | "domain") {
 
 export default function MyOrdersPage() {
   const t = useTranslations("dashboard");
+  const status = useStatusI18n();
   const locale = useLocale();
   const [tab, setTab] = useState<Tab>("services");
   const [downloading, setDownloading] = useState<string | null>(null);
@@ -256,7 +258,7 @@ export default function MyOrdersPage() {
                       {order.orderNumber}
                     </CardTitle>
                     <p className="mt-1 text-sm text-muted-foreground">
-                      {order.domainName} · {order.orderType.toLowerCase()} ·{" "}
+                      {order.domainName} · {status.orderType(order.orderType)} ·{" "}
                       {order.years} {order.years === 1 ? t("year") : t("years")}
                     </p>
                     <p className="mt-0.5 text-xs text-muted-foreground">

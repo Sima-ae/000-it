@@ -1,0 +1,1 @@
+Această factură a fost generată automat după plata cu succes prin Stripe. Vă rugăm să-l păstrați pentru evidența dvs.

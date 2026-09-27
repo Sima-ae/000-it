@@ -1,0 +1,1 @@
+Vi bruger disse oplysninger til WHOIS-registrering. Betaling håndteres sikkert via Stripe.

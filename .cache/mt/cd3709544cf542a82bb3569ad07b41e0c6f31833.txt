@@ -1,0 +1,1 @@
+Prikazuje se {shown} od {total}

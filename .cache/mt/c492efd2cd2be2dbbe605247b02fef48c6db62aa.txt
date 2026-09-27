@@ -1,0 +1,1 @@
+Qeydiyyatlar Stripe vasitəsilə ödənilir və avtomatik yerinə yetirilir. Xidmət və hosting sifarişlərindən ayrı.
