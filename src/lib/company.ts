@@ -48,7 +48,7 @@ export function getCompanyProfile(): CompanyProfile {
     tradeName: env("COMPANY_TRADE_NAME") || "TripleZero iT",
     tagline:
       env("COMPANY_TAGLINE") ||
-      "AI, AEO, GEO, SEO, marketing, hosting & software",
+      "AI, AEO, GEO, SEO, domeinen, hosting en marketing",
     addressLines,
     email: env("COMPANY_EMAIL") || smtpEmail || "info@000-it.com",
     supportEmail: env("COMPANY_SUPPORT_EMAIL") || "support@000-it.com",

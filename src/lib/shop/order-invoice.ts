@@ -247,6 +247,13 @@ export async function buildShopOrderInvoiceDocument(input: {
     };
   });
 
+  // Prefer summing line amounts so PDF totals always match visible regels.
+  const subtotalExcl =
+    lines.reduce((s, l) => s + l.lineExcl, 0) || order.subtotalExcl;
+  const vatAmount = lines.reduce((s, l) => s + l.lineVat, 0) || order.vatAmount;
+  const totalIncl =
+    lines.reduce((s, l) => s + l.lineIncl, 0) || order.totalIncl;
+
   const fallbackCustomer: OrderInvoiceCustomer = {
     name: order.name,
     company: order.company,
@@ -269,9 +276,9 @@ export async function buildShopOrderInvoiceDocument(input: {
     ),
     customer: customerFromStripe(input.session, fallbackCustomer),
     lines,
-    subtotalExcl: order.subtotalExcl,
-    vatAmount: order.vatAmount,
-    totalIncl: order.totalIncl,
+    subtotalExcl,
+    vatAmount,
+    totalIncl,
   };
 
   return { ok: true, document, orderId: order.id };

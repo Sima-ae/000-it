@@ -4,7 +4,13 @@ import { requireUser } from "@/lib/api-auth";
 import { isAdminRole, isStaffRole } from "@/lib/roles";
 import { buildOrderInvoicePdf, type OrderInvoiceDocument } from "@/lib/shop/invoice-pdf";
 import { normalizedClientEmail } from "@/lib/portal/scope";
-import type { InvoiceLineItem } from "@/lib/crm/invoices";
+import {
+  computeInvoiceTotals,
+  parseInvoiceItems,
+  roundMoney,
+} from "@/lib/crm/invoices";
+import { getInvoiceCopy } from "@/content/invoice-i18n";
+import { splitInclusiveVat } from "@/lib/shop/vat";
 
 export const dynamic = "force-dynamic";
 
@@ -39,6 +45,7 @@ export async function GET(
   const url = new URL(request.url);
   const localeParam = (url.searchParams.get("locale") || "en").toLowerCase();
   const locale = localeParam.split("-")[0] || "en";
+  const t = getInvoiceCopy(locale);
   const invoice = await prisma.invoice.findUnique({
     where: { id },
     include: {
@@ -68,22 +75,72 @@ export async function GET(
     return NextResponse.json({ error: "Forbidden" }, { status: 403 });
   }
 
-  const items = (Array.isArray(invoice.items) ? invoice.items : []) as InvoiceLineItem[];
-  const taxRateFrac = Number(invoice.taxRate || 0) / 100;
-  const lines = items.map((item) => {
-    const qty = Number(item.qty) || 0;
-    const unitExcl = Number(item.unitPrice) || 0;
-    const lineExcl = qty * unitExcl;
-    const lineVat = lineExcl * taxRateFrac;
-    return {
-      description: String(item.description || ""),
-      quantity: qty,
-      unitExcl,
-      lineExcl,
-      lineVat,
-      lineIncl: lineExcl + lineVat,
-    };
-  });
+  const taxRatePct = Number(invoice.taxRate) || 0;
+  const taxRateFrac = taxRatePct / 100;
+  const fallbackDescription =
+    invoice.reference?.trim() ||
+    invoice.project?.name?.trim() ||
+    invoice.notes?.trim()?.slice(0, 120) ||
+    t.services;
+
+  const storedAmount = Number(invoice.amount) || 0;
+  const storedSubtotal = Number(invoice.subtotal) || 0;
+  const storedTax = Number(invoice.taxAmount) || 0;
+  const parsedItems = parseInvoiceItems(invoice.items);
+
+  let lines: OrderInvoiceDocument["lines"];
+  let subtotalExcl: number;
+  let vatAmount: number;
+  let totalIncl: number;
+
+  if (parsedItems.length > 0) {
+    const computed = computeInvoiceTotals(parsedItems, taxRatePct);
+    lines = parsedItems.map((item) => {
+      const qty = Number(item.qty) || 0;
+      const unitExcl = Number(item.unitPrice) || 0;
+      const lineExcl = roundMoney(qty * unitExcl);
+      const lineVat = roundMoney(lineExcl * taxRateFrac);
+      return {
+        description: String(item.description || ""),
+        quantity: qty,
+        unitExcl,
+        lineExcl,
+        lineVat,
+        lineIncl: roundMoney(lineExcl + lineVat),
+      };
+    });
+    subtotalExcl = computed.subtotal;
+    vatAmount = computed.taxAmount;
+    totalIncl = computed.amount;
+  } else if (storedSubtotal > 0 || storedAmount > 0) {
+    // Recover visible regels + matching BTW from stored totals (incl. amount).
+    const incl =
+      storedAmount > 0
+        ? storedAmount
+        : roundMoney(storedSubtotal + storedTax);
+    const split =
+      taxRateFrac > 0
+        ? splitInclusiveVat(incl, taxRateFrac)
+        : { excl: incl, vat: 0, incl };
+    lines = [
+      {
+        description: fallbackDescription,
+        quantity: 1,
+        unitExcl: split.excl,
+        lineExcl: split.excl,
+        lineVat: split.vat,
+        lineIncl: split.incl,
+      },
+    ];
+    subtotalExcl = split.excl;
+    vatAmount = split.vat;
+    totalIncl = split.incl;
+  } else {
+    lines = [];
+    subtotalExcl = 0;
+    vatAmount = 0;
+    totalIncl = 0;
+  }
 
   const addressLines = [
     invoice.client.address,
@@ -98,11 +155,9 @@ export async function GET(
     taxRate: taxRateFrac,
     issueDate: invoice.issueDate,
     paidAt: invoice.status === "PAID" ? invoice.updatedAt : invoice.issueDate,
-    paymentMethod: null,
+    paymentMethod: invoice.paymentTerms || null,
     stripeSessionId: null,
-    categoryLabel: invoice.project?.name
-      ? `${invoice.project.name}`
-      : invoice.number,
+    categoryLabel: invoice.project?.name || t.services,
     customer: {
       name: invoice.client.name,
       company: invoice.client.company,
@@ -112,10 +167,10 @@ export async function GET(
       vatNumber: invoice.client.vatNumber,
     },
     lines,
-    subtotalExcl: Number(invoice.subtotal) || 0,
-    vatAmount: Number(invoice.taxAmount) || 0,
-    totalIncl: Number(invoice.amount) || 0,
-    notes: [invoice.paymentTerms, invoice.notes].filter(Boolean).join("\n") || null,
+    subtotalExcl,
+    vatAmount,
+    totalIncl,
+    notes: invoice.notes || null,
   };
 
   const pdf = await buildOrderInvoicePdf(document);

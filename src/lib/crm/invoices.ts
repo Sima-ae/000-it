@@ -4,6 +4,40 @@ export type InvoiceLineItem = {
   unitPrice: number;
 };
 
+/** Normalize Prisma Json / legacy shapes into invoice line items. */
+export function parseInvoiceItems(raw: unknown): InvoiceLineItem[] {
+  let value: unknown = raw;
+  if (typeof value === "string") {
+    try {
+      value = JSON.parse(value);
+    } catch {
+      return [];
+    }
+  }
+  if (!Array.isArray(value)) return [];
+
+  return value
+    .map((entry) => {
+      const row = (entry && typeof entry === "object" ? entry : {}) as Record<
+        string,
+        unknown
+      >;
+      const description = String(
+        row.description ?? row.name ?? row.title ?? "",
+      ).trim();
+      const qty = Number(row.qty ?? row.quantity ?? 1);
+      const unitPrice = Number(
+        row.unitPrice ?? row.unitExcl ?? row.price ?? row.amount ?? 0,
+      );
+      return {
+        description,
+        qty: Number.isFinite(qty) && qty > 0 ? qty : 1,
+        unitPrice: Number.isFinite(unitPrice) ? unitPrice : 0,
+      };
+    })
+    .filter((item) => item.description.length > 0);
+}
+
 export const INVOICE_STATUSES = [
   "DRAFT",
   "SENT",
