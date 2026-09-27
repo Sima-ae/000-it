@@ -930,7 +930,15 @@
     "invoicesShopOrdersHint": "Разписките за хостинг, услуги и домейни с изтегляне на PDF са под",
     "myOrdersLink": "Моите заповеди",
     "invoicePdfDownloaded": "Изтеглена PDF фактура",
-    "sendFailed": "Съобщението не можа да бъде изпратено"
+    "sendFailed": "Съобщението не можа да бъде изпратено",
+    "leadDelete": "Delete",
+    "leadDeleteTitle": "Delete lead",
+    "leadDeleteConfirm": "Permanently delete lead “{name}” ({email})?",
+    "leadDeleteHint": "This action is permanent and cannot be undone.",
+    "leadDeleted": "Lead deleted",
+    "leadDeleteFailed": "Could not delete lead",
+    "leadUpdateFailed": "Could not update lead",
+    "leadConvertFailed": "Could not convert lead"
   },
   "about": {
     "eyebrow": "За нас",

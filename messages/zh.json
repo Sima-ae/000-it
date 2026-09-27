@@ -930,7 +930,15 @@
     "invoicesShopOrdersHint": "带有 PDF 下载的托管、服务和域名收据如下",
     "myOrdersLink": "我的订单",
     "invoicePdfDownloaded": "发票 PDF 下载",
-    "sendFailed": "无法发送消息"
+    "sendFailed": "无法发送消息",
+    "leadDelete": "Delete",
+    "leadDeleteTitle": "Delete lead",
+    "leadDeleteConfirm": "Permanently delete lead “{name}” ({email})?",
+    "leadDeleteHint": "This action is permanent and cannot be undone.",
+    "leadDeleted": "Lead deleted",
+    "leadDeleteFailed": "Could not delete lead",
+    "leadUpdateFailed": "Could not update lead",
+    "leadConvertFailed": "Could not convert lead"
   },
   "about": {
     "eyebrow": "关于我们",

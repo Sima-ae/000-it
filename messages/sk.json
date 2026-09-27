@@ -930,7 +930,15 @@
     "invoicesShopOrdersHint": "Potvrdenia o hosťovaní, službách a doménach so stiahnutím PDF sú pod",
     "myOrdersLink": "Moje rozkazy",
     "invoicePdfDownloaded": "Faktúra vo formáte PDF bola stiahnutá",
-    "sendFailed": "Správu sa nepodarilo odoslať"
+    "sendFailed": "Správu sa nepodarilo odoslať",
+    "leadDelete": "Delete",
+    "leadDeleteTitle": "Delete lead",
+    "leadDeleteConfirm": "Permanently delete lead “{name}” ({email})?",
+    "leadDeleteHint": "This action is permanent and cannot be undone.",
+    "leadDeleted": "Lead deleted",
+    "leadDeleteFailed": "Could not delete lead",
+    "leadUpdateFailed": "Could not update lead",
+    "leadConvertFailed": "Could not convert lead"
   },
   "about": {
     "eyebrow": "O nás",

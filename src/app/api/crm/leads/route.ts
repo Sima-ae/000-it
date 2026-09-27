@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 import { prisma } from "@/lib/prisma";
 import { requireRole } from "@/lib/api-auth";
-import { canDelete, isAdminRole, ownScope } from "@/lib/roles";
+import { isAdminRole, ownScope } from "@/lib/roles";
 
 const patchSchema = z.object({
   status: z.enum(["NEW", "CONTACTED", "QUALIFIED", "PROPOSAL", "WON", "LOST"]).optional(),
@@ -96,16 +96,18 @@ export async function POST(request: Request) {
 }
 
 export async function DELETE(request: Request) {
-  const authResult = await requireRole(["SUPER_ADMIN"]);
+  const authResult = await requireRole(["SUPER_ADMIN", "ADMIN"]);
   if (authResult.error) return authResult.error;
-  if (!canDelete(authResult.session.user.role) && !isAdminRole(authResult.session.user.role)) {
+  if (!isAdminRole(authResult.session.user.role)) {
     return NextResponse.json({ error: "Forbidden" }, { status: 403 });
   }
 
   const id = new URL(request.url).searchParams.get("id");
   if (!id) return NextResponse.json({ error: "Missing id" }, { status: 400 });
-  if (!canDelete(authResult.session.user.role)) {
-    return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+
+  const existing = await prisma.contactLead.findUnique({ where: { id } });
+  if (!existing) {
+    return NextResponse.json({ error: "Not found" }, { status: 404 });
   }
 
   await prisma.contactLead.delete({ where: { id } });

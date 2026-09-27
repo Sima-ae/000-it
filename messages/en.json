@@ -930,7 +930,15 @@
     "invoicesShopOrdersHint": "Hosting, service and domain receipts with PDF download are under",
     "myOrdersLink": "My orders",
     "invoicePdfDownloaded": "Invoice PDF downloaded",
-    "sendFailed": "Could not send message"
+    "sendFailed": "Could not send message",
+    "leadDelete": "Delete",
+    "leadDeleteTitle": "Delete lead",
+    "leadDeleteConfirm": "Permanently delete lead “{name}” ({email})?",
+    "leadDeleteHint": "This action is permanent and cannot be undone.",
+    "leadDeleted": "Lead deleted",
+    "leadDeleteFailed": "Could not delete lead",
+    "leadUpdateFailed": "Could not update lead",
+    "leadConvertFailed": "Could not convert lead"
   },
   "about": {
     "eyebrow": "About us",

@@ -930,7 +930,15 @@
     "invoicesShopOrdersHint": "Hosting-, dienst- en domeinbonnen met PDF-download staan onder",
     "myOrdersLink": "Mijn bestellingen",
     "invoicePdfDownloaded": "Factuur-PDF gedownload",
-    "sendFailed": "Bericht kon niet worden verzonden"
+    "sendFailed": "Bericht kon niet worden verzonden",
+    "leadDelete": "Verwijderen",
+    "leadDeleteTitle": "Lead verwijderen",
+    "leadDeleteConfirm": "Lead “{name}” ({email}) permanent verwijderen?",
+    "leadDeleteHint": "Deze actie is permanent en kan niet ongedaan worden gemaakt.",
+    "leadDeleted": "Lead verwijderd",
+    "leadDeleteFailed": "Lead kon niet worden verwijderd",
+    "leadUpdateFailed": "Lead kon niet worden bijgewerkt",
+    "leadConvertFailed": "Lead kon niet worden geconverteerd"
   },
   "about": {
     "eyebrow": "Over ons",
