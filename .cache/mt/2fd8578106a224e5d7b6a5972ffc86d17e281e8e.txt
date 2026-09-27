@@ -1,0 +1,1 @@
+Trilha de auditoria completa de projetos, agentes, verificações, clientes e eventos do sistema. Atualiza automaticamente a cada hora.

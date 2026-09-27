@@ -4,6 +4,7 @@ import { redirect } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { Sidebar } from "@/components/dashboard/Sidebar";
 import { DashboardSessionSync } from "@/components/dashboard/DashboardSessionSync";
+import { ClientDashboardHeader } from "@/components/dashboard/ClientDashboardHeader";
 import { ContentTransition } from "@/components/shared/ContentTransition";
 import { CopyrightBar } from "@/components/shared/CopyrightBar";
 import { localizedHref } from "@/i18n/pathnames";
@@ -46,6 +47,7 @@ export default async function DashboardLayout({
         />
         <div className="flex-1 p-3 md:p-6 md:pl-0">
           <div className="glass min-h-[calc(100svh-1.5rem)] rounded-[1.75rem] p-4 md:p-8">
+            <ClientDashboardHeader role={dbUser.role} />
             <ContentTransition>{children}</ContentTransition>
           </div>
         </div>

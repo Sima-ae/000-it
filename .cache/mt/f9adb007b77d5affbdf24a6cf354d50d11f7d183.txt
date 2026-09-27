@@ -1,0 +1,1 @@
+Atsakykite į {key}. El. laiškas bus išsiųstas adresu {email}.

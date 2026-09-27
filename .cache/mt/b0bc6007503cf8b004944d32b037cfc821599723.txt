@@ -1,0 +1,1 @@
+Visualizzazione di {count} di {total}

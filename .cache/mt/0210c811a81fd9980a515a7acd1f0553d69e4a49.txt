@@ -1,0 +1,1 @@
+Svar til {key}. E-post vil bli sendt til {email}.

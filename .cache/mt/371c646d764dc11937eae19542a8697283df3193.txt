@@ -1,0 +1,1 @@
+Twoja odpowiedź na {key} pojawia się natychmiast w wyskakującym okienku czatu na żywo odwiedzającego.

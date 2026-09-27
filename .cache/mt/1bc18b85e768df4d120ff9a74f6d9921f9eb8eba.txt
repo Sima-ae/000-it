@@ -1,0 +1,1 @@
+Somente o superadministrador pode abrir a lixeira de faturas.

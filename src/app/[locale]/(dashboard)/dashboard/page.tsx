@@ -170,7 +170,7 @@ export default function DashboardPage() {
   });
 
   if (isLoading) {
-    return <p className="text-muted-foreground">Loading…</p>;
+    return <p className="text-muted-foreground">{t("working")}</p>;
   }
 
   if (isError || !data) {

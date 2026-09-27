@@ -59,7 +59,7 @@ export default function CrmHomePage() {
   if (isLoading) {
     return (
       <CrmShell title={t("overview")}>
-        <p className="text-muted-foreground">Loading…</p>
+        <p className="text-muted-foreground">{td("working")}</p>
       </CrmShell>
     );
   }

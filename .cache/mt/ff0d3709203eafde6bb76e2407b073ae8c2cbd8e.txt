@@ -1,0 +1,1 @@
+Visam laikui ištrinti {number}? To negalima anuliuoti.

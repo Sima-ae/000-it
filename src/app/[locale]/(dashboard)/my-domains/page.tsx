@@ -785,7 +785,7 @@ export default function MyDomainsPage() {
                         next[i] = { ...h, name: e.target.value };
                         setHosts(next);
                       }}
-                      placeholder="Name"
+                      placeholder={t("dnsNamePh")}
                     />
                     <Input
                       className="rounded-xl"
@@ -795,7 +795,7 @@ export default function MyDomainsPage() {
                         next[i] = { ...h, type: e.target.value };
                         setHosts(next);
                       }}
-                      placeholder="Type"
+                      placeholder={t("dnsTypePh")}
                     />
                     <Input
                       className="rounded-xl sm:col-span-2"
@@ -805,7 +805,7 @@ export default function MyDomainsPage() {
                         next[i] = { ...h, address: e.target.value };
                         setHosts(next);
                       }}
-                      placeholder="Address / URL"
+                      placeholder={t("dnsAddressPh")}
                     />
                   </div>
                 ))}
@@ -880,7 +880,7 @@ export default function MyDomainsPage() {
                         next[i] = { ...f, mailbox: e.target.value };
                         setForwards(next);
                       }}
-                      placeholder="mailbox"
+                      placeholder={t("forwardMailboxPh")}
                     />
                     <Input
                       className="rounded-xl"
@@ -890,7 +890,7 @@ export default function MyDomainsPage() {
                         next[i] = { ...f, forwardTo: e.target.value };
                         setForwards(next);
                       }}
-                      placeholder="forward@example.com"
+                      placeholder={t("forwardToPh")}
                     />
                   </div>
                 ))}
@@ -921,15 +921,15 @@ export default function MyDomainsPage() {
                 <div className="grid gap-2 sm:grid-cols-2">
                   {(
                     [
-                      ["keyTag", "Key tag"],
-                      ["algorithm", "Algorithm"],
-                      ["digestType", "Digest type"],
-                      ["digest", "Digest"],
+                      ["keyTag", "dnssecKeyTag"],
+                      ["algorithm", "dnssecAlgorithm"],
+                      ["digestType", "dnssecDigestType"],
+                      ["digest", "dnssecDigest"],
                     ] as const
-                  ).map(([key, label]) => (
+                  ).map(([key, labelKey]) => (
                     <div key={key} className="space-y-1.5">
                       <Label className="text-xs font-medium tracking-wide text-muted-foreground">
-                        {label}
+                        {t(labelKey)}
                       </Label>
                       <Input
                         className="rounded-xl bg-background"

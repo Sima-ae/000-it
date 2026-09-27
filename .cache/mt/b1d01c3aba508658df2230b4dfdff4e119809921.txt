@@ -1,0 +1,1 @@
+DNS, névszerverek, adatvédelem, zárolás és megújítások ehhez a domainhez.

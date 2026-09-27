@@ -1,0 +1,1 @@
+Jūsų atsakymas į {key} iškart pasirodo lankytojo tiesioginio pokalbio iššokančiajame lange.

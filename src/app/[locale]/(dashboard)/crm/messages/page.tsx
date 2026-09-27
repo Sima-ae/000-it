@@ -63,7 +63,7 @@ export default function CrmMessagesPage() {
       body: JSON.stringify({ toUserId, subject, body: body.trim() }),
     });
     if (!res.ok) {
-      toast.error("Failed");
+      toast.error(t("sendFailed"));
       return;
     }
     setBody("");
@@ -127,7 +127,7 @@ export default function CrmMessagesPage() {
             <CardTitle>{t("inbox")}</CardTitle>
           </CardHeader>
           <CardContent className="max-h-[60vh] space-y-2 overflow-y-auto">
-            {isLoading ? <p className="text-muted-foreground">Loading…</p> : null}
+            {isLoading ? <p className="text-muted-foreground">{t("working")}</p> : null}
             {messages.map((msg) => {
               const incoming = msg.toUserId === session?.user?.id;
               return (

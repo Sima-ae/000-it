@@ -1,0 +1,1 @@
+Gjurmë e plotë e auditimit të projekteve, agjentëve, skanimeve, klientëve dhe ngjarjeve të sistemit. Rifreskon automatikisht çdo orë.

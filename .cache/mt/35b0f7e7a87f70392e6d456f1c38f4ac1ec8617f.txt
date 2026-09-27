@@ -1,0 +1,1 @@
+Chcete natrvalo odstrániť {number}? Toto sa nedá vrátiť späť.

@@ -1,0 +1,1 @@
+Excluir permanentemente {número}? Isto não pode ser desfeito.

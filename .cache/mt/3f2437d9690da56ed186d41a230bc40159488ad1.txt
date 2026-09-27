@@ -1,0 +1,1 @@
+{show} din {total} domenii

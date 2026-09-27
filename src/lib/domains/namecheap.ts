@@ -506,16 +506,43 @@ export type NamecheapDomainInfo = {
   whoisGuard?: boolean;
 };
 
-export async function listDomains(page = 1, pageSize = 100): Promise<{
+/** Namecheap `domains.getList` hard-caps PageSize at 100. */
+const NAMECHEAP_LIST_PAGE_SIZE = 100;
+const NAMECHEAP_LIST_MAX_PAGES = 50; // safety: 5 000 domains
+
+function parseListPaging(cmd: Record<string, unknown> | undefined): {
+  totalItems: number;
+  currentPage: number;
+  pageSize: number;
+} {
+  const paging = (cmd?.Paging || {}) as Record<string, unknown>;
+  const n = (v: unknown, fallback: number) => {
+    const x = Number(v);
+    return Number.isFinite(x) && x >= 0 ? x : fallback;
+  };
+  return {
+    totalItems: n(paging.TotalItems, 0),
+    currentPage: n(paging.CurrentPage, 1),
+    pageSize: n(paging.PageSize, NAMECHEAP_LIST_PAGE_SIZE),
+  };
+}
+
+export async function listDomains(page = 1, pageSize = NAMECHEAP_LIST_PAGE_SIZE): Promise<{
   ok: boolean;
   domains: NamecheapDomainInfo[];
   error?: string;
   xml: string;
+  totalItems?: number;
+  currentPage?: number;
+  pageSize?: number;
 }> {
   if (!isNamecheapConfigured()) throw new Error("NAMECHEAP_NOT_CONFIGURED");
   const params = await baseParams("namecheap.domains.getList");
-  params.set("Page", String(page));
-  params.set("PageSize", String(Math.min(100, Math.max(1, pageSize))));
+  params.set("Page", String(Math.max(1, page)));
+  params.set(
+    "PageSize",
+    String(Math.min(NAMECHEAP_LIST_PAGE_SIZE, Math.max(1, pageSize))),
+  );
   const { xml, parsed } = await callNamecheap(params);
   if (apiStatus(parsed) !== "OK") {
     return {
@@ -526,8 +553,9 @@ export async function listDomains(page = 1, pageSize = 100): Promise<{
     };
   }
   const cmd = (parsed.ApiResponse as { CommandResponse?: unknown })
-    ?.CommandResponse as { DomainGetListResult?: { Domain?: unknown } };
-  const rows = asArray<Record<string, string>>(cmd?.DomainGetListResult?.Domain);
+    ?.CommandResponse as Record<string, unknown> | undefined;
+  const result = cmd?.DomainGetListResult as { Domain?: unknown } | undefined;
+  const rows = asArray<Record<string, string>>(result?.Domain);
   const domains = rows.map((r) => ({
     domainName: String(r.Name || r.Domain || "").toLowerCase(),
     id: r.ID ? String(r.ID) : undefined,
@@ -541,7 +569,74 @@ export async function listDomains(page = 1, pageSize = 100): Promise<{
         .includes("enabled") ||
       String(r.WhoisGuard || "").toLowerCase() === "true",
   }));
-  return { ok: true, domains, xml };
+  const paging = parseListPaging(cmd);
+  return {
+    ok: true,
+    domains,
+    xml,
+    totalItems: paging.totalItems || domains.length,
+    currentPage: paging.currentPage || page,
+    pageSize: paging.pageSize || pageSize,
+  };
+}
+
+/**
+ * Fetch every domain in the registrar account (paginated; Namecheap max 100/page).
+ */
+export async function listAllDomains(): Promise<{
+  ok: boolean;
+  domains: NamecheapDomainInfo[];
+  error?: string;
+  pages: number;
+  totalItems: number;
+}> {
+  const all: NamecheapDomainInfo[] = [];
+  const seen = new Set<string>();
+  let page = 1;
+  let totalItems = 0;
+
+  while (page <= NAMECHEAP_LIST_MAX_PAGES) {
+    const listed = await listDomains(page, NAMECHEAP_LIST_PAGE_SIZE);
+    if (!listed.ok) {
+      return {
+        ok: false,
+        domains: all,
+        error: listed.error || "getList failed",
+        pages: page - 1,
+        totalItems,
+      };
+    }
+
+    totalItems = listed.totalItems ?? totalItems;
+    for (const d of listed.domains) {
+      if (!d.domainName || seen.has(d.domainName)) continue;
+      seen.add(d.domainName);
+      all.push(d);
+    }
+
+    const pageSize = listed.pageSize || NAMECHEAP_LIST_PAGE_SIZE;
+    const fetchedAll =
+      listed.domains.length === 0 ||
+      (totalItems > 0 && all.length >= totalItems) ||
+      listed.domains.length < pageSize;
+
+    if (fetchedAll) {
+      return {
+        ok: true,
+        domains: all,
+        pages: page,
+        totalItems: totalItems || all.length,
+      };
+    }
+    page += 1;
+  }
+
+  return {
+    ok: true,
+    domains: all,
+    pages: NAMECHEAP_LIST_MAX_PAGES,
+    totalItems: totalItems || all.length,
+  };
 }
 
 export async function getDomainInfo(domainName: string): Promise<{

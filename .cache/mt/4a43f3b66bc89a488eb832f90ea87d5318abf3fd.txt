@@ -1,0 +1,1 @@
+Respuesta guardada. Configure SMTP para enviar también correos electrónicos al cliente.

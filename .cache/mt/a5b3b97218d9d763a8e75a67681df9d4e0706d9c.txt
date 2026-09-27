@@ -1,0 +1,1 @@
+Krijoni fatura profesionale, eksportoni PDF dhe menaxhoni statusin e pagesës.

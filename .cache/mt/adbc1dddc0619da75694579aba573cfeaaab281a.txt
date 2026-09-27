@@ -1,0 +1,1 @@
+Fatura çöp kutusunu yalnızca süper yönetici açabilir.

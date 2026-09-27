@@ -1,0 +1,1 @@
+Odpowiedź została zapisana. Skonfiguruj SMTP tak, aby wysyłał także e-maile do klienta.

@@ -1,0 +1,1 @@
+Vastaa käyttäjälle {key}. Sähköposti lähetetään osoitteeseen {email}.

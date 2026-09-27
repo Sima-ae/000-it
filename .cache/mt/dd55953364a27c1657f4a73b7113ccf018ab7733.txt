@@ -1,0 +1,1 @@
+Przenieść {number} do kosza? Możesz go przywrócić później.

@@ -1,0 +1,1 @@
+Doar administratorii pot vizualiza jurnalul de activitate complet.

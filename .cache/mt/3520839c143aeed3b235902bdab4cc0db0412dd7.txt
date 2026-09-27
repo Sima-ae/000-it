@@ -1,0 +1,1 @@
+Agent 000 jest gotowy pomóc w klasyfikowaniu i odbieraniu zgłoszeń na czacie.

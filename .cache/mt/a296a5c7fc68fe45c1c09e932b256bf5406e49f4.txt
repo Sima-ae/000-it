@@ -1,0 +1,1 @@
+Sua resposta a {key} aparece instantaneamente no pop-up de chat ao vivo do visitante.

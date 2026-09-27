@@ -1,0 +1,1 @@
+Răspunde la {key}. E-mailul va fi trimis la {email}.

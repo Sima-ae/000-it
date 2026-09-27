@@ -1,0 +1,1 @@
+Vastaus tallennettu. Määritä SMTP lähettämään myös sähköpostia asiakkaalle.

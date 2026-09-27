@@ -1,0 +1,1 @@
+Siirretäänkö {number} roskakoriin? Voit palauttaa sen myöhemmin.

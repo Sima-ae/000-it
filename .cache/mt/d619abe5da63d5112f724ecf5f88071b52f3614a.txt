@@ -1,0 +1,1 @@
+Vaš odgovor na {key} odmah se pojavljuje u posjetiteljevom skočnom prozoru za chat uživo.

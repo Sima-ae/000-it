@@ -1,0 +1,1 @@
+Potpuni revizijski trag projekata, agenata, skeniranja, klijenata i događaja u sustavu. Automatski se osvježava svaki sat.

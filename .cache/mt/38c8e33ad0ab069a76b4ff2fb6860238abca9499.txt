@@ -1,0 +1,1 @@
+Tik pagrindinis administratorius gali atidaryti sąskaitos faktūros šiukšliadėžę.

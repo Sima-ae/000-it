@@ -67,6 +67,33 @@ function statusClass(status: string) {
   }
 }
 
+function orderStatusLabel(
+  t: (
+    key:
+      | "orderStatus_PENDING"
+      | "orderStatus_PAID"
+      | "orderStatus_FAILED"
+      | "orderStatus_CANCELLED"
+      | "orderStatus_REGISTERED",
+  ) => string,
+  status: string,
+) {
+  switch (status) {
+    case "PENDING":
+      return t("orderStatus_PENDING");
+    case "PAID":
+      return t("orderStatus_PAID");
+    case "FAILED":
+      return t("orderStatus_FAILED");
+    case "CANCELLED":
+      return t("orderStatus_CANCELLED");
+    case "REGISTERED":
+      return t("orderStatus_REGISTERED");
+    default:
+      return status.replaceAll("_", " ");
+  }
+}
+
 function canDownloadShop(status: ShopOrder["status"]) {
   return status === "PAID";
 }
@@ -238,7 +265,7 @@ export default function MyOrdersPage() {
                   </div>
                   <div className="flex flex-wrap items-center gap-2">
                     <Badge className={statusClass(order.status)} variant="outline">
-                      {order.status.replace("_", " ")}
+                      {orderStatusLabel(t, order.status)}
                     </Badge>
                     <p className="font-display text-lg font-semibold tabular-nums">
                       {formatShopEuro(order.totalPriceInCents / 100, locale)}
@@ -284,7 +311,7 @@ export default function MyOrdersPage() {
                   </div>
                   <div className="flex flex-wrap items-center gap-2">
                     <Badge className={statusClass(order.status)} variant="outline">
-                      {order.status.replace("_", " ")}
+                      {orderStatusLabel(t, order.status)}
                     </Badge>
                     <p className="font-display text-lg font-semibold tabular-nums">
                       {formatShopEuro(order.totalIncl, locale)}

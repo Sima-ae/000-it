@@ -326,7 +326,7 @@
     "stepInterests": "Maraqlar"
   },
   "dashboard": {
-    "title": "İdarə paneli",
+    "title": "Panel",
     "crm": "CRM",
     "welcome": "Xoş gəldiniz",
     "projects": "Layihələr",
@@ -508,7 +508,46 @@
     "clientQuickServices": "Track service and product orders",
     "clientQuickInvoices": "Open issued invoices and download PDF",
     "clientQuickMessages": "Message our team",
-    "ordersCrmInvoicesHint": "Project and service invoices from our team are listed under"
+    "ordersCrmInvoicesHint": "Project and service invoices from our team are listed under",
+    "settingsSubtitle": "Profilinizi və parolunuzu yeniləyin.",
+    "profileSection": "Profil",
+    "company": "Şirkət",
+    "phone": "Telefon",
+    "industry": "Sənaye",
+    "currentPassword": "Cari parol",
+    "newPassword": "Yeni parol",
+    "saveProfile": "Yadda saxla",
+    "profileUpdated": "Profil yeniləndi",
+    "profileUpdateFailed": "Profil yenilənmədi",
+    "agentsSubtitle": "Agentləri işə salın, dayandırın və ya idle edin.",
+    "agentsLoadFailed": "Agentlər yüklənmədi.",
+    "agentUpdated": "Agent yeniləndi",
+    "agentUpdateFailed": "Agent yenilənmədi",
+    "agentStart": "Başlat",
+    "agentPause": "Fasilə",
+    "agentIdle": "Idle",
+    "agentStatus_RUNNING": "İşləyir",
+    "agentStatus_PAUSED": "Dayandırılıb",
+    "agentStatus_IDLE": "Idle",
+    "tasksCompleted": "Tamamlanan tapşırıqlar: {count}",
+    "projectProgress": "İrəliləyiş",
+    "projectTasks": "Tapşırıqlar",
+    "projectActivity": "Fəaliyyət",
+    "noTasksYet": "Hələ tapşırıq yoxdur.",
+    "projectType_WEBSITE": "Website",
+    "projectType_SEO": "SEO",
+    "projectType_ADS": "Ads",
+    "projectType_AI_INTEGRATION": "AI integration",
+    "projectType_CONTENT": "Content",
+    "projectType_SOCIAL_MEDIA": "Social media",
+    "projectType_BRANDING": "Branding",
+    "projectType_FULL_GROWTH": "Full growth",
+    "orderStatus_PENDING": "Gözləyir",
+    "orderStatus_PAID": "Ödənilib",
+    "orderStatus_FAILED": "Uğursuz",
+    "orderStatus_CANCELLED": "Ləğv edilib",
+    "orderStatus_REGISTERED": "Qeydiyyatda",
+    "navBadgeNew": "{count} yeni"
   },
   "contact": {
     "title": "Əlaqə",
@@ -890,7 +929,8 @@
     "clientOrdersHint": "Track hosting, services and domain orders, and download PDF invoices when payment is complete.",
     "invoicesShopOrdersHint": "Hosting, service and domain receipts with PDF download are under",
     "myOrdersLink": "My orders",
-    "invoicePdfDownloaded": "Invoice PDF downloaded"
+    "invoicePdfDownloaded": "Invoice PDF downloaded",
+    "sendFailed": "Mesaj göndərilmədi"
   },
   "about": {
     "eyebrow": "Haqqımızda",
@@ -1469,6 +1509,15 @@
     "filterReset": "Reset filters",
     "filterEmpty": "No domains match these filters.",
     "filterResultCount": "{shown} of {total} domains",
-    "manageDialogHint": "DNS, nameservers, privacy, lock and renewals for this domain."
+    "manageDialogHint": "DNS, nameservers, privacy, lock and renewals for this domain.",
+    "dnsNamePh": "Ad",
+    "dnsTypePh": "Tip",
+    "dnsAddressPh": "Ünvan / URL",
+    "forwardMailboxPh": "qutu",
+    "forwardToPh": "forward@numune.az",
+    "dnssecKeyTag": "Key tag",
+    "dnssecAlgorithm": "Alqoritm",
+    "dnssecDigestType": "Digest tipi",
+    "dnssecDigest": "Digest"
   }
 }

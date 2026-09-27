@@ -380,7 +380,7 @@ export default function CrmInvoicesPage() {
           <CardTitle>{t("invoices")}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-3">
-          {isLoading ? <p className="text-muted-foreground">Loading…</p> : null}
+          {isLoading ? <p className="text-muted-foreground">{t("working")}</p> : null}
           {invoices.map((inv) => (
             <div
               key={inv.id}

@@ -1,0 +1,1 @@
+Dodaj pozycje zamówienia, podatek VAT, daty i warunki płatności, a następnie zapisz lub wyeksportuj jako plik PDF.

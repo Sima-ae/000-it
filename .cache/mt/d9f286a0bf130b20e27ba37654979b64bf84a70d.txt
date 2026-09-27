@@ -1,0 +1,1 @@
+Áthelyezi a(z) {number} számot a kukába? Később visszaállíthatja.

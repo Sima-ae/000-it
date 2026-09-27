@@ -1,0 +1,1 @@
+Po shfaqen {count} nga {total}

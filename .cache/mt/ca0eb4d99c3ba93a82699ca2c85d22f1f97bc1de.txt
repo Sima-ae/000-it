@@ -1,0 +1,1 @@
+Të fshihet përgjithmonë {number}? Kjo nuk mund të zhbëhet.

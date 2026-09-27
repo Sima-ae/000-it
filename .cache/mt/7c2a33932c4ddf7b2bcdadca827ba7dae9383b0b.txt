@@ -1,0 +1,1 @@
+Kövesse nyomon a tárhely-, szolgáltatások- és domainrendeléseket, és töltse le a PDF számlákat, amikor a fizetés befejeződött.

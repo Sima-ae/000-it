@@ -1,0 +1,1 @@
+Verilen faturaları açın ve PDF'yi indirin

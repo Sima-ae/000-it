@@ -1,0 +1,1 @@
+Svar gemt. Konfigurer SMTP til også at sende en e-mail til kunden.

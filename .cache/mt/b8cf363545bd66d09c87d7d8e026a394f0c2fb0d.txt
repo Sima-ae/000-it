@@ -1,0 +1,1 @@
+Odpowiedz na {klucz}. E-mail zostanie wysłany na adres {email}.

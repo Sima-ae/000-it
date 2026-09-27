@@ -1,0 +1,1 @@
+{pokazane} z {total} domen

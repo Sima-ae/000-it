@@ -1,0 +1,1 @@
+Mostrando {count} de {total}

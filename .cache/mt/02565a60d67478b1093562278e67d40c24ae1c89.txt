@@ -1,0 +1,1 @@
+Seul le super administrateur peut ouvrir la corbeille des factures.

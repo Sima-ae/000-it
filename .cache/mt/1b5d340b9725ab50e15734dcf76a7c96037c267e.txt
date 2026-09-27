@@ -1,0 +1,1 @@
+Kompletný auditný záznam projektov, agentov, skenov, klientov a systémových udalostí. Automaticky sa obnovuje každú hodinu.

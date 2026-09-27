@@ -1,0 +1,1 @@
+Ditt svar till {key} visas omedelbart i besökarens livechatt-popup.

@@ -1,0 +1,1 @@
+Bu domen üçün DNS, ad serverləri, məxfilik, kilid və yeniləmələr.

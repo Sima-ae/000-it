@@ -1,0 +1,1 @@
+Odgovor spremljen. Konfigurirajte SMTP za slanje e-pošte kupcu.

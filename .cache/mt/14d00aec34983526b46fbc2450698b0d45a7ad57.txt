@@ -1,0 +1,1 @@
+Endast administratörer kan se hela aktivitetsloggen.

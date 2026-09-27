@@ -1,0 +1,1 @@
+Realice un seguimiento de los seguimientos y las tareas pendientes internas.

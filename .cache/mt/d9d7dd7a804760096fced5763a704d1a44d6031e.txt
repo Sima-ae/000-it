@@ -1,0 +1,1 @@
+Solo il super amministratore può aprire il cestino delle fatture.

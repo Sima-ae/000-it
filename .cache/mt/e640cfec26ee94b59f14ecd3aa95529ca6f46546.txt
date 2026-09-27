@@ -1,0 +1,1 @@
+A(z) {key} kérdésre adott válasza azonnal megjelenik a látogató élő csevegési ablakában.

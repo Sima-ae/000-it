@@ -1,0 +1,1 @@
+¿Mover {número} a la papelera? Puedes restaurarlo más tarde.

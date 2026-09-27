@@ -1,0 +1,1 @@
+Përgjigju {key}. Email-i do të dërgohet te {email}.

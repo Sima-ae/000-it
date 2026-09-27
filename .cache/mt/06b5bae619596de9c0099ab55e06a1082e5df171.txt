@@ -1,0 +1,1 @@
+etiketa1, etiketa2, etiketa3

@@ -1,0 +1,1 @@
+Responda a {chave}. O e-mail será enviado para {email}.

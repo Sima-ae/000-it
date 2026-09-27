@@ -1,0 +1,1 @@
+Faktury usunięte w sposób miękki. Przywróć lub trwale usuń jako superadministrator.

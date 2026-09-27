@@ -1,5 +1,6 @@
 "use client";
 
+import { useLocale, useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { useQuery } from "@tanstack/react-query";
 import { Badge } from "@/components/ui/badge";
@@ -7,6 +8,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 
 export default function ProjectDetailPage() {
+  const t = useTranslations("dashboard");
+  const locale = useLocale();
   const params = useParams<{ id: string }>();
   const { data, isLoading } = useQuery({
     queryKey: ["project", params.id],
@@ -18,7 +21,7 @@ export default function ProjectDetailPage() {
   });
 
   if (isLoading || !data) {
-    return <p className="text-muted-foreground">Loading…</p>;
+    return <p className="text-muted-foreground">{t("working")}</p>;
   }
 
   return (
@@ -33,7 +36,7 @@ export default function ProjectDetailPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Progress</CardTitle>
+          <CardTitle>{t("projectProgress")}</CardTitle>
         </CardHeader>
         <CardContent>
           <Progress value={data.progress} />
@@ -44,7 +47,7 @@ export default function ProjectDetailPage() {
       <div className="grid gap-4 lg:grid-cols-2">
         <Card>
           <CardHeader>
-            <CardTitle>Tasks</CardTitle>
+            <CardTitle>{t("projectTasks")}</CardTitle>
           </CardHeader>
           <CardContent className="space-y-2">
             {data.tasks?.map(
@@ -58,15 +61,15 @@ export default function ProjectDetailPage() {
                 </div>
               ),
             )}
-            {!data.tasks?.length && (
-              <p className="text-sm text-muted-foreground">No tasks yet.</p>
-            )}
+            {!data.tasks?.length ? (
+              <p className="text-sm text-muted-foreground">{t("noTasksYet")}</p>
+            ) : null}
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader>
-            <CardTitle>Activity</CardTitle>
+            <CardTitle>{t("projectActivity")}</CardTitle>
           </CardHeader>
           <CardContent className="space-y-2">
             {data.activities?.map(
@@ -74,11 +77,14 @@ export default function ProjectDetailPage() {
                 <div key={activity.id} className="text-sm">
                   <p>{activity.description}</p>
                   <p className="text-xs text-muted-foreground">
-                    {new Date(activity.createdAt).toLocaleString()}
+                    {new Date(activity.createdAt).toLocaleString(locale)}
                   </p>
                 </div>
               ),
             )}
+            {!data.activities?.length ? (
+              <p className="text-sm text-muted-foreground">{t("emptyActivity")}</p>
+            ) : null}
           </CardContent>
         </Card>
       </div>

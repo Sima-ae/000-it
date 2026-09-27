@@ -1,0 +1,1 @@
+A 000 ügynök készen áll a chat-jegyek osztályozásában és megválaszolásában.

@@ -1,0 +1,1 @@
+Vil du slette {number} permanent? Dette kan ikke angres.

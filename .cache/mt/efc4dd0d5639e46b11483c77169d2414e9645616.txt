@@ -1,0 +1,1 @@
+Vain järjestelmänvalvojat voivat tarkastella koko toimintalokia.

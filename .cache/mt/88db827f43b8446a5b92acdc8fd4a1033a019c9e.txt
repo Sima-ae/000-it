@@ -1,0 +1,1 @@
+Responder a {clave}. El correo electrónico se enviará a {email}.

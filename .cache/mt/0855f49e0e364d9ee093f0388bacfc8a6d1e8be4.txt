@@ -1,0 +1,1 @@
+Răspunsul a fost salvat. Configurați SMTP pentru a trimite și e-mail-ului clientului.

@@ -3,7 +3,7 @@ import { z } from "zod";
 import { requireUser } from "@/lib/api-auth";
 import { isStaffRole } from "@/lib/roles";
 import { prisma } from "@/lib/prisma";
-import { listDomains, getDomainInfo } from "@/lib/domains/namecheap";
+import { listAllDomains } from "@/lib/domains/namecheap";
 import { upsertOwnedDomain } from "@/lib/domains/owned";
 
 export const dynamic = "force-dynamic";
@@ -72,7 +72,8 @@ export async function POST() {
     return NextResponse.json({ error: "Forbidden" }, { status: 403 });
   }
 
-  const listed = await listDomains(1, 100);
+  // Namecheap getList is capped at 100/page — pull every page.
+  const listed = await listAllDomains();
   if (!listed.ok) {
     return NextResponse.json(
       { error: listed.error || "Sync failed" },
@@ -89,35 +90,26 @@ export async function POST() {
       const parsed = new Date(d.expires);
       if (!Number.isNaN(parsed.getTime())) expiresAt = parsed;
     }
-    // Enrich from getInfo when list lacks lock/privacy
-    let locked = d.isLocked;
-    let whois = d.whoisGuard;
-    try {
-      const info = await getDomainInfo(d.domainName);
-      if (info.ok && info.info) {
-        locked = info.info.isLocked ?? locked;
-        whois = info.info.whoisGuard ?? whois;
-        if (info.info.expires) {
-          const parsed = new Date(info.info.expires);
-          if (!Number.isNaN(parsed.getTime())) expiresAt = parsed;
-        }
-      }
-    } catch {
-      /* keep list data */
-    }
 
+    // Trust getList fields for bulk sync (lock/privacy/expiry). Per-domain
+    // getInfo would timeout once the account grows past ~100 domains.
     await upsertOwnedDomain({
       domainName: d.domainName,
       userId,
       status: d.isExpired ? "EXPIRED" : "ACTIVE",
       expiresAt,
       autoRenewEnabled: d.autoRenew ?? false,
-      registrarLocked: locked ?? true,
-      whoisGuardEnabled: whois ?? false,
+      registrarLocked: d.isLocked ?? true,
+      whoisGuardEnabled: d.whoisGuard ?? false,
       namecheapId: d.id || null,
     });
     upserted += 1;
   }
 
-  return NextResponse.json({ ok: true, upserted });
+  return NextResponse.json({
+    ok: true,
+    upserted,
+    totalFromRegistrar: listed.totalItems,
+    pagesFetched: listed.pages,
+  });
 }

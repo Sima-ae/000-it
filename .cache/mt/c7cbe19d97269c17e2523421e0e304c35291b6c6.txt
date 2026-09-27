@@ -1,0 +1,1 @@
+Vastauksesi viestille {key} näkyy välittömästi vierailijan live-chat-ponnahdusikkunassa.

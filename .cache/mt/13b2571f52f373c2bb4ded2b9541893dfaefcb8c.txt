@@ -1,0 +1,1 @@
+Válasz a következőnek: {key}. Az e-mailt a(z) {email} címre küldjük.

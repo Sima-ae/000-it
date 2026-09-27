@@ -1,0 +1,1 @@
+Risposta salvata. Configura SMTP anche per inviare e-mail al cliente.

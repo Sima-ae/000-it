@@ -1,0 +1,1 @@
+Visas projektų, agentų, nuskaitymų, klientų ir sistemos įvykių audito seka. Automatiškai atnaujinama kas valandą.

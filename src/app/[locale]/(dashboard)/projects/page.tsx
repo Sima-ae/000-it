@@ -24,6 +24,36 @@ const PROJECT_TYPES = [
   "FULL_GROWTH",
 ] as const;
 
+type ProjectTypeKey =
+  | "projectType_WEBSITE"
+  | "projectType_SEO"
+  | "projectType_ADS"
+  | "projectType_AI_INTEGRATION"
+  | "projectType_CONTENT"
+  | "projectType_SOCIAL_MEDIA"
+  | "projectType_BRANDING"
+  | "projectType_FULL_GROWTH";
+
+function projectTypeLabel(
+  t: (key: ProjectTypeKey) => string,
+  type: string,
+) {
+  const key = `projectType_${type}` as ProjectTypeKey;
+  if (
+    type === "WEBSITE" ||
+    type === "SEO" ||
+    type === "ADS" ||
+    type === "AI_INTEGRATION" ||
+    type === "CONTENT" ||
+    type === "SOCIAL_MEDIA" ||
+    type === "BRANDING" ||
+    type === "FULL_GROWTH"
+  ) {
+    return t(key);
+  }
+  return type.replaceAll("_", " ");
+}
+
 export default function ProjectsPage() {
   const t = useTranslations("dashboard");
   const locale = useLocale();
@@ -71,7 +101,7 @@ export default function ProjectsPage() {
               >
                 {PROJECT_TYPES.map((item) => (
                   <option key={item} value={item}>
-                    {item.replaceAll("_", " ")}
+                    {projectTypeLabel(t, item)}
                   </option>
                 ))}
               </select>
@@ -84,7 +114,7 @@ export default function ProjectsPage() {
       </Card>
 
       {isLoading ? (
-        <p className="text-muted-foreground">Loading…</p>
+        <p className="text-muted-foreground">{t("working")}</p>
       ) : !projects.length ? (
         <p className="text-sm text-muted-foreground">{t("emptyProjects")}</p>
       ) : (
@@ -105,7 +135,7 @@ export default function ProjectsPage() {
                   </CardHeader>
                   <CardContent>
                     <p className="mb-3 text-xs text-muted-foreground">
-                      {project.type.replaceAll("_", " ")}
+                      {projectTypeLabel(t, project.type)}
                     </p>
                     <Progress value={project.progress} />
                   </CardContent>

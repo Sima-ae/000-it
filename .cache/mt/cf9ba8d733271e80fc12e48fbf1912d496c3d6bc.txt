@@ -1,0 +1,1 @@
+{totalPages} sayfanın {page}'i

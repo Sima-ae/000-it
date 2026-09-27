@@ -1,0 +1,1 @@
+Resposta salva. Configure o SMTP para também enviar e-mail ao cliente.

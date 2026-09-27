@@ -1,0 +1,1 @@
+Pista de audit completă a proiectelor, agenților, scanărilor, clienților și evenimentelor de sistem. Reîmprospătează automat la fiecare oră.

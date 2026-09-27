@@ -1,0 +1,1 @@
+Spostare {numero} nel cestino? Puoi ripristinarlo in seguito.

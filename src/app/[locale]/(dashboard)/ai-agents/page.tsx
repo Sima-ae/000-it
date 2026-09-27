@@ -7,6 +7,16 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
+function agentStatusLabel(
+  t: (key: "agentStatus_RUNNING" | "agentStatus_PAUSED" | "agentStatus_IDLE") => string,
+  status: string,
+) {
+  if (status === "RUNNING" || status === "PAUSED" || status === "IDLE") {
+    return t(`agentStatus_${status}`);
+  }
+  return status;
+}
+
 export default function AIAgentsPage() {
   const t = useTranslations("dashboard");
   const qc = useQueryClient();
@@ -32,26 +42,26 @@ export default function AIAgentsPage() {
     onSuccess: () => {
       qc.invalidateQueries({ queryKey: ["agents"] });
       qc.invalidateQueries({ queryKey: ["dashboard"] });
-      toast.success("Agent updated");
+      toast.success(t("agentUpdated"));
     },
-    onError: () => toast.error("Could not update agent"),
+    onError: () => toast.error(t("agentUpdateFailed")),
   });
 
   return (
     <div className="space-y-6">
       <div>
         <h1 className="text-3xl font-semibold">{t("agents")}</h1>
-        <p className="text-sm text-muted-foreground">
-          Start, pause or idle agents linked to your workspace.
-        </p>
+        <p className="text-sm text-muted-foreground">{t("agentsSubtitle")}</p>
       </div>
       {isLoading ? (
-        <p className="text-muted-foreground">Loading…</p>
+        <p className="text-muted-foreground">{t("working")}</p>
       ) : isError ? (
-        <p className="text-sm text-destructive">Failed to load agents.</p>
+        <p className="text-sm text-destructive">{t("agentsLoadFailed")}</p>
       ) : !agents.length ? (
         <Card>
-          <CardContent className="py-8 text-sm text-muted-foreground">{t("emptyAgents")}</CardContent>
+          <CardContent className="py-8 text-sm text-muted-foreground">
+            {t("emptyAgents")}
+          </CardContent>
         </Card>
       ) : (
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -75,13 +85,13 @@ export default function AIAgentsPage() {
                           : "outline"
                     }
                   >
-                    {agent.status}
+                    {agentStatusLabel(t, agent.status)}
                   </Badge>
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <p className="text-sm text-muted-foreground">{agent.type}</p>
                   <p className="text-xs text-muted-foreground">
-                    Tasks completed: {agent.tasksCompleted}
+                    {t("tasksCompleted", { count: agent.tasksCompleted })}
                   </p>
                   <div className="flex gap-2">
                     <Button
@@ -91,7 +101,7 @@ export default function AIAgentsPage() {
                         updateStatus.mutate({ id: agent.id, status: "RUNNING" })
                       }
                     >
-                      Start
+                      {t("agentStart")}
                     </Button>
                     <Button
                       size="sm"
@@ -101,7 +111,7 @@ export default function AIAgentsPage() {
                         updateStatus.mutate({ id: agent.id, status: "PAUSED" })
                       }
                     >
-                      Pause
+                      {t("agentPause")}
                     </Button>
                     <Button
                       size="sm"
@@ -111,7 +121,7 @@ export default function AIAgentsPage() {
                         updateStatus.mutate({ id: agent.id, status: "IDLE" })
                       }
                     >
-                      Idle
+                      {t("agentIdle")}
                     </Button>
                   </div>
                 </CardContent>

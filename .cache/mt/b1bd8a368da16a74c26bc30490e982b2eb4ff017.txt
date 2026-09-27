@@ -1,0 +1,1 @@
+Otwórz wystawione faktury i pobierz plik PDF

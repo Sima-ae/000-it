@@ -1,0 +1,1 @@
+Somente administradores podem visualizar o log de atividades completo.

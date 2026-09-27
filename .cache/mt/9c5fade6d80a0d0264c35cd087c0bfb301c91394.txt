@@ -1,0 +1,1 @@
+{total}中{count}を表示中

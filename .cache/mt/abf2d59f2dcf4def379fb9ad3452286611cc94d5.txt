@@ -1,0 +1,1 @@
+Mover {number} para a lixeira? Você pode restaurá-lo mais tarde.

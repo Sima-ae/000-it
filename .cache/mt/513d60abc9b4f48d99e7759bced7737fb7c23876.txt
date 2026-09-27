@@ -1,0 +1,1 @@
+Válasz mentve. Állítsa be az SMTP-t úgy, hogy e-mailt is küldjön az ügyfélnek.

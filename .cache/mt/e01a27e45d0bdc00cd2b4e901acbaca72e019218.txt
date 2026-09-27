@@ -1,0 +1,1 @@
+Seguimiento de auditoría completo de proyectos, agentes, escaneos, clientes y eventos del sistema. Se actualiza automáticamente cada hora.

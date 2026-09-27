@@ -1,0 +1,1 @@
+Atsakymas išsaugotas. Sukonfigūruokite SMTP, kad klientui būtų išsiųstas el. paštas.

@@ -110,7 +110,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
 
       {open ? (
         <div
-          className="absolute right-0 top-full z-50 pt-2"
+          className="absolute right-0 top-full z-100 pt-2"
           onMouseEnter={clearCloseTimer}
           onMouseLeave={scheduleClose}
         >

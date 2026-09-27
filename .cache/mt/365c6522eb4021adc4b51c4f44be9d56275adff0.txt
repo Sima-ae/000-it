@@ -1,0 +1,1 @@
+Tylko administratorzy mogą przeglądać pełny dziennik aktywności.

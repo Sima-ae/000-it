@@ -1,0 +1,1 @@
+Eliminare definitivamente {numero}? Questa operazione non può essere annullata.

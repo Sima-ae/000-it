@@ -1,0 +1,1 @@
+Úplný denník aktivít môžu zobraziť iba správcovia.

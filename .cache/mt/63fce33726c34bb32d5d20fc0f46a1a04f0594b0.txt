@@ -1,0 +1,1 @@
+Barındırma, hizmetler ve alan adı siparişlerini takip edin ve ödeme tamamlandığında PDF faturalarını indirin.

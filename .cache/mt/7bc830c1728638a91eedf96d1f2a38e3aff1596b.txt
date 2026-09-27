@@ -1,0 +1,1 @@
+Mutați {number} în coșul de gunoi? Îl puteți restaura mai târziu.

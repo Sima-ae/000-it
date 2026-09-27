@@ -1,0 +1,1 @@
+Odpovedzte na {key}. E-mail bude odoslaný na adresu {email}.

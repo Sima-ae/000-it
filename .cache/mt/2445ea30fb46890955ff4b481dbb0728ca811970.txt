@@ -1,0 +1,1 @@
+Wyświetlanie {count} z {total}

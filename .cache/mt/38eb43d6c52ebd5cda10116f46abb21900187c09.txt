@@ -1,0 +1,1 @@
+Traccia di controllo completa di progetti, agenti, scansioni, client ed eventi di sistema. Si aggiorna automaticamente ogni ora.

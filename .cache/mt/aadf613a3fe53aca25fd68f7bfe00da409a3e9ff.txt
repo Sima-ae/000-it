@@ -1,0 +1,1 @@
+Solo el superadministrador puede abrir la papelera de facturas.

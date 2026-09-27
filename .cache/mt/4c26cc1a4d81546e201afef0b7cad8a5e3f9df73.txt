@@ -1,0 +1,1 @@
+{page} puslapis iš {totalPages}

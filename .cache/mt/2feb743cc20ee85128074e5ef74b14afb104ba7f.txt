@@ -1,0 +1,1 @@
+Përgjigja juaj për {key} shfaqet menjëherë në dritaren kërcyese të bisedës së drejtpërdrejtë të vizitorit.

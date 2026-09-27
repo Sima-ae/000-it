@@ -1,0 +1,1 @@
+Csak a kiemelt adminisztrátor nyithatja meg a számla kukáját.

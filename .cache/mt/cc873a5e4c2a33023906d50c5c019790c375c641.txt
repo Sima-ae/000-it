@@ -1,0 +1,1 @@
+Geçici olarak silinen faturalar. Süper yönetici olarak geri yükleyin veya kalıcı olarak silin.

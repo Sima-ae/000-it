@@ -1,0 +1,1 @@
+Etkinlik günlüğünün tamamını yalnızca yöneticiler görüntüleyebilir.

@@ -1,0 +1,1 @@
+Samo superadmin može otvoriti smeće fakture.

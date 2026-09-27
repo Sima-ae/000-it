@@ -1,0 +1,1 @@
+{number} kalıcı olarak silinsin mi? Bu geri alınamaz.

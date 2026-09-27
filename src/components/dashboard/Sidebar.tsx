@@ -32,11 +32,12 @@ import {
 } from "lucide-react";
 import { localizedHref } from "@/i18n/pathnames";
 import { ThemeToggle } from "@/components/shared/ThemeToggle";
+import { LanguageSwitcher } from "@/components/shared/LanguageSwitcher";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
 import { BrandLogo } from "@/components/shared/BrandLogo";
 import { cn } from "@/lib/utils";
-import { navForRole } from "@/lib/roles";
+import { isClientRole, navForRole } from "@/lib/roles";
 import { readSeoSeenAt } from "@/lib/dashboard/nav-badges";
 
 const icons: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -146,7 +147,10 @@ export function Sidebar({ user }: { user: SidebarUser }) {
           <SoftLink href={`/${locale}`} aria-label="TripleZero iT" className="min-w-0">
             <BrandLogo />
           </SoftLink>
-          <ThemeToggle />
+          <div className="flex shrink-0 items-center gap-1">
+            {isClientRole(role) ? <LanguageSwitcher /> : null}
+            <ThemeToggle />
+          </div>
         </div>
 
         <div className="mb-4 rounded-2xl border border-border/70 bg-muted/30 px-3 py-2.5">
@@ -188,7 +192,7 @@ export function Sidebar({ user }: { user: SidebarUser }) {
                 {badge ? (
                   <span
                     className="ml-auto inline-flex h-5 min-w-5 shrink-0 items-center justify-center rounded-full bg-accent px-1.5 text-[10px] font-semibold leading-none text-accent-foreground"
-                    aria-label={`${badge} new`}
+                    aria-label={t("navBadgeNew", { count: badge })}
                   >
                     {badge}
                   </span>

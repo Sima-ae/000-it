@@ -1,0 +1,1 @@
+Fullständig revisionsspår av projekt, agenter, skanningar, klienter och systemhändelser. Uppdateras automatiskt varje timme.
