@@ -364,7 +364,27 @@ export function DomainSearch() {
 
   const [isSearching, setIsSearching] = useState(false);
   const [isSearchingMore, setIsSearchingMore] = useState(false);
-  const searchAbortRef = useMemo(() => ({ id: 0 }), []);
+  const searchAbortRef = useRef(0);
+  const activeQueryRef = useRef<string | null>(null);
+  const isSearchingRef = useRef(false);
+  const hasResultsRef = useRef(false);
+
+  useEffect(() => {
+    isSearchingRef.current = isSearching || isSearchingMore;
+  }, [isSearching, isSearchingMore]);
+
+  useEffect(() => {
+    hasResultsRef.current = results != null && results.length > 0;
+  }, [results]);
+
+  function abortActiveSearch() {
+    searchAbortRef.current += 1;
+    activeQueryRef.current = null;
+    isSearchingRef.current = false;
+    setIsSearching(false);
+    setIsSearchingMore(false);
+    setCheckProgress(null);
+  }
 
   async function fetchCheck(
     query: string,
@@ -398,6 +418,8 @@ export function DomainSearch() {
 
   async function runSearch(query: string, tldsOverride?: string[]) {
     const q = query.toLowerCase().trim();
+    if (!q) return;
+
     const preferred = q.includes(".")
       ? q.slice(q.lastIndexOf(".") + 1).toLowerCase()
       : null;
@@ -427,7 +449,9 @@ export function DomainSearch() {
       .filter((tld) => tld !== primaryTld)
       .sort(compareTldsByPopularity);
 
-    const runId = ++searchAbortRef.id;
+    // Always cancel any in-flight search and start fresh
+    const runId = ++searchAbortRef.current;
+    activeQueryRef.current = q;
     setIsSearching(true);
     setIsSearchingMore(false);
     setResults(null);
@@ -437,7 +461,7 @@ export function DomainSearch() {
 
     try {
       const first = await fetchCheck(q, [primaryTld]);
-      if (runId !== searchAbortRef.id) return;
+      if (runId !== searchAbortRef.current) return;
       for (const row of first) map.set(row.domain, row);
       setResults(sortResults([...map.values()], preferred));
       setCheckProgress({ done: 1, total: tlds.length });
@@ -447,10 +471,10 @@ export function DomainSearch() {
 
       setIsSearchingMore(true);
       for (let i = 0; i < rest.length; i += CHECK_BATCH) {
-        if (runId !== searchAbortRef.id) return;
+        if (runId !== searchAbortRef.current) return;
         const batch = rest.slice(i, i + CHECK_BATCH);
         const more = await fetchCheck(q, batch);
-        if (runId !== searchAbortRef.id) return;
+        if (runId !== searchAbortRef.current) return;
         for (const row of more) map.set(row.domain, row);
         setResults(sortResults([...map.values()], preferred));
         setCheckProgress({
@@ -459,15 +483,34 @@ export function DomainSearch() {
         });
       }
     } catch (err) {
-      if (runId !== searchAbortRef.id) return;
+      if (runId !== searchAbortRef.current) return;
       toast.error(err instanceof Error ? err.message : t("checkFailed"));
+      setResults(null);
     } finally {
-      if (runId === searchAbortRef.id) {
+      if (runId === searchAbortRef.current) {
         setIsSearching(false);
         setIsSearchingMore(false);
         setCheckProgress(null);
+        activeQueryRef.current = null;
       }
     }
+  }
+
+  /** Typing a different query cancels the previous scan and clears stale results. */
+  function onQueryChange(value: string) {
+    const next = value.toLowerCase().trim();
+    const active = activeQueryRef.current;
+    const searching = isSearchingRef.current;
+    const hasResults = hasResultsRef.current;
+    if (!searching && !hasResults) return;
+    // Still the same SLD as the active run — keep streaming results
+    if (active && (next === active || next.startsWith(`${active}.`))) return;
+    abortActiveSearch();
+    hasResultsRef.current = false;
+    setResults(null);
+    setPreferredTld(null);
+    setCheckProgress(null);
+    setVisibleCount(PAGE_SIZE);
   }
 
   const checkoutMutation = useMutation({
@@ -674,10 +717,26 @@ export function DomainSearch() {
       >
         <div className="flex-1">
           <Input
-            {...searchForm.register("query")}
+            {...searchForm.register("query", {
+              onChange: (e) => {
+                onQueryChange(e.target.value);
+              },
+            })}
             placeholder={t("placeholder")}
             className="h-12 rounded-2xl"
             autoComplete="off"
+            onKeyDown={(e) => {
+              // Allow Enter to always start a fresh search, even mid-scan
+              if (e.key === "Enter") {
+                e.preventDefault();
+                const q = searchForm.getValues("query");
+                if (searchSchema.safeParse({ query: q }).success) {
+                  void runSearch(q);
+                } else {
+                  void searchForm.trigger("query");
+                }
+              }
+            }}
           />
           {searchForm.formState.errors.query ? (
             <p className="mt-1 text-sm text-destructive">{t("invalidFormat")}</p>
@@ -687,7 +746,6 @@ export function DomainSearch() {
           type="submit"
           size="lg"
           className="h-12 rounded-2xl"
-          disabled={isSearching || isSearchingMore}
         >
           {isSearching || isSearchingMore ? t("searching") : t("search")}
         </Button>
