@@ -31,6 +31,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
+import { PremiumBadge } from "@/components/domains/PremiumBadge";
 import { whoisLookupUrl } from "@/lib/domains/whois";
 import {
   sortByTldPopularity,
@@ -58,6 +59,8 @@ type TldProduct = {
 type CheckResult = {
   domain: string;
   available: boolean;
+  /** Registry/aftermarket premium name from supplier check. */
+  isPremium?: boolean;
   priceInCents: number | null;
   listPriceInCents?: number | null;
   onOffer?: boolean;
@@ -1033,7 +1036,8 @@ export function DomainSearch() {
                   ? "text-accent"
                   : "text-red-600 dark:text-red-400";
                 const premium =
-                  row.priceInCents != null && isPremiumTld(row.priceInCents);
+                  Boolean(row.isPremium) ||
+                  (row.priceInCents != null && isPremiumTld(row.priceInCents));
                 return (
                   <div
                     key={row.domain}
@@ -1044,11 +1048,7 @@ export function DomainSearch() {
                         <p className="truncate text-base font-semibold tracking-tight sm:text-lg">
                           {row.domain}
                         </p>
-                        {premium ? (
-                          <span className="rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-primary">
-                            {t("badgePremium")}
-                          </span>
-                        ) : null}
+                        {premium ? <PremiumBadge /> : null}
                       </div>
                       <p className={cn("text-sm font-medium", tone)}>
                         {row.available ? t("available") : t("unavailable")}

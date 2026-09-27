@@ -787,6 +787,8 @@ model DomainOrder {
   status            DomainOrderStatus @default(PENDING)
   stripeSessionId   String?           @unique
   totalPriceInCents Int
+  /// True when the domain name itself is a registry/aftermarket premium (not a cheap TLD promo).
+  isPremium         Boolean           @default(false)
   email             String
   locale            String            @default("nl")
   registrantJson    String            @db.Text

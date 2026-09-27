@@ -1,13 +1,22 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { prisma } from "@/lib/prisma";
-import { checkDomains, isNamecheapConfigured, namecheapMissingEnv } from "@/lib/domains/namecheap";
+import {
+  checkDomains,
+  isNamecheapConfigured,
+  namecheapMissingEnv,
+  premiumRegisterBuyUsd,
+  premiumRenewBuyUsd,
+  premiumTransferBuyUsd,
+} from "@/lib/domains/namecheap";
 import {
   sellPriceCents,
   renewSellPriceCents,
   effectiveSellPriceCents,
   hasOfferPrice,
 } from "@/lib/domains/pricing";
+import { getUsdToEurRate } from "@/lib/domains/fx";
+import { sellFromBuyUsd } from "@/lib/domains/premium-price";
 import { compareTldsByPopularity } from "@/lib/domains/tld-order";
 
 export const runtime = "nodejs";
@@ -102,7 +111,6 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "Invalid domain format" }, { status: 400 });
   }
 
-  // Always expand to active catalog TLDs so new DomainProduct rows are included.
   const wanted = tldsParam
     ? tldsParam
         .split(",")
@@ -121,7 +129,10 @@ export async function GET(request: Request) {
   }
 
   try {
-    const checked = await checkDomains(pairs.map((p) => p.domain));
+    const [checked, fxRate] = await Promise.all([
+      checkDomains(pairs.map((p) => p.domain)),
+      getUsdToEurRate(),
+    ]);
     const byDomain = new Map(
       checked.map((row) => [row.domain.toLowerCase(), row] as const),
     );
@@ -132,16 +143,37 @@ export async function GET(request: Request) {
     const results = pairs
       .map(({ domain, tld }) => {
         const row = byDomain.get(domain.toLowerCase());
-        const priceInCents = priceByTld.get(tld) ?? null;
-        const listPriceInCents = listPriceByTld.get(tld) ?? null;
-        const onOffer = offerByTld.get(tld) ?? false;
+        const catalogSell = priceByTld.get(tld) ?? null;
+        const catalogList = listPriceByTld.get(tld) ?? null;
+        const catalogRenew = renewByTld.get(tld) ?? null;
+        const catalogOffer = offerByTld.get(tld) ?? false;
+
+        const isPremium = Boolean(row?.isPremium);
+        let priceInCents = catalogSell;
+        let listPriceInCents = catalogList;
+        let renewPriceInCents = catalogRenew;
+        let onOffer = catalogOffer;
+
+        if (isPremium && row) {
+          const regBuyUsd = premiumRegisterBuyUsd(row);
+          const renewBuyUsd = premiumRenewBuyUsd(row);
+          const sell = sellFromBuyUsd(regBuyUsd, fxRate);
+          const renewSell = sellFromBuyUsd(renewBuyUsd, fxRate);
+          // Never fall back to cheap catalog promo for premium names
+          priceInCents = sell > 0 ? sell : null;
+          listPriceInCents = priceInCents;
+          renewPriceInCents = renewSell > 0 ? renewSell : priceInCents;
+          onOffer = false;
+        }
+
         return {
           domain,
           available: Boolean(row?.available),
+          isPremium,
           priceInCents,
           listPriceInCents,
           onOffer,
-          renewPriceInCents: renewByTld.get(tld) ?? null,
+          renewPriceInCents,
           tld,
         };
       })
@@ -153,7 +185,7 @@ export async function GET(request: Request) {
         return compareTldsByPopularity(a.tld, b.tld);
       });
 
-    return NextResponse.json({ results, sld });
+    return NextResponse.json({ results, sld, fxRate });
   } catch (error) {
     console.error("[domains/check]", error);
     const message =

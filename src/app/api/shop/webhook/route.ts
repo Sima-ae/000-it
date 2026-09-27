@@ -6,6 +6,7 @@ import {
   createDomain,
   createTransfer,
   renewDomain,
+  checkDomains,
   type RegistrantContact,
 } from "@/lib/domains/namecheap";
 import { sendFailedDomainOrderAlert } from "@/lib/domains/alerts";
@@ -105,10 +106,16 @@ async function fulfillDomainRegistration(session: Stripe.Checkout.Session) {
   }
 
   try {
+    const domain = (domainName || order.domainName).toLowerCase();
+    const checked = await checkDomains([domain]);
+    const row = checked[0];
     const result = await createDomain({
-      domainName: domainName || order.domainName,
+      domainName: domain,
       years: Number.isFinite(years) ? years : order.years,
       registrant,
+      isPremium: Boolean(row?.isPremium),
+      premiumPriceUsd: row?.isPremium ? row.premiumRegistrationUsd : undefined,
+      eapFeeUsd: row?.isPremium ? row.eapFeeUsd : undefined,
     });
 
     if (result.ok) {

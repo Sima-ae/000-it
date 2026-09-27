@@ -3,11 +3,13 @@ import { z } from "zod";
 import type Stripe from "stripe";
 import { auth } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
-import { checkDomains, isNamecheapConfigured } from "@/lib/domains/namecheap";
+import { checkDomains, isNamecheapConfigured, premiumRegisterBuyUsd, premiumTransferBuyUsd } from "@/lib/domains/namecheap";
 import {
   effectiveSellPriceCents,
   renewSellPriceCents,
 } from "@/lib/domains/pricing";
+import { getUsdToEurRate } from "@/lib/domains/fx";
+import { sellFromBuyUsd } from "@/lib/domains/premium-price";
 import { makeDomainOrderNumber } from "@/lib/shop/line-of-business";
 import { getStripe, isStripeConfigured } from "@/lib/shop/stripe";
 import { localizedHref } from "@/i18n/pathnames";
@@ -128,6 +130,7 @@ export async function POST(request: Request) {
 
     let unitCents = 0;
     let registrant = registrantIn;
+    let isPremiumOrder = false;
 
     if (orderType === "REGISTRATION") {
       if (!registrant) {
@@ -136,14 +139,30 @@ export async function POST(request: Request) {
           { status: 400 },
         );
       }
-      const checked = await checkDomains([domain]);
-      if (!checked[0]?.available) {
+      const [checked, fxRate] = await Promise.all([
+        checkDomains([domain]),
+        getUsdToEurRate(),
+      ]);
+      const row = checked[0];
+      if (!row?.available) {
         return NextResponse.json(
           { error: "Domain is not available" },
           { status: 409 },
         );
       }
-      unitCents = effectiveSellPriceCents(product);
+      if (row.isPremium) {
+        isPremiumOrder = true;
+        const buyUsd = premiumRegisterBuyUsd(row);
+        unitCents = sellFromBuyUsd(buyUsd, fxRate);
+        if (unitCents <= 0) {
+          return NextResponse.json(
+            { error: "Premium domain price unavailable" },
+            { status: 400 },
+          );
+        }
+      } else {
+        unitCents = effectiveSellPriceCents(product);
+      }
     } else if (orderType === "RENEWAL") {
       if (!session?.user?.id) {
         return NextResponse.json({ error: "Login required" }, { status: 401 });
@@ -192,8 +211,26 @@ export async function POST(request: Request) {
           { status: 400 },
         );
       }
-      // Transfers typically charge renew-like or register price; use renew if set else register.
-      unitCents = renewSellPriceCents(product) || effectiveSellPriceCents(product);
+      // Transfers: use live premium transfer price when the name is premium.
+      const [checked, fxRate] = await Promise.all([
+        checkDomains([domain]),
+        getUsdToEurRate(),
+      ]);
+      const row = checked[0];
+      if (row?.isPremium) {
+        isPremiumOrder = true;
+        const buyUsd = premiumTransferBuyUsd(row);
+        unitCents = sellFromBuyUsd(buyUsd, fxRate);
+        if (unitCents <= 0) {
+          return NextResponse.json(
+            { error: "Premium transfer price unavailable" },
+            { status: 400 },
+          );
+        }
+      } else {
+        unitCents =
+          renewSellPriceCents(product) || effectiveSellPriceCents(product);
+      }
     }
 
     const totalPriceInCents = unitCents * years;
@@ -211,6 +248,7 @@ export async function POST(request: Request) {
         orderType,
         status: "PENDING",
         totalPriceInCents,
+        isPremium: isPremiumOrder,
         email: (registrant?.email || session?.user?.email || "").toLowerCase(),
         locale,
         registrantJson: JSON.stringify(registrant || {}),
@@ -236,6 +274,7 @@ export async function POST(request: Request) {
         domainName: domain,
         years: String(years),
         orderType,
+        isPremium: isPremiumOrder ? "1" : "0",
       },
       payment_method_types: [
         "card",
@@ -254,7 +293,7 @@ export async function POST(request: Request) {
             currency: "eur",
             unit_amount: totalPriceInCents,
             product_data: {
-              name: labels.name,
+              name: isPremiumOrder ? `${labels.name} (Premium)` : labels.name,
               description: `${years} ${labels.description}`,
             },
           },

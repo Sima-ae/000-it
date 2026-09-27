@@ -16,6 +16,8 @@ import {
   sellPriceCents,
   renewSellPriceCents,
 } from "@/lib/domains/pricing";
+import { isPremiumTld } from "@/lib/domains/tld-categories";
+import { PremiumBadge } from "@/components/domains/PremiumBadge";
 
 type Product = {
   id: string;
@@ -399,13 +401,23 @@ export default function DomainsAdminPage() {
                     draftOfferCents > 0 &&
                     draftOfferCents < preview.list;
                   const buyMissing = p.basePriceInCents < 1;
+                  const premiumTld = isPremiumTld(preview.list);
                   return (
                     <tr
                       key={p.id}
-                      className={buyMissing ? "bg-destructive/5" : undefined}
+                      className={
+                        buyMissing
+                          ? "bg-destructive/5"
+                          : premiumTld
+                            ? "bg-violet-500/5"
+                            : undefined
+                      }
                     >
                       <td className="py-2 pr-3 font-semibold">
-                        .{p.tld}
+                        <span className="inline-flex flex-wrap items-center gap-1.5">
+                          .{p.tld}
+                          {premiumTld ? <PremiumBadge label="Premium TLD" /> : null}
+                        </span>
                         {buyMissing ? (
                           <span className="mt-0.5 block text-[10px] font-normal text-destructive">
                             missing buy price

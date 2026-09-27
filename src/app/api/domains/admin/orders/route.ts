@@ -5,6 +5,7 @@ import {
   createDomain,
   createTransfer,
   renewDomain,
+  checkDomains,
   type RegistrantContact,
 } from "@/lib/domains/namecheap";
 import { sendFailedDomainOrderAlert } from "@/lib/domains/alerts";
@@ -96,10 +97,15 @@ export async function POST(request: Request) {
         { status: 500 },
       );
     }
+    const checked = await checkDomains([order.domainName]);
+    const row = checked[0];
     result = await createDomain({
       domainName: order.domainName,
       years: order.years,
       registrant,
+      isPremium: Boolean(row?.isPremium),
+      premiumPriceUsd: row?.isPremium ? row.premiumRegistrationUsd : undefined,
+      eapFeeUsd: row?.isPremium ? row.eapFeeUsd : undefined,
     });
   }
 

@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { centsToEurosNumber } from "@/lib/shop/admin";
+import { PremiumBadge } from "@/components/domains/PremiumBadge";
 
 type DomainOrder = {
   id: string;
@@ -16,6 +17,7 @@ type DomainOrder = {
   orderType?: "REGISTRATION" | "RENEWAL" | "TRANSFER";
   status: "PENDING" | "PAID" | "REGISTERED" | "FAILED";
   totalPriceInCents: number;
+  isPremium?: boolean;
   email: string;
   locale: string;
   registrantJson: string;
@@ -129,10 +131,20 @@ export default function DomainOrdersPage() {
                     <td className="py-3 pr-3 text-xs">
                       {o.orderType || "REGISTRATION"}
                     </td>
-                    <td className="py-3 pr-3 font-medium">{o.domainName}</td>
-                    <td className="py-3 pr-3 text-muted-foreground">{o.email}</td>
                     <td className="py-3 pr-3">
+                      <span className="inline-flex flex-wrap items-center gap-1.5 font-medium">
+                        {o.domainName}
+                        {o.isPremium ? <PremiumBadge /> : null}
+                      </span>
+                    </td>
+                    <td className="py-3 pr-3 text-muted-foreground">{o.email}</td>
+                    <td className="py-3 pr-3 font-semibold tabular-nums">
                       €{centsToEurosNumber(o.totalPriceInCents).toFixed(2)}
+                      {o.isPremium ? (
+                        <span className="mt-0.5 block text-[10px] font-medium text-violet-700 dark:text-violet-300">
+                          premium price
+                        </span>
+                      ) : null}
                     </td>
                     <td className="py-3 pr-3">
                       <Badge
@@ -172,11 +184,23 @@ export default function DomainOrdersPage() {
       {active ? (
         <Card>
           <CardHeader>
-            <CardTitle className="text-base">
+            <CardTitle className="text-base inline-flex flex-wrap items-center gap-2">
               {active.domainName} · {active.orderNumber}
+              {active.isPremium ? <PremiumBadge /> : null}
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-3 text-sm">
+            <p>
+              <span className="text-muted-foreground">Total:</span>{" "}
+              <span className="font-semibold tabular-nums">
+                €{centsToEurosNumber(active.totalPriceInCents).toFixed(2)}
+              </span>
+              {active.isPremium ? (
+                <span className="ml-2 text-violet-700 dark:text-violet-300">
+                  (premium domain price)
+                </span>
+              ) : null}
+            </p>
             <p>
               <span className="text-muted-foreground">Years:</span>{" "}
               {active.years}

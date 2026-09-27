@@ -162,8 +162,26 @@ function friendlyNamecheapError(raw: string): string {
 export type DomainCheckResult = {
   domain: string;
   available: boolean;
+  /** Aftermarket / registry premium name (not the same as a high catalog TLD price). */
+  isPremium: boolean;
+  /** Supplier USD — registration list for premium names (0 if not premium). */
+  premiumRegistrationUsd: number;
+  premiumRenewalUsd: number;
+  premiumTransferUsd: number;
+  icannFeeUsd: number;
+  eapFeeUsd: number;
   error?: string;
 };
+
+function numAttr(row: Record<string, string>, ...keys: string[]): number {
+  for (const key of keys) {
+    const raw = row[key];
+    if (raw == null || raw === "") continue;
+    const n = parseFloat(String(raw));
+    if (Number.isFinite(n) && n >= 0) return n;
+  }
+  return 0;
+}
 
 function parseCheckRows(parsed: Record<string, unknown>): DomainCheckResult[] {
   const cmd = (parsed.ApiResponse as { CommandResponse?: unknown })
@@ -172,12 +190,39 @@ function parseCheckRows(parsed: Record<string, unknown>): DomainCheckResult[] {
   const rows = Array.isArray(raw) ? raw : raw ? [raw] : [];
   return rows.map((row) => {
     const r = row as Record<string, string>;
+    const isPremium = String(r.IsPremiumName || "").toLowerCase() === "true";
     return {
       domain: String(r.Domain || "").toLowerCase(),
       available: String(r.Available).toLowerCase() === "true",
+      isPremium,
+      premiumRegistrationUsd: numAttr(r, "PremiumRegistrationPrice"),
+      premiumRenewalUsd: numAttr(r, "PremiumRenewalPrice"),
+      premiumTransferUsd: numAttr(r, "PremiumTransferPrice"),
+      icannFeeUsd: numAttr(r, "IcannFee"),
+      eapFeeUsd: numAttr(r, "EapFee"),
       error: r.ErrorNo && String(r.ErrorNo) !== "0" ? String(r.ErrorNo) : undefined,
     };
   });
+}
+
+/** Supplier buy USD for a premium registration (incl. ICANN / EAP fees when present). */
+export function premiumRegisterBuyUsd(row: DomainCheckResult): number {
+  if (!row.isPremium) return 0;
+  return row.premiumRegistrationUsd + row.icannFeeUsd + row.eapFeeUsd;
+}
+
+export function premiumRenewBuyUsd(row: DomainCheckResult): number {
+  if (!row.isPremium) return 0;
+  return row.premiumRenewalUsd > 0
+    ? row.premiumRenewalUsd
+    : row.premiumRegistrationUsd;
+}
+
+export function premiumTransferBuyUsd(row: DomainCheckResult): number {
+  if (!row.isPremium) return 0;
+  return row.premiumTransferUsd > 0
+    ? row.premiumTransferUsd
+    : row.premiumRegistrationUsd;
 }
 
 async function checkDomainList(
@@ -239,6 +284,12 @@ export async function checkDomains(
           return {
             domain,
             available: false,
+            isPremium: false,
+            premiumRegistrationUsd: 0,
+            premiumRenewalUsd: 0,
+            premiumTransferUsd: 0,
+            icannFeeUsd: 0,
+            eapFeeUsd: 0,
             error: one.error || "TLD_CHECK_FAILED",
           } satisfies DomainCheckResult;
         }),
@@ -377,6 +428,12 @@ export async function createDomain(input: {
   domainName: string;
   years: number;
   registrant: RegistrantContact;
+  /** Required by supplier when registering a premium name. */
+  isPremium?: boolean;
+  /** Exact PremiumRegistrationPrice in USD from domains.check (not our sell price). */
+  premiumPriceUsd?: number;
+  /** Early Access Program fee in USD when applicable. */
+  eapFeeUsd?: number;
 }): Promise<{ ok: boolean; xml: string; error?: string }> {
   if (!isNamecheapConfigured()) {
     throw new Error("NAMECHEAP_NOT_CONFIGURED");
@@ -384,6 +441,15 @@ export async function createDomain(input: {
   const params = await baseParams("namecheap.domains.create");
   params.set("DomainName", input.domainName.toLowerCase());
   params.set("Years", String(Math.max(1, Math.min(10, input.years || 1))));
+  if (input.isPremium) {
+    params.set("IsPremiumDomain", "true");
+    if (input.premiumPriceUsd != null && input.premiumPriceUsd > 0) {
+      params.set("PremiumPrice", String(input.premiumPriceUsd));
+    }
+    if (input.eapFeeUsd != null && input.eapFeeUsd > 0) {
+      params.set("EapFee", String(input.eapFeeUsd));
+    }
+  }
   for (const [k, v] of Object.entries(
     contactParams("Registrant", input.registrant),
   )) {
