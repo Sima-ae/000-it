@@ -2,11 +2,16 @@ import { NextResponse } from "next/server";
 import type Stripe from "stripe";
 import { prisma } from "@/lib/prisma";
 import { getStripe } from "@/lib/shop/stripe";
+import {
+  createDomain,
+  type RegistrantContact,
+} from "@/lib/domains/namecheap";
+import { sendFailedDomainOrderAlert } from "@/lib/domains/alerts";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-async function markOrderPaid(session: Stripe.Checkout.Session) {
+async function markShopOrderPaid(session: Stripe.Checkout.Session) {
   const orderId = session.metadata?.orderId;
   const paymentIntentId =
     typeof session.payment_intent === "string"
@@ -36,6 +41,97 @@ async function markOrderPaid(session: Stripe.Checkout.Session) {
   }
 }
 
+async function fulfillDomainRegistration(session: Stripe.Checkout.Session) {
+  const domainOrderId = session.metadata?.domainOrderId;
+  const domainName = session.metadata?.domainName;
+  const years = parseInt(session.metadata?.years || "1", 10);
+
+  const order = domainOrderId
+    ? await prisma.domainOrder.findUnique({ where: { id: domainOrderId } })
+    : session.id
+      ? await prisma.domainOrder.findFirst({
+          where: { stripeSessionId: session.id },
+        })
+      : null;
+
+  if (!order) {
+    console.error("[shop/webhook] domain order missing", session.id);
+    return;
+  }
+
+  if (order.status === "REGISTERED") return;
+
+  await prisma.domainOrder.update({
+    where: { id: order.id },
+    data: { status: "PAID" },
+  });
+
+  let registrant: RegistrantContact;
+  try {
+    registrant = JSON.parse(order.registrantJson) as RegistrantContact;
+  } catch {
+    await prisma.domainOrder.update({
+      where: { id: order.id },
+      data: {
+        status: "FAILED",
+        namecheapResponse: "Invalid registrantJson",
+      },
+    });
+    await sendFailedDomainOrderAlert({
+      orderId: order.id,
+      orderNumber: order.orderNumber,
+      domainName: order.domainName,
+      userEmail: order.email,
+      errorDetails: "Invalid registrantJson on order",
+    });
+    return;
+  }
+
+  try {
+    const result = await createDomain({
+      domainName: domainName || order.domainName,
+      years: Number.isFinite(years) ? years : order.years,
+      registrant,
+    });
+
+    if (result.ok) {
+      await prisma.domainOrder.update({
+        where: { id: order.id },
+        data: { status: "REGISTERED", namecheapResponse: result.xml },
+      });
+      return;
+    }
+
+    await prisma.domainOrder.update({
+      where: { id: order.id },
+      data: {
+        status: "FAILED",
+        namecheapResponse: result.error || result.xml,
+      },
+    });
+    await sendFailedDomainOrderAlert({
+      orderId: order.id,
+      orderNumber: order.orderNumber,
+      domainName: order.domainName,
+      userEmail: order.email,
+      errorDetails: result.error || result.xml,
+    });
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    await prisma.domainOrder.update({
+      where: { id: order.id },
+      data: { status: "FAILED", namecheapResponse: message },
+    });
+    await sendFailedDomainOrderAlert({
+      orderId: order.id,
+      orderNumber: order.orderNumber,
+      domainName: order.domainName,
+      userEmail: order.email,
+      errorDetails: message,
+    });
+  }
+}
+
 export async function POST(request: Request) {
   const secret = process.env.STRIPE_WEBHOOK_SECRET;
   if (!secret) {
@@ -61,12 +157,23 @@ export async function POST(request: Request) {
   try {
     if (event.type === "checkout.session.completed") {
       const session = event.data.object as Stripe.Checkout.Session;
-      await markOrderPaid(session);
+      if (session.metadata?.type === "DOMAIN_REGISTRATION") {
+        await fulfillDomainRegistration(session);
+      } else {
+        await markShopOrderPaid(session);
+      }
     }
 
     if (event.type === "checkout.session.expired") {
       const session = event.data.object as Stripe.Checkout.Session;
-      if (session.metadata?.orderId) {
+      if (session.metadata?.type === "DOMAIN_REGISTRATION") {
+        if (session.metadata.domainOrderId) {
+          await prisma.domainOrder.updateMany({
+            where: { id: session.metadata.domainOrderId, status: "PENDING" },
+            data: { status: "FAILED" },
+          });
+        }
+      } else if (session.metadata?.orderId) {
         await prisma.shopOrder.updateMany({
           where: { id: session.metadata.orderId, status: "PENDING" },
           data: { status: "CANCELLED" },

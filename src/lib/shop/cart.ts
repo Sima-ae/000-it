@@ -3,7 +3,9 @@ import {
   getShopProductById,
   shopChargeInclCents,
   type ShopProduct,
+  type ShopProductLineOfBusiness,
 } from "@/lib/shop/catalog";
+import { lineOfBusinessFromProduct } from "@/lib/shop/line-of-business";
 
 export type ResolvedCartLine = {
   product: ShopProduct;
@@ -21,6 +23,8 @@ export type CartTotals = {
   vatCents: number;
   totalInclCents: number;
   vatRate: number;
+  lineOfBusiness: ShopProductLineOfBusiness | null;
+  mixedLineOfBusiness: boolean;
 };
 
 export function resolveCartItems(
@@ -48,12 +52,27 @@ export function resolveCartItems(
   const totalInclCents = lines.reduce((s, l) => s + l.lineInclCents, 0);
   const { exclCents, vatCents } = splitInclusiveVatCents(totalInclCents);
 
+  const lobs = new Set(
+    lines.map((l) =>
+      lineOfBusinessFromProduct({
+        slug: l.product.slug,
+        category: l.product.category,
+        lineOfBusiness: l.product.lineOfBusiness,
+      }),
+    ),
+  );
+  const mixedLineOfBusiness = lobs.size > 1;
+  const lineOfBusiness =
+    lobs.size === 1 ? ([...lobs][0] as ShopProductLineOfBusiness) : null;
+
   return {
     lines,
     subtotalExclCents: exclCents,
     vatCents,
     totalInclCents,
     vatRate: VAT_RATE,
+    lineOfBusiness,
+    mixedLineOfBusiness,
   };
 }
 

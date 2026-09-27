@@ -64,6 +64,7 @@ export const shopProductUpsertSchema = z.object({
   billAsYearlyPackage: z.boolean().default(false),
   checkoutMonths: z.number().int().min(1).max(36).nullable().optional(),
   category: z.string().max(64).nullable().optional(),
+  lineOfBusiness: z.enum(["SERVICE", "HOSTING"]).optional(),
   image: z.string().max(2000).nullable().optional(),
   featured: z.boolean().default(false),
   published: z.boolean().default(true),

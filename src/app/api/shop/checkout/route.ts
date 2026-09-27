@@ -5,6 +5,7 @@ import { auth } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { resolveCartItems, cartTotalsInEuros } from "@/lib/shop/cart";
 import { getStripe, isStripeConfigured } from "@/lib/shop/stripe";
+import { makeShopOrderNumber } from "@/lib/shop/line-of-business";
 import { siteOrigin } from "@/lib/seo";
 import { VAT_RATE } from "@/lib/shop/vat";
 
@@ -26,15 +27,6 @@ const bodySchema = z.object({
     .min(1)
     .max(50),
 });
-
-function makeOrderNumber() {
-  const stamp = new Date()
-    .toISOString()
-    .replace(/[-:TZ.]/g, "")
-    .slice(0, 14);
-  const rand = Math.random().toString(36).slice(2, 6).toUpperCase();
-  return `TZ-${stamp}-${rand}`;
-}
 
 export async function POST(request: Request) {
   try {
@@ -60,9 +52,23 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Cart is empty or invalid" }, { status: 400 });
     }
 
+    if (totals.mixedLineOfBusiness || !totals.lineOfBusiness) {
+      return NextResponse.json(
+        {
+          error:
+            locale === "nl"
+              ? "Hosting en diensten kunnen niet in één bestelling. Rond ze apart af."
+              : "Hosting and services cannot be checked out together. Complete them separately.",
+          code: "MIXED_LINE_OF_BUSINESS",
+        },
+        { status: 400 },
+      );
+    }
+
+    const lineOfBusiness = totals.lineOfBusiness;
     const euros = cartTotalsInEuros(totals);
     const session = await auth();
-    const orderNumber = makeOrderNumber();
+    const orderNumber = makeShopOrderNumber(lineOfBusiness);
 
     const order = await prisma.shopOrder.create({
       data: {
@@ -77,6 +83,7 @@ export async function POST(request: Request) {
         totalIncl: euros.totalIncl,
         vatRate: VAT_RATE,
         status: "PENDING",
+        lineOfBusiness,
         userId: session?.user?.id || null,
         items: {
           create: totals.lines.map((line) => ({
@@ -85,6 +92,7 @@ export async function POST(request: Request) {
             quantity: line.quantity,
             unitPriceIncl: line.unitInclCents / 100,
             vatRate: VAT_RATE,
+            lineOfBusiness,
           })),
         },
       },
@@ -103,8 +111,8 @@ export async function POST(request: Request) {
       metadata: {
         orderId: order.id,
         orderNumber: order.orderNumber,
+        lineOfBusiness,
       },
-      // Professional EU/NL methods (card also enables Apple Pay / Google Pay when available)
       payment_method_types: ["card", "ideal", "bancontact", "sepa_debit", "klarna", "paypal"],
       billing_address_collection: "auto",
       submit_type: "pay",
@@ -138,7 +146,6 @@ export async function POST(request: Request) {
     try {
       checkoutSession = await stripe.checkout.sessions.create(sessionParams);
     } catch (firstError) {
-      // Fall back if some methods are not enabled on this Stripe account
       console.warn("[shop/checkout] full payment methods failed, retrying core set", firstError);
       checkoutSession = await stripe.checkout.sessions.create({
         ...sessionParams,
@@ -162,6 +169,7 @@ export async function POST(request: Request) {
       url: checkoutSession.url,
       orderNumber: order.orderNumber,
       sessionId: checkoutSession.id,
+      lineOfBusiness,
     });
   } catch (error) {
     console.error("[shop/checkout]", error);
@@ -171,7 +179,6 @@ export async function POST(request: Request) {
         : typeof error === "object" && error && "message" in error
           ? String((error as { message?: unknown }).message)
           : "Checkout failed";
-    // Never expose API key material to the browser.
     const safe = /api key|sk_live|sk_test|pk_live|pk_test|whsec_/i.test(raw)
       ? "Payment provider configuration error. Please try again later."
       : raw;

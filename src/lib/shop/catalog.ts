@@ -8,6 +8,7 @@ import { eurosToCents } from "@/lib/shop/vat";
 export type ShopBillingPeriod = "monthly" | "yearly";
 export type ShopProductType = "plan" | "service" | "product";
 export type ShopBillingInterval = ShopAdminBillingInterval;
+export type ShopProductLineOfBusiness = "SERVICE" | "HOSTING";
 
 export type ShopProduct = {
   id: string;
@@ -37,6 +38,7 @@ export type ShopProduct = {
   billingInterval?: ShopBillingInterval;
   billAsYearlyPackage?: boolean;
   category?: string | null;
+  lineOfBusiness?: ShopProductLineOfBusiness;
   planKey?: "starter" | "growth";
   featured?: boolean;
   published?: boolean;
@@ -459,6 +461,7 @@ type DbShopRow = {
   billAsYearlyPackage: boolean;
   checkoutMonths: number | null;
   category: string | null;
+  lineOfBusiness?: string | null;
   image: string | null;
   featured: boolean;
   published: boolean;
@@ -489,6 +492,12 @@ export function mapDbShopProduct(row: DbShopRow): ShopProduct {
         : undefined;
 
   const tags = Array.isArray(row.tags) ? row.tags.map(String) : [];
+  const lineOfBusiness: ShopProductLineOfBusiness =
+    row.lineOfBusiness === "HOSTING" ||
+    row.category === "hosting" ||
+    HOSTING_YEARLY_SLUGS.has(row.slug)
+      ? "HOSTING"
+      : "SERVICE";
 
   return {
     id: row.id,
@@ -510,6 +519,7 @@ export function mapDbShopProduct(row: DbShopRow): ShopProduct {
     billingInterval,
     billingPeriod,
     category: row.category,
+    lineOfBusiness,
     planKey,
     featured: row.featured,
     published: row.published,

@@ -8,15 +8,27 @@ import {
   slugifyShop,
 } from "@/lib/shop/admin";
 import { mapDbShopProduct } from "@/lib/shop/catalog";
+import {
+  lineOfBusinessFromProduct,
+  parseLineOfBusinessParam,
+} from "@/lib/shop/line-of-business";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const all = searchParams.get("all") === "1";
+  const lobParam = searchParams.get("lineOfBusiness");
+  const lineFilter =
+    lobParam === "SERVICE" || lobParam === "HOSTING"
+      ? parseLineOfBusinessParam(lobParam)
+      : null;
 
   // Public catalog (published only) — no auth required.
   if (!all) {
     const rows = await prisma.shopCatalogProduct.findMany({
-      where: { published: true },
+      where: {
+        published: true,
+        ...(lineFilter ? { lineOfBusiness: lineFilter } : {}),
+      },
       orderBy: [{ sortOrder: "asc" }, { createdAt: "desc" }],
     });
     return NextResponse.json(rows.map(mapDbShopProduct));
@@ -26,6 +38,7 @@ export async function GET(request: Request) {
   if (authResult.error) return authResult.error;
 
   const rows = await prisma.shopCatalogProduct.findMany({
+    where: lineFilter ? { lineOfBusiness: lineFilter } : undefined,
     orderBy: [{ sortOrder: "asc" }, { createdAt: "desc" }],
   });
   return NextResponse.json(rows);
@@ -79,6 +92,13 @@ export async function POST(request: Request) {
       : 12
     : data.checkoutMonths || null;
 
+  const lineOfBusiness =
+    data.lineOfBusiness ||
+    lineOfBusinessFromProduct({
+      slug,
+      category: data.category,
+    });
+
   const item = await prisma.shopCatalogProduct.create({
     data: {
       sku,
@@ -100,6 +120,7 @@ export async function POST(request: Request) {
       billAsYearlyPackage,
       checkoutMonths,
       category: data.category || null,
+      lineOfBusiness,
       image: data.image || null,
       featured: data.featured ?? false,
       published: data.published ?? true,

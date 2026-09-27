@@ -3,6 +3,10 @@ import { z } from "zod";
 import { prisma } from "@/lib/prisma";
 import { requireRole } from "@/lib/api-auth";
 import { VAT_RATE, splitInclusiveVat } from "@/lib/shop/vat";
+import {
+  makeShopOrderNumber,
+  parseLineOfBusinessParam,
+} from "@/lib/shop/line-of-business";
 
 export const dynamic = "force-dynamic";
 
@@ -19,17 +23,9 @@ const createSchema = z.object({
   company: z.string().max(190).optional().nullable(),
   locale: z.string().min(2).max(10).default("nl"),
   status: z.enum(["PENDING", "PAID", "FAILED", "CANCELLED"]).default("PENDING"),
+  lineOfBusiness: z.enum(["SERVICE", "HOSTING"]).default("SERVICE"),
   items: z.array(itemSchema).min(1).max(50),
 });
-
-function makeOrderNumber() {
-  const stamp = new Date()
-    .toISOString()
-    .replace(/[-:TZ.]/g, "")
-    .slice(0, 14);
-  const rand = Math.random().toString(36).slice(2, 6).toUpperCase();
-  return `TZ-${stamp}-${rand}`;
-}
 
 function totalsFromItems(
   items: z.infer<typeof itemSchema>[],
@@ -43,11 +39,18 @@ function totalsFromItems(
   return { subtotalExcl: excl, vatAmount: vat, totalIncl: incl, vatRate };
 }
 
-export async function GET() {
+export async function GET(request: Request) {
   const authResult = await requireRole(["SUPER_ADMIN", "ADMIN", "MANAGER"]);
   if (authResult.error) return authResult.error;
 
+  const { searchParams } = new URL(request.url);
+  const lineOfBusiness = parseLineOfBusinessParam(
+    searchParams.get("lineOfBusiness"),
+    "SERVICE",
+  );
+
   const orders = await prisma.shopOrder.findMany({
+    where: { lineOfBusiness },
     orderBy: { createdAt: "desc" },
     take: 200,
     include: {
@@ -73,16 +76,18 @@ export async function POST(request: Request) {
 
   const data = parsed.data;
   const totals = totalsFromItems(data.items);
+  const lineOfBusiness = data.lineOfBusiness;
 
   const order = await prisma.shopOrder.create({
     data: {
-      orderNumber: makeOrderNumber(),
+      orderNumber: makeShopOrderNumber(lineOfBusiness),
       name: data.name.trim(),
       email: data.email.trim().toLowerCase(),
       company: data.company?.trim() || null,
       locale: data.locale,
       currency: "EUR",
       status: data.status,
+      lineOfBusiness,
       subtotalExcl: totals.subtotalExcl,
       vatAmount: totals.vatAmount,
       totalIncl: totals.totalIncl,
@@ -95,6 +100,7 @@ export async function POST(request: Request) {
           quantity: item.quantity,
           unitPriceIncl: item.unitPriceIncl,
           vatRate: totals.vatRate,
+          lineOfBusiness,
         })),
       },
     },

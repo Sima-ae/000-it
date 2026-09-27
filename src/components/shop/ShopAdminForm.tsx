@@ -121,12 +121,18 @@ export function ShopAdminForm({
   initial,
   onSaved,
   onCancel,
+  lineOfBusiness = "SERVICE",
 }: {
   initial?: Partial<ShopAdminFormValues>;
   onSaved: () => void;
   onCancel: () => void;
+  lineOfBusiness?: "SERVICE" | "HOSTING";
 }) {
-  const [form, setForm] = useState<ShopAdminFormValues>({ ...empty, ...initial });
+  const [form, setForm] = useState<ShopAdminFormValues>({
+    ...empty,
+    category: lineOfBusiness === "HOSTING" ? "hosting" : empty.category,
+    ...initial,
+  });
   const [saving, setSaving] = useState(false);
   const [uploading, setUploading] = useState(false);
 
@@ -196,6 +202,7 @@ export function ShopAdminForm({
             ? Number(form.checkoutMonths)
             : null,
         category: form.category || null,
+        lineOfBusiness,
         image: form.image || null,
         featured: form.featured,
         published: form.published,

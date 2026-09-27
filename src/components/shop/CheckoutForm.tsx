@@ -125,6 +125,11 @@ export function CheckoutForm() {
             />
           </label>
           {error ? <p className="text-sm text-destructive">{error}</p> : null}
+          {totals.mixedLineOfBusiness ? (
+            <p className="rounded-xl border border-amber-500/30 bg-amber-500/10 px-3 py-2 text-sm text-amber-800 dark:text-amber-200">
+              {t("mixedCart")}
+            </p>
+          ) : null}
           {stripeReady === false ? (
             <p className="rounded-xl border border-amber-500/30 bg-amber-500/10 px-3 py-2 text-sm text-amber-800 dark:text-amber-200">
               {t("stripeMissing")}
@@ -203,7 +208,7 @@ export function CheckoutForm() {
         <Button
           type="submit"
           className="mt-2 w-full rounded-2xl"
-          disabled={loading || stripeReady === false}
+          disabled={loading || stripeReady === false || totals.mixedLineOfBusiness}
         >
           {loading ? t("redirecting") : t("payWithStripe")}
         </Button>

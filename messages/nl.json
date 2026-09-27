@@ -285,7 +285,8 @@
     "successBody": "Jouw betaling is ontvangen. Je krijgt een bevestiging per e-mail van Stripe.",
     "orderNumber": "Bestelnummer",
     "confirmationEmail": "Bevestiging naar",
-    "backHome": "Naar home"
+    "backHome": "Naar home",
+    "mixedCart": "Hosting en diensten kunnen niet in één bestelling. Verwijder één van beide en rond ze apart af."
   },
   "footer": {
     "tagline": "Wij bieden diensten en producten voor ondernemers en zzp'ers van adverteren, AI‑integratie, AEO, GEO en SEO, drukwerk, e‑mail marketing, grafisch design, online marketing, onderhoud, optimalisatie, Social Media beheer, webdesign en WordPress-support tot webhosting en domeinnamen.",
@@ -330,7 +331,7 @@
     "newsTrash": "Prullenbak",
     "caseStudies": "Casestudies",
     "leads": "Leads",
-    "shop": "Shop",
+    "shop": "Diensten shop",
     "tickets": "Tickets",
     "todos": "Takenlijst",
     "users": "Gebruikers",
@@ -474,7 +475,11 @@
     "roleADMIN": "Beheerder",
     "roleMANAGER": "Manager",
     "roleCLIENT": "Klant",
-    "orders": "Bestellingen"
+    "orders": "Dienstbestellingen",
+    "hostingAdmin": "Hosting",
+    "hostingOrders": "Hostingbestellingen",
+    "domainsAdmin": "Domeinen",
+    "domainOrders": "Domeinbestellingen"
   },
   "contact": {
     "title": "Contact",
@@ -1190,8 +1195,8 @@
     }
   },
   "ordersAdmin": {
-    "title": "Bestellingen",
-    "subtitle": "Bekijk shop-checkouts, werk status bij en beheer orderdetails.",
+    "title": "Dienstbestellingen",
+    "subtitle": "Bekijk service-checkouts, werk status bij en beheer orderdetails. Hosting staat apart onder Hostingbestellingen.",
     "addOrder": "Bestelling toevoegen",
     "search": "Zoek ordernummer, klant, product…",
     "allStatuses": "Alle statussen",
@@ -1263,5 +1268,45 @@
     "sectionKennisbank": "Kennisbank",
     "sectionNews": "Nieuws",
     "sectionFaq": "Veelgestelde vragen"
+  },
+  "domainsPage": {
+    "metaTitle": "Domeinen registreren",
+    "metaDescription": "Check beschikbaarheid, betaal veilig en registreer je domein via TripleZero iT.",
+    "heroTitle": "Vind en registreer jouw domeinnaam",
+    "heroSubtitle": "Direct beschikbaarheid checken, scherpe prijzen inclusief BTW, veilig betalen met iDEAL of kaart — registratie via onze Namecheap-koppeling.",
+    "placeholder": "Typ je naam (bijv. bedrijf of bedrijf.nl)",
+    "search": "Controleren",
+    "searching": "Bezig…",
+    "invalidFormat": "Voer een geldige naam of domeinnaam in.",
+    "available": "Beschikbaar",
+    "unavailable": "Niet beschikbaar",
+    "order": "Registreren",
+    "processing": "Doorsturen…",
+    "pay": "Betaal en registreer",
+    "checkFailed": "Controle mislukt. Probeer het later opnieuw.",
+    "checkoutFailed": "Checkout mislukt. Controleer je gegevens.",
+    "registrantTitle": "Registratiegegevens",
+    "registrantSubtitle": "WHOIS-contact voor {domain}",
+    "firstName": "Voornaam",
+    "lastName": "Achternaam",
+    "email": "E-mail",
+    "phone": "Telefoon (+31…)",
+    "address": "Adres",
+    "city": "Plaats",
+    "postalCode": "Postcode",
+    "country": "Land (NL)",
+    "organization": "Organisatie (optioneel)",
+    "successBanner": "Betaling ontvangen{order}. We ronden de registratie automatisch af.",
+    "canceledBanner": "Betaling geannuleerd. Je kunt opnieuw zoeken en bestellen.",
+    "step1Title": "Zoek",
+    "step1Body": "Kies een naam en extensies. We tonen live beschikbaarheid en verkoopprijs.",
+    "step2Title": "Betaal",
+    "step2Body": "Veilig afrekenen via Stripe (iDEAL, kaart en meer). Prijzen zijn inclusief 21% BTW.",
+    "step3Title": "Registreer",
+    "step3Body": "Na betaling registreren we het domein automatisch. Bij een storing krijg je support.",
+    "dnsTitle": "DNS, e-mail en hosting",
+    "dnsBody": "Na registratie kun je DNS naar TripleZero hosting wijzen of elders houden. Hulp nodig? Boek een afspraak.",
+    "ctaBook": "Afspraak maken",
+    "ctaContact": "Contact"
   }
 }

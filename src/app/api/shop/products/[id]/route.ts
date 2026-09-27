@@ -97,6 +97,7 @@ export async function PATCH(
   }
   if (data.checkoutMonths !== undefined) update.checkoutMonths = data.checkoutMonths;
   if (data.category !== undefined) update.category = data.category || null;
+  if (data.lineOfBusiness !== undefined) update.lineOfBusiness = data.lineOfBusiness;
   if (data.image !== undefined) update.image = data.image || null;
   if (data.featured !== undefined) update.featured = data.featured;
   if (data.published !== undefined) update.published = data.published;

@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+name: Domain price sync (Namecheap)
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: domain-price-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    name: Sync Namecheap domain prices
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Trigger domain price sync on VPS
+        env:
+          APP_URL: ${{ secrets.AUTO_NEWS_APP_URL }}
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+        run: |
+          set -euo pipefail
+          BASE_URL="${APP_URL:-https://000-it.com}"
+          URL="${BASE_URL%/}/api/cron/domain-prices"
+          echo "POST ${URL}"
+          HTTP=$(curl -sS -o /tmp/domain-prices.json -w "%{http_code}" -X POST \
+            -H "Accept: application/json" \
+            -H "Authorization: Bearer ${CRON_SECRET}" \
+            --max-time 120 \
+            "$URL")
+          echo "HTTP ${HTTP}"
+          head -c 4000 /tmp/domain-prices.json; echo
+          if [[ "$HTTP" != "200" ]]; then
+            echo "Domain price sync failed with HTTP ${HTTP}"
+            exit 1
+          fi
+          node -e '
+            const fs = require("fs");
+            const data = JSON.parse(fs.readFileSync("/tmp/domain-prices.json","utf8"));
+            if (data.ok === false) process.exit(1);
+            console.log(JSON.stringify({ updated: data.updated, rate: data.exchangeRateUsed }, null, 2));
+          '

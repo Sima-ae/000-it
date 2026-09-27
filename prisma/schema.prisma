@@ -47,6 +47,7 @@ model User {
   caseStudies        CaseStudy[]
   shopOrders         ShopOrder[]
   shopProducts       ShopCatalogProduct[]
+  domainOrders       DomainOrder[]
   kennisbankArticles KennisbankArticle[]
 }
 
@@ -293,41 +294,45 @@ model Payment {
 }
 
 model ShopOrder {
-  id                    String         @id @default(cuid())
-  orderNumber           String         @unique
+  id                    String              @id @default(cuid())
+  orderNumber           String              @unique
   email                 String
   name                  String
   company               String?
-  locale                String         @default("nl")
-  currency              String         @default("EUR")
+  locale                String              @default("nl")
+  currency              String              @default("EUR")
   subtotalExcl          Float
   vatAmount             Float
   totalIncl             Float
-  vatRate               Float          @default(0.21)
-  status                ShopOrderStatus @default(PENDING)
-  stripeSessionId       String?        @unique
+  vatRate               Float               @default(0.21)
+  status                ShopOrderStatus     @default(PENDING)
+  /// SERVICE vs HOSTING — separate books for accounting
+  lineOfBusiness        ShopLineOfBusiness  @default(SERVICE)
+  stripeSessionId       String?             @unique
   stripePaymentIntentId String?
   userId                String?
-  user                  User?          @relation(fields: [userId], references: [id], onDelete: SetNull)
+  user                  User?               @relation(fields: [userId], references: [id], onDelete: SetNull)
   items                 ShopOrderItem[]
-  createdAt             DateTime       @default(now())
-  updatedAt             DateTime       @updatedAt
+  createdAt             DateTime            @default(now())
+  updatedAt             DateTime            @updatedAt
 
   @@index([email])
   @@index([status])
   @@index([createdAt])
+  @@index([lineOfBusiness, createdAt])
 }
 
 model ShopOrderItem {
-  id            String    @id @default(cuid())
-  orderId       String
-  order         ShopOrder @relation(fields: [orderId], references: [id], onDelete: Cascade)
-  productId     String
-  name          String
-  quantity      Int       @default(1)
-  unitPriceIncl Float
-  vatRate       Float     @default(0.21)
-  createdAt     DateTime  @default(now())
+  id             String             @id @default(cuid())
+  orderId        String
+  order          ShopOrder          @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  productId      String
+  name           String
+  quantity       Int                @default(1)
+  unitPriceIncl  Float
+  vatRate        Float              @default(0.21)
+  lineOfBusiness ShopLineOfBusiness @default(SERVICE)
+  createdAt      DateTime           @default(now())
 
   @@index([orderId])
   @@index([productId])
@@ -357,6 +362,8 @@ model ShopCatalogProduct {
   billAsYearlyPackage  Boolean              @default(false)
   checkoutMonths       Int?
   category             String?
+  /// SERVICE vs HOSTING accounting book
+  lineOfBusiness       ShopLineOfBusiness   @default(SERVICE)
   image                String?              @db.Text
   featured             Boolean              @default(false)
   published            Boolean              @default(true)
@@ -373,6 +380,7 @@ model ShopCatalogProduct {
   @@index([type, category])
   @@index([billingInterval])
   @@index([createdById])
+  @@index([lineOfBusiness, published, sortOrder])
 }
 
 model ContactLead {
@@ -719,6 +727,58 @@ enum ShopOrderStatus {
   PAID
   FAILED
   CANCELLED
+}
+
+enum ShopLineOfBusiness {
+  SERVICE
+  HOSTING
+}
+
+enum DomainOrderStatus {
+  PENDING
+  PAID
+  REGISTERED
+  FAILED
+}
+
+/// Namecheap TLD catalog with live buy price + markup (domains book).
+model DomainProduct {
+  id               String        @id @default(cuid())
+  tld              String        @unique
+  basePriceInCents Int
+  markupFixedCents Int           @default(0)
+  markupPercent    Float         @default(0)
+  isActive         Boolean       @default(true)
+  createdAt        DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+  orders           DomainOrder[]
+
+  @@index([isActive, tld])
+}
+
+model DomainOrder {
+  id                String            @id @default(cuid())
+  orderNumber       String            @unique
+  domainName        String
+  years             Int               @default(1)
+  status            DomainOrderStatus @default(PENDING)
+  stripeSessionId   String?           @unique
+  totalPriceInCents Int
+  email             String
+  locale            String            @default("nl")
+  registrantJson    String            @db.Text
+  namecheapResponse String?           @db.LongText
+  domainProductId   String
+  domainProduct     DomainProduct     @relation(fields: [domainProductId], references: [id])
+  userId            String?
+  user              User?             @relation(fields: [userId], references: [id], onDelete: SetNull)
+  createdAt         DateTime          @default(now())
+  updatedAt         DateTime          @updatedAt
+
+  @@index([status, createdAt])
+  @@index([email])
+  @@index([domainName])
+  @@index([domainProductId])
 }
 
 /// Public knowledge base categories (Kennisbank)

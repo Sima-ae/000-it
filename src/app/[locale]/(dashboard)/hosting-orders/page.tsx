@@ -111,6 +111,7 @@ function statusClass(status: Order["status"]) {
 
 export default function OrdersAdminPage() {
   const t = useTranslations("ordersAdmin");
+  const tDash = useTranslations("dashboard");
   const locale = useLocale();
   const { data: session } = useSession();
   const qc = useQueryClient();
@@ -127,9 +128,9 @@ export default function OrdersAdminPage() {
   const [deleteOrder, setDeleteOrder] = useState<Order | null>(null);
 
   const { data: orders = [], isLoading } = useQuery({
-    queryKey: ["shop-orders"],
+    queryKey: ["hosting-orders"],
     queryFn: async () => {
-      const res = await fetch("/api/shop/orders?lineOfBusiness=SERVICE");
+      const res = await fetch("/api/shop/orders?lineOfBusiness=HOSTING");
       if (!res.ok) throw new Error("Failed");
       return (await res.json()) as Order[];
     },
@@ -137,10 +138,10 @@ export default function OrdersAdminPage() {
   });
 
   const { data: products = [] } = useQuery({
-    queryKey: ["shop-admin-products-for-orders"],
+    queryKey: ["hosting-admin-products-for-orders"],
     enabled: canEdit,
     queryFn: async () => {
-      const res = await fetch("/api/shop/products?all=1&lineOfBusiness=SERVICE");
+      const res = await fetch("/api/shop/products?all=1&lineOfBusiness=HOSTING");
       if (!res.ok) return [] as CatalogProduct[];
       return (await res.json()) as CatalogProduct[];
     },
@@ -278,7 +279,7 @@ export default function OrdersAdminPage() {
       company: form.company.trim() || null,
       locale: form.locale,
       status: form.status,
-      lineOfBusiness: "SERVICE" as const,
+      lineOfBusiness: "HOSTING" as const,
       items,
     };
   }
@@ -307,7 +308,7 @@ export default function OrdersAdminPage() {
       toast.success(isEdit ? t("updated") : t("created"));
       setDialog(null);
       setActive(null);
-      void qc.invalidateQueries({ queryKey: ["shop-orders"] });
+      void qc.invalidateQueries({ queryKey: ["hosting-orders"] });
       void qc.invalidateQueries({ queryKey: ["dashboard-nav-badges"] });
     } catch (e) {
       toast.error(e instanceof Error ? e.message : t("saveFailed"));
@@ -326,7 +327,7 @@ export default function OrdersAdminPage() {
       if (!res.ok) throw new Error("Failed");
       toast.success(t("deleted"));
       setDeleteOrder(null);
-      void qc.invalidateQueries({ queryKey: ["shop-orders"] });
+      void qc.invalidateQueries({ queryKey: ["hosting-orders"] });
       void qc.invalidateQueries({ queryKey: ["dashboard-nav-badges"] });
     } catch {
       toast.error(t("deleteFailed"));
@@ -348,7 +349,7 @@ export default function OrdersAdminPage() {
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
           <h1 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
-            {t("title")}
+            {tDash("hostingOrders")}
           </h1>
           <p className="mt-1 max-w-2xl text-sm text-muted-foreground">
             {t("subtitle")}

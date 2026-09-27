@@ -285,7 +285,8 @@
     "successBody": "Your payment was received. You will get a confirmation email from Stripe.",
     "orderNumber": "Order number",
     "confirmationEmail": "Confirmation to",
-    "backHome": "Back home"
+    "backHome": "Back home",
+    "mixedCart": "Hosting and services cannot be checked out together. Remove one and complete them separately."
   },
   "footer": {
     "tagline": "We offer services and products for entrepreneurs and freelancers, from advertising, AI integration, AEO, GEO and SEO, print, email marketing, graphic design, online marketing, maintenance, optimisation, social media management, web design and WordPress support to web hosting and domain names.",
@@ -330,7 +331,7 @@
     "newsTrash": "Trash",
     "caseStudies": "Case Studies",
     "leads": "Leads",
-    "shop": "Shop",
+    "shop": "Services shop",
     "tickets": "Tickets",
     "todos": "To-Do List",
     "users": "Users",
@@ -474,7 +475,11 @@
     "roleADMIN": "Admin",
     "roleMANAGER": "Manager",
     "roleCLIENT": "Client",
-    "orders": "Orders"
+    "orders": "Service orders",
+    "hostingAdmin": "Hosting",
+    "hostingOrders": "Hosting orders",
+    "domainsAdmin": "Domains",
+    "domainOrders": "Domain orders"
   },
   "contact": {
     "title": "Contact",
@@ -1190,8 +1195,8 @@
     }
   },
   "ordersAdmin": {
-    "title": "Orders",
-    "subtitle": "Track shop checkouts, update status, and manage order details.",
+    "title": "Service orders",
+    "subtitle": "Track service checkouts, update status, and manage order details. Hosting is under Hosting orders.",
     "addOrder": "Add order",
     "search": "Search order number, customer, product…",
     "allStatuses": "All statuses",
@@ -1263,5 +1268,45 @@
     "sectionKennisbank": "Knowledge base",
     "sectionNews": "News",
     "sectionFaq": "FAQ"
+  },
+  "domainsPage": {
+    "metaTitle": "Register domains",
+    "metaDescription": "Check availability, pay securely and register your domain with TripleZero iT.",
+    "heroTitle": "Find and register your domain name",
+    "heroSubtitle": "Live availability checks, clear VAT-inclusive pricing, secure iDEAL or card payment — registration via our Namecheap integration.",
+    "placeholder": "Enter a name (e.g. company or company.com)",
+    "search": "Check",
+    "searching": "Checking…",
+    "invalidFormat": "Enter a valid name or domain.",
+    "available": "Available",
+    "unavailable": "Unavailable",
+    "order": "Register",
+    "processing": "Redirecting…",
+    "pay": "Pay and register",
+    "checkFailed": "Check failed. Please try again later.",
+    "checkoutFailed": "Checkout failed. Please verify your details.",
+    "registrantTitle": "Registration details",
+    "registrantSubtitle": "WHOIS contact for {domain}",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone (+31…)",
+    "address": "Address",
+    "city": "City",
+    "postalCode": "Postal code",
+    "country": "Country (NL)",
+    "organization": "Organization (optional)",
+    "successBanner": "Payment received{order}. We complete registration automatically.",
+    "canceledBanner": "Payment canceled. You can search and order again.",
+    "step1Title": "Search",
+    "step1Body": "Pick a name and extensions. We show live availability and sell price.",
+    "step2Title": "Pay",
+    "step2Body": "Secure checkout via Stripe (iDEAL, card and more). Prices include 21% VAT.",
+    "step3Title": "Register",
+    "step3Body": "After payment we register the domain automatically. Support steps in if something fails.",
+    "dnsTitle": "DNS, email and hosting",
+    "dnsBody": "After registration you can point DNS to TripleZero hosting or keep it elsewhere. Need help? Book a call.",
+    "ctaBook": "Book appointment",
+    "ctaContact": "Contact"
   }
 }

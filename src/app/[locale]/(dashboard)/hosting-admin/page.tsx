@@ -85,9 +85,9 @@ export default function ShopAdminPage() {
   const [editing, setEditing] = useState<ShopAdminFormValues | null>(null);
 
   const { data: items = [], isLoading } = useQuery({
-    queryKey: ["shop-admin"],
+    queryKey: ["hosting-admin"],
     queryFn: async () => {
-      const res = await fetch("/api/shop/products?all=1&lineOfBusiness=SERVICE");
+      const res = await fetch("/api/shop/products?all=1&lineOfBusiness=HOSTING");
       if (!res.ok) throw new Error("Failed to load");
       return (await res.json()) as Item[];
     },
@@ -141,23 +141,23 @@ export default function ShopAdminPage() {
   }
 
   async function remove(id: string) {
-    if (!confirm("Delete this shop product? This cannot be undone.")) return;
+    if (!confirm("Delete this hosting package? This cannot be undone.")) return;
     const res = await fetch(`/api/shop/products/${id}`, { method: "DELETE" });
     if (!res.ok) {
       toast.error("Delete failed (super admin only)");
       return;
     }
     toast.success("Deleted");
-    void qc.invalidateQueries({ queryKey: ["shop-admin"] });
+    void qc.invalidateQueries({ queryKey: ["hosting-admin"] });
   }
 
   return (
     <div className="space-y-6">
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
-          <h1 className="text-3xl font-semibold">{t("shop")}</h1>
+          <h1 className="text-3xl font-semibold">{t("hostingAdmin")}</h1>
           <p className="text-sm text-muted-foreground">
-            Manage products and services shown in the public shop. Delete is
+            Manage hosting packages (shared, WordPress, VPS). Separate from services shop. Delete is
             reserved for the super admin.
           </p>
         </div>
@@ -167,7 +167,7 @@ export default function ShopAdminPage() {
               View public shop
             </Link>
           </Button>
-          <Button onClick={startCreate}>Add product</Button>
+          <Button onClick={startCreate}>Add package</Button>
         </div>
       </div>
 
@@ -179,7 +179,7 @@ export default function ShopAdminPage() {
           {isLoading && <p className="text-muted-foreground">Loading…</p>}
           {!isLoading && !items.length && (
             <p className="text-muted-foreground">
-              No catalog products in the database yet. Run{" "}
+              No hosting packages in the database yet. Run{" "}
               <code className="rounded bg-muted px-1">npm run shop:seed</code>{" "}
               or add one manually.
             </p>
@@ -248,7 +248,7 @@ export default function ShopAdminPage() {
         <DialogContent className="w-[min(96vw,56rem)] gap-0 p-0">
           <DialogHeader className="shrink-0 border-b border-border/60 bg-muted/20 px-5 py-4 pr-14 md:px-6">
             <DialogTitle className="text-xl md:text-2xl">
-              {isEdit ? "Edit product / service" : "Add product / service"}
+              {isEdit ? "Edit hosting package" : "Add hosting package"}
             </DialogTitle>
             <DialogDescription className="text-sm">
               Titles, copy, pricing, media and catalog settings — structured for a clear shop entry.
@@ -258,11 +258,11 @@ export default function ShopAdminPage() {
             <ShopAdminForm
               key={initialEdit?.id || "new"}
               initial={initialEdit || undefined}
-              lineOfBusiness="SERVICE"
+              lineOfBusiness="HOSTING"
               onCancel={() => setOpen(false)}
               onSaved={() => {
                 setOpen(false);
-                void qc.invalidateQueries({ queryKey: ["shop-admin"] });
+                void qc.invalidateQueries({ queryKey: ["hosting-admin"] });
               }}
             />
           </div>
