@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { Search } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -44,9 +45,11 @@ export default function DomainsAdminPage() {
   const [adding, setAdding] = useState(false);
   const [newTld, setNewTld] = useState("");
   const [newBuy, setNewBuy] = useState("10");
+  const [newRenew, setNewRenew] = useState("10");
   const [newFixed, setNewFixed] = useState("0");
   const [newPercent, setNewPercent] = useState("20");
   const [drafts, setDrafts] = useState<Record<string, Draft>>({});
+  const [tldSearch, setTldSearch] = useState("");
 
   const { data: products = [], isLoading } = useQuery({
     queryKey: ["domains-admin-products"],
@@ -107,15 +110,21 @@ export default function DomainsAdminPage() {
     }
     setAdding(true);
     try {
+      const buyCents = Math.max(
+        1,
+        Math.round(Number(newBuy.replace(",", ".")) * 100),
+      );
+      const renewRaw = newRenew.trim().replace(",", ".");
+      const renewCents = renewRaw
+        ? Math.max(0, Math.round(Number(renewRaw) * 100) || 0)
+        : buyCents;
       const res = await fetch("/api/domains/admin/products", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           tld,
-          basePriceInCents: Math.max(
-            1,
-            Math.round(Number(newBuy.replace(",", ".")) * 100),
-          ),
+          basePriceInCents: buyCents,
+          renewBasePriceInCents: renewCents,
           markupFixedCents: Math.max(
             0,
             Math.round(Number(newFixed.replace(",", ".")) * 100),
@@ -138,6 +147,29 @@ export default function DomainsAdminPage() {
     }
   }
 
+  const query = tldSearch.trim().toLowerCase().replace(/^\.+/, "");
+  const visibleProducts = !query
+    ? products
+    : products
+        .filter((p) => {
+          const value = p.tld.toLowerCase();
+          return (
+            value === query ||
+            value.startsWith(query) ||
+            value.includes(`.${query}`)
+          );
+        })
+        .sort((a, b) => {
+          const rank = (tld: string) => {
+            const value = tld.toLowerCase();
+            if (value === query) return 0;
+            if (value.startsWith(query)) return 1;
+            return 2;
+          };
+          const diff = rank(a.tld) - rank(b.tld);
+          return diff !== 0 ? diff : a.tld.localeCompare(b.tld);
+        });
+
   async function syncPrices() {
     setSyncing(true);
     try {
@@ -159,35 +191,37 @@ export default function DomainsAdminPage() {
   }
 
   return (
-    <div className="space-y-6 p-6 md:p-8">
-      <div className="flex flex-wrap items-end justify-between gap-4">
-        <div>
-          <h1 className="font-display text-2xl font-semibold tracking-tight">
-            Domains catalog
-          </h1>
-          <p className="mt-1 text-sm text-muted-foreground">
-            Namecheap buy prices sync nightly. Set markups for the public sell
-            price (incl. VAT). Fixed € is a flat markup; % is of the buy price.
-            Offer € overrides the sell price when set (leave empty for no offer).
-          </p>
-        </div>
-        <Button onClick={() => void syncPrices()} disabled={syncing}>
-          {syncing ? "Syncing…" : "Sync prices now"}
-        </Button>
+    <div className="space-y-4">
+      <div>
+        <h1 className="font-display text-xl font-semibold tracking-tight">
+          Domains catalog
+        </h1>
+        <p className="mt-0.5 text-xs text-muted-foreground">
+          Namecheap buy prices sync nightly. Set markups for the public sell
+          price (incl. VAT). Fixed € is a flat markup; % is of the buy price.
+          Offer € overrides the sell price when set (leave empty for no offer).
+        </p>
       </div>
 
       <Card>
-        <CardHeader>
-          <CardTitle className="text-base">Add TLD</CardTitle>
+        <CardHeader className="flex-row items-center justify-between gap-3 px-4 py-2">
+          <CardTitle className="text-sm">Add TLD</CardTitle>
+          <Button
+            size="sm"
+            onClick={() => void syncPrices()}
+            disabled={syncing}
+          >
+            {syncing ? "Syncing…" : "Sync prices now"}
+          </Button>
         </CardHeader>
-        <CardContent>
-          <div className="flex flex-wrap items-end gap-3">
+        <CardContent className="px-4 pb-3 pt-0">
+          <div className="flex flex-wrap items-end gap-2">
             <div>
               <label className="mb-1 block text-xs text-muted-foreground">
                 TLD
               </label>
               <Input
-                className="h-9 w-28"
+                className="h-8 w-24"
                 placeholder="shop"
                 value={newTld}
                 onChange={(e) => setNewTld(e.target.value)}
@@ -198,9 +232,20 @@ export default function DomainsAdminPage() {
                 Buy €
               </label>
               <Input
-                className="h-9 w-24"
+                className="h-8 w-20"
                 value={newBuy}
                 onChange={(e) => setNewBuy(e.target.value)}
+              />
+            </div>
+            <div>
+              <label className="mb-1 block text-xs text-muted-foreground">
+                Renew buy €
+              </label>
+              <Input
+                className="h-8 w-24"
+                value={newRenew}
+                onChange={(e) => setNewRenew(e.target.value)}
+                placeholder="same as buy"
               />
             </div>
             <div>
@@ -208,7 +253,7 @@ export default function DomainsAdminPage() {
                 Fixed €
               </label>
               <Input
-                className="h-9 w-24"
+                className="h-8 w-20"
                 value={newFixed}
                 onChange={(e) => setNewFixed(e.target.value)}
               />
@@ -218,27 +263,60 @@ export default function DomainsAdminPage() {
                 %
               </label>
               <Input
-                className="h-9 w-20"
+                className="h-8 w-16"
                 value={newPercent}
                 onChange={(e) => setNewPercent(e.target.value)}
               />
             </div>
-            <Button onClick={() => void addTld()} disabled={adding}>
+            <Button
+              size="sm"
+              className="h-8"
+              onClick={() => void addTld()}
+              disabled={adding}
+            >
               {adding ? "Adding…" : "Add TLD"}
             </Button>
           </div>
-          <p className="mt-2 text-xs text-muted-foreground">
-            After adding, run Sync to refresh the buy price from Namecheap when
-            that TLD is in their pricing feed. New TLDs default to 0 fixed + 20%.
+          <p className="mt-1.5 text-xs text-muted-foreground">
+            Use Buy € and Renew buy € for manual TLDs (e.g. another registrar
+            when Namecheap does not offer it). Leave Renew empty to copy Buy.
+            For Namecheap TLDs, run Sync to refresh prices from their feed. New
+            TLDs default to 0 fixed + 20%.
           </p>
         </CardContent>
       </Card>
 
       <Card>
-        <CardHeader>
-          <CardTitle className="text-base">TLD margins</CardTitle>
+        <CardHeader className="flex-row items-center justify-between gap-3 px-4 py-2">
+          <div className="min-w-0">
+            <CardTitle className="text-sm">TLD margins</CardTitle>
+            {!isLoading ? (
+              <p className="mt-0.5 text-xs text-muted-foreground">
+                {query
+                  ? `${visibleProducts.length} of ${products.length}`
+                  : `${products.length} TLDs`}
+              </p>
+            ) : null}
+          </div>
+          <div className="relative w-full max-w-xs">
+            <Search className="pointer-events-none absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
+            <Input
+              type="search"
+              value={tldSearch}
+              onChange={(e) => setTldSearch(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") e.preventDefault();
+              }}
+              placeholder="Search TLD, e.g. .nl"
+              className="h-8 pl-8"
+              aria-label="Search TLDs"
+              autoComplete="off"
+              autoCorrect="off"
+              spellCheck={false}
+            />
+          </div>
         </CardHeader>
-        <CardContent className="overflow-x-auto">
+        <CardContent className="overflow-x-auto px-4 pb-3 pt-0">
           {isLoading ? (
             <p className="text-sm text-muted-foreground">Loading…</p>
           ) : (
@@ -258,7 +336,17 @@ export default function DomainsAdminPage() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-border">
-                {products.map((p) => {
+                {visibleProducts.length === 0 ? (
+                  <tr>
+                    <td
+                      colSpan={10}
+                      className="py-6 text-center text-sm text-muted-foreground"
+                    >
+                      No TLDs match “{tldSearch.trim()}”
+                    </td>
+                  </tr>
+                ) : null}
+                {visibleProducts.map((p) => {
                   const d = draftFor(p);
                   const draftOfferCents = parseOfferCents(d.offer);
                   const onOffer =
@@ -267,17 +355,17 @@ export default function DomainsAdminPage() {
                     draftOfferCents < p.sellPriceInCents;
                   return (
                     <tr key={p.id}>
-                      <td className="py-3 pr-3 font-semibold">.{p.tld}</td>
-                      <td className="py-3 pr-3 text-muted-foreground">
+                      <td className="py-2 pr-3 font-semibold">.{p.tld}</td>
+                      <td className="py-2 pr-3 text-muted-foreground">
                         €{centsToEurosNumber(p.basePriceInCents).toFixed(2)}
                       </td>
-                      <td className="py-3 pr-3 text-muted-foreground">
+                      <td className="py-2 pr-3 text-muted-foreground">
                         €
                         {centsToEurosNumber(p.renewBasePriceInCents || 0).toFixed(
                           2,
                         )}
                       </td>
-                      <td className="py-3 pr-3">
+                      <td className="py-2 pr-3">
                         <Input
                           className="h-8 w-20"
                           value={d.fixed}
@@ -289,7 +377,7 @@ export default function DomainsAdminPage() {
                           }
                         />
                       </td>
-                      <td className="py-3 pr-3">
+                      <td className="py-2 pr-3">
                         <Input
                           className="h-8 w-20"
                           value={d.percent}
@@ -301,7 +389,7 @@ export default function DomainsAdminPage() {
                           }
                         />
                       </td>
-                      <td className="py-3 pr-3">
+                      <td className="py-2 pr-3">
                         {onOffer ? (
                           <span className="inline-flex flex-wrap items-baseline gap-x-2">
                             <span className="text-muted-foreground line-through decoration-2">
@@ -318,7 +406,7 @@ export default function DomainsAdminPage() {
                           </span>
                         )}
                       </td>
-                      <td className="py-3 pr-3">
+                      <td className="py-2 pr-3">
                         <Input
                           className="h-8 w-24"
                           placeholder="—"
@@ -331,13 +419,13 @@ export default function DomainsAdminPage() {
                           }
                         />
                       </td>
-                      <td className="py-3 pr-3 text-muted-foreground">
+                      <td className="py-2 pr-3 text-muted-foreground">
                         €
                         {centsToEurosNumber(p.renewSellPriceInCents || 0).toFixed(
                           2,
                         )}
                       </td>
-                      <td className="py-3 pr-3">
+                      <td className="py-2 pr-3">
                         <button
                           type="button"
                           className="text-xs underline"
@@ -353,7 +441,7 @@ export default function DomainsAdminPage() {
                           </Badge>
                         </button>
                       </td>
-                      <td className="py-3 text-right">
+                      <td className="py-2 text-right">
                         <Button size="sm" onClick={() => void saveTld(p.tld)}>
                           Save
                         </Button>

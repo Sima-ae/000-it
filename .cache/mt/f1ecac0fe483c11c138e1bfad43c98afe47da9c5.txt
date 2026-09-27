@@ -1,0 +1,1 @@
+Cavab yadda saxlandı. Müştəriyə e-poçt göndərmək üçün SMTP-ni konfiqurasiya edin.

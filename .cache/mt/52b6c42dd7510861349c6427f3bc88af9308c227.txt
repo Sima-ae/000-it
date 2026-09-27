@@ -1,0 +1,1 @@
+Aggiungi un record DS (tag chiave, algoritmo, digest).

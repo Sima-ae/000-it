@@ -1,0 +1,1 @@
+Kérje meg jelenlegi regisztrátorát, hogy oldja fel a domain zárolását, és küldje el az auth/EPP (átviteli) kódot. A folytatáshoz illessze be alább.

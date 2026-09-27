@@ -1,0 +1,1 @@
+Helyezzen át egy meglévő domaint a TripleZero iT-be. Szüksége van a jelenlegi regisztrátorától származó hitelesítési/EPP kódra.

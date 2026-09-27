@@ -1,0 +1,1 @@
+Pídale a su registrador actual que desbloquee el dominio y le envíe el código de autenticación/EPP (transferencia). Pégalo a continuación para continuar.

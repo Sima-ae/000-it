@@ -13,6 +13,7 @@ type DomainOrder = {
   orderNumber: string;
   domainName: string;
   years: number;
+  orderType?: "REGISTRATION" | "RENEWAL" | "TRANSFER";
   status: "PENDING" | "PAID" | "REGISTERED" | "FAILED";
   totalPriceInCents: number;
   email: string;
@@ -23,17 +24,21 @@ type DomainOrder = {
 };
 
 const STATUSES = ["ALL", "PENDING", "PAID", "REGISTERED", "FAILED"] as const;
+const TYPES = ["ALL", "REGISTRATION", "RENEWAL", "TRANSFER"] as const;
 
 export default function DomainOrdersPage() {
   const qc = useQueryClient();
   const [status, setStatus] = useState<(typeof STATUSES)[number]>("ALL");
+  const [orderType, setOrderType] = useState<(typeof TYPES)[number]>("ALL");
   const [openId, setOpenId] = useState<string | null>(null);
 
   const { data: orders = [], isLoading } = useQuery({
-    queryKey: ["domain-orders", status],
+    queryKey: ["domain-orders", status, orderType],
     queryFn: async () => {
-      const qs =
-        status === "ALL" ? "" : `?status=${encodeURIComponent(status)}`;
+      const params = new URLSearchParams();
+      if (status !== "ALL") params.set("status", status);
+      if (orderType !== "ALL") params.set("orderType", orderType);
+      const qs = params.toString() ? `?${params}` : "";
       const res = await fetch(`/api/domains/admin/orders${qs}`);
       if (!res.ok) throw new Error("Failed to load domain orders");
       return (await res.json()) as DomainOrder[];
@@ -80,6 +85,18 @@ export default function DomainOrdersPage() {
           </Button>
         ))}
       </div>
+      <div className="flex flex-wrap gap-2">
+        {TYPES.map((s) => (
+          <Button
+            key={s}
+            size="sm"
+            variant={orderType === s ? "default" : "outline"}
+            onClick={() => setOrderType(s)}
+          >
+            {s}
+          </Button>
+        ))}
+      </div>
 
       <Card>
         <CardHeader>
@@ -95,6 +112,7 @@ export default function DomainOrdersPage() {
               <thead className="border-b border-border text-muted-foreground">
                 <tr>
                   <th className="py-2 pr-3">Order</th>
+                  <th className="py-2 pr-3">Type</th>
                   <th className="py-2 pr-3">Domain</th>
                   <th className="py-2 pr-3">Customer</th>
                   <th className="py-2 pr-3">Total</th>
@@ -107,6 +125,9 @@ export default function DomainOrdersPage() {
                   <tr key={o.id}>
                     <td className="py-3 pr-3 font-mono text-xs">
                       {o.orderNumber}
+                    </td>
+                    <td className="py-3 pr-3 text-xs">
+                      {o.orderType || "REGISTRATION"}
                     </td>
                     <td className="py-3 pr-3 font-medium">{o.domainName}</td>
                     <td className="py-3 pr-3 text-muted-foreground">{o.email}</td>

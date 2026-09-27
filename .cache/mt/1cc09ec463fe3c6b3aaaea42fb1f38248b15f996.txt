@@ -1,0 +1,1 @@
+Požádejte svého současného registrátora, aby odblokoval doménu a poslal vám auth/EPP (převodový) kód. Chcete-li pokračovat, vložte jej níže.

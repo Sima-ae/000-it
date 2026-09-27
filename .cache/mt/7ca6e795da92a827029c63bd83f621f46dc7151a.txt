@@ -1,0 +1,1 @@
+Povolit vyskakovací okna pro uložení faktury jako PDF.

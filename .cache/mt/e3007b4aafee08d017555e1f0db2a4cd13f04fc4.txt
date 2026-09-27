@@ -1,0 +1,1 @@
+Flytt et eksisterende domene til TripleZero iT. Du trenger auth/EPP-koden fra din nåværende registrar.

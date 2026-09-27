@@ -5,6 +5,7 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 const nextConfig: NextConfig = {
   output: "standalone",
+  serverExternalPackages: ["pdfkit"],
   // Keep soft-navigated pages in the client router cache longer (Next 15)
   experimental: {
     staleTimes: {

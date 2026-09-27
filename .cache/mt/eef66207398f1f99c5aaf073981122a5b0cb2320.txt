@@ -1,0 +1,1 @@
+Indtast en gyldig godkendelses-/EPP-kode (mindst 4 tegn).

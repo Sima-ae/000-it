@@ -1,11 +1,18 @@
 import nodemailer from "nodemailer";
 
+export type SendMailAttachment = {
+  filename: string;
+  content: Buffer | string;
+  contentType?: string;
+};
+
 export type SendMailInput = {
   to: string;
   subject: string;
   text: string;
   html?: string;
   replyTo?: string;
+  attachments?: SendMailAttachment[];
 };
 
 function mailConfig() {
@@ -53,5 +60,10 @@ export async function sendMail(input: SendMailInput) {
     text: input.text,
     html: input.html || input.text.replace(/\n/g, "<br/>"),
     replyTo: input.replyTo,
+    attachments: input.attachments?.map((a) => ({
+      filename: a.filename,
+      content: a.content,
+      contentType: a.contentType,
+    })),
   });
 }

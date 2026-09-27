@@ -1,0 +1,1 @@
+Geçerli bir kimlik doğrulama / EPP kodu girin (en az 4 karakter).

@@ -1,5 +1,6 @@
 "use client";
 
+import { getCompanyProfile } from "@/lib/company";
 import {
   formatInvoiceMoney,
   type InvoiceLineItem,
@@ -53,6 +54,7 @@ function escapeHtml(value: string) {
 
 export function openInvoicePdf(invoice: InvoiceDocument, locale = "nl") {
   const loc = locale === "nl" ? "nl-NL" : "en-NL";
+  const company = getCompanyProfile();
   const items = Array.isArray(invoice.items) ? invoice.items : [];
   const clientLines = [
     invoice.client.company || invoice.client.name,
@@ -62,6 +64,17 @@ export function openInvoicePdf(invoice: InvoiceDocument, locale = "nl") {
     invoice.client.email,
     invoice.client.phone,
     invoice.client.vatNumber ? `BTW: ${invoice.client.vatNumber}` : null,
+  ].filter(Boolean) as string[];
+
+  const sellerLines = [
+    company.legalName,
+    ...company.addressLines,
+    company.email,
+    company.website,
+    company.vatNumber ? `${company.vatLabel}: ${company.vatNumber}` : null,
+    company.registrationNumber
+      ? `${company.registrationLabel}: ${company.registrationNumber}`
+      : null,
   ].filter(Boolean) as string[];
 
   const rows = items
@@ -105,9 +118,9 @@ export function openInvoicePdf(invoice: InvoiceDocument, locale = "nl") {
 <body>
   <div style="display:flex;justify-content:space-between;gap:24px;align-items:flex-start;">
     <div>
-      <div class="muted">TripleZero iT</div>
+      <div class="muted">${escapeHtml(company.tradeName)}</div>
       <h1>Factuur ${escapeHtml(invoice.number)}</h1>
-      <div class="muted" style="margin-top:8px;">info@000-it.com · https://000-it.com</div>
+      <div class="muted" style="margin-top:8px;">${escapeHtml(company.email)} · ${escapeHtml(company.website)}</div>
     </div>
     <div style="text-align:right;">
       <div><strong>Status:</strong> ${escapeHtml(invoice.status)}</div>
@@ -121,9 +134,7 @@ export function openInvoicePdf(invoice: InvoiceDocument, locale = "nl") {
   <div class="grid">
     <div class="box">
       <div class="label">Van</div>
-      <div><strong>TripleZero iT</strong></div>
-      <div class="muted">AI, AEO, GEO, SEO, marketing & software</div>
-      <div class="muted">info@000-it.com</div>
+      ${sellerLines.map((line) => `<div>${escapeHtml(line)}</div>`).join("")}
     </div>
     <div class="box">
       <div class="label">Factuur aan</div>

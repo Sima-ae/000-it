@@ -1,0 +1,1 @@
+Mevcut kayıt operatörünüzden alan adının kilidini açmasını ve size kimlik doğrulama/EPP (aktarım) kodunu göndermesini isteyin. Devam etmek için aşağıya yapıştırın.

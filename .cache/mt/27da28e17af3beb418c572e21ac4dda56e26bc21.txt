@@ -1,0 +1,1 @@
+{total} ədəddən {count} göstərilir

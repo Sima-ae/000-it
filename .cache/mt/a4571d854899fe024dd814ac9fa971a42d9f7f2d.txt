@@ -1,0 +1,1 @@
+Kezelheti a DNS-t, a névszervereket, a megújításokat, az adatvédelmet, a zárolást és a domainek átvitelét.

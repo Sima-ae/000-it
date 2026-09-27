@@ -1,0 +1,1 @@
+Detalji o klijentu, status i stavke sa cijenama sa PDV-om.

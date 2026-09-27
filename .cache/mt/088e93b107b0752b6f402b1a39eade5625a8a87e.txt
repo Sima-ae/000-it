@@ -1,0 +1,1 @@
+Futni një kod të vlefshëm auth / EPP (të paktën 4 karaktere).

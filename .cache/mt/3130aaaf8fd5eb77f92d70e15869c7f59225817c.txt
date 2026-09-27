@@ -1,0 +1,1 @@
+Trajno izbrisati {number}? Ovo se ne može poništiti.

@@ -1,0 +1,1 @@
+Ange en giltig autentiserings-/EPP-kod (minst 4 tecken).

@@ -1,0 +1,1 @@
+Vaše odpověď na {key} se okamžitě objeví ve vyskakovacím okně živého chatu návštěvníka.

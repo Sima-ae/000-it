@@ -1,0 +1,1 @@
+Sposta un dominio esistente su TripleZero iT. Hai bisogno del codice di autenticazione/EPP del tuo attuale registrar.

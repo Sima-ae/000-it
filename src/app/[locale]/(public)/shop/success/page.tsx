@@ -1,6 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { SuccessClient } from "@/components/shop/SuccessClient";
-import { prisma } from "@/lib/prisma";
+import { ensurePaidCheckoutAndInvoice } from "@/lib/shop/order-invoice";
 
 export const dynamic = "force-dynamic";
 
@@ -17,17 +17,24 @@ export default async function ShopSuccessPage({
 
   let orderNumber: string | null = null;
   let email: string | null = null;
+  let invoiceSent = false;
 
   if (sessionId) {
-    const order = await prisma.shopOrder.findFirst({
-      where: { stripeSessionId: sessionId },
-      select: { orderNumber: true, email: true, status: true },
-    });
-    if (order) {
-      orderNumber = order.orderNumber;
-      email = order.email;
+    try {
+      const result = await ensurePaidCheckoutAndInvoice(sessionId);
+      orderNumber = result.orderNumber || null;
+      email = result.email || null;
+      invoiceSent = result.sent || result.reason === "ALREADY_SENT";
+    } catch (error) {
+      console.error("[shop/success] invoice", error);
     }
   }
 
-  return <SuccessClient orderNumber={orderNumber} email={email} />;
+  return (
+    <SuccessClient
+      orderNumber={orderNumber}
+      email={email}
+      invoiceSent={invoiceSent || undefined}
+    />
+  );
 }

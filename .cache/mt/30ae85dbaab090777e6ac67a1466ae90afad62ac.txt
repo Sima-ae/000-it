@@ -1,0 +1,1 @@
+Odgovorite na {key}. E-pošta će biti poslana na {email}.

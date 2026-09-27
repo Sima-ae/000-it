@@ -1,0 +1,1 @@
+Mova um domínio existente para TripleZero iT. Você precisa do código de autenticação/EPP do seu registrador atual.

@@ -26,6 +26,13 @@ const FORCE_PREFIXES = [
   "liveChat.emptyChat",
   "faqPage.browse",
   "faqPage.matched",
+  "myDomains.",
+  "domainsPage.transfer",
+  "domainsPage.ctaMyDomains",
+  "domainsPage.dnsBody",
+  "pricing.hostingIncludedInPlan",
+  "pricing.plansServiceNote",
+  "dashboard.myDomains",
 ];
 
 const ACRONYM_KEYS = new Set([

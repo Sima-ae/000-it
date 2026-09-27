@@ -1,0 +1,1 @@
+Déplacez un domaine existant vers TripleZero iT. Vous avez besoin du code d'authentification/EPP de votre registraire actuel.

@@ -1,0 +1,1 @@
+Premjestiti {number} u smeće? Možete ga vratiti kasnije.

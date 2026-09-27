@@ -1,0 +1,1 @@
+Peşəkar hesab-fakturalar yaradın, PDF ixrac edin və ödəniş statusunu idarə edin.

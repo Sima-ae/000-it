@@ -1,0 +1,1 @@
+Zobrazeno {count} z {total}

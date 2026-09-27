@@ -1,0 +1,1 @@
+Dodaj rekord DS (tag klucza, algorytm, skrót).

@@ -9,8 +9,10 @@ import { useLocale, useTranslations } from "next-intl";
 import { useSession } from "next-auth/react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
+  ArrowLeftRight,
   ChevronDown,
   Globe2,
+  KeyRound,
   Lock,
   RotateCcw,
   Search,
@@ -90,7 +92,25 @@ const registrantSchema = z.object({
   organization: z.string().max(120).optional(),
 });
 
+const transferSchema = registrantSchema.extend({
+  authCode: z.string().min(4).max(128),
+});
+
 type RegistrantForm = z.infer<typeof registrantSchema>;
+type TransferForm = z.infer<typeof transferSchema>;
+
+const emptyRegistrant: RegistrantForm = {
+  firstName: "",
+  lastName: "",
+  email: "",
+  phone: "",
+  address1: "",
+  city: "",
+  stateProvince: "",
+  postalCode: "",
+  country: "NL",
+  organization: "",
+};
 
 function formatPrice(cents: number | null, locale: string) {
   if (cents == null || !Number.isFinite(cents)) return null;
@@ -162,6 +182,10 @@ export function DomainSearch() {
   const [preferredTld, setPreferredTld] = useState<string | null>(null);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [checkoutDomain, setCheckoutDomain] = useState<CheckResult | null>(
+    null,
+  );
+  const [checkoutYears, setCheckoutYears] = useState(1);
+  const [transferDomain, setTransferDomain] = useState<CheckResult | null>(
     null,
   );
   const [checkProgress, setCheckProgress] = useState<{
@@ -254,40 +278,45 @@ export function DomainSearch() {
 
   const registrantForm = useForm<RegistrantForm>({
     resolver: zodResolver(registrantSchema),
-    defaultValues: {
-      firstName: "",
-      lastName: "",
-      email: "",
-      phone: "",
-      address1: "",
-      city: "",
-      stateProvince: "",
-      postalCode: "",
-      country: "NL",
-      organization: "",
-    },
+    defaultValues: emptyRegistrant,
   });
 
-  useEffect(() => {
+  const transferForm = useForm<TransferForm>({
+    resolver: zodResolver(transferSchema),
+    defaultValues: { ...emptyRegistrant, authCode: "" },
+  });
+
+  function applySessionToRegistrant(
+    setValue: (name: keyof RegistrantForm, value: string) => void,
+    getValues: (name: keyof RegistrantForm) => string | undefined,
+  ) {
     if (!session?.user) return;
     const email = session.user.email?.trim();
-    if (email && !registrantForm.getValues("email")) {
-      registrantForm.setValue("email", email);
-    }
+    if (email && !getValues("email")) setValue("email", email);
     const name = session.user.name?.trim();
-    if (name && !registrantForm.getValues("firstName")) {
+    if (name && !getValues("firstName")) {
       const parts = name.split(/\s+/);
-      registrantForm.setValue("firstName", parts[0] || "");
-      if (parts.length > 1) {
-        registrantForm.setValue("lastName", parts.slice(1).join(" "));
-      }
+      setValue("firstName", parts[0] || "");
+      if (parts.length > 1) setValue("lastName", parts.slice(1).join(" "));
     }
-  }, [session, registrantForm]);
+  }
+
+  useEffect(() => {
+    applySessionToRegistrant(
+      (name, value) => registrantForm.setValue(name, value),
+      (name) => registrantForm.getValues(name),
+    );
+    applySessionToRegistrant(
+      (name, value) => transferForm.setValue(name, value),
+      (name) => transferForm.getValues(name),
+    );
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- sync once when session loads
+  }, [session]);
 
   const checkoutPriceLabel = useMemo(() => {
-    if (!checkoutDomain) return null;
-    return formatPrice(checkoutDomain.priceInCents, locale);
-  }, [checkoutDomain, locale]);
+    if (!checkoutDomain?.priceInCents) return null;
+    return formatPrice(checkoutDomain.priceInCents * checkoutYears, locale);
+  }, [checkoutDomain, checkoutYears, locale]);
 
   const checkoutListPriceLabel = useMemo(() => {
     if (
@@ -298,8 +327,20 @@ export function DomainSearch() {
     ) {
       return null;
     }
-    return formatPrice(checkoutDomain.listPriceInCents, locale);
-  }, [checkoutDomain, locale]);
+    return formatPrice(
+      checkoutDomain.listPriceInCents * checkoutYears,
+      locale,
+    );
+  }, [checkoutDomain, checkoutYears, locale]);
+
+  const transferPriceLabel = useMemo(() => {
+    if (!transferDomain) return null;
+    const cents =
+      transferDomain.renewPriceInCents && transferDomain.renewPriceInCents > 0
+        ? transferDomain.renewPriceInCents
+        : transferDomain.priceInCents;
+    return formatPrice(cents, locale);
+  }, [transferDomain, locale]);
 
   const [isSearching, setIsSearching] = useState(false);
   const [isSearchingMore, setIsSearchingMore] = useState(false);
@@ -412,6 +453,7 @@ export function DomainSearch() {
   const checkoutMutation = useMutation({
     mutationFn: async (input: {
       domain: string;
+      years: number;
       registrant: RegistrantForm;
     }) => {
       const res = await fetch("/api/domains/checkout", {
@@ -419,7 +461,7 @@ export function DomainSearch() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           domainName: input.domain,
-          years: 1,
+          years: input.years,
           locale,
           registrant: {
             ...input.registrant,
@@ -437,6 +479,53 @@ export function DomainSearch() {
     onError: (err) =>
       toast.error(err instanceof Error ? err.message : t("checkoutFailed")),
   });
+
+  const transferMutation = useMutation({
+    mutationFn: async (input: {
+      domain: string;
+      authCode: string;
+      registrant: RegistrantForm;
+    }) => {
+      const res = await fetch("/api/domains/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          domainName: input.domain,
+          years: 1,
+          locale,
+          orderType: "TRANSFER",
+          authCode: input.authCode,
+          registrant: {
+            ...input.registrant,
+            stateProvince: input.registrant.stateProvince || "NA",
+          },
+        }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || !data.url) {
+        throw new Error(data.error || t("checkoutFailed"));
+      }
+      return data as { url: string };
+    },
+    onSuccess: (data) => {
+      if (data.url) window.location.href = data.url;
+    },
+    onError: (err) =>
+      toast.error(err instanceof Error ? err.message : t("checkoutFailed")),
+  });
+
+  function openTransfer(row: CheckResult) {
+    const name = session?.user?.name?.trim() || "";
+    const parts = name.split(/\s+/).filter(Boolean);
+    transferForm.reset({
+      ...emptyRegistrant,
+      authCode: "",
+      email: session?.user?.email?.trim() || "",
+      firstName: parts[0] || "",
+      lastName: parts.slice(1).join(" "),
+    });
+    setTransferDomain(row);
+  }
 
   function tldsForTab(tab: CatalogTab): string[] {
     if (tab === "premium") return premiumTlds;
@@ -681,7 +770,7 @@ export function DomainSearch() {
                     <label className="flex cursor-pointer items-center gap-2 text-sm">
                       <input
                         type="checkbox"
-                        className="size-4 rounded border-border accent-[var(--accent)]"
+                        className="size-4 rounded border-border accent-accent"
                         checked={hideUnavailable}
                         onChange={(e) => setHideUnavailable(e.target.checked)}
                       />
@@ -690,7 +779,7 @@ export function DomainSearch() {
                     <label className="flex cursor-pointer items-center gap-2 text-sm">
                       <input
                         type="checkbox"
-                        className="size-4 rounded border-border accent-[var(--accent)]"
+                        className="size-4 rounded border-border accent-accent"
                         checked={availableFirst}
                         onChange={(e) => setAvailableFirst(e.target.checked)}
                       />
@@ -733,7 +822,7 @@ export function DomainSearch() {
 
               <div className="min-h-0">
                 <div className="mb-2 flex flex-wrap items-center gap-2">
-                  <div className="relative min-w-[12rem] flex-1">
+                  <div className="relative min-w-48 flex-1">
                     <Search className="pointer-events-none absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
                     <Input
                       value={tldQuery}
@@ -781,7 +870,7 @@ export function DomainSearch() {
                       <div key={catId}>
                         <button
                           type="button"
-                          className="flex w-full items-center justify-between rounded-lg px-2 py-1.5 text-left text-xs font-semibold uppercase tracking-[0.1em] text-muted-foreground hover:bg-muted/40"
+                          className="flex w-full items-center justify-between rounded-lg px-2 py-1.5 text-left text-xs font-semibold uppercase tracking-widest text-muted-foreground hover:bg-muted/40"
                           onClick={() =>
                             setOpenCategories((prev) => ({
                               ...prev,
@@ -990,19 +1079,29 @@ export function DomainSearch() {
                         {t("order")}
                       </Button>
                     ) : (
-                      <Button
-                        asChild
-                        variant="destructive"
-                        className="rounded-xl"
-                      >
-                        <a
-                          href={whoisLookupUrl(row.domain, row.tld)}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                      <div className="flex flex-wrap items-center gap-2">
+                        <Button
+                          type="button"
+                          className="rounded-xl bg-muted text-muted-foreground hover:bg-accent hover:text-accent-foreground"
+                          onClick={() => openTransfer(row)}
                         >
-                          {t("whois")}
-                        </a>
-                      </Button>
+                          <ArrowLeftRight className="h-3.5 w-3.5" />
+                          {t("transfer")}
+                        </Button>
+                        <Button
+                          asChild
+                          variant="destructive"
+                          className="rounded-xl"
+                        >
+                          <a
+                            href={whoisLookupUrl(row.domain, row.tld)}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {t("whois")}
+                          </a>
+                        </Button>
+                      </div>
                     )}
                   </div>
                 );
@@ -1047,7 +1146,10 @@ export function DomainSearch() {
       <Dialog
         open={Boolean(checkoutDomain)}
         onOpenChange={(open) => {
-          if (!open) setCheckoutDomain(null);
+          if (!open) {
+            setCheckoutDomain(null);
+            setCheckoutYears(1);
+          }
         }}
       >
         <DialogContent className="w-[min(96vw,36rem)] gap-0 overflow-hidden p-0">
@@ -1069,10 +1171,23 @@ export function DomainSearch() {
                   <p className="truncate font-semibold tracking-tight">
                     {checkoutDomain.domain}
                   </p>
-                  <p className="text-xs text-muted-foreground">
-                    .{checkoutDomain.tld} · 1{" "}
-                    {locale === "nl" ? "jaar" : "year"}
-                  </p>
+                  <div className="mt-1 flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
+                    <span>.{checkoutDomain.tld}</span>
+                    <select
+                      className="rounded-md border border-border bg-background px-2 py-1 text-xs"
+                      value={checkoutYears}
+                      onChange={(e) =>
+                        setCheckoutYears(Number(e.target.value) || 1)
+                      }
+                      aria-label={t("yearsLabel")}
+                    >
+                      {[1, 2, 3, 5, 10].map((y) => (
+                        <option key={y} value={y}>
+                          {y} {locale === "nl" ? "jaar" : "year(s)"}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
                 </div>
                 {checkoutPriceLabel ? (
                   <div className="text-right tabular-nums">
@@ -1101,6 +1216,7 @@ export function DomainSearch() {
               if (!checkoutDomain) return;
               checkoutMutation.mutate({
                 domain: checkoutDomain.domain,
+                years: checkoutYears,
                 registrant: values,
               });
             })}
@@ -1232,6 +1348,227 @@ export function DomainSearch() {
                   className="rounded-2xl px-6"
                 >
                   {checkoutMutation.isPending ? t("processing") : t("pay")}
+                </Button>
+              </div>
+            </DialogFooter>
+          </form>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog
+        open={Boolean(transferDomain)}
+        onOpenChange={(open) => {
+          if (!open) setTransferDomain(null);
+        }}
+      >
+        <DialogContent className="w-[min(96vw,36rem)] gap-0 overflow-hidden p-0">
+          <DialogHeader className="shrink-0 border-b border-border/60 bg-muted/20 px-5 py-4 pr-14 md:px-6">
+            <DialogTitle className="text-xl md:text-2xl">
+              {t("transferDialogTitle")}
+            </DialogTitle>
+            <DialogDescription className="text-sm">
+              {transferDomain
+                ? t("transferDialogSubtitle", { domain: transferDomain.domain })
+                : null}
+            </DialogDescription>
+            {transferDomain ? (
+              <div className="mt-3 flex flex-wrap items-center gap-3 rounded-2xl border border-border/60 bg-background/80 px-3.5 py-3">
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent/10 text-accent">
+                  <ArrowLeftRight className="h-5 w-5" />
+                </span>
+                <div className="min-w-0 flex-1">
+                  <p className="truncate font-semibold tracking-tight">
+                    {transferDomain.domain}
+                  </p>
+                  <p className="text-xs text-muted-foreground">
+                    .{transferDomain.tld} · {t("transfer")} · 1{" "}
+                    {locale === "nl" ? "jaar" : "year"}
+                  </p>
+                </div>
+                {transferPriceLabel ? (
+                  <div className="text-right tabular-nums">
+                    <p className="font-semibold text-accent text-base">
+                      {transferPriceLabel}
+                    </p>
+                  </div>
+                ) : null}
+              </div>
+            ) : null}
+          </DialogHeader>
+
+          <form
+            className="flex min-h-0 flex-1 flex-col"
+            onSubmit={transferForm.handleSubmit((values) => {
+              if (!transferDomain) return;
+              const { authCode, ...registrant } = values;
+              transferMutation.mutate({
+                domain: transferDomain.domain,
+                authCode,
+                registrant,
+              });
+            })}
+          >
+            <div className="min-h-0 flex-1 space-y-5 overflow-y-auto px-5 py-5 md:px-6">
+              <section className="space-y-3 rounded-2xl border border-accent/25 bg-accent/5 p-4">
+                <div className="flex items-start gap-3">
+                  <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-accent/15 text-accent">
+                    <KeyRound className="h-4 w-4" />
+                  </span>
+                  <div className="min-w-0 flex-1 space-y-1">
+                    <h3 className="text-sm font-semibold tracking-tight">
+                      {t("transferAuthCode")}
+                    </h3>
+                    <p className="text-xs leading-relaxed text-muted-foreground">
+                      {t("transferAuthHelp")}
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <Label htmlFor="transferAuthCode">{t("transferAuthCode")}</Label>
+                  <Input
+                    id="transferAuthCode"
+                    className="mt-1.5 h-11 rounded-xl font-mono tracking-wide"
+                    autoComplete="off"
+                    spellCheck={false}
+                    placeholder={t("transferAuthPlaceholder")}
+                    {...transferForm.register("authCode")}
+                  />
+                  {transferForm.formState.errors.authCode ? (
+                    <p className="mt-1 text-sm text-destructive">
+                      {t("transferAuthRequired")}
+                    </p>
+                  ) : null}
+                </div>
+                <p className="text-xs text-muted-foreground">{t("transferHint")}</p>
+              </section>
+
+              <section className="space-y-3">
+                <h3 className="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">
+                  {t("registrantContact")}
+                </h3>
+                <div className="grid gap-3 sm:grid-cols-2">
+                  <div>
+                    <Label htmlFor="transferFirstName">{t("firstName")}</Label>
+                    <Input
+                      id="transferFirstName"
+                      className="mt-1.5 h-11 rounded-xl"
+                      autoComplete="given-name"
+                      {...transferForm.register("firstName")}
+                    />
+                  </div>
+                  <div>
+                    <Label htmlFor="transferLastName">{t("lastName")}</Label>
+                    <Input
+                      id="transferLastName"
+                      className="mt-1.5 h-11 rounded-xl"
+                      autoComplete="family-name"
+                      {...transferForm.register("lastName")}
+                    />
+                  </div>
+                  <div>
+                    <Label htmlFor="transferEmail">{t("email")}</Label>
+                    <Input
+                      id="transferEmail"
+                      type="email"
+                      className="mt-1.5 h-11 rounded-xl"
+                      autoComplete="email"
+                      {...transferForm.register("email")}
+                    />
+                  </div>
+                  <div>
+                    <Label htmlFor="transferPhone">{t("phone")}</Label>
+                    <Input
+                      id="transferPhone"
+                      type="tel"
+                      className="mt-1.5 h-11 rounded-xl"
+                      autoComplete="tel"
+                      placeholder="+31…"
+                      {...transferForm.register("phone")}
+                    />
+                  </div>
+                  <div className="sm:col-span-2">
+                    <Label htmlFor="transferOrganization">
+                      {t("organization")}
+                    </Label>
+                    <Input
+                      id="transferOrganization"
+                      className="mt-1.5 h-11 rounded-xl"
+                      autoComplete="organization"
+                      {...transferForm.register("organization")}
+                    />
+                  </div>
+                </div>
+              </section>
+
+              <section className="space-y-3">
+                <h3 className="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">
+                  {t("registrantAddress")}
+                </h3>
+                <div className="grid gap-3 sm:grid-cols-2">
+                  <div className="sm:col-span-2">
+                    <Label htmlFor="transferAddress1">{t("address")}</Label>
+                    <Input
+                      id="transferAddress1"
+                      className="mt-1.5 h-11 rounded-xl"
+                      autoComplete="street-address"
+                      {...transferForm.register("address1")}
+                    />
+                  </div>
+                  <div>
+                    <Label htmlFor="transferPostalCode">{t("postalCode")}</Label>
+                    <Input
+                      id="transferPostalCode"
+                      className="mt-1.5 h-11 rounded-xl"
+                      autoComplete="postal-code"
+                      {...transferForm.register("postalCode")}
+                    />
+                  </div>
+                  <div>
+                    <Label htmlFor="transferCity">{t("city")}</Label>
+                    <Input
+                      id="transferCity"
+                      className="mt-1.5 h-11 rounded-xl"
+                      autoComplete="address-level2"
+                      {...transferForm.register("city")}
+                    />
+                  </div>
+                  <div className="sm:col-span-2">
+                    <Label htmlFor="transferCountry">{t("country")}</Label>
+                    <Input
+                      id="transferCountry"
+                      className="mt-1.5 h-11 rounded-xl uppercase"
+                      autoComplete="country"
+                      maxLength={2}
+                      {...transferForm.register("country")}
+                    />
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <DialogFooter className="shrink-0 gap-3 border-t border-border/60 bg-muted/10 px-5 py-4 md:px-6 sm:justify-between">
+              <p className="hidden items-center gap-1.5 text-xs text-muted-foreground sm:flex">
+                <Lock className="h-3.5 w-3.5" />
+                Stripe · iDEAL / card
+              </p>
+              <div className="flex w-full flex-col-reverse gap-2 sm:w-auto sm:flex-row">
+                <Button
+                  type="button"
+                  variant="outline"
+                  className="rounded-2xl"
+                  onClick={() => setTransferDomain(null)}
+                >
+                  {t("registrantCancel")}
+                </Button>
+                <Button
+                  type="submit"
+                  variant="accent"
+                  disabled={transferMutation.isPending}
+                  className="rounded-2xl px-6"
+                >
+                  {transferMutation.isPending
+                    ? t("processing")
+                    : t("transferPay")}
                 </Button>
               </div>
             </DialogFooter>

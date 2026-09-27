@@ -416,3 +416,611 @@ export async function createDomain(input: {
     ),
   };
 }
+
+function asArray<T>(raw: unknown): T[] {
+  if (Array.isArray(raw)) return raw as T[];
+  if (raw == null) return [];
+  return [raw as T];
+}
+
+function splitSldTld(domainName: string): { sld: string; tld: string } {
+  const parts = domainName.toLowerCase().trim().split(".");
+  if (parts.length < 2) return { sld: domainName, tld: "" };
+  return { sld: parts[0] || "", tld: parts.slice(1).join(".") };
+}
+
+export type NamecheapDomainInfo = {
+  domainName: string;
+  id?: string;
+  expires?: string;
+  isExpired?: boolean;
+  autoRenew?: boolean;
+  isLocked?: boolean;
+  whoisGuard?: boolean;
+};
+
+export async function listDomains(page = 1, pageSize = 100): Promise<{
+  ok: boolean;
+  domains: NamecheapDomainInfo[];
+  error?: string;
+  xml: string;
+}> {
+  if (!isNamecheapConfigured()) throw new Error("NAMECHEAP_NOT_CONFIGURED");
+  const params = await baseParams("namecheap.domains.getList");
+  params.set("Page", String(page));
+  params.set("PageSize", String(Math.min(100, Math.max(1, pageSize))));
+  const { xml, parsed } = await callNamecheap(params);
+  if (apiStatus(parsed) !== "OK") {
+    return {
+      ok: false,
+      domains: [],
+      xml,
+      error: friendlyNamecheapError(apiErrors(parsed) || "getList failed"),
+    };
+  }
+  const cmd = (parsed.ApiResponse as { CommandResponse?: unknown })
+    ?.CommandResponse as { DomainGetListResult?: { Domain?: unknown } };
+  const rows = asArray<Record<string, string>>(cmd?.DomainGetListResult?.Domain);
+  const domains = rows.map((r) => ({
+    domainName: String(r.Name || r.Domain || "").toLowerCase(),
+    id: r.ID ? String(r.ID) : undefined,
+    expires: r.Expires ? String(r.Expires) : undefined,
+    isExpired: String(r.IsExpired || "").toLowerCase() === "true",
+    autoRenew: String(r.AutoRenew || "").toLowerCase() === "true",
+    isLocked: String(r.IsLocked || "").toLowerCase() === "true",
+    whoisGuard:
+      String(r.WhoisGuard || r.Whoisguard || "")
+        .toLowerCase()
+        .includes("enabled") ||
+      String(r.WhoisGuard || "").toLowerCase() === "true",
+  }));
+  return { ok: true, domains, xml };
+}
+
+export async function getDomainInfo(domainName: string): Promise<{
+  ok: boolean;
+  info?: NamecheapDomainInfo;
+  error?: string;
+  xml: string;
+}> {
+  if (!isNamecheapConfigured()) throw new Error("NAMECHEAP_NOT_CONFIGURED");
+  const params = await baseParams("namecheap.domains.getInfo");
+  params.set("DomainName", domainName.toLowerCase());
+  const { xml, parsed } = await callNamecheap(params);
+  if (apiStatus(parsed) !== "OK") {
+    return {
+      ok: false,
+      xml,
+      error: friendlyNamecheapError(apiErrors(parsed) || "getInfo failed"),
+    };
+  }
+  const cmd = (parsed.ApiResponse as { CommandResponse?: unknown })
+    ?.CommandResponse as {
+    DomainGetInfoResult?: Record<string, unknown>;
+  };
+  const r = cmd?.DomainGetInfoResult || {};
+  const domainAttrs = r as {
+    DomainName?: string;
+    ID?: string;
+    Status?: string;
+    DomainDetails?: { ExpiredDate?: string; NumYears?: string };
+    Locked?: string;
+    Whoisguard?: { Enabled?: string };
+  };
+  return {
+    ok: true,
+    xml,
+    info: {
+      domainName: String(domainAttrs.DomainName || domainName).toLowerCase(),
+      id: domainAttrs.ID ? String(domainAttrs.ID) : undefined,
+      expires: domainAttrs.DomainDetails?.ExpiredDate
+        ? String(domainAttrs.DomainDetails.ExpiredDate)
+        : undefined,
+      isLocked: String(domainAttrs.Locked || "").toLowerCase() === "true",
+      whoisGuard:
+        String(domainAttrs.Whoisguard?.Enabled || "").toLowerCase() === "true",
+    },
+  };
+}
+
+export async function renewDomain(input: {
+  domainName: string;
+  years: number;
+}): Promise<{ ok: boolean; xml: string; error?: string }> {
+  if (!isNamecheapConfigured()) throw new Error("NAMECHEAP_NOT_CONFIGURED");
+  const params = await baseParams("namecheap.domains.renew");
+  params.set("DomainName", input.domainName.toLowerCase());
+  params.set("Years", String(Math.max(1, Math.min(10, input.years || 1))));
+  const { xml, parsed } = await callNamecheap(params);
+  if (apiStatus(parsed) === "OK") return { ok: true, xml };
+  return {
+    ok: false,
+    xml,
+    error: friendlyNamecheapError(apiErrors(parsed) || "renew failed"),
+  };
+}
+
+export async function createTransfer(input: {
+  domainName: string;
+  years: number;
+  authCode: string;
+}): Promise<{ ok: boolean; xml: string; error?: string; transferId?: string }> {
+  if (!isNamecheapConfigured()) throw new Error("NAMECHEAP_NOT_CONFIGURED");
+  const params = await baseParams("namecheap.domains.transfer.create");
+  params.set("DomainName", input.domainName.toLowerCase());
+  params.set("Years", String(Math.max(1, Math.min(10, input.years || 1))));
+  params.set("EPPCode", input.authCode);
+  const { xml, parsed } = await callNamecheap(params);
+  if (apiStatus(parsed) !== "OK") {
+    return {
+      ok: false,
+      xml,
+      error: friendlyNamecheapError(apiErrors(parsed) || "transfer create failed"),
+    };
+  }
+  const cmd = (parsed.ApiResponse as { CommandResponse?: unknown })
+    ?.CommandResponse as {
+    DomainTransferCreateResult?: { Transfer?: string; ID?: string };
+  };
+  const transferId =
+    cmd?.DomainTransferCreateResult?.Transfer ||
+    cmd?.DomainTransferCreateResult?.ID;
+  return { ok: true, xml, transferId: transferId ? String(transferId) : undefined };
+}
+
+export async function getTransferStatus(transferId: string): Promise<{
+  ok: boolean;
+  status?: string;
+  xml: string;
+  error?: string;
+}> {
+  if (!isNamecheapConfigured()) throw new Error("NAMECHEAP_NOT_CONFIGURED");
+  const params = await baseParams("namecheap.domains.transfer.getStatus");
+  params.set("TransferID", transferId);
+  const { xml, parsed } = await callNamecheap(params);
+  if (apiStatus(parsed) !== "OK") {
+    return {
+      ok: false,
+      xml,
+      error: friendlyNamecheapError(apiErrors(parsed) || "transfer status failed"),
+    };
+  }
+  const cmd = (parsed.ApiResponse as { CommandResponse?: unknown })
+    ?.CommandResponse as {
+    DomainTransferGetStatusResult?: { Status?: string; StatusID?: string };
+  };
+  return {
+    ok: true,
+    xml,
+    status: String(
+      cmd?.DomainTransferGetStatusResult?.Status ||
+        cmd?.DomainTransferGetStatusResult?.StatusID ||
+        "",
+    ),
+  };
+}
+
+export type DnsHostRecord = {
+  hostId?: string;
+  name: string;
+  type: string;
+  address: string;
+  mxPref?: string;
+  ttl?: string;
+};
+
+export async function getDnsHosts(domainName: string): Promise<{
+  ok: boolean;
+  hosts: DnsHostRecord[];
+  emailType?: string;
+  isUsingOurDns?: boolean;
+  xml: string;
+  error?: string;
+}> {
+  if (!isNamecheapConfigured()) throw new Error("NAMECHEAP_NOT_CONFIGURED");
+  const { sld, tld } = splitSldTld(domainName);
+  const params = await baseParams("namecheap.domains.dns.getHosts");
+  params.set("SLD", sld);
+  params.set("TLD", tld);
+  const { xml, parsed } = await callNamecheap(params);
+  if (apiStatus(parsed) !== "OK") {
+    return {
+      ok: false,
+      hosts: [],
+      xml,
+      error: friendlyNamecheapError(apiErrors(parsed) || "getHosts failed"),
+    };
+  }
+  const cmd = (parsed.ApiResponse as { CommandResponse?: unknown })
+    ?.CommandResponse as {
+    DomainDNSGetHostsResult?: {
+      host?: unknown;
+      Host?: unknown;
+      EmailType?: string;
+      IsUsingOurDNS?: string;
+    };
+  };
+  const result = cmd?.DomainDNSGetHostsResult;
+  const raw = result?.host ?? result?.Host;
+  const hosts = asArray<Record<string, string>>(raw).map((h) => ({
+    hostId: h.HostId || h.HostID,
+    name: String(h.Name || "@"),
+    type: String(h.Type || "A"),
+    address: String(h.Address || ""),
+    mxPref: h.MXPref || h.mxPref,
+    ttl: h.TTL || h.ttl,
+  }));
+  return {
+    ok: true,
+    hosts,
+    xml,
+    emailType: result?.EmailType,
+    isUsingOurDns:
+      String(result?.IsUsingOurDNS || "").toLowerCase() === "true",
+  };
+}
+
+export async function setDnsHosts(
+  domainName: string,
+  hosts: DnsHostRecord[],
+  emailType = "FWD",
+): Promise<{ ok: boolean; xml: string; error?: string }> {
+  if (!isNamecheapConfigured()) throw new Error("NAMECHEAP_NOT_CONFIGURED");
+  const { sld, tld } = splitSldTld(domainName);
+  const params = await baseParams("namecheap.domains.dns.setHosts");
+  params.set("SLD", sld);
+  params.set("TLD", tld);
+  params.set("EmailType", emailType);
+  hosts.forEach((h, i) => {
+    const n = i + 1;
+    params.set(`HostName${n}`, h.name || "@");
+    params.set(`RecordType${n}`, h.type || "A");
+    params.set(`Address${n}`, h.address);
+    if (h.mxPref) params.set(`MXPref${n}`, h.mxPref);
+    params.set(`TTL${n}`, h.ttl || "1800");
+  });
+  const { xml, parsed } = await callNamecheap(params);
+  if (apiStatus(parsed) === "OK") return { ok: true, xml };
+  return {
+    ok: false,
+    xml,
+    error: friendlyNamecheapError(apiErrors(parsed) || "setHosts failed"),
+  };
+}
+
+export async function setDefaultNameservers(domainName: string): Promise<{
+  ok: boolean;
+  xml: string;
+  error?: string;
+}> {
+  if (!isNamecheapConfigured()) throw new Error("NAMECHEAP_NOT_CONFIGURED");
+  const { sld, tld } = splitSldTld(domainName);
+  const params = await baseParams("namecheap.domains.dns.setDefault");
+  params.set("SLD", sld);
+  params.set("TLD", tld);
+  const { xml, parsed } = await callNamecheap(params);
+  if (apiStatus(parsed) === "OK") return { ok: true, xml };
+  return {
+    ok: false,
+    xml,
+    error: friendlyNamecheapError(apiErrors(parsed) || "setDefault NS failed"),
+  };
+}
+
+export async function setCustomNameservers(
+  domainName: string,
+  nameservers: string[],
+): Promise<{ ok: boolean; xml: string; error?: string }> {
+  if (!isNamecheapConfigured()) throw new Error("NAMECHEAP_NOT_CONFIGURED");
+  const { sld, tld } = splitSldTld(domainName);
+  const params = await baseParams("namecheap.domains.dns.setCustom");
+  params.set("SLD", sld);
+  params.set("TLD", tld);
+  params.set(
+    "Nameservers",
+    nameservers
+      .map((n) => n.trim())
+      .filter(Boolean)
+      .join(","),
+  );
+  const { xml, parsed } = await callNamecheap(params);
+  if (apiStatus(parsed) === "OK") return { ok: true, xml };
+  return {
+    ok: false,
+    xml,
+    error: friendlyNamecheapError(apiErrors(parsed) || "setCustom NS failed"),
+  };
+}
+
+export async function getListNameservers(domainName: string): Promise<{
+  ok: boolean;
+  nameservers: string[];
+  xml: string;
+  error?: string;
+}> {
+  if (!isNamecheapConfigured()) throw new Error("NAMECHEAP_NOT_CONFIGURED");
+  const { sld, tld } = splitSldTld(domainName);
+  const params = await baseParams("namecheap.domains.dns.getList");
+  params.set("SLD", sld);
+  params.set("TLD", tld);
+  const { xml, parsed } = await callNamecheap(params);
+  if (apiStatus(parsed) !== "OK") {
+    return {
+      ok: false,
+      nameservers: [],
+      xml,
+      error: friendlyNamecheapError(apiErrors(parsed) || "dns.getList failed"),
+    };
+  }
+  const cmd = (parsed.ApiResponse as { CommandResponse?: unknown })
+    ?.CommandResponse as {
+    DomainDNSGetListResult?: {
+      Nameserver?: unknown;
+      IsUsingOurDNS?: string;
+    };
+  };
+  const ns = asArray<string | Record<string, string>>(
+    cmd?.DomainDNSGetListResult?.Nameserver,
+  ).map((n) => (typeof n === "string" ? n : String(n._ || n.Name || "")));
+  return { ok: true, nameservers: ns.filter(Boolean), xml };
+}
+
+export type EmailForward = { mailbox: string; forwardTo: string };
+
+export async function getEmailForwarding(domainName: string): Promise<{
+  ok: boolean;
+  forwards: EmailForward[];
+  xml: string;
+  error?: string;
+}> {
+  if (!isNamecheapConfigured()) throw new Error("NAMECHEAP_NOT_CONFIGURED");
+  const { sld, tld } = splitSldTld(domainName);
+  const params = await baseParams("namecheap.domains.dns.getEmailForwarding");
+  params.set("DomainName", `${sld}.${tld}`);
+  const { xml, parsed } = await callNamecheap(params);
+  if (apiStatus(parsed) !== "OK") {
+    return {
+      ok: false,
+      forwards: [],
+      xml,
+      error: friendlyNamecheapError(
+        apiErrors(parsed) || "getEmailForwarding failed",
+      ),
+    };
+  }
+  const cmd = (parsed.ApiResponse as { CommandResponse?: unknown })
+    ?.CommandResponse as {
+    DomainDNSGetEmailForwardingResult?: { Forward?: unknown };
+  };
+  const forwards = asArray<Record<string, string>>(
+    cmd?.DomainDNSGetEmailForwardingResult?.Forward,
+  ).map((f) => ({
+    mailbox: String(f.mailbox || f.Mailbox || ""),
+    forwardTo: String(f.forwardto || f.ForwardTo || f._ || ""),
+  }));
+  return { ok: true, forwards, xml };
+}
+
+export async function setEmailForwarding(
+  domainName: string,
+  forwards: EmailForward[],
+): Promise<{ ok: boolean; xml: string; error?: string }> {
+  if (!isNamecheapConfigured()) throw new Error("NAMECHEAP_NOT_CONFIGURED");
+  const params = await baseParams("namecheap.domains.dns.setEmailForwarding");
+  params.set("DomainName", domainName.toLowerCase());
+  forwards.forEach((f, i) => {
+    const n = i + 1;
+    params.set(`MailBox${n}`, f.mailbox);
+    params.set(`ForwardTo${n}`, f.forwardTo);
+  });
+  const { xml, parsed } = await callNamecheap(params);
+  if (apiStatus(parsed) === "OK") return { ok: true, xml };
+  return {
+    ok: false,
+    xml,
+    error: friendlyNamecheapError(
+      apiErrors(parsed) || "setEmailForwarding failed",
+    ),
+  };
+}
+
+export async function getRegistrarLock(domainName: string): Promise<{
+  ok: boolean;
+  locked?: boolean;
+  xml: string;
+  error?: string;
+}> {
+  if (!isNamecheapConfigured()) throw new Error("NAMECHEAP_NOT_CONFIGURED");
+  const params = await baseParams("namecheap.domains.getRegistrarLock");
+  params.set("DomainName", domainName.toLowerCase());
+  const { xml, parsed } = await callNamecheap(params);
+  if (apiStatus(parsed) !== "OK") {
+    return {
+      ok: false,
+      xml,
+      error: friendlyNamecheapError(apiErrors(parsed) || "getRegistrarLock failed"),
+    };
+  }
+  const cmd = (parsed.ApiResponse as { CommandResponse?: unknown })
+    ?.CommandResponse as {
+    DomainGetRegistrarLockResult?: { RegistrarLockStatus?: string };
+  };
+  const status = String(
+    cmd?.DomainGetRegistrarLockResult?.RegistrarLockStatus || "",
+  ).toLowerCase();
+  return { ok: true, locked: status === "true", xml };
+}
+
+export async function setRegistrarLock(
+  domainName: string,
+  lock: boolean,
+): Promise<{ ok: boolean; xml: string; error?: string }> {
+  if (!isNamecheapConfigured()) throw new Error("NAMECHEAP_NOT_CONFIGURED");
+  const params = await baseParams("namecheap.domains.setRegistrarLock");
+  params.set("DomainName", domainName.toLowerCase());
+  params.set("LockAction", lock ? "LOCK" : "UNLOCK");
+  const { xml, parsed } = await callNamecheap(params);
+  if (apiStatus(parsed) === "OK") return { ok: true, xml };
+  return {
+    ok: false,
+    xml,
+    error: friendlyNamecheapError(apiErrors(parsed) || "setRegistrarLock failed"),
+  };
+}
+
+export async function getDnssecList(domainName: string): Promise<{
+  ok: boolean;
+  records: Array<Record<string, string>>;
+  xml: string;
+  error?: string;
+}> {
+  if (!isNamecheapConfigured()) throw new Error("NAMECHEAP_NOT_CONFIGURED");
+  const { sld, tld } = splitSldTld(domainName);
+  const params = await baseParams("namecheap.domains.dnssec.getList");
+  params.set("SLD", sld);
+  params.set("TLD", tld);
+  const { xml, parsed } = await callNamecheap(params);
+  if (apiStatus(parsed) !== "OK") {
+    return {
+      ok: false,
+      records: [],
+      xml,
+      error: friendlyNamecheapError(apiErrors(parsed) || "dnssec.getList failed"),
+    };
+  }
+  const cmd = (parsed.ApiResponse as { CommandResponse?: unknown })
+    ?.CommandResponse as { DomainDNSSECGetListResult?: { DNSSEC?: unknown } };
+  const records = asArray<Record<string, string>>(
+    cmd?.DomainDNSSECGetListResult?.DNSSEC,
+  ).map((r) => ({
+    keyTag: String(r.KeyTag || ""),
+    algorithm: String(r.Algorithm || ""),
+    digestType: String(r.DigestType || ""),
+    digest: String(r.Digest || ""),
+  }));
+  return { ok: true, records, xml };
+}
+
+export async function createDnssec(
+  domainName: string,
+  input: {
+    keyTag: string;
+    algorithm: string;
+    digestType: string;
+    digest: string;
+  },
+): Promise<{ ok: boolean; xml: string; error?: string }> {
+  if (!isNamecheapConfigured()) throw new Error("NAMECHEAP_NOT_CONFIGURED");
+  const { sld, tld } = splitSldTld(domainName);
+  const params = await baseParams("namecheap.domains.dnssec.create");
+  params.set("SLD", sld);
+  params.set("TLD", tld);
+  params.set("KeyTag", input.keyTag);
+  params.set("Algorithm", input.algorithm);
+  params.set("DigestType", input.digestType);
+  params.set("Digest", input.digest);
+  const { xml, parsed } = await callNamecheap(params);
+  if (apiStatus(parsed) === "OK") return { ok: true, xml };
+  return {
+    ok: false,
+    xml,
+    error: friendlyNamecheapError(apiErrors(parsed) || "dnssec.create failed"),
+  };
+}
+
+export async function deleteDnssec(
+  domainName: string,
+  input: {
+    keyTag: string;
+    algorithm: string;
+    digestType: string;
+    digest: string;
+  },
+): Promise<{ ok: boolean; xml: string; error?: string }> {
+  if (!isNamecheapConfigured()) throw new Error("NAMECHEAP_NOT_CONFIGURED");
+  const { sld, tld } = splitSldTld(domainName);
+  const params = await baseParams("namecheap.domains.dnssec.delete");
+  params.set("SLD", sld);
+  params.set("TLD", tld);
+  params.set("KeyTag", input.keyTag);
+  params.set("Algorithm", input.algorithm);
+  params.set("DigestType", input.digestType);
+  params.set("Digest", input.digest);
+  const { xml, parsed } = await callNamecheap(params);
+  if (apiStatus(parsed) === "OK") return { ok: true, xml };
+  return {
+    ok: false,
+    xml,
+    error: friendlyNamecheapError(apiErrors(parsed) || "dnssec.delete failed"),
+  };
+}
+
+/** Enable WhoisGuard for a domain (requires existing WhoisGuard id or allownull). */
+export async function enableWhoisGuard(whoisGuardId: string): Promise<{
+  ok: boolean;
+  xml: string;
+  error?: string;
+}> {
+  if (!isNamecheapConfigured()) throw new Error("NAMECHEAP_NOT_CONFIGURED");
+  const params = await baseParams("namecheap.whoisguard.enable");
+  params.set("WhoisguardID", whoisGuardId);
+  const { xml, parsed } = await callNamecheap(params);
+  if (apiStatus(parsed) === "OK") return { ok: true, xml };
+  return {
+    ok: false,
+    xml,
+    error: friendlyNamecheapError(apiErrors(parsed) || "whoisguard.enable failed"),
+  };
+}
+
+export async function disableWhoisGuard(whoisGuardId: string): Promise<{
+  ok: boolean;
+  xml: string;
+  error?: string;
+}> {
+  if (!isNamecheapConfigured()) throw new Error("NAMECHEAP_NOT_CONFIGURED");
+  const params = await baseParams("namecheap.whoisguard.disable");
+  params.set("WhoisguardID", whoisGuardId);
+  const { xml, parsed } = await callNamecheap(params);
+  if (apiStatus(parsed) === "OK") return { ok: true, xml };
+  return {
+    ok: false,
+    xml,
+    error: friendlyNamecheapError(
+      apiErrors(parsed) || "whoisguard.disable failed",
+    ),
+  };
+}
+
+export async function getWhoisGuardList(): Promise<{
+  ok: boolean;
+  items: Array<{ id: string; domainName: string; enabled: boolean }>;
+  xml: string;
+  error?: string;
+}> {
+  if (!isNamecheapConfigured()) throw new Error("NAMECHEAP_NOT_CONFIGURED");
+  const params = await baseParams("namecheap.whoisguard.getList");
+  params.set("PageSize", "100");
+  const { xml, parsed } = await callNamecheap(params);
+  if (apiStatus(parsed) !== "OK") {
+    return {
+      ok: false,
+      items: [],
+      xml,
+      error: friendlyNamecheapError(
+        apiErrors(parsed) || "whoisguard.getList failed",
+      ),
+    };
+  }
+  const cmd = (parsed.ApiResponse as { CommandResponse?: unknown })
+    ?.CommandResponse as { WhoisguardGetListResult?: { Whoisguard?: unknown } };
+  const items = asArray<Record<string, string>>(
+    cmd?.WhoisguardGetListResult?.Whoisguard,
+  ).map((w) => ({
+    id: String(w.ID || w.Id || ""),
+    domainName: String(w.DomainName || "").toLowerCase(),
+    enabled: String(w.Status || "").toLowerCase() === "enabled",
+  }));
+  return { ok: true, items, xml };
+}
+

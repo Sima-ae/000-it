@@ -21,6 +21,7 @@ const upsertSchema = z.object({
   markupPercent: z.number().nonnegative().max(500),
   isActive: z.boolean().default(true),
   basePriceInCents: z.number().int().positive().max(10_000_000).optional(),
+  renewBasePriceInCents: z.number().int().nonnegative().max(10_000_000).optional(),
   /** null clears the offer; omit to leave unchanged on PATCH if we want — but admin always sends it */
   offerPriceInCents: z
     .number()
@@ -74,6 +75,8 @@ export async function POST(request: Request) {
     create: {
       tld: data.tld,
       basePriceInCents: data.basePriceInCents ?? 1000,
+      renewBasePriceInCents:
+        data.renewBasePriceInCents ?? data.basePriceInCents ?? 1000,
       markupFixedCents: data.markupFixedCents,
       markupPercent: data.markupPercent,
       isActive: data.isActive,
@@ -85,6 +88,9 @@ export async function POST(request: Request) {
       isActive: data.isActive,
       ...(data.basePriceInCents != null
         ? { basePriceInCents: data.basePriceInCents }
+        : {}),
+      ...(data.renewBasePriceInCents != null
+        ? { renewBasePriceInCents: data.renewBasePriceInCents }
         : {}),
       ...(data.offerPriceInCents !== undefined
         ? { offerPriceInCents: data.offerPriceInCents }
@@ -122,6 +128,9 @@ export async function PATCH(request: Request) {
       isActive: data.isActive,
       ...(data.basePriceInCents != null
         ? { basePriceInCents: data.basePriceInCents }
+        : {}),
+      ...(data.renewBasePriceInCents != null
+        ? { renewBasePriceInCents: data.renewBasePriceInCents }
         : {}),
       ...(data.offerPriceInCents !== undefined
         ? { offerPriceInCents: data.offerPriceInCents }

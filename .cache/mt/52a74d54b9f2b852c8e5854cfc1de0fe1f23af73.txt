@@ -1,0 +1,1 @@
+Soft-vymazané faktury. Obnovte nebo trvale smažte jako superadmin.

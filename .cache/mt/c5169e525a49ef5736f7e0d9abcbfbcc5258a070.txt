@@ -1,0 +1,1 @@
+Layihələrin, agentlərin, skanların, müştərilərin və sistem hadisələrinin tam audit izi. Hər saat avtomatik olaraq yenilənir.

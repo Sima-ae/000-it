@@ -4,7 +4,10 @@ import type Stripe from "stripe";
 import { auth } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { checkDomains, isNamecheapConfigured } from "@/lib/domains/namecheap";
-import { effectiveSellPriceCents } from "@/lib/domains/pricing";
+import {
+  effectiveSellPriceCents,
+  renewSellPriceCents,
+} from "@/lib/domains/pricing";
 import { makeDomainOrderNumber } from "@/lib/shop/line-of-business";
 import { getStripe, isStripeConfigured } from "@/lib/shop/stripe";
 import { localizedHref } from "@/i18n/pathnames";
@@ -34,8 +37,55 @@ const bodySchema = z.object({
     .regex(/^([a-z0-9]+(-[a-z0-9]+)*\.)+[a-z]{2,30}$/i),
   years: z.number().int().min(1).max(10).default(1),
   locale: z.string().min(2).max(10).default("nl"),
-  registrant: registrantSchema,
+  orderType: z
+    .enum(["REGISTRATION", "RENEWAL", "TRANSFER"])
+    .default("REGISTRATION"),
+  authCode: z.string().min(4).max(128).optional(),
+  registrant: registrantSchema.optional(),
 });
+
+function stripeType(orderType: string) {
+  if (orderType === "RENEWAL") return "DOMAIN_RENEWAL";
+  if (orderType === "TRANSFER") return "DOMAIN_TRANSFER";
+  return "DOMAIN_REGISTRATION";
+}
+
+function productLabel(
+  locale: string,
+  orderType: string,
+  domain: string,
+): { name: string; description: string; years: number } {
+  const yearsNote =
+    locale === "nl" ? "jaar · inclusief 21% BTW" : "year(s) · including 21% VAT";
+  if (orderType === "RENEWAL") {
+    return {
+      name:
+        locale === "nl"
+          ? `Domeinverlenging: ${domain}`
+          : `Domain renewal: ${domain}`,
+      description: yearsNote,
+      years: 0,
+    };
+  }
+  if (orderType === "TRANSFER") {
+    return {
+      name:
+        locale === "nl"
+          ? `Domeintransfer: ${domain}`
+          : `Domain transfer: ${domain}`,
+      description: yearsNote,
+      years: 0,
+    };
+  }
+  return {
+    name:
+      locale === "nl"
+        ? `Domeinregistratie: ${domain}`
+        : `Domain registration: ${domain}`,
+    description: yearsNote,
+    years: 0,
+  };
+}
 
 export async function POST(request: Request) {
   try {
@@ -44,7 +94,7 @@ export async function POST(request: Request) {
     }
     if (!isNamecheapConfigured()) {
       return NextResponse.json(
-        { error: "Domain registration is temporarily unavailable" },
+        { error: "Domain services are temporarily unavailable" },
         { status: 503 },
       );
     }
@@ -57,9 +107,17 @@ export async function POST(request: Request) {
       );
     }
 
-    const { domainName, years, locale, registrant } = parsed.data;
+    const {
+      domainName,
+      years,
+      locale,
+      orderType,
+      authCode,
+      registrant: registrantIn,
+    } = parsed.data;
     const domain = domainName.toLowerCase();
     const tld = domain.split(".").pop() || "";
+    const session = await auth();
 
     const product = await prisma.domainProduct.findFirst({
       where: { tld, isActive: true },
@@ -68,26 +126,95 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "TLD not available" }, { status: 400 });
     }
 
-    const checked = await checkDomains([domain]);
-    if (!checked[0]?.available) {
-      return NextResponse.json({ error: "Domain is not available" }, { status: 409 });
+    let unitCents = 0;
+    let registrant = registrantIn;
+
+    if (orderType === "REGISTRATION") {
+      if (!registrant) {
+        return NextResponse.json(
+          { error: "Registrant required" },
+          { status: 400 },
+        );
+      }
+      const checked = await checkDomains([domain]);
+      if (!checked[0]?.available) {
+        return NextResponse.json(
+          { error: "Domain is not available" },
+          { status: 409 },
+        );
+      }
+      unitCents = effectiveSellPriceCents(product);
+    } else if (orderType === "RENEWAL") {
+      if (!session?.user?.id) {
+        return NextResponse.json({ error: "Login required" }, { status: 401 });
+      }
+      const owned = await prisma.ownedDomain.findFirst({
+        where: { domainName: domain, userId: session.user.id },
+      });
+      if (!owned) {
+        return NextResponse.json(
+          { error: "You do not own this domain" },
+          { status: 403 },
+        );
+      }
+      unitCents = renewSellPriceCents(product);
+      if (unitCents <= 0) {
+        return NextResponse.json(
+          { error: "Renewal price unavailable" },
+          { status: 400 },
+        );
+      }
+      registrant = registrant || {
+        firstName: session.user.name?.split(" ")[0] || "Owner",
+        lastName: session.user.name?.split(" ").slice(1).join(" ") || "Account",
+        email: session.user.email || "",
+        phone: "+31000000000",
+        address1: "NA",
+        city: "NA",
+        stateProvince: "NA",
+        postalCode: "0000",
+        country: "NL",
+      };
+      if (!registrant.email) {
+        return NextResponse.json({ error: "Email required" }, { status: 400 });
+      }
+    } else {
+      // TRANSFER
+      if (!authCode) {
+        return NextResponse.json(
+          { error: "Auth / EPP code required" },
+          { status: 400 },
+        );
+      }
+      if (!registrant) {
+        return NextResponse.json(
+          { error: "Registrant required" },
+          { status: 400 },
+        );
+      }
+      // Transfers typically charge renew-like or register price; use renew if set else register.
+      unitCents = renewSellPriceCents(product) || effectiveSellPriceCents(product);
     }
 
-    const unitCents = effectiveSellPriceCents(product);
     const totalPriceInCents = unitCents * years;
-    const session = await auth();
     const orderNumber = makeDomainOrderNumber();
+    const successPath =
+      orderType === "RENEWAL"
+        ? localizedHref(locale, "/my-domains")
+        : localizedHref(locale, "/domeinen");
 
     const order = await prisma.domainOrder.create({
       data: {
         orderNumber,
         domainName: domain,
         years,
+        orderType,
         status: "PENDING",
         totalPriceInCents,
-        email: registrant.email.toLowerCase(),
+        email: (registrant?.email || session?.user?.email || "").toLowerCase(),
         locale,
-        registrantJson: JSON.stringify(registrant),
+        registrantJson: JSON.stringify(registrant || {}),
+        authCode: orderType === "TRANSFER" ? authCode : null,
         domainProductId: product.id,
         userId: session?.user?.id || null,
       },
@@ -96,20 +223,28 @@ export async function POST(request: Request) {
     const origin = siteOrigin();
     const stripe = getStripe();
     const stripeLocale = locale === "nl" ? "nl" : "en";
-    const domainsPath = localizedHref(locale, "/domeinen");
+    const labels = productLabel(locale, orderType, domain);
 
     const sessionParams: Stripe.Checkout.SessionCreateParams = {
       mode: "payment",
       locale: stripeLocale,
-      customer_email: registrant.email,
+      customer_email: order.email,
       client_reference_id: order.id,
       metadata: {
-        type: "DOMAIN_REGISTRATION",
+        type: stripeType(orderType),
         domainOrderId: order.id,
         domainName: domain,
         years: String(years),
+        orderType,
       },
-      payment_method_types: ["card", "ideal", "bancontact", "sepa_debit", "klarna", "paypal"],
+      payment_method_types: [
+        "card",
+        "ideal",
+        "bancontact",
+        "sepa_debit",
+        "klarna",
+        "paypal",
+      ],
       billing_address_collection: "auto",
       submit_type: "pay",
       line_items: [
@@ -119,20 +254,14 @@ export async function POST(request: Request) {
             currency: "eur",
             unit_amount: totalPriceInCents,
             product_data: {
-              name:
-                locale === "nl"
-                  ? `Domeinregistratie: ${domain}`
-                  : `Domain registration: ${domain}`,
-              description:
-                locale === "nl"
-                  ? `${years} jaar · inclusief 21% BTW`
-                  : `${years} year(s) · including 21% VAT`,
+              name: labels.name,
+              description: `${years} ${labels.description}`,
             },
           },
         },
       ],
-      success_url: `${origin}${domainsPath}?success=1&order=${encodeURIComponent(orderNumber)}`,
-      cancel_url: `${origin}${domainsPath}?canceled=1`,
+      success_url: `${origin}${successPath}?success=1&order=${encodeURIComponent(orderNumber)}&session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${origin}${successPath}?canceled=1`,
     };
 
     let checkoutSession: Stripe.Checkout.Session;
@@ -152,7 +281,10 @@ export async function POST(request: Request) {
     });
 
     if (!checkoutSession.url) {
-      return NextResponse.json({ error: "Stripe did not return a checkout URL" }, { status: 502 });
+      return NextResponse.json(
+        { error: "Stripe did not return a checkout URL" },
+        { status: 502 },
+      );
     }
 
     return NextResponse.json({

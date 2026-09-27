@@ -1,0 +1,1 @@
+Odpověď uložena. Nakonfigurujte SMTP tak, aby také e-mailoval zákazníkovi.

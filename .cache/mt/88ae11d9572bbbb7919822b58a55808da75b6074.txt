@@ -1,0 +1,1 @@
+Zadejte platný auth / EPP kód (alespoň 4 znaky).

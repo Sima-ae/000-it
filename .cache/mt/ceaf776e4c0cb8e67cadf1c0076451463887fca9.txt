@@ -1,0 +1,1 @@
+Zamolite svog trenutnog registrara da otključa domenu i pošalje vam auth/EPP (prijenosni) kod. Zalijepite ga ispod da nastavite.

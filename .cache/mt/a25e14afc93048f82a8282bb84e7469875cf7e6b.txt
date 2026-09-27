@@ -1,0 +1,1 @@
+Sigurno plaćanje putem Stripe-a (iDEAL, kartica i više). Cijene uključuju PDV od 21%.

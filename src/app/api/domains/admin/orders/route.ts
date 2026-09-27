@@ -1,8 +1,14 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { requireRole } from "@/lib/api-auth";
-import { createDomain, type RegistrantContact } from "@/lib/domains/namecheap";
+import {
+  createDomain,
+  createTransfer,
+  renewDomain,
+  type RegistrantContact,
+} from "@/lib/domains/namecheap";
 import { sendFailedDomainOrderAlert } from "@/lib/domains/alerts";
+import { upsertOwnedDomain } from "@/lib/domains/owned";
 
 export const dynamic = "force-dynamic";
 
@@ -12,12 +18,24 @@ export async function GET(request: Request) {
 
   const { searchParams } = new URL(request.url);
   const status = searchParams.get("status");
+  const orderType = searchParams.get("orderType");
 
   const orders = await prisma.domainOrder.findMany({
-    where:
-      status && ["PENDING", "PAID", "REGISTERED", "FAILED"].includes(status)
+    where: {
+      ...(status &&
+      ["PENDING", "PAID", "REGISTERED", "FAILED"].includes(status)
         ? { status: status as "PENDING" | "PAID" | "REGISTERED" | "FAILED" }
-        : undefined,
+        : {}),
+      ...(orderType &&
+      ["REGISTRATION", "RENEWAL", "TRANSFER"].includes(orderType)
+        ? {
+            orderType: orderType as
+              | "REGISTRATION"
+              | "RENEWAL"
+              | "TRANSFER",
+          }
+        : {}),
+    },
     orderBy: { createdAt: "desc" },
     take: 200,
     include: {
@@ -52,24 +70,54 @@ export async function POST(request: Request) {
     );
   }
 
-  let registrant: RegistrantContact;
-  try {
-    registrant = JSON.parse(order.registrantJson) as RegistrantContact;
-  } catch {
-    return NextResponse.json({ error: "Invalid registrant data" }, { status: 500 });
-  }
+  let result: { ok: boolean; xml: string; error?: string; transferId?: string };
 
-  const result = await createDomain({
-    domainName: order.domainName,
-    years: order.years,
-    registrant,
-  });
+  if (order.orderType === "RENEWAL") {
+    result = await renewDomain({
+      domainName: order.domainName,
+      years: order.years,
+    });
+  } else if (order.orderType === "TRANSFER") {
+    if (!order.authCode) {
+      return NextResponse.json({ error: "Missing auth code" }, { status: 400 });
+    }
+    result = await createTransfer({
+      domainName: order.domainName,
+      years: order.years,
+      authCode: order.authCode,
+    });
+  } else {
+    let registrant: RegistrantContact;
+    try {
+      registrant = JSON.parse(order.registrantJson) as RegistrantContact;
+    } catch {
+      return NextResponse.json(
+        { error: "Invalid registrant data" },
+        { status: 500 },
+      );
+    }
+    result = await createDomain({
+      domainName: order.domainName,
+      years: order.years,
+      registrant,
+    });
+  }
 
   if (result.ok) {
     const updated = await prisma.domainOrder.update({
       where: { id: order.id },
       data: { status: "REGISTERED", namecheapResponse: result.xml },
     });
+    if (order.userId) {
+      await upsertOwnedDomain({
+        domainName: order.domainName,
+        userId: order.userId,
+        status:
+          order.orderType === "TRANSFER" ? "PENDING_TRANSFER" : "ACTIVE",
+        yearsAdded: order.years,
+        namecheapId: result.transferId || null,
+      });
+    }
     return NextResponse.json(updated);
   }
 

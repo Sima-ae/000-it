@@ -1,0 +1,1 @@
+Alan adlarınız için DNS'yi, ad sunucularını, yenilemeleri, gizliliği, kilidi ve aktarımları yönetin.

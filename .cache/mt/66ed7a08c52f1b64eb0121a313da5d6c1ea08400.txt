@@ -1,0 +1,1 @@
+Přesunout {number} do koše? Můžete jej obnovit později.

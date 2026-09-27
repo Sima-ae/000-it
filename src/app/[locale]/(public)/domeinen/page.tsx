@@ -4,9 +4,11 @@ import { SoftLink } from "@/components/shared/SoftLink";
 import { Reveal } from "@/components/marketing/Reveal";
 import { Button } from "@/components/ui/button";
 import { DomainSearch } from "@/components/domains/DomainSearch";
+import { DomainTransferForm } from "@/components/domains/DomainTransferForm";
 import { localizedHref } from "@/i18n/pathnames";
 import { buildServiceMetadata } from "@/lib/seo";
-import { getServiceContent } from "@/lib/fixweb-content";
+import { getServiceContent } from "@/lib/infoweb-content";
+import { ensurePaidCheckoutAndInvoice } from "@/lib/shop/order-invoice";
 
 const SLUG = "domains";
 
@@ -25,7 +27,7 @@ export async function generateMetadata({
     slug: SLUG,
     title: content?.title || t("metaTitle"),
     description: content?.subtitle || t("metaDescription"),
-    image: content?.image || "/uploads/fixweb/domains.png",
+    image: content?.image || "/uploads/infoweb/domains.png",
   });
 }
 
@@ -34,12 +36,27 @@ export default async function DomainsPage({
   searchParams,
 }: {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<{ success?: string; canceled?: string; order?: string }>;
+  searchParams: Promise<{
+    success?: string;
+    canceled?: string;
+    order?: string;
+    session_id?: string;
+  }>;
 }) {
   const { locale } = await params;
   const sp = await searchParams;
   setRequestLocale(locale);
   const t = await getTranslations("domainsPage");
+
+  let invoiceSent = false;
+  if (sp.success === "1" && sp.session_id) {
+    try {
+      const result = await ensurePaidCheckoutAndInvoice(sp.session_id);
+      invoiceSent = result.sent || result.reason === "ALREADY_SENT";
+    } catch (error) {
+      console.error("[domeinen/success] invoice", error);
+    }
+  }
 
   return (
     <div>
@@ -71,6 +88,9 @@ export default async function DomainsPage({
               {t("successBanner", {
                 order: sp.order ? ` (${sp.order})` : "",
               })}
+              {invoiceSent ? (
+                <p className="mt-1 text-xs opacity-90">{t("invoiceEmailSent")}</p>
+              ) : null}
             </div>
           ) : null}
           {sp.canceled === "1" ? (
@@ -113,11 +133,30 @@ export default async function DomainsPage({
         <Reveal delay={0.08}>
           <div className="mt-14 rounded-[1.75rem] border border-border/70 bg-linear-to-br from-primary/10 via-background to-accent/10 px-6 py-8 md:px-10">
             <h2 className="font-display text-2xl font-semibold tracking-tight">
+              {t("transferTitle")}
+            </h2>
+            <p className="mt-2 max-w-2xl text-muted-foreground">
+              {t("transferBody")}
+            </p>
+            <div className="mt-5">
+              <DomainTransferForm />
+            </div>
+          </div>
+        </Reveal>
+
+        <Reveal delay={0.1}>
+          <div className="mt-14 rounded-[1.75rem] border border-border/70 bg-linear-to-br from-primary/10 via-background to-accent/10 px-6 py-8 md:px-10">
+            <h2 className="font-display text-2xl font-semibold tracking-tight">
               {t("dnsTitle")}
             </h2>
             <p className="mt-2 max-w-2xl text-muted-foreground">{t("dnsBody")}</p>
             <div className="mt-5 flex flex-wrap gap-3">
               <Button asChild className="rounded-2xl">
+                <SoftLink href={localizedHref(locale, "/my-domains")}>
+                  {t("ctaMyDomains")}
+                </SoftLink>
+              </Button>
+              <Button asChild variant="outline" className="rounded-2xl">
                 <SoftLink href={localizedHref(locale, "/afspraak")}>
                   {t("ctaBook")}
                 </SoftLink>

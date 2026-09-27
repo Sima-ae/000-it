@@ -1,0 +1,1 @@
+Be din nuvarande registrar att låsa upp domänen och skicka dig auth/EPP-koden (överföring). Klistra in den nedan för att fortsätta.

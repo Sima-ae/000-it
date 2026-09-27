@@ -72,10 +72,11 @@ export function PricingPlans({
 
   function withHostingPeriod(feature: string, period: Billing) {
     const isHosting =
-      /^1\s*[×x]\s*web\s*-?hosting$/i.test(feature.trim()) ||
-      /^1\s*[×x]\s*webhosting$/i.test(feature.trim());
+      /^1\s*[×x]\s*web\s*-?hosting/i.test(feature.trim()) ||
+      /^1\s*[×x]\s*webhosting/i.test(feature.trim());
     if (!isHosting) return feature;
-    return period === "yearly" ? t("hostingYear") : t("hostingMonth");
+    const base = period === "yearly" ? t("hostingYear") : t("hostingMonth");
+    return `${base} (${t("hostingIncludedInPlan")})`;
   }
 
   const resolved = useMemo(
@@ -138,6 +139,9 @@ export function PricingPlans({
       >
         <p className="max-w-4xl text-center text-muted-foreground md:whitespace-nowrap">
           {labels.plansHeadline}
+        </p>
+        <p className="max-w-2xl text-center text-xs text-muted-foreground">
+          {t("plansServiceNote")}
         </p>
         <div
           role="group"

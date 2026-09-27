@@ -48,6 +48,7 @@ model User {
   shopOrders         ShopOrder[]
   shopProducts       ShopCatalogProduct[]
   domainOrders       DomainOrder[]
+  ownedDomains       OwnedDomain[]
   kennisbankArticles KennisbankArticle[]
 }
 
@@ -310,6 +311,8 @@ model ShopOrder {
   lineOfBusiness        ShopLineOfBusiness  @default(SERVICE)
   stripeSessionId       String?             @unique
   stripePaymentIntentId String?
+  /// Set when the paid invoice PDF was emailed to the customer
+  invoiceEmailedAt      DateTime?
   userId                String?
   user                  User?               @relation(fields: [userId], references: [id], onDelete: SetNull)
   items                 ShopOrderItem[]
@@ -741,6 +744,19 @@ enum DomainOrderStatus {
   FAILED
 }
 
+enum DomainOrderType {
+  REGISTRATION
+  RENEWAL
+  TRANSFER
+}
+
+enum OwnedDomainStatus {
+  ACTIVE
+  PENDING_TRANSFER
+  EXPIRED
+  LOCKED_OUT
+}
+
 /// Namecheap TLD catalog with live buy price + markup (domains book).
 model DomainProduct {
   id                    String        @id @default(cuid())
@@ -765,13 +781,18 @@ model DomainOrder {
   orderNumber       String            @unique
   domainName        String
   years             Int               @default(1)
+  orderType         DomainOrderType   @default(REGISTRATION)
   status            DomainOrderStatus @default(PENDING)
   stripeSessionId   String?           @unique
   totalPriceInCents Int
   email             String
   locale            String            @default("nl")
   registrantJson    String            @db.Text
+  /// EPP / auth code for inbound transfers
+  authCode          String?           @db.Text
   namecheapResponse String?           @db.LongText
+  /// Set when the paid invoice PDF was emailed to the customer
+  invoiceEmailedAt  DateTime?
   domainProductId   String
   domainProduct     DomainProduct     @relation(fields: [domainProductId], references: [id])
   userId            String?
@@ -780,9 +801,32 @@ model DomainOrder {
   updatedAt         DateTime          @updatedAt
 
   @@index([status, createdAt])
+  @@index([orderType, createdAt])
   @@index([email])
   @@index([domainName])
   @@index([domainProductId])
+}
+
+/// Customer domain inventory after successful register / transfer / sync.
+model OwnedDomain {
+  id                 String            @id @default(cuid())
+  domainName         String            @unique
+  tld                String
+  status             OwnedDomainStatus @default(ACTIVE)
+  expiresAt          DateTime?
+  autoRenewEnabled   Boolean           @default(false)
+  registrarLocked    Boolean           @default(true)
+  whoisGuardEnabled  Boolean           @default(false)
+  namecheapId        String?
+  lastSyncedAt       DateTime?
+  userId             String
+  user               User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt          DateTime          @default(now())
+  updatedAt          DateTime          @updatedAt
+
+  @@index([userId, status])
+  @@index([tld])
+  @@index([expiresAt])
 }
 
 /// Public knowledge base categories (Kennisbank)

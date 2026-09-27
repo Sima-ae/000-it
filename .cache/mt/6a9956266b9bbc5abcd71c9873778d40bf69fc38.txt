@@ -1,0 +1,1 @@
+Požiadajte svojho súčasného registrátora, aby odomkol doménu a poslal vám auth/EPP (prevodový) kód. Ak chcete pokračovať, vložte ho nižšie.

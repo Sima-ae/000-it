@@ -10,9 +10,11 @@ import { localizedHref } from "@/i18n/pathnames";
 export function SuccessClient({
   orderNumber,
   email,
+  invoiceSent,
 }: {
   orderNumber?: string | null;
   email?: string | null;
+  invoiceSent?: boolean;
 }) {
   const locale = useLocale();
   const t = useTranslations("shop");
@@ -24,11 +26,14 @@ export function SuccessClient({
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-20 text-center md:px-6">
-      <h1 className="font-display text-4xl font-semibold tracking-tight">{t("successTitle")}</h1>
+      <h1 className="font-display text-4xl font-semibold tracking-tight">
+        {t("successTitle")}
+      </h1>
       <p className="mt-4 text-muted-foreground">{t("successBody")}</p>
       {orderNumber ? (
         <p className="mt-6 text-sm">
-          {t("orderNumber")}: <span className="font-semibold">{orderNumber}</span>
+          {t("orderNumber")}:{" "}
+          <span className="font-semibold">{orderNumber}</span>
         </p>
       ) : null}
       {email ? (
@@ -36,9 +41,16 @@ export function SuccessClient({
           {t("confirmationEmail")}: {email}
         </p>
       ) : null}
+      {invoiceSent ? (
+        <p className="mt-2 text-sm text-accent">{t("invoiceEmailSent")}</p>
+      ) : email ? (
+        <p className="mt-2 text-sm text-muted-foreground">{t("invoiceEmailHint")}</p>
+      ) : null}
       <div className="mt-10 flex flex-wrap justify-center gap-3">
         <Button asChild className="rounded-2xl">
-          <SoftLink href={localizedHref(locale, "/shop")}>{t("continueShopping")}</SoftLink>
+          <SoftLink href={localizedHref(locale, "/shop")}>
+            {t("continueShopping")}
+          </SoftLink>
         </Button>
         <Button asChild variant="outline" className="rounded-2xl">
           <SoftLink href={localizedHref(locale, "/")}>{t("backHome")}</SoftLink>

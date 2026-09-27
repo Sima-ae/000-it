@@ -181,12 +181,12 @@ const PLAN_COPY = {
   starter: {
     name: { nl: "Business", en: "Business" },
     short: {
-      nl: "Compleet startpakket: domein, hosting, webshop/website, 1 AI-agent, AEO/GEO/SEO basic en premium support.",
-      en: "Complete starter pack: domain, hosting, shop/website, 1 AI agent, AEO/GEO/SEO basic and premium support.",
+      nl: "Servicepakket (één factuur TZ-S): domein, hosting inbegrepen, webshop/website, 1 AI-agent, AEO/GEO/SEO basic en premium support. Geen aparte hostingfactuur.",
+      en: "Service package (single TZ-S invoice): domain, hosting included, shop/website, 1 AI agent, AEO/GEO/SEO basic and premium support. Not a separate hosting invoice.",
     },
     featuresNl: [
       "1× domeinnaam .COM / .EU / .NL",
-      "1× webhosting",
+      "1× webhosting (inbegrepen in dit servicepakket)",
       "1× e-commerce shop / website",
       "1× AI-agent",
       "AI-scanner",
@@ -196,7 +196,7 @@ const PLAN_COPY = {
     ],
     featuresEn: [
       "1× domain .COM / .EU / .UK",
-      "1× web hosting",
+      "1× web hosting (included in this service package)",
       "1× e-commerce shop / website",
       "1× AI agent",
       "AI scanner",
@@ -208,12 +208,12 @@ const PLAN_COPY = {
   growth: {
     name: { nl: "Extra Growth", en: "Extra Growth" },
     short: {
-      nl: "Groeiplan met 2 AI-agents, AEO/GEO/SEO plus, hosting, webshop/website en premium support.",
-      en: "Growth plan with 2 AI agents, AEO/GEO/SEO plus, hosting, shop/website and premium support.",
+      nl: "Servicepakket (één factuur TZ-S): 2 AI-agents, AEO/GEO/SEO plus, hosting inbegrepen, webshop/website en premium support. Standalone hosting blijft TZ-H.",
+      en: "Service package (single TZ-S invoice): 2 AI agents, AEO/GEO/SEO plus, hosting included, shop/website and premium support. Standalone hosting stays TZ-H.",
     },
     featuresNl: [
       "1× domeinnaam .COM / .EU / .NL",
-      "1× webhosting",
+      "1× webhosting (inbegrepen in dit servicepakket)",
       "1× e-commerce shop / website",
       "2× AI-agents",
       "AI-scanner",
@@ -223,7 +223,7 @@ const PLAN_COPY = {
     ],
     featuresEn: [
       "1× domain .COM / .EU / .UK",
-      "1× web hosting",
+      "1× web hosting (included in this service package)",
       "1× e-commerce shop / website",
       "2× AI agents",
       "AI scanner",

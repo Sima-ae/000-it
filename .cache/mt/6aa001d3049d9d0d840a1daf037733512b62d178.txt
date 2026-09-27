@@ -1,0 +1,1 @@
+Soft-izbrisane fakture. Vratite ili trajno izbrišite kao super administrator.

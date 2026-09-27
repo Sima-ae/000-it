@@ -1,0 +1,1 @@
+Cari qeydiyyatçınızdan domenin kilidini açmasını və auth/EPP (transfer) kodunu sizə göndərməsini xahiş edin. Davam etmək üçün aşağıya yapışdırın.
