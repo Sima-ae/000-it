@@ -128,11 +128,6 @@ export const dashboardNav: DashboardNavItem[] = [
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
   },
   {
-    href: "/ai-agents",
-    key: "agents",
-    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
-  },
-  {
     href: "/seo-analysis",
     key: "seo",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
@@ -226,6 +221,11 @@ export const dashboardNav: DashboardNavItem[] = [
     href: "/users",
     key: "users",
     roles: ["SUPER_ADMIN", "ADMIN"],
+  },
+  {
+    href: "/ai-agents",
+    key: "agents",
+    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER", "CLIENT"],
   },
   {
     href: "/settings",
