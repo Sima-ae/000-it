@@ -547,7 +547,8 @@
     "orderStatus_FAILED": "Mislukt",
     "orderStatus_CANCELLED": "Geannuleerd",
     "orderStatus_REGISTERED": "Geregistreerd",
-    "navBadgeNew": "{count} nieuw"
+    "navBadgeNew": "{count} nieuw",
+    "allOrders": "Alle bestellingen"
   },
   "contact": {
     "title": "Contact",
@@ -1448,7 +1449,15 @@
     "transferPay": "Betaal en transfer",
     "ctaMyDomains": "Mijn domeinen beheren",
     "yearsLabel": "Aantal jaren",
-    "invoiceEmailSent": "Een PDF-factuur met BTW-specificatie is naar je e-mail gestuurd."
+    "invoiceEmailSent": "Een PDF-factuur met BTW-specificatie is naar je e-mail gestuurd.",
+    "homeTitle": "Vind jouw domeinnaam",
+    "homeSubtitle": "Controleer direct de beschikbaarheid en registreer veilig.",
+    "yearsCount": "{count, plural, one {# jaar} other {# jaar}}",
+    "paymentMethods": "Stripe · iDEAL / card",
+    "tldPriceTitle": ".{tld} · registratie {register}{renew}{transfer}{restore}",
+    "tldPriceRenewPart": " · verlenging {price}",
+    "tldPriceTransferPart": " · verhuizing {price}",
+    "tldPriceRestorePart": " · herstel {price}"
   },
   "myDomains": {
     "title": "Mijn domeinen",
@@ -1529,5 +1538,47 @@
     "dnssecAlgorithm": "Algoritme",
     "dnssecDigestType": "Digest type",
     "dnssecDigest": "Digest"
+  },
+  "allOrders": {
+    "title": "Alle bestellingen",
+    "subtitle": "Bekijk en beheer diensten-, hosting- en domeinorders op één plek.",
+    "tabServices": "Diensten",
+    "tabHosting": "Hosting",
+    "tabDomains": "Domeinen",
+    "statTotal": "Totaal bestellingen",
+    "statServices": "Diensten",
+    "statHosting": "Hosting",
+    "statDomains": "Domeinen",
+    "statPending": "In afwachting",
+    "statRevenue": "Betaalde omzet"
+  },
+  "domainOrdersAdmin": {
+    "subtitle": "Registraties betaald via Stripe en automatisch verwerkt. Apart van diensten- en hostingorders.",
+    "filterAll": "Alles",
+    "filterAllTypes": "Alle types",
+    "listTitle": "Bestellingen",
+    "loading": "Laden…",
+    "empty": "Nog geen domeinorders.",
+    "colOrder": "Bestelling",
+    "colType": "Type",
+    "colDomain": "Domein",
+    "colCustomer": "Klant",
+    "colTotal": "Totaal",
+    "colStatus": "Status",
+    "colActions": "Acties",
+    "view": "Bekijken",
+    "retry": "Opnieuw",
+    "close": "Sluiten",
+    "years": "Jaren",
+    "premiumPrice": "Premiumprijs",
+    "retryOk": "Opnieuw proberen voltooid",
+    "retryFailed": "Opnieuw proberen mislukt",
+    "statusPENDING": "In afwachting",
+    "statusPAID": "Betaald",
+    "statusREGISTERED": "Geregistreerd",
+    "statusFAILED": "Mislukt",
+    "typeREGISTRATION": "Registratie",
+    "typeRENEWAL": "Verlenging",
+    "typeTRANSFER": "Verhuizing"
   }
 }

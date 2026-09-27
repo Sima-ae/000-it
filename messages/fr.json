@@ -547,7 +547,8 @@
     "orderStatus_FAILED": "Échoué",
     "orderStatus_CANCELLED": "Annulé",
     "orderStatus_REGISTERED": "Enregistré",
-    "navBadgeNew": "{count} nouveau"
+    "navBadgeNew": "{count} nouveau",
+    "allOrders": "Toutes les commandes"
   },
   "contact": {
     "title": "Contacter",
@@ -1448,7 +1449,15 @@
     "transferPay": "Payer et transférer",
     "ctaMyDomains": "Gérer mes domaines",
     "yearsLabel": "Years",
-    "invoiceEmailSent": "Une facture PDF avec détail de la TVA vous a été envoyée par e-mail."
+    "invoiceEmailSent": "Une facture PDF avec détail de la TVA vous a été envoyée par e-mail.",
+    "homeTitle": "Trouvez votre nom de domaine",
+    "homeSubtitle": "Vérifiez la disponibilité instantanément et enregistrez en toute sécurité.",
+    "yearsCount": "{count, plural, one {# an} other {# ans}}",
+    "paymentMethods": "Stripe · iDEAL / carte",
+    "tldPriceTitle": ".{tld} · enregistrement {register}{renew}{transfer}{restore}",
+    "tldPriceRenewPart": " · renouvellement {price}",
+    "tldPriceTransferPart": " · transfert {price}",
+    "tldPriceRestorePart": " · restauration {price}"
   },
   "myDomains": {
     "title": "Mes domaines",
@@ -1529,5 +1538,47 @@
     "dnssecAlgorithm": "Algorithme",
     "dnssecDigestType": "Type de digest",
     "dnssecDigest": "Digest"
+  },
+  "allOrders": {
+    "title": "Toutes les commandes",
+    "subtitle": "Consultez et gérez les commandes services, hébergement et domaines au même endroit.",
+    "tabServices": "Services",
+    "tabHosting": "Hébergement",
+    "tabDomains": "Domaines",
+    "statTotal": "Total commandes",
+    "statServices": "Services",
+    "statHosting": "Hébergement",
+    "statDomains": "Domaines",
+    "statPending": "En attente",
+    "statRevenue": "CA payé"
+  },
+  "domainOrdersAdmin": {
+    "subtitle": "Enregistrements payés via Stripe et traités automatiquement. Séparés des commandes services et hébergement.",
+    "filterAll": "Tous",
+    "filterAllTypes": "Tous les types",
+    "listTitle": "Commandes",
+    "loading": "Chargement…",
+    "empty": "Aucune commande de domaine pour le moment.",
+    "colOrder": "Commande",
+    "colType": "Type",
+    "colDomain": "Domaine",
+    "colCustomer": "Client",
+    "colTotal": "Total",
+    "colStatus": "Statut",
+    "colActions": "Actions",
+    "view": "Voir",
+    "retry": "Réessayer",
+    "close": "Fermer",
+    "years": "Années",
+    "premiumPrice": "Prix premium",
+    "retryOk": "Nouvelle tentative terminée",
+    "retryFailed": "Échec de la nouvelle tentative",
+    "statusPENDING": "En attente",
+    "statusPAID": "Payé",
+    "statusREGISTERED": "Enregistré",
+    "statusFAILED": "Échoué",
+    "typeREGISTRATION": "Enregistrement",
+    "typeRENEWAL": "Renouvellement",
+    "typeTRANSFER": "Transfert"
   }
 }

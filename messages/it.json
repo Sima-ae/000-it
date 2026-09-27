@@ -547,7 +547,8 @@
     "orderStatus_FAILED": "Fallito",
     "orderStatus_CANCELLED": "Annullato",
     "orderStatus_REGISTERED": "Registrato",
-    "navBadgeNew": "{count} nuovo"
+    "navBadgeNew": "{count} nuovo",
+    "allOrders": "Tutti gli ordini"
   },
   "contact": {
     "title": "Contatto",
@@ -1448,7 +1449,15 @@
     "transferPay": "Paga e trasferisci",
     "ctaMyDomains": "Gestisci i miei domini",
     "yearsLabel": "Years",
-    "invoiceEmailSent": "Ti è stata inviata via e-mail una fattura PDF con ripartizione IVA."
+    "invoiceEmailSent": "Ti è stata inviata via e-mail una fattura PDF con ripartizione IVA.",
+    "homeTitle": "Trova il tuo nome di dominio",
+    "homeSubtitle": "Controlla subito la disponibilità e registra con pagamento sicuro.",
+    "yearsCount": "{count, plural, one {# anno} other {# anni}}",
+    "paymentMethods": "Stripe · iDEAL / carta",
+    "tldPriceTitle": ".{tld} · registrazione {register}{renew}{transfer}{restore}",
+    "tldPriceRenewPart": " · rinnovo {price}",
+    "tldPriceTransferPart": " · trasferimento {price}",
+    "tldPriceRestorePart": " · ripristino {price}"
   },
   "myDomains": {
     "title": "I miei domini",
@@ -1529,5 +1538,47 @@
     "dnssecAlgorithm": "Algoritmo",
     "dnssecDigestType": "Tipo digest",
     "dnssecDigest": "Digest"
+  },
+  "allOrders": {
+    "title": "Tutti gli ordini",
+    "subtitle": "Visualizza e gestisci ordini di servizi, hosting e domini in un unico posto.",
+    "tabServices": "Servizi",
+    "tabHosting": "Hosting",
+    "tabDomains": "Domini",
+    "statTotal": "Totale ordini",
+    "statServices": "Servizi",
+    "statHosting": "Hosting",
+    "statDomains": "Domini",
+    "statPending": "In attesa",
+    "statRevenue": "Ricavi pagati"
+  },
+  "domainOrdersAdmin": {
+    "subtitle": "Registrazioni pagate via Stripe e completate automaticamente. Separate dagli ordini di servizi e hosting.",
+    "filterAll": "Tutti",
+    "filterAllTypes": "Tutti i tipi",
+    "listTitle": "Ordini",
+    "loading": "Caricamento…",
+    "empty": "Nessun ordine di dominio ancora.",
+    "colOrder": "Ordine",
+    "colType": "Tipo",
+    "colDomain": "Dominio",
+    "colCustomer": "Cliente",
+    "colTotal": "Totale",
+    "colStatus": "Stato",
+    "colActions": "Azioni",
+    "view": "Vedi",
+    "retry": "Riprova",
+    "close": "Chiudi",
+    "years": "Anni",
+    "premiumPrice": "Prezzo premium",
+    "retryOk": "Nuovo tentativo completato",
+    "retryFailed": "Nuovo tentativo non riuscito",
+    "statusPENDING": "In attesa",
+    "statusPAID": "Pagato",
+    "statusREGISTERED": "Registrato",
+    "statusFAILED": "Fallito",
+    "typeREGISTRATION": "Registrazione",
+    "typeRENEWAL": "Rinnovo",
+    "typeTRANSFER": "Trasferimento"
   }
 }

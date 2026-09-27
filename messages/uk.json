@@ -547,7 +547,8 @@
     "orderStatus_FAILED": "Помилка",
     "orderStatus_CANCELLED": "Скасовано",
     "orderStatus_REGISTERED": "Зареєстровано",
-    "navBadgeNew": "{count} нових"
+    "navBadgeNew": "{count} нових",
+    "allOrders": "Усі замовлення"
   },
   "contact": {
     "title": "контакт",
@@ -1448,7 +1449,15 @@
     "transferPay": "Оплатити й перенести",
     "ctaMyDomains": "Керувати моїми доменами",
     "yearsLabel": "Years",
-    "invoiceEmailSent": "PDF-рахунок з розбивкою ПДВ надіслано на e-mail."
+    "invoiceEmailSent": "PDF-рахунок з розбивкою ПДВ надіслано на e-mail.",
+    "homeTitle": "Знайдіть своє доменне ім’я",
+    "homeSubtitle": "Миттєво перевірте доступність і зареєструйте з безпечною оплатою.",
+    "yearsCount": "{count, plural, one {# рік} few {# роки} many {# років} other {# року}}",
+    "paymentMethods": "Stripe · iDEAL / картка",
+    "tldPriceTitle": ".{tld} · реєстрація {register}{renew}{transfer}{restore}",
+    "tldPriceRenewPart": " · продовження {price}",
+    "tldPriceTransferPart": " · трансфер {price}",
+    "tldPriceRestorePart": " · відновлення {price}"
   },
   "myDomains": {
     "title": "Мої домени",
@@ -1529,5 +1538,47 @@
     "dnssecAlgorithm": "Алгоритм",
     "dnssecDigestType": "Тип digest",
     "dnssecDigest": "Digest"
+  },
+  "allOrders": {
+    "title": "Усі замовлення",
+    "subtitle": "Переглядайте та керуйте замовленнями послуг, хостингу та доменів в одному місці.",
+    "tabServices": "Послуги",
+    "tabHosting": "Хостинг",
+    "tabDomains": "Домени",
+    "statTotal": "Усього замовлень",
+    "statServices": "Послуги",
+    "statHosting": "Хостинг",
+    "statDomains": "Домени",
+    "statPending": "Очікують",
+    "statRevenue": "Оплачений дохід"
+  },
+  "domainOrdersAdmin": {
+    "subtitle": "Registrations paid via Stripe and fulfilled automatically. Separate from service and hosting orders.",
+    "filterAll": "All",
+    "filterAllTypes": "All types",
+    "listTitle": "Orders",
+    "loading": "Loading…",
+    "empty": "No domain orders yet.",
+    "colOrder": "Order",
+    "colType": "Type",
+    "colDomain": "Domain",
+    "colCustomer": "Customer",
+    "colTotal": "Total",
+    "colStatus": "Status",
+    "colActions": "Actions",
+    "view": "View",
+    "retry": "Retry",
+    "close": "Close",
+    "years": "Years",
+    "premiumPrice": "Premium price",
+    "retryOk": "Retry completed",
+    "retryFailed": "Retry failed",
+    "statusPENDING": "Pending",
+    "statusPAID": "Paid",
+    "statusREGISTERED": "Registered",
+    "statusFAILED": "Failed",
+    "typeREGISTRATION": "Registration",
+    "typeRENEWAL": "Renewal",
+    "typeTRANSFER": "Transfer"
   }
 }

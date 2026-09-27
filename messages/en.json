@@ -547,7 +547,8 @@
     "orderStatus_FAILED": "Failed",
     "orderStatus_CANCELLED": "Cancelled",
     "orderStatus_REGISTERED": "Registered",
-    "navBadgeNew": "{count} new"
+    "navBadgeNew": "{count} new",
+    "allOrders": "All orders"
   },
   "contact": {
     "title": "Contact",
@@ -1448,7 +1449,15 @@
     "transferPay": "Pay and transfer",
     "ctaMyDomains": "Manage my domains",
     "yearsLabel": "Years",
-    "invoiceEmailSent": "A PDF invoice with VAT breakdown has been emailed to you."
+    "invoiceEmailSent": "A PDF invoice with VAT breakdown has been emailed to you.",
+    "homeTitle": "Find your domain name",
+    "homeSubtitle": "Check availability instantly and register with secure payment.",
+    "yearsCount": "{count, plural, one {# year} other {# years}}",
+    "paymentMethods": "Stripe · iDEAL / card",
+    "tldPriceTitle": ".{tld} · register {register}{renew}{transfer}{restore}",
+    "tldPriceRenewPart": " · renew {price}",
+    "tldPriceTransferPart": " · transfer {price}",
+    "tldPriceRestorePart": " · restore {price}"
   },
   "myDomains": {
     "title": "My domains",
@@ -1529,5 +1538,47 @@
     "dnssecAlgorithm": "Algorithm",
     "dnssecDigestType": "Digest type",
     "dnssecDigest": "Digest"
+  },
+  "allOrders": {
+    "title": "All orders",
+    "subtitle": "View and manage service, hosting and domain orders in one place.",
+    "tabServices": "Services",
+    "tabHosting": "Hosting",
+    "tabDomains": "Domains",
+    "statTotal": "Total orders",
+    "statServices": "Services",
+    "statHosting": "Hosting",
+    "statDomains": "Domains",
+    "statPending": "Pending",
+    "statRevenue": "Paid revenue"
+  },
+  "domainOrdersAdmin": {
+    "subtitle": "Registrations paid via Stripe and fulfilled automatically. Separate from service and hosting orders.",
+    "filterAll": "All",
+    "filterAllTypes": "All types",
+    "listTitle": "Orders",
+    "loading": "Loading…",
+    "empty": "No domain orders yet.",
+    "colOrder": "Order",
+    "colType": "Type",
+    "colDomain": "Domain",
+    "colCustomer": "Customer",
+    "colTotal": "Total",
+    "colStatus": "Status",
+    "colActions": "Actions",
+    "view": "View",
+    "retry": "Retry",
+    "close": "Close",
+    "years": "Years",
+    "premiumPrice": "Premium price",
+    "retryOk": "Retry completed",
+    "retryFailed": "Retry failed",
+    "statusPENDING": "Pending",
+    "statusPAID": "Paid",
+    "statusREGISTERED": "Registered",
+    "statusFAILED": "Failed",
+    "typeREGISTRATION": "Registration",
+    "typeRENEWAL": "Renewal",
+    "typeTRANSFER": "Transfer"
   }
 }

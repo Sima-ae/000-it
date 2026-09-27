@@ -547,7 +547,8 @@
     "orderStatus_FAILED": "נכשל",
     "orderStatus_CANCELLED": "בוטל",
     "orderStatus_REGISTERED": "רשום",
-    "navBadgeNew": "{count} חדש"
+    "navBadgeNew": "{count} חדש",
+    "allOrders": "כל ההזמנות"
   },
   "contact": {
     "title": "צור קשר",
@@ -1448,7 +1449,15 @@
     "transferPay": "שלם והעבר",
     "ctaMyDomains": "נהל את הדומיינים שלי",
     "yearsLabel": "Years",
-    "invoiceEmailSent": "חשבונית PDF עם פירוט מע״מ נשלחה אליך במייל."
+    "invoiceEmailSent": "חשבונית PDF עם פירוט מע״מ נשלחה אליך במייל.",
+    "homeTitle": "מצאו את שם הדומיין שלכם",
+    "homeSubtitle": "בדקו זמינות מיד ורשמו בתשלום מאובטח.",
+    "yearsCount": "{count, plural, one {שנה #} two {שנתיים} other {# שנים}}",
+    "paymentMethods": "Stripe · iDEAL / כרטיס",
+    "tldPriceTitle": ".{tld} · רישום {register}{renew}{transfer}{restore}",
+    "tldPriceRenewPart": " · חידוש {price}",
+    "tldPriceTransferPart": " · העברה {price}",
+    "tldPriceRestorePart": " · שחזור {price}"
   },
   "myDomains": {
     "title": "הדומיינים שלי",
@@ -1529,5 +1538,47 @@
     "dnssecAlgorithm": "אלגוריתם",
     "dnssecDigestType": "סוג Digest",
     "dnssecDigest": "Digest"
+  },
+  "allOrders": {
+    "title": "כל ההזמנות",
+    "subtitle": "צפו ונהלו הזמנות שירותים, אירוח ודומיינים במקום אחד.",
+    "tabServices": "שירותים",
+    "tabHosting": "אירוח",
+    "tabDomains": "דומיינים",
+    "statTotal": "סה״כ הזמנות",
+    "statServices": "שירותים",
+    "statHosting": "אירוח",
+    "statDomains": "דומיינים",
+    "statPending": "ממתין",
+    "statRevenue": "הכנסות ששולמו"
+  },
+  "domainOrdersAdmin": {
+    "subtitle": "Registrations paid via Stripe and fulfilled automatically. Separate from service and hosting orders.",
+    "filterAll": "All",
+    "filterAllTypes": "All types",
+    "listTitle": "Orders",
+    "loading": "Loading…",
+    "empty": "No domain orders yet.",
+    "colOrder": "Order",
+    "colType": "Type",
+    "colDomain": "Domain",
+    "colCustomer": "Customer",
+    "colTotal": "Total",
+    "colStatus": "Status",
+    "colActions": "Actions",
+    "view": "View",
+    "retry": "Retry",
+    "close": "Close",
+    "years": "Years",
+    "premiumPrice": "Premium price",
+    "retryOk": "Retry completed",
+    "retryFailed": "Retry failed",
+    "statusPENDING": "Pending",
+    "statusPAID": "Paid",
+    "statusREGISTERED": "Registered",
+    "statusFAILED": "Failed",
+    "typeREGISTRATION": "Registration",
+    "typeRENEWAL": "Renewal",
+    "typeTRANSFER": "Transfer"
   }
 }

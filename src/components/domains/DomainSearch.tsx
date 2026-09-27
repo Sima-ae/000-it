@@ -1036,17 +1036,23 @@ export function DomainSearch() {
                 key={p.tld}
                 type="button"
                 onClick={() => toggleTld(p.tld)}
-                title={`.${p.tld} · register ${p.priceLabel}${
-                  p.renewPriceLabel ? ` · renew ${p.renewPriceLabel}` : ""
-                }${
-                  p.transferPriceLabel
-                    ? ` · transfer ${p.transferPriceLabel}`
-                    : ""
-                }${
-                  p.restorePriceLabel
-                    ? ` · restore ${p.restorePriceLabel}`
-                    : ""
-                }`}
+                title={t("tldPriceTitle", {
+                  tld: p.tld,
+                  register: p.priceLabel,
+                  renew: p.renewPriceLabel
+                    ? t("tldPriceRenewPart", { price: p.renewPriceLabel })
+                    : "",
+                  transfer: p.transferPriceLabel
+                    ? t("tldPriceTransferPart", {
+                        price: p.transferPriceLabel,
+                      })
+                    : "",
+                  restore: p.restorePriceLabel
+                    ? t("tldPriceRestorePart", {
+                        price: p.restorePriceLabel,
+                      })
+                    : "",
+                })}
                 className={cn(
                   "w-full truncate rounded-full border px-1.5 py-1 text-center text-[10px] leading-tight transition sm:px-2 sm:text-[11px]",
                   on
@@ -1288,7 +1294,7 @@ export function DomainSearch() {
                     >
                       {[1, 2, 3, 5, 10].map((y) => (
                         <option key={y} value={y}>
-                          {y} {locale === "nl" ? "jaar" : "year(s)"}
+                          {t("yearsCount", { count: y })}
                         </option>
                       ))}
                     </select>
@@ -1436,7 +1442,7 @@ export function DomainSearch() {
             <DialogFooter className="shrink-0 gap-3 border-t border-border/60 bg-muted/10 px-5 py-4 md:px-6 sm:justify-between">
               <p className="hidden items-center gap-1.5 text-xs text-muted-foreground sm:flex">
                 <Lock className="h-3.5 w-3.5" />
-                Stripe · iDEAL / card
+                {t("paymentMethods")}
               </p>
               <div className="flex w-full flex-col-reverse gap-2 sm:w-auto sm:flex-row">
                 <Button
@@ -1486,8 +1492,8 @@ export function DomainSearch() {
                     {transferDomain.domain}
                   </p>
                   <p className="text-xs text-muted-foreground">
-                    .{transferDomain.tld} · {t("transfer")} · 1{" "}
-                    {locale === "nl" ? "jaar" : "year"}
+                    .{transferDomain.tld} · {t("transfer")} ·{" "}
+                    {t("yearsCount", { count: 1 })}
                   </p>
                 </div>
                 {transferPriceLabel ? (
@@ -1654,7 +1660,7 @@ export function DomainSearch() {
             <DialogFooter className="shrink-0 gap-3 border-t border-border/60 bg-muted/10 px-5 py-4 md:px-6 sm:justify-between">
               <p className="hidden items-center gap-1.5 text-xs text-muted-foreground sm:flex">
                 <Lock className="h-3.5 w-3.5" />
-                Stripe · iDEAL / card
+                {t("paymentMethods")}
               </p>
               <div className="flex w-full flex-col-reverse gap-2 sm:w-auto sm:flex-row">
                 <Button

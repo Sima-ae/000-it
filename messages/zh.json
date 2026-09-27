@@ -547,7 +547,8 @@
     "orderStatus_FAILED": "失败",
     "orderStatus_CANCELLED": "已取消",
     "orderStatus_REGISTERED": "已注册",
-    "navBadgeNew": "{count} 新"
+    "navBadgeNew": "{count} 新",
+    "allOrders": "所有订单"
   },
   "contact": {
     "title": "联系方式",
@@ -1448,7 +1449,15 @@
     "transferPay": "支付并转移",
     "ctaMyDomains": "管理我的域名",
     "yearsLabel": "Years",
-    "invoiceEmailSent": "已通过邮件发送含增值税明细的 PDF 发票。"
+    "invoiceEmailSent": "已通过邮件发送含增值税明细的 PDF 发票。",
+    "homeTitle": "查找您的域名",
+    "homeSubtitle": "即时查询可用性，并通过安全支付完成注册。",
+    "yearsCount": "{count, plural, other {# 年}}",
+    "paymentMethods": "Stripe · iDEAL / 银行卡",
+    "tldPriceTitle": ".{tld} · 注册 {register}{renew}{transfer}{restore}",
+    "tldPriceRenewPart": " · 续费 {price}",
+    "tldPriceTransferPart": " · 转移 {price}",
+    "tldPriceRestorePart": " · 恢复 {price}"
   },
   "myDomains": {
     "title": "我的域名",
@@ -1529,5 +1538,47 @@
     "dnssecAlgorithm": "算法",
     "dnssecDigestType": "Digest 类型",
     "dnssecDigest": "Digest"
+  },
+  "allOrders": {
+    "title": "所有订单",
+    "subtitle": "在同一页面查看和管理服务、主机与域名订单。",
+    "tabServices": "服务",
+    "tabHosting": "主机",
+    "tabDomains": "域名",
+    "statTotal": "订单总数",
+    "statServices": "服务",
+    "statHosting": "主机",
+    "statDomains": "域名",
+    "statPending": "待处理",
+    "statRevenue": "已付营收"
+  },
+  "domainOrdersAdmin": {
+    "subtitle": "Registrations paid via Stripe and fulfilled automatically. Separate from service and hosting orders.",
+    "filterAll": "All",
+    "filterAllTypes": "All types",
+    "listTitle": "Orders",
+    "loading": "Loading…",
+    "empty": "No domain orders yet.",
+    "colOrder": "Order",
+    "colType": "Type",
+    "colDomain": "Domain",
+    "colCustomer": "Customer",
+    "colTotal": "Total",
+    "colStatus": "Status",
+    "colActions": "Actions",
+    "view": "View",
+    "retry": "Retry",
+    "close": "Close",
+    "years": "Years",
+    "premiumPrice": "Premium price",
+    "retryOk": "Retry completed",
+    "retryFailed": "Retry failed",
+    "statusPENDING": "Pending",
+    "statusPAID": "Paid",
+    "statusREGISTERED": "Registered",
+    "statusFAILED": "Failed",
+    "typeREGISTRATION": "Registration",
+    "typeRENEWAL": "Renewal",
+    "typeTRANSFER": "Transfer"
   }
 }

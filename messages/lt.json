@@ -547,7 +547,8 @@
     "orderStatus_FAILED": "Nepavyko",
     "orderStatus_CANCELLED": "Atšaukta",
     "orderStatus_REGISTERED": "Užregistruota",
-    "navBadgeNew": "{count} nauji"
+    "navBadgeNew": "{count} nauji",
+    "allOrders": "Visi užsakymai"
   },
   "contact": {
     "title": "Susisiekite",
@@ -1448,7 +1449,15 @@
     "transferPay": "Mokėti ir perkelti",
     "ctaMyDomains": "Tvarkyti mano domenus",
     "yearsLabel": "Years",
-    "invoiceEmailSent": "PDF sąskaita su PVM išskaidymu išsiųsta el. paštu."
+    "invoiceEmailSent": "PDF sąskaita su PVM išskaidymu išsiųsta el. paštu.",
+    "homeTitle": "Raskite savo domeno vardą",
+    "homeSubtitle": "Iškart patikrinkite prieinamumą ir registruokite saugiu mokėjimu.",
+    "yearsCount": "{count, plural, one {# metai} few {# metai} many {# metų} other {# metų}}",
+    "paymentMethods": "Stripe · iDEAL / kortelė",
+    "tldPriceTitle": ".{tld} · registracija {register}{renew}{transfer}{restore}",
+    "tldPriceRenewPart": " · pratęsimas {price}",
+    "tldPriceTransferPart": " · perkėlimas {price}",
+    "tldPriceRestorePart": " · atkūrimas {price}"
   },
   "myDomains": {
     "title": "Mano domenai",
@@ -1529,5 +1538,47 @@
     "dnssecAlgorithm": "Algoritmas",
     "dnssecDigestType": "Digest tipas",
     "dnssecDigest": "Digest"
+  },
+  "allOrders": {
+    "title": "Visi užsakymai",
+    "subtitle": "Peržiūrėkite ir tvarkykite paslaugų, hostingo ir domenų užsakymus vienoje vietoje.",
+    "tabServices": "Paslaugos",
+    "tabHosting": "Hostingas",
+    "tabDomains": "Domenai",
+    "statTotal": "Iš viso užsakymų",
+    "statServices": "Paslaugos",
+    "statHosting": "Hostingas",
+    "statDomains": "Domenai",
+    "statPending": "Laukiama",
+    "statRevenue": "Apmokotos pajamos"
+  },
+  "domainOrdersAdmin": {
+    "subtitle": "Registrations paid via Stripe and fulfilled automatically. Separate from service and hosting orders.",
+    "filterAll": "All",
+    "filterAllTypes": "All types",
+    "listTitle": "Orders",
+    "loading": "Loading…",
+    "empty": "No domain orders yet.",
+    "colOrder": "Order",
+    "colType": "Type",
+    "colDomain": "Domain",
+    "colCustomer": "Customer",
+    "colTotal": "Total",
+    "colStatus": "Status",
+    "colActions": "Actions",
+    "view": "View",
+    "retry": "Retry",
+    "close": "Close",
+    "years": "Years",
+    "premiumPrice": "Premium price",
+    "retryOk": "Retry completed",
+    "retryFailed": "Retry failed",
+    "statusPENDING": "Pending",
+    "statusPAID": "Paid",
+    "statusREGISTERED": "Registered",
+    "statusFAILED": "Failed",
+    "typeREGISTRATION": "Registration",
+    "typeRENEWAL": "Renewal",
+    "typeTRANSFER": "Transfer"
   }
 }

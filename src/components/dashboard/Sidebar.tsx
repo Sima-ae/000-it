@@ -49,6 +49,7 @@ const icons: Record<string, React.ComponentType<{ className?: string }>> = {
   "/kennisbank-admin": BookOpen,
   "/crm/leads": Inbox,
   "/shop-admin": ShoppingBag,
+  "/all-orders": ClipboardList,
   "/orders": ClipboardList,
   "/hosting-admin": Server,
   "/hosting-orders": Server,
@@ -69,7 +70,7 @@ const icons: Record<string, React.ComponentType<{ className?: string }>> = {
   "/settings": Settings,
 };
 
-const BADGE_HREFS = ["/crm/leads", "/crm/tickets", "/seo-analysis", "/orders"] as const;
+const BADGE_HREFS = ["/crm/leads", "/crm/tickets", "/seo-analysis", "/all-orders"] as const;
 
 type NavBadges = {
   leads: number;
@@ -83,7 +84,7 @@ function badgeForHref(href: string, badges: NavBadges | undefined) {
   if (href === "/crm/leads") return badges.leads;
   if (href === "/crm/tickets") return badges.tickets;
   if (href === "/seo-analysis") return badges.seoAnalysis;
-  if (href === "/orders") return badges.orders;
+  if (href === "/all-orders" || href === "/orders") return badges.orders;
   return 0;
 }
 

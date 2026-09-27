@@ -547,7 +547,8 @@
     "orderStatus_FAILED": "Nieudane",
     "orderStatus_CANCELLED": "Anulowane",
     "orderStatus_REGISTERED": "Zarejestrowane",
-    "navBadgeNew": "{count} nowe"
+    "navBadgeNew": "{count} nowe",
+    "allOrders": "Wszystkie zamówienia"
   },
   "contact": {
     "title": "Kontakt",
@@ -1448,7 +1449,15 @@
     "transferPay": "Zapłać i przenieś",
     "ctaMyDomains": "Zarządzaj moimi domenami",
     "yearsLabel": "Years",
-    "invoiceEmailSent": "Wysłano e-mailem fakturę PDF z rozbiciem VAT."
+    "invoiceEmailSent": "Wysłano e-mailem fakturę PDF z rozbiciem VAT.",
+    "homeTitle": "Znajdź nazwę domeny",
+    "homeSubtitle": "Sprawdź dostępność od razu i zarejestruj z bezpieczną płatnością.",
+    "yearsCount": "{count, plural, one {# rok} few {# lata} many {# lat} other {# roku}}",
+    "paymentMethods": "Stripe · iDEAL / karta",
+    "tldPriceTitle": ".{tld} · rejestracja {register}{renew}{transfer}{restore}",
+    "tldPriceRenewPart": " · odnowienie {price}",
+    "tldPriceTransferPart": " · transfer {price}",
+    "tldPriceRestorePart": " · przywrócenie {price}"
   },
   "myDomains": {
     "title": "Moje domeny",
@@ -1529,5 +1538,47 @@
     "dnssecAlgorithm": "Algorytm",
     "dnssecDigestType": "Typ digest",
     "dnssecDigest": "Digest"
+  },
+  "allOrders": {
+    "title": "Wszystkie zamówienia",
+    "subtitle": "Przeglądaj i zarządzaj zamówieniami usług, hostingu i domen w jednym miejscu.",
+    "tabServices": "Usługi",
+    "tabHosting": "Hosting",
+    "tabDomains": "Domeny",
+    "statTotal": "Łącznie zamówień",
+    "statServices": "Usługi",
+    "statHosting": "Hosting",
+    "statDomains": "Domeny",
+    "statPending": "Oczekujące",
+    "statRevenue": "Opłacony przychód"
+  },
+  "domainOrdersAdmin": {
+    "subtitle": "Rejestracje opłacone przez Stripe i realizowane automatycznie. Oddzielnie od zamówień usług i hostingu.",
+    "filterAll": "Wszystkie",
+    "filterAllTypes": "Wszystkie typy",
+    "listTitle": "Zamówienia",
+    "loading": "Ładowanie…",
+    "empty": "Brak zamówień domen.",
+    "colOrder": "Zamówienie",
+    "colType": "Typ",
+    "colDomain": "Domena",
+    "colCustomer": "Klient",
+    "colTotal": "Suma",
+    "colStatus": "Status",
+    "colActions": "Akcje",
+    "view": "Podgląd",
+    "retry": "Ponów",
+    "close": "Zamknij",
+    "years": "Lata",
+    "premiumPrice": "Cena premium",
+    "retryOk": "Ponowienie zakończone",
+    "retryFailed": "Ponowienie nie powiodło się",
+    "statusPENDING": "Oczekujące",
+    "statusPAID": "Opłacone",
+    "statusREGISTERED": "Zarejestrowane",
+    "statusFAILED": "Nieudane",
+    "typeREGISTRATION": "Rejestracja",
+    "typeRENEWAL": "Odnowienie",
+    "typeTRANSFER": "Transfer"
   }
 }

@@ -547,7 +547,8 @@
     "orderStatus_FAILED": "Başarısız",
     "orderStatus_CANCELLED": "İptal",
     "orderStatus_REGISTERED": "Kayıtlı",
-    "navBadgeNew": "{count} yeni"
+    "navBadgeNew": "{count} yeni",
+    "allOrders": "Tüm siparişler"
   },
   "contact": {
     "title": "İletişim",
@@ -1448,7 +1449,15 @@
     "transferPay": "Öde ve transfer et",
     "ctaMyDomains": "Alan adlarımı yönet",
     "yearsLabel": "Years",
-    "invoiceEmailSent": "KDV dökümlü PDF fatura e-posta ile gönderildi."
+    "invoiceEmailSent": "KDV dökümlü PDF fatura e-posta ile gönderildi.",
+    "homeTitle": "Alan adınızı bulun",
+    "homeSubtitle": "Uygunluğu anında kontrol edin ve güvenli ödeme ile kaydedin.",
+    "yearsCount": "{count, plural, one {# yıl} other {# yıl}}",
+    "paymentMethods": "Stripe · iDEAL / kart",
+    "tldPriceTitle": ".{tld} · kayıt {register}{renew}{transfer}{restore}",
+    "tldPriceRenewPart": " · yenileme {price}",
+    "tldPriceTransferPart": " · transfer {price}",
+    "tldPriceRestorePart": " · geri yükleme {price}"
   },
   "myDomains": {
     "title": "Alan adlarım",
@@ -1529,5 +1538,47 @@
     "dnssecAlgorithm": "Algoritma",
     "dnssecDigestType": "Digest türü",
     "dnssecDigest": "Digest"
+  },
+  "allOrders": {
+    "title": "Tüm siparişler",
+    "subtitle": "Hizmet, hosting ve alan adı siparişlerini tek yerden görüntüleyin ve yönetin.",
+    "tabServices": "Hizmetler",
+    "tabHosting": "Hosting",
+    "tabDomains": "Alan adları",
+    "statTotal": "Toplam sipariş",
+    "statServices": "Hizmetler",
+    "statHosting": "Hosting",
+    "statDomains": "Alan adları",
+    "statPending": "Beklemede",
+    "statRevenue": "Ödenen ciro"
+  },
+  "domainOrdersAdmin": {
+    "subtitle": "Registrations paid via Stripe and fulfilled automatically. Separate from service and hosting orders.",
+    "filterAll": "All",
+    "filterAllTypes": "All types",
+    "listTitle": "Orders",
+    "loading": "Loading…",
+    "empty": "No domain orders yet.",
+    "colOrder": "Order",
+    "colType": "Type",
+    "colDomain": "Domain",
+    "colCustomer": "Customer",
+    "colTotal": "Total",
+    "colStatus": "Status",
+    "colActions": "Actions",
+    "view": "View",
+    "retry": "Retry",
+    "close": "Close",
+    "years": "Years",
+    "premiumPrice": "Premium price",
+    "retryOk": "Retry completed",
+    "retryFailed": "Retry failed",
+    "statusPENDING": "Pending",
+    "statusPAID": "Paid",
+    "statusREGISTERED": "Registered",
+    "statusFAILED": "Failed",
+    "typeREGISTRATION": "Registration",
+    "typeRENEWAL": "Renewal",
+    "typeTRANSFER": "Transfer"
   }
 }

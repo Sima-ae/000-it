@@ -547,7 +547,8 @@
     "orderStatus_FAILED": "Falhou",
     "orderStatus_CANCELLED": "Cancelado",
     "orderStatus_REGISTERED": "Registado",
-    "navBadgeNew": "{count} novo"
+    "navBadgeNew": "{count} novo",
+    "allOrders": "Todos os pedidos"
   },
   "contact": {
     "title": "Contato",
@@ -1448,7 +1449,15 @@
     "transferPay": "Pagar e transferir",
     "ctaMyDomains": "Gerenciar meus domínios",
     "yearsLabel": "Years",
-    "invoiceEmailSent": "Foi enviada por e-mail uma fatura PDF com discriminação do IVA."
+    "invoiceEmailSent": "Foi enviada por e-mail uma fatura PDF com discriminação do IVA.",
+    "homeTitle": "Encontre o seu nome de domínio",
+    "homeSubtitle": "Verifique a disponibilidade na hora e registe com pagamento seguro.",
+    "yearsCount": "{count, plural, one {# ano} other {# anos}}",
+    "paymentMethods": "Stripe · iDEAL / cartão",
+    "tldPriceTitle": ".{tld} · registo {register}{renew}{transfer}{restore}",
+    "tldPriceRenewPart": " · renovação {price}",
+    "tldPriceTransferPart": " · transferência {price}",
+    "tldPriceRestorePart": " · restauro {price}"
   },
   "myDomains": {
     "title": "Meus domínios",
@@ -1529,5 +1538,47 @@
     "dnssecAlgorithm": "Algoritmo",
     "dnssecDigestType": "Tipo de digest",
     "dnssecDigest": "Digest"
+  },
+  "allOrders": {
+    "title": "Todos os pedidos",
+    "subtitle": "Veja e gerencie pedidos de serviços, hosting e domínios num só lugar.",
+    "tabServices": "Serviços",
+    "tabHosting": "Hosting",
+    "tabDomains": "Domínios",
+    "statTotal": "Total de pedidos",
+    "statServices": "Serviços",
+    "statHosting": "Hosting",
+    "statDomains": "Domínios",
+    "statPending": "Pendentes",
+    "statRevenue": "Receita paga"
+  },
+  "domainOrdersAdmin": {
+    "subtitle": "Registos pagos via Stripe e cumpridos automaticamente. Separados de pedidos de serviços e hosting.",
+    "filterAll": "Todos",
+    "filterAllTypes": "Todos os tipos",
+    "listTitle": "Pedidos",
+    "loading": "A carregar…",
+    "empty": "Ainda sem pedidos de domínio.",
+    "colOrder": "Pedido",
+    "colType": "Tipo",
+    "colDomain": "Domínio",
+    "colCustomer": "Cliente",
+    "colTotal": "Total",
+    "colStatus": "Estado",
+    "colActions": "Ações",
+    "view": "Ver",
+    "retry": "Repetir",
+    "close": "Fechar",
+    "years": "Anos",
+    "premiumPrice": "Preço premium",
+    "retryOk": "Nova tentativa concluída",
+    "retryFailed": "Nova tentativa falhou",
+    "statusPENDING": "Pendente",
+    "statusPAID": "Pago",
+    "statusREGISTERED": "Registado",
+    "statusFAILED": "Falhou",
+    "typeREGISTRATION": "Registo",
+    "typeRENEWAL": "Renovação",
+    "typeTRANSFER": "Transferência"
   }
 }

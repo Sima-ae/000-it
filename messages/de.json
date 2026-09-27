@@ -547,7 +547,8 @@
     "orderStatus_FAILED": "Fehlgeschlagen",
     "orderStatus_CANCELLED": "Storniert",
     "orderStatus_REGISTERED": "Registriert",
-    "navBadgeNew": "{count} neu"
+    "navBadgeNew": "{count} neu",
+    "allOrders": "Alle Bestellungen"
   },
   "contact": {
     "title": "Kontakt",
@@ -1448,7 +1449,15 @@
     "transferPay": "Bezahlen und transferieren",
     "ctaMyDomains": "Meine Domains verwalten",
     "yearsLabel": "Years",
-    "invoiceEmailSent": "Eine PDF-Rechnung mit MwSt.-Aufschlüsselung wurde per E-Mail gesendet."
+    "invoiceEmailSent": "Eine PDF-Rechnung mit MwSt.-Aufschlüsselung wurde per E-Mail gesendet.",
+    "homeTitle": "Finden Sie Ihren Domainnamen",
+    "homeSubtitle": "Prüfen Sie die Verfügbarkeit sofort und registrieren Sie sicher.",
+    "yearsCount": "{count, plural, one {# Jahr} other {# Jahre}}",
+    "paymentMethods": "Stripe · iDEAL / Karte",
+    "tldPriceTitle": ".{tld} · Registrierung {register}{renew}{transfer}{restore}",
+    "tldPriceRenewPart": " · Verlängerung {price}",
+    "tldPriceTransferPart": " · Transfer {price}",
+    "tldPriceRestorePart": " · Wiederherstellung {price}"
   },
   "myDomains": {
     "title": "Meine Domains",
@@ -1529,5 +1538,47 @@
     "dnssecAlgorithm": "Algorithmus",
     "dnssecDigestType": "Digest-Typ",
     "dnssecDigest": "Digest"
+  },
+  "allOrders": {
+    "title": "Alle Bestellungen",
+    "subtitle": "Dienst-, Hosting- und Domain-Bestellungen an einem Ort verwalten.",
+    "tabServices": "Dienste",
+    "tabHosting": "Hosting",
+    "tabDomains": "Domains",
+    "statTotal": "Bestellungen gesamt",
+    "statServices": "Dienste",
+    "statHosting": "Hosting",
+    "statDomains": "Domains",
+    "statPending": "Ausstehend",
+    "statRevenue": "Bezahlter Umsatz"
+  },
+  "domainOrdersAdmin": {
+    "subtitle": "Über Stripe bezahlte Registrierungen, die automatisch ausgeführt werden. Getrennt von Dienst- und Hosting-Bestellungen.",
+    "filterAll": "Alle",
+    "filterAllTypes": "Alle Typen",
+    "listTitle": "Bestellungen",
+    "loading": "Laden…",
+    "empty": "Noch keine Domain-Bestellungen.",
+    "colOrder": "Bestellung",
+    "colType": "Typ",
+    "colDomain": "Domain",
+    "colCustomer": "Kunde",
+    "colTotal": "Gesamt",
+    "colStatus": "Status",
+    "colActions": "Aktionen",
+    "view": "Ansehen",
+    "retry": "Erneut",
+    "close": "Schließen",
+    "years": "Jahre",
+    "premiumPrice": "Premiumpreis",
+    "retryOk": "Erneut versuchen abgeschlossen",
+    "retryFailed": "Erneut versuchen fehlgeschlagen",
+    "statusPENDING": "Ausstehend",
+    "statusPAID": "Bezahlt",
+    "statusREGISTERED": "Registriert",
+    "statusFAILED": "Fehlgeschlagen",
+    "typeREGISTRATION": "Registrierung",
+    "typeRENEWAL": "Verlängerung",
+    "typeTRANSFER": "Transfer"
   }
 }

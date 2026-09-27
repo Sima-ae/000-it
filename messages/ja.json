@@ -547,7 +547,8 @@
     "orderStatus_FAILED": "失敗",
     "orderStatus_CANCELLED": "キャンセル",
     "orderStatus_REGISTERED": "登録済み",
-    "navBadgeNew": "{count} 件の新着"
+    "navBadgeNew": "{count} 件の新着",
+    "allOrders": "すべての注文"
   },
   "contact": {
     "title": "お問い合わせ",
@@ -1448,7 +1449,15 @@
     "transferAuthPlaceholder": "Auth / EPP / 移管コード",
     "transferAuthRequired": "有効な auth / EPP コードを入力してください（4文字以上）。",
     "yearsLabel": "Years",
-    "invoiceEmailSent": "税内訳付きの PDF 請求書をメールで送信しました。"
+    "invoiceEmailSent": "税内訳付きの PDF 請求書をメールで送信しました。",
+    "homeTitle": "ドメイン名を見つける",
+    "homeSubtitle": "空き状況をすぐに確認し、安全な決済で登録できます。",
+    "yearsCount": "{count, plural, other {# 年}}",
+    "paymentMethods": "Stripe · iDEAL / カード",
+    "tldPriceTitle": ".{tld} · 登録 {register}{renew}{transfer}{restore}",
+    "tldPriceRenewPart": " · 更新 {price}",
+    "tldPriceTransferPart": " · 移管 {price}",
+    "tldPriceRestorePart": " · 復元 {price}"
   },
   "myDomains": {
     "title": "私のドメイン",
@@ -1529,5 +1538,47 @@
     "dnssecAlgorithm": "アルゴリズム",
     "dnssecDigestType": "Digest タイプ",
     "dnssecDigest": "Digest"
+  },
+  "allOrders": {
+    "title": "すべての注文",
+    "subtitle": "サービス・ホスティング・ドメインの注文を一箇所で確認・管理します。",
+    "tabServices": "サービス",
+    "tabHosting": "ホスティング",
+    "tabDomains": "ドメイン",
+    "statTotal": "注文合計",
+    "statServices": "サービス",
+    "statHosting": "ホスティング",
+    "statDomains": "ドメイン",
+    "statPending": "保留中",
+    "statRevenue": "支払済み売上"
+  },
+  "domainOrdersAdmin": {
+    "subtitle": "Registrations paid via Stripe and fulfilled automatically. Separate from service and hosting orders.",
+    "filterAll": "All",
+    "filterAllTypes": "All types",
+    "listTitle": "Orders",
+    "loading": "Loading…",
+    "empty": "No domain orders yet.",
+    "colOrder": "Order",
+    "colType": "Type",
+    "colDomain": "Domain",
+    "colCustomer": "Customer",
+    "colTotal": "Total",
+    "colStatus": "Status",
+    "colActions": "Actions",
+    "view": "View",
+    "retry": "Retry",
+    "close": "Close",
+    "years": "Years",
+    "premiumPrice": "Premium price",
+    "retryOk": "Retry completed",
+    "retryFailed": "Retry failed",
+    "statusPENDING": "Pending",
+    "statusPAID": "Paid",
+    "statusREGISTERED": "Registered",
+    "statusFAILED": "Failed",
+    "typeREGISTRATION": "Registration",
+    "typeRENEWAL": "Renewal",
+    "typeTRANSFER": "Transfer"
   }
 }

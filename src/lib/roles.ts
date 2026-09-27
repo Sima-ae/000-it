@@ -146,6 +146,7 @@ export const dashboardNav: DashboardNavItem[] = [
     href: "/orders",
     key: "orders",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
+    sidebar: false,
   },
   {
     href: "/hosting-admin",
@@ -156,6 +157,7 @@ export const dashboardNav: DashboardNavItem[] = [
     href: "/hosting-orders",
     key: "hostingOrders",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
+    sidebar: false,
   },
   {
     href: "/domains-admin",
@@ -165,6 +167,12 @@ export const dashboardNav: DashboardNavItem[] = [
   {
     href: "/domain-orders",
     key: "domainOrders",
+    roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
+    sidebar: false,
+  },
+  {
+    href: "/all-orders",
+    key: "allOrders",
     roles: ["SUPER_ADMIN", "ADMIN", "MANAGER"],
   },
   {

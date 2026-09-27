@@ -547,7 +547,8 @@
     "orderStatus_FAILED": "Ձախողված",
     "orderStatus_CANCELLED": "Չեղարկված",
     "orderStatus_REGISTERED": "Գրանցված",
-    "navBadgeNew": "{count} նոր"
+    "navBadgeNew": "{count} նոր",
+    "allOrders": "Բոլոր պատվերները"
   },
   "contact": {
     "title": "Կապ",
@@ -1448,7 +1449,15 @@
     "transferPay": "Վճարել և փոխանցել",
     "ctaMyDomains": "Կառավարեք իմ տիրույթները",
     "yearsLabel": "Years",
-    "invoiceEmailSent": "ԱԱՀ-ի բաշխմամբ PDF հաշիվ-ապրանքագիրը ուղարկվել է էլ. փոստով։"
+    "invoiceEmailSent": "ԱԱՀ-ի բաշխմամբ PDF հաշիվ-ապրանքագիրը ուղարկվել է էլ. փոստով։",
+    "homeTitle": "Գտեք ձեր դոմենի անունը",
+    "homeSubtitle": "Անմիջապես ստուգեք հասանելիությունը և գրանցեք անվտանգ վճարմամբ։",
+    "yearsCount": "{count, plural, one {# տարի} other {# տարի}}",
+    "paymentMethods": "Stripe · iDEAL / քարտ",
+    "tldPriceTitle": ".{tld} · գրանցում {register}{renew}{transfer}{restore}",
+    "tldPriceRenewPart": " · երկարացում {price}",
+    "tldPriceTransferPart": " · փոխանցում {price}",
+    "tldPriceRestorePart": " · վերականգնում {price}"
   },
   "myDomains": {
     "title": "Իմ տիրույթները",
@@ -1529,5 +1538,47 @@
     "dnssecAlgorithm": "Ալգորիթմ",
     "dnssecDigestType": "Digest տեսակ",
     "dnssecDigest": "Digest"
+  },
+  "allOrders": {
+    "title": "Բոլոր պատվերները",
+    "subtitle": "Դիտեք և կառավարեք ծառայությունների, հոսթինգի և դոմենների պատվերները մեկ տեղում։",
+    "tabServices": "Ծառայություններ",
+    "tabHosting": "Հոսթինգ",
+    "tabDomains": "Դոմեններ",
+    "statTotal": "Ընդամենը պատվերներ",
+    "statServices": "Ծառայություններ",
+    "statHosting": "Հոսթինգ",
+    "statDomains": "Դոմեններ",
+    "statPending": "Սպասման մեջ",
+    "statRevenue": "Վճարված եկամուտ"
+  },
+  "domainOrdersAdmin": {
+    "subtitle": "Registrations paid via Stripe and fulfilled automatically. Separate from service and hosting orders.",
+    "filterAll": "All",
+    "filterAllTypes": "All types",
+    "listTitle": "Orders",
+    "loading": "Loading…",
+    "empty": "No domain orders yet.",
+    "colOrder": "Order",
+    "colType": "Type",
+    "colDomain": "Domain",
+    "colCustomer": "Customer",
+    "colTotal": "Total",
+    "colStatus": "Status",
+    "colActions": "Actions",
+    "view": "View",
+    "retry": "Retry",
+    "close": "Close",
+    "years": "Years",
+    "premiumPrice": "Premium price",
+    "retryOk": "Retry completed",
+    "retryFailed": "Retry failed",
+    "statusPENDING": "Pending",
+    "statusPAID": "Paid",
+    "statusREGISTERED": "Registered",
+    "statusFAILED": "Failed",
+    "typeREGISTRATION": "Registration",
+    "typeRENEWAL": "Renewal",
+    "typeTRANSFER": "Transfer"
   }
 }

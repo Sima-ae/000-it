@@ -547,7 +547,8 @@
     "orderStatus_FAILED": "Epäonnistui",
     "orderStatus_CANCELLED": "Peruttu",
     "orderStatus_REGISTERED": "Rekisteröity",
-    "navBadgeNew": "{count} uutta"
+    "navBadgeNew": "{count} uutta",
+    "allOrders": "Kaikki tilaukset"
   },
   "contact": {
     "title": "Ota yhteyttä",
@@ -1448,7 +1449,15 @@
     "transferPay": "Maksa ja siirrä",
     "ctaMyDomains": "Hallinnoi verkkotunnuksiani",
     "yearsLabel": "Years",
-    "invoiceEmailSent": "PDF-lasku ALV-erittelyllä on lähetetty sähköpostitse."
+    "invoiceEmailSent": "PDF-lasku ALV-erittelyllä on lähetetty sähköpostitse.",
+    "homeTitle": "Löydä verkkotunnuksesi",
+    "homeSubtitle": "Tarkista saatavuus heti ja rekisteröi turvallisella maksulla.",
+    "yearsCount": "{count, plural, one {# vuosi} other {# vuotta}}",
+    "paymentMethods": "Stripe · iDEAL / kortti",
+    "tldPriceTitle": ".{tld} · rekisteröinti {register}{renew}{transfer}{restore}",
+    "tldPriceRenewPart": " · uusiminen {price}",
+    "tldPriceTransferPart": " · siirto {price}",
+    "tldPriceRestorePart": " · palautus {price}"
   },
   "myDomains": {
     "title": "Omat verkkotunnukset",
@@ -1529,5 +1538,47 @@
     "dnssecAlgorithm": "Algoritmi",
     "dnssecDigestType": "Digest-tyyppi",
     "dnssecDigest": "Digest"
+  },
+  "allOrders": {
+    "title": "Kaikki tilaukset",
+    "subtitle": "Tarkastele ja hallitse palvelu-, hosting- ja verkkotunnustilauksia yhdessä paikassa.",
+    "tabServices": "Palvelut",
+    "tabHosting": "Hosting",
+    "tabDomains": "Verkkotunnukset",
+    "statTotal": "Tilauksia yhteensä",
+    "statServices": "Palvelut",
+    "statHosting": "Hosting",
+    "statDomains": "Verkkotunnukset",
+    "statPending": "Odottaa",
+    "statRevenue": "Maksettu liikevaihto"
+  },
+  "domainOrdersAdmin": {
+    "subtitle": "Registrations paid via Stripe and fulfilled automatically. Separate from service and hosting orders.",
+    "filterAll": "All",
+    "filterAllTypes": "All types",
+    "listTitle": "Orders",
+    "loading": "Loading…",
+    "empty": "No domain orders yet.",
+    "colOrder": "Order",
+    "colType": "Type",
+    "colDomain": "Domain",
+    "colCustomer": "Customer",
+    "colTotal": "Total",
+    "colStatus": "Status",
+    "colActions": "Actions",
+    "view": "View",
+    "retry": "Retry",
+    "close": "Close",
+    "years": "Years",
+    "premiumPrice": "Premium price",
+    "retryOk": "Retry completed",
+    "retryFailed": "Retry failed",
+    "statusPENDING": "Pending",
+    "statusPAID": "Paid",
+    "statusREGISTERED": "Registered",
+    "statusFAILED": "Failed",
+    "typeREGISTRATION": "Registration",
+    "typeRENEWAL": "Renewal",
+    "typeTRANSFER": "Transfer"
   }
 }

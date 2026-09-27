@@ -547,7 +547,8 @@
     "orderStatus_FAILED": "Eșuat",
     "orderStatus_CANCELLED": "Anulat",
     "orderStatus_REGISTERED": "Înregistrat",
-    "navBadgeNew": "{count} noi"
+    "navBadgeNew": "{count} noi",
+    "allOrders": "Toate comenzile"
   },
   "contact": {
     "title": "Contact",
@@ -1448,7 +1449,15 @@
     "transferPay": "Plătește și transferă",
     "ctaMyDomains": "Gestionați-mi domeniile",
     "yearsLabel": "Years",
-    "invoiceEmailSent": "O factură PDF cu detalierea TVA a fost trimisă pe e-mail."
+    "invoiceEmailSent": "O factură PDF cu detalierea TVA a fost trimisă pe e-mail.",
+    "homeTitle": "Găsește-ți numele de domeniu",
+    "homeSubtitle": "Verifică disponibilitatea instant și înregistrează cu plată sigură.",
+    "yearsCount": "{count, plural, one {# an} few {# ani} other {# de ani}}",
+    "paymentMethods": "Stripe · iDEAL / card",
+    "tldPriceTitle": ".{tld} · înregistrare {register}{renew}{transfer}{restore}",
+    "tldPriceRenewPart": " · reînnoire {price}",
+    "tldPriceTransferPart": " · transfer {price}",
+    "tldPriceRestorePart": " · restaurare {price}"
   },
   "myDomains": {
     "title": "Domeniile mele",
@@ -1529,5 +1538,47 @@
     "dnssecAlgorithm": "Algoritm",
     "dnssecDigestType": "Tip digest",
     "dnssecDigest": "Digest"
+  },
+  "allOrders": {
+    "title": "Toate comenzile",
+    "subtitle": "Vizualizează și gestionează comenzile de servicii, hosting și domenii într-un singur loc.",
+    "tabServices": "Servicii",
+    "tabHosting": "Hosting",
+    "tabDomains": "Domenii",
+    "statTotal": "Total comenzi",
+    "statServices": "Servicii",
+    "statHosting": "Hosting",
+    "statDomains": "Domenii",
+    "statPending": "În așteptare",
+    "statRevenue": "Venit plătit"
+  },
+  "domainOrdersAdmin": {
+    "subtitle": "Registrations paid via Stripe and fulfilled automatically. Separate from service and hosting orders.",
+    "filterAll": "All",
+    "filterAllTypes": "All types",
+    "listTitle": "Orders",
+    "loading": "Loading…",
+    "empty": "No domain orders yet.",
+    "colOrder": "Order",
+    "colType": "Type",
+    "colDomain": "Domain",
+    "colCustomer": "Customer",
+    "colTotal": "Total",
+    "colStatus": "Status",
+    "colActions": "Actions",
+    "view": "View",
+    "retry": "Retry",
+    "close": "Close",
+    "years": "Years",
+    "premiumPrice": "Premium price",
+    "retryOk": "Retry completed",
+    "retryFailed": "Retry failed",
+    "statusPENDING": "Pending",
+    "statusPAID": "Paid",
+    "statusREGISTERED": "Registered",
+    "statusFAILED": "Failed",
+    "typeREGISTRATION": "Registration",
+    "typeRENEWAL": "Renewal",
+    "typeTRANSFER": "Transfer"
   }
 }

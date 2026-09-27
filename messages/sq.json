@@ -547,7 +547,8 @@
     "orderStatus_FAILED": "Dështoi",
     "orderStatus_CANCELLED": "Anuluar",
     "orderStatus_REGISTERED": "Regjistruar",
-    "navBadgeNew": "{count} të reja"
+    "navBadgeNew": "{count} të reja",
+    "allOrders": "Të gjitha porositë"
   },
   "contact": {
     "title": "Kontaktoni",
@@ -1448,7 +1449,15 @@
     "transferPay": "Paguaj dhe transfero",
     "ctaMyDomains": "Menaxho domenet e mia",
     "yearsLabel": "Years",
-    "invoiceEmailSent": "Fatura PDF me ndarjen e TVSH-së u dërgua me email."
+    "invoiceEmailSent": "Fatura PDF me ndarjen e TVSH-së u dërgua me email.",
+    "homeTitle": "Gjeni emrin tuaj të domainit",
+    "homeSubtitle": "Kontrolloni menjëherë disponueshmërinë dhe regjistroni me pagesë të sigurt.",
+    "yearsCount": "{count, plural, one {# vit} other {# vite}}",
+    "paymentMethods": "Stripe · iDEAL / kartë",
+    "tldPriceTitle": ".{tld} · regjistrim {register}{renew}{transfer}{restore}",
+    "tldPriceRenewPart": " · rinovim {price}",
+    "tldPriceTransferPart": " · transferim {price}",
+    "tldPriceRestorePart": " · rivendosje {price}"
   },
   "myDomains": {
     "title": "Domenet e mia",
@@ -1529,5 +1538,47 @@
     "dnssecAlgorithm": "Algoritmi",
     "dnssecDigestType": "Lloji digest",
     "dnssecDigest": "Digest"
+  },
+  "allOrders": {
+    "title": "Të gjitha porositë",
+    "subtitle": "Shikoni dhe menaxhoni porositë e shërbimeve, hostingut dhe domeneve në një vend.",
+    "tabServices": "Shërbime",
+    "tabHosting": "Hosting",
+    "tabDomains": "Domene",
+    "statTotal": "Totali i porosive",
+    "statServices": "Shërbime",
+    "statHosting": "Hosting",
+    "statDomains": "Domene",
+    "statPending": "Në pritje",
+    "statRevenue": "Të ardhurat e paguara"
+  },
+  "domainOrdersAdmin": {
+    "subtitle": "Registrations paid via Stripe and fulfilled automatically. Separate from service and hosting orders.",
+    "filterAll": "All",
+    "filterAllTypes": "All types",
+    "listTitle": "Orders",
+    "loading": "Loading…",
+    "empty": "No domain orders yet.",
+    "colOrder": "Order",
+    "colType": "Type",
+    "colDomain": "Domain",
+    "colCustomer": "Customer",
+    "colTotal": "Total",
+    "colStatus": "Status",
+    "colActions": "Actions",
+    "view": "View",
+    "retry": "Retry",
+    "close": "Close",
+    "years": "Years",
+    "premiumPrice": "Premium price",
+    "retryOk": "Retry completed",
+    "retryFailed": "Retry failed",
+    "statusPENDING": "Pending",
+    "statusPAID": "Paid",
+    "statusREGISTERED": "Registered",
+    "statusFAILED": "Failed",
+    "typeREGISTRATION": "Registration",
+    "typeRENEWAL": "Renewal",
+    "typeTRANSFER": "Transfer"
   }
 }
