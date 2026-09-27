@@ -8,7 +8,9 @@ import {
   premiumRegisterBuyUsd,
   premiumRenewBuyUsd,
   premiumTransferBuyUsd,
+  type DomainCheckResult,
 } from "@/lib/domains/namecheap";
+import { checkDomainsForManualTlds } from "@/lib/domains/regery-availability";
 import {
   sellPriceCents,
   renewSellPriceCents,
@@ -62,18 +64,6 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "Too many requests" }, { status: 429 });
   }
 
-  if (!isNamecheapConfigured()) {
-    const missing = namecheapMissingEnv();
-    return NextResponse.json(
-      {
-        error: missing.length
-          ? `Domain check unavailable — missing ${missing.join(", ")}. Restart the app after updating .env`
-          : "Domain check is temporarily unavailable",
-      },
-      { status: 503 },
-    );
-  }
-
   const { searchParams } = new URL(request.url);
   const raw = (searchParams.get("domain") || searchParams.get("q") || "").trim().toLowerCase();
   const tldsParam = (searchParams.get("tlds") || "").trim().toLowerCase();
@@ -113,6 +103,9 @@ export async function GET(request: Request) {
       return [p.tld, restore > 0 ? restore : null] as const;
     }),
   );
+  const manualByTld = new Map(
+    activeProducts.map((p) => [p.tld, Boolean(p.manualPricing)] as const),
+  );
 
   const sldFromFqdn = fqdnSchema.safeParse(raw).success
     ? raw.slice(0, raw.lastIndexOf("."))
@@ -142,14 +135,40 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "No active TLDs to check" }, { status: 400 });
   }
 
+  const namecheapPairs = pairs.filter((p) => !manualByTld.get(p.tld));
+  const manualPairs = pairs.filter((p) => manualByTld.get(p.tld));
+
+  if (namecheapPairs.length && !isNamecheapConfigured()) {
+    const missing = namecheapMissingEnv();
+    return NextResponse.json(
+      {
+        error: missing.length
+          ? `Domain check unavailable — missing ${missing.join(", ")}. Restart the app after updating .env`
+          : "Domain check is temporarily unavailable",
+      },
+      { status: 503 },
+    );
+  }
+
   try {
-    const [checked, fxRate] = await Promise.all([
-      checkDomains(pairs.map((p) => p.domain)),
+    const [ncChecked, manualChecked, fxRate] = await Promise.all([
+      namecheapPairs.length
+        ? checkDomains(namecheapPairs.map((p) => p.domain))
+        : Promise.resolve([] as DomainCheckResult[]),
+      manualPairs.length
+        ? checkDomainsForManualTlds(manualPairs.map((p) => p.domain))
+        : Promise.resolve([] as DomainCheckResult[]),
       getUsdToEurRate(),
     ]);
-    const byDomain = new Map(
-      checked.map((row) => [row.domain.toLowerCase(), row] as const),
-    );
+
+    const byDomain = new Map<string, DomainCheckResult>();
+    for (const row of ncChecked) {
+      byDomain.set(row.domain.toLowerCase(), row);
+    }
+    for (const row of manualChecked) {
+      byDomain.set(row.domain.toLowerCase(), row);
+    }
+
     const preferredTld = sldFromFqdn
       ? raw.slice(raw.lastIndexOf(".") + 1)
       : "";
@@ -200,6 +219,7 @@ export async function GET(request: Request) {
           transferPriceInCents,
           restorePriceInCents,
           tld,
+          source: manualByTld.get(tld) ? "regery" : "namecheap",
         };
       })
       .sort((a, b) => {

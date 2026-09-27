@@ -438,7 +438,7 @@ export default function DomainsAdminPage() {
           {isLoading ? (
             <p className="text-sm text-muted-foreground">Loading…</p>
           ) : (
-            <table className="w-full min-w-[92rem] border-collapse text-left text-sm">
+            <table className="w-full min-w-368 border-collapse text-left text-sm">
               <thead className="border-b border-border text-muted-foreground">
                 <tr>
                   <th className="py-2 pr-3">TLD</th>
