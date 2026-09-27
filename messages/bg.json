@@ -1397,6 +1397,8 @@
     "ctaBook": "Запазете час",
     "ctaContact": "Contact",
     "renewalPrice": "Подновяване от {price}/год.",
+    "transferPrice": "Transfer from {price}",
+    "restorePrice": "Restore from {price}",
     "tabPopular": "Популярни",
     "tabPremium": "Premium",
     "tabAll": "Всички",

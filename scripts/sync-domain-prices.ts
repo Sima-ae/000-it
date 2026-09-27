@@ -11,7 +11,19 @@ async function main() {
   const withRenew = await prisma.domainProduct.count({
     where: { renewBasePriceInCents: { gt: 0 } },
   });
-  console.log(JSON.stringify({ ...result, dbCount: count, withRenew }, null, 2));
+  const withTransfer = await prisma.domainProduct.count({
+    where: { transferBasePriceInCents: { gt: 0 } },
+  });
+  const withRestore = await prisma.domainProduct.count({
+    where: { restoreBasePriceInCents: { gt: 0 } },
+  });
+  console.log(
+    JSON.stringify(
+      { ...result, dbCount: count, withRenew, withTransfer, withRestore },
+      null,
+      2,
+    ),
+  );
   await prisma.$disconnect();
 }
 

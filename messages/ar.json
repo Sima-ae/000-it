@@ -1397,6 +1397,8 @@
     "ctaBook": "حجز موعد",
     "ctaContact": "Contact",
     "renewalPrice": "التجديد من {price}/سنة",
+    "transferPrice": "Transfer from {price}",
+    "restorePrice": "Restore from {price}",
     "tabPopular": "شائع",
     "tabPremium": "Premium",
     "tabAll": "الجميع",

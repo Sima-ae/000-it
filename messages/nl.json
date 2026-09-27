@@ -1397,6 +1397,8 @@
     "ctaBook": "Afspraak maken",
     "ctaContact": "Contact",
     "renewalPrice": "Verlengen vanaf {price}/jr",
+    "transferPrice": "Transfer vanaf {price}",
+    "restorePrice": "Herstel vanaf {price}",
     "tabPopular": "Populair",
     "tabPremium": "Premium",
     "tabAll": "Alle",

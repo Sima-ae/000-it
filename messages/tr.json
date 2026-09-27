@@ -1397,6 +1397,8 @@
     "ctaBook": "Book appointment",
     "ctaContact": "Contact",
     "renewalPrice": "Yenileme {price}/yıl’dan",
+    "transferPrice": "Transfer from {price}",
+    "restorePrice": "Restore from {price}",
     "tabPopular": "Popüler",
     "tabPremium": "Premium",
     "tabAll": "Tümü",

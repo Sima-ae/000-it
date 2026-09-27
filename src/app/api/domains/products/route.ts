@@ -3,6 +3,8 @@ import { prisma } from "@/lib/prisma";
 import {
   sellPriceCents,
   renewSellPriceCents,
+  transferSellPriceCents,
+  restoreSellPriceCents,
   effectiveSellPriceCents,
   formatEuroFromCents,
   hasOfferPrice,
@@ -22,6 +24,8 @@ export async function GET() {
     const listPriceInCents = sellPriceCents(p);
     const priceInCents = effectiveSellPriceCents(p);
     const renewPriceInCents = renewSellPriceCents(p);
+    const transferPriceInCents = transferSellPriceCents(p);
+    const restorePriceInCents = restoreSellPriceCents(p);
     const onOffer = hasOfferPrice(p);
     return {
       tld: p.tld,
@@ -34,8 +38,22 @@ export async function GET() {
       renewPriceInCents: renewPriceInCents > 0 ? renewPriceInCents : null,
       renewPriceLabel:
         renewPriceInCents > 0 ? formatEuroFromCents(renewPriceInCents) : null,
+      transferPriceInCents:
+        transferPriceInCents > 0 ? transferPriceInCents : null,
+      transferPriceLabel:
+        transferPriceInCents > 0
+          ? formatEuroFromCents(transferPriceInCents)
+          : null,
+      restorePriceInCents:
+        restorePriceInCents > 0 ? restorePriceInCents : null,
+      restorePriceLabel:
+        restorePriceInCents > 0
+          ? formatEuroFromCents(restorePriceInCents)
+          : null,
       basePriceInCents: p.basePriceInCents,
       renewBasePriceInCents: p.renewBasePriceInCents,
+      transferBasePriceInCents: p.transferBasePriceInCents,
+      restoreBasePriceInCents: p.restoreBasePriceInCents,
     };
   });
 

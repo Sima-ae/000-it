@@ -7,6 +7,7 @@ import { checkDomains, isNamecheapConfigured, premiumRegisterBuyUsd, premiumTran
 import {
   effectiveSellPriceCents,
   renewSellPriceCents,
+  transferSellPriceCents,
 } from "@/lib/domains/pricing";
 import { getUsdToEurRate } from "@/lib/domains/fx";
 import { sellFromBuyUsd } from "@/lib/domains/premium-price";
@@ -229,7 +230,9 @@ export async function POST(request: Request) {
         }
       } else {
         unitCents =
-          renewSellPriceCents(product) || effectiveSellPriceCents(product);
+          transferSellPriceCents(product) ||
+          renewSellPriceCents(product) ||
+          effectiveSellPriceCents(product);
       }
     }
 

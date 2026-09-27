@@ -6,6 +6,8 @@ import { isSuperAdmin } from "@/lib/roles";
 import {
   sellPriceCents,
   renewSellPriceCents,
+  transferSellPriceCents,
+  restoreSellPriceCents,
   effectiveSellPriceCents,
   markupPercentForBuyPriceCents,
 } from "@/lib/domains/pricing";
@@ -16,16 +18,37 @@ const upsertSchema = z.object({
   tld: z
     .string()
     .min(2)
-    .max(30)
-    .regex(/^[a-z0-9-]+$/i)
+    .max(63)
+    .regex(
+      /^[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)*$/i,
+    )
     .transform((v) => v.toLowerCase().replace(/^\./, "")),
   markupFixedCents: z.number().int().nonnegative().max(1_000_000).optional(),
   markupPercent: z.number().nonnegative().max(500).optional(),
   isActive: z.boolean().default(true),
   /** SUPER_ADMIN only — registration buy price (EUR cents). */
-  basePriceInCents: z.number().int().positive().max(10_000_000).optional(),
+  basePriceInCents: z.number().int().positive().max(50_000_000).optional(),
   /** SUPER_ADMIN only — renew buy price (EUR cents). */
-  renewBasePriceInCents: z.number().int().nonnegative().max(10_000_000).optional(),
+  renewBasePriceInCents: z
+    .number()
+    .int()
+    .nonnegative()
+    .max(50_000_000)
+    .optional(),
+  /** SUPER_ADMIN only — transfer-in buy price (EUR cents). */
+  transferBasePriceInCents: z
+    .number()
+    .int()
+    .nonnegative()
+    .max(50_000_000)
+    .optional(),
+  /** SUPER_ADMIN only — restore / reactivate buy price (EUR cents). */
+  restoreBasePriceInCents: z
+    .number()
+    .int()
+    .nonnegative()
+    .max(50_000_000)
+    .optional(),
   /** SUPER_ADMIN only — lock prices against supplier sync. */
   manualPricing: z.boolean().optional(),
   offerPriceInCents: z
@@ -40,6 +63,8 @@ const upsertSchema = z.object({
 function withPrices<
   T extends Parameters<typeof sellPriceCents>[0] & {
     renewBasePriceInCents?: number;
+    transferBasePriceInCents?: number;
+    restoreBasePriceInCents?: number;
     basePriceInCents: number;
   },
 >(p: T) {
@@ -54,6 +79,12 @@ function withPrices<
     effectiveSellPriceInCents: effective,
     renewSellPriceInCents: renewSellPriceCents({
       renewBasePriceInCents: p.renewBasePriceInCents ?? 0,
+    }),
+    transferSellPriceInCents: transferSellPriceCents({
+      transferBasePriceInCents: p.transferBasePriceInCents ?? 0,
+    }),
+    restoreSellPriceInCents: restoreSellPriceCents({
+      restoreBasePriceInCents: p.restoreBasePriceInCents ?? 0,
     }),
   };
 }
@@ -90,6 +121,9 @@ export async function POST(request: Request) {
   const basePriceInCents = data.basePriceInCents;
   const renewBasePriceInCents =
     data.renewBasePriceInCents ?? data.basePriceInCents;
+  const transferBasePriceInCents =
+    data.transferBasePriceInCents ?? renewBasePriceInCents;
+  const restoreBasePriceInCents = data.restoreBasePriceInCents ?? 0;
   const markupPercent = markupPercentForBuyPriceCents(basePriceInCents);
 
   const item = await prisma.domainProduct.upsert({
@@ -98,6 +132,8 @@ export async function POST(request: Request) {
       tld: data.tld,
       basePriceInCents,
       renewBasePriceInCents,
+      transferBasePriceInCents,
+      restoreBasePriceInCents,
       markupFixedCents: 0,
       markupPercent,
       manualPricing: true,
@@ -107,6 +143,8 @@ export async function POST(request: Request) {
     update: {
       basePriceInCents,
       renewBasePriceInCents,
+      transferBasePriceInCents,
+      restoreBasePriceInCents,
       markupFixedCents: 0,
       markupPercent,
       manualPricing: true,
@@ -138,11 +176,13 @@ export async function PATCH(request: Request) {
   const wantsPriceEdit =
     data.basePriceInCents != null ||
     data.renewBasePriceInCents != null ||
+    data.transferBasePriceInCents != null ||
+    data.restoreBasePriceInCents != null ||
     data.manualPricing != null;
 
   if (wantsPriceEdit && !superAdmin) {
     return NextResponse.json(
-      { error: "Only SUPER_ADMIN may edit buy / renew prices" },
+      { error: "Only SUPER_ADMIN may edit buy / renew / transfer / restore prices" },
       { status: 403 },
     );
   }
@@ -156,10 +196,16 @@ export async function PATCH(request: Request) {
 
   const basePriceInCents = data.basePriceInCents ?? existing.basePriceInCents;
 
+  const touchedSupplierPrices =
+    data.basePriceInCents != null ||
+    data.renewBasePriceInCents != null ||
+    data.transferBasePriceInCents != null ||
+    data.restoreBasePriceInCents != null;
+
   const manualPricing = superAdmin
     ? data.manualPricing != null
       ? data.manualPricing
-      : data.basePriceInCents != null || data.renewBasePriceInCents != null
+      : touchedSupplierPrices
         ? true
         : existing.manualPricing
     : existing.manualPricing;
@@ -175,6 +221,12 @@ export async function PATCH(request: Request) {
         : {}),
       ...(superAdmin && data.renewBasePriceInCents != null
         ? { renewBasePriceInCents: data.renewBasePriceInCents }
+        : {}),
+      ...(superAdmin && data.transferBasePriceInCents != null
+        ? { transferBasePriceInCents: data.transferBasePriceInCents }
+        : {}),
+      ...(superAdmin && data.restoreBasePriceInCents != null
+        ? { restoreBasePriceInCents: data.restoreBasePriceInCents }
         : {}),
       ...(superAdmin ? { manualPricing } : {}),
       ...(data.offerPriceInCents !== undefined

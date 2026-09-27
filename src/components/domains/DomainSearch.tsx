@@ -54,6 +54,10 @@ type TldProduct = {
   onOffer?: boolean;
   renewPriceInCents: number | null;
   renewPriceLabel: string | null;
+  transferPriceInCents?: number | null;
+  transferPriceLabel?: string | null;
+  restorePriceInCents?: number | null;
+  restorePriceLabel?: string | null;
 };
 
 type CheckResult = {
@@ -65,6 +69,8 @@ type CheckResult = {
   listPriceInCents?: number | null;
   onOffer?: boolean;
   renewPriceInCents: number | null;
+  transferPriceInCents?: number | null;
+  restorePriceInCents?: number | null;
   tld: string;
 };
 
@@ -338,12 +344,23 @@ export function DomainSearch() {
 
   const transferPriceLabel = useMemo(() => {
     if (!transferDomain) return null;
+    const fromCheck =
+      transferDomain.transferPriceInCents &&
+      transferDomain.transferPriceInCents > 0
+        ? transferDomain.transferPriceInCents
+        : null;
+    const fromCatalog = products.find((p) => p.tld === transferDomain.tld);
     const cents =
-      transferDomain.renewPriceInCents && transferDomain.renewPriceInCents > 0
+      fromCheck ??
+      (fromCatalog?.transferPriceInCents &&
+      fromCatalog.transferPriceInCents > 0
+        ? fromCatalog.transferPriceInCents
+        : null) ??
+      (transferDomain.renewPriceInCents && transferDomain.renewPriceInCents > 0
         ? transferDomain.renewPriceInCents
-        : transferDomain.priceInCents;
-    return formatPrice(cents, locale);
-  }, [transferDomain, locale]);
+        : transferDomain.priceInCents);
+    return cents && cents > 0 ? formatPrice(cents, locale) : null;
+  }, [transferDomain, products, locale]);
 
   const [isSearching, setIsSearching] = useState(false);
   const [isSearchingMore, setIsSearchingMore] = useState(false);
@@ -961,7 +978,17 @@ export function DomainSearch() {
                 key={p.tld}
                 type="button"
                 onClick={() => toggleTld(p.tld)}
-                title={`.${p.tld} · ${p.priceLabel}`}
+                title={`.${p.tld} · register ${p.priceLabel}${
+                  p.renewPriceLabel ? ` · renew ${p.renewPriceLabel}` : ""
+                }${
+                  p.transferPriceLabel
+                    ? ` · transfer ${p.transferPriceLabel}`
+                    : ""
+                }${
+                  p.restorePriceLabel
+                    ? ` · restore ${p.restorePriceLabel}`
+                    : ""
+                }`}
                 className={cn(
                   "w-full truncate rounded-full border px-1.5 py-1 text-center text-[10px] leading-tight transition sm:px-2 sm:text-[11px]",
                   on
@@ -1027,11 +1054,21 @@ export function DomainSearch() {
             </div>
             <div className="grid gap-3 sm:grid-cols-2">
               {visibleResults.map((row) => {
+                const product = products.find((p) => p.tld === row.tld);
                 const renew =
                   row.renewPriceInCents != null && row.renewPriceInCents > 0
                     ? formatPrice(row.renewPriceInCents, locale)
-                    : products.find((p) => p.tld === row.tld)?.renewPriceLabel ||
-                      null;
+                    : product?.renewPriceLabel || null;
+                const transfer =
+                  row.transferPriceInCents != null &&
+                  row.transferPriceInCents > 0
+                    ? formatPrice(row.transferPriceInCents, locale)
+                    : product?.transferPriceLabel || null;
+                const restore =
+                  row.restorePriceInCents != null &&
+                  row.restorePriceInCents > 0
+                    ? formatPrice(row.restorePriceInCents, locale)
+                    : product?.restorePriceLabel || null;
                 const tone = row.available
                   ? "text-accent"
                   : "text-red-600 dark:text-red-400";
@@ -1067,6 +1104,16 @@ export function DomainSearch() {
                       {renew ? (
                         <p className="mt-0.5 text-xs text-muted-foreground">
                           {t("renewalPrice", { price: renew })}
+                        </p>
+                      ) : null}
+                      {transfer ? (
+                        <p className="mt-0.5 text-xs text-muted-foreground">
+                          {t("transferPrice", { price: transfer })}
+                        </p>
+                      ) : null}
+                      {restore ? (
+                        <p className="mt-0.5 text-xs text-muted-foreground">
+                          {t("restorePrice", { price: restore })}
                         </p>
                       ) : null}
                     </div>

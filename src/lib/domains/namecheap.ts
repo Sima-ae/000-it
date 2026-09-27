@@ -339,10 +339,18 @@ function productsFromCategory(category: unknown): PricingRow[] {
   return out;
 }
 
-/** Register + renew 1-year USD prices from a single Namecheap pricing call. */
+/** Register + renew + transfer + restore (redemption) 1-year USD prices. */
 export async function getDomainPricingCatalog(): Promise<{
   register: PricingRow[];
   renew: PricingRow[];
+  transfer: PricingRow[];
+  /**
+   * Restore / RGP buy price.
+   * Prefer Namecheap "redemption"; fall back to "reactivate" when missing
+   * (reactivate alone is often just a grace renew ≈ renew price).
+   */
+  reactivate: PricingRow[];
+  categoryNames: string[];
 }> {
   if (!isNamecheapConfigured()) {
     throw new Error("NAMECHEAP_NOT_CONFIGURED");
@@ -373,15 +381,41 @@ export async function getDomainPricingCatalog(): Promise<{
       ? [categoriesRaw]
       : [];
 
-  const byName = (name: string) =>
-    categories.find(
-      (c) =>
-        String((c as { Name?: string }).Name || "").toLowerCase() === name,
-    );
+  const categoryNames = categories.map((c) =>
+    String((c as { Name?: string }).Name || "").toLowerCase(),
+  );
+
+  const findCat = (...needles: string[]) =>
+    categories.find((c) => {
+      const n = String((c as { Name?: string }).Name || "").toLowerCase();
+      return needles.some((needle) => n === needle);
+    });
+
+  const mergeUnique = (primary: PricingRow[], extra: PricingRow[]) => {
+    const have = new Set(primary.map((r) => r.tld));
+    const out = [...primary];
+    for (const row of extra) {
+      if (!have.has(row.tld)) {
+        have.add(row.tld);
+        out.push(row);
+      }
+    }
+    return out;
+  };
+
+  // Namecheap "reactivate" is often a grace renew (≈ renew price).
+  // True restore / RGP fee lives in "redemption" — prefer that for restore.
+  const reactivate = productsFromCategory(
+    findCat("reactivate") || findCat("restore"),
+  );
+  const redemption = productsFromCategory(findCat("redemption"));
 
   return {
-    register: productsFromCategory(byName("register") || categories[0]),
-    renew: productsFromCategory(byName("renew")),
+    register: productsFromCategory(findCat("register") || categories[0]),
+    renew: productsFromCategory(findCat("renew")),
+    transfer: productsFromCategory(findCat("transfer")),
+    reactivate: mergeUnique(redemption, reactivate),
+    categoryNames,
   };
 }
 

@@ -764,11 +764,15 @@ model DomainProduct {
   basePriceInCents      Int
   /// Namecheap renew (1 year) buy price in EUR cents — synced from pricing feed.
   renewBasePriceInCents Int           @default(0)
+  /// Transfer-in buy price in EUR cents (supplier / manual catalog).
+  transferBasePriceInCents Int        @default(0)
+  /// Restore / reactivate buy price in EUR cents (supplier / manual catalog).
+  restoreBasePriceInCents  Int        @default(0)
   markupFixedCents      Int           @default(0)
   markupPercent         Float         @default(0)
   /// Optional promo sell price (EUR cents). When set and below list, used at checkout.
   offerPriceInCents     Int?
-  /// When true, nightly/supplier sync must not overwrite buy/renew prices (manual TLDs / missing supplier pricing).
+  /// When true, nightly/supplier sync must not overwrite buy/renew/transfer/restore (manual TLDs).
   manualPricing         Boolean       @default(false)
   isActive              Boolean       @default(true)
   createdAt             DateTime      @default(now())

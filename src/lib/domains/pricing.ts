@@ -13,6 +13,22 @@ export type DomainRenewPricingInput = {
   markupPercent?: number;
 };
 
+export type DomainTransferPricingInput = {
+  transferBasePriceInCents: number;
+};
+
+export type DomainRestorePricingInput = {
+  restoreBasePriceInCents: number;
+};
+
+/** Sell = buy + tiered % of buy (EUR cents). Returns 0 when buy ≤ 0. */
+export function tieredSellFromBuyCents(buyPriceInCents: number): number {
+  const base = Math.max(0, Math.round(buyPriceInCents));
+  if (base <= 0) return 0;
+  const pct = markupPercentForBuyPriceCents(base);
+  return base + Math.round(base * (pct / 100));
+}
+
 /**
  * Markup % of the supplier buy price (euro cents).
  * Fixed € markup is always 0 — sell = buy + (buy × this %).
@@ -40,9 +56,7 @@ export function markupPercentForBuyPriceCents(buyPriceInCents: number): number {
 
 /** List / markup sell price incl. VAT (same convention as shop), euro cents. */
 export function sellPriceCents(product: DomainPricingInput): number {
-  const base = Math.max(0, Math.round(product.basePriceInCents));
-  const pct = markupPercentForBuyPriceCents(base);
-  return base + Math.round(base * (pct / 100));
+  return tieredSellFromBuyCents(product.basePriceInCents);
 }
 
 /** Effective registration price: offer when set and below list, otherwise list. */
@@ -66,10 +80,21 @@ export function hasOfferPrice(product: DomainPricingInput): boolean {
 
 /** Renewal sell price (1 year) — same tier rules on the renew buy price. */
 export function renewSellPriceCents(product: DomainRenewPricingInput): number {
-  const base = Math.max(0, Math.round(product.renewBasePriceInCents));
-  if (base <= 0) return 0;
-  const pct = markupPercentForBuyPriceCents(base);
-  return base + Math.round(base * (pct / 100));
+  return tieredSellFromBuyCents(product.renewBasePriceInCents);
+}
+
+/** Transfer-in sell price — same tier rules on the transfer buy price. */
+export function transferSellPriceCents(
+  product: DomainTransferPricingInput,
+): number {
+  return tieredSellFromBuyCents(product.transferBasePriceInCents);
+}
+
+/** Restore / reactivate sell price — same tier rules on the restore buy price. */
+export function restoreSellPriceCents(
+  product: DomainRestorePricingInput,
+): number {
+  return tieredSellFromBuyCents(product.restoreBasePriceInCents);
 }
 
 export function formatEuroFromCents(cents: number): string {

@@ -15,6 +15,8 @@ import {
   markupPercentForBuyPriceCents,
   sellPriceCents,
   renewSellPriceCents,
+  transferSellPriceCents,
+  restoreSellPriceCents,
 } from "@/lib/domains/pricing";
 import { isPremiumTld } from "@/lib/domains/tld-categories";
 import { PremiumBadge } from "@/components/domains/PremiumBadge";
@@ -24,6 +26,8 @@ type Product = {
   tld: string;
   basePriceInCents: number;
   renewBasePriceInCents: number;
+  transferBasePriceInCents?: number;
+  restoreBasePriceInCents?: number;
   markupFixedCents: number;
   markupPercent: number;
   offerPriceInCents: number | null;
@@ -32,11 +36,15 @@ type Product = {
   sellPriceInCents: number;
   effectiveSellPriceInCents: number;
   renewSellPriceInCents: number;
+  transferSellPriceInCents?: number;
+  restoreSellPriceInCents?: number;
 };
 
 type Draft = {
   buy: string;
   renew: string;
+  transfer: string;
+  restore: string;
   offer: string;
   manual: boolean;
   active: boolean;
@@ -77,6 +85,8 @@ export default function DomainsAdminPage() {
   const [newTld, setNewTld] = useState("");
   const [newBuy, setNewBuy] = useState("10");
   const [newRenew, setNewRenew] = useState("10");
+  const [newTransfer, setNewTransfer] = useState("");
+  const [newRestore, setNewRestore] = useState("");
   const [drafts, setDrafts] = useState<Record<string, Draft>>({});
   const [tldSearch, setTldSearch] = useState("");
 
@@ -94,6 +104,8 @@ export default function DomainsAdminPage() {
       drafts[p.tld] || {
         buy: euroInputFromCents(p.basePriceInCents),
         renew: euroInputFromCents(p.renewBasePriceInCents || 0),
+        transfer: euroInputFromCents(p.transferBasePriceInCents || 0),
+        restore: euroInputFromCents(p.restoreBasePriceInCents || 0),
         offer:
           p.offerPriceInCents != null && p.offerPriceInCents > 0
             ? euroInputFromCents(p.offerPriceInCents)
@@ -107,12 +119,24 @@ export default function DomainsAdminPage() {
   function previewSell(p: Product, d: Draft) {
     const buy = parseBuyCents(d.buy) ?? p.basePriceInCents;
     const renew = parseRenewCents(d.renew);
+    const transfer = parseRenewCents(d.transfer);
+    const restore = parseRenewCents(d.restore);
     const renewBase =
       renew != null ? renew : p.renewBasePriceInCents || 0;
+    const transferBase =
+      transfer != null ? transfer : p.transferBasePriceInCents || 0;
+    const restoreBase =
+      restore != null ? restore : p.restoreBasePriceInCents || 0;
     const list = sellPriceCents({ basePriceInCents: buy });
     const renewSell = renewSellPriceCents({ renewBasePriceInCents: renewBase });
+    const transferSell = transferSellPriceCents({
+      transferBasePriceInCents: transferBase,
+    });
+    const restoreSell = restoreSellPriceCents({
+      restoreBasePriceInCents: restoreBase,
+    });
     const pct = markupPercentForBuyPriceCents(buy);
-    return { list, renewSell, pct, buy };
+    return { list, renewSell, transferSell, restoreSell, pct, buy };
   }
 
   async function saveTld(tld: string) {
@@ -133,9 +157,13 @@ export default function DomainsAdminPage() {
         return;
       }
       const renewCents = parseRenewCents(d.renew);
+      const transferCents = parseRenewCents(d.transfer);
+      const restoreCents = parseRenewCents(d.restore);
       payload.basePriceInCents = buyCents;
       payload.renewBasePriceInCents =
         renewCents != null ? renewCents : buyCents;
+      payload.transferBasePriceInCents = transferCents ?? 0;
+      payload.restoreBasePriceInCents = restoreCents ?? 0;
       payload.manualPricing = d.manual;
     }
 
@@ -164,8 +192,13 @@ export default function DomainsAdminPage() {
       return;
     }
     const tld = newTld.trim().toLowerCase().replace(/^\./, "");
-    if (!/^[a-z0-9-]{2,30}$/.test(tld)) {
-      toast.error("Enter a valid TLD (e.g. shop or com)");
+    if (
+      !/^[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)*$/i.test(
+        tld,
+      ) ||
+      tld.length > 63
+    ) {
+      toast.error("Enter a valid TLD (e.g. shop, com, or co.uk)");
       return;
     }
     setAdding(true);
@@ -177,6 +210,8 @@ export default function DomainsAdminPage() {
       }
       const renewParsed = parseRenewCents(newRenew);
       const renewCents = renewParsed != null ? renewParsed : buyCents;
+      const transferParsed = parseRenewCents(newTransfer);
+      const restoreParsed = parseRenewCents(newRestore);
       const res = await fetch("/api/domains/admin/products", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -184,6 +219,9 @@ export default function DomainsAdminPage() {
           tld,
           basePriceInCents: buyCents,
           renewBasePriceInCents: renewCents,
+          transferBasePriceInCents:
+            transferParsed != null ? transferParsed : renewCents,
+          restoreBasePriceInCents: restoreParsed ?? 0,
           manualPricing: true,
           isActive: true,
         }),
@@ -194,6 +232,8 @@ export default function DomainsAdminPage() {
       }
       toast.success(`.${tld} added (manual pricing)`);
       setNewTld("");
+      setNewTransfer("");
+      setNewRestore("");
       void qc.invalidateQueries({ queryKey: ["domains-admin-products"] });
     } catch (error) {
       toast.error(error instanceof Error ? error.message : "Add failed");
@@ -234,9 +274,19 @@ export default function DomainsAdminPage() {
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(data.error || "Sync failed");
-      toast.success(
-        `Synced ${data.updated ?? 0} updated, ${data.created ?? 0} new TLDs`,
-      );
+      const nc = data.namecheap ?? data;
+      const rg = data.regery;
+      const parts = [
+        `Namecheap ${nc.updated ?? 0} upd / ${nc.created ?? 0} new`,
+      ];
+      if (rg?.ok) {
+        parts.push(
+          `Regery ${rg.updated ?? 0} upd / ${rg.created ?? 0} new (skipped ${rg.skippedNamecheapOwned ?? 0} NC)`,
+        );
+      } else if (rg?.error) {
+        parts.push(`Regery failed: ${rg.error}`);
+      }
+      toast.success(parts.join(" · "));
       void qc.invalidateQueries({ queryKey: ["domains-admin-products"] });
     } catch (error) {
       toast.error(error instanceof Error ? error.message : "Sync failed");
@@ -252,9 +302,9 @@ export default function DomainsAdminPage() {
           Domains catalog
         </h1>
         <p className="mt-0.5 text-xs text-muted-foreground">
-          Supplier buy prices sync nightly. Sell = buy + tiered % (fixed €0).
-          SUPER_ADMIN can set buy/renew for TLDs the supplier does not price
-          (e.g. .be) — those rows are marked Manual and skipped by sync.
+          Weekly Friday 00:00 CET sync keeps buy / renew / transfer / restore
+          current. Namecheap updates Sync rows only; Regery updates Manual rows
+          only — sources never mix. Sell = buy + tiered %.
         </p>
       </div>
 
@@ -304,6 +354,28 @@ export default function DomainsAdminPage() {
                   placeholder="same as buy"
                 />
               </div>
+              <div>
+                <label className="mb-1 block text-xs text-muted-foreground">
+                  Transfer buy €
+                </label>
+                <Input
+                  className="h-8 w-24"
+                  value={newTransfer}
+                  onChange={(e) => setNewTransfer(e.target.value)}
+                  placeholder="same as renew"
+                />
+              </div>
+              <div>
+                <label className="mb-1 block text-xs text-muted-foreground">
+                  Restore buy €
+                </label>
+                <Input
+                  className="h-8 w-24"
+                  value={newRestore}
+                  onChange={(e) => setNewRestore(e.target.value)}
+                  placeholder="—"
+                />
+              </div>
               <Button
                 size="sm"
                 className="h-8"
@@ -314,8 +386,8 @@ export default function DomainsAdminPage() {
               </Button>
             </div>
             <p className="mt-1.5 text-xs text-muted-foreground">
-              Manual TLDs lock buy/renew against supplier sync. Margin % is
-              automatic from buy price.
+              Manual TLDs lock buy/renew/transfer/restore against supplier
+              sync. Margin % is automatic from each buy price.
             </p>
           </CardContent>
         </Card>
@@ -366,16 +438,20 @@ export default function DomainsAdminPage() {
           {isLoading ? (
             <p className="text-sm text-muted-foreground">Loading…</p>
           ) : (
-            <table className="w-full min-w-220 border-collapse text-left text-sm">
+            <table className="w-full min-w-[92rem] border-collapse text-left text-sm">
               <thead className="border-b border-border text-muted-foreground">
                 <tr>
                   <th className="py-2 pr-3">TLD</th>
                   <th className="py-2 pr-3">Buy €</th>
                   <th className="py-2 pr-3">Renew buy €</th>
+                  <th className="py-2 pr-3">Transfer buy €</th>
+                  <th className="py-2 pr-3">Restore buy €</th>
                   <th className="py-2 pr-3">% (auto)</th>
                   <th className="py-2 pr-3">Sell</th>
                   <th className="py-2 pr-3">Offer €</th>
                   <th className="py-2 pr-3">Renew sell</th>
+                  <th className="py-2 pr-3">Transfer sell</th>
+                  <th className="py-2 pr-3">Restore sell</th>
                   {superAdmin ? <th className="py-2 pr-3">Manual</th> : null}
                   <th className="py-2 pr-3">Active</th>
                   <th className="py-2 text-right">Save</th>
@@ -385,7 +461,7 @@ export default function DomainsAdminPage() {
                 {visibleProducts.length === 0 ? (
                   <tr>
                     <td
-                      colSpan={superAdmin ? 10 : 9}
+                      colSpan={superAdmin ? 14 : 13}
                       className="py-6 text-center text-sm text-muted-foreground"
                     >
                       No TLDs match “{tldSearch.trim()}”
@@ -471,6 +547,56 @@ export default function DomainsAdminPage() {
                           </span>
                         )}
                       </td>
+                      <td className="py-2 pr-3">
+                        {superAdmin ? (
+                          <Input
+                            className="h-8 w-24"
+                            value={d.transfer}
+                            onChange={(e) =>
+                              setDrafts((prev) => ({
+                                ...prev,
+                                [p.tld]: {
+                                  ...d,
+                                  transfer: e.target.value,
+                                  manual: true,
+                                },
+                              }))
+                            }
+                          />
+                        ) : (
+                          <span className="text-muted-foreground">
+                            €
+                            {centsToEurosNumber(
+                              p.transferBasePriceInCents || 0,
+                            ).toFixed(2)}
+                          </span>
+                        )}
+                      </td>
+                      <td className="py-2 pr-3">
+                        {superAdmin ? (
+                          <Input
+                            className="h-8 w-24"
+                            value={d.restore}
+                            onChange={(e) =>
+                              setDrafts((prev) => ({
+                                ...prev,
+                                [p.tld]: {
+                                  ...d,
+                                  restore: e.target.value,
+                                  manual: true,
+                                },
+                              }))
+                            }
+                          />
+                        ) : (
+                          <span className="text-muted-foreground">
+                            €
+                            {centsToEurosNumber(
+                              p.restoreBasePriceInCents || 0,
+                            ).toFixed(2)}
+                          </span>
+                        )}
+                      </td>
                       <td className="py-2 pr-3 tabular-nums text-muted-foreground">
                         {preview.pct}%
                       </td>
@@ -507,12 +633,22 @@ export default function DomainsAdminPage() {
                       <td className="py-2 pr-3 text-muted-foreground">
                         €{centsToEurosNumber(preview.renewSell || 0).toFixed(2)}
                       </td>
+                      <td className="py-2 pr-3 text-muted-foreground">
+                        {preview.transferSell > 0
+                          ? `€${centsToEurosNumber(preview.transferSell).toFixed(2)}`
+                          : "—"}
+                      </td>
+                      <td className="py-2 pr-3 text-muted-foreground">
+                        {preview.restoreSell > 0
+                          ? `€${centsToEurosNumber(preview.restoreSell).toFixed(2)}`
+                          : "—"}
+                      </td>
                       {superAdmin ? (
                         <td className="py-2 pr-3">
                           <button
                             type="button"
                             className="text-xs underline"
-                            title="When on, supplier sync will not overwrite buy/renew"
+                            title="When on, supplier sync will not overwrite buy/renew/transfer/restore"
                             onClick={() =>
                               setDrafts((prev) => ({
                                 ...prev,

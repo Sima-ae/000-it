@@ -1397,6 +1397,8 @@
     "ctaBook": "Book appointment",
     "ctaContact": "Contact",
     "renewalPrice": "Odnowienie od {price}/rok",
+    "transferPrice": "Transfer from {price}",
+    "restorePrice": "Restore from {price}",
     "tabPopular": "Popularne",
     "tabPremium": "Premium",
     "tabAll": "Wszystkie",

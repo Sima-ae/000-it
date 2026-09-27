@@ -1397,6 +1397,8 @@
     "ctaBook": "Book appointment",
     "ctaContact": "Contact",
     "renewalPrice": "续费起价 {price}/年",
+    "transferPrice": "Transfer from {price}",
+    "restorePrice": "Restore from {price}",
     "tabPopular": "热门",
     "tabPremium": "高级",
     "tabAll": "全部",

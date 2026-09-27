@@ -12,6 +12,8 @@ import {
 import {
   sellPriceCents,
   renewSellPriceCents,
+  transferSellPriceCents,
+  restoreSellPriceCents,
   effectiveSellPriceCents,
   hasOfferPrice,
 } from "@/lib/domains/pricing";
@@ -99,6 +101,18 @@ export async function GET(request: Request) {
       return [p.tld, renew > 0 ? renew : null] as const;
     }),
   );
+  const transferByTld = new Map(
+    activeProducts.map((p) => {
+      const transfer = transferSellPriceCents(p);
+      return [p.tld, transfer > 0 ? transfer : null] as const;
+    }),
+  );
+  const restoreByTld = new Map(
+    activeProducts.map((p) => {
+      const restore = restoreSellPriceCents(p);
+      return [p.tld, restore > 0 ? restore : null] as const;
+    }),
+  );
 
   const sldFromFqdn = fqdnSchema.safeParse(raw).success
     ? raw.slice(0, raw.lastIndexOf("."))
@@ -146,23 +160,32 @@ export async function GET(request: Request) {
         const catalogSell = priceByTld.get(tld) ?? null;
         const catalogList = listPriceByTld.get(tld) ?? null;
         const catalogRenew = renewByTld.get(tld) ?? null;
+        const catalogTransfer = transferByTld.get(tld) ?? null;
+        const catalogRestore = restoreByTld.get(tld) ?? null;
         const catalogOffer = offerByTld.get(tld) ?? false;
 
         const isPremium = Boolean(row?.isPremium);
         let priceInCents = catalogSell;
         let listPriceInCents = catalogList;
         let renewPriceInCents = catalogRenew;
+        let transferPriceInCents = catalogTransfer;
+        let restorePriceInCents = catalogRestore;
         let onOffer = catalogOffer;
 
         if (isPremium && row) {
           const regBuyUsd = premiumRegisterBuyUsd(row);
           const renewBuyUsd = premiumRenewBuyUsd(row);
+          const transferBuyUsd = premiumTransferBuyUsd(row);
           const sell = sellFromBuyUsd(regBuyUsd, fxRate);
           const renewSell = sellFromBuyUsd(renewBuyUsd, fxRate);
+          const transferSell = sellFromBuyUsd(transferBuyUsd, fxRate);
           // Never fall back to cheap catalog promo for premium names
           priceInCents = sell > 0 ? sell : null;
           listPriceInCents = priceInCents;
           renewPriceInCents = renewSell > 0 ? renewSell : priceInCents;
+          transferPriceInCents =
+            transferSell > 0 ? transferSell : renewPriceInCents;
+          restorePriceInCents = catalogRestore;
           onOffer = false;
         }
 
@@ -174,6 +197,8 @@ export async function GET(request: Request) {
           listPriceInCents,
           onOffer,
           renewPriceInCents,
+          transferPriceInCents,
+          restorePriceInCents,
           tld,
         };
       })

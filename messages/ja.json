@@ -1391,6 +1391,8 @@
     "ctaBook": "Book appointment",
     "ctaContact": "Contact",
     "renewalPrice": "更新 {price}/年〜",
+    "transferPrice": "Transfer from {price}",
+    "restorePrice": "Restore from {price}",
     "tabPopular": "人気",
     "tabPremium": "プレミアム",
     "tabAll": "すべて",
