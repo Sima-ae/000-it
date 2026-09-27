@@ -164,6 +164,37 @@ export type DomainCheckResult = {
   error?: string;
 };
 
+function parseCheckRows(parsed: Record<string, unknown>): DomainCheckResult[] {
+  const cmd = (parsed.ApiResponse as { CommandResponse?: unknown })
+    ?.CommandResponse as { DomainCheckResult?: unknown } | undefined;
+  const raw = cmd?.DomainCheckResult;
+  const rows = Array.isArray(raw) ? raw : raw ? [raw] : [];
+  return rows.map((row) => {
+    const r = row as Record<string, string>;
+    return {
+      domain: String(r.Domain || "").toLowerCase(),
+      available: String(r.Available).toLowerCase() === "true",
+      error: r.ErrorNo && String(r.ErrorNo) !== "0" ? String(r.ErrorNo) : undefined,
+    };
+  });
+}
+
+async function checkDomainList(
+  list: string[],
+): Promise<{ ok: boolean; results: DomainCheckResult[]; error?: string }> {
+  const params = await baseParams("namecheap.domains.check");
+  params.set("DomainList", list.join(","));
+  const { parsed } = await callNamecheap(params);
+  if (apiStatus(parsed) !== "OK") {
+    return {
+      ok: false,
+      results: [],
+      error: friendlyNamecheapError(apiErrors(parsed) || "Namecheap check failed"),
+    };
+  }
+  return { ok: true, results: parseCheckRows(parsed) };
+}
+
 export async function checkDomains(
   domains: string[],
 ): Promise<DomainCheckResult[]> {
@@ -175,40 +206,97 @@ export async function checkDomains(
   ];
   if (!list.length) return [];
 
-  const params = await baseParams("namecheap.domains.check");
-  params.set("DomainList", list.join(","));
-  const { parsed } = await callNamecheap(params);
+  // Prefer one batch call; if Namecheap rejects a TLD in the batch, check in
+  // small parallel chunks so one bad TLD does not serialize the whole list.
+  const batch = await checkDomainList(list);
+  if (batch.ok) return batch.results;
 
-  if (apiStatus(parsed) !== "OK") {
-    throw new Error(
-      friendlyNamecheapError(apiErrors(parsed) || "Namecheap check failed"),
-    );
+  const chunkSize = 3;
+  const chunks: string[][] = [];
+  for (let i = 0; i < list.length; i += chunkSize) {
+    chunks.push(list.slice(i, i + chunkSize));
   }
 
-  const cmd = (parsed.ApiResponse as { CommandResponse?: unknown })
-    ?.CommandResponse as { DomainCheckResult?: unknown } | undefined;
-  const raw = cmd?.DomainCheckResult;
-  const rows = Array.isArray(raw) ? raw : raw ? [raw] : [];
+  const out: DomainCheckResult[] = [];
+  const concurrency = Math.min(3, chunks.length);
+  let cursor = 0;
 
-  return rows.map((row) => {
-    const r = row as Record<string, string>;
-    return {
-      domain: String(r.Domain || "").toLowerCase(),
-      available: String(r.Available).toLowerCase() === "true",
-      error: r.ErrorNo ? String(r.ErrorNo) : undefined,
-    };
-  });
+  async function worker() {
+    while (cursor < chunks.length) {
+      const idx = cursor++;
+      const chunk = chunks[idx]!;
+      const res = await checkDomainList(chunk);
+      if (res.ok) {
+        out.push(...res.results);
+        continue;
+      }
+      // Chunk failed — resolve domains individually in parallel
+      const singles = await Promise.all(
+        chunk.map(async (domain) => {
+          const one = await checkDomainList([domain]);
+          if (one.ok && one.results[0]) return one.results[0];
+          return {
+            domain,
+            available: false,
+            error: one.error || "TLD_CHECK_FAILED",
+          } satisfies DomainCheckResult;
+        }),
+      );
+      out.push(...singles);
+    }
+  }
+
+  await Promise.all(Array.from({ length: concurrency }, () => worker()));
+  return out;
 }
 
 export type PricingRow = { tld: string; priceUsd: number };
 
-export async function getRegisterPricing(): Promise<PricingRow[]> {
+function year1Usd(pricesRaw: unknown): number {
+  const prices = Array.isArray(pricesRaw)
+    ? pricesRaw
+    : pricesRaw
+      ? [pricesRaw]
+      : [];
+  const year1 = prices.find((pr) => {
+    const row = pr as { Duration?: string; DurationType?: string };
+    return (
+      String(row.Duration) === "1" &&
+      String(row.DurationType || "YEAR").toUpperCase() === "YEAR"
+    );
+  }) as { Price?: string; YourPrice?: string } | undefined;
+  const pick =
+    year1 ??
+    (prices[0] as { Price?: string; YourPrice?: string } | undefined);
+  const priceUsd = parseFloat(String(pick?.YourPrice ?? pick?.Price ?? "0"));
+  return Number.isFinite(priceUsd) && priceUsd > 0 ? priceUsd : 0;
+}
+
+function productsFromCategory(category: unknown): PricingRow[] {
+  const products = (category as { Product?: unknown } | undefined)?.Product;
+  const list = Array.isArray(products) ? products : products ? [products] : [];
+  const out: PricingRow[] = [];
+  for (const prod of list) {
+    const p = prod as { Name?: string; Price?: unknown };
+    const tld = String(p.Name || "").toLowerCase();
+    if (!tld) continue;
+    const priceUsd = year1Usd(p.Price);
+    if (priceUsd <= 0) continue;
+    out.push({ tld, priceUsd });
+  }
+  return out;
+}
+
+/** Register + renew 1-year USD prices from a single Namecheap pricing call. */
+export async function getDomainPricingCatalog(): Promise<{
+  register: PricingRow[];
+  renew: PricingRow[];
+}> {
   if (!isNamecheapConfigured()) {
     throw new Error("NAMECHEAP_NOT_CONFIGURED");
   }
   const params = await baseParams("namecheap.users.getPricing");
   params.set("ProductType", "DOMAIN");
-  params.set("ProductCategory", "REGISTER");
   const { parsed } = await callNamecheap(params);
 
   if (apiStatus(parsed) !== "OK") {
@@ -232,41 +320,23 @@ export async function getRegisterPricing(): Promise<PricingRow[]> {
     : categoriesRaw
       ? [categoriesRaw]
       : [];
-  const registerCat =
+
+  const byName = (name: string) =>
     categories.find(
       (c) =>
-        String((c as { Name?: string }).Name || "").toLowerCase() ===
-        "register",
-    ) || categories[0];
-  const products = (registerCat as { Product?: unknown } | undefined)?.Product;
-  const list = Array.isArray(products) ? products : products ? [products] : [];
-  const out: PricingRow[] = [];
-
-  for (const prod of list) {
-    const p = prod as { Name?: string; Price?: unknown };
-    const tld = String(p.Name || "").toLowerCase();
-    if (!tld) continue;
-    const prices = Array.isArray(p.Price) ? p.Price : p.Price ? [p.Price] : [];
-    // Prefer YourPrice (account rate), then Price
-    const year1 = prices.find((pr) => {
-      const row = pr as { Duration?: string; DurationType?: string };
-      return (
-        String(row.Duration) === "1" &&
-        String(row.DurationType || "YEAR").toUpperCase() === "YEAR"
-      );
-    }) as
-      | { Price?: string; YourPrice?: string }
-      | undefined;
-    const pick = year1 ?? (prices[0] as
-      | { Price?: string; YourPrice?: string }
-      | undefined);
-    const priceUsd = parseFloat(
-      String(pick?.YourPrice ?? pick?.Price ?? "0"),
+        String((c as { Name?: string }).Name || "").toLowerCase() === name,
     );
-    if (!Number.isFinite(priceUsd) || priceUsd <= 0) continue;
-    out.push({ tld, priceUsd });
-  }
-  return out;
+
+  return {
+    register: productsFromCategory(byName("register") || categories[0]),
+    renew: productsFromCategory(byName("renew")),
+  };
+}
+
+/** @deprecated Prefer getDomainPricingCatalog().register */
+export async function getRegisterPricing(): Promise<PricingRow[]> {
+  const catalog = await getDomainPricingCatalog();
+  return catalog.register;
 }
 
 export type RegistrantContact = {

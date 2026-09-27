@@ -51,17 +51,19 @@ export default async function DomainsPage({
               "radial-gradient(ellipse 70% 55% at 15% 0%, color-mix(in oklab, var(--primary) 18%, transparent), transparent 55%), radial-gradient(ellipse 60% 45% at 95% 70%, color-mix(in oklab, var(--accent) 14%, transparent), transparent 50%)",
           }}
         />
-        <div className="relative mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
+        <div className="relative mx-auto max-w-7xl px-4 py-14 md:px-6 md:py-20">
           <Reveal>
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
-              TripleZero iT
-            </p>
-            <h1 className="font-display mt-3 max-w-3xl text-4xl font-semibold tracking-tight md:text-5xl">
+            <h1 className="font-display text-3xl font-semibold tracking-tight whitespace-nowrap sm:text-4xl md:text-5xl">
               {t("heroTitle")}
             </h1>
-            <p className="mt-4 max-w-2xl text-muted-foreground md:text-lg">
-              {t("heroSubtitle")}
-            </p>
+            <div className="mt-4 max-w-5xl space-y-1.5 text-muted-foreground">
+              <p className="text-base leading-snug md:text-lg md:whitespace-nowrap">
+                {t("heroSubtitle")}
+              </p>
+              <p className="text-xs leading-snug md:text-sm md:whitespace-nowrap">
+                {t("heroSubtitleNote")}
+              </p>
+            </div>
           </Reveal>
 
           {sp.success === "1" ? (
@@ -78,14 +80,14 @@ export default async function DomainsPage({
           ) : null}
 
           <Reveal delay={0.05}>
-            <div className="mt-10 rounded-[1.75rem] border border-border/70 bg-background/80 p-5 shadow-sm backdrop-blur md:p-8">
+            <div className="mt-10 w-full rounded-[1.75rem] border border-border/70 bg-background/80 p-4 shadow-sm backdrop-blur sm:p-5 md:p-6">
               <DomainSearch />
             </div>
           </Reveal>
         </div>
       </section>
 
-      <div className="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-16">
+      <div className="mx-auto max-w-7xl px-4 py-14 md:px-6 md:py-16">
         <div className="grid gap-10 md:grid-cols-3">
           {(
             [

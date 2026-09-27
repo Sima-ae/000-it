@@ -13,11 +13,30 @@ type Product = {
   id: string;
   tld: string;
   basePriceInCents: number;
+  renewBasePriceInCents: number;
   markupFixedCents: number;
   markupPercent: number;
+  offerPriceInCents: number | null;
   isActive: boolean;
   sellPriceInCents: number;
+  effectiveSellPriceInCents: number;
+  renewSellPriceInCents: number;
 };
+
+type Draft = {
+  fixed: string;
+  percent: string;
+  offer: string;
+  active: boolean;
+};
+
+function parseOfferCents(raw: string): number | null {
+  const trimmed = raw.trim().replace(",", ".");
+  if (!trimmed) return null;
+  const euros = Number(trimmed);
+  if (!Number.isFinite(euros) || euros <= 0) return null;
+  return Math.round(euros * 100);
+}
 
 export default function DomainsAdminPage() {
   const qc = useQueryClient();
@@ -25,11 +44,9 @@ export default function DomainsAdminPage() {
   const [adding, setAdding] = useState(false);
   const [newTld, setNewTld] = useState("");
   const [newBuy, setNewBuy] = useState("10");
-  const [newFixed, setNewFixed] = useState("5");
-  const [newPercent, setNewPercent] = useState("0");
-  const [drafts, setDrafts] = useState<
-    Record<string, { fixed: string; percent: string; active: boolean }>
-  >({});
+  const [newFixed, setNewFixed] = useState("0");
+  const [newPercent, setNewPercent] = useState("20");
+  const [drafts, setDrafts] = useState<Record<string, Draft>>({});
 
   const { data: products = [], isLoading } = useQuery({
     queryKey: ["domains-admin-products"],
@@ -40,11 +57,15 @@ export default function DomainsAdminPage() {
     },
   });
 
-  function draftFor(p: Product) {
+  function draftFor(p: Product): Draft {
     return (
       drafts[p.tld] || {
         fixed: String(centsToEurosNumber(p.markupFixedCents)),
         percent: String(p.markupPercent),
+        offer:
+          p.offerPriceInCents != null && p.offerPriceInCents > 0
+            ? String(centsToEurosNumber(p.offerPriceInCents))
+            : "",
         active: p.isActive,
       }
     );
@@ -61,6 +82,7 @@ export default function DomainsAdminPage() {
         tld,
         markupFixedCents: Math.round(Number(d.fixed.replace(",", ".")) * 100),
         markupPercent: Number(d.percent.replace(",", ".")),
+        offerPriceInCents: parseOfferCents(d.offer),
         isActive: d.active,
       }),
     });
@@ -69,6 +91,11 @@ export default function DomainsAdminPage() {
       return;
     }
     toast.success(`.${tld} updated`);
+    setDrafts((prev) => {
+      const next = { ...prev };
+      delete next[tld];
+      return next;
+    });
     void qc.invalidateQueries({ queryKey: ["domains-admin-products"] });
   }
 
@@ -120,7 +147,9 @@ export default function DomainsAdminPage() {
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(data.error || "Sync failed");
-      toast.success(`Synced ${data.updated ?? 0} TLDs`);
+      toast.success(
+        `Synced ${data.updated ?? 0} updated, ${data.created ?? 0} new TLDs`,
+      );
       void qc.invalidateQueries({ queryKey: ["domains-admin-products"] });
     } catch (error) {
       toast.error(error instanceof Error ? error.message : "Sync failed");
@@ -139,6 +168,7 @@ export default function DomainsAdminPage() {
           <p className="mt-1 text-sm text-muted-foreground">
             Namecheap buy prices sync nightly. Set markups for the public sell
             price (incl. VAT). Fixed € is a flat markup; % is of the buy price.
+            Offer € overrides the sell price when set (leave empty for no offer).
           </p>
         </div>
         <Button onClick={() => void syncPrices()} disabled={syncing}>
@@ -199,7 +229,7 @@ export default function DomainsAdminPage() {
           </div>
           <p className="mt-2 text-xs text-muted-foreground">
             After adding, run Sync to refresh the buy price from Namecheap when
-            that TLD is in their pricing feed.
+            that TLD is in their pricing feed. New TLDs default to 0 fixed + 20%.
           </p>
         </CardContent>
       </Card>
@@ -212,14 +242,17 @@ export default function DomainsAdminPage() {
           {isLoading ? (
             <p className="text-sm text-muted-foreground">Loading…</p>
           ) : (
-            <table className="w-full min-w-160 border-collapse text-left text-sm">
+            <table className="w-full min-w-200 border-collapse text-left text-sm">
               <thead className="border-b border-border text-muted-foreground">
                 <tr>
                   <th className="py-2 pr-3">TLD</th>
                   <th className="py-2 pr-3">Buy</th>
+                  <th className="py-2 pr-3">Renew buy</th>
                   <th className="py-2 pr-3">Fixed €</th>
                   <th className="py-2 pr-3">%</th>
                   <th className="py-2 pr-3">Sell</th>
+                  <th className="py-2 pr-3">Offer €</th>
+                  <th className="py-2 pr-3">Renew sell</th>
                   <th className="py-2 pr-3">Active</th>
                   <th className="py-2 text-right">Save</th>
                 </tr>
@@ -227,11 +260,22 @@ export default function DomainsAdminPage() {
               <tbody className="divide-y divide-border">
                 {products.map((p) => {
                   const d = draftFor(p);
+                  const draftOfferCents = parseOfferCents(d.offer);
+                  const onOffer =
+                    draftOfferCents != null &&
+                    draftOfferCents > 0 &&
+                    draftOfferCents < p.sellPriceInCents;
                   return (
                     <tr key={p.id}>
                       <td className="py-3 pr-3 font-semibold">.{p.tld}</td>
                       <td className="py-3 pr-3 text-muted-foreground">
                         €{centsToEurosNumber(p.basePriceInCents).toFixed(2)}
+                      </td>
+                      <td className="py-3 pr-3 text-muted-foreground">
+                        €
+                        {centsToEurosNumber(p.renewBasePriceInCents || 0).toFixed(
+                          2,
+                        )}
                       </td>
                       <td className="py-3 pr-3">
                         <Input
@@ -257,8 +301,41 @@ export default function DomainsAdminPage() {
                           }
                         />
                       </td>
-                      <td className="py-3 pr-3 font-semibold text-primary">
-                        €{centsToEurosNumber(p.sellPriceInCents).toFixed(2)}
+                      <td className="py-3 pr-3">
+                        {onOffer ? (
+                          <span className="inline-flex flex-wrap items-baseline gap-x-2">
+                            <span className="text-muted-foreground line-through decoration-2">
+                              €{centsToEurosNumber(p.sellPriceInCents).toFixed(2)}
+                            </span>
+                            <span className="text-base font-semibold text-primary">
+                              €
+                              {centsToEurosNumber(draftOfferCents).toFixed(2)}
+                            </span>
+                          </span>
+                        ) : (
+                          <span className="font-semibold text-primary">
+                            €{centsToEurosNumber(p.sellPriceInCents).toFixed(2)}
+                          </span>
+                        )}
+                      </td>
+                      <td className="py-3 pr-3">
+                        <Input
+                          className="h-8 w-24"
+                          placeholder="—"
+                          value={d.offer}
+                          onChange={(e) =>
+                            setDrafts((prev) => ({
+                              ...prev,
+                              [p.tld]: { ...d, offer: e.target.value },
+                            }))
+                          }
+                        />
+                      </td>
+                      <td className="py-3 pr-3 text-muted-foreground">
+                        €
+                        {centsToEurosNumber(p.renewSellPriceInCents || 0).toFixed(
+                          2,
+                        )}
                       </td>
                       <td className="py-3 pr-3">
                         <button

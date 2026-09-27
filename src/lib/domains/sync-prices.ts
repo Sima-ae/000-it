@@ -1,9 +1,27 @@
 import { prisma } from "@/lib/prisma";
 import {
-  getRegisterPricing,
+  getDomainPricingCatalog,
   isNamecheapConfigured,
   namecheapMissingEnv,
 } from "@/lib/domains/namecheap";
+
+/** Default sell markup for newly imported TLDs (0 fixed + 20%). Existing rows keep their markup. */
+const DEFAULT_MARKUP_FIXED_CENTS = 0;
+const DEFAULT_MARKUP_PERCENT = 20;
+
+/** Seeded / curated TLDs — keep their custom markups when bulk-resetting newer ones. */
+export const CORE_DOMAIN_TLDS = [
+  "nl",
+  "com",
+  "eu",
+  "be",
+  "net",
+  "org",
+  "io",
+  "app",
+  "dev",
+  "online",
+] as const;
 
 async function usdToEurRate(): Promise<number> {
   try {
@@ -20,11 +38,29 @@ async function usdToEurRate(): Promise<number> {
   return 0.92;
 }
 
+function isValidTldName(tld: string): boolean {
+  return (
+    tld.length >= 2 &&
+    tld.length <= 63 &&
+    /^[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)*$/.test(
+      tld,
+    )
+  );
+}
+
+function usdToEurCents(usd: number, rate: number): number {
+  return Math.max(1, Math.round(usd * rate * 100));
+}
+
 export type SyncDomainPricesResult = {
   ok: true;
   updated: number;
+  created: number;
+  renewUpdated: number;
+  skipped: number;
   exchangeRateUsed: number;
   pricedTlds: number;
+  renewPricedTlds: number;
 };
 
 export async function syncDomainPricesFromNamecheap(): Promise<
@@ -40,29 +76,84 @@ export async function syncDomainPricesFromNamecheap(): Promise<
   }
 
   const rate = await usdToEurRate();
-  const pricing = await getRegisterPricing();
-  let updated = 0;
+  const catalog = await getDomainPricingCatalog();
+  const renewByTld = new Map(
+    catalog.renew.map((row) => [row.tld, row.priceUsd] as const),
+  );
 
-  for (const row of pricing) {
+  let updated = 0;
+  let created = 0;
+  let renewUpdated = 0;
+  let skipped = 0;
+
+  for (const row of catalog.register) {
+    if (!isValidTldName(row.tld)) {
+      skipped += 1;
+      continue;
+    }
+
+    const basePriceInCents = usdToEurCents(row.priceUsd, rate);
+    const renewUsd = renewByTld.get(row.tld);
+    const renewBasePriceInCents =
+      renewUsd != null && renewUsd > 0
+        ? usdToEurCents(renewUsd, rate)
+        : null;
+
+    const existing = await prisma.domainProduct.findUnique({
+      where: { tld: row.tld },
+    });
+
+    if (!existing) {
+      await prisma.domainProduct.create({
+        data: {
+          tld: row.tld,
+          basePriceInCents,
+          renewBasePriceInCents: renewBasePriceInCents ?? 0,
+          markupFixedCents: DEFAULT_MARKUP_FIXED_CENTS,
+          markupPercent: DEFAULT_MARKUP_PERCENT,
+          isActive: true,
+        },
+      });
+      created += 1;
+      if (renewBasePriceInCents != null) renewUpdated += 1;
+      continue;
+    }
+
+    await prisma.domainProduct.update({
+      where: { tld: row.tld },
+      data: {
+        basePriceInCents,
+        ...(renewBasePriceInCents != null ? { renewBasePriceInCents } : {}),
+      },
+    });
+    updated += 1;
+    if (renewBasePriceInCents != null) renewUpdated += 1;
+  }
+
+  // TLDs that only appear in renew feed (rare) — still refresh renew buy price
+  for (const row of catalog.renew) {
+    if (!isValidTldName(row.tld)) continue;
+    if (catalog.register.some((r) => r.tld === row.tld)) continue;
     const existing = await prisma.domainProduct.findUnique({
       where: { tld: row.tld },
     });
     if (!existing) continue;
-    const basePriceInCents = Math.max(
-      1,
-      Math.round(row.priceUsd * rate * 100),
-    );
+    const renewBasePriceInCents = usdToEurCents(row.priceUsd, rate);
     await prisma.domainProduct.update({
       where: { tld: row.tld },
-      data: { basePriceInCents },
+      data: { renewBasePriceInCents },
     });
-    updated += 1;
+    renewUpdated += 1;
   }
 
   return {
     ok: true,
     updated,
+    created,
+    renewUpdated,
+    skipped,
     exchangeRateUsed: rate,
-    pricedTlds: pricing.length,
+    pricedTlds: catalog.register.length,
+    renewPricedTlds: catalog.renew.length,
   };
 }

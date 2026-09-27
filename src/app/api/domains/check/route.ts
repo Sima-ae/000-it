@@ -2,7 +2,13 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 import { prisma } from "@/lib/prisma";
 import { checkDomains, isNamecheapConfigured, namecheapMissingEnv } from "@/lib/domains/namecheap";
-import { sellPriceCents } from "@/lib/domains/pricing";
+import {
+  sellPriceCents,
+  renewSellPriceCents,
+  effectiveSellPriceCents,
+  hasOfferPrice,
+} from "@/lib/domains/pricing";
+import { compareTldsByPopularity } from "@/lib/domains/tld-order";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -19,7 +25,7 @@ function allowRequest(ip: string) {
   const now = Date.now();
   const row = rateLimitMap.get(ip);
   if (row && now < row.resetTime) {
-    if (row.count >= 20) return false;
+    if (row.count >= 60) return false;
     row.count += 1;
     return true;
   }
@@ -70,42 +76,84 @@ export async function GET(request: Request) {
     orderBy: { tld: "asc" },
   });
   const priceByTld = new Map(
+    activeProducts.map((p) => [p.tld, effectiveSellPriceCents(p)] as const),
+  );
+  const listPriceByTld = new Map(
     activeProducts.map((p) => [p.tld, sellPriceCents(p)] as const),
   );
+  const offerByTld = new Map(
+    activeProducts.map((p) => [p.tld, hasOfferPrice(p)] as const),
+  );
+  const renewByTld = new Map(
+    activeProducts.map((p) => {
+      const renew = renewSellPriceCents(p);
+      return [p.tld, renew > 0 ? renew : null] as const;
+    }),
+  );
 
-  let domains: string[] = [];
-  if (fqdnSchema.safeParse(raw).success) {
-    domains = [raw];
-  } else {
-    const sld = raw.includes(".") ? raw.split(".")[0] : raw;
-    if (!sldSchema.safeParse(sld).success) {
-      return NextResponse.json({ error: "Invalid domain format" }, { status: 400 });
-    }
-    const wanted = tldsParam
-      ? tldsParam.split(",").map((t) => t.replace(/^\./, "").trim()).filter(Boolean)
-      : activeProducts.map((p) => p.tld);
-    domains = wanted
-      .filter((tld) => priceByTld.has(tld))
-      .slice(0, 12)
-      .map((tld) => `${sld}.${tld}`);
+  const sldFromFqdn = fqdnSchema.safeParse(raw).success
+    ? raw.slice(0, raw.lastIndexOf("."))
+    : null;
+  const sld = (sldFromFqdn || (raw.includes(".") ? raw.split(".")[0] : raw))
+    .toLowerCase()
+    .trim();
+
+  if (!sldSchema.safeParse(sld).success) {
+    return NextResponse.json({ error: "Invalid domain format" }, { status: 400 });
   }
 
-  if (!domains.length) {
+  // Always expand to active catalog TLDs so new DomainProduct rows are included.
+  const wanted = tldsParam
+    ? tldsParam
+        .split(",")
+        .map((t) => t.replace(/^\./, "").trim())
+        .filter(Boolean)
+    : activeProducts.map((p) => p.tld);
+
+  const pairs = wanted
+    .filter((tld) => priceByTld.has(tld))
+    .sort(compareTldsByPopularity)
+    .slice(0, 80)
+    .map((tld) => ({ domain: `${sld}.${tld}`, tld }));
+
+  if (!pairs.length) {
     return NextResponse.json({ error: "No active TLDs to check" }, { status: 400 });
   }
 
   try {
-    const checked = await checkDomains(domains);
-    const results = checked.map((row) => {
-      const tld = row.domain.split(".").pop() || "";
-      return {
-        domain: row.domain,
-        available: row.available,
-        priceInCents: priceByTld.get(tld) ?? null,
-        tld,
-      };
-    });
-    return NextResponse.json({ results });
+    const checked = await checkDomains(pairs.map((p) => p.domain));
+    const byDomain = new Map(
+      checked.map((row) => [row.domain.toLowerCase(), row] as const),
+    );
+    const preferredTld = sldFromFqdn
+      ? raw.slice(raw.lastIndexOf(".") + 1)
+      : "";
+
+    const results = pairs
+      .map(({ domain, tld }) => {
+        const row = byDomain.get(domain.toLowerCase());
+        const priceInCents = priceByTld.get(tld) ?? null;
+        const listPriceInCents = listPriceByTld.get(tld) ?? null;
+        const onOffer = offerByTld.get(tld) ?? false;
+        return {
+          domain,
+          available: Boolean(row?.available),
+          priceInCents,
+          listPriceInCents,
+          onOffer,
+          renewPriceInCents: renewByTld.get(tld) ?? null,
+          tld,
+        };
+      })
+      .sort((a, b) => {
+        if (preferredTld) {
+          if (a.tld === preferredTld && b.tld !== preferredTld) return -1;
+          if (b.tld === preferredTld && a.tld !== preferredTld) return 1;
+        }
+        return compareTldsByPopularity(a.tld, b.tld);
+      });
+
+    return NextResponse.json({ results, sld });
   } catch (error) {
     console.error("[domains/check]", error);
     const message =

@@ -4,7 +4,7 @@ import type Stripe from "stripe";
 import { auth } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { checkDomains, isNamecheapConfigured } from "@/lib/domains/namecheap";
-import { sellPriceCents } from "@/lib/domains/pricing";
+import { effectiveSellPriceCents } from "@/lib/domains/pricing";
 import { makeDomainOrderNumber } from "@/lib/shop/line-of-business";
 import { getStripe, isStripeConfigured } from "@/lib/shop/stripe";
 import { localizedHref } from "@/i18n/pathnames";
@@ -73,7 +73,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Domain is not available" }, { status: 409 });
     }
 
-    const unitCents = sellPriceCents(product);
+    const unitCents = effectiveSellPriceCents(product);
     const totalPriceInCents = unitCents * years;
     const session = await auth();
     const orderNumber = makeDomainOrderNumber();

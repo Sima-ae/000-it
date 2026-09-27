@@ -743,15 +743,19 @@ enum DomainOrderStatus {
 
 /// Namecheap TLD catalog with live buy price + markup (domains book).
 model DomainProduct {
-  id               String        @id @default(cuid())
-  tld              String        @unique
-  basePriceInCents Int
-  markupFixedCents Int           @default(0)
-  markupPercent    Float         @default(0)
-  isActive         Boolean       @default(true)
-  createdAt        DateTime      @default(now())
-  updatedAt        DateTime      @updatedAt
-  orders           DomainOrder[]
+  id                    String        @id @default(cuid())
+  tld                   String        @unique
+  basePriceInCents      Int
+  /// Namecheap renew (1 year) buy price in EUR cents — synced from pricing feed.
+  renewBasePriceInCents Int           @default(0)
+  markupFixedCents      Int           @default(0)
+  markupPercent         Float         @default(0)
+  /// Optional promo sell price (EUR cents). When set and below list, used at checkout.
+  offerPriceInCents     Int?
+  isActive              Boolean       @default(true)
+  createdAt             DateTime      @default(now())
+  updatedAt             DateTime      @updatedAt
+  orders                DomainOrder[]
 
   @@index([isActive, tld])
 }
