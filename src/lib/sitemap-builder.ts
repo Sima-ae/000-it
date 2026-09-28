@@ -499,10 +499,14 @@ export async function writeSitemapFiles(rootDir = process.cwd()) {
   writeFileSync(join(rootDir, "public", "sitemap.xml"), fullIndexXml, "utf8");
   writeFileSync(join(outDir, "sitemap-index.xml"), fullIndexXml, "utf8");
 
-  const robotsSitemaps = [
-    "/sitemap.xml",
-    ...indexFiles.map((f) => f.path),
-  ];
+  /**
+   * robots.txt must advertise ONLY the sitemap index.
+   * Listing every child there makes GSC treat them as peer submissions and
+   * the index row stays at “0 URLs” with no nested children — which matches
+   * what we saw when only sitemap-pages.xml showed up after a manual submit.
+   * Google discovers children from the index `<sitemap><loc>` entries.
+   */
+  const robotsSitemaps = ["/sitemap.xml"];
   const pageCount = indexFiles.length
     ? groups.reduce((sum, group) => sum + group.entries.length, 0)
     : 0;
