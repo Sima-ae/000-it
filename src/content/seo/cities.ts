@@ -88,3 +88,31 @@ export function citiesByCountry() {
   }
   return map;
 }
+
+function haversineKm(
+  a: Pick<SeoCity, "latitude" | "longitude">,
+  b: Pick<SeoCity, "latitude" | "longitude">,
+) {
+  const toRad = (d: number) => (d * Math.PI) / 180;
+  const dLat = toRad(b.latitude - a.latitude);
+  const dLon = toRad(b.longitude - a.longitude);
+  const lat1 = toRad(a.latitude);
+  const lat2 = toRad(b.latitude);
+  const h =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLon / 2) ** 2;
+  return 6371 * 2 * Math.asin(Math.min(1, Math.sqrt(h)));
+}
+
+/** Nearby cities for internal linking (same country preferred). */
+export function relatedSeoCities(city: SeoCity, limit = 8): SeoCity[] {
+  const sameCountry = seoCities.filter(
+    (c) => c.slug !== city.slug && c.country === city.country,
+  );
+  const pool = sameCountry.length >= limit
+    ? sameCountry
+    : seoCities.filter((c) => c.slug !== city.slug);
+  return [...pool]
+    .sort((a, b) => haversineKm(city, a) - haversineKm(city, b))
+    .slice(0, limit);
+}

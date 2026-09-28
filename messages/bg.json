@@ -22,7 +22,8 @@
     "dashboard": "Табло",
     "logout": "Излезте",
     "webmail": "Webmail",
-    "kennisbank": "База знания"
+    "kennisbank": "База знания",
+    "statuspage": "Статус"
   },
   "language": {
     "title": "език"
@@ -1053,7 +1054,7 @@
     "vision": "Визия",
     "visionText": "Да изграждаме правилното дигитално решение за всеки предприемач — мащабируемо, ясно и ориентирано към растеж, а не модерни инструменти без резултат.",
     "philosophy": "Философията TripleZero",
-    "philosophyText": "000 означава нула догадки, нула недостиг и нула разхищение: решения на база данни, достатъчно капацитет за растеж и никакъв бюджет или време за онова, което не работи.",
+    "philosophyText": "000 означава нулеви догадки, нулев недостиг и нулево разхищение: вземане на решения въз основа на данни, достатъчен капацитет за растеж и без бюджет или време, изразходвани за това, което не работи.",
     "storyTitle": "Кои сме ние",
     "storyLead": "TripleZero iT е вашият технически партньор за растеж — от първия скан до непрекъсната оптимизация.",
     "storyP1": "Комбинираме AI интеграция, AEO, GEO, SEO, уеб дизайн, WordPress грижа, хостинг и full-funnel маркетинг в един подход. Вашето онлайн присъствие остава бързо, сигурно, намираемо и насочено към лийдове или приходи.",
@@ -1279,7 +1280,12 @@
     "featuredNl": "Най-големите градове в Нидерландия",
     "results": "{count} града",
     "noResults": "Няма намерени градове.",
-    "showMore": "Покажи още градове"
+    "showMore": "Покажи още градове",
+    "indexLead": "Every city page is built for classic SEO, Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) — so businesses in that market can be found in Google, local results and AI answers.",
+    "faqTitle": "FAQ — AEO, GEO & SEO in {name}",
+    "relatedTitle": "Nearby & related cities",
+    "relatedSubtitle": "Continue exploring AI, AEO, GEO and SEO near {name}.",
+    "allCitiesTitle": "All cities (crawlable index)"
   },
   "inquiry": {
     "websiteHint": "уебсайт / уеб магазин",
@@ -1697,5 +1703,26 @@
     "typeREGISTRATION": "Registration",
     "typeRENEWAL": "Renewal",
     "typeTRANSFER": "Transfer"
+  },
+  "statuspage": {
+    "eyebrow": "Състояние на системата",
+    "title": "Състояние TripleZero iT",
+    "operational": "Оперативен",
+    "degraded": "Влошена производителност",
+    "partialOutage": "Частично прекъсване",
+    "majorOutage": "Голямо прекъсване",
+    "maintenance": "Поддръжка",
+    "unknown": "неизвестен",
+    "daysAgo": "преди {days} дни",
+    "today": "Днес",
+    "uptimePercent": "{value} % време на работа",
+    "uptimeHint": "Време на работа през последните 90 дни.",
+    "liveSync": "Синхронизирано на живо.",
+    "scheduledMaintenance": "Планирана поддръжка",
+    "noMaintenance": "В момента няма планирана поддръжка.",
+    "scheduledFor": "Насрочено за {when}",
+    "postedOn": "Публикувано на {when}",
+    "unavailable": "Данните за състоянието са временно недостъпни.",
+    "cta": "Страница за състояние на сървъра"
   }
 }

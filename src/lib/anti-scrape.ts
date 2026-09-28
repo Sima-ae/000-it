@@ -10,31 +10,37 @@ export const SEARCH_BOT_RE =
   /Googlebot|Google-InspectionTool|GoogleOther|Storebot-Google|AdsBot-Google|Mediapartners-Google|Bingbot|adidxbot|MicrosoftPreview|DuckDuckBot|Yandex(Bot|Images|Render|Favicons)?|Baiduspider|Applebot(?!-Extended)|Slurp|Sogou|SeznamBot|Qwantify/i;
 
 /**
+ * Answer / generative engines (AEO + GEO citation). Allowed to crawl public
+ * marketing pages so the brand can appear in AI answers — not for model training.
+ * Checked before SCRAPER_BOT_RE.
+ */
+export const ANSWER_ENGINE_BOT_RE =
+  /OAI-SearchBot|ChatGPT-User|Claude-SearchBot|PerplexityBot|Perplexity-User|YouBot|DuckAssistBot/i;
+
+/**
  * AI training crawlers, SEO scrapers, HTTP libraries, and headless tools.
- * Search/social UAs are checked first and never hit this list.
+ * Search / social / answer-engine UAs are checked first and never hit this list.
  */
 export const SCRAPER_BOT_RE =
-  /GPTBot|ChatGPT-User|OAI-SearchBot|CCBot|anthropic-ai|ClaudeBot|Claude-Web|Claude-SearchBot|Claude-User|Google-Extended|Google-CloudVertexBot|Bytespider|Amazonbot|Applebot-Extended|PerplexityBot|Perplexity-User|YouBot|cohere-ai|Diffbot|ImagesiftBot|Timpibot|FacebookBot|Meta-ExternalFetcher|omgili|PetalBot|TikTokSpider|AI2Bot|Ai2Bot-Dolma|iaskspider|DuckAssistBot|Webzio-Extended|img2dataset|FriendlyCrawler|ICC-Crawler|DataForSeoBot|AhrefsBot|SemrushBot|MJ12bot|DotBot|BLEXBot|Seekport|BUbiNG|magpie-crawler|NewsNow|Awario|Scrapy|python-requests|python-urllib|aiohttp|httpx\/|libwww-perl|wget\/|curl\/|Go-http-client|Java\/|okhttp|Apache-HttpClient|PHP\/|node-fetch|undici|axios\/|PostmanRuntime|insomnia|httpunit|HTTrack|Nutch|mechanize|HeadlessChrome|Playwright|Puppeteer|PhantomJS|Selenium|Nightmare|jsdom|cheerio|htmlparser|libcurl|python-httpx|aiohttp\.client|siteauditbot|SEOkicks|ZoominfoBot|ClarityBot|VelenPublicWebCrawler|Turnitin|Copyscape|screaming\s*frog|SiteAuditBot|Barkrowler|LinkpadBot|MegaIndex|Spinn3r|FlipboardProxy|qwantbot|Neevabot|TurnDown|archive\.org_bot|ia_archiver|Wayback|heritrix|CommonCrawl/i;
+  /GPTBot|CCBot|anthropic-ai|ClaudeBot|Claude-Web|Claude-User|Google-Extended|Google-CloudVertexBot|Bytespider|Amazonbot|Applebot-Extended|cohere-ai|Diffbot|ImagesiftBot|Timpibot|FacebookBot|Meta-ExternalFetcher|omgili|PetalBot|TikTokSpider|AI2Bot|Ai2Bot-Dolma|iaskspider|Webzio-Extended|img2dataset|FriendlyCrawler|ICC-Crawler|DataForSeoBot|AhrefsBot|SemrushBot|MJ12bot|DotBot|BLEXBot|Seekport|BUbiNG|magpie-crawler|NewsNow|Awario|Scrapy|python-requests|python-urllib|aiohttp|httpx\/|libwww-perl|wget\/|curl\/|Go-http-client|Java\/|okhttp|Apache-HttpClient|PHP\/|node-fetch|undici|axios\/|PostmanRuntime|insomnia|httpunit|HTTrack|Nutch|mechanize|HeadlessChrome|Playwright|Puppeteer|PhantomJS|Selenium|Nightmare|jsdom|cheerio|htmlparser|libcurl|python-httpx|aiohttp\.client|siteauditbot|SEOkicks|ZoominfoBot|ClarityBot|VelenPublicWebCrawler|Turnitin|Copyscape|screaming\s*frog|SiteAuditBot|Barkrowler|LinkpadBot|MegaIndex|Spinn3r|FlipboardProxy|qwantbot|Neevabot|TurnDown|archive\.org_bot|ia_archiver|Wayback|heritrix|CommonCrawl/i;
 
-/** robots.txt user-agents that must not crawl anything (training / scrapers). */
+/**
+ * robots.txt user-agents that must not crawl (model training / bulk scrapers).
+ * Answer-engine search bots (OAI-SearchBot, PerplexityBot, Claude-SearchBot, …)
+ * are intentionally omitted so AEO/GEO citation can work.
+ */
 export const ROBOTS_DISALLOW_ALL_AGENTS = [
   "GPTBot",
-  "ChatGPT-User",
-  "OAI-SearchBot",
   "Google-Extended",
   "Google-CloudVertexBot",
   "CCBot",
   "anthropic-ai",
   "ClaudeBot",
   "Claude-Web",
-  "Claude-SearchBot",
   "Claude-User",
   "Bytespider",
   "Amazonbot",
   "Applebot-Extended",
-  "PerplexityBot",
-  "Perplexity-User",
-  "YouBot",
   "cohere-ai",
   "Diffbot",
   "ImagesiftBot",
@@ -307,6 +313,8 @@ export function classifyClient(request: NextRequest): "search" | "social" | "bro
   if (VERIFICATION_BOT_RE.test(ua)) return "social";
   if (SOCIAL_BOT_RE.test(ua)) return "social";
   if (SEARCH_BOT_RE.test(ua)) return "search";
+  // AEO/GEO: allow answer engines to read public pages for citation.
+  if (ANSWER_ENGINE_BOT_RE.test(ua)) return "search";
   if (!ua.trim()) return "scraper";
   if (SCRAPER_BOT_RE.test(ua)) return "scraper";
   if (looksLikeBrowser(request, ua)) return "browser";
@@ -368,9 +376,10 @@ export function applySecurityHeaders(
     headers.delete("X-Robots-Tag");
     return;
   }
-  // Search engines may index; AI training crawlers should respect noai/noimageai.
-  headers.set("X-Robots-Tag", "noai, noimageai");
+  // Kennisbank: discourage AI training reuse. Public marketing (incl. /locaties)
+  // stays open for AEO/GEO citation — classic search bots already use Googlebot.
   if (isKennisbankPath(internalPath, pathname)) {
+    headers.set("X-Robots-Tag", "noai, noimageai");
     headers.set("Cache-Control", "private, no-store");
   }
 }

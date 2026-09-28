@@ -48,6 +48,20 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow,
       },
+      // Answer engines (AEO/GEO citation) — public marketing pages, not training.
+      {
+        userAgent: [
+          "OAI-SearchBot",
+          "ChatGPT-User",
+          "Claude-SearchBot",
+          "PerplexityBot",
+          "Perplexity-User",
+          "YouBot",
+          "DuckAssistBot",
+        ],
+        allow: "/",
+        disallow,
+      },
       // AI training / SEO scrapers — nothing.
       {
         userAgent: [...ROBOTS_DISALLOW_ALL_AGENTS],

@@ -1,0 +1,2576 @@
+{
+  "fr": {
+    "title": "Emplacements des serveurs par région",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Asie",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Asie du Sud",
+            "locations": [
+              "Inde (Bombay)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Asie du Sud-Est",
+            "locations": [
+              "Indonésie",
+              "Malaisie",
+              "Singapour"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Europe",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Europe de l'Est",
+            "locations": [
+              "Lituanie"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Europe de l'Ouest et du Nord",
+            "locations": [
+              "Allemagne (Francfort)",
+              "France",
+              "Pays-Bas",
+              "Royaume-Uni"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Amérique du Nord",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "États-Unis",
+            "locations": [
+              "Asheville, Caroline du Nord",
+              "Boston, Massachusetts",
+              "Phénix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Amérique du Sud",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "l'Amérique latine",
+            "locations": [
+              "Brésil"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "de": {
+    "title": "Serverstandorte nach Region",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Asien",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Südasien",
+            "locations": [
+              "Indien (Mumbai)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Südostasien",
+            "locations": [
+              "Indonesien",
+              "Malaysia",
+              "Singapur"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Europa",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Osteuropa",
+            "locations": [
+              "Litauen"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "West- und Nordeuropa",
+            "locations": [
+              "Deutschland (Frankfurt)",
+              "Frankreich",
+              "Niederlande",
+              "Vereinigtes Königreich"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Nordamerika",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "Vereinigte Staaten",
+            "locations": [
+              "Asheville, North Carolina",
+              "Boston, Massachusetts",
+              "Phoenix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Südamerika",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Lateinamerika",
+            "locations": [
+              "Brasilien"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "es": {
+    "title": "Ubicaciones de servidores por región",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Asia",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Asia del Sur",
+            "locations": [
+              "India (Bombay)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Sudeste Asiático",
+            "locations": [
+              "Indonesia",
+              "Malasia",
+              "Singapur"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Europa",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Europa Oriental",
+            "locations": [
+              "Lituania"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Europa occidental y del norte",
+            "locations": [
+              "Alemania (Fráncfort)",
+              "Francia",
+              "Países Bajos",
+              "Reino Unido"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "América del Norte",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "Estados Unidos",
+            "locations": [
+              "Asheville, Carolina del Norte",
+              "Boston, Massachusetts",
+              "fénix, arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Sudamérica",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "América Latina",
+            "locations": [
+              "Brasil"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "pt": {
+    "title": "Locais de servidores por região",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Ásia",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Sul da Ásia",
+            "locations": [
+              "Índia (Mumbai)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Sudeste Asiático",
+            "locations": [
+              "Indonésia",
+              "Malásia",
+              "Cingapura"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Europa",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Europa Oriental",
+            "locations": [
+              "Lituânia"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Europa Ocidental e Norte",
+            "locations": [
+              "Alemanha (Frankfurt)",
+              "França",
+              "Holanda",
+              "Reino Unido"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "América do Norte",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "Estados Unidos",
+            "locations": [
+              "Asheville, Carolina do Norte",
+              "Boston, Massachusetts",
+              "Fênix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Ámérica do Sul",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "América latina",
+            "locations": [
+              "Brasil"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "it": {
+    "title": "Posizioni dei server per regione",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Asia",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Asia meridionale",
+            "locations": [
+              "India (Mumbai)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Sud-est asiatico",
+            "locations": [
+              "Indonesia",
+              "Malaysia",
+              "Singapore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Europa",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Europa orientale",
+            "locations": [
+              "Lituania"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Europa occidentale e settentrionale",
+            "locations": [
+              "Germania (Francoforte)",
+              "Francia",
+              "Paesi Bassi",
+              "Regno Unito"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "America del Nord",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "Stati Uniti",
+            "locations": [
+              "Asheville, Carolina del Nord",
+              "Boston, Massachusetts",
+              "Phoenix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Sud America",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "America Latina",
+            "locations": [
+              "Brasile"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "el": {
+    "title": "Τοποθεσίες διακομιστή ανά περιοχή",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Ασία",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Νότια Ασία",
+            "locations": [
+              "Ινδία (Βομβάη)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Νοτιοανατολική Ασία",
+            "locations": [
+              "Ινδονησία",
+              "Μαλαισία",
+              "Σιγκαπούρη"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Ευρώπη",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Ανατολική Ευρώπη",
+            "locations": [
+              "Λιθουανία"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Δυτική & Βόρεια Ευρώπη",
+            "locations": [
+              "Γερμανία (Φρανκφούρτη)",
+              "Γαλλία",
+              "Ολλανδία",
+              "Ηνωμένο Βασίλειο"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Βόρεια Αμερική",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "Ηνωμένες Πολιτείες",
+            "locations": [
+              "Άσβιλ, Βόρεια Καρολίνα",
+              "Βοστώνη, Μασαχουσέτη",
+              "Φοίνιξ, Αριζόνα"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Νότια Αμερική",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Λατινική Αμερική",
+            "locations": [
+              "Βραζιλία"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "pl": {
+    "title": "Lokalizacje serwerów według regionu",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Azja",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Azja Południowa",
+            "locations": [
+              "Indie (Bombaj)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Azja Południowo-Wschodnia",
+            "locations": [
+              "Indonezja",
+              "Malezja",
+              "Singapur"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Europa",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Europa Wschodnia",
+            "locations": [
+              "Litwa"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Europa Zachodnia i Północna",
+            "locations": [
+              "Niemcy (Frankfurt)",
+              "Francja",
+              "Niderlandy",
+              "Zjednoczone Królestwo"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Ameryka Północna",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "Stany Zjednoczone",
+            "locations": [
+              "Asheville w Północnej Karolinie",
+              "Bostonie, Massachusetts",
+              "Phoenix w Arizonie"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Ameryka Południowa",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Ameryka Łacińska",
+            "locations": [
+              "Brazylia"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "cs": {
+    "title": "Umístění serveru podle regionu",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Asie",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Jižní Asie",
+            "locations": [
+              "Indie (Bombaj)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Jihovýchodní Asie",
+            "locations": [
+              "Indonésie",
+              "Malajsie",
+              "Singapur"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Evropa",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "východní Evropa",
+            "locations": [
+              "Litva"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Západní a severní Evropa",
+            "locations": [
+              "Německo (Frankfurt)",
+              "Francie",
+              "Nizozemí",
+              "Spojené království"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Severní Amerika",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "Spojené státy",
+            "locations": [
+              "Asheville, Severní Karolína",
+              "Boston, Massachusetts",
+              "Phoenix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Jižní Amerika",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Latinská Amerika",
+            "locations": [
+              "Brazílie"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "sk": {
+    "title": "Umiestnenie serverov podľa regiónu",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Ázie",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Južná Ázia",
+            "locations": [
+              "India (Bombaj)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Juhovýchodná Ázia",
+            "locations": [
+              "Indonézia",
+              "Malajzia",
+              "Singapur"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Európe",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "východnej Európy",
+            "locations": [
+              "Litva"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Západná a Severná Európa",
+            "locations": [
+              "Nemecko (Frankfurt)",
+              "Francúzsko",
+              "Holandsko",
+              "Spojené kráľovstvo"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Severná Amerika",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "Spojené štáty americké",
+            "locations": [
+              "Asheville, Severná Karolína",
+              "Boston, Massachusetts",
+              "Phoenix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Južná Amerika",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Latinská Amerika",
+            "locations": [
+              "Brazília"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "hu": {
+    "title": "A szerverek elhelyezkedése régiónként",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Ázsia",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Dél-Ázsia",
+            "locations": [
+              "India (Mumbai)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Délkelet-Ázsia",
+            "locations": [
+              "Indonézia",
+              "Malaysia",
+              "Szingapúr"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Európa",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Kelet-Európa",
+            "locations": [
+              "Litvánia"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Nyugat- és Észak-Európa",
+            "locations": [
+              "Németország (Frankfurt)",
+              "Franciaország",
+              "Hollandia",
+              "Egyesült Királyság"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Észak Amerika",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "Egyesült Államok",
+            "locations": [
+              "Asheville, Észak-Karolina",
+              "Boston, Massachusetts",
+              "Phoenix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Dél-Amerika",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Latin-Amerika",
+            "locations": [
+              "Brazília"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ro": {
+    "title": "Locațiile serverului în funcție de regiune",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Asia",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Asia de Sud",
+            "locations": [
+              "India (Mumbai)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Asia de Sud-Est",
+            "locations": [
+              "Indonezia",
+              "Malaezia",
+              "Singapore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Europa",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Europa de Est",
+            "locations": [
+              "Lituania"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Europa de Vest și de Nord",
+            "locations": [
+              "Germania (Frankfurt)",
+              "Franţa",
+              "Olanda",
+              "Regatul Unit"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "America de Nord",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "Statele Unite",
+            "locations": [
+              "Asheville, Carolina de Nord",
+              "Boston, Massachusetts",
+              "Phoenix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "America de Sud",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "America Latină",
+            "locations": [
+              "Brazilia"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "bg": {
+    "title": "Местоположение на сървъра по регион",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Азия",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Южна Азия",
+            "locations": [
+              "Индия (Мумбай)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Югоизточна Азия",
+            "locations": [
+              "Индонезия",
+              "Малайзия",
+              "Сингапур"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Европа",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Източна Европа",
+            "locations": [
+              "Литва"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Западна и Северна Европа",
+            "locations": [
+              "Германия (Франкфурт)",
+              "Франция",
+              "Холандия",
+              "Великобритания"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Северна Америка",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "САЩ",
+            "locations": [
+              "Ашвил, Северна Каролина",
+              "Бостън, Масачузетс",
+              "Финикс, Аризона"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Южна Америка",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Латинска Америка",
+            "locations": [
+              "Бразилия"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "hr": {
+    "title": "Lokacije poslužitelja po regijama",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Azija",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Južna Azija",
+            "locations": [
+              "Indija (Mumbai)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Jugoistočna Azija",
+            "locations": [
+              "Indonezija",
+              "Malezija",
+              "Singapur"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Europi",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Istočna Europa",
+            "locations": [
+              "Litva"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Zapadna i Sjeverna Europa",
+            "locations": [
+              "Njemačka (Frankfurt)",
+              "Francuska",
+              "Nizozemska",
+              "Velika Britanija"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Sjeverna Amerika",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "Sjedinjene Države",
+            "locations": [
+              "Asheville, Sjeverna Karolina",
+              "Boston, Massachusetts",
+              "Phoenix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Južna Amerika",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Latinska Amerika",
+            "locations": [
+              "Brazil"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "sr": {
+    "title": "Локације сервера по регионима",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Азија",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Јужна Азија",
+            "locations": [
+              "Индија (Мумбај)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "југоисточна Азија",
+            "locations": [
+              "Индонесиа",
+              "Малезија",
+              "Сингапур"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Европа",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Источна Европа",
+            "locations": [
+              "Литванија"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Западна и Северна Европа",
+            "locations": [
+              "Немачка (Франкфурт)",
+              "Француска",
+              "Холандија",
+              "Уједињено Краљевство"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Северна Америка",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "Сједињене Државе",
+            "locations": [
+              "Ешвил, Северна Каролина",
+              "Бостон, Масачусетс",
+              "Феникс, Аризона"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Јужна Америка",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Латинској Америци",
+            "locations": [
+              "Бразил"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "bs": {
+    "title": "Lokacije servera po regijama",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Azija",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Južna Azija",
+            "locations": [
+              "Indija (Mumbai)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Jugoistočna Azija",
+            "locations": [
+              "Indonezija",
+              "Malezija",
+              "Singapur"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Evropa",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Istočna Evropa",
+            "locations": [
+              "Litvanija"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Zapadna i Sjeverna Evropa",
+            "locations": [
+              "Njemačka (Frankfurt)",
+              "Francuska",
+              "Holandija",
+              "Ujedinjeno Kraljevstvo"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Sjeverna Amerika",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "Sjedinjene Američke Države",
+            "locations": [
+              "Asheville, Sjeverna Karolina",
+              "Boston, Massachusetts",
+              "Phoenix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Južna Amerika",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Latinska Amerika",
+            "locations": [
+              "Brazil"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "cnr": {
+    "title": "Локације сервера по регионима",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Азија",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Јужна Азија",
+            "locations": [
+              "Индија (Мумбај)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "југоисточна Азија",
+            "locations": [
+              "Индонесиа",
+              "Малезија",
+              "Сингапур"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Европа",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Источна Европа",
+            "locations": [
+              "Литванија"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Западна и Северна Европа",
+            "locations": [
+              "Немачка (Франкфурт)",
+              "Француска",
+              "Холандија",
+              "Уједињено Краљевство"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Северна Америка",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "Сједињене Државе",
+            "locations": [
+              "Ешвил, Северна Каролина",
+              "Бостон, Масачусетс",
+              "Феникс, Аризона"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Јужна Америка",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Латинској Америци",
+            "locations": [
+              "Бразил"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "sq": {
+    "title": "Vendndodhjet e serverëve sipas rajonit",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Azia",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Azia Jugore",
+            "locations": [
+              "Indi (Mumbai)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Azinë Juglindore",
+            "locations": [
+              "Indonezia",
+              "Malajzia",
+              "Singapor"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Evropë",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Evropa Lindore",
+            "locations": [
+              "Lituania"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Evropa perëndimore dhe veriore",
+            "locations": [
+              "Gjermani (Frankfurt)",
+              "Franca",
+              "Holanda",
+              "Mbretëria e Bashkuar"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Amerikën e Veriut",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "Shtetet e Bashkuara",
+            "locations": [
+              "Asheville, Karolina e Veriut",
+              "Boston, Massachusetts",
+              "Phoenix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Amerika e Jugut",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Amerika Latine",
+            "locations": [
+              "Brazili"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "mk": {
+    "title": "Локации на сервер по регион",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Азија",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Јужна Азија",
+            "locations": [
+              "Индија (Мумбаи)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Југоисточна Азија",
+            "locations": [
+              "Индонезија",
+              "Малезија",
+              "Сингапур"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Европа",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Источна Европа",
+            "locations": [
+              "Литванија"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Западна и Северна Европа",
+            "locations": [
+              "Германија (Франкфурт)",
+              "Франција",
+              "Холандија",
+              "Обединетото Кралство"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Северна Америка",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "Соединетите Американски Држави",
+            "locations": [
+              "Ешвил, Северна Каролина",
+              "Бостон, Масачусетс",
+              "Феникс, Аризона"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Јужна Америка",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Латинска Америка",
+            "locations": [
+              "Бразил"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "lt": {
+    "title": "Serverių vietos pagal regioną",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Azija",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Pietų Azija",
+            "locations": [
+              "Indija (Mumbajus)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Pietryčių Azija",
+            "locations": [
+              "Indonezija",
+              "Malaizija",
+              "Singapūras"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Europa",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Rytų Europa",
+            "locations": [
+              "Lietuva"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Vakarų ir Šiaurės Europa",
+            "locations": [
+              "Vokietija (Frankfurtas)",
+              "Prancūzija",
+              "Nyderlandai",
+              "Jungtinė Karalystė"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Šiaurės Amerika",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "Jungtinės Valstijos",
+            "locations": [
+              "Asheville, Šiaurės Karolina",
+              "Bostonas, Masačusetsas",
+              "Finiksas, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Pietų Amerika",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Lotynų Amerika",
+            "locations": [
+              "Brazilija"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "da": {
+    "title": "Serverplaceringer efter region",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Asien",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Sydasien",
+            "locations": [
+              "Indien (Mumbai)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Sydøstasien",
+            "locations": [
+              "Indonesien",
+              "Malaysia",
+              "Singapore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Europa",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Østeuropa",
+            "locations": [
+              "Litauen"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Vest- og Nordeuropa",
+            "locations": [
+              "Tyskland (Frankfurt)",
+              "Frankrig",
+              "Holland",
+              "Storbritannien"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Nordamerika",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "USA",
+            "locations": [
+              "Asheville, North Carolina",
+              "Boston, Massachusetts",
+              "Phoenix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Sydamerika",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Latinamerika",
+            "locations": [
+              "Brasilien"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "sv": {
+    "title": "Serverplatser efter region",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Asien",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Sydasien",
+            "locations": [
+              "Indien (Mumbai)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Sydostasien",
+            "locations": [
+              "Indonesien",
+              "Malaysia",
+              "Singapore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Europa",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Östeuropa",
+            "locations": [
+              "Litauen"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Västra och norra Europa",
+            "locations": [
+              "Tyskland (Frankfurt)",
+              "Frankrike",
+              "Nederländerna",
+              "Storbritannien"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Nordamerika",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "USA",
+            "locations": [
+              "Asheville, North Carolina",
+              "Boston, Massachusetts",
+              "Phoenix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Sydamerika",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Latinamerika",
+            "locations": [
+              "Brasilien"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "no": {
+    "title": "Serverplasseringer etter region",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Asia",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Sør-Asia",
+            "locations": [
+              "India (Mumbai)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Sørøst-Asia",
+            "locations": [
+              "Indonesia",
+              "Malaysia",
+              "Singapore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Europa",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Øst-Europa",
+            "locations": [
+              "Litauen"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Vest- og Nord-Europa",
+            "locations": [
+              "Tyskland (Frankfurt)",
+              "Frankrike",
+              "Nederland",
+              "Storbritannia"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Nord-Amerika",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "USA",
+            "locations": [
+              "Asheville, North Carolina",
+              "Boston, Massachusetts",
+              "Phoenix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Sør-Amerika",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Latin-Amerika",
+            "locations": [
+              "Brasil"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "fi": {
+    "title": "Palvelinten sijainnit alueen mukaan",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Aasia",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Etelä-Aasia",
+            "locations": [
+              "Intia (Mumbai)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Kaakkois-Aasia",
+            "locations": [
+              "Indonesia",
+              "Malesia",
+              "Singapore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Euroopassa",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Itä-Eurooppaa",
+            "locations": [
+              "Liettua"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Länsi & Pohjois-Eurooppa",
+            "locations": [
+              "Saksa (Frankfurt)",
+              "Ranska",
+              "Alankomaat",
+              "Yhdistynyt kuningaskunta"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Pohjois-Amerikassa",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "Yhdysvallat",
+            "locations": [
+              "Asheville, Pohjois-Carolina",
+              "Boston, Massachusetts",
+              "Phoenix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Etelä-Amerikka",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Latinalaisessa Amerikassa",
+            "locations": [
+              "Brasilia"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "uk": {
+    "title": "Розташування серверів за регіонами",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Азії",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Південна Азія",
+            "locations": [
+              "Індія (Мумбаї)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Південно-Східна Азія",
+            "locations": [
+              "Індонезія",
+              "Малайзія",
+              "Сінгапур"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Європа",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Східна Європа",
+            "locations": [
+              "Литва"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Західна та Північна Європа",
+            "locations": [
+              "Німеччина (Франкфурт)",
+              "Франція",
+              "Нідерланди",
+              "Велика Британія"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Північна Америка",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "США",
+            "locations": [
+              "Ешвіль, Північна Кароліна",
+              "Бостон, Массачусетс",
+              "Фенікс, штат Арізона"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Південна Америка",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Латинська Америка",
+            "locations": [
+              "Бразилія"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ru": {
+    "title": "Расположение серверов по регионам",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Азия",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Южная Азия",
+            "locations": [
+              "Индия (Мумбаи)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Юго-Восточная Азия",
+            "locations": [
+              "Индонезия",
+              "Малайзия",
+              "Сингапур"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Европа",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Восточная Европа",
+            "locations": [
+              "Литва"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Западная и Северная Европа",
+            "locations": [
+              "Германия (Франкфурт)",
+              "Франция",
+              "Нидерланды",
+              "Великобритания"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Северная Америка",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "Соединенные Штаты",
+            "locations": [
+              "Эшвилл, Северная Каролина",
+              "Бостон, Массачусетс",
+              "Финикс, Аризона"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Южная Америка",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Латинская Америка",
+            "locations": [
+              "Бразилия"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "tr": {
+    "title": "Bölgeye göre sunucu konumları",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Asya",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Güney Asya",
+            "locations": [
+              "Hindistan (Mumbai)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Güneydoğu Asya",
+            "locations": [
+              "Endonezya",
+              "Malezya",
+              "Singapur"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Avrupa",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Doğu Avrupa",
+            "locations": [
+              "Litvanya"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Batı ve Kuzey Avrupa",
+            "locations": [
+              "Almanya (Frankfurt)",
+              "Fransa",
+              "Hollanda",
+              "Birleşik Krallık"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Kuzey Amerika",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "Amerika Birleşik Devletleri",
+            "locations": [
+              "Asheville, Kuzey Karolina",
+              "Boston, Massachusetts",
+              "Phoenix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Güney Amerika",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Latin Amerika",
+            "locations": [
+              "Brezilya"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "he": {
+    "title": "מיקומי שרת לפי אזור",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "אַסְיָה",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "דרום אסיה",
+            "locations": [
+              "הודו (מומביי)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "דרום מזרח אסיה",
+            "locations": [
+              "אִינדוֹנֵזִיָה",
+              "מלזיה",
+              "סינגפור"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "אֵירוֹפָּה",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "מזרח אירופה",
+            "locations": [
+              "ליטא"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "מערב וצפון אירופה",
+            "locations": [
+              "גרמניה (פרנקפורט)",
+              "צָרְפַת",
+              "הוֹלַנד",
+              "בְּרִיטַנִיָה"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "צפון אמריקה",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "אַרצוֹת הַבְּרִית",
+            "locations": [
+              "אשוויל, צפון קרוליינה",
+              "בוסטון, מסצ'וסטס",
+              "פיניקס, אריזונה"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "דרום אמריקה",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "אמריקה הלטינית",
+            "locations": [
+              "בְּרָזִיל"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ar": {
+    "title": "مواقع الخادم حسب المنطقة",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "آسيا",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "جنوب آسيا",
+            "locations": [
+              "الهند (مومباي)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "جنوب شرق آسيا",
+            "locations": [
+              "أندونيسيا",
+              "ماليزيا",
+              "سنغافورة"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "أوروبا",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "أوروبا الشرقية",
+            "locations": [
+              "ليتوانيا"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "غرب وشمال أوروبا",
+            "locations": [
+              "ألمانيا (فرانكفورت)",
+              "فرنسا",
+              "هولندا",
+              "المملكة المتحدة"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "أمريكا الشمالية",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "الولايات المتحدة",
+            "locations": [
+              "(آشفيل، كارولاينا الشمالية).",
+              "بوسطن، ماساتشوستس",
+              "فينيكس، أريزونا"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "أمريكا الجنوبية",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "أمريكا اللاتينية",
+            "locations": [
+              "البرازيل"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ka": {
+    "title": "სერვერის მდებარეობები რეგიონის მიხედვით",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "აზია",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "სამხრეთ აზია",
+            "locations": [
+              "ინდოეთი (მუმბაი)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "სამხრეთ-აღმოსავლეთ აზია",
+            "locations": [
+              "ინდონეზია",
+              "მალაიზია",
+              "სინგაპური"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "ევროპა",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "აღმოსავლეთ ევროპა",
+            "locations": [
+              "ლიტვა"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "დასავლეთ და ჩრდილოეთ ევროპა",
+            "locations": [
+              "გერმანია (ფრანკფურტი)",
+              "საფრანგეთი",
+              "ნიდერლანდები",
+              "გაერთიანებული სამეფო"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "ჩრდილოეთ ამერიკა",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "შეერთებული შტატები",
+            "locations": [
+              "ეშევილი, ჩრდილოეთ კაროლინა",
+              "ბოსტონი, მასაჩუსეტსი",
+              "ფენიქსი, არიზონა"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "სამხრეთ ამერიკა",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "ლათინური ამერიკა",
+            "locations": [
+              "ბრაზილია"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "hy": {
+    "title": "Սերվերի գտնվելու վայրը ըստ տարածաշրջանի",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Ասիա",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Հարավային Ասիա",
+            "locations": [
+              "Հնդկաստան (Մումբայ)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Հարավարևելյան Ասիա",
+            "locations": [
+              "Ինդոնեզիա",
+              "Մալայզիա",
+              "Սինգապուր"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Եվրոպա",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Արևելյան Եվրոպա",
+            "locations": [
+              "Լիտվա"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Արևմտյան և Հյուսիսային Եվրոպա",
+            "locations": [
+              "Գերմանիա (Ֆրանկֆուրտ)",
+              "Ֆրանսիա",
+              "Նիդեռլանդներ",
+              "Միացյալ Թագավորություն"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Հյուսիսային Ամերիկա",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "Միացյալ Նահանգներ",
+            "locations": [
+              "Էշվիլ, Հյուսիսային Կարոլինա",
+              "Բոստոն, Մասաչուսեթս",
+              "Ֆենիքս, Արիզոնա"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Հարավային Ամերիկա",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Լատինական Ամերիկա",
+            "locations": [
+              "Բրազիլիա"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "az": {
+    "title": "Bölgəyə görə server yerləri",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Asiya",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "Cənubi Asiya",
+            "locations": [
+              "Hindistan (Mumbay)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Cənub-Şərqi Asiya",
+            "locations": [
+              "İndoneziya",
+              "Malayziya",
+              "Sinqapur"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Avropa",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Şərqi Avropa",
+            "locations": [
+              "Litva"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Qərbi və Şimali Avropa",
+            "locations": [
+              "Almaniya (Frankfurt)",
+              "Fransa",
+              "Hollandiya",
+              "Böyük Britaniya"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "Şimali Amerika",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "Amerika Birləşmiş Ştatları",
+            "locations": [
+              "Asheville, Şimali Karolina ;",
+              "Boston, Massaçusets",
+              "Phoenix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "Cənubi Amerika",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Latın Amerikası",
+            "locations": [
+              "Braziliya"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "zh": {
+    "title": "按地区划分的服务器位置",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "亚洲",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "南亚",
+            "locations": [
+              "印度（孟买）"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "东南亚",
+            "locations": [
+              "印度尼西亚",
+              "马来西亚",
+              "新加坡"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "欧洲",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "东欧",
+            "locations": [
+              "立陶宛"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "西欧和北欧",
+            "locations": [
+              "德国（法兰克福）",
+              "法国",
+              "荷兰",
+              "英国"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "北美",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "美国",
+            "locations": [
+              "阿什维尔 (北卡罗来纳州)",
+              "马萨诸塞州波士顿",
+              "亚利桑那州凤凰城"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "南美洲",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "拉美",
+            "locations": [
+              "巴西"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ja": {
+    "title": "地域別のサーバーの場所",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "アジア",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "南アジア",
+            "locations": [
+              "インド (ムンバイ)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "東南アジア",
+            "locations": [
+              "インドネシア",
+              "マレーシア",
+              "シンガポール"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "ヨーロッパ",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "東欧",
+            "locations": [
+              "リトアニア"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "西ヨーロッパと北欧",
+            "locations": [
+              "ドイツ（フランクフルト）",
+              "フランス",
+              "オランダ",
+              "イギリス"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "北米",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "米国",
+            "locations": [
+              "ノースカロライナ州アシュビル",
+              "マサチューセッツ州ボストン",
+              "アリゾナ州フェニックス"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "南アメリカ",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "ラテンアメリカ",
+            "locations": [
+              "ブラジル"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

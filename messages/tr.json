@@ -22,7 +22,8 @@
     "dashboard": "Kontrol Paneli",
     "logout": "Oturumu kapat",
     "webmail": "Webmail",
-    "kennisbank": "Bilgi bankası"
+    "kennisbank": "Bilgi bankası",
+    "statuspage": "Durum"
   },
   "language": {
     "title": "Dil"
@@ -1053,7 +1054,7 @@
     "vision": "Vizyon",
     "visionText": "Her girişimci için doğru dijital çözümü oluşturmak — ölçeklenebilir, net ve büyümeye odaklı; sonuçsuz moda araçlara değil.",
     "philosophy": "TripleZero felsefesi",
-    "philosophyText": "000; sıfır tahmin, sıfır eksik ve sıfır israf demektir: veriye dayalı kararlar, büyümek için yeterli kapasite ve işe yaramayana bütçe veya zaman harcamamak.",
+    "philosophyText": "000, sıfır tahmin, sıfır açık ve sıfır israf anlamına gelir: verilere dayalı karar alma, büyüme için yeterli kapasite ve işe yaramayan şeylere bütçe veya zaman harcanmaması.",
     "storyTitle": "Biz kimiz",
     "storyLead": "TripleZero iT teknik büyüme ortağınızdır — ilk taramadan sürekli optimizasyona.",
     "storyP1": "AI entegrasyonu, AEO, GEO, SEO, web tasarımı, WordPress bakımı, hosting ve full-funnel pazarlamayı tek yaklaşımda birleştiriyoruz. Çevrimiçi varlığınız hızlı, güvenli, bulunabilir ve lead veya gelire odaklı kalır.",
@@ -1279,7 +1280,12 @@
     "featuredNl": "Hollanda’nın en büyük şehirleri",
     "results": "{count} şehir",
     "noResults": "Şehir bulunamadı.",
-    "showMore": "Daha fazla şehir göster"
+    "showMore": "Daha fazla şehir göster",
+    "indexLead": "Every city page is built for classic SEO, Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) — so businesses in that market can be found in Google, local results and AI answers.",
+    "faqTitle": "FAQ — AEO, GEO & SEO in {name}",
+    "relatedTitle": "Nearby & related cities",
+    "relatedSubtitle": "Continue exploring AI, AEO, GEO and SEO near {name}.",
+    "allCitiesTitle": "All cities (crawlable index)"
   },
   "inquiry": {
     "websiteHint": "web sitesi / web mağazası",
@@ -1697,5 +1703,26 @@
     "typeREGISTRATION": "Registration",
     "typeRENEWAL": "Renewal",
     "typeTRANSFER": "Transfer"
+  },
+  "statuspage": {
+    "eyebrow": "Sistem durumu",
+    "title": "TripleZero iT Durumu",
+    "operational": "Operasyonel",
+    "degraded": "Düşük performans",
+    "partialOutage": "Kısmi kesinti",
+    "majorOutage": "Büyük kesinti",
+    "maintenance": "Bakım",
+    "unknown": "Bilinmiyor",
+    "daysAgo": "{days} gün önce",
+    "today": "Bugün",
+    "uptimePercent": "Çalışma süresinin yüzdesi {value}",
+    "uptimeHint": "Son 90 gün içindeki çalışma süresi.",
+    "liveSync": "Canlı olarak senkronize edildi.",
+    "scheduledMaintenance": "Planlı Bakım",
+    "noMaintenance": "Şu anda planlı bir bakım bulunmamaktadır.",
+    "scheduledFor": "{when} için planlandı",
+    "postedOn": "{when} tarihinde yayınlandı",
+    "unavailable": "Durum verileri geçici olarak kullanılamıyor.",
+    "cta": "Sunucu durumu sayfası"
   }
 }

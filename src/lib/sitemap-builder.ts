@@ -42,7 +42,7 @@ function hreflangForLocale(locale: string) {
 }
 
 /** Bump when regenerating after a major content / crawlability fix. */
-const CONTENT_REV = "2026-09-28a";
+const CONTENT_REV = "2026-09-28b";
 
 /**
  * Soft cap per file. With lean hreflang, stay well under Google’s practical
@@ -499,7 +499,10 @@ export async function writeSitemapFiles(rootDir = process.cwd()) {
   writeFileSync(join(rootDir, "public", "sitemap.xml"), fullIndexXml, "utf8");
   writeFileSync(join(outDir, "sitemap-index.xml"), fullIndexXml, "utf8");
 
-  const robotsSitemaps = ["/sitemap.xml"];
+  const robotsSitemaps = [
+    "/sitemap.xml",
+    ...indexFiles.map((f) => f.path),
+  ];
   const pageCount = indexFiles.length
     ? groups.reduce((sum, group) => sum + group.entries.length, 0)
     : 0;

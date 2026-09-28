@@ -4006,17 +4006,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/zhangjiagang" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/locaties/agra</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.74</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/agra" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/agra" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/agra" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/agra" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/agra" />
-  </url>
-  <url>
     <loc>https://000-it.com/nl/locaties/south-tangerang</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -5500,5 +5489,16 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/rui-an" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/rui-an" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/rui-an" />
+  </url>
+  <url>
+    <loc>https://000-it.com/nl/locaties/malingao</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.67</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/malingao" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/malingao" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/malingao" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/malingao" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/malingao" />
   </url>
 </urlset>

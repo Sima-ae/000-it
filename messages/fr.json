@@ -22,7 +22,8 @@
     "dashboard": "Tableau de bord",
     "logout": "Se déconnecter",
     "webmail": "Webmail",
-    "kennisbank": "Base de connaissances"
+    "kennisbank": "Base de connaissances",
+    "statuspage": "Statut"
   },
   "language": {
     "title": "Langue"
@@ -1053,7 +1054,7 @@
     "vision": "Vision",
     "visionText": "Construire la bonne solution numérique pour chaque entrepreneur — évolutive, claire et orientée croissance, pas des outils à la mode sans résultats.",
     "philosophy": "La philosophie TripleZero",
-    "philosophyText": "000 signifie zéro improvisation, zéro manque et zéro gaspillage : des décisions fondées sur les données, assez de capacité pour grandir, et aucun budget ni temps perdu sur ce qui ne marche pas.",
+    "philosophyText": "000 signifie zéro improvisation, zéro manque et zéro gaspillage : une prise de décision basée sur les données, une capacité suffisante pour croître, et aucun budget ni temps consacré à ce qui ne fonctionne pas.",
     "storyTitle": "Qui nous sommes",
     "storyLead": "TripleZero iT est votre partenaire de croissance technique — du premier scan à l’optimisation continue.",
     "storyP1": "Nous combinons intégration IA, AEO, GEO, SEO, webdesign, soin WordPress, hébergement et marketing full-funnel en une seule approche. Votre présence en ligne reste rapide, sûre, trouvable et orientée leads ou chiffre d’affaires.",
@@ -1279,7 +1280,12 @@
     "featuredNl": "Plus grandes villes des Pays-Bas",
     "results": "{count} villes",
     "noResults": "Aucune ville trouvée.",
-    "showMore": "Afficher plus de villes"
+    "showMore": "Afficher plus de villes",
+    "indexLead": "Every city page is built for classic SEO, Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) — so businesses in that market can be found in Google, local results and AI answers.",
+    "faqTitle": "FAQ — AEO, GEO & SEO in {name}",
+    "relatedTitle": "Nearby & related cities",
+    "relatedSubtitle": "Continue exploring AI, AEO, GEO and SEO near {name}.",
+    "allCitiesTitle": "All cities (crawlable index)"
   },
   "inquiry": {
     "websiteHint": "site internet / boutique en ligne",
@@ -1697,5 +1703,26 @@
     "typeREGISTRATION": "Enregistrement",
     "typeRENEWAL": "Renouvellement",
     "typeTRANSFER": "Transfert"
+  },
+  "statuspage": {
+    "eyebrow": "État du système",
+    "title": "Statut informatique TripleZéro",
+    "operational": "Opérationnel",
+    "degraded": "Performances dégradées",
+    "partialOutage": "Panne partielle",
+    "majorOutage": "Panne majeure",
+    "maintenance": "Entretien",
+    "unknown": "Inconnu",
+    "daysAgo": "il y a {days} jours",
+    "today": "Aujourd'hui",
+    "uptimePercent": "{value} % de disponibilité",
+    "uptimeHint": "Disponibilité au cours des 90 derniers jours.",
+    "liveSync": "Synchronisé en direct.",
+    "scheduledMaintenance": "Entretien programmé",
+    "noMaintenance": "Il n’y a pas de maintenance programmée pour le moment.",
+    "scheduledFor": "Prévu pour {quand}",
+    "postedOn": "Publié le {quand}",
+    "unavailable": "Les données d'état sont temporairement indisponibles.",
+    "cta": "Page d'état du serveur"
   }
 }

@@ -22,7 +22,8 @@
     "dashboard": "Instrumentbräda",
     "logout": "Logga ut",
     "webmail": "Webmail",
-    "kennisbank": "Kunskapsbank"
+    "kennisbank": "Kunskapsbank",
+    "statuspage": "Status"
   },
   "language": {
     "title": "Språk"
@@ -1053,7 +1054,7 @@
     "vision": "Vision",
     "visionText": "Bygga rätt digital lösning för varje företagare — skalbar, tydlig och inriktad på tillväxt, inte trendiga verktyg utan resultat.",
     "philosophy": "TripleZero-filosofin",
-    "philosophyText": "000 betyder noll gissningar, noll brist och noll spill: beslut baserade på data, tillräcklig kapacitet att växa och ingen budget eller tid på det som inte fungerar.",
+    "philosophyText": "000 betyder noll gissningar, noll underskott och noll slöseri: beslutsfattande baserat på data, tillräckligt med kapacitet för att växa och ingen budget eller tid spenderas på det som inte fungerar.",
     "storyTitle": "Vilka vi är",
     "storyLead": "TripleZero iT är er tekniska tillväxtpartner — från första skanningen till löpande optimering.",
     "storyP1": "Vi kombinerar AI-integration, AEO, GEO, SEO, webbdesign, WordPress-vård, hosting och full-funnel-marknadsföring i ett grepp. Er online-närvaro förblir snabb, säker, sökbar och inriktad på leads eller intäkt.",
@@ -1279,7 +1280,12 @@
     "featuredNl": "Största städerna i Nederländerna",
     "results": "{count} städer",
     "noResults": "Inga städer hittades.",
-    "showMore": "Visa fler städer"
+    "showMore": "Visa fler städer",
+    "indexLead": "Every city page is built for classic SEO, Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) — so businesses in that market can be found in Google, local results and AI answers.",
+    "faqTitle": "FAQ — AEO, GEO & SEO in {name}",
+    "relatedTitle": "Nearby & related cities",
+    "relatedSubtitle": "Continue exploring AI, AEO, GEO and SEO near {name}.",
+    "allCitiesTitle": "All cities (crawlable index)"
   },
   "inquiry": {
     "websiteHint": "hemsida / webshop",
@@ -1697,5 +1703,26 @@
     "typeREGISTRATION": "Registration",
     "typeRENEWAL": "Renewal",
     "typeTRANSFER": "Transfer"
+  },
+  "statuspage": {
+    "eyebrow": "Systemstatus",
+    "title": "TripleZero iT-status",
+    "operational": "Operativ",
+    "degraded": "Försämrad prestanda",
+    "partialOutage": "Partiellt avbrott",
+    "majorOutage": "Stort avbrott",
+    "maintenance": "Underhåll",
+    "unknown": "Okänd",
+    "daysAgo": "för {days} dagar sedan",
+    "today": "I dag",
+    "uptimePercent": "{value} % drifttid",
+    "uptimeHint": "Drifttid under de senaste 90 dagarna.",
+    "liveSync": "Synkroniserad live.",
+    "scheduledMaintenance": "Schemalagt underhåll",
+    "noMaintenance": "Det finns inget planerat underhåll just nu.",
+    "scheduledFor": "Schemalagt för {when}",
+    "postedOn": "Publicerat den {när}",
+    "unavailable": "Statusdata är tillfälligt otillgänglig.",
+    "cta": "Serverstatussida"
   }
 }

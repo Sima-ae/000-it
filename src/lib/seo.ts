@@ -451,12 +451,10 @@ export function buildCityMetadata(city: SeoCity, locale: string): Metadata {
   const name = isNl ? city.nameNl : city.nameEn;
   const country = isNl ? city.countryNameNl : city.countryNameEn;
   const region = isNl ? city.regionNl : city.regionEn;
-  const title = isNl
-    ? `AI, AEO, GEO & SEO in ${name} | TripleZero iT`
-    : `AI, AEO, GEO & SEO in ${name} | TripleZero iT`;
+  const title = `AI, AEO, GEO & SEO in ${name}`;
   const description = isNl
-    ? `TripleZero iT helpt bedrijven in ${name} (${region}, ${country}) met AI-integratie, AEO, GEO, SEO, marketing en maatwerk software. Coördinaten ${city.latitude}, ${city.longitude}. Vraag een gratis AI-scan aan.`
-    : `TripleZero iT helps businesses in ${name} (${region}, ${country}) with AI integration, AEO, GEO, SEO, marketing and custom software. Coordinates ${city.latitude}, ${city.longitude}. Request a free AI scan.`;
+    ? `AI, AEO, GEO & SEO in ${name} (${region}, ${country}). TripleZero iT helpt lokale bedrijven met AI-integratie, Answer Engine Optimization, Generative Engine Optimization en klassieke SEO. Start met een gratis AI-scan.`
+    : `AI, AEO, GEO & SEO in ${name} (${region}, ${country}). TripleZero iT helps local businesses with AI integration, Answer Engine Optimization, Generative Engine Optimization and classic SEO. Start with a free AI scan.`;
   const keywords = [
     ...(city.keywords || []),
     ...(city.tags || []),
@@ -699,32 +697,44 @@ export function organizationJsonLd() {
 export function cityServiceJsonLd(city: SeoCity, locale: string) {
   const isNl = locale === "nl";
   const name = isNl ? city.nameNl : city.nameEn;
+  const country = isNl ? city.countryNameNl : city.countryNameEn;
+  const region = isNl ? city.regionNl : city.regionEn;
   const url = absoluteUrl(localePath(locale, `/locaties/${city.slug}`));
   const image = absoluteUrl(city.image || SITE_SEO.defaultOgImage);
+  const description = isNl
+    ? `AI-integratie, AEO, GEO en SEO voor bedrijven in ${name} (${region}, ${country}).`
+    : `AI integration, AEO, GEO and SEO for businesses in ${name} (${region}, ${country}).`;
 
   return {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
+    "@id": `${url}#service`,
     name: `${SITE_SEO.name} — ${name}`,
     url,
     image,
     email: SITE_SEO.email,
+    description,
     keywords: (city.keywords || city.tags || []).join(", "),
+    inLanguage: htmlLangTag(locale),
     areaServed: {
       "@type": "City",
       name,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: name,
+        addressRegion: region,
+        addressCountry: city.country,
+      },
       containedInPlace: {
         "@type": "Country",
-        name: isNl ? city.countryNameNl : city.countryNameEn,
+        name: country,
       },
       geo: {
         "@type": "GeoCoordinates",
         latitude: city.latitude,
         longitude: city.longitude,
       },
-      ...(city.population
-        ? { population: city.population }
-        : {}),
+      ...(city.population ? { population: city.population } : {}),
       ...(city.timezone
         ? {
             additionalProperty: {
@@ -745,10 +755,128 @@ export function cityServiceJsonLd(city: SeoCity, locale: string) {
       "AEO (Answer Engine Optimization)",
       "GEO (Generative Engine Optimization)",
       "SEO",
+      "Local SEO",
       "Digital marketing",
       "Web design",
     ],
-    knowsAbout: ["AEO", "GEO", "SEO", "Artificial Intelligence", name],
+    knowsAbout: [
+      "AEO",
+      "GEO",
+      "SEO",
+      "Artificial Intelligence",
+      name,
+      country,
+    ],
+    availableLanguage: ["nl", "en"],
+    offers: {
+      "@type": "Offer",
+      name: isNl ? "Gratis AI-scan" : "Free AI scan",
+      price: "0",
+      priceCurrency: "EUR",
+      url: absoluteUrl(localePath(locale, "/ai-scan")),
+      availability: "https://schema.org/InStock",
+    },
+  };
+}
+
+export function faqPageJsonLd(
+  faqs: Array<{ question: string; answer: string }>,
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+}
+
+export function cityWebPageJsonLd(opts: {
+  city: SeoCity;
+  locale: string;
+  title: string;
+  description: string;
+}) {
+  const url = absoluteUrl(
+    localePath(opts.locale, `/locaties/${opts.city.slug}`),
+  );
+  const name =
+    opts.locale === "nl" ? opts.city.nameNl : opts.city.nameEn;
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": url,
+    url,
+    name: opts.title,
+    description: opts.description,
+    inLanguage: htmlLangTag(opts.locale),
+    isPartOf: {
+      "@type": "WebSite",
+      name: SITE_SEO.name,
+      url: siteOrigin(),
+    },
+    about: {
+      "@type": "City",
+      name,
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: opts.city.latitude,
+        longitude: opts.city.longitude,
+      },
+    },
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".city-direct-answer", ".city-faq", "h1"],
+    },
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: absoluteUrl(opts.city.image || SITE_SEO.defaultOgImage),
+    },
+  };
+}
+
+export function locationsCollectionJsonLd(opts: {
+  locale: string;
+  title: string;
+  description: string;
+  cities: SeoCity[];
+}) {
+  const url = absoluteUrl(localePath(opts.locale, "/locaties"));
+  const top = opts.cities.slice(0, 24);
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": url,
+    url,
+    name: opts.title,
+    description: opts.description,
+    inLanguage: htmlLangTag(opts.locale),
+    isPartOf: {
+      "@type": "WebSite",
+      name: SITE_SEO.name,
+      url: siteOrigin(),
+    },
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: opts.cities.length,
+      itemListElement: top.map((city, index) => {
+        const name =
+          opts.locale === "nl" ? city.nameNl : city.nameEn;
+        return {
+          "@type": "ListItem",
+          position: index + 1,
+          name,
+          url: absoluteUrl(
+            localePath(opts.locale, `/locaties/${city.slug}`),
+          ),
+        };
+      }),
+    },
   };
 }
 

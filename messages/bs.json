@@ -22,7 +22,8 @@
     "dashboard": "Kontrolna tabla",
     "logout": "Odjavite se",
     "webmail": "Webmail",
-    "kennisbank": "Baza znanja"
+    "kennisbank": "Baza znanja",
+    "statuspage": "Status"
   },
   "language": {
     "title": "Jezik"
@@ -1053,7 +1054,7 @@
     "vision": "Vizija",
     "visionText": "Graditi pravo digitalno rješenje za svakog poduzetnika — skalabilno, jasno i usmjereno na rast, a ne na moderne alate bez rezultata.",
     "philosophy": "Filozofija TripleZero",
-    "philosophyText": "000 znači nula nagađanja, nula manjka i nula rasipanja: odluke temeljene na podacima, dovoljno kapaciteta za rast i nikakav budžet ili vrijeme na ono što ne radi.",
+    "philosophyText": "000 znači nula nagađanja, nula nedostataka i nula rasipanja: donošenje odluka zasnovano na podacima, dovoljno kapaciteta za rast i bez budžeta ili vremena utrošenog na ono što ne funkcionira.",
     "storyTitle": "Ko smo",
     "storyLead": "TripleZero iT je vaš tehnički partner rasta — od prvog skena do kontinuirane optimizacije.",
     "storyP1": "Spajamo AI integraciju, AEO, GEO, SEO, web dizajn, WordPress skrb, hosting i full-funnel marketing u jedan pristup. Vaša online prisutnost ostaje brza, sigurna, pronalaziva i usmjerena na leadove ili prihod.",
@@ -1279,7 +1280,12 @@
     "featuredNl": "Najveći gradovi Holandije",
     "results": "{count} gradova",
     "noResults": "Nema pronađenih gradova.",
-    "showMore": "Prikaži više gradova"
+    "showMore": "Prikaži više gradova",
+    "indexLead": "Every city page is built for classic SEO, Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) — so businesses in that market can be found in Google, local results and AI answers.",
+    "faqTitle": "FAQ — AEO, GEO & SEO in {name}",
+    "relatedTitle": "Nearby & related cities",
+    "relatedSubtitle": "Continue exploring AI, AEO, GEO and SEO near {name}.",
+    "allCitiesTitle": "All cities (crawlable index)"
   },
   "inquiry": {
     "websiteHint": "web stranica / webshop",
@@ -1697,5 +1703,26 @@
     "typeREGISTRATION": "Registration",
     "typeRENEWAL": "Renewal",
     "typeTRANSFER": "Transfer"
+  },
+  "statuspage": {
+    "eyebrow": "Status sistema",
+    "title": "TripleZero iT status",
+    "operational": "Operativni",
+    "degraded": "Smanjenje performansi",
+    "partialOutage": "Djelomični prekid rada",
+    "majorOutage": "Veliki prekid rada",
+    "maintenance": "Održavanje",
+    "unknown": "Nepoznato",
+    "daysAgo": "prije {days} dana",
+    "today": "Danas",
+    "uptimePercent": "{value} % vremena rada",
+    "uptimeHint": "Vrijeme neprekidnog rada u proteklih 90 dana.",
+    "liveSync": "Sinhronizirano uživo.",
+    "scheduledMaintenance": "Planirano održavanje",
+    "noMaintenance": "Trenutno nema planiranog održavanja.",
+    "scheduledFor": "Zakazano za {kada}",
+    "postedOn": "Objavljeno {kada}",
+    "unavailable": "Podaci o statusu su privremeno nedostupni.",
+    "cta": "Stranica statusa servera"
   }
 }

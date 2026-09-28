@@ -22,7 +22,8 @@
     "dashboard": "Dashboard",
     "logout": "Odhláste sa",
     "webmail": "Webmail",
-    "kennisbank": "Databáza znalostí"
+    "kennisbank": "Databáza znalostí",
+    "statuspage": "Stav"
   },
   "language": {
     "title": "Jazyk"
@@ -1053,7 +1054,7 @@
     "vision": "Vízia",
     "visionText": "Stavať správne digitálne riešenie pre každého podnikateľa — škálovateľné, zrozumiteľné a zamerané na rast, nie na módne nástroje bez výsledkov.",
     "philosophy": "Filozofia TripleZero",
-    "philosophyText": "000 znamená nula tipovania, nula nedostatku a nula plytvania: rozhodnutia na dátach, dostatok kapacity na rast a žiadny rozpočet ani čas na to, čo nefunguje.",
+    "philosophyText": "000 znamená nulové dohady, nulový nedostatok a nulové plytvanie: rozhodovanie založené na údajoch, dostatočná kapacita na rast a žiadny rozpočet ani čas strávený tým, čo nefunguje.",
     "storyTitle": "Kto sme",
     "storyLead": "TripleZero iT je váš technický partner rastu — od prvého skenu po priebežnú optimalizáciu.",
     "storyP1": "Spojujeme integraci AI, AEO, GEO, SEO, webdesign, péči o WordPress, hosting a full-funnel marketing v jednom přístupu. Vaše online přítomnost zůstává rychlá, bezpečná, dohledatelná a zaměřená na leady nebo tržby.",
@@ -1279,7 +1280,12 @@
     "featuredNl": "Najväčšie mestá v Holandsku",
     "results": "{count} miest",
     "noResults": "Nenašli sa žiadne mestá.",
-    "showMore": "Zobraziť viac miest"
+    "showMore": "Zobraziť viac miest",
+    "indexLead": "Every city page is built for classic SEO, Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) — so businesses in that market can be found in Google, local results and AI answers.",
+    "faqTitle": "FAQ — AEO, GEO & SEO in {name}",
+    "relatedTitle": "Nearby & related cities",
+    "relatedSubtitle": "Continue exploring AI, AEO, GEO and SEO near {name}.",
+    "allCitiesTitle": "All cities (crawlable index)"
   },
   "inquiry": {
     "websiteHint": "webová stránka / internetový obchod",
@@ -1697,5 +1703,26 @@
     "typeREGISTRATION": "Registration",
     "typeRENEWAL": "Renewal",
     "typeTRANSFER": "Transfer"
+  },
+  "statuspage": {
+    "eyebrow": "Stav systému",
+    "title": "Stav TripleZero iT",
+    "operational": "Operatívne",
+    "degraded": "Zhoršený výkon",
+    "partialOutage": "Čiastočný výpadok",
+    "majorOutage": "Veľký výpadok",
+    "maintenance": "Údržba",
+    "unknown": "Neznámy",
+    "daysAgo": "pred {days} dňami",
+    "today": "Dnes",
+    "uptimePercent": "{value} % dostupnosti",
+    "uptimeHint": "Uptime za posledných 90 dní.",
+    "liveSync": "Synchronizované naživo.",
+    "scheduledMaintenance": "Plánovaná údržba",
+    "noMaintenance": "Momentálne neprebieha žiadna plánovaná údržba.",
+    "scheduledFor": "Naplánované na {when}",
+    "postedOn": "Uverejnené {when}",
+    "unavailable": "Údaje o stave sú dočasne nedostupné.",
+    "cta": "Stránka stavu servera"
   }
 }

@@ -2,17 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://000-it.com/nl/locaties/malingao</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.67</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/malingao" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/malingao" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/malingao" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/malingao" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/malingao" />
-  </url>
-  <url>
     <loc>https://000-it.com/nl/locaties/touba</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -5500,5 +5489,16 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/al-mahallah-al-kubra" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/al-mahallah-al-kubra" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/al-mahallah-al-kubra" />
+  </url>
+  <url>
+    <loc>https://000-it.com/nl/locaties</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.86</priority>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties" />
   </url>
 </urlset>

@@ -140,33 +140,34 @@ const nextConfig: NextConfig = {
     ];
   },
   async headers() {
-    return [
+    const securityBase = [
+      { key: "X-Content-Type-Options", value: "nosniff" },
+      { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+      { key: "X-Frame-Options", value: "SAMEORIGIN" },
       {
-        source: "/:path*",
-        headers: [
-          { key: "X-Content-Type-Options", value: "nosniff" },
-          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
-          { key: "X-Frame-Options", value: "SAMEORIGIN" },
-          {
-            key: "Permissions-Policy",
-            value: "camera=(), microphone=(), geolocation=(), browsing-topics=()",
-          },
-          { key: "X-Robots-Tag", value: "noai, noimageai" },
-        ],
+        key: "Permissions-Policy",
+        value: "camera=(), microphone=(), geolocation=(), browsing-topics=()",
       },
+    ];
+
+    return [
+      // Sitemaps: never send X-Robots-Tag (not even "all") — GSC has skipped
+      // these files when any robots directive was present.
       {
-        // Sitemaps must not carry robots directives — GSC can skip the file.
         source: "/sitemap.xml",
-        headers: [{ key: "X-Robots-Tag", value: "all" }],
+        headers: securityBase,
       },
       {
         source: "/sitemaps/:path*",
-        headers: [{ key: "X-Robots-Tag", value: "all" }],
+        headers: securityBase,
       },
       {
         source: "/api/:path*",
         headers: [
-          { key: "X-Robots-Tag", value: "noindex, nofollow, noai, noimageai" },
+          {
+            key: "X-Robots-Tag",
+            value: "noindex, nofollow, noai, noimageai",
+          },
         ],
       },
       {
@@ -174,6 +175,22 @@ const nextConfig: NextConfig = {
         source: "/branding/:path*",
         headers: [
           { key: "Cache-Control", value: "public, max-age=86400" },
+        ],
+      },
+      {
+        // Catch-all for HTML pages — exclude sitemap paths so they never
+        // inherit noai/noimageai from this rule.
+        source: "/:path((?!sitemap\\.xml$|sitemaps/).*)*",
+        headers: [
+          ...securityBase,
+          { key: "X-Robots-Tag", value: "noai, noimageai" },
+        ],
+      },
+      {
+        source: "/",
+        headers: [
+          ...securityBase,
+          { key: "X-Robots-Tag", value: "noai, noimageai" },
         ],
       },
     ];

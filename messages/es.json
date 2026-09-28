@@ -22,7 +22,8 @@
     "dashboard": "Panel de control",
     "logout": "Cerrar sesión",
     "webmail": "Webmail",
-    "kennisbank": "Base de conocimientos"
+    "kennisbank": "Base de conocimientos",
+    "statuspage": "Estado"
   },
   "language": {
     "title": "Idioma"
@@ -1053,7 +1054,7 @@
     "vision": "Visión",
     "visionText": "Construir la solución digital adecuada para cada emprendedor — escalable, clara y orientada al crecimiento, no a herramientas de moda sin resultados.",
     "philosophy": "La filosofía TripleZero",
-    "philosophyText": "000 significa cero improvisación, cero carencia y cero desperdicio: decisiones basadas en datos, capacidad suficiente para crecer y ningún presupuesto ni tiempo en lo que no funciona.",
+    "philosophyText": "000 significa cero conjeturas, cero déficit y cero desperdicio: toma de decisiones basada en datos, suficiente capacidad para crecer y sin presupuesto ni tiempo dedicado a lo que no funciona.",
     "storyTitle": "Quiénes somos",
     "storyLead": "TripleZero iT es tu socio técnico de crecimiento — del primer escaneo a la optimización continua.",
     "storyP1": "Combinamos integración de IA, AEO, GEO, SEO, diseño web, cuidado WordPress, hosting y marketing full-funnel en un solo enfoque. Tu presencia online se mantiene rápida, segura, visible y orientada a leads o ingresos.",
@@ -1279,7 +1280,12 @@
     "featuredNl": "Ciudades más grandes de los Países Bajos",
     "results": "{count} ciudades",
     "noResults": "No se encontraron ciudades.",
-    "showMore": "Mostrar más ciudades"
+    "showMore": "Mostrar más ciudades",
+    "indexLead": "Every city page is built for classic SEO, Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) — so businesses in that market can be found in Google, local results and AI answers.",
+    "faqTitle": "FAQ — AEO, GEO & SEO in {name}",
+    "relatedTitle": "Nearby & related cities",
+    "relatedSubtitle": "Continue exploring AI, AEO, GEO and SEO near {name}.",
+    "allCitiesTitle": "All cities (crawlable index)"
   },
   "inquiry": {
     "websiteHint": "sitio web / tienda web",
@@ -1697,5 +1703,26 @@
     "typeREGISTRATION": "Registro",
     "typeRENEWAL": "Renovación",
     "typeTRANSFER": "Transferencia"
+  },
+  "statuspage": {
+    "eyebrow": "Estado del sistema",
+    "title": "Estado de TI de TripleZero",
+    "operational": "Operacional",
+    "degraded": "Rendimiento degradado",
+    "partialOutage": "Corte parcial",
+    "majorOutage": "Corte importante",
+    "maintenance": "Mantenimiento",
+    "unknown": "Desconocido",
+    "daysAgo": "Hace {días} días",
+    "today": "Hoy",
+    "uptimePercent": "{valor} % de tiempo de actividad",
+    "uptimeHint": "Tiempo de actividad durante los últimos 90 días.",
+    "liveSync": "Sincronizado en vivo.",
+    "scheduledMaintenance": "Mantenimiento programado",
+    "noMaintenance": "No hay ningún mantenimiento programado en este momento.",
+    "scheduledFor": "Programado para {cuando}",
+    "postedOn": "Publicado el {cuando}",
+    "unavailable": "Los datos de estado no están disponibles temporalmente.",
+    "cta": "Página de estado del servidor"
   }
 }

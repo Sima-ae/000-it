@@ -750,6 +750,13 @@ export const SEGMENT_I18N = {
   ),
   contact: mapAll({ nl: "contact", en: "contact" }, "contact"),
   faq: mapAll({ nl: "faq", en: "faq" }, "faq"),
+  statuspage: mapAll(
+    {
+      nl: "statuspagina",
+      en: "statuspage",
+    },
+    "statuspage",
+  ),
   privacy: mapAll(
     {
       nl: "privacy",
@@ -1003,6 +1010,7 @@ export const INTERNAL_PATHNAMES = [
   "/shop/success",
   "/contact",
   "/faq",
+  "/statuspage",
   "/privacy",
   "/cookies",
   "/all-orders",

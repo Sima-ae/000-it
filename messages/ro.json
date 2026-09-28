@@ -22,7 +22,8 @@
     "dashboard": "Bord",
     "logout": "Deconectează-te",
     "webmail": "Webmail",
-    "kennisbank": "Bază de cunoștințe"
+    "kennisbank": "Bază de cunoștințe",
+    "statuspage": "Stare"
   },
   "language": {
     "title": "Limbă"
@@ -1053,7 +1054,7 @@
     "vision": "Viziune",
     "visionText": "Construim soluția digitală potrivită pentru fiecare antreprenor — scalabilă, clară și orientată pe creștere, nu pe tool-uri la modă fără rezultate.",
     "philosophy": "Filosofia TripleZero",
-    "philosophyText": "000 înseamnă zero ghicitori, zero lipsă și zero risipă: decizii pe date, suficientă capacitate de creștere și niciun buget sau timp pe ce nu funcționează.",
+    "philosophyText": "000 înseamnă zero presuperi, zero deficit și zero risipă: luarea deciziilor pe baza datelor, suficientă capacitate de creștere și fără buget sau timp alocat pentru ceea ce nu funcționează.",
     "storyTitle": "Cine suntem",
     "storyLead": "TripleZero iT este partenerul vostru tehnic de creștere — de la primul scan la optimizare continuă.",
     "storyP1": "Combinăm integrarea AI, AEO, GEO, SEO, webdesign, îngrijirea WordPress, hosting și marketing full-funnel într-o singură abordare. Prezența online rămâne rapidă, sigură, găsibilă și orientată pe lead-uri sau venit.",
@@ -1279,7 +1280,12 @@
     "featuredNl": "Cele mai mari orașe din Țările de Jos",
     "results": "{count} orașe",
     "noResults": "Nu au fost găsite orașe.",
-    "showMore": "Arată mai multe orașe"
+    "showMore": "Arată mai multe orașe",
+    "indexLead": "Every city page is built for classic SEO, Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) — so businesses in that market can be found in Google, local results and AI answers.",
+    "faqTitle": "FAQ — AEO, GEO & SEO in {name}",
+    "relatedTitle": "Nearby & related cities",
+    "relatedSubtitle": "Continue exploring AI, AEO, GEO and SEO near {name}.",
+    "allCitiesTitle": "All cities (crawlable index)"
   },
   "inquiry": {
     "websiteHint": "site web / magazin online",
@@ -1697,5 +1703,26 @@
     "typeREGISTRATION": "Registration",
     "typeRENEWAL": "Renewal",
     "typeTRANSFER": "Transfer"
+  },
+  "statuspage": {
+    "eyebrow": "Starea sistemului",
+    "title": "Stare TripleZero iT",
+    "operational": "Operațional",
+    "degraded": "Performanță degradată",
+    "partialOutage": "Întrerupere parțială",
+    "majorOutage": "Întreruperea majoră",
+    "maintenance": "Întreţinere",
+    "unknown": "Necunoscut",
+    "daysAgo": "acum {zile} zile",
+    "today": "Astăzi",
+    "uptimePercent": "{value} % timp de funcționare",
+    "uptimeHint": "Timp de funcționare în ultimele 90 de zile.",
+    "liveSync": "Sincronizat live.",
+    "scheduledMaintenance": "Întreținere programată",
+    "noMaintenance": "Nu există întreținere programată în acest moment.",
+    "scheduledFor": "Programat pentru {când}",
+    "postedOn": "Postat pe {când}",
+    "unavailable": "Datele de stare sunt temporar indisponibile.",
+    "cta": "Pagina de stare a serverului"
   }
 }

@@ -22,7 +22,8 @@
     "dashboard": "لوحة القيادة",
     "logout": "تسجيل الخروج",
     "webmail": "Webmail",
-    "kennisbank": "قاعدة المعرفة"
+    "kennisbank": "قاعدة المعرفة",
+    "statuspage": "حالة"
   },
   "language": {
     "title": "اللغة"
@@ -1053,7 +1054,7 @@
     "vision": "الرؤية",
     "visionText": "بناء الحل الرقمي المناسب لكل رائد أعمال — قابل للتوسع وواضح وموجّه للنمو، لا أدوات رائجة بلا نتائج.",
     "philosophy": "فلسفة TripleZero",
-    "philosophyText": "000 تعني صفر تخمين وصفر نقص وصفر هدر: قرارات مبنية على البيانات، وسعة كافية للنمو، ولا ميزانية أو وقت لما لا ينجح.",
+    "philosophyText": "000 تعني صفر تخمين، وصفر عجز، وصفر هدر: اتخاذ القرار بناءً على البيانات، والقدرة الكافية على النمو، وعدم إنفاق ميزانية أو وقت على ما لا ينجح.",
     "storyTitle": "من نحن",
     "storyLead": "TripleZero iT شريككم التقني للنمو — من أول مسح إلى التحسين المستمر.",
     "storyP1": "نجمع تكامل الذكاء الاصطناعي وAEO وGEO وSEO وتصميم الويب ورعاية WordPress والاستضافة والتسويق الكامل في نهج واحد. يبقى حضوركم الإلكتروني سريعاً وآمناً وقابلاً للاكتشاف ومركّزاً على العملاء المحتملين أو الإيرادات.",
@@ -1279,7 +1280,12 @@
     "featuredNl": "أكبر مدن هولندا",
     "results": "{count} مدينة",
     "noResults": "لم يتم العثور على مدن.",
-    "showMore": "عرض المزيد من المدن"
+    "showMore": "عرض المزيد من المدن",
+    "indexLead": "Every city page is built for classic SEO, Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) — so businesses in that market can be found in Google, local results and AI answers.",
+    "faqTitle": "FAQ — AEO, GEO & SEO in {name}",
+    "relatedTitle": "Nearby & related cities",
+    "relatedSubtitle": "Continue exploring AI, AEO, GEO and SEO near {name}.",
+    "allCitiesTitle": "All cities (crawlable index)"
   },
   "inquiry": {
     "websiteHint": "الموقع / متجر الويب",
@@ -1697,5 +1703,26 @@
     "typeREGISTRATION": "Registration",
     "typeRENEWAL": "Renewal",
     "typeTRANSFER": "Transfer"
+  },
+  "statuspage": {
+    "eyebrow": "حالة النظام",
+    "title": "حالة TripleZero iT",
+    "operational": "التشغيلية",
+    "degraded": "الأداء المتدهور",
+    "partialOutage": "انقطاع جزئي",
+    "majorOutage": "انقطاع كبير",
+    "maintenance": "صيانة",
+    "unknown": "مجهول",
+    "daysAgo": "منذ {days} أيام",
+    "today": "اليوم",
+    "uptimePercent": "{القيمة} % وقت التشغيل",
+    "uptimeHint": "وقت التشغيل خلال الـ 90 يومًا الماضية.",
+    "liveSync": "تمت مزامنتها مباشرة.",
+    "scheduledMaintenance": "الصيانة المجدولة",
+    "noMaintenance": "لا توجد صيانة مجدولة في الوقت الحالي.",
+    "scheduledFor": "تمت جدولته لـ {متى}",
+    "postedOn": "تم النشر بتاريخ {متى}",
+    "unavailable": "بيانات الحالة غير متاحة مؤقتًا.",
+    "cta": "صفحة حالة الخادم"
   }
 }

@@ -22,7 +22,8 @@
     "dashboard": "Ταμπλό",
     "logout": "Αποσυνδεθείτε",
     "webmail": "Webmail",
-    "kennisbank": "Βάση γνώσεων"
+    "kennisbank": "Βάση γνώσεων",
+    "statuspage": "Κατάσταση"
   },
   "language": {
     "title": "Γλώσσα"
@@ -1053,7 +1054,7 @@
     "vision": "Όραμα",
     "visionText": "Να χτίζουμε τη σωστή ψηφιακή λύση για κάθε επιχειρηματία — επεκτάσιμη, σαφή και σχεδιασμένη για ανάπτυξη, όχι για μοντέρνα εργαλεία χωρίς αποτελέσματα.",
     "philosophy": "Η φιλοσοφία TripleZero",
-    "philosophyText": "Το 000 σημαίνει μηδέν εικασίες, μηδέν έλλειψη και μηδέν σπατάλη: αποφάσεις βάσει δεδομένων, αρκετή χωρητικότητα για ανάπτυξη και κανένας προϋπολογισμός ή χρόνος σε ό,τι δεν αποδίδει.",
+    "philosophyText": "000 σημαίνει μηδενική εικασία, μηδενικό έλλειμμα και μηδενική σπατάλη: λήψη αποφάσεων με βάση δεδομένα, αρκετή ικανότητα ανάπτυξης και χωρίς προϋπολογισμό ή χρόνο που δαπανάται σε ό,τι δεν λειτουργεί.",
     "storyTitle": "Ποιοι είμαστε",
     "storyLead": "Η TripleZero iT είναι ο τεχνικός σας συνεργάτης ανάπτυξης — από την πρώτη σάρωση έως τη συνεχή βελτιστοποίηση.",
     "storyP1": "Συνδυάζουμε ενσωμάτωση AI, AEO, GEO, SEO, web design, φροντίδα WordPress, hosting και full-funnel marketing σε μία προσέγγιση. Η online παρουσία σας παραμένει γρήγορη, ασφαλής, ανευρέσιμη και εστιασμένη σε leads ή έσοδα.",
@@ -1279,7 +1280,12 @@
     "featuredNl": "Μεγαλύτερες πόλεις της Ολλανδίας",
     "results": "{count} πόλεις",
     "noResults": "Δεν βρέθηκαν πόλεις.",
-    "showMore": "Εμφάνιση περισσότερων πόλεων"
+    "showMore": "Εμφάνιση περισσότερων πόλεων",
+    "indexLead": "Every city page is built for classic SEO, Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) — so businesses in that market can be found in Google, local results and AI answers.",
+    "faqTitle": "FAQ — AEO, GEO & SEO in {name}",
+    "relatedTitle": "Nearby & related cities",
+    "relatedSubtitle": "Continue exploring AI, AEO, GEO and SEO near {name}.",
+    "allCitiesTitle": "All cities (crawlable index)"
   },
   "inquiry": {
     "websiteHint": "ιστοσελίδα / ηλεκτρονικό κατάστημα",
@@ -1697,5 +1703,26 @@
     "typeREGISTRATION": "Registration",
     "typeRENEWAL": "Renewal",
     "typeTRANSFER": "Transfer"
+  },
+  "statuspage": {
+    "eyebrow": "Κατάσταση συστήματος",
+    "title": "Κατάσταση TripleZero iT",
+    "operational": "Επιχειρήσεων",
+    "degraded": "Υποβαθμισμένη απόδοση",
+    "partialOutage": "Μερική διακοπή λειτουργίας",
+    "majorOutage": "Μεγάλη διακοπή λειτουργίας",
+    "maintenance": "Συντήρηση",
+    "unknown": "Αγνωστος",
+    "daysAgo": "πριν από {days} ημέρες",
+    "today": "Σήμερα",
+    "uptimePercent": "{value} % χρόνο λειτουργίας",
+    "uptimeHint": "Χρόνος λειτουργίας τις τελευταίες 90 ημέρες.",
+    "liveSync": "Συγχρονίστηκε ζωντανά.",
+    "scheduledMaintenance": "Προγραμματισμένη Συντήρηση",
+    "noMaintenance": "Δεν υπάρχει προγραμματισμένη συντήρηση αυτή τη στιγμή.",
+    "scheduledFor": "Προγραμματισμένο για {when}",
+    "postedOn": "Δημοσιεύτηκε στις {when}",
+    "unavailable": "Τα δεδομένα κατάστασης δεν είναι προσωρινά διαθέσιμα.",
+    "cta": "Σελίδα κατάστασης διακομιστή"
   }
 }

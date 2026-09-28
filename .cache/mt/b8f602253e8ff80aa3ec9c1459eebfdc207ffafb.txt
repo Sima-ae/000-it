@@ -1,0 +1,1 @@
+{valor} % de tiempo de actividad

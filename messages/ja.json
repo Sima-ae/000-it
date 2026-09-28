@@ -22,7 +22,8 @@
     "dashboard": "ダッシュボード",
     "logout": "ログアウト",
     "webmail": "Webmail",
-    "kennisbank": "ナレッジベース"
+    "kennisbank": "ナレッジベース",
+    "statuspage": "状態"
   },
   "language": {
     "title": "言語"
@@ -1053,7 +1054,7 @@
     "vision": "ビジョン",
     "visionText": "すべての起業家に適したデジタルソリューションを構築する — 拡張可能で明確、成長志向。結果のない流行ツールではなく。",
     "philosophy": "TripleZero の哲学",
-    "philosophyText": "000 はゼロ推測・ゼロ不足・ゼロ浪費：データに基づく判断、成長に足りる容量、効果のないものへの予算・時間ゼロ。",
+    "philosophyText": "000 は、推測ゼロ、不足分ゼロ、無駄ゼロを意味します。つまり、データに基づいた意思決定、成長するための十分なキャパシティ、機能しないことに予算や時間を費やさないことです。",
     "storyTitle": "私たちについて",
     "storyLead": "TripleZero iT は技術面の成長パートナーです — 最初のスキャンから継続的な最適化まで。",
     "storyP1": "AI 統合、AEO、GEO、SEO、ウェブデザイン、WordPress ケア、ホスティング、フルファネルマーケティングを一つのアプローチにまとめます。オンラインプレゼンスは高速・安全・発見しやすく、リードや売上に焦点を当てます。",
@@ -1279,7 +1280,12 @@
     "featuredNl": "オランダの主要都市",
     "results": "{count}都市",
     "noResults": "都市が見つかりません。",
-    "showMore": "さらに都市を表示"
+    "showMore": "さらに都市を表示",
+    "indexLead": "Every city page is built for classic SEO, Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) — so businesses in that market can be found in Google, local results and AI answers.",
+    "faqTitle": "FAQ — AEO, GEO & SEO in {name}",
+    "relatedTitle": "Nearby & related cities",
+    "relatedSubtitle": "Continue exploring AI, AEO, GEO and SEO near {name}.",
+    "allCitiesTitle": "All cities (crawlable index)"
   },
   "inquiry": {
     "websiteHint": "ウェブサイト / ウェブショップ",
@@ -1697,5 +1703,26 @@
     "typeREGISTRATION": "Registration",
     "typeRENEWAL": "Renewal",
     "typeTRANSFER": "Transfer"
+  },
+  "statuspage": {
+    "eyebrow": "システムステータス",
+    "title": "トリプルゼロ iT ステータス",
+    "operational": "稼働中",
+    "degraded": "パフォーマンスの低下",
+    "partialOutage": "部分的な停止",
+    "majorOutage": "大規模な障害",
+    "maintenance": "メンテナンス",
+    "unknown": "未知",
+    "daysAgo": "{日}日前",
+    "today": "今日",
+    "uptimePercent": "{value} % 稼働時間",
+    "uptimeHint": "過去 90 日間の稼働時間。",
+    "liveSync": "ライブで同期しました。",
+    "scheduledMaintenance": "定期メンテナンス",
+    "noMaintenance": "現在予定されているメンテナンスはありません。",
+    "scheduledFor": "{いつ}に予定されています",
+    "postedOn": "投稿日: {いつ}",
+    "unavailable": "ステータス データは一時的に利用できません。",
+    "cta": "サーバーステータスページ"
   }
 }

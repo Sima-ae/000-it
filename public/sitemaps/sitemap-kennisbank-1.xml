@@ -1608,15 +1608,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/kennisbank/wordpress" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/kennisbank/directadmin-wordpress</loc>
+    <loc>https://000-it.com/nl/kennisbank/wordpress-in-directadmin</loc>
     <lastmod>2026-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.70</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/kennisbank/directadmin-wordpress" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/knowledgebase/directadmin-wordpress" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/wissensdatenbank/directadmin-wordpress" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/base-de-connaissances/directadmin-wordpress" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/kennisbank/directadmin-wordpress" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/kennisbank/wordpress-in-directadmin" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/knowledgebase/wordpress-in-directadmin" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/wissensdatenbank/wordpress-in-directadmin" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/base-de-connaissances/wordpress-dans-directadmin" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/kennisbank/wordpress-in-directadmin" />
   </url>
   <url>
     <loc>https://000-it.com/nl/kennisbank/wordpress-installatie</loc>

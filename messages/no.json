@@ -22,7 +22,8 @@
     "dashboard": "Dashbord",
     "logout": "Logg ut",
     "webmail": "Webmail",
-    "kennisbank": "Kunnskapsbase"
+    "kennisbank": "Kunnskapsbase",
+    "statuspage": "Status"
   },
   "language": {
     "title": "Språk"
@@ -1053,7 +1054,7 @@
     "vision": "Visjon",
     "visionText": "Bygge riktig digital løsning for hver gründer — skalerbar, tydelig og rettet mot vekst, ikke trendverktøy uten resultater.",
     "philosophy": "TripleZero-filosofien",
-    "philosophyText": "000 betyr null gjetting, null mangel og null spill: beslutninger basert på data, nok kapasitet til å vokse og ingen budsjett eller tid på det som ikke fungerer.",
+    "philosophyText": "000 betyr null gjetting, null mangel og null spill: beslutningstaking basert på data, nok kapasitet til å vokse, og ingen budsjett eller tid brukt på det som ikke fungerer.",
     "storyTitle": "Hvem vi er",
     "storyLead": "TripleZero iT er deres tekniske vekstpartner — fra første skanning til løpende optimalisering.",
     "storyP1": "Vi kombinerer AI-integrasjon, AEO, GEO, SEO, webdesign, WordPress-omsorg, hosting og full-funnel-markedsføring i én tilnærming. Deres online tilstedeværelse forblir rask, sikker, finnbar og rettet mot leads eller omsetning.",
@@ -1279,7 +1280,12 @@
     "featuredNl": "Største byer i Nederland",
     "results": "{count} byer",
     "noResults": "Ingen byer funnet.",
-    "showMore": "Vis flere byer"
+    "showMore": "Vis flere byer",
+    "indexLead": "Every city page is built for classic SEO, Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) — so businesses in that market can be found in Google, local results and AI answers.",
+    "faqTitle": "FAQ — AEO, GEO & SEO in {name}",
+    "relatedTitle": "Nearby & related cities",
+    "relatedSubtitle": "Continue exploring AI, AEO, GEO and SEO near {name}.",
+    "allCitiesTitle": "All cities (crawlable index)"
   },
   "inquiry": {
     "websiteHint": "nettside / nettbutikk",
@@ -1697,5 +1703,26 @@
     "typeREGISTRATION": "Registration",
     "typeRENEWAL": "Renewal",
     "typeTRANSFER": "Transfer"
+  },
+  "statuspage": {
+    "eyebrow": "Systemstatus",
+    "title": "TripleZero iT-status",
+    "operational": "Operasjonell",
+    "degraded": "Nedsatt ytelse",
+    "partialOutage": "Delvis avbrudd",
+    "majorOutage": "Stort strømbrudd",
+    "maintenance": "Vedlikehold",
+    "unknown": "Ukjent",
+    "daysAgo": "for {days} dager siden",
+    "today": "I dag",
+    "uptimePercent": "{value} % oppetid",
+    "uptimeHint": "Oppetid de siste 90 dagene.",
+    "liveSync": "Synkronisert live.",
+    "scheduledMaintenance": "Planlagt vedlikehold",
+    "noMaintenance": "Det er ingen planlagt vedlikehold akkurat nå.",
+    "scheduledFor": "Planlagt for {when}",
+    "postedOn": "Skrevet den {when}",
+    "unavailable": "Statusdata er midlertidig utilgjengelig.",
+    "cta": "Serverstatusside"
   }
 }

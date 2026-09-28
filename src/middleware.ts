@@ -100,7 +100,11 @@ export default async function middleware(request: NextRequest) {
   const blocked = antiScrapeResponse(request, internalEarly);
   if (blocked) return blocked;
 
-  if (pathname.startsWith("/api/") || pathname.startsWith("/sitemaps/")) {
+  if (
+    pathname === "/sitemap.xml" ||
+    pathname.startsWith("/api/") ||
+    pathname.startsWith("/sitemaps/")
+  ) {
     return withSecurityHeaders(NextResponse.next(), pathname, internalEarly);
   }
 
@@ -191,6 +195,7 @@ export const config = {
     // Include uploads even though they have file extensions (normally excluded).
     "/uploads/:path*",
     "/api/:path*",
+    "/sitemap.xml",
     "/sitemaps/:path*",
     "/((?!api|_next|_vercel|.*\\..*).*)",
   ],

@@ -4,11 +4,22 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { getSeoCity, seoCities } from "@/content/seo/cities";
+import {
+  getSeoCity,
+  relatedSeoCities,
+  seoCities,
+} from "@/content/seo/cities";
+import {
+  cityDirectAnswer,
+  cityFaqItems,
+  citySectionCopy,
+} from "@/content/seo/city-aeo";
 import {
   breadcrumbJsonLd,
   buildCityMetadata,
   cityServiceJsonLd,
+  cityWebPageJsonLd,
+  faqPageJsonLd,
   organizationJsonLd,
 } from "@/lib/seo";
 import { localizedHref } from "@/i18n/pathnames";
@@ -16,12 +27,14 @@ import { resolveEntityParam } from "@/lib/resolve-entity-param";
 import { canonicalEntityKey } from "@/lib/entity-slug-cache";
 import { hydrateEntitySlugs } from "@/lib/entity-slugs";
 
-/** Pre-render NL+EN for highest-priority cities; others resolve on demand. */
+/** Pre-render NL+EN for all NL metros + top ~200 global cities; others on demand. */
 export function generateStaticParams() {
-  const top = seoCities.slice(0, 80);
-  return top.flatMap((city) => [
-    { locale: "nl", city: city.slug },
-    { locale: "en", city: city.slug },
+  const nl = seoCities.filter((c) => c.country === "NL");
+  const top = seoCities.slice(0, 200);
+  const slugs = new Set([...nl, ...top].map((c) => c.slug));
+  return [...slugs].flatMap((city) => [
+    { locale: "nl", city },
+    { locale: "en", city },
   ]);
 }
 
@@ -59,9 +72,16 @@ export default async function LocatieCityPage({
   const isNl = locale === "nl";
   const name = isNl ? city.nameNl : city.nameEn;
   const country = isNl ? city.countryNameNl : city.countryNameEn;
+  const region = isNl ? city.regionNl : city.regionEn;
   const tags = city.tags?.length
     ? city.tags
     : ["AI", "AEO", "GEO", "SEO", name, country];
+  const faqs = cityFaqItems(city, locale);
+  const sections = citySectionCopy(city, locale);
+  const directAnswer = cityDirectAnswer(city, locale);
+  const related = relatedSeoCities(city, 8);
+  const pageTitle = t("cityTitle", { name });
+  const pageDescription = directAnswer;
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-14 md:px-6">
@@ -69,6 +89,13 @@ export default async function LocatieCityPage({
         data={[
           organizationJsonLd(),
           cityServiceJsonLd(city, locale),
+          cityWebPageJsonLd({
+            city,
+            locale,
+            title: pageTitle,
+            description: pageDescription,
+          }),
+          faqPageJsonLd(faqs),
           breadcrumbJsonLd([
             { name: tNav("home"), path: localizedHref(locale, "/") },
             {
@@ -82,12 +109,16 @@ export default async function LocatieCityPage({
 
       <p className="text-sm font-medium text-accent">
         {country}
-        {city.continent ? ` - ${city.continent}` : ""}
+        {city.continent ? ` · ${city.continent}` : ""}
+        {region ? ` · ${region}` : ""}
       </p>
       <h1 className="mt-2 font-display text-3xl font-semibold tracking-tight md:text-4xl">
         {t("cityTitle", { name })}
       </h1>
-      <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+      <p className="city-direct-answer mt-4 text-lg leading-relaxed text-foreground">
+        {directAnswer}
+      </p>
+      <p className="mt-3 text-base leading-relaxed text-muted-foreground">
         {t("cityIntro", { name })}
       </p>
 
@@ -98,6 +129,62 @@ export default async function LocatieCityPage({
         <li>{t("bulletSeo", { name })}</li>
         <li>{t("bulletStack")}</li>
       </ul>
+
+      <section className="mt-10 space-y-6">
+        <div>
+          <h2 className="font-display text-xl font-semibold tracking-tight">
+            {sections.aeoTitle}
+          </h2>
+          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+            {sections.aeoBody}
+          </p>
+        </div>
+        <div>
+          <h2 className="font-display text-xl font-semibold tracking-tight">
+            {sections.geoTitle}
+          </h2>
+          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+            {sections.geoBody}
+          </p>
+        </div>
+        <div>
+          <h2 className="font-display text-xl font-semibold tracking-tight">
+            {sections.seoTitle}
+          </h2>
+          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+            {sections.seoBody}
+          </p>
+        </div>
+        <div>
+          <h2 className="font-display text-xl font-semibold tracking-tight">
+            {sections.whyTitle}
+          </h2>
+          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+            {sections.whyBody}
+          </p>
+        </div>
+      </section>
+
+      <section className="city-faq mt-10">
+        <h2 className="font-display text-xl font-semibold tracking-tight">
+          {t("faqTitle", { name })}
+        </h2>
+        <div className="mt-4 space-y-4">
+          {faqs.map((item) => (
+            <div
+              key={item.question}
+              className="rounded-2xl border border-border/70 bg-muted/20 p-4"
+            >
+              <h3 className="text-sm font-semibold text-foreground">
+                {item.question}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                {item.answer}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
 
       <section className="mt-8">
         <h2 className="font-display text-base font-semibold tracking-tight">
@@ -143,6 +230,10 @@ export default async function LocatieCityPage({
             <dd className="font-medium">{country}</dd>
           </div>
           <div>
+            <dt className="text-muted-foreground">{t("geoRegion")}</dt>
+            <dd className="font-medium">{region}</dd>
+          </div>
+          <div>
             <dt className="text-muted-foreground">{t("geoCoords")}</dt>
             <dd className="font-medium">
               {city.latitude}, {city.longitude}
@@ -165,10 +256,33 @@ export default async function LocatieCityPage({
         </dl>
       </section>
 
-      <p className="sr-only">
-        geo: {city.latitude}, {city.longitude}. tags: {tags.join(", ")}.
-        keywords: {(city.keywords || []).join(", ")}.
-      </p>
+      {related.length > 0 ? (
+        <section className="mt-10">
+          <h2 className="font-display text-base font-semibold tracking-tight">
+            {t("relatedTitle")}
+          </h2>
+          <p className="mt-1 text-sm text-muted-foreground">
+            {t("relatedSubtitle", { name })}
+          </p>
+          <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+            {related.map((near) => (
+              <li key={near.slug}>
+                <SoftLink
+                  href={localizedHref(locale, `/locaties/${near.slug}`)}
+                  className="block rounded-xl border border-border/60 px-3 py-2 text-sm transition hover:border-accent/40"
+                >
+                  <span className="font-medium">
+                    {isNl ? near.nameNl : near.nameEn}
+                  </span>
+                  <span className="mt-0.5 block text-xs text-muted-foreground">
+                    {isNl ? near.countryNameNl : near.countryNameEn}
+                  </span>
+                </SoftLink>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
     </div>
   );
 }

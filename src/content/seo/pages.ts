@@ -254,6 +254,24 @@ export const staticPageSeo: PageSeo[] = [
     },
   },
   {
+    path: "/statuspage",
+    lastmod: "2026-09-28",
+    priority: 0.75,
+    changeFrequency: "hourly",
+    title: {
+      nl: "Status — TripleZero iT",
+      en: "Status — TripleZero iT",
+    },
+    description: {
+      nl: "Live systeemstatus van TripleZero iT: hosting, e-mail, datacenters, API’s en gepland onderhoud — met uptime over de afgelopen 90 dagen.",
+      en: "Live TripleZero iT system status: hosting, email, datacenters, APIs and scheduled maintenance — with uptime over the past 90 days.",
+    },
+    keywords: {
+      nl: [...CORE_NL, "status", "uptime", "hosting status", "server status"],
+      en: [...CORE_EN, "status", "uptime", "hosting status", "server status"],
+    },
+  },
+  {
     path: "/kennisbank",
     lastmod: "2026-09-13",
     priority: 0.85,
@@ -339,8 +357,8 @@ export const staticPageSeo: PageSeo[] = [
       en: "Locations — AI, AEO, GEO & SEO in 1000 cities worldwide",
     },
     description: {
-      nl: "TripleZero iT helpt bedrijven in Amsterdam, Rotterdam, Den Haag, Utrecht, Eindhoven, Groningen en 1000 topsteden wereldwijd met AI, AEO, GEO en SEO.",
-      en: "TripleZero iT helps businesses in Amsterdam, Rotterdam, The Hague, Utrecht, Eindhoven, Groningen and 1000 top cities worldwide with AI, AEO, GEO and SEO.",
+      nl: "TripleZero iT helpt bedrijven in Amsterdam, Rotterdam, Den Haag, Utrecht, Eindhoven, Groningen en ~1000 steden wereldwijd met AI, AEO (Answer Engine Optimization), GEO (Generative Engine Optimization) en SEO.",
+      en: "TripleZero iT helps businesses in Amsterdam, Rotterdam, The Hague, Utrecht, Eindhoven, Groningen and ~1000 cities worldwide with AI, AEO (Answer Engine Optimization), GEO (Generative Engine Optimization) and SEO.",
     },
     keywords: {
       nl: [

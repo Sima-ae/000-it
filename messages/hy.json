@@ -22,7 +22,8 @@
     "dashboard": "Վահանակ",
     "logout": "Դուրս գալ",
     "webmail": "Webmail",
-    "kennisbank": "Գիտելիքների բազա"
+    "kennisbank": "Գիտելիքների բազա",
+    "statuspage": "Կարգավիճակ"
   },
   "language": {
     "title": "Լեզու"
@@ -1053,7 +1054,7 @@
     "vision": "Տեսլական",
     "visionText": "Կառուցել ճիշտ թվային լուծում ամեն ձեռնարկատիրոջ համար՝ մասշտաբավորվող, պարզ և աճին ուղղված, ոչ թե նորաձև գործիքներ առանց արդյունքի։",
     "philosophy": "TripleZero փիլիսոփայություն",
-    "philosophyText": "000 նշանակում է զրո գուշակություն, զրո պակաս և զրո վատնում՝ տվյալների վրա հիմնված որոշումներ, բավարար կարողություն աճելու համար և ոչ մի բյուջե կամ ժամանակ այն բանի վրա, ինչը չի աշխատում։",
+    "philosophyText": "000-ը նշանակում է զրոյական ենթադրություններ, զրոյական պակաս և զրոյական վատնում. որոշումների կայացում՝ հիմնված տվյալների վրա, աճի համար բավարար կարողություն և ոչ մի բյուջե կամ ժամանակ ծախսված այն բանի վրա, ինչը չի աշխատում:",
     "storyTitle": "Ով ենք մենք",
     "storyLead": "TripleZero iT-ն ձեր տեխնիկական աճի գործընկերն է՝ առաջին սկանից մինչև շարունակական օպտիմալացում։",
     "storyP1": "Միավորում ենք AI ինտեգրումը, AEO-ն, GEO-ն, SEO-ն, վեբ դիզայնը, WordPress խնամքը, հոսթինգը և full-funnel մարքեթինգը մեկ մոտեցման մեջ։ Ձեր առցանց ներկայությունը մնում է արագ, անվտանգ, գտնելի և կենտրոնացած լիդերի կամ եկամտի վրա։",
@@ -1279,7 +1280,12 @@
     "featuredNl": "Նիդերլանդների խոշորագույն քաղաքները",
     "results": "{count} քաղաք",
     "noResults": "Քաղաքներ չեն գտնվել։",
-    "showMore": "Ցույց տալ ավելի շատ քաղաքներ"
+    "showMore": "Ցույց տալ ավելի շատ քաղաքներ",
+    "indexLead": "Every city page is built for classic SEO, Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) — so businesses in that market can be found in Google, local results and AI answers.",
+    "faqTitle": "FAQ — AEO, GEO & SEO in {name}",
+    "relatedTitle": "Nearby & related cities",
+    "relatedSubtitle": "Continue exploring AI, AEO, GEO and SEO near {name}.",
+    "allCitiesTitle": "All cities (crawlable index)"
   },
   "inquiry": {
     "websiteHint": "կայք / վեբ խանութ",
@@ -1697,5 +1703,26 @@
     "typeREGISTRATION": "Registration",
     "typeRENEWAL": "Renewal",
     "typeTRANSFER": "Transfer"
+  },
+  "statuspage": {
+    "eyebrow": "Համակարգի կարգավիճակը",
+    "title": "TripleZero iT կարգավիճակը",
+    "operational": "Գործառնական",
+    "degraded": "Դեգրադացված կատարում",
+    "partialOutage": "Մասնակի անջատում",
+    "majorOutage": "Խոշոր անջատում",
+    "maintenance": "Տեխնիկական սպասարկում",
+    "unknown": "Անհայտ",
+    "daysAgo": "{օրեր} օր առաջ",
+    "today": "Այսօր",
+    "uptimePercent": "{value} % գործարկման ժամանակ",
+    "uptimeHint": "Անցած 90 օրվա ընթացքում աշխատելու ժամանակը:",
+    "liveSync": "Համաժամեցվել է ուղիղ եթերում:",
+    "scheduledMaintenance": "Պլանավորված սպասարկում",
+    "noMaintenance": "Այս պահին պլանային սպասարկում չկա:",
+    "scheduledFor": "Պլանավորված է {when} համար",
+    "postedOn": "Տեղադրվել է {when}-ին",
+    "unavailable": "Կարգավիճակի տվյալները ժամանակավորապես անհասանելի են:",
+    "cta": "Սերվերի կարգավիճակի էջ"
   }
 }

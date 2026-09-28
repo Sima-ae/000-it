@@ -44,8 +44,8 @@ export const BRANDING_COLLAGE_IMAGE = "/branding/images/agency-office-team.jpg";
 /** Homepage strip between pricing CTA and services — office standup photo. */
 export const BRANDING_SERVICES_IMAGE = "/branding/images/agency-office-wireframe.jpg";
 
-/** Homepage strip above the FAQ — contact desk in the same studio. */
-export const BRANDING_CONTACT_IMAGE = "/branding/images/agency-office-contact.jpg";
+/** Homepage strip above the FAQ — specialist in the data center. */
+export const BRANDING_CONTACT_IMAGE = "/branding/images/homepage-faq-datacenter.jpg";
 
 /** About page — three moments in the same studio. */
 export const ABOUT_IMAGES = {
@@ -61,7 +61,7 @@ export const SERVICE_GROUP_IMAGES: Record<string, string> = {
   marketing: "/branding/images/service-marketing.jpg",
   webdesign: "/branding/images/service-webdesign.jpg",
   wordpress: "/branding/images/service-wordpress.jpg",
-  hosting: "/branding/images/service-hosting.jpg",
+  hosting: "/branding/images/service-hosting-datacenter.jpg",
   design: "/branding/images/service-design.jpg",
 };
 

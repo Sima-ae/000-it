@@ -22,7 +22,8 @@
     "dashboard": "לוח מחוונים",
     "logout": "התנתק",
     "webmail": "Webmail",
-    "kennisbank": "מאגר ידע"
+    "kennisbank": "מאגר ידע",
+    "statuspage": "סטָטוּס"
   },
   "language": {
     "title": "שפה"
@@ -1053,7 +1054,7 @@
     "vision": "חזון",
     "visionText": "לבנות את הפתרון הדיגיטלי הנכון לכל יזם — ניתן להרחבה, ברור ומכוון צמיחה, לא כלים אופנתיים בלי תוצאות.",
     "philosophy": "הפילוסופיה של TripleZero",
-    "philosophyText": "000 פירושו אפס ניחושים, אפס מחסור ואפס בזבוז: החלטות מבוססות נתונים, מספיק קיבולת לצמוח, ובלי תקציב או זמן על מה שלא עובד.",
+    "philosophyText": "000 פירושו אפס ניחושים, אפס חסר ואפס בזבוז: קבלת החלטות על סמך נתונים, מספיק יכולת לצמוח, וללא תקציב או זמן מושקע במה שלא עובד.",
     "storyTitle": "מי אנחנו",
     "storyLead": "TripleZero iT הוא שותף הצמיחה הטכני שלכם — מהסריקה הראשונה ועד אופטימיזציה מתמשכת.",
     "storyP1": "אנחנו משלבים אינטגרציית AI, AEO, GEO, SEO, עיצוב אתרים, טיפול ב-WordPress, אחסון ושיווק full-funnel בגישה אחת. הנוכחות המקוונת שלכם נשארת מהירה, מאובטחת, ניתנת לגילוי וממוקדת בלידים או בהכנסות.",
@@ -1279,7 +1280,12 @@
     "featuredNl": "הערים הגדולות בהולנד",
     "results": "{count} ערים",
     "noResults": "לא נמצאו ערים.",
-    "showMore": "הצג ערים נוספות"
+    "showMore": "הצג ערים נוספות",
+    "indexLead": "Every city page is built for classic SEO, Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) — so businesses in that market can be found in Google, local results and AI answers.",
+    "faqTitle": "FAQ — AEO, GEO & SEO in {name}",
+    "relatedTitle": "Nearby & related cities",
+    "relatedSubtitle": "Continue exploring AI, AEO, GEO and SEO near {name}.",
+    "allCitiesTitle": "All cities (crawlable index)"
   },
   "inquiry": {
     "websiteHint": "אתר / חנות אינטרנט",
@@ -1697,5 +1703,26 @@
     "typeREGISTRATION": "Registration",
     "typeRENEWAL": "Renewal",
     "typeTRANSFER": "Transfer"
+  },
+  "statuspage": {
+    "eyebrow": "מצב המערכת",
+    "title": "TripleZero iT סטטוס",
+    "operational": "מִבצָעִי",
+    "degraded": "ביצועים מושפלים",
+    "partialOutage": "הפסקה חלקית",
+    "majorOutage": "הפסקה גדולה",
+    "maintenance": "תַחזוּקָה",
+    "unknown": "לֹא יְדוּעַ",
+    "daysAgo": "לפני {days} ימים",
+    "today": "הַיוֹם",
+    "uptimePercent": "{value} % זמן פעילות",
+    "uptimeHint": "זמן פעילות במהלך 90 הימים האחרונים.",
+    "liveSync": "מסונכרן בשידור חי.",
+    "scheduledMaintenance": "תחזוקה מתוזמנת",
+    "noMaintenance": "אין תחזוקה מתוכננת כרגע.",
+    "scheduledFor": "מתוכנן ל-{when}",
+    "postedOn": "פורסם ב-{when}",
+    "unavailable": "נתוני סטטוס אינם זמינים זמנית.",
+    "cta": "דף מצב השרת"
   }
 }

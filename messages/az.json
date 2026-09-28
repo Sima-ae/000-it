@@ -22,7 +22,8 @@
     "dashboard": "İdarə paneli",
     "logout": "Çıxın",
     "webmail": "Webmail",
-    "kennisbank": "Bilik bazası"
+    "kennisbank": "Bilik bazası",
+    "statuspage": "Vəziyyət"
   },
   "language": {
     "title": "Dil"
@@ -1053,7 +1054,7 @@
     "vision": "Vizyon",
     "visionText": "Hər sahibkar üçün düzgün rəqəmsal həll qurmaq — miqyaslana bilən, aydın və böyüməyə yönəlmiş, nəticəsiz dəbli alətlərə deyil.",
     "philosophy": "TripleZero fəlsəfəsi",
-    "philosophyText": "000 sıfır təxmin, sıfır çatışmazlıq və sıfır israf deməkdir: məlumata əsaslanan qərarlar, böyümək üçün kifayət qədər tutum və işə yaramayana büdcə və ya vaxt sərf etməmək.",
+    "philosophyText": "000 sıfır təxminlər, sıfır çatışmazlıq və sıfır tullantı deməkdir: məlumatlara əsaslanan qərarların qəbulu, böyümək üçün kifayət qədər imkan və işləməyən şeylərə büdcə və ya vaxt sərf edilməməsi.",
     "storyTitle": "Biz kimik",
     "storyLead": "TripleZero iT sizin texniki böyümə tərəfdaşınızdır — ilk skandan davamlı optimallaşdırmaya.",
     "storyP1": "AI inteqrasiyası, AEO, GEO, SEO, vebdizayn, WordPress qayğısı, hosting və full-funnel marketinqi bir yanaşmada birləşdiririk. Onlayn mövcudluğunuz sürətli, təhlükəsiz, tapıla bilən və lead və ya gəlirə fokuslu qalır.",
@@ -1279,7 +1280,12 @@
     "featuredNl": "Niderlandın ən böyük şəhərləri",
     "results": "{count} şəhər",
     "noResults": "Şəhər tapılmadı.",
-    "showMore": "Daha çox şəhər göstər"
+    "showMore": "Daha çox şəhər göstər",
+    "indexLead": "Every city page is built for classic SEO, Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) — so businesses in that market can be found in Google, local results and AI answers.",
+    "faqTitle": "FAQ — AEO, GEO & SEO in {name}",
+    "relatedTitle": "Nearby & related cities",
+    "relatedSubtitle": "Continue exploring AI, AEO, GEO and SEO near {name}.",
+    "allCitiesTitle": "All cities (crawlable index)"
   },
   "inquiry": {
     "websiteHint": "vebsayt / internet mağazası",
@@ -1697,5 +1703,26 @@
     "typeREGISTRATION": "Registration",
     "typeRENEWAL": "Renewal",
     "typeTRANSFER": "Transfer"
+  },
+  "statuspage": {
+    "eyebrow": "Sistem statusu",
+    "title": "TripleZero iT Status",
+    "operational": "Əməliyyat",
+    "degraded": "Aşağı performans",
+    "partialOutage": "Qismən kəsilmə",
+    "majorOutage": "Böyük fasilə",
+    "maintenance": "Baxım",
+    "unknown": "Naməlum",
+    "daysAgo": "{days} gün əvvəl",
+    "today": "Bu gün",
+    "uptimePercent": "{value} % iş vaxtı",
+    "uptimeHint": "Son 90 gün ərzində iş vaxtı.",
+    "liveSync": "Canlı sinxronizasiya edildi.",
+    "scheduledMaintenance": "Planlı Baxım",
+    "noMaintenance": "Hazırda planlaşdırılmış təmir yoxdur.",
+    "scheduledFor": "{when} üçün planlaşdırılıb",
+    "postedOn": "{when} tarixində dərc edilib",
+    "unavailable": "Status datası müvəqqəti olaraq əlçatan deyil.",
+    "cta": "Server statusu səhifəsi"
   }
 }

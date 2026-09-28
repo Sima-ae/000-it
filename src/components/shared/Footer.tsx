@@ -37,6 +37,7 @@ function buildInfoLinks(locale: string): FooterLink[] {
     { href: localizedHref(locale, "/cookies"), key: "cookies", external: true },
     { href: localizedHref(locale, "/privacy"), key: "privacy", external: true },
     { href: localizedHref(locale, "/faq"), key: "faq" },
+    { href: localizedHref(locale, "/statuspage"), key: "statuspage" },
   ];
 }
 

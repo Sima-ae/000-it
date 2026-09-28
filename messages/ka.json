@@ -22,7 +22,8 @@
     "dashboard": "დაფა",
     "logout": "გასვლა",
     "webmail": "Webmail",
-    "kennisbank": "ცოდნის ბაზა"
+    "kennisbank": "ცოდნის ბაზა",
+    "statuspage": "სტატუსი"
   },
   "language": {
     "title": "ენა"
@@ -1053,7 +1054,7 @@
     "vision": "ხედვა",
     "visionText": "ავაშენოთ სწორი ციფრული გადაწყვეტა ყოველი მეწარმისთვის — მასშტაბირებადი, ნათელი და ზრდაზე ორიენტირებული, არა მოდური ხელსაწყოები შედეგის გარეშე.",
     "philosophy": "TripleZero ფილოსოფია",
-    "philosophyText": "000 ნიშნავს ნულოვან გამოცნობას, ნულოვან დეფიციტს და ნულოვან ხარჯვას: გადაწყვეტილებები მონაცემებზე დაყრდნობით, საკმარისი ტევადობა ზრდისთვის და არცერთი ბიუჯეტი ან დრო იმაზე, რაც არ მუშაობს.",
+    "philosophyText": "000 ნიშნავს ნულოვან ვარაუდს, ნულ დეფიციტს და ნულოვან ფუჭ ხარჯვას: მონაცემებზე დაფუძნებული გადაწყვეტილებების მიღება, საკმარისი შესაძლებლობა ზრდისთვის და ბიუჯეტის ან დროის დახარჯვის გარეშე იმაზე, რაც არ მუშაობს.",
     "storyTitle": "ვინ ვართ",
     "storyLead": "TripleZero iT თქვენი ტექნიკური ზრდის პარტნიორია — პირველი სკანიდან უწყვეტ ოპტიმიზაციამდე.",
     "storyP1": "ვაერთიანებთ AI ინტეგრაციას, AEO-ს, GEO-ს, SEO-ს, ვებდიზაინს, WordPress მოვლას, ჰოსტინგსა და full-funnel მარკეტინგს ერთ მიდგომაში. თქვენი ონლაინ ყოფნა რჩება სწრაფი, უსაფრთხო, საპოვნელი და ორიენტირებული ლიდებზე ან შემოსავალზე.",
@@ -1279,7 +1280,12 @@
     "featuredNl": "ნიდერლანდების უდიდესი ქალაქები",
     "results": "{count} ქალაქი",
     "noResults": "ქალაქები ვერ მოიძებნა.",
-    "showMore": "მეტი ქალაქის ჩვენება"
+    "showMore": "მეტი ქალაქის ჩვენება",
+    "indexLead": "Every city page is built for classic SEO, Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) — so businesses in that market can be found in Google, local results and AI answers.",
+    "faqTitle": "FAQ — AEO, GEO & SEO in {name}",
+    "relatedTitle": "Nearby & related cities",
+    "relatedSubtitle": "Continue exploring AI, AEO, GEO and SEO near {name}.",
+    "allCitiesTitle": "All cities (crawlable index)"
   },
   "inquiry": {
     "websiteHint": "ვებსაიტი / ვებ მაღაზია",
@@ -1697,5 +1703,26 @@
     "typeREGISTRATION": "Registration",
     "typeRENEWAL": "Renewal",
     "typeTRANSFER": "Transfer"
+  },
+  "statuspage": {
+    "eyebrow": "სისტემის სტატუსი",
+    "title": "TripleZero iT სტატუსი",
+    "operational": "ოპერატიული",
+    "degraded": "დეგრადირებული შესრულება",
+    "partialOutage": "ნაწილობრივი გათიშვა",
+    "majorOutage": "ძირითადი გათიშვა",
+    "maintenance": "მოვლა",
+    "unknown": "უცნობი",
+    "daysAgo": "{დღე} დღის წინ",
+    "today": "დღეს",
+    "uptimePercent": "{value} % uptime",
+    "uptimeHint": "მუშაობის დრო ბოლო 90 დღის განმავლობაში.",
+    "liveSync": "სინქრონიზებულია პირდაპირ ეთერში.",
+    "scheduledMaintenance": "დაგეგმილი მოვლა",
+    "noMaintenance": "ამჟამად არ არის დაგეგმილი მოვლა.",
+    "scheduledFor": "დაგეგმილია {when}",
+    "postedOn": "გამოქვეყნებულია {when}",
+    "unavailable": "სტატუსის მონაცემები დროებით მიუწვდომელია.",
+    "cta": "სერვერის სტატუსის გვერდი"
   }
 }

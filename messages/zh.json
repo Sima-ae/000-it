@@ -22,7 +22,8 @@
     "dashboard": "仪表板",
     "logout": "退出",
     "webmail": "Webmail",
-    "kennisbank": "知识库"
+    "kennisbank": "知识库",
+    "statuspage": "地位"
   },
   "language": {
     "title": "语言"
@@ -1053,7 +1054,7 @@
     "vision": "愿景",
     "visionText": "为每位企业家打造合适的数字方案——可扩展、清晰、面向增长，而非没有结果的流行工具。",
     "philosophy": "TripleZero 理念",
-    "philosophyText": "000 代表零猜测、零短缺、零浪费：基于数据决策，具备足够增长容量，不为无效事项浪费预算与时间。",
+    "philosophyText": "000意味着零猜测、零短缺和零浪费：基于数据的决策、足够的增长能力，并且没有预算或时间花在不起作用的事情上。",
     "storyTitle": "我们是谁",
     "storyLead": "TripleZero iT 是您的技术增长伙伴——从首次扫描到持续优化。",
     "storyP1": "我们将 AI 集成、AEO、GEO、SEO、网页设计、WordPress 运维、主机与全漏斗营销合为一体。您的线上形象保持快速、安全、可发现，并聚焦线索或营收。",
@@ -1279,7 +1280,12 @@
     "featuredNl": "荷兰最大城市",
     "results": "{count} 个城市",
     "noResults": "未找到城市。",
-    "showMore": "显示更多城市"
+    "showMore": "显示更多城市",
+    "indexLead": "Every city page is built for classic SEO, Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) — so businesses in that market can be found in Google, local results and AI answers.",
+    "faqTitle": "FAQ — AEO, GEO & SEO in {name}",
+    "relatedTitle": "Nearby & related cities",
+    "relatedSubtitle": "Continue exploring AI, AEO, GEO and SEO near {name}.",
+    "allCitiesTitle": "All cities (crawlable index)"
   },
   "inquiry": {
     "websiteHint": "网站/网上商店",
@@ -1697,5 +1703,26 @@
     "typeREGISTRATION": "Registration",
     "typeRENEWAL": "Renewal",
     "typeTRANSFER": "Transfer"
+  },
+  "statuspage": {
+    "eyebrow": "系统状态",
+    "title": "TripleZero iT 状态",
+    "operational": "操作",
+    "degraded": "性能下降",
+    "partialOutage": "部分停电",
+    "majorOutage": "大停电",
+    "maintenance": "维护",
+    "unknown": "未知",
+    "daysAgo": "{天}天前",
+    "today": "今天",
+    "uptimePercent": "{值} 正常运行时间百分比",
+    "uptimeHint": "过去 90 天的正常运行时间。",
+    "liveSync": "同步直播。",
+    "scheduledMaintenance": "定期维护",
+    "noMaintenance": "目前没有定期维护。",
+    "scheduledFor": "预定于{时间}",
+    "postedOn": "发布于 {when}",
+    "unavailable": "状态数据暂时不可用。",
+    "cta": "服务器状态页面"
   }
 }

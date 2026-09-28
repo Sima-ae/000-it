@@ -6,6 +6,7 @@ import { Reveal } from "@/components/marketing/Reveal";
 import { GlassCard } from "@/components/marketing/GlassCard";
 import { CategoryHero } from "@/components/content/CategoryHero";
 import { WordPressCarePlansSection } from "@/components/marketing/WordPressCarePlansSection";
+import { ServerLocationsOverview } from "@/components/marketing/ServerLocationsOverview";
 import { ShopHostingSection } from "@/components/shop/ShopHostingSection";
 import { ServiceCard } from "@/components/content/ServiceCard";
 import { SoftLink } from "@/components/shared/SoftLink";
@@ -20,6 +21,7 @@ import {
   sortedServiceGroups,
 } from "@/content/fixweb/catalog";
 import { catalogGroupTitle } from "@/content/fixweb/catalog-title";
+import { serverLocationsCopy } from "@/content/server-locations";
 import { brandingFallbackForServiceSlug } from "@/lib/branding-images";
 import { listServiceGroupCards } from "@/lib/service-group-listing";
 import {
@@ -104,6 +106,7 @@ export default async function ServiceCategoryPage({ params }: Params) {
   );
 
   const otherGroups = sortedServiceGroups(locale).filter((item) => item.id !== group.id);
+  const serverLocations = isHosting ? serverLocationsCopy(locale) : null;
   const jumpLinks = isHosting
     ? [
         { key: "shared-hosting", id: "gedeelde-hosting", label: tShop("sharedHosting") },
@@ -113,6 +116,11 @@ export default async function ServiceCategoryPage({ params }: Params) {
           label: tShop("wordpressHosting"),
         },
         { key: "vps-hosting", id: "vps-hosting-pakketten", label: tShop("vpsHosting") },
+        {
+          key: "server-locations",
+          id: "server-locaties",
+          label: serverLocations!.title,
+        },
         ...pageCards.map((card) => ({
           key: card.item.slug,
           id: card.item.slug,
@@ -167,10 +175,16 @@ export default async function ServiceCategoryPage({ params }: Params) {
         </div>
       ) : null}
 
+      {isHosting ? (
+        <div className="mt-14 sm:mt-16 md:mt-20">
+          <ServerLocationsOverview />
+        </div>
+      ) : null}
+
       <div
         className={
           isHosting
-            ? "mx-auto mt-16 grid w-full max-w-sm sm:mt-20 md:mt-24"
+            ? "mx-auto mt-14 grid w-full max-w-sm sm:mt-16 md:mt-20"
             : "mt-8 grid gap-3 sm:mt-10 sm:grid-cols-2 md:mt-12 lg:grid-cols-3"
         }
       >

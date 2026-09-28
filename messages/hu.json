@@ -22,7 +22,8 @@
     "dashboard": "Irányítópult",
     "logout": "Jelentkezzen ki",
     "webmail": "Webmail",
-    "kennisbank": "Tudástár"
+    "kennisbank": "Tudástár",
+    "statuspage": "Állapot"
   },
   "language": {
     "title": "Nyelv"
@@ -1053,7 +1054,7 @@
     "vision": "Látomás",
     "visionText": "Minden vállalkozónak a megfelelő digitális megoldást építeni — skálázhatóan, világosan, növekedésre hangolva, nem eredmény nélküli divatos eszközökre.",
     "philosophy": "A TripleZero filozófia",
-    "philosophyText": "A 000 nulla találgatást, nulla hiányt és nulla pazarlást jelent: adatvezérelt döntések, elegendő kapacitás a növekedéshez, és semmi költség vagy idő arra, ami nem működik.",
+    "philosophyText": "A 000 nulla találgatást, nulla hiányt és nulla pazarlást jelent: adatokon alapuló döntéshozatal, elegendő kapacitás a növekedéshez, és semmilyen költségvetés vagy idő nem megy el arra, ami nem működik.",
     "storyTitle": "Kik vagyunk",
     "storyLead": "A TripleZero iT a technikai növekedési partnertetek — az első scantől a folyamatos optimalizálásig.",
     "storyP1": "Egy megközelítésben egyesítjük az AI-integrációt, AEO-t, GEO-t, SEO-t, webdesignt, WordPress-gondozást, hostingot és full-funnel marketinget. Az online jelenlét gyors, biztonságos, megtalálható és lead- vagy bevételfókuszú marad.",
@@ -1279,7 +1280,12 @@
     "featuredNl": "Hollandia legnagyobb városai",
     "results": "{count} város",
     "noResults": "Nem található város.",
-    "showMore": "Több város megjelenítése"
+    "showMore": "Több város megjelenítése",
+    "indexLead": "Every city page is built for classic SEO, Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) — so businesses in that market can be found in Google, local results and AI answers.",
+    "faqTitle": "FAQ — AEO, GEO & SEO in {name}",
+    "relatedTitle": "Nearby & related cities",
+    "relatedSubtitle": "Continue exploring AI, AEO, GEO and SEO near {name}.",
+    "allCitiesTitle": "All cities (crawlable index)"
   },
   "inquiry": {
     "websiteHint": "weboldal / webáruház",
@@ -1697,5 +1703,26 @@
     "typeREGISTRATION": "Registration",
     "typeRENEWAL": "Renewal",
     "typeTRANSFER": "Transfer"
+  },
+  "statuspage": {
+    "eyebrow": "A rendszer állapota",
+    "title": "TripleZero iT állapot",
+    "operational": "Működőképes",
+    "degraded": "Csökkent teljesítmény",
+    "partialOutage": "Részleges leállás",
+    "majorOutage": "Nagy leállás",
+    "maintenance": "Karbantartás",
+    "unknown": "Ismeretlen",
+    "daysAgo": "{days} napja",
+    "today": "Ma",
+    "uptimePercent": "{value} % üzemidő",
+    "uptimeHint": "Üzemidő az elmúlt 90 napban.",
+    "liveSync": "Élőben szinkronizálva.",
+    "scheduledMaintenance": "Tervezett karbantartás",
+    "noMaintenance": "Jelenleg nincs tervezett karbantartás.",
+    "scheduledFor": "Időpont: {when}",
+    "postedOn": "Közzétéve: {when}",
+    "unavailable": "Az állapotadatok átmenetileg nem érhetők el.",
+    "cta": "Szerver állapota oldal"
   }
 }

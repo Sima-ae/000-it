@@ -1,0 +1,1 @@
+000, sıfır tahmin, sıfır açık ve sıfır israf anlamına gelir: verilere dayalı karar alma, büyüme için yeterli kapasite ve işe yaramayan şeylere bütçe veya zaman harcanmaması.

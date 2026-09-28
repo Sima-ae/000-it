@@ -22,7 +22,8 @@
     "dashboard": "Paneli",
     "logout": "Dilni",
     "webmail": "Webmail",
-    "kennisbank": "Baza e njohurive"
+    "kennisbank": "Baza e njohurive",
+    "statuspage": "Statusi"
   },
   "language": {
     "title": "Gjuha"
@@ -1053,7 +1054,7 @@
     "vision": "Vizioni",
     "visionText": "Të ndërtojmë zgjidhjen e duhur digjitale për çdo sipërmarrës — të shkallëzueshme, të qarta dhe të orientuara nga rritja, jo mjete moderne pa rezultate.",
     "philosophy": "Filozofia TripleZero",
-    "philosophyText": "000 do të thotë zero hamendësime, zero mungesë dhe zero humbje: vendime bazuar në të dhëna, kapacitet të mjaftueshëm për t’u rritur dhe asnjë buxhet a kohë për atë që nuk funksionon.",
+    "philosophyText": "000 do të thotë zero supozime, zero mungesë dhe zero humbje: vendimmarrje bazuar në të dhëna, kapacitet të mjaftueshëm për t'u rritur dhe pa buxhet apo kohë të shpenzuar për atë që nuk funksionon.",
     "storyTitle": "Kush jemi",
     "storyLead": "TripleZero iT është partneri juaj teknik i rritjes — nga skanimi i parë te optimizimi i vazhdueshëm.",
     "storyP1": "Kombinojmë integrimin e AI, AEO, GEO, SEO, web design, kujdesin WordPress, hostingun dhe marketingun full-funnel në një qasje. Prania juaj online mbetet e shpejtë, e sigurt, e gjetshme dhe e orientuar nga lead-et ose të ardhurat.",
@@ -1279,7 +1280,12 @@
     "featuredNl": "Qytetet më të mëdha në Holandë",
     "results": "{count} qytete",
     "noResults": "Nuk u gjetën qytete.",
-    "showMore": "Shfaq më shumë qytete"
+    "showMore": "Shfaq më shumë qytete",
+    "indexLead": "Every city page is built for classic SEO, Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) — so businesses in that market can be found in Google, local results and AI answers.",
+    "faqTitle": "FAQ — AEO, GEO & SEO in {name}",
+    "relatedTitle": "Nearby & related cities",
+    "relatedSubtitle": "Continue exploring AI, AEO, GEO and SEO near {name}.",
+    "allCitiesTitle": "All cities (crawlable index)"
   },
   "inquiry": {
     "websiteHint": "faqe interneti / dyqan në internet",
@@ -1697,5 +1703,26 @@
     "typeREGISTRATION": "Registration",
     "typeRENEWAL": "Renewal",
     "typeTRANSFER": "Transfer"
+  },
+  "statuspage": {
+    "eyebrow": "Statusi i sistemit",
+    "title": "Statusi i TripleZero iT",
+    "operational": "Operacionale",
+    "degraded": "Performanca e degraduar",
+    "partialOutage": "Ndërprerje e pjesshme",
+    "majorOutage": "Ndërprerje e madhe",
+    "maintenance": "Mirëmbajtja",
+    "unknown": "E panjohur",
+    "daysAgo": "{ditë} ditë më parë",
+    "today": "Sot",
+    "uptimePercent": "{value} % kohë pune",
+    "uptimeHint": "Koha e funksionimit gjatë 90 ditëve të fundit.",
+    "liveSync": "Sinkronizuar drejtpërdrejt.",
+    "scheduledMaintenance": "Mirëmbajtja e planifikuar",
+    "noMaintenance": "Nuk ka asnjë mirëmbajtje të planifikuar për momentin.",
+    "scheduledFor": "Planifikuar për {kur}",
+    "postedOn": "Postuar në {when}",
+    "unavailable": "Të dhënat e statusit janë përkohësisht të padisponueshme.",
+    "cta": "Faqja e statusit të serverit"
   }
 }

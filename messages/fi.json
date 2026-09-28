@@ -22,7 +22,8 @@
     "dashboard": "Kojelauta",
     "logout": "Kirjaudu ulos",
     "webmail": "Webmail",
-    "kennisbank": "Tietopankki"
+    "kennisbank": "Tietopankki",
+    "statuspage": "Status"
   },
   "language": {
     "title": "Kieli"
@@ -1053,7 +1054,7 @@
     "vision": "Visio",
     "visionText": "Rakentaa jokaiselle yrittäjälle oikea digitaalinen ratkaisu — skaalautuva, selkeä ja kasvuun suunnattu, ei trendityökaluja ilman tuloksia.",
     "philosophy": "TripleZero-filosofia",
-    "philosophyText": "000 tarkoittaa nolla arvailua, nolla vajetta ja nolla hukkaa: datan pohjalta päätökset, riittävä kapasiteetti kasvuun eikä budjettia tai aikaa siihen, mikä ei toimi.",
+    "philosophyText": "000 tarkoittaa nollaa arvailua, nollaa vajausta ja nollaa hukkaa: dataan perustuva päätöksenteko, tarpeeksi kapasiteettia kasvaa, eikä budjettia tai aikaa käytetä siihen, mikä ei toimi.",
     "storyTitle": "Keitä olemme",
     "storyLead": "TripleZero iT on tekninen kasvukumppaninne — ensimmäisestä skannauksesta jatkuvaan optimointiin.",
     "storyP1": "Yhdistämme AI-integraation, AEO:n, GEO:n, SEO:n, webdesignin, WordPress-huollon, hostingin ja full-funnel-markkinoinnin yhdeksi lähestymistavaksi. Online-näkyvyytenne pysyy nopeana, turvallisena, löydettävänä ja lead- tai liikevaihtokeskeisenä.",
@@ -1279,7 +1280,12 @@
     "featuredNl": "Alankomaiden suurimmat kaupungit",
     "results": "{count} kaupunkia",
     "noResults": "Kaupunkeja ei löytynyt.",
-    "showMore": "Näytä lisää kaupunkeja"
+    "showMore": "Näytä lisää kaupunkeja",
+    "indexLead": "Every city page is built for classic SEO, Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) — so businesses in that market can be found in Google, local results and AI answers.",
+    "faqTitle": "FAQ — AEO, GEO & SEO in {name}",
+    "relatedTitle": "Nearby & related cities",
+    "relatedSubtitle": "Continue exploring AI, AEO, GEO and SEO near {name}.",
+    "allCitiesTitle": "All cities (crawlable index)"
   },
   "inquiry": {
     "websiteHint": "verkkosivusto / verkkokauppa",
@@ -1697,5 +1703,26 @@
     "typeREGISTRATION": "Registration",
     "typeRENEWAL": "Renewal",
     "typeTRANSFER": "Transfer"
+  },
+  "statuspage": {
+    "eyebrow": "Järjestelmän tila",
+    "title": "TripleZero iT -tila",
+    "operational": "Toiminnassa",
+    "degraded": "Heikentynyt suorituskyky",
+    "partialOutage": "Osittainen katkos",
+    "majorOutage": "Suuri katkos",
+    "maintenance": "Huolto",
+    "unknown": "Tuntematon",
+    "daysAgo": "{days} päivää sitten",
+    "today": "Tänään",
+    "uptimePercent": "{value} % käyttöaika",
+    "uptimeHint": "Käyttöaika viimeisten 90 päivän aikana.",
+    "liveSync": "Synkronoitu livenä.",
+    "scheduledMaintenance": "Määräaikaishuolto",
+    "noMaintenance": "Tällä hetkellä ei ole määräaikaishuoltoa.",
+    "scheduledFor": "Suunniteltu {kun}",
+    "postedOn": "Lähetetty {when}",
+    "unavailable": "Tilatiedot eivät ole tilapäisesti saatavilla.",
+    "cta": "Palvelimen tilasivu"
   }
 }

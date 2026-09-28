@@ -22,7 +22,8 @@
     "dashboard": "Prietaisų skydelis",
     "logout": "Atsijungti",
     "webmail": "Webmail",
-    "kennisbank": "Žinių bazė"
+    "kennisbank": "Žinių bazė",
+    "statuspage": "Būsena"
   },
   "language": {
     "title": "Kalba"
@@ -1053,7 +1054,7 @@
     "vision": "Vizija",
     "visionText": "Kurti tinkamą skaitmeninį sprendimą kiekvienam verslininkui — mastelio keičiamą, aiškų ir orientuotą į augimą, o ne į madingus įrankius be rezultatų.",
     "philosophy": "TripleZero filosofija",
-    "philosophyText": "000 reiškia nulis spėlionių, nulis trūkumo ir nulis švaistymo: sprendimai pagal duomenis, pakankamai talpos augti ir joks biudžetas ar laikas tam, kas neveikia.",
+    "philosophyText": "000 reiškia nulį spėlionių, nulinį trūkumą ir nulį švaistymo: sprendimų priėmimas pagrįstas duomenimis, pakankamai pajėgumų augti ir neskiriama biudžeto ar laiko tam, kas neveikia.",
     "storyTitle": "Kas mes esame",
     "storyLead": "TripleZero iT yra jūsų techninis augimo partneris — nuo pirmo skenavimo iki nuolatinės optimizacijos.",
     "storyP1": "Sujungiame DI integraciją, AEO, GEO, SEO, web dizainą, WordPress priežiūrą, hostingą ir full-funnel rinkodarą į vieną požiūrį. Jūsų online buvimas išlieka greitas, saugus, randamas ir orientuotas į lead’us ar pajamas.",
@@ -1279,7 +1280,12 @@
     "featuredNl": "Didžiausi Nyderlandų miestai",
     "results": "{count} miestų",
     "noResults": "Miestų nerasta.",
-    "showMore": "Rodyti daugiau miestų"
+    "showMore": "Rodyti daugiau miestų",
+    "indexLead": "Every city page is built for classic SEO, Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) — so businesses in that market can be found in Google, local results and AI answers.",
+    "faqTitle": "FAQ — AEO, GEO & SEO in {name}",
+    "relatedTitle": "Nearby & related cities",
+    "relatedSubtitle": "Continue exploring AI, AEO, GEO and SEO near {name}.",
+    "allCitiesTitle": "All cities (crawlable index)"
   },
   "inquiry": {
     "websiteHint": "svetainė / internetinė parduotuvė",
@@ -1697,5 +1703,26 @@
     "typeREGISTRATION": "Registration",
     "typeRENEWAL": "Renewal",
     "typeTRANSFER": "Transfer"
+  },
+  "statuspage": {
+    "eyebrow": "Sistemos būsena",
+    "title": "TripleZero iT būsena",
+    "operational": "Veiklos",
+    "degraded": "Sumažėjęs veikimas",
+    "partialOutage": "Dalinis gedimas",
+    "majorOutage": "Didelis gedimas",
+    "maintenance": "Priežiūra",
+    "unknown": "Nežinoma",
+    "daysAgo": "prieš {days} dienas",
+    "today": "Šiandien",
+    "uptimePercent": "{value} % veiksnumo laikas",
+    "uptimeHint": "Veiklos laikas per pastarąsias 90 dienų.",
+    "liveSync": "Sinchronizuota gyvai.",
+    "scheduledMaintenance": "Planinė priežiūra",
+    "noMaintenance": "Šiuo metu nėra suplanuotos priežiūros.",
+    "scheduledFor": "Suplanuota {when}",
+    "postedOn": "Paskelbta {when}",
+    "unavailable": "Būsenos duomenys laikinai nepasiekiami.",
+    "cta": "Serverio būsenos puslapis"
   }
 }
