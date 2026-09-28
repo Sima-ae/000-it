@@ -142,13 +142,15 @@ function StatusRow({
   item,
   t,
   depth = 0,
+  defaultOpen = false,
 }: {
   item: StatusComponentView;
   t: ReturnType<typeof useTranslations<"statuspage">>;
   depth?: number;
+  defaultOpen?: boolean;
 }) {
   const hasChildren = item.children.length > 0;
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(defaultOpen);
 
   return (
     <div className={cn(depth === 0 && "border-b border-border/70 py-4")}>
@@ -287,7 +289,12 @@ export function StatusPageView({ initial }: { initial: StatusPagePayload }) {
 
       <div className="mt-10 rounded-2xl border border-border/70 bg-background px-4 sm:px-5">
         {data.components.map((item) => (
-          <StatusRow key={item.id} item={item} t={t} />
+          <StatusRow
+            key={item.id}
+            item={item}
+            t={t}
+            defaultOpen={/^core services$/i.test(item.name)}
+          />
         ))}
         {!data.components.length ? (
           <p className="py-10 text-center text-sm text-muted-foreground">
