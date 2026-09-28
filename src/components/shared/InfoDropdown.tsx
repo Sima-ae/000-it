@@ -17,6 +17,7 @@ export function InfoDropdown({
   termsLabel,
   cookiesLabel,
   privacyLabel,
+  statuspageLabel,
   active,
 }: {
   locale: string;
@@ -26,6 +27,7 @@ export function InfoDropdown({
   termsLabel: string;
   cookiesLabel: string;
   privacyLabel: string;
+  statuspageLabel: string;
   active: boolean;
 }) {
   const [open, setOpen] = useState(false);
@@ -54,6 +56,9 @@ export function InfoDropdown({
   const aboutActive = pathname === aboutHref || pathname.startsWith(`${aboutHref}/`);
   const faqHref = localizedHref(locale, "/faq");
   const faqActive = pathname === faqHref || pathname.startsWith(`${faqHref}/`);
+  const statusHref = localizedHref(locale, "/statuspage");
+  const statusActive =
+    pathname === statusHref || pathname.startsWith(`${statusHref}/`);
 
   const itemClass =
     "block rounded-xl px-3 py-2 text-sm text-muted-foreground transition hover:bg-primary hover:text-primary-foreground";
@@ -121,6 +126,13 @@ export function InfoDropdown({
               onClick={() => setOpen(false)}
             >
               {privacyLabel}
+            </SoftLink>
+            <SoftLink
+              href={statusHref}
+              className={cn(itemClass, statusActive && "bg-primary text-primary-foreground")}
+              onClick={() => setOpen(false)}
+            >
+              {statuspageLabel}
             </SoftLink>
             <SoftLink
               href={faqHref}

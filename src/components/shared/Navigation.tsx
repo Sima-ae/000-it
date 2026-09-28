@@ -153,11 +153,14 @@ export function Navigation() {
               if ("info" in link && link.info) {
                 const faqHref = localizedHref(locale, "/faq");
                 const aboutHref = localizedHref(locale, "/over-ons");
+                const statusHref = localizedHref(locale, "/statuspage");
                 const infoActive =
                   pathname === aboutHref ||
                   pathname.startsWith(`${aboutHref}/`) ||
                   pathname === faqHref ||
-                  pathname.startsWith(`${faqHref}/`);
+                  pathname.startsWith(`${faqHref}/`) ||
+                  pathname === statusHref ||
+                  pathname.startsWith(`${statusHref}/`);
                 return (
                   <InfoDropdown
                     key={link.key}
@@ -168,6 +171,7 @@ export function Navigation() {
                     termsLabel={t("terms")}
                     cookiesLabel={t("cookies")}
                     privacyLabel={t("privacy")}
+                    statuspageLabel={t("statuspage")}
                     active={infoActive}
                   />
                 );
@@ -379,11 +383,14 @@ export function Navigation() {
                 if ("info" in link && link.info) {
                   const faqHref = localizedHref(locale, "/faq");
                   const aboutHref = localizedHref(locale, "/over-ons");
+                  const statusHref = localizedHref(locale, "/statuspage");
                   const infoActive =
                     pathname === aboutHref ||
                     pathname.startsWith(`${aboutHref}/`) ||
                     pathname === faqHref ||
-                    pathname.startsWith(`${faqHref}/`);
+                    pathname.startsWith(`${faqHref}/`) ||
+                    pathname === statusHref ||
+                    pathname.startsWith(`${statusHref}/`);
                   return (
                     <div key={link.key}>
                       <button
@@ -405,6 +412,7 @@ export function Navigation() {
                               [localizedHref(locale, "/voorwaarden"), "terms"],
                               [localizedHref(locale, "/cookies"), "cookies"],
                               [localizedHref(locale, "/privacy"), "privacy"],
+                              [statusHref, "statuspage"],
                               [faqHref, "faq"],
                             ] as const
                           ).map(([href, key]) => {
