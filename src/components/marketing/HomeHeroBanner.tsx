@@ -35,7 +35,7 @@ export function HomeHeroBanner({ scanCount }: { scanCount: number }) {
         };
 
   return (
-    <section className="relative w-full overflow-hidden">
+    <section className="relative -mt-[var(--nav-offset)] w-full overflow-hidden">
       <motion.div
         className="absolute inset-0"
         initial={reduce ? false : { scale: 1.06, opacity: 0.7 }}
@@ -71,7 +71,8 @@ export function HomeHeroBanner({ scanCount }: { scanCount: number }) {
 
       <HeroCircuitPulse />
 
-      <div className="relative z-2 mx-auto w-full max-w-6xl px-4 pt-13 pb-10 sm:py-12 md:px-6 lg:py-14">
+      {/* Content clears the fixed header; bg stays full-bleed underneath */}
+      <div className="relative z-2 mx-auto w-full max-w-6xl px-4 pt-[calc(var(--nav-offset)+1.25rem)] pb-10 sm:pt-[calc(var(--nav-offset)+1.5rem)] sm:pb-12 md:px-6 lg:pt-[calc(var(--nav-offset)+1.75rem)] lg:pb-14">
         <div className="mx-auto flex w-fit max-w-full flex-col items-center gap-6 sm:gap-7 lg:flex-row lg:items-center lg:gap-8 xl:gap-10">
         {/* Copy + CTAs */}
         <div className="mx-auto flex w-full max-w-xl shrink-0 flex-col items-center gap-3 text-center text-white sm:gap-3.5 lg:mx-0 lg:max-w-md lg:items-start lg:text-left xl:max-w-120">
