@@ -35,7 +35,7 @@ export function HomeHeroBanner({ scanCount }: { scanCount: number }) {
         };
 
   return (
-    <section className="relative -mt-[var(--nav-offset)] w-full overflow-hidden">
+    <section className="relative -mt-(--nav-offset) w-full overflow-hidden">
       <motion.div
         className="absolute inset-0"
         initial={reduce ? false : { scale: 1.06, opacity: 0.7 }}

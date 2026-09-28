@@ -8,7 +8,7 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
     <div className="flex min-h-screen flex-col">
       <ShopCatalogHydrator />
       <Navigation />
-      <main className="flex-1 pt-[var(--nav-offset)]">
+      <main className="flex-1 pt-(--nav-offset)">
         <ContentTransition>{children}</ContentTransition>
       </main>
       <Footer />
