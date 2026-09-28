@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://000-it.com/nl/diensten/aeo-optimalisatie</loc>
+    <loc>https://000-it.com/nl/diensten/aeo-optimization</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/aeo-optimalisatie" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/aeo-optimization" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/aeo-optimization" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/aeo-optimierung" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/optimisation-oea" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/aeo-optimalisatie" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/aeo-optimization" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/aeo-optimization" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/aeo-optimization" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/geo-optimalisatie</loc>
+    <loc>https://000-it.com/nl/diensten/geo-optimization</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/geo-optimalisatie" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/geo-optimization" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/geo-optimization" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/geo-optimierung" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/optimisation-geographique" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/geo-optimalisatie" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/geo-optimization" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/geo-optimization" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/geo-optimization" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/seo-optimalisatie</loc>
+    <loc>https://000-it.com/nl/diensten/seo-optimization</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/seo-optimalisatie" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/seo-optimization" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/seo-optimization" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/seo-optimierung" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/referencement-optimise" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/seo-optimalisatie" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/seo-optimization" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/seo-optimization" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/seo-optimization" />
   </url>
   <url>
     <loc>https://000-it.com/nl/diensten/ecommerce-seo</loc>
@@ -108,19 +108,19 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/ai-scan" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/ai-scan" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/ki-scan" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/analyse-de-lia" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/scan-ia" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/ai-scan" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/ai-in-e-commerce</loc>
+    <loc>https://000-it.com/nl/diensten/ai-in-ecommerce</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/ai-in-e-commerce" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/ai-in-e-commerce" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/ki-im-e-commerce" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/lia-dans-le-commerce-electronique" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/ai-in-e-commerce" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/ai-in-ecommerce" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/ai-in-ecommerce" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/ai-in-ecommerce" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/ai-in-ecommerce" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/ai-in-ecommerce" />
   </url>
   <url>
     <loc>https://000-it.com/nl/diensten/ai-in-website</loc>
@@ -129,42 +129,42 @@
     <priority>0.90</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/ai-in-website" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/ai-in-website" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/ki-in-der-website" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/ia-dans-le-site-web" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/ai-in-website" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/ai-in-website" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/ai-in-website" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/ai-agents-en-chatbots</loc>
+    <loc>https://000-it.com/nl/diensten/ai-chatbots</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/ai-agents-en-chatbots" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/ai-agents-and-chatbots" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/ki-agenten-und-chatbots" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/agents-ia-et-chatbots" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/ai-agents-en-chatbots" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/ai-chatbots" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/ai-chatbots" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/ai-chatbots" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/ai-chatbots" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/ai-chatbots" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/ai-contentstrategie</loc>
+    <loc>https://000-it.com/nl/diensten/ai-content-strategy</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/ai-contentstrategie" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/ai-content-strategy" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/ai-content-strategy" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/content-strategie" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/strategie-de-contenu" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/ai-contentstrategie" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/ai-content-strategy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/ai-content-strategy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/ai-content-strategy" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/ai-automatisering</loc>
+    <loc>https://000-it.com/nl/diensten/ai-automation</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/ai-automatisering" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/ai-automation" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/ai-automation" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/ki-automatisierung" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/automatisation-de-lia" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/ai-automatisering" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/ai-automation" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/ai-automation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/ai-automation" />
   </url>
   <url>
     <loc>https://000-it.com/nl/diensten/ai-workflows</loc>
@@ -173,8 +173,8 @@
     <priority>0.90</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/ai-workflows" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/ai-workflows" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/ki-workflows" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/flux-de-travail-de-lia" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/ai-workflows" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/ai-workflows" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/ai-workflows" />
   </url>
   <url>
@@ -184,31 +184,31 @@
     <priority>0.90</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/ai-marketing-agents" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/ai-marketing-agents" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/ki-marketing-agenten" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/agents-marketing" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/ai-marketing-agents" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/ai-marketing-agents" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/ai-marketing-agents" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/ai-integratie-en-maatwerk</loc>
+    <loc>https://000-it.com/nl/diensten/ai-integration</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/ai-integratie-en-maatwerk" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/custom-ai-integration" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/benutzerdefinierte-ki-integration" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/integration-personnalisee-de-lia" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/ai-integratie-en-maatwerk" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/ai-integration" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/ai-integration" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/ai-integration" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/ai-integration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/ai-integration" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/ai-strategie-en-advies</loc>
+    <loc>https://000-it.com/nl/diensten/ai-consultancy</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/ai-strategie-en-advies" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/ai-strategy-consultancy" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/ki-strategie-beratung" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/conseil-en-strategies" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/ai-strategie-en-advies" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/ai-consultancy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/ai-consultancy" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/ai-consultancy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/ai-consultancy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/ai-consultancy" />
   </url>
   <url>
     <loc>https://000-it.com/nl/diensten/ai-in-wordpress</loc>
@@ -217,8 +217,8 @@
     <priority>0.88</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/ai-in-wordpress" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/ai-in-wordpress" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/ki-in-wordpress" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/lia-dans-wordpress" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/ai-in-wordpress" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/ai-in-wordpress" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/ai-in-wordpress" />
   </url>
   <url>
@@ -233,81 +233,81 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/wordpress-beheer" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/bugs-en-errors-verhelpen</loc>
+    <loc>https://000-it.com/nl/diensten/wordpress-error-fix</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/bugs-en-errors-verhelpen" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/fix-bugs-and-errors" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/fehler-und-irrtumer-beheben" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/corriger-les-bugs-et-les-erreurs" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/bugs-en-errors-verhelpen" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/wordpress-error-fix" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/wordpress-error-fix" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/wordpress-error-fix" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/wordpress-error-fix" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/wordpress-error-fix" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/malware-verwijderen</loc>
+    <loc>https://000-it.com/nl/diensten/wordpress-malware-removal</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/malware-verwijderen" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/malware-removal" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/kostenlose-malware-entfernung" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/suppression-des-logiciels-malveillants" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/malware-verwijderen" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/wordpress-malware-removal" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/wordpress-malware-removal" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/wordpress-malware-removal" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/wordpress-malware-removal" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/wordpress-malware-removal" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/firewall-security-en-ssl</loc>
+    <loc>https://000-it.com/nl/diensten/wordpress-security</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/firewall-security-en-ssl" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/firewall-security-ssl" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/firewall-sicherheit-ssl" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/pare-feu-securite-et-ssl" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/firewall-security-en-ssl" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/wordpress-security" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/wordpress-security" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/wordpress-security" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/wordpress-security" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/wordpress-security" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/performance-en-snelheid</loc>
+    <loc>https://000-it.com/nl/diensten/wordpress-speed-optimization</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/performance-en-snelheid" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/wordpress-speed-optimization" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/wordpress-speed-optimization" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/wordpress-geschwindigkeitsoptimierung" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/optimisation-de-la-vitesse-wordpress" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/performance-en-snelheid" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/wordpress-speed-optimization" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/wordpress-speed-optimization" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/wordpress-speed-optimization" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/backups-en-migratie</loc>
+    <loc>https://000-it.com/nl/diensten/wordpress-backup-hosting-migration</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/backups-en-migratie" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/backups-and-migration" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/backups-und-migration" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/sauvegardes-et-migration" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/backups-en-migratie" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/wordpress-backup-hosting-migration" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/wordpress-backup-hosting-migration" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/wordpress-backup-hosting-migration" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/wordpress-backup-hosting-migration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/wordpress-backup-hosting-migration" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/plugin-theme-installatie</loc>
+    <loc>https://000-it.com/nl/diensten/wordpress-plugin-theme-installation</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/plugin-theme-installatie" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/wordpress-plugin-theme-installation" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/wordpress-plugin-theme-installation" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/installation-des-wordpress-plugins-themes" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/installation-du-plugin-theme-wordpress" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/plugin-theme-installatie" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/wordpress-plugin-theme-installation" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/wordpress-plugin-theme-installation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/wordpress-plugin-theme-installation" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/onderhoud-en-updates</loc>
+    <loc>https://000-it.com/nl/diensten/wordpress-maintenance-updates</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/onderhoud-en-updates" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/maintenance-updates" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/wartung-und-updates" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/free-maintenance-updates" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/onderhoud-en-updates" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/wordpress-maintenance-updates" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/wordpress-maintenance-updates" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/wordpress-maintenance-updates" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/wordpress-maintenance-updates" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/wordpress-maintenance-updates" />
   </url>
   <url>
     <loc>https://000-it.com/nl/diensten/pro-support</loc>
@@ -339,52 +339,52 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/premium-support" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/premium-support" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/premium-support" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/assistance-premium" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/premium-support" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/premium-support" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/website-support</loc>
+    <loc>https://000-it.com/nl/diensten/webdesign-support</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/website-support" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/website-support" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/haben-sie-probleme-mit-der-website" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/support" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/website-support" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/webdesign-support" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/webdesign-support" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/webdesign-support" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/webdesign-support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/webdesign-support" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/maatwerk-webdesign</loc>
+    <loc>https://000-it.com/nl/diensten/custom-webdesign</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/maatwerk-webdesign" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/custom-webdesign" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/custom-webdesign" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/benutzerdefiniertes-webdesign" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/webdesign-personnalise" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/maatwerk-webdesign" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/custom-webdesign" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/custom-webdesign" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/custom-webdesign" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/php-webontwikkeling</loc>
+    <loc>https://000-it.com/nl/diensten/php-web-development</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/php-webontwikkeling" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/php-web-development" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/php-web-development" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/webentwicklung" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/developpement-web" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/php-webontwikkeling" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/php-web-development" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/php-web-development" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/php-web-development" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/next-js-ontwikkeling</loc>
+    <loc>https://000-it.com/nl/diensten/nextjs-development</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/next-js-ontwikkeling" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/next-js-development" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/next-js-entwicklung" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/developpement-next-js" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/next-js-ontwikkeling" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/nextjs-development" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/nextjs-development" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/nextjs-development" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/nextjs-development" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/nextjs-development" />
   </url>
   <url>
     <loc>https://000-it.com/nl/diensten/html-css-javascript</loc>
@@ -398,70 +398,70 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/html-css-javascript" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/dagelijks-onderhoud</loc>
+    <loc>https://000-it.com/nl/diensten/website-maintenance</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/dagelijks-onderhoud" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/daily-maintenance" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/tagliche-wartung" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/maintenance-quotidienne" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/dagelijks-onderhoud" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/website-maintenance" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/website-maintenance" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/website-maintenance" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/website-maintenance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/website-maintenance" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/api-integraties</loc>
+    <loc>https://000-it.com/nl/diensten/api-integrations</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/api-integraties" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/api-integrations" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/api-integrations" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/api-integrationen" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/integrations" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/api-integraties" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/api-integrations" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/api-integrations" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/api-integrations" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/malware-verwijderen-malware-removal</loc>
+    <loc>https://000-it.com/nl/diensten/website-malware-removal</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/malware-verwijderen-malware-removal" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/malware-removal-malware-removal" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/kostenlose-malware-entfernung-malware-removal" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/suppression-des-logiciels-malveillants-malware-removal" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/malware-verwijderen-malware-removal" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/website-malware-removal" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/website-malware-removal" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/website-malware-removal" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/website-malware-removal" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/website-malware-removal" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/firewall-security-en-ssl-website-security</loc>
+    <loc>https://000-it.com/nl/diensten/website-security</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/firewall-security-en-ssl-website-security" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/firewall-security-ssl-website-security" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/firewall-sicherheit-ssl-website-security" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/pare-feu-securite-et-ssl-website-security" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/firewall-security-en-ssl-website-security" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/website-security" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/website-security" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/website-security" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/website-security" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/website-security" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/performance-en-snelheid-speed-optimization</loc>
+    <loc>https://000-it.com/nl/diensten/website-speed-optimization</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/performance-en-snelheid-speed-optimization" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/performance-speed-optimization" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/leistungs-und-geschwindigkeitsoptimierung" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/optimisation-des-performances-et-de-la-vitesse" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/performance-en-snelheid-speed-optimization" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/website-speed-optimization" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/website-speed-optimization" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/website-speed-optimization" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/website-speed-optimization" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/website-speed-optimization" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/backup-migratie</loc>
+    <loc>https://000-it.com/nl/diensten/website-backup-migration</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/backup-migratie" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/backup-migration" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/sicherung-migration" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/backup-migration" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/backup-migratie" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/website-backup-migration" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/website-backup-migration" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/website-backup-migration" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/website-backup-migration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/website-backup-migration" />
   </url>
   <url>
     <loc>https://000-it.com/nl/diensten/digital-marketing</loc>
@@ -470,8 +470,8 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/digital-marketing" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/digital-marketing" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/digitales-marketing" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/marketing-digital" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/digital-marketing" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/digital-marketing" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/digital-marketing" />
   </url>
   <url>
@@ -482,7 +482,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/content-writing" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/content-writing" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/content-writing" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/redaction-de-contenu" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/content-writing" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/content-writing" />
   </url>
   <url>
@@ -493,19 +493,19 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/social-media-management" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/social-media-management" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/social-media-management" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/gestion-des-medias-sociaux" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/social-media-management" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/social-media-management" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/media-creatie</loc>
+    <loc>https://000-it.com/nl/diensten/media-creation</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/media-creatie" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/media-creation" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/media-creation" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/medienerstellungswerkzeug" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/creation-de-medias" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/media-creatie" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/media-creation" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/media-creation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/media-creation" />
   </url>
   <url>
     <loc>https://000-it.com/nl/diensten/e-commerce</loc>
@@ -515,7 +515,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/e-commerce" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/e-commerce" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/e-commerce" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/commerce-electronique" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/e-commerce" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/e-commerce" />
   </url>
   <url>
@@ -525,8 +525,8 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/product-listing" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/product-listing" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/produktliste" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/liste-des-produits" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/product-listing" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/product-listing" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/product-listing" />
   </url>
   <url>
@@ -537,7 +537,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/community-management" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/community-management" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/community-management" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/gestion-de-la-communaute" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/community-management" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/community-management" />
   </url>
   <url>
@@ -547,31 +547,31 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/data-entry" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/data-entry" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/dateneingabe" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/saisie-des-donnees" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/data-entry" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/data-entry" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/data-entry" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/logo-en-merkidentiteit</loc>
+    <loc>https://000-it.com/nl/diensten/logo-brand-identity</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/logo-en-merkidentiteit" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/logo-brand-identity" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/logo-brand-identity" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/markenidentitat" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/identite-de-marque" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/logo-en-merkidentiteit" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/logo-brand-identity" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/logo-brand-identity" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/logo-brand-identity" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/visitekaartjes</loc>
+    <loc>https://000-it.com/nl/diensten/business-cards</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/visitekaartjes" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/business-cards" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/business-cards" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/visitenkarten" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/cartes-de-visite" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/visitekaartjes" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/business-cards" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/business-cards" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/business-cards" />
   </url>
   <url>
     <loc>https://000-it.com/nl/diensten/briefpapier</loc>
@@ -579,43 +579,43 @@
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/briefpapier" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/letterhead" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/briefkopf" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/en-tete-de-lettre" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/briefpapier" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/briefpapier" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/briefpapier" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/briefpapier" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/flyers-en-posters</loc>
+    <loc>https://000-it.com/nl/diensten/flyers-posters</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/flyers-en-posters" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/flyers-posters" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/flyers-posters" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/flugblatter-und-plakate" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/flyers-et-affiches" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/flyers-en-posters" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/flyers-posters" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/flyers-posters" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/flyers-posters" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/stickers</loc>
+    <loc>https://000-it.com/nl/diensten/stickers-packaging</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/stickers" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/stickers" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/sticker" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/etiquettes-stickers" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/stickers" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/stickers-packaging" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/stickers-packaging" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/stickers-packaging" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/stickers-packaging" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/stickers-packaging" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/magazines-en-brochures</loc>
+    <loc>https://000-it.com/nl/diensten/magazines-brochures</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/magazines-en-brochures" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/magazines-brochures" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/magazines-brochures" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/zeitschriften-broschuren" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/magazines-prospectus" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/magazines-en-brochures" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/magazines-brochures" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/magazines-brochures" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/magazines-brochures" />
   </url>
   <url>
     <loc>https://000-it.com/nl/diensten/web-hosting</loc>
@@ -625,7 +625,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/web-hosting" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/web-hosting" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/web-hosting" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/hebergement-web" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/web-hosting" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/web-hosting" />
   </url>
   <url>
@@ -635,8 +635,8 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/shared-hosting" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/shared-hosting" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/geteiltes-hosting" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/hebergement-partage" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/shared-hosting" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/shared-hosting" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/shared-hosting" />
   </url>
   <url>
@@ -647,7 +647,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/wordpress-hosting" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/wordpress-hosting" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/wordpress-hosting" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/hebergement-wordpress" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/wordpress-hosting" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/wordpress-hosting" />
   </url>
   <url>
@@ -658,7 +658,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/vps-hosting" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/vps-hosting" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/vps-hosting" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/hebergement-vps" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/vps-hosting" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/vps-hosting" />
   </url>
   <url>
@@ -669,7 +669,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/shared-hosting-basic" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/shared-hosting-basic" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/shared-hosting-basic" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/hebergement-partage-de-base" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/shared-hosting-basic" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/shared-hosting-basic" />
   </url>
   <url>
@@ -679,8 +679,8 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/shared-hosting-business" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/shared-hosting-business" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/shared-hosting-geschaft" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/entreprise-dhebergement-partage" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/shared-hosting-business" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/shared-hosting-business" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/shared-hosting-business" />
   </url>
   <url>
@@ -690,8 +690,8 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/shared-hosting-plus" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/shared-hosting-plus" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/shared-hosting" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/hebergement-partage-hosting-plus" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/shared-hosting-plus" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/shared-hosting-plus" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/shared-hosting-plus" />
   </url>
   <url>
@@ -702,19 +702,19 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/wordpress-hosting-basic" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/wordpress-hosting-basic" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/wordpress-hosting-basic" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/hebergement-wordpress-de-base" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/wordpress-hosting-basic" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/wordpress-hosting-basic" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/wordpress-hosting-pro</loc>
+    <loc>https://000-it.com/nl/diensten/wordpress-hosting-business</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/wordpress-hosting-pro" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/wordpress-hosting-pro" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/wordpress-hosting-hosting-business" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/hebergement-wordpress-hosting-business" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/wordpress-hosting-pro" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/wordpress-hosting-business" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/wordpress-hosting-business" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/wordpress-hosting-business" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/wordpress-hosting-business" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/wordpress-hosting-business" />
   </url>
   <url>
     <loc>https://000-it.com/nl/diensten/wordpress-hosting-plus</loc>
@@ -723,8 +723,8 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/wordpress-hosting-plus" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/wordpress-hosting-plus" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/wordpress-hosting-hosting-plus" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/hebergement-wordpress-hosting-plus" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/wordpress-hosting-plus" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/wordpress-hosting-plus" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/wordpress-hosting-plus" />
   </url>
   <url>
@@ -735,7 +735,7 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/vps-hosting-basic" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/vps-hosting-basic" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/vps-hosting-basic" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/hebergement-vps-de-base" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/vps-hosting-basic" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/vps-hosting-basic" />
   </url>
   <url>
@@ -745,8 +745,8 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/vps-hosting-business" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/vps-hosting-business" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/vps-hosting-geschaft" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/entreprise-dhebergement-vps" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/vps-hosting-business" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/vps-hosting-business" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/vps-hosting-business" />
   </url>
   <url>
@@ -756,8 +756,8 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/vps-hosting-plus" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/vps-hosting-plus" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/vps-hosting-hosting-plus" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/hebergement-vps-plus" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/vps-hosting-plus" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/vps-hosting-plus" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/vps-hosting-plus" />
   </url>
   <url>

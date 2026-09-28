@@ -42,13 +42,20 @@ function hreflangForLocale(locale: string) {
 }
 
 /** Bump when regenerating after a major content / crawlability fix. */
-const CONTENT_REV = "2026-09-28b";
+const CONTENT_REV = "2026-09-28c";
 
 /**
- * Soft cap per file. With lean hreflang, stay well under Google’s practical
- * fetch comfort zone (~2–3MB) and the 50MB / 50k URL protocol max.
+ * Filename revision baked into every child path. Bumping this forces Google to
+ * fetch brand-new URLs instead of retrying stale “Couldn’t fetch” rows in GSC
+ * (cities + kennisbank-6..8 were stuck; kennisbank-1..5 still showed 14 Sep / 4000 URLs).
  */
-const MAX_URLS_PER_FILE = 500;
+const FILE_REV = "r3";
+
+/**
+ * Soft cap per file. Lean hreflang (~0.6–1KB/url) → 2000 urls ≈ 1–2MB, well
+ * under Google’s comfort zone and far fewer child fetches than 500/file.
+ */
+const MAX_URLS_PER_FILE = 2000;
 
 export type SitemapUrlEntry = {
   loc: string;
@@ -187,6 +194,62 @@ export function renderSitemapIndex(files: Array<{ path: string; lastmod: string 
 ${body}
 </sitemapindex>
 `;
+}
+
+/**
+ * Recover <url> rows from a previous child sitemap when DB is offline during
+ * regenerate (otherwise news/portfolio vanish from the index).
+ */
+function recoverEntriesFromDisk(
+  outDir: string,
+  base: string,
+): SitemapUrlEntry[] {
+  if (!existsSync(outDir)) return [];
+  const files = readdirSync(outDir)
+    .filter(
+      (f) =>
+        f.startsWith(`${base}-`) &&
+        f.endsWith(".xml") &&
+        !f.includes("-index"),
+    )
+    .sort();
+  const entries: SitemapUrlEntry[] = [];
+  for (const name of files) {
+    try {
+      const text = readFileSync(join(outDir, name), "utf8");
+      const blocks = text.match(/<url>[\s\S]*?<\/url>/g) || [];
+      for (const block of blocks) {
+        const loc = block.match(/<loc>([^<]+)<\/loc>/)?.[1];
+        if (!loc) continue;
+        const lastmod =
+          block.match(/<lastmod>([^<]+)<\/lastmod>/)?.[1]?.slice(0, 10) ||
+          toIsoDate(CONTENT_REV);
+        const changefreq =
+          (block.match(/<changefreq>([^<]+)<\/changefreq>/)?.[1] as
+            | SitemapUrlEntry["changefreq"]
+            | undefined) || "weekly";
+        const priority =
+          block.match(/<priority>([^<]+)<\/priority>/)?.[1] || "0.5";
+        const alternates: Record<string, string> = {};
+        for (const m of block.matchAll(
+          /hreflang="([^"]+)" href="([^"]+)"/g,
+        )) {
+          if (m[1] === "x-default") continue;
+          alternates[m[1]] = m[2];
+        }
+        entries.push({
+          loc,
+          lastmod,
+          changefreq,
+          priority,
+          alternates: Object.keys(alternates).length ? alternates : undefined,
+        });
+      }
+    } catch {
+      /* ignore unreadable chunk */
+    }
+  }
+  return entries;
 }
 
 function loadKennisbankCatalogFallback(): {
@@ -422,6 +485,28 @@ export async function writeSitemapFiles(rootDir = process.cwd()) {
   const outDir = join(rootDir, "public", "sitemaps");
   if (!existsSync(outDir)) mkdirSync(outDir, { recursive: true });
 
+  const sets = await collectSitemapSets();
+
+  // If MySQL was down, keep news/portfolio from the previous generate.
+  if (!sets.news.length) {
+    const recovered = recoverEntriesFromDisk(outDir, "sitemap-news");
+    if (recovered.length) {
+      console.warn(
+        `[sitemap] news DB empty — recovered ${recovered.length} URLs from disk`,
+      );
+      sets.news.push(...recovered);
+    }
+  }
+  if (!sets.portfolio.length) {
+    const recovered = recoverEntriesFromDisk(outDir, "sitemap-portfolio");
+    if (recovered.length) {
+      console.warn(
+        `[sitemap] portfolio DB empty — recovered ${recovered.length} URLs from disk`,
+      );
+      sets.portfolio.push(...recovered);
+    }
+  }
+
   // Clear previous generated children so renamed/split files do not linger.
   for (const name of readdirSync(outDir)) {
     if (name.startsWith("sitemap-") && name.endsWith(".xml")) {
@@ -433,7 +518,6 @@ export async function writeSitemapFiles(rootDir = process.cwd()) {
     }
   }
 
-  const sets = await collectSitemapSets();
   const today = toIsoDate(new Date());
 
   const groups: Array<{ base: string; entries: SitemapUrlEntry[] }> = [
@@ -454,8 +538,11 @@ export async function writeSitemapFiles(rootDir = process.cwd()) {
     if (!group.entries.length) continue;
     const chunks = chunkEntries(group.entries, MAX_URLS_PER_FILE);
     chunks.forEach((entries, idx) => {
+      // Include FILE_REV so GSC treats paths as new after a crawlability fix.
       const name =
-        chunks.length === 1 ? `${group.base}.xml` : `${group.base}-${idx + 1}.xml`;
+        chunks.length === 1
+          ? `${group.base}-${FILE_REV}.xml`
+          : `${group.base}-${FILE_REV}-${idx + 1}.xml`;
       writeFileSync(join(outDir, name), renderUrlset(entries), "utf8");
       const newest = entries.reduce(
         (max, e) => (e.lastmod > max ? e.lastmod : max),
