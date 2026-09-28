@@ -108,56 +108,62 @@ export function DomainTransferForm() {
 
   return (
     <form
-      className="mt-4 space-y-3 rounded-2xl border border-border/70 bg-background/80 p-4"
+      className="mt-4 w-full max-w-2xl space-y-3 rounded-2xl border border-border/70 bg-background/80 p-4 text-left"
       onSubmit={form.handleSubmit((v) => mutation.mutate(v))}
     >
-      <p className="text-sm text-muted-foreground">{t("transferHint")}</p>
+      <p className="text-center text-sm text-muted-foreground sm:text-left">
+        {t("transferHint")}
+      </p>
       <div className="grid gap-3 sm:grid-cols-2">
-        <div>
+        <div className="min-w-0">
           <Label>{t("transferDomain")}</Label>
           <Input {...form.register("domainName")} placeholder="example.com" />
         </div>
-        <div>
+        <div className="min-w-0">
           <Label>{t("transferAuthCode")}</Label>
           <Input {...form.register("authCode")} />
         </div>
-        <div>
+        <div className="min-w-0">
           <Label>{t("firstName")}</Label>
           <Input {...form.register("firstName")} />
         </div>
-        <div>
+        <div className="min-w-0">
           <Label>{t("lastName")}</Label>
           <Input {...form.register("lastName")} />
         </div>
-        <div>
+        <div className="min-w-0">
           <Label>{t("email")}</Label>
           <Input type="email" {...form.register("email")} />
         </div>
-        <div>
+        <div className="min-w-0">
           <Label>{t("phone")}</Label>
           <Input {...form.register("phone")} />
         </div>
-        <div className="sm:col-span-2">
+        <div className="min-w-0 sm:col-span-2">
           <Label>{t("address")}</Label>
           <Input {...form.register("address1")} />
         </div>
-        <div>
+        <div className="min-w-0">
           <Label>{t("city")}</Label>
           <Input {...form.register("city")} />
         </div>
-        <div>
+        <div className="min-w-0">
           <Label>{t("postalCode")}</Label>
           <Input {...form.register("postalCode")} />
         </div>
       </div>
-      <div className="flex flex-wrap gap-2">
-        <Button type="submit" disabled={mutation.isPending} className="rounded-2xl">
+      <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap">
+        <Button
+          type="submit"
+          disabled={mutation.isPending}
+          className="w-full rounded-2xl sm:w-auto"
+        >
           {mutation.isPending ? t("processing") : t("transferPay")}
         </Button>
         <Button
           type="button"
           variant="ghost"
-          className="rounded-2xl"
+          className="w-full rounded-2xl sm:w-auto"
           onClick={() => setOpen(false)}
         >
           {t("registrantCancel")}

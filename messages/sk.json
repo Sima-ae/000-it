@@ -49,7 +49,9 @@
     "score": "Score",
     "agentsActive": "Aktívni agenti",
     "serversOnline": "Servery online",
-    "openChatWithAgent": "Otvorte chat s agentom 000 — Agent 000"
+    "openChatWithAgent": "Otvorte chat s agentom 000 — Agent 000",
+    "introTitleLine1": "Rastiete rýchlejšie s AI a",
+    "introTitleLine2": "TripleZero iT"
   },
   "services": {
     "title": "Služby",
@@ -1444,7 +1446,7 @@
     "metaDescription": "Skontrolujte dostupnosť, plaťte bezpečne a zaregistrujte svoju doménu v TripleZero iT.",
     "heroTitle": "Nájdite a zaregistrujte svoj doménový názov",
     "heroSubtitle": "Okamžitá kontrola dostupnosti, výhodné ceny s DPH, bezpečná platba iDEAL alebo kartou.",
-    "heroSubtitleNote": "Všetky uvedené ceny sú vždy aktuálne a platia pre prvý rok registrácie; cena predĺženia po jednom roku môže byť mierne vyššia alebo nižšia.",
+    "heroSubtitleNote": "Všetky uvedené ceny sú aktuálne a platia pre prvý rok registrácie; cena predĺženia po jednom roku môže byť mierne vyššia alebo nižšia.",
     "placeholder": "Zadajte názov (napr. company alebo company.com)",
     "search": "Skontrolovať",
     "searching": "Hľadám…",

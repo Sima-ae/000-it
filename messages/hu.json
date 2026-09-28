@@ -49,7 +49,9 @@
     "score": "Score",
     "agentsActive": "Aktív ügynökök",
     "serversOnline": "Szerverek online",
-    "openChatWithAgent": "Nyissa meg a csevegést az Agent 000-el"
+    "openChatWithAgent": "Nyissa meg a csevegést az Agent 000-el",
+    "introTitleLine1": "Növekszik gyorsabban az AI és a",
+    "introTitleLine2": "TripleZero iT"
   },
   "services": {
     "title": "Szolgáltatások",
@@ -1444,7 +1446,7 @@
     "metaDescription": "Ellenőrizze az elérhetőséget, fizessen biztonságosan, és regisztrálja domainjét a TripleZero iT segítségével.",
     "heroTitle": "Találja meg és regisztrálja domainnevét",
     "heroSubtitle": "Azonnali elérhetőség-ellenőrzés, kedvező ÁFA-tartalmú árak, biztonságos fizetés iDEAL-lal vagy kártyával.",
-    "heroSubtitleNote": "Minden feltüntetett ár mindig aktuális, és az első regisztrációs évre vonatkozik; az egy év utáni megújítás ára valamivel magasabb vagy alacsonyabb lehet.",
+    "heroSubtitleNote": "Minden feltüntetett ár aktuális, és az első regisztrációs évre vonatkozik; az egy év utáni megújítás ára valamivel magasabb vagy alacsonyabb lehet.",
     "placeholder": "Adjon meg egy nevet (pl. cég vagy company.com)",
     "search": "Ellenőrzés",
     "searching": "Keresés…",

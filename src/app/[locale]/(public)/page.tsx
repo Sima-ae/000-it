@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { GlassCard } from "@/components/marketing/GlassCard";
 import { HomeHeroBanner } from "@/components/marketing/HomeHeroBanner";
-import { HomeIntroSection } from "@/components/marketing/HomeIntroSection";
 import { BrandingCollage } from "@/components/marketing/BrandingCollage";
 import { Reveal } from "@/components/marketing/Reveal";
 import { PricingPlans } from "@/components/marketing/PricingPlans";
@@ -91,29 +90,30 @@ export default async function HomePage({
   return (
     <div className="overflow-x-clip">
       <JsonLd data={organizationJsonLd()} />
-      <HomeHeroBanner />
+      <HomeHeroBanner scanCount={scanCount} />
 
-      <HomeIntroSection scanCount={scanCount} />
-
-      <section className="mx-auto max-w-6xl px-4 pb-8 pt-6 md:px-6 md:pb-10 md:pt-8">
+      <section className="mx-auto w-full max-w-6xl px-4 pt-6 pb-3 sm:px-5 md:px-6 md:pt-10 md:pb-4">
         <Reveal from="up" duration={0.55}>
-          <div className="mx-auto mb-6 max-w-2xl text-center">
-            <h2 className="font-display text-2xl font-semibold tracking-tight text-primary md:text-4xl">
-              {domains("homeTitle")}
+          <div className="mx-auto max-w-3xl text-center md:max-w-none">
+            <h2 className="font-display text-balance text-[1.7rem] font-semibold tracking-tight text-primary sm:text-[2.1rem] md:whitespace-nowrap md:text-[2.5rem]">
+              {domains("heroTitle")}
             </h2>
-            <p className="mt-2 text-sm text-muted-foreground md:text-base">
-              {domains("homeSubtitle")}
+            <p className="-mt-1.5 text-sm text-muted-foreground md:whitespace-nowrap md:text-base">
+              {domains("heroSubtitle")}
             </p>
           </div>
         </Reveal>
         <Reveal from="up" delay={0.05} duration={0.55}>
-          <div className="w-full min-w-0 overflow-hidden rounded-3xl border border-border/70 bg-background/80 p-3 shadow-sm backdrop-blur sm:rounded-[1.75rem] sm:p-5 md:p-6">
-            <DomainSearch />
+          <div className="mx-auto mt-5 w-full min-w-0 overflow-hidden rounded-3xl border border-border/70 bg-background/80 p-3 shadow-sm backdrop-blur sm:mt-6 sm:p-5 md:p-6">
+            <DomainSearch tldGridRows={3} />
           </div>
+          <p className="mx-auto mt-3 w-full text-center text-xs text-muted-foreground sm:text-sm md:whitespace-nowrap">
+            {domains("heroSubtitleNote")}
+          </p>
         </Reveal>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
+      <section className="mx-auto max-w-6xl px-4 pt-10 pb-16 md:px-6 md:pt-12 md:pb-20">
         <Reveal from="up" duration={0.6}>
           <div className="mx-auto mb-10 max-w-2xl text-center">
             <h2 className="font-display text-3xl font-semibold tracking-tight text-primary md:text-5xl">

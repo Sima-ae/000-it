@@ -49,7 +49,9 @@
     "score": "Score",
     "agentsActive": "代理活跃",
     "serversOnline": "服务器在线",
-    "openChatWithAgent": "打开与特工 000 的聊天 — Agent 000"
+    "openChatWithAgent": "打开与特工 000 的聊天 — Agent 000",
+    "introTitleLine1": "借助 AI 和",
+    "introTitleLine2": "TripleZero iT"
   },
   "services": {
     "title": "服务",
@@ -1444,7 +1446,7 @@
     "metaDescription": "检查可用性、安全付款并通过 TripleZero iT 注册您的域名。",
     "heroTitle": "查找并注册您的域名",
     "heroSubtitle": "即时查询可用性，含税优惠标价，并通过 iDEAL 或银行卡安全支付。",
-    "heroSubtitleNote": "所有所示价格始终为最新价，并适用于首年注册；一年后续费价格可能略高或略低。",
+    "heroSubtitleNote": "所有所示价格为最新价，并适用于首年注册；一年后续费价格可能略高或略低。",
     "placeholder": "输入名称（例如company或company.com）",
     "search": "查询",
     "searching": "正在搜索…",

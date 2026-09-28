@@ -49,7 +49,9 @@
     "score": "Score",
     "agentsActive": "Agentit aktiivisia",
     "serversOnline": "Palvelimet verkossa",
-    "openChatWithAgent": "Avaa keskustelu agentin 000 kanssa — Agent 000"
+    "openChatWithAgent": "Avaa keskustelu agentin 000 kanssa — Agent 000",
+    "introTitleLine1": "Kasvata nopeammin tekoälyn",
+    "introTitleLine2": "ja TripleZero iT"
   },
   "services": {
     "title": "Palvelut",
@@ -1444,7 +1446,7 @@
     "metaDescription": "Tarkista saatavuus, maksa turvallisesti ja rekisteröi verkkotunnuksesi TripleZero iT:llä.",
     "heroTitle": "Löydä ja rekisteröi verkkotunnuksesi",
     "heroSubtitle": "Tarkista saatavuus heti, edulliset hinnat sis. ALV, turvallinen maksu iDEALILLA tai kortilla.",
-    "heroSubtitleNote": "Kaikki näytetyt hinnat ovat aina ajan tasalla ja koskevat ensimmäistä rekisteröintivuotta; uusimisen hinta vuoden jälkeen voi olla hieman korkeampi tai matalampi.",
+    "heroSubtitleNote": "Kaikki näytetyt hinnat ovat ajan tasalla ja koskevat ensimmäistä rekisteröintivuotta; uusimisen hinta vuoden jälkeen voi olla hieman korkeampi tai matalampi.",
     "placeholder": "Anna nimi (esim. yritys tai yritys.fi)",
     "search": "Tarkista",
     "searching": "Haetaan…",

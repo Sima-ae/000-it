@@ -49,7 +49,9 @@
     "score": "Score",
     "agentsActive": "Agjentë aktivë",
     "serversOnline": "Serverë në internet",
-    "openChatWithAgent": "Hapni bisedën me agjentin 000 — Agent 000"
+    "openChatWithAgent": "Hapni bisedën me agjentin 000 — Agent 000",
+    "introTitleLine1": "Rriteni më shpejt me AI dhe",
+    "introTitleLine2": "TripleZero iT"
   },
   "services": {
     "title": "Shërbimet",
@@ -1444,7 +1446,7 @@
     "metaDescription": "Kontrolloni disponueshmërinë, paguani në mënyrë të sigurt dhe regjistroni domenin tuaj me TripleZero iT.",
     "heroTitle": "Gjeni dhe regjistroni emrin tuaj të domain-it",
     "heroSubtitle": "Kontrolloni menjëherë disponueshmërinë, çmime konkurruese me TVSH, pagesë të sigurt me iDEAL ose kartë.",
-    "heroSubtitleNote": "Të gjitha çmimet e shfaqura janë gjithmonë të përditësuara dhe vlejnë për vitin e parë të regjistrimit; çmimi i rinovimit pas një viti mund të jetë pak më i lartë ose më i ulët.",
+    "heroSubtitleNote": "Të gjitha çmimet e shfaqura janë të përditësuara dhe vlejnë për vitin e parë të regjistrimit; çmimi i rinovimit pas një viti mund të jetë pak më i lartë ose më i ulët.",
     "placeholder": "Fut një emër (p.sh. kompani ose company.com)",
     "search": "Kontrollo",
     "searching": "Duke kërkuar…",

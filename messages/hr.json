@@ -49,7 +49,9 @@
     "score": "Score",
     "agentsActive": "Agenti aktivni",
     "serversOnline": "Poslužitelji na mreži",
-    "openChatWithAgent": "Otvorite chat s agentom 000 — Agent 000"
+    "openChatWithAgent": "Otvorite chat s agentom 000 — Agent 000",
+    "introTitleLine1": "Rastite brže uz AI i",
+    "introTitleLine2": "TripleZero iT"
   },
   "services": {
     "title": "Usluge",
@@ -1444,7 +1446,7 @@
     "metaDescription": "Provjerite dostupnost, platite sigurno i registrirajte svoju domenu s TripleZero iT.",
     "heroTitle": "Pronađite i registrirajte svoje domena ime",
     "heroSubtitle": "Odmah provjerite dostupnost, povoljne cijene s PDV-om, sigurno plaćanje iDEAL-om ili karticom.",
-    "heroSubtitleNote": "Sve prikazane cijene uvijek su aktualne i vrijede za prvu godinu registracije; cijena produženja nakon jedne godine može biti malo viša ili niža.",
+    "heroSubtitleNote": "Sve prikazane cijene su aktualne i vrijede za prvu godinu registracije; cijena produženja nakon jedne godine može biti malo viša ili niža.",
     "placeholder": "Unesite naziv (npr. tvrtka ili company.com)",
     "search": "Provjeri",
     "searching": "Pretraživanje…",

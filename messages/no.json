@@ -49,7 +49,9 @@
     "score": "Score",
     "agentsActive": "Agenter aktive",
     "serversOnline": "Servere på nettet",
-    "openChatWithAgent": "Åpne chat med Agent 000"
+    "openChatWithAgent": "Åpne chat med Agent 000",
+    "introTitleLine1": "Voks raskere med AI",
+    "introTitleLine2": "og TripleZero iT"
   },
   "services": {
     "title": "Tjenester",
@@ -1444,7 +1446,7 @@
     "metaDescription": "Sjekk tilgjengelighet, betal sikkert og registrer domenet ditt hos TripleZero iT.",
     "heroTitle": "Finn og registrer domenenavnet ditt",
     "heroSubtitle": "Sjekk tilgjengelighet med en gang, skarpe priser inkl. mva, sikker betaling med iDEAL eller kort.",
-    "heroSubtitleNote": "Alle viste priser er alltid aktuelle og gjelder første registreringsår; prisen for fornyelse etter ett år kan være litt høyere eller lavere.",
+    "heroSubtitleNote": "Alle viste priser er aktuelle og gjelder første registreringsår; prisen for fornyelse etter ett år kan være litt høyere eller lavere.",
     "placeholder": "Skriv inn et navn (f.eks. firma eller firma.no)",
     "search": "Sjekk",
     "searching": "Søker…",

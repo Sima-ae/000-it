@@ -49,7 +49,9 @@
     "score": "Score",
     "agentsActive": "Agentlər aktivdir",
     "serversOnline": "Onlayn serverlər",
-    "openChatWithAgent": "Agent 000 ilə söhbəti açın"
+    "openChatWithAgent": "Agent 000 ilə söhbəti açın",
+    "introTitleLine1": "AI və",
+    "introTitleLine2": "TripleZero iT"
   },
   "services": {
     "title": "Xidmətlər",
@@ -1444,7 +1446,7 @@
     "metaDescription": "Mövcudluğu yoxlayın, təhlükəsiz ödəyin və TripleZero iT ilə domeninizi qeydiyyatdan keçirin.",
     "heroTitle": "Domain adınızı tapın və qeydiyyatdan keçirin",
     "heroSubtitle": "Mövcudluğu dərhal yoxlayın, ƏDV daxil əlverişli qiymətlər, iDEAL və ya kartla təhlükəsiz ödəniş.",
-    "heroSubtitleNote": "Göstərilən bütün qiymətlər həmişə aktualdır və ilk qeydiyyat ili üçündür; bir ildən sonra yeniləmə qiyməti bir qədər daha yüksək və ya daha aşağı ola bilər.",
+    "heroSubtitleNote": "Göstərilən bütün qiymətlər aktualdır və ilk qeydiyyat ili üçündür; bir ildən sonra yeniləmə qiyməti bir qədər daha yüksək və ya daha aşağı ola bilər.",
     "placeholder": "Ad daxil edin (məsələn, şirkət və ya company.com)",
     "search": "Yoxla",
     "searching": "Axtarılır…",

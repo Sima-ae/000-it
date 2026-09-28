@@ -49,7 +49,9 @@
     "score": "Score",
     "agentsActive": "Agenter aktiva",
     "serversOnline": "Servrar online",
-    "openChatWithAgent": "Öppna chatt med Agent 000"
+    "openChatWithAgent": "Öppna chatt med Agent 000",
+    "introTitleLine1": "Väx snabbare med AI",
+    "introTitleLine2": "och TripleZero iT"
   },
   "services": {
     "title": "Tjänster",
@@ -1444,7 +1446,7 @@
     "metaDescription": "Kontrollera tillgänglighet, betala säkert och registrera din domän med TripleZero iT.",
     "heroTitle": "Hitta och registrera ditt domännamn",
     "heroSubtitle": "Kontrollera tillgänglighet direkt, skarpa priser inkl. moms, säker betalning med iDEAL eller kort.",
-    "heroSubtitleNote": "Alla visade priser är alltid aktuella och gäller första registreringsåret; priset för förnyelse efter ett år kan vara något högre eller lägre.",
+    "heroSubtitleNote": "Alla visade priser är aktuella och gäller första registreringsåret; priset för förnyelse efter ett år kan vara något högre eller lägre.",
     "placeholder": "Ange ett namn (t.ex. företag eller företag.com)",
     "search": "Kontrollera",
     "searching": "Söker…",

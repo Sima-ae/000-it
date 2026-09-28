@@ -49,7 +49,9 @@
     "score": "Score",
     "agentsActive": "アクティブなエージェント",
     "serversOnline": "オンラインのサーバー",
-    "openChatWithAgent": "エージェント 000 とチャットを開く — Agent 000"
+    "openChatWithAgent": "エージェント 000 とチャットを開く — Agent 000",
+    "introTitleLine1": "AI と",
+    "introTitleLine2": "TripleZero iT"
   },
   "services": {
     "title": "サービス",
@@ -1444,7 +1446,7 @@
     "metaDescription": "空き状況を確認し、安全に支払い、TripleZero iT にドメインを登録します。",
     "heroTitle": "ドメイン名を見つけて登録",
     "heroSubtitle": "空き状況をすぐに確認し、税込のお得な料金で iDEAL またはカードで安全にお支払い。",
-    "heroSubtitleNote": "表示価格は常に最新で、初年度の登録料金です。1年後の更新料金はやや高くなることも安くなることもあります。",
+    "heroSubtitleNote": "表示価格は最新で、初年度の登録料金です。1年後の更新料金はやや高くなることも安くなることもあります。",
     "placeholder": "名前を入力します (例: company または company.com)",
     "search": "確認",
     "searching": "検索中…",

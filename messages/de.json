@@ -49,7 +49,9 @@
     "score": "Score",
     "agentsActive": "Agenten aktiv",
     "serversOnline": "Server online",
-    "openChatWithAgent": "Öffnen Sie den Chat mit Agent 000"
+    "openChatWithAgent": "Öffnen Sie den Chat mit Agent 000",
+    "introTitleLine1": "Wachsen Sie schneller mit KI",
+    "introTitleLine2": "und TripleZero iT"
   },
   "services": {
     "title": "Dienstleistungen",
@@ -1444,7 +1446,7 @@
     "metaDescription": "Verfügbarkeit prüfen, sicher bezahlen und Ihre Domain über TripleZero iT registrieren.",
     "heroTitle": "Finden und registrieren Sie Ihren Domainnamen",
     "heroSubtitle": "Verfügbarkeit sofort prüfen, scharfe Preise inkl. MwSt., sicher zahlen mit iDEAL oder Karte.",
-    "heroSubtitleNote": "Alle angezeigten Preise sind stets aktuell und gelten für das erste Registrierungsjahr; der Preis für die Verlängerung nach einem Jahr kann etwas höher oder niedriger sein.",
+    "heroSubtitleNote": "Alle angezeigten Preise sind aktuell und gelten für das erste Registrierungsjahr; der Preis für die Verlängerung nach einem Jahr kann etwas höher oder niedriger sein.",
     "placeholder": "Namen eingeben (z. B. firma oder firma.de)",
     "search": "Prüfen",
     "searching": "Wird gesucht…",

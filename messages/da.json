@@ -49,7 +49,9 @@
     "score": "Score",
     "agentsActive": "Agenter aktive",
     "serversOnline": "Servere online",
-    "openChatWithAgent": "Åbn chat med Agent 000"
+    "openChatWithAgent": "Åbn chat med Agent 000",
+    "introTitleLine1": "Voks hurtigere med AI",
+    "introTitleLine2": "og TripleZero iT"
   },
   "services": {
     "title": "Tjenester",
@@ -1444,7 +1446,7 @@
     "metaDescription": "Tjek tilgængelighed, betal sikkert og registrer dit domæne med TripleZero iT.",
     "heroTitle": "Find og registrer dit domænenavn",
     "heroSubtitle": "Tjek tilgængelighed med det samme, skarpe priser inkl. moms, sikker betaling med iDEAL eller kort.",
-    "heroSubtitleNote": "Alle viste priser er altid aktuelle og gælder det første registreringsår; prisen for fornyelse efter ét år kan være lidt højere eller lavere.",
+    "heroSubtitleNote": "Alle viste priser er aktuelle og gælder det første registreringsår; prisen for fornyelse efter ét år kan være lidt højere eller lavere.",
     "placeholder": "Indtast et navn (f.eks. virksomhed eller virksomhed.com)",
     "search": "Tjek",
     "searching": "Søger…",

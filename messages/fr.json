@@ -49,7 +49,9 @@
     "score": "Score",
     "agentsActive": "Agents actifs",
     "serversOnline": "Serveurs en ligne",
-    "openChatWithAgent": "Ouvrir le chat avec l'Agent 000"
+    "openChatWithAgent": "Ouvrir le chat avec l'Agent 000",
+    "introTitleLine1": "Développez-vous plus rapidement avec l'IA",
+    "introTitleLine2": "et TripleZero iT"
   },
   "services": {
     "title": "Prestations",
@@ -1444,7 +1446,7 @@
     "metaDescription": "Vérifiez la disponibilité, payez en toute sécurité et enregistrez votre domaine via TripleZero iT.",
     "heroTitle": "Trouvez et enregistrez votre nom de domaine",
     "heroSubtitle": "Vérifiez la disponibilité immédiatement, prix attractifs TTC, paiement sécurisé par iDEAL ou carte.",
-    "heroSubtitleNote": "Tous les prix affichés sont toujours à jour et concernent la première année d’enregistrement ; le prix de renouvellement après un an peut être légèrement plus élevé ou plus bas.",
+    "heroSubtitleNote": "Tous les prix affichés sont à jour et concernent la première année d’enregistrement ; le prix de renouvellement après un an peut être légèrement plus élevé ou plus bas.",
     "placeholder": "Saisissez un nom (ex. entreprise ou entreprise.fr)",
     "search": "Vérifier",
     "searching": "Recherche…",

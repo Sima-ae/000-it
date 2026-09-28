@@ -49,7 +49,9 @@
     "score": "Score",
     "agentsActive": "Agenci aktywni",
     "serversOnline": "Serwery w Internecie",
-    "openChatWithAgent": "Otwórz czat z Agentem 000 — Agent 000"
+    "openChatWithAgent": "Otwórz czat z Agentem 000 — Agent 000",
+    "introTitleLine1": "Rozwijaj się szybciej dzięki sztucznej inteligencji i",
+    "introTitleLine2": "TripleZero iT"
   },
   "services": {
     "title": "Usługi",
@@ -1444,7 +1446,7 @@
     "metaDescription": "Sprawdź dostępność, zapłać bezpiecznie i zarejestruj swoją domenę w TripleZero iT.",
     "heroTitle": "Znajdź i zarejestruj nazwę domeny",
     "heroSubtitle": "Sprawdź dostępność od razu, atrakcyjne ceny z VAT, bezpieczna płatność iDEAL lub kartą.",
-    "heroSubtitleNote": "Wszystkie podane ceny są zawsze aktualne i dotyczą pierwszego roku rejestracji; cena odnowienia po roku może być nieco wyższa lub niższa.",
+    "heroSubtitleNote": "Wszystkie podane ceny są aktualne i dotyczą pierwszego roku rejestracji; cena odnowienia po roku może być nieco wyższa lub niższa.",
     "placeholder": "Wpisz nazwę (np. firma lub firma.com)",
     "search": "Sprawdź",
     "searching": "Wyszukiwanie…",

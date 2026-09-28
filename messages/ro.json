@@ -49,7 +49,9 @@
     "score": "Score",
     "agentsActive": "Agenți activi",
     "serversOnline": "Servere online",
-    "openChatWithAgent": "Deschideți chatul cu agentul 000 — Agent 000"
+    "openChatWithAgent": "Deschideți chatul cu agentul 000 — Agent 000",
+    "introTitleLine1": "Creșteți mai repede cu AI",
+    "introTitleLine2": "și TripleZero iT"
   },
   "services": {
     "title": "Servicii",
@@ -1444,7 +1446,7 @@
     "metaDescription": "Verificați disponibilitatea, plătiți în siguranță și înregistrați-vă domeniul cu TripleZero iT.",
     "heroTitle": "Găsește și înregistrează numele de domeniu",
     "heroSubtitle": "Verifică disponibilitatea instant, prețuri avantajoase cu TVA, plată sigură cu iDEAL sau card.",
-    "heroSubtitleNote": "Toate prețurile afișate sunt întotdeauna actualizate și se aplică primului an de înregistrare; prețul de reînnoire după un an poate fi ușor mai mare sau mai mic.",
+    "heroSubtitleNote": "Toate prețurile afișate sunt actualizate și se aplică primului an de înregistrare; prețul de reînnoire după un an poate fi ușor mai mare sau mai mic.",
     "placeholder": "Introduceți un nume (de exemplu, companie sau companie.com)",
     "search": "Verifică",
     "searching": "Se caută…",

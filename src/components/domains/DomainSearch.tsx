@@ -76,7 +76,7 @@ type CheckResult = {
 
 type CatalogTab = "popular" | "premium" | "all";
 
-const POPULAR_COUNT = 36;
+const POPULAR_COUNT = 40;
 const CHECK_BATCH = 80;
 const PAGE_SIZE = 20;
 
@@ -169,10 +169,16 @@ function DomainPriceDisplay({
   return <span className={className}>{price}</span>;
 }
 
-export function DomainSearch() {
+export function DomainSearch({
+  tldGridRows = 5,
+}: {
+  /** Popular TLD chip rows on desktop (homepage uses 3×8 = 24, domains page keeps 5×8 = 40). */
+  tldGridRows?: 3 | 5;
+}) {
   const t = useTranslations("domainsPage");
   const locale = useLocale();
   const { data: session } = useSession();
+  const popularCount = tldGridRows === 3 ? 24 : POPULAR_COUNT;
   const [catalogTab, setCatalogTab] = useState<CatalogTab>("popular");
   const [selectedTlds, setSelectedTlds] = useState<string[] | null>(null);
   const [showAdvanced, setShowAdvanced] = useState(false);
@@ -235,8 +241,8 @@ export function DomainSearch() {
   }, [products, priceMinCents, priceMaxCents]);
 
   const popularTlds = useMemo(
-    () => pricedProducts.slice(0, POPULAR_COUNT).map((p) => p.tld),
-    [pricedProducts],
+    () => pricedProducts.slice(0, popularCount).map((p) => p.tld),
+    [pricedProducts, popularCount],
   );
 
   const premiumTlds = useMemo(
@@ -751,8 +757,8 @@ export function DomainSearch() {
         </Button>
       </form>
 
-      <div className="flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-border/60 bg-muted/15 px-3 py-2.5">
-        <div className="flex flex-wrap gap-1.5">
+      <div className="flex flex-col gap-2 rounded-2xl border border-border/60 bg-muted/15 px-3 py-2.5 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
+        <div className="flex flex-wrap justify-center gap-1.5 sm:justify-start">
           {(
             [
               ["popular", t("tabPopular")],
@@ -784,7 +790,7 @@ export function DomainSearch() {
             );
           })}
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center justify-center gap-2 sm:justify-end">
           <p className="hidden text-[11px] text-muted-foreground sm:block">
             {summaryParts.join(" · ")}
           </p>
@@ -900,7 +906,7 @@ export function DomainSearch() {
 
               <div className="min-h-0">
                 <div className="mb-2 flex flex-wrap items-center gap-2">
-                  <div className="relative min-w-48 flex-1">
+                  <div className="relative min-w-0 flex-1">
                     <Search className="pointer-events-none absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
                     <Input
                       value={tldQuery}
@@ -981,12 +987,12 @@ export function DomainSearch() {
                                   className={cn(
                                     "rounded-full border px-2.5 py-1 text-[11px] transition",
                                     on
-                                      ? "border-primary bg-primary text-primary-foreground"
-                                      : "border-border bg-background text-muted-foreground hover:border-primary/50",
+                                      ? "border-zinc-600 bg-zinc-600 text-white"
+                                      : "border-border/70 bg-muted/60 text-muted-foreground hover:border-border hover:bg-muted hover:text-foreground",
                                   )}
                                 >
-                                  .{p.tld}
-                                  <span className="ml-1 opacity-80">
+                                  <span className="font-bold">.{p.tld}</span>
+                                  <span className="ml-1 font-normal opacity-80">
                                     {p.onOffer && p.listPriceLabel ? (
                                       <>
                                         <span className="line-through opacity-70">
@@ -1021,14 +1027,14 @@ export function DomainSearch() {
       </AnimatePresence>
 
       {!showAdvanced && products.length ? (
-        <div className="grid w-full grid-cols-3 gap-1.5 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-9 xl:grid-cols-12">
+        <div className="grid w-full grid-cols-2 gap-1.5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
           {(catalogTab === "premium"
             ? pricedProducts
                 .filter((p) => isPremiumTld(p.priceInCents))
                 .slice(0, 24)
             : catalogTab === "all"
               ? pricedProducts.slice(0, 24)
-              : pricedProducts.slice(0, POPULAR_COUNT)
+              : pricedProducts.slice(0, popularCount)
           ).map((p) => {
             const on = activeTlds.includes(p.tld);
             return (
@@ -1054,23 +1060,27 @@ export function DomainSearch() {
                     : "",
                 })}
                 className={cn(
-                  "w-full truncate rounded-full border px-1.5 py-1 text-center text-[10px] leading-tight transition sm:px-2 sm:text-[11px]",
+                  "w-full whitespace-nowrap rounded-full border px-2 py-1 text-center text-[10px] leading-tight transition sm:px-2.5 sm:text-[11px]",
                   on
-                    ? "border-primary bg-primary text-primary-foreground"
-                    : "border-border bg-background text-muted-foreground hover:border-primary/50",
+                    ? "border-zinc-600 bg-zinc-600 text-white"
+                    : "border-border/70 bg-muted/60 text-muted-foreground hover:border-border hover:bg-muted hover:text-foreground",
                 )}
               >
-                .{p.tld} ·{" "}
-                {p.onOffer && p.listPriceLabel ? (
-                  <>
-                    <span className="line-through opacity-70">
-                      {p.listPriceLabel}
-                    </span>{" "}
-                    <span className="font-semibold">{p.priceLabel}</span>
-                  </>
-                ) : (
-                  p.priceLabel
-                )}
+                <span className="font-bold">.{p.tld}</span>
+                <span className="font-normal">
+                  {" "}
+                  ·{" "}
+                  {p.onOffer && p.listPriceLabel ? (
+                    <>
+                      <span className="line-through opacity-70">
+                        {p.listPriceLabel}
+                      </span>{" "}
+                      <span className="font-semibold">{p.priceLabel}</span>
+                    </>
+                  ) : (
+                    p.priceLabel
+                  )}
+                </span>
               </button>
             );
           })}
@@ -1079,7 +1089,7 @@ export function DomainSearch() {
             <button
               type="button"
               onClick={() => setShowAdvanced(true)}
-              className="w-full truncate rounded-full border border-dashed border-border px-1.5 py-1 text-center text-[10px] text-muted-foreground hover:border-accent hover:text-accent sm:px-2 sm:text-[11px]"
+              className="w-full whitespace-nowrap rounded-full border border-dashed border-border px-2 py-1 text-center text-[10px] text-muted-foreground hover:border-accent hover:text-accent sm:px-2.5 sm:text-[11px]"
             >
               +
               {(catalogTab === "premium"

@@ -49,7 +49,9 @@
     "score": "Score",
     "agentsActive": "סוכנים פעילים",
     "serversOnline": "שרתים מקוונים",
-    "openChatWithAgent": "פתח צ'אט עם סוכן 000 — Agent 000"
+    "openChatWithAgent": "פתח צ'אט עם סוכן 000 — Agent 000",
+    "introTitleLine1": "גדל מהר יותר עם AI ו-",
+    "introTitleLine2": "TripleZero iT"
   },
   "services": {
     "title": "שירותים",
@@ -1444,7 +1446,7 @@
     "metaDescription": "בדוק זמינות, שלם בצורה מאובטחת ורשום את הדומיין שלך עם TripleZero iT.",
     "heroTitle": "מצאו ורשמו את שם הדומיין שלכם",
     "heroSubtitle": "בדיקת זמינות מיידית, מחירים תחרותיים כולל מע״מ, ותשלום מאובטח ב‑iDEAL או בכרטיס.",
-    "heroSubtitleNote": "כל המחירים המוצגים תמיד מעודכנים וחלים על שנת הרישום הראשונה; מחיר החידוש לאחר שנה עשוי להיות גבוה או נמוך מעט יותר.",
+    "heroSubtitleNote": "כל המחירים המוצגים מעודכנים וחלים על שנת הרישום הראשונה; מחיר החידוש לאחר שנה עשוי להיות גבוה או נמוך מעט יותר.",
     "placeholder": "הזן שם (למשל חברה או company.com)",
     "search": "בדיקה",
     "searching": "מחפש…",

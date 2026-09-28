@@ -49,7 +49,9 @@
     "score": "Score",
     "agentsActive": "Temsilciler etkin",
     "serversOnline": "Çevrimiçi sunucular",
-    "openChatWithAgent": "Agent 000 ile sohbeti aç"
+    "openChatWithAgent": "Agent 000 ile sohbeti aç",
+    "introTitleLine1": "Yapay Zeka",
+    "introTitleLine2": "ve TripleZero iT"
   },
   "services": {
     "title": "Hizmetler",
@@ -1444,7 +1446,7 @@
     "metaDescription": "Müsaitliği kontrol edin, güvenli bir şekilde ödeme yapın ve alan adınızı TripleZero iT'ye kaydedin.",
     "heroTitle": "Alan adınızı bulun ve kaydedin",
     "heroSubtitle": "Anında müsaitlik kontrolü, KDV dahil avantajlı fiyatlar, iDEAL veya kartla güvenli ödeme.",
-    "heroSubtitleNote": "Gösterilen tüm fiyatlar her zaman günceldir ve ilk kayıt yılı içindir; bir yıl sonraki yenileme fiyatı biraz daha yüksek veya daha düşük olabilir.",
+    "heroSubtitleNote": "Gösterilen tüm fiyatlar günceldir ve ilk kayıt yılı içindir; bir yıl sonraki yenileme fiyatı biraz daha yüksek veya daha düşük olabilir.",
     "placeholder": "Bir ad girin (ör. şirket veya şirket.com)",
     "search": "Kontrol et",
     "searching": "Aranıyor…",

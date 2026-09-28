@@ -49,7 +49,9 @@
     "score": "Score",
     "agentsActive": "Agentai aktyvūs",
     "serversOnline": "Serveriai internete",
-    "openChatWithAgent": "Atidarykite pokalbį su agentu 000 — Agent 000"
+    "openChatWithAgent": "Atidarykite pokalbį su agentu 000 — Agent 000",
+    "introTitleLine1": "Greičiau augkite naudodami AI ir",
+    "introTitleLine2": "TripleZero iT"
   },
   "services": {
     "title": "Paslaugos",
@@ -1444,7 +1446,7 @@
     "metaDescription": "Patikrinkite prieinamumą, mokėkite saugiai ir užregistruokite savo domeną naudodami „TripleZero iT“.",
     "heroTitle": "Raskite ir užregistruokite domeno vardą",
     "heroSubtitle": "Iškart patikrinkite prieinamumą, patrauklios kainos su PVM, saugus mokėjimas iDEAL arba kortele.",
-    "heroSubtitleNote": "Visos rodomos kainos visada aktualios ir taikomos pirmaisiais registracijos metais; pratęsimo kaina po vienerių metų gali būti šiek tiek didesnė arba mažesnė.",
+    "heroSubtitleNote": "Visos rodomos kainos aktualios ir taikomos pirmaisiais registracijos metais; pratęsimo kaina po vienerių metų gali būti šiek tiek didesnė arba mažesnė.",
     "placeholder": "Įveskite pavadinimą (pvz., įmonė arba įmonė.com)",
     "search": "Tikrinti",
     "searching": "Ieškoma…",

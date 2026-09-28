@@ -49,7 +49,9 @@
     "score": "Score",
     "agentsActive": "Agents active",
     "serversOnline": "Servers online",
-    "openChatWithAgent": "Open chat with Agent 000"
+    "openChatWithAgent": "Open chat with Agent 000",
+    "introTitleLine1": "Grow faster with AI",
+    "introTitleLine2": "and TripleZero iT"
   },
   "services": {
     "title": "Services",
@@ -1444,7 +1446,7 @@
     "metaDescription": "Check availability, pay securely and register your domain with TripleZero iT.",
     "heroTitle": "Find and register your domain name",
     "heroSubtitle": "Check availability instantly, sharp VAT-inclusive prices, and pay securely with iDEAL or card.",
-    "heroSubtitleNote": "All shown prices are always up to date and apply to the first registration year; the renewal price after one year may be slightly higher or lower.",
+    "heroSubtitleNote": "All shown prices are current and apply to the first registration year; the renewal price after one year may be slightly higher or lower.",
     "placeholder": "Enter a name (e.g. company or company.com)",
     "search": "Check",
     "searching": "Searching…",

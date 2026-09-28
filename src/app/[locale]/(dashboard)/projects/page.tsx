@@ -204,7 +204,7 @@ export default function ProjectsPage() {
                     className="h-36 w-full object-cover"
                   />
                 ) : (
-                  <div className="flex h-28 items-center justify-center bg-gradient-to-br from-primary/10 via-muted to-accent/10">
+                  <div className="flex h-28 items-center justify-center bg-linear-to-br from-primary/10 via-muted to-accent/10">
                     <FolderKanban className="h-8 w-8 text-primary/50" />
                   </div>
                 )}

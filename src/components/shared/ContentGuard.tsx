@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
+import { useSession } from "next-auth/react";
+import { isSuperAdmin } from "@/lib/roles";
 
 type Popup = {
   x: number;
@@ -12,9 +14,12 @@ type Popup = {
 /**
  * Soft client-side content guard: blocks common right-click / copy / view-source
  * shortcuts and shows a branded copyright popup on context menu.
+ * Logged-in SUPER_ADMIN may copy and use the native context menu.
  * Not a security boundary — only UX friction.
  */
 export function ContentGuard() {
+  const { data: session, status } = useSession();
+  const allowCopy = status === "authenticated" && isSuperAdmin(session?.user?.role);
   const [popup, setPopup] = useState<Popup>(null);
   const [mounted, setMounted] = useState(false);
 
@@ -23,6 +28,11 @@ export function ContentGuard() {
   }, []);
 
   useEffect(() => {
+    if (allowCopy) {
+      setPopup(null);
+      return;
+    }
+
     function hidePopup() {
       setPopup(null);
     }
@@ -83,7 +93,11 @@ export function ContentGuard() {
 
       if (meta && (key === "c" || key === "x" || key === "a")) {
         const tag = (event.target as HTMLElement | null)?.tagName;
-        if (tag === "INPUT" || tag === "TEXTAREA" || (event.target as HTMLElement)?.isContentEditable) {
+        if (
+          tag === "INPUT" ||
+          tag === "TEXTAREA" ||
+          (event.target as HTMLElement)?.isContentEditable
+        ) {
           return;
         }
         event.preventDefault();
@@ -111,7 +125,7 @@ export function ContentGuard() {
       window.removeEventListener("scroll", hidePopup);
       window.removeEventListener("resize", hidePopup);
     };
-  }, []);
+  }, [allowCopy]);
 
   useEffect(() => {
     if (!popup) return;
@@ -119,7 +133,7 @@ export function ContentGuard() {
     return () => window.clearTimeout(timer);
   }, [popup]);
 
-  if (!mounted || !popup) return null;
+  if (allowCopy || !mounted || !popup) return null;
 
   return createPortal(
     <div className="z-100" role="status" aria-live="polite">
