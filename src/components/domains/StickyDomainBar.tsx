@@ -6,7 +6,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { localizedHref } from "@/i18n/pathnames";
 
-const SHOW_AFTER_MOBILE_PX = 300;
+const SHOW_AFTER_MOBILE_PX = 600;
 const SHOW_AFTER_DESKTOP_PX = 750;
 const MOBILE_MQ = "(max-width: 767px)";
 const OFFSET_VAR = "--tz-sticky-domain-offset";
