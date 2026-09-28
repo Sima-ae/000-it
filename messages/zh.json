@@ -1728,5 +1728,11 @@
     "partiallyDegradedService": "服务部分降级",
     "partialSystemOutage": "系统部分中断",
     "majorSystemOutage": "系统严重中断"
+  },
+  "stickyDomainBar": {
+    "prompt": "检查您的域名是否仍然可用",
+    "placeholder": "输入您想要的域名...",
+    "check": "查询",
+    "ariaLabel": "域名可用性搜索"
   }
 }

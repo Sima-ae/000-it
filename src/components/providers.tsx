@@ -16,6 +16,12 @@ const LiveChatWidget = dynamic(
   { ssr: false },
 );
 
+const StickyDomainBar = dynamic(
+  () =>
+    import("@/components/domains/StickyDomainBar").then((m) => m.StickyDomainBar),
+  { ssr: false },
+);
+
 function ThemedToaster() {
   const { resolvedTheme } = useTheme();
   return (
@@ -46,6 +52,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
           </Suspense>
           <PrefetchPublicRoutes />
           {children}
+          <StickyDomainBar />
           <LiveChatWidget />
           <ThemedToaster />
         </QueryClientProvider>

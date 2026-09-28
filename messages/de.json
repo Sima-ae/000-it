@@ -1728,5 +1728,11 @@
     "partiallyDegradedService": "Teilweise eingeschränkter Service",
     "partialSystemOutage": "Teilweiser Systemausfall",
     "majorSystemOutage": "Schwerer Systemausfall"
+  },
+  "stickyDomainBar": {
+    "prompt": "Prüfe, ob dein Domainname noch frei ist",
+    "placeholder": "Gib deinen gewünschten Domainnamen ein...",
+    "check": "Prüfen",
+    "ariaLabel": "Domain-Verfügbarkeit prüfen"
   }
 }

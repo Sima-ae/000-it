@@ -1728,5 +1728,11 @@
     "partiallyDegradedService": "Częściowo obniżona wydajność",
     "partialSystemOutage": "Częściowa awaria systemu",
     "majorSystemOutage": "Poważna awaria systemu"
+  },
+  "stickyDomainBar": {
+    "prompt": "Sprawdź, czy Twoja nazwa domeny jest jeszcze wolna",
+    "placeholder": "Wpisz żądaną nazwę domeny...",
+    "check": "Sprawdź",
+    "ariaLabel": "Wyszukiwanie dostępności domeny"
   }
 }

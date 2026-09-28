@@ -1728,5 +1728,11 @@
     "partiallyDegradedService": "خدمة متدهورة جزئيًا",
     "partialSystemOutage": "انقطاع جزئي للنظام",
     "majorSystemOutage": "انقطاع كبير للنظام"
+  },
+  "stickyDomainBar": {
+    "prompt": "تحقق مما إذا كان اسم نطاقك لا يزال متاحًا",
+    "placeholder": "اكتب اسم النطاق المطلوب...",
+    "check": "تحقق",
+    "ariaLabel": "البحث عن توفر النطاق"
   }
 }

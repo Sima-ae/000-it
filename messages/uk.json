@@ -1728,5 +1728,11 @@
     "partiallyDegradedService": "Частково знижена продуктивність",
     "partialSystemOutage": "Частковий збій системи",
     "majorSystemOutage": "Серйозний збій системи"
+  },
+  "stickyDomainBar": {
+    "prompt": "Перевірте, чи ваше доменне ім’я ще вільне",
+    "placeholder": "Введіть бажане доменне ім’я...",
+    "check": "Перевірити",
+    "ariaLabel": "Пошук доступності домену"
   }
 }

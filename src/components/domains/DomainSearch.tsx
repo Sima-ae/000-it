@@ -178,6 +178,7 @@ export function DomainSearch({
   const t = useTranslations("domainsPage");
   const locale = useLocale();
   const { data: session } = useSession();
+  const bootstrappedQuery = useRef(false);
   const popularCount = tldGridRows === 3 ? 24 : POPULAR_COUNT;
   const [catalogTab, setCatalogTab] = useState<CatalogTab>("popular");
   const [selectedTlds, setSelectedTlds] = useState<string[] | null>(null);
@@ -501,6 +502,40 @@ export function DomainSearch({
       }
     }
   }
+
+  /** Sticky domain bar / deep links: /domeinen?q=example */
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const applyQuery = (raw: string | null) => {
+      const cleaned = (raw || "")
+        .trim()
+        .toLowerCase()
+        .replace(/^https?:\/\//i, "")
+        .replace(/^www\./i, "")
+        .replace(/\/.*$/, "");
+      if (!cleaned) return;
+      if (
+        bootstrappedQuery.current &&
+        searchForm.getValues("query")?.toLowerCase() === cleaned
+      ) {
+        return;
+      }
+      bootstrappedQuery.current = true;
+      searchForm.setValue("query", cleaned);
+      if (searchSchema.safeParse({ query: cleaned }).success) {
+        void runSearch(cleaned);
+      }
+    };
+
+    applyQuery(new URLSearchParams(window.location.search).get("q"));
+
+    const onPop = () =>
+      applyQuery(new URLSearchParams(window.location.search).get("q"));
+    window.addEventListener("popstate", onPop);
+    return () => window.removeEventListener("popstate", onPop);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- URL bootstrap + back/forward
+  }, []);
 
   /** Typing a different query cancels the previous scan and clears stale results. */
   function onQueryChange(value: string) {

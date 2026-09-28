@@ -4733,143 +4733,178 @@
   "labels": {
     "en": {
       "perMonth": "/ month",
-      "hostingCategory": "Hosting"
+      "hostingCategory": "Hosting",
+      "description": "Description"
     },
     "nl": {
       "perMonth": "/ maand",
-      "hostingCategory": "Hosting"
+      "hostingCategory": "Hosting",
+      "description": "Omschrijving"
     },
     "fr": {
       "perMonth": "/ mois",
-      "hostingCategory": "Hébergement"
+      "hostingCategory": "Hébergement",
+      "description": "Description"
     },
     "de": {
       "perMonth": "/ Monat",
-      "hostingCategory": "Hosting"
+      "hostingCategory": "Hosting",
+      "description": "Beschreibung"
     },
     "es": {
       "perMonth": "/ mes",
-      "hostingCategory": "Hosting"
+      "hostingCategory": "Hosting",
+      "description": "Descripción"
     },
     "pt": {
       "perMonth": "/ mês",
-      "hostingCategory": "Hospedagem"
+      "hostingCategory": "Hospedagem",
+      "description": "Descrição"
     },
     "it": {
       "perMonth": "/ mese",
-      "hostingCategory": "Hosting"
+      "hostingCategory": "Hosting",
+      "description": "Descrizione"
     },
     "el": {
       "perMonth": "/ μήνα",
-      "hostingCategory": "Φιλοξενία"
+      "hostingCategory": "Φιλοξενία",
+      "description": "Περιγραφή"
     },
     "pl": {
       "perMonth": "/ miesiąc",
-      "hostingCategory": "Hosting"
+      "hostingCategory": "Hosting",
+      "description": "Opis"
     },
     "cs": {
       "perMonth": "/ měsíc",
-      "hostingCategory": "Hosting"
+      "hostingCategory": "Hosting",
+      "description": "Popis"
     },
     "sk": {
       "perMonth": "/ mesiac",
-      "hostingCategory": "Hosting"
+      "hostingCategory": "Hosting",
+      "description": "Popis"
     },
     "hu": {
       "perMonth": "/ hónap",
-      "hostingCategory": "Hosting"
+      "hostingCategory": "Hosting",
+      "description": "Leírás"
     },
     "ro": {
       "perMonth": "/luna",
-      "hostingCategory": "Găzduire"
+      "hostingCategory": "Găzduire",
+      "description": "Descriere"
     },
     "bg": {
       "perMonth": "/ месец",
-      "hostingCategory": "Хостинг"
+      "hostingCategory": "Хостинг",
+      "description": "Описание"
     },
     "hr": {
       "perMonth": "/ mjesecu",
-      "hostingCategory": "Hosting"
+      "hostingCategory": "Hosting",
+      "description": "Opis"
     },
     "sr": {
       "perMonth": "/ месец",
-      "hostingCategory": "Хостинг"
+      "hostingCategory": "Хостинг",
+      "description": "Опис"
     },
     "bs": {
       "perMonth": "/ mjesec",
-      "hostingCategory": "Hosting"
+      "hostingCategory": "Hosting",
+      "description": "Opis"
     },
     "cnr": {
       "perMonth": "/ месец",
-      "hostingCategory": "Hosting"
+      "hostingCategory": "Hosting",
+      "description": "Опис"
     },
     "sq": {
       "perMonth": "/ muaj",
-      "hostingCategory": "Hosting"
+      "hostingCategory": "Hosting",
+      "description": "Përshkrimi"
     },
     "mk": {
       "perMonth": "/ месец",
-      "hostingCategory": "Хостинг"
+      "hostingCategory": "Хостинг",
+      "description": "Опис"
     },
     "lt": {
       "perMonth": "/ mėn",
-      "hostingCategory": "Hostingas"
+      "hostingCategory": "Hostingas",
+      "description": "Aprašymas"
     },
     "da": {
       "perMonth": "/ måned",
-      "hostingCategory": "Hosting"
+      "hostingCategory": "Hosting",
+      "description": "Beskrivelse"
     },
     "sv": {
       "perMonth": "/ månad",
-      "hostingCategory": "Hosting"
+      "hostingCategory": "Hosting",
+      "description": "Beskrivning"
     },
     "no": {
       "perMonth": "/ måned",
-      "hostingCategory": "Hosting"
+      "hostingCategory": "Hosting",
+      "description": "Beskrivelse"
     },
     "fi": {
       "perMonth": "/ kuukausi",
-      "hostingCategory": "Hosting"
+      "hostingCategory": "Hosting",
+      "description": "Kuvaus"
     },
     "uk": {
       "perMonth": "/ місяць",
-      "hostingCategory": "Хостинг"
+      "hostingCategory": "Хостинг",
+      "description": "Опис"
     },
     "ru": {
       "perMonth": "/ месяц",
-      "hostingCategory": "Хостинг"
+      "hostingCategory": "Хостинг",
+      "description": "Описание"
     },
     "tr": {
       "perMonth": "/ ay",
-      "hostingCategory": "Hosting"
+      "hostingCategory": "Hosting",
+      "description": "Açıklama"
     },
     "he": {
       "perMonth": "/ חודש",
-      "hostingCategory": "אחסון"
+      "hostingCategory": "אחסון",
+      "description": "תיאור"
     },
     "ar": {
       "perMonth": "/ شهر",
-      "hostingCategory": "استضافة"
+      "hostingCategory": "استضافة",
+      "description": "الوصف"
     },
     "ka": {
       "perMonth": "/ თვე",
-      "hostingCategory": "ჰოსტინგი"
+      "hostingCategory": "ჰოსტინგი",
+      "description": "აღწერა"
     },
     "hy": {
       "perMonth": "/ ամիս",
-      "hostingCategory": "Հոստինգ"
+      "hostingCategory": "Հոստինգ",
+      "description": "Նկարագրություն"
     },
     "az": {
       "perMonth": "/ ay",
-      "hostingCategory": "Hostinq"
+      "hostingCategory": "Hostinq",
+      "description": "Təsvir"
     },
     "zh": {
       "perMonth": "/ 月",
-      "hostingCategory": "托管"
+      "hostingCategory": "托管",
+      "description": "描述"
     },
     "ja": {
       "perMonth": "/ 月",
-      "hostingCategory": "ホスティング"
+      "hostingCategory": "ホスティング",
+      "description": "説明"
     }
   },
   "groupSummaries": {

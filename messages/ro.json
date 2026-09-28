@@ -1728,5 +1728,11 @@
     "partiallyDegradedService": "Serviciu parțial degradat",
     "partialSystemOutage": "Întrerupere parțială a sistemului",
     "majorSystemOutage": "Întrerupere majoră a sistemului"
+  },
+  "stickyDomainBar": {
+    "prompt": "Verifică dacă numele tău de domeniu este încă liber",
+    "placeholder": "Tastează numele de domeniu dorit...",
+    "check": "Verifică",
+    "ariaLabel": "Căutare disponibilitate domeniu"
   }
 }

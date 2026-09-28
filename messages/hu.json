@@ -1728,5 +1728,11 @@
     "partiallyDegradedService": "Részlegesen csökkent teljesítmény",
     "partialSystemOutage": "Részleges rendszerkimaradás",
     "majorSystemOutage": "Súlyos rendszerkimaradás"
+  },
+  "stickyDomainBar": {
+    "prompt": "Ellenőrizd, hogy a domainneved még szabad-e",
+    "placeholder": "Írd be a kívánt domainnevet...",
+    "check": "Ellenőrzés",
+    "ariaLabel": "Domain elérhetőség keresése"
   }
 }

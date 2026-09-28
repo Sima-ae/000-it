@@ -1728,5 +1728,11 @@
     "typeREGISTRATION": "Registration",
     "typeRENEWAL": "Renewal",
     "typeTRANSFER": "Transfer"
+  },
+  "stickyDomainBar": {
+    "prompt": "Check if your domain name is still available",
+    "placeholder": "Type your desired domain name...",
+    "check": "Check",
+    "ariaLabel": "Domain availability search"
   }
 }

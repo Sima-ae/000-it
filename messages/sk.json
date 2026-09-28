@@ -1728,5 +1728,11 @@
     "partiallyDegradedService": "Čiastočne znížený výkon",
     "partialSystemOutage": "Čiastočný výpadok systému",
     "majorSystemOutage": "Závažný výpadok systému"
+  },
+  "stickyDomainBar": {
+    "prompt": "Skontrolujte, či je vaše doménové meno ešte voľné",
+    "placeholder": "Zadajte požadované doménové meno...",
+    "check": "Skontrolovať",
+    "ariaLabel": "Vyhľadávanie dostupnosti domény"
   }
 }

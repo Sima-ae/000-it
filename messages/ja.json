@@ -1728,5 +1728,11 @@
     "partiallyDegradedService": "サービスが部分的に低下しています",
     "partialSystemOutage": "システムの部分的な障害",
     "majorSystemOutage": "システムの重大な障害"
+  },
+  "stickyDomainBar": {
+    "prompt": "ドメイン名がまだ空いているか確認する",
+    "placeholder": "希望のドメイン名を入力...",
+    "check": "確認",
+    "ariaLabel": "ドメイン空き状況の検索"
   }
 }

@@ -1728,5 +1728,11 @@
     "partiallyDegradedService": "שירות מושפל חלקית",
     "partialSystemOutage": "השבתה חלקית של המערכת",
     "majorSystemOutage": "השבתה גדולה של המערכת"
+  },
+  "stickyDomainBar": {
+    "prompt": "בדקו אם שם הדומיין שלכם עדיין פנוי",
+    "placeholder": "הקלידו את שם הדומיין הרצוי...",
+    "check": "בדיקה",
+    "ariaLabel": "חיפוש זמינות דומיין"
   }
 }

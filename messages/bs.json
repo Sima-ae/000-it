@@ -1728,5 +1728,11 @@
     "partiallyDegradedService": "Djelimično smanjene performanse",
     "partialSystemOutage": "Djelimični prekid sistema",
     "majorSystemOutage": "Veliki prekid sistema"
+  },
+  "stickyDomainBar": {
+    "prompt": "Provjerite je li vaše ime domene još slobodno",
+    "placeholder": "Upišite željeno ime domene...",
+    "check": "Provjeri",
+    "ariaLabel": "Pretraga dostupnosti domene"
   }
 }

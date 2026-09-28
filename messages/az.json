@@ -1728,5 +1728,11 @@
     "partiallyDegradedService": "Qismən azalmış xidmət",
     "partialSystemOutage": "Qismən sistem nasazlığı",
     "majorSystemOutage": "Böyük sistem nasazlığı"
+  },
+  "stickyDomainBar": {
+    "prompt": "Domen adınızın hələ də boş olub-olmadığını yoxlayın",
+    "placeholder": "İstədiyiniz domen adını yazın...",
+    "check": "Yoxla",
+    "ariaLabel": "Domen əlçatanlığı axtarışı"
   }
 }

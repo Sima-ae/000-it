@@ -1728,5 +1728,11 @@
     "typeREGISTRATION": "Registratie",
     "typeRENEWAL": "Verlenging",
     "typeTRANSFER": "Verhuizing"
+  },
+  "stickyDomainBar": {
+    "prompt": "Check of jouw domeinnaam nog vrij is",
+    "placeholder": "Typ je gewenste domeinnaam...",
+    "check": "Check",
+    "ariaLabel": "Domeinnaam beschikbaarheid zoeken"
   }
 }

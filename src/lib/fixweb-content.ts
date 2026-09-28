@@ -174,18 +174,18 @@ function shopCatalogOverlay(slug: string, locale: string) {
   const shortDescription = brandify(localized.localizedShort || "");
   const description = brandify(localized.localizedDescription || "");
   const features = productFeatures(shortDescription);
-  const planHeading = locale === "nl" ? "Planhighlights" : "Plan highlights";
-  const descriptionBlocks = textToBlocks(description || shortDescription, {
+  const planHeading = catalogUiLabel(
+    "description",
+    locale,
+    locale === "nl" ? "Omschrijving" : "Description",
+  );
+  // Specs stay in the hero (features); body is description text only.
+  const descriptionBlocks = textToBlocks(description, {
     maxBlocks: 12,
   });
-  const blocks: ContentBlock[] =
-    features.length >= 2
-      ? [
-          { type: "heading", text: planHeading },
-          { type: "list", items: features },
-          ...descriptionBlocks,
-        ]
-      : descriptionBlocks;
+  const blocks: ContentBlock[] = descriptionBlocks.length
+    ? [{ type: "heading", text: planHeading }, ...descriptionBlocks]
+    : [];
 
   return {
     title: brandify(localized.localizedName),
@@ -235,15 +235,15 @@ export function getImportedProduct(
     ? textToBlocks(descriptionSource, { maxBlocks: 8 })
     : textToBlocks(descriptionSource);
 
-  const planHeading = locale === "nl" ? "Planhighlights" : "Plan highlights";
-  const blocks: ContentBlock[] =
-    features.length >= 2
-      ? [
-          { type: "heading", text: planHeading },
-          { type: "list", items: features },
-          ...descriptionBlocks,
-        ]
-      : descriptionBlocks;
+  const planHeading = catalogUiLabel(
+    "description",
+    locale,
+    locale === "nl" ? "Omschrijving" : "Description",
+  );
+  // Specs are shown with price at the top — do not repeat them under Description.
+  const blocks: ContentBlock[] = descriptionBlocks.length
+    ? [{ type: "heading", text: planHeading }, ...descriptionBlocks]
+    : [];
 
   return {
     ...product,
@@ -294,7 +294,11 @@ function firstRawSnippet(raw: string, fallback = "") {
   const cleaned = brandify(raw || "")
     .split(/\n+/)
     .map((line) => line.replace(/^[-–•]\s*/, "").trim())
-    .find((line) => line.length > 20 && !/^plan highlights$/i.test(line));
+    .find(
+      (line) =>
+        line.length > 20 &&
+        !/^(plan\s*highlights|omschrijving|description)$/i.test(line),
+    );
   if (!cleaned) return fallback;
   return cleaned.length > 220 ? `${cleaned.slice(0, 217)}…` : cleaned;
 }

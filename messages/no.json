@@ -1728,5 +1728,11 @@
     "partiallyDegradedService": "Delvis redusert ytelse",
     "partialSystemOutage": "Delvis systemavbrudd",
     "majorSystemOutage": "Stort systemavbrudd"
+  },
+  "stickyDomainBar": {
+    "prompt": "Sjekk om domenenavnet ditt fortsatt er ledig",
+    "placeholder": "Skriv inn ønsket domenenavn...",
+    "check": "Sjekk",
+    "ariaLabel": "Søk etter domene-tilgjengelighet"
   }
 }

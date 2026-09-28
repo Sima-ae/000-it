@@ -1728,5 +1728,11 @@
     "partiallyDegradedService": "Iš dalies sumažintas našumas",
     "partialSystemOutage": "Dalinis sistemos gedimas",
     "majorSystemOutage": "Didelis sistemos gedimas"
+  },
+  "stickyDomainBar": {
+    "prompt": "Patikrinkite, ar jūsų domeno vardas dar laisvas",
+    "placeholder": "Įveskite norimą domeno vardą...",
+    "check": "Tikrinti",
+    "ariaLabel": "Domeno prieinamumo paieška"
   }
 }

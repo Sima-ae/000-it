@@ -1728,5 +1728,11 @@
     "partiallyDegradedService": "Servizio parzialmente degradato",
     "partialSystemOutage": "Interruzione parziale del sistema",
     "majorSystemOutage": "Interruzione maggiore del sistema"
+  },
+  "stickyDomainBar": {
+    "prompt": "Controlla se il tuo nome di dominio è ancora libero",
+    "placeholder": "Digita il nome di dominio desiderato...",
+    "check": "Controlla",
+    "ariaLabel": "Ricerca disponibilità dominio"
   }
 }

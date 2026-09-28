@@ -1728,5 +1728,11 @@
     "partiallyDegradedService": "Частично понижена производителност",
     "partialSystemOutage": "Частичен системен срив",
     "majorSystemOutage": "Голям системен срив"
+  },
+  "stickyDomainBar": {
+    "prompt": "Проверете дали вашето домейн име е още свободно",
+    "placeholder": "Въведете желаното домейн име...",
+    "check": "Провери",
+    "ariaLabel": "Търсене на наличност на домейн"
   }
 }

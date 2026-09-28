@@ -1728,5 +1728,11 @@
     "partiallyDegradedService": "Osittain heikentynyt palvelu",
     "partialSystemOutage": "Osittainen järjestelmähäiriö",
     "majorSystemOutage": "Vakava järjestelmähäiriö"
+  },
+  "stickyDomainBar": {
+    "prompt": "Tarkista, onko verkkotunnuksesi vielä vapaa",
+    "placeholder": "Kirjoita haluamasi verkkotunnus...",
+    "check": "Tarkista",
+    "ariaLabel": "Verkkotunnuksen saatavuuden haku"
   }
 }

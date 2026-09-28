@@ -37,6 +37,7 @@ export default async function DomainsPage({
 }: {
   params: Promise<{ locale: string }>;
   searchParams: Promise<{
+    q?: string;
     success?: string;
     canceled?: string;
     order?: string;
@@ -98,7 +99,7 @@ export default async function DomainsPage({
 
           <Reveal delay={0.05}>
             <div className="mx-auto mt-5 w-full min-w-0 overflow-hidden rounded-3xl border border-border/70 bg-background/80 p-3 shadow-sm backdrop-blur sm:mt-6 sm:p-5 md:p-6">
-              <DomainSearch />
+              <DomainSearch key={sp.q?.trim() || "domain-search"} />
             </div>
             <p className="mx-auto mt-3 w-full text-center text-xs text-muted-foreground sm:text-sm md:whitespace-nowrap">
               {t("heroSubtitleNote")}

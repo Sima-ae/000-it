@@ -1728,5 +1728,11 @@
     "partiallyDegradedService": "Delvist forringet ydeevne",
     "partialSystemOutage": "Delvist systemnedbrud",
     "majorSystemOutage": "Stort systemnedbrud"
+  },
+  "stickyDomainBar": {
+    "prompt": "Tjek om dit domænenavn stadig er ledigt",
+    "placeholder": "Skriv det ønskede domænenavn...",
+    "check": "Tjek",
+    "ariaLabel": "Søgning efter domænetilgængelighed"
   }
 }

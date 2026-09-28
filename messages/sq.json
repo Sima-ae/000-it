@@ -1728,5 +1728,11 @@
     "partiallyDegradedService": "Shërbim pjesërisht i degraduar",
     "partialSystemOutage": "Ndërprerje e pjesshme e sistemit",
     "majorSystemOutage": "Ndërprerje e madhe e sistemit"
+  },
+  "stickyDomainBar": {
+    "prompt": "Kontrollo nëse emri i domain-it tënd është ende i lirë",
+    "placeholder": "Shkruaj emrin e domain-it të dëshiruar...",
+    "check": "Kontrollo",
+    "ariaLabel": "Kërkim disponueshmërie domain-i"
   }
 }

@@ -1728,5 +1728,11 @@
     "partiallyDegradedService": "Kısmen düşürülmüş hizmet",
     "partialSystemOutage": "Kısmi sistem kesintisi",
     "majorSystemOutage": "Büyük sistem kesintisi"
+  },
+  "stickyDomainBar": {
+    "prompt": "Alan adınızın hâlâ müsait olup olmadığını kontrol edin",
+    "placeholder": "İstediğiniz alan adını yazın...",
+    "check": "Kontrol et",
+    "ariaLabel": "Alan adı müsaitlik araması"
   }
 }
