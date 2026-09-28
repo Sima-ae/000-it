@@ -213,13 +213,13 @@
     "plansServiceNote": "Ready To Go është një faturë e vetme SERVICE (TZ-S). Pritja është e përfshirë — pritja e pavarur qëndron nën Hosting (TZ-H)."
   },
   "faq": {
-    "title": "FAQ",
-    "q1": "Çfarë është TripleZero iT?",
-    "a1": "Një platformë rritjeje e drejtuar nga AI për aplikacionet dhe/ose faqet e internetit, ku reklamat, AEO/GEO/SEO, marketingu në internet dhe mediat sociale punojnë së bashku për rezultatet që dëshironi.",
-    "q2": "Si funksionon skanimi falas AI?",
-    "a2": "Futni URL-në tuaj; agjentët tanë kontrollojnë AEO, GEO (lokal), SEO, performancën dhe gatishmërinë AI, më pas ne ju kontaktojmë brenda 48 orëve për të diskutuar rezultatet dhe të gjitha opsionet.",
-    "q3": "A mund të përmirësoj më vonë?",
-    "a3": "Po — mund të kaloni midis Business, Extra Growth dhe Enterprise në çdo kohë."
+    "title": "Pyetjet e shpeshta",
+    "q1": "Kush është TripleZero iT?",
+    "a1": "Një ekip global me 20+ ekspertë me vite përvojë dhe njohuri në AI, AEO/GEO/SEO, aplikacione, të dhëna, dizajn, dyqane e-commerce, zgjidhje të personalizuara, migrime, marketing, reklamim online, programim, zhvillim softueri dhe faqe interneti. Me pak fjalë: një ekip shumë i motivuar i kompanive, kolegëve dhe miqve që bashkëpunojnë çdo ditë për rezultatet e dëshiruara.",
+    "q2": "Si funksionon skanimi falas me AI?",
+    "a2": "Vendosni URL-në tuaj; agentët tanë kontrollojnë AEO, GEO (lokale), SEO, performancën dhe gatishmërinë për AI, pastaj ju kontaktojmë brenda 48 orëve për të diskutuar rezultatet dhe të gjitha mundësitë.",
+    "q3": "A mund të ul / përmirësoj planin më vonë?",
+    "a3": "Po, është gjithmonë e mundur të ndryshoni një plan."
   },
   "errors": {
     "title": "Diçka shkoi keq",

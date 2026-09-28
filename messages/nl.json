@@ -208,18 +208,18 @@
     "enterpriseDesc": "Vertel kort wat je nodig hebt — we sturen een voorstel op maat.",
     "hostingMonth": "1× webhosting (1 maand)",
     "hostingYear": "1× webhosting (12 maanden)",
-    "viewAll": "Klik hier voor alle prijzen",
+    "viewAll": "Klik hier voor overige prijzen",
     "hostingIncludedInPlan": "inbegrepen in servicepakket",
     "plansServiceNote": "Ready To Go is één SERVICE-factuur (TZ-S). Hosting is inbegrepen — aparte hostingproducten blijven onder Hosting (TZ-H)."
   },
   "faq": {
     "title": "Veelgestelde vragen",
-    "q1": "Wat is TripleZero iT?",
-    "a1": "Een AI-gedreven groeiplatform voor apps en/of websites, waarin adverteren, AEO/GEO/SEO, online marketing en social media samenwerken voor gewenste resultaten.",
+    "q1": "Wie is TripleZero iT?",
+    "a1": "Een wereldwijd verdeeld team van 20+ experts die over jarenlange ervaring en kennis beschikken op het gebied van AI, AEO/GEO/SEO, apps, data, design, e-commerce webshops, maatwerk, migraties, marketing, online adverteren, programmeren, software ontwikkeling en websites. Kortom een zeer gemotiveerd team van bedrijven, collega's en vrienden die dagelijks samenwerken voor de gewenste resultaten.",
     "q2": "Hoe werkt de gratis AI-scan?",
     "a2": "Voer jouw URL in; onze agents controleren op AEO, GEO (lokaal), SEO, performance en AI-readiness, daarna nemen wij binnen 48 uur contact met je op om de resultaten en alle mogelijkheden te bespreken.",
-    "q3": "Kan ik later upgraden?",
-    "a3": "Ja, het is mogelijk om een plan te wisselen tussen Business, Extra Growth en Enterprise."
+    "q3": "Kan ik later downgraden / upgraden?",
+    "a3": "Ja, het is altijd mogelijk om een plan te wijzigen."
   },
   "errors": {
     "title": "Er ging iets mis",

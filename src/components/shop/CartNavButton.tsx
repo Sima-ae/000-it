@@ -71,7 +71,7 @@ export function CartNavButton({ className }: { className?: string }) {
       <button
         type="button"
         className={cn(
-          "relative inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-muted-foreground transition hover:bg-muted/70 hover:text-foreground",
+          "relative inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-xl text-muted-foreground transition hover:bg-muted/70 hover:text-foreground sm:h-9 sm:w-9",
           open && "bg-muted/70 text-foreground",
         )}
         aria-label={tCommon("cart")}
@@ -88,7 +88,7 @@ export function CartNavButton({ className }: { className?: string }) {
           router.push(localizedHref(locale, "/shop/cart"));
         }}
       >
-        <ShoppingCart className="h-5.5 w-5.5" />
+        <ShoppingCart className="h-5 w-5 sm:h-5.5 sm:w-5.5" />
         {count > 0 ? (
           <span className="absolute right-0 top-0 inline-flex min-w-4 items-center justify-center rounded-full bg-primary px-1 text-[10px] font-semibold leading-4 text-primary-foreground">
             {count > 99 ? "99+" : count}

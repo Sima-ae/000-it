@@ -214,12 +214,12 @@
   },
   "faq": {
     "title": "Często zadawane pytania",
-    "q1": "Co to jest TripleZero iT?",
-    "a1": "Platforma rozwoju oparta na AI dla aplikacji i/lub stron internetowych, gdzie reklama, AEO/GEO/SEO, marketing online i media społecznościowe współdziałają, aby uzyskać pożądane wyniki.",
-    "q2": "Jak działa bezpłatne skanowanie AI?",
-    "a2": "Wpisz swój adres URL; nasi agenci sprawdzają AEO, GEO (lokalnie), SEO, wydajność i gotowość AI, następnie kontaktujemy się z Tobą w ciągu 48 godzin w celu omówienia wyników i wszystkich opcji.",
-    "q3": "Czy mogę dokonać aktualizacji później?",
-    "a3": "Tak — możesz w dowolnym momencie przełączać się między Business, Extra Growth i Enterprise."
+    "q1": "Kim jest TripleZero iT?",
+    "a1": "Globalnie rozproszony zespół ponad 20 ekspertów z wieloletnim doświadczeniem i wiedzą w zakresie AI, AEO/GEO/SEO, aplikacji, danych, designu, sklepów e-commerce, rozwiązań na zamówienie, migracji, marketingu, reklamy online, programowania, tworzenia oprogramowania i stron internetowych. Krótko mówiąc: bardzo zmotywowany zespół firm, kolegów i przyjaciół, którzy codziennie współpracują dla pożądanych wyników.",
+    "q2": "Jak działa darmowy skan AI?",
+    "a2": "Wpisz swój adres URL; nasi agenci sprawdzają AEO, GEO (lokalne), SEO, wydajność i gotowość AI, a następnie kontaktujemy się z Tobą w ciągu 48 godzin, aby omówić wyniki i wszystkie możliwości.",
+    "q3": "Czy mogę później obniżyć / podwyższyć plan?",
+    "a3": "Tak, zawsze można zmienić plan."
   },
   "errors": {
     "title": "Coś poszło nie tak",

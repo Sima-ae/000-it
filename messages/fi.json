@@ -213,13 +213,13 @@
     "plansServiceNote": "Ready To Go on yksi PALVELUlasku (TZ-S). Hosting sisältyy hintaan – erillinen isännöinti pysyy Hosting (TZ-H) alla."
   },
   "faq": {
-    "title": "FAQ",
-    "q1": "Mikä on TripleZero iT?",
-    "a1": "AI-ohjattu kasvualusta sovelluksille ja/tai verkkosivustoille, jossa mainonta, AEO/GEO/SEO, verkkomarkkinointi ja sosiaalinen media toimivat yhdessä haluamiesi tulosten saavuttamiseksi.",
-    "q2": "Kuinka ilmainen AI-skannaus toimii?",
-    "a2": "Kirjoita URL-osoite; edustajamme tarkistavat AEO, GEO (paikallinen), SEO, suorituskyvyn ja AI-valmiuden, minkä jälkeen otamme sinuun yhteyttä 48 tunnin kuluessa keskustellaksemme tuloksista ja kaikista vaihtoehdoista.",
-    "q3": "Voinko päivittää myöhemmin?",
-    "a3": "Kyllä — voit vaihtaa Business:n, Extra Growth:n ja Enterprise:n välillä milloin tahansa."
+    "title": "Usein kysytyt kysymykset",
+    "q1": "Kuka on TripleZero iT?",
+    "a1": "Maailmanlaajuisesti hajautettu yli 20 asiantuntijan tiimi, jolla on vuosien kokemus ja osaaminen tekoälystä, AEO/GEO/SEO:sta, sovelluksista, datasta, designista, verkkokaupoista, räätälöinnistä, migraatioista, markkinoinnista, verkkomainonnasta, ohjelmoinnista, ohjelmistokehityksestä ja verkkosivuista. Lyhyesti: erittäin motivoitunut tiimi yrityksiä, kollegoita ja ystäviä, jotka tekevät joka päivä yhteistyötä toivottujen tulosten eteen.",
+    "q2": "Miten ilmainen AI-skannaus toimii?",
+    "a2": "Syötä URL-osoitteesi; agenttimme tarkistavat AEO:n, GEO:n (paikallinen), SEO:n, suorituskyvyn ja AI-valmiuden, minkä jälkeen otamme yhteyttä 48 tunnin kuluessa tulosten ja kaikkien vaihtoehtojen käsittelystä.",
+    "q3": "Voinko myöhemmin vaihtaa alempaan / ylempään suunnitelmaan?",
+    "a3": "Kyllä, suunnitelman muuttaminen on aina mahdollista."
   },
   "errors": {
     "title": "Jotain meni pieleen",

@@ -213,13 +213,13 @@
     "plansServiceNote": "Ready To Go je jedna faktúra za SERVIS (TZ-S). Hosting je zahrnutý — samostatný hosting zostáva v rámci Hostingu (TZ-H)."
   },
   "faq": {
-    "title": "FAQ",
-    "q1": "Čo je TripleZero iT?",
-    "a1": "Platforma rastu pre aplikácie a/alebo webové stránky riadená AI, kde reklama, AEO/GEO/SEO, online marketing a sociálne médiá spolupracujú na požadovaných výsledkoch.",
-    "q2": "Ako funguje bezplatné skenovanie AI?",
-    "a2": "Zadaj svoju adresu URL; naši agenti skontrolujú AEO, GEO (miestne), SEO, výkon a pripravenosť AI, potom vás do 48 hodín kontaktujeme, aby sme prediskutovali výsledky a všetky možnosti.",
-    "q3": "Môžem inovovať neskôr?",
-    "a3": "Áno – medzi Business, Extra Growth a Enterprise môžete kedykoľvek prepínať."
+    "title": "Často kladené otázky",
+    "q1": "Kto je TripleZero iT?",
+    "a1": "Celosvetovo rozptýlený tím 20+ expertov s dlhoročnými skúsenosťami a znalosťami v oblasti AI, AEO/GEO/SEO, aplikácií, dát, dizajnu, e-commerce obchodov, riešení na mieru, migrácií, marketingu, online reklamy, programovania, vývoja softvéru a webov. Stručne: veľmi motivovaný tím firiem, kolegov a priateľov, ktorí denne spolupracujú na požadovaných výsledkoch.",
+    "q2": "Ako funguje bezplatný AI scan?",
+    "a2": "Zadajte svoju URL; naši agenti skontrolujú AEO, GEO (lokálne), SEO, výkon a AI-readiness, potom vás do 48 hodín kontaktujeme, aby sme prebrali výsledky a všetky možnosti.",
+    "q3": "Môžem neskôr downgradovať / upgradovať?",
+    "a3": "Áno, plán je vždy možné zmeniť."
   },
   "errors": {
     "title": "Niečo sa pokazilo",

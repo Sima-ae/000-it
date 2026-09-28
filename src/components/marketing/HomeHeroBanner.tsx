@@ -6,6 +6,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import { Agent000Avatar } from "@/components/agent-000/Agent000Avatar";
 import { AnimatedCounter } from "@/components/marketing/AnimatedCounter";
+import { HeroCircuitPulse } from "@/components/marketing/HeroCircuitPulse";
 import { HeroVisual } from "@/components/marketing/HeroVisual";
 import { OPEN_CHAT_EVENT } from "@/components/chat/open-live-chat";
 import { SoftLink } from "@/components/shared/SoftLink";
@@ -68,7 +69,9 @@ export function HomeHeroBanner({ scanCount }: { scanCount: number }) {
         }}
       />
 
-      <div className="relative mx-auto w-full max-w-6xl px-4 py-10 sm:py-12 md:px-6 lg:py-14">
+      <HeroCircuitPulse />
+
+      <div className="relative z-2 mx-auto w-full max-w-6xl px-4 py-10 sm:py-12 md:px-6 lg:py-14">
         <div className="mx-auto flex w-fit max-w-full flex-col items-center gap-6 sm:gap-7 lg:flex-row lg:items-center lg:gap-8 xl:gap-10">
         {/* Copy + CTAs */}
         <div className="mx-auto flex w-full max-w-xl shrink-0 flex-col items-center gap-3 text-center text-white sm:gap-3.5 lg:mx-0 lg:max-w-md lg:items-start lg:text-left xl:max-w-120">
@@ -154,7 +157,7 @@ export function HomeHeroBanner({ scanCount }: { scanCount: number }) {
                   new CustomEvent(OPEN_CHAT_EVENT, { detail: { prefill: "" } }),
                 );
               }}
-              className="relative z-10 -ml-6 mb-0 shrink-0 cursor-pointer rounded-full outline-none transition-transform hover:scale-[1.03] focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent active:scale-[0.98] sm:-ml-5 lg:-ml-4"
+              className="relative z-30 -ml-6 mb-0 shrink-0 cursor-pointer rounded-full outline-none transition-transform hover:scale-[1.03] focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent active:scale-[0.98] sm:-ml-5 lg:-ml-4"
               aria-label={t("openChatWithAgent")}
               initial={reduce ? false : { opacity: 0, y: 40, scale: 0.96 }}
               animate={

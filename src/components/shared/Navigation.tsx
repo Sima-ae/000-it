@@ -99,7 +99,7 @@ export function Navigation() {
   }
 
   return (
-    <header className="pointer-events-none fixed inset-x-0 top-0 z-50 px-3 pt-3 md:px-4 md:pt-4">
+    <header className="pointer-events-none fixed inset-x-0 top-0 z-50 px-2 pt-2 sm:px-3 sm:pt-3 md:px-4 md:pt-4">
       <div
         className={cn(
           "pointer-events-auto mx-auto max-w-7xl rounded-[1.75rem] transition-all duration-300",
@@ -107,13 +107,13 @@ export function Navigation() {
           scrolled && "glass-strong shadow-[0_18px_50px_rgba(15,23,42,0.12)]",
         )}
       >
-        <div className="flex items-center justify-between gap-2 px-3 py-2.5 md:gap-3 md:px-4 md:py-3">
+        <div className="flex items-center justify-between gap-1.5 px-2.5 py-2 sm:gap-2 sm:px-3 sm:py-2.5 md:gap-3 md:px-4 md:py-3">
           <SoftLink
             href={localizedHref(locale, "/")}
             aria-label="TripleZero iT"
-            className="shrink-0"
+            className="min-w-0 shrink"
           >
-            <BrandLogo priority />
+            <BrandLogo priority className="h-7 max-w-[min(42vw,9.5rem)] sm:h-8 sm:max-w-none md:h-9" />
           </SoftLink>
 
           <nav className="hidden items-center gap-0.5 lg:flex">
@@ -214,29 +214,27 @@ export function Navigation() {
             })}
           </nav>
 
-          <div className="flex items-center gap-1.5 md:gap-2">
+          <div className="flex shrink-0 items-center gap-0.5 sm:gap-1 md:gap-2">
             <GlobalSearchButton />
             <SoftLink
               href={localizedHref(locale, "/afspraak")}
               aria-label={t("book")}
               title={t("book")}
-              className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-sm transition hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+              className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-sm transition hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 sm:h-9 sm:w-9"
             >
-              <Plus className="h-5 w-5" strokeWidth={2.5} aria-hidden />
+              <Plus className="h-4.5 w-4.5 sm:h-5 sm:w-5" strokeWidth={2.5} aria-hidden />
             </SoftLink>
             <button
               type="button"
-              className="rounded-xl p-2 text-muted-foreground transition hover:bg-muted/70 lg:hidden"
+              className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-xl text-muted-foreground transition hover:bg-muted/70 sm:h-9 sm:w-9 lg:hidden"
               onClick={() => setOpen((v) => !v)}
               aria-label={tCommon("openMenu")}
             >
               {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
-            <span className="hidden lg:inline-flex">
-              <ThemeToggle />
-            </span>
-            <AccountMenu />
             <CartNavButton />
+            <AccountMenu />
+            <ThemeToggle />
             <LanguageSwitcher />
           </div>
         </div>
@@ -244,9 +242,6 @@ export function Navigation() {
         {open && (
           <div className="max-h-[70vh] overflow-y-auto border-t border-border/60 px-3 py-3 lg:hidden">
             <div className="flex flex-col gap-1">
-              <div className="flex items-center px-1 py-0.5">
-                <ThemeToggle />
-              </div>
               {primaryLinks.map((link) => {
                 const href = localizedHref(locale, link.href);
                 const pathOnly = href.split("#")[0];

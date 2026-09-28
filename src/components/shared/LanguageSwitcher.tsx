@@ -97,7 +97,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
       <button
         type="button"
         className={cn(
-          "inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-xl p-0 transition hover:bg-muted/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+          "inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-xl p-0 transition hover:bg-muted/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:h-9 sm:w-9",
           open && "bg-muted/70",
         )}
         aria-label={t("title")}
@@ -105,7 +105,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
         aria-haspopup="menu"
         onClick={() => setOpen((v) => !v)}
       >
-        {current ? <Flag lang={current} size={22} /> : null}
+        {current ? <Flag lang={current} size={20} /> : null}
       </button>
 
       {open ? (

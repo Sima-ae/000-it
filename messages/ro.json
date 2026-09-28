@@ -213,13 +213,13 @@
     "plansServiceNote": "Ready To Go este o singură factură de SERVICE (TZ-S). Găzduirea este inclusă — găzduirea independentă rămâne sub Gazduire (TZ-H)."
   },
   "faq": {
-    "title": "FAQ",
-    "q1": "Ce este TripleZero iT?",
-    "a1": "O platformă de creștere bazată pe AI pentru aplicații și/sau site-uri web, în ​​care publicitatea, AEO/GEO/SEO, marketingul online și rețelele sociale lucrează împreună pentru rezultatele dorite.",
-    "q2": "Cum funcționează scanarea gratuită AI?",
-    "a2": "Introdu adresa ta URL; agenții noștri verifică AEO, GEO (local), SEO, performanța și pregătirea AI, apoi te contactăm în termen de 48 de ore pentru a discuta rezultatele și toate opțiunile.",
-    "q3": "Pot face upgrade mai târziu?",
-    "a3": "Da — puteți comuta oricând între Business, Extra Growth și Enterprise."
+    "title": "Întrebări frecvente",
+    "q1": "Cine este TripleZero iT?",
+    "a1": "O echipă globală de peste 20 de experți cu ani de experiență și cunoștințe în AI, AEO/GEO/SEO, aplicații, date, design, magazine e-commerce, soluții personalizate, migrări, marketing, publicitate online, programare, dezvoltare software și site-uri web. Pe scurt, o echipă foarte motivată de companii, colegi și prieteni care colaborează zilnic pentru rezultatele dorite.",
+    "q2": "Cum funcționează scanarea AI gratuită?",
+    "a2": "Introdu URL-ul tău; agenții noștri verifică AEO, GEO (local), SEO, performanța și pregătirea pentru AI, apoi te contactăm în 48 de ore pentru a discuta rezultatele și toate opțiunile.",
+    "q3": "Pot face downgrade / upgrade mai târziu?",
+    "a3": "Da, este întotdeauna posibil să schimbați un plan."
   },
   "errors": {
     "title": "Ceva a mers prost",

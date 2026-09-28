@@ -54,7 +54,7 @@ export function AccountMenu({ className }: { className?: string }) {
       <button
         type="button"
         className={cn(
-          "inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-muted-foreground transition hover:bg-muted/70 hover:text-foreground",
+          "inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-xl text-muted-foreground transition hover:bg-muted/70 hover:text-foreground sm:h-9 sm:w-9",
           open && "bg-muted/70 text-foreground",
         )}
         aria-label={tCommon("account")}
@@ -62,7 +62,7 @@ export function AccountMenu({ className }: { className?: string }) {
         aria-haspopup="menu"
         onClick={() => setOpen((v) => !v)}
       >
-        <CircleUserRound className="h-5.5 w-5.5" />
+        <CircleUserRound className="h-5 w-5 sm:h-5.5 sm:w-5.5" />
       </button>
 
       {open ? (

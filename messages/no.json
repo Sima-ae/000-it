@@ -213,13 +213,13 @@
     "plansServiceNote": "Ready To Go er en enkelt SERVICE-faktura (TZ-S). Hosting er inkludert - frittstående hosting forblir under Hosting (TZ-H)."
   },
   "faq": {
-    "title": "FAQ",
-    "q1": "Hva er TripleZero iT?",
-    "a1": "En AI-drevet vekstplattform for apper og/eller nettsteder, hvor annonsering, AEO/GEO/SEO, nettmarkedsføring og sosiale medier samarbeider for de resultatene du ønsker.",
+    "title": "Ofte stilte spørsmål",
+    "q1": "Hvem er TripleZero iT?",
+    "a1": "Et globalt fordelt team med 20+ eksperter med mange års erfaring og kunnskap innen AI, AEO/GEO/SEO, apper, data, design, e-handelsbutikker, skreddersøm, migrasjoner, markedsføring, online annonsering, programmering, programvareutvikling og nettsteder. Kort sagt: et svært motivert team av selskaper, kolleger og venner som hver dag samarbeider for de ønskede resultatene.",
     "q2": "Hvordan fungerer den gratis AI-skanningen?",
-    "a2": "Skriv inn nettadressen din; våre agenter sjekker AEO, GEO (lokal), SEO, ytelse og AI beredskap, så kontakter vi deg innen 48 timer for å diskutere resultatene og alle alternativer.",
-    "q3": "Kan jeg oppgradere senere?",
-    "a3": "Ja – du kan bytte mellom Business, Extra Growth og Enterprise når som helst."
+    "a2": "Skriv inn URL-en din; agentene våre sjekker AEO, GEO (lokalt), SEO, ytelse og AI-readiness, deretter tar vi kontakt innen 48 timer for å diskutere resultatene og alle muligheter.",
+    "q3": "Kan jeg nedgradere / oppgradere senere?",
+    "a3": "Ja, det er alltid mulig å endre en plan."
   },
   "errors": {
     "title": "Noe gikk galt",

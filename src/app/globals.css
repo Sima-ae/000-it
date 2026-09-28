@@ -720,3 +720,38 @@ body::before {
     transform: scaleX(0.9);
   }
 }
+
+/* —— Hero circuit pulses (traveling packets from Agent 000) —— */
+.hero-circuit-layer {
+  opacity: 0.88;
+}
+.hero-circuit-pulse {
+  stroke-dashoffset: 100;
+  animation-name: hero-circuit-dash;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  opacity: 0.95;
+}
+
+@keyframes hero-circuit-dash {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-circuit-pulse {
+    animation: none !important;
+    opacity: 0 !important;
+  }
+}
+
+@media (prefers-contrast: more) {
+  .hero-circuit-layer {
+    opacity: 0.6;
+  }
+}

@@ -213,13 +213,13 @@
     "plansServiceNote": "Реади То Го је једна фактура УСЛУГЕ (ТЗ-С). Хостинг је укључен — самостални хостинг остаје под Хостинг (ТЗ-Х)."
   },
   "faq": {
-    "title": "Česta pitanja",
-    "q1": "Šta je TripleZero iT?",
-    "a1": "Platforma za rast vođena AI za aplikacije i/ili web stranice, gdje oglašavanje, AEO/GEO/SEO, online marketing i društveni mediji rade zajedno za rezultate koje želite.",
-    "q2": "Kako funkcionira besplatno skeniranje AI?",
-    "a2": "Unesi svoj URL; naši agenti provjeravaju AEO, GEO (lokalni), SEO, performanse i AI spremnost, a zatim ćemo te kontaktirati u roku od 48 sati kako bismo razgovarali o rezultatima i svim opcijama.",
-    "q3": "Mogu li nadograditi kasnije?",
-    "a3": "Da — možete se prebacivati ​​između Business, Extra Growth i Enterprise bilo kada."
+    "title": "Često postavljana pitanja",
+    "q1": "Ko je TripleZero iT?",
+    "a1": "Globalno raspoređen tim od 20+ stručnjaka s dugogodišnjim iskustvom i znanjem u oblasti AI, AEO/GEO/SEO, aplikacija, podataka, dizajna, e-commerce webshopova, prilagođenih rješenja, migracija, marketinga, online oglašavanja, programiranja, razvoja softvera i web stranica. Ukratko: veoma motivisan tim firmi, kolega i prijatelja koji svakodnevno sarađuju za željene rezultate.",
+    "q2": "Kako funkcioniše besplatni AI scan?",
+    "a2": "Unesite svoj URL; naši agenti provjeravaju AEO, GEO (lokalno), SEO, performanse i AI-readiness, zatim vas kontaktiramo unutar 48 sati kako bismo prodiskutirali rezultate i sve mogućnosti.",
+    "q3": "Mogu li kasnije smanjiti / nadograditi plan?",
+    "a3": "Da, plan je uvijek moguće promijeniti."
   },
   "errors": {
     "title": "Nešto je pošlo po zlu",

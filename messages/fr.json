@@ -213,13 +213,13 @@
     "plansServiceNote": "Ready To Go est une facture de SERVICE unique (TZ-S). L'hébergement est inclus - l'hébergement autonome reste sous Hébergement (TZ-H)."
   },
   "faq": {
-    "title": "FAQ",
-    "q1": "Qu'est-ce que TripleZero iT ?",
-    "a1": "Une plate-forme de croissance basée sur AI pour les applications et/ou les sites Web, où la publicité, AEO/GEO/SEO, le marketing en ligne et les médias sociaux travaillent ensemble pour obtenir les résultats souhaités.",
-    "q2": "Comment fonctionne l'analyse gratuite AI ?",
-    "a2": "Entre ton URL ; nos agents vérifient AEO, GEO (local), SEO, les performances et l'état de préparation de AI, puis nous te contactons dans les 48 heures pour discuter des résultats et de toutes les options.",
-    "q3": "Puis-je effectuer une mise à niveau plus tard ?",
-    "a3": "Oui, tu peux basculer entre Business, Extra Growth et Enterprise à tout moment."
+    "title": "Questions fréquentes",
+    "q1": "Qui est TripleZero iT ?",
+    "a1": "Une équipe mondiale de plus de 20 experts disposant de nombreuses années d’expérience et de connaissances en IA, AEO/GEO/SEO, apps, data, design, boutiques e-commerce, sur-mesure, migrations, marketing, publicité en ligne, programmation, développement logiciel et sites web. En bref, une équipe très motivée d’entreprises, de collègues et d’amis qui collaborent chaque jour pour les résultats souhaités.",
+    "q2": "Comment fonctionne le scan IA gratuit ?",
+    "a2": "Saisissez votre URL ; nos agents vérifient l’AEO, le GEO (local), le SEO, la performance et la préparation à l’IA, puis nous vous contactons sous 48 heures pour discuter des résultats et de toutes les options.",
+    "q3": "Puis-je rétrograder / mettre à niveau plus tard ?",
+    "a3": "Oui, il est toujours possible de modifier un plan."
   },
   "errors": {
     "title": "Quelque chose s'est mal passé",

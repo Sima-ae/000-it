@@ -208,18 +208,18 @@
     "enterpriseDesc": "Tell us briefly what you need — we’ll send a tailored proposal.",
     "hostingMonth": "1× web hosting (1 month)",
     "hostingYear": "1× web hosting (12 months)",
-    "viewAll": "Click here for all prices",
+    "viewAll": "Click here for other prices",
     "hostingIncludedInPlan": "included in service package",
     "plansServiceNote": "Ready To Go is a single SERVICE invoice (TZ-S). Hosting is included — standalone hosting stays under Hosting (TZ-H)."
   },
   "faq": {
     "title": "FAQ",
-    "q1": "What is TripleZero iT?",
-    "a1": "An AI-driven growth platform for apps and/or websites, where advertising, AEO/GEO/SEO, online marketing and social media work together for the results you want.",
+    "q1": "Who is TripleZero iT?",
+    "a1": "A globally distributed team of 20+ experts with years of experience and knowledge in AI, AEO/GEO/SEO, apps, data, design, e-commerce webshops, custom work, migrations, marketing, online advertising, programming, software development and websites. In short, a highly motivated team of companies, colleagues and friends who work together every day for the results you want.",
     "q2": "How does the free AI scan work?",
     "a2": "Enter your URL; our agents check AEO, GEO (local), SEO, performance and AI readiness, then we contact you within 48 hours to discuss the results and all options.",
-    "q3": "Can I upgrade later?",
-    "a3": "Yes — you can switch between Business, Extra Growth and Enterprise anytime."
+    "q3": "Can I downgrade / upgrade later?",
+    "a3": "Yes, it is always possible to change a plan."
   },
   "errors": {
     "title": "Something went wrong",

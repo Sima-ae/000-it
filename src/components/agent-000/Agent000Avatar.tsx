@@ -24,7 +24,6 @@ export function Agent000Avatar({
   const plate = `a000plate-${uid}`;
   const body = `a000body-${uid}`;
   const dark = `a000dark-${uid}`;
-  const cap = `a000cap-${uid}`;
   const brim = `a000brim-${uid}`;
   const eye = `a000eye-${uid}`;
   const glow = `a000glow-${uid}`;
@@ -59,11 +58,6 @@ export function Agent000Avatar({
             <stop offset="24%" stopColor="#f8fafc" />
             <stop offset="52%" stopColor="#d7e0ea" />
             <stop offset="100%" stopColor="#7f90a3" />
-          </linearGradient>
-          <linearGradient id={cap} x1="12%" y1="0%" x2="88%" y2="100%">
-            <stop offset="0%" stopColor="#ffffff" />
-            <stop offset="32%" stopColor="#eef3f8" />
-            <stop offset="100%" stopColor="#8ea0b4" />
           </linearGradient>
           <linearGradient id={brim} x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="0%" stopColor="#64748b" />
@@ -502,59 +496,6 @@ export function Agent000Avatar({
             opacity="0.85"
           />
 
-          {/* Baseball cap — on the skull, brim cocked left and clear of the glasses */}
-          <g className="a000-cap">
-            <ellipse cx="74" cy="35" rx="12" ry="2.2" fill="#0f172a" opacity="0.14" />
-            <path
-              d="
-                M84 27
-                C70 24 52 25 40 29
-                C30 32 30 36 42 36
-                C56 36 72 33 86 30
-                C92 29 90 27 84 27 Z
-              "
-              fill={`url(#${brim})`}
-              stroke="#1e293b"
-              strokeWidth="0.8"
-              strokeLinejoin="round"
-            />
-            <path
-              d="
-                M66 31
-                C64 16 78 4 100 1
-                C122 -1 138 10 140 24
-                C141 30 132 33 116 33
-                C98 35 80 33 66 31 Z
-              "
-              fill={`url(#${cap})`}
-              stroke="#8fa0b5"
-              strokeWidth="1.05"
-              strokeLinejoin="round"
-            />
-            <path
-              d="
-                M66 31
-                C64 16 78 4 100 1
-                C122 -1 138 10 140 24
-                C141 30 132 33 116 33
-                C98 35 80 33 66 31 Z
-              "
-              fill={`url(#${form})`}
-            />
-            <path
-              d="M70 29 C88 34 114 33 136 26"
-              fill="none"
-              stroke="#64748b"
-              strokeWidth="1.35"
-              strokeLinecap="round"
-              opacity="0.28"
-            />
-            <path d="M100 3 C98 12 97 22 99 32" fill="none" stroke="#64748b" strokeWidth="0.6" opacity="0.28" />
-            <path d="M99 6 C88 14 78 22 70 30" fill="none" stroke="#64748b" strokeWidth="0.5" opacity="0.22" />
-            <path d="M102 6 C116 14 130 22 136 30" fill="none" stroke="#64748b" strokeWidth="0.5" opacity="0.22" />
-            <ellipse cx="88" cy="14" rx="10" ry="5" fill="#ffffff" opacity="0.34" transform="rotate(-14 88 14)" />
-            <circle cx="100" cy="3" r="2" fill={`url(#${cap})`} stroke="#8fa0b5" strokeWidth="0.6" />
-          </g>
         </g>
 
         {/* Same hand as before, turned fingers-up on the raised wrist */}

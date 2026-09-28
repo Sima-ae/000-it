@@ -77,12 +77,12 @@ export function GlobalSearchButton() {
         type="button"
         size="icon"
         variant="ghost"
-        className="h-9 w-9 shrink-0 rounded-xl"
+        className="h-8 w-8 shrink-0 rounded-xl sm:h-9 sm:w-9"
         aria-label={t("open")}
         title={t("open")}
         onClick={() => setOpen(true)}
       >
-        <Search className="h-5 w-5" aria-hidden />
+        <Search className="h-4.5 w-4.5 sm:h-5 sm:w-5" aria-hidden />
       </Button>
       {open ? <GlobalSearchOverlay onClose={() => setOpen(false)} /> : null}
     </>

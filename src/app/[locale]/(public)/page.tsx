@@ -3,10 +3,10 @@ import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Button } from "@/components/ui/button";
 import { SoftLink } from "@/components/shared/SoftLink";
-import { GlassCard } from "@/components/marketing/GlassCard";
 import { HomeHeroBanner } from "@/components/marketing/HomeHeroBanner";
 import { BrandingCollage } from "@/components/marketing/BrandingCollage";
 import { Reveal } from "@/components/marketing/Reveal";
+import { HomeServiceCards } from "@/components/marketing/HomeServiceCards";
 import { PricingPlans } from "@/components/marketing/PricingPlans";
 import { DomainSearch } from "@/components/domains/DomainSearch";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -17,7 +17,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { localizedHref } from "@/i18n/pathnames";
-import { cn } from "@/lib/utils";
 import { getAiScanCount } from "@/lib/ai-scan-count";
 import { buildStaticPageMetadata, organizationJsonLd } from "@/lib/seo";
 import {
@@ -123,35 +122,14 @@ export default async function HomePage({
           </div>
         </Reveal>
 
-        <div className="grid gap-3 md:grid-cols-6">
-          {sortedServiceGroups(locale).map((group, index) => {
-            const span =
-              index < 2 || index >= 5 ? "md:col-span-3" : "md:col-span-2";
-            const from =
-              index % 3 === 0 ? "left" : index % 3 === 1 ? "up" : "right";
-
-            return (
-              <Reveal
-                key={group.id}
-                from={from}
-                delay={Math.min(index * 0.07, 0.35)}
-                duration={0.55}
-                className={cn("h-full", span)}
-              >
-                <SoftLink href={serviceGroupHref(locale, group.id)} className="block h-full">
-                  <GlassCard className="flex h-full flex-col p-5 md:p-5">
-                    <h3 className="font-display text-lg font-semibold tracking-tight md:text-xl">
-                      {catalogGroupTitle(group.id, locale, group.title)}
-                    </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                      {catalogGroupSummary(group.id, locale)}
-                    </p>
-                  </GlassCard>
-                </SoftLink>
-              </Reveal>
-            );
-          })}
-        </div>
+        <HomeServiceCards
+          items={sortedServiceGroups(locale).map((group) => ({
+            id: group.id,
+            href: serviceGroupHref(locale, group.id),
+            title: catalogGroupTitle(group.id, locale, group.title),
+            summary: catalogGroupSummary(group.id, locale),
+          }))}
+        />
 
         <Reveal from="scale" delay={0.1} duration={0.5}>
           <div className="mt-8 flex justify-center md:mt-10">
@@ -165,7 +143,6 @@ export default async function HomePage({
       <PricingPlans
         plans={plans}
         labels={{
-          title: pricing("title"),
           subtitle: shop("subtitle"),
           categoryTitle: shop("plans"),
           plansHeadline: pricing("plansHeadline"),
@@ -257,7 +234,7 @@ export default async function HomePage({
                 size="lg"
                 className="mt-8 rounded-2xl bg-white text-primary hover:bg-white/90"
               >
-                <SoftLink href={localizedHref(locale, "/afspraak")}>{t("hero.ctaScan")}</SoftLink>
+                <SoftLink href={localizedHref(locale, "/afspraak")}>{t("nav.book")}</SoftLink>
               </Button>
             </div>
           </div>

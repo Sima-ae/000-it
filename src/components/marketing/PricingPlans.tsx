@@ -42,7 +42,8 @@ export function PricingPlans({
 }: {
   plans: PricingPlan[];
   labels: {
-    title: string;
+    /** Bottom section heading (standalone). Omit to hide. Embedded uses this as category label. */
+    title?: string;
     subtitle: string;
     /** Green section label under the page title (homepage). Embedded uses `title` for this. */
     categoryTitle?: string;
@@ -265,13 +266,22 @@ export function PricingPlans({
 
       {!embedded ? (
         <Reveal from="up" duration={0.55}>
-          <div className="mx-auto mt-12 max-w-2xl text-center md:mt-14">
-            <h2 className="font-display text-4xl font-semibold tracking-tight text-primary md:text-5xl">
-              {labels.title}
-            </h2>
-            <p className="mt-3 text-muted-foreground">{labels.subtitle}</p>
+          <div className="mx-auto mt-7 max-w-2xl text-center md:mt-8">
+            {labels.title ? (
+              <h2 className="font-display text-4xl font-semibold tracking-tight text-primary md:text-5xl">
+                {labels.title}
+              </h2>
+            ) : null}
+            <p
+              className={cn(
+                "text-muted-foreground",
+                labels.title ? "mt-3" : "mt-0",
+              )}
+            >
+              {labels.subtitle}
+            </p>
             {labels.viewAll ? (
-              <div className="mt-8 flex justify-center md:mt-10">
+              <div className="mt-5 flex justify-center md:mt-6">
                 <Button asChild size="lg" className="rounded-2xl px-7">
                   <SoftLink href={localizedHref(locale, "/shop")}>
                     {labels.viewAll}

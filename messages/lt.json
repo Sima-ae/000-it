@@ -213,13 +213,13 @@
     "plansServiceNote": "Ready To Go yra viena PASLAUGOS sąskaita faktūra (TZ-S). Priegloba yra įtraukta – atskiras priegloba lieka prie Hostingo (TZ-H)."
   },
   "faq": {
-    "title": "DUK",
+    "title": "Dažnai užduodami klausimai",
     "q1": "Kas yra TripleZero iT?",
-    "a1": "AI pagrįsta augimo platforma programoms ir (arba) svetainėms, kur reklama, AEO / GEO / SEO, internetinė rinkodara ir socialinė žiniasklaida veikia kartu siekiant norimų rezultatų.",
-    "q2": "Kaip veikia nemokamas AI nuskaitymas?",
-    "a2": "Įveskite savo URL; mūsų agentai patikrina AEO, GEO (vietinis), SEO, našumą ir AI parengtį, tada susisieksime su jumis per 48 valandas, kad aptartume rezultatus ir visas galimybes.",
-    "q3": "Ar galiu atnaujinti vėliau?",
-    "a3": "Taip – ​​galite bet kada perjungti tarp Business, Extra Growth ir Enterprise."
+    "a1": "Visame pasaulyje paskirstyta 20+ ekspertų komanda, turinti ilgametę patirtį ir žinių AI, AEO/GEO/SEO, programėlių, duomenų, dizaino, e. prekybos parduotuvių, individualių sprendimų, migracijų, rinkodaros, internetinės reklamos, programavimo, programinės įrangos kūrimo ir svetainių srityse. Trumpai: labai motyvuota įmonių, kolegų ir draugų komanda, kasdien dirbanti dėl norimų rezultatų.",
+    "q2": "Kaip veikia nemokamas AI skenavimas?",
+    "a2": "Įveskite savo URL; mūsų agentai patikrina AEO, GEO (vietinį), SEO, našumą ir AI pasirengimą, tada per 48 valandas su jumis susisiekiame, kad aptartume rezultatus ir visas galimybes.",
+    "q3": "Ar galiu vėliau sumažinti / atnaujinti planą?",
+    "a3": "Taip, planą visada galima pakeisti."
   },
   "errors": {
     "title": "Kažkas nutiko",
