@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
+import { Eye } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useSession } from "next-auth/react";
@@ -226,6 +227,17 @@ export default function ShopAdminPage() {
                   </p>
                 </div>
                 <div className="flex shrink-0 gap-2">
+                  <Button size="sm" variant="outline" asChild>
+                    <Link
+                      href={localizedHref(locale, `/shop/${item.slug}`)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`View ${itemName(item, locale)}`}
+                      title="View public page"
+                    >
+                      <Eye className="h-4 w-4" />
+                    </Link>
+                  </Button>
                   {canEdit ? (
                     <Button
                       size="sm"
