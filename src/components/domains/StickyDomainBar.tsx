@@ -1,14 +1,15 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { localizedHref } from "@/i18n/pathnames";
 
-const SHOW_AFTER_MOBILE_PX = 400;
+const SHOW_AFTER_MOBILE_PX = 500;
 const SHOW_AFTER_DESKTOP_PX = 750;
 const MOBILE_MQ = "(max-width: 767px)";
+const OFFSET_VAR = "--tz-sticky-domain-offset";
 
 /** Hide on auth / dashboard / admin surfaces — marketing pages only. */
 function shouldMountOnPath(pathname: string | null): boolean {
@@ -44,6 +45,10 @@ function scrollThresholdPx() {
     : SHOW_AFTER_DESKTOP_PX;
 }
 
+function clearChatOffset() {
+  document.documentElement.style.setProperty(OFFSET_VAR, "0px");
+}
+
 export function StickyDomainBar() {
   const t = useTranslations("stickyDomainBar");
   const locale = useLocale();
@@ -51,11 +56,13 @@ export function StickyDomainBar() {
   const pathname = usePathname();
   const [visible, setVisible] = useState(false);
   const [query, setQuery] = useState("");
+  const barRef = useRef<HTMLDivElement | null>(null);
   const allowed = shouldMountOnPath(pathname);
 
   useEffect(() => {
     if (!allowed) {
       setVisible(false);
+      clearChatOffset();
       return;
     }
 
@@ -69,8 +76,43 @@ export function StickyDomainBar() {
     return () => {
       window.removeEventListener("scroll", onScroll);
       mq.removeEventListener("change", onScroll);
+      clearChatOffset();
     };
   }, [allowed]);
+
+  /** Publish bar height so the chat FAB can sit above it on mobile. */
+  useEffect(() => {
+    if (!visible) {
+      clearChatOffset();
+      return;
+    }
+
+    const publish = () => {
+      const el = barRef.current;
+      if (!el) return;
+      const isMobile = window.matchMedia(MOBILE_MQ).matches;
+      if (!isMobile) {
+        clearChatOffset();
+        return;
+      }
+      // Gap between bar top and chat FAB bottom
+      const gap = 10;
+      document.documentElement.style.setProperty(
+        OFFSET_VAR,
+        `${Math.ceil(el.getBoundingClientRect().height + gap)}px`,
+      );
+    };
+
+    publish();
+    const ro = new ResizeObserver(publish);
+    if (barRef.current) ro.observe(barRef.current);
+    window.addEventListener("resize", publish);
+    return () => {
+      ro.disconnect();
+      window.removeEventListener("resize", publish);
+      clearChatOffset();
+    };
+  }, [visible]);
 
   const submit = useCallback(
     (e: React.FormEvent) => {
@@ -99,16 +141,14 @@ export function StickyDomainBar() {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: "110%", opacity: 0 }}
           transition={{ type: "spring", stiffness: 380, damping: 36 }}
-          className={
-            // Mobile: sit above the chat FAB (h-14 + gap). Desktop: tight to bottom.
-            "pointer-events-none fixed inset-x-0 bottom-0 z-40 " +
-            "pb-[calc(4.75rem+env(safe-area-inset-bottom))] " +
-            "md:pb-[max(0.5rem,env(safe-area-inset-bottom))]"
-          }
+          className="pointer-events-none fixed inset-x-0 bottom-0 z-40 pb-[max(0.5rem,env(safe-area-inset-bottom))]"
         >
           {/* Same width math as Footer: max-w-7xl includes horizontal padding */}
           <div className="pointer-events-none mx-auto max-w-7xl px-3 md:px-4">
-            <div className="pointer-events-auto w-full rounded-2xl border border-white/40 bg-white shadow-[0_18px_50px_rgba(15,23,42,0.12)] sm:rounded-3xl dark:border-white/10 dark:bg-[#101620]">
+            <div
+              ref={barRef}
+              className="pointer-events-auto w-full rounded-2xl border border-white/40 bg-white shadow-[0_18px_50px_rgba(15,23,42,0.12)] sm:rounded-3xl dark:border-white/10 dark:bg-[#101620]"
+            >
               <div className="flex flex-col items-stretch gap-2 px-2.5 py-2.5 sm:flex-row sm:items-center sm:justify-center sm:gap-5 sm:px-4 sm:py-3 md:px-5 lg:pr-20">
                 <p className="hidden shrink-0 text-sm font-medium text-foreground md:block lg:text-[15px]">
                   {t("prompt")}

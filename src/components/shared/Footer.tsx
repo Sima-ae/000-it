@@ -94,9 +94,8 @@ export function Footer() {
 
   return (
     <footer className="relative mt-6">
-      {/* Extra bottom space so copyright clears the sticky domain bar at scroll end.
-          Mobile bar sits above the chat FAB, so needs more clearance. */}
-      <div className="mx-auto max-w-7xl px-3 pt-6 pb-[calc(9rem+env(safe-area-inset-bottom))] md:px-4 md:pt-8 md:pb-[calc(6rem+env(safe-area-inset-bottom))]">
+      {/* Extra bottom space so copyright clears the sticky domain bar at scroll end */}
+      <div className="mx-auto max-w-7xl px-3 pt-6 pb-[calc(6.5rem+env(safe-area-inset-bottom))] md:px-4 md:pt-8 md:pb-[calc(6rem+env(safe-area-inset-bottom))]">
         <div className="glass overflow-hidden rounded-3xl">
           <div className="grid items-start gap-8 px-6 pb-1 pt-7 sm:grid-cols-2 lg:grid-cols-[1.15fr_1.3fr_1fr_1fr] lg:gap-x-5 lg:gap-y-8 lg:px-8 lg:pb-2 lg:pt-8">
             {/* 1 — Brand */}

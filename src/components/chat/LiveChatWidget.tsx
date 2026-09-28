@@ -445,9 +445,14 @@ export function LiveChatWidget() {
       className={cn(
         "pointer-events-none fixed z-9998 flex flex-col items-end justify-end gap-3",
         // Pin to safe insets so the stack always has a real height and never clips.
-        "top-[max(1rem,env(safe-area-inset-top))] bottom-[max(1rem,env(safe-area-inset-bottom))]",
+        // On mobile, --tz-sticky-domain-offset lifts the FAB above the domain bar.
+        "top-[max(1rem,env(safe-area-inset-top))]",
         "right-[max(1rem,env(safe-area-inset-right))]",
       )}
+      style={{
+        bottom:
+          "max(1rem, calc(env(safe-area-inset-bottom) + var(--tz-sticky-domain-offset, 0px)))",
+      }}
     >
       {open ? (
         <div
