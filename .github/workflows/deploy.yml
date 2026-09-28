@@ -210,9 +210,23 @@ jobs:
 
           if [[ "$SKIP_BUILD" == "1" ]]; then
             echo "==> Install pre-built .next from CI"
-            rm -rf .next
+            # Stop the running app first — a live Next process recreates files under
+            # .next/server/app while `rm -rf` walks the tree → "Directory not empty".
+            if command -v pm2 >/dev/null 2>&1; then
+              pm2 stop 000-it >/dev/null 2>&1 || true
+            fi
+            # Atomic swap: move old build aside, extract new, then delete old.
+            STALE=".next.stale.$$"
+            rm -rf "$STALE"
+            if [[ -e .next ]]; then
+              mv .next "$STALE" || {
+                echo "WARN: mv .next failed — forcing rm"
+                rm -rf .next || true
+              }
+            fi
             tar -xzf /tmp/next-build.tar.gz -C .
             rm -f /tmp/next-build.tar.gz
+            rm -rf "$STALE" || true
             if [[ ! -f .next/BUILD_ID ]]; then
               echo "ERROR: extracted .next is missing BUILD_ID"
               exit 1
