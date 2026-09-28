@@ -6,9 +6,10 @@
  * Always writes https://000-it.com unless SITEMAP_BASE_URL is a non-localhost URL.
  *
  * Output:
- *  - public/sitemap.xml          ← main index (Google/Bing/Yahoo entry point)
- *  - public/sitemaps/sitemap-*.xml
- *  - public/sitemaps/urls.json   ← IndexNow
+ *  - public/sitemap.xml                        ← flat core urlset (GSC main entry)
+ *  - public/sitemaps/sitemap-*.xml             ← topic children
+ *  - public/sitemaps/sitemap-kennisbank-index.xml
+ *  - public/sitemaps/urls.json                 ← IndexNow + robots sitemap list
  */
 import { writeSitemapFiles } from "../src/lib/sitemap-builder";
 
@@ -23,12 +24,16 @@ async function main() {
   const result = await writeSitemapFiles(process.cwd());
   console.log(`[generate-sitemap] origin=${process.env.SITEMAP_BASE_URL}`);
   console.log(
-    `[generate-sitemap] Wrote sitemap index with ${result.indexFiles.length} child sitemaps`,
+    `[generate-sitemap] Core /sitemap.xml urls=${result.coreUrlCount ?? "?"}`,
+  );
+  console.log(
+    `[generate-sitemap] Wrote ${result.indexFiles.length} child sitemaps`,
   );
   for (const file of result.indexFiles) {
     console.log(`  - ${file.path} (lastmod ${file.lastmod})`);
   }
-  console.log(`[generate-sitemap] ${result.urlCount} URLs total`);
+  console.log(`[generate-sitemap] robots:`, result.robotsSitemaps?.join(", "));
+  console.log(`[generate-sitemap] ${result.urlCount} language URLs total`);
 
   // Hard fail if any localhost leaked into the public sitemap.
   const bad = result.urls.find((u) => /localhost|127\.0\.0\.1|:3066/i.test(u));

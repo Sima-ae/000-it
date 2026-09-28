@@ -431,6 +431,20 @@ export async function writeSitemapFiles(rootDir = process.cwd()) {
   const sets = await collectSitemapSets();
   const today = toIsoDate(new Date());
 
+  /**
+   * Core pages go into the ROOT `/sitemap.xml` as a real `<urlset>` so GSC
+   * shows discovered URLs on the main submitted sitemap (not 0 on an empty index).
+   * Kennisbank stays chunked under `/sitemaps/` and is linked from robots.txt.
+   */
+  const coreEntries: SitemapUrlEntry[] = [
+    ...sets.cities,
+    ...sets.pages,
+    ...sets.services,
+    ...sets.shop,
+    ...sets.news,
+    ...sets.portfolio,
+  ];
+
   const groups: Array<{ base: string; entries: SitemapUrlEntry[] }> = [
     { base: "sitemap-cities", entries: sets.cities },
     { base: "sitemap-pages", entries: sets.pages },
@@ -442,6 +456,7 @@ export async function writeSitemapFiles(rootDir = process.cwd()) {
   ];
 
   const indexFiles: Array<{ path: string; lastmod: string }> = [];
+  const kennisbankIndexFiles: Array<{ path: string; lastmod: string }> = [];
   const allUrls: string[] = [];
 
   for (const group of groups) {
@@ -455,7 +470,11 @@ export async function writeSitemapFiles(rootDir = process.cwd()) {
         (max, e) => (e.lastmod > max ? e.lastmod : max),
         entries[0]?.lastmod || today,
       );
-      indexFiles.push({ path: `/sitemaps/${name}`, lastmod: newest });
+      const path = `/sitemaps/${name}`;
+      indexFiles.push({ path, lastmod: newest });
+      if (group.base === "sitemap-kennisbank") {
+        kennisbankIndexFiles.push({ path, lastmod: newest });
+      }
       for (const entry of entries) {
         allUrls.push(entry.loc);
         if (entry.alternates) {
@@ -470,9 +489,26 @@ export async function writeSitemapFiles(rootDir = process.cwd()) {
   // IndexNow wants every language URL once; sitemap <loc> stays nl-only.
   const uniqueUrls = [...new Set(allUrls)];
 
-  const indexXml = renderSitemapIndex(indexFiles);
-  // Main entry for crawlers (also served by app/sitemap.xml/route.ts).
-  writeFileSync(join(rootDir, "public", "sitemap.xml"), indexXml, "utf8");
+  // ROOT sitemap = flat core urlset (what GSC users submit as /sitemap.xml)
+  const coreXml = renderUrlset(coreEntries);
+  writeFileSync(join(rootDir, "public", "sitemap.xml"), coreXml, "utf8");
+
+  // Kennisbank-only index for robots.txt / optional GSC submit
+  if (kennisbankIndexFiles.length) {
+    const kbIndexXml = renderSitemapIndex(kennisbankIndexFiles);
+    writeFileSync(join(outDir, "sitemap-kennisbank-index.xml"), kbIndexXml, "utf8");
+  }
+
+  // Full child index kept for debugging / alternate discovery
+  const fullIndexXml = renderSitemapIndex(indexFiles);
+  writeFileSync(join(outDir, "sitemap-index.xml"), fullIndexXml, "utf8");
+
+  const robotsSitemaps = [
+    "/sitemap.xml",
+    ...(kennisbankIndexFiles.length
+      ? ["/sitemaps/sitemap-kennisbank-index.xml"]
+      : []),
+  ];
 
   writeFileSync(
     join(outDir, "urls.json"),
@@ -481,7 +517,9 @@ export async function writeSitemapFiles(rootDir = process.cwd()) {
         generatedAt: new Date().toISOString(),
         localeCount: LOCALES.length,
         urlCount: uniqueUrls.length,
+        coreUrlCount: coreEntries.length,
         origin: sitemapPublicOrigin(),
+        robotsSitemaps,
         urls: uniqueUrls,
       },
       null,
@@ -490,5 +528,12 @@ export async function writeSitemapFiles(rootDir = process.cwd()) {
     "utf8",
   );
 
-  return { indexFiles, urlCount: uniqueUrls.length, urls: uniqueUrls, indexXml };
+  return {
+    indexFiles,
+    urlCount: uniqueUrls.length,
+    coreUrlCount: coreEntries.length,
+    urls: uniqueUrls,
+    indexXml: coreXml,
+    robotsSitemaps,
+  };
 }

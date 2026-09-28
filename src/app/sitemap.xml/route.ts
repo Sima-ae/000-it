@@ -1,14 +1,13 @@
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { NextResponse } from "next/server";
-import { buildSitemapIndexFromDisk } from "@/lib/sitemap-builder";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
-const EMPTY_INDEX = `<?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-</sitemapindex>
+const EMPTY_URLSET = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+</urlset>
 `;
 
 function xmlResponse(xml: string, cache = true) {
@@ -16,6 +15,7 @@ function xmlResponse(xml: string, cache = true) {
     status: 200,
     headers: {
       "Content-Type": "application/xml; charset=utf-8",
+      // No X-Robots-Tag — keep sitemaps fully processable by Google.
       "Cache-Control": cache
         ? "public, s-maxage=3600, stale-while-revalidate=86400"
         : "no-store",
@@ -25,37 +25,23 @@ function xmlResponse(xml: string, cache = true) {
 }
 
 /**
- * Canonical sitemap index for the whole site.
- * Prefer live disk children; fall back to committed public/sitemap.xml so
- * Google never sees an empty processed index.
+ * Canonical sitemap for the site — flat `<urlset>` of core pages
+ * (cities, pages, services, shop, news, portfolio).
+ * Kennisbank lives under `/sitemaps/sitemap-kennisbank-*.xml` (see robots.txt).
  */
 export async function GET() {
   try {
-    const { xml, files } = buildSitemapIndexFromDisk(process.cwd());
-    if (files.length > 0) {
-      return xmlResponse(xml);
-    }
-
     const staticPath = join(process.cwd(), "public", "sitemap.xml");
     if (existsSync(staticPath)) {
-      const fallback = readFileSync(staticPath, "utf8");
-      if (fallback.includes("<sitemap>") || fallback.includes("<url>")) {
-        return xmlResponse(fallback);
+      const xml = readFileSync(staticPath, "utf8");
+      if (xml.includes("<url>") || xml.includes("<sitemap>")) {
+        return xmlResponse(xml);
       }
     }
-
-    console.error("[sitemap.xml] no child sitemaps on disk — empty index");
-    return xmlResponse(EMPTY_INDEX, false);
+    console.error("[sitemap.xml] missing or empty public/sitemap.xml");
+    return xmlResponse(EMPTY_URLSET, false);
   } catch (error) {
-    console.error("[sitemap.xml] unexpected error — trying static fallback", error);
-    try {
-      const staticPath = join(process.cwd(), "public", "sitemap.xml");
-      if (existsSync(staticPath)) {
-        return xmlResponse(readFileSync(staticPath, "utf8"), false);
-      }
-    } catch {
-      /* fall through */
-    }
-    return xmlResponse(EMPTY_INDEX, false);
+    console.error("[sitemap.xml] unexpected error", error);
+    return xmlResponse(EMPTY_URLSET, false);
   }
 }

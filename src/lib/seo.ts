@@ -143,6 +143,15 @@ export function newsArticlePath(locale: string, id: string) {
   return localizedHref(locale, `/nieuws/${id}`);
 }
 
+/**
+ * ISO/BCP47 tags used as Next.js `alternates.languages` keys (HTML hreflang).
+ * App locale `cnr` is not a valid ISO 639-1 tag — Google ignores/discards it.
+ */
+const HREFLANG_BY_LOCALE: Record<string, string> = {
+  cnr: "sr-ME",
+  no: "nb",
+};
+
 export function hreflangAlternates(pathWithoutLocale: string) {
   const path = pathWithoutLocale.startsWith("/")
     ? pathWithoutLocale
@@ -151,7 +160,8 @@ export function hreflangAlternates(pathWithoutLocale: string) {
     "x-default": absoluteUrl(localizedHref("nl", path === "/" ? "/" : path)),
   };
   for (const lang of enabledLanguages()) {
-    languages[lang.code] = absoluteUrl(
+    const hreflang = HREFLANG_BY_LOCALE[lang.code] || lang.code;
+    languages[hreflang] = absoluteUrl(
       localizedHref(lang.code, path === "/" ? "/" : path),
     );
   }

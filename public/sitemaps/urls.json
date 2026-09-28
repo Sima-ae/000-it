@@ -1,8 +1,13 @@
 {
-  "generatedAt": "2026-09-28T03:54:31.184Z",
+  "generatedAt": "2026-09-28T04:06:37.795Z",
   "localeCount": 35,
   "urlCount": 166670,
+  "coreUrlCount": 394,
   "origin": "https://000-it.com",
+  "robotsSitemaps": [
+    "/sitemap.xml",
+    "/sitemaps/sitemap-kennisbank-index.xml"
+  ],
   "urls": [
     "https://000-it.com/nl/locaties/amsterdam",
     "https://000-it.com/en/locations/amsterdam",

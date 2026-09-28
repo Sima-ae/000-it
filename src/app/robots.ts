@@ -1,6 +1,38 @@
 import type { MetadataRoute } from "next";
+import { existsSync, readFileSync } from "node:fs";
+import { join } from "node:path";
 import { sitemapPublicOrigin } from "@/lib/seo";
 import { ROBOTS_DISALLOW_ALL_AGENTS } from "@/lib/anti-scrape";
+
+function robotsSitemapList(origin: string): string[] {
+  const fallback = [
+    `${origin}/sitemap.xml`,
+    `${origin}/sitemaps/sitemap-kennisbank-index.xml`,
+  ];
+  try {
+    const raw = readFileSync(
+      join(process.cwd(), "public", "sitemaps", "urls.json"),
+      "utf8",
+    );
+    const data = JSON.parse(raw) as { robotsSitemaps?: string[] };
+    if (Array.isArray(data.robotsSitemaps) && data.robotsSitemaps.length) {
+      return data.robotsSitemaps.map((path) =>
+        path.startsWith("http") ? path : `${origin}${path}`,
+      );
+    }
+  } catch {
+    /* use fallback */
+  }
+  // Only advertise kennisbank index when the file exists on disk.
+  if (
+    !existsSync(
+      join(process.cwd(), "public", "sitemaps", "sitemap-kennisbank-index.xml"),
+    )
+  ) {
+    return [`${origin}/sitemap.xml`];
+  }
+  return fallback;
+}
 
 export default function robots(): MetadataRoute.Robots {
   // Always point crawlers at the public production host.
@@ -50,7 +82,8 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: `${origin}/sitemap.xml`,
+    // Core flat sitemap + kennisbank index (GSC reads both).
+    sitemap: robotsSitemapList(origin),
     host: origin,
   };
 }

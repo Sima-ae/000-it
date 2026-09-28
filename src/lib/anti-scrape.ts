@@ -360,6 +360,14 @@ export function applySecurityHeaders(
     headers.set("X-Robots-Tag", "noindex, nofollow, noarchive, nosnippet, noai, noimageai");
     return;
   }
+  // Never put robots directives on sitemap XML — GSC may refuse to process them.
+  if (
+    pathname === "/sitemap.xml" ||
+    (pathname.startsWith("/sitemaps/") && pathname.endsWith(".xml"))
+  ) {
+    headers.delete("X-Robots-Tag");
+    return;
+  }
   // Search engines may index; AI training crawlers should respect noai/noimageai.
   headers.set("X-Robots-Tag", "noai, noimageai");
   if (isKennisbankPath(internalPath, pathname)) {
