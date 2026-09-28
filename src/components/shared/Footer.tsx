@@ -5,8 +5,8 @@ import { SoftLink } from "@/components/shared/SoftLink";
 import { CopyrightBar } from "@/components/shared/CopyrightBar";
 import { BrandLogo } from "@/components/shared/BrandLogo";
 import { FacebookPageEmbed } from "@/components/shared/FacebookPageEmbed";
-import { serviceGroupHref } from "@/content/fixweb/catalog";
-import { catalogGroupTitle } from "@/content/fixweb/catalog-title";
+import { serviceCatalog, serviceGroupHref, serviceHref } from "@/content/fixweb/catalog";
+import { catalogGroupTitle, catalogServiceTitle } from "@/content/fixweb/catalog-title";
 import { localizedHref } from "@/i18n/pathnames";
 
 const WEBMAIL_URL = "https://web-mail.cloud";
@@ -19,34 +19,47 @@ type FooterLink = {
   external?: boolean;
 };
 
-/** Informatie: about, pricing, hosting + legal / FAQ */
+/** Informatie: about, pricing + legal / FAQ / status / kennisbank */
 function buildInfoLinks(locale: string): FooterLink[] {
   return [
     { href: localizedHref(locale, "/over-ons"), key: "about" },
     { href: localizedHref(locale, "/shop"), key: "pricing" },
-    {
-      href: serviceGroupHref(locale, "hosting"),
-      key: null,
-      label: catalogGroupTitle(
-        "hosting",
-        locale,
-        "Hosting",
-      ),
-    },
     { href: localizedHref(locale, "/voorwaarden"), key: "terms", external: true },
     { href: localizedHref(locale, "/cookies"), key: "cookies", external: true },
     { href: localizedHref(locale, "/privacy"), key: "privacy", external: true },
     { href: localizedHref(locale, "/faq"), key: "faq" },
     { href: localizedHref(locale, "/statuspage"), key: "statuspage" },
+    { href: localizedHref(locale, "/kennisbank"), key: "kennisbank" },
   ];
 }
 
-/** Handige links: booking, site sections, webmail */
+function domainsFooterLink(locale: string): FooterLink {
+  const item = serviceCatalog.find((s) => s.slug === "domains");
+  if (item) {
+    return {
+      href: serviceHref(locale, item),
+      key: null,
+      label: catalogServiceTitle(item.slug, locale, item.title),
+    };
+  }
+  return {
+    href: localizedHref(locale, "/domeinen"),
+    key: null,
+    label: "Domains",
+  };
+}
+
+/** Handige links: booking, site sections, hosting, domains, webmail */
 function buildHandyLinks(locale: string): FooterLink[] {
   return [
     { href: localizedHref(locale, "/afspraak"), key: "book" },
     { href: localizedHref(locale, "/diensten"), key: "services" },
-    { href: localizedHref(locale, "/kennisbank"), key: "kennisbank" },
+    {
+      href: serviceGroupHref(locale, "hosting"),
+      key: null,
+      label: catalogGroupTitle("hosting", locale, "Hosting"),
+    },
+    domainsFooterLink(locale),
     { href: localizedHref(locale, "/portfolio"), key: "portfolio" },
     { href: localizedHref(locale, "/nieuws"), key: "blog" },
     { href: localizedHref(locale, "/contact"), key: "contact" },

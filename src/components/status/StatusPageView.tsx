@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { ChevronDown, Plus } from "lucide-react";
 import { Reveal } from "@/components/marketing/Reveal";
 import { cn } from "@/lib/utils";
@@ -14,6 +14,39 @@ import {
 } from "@/lib/statuspage/hostinger";
 
 const POLL_MS = 20_000;
+
+function overallStatusLabel(
+  indicator: string,
+  t: ReturnType<typeof useTranslations<"statuspage">>,
+) {
+  switch ((indicator || "").toLowerCase()) {
+    case "none":
+      return t("allSystemsOperational");
+    case "minor":
+      return t("partiallyDegradedService");
+    case "major":
+      return t("partialSystemOutage");
+    case "critical":
+      return t("majorSystemOutage");
+    default:
+      return t("unavailable");
+  }
+}
+
+function overallStatusSeverity(indicator: string): StatusSeverity {
+  switch ((indicator || "").toLowerCase()) {
+    case "none":
+      return "operational";
+    case "minor":
+      return "degraded_performance";
+    case "major":
+      return "partial_outage";
+    case "critical":
+      return "major_outage";
+    default:
+      return "unknown";
+  }
+}
 
 function statusLabel(
   status: StatusSeverity,
@@ -69,17 +102,22 @@ function dayColor(day: DayStatus) {
   }
 }
 
+function toBcp47(locale: string) {
+  return locale === "nl" || locale.startsWith("nl-") ? "nl-NL" : "en-GB";
+}
+
 function formatUtcRange(from: string, until: string, locale: string) {
   try {
     const a = new Date(from);
     const b = new Date(until);
-    const dateFmt = new Intl.DateTimeFormat(locale, {
+    const intlLocale = toBcp47(locale);
+    const dateFmt = new Intl.DateTimeFormat(intlLocale, {
       month: "short",
       day: "numeric",
       year: "numeric",
       timeZone: "UTC",
     });
-    const timeFmt = new Intl.DateTimeFormat(locale, {
+    const timeFmt = new Intl.DateTimeFormat(intlLocale, {
       hour: "2-digit",
       minute: "2-digit",
       hour12: false,
@@ -93,7 +131,7 @@ function formatUtcRange(from: string, until: string, locale: string) {
 
 function formatPosted(iso: string, locale: string) {
   try {
-    return new Intl.DateTimeFormat(locale, {
+    return new Intl.DateTimeFormat(toBcp47(locale), {
       month: "short",
       day: "numeric",
       year: "numeric",
@@ -190,6 +228,7 @@ function StatusRow({
 
 export function StatusPageView({ initial }: { initial: StatusPagePayload }) {
   const t = useTranslations("statuspage");
+  const locale = useLocale();
   const [data, setData] = useState(() => ({
     ...initial,
     maintenances: pruneExpiredMaintenances(initial.maintenances),
@@ -245,7 +284,6 @@ export function StatusPageView({ initial }: { initial: StatusPagePayload }) {
     };
   }, [refresh]);
 
-  const locale = typeof navigator !== "undefined" ? navigator.language : "en";
   const sourceDown = !data.sourceOk && data.components.length === 0;
 
   return (
@@ -266,18 +304,10 @@ export function StatusPageView({ initial }: { initial: StatusPagePayload }) {
             <p
               className={cn(
                 "mt-3 text-base font-medium",
-                statusColor(
-                  data.indicator === "none" || data.indicator === "minor"
-                    ? data.indicator === "none"
-                      ? "operational"
-                      : "degraded_performance"
-                    : data.indicator === "major" || data.indicator === "critical"
-                      ? "major_outage"
-                      : "partial_outage",
-                ),
+                statusColor(overallStatusSeverity(data.indicator)),
               )}
             >
-              {data.description || t("unavailable")}
+              {overallStatusLabel(data.indicator, t)}
             </p>
           )}
           <p className="mt-2 text-xs text-muted-foreground">

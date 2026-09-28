@@ -270,7 +270,7 @@ export default async function AboutPage({
 
       <section className="mt-8">
         <Reveal>
-          <div className="relative flex min-h-44 flex-col justify-between overflow-hidden rounded-3xl p-5 text-white md:p-6">
+          <div className="relative flex min-h-44 flex-col items-center justify-between overflow-hidden rounded-3xl p-5 text-center text-white md:p-6">
             <div
               className="absolute inset-0"
               aria-hidden
@@ -287,15 +287,15 @@ export default async function AboutPage({
                   "radial-gradient(ellipse 70% 80% at 85% 50%, rgba(255,255,255,0.14), transparent 55%)",
               }}
             />
-            <div className="relative max-w-xl">
+            <div className="relative w-full">
               <p className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
                 {t("readyTitle")}
               </p>
-              <p className="mt-2 text-sm text-white/75 md:text-[15px]">
+              <p className="mt-2 text-sm text-white/75 md:whitespace-nowrap md:text-[15px]">
                 {t("readySubtitle")}
               </p>
             </div>
-            <div className="relative mt-5 flex flex-wrap gap-2.5">
+            <div className="relative mt-5 flex flex-wrap justify-center gap-2.5">
               <Button asChild size="sm" className="rounded-xl bg-white text-primary hover:bg-white/90">
                 <SoftLink href={localizedHref(locale, "/afspraak")}>
                   {tNav("book")}

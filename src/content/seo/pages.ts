@@ -259,16 +259,16 @@ export const staticPageSeo: PageSeo[] = [
     priority: 0.75,
     changeFrequency: "hourly",
     title: {
-      nl: "Status — TripleZero iT",
-      en: "Status — TripleZero iT",
+      nl: "Servers — TripleZero iT",
+      en: "Servers — TripleZero iT",
     },
     description: {
       nl: "Live systeemstatus van TripleZero iT: hosting, e-mail, datacenters, API’s en gepland onderhoud — met uptime over de afgelopen 90 dagen.",
       en: "Live TripleZero iT system status: hosting, email, datacenters, APIs and scheduled maintenance — with uptime over the past 90 days.",
     },
     keywords: {
-      nl: [...CORE_NL, "status", "uptime", "hosting status", "server status"],
-      en: [...CORE_EN, "status", "uptime", "hosting status", "server status"],
+      nl: [...CORE_NL, "servers", "status", "uptime", "hosting status", "server status"],
+      en: [...CORE_EN, "servers", "status", "uptime", "hosting status", "server status"],
     },
   },
   {
