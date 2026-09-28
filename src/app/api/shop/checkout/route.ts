@@ -4,6 +4,7 @@ import type Stripe from "stripe";
 import { auth } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { resolveCartItems, cartTotalsInEuros } from "@/lib/shop/cart";
+import { loadShopCatalogFromDb } from "@/lib/shop/catalog";
 import { getStripe, isStripeConfigured } from "@/lib/shop/stripe";
 import { makeShopOrderNumber } from "@/lib/shop/line-of-business";
 import { siteOrigin } from "@/lib/seo";
@@ -47,6 +48,7 @@ export async function POST(request: Request) {
     }
 
     const { locale, name, email, company, items } = parsed.data;
+    await loadShopCatalogFromDb();
     const totals = resolveCartItems(items);
     if (!totals.lines.length || totals.totalInclCents <= 0) {
       return NextResponse.json({ error: "Cart is empty or invalid" }, { status: 400 });

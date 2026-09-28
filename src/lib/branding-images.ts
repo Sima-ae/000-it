@@ -22,7 +22,7 @@ export const BRANDING_IMAGES = {
   tabletAnalytics: "/branding/images/tablet-02.png",
   /** Soft 3D cloud + server — hosting / webhosting category heroes (no device bezel) */
   hostingWebhosting: "/branding/images/hosting-webhosting.png",
-  /** WordPress admin / dashboard mock — WordPress support category */
+  /** WordPress admin / dashboard mock — WordPress beheer category */
   wordpressDashboard: "/branding/wordpress-dashboard.jpg",
   /** Full analytics overview UI — dashboards, AI scan, reporting */
   dashboardOverview: "/branding/images/dashboard-08.png",
@@ -38,35 +38,36 @@ export const BRANDING_IMAGES = {
 
 export type BrandingImageKey = keyof typeof BRANDING_IMAGES;
 
-/** Homepage collage — three branding photos (larger tiles). */
-export const BRANDING_COLLAGE: readonly string[] = [
-  BRANDING_IMAGES.socialEngagement,
-  BRANDING_IMAGES.dashboardOverview,
-  BRANDING_IMAGES.consultantLaptop,
-];
+/** Homepage strip above pricing — design-studio team photo. */
+export const BRANDING_COLLAGE_IMAGE = "/branding/images/agency-office-team.jpg";
+
+/** Homepage strip between pricing CTA and services — office standup photo. */
+export const BRANDING_SERVICES_IMAGE = "/branding/images/agency-office-wireframe.jpg";
+
+/** Homepage strip above the FAQ — contact desk in the same studio. */
+export const BRANDING_CONTACT_IMAGE = "/branding/images/agency-office-contact.jpg";
+
+/** About page — three moments in the same studio. */
+export const ABOUT_IMAGES = {
+  team: "/branding/images/about-team-review.jpg",
+  focus: "/branding/images/about-desk-focus.jpg",
+  talk: "/branding/images/about-collaboration.jpg",
+} as const;
+
+/** Hero visual for a service category page — office photo per subject. */
+export const SERVICE_GROUP_IMAGES: Record<string, string> = {
+  ai: "/branding/images/service-ai.jpg",
+  optimization: "/branding/images/service-optimization.jpg",
+  marketing: "/branding/images/service-marketing.jpg",
+  webdesign: "/branding/images/service-webdesign.jpg",
+  wordpress: "/branding/images/service-wordpress.jpg",
+  hosting: "/branding/images/service-hosting.jpg",
+  design: "/branding/images/service-design.jpg",
+};
 
 /** Hero / header visual for a service category page. */
-export function brandingImageForServiceGroup(
-  groupId: string,
-): (typeof BRANDING_IMAGES)[BrandingImageKey] {
-  switch (groupId) {
-    case "ai":
-      return BRANDING_IMAGES.socialEngagement;
-    case "optimization":
-      return BRANDING_IMAGES.analyticsDashboard;
-    case "marketing":
-      return BRANDING_IMAGES.duoSuccess;
-    case "webdesign":
-      return BRANDING_IMAGES.development;
-    case "wordpress":
-      return BRANDING_IMAGES.wordpressDashboard;
-    case "hosting":
-      return BRANDING_IMAGES.hostingWebhosting;
-    case "design":
-      return BRANDING_IMAGES.teamWorkshop;
-    default:
-      return BRANDING_IMAGES.teamWorkshop;
-  }
+export function brandingImageForServiceGroup(groupId: string): string {
+  return SERVICE_GROUP_IMAGES[groupId] ?? SERVICE_GROUP_IMAGES.design;
 }
 
 /** Fallback card art when a service has no dedicated `/uploads/fixweb` image. */

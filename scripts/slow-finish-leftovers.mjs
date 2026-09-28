@@ -37,7 +37,7 @@ const BRAND_OK = new Set(
     "WordPress Hosting Basic",
     "WordPress Hosting Plus",
     "WordPress Hosting Pro",
-    "WordPress Support",
+    "WordPress beheer",
     "Social Media Management",
     "Community Management",
     "24/7 support",

@@ -15,9 +15,9 @@ export const footerServiceLinks = [
     href: "/design",
   },
   {
-    slug: "wordpress-support",
-    title: "WordPress Support",
-    titleNl: "WordPress support",
+    slug: "wordpress-beheer",
+    title: "WordPress care",
+    titleNl: "WordPress beheer",
     href: undefined as string | undefined,
   },
   {

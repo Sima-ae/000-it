@@ -157,7 +157,7 @@
   "pricing": {
     "title": "価格設定",
     "subtitle": "21%の付加価値税を含む",
-    "plansHeadline": "AI技術を備えた、あなた自身のウェブショップまたはウェブサイト！",
+    "plansHeadline": "最新のAI技術を備えた、WordPressでのあなた自身の完全なウェブショップまたはウェブサイト！",
     "cta": "プランを選択",
     "ctaContact": "お問い合わせ",
     "starter": "Business",
@@ -219,7 +219,17 @@
     "q2": "無料のAIスキャンはどのように機能しますか？",
     "a2": "URLを入力してください。エージェントがAEO、GEO（ローカル）、SEO、パフォーマンス、AI対応状況を確認し、その後48時間以内にご連絡して結果とすべての選択肢についてお話しします。",
     "q3": "後でダウングレード / アップグレードできますか?",
-    "a3": "はい、プランはいつでも変更できます。"
+    "a3": "はい、プランはいつでも変更できます。",
+    "viewAll": "よくある質問はこちらをクリック"
+  },
+  "wordpressCare": {
+    "title": "WordPress管理",
+    "headline": "あなたのWordPressサイトを毎月管理します。",
+    "withHosting": "ホスティング付き",
+    "withoutHosting": "ホスティングなし",
+    "hostingChoice": "ホスティング",
+    "altWithout": "またはホスティングなしで月額 {price}",
+    "altWith": "またはホスティング付きで月額 {price}"
   },
   "errors": {
     "title": "何か問題が発生しました",

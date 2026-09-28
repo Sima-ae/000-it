@@ -157,7 +157,7 @@
   "pricing": {
     "title": "Prijzen",
     "subtitle": "inclusief 21% BTW",
-    "plansHeadline": "Een eigen volledige webshop of website met de nieuwste AI technologieën!",
+    "plansHeadline": "Een eigen volledige webshop of website in WordPress met de nieuwste AI technologieën!",
     "cta": "Bestellen",
     "ctaContact": "Contact opnemen",
     "starter": "Business",
@@ -219,7 +219,17 @@
     "q2": "Hoe werkt de gratis AI-scan?",
     "a2": "Voer jouw URL in; onze agents controleren op AEO, GEO (lokaal), SEO, performance en AI-readiness, daarna nemen wij binnen 48 uur contact met je op om de resultaten en alle mogelijkheden te bespreken.",
     "q3": "Kan ik later downgraden / upgraden?",
-    "a3": "Ja, het is altijd mogelijk om een plan te wijzigen."
+    "a3": "Ja, het is altijd mogelijk om een plan te wijzigen.",
+    "viewAll": "Klik hier voor alle veelgestelde vragen"
+  },
+  "wordpressCare": {
+    "title": "WordPress beheer",
+    "headline": "Maandelijks beheer van jouw WordPress-website.",
+    "withHosting": "Met hosting",
+    "withoutHosting": "Zonder hosting",
+    "hostingChoice": "Hosting",
+    "altWithout": "of {price} per maand zonder hosting",
+    "altWith": "of {price} per maand met hosting"
   },
   "errors": {
     "title": "Er ging iets mis",
@@ -295,7 +305,7 @@
     "mixedCart": "Hosting en diensten kunnen niet in één bestelling. Verwijder één van beide en rond ze apart af."
   },
   "footer": {
-    "tagline": "Wij bieden diensten en producten voor ondernemers en zzp'ers van AI‑integratie, AEO, GEO en SEO, drukwerk, e‑mail marketing, grafisch design, marketing, onderhoud, online adverteren, optimalisatie, Social Media beheer, webdesign en WordPress-support tot webhosting en domeinnamen",
+    "tagline": "Wij bieden diensten en producten voor ondernemers en zzp'ers van AI‑integratie, AEO, GEO en SEO, drukwerk, e‑mail marketing, grafisch design, marketing, onderhoud, online adverteren, optimalisatie, Social Media beheer, webdesign en WordPress beheer tot webhosting en domeinnamen",
     "rights": "Alle rechten voorbehouden.",
     "usefulLinks": "Handige links",
     "socialMedia": "Sociale media",
@@ -1264,7 +1274,7 @@
   },
   "locations": {
     "title": "Locaties",
-    "subtitle": "TripleZero iT ondersteunt bedrijven wereldwijd met AI‑integratie, AEO, GEO en SEO, drukwerk, e‑mail marketing, grafisch design, marketing, onderhoud, online adverteren, optimalisatie, Social Media beheer, webdesign en WordPress-support tot webhosting en domeinnamen. Zoek of filter op land en kies jouw stad.",
+    "subtitle": "TripleZero iT ondersteunt bedrijven wereldwijd met AI‑integratie, AEO, GEO en SEO, drukwerk, e‑mail marketing, grafisch design, marketing, onderhoud, online adverteren, optimalisatie, Social Media beheer, webdesign en WordPress beheer tot webhosting en domeinnamen. Zoek of filter op land en kies jouw stad.",
     "startFreeAiScan": "Start gratis AI-scan",
     "allServices": "Alle diensten",
     "breadcrumb": "Locaties",

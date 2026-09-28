@@ -5,9 +5,16 @@ import { GlassCard } from "@/components/marketing/GlassCard";
 import { Reveal } from "@/components/marketing/Reveal";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
-import { BRANDING_IMAGES } from "@/lib/branding-images";
+import { HomeServiceCards } from "@/components/marketing/HomeServiceCards";
+import { ABOUT_IMAGES } from "@/lib/branding-images";
 import { buildStaticPageMetadata } from "@/lib/seo";
 import { localizedHref } from "@/i18n/pathnames";
+import {
+  catalogGroupSummary,
+  serviceGroupHref,
+  sortedServiceGroups,
+} from "@/content/fixweb/catalog";
+import { catalogGroupTitle } from "@/content/fixweb/catalog-title";
 
 export async function generateMetadata({
   params,
@@ -17,44 +24,6 @@ export async function generateMetadata({
   const { locale } = await params;
   return buildStaticPageMetadata(locale, "/over-ons");
 }
-
-const pillars = [
-  {
-    titleKey: "pillarAiTitle",
-    descKey: "pillarAiDesc",
-    href: "/diensten/ai-integration",
-  },
-  {
-    titleKey: "pillarOptTitle",
-    descKey: "pillarOptDesc",
-    href: "/diensten/seo-optimization",
-  },
-  {
-    titleKey: "pillarWebTitle",
-    descKey: "pillarWebDesc",
-    href: "/diensten/custom-webdesign",
-  },
-  {
-    titleKey: "pillarWpTitle",
-    descKey: "pillarWpDesc",
-    href: "/diensten/wordpress-error-fix",
-  },
-  {
-    titleKey: "pillarHostTitle",
-    descKey: "pillarHostDesc",
-    href: "/diensten/web-hosting",
-  },
-  {
-    titleKey: "pillarMarketTitle",
-    descKey: "pillarMarketDesc",
-    href: "/diensten/digital-marketing",
-  },
-  {
-    titleKey: "pillarDesignTitle",
-    descKey: "pillarDesignDesc",
-    href: "/grafisch-design",
-  },
-] as const;
 
 const approachSteps = [
   ["approach1Title", "approach1Desc"],
@@ -130,7 +99,7 @@ export default async function AboutPage({
         <Reveal delay={0.05}>
           <div className="relative aspect-4/3 overflow-hidden rounded-3xl bg-muted/40 shadow-sm">
             <Image
-              src={BRANDING_IMAGES.teamWorkshop}
+              src={ABOUT_IMAGES.team}
               alt=""
               fill
               priority
@@ -171,7 +140,7 @@ export default async function AboutPage({
           <div className="grid items-stretch gap-3 lg:grid-cols-[0.9fr_1.1fr]">
             <div className="relative min-h-56 overflow-hidden rounded-3xl bg-muted/40 lg:min-h-full">
               <Image
-                src={BRANDING_IMAGES.workplaceFocus}
+                src={ABOUT_IMAGES.focus}
                 alt=""
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
@@ -246,22 +215,14 @@ export default async function AboutPage({
           </div>
         </Reveal>
 
-        <div className="grid gap-2.5 sm:grid-cols-2 lg:grid-cols-3">
-          {pillars.map((item, i) => (
-            <Reveal key={item.href} delay={Math.min(i, 5) * 0.03}>
-              <SoftLink href={localizedHref(locale, item.href)} className="block h-full">
-                <GlassCard className="h-full p-4 transition hover:border-primary/25 md:p-5">
-                  <h3 className="font-display text-base font-semibold tracking-tight">
-                    {t(item.titleKey)}
-                  </h3>
-                  <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-                    {t(item.descKey)}
-                  </p>
-                </GlassCard>
-              </SoftLink>
-            </Reveal>
-          ))}
-        </div>
+        <HomeServiceCards
+          items={sortedServiceGroups(locale).map((group) => ({
+            id: group.id,
+            href: serviceGroupHref(locale, group.id),
+            title: catalogGroupTitle(group.id, locale, group.title),
+            summary: catalogGroupSummary(group.id, locale),
+          }))}
+        />
       </section>
 
       <section className="mt-9 grid gap-2.5 lg:grid-cols-[0.95fr_1.05fr]">
@@ -269,7 +230,7 @@ export default async function AboutPage({
           <div className="grid h-full gap-2.5 sm:grid-cols-2 lg:grid-cols-1">
             <div className="relative min-h-44 overflow-hidden rounded-3xl bg-muted/40">
               <Image
-                src={BRANDING_IMAGES.collaboration}
+                src={ABOUT_IMAGES.talk}
                 alt=""
                 fill
                 sizes="(max-width: 1024px) 50vw, 30vw"
@@ -310,17 +271,22 @@ export default async function AboutPage({
       <section className="mt-8">
         <Reveal>
           <div className="relative flex min-h-44 flex-col justify-between overflow-hidden rounded-3xl p-5 text-white md:p-6">
-            <div className="absolute inset-0">
-              <Image
-                src={BRANDING_IMAGES.duoSuccess}
-                alt=""
-                fill
-                sizes="(max-width: 1152px) 100vw, 1152px"
-                unoptimized
-                className="object-cover object-center opacity-45"
-              />
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(94,59,136,0.55),transparent_45%),linear-gradient(145deg,rgba(42,24,69,0.88),rgba(20,24,31,0.92)_60%,rgba(15,23,32,0.94))]" />
-            </div>
+            <div
+              className="absolute inset-0"
+              aria-hidden
+              style={{
+                backgroundImage:
+                  "linear-gradient(90deg, #321c4e 0%, #005a68 100%)",
+              }}
+            />
+            <div
+              className="pointer-events-none absolute inset-0 opacity-50"
+              aria-hidden
+              style={{
+                backgroundImage:
+                  "radial-gradient(ellipse 70% 80% at 85% 50%, rgba(255,255,255,0.14), transparent 55%)",
+              }}
+            />
             <div className="relative max-w-xl">
               <p className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
                 {t("readyTitle")}

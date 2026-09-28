@@ -18,9 +18,11 @@ import {
 } from "@/components/ui/accordion";
 import { localizedHref } from "@/i18n/pathnames";
 import { getAiScanCount } from "@/lib/ai-scan-count";
+import { BRANDING_CONTACT_IMAGE, BRANDING_SERVICES_IMAGE } from "@/lib/branding-images";
 import { buildStaticPageMetadata, organizationJsonLd } from "@/lib/seo";
 import {
   loadShopCatalogFromDb,
+  resolvePlanNamesFromCatalog,
   resolvePlanPricesFromCatalog,
 } from "@/lib/shop/catalog";
 import {
@@ -59,11 +61,12 @@ export default async function HomePage({
   const scanCount = getAiScanCount();
   const catalog = await loadShopCatalogFromDb();
   const planPrices = resolvePlanPricesFromCatalog(catalog);
+  const planNames = resolvePlanNamesFromCatalog(catalog, locale);
 
   const plans = [
     {
       id: "starter" as const,
-      name: pricing("starter"),
+      name: planNames.starter || pricing("starter"),
       monthlyPrice: planPrices.starter.monthly,
       yearlyPrice: planPrices.starter.yearly,
       features: pricing.raw("features.starter") as string[],
@@ -71,7 +74,7 @@ export default async function HomePage({
     },
     {
       id: "growth" as const,
-      name: pricing("growth"),
+      name: planNames.growth || pricing("growth"),
       monthlyPrice: planPrices.growth.monthly,
       yearlyPrice: planPrices.growth.yearly,
       features: pricing.raw("features.growth") as string[],
@@ -112,7 +115,33 @@ export default async function HomePage({
         </Reveal>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 pt-10 pb-16 md:px-6 md:pt-12 md:pb-20">
+      <BrandingCollage href={localizedHref(locale, "/diensten")} />
+
+      <PricingPlans
+        plans={plans}
+        labels={{
+          subtitle: shop("subtitle"),
+          categoryTitle: shop("plans"),
+          plansHeadline: pricing("plansHeadline"),
+          monthly: pricing("monthly"),
+          yearly: pricing("yearly"),
+          save: pricing("saveYearly"),
+          perMonth: pricing("month"),
+          perYear: pricing("year"),
+          cta: pricing("cta"),
+          ctaContact: pricing("ctaContact"),
+          custom: pricing("custom"),
+          mostChosen: pricing("mostChosen"),
+          viewAll: pricing("viewAll"),
+        }}
+      />
+
+      <BrandingCollage
+        href={localizedHref(locale, "/diensten")}
+        src={BRANDING_SERVICES_IMAGE}
+      />
+
+      <section className="mx-auto max-w-6xl px-4 pt-10 pb-4 md:px-6 md:pt-12 md:pb-6">
         <Reveal from="up" duration={0.6}>
           <div className="mx-auto mb-10 max-w-2xl text-center">
             <h2 className="font-display text-3xl font-semibold tracking-tight text-primary md:text-5xl">
@@ -140,32 +169,23 @@ export default async function HomePage({
         </Reveal>
       </section>
 
-      <PricingPlans
-        plans={plans}
-        labels={{
-          subtitle: shop("subtitle"),
-          categoryTitle: shop("plans"),
-          plansHeadline: pricing("plansHeadline"),
-          monthly: pricing("monthly"),
-          yearly: pricing("yearly"),
-          save: pricing("saveYearly"),
-          perMonth: pricing("month"),
-          perYear: pricing("year"),
-          cta: pricing("cta"),
-          ctaContact: pricing("ctaContact"),
-          custom: pricing("custom"),
-          mostChosen: pricing("mostChosen"),
-          viewAll: pricing("viewAll"),
-        }}
+      <BrandingCollage
+        href={localizedHref(locale, "/contact")}
+        src={BRANDING_CONTACT_IMAGE}
+        label="Contact"
+        className="pt-6 pb-2 md:pt-8 md:pb-3"
       />
 
-      <section className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
+      <section className="mx-auto max-w-6xl px-4 pt-10 pb-16 md:px-6 md:pt-12 md:pb-20">
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <Reveal from="left" duration={0.6}>
             <h2 className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
               {faq("title")}
             </h2>
             <p className="mt-3 max-w-sm text-muted-foreground">{hero("ctaBannerText")}</p>
+            <Button asChild size="lg" className="mt-5 rounded-2xl px-7">
+              <SoftLink href={localizedHref(locale, "/faq")}>{faq("viewAll")}</SoftLink>
+            </Button>
           </Reveal>
           <Reveal from="right" delay={0.1} duration={0.65}>
             <div className="glass glow-hover relative overflow-hidden rounded-[1.75rem] px-5 md:px-6">
@@ -240,8 +260,6 @@ export default async function HomePage({
           </div>
         </Reveal>
       </section>
-
-      <BrandingCollage href={localizedHref(locale, "/diensten")} />
     </div>
   );
 }

@@ -157,7 +157,7 @@
   "pricing": {
     "title": "Preços",
     "subtitle": "incluindo 21% de IVA",
-    "plansHeadline": "A sua própria loja online ou website com tecnologias de IA!",
+    "plansHeadline": "A sua própria loja online ou website completo em WordPress com as mais recentes tecnologias de IA!",
     "cta": "Escolher plano",
     "ctaContact": "Contate-nos",
     "starter": "Business",
@@ -219,7 +219,17 @@
     "q2": "Como funciona o scan de IA gratuito?",
     "a2": "Introduza o seu URL; os nossos agents verificam AEO, GEO (local), SEO, performance e preparação para IA, e depois contactamo-lo em 48 horas para discutir os resultados e todas as opções.",
     "q3": "Posso fazer downgrade / upgrade mais tarde?",
-    "a3": "Sim, é sempre possível alterar um plano."
+    "a3": "Sim, é sempre possível alterar um plano.",
+    "viewAll": "Clique aqui para todas as perguntas frequentes"
+  },
+  "wordpressCare": {
+    "title": "Gestão WordPress",
+    "headline": "Gestão mensal do seu site WordPress.",
+    "withHosting": "Com alojamento",
+    "withoutHosting": "Sem alojamento",
+    "hostingChoice": "Alojamento",
+    "altWithout": "ou {price} por mês sem alojamento",
+    "altWith": "ou {price} por mês com alojamento"
   },
   "errors": {
     "title": "Algo deu errado",

@@ -157,7 +157,7 @@
   "pricing": {
     "title": "Prissetting",
     "subtitle": "inkludert 21 % mva",
-    "plansHeadline": "Din egen nettbutikk eller nettside med AI-teknologier!",
+    "plansHeadline": "Din egen komplette nettbutikk eller nettside i WordPress med den nyeste AI-teknologien!",
     "cta": "Velg Plan",
     "ctaContact": "Kontakt oss",
     "starter": "Business",
@@ -219,7 +219,17 @@
     "q2": "Hvordan fungerer den gratis AI-skanningen?",
     "a2": "Skriv inn URL-en din; agentene våre sjekker AEO, GEO (lokalt), SEO, ytelse og AI-readiness, deretter tar vi kontakt innen 48 timer for å diskutere resultatene og alle muligheter.",
     "q3": "Kan jeg nedgradere / oppgradere senere?",
-    "a3": "Ja, det er alltid mulig å endre en plan."
+    "a3": "Ja, det er alltid mulig å endre en plan.",
+    "viewAll": "Klikk her for alle vanlige spørsmål"
+  },
+  "wordpressCare": {
+    "title": "WordPress-vedlikehold",
+    "headline": "Månedlig vedlikehold av nettstedet ditt i WordPress.",
+    "withHosting": "Med hosting",
+    "withoutHosting": "Uten hosting",
+    "hostingChoice": "Hosting",
+    "altWithout": "eller {price} per måned uten hosting",
+    "altWith": "eller {price} per måned med hosting"
   },
   "errors": {
     "title": "Noe gikk galt",

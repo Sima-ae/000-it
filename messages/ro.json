@@ -157,7 +157,7 @@
   "pricing": {
     "title": "Prețuri",
     "subtitle": "inclusiv TVA 21%.",
-    "plansHeadline": "Propriul tău magazin online sau site web cu tehnologii AI!",
+    "plansHeadline": "Propriul tău magazin online sau site web complet în WordPress cu cele mai noi tehnologii AI!",
     "cta": "Alege planul",
     "ctaContact": "Contactaţi-ne",
     "starter": "Business",
@@ -219,7 +219,17 @@
     "q2": "Cum funcționează scanarea AI gratuită?",
     "a2": "Introdu URL-ul tău; agenții noștri verifică AEO, GEO (local), SEO, performanța și pregătirea pentru AI, apoi te contactăm în 48 de ore pentru a discuta rezultatele și toate opțiunile.",
     "q3": "Pot face downgrade / upgrade mai târziu?",
-    "a3": "Da, este întotdeauna posibil să schimbați un plan."
+    "a3": "Da, este întotdeauna posibil să schimbați un plan.",
+    "viewAll": "Faceți clic aici pentru toate întrebările frecvente"
+  },
+  "wordpressCare": {
+    "title": "Administrare WordPress",
+    "headline": "Administrare lunară a site-ului tău WordPress.",
+    "withHosting": "Cu găzduire",
+    "withoutHosting": "Fără găzduire",
+    "hostingChoice": "Găzduire",
+    "altWithout": "sau {price} pe lună fără găzduire",
+    "altWith": "sau {price} pe lună cu găzduire"
   },
   "errors": {
     "title": "Ceva a mers prost",

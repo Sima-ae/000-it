@@ -157,7 +157,7 @@
   "pricing": {
     "title": "Ceny",
     "subtitle": "w tym 21% VAT",
-    "plansHeadline": "Własny sklep internetowy lub strona www z technologiami AI!",
+    "plansHeadline": "Własny kompletny sklep internetowy lub strona www w WordPress z najnowszymi technologiami AI!",
     "cta": "Wybierz plan",
     "ctaContact": "Skontaktuj się z nami",
     "starter": "Business",
@@ -219,7 +219,17 @@
     "q2": "Jak działa darmowy skan AI?",
     "a2": "Wpisz swój adres URL; nasi agenci sprawdzają AEO, GEO (lokalne), SEO, wydajność i gotowość AI, a następnie kontaktujemy się z Tobą w ciągu 48 godzin, aby omówić wyniki i wszystkie możliwości.",
     "q3": "Czy mogę później obniżyć / podwyższyć plan?",
-    "a3": "Tak, zawsze można zmienić plan."
+    "a3": "Tak, zawsze można zmienić plan.",
+    "viewAll": "Kliknij tutaj, aby zobaczyć wszystkie najczęściej zadawane pytania"
+  },
+  "wordpressCare": {
+    "title": "Opieka WordPress",
+    "headline": "Miesięczna opieka nad Twoją stroną WordPress.",
+    "withHosting": "Z hostingiem",
+    "withoutHosting": "Bez hostingu",
+    "hostingChoice": "Hosting",
+    "altWithout": "lub {price} miesięcznie bez hostingu",
+    "altWith": "lub {price} miesięcznie z hostingiem"
   },
   "errors": {
     "title": "Coś poszło nie tak",

@@ -157,7 +157,7 @@
   "pricing": {
     "title": "Cijene",
     "subtitle": "uključujući 21% PDV-a",
-    "plansHeadline": "Vlastita webshop ili web stranica s AI tehnologijama!",
+    "plansHeadline": "Vlastita potpuna webshop ili web stranica u WordPressu s najnovijim AI tehnologijama!",
     "cta": "Odaberi plan",
     "ctaContact": "Kontaktiraj nas",
     "starter": "Business",
@@ -219,7 +219,17 @@
     "q2": "Kako funkcionira besplatni AI scan?",
     "a2": "Unesite svoj URL; naši agenti provjeravaju AEO, GEO (lokalno), SEO, performanse i AI-readiness, zatim vas kontaktiramo unutar 48 sati kako bismo prodiskutirali rezultate i sve mogućnosti.",
     "q3": "Mogu li kasnije smanjiti / nadograditi plan?",
-    "a3": "Da, plan je uvijek moguće promijeniti."
+    "a3": "Da, plan je uvijek moguće promijeniti.",
+    "viewAll": "Kliknite ovdje za sva česta pitanja"
+  },
+  "wordpressCare": {
+    "title": "WordPress održavanje",
+    "headline": "Mjesečno održavanje vaše WordPress stranice.",
+    "withHosting": "S hostingom",
+    "withoutHosting": "Bez hostinga",
+    "hostingChoice": "Hosting",
+    "altWithout": "ili {price} mjesečno bez hostinga",
+    "altWith": "ili {price} mjesečno s hostingom"
   },
   "errors": {
     "title": "Nešto nije u redu",

@@ -157,7 +157,7 @@
   "pricing": {
     "title": "定价",
     "subtitle": "包括 21% 增值税",
-    "plansHeadline": "拥有 AI 技术的专属网店或网站！",
+    "plansHeadline": "拥有最新 AI 技术的完整专属 WordPress 网店或网站！",
     "cta": "选择计划",
     "ctaContact": "联系我们",
     "starter": "Business",
@@ -219,7 +219,17 @@
     "q2": "免费 AI 扫描如何运作？",
     "a2": "输入您的网址；我们的代理会检查 AEO、GEO（本地）、SEO、性能与 AI 就绪情况，随后我们会在 48 小时内与您联系，讨论结果和所有选项。",
     "q3": "以后可以降级 / 升级吗？",
-    "a3": "是的，随时可以更改套餐。"
+    "a3": "是的，随时可以更改套餐。",
+    "viewAll": "点击此处查看所有常见问题"
+  },
+  "wordpressCare": {
+    "title": "WordPress 维护",
+    "headline": "为你的 WordPress 网站提供每月维护。",
+    "withHosting": "含主机",
+    "withoutHosting": "不含主机",
+    "hostingChoice": "主机",
+    "altWithout": "或每月 {price}（不含主机）",
+    "altWith": "或每月 {price}（含主机）"
   },
   "errors": {
     "title": "出了点问题",

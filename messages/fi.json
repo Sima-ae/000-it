@@ -157,7 +157,7 @@
   "pricing": {
     "title": "Hinnoittelu",
     "subtitle": "sisältää arvonlisäveron 21 %",
-    "plansHeadline": "Oma verkkokauppa tai verkkosivusto AI-teknologioilla!",
+    "plansHeadline": "Oma täydellinen verkkokauppa tai verkkosivusto WordPressissä uusimmilla AI-teknologioilla!",
     "cta": "Valitse Suunnitelma",
     "ctaContact": "Ota yhteyttä",
     "starter": "Business",
@@ -219,7 +219,17 @@
     "q2": "Miten ilmainen AI-skannaus toimii?",
     "a2": "Syötä URL-osoitteesi; agenttimme tarkistavat AEO:n, GEO:n (paikallinen), SEO:n, suorituskyvyn ja AI-valmiuden, minkä jälkeen otamme yhteyttä 48 tunnin kuluessa tulosten ja kaikkien vaihtoehtojen käsittelystä.",
     "q3": "Voinko myöhemmin vaihtaa alempaan / ylempään suunnitelmaan?",
-    "a3": "Kyllä, suunnitelman muuttaminen on aina mahdollista."
+    "a3": "Kyllä, suunnitelman muuttaminen on aina mahdollista.",
+    "viewAll": "Klikkaa tästä nähdäksesi kaikki usein kysytyt kysymykset"
+  },
+  "wordpressCare": {
+    "title": "WordPress-ylläpito",
+    "headline": "Kuukausittainen ylläpito WordPress-sivustollesi.",
+    "withHosting": "Hostingin kanssa",
+    "withoutHosting": "Ilman hostingia",
+    "hostingChoice": "Hosting",
+    "altWithout": "tai {price} kuukaudessa ilman hostingia",
+    "altWith": "tai {price} kuukaudessa hostingin kanssa"
   },
   "errors": {
     "title": "Jotain meni pieleen",

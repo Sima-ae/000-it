@@ -6,20 +6,15 @@ import { brandingImageForServiceGroup } from "@/lib/branding-images";
 import { localizedHref } from "@/i18n/pathnames";
 import { cn } from "@/lib/utils";
 
-const TOP_LEFT_GROUPS = new Set(["wordpress", "optimization"]);
+function imageClassForGroup(_groupId: string) {
+  return "object-cover object-center";
+}
 
 type JumpLink = {
   key: string;
   id: string;
   label: string;
 };
-
-function imageClassForGroup(groupId: string) {
-  if (TOP_LEFT_GROUPS.has(groupId)) {
-    return "object-cover object-top-left";
-  }
-  return "object-cover object-center";
-}
 
 function JumpChips({
   locale,

@@ -1,51 +1,27 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
 import { PricingPlans } from "@/components/marketing/PricingPlans";
+import { WordPressCarePlansSection } from "@/components/marketing/WordPressCarePlansSection";
 import { ShopProductCard } from "@/components/shop/ShopProductCard";
 import { ShopHostingSection } from "@/components/shop/ShopHostingSection";
-import { ShopSupportSection } from "@/components/shop/ShopSupportSection";
 import { Reveal } from "@/components/marketing/Reveal";
 import { BRANDING_IMAGES } from "@/lib/branding-images";
 import {
+  HOSTING_YEARLY_SLUGS,
   isSupportPackageSlug,
+  isWpCareSlug,
   loadShopCatalogFromDb,
   localizeShopProduct,
+  resolvePlanNamesFromCatalog,
   resolvePlanPricesFromCatalog,
+  SHARED_HOSTING_SLUG_ORDER,
+  shopProductsInSlugOrder,
+  VPS_HOSTING_SLUG_ORDER,
+  WORDPRESS_HOSTING_SLUG_ORDER,
   type ShopProduct,
 } from "@/lib/shop/catalog";
 
 export const dynamic = "force-dynamic";
-
-const SHARED_HOSTING_SLUG_ORDER = [
-  "shared-hosting-basic",
-  "shared-hosting-business",
-  "shared-hosting-plus",
-] as const;
-
-const WORDPRESS_HOSTING_SLUG_ORDER = [
-  "wordpress-hosting-basic",
-  "wordpress-hosting-business",
-  "wordpress-hosting-plus",
-] as const;
-
-const VPS_HOSTING_SLUG_ORDER = [
-  "vps-hosting-basic",
-  "vps-hosting-business",
-  "vps-hosting-plus",
-] as const;
-
-const HOSTING_SLUGS = new Set<string>([
-  ...SHARED_HOSTING_SLUG_ORDER,
-  ...WORDPRESS_HOSTING_SLUG_ORDER,
-  ...VPS_HOSTING_SLUG_ORDER,
-]);
-
-function sortBySlugOrder(products: ShopProduct[], order: readonly string[]) {
-  const rank = new Map<string, number>(order.map((slug, index) => [slug, index]));
-  return [...products].sort(
-    (a, b) => (rank.get(a.slug) ?? 999) - (rank.get(b.slug) ?? 999),
-  );
-}
 
 function sortServiceProducts(products: ShopProduct[], locale: string) {
   return [...products].sort((a, b) => {
@@ -66,43 +42,34 @@ export default async function ShopPage({
   const pricing = await getTranslations("pricing");
   const catalog = await loadShopCatalogFromDb();
   const planPrices = resolvePlanPricesFromCatalog(catalog);
-  const supportServices = catalog.filter(
-    (p) =>
-      (p.type === "service" || p.type === "product") &&
-      isSupportPackageSlug(p.slug),
-  );
+  const planNames = resolvePlanNamesFromCatalog(catalog, locale);
   const catalogProducts = catalog.filter(
     (p) =>
       (p.type === "service" || p.type === "product") &&
-      !isSupportPackageSlug(p.slug),
+      !isSupportPackageSlug(p.slug) &&
+      !isWpCareSlug(p.slug),
   );
-  const sharedHostingProducts = sortBySlugOrder(
-    catalogProducts.filter((p) =>
-      (SHARED_HOSTING_SLUG_ORDER as readonly string[]).includes(p.slug),
-    ),
+  const sharedHostingProducts = shopProductsInSlugOrder(
+    catalogProducts,
     SHARED_HOSTING_SLUG_ORDER,
   );
-  const wordpressHostingProducts = sortBySlugOrder(
-    catalogProducts.filter((p) =>
-      (WORDPRESS_HOSTING_SLUG_ORDER as readonly string[]).includes(p.slug),
-    ),
+  const wordpressHostingProducts = shopProductsInSlugOrder(
+    catalogProducts,
     WORDPRESS_HOSTING_SLUG_ORDER,
   );
-  const vpsHostingProducts = sortBySlugOrder(
-    catalogProducts.filter((p) =>
-      (VPS_HOSTING_SLUG_ORDER as readonly string[]).includes(p.slug),
-    ),
+  const vpsHostingProducts = shopProductsInSlugOrder(
+    catalogProducts,
     VPS_HOSTING_SLUG_ORDER,
   );
   const serviceProducts = sortServiceProducts(
-    catalogProducts.filter((p) => !HOSTING_SLUGS.has(p.slug)),
+    catalogProducts.filter((p) => !HOSTING_YEARLY_SLUGS.has(p.slug)),
     locale,
   );
 
   const plans = [
     {
       id: "starter" as const,
-      name: pricing("starter"),
+      name: planNames.starter || pricing("starter"),
       monthlyPrice: planPrices.starter.monthly,
       yearlyPrice: planPrices.starter.yearly,
       features: pricing.raw("features.starter") as string[],
@@ -110,7 +77,7 @@ export default async function ShopPage({
     },
     {
       id: "growth" as const,
-      name: pricing("growth"),
+      name: planNames.growth || pricing("growth"),
       monthlyPrice: planPrices.growth.monthly,
       yearlyPrice: planPrices.growth.yearly,
       features: pricing.raw("features.growth") as string[],
@@ -163,11 +130,9 @@ export default async function ShopPage({
         }}
       />
 
-      <p className="mx-auto mt-6 max-w-2xl text-center text-muted-foreground">
+      <p className="mx-auto mt-6 max-w-2xl text-center text-sm text-muted-foreground">
         {t("subtitle")}
       </p>
-
-      <ShopSupportSection title={t("support")} products={supportServices} />
 
       <ShopHostingSection
         title={t("sharedHosting")}
@@ -183,6 +148,10 @@ export default async function ShopPage({
         title={t("vpsHosting")}
         products={vpsHostingProducts}
       />
+
+      <div className="mt-16">
+        <WordPressCarePlansSection showTitle />
+      </div>
 
       {serviceProducts.length > 0 ? (
         <section className="mt-16 text-center">

@@ -475,7 +475,7 @@ export function ShopAdminForm({
                 id="tags"
                 value={form.tags}
                 onChange={(e) => setField("tags", e.target.value)}
-                placeholder="wordpress-support, monthly"
+                placeholder="wordpress-beheer, monthly"
                 className="rounded-xl bg-background"
               />
             </Field>

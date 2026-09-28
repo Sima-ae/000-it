@@ -222,15 +222,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/ai-in-wordpress" />
   </url>
   <url>
-    <loc>https://000-it.com/nl/diensten/wordpress-support</loc>
+    <loc>https://000-it.com/nl/diensten/wordpress-beheer</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/wordpress-support" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/wordpress-support" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/wordpress-support" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/diensten/wordpress-beheer" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/services/wordpress-beheer" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/dienstleistungen/wordpress-beheer" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/services/assistance-wordpress" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/wordpress-support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/diensten/wordpress-beheer" />
   </url>
   <url>
     <loc>https://000-it.com/nl/diensten/bugs-en-errors-verhelpen</loc>

@@ -27,7 +27,7 @@ const groupSummariesEn = {
   ai: "Chatbots, workflows, AI in websites and shops, integration and AI consultancy.",
   optimization:
     "AEO, GEO, SEO, e-commerce SEO, copy, CRO, speed, analytics and accessibility — so your site is found and converts.",
-  wordpress: "Maintenance, security, malware removal, speed, backups and WordPress support.",
+  wordpress: "Maintenance, security, malware removal, speed, backups and WordPress beheer.",
   webdesign: "Custom websites, conversion, security, speed and Next.js development.",
   design: "Logos, branding, flyers, magazines, print and digital design.",
   marketing: "Content, social media, ads, e-commerce, media and community management.",
@@ -37,7 +37,7 @@ const groupSummariesNl = {
   ai: "Chatbots, workflows, AI in websites en shops, integratie en AI-advies.",
   optimization:
     "AEO, GEO, SEO, e-commerce SEO, teksten, CRO, snelheid, analytics en toegankelijkheid — zodat je site gevonden wordt én converteert.",
-  wordpress: "Onderhoud, security, malware, snelheid, backups en WordPress-support.",
+  wordpress: "Onderhoud, security, malware, snelheid, backups en WordPress beheer.",
   webdesign: "Maatwerk websites, conversie, security, snelheid en Next.js-ontwikkeling.",
   design: "Logo's, branding, flyers, magazines, drukwerk en digital design.",
   marketing: "Content, social media, ads, e-commerce, media en community management.",

@@ -38,7 +38,7 @@ const nl: FaqContent = {
       id: "algemeen",
       title: "Algemeen",
       items: [
-        q("alg-1", "Wat doet TripleZero iT precies?", "TripleZero iT combineert webdesign, WordPress-support, digital marketing, zoekzichtbaarheid (AEO, GEO/lokaal en SEO), design en hosting. We helpen merken sneller gevonden te worden, betere websites te bouwen en meetbaar te groeien."),
+        q("alg-1", "Wat doet TripleZero iT precies?", "TripleZero iT combineert webdesign, WordPress beheer, digital marketing, zoekzichtbaarheid (AEO, GEO/lokaal en SEO), design en hosting. We helpen merken sneller gevonden te worden, betere websites te bouwen en meetbaar te groeien."),
         q("alg-2", "Hoe begin ik met TripleZero iT?", "Neem contact op of plan een afspraak. We doen een korte intake, kijken naar doelen en stack, en stellen daarna een concreet voorstel op met planning en KPI’s."),
         q("alg-3", "Voor welke bedrijven werken jullie?", "We werken voor MKB, scale-ups, e-commerce, agencies en internationale merken. Dat kan naast een bestaand team, of als full-service partner."),
         q("alg-4", "Werken jullie alleen in Nederland?", "Nee. We bedienen klanten in Azië, Europa, de VAE en de USA, met Nederlandstalige én Engelstalige trajecten."),
@@ -172,7 +172,7 @@ const nl: FaqContent = {
       id: "support",
       title: "Support",
       items: [
-        q("sup-1", "Welke support bieden jullie?", "We bieden WordPress-support, maatwerk website-support, tickets en live chat, onderhoud, security, performance en incident response."),
+        q("sup-1", "Welke support bieden jullie?", "We bieden WordPress beheer, maatwerk website-support, tickets en live chat, onderhoud, security, performance en incident response."),
         q("sup-2", "Hoe bereik ik support?", "Via contact, een afspraak, tickets in het dashboard of live chat op de site. Spoedcases markeren we als prioriteit."),
         q("sup-3", "Wat is jullie responstijd?", "We mikken op een snelle eerste response, vaak binnen één werkdag. Bij kritieke downtime reageren we sneller. De exacte SLA’s staan in de supportpakketten."),
         q("sup-4", "Bieden jullie 24/7 monitoring?", "Ja, in relevante support- en hostingpakketten: monitoring, backups en alerts, zodat problemen eerder zichtbaar zijn."),
@@ -244,7 +244,7 @@ const en: FaqContent = {
       id: "general",
       title: "General",
       items: [
-        q("gen-1", "What does TripleZero iT do exactly?", "TripleZero iT combines webdesign, WordPress support, digital marketing, search visibility (AEO, GEO/local and SEO), design and hosting. We help brands get found faster, build better websites and grow in a measurable way."),
+        q("gen-1", "What does TripleZero iT do exactly?", "TripleZero iT combines webdesign, WordPress care, digital marketing, search visibility (AEO, GEO/local and SEO), design and hosting. We help brands get found faster, build better websites and grow in a measurable way."),
         q("gen-2", "How do I get started with TripleZero iT?", "Contact us or book an appointment. We run a short intake, review goals and stack, then prepare a concrete proposal with planning and KPIs."),
         q("gen-3", "Which types of businesses do you work with?", "We work with SMBs, scale-ups, ecommerce, agencies and international brands. That can be alongside an existing team, or as a full-service partner."),
         q("gen-4", "Do you only work in the Netherlands?", "No. We serve clients across Asia, Europe, the UAE and the USA, with Dutch-language and English-language engagements."),
@@ -378,7 +378,7 @@ const en: FaqContent = {
       id: "support",
       title: "Support",
       items: [
-        q("sup-1", "What support do you offer?", "We offer WordPress support, custom website support, tickets and live chat, maintenance, security, performance and incident response."),
+        q("sup-1", "What support do you offer?", "We offer WordPress care, custom website support, tickets and live chat, maintenance, security, performance and incident response."),
         q("sup-2", "How do I reach support?", "Via contact, an appointment, tickets in the dashboard or live chat on the site. Urgent cases are marked as priority."),
         q("sup-3", "What is your response time?", "We aim for a fast first response, often within one business day. For critical downtime we respond faster. Exact SLAs are in the support packages."),
         q("sup-4", "Do you offer 24/7 monitoring?", "Yes, in relevant support and hosting packages: monitoring, backups and alerts so problems become visible earlier."),

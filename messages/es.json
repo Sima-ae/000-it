@@ -157,7 +157,7 @@
   "pricing": {
     "title": "Precios",
     "subtitle": "incluido el 21% de IVA",
-    "plansHeadline": "¡Tu propia tienda online o sitio web con tecnologías de IA!",
+    "plansHeadline": "¡Tu propia tienda online o sitio web completo en WordPress con las últimas tecnologías de IA!",
     "cta": "Elegir plan",
     "ctaContact": "Contáctenos",
     "starter": "Business",
@@ -219,7 +219,17 @@
     "q2": "¿Cómo funciona el escaneo de IA gratuito?",
     "a2": "Introduce tu URL; nuestros agentes revisan AEO, GEO (local), SEO, rendimiento y preparación para la IA, y luego te contactamos en un plazo de 48 horas para hablar de los resultados y todas las opciones.",
     "q3": "¿Puedo bajar / subir de plan más tarde?",
-    "a3": "Sí, siempre es posible cambiar de plan."
+    "a3": "Sí, siempre es posible cambiar de plan.",
+    "viewAll": "Haz clic aquí para todas las preguntas frecuentes"
+  },
+  "wordpressCare": {
+    "title": "Gestión de WordPress",
+    "headline": "Gestión mensual de tu sitio WordPress.",
+    "withHosting": "Con hosting",
+    "withoutHosting": "Sin hosting",
+    "hostingChoice": "Hosting",
+    "altWithout": "o {price} al mes sin hosting",
+    "altWith": "o {price} al mes con hosting"
   },
   "errors": {
     "title": "algo salió mal",

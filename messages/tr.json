@@ -157,7 +157,7 @@
   "pricing": {
     "title": "Fiyatlandırma",
     "subtitle": "%21 KDV dahil",
-    "plansHeadline": "AI teknolojileriyle kendi web mağazanız veya web siteniz!",
+    "plansHeadline": "WordPress'te en yeni AI teknolojileriyle kendi eksiksiz web mağazanız veya web siteniz!",
     "cta": "Planı Seçin",
     "ctaContact": "Bize ulaşın",
     "starter": "Business",
@@ -219,7 +219,17 @@
     "q2": "Ücretsiz AI taraması nasıl çalışır?",
     "a2": "URL’nizi girin; ajanlarımız AEO, GEO (yerel), SEO, performansı ve AI hazırlığını kontrol eder, ardından sonuçları ve tüm seçenekleri görüşmek için 48 saat içinde sizinle iletişime geçeriz.",
     "q3": "Daha sonra düşürebilir / yükseltebilir miyim?",
-    "a3": "Evet, bir planı her zaman değiştirmek mümkündür."
+    "a3": "Evet, bir planı her zaman değiştirmek mümkündür.",
+    "viewAll": "Tüm sık sorulan sorular için buraya tıklayın"
+  },
+  "wordpressCare": {
+    "title": "WordPress bakımı",
+    "headline": "WordPress web siteniz için aylık bakım.",
+    "withHosting": "Hosting ile",
+    "withoutHosting": "Hosting olmadan",
+    "hostingChoice": "Hosting",
+    "altWithout": "veya ayda {price} hosting olmadan",
+    "altWith": "veya ayda {price} hosting ile"
   },
   "errors": {
     "title": "Bir şeyler ters gitti",

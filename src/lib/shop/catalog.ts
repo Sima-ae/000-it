@@ -4,6 +4,16 @@ import { getProductI18n } from "@/content/fixweb/product-i18n";
 import { brandify } from "@/lib/brandify";
 import type { ShopAdminBillingInterval } from "@/lib/shop/admin";
 import { eurosToCents } from "@/lib/shop/vat";
+import {
+  WP_CARE_HOSTING_FEATURE_INDEX,
+  WP_CARE_KEYS,
+  WP_CARE_PRICES,
+  wpCarePackageCopy,
+  wpCareProductId,
+  wpCareSlug,
+  type WpCareHosting,
+  type WpCareKey,
+} from "@/content/wordpress-care";
 
 export type ShopBillingPeriod = "monthly" | "yearly";
 export type ShopProductType = "plan" | "service" | "product";
@@ -46,20 +56,43 @@ export type ShopProduct = {
   tags?: string[];
 };
 
-/** Hosting plans listed monthly but sold as a 12-month package. */
-export const HOSTING_YEARLY_SLUGS = new Set([
+/** Shop and hosting-category column order. */
+export const SHARED_HOSTING_SLUG_ORDER = [
   "shared-hosting-basic",
-  "shared-hosting-plus",
   "shared-hosting-business",
+  "shared-hosting-plus",
+] as const;
+
+export const WORDPRESS_HOSTING_SLUG_ORDER = [
   "wordpress-hosting-basic",
-  "wordpress-hosting-plus",
   "wordpress-hosting-business",
+  "wordpress-hosting-plus",
+] as const;
+
+export const VPS_HOSTING_SLUG_ORDER = [
   "vps-hosting-basic",
-  "vps-hosting-plus",
   "vps-hosting-business",
+  "vps-hosting-plus",
+] as const;
+
+/** Hosting plans listed monthly but sold as a 12-month package. */
+export const HOSTING_YEARLY_SLUGS = new Set<string>([
+  ...SHARED_HOSTING_SLUG_ORDER,
+  ...WORDPRESS_HOSTING_SLUG_ORDER,
+  ...VPS_HOSTING_SLUG_ORDER,
 ]);
 
-/** WordPress support packages with monthly + discounted yearly billing. */
+export function shopProductsInSlugOrder(
+  products: ShopProduct[],
+  order: readonly string[],
+) {
+  const rank = new Map<string, number>(order.map((slug, index) => [slug, index]));
+  return products
+    .filter((product) => rank.has(product.slug))
+    .sort((a, b) => (rank.get(a.slug) ?? 999) - (rank.get(b.slug) ?? 999));
+}
+
+/** WordPress care packages with monthly + discounted yearly billing. */
 export const SUPPORT_PACKAGE_KEYS = ["pro", "double", "premium"] as const;
 export type SupportPackageKey = (typeof SUPPORT_PACKAGE_KEYS)[number];
 
@@ -90,6 +123,14 @@ export function supportProductId(
 ) {
   return `service-${supportPackageSlug(key, period)}`;
 }
+
+export {
+  WP_CARE_KEYS,
+  wpCareProductId,
+  isWpCareSlug,
+  type WpCareKey,
+  type WpCareHosting,
+} from "@/content/wordpress-care";
 
 export function isSupportPackageSlug(slug: string) {
   return (
@@ -147,6 +188,65 @@ const PLAN_MONTHLY_EUR = {
 
 function yearlyFromMonthly(monthly: number) {
   return Math.round(monthly * 12 * 0.9 * 100) / 100;
+}
+
+const PLAN_PERIOD_SUFFIX = /\s*\((maandelijks|jaarlijks|monthly|yearly)\)\s*$/i;
+
+/** Column title from the saved shop product, without the billing-period suffix. */
+export function resolvePlanNamesFromCatalog(catalog: ShopProduct[], locale: string) {
+  const lang = locale === "nl" ? "nl" : "en";
+
+  function nameFor(slugs: string[]) {
+    for (const slug of slugs) {
+      const product = catalog.find((item) => item.slug === slug);
+      if (!product) continue;
+      const raw = (product.name[lang] || product.name.en || product.name.nl || "").replace(
+        PLAN_PERIOD_SUFFIX,
+        "",
+      ).trim();
+      if (raw) return raw;
+    }
+    return null;
+  }
+
+  return {
+    starter: nameFor(["plan-starter-monthly", "plan-starter-yearly"]),
+    growth: nameFor(["plan-growth-monthly", "plan-growth-yearly"]),
+  };
+}
+
+/** WordPress care column prices (euros, incl. VAT) from saved shop products. */
+export function resolveWpCarePricesFromCatalog(catalog: ShopProduct[]) {
+  const bySlug = new Map(catalog.map((product) => [product.slug, product]));
+
+  function euros(key: WpCareKey, hosting: WpCareHosting, fallback: number) {
+    const product = bySlug.get(wpCareSlug(key, hosting));
+    if (!product) return fallback;
+    return shopUnitPriceInclCents(product) / 100;
+  }
+
+  return {
+    business: {
+      withHosting: euros("business", "with", WP_CARE_PRICES.business.withHosting),
+      withoutHosting: euros("business", "without", WP_CARE_PRICES.business.withoutHosting),
+    },
+    businessPro: {
+      withHosting: euros("businessPro", "with", WP_CARE_PRICES.businessPro.withHosting),
+      withoutHosting: euros(
+        "businessPro",
+        "without",
+        WP_CARE_PRICES.businessPro.withoutHosting,
+      ),
+    },
+    enterprise: {
+      withHosting: euros("enterprise", "with", WP_CARE_PRICES.enterprise.withHosting),
+      withoutHosting: euros(
+        "enterprise",
+        "without",
+        WP_CARE_PRICES.enterprise.withoutHosting,
+      ),
+    },
+  } satisfies typeof WP_CARE_PRICES;
 }
 
 /** Resolve AI plan display prices (euros) from shop catalog rows. */
@@ -332,11 +432,11 @@ function buildSupportProducts(): ShopProduct[] {
         image,
         billingPeriod: period,
         billingInterval: period,
-        category: "wordpress-support",
+        category: "wordpress-beheer",
         featured: key === "double",
         published: true,
         sortOrder: sortBase + (period === "yearly" ? 3 : 0),
-        tags: ["wordpress-support", key, period],
+        tags: ["wordpress-beheer", key, period],
       });
     }
   }
@@ -384,12 +484,84 @@ function buildServiceProducts(): ShopProduct[] {
   });
 }
 
+function buildWpCareProducts(): ShopProduct[] {
+  const products: ShopProduct[] = [];
+
+  for (const key of WP_CARE_KEYS) {
+    const nl = wpCarePackageCopy("nl", key);
+    const en = wpCarePackageCopy("en", key);
+    const prices = WP_CARE_PRICES[key];
+    const sortBase = key === "business" ? 30 : key === "businessPro" ? 31 : 32;
+
+    for (const hosting of ["with", "without"] as const satisfies readonly WpCareHosting[]) {
+      const slug = wpCareSlug(key, hosting);
+      const price = hosting === "with" ? prices.withHosting : prices.withoutHosting;
+      const featuresNl =
+        hosting === "with"
+          ? nl.features
+          : nl.features.filter((_, index) => index !== WP_CARE_HOSTING_FEATURE_INDEX);
+      const featuresEn =
+        hosting === "with"
+          ? en.features
+          : en.features.filter((_, index) => index !== WP_CARE_HOSTING_FEATURE_INDEX);
+      const hostingNl = hosting === "with" ? "met hosting" : "zonder hosting";
+      const hostingEn = hosting === "with" ? "with hosting" : "without hosting";
+      const noteNl =
+        hosting === "with"
+          ? "Inclusief groene razendsnelle hosting."
+          : "Hosting is niet inbegrepen.";
+      const noteEn =
+        hosting === "with"
+          ? "Includes green high-speed hosting."
+          : "Hosting is not included.";
+
+      products.push({
+        id: wpCareProductId(key, hosting),
+        sku: `SVC-WP-CARE-${slug.replace(/[^a-z0-9]+/gi, "-").toUpperCase()}`.slice(0, 64),
+        slug,
+        type: "service",
+        name: {
+          nl: `WordPress ${nl.name} (maandelijks, ${hostingNl})`,
+          en: `WordPress ${en.name} (monthly, ${hostingEn})`,
+        },
+        shortDescription: {
+          nl: `${nl.badge}. ${noteNl} Maandelijks servicepakket, inclusief 21% BTW.`,
+          en: `${en.badge}. ${noteEn} Monthly service package, including 21% VAT.`,
+        },
+        description: {
+          nl: `${nl.badge}.\n\n${noteNl}\n\nInbegrepen:\n${featuresNl.map((feature) => `– ${feature}`).join("\n")}\n\nBetaling: maandelijks. Inclusief 21% BTW.`,
+          en: `${en.badge}.\n\n${noteEn}\n\nIncluded:\n${featuresEn.map((feature) => `– ${feature}`).join("\n")}\n\nPayment: monthly. Including 21% VAT.`,
+        },
+        priceInclCents: eurosToCents(price),
+        currency: "EUR",
+        image:
+          key === "business"
+            ? "/uploads/fixweb/pro-support.png"
+            : key === "businessPro"
+              ? "/uploads/fixweb/double-support.png"
+              : "/uploads/fixweb/premium-support.png",
+        billingPeriod: "monthly",
+        billingInterval: "monthly",
+        category: "wordpress-care",
+        lineOfBusiness: "SERVICE",
+        featured: key === "businessPro",
+        published: true,
+        sortOrder: sortBase + (hosting === "without" ? 3 : 0),
+        tags: ["wordpress-care", key, hosting, "monthly"],
+      });
+    }
+  }
+
+  return products;
+}
+
 /** Built-in catalog used as seed + fallback when the DB is empty. */
 export const STATIC_SHOP_CATALOG: ShopProduct[] = [
   buildPlanProduct("starter", "monthly"),
   buildPlanProduct("starter", "yearly"),
   buildPlanProduct("growth", "monthly"),
   buildPlanProduct("growth", "yearly"),
+  ...buildWpCareProducts(),
   ...buildSupportProducts(),
   ...buildServiceProducts(),
 ];

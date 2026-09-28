@@ -157,7 +157,7 @@
   "pricing": {
     "title": "Prissætning",
     "subtitle": "inklusive 21% moms",
-    "plansHeadline": "Din egen webshop eller hjemmeside med AI-teknologier!",
+    "plansHeadline": "Din egen komplette webshop eller hjemmeside i WordPress med de nyeste AI-teknologier!",
     "cta": "Vælg Plan",
     "ctaContact": "Kontakt os",
     "starter": "Business",
@@ -219,7 +219,17 @@
     "q2": "Hvordan fungerer den gratis AI-scanning?",
     "a2": "Indtast din URL; vores agents tjekker AEO, GEO (lokalt), SEO, performance og AI-readiness, hvorefter vi kontakter dig inden for 48 timer for at drøfte resultaterne og alle muligheder.",
     "q3": "Kan jeg nedgradere / opgradere senere?",
-    "a3": "Ja, det er altid muligt at ændre en plan."
+    "a3": "Ja, det er altid muligt at ændre en plan.",
+    "viewAll": "Klik her for alle ofte stillede spørgsmål"
+  },
+  "wordpressCare": {
+    "title": "WordPress-vedligeholdelse",
+    "headline": "Månedlig vedligeholdelse af dit WordPress-websted.",
+    "withHosting": "Med hosting",
+    "withoutHosting": "Uden hosting",
+    "hostingChoice": "Hosting",
+    "altWithout": "eller {price} pr. måned uden hosting",
+    "altWith": "eller {price} pr. måned med hosting"
   },
   "errors": {
     "title": "Noget gik galt",
@@ -295,7 +305,7 @@
     "invoiceEmailHint": "PDF-fakturaen sendes til denne adresse, når betalingen er bekræftet."
   },
   "footer": {
-    "tagline": "Vi tilbyder ydelser og produkter til iværksættere og freelancere fra AI-integration, AEO, GEO og SEO, tryk, e-mailmarketing, grafisk design, marketing, vedligeholdelse, online annoncering, optimering, social media management, webdesign og WordPress-support til webhosting og domænenavne",
+    "tagline": "Vi tilbyder ydelser og produkter til iværksættere og freelancere fra AI-integration, AEO, GEO og SEO, tryk, e-mailmarketing, grafisk design, marketing, vedligeholdelse, online annoncering, optimering, social media management, webdesign og WordPress-vedligeholdelse til webhosting og domænenavne",
     "rights": "Alle rettigheder forbeholdes.",
     "usefulLinks": "Nyttige link",
     "socialMedia": "Sociale medier",
@@ -1246,7 +1256,7 @@
   },
   "locations": {
     "title": "Lokationer",
-    "subtitle": "TripleZero iT støtter virksomheder verden over med AI-integration, AEO, GEO og SEO, tryk, e-mailmarketing, grafisk design, marketing, vedligeholdelse, online annoncering, optimering, social media management, webdesign og WordPress-support til webhosting og domænenavne. Søg eller filtrer efter land, og vælg din by.",
+    "subtitle": "TripleZero iT støtter virksomheder verden over med AI-integration, AEO, GEO og SEO, tryk, e-mailmarketing, grafisk design, marketing, vedligeholdelse, online annoncering, optimering, social media management, webdesign og WordPress-vedligeholdelse til webhosting og domænenavne. Søg eller filtrer efter land, og vælg din by.",
     "startFreeAiScan": "Start gratis AI-scan",
     "allServices": "Alle ydelser",
     "breadcrumb": "Lokationer",

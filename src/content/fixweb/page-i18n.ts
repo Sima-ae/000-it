@@ -23,15 +23,15 @@ function l(items: string[]): PageBlock {
 }
 
 export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
-  "wordpress-support": {
+  "wordpress-beheer": {
     nl: {
-      title: "WordPress Support",
+      title: "WordPress beheer",
       subtitle:
         "Professionele monitoring, updates, backups en technische zorg voor jouw WordPress-websites — met vaste pakketten die passen bij één of meerdere sites.",
       blocks: [
         h("Zorg dat jouw WordPress-website soepel blijft draaien"),
         p(
-          "Zorg dat jouw WordPress-website soepel blijft draaien met onze dedicated WordPress Support-diensten. Ons team van ervaren specialisten helpt je bij technische uitdagingen, updates en optimalisaties. Of je nu hulp nodig hebt bij foutoplossing, pluginconfiguratie of betere siteprestaties — wij staan voor je klaar.",
+          "Zorg dat jouw WordPress-website soepel blijft draaien met onze dedicated WordPress beheer-diensten. Ons team van ervaren specialisten helpt je bij technische uitdagingen, updates en optimalisaties. Of je nu hulp nodig hebt bij foutoplossing, pluginconfiguratie of betere siteprestaties — wij staan voor je klaar.",
         ),
         h("Uitgebreide troubleshooting en foutoplossing"),
         p(
@@ -43,7 +43,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ),
         h("Betere siteprestaties en snelheid"),
         p(
-          "Een snelle website is cruciaal voor gebruikerservaring én SEO. Trage laadtijden frustreren bezoekers en verhogen bounce rates. Onze WordPress-support omvat grondige performance-optimalisatie: we sporen bottlenecks op (ongeoptimaliseerde beelden, inefficiënte code, te veel plugins) en passen bewezen technieken toe zoals caching, image-optimalisatie en code-minificatie. Een snellere site houdt bezoekers tevreden en ondersteunt betere zoekresultaten.",
+          "Een snelle website is cruciaal voor gebruikerservaring én SEO. Trage laadtijden frustreren bezoekers en verhogen bounce rates. Onze WordPress beheer omvat grondige performance-optimalisatie: we sporen bottlenecks op (ongeoptimaliseerde beelden, inefficiënte code, te veel plugins) en passen bewezen technieken toe zoals caching, image-optimalisatie en code-minificatie. Een snellere site houdt bezoekers tevreden en ondersteunt betere zoekresultaten.",
         ),
         h("SEO-optimalisatie"),
         p(
@@ -63,7 +63,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ),
         h("Focus op de groei van jouw bedrijf"),
         p(
-          "Met TripleZero iT WordPress Support krijg je tijd en ruimte terug voor content, klanten en groei. Wij nemen het technische beheer over, zodat jouw site veilig, snel en stabiel blijft terwijl jij je online doelen nastreeft.",
+          "Met TripleZero iT WordPress beheer krijg je tijd en ruimte terug voor content, klanten en groei. Wij nemen het technische beheer over, zodat jouw site veilig, snel en stabiel blijft terwijl jij je online doelen nastreeft.",
         ),
         h("Toegewijde klantensupport"),
         p(
@@ -87,13 +87,13 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
       ],
     },
     en: {
-      title: "WordPress Support",
+      title: "WordPress care",
       subtitle:
         "Professional monitoring, updates, backups and technical care for your WordPress websites — with fixed packages for one or multiple sites.",
       blocks: [
         h("Keep your WordPress website running smoothly"),
         p(
-          "Ensure your WordPress website runs smoothly with our dedicated WordPress Support services. Our team of experienced professionals is here to help you with any technical challenges, updates, and optimizations. Whether you need assistance with troubleshooting errors, configuring plugins, or enhancing site performance, we’ve got you covered.",
+          "Ensure your WordPress website runs smoothly with our dedicated WordPress care services. Our team of experienced professionals is here to help you with any technical challenges, updates, and optimizations. Whether you need assistance with troubleshooting errors, configuring plugins, or enhancing site performance, we’ve got you covered.",
         ),
         h("Comprehensive Troubleshooting and Error Resolution"),
         p(
@@ -105,7 +105,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ),
         h("Enhancing Site Performance and Speed"),
         p(
-          "A fast-loading website is crucial for user experience and SEO rankings. Slow loading times can frustrate visitors and lead to higher bounce rates. Our WordPress support services include comprehensive performance optimization: we identify bottlenecks and apply caching, image optimization and code minification so your site performs optimally.",
+          "A fast-loading website is crucial for user experience and SEO rankings. Slow loading times can frustrate visitors and lead to higher bounce rates. Our WordPress care services include comprehensive performance optimization: we identify bottlenecks and apply caching, image optimization and code minification so your site performs optimally.",
         ),
         h("SEO Optimization"),
         p(
@@ -125,7 +125,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ),
         h("Focus on Your Business Growth"),
         p(
-          "By choosing our WordPress support services, you free up valuable time and resources for content, customers and growth. We take care of the technical work so your website stays secure, fast and reliable.",
+          "By choosing our WordPress care services, you free up valuable time and resources for content, customers and growth. We take care of the technical work so your website stays secure, fast and reliable.",
         ),
         h("Dedicated Customer Support"),
         p(

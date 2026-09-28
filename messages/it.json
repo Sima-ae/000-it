@@ -157,7 +157,7 @@
   "pricing": {
     "title": "Prezzi",
     "subtitle": "inclusa IVA al 21%.",
-    "plansHeadline": "Il tuo negozio online o sito web con tecnologie AI!",
+    "plansHeadline": "Il tuo negozio online o sito web completo in WordPress con le più recenti tecnologie AI!",
     "cta": "Scegli il piano",
     "ctaContact": "Contattaci",
     "starter": "Business",
@@ -219,7 +219,17 @@
     "q2": "Come funziona la scansione AI gratuita?",
     "a2": "Inserisci il tuo URL; i nostri agent controllano AEO, GEO (locale), SEO, performance e AI-readiness, poi ti contattiamo entro 48 ore per discutere i risultati e tutte le possibilità.",
     "q3": "Posso fare downgrade / upgrade in seguito?",
-    "a3": "Sì, è sempre possibile modificare un piano."
+    "a3": "Sì, è sempre possibile modificare un piano.",
+    "viewAll": "Clicca qui per tutte le domande frequenti"
+  },
+  "wordpressCare": {
+    "title": "Gestione WordPress",
+    "headline": "Gestione mensile del tuo sito WordPress.",
+    "withHosting": "Con hosting",
+    "withoutHosting": "Senza hosting",
+    "hostingChoice": "Hosting",
+    "altWithout": "oppure {price} al mese senza hosting",
+    "altWith": "oppure {price} al mese con hosting"
   },
   "errors": {
     "title": "Qualcosa è andato storto",

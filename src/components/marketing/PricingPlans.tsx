@@ -274,7 +274,7 @@ export function PricingPlans({
             ) : null}
             <p
               className={cn(
-                "text-muted-foreground",
+                "text-sm text-muted-foreground",
                 labels.title ? "mt-3" : "mt-0",
               )}
             >

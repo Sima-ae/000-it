@@ -157,7 +157,7 @@
   "pricing": {
     "title": "Preise",
     "subtitle": "inklusive 21 % Mehrwertsteuer",
-    "plansHeadline": "Ein eigener Webshop oder eine Website mit KI-Technologien!",
+    "plansHeadline": "Ein eigener vollständiger Webshop oder eine Website in WordPress mit den neuesten KI-Technologien!",
     "cta": "Plan auswählen",
     "ctaContact": "Kontaktiere uns",
     "starter": "Business",
@@ -219,7 +219,17 @@
     "q2": "Wie funktioniert der kostenlose AI-Scan?",
     "a2": "Gib deine URL ein; unsere Agents prüfen AEO, GEO (lokal), SEO, Performance und AI-Readiness, danach kontaktieren wir dich innerhalb von 48 Stunden, um die Ergebnisse und alle Möglichkeiten zu besprechen.",
     "q3": "Kann ich später downgraden / upgraden?",
-    "a3": "Ja, es ist jederzeit möglich, einen Plan zu ändern."
+    "a3": "Ja, es ist jederzeit möglich, einen Plan zu ändern.",
+    "viewAll": "Klicken Sie hier für alle häufig gestellten Fragen"
+  },
+  "wordpressCare": {
+    "title": "WordPress-Betreuung",
+    "headline": "Monatliche Betreuung deiner WordPress-Website.",
+    "withHosting": "Mit Hosting",
+    "withoutHosting": "Ohne Hosting",
+    "hostingChoice": "Hosting",
+    "altWithout": "oder {price} pro Monat ohne Hosting",
+    "altWith": "oder {price} pro Monat mit Hosting"
   },
   "errors": {
     "title": "Etwas ist schief gelaufen",
@@ -295,7 +305,7 @@
     "invoiceEmailHint": "Die PDF-Rechnung wird an diese Adresse gesendet, sobald die Zahlung bestätigt ist."
   },
   "footer": {
-    "tagline": "Wir bieten Dienstleistungen und Produkte für Unternehmer und Selbstständige von KI-Integration, AEO, GEO und SEO, Druckwesen, E-Mail-Marketing, Grafikdesign, Marketing, Wartung, Online-Werbung, Optimierung, Social-Media-Management, Webdesign und WordPress-Support bis hin zu Webhosting und Domainnamen",
+    "tagline": "Wir bieten Dienstleistungen und Produkte für Unternehmer und Selbstständige von KI-Integration, AEO, GEO und SEO, Druckwesen, E-Mail-Marketing, Grafikdesign, Marketing, Wartung, Online-Werbung, Optimierung, Social-Media-Management, Webdesign und WordPress-Betreuung bis hin zu Webhosting und Domainnamen",
     "rights": "Alle Rechte vorbehalten.",
     "usefulLinks": "Nützliche Links",
     "socialMedia": "Social Media",
@@ -1246,7 +1256,7 @@
   },
   "locations": {
     "title": "Standorte",
-    "subtitle": "TripleZero iT unterstützt Unternehmen weltweit mit KI-Integration, AEO, GEO und SEO, Druckwesen, E-Mail-Marketing, Grafikdesign, Marketing, Wartung, Online-Werbung, Optimierung, Social-Media-Management, Webdesign und WordPress-Support bis hin zu Webhosting und Domainnamen. Suchen oder filtern Sie nach Land und wählen Sie Ihre Stadt.",
+    "subtitle": "TripleZero iT unterstützt Unternehmen weltweit mit KI-Integration, AEO, GEO und SEO, Druckwesen, E-Mail-Marketing, Grafikdesign, Marketing, Wartung, Online-Werbung, Optimierung, Social-Media-Management, Webdesign und WordPress-Betreuung bis hin zu Webhosting und Domainnamen. Suchen oder filtern Sie nach Land und wählen Sie Ihre Stadt.",
     "startFreeAiScan": "Kostenlosen KI-Scan starten",
     "allServices": "Alle Dienstleistungen",
     "breadcrumb": "Standorte",

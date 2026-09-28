@@ -157,7 +157,7 @@
   "pricing": {
     "title": "Árképzés",
     "subtitle": "21% ÁFA-val",
-    "plansHeadline": "Saját webáruház vagy weboldal AI-technológiákkal!",
+    "plansHeadline": "Saját teljes webáruház vagy weboldal WordPressben a legújabb AI-technológiákkal!",
     "cta": "Csomag kiválasztása",
     "ctaContact": "Vegye fel velünk a kapcsolatot",
     "starter": "Business",
@@ -219,7 +219,17 @@
     "q2": "Hogyan működik az ingyenes AI-vizsgálat?",
     "a2": "Add meg az URL-edet; ügynökeink ellenőrzik az AEO-t, GEO-t (helyi), SEO-t, teljesítményt és AI-készültséget, majd 48 órán belül felvesszük veled a kapcsolatot az eredmények és minden lehetőség megbeszélésére.",
     "q3": "Később visszaválthatok / frissíthetek?",
-    "a3": "Igen, a csomag mindig módosítható."
+    "a3": "Igen, a csomag mindig módosítható.",
+    "viewAll": "Kattintson ide az összes gyakori kérdésért"
+  },
+  "wordpressCare": {
+    "title": "WordPress-karbantartás",
+    "headline": "A WordPress-weboldalad havi karbantartása.",
+    "withHosting": "Hostinggal",
+    "withoutHosting": "Hosting nélkül",
+    "hostingChoice": "Hosting",
+    "altWithout": "vagy {price} havonta hosting nélkül",
+    "altWith": "vagy {price} havonta hostinggal"
   },
   "errors": {
     "title": "Valami elromlott",

@@ -157,7 +157,7 @@
   "pricing": {
     "title": "Çmimet",
     "subtitle": "përfshirë TVSH 21%.",
-    "plansHeadline": "Dyqani jot online ose faqja jot e internetit me teknologji AI!",
+    "plansHeadline": "Dyqani yt i plotë online ose faqja jote e internetit në WordPress me teknologjitë më të reja të AI!",
     "cta": "Zgjidhni Plan",
     "ctaContact": "Na kontaktoni",
     "starter": "Business",
@@ -219,7 +219,17 @@
     "q2": "Si funksionon skanimi falas me AI?",
     "a2": "Vendosni URL-në tuaj; agentët tanë kontrollojnë AEO, GEO (lokale), SEO, performancën dhe gatishmërinë për AI, pastaj ju kontaktojmë brenda 48 orëve për të diskutuar rezultatet dhe të gjitha mundësitë.",
     "q3": "A mund të ul / përmirësoj planin më vonë?",
-    "a3": "Po, është gjithmonë e mundur të ndryshoni një plan."
+    "a3": "Po, është gjithmonë e mundur të ndryshoni një plan.",
+    "viewAll": "Kliko këtu për të gjitha pyetjet e shpeshta"
+  },
+  "wordpressCare": {
+    "title": "Mirëmbajtja e WordPress",
+    "headline": "Mirëmbajtje mujore e faqes suaj WordPress.",
+    "withHosting": "Me hosting",
+    "withoutHosting": "Pa hosting",
+    "hostingChoice": "Hosting",
+    "altWithout": "ose {price} në muaj pa hosting",
+    "altWith": "ose {price} në muaj me hosting"
   },
   "errors": {
     "title": "Diçka shkoi keq",

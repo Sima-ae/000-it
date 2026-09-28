@@ -5,8 +5,11 @@ import { persist } from "zustand/middleware";
 import {
   planProductId,
   supportProductId,
+  wpCareProductId,
   type ShopBillingPeriod,
   type SupportPackageKey,
+  type WpCareHosting,
+  type WpCareKey,
 } from "@/lib/shop/catalog";
 
 export type CartLine = {
@@ -23,10 +26,16 @@ type CartState = {
     period: ShopBillingPeriod,
     quantity?: number,
   ) => void;
-  /** Add a WordPress support package and swap billing period if needed. */
+  /** Add a WordPress care package and swap billing period if needed. */
   addSupportPackage: (
     key: SupportPackageKey,
     period: ShopBillingPeriod,
+    quantity?: number,
+  ) => void;
+  /** Add a WordPress care package and swap the hosting variant if needed. */
+  addWpCarePackage: (
+    key: WpCareKey,
+    hosting: WpCareHosting,
     quantity?: number,
   ) => void;
   removeItem: (productId: string) => void;
@@ -60,6 +69,27 @@ export const useCartStore = create<CartState>()(
         const otherPeriod: ShopBillingPeriod =
           period === "yearly" ? "monthly" : "yearly";
         const otherId = planProductId(planKey, otherPeriod);
+        const qty = Math.max(1, Math.floor(quantity));
+
+        set((state) => {
+          const withoutOther = state.items.filter((i) => i.productId !== otherId);
+          const existing = withoutOther.find((i) => i.productId === productId);
+          if (existing) {
+            return {
+              items: withoutOther.map((i) =>
+                i.productId === productId
+                  ? { ...i, quantity: Math.min(99, i.quantity + qty) }
+                  : i,
+              ),
+            };
+          }
+          return { items: [...withoutOther, { productId, quantity: qty }] };
+        });
+      },
+      addWpCarePackage: (key, hosting, quantity = 1) => {
+        const productId = wpCareProductId(key, hosting);
+        const otherHosting: WpCareHosting = hosting === "with" ? "without" : "with";
+        const otherId = wpCareProductId(key, otherHosting);
         const qty = Math.max(1, Math.floor(quantity));
 
         set((state) => {

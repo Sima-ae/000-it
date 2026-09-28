@@ -276,7 +276,7 @@ const pageImageFallback: Record<string, string> = {
   "wordpress-hosting": "/uploads/fixweb/wordpress-hosting.png",
   "vps-hosting": "/uploads/fixweb/vps-hosting.png",
   domains: "/uploads/fixweb/domains.png",
-  "wordpress-support": "/uploads/fixweb/wordpress-support.png",
+  "wordpress-beheer": "/uploads/fixweb/wordpress-beheer.png",
   "grafisch-design": "/uploads/fixweb/grafisch-design.png",
   "text-optimization": "/uploads/fixweb/text-optimization.png",
 };

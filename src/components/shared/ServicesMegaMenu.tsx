@@ -47,7 +47,7 @@ const featuredByGroup: Record<string, string[]> = {
     "wordpress-security",
     "wordpress-backup-hosting-migration",
     "wordpress-plugin-theme-installation",
-    "wordpress-support",
+    "wordpress-beheer",
   ],
   webdesign: [
     "webdesign-support",

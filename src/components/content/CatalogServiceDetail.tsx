@@ -8,7 +8,7 @@ import { ServiceInquiryDialog } from "@/components/marketing/ServiceInquiryDialo
 import { AddToCartButton } from "@/components/shop/AddToCartButton";
 import { ShopProductImage } from "@/components/shop/ShopProductImage";
 import { TabletFrame } from "@/components/content/TabletFrame";
-import { WordPressSupportPlans } from "@/components/marketing/WordPressSupportPlans";
+import { WordPressCarePlansSection } from "@/components/marketing/WordPressCarePlansSection";
 import {
   getCatalogItem,
   serviceCatalog,
@@ -55,7 +55,7 @@ export async function CatalogServiceDetail({
   const meta = getCatalogItem(slug);
   const groupLabel = serviceGroups.find((g) => g.id === meta?.group);
   const inquiry = aiInquiryBySlug[slug];
-  const showSupportPlans = slug === "wordpress-support";
+  const showSupportPlans = slug === "wordpress-beheer";
 
   await loadShopCatalogFromDb();
   const shopProduct = getShopProductBySlug(slug);
@@ -100,7 +100,7 @@ export async function CatalogServiceDetail({
               "radial-gradient(ellipse 70% 55% at 15% 0%, color-mix(in oklab, var(--primary) 18%, transparent), transparent 55%), radial-gradient(ellipse 60% 45% at 95% 70%, color-mix(in oklab, var(--accent) 14%, transparent), transparent 50%)",
           }}
         />
-        <div className="relative mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
+        <div className="relative mx-auto max-w-6xl px-4 pt-10 pb-6 md:px-6 md:pt-14 md:pb-8">
           <Reveal>
             <p className="text-sm text-muted-foreground">
               <SoftLink href={localizedHref(locale, "/diensten")} className="hover:text-foreground">
@@ -246,10 +246,10 @@ export async function CatalogServiceDetail({
         </div>
       </section>
 
-      <div className="mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
+      <div className="mx-auto max-w-6xl px-4 pt-2 pb-12 md:px-6 md:pb-16">
         {showSupportPlans ? (
-          <section className="mb-14 border-b border-border/60 pb-14">
-            <WordPressSupportPlans />
+          <section className="mb-10 border-b border-border/60 pb-10 md:mb-12 md:pb-12">
+            <WordPressCarePlansSection />
           </section>
         ) : null}
 

@@ -212,7 +212,7 @@ export const serviceCatalog: ServiceNavItem[] = [
     summaryNl: "Bestuursklare AI-strategie, pilots en ROI-frameworks.",
   },
 
-  // WordPress & Support (pages + products)
+  // WordPress & beheer (pages + products)
   {
     slug: "ai-in-wordpress",
     title: "AI in WordPress",
@@ -225,13 +225,13 @@ export const serviceCatalog: ServiceNavItem[] = [
       "Chatbots, content-AI, automatisering en maatwerk AI in jouw WordPress-website.",
   },
   {
-    slug: "wordpress-support",
-    title: "WordPress Support",
-    titleNl: "WordPress support",
+    slug: "wordpress-beheer",
+    title: "WordPress care",
+    titleNl: "WordPress beheer",
     kind: "page",
     group: "wordpress",
-    summary: "Expert WordPress support to keep your site running smoothly.",
-    summaryNl: "Expert WordPress support zodat jouw site soepel blijft draaien.",
+    summary: "Expert WordPress care to keep your site running smoothly.",
+    summaryNl: "Expert WordPress beheer zodat jouw site soepel blijft draaien.",
   },
   {
     slug: "wordpress-error-fix",
@@ -772,8 +772,8 @@ const serviceGroupSummaries: Record<ServiceGroupId, { en: string; nl: string }> 
     nl: "AEO, GEO, SEO, e-commerce SEO, teksten, CRO, snelheid, analytics en toegankelijkheid — zodat je site gevonden wordt én converteert.",
   },
   wordpress: {
-    en: "Maintenance, security, malware removal, speed, backups and WordPress support.",
-    nl: "Onderhoud, security, malware, snelheid, backups en WordPress-support.",
+    en: "Maintenance, security, malware removal, speed, backups and WordPress care.",
+    nl: "Onderhoud, security, malware, snelheid, backups en WordPress beheer.",
   },
   webdesign: {
     en: "Custom websites, conversion, security, speed and Next.js development.",

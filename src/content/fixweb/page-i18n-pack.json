@@ -1,7 +1,7 @@
 {
   "en": {
-    "wordpress-support": {
-      "title": "WordPress Support",
+    "wordpress-beheer": {
+      "title": "WordPress care",
       "subtitle": "Professional monitoring, updates, backups and technical care for your WordPress websites — with fixed packages for one or multiple sites.",
       "blocks": [
         {
@@ -10,7 +10,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Ensure your WordPress website runs smoothly with our dedicated WordPress Support services. Our team of experienced professionals is here to help you with any technical challenges, updates, and optimizations. Whether you need assistance with troubleshooting errors, configuring plugins, or enhancing site performance, we’ve got you covered."
+          "text": "Ensure your WordPress website runs smoothly with our dedicated WordPress care services. Our team of experienced professionals is here to help you with any technical challenges, updates, and optimizations. Whether you need assistance with troubleshooting errors, configuring plugins, or enhancing site performance, we’ve got you covered."
         },
         {
           "type": "heading",
@@ -34,7 +34,7 @@
         },
         {
           "type": "paragraph",
-          "text": "A fast-loading website is crucial for user experience and SEO rankings. Slow loading times can frustrate visitors and lead to higher bounce rates. Our WordPress support services include comprehensive performance optimization: we identify bottlenecks and apply caching, image optimization and code minification so your site performs optimally."
+          "text": "A fast-loading website is crucial for user experience and SEO rankings. Slow loading times can frustrate visitors and lead to higher bounce rates. Our WordPress care services include comprehensive performance optimization: we identify bottlenecks and apply caching, image optimization and code minification so your site performs optimally."
         },
         {
           "type": "heading",
@@ -74,7 +74,7 @@
         },
         {
           "type": "paragraph",
-          "text": "By choosing our WordPress support services, you free up valuable time and resources for content, customers and growth. We take care of the technical work so your website stays secure, fast and reliable."
+          "text": "By choosing our WordPress care services, you free up valuable time and resources for content, customers and growth. We take care of the technical work so your website stays secure, fast and reliable."
         },
         {
           "type": "heading",
@@ -905,8 +905,8 @@
     }
   },
   "nl": {
-    "wordpress-support": {
-      "title": "WordPress Support",
+    "wordpress-beheer": {
+      "title": "WordPress beheer",
       "subtitle": "Professionele monitoring, updates, backups en technische zorg voor jouw WordPress-websites — met vaste pakketten die passen bij één of meerdere sites.",
       "blocks": [
         {
@@ -915,7 +915,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Zorg dat jouw WordPress-website soepel blijft draaien met onze dedicated WordPress Support-diensten. Ons team van ervaren specialisten helpt je bij technische uitdagingen, updates en optimalisaties. Of je nu hulp nodig hebt bij foutoplossing, pluginconfiguratie of betere siteprestaties — wij staan voor je klaar."
+          "text": "Zorg dat jouw WordPress-website soepel blijft draaien met onze dedicated WordPress beheer-diensten. Ons team van ervaren specialisten helpt je bij technische uitdagingen, updates en optimalisaties. Of je nu hulp nodig hebt bij foutoplossing, pluginconfiguratie of betere siteprestaties — wij staan voor je klaar."
         },
         {
           "type": "heading",
@@ -939,7 +939,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Een snelle website is cruciaal voor gebruikerservaring én SEO. Trage laadtijden frustreren bezoekers en verhogen bounce rates. Onze WordPress-support omvat grondige performance-optimalisatie: we sporen bottlenecks op (ongeoptimaliseerde beelden, inefficiënte code, te veel plugins) en passen bewezen technieken toe zoals caching, image-optimalisatie en code-minificatie. Een snellere site houdt bezoekers tevreden en ondersteunt betere zoekresultaten."
+          "text": "Een snelle website is cruciaal voor gebruikerservaring én SEO. Trage laadtijden frustreren bezoekers en verhogen bounce rates. Onze WordPress beheer omvat grondige performance-optimalisatie: we sporen bottlenecks op (ongeoptimaliseerde beelden, inefficiënte code, te veel plugins) en passen bewezen technieken toe zoals caching, image-optimalisatie en code-minificatie. Een snellere site houdt bezoekers tevreden en ondersteunt betere zoekresultaten."
         },
         {
           "type": "heading",
@@ -979,7 +979,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Met TripleZero iT WordPress Support krijg je tijd en ruimte terug voor content, klanten en groei. Wij nemen het technische beheer over, zodat jouw site veilig, snel en stabiel blijft terwijl jij je online doelen nastreeft."
+          "text": "Met TripleZero iT WordPress beheer krijg je tijd en ruimte terug voor content, klanten en groei. Wij nemen het technische beheer over, zodat jouw site veilig, snel en stabiel blijft terwijl jij je online doelen nastreeft."
         },
         {
           "type": "heading",
@@ -1810,8 +1810,8 @@
     }
   },
   "fr": {
-    "wordpress-support": {
-      "title": "Assistance WordPress",
+    "wordpress-beheer": {
+      "title": "Gestion WordPress",
       "subtitle": "Surveillance professionnelle, mises à jour, sauvegardes et assistance technique pour vos sites Web WordPress – avec des forfaits fixes pour un ou plusieurs sites.",
       "blocks": [
         {
@@ -2715,8 +2715,8 @@
     }
   },
   "de": {
-    "wordpress-support": {
-      "title": "WordPress-Support",
+    "wordpress-beheer": {
+      "title": "WordPress-Betreuung",
       "subtitle": "Professionelle Überwachung, Updates, Backups und technische Betreuung Ihrer WordPress-Websites – mit festen Paketen für eine oder mehrere Websites.",
       "blocks": [
         {
@@ -2725,7 +2725,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Stellen Sie mit unseren speziellen WordPress-Supportdiensten sicher, dass Ihre WordPress-Website reibungslos funktioniert. Unser Team aus erfahrenen Fachleuten steht Ihnen bei allen technischen Herausforderungen, Aktualisierungen und Optimierungen zur Seite. Egal, ob Sie Hilfe bei der Fehlerbehebung, der Konfiguration von Plugins oder der Verbesserung der Website-Leistung benötigen, wir sind für Sie da."
+          "text": "Stellen Sie mit unseren speziellen WordPress-Betreuungdiensten sicher, dass Ihre WordPress-Website reibungslos funktioniert. Unser Team aus erfahrenen Fachleuten steht Ihnen bei allen technischen Herausforderungen, Aktualisierungen und Optimierungen zur Seite. Egal, ob Sie Hilfe bei der Fehlerbehebung, der Konfiguration von Plugins oder der Verbesserung der Website-Leistung benötigen, wir sind für Sie da."
         },
         {
           "type": "heading",
@@ -2749,7 +2749,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Eine schnell ladende Website ist entscheidend für das Benutzererlebnis und das SEO-Ranking. Langsame Ladezeiten können Besucher frustrieren und zu höheren Absprungraten führen. Zu unseren WordPress-Supportleistungen gehört eine umfassende Leistungsoptimierung: Wir identifizieren Engpässe und wenden Caching, Bildoptimierung und Codeminimierung an, damit Ihre Website optimal funktioniert."
+          "text": "Eine schnell ladende Website ist entscheidend für das Benutzererlebnis und das SEO-Ranking. Langsame Ladezeiten können Besucher frustrieren und zu höheren Absprungraten führen. Zu unseren WordPress-Betreuungleistungen gehört eine umfassende Leistungsoptimierung: Wir identifizieren Engpässe und wenden Caching, Bildoptimierung und Codeminimierung an, damit Ihre Website optimal funktioniert."
         },
         {
           "type": "heading",
@@ -2789,7 +2789,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Wenn Sie sich für unsere WordPress-Supportdienste entscheiden, gewinnen Sie wertvolle Zeit und Ressourcen für Inhalte, Kunden und Wachstum. Wir kümmern uns um die technische Arbeit, damit Ihre Website sicher, schnell und zuverlässig bleibt."
+          "text": "Wenn Sie sich für unsere WordPress-Betreuungdienste entscheiden, gewinnen Sie wertvolle Zeit und Ressourcen für Inhalte, Kunden und Wachstum. Wir kümmern uns um die technische Arbeit, damit Ihre Website sicher, schnell und zuverlässig bleibt."
         },
         {
           "type": "heading",
@@ -3620,8 +3620,8 @@
     }
   },
   "es": {
-    "wordpress-support": {
-      "title": "Asistencia de WordPress",
+    "wordpress-beheer": {
+      "title": "Gestión de WordPress",
       "subtitle": "Monitoreo profesional, actualizaciones, copias de seguridad y atención técnica para sus sitios web de WordPress, con paquetes fijos para uno o varios sitios.",
       "blocks": [
         {
@@ -4525,8 +4525,8 @@
     }
   },
   "pt": {
-    "wordpress-support": {
-      "title": "Suporte do WordPress",
+    "wordpress-beheer": {
+      "title": "Gestão WordPress",
       "subtitle": "Monitoramento profissional, atualizações, backups e assistência técnica para seus sites WordPress — com pacotes fixos para um ou vários sites.",
       "blocks": [
         {
@@ -5430,8 +5430,8 @@
     }
   },
   "it": {
-    "wordpress-support": {
-      "title": "Supporto WordPress",
+    "wordpress-beheer": {
+      "title": "Gestione WordPress",
       "subtitle": "Monitoraggio professionale, aggiornamenti, backup e assistenza tecnica per i tuoi siti Web WordPress, con pacchetti fissi per uno o più siti.",
       "blocks": [
         {
@@ -6335,8 +6335,8 @@
     }
   },
   "el": {
-    "wordpress-support": {
-      "title": "Υποστήριξη WordPress",
+    "wordpress-beheer": {
+      "title": "Διαχείριση WordPress",
       "subtitle": "Επαγγελματική παρακολούθηση, ενημερώσεις, αντίγραφα ασφαλείας και τεχνική φροντίδα για τους ιστότοπους WordPress σας — με σταθερά πακέτα για έναν ή πολλούς ιστότοπους.",
       "blocks": [
         {
@@ -7240,8 +7240,8 @@
     }
   },
   "pl": {
-    "wordpress-support": {
-      "title": "Wsparcie WordPress",
+    "wordpress-beheer": {
+      "title": "Opieka WordPress",
       "subtitle": "Profesjonalny monitoring, aktualizacje, kopie zapasowe i opieka techniczna nad Twoimi stronami WordPress — ze stałymi pakietami dla jednej lub wielu witryn.",
       "blocks": [
         {
@@ -8145,8 +8145,8 @@
     }
   },
   "cs": {
-    "wordpress-support": {
-      "title": "Podpora WordPress",
+    "wordpress-beheer": {
+      "title": "Správa WordPressu",
       "subtitle": "Profesionální monitorování, aktualizace, zálohy a technická péče o vaše weby WordPress — s pevnými balíčky pro jeden nebo více webů.",
       "blocks": [
         {
@@ -9050,8 +9050,8 @@
     }
   },
   "sk": {
-    "wordpress-support": {
-      "title": "Podpora WordPress",
+    "wordpress-beheer": {
+      "title": "Správa WordPressu",
       "subtitle": "Profesionálne monitorovanie, aktualizácie, zálohy a technická starostlivosť o vaše weby WordPress – s fixnými balíkmi pre jednu alebo viacero lokalít.",
       "blocks": [
         {
@@ -9955,8 +9955,8 @@
     }
   },
   "hu": {
-    "wordpress-support": {
-      "title": "WordPress támogatás",
+    "wordpress-beheer": {
+      "title": "WordPress-karbantartás",
       "subtitle": "Professzionális felügyelet, frissítések, biztonsági mentések és műszaki gondozás a WordPress-webhelyekhez – rögzített csomagokkal egy vagy több webhelyhez.",
       "blocks": [
         {
@@ -10860,8 +10860,8 @@
     }
   },
   "ro": {
-    "wordpress-support": {
-      "title": "Asistență WordPress",
+    "wordpress-beheer": {
+      "title": "Administrare WordPress",
       "subtitle": "Monitorizare profesională, actualizări, backup și îngrijire tehnică pentru site-urile dvs. WordPress - cu pachete fixe pentru unul sau mai multe site-uri.",
       "blocks": [
         {
@@ -11765,8 +11765,8 @@
     }
   },
   "bg": {
-    "wordpress-support": {
-      "title": "Поддръжка на WordPress",
+    "wordpress-beheer": {
+      "title": "WordPress поддръжка",
       "subtitle": "Професионален мониторинг, актуализации, архивиране и техническа грижа за вашите WordPress уебсайтове — с фиксирани пакети за един или няколко сайта.",
       "blocks": [
         {
@@ -12670,8 +12670,8 @@
     }
   },
   "hr": {
-    "wordpress-support": {
-      "title": "WordPress podrška",
+    "wordpress-beheer": {
+      "title": "WordPress održavanje",
       "subtitle": "Profesionalni nadzor, ažuriranja, sigurnosne kopije i tehnička skrb za vaše WordPress web stranice — s fiksnim paketima za jednu ili više web stranica.",
       "blocks": [
         {
@@ -13575,8 +13575,8 @@
     }
   },
   "sr": {
-    "wordpress-support": {
-      "title": "WordPress podrška",
+    "wordpress-beheer": {
+      "title": "WordPress управљање",
       "subtitle": "Професионално праћење, ажурирања, резервне копије и техничка брига за ваше ВордПресс веб локације — са фиксним пакетима за једну или више локација.",
       "blocks": [
         {
@@ -14480,8 +14480,8 @@
     }
   },
   "bs": {
-    "wordpress-support": {
-      "title": "WordPress podrška",
+    "wordpress-beheer": {
+      "title": "WordPress održavanje",
       "subtitle": "Profesionalno praćenje, ažuriranja, sigurnosne kopije i tehnička briga za vaše WordPress web stranice — sa fiksnim paketima za jednu ili više lokacija.",
       "blocks": [
         {
@@ -15385,8 +15385,8 @@
     }
   },
   "cnr": {
-    "wordpress-support": {
-      "title": "WordPress podrška",
+    "wordpress-beheer": {
+      "title": "WordPress održavanje",
       "subtitle": "Професионално праћење, ажурирања, резервне копије и техничка брига за ваше ВордПресс веб локације — са фиксним пакетима за једну или више локација.",
       "blocks": [
         {
@@ -16290,8 +16290,8 @@
     }
   },
   "sq": {
-    "wordpress-support": {
-      "title": "Asistenca e WordPress",
+    "wordpress-beheer": {
+      "title": "Mirëmbajtja e WordPress",
       "subtitle": "Monitorim profesional, përditësime, kopje rezervë dhe kujdes teknik për faqet tuaja të internetit të WordPress – me paketa fikse për një ose shumë sajte.",
       "blocks": [
         {
@@ -17195,8 +17195,8 @@
     }
   },
   "mk": {
-    "wordpress-support": {
-      "title": "Поддршка за WordPress",
+    "wordpress-beheer": {
+      "title": "WordPress одржување",
       "subtitle": "Професионално следење, ажурирања, резервни копии и техничка грижа за вашите веб-страници на WordPress - со фиксни пакети за една или повеќе локации.",
       "blocks": [
         {
@@ -18100,8 +18100,8 @@
     }
   },
   "lt": {
-    "wordpress-support": {
-      "title": "WordPress palaikymas",
+    "wordpress-beheer": {
+      "title": "WordPress priežiūra",
       "subtitle": "Profesionalus jūsų „WordPress“ svetainių stebėjimas, atnaujinimai, atsarginės kopijos ir techninė priežiūra – su fiksuotais paketais vienai ar kelioms svetainėms.",
       "blocks": [
         {
@@ -19005,8 +19005,8 @@
     }
   },
   "da": {
-    "wordpress-support": {
-      "title": "WordPress-support",
+    "wordpress-beheer": {
+      "title": "WordPress-vedligeholdelse",
       "subtitle": "Professionel overvågning, opdateringer, backup og teknisk pleje af dine WordPress-websteder — med faste pakker til et eller flere websteder.",
       "blocks": [
         {
@@ -19015,7 +19015,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Sørg for, at dit WordPress-websted kører problemfrit med vores dedikerede WordPress-supporttjenester. Vores team af erfarne fagfolk er her for at hjælpe dig med eventuelle tekniske udfordringer, opdateringer og optimeringer. Uanset om du har brug for hjælp til fejlfinding, konfiguration af plugins eller forbedring af webstedets ydeevne, har vi dig dækket."
+          "text": "Sørg for, at dit WordPress-websted kører problemfrit med vores dedikerede WordPress-vedligeholdelsetjenester. Vores team af erfarne fagfolk er her for at hjælpe dig med eventuelle tekniske udfordringer, opdateringer og optimeringer. Uanset om du har brug for hjælp til fejlfinding, konfiguration af plugins eller forbedring af webstedets ydeevne, har vi dig dækket."
         },
         {
           "type": "heading",
@@ -19039,7 +19039,7 @@
         },
         {
           "type": "paragraph",
-          "text": "En hurtig-loading hjemmeside er afgørende for brugeroplevelse og SEO-placeringer. Langsomme indlæsningstider kan frustrere besøgende og føre til højere afvisningsprocenter. Vores WordPress-supporttjenester omfatter omfattende ydeevneoptimering: vi identificerer flaskehalse og anvender caching, billedoptimering og kodeminifikation, så dit websted yder optimalt."
+          "text": "En hurtig-loading hjemmeside er afgørende for brugeroplevelse og SEO-placeringer. Langsomme indlæsningstider kan frustrere besøgende og føre til højere afvisningsprocenter. Vores WordPress-vedligeholdelsetjenester omfatter omfattende ydeevneoptimering: vi identificerer flaskehalse og anvender caching, billedoptimering og kodeminifikation, så dit websted yder optimalt."
         },
         {
           "type": "heading",
@@ -19079,7 +19079,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Ved at vælge vores WordPress-supporttjenester frigør du værdifuld tid og ressourcer til indhold, kunder og vækst. Vi tager os af det tekniske arbejde, så din hjemmeside forbliver sikker, hurtig og pålidelig."
+          "text": "Ved at vælge vores WordPress-vedligeholdelsetjenester frigør du værdifuld tid og ressourcer til indhold, kunder og vækst. Vi tager os af det tekniske arbejde, så din hjemmeside forbliver sikker, hurtig og pålidelig."
         },
         {
           "type": "heading",
@@ -19910,8 +19910,8 @@
     }
   },
   "sv": {
-    "wordpress-support": {
-      "title": "WordPress Support",
+    "wordpress-beheer": {
+      "title": "WordPress-skötsel",
       "subtitle": "Professionell övervakning, uppdateringar, säkerhetskopior och teknisk skötsel av dina WordPress-webbplatser — med fasta paket för en eller flera webbplatser.",
       "blocks": [
         {
@@ -19920,7 +19920,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Se till att din WordPress-webbplats fungerar smidigt med våra dedikerade WordPress-supporttjänster. Vårt team av erfarna proffs är här för att hjälpa dig med alla tekniska utmaningar, uppdateringar och optimeringar. Oavsett om du behöver hjälp med att felsöka fel, konfigurera plugins eller förbättra webbplatsens prestanda, har vi dig täckt."
+          "text": "Se till att din WordPress-webbplats fungerar smidigt med våra dedikerade WordPress-skötseltjänster. Vårt team av erfarna proffs är här för att hjälpa dig med alla tekniska utmaningar, uppdateringar och optimeringar. Oavsett om du behöver hjälp med att felsöka fel, konfigurera plugins eller förbättra webbplatsens prestanda, har vi dig täckt."
         },
         {
           "type": "heading",
@@ -19944,7 +19944,7 @@
         },
         {
           "type": "paragraph",
-          "text": "En snabbladdad webbplats är avgörande för användarupplevelsen och SEO-rankingen. Långsamma laddningstider kan frustrera besökare och leda till högre avvisningsfrekvens. Våra WordPress-supporttjänster inkluderar omfattande prestandaoptimering: vi identifierar flaskhalsar och tillämpar cachelagring, bildoptimering och kodminifiering så att din webbplats presterar optimalt."
+          "text": "En snabbladdad webbplats är avgörande för användarupplevelsen och SEO-rankingen. Långsamma laddningstider kan frustrera besökare och leda till högre avvisningsfrekvens. Våra WordPress-skötseltjänster inkluderar omfattande prestandaoptimering: vi identifierar flaskhalsar och tillämpar cachelagring, bildoptimering och kodminifiering så att din webbplats presterar optimalt."
         },
         {
           "type": "heading",
@@ -19984,7 +19984,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Genom att välja våra WordPress-supporttjänster frigör du värdefull tid och resurser för innehåll, kunder och tillväxt. Vi tar hand om det tekniska arbetet så att din webbplats förblir säker, snabb och pålitlig."
+          "text": "Genom att välja våra WordPress-skötseltjänster frigör du värdefull tid och resurser för innehåll, kunder och tillväxt. Vi tar hand om det tekniska arbetet så att din webbplats förblir säker, snabb och pålitlig."
         },
         {
           "type": "heading",
@@ -20815,8 +20815,8 @@
     }
   },
   "no": {
-    "wordpress-support": {
-      "title": "WordPress-støtte",
+    "wordpress-beheer": {
+      "title": "WordPress-vedlikehold",
       "subtitle": "Profesjonell overvåking, oppdateringer, sikkerhetskopier og teknisk pleie for WordPress-nettstedene dine — med faste pakker for ett eller flere nettsteder.",
       "blocks": [
         {
@@ -21720,8 +21720,8 @@
     }
   },
   "fi": {
-    "wordpress-support": {
-      "title": "WordPress-tuki",
+    "wordpress-beheer": {
+      "title": "WordPress-ylläpito",
       "subtitle": "Ammattimainen seuranta, päivitykset, varmuuskopiot ja tekninen hoito WordPress-verkkosivustoillesi – kiinteät paketit yhdelle tai useammalle sivustolle.",
       "blocks": [
         {
@@ -22625,8 +22625,8 @@
     }
   },
   "uk": {
-    "wordpress-support": {
-      "title": "Підтримка WordPress",
+    "wordpress-beheer": {
+      "title": "Обслуговування WordPress",
       "subtitle": "Професійний моніторинг, оновлення, резервне копіювання та технічний догляд для ваших веб-сайтів WordPress — із фіксованими пакетами для одного або кількох сайтів.",
       "blocks": [
         {
@@ -23530,8 +23530,8 @@
     }
   },
   "ru": {
-    "wordpress-support": {
-      "title": "Поддержка WordPress",
+    "wordpress-beheer": {
+      "title": "Обслуживание WordPress",
       "subtitle": "Профессиональный мониторинг, обновления, резервное копирование и техническое обслуживание ваших веб-сайтов WordPress — с фиксированными пакетами для одного или нескольких сайтов.",
       "blocks": [
         {
@@ -24435,8 +24435,8 @@
     }
   },
   "tr": {
-    "wordpress-support": {
-      "title": "WordPress Desteği",
+    "wordpress-beheer": {
+      "title": "WordPress bakımı",
       "subtitle": "Bir veya daha fazla site için sabit paketlerle WordPress web siteleriniz için profesyonel izleme, güncellemeler, yedeklemeler ve teknik bakım.",
       "blocks": [
         {
@@ -25340,8 +25340,8 @@
     }
   },
   "he": {
-    "wordpress-support": {
-      "title": "תמיכה בוורדפרס",
+    "wordpress-beheer": {
+      "title": "ניהול WordPress",
       "subtitle": "ניטור מקצועי, עדכונים, גיבויים וטיפול טכני לאתרי הוורדפרס שלך - עם חבילות קבועות לאתר אחד או לכמה אתרים.",
       "blocks": [
         {
@@ -26245,8 +26245,8 @@
     }
   },
   "ar": {
-    "wordpress-support": {
-      "title": "دعم ووردبريس",
+    "wordpress-beheer": {
+      "title": "إدارة ووردبريس",
       "subtitle": "مراقبة احترافية وتحديثات ونسخ احتياطية ورعاية فنية لمواقع WordPress الخاصة بك - مع حزم ثابتة لموقع واحد أو عدة مواقع.",
       "blocks": [
         {
@@ -27150,8 +27150,8 @@
     }
   },
   "ka": {
-    "wordpress-support": {
-      "title": "WordPress მხარდაჭერა",
+    "wordpress-beheer": {
+      "title": "WordPress მართვა",
       "subtitle": "პროფესიონალური მონიტორინგი, განახლებები, სარეზერვო ასლები და ტექნიკური მოვლა თქვენი WordPress ვებსაიტებისთვის – ფიქსირებული პაკეტებით ერთი ან რამდენიმე საიტისთვის.",
       "blocks": [
         {
@@ -28055,8 +28055,8 @@
     }
   },
   "hy": {
-    "wordpress-support": {
-      "title": "WordPress աջակցություն",
+    "wordpress-beheer": {
+      "title": "WordPress կառավարում",
       "subtitle": "Պրոֆեսիոնալ մոնիտորինգ, թարմացումներ, կրկնօրինակումներ և տեխնիկական խնամք ձեր WordPress կայքերի համար՝ մեկ կամ մի քանի կայքերի համար ֆիքսված փաթեթներով:",
       "blocks": [
         {
@@ -28960,8 +28960,8 @@
     }
   },
   "az": {
-    "wordpress-support": {
-      "title": "WordPress Dəstəyi",
+    "wordpress-beheer": {
+      "title": "WordPress idarəsi",
       "subtitle": "WordPress veb saytlarınız üçün peşəkar monitorinq, yeniləmələr, ehtiyat nüsxələri və texniki qayğı – bir və ya bir neçə sayt üçün sabit paketlərlə.",
       "blocks": [
         {
@@ -29865,8 +29865,8 @@
     }
   },
   "zh": {
-    "wordpress-support": {
-      "title": "WordPress 支持",
+    "wordpress-beheer": {
+      "title": "WordPress 维护",
       "subtitle": "为您的 WordPress 网站提供专业监控、更新、备份和技术维护 - 为一个或多个站点提供固定套餐。",
       "blocks": [
         {
@@ -30770,8 +30770,8 @@
     }
   },
   "ja": {
-    "wordpress-support": {
-      "title": "WordPress サポート",
+    "wordpress-beheer": {
+      "title": "WordPress管理",
       "subtitle": "1 つまたは複数のサイト用の固定パッケージを使用して、WordPress Web サイトの専門的な監視、更新、バックアップ、テクニカル ケアを提供します。",
       "blocks": [
         {

@@ -1,42 +1,31 @@
 import Image from "next/image";
 import { SoftLink } from "@/components/shared/SoftLink";
-import { BRANDING_COLLAGE } from "@/lib/branding-images";
+import { BRANDING_COLLAGE_IMAGE } from "@/lib/branding-images";
 import { cn } from "@/lib/utils";
 
 /**
- * One-row mixed branding collage — homepage strip above the footer.
- * Decorative; tiles link to services when `href` is provided.
+ * Homepage photo strip. Decorative; links to services when `href` is set.
  */
 export function BrandingCollage({
   href,
+  src = BRANDING_COLLAGE_IMAGE,
+  label = "Services",
   className,
 }: {
   href?: string;
+  src?: string;
+  label?: string;
   className?: string;
 }) {
-  const tiles = (
-    <div className="flex h-40 w-full min-w-0 items-stretch justify-center gap-1.5 sm:h-48 sm:gap-2 md:h-56 md:gap-2.5 lg:h-64">
-      {BRANDING_COLLAGE.map((src, i) => {
-        const isMiddle = i === Math.floor(BRANDING_COLLAGE.length / 2);
-        return (
-          <div
-            key={src}
-            className={cn(
-              "relative h-full min-w-0 bg-background",
-              isMiddle ? "flex-[1.85]" : "flex-1",
-            )}
-          >
-            <Image
-              src={src}
-              alt=""
-              fill
-              unoptimized
-              sizes={isMiddle ? "30vw" : "16vw"}
-              className="object-contain object-center transition duration-500 group-hover:scale-[1.03]"
-            />
-          </div>
-        );
-      })}
+  const photo = (
+    <div className="relative mx-auto aspect-video w-full max-w-5xl overflow-hidden rounded-[1.75rem] bg-background shadow-sm">
+      <Image
+        src={src}
+        alt=""
+        fill
+        sizes="(max-width: 1024px) 100vw, 1024px"
+        className="object-cover object-center transition duration-500 group-hover:scale-[1.02]"
+      />
     </div>
   );
 
@@ -51,12 +40,12 @@ export function BrandingCollage({
         <SoftLink
           href={href}
           className="group block overflow-visible"
-          aria-label="Services"
+          aria-label={label}
         >
-          {tiles}
+          {photo}
         </SoftLink>
       ) : (
-        <div aria-hidden>{tiles}</div>
+        <div aria-hidden>{photo}</div>
       )}
     </section>
   );

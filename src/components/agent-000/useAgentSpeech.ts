@@ -262,16 +262,17 @@ function splitSpeechBeats(text: string): string[] {
 }
 
 export function useAgentSpeech(locale: string) {
-  const [muted, setMuted] = useState(false);
+  // Always start muted; only unmute when the user has explicitly opted in.
+  const [muted, setMuted] = useState(true);
   const [speaking, setSpeaking] = useState(false);
   const voicesReadyRef = useRef(false);
   const speakGenRef = useRef(0);
 
   useEffect(() => {
     try {
-      setMuted(localStorage.getItem(MUTE_KEY) === "1");
+      setMuted(localStorage.getItem(MUTE_KEY) !== "0");
     } catch {
-      /* ignore */
+      setMuted(true);
     }
 
     const markReady = () => {

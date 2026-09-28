@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/marketing/Reveal";
 import { GlassCard } from "@/components/marketing/GlassCard";
 import { CategoryHero } from "@/components/content/CategoryHero";
+import { WordPressCarePlansSection } from "@/components/marketing/WordPressCarePlansSection";
+import { ShopHostingSection } from "@/components/shop/ShopHostingSection";
 import { ServiceCard } from "@/components/content/ServiceCard";
 import { SoftLink } from "@/components/shared/SoftLink";
 import {
@@ -20,6 +22,13 @@ import {
 import { catalogGroupTitle } from "@/content/fixweb/catalog-title";
 import { brandingFallbackForServiceSlug } from "@/lib/branding-images";
 import { listServiceGroupCards } from "@/lib/service-group-listing";
+import {
+  loadShopCatalogFromDb,
+  SHARED_HOSTING_SLUG_ORDER,
+  shopProductsInSlugOrder,
+  VPS_HOSTING_SLUG_ORDER,
+  WORDPRESS_HOSTING_SLUG_ORDER,
+} from "@/lib/shop/catalog";
 import { buildPageMetadata } from "@/lib/seo";
 import { localizedHref } from "@/i18n/pathnames";
 
@@ -68,6 +77,7 @@ export default async function ServiceCategoryPage({ params }: Params) {
 
   const t = await getTranslations("services");
   const tNav = await getTranslations("nav");
+  const tShop = await getTranslations("shop");
   const title = catalogGroupTitle(group.id, locale, group.title);
   const summary = catalogGroupSummary(group.id, locale);
   const cards = await listServiceGroupCards(locale, group.id, {
@@ -75,12 +85,45 @@ export default async function ServiceCategoryPage({ params }: Params) {
   });
   if (!cards.length) notFound();
 
+  const isHosting = group.id === "hosting";
+  const pageCards = isHosting
+    ? cards.filter((card) => card.item.slug === "domains")
+    : cards;
+  const hostingCatalog = isHosting ? await loadShopCatalogFromDb() : [];
+  const sharedHostingProducts = shopProductsInSlugOrder(
+    hostingCatalog,
+    SHARED_HOSTING_SLUG_ORDER,
+  );
+  const wordpressHostingProducts = shopProductsInSlugOrder(
+    hostingCatalog,
+    WORDPRESS_HOSTING_SLUG_ORDER,
+  );
+  const vpsHostingProducts = shopProductsInSlugOrder(
+    hostingCatalog,
+    VPS_HOSTING_SLUG_ORDER,
+  );
+
   const otherGroups = sortedServiceGroups(locale).filter((item) => item.id !== group.id);
-  const jumpLinks = cards.map((card) => ({
-    key: card.item.slug,
-    id: card.item.slug,
-    label: card.title,
-  }));
+  const jumpLinks = isHosting
+    ? [
+        { key: "shared-hosting", id: "gedeelde-hosting", label: tShop("sharedHosting") },
+        {
+          key: "wordpress-hosting",
+          id: "wordpress-hosting-pakketten",
+          label: tShop("wordpressHosting"),
+        },
+        { key: "vps-hosting", id: "vps-hosting-pakketten", label: tShop("vpsHosting") },
+        ...pageCards.map((card) => ({
+          key: card.item.slug,
+          id: card.item.slug,
+          label: card.title,
+        })),
+      ]
+    : cards.map((card) => ({
+        key: card.item.slug,
+        id: card.item.slug,
+        label: card.title,
+      }));
 
   return (
     <div className="mx-auto max-w-6xl px-4 pb-12 pt-6 sm:px-5 sm:pb-14 sm:pt-8 md:px-6 md:pb-20 md:pt-10">
@@ -97,8 +140,41 @@ export default async function ServiceCategoryPage({ params }: Params) {
         jumpBasePath={serviceGroupPath(group.id)}
       />
 
-      <div className="mt-8 grid gap-3 sm:grid-cols-2 sm:mt-10 lg:grid-cols-3 md:mt-12">
-        {cards.map((card, i) => (
+      {group.id === "wordpress" ? (
+        <div className="mt-8 sm:mt-10 md:mt-12">
+          <WordPressCarePlansSection />
+        </div>
+      ) : null}
+
+      {isHosting ? (
+        <div className="mt-8 sm:mt-10 md:mt-12">
+          <ShopHostingSection
+            id="gedeelde-hosting"
+            className="mt-0"
+            title={tShop("sharedHosting")}
+            products={sharedHostingProducts}
+          />
+          <ShopHostingSection
+            id="wordpress-hosting-pakketten"
+            title={tShop("wordpressHosting")}
+            products={wordpressHostingProducts}
+          />
+          <ShopHostingSection
+            id="vps-hosting-pakketten"
+            title={tShop("vpsHosting")}
+            products={vpsHostingProducts}
+          />
+        </div>
+      ) : null}
+
+      <div
+        className={
+          isHosting
+            ? "mx-auto mt-16 grid w-full max-w-sm sm:mt-20 md:mt-24"
+            : "mt-8 grid gap-3 sm:mt-10 sm:grid-cols-2 md:mt-12 lg:grid-cols-3"
+        }
+      >
+        {pageCards.map((card, i) => (
           <div
             key={card.item.slug}
             id={card.item.slug}
@@ -124,10 +200,24 @@ export default async function ServiceCategoryPage({ params }: Params) {
       {otherGroups.length ? (
         <section className="mt-16">
           <Reveal>
-            <h2 className="font-display text-2xl font-semibold tracking-tight">
+            <h2
+              className={
+                isHosting
+                  ? "text-center font-display text-2xl font-semibold tracking-tight"
+                  : "font-display text-2xl font-semibold tracking-tight"
+              }
+            >
               {t("title")}
             </h2>
-            <p className="mt-1 text-sm text-muted-foreground">{t("subtitle")}</p>
+            <p
+              className={
+                isHosting
+                  ? "mt-1 text-center text-sm text-muted-foreground"
+                  : "mt-1 text-sm text-muted-foreground"
+              }
+            >
+              {t("subtitle")}
+            </p>
           </Reveal>
           <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {otherGroups.map((item, i) => (

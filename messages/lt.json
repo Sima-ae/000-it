@@ -157,7 +157,7 @@
   "pricing": {
     "title": "Kainodara",
     "subtitle": "įskaitant 21% PVM",
-    "plansHeadline": "Nuosava el. parduotuvė arba svetainė su AI technologijomis!",
+    "plansHeadline": "Nuosava visa el. parduotuvė arba svetainė WordPress su naujausiomis AI technologijomis!",
     "cta": "Pasirinkite planą",
     "ctaContact": "Susisiekite su mumis",
     "starter": "Business",
@@ -219,7 +219,17 @@
     "q2": "Kaip veikia nemokamas AI skenavimas?",
     "a2": "Įveskite savo URL; mūsų agentai patikrina AEO, GEO (vietinį), SEO, našumą ir AI pasirengimą, tada per 48 valandas su jumis susisiekiame, kad aptartume rezultatus ir visas galimybes.",
     "q3": "Ar galiu vėliau sumažinti / atnaujinti planą?",
-    "a3": "Taip, planą visada galima pakeisti."
+    "a3": "Taip, planą visada galima pakeisti.",
+    "viewAll": "Spustelėkite čia, kad pamatytumėte visus dažniausiai užduodamus klausimus"
+  },
+  "wordpressCare": {
+    "title": "WordPress priežiūra",
+    "headline": "Mėnesinė jūsų WordPress svetainės priežiūra.",
+    "withHosting": "Su priegloba",
+    "withoutHosting": "Be prieglobos",
+    "hostingChoice": "Priegloba",
+    "altWithout": "arba {price} per mėnesį be prieglobos",
+    "altWith": "arba {price} per mėnesį su priegloba"
   },
   "errors": {
     "title": "Kažkas nutiko",

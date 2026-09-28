@@ -157,7 +157,7 @@
   "pricing": {
     "title": "Pricing",
     "subtitle": "including 21% VAT",
-    "plansHeadline": "Your own webshop or website with AI technologies!",
+    "plansHeadline": "Your own complete webshop or website in WordPress with the latest AI technologies!",
     "cta": "Choose Plan",
     "ctaContact": "Contact us",
     "starter": "Business",
@@ -219,7 +219,17 @@
     "q2": "How does the free AI scan work?",
     "a2": "Enter your URL; our agents check AEO, GEO (local), SEO, performance and AI readiness, then we contact you within 48 hours to discuss the results and all options.",
     "q3": "Can I downgrade / upgrade later?",
-    "a3": "Yes, it is always possible to change a plan."
+    "a3": "Yes, it is always possible to change a plan.",
+    "viewAll": "Click here for all frequently asked questions"
+  },
+  "wordpressCare": {
+    "title": "WordPress care",
+    "headline": "Monthly care for your WordPress website.",
+    "withHosting": "With hosting",
+    "withoutHosting": "Without hosting",
+    "hostingChoice": "Hosting",
+    "altWithout": "or {price} per month without hosting",
+    "altWith": "or {price} per month with hosting"
   },
   "errors": {
     "title": "Something went wrong",
@@ -295,7 +305,7 @@
     "mixedCart": "Hosting and services cannot be checked out together. Remove one and complete them separately."
   },
   "footer": {
-    "tagline": "We offer services and products for entrepreneurs and freelancers from AI integration, AEO, GEO and SEO, print, email marketing, graphic design, marketing, maintenance, online advertising, optimisation, social media management, web design and WordPress support through to web hosting and domain names",
+    "tagline": "We offer services and products for entrepreneurs and freelancers from AI integration, AEO, GEO and SEO, print, email marketing, graphic design, marketing, maintenance, online advertising, optimisation, social media management, web design and WordPress care through to web hosting and domain names",
     "rights": "All rights reserved.",
     "usefulLinks": "Useful links",
     "socialMedia": "Social media",
@@ -1264,7 +1274,7 @@
   },
   "locations": {
     "title": "Locations",
-    "subtitle": "TripleZero iT supports businesses worldwide with AI integration, AEO, GEO and SEO, print, email marketing, graphic design, marketing, maintenance, online advertising, optimisation, social media management, web design and WordPress support through to web hosting and domain names. Search or filter by country and choose your city.",
+    "subtitle": "TripleZero iT supports businesses worldwide with AI integration, AEO, GEO and SEO, print, email marketing, graphic design, marketing, maintenance, online advertising, optimisation, social media management, web design and WordPress care through to web hosting and domain names. Search or filter by country and choose your city.",
     "startFreeAiScan": "Start free AI scan",
     "allServices": "All services",
     "breadcrumb": "Locations",

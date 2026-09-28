@@ -157,7 +157,7 @@
   "pricing": {
     "title": "Stanovenie cien",
     "subtitle": "vrátane 21% DPH",
-    "plansHeadline": "Vlastný e-shop alebo web s technológiami AI!",
+    "plansHeadline": "Vlastný kompletný e-shop alebo web vo WordPresse s najnovšími technológiami AI!",
     "cta": "Vybrať plán",
     "ctaContact": "Kontaktujte nás",
     "starter": "Business",
@@ -219,7 +219,17 @@
     "q2": "Ako funguje bezplatný AI scan?",
     "a2": "Zadajte svoju URL; naši agenti skontrolujú AEO, GEO (lokálne), SEO, výkon a AI-readiness, potom vás do 48 hodín kontaktujeme, aby sme prebrali výsledky a všetky možnosti.",
     "q3": "Môžem neskôr downgradovať / upgradovať?",
-    "a3": "Áno, plán je vždy možné zmeniť."
+    "a3": "Áno, plán je vždy možné zmeniť.",
+    "viewAll": "Kliknite sem pre všetky časté otázky"
+  },
+  "wordpressCare": {
+    "title": "Správa WordPressu",
+    "headline": "Mesačná správa vašej webovej stránky vo WordPresse.",
+    "withHosting": "S hostingom",
+    "withoutHosting": "Bez hostingu",
+    "hostingChoice": "Hosting",
+    "altWithout": "alebo {price} mesačne bez hostingu",
+    "altWith": "alebo {price} mesačne s hostingom"
   },
   "errors": {
     "title": "Niečo sa pokazilo",
