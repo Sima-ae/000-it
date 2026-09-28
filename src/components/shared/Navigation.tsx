@@ -99,7 +99,7 @@ export function Navigation() {
   }
 
   return (
-    <header className="pointer-events-none fixed inset-x-0 top-0 z-50 px-2 pt-2 sm:px-3 sm:pt-3 md:px-4 md:pt-4">
+    <header className="pointer-events-none fixed inset-x-0 top-0 z-50 px-2 pt-[max(0.5rem,env(safe-area-inset-top,0px))] sm:px-3 sm:pt-[max(0.75rem,env(safe-area-inset-top,0px))] md:px-4 md:pt-[max(1rem,env(safe-area-inset-top,0px))]">
       <div
         className={cn(
           "pointer-events-auto mx-auto max-w-7xl rounded-[1.75rem] transition-all duration-300",

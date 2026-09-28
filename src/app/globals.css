@@ -59,7 +59,14 @@
   --field-1: rgba(94, 59, 136, 0.16);
   --field-2: rgba(0, 124, 141, 0.1);
   --field-3: rgba(94, 59, 136, 0.08);
-  --nav-offset: 5.75rem;
+  --nav-offset: calc(5.75rem + env(safe-area-inset-top, 0px));
+}
+
+/* Mobile floating header needs more clearance so hero titles aren't covered */
+@media (max-width: 767px) {
+  :root {
+    --nav-offset: calc(7.25rem + env(safe-area-inset-top, 0px));
+  }
 }
 
 .dark {
