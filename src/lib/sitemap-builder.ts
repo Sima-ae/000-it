@@ -23,23 +23,32 @@ const LOCALES = enabledLanguages().map((l) => l.code);
 /**
  * ISO/BCP47 tags for sitemap xhtml:link. App locale `cnr` is not a valid
  * ISO 639-1 hreflang — Google may discard urlsets that use it.
+ * `no` → `nb` (Norwegian Bokmål) matches Google’s preferred tag.
  */
 const HREFLANG_BY_LOCALE: Record<string, string> = {
   cnr: "sr-ME",
+  no: "nb",
 };
+
+/**
+ * Keep sitemap xhtml:link lean. Full hreflang for all 35 locales still lives
+ * in HTML `<link rel="alternate">` — stuffing every language into every
+ * sitemap `<url>` blew child files to 6MB+ and left GSC at 0 discovered pages.
+ */
+const SITEMAP_HREFLANG_LOCALES = ["nl", "en", "de", "fr"] as const;
 
 function hreflangForLocale(locale: string) {
   return HREFLANG_BY_LOCALE[locale] || locale;
 }
 
-/** Bump when regenerating after a major content release. */
-const CONTENT_REV = "2026-09-27a";
+/** Bump when regenerating after a major content / crawlability fix. */
+const CONTENT_REV = "2026-09-28a";
 
 /**
- * Soft cap per file. With ~35 hreflang alternates, keep files well under
- * Google's practical fetch limits (~10MB) and the 50MB / 50k URL protocol max.
+ * Soft cap per file. With lean hreflang, stay well under Google’s practical
+ * fetch comfort zone (~2–3MB) and the 50MB / 50k URL protocol max.
  */
-const MAX_URLS_PER_FILE = 1000;
+const MAX_URLS_PER_FILE = 500;
 
 export type SitemapUrlEntry = {
   loc: string;
@@ -125,10 +134,10 @@ function renderUrlset(entries: SitemapUrlEntry[]) {
     .map((entry) => {
       const loc = encodeSitemapUrl(entry.loc);
       const alts = entry.alternates
-        ? Object.entries(entry.alternates)
+        ? SITEMAP_HREFLANG_LOCALES.filter((lang) => entry.alternates?.[lang])
             .map(
-              ([lang, href]) =>
-                `    <xhtml:link rel="alternate" hreflang="${escapeXml(hreflangForLocale(lang))}" href="${escapeXml(encodeSitemapUrl(href))}" />`,
+              (lang) =>
+                `    <xhtml:link rel="alternate" hreflang="${escapeXml(hreflangForLocale(lang))}" href="${escapeXml(encodeSitemapUrl(entry.alternates![lang]!))}" />`,
             )
             .concat(
               entry.alternates.nl

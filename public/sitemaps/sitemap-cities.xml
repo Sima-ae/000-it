@@ -3,1052 +3,277 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://000-it.com/nl/locaties/amsterdam</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/amsterdam" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/amsterdam" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/amsterdam" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/amsterdam" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/amsterdam" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/amsterda" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/amsterdam" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/%CE%B1%CE%BC%CF%83%CF%84%CE%B5%CF%81%CE%BD%CF%84%CE%B1%CE%BC" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/amsterdam" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/amsterdam" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/amsterdam" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/amszterdam" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/amsterdam" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D0%B0%D0%BC%D1%81%D1%82%D0%B5%D1%80%D0%B4%D0%B0%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/amsterdam" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D0%B0%D0%BC%D1%81%D1%82%D0%B5%D1%80%D0%B4%D0%B0%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/amsterdam" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D0%B0%D0%BC%D1%81%D1%82%D0%B5%D1%80%D0%B4%D0%B0%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/amsterdami" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/%D0%B0%D0%BC%D1%81%D1%82%D0%B5%D1%80%D0%B4%D0%B0%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/amsterdamas" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/amsterdam" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/amsterdam" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/amsterdam" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/amsterdam" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D0%B0%D0%BC%D1%81%D1%82%D0%B5%D1%80%D0%B4%D0%B0%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D0%B0%D0%BC%D1%81%D1%82%D0%B5%D1%80%D0%B4%D0%B0%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/amsterdam" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%90%D7%9E%D7%A1%D7%98%D7%A8%D7%93%D7%9D" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D8%A7%D9%85%D8%B3%D8%AA%D8%B1%D8%AF%D8%A7%D9%85" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%90%E1%83%9B%E1%83%A1%E1%83%A2%E1%83%94%E1%83%A0%E1%83%93%E1%83%90%E1%83%9B%E1%83%98" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/%D5%A1%D5%B4%D5%BD%D5%BF%D5%A5%D6%80%D5%A4%D5%A1%D5%B4" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/amsterdam" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E9%98%BF%E5%A7%86%E6%96%AF%E7%89%B9%E4%B8%B9" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%82%A2%E3%83%A0%E3%82%B9%E3%83%86%E3%83%AB%E3%82%BF%E3%83%A0" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/amsterdam" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/amsterdam" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties/rotterdam</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.98</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/rotterdam" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/rotterdam" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/rotterdam" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/rotterdam" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/roterdam" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/roterda" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/rotterdam" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/%CF%81%CE%BF%CF%84%CE%B5%CF%81%CE%BD%CF%84%CE%B1%CE%BC" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/rotterdam" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/rotterdam" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/rotterdam" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/rotterdam" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/rotterdam" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D1%80%D0%BE%D1%82%D0%B5%D1%80%D0%B4%D0%B0%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/rotterdam" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D1%80%D0%BE%D1%82%D0%B5%D1%80%D0%B4%D0%B0%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/rotterdam" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D1%80%D0%BE%D1%82%D0%B5%D1%80%D0%B4%D0%B0%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/roterdami" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/%D1%80%D0%BE%D1%82%D0%B5%D1%80%D0%B4%D0%B0%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/roterdamas" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/rotterdam" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/rotterdam" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/rotterdam" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/rotterdam" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D1%80%D0%BE%D1%82%D1%82%D0%B5%D1%80%D0%B4%D0%B0%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D1%80%D0%BE%D1%82%D1%82%D0%B5%D1%80%D0%B4%D0%B0%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/rotterdam" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%A8%D7%95%D7%98%D7%A8%D7%93%D7%9D" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D8%B1%D9%88%D8%AA%D8%B1%D8%AF%D8%A7%D9%85" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%A0%E1%83%9D%E1%83%A2%E1%83%94%E1%83%A0%E1%83%93%E1%83%90%E1%83%9B%E1%83%98" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/%D5%BC%D5%B8%D5%BF%D5%A5%D6%80%D5%A4%D5%A1%D5%B4" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/rotterdam" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E9%B9%BF%E7%89%B9%E4%B8%B9" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%83%AD%E3%83%83%E3%83%86%E3%83%AB%E3%82%BF%E3%83%A0" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/rotterdam" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/rotterdam" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties/den-haag</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.96</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/den-haag" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/the-hague" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/la-haye" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/den-haag" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/la-haya" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/haia" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/laia" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/%CE%B7-%CF%87%CE%B1%CE%B3%CE%B7" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/haga" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/haag" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/haag" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/haga" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/haga" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D1%85%D0%B0%D0%B3%D0%B0" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/haag" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D1%85%D0%B0%D0%B3" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/hag" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D1%85%D0%B0%D0%B3" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/hages" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/%D1%85%D0%B0%D0%B3" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/haga" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/haag" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/haag" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/haag" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/haag" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D0%B3%D0%B0%D0%B0%D0%B3%D0%B0" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D0%B3%D0%B0%D0%B0%D0%B3%D0%B0" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/lahey" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%94%D7%90%D7%92" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D9%84%D8%A7%D9%87%D8%A7%D9%8A" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%B0%E1%83%90%E1%83%90%E1%83%92%E1%83%90" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/%D5%B0%D5%A1%D5%A1%D5%A3%D5%A1" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/haaqa" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E6%B5%B7%E7%89%99" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%83%8F%E3%83%BC%E3%82%AF" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/la-haye" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/den-haag" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties/utrecht</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/utrecht" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/utrecht" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/utrecht" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/utrecht" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/utrecht" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/utreque" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/utrecht" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/%CE%BF%CF%85%CF%84%CF%81%CE%B5%CF%87%CF%84%CE%B7" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/utrecht" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/utrecht" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/utrecht" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/utrecht" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/utrecht" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D1%83%D1%82%D1%80%D0%B5%D1%85%D1%82" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/utrecht" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D1%83%D1%82%D1%80%D0%B5%D1%86%D1%85%D1%82" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/utrecht" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D1%83%D1%82%D1%80%D0%B5%D1%86%D1%85%D1%82" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/utrecht" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/%D1%83%D1%82%D1%80%D0%B5%D1%85%D1%82" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/utrechtas" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/utrecht" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/utrecht" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/utrecht" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/utrecht" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D1%83%D1%82%D1%80%D0%B5%D1%85%D1%82" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D1%83%D1%82%D1%80%D0%B5%D1%85%D1%82" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/utrecht" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%90%D7%95%D7%98%D7%A8%D7%9B%D7%98" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D8%A7%D9%88%D8%AA%D8%B1%D9%8A%D8%AE%D8%AA" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%A3%E1%83%A2%E1%83%A0%E1%83%94%E1%83%AE%E1%83%A2%E1%83%98" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/%D5%B8%D6%82%D5%BF%D6%80%D5%A5%D5%AD%D5%BF" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/utrext" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E4%B9%8C%E5%BE%97%E5%8B%92%E6%94%AF" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%83%A6%E3%83%88%E3%83%AC%E3%83%92%E3%83%88" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/utrecht" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/utrecht" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties/eindhoven</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.92</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/eindhoven" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/eindhoven" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/eindhoven" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/eindhoven" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/eindhoven" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/eindhoven" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/eindhoven" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/%CE%B1%CE%B9%CE%BD%CF%84%CF%87%CE%BF%CF%86%CE%B5%CE%BD" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/eindhoven" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/eindhoven" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/eindhoven" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/eindhoven" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/eindhoven" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D0%B0%D0%B8%D0%BD%D0%B4%D1%85%D0%BE%D0%B2%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/eindhoven" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D0%B5%D0%B8%D0%BD%D0%B4%D1%85%D0%BE%D0%B2%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/eindhoven" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D0%B5%D0%B8%D0%BD%D0%B4%D1%85%D0%BE%D0%B2%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/eindhoven" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/%D0%B0%D1%98%D0%BD%D0%B4%D1%85%D0%BE%D0%B2%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/eindhovenas" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/eindhoven" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/eindhoven" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/eindhoven" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/eindhoven" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D0%B5%D0%B8%D0%BD%D0%B4%D0%B3%D0%BE%D0%B2%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D1%8D%D0%B8%D0%BD%D0%B4%D1%85%D0%BE%D0%B2%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/eindhoven" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%90%D7%99%D7%99%D7%A0%D7%93%D7%94%D7%95%D7%91%D7%9F" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D8%A7%D9%8A%D9%86%D8%AF%D9%87%D9%88%D9%81%D9%86" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%94%E1%83%98%E1%83%9C%E1%83%93%E1%83%B0%E1%83%9D%E1%83%95%E1%83%94%E1%83%9C%E1%83%98" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/%D5%A7%D5%B5%D5%B6%D5%A4%D5%B0%D5%B8%D5%BE%D5%A5%D5%B6" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/eyndhoven" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E5%9F%83%E5%9B%A0%E9%9C%8D%E6%B8%A9" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%82%A2%E3%82%A4%E3%83%B3%E3%83%88%E3%83%9B%E3%83%BC%E3%83%95%E3%82%A7%E3%83%B3" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/eindhoven" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/eindhoven" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties/antwerpen</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.91</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/antwerpen" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/antwerp" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/anvers" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/antwerpen" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/amberes" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/antuerpia" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/anversa" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/%CE%B1%CE%BC%CE%B2%CE%B5%CF%81%CF%83%CE%B1" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/antwerpia" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/antverpy" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/antverpy" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/antwerpen" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/anvers" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D0%B0%D0%BD%D1%82%D0%B2%D0%B5%D1%80%D0%BF%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/antwerpen" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D0%B0%D0%BD%D1%82%D0%B2%D0%B5%D1%80%D0%BF%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/antwerpen" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D0%B0%D0%BD%D1%82%D0%B2%D0%B5%D1%80%D0%BF%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/antwerp" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/%D0%B0%D0%BD%D1%82%D0%B2%D0%B5%D1%80%D0%BF%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/antverpenas" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/antwerpen" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/antwerpen" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/antwerpen" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/antwerpen" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D0%B0%D0%BD%D1%82%D0%B2%D0%B5%D1%80%D0%BF%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D0%B0%D0%BD%D1%82%D0%B2%D0%B5%D1%80%D0%BF%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/anvers" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%90%D7%A0%D7%98%D7%95%D7%95%D7%A8%D7%A4%D7%9F" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D8%A7%D9%86%D8%AA%D9%88%D9%8A%D8%B1%D8%A8" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%90%E1%83%9C%E1%83%A2%E1%83%95%E1%83%94%E1%83%A0%E1%83%9E%E1%83%94%E1%83%9C%E1%83%98" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/%D5%A1%D5%B6%D5%BF%D5%BE%D5%A5%D6%80%D5%BA%D5%A5%D5%B6" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/antverpen" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E5%AE%89%E7%89%B9%E5%8D%AB%E6%99%AE" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%82%A2%E3%83%B3%E3%83%88%E3%83%AF%E3%83%BC%E3%83%95" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/anvers" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/antwerpen" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties/brussel</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/brussel" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/brussels" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/bruxelles" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/brussel" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/bruselas" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/bruxelas" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/bruxelles" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/%CE%B2%CF%81%CF%85%CE%BE%CE%B5%CE%BB%CE%BB%CE%B5%CF%82" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/bruksela" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/brusel" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/brusel" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/brusszel" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/bruxelles" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D0%B1%D1%80%D1%8E%D0%BA%D1%81%D0%B5%D0%BB" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/bruxelles" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D0%B1%D1%80%D0%B8%D1%81%D0%B5%D0%BB" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/brisel" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D0%B1%D1%80%D0%B8%D1%81%D0%B5%D0%BB" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/brukseli" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/%D0%B1%D1%80%D0%B8%D1%81%D0%B5%D0%BB" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/briuselis" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/bruxelles" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/bryssel" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/brussel" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/bryssel" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D0%B1%D1%80%D1%8E%D1%81%D1%81%D0%B5%D0%BB%D1%8C" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D0%B1%D1%80%D1%8E%D1%81%D1%81%D0%B5%D0%BB%D1%8C" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/bruksel" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%91%D7%A8%D7%99%D7%A1%D7%9C" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D8%A8%D8%B1%D9%88%D9%83%D8%B3%D9%84" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%91%E1%83%A0%E1%83%98%E1%83%A3%E1%83%A1%E1%83%94%E1%83%9A%E1%83%98" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/%D5%A2%D6%80%D5%B5%D5%B8%D6%82%D5%BD%D5%A5%D5%AC" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/brussel" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E5%B8%83%E9%B2%81%E5%A1%9E%E5%B0%94" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%83%95%E3%83%AA%E3%83%A5%E3%83%83%E3%82%BB%E3%83%AB" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/bruxelles" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/brussel" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties/groningen</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/groningen" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/groningen" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/groningue" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/groningen" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/groninga" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/groninga" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/groninga" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/groningen" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/groningen" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/groningen" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/groningen" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/groningen" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/groningen" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D0%B3%D1%80%D0%BE%D0%BD%D0%B8%D0%BD%D0%B3%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/groningen" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D0%B3%D1%80%D0%BE%D0%BD%D0%B8%D0%BD%D0%B3%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/groningen" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D0%B3%D1%80%D0%BE%D0%BD%D0%B8%D0%BD%D0%B3%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/groningen" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/%D0%B3%D1%80%D0%BE%D0%BD%D0%B8%D0%BD%D0%B3%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/groningenas" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/groningen" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/groningen" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/groningen" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/groningen" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D0%B3%D1%80%D0%BE%D0%BD%D1%96%D0%BD%D0%B3%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D0%B3%D1%80%D0%BE%D0%BD%D0%B8%D0%BD%D0%B3%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/groningen" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%97%D7%A8%D7%95%D7%A0%D7%99%D7%A0%D7%92%D7%9F" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D8%AC%D8%B1%D9%88%D9%86%D9%8A%D9%86%D8%AC%D9%86" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%92%E1%83%A0%E1%83%9D%E1%83%9C%E1%83%98%E1%83%9C%E1%83%92%E1%83%94%E1%83%9C%E1%83%98" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/%D5%A3%D6%80%D5%B8%D5%B6%D5%AB%D5%B6%D5%A3%D5%A5%D5%B6" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/qroninqen" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E6%A0%BC%E7%BD%97%E5%AE%81%E6%A0%B9" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%83%95%E3%83%AD%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B1%E3%83%B3" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/groningue" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/groningen" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties/tilburg</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.86</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/tilburg" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/tilburg" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/tilbourg" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/tilburg" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/tilburgo" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/tilburgo" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/tilburg" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/%CF%84%CE%B9%CE%BB%CE%BC%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%BA" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/tilburg" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/tilburg" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/tilburg" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/tilburg" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/tilburg" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D1%82%D0%B8%D0%BB%D0%B1%D1%83%D1%80%D0%B3" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/tilburg" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D1%82%D0%B8%D0%BB%D0%B1%D1%83%D1%80%D0%B3" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/tilburg" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D1%82%D0%B8%D0%BB%D0%B1%D1%83%D1%80%D0%B3" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/tilburg" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/%D1%82%D0%B8%D0%BB%D0%B1%D1%83%D1%80%D0%B3" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/tilburgas" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/tilburg" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/tilburg" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/tilburg" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/tilburg" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D1%82%D1%96%D0%BB%D0%B1%D1%83%D1%80%D0%B3" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D1%82%D0%B8%D0%BB%D0%B1%D1%83%D1%80%D0%B3" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/tilburg" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%98%D7%99%D7%9C%D7%91%D7%95%D7%A8%D7%92" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D8%AA%D9%8A%D9%84%D8%A8%D9%88%D8%B1%D8%BA" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%A2%E1%83%98%E1%83%9A%E1%83%91%E1%83%A3%E1%83%A0%E1%83%92%E1%83%98" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/%D5%A9%D5%AB%D5%AC%D5%A2%D5%B8%D6%82%D6%80%D5%A3" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/tilburq" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E8%92%82%E5%B0%94%E5%A0%A1" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%83%86%E3%82%A3%E3%83%AB%E3%83%95%E3%83%AB%E3%83%95" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/tilbourg" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/tilburg" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties/gent</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/gent" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/ghent" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/gand" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/gent" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/gante" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/gante" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/gand" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/%CE%B3%CE%B1%CE%BD%CE%B4%CE%B7" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/gandawa" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/gent" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/gent" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/gent" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/gent" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D0%B3%D0%B5%D0%BD%D1%82" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/gent" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D0%B3%D0%B5%D0%BD%D1%82" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/gent" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D0%B3%D0%B5%D0%BD%D1%82" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/genti" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/%D0%B3%D0%B5%D0%BD%D1%82" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/gentas" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/gent" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/gent" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/gent" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/gent" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D0%B3%D0%B5%D0%BD%D1%82" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D0%B3%D0%B5%D0%BD%D1%82" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/gent" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%92%D7%A0%D7%98" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D8%BA%D9%86%D8%AA" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%92%E1%83%94%E1%83%9C%E1%83%A2%E1%83%98" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/%D5%A3%D5%A5%D5%B6%D5%BF" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/gent" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E6%A0%B9%E7%89%B9" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%82%B1%E3%83%B3%E3%83%88" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/gand" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/gent" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties/almere</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.84</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/almere" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/almere" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/almere" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/almere" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/almere" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/almere" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/almere" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/almere" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/almere" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/almere" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/almere" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/almere" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/almere" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D0%B0%D0%BB%D0%BC%D0%B5%D1%80%D0%B5" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/almere" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D0%B0%D0%BB%D0%BC%D0%B5%D1%80%D0%B5" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/almere" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D0%B0%D0%BB%D0%BC%D0%B5%D1%80%D0%B5" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/almere" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/%D0%B0%D0%BB%D0%BC%D0%B5%D1%80%D0%B5" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/almere" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/almere" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/almere" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/almere" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/almere" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D0%B0%D0%BB%D0%BC%D0%B5%D1%80%D0%B5" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D0%B0%D0%BB%D0%BC%D0%B5%D1%80%D0%B5" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/almere" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%90%D7%9C%D7%9E%D7%A8%D7%94" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D8%A7%D9%84%D9%85%D9%8A%D8%B1" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%90%E1%83%9A%E1%83%9B%E1%83%94%E1%83%A0%E1%83%94" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/%D5%A1%D5%AC%D5%B4%D5%A5%D6%80%D5%A5" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/almere" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E9%98%BF%E5%B0%94%E6%A2%85%E5%8B%92" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%82%A2%E3%83%AB%E3%83%A1%E3%83%AC" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/almere" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/almere" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties/breda</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.83</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/breda" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/breda" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/breda" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/breda" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/breda" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/breda" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/breda" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/%CE%BC%CF%80%CF%81%CE%B5%CE%BD%CF%84%CE%B1" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/breda" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/breda" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/breda" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/breda" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/breda" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D0%B1%D1%80%D0%B5%D0%B4%D0%B0" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/breda" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D0%B1%D1%80%D0%B5%D0%B4%D0%B0" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/breda" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D0%B1%D1%80%D0%B5%D0%B4%D0%B0" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/breda" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/%D0%B1%D1%80%D0%B5%D0%B4%D0%B0" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/breda" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/breda" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/breda" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/breda" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/breda" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D0%B1%D1%80%D0%B5%D0%B4%D0%B0" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D0%B1%D1%80%D0%B5%D0%B4%D0%B0" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/breda" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%91%D7%A8%D7%93%D7%94" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D8%A8%D8%B1%D9%8A%D8%AF%D8%A7" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%91%E1%83%A0%E1%83%94%E1%83%93%E1%83%90" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/%D5%A2%D6%80%D5%A5%D5%A4%D5%A1" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/breda" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E5%B8%83%E9%9B%B7%E8%BE%BE" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%83%95%E3%83%AC%E3%82%BF" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/breda" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/breda" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties/nijmegen</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/nijmegen" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/nijmegen" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/nimegue" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/nimwegen" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/nimega" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/nimega" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/nimega" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/nijmegen" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/nijmegen" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/nijmegen" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/nijmegen" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/nijmegen" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/nijmegen" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D0%BD%D0%B5%D0%B8%D0%BC%D0%B5%D0%B3%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/nijmegen" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D0%BD%D0%B8%D1%98%D0%BC%D0%B5%D0%B3%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/nijmegen" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D0%BD%D0%B8%D1%98%D0%BC%D0%B5%D0%B3%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/nijmegen" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/%D0%BD%D0%B0%D1%98%D0%BC%D0%B5%D0%B3%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/nijmegenas" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/nijmegen" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/nijmegen" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/nijmegen" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/nijmegen" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D0%BD%D0%B5%D0%B8%D0%BC%D0%B5%D0%B3%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D0%BD%D0%B5%D0%B8%D0%BC%D0%B5%D0%B3%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/nijmegen" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%A0%D7%99%D7%99%D7%9E%D7%99%D7%92%D7%9F" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D9%86%D9%8A%D9%85%D9%8A%D8%BA%D9%86" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%9C%E1%83%90%E1%83%98%E1%83%9B%E1%83%94%E1%83%92%E1%83%94%E1%83%9C%E1%83%98" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/%D5%B6%D5%A1%D5%B5%D5%B4%D5%A5%D5%A3%D5%A5%D5%B6" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/nijmegen" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E5%A5%88%E6%A2%85%E4%BA%A8" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%83%8A%E3%82%A4%E3%83%A1%E3%83%BC%E3%83%98%E3%83%B3" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/nimegue" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/nijmegen" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties/haarlem</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.81</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/haarlem" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/haarlem" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/haarlem" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/haarlem" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/haarlem" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/harlem" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/haarlem" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/%CF%87%CE%B1%CF%81%CE%BB%CE%B5%CE%BC" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/haarlem" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/haarlem" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/haarlem" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/haarlem" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/haarlem" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D1%85%D0%B0%D1%80%D0%BB%D0%B5%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/haarlem" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D1%85%D0%B0%D1%80%D0%BB%D0%B5%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/haarlem" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D1%85%D0%B0%D1%80%D0%BB%D0%B5%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/harlem" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/%D1%85%D0%B0%D1%80%D0%BB%D0%B5%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/harlemas" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/haarlem" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/haarlem" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/haarlem" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/haarlem" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D0%B3%D0%B0%D1%80%D0%BB%D0%B5%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D1%85%D0%B0%D1%80%D0%BB%D0%B5%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/haarlem" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%94%D7%90%D7%A8%D7%9C%D7%9D" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D9%87%D8%A7%D8%B1%D9%84%D9%85" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%B0%E1%83%90%E1%83%A0%E1%83%9A%E1%83%94%E1%83%9B%E1%83%98" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/%D5%B0%D5%A1%D6%80%D5%AC%D5%A5%D5%B4" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/haarlem" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E5%93%88%E5%8B%92%E5%A7%86" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/haarlem" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/haarlem" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties/arnhem</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/arnhem" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/arnhem" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/arnhem" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/arnheim" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/arnhem" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/arnhem" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/arnhem" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/%CE%B1%CF%81%CE%BD%CE%B5%CE%BC" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/arnhem" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/arnhem" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/arnhem" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/arnhem" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/arnhem" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D0%B0%D1%80%D0%BD%D0%B5%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/arnhem" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D0%B0%D1%80%D0%BD%D1%85%D0%B5%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/arnhem" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D0%B0%D1%80%D0%BD%D1%85%D0%B5%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/arnhem" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/%D0%B0%D1%80%D0%BD%D0%B5%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/arnhemas" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/arnhem" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/arnhem" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/arnhem" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/arnhem" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D0%B0%D1%80%D0%BD%D0%B5%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D0%B0%D1%80%D0%BD%D0%B5%D0%BC" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/arnhem" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%90%D7%A8%D7%A0%D7%94%D7%9D" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D8%A7%D8%B1%D9%86%D9%87%D9%8A%D9%85" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%90%E1%83%A0%E1%83%9C%E1%83%94%E1%83%9B%E1%83%98" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/%D5%A1%D5%BC%D5%B6%D5%B0%D5%A5%D5%B4" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/arnhem" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E9%98%BF%E7%BA%B3%E5%A7%86" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%82%A2%E3%83%BC%E3%83%8D%E3%83%A0" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/arnhem" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/arnhem" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties/amersfoort</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.77</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/amersfoort" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/amersfoort" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/amersfoort" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/amersfoort" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/amersfoort" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/amersfoort" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/amersfoort" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/%CE%B1%CE%BC%CE%B5%CF%81%CF%83%CF%86%CE%BF%CF%81%CF%84" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/amersfoorta" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/amersfoort" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/amersfoort" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/amersfoort" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/amersfoort" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D0%B0%D0%BC%D0%B5%D1%80%D1%81%D1%84%D0%BE%D1%80%D1%82" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/amersfoort" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D0%B0%D0%BC%D0%B5%D1%80%D1%81%D1%84%D0%BE%D0%BE%D1%80%D1%82" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/amersfoort" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D0%B0%D0%BC%D0%B5%D1%80%D1%81%D1%84%D0%BE%D0%BE%D1%80%D1%82" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/amersfoort" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/%D0%B0%D0%BC%D0%B5%D1%80%D1%81%D1%84%D0%BE%D1%80%D1%82" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/amersfortas" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/amersfoort" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/amersfoort" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/amersfoort" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/amersfoort" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D0%B0%D0%BC%D0%B5%D1%80%D1%81%D1%84%D0%BE%D1%80%D1%82" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D0%B0%D0%BC%D0%B5%D1%80%D1%81%D1%84%D0%BE%D1%80%D1%82" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/amersfoort" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%90%D7%9E%D7%A8%D7%A4%D7%95%D7%A8%D7%98" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D8%A7%D9%85%D8%B1%D8%B3%D9%81%D9%88%D8%B1%D8%AA" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%90%E1%83%9B%E1%83%94%E1%83%A0%E1%83%A1%E1%83%A4%E1%83%9D%E1%83%A0%E1%83%A2%E1%83%98" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/%D5%A1%D5%B4%D5%A5%D6%80%D5%BD%D6%86%D5%B8%D6%80%D5%BF" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/amersfoort" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E9%98%BF%E9%BB%98%E6%96%AF%E7%A6%8F%E7%89%B9" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%82%A2%E3%83%A1%E3%83%AB%E3%82%B9%E3%83%95%E3%82%A9%E3%83%BC%E3%83%AB%E3%83%88" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/amersfoort" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/amersfoort" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties/apeldoorn</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.76</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/apeldoorn" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/apeldoorn" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/apeldoorn" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/apeldoorn" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/apeldoorn" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/apeldoorn" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/apeldoorn" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/apeldoorn" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/apeldoorn" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/apeldoorn" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/apeldoorn" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/apeldoorn" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/apeldoorn" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D0%B0%D0%BF%D0%B5%D0%BB%D0%B4%D0%BE%D1%80%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/apeldoorn" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D0%B0%D0%BF%D0%B5%D0%BB%D0%B4%D0%BE%D0%BE%D1%80%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/apeldoorn" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D0%B0%D0%BF%D0%B5%D0%BB%D0%B4%D0%BE%D0%BE%D1%80%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/apeldoorn" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/%D0%B0%D0%BF%D0%B5%D0%BB%D0%B4%D0%BE%D1%80%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/apeldornas" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/apeldoorn" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/apeldoorn" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/apeldoorn" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/apeldoorn" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D0%B0%D0%BF%D0%B5%D0%BB%D0%B4%D0%BE%D1%80%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D0%B0%D0%BF%D0%B5%D0%BB%D0%B4%D0%BE%D1%80%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/apeldoorn" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%90%D7%A4%D7%9C%D7%93%D7%95%D7%A8%D7%9F" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D8%A7%D8%A8%D9%84%D8%AF%D9%88%D8%B1%D9%86" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%90%E1%83%9E%E1%83%94%E1%83%9A%E1%83%93%E1%83%9D%E1%83%A0%E1%83%9C%E1%83%98" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/%D5%A1%D5%BA%D5%A5%D5%AC%D5%A4%D5%B8%D6%80%D5%B6" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/apeldoorn" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E9%98%BF%E7%8F%80%E5%B0%94%E5%A4%9A%E4%BC%A6" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%82%A2%E3%83%98%E3%83%AB%E3%83%88%E3%83%BC%E3%83%AB%E3%83%B3" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/apeldoorn" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/apeldoorn" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties/enschede</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/enschede" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/enschede" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/enschede" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/enschede" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/enschede" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/enschede" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/enschede" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/enschede" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/enschede" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/enschede" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/enschede" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/enschede" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/enschede" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D0%B5%D0%BD%D1%81%D1%85%D0%B5%D0%B4%D0%B5" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/enschede" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D0%B5%D0%BD%D1%81%D1%86%D1%85%D0%B5%D0%B4%D0%B5" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/enschede" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D0%B5%D0%BD%D1%81%D1%86%D1%85%D0%B5%D0%B4%D0%B5" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/enschede" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/enschede" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/enschede" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/enschede" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/enschede" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/enschede" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/enschede" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D0%B5%D0%BD%D1%81%D1%85%D0%B5%D0%B4%D0%B5" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D1%8D%D0%BD%D1%81%D1%85%D0%B5%D0%B4%D0%B5" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/enschede" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%90%D7%A0%D7%A9%D7%93%D7%94" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D8%A7%D9%86%D8%B4%D9%8A%D8%AF%D9%87" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%94%E1%83%9C%E1%83%A8%E1%83%94%E1%83%93%E1%83%94" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/enschede" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/enschede" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E6%81%A9%E6%96%AF%E8%B5%AB%E5%BE%B7" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%82%A8%E3%83%B3%E3%82%B9%E3%83%98%E3%83%BC%E3%83%86" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/enschede" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/enschede" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties/leiden</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.74</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/leiden" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/leiden" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/leyde" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/leiden" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/leiden" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/leida" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/leida" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/leiden" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/lejda" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/leiden" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/leiden" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/leiden" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/leiden" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D0%BB%D0%B0%D0%B8%D0%B4%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/leiden" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D0%BB%D0%B5%D0%B8%D0%B4%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/leiden" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D0%BB%D0%B5%D0%B8%D0%B4%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/leiden" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/%D0%BB%D0%B0%D1%98%D0%B4%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/leidenas" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/leiden" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/leiden" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/leiden" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/leiden" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D0%BB%D0%B5%D0%B8%D0%B4%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D0%BB%D0%B5%D0%B8%D0%B4%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/leiden" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%9C%D7%99%D7%99%D7%93%D7%9F" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D9%84%D9%8A%D8%AF%D9%86" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%9A%E1%83%94%E1%83%98%E1%83%93%E1%83%94%E1%83%9C%E1%83%98" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/%D5%AC%D5%A5%D5%B5%D5%A4%D5%A5%D5%B6" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/leyden" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E8%8E%B1%E9%A1%BF" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%83%A9%E3%82%A4%E3%83%86%E3%83%B3" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/leyde" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/leiden" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties/zwolle</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.73</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/zwolle" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/zwolle" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/zwolle" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/zwolle" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/zwolle" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/zwolle" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/zwolle" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/%CF%84%CF%83%CE%B2%CE%BF%CE%BB%CE%B5" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/zwolle" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/zwolle" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/zwolle" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/zwolle" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/zwolle" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D0%B7%D0%B2%D0%BE%D0%BB%D0%B5" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/zwolle" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D0%B7%D0%B2%D0%BE%D0%BB%D0%BB%D0%B5" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/zwolle" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D0%B7%D0%B2%D0%BE%D0%BB%D0%BB%D0%B5" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/zwolle" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/%D1%86%D0%B2%D0%BE%D0%BB%D0%B5" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/zwolle" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/zwolle" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/zwolle" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/zwolle" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/zwolle" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D0%B7%D0%B2%D0%BE%D0%BB%D0%BB%D0%B5" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D0%B7%D0%B2%D0%BE%D0%BB%D0%BB%D0%B5" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/zwolle" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%96%D7%95%D7%95%D7%9C%D7%94" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D8%B2%D9%88%D9%88%D9%84" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%96%E1%83%95%E1%83%9D%E1%83%9A%E1%83%94" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/%D6%81%D5%BE%D5%B8%D5%AC%D5%AC%D5%A5" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/zwolle" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E5%85%B9%E6%B2%83%E5%8B%92" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%82%B9%E3%82%A6%E3%82%A9%E3%83%AC" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/zwolle" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/zwolle" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties/maastricht</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.72</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/maastricht" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/maastricht" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/maastricht" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/maastricht" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/mastrique" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/maastricht" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/maastricht" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/%CE%BC%CE%B1%CE%B1%CF%83%CF%84%CF%81%CE%B9%CF%87%CF%84" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/maastricht" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/maastricht" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/maastricht" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/maastricht" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/maastricht" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D0%BC%D0%B0%D0%B0%D1%81%D1%82%D1%80%D0%B8%D1%85%D1%82" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/maastricht" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D0%BC%D0%B0%D0%B0%D1%81%D1%82%D1%80%D0%B8%D1%86%D1%85%D1%82" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/maastricht" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D0%BC%D0%B0%D0%B0%D1%81%D1%82%D1%80%D0%B8%D1%86%D1%85%D1%82" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/mastriht" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/%D0%BC%D0%B0%D1%81%D1%82%D1%80%D0%B8%D1%85%D1%82" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/mastrichtas" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/maastricht" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/maastricht" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/maastricht" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/maastricht" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D0%BC%D0%B0%D0%B0%D1%81%D1%82%D1%80%D0%B8%D1%85%D1%82" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D0%BC%D0%B0%D0%B0%D1%81%D1%82%D1%80%D0%B8%D1%85%D1%82" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/maastricht" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%9E%D7%90%D7%A1%D7%98%D7%A8%D7%99%D7%9B%D7%98" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D9%85%D8%A7%D8%B3%D8%AA%D8%B1%D9%8A%D8%AE%D8%AA" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%9B%E1%83%90%E1%83%90%E1%83%A1%E1%83%A2%E1%83%A0%E1%83%98%E1%83%AE%E1%83%A2%E1%83%98" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/%D5%B4%D5%A1%D5%BD%D5%BF%D6%80%D5%AB%D5%AD%D5%BF" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/maastrixt" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E9%A9%AC%E6%96%AF%E7%89%B9%E9%87%8C%E8%B5%AB%E7%89%B9" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%83%9E%E3%83%BC%E3%82%B9%E3%83%88%E3%83%AA%E3%83%92%E3%83%88" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/maastricht" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/maastricht" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties/brugge</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/brugge" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/bruges" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/bruges" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/brugge" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/brujas" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/bruxelas-brugge" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/bruges" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/%CE%BC%CF%80%CF%81%CE%B9%CE%B6" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/brugia" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/bruggy" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/bruggy" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/bruges" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/bruges" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D0%B1%D1%80%D1%8E%D0%B6" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/bruges" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D0%B1%D1%80%D0%B8%D0%B6" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/briz" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D0%B1%D1%80%D0%B8%D0%B6" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/bruges" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/%D0%B1%D1%80%D0%B8%D0%B6" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/briuge" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/brugge" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/brygge" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/brugge" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/brugge" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D0%B1%D1%80%D1%8E%D0%B3%D0%B3%D0%B5" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D0%B1%D1%80%D1%8E%D0%B3%D0%B3%D0%B5" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/brugge" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%91%D7%A8%D7%95%D7%96" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D8%A8%D8%B1%D9%88%D8%AC" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%91%E1%83%A0%E1%83%98%E1%83%A3%E1%83%92%E1%83%94" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/%D5%A2%D6%80%D5%B5%D5%B8%D6%82%D5%A3%D5%A5" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/bruges" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E5%B8%83%E9%B2%81%E6%97%A5" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%83%95%E3%83%AB%E3%83%BC%E3%82%B7%E3%83%A5" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/bruges" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/brugge" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties/leuven</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.69</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/leuven" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/leuven" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/louvain" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/lowen" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/lovaina" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/lovaina" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/lovanio" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/leuven" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/leuven" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/leuven" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/leuven" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/leuven" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/leuven" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D0%BB%D1%8C%D0%BE%D0%B2%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/leuven" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D0%BB%D0%B5%D1%83%D0%B2%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/leuven" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D0%BB%D0%B5%D1%83%D0%B2%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/leuven" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/%D0%BB%D0%B5%D0%B2%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/leuvenas" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/leuven" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/leuven" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/leuven" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/leuven" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D0%BB%D0%B5%D0%B2%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D0%BB%D0%B5%D0%B2%D0%B5%D0%BD" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/leuven" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%9C%D7%95%D7%91%D7%9F" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D9%84%D9%88%D9%81%D9%8A%D9%86" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%9A%E1%83%94%E1%83%95%E1%83%94%E1%83%9C%E1%83%98" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/%D5%AC%D5%B5%D5%B8%D5%BE%D5%A5%D5%B6" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/leuven" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E9%B2%81%E6%B1%B6" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%83%AB%E3%83%BC%E3%82%A6%E3%82%A7%E3%83%B3" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/louvain" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/leuven" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties/dordrecht</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties/dordrecht" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations/dordrecht" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/dordrecht" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte/dordrecht" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones/dordrecht" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes/dordreque" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi/dordrecht" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies/%CE%BD%CF%84%CE%BF%CF%81%CE%BD%CF%84%CF%81%CE%B5%CF%87%CF%84" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje/dordrecht" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality/dordrecht" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality/dordrecht" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek/dordrecht" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii/dordrecht" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii/%D0%B4%D0%BE%D1%80%D0%B4%D1%80%D0%B5%D1%85%D1%82" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije/dordrecht" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije/%D0%B4%D0%BE%D1%80%D0%B4%D1%80%D0%B5%D1%86%D1%85%D1%82" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije/dordrecht" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije/%D0%B4%D0%BE%D1%80%D0%B4%D1%80%D0%B5%D1%86%D1%85%D1%82" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet/dordrecht" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii/%D0%B4%D0%BE%D1%80%D0%B4%D1%80%D0%B5%D1%85%D1%82" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves/dordrechtas" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer/dordrecht" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser/dordrecht" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner/dordrecht" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit/dordrecht" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi/%D0%B4%D0%BE%D1%80%D0%B4%D1%80%D0%B5%D1%85%D1%82" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii/%D0%B4%D0%BE%D1%80%D0%B4%D1%80%D0%B5%D1%85%D1%82" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar/dordrecht" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot/%D7%93%D7%95%D7%A8%D7%93%D7%A8%D7%9B%D7%98" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe/%D8%AF%D9%88%D8%B1%D8%AF%D8%B1%D9%8A%D8%AE%D8%AA" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi/%E1%83%93%E1%83%9D%E1%83%A0%E1%83%93%E1%83%A0%E1%83%94%E1%83%AE%E1%83%A2%E1%83%98" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer/%D5%A4%D5%B8%D6%80%D5%A4%D6%80%D5%A5%D5%AD%D5%BF" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar/dordrext" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian/%E5%A4%9A%E5%BE%B7%E9%9B%B7%E8%B5%AB%E7%89%B9" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho/%E3%83%88%E3%83%AB%E3%83%88%E3%83%AC%E3%83%92%E3%83%88" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements/dordrecht" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties/dordrecht" />
   </url>
   <url>
     <loc>https://000-it.com/nl/locaties</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.86</priority>
     <xhtml:link rel="alternate" hreflang="nl" href="https://000-it.com/nl/locaties" />
     <xhtml:link rel="alternate" hreflang="en" href="https://000-it.com/en/locations" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements" />
     <xhtml:link rel="alternate" hreflang="de" href="https://000-it.com/de/standorte" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://000-it.com/es/ubicaciones" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://000-it.com/pt/localizacoes" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://000-it.com/it/sedi" />
-    <xhtml:link rel="alternate" hreflang="el" href="https://000-it.com/el/topothesies" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://000-it.com/pl/lokalizacje" />
-    <xhtml:link rel="alternate" hreflang="cs" href="https://000-it.com/cs/lokality" />
-    <xhtml:link rel="alternate" hreflang="sk" href="https://000-it.com/sk/lokality" />
-    <xhtml:link rel="alternate" hreflang="hu" href="https://000-it.com/hu/helyszinek" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://000-it.com/ro/locatii" />
-    <xhtml:link rel="alternate" hreflang="bg" href="https://000-it.com/bg/lokacii" />
-    <xhtml:link rel="alternate" hreflang="hr" href="https://000-it.com/hr/lokacije" />
-    <xhtml:link rel="alternate" hreflang="sr" href="https://000-it.com/sr/lokacije" />
-    <xhtml:link rel="alternate" hreflang="bs" href="https://000-it.com/bs/lokacije" />
-    <xhtml:link rel="alternate" hreflang="sr-ME" href="https://000-it.com/cnr/lokacije" />
-    <xhtml:link rel="alternate" hreflang="sq" href="https://000-it.com/sq/vendndodhjet" />
-    <xhtml:link rel="alternate" hreflang="mk" href="https://000-it.com/mk/lokacii" />
-    <xhtml:link rel="alternate" hreflang="lt" href="https://000-it.com/lt/vietoves" />
-    <xhtml:link rel="alternate" hreflang="da" href="https://000-it.com/da/lokationer" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://000-it.com/sv/platser" />
-    <xhtml:link rel="alternate" hreflang="no" href="https://000-it.com/no/lokasjoner" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://000-it.com/fi/sijainnit" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://000-it.com/uk/lokaciyi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://000-it.com/ru/lokacii" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://000-it.com/tr/konumlar" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://000-it.com/he/mearot" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://000-it.com/ar/mawaqe" />
-    <xhtml:link rel="alternate" hreflang="ka" href="https://000-it.com/ka/lokaciebi" />
-    <xhtml:link rel="alternate" hreflang="hy" href="https://000-it.com/hy/vayrer" />
-    <xhtml:link rel="alternate" hreflang="az" href="https://000-it.com/az/mekanlar" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://000-it.com/zh/didian" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://000-it.com/ja/basho" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://000-it.com/fr/emplacements" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://000-it.com/nl/locaties" />
   </url>
 </urlset>

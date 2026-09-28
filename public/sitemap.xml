@@ -2,7 +2,7 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>https://000-it.com/sitemaps/sitemap-cities.xml</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://000-it.com/sitemaps/sitemap-pages.xml</loc>
@@ -10,11 +10,11 @@
   </sitemap>
   <sitemap>
     <loc>https://000-it.com/sitemaps/sitemap-services.xml</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://000-it.com/sitemaps/sitemap-shop.xml</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://000-it.com/sitemaps/sitemap-kennisbank-1.xml</loc>
@@ -37,8 +37,24 @@
     <lastmod>2026-09-26</lastmod>
   </sitemap>
   <sitemap>
+    <loc>https://000-it.com/sitemaps/sitemap-kennisbank-6.xml</loc>
+    <lastmod>2026-09-26</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://000-it.com/sitemaps/sitemap-kennisbank-7.xml</loc>
+    <lastmod>2026-09-26</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://000-it.com/sitemaps/sitemap-kennisbank-8.xml</loc>
+    <lastmod>2026-09-26</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://000-it.com/sitemaps/sitemap-kennisbank-9.xml</loc>
+    <lastmod>2026-09-26</lastmod>
+  </sitemap>
+  <sitemap>
     <loc>https://000-it.com/sitemaps/sitemap-news.xml</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://000-it.com/sitemaps/sitemap-portfolio.xml</loc>
