@@ -1,14 +1,11 @@
 import type { MetadataRoute } from "next";
-import { existsSync, readFileSync } from "node:fs";
+import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { sitemapPublicOrigin } from "@/lib/seo";
 import { ROBOTS_DISALLOW_ALL_AGENTS } from "@/lib/anti-scrape";
 
 function robotsSitemapList(origin: string): string[] {
-  const fallback = [
-    `${origin}/sitemap.xml`,
-    `${origin}/sitemaps/sitemap-kennisbank-index.xml`,
-  ];
+  const fallback = [`${origin}/sitemap.xml`];
   try {
     const raw = readFileSync(
       join(process.cwd(), "public", "sitemaps", "urls.json"),
@@ -22,14 +19,6 @@ function robotsSitemapList(origin: string): string[] {
     }
   } catch {
     /* use fallback */
-  }
-  // Only advertise kennisbank index when the file exists on disk.
-  if (
-    !existsSync(
-      join(process.cwd(), "public", "sitemaps", "sitemap-kennisbank-index.xml"),
-    )
-  ) {
-    return [`${origin}/sitemap.xml`];
   }
   return fallback;
 }
@@ -82,7 +71,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    // Core flat sitemap + kennisbank index (GSC reads both).
+    // Index of every public page, including news and kennisbank.
     sitemap: robotsSitemapList(origin),
     host: origin,
   };

@@ -295,7 +295,7 @@
     "mixedCart": "Hosting en diensten kunnen niet in één bestelling. Verwijder één van beide en rond ze apart af."
   },
   "footer": {
-    "tagline": "Wij bieden diensten en producten voor ondernemers en zzp'ers van adverteren, AI‑integratie, AEO, GEO en SEO, drukwerk, e‑mail marketing, grafisch design, online marketing, onderhoud, optimalisatie, Social Media beheer, webdesign en WordPress-support tot webhosting en domeinnamen.",
+    "tagline": "Wij bieden diensten en producten voor ondernemers en zzp'ers van AI‑integratie, AEO, GEO en SEO, drukwerk, e‑mail marketing, grafisch design, marketing, onderhoud, online adverteren, optimalisatie, Social Media beheer, webdesign en WordPress-support tot webhosting en domeinnamen",
     "rights": "Alle rechten voorbehouden.",
     "usefulLinks": "Handige links",
     "socialMedia": "Sociale media",
@@ -1264,15 +1264,30 @@
   },
   "locations": {
     "title": "Locaties",
-    "subtitle": "TripleZero iT ondersteunt bedrijven in Azië, Europa, de VAE en de USA met AI-integratie, AEO, GEO, SEO, marketing en software. Kies jouw stad voor lokale informatie.",
+    "subtitle": "TripleZero iT ondersteunt bedrijven wereldwijd met AI‑integratie, AEO, GEO en SEO, drukwerk, e‑mail marketing, grafisch design, marketing, onderhoud, online adverteren, optimalisatie, Social Media beheer, webdesign en WordPress-support tot webhosting en domeinnamen. Zoek of filter op land en kies jouw stad.",
     "startFreeAiScan": "Start gratis AI-scan",
     "allServices": "Alle diensten",
     "breadcrumb": "Locaties",
     "cityTitle": "AI, AEO, GEO & SEO in {name}",
     "cityIntro": "TripleZero iT helpt ondernemers en teams in {name} sneller groeien met AI-integratie, AEO, GEO, SEO, online marketing en maatwerk software. Lokaal denkwerk, meetbare resultaten.",
     "bulletScan": "Gratis AI-scan voor websites in {name}",
-    "bulletSeo": "AEO, GEO en SEO optimalisatie voor klassieke én AI-zoekmachines",
-    "bulletStack": "Webdesign, WordPress, hosting en digital marketing"
+    "bulletAeo": "AEO (Answer Engine Optimization) zodat {name} zichtbaar is in AI-antwoorden",
+    "bulletGeo": "GEO (Generative Engine Optimization) voor zichtbaarheid in generatieve zoekresultaten in {name}",
+    "bulletSeo": "Klassieke SEO voor Google en lokale zoekintentie in {name}",
+    "bulletStack": "Webdesign, WordPress, hosting en digital marketing",
+    "geoTitle": "Geografie & lokale signalen",
+    "geoCountry": "Land",
+    "geoRegion": "Regio",
+    "geoCoords": "Coördinaten",
+    "geoPopulation": "Inwoners",
+    "geoTimezone": "Tijdzone",
+    "tagsTitle": "Tags & focus",
+    "searchPlaceholder": "Zoek stad, land of regio…",
+    "allCountries": "Alle landen",
+    "featuredNl": "Grootste steden in Nederland",
+    "results": "{count} steden",
+    "noResults": "Geen steden gevonden.",
+    "showMore": "Meer steden tonen"
   },
   "inquiry": {
     "websiteHint": "website/webshop",

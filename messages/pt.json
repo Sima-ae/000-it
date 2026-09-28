@@ -295,7 +295,7 @@
     "invoiceEmailHint": "A fatura PDF é enviada para este endereço assim que o pagamento for confirmado."
   },
   "footer": {
-    "tagline": "Oferecemos serviços e produtos para empresários e freelancers, desde publicidade, integração de IA, AEO, GEO e SEO, impressão, email marketing, design gráfico, marketing online, manutenção, otimização, gestão de redes sociais, web design e suporte WordPress até alojamento web e nomes de domínio.",
+    "tagline": "Oferecemos serviços e produtos para empreendedores e freelancers, desde integração de IA, AEO, GEO e SEO, impressão, email marketing, design gráfico, marketing, manutenção, publicidade online, otimização, gestão de redes sociais, webdesign e suporte WordPress até alojamento web e nomes de domínio",
     "rights": "Todos os direitos reservados.",
     "usefulLinks": "Ligações úteis",
     "socialMedia": "Redes sociais",
@@ -1245,16 +1245,31 @@
     "toggleDone": "Marcar como concluído/desfeito"
   },
   "locations": {
-    "title": "Locais",
-    "subtitle": "TripleZero iT apoia empresas na Ásia, Europa, nos EAU e nos EUA com integração de IA, AEO, GEO, SEO, marketing e software. Escolha sua cidade para obter detalhes locais.",
-    "startFreeAiScan": "Inicie uma verificação gratuita de IA",
+    "title": "Localizações",
+    "subtitle": "A TripleZero iT apoia empresas em todo o mundo com integração de IA, AEO, GEO e SEO, impressão, email marketing, design gráfico, marketing, manutenção, publicidade online, otimização, gestão de redes sociais, webdesign e suporte WordPress até alojamento web e nomes de domínio. Pesquise ou filtre por país e escolha a sua cidade.",
+    "startFreeAiScan": "Iniciar scan de IA gratuito",
     "allServices": "Todos os serviços",
-    "breadcrumb": "Locais",
+    "breadcrumb": "Localizações",
     "cityTitle": "IA, AEO, GEO e SEO em {name}",
-    "cityIntro": "TripleZero iT ajuda empreendedores e equipes em {name} a crescer mais rapidamente com integração de IA, AEO, GEO, SEO, marketing online e software personalizado. Visão local, resultados mensuráveis.",
-    "bulletScan": "Verificação de IA gratuita para sites em {name}",
-    "bulletSeo": "Otimização AEO, GEO e SEO para mecanismos de pesquisa clássicos e de IA",
-    "bulletStack": "Web design, WordPress, hospedagem e marketing digital"
+    "cityIntro": "A TripleZero iT ajuda empreendedores e equipas em {name} a crescer mais rápido com integração de IA, AEO, GEO, SEO, marketing online e software à medida. Pensamento local, resultados mensuráveis.",
+    "bulletScan": "Scan de IA gratuito para websites em {name}",
+    "bulletAeo": "AEO (Answer Engine Optimization) para que {name} fique visível nas respostas de IA",
+    "bulletGeo": "GEO (Generative Engine Optimization) para visibilidade em resultados generativos em {name}",
+    "bulletSeo": "SEO clássico para Google e intenção de pesquisa local em {name}",
+    "bulletStack": "Webdesign, WordPress, hosting e marketing digital",
+    "geoTitle": "Geografia e sinais locais",
+    "geoCountry": "País",
+    "geoRegion": "Região",
+    "geoCoords": "Coordenadas",
+    "geoPopulation": "Habitantes",
+    "geoTimezone": "Fuso horário",
+    "tagsTitle": "Tags e foco",
+    "searchPlaceholder": "Pesquisar cidade, país ou região…",
+    "allCountries": "Todos os países",
+    "featuredNl": "Maiores cidades dos Países Baixos",
+    "results": "{count} cidades",
+    "noResults": "Nenhuma cidade encontrada.",
+    "showMore": "Mostrar mais cidades"
   },
   "inquiry": {
     "websiteHint": "site/loja virtual",

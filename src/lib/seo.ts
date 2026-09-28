@@ -450,46 +450,35 @@ export function buildCityMetadata(city: SeoCity, locale: string): Metadata {
   const isNl = locale === "nl";
   const name = isNl ? city.nameNl : city.nameEn;
   const country = isNl ? city.countryNameNl : city.countryNameEn;
+  const region = isNl ? city.regionNl : city.regionEn;
   const title = isNl
     ? `AI, AEO, GEO & SEO in ${name} | TripleZero iT`
     : `AI, AEO, GEO & SEO in ${name} | TripleZero iT`;
   const description = isNl
-    ? `TripleZero iT helpt bedrijven in ${name} (${country}) met AI-integratie, AEO, GEO, SEO, marketing en maatwerk software. Vraag een gratis AI-scan aan.`
-    : `TripleZero iT helps businesses in ${name} (${country}) with AI integration, AEO, GEO, SEO, marketing and custom software. Request a free AI scan.`;
-  const keywords = isNl
-    ? [
-        `AI ${name}`,
-        `SEO ${name}`,
-        `AEO ${name}`,
-        `GEO ${name}`,
-        `webdesign ${name}`,
-        `marketing ${name}`,
-        name,
-        city.regionNl,
-        country,
-        "TripleZero iT",
-      ]
-    : [
-        `AI ${name}`,
-        `SEO ${name}`,
-        `AEO ${name}`,
-        `GEO ${name}`,
-        `web design ${name}`,
-        `marketing ${name}`,
-        name,
-        city.regionEn,
-        country,
-        "TripleZero iT",
-      ];
+    ? `TripleZero iT helpt bedrijven in ${name} (${region}, ${country}) met AI-integratie, AEO, GEO, SEO, marketing en maatwerk software. Coördinaten ${city.latitude}, ${city.longitude}. Vraag een gratis AI-scan aan.`
+    : `TripleZero iT helps businesses in ${name} (${region}, ${country}) with AI integration, AEO, GEO, SEO, marketing and custom software. Coordinates ${city.latitude}, ${city.longitude}. Request a free AI scan.`;
+  const keywords = [
+    ...(city.keywords || []),
+    ...(city.tags || []),
+    name,
+    region,
+    country,
+    city.continent || "",
+    "AEO",
+    "GEO",
+    "SEO",
+    "AI",
+    "TripleZero iT",
+  ].filter(Boolean);
 
   return buildPageMetadata({
     locale,
     path: `/locaties/${city.slug}`,
     title,
     description,
-    keywords,
+    keywords: [...new Set(keywords)],
     city,
-    image: SITE_SEO.defaultOgImage,
+    image: city.image || SITE_SEO.defaultOgImage,
     imageAlt: title,
   });
 }
@@ -711,14 +700,16 @@ export function cityServiceJsonLd(city: SeoCity, locale: string) {
   const isNl = locale === "nl";
   const name = isNl ? city.nameNl : city.nameEn;
   const url = absoluteUrl(localePath(locale, `/locaties/${city.slug}`));
+  const image = absoluteUrl(city.image || SITE_SEO.defaultOgImage);
 
   return {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     name: `${SITE_SEO.name} — ${name}`,
     url,
-    image: absoluteUrl(SITE_SEO.defaultOgImage),
+    image,
     email: SITE_SEO.email,
+    keywords: (city.keywords || city.tags || []).join(", "),
     areaServed: {
       "@type": "City",
       name,
@@ -731,13 +722,33 @@ export function cityServiceJsonLd(city: SeoCity, locale: string) {
         latitude: city.latitude,
         longitude: city.longitude,
       },
+      ...(city.population
+        ? { population: city.population }
+        : {}),
+      ...(city.timezone
+        ? {
+            additionalProperty: {
+              "@type": "PropertyValue",
+              name: "timezone",
+              value: city.timezone,
+            },
+          }
+        : {}),
     },
     provider: {
       "@type": "Organization",
       name: SITE_SEO.name,
       url: siteOrigin(),
     },
-    serviceType: ["AI integration", "AEO", "GEO", "SEO", "Digital marketing"],
+    serviceType: [
+      "AI integration",
+      "AEO (Answer Engine Optimization)",
+      "GEO (Generative Engine Optimization)",
+      "SEO",
+      "Digital marketing",
+      "Web design",
+    ],
+    knowsAbout: ["AEO", "GEO", "SEO", "Artificial Intelligence", name],
   };
 }
 

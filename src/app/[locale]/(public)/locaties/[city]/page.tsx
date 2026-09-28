@@ -16,8 +16,10 @@ import { resolveEntityParam } from "@/lib/resolve-entity-param";
 import { canonicalEntityKey } from "@/lib/entity-slug-cache";
 import { hydrateEntitySlugs } from "@/lib/entity-slugs";
 
+/** Pre-render NL+EN for highest-priority cities; others resolve on demand. */
 export function generateStaticParams() {
-  return seoCities.flatMap((city) => [
+  const top = seoCities.slice(0, 80);
+  return top.flatMap((city) => [
     { locale: "nl", city: city.slug },
     { locale: "en", city: city.slug },
   ]);
@@ -57,6 +59,9 @@ export default async function LocatieCityPage({
   const isNl = locale === "nl";
   const name = isNl ? city.nameNl : city.nameEn;
   const country = isNl ? city.countryNameNl : city.countryNameEn;
+  const tags = city.tags?.length
+    ? city.tags
+    : ["AI", "AEO", "GEO", "SEO", name, country];
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-14 md:px-6">
@@ -76,7 +81,8 @@ export default async function LocatieCityPage({
       />
 
       <p className="text-sm font-medium text-accent">
-        {country} · {isNl ? city.regionNl : city.regionEn}
+        {country}
+        {city.continent ? ` - ${city.continent}` : ""}
       </p>
       <h1 className="mt-2 font-display text-3xl font-semibold tracking-tight md:text-4xl">
         {t("cityTitle", { name })}
@@ -87,9 +93,27 @@ export default async function LocatieCityPage({
 
       <ul className="mt-8 space-y-3 text-sm text-foreground">
         <li>{t("bulletScan", { name })}</li>
-        <li>{t("bulletSeo")}</li>
+        <li>{t("bulletAeo", { name })}</li>
+        <li>{t("bulletGeo", { name })}</li>
+        <li>{t("bulletSeo", { name })}</li>
         <li>{t("bulletStack")}</li>
       </ul>
+
+      <section className="mt-8">
+        <h2 className="font-display text-base font-semibold tracking-tight">
+          {t("tagsTitle")}
+        </h2>
+        <div className="mt-3 flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <span
+              key={tag}
+              className="rounded-full border border-border/70 bg-background px-3 py-1 text-xs text-muted-foreground"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      </section>
 
       <div className="mt-10 flex flex-wrap gap-3">
         <Button asChild>
@@ -109,9 +133,41 @@ export default async function LocatieCityPage({
         </Button>
       </div>
 
-      {/* Hidden geo coords for crawlers / consistency with meta */}
+      <section className="mt-10">
+        <h2 className="font-display text-base font-semibold tracking-tight">
+          {t("geoTitle")}
+        </h2>
+        <dl className="mt-3 grid gap-2 rounded-2xl border border-border/70 bg-muted/30 p-5 text-sm sm:grid-cols-2">
+          <div>
+            <dt className="text-muted-foreground">{t("geoCountry")}</dt>
+            <dd className="font-medium">{country}</dd>
+          </div>
+          <div>
+            <dt className="text-muted-foreground">{t("geoCoords")}</dt>
+            <dd className="font-medium">
+              {city.latitude}, {city.longitude}
+            </dd>
+          </div>
+          {city.population ? (
+            <div>
+              <dt className="text-muted-foreground">{t("geoPopulation")}</dt>
+              <dd className="font-medium">
+                {city.population.toLocaleString(locale)}
+              </dd>
+            </div>
+          ) : null}
+          {city.timezone ? (
+            <div>
+              <dt className="text-muted-foreground">{t("geoTimezone")}</dt>
+              <dd className="font-medium">{city.timezone}</dd>
+            </div>
+          ) : null}
+        </dl>
+      </section>
+
       <p className="sr-only">
-        geo: {city.latitude}, {city.longitude}
+        geo: {city.latitude}, {city.longitude}. tags: {tags.join(", ")}.
+        keywords: {(city.keywords || []).join(", ")}.
       </p>
     </div>
   );

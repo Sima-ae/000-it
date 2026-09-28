@@ -6,7 +6,7 @@
  * Always writes https://000-it.com unless SITEMAP_BASE_URL is a non-localhost URL.
  *
  * Output:
- *  - public/sitemap.xml                        ← flat core urlset (GSC main entry)
+ *  - public/sitemap.xml                        ← index of every child urlset (GSC entry)
  *  - public/sitemaps/sitemap-*.xml             ← topic children
  *  - public/sitemaps/sitemap-kennisbank-index.xml
  *  - public/sitemaps/urls.json                 ← IndexNow + robots sitemap list

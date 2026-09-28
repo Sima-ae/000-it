@@ -122,6 +122,15 @@ const nextConfig: NextConfig = {
         ],
       },
       {
+        // Sitemaps must not carry robots directives — GSC can skip the file.
+        source: "/sitemap.xml",
+        headers: [{ key: "X-Robots-Tag", value: "all" }],
+      },
+      {
+        source: "/sitemaps/:path*",
+        headers: [{ key: "X-Robots-Tag", value: "all" }],
+      },
+      {
         source: "/api/:path*",
         headers: [
           { key: "X-Robots-Tag", value: "noindex, nofollow, noai, noimageai" },

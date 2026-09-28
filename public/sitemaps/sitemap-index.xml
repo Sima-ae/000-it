@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
-    <loc>https://000-it.com/sitemaps/sitemap-cities.xml</loc>
+    <loc>https://000-it.com/sitemaps/sitemap-cities-1.xml</loc>
+    <lastmod>2026-09-28</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://000-it.com/sitemaps/sitemap-cities-2.xml</loc>
+    <lastmod>2026-09-28</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://000-it.com/sitemaps/sitemap-cities-3.xml</loc>
     <lastmod>2026-09-28</lastmod>
   </sitemap>
   <sitemap>

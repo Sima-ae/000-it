@@ -386,7 +386,12 @@ export function buildSitemapIndexFromDisk(rootDir = process.cwd()): {
   ];
 
   const found = existsSync(dir)
-    ? readdirSync(dir).filter((f) => f.startsWith("sitemap-") && f.endsWith(".xml"))
+    ? readdirSync(dir).filter(
+        (f) =>
+          f.startsWith("sitemap-") &&
+          f.endsWith(".xml") &&
+          !f.includes("-index"),
+      )
     : [];
 
   const sorted = [...found].sort((a, b) => {
@@ -430,20 +435,6 @@ export async function writeSitemapFiles(rootDir = process.cwd()) {
 
   const sets = await collectSitemapSets();
   const today = toIsoDate(new Date());
-
-  /**
-   * Core pages go into the ROOT `/sitemap.xml` as a real `<urlset>` so GSC
-   * shows discovered URLs on the main submitted sitemap (not 0 on an empty index).
-   * Kennisbank stays chunked under `/sitemaps/` and is linked from robots.txt.
-   */
-  const coreEntries: SitemapUrlEntry[] = [
-    ...sets.cities,
-    ...sets.pages,
-    ...sets.services,
-    ...sets.shop,
-    ...sets.news,
-    ...sets.portfolio,
-  ];
 
   const groups: Array<{ base: string; entries: SitemapUrlEntry[] }> = [
     { base: "sitemap-cities", entries: sets.cities },
@@ -489,26 +480,29 @@ export async function writeSitemapFiles(rootDir = process.cwd()) {
   // IndexNow wants every language URL once; sitemap <loc> stays nl-only.
   const uniqueUrls = [...new Set(allUrls)];
 
-  // ROOT sitemap = flat core urlset (what GSC users submit as /sitemap.xml)
-  const coreXml = renderUrlset(coreEntries);
-  writeFileSync(join(rootDir, "public", "sitemap.xml"), coreXml, "utf8");
-
-  // Kennisbank-only index for robots.txt / optional GSC submit
+  // Kennisbank-only index kept for optional direct checks.
   if (kennisbankIndexFiles.length) {
     const kbIndexXml = renderSitemapIndex(kennisbankIndexFiles);
     writeFileSync(join(outDir, "sitemap-kennisbank-index.xml"), kbIndexXml, "utf8");
   }
 
-  // Full child index kept for debugging / alternate discovery
+  /**
+   * `/sitemap.xml` is the file Search Console submits. It must be an index of
+   * every child urlset (cities, pages, services, shop, news, portfolio, and
+   * all kennisbank chunks). A flat core urlset stopped at ~394 and never
+   * listed the article files. Children stay ≤500 URLs so each file stays
+   * small enough for Google to finish reading.
+   * Do not nest sitemap-index.xml or sitemap-kennisbank-index.xml here —
+   * Google rejects an index that points at another index.
+   */
   const fullIndexXml = renderSitemapIndex(indexFiles);
+  writeFileSync(join(rootDir, "public", "sitemap.xml"), fullIndexXml, "utf8");
   writeFileSync(join(outDir, "sitemap-index.xml"), fullIndexXml, "utf8");
 
-  const robotsSitemaps = [
-    "/sitemap.xml",
-    ...(kennisbankIndexFiles.length
-      ? ["/sitemaps/sitemap-kennisbank-index.xml"]
-      : []),
-  ];
+  const robotsSitemaps = ["/sitemap.xml"];
+  const pageCount = indexFiles.length
+    ? groups.reduce((sum, group) => sum + group.entries.length, 0)
+    : 0;
 
   writeFileSync(
     join(outDir, "urls.json"),
@@ -517,7 +511,7 @@ export async function writeSitemapFiles(rootDir = process.cwd()) {
         generatedAt: new Date().toISOString(),
         localeCount: LOCALES.length,
         urlCount: uniqueUrls.length,
-        coreUrlCount: coreEntries.length,
+        coreUrlCount: pageCount,
         origin: sitemapPublicOrigin(),
         robotsSitemaps,
         urls: uniqueUrls,
@@ -531,9 +525,9 @@ export async function writeSitemapFiles(rootDir = process.cwd()) {
   return {
     indexFiles,
     urlCount: uniqueUrls.length,
-    coreUrlCount: coreEntries.length,
+    coreUrlCount: pageCount,
     urls: uniqueUrls,
-    indexXml: coreXml,
+    indexXml: fullIndexXml,
     robotsSitemaps,
   };
 }

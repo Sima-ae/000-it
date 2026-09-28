@@ -295,7 +295,7 @@
     "invoiceEmailHint": "PDF sąskaita bus išsiųsta šiuo adresu, kai mokėjimas bus patvirtintas."
   },
   "footer": {
-    "tagline": "Siūlome paslaugas ir produktus verslininkams ir laisvai samdomiems darbuotojams — nuo reklamos, AI integracijos, AEO, GEO ir SEO, spaudos, el. pašto rinkodaros, grafinio dizaino, internetinės rinkodaros, priežiūros, optimizavimo, socialinės žiniasklaidos valdymo, interneto dizaino ir WordPress palaikymo iki internetinio hostingo ir domenų vardų.",
+    "tagline": "Siūlome paslaugas ir produktus verslininkams bei freelanceriams — nuo AI integracijos, AEO, GEO ir SEO, spaudos, el. pašto rinkodaros, grafinio dizaino, rinkodaros, priežiūros, internetinės reklamos, optimizavimo, socialinių tinklų valdymo, webdizaino ir WordPress palaikymo iki webhostingo ir domenų vardų",
     "rights": "Visos teisės saugomos.",
     "usefulLinks": "Naudingos nuorodos",
     "socialMedia": "Socialinė žiniasklaida",
@@ -1245,16 +1245,31 @@
     "toggleDone": "Pažymėti atliktą/atšauktą"
   },
   "locations": {
-    "title": "Vietos",
-    "subtitle": "„TripleZero iT“ palaiko įmones Azijoje, Europoje, Jungtiniuose Arabų Emyratuose ir JAV su AI integravimu, AEO, GEO, SEO, rinkodara ir programine įranga. Pasirinkite miestą vietinei informacijai.",
-    "startFreeAiScan": "Pradėkite nemokamą AI nuskaitymą",
+    "title": "Lokacijos",
+    "subtitle": "TripleZero iT palaiko verslus visame pasaulyje su AI integracija, AEO, GEO ir SEO, spauda, el. pašto rinkodara, grafiniu dizainu, rinkodara, priežiūra, internetine reklama, optimizavimu, socialinių tinklų valdymu, webdizainu ir WordPress palaikymu iki webhostingo ir domenų vardų. Ieškokite arba filtruokite pagal šalį ir pasirinkite savo miestą.",
+    "startFreeAiScan": "Pradėti nemokamą AI skenavimą",
     "allServices": "Visos paslaugos",
-    "breadcrumb": "Vietos",
+    "breadcrumb": "Lokacijos",
     "cityTitle": "AI, AEO, GEO ir SEO {name}",
-    "cityIntro": "TripleZero iT padeda {name} verslininkams ir komandoms sparčiau augti naudojant AI integraciją, AEO, GEO, SEO, internetinę rinkodarą ir tinkintą programinę įrangą. Vietinė įžvalga, išmatuojami rezultatai.",
-    "bulletScan": "Nemokamas AI nuskaitymas svetainėms {name}",
-    "bulletSeo": "AEO, GEO ir SEO optimizavimas klasikinėms ir AI paieškos sistemoms",
-    "bulletStack": "Web dizainas, WordPress, priegloba ir skaitmeninė rinkodara"
+    "cityIntro": "TripleZero iT padeda verslininkams ir komandoms {name} augti greičiau su AI integracija, AEO, GEO, SEO, internetine rinkodara ir individualia programine įranga. Vietinis mąstymas, išmatuojami rezultatai.",
+    "bulletScan": "Nemokamas AI skenavimas svetainėms {name}",
+    "bulletAeo": "AEO (Answer Engine Optimization), kad {name} būtų matomas AI atsakymuose",
+    "bulletGeo": "GEO (Generative Engine Optimization) matomumui generatyviniuose rezultatuose {name}",
+    "bulletSeo": "Klasikinis SEO Google ir vietinei paieškos intencijai {name}",
+    "bulletStack": "Webdizainas, WordPress, hostingas ir skaitmeninė rinkodara",
+    "geoTitle": "Geografija ir vietiniai signalai",
+    "geoCountry": "Šalis",
+    "geoRegion": "Regionas",
+    "geoCoords": "Koordinatės",
+    "geoPopulation": "Gyventojai",
+    "geoTimezone": "Laiko juosta",
+    "tagsTitle": "Žymos ir fokusas",
+    "searchPlaceholder": "Ieškoti miesto, šalies ar regiono…",
+    "allCountries": "Visos šalys",
+    "featuredNl": "Didžiausi Nyderlandų miestai",
+    "results": "{count} miestų",
+    "noResults": "Miestų nerasta.",
+    "showMore": "Rodyti daugiau miestų"
   },
   "inquiry": {
     "websiteHint": "svetainė / internetinė parduotuvė",

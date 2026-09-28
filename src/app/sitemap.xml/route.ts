@@ -25,9 +25,8 @@ function xmlResponse(xml: string, cache = true) {
 }
 
 /**
- * Canonical sitemap for the site — flat `<urlset>` of core pages
- * (cities, pages, services, shop, news, portfolio).
- * Kennisbank lives under `/sitemaps/sitemap-kennisbank-*.xml` (see robots.txt).
+ * Canonical sitemap index. Lists every child urlset under /sitemaps/
+ * (cities, pages, services, shop, news, portfolio, kennisbank chunks).
  */
 export async function GET() {
   try {

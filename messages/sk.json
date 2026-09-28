@@ -295,7 +295,7 @@
     "invoiceEmailHint": "PDF faktúra bude odoslaná na túto adresu po potvrdení platby."
   },
   "footer": {
-    "tagline": "Ponúkame služby a produkty pre podnikateľov a freelancerov — od reklamy, AI integrácie, AEO, GEO a SEO, tlače, e‑mail marketingu, grafického dizajnu, online marketingu, údržby, optimalizácie, správy sociálnych médií, webdizajnu a podpory WordPress až po webhosting a doménové mená.",
+    "tagline": "Ponúkame služby a produkty pre podnikateľov a freelanceroov od AI integrácie, AEO, GEO a SEO, tlače, e-mail marketingu, grafického dizajnu, marketingu, údržby, online reklamy, optimalizácie, správy sociálnych sietí, webdizajnu a WordPress podpory až po webhosting a doménové mená",
     "rights": "Všetky práva vyhradené.",
     "usefulLinks": "Užitočné odkazy",
     "socialMedia": "Sociálne médiá",
@@ -1245,16 +1245,31 @@
     "toggleDone": "Označiť ako odbavené/nedokončené"
   },
   "locations": {
-    "title": "Miesta",
-    "subtitle": "TripleZero iT podporuje podniky v Ázii, Európe, SAE a USA s integráciou AI, AEO, GEO, SEO, marketingom a softvérom. Vyber si mesto pre miestne podrobnosti.",
-    "startFreeAiScan": "Spustite bezplatné skenovanie AI",
+    "title": "Lokality",
+    "subtitle": "TripleZero iT podporuje firmy na celom svete s AI integráciou, AEO, GEO a SEO, tlačou, e-mail marketingom, grafickým dizajnom, marketingom, údržbou, online reklamou, optimalizáciou, správou sociálnych sietí, webdizajnom a WordPress podporou až po webhosting a doménové mená. Hľadajte alebo filtrujte podľa krajiny a vyberte svoje mesto.",
+    "startFreeAiScan": "Spustiť bezplatný AI scan",
     "allServices": "Všetky služby",
-    "breadcrumb": "Miesta",
+    "breadcrumb": "Lokality",
     "cityTitle": "AI, AEO, GEO & SEO v {name}",
-    "cityIntro": "TripleZero iT pomáha podnikateľom a tímom v {name} rásť rýchlejšie vďaka integrácii AI, AEO, GEO, SEO, online marketingu a vlastnému softvéru. Lokálny prehľad, merateľné výsledky.",
-    "bulletScan": "Bezplatné skenovanie AI pre webové stránky v {name}",
-    "bulletSeo": "AEO, GEO a SEO optimalizácia pre klasické a AI vyhľadávače",
-    "bulletStack": "Webdizajn, WordPress, hosting a digitálny marketing"
+    "cityIntro": "TripleZero iT pomáha podnikateľom a tímom v {name} rásť rýchlejšie vďaka AI integrácii, AEO, GEO, SEO, online marketingu a softvéru na mieru. Lokálne myslenie, merateľné výsledky.",
+    "bulletScan": "Bezplatný AI scan pre weby v {name}",
+    "bulletAeo": "AEO (Answer Engine Optimization), aby bolo {name} viditeľné v AI odpovediach",
+    "bulletGeo": "GEO (Generative Engine Optimization) pre viditeľnosť v generatívnych výsledkoch v {name}",
+    "bulletSeo": "Klasické SEO pre Google a lokálny vyhľadávací zámer v {name}",
+    "bulletStack": "Webdesign, WordPress, hosting a digitálny marketing",
+    "geoTitle": "Geografia a lokálne signály",
+    "geoCountry": "Krajina",
+    "geoRegion": "Región",
+    "geoCoords": "Súradnice",
+    "geoPopulation": "Obyvatelia",
+    "geoTimezone": "Časové pásmo",
+    "tagsTitle": "Tagy a fokus",
+    "searchPlaceholder": "Hľadať mesto, krajinu alebo región…",
+    "allCountries": "Všetky krajiny",
+    "featuredNl": "Najväčšie mestá v Holandsku",
+    "results": "{count} miest",
+    "noResults": "Nenašli sa žiadne mestá.",
+    "showMore": "Zobraziť viac miest"
   },
   "inquiry": {
     "websiteHint": "webová stránka / internetový obchod",

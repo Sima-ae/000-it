@@ -1,7 +1,10 @@
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { localizedHref } from "@/i18n/pathnames";
+
 /**
- * High-value service cities for local SEO + sitemap priority.
- * Sorted by `priority` descending — important cities first in the sitemap.
+ * Local SEO cities — top 6 NL metros + ~994 largest world cities by population.
+ * Data: `world-cities.json` (GeoNames cities5000 + curated NL top 6).
  */
 export type SeoCity = {
   slug: string;
@@ -9,358 +12,47 @@ export type SeoCity = {
   nameEn: string;
   regionNl: string;
   regionEn: string;
-  country: "NL" | "BE";
+  /** ISO 3166-1 alpha-2 */
+  country: string;
   countryNameNl: string;
   countryNameEn: string;
   latitude: number;
   longitude: number;
+  population?: number;
+  timezone?: string;
+  continent?: string;
   /** Sitemap priority 0–1 (higher = more important). */
   priority: number;
-  /** changeFrequency hint for sitemap. */
   changeFrequency: "weekly" | "monthly";
+  tags?: string[];
+  keywords?: string[];
+  /** Open Graph / social image path (site-relative). */
+  image?: string;
 };
 
-export const seoCitiesRaw: SeoCity[] = [
-  // Netherlands — Randstad & top metros first
-  {
-    slug: "amsterdam",
-    nameNl: "Amsterdam",
-    nameEn: "Amsterdam",
-    regionNl: "Noord-Holland",
-    regionEn: "North Holland",
-    country: "NL",
-    countryNameNl: "Nederland",
-    countryNameEn: "Netherlands",
-    latitude: 52.3676,
-    longitude: 4.9041,
-    priority: 1,
-    changeFrequency: "weekly",
-  },
-  {
-    slug: "rotterdam",
-    nameNl: "Rotterdam",
-    nameEn: "Rotterdam",
-    regionNl: "Zuid-Holland",
-    regionEn: "South Holland",
-    country: "NL",
-    countryNameNl: "Nederland",
-    countryNameEn: "Netherlands",
-    latitude: 51.9244,
-    longitude: 4.4777,
-    priority: 0.98,
-    changeFrequency: "weekly",
-  },
-  {
-    slug: "den-haag",
-    nameNl: "Den Haag",
-    nameEn: "The Hague",
-    regionNl: "Zuid-Holland",
-    regionEn: "South Holland",
-    country: "NL",
-    countryNameNl: "Nederland",
-    countryNameEn: "Netherlands",
-    latitude: 52.0705,
-    longitude: 4.3007,
-    priority: 0.96,
-    changeFrequency: "weekly",
-  },
-  {
-    slug: "utrecht",
-    nameNl: "Utrecht",
-    nameEn: "Utrecht",
-    regionNl: "Utrecht",
-    regionEn: "Utrecht",
-    country: "NL",
-    countryNameNl: "Nederland",
-    countryNameEn: "Netherlands",
-    latitude: 52.0907,
-    longitude: 5.1214,
-    priority: 0.95,
-    changeFrequency: "weekly",
-  },
-  {
-    slug: "eindhoven",
-    nameNl: "Eindhoven",
-    nameEn: "Eindhoven",
-    regionNl: "Noord-Brabant",
-    regionEn: "North Brabant",
-    country: "NL",
-    countryNameNl: "Nederland",
-    countryNameEn: "Netherlands",
-    latitude: 51.4416,
-    longitude: 5.4697,
-    priority: 0.92,
-    changeFrequency: "weekly",
-  },
-  {
-    slug: "antwerpen",
-    nameNl: "Antwerpen",
-    nameEn: "Antwerp",
-    regionNl: "Vlaanderen",
-    regionEn: "Flanders",
-    country: "BE",
-    countryNameNl: "België",
-    countryNameEn: "Belgium",
-    latitude: 51.2194,
-    longitude: 4.4025,
-    priority: 0.91,
-    changeFrequency: "weekly",
-  },
-  {
-    slug: "brussel",
-    nameNl: "Brussel",
-    nameEn: "Brussels",
-    regionNl: "Brussels Hoofdstedelijk Gewest",
-    regionEn: "Brussels-Capital Region",
-    country: "BE",
-    countryNameNl: "België",
-    countryNameEn: "Belgium",
-    latitude: 50.8503,
-    longitude: 4.3517,
-    priority: 0.9,
-    changeFrequency: "weekly",
-  },
-  {
-    slug: "groningen",
-    nameNl: "Groningen",
-    nameEn: "Groningen",
-    regionNl: "Groningen",
-    regionEn: "Groningen",
-    country: "NL",
-    countryNameNl: "Nederland",
-    countryNameEn: "Netherlands",
-    latitude: 53.2194,
-    longitude: 6.5665,
-    priority: 0.88,
-    changeFrequency: "monthly",
-  },
-  {
-    slug: "tilburg",
-    nameNl: "Tilburg",
-    nameEn: "Tilburg",
-    regionNl: "Noord-Brabant",
-    regionEn: "North Brabant",
-    country: "NL",
-    countryNameNl: "Nederland",
-    countryNameEn: "Netherlands",
-    latitude: 51.5555,
-    longitude: 5.0913,
-    priority: 0.86,
-    changeFrequency: "monthly",
-  },
-  {
-    slug: "gent",
-    nameNl: "Gent",
-    nameEn: "Ghent",
-    regionNl: "Vlaanderen",
-    regionEn: "Flanders",
-    country: "BE",
-    countryNameNl: "België",
-    countryNameEn: "Belgium",
-    latitude: 51.0543,
-    longitude: 3.7174,
-    priority: 0.85,
-    changeFrequency: "monthly",
-  },
-  {
-    slug: "almere",
-    nameNl: "Almere",
-    nameEn: "Almere",
-    regionNl: "Flevoland",
-    regionEn: "Flevoland",
-    country: "NL",
-    countryNameNl: "Nederland",
-    countryNameEn: "Netherlands",
-    latitude: 52.3508,
-    longitude: 5.2647,
-    priority: 0.84,
-    changeFrequency: "monthly",
-  },
-  {
-    slug: "breda",
-    nameNl: "Breda",
-    nameEn: "Breda",
-    regionNl: "Noord-Brabant",
-    regionEn: "North Brabant",
-    country: "NL",
-    countryNameNl: "Nederland",
-    countryNameEn: "Netherlands",
-    latitude: 51.5719,
-    longitude: 4.7683,
-    priority: 0.83,
-    changeFrequency: "monthly",
-  },
-  {
-    slug: "nijmegen",
-    nameNl: "Nijmegen",
-    nameEn: "Nijmegen",
-    regionNl: "Gelderland",
-    regionEn: "Gelderland",
-    country: "NL",
-    countryNameNl: "Nederland",
-    countryNameEn: "Netherlands",
-    latitude: 51.8126,
-    longitude: 5.8372,
-    priority: 0.82,
-    changeFrequency: "monthly",
-  },
-  {
-    slug: "haarlem",
-    nameNl: "Haarlem",
-    nameEn: "Haarlem",
-    regionNl: "Noord-Holland",
-    regionEn: "North Holland",
-    country: "NL",
-    countryNameNl: "Nederland",
-    countryNameEn: "Netherlands",
-    latitude: 52.3874,
-    longitude: 4.6462,
-    priority: 0.81,
-    changeFrequency: "monthly",
-  },
-  {
-    slug: "arnhem",
-    nameNl: "Arnhem",
-    nameEn: "Arnhem",
-    regionNl: "Gelderland",
-    regionEn: "Gelderland",
-    country: "NL",
-    countryNameNl: "Nederland",
-    countryNameEn: "Netherlands",
-    latitude: 51.9851,
-    longitude: 5.8987,
-    priority: 0.78,
-    changeFrequency: "monthly",
-  },
-  {
-    slug: "amersfoort",
-    nameNl: "Amersfoort",
-    nameEn: "Amersfoort",
-    regionNl: "Utrecht",
-    regionEn: "Utrecht",
-    country: "NL",
-    countryNameNl: "Nederland",
-    countryNameEn: "Netherlands",
-    latitude: 52.1561,
-    longitude: 5.3878,
-    priority: 0.77,
-    changeFrequency: "monthly",
-  },
-  {
-    slug: "apeldoorn",
-    nameNl: "Apeldoorn",
-    nameEn: "Apeldoorn",
-    regionNl: "Gelderland",
-    regionEn: "Gelderland",
-    country: "NL",
-    countryNameNl: "Nederland",
-    countryNameEn: "Netherlands",
-    latitude: 52.2112,
-    longitude: 5.9699,
-    priority: 0.76,
-    changeFrequency: "monthly",
-  },
-  {
-    slug: "enschede",
-    nameNl: "Enschede",
-    nameEn: "Enschede",
-    regionNl: "Overijssel",
-    regionEn: "Overijssel",
-    country: "NL",
-    countryNameNl: "Nederland",
-    countryNameEn: "Netherlands",
-    latitude: 52.2215,
-    longitude: 6.8937,
-    priority: 0.75,
-    changeFrequency: "monthly",
-  },
-  {
-    slug: "leiden",
-    nameNl: "Leiden",
-    nameEn: "Leiden",
-    regionNl: "Zuid-Holland",
-    regionEn: "South Holland",
-    country: "NL",
-    countryNameNl: "Nederland",
-    countryNameEn: "Netherlands",
-    latitude: 52.1601,
-    longitude: 4.497,
-    priority: 0.74,
-    changeFrequency: "monthly",
-  },
-  {
-    slug: "zwolle",
-    nameNl: "Zwolle",
-    nameEn: "Zwolle",
-    regionNl: "Overijssel",
-    regionEn: "Overijssel",
-    country: "NL",
-    countryNameNl: "Nederland",
-    countryNameEn: "Netherlands",
-    latitude: 52.5168,
-    longitude: 6.083,
-    priority: 0.73,
-    changeFrequency: "monthly",
-  },
-  {
-    slug: "maastricht",
-    nameNl: "Maastricht",
-    nameEn: "Maastricht",
-    regionNl: "Limburg",
-    regionEn: "Limburg",
-    country: "NL",
-    countryNameNl: "Nederland",
-    countryNameEn: "Netherlands",
-    latitude: 50.8514,
-    longitude: 5.6909,
-    priority: 0.72,
-    changeFrequency: "monthly",
-  },
-  {
-    slug: "brugge",
-    nameNl: "Brugge",
-    nameEn: "Bruges",
-    regionNl: "Vlaanderen",
-    regionEn: "Flanders",
-    country: "BE",
-    countryNameNl: "België",
-    countryNameEn: "Belgium",
-    latitude: 51.2093,
-    longitude: 3.2247,
-    priority: 0.7,
-    changeFrequency: "monthly",
-  },
-  {
-    slug: "leuven",
-    nameNl: "Leuven",
-    nameEn: "Leuven",
-    regionNl: "Vlaanderen",
-    regionEn: "Flanders",
-    country: "BE",
-    countryNameNl: "België",
-    countryNameEn: "Belgium",
-    latitude: 50.8798,
-    longitude: 4.7005,
-    priority: 0.69,
-    changeFrequency: "monthly",
-  },
-  {
-    slug: "dordrecht",
-    nameNl: "Dordrecht",
-    nameEn: "Dordrecht",
-    regionNl: "Zuid-Holland",
-    regionEn: "South Holland",
-    country: "NL",
-    countryNameNl: "Nederland",
-    countryNameEn: "Netherlands",
-    latitude: 51.8133,
-    longitude: 4.6901,
-    priority: 0.65,
-    changeFrequency: "monthly",
-  },
-];
+type WorldCitiesFile = {
+  count: number;
+  cities: SeoCity[];
+};
 
-export const seoCities: SeoCity[] = [...seoCitiesRaw].sort((a, b) => b.priority - a.priority);
+let cached: SeoCity[] | null = null;
+
+function loadCities(): SeoCity[] {
+  if (cached) return cached;
+  const raw = readFileSync(
+    join(process.cwd(), "src/content/seo/world-cities.json"),
+    "utf8",
+  );
+  const data = JSON.parse(raw) as WorldCitiesFile;
+  cached = [...(data.cities || [])].sort((a, b) => b.priority - a.priority);
+  return cached;
+}
+
+/** All cities sorted by sitemap priority (NL top 6 first). */
+export const seoCities: SeoCity[] = loadCities();
+
+/** @deprecated use seoCities — kept for older imports */
+export const seoCitiesRaw: SeoCity[] = seoCities;
 
 export function getSeoCity(slug: string) {
   return seoCities.find((c) => c.slug === slug);
@@ -368,4 +60,31 @@ export function getSeoCity(slug: string) {
 
 export function cityPath(locale: string, slug: string) {
   return localizedHref(locale, `/locaties/${slug}`);
+}
+
+export function cityDisplayName(city: SeoCity, locale: string) {
+  return locale === "nl" ? city.nameNl : city.nameEn;
+}
+
+export function cityCountryName(city: SeoCity, locale: string) {
+  return locale === "nl" ? city.countryNameNl : city.countryNameEn;
+}
+
+export function cityRegionName(city: SeoCity, locale: string) {
+  return locale === "nl" ? city.regionNl : city.regionEn;
+}
+
+/** Featured NL metros shown first on the index. */
+export function featuredNlCities() {
+  return seoCities.filter((c) => c.country === "NL").slice(0, 6);
+}
+
+export function citiesByCountry() {
+  const map = new Map<string, SeoCity[]>();
+  for (const city of seoCities) {
+    const list = map.get(city.country) || [];
+    list.push(city);
+    map.set(city.country, list);
+  }
+  return map;
 }

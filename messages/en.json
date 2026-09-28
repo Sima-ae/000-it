@@ -295,7 +295,7 @@
     "mixedCart": "Hosting and services cannot be checked out together. Remove one and complete them separately."
   },
   "footer": {
-    "tagline": "We offer services and products for entrepreneurs and freelancers, from advertising, AI integration, AEO, GEO and SEO, print, email marketing, graphic design, online marketing, maintenance, optimisation, social media management, web design and WordPress support to web hosting and domain names.",
+    "tagline": "We offer services and products for entrepreneurs and freelancers from AI integration, AEO, GEO and SEO, print, email marketing, graphic design, marketing, maintenance, online advertising, optimisation, social media management, web design and WordPress support through to web hosting and domain names",
     "rights": "All rights reserved.",
     "usefulLinks": "Useful links",
     "socialMedia": "Social media",
@@ -1264,15 +1264,30 @@
   },
   "locations": {
     "title": "Locations",
-    "subtitle": "TripleZero iT supports businesses across Asia, Europe, the UAE and the USA with AI integration, AEO, GEO, SEO, marketing and software. Pick your city for local details.",
+    "subtitle": "TripleZero iT supports businesses worldwide with AI integration, AEO, GEO and SEO, print, email marketing, graphic design, marketing, maintenance, online advertising, optimisation, social media management, web design and WordPress support through to web hosting and domain names. Search or filter by country and choose your city.",
     "startFreeAiScan": "Start free AI scan",
     "allServices": "All services",
     "breadcrumb": "Locations",
     "cityTitle": "AI, AEO, GEO & SEO in {name}",
     "cityIntro": "TripleZero iT helps entrepreneurs and teams in {name} grow faster with AI integration, AEO, GEO, SEO, online marketing and custom software. Local insight, measurable results.",
     "bulletScan": "Free AI scan for websites in {name}",
-    "bulletSeo": "AEO, GEO and SEO optimization for classic and AI search engines",
-    "bulletStack": "Web design, WordPress, hosting and digital marketing"
+    "bulletAeo": "AEO (Answer Engine Optimization) so {name} is visible in AI answers",
+    "bulletGeo": "GEO (Generative Engine Optimization) for visibility in generative search results in {name}",
+    "bulletSeo": "Classic SEO for Google and local search intent in {name}",
+    "bulletStack": "Web design, WordPress, hosting and digital marketing",
+    "geoTitle": "Geography & local signals",
+    "geoCountry": "Country",
+    "geoRegion": "Region",
+    "geoCoords": "Coordinates",
+    "geoPopulation": "Population",
+    "geoTimezone": "Timezone",
+    "tagsTitle": "Tags & focus",
+    "searchPlaceholder": "Search city, country or region…",
+    "allCountries": "All countries",
+    "featuredNl": "Largest cities in the Netherlands",
+    "results": "{count} cities",
+    "noResults": "No cities found.",
+    "showMore": "Show more cities"
   },
   "inquiry": {
     "websiteHint": "website / webshop",
