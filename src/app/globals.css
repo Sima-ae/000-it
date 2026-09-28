@@ -176,27 +176,25 @@ body::before {
     0 22px 60px rgba(0, 0, 0, 0.35);
 }
 
-/* Desktop nav: whiter, less see-through over the hero */
-@media (min-width: 1024px) {
-  header .glass {
-    background: rgba(255, 255, 255, 0.92);
-    border-color: rgba(255, 255, 255, 0.75);
-  }
+/* Nav: whiter, less see-through over the hero (mobile + desktop) */
+header .glass {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(255, 255, 255, 0.75);
+}
 
-  header .glass-strong {
-    background: rgba(255, 255, 255, 0.96);
-    border-color: rgba(255, 255, 255, 0.85);
-  }
+header .glass-strong {
+  background: rgba(255, 255, 255, 0.96);
+  border-color: rgba(255, 255, 255, 0.85);
+}
 
-  .dark header .glass {
-    background: rgba(16, 22, 32, 0.9);
-    border-color: rgba(255, 255, 255, 0.12);
-  }
+.dark header .glass {
+  background: rgba(16, 22, 32, 0.9);
+  border-color: rgba(255, 255, 255, 0.12);
+}
 
-  .dark header .glass-strong {
-    background: rgba(16, 22, 32, 0.94);
-    border-color: rgba(255, 255, 255, 0.14);
-  }
+.dark header .glass-strong {
+  background: rgba(16, 22, 32, 0.94);
+  border-color: rgba(255, 255, 255, 0.14);
 }
 
 .mesh-panel {
