@@ -13,7 +13,8 @@ module.exports = {
       name: "000-it",
       cwd: "/var/www/000-it.com",
       script: "node_modules/next/dist/bin/next",
-      args: "start",
+      // Explicit -p: shared .env has PORT=3066 and must not win for either app.
+      args: "start -p 3066",
       env: {
         NODE_ENV: "production",
         PORT: "3066",
@@ -26,7 +27,8 @@ module.exports = {
       name: "extrahosting",
       cwd: "/var/www/000-it.com",
       script: "node_modules/next/dist/bin/next",
-      args: "start",
+      // Must force 3067 — without -p, Next loads .env PORT=3066 → EADDRINUSE → 503.
+      args: "start -p 3067",
       env: {
         NODE_ENV: "production",
         PORT: "3067",
