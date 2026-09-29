@@ -40,7 +40,7 @@ const EN = {
   thanks:
     "Thank you for your order with TripleZero iT. This invoice confirms that payment was received successfully.",
   taxNote:
-    "All amounts are in EUR. Listed sell prices include 21% Dutch VAT (BTW) unless stated otherwise. VAT is broken down below.",
+    "All amounts are in EUR. Listed sell prices include VAT (BTW) unless stated otherwise. VAT is broken down below.",
   footer:
     "This invoice was generated automatically after successful payment via Stripe. Please keep it for your records.",
   support: "Questions? Email",
@@ -55,7 +55,7 @@ const EN = {
   year: "year",
   years: "years",
   invoiceEmailSubject: "Invoice {number} — TripleZero iT",
-  vatIncluded: "21% VAT included (broken down on the invoice)",
+  vatIncluded: "VAT included (broken down on the invoice)",
 };
 
 const NL = {
@@ -93,7 +93,7 @@ const NL = {
   thanks:
     "Bedankt voor je bestelling bij TripleZero iT. Deze factuur bevestigt dat de betaling succesvol is ontvangen.",
   taxNote:
-    "Alle bedragen zijn in EUR. Getoonde verkoopprijzen zijn inclusief 21% Nederlandse BTW, tenzij anders vermeld. BTW is hieronder uitgesplitst.",
+    "Alle bedragen zijn in EUR. Getoonde verkoopprijzen zijn inclusief BTW, tenzij anders vermeld. BTW is hieronder uitgesplitst.",
   footer:
     "Deze factuur is automatisch gegenereerd na succesvolle betaling via Stripe. Bewaar dit document voor je administratie.",
   support: "Vragen? Mail",

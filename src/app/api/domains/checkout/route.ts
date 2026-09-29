@@ -59,7 +59,7 @@ function productLabel(
   domain: string,
 ): { name: string; description: string; years: number } {
   const yearsNote =
-    locale === "nl" ? "jaar · inclusief 21% BTW" : "year(s) · including 21% VAT";
+    locale === "nl" ? "jaar · inclusief BTW" : "year(s) · including VAT";
   if (orderType === "RENEWAL") {
     return {
       name:

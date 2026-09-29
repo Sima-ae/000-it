@@ -4,7 +4,7 @@ export const WP_CARE_KEYS = ["business", "businessPro", "enterprise"] as const;
 export type WpCareKey = (typeof WP_CARE_KEYS)[number];
 export type WpCareHosting = "with" | "without";
 
-/** Monthly prices in euros, including 21% VAT. */
+/** Monthly prices in euros, including VAT. */
 export const WP_CARE_PRICES: Record<
   WpCareKey,
   { withHosting: number; withoutHosting: number }
@@ -126,18 +126,18 @@ const UI = {
     hostingChoice: "Hosting",
     altWithout: "of {price} per maand zonder hosting",
     altWith: "of {price} per maand met hosting",
-    vatNote: "Alle prijzen zijn inclusief 21% BTW.",
+    vatNote: "Alle prijzen zijn inclusief BTW.",
   },
   en: {
     title: "WordPress care",
     headline:
-      "Monthly care for your WordPress website. All prices include 21% VAT.",
+      "Monthly care for your WordPress website. All prices include VAT.",
     withHosting: "With hosting",
     withoutHosting: "Without hosting",
     hostingChoice: "Hosting",
     altWithout: "or {price} per month without hosting",
     altWith: "or {price} per month with hosting",
-    vatNote: "All prices include 21% VAT.",
+    vatNote: "All prices include VAT.",
   },
 } as const;
 

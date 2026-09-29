@@ -28,7 +28,7 @@ export type ShopProduct = {
   name: { nl: string; en: string };
   description: { nl: string; en: string };
   shortDescription: { nl: string; en: string };
-  /** Unit price including 21% VAT, in euro cents (list/display price) */
+  /** Unit price including VAT, in euro cents (list/display price) */
   priceInclCents: number;
   /**
    * Optional sale/discount unit price incl. VAT (euro cents).
@@ -364,12 +364,12 @@ function buildPlanProduct(
       en: `${copy.name.en} (${period === "yearly" ? "yearly" : "monthly"})`,
     },
     shortDescription: {
-      nl: `${copy.short.nl} Eenmalige ${periodLabel.nl}. Inclusief 21% BTW.`,
-      en: `${copy.short.en} One-time ${periodLabel.en}. Including 21% VAT.`,
+      nl: `${copy.short.nl} Eenmalige ${periodLabel.nl}. Inclusief BTW.`,
+      en: `${copy.short.en} One-time ${periodLabel.en}. Including VAT.`,
     },
     description: {
-      nl: `${copy.short.nl}\n\nInbegrepen:\n${copy.featuresNl.map((f) => `– ${f}`).join("\n")}\n\nBetaling: eenmalig voor de geselecteerde periode (${periodLabel.nl}). Inclusief 21% BTW.`,
-      en: `${copy.short.en}\n\nIncluded:\n${copy.featuresEn.map((f) => `– ${f}`).join("\n")}\n\nPayment: one-time for the selected period (${periodLabel.en}). Including 21% VAT.`,
+      nl: `${copy.short.nl}\n\nInbegrepen:\n${copy.featuresNl.map((f) => `– ${f}`).join("\n")}\n\nBetaling: eenmalig voor de geselecteerde periode (${periodLabel.nl}). Inclusief BTW.`,
+      en: `${copy.short.en}\n\nIncluded:\n${copy.featuresEn.map((f) => `– ${f}`).join("\n")}\n\nPayment: one-time for the selected period (${periodLabel.en}). Including VAT.`,
     },
     priceInclCents: eurosToCents(price),
     currency: "EUR",
@@ -424,16 +424,16 @@ function buildSupportProducts(): ShopProduct[] {
           en: `${nameEn} (${periodLabel.en})`,
         },
         shortDescription: {
-          nl: `${shortNl}\n\nFacturatie: ${periodLabel.nl}. Inclusief 21% BTW.`,
-          en: `${shortEn}\n\nBilling: ${periodLabel.en}. Including 21% VAT.`,
+          nl: `${shortNl}\n\nFacturatie: ${periodLabel.nl}. Inclusief BTW.`,
+          en: `${shortEn}\n\nBilling: ${periodLabel.en}. Including VAT.`,
         },
         description: {
           nl: `${descNl}\n\nBetaling: ${periodLabel.nl}${
             period === "yearly" ? ` (bespaar ${pricing.savePercent}%)` : ""
-          }. Inclusief 21% BTW.`,
+          }. Inclusief BTW.`,
           en: `${descEn}\n\nPayment: ${periodLabel.en}${
             period === "yearly" ? ` (save ${pricing.savePercent}%)` : ""
-          }. Including 21% VAT.`,
+          }. Including VAT.`,
         },
         priceInclCents: eurosToCents(price),
         currency: "EUR",
@@ -533,12 +533,12 @@ function buildWpCareProducts(): ShopProduct[] {
           en: `WordPress ${en.name} (monthly, ${hostingEn})`,
         },
         shortDescription: {
-          nl: `${nl.badge}. ${noteNl} Maandelijks servicepakket, inclusief 21% BTW.`,
-          en: `${en.badge}. ${noteEn} Monthly service package, including 21% VAT.`,
+          nl: `${nl.badge}. ${noteNl} Maandelijks servicepakket, inclusief BTW.`,
+          en: `${en.badge}. ${noteEn} Monthly service package, including VAT.`,
         },
         description: {
-          nl: `${nl.badge}.\n\n${noteNl}\n\nInbegrepen:\n${featuresNl.map((feature) => `– ${feature}`).join("\n")}\n\nBetaling: maandelijks. Inclusief 21% BTW.`,
-          en: `${en.badge}.\n\n${noteEn}\n\nIncluded:\n${featuresEn.map((feature) => `– ${feature}`).join("\n")}\n\nPayment: monthly. Including 21% VAT.`,
+          nl: `${nl.badge}.\n\n${noteNl}\n\nInbegrepen:\n${featuresNl.map((feature) => `– ${feature}`).join("\n")}\n\nBetaling: maandelijks. Inclusief BTW.`,
+          en: `${en.badge}.\n\n${noteEn}\n\nIncluded:\n${featuresEn.map((feature) => `– ${feature}`).join("\n")}\n\nPayment: monthly. Including VAT.`,
         },
         priceInclCents: eurosToCents(price),
         currency: "EUR",

@@ -758,8 +758,8 @@ const topicBuilders: Record<string, (ctx: Ctx) => string> = {
         `Beide pakketten van ${BRAND} combineren domein, hosting, website/shop, AI-scanner, AEO/GEO/SEO en support. Het verschil zit vooral in AI-agents en diepte van AEO/GEO/SEO.`,
       ),
       ul([
-        "<strong>Business</strong> — 1 AI-agent, AEO/GEO/SEO basic, vanaf €39,95/maand incl. 21% btw.",
-        "<strong>Extra Growth</strong> — 2 AI-agents, AEO/GEO/SEO plus, vanaf €64,95/maand incl. 21% btw (featured).",
+        "<strong>Business</strong> — 1 AI-agent, AEO/GEO/SEO basic, vanaf €39,95/maand incl. btw.",
+        "<strong>Extra Growth</strong> — 2 AI-agents, AEO/GEO/SEO plus, vanaf €64,95/maand incl. btw (featured).",
       ]),
       p(`Jaarbetaling: 10% korting (12 × maandprijs × 0,9).`),
       outro(),
@@ -818,7 +818,7 @@ const topicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-shop-vat": () =>
     [
       p(
-        `Shopprijzen bij ${BRAND} zijn <strong>inclusief 21% btw</strong>. In de checkout en op documentatie zie je de uitsplitsing excl./btw/incl. voor transparantie.`,
+        `Shopprijzen bij ${BRAND} zijn <strong>inclusief btw</strong>. In de checkout en op documentatie zie je de uitsplitsing excl./btw/incl. voor transparantie.`,
       ),
       p(`Zakelijke vragen over factuurgegevens regel je in het CRM/klantenpanel of via een ticket.`),
       outro(),

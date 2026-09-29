@@ -159,7 +159,7 @@ function emailCopy(locale: string, invoiceNumber: string, orderNumber: string) {
         <tr><td style="padding:4px 0;color:#5b6573">${t.invoiceNo}</td><td style="padding:4px 0;text-align:right"><strong>${invoiceNumber}</strong></td></tr>
         <tr><td style="padding:4px 0;color:#5b6573">${t.orderNo}</td><td style="padding:4px 0;text-align:right"><strong>${orderNumber}</strong></td></tr>
       </table>
-      <p>Please find your <strong>official PDF invoice</strong> attached, including line items, VAT breakdown (21%), and our company details.</p>
+      <p>Please find your <strong>official PDF invoice</strong> attached, including line items, VAT breakdown, and our company details.</p>
       <p style="font-size:13px;color:#5b6573;line-height:1.5">${company.legalName}<br/>${addressBlock.replace(/, /g, "<br/>")}<br/>${taxLine}</p>
       <p style="color:#5b6573;font-size:13px">${t.support} <a href="mailto:${company.supportEmail}">${company.supportEmail}</a></p>
       <p style="margin-top:24px">${company.tradeName}<br/><a href="${company.website}">${company.website}</a></p>

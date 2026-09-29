@@ -32,7 +32,7 @@
     "paymentTerms": "Payment terms",
     "notes": "Notes",
     "thanks": "Thank you for your order with TripleZero iT. This invoice confirms that payment was received successfully.",
-    "taxNote": "All amounts are in EUR. Listed sell prices include 21% Dutch VAT (BTW) unless stated otherwise. VAT is broken down below.",
+    "taxNote": "All amounts are in EUR. Listed sell prices include VAT (BTW) unless stated otherwise. VAT is broken down below.",
     "footer": "This invoice was generated automatically after successful payment via Stripe. Please keep it for your records.",
     "support": "Questions? Email",
     "stripeRef": "Stripe reference",
@@ -46,7 +46,7 @@
     "year": "year",
     "years": "years",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT",
-    "vatIncluded": "21% VAT included (broken down on the invoice)"
+    "vatIncluded": "VAT included (broken down on the invoice)"
   },
   "nl": {
     "title": "Factuur",
@@ -81,7 +81,7 @@
     "paymentTerms": "Betalingsvoorwaarden",
     "notes": "Notities",
     "thanks": "Bedankt voor je bestelling bij TripleZero iT. Deze factuur bevestigt dat de betaling succesvol is ontvangen.",
-    "taxNote": "Alle bedragen zijn in EUR. Getoonde verkoopprijzen zijn inclusief 21% Nederlandse BTW, tenzij anders vermeld. BTW is hieronder uitgesplitst.",
+    "taxNote": "Alle bedragen zijn in EUR. Getoonde verkoopprijzen zijn inclusief BTW, tenzij anders vermeld. BTW is hieronder uitgesplitst.",
     "footer": "Deze factuur is automatisch gegenereerd na succesvolle betaling via Stripe. Bewaar dit document voor je administratie.",
     "support": "Vragen? Mail",
     "stripeRef": "Stripe-referentie",
@@ -95,7 +95,7 @@
     "year": "jaar",
     "years": "jaar",
     "invoiceEmailSubject": "Factuur {number} — TripleZero iT",
-    "vatIncluded": "BTW 21% inbegrepen (uitgesplitst op de factuur)"
+    "vatIncluded": "BTW inbegrepen (uitgesplitst op de factuur)"
   },
   "fr": {
     "title": "Facture",
@@ -127,7 +127,7 @@
     "paymentTerms": "Conditions de paiement",
     "notes": "Remarques",
     "thanks": "Merci pour votre commande avec TripleZero iT. Cette facture confirme que le paiement a été reçu avec succès.",
-    "taxNote": "Tous les montants sont en EUR. Les prix de vente indiqués incluent la TVA néerlandaise de 21 % (BTW), sauf indication contraire. La TVA est détaillée ci-dessous.",
+    "taxNote": "Tous les montants sont en EUR. Les prix de vente indiqués incluent la TVA néerlandaise de (BTW), sauf indication contraire. La TVA est détaillée ci-dessous.",
     "footer": "Cette facture a été générée automatiquement après un paiement réussi via Stripe. Veuillez le conserver pour vos dossiers.",
     "support": "Des questions ? E-mail",
     "stripeRef": "Référence à rayures",
@@ -140,7 +140,7 @@
     "domainTransfer": "Transfert de domaine",
     "year": "année",
     "years": "années",
-    "vatIncluded": "21% TVA incluse (ventilée sur la facture)",
+    "vatIncluded": "TVA incluse (ventilée sur la facture)",
     "description": "Description",
     "lineTotal": "Total",
     "totalShort": "Total",
@@ -178,7 +178,7 @@
     "paymentTerms": "Zahlungsbedingungen",
     "notes": "Notizen",
     "thanks": "Vielen Dank für Ihre Bestellung bei TripleZero iT. Diese Rechnung bestätigt den erfolgreichen Zahlungseingang.",
-    "taxNote": "Alle Beträge sind in EUR angegeben. Sofern nicht anders angegeben, enthalten die aufgeführten Verkaufspreise 21 % niederländische Mehrwertsteuer (BTW). Die Mehrwertsteuer ist unten aufgeführt.",
+    "taxNote": "Alle Beträge sind in EUR angegeben. Sofern nicht anders angegeben, enthalten die aufgeführten Verkaufspreise niederländische Mehrwertsteuer (BTW). Die Mehrwertsteuer ist unten aufgeführt.",
     "footer": "Diese Rechnung wurde nach erfolgreicher Zahlung über Stripe automatisch generiert. Bitte bewahren Sie es für Ihre Unterlagen auf.",
     "support": "Fragen? E-Mail",
     "stripeRef": "Streifenreferenz",
@@ -190,7 +190,7 @@
     "domainTransfer": "Domainübertragung",
     "year": "Jahr",
     "years": "Jahre",
-    "vatIncluded": "21 % Mehrwertsteuer inklusive (aufgeschlüsselt auf der Rechnung)",
+    "vatIncluded": "Mehrwertsteuer inklusive (aufgeschlüsselt auf der Rechnung)",
     "status": "Status",
     "hosting": "Hosting",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT"
@@ -226,7 +226,7 @@
     "paymentTerms": "Condiciones de pago",
     "notes": "Notas",
     "thanks": "Gracias por su pedido con TripleZero iT. Esta factura confirma que el pago se recibió correctamente.",
-    "taxNote": "Todos los importes están en EUR. Los precios de venta indicados incluyen el 21 % del IVA holandés (BTW), a menos que se indique lo contrario. El IVA se desglosa a continuación.",
+    "taxNote": "Todos los importes están en EUR. Los precios de venta indicados incluyen el del IVA holandés (BTW), a menos que se indique lo contrario. El IVA se desglosa a continuación.",
     "footer": "Esta factura se generó automáticamente después del pago exitoso a través de Stripe. Por favor guárdelo para sus registros.",
     "support": "¿Preguntas? Correo electrónico",
     "stripeRef": "Referencia de rayas",
@@ -239,7 +239,7 @@
     "domainTransfer": "Transferencia de dominio",
     "year": "año",
     "years": "años",
-    "vatIncluded": "21% IVA incluido (desglosado en factura)",
+    "vatIncluded": "IVA incluido (desglosado en factura)",
     "lineTotal": "Total",
     "totalShort": "Total",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT"
@@ -272,7 +272,7 @@
     "paymentTerms": "Condições de pagamento",
     "notes": "Notas",
     "thanks": "Obrigado pelo seu pedido com TripleZero iT. Esta fatura confirma que o pagamento foi recebido com sucesso.",
-    "taxNote": "Todos os valores estão em euros. Os preços de venda listados incluem IVA holandês de 21% (BTW), salvo indicação em contrário. O IVA está discriminado abaixo.",
+    "taxNote": "Todos os valores estão em euros. Os preços de venda listados incluem IVA holandês de (BTW), salvo indicação em contrário. O IVA está discriminado abaixo.",
     "footer": "Esta fatura foi gerada automaticamente após pagamento bem-sucedido via Stripe. Por favor, guarde-o em seus registros.",
     "support": "Questões? E-mail",
     "stripeRef": "Referência de listra",
@@ -285,7 +285,7 @@
     "domainTransfer": "Transferência de domínio",
     "year": "ano",
     "years": "anos",
-    "vatIncluded": "21% de IVA incluído (descrito na fatura)",
+    "vatIncluded": "de IVA incluído (descrito na fatura)",
     "lineIncl": "Total incl.",
     "lineTotal": "Total",
     "subtotalShort": "Subtotal",
@@ -326,7 +326,7 @@
     "paymentTerms": "Termini di pagamento",
     "notes": "Note",
     "thanks": "Grazie per il tuo ordine con TripleZero iT. Questa fattura conferma che il pagamento è stato ricevuto con successo.",
-    "taxNote": "Tutti gli importi sono in EUR. I prezzi di vendita indicati includono il 21% di IVA olandese (BTW) se non diversamente specificato. L'IVA è dettagliata di seguito.",
+    "taxNote": "Tutti gli importi sono in EUR. I prezzi di vendita indicati includono il di IVA olandese (BTW) se non diversamente specificato. L'IVA è dettagliata di seguito.",
     "footer": "Questa fattura è stata generata automaticamente dopo il pagamento riuscito tramite Stripe. Per favore, conservalo per i tuoi archivi.",
     "support": "Domande? E-mail",
     "stripeRef": "Riferimento alla striscia",
@@ -339,7 +339,7 @@
     "domainTransfer": "Trasferimento del dominio",
     "year": "anno",
     "years": "anni",
-    "vatIncluded": "IVA 21% inclusa (ripartita in fattura)",
+    "vatIncluded": "IVA inclusa (ripartita in fattura)",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT"
   },
   "el": {
@@ -374,7 +374,7 @@
     "paymentTerms": "Όροι πληρωμής",
     "notes": "Σημειώσεις",
     "thanks": "Σας ευχαριστούμε για την παραγγελία σας με το TripleZero iT. Αυτό το τιμολόγιο επιβεβαιώνει ότι η πληρωμή ελήφθη με επιτυχία.",
-    "taxNote": "Όλα τα ποσά είναι σε ευρώ. Οι αναγραφόμενες τιμές πώλησης περιλαμβάνουν 21% ολλανδικό ΦΠΑ (BTW), εκτός εάν αναφέρεται διαφορετικά. Ο ΦΠΑ αναλύεται παρακάτω.",
+    "taxNote": "Όλα τα ποσά είναι σε ευρώ. Οι αναγραφόμενες τιμές πώλησης περιλαμβάνουν ολλανδικό ΦΠΑ (BTW), εκτός εάν αναφέρεται διαφορετικά. Ο ΦΠΑ αναλύεται παρακάτω.",
     "footer": "Αυτό το τιμολόγιο δημιουργήθηκε αυτόματα μετά από επιτυχή πληρωμή μέσω Stripe. Παρακαλώ κρατήστε το για τα αρχεία σας.",
     "support": "Ερωτήσεις; E-mail",
     "stripeRef": "Αναφορά λωρίδας",
@@ -388,7 +388,7 @@
     "year": "έτος",
     "years": "χρόνια",
     "invoiceEmailSubject": "Τιμολόγιο {number} — TripleZero iT",
-    "vatIncluded": "Περιλαμβάνεται ΦΠΑ 21% (αναλυμένο στο τιμολόγιο)",
+    "vatIncluded": "Περιλαμβάνεται ΦΠΑ (αναλυμένο στο τιμολόγιο)",
     "billTo": "Bill to"
   },
   "pl": {
@@ -423,7 +423,7 @@
     "paymentTerms": "Warunki płatności",
     "notes": "Notatki",
     "thanks": "Dziękujemy za zamówienie w TripleZero iT. Faktura ta potwierdza, że ​​płatność została pomyślnie otrzymana.",
-    "taxNote": "Wszystkie kwoty podane są w EUR. Podane ceny sprzedaży zawierają 21% holenderskiego podatku VAT (BTW), chyba że zaznaczono inaczej. Poniżej znajduje się podział podatku VAT.",
+    "taxNote": "Wszystkie kwoty podane są w EUR. Podane ceny sprzedaży zawierają VAT (BTW), chyba że zaznaczono inaczej. Poniżej znajduje się podział podatku VAT.",
     "footer": "Faktura ta została wygenerowana automatycznie po pomyślnej płatności za pośrednictwem Stripe. Proszę zachować to w swojej dokumentacji.",
     "support": "Pytania? E-mail",
     "stripeRef": "Odniesienie do pasków",
@@ -435,7 +435,7 @@
     "domainTransfer": "Transfer domeny",
     "year": "rok",
     "years": "lata",
-    "vatIncluded": "21% VAT wliczony w cenę (wyszczególniony na fakturze)",
+    "vatIncluded": "VAT wliczony w cenę (wyszczególniony na fakturze)",
     "status": "Status",
     "hosting": "Hosting",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT"
@@ -473,7 +473,7 @@
     "paymentTerms": "Platební podmínky",
     "notes": "Poznámky",
     "thanks": "Děkujeme za vaši objednávku s TripleZero iT. Tato faktura potvrzuje, že platba byla úspěšně přijata.",
-    "taxNote": "Všechny částky jsou v EUR. Uvedené prodejní ceny zahrnují 21% holandskou DPH (BTW), pokud není uvedeno jinak. DPH je rozepsáno níže.",
+    "taxNote": "Všechny částky jsou v EUR. Uvedené prodejní ceny zahrnují holandskou DPH (BTW), pokud není uvedeno jinak. DPH je rozepsáno níže.",
     "footer": "Tato faktura byla vygenerována automaticky po úspěšné platbě přes Stripe. Uschovejte si jej pro vaši evidenci.",
     "support": "Otázky? E-mail",
     "stripeRef": "Odkaz na pruh",
@@ -485,7 +485,7 @@
     "domainTransfer": "Převod domény",
     "year": "rok",
     "years": "let",
-    "vatIncluded": "21% DPH včetně (rozepsané na faktuře)",
+    "vatIncluded": "DPH včetně (rozepsané na faktuře)",
     "hosting": "Hosting",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT"
   },
@@ -522,7 +522,7 @@
     "paymentTerms": "Platobné podmienky",
     "notes": "Poznámky",
     "thanks": "Ďakujeme za vašu objednávku s TripleZero iT. Táto faktúra potvrdzuje, že platba bola úspešne prijatá.",
-    "taxNote": "Všetky sumy sú v EUR. Uvedené predajné ceny zahŕňajú 21% holandskú DPH (BTW), pokiaľ nie je uvedené inak. DPH je rozpísaná nižšie.",
+    "taxNote": "Všetky sumy sú v EUR. Uvedené predajné ceny zahŕňajú holandskú DPH (BTW), pokiaľ nie je uvedené inak. DPH je rozpísaná nižšie.",
     "footer": "Táto faktúra bola vygenerovaná automaticky po úspešnej platbe cez Stripe. Uschovajte si ho pre svoju evidenciu.",
     "support": "Otázky? Email",
     "stripeRef": "Odkaz na prúžok",
@@ -534,7 +534,7 @@
     "domainTransfer": "Prevod domény",
     "year": "rok",
     "years": "rokov",
-    "vatIncluded": "21 % DPH vrátane (rozpísané na faktúre)",
+    "vatIncluded": "DPH vrátane (rozpísané na faktúre)",
     "hosting": "Hosting",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT"
   },
@@ -570,7 +570,7 @@
     "paymentTerms": "Fizetési feltételek",
     "notes": "Megjegyzések",
     "thanks": "Köszönjük megrendelését a TripleZero iT-vel. Ez a számla igazolja, hogy a fizetés sikeresen megérkezett.",
-    "taxNote": "Minden összeg euróban értendő. A feltüntetett eladási árak tartalmazzák a 21%-os holland áfát (BTW), hacsak nincs másképp jelezve. Az ÁFA bontása alább található.",
+    "taxNote": "Minden összeg euróban értendő. A feltüntetett eladási árak tartalmazzák a-os holland áfát (BTW), hacsak nincs másképp jelezve. Az ÁFA bontása alább található.",
     "footer": "Ez a számla automatikusan létrejött a Stripe-on keresztüli sikeres fizetés után. Kérjük, őrizze meg nyilvántartása céljából.",
     "support": "Kérdések? Email",
     "stripeRef": "Csíkos hivatkozás",
@@ -583,7 +583,7 @@
     "domainTransfer": "Domain átvitel",
     "year": "év",
     "years": "évre",
-    "vatIncluded": "21% ÁFA-t tartalmaz (számlán lebontva)",
+    "vatIncluded": "ÁFA-t tartalmaz (számlán lebontva)",
     "billTo": "Bill to",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT"
   },
@@ -616,7 +616,7 @@
     "paymentTerms": "Condiții de plată",
     "notes": "Note",
     "thanks": "Vă mulțumim pentru comanda dvs. cu TripleZero iT. Această factură confirmă că plata a fost primită cu succes.",
-    "taxNote": "Toate sumele sunt in EUR. Prețurile de vânzare enumerate includ 21% TVA olandez (BTW), dacă nu se specifică altfel. TVA-ul este defalcat mai jos.",
+    "taxNote": "Toate sumele sunt in EUR. Prețurile de vânzare enumerate includ TVA olandez (BTW), dacă nu se specifică altfel. TVA-ul este defalcat mai jos.",
     "footer": "Această factură a fost generată automat după plata cu succes prin Stripe. Vă rugăm să-l păstrați pentru evidența dvs.",
     "support": "Întrebări? E-mail",
     "stripeRef": "Referință la dungi",
@@ -629,7 +629,7 @@
     "domainTransfer": "Transfer de domeniu",
     "year": "an",
     "years": "ani",
-    "vatIncluded": "21% TVA inclus (defalcat pe factura)",
+    "vatIncluded": "TVA inclus (defalcat pe factura)",
     "lineIncl": "Total incl.",
     "lineTotal": "Total",
     "subtotalShort": "Subtotal",
@@ -669,7 +669,7 @@
     "paymentTerms": "Условия за плащане",
     "notes": "Бележки",
     "thanks": "Благодарим ви за вашата поръчка с TripleZero iT. Тази фактура потвърждава, че плащането е получено успешно.",
-    "taxNote": "Всички суми са в евро. Посочените продажни цени включват 21% холандски ДДС (BTW), освен ако не е посочено друго. ДДС е разбит по-долу.",
+    "taxNote": "Всички суми са в евро. Посочените продажни цени включват холандски ДДС (BTW), освен ако не е посочено друго. ДДС е разбит по-долу.",
     "footer": "Тази фактура е генерирана автоматично след успешно плащане чрез Stripe. Моля, запазете го за вашите архиви.",
     "support": "въпроси? Имейл",
     "stripeRef": "Ивица препратка",
@@ -682,7 +682,7 @@
     "domainTransfer": "Трансфер на домейн",
     "year": "година",
     "years": "години",
-    "vatIncluded": "21% с включен ДДС (разбити по фактурата)",
+    "vatIncluded": "с включен ДДС (разбити по фактурата)",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT"
   },
   "hr": {
@@ -717,7 +717,7 @@
     "paymentTerms": "Uvjeti plaćanja",
     "notes": "Bilješke",
     "thanks": "Hvala vam na narudžbi s TripleZero iT. Ova faktura potvrđuje da je uplata uspješno primljena.",
-    "taxNote": "Svi iznosi su u EUR. Navedene prodajne cijene uključuju 21% nizozemskog PDV-a (BTW), osim ako nije drugačije navedeno. PDV je raščlanjen u nastavku.",
+    "taxNote": "Svi iznosi su u EUR. Navedene prodajne cijene uključuju nizozemskog PDV-a (BTW), osim ako nije drugačije navedeno. PDV je raščlanjen u nastavku.",
     "footer": "Ova je faktura generirana automatski nakon uspješnog plaćanja putem Stripea. Zadržite ga za svoju evidenciju.",
     "support": "Pitanja? E-mail",
     "stripeRef": "Referenca na prugu",
@@ -729,7 +729,7 @@
     "domainTransfer": "Prijenos domene",
     "year": "godina",
     "years": "godina",
-    "vatIncluded": "21% PDV-a (raščlanjeno na računu)",
+    "vatIncluded": "PDV-a (raščlanjeno na računu)",
     "status": "Status",
     "hosting": "Hosting",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT"
@@ -767,7 +767,7 @@
     "paymentTerms": "Услови плаћања",
     "notes": "Напомене",
     "thanks": "Хвала вам на поруџбини са ТриплеЗеро иТ. Ова фактура потврђује да је уплата успешно примљена.",
-    "taxNote": "Сви износи су у ЕУР. Наведене продајне цене укључују 21% холандског ПДВ-а (БТВ) осим ако није другачије наведено. ПДВ је рашчлањен у наставку.",
+    "taxNote": "Сви износи су у ЕУР. Наведене продајне цене укључују холандског ПДВ-а (БТВ) осим ако није другачије наведено. ПДВ је рашчлањен у наставку.",
     "footer": "Ова фактура је генерисана аутоматски након успешне уплате преко Стрипе-а. Задржите то за своју евиденцију.",
     "support": "Питања? Емаил",
     "stripeRef": "Стрипе референце",
@@ -780,7 +780,7 @@
     "domainTransfer": "Пренос домена",
     "year": "године",
     "years": "године",
-    "vatIncluded": "21% ПДВ укључен (рашчлањен на фактури)",
+    "vatIncluded": "ПДВ укључен (рашчлањен на фактури)",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT"
   },
   "bs": {
@@ -814,7 +814,7 @@
     "paymentTerms": "Uslovi plaćanja",
     "notes": "Bilješke",
     "thanks": "Hvala vam na narudžbi sa TripleZero iT. Ova faktura potvrđuje da je uplata uspješno primljena.",
-    "taxNote": "Svi iznosi su u EUR. Navedene prodajne cijene uključuju 21% holandski PDV (BTW) osim ako nije drugačije navedeno. PDV je raščlanjen u nastavku.",
+    "taxNote": "Svi iznosi su u EUR. Navedene prodajne cijene uključuju holandski PDV (BTW) osim ako nije drugačije navedeno. PDV je raščlanjen u nastavku.",
     "footer": "Ova faktura je generirana automatski nakon uspješnog plaćanja putem Stripea. Zadržite to za svoju evidenciju.",
     "support": "Pitanja? Email",
     "services": "Usluge / proizvodi",
@@ -823,7 +823,7 @@
     "domainTransfer": "Transfer domena",
     "year": "godine",
     "years": "godine",
-    "vatIncluded": "21% PDV uključen (raščlanjen na fakturi)",
+    "vatIncluded": "PDV uključen (raščlanjen na fakturi)",
     "billTo": "Bill to",
     "status": "Status",
     "stripeRef": "Stripe reference",
@@ -865,7 +865,7 @@
     "paymentTerms": "Услови плаћања",
     "notes": "Напомене",
     "thanks": "Хвала вам на поруџбини са ТриплеЗеро иТ. Ова фактура потврђује да је уплата успешно примљена.",
-    "taxNote": "Сви износи су у ЕУР. Наведене продајне цене укључују 21% холандског ПДВ-а (БТВ) осим ако није другачије наведено. ПДВ је рашчлањен у наставку.",
+    "taxNote": "Сви износи су у ЕУР. Наведене продајне цене укључују холандског ПДВ-а (БТВ) осим ако није другачије наведено. ПДВ је рашчлањен у наставку.",
     "footer": "Ова фактура је генерисана аутоматски након успешне уплате преко Стрипе-а. Задржите то за своју евиденцију.",
     "support": "Питања? Емаил",
     "stripeRef": "Стрипе референце",
@@ -878,7 +878,7 @@
     "domainTransfer": "Пренос домена",
     "year": "године",
     "years": "године",
-    "vatIncluded": "21% ПДВ укључен (рашчлањен на фактури)",
+    "vatIncluded": "ПДВ укључен (рашчлањен на фактури)",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT"
   },
   "sq": {
@@ -914,7 +914,7 @@
     "paymentTerms": "Kushtet e pagesës",
     "notes": "Shënime",
     "thanks": "Faleminderit për porosinë tuaj me TripleZero iT. Kjo faturë konfirmon që pagesa është marrë me sukses.",
-    "taxNote": "Të gjitha shumat janë në euro. Çmimet e listuara të shitjes përfshijnë 21% TVSH holandeze (BTW) nëse nuk përcaktohet ndryshe. TVSH-ja është zbërthyer më poshtë.",
+    "taxNote": "Të gjitha shumat janë në euro. Çmimet e listuara të shitjes përfshijnë TVSH holandeze (BTW) nëse nuk përcaktohet ndryshe. TVSH-ja është zbërthyer më poshtë.",
     "footer": "Kjo faturë u gjenerua automatikisht pas pagesës së suksesshme përmes Stripe. Ju lutemi mbajeni për të dhënat tuaja.",
     "support": "Pyetje? Email",
     "stripeRef": "Referenca e shiritit",
@@ -926,7 +926,7 @@
     "domainTransfer": "Transferimi i domenit",
     "year": "vit",
     "years": "vjet",
-    "vatIncluded": "21% me TVSH (i zbërthyer në faturë)",
+    "vatIncluded": "me TVSH (i zbërthyer në faturë)",
     "email": "Email",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT"
   },
@@ -963,7 +963,7 @@
     "paymentTerms": "Услови за плаќање",
     "notes": "Белешки",
     "thanks": "Ви благодариме за вашата нарачка со TripleZero iT. Оваа фактура потврдува дека плаќањето е успешно примено.",
-    "taxNote": "Сите износи се во евра. Наведените продажни цени вклучуваат 21% холандски ДДВ (BTW), освен ако не е поинаку наведено. ДДВ е поделен подолу.",
+    "taxNote": "Сите износи се во евра. Наведените продажни цени вклучуваат холандски ДДВ (BTW), освен ако не е поинаку наведено. ДДВ е поделен подолу.",
     "footer": "Оваа фактура беше генерирана автоматски по успешното плаќање преку Stripe. Ве молиме чувајте го за вашата евиденција.",
     "support": "Прашања? Е-пошта",
     "stripeRef": "Референца за ленти",
@@ -975,7 +975,7 @@
     "domainTransfer": "Пренос на домен",
     "year": "година",
     "years": "години",
-    "vatIncluded": "21% вклучен ДДВ (разделен на фактурата)",
+    "vatIncluded": "вклучен ДДВ (разделен на фактурата)",
     "email": "Email",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT"
   },
@@ -1012,7 +1012,7 @@
     "paymentTerms": "Mokėjimo sąlygos",
     "notes": "Pastabos",
     "thanks": "Dėkojame už užsakymą naudojant TripleZero iT. Ši sąskaita patvirtina, kad mokėjimas buvo gautas sėkmingai.",
-    "taxNote": "Visos sumos nurodytos eurais. Į nurodytas pardavimo kainas įskaičiuotas 21% Olandijos PVM (BTW), jei nenurodyta kitaip. PVM suskirstytas žemiau.",
+    "taxNote": "Visos sumos nurodytos eurais. Į nurodytas pardavimo kainas įskaičiuotas Olandijos PVM (BTW), jei nenurodyta kitaip. PVM suskirstytas žemiau.",
     "footer": "Ši sąskaita faktūra buvo sugeneruota automatiškai po sėkmingo apmokėjimo per Stripe. Išsaugokite jį savo įrašams.",
     "support": "Klausimai? El. paštas",
     "stripeRef": "Juostelių nuoroda",
@@ -1026,7 +1026,7 @@
     "year": "metų",
     "years": "metų",
     "invoiceEmailSubject": "Sąskaita faktūra {number} – TripleZero iT",
-    "vatIncluded": "Su PVM 21% (suskirstyta sąskaitoje faktūroje)"
+    "vatIncluded": "Su PVM (suskirstyta sąskaitoje faktūroje)"
   },
   "da": {
     "title": "Faktura",
@@ -1056,7 +1056,7 @@
     "paymentTerms": "Betalingsbetingelser",
     "notes": "Noter",
     "thanks": "Tak for din bestilling med TripleZero iT. Denne faktura bekræfter, at betalingen er modtaget.",
-    "taxNote": "Alle beløb er i EUR. De anførte salgspriser inkluderer 21 % hollandsk moms (BTW), medmindre andet er angivet. Moms er opdelt nedenfor.",
+    "taxNote": "Alle beløb er i EUR. De anførte salgspriser inkluderer hollandsk moms (BTW), medmindre andet er angivet. Moms er opdelt nedenfor.",
     "footer": "Denne faktura blev genereret automatisk efter vellykket betaling via Stripe. Opbevar det venligst til din optegnelse.",
     "support": "Spørgsmål? E-mail",
     "stripeRef": "Stribe reference",
@@ -1068,7 +1068,7 @@
     "domainTransfer": "Domæneoverførsel",
     "year": "år",
     "years": "år",
-    "vatIncluded": "21% moms inkluderet (opdelt på fakturaen)",
+    "vatIncluded": "moms inkluderet (opdelt på fakturaen)",
     "lineTotal": "Total",
     "subtotalShort": "Subtotal",
     "totalShort": "Total",
@@ -1107,7 +1107,7 @@
     "paymentTerms": "Betalningsvillkor",
     "notes": "Anteckningar",
     "thanks": "Tack för din beställning med TripleZero iT. Denna faktura bekräftar att betalningen mottagits.",
-    "taxNote": "Alla belopp är i EUR. Angivna försäljningspriser inkluderar 21 % holländsk moms (BTW) om inte annat anges. Moms är uppdelad nedan.",
+    "taxNote": "Alla belopp är i EUR. Angivna försäljningspriser inkluderar holländsk moms (BTW) om inte annat anges. Moms är uppdelad nedan.",
     "footer": "Denna faktura genererades automatiskt efter framgångsrik betalning via Stripe. Vänligen spara det för dina register.",
     "support": "Frågor? E-post",
     "stripeRef": "Stripe referens",
@@ -1121,7 +1121,7 @@
     "year": "år",
     "years": "år",
     "invoiceEmailSubject": "Faktura {number} – TripleZero iT",
-    "vatIncluded": "21% moms ingår (uppdelat på fakturan)",
+    "vatIncluded": "moms ingår (uppdelat på fakturan)",
     "lineTotal": "Total",
     "totalShort": "Total",
     "status": "Status"
@@ -1156,7 +1156,7 @@
     "paymentTerms": "Betalingsbetingelser",
     "notes": "Notater",
     "thanks": "Takk for bestillingen din med TripleZero iT. Denne fakturaen bekrefter at betalingen ble mottatt.",
-    "taxNote": "Alle beløp er i EUR. Oppførte salgspriser inkluderer 21 % nederlandsk moms (BTW) med mindre annet er oppgitt. MVA er fordelt nedenfor.",
+    "taxNote": "Alle beløp er i EUR. Oppførte salgspriser inkluderer nederlandsk moms (BTW) med mindre annet er oppgitt. MVA er fordelt nedenfor.",
     "footer": "Denne fakturaen ble generert automatisk etter vellykket betaling via Stripe. Vennligst oppbevar det for journalen din.",
     "support": "Spørsmål? E-post",
     "stripeRef": "Stripereferanse",
@@ -1169,7 +1169,7 @@
     "year": "år",
     "years": "år",
     "invoiceEmailSubject": "Faktura {number} – TripleZero iT",
-    "vatIncluded": "21 % mva inkludert (fordelt på fakturaen)",
+    "vatIncluded": "mva inkludert (fordelt på fakturaen)",
     "lineTotal": "Total",
     "totalShort": "Total",
     "status": "Status",
@@ -1207,7 +1207,7 @@
     "paymentTerms": "Maksuehdot",
     "notes": "Huomautuksia",
     "thanks": "Kiitos tilauksestasi TripleZero iT:llä. Tämä lasku vahvistaa, että maksu on vastaanotettu onnistuneesti.",
-    "taxNote": "Kaikki summat ovat euroissa. Listatut myyntihinnat sisältävät 21 % Hollannin ALV:n (BTW), ellei toisin mainita. ALV on eritelty alla.",
+    "taxNote": "Kaikki summat ovat euroissa. Listatut myyntihinnat sisältävät Hollannin ALV:n (BTW), ellei toisin mainita. ALV on eritelty alla.",
     "footer": "Tämä lasku luotiin automaattisesti onnistuneen Stripen kautta suoritetun maksun jälkeen. Säilytä se muistiinpanojasi varten.",
     "support": "Kysymyksiä? Sähköposti",
     "stripeRef": "Raitaviittaus",
@@ -1220,7 +1220,7 @@
     "domainTransfer": "Verkkotunnuksen siirto",
     "year": "vuosi",
     "years": "vuotta",
-    "vatIncluded": "Sisältää arvonlisäveron 21 % (eriteltynä laskussa)",
+    "vatIncluded": "Sisältää arvonlisäveron (eriteltynä laskussa)",
     "status": "Status",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT"
   },
@@ -1257,7 +1257,7 @@
     "paymentTerms": "Умови оплати",
     "notes": "Примітки",
     "thanks": "Дякуємо за замовлення через TripleZero iT. Цей рахунок-фактура підтверджує успішне отримання платежу.",
-    "taxNote": "Усі суми вказані в євро. Зазначені ціни продажу включають 21% нідерландського ПДВ (BTW), якщо не вказано інше. Нижче наведено ПДВ.",
+    "taxNote": "Усі суми вказані в євро. Зазначені ціни продажу включають нідерландського ПДВ (BTW), якщо не вказано інше. Нижче наведено ПДВ.",
     "footer": "Цей рахунок-фактуру було створено автоматично після успішної оплати через Stripe. Будь ласка, збережіть його для свого обліку.",
     "support": "Запитання? Електронна пошта",
     "stripeRef": "Посилання на смугу",
@@ -1270,7 +1270,7 @@
     "domainTransfer": "Перенесення домену",
     "year": "рік",
     "years": "років",
-    "vatIncluded": "21% з ПДВ (з розбивкою в рахунку-фактурі)",
+    "vatIncluded": "з ПДВ (з розбивкою в рахунку-фактурі)",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT"
   },
   "ru": {
@@ -1306,7 +1306,7 @@
     "paymentTerms": "Условия оплаты",
     "notes": "Примечания",
     "thanks": "Благодарим вас за заказ в TripleZero iT. Этот счет подтверждает, что платеж был успешно получен.",
-    "taxNote": "Все суммы указаны в евро. Указанные цены продажи включают 21% голландского НДС (кстати), если не указано иное. НДС указан ниже.",
+    "taxNote": "Все суммы указаны в евро. Указанные цены продажи включают голландского НДС (кстати), если не указано иное. НДС указан ниже.",
     "footer": "Этот счет был сгенерирован автоматически после успешной оплаты через Stripe. Пожалуйста, сохраните его для своих записей.",
     "support": "Вопросы? Электронная почта",
     "stripeRef": "Ссылка на полосу",
@@ -1319,7 +1319,7 @@
     "domainTransfer": "Перенос домена",
     "year": "год",
     "years": "годы",
-    "vatIncluded": "21% НДС включен (в разбивке по счету)",
+    "vatIncluded": "НДС включен (в разбивке по счету)",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT"
   },
   "tr": {
@@ -1355,7 +1355,7 @@
     "paymentTerms": "Ödeme koşulları",
     "notes": "Notlar",
     "thanks": "TripleZero iT siparişiniz için teşekkür ederiz. Bu fatura, ödemenin başarıyla alındığını doğrular.",
-    "taxNote": "Tüm tutarlar EUR cinsindendir. Listelenen satış fiyatlarına aksi belirtilmediği sürece %21 Hollanda KDV'si (BTW) dahildir. KDV aşağıda detaylandırılmıştır.",
+    "taxNote": "Tüm tutarlar EUR cinsindendir. Listelenen satış fiyatlarına aksi belirtilmediği sürece Hollanda KDV'si (BTW) dahildir. KDV aşağıda detaylandırılmıştır.",
     "footer": "Bu fatura, Stripe aracılığıyla başarılı ödeme yapıldıktan sonra otomatik olarak oluşturuldu. Lütfen kayıtlarınız için saklayın.",
     "support": "Sorunuz mu var? E-posta",
     "stripeRef": "Şerit referansı",
@@ -1369,7 +1369,7 @@
     "year": "yıl",
     "years": "yıllar",
     "invoiceEmailSubject": "Fatura {number} — TripleZero iT",
-    "vatIncluded": "%21 KDV dahildir (faturada bölünmüştür)"
+    "vatIncluded": "KDV dahildir (faturada bölünmüştür)"
   },
   "he": {
     "title": "חֶשׁבּוֹנִית",
@@ -1404,7 +1404,7 @@
     "paymentTerms": "תנאי תשלום",
     "notes": "הערות",
     "thanks": "תודה על ההזמנה שלך עם TripleZero iT. חשבונית זו מאשרת שהתשלום התקבל בהצלחה.",
-    "taxNote": "כל הסכומים הם באירו. מחירי המכירה הרשומים כוללים 21% מע\"מ הולנדי (BTW), אלא אם צוין אחרת. מע\"מ מפורט להלן.",
+    "taxNote": "כל הסכומים הם באירו. מחירי המכירה הרשומים כוללים מע\"מ הולנדי (BTW), אלא אם צוין אחרת. מע\"מ מפורט להלן.",
     "footer": "חשבונית זו נוצרה באופן אוטומטי לאחר תשלום מוצלח באמצעות Stripe. נא לשמור אותו לתיעוד שלך.",
     "support": "שאלות? אֶלֶקטרוֹנִי",
     "stripeRef": "התייחסות לפס",
@@ -1418,7 +1418,7 @@
     "year": "שָׁנָה",
     "years": "שנים",
     "invoiceEmailSubject": "חשבונית {number} — TripleZero iT",
-    "vatIncluded": "21% מע\"מ כלול (מפורט בחשבונית)"
+    "vatIncluded": "מע\"מ כלול (מפורט בחשבונית)"
   },
   "ar": {
     "title": "فاتورة",
@@ -1453,7 +1453,7 @@
     "paymentTerms": "شروط الدفع",
     "notes": "ملحوظات",
     "thanks": "شكرًا لك على طلبك مع TripleZero iT. تؤكد هذه الفاتورة أنه تم استلام الدفعة بنجاح.",
-    "taxNote": "جميع المبالغ باليورو. تشمل أسعار البيع المدرجة ضريبة القيمة المضافة الهولندية بنسبة 21% ما لم يُنص على خلاف ذلك. ضريبة القيمة المضافة مقسمة أدناه.",
+    "taxNote": "جميع المبالغ باليورو. تشمل أسعار البيع المدرجة ضريبة القيمة المضافة الهولندية بنسبة ما لم يُنص على خلاف ذلك. ضريبة القيمة المضافة مقسمة أدناه.",
     "footer": "تم إنشاء هذه الفاتورة تلقائيًا بعد الدفع الناجح عبر Stripe. يرجى الاحتفاظ بها لسجلاتك.",
     "support": "أسئلة؟ بريد إلكتروني",
     "stripeRef": "مرجع الشريط",
@@ -1466,7 +1466,7 @@
     "domainTransfer": "نقل المجال",
     "year": "سنة",
     "years": "سنين",
-    "vatIncluded": "شامل ضريبة القيمة المضافة بنسبة 21% (مقسمة على الفاتورة)",
+    "vatIncluded": "شامل ضريبة القيمة المضافة بنسبة (مقسمة على الفاتورة)",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT"
   },
   "ka": {
@@ -1502,7 +1502,7 @@
     "paymentTerms": "გადახდის პირობები",
     "notes": "შენიშვნები",
     "thanks": "გმადლობთ TripleZero iT-ით შეკვეთისთვის. ეს ინვოისი ადასტურებს, რომ გადახდა წარმატებით იქნა მიღებული.",
-    "taxNote": "ყველა თანხა ევროშია. ჩამოთვლილი გასაყიდი ფასები მოიცავს 21% ჰოლანდიურ დღგ-ს (BTW), თუ სხვაგვარად არ არის მითითებული. დღგ დაყოფილია ქვემოთ.",
+    "taxNote": "ყველა თანხა ევროშია. ჩამოთვლილი გასაყიდი ფასები მოიცავს ჰოლანდიურ დღგ-ს (BTW), თუ სხვაგვარად არ არის მითითებული. დღგ დაყოფილია ქვემოთ.",
     "footer": "ეს ინვოისი ავტომატურად შეიქმნა Stripe-ის მეშვეობით წარმატებული გადახდის შემდეგ. გთხოვთ შეინახოთ ის თქვენი ჩანაწერებისთვის.",
     "support": "კითხვები? ელფოსტა",
     "stripeRef": "ზოლის მითითება",
@@ -1515,7 +1515,7 @@
     "domainTransfer": "დომენის გადაცემა",
     "year": "წელიწადი",
     "years": "წლები",
-    "vatIncluded": "დღგ-ს 21% შედის (ჩამოთვლილი ინვოისზე)",
+    "vatIncluded": "დღგ-ს შედის (ჩამოთვლილი ინვოისზე)",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT"
   },
   "hy": {
@@ -1551,7 +1551,7 @@
     "paymentTerms": "Վճարման պայմանները",
     "notes": "Նշումներ",
     "thanks": "Շնորհակալություն TripleZero iT-ով ձեր պատվերի համար: Այս հաշիվը հաստատում է, որ վճարումը հաջողությամբ է ստացվել:",
-    "taxNote": "Բոլոր գումարները եվրոյով են: Նշված վաճառքի գները ներառում են 21% հոլանդական ԱԱՀ (BTW), եթե այլ բան նշված չէ: ԱԱՀ-ն տրված է ստորև:",
+    "taxNote": "Բոլոր գումարները եվրոյով են: Նշված վաճառքի գները ներառում են հոլանդական ԱԱՀ (BTW), եթե այլ բան նշված չէ: ԱԱՀ-ն տրված է ստորև:",
     "footer": "Այս հաշիվը ստեղծվել է ավտոմատ կերպով Stripe-ի միջոցով հաջող վճարումից հետո: Խնդրում ենք պահել այն ձեր գրառումների համար:",
     "support": "Հարցե՞ր: Էլ",
     "stripeRef": "Շերտավոր հղում",
@@ -1564,7 +1564,7 @@
     "domainTransfer": "Դոմենի փոխանցում",
     "year": "տարին",
     "years": "տարիներ",
-    "vatIncluded": "21% ԱԱՀ ներառված (հաշվառված ապրանքագրի վրա)",
+    "vatIncluded": "ԱԱՀ ներառված (հաշվառված ապրանքագրի վրա)",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT"
   },
   "az": {
@@ -1599,7 +1599,7 @@
     "paymentTerms": "Ödəniş şərtləri",
     "notes": "Qeydlər",
     "thanks": "TripleZero iT ilə sifariş etdiyiniz üçün təşəkkür edirik. Bu faktura ödənişin uğurla alındığını təsdiqləyir.",
-    "taxNote": "Bütün məbləğlər EUR-dadır. Siyahıda göstərilən satış qiymətlərinə başqa cür göstərilmədiyi təqdirdə 21% Hollandiya ƏDV (BTW) daxildir. ƏDV aşağıda bölünür.",
+    "taxNote": "Bütün məbləğlər EUR-dadır. Siyahıda göstərilən satış qiymətlərinə başqa cür göstərilmədiyi təqdirdə Hollandiya ƏDV (BTW) daxildir. ƏDV aşağıda bölünür.",
     "footer": "Bu faktura Stripe vasitəsilə uğurlu ödənişdən sonra avtomatik olaraq yaradılıb. Zəhmət olmasa qeydləriniz üçün saxlayın.",
     "support": "Suallar? E-poçt",
     "stripeRef": "Zolaq arayışı",
@@ -1612,7 +1612,7 @@
     "domainTransfer": "Domen köçürməsi",
     "year": "il",
     "years": "illər",
-    "vatIncluded": "21% ƏDV daxildir (qaimə-fakturada bölünür)",
+    "vatIncluded": "ƏDV daxildir (qaimə-fakturada bölünür)",
     "billTo": "Bill to",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT"
   },
@@ -1649,7 +1649,7 @@
     "paymentTerms": "付款条件",
     "notes": "笔记",
     "thanks": "感谢您向 TripleZero iT 订购。此发票确认付款已成功收到。",
-    "taxNote": "所有金额均以欧元为单位。除非另有说明，列出的销售价格包含 21% 的荷兰增值税 (BTW)。增值税细分如下。",
+    "taxNote": "所有金额均以欧元为单位。除非另有说明，列出的销售价格包含 的荷兰增值税 (BTW)。增值税细分如下。",
     "footer": "该发票是通过 Stripe 付款成功后自动生成的。请保留它作为记录。",
     "support": "问题？电子邮件",
     "stripeRef": "条纹参考",
@@ -1663,7 +1663,7 @@
     "year": "年",
     "years": "年",
     "invoiceEmailSubject": "发票 {number} — TripleZero iT",
-    "vatIncluded": "含 21% 增值税（在发票上细分）"
+    "vatIncluded": "含 增值税（在发票上细分）"
   },
   "ja": {
     "title": "請求書",
@@ -1698,7 +1698,7 @@
     "paymentTerms": "支払い条件",
     "notes": "注意事項",
     "thanks": "TripleZero iT をご注文いただきありがとうございます。この請求書により、支払いが正常に受領されたことが確認されます。",
-    "taxNote": "すべての金額はユーロで表示されます。記載されている販売価格には、特に明記されていない限り、21% のオランダ付加価値税 (BTW) が含まれています。 VAT は以下に分類されます。",
+    "taxNote": "すべての金額はユーロで表示されます。記載されている販売価格には、特に明記されていない限り、 のオランダ付加価値税 (BTW) が含まれています。 VAT は以下に分類されます。",
     "footer": "この請求書は、Stripe による支払いが成功した後に自動的に生成されました。記録用に保管してください。",
     "support": "質問がありますか?電子メール",
     "stripeRef": "ストライプリファレンス",
@@ -1711,7 +1711,7 @@
     "domainTransfer": "ドメイン移管",
     "year": "年",
     "years": "年",
-    "vatIncluded": "21% の VAT が含まれています (内訳は請求書に記載されています)",
+    "vatIncluded": "の VAT が含まれています (内訳は請求書に記載されています)",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT"
   },
   "bn": {
@@ -1747,7 +1747,7 @@
     "paymentTerms": "Payment terms",
     "notes": "Notes",
     "thanks": "Thank you for your order with TripleZero iT. This invoice confirms that payment was received successfully.",
-    "taxNote": "All amounts are in EUR. Listed sell prices include 21% Dutch VAT (BTW) unless stated otherwise. VAT is broken down below.",
+    "taxNote": "All amounts are in EUR. Listed sell prices include VAT (BTW) unless stated otherwise. VAT is broken down below.",
     "footer": "This invoice was generated automatically after successful payment via Stripe. Please keep it for your records.",
     "support": "Questions? Email",
     "stripeRef": "Stripe reference",
@@ -1761,7 +1761,7 @@
     "year": "year",
     "years": "years",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT",
-    "vatIncluded": "21% VAT included (broken down on the invoice)"
+    "vatIncluded": "VAT included (broken down on the invoice)"
   },
   "hi": {
     "title": "Invoice",
@@ -1796,7 +1796,7 @@
     "paymentTerms": "Payment terms",
     "notes": "Notes",
     "thanks": "Thank you for your order with TripleZero iT. This invoice confirms that payment was received successfully.",
-    "taxNote": "All amounts are in EUR. Listed sell prices include 21% Dutch VAT (BTW) unless stated otherwise. VAT is broken down below.",
+    "taxNote": "All amounts are in EUR. Listed sell prices include VAT (BTW) unless stated otherwise. VAT is broken down below.",
     "footer": "This invoice was generated automatically after successful payment via Stripe. Please keep it for your records.",
     "support": "Questions? Email",
     "stripeRef": "Stripe reference",
@@ -1810,7 +1810,7 @@
     "year": "year",
     "years": "years",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT",
-    "vatIncluded": "21% VAT included (broken down on the invoice)"
+    "vatIncluded": "VAT included (broken down on the invoice)"
   },
   "mr": {
     "title": "Invoice",
@@ -1845,7 +1845,7 @@
     "paymentTerms": "Payment terms",
     "notes": "Notes",
     "thanks": "Thank you for your order with TripleZero iT. This invoice confirms that payment was received successfully.",
-    "taxNote": "All amounts are in EUR. Listed sell prices include 21% Dutch VAT (BTW) unless stated otherwise. VAT is broken down below.",
+    "taxNote": "All amounts are in EUR. Listed sell prices include VAT (BTW) unless stated otherwise. VAT is broken down below.",
     "footer": "This invoice was generated automatically after successful payment via Stripe. Please keep it for your records.",
     "support": "Questions? Email",
     "stripeRef": "Stripe reference",
@@ -1859,7 +1859,7 @@
     "year": "year",
     "years": "years",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT",
-    "vatIncluded": "21% VAT included (broken down on the invoice)"
+    "vatIncluded": "VAT included (broken down on the invoice)"
   },
   "ps": {
     "title": "Invoice",
@@ -1894,7 +1894,7 @@
     "paymentTerms": "Payment terms",
     "notes": "Notes",
     "thanks": "Thank you for your order with TripleZero iT. This invoice confirms that payment was received successfully.",
-    "taxNote": "All amounts are in EUR. Listed sell prices include 21% Dutch VAT (BTW) unless stated otherwise. VAT is broken down below.",
+    "taxNote": "All amounts are in EUR. Listed sell prices include VAT (BTW) unless stated otherwise. VAT is broken down below.",
     "footer": "This invoice was generated automatically after successful payment via Stripe. Please keep it for your records.",
     "support": "Questions? Email",
     "stripeRef": "Stripe reference",
@@ -1908,7 +1908,7 @@
     "year": "year",
     "years": "years",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT",
-    "vatIncluded": "21% VAT included (broken down on the invoice)"
+    "vatIncluded": "VAT included (broken down on the invoice)"
   },
   "pa": {
     "title": "Invoice",
@@ -1943,7 +1943,7 @@
     "paymentTerms": "Payment terms",
     "notes": "Notes",
     "thanks": "Thank you for your order with TripleZero iT. This invoice confirms that payment was received successfully.",
-    "taxNote": "All amounts are in EUR. Listed sell prices include 21% Dutch VAT (BTW) unless stated otherwise. VAT is broken down below.",
+    "taxNote": "All amounts are in EUR. Listed sell prices include VAT (BTW) unless stated otherwise. VAT is broken down below.",
     "footer": "This invoice was generated automatically after successful payment via Stripe. Please keep it for your records.",
     "support": "Questions? Email",
     "stripeRef": "Stripe reference",
@@ -1957,7 +1957,7 @@
     "year": "year",
     "years": "years",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT",
-    "vatIncluded": "21% VAT included (broken down on the invoice)"
+    "vatIncluded": "VAT included (broken down on the invoice)"
   },
   "te": {
     "title": "Invoice",
@@ -1992,7 +1992,7 @@
     "paymentTerms": "Payment terms",
     "notes": "Notes",
     "thanks": "Thank you for your order with TripleZero iT. This invoice confirms that payment was received successfully.",
-    "taxNote": "All amounts are in EUR. Listed sell prices include 21% Dutch VAT (BTW) unless stated otherwise. VAT is broken down below.",
+    "taxNote": "All amounts are in EUR. Listed sell prices include VAT (BTW) unless stated otherwise. VAT is broken down below.",
     "footer": "This invoice was generated automatically after successful payment via Stripe. Please keep it for your records.",
     "support": "Questions? Email",
     "stripeRef": "Stripe reference",
@@ -2006,7 +2006,7 @@
     "year": "year",
     "years": "years",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT",
-    "vatIncluded": "21% VAT included (broken down on the invoice)"
+    "vatIncluded": "VAT included (broken down on the invoice)"
   },
   "ur": {
     "title": "Invoice",
@@ -2041,7 +2041,7 @@
     "paymentTerms": "Payment terms",
     "notes": "Notes",
     "thanks": "Thank you for your order with TripleZero iT. This invoice confirms that payment was received successfully.",
-    "taxNote": "All amounts are in EUR. Listed sell prices include 21% Dutch VAT (BTW) unless stated otherwise. VAT is broken down below.",
+    "taxNote": "All amounts are in EUR. Listed sell prices include VAT (BTW) unless stated otherwise. VAT is broken down below.",
     "footer": "This invoice was generated automatically after successful payment via Stripe. Please keep it for your records.",
     "support": "Questions? Email",
     "stripeRef": "Stripe reference",
@@ -2055,6 +2055,6 @@
     "year": "year",
     "years": "years",
     "invoiceEmailSubject": "Invoice {number} — TripleZero iT",
-    "vatIncluded": "21% VAT included (broken down on the invoice)"
+    "vatIncluded": "VAT included (broken down on the invoice)"
   }
 }
