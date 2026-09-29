@@ -33,7 +33,8 @@ const primaryLinks = [
   { href: "/diensten/categorie/hosting", key: "hosting", hosting: true },
   { href: "/kennisbank", key: "kennisbank" },
   { href: "/nieuws", key: "blog" },
-  { href: "/portfolio", key: "portfolio" },
+  // Hidden until the portfolio page is filled — uncomment to restore in the header:
+  // { href: "/portfolio", key: "portfolio" },
   { href: "/shop", key: "pricing" },
   { href: "/contact", key: "contact" },
 ] as const;
