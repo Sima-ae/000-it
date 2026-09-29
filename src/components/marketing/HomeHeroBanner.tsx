@@ -17,8 +17,8 @@ import { isRtlLocale } from "@/i18n/languages";
 const ease = [0.22, 1, 0.36, 1] as const;
 
 /**
- * Full-bleed homepage hero — photo base with TripleZero gradient overlay
- * (#5e3b88 → #007c8d) and Agent 000 as the visual anchor.
+ * Full-bleed homepage hero — photo base with a brand gradient overlay
+ * and Agent 000 as the visual anchor.
  */
 export function HomeHeroBanner({ scanCount }: { scanCount: number }) {
   const t = useTranslations("hero");
@@ -54,14 +54,7 @@ export function HomeHeroBanner({ scanCount }: { scanCount: number }) {
           aria-hidden
         />
       </motion.div>
-      <div
-        className="pointer-events-none absolute inset-0"
-        aria-hidden
-        style={{
-          backgroundImage:
-            "linear-gradient(90deg, rgba(50, 28, 78, 0.88) 0%, rgba(0, 78, 92, 0.88) 100%)",
-        }}
-      />
+      <div className="hero-brand-gradient pointer-events-none absolute inset-0" aria-hidden />
       <div
         className="pointer-events-none absolute inset-0 opacity-50"
         aria-hidden

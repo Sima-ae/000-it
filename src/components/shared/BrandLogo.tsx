@@ -21,7 +21,7 @@ export function BrandLogo({
       width={600}
       height={200}
       priority={priority}
-      className={cn("h-8 w-auto md:h-9", className)}
+      className={cn("h-9 w-auto md:h-11", className)}
     />
   );
 }

@@ -129,7 +129,7 @@ export function Navigation() {
                 aria-label={brand.displayName}
             className="min-w-0 shrink"
           >
-            <BrandLogo priority className="h-7 max-w-[min(42vw,9.5rem)] sm:h-8 sm:max-w-none md:h-9" />
+            <BrandLogo priority className="h-9 max-w-[min(48vw,12rem)] sm:h-10 sm:max-w-none md:h-12" />
           </SoftLink>
 
           <nav className="hidden items-center gap-0.5 lg:flex">

@@ -267,14 +267,7 @@ export default async function HomePage({
                 className="-scale-x-100 object-cover object-center"
               />
             </div>
-            <div
-              className="glow-bg pointer-events-none absolute inset-0"
-              aria-hidden
-              style={{
-                backgroundImage:
-                  "linear-gradient(90deg, rgba(50, 28, 78, 0.78) 0%, rgba(0, 78, 92, 0.78) 100%)",
-              }}
-            />
+            <div className="cta-brand-gradient glow-bg pointer-events-none absolute inset-0" aria-hidden />
             <div
               className="glow-bg pointer-events-none absolute inset-0 opacity-50"
               aria-hidden

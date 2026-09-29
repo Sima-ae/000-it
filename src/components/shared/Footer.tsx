@@ -131,7 +131,7 @@ export function Footer() {
                 aria-label={brand.displayName}
                 className="inline-flex h-9 items-center md:h-10"
               >
-                <BrandLogo className="h-9 w-auto md:h-10" />
+                <BrandLogo className="h-11 w-auto md:h-12" />
               </SoftLink>
               <div className="mt-3 max-w-[20rem] text-sm leading-relaxed text-muted-foreground text-pretty lg:max-w-none">
                 <p>{t("tagline")}</p>
