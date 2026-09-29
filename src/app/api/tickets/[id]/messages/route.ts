@@ -20,6 +20,8 @@ const messageSchema = z.object({
   locale: z.string().optional(),
   /** Skip Agent 000 auto-reply (staff or explicit). */
   skipAgent: z.boolean().optional(),
+  /** Force a FAQ item after a clarify pick. */
+  faqId: z.string().optional(),
 });
 
 export async function POST(request: Request, { params }: Params) {
@@ -63,11 +65,13 @@ export async function POST(request: Request, { params }: Params) {
     });
 
     let agentMessage = null;
+    let agent: Awaited<ReturnType<typeof buildAgentReply>> | null = null;
     if (!parsed.data.skipAgent && ticket.source === "CHAT") {
       try {
-        const agent = await buildAgentReply(
+        agent = await buildAgentReply(
           parsed.data.locale || "en",
           parsed.data.body,
+          parsed.data.faqId ? { faqId: parsed.data.faqId } : undefined,
         );
         agentMessage = await prisma.ticketMessage.create({
           data: {
@@ -122,7 +126,19 @@ export async function POST(request: Request, { params }: Params) {
     }
 
     return NextResponse.json(
-      agentMessage ? { message, agentMessage } : message,
+      agentMessage
+        ? {
+            message,
+            agentMessage,
+            agent: {
+              faqId: agent?.faqId ?? null,
+              confidence: agent?.confidence ?? 0,
+              actions: agent?.actions ?? [],
+              mode: agent?.mode ?? "answer",
+              links: agent?.links ?? [],
+            },
+          }
+        : message,
       { status: 201 },
     );
   } catch (error) {

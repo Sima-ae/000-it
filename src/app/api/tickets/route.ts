@@ -23,6 +23,7 @@ const createSchema = z.object({
   clientId: z.string().optional().nullable(),
   projectId: z.string().optional().nullable(),
   locale: z.string().optional(),
+  faqId: z.string().optional(),
 });
 
 function listInclude() {
@@ -188,7 +189,11 @@ export async function POST(request: Request) {
     let agent: Awaited<ReturnType<typeof buildAgentReply>> | null = null;
     if (source === "CHAT") {
       try {
-        agent = await buildAgentReply(locale, data.message);
+        agent = await buildAgentReply(
+          locale,
+          data.message,
+          data.faqId ? { faqId: data.faqId } : undefined,
+        );
       } catch (error) {
         console.error("[tickets] agent reply skipped", error);
       }
@@ -257,6 +262,8 @@ export async function POST(request: Request) {
               faqId: agent.faqId,
               confidence: agent.confidence,
               actions: agent.actions,
+              mode: agent.mode,
+              links: agent.links,
             }
           : null,
       },

@@ -46,36 +46,100 @@ export type BuildAgentReplyOptions = {
   faqId?: string;
 };
 
-function isNl(locale: string) {
-  return locale.toLowerCase().startsWith("nl");
+function lang(locale: string) {
+  return locale.toLowerCase().split("-")[0] || "en";
+}
+
+type CopyBag = Record<string, string> & { en: string };
+
+function pickCopy(locale: string, map: CopyBag) {
+  const code = lang(locale);
+  return map[code] || map.en;
 }
 
 function greeting(locale: string) {
-  return isNl(locale)
-    ? "Hallo, ik ben Agent 000."
-    : "Hi, I'm Agent 000.";
+  return pickCopy(locale, {
+    en: "Hi, I'm Agent 000.",
+    nl: "Hallo, ik ben Agent 000.",
+    de: "Hallo, ich bin Agent 000.",
+    fr: "Bonjour, je suis Agent 000.",
+    es: "Hola, soy Agent 000.",
+    pt: "Olá, sou o Agent 000.",
+    it: "Ciao, sono Agent 000.",
+    pl: "Cześć, jestem Agent 000.",
+    tr: "Merhaba, ben Agent 000.",
+    ar: "مرحبًا، أنا Agent 000.",
+    hi: "नमस्ते, मैं Agent 000 हूँ।",
+    bn: "হ্যালো, আমি Agent 000।",
+    ur: "ہیلو، میں Agent 000 ہوں۔",
+    zh: "你好，我是 Agent 000。",
+    ja: "こんにちは、Agent 000 です。",
+  });
 }
 
 function lowConfidenceCopy(locale: string) {
-  return isNl(locale)
-    ? "Ik kan dit nog niet zeker beantwoorden vanuit onze FAQ of kennisbank. Je kunt hieronder gerelateerde onderwerpen bekijken, een ticket openen, een afspraak boeken, of contact opnemen — ons team helpt je verder."
-    : "I'm not fully sure from our FAQ or knowledge base yet. You can browse related topics below, open a ticket, book an appointment, or contact us — our team will help.";
+  return pickCopy(locale, {
+    en: "I'm not fully sure from our FAQ or knowledge base yet. You can browse related topics below, open a ticket, book an appointment, or contact us — our team will help.",
+    nl: "Ik kan dit nog niet zeker beantwoorden vanuit onze FAQ of kennisbank. Je kunt hieronder gerelateerde onderwerpen bekijken, een ticket openen, een afspraak boeken, of contact opnemen — ons team helpt je verder.",
+    de: "Ich bin mir aus FAQ oder Wissensdatenbank noch nicht sicher genug. Du kannst unten verwandte Themen öffnen, ein Ticket erstellen, einen Termin buchen oder uns kontaktieren — unser Team hilft weiter.",
+    fr: "Je ne suis pas encore sûr à partir de notre FAQ ou base de connaissances. Tu peux consulter les sujets liés ci-dessous, ouvrir un ticket, prendre rendez-vous ou nous contacter — notre équipe t’aidera.",
+    es: "Aún no estoy del todo seguro con nuestra FAQ o base de conocimiento. Puedes ver temas relacionados abajo, abrir un ticket, reservar una cita o contactarnos — nuestro equipo te ayudará.",
+    pt: "Ainda não tenho certeza suficiente pela FAQ ou base de conhecimento. Podes ver tópicos relacionados abaixo, abrir um ticket, marcar uma reunião ou contactar-nos — a nossa equipa ajuda.",
+    ar: "لست متأكدًا بعد من الأسئلة الشائعة أو قاعدة المعرفة. يمكنك تصفح المواضيع ذات الصلة أدناه أو فتح تذكرة أو حجز موعد أو التواصل معنا — فريقنا سيساعدك.",
+    hi: "मैं अभी FAQ या ज्ञानकोष से पूरी तरह आश्वस्त नहीं हूँ। नीचे संबंधित विषय देखें, टिकट खोलें, अपॉइंटमेंट बुक करें या संपर्क करें — हमारी टीम मदद करेगी।",
+    zh: "我还不能从常见问题或知识库完全确定。你可以查看下方相关主题、开工单、预约或联系我们——我们的团队会协助你。",
+    ja: "FAQ やナレッジベースだけではまだ確信が持てません。下の関連トピックを見るか、チケット作成・予約・お問い合わせでチームが対応します。",
+  });
 }
 
 function escalateHint(locale: string) {
-  return isNl(locale)
-    ? "\n\nWil je liever een mens? Open een ticket of maak een afspraak."
-    : "\n\nPrefer a human? Open a ticket or book an appointment.";
+  return pickCopy(locale, {
+    en: "\n\nPrefer a human? Open a ticket or book an appointment.",
+    nl: "\n\nWil je liever een mens? Open een ticket of maak een afspraak.",
+    de: "\n\nLieber einen Menschen? Öffne ein Ticket oder buche einen Termin.",
+    fr: "\n\nTu préfères un humain ? Ouvre un ticket ou prends rendez-vous.",
+    es: "\n\n¿Prefieres una persona? Abre un ticket o reserva una cita.",
+    pt: "\n\nPreferes uma pessoa? Abre um ticket ou marca uma reunião.",
+    ar: "\n\nتفضل التحدث مع شخص؟ افتح تذكرة أو احجز موعدًا.",
+    hi: "\n\nक्या आप किसी व्यक्ति से बात करना चाहेंगे? टिकट खोलें या अपॉइंटमेंट बुक करें।",
+    zh: "\n\n想找人工？请开工单或预约。",
+    ja: "\n\n人と話したい場合は、チケットを開くか予約してください。",
+  });
 }
 
 function clarifyCopy(locale: string) {
-  return isNl(locale)
-    ? "Ik vond meerdere relevante onderwerpen in onze FAQ en kennisbank. Welke past het best bij wat je zoekt? Kies een optie hieronder — dan geef ik een gericht antwoord."
-    : "I found several relevant topics in our FAQ and knowledge base. Which one matches what you're looking for? Pick an option below and I'll give a focused answer.";
+  return pickCopy(locale, {
+    en: "I found several relevant topics in our FAQ and knowledge base. Which one matches what you're looking for? Pick an option below and I'll give a focused answer.",
+    nl: "Ik vond meerdere relevante onderwerpen in onze FAQ en kennisbank. Welke past het best bij wat je zoekt? Kies een optie hieronder — dan geef ik een gericht antwoord.",
+    de: "Ich habe mehrere passende Themen in FAQ und Wissensdatenbank gefunden. Welche passt am besten? Wähle unten eine Option — dann antworte ich gezielter.",
+    fr: "J’ai trouvé plusieurs sujets pertinents dans notre FAQ et base de connaissances. Lequel correspond le mieux ? Choisis une option ci-dessous pour une réponse ciblée.",
+    es: "Encontré varios temas relevantes en nuestra FAQ y base de conocimiento. ¿Cuál encaja mejor? Elige una opción abajo y te doy una respuesta concreta.",
+    pt: "Encontrei vários tópicos relevantes na FAQ e base de conhecimento. Qual combina melhor? Escolhe uma opção abaixo para uma resposta focada.",
+    ar: "وجدت عدة مواضيع ذات صلة في الأسئلة الشائعة وقاعدة المعرفة. أيها الأنسب؟ اختر خيارًا أدناه لأعطيك إجابة مركزة.",
+    hi: "मैंने FAQ और ज्ञानकोष में कई प्रासंगिक विषय पाए। कौन सा सबसे मेल खाता है? नीचे विकल्प चुनें — मैं केंद्रित उत्तर दूँगा।",
+    zh: "我在常见问题和知识库中找到多个相关主题。哪个最符合？请在下方选择，我会给出更针对性的回答。",
+    ja: "FAQ とナレッジベースに複数の関連トピックがあります。どれが近いですか？下から選ぶと、より的確にお答えします。",
+  });
 }
 
 function relatedIntro(locale: string) {
-  return isNl(locale) ? "\n\nGerelateerd:" : "\n\nRelated:";
+  return pickCopy(locale, {
+    en: "\n\nRelated:",
+    nl: "\n\nGerelateerd:",
+    de: "\n\nVerwandt:",
+    fr: "\n\nLiés :",
+    es: "\n\nRelacionado:",
+    pt: "\n\nRelacionado:",
+    it: "\n\nCorrelati:",
+    pl: "\n\nPowiązane:",
+    tr: "\n\nİlgili:",
+    ar: "\n\nذات صلة:",
+    hi: "\n\nसंबंधित:",
+    bn: "\n\nসম্পর্কিত:",
+    ur: "\n\nمتعلقہ:",
+    zh: "\n\n相关：",
+    ja: "\n\n関連:",
+  });
 }
 
 function faqDeepHref(locale: string, faqId: string) {
@@ -112,10 +176,31 @@ function formatLinksInAnswer(locale: string, links: AgentLink[]): string {
   const lines = links.map((link, i) => {
     const label =
       link.kind === "faq"
-        ? "FAQ"
-        : isNl(locale)
-          ? "Kennisbank"
-          : "Knowledge base";
+        ? pickCopy(locale, {
+            en: "FAQ",
+            nl: "FAQ",
+            de: "FAQ",
+            fr: "FAQ",
+            es: "FAQ",
+            ar: "الأسئلة الشائعة",
+            hi: "FAQ",
+            zh: "常见问题",
+            ja: "FAQ",
+          })
+        : pickCopy(locale, {
+            en: "Knowledge base",
+            nl: "Kennisbank",
+            de: "Wissensdatenbank",
+            fr: "Base de connaissances",
+            es: "Base de conocimiento",
+            pt: "Base de conhecimento",
+            ar: "قاعدة المعرفة",
+            hi: "ज्ञानकोष",
+            bn: "জ্ঞানভাণ্ডার",
+            ur: "علمی ذخیرہ",
+            zh: "知识库",
+            ja: "ナレッジベース",
+          });
     return `${i + 1}. [${label}] ${link.title}\n   ${link.href}`;
   });
   return `${relatedIntro(locale)}\n${lines.join("\n")}`;
@@ -124,13 +209,31 @@ function formatLinksInAnswer(locale: string, links: AgentLink[]): string {
 function kbAnswerLead(locale: string, match: KennisbankMatch): string {
   const body = match.excerpt?.trim();
   if (body) {
-    return isNl(locale)
-      ? `Volgens onze kennisbank (“${match.title}”): ${body}`
-      : `From our knowledge base (“${match.title}”): ${body}`;
+    return pickCopy(locale, {
+      en: `From our knowledge base (“${match.title}”): ${body}`,
+      nl: `Volgens onze kennisbank (“${match.title}”): ${body}`,
+      de: `Aus unserer Wissensdatenbank („${match.title}“): ${body}`,
+      fr: `D’après notre base de connaissances (« ${match.title} ») : ${body}`,
+      es: `Según nuestra base de conocimiento (“${match.title}”): ${body}`,
+      pt: `Segundo a nossa base de conhecimento (“${match.title}”): ${body}`,
+      ar: `من قاعدة المعرفة («${match.title}»): ${body}`,
+      hi: `हमारे ज्ञानकोष (“${match.title}”) से: ${body}`,
+      zh: `来自知识库（“${match.title}”）：${body}`,
+      ja: `ナレッジベース（「${match.title}」）より：${body}`,
+    });
   }
-  return isNl(locale)
-    ? `Ik vond dit in onze kennisbank: “${match.title}”. Open het artikel voor de volledige uitleg.`
-    : `I found this in our knowledge base: “${match.title}”. Open the article for the full guide.`;
+  return pickCopy(locale, {
+    en: `I found this in our knowledge base: “${match.title}”. Open the article for the full guide.`,
+    nl: `Ik vond dit in onze kennisbank: “${match.title}”. Open het artikel voor de volledige uitleg.`,
+    de: `Ich habe dies in unserer Wissensdatenbank gefunden: „${match.title}“. Öffne den Artikel für die volle Anleitung.`,
+    fr: `J’ai trouvé ceci dans notre base de connaissances : « ${match.title} ». Ouvre l’article pour le guide complet.`,
+    es: `Encontré esto en nuestra base de conocimiento: “${match.title}”. Abre el artículo para la guía completa.`,
+    pt: `Encontrei isto na nossa base de conhecimento: “${match.title}”. Abre o artigo para o guia completo.`,
+    ar: `وجدت هذا في قاعدة المعرفة: «${match.title}». افتح المقال للدليل الكامل.`,
+    hi: `मैंने ज्ञानकोष में यह पाया: “${match.title}”. पूरी गाइड के लिए लेख खोलें।`,
+    zh: `我在知识库中找到了：“${match.title}”。打开文章查看完整说明。`,
+    ja: `ナレッジベースで見つかりました：「${match.title}」。記事を開くと詳しい手順があります。`,
+  });
 }
 
 function collectIntents(question: string) {

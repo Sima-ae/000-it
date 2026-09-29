@@ -20,8 +20,11 @@ import { SoftLink } from "@/components/shared/SoftLink";
 import { isStaffRole } from "@/lib/roles";
 import { prioritySelectClass, TICKET_PRIORITIES } from "@/lib/crm/tickets";
 import { Agent000Avatar } from "@/components/agent-000/Agent000Avatar";
+import { AgentChatLinks } from "@/components/agent-000/AgentChatLinks";
 import { OPEN_CHAT_EVENT } from "@/components/chat/open-live-chat";
 import { useAgentSpeech } from "@/components/agent-000/useAgentSpeech";
+import type { AgentAction, AgentLink } from "@/lib/agent-000/ask";
+import { splitAgentAnswer } from "@/lib/agent-000/message-links";
 
 type ChatMessage = {
   id: string;
@@ -29,6 +32,20 @@ type ChatMessage = {
   senderKind: string;
   createdAt: string;
   sender?: { name: string | null } | null;
+};
+
+type AgentMeta = {
+  links: AgentLink[];
+  mode: "answer" | "clarify";
+  actions: AgentAction[];
+};
+
+type AgentAskPayload = {
+  answer: string;
+  links?: AgentLink[];
+  mode?: "answer" | "clarify";
+  actions?: AgentAction[];
+  faqId?: string | null;
 };
 
 type TicketDetail = {
@@ -109,8 +126,13 @@ export function LiveChatWidget() {
   const [guestToken, setGuestToken] = useState<string | undefined>();
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [agentMetaById, setAgentMetaById] = useState<Record<string, AgentMeta>>({});
   const bottomRef = useRef<HTMLDivElement>(null);
+  const listRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const stickToBottomRef = useRef(true);
+  const lastClarifyLinks = useRef<AgentLink[]>([]);
+  const forceScrollRef = useRef(false);
 
   const loggedIn = status === "authenticated" && !!session?.user;
   const accountName = session?.user?.name?.trim() || "";
@@ -156,25 +178,77 @@ export function LiveChatWidget() {
 
   useEffect(() => {
     if (!open) return;
-    const list = bottomRef.current?.parentElement;
-    if (list) {
+    const list = listRef.current;
+    if (list && (stickToBottomRef.current || forceScrollRef.current)) {
       list.scrollTop = list.scrollHeight;
+      forceScrollRef.current = false;
     }
     const focusTimer = window.setTimeout(() => inputRef.current?.focus(), 120);
     return () => window.clearTimeout(focusTimer);
-  }, [ticket?.messages, open]);
+  }, [ticket?.messages, open, busy]);
+
+  function onChatScroll() {
+    const list = listRef.current;
+    if (!list) return;
+    const distance = list.scrollHeight - list.scrollTop - list.clientHeight;
+    stickToBottomRef.current = distance < 72;
+  }
+
+  function rememberAgentMeta(messageId: string, payload: AgentAskPayload) {
+    const links = payload.links || [];
+    const mode = payload.mode || "answer";
+    const actions = payload.actions || [];
+    if (mode === "clarify") lastClarifyLinks.current = links;
+    else lastClarifyLinks.current = [];
+    setAgentMetaById((prev) => ({
+      ...prev,
+      [messageId]: { links, mode, actions },
+    }));
+  }
+
+  // Hydrate clickable links from persisted SYSTEM bodies (no API metadata on restore).
+  useEffect(() => {
+    if (!ticket?.messages?.length) return;
+    const systemMsgs = ticket.messages.filter((m) => m.senderKind === "SYSTEM");
+    if (!systemMsgs.length) return;
+    setAgentMetaById((prev) => {
+      let changed = false;
+      const next = { ...prev };
+      for (const msg of systemMsgs) {
+        if (next[msg.id]?.links?.length) continue;
+        const split = splitAgentAnswer(msg.body);
+        if (!split.links.length) continue;
+        next[msg.id] = {
+          links: split.links,
+          mode: "answer",
+          actions: prev[msg.id]?.actions || [],
+        };
+        changed = true;
+      }
+      return changed ? next : prev;
+    });
+    const last = systemMsgs[systemMsgs.length - 1];
+    if (last) {
+      const split = splitAgentAnswer(last.body);
+      if (split.links.length >= 2) {
+        lastClarifyLinks.current = split.links;
+      }
+    }
+  }, [ticket?.id, ticket?.messages]);
 
   useEffect(() => {
     if (!ticket?.id || isLocalTicketId(ticket.id)) return;
     // Keep polling so staff live-chat replies appear for this browser session.
     const intervalMs = open ? 2000 : 8000;
     let lastCount = ticket.messages?.length || 0;
+    let lastFingerprint = ticket.messages?.map((m) => m.id).join(",") || "";
     const timer = setInterval(async () => {
       const qs = guestToken ? `?token=${encodeURIComponent(guestToken)}` : "";
       const res = await fetch(`/api/tickets/${ticket.id}${qs}`);
       if (!res.ok) return;
       const data = (await res.json()) as TicketDetail;
       const nextCount = data.messages?.length || 0;
+      const nextFingerprint = data.messages?.map((m) => m.id).join(",") || "";
       if (nextCount > lastCount && open) {
         const newest = data.messages[nextCount - 1];
         if (newest?.senderKind === "STAFF" && newest.body) {
@@ -182,6 +256,9 @@ export function LiveChatWidget() {
         }
       }
       lastCount = nextCount;
+      // Avoid re-render/scroll thrash when nothing changed.
+      if (nextFingerprint === lastFingerprint) return;
+      lastFingerprint = nextFingerprint;
       setTicket(data);
     }, intervalMs);
     return () => clearInterval(timer);
@@ -242,20 +319,36 @@ export function LiveChatWidget() {
     return () => window.removeEventListener(OPEN_CHAT_EVENT, onOpen);
   }, []);
 
-  async function askAgentOffline(question: string) {
+  async function askAgentOffline(
+    question: string,
+    opts?: { faqId?: string },
+  ): Promise<AgentAskPayload> {
     const res = await fetch("/api/agent-000/ask", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ locale, question, persist: false }),
+      body: JSON.stringify({
+        locale,
+        question,
+        persist: false,
+        faqId: opts?.faqId,
+      }),
     });
     if (!res.ok) throw new Error("ask failed");
-    const data = (await res.json()) as { answer?: string };
+    const data = (await res.json()) as AgentAskPayload;
     if (!data.answer) throw new Error("ask failed");
-    return data.answer;
+    return data;
   }
 
-  function applyLocalAgentTurn(question: string, answer: string, subjectLine: string) {
+  function applyLocalAgentTurn(
+    question: string,
+    payload: AgentAskPayload,
+    subjectLine: string,
+  ) {
     const visitorKind = loggedIn && !isStaff ? "CLIENT" : isStaff ? "STAFF" : "GUEST";
+    const agentMsg = localChatMessage(payload.answer, "SYSTEM");
+    rememberAgentMeta(agentMsg.id, payload);
+    forceScrollRef.current = true;
+    stickToBottomRef.current = true;
     setTicket((prev) => {
       if (prev) {
         return {
@@ -263,7 +356,7 @@ export function LiveChatWidget() {
           messages: [
             ...prev.messages,
             localChatMessage(question, visitorKind),
-            localChatMessage(answer, "SYSTEM"),
+            agentMsg,
           ],
         };
       }
@@ -271,17 +364,14 @@ export function LiveChatWidget() {
         id: `local-${Date.now()}`,
         subject: subjectLine,
         status: "OPEN",
-        messages: [
-          localChatMessage(question, visitorKind),
-          localChatMessage(answer, "SYSTEM"),
-        ],
+        messages: [localChatMessage(question, visitorKind), agentMsg],
       };
     });
     setDraft("");
     setSubject("");
     setPriority("LOW");
     setMode("chat");
-    speak(answer);
+    speak(splitAgentAnswer(payload.answer).text || payload.answer);
   }
 
   async function startConversation(opts: {
@@ -289,9 +379,12 @@ export function LiveChatWidget() {
     message: string;
     source: "CHAT" | "DASHBOARD";
     priority?: (typeof TICKET_PRIORITIES)[number];
+    faqId?: string;
   }) {
     setBusy(true);
     setError(null);
+    forceScrollRef.current = true;
+    stickToBottomRef.current = true;
     try {
       const res = await fetch("/api/tickets", {
         method: "POST",
@@ -304,6 +397,7 @@ export function LiveChatWidget() {
           guestName: loggedIn ? undefined : guestName,
           guestEmail: loggedIn ? undefined : guestEmail,
           locale,
+          faqId: opts.faqId,
         }),
       });
       if (!res.ok) {
@@ -330,11 +424,24 @@ export function LiveChatWidget() {
       const lastSystem = [...(data.messages || [])]
         .reverse()
         .find((m: ChatMessage) => m.senderKind === "SYSTEM");
-      if (lastSystem?.body) speak(lastSystem.body);
+      if (lastSystem && data.agent) {
+        rememberAgentMeta(lastSystem.id, {
+          answer: lastSystem.body,
+          links: data.agent.links,
+          mode: data.agent.mode,
+          actions: data.agent.actions,
+          faqId: data.agent.faqId,
+        });
+      }
+      if (lastSystem?.body) {
+        speak(splitAgentAnswer(lastSystem.body).text || lastSystem.body);
+      }
     } catch {
       try {
-        const answer = await askAgentOffline(opts.message);
-        applyLocalAgentTurn(opts.message, answer, opts.subject);
+        const payload = await askAgentOffline(opts.message, {
+          faqId: opts.faqId,
+        });
+        applyLocalAgentTurn(opts.message, payload, opts.subject);
       } catch {
         setError(copy.sendFailed);
       }
@@ -343,18 +450,29 @@ export function LiveChatWidget() {
     }
   }
 
-  async function sendMessage() {
-    const body = draft.trim();
+  async function sendMessage(opts?: {
+    body?: string;
+    faqId?: string;
+  }) {
+    const body = (opts?.body ?? draft).trim();
     if (!body || !ticket) return;
     setBusy(true);
     setError(null);
+    forceScrollRef.current = true;
+    stickToBottomRef.current = true;
     try {
       if (!isLocalTicketId(ticket.id)) {
-        const payload: { body: string; locale: string; guestToken?: string } = {
+        const payload: {
+          body: string;
+          locale: string;
+          guestToken?: string;
+          faqId?: string;
+        } = {
           body,
           locale,
         };
         if (guestToken) payload.guestToken = guestToken;
+        if (opts?.faqId) payload.faqId = opts.faqId;
         const res = await fetch(`/api/tickets/${ticket.id}/messages`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -364,6 +482,15 @@ export function LiveChatWidget() {
           const data = await res.json();
           const visitorMsg = data.message || data;
           const agentMsg = data.agentMessage as ChatMessage | undefined;
+          if (agentMsg && data.agent) {
+            rememberAgentMeta(agentMsg.id, {
+              answer: agentMsg.body,
+              links: data.agent.links,
+              mode: data.agent.mode,
+              actions: data.agent.actions,
+              faqId: data.agent.faqId,
+            });
+          }
           setTicket((prev) => {
             if (!prev) return prev;
             const next = [...prev.messages, visitorMsg];
@@ -371,18 +498,60 @@ export function LiveChatWidget() {
             return { ...prev, messages: next };
           });
           setDraft("");
-          if (agentMsg?.body) speak(agentMsg.body);
+          if (agentMsg?.body) {
+            speak(splitAgentAnswer(agentMsg.body).text || agentMsg.body);
+          }
           return;
         }
       }
 
-      const answer = await askAgentOffline(body);
-      applyLocalAgentTurn(body, answer, ticket.subject);
+      const payload = await askAgentOffline(body, { faqId: opts?.faqId });
+      applyLocalAgentTurn(body, payload, ticket.subject);
     } catch {
       setError(copy.sendFailed);
     } finally {
       setBusy(false);
     }
+  }
+
+  function resolveClarifyPick(raw: string): AgentLink | null {
+    const links = lastClarifyLinks.current;
+    if (!links.length) return null;
+    const trimmed = raw.trim();
+    const asNum = Number.parseInt(trimmed, 10);
+    if (Number.isFinite(asNum) && asNum >= 1 && asNum <= links.length) {
+      return links[asNum - 1] ?? null;
+    }
+    const lower = trimmed.toLowerCase();
+    return (
+      links.find(
+        (l) =>
+          l.title.toLowerCase() === lower ||
+          l.askQuestion?.toLowerCase() === lower,
+      ) ?? null
+    );
+  }
+
+  function pickAgentLink(link: AgentLink) {
+    if (busy) return;
+    const question = link.askQuestion || link.title;
+    if (ticket) {
+      void sendMessage({
+        body: question,
+        faqId: link.kind === "faq" ? link.faqId : undefined,
+      });
+      return;
+    }
+    const who =
+      (loggedIn ? accountName : guestName.trim()) ||
+      accountName ||
+      copy.visitor;
+    void startConversation({
+      subject: `${copy.subjectPrefix} — ${who}`,
+      message: question,
+      source: "CHAT",
+      faqId: link.kind === "faq" ? link.faqId : undefined,
+    });
   }
 
   async function handlePrimarySubmit(e?: React.FormEvent) {
@@ -415,6 +584,11 @@ export function LiveChatWidget() {
       return;
     }
 
+    const pick = resolveClarifyPick(draft);
+    if (pick) {
+      pickAgentLink(pick);
+      return;
+    }
     await sendMessage();
   }
 
@@ -517,11 +691,23 @@ export function LiveChatWidget() {
             </button>
           </div>
 
-          <div className="min-h-0 flex-1 space-y-2 overflow-y-auto overscroll-contain px-3 py-3">
+          <div
+            ref={listRef}
+            onScroll={onChatScroll}
+            className="min-h-0 flex-1 space-y-2 overflow-y-auto overscroll-contain px-3 py-3"
+          >
             {mode === "chat" && ticket?.messages?.length ? (
               ticket.messages.map((msg) => {
                 const mine = msg.senderKind === "GUEST" || msg.senderKind === "CLIENT";
                 const system = msg.senderKind === "SYSTEM";
+                const meta = agentMetaById[msg.id];
+                const split = system ? splitAgentAnswer(msg.body) : null;
+                const links = meta?.links?.length ? meta.links : split?.links || [];
+                const modeHint = meta?.mode || "answer";
+                const actions = meta?.actions || [];
+                const displayBody = system
+                  ? (split?.text || msg.body).trim()
+                  : msg.body;
                 return (
                   <div
                     key={msg.id}
@@ -547,7 +733,20 @@ export function LiveChatWidget() {
                           </p>
                         </div>
                       ) : null}
-                      <p className="whitespace-pre-wrap">{msg.body}</p>
+                      {displayBody ? (
+                        <p className="whitespace-pre-wrap">{displayBody}</p>
+                      ) : null}
+                      {system ? (
+                        <AgentChatLinks
+                          locale={locale}
+                          links={links}
+                          mode={modeHint}
+                          actions={actions}
+                          onPickLink={pickAgentLink}
+                          onOpenTicket={() => setMode("ticket")}
+                          tone="light"
+                        />
+                      ) : null}
                       <p className="mt-1 text-[10px] opacity-60">
                         {new Date(msg.createdAt).toLocaleTimeString([], {
                           hour: "2-digit",

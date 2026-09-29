@@ -20,6 +20,7 @@ import { SoftLink } from "@/components/shared/SoftLink";
 import { localizedHref } from "@/i18n/pathnames";
 import { cn } from "@/lib/utils";
 import type { AgentAction, AgentLink } from "@/lib/agent-000/ask";
+import { splitAgentAnswer } from "@/lib/agent-000/message-links";
 
 export type AgentAskResponse = {
   answer: string;
@@ -67,18 +68,30 @@ export function Agent000ChatPane({
   const bottomRef = useRef<HTMLDivElement>(null);
   const booted = useRef(false);
   const lastClarifyLinks = useRef<AgentLink[]>([]);
+  const stickToBottomRef = useRef(true);
+  const forceScrollRef = useRef(false);
 
   const state: Agent000State = busy ? "thinking" : speaking ? "speaking" : "idle";
 
-  // Keep new replies visible inside the chat list only — never scroll the page.
+  function onListScroll() {
+    const list = listRef.current;
+    if (!list) return;
+    const distance = list.scrollHeight - list.scrollTop - list.clientHeight;
+    stickToBottomRef.current = distance < 72;
+  }
+
+  // Keep new replies visible only when the user is already near the bottom (or just sent).
   useEffect(() => {
     if (!turns.length && !busy) return;
+    if (!stickToBottomRef.current && !forceScrollRef.current) return;
     const list = listRef.current;
     if (list) {
       list.scrollTop = list.scrollHeight;
+      forceScrollRef.current = false;
       return;
     }
     bottomRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    forceScrollRef.current = false;
   }, [turns, busy]);
 
   const ask = useCallback(
@@ -87,6 +100,8 @@ export function Agent000ChatPane({
       if (!q || busy) return;
       setBusy(true);
       cancel();
+      forceScrollRef.current = true;
+      stickToBottomRef.current = true;
       const userTurn: ChatTurn = {
         id: `u-${Date.now()}`,
         role: "user",
@@ -111,10 +126,11 @@ export function Agent000ChatPane({
         if (data.mode === "clarify") lastClarifyLinks.current = links;
         else lastClarifyLinks.current = [];
 
+        const { text: displayText } = splitAgentAnswer(data.answer);
         const agentTurn: ChatTurn = {
           id: `a-${Date.now()}`,
           role: "agent",
-          text: data.answer,
+          text: displayText || data.answer,
           faqId: data.faqId,
           actions: data.actions,
           mode: data.mode || "answer",
@@ -122,7 +138,7 @@ export function Agent000ChatPane({
         };
         setTurns((prev) => [...prev, agentTurn]);
         onMatchFaq?.(data.faqId, data.categoryId);
-        speak(data.answer);
+        speak(displayText || data.answer);
       } catch {
         const fail: ChatTurn = {
           id: `a-err-${Date.now()}`,
@@ -322,6 +338,7 @@ export function Agent000ChatPane({
         <div className="flex min-h-56 flex-1 flex-col rounded-xl border border-white/10 bg-black/25 backdrop-blur-sm">
           <div
             ref={listRef}
+            onScroll={onListScroll}
             className="min-h-40 flex-1 space-y-2.5 overflow-y-auto px-3 py-3"
           >
             {!turns.length && !busy ? (
