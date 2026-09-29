@@ -1333,7 +1333,9 @@
     "pickOption": "Válassza ki a legjobb egyezést",
     "relatedLinks": "Hasznos linkek",
     "linkFaq": "FAQ",
-    "linkKb": "Tudásbázis"
+    "linkKb": "Tudásbázis",
+    "relatedProducts": "Szolgáltatások és termékek",
+    "openProduct": "Megnyitás"
   },
   "wordpressSupport": {
     "saveYearlyHint": "Takarítson meg 10%-ot éves számlázással!",

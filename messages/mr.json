@@ -1195,7 +1195,9 @@
     "pickOption": "सर्वोत्तम सामना निवडा",
     "relatedLinks": "उपयुक्त दुवे",
     "linkFaq": "FAQ",
-    "linkKb": "ज्ञानाचा आधार"
+    "linkKb": "ज्ञानाचा आधार",
+    "relatedProducts": "सेवा आणि उत्पादने",
+    "openProduct": "उघडा"
   },
   "appointment": {
     "title": "भेटीची वेळ बुक करा",

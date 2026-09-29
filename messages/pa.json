@@ -1195,7 +1195,9 @@
     "pickOption": "ਸਭ ਤੋਂ ਵਧੀਆ ਮੈਚ ਚੁਣੋ",
     "relatedLinks": "ਮਦਦਗਾਰ ਲਿੰਕ",
     "linkFaq": "FAQ",
-    "linkKb": "ਗਿਆਨ ਅਧਾਰ"
+    "linkKb": "ਗਿਆਨ ਅਧਾਰ",
+    "relatedProducts": "ਸੇਵਾਵਾਂ ਅਤੇ ਉਤਪਾਦ",
+    "openProduct": "ਖੋਲ੍ਹੋ"
   },
   "appointment": {
     "title": "ਇੱਕ ਮੁਲਾਕਾਤ ਬੁੱਕ ਕਰੋ",

@@ -1333,7 +1333,9 @@
     "pickOption": "Velg den beste matchen",
     "relatedLinks": "Nyttige lenker",
     "linkFaq": "FAQ",
-    "linkKb": "Kunnskapsgrunnlag"
+    "linkKb": "Kunnskapsgrunnlag",
+    "relatedProducts": "Tjenester og produkter",
+    "openProduct": "Åpne"
   },
   "wordpressSupport": {
     "saveYearlyHint": "Spar 10 % med årlig fakturering!",

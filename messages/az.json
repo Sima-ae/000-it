@@ -1333,7 +1333,9 @@
     "pickOption": "Ən yaxşı uyğunluğu seçin",
     "relatedLinks": "Faydalı bağlantılar",
     "linkFaq": "FAQ",
-    "linkKb": "Bilik bazası"
+    "linkKb": "Bilik bazası",
+    "relatedProducts": "Xidmətlər və məhsullar",
+    "openProduct": "Aç"
   },
   "wordpressSupport": {
     "saveYearlyHint": "İllik ödənişlə 10% qənaət edin!",

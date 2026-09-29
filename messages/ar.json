@@ -1333,7 +1333,9 @@
     "pickOption": "اختر أفضل مباراة",
     "relatedLinks": "روابط مفيدة",
     "linkFaq": "FAQ",
-    "linkKb": "قاعدة المعرفة"
+    "linkKb": "قاعدة المعرفة",
+    "relatedProducts": "الخدمات والمنتجات",
+    "openProduct": "فتح"
   },
   "wordpressSupport": {
     "saveYearlyHint": "وفر 10% مع الفواتير السنوية!",

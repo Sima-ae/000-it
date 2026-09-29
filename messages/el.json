@@ -1333,7 +1333,9 @@
     "pickOption": "Επιλέξτε το καλύτερο ταίρι",
     "relatedLinks": "Χρήσιμοι σύνδεσμοι",
     "linkFaq": "FAQ",
-    "linkKb": "Βάση γνώσεων"
+    "linkKb": "Βάση γνώσεων",
+    "relatedProducts": "Υπηρεσίες και προϊόντα",
+    "openProduct": "Άνοιγμα"
   },
   "wordpressSupport": {
     "saveYearlyHint": "Εξοικονομήστε 10% με ετήσια χρέωση!",

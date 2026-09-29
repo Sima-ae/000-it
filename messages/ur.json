@@ -1195,7 +1195,9 @@
     "pickOption": "بہترین میچ چنیں۔",
     "relatedLinks": "مددگار لنکس",
     "linkFaq": "FAQ",
-    "linkKb": "علم کی بنیاد"
+    "linkKb": "علم کی بنیاد",
+    "relatedProducts": "خدمات اور مصنوعات",
+    "openProduct": "کھولیں"
   },
   "appointment": {
     "title": "ملاقات کا وقت بک کرو",

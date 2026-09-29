@@ -1195,7 +1195,9 @@
     "pickOption": "সেরা ম্যাচ বেছে নিন",
     "relatedLinks": "সহায়ক লিঙ্ক",
     "linkFaq": "FAQ",
-    "linkKb": "জ্ঞানের ভিত্তি"
+    "linkKb": "জ্ঞানের ভিত্তি",
+    "relatedProducts": "সেবা ও পণ্য",
+    "openProduct": "খুলুন"
   },
   "appointment": {
     "title": "একটি অ্যাপয়েন্টমেন্ট বুক করুন",

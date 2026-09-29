@@ -1333,7 +1333,9 @@
     "pickOption": "Alege cel mai bun meci",
     "relatedLinks": "Linkuri utile",
     "linkFaq": "FAQ",
-    "linkKb": "Baza de cunoștințe"
+    "linkKb": "Baza de cunoștințe",
+    "relatedProducts": "Servicii și produse",
+    "openProduct": "Deschide"
   },
   "wordpressSupport": {
     "saveYearlyHint": "Economisiți 10% cu facturarea anuală!",

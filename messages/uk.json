@@ -1333,7 +1333,9 @@
     "pickOption": "Виберіть найкращий збіг",
     "relatedLinks": "Корисні посилання",
     "linkFaq": "FAQ",
-    "linkKb": "База знань"
+    "linkKb": "База знань",
+    "relatedProducts": "Послуги та продукти",
+    "openProduct": "Відкрити"
   },
   "wordpressSupport": {
     "saveYearlyHint": "Заощаджуйте 10% із річною оплатою!",

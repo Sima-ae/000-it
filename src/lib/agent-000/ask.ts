@@ -13,13 +13,20 @@ import {
   rankKennisbank,
   type KennisbankMatch,
 } from "@/lib/agent-000/match-kennisbank";
+import {
+  isProductBrowseQuery,
+  PRODUCT_CONFIDENCE_HIT,
+  PRODUCT_CONFIDENCE_STRONG,
+  rankProducts,
+  type ProductMatch,
+} from "@/lib/agent-000/match-products";
 import { detectIntents, type AgentIntent } from "@/lib/agent-000/intents";
 import { normalizeAgentText, tokenizeAgentText } from "@/lib/agent-000/text";
 
 export type AgentAction = "open_ticket" | "book_appointment" | "contact";
 
 export type AgentLink = {
-  kind: "faq" | "kennisbank";
+  kind: "faq" | "kennisbank" | "product";
   title: string;
   href: string;
   faqId?: string;
@@ -27,6 +34,12 @@ export type AgentLink = {
   /** Re-ask this to lock in a single FAQ answer after clarify. */
   askQuestion?: string;
   confidence: number;
+  /** Compact product card fields */
+  subtitle?: string;
+  priceInclCents?: number | null;
+  image?: string | null;
+  badge?: string | null;
+  slug?: string;
 };
 
 export type AgentAskResult = {
@@ -142,6 +155,21 @@ function relatedIntro(locale: string) {
   });
 }
 
+function productIntro(locale: string) {
+  return pickCopy(locale, {
+    en: "I found matching services and products. Open a card below for details (opens in a new tab).",
+    nl: "Ik vond passende diensten en producten. Open een kaart hieronder voor details (opent in een nieuw tabblad).",
+    de: "Ich habe passende Dienste und Produkte gefunden. Öffne unten eine Karte für Details (neuer Tab).",
+    fr: "J’ai trouvé des services et produits correspondants. Ouvre une carte ci-dessous pour les détails (nouvel onglet).",
+    es: "Encontré servicios y productos que encajan. Abre una tarjeta abajo para ver detalles (nueva pestaña).",
+    pt: "Encontrei serviços e produtos correspondentes. Abre um cartão abaixo para detalhes (novo separador).",
+    ar: "وجدت خدمات ومنتجات مطابقة. افتح بطاقة أدناه للتفاصيل (تبويب جديد).",
+    hi: "मुझे मिलती-जुलती सेवाएँ और उत्पाद मिले। विवरण के लिए नीचे कार्ड खोलें (नया टैब)।",
+    zh: "我找到了相关服务和产品。点击下方卡片查看详情（新标签页打开）。",
+    ja: "関連するサービス・商品が見つかりました。下のカードから詳細を開けます（新しいタブ）。",
+  });
+}
+
 function faqDeepHref(locale: string, faqId: string) {
   return `${localizedHref(locale, "/faq")}#faq-item-${faqId}`;
 }
@@ -171,6 +199,20 @@ function kbLink(locale: string, match: KennisbankMatch): AgentLink {
   };
 }
 
+function productLink(match: ProductMatch): AgentLink {
+  return {
+    kind: "product",
+    title: match.title,
+    href: match.href,
+    confidence: match.confidence,
+    subtitle: match.subtitle,
+    priceInclCents: match.priceInclCents,
+    image: match.image,
+    badge: match.badge,
+    slug: match.slug,
+  };
+}
+
 function formatLinksInAnswer(locale: string, links: AgentLink[]): string {
   if (!links.length) return "";
   const lines = links.map((link, i) => {
@@ -187,20 +229,33 @@ function formatLinksInAnswer(locale: string, links: AgentLink[]): string {
             zh: "常见问题",
             ja: "FAQ",
           })
-        : pickCopy(locale, {
-            en: "Knowledge base",
-            nl: "Kennisbank",
-            de: "Wissensdatenbank",
-            fr: "Base de connaissances",
-            es: "Base de conocimiento",
-            pt: "Base de conhecimento",
-            ar: "قاعدة المعرفة",
-            hi: "ज्ञानकोष",
-            bn: "জ্ঞানভাণ্ডার",
-            ur: "علمی ذخیرہ",
-            zh: "知识库",
-            ja: "ナレッジベース",
-          });
+        : link.kind === "product"
+          ? pickCopy(locale, {
+              en: "Service",
+              nl: "Dienst",
+              de: "Dienst",
+              fr: "Service",
+              es: "Servicio",
+              pt: "Serviço",
+              ar: "خدمة",
+              hi: "सेवा",
+              zh: "服务",
+              ja: "サービス",
+            })
+          : pickCopy(locale, {
+              en: "Knowledge base",
+              nl: "Kennisbank",
+              de: "Wissensdatenbank",
+              fr: "Base de connaissances",
+              es: "Base de conocimiento",
+              pt: "Base de conhecimento",
+              ar: "قاعدة المعرفة",
+              hi: "ज्ञानकोष",
+              bn: "জ্ঞানভাণ্ডার",
+              ur: "علمی ذخیرہ",
+              zh: "知识库",
+              ja: "ナレッジベース",
+            });
     return `${i + 1}. [${label}] ${link.title}\n   ${link.href}`;
   });
   return `${relatedIntro(locale)}\n${lines.join("\n")}`;
@@ -297,6 +352,18 @@ function queryCoveredByQuestion(question: string, faqQuestion: string): number {
   return hits / qTok.length;
 }
 
+function queryCoveredByAnswer(question: string, faqAnswer: string): number {
+  const qTok = tokenizeAgentText(question);
+  if (!qTok.length) return 0;
+  const aNorm = normalizeAgentText(faqAnswer);
+  const aTok = new Set(tokenizeAgentText(faqAnswer));
+  let hits = 0;
+  for (const t of qTok) {
+    if (aTok.has(t) || aNorm.includes(t)) hits += 1;
+  }
+  return hits / qTok.length;
+}
+
 function relatedKbLinks(
   locale: string,
   seedText: string,
@@ -313,8 +380,15 @@ function relatedKbLinks(
     .map((m) => kbLink(locale, m));
 }
 
+function relatedProductLinks(productHits: ProductMatch[], limit = 4): AgentLink[] {
+  return productHits
+    .filter((m) => m.confidence >= PRODUCT_CONFIDENCE_HIT)
+    .slice(0, limit)
+    .map((m) => productLink(m));
+}
+
 /**
- * Build Agent 000 reply from the full FAQ pack + full kennisbank corpus.
+ * Build Agent 000 reply from FAQ + kennisbank + shop/services catalog.
  */
 export async function buildAgentReply(
   locale: string,
@@ -322,14 +396,19 @@ export async function buildAgentReply(
   opts?: BuildAgentReplyOptions,
 ): Promise<AgentAskResult> {
   const { intents, actions } = collectIntents(question);
+  const browseProducts = isProductBrowseQuery(question);
 
   if (opts?.faqId) {
     const forced = getFaqById(locale, opts.faqId);
     if (forced) {
-      const kb = await rankKennisbank(locale, `${forced.question} ${question}`, 8);
+      const [kb, products] = await Promise.all([
+        rankKennisbank(locale, `${forced.question} ${question}`, 8),
+        rankProducts(locale, `${forced.question} ${question}`, 4),
+      ]);
       const links = uniqueLinks([
+        ...relatedProductLinks(products, 3),
         faqLink(locale, forced),
-        ...relatedKbLinks(locale, forced.question, kb, 4),
+        ...relatedKbLinks(locale, forced.question, kb, 3),
       ]);
       const answer = `${greeting(locale)} ${forced.answer}${formatLinksInAnswer(locale, links)}`;
       return {
@@ -346,14 +425,46 @@ export async function buildAgentReply(
     }
   }
 
-  const [faqHits, kbHits] = await Promise.all([
+  const [faqHits, kbHits, productHits] = await Promise.all([
     Promise.resolve(rankFaq(locale, question, 8)),
     rankKennisbank(locale, question, 8),
+    rankProducts(locale, question, 6),
   ]);
-  const bestFaq = faqHits[0] ?? null;
-  const secondFaq = faqHits[1] ?? null;
+
+  // For commercial queries, prefer FAQ items whose answer covers the query
+  // (e.g. “wordpress beheer” → support FAQ), not a loosely related top hit.
+  const faqHitsOrdered = browseProducts
+    ? [...faqHits].sort((a, b) => {
+        const joined = tokenizeAgentText(question).join(" ");
+        const phraseA =
+          joined.length > 4 && normalizeAgentText(a.answer).includes(joined)
+            ? 0.15
+            : 0;
+        const phraseB =
+          joined.length > 4 && normalizeAgentText(b.answer).includes(joined)
+            ? 0.15
+            : 0;
+        const coverA = queryCoveredByAnswer(question, a.answer);
+        const coverB = queryCoveredByAnswer(question, b.answer);
+        const scoreA = a.confidence * (0.55 + coverA * 0.45) + phraseA;
+        const scoreB = b.confidence * (0.55 + coverB * 0.45) + phraseB;
+        return scoreB - scoreA;
+      })
+    : faqHits;
+
+  const bestFaq = faqHitsOrdered[0] ?? null;
+  const secondFaq = faqHitsOrdered[1] ?? null;
   const bestKb = kbHits[0] ?? null;
-  const topConfidence = Math.max(bestFaq?.confidence ?? 0, bestKb?.confidence ?? 0);
+  const bestProduct = productHits[0] ?? null;
+  const productStrong =
+    (bestProduct?.confidence ?? 0) >= PRODUCT_CONFIDENCE_STRONG;
+  const productHit =
+    (bestProduct?.confidence ?? 0) >= PRODUCT_CONFIDENCE_HIT;
+  const topConfidence = Math.max(
+    bestFaq?.confidence ?? 0,
+    bestKb?.confidence ?? 0,
+    bestProduct?.confidence ?? 0,
+  );
 
   const faqStrong = (bestFaq?.confidence ?? 0) >= FAQ_CONFIDENCE_STRONG;
   const faqHit = (bestFaq?.confidence ?? 0) >= FAQ_CONFIDENCE_HIT;
@@ -362,13 +473,58 @@ export async function buildAgentReply(
   const faqQuestionCover = bestFaq
     ? queryCoveredByQuestion(question, bestFaq.question)
     : 0;
+  const faqAnswerCover = bestFaq
+    ? queryCoveredByAnswer(question, bestFaq.answer)
+    : 0;
   const contentQueryTokens = tokenizeAgentText(question).filter(
     (t) => !TOPIC_NOISE.has(t),
   );
   const minCover =
     contentQueryTokens.length >= 2 ? 0.55 : faqStrong ? 0.25 : 0.4;
+  // Allow answer-side FAQ hits for browse/commercial queries (e.g. “wordpress beheer”).
   const faqReliable =
-    Boolean(bestFaq) && faqHit && faqQuestionCover >= minCover;
+    Boolean(bestFaq) &&
+    faqHit &&
+    (faqQuestionCover >= minCover ||
+      (browseProducts && faqAnswerCover >= 0.7 && (bestFaq?.confidence ?? 0) >= 0.45));
+
+  // Product-first: commercial service queries should show product cards, not panel KB.
+  if (browseProducts && productHit && (productStrong || !kbStrong || !faqReliable)) {
+    const productLinks = relatedProductLinks(productHits, 4);
+    const links = uniqueLinks([
+      ...productLinks,
+      ...(faqReliable && bestFaq ? [faqLink(locale, bestFaq)] : []),
+      ...relatedKbLinks(
+        locale,
+        question,
+        kbHits.filter((m) => m.categorySlug === "wordpress" || sharesTopic(question, m.title)),
+        2,
+      ),
+    ]);
+    const lead =
+      faqReliable && bestFaq
+        ? bestFaq.answer
+        : productIntro(locale);
+    actions.add("book_appointment");
+    actions.add("contact");
+    return {
+      answer: `${greeting(locale)} ${lead}${formatLinksInAnswer(locale, links)}`,
+      faqId: faqReliable && bestFaq ? bestFaq.faqId : null,
+      categoryId: faqReliable && bestFaq ? bestFaq.categoryId : null,
+      matchedQuestion:
+        faqReliable && bestFaq
+          ? bestFaq.question
+          : bestProduct?.title || null,
+      confidence: Math.max(
+        bestProduct?.confidence ?? 0,
+        faqReliable && bestFaq ? bestFaq.confidence : 0,
+      ),
+      actions: [...actions],
+      intents,
+      mode: "answer",
+      links,
+    };
+  }
 
   const faqNearTie =
     faqReliable &&
@@ -406,7 +562,8 @@ export async function buildAgentReply(
       .filter((m) => m.confidence >= KB_CONFIDENCE_HIT)
       .slice(0, 4)
       .map((m) => kbLink(locale, m));
-    const links = uniqueLinks([...clarifyFaq, ...clarifyKb], 8);
+    const clarifyProducts = relatedProductLinks(productHits, 3);
+    const links = uniqueLinks([...clarifyProducts, ...clarifyFaq, ...clarifyKb], 8);
     actions.add("open_ticket");
     actions.add("book_appointment");
     actions.add("contact");
@@ -428,8 +585,9 @@ export async function buildAgentReply(
   if (faqReliable && bestFaq) {
     const links = uniqueLinks(
       [
+        ...relatedProductLinks(productHits, 3),
         faqLink(locale, bestFaq),
-        ...relatedKbLinks(locale, `${bestFaq.question} ${question}`, kbHits, 4),
+        ...relatedKbLinks(locale, `${bestFaq.question} ${question}`, kbHits, 3),
       ],
       6,
     );
@@ -459,6 +617,7 @@ export async function buildAgentReply(
   if (kbHit && bestKb && (kbStrong || !faqReliable)) {
     const links = uniqueLinks(
       [
+        ...relatedProductLinks(productHits, 2),
         kbLink(locale, bestKb),
         ...kbHits
           .filter((m) => m.slug !== bestKb.slug && m.confidence >= KB_CONFIDENCE_HIT)
@@ -495,6 +654,7 @@ export async function buildAgentReply(
   // Soft suggestions + escalate
   const softLinks = uniqueLinks(
     [
+      ...relatedProductLinks(productHits, 4),
       ...faqHits.slice(0, 4).map((m) => faqLink(locale, m)),
       ...kbHits.slice(0, 4).map((m) => kbLink(locale, m)),
     ],

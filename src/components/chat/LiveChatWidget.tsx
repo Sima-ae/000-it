@@ -534,6 +534,10 @@ export function LiveChatWidget() {
 
   function pickAgentLink(link: AgentLink) {
     if (busy) return;
+    if (link.kind === "product") {
+      window.open(link.href, "_blank", "noopener,noreferrer");
+      return;
+    }
     const question = link.askQuestion || link.title;
     if (ticket) {
       void sendMessage({

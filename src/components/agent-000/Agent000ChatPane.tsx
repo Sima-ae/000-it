@@ -2,22 +2,12 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import {
-  BookOpen,
-  Calendar,
-  HelpCircle,
-  Mail,
-  Mic,
-  MicOff,
-  Send,
-  Ticket,
-} from "lucide-react";
+import { Mic, MicOff, Send } from "lucide-react";
 import { Agent000Avatar, type Agent000State } from "@/components/agent-000/Agent000Avatar";
+import { AgentChatLinks } from "@/components/agent-000/AgentChatLinks";
 import { useAgentSpeech } from "@/components/agent-000/useAgentSpeech";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { SoftLink } from "@/components/shared/SoftLink";
-import { localizedHref } from "@/i18n/pathnames";
 import { cn } from "@/lib/utils";
 import type { AgentAction, AgentLink } from "@/lib/agent-000/ask";
 import { splitAgentAnswer } from "@/lib/agent-000/message-links";
@@ -198,116 +188,16 @@ export function Agent000ChatPane({
 
   function pickLink(link: AgentLink) {
     if (busy) return;
+    if (link.kind === "product") {
+      window.open(link.href, "_blank", "noopener,noreferrer");
+      return;
+    }
     if (link.kind === "faq" && link.faqId) {
+      onMatchFaq?.(link.faqId, link.categoryId || null);
       void ask(link.askQuestion || link.title, { faqId: link.faqId });
       return;
     }
     void ask(link.title);
-  }
-
-  function renderLinks(links?: AgentLink[], mode?: "answer" | "clarify") {
-    if (!links?.length) return null;
-    return (
-      <div className="mt-2 space-y-1.5">
-        {mode === "clarify" ? (
-          <p className="text-[10px] font-medium uppercase tracking-wide text-cyan-300/80">
-            {t("pickOption")}
-          </p>
-        ) : (
-          <p className="text-[10px] font-medium uppercase tracking-wide text-cyan-300/80">
-            {t("relatedLinks")}
-          </p>
-        )}
-        <div className="flex flex-col gap-1.5">
-          {links.map((link, index) => (
-            <div
-              key={`${link.kind}-${link.href}-${index}`}
-              className="flex flex-wrap items-center gap-1.5"
-            >
-              {mode === "clarify" ? (
-                <Button
-                  type="button"
-                  size="sm"
-                  variant="secondary"
-                  className="h-8 max-w-full rounded-lg text-start text-xs"
-                  onClick={() => pickLink(link)}
-                >
-                  {link.kind === "kennisbank" ? (
-                    <BookOpen className="me-1 h-3.5 w-3.5 shrink-0" />
-                  ) : (
-                    <HelpCircle className="me-1 h-3.5 w-3.5 shrink-0" />
-                  )}
-                  <span className="truncate">
-                    {index + 1}. {link.title}
-                  </span>
-                </Button>
-              ) : null}
-              <Button
-                asChild
-                size="sm"
-                variant="outline"
-                className="h-8 max-w-full rounded-lg border-white/20 bg-white/5 text-start text-xs text-slate-100 hover:bg-white/10"
-              >
-                <SoftLink
-                  href={link.href}
-                  onClick={() => {
-                    if (link.kind === "faq" && link.faqId) {
-                      onMatchFaq?.(link.faqId, link.categoryId || null);
-                    }
-                  }}
-                >
-                  {link.kind === "kennisbank" ? (
-                    <BookOpen className="me-1 h-3.5 w-3.5 shrink-0" />
-                  ) : (
-                    <HelpCircle className="me-1 h-3.5 w-3.5 shrink-0" />
-                  )}
-                  <span className="truncate">
-                    {link.kind === "kennisbank" ? t("linkKb") : t("linkFaq")}:{" "}
-                    {link.title}
-                  </span>
-                </SoftLink>
-              </Button>
-            </div>
-          ))}
-        </div>
-      </div>
-    );
-  }
-
-  function renderActions(actions?: AgentAction[]) {
-    if (!actions?.length) return null;
-    return (
-      <div className="mt-2 flex flex-wrap gap-1.5">
-        {actions.includes("book_appointment") ? (
-          <Button asChild size="sm" variant="secondary" className="h-8 rounded-lg text-xs">
-            <SoftLink href={localizedHref(locale, "/afspraak")}>
-              <Calendar className="me-1 h-3.5 w-3.5" />
-              {t("actionBook")}
-            </SoftLink>
-          </Button>
-        ) : null}
-        {actions.includes("open_ticket") ? (
-          <Button
-            type="button"
-            size="sm"
-            variant="secondary"
-            className="h-8 rounded-lg text-xs"
-            onClick={() => onOpenLiveChat?.(draft || undefined)}
-          >
-            <Ticket className="me-1 h-3.5 w-3.5" />
-            {t("actionTicket")}
-          </Button>
-        ) : null}
-        {actions.includes("contact") ? (
-          <Button asChild size="sm" variant="outline" className="h-8 rounded-lg text-xs">
-            <SoftLink href={localizedHref(locale, "/contact")}>
-              <Mail className="me-1 h-3.5 w-3.5" />
-              {t("actionContact")}
-            </SoftLink>
-          </Button>
-        ) : null}
-      </div>
-    );
   }
 
   return (
@@ -363,8 +253,17 @@ export function Agent000ChatPane({
                     </p>
                   ) : null}
                   <p className="whitespace-pre-wrap">{turn.text}</p>
-                  {turn.role === "agent" ? renderLinks(turn.links, turn.mode) : null}
-                  {turn.role === "agent" ? renderActions(turn.actions) : null}
+                  {turn.role === "agent" ? (
+                    <AgentChatLinks
+                      locale={locale}
+                      links={turn.links}
+                      mode={turn.mode}
+                      actions={turn.actions}
+                      onPickLink={pickLink}
+                      onOpenTicket={() => onOpenLiveChat?.(draft || undefined)}
+                      tone="dark"
+                    />
+                  ) : null}
                 </div>
               </div>
             ))}

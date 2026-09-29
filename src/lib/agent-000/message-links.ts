@@ -65,7 +65,15 @@ function parseNumberedLinkBlock(section: string): AgentLink[] {
     const hrefLine = (lines[i + 1] || "").trim();
     if (!hrefLine || !hrefLine.startsWith("/")) continue;
     const kind: AgentLink["kind"] =
-      label.includes("faq") || label.includes("veelgestelde") ? "faq" : "kennisbank";
+      label.includes("faq") || label.includes("veelgestelde")
+        ? "faq"
+        : label.includes("dienst") ||
+            label.includes("service") ||
+            label.includes("product") ||
+            label.includes("hosting") ||
+            label.includes("pakket")
+          ? "product"
+          : "kennisbank";
     const faqId = hrefLine.includes("#faq-item-")
       ? hrefLine.split("#faq-item-")[1]?.split(/[&#]/)[0]
       : undefined;

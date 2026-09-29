@@ -1333,7 +1333,9 @@
     "pickOption": "Choisissez la meilleure correspondance",
     "relatedLinks": "Liens utiles",
     "linkFaq": "FAQ",
-    "linkKb": "Base de connaissances"
+    "linkKb": "Base de connaissances",
+    "relatedProducts": "Services et produits",
+    "openProduct": "Ouvrir"
   },
   "wordpressSupport": {
     "saveYearlyHint": "Économisez 10 % avec la facturation annuelle !",

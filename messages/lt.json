@@ -1333,7 +1333,9 @@
     "pickOption": "Pasirinkite geriausią atitiktį",
     "relatedLinks": "Naudingos nuorodos",
     "linkFaq": "FAQ",
-    "linkKb": "Žinių bazė"
+    "linkKb": "Žinių bazė",
+    "relatedProducts": "Paslaugos ir produktai",
+    "openProduct": "Atidaryti"
   },
   "wordpressSupport": {
     "saveYearlyHint": "Sutaupykite 10% su metine sąskaita!",

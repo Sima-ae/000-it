@@ -1195,7 +1195,9 @@
     "pickOption": "ఉత్తమ సరిపోలికను ఎంచుకోండి",
     "relatedLinks": "సహాయకరమైన లింక్‌లు",
     "linkFaq": "FAQ",
-    "linkKb": "నాలెడ్జ్ బేస్"
+    "linkKb": "నాలెడ్జ్ బేస్",
+    "relatedProducts": "సేవలు & ఉత్పత్తులు",
+    "openProduct": "తెరవండి"
   },
   "appointment": {
     "title": "అపాయింట్‌మెంట్ బుక్ చేయండి",

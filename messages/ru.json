@@ -1333,7 +1333,9 @@
     "pickOption": "Выберите лучший матч",
     "relatedLinks": "Полезные ссылки",
     "linkFaq": "FAQ",
-    "linkKb": "База знаний"
+    "linkKb": "База знаний",
+    "relatedProducts": "Услуги и продукты",
+    "openProduct": "Открыть"
   },
   "wordpressSupport": {
     "saveYearlyHint": "Сэкономьте 10 % при ежегодной оплате!",

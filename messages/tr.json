@@ -1333,7 +1333,9 @@
     "pickOption": "En iyi eşleşmeyi seçin",
     "relatedLinks": "Yararlı bağlantılar",
     "linkFaq": "FAQ",
-    "linkKb": "Bilgi tabanı"
+    "linkKb": "Bilgi tabanı",
+    "relatedProducts": "Hizmetler ve ürünler",
+    "openProduct": "Aç"
   },
   "wordpressSupport": {
     "saveYearlyHint": "Yıllık faturalandırmayla %10 tasarruf edin!",

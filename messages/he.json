@@ -1333,7 +1333,9 @@
     "pickOption": "בחר את ההתאמה הטובה ביותר",
     "relatedLinks": "קישורים מועילים",
     "linkFaq": "FAQ",
-    "linkKb": "בסיס ידע"
+    "linkKb": "בסיס ידע",
+    "relatedProducts": "שירותים ומוצרים",
+    "openProduct": "פתח"
   },
   "wordpressSupport": {
     "saveYearlyHint": "חסוך 10% עם חיוב שנתי!",

@@ -1333,7 +1333,9 @@
     "pickOption": "Escolha a melhor combinação",
     "relatedLinks": "Links úteis",
     "linkFaq": "FAQ",
-    "linkKb": "Base de conhecimento"
+    "linkKb": "Base de conhecimento",
+    "relatedProducts": "Serviços e produtos",
+    "openProduct": "Abrir"
   },
   "wordpressSupport": {
     "saveYearlyHint": "Economize 10% com faturamento anual!",

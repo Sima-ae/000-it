@@ -1333,7 +1333,9 @@
     "pickOption": "选择最佳匹配",
     "relatedLinks": "有用的链接",
     "linkFaq": "FAQ",
-    "linkKb": "知识库"
+    "linkKb": "知识库",
+    "relatedProducts": "服务与产品",
+    "openProduct": "打开"
   },
   "wordpressSupport": {
     "saveYearlyHint": "按年计费可节省 10%！",

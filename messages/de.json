@@ -1333,7 +1333,9 @@
     "pickOption": "Wählen Sie die beste Übereinstimmung",
     "relatedLinks": "Hilfreiche Links",
     "linkFaq": "FAQ",
-    "linkKb": "Wissensdatenbank"
+    "linkKb": "Wissensdatenbank",
+    "relatedProducts": "Dienste & Produkte",
+    "openProduct": "Öffnen"
   },
   "wordpressSupport": {
     "saveYearlyHint": "Sparen Sie 10 % mit jährlicher Abrechnung!",

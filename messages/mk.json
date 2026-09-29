@@ -1333,7 +1333,9 @@
     "pickOption": "Изберете го најдобриот натпревар",
     "relatedLinks": "Корисни врски",
     "linkFaq": "FAQ",
-    "linkKb": "База на знаење"
+    "linkKb": "База на знаење",
+    "relatedProducts": "Услуги и производи",
+    "openProduct": "Отвори"
   },
   "wordpressSupport": {
     "saveYearlyHint": "Заштедете 10% со годишна наплата!",

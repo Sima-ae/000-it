@@ -1333,7 +1333,9 @@
     "pickOption": "Valitse paras ottelu",
     "relatedLinks": "Hyödyllisiä linkkejä",
     "linkFaq": "FAQ",
-    "linkKb": "Tietopohja"
+    "linkKb": "Tietopohja",
+    "relatedProducts": "Palvelut ja tuotteet",
+    "openProduct": "Avaa"
   },
   "wordpressSupport": {
     "saveYearlyHint": "Säästä 10% vuosittaisella laskutuksella!",

@@ -1333,7 +1333,9 @@
     "pickOption": "Elige la mejor combinación",
     "relatedLinks": "Enlaces útiles",
     "linkFaq": "FAQ",
-    "linkKb": "base de conocimientos"
+    "linkKb": "base de conocimientos",
+    "relatedProducts": "Servicios y productos",
+    "openProduct": "Abrir"
   },
   "wordpressSupport": {
     "saveYearlyHint": "¡Ahorra hasta un 20% con monitorización y soporte anual!",

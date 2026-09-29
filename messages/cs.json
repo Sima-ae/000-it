@@ -1333,7 +1333,9 @@
     "pickOption": "Vyberte nejlepší zápas",
     "relatedLinks": "Užitečné odkazy",
     "linkFaq": "FAQ",
-    "linkKb": "Znalostní základna"
+    "linkKb": "Znalostní základna",
+    "relatedProducts": "Služby a produkty",
+    "openProduct": "Otevřít"
   },
   "wordpressSupport": {
     "saveYearlyHint": "Ušetřete 10 % s ročním vyúčtováním!",

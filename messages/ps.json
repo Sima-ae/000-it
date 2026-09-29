@@ -1195,7 +1195,9 @@
     "pickOption": "غوره لوبه غوره کړئ",
     "relatedLinks": "ګټورې اړیکې",
     "linkFaq": "FAQ",
-    "linkKb": "د پوهې بنسټ"
+    "linkKb": "د پوهې بنسټ",
+    "relatedProducts": "خدمتونه او محصولات",
+    "openProduct": "پرانیستل"
   },
   "appointment": {
     "title": "د ملاقات وخت کتاب کړئ",

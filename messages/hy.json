@@ -1333,7 +1333,9 @@
     "pickOption": "Ընտրեք լավագույն խաղը",
     "relatedLinks": "Օգտակար հղումներ",
     "linkFaq": "FAQ",
-    "linkKb": "Գիտելիքների բազա"
+    "linkKb": "Գիտելիքների բազա",
+    "relatedProducts": "Ծառայություններ և ապրանքներ",
+    "openProduct": "Բացել"
   },
   "wordpressSupport": {
     "saveYearlyHint": "Խնայեք 10% տարեկան հաշվարկով:",

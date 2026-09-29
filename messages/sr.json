@@ -1333,7 +1333,9 @@
     "pickOption": "Изаберите најбољу утакмицу",
     "relatedLinks": "Корисне везе",
     "linkFaq": "FAQ",
-    "linkKb": "База знања"
+    "linkKb": "База знања",
+    "relatedProducts": "Usluge i proizvodi",
+    "openProduct": "Otvori"
   },
   "wordpressSupport": {
     "saveYearlyHint": "Уштедите 10% уз годишњи обрачун!",

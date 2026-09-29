@@ -1333,7 +1333,9 @@
     "pickOption": "Izaberite najbolju utakmicu",
     "relatedLinks": "Korisni linkovi",
     "linkFaq": "FAQ",
-    "linkKb": "Baza znanja"
+    "linkKb": "Baza znanja",
+    "relatedProducts": "Usluge i proizvodi",
+    "openProduct": "Otvori"
   },
   "wordpressSupport": {
     "saveYearlyHint": "Uštedite 10% uz godišnju naplatu!",

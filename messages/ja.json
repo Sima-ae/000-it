@@ -1333,7 +1333,9 @@
     "pickOption": "最適なものを選択してください",
     "relatedLinks": "役立つリンク",
     "linkFaq": "FAQ",
-    "linkKb": "知識ベース"
+    "linkKb": "知識ベース",
+    "relatedProducts": "サービスと商品",
+    "openProduct": "開く"
   },
   "wordpressSupport": {
     "saveYearlyHint": "年払いで 10% 割引!",

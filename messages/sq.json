@@ -1333,7 +1333,9 @@
     "pickOption": "Zgjidhni ndeshjen më të mirë",
     "relatedLinks": "Lidhje të dobishme",
     "linkFaq": "FAQ",
-    "linkKb": "Baza e njohurive"
+    "linkKb": "Baza e njohurive",
+    "relatedProducts": "Shërbime dhe produkte",
+    "openProduct": "Hap"
   },
   "wordpressSupport": {
     "saveYearlyHint": "Kurseni 10% me faturimin vjetor!",

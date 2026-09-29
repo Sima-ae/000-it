@@ -1195,7 +1195,9 @@
     "pickOption": "सबसे अच्छा मैच चुनें",
     "relatedLinks": "सहायक लिंक्स",
     "linkFaq": "FAQ",
-    "linkKb": "ज्ञानधार"
+    "linkKb": "ज्ञानधार",
+    "relatedProducts": "सेवाएँ और उत्पाद",
+    "openProduct": "खोलें"
   },
   "appointment": {
     "title": "अपॉइंटमेंट बुक करें",

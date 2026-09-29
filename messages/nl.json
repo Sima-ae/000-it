@@ -1195,7 +1195,9 @@
     "pickOption": "Kies de beste match",
     "relatedLinks": "Handige links",
     "linkFaq": "FAQ",
-    "linkKb": "Kennisbank"
+    "linkKb": "Kennisbank",
+    "relatedProducts": "Diensten & producten",
+    "openProduct": "Openen"
   },
   "appointment": {
     "title": "Maak een afspraak",

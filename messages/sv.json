@@ -1333,7 +1333,9 @@
     "pickOption": "Välj den bästa matchningen",
     "relatedLinks": "Användbara länkar",
     "linkFaq": "FAQ",
-    "linkKb": "Kunskapsbas"
+    "linkKb": "Kunskapsbas",
+    "relatedProducts": "Tjänster och produkter",
+    "openProduct": "Öppna"
   },
   "wordpressSupport": {
     "saveYearlyHint": "Spara 10 % med årlig fakturering!",

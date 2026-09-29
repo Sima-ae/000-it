@@ -1333,7 +1333,9 @@
     "pickOption": "Изберете най-доброто съвпадение",
     "relatedLinks": "Полезни връзки",
     "linkFaq": "FAQ",
-    "linkKb": "База знания"
+    "linkKb": "База знания",
+    "relatedProducts": "Услуги и продукти",
+    "openProduct": "Отвори"
   },
   "wordpressSupport": {
     "saveYearlyHint": "Спестете 10% с годишно таксуване!",

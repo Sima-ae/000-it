@@ -1333,7 +1333,9 @@
     "pickOption": "Vyberte najlepšiu zhodu",
     "relatedLinks": "Užitočné odkazy",
     "linkFaq": "FAQ",
-    "linkKb": "Znalostná báza"
+    "linkKb": "Znalostná báza",
+    "relatedProducts": "Služby a produkty",
+    "openProduct": "Otvoriť"
   },
   "wordpressSupport": {
     "saveYearlyHint": "Ušetrite 10 % s ročným vyúčtovaním!",

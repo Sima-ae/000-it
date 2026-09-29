@@ -219,7 +219,42 @@ function scoreIndexed(queryTokens: string[], article: IndexedArticle): number {
 
   // Normalize: keep headroom so perfect title+distinctive can beat “plesk-only”.
   const denom = queryTokens.length * 1.15 + distinctive.length * 0.35;
-  return Math.min(1, score / Math.max(denom, 1));
+  let confidence = Math.min(1, score / Math.max(denom, 1));
+
+  // Avoid panel/control-panel KB winning on commercial WordPress queries
+  // (e.g. “wordpress beheer” → DirectAdmin database article via “beheer” alone).
+  const qHasWordpress =
+    queryTokens.includes("wordpress") || queryTokens.includes("wp");
+  const panelCats = new Set(["plesk", "directadmin", "cyberpanel"]);
+  const articleIsPanel =
+    panelCats.has(article.categorySlug) ||
+    [...panelCats].some((p) => article.categorySlugs.includes(p)) ||
+    [...panelCats].some((p) => article.titleNorm.includes(p));
+  const articleIsWordpress =
+    article.categorySlug === "wordpress" ||
+    article.categorySlugs.includes("wordpress") ||
+    article.titleNorm.includes("wordpress");
+
+  if (qHasWordpress && articleIsPanel && !articleIsWordpress) {
+    confidence *= 0.18;
+  }
+
+  const qWantsCare = queryTokens.some((t) =>
+    ["beheer", "care", "onderhoud", "maintenance", "support", "pakket"].includes(
+      t,
+    ),
+  );
+  if (
+    qHasWordpress &&
+    qWantsCare &&
+    !articleIsWordpress &&
+    distinctiveHits <= 1 &&
+    !article.titleNorm.includes("wordpress")
+  ) {
+    confidence *= 0.35;
+  }
+
+  return confidence;
 }
 
 function indexArticle(input: {

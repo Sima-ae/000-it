@@ -1333,7 +1333,9 @@
     "pickOption": "აირჩიე საუკეთესო მატჩი",
     "relatedLinks": "სასარგებლო ბმულები",
     "linkFaq": "FAQ",
-    "linkKb": "ცოდნის ბაზა"
+    "linkKb": "ცოდნის ბაზა",
+    "relatedProducts": "სერვისები და პროდუქტები",
+    "openProduct": "გახსნა"
   },
   "wordpressSupport": {
     "saveYearlyHint": "დაზოგეთ 10% წლიური ბილინგით!",
