@@ -19,11 +19,10 @@ type FooterLink = {
   external?: boolean;
 };
 
-/** Informatie: about, pricing + legal / FAQ / status / kennisbank */
+/** Informatie: about + legal / FAQ / status / kennisbank */
 function buildInfoLinks(locale: string): FooterLink[] {
   return [
     { href: localizedHref(locale, "/over-ons"), key: "about" },
-    { href: localizedHref(locale, "/shop"), key: "pricing" },
     { href: localizedHref(locale, "/voorwaarden"), key: "terms", external: true },
     { href: localizedHref(locale, "/cookies"), key: "cookies", external: true },
     { href: localizedHref(locale, "/privacy"), key: "privacy", external: true },
@@ -49,7 +48,7 @@ function domainsFooterLink(locale: string): FooterLink {
   };
 }
 
-/** Handige links: booking, site sections, hosting, domains, webmail */
+/** Handige links: booking, site sections, hosting, domains, pricing, webmail */
 function buildHandyLinks(locale: string): FooterLink[] {
   return [
     { href: localizedHref(locale, "/afspraak"), key: "book" },
@@ -60,7 +59,9 @@ function buildHandyLinks(locale: string): FooterLink[] {
       label: catalogGroupTitle("hosting", locale, "Hosting"),
     },
     domainsFooterLink(locale),
-    { href: localizedHref(locale, "/portfolio"), key: "portfolio" },
+    // Portfolio hidden until the page is filled — restore by uncommenting:
+    // { href: localizedHref(locale, "/portfolio"), key: "portfolio" },
+    { href: localizedHref(locale, "/shop"), key: "pricing" },
     { href: localizedHref(locale, "/nieuws"), key: "blog" },
     { href: localizedHref(locale, "/contact"), key: "contact" },
     { href: WEBMAIL_URL, key: "webmail", external: true },
