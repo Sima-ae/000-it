@@ -343,9 +343,32 @@ export async function rankProducts(
   if (!queryTokens.length) return [];
   const expanded = expandTokens(queryTokens);
   const commercial = isCommercialQuery(queryTokens);
+  const hostingOnly =
+    (process.env.SITE_BRAND || "").toLowerCase().includes("extra") ||
+    (process.env.NEXT_PUBLIC_APP_URL || "").includes("extrahosting");
 
   const scored: ProductMatch[] = [];
   for (const item of buildCorpus(locale)) {
+    if (
+      hostingOnly &&
+      item.kind !== "hosting" &&
+      !item.slug.includes("hosting") &&
+      item.slug !== "group-hosting" &&
+      item.slug !== "domains" &&
+      !item.slug.includes("domein")
+    ) {
+      // Keep WordPress hosting + shared/vps; drop care/support/services.
+      if (
+        item.kind === "service" &&
+        item.slug !== "wordpress-beheer" &&
+        !item.slug.startsWith("group-")
+      ) {
+        continue;
+      }
+      if (item.kind === "product" || item.kind === "plan") continue;
+      if (item.slug.includes("wp-care") || item.slug.includes("support")) continue;
+    }
+
     let confidence = scoreIndexed(queryTokens, expanded, item);
     if (!commercial) confidence *= 0.85;
 

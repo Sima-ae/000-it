@@ -114,11 +114,11 @@ export const metadata: Metadata = {
 const IMPACT_VERIFICATION_CODE = "2231b5f9-68a2-4efc-bf05-7248ba199077";
 
 /**
- * Sync <html lang/dir> before paint from the URL locale prefix.
+ * Sync <html lang/dir/data-brand> before paint from URL + hostname.
  * Root layout cannot take [locale] params (shared across locales / SSG),
  * and headers() would force the whole tree dynamic — keep this tiny + LocaleHtmlLang.
  */
-const LOCALE_HTML_BOOTSTRAP = `(function(){try{var m=location.pathname.match(/^\\/([a-z]{2,3})(?=\\/|$)/i);var loc=m?m[1].toLowerCase():"nl";var rtl={${[...RTL_LOCALES].map((l) => `${l}:1`).join(",")}};document.documentElement.lang=loc;document.documentElement.dir=rtl[loc]?"rtl":"ltr";}catch(e){}})();`;
+const LOCALE_HTML_BOOTSTRAP = `(function(){try{var h=(location.hostname||"").toLowerCase();var brand=/extrahosting/.test(h)?"extrahosting":"triplezero";document.documentElement.dataset.brand=brand;var m=location.pathname.match(/^\\/([a-z]{2,3})(?=\\/|$)/i);var loc=m?m[1].toLowerCase():(h==="extrahosting.nl"||h==="www.extrahosting.nl"?"nl":brand==="extrahosting"?"en":"nl");var rtl={${[...RTL_LOCALES].map((l) => `${l}:1`).join(",")}};document.documentElement.lang=loc;document.documentElement.dir=rtl[loc]?"rtl":"ltr";}catch(e){}})();`;
 
 export default function RootLayout({
   children,
@@ -126,7 +126,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="nl" suppressHydrationWarning data-scroll-behavior="smooth">
+    <html
+      lang="nl"
+      suppressHydrationWarning
+      data-scroll-behavior="smooth"
+      data-brand="triplezero"
+    >
       <head>
         <script dangerouslySetInnerHTML={{ __html: LOCALE_HTML_BOOTSTRAP }} />
         {/* Impact.com — exact `value` attribute from their verification instructions */}

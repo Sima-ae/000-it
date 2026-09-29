@@ -43,17 +43,33 @@ export function getCompanyProfile(): CompanyProfile {
     ? smtpFrom.replace(/^.*<([^>]+)>.*$/, "$1").trim()
     : undefined;
 
+  const siteBrand = (env("SITE_BRAND") || "").toLowerCase();
+  const isExtra =
+    siteBrand === "extrahosting" ||
+    siteBrand === "extra-hosting" ||
+    (env("NEXT_PUBLIC_APP_URL") || "").includes("extrahosting");
+
+  const defaultName = isExtra ? "ExtraHosting" : "TripleZero iT";
+  const defaultWebsite = isExtra
+    ? "https://extrahosting.eu"
+    : "https://000-it.com";
+  const defaultEmail = isExtra ? "info@extrahosting.eu" : "info@000-it.com";
+  const defaultSupport = isExtra
+    ? "support@extrahosting.eu"
+    : "support@000-it.com";
+  const defaultTagline = isExtra
+    ? "Domains · Websites · Webhosting"
+    : "AI, AEO, GEO, SEO, domeinen, hosting en marketing";
+
   return {
-    legalName: env("COMPANY_LEGAL_NAME") || env("COMPANY_NAME") || "TripleZero iT",
-    tradeName: env("COMPANY_TRADE_NAME") || "TripleZero iT",
-    tagline:
-      env("COMPANY_TAGLINE") ||
-      "AI, AEO, GEO, SEO, domeinen, hosting en marketing",
+    legalName: env("COMPANY_LEGAL_NAME") || env("COMPANY_NAME") || defaultName,
+    tradeName: env("COMPANY_TRADE_NAME") || defaultName,
+    tagline: env("COMPANY_TAGLINE") || defaultTagline,
     addressLines,
-    email: env("COMPANY_EMAIL") || smtpEmail || "info@000-it.com",
-    supportEmail: env("COMPANY_SUPPORT_EMAIL") || "support@000-it.com",
+    email: env("COMPANY_EMAIL") || smtpEmail || defaultEmail,
+    supportEmail: env("COMPANY_SUPPORT_EMAIL") || defaultSupport,
     website:
-      env("COMPANY_WEBSITE") || env("NEXT_PUBLIC_APP_URL") || "https://000-it.com",
+      env("COMPANY_WEBSITE") || env("NEXT_PUBLIC_APP_URL") || defaultWebsite,
     vatNumber: env("COMPANY_VAT_NUMBER") || null,
     registrationNumber:
       env("COMPANY_REGISTRATION_NUMBER") || env("COMPANY_KVK_NUMBER") || null,

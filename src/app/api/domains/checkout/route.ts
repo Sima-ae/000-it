@@ -14,7 +14,11 @@ import { sellFromBuyUsd } from "@/lib/domains/premium-price";
 import { makeDomainOrderNumber } from "@/lib/shop/line-of-business";
 import { getStripe, isStripeConfigured } from "@/lib/shop/stripe";
 import { localizedHref } from "@/i18n/pathnames";
-import { siteOrigin } from "@/lib/seo";
+import {
+  publicOriginFromRequestHeaders,
+  sourceBrandFromRequest,
+  sourceHostFromRequest,
+} from "@/lib/brand/request-origin";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -254,6 +258,8 @@ export async function POST(request: Request) {
         isPremium: isPremiumOrder,
         email: (registrant?.email || session?.user?.email || "").toLowerCase(),
         locale,
+        sourceBrand: sourceBrandFromRequest(request),
+        sourceHost: sourceHostFromRequest(request) || null,
         registrantJson: JSON.stringify(registrant || {}),
         authCode: orderType === "TRANSFER" ? authCode : null,
         domainProductId: product.id,
@@ -261,7 +267,7 @@ export async function POST(request: Request) {
       },
     });
 
-    const origin = siteOrigin();
+    const origin = publicOriginFromRequestHeaders(request);
     const stripe = getStripe();
     const stripeLocale = locale === "nl" ? "nl" : "en";
     const labels = productLabel(locale, orderType, domain);
@@ -278,6 +284,8 @@ export async function POST(request: Request) {
         years: String(years),
         orderType,
         isPremium: isPremiumOrder ? "1" : "0",
+        sourceBrand: sourceBrandFromRequest(request),
+        sourceHost: sourceHostFromRequest(request),
       },
       payment_method_types: [
         "card",

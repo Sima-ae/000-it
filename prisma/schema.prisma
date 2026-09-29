@@ -315,6 +315,10 @@ model ShopOrder {
   status                ShopOrderStatus     @default(PENDING)
   /// SERVICE vs HOSTING — separate books for accounting
   lineOfBusiness        ShopLineOfBusiness  @default(SERVICE)
+  /// Storefront that created the order (triplezero | extrahosting)
+  sourceBrand           String?
+  /// Hostname at checkout (e.g. extrahosting.nl)
+  sourceHost            String?
   stripeSessionId       String?             @unique
   stripePaymentIntentId String?
   /// Set when the paid invoice PDF was emailed to the customer
@@ -801,6 +805,10 @@ model DomainOrder {
   isPremium         Boolean           @default(false)
   email             String
   locale            String            @default("nl")
+  /// Storefront that created the order (triplezero | extrahosting)
+  sourceBrand       String?
+  /// Hostname at checkout (e.g. extrahosting.nl)
+  sourceHost        String?
   registrantJson    String            @db.Text
   /// EPP / auth code for inbound transfers
   authCode          String?           @db.Text

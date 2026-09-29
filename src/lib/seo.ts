@@ -6,81 +6,75 @@ import { getCatalogItem } from "@/content/fixweb/catalog";
 import { enabledLanguages } from "@/i18n/languages";
 import { localizedHref } from "@/i18n/pathnames";
 import { hydrateLocalizedCopy } from "@/lib/localized-copy";
+import {
+  BRANDS,
+  brandIdForHost,
+  getBrandConfig,
+  type SiteBrandId,
+} from "@/lib/brand/config";
 
-export const SITE_SEO = {
-  name: "TripleZero iT",
-  legalName: "TripleZero iT",
-  url:
-    process.env.SITEMAP_BASE_URL ||
-    process.env.NEXT_PUBLIC_APP_URL ||
-    "https://000-it.com",
-  email: "info@000-it.com",
-  /** Prefer a real existing asset — used for OG/Twitter/geo when no page image is set. */
-  defaultOgImage: "/branding/LOGO-TripleZero-iT.jpg",
-  defaultOgImageWidth: 2000,
-  defaultOgImageHeight: 2000,
-  defaultDescription: {
-    nl: "Ontdek alle AI mogelijkheden voor ondernemers en zzp'ers: AI-integratie, AEO, GEO, SEO, marketing en maatwerk software.",
-    en: "Discover all AI possibilities for entrepreneurs and freelancers: AI integration, AEO, GEO, SEO, marketing and custom software.",
-  },
-  defaultKeywords: {
-    nl: [
-      "TripleZero iT",
-      "AI",
-      "AEO",
-      "GEO",
-      "SEO",
-      "AI-integratie",
-      "online marketing",
-      "Azië",
-      "Europa",
-      "VAE",
-      "USA",
-      "Nederland",
-      "België",
-      "webdesign",
-      "automatisering",
+function resolveSeoBrandId(): SiteBrandId {
+  try {
+    // Prefer runtime SITE_BRAND / AUTH_URL — NEXT_PUBLIC_* is inlined at build time
+    // and would pin ExtraHosting to TripleZero if the shared build used 000-it.com.
+    const raw = (process.env.SITE_BRAND || "").trim().toLowerCase();
+    if (raw === "extrahosting" || raw === "extra-hosting") return "extrahosting";
+    if (raw === "triplezero" || raw === "000-it" || raw === "000it") return "triplezero";
+    const fromAuth = process.env.AUTH_URL?.replace(/^https?:\/\//, "");
+    if (fromAuth) return brandIdForHost(fromAuth);
+    const fromUrl = process.env.NEXT_PUBLIC_APP_URL?.replace(/^https?:\/\//, "");
+    return brandIdForHost(fromUrl || "000-it.com");
+  } catch {
+    return "triplezero";
+  }
+}
+
+function buildSiteSeo(brandId: SiteBrandId = resolveSeoBrandId()) {
+  const brand = getBrandConfig(brandId);
+  return {
+    name: brand.displayName,
+    legalName: brand.displayName,
+    url:
+      // Per-process public origin (ExtraHosting vs TripleZero). Do not use
+      // SITEMAP_BASE_URL here — that is TripleZero-only and poisons EH hreflang.
+      process.env.AUTH_URL ||
+      `https://${brand.primaryHost}`,
+    email: brand.contactEmail,
+    defaultOgImage: brand.ogImage,
+    defaultOgImageWidth: brandId === "extrahosting" ? 600 : 2000,
+    defaultOgImageHeight: brandId === "extrahosting" ? 200 : 2000,
+    defaultDescription: brand.defaultDescription,
+    defaultKeywords: brand.defaultKeywords,
+    brandId,
+    /** HQ / primary geo meta (NL). Service coverage is Asia, Europe, UAE and USA. */
+    geo: {
+      region: "NL",
+      placename: "Nederland",
+      country: "Netherlands",
+      countryCode: "NL",
+      /** Approximate NL centroid / Randstad for geo meta (no public street address). */
+      latitude: 52.1326,
+      longitude: 5.2913,
+      icbm: "52.1326, 5.2913",
+      position: "52.1326;5.2913",
+    },
+    areaServed: [
+      { type: "Continent", name: "Asia" },
+      { type: "Continent", name: "Europe" },
+      { type: "Country", name: "United Arab Emirates", code: "AE" },
+      { type: "Country", name: "United States", code: "US" },
+      { type: "Country", name: "Netherlands", code: "NL" },
+      { type: "Country", name: "Belgium", code: "BE" },
     ],
-    en: [
-      "TripleZero iT",
-      "AI",
-      "AEO",
-      "GEO",
-      "SEO",
-      "AI integration",
-      "online marketing",
-      "Asia",
-      "Europe",
-      "UAE",
-      "USA",
-      "Netherlands",
-      "Belgium",
-      "web design",
-      "automation",
-    ],
-  },
-  /** HQ / primary geo meta (NL). Service coverage is Asia, Europe, UAE and USA. */
-  geo: {
-    region: "NL",
-    placename: "Nederland",
-    country: "Netherlands",
-    countryCode: "NL",
-    /** Approximate NL centroid / Randstad for geo meta (no public street address). */
-    latitude: 52.1326,
-    longitude: 5.2913,
-    icbm: "52.1326, 5.2913",
-    position: "52.1326;5.2913",
-  },
-  areaServed: [
-    { type: "Continent", name: "Asia" },
-    { type: "Continent", name: "Europe" },
-    { type: "Country", name: "United Arab Emirates", code: "AE" },
-    { type: "Country", name: "United States", code: "US" },
-    { type: "Country", name: "Netherlands", code: "NL" },
-    { type: "Country", name: "Belgium", code: "BE" },
-  ],
-  sameAs: [] as string[],
-} as const;
+    sameAs: [] as string[],
+  };
+}
+
+export const SITE_SEO = buildSiteSeo();
+
+export function siteSeoForBrand(brandId: SiteBrandId) {
+  return buildSiteSeo(brandId);
+}
 
 export function siteOrigin() {
   // Never leak the internal Next listen port (e.g. :3066) into canonical/OG URLs.
@@ -90,7 +84,8 @@ export function siteOrigin() {
     process.env.NODE_ENV === "production" &&
     /localhost|127\.0\.0\.1/i.test(url)
   ) {
-    url = "https://000-it.com";
+    const brand = resolveSeoBrandId();
+    url = `https://${BRANDS[brand].primaryHost}`;
   }
   return url;
 }
@@ -107,7 +102,8 @@ export function sitemapPublicOrigin() {
   }
   const fromSite = siteOrigin();
   if (/localhost|127\.0\.0\.1/i.test(fromSite)) {
-    return "https://000-it.com";
+    const brand = resolveSeoBrandId();
+    return `https://${BRANDS[brand].primaryHost}`;
   }
   return fromSite;
 }

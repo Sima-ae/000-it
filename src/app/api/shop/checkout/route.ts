@@ -7,8 +7,12 @@ import { resolveCartItems, cartTotalsInEuros } from "@/lib/shop/cart";
 import { loadShopCatalogFromDb } from "@/lib/shop/catalog";
 import { getStripe, isStripeConfigured } from "@/lib/shop/stripe";
 import { makeShopOrderNumber } from "@/lib/shop/line-of-business";
-import { siteOrigin } from "@/lib/seo";
 import { VAT_RATE } from "@/lib/shop/vat";
+import {
+  publicOriginFromRequestHeaders,
+  sourceBrandFromRequest,
+  sourceHostFromRequest,
+} from "@/lib/brand/request-origin";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -68,6 +72,24 @@ export async function POST(request: Request) {
     }
 
     const lineOfBusiness = totals.lineOfBusiness;
+
+    // ExtraHosting storefront only sells hosting.
+    if (
+      lineOfBusiness === "SERVICE" &&
+      sourceBrandFromRequest(request) === "extrahosting"
+    ) {
+      return NextResponse.json(
+        {
+          error:
+            locale === "nl"
+              ? "Deze webshop verkoopt alleen hosting. Diensten bestel je via 000-it.com."
+              : "This shop only sells hosting. Order services at 000-it.com.",
+          code: "BRAND_CATALOG_RESTRICTED",
+        },
+        { status: 400 },
+      );
+    }
+
     const euros = cartTotalsInEuros(totals);
     const session = await auth();
     const orderNumber = makeShopOrderNumber(lineOfBusiness);
@@ -86,6 +108,8 @@ export async function POST(request: Request) {
         vatRate: VAT_RATE,
         status: "PENDING",
         lineOfBusiness,
+        sourceBrand: sourceBrandFromRequest(request),
+        sourceHost: sourceHostFromRequest(request) || null,
         userId: session?.user?.id || null,
         items: {
           create: totals.lines.map((line) => ({
@@ -100,7 +124,7 @@ export async function POST(request: Request) {
       },
     });
 
-    const origin = siteOrigin();
+    const origin = publicOriginFromRequestHeaders(request);
     const stripe = getStripe();
     const stripeLocale = locale === "nl" ? "nl" : "en";
     const catalogLocale = locale === "nl" ? "nl" : "en";
@@ -114,6 +138,8 @@ export async function POST(request: Request) {
         orderId: order.id,
         orderNumber: order.orderNumber,
         lineOfBusiness,
+        sourceBrand: sourceBrandFromRequest(request),
+        sourceHost: sourceHostFromRequest(request),
       },
       payment_method_types: ["card", "ideal", "bancontact", "sepa_debit", "klarna", "paypal"],
       billing_address_collection: "auto",

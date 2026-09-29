@@ -12,15 +12,25 @@ import {
   lineOfBusinessFromProduct,
   parseLineOfBusinessParam,
 } from "@/lib/shop/line-of-business";
+import { brandIdForHost, isDomainsHostingCatalog } from "@/lib/brand/config";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const all = searchParams.get("all") === "1";
   const lobParam = searchParams.get("lineOfBusiness");
-  const lineFilter =
+  let lineFilter =
     lobParam === "SERVICE" || lobParam === "HOSTING"
       ? parseLineOfBusinessParam(lobParam)
       : null;
+
+  // ExtraHosting public catalog: hosting SKUs only.
+  const host =
+    request.headers.get("x-forwarded-host") ||
+    request.headers.get("host") ||
+    "";
+  if (!all && isDomainsHostingCatalog(brandIdForHost(host))) {
+    lineFilter = "HOSTING";
+  }
 
   // Public catalog (published only) — no auth required.
   if (!all) {

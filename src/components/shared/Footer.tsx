@@ -8,6 +8,7 @@ import { FacebookPageEmbed } from "@/components/shared/FacebookPageEmbed";
 import { serviceCatalog, serviceGroupHref, serviceHref } from "@/content/fixweb/catalog";
 import { catalogGroupTitle, catalogServiceTitle } from "@/content/fixweb/catalog-title";
 import { localizedHref } from "@/i18n/pathnames";
+import { useBrand } from "@/lib/brand/BrandProvider";
 
 const WEBMAIL_URL = "https://web-mail.cloud";
 
@@ -49,7 +50,26 @@ function domainsFooterLink(locale: string): FooterLink {
 }
 
 /** Handige links: booking, site sections, hosting, domains, pricing, webmail */
-function buildHandyLinks(locale: string): FooterLink[] {
+function buildHandyLinks(
+  locale: string,
+  catalogMode: "full" | "domains_hosting",
+): FooterLink[] {
+  if (catalogMode === "domains_hosting") {
+    return [
+      { href: localizedHref(locale, "/afspraak"), key: "book" },
+      {
+        href: serviceGroupHref(locale, "hosting"),
+        key: null,
+        label: catalogGroupTitle("hosting", locale, "Hosting"),
+      },
+      domainsFooterLink(locale),
+      { href: localizedHref(locale, "/shop"), key: "pricing" },
+      { href: localizedHref(locale, "/kennisbank"), key: "kennisbank" },
+      { href: localizedHref(locale, "/nieuws"), key: "blog" },
+      { href: localizedHref(locale, "/contact"), key: "contact" },
+      { href: WEBMAIL_URL, key: "webmail", external: true },
+    ];
+  }
   return [
     { href: localizedHref(locale, "/afspraak"), key: "book" },
     { href: localizedHref(locale, "/diensten"), key: "services" },
@@ -82,13 +102,18 @@ export function Footer() {
   const t = useTranslations("footer");
   const nav = useTranslations("nav");
   const locale = useLocale();
+  const brand = useBrand();
   const year = new Date().getFullYear();
 
   const labelFor = (item: FooterLink) =>
     item.label || (item.key ? nav(item.key) : "");
 
   const info = sortFooterLinks(buildInfoLinks(locale), labelFor, locale);
-  const handy = sortFooterLinks(buildHandyLinks(locale), labelFor, locale);
+  const handy = sortFooterLinks(
+    buildHandyLinks(locale, brand.catalogMode),
+    labelFor,
+    locale,
+  );
 
   const columnTitleClass =
     "flex h-9 md:h-10 items-center justify-center text-xs font-bold uppercase leading-none tracking-[0.14em] text-foreground";
@@ -103,7 +128,7 @@ export function Footer() {
             <div className="flex flex-col items-center text-center">
               <SoftLink
                 href={localizedHref(locale, "/")}
-                aria-label="TripleZero iT"
+                aria-label={brand.displayName}
                 className="inline-flex h-9 items-center md:h-10"
               >
                 <BrandLogo className="h-9 w-auto md:h-10" />

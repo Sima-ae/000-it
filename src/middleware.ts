@@ -6,12 +6,17 @@ import { routing } from "@/i18n/routing";
 import { localizePath, toInternalPath } from "@/i18n/pathnames";
 import { hydrateEntitySlugs } from "@/lib/entity-slugs";
 import { normalizeEntityParam } from "@/lib/entity-slug-cache";
-import { canAccessPath, dashboardNav } from "@/lib/roles";
+import { canAccessPath, dashboardNav, isStaffRole } from "@/lib/roles";
 import {
   SOCIAL_BOT_RE,
   antiScrapeResponse,
   withSecurityHeaders,
 } from "@/lib/anti-scrape";
+import {
+  brandPrimaryOrigin,
+  resolveHostContext,
+  type ResolvedHostContext,
+} from "@/lib/brand/config";
 
 /** Compare paths ignoring %XX vs Unicode differences (script-locale slugs). */
 function pathsEquivalent(a: string, b: string) {
@@ -23,14 +28,31 @@ function pathsEquivalent(a: string, b: string) {
   return norm(a) === norm(b);
 }
 
-const intlMiddleware = createMiddleware(routing);
+const intlAlwaysNl = createMiddleware({
+  ...routing,
+  localePrefix: "always",
+  defaultLocale: "nl",
+  localeDetection: true,
+});
+
+const intlAlwaysEn = createMiddleware({
+  ...routing,
+  localePrefix: "always",
+  defaultLocale: "en",
+  localeDetection: true,
+});
+
+const intlNeverNl = createMiddleware({
+  ...routing,
+  localePrefix: "never",
+  defaultLocale: "nl",
+  localeDetection: false,
+});
 
 const localePattern = routing.locales
   .map((l) => l.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
   .join("|");
 const localePathRe = new RegExp(`^/(${localePattern})(?=/|$)`);
-
-const CANONICAL_HOST = "000-it.com";
 
 const protectedPrefixes = [
   ...new Set([
@@ -45,25 +67,44 @@ const protectedPrefixes = [
   ]),
 ];
 
-function isProductionHost(host: string) {
-  const h = host.split(":")[0].toLowerCase();
-  return h === CANONICAL_HOST || h === `www.${CANONICAL_HOST}`;
+/** Staff-only areas — redirect off ExtraHosting to TripleZero. */
+const staffOnlyPrefixes = [
+  "/shop-admin",
+  "/hosting-admin",
+  "/hosting-orders",
+  "/domains-admin",
+  "/domain-orders",
+  "/all-orders",
+  "/clients",
+  "/leads",
+  "/users",
+  "/content-generator",
+  "/seo-analysis",
+  "/crm",
+  "/dashboard/activity-logs",
+  "/todos",
+  "/projects",
+];
+
+function isApexOrWww(host: string, apex: string) {
+  return host === apex || host === `www.${apex}`;
 }
 
-/** Public https URL without the internal Next listen port (e.g. :3066 behind LiteSpeed). */
-function publicAbsoluteUrl(pathname: string, search = "") {
+function publicAbsoluteUrl(hostCtx: ResolvedHostContext, pathname: string, search = "") {
   const path = pathname.startsWith("/") ? pathname : `/${pathname}`;
-  return `https://${CANONICAL_HOST}${path}${search}`;
+  const host =
+    hostCtx.host.startsWith("www.") && hostCtx.brand === "triplezero"
+      ? hostCtx.config.primaryHost
+      : hostCtx.host.replace(/^www\./, "") || hostCtx.config.primaryHost;
+  return `https://${host}${path}${search}`;
 }
 
-function socialPreviewRewrite(request: NextRequest, pathname: string) {
+function socialPreviewRewrite(request: NextRequest, pathname: string, defaultLocale: string) {
   const previewUrl = request.nextUrl.clone();
   let path = pathname || "/";
   if (path === "/" || path === "") {
-    path = `/${routing.defaultLocale}`;
+    path = `/${defaultLocale}`;
   }
-  // Put the public path in the URL path. LiteSpeed drops the query string on
-  // middleware rewrites, which made every share preview fall back to Dutch `/`.
   const encoded = path
     .split("/")
     .filter(Boolean)
@@ -73,14 +114,24 @@ function socialPreviewRewrite(request: NextRequest, pathname: string) {
   previewUrl.search = "";
   const headers = new Headers(request.headers);
   headers.set("x-social-path", path);
+  headers.set("x-site-brand", resolveHostContext(request.headers.get("host")).brand);
   return NextResponse.rewrite(previewUrl, { request: { headers } });
+}
+
+function withBrandHeaders(response: NextResponse, hostCtx: ResolvedHostContext) {
+  response.headers.set("x-site-brand", hostCtx.brand);
+  if (hostCtx.fixedLocale) {
+    response.headers.set("x-fixed-locale", hostCtx.fixedLocale);
+  }
+  return response;
 }
 
 export default async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const search = request.nextUrl.search;
   const hostHeader = request.headers.get("host") || "";
-  const host = hostHeader.split(":")[0].toLowerCase();
+  const hostCtx = resolveHostContext(hostHeader);
+  const host = hostCtx.host;
   const ua = request.headers.get("user-agent") || "";
   const isSocialBot = SOCIAL_BOT_RE.test(ua);
 
@@ -93,21 +144,34 @@ export default async function middleware(request: NextRequest) {
     return NextResponse.rewrite(url);
   }
 
-  // WhatsApp only reads ~5KB of HTML and misses Next.js OG tags (fonts/scripts first).
-  // Serve a tiny OG-first HTML shell to social crawlers — no redirects.
-  // Never rewrite the preview API itself (the rewrite re-enters middleware).
+  const isProdBrandHost =
+    isApexOrWww(host, "000-it.com") ||
+    isApexOrWww(host, "extrahosting.eu") ||
+    isApexOrWww(host, "extrahosting.nl");
+
   if (
     isSocialBot &&
-    isProductionHost(host) &&
+    isProdBrandHost &&
     !pathname.startsWith("/api/") &&
     !pathname.startsWith("/_next/")
   ) {
-    return socialPreviewRewrite(request, pathname);
+    const socialPath =
+      hostCtx.localePrefix === "never" && hostCtx.fixedLocale
+        ? `/${hostCtx.fixedLocale}${pathname === "/" ? "" : pathname}`
+        : pathname;
+    return socialPreviewRewrite(request, socialPath, hostCtx.defaultLocale);
   }
 
   const localeMatchEarly = pathname.match(localePathRe);
-  const localeEarly = localeMatchEarly?.[1] ?? routing.defaultLocale;
-  const pathWithoutLocaleEarly = pathname.replace(localePathRe, "") || "/";
+  const localeEarly =
+    hostCtx.fixedLocale ||
+    localeMatchEarly?.[1] ||
+    hostCtx.defaultLocale ||
+    routing.defaultLocale;
+  const pathWithoutLocaleEarly =
+    hostCtx.localePrefix === "never"
+      ? pathname || "/"
+      : pathname.replace(localePathRe, "") || "/";
   const internalEarly = pathname.startsWith("/api/")
     ? pathname
     : toInternalPath(localeEarly, pathWithoutLocaleEarly);
@@ -120,35 +184,58 @@ export default async function middleware(request: NextRequest) {
     pathname.startsWith("/api/") ||
     pathname.startsWith("/sitemaps/")
   ) {
-    return withSecurityHeaders(NextResponse.next(), pathname, internalEarly);
+    return withBrandHeaders(
+      withSecurityHeaders(NextResponse.next(), pathname, internalEarly),
+      hostCtx,
+    );
   }
 
-  // Humans: canonicalize www → apex (never leak internal :3066 port).
-  if (host === `www.${CANONICAL_HOST}`) {
-    return NextResponse.redirect(publicAbsoluteUrl(pathname || "/", search), 301);
+  // Humans: canonicalize www → apex (never leak internal listen port).
+  if (host.startsWith("www.")) {
+    const apex = host.replace(/^www\./, "");
+    return NextResponse.redirect(
+      `https://${apex}${pathname || "/"}${search}`,
+      301,
+    );
+  }
+
+  // Country TLD: strip accidental /nl prefix → root Dutch URL.
+  if (hostCtx.localePrefix === "never" && hostCtx.fixedLocale) {
+    const prefixed = pathname.match(localePathRe);
+    if (prefixed?.[1] === hostCtx.fixedLocale) {
+      const rest = pathname.replace(localePathRe, "") || "/";
+      return NextResponse.redirect(
+        publicAbsoluteUrl(hostCtx, rest, search),
+        301,
+      );
+    }
   }
 
   const localeMatch = pathname.match(localePathRe);
-  const locale = localeMatch?.[1] ?? routing.defaultLocale;
-  const pathWithoutLocale = pathname.replace(localePathRe, "") || "/";
+  const locale =
+    hostCtx.fixedLocale ||
+    localeMatch?.[1] ||
+    hostCtx.defaultLocale ||
+    routing.defaultLocale;
+  const pathWithoutLocale =
+    hostCtx.localePrefix === "never"
+      ? pathname || "/"
+      : pathname.replace(localePathRe, "") || "/";
 
-  // Load per-locale entity slug maps so canonicalize + auth use correct keys.
   try {
     await hydrateEntitySlugs(locale);
   } catch {
-    /* ignore — maps stay empty; pages still resolve when possible */
+    /* ignore */
   }
 
-  // Canonicalize segments + entity slugs to the preferred public URL.
-  // e.g. /en/diensten/aeo-optimization → /en/services/aeo-optimierung
-  if (pathWithoutLocale !== "/") {
+  // Canonicalize segments + entity slugs (prefix hosts only).
+  if (hostCtx.localePrefix === "always" && pathWithoutLocale !== "/") {
     const internal = toInternalPath(locale, pathWithoutLocale);
     const expected = localizePath(locale, internal);
     const currentBare =
       pathWithoutLocale.length > 1 && pathWithoutLocale.endsWith("/")
         ? pathWithoutLocale.slice(0, -1)
         : pathWithoutLocale;
-    // Encoding-invariant: /el/.../%CF%80… === /el/.../πρακτορες… (same slug).
     if (expected !== "/" && !pathsEquivalent(expected, currentBare)) {
       const url = request.nextUrl.clone();
       url.pathname = `/${locale}${expected}`;
@@ -157,6 +244,21 @@ export default async function middleware(request: NextRequest) {
   }
 
   const internalPath = toInternalPath(locale, pathWithoutLocale);
+
+  // ExtraHosting: staff tools live on TripleZero — redirect there.
+  if (!hostCtx.config.staffUi) {
+    const isStaffPath = staffOnlyPrefixes.some(
+      (prefix) =>
+        internalPath === prefix || internalPath.startsWith(`${prefix}/`),
+    );
+    if (isStaffPath) {
+      const target = new URL(
+        `/${locale}${internalPath}${search}`,
+        brandPrimaryOrigin("triplezero"),
+      );
+      return NextResponse.redirect(target, 302);
+    }
+  }
 
   const isProtected = protectedPrefixes.some(
     (prefix) =>
@@ -168,9 +270,6 @@ export default async function middleware(request: NextRequest) {
     internalPath.startsWith("/forgot-password");
 
   if (isProtected || isAuthPage) {
-    // Production uses HTTPS cookies named `__Secure-authjs.session-token`.
-    // getToken defaults secureCookie=false → looks for `authjs.session-token` and
-    // always misses the session, bouncing users back to login after a successful sign-in.
     const isSecure =
       request.nextUrl.protocol === "https:" ||
       request.headers.get("x-forwarded-proto") === "https";
@@ -182,7 +281,11 @@ export default async function middleware(request: NextRequest) {
     });
 
     if (isProtected && !token) {
-      const loginUrl = new URL(`/${locale}/login`, request.url);
+      const loginPath =
+        hostCtx.localePrefix === "never"
+          ? `/login`
+          : `/${locale}/login`;
+      const loginUrl = new URL(loginPath, request.url);
       loginUrl.searchParams.set("callbackUrl", pathname);
       return NextResponse.redirect(loginUrl);
     }
@@ -190,24 +293,54 @@ export default async function middleware(request: NextRequest) {
     if (isProtected && token) {
       const role = typeof token.role === "string" ? token.role : "CLIENT";
       if (!canAccessPath(internalPath, role)) {
-        return NextResponse.redirect(new URL(`/${locale}/dashboard`, request.url));
+        const dash =
+          hostCtx.localePrefix === "never"
+            ? `/dashboard`
+            : `/${locale}/dashboard`;
+        return NextResponse.redirect(new URL(dash, request.url));
+      }
+      // Staff landing on ExtraHosting client dashboard is fine; deep staff URLs redirected above.
+      if (!hostCtx.config.staffUi && isStaffRole(role) && isStaffPathLike(internalPath)) {
+        const target = new URL(
+          `/${locale}${internalPath}${search}`,
+          brandPrimaryOrigin("triplezero"),
+        );
+        return NextResponse.redirect(target, 302);
       }
     }
 
     if (isAuthPage && token) {
-      return NextResponse.redirect(new URL(`/${locale}/dashboard`, request.url));
+      const dash =
+        hostCtx.localePrefix === "never"
+          ? `/dashboard`
+          : `/${locale}/dashboard`;
+      return NextResponse.redirect(new URL(dash, request.url));
     }
   }
 
-  const intlResponse = intlMiddleware(request) as NextResponse;
-  return withSecurityHeaders(intlResponse, pathname, internalPath);
+  const intlMw =
+    hostCtx.localePrefix === "never"
+      ? intlNeverNl
+      : hostCtx.brand === "extrahosting"
+        ? intlAlwaysEn
+        : intlAlwaysNl;
+  const intlResponse = intlMw(request) as NextResponse;
+  return withBrandHeaders(
+    withSecurityHeaders(intlResponse, pathname, internalPath),
+    hostCtx,
+  );
+}
+
+function isStaffPathLike(internalPath: string) {
+  return staffOnlyPrefixes.some(
+    (prefix) =>
+      internalPath === prefix || internalPath.startsWith(`${prefix}/`),
+  );
 }
 
 export const config = {
-  // Prisma entity-slug hydrate needs Node (not Edge).
   runtime: "nodejs",
   matcher: [
-    // Include uploads even though they have file extensions (normally excluded).
     "/uploads/:path*",
     "/api/:path*",
     "/sitemap.xml",

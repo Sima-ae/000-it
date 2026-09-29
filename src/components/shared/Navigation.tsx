@@ -24,8 +24,9 @@ import {
 import { BrandLogo } from "@/components/shared/BrandLogo";
 import { GlobalSearchButton } from "@/components/shared/GlobalSearch";
 import { cn } from "@/lib/utils";
+import { useBrand } from "@/lib/brand/BrandProvider";
 
-const primaryLinks = [
+const primaryLinksFull = [
   { href: "/", key: "home" },
   { href: "/over-ons", key: "info", info: true },
   { href: "/diensten", key: "services", mega: true },
@@ -39,6 +40,17 @@ const primaryLinks = [
   { href: "/contact", key: "contact" },
 ] as const;
 
+const primaryLinksHosting = [
+  { href: "/", key: "home" },
+  { href: "/over-ons", key: "info", info: true },
+  { href: "/domeinen", key: "domains", domains: true },
+  { href: "/diensten/categorie/hosting", key: "hosting", hosting: true },
+  { href: "/shop", key: "pricing" },
+  { href: "/kennisbank", key: "kennisbank" },
+  { href: "/nieuws", key: "blog" },
+  { href: "/contact", key: "contact" },
+] as const;
+
 function isLocaleHome(pathname: string, locale: string) {
   return pathname === `/${locale}` || pathname === `/${locale}/`;
 }
@@ -48,6 +60,9 @@ export function Navigation() {
   const tCommon = useTranslations("common");
   const locale = useLocale();
   const pathname = usePathname();
+  const brand = useBrand();
+  const primaryLinks =
+    brand.catalogMode === "domains_hosting" ? primaryLinksHosting : primaryLinksFull;
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
@@ -111,7 +126,7 @@ export function Navigation() {
         <div className="flex items-center justify-between gap-1.5 px-2.5 py-2 sm:gap-2 sm:px-3 sm:py-2.5 md:gap-3 md:px-4 md:py-3">
           <SoftLink
             href={localizedHref(locale, "/")}
-            aria-label="TripleZero iT"
+                aria-label={brand.displayName}
             className="min-w-0 shrink"
           >
             <BrandLogo priority className="h-7 max-w-[min(42vw,9.5rem)] sm:h-8 sm:max-w-none md:h-9" />

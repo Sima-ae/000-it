@@ -178,11 +178,17 @@ function allowedOrigins(): string[] {
   const origins = new Set([
     "https://000-it.com",
     "https://www.000-it.com",
+    "https://extrahosting.eu",
+    "https://www.extrahosting.eu",
+    "https://extrahosting.nl",
+    "https://www.extrahosting.nl",
     ...extra,
   ]);
   if (process.env.NODE_ENV !== "production") {
     origins.add("http://localhost:3066");
     origins.add("http://127.0.0.1:3066");
+    origins.add("http://localhost:3067");
+    origins.add("http://127.0.0.1:3067");
   }
   return [...origins];
 }

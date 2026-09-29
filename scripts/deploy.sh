@@ -93,6 +93,20 @@ if command -v pm2 >/dev/null 2>&1; then
   else
     pm2 start npm --name "$PM2_NAME" --cwd "$APP_DIR" -- start
   fi
+
+  # ExtraHosting storefront (same build, port 3067) — optional second process
+  EH_NAME="${PM2_EH_NAME:-extrahosting}"
+  EH_PORT="${PM2_EH_PORT:-3067}"
+  if pm2 describe "$EH_NAME" >/dev/null 2>&1; then
+    echo "==> Restart ExtraHosting (PM2: $EH_NAME on :$EH_PORT)"
+    pm2 restart "$EH_NAME" --update-env
+  else
+    echo "==> Start ExtraHosting from deploy/ecosystem.config.cjs"
+    pm2 start "$APP_DIR/deploy/ecosystem.config.cjs" --only "$EH_NAME" || \
+      PORT="$EH_PORT" SITE_BRAND=extrahosting NEXT_PUBLIC_APP_URL=https://extrahosting.eu AUTH_URL=https://extrahosting.eu \
+      pm2 start npm --name "$EH_NAME" --cwd "$APP_DIR" -- start
+  fi
+
   pm2 save
 else
   echo "WARN: pm2 not found. Start manually: npm run start"
@@ -101,11 +115,23 @@ fi
 sleep 2
 echo "==> Health check"
 if curl -sf "http://127.0.0.1:${PORT}/api/health" | grep -q '"ok":true'; then
-  echo "OK: /api/health"
+  echo "OK: /api/health ($PM2_NAME :$PORT)"
 else
   echo "WARN: /api/health failed (check: pm2 logs $PM2_NAME --lines 50)"
 fi
 
+EH_NAME="${PM2_EH_NAME:-extrahosting}"
+EH_PORT="${PM2_EH_PORT:-3067}"
+if command -v pm2 >/dev/null 2>&1 && pm2 describe "$EH_NAME" >/dev/null 2>&1; then
+  if curl -sf "http://127.0.0.1:${EH_PORT}/api/health" | grep -q '"ok":true'; then
+    echo "OK: /api/health ($EH_NAME :$EH_PORT)"
+  else
+    echo "WARN: ExtraHosting health failed (check: pm2 logs $EH_NAME --lines 50)"
+  fi
+fi
+
 echo "==> Deploy finished OK"
 echo "==> Commit: $(git log -1 --oneline)"
-echo "NOTE: App listens on port ${PORT}. LiteSpeed/nginx must proxy to ${PORT}."
+echo "NOTE: App listens on port ${PORT}. ExtraHosting on ${EH_PORT:-3067}."
+echo "NOTE: LiteSpeed must proxy 000-it.com→${PORT}, extrahosting.*→${EH_PORT:-3067} (no nginx)."
+echo "NOTE: First-time EH vhost wiring: bash scripts/setup-extrahosting-litespeed.sh"

@@ -20,6 +20,7 @@ import {
   WORDPRESS_HOSTING_SLUG_ORDER,
   type ShopProduct,
 } from "@/lib/shop/catalog";
+import { getRequestBrand } from "@/lib/brand/server";
 
 export const dynamic = "force-dynamic";
 
@@ -38,6 +39,8 @@ export default async function ShopPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const brand = await getRequestBrand();
+  const hostingOnly = brand.catalogMode === "domains_hosting";
   const t = await getTranslations("shop");
   const pricing = await getTranslations("pricing");
   const catalog = await loadShopCatalogFromDb();
@@ -47,7 +50,8 @@ export default async function ShopPage({
     (p) =>
       (p.type === "service" || p.type === "product") &&
       !isSupportPackageSlug(p.slug) &&
-      !isWpCareSlug(p.slug),
+      !isWpCareSlug(p.slug) &&
+      (!hostingOnly || HOSTING_YEARLY_SLUGS.has(p.slug)),
   );
   const sharedHostingProducts = shopProductsInSlugOrder(
     catalogProducts,
@@ -61,10 +65,12 @@ export default async function ShopPage({
     catalogProducts,
     VPS_HOSTING_SLUG_ORDER,
   );
-  const serviceProducts = sortServiceProducts(
-    catalogProducts.filter((p) => !HOSTING_YEARLY_SLUGS.has(p.slug)),
-    locale,
-  );
+  const serviceProducts = hostingOnly
+    ? []
+    : sortServiceProducts(
+        catalogProducts.filter((p) => !HOSTING_YEARLY_SLUGS.has(p.slug)),
+        locale,
+      );
 
   const plans = [
     {
@@ -111,24 +117,26 @@ export default async function ShopPage({
         </div>
       </Reveal>
 
-      <PricingPlans
-        variant="embedded"
-        plans={plans}
-        labels={{
-          title: t("plans"),
-          subtitle: pricing("subtitle"),
-          plansHeadline: pricing("plansHeadline"),
-          monthly: pricing("monthly"),
-          yearly: pricing("yearly"),
-          save: pricing("saveYearly"),
-          perMonth: pricing("month"),
-          perYear: pricing("year"),
-          cta: pricing("cta"),
-          ctaContact: pricing("ctaContact"),
-          custom: pricing("custom"),
-          mostChosen: pricing("mostChosen"),
-        }}
-      />
+      {!hostingOnly ? (
+        <PricingPlans
+          variant="embedded"
+          plans={plans}
+          labels={{
+            title: t("plans"),
+            subtitle: pricing("subtitle"),
+            plansHeadline: pricing("plansHeadline"),
+            monthly: pricing("monthly"),
+            yearly: pricing("yearly"),
+            save: pricing("saveYearly"),
+            perMonth: pricing("month"),
+            perYear: pricing("year"),
+            cta: pricing("cta"),
+            ctaContact: pricing("ctaContact"),
+            custom: pricing("custom"),
+            mostChosen: pricing("mostChosen"),
+          }}
+        />
+      ) : null}
 
       <p className="mx-auto mt-6 max-w-2xl text-center text-sm text-muted-foreground">
         {t("subtitle")}
@@ -149,9 +157,11 @@ export default async function ShopPage({
         products={vpsHostingProducts}
       />
 
-      <div className="mt-16">
-        <WordPressCarePlansSection showTitle />
-      </div>
+      {!hostingOnly ? (
+        <div className="mt-16">
+          <WordPressCarePlansSection showTitle />
+        </div>
+      ) : null}
 
       {serviceProducts.length > 0 ? (
         <section className="mt-16 text-center">

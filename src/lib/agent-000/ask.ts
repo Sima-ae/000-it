@@ -71,7 +71,12 @@ function pickCopy(locale: string, map: CopyBag) {
 }
 
 function greeting(locale: string) {
-  return pickCopy(locale, {
+  const brandName =
+    (process.env.SITE_BRAND || "").toLowerCase().includes("extra") ||
+    (process.env.NEXT_PUBLIC_APP_URL || "").includes("extrahosting")
+      ? "ExtraHosting"
+      : null;
+  const base = pickCopy(locale, {
     en: "Hi, I'm Agent 000.",
     nl: "Hallo, ik ben Agent 000.",
     de: "Hallo, ich bin Agent 000.",
@@ -87,6 +92,19 @@ function greeting(locale: string) {
     ur: "ہیلو، میں Agent 000 ہوں۔",
     zh: "你好，我是 Agent 000。",
     ja: "こんにちは、Agent 000 です。",
+  });
+  if (!brandName) return base;
+  return pickCopy(locale, {
+    en: `Hi, I'm Agent 000 from ${brandName}.`,
+    nl: `Hallo, ik ben Agent 000 van ${brandName}.`,
+    de: `Hallo, ich bin Agent 000 von ${brandName}.`,
+    fr: `Bonjour, je suis Agent 000 chez ${brandName}.`,
+    es: `Hola, soy Agent 000 de ${brandName}.`,
+    pt: `Olá, sou o Agent 000 da ${brandName}.`,
+    ar: `مرحبًا، أنا Agent 000 من ${brandName}.`,
+    hi: `नमस्ते, मैं ${brandName} से Agent 000 हूँ।`,
+    zh: `你好，我是 ${brandName} 的 Agent 000。`,
+    ja: `こんにちは、${brandName} の Agent 000 です。`,
   });
 }
 

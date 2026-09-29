@@ -97,6 +97,42 @@
   --field-3: rgba(155, 127, 192, 0.12);
 }
 
+/* ExtraHosting — bright blue + navy from brand logo */
+html[data-brand="extrahosting"] {
+  --color-brand: #1e9bff;
+  --color-brand-mint: #0a4f9c;
+  --color-brand-sand: #5eb0ff;
+  --primary: #1e9bff;
+  --primary-foreground: #ffffff;
+  --secondary: #0a2f6b;
+  --secondary-foreground: #ffffff;
+  --accent: #0a4f9c;
+  --accent-foreground: #ffffff;
+  --ring: #1e9bff;
+  --field-1: rgba(30, 155, 255, 0.18);
+  --field-2: rgba(10, 79, 156, 0.12);
+  --field-3: rgba(30, 155, 255, 0.08);
+}
+
+html[data-brand="extrahosting"].dark,
+html[data-brand="extrahosting"] .dark {
+  --primary: #3aadff;
+  --primary-foreground: #041428;
+  --secondary: #1a5fad;
+  --secondary-foreground: #ffffff;
+  --accent: #5eb0ff;
+  --accent-foreground: #041428;
+  --ring: #5eb0ff;
+  --field-1: rgba(30, 155, 255, 0.35);
+  --field-2: rgba(10, 79, 156, 0.2);
+  --field-3: rgba(94, 176, 255, 0.12);
+}
+
+html[data-brand="extrahosting"] ::selection {
+  background: rgba(30, 155, 255, 0.3);
+  color: inherit;
+}
+
 * {
   border-color: var(--border);
 }

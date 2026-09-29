@@ -19,7 +19,7 @@ import {
 import { localizedHref } from "@/i18n/pathnames";
 import { getAiScanCount } from "@/lib/ai-scan-count";
 import { BRANDING_CONTACT_IMAGE, BRANDING_SERVICES_IMAGE } from "@/lib/branding-images";
-import { buildStaticPageMetadata, organizationJsonLd } from "@/lib/seo";
+import { buildPageMetadata, buildStaticPageMetadata, organizationJsonLd } from "@/lib/seo";
 import {
   loadShopCatalogFromDb,
   resolvePlanNamesFromCatalog,
@@ -31,6 +31,7 @@ import {
   sortedServiceGroups,
 } from "@/content/fixweb/catalog";
 import { catalogGroupTitle } from "@/content/fixweb/catalog-title";
+import { getRequestBrand } from "@/lib/brand/server";
 
 export const dynamic = "force-dynamic";
 
@@ -40,6 +41,20 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const brand = await getRequestBrand();
+  if (brand.id === "extrahosting") {
+    const isNl = locale === "nl";
+    return buildPageMetadata({
+      locale,
+      path: "/",
+      title: isNl
+        ? "Domeinen en webhosting"
+        : "Domains and web hosting",
+      description: isNl ? brand.defaultDescription.nl : brand.defaultDescription.en,
+      keywords: isNl ? brand.defaultKeywords.nl : brand.defaultKeywords.en,
+      image: brand.ogImage,
+    });
+  }
   return buildStaticPageMetadata(locale, "/");
 }
 
@@ -50,6 +65,8 @@ export default async function HomePage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const brand = await getRequestBrand();
+  const hostingOnly = brand.catalogMode === "domains_hosting";
   const t = await getTranslations();
   const hero = await getTranslations("hero");
   const services = await getTranslations("services");
@@ -89,6 +106,10 @@ export default async function HomePage({
     },
   ];
 
+  const serviceGroups = hostingOnly
+    ? sortedServiceGroups(locale).filter((g) => g.id === "hosting")
+    : sortedServiceGroups(locale);
+
   return (
     <div className="overflow-x-clip">
       <JsonLd data={organizationJsonLd()} />
@@ -115,48 +136,56 @@ export default async function HomePage({
         </Reveal>
       </section>
 
-      <BrandingCollage
-        href={localizedHref(locale, "/diensten")}
-        label={services("title")}
-      />
+      {!hostingOnly ? (
+        <BrandingCollage
+          href={localizedHref(locale, "/diensten")}
+          label={services("title")}
+        />
+      ) : null}
 
-      <PricingPlans
-        plans={plans}
-        labels={{
-          subtitle: shop("subtitle"),
-          categoryTitle: shop("plans"),
-          plansHeadline: pricing("plansHeadline"),
-          monthly: pricing("monthly"),
-          yearly: pricing("yearly"),
-          save: pricing("saveYearly"),
-          perMonth: pricing("month"),
-          perYear: pricing("year"),
-          cta: pricing("cta"),
-          ctaContact: pricing("ctaContact"),
-          custom: pricing("custom"),
-          mostChosen: pricing("mostChosen"),
-          viewAll: pricing("viewAll"),
-        }}
-      />
+      {!hostingOnly ? (
+        <PricingPlans
+          plans={plans}
+          labels={{
+            subtitle: shop("subtitle"),
+            categoryTitle: shop("plans"),
+            plansHeadline: pricing("plansHeadline"),
+            monthly: pricing("monthly"),
+            yearly: pricing("yearly"),
+            save: pricing("saveYearly"),
+            perMonth: pricing("month"),
+            perYear: pricing("year"),
+            cta: pricing("cta"),
+            ctaContact: pricing("ctaContact"),
+            custom: pricing("custom"),
+            mostChosen: pricing("mostChosen"),
+            viewAll: pricing("viewAll"),
+          }}
+        />
+      ) : null}
 
-      <BrandingCollage
-        href={localizedHref(locale, "/diensten")}
-        src={BRANDING_SERVICES_IMAGE}
-        label={services("title")}
-      />
+      {!hostingOnly ? (
+        <BrandingCollage
+          href={localizedHref(locale, "/diensten")}
+          src={BRANDING_SERVICES_IMAGE}
+          label={services("title")}
+        />
+      ) : null}
 
       <section className="mx-auto max-w-6xl px-4 pt-10 pb-4 md:px-6 md:pt-12 md:pb-6">
         <Reveal from="up" duration={0.6}>
           <div className="mx-auto mb-10 max-w-2xl text-center">
             <h2 className="font-display text-3xl font-semibold tracking-tight text-primary md:text-5xl">
-              {services("title")}
+              {hostingOnly ? shop("title") : services("title")}
             </h2>
-            <p className="mt-3 text-muted-foreground">{services("subtitle")}</p>
+            <p className="mt-3 text-muted-foreground">
+              {hostingOnly ? shop("subtitle") : services("subtitle")}
+            </p>
           </div>
         </Reveal>
 
         <HomeServiceCards
-          items={sortedServiceGroups(locale).map((group) => ({
+          items={serviceGroups.map((group) => ({
             id: group.id,
             href: serviceGroupHref(locale, group.id),
             title: catalogGroupTitle(group.id, locale, group.title),
@@ -167,7 +196,15 @@ export default async function HomePage({
         <Reveal from="scale" delay={0.1} duration={0.5}>
           <div className="mt-8 flex justify-center md:mt-10">
             <Button asChild size="lg" className="rounded-2xl px-7">
-              <SoftLink href={localizedHref(locale, "/diensten")}>{services("viewAll")}</SoftLink>
+              <SoftLink
+                href={
+                  hostingOnly
+                    ? serviceGroupHref(locale, "hosting")
+                    : localizedHref(locale, "/diensten")
+                }
+              >
+                {services("viewAll")}
+              </SoftLink>
             </Button>
           </div>
         </Reveal>

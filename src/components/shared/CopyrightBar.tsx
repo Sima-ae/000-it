@@ -1,3 +1,7 @@
+"use client";
+
+import { useBrand } from "@/lib/brand/BrandProvider";
+
 export function CopyrightBar({
   year,
   rights,
@@ -7,10 +11,11 @@ export function CopyrightBar({
   rights: string;
   className?: string;
 }) {
+  const brand = useBrand();
   return (
     <div className={className}>
       <p className="text-sm font-medium tracking-tight text-foreground">
-        TripleZero iT © {year}
+        {brand.displayName} © {year}
       </p>
       <p className="mt-0.5 text-xs text-muted-foreground">{rights}</p>
     </div>
