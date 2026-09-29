@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { GoogleTag } from "@/components/analytics/GoogleTag";
+import { RTL_LOCALES } from "@/i18n/languages";
 import { SITE_SEO, absoluteUrl, geoMetadataOther, siteOrigin } from "@/lib/seo";
 
 const display = localFont({
@@ -112,6 +113,13 @@ export const metadata: Metadata = {
 
 const IMPACT_VERIFICATION_CODE = "2231b5f9-68a2-4efc-bf05-7248ba199077";
 
+/**
+ * Sync <html lang/dir> before paint from the URL locale prefix.
+ * Root layout cannot take [locale] params (shared across locales / SSG),
+ * and headers() would force the whole tree dynamic — keep this tiny + LocaleHtmlLang.
+ */
+const LOCALE_HTML_BOOTSTRAP = `(function(){try{var m=location.pathname.match(/^\\/([a-z]{2,3})(?=\\/|$)/i);var loc=m?m[1].toLowerCase():"nl";var rtl={${[...RTL_LOCALES].map((l) => `${l}:1`).join(",")}};document.documentElement.lang=loc;document.documentElement.dir=rtl[loc]?"rtl":"ltr";}catch(e){}})();`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -120,6 +128,7 @@ export default function RootLayout({
   return (
     <html lang="nl" suppressHydrationWarning data-scroll-behavior="smooth">
       <head>
+        <script dangerouslySetInnerHTML={{ __html: LOCALE_HTML_BOOTSTRAP }} />
         {/* Impact.com — exact `value` attribute from their verification instructions */}
         <meta
           name="impact-site-verification"

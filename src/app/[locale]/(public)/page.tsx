@@ -115,7 +115,10 @@ export default async function HomePage({
         </Reveal>
       </section>
 
-      <BrandingCollage href={localizedHref(locale, "/diensten")} />
+      <BrandingCollage
+        href={localizedHref(locale, "/diensten")}
+        label={services("title")}
+      />
 
       <PricingPlans
         plans={plans}
@@ -139,6 +142,7 @@ export default async function HomePage({
       <BrandingCollage
         href={localizedHref(locale, "/diensten")}
         src={BRANDING_SERVICES_IMAGE}
+        label={services("title")}
       />
 
       <section className="mx-auto max-w-6xl px-4 pt-10 pb-4 md:px-6 md:pt-12 md:pb-6">
@@ -172,7 +176,7 @@ export default async function HomePage({
       <BrandingCollage
         href={localizedHref(locale, "/contact")}
         src={BRANDING_CONTACT_IMAGE}
-        label="Contact"
+        label={t("nav.contact")}
         className="pt-6 pb-2 md:pt-8 md:pb-3"
       />
 
@@ -191,19 +195,19 @@ export default async function HomePage({
             <div className="glass glow-hover relative overflow-hidden rounded-[1.75rem] px-5 md:px-6">
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="1" className="border-border/60">
-                  <AccordionTrigger className="text-left font-display text-base hover:no-underline md:text-lg">
+                  <AccordionTrigger className="text-start font-display text-base hover:no-underline md:text-lg">
                     {faq("q1")}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">{faq("a1")}</AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="2" className="border-border/60">
-                  <AccordionTrigger className="text-left font-display text-base hover:no-underline md:text-lg">
+                  <AccordionTrigger className="text-start font-display text-base hover:no-underline md:text-lg">
                     {faq("q2")}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">{faq("a2")}</AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="3" className="border-border/60">
-                  <AccordionTrigger className="text-left font-display text-base hover:no-underline md:text-lg">
+                  <AccordionTrigger className="text-start font-display text-base hover:no-underline md:text-lg">
                     {faq("q3")}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">{faq("a3")}</AccordionContent>

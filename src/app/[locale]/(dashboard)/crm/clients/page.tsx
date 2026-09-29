@@ -106,20 +106,20 @@ export default function CrmClientsPage() {
         <CardContent className="pt-6">
           {isLoading ? <p className="text-muted-foreground">{t("loading")}</p> : null}
           <div className="overflow-x-auto">
-            <table className="w-full text-left text-sm">
+            <table className="w-full text-start text-sm">
               <thead className="text-muted-foreground">
                 <tr>
-                  <th className="pb-3 pr-4">{t("fieldName")}</th>
-                  <th className="pb-3 pr-4">{t("fieldCompany")}</th>
-                  <th className="pb-3 pr-4">{t("fieldEmail")}</th>
-                  <th className="pb-3 pr-4">{t("tickets")}</th>
+                  <th className="pb-3 pe-4">{t("fieldName")}</th>
+                  <th className="pb-3 pe-4">{t("fieldCompany")}</th>
+                  <th className="pb-3 pe-4">{t("fieldEmail")}</th>
+                  <th className="pb-3 pe-4">{t("tickets")}</th>
                   <th className="pb-3">{t("fieldStatus")}</th>
                 </tr>
               </thead>
               <tbody>
                 {clients.map((client) => (
                   <tr key={client.id} className="border-t border-border/60">
-                    <td className="py-3 pr-4">
+                    <td className="py-3 pe-4">
                       <SoftLink
                         href={`/${locale}/crm/clients/${client.id}`}
                         className="font-medium text-primary hover:underline"
@@ -127,9 +127,9 @@ export default function CrmClientsPage() {
                         {client.name}
                       </SoftLink>
                     </td>
-                    <td className="py-3 pr-4">{client.company || "—"}</td>
-                    <td className="py-3 pr-4">{client.email}</td>
-                    <td className="py-3 pr-4">{client._count?.tickets ?? 0}</td>
+                    <td className="py-3 pe-4">{client.company || "—"}</td>
+                    <td className="py-3 pe-4">{client.email}</td>
+                    <td className="py-3 pe-4">{client._count?.tickets ?? 0}</td>
                     <td className="py-3">
                       <Badge variant="outline">{status.clientStatus(client.status)}</Badge>
                     </td>

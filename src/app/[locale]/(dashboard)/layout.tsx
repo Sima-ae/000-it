@@ -45,7 +45,7 @@ export default async function DashboardLayout({
             role: dbUser.role,
           }}
         />
-        <div className="flex-1 p-3 md:p-6 md:pl-0">
+        <div className="flex-1 p-3 md:p-6 md:ps-0">
           <div className="glass min-h-[calc(100svh-1.5rem)] rounded-[1.75rem] p-4 md:p-8">
             <ClientDashboardHeader role={dbUser.role} />
             <ContentTransition>{children}</ContentTransition>

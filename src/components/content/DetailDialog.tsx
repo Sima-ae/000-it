@@ -92,7 +92,7 @@ export function DetailDialog({
           ) : null}
 
           <div className="space-y-8 p-6 md:p-8 lg:p-10">
-            <DialogHeader className="pr-8">
+            <DialogHeader className="pe-8">
               <div className="mb-3 flex flex-wrap gap-2">
                 {display.featured ? <Badge>Featured</Badge> : null}
                 {display.industry ? (

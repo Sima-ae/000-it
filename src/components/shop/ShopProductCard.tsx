@@ -69,11 +69,11 @@ export function ShopProductCard({
   const salePrice = formatShopEuro(centsToEuros(saleCents), locale);
 
   const periodLabel = showAsYearly ? (
-    <span className="ml-1 text-base font-medium text-muted-foreground">
+    <span className="ms-1 text-base font-medium text-muted-foreground">
       {tPricing("year")}
     </span>
   ) : months > 1 ? (
-    <span className="ml-1 text-base font-medium text-muted-foreground">
+    <span className="ms-1 text-base font-medium text-muted-foreground">
       {t("perMonth")}
     </span>
   ) : null;

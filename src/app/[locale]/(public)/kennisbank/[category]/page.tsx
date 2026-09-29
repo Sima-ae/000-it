@@ -112,7 +112,7 @@ export default async function KennisbankCategoryPage({ params }: Params) {
                   {articles.length} {t("articlesInCategory")}
                 </p>
               </div>
-              <div className="border-t border-border/50 md:border-t-0 md:border-l md:border-border/50">
+              <div className="border-t border-border/50 md:border-t-0 md:border-s md:border-border/50">
                 <KennisbankIllustration
                   categorySlug={category}
                   categoryLabel={cat.name}

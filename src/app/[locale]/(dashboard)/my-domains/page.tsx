@@ -524,13 +524,13 @@ export default function MyDomainsPage() {
             </p>
           </div>
           <div className="relative w-full max-w-xs">
-            <Search className="pointer-events-none absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
+            <Search className="pointer-events-none absolute start-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
             <Input
               type="search"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder={t("searchPlaceholder")}
-              className="h-9 rounded-xl pl-8"
+              className="h-9 rounded-xl ps-8"
               aria-label={t("searchPlaceholder")}
             />
           </div>
@@ -608,26 +608,26 @@ export default function MyDomainsPage() {
             <p className="text-sm text-muted-foreground">{t("filterEmpty")}</p>
           ) : (
             <div className="overflow-x-auto">
-              <table className="w-full min-w-180 border-collapse text-left text-sm">
+              <table className="w-full min-w-180 border-collapse text-start text-sm">
                 <thead className="border-b border-border text-muted-foreground">
                   <tr>
-                    <th className="w-8 py-2 pr-2" />
-                    <th className="py-2 pr-3">
+                    <th className="w-8 py-2 pe-2" />
+                    <th className="py-2 pe-3">
                       <SortHeader label={t("colDomain")} column="domain" />
                     </th>
-                    <th className="py-2 pr-3">
+                    <th className="py-2 pe-3">
                       <SortHeader label={t("colStatus")} column="status" />
                     </th>
-                    <th className="py-2 pr-3">
+                    <th className="py-2 pe-3">
                       <SortHeader label={t("colExpires")} column="expires" />
                     </th>
-                    <th className="py-2 pr-3">
+                    <th className="py-2 pe-3">
                       <SortHeader label={t("colLock")} column="lock" />
                     </th>
-                    <th className="py-2 pr-3">
+                    <th className="py-2 pe-3">
                       <SortHeader label={t("colPrivacy")} column="privacy" />
                     </th>
-                    <th className="py-2 pr-3">{t("colActions")}</th>
+                    <th className="py-2 pe-3">{t("colActions")}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -638,20 +638,20 @@ export default function MyDomainsPage() {
                     const expired = days != null && days < 0;
                     return (
                       <tr key={d.id} className="border-b border-border/60">
-                        <td className="py-2 pr-2">
+                        <td className="py-2 pe-2">
                           <input
                             type="checkbox"
                             checked={selected.includes(d.domainName)}
                             onChange={() => toggleSelect(d.domainName)}
                           />
                         </td>
-                        <td className="py-2 pr-3 font-medium">{d.domainName}</td>
-                        <td className="py-2 pr-3">
+                        <td className="py-2 pe-3 font-medium">{d.domainName}</td>
+                        <td className="py-2 pe-3">
                           <Badge variant="outline">{status.domainStatus(d.status)}</Badge>
                         </td>
                         <td
                           className={cn(
-                            "py-2 pr-3",
+                            "py-2 pe-3",
                             expired
                               ? "font-medium text-destructive"
                               : expiringSoon
@@ -663,13 +663,13 @@ export default function MyDomainsPage() {
                             ? new Date(d.expiresAt).toLocaleDateString(locale)
                             : "—"}
                         </td>
-                        <td className="py-2 pr-3">
+                        <td className="py-2 pe-3">
                           {d.registrarLocked ? t("yes") : t("no")}
                         </td>
-                        <td className="py-2 pr-3">
+                        <td className="py-2 pe-3">
                           {d.whoisGuardEnabled ? t("yes") : t("no")}
                         </td>
-                        <td className="py-2 pr-3">
+                        <td className="py-2 pe-3">
                           <div className="flex flex-wrap gap-2">
                             <Button
                               size="sm"
@@ -701,7 +701,7 @@ export default function MyDomainsPage() {
 
       <Dialog open={!!active} onOpenChange={(o) => !o && setActive(null)}>
         <DialogContent className="w-[min(96vw,44rem)] gap-0 overflow-hidden p-0">
-          <DialogHeader className="shrink-0 border-b border-border/60 bg-muted/20 px-5 py-4 pr-14 md:px-6">
+          <DialogHeader className="shrink-0 border-b border-border/60 bg-muted/20 px-5 py-4 pe-14 md:px-6">
             <DialogTitle className="text-xl md:text-2xl">
               {active?.domainName}
             </DialogTitle>

@@ -158,7 +158,7 @@ export default async function ShopPage({
           <h2 className="font-display text-2xl font-semibold tracking-tight text-accent">
             {t("services")}
           </h2>
-          <div className="mt-6 grid gap-4 text-left md:grid-cols-2 xl:grid-cols-3">
+          <div className="mt-6 grid gap-4 text-start md:grid-cols-2 xl:grid-cols-3">
             {serviceProducts.map((product) => (
               <ShopProductCard key={product.id} product={product} />
             ))}

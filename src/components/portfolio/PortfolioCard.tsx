@@ -30,7 +30,7 @@ export function PortfolioCard({ item, onOpen }: PortfolioCardProps) {
     <button
       type="button"
       onClick={onOpen}
-      className="group relative flex aspect-4/5 w-full flex-col overflow-hidden border-0 bg-card text-left transition hover:ring-2 hover:ring-inset hover:ring-primary/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60"
+      className="group relative flex aspect-4/5 w-full flex-col overflow-hidden border-0 bg-card text-start transition hover:ring-2 hover:ring-inset hover:ring-primary/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60"
     >
       <div className="relative min-h-0 flex-1 bg-muted">
         {item.coverImage ? (

@@ -343,7 +343,7 @@ export function AppointmentBooking({
                                 <span className="font-display text-base font-semibold text-primary">
                                   {formatEuro(price, priceLocale)}
                                   {preview?.perMonth ? (
-                                    <span className="ml-1 text-xs font-medium text-muted-foreground">
+                                    <span className="ms-1 text-xs font-medium text-muted-foreground">
                                       {tShop("perMonth")}
                                     </span>
                                   ) : null}
@@ -353,7 +353,7 @@ export function AppointmentBooking({
                               <p className="font-display text-base font-semibold text-foreground">
                                 {formatEuro(price, priceLocale)}
                                 {preview?.perMonth ? (
-                                  <span className="ml-1 text-xs font-medium text-muted-foreground">
+                                  <span className="ms-1 text-xs font-medium text-muted-foreground">
                                     {tShop("perMonth")}
                                   </span>
                                 ) : null}
@@ -388,7 +388,7 @@ export function AppointmentBooking({
                     type="button"
                     onClick={() => toggleExtra(extra.id)}
                     className={cn(
-                      "rounded-2xl border p-4 text-left transition",
+                      "rounded-2xl border p-4 text-start transition",
                       on
                         ? "border-primary bg-primary/10"
                         : "border-border/70 hover:border-primary/40 hover:bg-muted/40",
@@ -529,7 +529,7 @@ export function AppointmentBooking({
                     type="button"
                     onClick={() => setPayment(pref.id)}
                     className={cn(
-                      "flex w-full items-start gap-3 rounded-2xl border p-4 text-left transition",
+                      "flex w-full items-start gap-3 rounded-2xl border p-4 text-start transition",
                       on
                         ? "border-primary bg-primary/10"
                         : "border-border/70 hover:border-primary/40",
@@ -625,7 +625,7 @@ export function AppointmentBooking({
               onClick={goBack}
               disabled={stepIndex === 0 || submitting}
             >
-              <ChevronLeft className="mr-1 h-4 w-4" />
+              <ChevronLeft className="me-1 h-4 w-4 rtl:rotate-180" />
               {t("back")}
             </Button>
             <Button
@@ -639,7 +639,7 @@ export function AppointmentBooking({
                   ? t("sending")
                   : t("confirm")
                 : t("next")}
-              {stepId !== "payment" ? <ChevronRight className="ml-1 h-4 w-4" /> : null}
+              {stepId !== "payment" ? <ChevronRight className="ms-1 h-4 w-4 rtl:rotate-180" /> : null}
             </Button>
           </div>
         </>

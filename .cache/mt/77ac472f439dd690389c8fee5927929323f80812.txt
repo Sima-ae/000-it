@@ -1,0 +1,1 @@
+Kun synlig for superadmin, admin og administratorer.

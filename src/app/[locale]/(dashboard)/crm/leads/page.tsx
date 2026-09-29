@@ -232,7 +232,7 @@ export default function CrmLeadsPage() {
         onOpenChange={(open) => !open && !deleting && setDeleteLead(null)}
       >
         <DialogContent className="w-[min(96vw,28rem)] gap-0 overflow-hidden p-0">
-          <DialogHeader className="border-b border-border/60 bg-muted/20 px-5 py-4 pr-14">
+          <DialogHeader className="border-b border-border/60 bg-muted/20 px-5 py-4 pe-14">
             <DialogTitle>{t("leadDeleteTitle")}</DialogTitle>
             <DialogDescription>{t("leadDeleteHint")}</DialogDescription>
           </DialogHeader>

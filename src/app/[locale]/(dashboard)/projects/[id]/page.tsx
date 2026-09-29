@@ -289,9 +289,9 @@ export default function ProjectDetailPage() {
     <div className="space-y-6">
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div className="min-w-0 space-y-2">
-          <Button asChild variant="ghost" size="sm" className="-ml-2 gap-1.5">
+          <Button asChild variant="ghost" size="sm" className="-ms-2 gap-1.5">
             <SoftLink href={localizedHref(locale, "/projects")}>
-              <ArrowLeft className="h-4 w-4" />
+              <ArrowLeft className="h-4 w-4 rtl:rotate-180" />
               {t("projectBack")}
             </SoftLink>
           </Button>
@@ -321,9 +321,9 @@ export default function ProjectDetailPage() {
           <div className="flex flex-wrap gap-2">
             <Button onClick={() => void saveProject()} disabled={saving}>
               {saving ? (
-                <Loader2 className="mr-1.5 h-4 w-4 animate-spin" />
+                <Loader2 className="me-1.5 h-4 w-4 animate-spin" />
               ) : (
-                <Save className="mr-1.5 h-4 w-4" />
+                <Save className="me-1.5 h-4 w-4" />
               )}
               {t("projectSave")}
             </Button>
@@ -338,7 +338,7 @@ export default function ProjectDetailPage() {
                   }
                 }}
               >
-                <Trash2 className="mr-1.5 h-4 w-4" />
+                <Trash2 className="me-1.5 h-4 w-4" />
                 {t("projectDelete")}
               </Button>
             ) : null}

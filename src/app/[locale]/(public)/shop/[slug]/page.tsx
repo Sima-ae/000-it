@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { SoftLink } from "@/components/shared/SoftLink";
@@ -7,9 +8,38 @@ import { ShopProductImage } from "@/components/shop/ShopProductImage";
 import { getShopProductBySlug, loadShopCatalogFromDb, localizeShopProduct, shopHasDiscount, shopUnitPriceInclCents } from "@/lib/shop/catalog";
 import { centsToEuros, formatShopEuro } from "@/lib/shop/vat";
 import { localizedHref } from "@/i18n/pathnames";
+import { buildPageMetadata } from "@/lib/seo";
 import { resolveEntityParam } from "@/lib/resolve-entity-param";
+import { canonicalEntityKey } from "@/lib/entity-slug-cache";
+import { hydrateEntitySlugs } from "@/lib/entity-slugs";
 
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}): Promise<Metadata> {
+  const { locale, slug: rawSlug } = await params;
+  await hydrateEntitySlugs(locale);
+  const slug = canonicalEntityKey(locale, "shop", rawSlug);
+  await loadShopCatalogFromDb();
+  const product = getShopProductBySlug(slug);
+  if (!product) return { title: "Not found", robots: { index: false } };
+  const localized = localizeShopProduct(product, locale);
+  const description =
+    localized.localizedShort ||
+    localized.localizedDescription.split(/\n{2,}/)[0] ||
+    localized.localizedName;
+  return buildPageMetadata({
+    locale,
+    path: `/shop/${slug}`,
+    title: localized.localizedName,
+    description,
+    image: product.image,
+    imageAlt: localized.localizedName,
+  });
+}
 
 export default async function ShopProductPage({
   params,
@@ -37,7 +67,7 @@ export default async function ShopProductPage({
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-14 md:px-6 md:py-20">
-      <Button asChild variant="ghost" size="sm" className="mb-6 -ml-2">
+      <Button asChild variant="ghost" size="sm" className="mb-6 -ms-2">
         <SoftLink href={localizedHref(locale, "/shop")}>{t("backToShop")}</SoftLink>
       </Button>
 
@@ -75,7 +105,7 @@ export default async function ShopProductPage({
                   locale,
                 )}
                 {product.checkoutMonths && product.checkoutMonths > 1 ? (
-                  <span className="ml-2 text-base font-medium text-muted-foreground">
+                  <span className="ms-2 text-base font-medium text-muted-foreground">
                     {t("perMonth")}
                   </span>
                 ) : null}
@@ -85,7 +115,7 @@ export default async function ShopProductPage({
             <p className="font-display mt-6 text-3xl font-bold">
               {formatShopEuro(centsToEuros(product.priceInclCents), locale)}
               {product.checkoutMonths && product.checkoutMonths > 1 ? (
-                <span className="ml-2 text-base font-medium text-muted-foreground">
+                <span className="ms-2 text-base font-medium text-muted-foreground">
                   {t("perMonth")}
                 </span>
               ) : null}

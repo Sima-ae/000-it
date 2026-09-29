@@ -213,13 +213,13 @@ export function Agent000ChatPane({
                   type="button"
                   size="sm"
                   variant="secondary"
-                  className="h-8 max-w-full rounded-lg text-left text-xs"
+                  className="h-8 max-w-full rounded-lg text-start text-xs"
                   onClick={() => pickLink(link)}
                 >
                   {link.kind === "kennisbank" ? (
-                    <BookOpen className="mr-1 h-3.5 w-3.5 shrink-0" />
+                    <BookOpen className="me-1 h-3.5 w-3.5 shrink-0" />
                   ) : (
-                    <HelpCircle className="mr-1 h-3.5 w-3.5 shrink-0" />
+                    <HelpCircle className="me-1 h-3.5 w-3.5 shrink-0" />
                   )}
                   <span className="truncate">
                     {index + 1}. {link.title}
@@ -230,7 +230,7 @@ export function Agent000ChatPane({
                 asChild
                 size="sm"
                 variant="outline"
-                className="h-8 max-w-full rounded-lg border-white/20 bg-white/5 text-left text-xs text-slate-100 hover:bg-white/10"
+                className="h-8 max-w-full rounded-lg border-white/20 bg-white/5 text-start text-xs text-slate-100 hover:bg-white/10"
               >
                 <SoftLink
                   href={link.href}
@@ -241,9 +241,9 @@ export function Agent000ChatPane({
                   }}
                 >
                   {link.kind === "kennisbank" ? (
-                    <BookOpen className="mr-1 h-3.5 w-3.5 shrink-0" />
+                    <BookOpen className="me-1 h-3.5 w-3.5 shrink-0" />
                   ) : (
-                    <HelpCircle className="mr-1 h-3.5 w-3.5 shrink-0" />
+                    <HelpCircle className="me-1 h-3.5 w-3.5 shrink-0" />
                   )}
                   <span className="truncate">
                     {link.kind === "kennisbank" ? t("linkKb") : t("linkFaq")}:{" "}
@@ -265,7 +265,7 @@ export function Agent000ChatPane({
         {actions.includes("book_appointment") ? (
           <Button asChild size="sm" variant="secondary" className="h-8 rounded-lg text-xs">
             <SoftLink href={localizedHref(locale, "/afspraak")}>
-              <Calendar className="mr-1 h-3.5 w-3.5" />
+              <Calendar className="me-1 h-3.5 w-3.5" />
               {t("actionBook")}
             </SoftLink>
           </Button>
@@ -278,14 +278,14 @@ export function Agent000ChatPane({
             className="h-8 rounded-lg text-xs"
             onClick={() => onOpenLiveChat?.(draft || undefined)}
           >
-            <Ticket className="mr-1 h-3.5 w-3.5" />
+            <Ticket className="me-1 h-3.5 w-3.5" />
             {t("actionTicket")}
           </Button>
         ) : null}
         {actions.includes("contact") ? (
           <Button asChild size="sm" variant="outline" className="h-8 rounded-lg text-xs">
             <SoftLink href={localizedHref(locale, "/contact")}>
-              <Mail className="mr-1 h-3.5 w-3.5" />
+              <Mail className="me-1 h-3.5 w-3.5" />
               {t("actionContact")}
             </SoftLink>
           </Button>

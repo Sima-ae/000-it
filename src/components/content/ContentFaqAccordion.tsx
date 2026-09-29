@@ -24,7 +24,7 @@ export function ContentFaqAccordion({ items }: { items: FaqItem[] }) {
             value={`faq-${index}`}
             className="border-border/60"
           >
-            <AccordionTrigger className="text-left font-display text-sm hover:no-underline md:text-base">
+            <AccordionTrigger className="text-start font-display text-sm hover:no-underline md:text-base">
               {item.question}
             </AccordionTrigger>
             <AccordionContent className="text-sm leading-relaxed text-muted-foreground md:text-base">

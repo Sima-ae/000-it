@@ -313,5 +313,68 @@
     "privacyLabel": "プライバシーポリシー",
     "termsLabel": "ご利用条件",
     "cookiesLabel": "Cookieポリシー"
+  },
+  "bn": {
+    "updatedLabel": "সর্বশেষ আপডেট করা হয়েছে 01-07-2026 তারিখে",
+    "privacyTitle": "গোপনীয়তা নীতি",
+    "termsTitle": "শর্তাবলী",
+    "cookiesTitle": "কুকি নীতি",
+    "privacyLabel": "গোপনীয়তা নীতি",
+    "termsLabel": "শর্তাবলী",
+    "cookiesLabel": "কুকি নীতি"
+  },
+  "hi": {
+    "updatedLabel": "अंतिम बार 01-07-2026 को अद्यतन किया गया",
+    "privacyTitle": "गोपनीयता नीति",
+    "termsTitle": "नियम और शर्तें",
+    "cookiesTitle": "कूकी नीति",
+    "privacyLabel": "गोपनीयता नीति",
+    "termsLabel": "नियम और शर्तें",
+    "cookiesLabel": "कूकी नीति"
+  },
+  "mr": {
+    "updatedLabel": "शेवटचे अपडेट 01-07-2026 रोजी",
+    "privacyTitle": "गोपनीयता धोरण",
+    "termsTitle": "नियम आणि अटी",
+    "cookiesTitle": "कुकी धोरण",
+    "privacyLabel": "गोपनीयता धोरण",
+    "termsLabel": "नियम आणि अटी",
+    "cookiesLabel": "कुकी धोरण"
+  },
+  "ps": {
+    "updatedLabel": "وروستی تازه په 01-07-2026",
+    "privacyTitle": "د محرمیت پالیسي",
+    "termsTitle": "شرایط او شرایط",
+    "cookiesTitle": "د کوکي پالیسي",
+    "privacyLabel": "د محرمیت پالیسي",
+    "termsLabel": "شرایط او شرایط",
+    "cookiesLabel": "د کوکي پالیسي"
+  },
+  "pa": {
+    "updatedLabel": "ਆਖਰੀ ਵਾਰ 01-07-2026 ਨੂੰ ਅੱਪਡੇਟ ਕੀਤਾ ਗਿਆ",
+    "privacyTitle": "ਪਰਾਈਵੇਟ ਨੀਤੀ",
+    "termsTitle": "ਨਿਬੰਧਨ ਅਤੇ ਸ਼ਰਤਾਂ",
+    "cookiesTitle": "ਕੂਕੀ ਨੀਤੀ",
+    "privacyLabel": "ਪਰਾਈਵੇਟ ਨੀਤੀ",
+    "termsLabel": "ਨਿਬੰਧਨ ਅਤੇ ਸ਼ਰਤਾਂ",
+    "cookiesLabel": "ਕੂਕੀ ਨੀਤੀ"
+  },
+  "te": {
+    "updatedLabel": "చివరిగా 01-07-2026న నవీకరించబడింది",
+    "privacyTitle": "గోప్యతా విధానం",
+    "termsTitle": "నిబంధనలు మరియు షరతులు",
+    "cookiesTitle": "కుకీ విధానం",
+    "privacyLabel": "గోప్యతా విధానం",
+    "termsLabel": "నిబంధనలు మరియు షరతులు",
+    "cookiesLabel": "కుకీ విధానం"
+  },
+  "ur": {
+    "updatedLabel": "آخری بار 01-07-2026 کو اپ ڈیٹ کیا گیا۔",
+    "privacyTitle": "رازداری کی پالیسی",
+    "termsTitle": "شرائط و ضوابط",
+    "cookiesTitle": "کوکی پالیسی",
+    "privacyLabel": "رازداری کی پالیسی",
+    "termsLabel": "شرائط و ضوابط",
+    "cookiesLabel": "کوکی پالیسی"
   }
 }

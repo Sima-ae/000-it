@@ -158,7 +158,7 @@ export default function CaseStudiesAdminPage() {
       >
         <DialogContent className="max-h-[min(92vh,920px)] w-[min(96vw,56rem)] overflow-hidden p-0">
           <div className="min-h-0 flex-1 overflow-y-auto p-6 md:p-8">
-            <DialogHeader className="mb-6 pr-8">
+            <DialogHeader className="mb-6 pe-8">
               <DialogTitle>{isEdit ? "Edit case study" : "Add case study"}</DialogTitle>
               <DialogDescription>
                 Klant and URL are editable for admin users. Public visitors see Klant as text and a

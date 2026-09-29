@@ -43,6 +43,13 @@ export const GOOGLE_TRANSLATE_TL: Record<string, string> = {
   az: "az",
   zh: "zh-CN",
   ja: "ja",
+  bn: "bn",
+  hi: "hi",
+  mr: "mr",
+  ps: "ps",
+  pa: "pa",
+  te: "te",
+  ur: "ur",
 };
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
@@ -184,6 +191,13 @@ const SCRIPT_RE: Record<string, RegExp> = {
   uk: /[\u0400-\u04FF]/,
   bg: /[\u0400-\u04FF]/,
   mk: /[\u0400-\u04FF]/,
+  bn: /[\u0980-\u09FF]/,
+  hi: /[\u0900-\u097F]/,
+  mr: /[\u0900-\u097F]/,
+  ps: /[\u0600-\u06FF]/,
+  pa: /[\u0A00-\u0A7F]/,
+  te: /[\u0C00-\u0C7F]/,
+  ur: /[\u0600-\u06FF]/,
 };
 
 function needsTargetScript(locale: string) {

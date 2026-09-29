@@ -63,7 +63,7 @@ export function ShopHostingSection({
   return (
     <section
       id={id}
-      className={cn("mt-16 scroll-mt-28 text-left md:scroll-mt-32", className)}
+      className={cn("mt-16 scroll-mt-28 text-start md:scroll-mt-32", className)}
     >
       <Reveal from="up" duration={0.45}>
         <h2 className="text-center font-display text-2xl font-semibold tracking-tight text-accent">
@@ -150,21 +150,21 @@ export function ShopHostingSection({
                   )}
                 >
                   {featured ? (
-                    <div className="pricing-badge absolute right-3 top-3 z-10 rounded-full bg-primary px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-primary-foreground">
+                    <div className="pricing-badge absolute end-3 top-3 z-10 rounded-full bg-primary px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-primary-foreground">
                       {tPricing("mostChosen")}
                     </div>
                   ) : null}
                   <h3
                     className={cn(
                       "font-display text-base font-semibold tracking-tight md:text-lg",
-                      featured && "pr-20",
+                      featured && "pe-20",
                     )}
                   >
                     {localized.localizedName}
                   </h3>
                   <p className="mt-2 font-display text-2xl font-bold tracking-tight text-primary md:text-[1.75rem]">
                     {salePrice}
-                    <span className="ml-1 text-xs font-medium text-muted-foreground">
+                    <span className="ms-1 text-xs font-medium text-muted-foreground">
                       {period}
                     </span>
                   </p>

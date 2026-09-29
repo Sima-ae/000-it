@@ -212,7 +212,7 @@ function GlobalSearchOverlay({ onClose }: { onClose: () => void }) {
           <div className="flex items-center gap-2">
             <div className="relative min-w-0 flex-1">
               <Search
-                className="pointer-events-none absolute left-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground"
+                className="pointer-events-none absolute inset-s-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground"
                 aria-hidden
               />
               <input
@@ -232,7 +232,7 @@ function GlobalSearchOverlay({ onClose }: { onClose: () => void }) {
                 }}
                 placeholder={t("placeholder")}
                 autoComplete="off"
-                className="w-full rounded-xl border border-border/70 bg-muted/30 py-3 pl-11 pr-4 text-base outline-none ring-primary/30 focus:ring-2 md:text-[1.05rem]"
+                className="w-full rounded-xl border border-border/70 bg-muted/30 py-3 ps-11 pe-4 text-base outline-none ring-primary/30 focus:ring-2 md:text-[1.05rem]"
               />
             </div>
             <Button
@@ -312,7 +312,7 @@ function ResultSection({
         </span>
         <h2 className="text-[11px] font-semibold uppercase tracking-[0.16em] text-accent">
           {label}
-          <span className="ml-2 font-medium normal-case tracking-normal text-muted-foreground">
+          <span className="ms-2 font-medium normal-case tracking-normal text-muted-foreground">
             ({items.length})
           </span>
         </h2>

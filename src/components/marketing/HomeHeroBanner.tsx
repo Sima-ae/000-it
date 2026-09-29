@@ -12,6 +12,7 @@ import { OPEN_CHAT_EVENT } from "@/components/chat/open-live-chat";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
 import { localizedHref } from "@/i18n/pathnames";
+import { isRtlLocale } from "@/i18n/languages";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -24,6 +25,7 @@ export function HomeHeroBanner({ scanCount }: { scanCount: number }) {
   const tNav = useTranslations("nav");
   const locale = useLocale();
   const reduce = useReducedMotion();
+  const rtl = isRtlLocale(locale);
 
   const item = (delay: number) =>
     reduce
@@ -75,7 +77,7 @@ export function HomeHeroBanner({ scanCount }: { scanCount: number }) {
       <div className="relative z-2 mx-auto w-full max-w-6xl px-4 pt-[calc(var(--nav-offset)+1.25rem)] pb-10 sm:pt-[calc(var(--nav-offset)+1.5rem)] sm:pb-12 md:px-6 lg:pt-[calc(var(--nav-offset)+1.75rem)] lg:pb-14">
         <div className="mx-auto flex w-fit max-w-full flex-col items-center gap-6 sm:gap-7 lg:flex-row lg:items-center lg:gap-8 xl:gap-10">
         {/* Copy + CTAs */}
-        <div className="mx-auto flex w-full max-w-xl shrink-0 flex-col items-center gap-3 text-center text-white sm:gap-3.5 lg:mx-0 lg:max-w-md lg:items-start lg:text-left xl:max-w-120">
+        <div className="mx-auto flex w-full max-w-xl shrink-0 flex-col items-center gap-3 text-center text-white sm:gap-3.5 lg:mx-0 lg:max-w-md lg:items-start lg:text-start xl:max-w-120">
           <motion.h1
             className="font-display text-[1.75rem] font-semibold leading-[1.12] tracking-tight sm:text-4xl md:text-[2.6rem] lg:text-[2.75rem]"
             {...item(0.05)}
@@ -111,7 +113,7 @@ export function HomeHeroBanner({ scanCount }: { scanCount: number }) {
                 <span className="font-display text-sm font-bold tracking-tight text-white">
                   <AnimatedCounter value={scanCount} />
                 </span>
-                <span className="text-left text-xs leading-snug text-white/80">{t("scansLabel")}</span>
+                <span className="text-start text-xs leading-snug text-white/80">{t("scansLabel")}</span>
               </div>
             </div>
 
@@ -135,16 +137,16 @@ export function HomeHeroBanner({ scanCount }: { scanCount: number }) {
         </div>
 
         {/* AI-klaar card + Agent 000 */}
-        <div className="relative mx-auto flex w-full max-w-lg shrink-0 items-end justify-center lg:mx-0 lg:w-auto lg:max-w-none lg:justify-end lg:-mr-10 xl:-mr-14">
+        <div className="relative mx-auto flex w-full max-w-lg shrink-0 items-end justify-center lg:mx-0 lg:w-auto lg:max-w-none lg:justify-end lg:-me-10 xl:-me-14">
           <div
-            className="pointer-events-none absolute bottom-6 right-[20%] h-32 w-32 rounded-full bg-white/20 blur-3xl sm:h-40 sm:w-40"
+            className="pointer-events-none absolute bottom-6 inset-e-[20%] h-32 w-32 rounded-full bg-white/20 blur-3xl sm:h-40 sm:w-40"
             aria-hidden
           />
 
-          <div className="relative z-10 flex w-full items-end justify-center gap-0 pl-2 pr-1 sm:pl-4 sm:pr-2 lg:w-auto lg:justify-end lg:pl-0 lg:pr-0">
+          <div className="relative z-10 flex w-full items-end justify-center gap-0 ps-2 pe-1 sm:ps-4 sm:pe-2 lg:w-auto lg:justify-end lg:ps-0 lg:pe-0">
             <motion.div
-              className="relative z-20 mb-7 w-[72%] max-w-92 shrink-0 sm:mb-9 sm:w-92 lg:mb-12 lg:-mr-16"
-              initial={reduce ? false : { opacity: 0, x: -14, y: 10 }}
+              className="relative z-20 mb-7 w-[72%] max-w-92 shrink-0 sm:mb-9 sm:w-92 lg:mb-12 lg:-me-16"
+              initial={reduce ? false : { opacity: 0, x: rtl ? 14 : -14, y: 10 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ duration: 0.65, delay: 0.18, ease }}
             >
@@ -158,7 +160,7 @@ export function HomeHeroBanner({ scanCount }: { scanCount: number }) {
                   new CustomEvent(OPEN_CHAT_EVENT, { detail: { prefill: "" } }),
                 );
               }}
-              className="relative z-30 -ml-6 mb-0 shrink-0 cursor-pointer rounded-full outline-none transition-transform hover:scale-[1.03] focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent active:scale-[0.98] sm:-ml-5 lg:-ml-4"
+              className="relative z-30 -ms-6 mb-0 shrink-0 cursor-pointer rounded-full outline-none transition-transform hover:scale-[1.03] focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent active:scale-[0.98] sm:-ms-5 lg:-ms-4"
               aria-label={t("openChatWithAgent")}
               initial={reduce ? false : { opacity: 0, y: 40, scale: 0.96 }}
               animate={

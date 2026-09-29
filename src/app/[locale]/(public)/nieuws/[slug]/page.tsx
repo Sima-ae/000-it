@@ -61,9 +61,9 @@ export default async function NewsArticlePage({
         ])}
       />
 
-      <Button asChild variant="ghost" size="sm" className="mb-8 -ml-2">
+      <Button asChild variant="ghost" size="sm" className="mb-8 -ms-2">
         <SoftLink href={localizedHref(locale, "/nieuws")}>
-          <ArrowLeft className="mr-2 h-4 w-4" />
+          <ArrowLeft className="me-2 h-4 w-4 rtl:rotate-180" />
           {t("back")}
         </SoftLink>
       </Button>
@@ -113,7 +113,7 @@ export default async function NewsArticlePage({
         <div className="mt-10">
           <Button asChild>
             <a href={post.projectUrl} target="_blank" rel="noopener noreferrer">
-              <ExternalLink className="mr-2 h-4 w-4" />
+              <ExternalLink className="me-2 h-4 w-4" />
               {t("viewSource")}
             </a>
           </Button>

@@ -138,7 +138,7 @@ export default function CrmMessagesPage() {
                     if (incoming && !msg.readAt) void markRead(msg.id);
                   }}
                   className={cn(
-                    "w-full rounded-xl border px-3 py-2 text-left text-sm",
+                    "w-full rounded-xl border px-3 py-2 text-start text-sm",
                     incoming && !msg.readAt
                       ? "border-primary/40 bg-primary/5"
                       : "border-border",

@@ -15,7 +15,7 @@ export type SiteLanguage = {
   enabled: boolean;
 };
 
-/** 35 languages matching the language-switcher flag set. */
+/** 42 languages matching the language-switcher flag set. */
 export const siteLanguages: SiteLanguage[] = [
   { code: "nl", nativeName: "Nederlands", flag: "nl", enabled: true },
   { code: "en", nativeName: "English", flag: "en", enabled: true },
@@ -52,7 +52,33 @@ export const siteLanguages: SiteLanguage[] = [
   { code: "az", nativeName: "Azərbaycan", flag: "az", enabled: true },
   { code: "zh", nativeName: "中文", flag: "cn", enabled: true },
   { code: "ja", nativeName: "日本語", flag: "jp", enabled: true },
+  { code: "bn", nativeName: "বাংলা", flag: "bd", enabled: true },
+  { code: "hi", nativeName: "हिन्दी", flag: "in", enabled: true },
+  { code: "mr", nativeName: "मराठी", flag: "in", enabled: true },
+  { code: "ps", nativeName: "پښتو", flag: "in", enabled: true },
+  { code: "pa", nativeName: "ਪੰਜਾਬੀ", flag: "in", enabled: true },
+  { code: "te", nativeName: "తెలుగు", flag: "in", enabled: true },
+  { code: "ur", nativeName: "اردو", flag: "pk", enabled: true },
 ];
+
+/**
+ * Languages that share the India flag. The switcher shows one India flag
+ * and a menu to pick among these.
+ */
+export const INDIA_LANGUAGE_CODES = ["hi", "mr", "ps", "pa", "te"] as const;
+
+const indiaLanguageCodeSet = new Set<string>(INDIA_LANGUAGE_CODES);
+
+export function isIndiaLanguage(code: string): boolean {
+  return indiaLanguageCodeSet.has(code);
+}
+
+export function indiaLanguages(): SiteLanguage[] {
+  return INDIA_LANGUAGE_CODES.flatMap((code) => {
+    const lang = siteLanguages.find((item) => item.code === code);
+    return lang?.enabled ? [lang] : [];
+  });
+}
 
 export function enabledLanguages(): SiteLanguage[] {
   return siteLanguages.filter((lang) => lang.enabled);
@@ -64,6 +90,17 @@ export function getLanguage(code: string): SiteLanguage | undefined {
 
 export function flagSrc(flag: string): string {
   return `/uploads/flags/${flag}.svg`;
+}
+
+/** Locales that use right-to-left script (html `dir="rtl"`). */
+export const RTL_LOCALES = new Set(["ar", "he", "ps", "ur"]);
+
+export function isRtlLocale(locale: string): boolean {
+  return RTL_LOCALES.has(locale);
+}
+
+export function localeTextDir(locale: string): "rtl" | "ltr" {
+  return isRtlLocale(locale) ? "rtl" : "ltr";
 }
 
 /** Swap the locale segment in a pathname (`/nl/contact` → `/en/contact`). */

@@ -70,7 +70,7 @@ export default async function PortfolioDetailPage({
     <div className="mx-auto max-w-5xl px-4 py-12 md:px-6">
       <Button asChild variant="ghost" size="sm" className="mb-6">
         <Link href={localizedHref(locale, "/portfolio")}>
-          <ArrowLeft className="mr-2 h-4 w-4" />
+          <ArrowLeft className="me-2 h-4 w-4 rtl:rotate-180" />
           {t("back")}
         </Link>
       </Button>
@@ -93,7 +93,7 @@ export default async function PortfolioDetailPage({
           {item.projectUrl && (
             <Button asChild>
               <a href={item.projectUrl} target="_blank" rel="noreferrer">
-                <ExternalLink className="mr-2 h-4 w-4" />
+                <ExternalLink className="me-2 h-4 w-4" />
                 {t("visit")}
               </a>
             </Button>
@@ -101,7 +101,7 @@ export default async function PortfolioDetailPage({
           {item.repoUrl && (
             <Button asChild variant="outline">
               <a href={item.repoUrl} target="_blank" rel="noreferrer">
-                <GitBranch className="mr-2 h-4 w-4" />
+                <GitBranch className="me-2 h-4 w-4" />
                 {t("repo")}
               </a>
             </Button>

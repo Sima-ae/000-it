@@ -192,10 +192,10 @@ function StatusRow({
 
   return (
     <div className={cn(depth === 0 && "border-b border-border/70 py-4")}>
-      <div className={cn(depth > 0 && "border-t border-border/40 py-3 pl-4")}>
+      <div className={cn(depth > 0 && "border-t border-border/40 py-3 ps-4")}>
         <button
           type="button"
-          className="flex w-full cursor-pointer items-center justify-between gap-3 text-left"
+          className="flex w-full cursor-pointer items-center justify-between gap-3 text-start"
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
         >

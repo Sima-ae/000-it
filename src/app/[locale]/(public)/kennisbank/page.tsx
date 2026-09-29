@@ -87,7 +87,7 @@ export default async function KennisbankPage({
               <span className="rounded-md border border-border/60 bg-background/80 px-2.5 py-1 text-[11px] font-medium tabular-nums text-muted-foreground">
                 {total} {t("articlesLabel")}
               </span>
-              <div className="relative ml-1 hidden h-14 w-16 overflow-hidden lg:block">
+              <div className="relative ms-1 hidden h-14 w-16 overflow-hidden lg:block">
                 <Image
                   src={BRANDING_IMAGES.tabletMarketer}
                   alt=""

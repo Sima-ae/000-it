@@ -55,7 +55,7 @@ export function looksLikeEnglishNewsCopy(
 ): boolean {
   if (!text?.trim() || locale === "en") return false;
   // Script locales are handled by isAcceptableTranslation / needsTargetScript.
-  if (/^(ar|he|fa|ur|ja|zh|ko|el|ru|uk|bg|sr|mk|th|hi|bn)$/i.test(locale)) {
+  if (/^(ar|he|fa|ur|ps|ja|zh|ko|el|ru|uk|bg|sr|mk|th|hi|bn|mr|pa|te)$/i.test(locale)) {
     return false;
   }
   const words = text.trim().split(/\s+/).filter(Boolean);
@@ -79,7 +79,7 @@ export function newsCopyLooksComplete(
   if (isNewsDescriptionStub(copy.description)) return false;
   // Truncated / footer-only bodies vs full English article.
   // Compact scripts (zh/ja/…) naturally produce much shorter character counts.
-  const compactScript = /^(zh|ja|ko|ar|he|th|hi|bn|ka|hy)$/i.test(locale);
+  const compactScript = /^(zh|ja|ko|ar|he|th|hi|bn|mr|pa|te|ur|ps|ka|hy)$/i.test(locale);
   const minRatio = compactScript ? 0.12 : 0.4;
   const minAbs = compactScript ? 20 : 60;
   if (

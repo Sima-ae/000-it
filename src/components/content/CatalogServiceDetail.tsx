@@ -149,7 +149,7 @@ export async function CatalogServiceDetail({
                         <p className="font-display text-3xl font-bold text-primary">
                           {formatEuro(content.price)}
                           {"priceSuffix" in content && content.priceSuffix ? (
-                            <span className="ml-2 text-base font-medium text-muted-foreground">
+                            <span className="ms-2 text-base font-medium text-muted-foreground">
                               {content.priceSuffix}
                             </span>
                           ) : null}
@@ -159,7 +159,7 @@ export async function CatalogServiceDetail({
                       <p className="font-display text-3xl font-bold text-foreground">
                         {formatEuro(content.price)}
                         {"priceSuffix" in content && content.priceSuffix ? (
-                          <span className="ml-2 text-base font-medium text-muted-foreground">
+                          <span className="ms-2 text-base font-medium text-muted-foreground">
                             {content.priceSuffix}
                           </span>
                         ) : null}

@@ -1,0 +1,1 @@
+Widoczne tylko dla superadministratora, administratora i menedżerów.

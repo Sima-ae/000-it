@@ -816,10 +816,10 @@ export function DomainSearch({
               >
                 {label}
                 {id === "premium" ? (
-                  <span className="ml-1 opacity-70">({premiumTlds.length})</span>
+                  <span className="ms-1 opacity-70">({premiumTlds.length})</span>
                 ) : null}
                 {id === "all" ? (
-                  <span className="ml-1 opacity-70">({pricedProducts.length})</span>
+                  <span className="ms-1 opacity-70">({pricedProducts.length})</span>
                 ) : null}
               </button>
             );
@@ -942,12 +942,12 @@ export function DomainSearch({
               <div className="min-h-0">
                 <div className="mb-2 flex flex-wrap items-center gap-2">
                   <div className="relative min-w-0 flex-1">
-                    <Search className="pointer-events-none absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
+                    <Search className="pointer-events-none absolute start-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
                     <Input
                       value={tldQuery}
                       onChange={(e) => setTldQuery(e.target.value)}
                       placeholder={t("searchTlds", { count: products.length })}
-                      className="h-9 rounded-xl pl-8"
+                      className="h-9 rounded-xl ps-8"
                     />
                   </div>
                 </div>
@@ -989,7 +989,7 @@ export function DomainSearch({
                       <div key={catId}>
                         <button
                           type="button"
-                          className="flex w-full items-center justify-between rounded-lg px-2 py-1.5 text-left text-xs font-semibold uppercase tracking-widest text-muted-foreground hover:bg-muted/40"
+                          className="flex w-full items-center justify-between rounded-lg px-2 py-1.5 text-start text-xs font-semibold uppercase tracking-widest text-muted-foreground hover:bg-muted/40"
                           onClick={() =>
                             setOpenCategories((prev) => ({
                               ...prev,
@@ -1027,7 +1027,7 @@ export function DomainSearch({
                                   )}
                                 >
                                   <span className="font-bold">.{p.tld}</span>
-                                  <span className="ml-1 font-normal opacity-80">
+                                  <span className="ms-1 font-normal opacity-80">
                                     {p.onOffer && p.listPriceLabel ? (
                                       <>
                                         <span className="line-through opacity-70">
@@ -1199,7 +1199,7 @@ export function DomainSearch({
                       <p className={cn("text-sm font-medium", tone)}>
                         {row.available ? t("available") : t("unavailable")}
                         {row.priceInCents != null ? (
-                          <span className={cn("ml-2", tone)}>
+                          <span className={cn("ms-2", tone)}>
                             <DomainPriceDisplay
                               priceInCents={row.priceInCents}
                               listPriceInCents={row.listPriceInCents}
@@ -1309,7 +1309,7 @@ export function DomainSearch({
         }}
       >
         <DialogContent className="w-[min(96vw,36rem)] gap-0 overflow-hidden p-0">
-          <DialogHeader className="shrink-0 border-b border-border/60 bg-muted/20 px-5 py-4 pr-14 md:px-6">
+          <DialogHeader className="shrink-0 border-b border-border/60 bg-muted/20 px-5 py-4 pe-14 md:px-6">
             <DialogTitle className="text-xl md:text-2xl">
               {t("registrantTitle")}
             </DialogTitle>
@@ -1346,7 +1346,7 @@ export function DomainSearch({
                   </div>
                 </div>
                 {checkoutPriceLabel ? (
-                  <div className="text-right tabular-nums">
+                  <div className="text-end tabular-nums">
                     {checkoutListPriceLabel ? (
                       <p className="text-xs text-muted-foreground line-through decoration-2">
                         {checkoutListPriceLabel}
@@ -1518,7 +1518,7 @@ export function DomainSearch({
         }}
       >
         <DialogContent className="w-[min(96vw,36rem)] gap-0 overflow-hidden p-0">
-          <DialogHeader className="shrink-0 border-b border-border/60 bg-muted/20 px-5 py-4 pr-14 md:px-6">
+          <DialogHeader className="shrink-0 border-b border-border/60 bg-muted/20 px-5 py-4 pe-14 md:px-6">
             <DialogTitle className="text-xl md:text-2xl">
               {t("transferDialogTitle")}
             </DialogTitle>
@@ -1542,7 +1542,7 @@ export function DomainSearch({
                   </p>
                 </div>
                 {transferPriceLabel ? (
-                  <div className="text-right tabular-nums">
+                  <div className="text-end tabular-nums">
                     <p className="font-semibold text-accent text-base">
                       {transferPriceLabel}
                     </p>

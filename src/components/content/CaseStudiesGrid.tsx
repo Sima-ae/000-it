@@ -39,7 +39,7 @@ export function CaseStudiesGrid({
             <button
               type="button"
               onClick={() => setActiveId(item.id)}
-              className="block h-full w-full cursor-pointer text-left transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+              className="block h-full w-full cursor-pointer text-start transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
             >
               <GlassCard
                 interactive={false}

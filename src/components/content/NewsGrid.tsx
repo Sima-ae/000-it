@@ -28,7 +28,7 @@ export function NewsGrid({
         <Reveal key={post.id} delay={Math.min(i, 8) * 0.05}>
           <SoftLink
             href={localizedHref(locale, `/nieuws/${post.id}`)}
-            className="block h-full text-left transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+            className="block h-full text-start transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
             aria-label={labels.readMore ? `${labels.readMore}: ${post.title}` : post.title}
           >
             <GlassCard className="h-full overflow-hidden p-0 transition hover:border-primary/40 hover:shadow-md">

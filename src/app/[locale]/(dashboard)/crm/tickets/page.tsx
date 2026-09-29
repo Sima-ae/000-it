@@ -620,7 +620,7 @@ export default function CrmTicketsPage() {
 
       <Dialog open={!!editTicket} onOpenChange={(open) => !open && setEditTicket(null)}>
         <DialogContent className="w-[min(96vw,36rem)] gap-0 overflow-hidden p-0">
-          <DialogHeader className="shrink-0 border-b border-border/60 bg-muted/20 px-5 py-4 pr-14 md:px-6">
+          <DialogHeader className="shrink-0 border-b border-border/60 bg-muted/20 px-5 py-4 pe-14 md:px-6">
             <DialogTitle className="text-xl md:text-2xl">{t("ticketEditTitle")}</DialogTitle>
             <DialogDescription className="flex flex-wrap items-center gap-2 text-sm">
               {editTicket ? (
@@ -831,7 +831,7 @@ export default function CrmTicketsPage() {
 
       <Dialog open={!!deleteTicket} onOpenChange={(open) => !open && setDeleteTicket(null)}>
         <DialogContent className="w-[min(96vw,28rem)] gap-0 overflow-hidden p-0">
-          <DialogHeader className="shrink-0 border-b border-border/60 bg-muted/20 px-5 py-4 pr-14">
+          <DialogHeader className="shrink-0 border-b border-border/60 bg-muted/20 px-5 py-4 pe-14">
             <DialogTitle className="text-xl md:text-2xl">{t("ticketDeleteTitle")}</DialogTitle>
             <DialogDescription className="text-sm">
               {t("ticketDeleteHint")}

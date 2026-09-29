@@ -108,10 +108,10 @@ export function DomainTransferForm() {
 
   return (
     <form
-      className="mt-4 w-full max-w-2xl space-y-3 rounded-2xl border border-border/70 bg-background/80 p-4 text-left"
+      className="mt-4 w-full max-w-2xl space-y-3 rounded-2xl border border-border/70 bg-background/80 p-4 text-start"
       onSubmit={form.handleSubmit((v) => mutation.mutate(v))}
     >
-      <p className="text-center text-sm text-muted-foreground sm:text-left">
+      <p className="text-center text-sm text-muted-foreground sm:text-start">
         {t("transferHint")}
       </p>
       <div className="grid gap-3 sm:grid-cols-2">

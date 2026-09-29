@@ -191,7 +191,7 @@ export default function PortfolioAdminPage() {
       >
         <DialogContent className="max-h-[min(92vh,920px)] w-[min(96vw,56rem)] overflow-hidden p-0">
           <div className="min-h-0 flex-1 overflow-y-auto p-6 md:p-8">
-            <DialogHeader className="mb-6 pr-8">
+            <DialogHeader className="mb-6 pe-8">
               <DialogTitle>{isEdit ? "Edit project" : "Add project"}</DialogTitle>
               <DialogDescription>
                 Client and URL fields are available for admin users and shown publicly as

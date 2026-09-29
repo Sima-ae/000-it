@@ -1,3 +1,4 @@
+import { catalogServiceSummary, catalogServiceTitle } from "@/content/fixweb/catalog-title";
 import { getLocalizedCopySync } from "@/lib/localized-copy-cache";
 import { aiCustomServices } from "@/content/services/ai";
 import { aiInWordpressService } from "@/content/services/ai-in-wordpress";
@@ -1143,9 +1144,15 @@ export function getCustomServiceContent(slug: string, locale: string) {
     subtitle: string;
     blocks: ContentBlock[];
   }>("custom_service", slug, locale);
+  const translatedTitle =
+    locale === "en" ? entry.title : catalogServiceTitle(slug, locale, entry.title);
+  const translatedSubtitle =
+    locale === "en"
+      ? entry.subtitle
+      : catalogServiceSummary(slug, locale, entry.subtitle) || entry.subtitle;
   return {
-    title: overlay?.title || entry.title,
-    subtitle: overlay?.subtitle || entry.subtitle,
+    title: overlay?.title || translatedTitle,
+    subtitle: overlay?.subtitle || translatedSubtitle,
     price: entry.price ?? null,
     currency: entry.price != null ? "EUR" : null,
     image: entry.image ?? null,

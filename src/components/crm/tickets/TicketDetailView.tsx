@@ -178,7 +178,7 @@ export function TicketDetailView({
           </p>
           <div className="flex flex-wrap items-center gap-2">
             <h1 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
-              <span className="mr-2 text-primary">{ticketKey(ticket.id)}</span>
+              <span className="me-2 text-primary">{ticketKey(ticket.id)}</span>
               {ticket.subject}
             </h1>
             <Paperclip className="h-4 w-4 text-muted-foreground" />
@@ -232,7 +232,7 @@ export function TicketDetailView({
           >
             <Star
               className={cn(
-                "mr-1.5 h-3.5 w-3.5",
+                "me-1.5 h-3.5 w-3.5",
                 ticket.favorite && "fill-amber-500 text-amber-500",
               )}
             />
@@ -611,7 +611,7 @@ function DetailRow({
   return (
     <div className="flex items-start justify-between gap-3">
       <span className="text-muted-foreground">{label}</span>
-      <span className="text-right font-medium">{children}</span>
+      <span className="text-end font-medium">{children}</span>
     </div>
   );
 }

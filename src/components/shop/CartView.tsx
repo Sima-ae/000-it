@@ -92,7 +92,7 @@ export function CartView() {
                   </button>
                 </div>
               </div>
-              <p className="shrink-0 text-right font-semibold sm:pt-1">
+              <p className="shrink-0 text-end font-semibold sm:pt-1">
                 {formatShopEuro(centsToEuros(line.lineInclCents), locale)}
               </p>
             </div>

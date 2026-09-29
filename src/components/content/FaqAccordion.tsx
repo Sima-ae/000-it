@@ -66,19 +66,19 @@ export function FaqCategories({
     <div className="space-y-5">
       <div className="sticky top-[calc(var(--nav-offset)+0.5rem)] z-20 space-y-3 rounded-2xl border border-border/70 bg-background/95 p-3 shadow-sm backdrop-blur-md md:p-4">
         <div className="relative">
-          <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+          <Search className="pointer-events-none absolute start-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
           <Input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder={t("searchPlaceholder")}
-            className="h-11 rounded-xl border-border/70 bg-muted/30 pl-10 pr-10"
+            className="h-11 rounded-xl border-border/70 bg-muted/30 ps-10 pe-10"
             aria-label={t("searchAria")}
           />
           {query ? (
             <button
               type="button"
               onClick={() => setQuery("")}
-              className="absolute right-2.5 top-1/2 -translate-y-1/2 rounded-lg p-1 text-muted-foreground transition hover:bg-muted hover:text-foreground"
+              className="absolute end-2.5 top-1/2 -translate-y-1/2 rounded-lg p-1 text-muted-foreground transition hover:bg-muted hover:text-foreground"
               aria-label={t("clearSearch")}
             >
               <X className="h-4 w-4" />
@@ -98,7 +98,7 @@ export function FaqCategories({
             )}
           >
             {t("all")}
-            <span className="ml-1 opacity-70">
+            <span className="ms-1 opacity-70">
               ({categories.reduce((s, c) => s + c.items.length, 0)})
             </span>
           </button>
@@ -115,7 +115,7 @@ export function FaqCategories({
               )}
             >
               {category.title}
-              <span className="ml-1 opacity-70">({category.items.length})</span>
+              <span className="ms-1 opacity-70">({category.items.length})</span>
             </button>
           ))}
         </div>
@@ -190,7 +190,7 @@ function CategoryAccordion({
             highlightFaqId === item.id && "rounded-xl bg-primary/5 px-2 ring-1 ring-primary/30",
           )}
         >
-          <AccordionTrigger className="py-3 text-left text-sm font-medium hover:no-underline md:text-[15px]">
+          <AccordionTrigger className="py-3 text-start text-sm font-medium hover:no-underline md:text-[15px]">
             {item.question}
           </AccordionTrigger>
           <AccordionContent className="pb-3 text-sm leading-relaxed text-muted-foreground">

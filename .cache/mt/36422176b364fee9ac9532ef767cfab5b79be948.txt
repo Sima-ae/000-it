@@ -1,0 +1,1 @@
+Vidljivo samo super administratoru, administratoru i upraviteljima.

@@ -1,0 +1,1 @@
+Yalnız super admin, admin və menecerlərə görünür.

@@ -1,0 +1,1 @@
+DKIM, SPF, DMARC ਅਤੇ ਹੋਰ ਖਾਸ DNS ਸੈਟਿੰਗਾਂ

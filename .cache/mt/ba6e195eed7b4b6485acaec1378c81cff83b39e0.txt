@@ -1,0 +1,1 @@
+{totalPages} ਵਿੱਚੋਂ ਪੰਨਾ {page}

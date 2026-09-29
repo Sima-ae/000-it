@@ -5,6 +5,7 @@ import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
 import { JsonLd } from "@/components/seo/JsonLd";
 import {
+  cityDisplayName,
   getSeoCity,
   relatedSeoCities,
   seoCities,
@@ -48,7 +49,12 @@ export async function generateMetadata({
   const slug = canonicalEntityKey(locale, "city", rawCity);
   const city = getSeoCity(slug);
   if (!city) return { title: "Not found", robots: { index: false } };
-  return buildCityMetadata(city, locale);
+  const t = await getTranslations({ locale, namespace: "locations" });
+  const name = cityDisplayName(city, locale);
+  return buildCityMetadata(city, locale, {
+    title: t("cityTitle", { name }),
+    description: t("cityIntro", { name }),
+  });
 }
 
 export default async function LocatieCityPage({

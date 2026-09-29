@@ -275,7 +275,7 @@ export function Navigation() {
                       <button
                         type="button"
                         className={cn(
-                          "flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-left text-sm text-muted-foreground hover:bg-primary hover:text-primary-foreground",
+                          "flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-start text-sm text-muted-foreground hover:bg-primary hover:text-primary-foreground",
                           servicesActive && "bg-primary text-primary-foreground",
                         )}
                         onClick={() => setMobileServicesOpen((v) => !v)}
@@ -284,7 +284,7 @@ export function Navigation() {
                         <span className="text-xs">{mobileServicesOpen ? "−" : "+"}</span>
                       </button>
                       {mobileServicesOpen ? (
-                        <div className="mb-2 ml-2 space-y-3 border-l border-border/60 pl-3">
+                        <div className="mb-2 ms-2 space-y-3 border-s border-border/60 ps-3">
                           {(() => {
                             const allServicesHref = localizedHref(locale, "/diensten");
                             const allServicesActive =
@@ -396,7 +396,7 @@ export function Navigation() {
                       <button
                         type="button"
                         className={cn(
-                          "flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-left text-sm text-muted-foreground hover:bg-primary hover:text-primary-foreground",
+                          "flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-start text-sm text-muted-foreground hover:bg-primary hover:text-primary-foreground",
                           infoActive && "bg-primary text-primary-foreground",
                         )}
                         onClick={() => setMobileInfoOpen((v) => !v)}
@@ -405,7 +405,7 @@ export function Navigation() {
                         <span className="text-xs">{mobileInfoOpen ? "−" : "+"}</span>
                       </button>
                       {mobileInfoOpen ? (
-                        <div className="mb-2 ml-2 border-l border-border/60 pl-3">
+                        <div className="mb-2 ms-2 border-s border-border/60 ps-3">
                           {(
                             [
                               [aboutHref, "about"],
@@ -476,7 +476,7 @@ export function Navigation() {
                       <button
                         type="button"
                         className={cn(
-                          "flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-left text-sm text-muted-foreground hover:bg-primary hover:text-primary-foreground",
+                          "flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-start text-sm text-muted-foreground hover:bg-primary hover:text-primary-foreground",
                           active && "bg-primary text-primary-foreground",
                         )}
                         onClick={() => setMobileHostingOpen((v) => !v)}
@@ -485,7 +485,7 @@ export function Navigation() {
                         <span className="text-xs">{mobileHostingOpen ? "−" : "+"}</span>
                       </button>
                       {mobileHostingOpen ? (
-                        <div className="mb-2 ml-2 space-y-1 border-l border-border/60 pl-3">
+                        <div className="mb-2 ms-2 space-y-1 border-s border-border/60 ps-3">
                           {(() => {
                             const href = serviceGroupHref(locale, "hosting");
                             const itemActive =

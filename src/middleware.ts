@@ -62,9 +62,18 @@ function socialPreviewRewrite(request: NextRequest, pathname: string) {
   if (path === "/" || path === "") {
     path = `/${routing.defaultLocale}`;
   }
-  previewUrl.pathname = "/api/social-preview";
-  previewUrl.search = `?u=${encodeURIComponent(path)}`;
-  return NextResponse.rewrite(previewUrl);
+  // Put the public path in the URL path. LiteSpeed drops the query string on
+  // middleware rewrites, which made every share preview fall back to Dutch `/`.
+  const encoded = path
+    .split("/")
+    .filter(Boolean)
+    .map((segment) => encodeURIComponent(segment))
+    .join("/");
+  previewUrl.pathname = `/api/social-preview/${encoded}`;
+  previewUrl.search = "";
+  const headers = new Headers(request.headers);
+  headers.set("x-social-path", path);
+  return NextResponse.rewrite(previewUrl, { request: { headers } });
 }
 
 export default async function middleware(request: NextRequest) {
@@ -86,7 +95,13 @@ export default async function middleware(request: NextRequest) {
 
   // WhatsApp only reads ~5KB of HTML and misses Next.js OG tags (fonts/scripts first).
   // Serve a tiny OG-first HTML shell to social crawlers — no redirects.
-  if (isSocialBot && isProductionHost(host)) {
+  // Never rewrite the preview API itself (the rewrite re-enters middleware).
+  if (
+    isSocialBot &&
+    isProductionHost(host) &&
+    !pathname.startsWith("/api/") &&
+    !pathname.startsWith("/_next/")
+  ) {
     return socialPreviewRewrite(request, pathname);
   }
 

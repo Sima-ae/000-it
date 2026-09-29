@@ -101,7 +101,7 @@ export async function LegalDocument({
                   ) : null}
                   {vendor.cookies.length > 0 ? (
                     <div className="overflow-x-auto rounded-xl border border-border/60">
-                      <table className="min-w-full text-left text-xs md:text-sm">
+                      <table className="min-w-full text-start text-xs md:text-sm">
                         <thead className="bg-muted/40 text-foreground">
                           <tr>
                             <th className="px-2.5 py-1.5 font-medium">{t("name")}</th>

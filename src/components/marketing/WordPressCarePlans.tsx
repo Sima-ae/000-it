@@ -132,14 +132,14 @@ export function WordPressCarePlans({
                   )}
                 >
                   {pkg.featured ? (
-                    <div className="pricing-badge absolute right-3 top-3 z-10 rounded-full bg-primary px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-primary-foreground">
+                    <div className="pricing-badge absolute end-3 top-3 z-10 rounded-full bg-primary px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-primary-foreground">
                       {t("mostChosen")}
                     </div>
                   ) : null}
                   <span
                     className={cn(
                       "inline-flex w-fit rounded-full bg-primary/10 px-2.5 py-0.5 text-[11px] font-semibold text-primary",
-                      pkg.featured && "mr-16",
+                      pkg.featured && "me-16",
                     )}
                   >
                     {pkg.badge}
@@ -149,7 +149,7 @@ export function WordPressCarePlans({
                   </h3>
                   <p className="mt-2 font-display text-2xl font-bold tracking-tight text-primary md:text-[1.75rem]">
                     {formatShopEuro(price, locale)}
-                    <span className="ml-1 text-xs font-medium text-muted-foreground">
+                    <span className="ms-1 text-xs font-medium text-muted-foreground">
                       {t("month")}
                     </span>
                   </p>

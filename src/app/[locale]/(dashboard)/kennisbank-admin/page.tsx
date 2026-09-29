@@ -453,7 +453,7 @@ export default function KennisbankAdminPage() {
                       {main.children.map((child) => (
                         <div
                           key={child.id}
-                          className="flex flex-col gap-3 bg-background px-3 py-2.5 pl-6 sm:flex-row sm:items-center"
+                          className="flex flex-col gap-3 bg-background px-3 py-2.5 ps-6 sm:flex-row sm:items-center"
                         >
                           <div className="min-w-0 flex-1">
                             <div className="flex flex-wrap items-center gap-2">
@@ -596,7 +596,7 @@ export default function KennisbankAdminPage() {
       >
         <DialogContent className="max-h-[min(92vh,720px)] w-[min(96vw,40rem)] overflow-hidden p-0">
           <div className="min-h-0 flex-1 overflow-y-auto p-6 md:p-8">
-            <DialogHeader className="mb-6 pr-8">
+            <DialogHeader className="mb-6 pe-8">
               <DialogTitle>
                 {editingCat?.id ? "Categorie bewerken" : "Categorie toevoegen"}
               </DialogTitle>
@@ -631,7 +631,7 @@ export default function KennisbankAdminPage() {
       >
         <DialogContent className="max-h-[min(92vh,920px)] w-[min(96vw,56rem)] overflow-hidden p-0">
           <div className="min-h-0 flex-1 overflow-y-auto p-6 md:p-8">
-            <DialogHeader className="mb-6 pr-8">
+            <DialogHeader className="mb-6 pe-8">
               <DialogTitle>
                 {editingArt?.id ? "Artikel bewerken" : "Artikel toevoegen"}
               </DialogTitle>

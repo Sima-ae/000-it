@@ -132,7 +132,7 @@ export default function CrmInvoiceTrashPage() {
                   disabled={busy}
                   onClick={() => void restore(inv.id)}
                 >
-                  <RotateCcw className="mr-1 h-3.5 w-3.5" />
+                  <RotateCcw className="me-1 h-3.5 w-3.5" />
                   {t("restore")}
                 </Button>
                 <Button

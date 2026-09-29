@@ -149,7 +149,7 @@ export function StickyDomainBar() {
               ref={barRef}
               className="pointer-events-auto w-full rounded-2xl border border-white/40 bg-white shadow-[0_18px_50px_rgba(15,23,42,0.12)] sm:rounded-3xl dark:border-white/10 dark:bg-[#101620]"
             >
-              <div className="flex flex-col items-stretch gap-2 px-2.5 py-2.5 sm:flex-row sm:items-center sm:justify-center sm:gap-5 sm:px-4 sm:py-3 md:px-5 lg:pr-20">
+              <div className="flex flex-col items-stretch gap-2 px-2.5 py-2.5 sm:flex-row sm:items-center sm:justify-center sm:gap-5 sm:px-4 sm:py-3 md:px-5 lg:pe-20">
                 <p className="hidden shrink-0 text-sm font-medium text-foreground md:block lg:text-[15px]">
                   {t("prompt")}
                 </p>
@@ -159,7 +159,7 @@ export function StickyDomainBar() {
                   className="flex min-w-0 flex-1 items-center gap-0 overflow-hidden rounded-full border border-border/70 bg-background shadow-sm sm:max-w-xl lg:max-w-2xl"
                 >
                   <span
-                    className="hidden select-none pl-4 text-sm text-muted-foreground sm:inline"
+                    className="hidden select-none ps-4 text-sm text-muted-foreground sm:inline"
                     aria-hidden
                   >
                     www
@@ -172,7 +172,7 @@ export function StickyDomainBar() {
                     autoComplete="off"
                     spellCheck={false}
                     enterKeyHint="search"
-                    className="min-w-0 flex-1 bg-transparent px-3.5 py-2.5 text-sm text-foreground outline-none placeholder:text-muted-foreground sm:px-4 sm:py-3 sm:pl-2"
+                    className="min-w-0 flex-1 bg-transparent px-3.5 py-2.5 text-sm text-foreground outline-none placeholder:text-muted-foreground sm:px-4 sm:py-3 sm:ps-2"
                     aria-label={t("placeholder")}
                   />
                   <button

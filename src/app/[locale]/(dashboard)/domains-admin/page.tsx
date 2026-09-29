@@ -417,7 +417,7 @@ export default function DomainsAdminPage() {
             ) : null}
           </div>
           <div className="relative w-full max-w-xs">
-            <Search className="pointer-events-none absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
+            <Search className="pointer-events-none absolute start-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
             <Input
               type="search"
               value={tldSearch}
@@ -426,7 +426,7 @@ export default function DomainsAdminPage() {
                 if (e.key === "Enter") e.preventDefault();
               }}
               placeholder="Search TLD, e.g. .be"
-              className="h-8 pl-8"
+              className="h-8 ps-8"
               aria-label="Search TLDs"
               autoComplete="off"
               autoCorrect="off"
@@ -438,23 +438,23 @@ export default function DomainsAdminPage() {
           {isLoading ? (
             <p className="text-sm text-muted-foreground">Loading…</p>
           ) : (
-            <table className="w-full min-w-368 border-collapse text-left text-sm">
+            <table className="w-full min-w-368 border-collapse text-start text-sm">
               <thead className="border-b border-border text-muted-foreground">
                 <tr>
-                  <th className="py-2 pr-3">TLD</th>
-                  <th className="py-2 pr-3">Buy €</th>
-                  <th className="py-2 pr-3">Renew buy €</th>
-                  <th className="py-2 pr-3">Transfer buy €</th>
-                  <th className="py-2 pr-3">Restore buy €</th>
-                  <th className="py-2 pr-3">% (auto)</th>
-                  <th className="py-2 pr-3">Sell</th>
-                  <th className="py-2 pr-3">Offer €</th>
-                  <th className="py-2 pr-3">Renew sell</th>
-                  <th className="py-2 pr-3">Transfer sell</th>
-                  <th className="py-2 pr-3">Restore sell</th>
-                  {superAdmin ? <th className="py-2 pr-3">Manual</th> : null}
-                  <th className="py-2 pr-3">Active</th>
-                  <th className="py-2 text-right">Save</th>
+                  <th className="py-2 pe-3">TLD</th>
+                  <th className="py-2 pe-3">Buy €</th>
+                  <th className="py-2 pe-3">Renew buy €</th>
+                  <th className="py-2 pe-3">Transfer buy €</th>
+                  <th className="py-2 pe-3">Restore buy €</th>
+                  <th className="py-2 pe-3">% (auto)</th>
+                  <th className="py-2 pe-3">Sell</th>
+                  <th className="py-2 pe-3">Offer €</th>
+                  <th className="py-2 pe-3">Renew sell</th>
+                  <th className="py-2 pe-3">Transfer sell</th>
+                  <th className="py-2 pe-3">Restore sell</th>
+                  {superAdmin ? <th className="py-2 pe-3">Manual</th> : null}
+                  <th className="py-2 pe-3">Active</th>
+                  <th className="py-2 text-end">Save</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-border">
@@ -489,7 +489,7 @@ export default function DomainsAdminPage() {
                             : undefined
                       }
                     >
-                      <td className="py-2 pr-3 font-semibold">
+                      <td className="py-2 pe-3 font-semibold">
                         <span className="inline-flex flex-wrap items-center gap-1.5">
                           .{p.tld}
                           {premiumTld ? <PremiumBadge label="Premium TLD" /> : null}
@@ -500,7 +500,7 @@ export default function DomainsAdminPage() {
                           </span>
                         ) : null}
                       </td>
-                      <td className="py-2 pr-3">
+                      <td className="py-2 pe-3">
                         {superAdmin ? (
                           <Input
                             className="h-8 w-24"
@@ -522,7 +522,7 @@ export default function DomainsAdminPage() {
                           </span>
                         )}
                       </td>
-                      <td className="py-2 pr-3">
+                      <td className="py-2 pe-3">
                         {superAdmin ? (
                           <Input
                             className="h-8 w-24"
@@ -547,7 +547,7 @@ export default function DomainsAdminPage() {
                           </span>
                         )}
                       </td>
-                      <td className="py-2 pr-3">
+                      <td className="py-2 pe-3">
                         {superAdmin ? (
                           <Input
                             className="h-8 w-24"
@@ -572,7 +572,7 @@ export default function DomainsAdminPage() {
                           </span>
                         )}
                       </td>
-                      <td className="py-2 pr-3">
+                      <td className="py-2 pe-3">
                         {superAdmin ? (
                           <Input
                             className="h-8 w-24"
@@ -597,10 +597,10 @@ export default function DomainsAdminPage() {
                           </span>
                         )}
                       </td>
-                      <td className="py-2 pr-3 tabular-nums text-muted-foreground">
+                      <td className="py-2 pe-3 tabular-nums text-muted-foreground">
                         {preview.pct}%
                       </td>
-                      <td className="py-2 pr-3">
+                      <td className="py-2 pe-3">
                         {onOffer ? (
                           <span className="inline-flex flex-wrap items-baseline gap-x-2">
                             <span className="text-muted-foreground line-through decoration-2">
@@ -617,7 +617,7 @@ export default function DomainsAdminPage() {
                           </span>
                         )}
                       </td>
-                      <td className="py-2 pr-3">
+                      <td className="py-2 pe-3">
                         <Input
                           className="h-8 w-24"
                           placeholder="—"
@@ -630,21 +630,21 @@ export default function DomainsAdminPage() {
                           }
                         />
                       </td>
-                      <td className="py-2 pr-3 text-muted-foreground">
+                      <td className="py-2 pe-3 text-muted-foreground">
                         €{centsToEurosNumber(preview.renewSell || 0).toFixed(2)}
                       </td>
-                      <td className="py-2 pr-3 text-muted-foreground">
+                      <td className="py-2 pe-3 text-muted-foreground">
                         {preview.transferSell > 0
                           ? `€${centsToEurosNumber(preview.transferSell).toFixed(2)}`
                           : "—"}
                       </td>
-                      <td className="py-2 pr-3 text-muted-foreground">
+                      <td className="py-2 pe-3 text-muted-foreground">
                         {preview.restoreSell > 0
                           ? `€${centsToEurosNumber(preview.restoreSell).toFixed(2)}`
                           : "—"}
                       </td>
                       {superAdmin ? (
-                        <td className="py-2 pr-3">
+                        <td className="py-2 pe-3">
                           <button
                             type="button"
                             className="text-xs underline"
@@ -662,7 +662,7 @@ export default function DomainsAdminPage() {
                           </button>
                         </td>
                       ) : null}
-                      <td className="py-2 pr-3">
+                      <td className="py-2 pe-3">
                         <button
                           type="button"
                           className="text-xs underline"
@@ -678,7 +678,7 @@ export default function DomainsAdminPage() {
                           </Badge>
                         </button>
                       </td>
-                      <td className="py-2 text-right">
+                      <td className="py-2 text-end">
                         <Button size="sm" onClick={() => void saveTld(p.tld)}>
                           Save
                         </Button>

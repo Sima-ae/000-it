@@ -265,7 +265,7 @@ export default function ShopAdminPage() {
 
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="w-[min(96vw,56rem)] gap-0 p-0">
-          <DialogHeader className="shrink-0 border-b border-border/60 bg-muted/20 px-5 py-4 pr-14 md:px-6">
+          <DialogHeader className="shrink-0 border-b border-border/60 bg-muted/20 px-5 py-4 pe-14 md:px-6">
             <DialogTitle className="text-xl md:text-2xl">
               {isEdit ? "Edit hosting package" : "Add hosting package"}
             </DialogTitle>

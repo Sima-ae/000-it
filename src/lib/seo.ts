@@ -171,6 +171,56 @@ export function hreflangAlternates(pathWithoutLocale: string) {
   };
 }
 
+/** HQ country name in each site language (geo.placename). Region code stays ISO `NL`. */
+const HQ_PLACENAME: Record<string, string> = {
+  nl: "Nederland",
+  en: "Netherlands",
+  fr: "Pays-Bas",
+  de: "Niederlande",
+  es: "Países Bajos",
+  pt: "Países Baixos",
+  it: "Paesi Bassi",
+  el: "Κάτω Χώρες",
+  pl: "Holandia",
+  cs: "Nizozemsko",
+  sk: "Holandsko",
+  hu: "Hollandia",
+  ro: "Țările de Jos",
+  bg: "Нидерландия",
+  hr: "Nizozemska",
+  sr: "Холандија",
+  bs: "Holandija",
+  cnr: "Holandija",
+  sq: "Holanda",
+  mk: "Холандија",
+  lt: "Nyderlandai",
+  da: "Holland",
+  sv: "Nederländerna",
+  no: "Nederland",
+  fi: "Alankomaat",
+  uk: "Нідерланди",
+  ru: "Нидерланды",
+  tr: "Hollanda",
+  he: "הולנד",
+  ar: "هولندا",
+  ka: "ნიდერლანდები",
+  hy: "Նիդերլանդներ",
+  az: "Niderland",
+  zh: "荷兰",
+  ja: "オランダ",
+  bn: "নেদারল্যান্ডস",
+  hi: "नीदरलैंड",
+  mr: "नेदरलँड्स",
+  ps: "هالنډ",
+  pa: "ਨੀਦਰਲੈਂਡ",
+  te: "నెదర్లాండ్స్",
+  ur: "نیدرلینڈز",
+};
+
+export function hqPlacename(locale: string) {
+  return HQ_PLACENAME[locale] || HQ_PLACENAME.en;
+}
+
 export function geoMetadataOther(city?: Pick<SeoCity, "nameNl" | "nameEn" | "country" | "latitude" | "longitude">, locale = "nl") {
   if (city) {
     const placename = locale === "nl" ? city.nameNl : city.nameEn;
@@ -181,13 +231,9 @@ export function geoMetadataOther(city?: Pick<SeoCity, "nameNl" | "nameEn" | "cou
       ICBM: `${city.latitude}, ${city.longitude}`,
     };
   }
-  const placename =
-    locale === "nl"
-      ? SITE_SEO.geo.placename
-      : SITE_SEO.geo.country;
   return {
     "geo.region": SITE_SEO.geo.region,
-    "geo.placename": placename,
+    "geo.placename": hqPlacename(locale),
     "geo.position": SITE_SEO.geo.position,
     ICBM: SITE_SEO.geo.icbm,
   };
@@ -446,15 +492,21 @@ export function buildServiceMetadata(opts: {
   });
 }
 
-export function buildCityMetadata(city: SeoCity, locale: string): Metadata {
+export function buildCityMetadata(
+  city: SeoCity,
+  locale: string,
+  copy?: { title?: string; description?: string },
+): Metadata {
   const isNl = locale === "nl";
   const name = isNl ? city.nameNl : city.nameEn;
   const country = isNl ? city.countryNameNl : city.countryNameEn;
   const region = isNl ? city.regionNl : city.regionEn;
-  const title = `AI, AEO, GEO & SEO in ${name}`;
-  const description = isNl
-    ? `AI, AEO, GEO & SEO in ${name} (${region}, ${country}). TripleZero iT helpt lokale bedrijven met AI-integratie, Answer Engine Optimization, Generative Engine Optimization en klassieke SEO. Start met een gratis AI-scan.`
-    : `AI, AEO, GEO & SEO in ${name} (${region}, ${country}). TripleZero iT helps local businesses with AI integration, Answer Engine Optimization, Generative Engine Optimization and classic SEO. Start with a free AI scan.`;
+  const title = copy?.title || `AI, AEO, GEO & SEO in ${name}`;
+  const description =
+    copy?.description ||
+    (isNl
+      ? `AI, AEO, GEO & SEO in ${name} (${region}, ${country}). TripleZero iT helpt lokale bedrijven met AI-integratie, Answer Engine Optimization, Generative Engine Optimization en klassieke SEO. Start met een gratis AI-scan.`
+      : `AI, AEO, GEO & SEO in ${name} (${region}, ${country}). TripleZero iT helps local businesses with AI integration, Answer Engine Optimization, Generative Engine Optimization and classic SEO. Start with a free AI scan.`);
   const keywords = [
     ...(city.keywords || []),
     ...(city.tags || []),
@@ -605,26 +657,40 @@ export function buildNewsArticleMetadata(
   };
 }
 
-export function buildNewsIndexMetadata(locale: string, page = 1): Metadata {
+export async function buildNewsIndexMetadata(locale: string, page = 1): Promise<Metadata> {
+  await hydrateLocalizedCopy(locale);
+  const pageSeo = getStaticPageSeo("/nieuws");
+  const copy = getStaticPageSeoCopy("/nieuws", locale);
   const isNl = locale === "nl";
-  const title = isNl ? "Nieuws" : "News";
-  const description = isNl
-    ? "AI- en tech-nieuws van TripleZero iT: analyses, productupdates en praktische inzichten."
-    : "AI and tech news from TripleZero iT: analysis, product updates and practical insights.";
+  const title =
+    copy?.title ||
+    (isNl
+      ? "Nieuws — AI, AEO, GEO & SEO inzichten"
+      : "News — AI, AEO, GEO & SEO insights");
+  const description =
+    copy?.description ||
+    (isNl
+      ? "AI- en tech-nieuws van TripleZero iT: analyses, productupdates en praktische inzichten."
+      : "AI and tech news from TripleZero iT: analysis, product updates and practical insights.");
   const path = page > 1 ? `/nieuws?page=${page}` : "/nieuws";
   const url = absoluteUrl(localePath(locale, path.split("?")[0]));
-  const keywords = [
-    ...coreKeywordsForLocale(locale),
-    ...(isNl
-      ? ["nieuws", "AI nieuws", "tech nieuws", "kunstmatige intelligentie"]
-      : ["news", "AI news", "tech news", "artificial intelligence"]),
-  ];
+  const keywords = copy?.keywords?.length
+    ? copy.keywords
+    : [
+        ...coreKeywordsForLocale(locale),
+        ...(isNl
+          ? ["nieuws", "AI nieuws", "tech nieuws", "kunstmatige intelligentie"]
+          : ["news", "AI news", "tech news", "artificial intelligence"]),
+      ];
   const langs = hreflangAlternates("/nieuws");
-  const image = defaultOgImage();
+  const image = defaultOgImage(pageSeo?.image);
   const dims = ogImageDimensions(image);
 
+  const pageTitle = page > 1 ? `${title} · ${page}` : title;
+  const socialTitle = `${pageTitle} · ${SITE_SEO.name}`;
+
   return {
-    title: page > 1 ? `${title} · ${isNl ? "Pagina" : "Page"} ${page}` : title,
+    title: pageTitle,
     description,
     keywords,
     robots: { index: true, follow: true },
@@ -638,7 +704,7 @@ export function buildNewsIndexMetadata(locale: string, page = 1): Metadata {
     openGraph: {
       type: "website",
       url,
-      title: `${title} · ${SITE_SEO.name}`,
+      title: socialTitle,
       description,
       siteName: SITE_SEO.name,
       locale: openGraphLocale(locale),
@@ -647,13 +713,13 @@ export function buildNewsIndexMetadata(locale: string, page = 1): Metadata {
           url: image,
           width: dims.width,
           height: dims.height,
-          alt: `${title} · ${SITE_SEO.name}`,
+          alt: socialTitle,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${title} · ${SITE_SEO.name}`,
+      title: socialTitle,
       description,
       images: [image],
     },

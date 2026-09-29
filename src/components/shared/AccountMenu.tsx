@@ -40,7 +40,7 @@ export function AccountMenu({ className }: { className?: string }) {
   useEffect(() => () => clearCloseTimer(), []);
 
   const itemClass =
-    "block w-full rounded-xl px-3 py-2 text-left text-sm text-muted-foreground transition hover:bg-muted/70 hover:text-foreground";
+    "block w-full rounded-xl px-3 py-2 text-start text-sm text-muted-foreground transition hover:bg-muted/70 hover:text-foreground";
 
   return (
     <div
@@ -67,7 +67,7 @@ export function AccountMenu({ className }: { className?: string }) {
 
       {open ? (
         <div
-          className="absolute right-0 top-full z-50 pt-2"
+          className="absolute end-0 top-full z-50 pt-2"
           onMouseEnter={clearCloseTimer}
           onMouseLeave={scheduleClose}
         >

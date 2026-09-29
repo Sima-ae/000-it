@@ -1,0 +1,1 @@
+د {totalPages} پاڼې {page}

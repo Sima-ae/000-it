@@ -68,7 +68,7 @@ export default function NieuwsAdminPage() {
               className="bg-red-600 text-white hover:bg-red-700 focus-visible:ring-red-600/40"
             >
               <Link href={localizedHref(locale, "/nieuws-admin/trash")}>
-                <Trash2 className="mr-1.5 h-4 w-4" />
+                <Trash2 className="me-1.5 h-4 w-4" />
                 {t("newsTrash")}
               </Link>
             </Button>
@@ -181,7 +181,7 @@ export default function NieuwsAdminPage() {
       >
         <DialogContent className="max-h-[min(92vh,920px)] w-[min(96vw,56rem)] overflow-hidden p-0">
           <div className="min-h-0 flex-1 overflow-y-auto p-6 md:p-8">
-            <DialogHeader className="mb-6 pr-8">
+            <DialogHeader className="mb-6 pe-8">
               <DialogTitle>{isEdit ? "Edit news post" : "Add news post"}</DialogTitle>
               <DialogDescription>
                 Datum, Auteur and URL are editable for admin users. Public visitors see them as

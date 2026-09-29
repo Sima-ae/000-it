@@ -163,7 +163,7 @@ export function Sidebar({ user }: { user: SidebarUser }) {
           </p>
         </div>
 
-        <nav className="flex gap-1 overflow-x-auto md:min-h-0 md:flex-1 md:flex-col md:overflow-y-auto md:overflow-x-hidden md:pr-1">
+        <nav className="flex gap-1 overflow-x-auto md:min-h-0 md:flex-1 md:flex-col md:overflow-y-auto md:overflow-x-hidden md:pe-1">
           {items.map((item) => {
             const href = localizedHref(locale, item.href);
             // Prefer exact/longest match so /crm does not stay active on /crm/tickets
@@ -192,7 +192,7 @@ export function Sidebar({ user }: { user: SidebarUser }) {
                 <span className="min-w-0 flex-1 truncate">{t(item.key)}</span>
                 {badge ? (
                   <span
-                    className="ml-auto inline-flex h-5 min-w-5 shrink-0 items-center justify-center rounded-full bg-accent px-1.5 text-[10px] font-semibold leading-none text-accent-foreground"
+                    className="ms-auto inline-flex h-5 min-w-5 shrink-0 items-center justify-center rounded-full bg-accent px-1.5 text-[10px] font-semibold leading-none text-accent-foreground"
                     aria-label={t("navBadgeNew", { count: badge })}
                   >
                     {badge}

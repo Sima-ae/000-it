@@ -119,7 +119,7 @@ export default function ActivityLogsPage() {
         <p className="text-sm text-muted-foreground">{t("activityLogsForbidden")}</p>
         <Button asChild variant="outline">
           <SoftLink href={localizedHref(locale, "/dashboard")}>
-            <ArrowLeft className="mr-2 h-4 w-4" />
+            <ArrowLeft className="me-2 h-4 w-4 rtl:rotate-180" />
             {t("backToDashboard")}
           </SoftLink>
         </Button>
@@ -148,7 +148,7 @@ export default function ActivityLogsPage() {
         <div className="flex flex-wrap gap-2">
           <Button asChild variant="outline">
             <SoftLink href={localizedHref(locale, "/dashboard")}>
-              <ArrowLeft className="mr-2 h-4 w-4" />
+              <ArrowLeft className="me-2 h-4 w-4 rtl:rotate-180" />
               {t("backToDashboard")}
             </SoftLink>
           </Button>
@@ -157,7 +157,7 @@ export default function ActivityLogsPage() {
             onClick={() => void refetch()}
             disabled={isFetching}
           >
-            <RefreshCw className={`mr-2 h-4 w-4 ${isFetching ? "animate-spin" : ""}`} />
+            <RefreshCw className={`me-2 h-4 w-4 ${isFetching ? "animate-spin" : ""}`} />
             {t("activityRefresh")}
           </Button>
         </div>
@@ -177,12 +177,12 @@ export default function ActivityLogsPage() {
               className="flex w-full flex-col gap-2 sm:flex-row lg:w-auto"
             >
               <div className="relative min-w-55 flex-1">
-                <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+                <Search className="pointer-events-none absolute start-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                 <Input
                   value={q}
                   onChange={(e) => setQ(e.target.value)}
                   placeholder={t("activitySearchPlaceholder")}
-                  className="pl-9"
+                  className="ps-9"
                 />
               </div>
               <select

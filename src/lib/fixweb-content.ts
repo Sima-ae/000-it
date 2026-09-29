@@ -3,6 +3,7 @@ import importedProducts from "@/content/fixweb/imported-products.json";
 import localImages from "@/content/fixweb/local-images.json";
 import {
   catalogServiceSummary,
+  catalogServiceTitle,
   catalogUiLabel,
 } from "@/content/fixweb/catalog-title";
 import { getCatalogItem, type ServiceNavItem } from "@/content/fixweb/catalog";
@@ -303,6 +304,18 @@ function firstRawSnippet(raw: string, fallback = "") {
   return cleaned.length > 220 ? `${cleaned.slice(0, 217)}…` : cleaned;
 }
 
+function serviceTitleForLocale(slug: string, locale: string, nl: string, en: string) {
+  if (locale === "nl") return nl || en;
+  if (locale === "en") return en || nl;
+  return catalogServiceTitle(slug, locale, en || nl);
+}
+
+function serviceSubtitleForLocale(slug: string, locale: string, nl: string, en: string) {
+  if (locale === "nl") return nl || en;
+  if (locale === "en") return en || nl;
+  return catalogServiceSummary(slug, locale, en || nl) || en || nl;
+}
+
 function buildServiceContent(slug: string, locale: string) {
   const meta = getCatalogItem(slug);
   if (!meta) return null;
@@ -335,7 +348,12 @@ function buildServiceContent(slug: string, locale: string) {
     const isHostingProduct = meta.group === "hosting";
     return {
       meta,
-      title: isNl ? meta.titleNl || product.name : meta.title || product.name,
+      title: serviceTitleForLocale(
+        slug,
+        locale,
+        meta.titleNl || product.name,
+        meta.title || product.name,
+      ),
       subtitle: featureSubtitle,
       price: product.price,
       currency: product.currency,
@@ -349,7 +367,7 @@ function buildServiceContent(slug: string, locale: string) {
     };
   }
 
-  const localizedPage = getPageI18n(slug, locale);
+  const localizedPage = getPageI18n(slug, locale, { fallback: false });
   if (localizedPage) {
     return {
       meta,
@@ -372,13 +390,13 @@ function buildServiceContent(slug: string, locale: string) {
   if (!page) {
     return {
       meta,
-      title: isNl ? meta.titleNl : meta.title,
-      subtitle:
-        catalogServiceSummary(
-          slug,
-          locale,
-          (isNl ? meta.summaryNl : meta.summary) || "",
-        ) || "",
+      title: serviceTitleForLocale(slug, locale, meta.titleNl, meta.title),
+      subtitle: serviceSubtitleForLocale(
+        slug,
+        locale,
+        meta.summaryNl || "",
+        meta.summary || "",
+      ),
       price: null as number | null,
       currency: null as string | null,
       image: pageImageFallback[slug] || null,
@@ -395,10 +413,16 @@ function buildServiceContent(slug: string, locale: string) {
       locale,
       (isNl ? meta.summaryNl : meta.summary) || meta.summary || "",
     ) || "";
+  const bodySubtitle = firstParagraphSubtitle(page.blocks, catalogSubtitle);
   return {
     meta,
-    title: isNl ? meta.titleNl || page.title : page.title || meta.title,
-    subtitle: firstParagraphSubtitle(page.blocks, catalogSubtitle),
+    title: serviceTitleForLocale(
+      slug,
+      locale,
+      meta.titleNl || page.title,
+      page.title || meta.title,
+    ),
+    subtitle: serviceSubtitleForLocale(slug, locale, bodySubtitle, bodySubtitle),
     price: null as number | null,
     currency: null as string | null,
     image: pageImageFallback[slug] || null,
@@ -491,7 +515,7 @@ function buildServiceCardMeta(slug: string, locale: string) {
           ) ||
           "";
     return {
-      title: isNl ? meta.titleNl || name : meta.title || name,
+      title: serviceTitleForLocale(slug, locale, meta.titleNl || name, meta.title || name),
       subtitle,
       price: product.price,
       image: imageMap[slug] || product.images?.[0] || pageImageFallback[slug] || null,
@@ -499,7 +523,7 @@ function buildServiceCardMeta(slug: string, locale: string) {
     };
   }
 
-  const localizedPage = getPageI18n(slug, locale);
+  const localizedPage = getPageI18n(slug, locale, { fallback: false });
   if (localizedPage) {
     return {
       title: localizedPage.title,
@@ -519,8 +543,8 @@ function buildServiceCardMeta(slug: string, locale: string) {
     ) || "";
   const subtitle = page ? firstRawSnippet(page.rawText, catalogSubtitle) : catalogSubtitle;
   return {
-    title: isNl ? meta.titleNl : meta.title,
-    subtitle,
+    title: serviceTitleForLocale(slug, locale, meta.titleNl, meta.title),
+    subtitle: serviceSubtitleForLocale(slug, locale, subtitle, subtitle),
     price: null as number | null,
     image: pageImageFallback[slug] || null,
     hasBody: Boolean(page?.rawText?.trim()) || Boolean(subtitle),

@@ -2572,5 +2572,551 @@
         ]
       }
     ]
+  },
+  "bn": {
+    "title": "Server locations by region",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Asia",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "South Asia",
+            "locations": [
+              "India (Mumbai)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Southeast Asia",
+            "locations": [
+              "Indonesia",
+              "Malaysia",
+              "Singapore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Europe",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Eastern Europe",
+            "locations": [
+              "Lithuania"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Western & Northern Europe",
+            "locations": [
+              "Germany (Frankfurt)",
+              "France",
+              "Netherlands",
+              "United Kingdom"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "North America",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "United States",
+            "locations": [
+              "Asheville, North Carolina",
+              "Boston, Massachusetts",
+              "Phoenix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "South America",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Latin America",
+            "locations": [
+              "Brazil"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "hi": {
+    "title": "Server locations by region",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Asia",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "South Asia",
+            "locations": [
+              "India (Mumbai)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Southeast Asia",
+            "locations": [
+              "Indonesia",
+              "Malaysia",
+              "Singapore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Europe",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Eastern Europe",
+            "locations": [
+              "Lithuania"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Western & Northern Europe",
+            "locations": [
+              "Germany (Frankfurt)",
+              "France",
+              "Netherlands",
+              "United Kingdom"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "North America",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "United States",
+            "locations": [
+              "Asheville, North Carolina",
+              "Boston, Massachusetts",
+              "Phoenix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "South America",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Latin America",
+            "locations": [
+              "Brazil"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "mr": {
+    "title": "Server locations by region",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Asia",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "South Asia",
+            "locations": [
+              "India (Mumbai)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Southeast Asia",
+            "locations": [
+              "Indonesia",
+              "Malaysia",
+              "Singapore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Europe",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Eastern Europe",
+            "locations": [
+              "Lithuania"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Western & Northern Europe",
+            "locations": [
+              "Germany (Frankfurt)",
+              "France",
+              "Netherlands",
+              "United Kingdom"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "North America",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "United States",
+            "locations": [
+              "Asheville, North Carolina",
+              "Boston, Massachusetts",
+              "Phoenix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "South America",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Latin America",
+            "locations": [
+              "Brazil"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ps": {
+    "title": "Server locations by region",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Asia",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "South Asia",
+            "locations": [
+              "India (Mumbai)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Southeast Asia",
+            "locations": [
+              "Indonesia",
+              "Malaysia",
+              "Singapore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Europe",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Eastern Europe",
+            "locations": [
+              "Lithuania"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Western & Northern Europe",
+            "locations": [
+              "Germany (Frankfurt)",
+              "France",
+              "Netherlands",
+              "United Kingdom"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "North America",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "United States",
+            "locations": [
+              "Asheville, North Carolina",
+              "Boston, Massachusetts",
+              "Phoenix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "South America",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Latin America",
+            "locations": [
+              "Brazil"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "pa": {
+    "title": "Server locations by region",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Asia",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "South Asia",
+            "locations": [
+              "India (Mumbai)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Southeast Asia",
+            "locations": [
+              "Indonesia",
+              "Malaysia",
+              "Singapore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Europe",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Eastern Europe",
+            "locations": [
+              "Lithuania"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Western & Northern Europe",
+            "locations": [
+              "Germany (Frankfurt)",
+              "France",
+              "Netherlands",
+              "United Kingdom"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "North America",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "United States",
+            "locations": [
+              "Asheville, North Carolina",
+              "Boston, Massachusetts",
+              "Phoenix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "South America",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Latin America",
+            "locations": [
+              "Brazil"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "te": {
+    "title": "Server locations by region",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Asia",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "South Asia",
+            "locations": [
+              "India (Mumbai)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Southeast Asia",
+            "locations": [
+              "Indonesia",
+              "Malaysia",
+              "Singapore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Europe",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Eastern Europe",
+            "locations": [
+              "Lithuania"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Western & Northern Europe",
+            "locations": [
+              "Germany (Frankfurt)",
+              "France",
+              "Netherlands",
+              "United Kingdom"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "North America",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "United States",
+            "locations": [
+              "Asheville, North Carolina",
+              "Boston, Massachusetts",
+              "Phoenix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "South America",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Latin America",
+            "locations": [
+              "Brazil"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ur": {
+    "title": "Server locations by region",
+    "regions": [
+      {
+        "id": "asia",
+        "name": "Asia",
+        "subregions": [
+          {
+            "id": "south-asia",
+            "name": "South Asia",
+            "locations": [
+              "India (Mumbai)"
+            ]
+          },
+          {
+            "id": "southeast-asia",
+            "name": "Southeast Asia",
+            "locations": [
+              "Indonesia",
+              "Malaysia",
+              "Singapore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "europe",
+        "name": "Europe",
+        "subregions": [
+          {
+            "id": "eastern-europe",
+            "name": "Eastern Europe",
+            "locations": [
+              "Lithuania"
+            ]
+          },
+          {
+            "id": "west-north-europe",
+            "name": "Western & Northern Europe",
+            "locations": [
+              "Germany (Frankfurt)",
+              "France",
+              "Netherlands",
+              "United Kingdom"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "north-america",
+        "name": "North America",
+        "subregions": [
+          {
+            "id": "united-states",
+            "name": "United States",
+            "locations": [
+              "Asheville, North Carolina",
+              "Boston, Massachusetts",
+              "Phoenix, Arizona"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "south-america",
+        "name": "South America",
+        "subregions": [
+          {
+            "id": "latin-america",
+            "name": "Latin America",
+            "locations": [
+              "Brazil"
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

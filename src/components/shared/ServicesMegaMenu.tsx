@@ -283,7 +283,7 @@ export function ServicesMegaMenu({
                 onClick={(event) => navigateFromMenu(localizedHref(locale, "/diensten"), event)}
               >
                 <span>{t("allServicesCta")}</span>
-                <ChevronRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
+                <ChevronRight className="h-4 w-4 transition group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5 rtl:rotate-180" />
               </SoftLink>
             </div>
           </div>

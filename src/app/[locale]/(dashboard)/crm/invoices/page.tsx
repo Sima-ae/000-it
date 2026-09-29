@@ -332,7 +332,7 @@ export default function CrmInvoicesPage() {
           ) : null}
           {staff ? (
             <Button onClick={openCreate}>
-              <FilePlus2 className="mr-1.5 h-4 w-4" />
+              <FilePlus2 className="me-1.5 h-4 w-4" />
               {t("addInvoice")}
             </Button>
           ) : null}
@@ -392,7 +392,7 @@ export default function CrmInvoicesPage() {
               <div className="flex flex-wrap items-start justify-between gap-3">
                 <button
                   type="button"
-                  className="min-w-0 text-left"
+                  className="min-w-0 text-start"
                   onClick={() => setPreview(inv)}
                 >
                   <div className="flex flex-wrap items-center gap-2">
@@ -428,12 +428,12 @@ export default function CrmInvoicesPage() {
                     </select>
                   ) : null}
                   <Button size="sm" variant="outline" onClick={() => downloadPdf(inv)}>
-                    <Download className="mr-1 h-3.5 w-3.5" />
+                    <Download className="me-1 h-3.5 w-3.5" />
                     PDF
                   </Button>
                   {staff ? (
                     <Button size="sm" variant="outline" onClick={() => openEdit(inv)}>
-                      <Pencil className="mr-1 h-3.5 w-3.5" />
+                      <Pencil className="me-1 h-3.5 w-3.5" />
                       {t("edit")}
                     </Button>
                   ) : null}
@@ -601,7 +601,7 @@ export default function CrmInvoicesPage() {
                   </Button>
                 </div>
               ))}
-              <div className="ml-auto w-full max-w-xs space-y-1 text-sm">
+              <div className="ms-auto w-full max-w-xs space-y-1 text-sm">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">{t("invoiceSubtotal")}</span>
                   <span>{formatInvoiceMoney(totals.subtotal)}</span>
@@ -683,24 +683,24 @@ export default function CrmInvoicesPage() {
                   </div>
                 </div>
                 <div className="overflow-hidden rounded-xl border border-border">
-                  <table className="w-full text-left text-sm">
+                  <table className="w-full text-start text-sm">
                     <thead className="bg-muted/40 text-xs uppercase tracking-wide text-muted-foreground">
                       <tr>
                         <th className="px-3 py-2">{t("invoiceLineDescription")}</th>
-                        <th className="px-3 py-2 text-right">{t("invoiceQty")}</th>
-                        <th className="px-3 py-2 text-right">{t("invoiceUnitPrice")}</th>
-                        <th className="px-3 py-2 text-right">{t("invoiceTotal")}</th>
+                        <th className="px-3 py-2 text-end">{t("invoiceQty")}</th>
+                        <th className="px-3 py-2 text-end">{t("invoiceUnitPrice")}</th>
+                        <th className="px-3 py-2 text-end">{t("invoiceTotal")}</th>
                       </tr>
                     </thead>
                     <tbody>
                       {(preview.items || []).map((item, index) => (
                         <tr key={index} className="border-t border-border/70">
                           <td className="px-3 py-2">{item.description}</td>
-                          <td className="px-3 py-2 text-right">{item.qty}</td>
-                          <td className="px-3 py-2 text-right">
+                          <td className="px-3 py-2 text-end">{item.qty}</td>
+                          <td className="px-3 py-2 text-end">
                             {formatInvoiceMoney(item.unitPrice, preview.currency)}
                           </td>
-                          <td className="px-3 py-2 text-right">
+                          <td className="px-3 py-2 text-end">
                             {formatInvoiceMoney(item.qty * item.unitPrice, preview.currency)}
                           </td>
                         </tr>
@@ -708,7 +708,7 @@ export default function CrmInvoicesPage() {
                     </tbody>
                   </table>
                 </div>
-                <div className="ml-auto w-full max-w-xs space-y-1">
+                <div className="ms-auto w-full max-w-xs space-y-1">
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">{t("invoiceSubtotal")}</span>
                     <span>{formatInvoiceMoney(preview.subtotal, preview.currency)}</span>
@@ -738,7 +738,7 @@ export default function CrmInvoicesPage() {
                   </Button>
                 ) : null}
                 <Button type="button" onClick={() => downloadPdf(preview)}>
-                  <Download className="mr-1.5 h-4 w-4" />
+                  <Download className="me-1.5 h-4 w-4" />
                   {t("invoiceSavePdf")}
                 </Button>
               </DialogFooter>

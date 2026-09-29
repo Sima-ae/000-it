@@ -80,7 +80,7 @@ export function ContentBlocks({
             {items.length ? (
               <ContentFaqAccordion items={items} />
             ) : (
-              <ul className={cn("pl-1", compact ? "space-y-1" : "space-y-2")}>
+              <ul className={cn("ps-1", compact ? "space-y-1" : "space-y-2")}>
                 {next.items.map((item) => (
                   <li
                     key={item}
@@ -124,7 +124,7 @@ export function ContentBlocks({
 
     if (block.type === "list") {
       nodes.push(
-        <ul key={i} className={cn("pl-1", compact ? "space-y-1" : "space-y-2")}>
+        <ul key={i} className={cn("ps-1", compact ? "space-y-1" : "space-y-2")}>
           {block.items.map((item) => (
             <li
               key={item}

@@ -447,7 +447,8 @@ export function LiveChatWidget() {
         // Pin to safe insets so the stack always has a real height and never clips.
         // On mobile, --tz-sticky-domain-offset lifts the FAB above the domain bar.
         "top-[max(1rem,env(safe-area-inset-top))]",
-        "right-[max(1rem,env(safe-area-inset-right))]",
+        // Logical end + matching physical safe-area (no env(safe-area-inset-inline-*))
+        "inset-e-[max(1rem,env(safe-area-inset-right))] rtl:inset-e-auto rtl:inset-s-[max(1rem,env(safe-area-inset-left))]",
       )}
       style={{
         bottom:
@@ -667,12 +668,12 @@ export function LiveChatWidget() {
           <button
             type="button"
             onClick={dismissTeaser}
-            className="absolute right-1.5 top-1.5 rounded p-0.5 text-muted-foreground hover:text-foreground"
+            className="absolute inset-e-1.5 top-1.5 rounded p-0.5 text-muted-foreground hover:text-foreground"
             aria-label={copy.dismiss}
           >
             <X className="h-3.5 w-3.5" />
           </button>
-          <button type="button" onClick={openChat} className="pr-4 text-left leading-snug">
+          <button type="button" onClick={openChat} className="pe-4 text-start leading-snug">
             <span className="block font-medium text-foreground">{copy.teaserLine1}</span>
             <span className="block font-medium text-foreground">{copy.teaserLine2}</span>
             <span className="mt-1 block text-xs text-muted-foreground">{copy.online}</span>
@@ -688,7 +689,7 @@ export function LiveChatWidget() {
       >
         {open ? <X className="h-7 w-7" /> : <MessageCircle className="h-7 w-7" />}
         {!open && ticket ? (
-          <span className="absolute -right-0.5 -top-0.5 h-3 w-3 rounded-full bg-accent ring-2 ring-background" />
+          <span className="absolute -inset-e-0.5 -top-0.5 h-3 w-3 rounded-full bg-accent ring-2 ring-background" />
         ) : null}
       </button>
     </div>

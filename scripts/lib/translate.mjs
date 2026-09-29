@@ -70,6 +70,13 @@ export const LOCALE_TO_MT = {
   az: "az",
   zh: "zh-CN",
   ja: "ja",
+  bn: "bn",
+  hi: "hi",
+  mr: "mr",
+  ps: "ps",
+  pa: "pa",
+  te: "te",
+  ur: "ur",
 };
 
 export const ALL_TARGET_LOCALES = Object.keys(LOCALE_TO_MT).filter((l) => l !== "en");

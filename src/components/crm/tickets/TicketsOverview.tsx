@@ -215,7 +215,7 @@ export function TicketsOverview({
           <div>
             <div className="mb-3 flex flex-wrap gap-2">
               <Badge className="border-white/20 bg-white/15 text-white hover:bg-white/20">
-                <span className="mr-1.5 inline-block h-1.5 w-1.5 rounded-full bg-accent" />
+                <span className="me-1.5 inline-block h-1.5 w-1.5 rounded-full bg-accent" />
                 {labels.systemOnline}
               </Badge>
               <Badge className="border-white/20 bg-white/10 text-white/90 hover:bg-white/15">
@@ -342,7 +342,7 @@ export function TicketsOverview({
               <p className="text-xs text-muted-foreground">{labels.avgFirstResponse}</p>
               <p className="text-xl font-semibold">
                 {stats.avgFirstResponseMins || 0}
-                <span className="ml-1 text-xs font-normal text-muted-foreground">
+                <span className="ms-1 text-xs font-normal text-muted-foreground">
                   {labels.minutes}
                 </span>
               </p>
@@ -421,7 +421,7 @@ export function TicketsOverview({
                 <div className="flex flex-wrap gap-2">
                   {ai.features.map((feature) => (
                     <Badge key={feature} variant="outline">
-                      <CheckCircle2 className="mr-1 h-3 w-3 text-accent" />
+                      <CheckCircle2 className="me-1 h-3 w-3 text-accent" />
                       {feature}
                     </Badge>
                   ))}

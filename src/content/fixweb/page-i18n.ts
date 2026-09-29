@@ -1082,7 +1082,11 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
   },
 };
 
-export function getPageI18n(slug: string, locale: string): PageI18n | null {
+export function getPageI18n(
+  slug: string,
+  locale: string,
+  opts?: { fallback?: boolean },
+): PageI18n | null {
   const entry = pageI18n[slug];
   if (!entry) return null;
   if (locale === "nl") return entry.nl;
@@ -1097,6 +1101,7 @@ export function getPageI18n(slug: string, locale: string): PageI18n | null {
   if (overlay?.title && Array.isArray(overlay.blocks)) {
     return { ...overlay, blocks: normalizePageBlocks(overlay.blocks) };
   }
+  if (opts?.fallback === false) return null;
   return entry.en;
 }
 

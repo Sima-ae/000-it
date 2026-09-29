@@ -1,0 +1,1 @@
+{totalPages} पैकी {page} पृष्ठ

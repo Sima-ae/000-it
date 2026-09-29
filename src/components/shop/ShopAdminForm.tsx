@@ -439,7 +439,7 @@ export function ShopAdminForm({
               </span>
             </label>
             {form.billAsYearlyPackage ? (
-              <div className="mt-3 max-w-xs pl-7">
+              <div className="mt-3 max-w-xs ps-7">
                 <Field label="Checkout months" htmlFor="checkoutMonths">
                   <Input
                     id="checkoutMonths"

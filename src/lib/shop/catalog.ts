@@ -192,8 +192,16 @@ function yearlyFromMonthly(monthly: number) {
 
 const PLAN_PERIOD_SUFFIX = /\s*\((maandelijks|jaarlijks|monthly|yearly)\)\s*$/i;
 
-/** Column title from the saved shop product, without the billing-period suffix. */
+/**
+ * Column title from the saved shop product, without the billing-period suffix.
+ * Only nl/en use catalog product names; other locales fall back to
+ * `messages/{locale}.json` pricing.starter / pricing.growth.
+ */
 export function resolvePlanNamesFromCatalog(catalog: ShopProduct[], locale: string) {
+  if (locale !== "nl" && locale !== "en") {
+    return { starter: null, growth: null };
+  }
+
   const lang = locale === "nl" ? "nl" : "en";
 
   function nameFor(slugs: string[]) {

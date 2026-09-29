@@ -150,7 +150,7 @@ export function KennisbankSearch({
             className="w-full rounded-2xl border border-border/70 bg-background/80 px-4 py-3 text-sm shadow-sm outline-none ring-primary/30 backdrop-blur focus:ring-2"
           />
           {loading ? (
-            <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[11px] text-muted-foreground">
+            <span className="pointer-events-none absolute end-3 top-1/2 -translate-y-1/2 text-[11px] text-muted-foreground">
               {searchLoadingLabel}
             </span>
           ) : null}
@@ -299,7 +299,7 @@ function ArticleGroup({
     <div className="space-y-2">
       <h2 className="text-[11px] font-semibold uppercase tracking-[0.16em] text-accent">
         {title}
-        <span className="ml-2 font-medium normal-case tracking-normal text-muted-foreground">
+        <span className="ms-2 font-medium normal-case tracking-normal text-muted-foreground">
           ({articles.length})
         </span>
       </h2>

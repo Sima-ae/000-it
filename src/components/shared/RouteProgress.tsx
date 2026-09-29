@@ -40,7 +40,7 @@ export function RouteProgress() {
     >
       <div
         className={cn(
-          "h-full origin-left bg-primary transition-transform ease-out",
+          "h-full origin-start bg-primary transition-transform ease-out",
           complete || !pending ? "duration-300" : "duration-[1.6s]",
         )}
         style={{

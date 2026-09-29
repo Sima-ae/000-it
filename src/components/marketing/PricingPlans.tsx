@@ -71,13 +71,25 @@ export function PricingPlans({
   const embedded = variant === "embedded";
   const categoryLabel = embedded ? labels.title : labels.categoryTitle;
 
-  function withHostingPeriod(feature: string, period: Billing) {
-    const isHosting =
-      /^1\s*[×x]\s*web\s*-?hosting/i.test(feature.trim()) ||
-      /^1\s*[×x]\s*webhosting/i.test(feature.trim());
-    if (!isHosting) return feature;
+  function hostingFeature(period: Billing) {
     const base = period === "yearly" ? t("hostingYear") : t("hostingMonth");
     return `${base} (${t("hostingIncludedInPlan")})`;
+  }
+
+  function withHostingPeriod(feature: string, period: Billing) {
+    const trimmed = feature.trim();
+    const month = t("hostingMonth");
+    const year = t("hostingYear");
+    const isHosting =
+      /^1\s*[×x]\s*web\s*-?hosting/i.test(trimmed) ||
+      /^1\s*[×x]\s*webhosting/i.test(trimmed) ||
+      /^1\s*[×x]\s*hébergement/i.test(trimmed) ||
+      month.startsWith(trimmed) ||
+      year.startsWith(trimmed) ||
+      trimmed === month ||
+      trimmed === year;
+    if (!isHosting) return feature;
+    return hostingFeature(period);
   }
 
   const resolved = useMemo(
@@ -205,14 +217,14 @@ export function PricingPlans({
               )}
             >
               {plan.featured ? (
-                <div className="pricing-badge absolute right-3 top-3 z-10 rounded-full bg-primary px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-primary-foreground">
+                <div className="pricing-badge absolute inset-e-3 top-3 z-10 rounded-full bg-primary px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-primary-foreground">
                   {labels.mostChosen}
                 </div>
               ) : null}
               <h3
                 className={cn(
                   "font-display text-base font-semibold tracking-tight md:text-lg",
-                  plan.featured && "pr-20",
+                  plan.featured && "pe-20",
                 )}
               >
                 {plan.name}
@@ -220,16 +232,20 @@ export function PricingPlans({
               <p className="mt-2 font-display text-2xl font-bold tracking-tight md:text-[1.75rem]">
                 {plan.displayPrice}
                 {plan.period ? (
-                  <span className="ml-1 text-xs font-medium text-muted-foreground">
+                  <span className="ms-1 text-xs font-medium text-muted-foreground">
                     {plan.period}
                   </span>
                 ) : null}
               </p>
               <ul className="mt-4 flex-1 space-y-1.5 text-[13px] leading-snug text-muted-foreground">
-                {plan.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2">
+                {plan.features.map((f, featureIndex) => (
+                  <li key={`${plan.id}-${featureIndex}`} className="flex items-start gap-2">
                     <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-accent" />
-                    <span>{withHostingPeriod(f, billing)}</span>
+                    <span>
+                      {plan.id !== "enterprise" && featureIndex === 1
+                        ? hostingFeature(billing)
+                        : withHostingPeriod(f, billing)}
+                    </span>
                   </li>
                 ))}
               </ul>

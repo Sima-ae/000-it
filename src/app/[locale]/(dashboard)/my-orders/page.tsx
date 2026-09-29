@@ -282,7 +282,7 @@ export default function MyOrdersPage() {
                       disabled={downloading === order.id}
                       onClick={() => void onDownload(order.id, "domain")}
                     >
-                      <Download className="mr-1.5 h-3.5 w-3.5" />
+                      <Download className="me-1.5 h-3.5 w-3.5" />
                       {downloading === order.id ? "…" : t("downloadPdf")}
                     </Button>
                   ) : null}
@@ -341,7 +341,7 @@ export default function MyOrdersPage() {
                         disabled={downloading === order.id}
                         onClick={() => void onDownload(order.id, "shop")}
                       >
-                        <Download className="mr-1.5 h-3.5 w-3.5" />
+                        <Download className="me-1.5 h-3.5 w-3.5" />
                         {downloading === order.id ? "…" : t("downloadPdf")}
                       </Button>
                     ) : null}

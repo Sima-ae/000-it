@@ -9763,5 +9763,1958 @@
         }
       ]
     }
+  },
+  "bn": {
+    "ecommerce-seo": {
+      "title": "E-commerce SEO",
+      "subtitle": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "SEO built for shops"
+        },
+        {
+          "type": "paragraph",
+          "text": "Webshops need more than a few blog posts. We optimise product and category architecture, filters, indexation and commercial search intent so organic traffic turns into baskets — not bounce."
+        },
+        {
+          "type": "heading",
+          "text": "What we optimise"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Category and product page templates (titles, descriptions, schema)",
+            "Faceted navigation, crawl budget and duplicate-content control",
+            "Internal linking between collections, products and guides",
+            "Technical hygiene: speed signals, mobile UX, XML sitemaps",
+            "Content for commercial queries: comparisons, FAQs and buying guides",
+            "International / multilingual setups when relevant"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Outcomes"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Stronger rankings for money keywords and category terms",
+            "Cleaner indexation and less wasted crawl on thin or duplicate URLs",
+            "More qualified organic sessions that reach product and checkout",
+            "A repeatable SEO playbook as your catalogue grows"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Best paired with"
+        },
+        {
+          "type": "paragraph",
+          "text": "SEO optimization, conversion optimization, Core Web Vitals & speed and AI in e-commerce — so visibility, experience and conversion reinforce each other."
+        },
+        {
+          "type": "heading",
+          "text": "How to start"
+        },
+        {
+          "type": "paragraph",
+          "text": "Share your shop URL, CMS (WooCommerce, Shopify, custom) and top revenue categories. We propose an audit plus a fixed sprint or monthly e-commerce SEO retainer."
+        }
+      ]
+    },
+    "conversion-optimization": {
+      "title": "Conversion Optimization",
+      "subtitle": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Why CRO matters"
+        },
+        {
+          "type": "paragraph",
+          "text": "More traffic without conversion is expensive noise. We improve the journeys that turn visits into leads and sales — messaging, layout, friction and proof — with tests you can measure."
+        },
+        {
+          "type": "heading",
+          "text": "What we improve"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Landing pages, service pages and checkout / form flows",
+            "Headlines, CTAs, trust signals and offer clarity",
+            "Mobile UX friction and form length",
+            "A/B and multivariate tests with clear hypotheses",
+            "Heatmaps, session insights and funnel drop-off analysis",
+            "Post-click alignment between ads and landing experience"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How we work"
+        },
+        {
+          "type": "paragraph",
+          "text": "Baseline → hypotheses → design/copy variants → test → learn → roll out winners. You get a prioritised backlog, not random tweaks."
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Conversion audit with quick wins and deeper experiments",
+            "Wireframe or copy variants for priority pages",
+            "Test plan with success metrics",
+            "Implementation support on your CMS or front-end",
+            "Report with results and next experiments"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Best paired with"
+        },
+        {
+          "type": "paragraph",
+          "text": "Text optimization, analytics and measurement, Core Web Vitals & speed and digital marketing — so acquisition, experience and proof work as one system."
+        }
+      ]
+    },
+    "speed-optimization": {
+      "title": "Core Web Vitals & speed",
+      "subtitle": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Performance as a growth lever"
+        },
+        {
+          "type": "paragraph",
+          "text": "Slow pages hurt rankings, bounce rates and trust. We improve load times and Core Web Vitals with a stack-agnostic approach — then route to WordPress- or custom-specific work when needed."
+        },
+        {
+          "type": "heading",
+          "text": "What we optimise"
+        },
+        {
+          "type": "list",
+          "items": [
+            "LCP, INP and CLS baselines and targets",
+            "Images, fonts, scripts and third-party weight",
+            "Caching, CDN and server response time",
+            "Critical rendering path and above-the-fold priorities",
+            "Hosting and application bottlenecks",
+            "Before/after measurement on the pages that matter"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "WordPress or custom?"
+        },
+        {
+          "type": "paragraph",
+          "text": "This page is the starting point for performance as an optimization service. For deep WordPress tune-ups we can continue with WordPress speed optimization; for PHP/Next.js stacks we use website performance & speed."
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Performance audit with prioritised actions",
+            "Implemented quick wins and structural fixes",
+            "Before/after Core Web Vitals evidence",
+            "Guidance to keep speed stable as content grows"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How to start"
+        },
+        {
+          "type": "paragraph",
+          "text": "Share your URLs, stack and current hosting. We baseline the key journeys and propose a focused speed sprint."
+        }
+      ]
+    },
+    "analytics-optimization": {
+      "title": "Analytics and measurement",
+      "subtitle": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Measurement you can act on"
+        },
+        {
+          "type": "paragraph",
+          "text": "Without clean data, SEO, ads and CRO are guesswork. We set up and refine analytics so you see which channels, pages and campaigns create real business outcomes."
+        },
+        {
+          "type": "heading",
+          "text": "What we set up and improve"
+        },
+        {
+          "type": "list",
+          "items": [
+            "GA4 property structure, events and conversions",
+            "Google Search Console coverage and query insights",
+            "Tag hygiene (GTM) and consent-aware tracking",
+            "Dashboards for traffic, leads, revenue and content",
+            "Attribution that matches how your sales cycle works",
+            "Alerts for tracking breakage and sudden drops"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Tracking audit and fix plan",
+            "Configured events / conversions for priority goals",
+            "A practical dashboard your team will actually use",
+            "Documentation for marketing and developers",
+            "Optional monthly readout with next actions"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Best paired with"
+        },
+        {
+          "type": "paragraph",
+          "text": "SEO, conversion optimization and digital marketing — so every euro in acquisition is measured against outcomes, not vanity metrics."
+        }
+      ]
+    },
+    "accessibility-optimization": {
+      "title": "Accessibility",
+      "subtitle": "WCAG-minded improvements so more people can use your site — and search engines understand it better.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Access is good for people and for business"
+        },
+        {
+          "type": "paragraph",
+          "text": "Accessible sites reach more customers, reduce legal risk and often improve SEO and UX at the same time. We harden the foundations: structure, contrast, keyboard use and assistive technology support."
+        },
+        {
+          "type": "heading",
+          "text": "What we improve"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Semantic HTML, headings and landmark structure",
+            "Keyboard navigation and focus states",
+            "Colour contrast and readable typography",
+            "Alt text, forms, errors and ARIA where needed",
+            "Media alternatives and skip links",
+            "Automated + manual checks against WCAG 2.2 AA targets"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Accessibility audit with severity and effort",
+            "Prioritised fix backlog for design and development",
+            "Implementation support or review of your team's PRs",
+            "Retest evidence after remediations",
+            "Practical guidelines so new pages stay accessible"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How to start"
+        },
+        {
+          "type": "paragraph",
+          "text": "Share your key templates (home, service, product, form). We audit those first and propose a remediation sprint aligned with your release calendar."
+        }
+      ]
+    }
+  },
+  "hi": {
+    "ecommerce-seo": {
+      "title": "E-commerce SEO",
+      "subtitle": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "SEO built for shops"
+        },
+        {
+          "type": "paragraph",
+          "text": "Webshops need more than a few blog posts. We optimise product and category architecture, filters, indexation and commercial search intent so organic traffic turns into baskets — not bounce."
+        },
+        {
+          "type": "heading",
+          "text": "What we optimise"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Category and product page templates (titles, descriptions, schema)",
+            "Faceted navigation, crawl budget and duplicate-content control",
+            "Internal linking between collections, products and guides",
+            "Technical hygiene: speed signals, mobile UX, XML sitemaps",
+            "Content for commercial queries: comparisons, FAQs and buying guides",
+            "International / multilingual setups when relevant"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Outcomes"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Stronger rankings for money keywords and category terms",
+            "Cleaner indexation and less wasted crawl on thin or duplicate URLs",
+            "More qualified organic sessions that reach product and checkout",
+            "A repeatable SEO playbook as your catalogue grows"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Best paired with"
+        },
+        {
+          "type": "paragraph",
+          "text": "SEO optimization, conversion optimization, Core Web Vitals & speed and AI in e-commerce — so visibility, experience and conversion reinforce each other."
+        },
+        {
+          "type": "heading",
+          "text": "How to start"
+        },
+        {
+          "type": "paragraph",
+          "text": "Share your shop URL, CMS (WooCommerce, Shopify, custom) and top revenue categories. We propose an audit plus a fixed sprint or monthly e-commerce SEO retainer."
+        }
+      ]
+    },
+    "conversion-optimization": {
+      "title": "Conversion Optimization",
+      "subtitle": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Why CRO matters"
+        },
+        {
+          "type": "paragraph",
+          "text": "More traffic without conversion is expensive noise. We improve the journeys that turn visits into leads and sales — messaging, layout, friction and proof — with tests you can measure."
+        },
+        {
+          "type": "heading",
+          "text": "What we improve"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Landing pages, service pages and checkout / form flows",
+            "Headlines, CTAs, trust signals and offer clarity",
+            "Mobile UX friction and form length",
+            "A/B and multivariate tests with clear hypotheses",
+            "Heatmaps, session insights and funnel drop-off analysis",
+            "Post-click alignment between ads and landing experience"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How we work"
+        },
+        {
+          "type": "paragraph",
+          "text": "Baseline → hypotheses → design/copy variants → test → learn → roll out winners. You get a prioritised backlog, not random tweaks."
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Conversion audit with quick wins and deeper experiments",
+            "Wireframe or copy variants for priority pages",
+            "Test plan with success metrics",
+            "Implementation support on your CMS or front-end",
+            "Report with results and next experiments"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Best paired with"
+        },
+        {
+          "type": "paragraph",
+          "text": "Text optimization, analytics and measurement, Core Web Vitals & speed and digital marketing — so acquisition, experience and proof work as one system."
+        }
+      ]
+    },
+    "speed-optimization": {
+      "title": "Core Web Vitals & speed",
+      "subtitle": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Performance as a growth lever"
+        },
+        {
+          "type": "paragraph",
+          "text": "Slow pages hurt rankings, bounce rates and trust. We improve load times and Core Web Vitals with a stack-agnostic approach — then route to WordPress- or custom-specific work when needed."
+        },
+        {
+          "type": "heading",
+          "text": "What we optimise"
+        },
+        {
+          "type": "list",
+          "items": [
+            "LCP, INP and CLS baselines and targets",
+            "Images, fonts, scripts and third-party weight",
+            "Caching, CDN and server response time",
+            "Critical rendering path and above-the-fold priorities",
+            "Hosting and application bottlenecks",
+            "Before/after measurement on the pages that matter"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "WordPress or custom?"
+        },
+        {
+          "type": "paragraph",
+          "text": "This page is the starting point for performance as an optimization service. For deep WordPress tune-ups we can continue with WordPress speed optimization; for PHP/Next.js stacks we use website performance & speed."
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Performance audit with prioritised actions",
+            "Implemented quick wins and structural fixes",
+            "Before/after Core Web Vitals evidence",
+            "Guidance to keep speed stable as content grows"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How to start"
+        },
+        {
+          "type": "paragraph",
+          "text": "Share your URLs, stack and current hosting. We baseline the key journeys and propose a focused speed sprint."
+        }
+      ]
+    },
+    "analytics-optimization": {
+      "title": "Analytics and measurement",
+      "subtitle": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Measurement you can act on"
+        },
+        {
+          "type": "paragraph",
+          "text": "Without clean data, SEO, ads and CRO are guesswork. We set up and refine analytics so you see which channels, pages and campaigns create real business outcomes."
+        },
+        {
+          "type": "heading",
+          "text": "What we set up and improve"
+        },
+        {
+          "type": "list",
+          "items": [
+            "GA4 property structure, events and conversions",
+            "Google Search Console coverage and query insights",
+            "Tag hygiene (GTM) and consent-aware tracking",
+            "Dashboards for traffic, leads, revenue and content",
+            "Attribution that matches how your sales cycle works",
+            "Alerts for tracking breakage and sudden drops"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Tracking audit and fix plan",
+            "Configured events / conversions for priority goals",
+            "A practical dashboard your team will actually use",
+            "Documentation for marketing and developers",
+            "Optional monthly readout with next actions"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Best paired with"
+        },
+        {
+          "type": "paragraph",
+          "text": "SEO, conversion optimization and digital marketing — so every euro in acquisition is measured against outcomes, not vanity metrics."
+        }
+      ]
+    },
+    "accessibility-optimization": {
+      "title": "Accessibility",
+      "subtitle": "WCAG-minded improvements so more people can use your site — and search engines understand it better.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Access is good for people and for business"
+        },
+        {
+          "type": "paragraph",
+          "text": "Accessible sites reach more customers, reduce legal risk and often improve SEO and UX at the same time. We harden the foundations: structure, contrast, keyboard use and assistive technology support."
+        },
+        {
+          "type": "heading",
+          "text": "What we improve"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Semantic HTML, headings and landmark structure",
+            "Keyboard navigation and focus states",
+            "Colour contrast and readable typography",
+            "Alt text, forms, errors and ARIA where needed",
+            "Media alternatives and skip links",
+            "Automated + manual checks against WCAG 2.2 AA targets"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Accessibility audit with severity and effort",
+            "Prioritised fix backlog for design and development",
+            "Implementation support or review of your team's PRs",
+            "Retest evidence after remediations",
+            "Practical guidelines so new pages stay accessible"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How to start"
+        },
+        {
+          "type": "paragraph",
+          "text": "Share your key templates (home, service, product, form). We audit those first and propose a remediation sprint aligned with your release calendar."
+        }
+      ]
+    }
+  },
+  "mr": {
+    "ecommerce-seo": {
+      "title": "E-commerce SEO",
+      "subtitle": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "SEO built for shops"
+        },
+        {
+          "type": "paragraph",
+          "text": "Webshops need more than a few blog posts. We optimise product and category architecture, filters, indexation and commercial search intent so organic traffic turns into baskets — not bounce."
+        },
+        {
+          "type": "heading",
+          "text": "What we optimise"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Category and product page templates (titles, descriptions, schema)",
+            "Faceted navigation, crawl budget and duplicate-content control",
+            "Internal linking between collections, products and guides",
+            "Technical hygiene: speed signals, mobile UX, XML sitemaps",
+            "Content for commercial queries: comparisons, FAQs and buying guides",
+            "International / multilingual setups when relevant"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Outcomes"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Stronger rankings for money keywords and category terms",
+            "Cleaner indexation and less wasted crawl on thin or duplicate URLs",
+            "More qualified organic sessions that reach product and checkout",
+            "A repeatable SEO playbook as your catalogue grows"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Best paired with"
+        },
+        {
+          "type": "paragraph",
+          "text": "SEO optimization, conversion optimization, Core Web Vitals & speed and AI in e-commerce — so visibility, experience and conversion reinforce each other."
+        },
+        {
+          "type": "heading",
+          "text": "How to start"
+        },
+        {
+          "type": "paragraph",
+          "text": "Share your shop URL, CMS (WooCommerce, Shopify, custom) and top revenue categories. We propose an audit plus a fixed sprint or monthly e-commerce SEO retainer."
+        }
+      ]
+    },
+    "conversion-optimization": {
+      "title": "Conversion Optimization",
+      "subtitle": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Why CRO matters"
+        },
+        {
+          "type": "paragraph",
+          "text": "More traffic without conversion is expensive noise. We improve the journeys that turn visits into leads and sales — messaging, layout, friction and proof — with tests you can measure."
+        },
+        {
+          "type": "heading",
+          "text": "What we improve"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Landing pages, service pages and checkout / form flows",
+            "Headlines, CTAs, trust signals and offer clarity",
+            "Mobile UX friction and form length",
+            "A/B and multivariate tests with clear hypotheses",
+            "Heatmaps, session insights and funnel drop-off analysis",
+            "Post-click alignment between ads and landing experience"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How we work"
+        },
+        {
+          "type": "paragraph",
+          "text": "Baseline → hypotheses → design/copy variants → test → learn → roll out winners. You get a prioritised backlog, not random tweaks."
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Conversion audit with quick wins and deeper experiments",
+            "Wireframe or copy variants for priority pages",
+            "Test plan with success metrics",
+            "Implementation support on your CMS or front-end",
+            "Report with results and next experiments"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Best paired with"
+        },
+        {
+          "type": "paragraph",
+          "text": "Text optimization, analytics and measurement, Core Web Vitals & speed and digital marketing — so acquisition, experience and proof work as one system."
+        }
+      ]
+    },
+    "speed-optimization": {
+      "title": "Core Web Vitals & speed",
+      "subtitle": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Performance as a growth lever"
+        },
+        {
+          "type": "paragraph",
+          "text": "Slow pages hurt rankings, bounce rates and trust. We improve load times and Core Web Vitals with a stack-agnostic approach — then route to WordPress- or custom-specific work when needed."
+        },
+        {
+          "type": "heading",
+          "text": "What we optimise"
+        },
+        {
+          "type": "list",
+          "items": [
+            "LCP, INP and CLS baselines and targets",
+            "Images, fonts, scripts and third-party weight",
+            "Caching, CDN and server response time",
+            "Critical rendering path and above-the-fold priorities",
+            "Hosting and application bottlenecks",
+            "Before/after measurement on the pages that matter"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "WordPress or custom?"
+        },
+        {
+          "type": "paragraph",
+          "text": "This page is the starting point for performance as an optimization service. For deep WordPress tune-ups we can continue with WordPress speed optimization; for PHP/Next.js stacks we use website performance & speed."
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Performance audit with prioritised actions",
+            "Implemented quick wins and structural fixes",
+            "Before/after Core Web Vitals evidence",
+            "Guidance to keep speed stable as content grows"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How to start"
+        },
+        {
+          "type": "paragraph",
+          "text": "Share your URLs, stack and current hosting. We baseline the key journeys and propose a focused speed sprint."
+        }
+      ]
+    },
+    "analytics-optimization": {
+      "title": "Analytics and measurement",
+      "subtitle": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Measurement you can act on"
+        },
+        {
+          "type": "paragraph",
+          "text": "Without clean data, SEO, ads and CRO are guesswork. We set up and refine analytics so you see which channels, pages and campaigns create real business outcomes."
+        },
+        {
+          "type": "heading",
+          "text": "What we set up and improve"
+        },
+        {
+          "type": "list",
+          "items": [
+            "GA4 property structure, events and conversions",
+            "Google Search Console coverage and query insights",
+            "Tag hygiene (GTM) and consent-aware tracking",
+            "Dashboards for traffic, leads, revenue and content",
+            "Attribution that matches how your sales cycle works",
+            "Alerts for tracking breakage and sudden drops"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Tracking audit and fix plan",
+            "Configured events / conversions for priority goals",
+            "A practical dashboard your team will actually use",
+            "Documentation for marketing and developers",
+            "Optional monthly readout with next actions"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Best paired with"
+        },
+        {
+          "type": "paragraph",
+          "text": "SEO, conversion optimization and digital marketing — so every euro in acquisition is measured against outcomes, not vanity metrics."
+        }
+      ]
+    },
+    "accessibility-optimization": {
+      "title": "Accessibility",
+      "subtitle": "WCAG-minded improvements so more people can use your site — and search engines understand it better.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Access is good for people and for business"
+        },
+        {
+          "type": "paragraph",
+          "text": "Accessible sites reach more customers, reduce legal risk and often improve SEO and UX at the same time. We harden the foundations: structure, contrast, keyboard use and assistive technology support."
+        },
+        {
+          "type": "heading",
+          "text": "What we improve"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Semantic HTML, headings and landmark structure",
+            "Keyboard navigation and focus states",
+            "Colour contrast and readable typography",
+            "Alt text, forms, errors and ARIA where needed",
+            "Media alternatives and skip links",
+            "Automated + manual checks against WCAG 2.2 AA targets"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Accessibility audit with severity and effort",
+            "Prioritised fix backlog for design and development",
+            "Implementation support or review of your team's PRs",
+            "Retest evidence after remediations",
+            "Practical guidelines so new pages stay accessible"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How to start"
+        },
+        {
+          "type": "paragraph",
+          "text": "Share your key templates (home, service, product, form). We audit those first and propose a remediation sprint aligned with your release calendar."
+        }
+      ]
+    }
+  },
+  "ps": {
+    "ecommerce-seo": {
+      "title": "E-commerce SEO",
+      "subtitle": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "SEO built for shops"
+        },
+        {
+          "type": "paragraph",
+          "text": "Webshops need more than a few blog posts. We optimise product and category architecture, filters, indexation and commercial search intent so organic traffic turns into baskets — not bounce."
+        },
+        {
+          "type": "heading",
+          "text": "What we optimise"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Category and product page templates (titles, descriptions, schema)",
+            "Faceted navigation, crawl budget and duplicate-content control",
+            "Internal linking between collections, products and guides",
+            "Technical hygiene: speed signals, mobile UX, XML sitemaps",
+            "Content for commercial queries: comparisons, FAQs and buying guides",
+            "International / multilingual setups when relevant"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Outcomes"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Stronger rankings for money keywords and category terms",
+            "Cleaner indexation and less wasted crawl on thin or duplicate URLs",
+            "More qualified organic sessions that reach product and checkout",
+            "A repeatable SEO playbook as your catalogue grows"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Best paired with"
+        },
+        {
+          "type": "paragraph",
+          "text": "SEO optimization, conversion optimization, Core Web Vitals & speed and AI in e-commerce — so visibility, experience and conversion reinforce each other."
+        },
+        {
+          "type": "heading",
+          "text": "How to start"
+        },
+        {
+          "type": "paragraph",
+          "text": "Share your shop URL, CMS (WooCommerce, Shopify, custom) and top revenue categories. We propose an audit plus a fixed sprint or monthly e-commerce SEO retainer."
+        }
+      ]
+    },
+    "conversion-optimization": {
+      "title": "Conversion Optimization",
+      "subtitle": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Why CRO matters"
+        },
+        {
+          "type": "paragraph",
+          "text": "More traffic without conversion is expensive noise. We improve the journeys that turn visits into leads and sales — messaging, layout, friction and proof — with tests you can measure."
+        },
+        {
+          "type": "heading",
+          "text": "What we improve"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Landing pages, service pages and checkout / form flows",
+            "Headlines, CTAs, trust signals and offer clarity",
+            "Mobile UX friction and form length",
+            "A/B and multivariate tests with clear hypotheses",
+            "Heatmaps, session insights and funnel drop-off analysis",
+            "Post-click alignment between ads and landing experience"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How we work"
+        },
+        {
+          "type": "paragraph",
+          "text": "Baseline → hypotheses → design/copy variants → test → learn → roll out winners. You get a prioritised backlog, not random tweaks."
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Conversion audit with quick wins and deeper experiments",
+            "Wireframe or copy variants for priority pages",
+            "Test plan with success metrics",
+            "Implementation support on your CMS or front-end",
+            "Report with results and next experiments"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Best paired with"
+        },
+        {
+          "type": "paragraph",
+          "text": "Text optimization, analytics and measurement, Core Web Vitals & speed and digital marketing — so acquisition, experience and proof work as one system."
+        }
+      ]
+    },
+    "speed-optimization": {
+      "title": "Core Web Vitals & speed",
+      "subtitle": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Performance as a growth lever"
+        },
+        {
+          "type": "paragraph",
+          "text": "Slow pages hurt rankings, bounce rates and trust. We improve load times and Core Web Vitals with a stack-agnostic approach — then route to WordPress- or custom-specific work when needed."
+        },
+        {
+          "type": "heading",
+          "text": "What we optimise"
+        },
+        {
+          "type": "list",
+          "items": [
+            "LCP, INP and CLS baselines and targets",
+            "Images, fonts, scripts and third-party weight",
+            "Caching, CDN and server response time",
+            "Critical rendering path and above-the-fold priorities",
+            "Hosting and application bottlenecks",
+            "Before/after measurement on the pages that matter"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "WordPress or custom?"
+        },
+        {
+          "type": "paragraph",
+          "text": "This page is the starting point for performance as an optimization service. For deep WordPress tune-ups we can continue with WordPress speed optimization; for PHP/Next.js stacks we use website performance & speed."
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Performance audit with prioritised actions",
+            "Implemented quick wins and structural fixes",
+            "Before/after Core Web Vitals evidence",
+            "Guidance to keep speed stable as content grows"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How to start"
+        },
+        {
+          "type": "paragraph",
+          "text": "Share your URLs, stack and current hosting. We baseline the key journeys and propose a focused speed sprint."
+        }
+      ]
+    },
+    "analytics-optimization": {
+      "title": "Analytics and measurement",
+      "subtitle": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Measurement you can act on"
+        },
+        {
+          "type": "paragraph",
+          "text": "Without clean data, SEO, ads and CRO are guesswork. We set up and refine analytics so you see which channels, pages and campaigns create real business outcomes."
+        },
+        {
+          "type": "heading",
+          "text": "What we set up and improve"
+        },
+        {
+          "type": "list",
+          "items": [
+            "GA4 property structure, events and conversions",
+            "Google Search Console coverage and query insights",
+            "Tag hygiene (GTM) and consent-aware tracking",
+            "Dashboards for traffic, leads, revenue and content",
+            "Attribution that matches how your sales cycle works",
+            "Alerts for tracking breakage and sudden drops"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Tracking audit and fix plan",
+            "Configured events / conversions for priority goals",
+            "A practical dashboard your team will actually use",
+            "Documentation for marketing and developers",
+            "Optional monthly readout with next actions"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Best paired with"
+        },
+        {
+          "type": "paragraph",
+          "text": "SEO, conversion optimization and digital marketing — so every euro in acquisition is measured against outcomes, not vanity metrics."
+        }
+      ]
+    },
+    "accessibility-optimization": {
+      "title": "Accessibility",
+      "subtitle": "WCAG-minded improvements so more people can use your site — and search engines understand it better.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Access is good for people and for business"
+        },
+        {
+          "type": "paragraph",
+          "text": "Accessible sites reach more customers, reduce legal risk and often improve SEO and UX at the same time. We harden the foundations: structure, contrast, keyboard use and assistive technology support."
+        },
+        {
+          "type": "heading",
+          "text": "What we improve"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Semantic HTML, headings and landmark structure",
+            "Keyboard navigation and focus states",
+            "Colour contrast and readable typography",
+            "Alt text, forms, errors and ARIA where needed",
+            "Media alternatives and skip links",
+            "Automated + manual checks against WCAG 2.2 AA targets"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Accessibility audit with severity and effort",
+            "Prioritised fix backlog for design and development",
+            "Implementation support or review of your team's PRs",
+            "Retest evidence after remediations",
+            "Practical guidelines so new pages stay accessible"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How to start"
+        },
+        {
+          "type": "paragraph",
+          "text": "Share your key templates (home, service, product, form). We audit those first and propose a remediation sprint aligned with your release calendar."
+        }
+      ]
+    }
+  },
+  "pa": {
+    "ecommerce-seo": {
+      "title": "E-commerce SEO",
+      "subtitle": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "SEO built for shops"
+        },
+        {
+          "type": "paragraph",
+          "text": "Webshops need more than a few blog posts. We optimise product and category architecture, filters, indexation and commercial search intent so organic traffic turns into baskets — not bounce."
+        },
+        {
+          "type": "heading",
+          "text": "What we optimise"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Category and product page templates (titles, descriptions, schema)",
+            "Faceted navigation, crawl budget and duplicate-content control",
+            "Internal linking between collections, products and guides",
+            "Technical hygiene: speed signals, mobile UX, XML sitemaps",
+            "Content for commercial queries: comparisons, FAQs and buying guides",
+            "International / multilingual setups when relevant"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Outcomes"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Stronger rankings for money keywords and category terms",
+            "Cleaner indexation and less wasted crawl on thin or duplicate URLs",
+            "More qualified organic sessions that reach product and checkout",
+            "A repeatable SEO playbook as your catalogue grows"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Best paired with"
+        },
+        {
+          "type": "paragraph",
+          "text": "SEO optimization, conversion optimization, Core Web Vitals & speed and AI in e-commerce — so visibility, experience and conversion reinforce each other."
+        },
+        {
+          "type": "heading",
+          "text": "How to start"
+        },
+        {
+          "type": "paragraph",
+          "text": "Share your shop URL, CMS (WooCommerce, Shopify, custom) and top revenue categories. We propose an audit plus a fixed sprint or monthly e-commerce SEO retainer."
+        }
+      ]
+    },
+    "conversion-optimization": {
+      "title": "Conversion Optimization",
+      "subtitle": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Why CRO matters"
+        },
+        {
+          "type": "paragraph",
+          "text": "More traffic without conversion is expensive noise. We improve the journeys that turn visits into leads and sales — messaging, layout, friction and proof — with tests you can measure."
+        },
+        {
+          "type": "heading",
+          "text": "What we improve"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Landing pages, service pages and checkout / form flows",
+            "Headlines, CTAs, trust signals and offer clarity",
+            "Mobile UX friction and form length",
+            "A/B and multivariate tests with clear hypotheses",
+            "Heatmaps, session insights and funnel drop-off analysis",
+            "Post-click alignment between ads and landing experience"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How we work"
+        },
+        {
+          "type": "paragraph",
+          "text": "Baseline → hypotheses → design/copy variants → test → learn → roll out winners. You get a prioritised backlog, not random tweaks."
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Conversion audit with quick wins and deeper experiments",
+            "Wireframe or copy variants for priority pages",
+            "Test plan with success metrics",
+            "Implementation support on your CMS or front-end",
+            "Report with results and next experiments"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Best paired with"
+        },
+        {
+          "type": "paragraph",
+          "text": "Text optimization, analytics and measurement, Core Web Vitals & speed and digital marketing — so acquisition, experience and proof work as one system."
+        }
+      ]
+    },
+    "speed-optimization": {
+      "title": "Core Web Vitals & speed",
+      "subtitle": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Performance as a growth lever"
+        },
+        {
+          "type": "paragraph",
+          "text": "Slow pages hurt rankings, bounce rates and trust. We improve load times and Core Web Vitals with a stack-agnostic approach — then route to WordPress- or custom-specific work when needed."
+        },
+        {
+          "type": "heading",
+          "text": "What we optimise"
+        },
+        {
+          "type": "list",
+          "items": [
+            "LCP, INP and CLS baselines and targets",
+            "Images, fonts, scripts and third-party weight",
+            "Caching, CDN and server response time",
+            "Critical rendering path and above-the-fold priorities",
+            "Hosting and application bottlenecks",
+            "Before/after measurement on the pages that matter"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "WordPress or custom?"
+        },
+        {
+          "type": "paragraph",
+          "text": "This page is the starting point for performance as an optimization service. For deep WordPress tune-ups we can continue with WordPress speed optimization; for PHP/Next.js stacks we use website performance & speed."
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Performance audit with prioritised actions",
+            "Implemented quick wins and structural fixes",
+            "Before/after Core Web Vitals evidence",
+            "Guidance to keep speed stable as content grows"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How to start"
+        },
+        {
+          "type": "paragraph",
+          "text": "Share your URLs, stack and current hosting. We baseline the key journeys and propose a focused speed sprint."
+        }
+      ]
+    },
+    "analytics-optimization": {
+      "title": "Analytics and measurement",
+      "subtitle": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Measurement you can act on"
+        },
+        {
+          "type": "paragraph",
+          "text": "Without clean data, SEO, ads and CRO are guesswork. We set up and refine analytics so you see which channels, pages and campaigns create real business outcomes."
+        },
+        {
+          "type": "heading",
+          "text": "What we set up and improve"
+        },
+        {
+          "type": "list",
+          "items": [
+            "GA4 property structure, events and conversions",
+            "Google Search Console coverage and query insights",
+            "Tag hygiene (GTM) and consent-aware tracking",
+            "Dashboards for traffic, leads, revenue and content",
+            "Attribution that matches how your sales cycle works",
+            "Alerts for tracking breakage and sudden drops"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Tracking audit and fix plan",
+            "Configured events / conversions for priority goals",
+            "A practical dashboard your team will actually use",
+            "Documentation for marketing and developers",
+            "Optional monthly readout with next actions"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Best paired with"
+        },
+        {
+          "type": "paragraph",
+          "text": "SEO, conversion optimization and digital marketing — so every euro in acquisition is measured against outcomes, not vanity metrics."
+        }
+      ]
+    },
+    "accessibility-optimization": {
+      "title": "Accessibility",
+      "subtitle": "WCAG-minded improvements so more people can use your site — and search engines understand it better.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Access is good for people and for business"
+        },
+        {
+          "type": "paragraph",
+          "text": "Accessible sites reach more customers, reduce legal risk and often improve SEO and UX at the same time. We harden the foundations: structure, contrast, keyboard use and assistive technology support."
+        },
+        {
+          "type": "heading",
+          "text": "What we improve"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Semantic HTML, headings and landmark structure",
+            "Keyboard navigation and focus states",
+            "Colour contrast and readable typography",
+            "Alt text, forms, errors and ARIA where needed",
+            "Media alternatives and skip links",
+            "Automated + manual checks against WCAG 2.2 AA targets"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Accessibility audit with severity and effort",
+            "Prioritised fix backlog for design and development",
+            "Implementation support or review of your team's PRs",
+            "Retest evidence after remediations",
+            "Practical guidelines so new pages stay accessible"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How to start"
+        },
+        {
+          "type": "paragraph",
+          "text": "Share your key templates (home, service, product, form). We audit those first and propose a remediation sprint aligned with your release calendar."
+        }
+      ]
+    }
+  },
+  "te": {
+    "ecommerce-seo": {
+      "title": "E-commerce SEO",
+      "subtitle": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "SEO built for shops"
+        },
+        {
+          "type": "paragraph",
+          "text": "Webshops need more than a few blog posts. We optimise product and category architecture, filters, indexation and commercial search intent so organic traffic turns into baskets — not bounce."
+        },
+        {
+          "type": "heading",
+          "text": "What we optimise"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Category and product page templates (titles, descriptions, schema)",
+            "Faceted navigation, crawl budget and duplicate-content control",
+            "Internal linking between collections, products and guides",
+            "Technical hygiene: speed signals, mobile UX, XML sitemaps",
+            "Content for commercial queries: comparisons, FAQs and buying guides",
+            "International / multilingual setups when relevant"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Outcomes"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Stronger rankings for money keywords and category terms",
+            "Cleaner indexation and less wasted crawl on thin or duplicate URLs",
+            "More qualified organic sessions that reach product and checkout",
+            "A repeatable SEO playbook as your catalogue grows"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Best paired with"
+        },
+        {
+          "type": "paragraph",
+          "text": "SEO optimization, conversion optimization, Core Web Vitals & speed and AI in e-commerce — so visibility, experience and conversion reinforce each other."
+        },
+        {
+          "type": "heading",
+          "text": "How to start"
+        },
+        {
+          "type": "paragraph",
+          "text": "Share your shop URL, CMS (WooCommerce, Shopify, custom) and top revenue categories. We propose an audit plus a fixed sprint or monthly e-commerce SEO retainer."
+        }
+      ]
+    },
+    "conversion-optimization": {
+      "title": "Conversion Optimization",
+      "subtitle": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Why CRO matters"
+        },
+        {
+          "type": "paragraph",
+          "text": "More traffic without conversion is expensive noise. We improve the journeys that turn visits into leads and sales — messaging, layout, friction and proof — with tests you can measure."
+        },
+        {
+          "type": "heading",
+          "text": "What we improve"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Landing pages, service pages and checkout / form flows",
+            "Headlines, CTAs, trust signals and offer clarity",
+            "Mobile UX friction and form length",
+            "A/B and multivariate tests with clear hypotheses",
+            "Heatmaps, session insights and funnel drop-off analysis",
+            "Post-click alignment between ads and landing experience"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How we work"
+        },
+        {
+          "type": "paragraph",
+          "text": "Baseline → hypotheses → design/copy variants → test → learn → roll out winners. You get a prioritised backlog, not random tweaks."
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Conversion audit with quick wins and deeper experiments",
+            "Wireframe or copy variants for priority pages",
+            "Test plan with success metrics",
+            "Implementation support on your CMS or front-end",
+            "Report with results and next experiments"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Best paired with"
+        },
+        {
+          "type": "paragraph",
+          "text": "Text optimization, analytics and measurement, Core Web Vitals & speed and digital marketing — so acquisition, experience and proof work as one system."
+        }
+      ]
+    },
+    "speed-optimization": {
+      "title": "Core Web Vitals & speed",
+      "subtitle": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Performance as a growth lever"
+        },
+        {
+          "type": "paragraph",
+          "text": "Slow pages hurt rankings, bounce rates and trust. We improve load times and Core Web Vitals with a stack-agnostic approach — then route to WordPress- or custom-specific work when needed."
+        },
+        {
+          "type": "heading",
+          "text": "What we optimise"
+        },
+        {
+          "type": "list",
+          "items": [
+            "LCP, INP and CLS baselines and targets",
+            "Images, fonts, scripts and third-party weight",
+            "Caching, CDN and server response time",
+            "Critical rendering path and above-the-fold priorities",
+            "Hosting and application bottlenecks",
+            "Before/after measurement on the pages that matter"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "WordPress or custom?"
+        },
+        {
+          "type": "paragraph",
+          "text": "This page is the starting point for performance as an optimization service. For deep WordPress tune-ups we can continue with WordPress speed optimization; for PHP/Next.js stacks we use website performance & speed."
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Performance audit with prioritised actions",
+            "Implemented quick wins and structural fixes",
+            "Before/after Core Web Vitals evidence",
+            "Guidance to keep speed stable as content grows"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How to start"
+        },
+        {
+          "type": "paragraph",
+          "text": "Share your URLs, stack and current hosting. We baseline the key journeys and propose a focused speed sprint."
+        }
+      ]
+    },
+    "analytics-optimization": {
+      "title": "Analytics and measurement",
+      "subtitle": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Measurement you can act on"
+        },
+        {
+          "type": "paragraph",
+          "text": "Without clean data, SEO, ads and CRO are guesswork. We set up and refine analytics so you see which channels, pages and campaigns create real business outcomes."
+        },
+        {
+          "type": "heading",
+          "text": "What we set up and improve"
+        },
+        {
+          "type": "list",
+          "items": [
+            "GA4 property structure, events and conversions",
+            "Google Search Console coverage and query insights",
+            "Tag hygiene (GTM) and consent-aware tracking",
+            "Dashboards for traffic, leads, revenue and content",
+            "Attribution that matches how your sales cycle works",
+            "Alerts for tracking breakage and sudden drops"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Tracking audit and fix plan",
+            "Configured events / conversions for priority goals",
+            "A practical dashboard your team will actually use",
+            "Documentation for marketing and developers",
+            "Optional monthly readout with next actions"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Best paired with"
+        },
+        {
+          "type": "paragraph",
+          "text": "SEO, conversion optimization and digital marketing — so every euro in acquisition is measured against outcomes, not vanity metrics."
+        }
+      ]
+    },
+    "accessibility-optimization": {
+      "title": "Accessibility",
+      "subtitle": "WCAG-minded improvements so more people can use your site — and search engines understand it better.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Access is good for people and for business"
+        },
+        {
+          "type": "paragraph",
+          "text": "Accessible sites reach more customers, reduce legal risk and often improve SEO and UX at the same time. We harden the foundations: structure, contrast, keyboard use and assistive technology support."
+        },
+        {
+          "type": "heading",
+          "text": "What we improve"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Semantic HTML, headings and landmark structure",
+            "Keyboard navigation and focus states",
+            "Colour contrast and readable typography",
+            "Alt text, forms, errors and ARIA where needed",
+            "Media alternatives and skip links",
+            "Automated + manual checks against WCAG 2.2 AA targets"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Accessibility audit with severity and effort",
+            "Prioritised fix backlog for design and development",
+            "Implementation support or review of your team's PRs",
+            "Retest evidence after remediations",
+            "Practical guidelines so new pages stay accessible"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How to start"
+        },
+        {
+          "type": "paragraph",
+          "text": "Share your key templates (home, service, product, form). We audit those first and propose a remediation sprint aligned with your release calendar."
+        }
+      ]
+    }
+  },
+  "ur": {
+    "ecommerce-seo": {
+      "title": "E-commerce SEO",
+      "subtitle": "Product, category and technical SEO for webshops — more organic traffic and better-qualified buyers.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "SEO built for shops"
+        },
+        {
+          "type": "paragraph",
+          "text": "Webshops need more than a few blog posts. We optimise product and category architecture, filters, indexation and commercial search intent so organic traffic turns into baskets — not bounce."
+        },
+        {
+          "type": "heading",
+          "text": "What we optimise"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Category and product page templates (titles, descriptions, schema)",
+            "Faceted navigation, crawl budget and duplicate-content control",
+            "Internal linking between collections, products and guides",
+            "Technical hygiene: speed signals, mobile UX, XML sitemaps",
+            "Content for commercial queries: comparisons, FAQs and buying guides",
+            "International / multilingual setups when relevant"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Outcomes"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Stronger rankings for money keywords and category terms",
+            "Cleaner indexation and less wasted crawl on thin or duplicate URLs",
+            "More qualified organic sessions that reach product and checkout",
+            "A repeatable SEO playbook as your catalogue grows"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Best paired with"
+        },
+        {
+          "type": "paragraph",
+          "text": "SEO optimization, conversion optimization, Core Web Vitals & speed and AI in e-commerce — so visibility, experience and conversion reinforce each other."
+        },
+        {
+          "type": "heading",
+          "text": "How to start"
+        },
+        {
+          "type": "paragraph",
+          "text": "Share your shop URL, CMS (WooCommerce, Shopify, custom) and top revenue categories. We propose an audit plus a fixed sprint or monthly e-commerce SEO retainer."
+        }
+      ]
+    },
+    "conversion-optimization": {
+      "title": "Conversion Optimization",
+      "subtitle": "CRO for landings, funnels and CTAs — more enquiries and sales from the traffic you already have.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Why CRO matters"
+        },
+        {
+          "type": "paragraph",
+          "text": "More traffic without conversion is expensive noise. We improve the journeys that turn visits into leads and sales — messaging, layout, friction and proof — with tests you can measure."
+        },
+        {
+          "type": "heading",
+          "text": "What we improve"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Landing pages, service pages and checkout / form flows",
+            "Headlines, CTAs, trust signals and offer clarity",
+            "Mobile UX friction and form length",
+            "A/B and multivariate tests with clear hypotheses",
+            "Heatmaps, session insights and funnel drop-off analysis",
+            "Post-click alignment between ads and landing experience"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How we work"
+        },
+        {
+          "type": "paragraph",
+          "text": "Baseline → hypotheses → design/copy variants → test → learn → roll out winners. You get a prioritised backlog, not random tweaks."
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Conversion audit with quick wins and deeper experiments",
+            "Wireframe or copy variants for priority pages",
+            "Test plan with success metrics",
+            "Implementation support on your CMS or front-end",
+            "Report with results and next experiments"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Best paired with"
+        },
+        {
+          "type": "paragraph",
+          "text": "Text optimization, analytics and measurement, Core Web Vitals & speed and digital marketing — so acquisition, experience and proof work as one system."
+        }
+      ]
+    },
+    "speed-optimization": {
+      "title": "Core Web Vitals & speed",
+      "subtitle": "Faster pages and stronger Core Web Vitals — better UX, rankings and conversion across stacks.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Performance as a growth lever"
+        },
+        {
+          "type": "paragraph",
+          "text": "Slow pages hurt rankings, bounce rates and trust. We improve load times and Core Web Vitals with a stack-agnostic approach — then route to WordPress- or custom-specific work when needed."
+        },
+        {
+          "type": "heading",
+          "text": "What we optimise"
+        },
+        {
+          "type": "list",
+          "items": [
+            "LCP, INP and CLS baselines and targets",
+            "Images, fonts, scripts and third-party weight",
+            "Caching, CDN and server response time",
+            "Critical rendering path and above-the-fold priorities",
+            "Hosting and application bottlenecks",
+            "Before/after measurement on the pages that matter"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "WordPress or custom?"
+        },
+        {
+          "type": "paragraph",
+          "text": "This page is the starting point for performance as an optimization service. For deep WordPress tune-ups we can continue with WordPress speed optimization; for PHP/Next.js stacks we use website performance & speed."
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Performance audit with prioritised actions",
+            "Implemented quick wins and structural fixes",
+            "Before/after Core Web Vitals evidence",
+            "Guidance to keep speed stable as content grows"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How to start"
+        },
+        {
+          "type": "paragraph",
+          "text": "Share your URLs, stack and current hosting. We baseline the key journeys and propose a focused speed sprint."
+        }
+      ]
+    },
+    "analytics-optimization": {
+      "title": "Analytics and measurement",
+      "subtitle": "GA4, Search Console and clear reporting so you know what drives leads and revenue.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Measurement you can act on"
+        },
+        {
+          "type": "paragraph",
+          "text": "Without clean data, SEO, ads and CRO are guesswork. We set up and refine analytics so you see which channels, pages and campaigns create real business outcomes."
+        },
+        {
+          "type": "heading",
+          "text": "What we set up and improve"
+        },
+        {
+          "type": "list",
+          "items": [
+            "GA4 property structure, events and conversions",
+            "Google Search Console coverage and query insights",
+            "Tag hygiene (GTM) and consent-aware tracking",
+            "Dashboards for traffic, leads, revenue and content",
+            "Attribution that matches how your sales cycle works",
+            "Alerts for tracking breakage and sudden drops"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Tracking audit and fix plan",
+            "Configured events / conversions for priority goals",
+            "A practical dashboard your team will actually use",
+            "Documentation for marketing and developers",
+            "Optional monthly readout with next actions"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Best paired with"
+        },
+        {
+          "type": "paragraph",
+          "text": "SEO, conversion optimization and digital marketing — so every euro in acquisition is measured against outcomes, not vanity metrics."
+        }
+      ]
+    },
+    "accessibility-optimization": {
+      "title": "Accessibility",
+      "subtitle": "WCAG-minded improvements so more people can use your site — and search engines understand it better.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Access is good for people and for business"
+        },
+        {
+          "type": "paragraph",
+          "text": "Accessible sites reach more customers, reduce legal risk and often improve SEO and UX at the same time. We harden the foundations: structure, contrast, keyboard use and assistive technology support."
+        },
+        {
+          "type": "heading",
+          "text": "What we improve"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Semantic HTML, headings and landmark structure",
+            "Keyboard navigation and focus states",
+            "Colour contrast and readable typography",
+            "Alt text, forms, errors and ARIA where needed",
+            "Media alternatives and skip links",
+            "Automated + manual checks against WCAG 2.2 AA targets"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Deliverables"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Accessibility audit with severity and effort",
+            "Prioritised fix backlog for design and development",
+            "Implementation support or review of your team's PRs",
+            "Retest evidence after remediations",
+            "Practical guidelines so new pages stay accessible"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How to start"
+        },
+        {
+          "type": "paragraph",
+          "text": "Share your key templates (home, service, product, form). We audit those first and propose a remediation sprint aligned with your release calendar."
+        }
+      ]
+    }
   }
 }

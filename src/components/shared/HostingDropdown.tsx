@@ -110,7 +110,7 @@ export function HostingDropdown({
 
       {open ? (
         <div
-          className="absolute left-0 top-full z-50 pt-2"
+          className="absolute start-0 top-full z-50 pt-2"
           onMouseEnter={clearCloseTimer}
           onMouseLeave={scheduleClose}
         >

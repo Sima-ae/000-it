@@ -55,7 +55,7 @@ export function ServiceInquiryDialog({
         </Button>
       </DialogTrigger>
       <DialogContent className="max-h-[min(92vh,720px)] w-[min(96vw,32rem)] overflow-y-auto p-6">
-        <DialogHeader className="pr-8 text-left">
+        <DialogHeader className="pe-8 text-start">
           <DialogTitle>
             {dialogTitle || t("dialogTitle", { service: serviceTitle })}
           </DialogTitle>

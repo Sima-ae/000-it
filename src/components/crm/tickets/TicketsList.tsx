@@ -62,7 +62,7 @@ export function TicketsStatsChips({
           key={chip.label}
           className="rounded-full border border-border bg-card/70 px-3 py-1.5 text-sm"
         >
-          <span className={cn("mr-1.5 font-semibold", chip.className)}>{chip.value}</span>
+          <span className={cn("me-1.5 font-semibold", chip.className)}>{chip.value}</span>
           <span className="text-muted-foreground">{chip.label}</span>
         </div>
       ))}
@@ -134,12 +134,12 @@ export function TicketsFiltersBar({
       <CardContent className="space-y-2 p-3 md:p-4">
         <div className="flex flex-wrap items-center gap-2">
           <div className="relative min-w-48 flex-1">
-            <Search className="pointer-events-none absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
+            <Search className="pointer-events-none absolute start-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
             <Input
               value={filters.q}
               onChange={(e) => patch({ q: e.target.value })}
               placeholder={labels.search}
-              className="h-8 pl-8 text-sm"
+              className="h-8 ps-8 text-sm"
             />
           </div>
           <span className="whitespace-nowrap text-[11px] text-muted-foreground">
@@ -409,19 +409,19 @@ export function TicketsTable({
               <div className="mt-3 flex flex-wrap gap-1">
                 {onReply ? (
                   <Button type="button" size="sm" variant="outline" onClick={() => onReply(ticket)}>
-                    <Reply className="mr-1 h-3.5 w-3.5" />
+                    <Reply className="me-1 h-3.5 w-3.5" />
                     {labels.reply}
                   </Button>
                 ) : null}
                 {onEdit ? (
                   <Button type="button" size="sm" variant="ghost" onClick={() => onEdit(ticket)}>
-                    <Pencil className="mr-1 h-3.5 w-3.5" />
+                    <Pencil className="me-1 h-3.5 w-3.5" />
                     {labels.edit}
                   </Button>
                 ) : null}
                 {canDelete && onDelete ? (
                   <Button type="button" size="sm" variant="ghost" onClick={() => onDelete(ticket)}>
-                    <Trash2 className="mr-1 h-3.5 w-3.5" />
+                    <Trash2 className="me-1 h-3.5 w-3.5" />
                     {labels.delete}
                   </Button>
                 ) : null}
@@ -436,7 +436,7 @@ export function TicketsTable({
   return (
     <Card className="overflow-hidden">
       <div className="overflow-x-auto">
-        <table className="w-full min-w-220 border-collapse text-left">
+        <table className="w-full min-w-220 border-collapse text-start">
           <thead>
             <tr className="border-b border-border bg-muted/40 text-xs font-medium uppercase tracking-wide text-muted-foreground">
               <th className="whitespace-nowrap px-4 py-2.5 font-medium">{labels.key}</th>
@@ -445,7 +445,7 @@ export function TicketsTable({
               <th className="whitespace-nowrap px-4 py-2.5 font-medium">{labels.status}</th>
               <th className="whitespace-nowrap px-4 py-2.5 font-medium">{labels.date}</th>
               <th className="whitespace-nowrap px-4 py-2.5 font-medium">{labels.updated}</th>
-              <th className="whitespace-nowrap px-4 py-2.5 text-right font-medium">
+              <th className="whitespace-nowrap px-4 py-2.5 text-end font-medium">
                 {labels.actions}
               </th>
             </tr>
@@ -530,7 +530,7 @@ export function TicketsTable({
                           title={labels.reply}
                         >
                           <Reply className="h-3.5 w-3.5" />
-                          <span className="ml-1 hidden sm:inline">{labels.reply}</span>
+                          <span className="ms-1 hidden sm:inline">{labels.reply}</span>
                         </Button>
                       ) : null}
                       {staff && onEdit ? (
@@ -601,7 +601,7 @@ export function TicketsLayoutToggle({
         variant={layout === "list" ? "default" : "ghost"}
         onClick={() => onChange("list")}
       >
-        <List className="mr-1.5 h-3.5 w-3.5" />
+        <List className="me-1.5 h-3.5 w-3.5" />
         {labels.list}
       </Button>
       <Button
@@ -610,7 +610,7 @@ export function TicketsLayoutToggle({
         variant={layout === "grid" ? "default" : "ghost"}
         onClick={() => onChange("grid")}
       >
-        <LayoutGrid className="mr-1.5 h-3.5 w-3.5" />
+        <LayoutGrid className="me-1.5 h-3.5 w-3.5" />
         {labels.grid}
       </Button>
     </div>

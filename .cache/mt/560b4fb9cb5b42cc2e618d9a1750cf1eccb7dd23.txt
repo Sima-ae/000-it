@@ -1,0 +1,1 @@
+Yalnızca süper yönetici, yönetici ve yöneticiler tarafından görülebilir.

@@ -172,35 +172,35 @@ export function DomainOrdersAdmin({
           ) : !orders.length ? (
             <p className="text-sm text-muted-foreground">{t("empty")}</p>
           ) : (
-            <table className="w-full min-w-180 border-collapse text-left text-sm">
+            <table className="w-full min-w-180 border-collapse text-start text-sm">
               <thead className="border-b border-border text-muted-foreground">
                 <tr>
-                  <th className="py-2 pr-3">{t("colOrder")}</th>
-                  <th className="py-2 pr-3">{t("colType")}</th>
-                  <th className="py-2 pr-3">{t("colDomain")}</th>
-                  <th className="py-2 pr-3">{t("colCustomer")}</th>
-                  <th className="py-2 pr-3">{t("colTotal")}</th>
-                  <th className="py-2 pr-3">{t("colStatus")}</th>
-                  <th className="py-2 text-right">{t("colActions")}</th>
+                  <th className="py-2 pe-3">{t("colOrder")}</th>
+                  <th className="py-2 pe-3">{t("colType")}</th>
+                  <th className="py-2 pe-3">{t("colDomain")}</th>
+                  <th className="py-2 pe-3">{t("colCustomer")}</th>
+                  <th className="py-2 pe-3">{t("colTotal")}</th>
+                  <th className="py-2 pe-3">{t("colStatus")}</th>
+                  <th className="py-2 text-end">{t("colActions")}</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-border">
                 {orders.map((o) => (
                   <tr key={o.id}>
-                    <td className="py-3 pr-3 font-mono text-xs">
+                    <td className="py-3 pe-3 font-mono text-xs">
                       {o.orderNumber}
                     </td>
-                    <td className="py-3 pr-3 text-xs">
+                    <td className="py-3 pe-3 text-xs">
                       {typeLabel(o.orderType)}
                     </td>
-                    <td className="py-3 pr-3">
+                    <td className="py-3 pe-3">
                       <span className="inline-flex flex-wrap items-center gap-1.5 font-medium">
                         {o.domainName}
                         {o.isPremium ? <PremiumBadge /> : null}
                       </span>
                     </td>
-                    <td className="py-3 pr-3 text-muted-foreground">{o.email}</td>
-                    <td className="py-3 pr-3 font-semibold tabular-nums">
+                    <td className="py-3 pe-3 text-muted-foreground">{o.email}</td>
+                    <td className="py-3 pe-3 font-semibold tabular-nums">
                       €{centsToEurosNumber(o.totalPriceInCents).toFixed(2)}
                       {o.isPremium ? (
                         <span className="mt-0.5 block text-[10px] font-medium text-violet-700 dark:text-violet-300">
@@ -208,12 +208,12 @@ export function DomainOrdersAdmin({
                         </span>
                       ) : null}
                     </td>
-                    <td className="py-3 pr-3">
+                    <td className="py-3 pe-3">
                       <Badge variant={statusVariant(o.status)}>
                         {statusLabel(o.status)}
                       </Badge>
                     </td>
-                    <td className="py-3 text-right">
+                    <td className="py-3 text-end">
                       <div className="inline-flex flex-wrap justify-end gap-1.5">
                         <Button
                           size="sm"
@@ -221,7 +221,7 @@ export function DomainOrdersAdmin({
                           className="rounded-xl"
                           onClick={() => setOpenId(o.id)}
                         >
-                          <Eye className="mr-1 h-3.5 w-3.5" />
+                          <Eye className="me-1 h-3.5 w-3.5" />
                           {t("view")}
                         </Button>
                         {(o.status === "FAILED" || o.status === "PAID") && (
@@ -231,7 +231,7 @@ export function DomainOrdersAdmin({
                             disabled={retrying === o.id}
                             onClick={() => void retry(o.id)}
                           >
-                            <RotateCcw className="mr-1 h-3.5 w-3.5" />
+                            <RotateCcw className="me-1 h-3.5 w-3.5" />
                             {t("retry")}
                           </Button>
                         )}
@@ -247,7 +247,7 @@ export function DomainOrdersAdmin({
 
       <Dialog open={!!active} onOpenChange={(o) => !o && setOpenId(null)}>
         <DialogContent className="w-[min(96vw,40rem)] gap-0 overflow-hidden p-0">
-          <DialogHeader className="border-b border-border/60 bg-muted/20 px-5 py-4 pr-14">
+          <DialogHeader className="border-b border-border/60 bg-muted/20 px-5 py-4 pe-14">
             <DialogTitle className="inline-flex flex-wrap items-center gap-2 text-xl">
               {active?.domainName}
               {active?.isPremium ? <PremiumBadge /> : null}
@@ -264,7 +264,7 @@ export function DomainOrdersAdmin({
                   €{centsToEurosNumber(active.totalPriceInCents).toFixed(2)}
                 </span>
                 {active.isPremium ? (
-                  <span className="ml-2 text-violet-700 dark:text-violet-300">
+                  <span className="ms-2 text-violet-700 dark:text-violet-300">
                     ({t("premiumPrice")})
                   </span>
                 ) : null}

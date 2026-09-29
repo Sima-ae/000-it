@@ -386,7 +386,7 @@ export function ShopOrdersAdmin({
         canEdit ? (
           <div className="flex justify-end">
             <Button type="button" className="rounded-xl" onClick={openCreate}>
-              <Plus className="mr-1.5 h-4 w-4" />
+              <Plus className="me-1.5 h-4 w-4" />
               {t("addOrder")}
             </Button>
           </div>
@@ -403,7 +403,7 @@ export function ShopOrdersAdmin({
           </div>
           {canEdit ? (
             <Button type="button" className="rounded-xl" onClick={openCreate}>
-              <Plus className="mr-1.5 h-4 w-4" />
+              <Plus className="me-1.5 h-4 w-4" />
               {t("addOrder")}
             </Button>
           ) : null}
@@ -441,12 +441,12 @@ export function ShopOrdersAdmin({
         <CardContent className="space-y-3 p-3 md:p-4">
           <div className="flex flex-wrap items-center gap-2">
             <div className="relative min-w-56 flex-1">
-              <Search className="pointer-events-none absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
+              <Search className="pointer-events-none absolute start-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
               <Input
                 value={q}
                 onChange={(e) => setQ(e.target.value)}
                 placeholder={t("search")}
-                className="h-9 pl-8"
+                className="h-9 ps-8"
               />
             </div>
             <select
@@ -473,7 +473,7 @@ export function ShopOrdersAdmin({
             </div>
           ) : (
             <div className="overflow-x-auto">
-              <table className="w-full min-w-225 border-collapse text-left">
+              <table className="w-full min-w-225 border-collapse text-start">
                 <thead>
                   <tr className="border-b border-border bg-muted/40 text-xs font-medium uppercase tracking-wide text-muted-foreground">
                     <th className="px-3 py-2.5">{t("colOrder")}</th>
@@ -482,7 +482,7 @@ export function ShopOrdersAdmin({
                     <th className="px-3 py-2.5">{t("colTotal")}</th>
                     <th className="px-3 py-2.5">{t("colStatus")}</th>
                     <th className="px-3 py-2.5">{t("colDate")}</th>
-                    <th className="px-3 py-2.5 text-right">{t("colActions")}</th>
+                    <th className="px-3 py-2.5 text-end">{t("colActions")}</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-border">
@@ -577,12 +577,12 @@ export function ShopOrdersAdmin({
         onOpenChange={(open) => !open && setDialog(null)}
       >
         <DialogContent className="w-[min(96vw,40rem)] gap-0 overflow-hidden p-0">
-          <DialogHeader className="border-b border-border/60 bg-muted/20 px-5 py-4 pr-14">
+          <DialogHeader className="border-b border-border/60 bg-muted/20 px-5 py-4 pe-14">
             <DialogTitle className="text-xl">{t("viewTitle")}</DialogTitle>
             <DialogDescription>
               {active?.orderNumber}
               {active ? (
-                <Badge className={cn("ml-2", statusClass(active.status))} variant="outline">
+                <Badge className={cn("ms-2", statusClass(active.status))} variant="outline">
                   {t(`status${active.status}`)}
                 </Badge>
               ) : null}
@@ -662,7 +662,7 @@ export function ShopOrdersAdmin({
         onOpenChange={(open) => !open && setDialog(null)}
       >
         <DialogContent className="max-h-[min(92vh,920px)] w-[min(96vw,48rem)] gap-0 overflow-hidden p-0">
-          <DialogHeader className="shrink-0 border-b border-border/60 bg-muted/20 px-5 py-4 pr-14">
+          <DialogHeader className="shrink-0 border-b border-border/60 bg-muted/20 px-5 py-4 pe-14">
             <DialogTitle className="text-xl md:text-2xl">
               {dialog === "edit" ? t("editTitle") : t("createTitle")}
             </DialogTitle>
@@ -726,7 +726,7 @@ export function ShopOrdersAdmin({
               <div className="mb-3 flex items-center justify-between gap-2">
                 <h3 className="text-sm font-semibold">{t("itemsSection")}</h3>
                 <Button type="button" size="sm" variant="outline" onClick={addItemRow}>
-                  <Plus className="mr-1 h-3.5 w-3.5" />
+                  <Plus className="me-1 h-3.5 w-3.5" />
                   {t("addItem")}
                 </Button>
               </div>
@@ -803,7 +803,7 @@ export function ShopOrdersAdmin({
                   </div>
                 ))}
               </div>
-              <p className="mt-3 text-right text-sm font-semibold">
+              <p className="mt-3 text-end text-sm font-semibold">
                 {t("total")}: {formatShopEuro(previewTotal, locale)}
               </p>
             </section>
@@ -834,7 +834,7 @@ export function ShopOrdersAdmin({
         onOpenChange={(open) => !open && setDeleteOrder(null)}
       >
         <DialogContent className="w-[min(96vw,28rem)] gap-0 overflow-hidden p-0">
-          <DialogHeader className="shrink-0 border-b border-border/60 bg-muted/20 px-5 py-4 pr-14">
+          <DialogHeader className="shrink-0 border-b border-border/60 bg-muted/20 px-5 py-4 pe-14">
             <DialogTitle className="text-xl md:text-2xl">{t("deleteTitle")}</DialogTitle>
             <DialogDescription className="text-sm">
               {t("deleteHint")}
