@@ -63,6 +63,17 @@ const SYNONYM_EXPAND: Record<string, string[]> = {
   package: ["pakket", "plan"],
   prijs: ["kosten", "tarief", "price"],
   price: ["prijs", "kosten"],
+  domein: ["domain", "domeinen", "domains", "tld"],
+  domain: ["domein", "domeinen", "domains", "tld"],
+  domeinen: ["domein", "domain", "domains"],
+  domains: ["domein", "domain", "domeinen"],
+  registreren: ["register", "registration", "domein"],
+  register: ["registreren", "registration", "domain"],
+  verhuizen: ["transfer", "verhuis", "migrate"],
+  transfer: ["verhuizen", "verhuis", "migrate"],
+  verlengen: ["renew", "renewal", "verlenging"],
+  renew: ["verlengen", "renewal", "verlenging"],
+  dns: ["nameserver", "nameservers", "zone"],
 };
 
 const PANEL_NOISE = new Set([
@@ -100,7 +111,29 @@ function isCommercialQuery(tokens: string[]): boolean {
     set.has("plan") ||
     set.has("prijs") ||
     set.has("price");
-  return hasWp || hasCare;
+  const hasDomain =
+    set.has("domein") ||
+    set.has("domeinen") ||
+    set.has("domain") ||
+    set.has("domains") ||
+    set.has("registreren") ||
+    set.has("register") ||
+    set.has("verhuizen") ||
+    set.has("transfer") ||
+    set.has("verlengen") ||
+    set.has("renew") ||
+    set.has("dns") ||
+    set.has("tld");
+  return hasWp || hasCare || hasDomain;
+}
+
+function isHostingOnlyAllowed(item: IndexedProduct): boolean {
+  if (item.kind === "hosting") return true;
+  if (HOSTING_YEARLY_SLUGS.has(item.slug)) return true;
+  if (item.slug.includes("hosting")) return true;
+  if (item.slug === "group-hosting") return true;
+  if (item.slug === "domains" || item.slug.includes("domein")) return true;
+  return false;
 }
 
 function productKind(
@@ -124,8 +157,12 @@ function badgeFor(
   locale: string,
   kind: ProductMatch["kind"],
   category: string | null | undefined,
+  slug?: string,
 ): string | null {
   const nl = locale.toLowerCase().startsWith("nl");
+  if (slug === "domains" || slug?.includes("domein")) {
+    return nl ? "Domeinen" : "Domains";
+  }
   if (kind === "hosting") return nl ? "Hosting" : "Hosting";
   if (kind === "plan") return nl ? "Pakket" : "Plan";
   if (category?.includes("wordpress") || category?.includes("care")) {
@@ -137,8 +174,11 @@ function badgeFor(
 
 function indexShopProduct(locale: string, product: ShopProduct): IndexedProduct | null {
   if (product.published === false) return null;
-  // Prefer monthly listings; skip yearly duplicates for chat cards.
-  if (product.billingPeriod === "yearly" || product.slug.endsWith("-yearly")) {
+  // Prefer monthly listings; skip yearly duplicates — keep yearly-only hosting plans.
+  if (
+    (product.billingPeriod === "yearly" || product.slug.endsWith("-yearly")) &&
+    !HOSTING_YEARLY_SLUGS.has(product.slug)
+  ) {
     return null;
   }
   const localized = localizeShopProduct(product, locale);
@@ -171,7 +211,7 @@ function indexShopProduct(locale: string, product: ShopProduct): IndexedProduct 
     href,
     priceInclCents: shopUnitPriceInclCents(product),
     image: product.image || null,
-    badge: badgeFor(locale, kind, product.category),
+    badge: badgeFor(locale, kind, product.category, product.slug),
     kind,
     hayNorm: normalizeAgentText(hay),
     hayTok: new Set(tokenizeAgentText(hay)),
@@ -206,7 +246,7 @@ function indexServicePage(locale: string, item: ServiceNavItem): IndexedProduct 
     href: serviceHref(locale, item),
     priceInclCents: null,
     image: null,
-    badge: badgeFor(locale, kind, item.group),
+    badge: badgeFor(locale, kind, item.group, item.slug),
     kind,
     hayNorm: normalizeAgentText(hay),
     hayTok: new Set(tokenizeAgentText(hay)),
@@ -329,6 +369,7 @@ export async function rankProducts(
   locale: string,
   question: string,
   limit = 6,
+  opts?: { hostingOnly?: boolean },
 ): Promise<ProductMatch[]> {
   const q = question.trim();
   if (q.length < 2) return [];
@@ -344,30 +385,13 @@ export async function rankProducts(
   const expanded = expandTokens(queryTokens);
   const commercial = isCommercialQuery(queryTokens);
   const hostingOnly =
+    opts?.hostingOnly === true ||
     (process.env.SITE_BRAND || "").toLowerCase().includes("extra") ||
     (process.env.NEXT_PUBLIC_APP_URL || "").includes("extrahosting");
 
   const scored: ProductMatch[] = [];
   for (const item of buildCorpus(locale)) {
-    if (
-      hostingOnly &&
-      item.kind !== "hosting" &&
-      !item.slug.includes("hosting") &&
-      item.slug !== "group-hosting" &&
-      item.slug !== "domains" &&
-      !item.slug.includes("domein")
-    ) {
-      // Keep WordPress hosting + shared/vps; drop care/support/services.
-      if (
-        item.kind === "service" &&
-        item.slug !== "wordpress-beheer" &&
-        !item.slug.startsWith("group-")
-      ) {
-        continue;
-      }
-      if (item.kind === "product" || item.kind === "plan") continue;
-      if (item.slug.includes("wp-care") || item.slug.includes("support")) continue;
-    }
+    if (hostingOnly && !isHostingOnlyAllowed(item)) continue;
 
     let confidence = scoreIndexed(queryTokens, expanded, item);
     if (!commercial) confidence *= 0.85;
@@ -384,6 +408,7 @@ export async function rankProducts(
     }
     // Prefer the WordPress beheer hub over generic group when both match.
     if (
+      !hostingOnly &&
       qHasWp &&
       queryTokens.some((t) =>
         ["beheer", "care", "onderhoud", "maintenance"].includes(t),
@@ -402,6 +427,34 @@ export async function rankProducts(
       (item.slug.includes("wp-care") || item.slug.includes("wordpress-beheer"))
     ) {
       confidence *= 0.3;
+    }
+
+    // Domain queries → boost domains card / hosting group.
+    const qHasDomain = queryTokens.some((t) =>
+      [
+        "domein",
+        "domeinen",
+        "domain",
+        "domains",
+        "registreren",
+        "register",
+        "verhuizen",
+        "transfer",
+        "verlengen",
+        "renew",
+        "dns",
+      ].includes(t),
+    );
+    if (qHasDomain && (item.slug === "domains" || item.slug.includes("domein"))) {
+      confidence = Math.min(1, confidence + 0.28);
+    }
+    if (
+      qHasDomain &&
+      !queryTokens.includes("hosting") &&
+      item.kind === "hosting" &&
+      item.slug !== "domains"
+    ) {
+      confidence *= 0.75;
     }
 
     if (confidence < 0.14) continue;

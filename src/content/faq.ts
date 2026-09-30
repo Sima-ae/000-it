@@ -1,4 +1,6 @@
 import { loadFaqPack } from "@/content/faq-i18n/load";
+import { EXTRA_HOSTING_FAQ_CATEGORY_IDS } from "@/lib/brand/hosting-only-content";
+import { replaceTripleZeroDeep, isExtraHostingSurface } from "@/lib/brand/public-name";
 
 export type FaqItem = {
   id: string;
@@ -437,26 +439,91 @@ const en: FaqContent = {
   ],
 };
 
-export function getFaqContent(locale: string): FaqContent {
+export function getFaqContent(
+  locale: string,
+  opts?: { hostingOnly?: boolean },
+): FaqContent {
   const pack = loadFaqPack(locale);
-  if (pack) {
-    return {
-      title: pack.title,
-      subtitle: pack.subtitle,
-      ctaTitle: pack.ctaTitle,
-      ctaText: pack.ctaText,
-      ctaButton: pack.ctaButton,
-      categories: pack.categories.map((category) => ({
-        id: category.id,
-        title: category.title,
-        items: category.items.map((item) => ({
-          id: item.id,
-          question: item.question,
-          answer: item.answer,
+  const base: FaqContent = pack
+    ? {
+        title: pack.title,
+        subtitle: pack.subtitle,
+        ctaTitle: pack.ctaTitle,
+        ctaText: pack.ctaText,
+        ctaButton: pack.ctaButton,
+        categories: pack.categories.map((category) => ({
+          id: category.id,
+          title: category.title,
+          items: category.items.map((item) => ({
+            id: item.id,
+            question: item.question,
+            answer: item.answer,
+          })),
         })),
-      })),
-    };
+      }
+    : locale === "nl"
+      ? nl
+      : en;
+
+  if (!opts?.hostingOnly) {
+    return isExtraHostingSurface() ? replaceTripleZeroDeep(base) : base;
   }
-  // Legacy inline fallback if JSON packs are missing
-  return locale === "nl" ? nl : en;
+
+  const isNl = locale === "nl";
+  const supportKeep = new Set([
+    "sup-2",
+    "sup-3",
+    "sup-4",
+    "sup-7",
+    "sup-8",
+    "sup-9",
+    "sup-12",
+    "sup-13",
+  ]);
+  const categories = base.categories
+    .filter((category) => EXTRA_HOSTING_FAQ_CATEGORY_IDS.has(category.id))
+    .map((category) => {
+      if (category.id === "support") {
+        return {
+          ...category,
+          items: category.items.filter((item) => supportKeep.has(item.id)),
+        };
+      }
+      if (category.id !== "webhosting") return category;
+      return {
+        ...category,
+        items: category.items.map((item) => {
+          if (item.id === "host-1") {
+            return {
+              ...item,
+              answer: isNl
+                ? "We bieden shared hosting, cloud hosting, WordPress hosting en VPS — plus domeinregistratie."
+                : "We offer shared hosting, cloud hosting, WordPress hosting and VPS — plus domain registration.",
+            };
+          }
+          if (item.id === "host-2") {
+            return {
+              ...item,
+              question: isNl
+                ? "Wat is het verschil tussen shared, cloud, WordPress en VPS?"
+                : "What is the difference between shared, cloud, WordPress and VPS?",
+              answer: isNl
+                ? "Shared is voordelig voor kleinere sites. Cloud geeft meer resources en schaalbaarheid, volledig beheerd. WordPress hosting is geoptimaliseerd voor WP. VPS geeft meer controle voor zwaardere loads."
+                : "Shared is cost-effective for smaller sites. Cloud gives more resources and scalability, fully managed. WordPress hosting is optimized for WP. VPS gives more control for heavier loads.",
+            };
+          }
+          return item;
+        }),
+      };
+    });
+
+  const hostingFaq = {
+    ...base,
+    title: isNl ? "Veelgestelde vragen" : "Frequently asked questions",
+    subtitle: isNl
+      ? "Vragen en antwoorden over domeinnamen, DNS, e-mail, shared hosting, cloud hosting, WordPress hosting, VPS en support."
+      : "Questions and answers about domain names, DNS, email, shared hosting, cloud hosting, WordPress hosting, VPS and support.",
+    categories,
+  };
+  return isExtraHostingSurface() ? replaceTripleZeroDeep(hostingFaq) : hostingFaq;
 }

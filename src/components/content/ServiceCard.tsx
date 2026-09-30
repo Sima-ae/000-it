@@ -3,7 +3,9 @@
 import { SoftLink } from "@/components/shared/SoftLink";
 import { GlassCard } from "@/components/marketing/GlassCard";
 import { ShopProductImage } from "@/components/shop/ShopProductImage";
+import { useBrand } from "@/lib/brand/BrandProvider";
 import { formatEuro } from "@/lib/format-euro";
+import { cn } from "@/lib/utils";
 
 export function ServiceCard({
   href,
@@ -20,6 +22,8 @@ export function ServiceCard({
   listPrice?: number | null;
   image?: string | null;
 }) {
+  const brand = useBrand();
+  const ehArt = brand.id === "extrahosting";
   const hasDiscount =
     typeof price === "number" &&
     typeof listPrice === "number" &&
@@ -29,11 +33,17 @@ export function ServiceCard({
     <SoftLink href={href} className="block h-full">
       <GlassCard className="flex h-full flex-col overflow-hidden p-0">
         {image ? (
-          <div className="relative h-36 w-full bg-muted/40">
+          <div
+            className={cn(
+              "relative w-full bg-[#f6f3ec]",
+              ehArt ? "aspect-square" : "h-36",
+            )}
+          >
             <ShopProductImage
               src={image}
               alt={title}
               sizes="(max-width:768px) 100vw, 33vw"
+              className={ehArt ? "object-cover p-0" : undefined}
             />
           </div>
         ) : null}

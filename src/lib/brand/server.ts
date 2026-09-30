@@ -1,3 +1,4 @@
+import "@/lib/brand/install-public-name";
 import { headers } from "next/headers";
 import {
   brandIdForHost,
@@ -12,12 +13,17 @@ import {
 /** Server-only: resolve brand from the incoming request Host header. */
 export async function getRequestBrandContext(): Promise<ResolvedHostContext> {
   const h = await headers();
+  const marked = (h.get("x-site-brand") || "").trim().toLowerCase();
   const host =
     h.get("x-forwarded-host") ||
     h.get("host") ||
     process.env.AUTH_URL?.replace(/^https?:\/\//, "") ||
     "";
-  return resolveHostContext(host);
+  const ctx = resolveHostContext(host);
+  if (marked === "extrahosting" || marked === "triplezero") {
+    return { ...ctx, brand: marked, config: getBrandConfig(marked) };
+  }
+  return ctx;
 }
 
 export async function getRequestBrandId(): Promise<SiteBrandId> {

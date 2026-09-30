@@ -1,6 +1,15 @@
 "use client";
 
-import { BookOpen, Calendar, ExternalLink, HelpCircle, Mail, Ticket } from "lucide-react";
+import {
+  BookOpen,
+  Calendar,
+  ExternalLink,
+  Globe,
+  HelpCircle,
+  Mail,
+  RefreshCw,
+  Ticket,
+} from "lucide-react";
 import { useTranslations } from "next-intl";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
@@ -218,6 +227,30 @@ export function AgentChatLinks({
 
       {actions?.length ? (
         <div className="flex flex-wrap gap-1.5">
+          {actions.includes("domain_register") ? (
+            <Button asChild size="sm" variant="secondary" className="h-8 rounded-lg text-xs">
+              <SoftLink href={`${localizedHref(locale, "/domeinen")}#register`}>
+                <Globe className="me-1 h-3.5 w-3.5" />
+                {t("actionDomainRegister")}
+              </SoftLink>
+            </Button>
+          ) : null}
+          {actions.includes("domain_transfer") ? (
+            <Button asChild size="sm" variant="secondary" className="h-8 rounded-lg text-xs">
+              <SoftLink href={`${localizedHref(locale, "/domeinen")}#transfer`}>
+                <RefreshCw className="me-1 h-3.5 w-3.5" />
+                {t("actionDomainTransfer")}
+              </SoftLink>
+            </Button>
+          ) : null}
+          {actions.includes("domain_renew") ? (
+            <Button asChild size="sm" variant="secondary" className="h-8 rounded-lg text-xs">
+              <SoftLink href={localizedHref(locale, "/my-domains")}>
+                <Globe className="me-1 h-3.5 w-3.5" />
+                {t("actionDomainRenew")}
+              </SoftLink>
+            </Button>
+          ) : null}
           {actions.includes("book_appointment") ? (
             <Button asChild size="sm" variant="secondary" className="h-8 rounded-lg text-xs">
               <SoftLink href={localizedHref(locale, "/afspraak")}>

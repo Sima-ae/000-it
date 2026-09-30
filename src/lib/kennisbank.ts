@@ -13,6 +13,10 @@ import {
 import { ensureEntitySlugFromTitle } from "@/lib/entity-slugs";
 import { brandify } from "@/lib/brandify";
 import { stripKennisbankExcerptPrefix } from "@/lib/kennisbank-excerpt";
+import {
+  articleAllowedOnExtraHosting,
+  isExtraHostingKennisbankCategorySlug,
+} from "@/lib/brand/hosting-only-content";
 
 export { slugifyKennisbank } from "@/lib/kennisbank-slug";
 export { stripKennisbankExcerptPrefix };
@@ -106,6 +110,7 @@ function localeCompareFor(locale: string, a: string, b: string) {
 export async function listCategories(opts?: {
   locale?: string;
   all?: boolean;
+  hostingOnly?: boolean;
 }): Promise<KennisbankCategoryView[]> {
   const locale = opts?.locale || KENNISBANK_FALLBACK_LOCALE;
   const rows = await prisma.kennisbankCategory.findMany({
@@ -170,7 +175,7 @@ export async function listCategories(opts?: {
   });
   const articlesByCat = new Map<string, Set<string>>();
   for (const link of links) {
-    const set = articlesByCat.get(link.categoryId) || new Set<string>();
+    const set = articlesByCat.get(link.categoryId) || new Set();
     set.add(link.articleId);
     articlesByCat.set(link.categoryId, set);
   }
@@ -189,7 +194,23 @@ export async function listCategories(opts?: {
     cat.articleCount = uniqueInTree(cat.id, new Set()).size;
   }
 
-  return mapped.sort((a, b) => localeCompareFor(locale, a.name, b.name));
+  let result = mapped.sort((a, b) => localeCompareFor(locale, a.name, b.name));
+  if (opts?.hostingOnly) {
+    result = result.filter((cat) => {
+      if (!cat.parentId) return isExtraHostingKennisbankCategorySlug(cat.slug);
+      const root = cat.parentSlug || cat.slug;
+      return (
+        isExtraHostingKennisbankCategorySlug(cat.slug) ||
+        isExtraHostingKennisbankCategorySlug(root)
+      );
+    });
+    for (const cat of result) {
+      cat.children = cat.children.filter((child) =>
+        result.some((c) => c.id === child.id),
+      );
+    }
+  }
+  return result;
 }
 
 export function topLevelCategories(categories: KennisbankCategoryView[]) {
@@ -198,10 +219,14 @@ export function topLevelCategories(categories: KennisbankCategoryView[]) {
 
 export async function getCategoryBySlug(
   slug: string,
-  opts?: { locale?: string; all?: boolean },
+  opts?: { locale?: string; all?: boolean; hostingOnly?: boolean },
 ): Promise<KennisbankCategoryView | null> {
   const locale = opts?.locale || KENNISBANK_FALLBACK_LOCALE;
-  const all = await listCategories({ locale, all: opts?.all });
+  const all = await listCategories({
+    locale,
+    all: opts?.all,
+    hostingOnly: opts?.hostingOnly,
+  });
   return all.find((c) => c.slug === slug) || null;
 }
 
@@ -439,13 +464,18 @@ export async function listArticles(opts?: {
   all?: boolean;
   categorySlug?: string;
   search?: string;
+  hostingOnly?: boolean;
 }): Promise<KennisbankArticleListItem[]> {
   const locale = opts?.locale || KENNISBANK_FALLBACK_LOCALE;
   const search = opts?.search?.trim();
 
   let categoryFilter: { categories?: { some: { categoryId?: { in: string[] }; category?: { slug: string } } } } = {};
   if (opts?.categorySlug) {
-    const tree = await listCategories({ locale, all: opts?.all });
+    const tree = await listCategories({
+      locale,
+      all: opts?.all,
+      hostingOnly: opts?.hostingOnly,
+    });
     const node = tree.find((c) => c.slug === opts.categorySlug);
     const ids = new Set<string>();
     const walk = (cat: KennisbankCategoryView | undefined) => {
@@ -484,14 +514,22 @@ export async function listArticles(opts?: {
     include: articleInclude,
   });
 
-  return rows
+  let items = rows
     .map((row) => mapArticleListItem(row, locale))
     .sort((a, b) => localeCompareFor(locale, a.title, b.title));
+
+  if (opts?.hostingOnly) {
+    items = items.filter((item) =>
+      articleAllowedOnExtraHosting(item.categorySlugs),
+    );
+  }
+
+  return items;
 }
 
 export async function getArticleBySlug(
   slug: string,
-  opts?: { locale?: string; all?: boolean },
+  opts?: { locale?: string; all?: boolean; hostingOnly?: boolean },
 ): Promise<KennisbankArticleView | null> {
   const locale = opts?.locale || KENNISBANK_FALLBACK_LOCALE;
   const full = await prisma.kennisbankArticle.findUnique({
@@ -503,6 +541,9 @@ export async function getArticleBySlug(
 
   const tr = pickTranslation(full.translations, locale);
   const base = mapArticleListItem(full, locale);
+  if (opts?.hostingOnly && !articleAllowedOnExtraHosting(base.categorySlugs)) {
+    return null;
+  }
   return {
     ...base,
     bodyHtml: brandify(tr?.bodyHtml || ""),

@@ -79,13 +79,16 @@ const featuredByGroup: Record<string, string[]> = {
     "community-management",
     "data-entry",
   ],
-  // Keep hosting plan order (Basic → Business → Plus, Shared → WP → VPS)
+  // Keep hosting plan order (Shared → Cloud → WP → VPS)
   hosting: [
     "web-hosting",
     "domains",
     "shared-hosting-basic",
     "shared-hosting-business",
     "shared-hosting-plus",
+    "cloud-hosting-startup",
+    "cloud-hosting-professional",
+    "cloud-hosting-enterprise",
     "wordpress-hosting-basic",
     "wordpress-hosting-business",
     "wordpress-hosting-plus",

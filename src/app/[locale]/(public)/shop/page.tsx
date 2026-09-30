@@ -7,6 +7,7 @@ import { ShopHostingSection } from "@/components/shop/ShopHostingSection";
 import { Reveal } from "@/components/marketing/Reveal";
 import { BRANDING_IMAGES } from "@/lib/branding-images";
 import {
+  CLOUD_HOSTING_SLUG_ORDER,
   HOSTING_YEARLY_SLUGS,
   isSupportPackageSlug,
   isWpCareSlug,
@@ -56,6 +57,10 @@ export default async function ShopPage({
   const sharedHostingProducts = shopProductsInSlugOrder(
     catalogProducts,
     SHARED_HOSTING_SLUG_ORDER,
+  );
+  const cloudHostingProducts = shopProductsInSlugOrder(
+    catalogProducts,
+    CLOUD_HOSTING_SLUG_ORDER,
   );
   const wordpressHostingProducts = shopProductsInSlugOrder(
     catalogProducts,
@@ -145,6 +150,11 @@ export default async function ShopPage({
       <ShopHostingSection
         title={t("sharedHosting")}
         products={sharedHostingProducts}
+      />
+
+      <ShopHostingSection
+        title={t("cloudHosting")}
+        products={cloudHostingProducts}
       />
 
       <ShopHostingSection

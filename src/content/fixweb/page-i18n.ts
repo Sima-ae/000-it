@@ -1,5 +1,6 @@
 import { getLocalizedCopySync } from "@/lib/localized-copy-cache";
 import pageI18nPack from "@/content/fixweb/page-i18n-pack.json";
+import { isExtraHostingSurface, replaceTripleZeroDeep } from "@/lib/brand/public-name";
 
 export type PageBlock =
   | { type: "heading"; text: string }
@@ -746,7 +747,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
     nl: {
       title: "Web Hosting",
       subtitle:
-        "Betrouwbare hosting bij TripleZero iT: kies shared, WordPress of VPS — plus domeinregistratie vanaf scherpe tarieven.",
+        "Betrouwbare hosting bij TripleZero iT: kies shared, cloud, WordPress of VPS — plus domeinregistratie vanaf scherpe tarieven.",
       blocks: [
         h("Hosting die bij jouw site past"),
         p(
@@ -755,6 +756,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         h("Onze hostingopties"),
         l([
           "Shared Hosting — betaalbaar en compleet voor kleinere sites",
+          "Cloud Hosting — meer power en schaalbaarheid, volledig beheerd",
           "WordPress Hosting — geoptimaliseerd voor WordPress-prestaties",
           "VPS Hosting — meer resources en controle voor groeiende projecten",
           "Domeinregistratie — vind en registreer jouw domeinnaam",
@@ -773,7 +775,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
     en: {
       title: "Web Hosting",
       subtitle:
-        "Reliable hosting with TripleZero iT: choose shared, WordPress or VPS — plus domain registration at competitive rates.",
+        "Reliable hosting with TripleZero iT: choose shared, cloud, WordPress or VPS — plus domain registration at competitive rates.",
       blocks: [
         h("Hosting that fits your site"),
         p(
@@ -782,6 +784,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         h("Our hosting options"),
         l([
           "Shared Hosting — affordable and complete for smaller sites",
+          "Cloud Hosting — more power and scalability, fully managed",
           "WordPress Hosting — optimized for WordPress performance",
           "VPS Hosting — more resources and control for growing projects",
           "Domain registration — find and register your domain name",
@@ -823,7 +826,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ]),
         h("Voor wie is shared hosting geschikt?"),
         p(
-          "Perfect als je betrouwbaar wilt starten zonder overbodige complexiteit. Groeit jouw verkeer of wil je meer controle, dan kijk je naar WordPress- of VPS-hosting.",
+          "Perfect als je betrouwbaar wilt starten zonder overbodige complexiteit. Groeit jouw verkeer of wil je meer controle, dan kijk je naar Cloud-, WordPress- of VPS-hosting.",
         ),
         h("Snel en overzichtelijk aan de slag"),
         p(
@@ -859,7 +862,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ]),
         h("Who is shared hosting for?"),
         p(
-          "Perfect when you want a reliable start without unnecessary complexity. If traffic grows or you need more control, look at WordPress or VPS hosting.",
+          "Perfect when you want a reliable start without unnecessary complexity. If traffic grows or you need more control, look at WordPress, Cloud or VPS hosting.",
         ),
         h("Get online quickly and clearly"),
         p(
@@ -868,6 +871,75 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         h("A practical base for your online presence"),
         p(
           "You get the essentials for a professional website in one place: storage, email, backups and help when needed. This keeps the technical foundation clear while your organisation becomes visible online.",
+        ),
+        h("Order or get advice"),
+      ],
+    },
+  },
+
+  "cloud-hosting": {
+    nl: {
+      title: "Cloud Hosting",
+      subtitle:
+        "Tot 20x meer resources dan traditionele webhosting — volledig beheerd, schaalbaar en gebouwd voor groeiende websites en webshops.",
+      blocks: [
+        h("Cloud Hosting van TripleZero iT"),
+        p(
+          "Bij cloudhosting draait jouw website op een netwerk van virtuele servers in plaats van één fysieke machine. Zo krijg je betere uptime, meer snelheid en eenvoudig opschalen wanneer het verkeer toeneemt.",
+        ),
+        h("Plannen"),
+        l([
+          "Startup — 4 CPU-cores, 4 GB RAM, 100 GB NVMe, 100 PHP workers",
+          "Professional — 5 CPU-cores, 6 GB RAM, 200 GB NVMe, 200 PHP workers",
+          "Enterprise — 6 CPU-cores, 12 GB RAM, 300 GB NVMe, 300 PHP workers",
+        ]),
+        h("Inbegrepen bij elk plan"),
+        l([
+          "10 Web Apps, onbeperkt websites en toegang delen",
+          "Gratis domein (1 jaar), onbeperkte SSL en CDN",
+          "Managed hosting voor WordPress, WooCommerce en Web Apps",
+          "Dedicated IP, 24/7 prioriteitsondersteuning en 30-dagen-geld-terug-garantie",
+        ]),
+        h("Voor wie is cloud hosting geschikt?"),
+        p(
+          "Ideaal voor groeiende websites en webshops die meer snelheid en betrouwbare prestaties zoeken dan shared hosting biedt — zonder zelf een VPS te beheren.",
+        ),
+        h("Meer kracht, volledig beheerd"),
+        p(
+          "Breid capaciteit uit wanneer het verkeer toeneemt — geen rebuild, geen nieuwe server. TripleZero iT combineert de kracht van de cloud met een intuïtief paneel en 24/7 support.",
+        ),
+        h("Bestellen of advies"),
+      ],
+    },
+    en: {
+      title: "Cloud Hosting",
+      subtitle:
+        "Up to 20x more resources than traditional web hosting — fully managed, scalable and built for growing websites and online stores.",
+      blocks: [
+        h("Cloud Hosting from TripleZero iT"),
+        p(
+          "With cloud hosting your website runs across a network of virtual servers instead of a single physical machine. That means better uptime, more speed and easy scaling when traffic grows.",
+        ),
+        h("Plans"),
+        l([
+          "Startup — 4 CPU cores, 4 GB RAM, 100 GB NVMe, 100 PHP workers",
+          "Professional — 5 CPU cores, 6 GB RAM, 200 GB NVMe, 200 PHP workers",
+          "Enterprise — 6 CPU cores, 12 GB RAM, 300 GB NVMe, 300 PHP workers",
+        ]),
+        h("Included with every plan"),
+        l([
+          "10 Web Apps, unlimited websites and share access",
+          "Free domain (1 year), unlimited SSL and CDN",
+          "Managed hosting for WordPress, WooCommerce and Web Apps",
+          "Dedicated IP, 24/7 priority support and 30-day money-back guarantee",
+        ]),
+        h("Who is cloud hosting for?"),
+        p(
+          "Ideal for growing websites and online stores that need more speed and reliable performance than shared hosting — without managing a VPS yourself.",
+        ),
+        h("More power, fully managed"),
+        p(
+          "Scale capacity when traffic increases — no rebuild, no new server. TripleZero iT combines cloud power with an intuitive panel and 24/7 support.",
         ),
         h("Order or get advice"),
       ],
@@ -1089,20 +1161,26 @@ export function getPageI18n(
 ): PageI18n | null {
   const entry = pageI18n[slug];
   if (!entry) return null;
-  if (locale === "nl") return entry.nl;
-  if (locale === "en") return entry.en;
-  const fromPack = (pageI18nPack as Record<string, Record<string, PageI18n>>)[locale]?.[
-    slug
-  ];
-  if (fromPack?.title && Array.isArray(fromPack.blocks)) {
-    return { ...fromPack, blocks: normalizePageBlocks(fromPack.blocks) };
+  let result: PageI18n | null = null;
+  if (locale === "nl") result = entry.nl;
+  else if (locale === "en") result = entry.en;
+  else {
+    const fromPack = (pageI18nPack as Record<string, Record<string, PageI18n>>)[locale]?.[
+      slug
+    ];
+    if (fromPack?.title && Array.isArray(fromPack.blocks)) {
+      result = { ...fromPack, blocks: normalizePageBlocks(fromPack.blocks) };
+    } else {
+      const overlay = getLocalizedCopySync<PageI18n>("page", slug, locale);
+      if (overlay?.title && Array.isArray(overlay.blocks)) {
+        result = { ...overlay, blocks: normalizePageBlocks(overlay.blocks) };
+      } else if (opts?.fallback !== false) {
+        result = entry.en;
+      }
+    }
   }
-  const overlay = getLocalizedCopySync<PageI18n>("page", slug, locale);
-  if (overlay?.title && Array.isArray(overlay.blocks)) {
-    return { ...overlay, blocks: normalizePageBlocks(overlay.blocks) };
-  }
-  if (opts?.fallback === false) return null;
-  return entry.en;
+  if (!result) return null;
+  return isExtraHostingSurface() ? replaceTripleZeroDeep(result) : result;
 }
 
 function normalizePageBlocks(blocks: PageBlock[]): PageBlock[] {

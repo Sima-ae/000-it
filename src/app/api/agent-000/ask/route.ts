@@ -5,6 +5,7 @@ import { prisma } from "@/lib/prisma";
 import { buildAgentReply } from "@/lib/agent-000/ask";
 import { canAccessTicket } from "@/lib/support";
 import { isSameSiteRequest } from "@/lib/anti-scrape";
+import { getRequestBrand } from "@/lib/brand/server";
 
 export const runtime = "nodejs";
 
@@ -33,11 +34,12 @@ export async function POST(request: Request) {
 
   const { locale, question, ticketId, guestToken, faqId } = parsed.data;
   const persist = parsed.data.persist ?? Boolean(ticketId);
-  const result = await buildAgentReply(
-    locale,
-    question,
-    faqId ? { faqId } : undefined,
-  );
+  const brand = await getRequestBrand();
+  const hostingOnly = brand.catalogMode === "domains_hosting";
+  const result = await buildAgentReply(locale, question, {
+    ...(faqId ? { faqId } : {}),
+    hostingOnly,
+  });
 
   let systemMessageId: string | null = null;
 

@@ -71,11 +71,12 @@ export function rankFaq(
   locale: string,
   question: string,
   limit = 8,
+  opts?: { hostingOnly?: boolean },
 ): FaqMatch[] {
   const q = question.trim();
   if (q.length < 2) return [];
 
-  const pack = getFaqContent(locale);
+  const pack = getFaqContent(locale, { hostingOnly: opts?.hostingOnly });
   const queryTokens = tokenizeAgentText(q);
   if (!queryTokens.length) return [];
 
@@ -99,12 +100,20 @@ export function rankFaq(
 }
 
 /** Best single FAQ match (legacy helper). */
-export function matchFaq(locale: string, question: string): FaqMatch | null {
-  return rankFaq(locale, question, 1)[0] ?? null;
+export function matchFaq(
+  locale: string,
+  question: string,
+  opts?: { hostingOnly?: boolean },
+): FaqMatch | null {
+  return rankFaq(locale, question, 1, opts)[0] ?? null;
 }
 
-export function getFaqById(locale: string, faqId: string): FaqMatch | null {
-  const pack = getFaqContent(locale);
+export function getFaqById(
+  locale: string,
+  faqId: string,
+  opts?: { hostingOnly?: boolean },
+): FaqMatch | null {
+  const pack = getFaqContent(locale, { hostingOnly: opts?.hostingOnly });
   for (const category of pack.categories) {
     const item = category.items.find((i) => i.id === faqId);
     if (item) {
@@ -121,8 +130,11 @@ export function getFaqById(locale: string, faqId: string): FaqMatch | null {
 }
 
 /** Count FAQ items available for a locale (debug / health). */
-export function countFaqItems(locale: string): number {
-  return getFaqContent(locale).categories.reduce(
+export function countFaqItems(
+  locale: string,
+  opts?: { hostingOnly?: boolean },
+): number {
+  return getFaqContent(locale, { hostingOnly: opts?.hostingOnly }).categories.reduce(
     (n, c) => n + c.items.length,
     0,
   );

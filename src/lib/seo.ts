@@ -12,6 +12,8 @@ import {
   getBrandConfig,
   type SiteBrandId,
 } from "@/lib/brand/config";
+import { readRequestSiteBrand } from "@/lib/brand/install-public-name";
+import { EXTRA_HOSTING_PUBLIC_NAME } from "@/lib/brand/public-name";
 
 function resolveSeoBrandId(): SiteBrandId {
   try {
@@ -27,6 +29,10 @@ function resolveSeoBrandId(): SiteBrandId {
   } catch {
     return "triplezero";
   }
+}
+
+function requestBrandLabel(): string {
+  return readRequestSiteBrand() === "extrahosting" ? EXTRA_HOSTING_PUBLIC_NAME : SITE_SEO.name;
 }
 
 function buildSiteSeo(brandId: SiteBrandId = resolveSeoBrandId()) {
@@ -343,12 +349,15 @@ export function buildPageMetadata(input: BuildPageMetadataInput): Metadata {
   const { width: ogWidth, height: ogHeight } = ogImageDimensions(image);
 
   return {
-    title: input.title,
+    title:
+      readRequestSiteBrand() === "extrahosting"
+        ? { absolute: `${input.title} · ${EXTRA_HOSTING_PUBLIC_NAME}` }
+        : input.title,
     description,
     keywords,
-    authors: [{ name: SITE_SEO.name, url: siteOrigin() }],
-    creator: SITE_SEO.name,
-    publisher: SITE_SEO.name,
+    authors: [{ name: requestBrandLabel(), url: siteOrigin() }],
+    creator: requestBrandLabel(),
+    publisher: requestBrandLabel(),
     robots: input.noIndex
       ? {
           index: false,
@@ -383,7 +392,7 @@ export function buildPageMetadata(input: BuildPageMetadataInput): Metadata {
       url,
       title: input.title,
       description,
-      siteName: SITE_SEO.name,
+      siteName: requestBrandLabel(),
       locale: ogLocale,
       alternateLocale: [altLocale],
       images: [
@@ -621,7 +630,7 @@ export function buildNewsArticleMetadata(
       url,
       title,
       description,
-      siteName: SITE_SEO.name,
+      siteName: requestBrandLabel(),
       locale: ogLocale,
       alternateLocale: [altLocale],
       publishedTime: published,
@@ -702,7 +711,7 @@ export async function buildNewsIndexMetadata(locale: string, page = 1): Promise<
       url,
       title: socialTitle,
       description,
-      siteName: SITE_SEO.name,
+      siteName: requestBrandLabel(),
       locale: openGraphLocale(locale),
       images: [
         {
@@ -727,8 +736,8 @@ export function organizationJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": ["Organization", "ProfessionalService"],
-    name: SITE_SEO.name,
-    legalName: SITE_SEO.legalName,
+    name: requestBrandLabel(),
+    legalName: requestBrandLabel(),
     url: siteOrigin(),
     email: SITE_SEO.email,
     logo: absoluteUrl(SITE_SEO.defaultOgImage),

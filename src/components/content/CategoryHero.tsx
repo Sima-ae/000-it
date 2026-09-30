@@ -2,7 +2,11 @@ import Image from "next/image";
 import { Reveal } from "@/components/marketing/Reveal";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { TabletFrame } from "@/components/content/TabletFrame";
-import { brandingImageForServiceGroup } from "@/lib/branding-images";
+import {
+  brandingImageForServiceGroup,
+  photoForBrand,
+} from "@/lib/branding-images";
+import { getRequestBrand } from "@/lib/brand/server";
 import { localizedHref } from "@/i18n/pathnames";
 import { cn } from "@/lib/utils";
 
@@ -49,7 +53,7 @@ function JumpChips({
   );
 }
 
-export function CategoryHero({
+export async function CategoryHero({
   locale,
   groupId,
   title,
@@ -72,6 +76,7 @@ export function CategoryHero({
   jumpLinks?: JumpLink[];
   jumpBasePath?: string;
 }) {
+  const brand = await getRequestBrand();
   const showJump = Boolean(jumpLinks && jumpLinks.length > 2 && jumpBasePath);
 
   return (
@@ -116,7 +121,7 @@ export function CategoryHero({
           <div className="mx-auto w-full max-w-60 shrink-0 lg:mx-0">
             <TabletFrame>
               <Image
-                src={brandingImageForServiceGroup(groupId)}
+                src={photoForBrand(brandingImageForServiceGroup(groupId), brand.id)}
                 alt=""
                 fill
                 priority

@@ -6,6 +6,7 @@ import { isStaffRole } from "@/lib/roles";
 import { canAccessTicket } from "@/lib/support";
 import { buildAgentReply } from "@/lib/agent-000/ask";
 import { recordTicketEvent } from "@/lib/crm/ticket-events";
+import { getRequestBrand } from "@/lib/brand/server";
 
 type Params = { params: Promise<{ id: string }> };
 
@@ -68,11 +69,11 @@ export async function POST(request: Request, { params }: Params) {
     let agent: Awaited<ReturnType<typeof buildAgentReply>> | null = null;
     if (!parsed.data.skipAgent && ticket.source === "CHAT") {
       try {
-        agent = await buildAgentReply(
-          parsed.data.locale || "en",
-          parsed.data.body,
-          parsed.data.faqId ? { faqId: parsed.data.faqId } : undefined,
-        );
+        const brand = await getRequestBrand();
+        agent = await buildAgentReply(parsed.data.locale || "en", parsed.data.body, {
+          ...(parsed.data.faqId ? { faqId: parsed.data.faqId } : {}),
+          hostingOnly: brand.catalogMode === "domains_hosting",
+        });
         agentMessage = await prisma.ticketMessage.create({
           data: {
             ticketId: id,

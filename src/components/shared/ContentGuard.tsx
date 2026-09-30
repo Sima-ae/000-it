@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { useSession } from "next-auth/react";
 import { isSuperAdmin } from "@/lib/roles";
+import { useBrand } from "@/lib/brand/BrandProvider";
+import { EXTRA_HOSTING_PUBLIC_NAME } from "@/lib/brand/public-name";
 
 type Popup = {
   x: number;
@@ -19,6 +21,7 @@ type Popup = {
  */
 export function ContentGuard() {
   const { data: session, status } = useSession();
+  const brand = useBrand();
   const allowCopy = status === "authenticated" && isSuperAdmin(session?.user?.role);
   const [popup, setPopup] = useState<Popup>(null);
   const [mounted, setMounted] = useState(false);
@@ -149,10 +152,10 @@ export function ContentGuard() {
           left: `${popup.x}px`,
           top: `${popup.y}px`,
           width: "180px",
-          backgroundColor: "#5e3b88",
+          backgroundColor: brand.id === "extrahosting" ? "#0a4f9c" : "#5e3b88",
         }}
       >
-        TripleZero iT © {popup.year}
+        {brand.id === "extrahosting" ? EXTRA_HOSTING_PUBLIC_NAME : "TripleZero iT"} © {popup.year}
       </div>
     </div>,
     document.body,

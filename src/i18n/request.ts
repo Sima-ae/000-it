@@ -1,4 +1,6 @@
 import { getRequestConfig } from "next-intl/server";
+import { readRequestSiteBrand } from "@/lib/brand/install-public-name";
+import { applyExtraHostingMessages } from "@/lib/brand/extra-hosting-messages";
 import { routing } from "./routing";
 import {
   getUiMessageOverlaySync,
@@ -73,6 +75,32 @@ function sanitizeMessages(messages: Record<string, unknown>) {
   return messages;
 }
 
+function forExtraHosting<T>(messages: T, locale: string): T {
+  if (readRequestSiteBrand() !== "extrahosting") return messages;
+  let next = applyExtraHostingMessages(messages, locale);
+  if (locale === "nl") {
+    next = replaceDutchAmpersands(next);
+  }
+  return next;
+}
+
+function replaceDutchAmpersands<T>(value: T): T {
+  if (typeof value === "string") {
+    return value.replace(/\s*&\s*/g, " en ") as T;
+  }
+  if (Array.isArray(value)) {
+    return value.map((item) => replaceDutchAmpersands(item)) as T;
+  }
+  if (value && typeof value === "object") {
+    const out: Record<string, unknown> = {};
+    for (const [key, item] of Object.entries(value as Record<string, unknown>)) {
+      out[key] = replaceDutchAmpersands(item);
+    }
+    return out as T;
+  }
+  return value;
+}
+
 export default getRequestConfig(async ({ requestLocale }) => {
   let locale = await requestLocale;
   if (!locale || !routing.locales.includes(locale as (typeof routing.locales)[number])) {
@@ -85,13 +113,19 @@ export default getRequestConfig(async ({ requestLocale }) => {
   >;
 
   if (locale === "nl" || locale === "en") {
-    return { locale, messages: sanitizeMessages(fileMessages) };
+    return {
+      locale,
+      messages: forExtraHosting(sanitizeMessages(fileMessages), locale),
+    };
   }
 
   await hydrateLocalizedCopy(locale);
   const overlay = getUiMessageOverlaySync(locale);
   return {
     locale,
-    messages: sanitizeMessages(deepMergeMessages(fileMessages, overlay)),
+    messages: forExtraHosting(
+      sanitizeMessages(deepMergeMessages(fileMessages, overlay)),
+      locale,
+    ),
   };
 });

@@ -7,6 +7,8 @@ import {
   formatFollowerCount,
   type FacebookPageStats,
 } from "@/lib/facebook-page";
+import { EXTRA_HOSTING_PUBLIC_NAME } from "@/lib/brand/public-name";
+import { useBrand } from "@/lib/brand/BrandProvider";
 
 export { FACEBOOK_PAGE_HREF };
 
@@ -16,6 +18,7 @@ export { FACEBOOK_PAGE_HREF };
  * cannot be styled cross-origin.
  */
 export function FacebookPageEmbed({ locale }: { locale: string }) {
+  const brand = useBrand();
   const [stats, setStats] = useState<FacebookPageStats | null>(null);
 
   useEffect(() => {
@@ -31,7 +34,8 @@ export function FacebookPageEmbed({ locale }: { locale: string }) {
     };
   }, []);
 
-  const name = (stats?.name || "TripleZero iT").replace(/\s*\|\s*Dubai.*$/i, "").trim();
+  const fetchedName = (stats?.name || "TripleZero iT").replace(/\s*\|\s*Dubai.*$/i, "").trim();
+  const name = brand.id === "extrahosting" ? EXTRA_HOSTING_PUBLIC_NAME : fetchedName;
   const followers =
     stats?.followers != null
       ? formatFollowerCount(stats.followers, locale)
@@ -44,7 +48,7 @@ export function FacebookPageEmbed({ locale }: { locale: string }) {
         : `${followers} followers`;
   const followLabel = locale === "nl" ? "Pagina volgen" : "Follow Page";
   // Always use the local brand logo — FB Graph/OG often serves a blank silhouette.
-  const avatarSrc = FACEBOOK_PAGE_AVATAR;
+  const avatarSrc = brand.id === "extrahosting" ? brand.logoSrc : FACEBOOK_PAGE_AVATAR;
 
   return (
     <div className="w-full">

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import "@/lib/brand/install-public-name";
 import { GoogleTag } from "@/components/analytics/GoogleTag";
 import { RTL_LOCALES } from "@/i18n/languages";
 import { SITE_SEO, absoluteUrl, geoMetadataOther, siteOrigin } from "@/lib/seo";

@@ -6,6 +6,7 @@ import {
 } from "@/lib/agent-000/text";
 import { rankKennisbank } from "@/lib/agent-000/match-kennisbank";
 import { listCategories, topLevelCategories } from "@/lib/kennisbank";
+import { getRequestBrand } from "@/lib/brand/server";
 
 export const runtime = "nodejs";
 
@@ -35,9 +36,14 @@ export async function GET(request: Request) {
     });
   }
 
+  const brand = await getRequestBrand();
+  const hostingOnly = brand.catalogMode === "domains_hosting";
+
   const [ranked, allCategories] = await Promise.all([
-    rankKennisbank(locale, q, preferCategory ? limit * 2 : limit),
-    listCategories({ locale }),
+    rankKennisbank(locale, q, preferCategory ? limit * 2 : limit, {
+      hostingOnly,
+    }),
+    listCategories({ locale, hostingOnly }),
   ]);
 
   const categoryBySlug = new Map(allCategories.map((c) => [c.slug, c]));

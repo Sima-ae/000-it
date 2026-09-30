@@ -4,7 +4,7 @@ import { useEffect, useId, useState } from "react";
 import { useReducedMotion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-type PulseTheme = "green" | "purple";
+type PulseTheme = "a" | "b";
 
 type PulseTrace = {
   id: string;
@@ -21,9 +21,15 @@ const H = 640;
 const AGENT_X = 1295;
 const AGENT_Y = 355;
 
-const THEME = {
-  green: { stroke: "#007c8d", glow: "#5eead4" },
-  purple: { stroke: "#5e3b88", glow: "#c4b0e0" },
+const THEMES = {
+  triplezero: {
+    a: { stroke: "#007c8d", glow: "#5eead4" },
+    b: { stroke: "#5e3b88", glow: "#c4b0e0" },
+  },
+  extrahosting: {
+    a: { stroke: "#1e9bff", glow: "#93c5fd" },
+    b: { stroke: "#0a4f9c", glow: "#5eb0ff" },
+  },
 } as const;
 
 function rand(min: number, max: number) {
@@ -108,7 +114,7 @@ function generatePathFromAgent(): string {
 
 function generateTraces(generation: number): PulseTrace[] {
   return Array.from({ length: randInt(8, 14) }, (_, i) => {
-    const theme: PulseTheme = Math.random() > 0.48 ? "green" : "purple";
+    const theme: PulseTheme = Math.random() > 0.48 ? "a" : "b";
     const duration = rand(1.8, 3.6);
     return {
       id: `g${generation}-t${i}-${Math.random().toString(36).slice(2, 7)}`,
@@ -128,12 +134,19 @@ const REGEN_MS = 9000;
  * Glowing pulse packets that always flow OUT from Agent 000
  * through the hero in random directions. No static wire lines.
  */
-export function HeroCircuitPulse({ className }: { className?: string }) {
+export function HeroCircuitPulse({
+  className,
+  tone = "triplezero",
+}: {
+  className?: string;
+  tone?: keyof typeof THEMES;
+}) {
   const uid = useId().replace(/:/g, "");
   const reduce = useReducedMotion();
   const [generation, setGeneration] = useState(0);
   const [traces, setTraces] = useState<PulseTrace[] | null>(null);
   const [visible, setVisible] = useState(true);
+  const palette = THEMES[tone];
 
   useEffect(() => {
     setTraces(generateTraces(0));
@@ -200,7 +213,7 @@ export function HeroCircuitPulse({ className }: { className?: string }) {
         </defs>
 
         {traces.map((trace) => {
-          const colors = THEME[trace.theme];
+          const colors = palette[trace.theme];
           const gap = 100 - trace.dash;
           const dashArray = `${trace.dash} ${gap}`;
           // Soft halo dash slightly longer than the core packet

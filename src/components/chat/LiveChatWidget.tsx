@@ -23,6 +23,7 @@ import { Agent000Avatar } from "@/components/agent-000/Agent000Avatar";
 import { AgentChatLinks } from "@/components/agent-000/AgentChatLinks";
 import { OPEN_CHAT_EVENT } from "@/components/chat/open-live-chat";
 import { useAgentSpeech } from "@/components/agent-000/useAgentSpeech";
+import { useBrand } from "@/lib/brand/BrandProvider";
 import type { AgentAction, AgentLink } from "@/lib/agent-000/ask";
 import { splitAgentAnswer } from "@/lib/agent-000/message-links";
 
@@ -110,6 +111,8 @@ export function LiveChatWidget() {
   const locale = useLocale();
   const t = useTranslations("liveChat");
   const pathname = usePathname();
+  const brand = useBrand();
+  const isExtraHosting = brand.id === "extrahosting";
   const isStaff = isStaffRole(session?.user?.role);
   const hideWidget = isAppShellPath(pathname);
   const { speak } = useAgentSpeech(locale);
@@ -641,8 +644,12 @@ export function LiveChatWidget() {
             "max-h-[min(520px,calc(100%-4.25rem))]",
           )}
         >
-          <div className="shrink-0 border-b border-border bg-primary px-3 py-2.5 text-primary-foreground">
-            <div className="flex items-start justify-between gap-2">
+          <div
+            className={cn(
+              "shrink-0 border-b border-border px-3 py-2.5 text-primary-foreground",
+              isExtraHosting ? "bg-[#0a4f9c]" : "bg-primary",
+            )}
+          >            <div className="flex items-start justify-between gap-2">
               <div className="flex min-w-0 items-start gap-2.5">
                 <Agent000Avatar state="idle" size="sm" className="mt-0.5" />
                 <div className="min-w-0">
@@ -652,8 +659,18 @@ export function LiveChatWidget() {
                   </p>
                   <p className="mt-1 flex items-center gap-1.5 text-[11px] leading-none opacity-95">
                     <span className="relative flex h-2 w-2">
-                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
-                      <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+                      <span
+                        className={cn(
+                          "absolute inline-flex h-full w-full animate-ping rounded-full opacity-75",
+                          isExtraHosting ? "bg-[#22c55e]" : "bg-accent",
+                        )}
+                      />
+                      <span
+                        className={cn(
+                          "relative inline-flex h-2 w-2 rounded-full",
+                          isExtraHosting ? "bg-[#22c55e]" : "bg-accent",
+                        )}
+                      />
                     </span>
                     {copy.online}
                   </p>
@@ -676,7 +693,11 @@ export function LiveChatWidget() {
               onClick={() => setMode("chat")}
               className={cn(
                 "flex flex-1 items-center justify-center gap-1.5 rounded-xl px-2 py-1.5 text-xs font-medium transition",
-                mode === "chat" ? "bg-primary/15 text-primary" : "text-muted-foreground hover:bg-muted/60",
+                mode === "chat"
+                  ? isExtraHosting
+                    ? "bg-[#0a4f9c]/15 text-[#0a4f9c]"
+                    : "bg-primary/15 text-primary"
+                  : "text-muted-foreground hover:bg-muted/60",
               )}
             >
               <MessageCircle className="h-3.5 w-3.5" />
@@ -687,7 +708,11 @@ export function LiveChatWidget() {
               onClick={() => setMode("ticket")}
               className={cn(
                 "flex flex-1 items-center justify-center gap-1.5 rounded-xl px-2 py-1.5 text-xs font-medium transition",
-                mode === "ticket" ? "bg-primary/15 text-primary" : "text-muted-foreground hover:bg-muted/60",
+                mode === "ticket"
+                  ? isExtraHosting
+                    ? "bg-[#0a4f9c]/15 text-[#0a4f9c]"
+                    : "bg-primary/15 text-primary"
+                  : "text-muted-foreground hover:bg-muted/60",
               )}
             >
               <Ticket className="h-3.5 w-3.5" />
@@ -721,7 +746,9 @@ export function LiveChatWidget() {
                       className={cn(
                         "max-w-[90%] rounded-xl px-3 py-2 text-sm leading-relaxed",
                         mine
-                          ? "bg-primary text-primary-foreground"
+                          ? isExtraHosting
+                            ? "bg-[#0a4f9c] text-white"
+                            : "bg-primary text-primary-foreground"
                           : system
                             ? "border border-border/70 bg-muted/40 text-foreground"
                             : "bg-muted text-foreground",
@@ -768,7 +795,10 @@ export function LiveChatWidget() {
                   <p className="mt-2">
                     <SoftLink
                       href={localizedHref(locale, "/crm/tickets")}
-                      className="text-primary underline-offset-2 hover:underline"
+                      className={cn(
+                        "underline-offset-2 hover:underline",
+                        isExtraHosting ? "text-[#0a4f9c]" : "text-primary",
+                      )}
                     >
                       {copy.viewTickets}
                     </SoftLink>
@@ -853,10 +883,21 @@ export function LiveChatWidget() {
                 onChange={(e) => setDraft(e.target.value)}
                 placeholder={copy.placeholder}
                 required
-                className="h-10"
+                className={cn(
+                  "h-10",
+                  isExtraHosting && "focus-visible:ring-[#0a4f9c]/50",
+                )}
                 disabled={busy}
               />
-              <Button type="submit" size="icon" className="h-10 w-10 shrink-0" disabled={busy || status === "loading"}>
+              <Button
+                type="submit"
+                size="icon"
+                className={cn(
+                  "h-10 w-10 shrink-0",
+                  isExtraHosting && "bg-[#0a4f9c] hover:bg-[#083d7a]",
+                )}
+                disabled={busy || status === "loading"}
+              >
                 <Send className="h-4 w-4" />
               </Button>
             </div>
@@ -887,7 +928,12 @@ export function LiveChatWidget() {
       <button
         type="button"
         onClick={() => (open ? setOpen(false) : openChat())}
-        className="pointer-events-auto relative flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg transition hover:scale-105 hover:bg-primary/90"
+        className={cn(
+          "pointer-events-auto relative flex h-14 w-14 items-center justify-center rounded-full text-primary-foreground shadow-lg transition hover:scale-105",
+          isExtraHosting
+            ? "bg-[#0a4f9c] hover:bg-[#083d7a]"
+            : "bg-primary hover:bg-primary/90",
+        )}
         aria-label={open ? copy.closeChat : copy.openChat}
       >
         {open ? <X className="h-7 w-7" /> : <MessageCircle className="h-7 w-7" />}

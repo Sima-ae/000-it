@@ -1,4 +1,6 @@
 import { getTranslations } from "next-intl/server";
+import { getRequestBrand } from "@/lib/brand/server";
+import { EXTRA_HOSTING_PUBLIC_NAME } from "@/lib/brand/public-name";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { ContentBlocks } from "@/components/content/ContentBlocks";
 import type { ContentBlock } from "@/lib/fixweb-content";
@@ -50,6 +52,7 @@ export async function LegalDocument({
   page: LegalPageContent;
 }) {
   const t = await getTranslations({ locale, namespace: "legal" });
+  const brand = await getRequestBrand();
   const mail =
     page.slug === "privacy-policy" || page.slug === "cookie-policy"
       ? "privacy@000-it.com"
@@ -59,7 +62,7 @@ export async function LegalDocument({
     <div className="mx-auto max-w-3xl px-4 py-8 md:px-6 md:py-10">
       <header className="space-y-1">
         <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-primary">
-          TripleZero iT
+          {brand.id === "extrahosting" ? EXTRA_HOSTING_PUBLIC_NAME : "TripleZero iT"}
         </p>
         <h1 className="font-display text-2xl font-semibold tracking-tight md:text-4xl">
           {page.title}

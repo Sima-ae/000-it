@@ -19,17 +19,31 @@ export type HomeServiceCardItem = {
  * Service group cards — Marketing is featured (purple glow) until another
  * card is hovered, matching the ready-to-go plans hover behaviour.
  */
-export function HomeServiceCards({ items }: { items: HomeServiceCardItem[] }) {
+export function HomeServiceCards({
+  items,
+  centerSingle = false,
+}: {
+  items: HomeServiceCardItem[];
+  /** Center a lone card. Used on the Extra Hosting homepage only. */
+  centerSingle?: boolean;
+}) {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
+  const lone = centerSingle && items.length === 1;
 
   return (
     <div
-      className="grid gap-3 md:grid-cols-6"
+      className={cn(
+        "grid gap-3 md:grid-cols-6",
+        lone && "justify-items-center md:grid-cols-1",
+      )}
       onMouseLeave={() => setHoveredId(null)}
     >
       {items.map((item, index) => {
-        const span =
-          index < 2 || index >= 5 ? "md:col-span-3" : "md:col-span-2";
+        const span = lone
+          ? "w-full max-w-xl"
+          : index < 2 || index >= 5
+            ? "md:col-span-3"
+            : "md:col-span-2";
         const from =
           index % 3 === 0 ? "left" : index % 3 === 1 ? "up" : "right";
         const glowOnHover = hoveredId === item.id;
@@ -58,10 +72,22 @@ export function HomeServiceCards({ items }: { items: HomeServiceCardItem[] }) {
                     glowOnHover && "pricing-card-glow ring-1 ring-primary/30",
                   )}
                 >
-                  <h3 className="font-display text-lg font-semibold tracking-tight text-accent md:text-xl">
+                  <h3
+                    className={cn(
+                      "font-display font-semibold tracking-tight text-accent",
+                      lone
+                        ? "text-center text-xl md:text-2xl"
+                        : "text-lg md:text-xl",
+                    )}
+                  >
                     {item.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  <p
+                    className={cn(
+                      "mt-2 text-sm leading-relaxed text-muted-foreground",
+                      lone && "text-center",
+                    )}
+                  >
                     {item.summary}
                   </p>
                 </GlassCard>

@@ -7,6 +7,7 @@ import { isStaffRole } from "@/lib/roles";
 import { newGuestToken } from "@/lib/support";
 import { buildAgentReply } from "@/lib/agent-000/ask";
 import { parseTicketTags } from "@/lib/crm/tickets";
+import { getRequestBrand } from "@/lib/brand/server";
 
 const createSchema = z.object({
   subject: z.string().min(2).max(160),
@@ -189,11 +190,11 @@ export async function POST(request: Request) {
     let agent: Awaited<ReturnType<typeof buildAgentReply>> | null = null;
     if (source === "CHAT") {
       try {
-        agent = await buildAgentReply(
-          locale,
-          data.message,
-          data.faqId ? { faqId: data.faqId } : undefined,
-        );
+        const brand = await getRequestBrand();
+        agent = await buildAgentReply(locale, data.message, {
+          ...(data.faqId ? { faqId: data.faqId } : {}),
+          hostingOnly: brand.catalogMode === "domains_hosting",
+        });
       } catch (error) {
         console.error("[tickets] agent reply skipped", error);
       }

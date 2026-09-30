@@ -19,6 +19,7 @@ import { localizedHref } from "@/i18n/pathnames";
 import { resolveKennisbankParams } from "@/lib/resolve-entity-param";
 import { canonicalEntityKey } from "@/lib/entity-slug-cache";
 import { hydrateAllEntitySlugs, hydrateEntitySlugs } from "@/lib/entity-slugs";
+import { getRequestBrand } from "@/lib/brand/server";
 
 export const dynamic = "force-dynamic";
 
@@ -29,8 +30,12 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   await hydrateEntitySlugs(locale);
   await hydrateAllEntitySlugs();
   const category = canonicalEntityKey(locale, "kb_category", rawCategory);
+  const brand = await getRequestBrand();
+  const hostingOnly = brand.catalogMode === "domains_hosting";
   const t = await getTranslations({ locale, namespace: "kennisbank" });
-  const cat = await getCategoryBySlug(category, { locale }).catch(() => null);
+  const cat = await getCategoryBySlug(category, { locale, hostingOnly }).catch(
+    () => null,
+  );
   if (!cat) return {};
   return buildKennisbankCategoryMetadata({
     locale,
@@ -45,23 +50,31 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 export default async function KennisbankCategoryPage({ params }: Params) {
   const { locale, category: rawCategory } = await params;
   setRequestLocale(locale);
+  const brand = await getRequestBrand();
+  const hostingOnly = brand.catalogMode === "domains_hosting";
   const { categoryKey: category } = await resolveKennisbankParams({
     locale,
     categoryParam: rawCategory,
   });
   const t = await getTranslations({ locale, namespace: "kennisbank" });
-  const cat = await getCategoryBySlug(category, { locale });
+  const cat = await getCategoryBySlug(category, { locale, hostingOnly });
   if (!cat) notFound();
 
-  const articles = await listArticles({ locale, categorySlug: category });
-  const allCategories = await listCategories({ locale }).catch(() => []);
+  const articles = await listArticles({
+    locale,
+    categorySlug: category,
+    hostingOnly,
+  });
+  const allCategories = await listCategories({ locale, hostingOnly }).catch(
+    () => [],
+  );
 
   return (
     <div className="relative overflow-hidden">
       <JsonLd data={organizationJsonLd()} />
       <JsonLd
         data={breadcrumbJsonLd([
-          { name: "TripleZero iT", path: localizedHref(locale, "/") },
+          { name: brand.displayName, path: localizedHref(locale, "/") },
           { name: t("breadcrumb"), path: localizedHref(locale, "/kennisbank") },
           {
             name: cat.name,

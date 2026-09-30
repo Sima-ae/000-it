@@ -23,6 +23,7 @@ import {
 import { resolveKennisbankParams } from "@/lib/resolve-entity-param";
 import { canonicalEntityKey } from "@/lib/entity-slug-cache";
 import { hydrateAllEntitySlugs, hydrateEntitySlugs } from "@/lib/entity-slugs";
+import { getRequestBrand } from "@/lib/brand/server";
 
 export const dynamic = "force-dynamic";
 
@@ -36,8 +37,14 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   await hydrateAllEntitySlugs();
   const category = canonicalEntityKey(locale, "kb_category", rawCategory);
   const slug = canonicalEntityKey(locale, "kb_article", rawSlug);
-  const article = await getArticleBySlug(slug, { locale }).catch(() => null);
-  const cat = await getCategoryBySlug(category, { locale }).catch(() => null);
+  const brand = await getRequestBrand();
+  const hostingOnly = brand.catalogMode === "domains_hosting";
+  const article = await getArticleBySlug(slug, { locale, hostingOnly }).catch(
+    () => null,
+  );
+  const cat = await getCategoryBySlug(category, { locale, hostingOnly }).catch(
+    () => null,
+  );
   if (!article) return {};
   return buildKennisbankArticleMetadata({
     locale,
@@ -78,6 +85,8 @@ function injectHeadingIds(html: string): string {
 export default async function KennisbankArticlePage({ params }: Params) {
   const { locale, category: rawCategory, slug: rawSlug } = await params;
   setRequestLocale(locale);
+  const brand = await getRequestBrand();
+  const hostingOnly = brand.catalogMode === "domains_hosting";
   const t = await getTranslations({ locale, namespace: "kennisbank" });
   const { categoryKey: category, articleKey: slug } =
     await resolveKennisbankParams({
@@ -87,12 +96,14 @@ export default async function KennisbankArticlePage({ params }: Params) {
     });
   if (!slug) notFound();
 
-  const cat = await getCategoryBySlug(category, { locale });
-  const article = await getArticleBySlug(slug, { locale });
+  const cat = await getCategoryBySlug(category, { locale, hostingOnly });
+  const article = await getArticleBySlug(slug, { locale, hostingOnly });
   if (!cat || !article) notFound();
   if (!article.categorySlugs.includes(category)) notFound();
 
-  const related = (await listArticles({ locale, categorySlug: category }))
+  const related = (
+    await listArticles({ locale, categorySlug: category, hostingOnly })
+  )
     .filter((a) => a.slug !== article.slug)
     .slice(0, 6);
 
@@ -121,7 +132,7 @@ export default async function KennisbankArticlePage({ params }: Params) {
       />
       <JsonLd
         data={breadcrumbJsonLd([
-          { name: "TripleZero iT", path: localizedHref(locale, "/") },
+          { name: brand.displayName, path: localizedHref(locale, "/") },
           { name: t("breadcrumb"), path: localizedHref(locale, "/kennisbank") },
           {
             name: cat.name,

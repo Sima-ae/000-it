@@ -25,6 +25,7 @@ import { serverLocationsCopy } from "@/content/server-locations";
 import { brandingFallbackForServiceSlug } from "@/lib/branding-images";
 import { listServiceGroupCards } from "@/lib/service-group-listing";
 import {
+  CLOUD_HOSTING_SLUG_ORDER,
   loadShopCatalogFromDb,
   SHARED_HOSTING_SLUG_ORDER,
   shopProductsInSlugOrder,
@@ -33,6 +34,7 @@ import {
 } from "@/lib/shop/catalog";
 import { buildPageMetadata } from "@/lib/seo";
 import { localizedHref } from "@/i18n/pathnames";
+import { getRequestBrand } from "@/lib/brand/server";
 
 type Params = { params: Promise<{ locale: string; group: string }> };
 
@@ -62,7 +64,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     path: serviceGroupPath(group.id),
     title,
     description,
-    keywords: [title, locale === "nl" ? "diensten" : "services", "TripleZero iT"],
+    keywords: [title, locale === "nl" ? "diensten" : "services"],
   });
 }
 
@@ -76,6 +78,9 @@ export default async function ServiceCategoryPage({ params }: Params) {
 
   const group = getServiceGroup(groupId);
   if (!group) notFound();
+
+  const brand = await getRequestBrand();
+  const hostingOnly = brand.catalogMode === "domains_hosting";
 
   const t = await getTranslations("services");
   const tNav = await getTranslations("nav");
@@ -96,6 +101,10 @@ export default async function ServiceCategoryPage({ params }: Params) {
     hostingCatalog,
     SHARED_HOSTING_SLUG_ORDER,
   );
+  const cloudHostingProducts = shopProductsInSlugOrder(
+    hostingCatalog,
+    CLOUD_HOSTING_SLUG_ORDER,
+  );
   const wordpressHostingProducts = shopProductsInSlugOrder(
     hostingCatalog,
     WORDPRESS_HOSTING_SLUG_ORDER,
@@ -105,11 +114,18 @@ export default async function ServiceCategoryPage({ params }: Params) {
     VPS_HOSTING_SLUG_ORDER,
   );
 
-  const otherGroups = sortedServiceGroups(locale).filter((item) => item.id !== group.id);
+  const otherGroups = hostingOnly
+    ? []
+    : sortedServiceGroups(locale).filter((item) => item.id !== group.id);
   const serverLocations = isHosting ? serverLocationsCopy(locale) : null;
   const jumpLinks = isHosting
     ? [
         { key: "shared-hosting", id: "gedeelde-hosting", label: tShop("sharedHosting") },
+        {
+          key: "cloud-hosting",
+          id: "cloud-hosting-pakketten",
+          label: tShop("cloudHosting"),
+        },
         {
           key: "wordpress-hosting",
           id: "wordpress-hosting-pakketten",
@@ -134,8 +150,13 @@ export default async function ServiceCategoryPage({ params }: Params) {
       }));
 
   return (
-    <div className="mx-auto max-w-6xl px-4 pb-12 pt-6 sm:px-5 sm:pb-14 sm:pt-8 md:px-6 md:pb-20 md:pt-10">
-      <CategoryHero
+    <div
+      className={
+        hostingOnly
+          ? "mx-auto max-w-6xl px-4 pb-6 pt-6 sm:px-5 sm:pb-8 sm:pt-8 md:px-6 md:pb-10 md:pt-10"
+          : "mx-auto max-w-6xl px-4 pb-12 pt-6 sm:px-5 sm:pb-14 sm:pt-8 md:px-6 md:pb-20 md:pt-10"
+      }
+    >      <CategoryHero
         locale={locale}
         groupId={group.id}
         title={title}
@@ -161,6 +182,11 @@ export default async function ServiceCategoryPage({ params }: Params) {
             className="mt-0"
             title={tShop("sharedHosting")}
             products={sharedHostingProducts}
+          />
+          <ShopHostingSection
+            id="cloud-hosting-pakketten"
+            title={tShop("cloudHosting")}
+            products={cloudHostingProducts}
           />
           <ShopHostingSection
             id="wordpress-hosting-pakketten"
@@ -252,13 +278,15 @@ export default async function ServiceCategoryPage({ params }: Params) {
         </section>
       ) : null}
 
-      <Reveal delay={0.08}>
-        <div className="mt-10 flex justify-center">
-          <Button asChild size="lg" className="rounded-2xl px-7">
-            <SoftLink href={localizedHref(locale, "/diensten")}>{t("viewAll")}</SoftLink>
-          </Button>
-        </div>
-      </Reveal>
+      {!hostingOnly ? (
+        <Reveal delay={0.08}>
+          <div className="mt-10 flex justify-center">
+            <Button asChild size="lg" className="rounded-2xl px-7">
+              <SoftLink href={localizedHref(locale, "/diensten")}>{t("viewAll")}</SoftLink>
+            </Button>
+          </div>
+        </Reveal>
+      ) : null}
     </div>
   );
 }

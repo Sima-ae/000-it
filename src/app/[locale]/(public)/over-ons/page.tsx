@@ -6,7 +6,7 @@ import { Reveal } from "@/components/marketing/Reveal";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
 import { HomeServiceCards } from "@/components/marketing/HomeServiceCards";
-import { ABOUT_IMAGES } from "@/lib/branding-images";
+import { ABOUT_IMAGES, photoForBrand } from "@/lib/branding-images";
 import { buildStaticPageMetadata } from "@/lib/seo";
 import { localizedHref } from "@/i18n/pathnames";
 import {
@@ -15,6 +15,7 @@ import {
   sortedServiceGroups,
 } from "@/content/fixweb/catalog";
 import { catalogGroupTitle } from "@/content/fixweb/catalog-title";
+import { getRequestBrand } from "@/lib/brand/server";
 
 export async function generateMetadata({
   params,
@@ -51,8 +52,19 @@ export default async function AboutPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const brand = await getRequestBrand();
+  const hostingOnly = brand.catalogMode === "domains_hosting";
   const tNav = await getTranslations("nav");
   const t = await getTranslations("about");
+  const servicesHref = hostingOnly
+    ? serviceGroupHref(locale, "hosting")
+    : localizedHref(locale, "/diensten");
+  const secondaryCtaHref = hostingOnly
+    ? localizedHref(locale, "/domeinen")
+    : localizedHref(locale, "/ai-scan");
+  const serviceGroups = hostingOnly
+    ? sortedServiceGroups(locale).filter((g) => g.id === "hosting")
+    : sortedServiceGroups(locale);
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8 md:px-6 md:py-10">
@@ -69,7 +81,7 @@ export default async function AboutPage({
           </p>
           <div className="mt-4 flex flex-wrap gap-2.5">
             <Button asChild size="sm" className="rounded-xl">
-              <SoftLink href={localizedHref(locale, "/diensten")}>
+              <SoftLink href={servicesHref}>
                 {t("viewServices")}
               </SoftLink>
             </Button>
@@ -83,7 +95,11 @@ export default async function AboutPage({
             {stats.map((stat) => (
               <div
                 key={stat.valueKey}
-                className="glass glow-hover rounded-2xl px-2.5 py-3.5 text-center"
+                className={
+                  brand.id === "extrahosting"
+                    ? "glass eh-glass-wash glow-hover rounded-2xl px-2.5 py-3.5 text-center"
+                    : "glass glow-hover rounded-2xl px-2.5 py-3.5 text-center"
+                }
               >
                 <p className="font-display text-lg font-bold tracking-tight text-foreground md:text-xl">
                   {t(stat.valueKey)}
@@ -99,7 +115,7 @@ export default async function AboutPage({
         <Reveal delay={0.05}>
           <div className="relative aspect-4/3 overflow-hidden rounded-3xl bg-muted/40 shadow-sm">
             <Image
-              src={ABOUT_IMAGES.team}
+              src={photoForBrand(ABOUT_IMAGES.team, brand.id)}
               alt=""
               fill
               priority
@@ -140,7 +156,7 @@ export default async function AboutPage({
           <div className="grid items-stretch gap-3 lg:grid-cols-[0.9fr_1.1fr]">
             <div className="relative min-h-56 overflow-hidden rounded-3xl bg-muted/40 lg:min-h-full">
               <Image
-                src={ABOUT_IMAGES.focus}
+                src={photoForBrand(ABOUT_IMAGES.focus, brand.id)}
                 alt=""
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
@@ -207,7 +223,7 @@ export default async function AboutPage({
               </p>
             </div>
             <SoftLink
-              href={localizedHref(locale, "/diensten")}
+              href={servicesHref}
               className="text-sm font-medium text-primary hover:underline"
             >
               {t("allServicesArrow")}
@@ -216,7 +232,7 @@ export default async function AboutPage({
         </Reveal>
 
         <HomeServiceCards
-          items={sortedServiceGroups(locale).map((group) => ({
+          items={serviceGroups.map((group) => ({
             id: group.id,
             href: serviceGroupHref(locale, group.id),
             title: catalogGroupTitle(group.id, locale, group.title),
@@ -230,7 +246,7 @@ export default async function AboutPage({
           <div className="grid h-full gap-2.5 sm:grid-cols-2 lg:grid-cols-1">
             <div className="relative min-h-44 overflow-hidden rounded-3xl bg-muted/40">
               <Image
-                src={ABOUT_IMAGES.talk}
+                src={photoForBrand(ABOUT_IMAGES.talk, brand.id)}
                 alt=""
                 fill
                 sizes="(max-width: 1024px) 50vw, 30vw"
@@ -276,7 +292,9 @@ export default async function AboutPage({
               aria-hidden
               style={{
                 backgroundImage:
-                  "linear-gradient(90deg, #321c4e 0%, #005a68 100%)",
+                  brand.id === "extrahosting"
+                    ? "linear-gradient(90deg, #0a2f6b 0%, #0a4f9c 52%, #1e9bff 100%)"
+                    : "linear-gradient(90deg, #321c4e 0%, #005a68 100%)",
               }}
             />
             <div
@@ -307,7 +325,7 @@ export default async function AboutPage({
                 variant="outline"
                 className="rounded-xl border-white/30 bg-transparent text-white hover:bg-white/10"
               >
-                <SoftLink href={localizedHref(locale, "/ai-scan")}>{tNav("aiScan")}</SoftLink>
+                <SoftLink href={secondaryCtaHref}>{tNav("aiScan")}</SoftLink>
               </Button>
               <Button
                 asChild

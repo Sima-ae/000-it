@@ -1,5 +1,6 @@
 import catalogI18n from "@/content/fixweb/catalog-i18n.json";
 import type { CatalogOverlay } from "@/lib/localized-copy-cache";
+import { brandify } from "@/lib/brandify";
 
 type CatalogPack = {
   services: Record<string, Record<string, string>>;
@@ -20,11 +21,11 @@ export function catalogServiceTitle(
   locale: string,
   fallback: string,
 ): string {
-  return (
+  return brandify(
     overlayByLocale[locale]?.services?.[slug] ||
-    data.services[locale]?.[slug] ||
-    data.services.en?.[slug] ||
-    fallback
+      data.services[locale]?.[slug] ||
+      data.services.en?.[slug] ||
+      fallback,
   );
 }
 
@@ -33,10 +34,10 @@ export function catalogServiceSummary(
   locale: string,
   fallback: string = "",
 ): string {
-  return (
+  return brandify(
     data.summaries?.[locale]?.[slug] ||
-    data.summaries?.en?.[slug] ||
-    fallback
+      data.summaries?.en?.[slug] ||
+      fallback,
   );
 }
 
@@ -45,7 +46,9 @@ export function catalogUiLabel(
   locale: string,
   fallback: string,
 ): string {
-  return data.labels?.[locale]?.[key] || data.labels?.en?.[key] || fallback;
+  return brandify(
+    data.labels?.[locale]?.[key] || data.labels?.en?.[key] || fallback,
+  );
 }
 
 export function catalogGroupTitle(
@@ -53,11 +56,11 @@ export function catalogGroupTitle(
   locale: string,
   fallback: string,
 ): string {
-  return (
+  return brandify(
     overlayByLocale[locale]?.groups?.[id] ||
-    data.groups[locale]?.[id] ||
-    data.groups.en?.[id] ||
-    fallback
+      data.groups[locale]?.[id] ||
+      data.groups.en?.[id] ||
+      fallback,
   );
 }
 
@@ -69,9 +72,9 @@ export function catalogGroupSummary(
   const pack = data as CatalogPack & {
     groupSummaries?: Record<string, Record<string, string>>;
   };
-  return (
+  return brandify(
     pack.groupSummaries?.[locale]?.[id] ||
-    pack.groupSummaries?.en?.[id] ||
-    fallback
+      pack.groupSummaries?.en?.[id] ||
+      fallback,
   );
 }

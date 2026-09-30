@@ -11,6 +11,7 @@ export function isHostingSlug(slug: string): boolean {
   if (slug === "web-hosting") return true;
   return (
     slug.startsWith("shared-hosting-") ||
+    slug.startsWith("cloud-hosting-") ||
     slug.startsWith("wordpress-hosting-") ||
     slug.startsWith("vps-hosting-")
   );

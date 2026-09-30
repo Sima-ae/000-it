@@ -3,6 +3,7 @@ import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Button } from "@/components/ui/button";
 import { SoftLink } from "@/components/shared/SoftLink";
+import { OpenLiveChatButton } from "@/components/chat/OpenLiveChatButton";
 import { HomeHeroBanner } from "@/components/marketing/HomeHeroBanner";
 import { BrandingCollage } from "@/components/marketing/BrandingCollage";
 import { Reveal } from "@/components/marketing/Reveal";
@@ -18,7 +19,11 @@ import {
 } from "@/components/ui/accordion";
 import { localizedHref } from "@/i18n/pathnames";
 import { getAiScanCount } from "@/lib/ai-scan-count";
-import { BRANDING_CONTACT_IMAGE, BRANDING_SERVICES_IMAGE } from "@/lib/branding-images";
+import {
+  BRANDING_CONTACT_IMAGE,
+  BRANDING_SERVICES_IMAGE,
+  photoForBrand,
+} from "@/lib/branding-images";
 import { buildPageMetadata, buildStaticPageMetadata, organizationJsonLd } from "@/lib/seo";
 import {
   loadShopCatalogFromDb,
@@ -172,50 +177,71 @@ export default async function HomePage({
         />
       ) : null}
 
-      <section className="mx-auto max-w-6xl px-4 pt-10 pb-4 md:px-6 md:pt-12 md:pb-6">
-        <Reveal from="up" duration={0.6}>
-          <div className="mx-auto mb-10 max-w-2xl text-center">
-            <h2 className="font-display text-3xl font-semibold tracking-tight text-primary md:text-5xl">
-              {hostingOnly ? shop("title") : services("title")}
-            </h2>
-            <p className="mt-3 text-muted-foreground">
-              {hostingOnly ? shop("subtitle") : services("subtitle")}
-            </p>
-          </div>
-        </Reveal>
+      {hostingOnly ? (
+        <>
+          <BrandingCollage
+            href={localizedHref(locale, "/contact")}
+            src={photoForBrand(BRANDING_CONTACT_IMAGE, brand.id)}
+            label={t("nav.contact")}
+            className="pt-6 pb-2 md:pt-8 md:pb-3"
+          />
+          <section className="mx-auto max-w-6xl px-4 pt-6 pb-4 md:px-6 md:pt-8 md:pb-6">
+            <HomeServiceCards
+              centerSingle
+              items={serviceGroups.map((group) => ({
+                id: group.id,
+                href: serviceGroupHref(locale, group.id),
+                title:
+                  group.id === "hosting"
+                    ? locale === "nl"
+                      ? "Bekijk alle hosting plannen"
+                      : "View all hosting plans"
+                    : catalogGroupTitle(group.id, locale, group.title),
+                summary: catalogGroupSummary(group.id, locale),
+              }))}
+            />
+          </section>
+        </>
+      ) : (
+        <>
+          <section className="mx-auto max-w-6xl px-4 pt-10 pb-4 md:px-6 md:pt-12 md:pb-6">
+            <Reveal from="up" duration={0.6}>
+              <div className="mx-auto mb-10 max-w-2xl text-center">
+                <h2 className="font-display text-3xl font-semibold tracking-tight text-primary md:text-5xl">
+                  {services("title")}
+                </h2>
+                <p className="mt-3 text-muted-foreground">{services("subtitle")}</p>
+              </div>
+            </Reveal>
 
-        <HomeServiceCards
-          items={serviceGroups.map((group) => ({
-            id: group.id,
-            href: serviceGroupHref(locale, group.id),
-            title: catalogGroupTitle(group.id, locale, group.title),
-            summary: catalogGroupSummary(group.id, locale),
-          }))}
-        />
+            <HomeServiceCards
+              items={serviceGroups.map((group) => ({
+                id: group.id,
+                href: serviceGroupHref(locale, group.id),
+                title: catalogGroupTitle(group.id, locale, group.title),
+                summary: catalogGroupSummary(group.id, locale),
+              }))}
+            />
 
-        <Reveal from="scale" delay={0.1} duration={0.5}>
-          <div className="mt-8 flex justify-center md:mt-10">
-            <Button asChild size="lg" className="rounded-2xl px-7">
-              <SoftLink
-                href={
-                  hostingOnly
-                    ? serviceGroupHref(locale, "hosting")
-                    : localizedHref(locale, "/diensten")
-                }
-              >
-                {services("viewAll")}
-              </SoftLink>
-            </Button>
-          </div>
-        </Reveal>
-      </section>
+            <Reveal from="scale" delay={0.1} duration={0.5}>
+              <div className="mt-8 flex justify-center md:mt-10">
+                <Button asChild size="lg" className="rounded-2xl px-7">
+                  <SoftLink href={localizedHref(locale, "/diensten")}>
+                    {services("viewAll")}
+                  </SoftLink>
+                </Button>
+              </div>
+            </Reveal>
+          </section>
 
-      <BrandingCollage
-        href={localizedHref(locale, "/contact")}
-        src={BRANDING_CONTACT_IMAGE}
-        label={t("nav.contact")}
-        className="pt-6 pb-2 md:pt-8 md:pb-3"
-      />
+          <BrandingCollage
+            href={localizedHref(locale, "/contact")}
+            src={photoForBrand(BRANDING_CONTACT_IMAGE, brand.id)}
+            label={t("nav.contact")}
+            className="pt-6 pb-2 md:pt-8 md:pb-3"
+          />
+        </>
+      )}
 
       <section className="mx-auto max-w-6xl px-4 pt-10 pb-16 md:px-6 md:pt-12 md:pb-20">
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
@@ -260,7 +286,7 @@ export default async function HomePage({
           <div className="glow-hover relative overflow-hidden rounded-4xl">
             <div className="glow-bg absolute inset-0" aria-hidden>
               <Image
-                src="/branding/banner1-nieuw.jpg"
+                src={photoForBrand("/branding/banner1-nieuw.jpg", brand.id)}
                 alt=""
                 fill
                 sizes="(max-width: 1152px) 100vw, 1152px"
@@ -283,13 +309,24 @@ export default async function HomePage({
               <p className="mx-auto mt-4 max-w-xl text-base text-white/70 md:text-lg">
                 {t("hero.ctaBannerText")}
               </p>
-              <Button
-                asChild
-                size="lg"
-                className="mt-8 rounded-2xl bg-white text-primary hover:bg-white/90"
-              >
-                <SoftLink href={localizedHref(locale, "/afspraak")}>{t("nav.book")}</SoftLink>
-              </Button>
+              {hostingOnly ? (
+                <OpenLiveChatButton
+                  size="lg"
+                  className="mt-8 rounded-2xl bg-white text-primary hover:bg-white/90"
+                >
+                  {t("hero.ctaContact")}
+                </OpenLiveChatButton>
+              ) : (
+                <Button
+                  asChild
+                  size="lg"
+                  className="mt-8 rounded-2xl bg-white text-primary hover:bg-white/90"
+                >
+                  <SoftLink href={localizedHref(locale, "/afspraak")}>
+                    {t("nav.book")}
+                  </SoftLink>
+                </Button>
+              )}
             </div>
           </div>
         </Reveal>

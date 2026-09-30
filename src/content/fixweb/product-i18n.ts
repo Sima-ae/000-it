@@ -1,5 +1,6 @@
 import { getLocalizedCopySync } from "@/lib/localized-copy-cache";
 import productI18nPack from "@/content/fixweb/product-i18n-pack.json";
+import { isExtraHostingSurface, replaceTripleZeroDeep } from "@/lib/brand/public-name";
 
 export type ProductI18n = {
   name?: string;
@@ -240,6 +241,111 @@ TripleZero iT levert een toegankelijke, betrouwbare hostingbasis met 24/7 suppor
 With unlimited websites, SSD storage and mailboxes, plus a website builder, AI tools and AutoBackup, you have the flexibility to add projects and communication as you grow.
 
 TripleZero iT delivers an accessible, dependable hosting foundation with 24/7 support. Your digital environment can expand without making daily administration complicated.`,
+    },
+  },
+
+  "cloud-hosting-startup": {
+    nl: {
+      name: "Cloud Hosting Startup",
+      shortDescription: `– 10 Web Apps
+– 4 CPU-cores
+– 4 GB RAM
+– 100 GB NVMe-opslag
+– 2.000.000 inodes
+– 100 PHP Workers
+– Onbeperkt websites
+– Toegang delen`,
+      description: `Cloud Hosting Startup is geoptimaliseerd voor zakelijke en e-commerce websites die meer kracht en stabiliteit nodig hebben dan shared hosting.
+
+Je krijgt 10 Web Apps, 4 CPU-cores, 4 GB RAM, 100 GB NVMe-opslag, 2.000.000 inodes en 100 PHP workers — plus onbeperkt websites en toegang delen. Inbegrepen: gratis domein voor 1 jaar, onbeperkte SSL, managed hosting voor WordPress, WooCommerce en Web Apps, CDN, dedicated IP, 24/7 prioriteitsondersteuning, 30-dagen-geld-terug-garantie en AI SEO-klaar.
+
+TripleZero iT levert volledig beheerde cloudprestaties, zodat jouw site snel en beschikbaar blijft terwijl het verkeer groeit.`,
+    },
+    en: {
+      name: "Cloud Hosting Startup",
+      shortDescription: `– 10 Web Apps
+– 4 CPU cores
+– 4 GB RAM
+– 100 GB NVMe storage
+– 2,000,000 inodes
+– 100 PHP Workers
+– Unlimited websites
+– Share access`,
+      description: `Cloud Hosting Startup is optimised for business and e-commerce websites that need more power and stability than shared hosting.
+
+You receive 10 Web Apps, 4 CPU cores, 4 GB RAM, 100 GB NVMe storage, 2,000,000 inodes and 100 PHP workers — plus unlimited websites and share access. Included: free domain for 1 year, unlimited SSL, managed hosting for WordPress, WooCommerce and Web Apps, CDN, dedicated IP, 24/7 priority support, 30-day money-back guarantee and AI SEO-ready tools.
+
+TripleZero iT delivers fully managed cloud performance so your site stays fast and available as traffic grows.`,
+    },
+  },
+
+  "cloud-hosting-professional": {
+    nl: {
+      name: "Cloud Hosting Professional",
+      shortDescription: `– 10 Web Apps
+– 5 CPU-cores
+– 6 GB RAM
+– 200 GB NVMe-opslag
+– 3.000.000 inodes
+– 200 PHP Workers
+– Onbeperkt websites
+– Toegang delen`,
+      description: `Cloud Hosting Professional is geoptimaliseerd voor het schalen van professionele websites en groeiende webshops.
+
+Je krijgt 10 Web Apps, 5 CPU-cores, 6 GB RAM, 200 GB NVMe-opslag, 3.000.000 inodes en 200 PHP workers — plus onbeperkt websites en toegang delen. Inbegrepen: gratis domein voor 1 jaar, onbeperkte SSL, managed hosting voor WordPress, WooCommerce en Web Apps, CDN, dedicated IP, 24/7 prioriteitsondersteuning, 30-dagen-geld-terug-garantie en AI SEO-klaar.
+
+TripleZero iT geeft je beheerde cloudcapaciteit die verkeerspieken opvangt zonder rebuild of servermigratie.`,
+    },
+    en: {
+      name: "Cloud Hosting Professional",
+      shortDescription: `– 10 Web Apps
+– 5 CPU cores
+– 6 GB RAM
+– 200 GB NVMe storage
+– 3,000,000 inodes
+– 200 PHP Workers
+– Unlimited websites
+– Share access`,
+      description: `Cloud Hosting Professional is optimised for scaling professional websites and growing online stores.
+
+You receive 10 Web Apps, 5 CPU cores, 6 GB RAM, 200 GB NVMe storage, 3,000,000 inodes and 200 PHP workers — plus unlimited websites and share access. Included: free domain for 1 year, unlimited SSL, managed hosting for WordPress, WooCommerce and Web Apps, CDN, dedicated IP, 24/7 priority support, 30-day money-back guarantee and AI SEO-ready tools.
+
+TripleZero iT gives you managed cloud capacity that absorbs traffic spikes without a rebuild or server migration.`,
+    },
+  },
+
+  "cloud-hosting-enterprise": {
+    nl: {
+      name: "Cloud Hosting Enterprise",
+      shortDescription: `– 10 Web Apps
+– 6 CPU-cores
+– 12 GB RAM
+– 300 GB NVMe-opslag
+– 4.000.000 inodes
+– 300 PHP Workers
+– Onbeperkt websites
+– Toegang delen`,
+      description: `Cloud Hosting Enterprise levert maximale prestaties voor veeleisende websites en projecten met hoog verkeer.
+
+Je krijgt 10 Web Apps, 6 CPU-cores, 12 GB RAM, 300 GB NVMe-opslag, 4.000.000 inodes en 300 PHP workers — plus onbeperkt websites en toegang delen. Inbegrepen: gratis domein voor 1 jaar, onbeperkte SSL, managed hosting voor WordPress, WooCommerce en Web Apps, CDN, dedicated IP, 24/7 prioriteitsondersteuning, 30-dagen-geld-terug-garantie en AI SEO-klaar.
+
+TripleZero iT biedt een volledig beheerde cloudbasis met de ruimte die serieuze sites nodig hebben voor snelheid, uptime en groei.`,
+    },
+    en: {
+      name: "Cloud Hosting Enterprise",
+      shortDescription: `– 10 Web Apps
+– 6 CPU cores
+– 12 GB RAM
+– 300 GB NVMe storage
+– 4,000,000 inodes
+– 300 PHP Workers
+– Unlimited websites
+– Share access`,
+      description: `Cloud Hosting Enterprise delivers maximum performance for demanding websites and high-traffic projects.
+
+You receive 10 Web Apps, 6 CPU cores, 12 GB RAM, 300 GB NVMe storage, 4,000,000 inodes and 300 PHP workers — plus unlimited websites and share access. Included: free domain for 1 year, unlimited SSL, managed hosting for WordPress, WooCommerce and Web Apps, CDN, dedicated IP, 24/7 priority support, 30-day money-back guarantee and AI SEO-ready tools.
+
+TripleZero iT provides a fully managed cloud foundation with the headroom serious sites need for speed, uptime and growth.`,
     },
   },
 
@@ -621,13 +727,20 @@ After delivery you get 7 days of free support for questions about the optimizati
 export function getProductI18n(slug: string, locale: string): ProductI18n | null {
   const entry = productI18n[slug];
   if (!entry) return null;
-  if (locale === "nl") return entry.nl;
-  if (locale === "en") return entry.en;
-  const fromPack = (
-    productI18nPack as Record<string, Record<string, ProductI18n>>
-  )[locale]?.[slug];
-  if (fromPack?.shortDescription || fromPack?.name) return fromPack;
-  const overlay = getLocalizedCopySync<ProductI18n>("product", slug, locale);
-  if (overlay?.shortDescription) return overlay;
-  return entry.en;
+  let result: ProductI18n | null = null;
+  if (locale === "nl") result = entry.nl;
+  else if (locale === "en") result = entry.en;
+  else {
+    const fromPack = (
+      productI18nPack as Record<string, Record<string, ProductI18n>>
+    )[locale]?.[slug];
+    if (fromPack?.shortDescription || fromPack?.name) result = fromPack;
+    else {
+      const overlay = getLocalizedCopySync<ProductI18n>("product", slug, locale);
+      if (overlay?.shortDescription) result = overlay;
+      else result = entry.en;
+    }
+  }
+  if (!result) return null;
+  return isExtraHostingSurface() ? replaceTripleZeroDeep(result) : result;
 }

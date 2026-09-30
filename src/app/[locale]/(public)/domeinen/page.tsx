@@ -98,7 +98,10 @@ export default async function DomainsPage({
           ) : null}
 
           <Reveal delay={0.05}>
-            <div className="mx-auto mt-5 w-full min-w-0 overflow-hidden rounded-3xl border border-border/70 bg-background/80 p-3 shadow-sm backdrop-blur sm:mt-6 sm:p-5 md:p-6">
+            <div
+              id="register"
+              className="mx-auto mt-5 w-full min-w-0 overflow-hidden rounded-3xl border border-border/70 bg-background/80 p-3 shadow-sm backdrop-blur sm:mt-6 sm:p-5 md:p-6 scroll-mt-24"
+            >
               <DomainSearch key={sp.q?.trim() || "domain-search"} />
             </div>
             <p className="mx-auto mt-3 w-full text-center text-xs text-muted-foreground sm:text-sm md:whitespace-nowrap">
@@ -134,7 +137,10 @@ export default async function DomainsPage({
         </div>
 
         <Reveal delay={0.08}>
-          <div className="mx-auto mt-12 max-w-4xl rounded-3xl border border-border/70 bg-linear-to-br from-primary/10 via-background to-accent/10 px-4 py-7 text-center sm:mt-14 sm:px-6 md:px-10 md:py-8">
+          <div
+            id="transfer"
+            className="mx-auto mt-12 max-w-4xl scroll-mt-24 rounded-3xl border border-border/70 bg-linear-to-br from-primary/10 via-background to-accent/10 px-4 py-7 text-center sm:mt-14 sm:px-6 md:px-10 md:py-8"
+          >
             <h2 className="font-display text-balance text-2xl font-semibold tracking-tight">
               {t("transferTitle")}
             </h2>

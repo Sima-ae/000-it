@@ -1,4 +1,21 @@
+import { isExtraHostingSurface, renameTripleZeroName } from "@/lib/brand/public-name";
+
 /** Category-themed SVG illustrations for kennisbank articles (no external assets). */
+
+const EH_C1 = "#0a4f9c";
+const EH_C2 = "#1e9bff";
+
+function remapMotifColors(c1: string, c2: string): { c1: string; c2: string } {
+  if (!isExtraHostingSurface()) return { c1, c2 };
+  const map = (hex: string) => {
+    const h = hex.toLowerCase();
+    if (h === "#5e3b88" || h === "#9b7fc0" || h === "#574789") return EH_C1;
+    if (h === "#007c8d" || h === "#2f3a48") return EH_C2;
+    if (h === "#21759b") return EH_C1;
+    return hex;
+  };
+  return { c1: map(c1), c2: map(c2) };
+}
 
 const motifs: Record<
   string,
@@ -115,15 +132,17 @@ export function KennisbankIllustration({
   const parentSlug = categorySlug.endsWith("-overige")
     ? categorySlug.slice(0, -"-overige".length)
     : null;
-  const theme =
+  const themeRaw =
     motifs[categorySlug] ||
     (parentSlug ? motifs[parentSlug] : undefined) || {
       c1: "#5e3b88",
       c2: "#007c8d",
       motif: "doc" as const,
     };
-  const label = categoryLabel || "TripleZero iT";
-  const footer = footerLabel || "TripleZero iT";
+  const colors = remapMotifColors(themeRaw.c1, themeRaw.c2);
+  const theme = { ...themeRaw, ...colors };
+  const label = renameTripleZeroName(categoryLabel || "TripleZero iT");
+  const footer = renameTripleZeroName(footerLabel || "TripleZero iT");
   const h = variant === "hero" ? 220 : variant === "compact" ? 128 : 180;
   const motifScale = variant === "compact" ? 0.62 : 0.85;
   const motifX = variant === "hero" ? 120 : variant === "compact" ? 155 : 140;

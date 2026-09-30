@@ -63,6 +63,12 @@ export const SHARED_HOSTING_SLUG_ORDER = [
   "shared-hosting-plus",
 ] as const;
 
+export const CLOUD_HOSTING_SLUG_ORDER = [
+  "cloud-hosting-startup",
+  "cloud-hosting-professional",
+  "cloud-hosting-enterprise",
+] as const;
+
 export const WORDPRESS_HOSTING_SLUG_ORDER = [
   "wordpress-hosting-basic",
   "wordpress-hosting-business",
@@ -78,6 +84,7 @@ export const VPS_HOSTING_SLUG_ORDER = [
 /** Hosting plans listed monthly but sold as a 12-month package. */
 export const HOSTING_YEARLY_SLUGS = new Set<string>([
   ...SHARED_HOSTING_SLUG_ORDER,
+  ...CLOUD_HOSTING_SLUG_ORDER,
   ...WORDPRESS_HOSTING_SLUG_ORDER,
   ...VPS_HOSTING_SLUG_ORDER,
 ]);
@@ -618,15 +625,19 @@ export function localizeShopProduct(product: ShopProduct, locale: string) {
   const lang = locale === "nl" ? "nl" : "en";
   return {
     ...product,
-    localizedName: fromPack?.name || product.name[lang] || product.name.en,
-    localizedShort:
+    localizedName: brandify(
+      fromPack?.name || product.name[lang] || product.name.en,
+    ),
+    localizedShort: brandify(
       fromPack?.shortDescription ||
-      product.shortDescription[lang] ||
-      product.shortDescription.en,
-    localizedDescription:
+        product.shortDescription[lang] ||
+        product.shortDescription.en,
+    ),
+    localizedDescription: brandify(
       fromPack?.description ||
-      product.description[lang] ||
-      product.description.en,
+        product.description[lang] ||
+        product.description.en,
+    ),
   };
 }
 

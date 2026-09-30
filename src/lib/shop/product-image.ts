@@ -19,6 +19,8 @@ export function shouldUnoptimizeShopImage(src: string) {
     src.startsWith("/api/") ||
     src.startsWith("/uploads/") ||
     src.startsWith("/branding/") ||
+    src.startsWith("data:") ||
+    src.startsWith("blob:") ||
     src.startsWith("http://") ||
     src.startsWith("https://")
   );

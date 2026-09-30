@@ -129,9 +129,17 @@ export function Footer() {
               <SoftLink
                 href={localizedHref(locale, "/")}
                 aria-label={brand.displayName}
-                className="inline-flex h-9 items-center md:h-10"
+                className={
+                  brand.id === "extrahosting"
+                    ? "inline-flex h-16 items-center md:h-20"
+                    : "inline-flex h-9 items-center md:h-10"
+                }
               >
-                <BrandLogo className="h-11 w-auto md:h-12" />
+                <BrandLogo
+                  className={
+                    brand.id === "extrahosting" ? "h-16 w-auto md:h-20" : "h-11 w-auto md:h-12"
+                  }
+                />
               </SoftLink>
               <div className="mt-3 max-w-[20rem] text-sm leading-relaxed text-muted-foreground text-pretty lg:max-w-none">
                 <p>{t("tagline")}</p>

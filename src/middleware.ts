@@ -35,11 +35,12 @@ const intlAlwaysNl = createMiddleware({
   localeDetection: true,
 });
 
+/** ExtraHosting.eu — English first; no Accept-Language override to /nl. */
 const intlAlwaysEn = createMiddleware({
   ...routing,
   localePrefix: "always",
   defaultLocale: "en",
-  localeDetection: true,
+  localeDetection: false,
 });
 
 const intlNeverNl = createMiddleware({
@@ -120,6 +121,16 @@ function socialPreviewRewrite(request: NextRequest, pathname: string, defaultLoc
 
 function withBrandHeaders(response: NextResponse, hostCtx: ResolvedHostContext) {
   response.headers.set("x-site-brand", hostCtx.brand);
+  const override = response.headers.get("x-middleware-override-headers");
+  if (override) {
+    const keys = override
+      .split(",")
+      .map((key) => key.trim())
+      .filter(Boolean);
+    if (!keys.includes("x-site-brand")) keys.push("x-site-brand");
+    response.headers.set("x-middleware-override-headers", keys.join(","));
+    response.headers.set("x-middleware-request-x-site-brand", hostCtx.brand);
+  }
   if (hostCtx.fixedLocale) {
     response.headers.set("x-fixed-locale", hostCtx.fixedLocale);
   }
@@ -132,6 +143,7 @@ export default async function middleware(request: NextRequest) {
   const hostHeader = request.headers.get("host") || "";
   const hostCtx = resolveHostContext(hostHeader);
   const host = hostCtx.host;
+  request.headers.set("x-site-brand", hostCtx.brand);
   const ua = request.headers.get("user-agent") || "";
   const isSocialBot = SOCIAL_BOT_RE.test(ua);
 
@@ -142,6 +154,23 @@ export default async function middleware(request: NextRequest) {
     const url = request.nextUrl.clone();
     url.pathname = `/api${pathname}`;
     return NextResponse.rewrite(url);
+  }
+
+  // Extra Hosting favicon / app icon (browsers often hit /favicon.ico first).
+  if (hostCtx.brand === "extrahosting") {
+    if (
+      pathname === "/favicon.ico" ||
+      pathname === "/branding/favicon.png" ||
+      pathname === "/branding/favicon-16x16.png" ||
+      pathname === "/branding/favicon-32x32.png" ||
+      pathname === "/branding/apple-touch-icon.png" ||
+      pathname === "/branding/icon-192.png" ||
+      pathname === "/branding/icon-512.png"
+    ) {
+      const url = request.nextUrl.clone();
+      url.pathname = "/branding/FAVICON-EXTRA-HOSTING.png";
+      return NextResponse.rewrite(url);
+    }
   }
 
   const isProdBrandHost =
@@ -196,6 +225,18 @@ export default async function middleware(request: NextRequest) {
     return NextResponse.redirect(
       `https://${apex}${pathname || "/"}${search}`,
       301,
+    );
+  }
+
+  // ExtraHosting.eu: bare `/` always opens English (`/en`).
+  if (
+    hostCtx.brand === "extrahosting" &&
+    hostCtx.localePrefix === "always" &&
+    (pathname === "/" || pathname === "")
+  ) {
+    return NextResponse.redirect(
+      publicAbsoluteUrl(hostCtx, `/${hostCtx.defaultLocale || "en"}`, search),
+      302,
     );
   }
 

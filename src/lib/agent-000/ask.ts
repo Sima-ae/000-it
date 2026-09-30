@@ -20,10 +20,17 @@ import {
   rankProducts,
   type ProductMatch,
 } from "@/lib/agent-000/match-products";
-import { detectIntents, type AgentIntent } from "@/lib/agent-000/intents";
+import { detectIntents, isDomainTopicQuery, type AgentIntent } from "@/lib/agent-000/intents";
 import { normalizeAgentText, tokenizeAgentText } from "@/lib/agent-000/text";
+import { EXTRA_HOSTING_PUBLIC_NAME } from "@/lib/brand/public-name";
 
-export type AgentAction = "open_ticket" | "book_appointment" | "contact";
+export type AgentAction =
+  | "open_ticket"
+  | "book_appointment"
+  | "contact"
+  | "domain_register"
+  | "domain_transfer"
+  | "domain_renew";
 
 export type AgentLink = {
   kind: "faq" | "kennisbank" | "product";
@@ -57,6 +64,8 @@ export type AgentAskResult = {
 export type BuildAgentReplyOptions = {
   /** Force a specific FAQ item (after visitor picks a clarify option). */
   faqId?: string;
+  /** ExtraHosting: only domains/hosting FAQ + kennisbank. */
+  hostingOnly?: boolean;
 };
 
 function lang(locale: string) {
@@ -70,11 +79,12 @@ function pickCopy(locale: string, map: CopyBag) {
   return map[code] || map.en;
 }
 
-function greeting(locale: string) {
+function greeting(locale: string, hostingOnly?: boolean) {
   const brandName =
+    hostingOnly ||
     (process.env.SITE_BRAND || "").toLowerCase().includes("extra") ||
     (process.env.NEXT_PUBLIC_APP_URL || "").includes("extrahosting")
-      ? "ExtraHosting"
+      ? EXTRA_HOSTING_PUBLIC_NAME
       : null;
   const base = pickCopy(locale, {
     en: "Hi, I'm Agent 000.",
@@ -173,7 +183,21 @@ function relatedIntro(locale: string) {
   });
 }
 
-function productIntro(locale: string) {
+function productIntro(locale: string, hostingOnly?: boolean) {
+  if (hostingOnly) {
+    return pickCopy(locale, {
+      en: "I found matching hosting plans and domain options. Open a card below for details (opens in a new tab).",
+      nl: "Ik vond passende hostingplannen en domeinopties. Open een kaart hieronder voor details (opent in een nieuw tabblad).",
+      de: "Ich habe passende Hosting-Tarife und Domain-Optionen gefunden. Öffne unten eine Karte für Details (neuer Tab).",
+      fr: "J’ai trouvé des formules d’hébergement et des options de domaine. Ouvre une carte ci-dessous pour les détails (nouvel onglet).",
+      es: "Encontré planes de hosting y opciones de dominio. Abre una tarjeta abajo para ver detalles (nueva pestaña).",
+      pt: "Encontrei planos de hosting e opções de domínio. Abre um cartão abaixo para detalhes (novo separador).",
+      ar: "وجدت خطط استضافة وخيارات نطاق مطابقة. افتح بطاقة أدناه للتفاصيل (تبويب جديد).",
+      hi: "मुझे मिलते-जुलते होस्टिंग प्लान और डोमेन विकल्प मिले। विवरण के लिए नीचे कार्ड खोलें (नया टैब)।",
+      zh: "我找到了相关的主机方案和域名选项。点击下方卡片查看详情（新标签页打开）。",
+      ja: "関連するホスティングプランとドメインオプションが見つかりました。下のカードから詳細を開けます（新しいタブ）。",
+    });
+  }
   return pickCopy(locale, {
     en: "I found matching services and products. Open a card below for details (opens in a new tab).",
     nl: "Ik vond passende diensten en producten. Open een kaart hieronder voor details (opent in een nieuw tabblad).",
@@ -309,15 +333,63 @@ function kbAnswerLead(locale: string, match: KennisbankMatch): string {
   });
 }
 
-function collectIntents(question: string) {
+function collectIntents(question: string, hostingOnly?: boolean) {
   const intents = detectIntents(question);
   const actions = new Set<AgentAction>();
   for (const intent of intents) {
     if (intent === "book_appointment") actions.add("book_appointment");
     if (intent === "open_ticket" || intent === "human") actions.add("open_ticket");
     if (intent === "contact") actions.add("contact");
+    if (intent === "domain_register") actions.add("domain_register");
+    if (intent === "domain_transfer") actions.add("domain_transfer");
+    if (intent === "domain_renew") actions.add("domain_renew");
+  }
+  // Extra Hosting: surface domain CTAs on domain/hosting topics.
+  if (hostingOnly && isDomainTopicQuery(question)) {
+    if (!actions.has("domain_transfer") && !actions.has("domain_renew")) {
+      actions.add("domain_register");
+    }
+    if (
+      /\b(verhuis|verhuizen|transfer|migrate|migratie|auth.?code|epp)\b/i.test(
+        question,
+      )
+    ) {
+      actions.add("domain_transfer");
+    }
+    if (
+      /\b(verleng|verlengen|renew|renewal|mijn.?domeinen|my.?domains)\b/i.test(
+        question,
+      )
+    ) {
+      actions.add("domain_renew");
+    }
   }
   return { intents, actions };
+}
+
+function ensureHostingDomainActions(
+  actions: Set<AgentAction>,
+  question: string,
+  hostingOnly?: boolean,
+  productHits?: ProductMatch[],
+) {
+  if (!hostingOnly) return;
+  const domainProducts = (productHits || []).some(
+    (p) =>
+      p.confidence >= PRODUCT_CONFIDENCE_HIT &&
+      (p.slug === "domains" || p.slug.includes("domein")),
+  );
+  if (isDomainTopicQuery(question) || domainProducts) {
+    if (
+      !actions.has("domain_register") &&
+      !actions.has("domain_transfer") &&
+      !actions.has("domain_renew")
+    ) {
+      actions.add("domain_register");
+      actions.add("domain_transfer");
+      actions.add("domain_renew");
+    }
+  }
 }
 
 function uniqueLinks(links: AgentLink[], limit = 6): AgentLink[] {
@@ -413,22 +485,30 @@ export async function buildAgentReply(
   question: string,
   opts?: BuildAgentReplyOptions,
 ): Promise<AgentAskResult> {
-  const { intents, actions } = collectIntents(question);
+  const hostingOnly = Boolean(opts?.hostingOnly);
+  const { intents, actions } = collectIntents(question, hostingOnly);
   const browseProducts = isProductBrowseQuery(question);
 
   if (opts?.faqId) {
-    const forced = getFaqById(locale, opts.faqId);
+    const forced = getFaqById(locale, opts.faqId, {
+      hostingOnly,
+    });
     if (forced) {
       const [kb, products] = await Promise.all([
-        rankKennisbank(locale, `${forced.question} ${question}`, 8),
-        rankProducts(locale, `${forced.question} ${question}`, 4),
+        rankKennisbank(locale, `${forced.question} ${question}`, 8, {
+          hostingOnly,
+        }),
+        rankProducts(locale, `${forced.question} ${question}`, 4, {
+          hostingOnly,
+        }),
       ]);
       const links = uniqueLinks([
         ...relatedProductLinks(products, 3),
         faqLink(locale, forced),
         ...relatedKbLinks(locale, forced.question, kb, 3),
       ]);
-      const answer = `${greeting(locale)} ${forced.answer}${formatLinksInAnswer(locale, links)}`;
+      ensureHostingDomainActions(actions, question, hostingOnly, products);
+      const answer = `${greeting(locale, hostingOnly)} ${forced.answer}${formatLinksInAnswer(locale, links)}`;
       return {
         answer,
         faqId: forced.faqId,
@@ -444,9 +524,11 @@ export async function buildAgentReply(
   }
 
   const [faqHits, kbHits, productHits] = await Promise.all([
-    Promise.resolve(rankFaq(locale, question, 8)),
-    rankKennisbank(locale, question, 8),
-    rankProducts(locale, question, 6),
+    Promise.resolve(
+      rankFaq(locale, question, 8, { hostingOnly }),
+    ),
+    rankKennisbank(locale, question, 8, { hostingOnly }),
+    rankProducts(locale, question, 6, { hostingOnly }),
   ]);
 
   // For commercial queries, prefer FAQ items whose answer covers the query
@@ -509,24 +591,25 @@ export async function buildAgentReply(
   // Product-first: commercial service queries should show product cards, not panel KB.
   if (browseProducts && productHit && (productStrong || !kbStrong || !faqReliable)) {
     const productLinks = relatedProductLinks(productHits, 4);
+    const kbForProducts = hostingOnly
+      ? kbHits.filter((m) => sharesTopic(question, `${m.title} ${m.excerpt} ${m.categorySlug}`))
+      : kbHits.filter(
+          (m) => m.categorySlug === "wordpress" || sharesTopic(question, m.title),
+        );
     const links = uniqueLinks([
       ...productLinks,
       ...(faqReliable && bestFaq ? [faqLink(locale, bestFaq)] : []),
-      ...relatedKbLinks(
-        locale,
-        question,
-        kbHits.filter((m) => m.categorySlug === "wordpress" || sharesTopic(question, m.title)),
-        2,
-      ),
+      ...relatedKbLinks(locale, question, kbForProducts, 2),
     ]);
     const lead =
       faqReliable && bestFaq
         ? bestFaq.answer
-        : productIntro(locale);
+        : productIntro(locale, hostingOnly);
     actions.add("book_appointment");
     actions.add("contact");
+    ensureHostingDomainActions(actions, question, hostingOnly, productHits);
     return {
-      answer: `${greeting(locale)} ${lead}${formatLinksInAnswer(locale, links)}`,
+      answer: `${greeting(locale, hostingOnly)} ${lead}${formatLinksInAnswer(locale, links)}`,
       faqId: faqReliable && bestFaq ? bestFaq.faqId : null,
       categoryId: faqReliable && bestFaq ? bestFaq.categoryId : null,
       matchedQuestion:
@@ -585,9 +668,10 @@ export async function buildAgentReply(
     actions.add("open_ticket");
     actions.add("book_appointment");
     actions.add("contact");
+    ensureHostingDomainActions(actions, question, hostingOnly, productHits);
 
     return {
-      answer: `${greeting(locale)} ${clarifyCopy(locale)}${formatLinksInAnswer(locale, links)}`,
+      answer: `${greeting(locale, hostingOnly)} ${clarifyCopy(locale)}${formatLinksInAnswer(locale, links)}`,
       faqId: null,
       categoryId: null,
       matchedQuestion: null,
@@ -609,7 +693,7 @@ export async function buildAgentReply(
       ],
       6,
     );
-    let answer = `${greeting(locale)} ${bestFaq.answer}`;
+    let answer = `${greeting(locale, hostingOnly)} ${bestFaq.answer}`;
     answer += formatLinksInAnswer(locale, links);
     if (!faqStrong) {
       answer += escalateHint(locale);
@@ -617,6 +701,7 @@ export async function buildAgentReply(
       actions.add("book_appointment");
     }
     if (intents.includes("book_appointment")) actions.add("book_appointment");
+    ensureHostingDomainActions(actions, question, hostingOnly, productHits);
 
     return {
       answer,
@@ -648,13 +733,14 @@ export async function buildAgentReply(
       ],
       6,
     );
-    let answer = `${greeting(locale)} ${kbAnswerLead(locale, bestKb)}${formatLinksInAnswer(locale, links)}`;
+    let answer = `${greeting(locale, hostingOnly)} ${kbAnswerLead(locale, bestKb)}${formatLinksInAnswer(locale, links)}`;
     if (!kbStrong) {
       answer += escalateHint(locale);
       actions.add("open_ticket");
       actions.add("book_appointment");
     }
     actions.add("contact");
+    ensureHostingDomainActions(actions, question, hostingOnly, productHits);
 
     return {
       answer,
@@ -681,9 +767,10 @@ export async function buildAgentReply(
   actions.add("open_ticket");
   actions.add("book_appointment");
   actions.add("contact");
+  ensureHostingDomainActions(actions, question, hostingOnly, productHits);
 
   return {
-    answer: `${greeting(locale)} ${lowConfidenceCopy(locale)}${formatLinksInAnswer(locale, softLinks)}`,
+    answer: `${greeting(locale, hostingOnly)} ${lowConfidenceCopy(locale)}${formatLinksInAnswer(locale, softLinks)}`,
     faqId: null,
     categoryId: null,
     matchedQuestion: null,

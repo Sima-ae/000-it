@@ -67,6 +67,39 @@
       ]
     },
     {
+      "slug": "cloud-hosting-startup",
+      "name": "Cloud Hosting Startup",
+      "price": 7.99,
+      "currency": "EUR",
+      "shortDescription": "– 10 Web Apps\n– 4 CPU cores\n– 4 GB RAM\n– 100 GB NVMe storage\n– 2,000,000 inodes\n– 100 PHP Workers\n– Unlimited websites\n– Share access",
+      "description": "Cloud Hosting Startup is optimised for business and e-commerce websites that need more power and stability than shared hosting.\n\nYou receive 10 Web Apps, 4 CPU cores, 4 GB RAM, 100 GB NVMe storage, 2,000,000 inodes and 100 PHP workers — plus unlimited websites and share access. Included: free domain for 1 year, unlimited SSL, managed hosting for WordPress, WooCommerce and Web Apps, CDN, dedicated IP, 24/7 priority support, 30-day money-back guarantee and AI SEO-ready tools.\n\nTripleZero iT delivers fully managed cloud performance so your site stays fast and available as traffic grows.",
+      "images": [
+        "https://000-it.com/wp-content/uploads/2024/07/FAVICON-TripleZero iT-SITE.png"
+      ]
+    },
+    {
+      "slug": "cloud-hosting-professional",
+      "name": "Cloud Hosting Professional",
+      "price": 14.99,
+      "currency": "EUR",
+      "shortDescription": "– 10 Web Apps\n– 5 CPU cores\n– 6 GB RAM\n– 200 GB NVMe storage\n– 3,000,000 inodes\n– 200 PHP Workers\n– Unlimited websites\n– Share access",
+      "description": "Cloud Hosting Professional is optimised for scaling professional websites and growing online stores.\n\nYou receive 10 Web Apps, 5 CPU cores, 6 GB RAM, 200 GB NVMe storage, 3,000,000 inodes and 200 PHP workers — plus unlimited websites and share access. Included: free domain for 1 year, unlimited SSL, managed hosting for WordPress, WooCommerce and Web Apps, CDN, dedicated IP, 24/7 priority support, 30-day money-back guarantee and AI SEO-ready tools.\n\nTripleZero iT gives you managed cloud capacity that absorbs traffic spikes without a rebuild or server migration.",
+      "images": [
+        "https://000-it.com/wp-content/uploads/2024/07/FAVICON-TripleZero iT-SITE.png"
+      ]
+    },
+    {
+      "slug": "cloud-hosting-enterprise",
+      "name": "Cloud Hosting Enterprise",
+      "price": 29.99,
+      "currency": "EUR",
+      "shortDescription": "– 10 Web Apps\n– 6 CPU cores\n– 12 GB RAM\n– 300 GB NVMe storage\n– 4,000,000 inodes\n– 300 PHP Workers\n– Unlimited websites\n– Share access",
+      "description": "Cloud Hosting Enterprise delivers maximum performance for demanding websites and high-traffic projects.\n\nYou receive 10 Web Apps, 6 CPU cores, 12 GB RAM, 300 GB NVMe storage, 4,000,000 inodes and 300 PHP workers — plus unlimited websites and share access. Included: free domain for 1 year, unlimited SSL, managed hosting for WordPress, WooCommerce and Web Apps, CDN, dedicated IP, 24/7 priority support, 30-day money-back guarantee and AI SEO-ready tools.\n\nTripleZero iT provides a fully managed cloud foundation with the headroom serious sites need for speed, uptime and growth.",
+      "images": [
+        "https://000-it.com/wp-content/uploads/2024/07/FAVICON-TripleZero iT-SITE.png"
+      ]
+    },
+    {
       "slug": "double-support",
       "name": "Double Support",
       "price": 54.99,

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
+import { useBrand } from "@/lib/brand/BrandProvider";
 import { cn } from "@/lib/utils";
 
 export function GlassCard({
@@ -12,11 +13,13 @@ export function GlassCard({
   children: React.ReactNode;
   className?: string;
   interactive?: boolean;
-  /** Purple/green hover glow overlay. Defaults to the same as `interactive`. */
+  /** Brand-colored hover glow overlay. Defaults to the same as `interactive`. */
   glow?: boolean;
 }) {
   const reduce = useReducedMotion();
+  const brand = useBrand();
   const showGlow = glow ?? interactive;
+  const ehWash = brand.id === "extrahosting";
 
   return (
     <motion.div
@@ -27,6 +30,7 @@ export function GlassCard({
       className={cn(
         "relative overflow-hidden rounded-3xl p-6 transition-[border-color,background,box-shadow] duration-300",
         "glass",
+        ehWash && "eh-glass-wash",
         interactive && "hover:border-primary/25",
         showGlow && "glow-hover",
         className,

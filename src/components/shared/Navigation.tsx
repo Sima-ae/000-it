@@ -8,7 +8,11 @@ import { ThemeToggle } from "@/components/shared/ThemeToggle";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { ServicesMegaMenu } from "@/components/shared/ServicesMegaMenu";
 import { InfoDropdown } from "@/components/shared/InfoDropdown";
-import { HostingDropdown, HOSTING_MENU_SLUGS, HOSTING_SLUGS } from "@/components/shared/HostingDropdown";
+import {
+  HostingDropdown,
+  HOSTING_MENU_COLUMNS,
+  HOSTING_SLUGS,
+} from "@/components/shared/HostingDropdown";
 import { LanguageSwitcher } from "@/components/shared/LanguageSwitcher";
 import { CartNavButton } from "@/components/shop/CartNavButton";
 import { AccountMenu } from "@/components/shared/AccountMenu";
@@ -123,13 +127,25 @@ export function Navigation() {
           scrolled && "glass-strong shadow-[0_18px_50px_rgba(15,23,42,0.12)]",
         )}
       >
-        <div className="flex items-center justify-between gap-1.5 px-2.5 py-2 sm:gap-2 sm:px-3 sm:py-2.5 md:gap-3 md:px-4 md:py-3">
+        <div
+          className={cn(
+            "flex items-center justify-between gap-1.5 px-2.5 sm:gap-2 sm:px-3 md:gap-3 md:px-4",
+            brand.id === "extrahosting" ? "py-1" : "py-2 sm:py-2.5 md:py-3",
+          )}
+        >
           <SoftLink
             href={localizedHref(locale, "/")}
                 aria-label={brand.displayName}
             className="min-w-0 shrink"
           >
-            <BrandLogo priority className="h-9 max-w-[min(48vw,12rem)] sm:h-10 sm:max-w-none md:h-12" />
+            <BrandLogo
+              priority
+              className={
+                brand.id === "extrahosting"
+                  ? "h-13 max-w-[min(70vw,20rem)] sm:h-15 sm:max-w-none md:h-20"
+                  : "h-9 max-w-[min(48vw,12rem)] sm:h-10 sm:max-w-none md:h-12"
+              }
+            />
           </SoftLink>
 
           <nav className="hidden items-center gap-0.5 lg:flex">
@@ -501,7 +517,7 @@ export function Navigation() {
                         <span className="text-xs">{mobileHostingOpen ? "−" : "+"}</span>
                       </button>
                       {mobileHostingOpen ? (
-                        <div className="mb-2 ms-2 space-y-1 border-s border-border/60 ps-3">
+                        <div className="mb-2 ms-2 space-y-3 border-s border-border/60 ps-3">
                           {(() => {
                             const href = serviceGroupHref(locale, "hosting");
                             const itemActive =
@@ -521,26 +537,56 @@ export function Navigation() {
                               </SoftLink>
                             );
                           })()}
-                          {HOSTING_MENU_SLUGS.map((slug) => {
-                            const item = serviceCatalog.find((s) => s.slug === slug);
-                            if (!item) return null;
-                            const href = serviceHref(locale, item);
-                            const itemActive =
-                              pathname === href || pathname.startsWith(`${href}/`);
+                          {HOSTING_MENU_COLUMNS.map((column) => {
+                            const categoryItem = serviceCatalog.find(
+                              (s) => s.slug === column.categorySlug,
+                            );
+                            if (!categoryItem) return null;
+                            const categoryHref = serviceHref(locale, categoryItem);
+                            const categoryActive =
+                              pathname === categoryHref ||
+                              pathname.startsWith(`${categoryHref}/`);
                             return (
-                              <SoftLink
-                                key={item.slug}
-                                href={href}
-                                className={cn(
-                                  "block rounded-lg px-2 py-1.5 text-sm transition",
-                                  itemActive
-                                    ? "bg-primary text-primary-foreground"
-                                    : "text-muted-foreground hover:bg-primary hover:text-primary-foreground",
-                                )}
-                                aria-current={itemActive ? "page" : undefined}
-                              >
-                                {catalogServiceTitle(item.slug, locale, item.title)}
-                              </SoftLink>
+                              <div key={column.categorySlug}>
+                                <SoftLink
+                                  href={categoryHref}
+                                  className={cn(
+                                    "mb-1 block rounded-lg px-2 py-1 text-xs font-semibold uppercase tracking-wide transition",
+                                    categoryActive
+                                      ? "bg-primary text-primary-foreground"
+                                      : "text-foreground hover:text-primary",
+                                  )}
+                                  aria-current={categoryActive ? "page" : undefined}
+                                >
+                                  {catalogServiceTitle(
+                                    categoryItem.slug,
+                                    locale,
+                                    categoryItem.title,
+                                  )}
+                                </SoftLink>
+                                {column.planSlugs.map((slug) => {
+                                  const item = serviceCatalog.find((s) => s.slug === slug);
+                                  if (!item) return null;
+                                  const href = serviceHref(locale, item);
+                                  const itemActive =
+                                    pathname === href || pathname.startsWith(`${href}/`);
+                                  return (
+                                    <SoftLink
+                                      key={item.slug}
+                                      href={href}
+                                      className={cn(
+                                        "block rounded-lg px-2 py-1.5 text-sm transition",
+                                        itemActive
+                                          ? "bg-primary text-primary-foreground"
+                                          : "text-muted-foreground hover:bg-primary hover:text-primary-foreground",
+                                      )}
+                                      aria-current={itemActive ? "page" : undefined}
+                                    >
+                                      {catalogServiceTitle(item.slug, locale, item.title)}
+                                    </SoftLink>
+                                  );
+                                })}
+                              </div>
                             );
                           })}
                         </div>

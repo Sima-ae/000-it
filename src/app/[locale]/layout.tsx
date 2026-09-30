@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -9,6 +10,8 @@ import { CatalogI18nProvider } from "@/components/shared/CatalogI18nProvider";
 import { EntitySlugProvider } from "@/components/shared/EntitySlugProvider";
 import { BrandProvider } from "@/lib/brand/BrandProvider";
 import { getRequestBrandContext } from "@/lib/brand/server";
+import { EXTRA_HOSTING_PUBLIC_NAME } from "@/lib/brand/public-name";
+import { applyExtraHostingMessages } from "@/lib/brand/extra-hosting-messages";
 import { setCatalogLocaleOverlay } from "@/content/fixweb/catalog-title";
 import {
   getCatalogOverlaySync,
@@ -17,8 +20,53 @@ import {
 import { hydrateAllEntitySlugs, hydrateEntitySlugs } from "@/lib/entity-slugs";
 import { exportEntitySlugSnapshot } from "@/lib/entity-slug-cache";
 
+function replaceDutchAmpersands<T>(value: T): T {
+  if (typeof value === "string") {
+    return value.replace(/\s*&\s*/g, " en ") as T;
+  }
+  if (Array.isArray(value)) {
+    return value.map((item) => replaceDutchAmpersands(item)) as T;
+  }
+  if (value && typeof value === "object") {
+    const out: Record<string, unknown> = {};
+    for (const [key, item] of Object.entries(value as Record<string, unknown>)) {
+      out[key] = replaceDutchAmpersands(item);
+    }
+    return out as T;
+  }
+  return value;
+}
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  const brand = await getRequestBrandContext();
+  if (brand.brand !== "extrahosting") return {};
+  const favicon = brand.config.favicon;
+  return {
+    title: {
+      default: EXTRA_HOSTING_PUBLIC_NAME,
+      template: `%s · ${EXTRA_HOSTING_PUBLIC_NAME}`,
+    },
+    applicationName: EXTRA_HOSTING_PUBLIC_NAME,
+    appleWebApp: { title: EXTRA_HOSTING_PUBLIC_NAME, capable: true },
+    authors: [{ name: EXTRA_HOSTING_PUBLIC_NAME }],
+    creator: EXTRA_HOSTING_PUBLIC_NAME,
+    publisher: EXTRA_HOSTING_PUBLIC_NAME,
+    icons: {
+      icon: [
+        { url: favicon, sizes: "any", type: "image/png" },
+        { url: favicon, sizes: "32x32", type: "image/png" },
+        { url: favicon, sizes: "192x192", type: "image/png" },
+        { url: favicon, sizes: "512x512", type: "image/png" },
+      ],
+      shortcut: [favicon],
+      apple: [{ url: favicon, sizes: "180x180", type: "image/png" }],
+      other: [{ rel: "mask-icon", url: favicon, color: "#0a4f9c" }],
+    },
+  };
 }
 
 export default async function LocaleLayout({
@@ -44,42 +92,15 @@ export default async function LocaleLayout({
   setCatalogLocaleOverlay(locale, catalogOverlay);
   const entitySlugSnapshot = exportEntitySlugSnapshot();
   const messages = await getMessages();
-  const brandMessages = { ...messages } as Record<string, unknown>;
+  let brandMessages = { ...messages } as Record<string, unknown>;
   if (brandCtx.brand === "extrahosting") {
-    brandMessages.brand = brandCtx.config.displayName;
-    const liveChat = {
-      ...((messages as { liveChat?: Record<string, string> }).liveChat || {}),
-    };
-    liveChat.subtitle = brandCtx.config.displayName;
-    liveChat.powered = `Agent 000 · ${brandCtx.config.displayName}`;
-    brandMessages.liveChat = liveChat;
-    const hero = {
-      ...((messages as { hero?: Record<string, string> }).hero || {}),
-    };
+    brandMessages = applyExtraHostingMessages(brandMessages, locale) as Record<
+      string,
+      unknown
+    >;
     if (locale === "nl") {
-      hero.title = "Domeinen en webhosting — snel, stabiel en scherp geprijsd";
-      hero.subtitle =
-        "Registreer je domein en kies shared, WordPress of VPS hosting bij ExtraHosting.";
-      hero.introTitleLine1 = "Domeinen & hosting";
-      hero.introTitleLine2 = "met ExtraHosting";
-      hero.ctaServices = "Bekijk hosting";
-    } else {
-      hero.title = "Domains and web hosting — fast, stable and fairly priced";
-      hero.subtitle =
-        "Register your domain and choose shared, WordPress or VPS hosting with ExtraHosting.";
-      hero.introTitleLine1 = "Domains & hosting";
-      hero.introTitleLine2 = "with ExtraHosting";
-      hero.ctaServices = "View hosting";
+      brandMessages = replaceDutchAmpersands(brandMessages);
     }
-    brandMessages.hero = hero;
-    const footer = {
-      ...((messages as { footer?: Record<string, string> }).footer || {}),
-    };
-    footer.tagline =
-      locale === "nl"
-        ? brandCtx.config.tagline.nl
-        : brandCtx.config.tagline.en;
-    brandMessages.footer = footer;
   }
 
   return (

@@ -577,6 +577,13 @@ export const serviceCatalog: ServiceNavItem[] = [
     group: "hosting",
   },
   {
+    slug: "cloud-hosting",
+    title: "Cloud Hosting",
+    titleNl: "Cloud hosting",
+    kind: "page",
+    group: "hosting",
+  },
+  {
     slug: "wordpress-hosting",
     title: "WordPress Hosting",
     titleNl: "WordPress hosting",
@@ -616,6 +623,27 @@ export const serviceCatalog: ServiceNavItem[] = [
     slug: "shared-hosting-plus",
     title: "Shared Hosting Plus",
     titleNl: "Shared hosting plus",
+    kind: "product",
+    group: "hosting",
+  },
+  {
+    slug: "cloud-hosting-startup",
+    title: "Cloud Hosting Startup",
+    titleNl: "Cloud hosting startup",
+    kind: "product",
+    group: "hosting",
+  },
+  {
+    slug: "cloud-hosting-professional",
+    title: "Cloud Hosting Professional",
+    titleNl: "Cloud hosting professional",
+    kind: "product",
+    group: "hosting",
+  },
+  {
+    slug: "cloud-hosting-enterprise",
+    title: "Cloud Hosting Enterprise",
+    titleNl: "Cloud hosting enterprise",
     kind: "product",
     group: "hosting",
   },
@@ -798,7 +826,7 @@ export function catalogGroupSummary(id: string, locale: string) {
   if (fromPack) return fromPack;
   const row = serviceGroupSummaries[id as ServiceGroupId];
   if (!row) return "";
-  return locale === "nl" ? row.nl : row.en;
+  return catalogGroupSummaryI18n(id, locale, locale === "nl" ? row.nl : row.en);
 }
 
 /** A–Z by locale title; hosting keeps given order */

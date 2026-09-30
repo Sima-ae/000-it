@@ -47,6 +47,24 @@ export const BRANDING_SERVICES_IMAGE = "/branding/images/agency-office-wireframe
 /** Homepage strip above the FAQ — specialist in the data center. */
 export const BRANDING_CONTACT_IMAGE = "/branding/images/homepage-faq-datacenter.jpg";
 
+/**
+ * Extra Hosting replacements: same scenes, navy #0a4f9c and light-blue lighting.
+ * 000-it.com keeps the originals above.
+ */
+const EXTRA_HOSTING_PHOTOS: Record<string, string> = {
+  [BRANDING_CONTACT_IMAGE]: "/branding/extrahosting/eh-home-aisle-walk.jpg",
+  "/branding/images/about-team-review.jpg": "/branding/extrahosting/eh-about-team-window.jpg",
+  "/branding/images/about-desk-focus.jpg": "/branding/extrahosting/eh-about-desk-page.jpg",
+  "/branding/images/about-collaboration.jpg": "/branding/extrahosting/eh-about-seated.jpg",
+  "/branding/images/service-hosting-datacenter.jpg":
+    "/branding/extrahosting/eh-hosting-kneel.jpg",
+};
+
+export function photoForBrand(src: string, brandId?: string) {
+  if (brandId !== "extrahosting") return src;
+  return EXTRA_HOSTING_PHOTOS[src] ?? src;
+}
+
 /** About page — three moments in the same studio. */
 export const ABOUT_IMAGES = {
   team: "/branding/images/about-team-review.jpg",

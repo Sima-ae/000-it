@@ -13,6 +13,7 @@ import { getCustomServiceContent } from "@/content/services/custom";
 import { brandify } from "@/lib/brandify";
 import { formatEuro as formatEuroShared } from "@/lib/format-euro";
 import { hydrateLocalizedCopy } from "@/lib/localized-copy";
+import { isExtraHostingSurface } from "@/lib/brand/public-name";
 import {
   getShopProductBySlug,
   loadShopCatalogFromDb,
@@ -46,16 +47,29 @@ const productBySlug = new Map(products.map((p) => [p.slug, p]));
 const serviceContentCache = new Map<string, ReturnType<typeof buildServiceContent>>();
 const serviceCardCache = new Map<string, ReturnType<typeof buildServiceCardMeta>>();
 
+export type ContentBlock =
+  | { type: "heading"; text: string }
+  | { type: "paragraph"; text: string }
+  | { type: "list"; items: string[] };
+
+function contentCacheKey(locale: string, slug: string) {
+  return `${isExtraHostingSurface() ? "eh" : "tz"}:${locale}:${slug}`;
+}
+
+function brandifyBlocks(blocks: ContentBlock[]): ContentBlock[] {
+  return blocks.map((block) => {
+    if (block.type === "list") {
+      return { ...block, items: block.items.map((item) => brandify(item)) };
+    }
+    return { ...block, text: brandify(block.text) };
+  });
+}
+
 /** Drop content caches (e.g. after service image/copy updates in dev). */
 export function clearServiceContentCaches() {
   serviceContentCache.clear();
   serviceCardCache.clear();
 }
-
-export type ContentBlock =
-  | { type: "heading"; text: string }
-  | { type: "paragraph"; text: string }
-  | { type: "list"; items: string[] };
 
 /** Drop “email us at info@…” CTAs — service pages already show a booking button. */
 export function stripEmailContactBlocks(blocks: ContentBlock[]): ContentBlock[] {
@@ -274,6 +288,7 @@ const pageImageFallback: Record<string, string> = {
   "accessibility-optimization": "/uploads/fixweb/custom-webdesign.png",
   "web-hosting": "/uploads/fixweb/web-hosting.png",
   "shared-hosting": "/uploads/fixweb/shared-hosting.png",
+  "cloud-hosting": "/uploads/fixweb/shared-hosting.png",
   "wordpress-hosting": "/uploads/fixweb/wordpress-hosting.png",
   "vps-hosting": "/uploads/fixweb/vps-hosting.png",
   domains: "/uploads/fixweb/domains.png",
@@ -371,12 +386,12 @@ function buildServiceContent(slug: string, locale: string) {
   if (localizedPage) {
     return {
       meta,
-      title: localizedPage.title,
-      subtitle: localizedPage.subtitle,
+      title: brandify(localizedPage.title),
+      subtitle: brandify(localizedPage.subtitle || ""),
       price: null as number | null,
       currency: null as string | null,
       image: pageImageFallback[slug] || null,
-      blocks: stripEmailContactBlocks(localizedPage.blocks),
+      blocks: brandifyBlocks(stripEmailContactBlocks(localizedPage.blocks)),
       kind: "page" as const,
       priceSuffix: null as string | null,
       features: [] as string[],
@@ -436,7 +451,7 @@ function buildServiceContent(slug: string, locale: string) {
 export async function getServiceContent(slug: string, locale: string = "nl") {
   await hydrateLocalizedCopy(locale);
   await loadShopCatalogFromDb();
-  const key = `${locale}:${slug}`;
+  const key = contentCacheKey(locale, slug);
   let content: ReturnType<typeof buildServiceContent>;
   if (locale === "nl" || locale === "en") {
     if (serviceContentCache.has(key)) {
@@ -463,8 +478,8 @@ export async function getServiceContent(slug: string, locale: string = "nl") {
 
   return {
     ...content,
-    title: overlay.title || content.title,
-    subtitle: featureSubtitle || content.subtitle,
+    title: brandify(overlay.title || content.title),
+    subtitle: brandify(featureSubtitle || content.subtitle || ""),
     price: overlay.price,
     listPrice: overlay.listPrice,
     currency: overlay.currency,
@@ -473,8 +488,12 @@ export async function getServiceContent(slug: string, locale: string = "nl") {
         ? catalogUiLabel("perMonth", locale, locale === "nl" ? "/ maand" : "/ month")
         : content.priceSuffix ?? null,
     image: preferDedicatedServiceImage(content.image, overlay.image),
-    blocks: overlay.blocks.length ? overlay.blocks : content.blocks,
-    features: overlay.features.length ? overlay.features : content.features,
+    blocks: overlay.blocks.length
+      ? brandifyBlocks(overlay.blocks as ContentBlock[])
+      : content.blocks,
+    features: overlay.features.length
+      ? overlay.features.map((f) => brandify(f))
+      : content.features,
     checkoutMonths: overlay.checkoutMonths,
   };
 }
@@ -526,8 +545,8 @@ function buildServiceCardMeta(slug: string, locale: string) {
   const localizedPage = getPageI18n(slug, locale, { fallback: false });
   if (localizedPage) {
     return {
-      title: localizedPage.title,
-      subtitle: localizedPage.subtitle,
+      title: brandify(localizedPage.title),
+      subtitle: brandify(localizedPage.subtitle || ""),
       price: null as number | null,
       image: pageImageFallback[slug] || null,
       hasBody: localizedPage.blocks.length > 0,
@@ -555,7 +574,7 @@ function buildServiceCardMeta(slug: string, locale: string) {
 export async function getServiceCardMeta(slug: string, locale: string = "nl") {
   await hydrateLocalizedCopy(locale);
   await loadShopCatalogFromDb();
-  const key = `${locale}:${slug}`;
+  const key = contentCacheKey(locale, slug);
   let meta: ReturnType<typeof buildServiceCardMeta>;
   if (locale === "nl" || locale === "en") {
     if (serviceCardCache.has(key)) {
@@ -582,8 +601,8 @@ export async function getServiceCardMeta(slug: string, locale: string = "nl") {
 
   return {
     ...meta,
-    title: overlay.title || meta.title,
-    subtitle,
+    title: brandify(overlay.title || meta.title),
+    subtitle: brandify(subtitle || ""),
     price: overlay.price,
     listPrice: overlay.listPrice,
     image: preferDedicatedServiceImage(meta.image, overlay.image),

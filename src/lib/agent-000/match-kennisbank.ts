@@ -10,6 +10,7 @@ import {
   buildArticleHtml,
   buildExcerpt,
 } from "../../../prisma/kennisbank/build-body";
+import { isExtraHostingKennisbankCategorySlug } from "@/lib/brand/hosting-only-content";
 
 export type KennisbankMatch = {
   slug: string;
@@ -27,6 +28,7 @@ type IndexedArticle = {
   categorySlug: string;
   categoryNames: string;
   categorySlugs: string;
+  rawCategorySlugs: string[];
   topic: string;
   excerpt: string;
   bodyPlain: string;
@@ -277,6 +279,7 @@ function indexArticle(input: {
     categorySlug: input.categorySlug,
     categoryNames: normalizeAgentText(input.categoryNames.join(" ")),
     categorySlugs: normalizeAgentText(input.categorySlugs.join(" ").replace(/-/g, " ")),
+    rawCategorySlugs: input.categorySlugs,
     topic: input.topic,
     excerpt: answerSnippet(input.excerpt, bodyPlain),
     bodyPlain,
@@ -399,6 +402,7 @@ export async function rankKennisbank(
   locale: string,
   question: string,
   limit = 8,
+  opts?: { hostingOnly?: boolean },
 ): Promise<KennisbankMatch[]> {
   const q = question.trim();
   if (q.length < 2) return [];
@@ -408,6 +412,15 @@ export async function rankKennisbank(
   const articles = await getIndex(locale);
   const scored: KennisbankMatch[] = [];
   for (const article of articles) {
+    if (
+      opts?.hostingOnly &&
+      !article.rawCategorySlugs.some((slug) =>
+        isExtraHostingKennisbankCategorySlug(slug),
+      ) &&
+      !isExtraHostingKennisbankCategorySlug(article.categorySlug)
+    ) {
+      continue;
+    }
     let confidence = scoreIndexed(queryTokens, article);
     if (confidence < 0.16) continue;
 

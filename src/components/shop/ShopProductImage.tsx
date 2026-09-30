@@ -7,7 +7,18 @@ import {
   SHOP_IMAGE_FALLBACK,
   shouldUnoptimizeShopImage,
 } from "@/lib/shop/product-image";
+import { useBrand } from "@/lib/brand/BrandProvider";
+import { extrahostingFixwebArtSrc } from "@/lib/brand/eh-fixweb-art";
 import { cn } from "@/lib/utils";
+
+function isFixwebProductArt(src: string) {
+  return (
+    src.includes("/uploads/fixweb/") ||
+    src.includes("/uploads/infoweb/") ||
+    src.includes("%2Fuploads%2Ffixweb%2F") ||
+    src.includes("%2Fuploads%2Finfoweb%2F")
+  );
+}
 
 export function ShopProductImage({
   src,
@@ -25,12 +36,20 @@ export function ShopProductImage({
   /** Extra class when showing the brand fallback (often object-contain). */
   fallbackClassName?: string;
 }) {
+  const brand = useBrand();
   const resolved = resolveShopImageSrc(src);
-  const [current, setCurrent] = useState(resolved);
+  const ehArt = brand.id === "extrahosting" && isFixwebProductArt(resolved);
+  const branded = ehArt ? extrahostingFixwebArtSrc(resolved) : resolved;
+  const [current, setCurrent] = useState(branded);
 
   useEffect(() => {
-    setCurrent(resolveShopImageSrc(src));
-  }, [src]);
+    const next = resolveShopImageSrc(src);
+    setCurrent(
+      brand.id === "extrahosting" && isFixwebProductArt(next)
+        ? extrahostingFixwebArtSrc(next)
+        : next,
+    );
+  }, [src, brand.id]);
 
   const isFallback = current === SHOP_IMAGE_FALLBACK;
 
@@ -44,11 +63,22 @@ export function ShopProductImage({
       className={cn(
         isFallback
           ? cn("object-contain p-2 opacity-80", fallbackClassName)
-          : "object-cover",
+          : ehArt
+            ? "object-contain p-3"
+            : "object-cover",
         className,
       )}
       unoptimized={shouldUnoptimizeShopImage(current)}
       onError={() => {
+        // Prefer original fixweb art if an EH remapped file is missing.
+        if (
+          brand.id === "extrahosting" &&
+          current.includes("/uploads/fixweb-eh/") &&
+          resolved !== current
+        ) {
+          setCurrent(resolved);
+          return;
+        }
         if (current !== SHOP_IMAGE_FALLBACK) setCurrent(SHOP_IMAGE_FALLBACK);
       }}
     />

@@ -13,6 +13,7 @@ import {
   organizationJsonLd,
 } from "@/lib/seo";
 import { localizedHref } from "@/i18n/pathnames";
+import { getRequestBrand } from "@/lib/brand/server";
 
 export const dynamic = "force-dynamic";
 
@@ -39,12 +40,16 @@ export default async function KennisbankPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const brand = await getRequestBrand();
+  const hostingOnly = brand.catalogMode === "domains_hosting";
   const t = await getTranslations({ locale, namespace: "kennisbank" });
   let categories: Awaited<ReturnType<typeof listCategories>> = [];
   let total = 0;
   try {
-    categories = topLevelCategories(await listCategories({ locale }));
-    const articles = await listArticles({ locale });
+    categories = topLevelCategories(
+      await listCategories({ locale, hostingOnly }),
+    );
+    const articles = await listArticles({ locale, hostingOnly });
     total = articles.length;
   } catch (error) {
     console.error("[kennisbank] unavailable during render", error);
@@ -55,7 +60,7 @@ export default async function KennisbankPage({
       <JsonLd data={organizationJsonLd()} />
       <JsonLd
         data={breadcrumbJsonLd([
-          { name: "TripleZero iT", path: localizedHref(locale, "/") },
+          { name: brand.displayName, path: localizedHref(locale, "/") },
           {
             name: t("breadcrumb"),
             path: localizedHref(locale, "/kennisbank"),

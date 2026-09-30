@@ -1,7 +1,10 @@
+import { renameTripleZeroName } from "@/lib/brand/public-name";
+
 /** Strip legacy / competitor agency branding from imported content. Client-safe. */
 export function brandify(text: string) {
   if (typeof text !== "string") return "";
-  return text
+  return renameTripleZeroName(
+    text
     .replace(/privacy@fix-web\.com/gi, "privacy@000-it.com")
     .replace(/info@fix-web\.com/gi, "info@000-it.com")
     .replace(/https?:\/\/(www\.)?fix-web\.com/gi, "https://000-it.com")
@@ -33,5 +36,6 @@ export function brandify(text: string) {
     .replace(/\bYourhosting\b/gi, "TripleZero iT")
     .replace(/\bYour Hosting\b/gi, "TripleZero iT")
     .replace(/\bVevida\b/gi, "TripleZero iT")
-    .replace(/\bArgeweb\b/gi, "TripleZero iT");
+    .replace(/\bArgeweb\b/gi, "TripleZero iT"),
+  );
 }
