@@ -6,6 +6,7 @@
  */
 import { prisma } from "../src/lib/prisma";
 import { STATIC_SHOP_CATALOG } from "../src/lib/shop/catalog";
+import { lineOfBusinessFromProduct } from "../src/lib/shop/line-of-business";
 
 const force = process.argv.includes("--force");
 
@@ -21,6 +22,12 @@ async function main() {
 
     const existing = await prisma.shopCatalogProduct.findFirst({
       where: { OR: [{ id: product.id }, { sku }, { slug: product.slug }] },
+    });
+
+    const lineOfBusiness = lineOfBusinessFromProduct({
+      slug: product.slug,
+      category: product.category,
+      lineOfBusiness: product.lineOfBusiness,
     });
 
     const data = {
@@ -39,6 +46,7 @@ async function main() {
       billAsYearlyPackage: Boolean(product.billAsYearlyPackage),
       checkoutMonths: product.checkoutMonths ?? null,
       category: product.category || null,
+      lineOfBusiness,
       image: product.image || null,
       featured: Boolean(product.featured),
       published: product.published !== false,

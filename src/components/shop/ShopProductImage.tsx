@@ -15,8 +15,10 @@ function isFixwebProductArt(src: string) {
   return (
     src.includes("/uploads/fixweb/") ||
     src.includes("/uploads/infoweb/") ||
+    src.includes("/uploads/fixweb-eh/") ||
     src.includes("%2Fuploads%2Ffixweb%2F") ||
-    src.includes("%2Fuploads%2Finfoweb%2F")
+    src.includes("%2Fuploads%2Finfoweb%2F") ||
+    src.includes("%2Fuploads%2Ffixweb-eh%2F")
   );
 }
 
@@ -51,7 +53,7 @@ export function ShopProductImage({
     );
   }, [src, brand.id]);
 
-  const isFallback = current === SHOP_IMAGE_FALLBACK;
+  const isFallback = current.split("?")[0] === SHOP_IMAGE_FALLBACK;
 
   return (
     <Image
@@ -63,9 +65,7 @@ export function ShopProductImage({
       className={cn(
         isFallback
           ? cn("object-contain p-2 opacity-80", fallbackClassName)
-          : ehArt
-            ? "object-contain p-3"
-            : "object-cover",
+          : "object-contain",
         className,
       )}
       unoptimized={shouldUnoptimizeShopImage(current)}
@@ -79,7 +79,9 @@ export function ShopProductImage({
           setCurrent(resolved);
           return;
         }
-        if (current !== SHOP_IMAGE_FALLBACK) setCurrent(SHOP_IMAGE_FALLBACK);
+        if ((current.split("?")[0] ?? current) !== SHOP_IMAGE_FALLBACK) {
+          setCurrent(SHOP_IMAGE_FALLBACK);
+        }
       }}
     />
   );

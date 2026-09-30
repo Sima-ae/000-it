@@ -74,6 +74,13 @@ export async function CategoryHero({
 }) {
   const brand = await getRequestBrand();
   const showJump = Boolean(jumpLinks && jumpLinks.length > 2 && jumpBasePath);
+  const isHosting = groupId === "hosting";
+  const heroSrc = photoForBrand(
+    isHosting
+      ? "/branding/images/hosting-webhosting.png?v=2"
+      : brandingImageForServiceGroup(groupId),
+    brand.id,
+  );
 
   return (
     <Reveal>
@@ -115,17 +122,31 @@ export async function CategoryHero({
           </div>
 
           <div className="mx-auto w-full max-w-60 shrink-0 lg:mx-0">
-            <TabletFrame>
-              <Image
-                src={photoForBrand(brandingImageForServiceGroup(groupId), brand.id)}
-                alt=""
-                fill
-                priority
-                sizes="240px"
-                unoptimized
-                className="object-cover object-center"
-              />
-            </TabletFrame>
+            {isHosting ? (
+              <div className="relative aspect-square w-full">
+                <Image
+                  src={heroSrc}
+                  alt=""
+                  fill
+                  priority
+                  sizes="240px"
+                  unoptimized
+                  className="object-contain object-center"
+                />
+              </div>
+            ) : (
+              <TabletFrame>
+                <Image
+                  src={heroSrc}
+                  alt=""
+                  fill
+                  priority
+                  sizes="240px"
+                  unoptimized
+                  className="object-cover object-center"
+                />
+              </TabletFrame>
+            )}
           </div>
 
           {showJump ? (

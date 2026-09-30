@@ -39,11 +39,13 @@ export function ShopHostingSection({
   products,
   id,
   className,
+  showTitle = true,
 }: {
   title: string;
   products: ShopProduct[];
   id?: string;
   className?: string;
+  showTitle?: boolean;
 }) {
   const locale = useLocale();
   const t = useTranslations("shop");
@@ -65,13 +67,20 @@ export function ShopHostingSection({
       id={id}
       className={cn("mt-16 scroll-mt-28 text-start md:scroll-mt-32", className)}
     >
-      <Reveal from="up" duration={0.45}>
-        <h2 className="text-center font-display text-2xl font-semibold tracking-tight text-accent">
-          {title}
-        </h2>
-      </Reveal>
+      {showTitle ? (
+        <Reveal from="up" duration={0.45}>
+          <h2 className="text-center font-display text-2xl font-semibold tracking-tight text-accent">
+            {title}
+          </h2>
+        </Reveal>
+      ) : null}
 
-      <div className="mb-5 mt-2.5 flex flex-col items-center gap-2.5">
+      <div
+        className={cn(
+          "mb-5 flex flex-col items-center gap-2.5",
+          showTitle ? "mt-2.5" : "mt-0",
+        )}
+      >
         <div
           role="group"
           aria-label={tPricing("billingPeriod")}

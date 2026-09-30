@@ -35,7 +35,7 @@ export function ServiceCard({
         {image ? (
           <div
             className={cn(
-              "relative w-full bg-[#f6f3ec]",
+              "relative w-full bg-transparent",
               ehArt ? "aspect-square" : "h-36",
             )}
           >
@@ -43,7 +43,7 @@ export function ServiceCard({
               src={image}
               alt={title}
               sizes="(max-width:768px) 100vw, 33vw"
-              className={ehArt ? "object-cover p-0" : undefined}
+              className="object-contain p-2"
             />
           </div>
         ) : null}

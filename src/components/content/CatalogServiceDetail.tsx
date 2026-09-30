@@ -23,6 +23,7 @@ import {
 } from "@/content/fixweb/catalog-title";
 import { formatEuro, getServiceCardMeta, getServiceContent } from "@/lib/fixweb-content";
 import { brandingFallbackForServiceSlug } from "@/lib/branding-images";
+import { getRequestBrand } from "@/lib/brand/server";
 import {
   CLOUD_HOSTING_SLUG_ORDER,
   getShopProductBySlug,
@@ -77,6 +78,7 @@ export async function CatalogServiceDetail({
   const content = await getServiceContent(slug, locale);
   if (!content) notFound();
 
+  const brand = await getRequestBrand();
   const meta = getCatalogItem(slug);
   const groupLabel = serviceGroups.find((g) => g.id === meta?.group);
   const inquiry = aiInquiryBySlug[slug];
@@ -116,6 +118,7 @@ export async function CatalogServiceDetail({
   const heroImage =
     content.image ||
     brandingFallbackForServiceSlug(slug, meta?.group);
+  const isHostingPage = meta?.group === "hosting";
 
   return (
     <div>
@@ -162,7 +165,15 @@ export async function CatalogServiceDetail({
                     {catalogGroupTitle(groupLabel.id, locale, groupLabel.title)}
                   </SoftLink>
                 ) : null}
-                <h1 className="font-display mt-3 text-4xl font-semibold tracking-tight md:text-5xl">
+                <h1
+                  className={cn(
+                    "font-display mt-3 text-4xl font-semibold tracking-tight md:text-5xl",
+                    isHostingPage &&
+                      (brand.id === "extrahosting"
+                        ? "text-[#1e9bff]"
+                        : "text-accent"),
+                  )}
+                >
                   {content.title}
                 </h1>
                 {content.subtitle ? (
@@ -218,16 +229,29 @@ export async function CatalogServiceDetail({
                 ) : null}
               </div>
               {heroImage ? (
-                <TabletFrame className="justify-self-center lg:justify-self-end">
-                  <ShopProductImage
-                    src={heroImage}
-                    alt={content.title}
-                    sizes="240px"
-                    priority
-                    className="object-cover"
-                    fallbackClassName="object-cover p-0 opacity-90"
-                  />
-                </TabletFrame>
+                isHostingPage ? (
+                  <div className="relative mx-auto aspect-square w-full max-w-60 justify-self-center lg:mx-0 lg:justify-self-end">
+                    <ShopProductImage
+                      src={heroImage}
+                      alt={content.title}
+                      sizes="240px"
+                      priority
+                      className="object-contain"
+                      fallbackClassName="object-contain p-0 opacity-90"
+                    />
+                  </div>
+                ) : (
+                  <TabletFrame className="justify-self-center lg:justify-self-end">
+                    <ShopProductImage
+                      src={heroImage}
+                      alt={content.title}
+                      sizes="240px"
+                      priority
+                      className="object-cover"
+                      fallbackClassName="object-cover p-0 opacity-90"
+                    />
+                  </TabletFrame>
+                )
               ) : null}
             </div>
           </Reveal>
@@ -246,6 +270,7 @@ export async function CatalogServiceDetail({
             className="mt-6 mb-10 md:mt-8 md:mb-12"
             title={tShop(hostingPlanPage.titleKey)}
             products={hostingPlanProducts}
+            showTitle={false}
           />
         ) : null}
 

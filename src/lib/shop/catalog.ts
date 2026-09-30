@@ -491,6 +491,7 @@ function buildServiceProducts(): ShopProduct[] {
         ? ("yearly" as const)
         : ("one_time" as const),
       category: yearlyHosting ? "hosting" : "other",
+      lineOfBusiness: yearlyHosting ? ("HOSTING" as const) : ("SERVICE" as const),
       currency: "EUR" as const,
       image,
       published: true,
@@ -623,20 +624,33 @@ export function planProductId(
 export function localizeShopProduct(product: ShopProduct, locale: string) {
   const fromPack = product.slug ? getProductI18n(product.slug, locale) : null;
   const lang = locale === "nl" ? "nl" : "en";
+
+  // Prefer catalog/DB fields (what hosting-admin edits) over static i18n packs.
+  const pick = (...candidates: Array<string | null | undefined>) => {
+    for (const value of candidates) {
+      if (typeof value === "string" && value.trim()) return value;
+    }
+    return "";
+  };
+
   return {
     ...product,
     localizedName: brandify(
-      fromPack?.name || product.name[lang] || product.name.en,
+      pick(product.name[lang], product.name.en, fromPack?.name),
     ),
     localizedShort: brandify(
-      fromPack?.shortDescription ||
-        product.shortDescription[lang] ||
+      pick(
+        product.shortDescription[lang],
         product.shortDescription.en,
+        fromPack?.shortDescription,
+      ),
     ),
     localizedDescription: brandify(
-      fromPack?.description ||
-        product.description[lang] ||
+      pick(
+        product.description[lang],
         product.description.en,
+        fromPack?.description,
+      ),
     ),
   };
 }

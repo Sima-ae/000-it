@@ -49,6 +49,7 @@ async function main() {
       billAsYearlyPackage: product.billAsYearlyPackage ?? true,
       checkoutMonths: product.checkoutMonths ?? 12,
       category: product.category || "hosting",
+      lineOfBusiness: "HOSTING" as const,
       image: product.image || null,
       featured: product.featured ?? false,
       published: product.published !== false,

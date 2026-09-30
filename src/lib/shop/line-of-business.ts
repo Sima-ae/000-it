@@ -5,7 +5,7 @@ export type { ShopLineOfBusiness };
 
 export const SHOP_LINES = ["SERVICE", "HOSTING"] as const;
 
-/** Known hosting product slugs (shared / WP / VPS packages). */
+/** Known hosting product slugs (shared / cloud / WordPress / VPS packages). */
 export function isHostingSlug(slug: string): boolean {
   if (HOSTING_YEARLY_SLUGS.has(slug)) return true;
   if (slug === "web-hosting") return true;
@@ -22,10 +22,11 @@ export function lineOfBusinessFromProduct(input: {
   category?: string | null;
   lineOfBusiness?: ShopLineOfBusiness | string | null;
 }): ShopLineOfBusiness {
+  // Known hosting SKUs / category win over a stale SERVICE default from seed.
+  if (input.category === "hosting" || isHostingSlug(input.slug)) return "HOSTING";
   if (input.lineOfBusiness === "HOSTING" || input.lineOfBusiness === "SERVICE") {
     return input.lineOfBusiness;
   }
-  if (input.category === "hosting" || isHostingSlug(input.slug)) return "HOSTING";
   return "SERVICE";
 }
 

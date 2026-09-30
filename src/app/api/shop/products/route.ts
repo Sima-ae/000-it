@@ -11,8 +11,31 @@ import { mapDbShopProduct } from "@/lib/shop/catalog";
 import {
   lineOfBusinessFromProduct,
   parseLineOfBusinessParam,
+  isHostingSlug,
 } from "@/lib/shop/line-of-business";
 import { brandIdForHost, isDomainsHostingCatalog } from "@/lib/brand/config";
+
+function hostingCatalogWhere() {
+  return {
+    OR: [
+      { lineOfBusiness: "HOSTING" as const },
+      { category: "hosting" },
+      { slug: { startsWith: "shared-hosting-" } },
+      { slug: { startsWith: "cloud-hosting-" } },
+      { slug: { startsWith: "wordpress-hosting-" } },
+      { slug: { startsWith: "vps-hosting-" } },
+      { slug: "web-hosting" },
+    ],
+  };
+}
+
+function serviceCatalogWhere() {
+  return {
+    AND: [
+      { NOT: hostingCatalogWhere() },
+    ],
+  };
+}
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
@@ -32,12 +55,19 @@ export async function GET(request: Request) {
     lineFilter = "HOSTING";
   }
 
+  const lineWhere =
+    lineFilter === "HOSTING"
+      ? hostingCatalogWhere()
+      : lineFilter === "SERVICE"
+        ? serviceCatalogWhere()
+        : undefined;
+
   // Public catalog (published only) — no auth required.
   if (!all) {
     const rows = await prisma.shopCatalogProduct.findMany({
       where: {
         published: true,
-        ...(lineFilter ? { lineOfBusiness: lineFilter } : {}),
+        ...(lineWhere ?? {}),
       },
       orderBy: [{ sortOrder: "asc" }, { createdAt: "desc" }],
     });
@@ -48,10 +78,17 @@ export async function GET(request: Request) {
   if (authResult.error) return authResult.error;
 
   const rows = await prisma.shopCatalogProduct.findMany({
-    where: lineFilter ? { lineOfBusiness: lineFilter } : undefined,
+    where: lineWhere,
     orderBy: [{ sortOrder: "asc" }, { createdAt: "desc" }],
   });
-  return NextResponse.json(rows);
+  // Re-tag known hosting SKUs so the admin UI matches slug intent.
+  return NextResponse.json(
+    rows.map((row) => {
+      if (!isHostingSlug(row.slug) && row.category !== "hosting") return row;
+      if (row.lineOfBusiness === "HOSTING") return row;
+      return { ...row, lineOfBusiness: "HOSTING" as const };
+    }),
+  );
 }
 
 export async function POST(request: Request) {
