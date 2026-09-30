@@ -1,3 +1,5 @@
+import ehLocalePacks from "@/content/brand/eh-locale-packs.json";
+
 /**
  * Extra Hosting UI copy for locales other than nl and en.
  * Unknown locales fall back to English so hosting pages never keep AI/scan copy.
@@ -911,6 +913,7 @@ const LOCALE_COPY: Record<string, LocaleCopy> = {
   pl,
   cs,
   sk,
+  ...(ehLocalePacks as Record<string, LocaleCopy>),
 };
 
 function fill(value: string, name: string): string {

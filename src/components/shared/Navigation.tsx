@@ -65,6 +65,7 @@ export function Navigation() {
   const locale = useLocale();
   const pathname = usePathname();
   const brand = useBrand();
+  const isExtraHosting = brand.id === "extrahosting";
   const primaryLinks =
     brand.catalogMode === "domains_hosting" ? primaryLinksHosting : primaryLinksFull;
   const [open, setOpen] = useState(false);
@@ -251,27 +252,42 @@ export function Navigation() {
           </nav>
 
           <div className="flex shrink-0 items-center gap-0.5 sm:gap-1 md:gap-2">
-            <GlobalSearchButton />
-            <SoftLink
-              href={localizedHref(locale, "/afspraak")}
-              aria-label={t("book")}
-              title={t("book")}
-              className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-sm transition hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 sm:h-9 sm:w-9"
-            >
-              <Plus className="h-4.5 w-4.5 sm:h-5 sm:w-5" strokeWidth={2.5} aria-hidden />
-            </SoftLink>
+            <div className={cn(isExtraHosting && "order-1")}>
+              <GlobalSearchButton />
+            </div>
+            {!isExtraHosting ? (
+              <SoftLink
+                href={localizedHref(locale, "/afspraak")}
+                aria-label={t("book")}
+                title={t("book")}
+                className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-sm transition hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 sm:h-9 sm:w-9"
+              >
+                <Plus className="h-4.5 w-4.5 sm:h-5 sm:w-5" strokeWidth={2.5} aria-hidden />
+              </SoftLink>
+            ) : null}
             <button
               type="button"
-              className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-xl text-muted-foreground transition hover:bg-muted/70 sm:h-9 sm:w-9 lg:hidden"
+              className={cn(
+                "inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-xl text-muted-foreground transition hover:bg-muted/70 sm:h-9 sm:w-9 lg:hidden",
+                isExtraHosting && "order-5",
+              )}
               onClick={() => setOpen((v) => !v)}
               aria-label={tCommon("openMenu")}
             >
               {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
-            <CartNavButton />
-            <AccountMenu />
-            <ThemeToggle />
-            <LanguageSwitcher />
+            <CartNavButton
+              className={cn(isExtraHosting && "order-2 lg:order-4")}
+            />
+            <AccountMenu
+              className={cn(isExtraHosting && "order-3 lg:order-2")}
+            />
+            <div className={cn(isExtraHosting && "order-4 lg:order-3")}>
+              <ThemeToggle />
+            </div>
+            <LanguageSwitcher
+              className={cn(isExtraHosting && "order-6")}
+            />
           </div>
         </div>
 
@@ -608,12 +624,14 @@ export function Navigation() {
                   </SoftLink>
                 );
               })}
-              <SoftLink
-                href={localizedHref(locale, "/afspraak")}
-                className="rounded-xl bg-primary px-3 py-2.5 text-sm font-semibold text-primary-foreground"
-              >
-                {t("book")}
-              </SoftLink>
+              {!isExtraHosting ? (
+                <SoftLink
+                  href={localizedHref(locale, "/afspraak")}
+                  className="rounded-xl bg-primary px-3 py-2.5 text-sm font-semibold text-primary-foreground"
+                >
+                  {t("book")}
+                </SoftLink>
+              ) : null}
             </div>
           </div>
         )}

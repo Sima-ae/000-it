@@ -111,8 +111,13 @@ function greeting(locale: string, hostingOnly?: boolean) {
     fr: `Bonjour, je suis Agent 000 chez ${brandName}.`,
     es: `Hola, soy Agent 000 de ${brandName}.`,
     pt: `Olá, sou o Agent 000 da ${brandName}.`,
+    it: `Ciao, sono Agent 000 di ${brandName}.`,
+    pl: `Cześć, jestem Agent 000 z ${brandName}.`,
+    tr: `Merhaba, ben ${brandName} adına Agent 000.`,
     ar: `مرحبًا، أنا Agent 000 من ${brandName}.`,
     hi: `नमस्ते, मैं ${brandName} से Agent 000 हूँ।`,
+    bn: `হ্যালো, আমি ${brandName}-এর Agent 000।`,
+    ur: `ہیلو، میں ${brandName} سے Agent 000 ہوں۔`,
     zh: `你好，我是 ${brandName} 的 Agent 000。`,
     ja: `こんにちは、${brandName} の Agent 000 です。`,
   });
@@ -194,6 +199,8 @@ function productIntro(locale: string, hostingOnly?: boolean) {
       pt: "Encontrei planos de hosting e opções de domínio. Abre um cartão abaixo para detalhes (novo separador).",
       ar: "وجدت خطط استضافة وخيارات نطاق مطابقة. افتح بطاقة أدناه للتفاصيل (تبويب جديد).",
       hi: "मुझे मिलते-जुलते होस्टिंग प्लान और डोमेन विकल्प मिले। विवरण के लिए नीचे कार्ड खोलें (नया टैब)।",
+      bn: "মিলে যাওয়া হোস্টিং প্ল্যান ও ডোমেইন অপশন পেয়েছি। বিস্তারিত দেখতে নিচের কার্ড খুলুন (নতুন ট্যাব)।",
+      ur: "مماثل ہوسٹنگ پلانز اور ڈومین اختیارات ملے۔ تفصیل کے لیے نیچے کارڈ کھولیں (نیا ٹیب)۔",
       zh: "我找到了相关的主机方案和域名选项。点击下方卡片查看详情（新标签页打开）。",
       ja: "関連するホスティングプランとドメインオプションが見つかりました。下のカードから詳細を開けます（新しいタブ）。",
     });

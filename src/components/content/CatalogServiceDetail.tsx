@@ -24,10 +24,16 @@ import {
 import { formatEuro, getServiceCardMeta, getServiceContent } from "@/lib/fixweb-content";
 import { brandingFallbackForServiceSlug } from "@/lib/branding-images";
 import {
+  CLOUD_HOSTING_SLUG_ORDER,
   getShopProductBySlug,
   loadShopCatalogFromDb,
+  SHARED_HOSTING_SLUG_ORDER,
+  shopProductsInSlugOrder,
+  VPS_HOSTING_SLUG_ORDER,
+  WORDPRESS_HOSTING_SLUG_ORDER,
 } from "@/lib/shop/catalog";
 import { cn } from "@/lib/utils";
+import { ShopHostingSection } from "@/components/shop/ShopHostingSection";
 import { notFound } from "next/navigation";
 
 const aiInquiryBySlug: Record<
@@ -38,6 +44,25 @@ const aiInquiryBySlug: Record<
   "ai-in-ecommerce": { source: "AI_IN_ECOMMERCE", key: "ecom" },
   "ai-in-website": { source: "AI_IN_WEBSITE", key: "web" },
 };
+
+const HOSTING_PLAN_PAGES = {
+  "shared-hosting": {
+    order: SHARED_HOSTING_SLUG_ORDER,
+    titleKey: "sharedHosting",
+  },
+  "cloud-hosting": {
+    order: CLOUD_HOSTING_SLUG_ORDER,
+    titleKey: "cloudHosting",
+  },
+  "wordpress-hosting": {
+    order: WORDPRESS_HOSTING_SLUG_ORDER,
+    titleKey: "wordpressHosting",
+  },
+  "vps-hosting": {
+    order: VPS_HOSTING_SLUG_ORDER,
+    titleKey: "vpsHosting",
+  },
+} as const;
 
 export async function CatalogServiceDetail({
   locale,
@@ -56,9 +81,16 @@ export async function CatalogServiceDetail({
   const groupLabel = serviceGroups.find((g) => g.id === meta?.group);
   const inquiry = aiInquiryBySlug[slug];
   const showSupportPlans = slug === "wordpress-beheer";
+  const hostingPlanPage =
+    slug in HOSTING_PLAN_PAGES
+      ? HOSTING_PLAN_PAGES[slug as keyof typeof HOSTING_PLAN_PAGES]
+      : null;
 
-  await loadShopCatalogFromDb();
+  const shopCatalog = await loadShopCatalogFromDb();
   const shopProduct = getShopProductBySlug(slug);
+  const hostingPlanProducts = hostingPlanPage
+    ? shopProductsInSlugOrder(shopCatalog, hostingPlanPage.order)
+    : [];
   const canOrder = Boolean(
     shopProduct &&
       shopProduct.published !== false &&
@@ -251,6 +283,14 @@ export async function CatalogServiceDetail({
           <section className="mb-10 border-b border-border/60 pb-10 md:mb-12 md:pb-12">
             <WordPressCarePlansSection />
           </section>
+        ) : null}
+
+        {hostingPlanPage && hostingPlanProducts.length ? (
+          <ShopHostingSection
+            className="mt-6 mb-10 md:mt-8 md:mb-12"
+            title={tShop(hostingPlanPage.titleKey)}
+            products={hostingPlanProducts}
+          />
         ) : null}
 
         <Reveal delay={0.05}>

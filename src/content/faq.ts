@@ -495,6 +495,8 @@ export function getFaqContent(
       return {
         ...category,
         items: category.items.map((item) => {
+          // Only force Dutch/English hosting blurbs; other locales keep pack translations.
+          if (locale !== "nl" && locale !== "en") return item;
           if (item.id === "host-1") {
             return {
               ...item,
