@@ -1,11 +1,8 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import Image from "next/image";
 import { PricingPlans } from "@/components/marketing/PricingPlans";
 import { WordPressCarePlansSection } from "@/components/marketing/WordPressCarePlansSection";
 import { ShopProductCard } from "@/components/shop/ShopProductCard";
 import { ShopHostingSection } from "@/components/shop/ShopHostingSection";
-import { Reveal } from "@/components/marketing/Reveal";
-import { BRANDING_IMAGES } from "@/lib/branding-images";
 import {
   CLOUD_HOSTING_SLUG_ORDER,
   HOSTING_YEARLY_SLUGS,
@@ -116,23 +113,6 @@ export default async function ShopPage({
       <h1 className="sr-only">{t("title")}</h1>
 
       {!hostingOnly ? (
-        <Reveal>
-          <div className="mb-6 flex justify-center md:mb-8">
-            <div className="relative h-32 w-40 overflow-hidden sm:h-36 sm:w-48">
-              <Image
-                src={BRANDING_IMAGES.consultantLaptop}
-                alt=""
-                fill
-                unoptimized
-                sizes="192px"
-                className="object-contain object-bottom"
-              />
-            </div>
-          </div>
-        </Reveal>
-      ) : null}
-
-      {!hostingOnly ? (
         <PricingPlans
           variant="embedded"
           plans={plans}
@@ -188,7 +168,7 @@ export default async function ShopPage({
 
       {serviceProducts.length > 0 ? (
         <section className="mt-16 text-center">
-          <h2 className="font-display text-[1.65rem] font-semibold tracking-tight text-accent md:text-[1.75rem]">
+          <h2 className="font-display text-[1.8rem] font-semibold tracking-tight text-accent md:text-[1.9rem]">
             {t("services")}
           </h2>
           <div className="mt-6 grid gap-4 text-start md:grid-cols-2 xl:grid-cols-3">

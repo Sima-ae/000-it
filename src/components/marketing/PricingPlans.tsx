@@ -142,7 +142,7 @@ export function PricingPlans({
             className={cn(
               "text-center font-display font-semibold tracking-tight text-accent",
               embedded
-                ? "text-[1.65rem] md:text-[1.75rem]"
+                ? "text-[1.8rem] md:text-[1.9rem]"
                 : "text-2xl",
             )}
           >

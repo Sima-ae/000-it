@@ -45,7 +45,7 @@ export function WordPressCarePlans({
     <section className="scroll-mt-28 md:scroll-mt-32">
       {showTitle ? (
         <Reveal from="up" duration={0.45}>
-          <h2 className="text-center font-display text-[1.65rem] font-semibold tracking-tight text-accent md:text-[1.75rem]">
+          <h2 className="text-center font-display text-[1.8rem] font-semibold tracking-tight text-accent md:text-[1.9rem]">
             {care.title}
           </h2>
         </Reveal>
