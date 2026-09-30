@@ -34,9 +34,9 @@ import {
 } from "@/lib/seo";
 import {
   getShopProductBySlug,
-  loadShopCatalogFromDb,
   localizeShopProduct,
 } from "@/lib/shop/catalog";
+import { loadShopCatalogFromDb } from "@/lib/shop/catalog-db";
 
 export type SocialPreview = {
   locale: string;

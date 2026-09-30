@@ -26,12 +26,12 @@ import { brandingFallbackForServiceSlug } from "@/lib/branding-images";
 import { listServiceGroupCards } from "@/lib/service-group-listing";
 import {
   CLOUD_HOSTING_SLUG_ORDER,
-  loadShopCatalogFromDb,
   SHARED_HOSTING_SLUG_ORDER,
   shopProductsInSlugOrder,
   VPS_HOSTING_SLUG_ORDER,
   WORDPRESS_HOSTING_SLUG_ORDER,
 } from "@/lib/shop/catalog";
+import { loadShopCatalogFromDb } from "@/lib/shop/catalog-db";
 import { buildPageMetadata } from "@/lib/seo";
 import { localizedHref } from "@/i18n/pathnames";
 import { getRequestBrand } from "@/lib/brand/server";

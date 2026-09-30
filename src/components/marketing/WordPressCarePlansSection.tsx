@@ -1,8 +1,6 @@
 import { WordPressCarePlans } from "@/components/marketing/WordPressCarePlans";
-import {
-  loadShopCatalogFromDb,
-  resolveWpCarePricesFromCatalog,
-} from "@/lib/shop/catalog";
+import { resolveWpCarePricesFromCatalog } from "@/lib/shop/catalog";
+import { loadShopCatalogFromDb } from "@/lib/shop/catalog-db";
 
 /** WordPress care columns with prices from the saved shop catalog. */
 export async function WordPressCarePlansSection({

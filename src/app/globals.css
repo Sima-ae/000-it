@@ -416,13 +416,10 @@ header .glass-strong {
   z-index: 1;
 }
 
-/* Extra Hosting cards: navy #0a4f9c + light blue, not TripleZero purple/teal. */
+/* Extra Hosting cards: plain glass by default; brand glow only on hover (same as 000-it). */
 html[data-brand="extrahosting"] .glass,
 .eh-glass-wash {
-  background:
-    radial-gradient(ellipse 90% 75% at 0% 0%, rgba(10, 79, 156, 0.22), transparent 58%),
-    radial-gradient(ellipse 85% 70% at 100% 100%, rgba(30, 155, 255, 0.26), transparent 55%),
-    var(--glass);
+  background: var(--glass);
 }
 
 html[data-brand="extrahosting"] header .glass {
@@ -453,6 +450,15 @@ html[data-brand="extrahosting"] .pricing-card-glow,
     0 0 26px rgba(10, 79, 156, 0.28),
     0 0 44px rgba(30, 155, 255, 0.22),
     0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+/* Optional explicit wash class: only tint on hover when paired with glow-hover */
+html[data-brand="extrahosting"] .eh-glass-wash.glow-hover:hover,
+.eh-glass-wash.glow-hover:hover {
+  background:
+    radial-gradient(ellipse 90% 75% at 0% 0%, rgba(10, 79, 156, 0.12), transparent 58%),
+    radial-gradient(ellipse 85% 70% at 100% 100%, rgba(30, 155, 255, 0.14), transparent 55%),
+    var(--glass);
 }
 
 html[data-brand="extrahosting"] .pricing-featured-pulse,

@@ -27,12 +27,12 @@ import { getRequestBrand } from "@/lib/brand/server";
 import {
   CLOUD_HOSTING_SLUG_ORDER,
   getShopProductBySlug,
-  loadShopCatalogFromDb,
   SHARED_HOSTING_SLUG_ORDER,
   shopProductsInSlugOrder,
   VPS_HOSTING_SLUG_ORDER,
   WORDPRESS_HOSTING_SLUG_ORDER,
 } from "@/lib/shop/catalog";
+import { loadShopCatalogFromDb } from "@/lib/shop/catalog-db";
 import { cn } from "@/lib/utils";
 import { ShopHostingSection } from "@/components/shop/ShopHostingSection";
 import { notFound } from "next/navigation";
@@ -176,7 +176,8 @@ export async function CatalogServiceDetail({
                 >
                   {content.title}
                 </h1>
-                {content.subtitle ? (
+                {content.subtitle &&
+                !(isHostingPage && content.kind === "product") ? (
                   <p className="mt-4 max-w-2xl text-muted-foreground md:text-lg">
                     {content.subtitle}
                   </p>
@@ -258,7 +259,12 @@ export async function CatalogServiceDetail({
         </div>
       </section>
 
-      <div className="mx-auto max-w-6xl px-4 pt-2 pb-12 md:px-6 md:pb-16">
+      <div
+        className={cn(
+          "mx-auto max-w-6xl px-4 pb-12 md:px-6 md:pb-16",
+          isHostingPage ? "pt-6 md:pt-8" : "pt-2",
+        )}
+      >
         {showSupportPlans ? (
           <section className="mb-10 border-b border-border/60 pb-10 md:mb-12 md:pb-12">
             <WordPressCarePlansSection />

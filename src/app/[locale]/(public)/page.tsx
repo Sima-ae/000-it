@@ -26,10 +26,10 @@ import {
 } from "@/lib/branding-images";
 import { buildPageMetadata, buildStaticPageMetadata, organizationJsonLd } from "@/lib/seo";
 import {
-  loadShopCatalogFromDb,
   resolvePlanNamesFromCatalog,
   resolvePlanPricesFromCatalog,
 } from "@/lib/shop/catalog";
+import { loadShopCatalogFromDb } from "@/lib/shop/catalog-db";
 import {
   catalogGroupSummary,
   serviceGroupHref,

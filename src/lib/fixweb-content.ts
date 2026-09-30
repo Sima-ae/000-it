@@ -16,10 +16,10 @@ import { hydrateLocalizedCopy } from "@/lib/localized-copy";
 import { isExtraHostingSurface } from "@/lib/brand/public-name";
 import {
   getShopProductBySlug,
-  loadShopCatalogFromDb,
   localizeShopProduct,
   shopUnitPriceInclCents,
 } from "@/lib/shop/catalog";
+import { loadShopCatalogFromDb } from "@/lib/shop/catalog-db";
 
 export { brandify } from "@/lib/brandify";
 

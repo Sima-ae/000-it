@@ -21,9 +21,9 @@ import { listNewsPosts } from "@/lib/news";
 import { listCategories } from "@/lib/kennisbank";
 import {
   getShopProductBySlug,
-  loadShopCatalogFromDb,
   localizeShopProduct,
 } from "@/lib/shop/catalog";
+import { loadShopCatalogFromDb } from "@/lib/shop/catalog-db";
 import type {
   SiteSearchHit,
   SiteSearchResult,

@@ -11,7 +11,6 @@ import {
   HOSTING_YEARLY_SLUGS,
   isSupportPackageSlug,
   isWpCareSlug,
-  loadShopCatalogFromDb,
   localizeShopProduct,
   resolvePlanNamesFromCatalog,
   resolvePlanPricesFromCatalog,
@@ -21,6 +20,7 @@ import {
   WORDPRESS_HOSTING_SLUG_ORDER,
   type ShopProduct,
 } from "@/lib/shop/catalog";
+import { loadShopCatalogFromDb } from "@/lib/shop/catalog-db";
 import { getRequestBrand } from "@/lib/brand/server";
 
 export const dynamic = "force-dynamic";

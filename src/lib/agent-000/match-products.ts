@@ -13,11 +13,11 @@ import {
 import {
   HOSTING_YEARLY_SLUGS,
   listShopProducts,
-  loadShopCatalogFromDb,
   localizeShopProduct,
   shopUnitPriceInclCents,
   type ShopProduct,
 } from "@/lib/shop/catalog";
+import { loadShopCatalogFromDb } from "@/lib/shop/catalog-db";
 
 export const PRODUCT_CONFIDENCE_HIT = 0.32;
 export const PRODUCT_CONFIDENCE_STRONG = 0.48;

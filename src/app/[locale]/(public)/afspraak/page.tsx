@@ -8,10 +8,10 @@ import { getServiceCardMeta } from "@/lib/fixweb-content";
 import { buildStaticPageMetadata } from "@/lib/seo";
 import {
   getShopProductBySlug,
-  loadShopCatalogFromDb,
   shopHasDiscount,
   shopUnitPriceInclCents,
 } from "@/lib/shop/catalog";
+import { loadShopCatalogFromDb } from "@/lib/shop/catalog-db";
 
 export async function generateMetadata({
   params,

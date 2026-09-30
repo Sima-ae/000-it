@@ -4,7 +4,7 @@ import type Stripe from "stripe";
 import { auth } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { resolveCartItems, cartTotalsInEuros } from "@/lib/shop/cart";
-import { loadShopCatalogFromDb } from "@/lib/shop/catalog";
+import { loadShopCatalogFromDb } from "@/lib/shop/catalog-db";
 import { getStripe, isStripeConfigured } from "@/lib/shop/stripe";
 import { makeShopOrderNumber } from "@/lib/shop/line-of-business";
 import { VAT_RATE } from "@/lib/shop/vat";
