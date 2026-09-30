@@ -262,7 +262,7 @@ function StatusRow({
             ) : (
               <Plus className="mt-0.5 h-3.5 w-3.5 shrink-0 text-muted-foreground sm:mt-0" />
             )}
-            <span className="min-w-0 break-words text-sm font-medium leading-snug text-foreground md:text-[15px]">
+            <span className="min-w-0 wrap-break-word text-sm font-medium leading-snug text-foreground md:text-[15px]">
               {item.name}
             </span>
           </span>
@@ -355,7 +355,7 @@ export function StatusPageView({ initial }: { initial: StatusPagePayload }) {
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
             {t("eyebrow")}
           </p>
-          <h1 className="mt-2 break-words font-display text-3xl font-semibold tracking-tight text-accent md:text-4xl">
+          <h1 className="mt-2 wrap-break-word font-display text-3xl font-semibold tracking-tight text-accent md:text-4xl">
             {t("title")}
           </h1>
           {sourceDown ? (
@@ -397,7 +397,7 @@ export function StatusPageView({ initial }: { initial: StatusPagePayload }) {
 
       <section className="mt-14 w-full min-w-0">
         <Reveal>
-          <h2 className="break-words font-display text-2xl font-semibold tracking-tight">
+          <h2 className="wrap-break-word font-display text-2xl font-semibold tracking-tight">
             {t("scheduledMaintenance")}
           </h2>
         </Reveal>
@@ -411,10 +411,10 @@ export function StatusPageView({ initial }: { initial: StatusPagePayload }) {
                 className="w-full min-w-0 overflow-hidden rounded-2xl border border-border/70 bg-background p-4 sm:p-5"
               >
                 <div className="flex min-w-0 flex-col gap-1.5">
-                  <h3 className="break-words font-display text-base font-semibold tracking-tight">
+                  <h3 className="wrap-break-word font-display text-base font-semibold tracking-tight">
                     {item.name}
                   </h3>
-                  <p className="break-words text-xs leading-snug text-muted-foreground sm:text-sm">
+                  <p className="wrap-break-word text-xs leading-snug text-muted-foreground sm:text-sm">
                     {t("scheduledFor", {
                       when: formatUtcRange(
                         item.scheduledFor,
@@ -425,11 +425,11 @@ export function StatusPageView({ initial }: { initial: StatusPagePayload }) {
                   </p>
                 </div>
                 {item.body ? (
-                  <p className="mt-3 break-words whitespace-pre-line text-sm leading-relaxed text-muted-foreground">
+                  <p className="mt-3 wrap-break-word whitespace-pre-line text-sm leading-relaxed text-muted-foreground">
                     {item.body}
                   </p>
                 ) : null}
-                <p className="mt-3 break-words text-[11px] text-muted-foreground/80">
+                <p className="mt-3 wrap-break-word text-[11px] text-muted-foreground/80">
                   {t("postedOn", { when: formatPosted(item.postedAt, locale) })}{" "}
                   UTC
                 </p>
