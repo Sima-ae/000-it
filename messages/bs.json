@@ -1718,7 +1718,7 @@
     "unknown": "Nepoznato",
     "daysAgo": "prije {days} dana",
     "today": "Danas",
-    "uptimePercent": "{value} % vremena rada",
+    "uptimePercent": "{value}%",
     "uptimeHint": "Vrijeme neprekidnog rada u proteklih 90 dana.",
     "liveSync": "Sinhronizovano uživo.",
     "scheduledMaintenance": "Planirano održavanje",

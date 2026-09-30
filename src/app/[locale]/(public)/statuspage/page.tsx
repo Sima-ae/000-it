@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { StatusPageView } from "@/components/status/StatusPageView";
+import { getRequestBrand } from "@/lib/brand/server";
 import { buildStaticPageMetadata } from "@/lib/seo";
 import { loadStatusPagePayload } from "@/lib/statuspage/hostinger";
 
@@ -22,6 +23,7 @@ export default async function StatusPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const initial = await loadStatusPagePayload();
+  const brand = await getRequestBrand();
+  const initial = await loadStatusPagePayload(brand.displayName);
   return <StatusPageView initial={initial} />;
 }

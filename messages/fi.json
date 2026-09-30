@@ -1718,7 +1718,7 @@
     "unknown": "Tuntematon",
     "daysAgo": "{days} päivää sitten",
     "today": "Tänään",
-    "uptimePercent": "{value} % käyttöaika",
+    "uptimePercent": "{value}%",
     "uptimeHint": "Käyttöaika viimeisten 90 päivän aikana.",
     "liveSync": "Synkronoitu livenä.",
     "scheduledMaintenance": "Määräaikaishuolto",

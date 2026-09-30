@@ -1718,7 +1718,7 @@
     "unknown": "לֹא יְדוּעַ",
     "daysAgo": "לפני {days} ימים",
     "today": "הַיוֹם",
-    "uptimePercent": "{value} % זמן פעילות",
+    "uptimePercent": "{value}%",
     "uptimeHint": "זמן פעילות במהלך 90 הימים האחרונים.",
     "liveSync": "מסונכרן בזמן אמת.",
     "scheduledMaintenance": "תחזוקה מתוזמנת",

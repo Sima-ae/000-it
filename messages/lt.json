@@ -1718,7 +1718,7 @@
     "unknown": "Nežinoma",
     "daysAgo": "prieš {days} dienas",
     "today": "Šiandien",
-    "uptimePercent": "{value} % veiksnumo laikas",
+    "uptimePercent": "{value}%",
     "uptimeHint": "Veiklos laikas per pastarąsias 90 dienų.",
     "liveSync": "Sinchronizuota gyvai.",
     "scheduledMaintenance": "Planinė priežiūra",

@@ -1718,7 +1718,7 @@
     "unknown": "مجهول",
     "daysAgo": "منذ {days} أيام",
     "today": "اليوم",
-    "uptimePercent": "{value} % وقت التشغيل",
+    "uptimePercent": "{value}%",
     "uptimeHint": "وقت التشغيل خلال الـ 90 يومًا الماضية.",
     "liveSync": "تتم المزامنة مباشرة.",
     "scheduledMaintenance": "الصيانة المجدولة",

@@ -1718,7 +1718,7 @@
     "unknown": "Unbekannt",
     "daysAgo": "Vor {days} Tagen",
     "today": "Heute",
-    "uptimePercent": "{value} % Betriebszeit",
+    "uptimePercent": "{value}%",
     "uptimeHint": "Betriebszeit in den letzten 90 Tagen.",
     "liveSync": "Live synchronisiert.",
     "scheduledMaintenance": "Geplante Wartung",

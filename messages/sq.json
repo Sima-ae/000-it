@@ -1718,7 +1718,7 @@
     "unknown": "E panjohur",
     "daysAgo": "{days} ditë më parë",
     "today": "Sot",
-    "uptimePercent": "{value} % kohë pune",
+    "uptimePercent": "{value}%",
     "uptimeHint": "Koha e funksionimit gjatë 90 ditëve të fundit.",
     "liveSync": "Sinkronizuar drejtpërdrejt.",
     "scheduledMaintenance": "Mirëmbajtja e planifikuar",

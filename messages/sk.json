@@ -1718,7 +1718,7 @@
     "unknown": "Neznámy",
     "daysAgo": "pred {days} dňami",
     "today": "Dnes",
-    "uptimePercent": "{value} % dostupnosti",
+    "uptimePercent": "{value}%",
     "uptimeHint": "Uptime za posledných 90 dní.",
     "liveSync": "Synchronizované naživo.",
     "scheduledMaintenance": "Plánovaná údržba",

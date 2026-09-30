@@ -1718,7 +1718,7 @@
     "unknown": "უცნობი",
     "daysAgo": "{days} დღის წინ",
     "today": "დღეს",
-    "uptimePercent": "{value} % ხელმისაწვდომობა",
+    "uptimePercent": "{value}%",
     "uptimeHint": "მუშაობის დრო ბოლო 90 დღის განმავლობაში.",
     "liveSync": "სინქრონიზებულია რეალურ დროში.",
     "scheduledMaintenance": "დაგეგმილი მოვლა",

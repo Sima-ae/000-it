@@ -102,8 +102,58 @@ function dayColor(day: DayStatus) {
   }
 }
 
+/** Prefer the active UI locale for dates (all languages), with safe fallback. */
 function toBcp47(locale: string) {
-  return locale === "nl" || locale.startsWith("nl-") ? "nl-NL" : "en-GB";
+  const base = (locale || "en").split("-")[0]?.toLowerCase() || "en";
+  const map: Record<string, string> = {
+    nl: "nl-NL",
+    en: "en-GB",
+    de: "de-DE",
+    fr: "fr-FR",
+    es: "es-ES",
+    pt: "pt-PT",
+    it: "it-IT",
+    pl: "pl-PL",
+    cs: "cs-CZ",
+    sk: "sk-SK",
+    hu: "hu-HU",
+    ro: "ro-RO",
+    bg: "bg-BG",
+    hr: "hr-HR",
+    sr: "sr-RS",
+    bs: "bs-BA",
+    sq: "sq-AL",
+    mk: "mk-MK",
+    lt: "lt-LT",
+    da: "da-DK",
+    sv: "sv-SE",
+    no: "nb-NO",
+    fi: "fi-FI",
+    uk: "uk-UA",
+    ru: "ru-RU",
+    tr: "tr-TR",
+    el: "el-GR",
+    ar: "ar",
+    ur: "ur-PK",
+    fa: "fa-IR",
+    hi: "hi-IN",
+    bn: "bn-BD",
+    pa: "pa-IN",
+    gu: "gu-IN",
+    mr: "mr-IN",
+    te: "te-IN",
+    ta: "ta-IN",
+    kn: "kn-IN",
+    ml: "ml-IN",
+    zh: "zh-CN",
+    ja: "ja-JP",
+    ko: "ko-KR",
+    hy: "hy-AM",
+    ka: "ka-GE",
+    cnr: "sr-ME",
+    ps: "ps-AF",
+  };
+  return map[base] || locale || "en-GB";
 }
 
 function formatUtcRange(from: string, until: string, locale: string) {
@@ -155,8 +205,8 @@ function UptimeBar({
   t: ReturnType<typeof useTranslations<"statuspage">>;
 }) {
   return (
-    <div className="mt-2.5">
-      <div className="flex h-8 items-stretch gap-px overflow-hidden rounded-[2px]">
+    <div className="mt-2.5 w-full min-w-0">
+      <div className="flex h-7 w-full min-w-0 items-stretch gap-px overflow-hidden rounded-[2px] sm:h-8">
         {days.map((day, i) => (
           <span
             key={`${i}-${day}`}
@@ -165,12 +215,14 @@ function UptimeBar({
           />
         ))}
       </div>
-      <div className="mt-1.5 flex items-center justify-between gap-3 text-[11px] text-muted-foreground">
-        <span>{t("daysAgo", { days: 90 })}</span>
-        <span className="font-medium text-foreground/80">
-          {t("uptimePercent", { value: uptimePercent.toFixed(uptimePercent % 1 ? 2 : 0) })}
+      <div className="mt-1.5 grid w-full min-w-0 grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-x-2 text-[10px] leading-snug text-muted-foreground sm:text-[11px]">
+        <span className="min-w-0 truncate">{t("daysAgo", { days: 90 })}</span>
+        <span className="max-w-[46vw] truncate text-center font-medium text-foreground/80 sm:max-w-none">
+          {t("uptimePercent", {
+            value: uptimePercent.toFixed(uptimePercent % 1 ? 2 : 0),
+          })}
         </span>
-        <span>{t("today")}</span>
+        <span className="min-w-0 truncate text-end">{t("today")}</span>
       </div>
     </div>
   );
@@ -191,25 +243,35 @@ function StatusRow({
   const [open, setOpen] = useState(defaultOpen);
 
   return (
-    <div className={cn(depth === 0 && "border-b border-border/70 py-4")}>
-      <div className={cn(depth > 0 && "border-t border-border/40 py-3 ps-4")}>
+    <div className={cn("min-w-0", depth === 0 && "border-b border-border/70 py-3.5 sm:py-4")}>
+      <div
+        className={cn(
+          "min-w-0",
+          depth > 0 && "border-t border-border/40 py-3 ps-3 sm:ps-4",
+        )}
+      >
         <button
           type="button"
-          className="flex w-full cursor-pointer items-center justify-between gap-3 text-start"
+          className="flex w-full min-w-0 cursor-pointer items-start justify-between gap-2 text-start sm:items-center sm:gap-3"
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
         >
-          <span className="flex min-w-0 items-center gap-2">
+          <span className="flex min-w-0 flex-1 items-start gap-2 sm:items-center">
             {open ? (
-              <ChevronDown className="h-3.5 w-3.5 shrink-0 text-muted-foreground" />
+              <ChevronDown className="mt-0.5 h-3.5 w-3.5 shrink-0 text-muted-foreground sm:mt-0" />
             ) : (
-              <Plus className="h-3.5 w-3.5 shrink-0 text-muted-foreground" />
+              <Plus className="mt-0.5 h-3.5 w-3.5 shrink-0 text-muted-foreground sm:mt-0" />
             )}
-            <span className="truncate text-sm font-medium text-foreground md:text-[15px]">
+            <span className="min-w-0 break-words text-sm font-medium leading-snug text-foreground md:text-[15px]">
               {item.name}
             </span>
           </span>
-          <span className={cn("shrink-0 text-sm font-medium", statusColor(item.status))}>
+          <span
+            className={cn(
+              "max-w-[42%] shrink-0 text-end text-xs font-medium leading-snug sm:max-w-[46%] sm:text-sm",
+              statusColor(item.status),
+            )}
+          >
             {statusLabel(item.status, t)}
           </span>
         </button>
@@ -287,37 +349,37 @@ export function StatusPageView({ initial }: { initial: StatusPagePayload }) {
   const sourceDown = !data.sourceOk && data.components.length === 0;
 
   return (
-    <div className="mx-auto max-w-4xl px-4 pb-16 pt-8 sm:px-5 md:px-6 md:pb-24 md:pt-10">
+    <div className="mx-auto w-full min-w-0 max-w-4xl overflow-x-clip px-4 pb-16 pt-8 sm:px-5 md:px-6 md:pb-24 md:pt-10">
       <Reveal from="up" duration={0.4}>
         <div className="text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
             {t("eyebrow")}
           </p>
-          <h1 className="mt-2 font-display text-3xl font-semibold tracking-tight text-accent md:text-4xl">
+          <h1 className="mt-2 break-words font-display text-3xl font-semibold tracking-tight text-accent md:text-4xl">
             {t("title")}
           </h1>
           {sourceDown ? (
-            <p className="mt-3 text-base font-medium text-muted-foreground">
+            <p className="mt-3 px-1 text-base font-medium text-muted-foreground">
               {t("unavailable")}
             </p>
           ) : (
             <p
               className={cn(
-                "mt-3 text-base font-medium",
+                "mt-3 px-1 text-base font-medium leading-snug",
                 statusColor(overallStatusSeverity(data.indicator)),
               )}
             >
               {overallStatusLabel(data.indicator, t)}
             </p>
           )}
-          <p className="mt-2 text-xs text-muted-foreground">
+          <p className="mt-2 px-1 text-xs leading-relaxed text-muted-foreground">
             {t("uptimeHint")}{" "}
             <span className="text-foreground/70">{t("liveSync")}</span>
           </p>
         </div>
       </Reveal>
 
-      <div className="mt-10 rounded-2xl border border-border/70 bg-background px-4 sm:px-5">
+      <div className="mt-10 w-full min-w-0 overflow-hidden rounded-2xl border border-border/70 bg-background px-3 sm:px-5">
         {data.components.map((item) => (
           <StatusRow
             key={item.id}
@@ -333,9 +395,9 @@ export function StatusPageView({ initial }: { initial: StatusPagePayload }) {
         ) : null}
       </div>
 
-      <section className="mt-14">
+      <section className="mt-14 w-full min-w-0">
         <Reveal>
-          <h2 className="font-display text-2xl font-semibold tracking-tight">
+          <h2 className="break-words font-display text-2xl font-semibold tracking-tight">
             {t("scheduledMaintenance")}
           </h2>
         </Reveal>
@@ -346,13 +408,13 @@ export function StatusPageView({ initial }: { initial: StatusPagePayload }) {
             data.maintenances.map((item) => (
               <article
                 key={item.id}
-                className="rounded-2xl border border-border/70 bg-background p-4 sm:p-5"
+                className="w-full min-w-0 overflow-hidden rounded-2xl border border-border/70 bg-background p-4 sm:p-5"
               >
-                <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
-                  <h3 className="font-display text-base font-semibold tracking-tight">
+                <div className="flex min-w-0 flex-col gap-1.5">
+                  <h3 className="break-words font-display text-base font-semibold tracking-tight">
                     {item.name}
                   </h3>
-                  <p className="shrink-0 text-xs text-muted-foreground sm:text-sm">
+                  <p className="break-words text-xs leading-snug text-muted-foreground sm:text-sm">
                     {t("scheduledFor", {
                       when: formatUtcRange(
                         item.scheduledFor,
@@ -363,11 +425,11 @@ export function StatusPageView({ initial }: { initial: StatusPagePayload }) {
                   </p>
                 </div>
                 {item.body ? (
-                  <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-muted-foreground">
+                  <p className="mt-3 break-words whitespace-pre-line text-sm leading-relaxed text-muted-foreground">
                     {item.body}
                   </p>
                 ) : null}
-                <p className="mt-3 text-[11px] text-muted-foreground/80">
+                <p className="mt-3 break-words text-[11px] text-muted-foreground/80">
                   {t("postedOn", { when: formatPosted(item.postedAt, locale) })}{" "}
                   UTC
                 </p>

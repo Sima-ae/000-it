@@ -1718,7 +1718,7 @@
     "unknown": "Bilinmiyor",
     "daysAgo": "{days} gün önce",
     "today": "Bugün",
-    "uptimePercent": "Çalışma süresinin yüzdesi {value}",
+    "uptimePercent": "{value}%",
     "uptimeHint": "Son 90 gün içindeki çalışma süresi.",
     "liveSync": "Canlı senkronize.",
     "scheduledMaintenance": "Planlı Bakım",

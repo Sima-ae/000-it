@@ -1718,7 +1718,7 @@
     "unknown": "Невідомий",
     "daysAgo": "{days} днів тому",
     "today": "Сьогодні",
-    "uptimePercent": "{value} % безвідмовної роботи",
+    "uptimePercent": "{value}%",
     "uptimeHint": "Час роботи за останні 90 днів.",
     "liveSync": "Синхронізовано в реальному часі.",
     "scheduledMaintenance": "Планове технічне обслуговування",

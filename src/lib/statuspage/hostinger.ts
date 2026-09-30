@@ -86,7 +86,7 @@ type RawMaintenance = {
 const DAYS = 90;
 const MAX_MAINTENANCES = 24;
 
-/** Strip vendor branding; keep clean product names for TripleZero iT. */
+/** Strip vendor branding; keep clean product names for the active site brand. */
 export function rebrandStatusName(name: string): string {
   const original = name.trim();
   if (/^Hostinger Email$/i.test(original)) return "Email";
@@ -97,9 +97,9 @@ export function rebrandStatusName(name: string): string {
   return out || original;
 }
 
-function rebrandText(text: string): string {
+function rebrandText(text: string, brandName: string) {
   return text
-    .replace(/\bHostinger\b/gi, "TripleZero iT")
+    .replace(/\bHostinger\b/gi, brandName)
     .replace(/\bhPanel\b/g, "client portal")
     .replace(/\bTitan Email\b/gi, "Email");
 }
@@ -186,14 +186,17 @@ export function isLiveMaintenance(
   return false;
 }
 
-function mapMaintenance(m: RawMaintenance): StatusMaintenanceView {
+function mapMaintenance(
+  m: RawMaintenance,
+  brandName: string,
+): StatusMaintenanceView {
   return {
     id: m.id,
     name: rebrandStatusName(m.name),
     status: m.status,
     scheduledFor: m.scheduled_for,
     scheduledUntil: m.scheduled_until,
-    body: rebrandText(latestUpdateBody(m.incident_updates)),
+    body: rebrandText(latestUpdateBody(m.incident_updates), brandName),
     postedAt: earliestPostedAt(m),
   };
 }
@@ -316,7 +319,9 @@ async function fetchJson<T>(path: string): Promise<T> {
   return (await res.json()) as T;
 }
 
-export async function loadStatusPagePayload(): Promise<StatusPagePayload> {
+export async function loadStatusPagePayload(
+  brandName = "TripleZero iT",
+): Promise<StatusPagePayload> {
   try {
     const [summary, upcoming, active, incidentsPayload] = await Promise.all([
       fetchJson<{
@@ -355,7 +360,7 @@ export async function loadStatusPagePayload(): Promise<StatusPagePayload> {
         id: raw.id,
         name: rebrandStatusName(raw.name),
         status: normalizeStatus(raw.status),
-        description: raw.description ? rebrandText(raw.description) : null,
+        description: raw.description ? rebrandText(raw.description, brandName) : null,
         group: Boolean(raw.group),
         children: [],
         days,
@@ -405,14 +410,15 @@ export async function loadStatusPagePayload(): Promise<StatusPagePayload> {
           (parseIso(a.scheduled_for) ?? 0) - (parseIso(b.scheduled_for) ?? 0),
       )
       .slice(0, MAX_MAINTENANCES)
-      .map(mapMaintenance);
+      .map((m) => mapMaintenance(m, brandName));
 
     return {
       fetchedAt: new Date().toISOString(),
-      pageName: "TripleZero iT",
+      pageName: brandName,
       indicator: summary.status?.indicator || "none",
       description: rebrandText(
         summary.status?.description || "All Systems Operational",
+        brandName,
       ),
       components: topLevel,
       maintenances,
@@ -422,7 +428,7 @@ export async function loadStatusPagePayload(): Promise<StatusPagePayload> {
     console.error("[statuspage]", error);
     return {
       fetchedAt: new Date().toISOString(),
-      pageName: "TripleZero iT",
+      pageName: brandName,
       indicator: "none",
       description: "",
       components: [],

@@ -1718,7 +1718,7 @@
     "unknown": "Necunoscut",
     "daysAgo": "acum {days} zile",
     "today": "Astăzi",
-    "uptimePercent": "{value} % timp de funcționare",
+    "uptimePercent": "{value}%",
     "uptimeHint": "Timp de funcționare în ultimele 90 de zile.",
     "liveSync": "Sincronizat live.",
     "scheduledMaintenance": "Întreținere programată",

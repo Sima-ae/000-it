@@ -1718,7 +1718,7 @@
     "unknown": "Անհայտ",
     "daysAgo": "{days} օր առաջ",
     "today": "Այսօր",
-    "uptimePercent": "{value} % գործարկման ժամանակ",
+    "uptimePercent": "{value}%",
     "uptimeHint": "Անցած 90 օրվա ընթացքում աշխատելու ժամանակը:",
     "liveSync": "Սինխրոնացված է իրական ժամանակում։",
     "scheduledMaintenance": "Պլանավորված սպասարկում",

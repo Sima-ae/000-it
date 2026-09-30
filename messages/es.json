@@ -1718,7 +1718,7 @@
     "unknown": "Desconocido",
     "daysAgo": "Hace {days} días",
     "today": "Hoy",
-    "uptimePercent": "{value} % de tiempo de actividad",
+    "uptimePercent": "{value}%",
     "uptimeHint": "Tiempo de actividad durante los últimos 90 días.",
     "liveSync": "Sincronizado en vivo.",
     "scheduledMaintenance": "Mantenimiento programado",

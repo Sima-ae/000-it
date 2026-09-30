@@ -1718,7 +1718,7 @@
     "unknown": "Неизвестный",
     "daysAgo": "{days} дней назад",
     "today": "Сегодня",
-    "uptimePercent": "{value} % времени безотказной работы",
+    "uptimePercent": "{value}%",
     "uptimeHint": "Время работы за последние 90 дней.",
     "liveSync": "Синхронизировано в реальном времени.",
     "scheduledMaintenance": "Плановое техническое обслуживание",

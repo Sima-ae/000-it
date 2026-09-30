@@ -1718,7 +1718,7 @@
     "unknown": "Αγνωστος",
     "daysAgo": "πριν από {days} ημέρες",
     "today": "Σήμερα",
-    "uptimePercent": "{value} % χρόνο λειτουργίας",
+    "uptimePercent": "{value}%",
     "uptimeHint": "Χρόνος λειτουργίας τις τελευταίες 90 ημέρες.",
     "liveSync": "Συγχρονισμένο σε πραγματικό χρόνο.",
     "scheduledMaintenance": "Προγραμματισμένη Συντήρηση",

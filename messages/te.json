@@ -234,7 +234,7 @@
     "unknown": "తెలియదు",
     "daysAgo": "{days} రోజుల క్రితం",
     "today": "ఈరోజు",
-    "uptimePercent": "{value} % సమయ సమయము",
+    "uptimePercent": "{value}%",
     "uptimeHint": "గత 90 రోజులలో అప్‌టైమ్.",
     "liveSync": "లైవ్ సింక్ చేయబడింది.",
     "scheduledMaintenance": "షెడ్యూల్ చేయబడిన నిర్వహణ",
