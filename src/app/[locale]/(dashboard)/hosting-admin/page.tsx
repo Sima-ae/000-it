@@ -97,7 +97,9 @@ export default function ShopAdminPage() {
   const { data: items = [], isLoading } = useQuery({
     queryKey: ["hosting-admin"],
     queryFn: async () => {
-      const res = await fetch("/api/shop/products?all=1&lineOfBusiness=HOSTING");
+      const res = await fetch("/api/shop/products?all=1&lineOfBusiness=HOSTING", {
+        cache: "no-store",
+      });
       if (!res.ok) throw new Error("Failed to load");
       return (await res.json()) as Item[];
     },
@@ -281,8 +283,15 @@ export default function ShopAdminPage() {
               initial={initialEdit || undefined}
               lineOfBusiness="HOSTING"
               onCancel={() => setOpen(false)}
-              onSaved={() => {
+              onSaved={(saved) => {
                 setOpen(false);
+                if (saved && typeof saved.id === "string") {
+                  qc.setQueryData<Item[]>(["hosting-admin"], (current) =>
+                    current?.map((row) =>
+                      row.id === saved.id ? { ...row, ...(saved as Item) } : row,
+                    ),
+                  );
+                }
                 void qc.invalidateQueries({ queryKey: ["hosting-admin"] });
               }}
             />

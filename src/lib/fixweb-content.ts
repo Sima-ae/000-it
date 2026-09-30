@@ -15,9 +15,13 @@ import { formatEuro as formatEuroShared } from "@/lib/format-euro";
 import { hydrateLocalizedCopy } from "@/lib/localized-copy";
 import { isExtraHostingSurface } from "@/lib/brand/public-name";
 import {
+  CLOUD_HOSTING_SLUG_ORDER,
   getShopProductBySlug,
   localizeShopProduct,
+  SHARED_HOSTING_SLUG_ORDER,
   shopUnitPriceInclCents,
+  VPS_HOSTING_SLUG_ORDER,
+  WORDPRESS_HOSTING_SLUG_ORDER,
 } from "@/lib/shop/catalog";
 import { loadShopCatalogFromDb } from "@/lib/shop/catalog-db";
 
@@ -146,6 +150,63 @@ function productFeatures(shortDescription: string) {
         !/^what can you expect/i.test(line) &&
         !/^wat kun je verwachten/i.test(line),
     );
+}
+
+/** Overview pages whose “plans” list must follow the live shop catalog. */
+const HOSTING_OVERVIEW_SLUGS: Record<string, readonly string[]> = {
+  "shared-hosting": SHARED_HOSTING_SLUG_ORDER,
+  "cloud-hosting": CLOUD_HOSTING_SLUG_ORDER,
+  "wordpress-hosting": WORDPRESS_HOSTING_SLUG_ORDER,
+  "vps-hosting": VPS_HOSTING_SLUG_ORDER,
+};
+
+function planTierLabel(name: string) {
+  return name
+    .replace(/^(shared|cloud|wordpress|vps)\s+hosting\s+/i, "")
+    .trim();
+}
+
+function hostingPlanSummaryLine(slug: string, locale: string) {
+  const shop = getShopProductBySlug(slug);
+  const useCatalog = Boolean(shop && shop.published !== false && (locale === "nl" || locale === "en"));
+  const i18n = useCatalog ? null : getProductI18n(slug, locale);
+  const shortDescription = useCatalog
+    ? localizeShopProduct(shop!, locale).localizedShort
+    : i18n?.shortDescription ||
+      (shop ? localizeShopProduct(shop, locale === "nl" ? "nl" : "en").localizedShort : "");
+  const name = useCatalog
+    ? localizeShopProduct(shop!, locale).localizedName
+    : i18n?.name || shop?.name[locale === "nl" ? "nl" : "en"] || slug;
+  const features = productFeatures(shortDescription || "");
+  const label = planTierLabel(name);
+  if (!label || features.length === 0) return null;
+  return `${label} — ${features.join(", ")}`;
+}
+
+/** Replace hardcoded plan bullets with the specs stored on each hosting product. */
+function withLiveHostingPlanSpecs(
+  slug: string,
+  locale: string,
+  blocks: ContentBlock[],
+): ContentBlock[] {
+  const order = HOSTING_OVERVIEW_SLUGS[slug];
+  if (!order) return blocks;
+  const lines = order
+    .map((productSlug) => hostingPlanSummaryLine(productSlug, locale))
+    .filter((line): line is string => Boolean(line));
+  if (lines.length < 2) return blocks;
+
+  let replaced = false;
+  return blocks.map((block) => {
+    if (replaced || block.type !== "list") return block;
+    const blob = block.items.join(" ");
+    if (!/[—–-]/.test(blob)) return block;
+    if (!/(GB|CPU|SSD|NVMe|website|Websites|bezoekers|visitors|PHP|RAM)/i.test(blob)) {
+      return block;
+    }
+    replaced = true;
+    return { ...block, items: lines.map((item) => brandify(item)) };
+  });
 }
 
 /** Prefer live shop-catalog copy/price over static imported products. */
@@ -503,7 +564,12 @@ export async function getServiceContent(slug: string, locale: string = "nl") {
   if (!content) return content;
 
   const overlay = shopCatalogOverlay(slug, locale);
-  if (!overlay) return content;
+  if (!overlay) {
+    return {
+      ...content,
+      blocks: withLiveHostingPlanSpecs(slug, locale, content.blocks),
+    };
+  }
 
   const featureSubtitle =
     overlay.features.length > 0
@@ -511,6 +577,10 @@ export async function getServiceContent(slug: string, locale: string = "nl") {
       : overlay.shortDescription
         ? overlay.shortDescription.split("\n")[0] || content.subtitle || ""
         : content.subtitle || "";
+
+  const blocks = overlay.blocks.length
+    ? brandifyBlocks(overlay.blocks as ContentBlock[])
+    : content.blocks;
 
   return {
     ...content,
@@ -524,9 +594,7 @@ export async function getServiceContent(slug: string, locale: string = "nl") {
         ? catalogUiLabel("perMonth", locale, locale === "nl" ? "/ maand" : "/ month")
         : content.priceSuffix ?? null,
     image: preferDedicatedServiceImage(content.image, overlay.image),
-    blocks: overlay.blocks.length
-      ? brandifyBlocks(overlay.blocks as ContentBlock[])
-      : content.blocks,
+    blocks: withLiveHostingPlanSpecs(slug, locale, blocks),
     features: overlay.features.length
       ? overlay.features.map((f) => brandify(f))
       : content.features,

@@ -15,6 +15,15 @@ import {
 } from "@/lib/shop/line-of-business";
 import { brandIdForHost, isDomainsHostingCatalog } from "@/lib/brand/config";
 
+export const dynamic = "force-dynamic";
+
+function json(data: unknown, status = 200) {
+  return NextResponse.json(data, {
+    status,
+    headers: { "Cache-Control": "no-store, max-age=0" },
+  });
+}
+
 function hostingCatalogWhere() {
   return {
     OR: [
@@ -71,7 +80,7 @@ export async function GET(request: Request) {
       },
       orderBy: [{ sortOrder: "asc" }, { createdAt: "desc" }],
     });
-    return NextResponse.json(rows.map(mapDbShopProduct));
+    return json(rows.map(mapDbShopProduct));
   }
 
   const authResult = await requireRole(["SUPER_ADMIN", "ADMIN", "MANAGER"]);
@@ -82,7 +91,7 @@ export async function GET(request: Request) {
     orderBy: [{ sortOrder: "asc" }, { createdAt: "desc" }],
   });
   // Re-tag known hosting SKUs so the admin UI matches slug intent.
-  return NextResponse.json(
+  return json(
     rows.map((row) => {
       if (!isHostingSlug(row.slug) && row.category !== "hosting") return row;
       if (row.lineOfBusiness === "HOSTING") return row;

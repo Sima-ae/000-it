@@ -97,7 +97,9 @@ export default function ShopAdminPage() {
   const { data: items = [], isLoading } = useQuery({
     queryKey: ["shop-admin"],
     queryFn: async () => {
-      const res = await fetch("/api/shop/products?all=1&lineOfBusiness=SERVICE");
+      const res = await fetch("/api/shop/products?all=1&lineOfBusiness=SERVICE", {
+        cache: "no-store",
+      });
       if (!res.ok) throw new Error("Failed to load");
       return (await res.json()) as Item[];
     },
@@ -281,8 +283,15 @@ export default function ShopAdminPage() {
               initial={initialEdit || undefined}
               lineOfBusiness="SERVICE"
               onCancel={() => setOpen(false)}
-              onSaved={() => {
+              onSaved={(saved) => {
                 setOpen(false);
+                if (saved && typeof saved.id === "string") {
+                  qc.setQueryData<Item[]>(["shop-admin"], (current) =>
+                    current?.map((row) =>
+                      row.id === saved.id ? { ...row, ...(saved as Item) } : row,
+                    ),
+                  );
+                }
                 void qc.invalidateQueries({ queryKey: ["shop-admin"] });
               }}
             />

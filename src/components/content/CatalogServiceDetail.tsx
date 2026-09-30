@@ -220,7 +220,7 @@ export async function CatalogServiceDetail({
                 ) : null}
                 {"features" in content && Array.isArray(content.features) && content.features.length ? (
                   <ul className="mt-5 grid gap-1.5 text-sm text-muted-foreground sm:grid-cols-2">
-                    {content.features.slice(0, 8).map((feature) => (
+                    {content.features.map((feature) => (
                       <li key={feature} className="flex gap-2">
                         <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                         <span>{feature}</span>

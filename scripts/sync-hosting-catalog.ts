@@ -1,6 +1,6 @@
 /**
- * Sync hosting products in ShopCatalogProduct from STATIC_SHOP_CATALOG
- * (imported-products + product-i18n). Use after fixing specs/prices in static files.
+ * Insert missing hosting products from STATIC_SHOP_CATALOG.
+ * Existing rows keep the copy and prices saved in hosting-admin.
  *
  *   npx tsx scripts/sync-hosting-catalog.ts
  */
@@ -58,10 +58,27 @@ async function main() {
       tags: product.tags || ["hosting"],
     };
 
-    await prisma.shopCatalogProduct.upsert({
+    const existing = await prisma.shopCatalogProduct.findUnique({
       where: { slug: product.slug },
-      create: { id: product.id, ...data },
-      update: data,
+    });
+    if (existing) {
+      // Never overwrite copy or prices already saved in hosting-admin.
+      await prisma.shopCatalogProduct.update({
+        where: { slug: product.slug },
+        data: {
+          lineOfBusiness: "HOSTING",
+          category: existing.category || "hosting",
+          sortOrder,
+          billAsYearlyPackage: existing.billAsYearlyPackage || data.billAsYearlyPackage,
+          checkoutMonths: existing.checkoutMonths ?? data.checkoutMonths,
+        },
+      });
+      console.log("kept", product.slug);
+      continue;
+    }
+
+    await prisma.shopCatalogProduct.create({
+      data: { id: product.id, ...data },
     });
 
     console.log(

@@ -124,7 +124,7 @@ export function ShopAdminForm({
   lineOfBusiness = "SERVICE",
 }: {
   initial?: Partial<ShopAdminFormValues>;
-  onSaved: () => void;
+  onSaved: (saved?: Record<string, unknown>) => void;
   onCancel: () => void;
   lineOfBusiness?: "SERVICE" | "HOSTING";
 }) {
@@ -216,13 +216,26 @@ export function ShopAdminForm({
         {
           method: form.id ? "PATCH" : "POST",
           headers: { "Content-Type": "application/json" },
+          cache: "no-store",
           body: JSON.stringify(payload),
         },
       );
       const data = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(data.error || "Save failed");
+      if (
+        typeof data.shortDescriptionNl === "string" &&
+        data.shortDescriptionNl !== payload.shortDescriptionNl
+      ) {
+        throw new Error("Save did not store the Dutch text");
+      }
+      if (
+        typeof data.descriptionNl === "string" &&
+        data.descriptionNl !== payload.descriptionNl
+      ) {
+        throw new Error("Save did not store the Dutch description");
+      }
       toast.success(form.id ? "Product updated" : "Product created");
-      onSaved();
+      onSaved(data);
     } catch (err) {
       toast.error(err instanceof Error ? err.message : "Save failed");
     } finally {

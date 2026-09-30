@@ -9,6 +9,15 @@ import {
 } from "@/lib/shop/admin";
 import { canDelete, canEditResource } from "@/lib/roles";
 
+export const dynamic = "force-dynamic";
+
+function json(data: unknown, status = 200) {
+  return NextResponse.json(data, {
+    status,
+    headers: { "Cache-Control": "no-store, max-age=0" },
+  });
+}
+
 export async function GET(
   _request: Request,
   { params }: { params: Promise<{ id: string }> },
@@ -20,8 +29,8 @@ export async function GET(
   const item = await prisma.shopCatalogProduct.findFirst({
     where: { OR: [{ id }, { slug: id }, { sku: id }] },
   });
-  if (!item) return NextResponse.json({ error: "Not found" }, { status: 404 });
-  return NextResponse.json(item);
+  if (!item) return json({ error: "Not found" }, 404);
+  return json(item);
 }
 
 export async function PATCH(
@@ -33,7 +42,7 @@ export async function PATCH(
   const { id } = await params;
 
   const existing = await prisma.shopCatalogProduct.findUnique({ where: { id } });
-  if (!existing) return NextResponse.json({ error: "Not found" }, { status: 404 });
+  if (!existing) return json({ error: "Not found" }, 404);
 
   if (
     !canEditResource(
@@ -42,7 +51,7 @@ export async function PATCH(
       authResult.session.user.id,
     )
   ) {
-    return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+    return json({ error: "Forbidden" }, 403);
   }
 
   const body = await request.json();
@@ -71,9 +80,9 @@ export async function PATCH(
           : Number(body.checkoutMonths),
   });
   if (!parsed.success) {
-    return NextResponse.json(
+    return json(
       { error: "Invalid input", details: parsed.error.flatten() },
-      { status: 400 },
+      400,
     );
   }
 
@@ -126,37 +135,59 @@ export async function PATCH(
       where: { sku, NOT: { id } },
     });
     if (clash) {
-      return NextResponse.json({ error: "SKU already exists" }, { status: 409 });
+      return json({ error: "SKU already exists" }, 409);
     }
     update.sku = sku;
   }
 
-  if (data.slug !== undefined || data.nameEn !== undefined || data.nameNl !== undefined) {
-    let slug = slugifyShop(
-      data.slug || data.nameEn || data.nameNl || existing.slug,
-    );
-    const clash = await prisma.shopCatalogProduct.findFirst({
-      where: { slug, NOT: { id } },
-    });
-    if (clash) slug = `${slug}-${Date.now().toString(36)}`;
-    update.slug = slug;
+  if (data.slug !== undefined) {
+    const slug = slugifyShop(data.slug);
+    if (slug && slug !== existing.slug) {
+      const clash = await prisma.shopCatalogProduct.findFirst({
+        where: { slug, NOT: { id } },
+      });
+      if (clash) {
+        return json({ error: "Slug already exists" }, 409);
+      }
+      update.slug = slug;
+    }
   }
 
   if (!existing.createdById) {
     update.createdById = authResult.session.user.id;
   }
 
-  const item = await prisma.shopCatalogProduct.update({
-    where: { id },
-    data: update,
-  });
+  let item;
+  try {
+    item = await prisma.shopCatalogProduct.update({
+      where: { id },
+      data: update,
+    });
+  } catch (error) {
+    console.error("[shop] product update failed", error);
+    return json({ error: "Save failed" }, 500);
+  }
+
+  if (
+    data.shortDescriptionNl !== undefined &&
+    item.shortDescriptionNl !== data.shortDescriptionNl
+  ) {
+    return json({ error: "Save did not store the text" }, 500);
+  }
+  if (
+    data.descriptionNl !== undefined &&
+    item.descriptionNl !== data.descriptionNl
+  ) {
+    return json({ error: "Save did not store the description" }, 500);
+  }
+
   try {
     const { clearServiceContentCaches } = await import("@/lib/fixweb-content");
     clearServiceContentCaches();
   } catch {
     // ignore
   }
-  return NextResponse.json(item);
+  return json(item);
 }
 
 export async function DELETE(
@@ -166,13 +197,13 @@ export async function DELETE(
   const authResult = await requireRole(["SUPER_ADMIN"]);
   if (authResult.error) return authResult.error;
   if (!canDelete(authResult.session.user.role)) {
-    return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+    return json({ error: "Forbidden" }, 403);
   }
 
   const { id } = await params;
   const existing = await prisma.shopCatalogProduct.findUnique({ where: { id } });
-  if (!existing) return NextResponse.json({ error: "Not found" }, { status: 404 });
+  if (!existing) return json({ error: "Not found" }, 404);
 
   await prisma.shopCatalogProduct.delete({ where: { id } });
-  return NextResponse.json({ ok: true });
+  return json({ ok: true });
 }
