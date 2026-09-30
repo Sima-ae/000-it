@@ -22,6 +22,7 @@ import {
 } from "@/lib/shop/catalog";
 import { loadShopCatalogFromDb } from "@/lib/shop/catalog-db";
 import { getRequestBrand } from "@/lib/brand/server";
+import { cn } from "@/lib/utils";
 
 export const dynamic = "force-dynamic";
 
@@ -104,23 +105,32 @@ export default async function ShopPage({
   ];
 
   return (
-    <div className="mx-auto max-w-6xl px-4 pb-14 pt-6 md:px-6 md:pb-20 md:pt-8">
+    <div
+      className={cn(
+        "mx-auto w-full max-w-6xl px-4 pt-6 md:px-6 md:pt-8",
+        hostingOnly
+          ? "flex flex-1 flex-col pb-8 md:pb-10"
+          : "pb-14 md:pb-20",
+      )}
+    >
       <h1 className="sr-only">{t("title")}</h1>
 
-      <Reveal>
-        <div className="mb-6 flex justify-center md:mb-8">
-          <div className="relative h-32 w-40 overflow-hidden sm:h-36 sm:w-48">
-            <Image
-              src={BRANDING_IMAGES.consultantLaptop}
-              alt=""
-              fill
-              unoptimized
-              sizes="192px"
-              className="object-contain object-bottom"
-            />
+      {!hostingOnly ? (
+        <Reveal>
+          <div className="mb-6 flex justify-center md:mb-8">
+            <div className="relative h-32 w-40 overflow-hidden sm:h-36 sm:w-48">
+              <Image
+                src={BRANDING_IMAGES.consultantLaptop}
+                alt=""
+                fill
+                unoptimized
+                sizes="192px"
+                className="object-contain object-bottom"
+              />
+            </div>
           </div>
-        </div>
-      </Reveal>
+        </Reveal>
+      ) : null}
 
       {!hostingOnly ? (
         <PricingPlans
@@ -143,11 +153,14 @@ export default async function ShopPage({
         />
       ) : null}
 
-      <p className="mx-auto mt-6 max-w-2xl text-center text-sm text-muted-foreground">
-        {t("subtitle")}
-      </p>
+      {!hostingOnly ? (
+        <p className="mx-auto mt-6 max-w-2xl text-center text-sm text-muted-foreground">
+          {t("subtitle")}
+        </p>
+      ) : null}
 
       <ShopHostingSection
+        className={hostingOnly ? "mt-2" : undefined}
         title={t("sharedHosting")}
         products={sharedHostingProducts}
       />
@@ -184,6 +197,12 @@ export default async function ShopPage({
             ))}
           </div>
         </section>
+      ) : null}
+
+      {hostingOnly ? (
+        <p className="mx-auto mt-auto max-w-2xl pt-16 text-center text-sm text-muted-foreground">
+          {t("subtitle")}
+        </p>
       ) : null}
     </div>
   );
