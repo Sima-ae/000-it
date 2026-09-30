@@ -200,6 +200,8 @@ export function resolveHostContext(
   const config = BRANDS[brand];
 
   if (country) {
+    // extrahosting.nl is Dutch at the root (`https://extrahosting.nl`).
+    // Other languages live on extrahosting.eu (`/en`, `/de`, …).
     return {
       host,
       brand,

@@ -1,4 +1,5 @@
 import { EXTRA_HOSTING_PUBLIC_NAME, replaceTripleZeroDeep } from "@/lib/brand/public-name";
+import { applyExtraHostingLocale } from "@/lib/brand/extra-hosting-locale-copy";
 import { BRANDS } from "@/lib/brand/config";
 
 function isPlainObject(value: unknown): value is Record<string, unknown> {
@@ -22,6 +23,11 @@ export function applyExtraHostingMessages<T>(
   const name = EXTRA_HOSTING_PUBLIC_NAME;
 
   out.brand = name;
+
+  if (locale !== "nl" && locale !== "en") {
+    applyExtraHostingLocale(out, locale, name);
+    return replaceTripleZeroDeep(out, { locale }) as T;
+  }
 
   const hero = asStringRecord(out.hero);
   if (isNl) {
@@ -261,5 +267,5 @@ export function applyExtraHostingMessages<T>(
   }
   out.about = about;
 
-  return replaceTripleZeroDeep(out) as T;
+  return replaceTripleZeroDeep(out, { locale }) as T;
 }

@@ -1304,14 +1304,22 @@ function reverseSegmentMap(locale: string): Record<string, string> {
  * Switch locale while remapping localized segments + hash.
  * `pathname` may be `/en/services/...` (with locale).
  */
+const localeSet = new Set<string>(LOCALES);
+
 export function switchLocalizedPath(
   pathname: string,
   nextLocale: string,
   hash = "",
+  currentLocaleHint?: string,
 ): string {
   const parts = pathname.split("/");
-  const currentLocale = parts[1] || "nl";
-  const rest = "/" + parts.slice(2).join("/");
+  const prefixed = Boolean(parts[1] && localeSet.has(parts[1]));
+  const currentLocale = prefixed
+    ? parts[1]
+    : currentLocaleHint && localeSet.has(currentLocaleHint)
+      ? currentLocaleHint
+      : "nl";
+  const rest = prefixed ? "/" + parts.slice(2).join("/") : pathname || "/";
   const internal = toInternalPath(currentLocale, rest === "/" ? "/" : rest.replace(/\/$/, "") || "/");
   const hashPart = hash
     ? hash.replace(/^#/, "")

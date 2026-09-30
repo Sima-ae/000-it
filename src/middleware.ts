@@ -119,8 +119,17 @@ function socialPreviewRewrite(request: NextRequest, pathname: string, defaultLoc
   return NextResponse.rewrite(previewUrl, { request: { headers } });
 }
 
-function withBrandHeaders(response: NextResponse, hostCtx: ResolvedHostContext) {
+function withBrandHeaders(
+  response: NextResponse,
+  hostCtx: ResolvedHostContext,
+  locale?: string,
+) {
   response.headers.set("x-site-brand", hostCtx.brand);
+  const siteLocale =
+    locale || hostCtx.fixedLocale || hostCtx.defaultLocale || "";
+  if (siteLocale) {
+    response.headers.set("x-site-locale", siteLocale);
+  }
   const override = response.headers.get("x-middleware-override-headers");
   if (override) {
     const keys = override
@@ -128,8 +137,12 @@ function withBrandHeaders(response: NextResponse, hostCtx: ResolvedHostContext) 
       .map((key) => key.trim())
       .filter(Boolean);
     if (!keys.includes("x-site-brand")) keys.push("x-site-brand");
+    if (siteLocale && !keys.includes("x-site-locale")) keys.push("x-site-locale");
     response.headers.set("x-middleware-override-headers", keys.join(","));
     response.headers.set("x-middleware-request-x-site-brand", hostCtx.brand);
+    if (siteLocale) {
+      response.headers.set("x-middleware-request-x-site-locale", siteLocale);
+    }
   }
   if (hostCtx.fixedLocale) {
     response.headers.set("x-fixed-locale", hostCtx.fixedLocale);
@@ -216,6 +229,7 @@ export default async function middleware(request: NextRequest) {
     return withBrandHeaders(
       withSecurityHeaders(NextResponse.next(), pathname, internalEarly),
       hostCtx,
+      localeEarly,
     );
   }
 
@@ -226,6 +240,22 @@ export default async function middleware(request: NextRequest) {
       `https://${apex}${pathname || "/"}${search}`,
       301,
     );
+  }
+
+  // Extra Hosting: Dutch lives on extrahosting.nl; every other language on extrahosting.eu.
+  if (hostCtx.brand === "extrahosting" && (host === "extrahosting.nl" || host === "extrahosting.eu")) {
+    const prefixed = pathname.match(localePathRe);
+    const localeInPath = prefixed?.[1];
+    if (host === "extrahosting.nl" && localeInPath && localeInPath !== "nl") {
+      return NextResponse.redirect(
+        `https://extrahosting.eu${pathname}${search}`,
+        301,
+      );
+    }
+    if (host === "extrahosting.eu" && localeInPath === "nl") {
+      const rest = pathname.replace(/^\/nl(?=\/|$)/, "") || "/";
+      return NextResponse.redirect(`https://extrahosting.nl${rest}${search}`, 301);
+    }
   }
 
   // ExtraHosting.eu: bare `/` always opens English (`/en`).
@@ -258,6 +288,7 @@ export default async function middleware(request: NextRequest) {
     localeMatch?.[1] ||
     hostCtx.defaultLocale ||
     routing.defaultLocale;
+  request.headers.set("x-site-locale", locale);
   const pathWithoutLocale =
     hostCtx.localePrefix === "never"
       ? pathname || "/"
@@ -369,6 +400,7 @@ export default async function middleware(request: NextRequest) {
   return withBrandHeaders(
     withSecurityHeaders(intlResponse, pathname, internalPath),
     hostCtx,
+    locale,
   );
 }
 

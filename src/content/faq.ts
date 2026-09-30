@@ -466,7 +466,9 @@ export function getFaqContent(
       : en;
 
   if (!opts?.hostingOnly) {
-    return isExtraHostingSurface() ? replaceTripleZeroDeep(base) : base;
+    return isExtraHostingSurface()
+      ? replaceTripleZeroDeep(base, { locale })
+      : base;
   }
 
   const isNl = locale === "nl";
@@ -519,11 +521,22 @@ export function getFaqContent(
 
   const hostingFaq = {
     ...base,
-    title: isNl ? "Veelgestelde vragen" : "Frequently asked questions",
-    subtitle: isNl
-      ? "Vragen en antwoorden over domeinnamen, DNS, e-mail, shared hosting, cloud hosting, WordPress hosting, VPS en support."
-      : "Questions and answers about domain names, DNS, email, shared hosting, cloud hosting, WordPress hosting, VPS and support.",
+    ...(isNl
+      ? {
+          title: "Veelgestelde vragen",
+          subtitle:
+            "Vragen en antwoorden over domeinnamen, DNS, e-mail, shared hosting, cloud hosting, WordPress hosting, VPS en support.",
+        }
+      : locale === "en"
+        ? {
+            title: "Frequently asked questions",
+            subtitle:
+              "Questions and answers about domain names, DNS, email, shared hosting, cloud hosting, WordPress hosting, VPS and support.",
+          }
+        : {}),
     categories,
   };
-  return isExtraHostingSurface() ? replaceTripleZeroDeep(hostingFaq) : hostingFaq;
+  return isExtraHostingSurface()
+    ? replaceTripleZeroDeep(hostingFaq, { locale })
+    : hostingFaq;
 }

@@ -1,3 +1,4 @@
+import "@/lib/brand/install-public-name";
 import importedPages from "@/content/fixweb/imported-pages.json";
 import privacyI18n from "@/content/legal/privacy-i18n.json";
 import termsI18n from "@/content/legal/terms-i18n.json";
@@ -101,17 +102,22 @@ function isVendorHeading(heading: string, nextHeading?: string) {
   return Boolean(nextHeading && /^(Usage|Gebruik)$/i.test(nextHeading.trim()));
 }
 
-function sectionBlocks(section: ImportedSection): ContentBlock[] {
+function sectionBlocks(
+  section: ImportedSection,
+  remap: { locale: string } = { locale: "en" },
+): ContentBlock[] {
   const blocks: ContentBlock[] = [];
-  const heading = brandify(section.heading || "").trim();
+  const heading = brandify(section.heading || "", remap).trim();
   if (heading) {
     blocks.push({ type: "heading", text: heading });
   }
 
   const paragraphs = (section.paragraphs || [])
-    .map((p) => brandify(p).replace(/\s*\(click to expand\)\s*/gi, "").trim())
+    .map((p) => brandify(p, remap).replace(/\s*\(click to expand\)\s*/gi, "").trim())
     .filter(Boolean);
-  const bullets = (section.bullets || []).map((b) => brandify(b).trim()).filter(Boolean);
+  const bullets = (section.bullets || [])
+    .map((b) => brandify(b, remap).trim())
+    .filter(Boolean);
 
   const dataIdx = paragraphs.findIndex((p) =>
     /^(For this purpose we use the following data|Voor dit doel gebruiken wij de volgende gegevens)/i.test(
@@ -177,7 +183,10 @@ function sectionBlocks(section: ImportedSection): ContentBlock[] {
   return blocks;
 }
 
-function parseCookieVendors(sections: ImportedSection[]): {
+function parseCookieVendors(
+  sections: ImportedSection[],
+  remap: { locale: string } = { locale: "en" },
+): {
   before: ContentBlock[];
   vendors: LegalCookieVendor[];
   after: ContentBlock[];
@@ -187,20 +196,22 @@ function parseCookieVendors(sections: ImportedSection[]): {
   );
   if (placedIdx < 0) {
     return {
-      before: sections.flatMap(sectionBlocks),
+      before: sections.flatMap((s) => sectionBlocks(s, remap)),
       vendors: [],
       after: [],
     };
   }
 
-  const before = sections.slice(0, placedIdx + 1).flatMap(sectionBlocks);
+  const before = sections.slice(0, placedIdx + 1).flatMap((s) => sectionBlocks(s, remap));
   const rest = sections.slice(placedIdx + 1);
 
   const afterIdx = rest.findIndex(
     (s) => /^\d+\.\s+/.test((s.heading || "").trim()) && !/^6\./.test(s.heading),
   );
   const vendorSections = afterIdx >= 0 ? rest.slice(0, afterIdx) : rest;
-  const after = (afterIdx >= 0 ? rest.slice(afterIdx) : []).flatMap(sectionBlocks);
+  const after = (afterIdx >= 0 ? rest.slice(afterIdx) : []).flatMap((s) =>
+    sectionBlocks(s, remap),
+  );
 
   const vendors: LegalCookieVendor[] = [];
 
@@ -211,8 +222,8 @@ function parseCookieVendors(sections: ImportedSection[]): {
     if (!isVendorHeading(heading, nextHeading)) continue;
 
     const vendor: LegalCookieVendor = {
-      name: brandify(heading),
-      category: brandify((section.paragraphs || [])[0] || ""),
+      name: brandify(heading, remap),
+      category: brandify((section.paragraphs || [])[0] || "", remap),
       usage: "",
       sharing: "",
       cookies: [],
@@ -244,16 +255,17 @@ function parseCookieVendors(sections: ImportedSection[]): {
       if (/^(Usage|Gebruik)$/i.test(h)) {
         vendor.usage = brandify(
           (cur.paragraphs || []).join(" ").replace(/\s*Read more\s*$/i, "").trim(),
+          remap,
         );
       } else if (/^(Sharing data|Gegevens delen)$/i.test(h)) {
-        vendor.sharing = brandify((cur.paragraphs || []).join(" ").trim());
+        vendor.sharing = brandify((cur.paragraphs || []).join(" ").trim(), remap);
       } else if (/^(Name|Naam)$/i.test(h)) {
         flush();
-        pending.name = brandify((cur.paragraphs || [])[0] || "").trim();
+        pending.name = brandify((cur.paragraphs || [])[0] || "", remap).trim();
       } else if (/^(Expiration|Verloop)$/i.test(h)) {
-        pending.expiration = brandify((cur.paragraphs || [])[0] || "").trim();
+        pending.expiration = brandify((cur.paragraphs || [])[0] || "", remap).trim();
       } else if (/^(Function|Functie)$/i.test(h)) {
-        pending.function = brandify((cur.paragraphs || [])[0] || "").trim();
+        pending.function = brandify((cur.paragraphs || [])[0] || "", remap).trim();
       }
 
       j += 1;
@@ -300,9 +312,10 @@ export function getLegalPage(slug: string, locale: string = "en"): LegalPageCont
   const loc = locale.toLowerCase();
   const sections = resolveSections(slug, loc);
   const meta = metaFor(loc);
+  const remap = { locale: loc };
 
   if (slug === "cookie-policy") {
-    const parsed = parseCookieVendors(sections);
+    const parsed = parseCookieVendors(sections, remap);
     return {
       slug,
       title: titleFor(slug, loc),
@@ -318,7 +331,7 @@ export function getLegalPage(slug: string, locale: string = "en"): LegalPageCont
     slug,
     title: titleFor(slug, loc),
     updatedLabel: meta.updatedLabel,
-    beforeVendors: sections.flatMap(sectionBlocks),
+    beforeVendors: sections.flatMap((s) => sectionBlocks(s, remap)),
     cookieVendors: [],
     afterVendors: [],
     related: relatedFor(slug, loc),

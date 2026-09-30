@@ -13,6 +13,7 @@ import {
   type SiteLanguage,
 } from "@/i18n/languages";
 import { switchLocalizedPath } from "@/i18n/pathnames";
+import { useBrandId } from "@/lib/brand/BrandProvider";
 import { cn } from "@/lib/utils";
 
 const CLOSE_DELAY_MS = 180;
@@ -67,11 +68,30 @@ function switcherEntries(languages: SiteLanguage[]): SwitcherEntry[] {
   return entries;
 }
 
+function extraHostingLanguageUrl(
+  nextLocale: string,
+  pathname: string,
+  hash: string,
+  currentLocale: string,
+  search: string,
+) {
+  const localized = switchLocalizedPath(pathname, nextLocale, hash, currentLocale);
+  const hashIdx = localized.indexOf("#");
+  const pathOnly = hashIdx === -1 ? localized : localized.slice(0, hashIdx);
+  const hashPart = hashIdx === -1 ? "" : localized.slice(hashIdx);
+  const origin =
+    nextLocale === "nl" ? "https://extrahosting.nl" : "https://extrahosting.eu";
+  const path =
+    nextLocale === "nl" ? pathOnly.replace(/^\/nl(?=\/|$)/, "") || "/" : pathOnly;
+  return `${origin}${path.startsWith("/") ? path : `/${path}`}${search}${hashPart}`;
+}
+
 export function LanguageSwitcher({ className }: { className?: string }) {
   const t = useTranslations("language");
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
+  const brandId = useBrandId();
   const [open, setOpen] = useState(false);
   const [indiaOpen, setIndiaOpen] = useState(false);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -115,7 +135,14 @@ export function LanguageSwitcher({ className }: { className?: string }) {
     setOpen(false);
     const hash =
       typeof window !== "undefined" ? window.location.hash.replace(/^#/, "") : "";
-    router.push(switchLocalizedPath(pathname, next.code, hash));
+    if (brandId === "extrahosting") {
+      const search = typeof window !== "undefined" ? window.location.search : "";
+      window.location.assign(
+        extraHostingLanguageUrl(next.code, pathname, hash, locale, search),
+      );
+      return;
+    }
+    router.push(switchLocalizedPath(pathname, next.code, hash, locale));
   }
 
   return (

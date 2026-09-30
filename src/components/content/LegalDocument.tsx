@@ -1,6 +1,9 @@
 import { getTranslations } from "next-intl/server";
-import { getRequestBrand } from "@/lib/brand/server";
-import { EXTRA_HOSTING_PUBLIC_NAME } from "@/lib/brand/public-name";
+import { getRequestBrand, getRequestBrandContext } from "@/lib/brand/server";
+import {
+  EXTRA_HOSTING_PUBLIC_NAME,
+  getExtraHostingPublicDomain,
+} from "@/lib/brand/public-name";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { ContentBlocks } from "@/components/content/ContentBlocks";
 import type { ContentBlock } from "@/lib/fixweb-content";
@@ -53,10 +56,16 @@ export async function LegalDocument({
 }) {
   const t = await getTranslations({ locale, namespace: "legal" });
   const brand = await getRequestBrand();
-  const mail =
+  const brandCtx = await getRequestBrandContext();
+  const mailDomain =
+    brand.id === "extrahosting"
+      ? getExtraHostingPublicDomain(brandCtx.host, locale)
+      : "000-it.com";
+  const mailLocal =
     page.slug === "privacy-policy" || page.slug === "cookie-policy"
-      ? "privacy@000-it.com"
-      : "info@000-it.com";
+      ? "privacy"
+      : "info";
+  const mail = `${mailLocal}@${mailDomain}`;
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 md:px-6 md:py-10">

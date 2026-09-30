@@ -1180,7 +1180,9 @@ export function getPageI18n(
     }
   }
   if (!result) return null;
-  return isExtraHostingSurface() ? replaceTripleZeroDeep(result) : result;
+  return isExtraHostingSurface()
+    ? replaceTripleZeroDeep(result, { locale })
+    : result;
 }
 
 function normalizePageBlocks(blocks: PageBlock[]): PageBlock[] {

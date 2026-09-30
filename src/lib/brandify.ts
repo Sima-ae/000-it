@@ -1,7 +1,7 @@
-import { renameTripleZeroName } from "@/lib/brand/public-name";
+import { renameTripleZeroName, type ExtraHostingRemapOpts } from "@/lib/brand/public-name";
 
 /** Strip legacy / competitor agency branding from imported content. Client-safe. */
-export function brandify(text: string) {
+export function brandify(text: string, opts?: ExtraHostingRemapOpts) {
   if (typeof text !== "string") return "";
   return renameTripleZeroName(
     text
@@ -37,5 +37,6 @@ export function brandify(text: string) {
     .replace(/\bYour Hosting\b/gi, "TripleZero iT")
     .replace(/\bVevida\b/gi, "TripleZero iT")
     .replace(/\bArgeweb\b/gi, "TripleZero iT"),
+    opts,
   );
 }

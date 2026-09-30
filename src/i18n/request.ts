@@ -104,7 +104,16 @@ function replaceDutchAmpersands<T>(value: T): T {
 export default getRequestConfig(async ({ requestLocale }) => {
   let locale = await requestLocale;
   if (!locale || !routing.locales.includes(locale as (typeof routing.locales)[number])) {
-    locale = routing.defaultLocale;
+    if (readRequestSiteBrand() === "extrahosting") {
+      const host = (
+        (globalThis as { __siteExtraHostingHost?: () => string }).__siteExtraHostingHost?.() ||
+        ""
+      ).toLowerCase();
+      locale =
+        host === "extrahosting.nl" || host.endsWith(".extrahosting.nl") ? "nl" : "en";
+    } else {
+      locale = routing.defaultLocale;
+    }
   }
 
   const fileMessages = (await import(`../../messages/${locale}.json`)).default as Record<

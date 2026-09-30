@@ -742,5 +742,7 @@ export function getProductI18n(slug: string, locale: string): ProductI18n | null
     }
   }
   if (!result) return null;
-  return isExtraHostingSurface() ? replaceTripleZeroDeep(result) : result;
+  return isExtraHostingSurface()
+    ? replaceTripleZeroDeep(result, { locale })
+    : result;
 }
