@@ -994,7 +994,7 @@
             "No credit card required",
             "2 CPU cores",
             "2 GB RAM",
-            "40 GB SSD RAID 10",
+            "40 GB NVMe-schijfruimte",
             "1000 GB bandwidth",
             "€\r\n 76.23\r\n /year"
           ],
@@ -1005,7 +1005,7 @@
           "paragraphs": [
             "2 CPU cores",
             "2 GB RAM",
-            "40 GB SSD RAID 10",
+            "40 GB NVMe-schijfruimte",
             "1000 GB bandwidth"
           ],
           "bullets": []
@@ -1019,7 +1019,7 @@
             "No credit card required",
             "4 CPU cores",
             "6 GB RAM",
-            "120 GB SSD RAID 10",
+            "120 GB NVMe-schijfruimte",
             "3000 GB bandwidth",
             "€\r\n 143.37\r\n /year"
           ],
@@ -1030,7 +1030,7 @@
           "paragraphs": [
             "4 CPU cores",
             "6 GB RAM",
-            "120 GB SSD RAID 10",
+            "120 GB NVMe-schijfruimte",
             "3000 GB bandwidth"
           ],
           "bullets": []
@@ -1044,7 +1044,7 @@
             "No credit card required",
             "8 CPU cores",
             "12 GB RAM",
-            "240 GB SSD RAID 10",
+            "240 GB NVMe-schijfruimte",
             "6000 GB bandwidth",
             "€\r\n 275.63\r\n /year"
           ],
@@ -1055,7 +1055,7 @@
           "paragraphs": [
             "8 CPU cores",
             "12 GB RAM",
-            "240 GB SSD RAID 10",
+            "240 GB NVMe-schijfruimte",
             "6000 GB bandwidth"
           ],
           "bullets": []
@@ -1076,7 +1076,7 @@
           "bullets": []
         }
       ],
-      "rawText": "VPS Hosting\n\nMonthly\r\n \r\n \r\n \r\n \r\n \r\n \r\n \r\n\r\n Yearly\n\nSave up to 30% with yearly payment on 1st year!\n\nBasic\n\n€\r\n 9.12\r\n /month\n\nRenews at € 109,44 per year.\n\nOrder Now\n\nNo credit card required\n\n2 CPU cores\n\n2 GB RAM\n\n40 GB SSD RAID 10\n\n1000 GB bandwidth\n\n€\r\n 76.23\r\n /year\n\nSave 30 %\n\n2 CPU cores\n\n2 GB RAM\n\n40 GB SSD RAID 10\n\n1000 GB bandwidth\n\nPlus\n\n€\r\n 14.66\r\n /month\n\nRenews at € 175,92 per year.\n\nOrder Now\n\nNo credit card required\n\n4 CPU cores\n\n6 GB RAM\n\n120 GB SSD RAID 10\n\n3000 GB bandwidth\n\n€\r\n 143.37\r\n /year\n\nSave 19 %\n\n4 CPU cores\n\n6 GB RAM\n\n120 GB SSD RAID 10\n\n3000 GB bandwidth\n\nBusiness\n\n€\r\n 26.65\r\n /month\n\nRenews at € 319,80 per year.\n\nOrder Now\n\nNo credit card required\n\n8 CPU cores\n\n12 GB RAM\n\n240 GB SSD RAID 10\n\n6000 GB bandwidth\n\n€\r\n 275.63\r\n /year\n\nSave 14 %\n\n8 CPU cores\n\n12 GB RAM\n\n240 GB SSD RAID 10\n\n6000 GB bandwidth\n\nPay less for your hosting and get the most\n\nGet more security and control with your hosting plan, all for a price that works.\n\n✓ Free to transfer existing websites and VPS, unlike many competitors\n✓ Full root access and Operating System (OS) selection\n✓ Your choice of server management\n✓ Top security standards\n✓ 30-day money-back guarantee\n✓ Total flexibility\n✓ Complete control!\n\nDomain Registration\n\nFind a domain starting at € 0,91"
+      "rawText": "VPS Hosting\n\nMonthly\r\n \r\n \r\n \r\n \r\n \r\n \r\n \r\n\r\n Yearly\n\nSave up to 30% with yearly payment on 1st year!\n\nBasic\n\n€\r\n 9.12\r\n /month\n\nRenews at € 109,44 per year.\n\nOrder Now\n\nNo credit card required\n\n2 CPU cores\n\n2 GB RAM\n\n40 GB NVMe-schijfruimte\n\n1000 GB bandwidth\n\n€\r\n 76.23\r\n /year\n\nSave 30 %\n\n2 CPU cores\n\n2 GB RAM\n\n40 GB NVMe-schijfruimte\n\n1000 GB bandwidth\n\nPlus\n\n€\r\n 14.66\r\n /month\n\nRenews at € 175,92 per year.\n\nOrder Now\n\nNo credit card required\n\n4 CPU cores\n\n6 GB RAM\n\n120 GB NVMe-schijfruimte\n\n3000 GB bandwidth\n\n€\r\n 143.37\r\n /year\n\nSave 19 %\n\n4 CPU cores\n\n6 GB RAM\n\n120 GB NVMe-schijfruimte\n\n3000 GB bandwidth\n\nBusiness\n\n€\r\n 26.65\r\n /month\n\nRenews at € 319,80 per year.\n\nOrder Now\n\nNo credit card required\n\n8 CPU cores\n\n12 GB RAM\n\n240 GB NVMe-schijfruimte\n\n6000 GB bandwidth\n\n€\r\n 275.63\r\n /year\n\nSave 14 %\n\n8 CPU cores\n\n12 GB RAM\n\n240 GB NVMe-schijfruimte\n\n6000 GB bandwidth\n\nPay less for your hosting and get the most\n\nGet more security and control with your hosting plan, all for a price that works.\n\n✓ Free to transfer existing websites and VPS, unlike many competitors\n✓ Full root access and Operating System (OS) selection\n✓ Your choice of server management\n✓ Top security standards\n✓ 30-day money-back guarantee\n✓ Total flexibility\n✓ Complete control!\n\nDomain Registration\n\nFind a domain starting at € 0,91"
     },
     "privacy-policy": {
       "title": "Privacy Policy",

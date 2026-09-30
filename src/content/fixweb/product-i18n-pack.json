@@ -37,18 +37,18 @@
     },
     "vps-hosting-basic": {
       "name": "VPS Hosting Basic",
-      "shortDescription": "– 2 CPU cores\n– 2 GB RAM\n– 40 GB SSD RAID 10\n– 1000 GB bandwidth",
-      "description": "VPS Hosting Basic is suited to developers, small applications and websites that need more control and predictable resources than shared hosting provides.\n\nWith 2 CPU cores, 2 GB RAM, 40 GB SSD RAID 10 storage and 1000 GB bandwidth, you get a solid virtual server for light to moderate workloads.\n\nTripleZero iT gives you a dependable infrastructure foundation, so you can focus on your application, website or development environment. Scale up when demand grows."
+      "shortDescription": "– 2 CPU cores\n– 2 GB RAM\n– 40 GB NVMe-schijfruimte\n– 1000 GB bandwidth",
+      "description": "VPS Hosting Basic is suited to developers, small applications and websites that need more control and predictable resources than shared hosting provides.\n\nWith 2 CPU cores, 2 GB RAM, 40 GB NVMe-schijfruimte and 1000 GB bandwidth, you get a solid virtual server for light to moderate workloads.\n\nTripleZero iT gives you a dependable infrastructure foundation, so you can focus on your application, website or development environment. Scale up when demand grows."
     },
     "vps-hosting-plus": {
       "name": "VPS Hosting Plus",
-      "shortDescription": "– 8 CPU cores\n– 12 GB RAM\n– 240 GB SSD RAID 10\n– 6000 GB bandwidth",
-      "description": "VPS Hosting Plus is designed for business-critical websites, demanding applications and organisations that expect ample capacity and stable performance.\n\nWith 8 CPU cores, 12 GB RAM, 240 GB SSD RAID 10 storage and 6000 GB bandwidth, this plan provides a powerful base for intensive workloads, multiple environments and higher visitor volumes.\n\nTripleZero iT helps you build dependable infrastructure that moves with your ambitions. You retain control of your VPS, with an experienced team available for support."
+      "shortDescription": "– 8 CPU cores\n– 12 GB RAM\n– 240 GB NVMe-schijfruimte\n– 6000 GB bandwidth",
+      "description": "VPS Hosting Plus is designed for business-critical websites, demanding applications and organisations that expect ample capacity and stable performance.\n\nWith 8 CPU cores, 12 GB RAM, 240 GB NVMe-schijfruimte and 6000 GB bandwidth, this plan provides a powerful base for intensive workloads, multiple environments and higher visitor volumes.\n\nTripleZero iT helps you build dependable infrastructure that moves with your ambitions. You retain control of your VPS, with an experienced team available for support."
     },
     "vps-hosting-business": {
       "name": "VPS Hosting Business",
-      "shortDescription": "– 4 CPU cores\n– 6 GB RAM\n– 120 GB SSD RAID 10\n– 3000 GB bandwidth",
-      "description": "VPS Hosting Business is for growing web projects, business applications and development teams that need additional capacity and consistent performance.\n\nThe server combines 4 CPU cores and 6 GB RAM with 120 GB SSD RAID 10 storage and 3000 GB bandwidth. This leaves room for heavier workloads, multiple services or increasing traffic.\n\nTripleZero iT delivers a dependable VPS foundation that you can configure around your needs. Gain the flexibility of a virtual server with a professional partner close by."
+      "shortDescription": "– 4 CPU cores\n– 6 GB RAM\n– 120 GB NVMe-schijfruimte\n– 3000 GB bandwidth",
+      "description": "VPS Hosting Business is for growing web projects, business applications and development teams that need additional capacity and consistent performance.\n\nThe server combines 4 CPU cores and 6 GB RAM with 120 GB NVMe-schijfruimte and 3000 GB bandwidth. This leaves room for heavier workloads, multiple services or increasing traffic.\n\nTripleZero iT delivers a dependable VPS foundation that you can configure around your needs. Gain the flexibility of a virtual server with a professional partner close by."
     },
     "wordpress-hosting-basic": {
       "name": "WordPress Hosting Basic",
@@ -134,18 +134,18 @@
     },
     "vps-hosting-basic": {
       "name": "VPS Hosting Basic",
-      "shortDescription": "– 2 CPU-cores\n– 2 GB RAM\n– 40 GB SSD RAID 10\n– 1000 GB bandbreedte",
-      "description": "VPS Hosting Basic is geschikt voor ontwikkelaars, kleine applicaties en websites die meer controle en voorspelbare resources nodig hebben dan shared hosting biedt.\n\nMet 2 CPU-cores, 2 GB RAM, 40 GB SSD RAID 10-opslag en 1000 GB bandbreedte krijg je een solide virtuele server voor lichte tot gemiddelde workloads.\n\nTripleZero iT helpt je met een betrouwbare infrastructuurbasis, zodat je kunt focussen op jouw applicatie, website of ontwikkelomgeving. Je schaalt door wanneer jouw vraag toeneemt."
+      "shortDescription": "– 2 CPU-cores\n– 2 GB RAM\n– 40 GB NVMe-schijfruimte\n– 1000 GB bandbreedte",
+      "description": "VPS Hosting Basic is geschikt voor ontwikkelaars, kleine applicaties en websites die meer controle en voorspelbare resources nodig hebben dan shared hosting biedt.\n\nMet 2 CPU-cores, 2 GB RAM, 40 GB NVMe-schijfruimte en 1000 GB bandbreedte krijg je een solide virtuele server voor lichte tot gemiddelde workloads.\n\nTripleZero iT helpt je met een betrouwbare infrastructuurbasis, zodat je kunt focussen op jouw applicatie, website of ontwikkelomgeving. Je schaalt door wanneer jouw vraag toeneemt."
     },
     "vps-hosting-plus": {
       "name": "VPS Hosting Plus",
-      "shortDescription": "– 8 CPU-cores\n– 12 GB RAM\n– 240 GB SSD RAID 10\n– 6000 GB bandbreedte",
-      "description": "VPS Hosting Plus is ontworpen voor bedrijfskritische websites, veeleisende applicaties en organisaties die ruime capaciteit en stabiele prestaties verwachten.\n\nMet 8 CPU-cores, 12 GB RAM, 240 GB SSD RAID 10-opslag en 6000 GB bandbreedte biedt dit pakket een krachtige basis voor intensieve workloads, meerdere omgevingen en hogere bezoekersaantallen.\n\nTripleZero iT helpt je een betrouwbare infrastructuur neer te zetten die met jouw ambities meebeweegt. Je houdt de controle over jouw VPS, met een deskundige partij bereikbaar voor ondersteuning."
+      "shortDescription": "– 8 CPU-cores\n– 12 GB RAM\n– 240 GB NVMe-schijfruimte\n– 6000 GB bandbreedte",
+      "description": "VPS Hosting Plus is ontworpen voor bedrijfskritische websites, veeleisende applicaties en organisaties die ruime capaciteit en stabiele prestaties verwachten.\n\nMet 8 CPU-cores, 12 GB RAM, 240 GB NVMe-schijfruimte en 6000 GB bandbreedte biedt dit pakket een krachtige basis voor intensieve workloads, meerdere omgevingen en hogere bezoekersaantallen.\n\nTripleZero iT helpt je een betrouwbare infrastructuur neer te zetten die met jouw ambities meebeweegt. Je houdt de controle over jouw VPS, met een deskundige partij bereikbaar voor ondersteuning."
     },
     "vps-hosting-business": {
       "name": "VPS Hosting Business",
-      "shortDescription": "– 4 CPU-cores\n– 6 GB RAM\n– 120 GB SSD RAID 10\n– 3000 GB bandbreedte",
-      "description": "VPS Hosting Business is voor groeiende webprojecten, zakelijke applicaties en ontwikkelteams die extra capaciteit en consistente prestaties nodig hebben.\n\nDe server combineert 4 CPU-cores en 6 GB RAM met 120 GB SSD RAID 10-opslag en 3000 GB bandbreedte. Daarmee is er ruimte voor zwaardere workloads, meerdere services of toenemend verkeer.\n\nTripleZero iT levert een betrouwbare VPS-basis waarop je jouw omgeving naar eigen behoefte kunt inrichten. Zo krijg je de flexibiliteit van een virtuele server met een professionele partner dichtbij."
+      "shortDescription": "– 4 CPU-cores\n– 6 GB RAM\n– 120 GB NVMe-schijfruimte\n– 3000 GB bandbreedte",
+      "description": "VPS Hosting Business is voor groeiende webprojecten, zakelijke applicaties en ontwikkelteams die extra capaciteit en consistente prestaties nodig hebben.\n\nDe server combineert 4 CPU-cores en 6 GB RAM met 120 GB NVMe-schijfruimte en 3000 GB bandbreedte. Daarmee is er ruimte voor zwaardere workloads, meerdere services of toenemend verkeer.\n\nTripleZero iT levert een betrouwbare VPS-basis waarop je jouw omgeving naar eigen behoefte kunt inrichten. Zo krijg je de flexibiliteit van een virtuele server met een professionele partner dichtbij."
     },
     "wordpress-hosting-basic": {
       "name": "WordPress Hosting Basic",
@@ -231,18 +231,18 @@
     },
     "vps-hosting-basic": {
       "name": "Hébergement VPS de base",
-      "shortDescription": "– 2 cœurs de processeur\n– 2 Go de RAM\n– 40 Go SSD RAID 10\n– 1000 Go de bande passante",
-      "description": "VPS Hosting Basic convient aux développeurs, aux petites applications et aux sites Web qui ont besoin de plus de contrôle et de ressources prévisibles que ce que propose l'hébergement partagé.\n\nAvec 2 cœurs de processeur, 2 Go de RAM, 40 Go de stockage SSD RAID 10 et 1 000 Go de bande passante, vous obtenez un serveur virtuel solide pour les charges de travail légères à modérées.\n\nTripleZero iT vous offre une base d'infrastructure fiable, afin que vous puissiez vous concentrer sur votre application, votre site Web ou votre environnement de développement. Augmentez votre capacité lorsque la demande augmente."
+      "shortDescription": "– 2 cœurs de processeur\n– 2 Go de RAM\n– 40 Go NVMe-schijfruimte\n– 1000 Go de bande passante",
+      "description": "VPS Hosting Basic convient aux développeurs, aux petites applications et aux sites Web qui ont besoin de plus de contrôle et de ressources prévisibles que ce que propose l'hébergement partagé.\n\nAvec 2 cœurs de processeur, 2 Go de RAM, 40 Go de NVMe-schijfruimte et 1 000 Go de bande passante, vous obtenez un serveur virtuel solide pour les charges de travail légères à modérées.\n\nTripleZero iT vous offre une base d'infrastructure fiable, afin que vous puissiez vous concentrer sur votre application, votre site Web ou votre environnement de développement. Augmentez votre capacité lorsque la demande augmente."
     },
     "vps-hosting-plus": {
       "name": "Hébergement VPS Plus",
-      "shortDescription": "– 8 cœurs de processeur\n– 12 Go de RAM\n– 240 Go SSD RAID 10\n– 6000 Go de bande passante",
-      "description": "VPS Hosting Plus est conçu pour les sites Web critiques, les applications exigeantes et les organisations qui attendent une capacité importante et des performances stables.\n\nAvec 8 cœurs de processeur, 12 Go de RAM, 240 Go de stockage SSD RAID 10 et 6 000 Go de bande passante, ce plan fournit une base puissante pour les charges de travail intensives, les environnements multiples et les volumes de visiteurs plus élevés.\n\nTripleZero iT vous aide à créer une infrastructure fiable qui évolue avec vos ambitions. Vous gardez le contrôle de votre VPS, avec une équipe expérimentée disponible pour vous accompagner."
+      "shortDescription": "– 8 cœurs de processeur\n– 12 Go de RAM\n– 240 Go NVMe-schijfruimte\n– 6000 Go de bande passante",
+      "description": "VPS Hosting Plus est conçu pour les sites Web critiques, les applications exigeantes et les organisations qui attendent une capacité importante et des performances stables.\n\nAvec 8 cœurs de processeur, 12 Go de RAM, 240 Go de NVMe-schijfruimte et 6 000 Go de bande passante, ce plan fournit une base puissante pour les charges de travail intensives, les environnements multiples et les volumes de visiteurs plus élevés.\n\nTripleZero iT vous aide à créer une infrastructure fiable qui évolue avec vos ambitions. Vous gardez le contrôle de votre VPS, avec une équipe expérimentée disponible pour vous accompagner."
     },
     "vps-hosting-business": {
       "name": "Entreprise d'hébergement VPS",
-      "shortDescription": "– 4 cœurs de processeur\n– 6 Go de RAM\n– 120 Go SSD RAID 10\n– 3000 Go de bande passante",
-      "description": "VPS Hosting Business est destiné aux projets Web en pleine croissance, aux applications professionnelles et aux équipes de développement qui ont besoin d'une capacité supplémentaire et de performances constantes.\n\nLe serveur combine 4 cœurs de processeur et 6 Go de RAM avec 120 Go de stockage SSD RAID 10 et 3 000 Go de bande passante. Cela laisse place à des charges de travail plus lourdes, à des services multiples ou à une augmentation du trafic.\n\nTripleZero iT offre une base VPS fiable que vous pouvez configurer en fonction de vos besoins. Bénéficiez de la flexibilité d'un serveur virtuel avec un partenaire professionnel à proximité."
+      "shortDescription": "– 4 cœurs de processeur\n– 6 Go de RAM\n– 120 Go NVMe-schijfruimte\n– 3000 Go de bande passante",
+      "description": "VPS Hosting Business est destiné aux projets Web en pleine croissance, aux applications professionnelles et aux équipes de développement qui ont besoin d'une capacité supplémentaire et de performances constantes.\n\nLe serveur combine 4 cœurs de processeur et 6 Go de RAM avec 120 Go de NVMe-schijfruimte et 3 000 Go de bande passante. Cela laisse place à des charges de travail plus lourdes, à des services multiples ou à une augmentation du trafic.\n\nTripleZero iT offre une base VPS fiable que vous pouvez configurer en fonction de vos besoins. Bénéficiez de la flexibilité d'un serveur virtuel avec un partenaire professionnel à proximité."
     },
     "wordpress-hosting-basic": {
       "name": "Hébergement WordPress de base",
@@ -328,18 +328,18 @@
     },
     "vps-hosting-basic": {
       "name": "VPS-Hosting Basic",
-      "shortDescription": "– 2 CPU-Kerne\n– 2 GB RAM\n– 40 GB SSD RAID 10\n– 1000 GB Bandbreite",
-      "description": "VPS Hosting Basic eignet sich für Entwickler, kleine Anwendungen und Websites, die mehr Kontrolle und vorhersehbare Ressourcen benötigen, als Shared Hosting bietet.\n\nMit 2 CPU-Kernen, 2 GB RAM, 40 GB SSD RAID 10-Speicher und 1000 GB Bandbreite erhalten Sie einen soliden virtuellen Server für leichte bis mittlere Arbeitslasten.\n\nTripleZero iT bietet Ihnen eine zuverlässige Infrastrukturgrundlage, sodass Sie sich auf Ihre Anwendung, Website oder Entwicklungsumgebung konzentrieren können. Skalieren Sie, wenn die Nachfrage steigt."
+      "shortDescription": "– 2 CPU-Kerne\n– 2 GB RAM\n– 40 GB NVMe-schijfruimte\n– 1000 GB Bandbreite",
+      "description": "VPS Hosting Basic eignet sich für Entwickler, kleine Anwendungen und Websites, die mehr Kontrolle und vorhersehbare Ressourcen benötigen, als Shared Hosting bietet.\n\nMit 2 CPU-Kernen, 2 GB RAM, 40 GB NVMe-schijfruimte und 1000 GB Bandbreite erhalten Sie einen soliden virtuellen Server für leichte bis mittlere Arbeitslasten.\n\nTripleZero iT bietet Ihnen eine zuverlässige Infrastrukturgrundlage, sodass Sie sich auf Ihre Anwendung, Website oder Entwicklungsumgebung konzentrieren können. Skalieren Sie, wenn die Nachfrage steigt."
     },
     "vps-hosting-plus": {
       "name": "VPS HOSTING",
-      "shortDescription": "– 8 CPU-Kerne\n– 12 GB RAM\n– 240 GB SSD RAID 10\n– 6000 GB Bandbreite",
+      "shortDescription": "– 8 CPU-Kerne\n– 12 GB RAM\n– 240 GB NVMe-schijfruimte\n– 6000 GB Bandbreite",
       "description": "VPS Hosting Plus ist für geschäftskritische Websites, anspruchsvolle Anwendungen und Organisationen konzipiert, die ausreichend Kapazität und stabile Leistung erwarten.\n\nMit 8 CPU-Kernen, 12 GB RAM, 240 GB SSD-RAID-10-Speicher und 6000 GB Bandbreite bietet dieser Plan eine leistungsstarke Basis für intensive Arbeitslasten, mehrere Umgebungen und ein höheres Besucheraufkommen.\n\nTripleZero iT hilft Ihnen beim Aufbau einer zuverlässigen Infrastruktur, die Ihren Ambitionen folgt. Sie behalten die Kontrolle über Ihren VPS und ein erfahrenes Team steht Ihnen zur Unterstützung zur Verfügung."
     },
     "vps-hosting-business": {
       "name": "VPS-Hosting-Geschäft",
-      "shortDescription": "– 4 CPU-Kerne\n– 6 GB RAM\n– 120 GB SSD RAID 10\n– 3000 GB Bandbreite",
-      "description": "VPS Hosting Business ist für wachsende Webprojekte, Geschäftsanwendungen und Entwicklungsteams gedacht, die zusätzliche Kapazität und konsistente Leistung benötigen.\n\nDer Server kombiniert 4 CPU-Kerne und 6 GB RAM mit 120 GB SSD RAID 10-Speicher und 3000 GB Bandbreite. Dadurch bleibt Spielraum für höhere Arbeitslasten, mehrere Dienste oder zunehmenden Datenverkehr.\n\nTripleZero iT bietet eine zuverlässige VPS-Grundlage, die Sie entsprechend Ihren Anforderungen konfigurieren können. Profitieren Sie von der Flexibilität eines virtuellen Servers mit einem professionellen Partner in Ihrer Nähe."
+      "shortDescription": "– 4 CPU-Kerne\n– 6 GB RAM\n– 120 GB NVMe-schijfruimte\n– 3000 GB Bandbreite",
+      "description": "VPS Hosting Business ist für wachsende Webprojekte, Geschäftsanwendungen und Entwicklungsteams gedacht, die zusätzliche Kapazität und konsistente Leistung benötigen.\n\nDer Server kombiniert 4 CPU-Kerne und 6 GB RAM mit 120 GB NVMe-schijfruimte und 3000 GB Bandbreite. Dadurch bleibt Spielraum für höhere Arbeitslasten, mehrere Dienste oder zunehmenden Datenverkehr.\n\nTripleZero iT bietet eine zuverlässige VPS-Grundlage, die Sie entsprechend Ihren Anforderungen konfigurieren können. Profitieren Sie von der Flexibilität eines virtuellen Servers mit einem professionellen Partner in Ihrer Nähe."
     },
     "wordpress-hosting-basic": {
       "name": "WordPress-Hosting Basic",
@@ -425,18 +425,18 @@
     },
     "vps-hosting-basic": {
       "name": "Alojamiento VPS Básico",
-      "shortDescription": "– 2 núcleos de CPU\n– 2 GB de RAM\n– SSD RAID 10 de 40 GB\n– 1000 GB de ancho de banda",
-      "description": "VPS Hosting Basic es adecuado para desarrolladores, pequeñas aplicaciones y sitios web que necesitan más control y recursos predecibles que los que proporciona el hosting compartido.\n\nCon 2 núcleos de CPU, 2 GB de RAM, 40 GB de almacenamiento SSD RAID 10 y 1000 GB de ancho de banda, obtienes un servidor virtual sólido para cargas de trabajo ligeras a moderadas.\n\nTripleZero iT le brinda una base de infraestructura confiable, para que pueda concentrarse en su aplicación, sitio web o entorno de desarrollo. Aumente la escala cuando crezca la demanda."
+      "shortDescription": "– 2 núcleos de CPU\n– 2 GB de RAM\n– NVMe-schijfruimte de 40 GB\n– 1000 GB de ancho de banda",
+      "description": "VPS Hosting Basic es adecuado para desarrolladores, pequeñas aplicaciones y sitios web que necesitan más control y recursos predecibles que los que proporciona el hosting compartido.\n\nCon 2 núcleos de CPU, 2 GB de RAM, 40 GB de NVMe-schijfruimte y 1000 GB de ancho de banda, obtienes un servidor virtual sólido para cargas de trabajo ligeras a moderadas.\n\nTripleZero iT le brinda una base de infraestructura confiable, para que pueda concentrarse en su aplicación, sitio web o entorno de desarrollo. Aumente la escala cuando crezca la demanda."
     },
     "vps-hosting-plus": {
       "name": "hosting vps",
-      "shortDescription": "– 8 núcleos de CPU\n– 12 GB de RAM\n– SSD RAID 10 de 240 GB\n– 6000 GB de ancho de banda",
-      "description": "VPS Hosting Plus está diseñado para sitios web críticos para el negocio, aplicaciones exigentes y organizaciones que esperan amplia capacidad y rendimiento estable.\n\nCon 8 núcleos de CPU, 12 GB de RAM, 240 GB de almacenamiento SSD RAID 10 y 6000 GB de ancho de banda, este plan proporciona una base poderosa para cargas de trabajo intensivas, múltiples entornos y mayores volúmenes de visitantes.\n\nTripleZero iT lo ayuda a construir una infraestructura confiable que se adapta a sus ambiciones. Usted conserva el control de su VPS, con un equipo experimentado disponible para brindarle soporte."
+      "shortDescription": "– 8 núcleos de CPU\n– 12 GB de RAM\n– NVMe-schijfruimte de 240 GB\n– 6000 GB de ancho de banda",
+      "description": "VPS Hosting Plus está diseñado para sitios web críticos para el negocio, aplicaciones exigentes y organizaciones que esperan amplia capacidad y rendimiento estable.\n\nCon 8 núcleos de CPU, 12 GB de RAM, 240 GB de NVMe-schijfruimte y 6000 GB de ancho de banda, este plan proporciona una base poderosa para cargas de trabajo intensivas, múltiples entornos y mayores volúmenes de visitantes.\n\nTripleZero iT lo ayuda a construir una infraestructura confiable que se adapta a sus ambiciones. Usted conserva el control de su VPS, con un equipo experimentado disponible para brindarle soporte."
     },
     "vps-hosting-business": {
       "name": "Negocio de alojamiento VPS",
-      "shortDescription": "– 4 núcleos de CPU\n– 6 GB de RAM\n– SSD RAID 10 de 120 GB\n– 3000 GB de ancho de banda",
-      "description": "VPS Hosting Business es para proyectos web en crecimiento, aplicaciones comerciales y equipos de desarrollo que necesitan capacidad adicional y rendimiento constante.\n\nEl servidor combina 4 núcleos de CPU y 6 GB de RAM con 120 GB de almacenamiento SSD RAID 10 y 3000 GB de ancho de banda. Esto deja espacio para cargas de trabajo más pesadas, servicios múltiples o un tráfico cada vez mayor.\n\nTripleZero iT ofrece una base VPS confiable que puede configurar según sus necesidades. Obtenga la flexibilidad de un servidor virtual con un socio profesional cercano."
+      "shortDescription": "– 4 núcleos de CPU\n– 6 GB de RAM\n– NVMe-schijfruimte de 120 GB\n– 3000 GB de ancho de banda",
+      "description": "VPS Hosting Business es para proyectos web en crecimiento, aplicaciones comerciales y equipos de desarrollo que necesitan capacidad adicional y rendimiento constante.\n\nEl servidor combina 4 núcleos de CPU y 6 GB de RAM con 120 GB de NVMe-schijfruimte y 3000 GB de ancho de banda. Esto deja espacio para cargas de trabajo más pesadas, servicios múltiples o un tráfico cada vez mayor.\n\nTripleZero iT ofrece una base VPS confiable que puede configurar según sus necesidades. Obtenga la flexibilidad de un servidor virtual con un socio profesional cercano."
     },
     "wordpress-hosting-basic": {
       "name": "Alojamiento WordPress Básico",
@@ -522,18 +522,18 @@
     },
     "vps-hosting-basic": {
       "name": "Hospedagem VPS Básica",
-      "shortDescription": "– 2 núcleos de CPU\n– 2 GB de RAM\n– SSD RAID 10 de 40GB\n– Largura de banda de 1000 GB",
-      "description": "O VPS Hosting Basic é adequado para desenvolvedores, pequenos aplicativos e sites que precisam de mais controle e recursos previsíveis do que a hospedagem compartilhada oferece.\n\nCom 2 núcleos de CPU, 2 GB de RAM, 40 GB de armazenamento SSD RAID 10 e 1000 GB de largura de banda, você obtém um servidor virtual sólido para cargas de trabalho leves a moderadas.\n\nTripleZero iT oferece uma base de infraestrutura confiável, para que você possa se concentrar em seu aplicativo, site ou ambiente de desenvolvimento. Aumente a escala quando a demanda crescer."
+      "shortDescription": "– 2 núcleos de CPU\n– 2 GB de RAM\n– NVMe-schijfruimte de 40GB\n– Largura de banda de 1000 GB",
+      "description": "O VPS Hosting Basic é adequado para desenvolvedores, pequenos aplicativos e sites que precisam de mais controle e recursos previsíveis do que a hospedagem compartilhada oferece.\n\nCom 2 núcleos de CPU, 2 GB de RAM, 40 GB de NVMe-schijfruimte e 1000 GB de largura de banda, você obtém um servidor virtual sólido para cargas de trabalho leves a moderadas.\n\nTripleZero iT oferece uma base de infraestrutura confiável, para que você possa se concentrar em seu aplicativo, site ou ambiente de desenvolvimento. Aumente a escala quando a demanda crescer."
     },
     "vps-hosting-plus": {
       "name": "hosting vps",
-      "shortDescription": "– 8 núcleos de CPU\n– 12 GB de RAM\n– SSD RAID 10 de 240GB\n– Largura de banda de 6.000 GB",
-      "description": "O VPS Hosting Plus foi projetado para sites críticos para os negócios, aplicativos exigentes e organizações que esperam ampla capacidade e desempenho estável.\n\nCom 8 núcleos de CPU, 12 GB de RAM, 240 GB de armazenamento SSD RAID 10 e 6.000 GB de largura de banda, este plano fornece uma base poderosa para cargas de trabalho intensivas, vários ambientes e maiores volumes de visitantes.\n\nTripleZero iT ajuda você a construir uma infraestrutura confiável que acompanha suas ambições. Você mantém o controle do seu VPS, com uma equipe experiente disponível para suporte."
+      "shortDescription": "– 8 núcleos de CPU\n– 12 GB de RAM\n– NVMe-schijfruimte de 240GB\n– Largura de banda de 6.000 GB",
+      "description": "O VPS Hosting Plus foi projetado para sites críticos para os negócios, aplicativos exigentes e organizações que esperam ampla capacidade e desempenho estável.\n\nCom 8 núcleos de CPU, 12 GB de RAM, 240 GB de NVMe-schijfruimte e 6.000 GB de largura de banda, este plano fornece uma base poderosa para cargas de trabalho intensivas, vários ambientes e maiores volumes de visitantes.\n\nTripleZero iT ajuda você a construir uma infraestrutura confiável que acompanha suas ambições. Você mantém o controle do seu VPS, com uma equipe experiente disponível para suporte."
     },
     "vps-hosting-business": {
       "name": "Negócio de Hospedagem VPS",
-      "shortDescription": "– 4 núcleos de CPU\n– 6 GB de RAM\n– SSD RAID 10 de 120GB\n– Largura de banda de 3.000 GB",
-      "description": "VPS Hosting Business é para projetos web em crescimento, aplicativos de negócios e equipes de desenvolvimento que precisam de capacidade adicional e desempenho consistente.\n\nO servidor combina 4 núcleos de CPU e 6 GB de RAM com 120 GB de armazenamento SSD RAID 10 e 3.000 GB de largura de banda. Isso abre espaço para cargas de trabalho mais pesadas, múltiplos serviços ou aumento de tráfego.\n\nTripleZero iT oferece uma base VPS confiável que você pode configurar de acordo com suas necessidades. Ganhe a flexibilidade de um servidor virtual com um parceiro profissional por perto."
+      "shortDescription": "– 4 núcleos de CPU\n– 6 GB de RAM\n– NVMe-schijfruimte de 120GB\n– Largura de banda de 3.000 GB",
+      "description": "VPS Hosting Business é para projetos web em crescimento, aplicativos de negócios e equipes de desenvolvimento que precisam de capacidade adicional e desempenho consistente.\n\nO servidor combina 4 núcleos de CPU e 6 GB de RAM com 120 GB de NVMe-schijfruimte e 3.000 GB de largura de banda. Isso abre espaço para cargas de trabalho mais pesadas, múltiplos serviços ou aumento de tráfego.\n\nTripleZero iT oferece uma base VPS confiável que você pode configurar de acordo com suas necessidades. Ganhe a flexibilidade de um servidor virtual com um parceiro profissional por perto."
     },
     "wordpress-hosting-basic": {
       "name": "Hospedagem Básica WordPress",
@@ -619,18 +619,18 @@
     },
     "vps-hosting-basic": {
       "name": "Hosting VPS di base",
-      "shortDescription": "– 2 core della CPU\n– 2 GB di RAM\n– SSD RAID 10 da 40GB\n– Larghezza di banda di 1000 GB",
-      "description": "VPS Hosting Basic è adatto a sviluppatori, piccole applicazioni e siti Web che necessitano di maggiore controllo e risorse prevedibili rispetto a quelle fornite dall'hosting condiviso.\n\nCon 2 core CPU, 2 GB di RAM, 40 GB di spazio di archiviazione SSD RAID 10 e 1000 GB di larghezza di banda, ottieni un solido server virtuale per carichi di lavoro da leggeri a moderati.\n\nTripleZero iT ti offre una base infrastrutturale affidabile, così puoi concentrarti sulla tua applicazione, sito web o ambiente di sviluppo. Ingrandisci quando la domanda cresce."
+      "shortDescription": "– 2 core della CPU\n– 2 GB di RAM\n– NVMe-schijfruimte da 40GB\n– Larghezza di banda di 1000 GB",
+      "description": "VPS Hosting Basic è adatto a sviluppatori, piccole applicazioni e siti Web che necessitano di maggiore controllo e risorse prevedibili rispetto a quelle fornite dall'hosting condiviso.\n\nCon 2 core CPU, 2 GB di RAM, 40 GB di NVMe-schijfruimte e 1000 GB di larghezza di banda, ottieni un solido server virtuale per carichi di lavoro da leggeri a moderati.\n\nTripleZero iT ti offre una base infrastrutturale affidabile, così puoi concentrarti sulla tua applicazione, sito web o ambiente di sviluppo. Ingrandisci quando la domanda cresce."
     },
     "vps-hosting-plus": {
       "name": "Hosting VPS",
-      "shortDescription": "– 8 core della CPU\n– 12 GB di RAM\n– SSD RAID 10 da 240GB\n– Larghezza di banda di 6000 GB",
-      "description": "VPS Hosting Plus è progettato per siti Web business-critical, applicazioni esigenti e organizzazioni che si aspettano ampia capacità e prestazioni stabili.\n\nCon 8 core CPU, 12 GB di RAM, 240 GB di spazio di archiviazione SSD RAID 10 e 6000 GB di larghezza di banda, questo piano fornisce una base potente per carichi di lavoro intensivi, ambienti multipli e volumi di visitatori più elevati.\n\nTripleZero iT ti aiuta a costruire un'infrastruttura affidabile che si muove con le tue ambizioni. Mantieni il controllo del tuo VPS, con un team esperto disponibile per il supporto."
+      "shortDescription": "– 8 core della CPU\n– 12 GB di RAM\n– NVMe-schijfruimte da 240GB\n– Larghezza di banda di 6000 GB",
+      "description": "VPS Hosting Plus è progettato per siti Web business-critical, applicazioni esigenti e organizzazioni che si aspettano ampia capacità e prestazioni stabili.\n\nCon 8 core CPU, 12 GB di RAM, 240 GB di NVMe-schijfruimte e 6000 GB di larghezza di banda, questo piano fornisce una base potente per carichi di lavoro intensivi, ambienti multipli e volumi di visitatori più elevati.\n\nTripleZero iT ti aiuta a costruire un'infrastruttura affidabile che si muove con le tue ambizioni. Mantieni il controllo del tuo VPS, con un team esperto disponibile per il supporto."
     },
     "vps-hosting-business": {
       "name": "Attività di hosting VPS",
-      "shortDescription": "– 4 core della CPU\n– 6 GB di RAM\n– SSD RAID 10 da 120 GB\n– Larghezza di banda 3000 GB",
-      "description": "VPS Hosting Business è destinato a progetti web, applicazioni aziendali e team di sviluppo in crescita che necessitano di capacità aggiuntiva e prestazioni costanti.\n\nIl server combina 4 core CPU e 6 GB di RAM con 120 GB di spazio di archiviazione SSD RAID 10 e 3000 GB di larghezza di banda. Ciò lascia spazio a carichi di lavoro più pesanti, a più servizi o all’aumento del traffico.\n\nTripleZero iT offre una base VPS affidabile che puoi configurare in base alle tue esigenze. Ottieni la flessibilità di un server virtuale con un partner professionale nelle vicinanze."
+      "shortDescription": "– 4 core della CPU\n– 6 GB di RAM\n– NVMe-schijfruimte da 120 GB\n– Larghezza di banda 3000 GB",
+      "description": "VPS Hosting Business è destinato a progetti web, applicazioni aziendali e team di sviluppo in crescita che necessitano di capacità aggiuntiva e prestazioni costanti.\n\nIl server combina 4 core CPU e 6 GB di RAM con 120 GB di NVMe-schijfruimte e 3000 GB di larghezza di banda. Ciò lascia spazio a carichi di lavoro più pesanti, a più servizi o all’aumento del traffico.\n\nTripleZero iT offre una base VPS affidabile che puoi configurare in base alle tue esigenze. Ottieni la flessibilità di un server virtuale con un partner professionale nelle vicinanze."
     },
     "wordpress-hosting-basic": {
       "name": "Hosting WordPress Basic",
@@ -716,18 +716,18 @@
     },
     "vps-hosting-basic": {
       "name": "Βασική Φιλοξενία VPS",
-      "shortDescription": "– 2 πυρήνες CPU\n– 2 GB RAM\n– 40 GB SSD RAID 10\n– Εύρος ζώνης 1000 GB",
-      "description": "Το VPS Hosting Basic είναι κατάλληλο για προγραμματιστές, μικρές εφαρμογές και ιστότοπους που χρειάζονται περισσότερο έλεγχο και προβλέψιμους πόρους από ό,τι παρέχει η κοινή φιλοξενία.\n\nΜε 2 πυρήνες CPU, 2 GB RAM, 40 GB SSD RAID 10 αποθήκευσης και 1000 GB εύρος ζώνης, έχετε έναν σταθερό εικονικό διακομιστή για ελαφρύ έως μέτριο φόρτο εργασίας.\n\nΤο TripleZero iT σάς προσφέρει μια αξιόπιστη βάση υποδομής, ώστε να μπορείτε να εστιάσετε στην εφαρμογή, τον ιστότοπο ή το περιβάλλον ανάπτυξης. Κλιμακώστε όταν αυξάνεται η ζήτηση."
+      "shortDescription": "– 2 πυρήνες CPU\n– 2 GB RAM\n– 40 GB NVMe-schijfruimte\n– Εύρος ζώνης 1000 GB",
+      "description": "Το VPS Hosting Basic είναι κατάλληλο για προγραμματιστές, μικρές εφαρμογές και ιστότοπους που χρειάζονται περισσότερο έλεγχο και προβλέψιμους πόρους από ό,τι παρέχει η κοινή φιλοξενία.\n\nΜε 2 πυρήνες CPU, 2 GB RAM, 40 GB NVMe-schijfruimte και 1000 GB εύρος ζώνης, έχετε έναν σταθερό εικονικό διακομιστή για ελαφρύ έως μέτριο φόρτο εργασίας.\n\nΤο TripleZero iT σάς προσφέρει μια αξιόπιστη βάση υποδομής, ώστε να μπορείτε να εστιάσετε στην εφαρμογή, τον ιστότοπο ή το περιβάλλον ανάπτυξης. Κλιμακώστε όταν αυξάνεται η ζήτηση."
     },
     "vps-hosting-plus": {
       "name": "VPS Hosting",
-      "shortDescription": "– 8 πυρήνες CPU\n– 12 GB RAM\n– 240 GB SSD RAID 10\n– Εύρος ζώνης 6000 GB",
-      "description": "Το VPS Hosting Plus έχει σχεδιαστεί για ιστοτόπους κρίσιμους για τις επιχειρήσεις, απαιτητικές εφαρμογές και οργανισμούς που αναμένουν άφθονη χωρητικότητα και σταθερή απόδοση.\n\nΜε 8 πυρήνες CPU, 12 GB RAM, 240 GB SSD RAID 10 αποθήκευσης και 6000 GB εύρος ζώνης, αυτό το σχέδιο παρέχει μια ισχυρή βάση για έντονο φόρτο εργασίας, πολλαπλά περιβάλλοντα και υψηλότερους όγκους επισκεπτών.\n\nΤο TripleZero iT σάς βοηθά να δημιουργήσετε αξιόπιστη υποδομή που κινείται με τις φιλοδοξίες σας. Διατηρείτε τον έλεγχο του VPS σας, με μια έμπειρη ομάδα διαθέσιμη για υποστήριξη."
+      "shortDescription": "– 8 πυρήνες CPU\n– 12 GB RAM\n– 240 GB NVMe-schijfruimte\n– Εύρος ζώνης 6000 GB",
+      "description": "Το VPS Hosting Plus έχει σχεδιαστεί για ιστοτόπους κρίσιμους για τις επιχειρήσεις, απαιτητικές εφαρμογές και οργανισμούς που αναμένουν άφθονη χωρητικότητα και σταθερή απόδοση.\n\nΜε 8 πυρήνες CPU, 12 GB RAM, 240 GB NVMe-schijfruimte και 6000 GB εύρος ζώνης, αυτό το σχέδιο παρέχει μια ισχυρή βάση για έντονο φόρτο εργασίας, πολλαπλά περιβάλλοντα και υψηλότερους όγκους επισκεπτών.\n\nΤο TripleZero iT σάς βοηθά να δημιουργήσετε αξιόπιστη υποδομή που κινείται με τις φιλοδοξίες σας. Διατηρείτε τον έλεγχο του VPS σας, με μια έμπειρη ομάδα διαθέσιμη για υποστήριξη."
     },
     "vps-hosting-business": {
       "name": "Επιχείρηση φιλοξενίας VPS",
-      "shortDescription": "– 4 πυρήνες CPU\n– 6 GB RAM\n– 120 GB SSD RAID 10\n– Εύρος ζώνης 3000 GB",
-      "description": "Το VPS Hosting Business είναι για αναπτυσσόμενα έργα ιστού, επιχειρηματικές εφαρμογές και ομάδες ανάπτυξης που χρειάζονται πρόσθετη χωρητικότητα και σταθερή απόδοση.\n\nΟ διακομιστής συνδυάζει 4 πυρήνες CPU και 6 GB RAM με 120 GB SSD RAID 10 αποθήκευσης και 3000 GB εύρος ζώνης. Αυτό αφήνει χώρο για μεγαλύτερο φόρτο εργασίας, πολλαπλές υπηρεσίες ή αυξανόμενη επισκεψιμότητα.\n\nΤο TripleZero iT προσφέρει μια αξιόπιστη βάση VPS που μπορείτε να διαμορφώσετε σύμφωνα με τις ανάγκες σας. Αποκτήστε την ευελιξία ενός εικονικού διακομιστή με έναν επαγγελματία συνεργάτη κοντά σας."
+      "shortDescription": "– 4 πυρήνες CPU\n– 6 GB RAM\n– 120 GB NVMe-schijfruimte\n– Εύρος ζώνης 3000 GB",
+      "description": "Το VPS Hosting Business είναι για αναπτυσσόμενα έργα ιστού, επιχειρηματικές εφαρμογές και ομάδες ανάπτυξης που χρειάζονται πρόσθετη χωρητικότητα και σταθερή απόδοση.\n\nΟ διακομιστής συνδυάζει 4 πυρήνες CPU και 6 GB RAM με 120 GB NVMe-schijfruimte και 3000 GB εύρος ζώνης. Αυτό αφήνει χώρο για μεγαλύτερο φόρτο εργασίας, πολλαπλές υπηρεσίες ή αυξανόμενη επισκεψιμότητα.\n\nΤο TripleZero iT προσφέρει μια αξιόπιστη βάση VPS που μπορείτε να διαμορφώσετε σύμφωνα με τις ανάγκες σας. Αποκτήστε την ευελιξία ενός εικονικού διακομιστή με έναν επαγγελματία συνεργάτη κοντά σας."
     },
     "wordpress-hosting-basic": {
       "name": "Βασική Φιλοξενία WordPress",
@@ -813,18 +813,18 @@
     },
     "vps-hosting-basic": {
       "name": "Hosting VPS Basic",
-      "shortDescription": "– 2 rdzenie procesora\n– 2 GB RAM-je\n– 40 GB SSD RAID 10\n– przepustowość 1000 GB",
-      "description": "VPS Hosting Basic jest odpowiedni dla programistów, małych aplikacji i stron internetowych, które potrzebują większej kontroli i przewidywalnych zasobów niż zapewnia hosting współdzielony.\n\nDzięki 2 rdzeniom procesora, 2 GB pamięci RAM, 40 GB pamięci SSD RAID 10 i przepustowości 1000 GB otrzymujesz solidny serwer wirtualny do lekkich i umiarkowanych obciążeń.\n\nTripleZero iT zapewnia niezawodną podstawę infrastruktury, dzięki czemu możesz skupić się na swojej aplikacji, witrynie internetowej lub środowisku programistycznym. Zwiększaj skalę, gdy rośnie popyt."
+      "shortDescription": "– 2 rdzenie procesora\n– 2 GB RAM-je\n– 40 GB NVMe-schijfruimte\n– przepustowość 1000 GB",
+      "description": "VPS Hosting Basic jest odpowiedni dla programistów, małych aplikacji i stron internetowych, które potrzebują większej kontroli i przewidywalnych zasobów niż zapewnia hosting współdzielony.\n\nDzięki 2 rdzeniom procesora, 2 GB pamięci RAM, 40 GB pamięci NVMe-schijfruimte i przepustowości 1000 GB otrzymujesz solidny serwer wirtualny do lekkich i umiarkowanych obciążeń.\n\nTripleZero iT zapewnia niezawodną podstawę infrastruktury, dzięki czemu możesz skupić się na swojej aplikacji, witrynie internetowej lub środowisku programistycznym. Zwiększaj skalę, gdy rośnie popyt."
     },
     "vps-hosting-plus": {
       "name": "Hosting VPS Plus",
-      "shortDescription": "– 8 rdzeni procesora\n– 12 GB RAM-je\n– 240 GB SSD RAID 10\n– przepustowość 6000 GB",
-      "description": "VPS Hosting Plus jest przeznaczony dla stron internetowych o znaczeniu krytycznym dla biznesu, wymagających aplikacji i organizacji, które oczekują dużej pojemności i stabilnej wydajności.\n\nDzięki 8 rdzeniom procesora, 12 GB pamięci RAM, 240 GB pamięci SSD RAID 10 i przepustowości 6000 GB plan ten zapewnia potężną bazę do intensywnych obciążeń, wielu środowisk i większej liczby odwiedzających.\n\nTripleZero iT pomaga budować niezawodną infrastrukturę, która dostosowuje się do Twoich ambicji. Zachowujesz kontrolę nad swoim VPS, a doświadczony zespół jest dostępny do wsparcia."
+      "shortDescription": "– 8 rdzeni procesora\n– 12 GB RAM-je\n– 240 GB NVMe-schijfruimte\n– przepustowość 6000 GB",
+      "description": "VPS Hosting Plus jest przeznaczony dla stron internetowych o znaczeniu krytycznym dla biznesu, wymagających aplikacji i organizacji, które oczekują dużej pojemności i stabilnej wydajności.\n\nDzięki 8 rdzeniom procesora, 12 GB pamięci RAM, 240 GB pamięci NVMe-schijfruimte i przepustowości 6000 GB plan ten zapewnia potężną bazę do intensywnych obciążeń, wielu środowisk i większej liczby odwiedzających.\n\nTripleZero iT pomaga budować niezawodną infrastrukturę, która dostosowuje się do Twoich ambicji. Zachowujesz kontrolę nad swoim VPS, a doświadczony zespół jest dostępny do wsparcia."
     },
     "vps-hosting-business": {
       "name": "Firma hostingowa VPS",
-      "shortDescription": "– 4 rdzenie procesora\n– 6 GB RAM-je\n– 120 GB SSD RAID 10\n– przepustowość 3000 GB",
-      "description": "VPS Hosting Business jest przeznaczony dla rozwijających się projektów internetowych, aplikacji biznesowych i zespołów programistycznych, które potrzebują dodatkowej pojemności i stałej wydajności.\n\nSerwer łączy 4 rdzenie procesora i 6 GB pamięci RAM, 120 GB pamięci SSD RAID 10 i przepustowość 3000 GB. Pozostawia to miejsce na większe obciążenia, wiele usług lub rosnący ruch.\n\nTripleZero iT zapewnia niezawodną podstawę VPS, którą możesz skonfigurować zgodnie ze swoimi potrzebami. Zyskaj elastyczność serwera wirtualnego z profesjonalnym partnerem w pobliżu."
+      "shortDescription": "– 4 rdzenie procesora\n– 6 GB RAM-je\n– 120 GB NVMe-schijfruimte\n– przepustowość 3000 GB",
+      "description": "VPS Hosting Business jest przeznaczony dla rozwijających się projektów internetowych, aplikacji biznesowych i zespołów programistycznych, które potrzebują dodatkowej pojemności i stałej wydajności.\n\nSerwer łączy 4 rdzenie procesora i 6 GB pamięci RAM, 120 GB pamięci NVMe-schijfruimte i przepustowość 3000 GB. Pozostawia to miejsce na większe obciążenia, wiele usług lub rosnący ruch.\n\nTripleZero iT zapewnia niezawodną podstawę VPS, którą możesz skonfigurować zgodnie ze swoimi potrzebami. Zyskaj elastyczność serwera wirtualnego z profesjonalnym partnerem w pobliżu."
     },
     "wordpress-hosting-basic": {
       "name": "Hosting WordPress Basic",
@@ -910,18 +910,18 @@
     },
     "vps-hosting-basic": {
       "name": "Základní hosting VPS",
-      "shortDescription": "– 2 jádra CPU\n– 2 GB RAM\n– 40 GB SSD RAID 10\n– šířka pásma 1000 GB",
-      "description": "VPS Hosting Basic je vhodný pro vývojáře, malé aplikace a webové stránky, které potřebují větší kontrolu a předvídatelné zdroje, než poskytuje sdílený hosting.\n\nSe 2 jádry CPU, 2 GB RAM, 40 GB úložiště SSD RAID 10 a šířkou pásma 1 000 GB získáte solidní virtuální server pro lehkou až střední zátěž.\n\nTripleZero iT vám poskytuje spolehlivý základ infrastruktury, takže se můžete soustředit na svou aplikaci, web nebo vývojové prostředí. Škálujte, když poptávka roste."
+      "shortDescription": "– 2 jádra CPU\n– 2 GB RAM\n– 40 GB NVMe-schijfruimte\n– šířka pásma 1000 GB",
+      "description": "VPS Hosting Basic je vhodný pro vývojáře, malé aplikace a webové stránky, které potřebují větší kontrolu a předvídatelné zdroje, než poskytuje sdílený hosting.\n\nSe 2 jádry CPU, 2 GB RAM, 40 GB úložiště NVMe-schijfruimte a šířkou pásma 1 000 GB získáte solidní virtuální server pro lehkou až střední zátěž.\n\nTripleZero iT vám poskytuje spolehlivý základ infrastruktury, takže se můžete soustředit na svou aplikaci, web nebo vývojové prostředí. Škálujte, když poptávka roste."
     },
     "vps-hosting-plus": {
       "name": "VPS Hosting Plus",
-      "shortDescription": "– 8 jader CPU\n– 12 GB RAM\n– 240 GB SSD RAID 10\n– šířka pásma 6000 GB",
-      "description": "VPS Hosting Plus je navržen pro kriticky důležité webové stránky, náročné aplikace a organizace, které očekávají dostatečnou kapacitu a stabilní výkon.\n\nTento plán s 8 jádry CPU, 12 GB RAM, 240 GB úložiště SSD RAID 10 a šířkou pásma 6 000 GB poskytuje výkonnou základnu pro intenzivní pracovní zátěž, více prostředí a vyšší objemy návštěvníků.\n\nTripleZero iT vám pomůže vybudovat spolehlivou infrastrukturu, která se bude pohybovat s vašimi ambicemi. Zachováte si kontrolu nad svým VPS se zkušeným týmem, který je k dispozici pro podporu."
+      "shortDescription": "– 8 jader CPU\n– 12 GB RAM\n– 240 GB NVMe-schijfruimte\n– šířka pásma 6000 GB",
+      "description": "VPS Hosting Plus je navržen pro kriticky důležité webové stránky, náročné aplikace a organizace, které očekávají dostatečnou kapacitu a stabilní výkon.\n\nTento plán s 8 jádry CPU, 12 GB RAM, 240 GB úložiště NVMe-schijfruimte a šířkou pásma 6 000 GB poskytuje výkonnou základnu pro intenzivní pracovní zátěž, více prostředí a vyšší objemy návštěvníků.\n\nTripleZero iT vám pomůže vybudovat spolehlivou infrastrukturu, která se bude pohybovat s vašimi ambicemi. Zachováte si kontrolu nad svým VPS se zkušeným týmem, který je k dispozici pro podporu."
     },
     "vps-hosting-business": {
       "name": "VPS hosting podnikání",
-      "shortDescription": "– 4 jádra CPU\n– 6 GB RAM\n– 120 GB SSD RAID 10\n– šířka pásma 3000 GB",
-      "description": "VPS Hosting Business je pro rostoucí webové projekty, obchodní aplikace a vývojové týmy, které potřebují další kapacitu a konzistentní výkon.\n\nServer kombinuje 4 CPU jádra a 6 GB RAM se 120 GB úložištěm SSD RAID 10 a šířkou pásma 3 000 GB. To ponechává prostor pro větší pracovní zátěž, více služeb nebo zvyšující se provoz.\n\nTripleZero iT poskytuje spolehlivý základ VPS, který si můžete nakonfigurovat podle svých potřeb. Získejte flexibilitu virtuálního serveru s profesionálním partnerem nablízku."
+      "shortDescription": "– 4 jádra CPU\n– 6 GB RAM\n– 120 GB NVMe-schijfruimte\n– šířka pásma 3000 GB",
+      "description": "VPS Hosting Business je pro rostoucí webové projekty, obchodní aplikace a vývojové týmy, které potřebují další kapacitu a konzistentní výkon.\n\nServer kombinuje 4 CPU jádra a 6 GB RAM se 120 GB úložištěm NVMe-schijfruimte a šířkou pásma 3 000 GB. To ponechává prostor pro větší pracovní zátěž, více služeb nebo zvyšující se provoz.\n\nTripleZero iT poskytuje spolehlivý základ VPS, který si můžete nakonfigurovat podle svých potřeb. Získejte flexibilitu virtuálního serveru s profesionálním partnerem nablízku."
     },
     "wordpress-hosting-basic": {
       "name": "WordPress Hosting Basic",
@@ -1007,18 +1007,18 @@
     },
     "vps-hosting-basic": {
       "name": "VPS Hosting Basic",
-      "shortDescription": "- 2 jadrá CPU\n– 2 GB RAM\n– 40 GB SSD RAID 10\n- 1000 GB šírka pásma",
-      "description": "VPS Hosting Basic je vhodný pre vývojárov, malé aplikácie a webové stránky, ktoré potrebujú väčšiu kontrolu a predvídateľné zdroje ako zdieľaný hosting.\n\nS 2 jadrami CPU, 2 GB RAM, 40 GB úložiskom SSD RAID 10 a šírkou pásma 1 000 GB získate solídny virtuálny server pre ľahké až stredné pracovné zaťaženie.\n\nTripleZero iT vám poskytuje spoľahlivý základ infraštruktúry, takže sa môžete sústrediť na svoju aplikáciu, webovú stránku alebo vývojové prostredie. Škálujte, keď dopyt rastie."
+      "shortDescription": "- 2 jadrá CPU\n– 2 GB RAM\n– 40 GB NVMe-schijfruimte\n- 1000 GB šírka pásma",
+      "description": "VPS Hosting Basic je vhodný pre vývojárov, malé aplikácie a webové stránky, ktoré potrebujú väčšiu kontrolu a predvídateľné zdroje ako zdieľaný hosting.\n\nS 2 jadrami CPU, 2 GB RAM, 40 GB úložiskom NVMe-schijfruimte a šírkou pásma 1 000 GB získate solídny virtuálny server pre ľahké až stredné pracovné zaťaženie.\n\nTripleZero iT vám poskytuje spoľahlivý základ infraštruktúry, takže sa môžete sústrediť na svoju aplikáciu, webovú stránku alebo vývojové prostredie. Škálujte, keď dopyt rastie."
     },
     "vps-hosting-plus": {
       "name": "VPS Hosting Plus",
-      "shortDescription": "- 8 jadier CPU\n– 12 GB RAM\n– 240 GB SSD RAID 10\n- 6000 GB šírka pásma",
-      "description": "VPS Hosting Plus je navrhnutý pre kritické obchodné webové stránky, náročné aplikácie a organizácie, ktoré očakávajú dostatočnú kapacitu a stabilný výkon.\n\nS 8 jadrami CPU, 12 GB RAM, 240 GB úložiskom SSD RAID 10 a šírkou pásma 6 000 GB poskytuje tento plán výkonnú základňu pre intenzívne pracovné zaťaženie, viaceré prostredia a väčšie objemy návštevníkov.\n\nTripleZero iT vám pomôže vybudovať spoľahlivú infraštruktúru, ktorá sa bude pohybovať v súlade s vašimi ambíciami. Zachováte si kontrolu nad svojim VPS, pričom skúsený tím je k dispozícii na podporu."
+      "shortDescription": "- 8 jadier CPU\n– 12 GB RAM\n– 240 GB NVMe-schijfruimte\n- 6000 GB šírka pásma",
+      "description": "VPS Hosting Plus je navrhnutý pre kritické obchodné webové stránky, náročné aplikácie a organizácie, ktoré očakávajú dostatočnú kapacitu a stabilný výkon.\n\nS 8 jadrami CPU, 12 GB RAM, 240 GB úložiskom NVMe-schijfruimte a šírkou pásma 6 000 GB poskytuje tento plán výkonnú základňu pre intenzívne pracovné zaťaženie, viaceré prostredia a väčšie objemy návštevníkov.\n\nTripleZero iT vám pomôže vybudovať spoľahlivú infraštruktúru, ktorá sa bude pohybovať v súlade s vašimi ambíciami. Zachováte si kontrolu nad svojim VPS, pričom skúsený tím je k dispozícii na podporu."
     },
     "vps-hosting-business": {
       "name": "VPS hosting podnikania",
-      "shortDescription": "- 4 jadrá CPU\n– 6 GB RAM\n– 120 GB SSD RAID 10\n- 3000 GB šírka pásma",
-      "description": "VPS Hosting Business je pre rastúce webové projekty, obchodné aplikácie a vývojové tímy, ktoré potrebujú dodatočnú kapacitu a konzistentný výkon.\n\nServer kombinuje 4 jadrá CPU a 6 GB RAM so 120 GB úložiskom SSD RAID 10 a šírkou pásma 3 000 GB. To ponecháva priestor pre väčšie pracovné zaťaženie, viacero služieb alebo zvýšenie návštevnosti.\n\nTripleZero iT poskytuje spoľahlivý základ VPS, ktorý si môžete nakonfigurovať podľa svojich potrieb. Získajte flexibilitu virtuálneho servera s profesionálnym partnerom nablízku."
+      "shortDescription": "- 4 jadrá CPU\n– 6 GB RAM\n– 120 GB NVMe-schijfruimte\n- 3000 GB šírka pásma",
+      "description": "VPS Hosting Business je pre rastúce webové projekty, obchodné aplikácie a vývojové tímy, ktoré potrebujú dodatočnú kapacitu a konzistentný výkon.\n\nServer kombinuje 4 jadrá CPU a 6 GB RAM so 120 GB úložiskom NVMe-schijfruimte a šírkou pásma 3 000 GB. To ponecháva priestor pre väčšie pracovné zaťaženie, viacero služieb alebo zvýšenie návštevnosti.\n\nTripleZero iT poskytuje spoľahlivý základ VPS, ktorý si môžete nakonfigurovať podľa svojich potrieb. Získajte flexibilitu virtuálneho servera s profesionálnym partnerom nablízku."
     },
     "wordpress-hosting-basic": {
       "name": "WordPress Hosting Basic",
@@ -1104,18 +1104,18 @@
     },
     "vps-hosting-basic": {
       "name": "VPS hosting alap",
-      "shortDescription": "- 2 CPU mag\n– 2 GB RAM\n– 40 GB SSD RAID 10\n- 1000 GB sávszélesség",
-      "description": "A VPS Hosting Basic olyan fejlesztőknek, kis alkalmazásoknak és webhelyeknek megfelelő, amelyeknek nagyobb vezérlésre és kiszámítható erőforrásokra van szükségük, mint a megosztott tárhely.\n\nA 2 CPU maggal, 2 GB RAM-mal, 40 GB SSD RAID 10 tárhellyel és 1000 GB sávszélességgel szilárd virtuális szervert kap a könnyű és közepes munkaterheléshez.\n\nA TripleZero iT megbízható infrastrukturális alapot biztosít, így az alkalmazására, webhelyére vagy fejlesztői környezetére összpontosíthat. Növekszik a kereslet növekedése."
+      "shortDescription": "- 2 CPU mag\n– 2 GB RAM\n– 40 GB NVMe-schijfruimte\n- 1000 GB sávszélesség",
+      "description": "A VPS Hosting Basic olyan fejlesztőknek, kis alkalmazásoknak és webhelyeknek megfelelő, amelyeknek nagyobb vezérlésre és kiszámítható erőforrásokra van szükségük, mint a megosztott tárhely.\n\nA 2 CPU maggal, 2 GB RAM-mal, 40 GB NVMe-schijfruimte tárhellyel és 1000 GB sávszélességgel szilárd virtuális szervert kap a könnyű és közepes munkaterheléshez.\n\nA TripleZero iT megbízható infrastrukturális alapot biztosít, így az alkalmazására, webhelyére vagy fejlesztői környezetére összpontosíthat. Növekszik a kereslet növekedése."
     },
     "vps-hosting-plus": {
       "name": "VPS Hosting Plus",
-      "shortDescription": "- 8 CPU mag\n- 12 GB RAM\n– 240 GB SSD RAID 10\n- 6000 GB sávszélesség",
-      "description": "A VPS Hosting Plus üzleti szempontból kritikus webhelyek, igényes alkalmazások és szervezetek számára készült, amelyek bőséges kapacitást és stabil teljesítményt várnak el.\n\nA 8 CPU maggal, 12 GB RAM-mal, 240 GB SSD RAID 10 tárhellyel és 6000 GB sávszélességgel ez a terv erőteljes alapot biztosít intenzív munkaterheléshez, többféle környezethez és nagyobb látogatói mennyiséghez.\n\nA TripleZero iT segít megbízható infrastruktúra felépítésében, amely összhangban van az ambícióival. Ön megtartja az irányítást a VPS felett, és egy tapasztalt csapat áll a rendelkezésére."
+      "shortDescription": "- 8 CPU mag\n- 12 GB RAM\n– 240 GB NVMe-schijfruimte\n- 6000 GB sávszélesség",
+      "description": "A VPS Hosting Plus üzleti szempontból kritikus webhelyek, igényes alkalmazások és szervezetek számára készült, amelyek bőséges kapacitást és stabil teljesítményt várnak el.\n\nA 8 CPU maggal, 12 GB RAM-mal, 240 GB NVMe-schijfruimte tárhellyel és 6000 GB sávszélességgel ez a terv erőteljes alapot biztosít intenzív munkaterheléshez, többféle környezethez és nagyobb látogatói mennyiséghez.\n\nA TripleZero iT segít megbízható infrastruktúra felépítésében, amely összhangban van az ambícióival. Ön megtartja az irányítást a VPS felett, és egy tapasztalt csapat áll a rendelkezésére."
     },
     "vps-hosting-business": {
       "name": "VPS tárhely üzlet",
-      "shortDescription": "- 4 CPU mag\n- 6 GB RAM\n– 120 GB SSD RAID 10\n– 3000 GB sávszélesség",
-      "description": "A VPS Hosting Business olyan webes projektek, üzleti alkalmazások és fejlesztőcsapatok bővítésére szolgál, amelyeknek további kapacitásra és egyenletes teljesítményre van szükségük.\n\nA szerver 4 CPU magot és 6 GB RAM-ot 120 GB SSD RAID 10 tárhellyel és 3000 GB sávszélességgel kombinál. Ez teret hagy a nagyobb munkaterhelésnek, több szolgáltatásnak vagy a növekvő forgalomnak.\n\nA TripleZero iT megbízható VPS-alapot biztosít, amelyet igényei szerint konfigurálhat. Nyerje meg a virtuális szerver rugalmasságát egy közeli professzionális partnerrel."
+      "shortDescription": "- 4 CPU mag\n- 6 GB RAM\n– 120 GB NVMe-schijfruimte\n– 3000 GB sávszélesség",
+      "description": "A VPS Hosting Business olyan webes projektek, üzleti alkalmazások és fejlesztőcsapatok bővítésére szolgál, amelyeknek további kapacitásra és egyenletes teljesítményre van szükségük.\n\nA szerver 4 CPU magot és 6 GB RAM-ot 120 GB NVMe-schijfruimte tárhellyel és 3000 GB sávszélességgel kombinál. Ez teret hagy a nagyobb munkaterhelésnek, több szolgáltatásnak vagy a növekvő forgalomnak.\n\nA TripleZero iT megbízható VPS-alapot biztosít, amelyet igényei szerint konfigurálhat. Nyerje meg a virtuális szerver rugalmasságát egy közeli professzionális partnerrel."
     },
     "wordpress-hosting-basic": {
       "name": "WordPress hosting alap",
@@ -1201,18 +1201,18 @@
     },
     "vps-hosting-basic": {
       "name": "Găzduire VPS de bază",
-      "shortDescription": "- 2 nuclee CPU\n– 2 GB RAM\n– 40 GB SSD RAID 10\n- 1000 GB lățime de bandă",
-      "description": "VPS Hosting Basic este potrivit pentru dezvoltatori, aplicații mici și site-uri web care au nevoie de mai mult control și resurse previzibile decât oferă găzduirea partajată.\n\nCu 2 nuclee CPU, 2 GB RAM, 40 GB SSD RAID 10 de stocare și 1000 GB lățime de bandă, obțineți un server virtual solid pentru sarcini de lucru ușoare până la moderate.\n\nTripleZero iT vă oferă o bază de infrastructură de încredere, astfel încât să vă puteți concentra pe aplicația, site-ul web sau mediul de dezvoltare. Creșteți când cererea crește."
+      "shortDescription": "- 2 nuclee CPU\n– 2 GB RAM\n– 40 GB NVMe-schijfruimte\n- 1000 GB lățime de bandă",
+      "description": "VPS Hosting Basic este potrivit pentru dezvoltatori, aplicații mici și site-uri web care au nevoie de mai mult control și resurse previzibile decât oferă găzduirea partajată.\n\nCu 2 nuclee CPU, 2 GB RAM, 40 GB NVMe-schijfruimte de stocare și 1000 GB lățime de bandă, obțineți un server virtual solid pentru sarcini de lucru ușoare până la moderate.\n\nTripleZero iT vă oferă o bază de infrastructură de încredere, astfel încât să vă puteți concentra pe aplicația, site-ul web sau mediul de dezvoltare. Creșteți când cererea crește."
     },
     "vps-hosting-plus": {
       "name": "Găzduire VPS Plus",
-      "shortDescription": "- 8 nuclee CPU\n– 12 GB RAM\n– 240 GB SSD RAID 10\n- 6000 GB lățime de bandă",
-      "description": "VPS Hosting Plus este conceput pentru site-uri web critice pentru afaceri, aplicații solicitante și organizații care se așteaptă la o capacitate mare și o performanță stabilă.\n\nCu 8 nuclee CPU, 12 GB RAM, 240 GB SSD RAID 10 de stocare și 6000 GB lățime de bandă, acest plan oferă o bază puternică pentru sarcini de lucru intense, medii multiple și volume mai mari de vizitatori.\n\nTripleZero iT vă ajută să construiți o infrastructură de încredere, care se mișcă cu ambițiile dvs. Vă păstrați controlul asupra VPS-ului dvs., cu o echipă cu experiență disponibilă pentru asistență."
+      "shortDescription": "- 8 nuclee CPU\n– 12 GB RAM\n– 240 GB NVMe-schijfruimte\n- 6000 GB lățime de bandă",
+      "description": "VPS Hosting Plus este conceput pentru site-uri web critice pentru afaceri, aplicații solicitante și organizații care se așteaptă la o capacitate mare și o performanță stabilă.\n\nCu 8 nuclee CPU, 12 GB RAM, 240 GB NVMe-schijfruimte de stocare și 6000 GB lățime de bandă, acest plan oferă o bază puternică pentru sarcini de lucru intense, medii multiple și volume mai mari de vizitatori.\n\nTripleZero iT vă ajută să construiți o infrastructură de încredere, care se mișcă cu ambițiile dvs. Vă păstrați controlul asupra VPS-ului dvs., cu o echipă cu experiență disponibilă pentru asistență."
     },
     "vps-hosting-business": {
       "name": "Găzduire VPS Business",
-      "shortDescription": "- 4 nuclee CPU\n– 6 GB RAM\n– 120 GB SSD RAID 10\n- 3000 GB lățime de bandă",
-      "description": "VPS Hosting Business este destinat proiectelor web în creștere, aplicațiilor de afaceri și echipelor de dezvoltare care au nevoie de capacitate suplimentară și performanță constantă.\n\nServerul combină 4 nuclee CPU și 6 GB RAM cu 120 GB SSD RAID 10 de stocare și 3000 GB lățime de bandă. Acest lucru lasă loc pentru sarcini de lucru mai grele, servicii multiple sau trafic în creștere.\n\nTripleZero iT oferă o bază VPS de încredere pe care o puteți configura în funcție de nevoile dvs. Obțineți flexibilitatea unui server virtual cu un partener profesionist în apropiere."
+      "shortDescription": "- 4 nuclee CPU\n– 6 GB RAM\n– 120 GB NVMe-schijfruimte\n- 3000 GB lățime de bandă",
+      "description": "VPS Hosting Business este destinat proiectelor web în creștere, aplicațiilor de afaceri și echipelor de dezvoltare care au nevoie de capacitate suplimentară și performanță constantă.\n\nServerul combină 4 nuclee CPU și 6 GB RAM cu 120 GB NVMe-schijfruimte de stocare și 3000 GB lățime de bandă. Acest lucru lasă loc pentru sarcini de lucru mai grele, servicii multiple sau trafic în creștere.\n\nTripleZero iT oferă o bază VPS de încredere pe care o puteți configura în funcție de nevoile dvs. Obțineți flexibilitatea unui server virtual cu un partener profesionist în apropiere."
     },
     "wordpress-hosting-basic": {
       "name": "Găzduire WordPress de bază",
@@ -1298,18 +1298,18 @@
     },
     "vps-hosting-basic": {
       "name": "Основен хостинг на VPS",
-      "shortDescription": "– 2 процесорни ядра\n– 2 GB RAM\n– 40 GB SSD RAID 10\n– 1000 GB честотна лента",
-      "description": "VPS Hosting Basic е подходящ за разработчици, малки приложения и уебсайтове, които се нуждаят от повече контрол и предвидими ресурси, отколкото предоставя споделеният хостинг.\n\nС 2 CPU ядра, 2 GB RAM, 40 GB SSD RAID 10 за съхранение и 1000 GB честотна лента получавате солиден виртуален сървър за леки до умерени натоварвания.\n\nTripleZero iT ви дава надеждна инфраструктурна основа, така че можете да се съсредоточите върху вашето приложение, уебсайт или среда за разработка. Увеличете мащаба, когато търсенето нарасне."
+      "shortDescription": "– 2 процесорни ядра\n– 2 GB RAM\n– 40 GB NVMe-schijfruimte\n– 1000 GB честотна лента",
+      "description": "VPS Hosting Basic е подходящ за разработчици, малки приложения и уебсайтове, които се нуждаят от повече контрол и предвидими ресурси, отколкото предоставя споделеният хостинг.\n\nС 2 CPU ядра, 2 GB RAM, 40 GB NVMe-schijfruimte за съхранение и 1000 GB честотна лента получавате солиден виртуален сървър за леки до умерени натоварвания.\n\nTripleZero iT ви дава надеждна инфраструктурна основа, така че можете да се съсредоточите върху вашето приложение, уебсайт или среда за разработка. Увеличете мащаба, когато търсенето нарасне."
     },
     "vps-hosting-plus": {
       "name": "VPS хостинг плюс",
-      "shortDescription": "– 8 CPU ядра\n– 12 GB RAM\n– 240 GB SSD RAID 10\n– 6000 GB честотна лента",
-      "description": "VPS Hosting Plus е предназначен за критични за бизнеса уебсайтове, взискателни приложения и организации, които очакват достатъчно капацитет и стабилна производителност.\n\nС 8 CPU ядра, 12 GB RAM, 240 GB SSD RAID 10 за съхранение и 6000 GB честотна лента, този план осигурява мощна база за интензивни работни натоварвания, множество среди и по-големи обеми посетители.\n\nTripleZero iT ви помага да изградите надеждна инфраструктура, която се движи с вашите амбиции. Вие запазвате контрола върху вашия VPS, с опитен екип на разположение за поддръжка."
+      "shortDescription": "– 8 CPU ядра\n– 12 GB RAM\n– 240 GB NVMe-schijfruimte\n– 6000 GB честотна лента",
+      "description": "VPS Hosting Plus е предназначен за критични за бизнеса уебсайтове, взискателни приложения и организации, които очакват достатъчно капацитет и стабилна производителност.\n\nС 8 CPU ядра, 12 GB RAM, 240 GB NVMe-schijfruimte за съхранение и 6000 GB честотна лента, този план осигурява мощна база за интензивни работни натоварвания, множество среди и по-големи обеми посетители.\n\nTripleZero iT ви помага да изградите надеждна инфраструктура, която се движи с вашите амбиции. Вие запазвате контрола върху вашия VPS, с опитен екип на разположение за поддръжка."
     },
     "vps-hosting-business": {
       "name": "Бизнес за настаняване на гости чрез VPS",
-      "shortDescription": "– 4 процесорни ядра\n– 6 GB RAM\n– 120 GB SSD RAID 10\n– 3000 GB честотна лента",
-      "description": "VPS Hosting Business е за развиващи се уеб проекти, бизнес приложения и екипи за разработка, които се нуждаят от допълнителен капацитет и постоянна производителност.\n\nСървърът съчетава 4 CPU ядра и 6 GB RAM със 120 GB SSD RAID 10 за съхранение и 3000 GB честотна лента. Това оставя място за по-големи натоварвания, множество услуги или увеличаване на трафика.\n\nTripleZero iT предоставя надеждна VPS основа, която можете да конфигурирате според вашите нужди. Получете гъвкавостта на виртуален сървър с професионален партньор наблизо."
+      "shortDescription": "– 4 процесорни ядра\n– 6 GB RAM\n– 120 GB NVMe-schijfruimte\n– 3000 GB честотна лента",
+      "description": "VPS Hosting Business е за развиващи се уеб проекти, бизнес приложения и екипи за разработка, които се нуждаят от допълнителен капацитет и постоянна производителност.\n\nСървърът съчетава 4 CPU ядра и 6 GB RAM със 120 GB NVMe-schijfruimte за съхранение и 3000 GB честотна лента. Това оставя място за по-големи натоварвания, множество услуги или увеличаване на трафика.\n\nTripleZero iT предоставя надеждна VPS основа, която можете да конфигурирате според вашите нужди. Получете гъвкавостта на виртуален сървър с професионален партньор наблизо."
     },
     "wordpress-hosting-basic": {
       "name": "Основен хостинг на WordPress",
@@ -1395,18 +1395,18 @@
     },
     "vps-hosting-basic": {
       "name": "VPS Hosting Basic",
-      "shortDescription": "– 2 CPU jezgre\n– 2 GB RAM-a\n– 40 GB SSD RAID 10\n– 1000 GB propusnosti",
-      "description": "VPS Hosting Basic prikladan je za programere, male aplikacije i web-stranice kojima je potrebna veća kontrola i predvidljivi resursi nego što ih pruža zajednički hosting.\n\nS 2 CPU jezgre, 2 GB RAM-a, 40 GB SSD RAID 10 pohrane i 1000 GB propusnosti, dobivate solidan virtualni poslužitelj za mala do umjerena radna opterećenja.\n\nTripleZero iT daje vam pouzdan temelj infrastrukture, tako da se možete usredotočiti na svoju aplikaciju, web stranicu ili razvojno okruženje. Povećajte kada potražnja poraste."
+      "shortDescription": "– 2 CPU jezgre\n– 2 GB RAM-a\n– 40 GB NVMe-schijfruimte\n– 1000 GB propusnosti",
+      "description": "VPS Hosting Basic prikladan je za programere, male aplikacije i web-stranice kojima je potrebna veća kontrola i predvidljivi resursi nego što ih pruža zajednički hosting.\n\nS 2 CPU jezgre, 2 GB RAM-a, 40 GB NVMe-schijfruimte pohrane i 1000 GB propusnosti, dobivate solidan virtualni poslužitelj za mala do umjerena radna opterećenja.\n\nTripleZero iT daje vam pouzdan temelj infrastrukture, tako da se možete usredotočiti na svoju aplikaciju, web stranicu ili razvojno okruženje. Povećajte kada potražnja poraste."
     },
     "vps-hosting-plus": {
       "name": "VPS Hosting Plus",
-      "shortDescription": "– 8 CPU jezgri\n– 12 GB RAM-a\n– 240 GB SSD RAID 10\n– 6000 GB propusnosti",
-      "description": "VPS Hosting Plus dizajniran je za poslovno kritične web stranice, zahtjevne aplikacije i organizacije koje očekuju dovoljno kapaciteta i stabilne performanse.\n\nS 8 CPU jezgri, 12 GB RAM-a, 240 GB SSD RAID 10 pohrane i 6000 GB propusnosti, ovaj plan pruža snažnu bazu za intenzivna radna opterećenja, više okruženja i veće količine posjetitelja.\n\nTripleZero iT pomaže vam izgraditi pouzdanu infrastrukturu koja se kreće s vašim ambicijama. Zadržavate kontrolu nad svojim VPS-om, uz iskusni tim koji vam je na raspolaganju za podršku."
+      "shortDescription": "– 8 CPU jezgri\n– 12 GB RAM-a\n– 240 GB NVMe-schijfruimte\n– 6000 GB propusnosti",
+      "description": "VPS Hosting Plus dizajniran je za poslovno kritične web stranice, zahtjevne aplikacije i organizacije koje očekuju dovoljno kapaciteta i stabilne performanse.\n\nS 8 CPU jezgri, 12 GB RAM-a, 240 GB NVMe-schijfruimte pohrane i 6000 GB propusnosti, ovaj plan pruža snažnu bazu za intenzivna radna opterećenja, više okruženja i veće količine posjetitelja.\n\nTripleZero iT pomaže vam izgraditi pouzdanu infrastrukturu koja se kreće s vašim ambicijama. Zadržavate kontrolu nad svojim VPS-om, uz iskusni tim koji vam je na raspolaganju za podršku."
     },
     "vps-hosting-business": {
       "name": "VPS hosting poslovanje",
-      "shortDescription": "– 4 CPU jezgre\n– 6 GB RAM-a\n– 120 GB SSD RAID 10\n– 3000 GB propusnosti",
-      "description": "VPS Hosting Business je za rastuće web projekte, poslovne aplikacije i razvojne timove kojima je potreban dodatni kapacitet i dosljedna izvedba.\n\nPoslužitelj kombinira 4 CPU jezgre i 6 GB RAM-a sa 120 GB SSD RAID 10 pohrane i 3000 GB propusnosti. To ostavlja prostora za veća radna opterećenja, više usluga ili povećanje prometa.\n\nTripleZero iT pruža pouzdanu VPS osnovu koju možete konfigurirati prema svojim potrebama. Steknite fleksibilnost virtualnog poslužitelja s profesionalnim partnerom u blizini."
+      "shortDescription": "– 4 CPU jezgre\n– 6 GB RAM-a\n– 120 GB NVMe-schijfruimte\n– 3000 GB propusnosti",
+      "description": "VPS Hosting Business je za rastuće web projekte, poslovne aplikacije i razvojne timove kojima je potreban dodatni kapacitet i dosljedna izvedba.\n\nPoslužitelj kombinira 4 CPU jezgre i 6 GB RAM-a sa 120 GB NVMe-schijfruimte pohrane i 3000 GB propusnosti. To ostavlja prostora za veća radna opterećenja, više usluga ili povećanje prometa.\n\nTripleZero iT pruža pouzdanu VPS osnovu koju možete konfigurirati prema svojim potrebama. Steknite fleksibilnost virtualnog poslužitelja s profesionalnim partnerom u blizini."
     },
     "wordpress-hosting-basic": {
       "name": "WordPress Hosting Basic",
@@ -1589,18 +1589,18 @@
     },
     "vps-hosting-basic": {
       "name": "VPS hosting Basic",
-      "shortDescription": "– 2 CPU jezgra\n– 2 GB RAM-a\n– 40 GB SSD RAID 10\n– 1000 GB propusnog opsega",
-      "description": "VPS Hosting Basic je pogodan za programere, male aplikacije i web stranice kojima je potrebna veća kontrola i predvidljivi resursi nego što pruža dijeljeni hosting.\n\nSa 2 CPU jezgra, 2 GB RAM-a, 40 GB SSD RAID 10 skladištenja i 1000 GB propusnog opsega, dobijate solidan virtuelni server za mala do umerena radna opterećenja.\n\nTripleZero iT vam daje pouzdanu infrastrukturnu osnovu, tako da se možete fokusirati na svoju aplikaciju, web stranicu ili razvojno okruženje. Povećajte kada potražnja raste."
+      "shortDescription": "– 2 CPU jezgra\n– 2 GB RAM-a\n– 40 GB NVMe-schijfruimte\n– 1000 GB propusnog opsega",
+      "description": "VPS Hosting Basic je pogodan za programere, male aplikacije i web stranice kojima je potrebna veća kontrola i predvidljivi resursi nego što pruža dijeljeni hosting.\n\nSa 2 CPU jezgra, 2 GB RAM-a, 40 GB NVMe-schijfruimte skladištenja i 1000 GB propusnog opsega, dobijate solidan virtuelni server za mala do umerena radna opterećenja.\n\nTripleZero iT vam daje pouzdanu infrastrukturnu osnovu, tako da se možete fokusirati na svoju aplikaciju, web stranicu ili razvojno okruženje. Povećajte kada potražnja raste."
     },
     "vps-hosting-plus": {
       "name": "VPS Hosting Plus",
-      "shortDescription": "– 8 CPU jezgara\n– 12 GB RAM-a\n– 240 GB SSD RAID 10\n– 6000 GB propusnog opsega",
-      "description": "VPS Hosting Plus dizajniran je za web stranice kritične za poslovanje, zahtjevne aplikacije i organizacije koje očekuju dovoljno kapaciteta i stabilne performanse.\n\nSa 8 CPU jezgara, 12 GB RAM-a, 240 GB SSD RAID 10 memorije i 6000 GB propusnog opsega, ovaj plan pruža moćnu osnovu za intenzivna radna opterećenja, višestruka okruženja i veći broj posetilaca.\n\nTripleZero iT vam pomaže da izgradite pouzdanu infrastrukturu koja se kreće u skladu sa vašim ambicijama. Zadržavate kontrolu nad svojim VPS-om, uz iskusan tim koji vam je na raspolaganju za podršku."
+      "shortDescription": "– 8 CPU jezgara\n– 12 GB RAM-a\n– 240 GB NVMe-schijfruimte\n– 6000 GB propusnog opsega",
+      "description": "VPS Hosting Plus dizajniran je za web stranice kritične za poslovanje, zahtjevne aplikacije i organizacije koje očekuju dovoljno kapaciteta i stabilne performanse.\n\nSa 8 CPU jezgara, 12 GB RAM-a, 240 GB NVMe-schijfruimte memorije i 6000 GB propusnog opsega, ovaj plan pruža moćnu osnovu za intenzivna radna opterećenja, višestruka okruženja i veći broj posetilaca.\n\nTripleZero iT vam pomaže da izgradite pouzdanu infrastrukturu koja se kreće u skladu sa vašim ambicijama. Zadržavate kontrolu nad svojim VPS-om, uz iskusan tim koji vam je na raspolaganju za podršku."
     },
     "vps-hosting-business": {
       "name": "VPS hosting preduzeće",
-      "shortDescription": "– 4 CPU jezgra\n– 6 GB RAM-a\n– 120 GB SSD RAID 10\n– 3000 GB propusnog opsega",
-      "description": "VPS Hosting Business je za rastuće web projekte, poslovne aplikacije i razvojne timove kojima je potreban dodatni kapacitet i dosljedne performanse.\n\nServer kombinuje 4 CPU jezgra i 6 GB RAM-a sa 120 GB SSD RAID 10 skladištenja i 3000 GB propusnog opsega. Ovo ostavlja prostor za veća opterećenja, više usluga ili povećanje prometa.\n\nTripleZero iT pruža pouzdanu VPS osnovu koju možete konfigurisati u skladu sa svojim potrebama. Steknite fleksibilnost virtuelnog servera sa profesionalnim partnerom u blizini."
+      "shortDescription": "– 4 CPU jezgra\n– 6 GB RAM-a\n– 120 GB NVMe-schijfruimte\n– 3000 GB propusnog opsega",
+      "description": "VPS Hosting Business je za rastuće web projekte, poslovne aplikacije i razvojne timove kojima je potreban dodatni kapacitet i dosljedne performanse.\n\nServer kombinuje 4 CPU jezgra i 6 GB RAM-a sa 120 GB NVMe-schijfruimte skladištenja i 3000 GB propusnog opsega. Ovo ostavlja prostor za veća opterećenja, više usluga ili povećanje prometa.\n\nTripleZero iT pruža pouzdanu VPS osnovu koju možete konfigurisati u skladu sa svojim potrebama. Steknite fleksibilnost virtuelnog servera sa profesionalnim partnerom u blizini."
     },
     "wordpress-hosting-basic": {
       "name": "WordPress Hosting Basic",
@@ -1783,18 +1783,18 @@
     },
     "vps-hosting-basic": {
       "name": "Bazike për pritjen e vizitorëve në VPS",
-      "shortDescription": "– 2 bërthama CPU\n– 2 GB RAM\n– 40 GB SSD RAID 10\n– 1000 GB gjerësi bande",
-      "description": "VPS Hosting Basic është i përshtatshëm për zhvilluesit, aplikacionet e vogla dhe faqet e internetit që kanë nevojë për më shumë kontroll dhe burime të parashikueshme sesa ofron hostimi i përbashkët.\n\nMe 2 bërthama CPU, 2 GB RAM, 40 GB SSD RAID 10 memorie dhe 1000 GB gjerësi bande, ju merrni një server virtual të fortë për ngarkesa të lehta deri në mesatare.\n\nTripleZero iT ju jep një themel të besueshëm të infrastrukturës, kështu që ju mund të përqendroheni në aplikacionin tuaj, faqen e internetit ose mjedisin e zhvillimit. Rriteni kur kërkesa rritet."
+      "shortDescription": "– 2 bërthama CPU\n– 2 GB RAM\n– 40 GB NVMe-schijfruimte\n– 1000 GB gjerësi bande",
+      "description": "VPS Hosting Basic është i përshtatshëm për zhvilluesit, aplikacionet e vogla dhe faqet e internetit që kanë nevojë për më shumë kontroll dhe burime të parashikueshme sesa ofron hostimi i përbashkët.\n\nMe 2 bërthama CPU, 2 GB RAM, 40 GB NVMe-schijfruimte memorie dhe 1000 GB gjerësi bande, ju merrni një server virtual të fortë për ngarkesa të lehta deri në mesatare.\n\nTripleZero iT ju jep një themel të besueshëm të infrastrukturës, kështu që ju mund të përqendroheni në aplikacionin tuaj, faqen e internetit ose mjedisin e zhvillimit. Rriteni kur kërkesa rritet."
     },
     "vps-hosting-plus": {
       "name": "VPS Hosting Plus",
-      "shortDescription": "– 8 bërthama CPU\n– 12 GB RAM\n– 240 GB SSD RAID 10\n– 6000 GB gjerësi bande",
-      "description": "VPS Hosting Plus është krijuar për faqet e internetit kritike për biznesin, aplikacionet dhe organizatat kërkuese që presin kapacitet të bollshëm dhe performancë të qëndrueshme.\n\nMe 8 bërthama CPU, 12 GB RAM, 240 GB hapësirë ​​ruajtëse SSD RAID 10 dhe 6000 GB gjerësi bande, ky plan ofron një bazë të fuqishme për ngarkesa intensive të punës, mjedise të shumta dhe vëllime më të larta të vizitorëve.\n\nTripleZero iT ju ndihmon të ndërtoni infrastrukturë të besueshme që lëviz me ambiciet tuaja. Ju ruani kontrollin e VPS-së tuaj, me një ekip me përvojë në dispozicion për mbështetje."
+      "shortDescription": "– 8 bërthama CPU\n– 12 GB RAM\n– 240 GB NVMe-schijfruimte\n– 6000 GB gjerësi bande",
+      "description": "VPS Hosting Plus është krijuar për faqet e internetit kritike për biznesin, aplikacionet dhe organizatat kërkuese që presin kapacitet të bollshëm dhe performancë të qëndrueshme.\n\nMe 8 bërthama CPU, 12 GB RAM, 240 GB hapësirë ​​ruajtëse NVMe-schijfruimte dhe 6000 GB gjerësi bande, ky plan ofron një bazë të fuqishme për ngarkesa intensive të punës, mjedise të shumta dhe vëllime më të larta të vizitorëve.\n\nTripleZero iT ju ndihmon të ndërtoni infrastrukturë të besueshme që lëviz me ambiciet tuaja. Ju ruani kontrollin e VPS-së tuaj, me një ekip me përvojë në dispozicion për mbështetje."
     },
     "vps-hosting-business": {
       "name": "Biznesi i pritjes së vizitorëve në VPS",
-      "shortDescription": "– 4 bërthama CPU\n– 6 GB RAM\n– 120 GB SSD RAID 10\n– 3000 GB gjerësi bande",
-      "description": "VPS Hosting Business është për projekte në rritje në internet, aplikacione biznesi dhe ekipe zhvillimi që kanë nevojë për kapacitet shtesë dhe performancë të qëndrueshme.\n\nServeri kombinon 4 bërthama CPU dhe 6 GB RAM me 120 GB SSD RAID 10 memorie dhe 3000 GB gjerësi bande. Kjo lë hapësirë ​​për ngarkesa më të rënda pune, shërbime të shumta ose rritje të trafikut.\n\nTripleZero iT ofron një bazë të besueshme VPS që mund ta konfiguroni sipas nevojave tuaja. Fitoni fleksibilitetin e një serveri virtual me një partner profesionist afër."
+      "shortDescription": "– 4 bërthama CPU\n– 6 GB RAM\n– 120 GB NVMe-schijfruimte\n– 3000 GB gjerësi bande",
+      "description": "VPS Hosting Business është për projekte në rritje në internet, aplikacione biznesi dhe ekipe zhvillimi që kanë nevojë për kapacitet shtesë dhe performancë të qëndrueshme.\n\nServeri kombinon 4 bërthama CPU dhe 6 GB RAM me 120 GB NVMe-schijfruimte memorie dhe 3000 GB gjerësi bande. Kjo lë hapësirë ​​për ngarkesa më të rënda pune, shërbime të shumta ose rritje të trafikut.\n\nTripleZero iT ofron një bazë të besueshme VPS që mund ta konfiguroni sipas nevojave tuaja. Fitoni fleksibilitetin e një serveri virtual me një partner profesionist afër."
     },
     "wordpress-hosting-basic": {
       "name": "Bazike për pritjen e vizitorëve në WordPress",
@@ -1880,18 +1880,18 @@
     },
     "vps-hosting-basic": {
       "name": "Основно угостување преку VPS",
-      "shortDescription": "– 2 јадра на процесорот\n- 2 GB RAM меморија\n– 40 GB SSD RAID 10\n– 1000 GB пропусен опсег",
-      "description": "VPS Hosting Basic е погоден за програмери, мали апликации и веб-локации на кои им е потребна поголема контрола и предвидливи ресурси отколку што обезбедува споделениот хостинг.\n\nСо 2 јадра на процесорот, 2 GB RAM, 40 GB SSD RAID 10 складирање и 1000 GB пропусен опсег, добивате солиден виртуелен сервер за лесен до умерен обем на работа.\n\nTripleZero iT ви дава доверлива инфраструктурна основа, за да можете да се фокусирате на вашата апликација, веб-локација или развојна околина. Зголемете кога побарувачката расте."
+      "shortDescription": "– 2 јадра на процесорот\n- 2 GB RAM меморија\n– 40 GB NVMe-schijfruimte\n– 1000 GB пропусен опсег",
+      "description": "VPS Hosting Basic е погоден за програмери, мали апликации и веб-локации на кои им е потребна поголема контрола и предвидливи ресурси отколку што обезбедува споделениот хостинг.\n\nСо 2 јадра на процесорот, 2 GB RAM, 40 GB NVMe-schijfruimte складирање и 1000 GB пропусен опсег, добивате солиден виртуелен сервер за лесен до умерен обем на работа.\n\nTripleZero iT ви дава доверлива инфраструктурна основа, за да можете да се фокусирате на вашата апликација, веб-локација или развојна околина. Зголемете кога побарувачката расте."
     },
     "vps-hosting-plus": {
       "name": "VPS хостинг плус",
-      "shortDescription": "– 8 јадра на процесорот\n- 12 GB RAM\n– 240 GB SSD RAID 10\n– 6000 GB пропусен опсег",
-      "description": "VPS Hosting Plus е дизајниран за веб-локации кои се критични за бизнисот, барања за апликации и организации кои очекуваат голем капацитет и стабилни перформанси.\n\nСо 8 јадра на процесорот, 12 GB RAM, 240 GB SSD RAID 10 складирање и 6000 GB пропусен опсег, овој план обезбедува моќна основа за интензивни работни оптоварувања, повеќе околини и поголем обем на посетители.\n\nTripleZero iT ви помага да изградите доверлива инфраструктура која се движи со вашите амбиции. Ја задржувате контролата врз вашиот VPS, со искусен тим достапен за поддршка."
+      "shortDescription": "– 8 јадра на процесорот\n- 12 GB RAM\n– 240 GB NVMe-schijfruimte\n– 6000 GB пропусен опсег",
+      "description": "VPS Hosting Plus е дизајниран за веб-локации кои се критични за бизнисот, барања за апликации и организации кои очекуваат голем капацитет и стабилни перформанси.\n\nСо 8 јадра на процесорот, 12 GB RAM, 240 GB NVMe-schijfruimte складирање и 6000 GB пропусен опсег, овој план обезбедува моќна основа за интензивни работни оптоварувања, повеќе околини и поголем обем на посетители.\n\nTripleZero iT ви помага да изградите доверлива инфраструктура која се движи со вашите амбиции. Ја задржувате контролата врз вашиот VPS, со искусен тим достапен за поддршка."
     },
     "vps-hosting-business": {
       "name": "Бизнис со угостување преку VPS",
-      "shortDescription": "– 4 јадра на процесорот\n- 6 GB RAM меморија\n– 120 GB SSD RAID 10\n– 3000 GB пропусен опсег",
-      "description": "VPS Hosting Business е за растечки веб-проекти, деловни апликации и развојни тимови на кои им е потребен дополнителен капацитет и постојани перформанси.\n\nСерверот комбинира 4 јадра на процесорот и 6 GB RAM со 120 GB SSD RAID 10 складирање и 3000 GB пропусен опсег. Ова остава простор за поголем обем на работа, повеќе услуги или зголемен сообраќај.\n\nTripleZero iT обезбедува доверлива VPS основа што можете да ја конфигурирате според вашите потреби. Добијте флексибилност на виртуелен сервер со професионален партнер во близина."
+      "shortDescription": "– 4 јадра на процесорот\n- 6 GB RAM меморија\n– 120 GB NVMe-schijfruimte\n– 3000 GB пропусен опсег",
+      "description": "VPS Hosting Business е за растечки веб-проекти, деловни апликации и развојни тимови на кои им е потребен дополнителен капацитет и постојани перформанси.\n\nСерверот комбинира 4 јадра на процесорот и 6 GB RAM со 120 GB NVMe-schijfruimte складирање и 3000 GB пропусен опсег. Ова остава простор за поголем обем на работа, повеќе услуги или зголемен сообраќај.\n\nTripleZero iT обезбедува доверлива VPS основа што можете да ја конфигурирате според вашите потреби. Добијте флексибилност на виртуелен сервер со професионален партнер во близина."
     },
     "wordpress-hosting-basic": {
       "name": "Основен хостинг на WordPress",
@@ -1977,18 +1977,18 @@
     },
     "vps-hosting-basic": {
       "name": "VPS Hosting Basic",
-      "shortDescription": "- 2 procesoriaus branduoliai\n- 2 GB RAM\n– 40 GB SSD RAID 10\n- 1000 GB pralaidumo",
-      "description": "„VPS Hosting Basic“ tinka kūrėjams, mažoms programoms ir svetainėms, kurioms reikia daugiau kontrolės ir nuspėjamų išteklių, nei suteikia bendras priegloba.\n\nTurėdami 2 procesoriaus branduolius, 2 GB RAM, 40 GB SSD RAID 10 saugyklą ir 1000 GB pralaidumą, gausite tvirtą virtualų serverį, skirtą nedideliam ir vidutiniam darbo krūviui.\n\nTripleZero iT suteikia jums patikimą infrastruktūros pagrindą, todėl galite sutelkti dėmesį į savo programą, svetainę ar kūrimo aplinką. Padidinkite mastą, kai paklausa auga."
+      "shortDescription": "- 2 procesoriaus branduoliai\n- 2 GB RAM\n– 40 GB NVMe-schijfruimte\n- 1000 GB pralaidumo",
+      "description": "„VPS Hosting Basic“ tinka kūrėjams, mažoms programoms ir svetainėms, kurioms reikia daugiau kontrolės ir nuspėjamų išteklių, nei suteikia bendras priegloba.\n\nTurėdami 2 procesoriaus branduolius, 2 GB RAM, 40 GB NVMe-schijfruimte saugyklą ir 1000 GB pralaidumą, gausite tvirtą virtualų serverį, skirtą nedideliam ir vidutiniam darbo krūviui.\n\nTripleZero iT suteikia jums patikimą infrastruktūros pagrindą, todėl galite sutelkti dėmesį į savo programą, svetainę ar kūrimo aplinką. Padidinkite mastą, kai paklausa auga."
     },
     "vps-hosting-plus": {
       "name": "VPS Hosting Plus",
-      "shortDescription": "– 8 procesoriaus branduoliai\n- 12 GB RAM\n– 240 GB SSD RAID 10\n- 6000 GB pralaidumo",
-      "description": "„VPS Hosting Plus“ sukurta verslui svarbioms svetainėms, reiklioms programoms ir organizacijoms, kurios tikisi didelės talpos ir stabilaus veikimo.\n\nSu 8 procesoriaus branduoliais, 12 GB RAM, 240 GB SSD RAID 10 saugykla ir 6000 GB pralaidumo šis planas yra galingas pagrindas intensyviam darbo krūviui, įvairioms aplinkoms ir didesniam lankytojų srautui.\n\nTripleZero iT padeda sukurti patikimą infrastruktūrą, kuri atitinka jūsų ambicijas. Jūs išlaikote savo VPS kontrolę, o patyrusi komanda gali padėti."
+      "shortDescription": "– 8 procesoriaus branduoliai\n- 12 GB RAM\n– 240 GB NVMe-schijfruimte\n- 6000 GB pralaidumo",
+      "description": "„VPS Hosting Plus“ sukurta verslui svarbioms svetainėms, reiklioms programoms ir organizacijoms, kurios tikisi didelės talpos ir stabilaus veikimo.\n\nSu 8 procesoriaus branduoliais, 12 GB RAM, 240 GB NVMe-schijfruimte saugykla ir 6000 GB pralaidumo šis planas yra galingas pagrindas intensyviam darbo krūviui, įvairioms aplinkoms ir didesniam lankytojų srautui.\n\nTripleZero iT padeda sukurti patikimą infrastruktūrą, kuri atitinka jūsų ambicijas. Jūs išlaikote savo VPS kontrolę, o patyrusi komanda gali padėti."
     },
     "vps-hosting-business": {
       "name": "VPS svečių priėmimo verslas",
-      "shortDescription": "– 4 procesoriaus branduoliai\n- 6 GB RAM\n– 120 GB SSD RAID 10\n- 3000 GB pralaidumo",
-      "description": "„VPS Hosting Business“ skirtas plėtoti žiniatinklio projektus, verslo programas ir kūrimo komandas, kurioms reikia papildomų pajėgumų ir pastovaus veikimo.\n\nServeris sujungia 4 procesoriaus branduolius ir 6 GB RAM su 120 GB SSD RAID 10 saugykla ir 3000 GB pralaidumo. Tai palieka vietos didesniam darbo krūviui, kelioms paslaugoms arba didėjančiam srautui.\n\nTripleZero iT suteikia patikimą VPS pagrindą, kurį galite konfigūruoti pagal savo poreikius. Įgykite virtualaus serverio lankstumo su profesionaliu partneriu šalia."
+      "shortDescription": "– 4 procesoriaus branduoliai\n- 6 GB RAM\n– 120 GB NVMe-schijfruimte\n- 3000 GB pralaidumo",
+      "description": "„VPS Hosting Business“ skirtas plėtoti žiniatinklio projektus, verslo programas ir kūrimo komandas, kurioms reikia papildomų pajėgumų ir pastovaus veikimo.\n\nServeris sujungia 4 procesoriaus branduolius ir 6 GB RAM su 120 GB NVMe-schijfruimte saugykla ir 3000 GB pralaidumo. Tai palieka vietos didesniam darbo krūviui, kelioms paslaugoms arba didėjančiam srautui.\n\nTripleZero iT suteikia patikimą VPS pagrindą, kurį galite konfigūruoti pagal savo poreikius. Įgykite virtualaus serverio lankstumo su profesionaliu partneriu šalia."
     },
     "wordpress-hosting-basic": {
       "name": "„WordPress“ prieglobos pagrindas",
@@ -2074,18 +2074,18 @@
     },
     "vps-hosting-basic": {
       "name": "VPS Hosting Basic",
-      "shortDescription": "– 2 CPU-kerner\n– 2 GB RAM\n– 40 GB SSD RAID 10\n– 1000 GB båndbredde",
-      "description": "VPS Hosting Basic er velegnet til udviklere, små applikationer og websteder, der har brug for mere kontrol og forudsigelige ressourcer, end delt hosting giver.\n\nMed 2 CPU-kerner, 2 GB RAM, 40 GB SSD RAID 10-lagring og 1000 GB båndbredde får du en solid virtuel server til lette til moderate arbejdsbelastninger.\n\nTripleZero iT giver dig et pålideligt infrastrukturgrundlag, så du kan fokusere på din applikation, hjemmeside eller udviklingsmiljø. Skaler op, når efterspørgslen vokser."
+      "shortDescription": "– 2 CPU-kerner\n– 2 GB RAM\n– 40 GB NVMe-schijfruimte\n– 1000 GB båndbredde",
+      "description": "VPS Hosting Basic er velegnet til udviklere, små applikationer og websteder, der har brug for mere kontrol og forudsigelige ressourcer, end delt hosting giver.\n\nMed 2 CPU-kerner, 2 GB RAM, 40 GB NVMe-schijfruimte-lagring og 1000 GB båndbredde får du en solid virtuel server til lette til moderate arbejdsbelastninger.\n\nTripleZero iT giver dig et pålideligt infrastrukturgrundlag, så du kan fokusere på din applikation, hjemmeside eller udviklingsmiljø. Skaler op, når efterspørgslen vokser."
     },
     "vps-hosting-plus": {
       "name": "VPS-hosting",
-      "shortDescription": "– 8 CPU-kerner\n– 12 GB RAM\n– 240 GB SSD RAID 10\n– 6000 GB båndbredde",
-      "description": "VPS Hosting Plus er designet til forretningskritiske hjemmesider, krævende applikationer og organisationer, der forventer rigelig kapacitet og stabil ydeevne.\n\nMed 8 CPU-kerner, 12 GB RAM, 240 GB SSD RAID 10-lagring og 6000 GB båndbredde giver denne plan en kraftfuld base for intensive arbejdsbelastninger, flere miljøer og større besøgsvolumen.\n\nTripleZero iT hjælper dig med at opbygge pålidelig infrastruktur, der følger dine ambitioner. Du bevarer kontrollen over din VPS, med et erfarent team til rådighed for support."
+      "shortDescription": "– 8 CPU-kerner\n– 12 GB RAM\n– 240 GB NVMe-schijfruimte\n– 6000 GB båndbredde",
+      "description": "VPS Hosting Plus er designet til forretningskritiske hjemmesider, krævende applikationer og organisationer, der forventer rigelig kapacitet og stabil ydeevne.\n\nMed 8 CPU-kerner, 12 GB RAM, 240 GB NVMe-schijfruimte-lagring og 6000 GB båndbredde giver denne plan en kraftfuld base for intensive arbejdsbelastninger, flere miljøer og større besøgsvolumen.\n\nTripleZero iT hjælper dig med at opbygge pålidelig infrastruktur, der følger dine ambitioner. Du bevarer kontrollen over din VPS, med et erfarent team til rådighed for support."
     },
     "vps-hosting-business": {
       "name": "VPS-værtsvirksomhed",
-      "shortDescription": "– 4 CPU-kerner\n– 6 GB RAM\n– 120 GB SSD RAID 10\n– 3000 GB båndbredde",
-      "description": "VPS Hosting Business er til voksende webprojekter, forretningsapplikationer og udviklingsteams, der har brug for ekstra kapacitet og ensartet ydeevne.\n\nServeren kombinerer 4 CPU-kerner og 6 GB RAM med 120 GB SSD RAID 10-lagring og 3000 GB båndbredde. Dette giver plads til større arbejdsbyrder, flere tjenester eller stigende trafik.\n\nTripleZero iT leverer et pålideligt VPS-fundament, som du kan konfigurere efter dine behov. Få fleksibiliteten som en virtuel server med en professionel partner tæt på."
+      "shortDescription": "– 4 CPU-kerner\n– 6 GB RAM\n– 120 GB NVMe-schijfruimte\n– 3000 GB båndbredde",
+      "description": "VPS Hosting Business er til voksende webprojekter, forretningsapplikationer og udviklingsteams, der har brug for ekstra kapacitet og ensartet ydeevne.\n\nServeren kombinerer 4 CPU-kerner og 6 GB RAM med 120 GB NVMe-schijfruimte-lagring og 3000 GB båndbredde. Dette giver plads til større arbejdsbyrder, flere tjenester eller stigende trafik.\n\nTripleZero iT leverer et pålideligt VPS-fundament, som du kan konfigurere efter dine behov. Få fleksibiliteten som en virtuel server med en professionel partner tæt på."
     },
     "wordpress-hosting-basic": {
       "name": "WordPress Hosting Basic",
@@ -2171,18 +2171,18 @@
     },
     "vps-hosting-basic": {
       "name": "VPS Hosting Basic",
-      "shortDescription": "– 2 CPU-kärnor\n– 2 GB RAM\n– 40 GB SSD RAID 10\n– 1000 GB bandbredd",
-      "description": "VPS Hosting Basic lämpar sig för utvecklare, små applikationer och webbplatser som behöver mer kontroll och förutsägbara resurser än delad hosting ger.\n\nMed 2 CPU-kärnor, 2 GB RAM, 40 GB SSD RAID 10-lagring och 1000 GB bandbredd får du en solid virtuell server för lätt till måttlig arbetsbelastning.\n\nTripleZero iT ger dig en pålitlig infrastruktur, så att du kan fokusera på din applikation, webbplats eller utvecklingsmiljö. Skala upp när efterfrågan växer."
+      "shortDescription": "– 2 CPU-kärnor\n– 2 GB RAM\n– 40 GB NVMe-schijfruimte\n– 1000 GB bandbredd",
+      "description": "VPS Hosting Basic lämpar sig för utvecklare, små applikationer och webbplatser som behöver mer kontroll och förutsägbara resurser än delad hosting ger.\n\nMed 2 CPU-kärnor, 2 GB RAM, 40 GB NVMe-schijfruimte-lagring och 1000 GB bandbredd får du en solid virtuell server för lätt till måttlig arbetsbelastning.\n\nTripleZero iT ger dig en pålitlig infrastruktur, så att du kan fokusera på din applikation, webbplats eller utvecklingsmiljö. Skala upp när efterfrågan växer."
     },
     "vps-hosting-plus": {
       "name": "VPS Hosting Plus",
-      "shortDescription": "– 8 CPU-kärnor\n– 12 GB RAM\n– 240 GB SSD RAID 10\n– 6000 GB bandbredd",
-      "description": "VPS Hosting Plus är designad för affärskritiska webbplatser, krävande applikationer och organisationer som förväntar sig stor kapacitet och stabil prestanda.\n\nMed 8 CPU-kärnor, 12 GB RAM, 240 GB SSD RAID 10-lagring och 6000 GB bandbredd, ger denna plan en kraftfull bas för intensiva arbetsbelastningar, flera miljöer och högre besöksvolymer.\n\nTripleZero iT hjälper dig att bygga en pålitlig infrastruktur som följer dina ambitioner. Du behåller kontrollen över din VPS, med ett erfaret team tillgängligt för support."
+      "shortDescription": "– 8 CPU-kärnor\n– 12 GB RAM\n– 240 GB NVMe-schijfruimte\n– 6000 GB bandbredd",
+      "description": "VPS Hosting Plus är designad för affärskritiska webbplatser, krävande applikationer och organisationer som förväntar sig stor kapacitet och stabil prestanda.\n\nMed 8 CPU-kärnor, 12 GB RAM, 240 GB NVMe-schijfruimte-lagring och 6000 GB bandbredd, ger denna plan en kraftfull bas för intensiva arbetsbelastningar, flera miljöer och högre besöksvolymer.\n\nTripleZero iT hjälper dig att bygga en pålitlig infrastruktur som följer dina ambitioner. Du behåller kontrollen över din VPS, med ett erfaret team tillgängligt för support."
     },
     "vps-hosting-business": {
       "name": "VPS Hosting Business",
-      "shortDescription": "– 4 CPU-kärnor\n– 6 GB RAM\n– 120 GB SSD RAID 10\n– 3000 GB bandbredd",
-      "description": "VPS Hosting Business är för växande webbprojekt, affärsapplikationer och utvecklingsteam som behöver ytterligare kapacitet och konsekvent prestanda.\n\nServern kombinerar 4 CPU-kärnor och 6 GB RAM med 120 GB SSD RAID 10-lagring och 3000 GB bandbredd. Detta ger utrymme för tyngre arbetsbelastningar, flera tjänster eller ökande trafik.\n\nTripleZero iT levererar en pålitlig VPS-grund som du kan konfigurera efter dina behov. Få flexibiliteten hos en virtuell server med en professionell partner i närheten."
+      "shortDescription": "– 4 CPU-kärnor\n– 6 GB RAM\n– 120 GB NVMe-schijfruimte\n– 3000 GB bandbredd",
+      "description": "VPS Hosting Business är för växande webbprojekt, affärsapplikationer och utvecklingsteam som behöver ytterligare kapacitet och konsekvent prestanda.\n\nServern kombinerar 4 CPU-kärnor och 6 GB RAM med 120 GB NVMe-schijfruimte-lagring och 3000 GB bandbredd. Detta ger utrymme för tyngre arbetsbelastningar, flera tjänster eller ökande trafik.\n\nTripleZero iT levererar en pålitlig VPS-grund som du kan konfigurera efter dina behov. Få flexibiliteten hos en virtuell server med en professionell partner i närheten."
     },
     "wordpress-hosting-basic": {
       "name": "WordPress Hosting Basic",
@@ -2268,18 +2268,18 @@
     },
     "vps-hosting-basic": {
       "name": "Grunnleggende VPS Hosting",
-      "shortDescription": "– 2 CPU-kjerner\n– 2 GB RAM\n– 40 GB SSD RAID 10\n– 1000 GB båndbredde",
-      "description": "VPS Hosting Basic er egnet for utviklere, små applikasjoner og nettsteder som trenger mer kontroll og forutsigbare ressurser enn delt hosting gir.\n\nMed 2 CPU-kjerner, 2 GB RAM, 40 GB SSD RAID 10-lagring og 1000 GB båndbredde får du en solid virtuell server for lett til moderat arbeidsbelastning.\n\nTripleZero iT gir deg et pålitelig infrastrukturfundament, slik at du kan fokusere på applikasjonen, nettstedet eller utviklingsmiljøet ditt. Oppskalere når etterspørselen øker."
+      "shortDescription": "– 2 CPU-kjerner\n– 2 GB RAM\n– 40 GB NVMe-schijfruimte\n– 1000 GB båndbredde",
+      "description": "VPS Hosting Basic er egnet for utviklere, små applikasjoner og nettsteder som trenger mer kontroll og forutsigbare ressurser enn delt hosting gir.\n\nMed 2 CPU-kjerner, 2 GB RAM, 40 GB NVMe-schijfruimte-lagring og 1000 GB båndbredde får du en solid virtuell server for lett til moderat arbeidsbelastning.\n\nTripleZero iT gir deg et pålitelig infrastrukturfundament, slik at du kan fokusere på applikasjonen, nettstedet eller utviklingsmiljøet ditt. Oppskalere når etterspørselen øker."
     },
     "vps-hosting-plus": {
       "name": "VPS Hosting Plus",
-      "shortDescription": "– 8 CPU-kjerner\n– 12 GB RAM\n– 240 GB SSD RAID 10\n– 6000 GB båndbredde",
-      "description": "VPS Hosting Plus er designet for forretningskritiske nettsider, krevende applikasjoner og organisasjoner som forventer god kapasitet og stabil ytelse.\n\nMed 8 CPU-kjerner, 12 GB RAM, 240 GB SSD RAID 10-lagring og 6000 GB båndbredde, gir denne planen en kraftig base for intensive arbeidsbelastninger, flere miljøer og høyere besøksvolum.\n\nTripleZero iT hjelper deg med å bygge pålitelig infrastruktur som følger ambisjonene dine. Du beholder kontrollen over din VPS, med et erfarent team tilgjengelig for support."
+      "shortDescription": "– 8 CPU-kjerner\n– 12 GB RAM\n– 240 GB NVMe-schijfruimte\n– 6000 GB båndbredde",
+      "description": "VPS Hosting Plus er designet for forretningskritiske nettsider, krevende applikasjoner og organisasjoner som forventer god kapasitet og stabil ytelse.\n\nMed 8 CPU-kjerner, 12 GB RAM, 240 GB NVMe-schijfruimte-lagring og 6000 GB båndbredde, gir denne planen en kraftig base for intensive arbeidsbelastninger, flere miljøer og høyere besøksvolum.\n\nTripleZero iT hjelper deg med å bygge pålitelig infrastruktur som følger ambisjonene dine. Du beholder kontrollen over din VPS, med et erfarent team tilgjengelig for support."
     },
     "vps-hosting-business": {
       "name": "VPS Hosting Business",
-      "shortDescription": "– 4 CPU-kjerner\n– 6 GB RAM\n– 120 GB SSD RAID 10\n– 3000 GB båndbredde",
-      "description": "VPS Hosting Business er for voksende webprosjekter, forretningsapplikasjoner og utviklingsteam som trenger ekstra kapasitet og konsistent ytelse.\n\nServeren kombinerer 4 CPU-kjerner og 6 GB RAM med 120 GB SSD RAID 10-lagring og 3000 GB båndbredde. Dette gir rom for tyngre arbeidsbelastninger, flere tjenester eller økende trafikk.\n\nTripleZero iT leverer et pålitelig VPS-grunnlag som du kan konfigurere rundt dine behov. Få fleksibiliteten til en virtuell server med en profesjonell partner i nærheten."
+      "shortDescription": "– 4 CPU-kjerner\n– 6 GB RAM\n– 120 GB NVMe-schijfruimte\n– 3000 GB båndbredde",
+      "description": "VPS Hosting Business er for voksende webprosjekter, forretningsapplikasjoner og utviklingsteam som trenger ekstra kapasitet og konsistent ytelse.\n\nServeren kombinerer 4 CPU-kjerner og 6 GB RAM med 120 GB NVMe-schijfruimte-lagring og 3000 GB båndbredde. Dette gir rom for tyngre arbeidsbelastninger, flere tjenester eller økende trafikk.\n\nTripleZero iT leverer et pålitelig VPS-grunnlag som du kan konfigurere rundt dine behov. Få fleksibiliteten til en virtuell server med en profesjonell partner i nærheten."
     },
     "wordpress-hosting-basic": {
       "name": "Grunnleggende WordPress Hosting",
@@ -2365,18 +2365,18 @@
     },
     "vps-hosting-basic": {
       "name": "VPS-hosting Basic",
-      "shortDescription": "– 2 CPU ydintä\n– 2 Gt RAM-muistia\n– 40 Gt SSD RAID 10\n– 1000 GB kaistanleveys",
-      "description": "VPS Hosting Basic sopii kehittäjille, pienille sovelluksille ja verkkosivustoille, jotka tarvitsevat enemmän hallintaa ja ennakoitavissa olevia resursseja kuin jaettu hosting tarjoaa.\n\n2 CPU-ydintä, 2 Gt RAM-muistia, 40 Gt SSD RAID 10 -tallennustilaa ja 1000 Gt kaistanleveyttä tarjoavat vankan virtuaalipalvelimen kevyille ja kohtalaisille työkuormituksille.\n\nTripleZero iT antaa sinulle luotettavan infrastruktuuriperustan, joten voit keskittyä sovellukseesi, verkkosivustoosi tai kehitysympäristöösi. Kasvata, kun kysyntä kasvaa."
+      "shortDescription": "– 2 CPU ydintä\n– 2 Gt RAM-muistia\n– 40 Gt NVMe-schijfruimte\n– 1000 GB kaistanleveys",
+      "description": "VPS Hosting Basic sopii kehittäjille, pienille sovelluksille ja verkkosivustoille, jotka tarvitsevat enemmän hallintaa ja ennakoitavissa olevia resursseja kuin jaettu hosting tarjoaa.\n\n2 CPU-ydintä, 2 Gt RAM-muistia, 40 Gt NVMe-schijfruimte -tallennustilaa ja 1000 Gt kaistanleveyttä tarjoavat vankan virtuaalipalvelimen kevyille ja kohtalaisille työkuormituksille.\n\nTripleZero iT antaa sinulle luotettavan infrastruktuuriperustan, joten voit keskittyä sovellukseesi, verkkosivustoosi tai kehitysympäristöösi. Kasvata, kun kysyntä kasvaa."
     },
     "vps-hosting-plus": {
       "name": "VPS Hosting Plus",
-      "shortDescription": "– 8 CPU ydintä\n– 12 Gt RAM-muistia\n– 240 Gt SSD RAID 10\n– 6000 GB kaistanleveys",
-      "description": "VPS Hosting Plus on suunniteltu liiketoimintakriittisille verkkosivustoille, vaativille sovelluksille ja organisaatioille, jotka odottavat runsaasti kapasiteettia ja vakaata suorituskykyä.\n\n8 CPU-ydintä, 12 Gt RAM-muistia, 240 Gt SSD RAID 10 -tallennustilaa ja 6000 Gt kaistanleveyttä sisältävä suunnitelma tarjoaa tehokkaan perustan intensiiviselle työkuormitukselle, useille ympäristöille ja suuremmille kävijämäärille.\n\nTripleZero iT auttaa sinua rakentamaan luotettavaa infrastruktuuria, joka kulkee tavoitteidesi mukaan. Säilytät VPS:n hallinnan, ja kokenut tiimi tukee sinua."
+      "shortDescription": "– 8 CPU ydintä\n– 12 Gt RAM-muistia\n– 240 Gt NVMe-schijfruimte\n– 6000 GB kaistanleveys",
+      "description": "VPS Hosting Plus on suunniteltu liiketoimintakriittisille verkkosivustoille, vaativille sovelluksille ja organisaatioille, jotka odottavat runsaasti kapasiteettia ja vakaata suorituskykyä.\n\n8 CPU-ydintä, 12 Gt RAM-muistia, 240 Gt NVMe-schijfruimte -tallennustilaa ja 6000 Gt kaistanleveyttä sisältävä suunnitelma tarjoaa tehokkaan perustan intensiiviselle työkuormitukselle, useille ympäristöille ja suuremmille kävijämäärille.\n\nTripleZero iT auttaa sinua rakentamaan luotettavaa infrastruktuuria, joka kulkee tavoitteidesi mukaan. Säilytät VPS:n hallinnan, ja kokenut tiimi tukee sinua."
     },
     "vps-hosting-business": {
       "name": "VPS-hosting-liiketoiminta",
-      "shortDescription": "– 4 CPU ydintä\n– 6 Gt RAM-muistia\n– 120 Gt SSD RAID 10\n– 3000 GB kaistanleveys",
-      "description": "VPS Hosting Business on tarkoitettu kasvaville verkkoprojekteille, yrityssovelluksille ja kehitystiimeille, jotka tarvitsevat lisäkapasiteettia ja tasaista suorituskykyä.\n\nPalvelimessa yhdistyvät 4 CPU-ydintä ja 6 Gt RAM-muistia, 120 Gt SSD RAID 10 -tallennustilaa ja 3000 Gt kaistanleveyttä. Tämä jättää tilaa raskaammille työkuormille, useille palveluille tai kasvavalle liikenteelle.\n\nTripleZero iT tarjoaa luotettavan VPS-perustan, jonka voit määrittää tarpeidesi mukaan. Hanki virtuaalipalvelimen joustavuus ammattimaisen kumppanin kanssa lähellä."
+      "shortDescription": "– 4 CPU ydintä\n– 6 Gt RAM-muistia\n– 120 Gt NVMe-schijfruimte\n– 3000 GB kaistanleveys",
+      "description": "VPS Hosting Business on tarkoitettu kasvaville verkkoprojekteille, yrityssovelluksille ja kehitystiimeille, jotka tarvitsevat lisäkapasiteettia ja tasaista suorituskykyä.\n\nPalvelimessa yhdistyvät 4 CPU-ydintä ja 6 Gt RAM-muistia, 120 Gt NVMe-schijfruimte -tallennustilaa ja 3000 Gt kaistanleveyttä. Tämä jättää tilaa raskaammille työkuormille, useille palveluille tai kasvavalle liikenteelle.\n\nTripleZero iT tarjoaa luotettavan VPS-perustan, jonka voit määrittää tarpeidesi mukaan. Hanki virtuaalipalvelimen joustavuus ammattimaisen kumppanin kanssa lähellä."
     },
     "wordpress-hosting-basic": {
       "name": "WordPress Hosting Basic",
@@ -2462,18 +2462,18 @@
     },
     "vps-hosting-basic": {
       "name": "Базовий хостинг VPS",
-      "shortDescription": "– 2 ядра ЦП\n– 2 ГБ оперативної пам’яті\n– 40 ГБ SSD RAID 10\n– 1000 ГБ пропускної здатності",
-      "description": "VPS Hosting Basic підходить для розробників, невеликих програм і веб-сайтів, які потребують більшого контролю та передбачуваних ресурсів, ніж надає спільний хостинг.\n\nЗавдяки 2 ядрам ЦП, 2 ГБ оперативної пам’яті, 40 ГБ пам’яті SSD RAID 10 і пропускній здатності 1000 ГБ ви отримуєте надійний віртуальний сервер для легких і помірних робочих навантажень.\n\nTripleZero iT дає вам надійну основу інфраструктури, тож ви можете зосередитися на своїй програмі, веб-сайті чи середовищі розробки. Розширюйте масштаб, коли попит зростатиме."
+      "shortDescription": "– 2 ядра ЦП\n– 2 ГБ оперативної пам’яті\n– 40 ГБ NVMe-schijfruimte\n– 1000 ГБ пропускної здатності",
+      "description": "VPS Hosting Basic підходить для розробників, невеликих програм і веб-сайтів, які потребують більшого контролю та передбачуваних ресурсів, ніж надає спільний хостинг.\n\nЗавдяки 2 ядрам ЦП, 2 ГБ оперативної пам’яті, 40 ГБ пам’яті NVMe-schijfruimte і пропускній здатності 1000 ГБ ви отримуєте надійний віртуальний сервер для легких і помірних робочих навантажень.\n\nTripleZero iT дає вам надійну основу інфраструктури, тож ви можете зосередитися на своїй програмі, веб-сайті чи середовищі розробки. Розширюйте масштаб, коли попит зростатиме."
     },
     "vps-hosting-plus": {
       "name": "VPS хостинг плюс",
-      "shortDescription": "– 8 ядер ЦП\n– 12 Гб оперативної пам’яті\n– 240 ГБ SSD RAID 10\n– 6000 ГБ пропускної здатності",
-      "description": "VPS Hosting Plus розроблений для критично важливих для бізнесу веб-сайтів, вимогливих програм і організацій, які очікують достатньої потужності та стабільної роботи.\n\nЗавдяки 8 ядрам ЦП, 12 ГБ оперативної пам’яті, 240 ГБ пам’яті SSD RAID 10 і пропускній здатності 6000 ГБ цей план забезпечує потужну базу для інтенсивних робочих навантажень, різноманітних середовищ і більшої кількості відвідувачів.\n\nTripleZero iT допоможе вам побудувати надійну інфраструктуру, яка відповідає вашим амбіціям. Ви зберігаєте контроль над своїм VPS, а досвідчена команда доступна для підтримки."
+      "shortDescription": "– 8 ядер ЦП\n– 12 Гб оперативної пам’яті\n– 240 ГБ NVMe-schijfruimte\n– 6000 ГБ пропускної здатності",
+      "description": "VPS Hosting Plus розроблений для критично важливих для бізнесу веб-сайтів, вимогливих програм і організацій, які очікують достатньої потужності та стабільної роботи.\n\nЗавдяки 8 ядрам ЦП, 12 ГБ оперативної пам’яті, 240 ГБ пам’яті NVMe-schijfruimte і пропускній здатності 6000 ГБ цей план забезпечує потужну базу для інтенсивних робочих навантажень, різноманітних середовищ і більшої кількості відвідувачів.\n\nTripleZero iT допоможе вам побудувати надійну інфраструктуру, яка відповідає вашим амбіціям. Ви зберігаєте контроль над своїм VPS, а досвідчена команда доступна для підтримки."
     },
     "vps-hosting-business": {
       "name": "VPS хостинг бізнес",
-      "shortDescription": "– 4 ядра ЦП\n– 6 Гб оперативної пам’яті\n– 120 ГБ SSD RAID 10\n– 3000 ГБ пропускної здатності",
-      "description": "VPS Hosting Business призначений для розширених веб-проектів, бізнес-додатків і команд розробників, яким потрібна додаткова потужність і стабільна продуктивність.\n\nСервер поєднує в собі 4 ядра ЦП і 6 ГБ оперативної пам’яті, 120 ГБ SSD RAID 10 і пропускну здатність 3000 ГБ. Це залишає місце для більшого робочого навантаження, кількох служб або збільшення трафіку.\n\nTripleZero iT забезпечує надійну основу VPS, яку ви можете налаштувати відповідно до своїх потреб. Отримайте гнучкість віртуального сервера з професійним партнером поруч."
+      "shortDescription": "– 4 ядра ЦП\n– 6 Гб оперативної пам’яті\n– 120 ГБ NVMe-schijfruimte\n– 3000 ГБ пропускної здатності",
+      "description": "VPS Hosting Business призначений для розширених веб-проектів, бізнес-додатків і команд розробників, яким потрібна додаткова потужність і стабільна продуктивність.\n\nСервер поєднує в собі 4 ядра ЦП і 6 ГБ оперативної пам’яті, 120 ГБ NVMe-schijfruimte і пропускну здатність 3000 ГБ. Це залишає місце для більшого робочого навантаження, кількох служб або збільшення трафіку.\n\nTripleZero iT забезпечує надійну основу VPS, яку ви можете налаштувати відповідно до своїх потреб. Отримайте гнучкість віртуального сервера з професійним партнером поруч."
     },
     "wordpress-hosting-basic": {
       "name": "Базовий хостинг WordPress",
@@ -2559,18 +2559,18 @@
     },
     "vps-hosting-basic": {
       "name": "Базовый VPS-хостинг",
-      "shortDescription": "– 2 ядра процессора\n– 2 ГБ ОЗУ\n– 40 ГБ SSD RAID 10\n– Пропускная способность 1000 ГБ",
-      "description": "VPS Hosting Basic подходит разработчикам, небольшим приложениям и веб-сайтам, которым требуется больше контроля и предсказуемых ресурсов, чем предоставляет виртуальный хостинг.\n\nБлагодаря 2 ядрам ЦП, 2 ГБ ОЗУ, твердотельному накопителю RAID 10 емкостью 40 ГБ и пропускной способности 1000 ГБ вы получаете надежный виртуальный сервер для легких и умеренных рабочих нагрузок.\n\nTripleZero iT предоставляет вам надежную основу инфраструктуры, поэтому вы можете сосредоточиться на своем приложении, веб-сайте или среде разработки. Масштабируйтесь по мере роста спроса."
+      "shortDescription": "– 2 ядра процессора\n– 2 ГБ ОЗУ\n– 40 ГБ NVMe-schijfruimte\n– Пропускная способность 1000 ГБ",
+      "description": "VPS Hosting Basic подходит разработчикам, небольшим приложениям и веб-сайтам, которым требуется больше контроля и предсказуемых ресурсов, чем предоставляет виртуальный хостинг.\n\nБлагодаря 2 ядрам ЦП, 2 ГБ ОЗУ, 40 ГБ NVMe-schijfruimte и пропускной способности 1000 ГБ вы получаете надежный виртуальный сервер для легких и умеренных рабочих нагрузок.\n\nTripleZero iT предоставляет вам надежную основу инфраструктуры, поэтому вы можете сосредоточиться на своем приложении, веб-сайте или среде разработки. Масштабируйтесь по мере роста спроса."
     },
     "vps-hosting-plus": {
       "name": "VPS-хостинг Плюс",
-      "shortDescription": "– 8 ядер процессора\n– 12 ГБ ОЗУ\n– SSD-накопитель емкостью 240 ГБ RAID 10\n– Пропускная способность 6000 ГБ",
-      "description": "Бизнес-хостинг VPS предназначен для критически важных веб-сайтов, требовательных приложений и организаций, которым требуется достаточная емкость и стабильная производительность.\n\nБлагодаря 8 ядрам ЦП, 12 ГБ ОЗУ, 240 ГБ SSD-накопителя RAID 10 и пропускной способности 6000 ГБ этот план обеспечивает мощную основу для интенсивных рабочих нагрузок, нескольких сред и большего количества посетителей.\n\nTripleZero iT поможет вам построить надежную инфраструктуру, соответствующую вашим амбициям. Вы сохраняете контроль над своим VPS, а опытная команда готова оказать поддержку."
+      "shortDescription": "– 8 ядер процессора\n– 12 ГБ ОЗУ\n– 240 ГБ NVMe-schijfruimte\n– Пропускная способность 6000 ГБ",
+      "description": "Бизнес-хостинг VPS предназначен для критически важных веб-сайтов, требовательных приложений и организаций, которым требуется достаточная емкость и стабильная производительность.\n\nБлагодаря 8 ядрам ЦП, 12 ГБ ОЗУ, 240 ГБ NVMe-schijfruimte и пропускной способности 6000 ГБ этот план обеспечивает мощную основу для интенсивных рабочих нагрузок, нескольких сред и большего количества посетителей.\n\nTripleZero iT поможет вам построить надежную инфраструктуру, соответствующую вашим амбициям. Вы сохраняете контроль над своим VPS, а опытная команда готова оказать поддержку."
     },
     "vps-hosting-business": {
       "name": "VPS-хостинг для бизнеса",
-      "shortDescription": "– 4 ядра процессора\n– 6 ГБ ОЗУ\n– SSD-накопитель емкостью 120 ГБ RAID 10\n– Пропускная способность 3000 ГБ",
-      "description": "VPS Hosting Business предназначен для растущих веб-проектов, бизнес-приложений и групп разработчиков, которым необходимы дополнительные мощности и стабильная производительность.\n\nСервер сочетает в себе 4 ядра ЦП и 6 ГБ оперативной памяти, SSD-накопитель SSD RAID 10 емкостью 120 ГБ и пропускную способность 3000 ГБ. Это оставляет место для более высоких рабочих нагрузок, использования нескольких сервисов или увеличения трафика.\n\nTripleZero iT предоставляет надежную основу VPS, которую вы можете настроить в соответствии со своими потребностями. Получите гибкость виртуального сервера с профессиональным партнером поблизости."
+      "shortDescription": "– 4 ядра процессора\n– 6 ГБ ОЗУ\n– 120 ГБ NVMe-schijfruimte\n– Пропускная способность 3000 ГБ",
+      "description": "VPS Hosting Business предназначен для растущих веб-проектов, бизнес-приложений и групп разработчиков, которым необходимы дополнительные мощности и стабильная производительность.\n\nСервер сочетает в себе 4 ядра ЦП и 6 ГБ оперативной памяти, SSD-накопитель NVMe-schijfruimte емкостью 120 ГБ и пропускную способность 3000 ГБ. Это оставляет место для более высоких рабочих нагрузок, использования нескольких сервисов или увеличения трафика.\n\nTripleZero iT предоставляет надежную основу VPS, которую вы можете настроить в соответствии со своими потребностями. Получите гибкость виртуального сервера с профессиональным партнером поблизости."
     },
     "wordpress-hosting-basic": {
       "name": "Базовый хостинг WordPress",
@@ -2656,18 +2656,18 @@
     },
     "vps-hosting-basic": {
       "name": "VPS Barındırma Temeli",
-      "shortDescription": "– 2 CPU çekirdeği\n– 2GB RAM\n– 40 GB SSD RAID10\n– 1000 GB bant genişliği",
-      "description": "VPS Hosting Basic, paylaşılan barındırmanın sağladığından daha fazla kontrole ve öngörülebilir kaynağa ihtiyaç duyan geliştiricilere, küçük uygulamalara ve web sitelerine uygundur.\n\n2 CPU çekirdeği, 2 GB RAM, 40 GB SSD RAID 10 depolama ve 1000 GB bant genişliği ile hafif ve orta düzey iş yükleri için sağlam bir sanal sunucuya sahip olursunuz.\n\nTripleZero iT size güvenilir bir altyapı temeli sağlar, böylece uygulamanıza, web sitenize veya geliştirme ortamınıza odaklanabilirsiniz. Talep arttığında ölçeği büyütün."
+      "shortDescription": "– 2 CPU çekirdeği\n– 2GB RAM\n– 40 GB NVMe-schijfruimte\n– 1000 GB bant genişliği",
+      "description": "VPS Hosting Basic, paylaşılan barındırmanın sağladığından daha fazla kontrole ve öngörülebilir kaynağa ihtiyaç duyan geliştiricilere, küçük uygulamalara ve web sitelerine uygundur.\n\n2 CPU çekirdeği, 2 GB RAM, 40 GB NVMe-schijfruimte depolama ve 1000 GB bant genişliği ile hafif ve orta düzey iş yükleri için sağlam bir sanal sunucuya sahip olursunuz.\n\nTripleZero iT size güvenilir bir altyapı temeli sağlar, böylece uygulamanıza, web sitenize veya geliştirme ortamınıza odaklanabilirsiniz. Talep arttığında ölçeği büyütün."
     },
     "vps-hosting-plus": {
       "name": "VPS Barındırma Artı",
-      "shortDescription": "– 8 CPU çekirdeği\n– 12GB RAM\n– 240 GB SSD RAID10\n– 6000 GB bant genişliği",
-      "description": "VPS Hosting Plus, iş açısından kritik web siteleri, zorlu uygulamalar ve geniş kapasite ve istikrarlı performans bekleyen kuruluşlar için tasarlanmıştır.\n\n8 CPU çekirdeği, 12 GB RAM, 240 GB SSD RAID 10 depolama alanı ve 6000 GB bant genişliğiyle bu plan, yoğun iş yükleri, çoklu ortamlar ve daha yüksek ziyaretçi hacimleri için güçlü bir temel sağlar.\n\nTripleZero iT, hedeflerinizle birlikte hareket eden güvenilir bir altyapı oluşturmanıza yardımcı olur. Destek için hazır deneyimli bir ekiple VPS'nizin kontrolü sizde kalır."
+      "shortDescription": "– 8 CPU çekirdeği\n– 12GB RAM\n– 240 GB NVMe-schijfruimte\n– 6000 GB bant genişliği",
+      "description": "VPS Hosting Plus, iş açısından kritik web siteleri, zorlu uygulamalar ve geniş kapasite ve istikrarlı performans bekleyen kuruluşlar için tasarlanmıştır.\n\n8 CPU çekirdeği, 12 GB RAM, 240 GB NVMe-schijfruimte depolama alanı ve 6000 GB bant genişliğiyle bu plan, yoğun iş yükleri, çoklu ortamlar ve daha yüksek ziyaretçi hacimleri için güçlü bir temel sağlar.\n\nTripleZero iT, hedeflerinizle birlikte hareket eden güvenilir bir altyapı oluşturmanıza yardımcı olur. Destek için hazır deneyimli bir ekiple VPS'nizin kontrolü sizde kalır."
     },
     "vps-hosting-business": {
       "name": "VPS Barındırma İşi",
-      "shortDescription": "– 4 CPU çekirdeği\n– 6GB RAM\n– 120 GB SSD RAID10\n– 3000 GB bant genişliği",
-      "description": "VPS Hosting Business, ek kapasite ve tutarlı performansa ihtiyaç duyan büyüyen web projeleri, iş uygulamaları ve geliştirme ekipleri içindir.\n\nSunucu, 4 CPU çekirdeğini ve 6 GB RAM'i 120 GB SSD RAID 10 depolama ve 3000 GB bant genişliği ile birleştirir. Bu, daha ağır iş yüklerine, birden fazla hizmete veya artan trafiğe yer bırakır.\n\nTripleZero iT, ihtiyaçlarınıza göre yapılandırabileceğiniz güvenilir bir VPS temeli sunar. Yakınınızda profesyonel bir iş ortağıyla sanal sunucunun esnekliğini kazanın."
+      "shortDescription": "– 4 CPU çekirdeği\n– 6GB RAM\n– 120 GB NVMe-schijfruimte\n– 3000 GB bant genişliği",
+      "description": "VPS Hosting Business, ek kapasite ve tutarlı performansa ihtiyaç duyan büyüyen web projeleri, iş uygulamaları ve geliştirme ekipleri içindir.\n\nSunucu, 4 CPU çekirdeğini ve 6 GB RAM'i 120 GB NVMe-schijfruimte depolama ve 3000 GB bant genişliği ile birleştirir. Bu, daha ağır iş yüklerine, birden fazla hizmete veya artan trafiğe yer bırakır.\n\nTripleZero iT, ihtiyaçlarınıza göre yapılandırabileceğiniz güvenilir bir VPS temeli sunar. Yakınınızda profesyonel bir iş ortağıyla sanal sunucunun esnekliğini kazanın."
     },
     "wordpress-hosting-basic": {
       "name": "WordPress Barındırma Temeli",
@@ -2753,18 +2753,18 @@
     },
     "vps-hosting-basic": {
       "name": "VPS אירוח בסיסי",
-      "shortDescription": "– 2 ליבות מעבד\n- 2 GB זיכרון RAM\n– 40 GB SSD RAID 10\n- רוחב פס של 1000 GB",
-      "description": "VPS Hosting Basic מתאים למפתחים, אפליקציות קטנות ואתרי אינטרנט שזקוקים ליותר שליטה ומשאבים צפויים ממה שמספק אירוח משותף.\n\nעם 2 ליבות CPU, 2 GB RAM, אחסון SSD RAID 10 של 40 GB ורוחב פס של 1000 GB, אתה מקבל שרת וירטואלי מוצק לעומסי עבודה קלים עד בינוניים.\n\nTripleZero iT נותן לך בסיס תשתית אמין, כך שתוכל להתמקד באפליקציה, באתר או בסביבת הפיתוח שלך. הגדלה כאשר הביקוש גדל."
+      "shortDescription": "– 2 ליבות מעבד\n- 2 GB זיכרון RAM\n– 40 GB NVMe-schijfruimte\n- רוחב פס של 1000 GB",
+      "description": "VPS Hosting Basic מתאים למפתחים, אפליקציות קטנות ואתרי אינטרנט שזקוקים ליותר שליטה ומשאבים צפויים ממה שמספק אירוח משותף.\n\nעם 2 ליבות CPU, 2 GB RAM, אחסון NVMe-schijfruimte של 40 GB ורוחב פס של 1000 GB, אתה מקבל שרת וירטואלי מוצק לעומסי עבודה קלים עד בינוניים.\n\nTripleZero iT נותן לך בסיס תשתית אמין, כך שתוכל להתמקד באפליקציה, באתר או בסביבת הפיתוח שלך. הגדלה כאשר הביקוש גדל."
     },
     "vps-hosting-plus": {
       "name": "VPS Hosting Plus",
-      "shortDescription": "– 8 ליבות מעבד\n- 12 ג'יגה זיכרון RAM\n- SSD RAID 10 בנפח 240 ג'יגה\n- רוחב פס של 6000 GB",
-      "description": "VPS Hosting Plus מיועד לאתרים קריטיים לעסקים, יישומים וארגונים תובעניים שמצפים לקיבולת מספקת וביצועים יציבים.\n\nעם 8 ליבות CPU, 12 GB RAM, אחסון SSD RAID 10 של 240 GB ורוחב פס של 6000 GB, תוכנית זו מספקת בסיס רב עוצמה לעומסי עבודה אינטנסיביים, סביבות מרובות ונפחי מבקרים גבוהים יותר.\n\nTripleZero iT עוזר לך לבנות תשתית אמינה שעוברת עם השאיפות שלך. אתה שומר על השליטה ב-VPS שלך, עם צוות מנוסה זמין לתמיכה."
+      "shortDescription": "– 8 ליבות מעבד\n- 12 ג'יגה זיכרון RAM\n- NVMe-schijfruimte בנפח 240 ג'יגה\n- רוחב פס של 6000 GB",
+      "description": "VPS Hosting Plus מיועד לאתרים קריטיים לעסקים, יישומים וארגונים תובעניים שמצפים לקיבולת מספקת וביצועים יציבים.\n\nעם 8 ליבות CPU, 12 GB RAM, אחסון NVMe-schijfruimte של 240 GB ורוחב פס של 6000 GB, תוכנית זו מספקת בסיס רב עוצמה לעומסי עבודה אינטנסיביים, סביבות מרובות ונפחי מבקרים גבוהים יותר.\n\nTripleZero iT עוזר לך לבנות תשתית אמינה שעוברת עם השאיפות שלך. אתה שומר על השליטה ב-VPS שלך, עם צוות מנוסה זמין לתמיכה."
     },
     "vps-hosting-business": {
       "name": "עסק אירוח VPS",
-      "shortDescription": "– 4 ליבות מעבד\n- 6 ג'יגה זיכרון RAM\n– 120 GB SSD RAID 10\n- רוחב פס של 3000 GB",
-      "description": "VPS Hosting Business מיועד להגדלת פרויקטי אינטרנט, יישומים עסקיים וצוותי פיתוח הזקוקים לקיבולת נוספת וביצועים עקביים.\n\nהשרת משלב 4 ליבות CPU ו-6 GB RAM עם 120 GB SSD RAID 10 אחסון ורוחב פס של 3000 GB. זה משאיר מקום לעומסי עבודה כבדים יותר, שירותים מרובים או הגדלת תעבורה.\n\nTripleZero iT מספק בסיס VPS אמין שתוכל להגדיר בהתאם לצרכים שלך. השג את הגמישות של שרת וירטואלי עם שותף מקצועי בקרבת מקום."
+      "shortDescription": "– 4 ליבות מעבד\n- 6 ג'יגה זיכרון RAM\n– 120 GB NVMe-schijfruimte\n- רוחב פס של 3000 GB",
+      "description": "VPS Hosting Business מיועד להגדלת פרויקטי אינטרנט, יישומים עסקיים וצוותי פיתוח הזקוקים לקיבולת נוספת וביצועים עקביים.\n\nהשרת משלב 4 ליבות CPU ו-6 GB RAM עם 120 GB NVMe-schijfruimte אחסון ורוחב פס של 3000 GB. זה משאיר מקום לעומסי עבודה כבדים יותר, שירותים מרובים או הגדלת תעבורה.\n\nTripleZero iT מספק בסיס VPS אמין שתוכל להגדיר בהתאם לצרכים שלך. השג את הגמישות של שרת וירטואלי עם שותף מקצועי בקרבת מקום."
     },
     "wordpress-hosting-basic": {
       "name": "אחסון וורדפרס בסיסי",
@@ -2850,18 +2850,18 @@
     },
     "vps-hosting-basic": {
       "name": "استضافة VPS الأساسية",
-      "shortDescription": "- 2 نواة لوحدة المعالجة المركزية\n– 2 جيجا بايت رام\n– 40 جيجابايت SSD RAID 10\n- عرض النطاق الترددي 1000 جيجابايت",
-      "description": "إن VPS Hosting Basic مناسب للمطورين والتطبيقات الصغيرة ومواقع الويب التي تحتاج إلى المزيد من التحكم والموارد التي يمكن التنبؤ بها مما توفره الاستضافة المشتركة.\n\nمع وجود نواة لوحدة المعالجة المركزية، وذاكرة الوصول العشوائي (RAM) سعة 2 جيجابايت، ومساحة تخزين SSD RAID 10 سعة 40 جيجابايت، وعرض نطاق ترددي يبلغ 1000 جيجابايت، تحصل على خادم افتراضي قوي لأحمال العمل الخفيفة إلى المتوسطة.\n\nيمنحك TripleZero iT أساسًا للبنية التحتية يمكن الاعتماد عليه، حتى تتمكن من التركيز على التطبيق أو موقع الويب أو بيئة التطوير الخاصة بك. قم بالتوسع عندما ينمو الطلب."
+      "shortDescription": "- 2 نواة لوحدة المعالجة المركزية\n– 2 جيجا بايت رام\n– 40 جيجابايت NVMe-schijfruimte\n- عرض النطاق الترددي 1000 جيجابايت",
+      "description": "إن VPS Hosting Basic مناسب للمطورين والتطبيقات الصغيرة ومواقع الويب التي تحتاج إلى المزيد من التحكم والموارد التي يمكن التنبؤ بها مما توفره الاستضافة المشتركة.\n\nمع وجود نواة لوحدة المعالجة المركزية، وذاكرة الوصول العشوائي (RAM) سعة 2 جيجابايت، ومساحة تخزين NVMe-schijfruimte سعة 40 جيجابايت، وعرض نطاق ترددي يبلغ 1000 جيجابايت، تحصل على خادم افتراضي قوي لأحمال العمل الخفيفة إلى المتوسطة.\n\nيمنحك TripleZero iT أساسًا للبنية التحتية يمكن الاعتماد عليه، حتى تتمكن من التركيز على التطبيق أو موقع الويب أو بيئة التطوير الخاصة بك. قم بالتوسع عندما ينمو الطلب."
     },
     "vps-hosting-plus": {
       "name": "استضافة VPS بلس",
-      "shortDescription": "- 8 نوى لوحدة المعالجة المركزية\n- 12 جيجا بايت رام\n– 240 جيجابايت SSD RAID 10\n- عرض النطاق الترددي 6000 جيجابايت",
-      "description": "تم تصميم VPS Hosting Plus لمواقع الويب المهمة للأعمال والتطبيقات والمنظمات التي تتطلب سعة كبيرة وأداء مستقر.\n\nمع 8 مراكز لوحدة المعالجة المركزية، وذاكرة الوصول العشوائي (RAM) سعة 12 جيجابايت، وتخزين SSD RAID 10 سعة 240 جيجابايت، وعرض النطاق الترددي 6000 جيجابايت، توفر هذه الخطة قاعدة قوية لأحمال العمل المكثفة والبيئات المتعددة وأعداد كبيرة من الزوار.\n\nيساعدك TripleZero iT على إنشاء بنية تحتية يمكن الاعتماد عليها وتتوافق مع طموحاتك. يمكنك الاحتفاظ بالسيطرة على الخادم الافتراضي الخاص (VPS) الخاص بك، مع توفر فريق من ذوي الخبرة للدعم."
+      "shortDescription": "- 8 نوى لوحدة المعالجة المركزية\n- 12 جيجا بايت رام\n– 240 جيجابايت NVMe-schijfruimte\n- عرض النطاق الترددي 6000 جيجابايت",
+      "description": "تم تصميم VPS Hosting Plus لمواقع الويب المهمة للأعمال والتطبيقات والمنظمات التي تتطلب سعة كبيرة وأداء مستقر.\n\nمع 8 مراكز لوحدة المعالجة المركزية، وذاكرة الوصول العشوائي (RAM) سعة 12 جيجابايت، وتخزين NVMe-schijfruimte سعة 240 جيجابايت، وعرض النطاق الترددي 6000 جيجابايت، توفر هذه الخطة قاعدة قوية لأحمال العمل المكثفة والبيئات المتعددة وأعداد كبيرة من الزوار.\n\nيساعدك TripleZero iT على إنشاء بنية تحتية يمكن الاعتماد عليها وتتوافق مع طموحاتك. يمكنك الاحتفاظ بالسيطرة على الخادم الافتراضي الخاص (VPS) الخاص بك، مع توفر فريق من ذوي الخبرة للدعم."
     },
     "vps-hosting-business": {
       "name": "أعمال استضافة VPS",
-      "shortDescription": "- 4 نوى لوحدة المعالجة المركزية\n– 6 جيجا بايت رام\n– 120 جيجابايت SSD RAID 10\n- عرض النطاق الترددي 3000 جيجابايت",
-      "description": "VPS Hosting Business مخصص لمشاريع الويب المتنامية وتطبيقات الأعمال وفرق التطوير التي تحتاج إلى سعة إضافية وأداء ثابت.\n\nيجمع الخادم بين 4 أنوية لوحدة المعالجة المركزية وذاكرة وصول عشوائي (RAM) سعة 6 جيجابايت مع مساحة تخزين SSD RAID 10 بسعة 120 جيجابايت وعرض نطاق ترددي يبلغ 3000 جيجابايت. وهذا يترك مجالًا لأعباء العمل الثقيلة أو الخدمات المتعددة أو زيادة حركة المرور.\n\nيوفر TripleZero iT أساس VPS يمكن الاعتماد عليه والذي يمكنك تهيئته وفقًا لاحتياجاتك. احصل على مرونة الخادم الافتراضي مع شريك محترف قريب منك."
+      "shortDescription": "- 4 نوى لوحدة المعالجة المركزية\n– 6 جيجا بايت رام\n– 120 جيجابايت NVMe-schijfruimte\n- عرض النطاق الترددي 3000 جيجابايت",
+      "description": "VPS Hosting Business مخصص لمشاريع الويب المتنامية وتطبيقات الأعمال وفرق التطوير التي تحتاج إلى سعة إضافية وأداء ثابت.\n\nيجمع الخادم بين 4 أنوية لوحدة المعالجة المركزية وذاكرة وصول عشوائي (RAM) سعة 6 جيجابايت مع مساحة تخزين NVMe-schijfruimte بسعة 120 جيجابايت وعرض نطاق ترددي يبلغ 3000 جيجابايت. وهذا يترك مجالًا لأعباء العمل الثقيلة أو الخدمات المتعددة أو زيادة حركة المرور.\n\nيوفر TripleZero iT أساس VPS يمكن الاعتماد عليه والذي يمكنك تهيئته وفقًا لاحتياجاتك. احصل على مرونة الخادم الافتراضي مع شريك محترف قريب منك."
     },
     "wordpress-hosting-basic": {
       "name": "استضافة ووردبريس الأساسية",
@@ -2947,18 +2947,18 @@
     },
     "vps-hosting-basic": {
       "name": "VPS ჰოსტინგი ძირითადი",
-      "shortDescription": "- 2 CPU ბირთვი\n- 2 GB ოპერატიული მეხსიერება\n- 40 GB SSD RAID 10\n- 1000 GB გამტარუნარიანობა",
-      "description": "VPS Hosting Basic შეეფერება დეველოპერებს, მცირე აპლიკაციებსა და ვებსაიტებს, რომლებსაც მეტი კონტროლი და პროგნოზირებადი რესურსები სჭირდებათ, ვიდრე საერთო ჰოსტინგი იძლევა.\n\n2 CPU ბირთვით, 2 GB ოპერატიული მეხსიერებით, 40 GB SSD RAID 10 მეხსიერებით და 1000 GB გამტარუნარიანობით, თქვენ მიიღებთ მყარ ვირტუალურ სერვერს მსუბუქი და ზომიერი დატვირთვისთვის.\n\nTripleZero iT გაძლევთ საიმედო ინფრასტრუქტურის საფუძველს, ასე რომ თქვენ შეგიძლიათ ფოკუსირება მოახდინოთ თქვენს აპლიკაციაზე, ვებსაიტზე ან განვითარების გარემოზე. გაზარდეთ, როდესაც მოთხოვნა იზრდება."
+      "shortDescription": "- 2 CPU ბირთვი\n- 2 GB ოპერატიული მეხსიერება\n- 40 GB NVMe-schijfruimte\n- 1000 GB გამტარუნარიანობა",
+      "description": "VPS Hosting Basic შეეფერება დეველოპერებს, მცირე აპლიკაციებსა და ვებსაიტებს, რომლებსაც მეტი კონტროლი და პროგნოზირებადი რესურსები სჭირდებათ, ვიდრე საერთო ჰოსტინგი იძლევა.\n\n2 CPU ბირთვით, 2 GB ოპერატიული მეხსიერებით, 40 GB NVMe-schijfruimte მეხსიერებით და 1000 GB გამტარუნარიანობით, თქვენ მიიღებთ მყარ ვირტუალურ სერვერს მსუბუქი და ზომიერი დატვირთვისთვის.\n\nTripleZero iT გაძლევთ საიმედო ინფრასტრუქტურის საფუძველს, ასე რომ თქვენ შეგიძლიათ ფოკუსირება მოახდინოთ თქვენს აპლიკაციაზე, ვებსაიტზე ან განვითარების გარემოზე. გაზარდეთ, როდესაც მოთხოვნა იზრდება."
     },
     "vps-hosting-plus": {
       "name": "VPS ჰოსტინგი პლუსი",
-      "shortDescription": "- 8 CPU ბირთვი\n- 12 GB ოპერატიული მეხსიერება\n- 240 GB SSD RAID 10\n- 6000 GB გამტარუნარიანობა",
-      "description": "VPS ჰოსტინგი ბიზნესი შექმნილია ბიზნესისთვის კრიტიკული ვებსაიტებისთვის, მომთხოვნი აპლიკაციებისთვის და ორგანიზაციებისთვის, რომლებიც ელიან დიდ შესაძლებლობებს და სტაბილურ შესრულებას.\n\n8 CPU ბირთვით, 12 GB ოპერატიული მეხსიერებით, 240 GB SSD RAID 10 მეხსიერებით და 6000 GB გამტარუნარიანობით, ეს გეგმა უზრუნველყოფს მძლავრ ბაზას ინტენსიური დატვირთვისთვის, მრავალი გარემოსთვის და ვიზიტორების უფრო მაღალი მოცულობისთვის.\n\nTripleZero iT დაგეხმარებათ შექმნათ საიმედო ინფრასტრუქტურა, რომელიც მოძრაობს თქვენი ამბიციების შესაბამისად. თქვენ ინარჩუნებთ კონტროლს თქვენს VPS-ზე, მხარდაჭერისთვის ხელმისაწვდომი გამოცდილი გუნდით."
+      "shortDescription": "- 8 CPU ბირთვი\n- 12 GB ოპერატიული მეხსიერება\n- 240 GB NVMe-schijfruimte\n- 6000 GB გამტარუნარიანობა",
+      "description": "VPS ჰოსტინგი ბიზნესი შექმნილია ბიზნესისთვის კრიტიკული ვებსაიტებისთვის, მომთხოვნი აპლიკაციებისთვის და ორგანიზაციებისთვის, რომლებიც ელიან დიდ შესაძლებლობებს და სტაბილურ შესრულებას.\n\n8 CPU ბირთვით, 12 GB ოპერატიული მეხსიერებით, 240 GB NVMe-schijfruimte მეხსიერებით და 6000 GB გამტარუნარიანობით, ეს გეგმა უზრუნველყოფს მძლავრ ბაზას ინტენსიური დატვირთვისთვის, მრავალი გარემოსთვის და ვიზიტორების უფრო მაღალი მოცულობისთვის.\n\nTripleZero iT დაგეხმარებათ შექმნათ საიმედო ინფრასტრუქტურა, რომელიც მოძრაობს თქვენი ამბიციების შესაბამისად. თქვენ ინარჩუნებთ კონტროლს თქვენს VPS-ზე, მხარდაჭერისთვის ხელმისაწვდომი გამოცდილი გუნდით."
     },
     "vps-hosting-business": {
       "name": "VPS ჰოსტინგის ბიზნესი",
-      "shortDescription": "- 4 CPU ბირთვი\n- 6 GB ოპერატიული მეხსიერება\n- 120 GB SSD RAID 10\n- 3000 GB გამტარუნარიანობა",
-      "description": "VPS Hosting Business არის მზარდი ვებ პროექტები, ბიზნეს აპლიკაციები და განვითარების გუნდები, რომლებსაც სჭირდებათ დამატებითი შესაძლებლობები და თანმიმდევრული შესრულება.\n\nსერვერი აერთიანებს 4 CPU ბირთვს და 6 GB ოპერატიული მეხსიერებას 120 GB SSD RAID 10 საცავთან და 3000 GB გამტარუნარიანობასთან. ეს ტოვებს ადგილს უფრო მძიმე დატვირთვისთვის, მრავალი სერვისისთვის ან ტრაფიკის გაზრდისთვის.\n\nTripleZero iT აწვდის საიმედო VPS საფუძველს, რომელიც შეგიძლიათ დააკონფიგურიროთ თქვენს საჭიროებებზე. მოიპოვეთ ვირტუალური სერვერის მოქნილობა პროფესიონალ პარტნიორთან ახლოს."
+      "shortDescription": "- 4 CPU ბირთვი\n- 6 GB ოპერატიული მეხსიერება\n- 120 GB NVMe-schijfruimte\n- 3000 GB გამტარუნარიანობა",
+      "description": "VPS Hosting Business არის მზარდი ვებ პროექტები, ბიზნეს აპლიკაციები და განვითარების გუნდები, რომლებსაც სჭირდებათ დამატებითი შესაძლებლობები და თანმიმდევრული შესრულება.\n\nსერვერი აერთიანებს 4 CPU ბირთვს და 6 GB ოპერატიული მეხსიერებას 120 GB NVMe-schijfruimte საცავთან და 3000 GB გამტარუნარიანობასთან. ეს ტოვებს ადგილს უფრო მძიმე დატვირთვისთვის, მრავალი სერვისისთვის ან ტრაფიკის გაზრდისთვის.\n\nTripleZero iT აწვდის საიმედო VPS საფუძველს, რომელიც შეგიძლიათ დააკონფიგურიროთ თქვენს საჭიროებებზე. მოიპოვეთ ვირტუალური სერვერის მოქნილობა პროფესიონალ პარტნიორთან ახლოს."
     },
     "wordpress-hosting-basic": {
       "name": "WordPress ჰოსტინგი ძირითადი",
@@ -3044,18 +3044,18 @@
     },
     "vps-hosting-basic": {
       "name": "VPS հոստինգ Հիմնական",
-      "shortDescription": "- 2 պրոցեսորի միջուկ\n- 2 ԳԲ RAM\n– 40 ԳԲ SSD RAID 10\n- 1000 ԳԲ թողունակություն",
-      "description": "VPS Hosting Basic-ը հարմար է ծրագրավորողների, փոքր հավելվածների և կայքերի համար, որոնք ավելի շատ վերահսկողության և կանխատեսելի ռեսուրսների կարիք ունեն, քան տրամադրում է ընդհանուր հոսթինգը:\n\n2 պրոցեսորի միջուկով, 2 ԳԲ օպերատիվ հիշողությամբ, 40 ԳԲ SSD RAID 10 պահեստով և 1000 ԳԲ թողունակությամբ, դուք ստանում եք ամուր վիրտուալ սերվեր՝ թեթև և չափավոր ծանրաբեռնվածության համար:\n\nTripleZero iT-ը ձեզ տալիս է հուսալի ենթակառուցվածքային հիմք, այնպես որ կարող եք կենտրոնանալ ձեր հավելվածի, կայքի կամ զարգացման միջավայրի վրա: Մեծացե՛ք, երբ պահանջարկը մեծանա:"
+      "shortDescription": "- 2 պրոցեսորի միջուկ\n- 2 ԳԲ RAM\n– 40 ԳԲ NVMe-schijfruimte\n- 1000 ԳԲ թողունակություն",
+      "description": "VPS Hosting Basic-ը հարմար է ծրագրավորողների, փոքր հավելվածների և կայքերի համար, որոնք ավելի շատ վերահսկողության և կանխատեսելի ռեսուրսների կարիք ունեն, քան տրամադրում է ընդհանուր հոսթինգը:\n\n2 պրոցեսորի միջուկով, 2 ԳԲ օպերատիվ հիշողությամբ, 40 ԳԲ NVMe-schijfruimte պահեստով և 1000 ԳԲ թողունակությամբ, դուք ստանում եք ամուր վիրտուալ սերվեր՝ թեթև և չափավոր ծանրաբեռնվածության համար:\n\nTripleZero iT-ը ձեզ տալիս է հուսալի ենթակառուցվածքային հիմք, այնպես որ կարող եք կենտրոնանալ ձեր հավելվածի, կայքի կամ զարգացման միջավայրի վրա: Մեծացե՛ք, երբ պահանջարկը մեծանա:"
     },
     "vps-hosting-plus": {
       "name": "VPS Hosting Plus",
-      "shortDescription": "- 8 պրոցեսորի միջուկ\n- 12 ԳԲ RAM\n– 240 ԳԲ SSD RAID 10\n- 6000 ԳԲ թողունակություն",
-      "description": "VPS Hosting Plus-ը նախատեսված է բիզնեսի համար կարևոր կայքերի, պահանջկոտ հավելվածների և կազմակերպությունների համար, որոնք ակնկալում են մեծ հզորություն և կայուն կատարում:\n\n8 պրոցեսորի միջուկներով, 12 ԳԲ օպերատիվ հիշողությամբ, 240 ԳԲ SSD RAID 10 պահեստով և 6000 ԳԲ թողունակությամբ, այս պլանը հզոր բազա է ապահովում ինտենսիվ աշխատանքային բեռների, բազմաթիվ միջավայրերի և այցելուների ավելի մեծ ծավալների համար:\n\nTripleZero iT-ն օգնում է ձեզ ստեղծել հուսալի ենթակառուցվածք, որը շարժվում է ձեր հավակնություններին համապատասխան: Դուք պահպանում եք ձեր VPS-ի վերահսկողությունը՝ աջակցության համար հասանելի փորձառու թիմով:"
+      "shortDescription": "- 8 պրոցեսորի միջուկ\n- 12 ԳԲ RAM\n– 240 ԳԲ NVMe-schijfruimte\n- 6000 ԳԲ թողունակություն",
+      "description": "VPS Hosting Plus-ը նախատեսված է բիզնեսի համար կարևոր կայքերի, պահանջկոտ հավելվածների և կազմակերպությունների համար, որոնք ակնկալում են մեծ հզորություն և կայուն կատարում:\n\n8 պրոցեսորի միջուկներով, 12 ԳԲ օպերատիվ հիշողությամբ, 240 ԳԲ NVMe-schijfruimte պահեստով և 6000 ԳԲ թողունակությամբ, այս պլանը հզոր բազա է ապահովում ինտենսիվ աշխատանքային բեռների, բազմաթիվ միջավայրերի և այցելուների ավելի մեծ ծավալների համար:\n\nTripleZero iT-ն օգնում է ձեզ ստեղծել հուսալի ենթակառուցվածք, որը շարժվում է ձեր հավակնություններին համապատասխան: Դուք պահպանում եք ձեր VPS-ի վերահսկողությունը՝ աջակցության համար հասանելի փորձառու թիմով:"
     },
     "vps-hosting-business": {
       "name": "VPS հոստինգ բիզնես",
-      "shortDescription": "- 4 պրոցեսորի միջուկ\n- 6 ԳԲ RAM\n– 120 ԳԲ SSD RAID 10\n– 3000 ԳԲ թողունակություն",
-      "description": "VPS Hosting Business-ը նախատեսված է աճող վեբ նախագծերի, բիզնես հավելվածների և զարգացման թիմերի համար, որոնք կարիք ունեն լրացուցիչ հզորության և հետևողական կատարողականության:\n\nՍերվերը միավորում է 4 պրոցեսորի միջուկը և 6 ԳԲ օպերատիվ հիշողությունը 120 ԳԲ SSD RAID 10 պահեստավորման և 3000 ԳԲ թողունակության հետ: Սա տեղ է թողնում ավելի մեծ ծանրաբեռնվածության, բազմաթիվ ծառայությունների կամ երթևեկության ավելացման համար:\n\nTripleZero iT-ն ապահովում է հուսալի VPS հիմք, որը կարող եք կարգավորել ձեր կարիքների համար: Ձեռք բերեք վիրտուալ սերվերի ճկունություն մոտակա պրոֆեսիոնալ գործընկերոջ հետ:"
+      "shortDescription": "- 4 պրոցեսորի միջուկ\n- 6 ԳԲ RAM\n– 120 ԳԲ NVMe-schijfruimte\n– 3000 ԳԲ թողունակություն",
+      "description": "VPS Hosting Business-ը նախատեսված է աճող վեբ նախագծերի, բիզնես հավելվածների և զարգացման թիմերի համար, որոնք կարիք ունեն լրացուցիչ հզորության և հետևողական կատարողականության:\n\nՍերվերը միավորում է 4 պրոցեսորի միջուկը և 6 ԳԲ օպերատիվ հիշողությունը 120 ԳԲ NVMe-schijfruimte պահեստավորման և 3000 ԳԲ թողունակության հետ: Սա տեղ է թողնում ավելի մեծ ծանրաբեռնվածության, բազմաթիվ ծառայությունների կամ երթևեկության ավելացման համար:\n\nTripleZero iT-ն ապահովում է հուսալի VPS հիմք, որը կարող եք կարգավորել ձեր կարիքների համար: Ձեռք բերեք վիրտուալ սերվերի ճկունություն մոտակա պրոֆեսիոնալ գործընկերոջ հետ:"
     },
     "wordpress-hosting-basic": {
       "name": "WordPress հոստինգ Հիմնական",
@@ -3141,18 +3141,18 @@
     },
     "vps-hosting-basic": {
       "name": "VPS Hosting Basic",
-      "shortDescription": "- 2 CPU nüvəsi\n– 2 GB RAM\n– 40 GB SSD RAID 10\n– 1000 GB bant genişliyi",
-      "description": "VPS Hosting Basic, paylaşılan hostinqdən daha çox nəzarətə və proqnozlaşdırıla bilən resurslara ehtiyacı olan tərtibatçılar, kiçik proqramlar və vebsaytlar üçün uyğundur.\n\n2 CPU nüvəsi, 2 GB RAM, 40 GB SSD RAID 10 yaddaş və 1000 GB bant genişliyi ilə siz yüngül və orta səviyyəli iş yükləri üçün möhkəm virtual server əldə edirsiniz.\n\nTripleZero iT sizə etibarlı infrastruktur bazası təqdim edir, beləliklə siz diqqətinizi tətbiqinizə, vebsaytınıza və ya inkişaf mühitinizə yönəldə bilərsiniz. Tələb artdıqda miqyasını artırın."
+      "shortDescription": "- 2 CPU nüvəsi\n– 2 GB RAM\n– 40 GB NVMe-schijfruimte\n– 1000 GB bant genişliyi",
+      "description": "VPS Hosting Basic, paylaşılan hostinqdən daha çox nəzarətə və proqnozlaşdırıla bilən resurslara ehtiyacı olan tərtibatçılar, kiçik proqramlar və vebsaytlar üçün uyğundur.\n\n2 CPU nüvəsi, 2 GB RAM, 40 GB NVMe-schijfruimte yaddaş və 1000 GB bant genişliyi ilə siz yüngül və orta səviyyəli iş yükləri üçün möhkəm virtual server əldə edirsiniz.\n\nTripleZero iT sizə etibarlı infrastruktur bazası təqdim edir, beləliklə siz diqqətinizi tətbiqinizə, vebsaytınıza və ya inkişaf mühitinizə yönəldə bilərsiniz. Tələb artdıqda miqyasını artırın."
     },
     "vps-hosting-plus": {
       "name": "VPS Hosting Plus",
-      "shortDescription": "– 8 CPU nüvəsi\n– 12 GB RAM\n– 240 GB SSD RAID 10\n– 6000 GB bant genişliyi",
-      "description": "VPS Hosting Plus biznes üçün kritik vebsaytlar, tələbkar proqramlar və geniş tutum və sabit performans gözləyən təşkilatlar üçün nəzərdə tutulmuşdur.\n\n8 CPU nüvəsi, 12 GB RAM, 240 GB SSD RAID 10 saxlama və 6000 GB bant genişliyi ilə bu plan intensiv iş yükləri, çoxsaylı mühitlər və daha yüksək ziyarətçi həcmi üçün güclü baza təmin edir.\n\nTripleZero iT sizə ambisiyalarınızla hərəkət edən etibarlı infrastruktur qurmağa kömək edir. Dəstək üçün mövcud olan təcrübəli komanda ilə VPS-ə nəzarəti özündə saxlayırsınız."
+      "shortDescription": "– 8 CPU nüvəsi\n– 12 GB RAM\n– 240 GB NVMe-schijfruimte\n– 6000 GB bant genişliyi",
+      "description": "VPS Hosting Plus biznes üçün kritik vebsaytlar, tələbkar proqramlar və geniş tutum və sabit performans gözləyən təşkilatlar üçün nəzərdə tutulmuşdur.\n\n8 CPU nüvəsi, 12 GB RAM, 240 GB NVMe-schijfruimte saxlama və 6000 GB bant genişliyi ilə bu plan intensiv iş yükləri, çoxsaylı mühitlər və daha yüksək ziyarətçi həcmi üçün güclü baza təmin edir.\n\nTripleZero iT sizə ambisiyalarınızla hərəkət edən etibarlı infrastruktur qurmağa kömək edir. Dəstək üçün mövcud olan təcrübəli komanda ilə VPS-ə nəzarəti özündə saxlayırsınız."
     },
     "vps-hosting-business": {
       "name": "VPS Hosting Biznesi",
-      "shortDescription": "- 4 CPU nüvəsi\n– 6 GB RAM\n– 120 GB SSD RAID 10\n– 3000 GB bant genişliyi",
-      "description": "VPS Hosting Business artan veb layihələri, biznes proqramları və əlavə imkanlara və ardıcıl performansa ehtiyacı olan inkişaf qrupları üçündür.\n\nServer 4 CPU nüvəsini və 6 GB RAM-ı 120 GB SSD RAID 10 yaddaşı və 3000 GB bant genişliyi ilə birləşdirir. Bu, daha ağır iş yükləri, çoxsaylı xidmətlər və ya artan trafik üçün yer yaradır.\n\nTripleZero iT ehtiyaclarınıza uyğun olaraq konfiqurasiya edə biləcəyiniz etibarlı VPS təməlini təqdim edir. Yaxınlıqdakı peşəkar tərəfdaşla virtual serverin çevikliyini əldə edin."
+      "shortDescription": "- 4 CPU nüvəsi\n– 6 GB RAM\n– 120 GB NVMe-schijfruimte\n– 3000 GB bant genişliyi",
+      "description": "VPS Hosting Business artan veb layihələri, biznes proqramları və əlavə imkanlara və ardıcıl performansa ehtiyacı olan inkişaf qrupları üçündür.\n\nServer 4 CPU nüvəsini və 6 GB RAM-ı 120 GB NVMe-schijfruimte yaddaşı və 3000 GB bant genişliyi ilə birləşdirir. Bu, daha ağır iş yükləri, çoxsaylı xidmətlər və ya artan trafik üçün yer yaradır.\n\nTripleZero iT ehtiyaclarınıza uyğun olaraq konfiqurasiya edə biləcəyiniz etibarlı VPS təməlini təqdim edir. Yaxınlıqdakı peşəkar tərəfdaşla virtual serverin çevikliyini əldə edin."
     },
     "wordpress-hosting-basic": {
       "name": "WordPress Hosting Basic",
@@ -3238,18 +3238,18 @@
     },
     "vps-hosting-basic": {
       "name": "VPS 主机基本",
-      "shortDescription": "– 2 个 CPU 核心\n– 2 GB 内存\n– 40 GB 固态硬盘 RAID 10\n– 1000 GB 带宽",
-      "description": "VPS 托管基础版适合比共享托管提供更多控制和可预测资源的开发人员、小型应用程序和网站。\n\n凭借 2 个 CPU 核心、2 GB RAM、40 GB SSD RAID 10 存储和 1000 GB 带宽，您可以获得适合轻到中度工作负载的可靠虚拟服务器。\n\nTripleZero iT 为您提供可靠的基础设施基础，因此您可以专注于您的应用程序、网站或开发环境。当需求增长时扩大规模。"
+      "shortDescription": "– 2 个 CPU 核心\n– 2 GB 内存\n– 40 GB NVMe-schijfruimte\n– 1000 GB 带宽",
+      "description": "VPS 托管基础版适合比共享托管提供更多控制和可预测资源的开发人员、小型应用程序和网站。\n\n凭借 2 个 CPU 核心、2 GB RAM、40 GB NVMe-schijfruimte 存储和 1000 GB 带宽，您可以获得适合轻到中度工作负载的可靠虚拟服务器。\n\nTripleZero iT 为您提供可靠的基础设施基础，因此您可以专注于您的应用程序、网站或开发环境。当需求增长时扩大规模。"
     },
     "vps-hosting-plus": {
       "name": "VPS 主机增强版",
-      "shortDescription": "– 8 个 CPU 核心\n– 12 GB 内存\n– 240 GB 固态硬盘 RAID 10\n– 6000 GB 带宽",
-      "description": "VPS 托管业务专为业务关键型网站、要求苛刻的应用程序以及期望充足容量和稳定性能的组织而设计。\n\n该计划拥有 8 个 CPU 核心、12 GB RAM、240 GB SSD RAID 10 存储和 6000 GB 带宽，为密集型工作负载、多种环境和更高的访问量提供了强大的基础。\n\nTripleZero iT 帮助您构建可靠的基础设施，与您的雄心壮志一起发展。您可以保留对 VPS 的控制权，并有经验丰富的团队为您提供支持。"
+      "shortDescription": "– 8 个 CPU 核心\n– 12 GB 内存\n– 240 GB NVMe-schijfruimte\n– 6000 GB 带宽",
+      "description": "VPS 托管业务专为业务关键型网站、要求苛刻的应用程序以及期望充足容量和稳定性能的组织而设计。\n\n该计划拥有 8 个 CPU 核心、12 GB RAM、240 GB NVMe-schijfruimte 存储和 6000 GB 带宽，为密集型工作负载、多种环境和更高的访问量提供了强大的基础。\n\nTripleZero iT 帮助您构建可靠的基础设施，与您的雄心壮志一起发展。您可以保留对 VPS 的控制权，并有经验丰富的团队为您提供支持。"
     },
     "vps-hosting-business": {
       "name": "VPS主机业务",
-      "shortDescription": "– 4 个 CPU 核心\n– 6 GB 内存\n– 120 GB 固态硬盘 RAID 10\n– 3000 GB 带宽",
-      "description": "VPS Hosting Business 适用于需要额外容量和一致性能的不断增长的 Web 项目、业务应用程序和开发团队。\n\n该服务器结合了 4 个 CPU 核心和 6 GB RAM、120 GB SSD RAID 10 存储和 3000 GB 带宽。这为更重的工作负载、多种服务或增加的流量留下了空间。\n\nTripleZero iT 提供可靠的 VPS 基础，您可以根据自己的需求进行配置。通过附近的专业合作伙伴获得虚拟服务器的灵活性。"
+      "shortDescription": "– 4 个 CPU 核心\n– 6 GB 内存\n– 120 GB NVMe-schijfruimte\n– 3000 GB 带宽",
+      "description": "VPS Hosting Business 适用于需要额外容量和一致性能的不断增长的 Web 项目、业务应用程序和开发团队。\n\n该服务器结合了 4 个 CPU 核心和 6 GB RAM、120 GB NVMe-schijfruimte 存储和 3000 GB 带宽。这为更重的工作负载、多种服务或增加的流量留下了空间。\n\nTripleZero iT 提供可靠的 VPS 基础，您可以根据自己的需求进行配置。通过附近的专业合作伙伴获得虚拟服务器的灵活性。"
     },
     "wordpress-hosting-basic": {
       "name": "WordPress 托管基础",
@@ -3335,18 +3335,18 @@
     },
     "vps-hosting-basic": {
       "name": "VPSホスティングベーシック",
-      "shortDescription": "– 2 CPU コア\n– 2 GB RAM\n– 40 GB SSD RAID 10\n– 1000 GBの帯域幅",
-      "description": "VPS Hosting Basic は、共有ホスティングよりも多くの制御と予測可能なリソースを必要とする開発者、小規模アプリケーション、および Web サイトに適しています。\n\n2 つの CPU コア、2 GB RAM、40 GB SSD RAID 10 ストレージ、1000 GB の帯域幅を備えた、軽度から中程度のワークロードに適した堅牢な仮想サーバーが得られます。\n\nTripleZero iT は信頼性の高いインフラストラクチャ基盤を提供するため、アプリケーション、Web サイト、または開発環境に集中できます。需要が増えたらスケールアップします。"
+      "shortDescription": "– 2 CPU コア\n– 2 GB RAM\n– 40 GB NVMe-schijfruimte\n– 1000 GBの帯域幅",
+      "description": "VPS Hosting Basic は、共有ホスティングよりも多くの制御と予測可能なリソースを必要とする開発者、小規模アプリケーション、および Web サイトに適しています。\n\n2 つの CPU コア、2 GB RAM、40 GB NVMe-schijfruimte ストレージ、1000 GB の帯域幅を備えた、軽度から中程度のワークロードに適した堅牢な仮想サーバーが得られます。\n\nTripleZero iT は信頼性の高いインフラストラクチャ基盤を提供するため、アプリケーション、Web サイト、または開発環境に集中できます。需要が増えたらスケールアップします。"
     },
     "vps-hosting-plus": {
       "name": "VPSホスティングプラス",
-      "shortDescription": "– 8 CPU コア\n– 12 GB RAM\n– 240 GB SSD RAID 10\n– 6000 GBの帯域幅",
-      "description": "VPS ホスティング ビジネスは、ビジネス クリティカルな Web サイト、要求の厳しいアプリケーション、および十分な容量と安定したパフォーマンスを期待する組織向けに設計されています。\n\n8 個の CPU コア、12 GB RAM、240 GB SSD RAID 10 ストレージ、6000 GB の帯域幅を備えたこのプランは、集中的なワークロード、複数の環境、およびより多くの訪問者数に対応する強力な基盤を提供します。\n\nTripleZero iT は、あなたの野心に合わせて動く信頼できるインフラストラクチャの構築を支援します。経験豊富なチームがサポートを提供してくれるので、VPS の管理を維持できます。"
+      "shortDescription": "– 8 CPU コア\n– 12 GB RAM\n– 240 GB NVMe-schijfruimte\n– 6000 GBの帯域幅",
+      "description": "VPS ホスティング ビジネスは、ビジネス クリティカルな Web サイト、要求の厳しいアプリケーション、および十分な容量と安定したパフォーマンスを期待する組織向けに設計されています。\n\n8 個の CPU コア、12 GB RAM、240 GB NVMe-schijfruimte ストレージ、6000 GB の帯域幅を備えたこのプランは、集中的なワークロード、複数の環境、およびより多くの訪問者数に対応する強力な基盤を提供します。\n\nTripleZero iT は、あなたの野心に合わせて動く信頼できるインフラストラクチャの構築を支援します。経験豊富なチームがサポートを提供してくれるので、VPS の管理を維持できます。"
     },
     "vps-hosting-business": {
       "name": "VPSホスティングビジネス",
-      "shortDescription": "– 4 CPU コア\n– 6 GB RAM\n– 120 GB SSD RAID 10\n– 3000 GBの帯域幅",
-      "description": "VPS Hosting Business は、追加の容量と安定したパフォーマンスを必要とする成長中の Web プロジェクト、ビジネス アプリケーション、開発チーム向けです。\n\nこのサーバーは、4 つの CPU コアと 6 GB RAM、120 GB SSD RAID 10 ストレージ、および 3000 GB の帯域幅を組み合わせています。これにより、より重いワークロード、複数のサービス、またはトラフィックの増加に対応できる余地が残ります。\n\nTripleZero iT は、ニーズに合わせて構成できる信頼性の高い VPS 基盤を提供します。専門パートナーが近くにいるため、仮想サーバーの柔軟性が得られます。"
+      "shortDescription": "– 4 CPU コア\n– 6 GB RAM\n– 120 GB NVMe-schijfruimte\n– 3000 GBの帯域幅",
+      "description": "VPS Hosting Business は、追加の容量と安定したパフォーマンスを必要とする成長中の Web プロジェクト、ビジネス アプリケーション、開発チーム向けです。\n\nこのサーバーは、4 つの CPU コアと 6 GB RAM、120 GB NVMe-schijfruimte ストレージ、および 3000 GB の帯域幅を組み合わせています。これにより、より重いワークロード、複数のサービス、またはトラフィックの増加に対応できる余地が残ります。\n\nTripleZero iT は、ニーズに合わせて構成できる信頼性の高い VPS 基盤を提供します。専門パートナーが近くにいるため、仮想サーバーの柔軟性が得られます。"
     },
     "wordpress-hosting-basic": {
       "name": "WordPressホスティングベーシック",
@@ -3432,18 +3432,18 @@
     },
     "vps-hosting-basic": {
       "name": "ভিপিএস হোস্টিং বেসিক",
-      "shortDescription": "- 2 CPU কোর\n- 2 জিবি র‍্যাম\n- 40 GB SSD RAID 10\n- 1000 জিবি ব্যান্ডউইথ",
-      "description": "VPS হোস্টিং বেসিক ডেভেলপার, ছোট অ্যাপ্লিকেশন এবং ওয়েবসাইটগুলির জন্য উপযুক্ত যেগুলির জন্য শেয়ার্ড হোস্টিং প্রদানের চেয়ে বেশি নিয়ন্ত্রণ এবং অনুমানযোগ্য সংস্থান প্রয়োজন৷\n\n2 CPU কোর, 2 GB RAM, 40 GB SSD RAID 10 স্টোরেজ এবং 1000 GB ব্যান্ডউইথ সহ, আপনি হালকা থেকে মাঝারি কাজের চাপের জন্য একটি কঠিন ভার্চুয়াল সার্ভার পাবেন।\n\nTripleZero iT আপনাকে একটি নির্ভরযোগ্য অবকাঠামো ভিত্তি দেয়, যাতে আপনি আপনার অ্যাপ্লিকেশন, ওয়েবসাইট বা উন্নয়ন পরিবেশে ফোকাস করতে পারেন। চাহিদা বৃদ্ধি পেলে স্কেল আপ করুন।"
+      "shortDescription": "- 2 CPU কোর\n- 2 জিবি র‍্যাম\n- 40 GB NVMe-schijfruimte\n- 1000 জিবি ব্যান্ডউইথ",
+      "description": "VPS হোস্টিং বেসিক ডেভেলপার, ছোট অ্যাপ্লিকেশন এবং ওয়েবসাইটগুলির জন্য উপযুক্ত যেগুলির জন্য শেয়ার্ড হোস্টিং প্রদানের চেয়ে বেশি নিয়ন্ত্রণ এবং অনুমানযোগ্য সংস্থান প্রয়োজন৷\n\n2 CPU কোর, 2 GB RAM, 40 GB NVMe-schijfruimte স্টোরেজ এবং 1000 GB ব্যান্ডউইথ সহ, আপনি হালকা থেকে মাঝারি কাজের চাপের জন্য একটি কঠিন ভার্চুয়াল সার্ভার পাবেন।\n\nTripleZero iT আপনাকে একটি নির্ভরযোগ্য অবকাঠামো ভিত্তি দেয়, যাতে আপনি আপনার অ্যাপ্লিকেশন, ওয়েবসাইট বা উন্নয়ন পরিবেশে ফোকাস করতে পারেন। চাহিদা বৃদ্ধি পেলে স্কেল আপ করুন।"
     },
     "vps-hosting-plus": {
       "name": "ভিপিএস হোস্টিং প্লাস",
-      "shortDescription": "- 8 CPU কোর\n- 12 জিবি র‍্যাম\n- 240 GB SSD RAID 10\n- 6000 জিবি ব্যান্ডউইথ",
-      "description": "ভিপিএস হোস্টিং প্লাস ব্যবসা-সমালোচনামূলক ওয়েবসাইটগুলির জন্য ডিজাইন করা হয়েছে, চাহিদাপূর্ণ অ্যাপ্লিকেশন এবং সংস্থাগুলি যা যথেষ্ট ক্ষমতা এবং স্থিতিশীল কর্মক্ষমতা আশা করে।\n\n8 CPU কোর, 12 GB RAM, 240 GB SSD RAID 10 স্টোরেজ এবং 6000 GB ব্যান্ডউইথ সহ, এই প্ল্যানটি নিবিড় কাজের চাপ, একাধিক পরিবেশ এবং উচ্চতর ভিজিটর ভলিউমের জন্য একটি শক্তিশালী ভিত্তি প্রদান করে।\n\nTripleZero iT আপনাকে নির্ভরযোগ্য পরিকাঠামো তৈরি করতে সাহায্য করে যা আপনার উচ্চাকাঙ্ক্ষার সাথে চলে। সমর্থনের জন্য উপলব্ধ একটি অভিজ্ঞ দল সহ আপনি আপনার VPS-এর নিয়ন্ত্রণ বজায় রাখেন।"
+      "shortDescription": "- 8 CPU কোর\n- 12 জিবি র‍্যাম\n- 240 GB NVMe-schijfruimte\n- 6000 জিবি ব্যান্ডউইথ",
+      "description": "ভিপিএস হোস্টিং প্লাস ব্যবসা-সমালোচনামূলক ওয়েবসাইটগুলির জন্য ডিজাইন করা হয়েছে, চাহিদাপূর্ণ অ্যাপ্লিকেশন এবং সংস্থাগুলি যা যথেষ্ট ক্ষমতা এবং স্থিতিশীল কর্মক্ষমতা আশা করে।\n\n8 CPU কোর, 12 GB RAM, 240 GB NVMe-schijfruimte স্টোরেজ এবং 6000 GB ব্যান্ডউইথ সহ, এই প্ল্যানটি নিবিড় কাজের চাপ, একাধিক পরিবেশ এবং উচ্চতর ভিজিটর ভলিউমের জন্য একটি শক্তিশালী ভিত্তি প্রদান করে।\n\nTripleZero iT আপনাকে নির্ভরযোগ্য পরিকাঠামো তৈরি করতে সাহায্য করে যা আপনার উচ্চাকাঙ্ক্ষার সাথে চলে। সমর্থনের জন্য উপলব্ধ একটি অভিজ্ঞ দল সহ আপনি আপনার VPS-এর নিয়ন্ত্রণ বজায় রাখেন।"
     },
     "vps-hosting-business": {
       "name": "ভিপিএস হোস্টিং ব্যবসা",
-      "shortDescription": "- 4 CPU কোর\n- 6 জিবি র‌্যাম\n- 120 GB SSD RAID 10\n- 3000 জিবি ব্যান্ডউইথ",
-      "description": "VPS হোস্টিং বিজনেস হল ক্রমবর্ধমান ওয়েব প্রোজেক্ট, ব্যবসায়িক অ্যাপ্লিকেশন এবং ডেভেলপমেন্ট টিমের জন্য যাদের অতিরিক্ত ক্ষমতা এবং সামঞ্জস্যপূর্ণ কর্মক্ষমতা প্রয়োজন।\n\nসার্ভারটি 4 CPU কোর এবং 6 GB RAM এর সাথে 120 GB SSD RAID 10 স্টোরেজ এবং 3000 GB ব্যান্ডউইথকে একত্রিত করে। এটি ভারী কাজের চাপ, একাধিক পরিষেবা বা ক্রমবর্ধমান ট্রাফিকের জন্য জায়গা ছেড়ে দেয়।\n\nTripleZero iT একটি নির্ভরযোগ্য ভিপিএস ফাউন্ডেশন সরবরাহ করে যা আপনি আপনার প্রয়োজনে কনফিগার করতে পারেন। কাছাকাছি একজন পেশাদার অংশীদারের সাথে একটি ভার্চুয়াল সার্ভারের নমনীয়তা অর্জন করুন।"
+      "shortDescription": "- 4 CPU কোর\n- 6 জিবি র‌্যাম\n- 120 GB NVMe-schijfruimte\n- 3000 জিবি ব্যান্ডউইথ",
+      "description": "VPS হোস্টিং বিজনেস হল ক্রমবর্ধমান ওয়েব প্রোজেক্ট, ব্যবসায়িক অ্যাপ্লিকেশন এবং ডেভেলপমেন্ট টিমের জন্য যাদের অতিরিক্ত ক্ষমতা এবং সামঞ্জস্যপূর্ণ কর্মক্ষমতা প্রয়োজন।\n\nসার্ভারটি 4 CPU কোর এবং 6 GB RAM এর সাথে 120 GB NVMe-schijfruimte স্টোরেজ এবং 3000 GB ব্যান্ডউইথকে একত্রিত করে। এটি ভারী কাজের চাপ, একাধিক পরিষেবা বা ক্রমবর্ধমান ট্রাফিকের জন্য জায়গা ছেড়ে দেয়।\n\nTripleZero iT একটি নির্ভরযোগ্য ভিপিএস ফাউন্ডেশন সরবরাহ করে যা আপনি আপনার প্রয়োজনে কনফিগার করতে পারেন। কাছাকাছি একজন পেশাদার অংশীদারের সাথে একটি ভার্চুয়াল সার্ভারের নমনীয়তা অর্জন করুন।"
     },
     "wordpress-hosting-basic": {
       "name": "ওয়ার্ডপ্রেস হোস্টিং বেসিক",
@@ -3529,18 +3529,18 @@
     },
     "vps-hosting-basic": {
       "name": "वीपीएस होस्टिंग बेसिक",
-      "shortDescription": "- 2 सीपीयू कोर\n- 2 जीबी रैम\n- 40 जीबी एसएसडी RAID 10\n- 1000 जीबी बैंडविड्थ",
-      "description": "वीपीएस होस्टिंग बेसिक उन डेवलपर्स, छोटे एप्लिकेशन और वेबसाइटों के लिए उपयुक्त है जिन्हें साझा होस्टिंग की तुलना में अधिक नियंत्रण और पूर्वानुमानित संसाधनों की आवश्यकता होती है।\n\n2 सीपीयू कोर, 2 जीबी रैम, 40 जीबी एसएसडी RAID 10 स्टोरेज और 1000 जीबी बैंडविड्थ के साथ, आपको हल्के से मध्यम वर्कलोड के लिए एक ठोस वर्चुअल सर्वर मिलता है।\n\nट्रिपलज़ीरो आईटी आपको एक भरोसेमंद बुनियादी ढांचा आधार प्रदान करता है, जिससे आप अपने एप्लिकेशन, वेबसाइट या विकास परिवेश पर ध्यान केंद्रित कर सकते हैं। मांग बढ़ने पर स्केल बढ़ाएं।"
+      "shortDescription": "- 2 सीपीयू कोर\n- 2 जीबी रैम\n- 40 जीबी NVMe-schijfruimte\n- 1000 जीबी बैंडविड्थ",
+      "description": "वीपीएस होस्टिंग बेसिक उन डेवलपर्स, छोटे एप्लिकेशन और वेबसाइटों के लिए उपयुक्त है जिन्हें साझा होस्टिंग की तुलना में अधिक नियंत्रण और पूर्वानुमानित संसाधनों की आवश्यकता होती है।\n\n2 सीपीयू कोर, 2 जीबी रैम, 40 जीबी NVMe-schijfruimte और 1000 जीबी बैंडविड्थ के साथ, आपको हल्के से मध्यम वर्कलोड के लिए एक ठोस वर्चुअल सर्वर मिलता है।\n\nट्रिपलज़ीरो आईटी आपको एक भरोसेमंद बुनियादी ढांचा आधार प्रदान करता है, जिससे आप अपने एप्लिकेशन, वेबसाइट या विकास परिवेश पर ध्यान केंद्रित कर सकते हैं। मांग बढ़ने पर स्केल बढ़ाएं।"
     },
     "vps-hosting-plus": {
       "name": "वीपीएस होस्टिंग प्लस",
-      "shortDescription": "- 8 सीपीयू कोर\n- 12 जीबी रैम\n- 240 जीबी एसएसडी RAID 10\n- 6000 जीबी बैंडविड्थ",
-      "description": "वीपीएस होस्टिंग प्लस को व्यवसाय-महत्वपूर्ण वेबसाइटों, मांग वाले अनुप्रयोगों और संगठनों के लिए डिज़ाइन किया गया है जो पर्याप्त क्षमता और स्थिर प्रदर्शन की उम्मीद करते हैं।\n\n8 सीपीयू कोर, 12 जीबी रैम, 240 जीबी एसएसडी RAID 10 स्टोरेज और 6000 जीबी बैंडविड्थ के साथ, यह योजना गहन कार्यभार, एकाधिक वातावरण और उच्च विज़िटर वॉल्यूम के लिए एक शक्तिशाली आधार प्रदान करती है।\n\nट्रिपलजीरो आईटी आपको भरोसेमंद बुनियादी ढांचा बनाने में मदद करता है जो आपकी महत्वाकांक्षाओं के साथ चलता है। सहायता के लिए उपलब्ध अनुभवी टीम के साथ, आप अपने वीपीएस पर नियंत्रण बनाए रखते हैं।"
+      "shortDescription": "- 8 सीपीयू कोर\n- 12 जीबी रैम\n- 240 जीबी NVMe-schijfruimte\n- 6000 जीबी बैंडविड्थ",
+      "description": "वीपीएस होस्टिंग प्लस को व्यवसाय-महत्वपूर्ण वेबसाइटों, मांग वाले अनुप्रयोगों और संगठनों के लिए डिज़ाइन किया गया है जो पर्याप्त क्षमता और स्थिर प्रदर्शन की उम्मीद करते हैं।\n\n8 सीपीयू कोर, 12 जीबी रैम, 240 जीबी NVMe-schijfruimte और 6000 जीबी बैंडविड्थ के साथ, यह योजना गहन कार्यभार, एकाधिक वातावरण और उच्च विज़िटर वॉल्यूम के लिए एक शक्तिशाली आधार प्रदान करती है।\n\nट्रिपलजीरो आईटी आपको भरोसेमंद बुनियादी ढांचा बनाने में मदद करता है जो आपकी महत्वाकांक्षाओं के साथ चलता है। सहायता के लिए उपलब्ध अनुभवी टीम के साथ, आप अपने वीपीएस पर नियंत्रण बनाए रखते हैं।"
     },
     "vps-hosting-business": {
       "name": "वीपीएस होस्टिंग व्यवसाय",
-      "shortDescription": "- 4 सीपीयू कोर\n- 6 जीबी रैम\n- 120 जीबी एसएसडी RAID 10\n- 3000 जीबी बैंडविड्थ",
-      "description": "वीपीएस होस्टिंग व्यवसाय बढ़ती वेब परियोजनाओं, व्यावसायिक अनुप्रयोगों और विकास टीमों के लिए है जिन्हें अतिरिक्त क्षमता और लगातार प्रदर्शन की आवश्यकता होती है।\n\nसर्वर 4 सीपीयू कोर और 6 जीबी रैम को 120 जीबी एसएसडी RAID 10 स्टोरेज और 3000 जीबी बैंडविड्थ के साथ जोड़ता है। यह भारी कार्यभार, एकाधिक सेवाओं या बढ़ते ट्रैफ़िक के लिए जगह छोड़ता है।\n\nट्रिपलज़ीरो आईटी एक भरोसेमंद वीपीएस फाउंडेशन प्रदान करता है जिसे आप अपनी आवश्यकताओं के अनुसार कॉन्फ़िगर कर सकते हैं। किसी नजदीकी पेशेवर भागीदार के साथ वर्चुअल सर्वर का लचीलापन प्राप्त करें।"
+      "shortDescription": "- 4 सीपीयू कोर\n- 6 जीबी रैम\n- 120 जीबी NVMe-schijfruimte\n- 3000 जीबी बैंडविड्थ",
+      "description": "वीपीएस होस्टिंग व्यवसाय बढ़ती वेब परियोजनाओं, व्यावसायिक अनुप्रयोगों और विकास टीमों के लिए है जिन्हें अतिरिक्त क्षमता और लगातार प्रदर्शन की आवश्यकता होती है।\n\nसर्वर 4 सीपीयू कोर और 6 जीबी रैम को 120 जीबी NVMe-schijfruimte और 3000 जीबी बैंडविड्थ के साथ जोड़ता है। यह भारी कार्यभार, एकाधिक सेवाओं या बढ़ते ट्रैफ़िक के लिए जगह छोड़ता है।\n\nट्रिपलज़ीरो आईटी एक भरोसेमंद वीपीएस फाउंडेशन प्रदान करता है जिसे आप अपनी आवश्यकताओं के अनुसार कॉन्फ़िगर कर सकते हैं। किसी नजदीकी पेशेवर भागीदार के साथ वर्चुअल सर्वर का लचीलापन प्राप्त करें।"
     },
     "wordpress-hosting-basic": {
       "name": "वर्डप्रेस होस्टिंग बेसिक",
@@ -3626,18 +3626,18 @@
     },
     "vps-hosting-basic": {
       "name": "VPS होस्टिंग बेसिक",
-      "shortDescription": "- 2 CPU कोर\n- 2 GB रॅम\n- 40 GB SSD RAID 10\n- 1000 GB बँडविड्थ",
-      "description": "व्हीपीएस होस्टिंग बेसिक हे विकसक, लहान ॲप्लिकेशन्स आणि वेबसाइट्ससाठी उपयुक्त आहे ज्यांना शेअर्ड होस्टिंग पुरवण्यापेक्षा अधिक नियंत्रण आणि अंदाज लावता येण्याजोग्या संसाधनांची आवश्यकता आहे.\n\n2 CPU कोर, 2 GB RAM, 40 GB SSD RAID 10 स्टोरेज आणि 1000 GB बँडविड्थसह, तुम्हाला हलक्या ते मध्यम वर्कलोडसाठी एक ठोस व्हर्च्युअल सर्व्हर मिळेल.\n\nTripleZero iT तुम्हाला एक विश्वासार्ह पायाभूत सुविधा देते, ज्यामुळे तुम्ही तुमचा अर्ज, वेबसाइट किंवा विकास वातावरणावर लक्ष केंद्रित करू शकता. जेव्हा मागणी वाढते तेव्हा स्केल वाढवा."
+      "shortDescription": "- 2 CPU कोर\n- 2 GB रॅम\n- 40 GB NVMe-schijfruimte\n- 1000 GB बँडविड्थ",
+      "description": "व्हीपीएस होस्टिंग बेसिक हे विकसक, लहान ॲप्लिकेशन्स आणि वेबसाइट्ससाठी उपयुक्त आहे ज्यांना शेअर्ड होस्टिंग पुरवण्यापेक्षा अधिक नियंत्रण आणि अंदाज लावता येण्याजोग्या संसाधनांची आवश्यकता आहे.\n\n2 CPU कोर, 2 GB RAM, 40 GB NVMe-schijfruimte स्टोरेज आणि 1000 GB बँडविड्थसह, तुम्हाला हलक्या ते मध्यम वर्कलोडसाठी एक ठोस व्हर्च्युअल सर्व्हर मिळेल.\n\nTripleZero iT तुम्हाला एक विश्वासार्ह पायाभूत सुविधा देते, ज्यामुळे तुम्ही तुमचा अर्ज, वेबसाइट किंवा विकास वातावरणावर लक्ष केंद्रित करू शकता. जेव्हा मागणी वाढते तेव्हा स्केल वाढवा."
     },
     "vps-hosting-plus": {
       "name": "VPS होस्टिंग प्लस",
-      "shortDescription": "- 8 CPU कोर\n- 12 जीबी रॅम\n- 240 GB SSD RAID 10\n- 6000 GB बँडविड्थ",
-      "description": "VPS होस्टिंग प्लस हे व्यवसाय-गंभीर वेबसाइट्ससाठी डिझाइन केले आहे, ज्यांना पुरेशी क्षमता आणि स्थिर कामगिरीची अपेक्षा असलेल्या अनुप्रयोग आणि संस्थांची मागणी आहे.\n\n8 CPU कोर, 12 GB RAM, 240 GB SSD RAID 10 स्टोरेज आणि 6000 GB बँडविड्थसह, ही योजना गहन वर्कलोड्स, एकाधिक वातावरण आणि उच्च अभ्यागत व्हॉल्यूमसाठी एक शक्तिशाली आधार प्रदान करते.\n\nTripleZero iT तुम्हाला तुमच्या महत्त्वाकांक्षेनुसार चालणारी विश्वसनीय पायाभूत सुविधा तयार करण्यात मदत करते. समर्थनासाठी उपलब्ध अनुभवी टीमसह, तुम्ही तुमच्या VPS वर नियंत्रण ठेवता."
+      "shortDescription": "- 8 CPU कोर\n- 12 जीबी रॅम\n- 240 GB NVMe-schijfruimte\n- 6000 GB बँडविड्थ",
+      "description": "VPS होस्टिंग प्लस हे व्यवसाय-गंभीर वेबसाइट्ससाठी डिझाइन केले आहे, ज्यांना पुरेशी क्षमता आणि स्थिर कामगिरीची अपेक्षा असलेल्या अनुप्रयोग आणि संस्थांची मागणी आहे.\n\n8 CPU कोर, 12 GB RAM, 240 GB NVMe-schijfruimte स्टोरेज आणि 6000 GB बँडविड्थसह, ही योजना गहन वर्कलोड्स, एकाधिक वातावरण आणि उच्च अभ्यागत व्हॉल्यूमसाठी एक शक्तिशाली आधार प्रदान करते.\n\nTripleZero iT तुम्हाला तुमच्या महत्त्वाकांक्षेनुसार चालणारी विश्वसनीय पायाभूत सुविधा तयार करण्यात मदत करते. समर्थनासाठी उपलब्ध अनुभवी टीमसह, तुम्ही तुमच्या VPS वर नियंत्रण ठेवता."
     },
     "vps-hosting-business": {
       "name": "VPS होस्टिंग व्यवसाय",
-      "shortDescription": "- 4 CPU कोर\n- 6 GB रॅम\n- 120 GB SSD RAID 10\n- 3000 GB बँडविड्थ",
-      "description": "VPS होस्टिंग बिझनेस हे वाढत्या वेब प्रोजेक्ट्स, बिझनेस ऍप्लिकेशन्स आणि डेव्हलपमेंट टीम्ससाठी आहे ज्यांना अतिरिक्त क्षमता आणि सातत्यपूर्ण कामगिरीची आवश्यकता आहे.\n\nसर्व्हर 4 CPU कोर आणि 6 GB RAM सोबत 120 GB SSD RAID 10 स्टोरेज आणि 3000 GB बँडविड्थ एकत्र करतो. यामुळे जास्त कामाचा भार, एकाधिक सेवा किंवा वाढती रहदारी यासाठी जागा उरते.\n\nTripleZero iT एक विश्वासार्ह VPS फाउंडेशन वितरीत करते जे तुम्ही तुमच्या गरजेनुसार कॉन्फिगर करू शकता. जवळच्या व्यावसायिक भागीदारासह आभासी सर्व्हरची लवचिकता मिळवा."
+      "shortDescription": "- 4 CPU कोर\n- 6 GB रॅम\n- 120 GB NVMe-schijfruimte\n- 3000 GB बँडविड्थ",
+      "description": "VPS होस्टिंग बिझनेस हे वाढत्या वेब प्रोजेक्ट्स, बिझनेस ऍप्लिकेशन्स आणि डेव्हलपमेंट टीम्ससाठी आहे ज्यांना अतिरिक्त क्षमता आणि सातत्यपूर्ण कामगिरीची आवश्यकता आहे.\n\nसर्व्हर 4 CPU कोर आणि 6 GB RAM सोबत 120 GB NVMe-schijfruimte स्टोरेज आणि 3000 GB बँडविड्थ एकत्र करतो. यामुळे जास्त कामाचा भार, एकाधिक सेवा किंवा वाढती रहदारी यासाठी जागा उरते.\n\nTripleZero iT एक विश्वासार्ह VPS फाउंडेशन वितरीत करते जे तुम्ही तुमच्या गरजेनुसार कॉन्फिगर करू शकता. जवळच्या व्यावसायिक भागीदारासह आभासी सर्व्हरची लवचिकता मिळवा."
     },
     "wordpress-hosting-basic": {
       "name": "वर्डप्रेस होस्टिंग बेसिक",
@@ -3723,18 +3723,18 @@
     },
     "vps-hosting-basic": {
       "name": "د VPS کوربه توب اساسی",
-      "shortDescription": "- 2 CPU کورونه\n- 2 GB رام\n- 40 GB SSD RAID 10\n- 1000 GB بینډ ویت",
-      "description": "د VPS کوربه توب اساس د پراختیا کونکو ، کوچني غوښتنلیکونو او ویب پا toو لپاره مناسب دی چې د شریک کوربه توب چمتو کولو په پرتله ډیر کنټرول او وړاندوینې وړ سرچینو ته اړتیا لري.\n\nد 2 CPU کور، 2 GB رام، 40 GB SSD RAID 10 ذخیره او 1000 GB بینډ ویت سره، تاسو د سپک او اعتدال کاري بارونو لپاره یو قوي مجازی سرور ترلاسه کوئ.\n\nTripleZero iT تاسو ته د باور وړ زیربنا بنسټ درکوي، نو تاسو کولی شئ په خپل غوښتنلیک، ویب پاڼه یا پراختیایي چاپیریال تمرکز وکړئ. کله چې تقاضا وده وکړي پیمانه پورته کړئ."
+      "shortDescription": "- 2 CPU کورونه\n- 2 GB رام\n- 40 GB NVMe-schijfruimte\n- 1000 GB بینډ ویت",
+      "description": "د VPS کوربه توب اساس د پراختیا کونکو ، کوچني غوښتنلیکونو او ویب پا toو لپاره مناسب دی چې د شریک کوربه توب چمتو کولو په پرتله ډیر کنټرول او وړاندوینې وړ سرچینو ته اړتیا لري.\n\nد 2 CPU کور، 2 GB رام، 40 GB NVMe-schijfruimte ذخیره او 1000 GB بینډ ویت سره، تاسو د سپک او اعتدال کاري بارونو لپاره یو قوي مجازی سرور ترلاسه کوئ.\n\nTripleZero iT تاسو ته د باور وړ زیربنا بنسټ درکوي، نو تاسو کولی شئ په خپل غوښتنلیک، ویب پاڼه یا پراختیایي چاپیریال تمرکز وکړئ. کله چې تقاضا وده وکړي پیمانه پورته کړئ."
     },
     "vps-hosting-plus": {
       "name": "د VPS کوربه توب پلس",
-      "shortDescription": "- 8 CPU کورونه\n- 12GB رام\n- 240 GB SSD RAID 10\n- 6000 GB بینډ ویت",
-      "description": "د VPS کوربه توب پلس د سوداګرۍ - مهم ویب پا toو لپاره ډیزاین شوی ، د غوښتنلیکونو او سازمانونو غوښتنه کوي چې د کافي ظرفیت او مستحکم فعالیت تمه لري.\n\nد 8 CPU کور، 12 GB RAM، 240 GB SSD RAID 10 ذخیره او 6000 GB بینډ ویت سره، دا پلان د سخت کاري بارونو، ډیری چاپیریالونو او لوړ لیدونکو حجمونو لپاره یو پیاوړی اساس چمتو کوي.\n\nTripleZero iT تاسو سره د باور وړ زیربنا رامینځته کولو کې مرسته کوي چې ستاسو د هیلو سره حرکت کوي. تاسو د خپل VPS کنټرول ساتئ، د ملاتړ لپاره د تجربه لرونکي ټیم سره."
+      "shortDescription": "- 8 CPU کورونه\n- 12GB رام\n- 240 GB NVMe-schijfruimte\n- 6000 GB بینډ ویت",
+      "description": "د VPS کوربه توب پلس د سوداګرۍ - مهم ویب پا toو لپاره ډیزاین شوی ، د غوښتنلیکونو او سازمانونو غوښتنه کوي چې د کافي ظرفیت او مستحکم فعالیت تمه لري.\n\nد 8 CPU کور، 12 GB RAM، 240 GB NVMe-schijfruimte ذخیره او 6000 GB بینډ ویت سره، دا پلان د سخت کاري بارونو، ډیری چاپیریالونو او لوړ لیدونکو حجمونو لپاره یو پیاوړی اساس چمتو کوي.\n\nTripleZero iT تاسو سره د باور وړ زیربنا رامینځته کولو کې مرسته کوي چې ستاسو د هیلو سره حرکت کوي. تاسو د خپل VPS کنټرول ساتئ، د ملاتړ لپاره د تجربه لرونکي ټیم سره."
     },
     "vps-hosting-business": {
       "name": "د VPS کوربه توب سوداګرۍ",
-      "shortDescription": "- 4 CPU کورونه\n– ۶ جي بي رام\n- 120 GB SSD RAID 10\n- 3000 GB بینډ ویت",
-      "description": "د VPS کوربه توب سوداګرۍ د ودې ویب پروژو ، سوداګرۍ غوښتنلیکونو او پراختیایی ټیمونو لپاره دی چې اضافي ظرفیت او دوامداره فعالیت ته اړتیا لري.\n\nسرور د 4 CPU کورونه او 6 GB رام د 120 GB SSD RAID 10 ذخیره او 3000 GB بینډ ویت سره ترکیب کوي. دا د درنو کاري بارونو، ډیری خدماتو یا زیاتیدونکي ترافیک لپاره خونه پریږدي.\n\nTripleZero iT د اعتبار وړ VPS بنسټ وړاندې کوي چې تاسو کولی شئ د خپلو اړتیاو شاوخوا تنظیم کړئ. د نږدې مسلکي ملګري سره د مجازی سرور انعطاف ترلاسه کړئ."
+      "shortDescription": "- 4 CPU کورونه\n– ۶ جي بي رام\n- 120 GB NVMe-schijfruimte\n- 3000 GB بینډ ویت",
+      "description": "د VPS کوربه توب سوداګرۍ د ودې ویب پروژو ، سوداګرۍ غوښتنلیکونو او پراختیایی ټیمونو لپاره دی چې اضافي ظرفیت او دوامداره فعالیت ته اړتیا لري.\n\nسرور د 4 CPU کورونه او 6 GB رام د 120 GB NVMe-schijfruimte ذخیره او 3000 GB بینډ ویت سره ترکیب کوي. دا د درنو کاري بارونو، ډیری خدماتو یا زیاتیدونکي ترافیک لپاره خونه پریږدي.\n\nTripleZero iT د اعتبار وړ VPS بنسټ وړاندې کوي چې تاسو کولی شئ د خپلو اړتیاو شاوخوا تنظیم کړئ. د نږدې مسلکي ملګري سره د مجازی سرور انعطاف ترلاسه کړئ."
     },
     "wordpress-hosting-basic": {
       "name": "د ورڈپریس کوربه توب اساسی",
@@ -3821,17 +3821,17 @@
     "vps-hosting-basic": {
       "name": "VPS ਹੋਸਟਿੰਗ ਬੇਸਿਕ",
       "shortDescription": "- 2 CPU ਕੋਰ\n- 2 ਜੀਬੀ ਰੈਮ\n- 40 GB SSD ਰੇਡ 10\n- 1000 GB ਬੈਂਡਵਿਡਥ",
-      "description": "VPS ਹੋਸਟਿੰਗ ਬੇਸਿਕ ਡਿਵੈਲਪਰਾਂ, ਛੋਟੀਆਂ ਐਪਲੀਕੇਸ਼ਨਾਂ ਅਤੇ ਵੈਬਸਾਈਟਾਂ ਲਈ ਅਨੁਕੂਲ ਹੈ ਜਿਨ੍ਹਾਂ ਨੂੰ ਸ਼ੇਅਰਡ ਹੋਸਟਿੰਗ ਪ੍ਰਦਾਨ ਕਰਨ ਨਾਲੋਂ ਵਧੇਰੇ ਨਿਯੰਤਰਣ ਅਤੇ ਅਨੁਮਾਨ ਲਗਾਉਣ ਯੋਗ ਸਰੋਤਾਂ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ।\n\n2 CPU ਕੋਰ, 2 GB RAM, 40 GB SSD RAID 10 ਸਟੋਰੇਜ ਅਤੇ 1000 GB ਬੈਂਡਵਿਡਥ ਦੇ ਨਾਲ, ਤੁਹਾਨੂੰ ਹਲਕੇ ਤੋਂ ਦਰਮਿਆਨੇ ਵਰਕਲੋਡ ਲਈ ਇੱਕ ਠੋਸ ਵਰਚੁਅਲ ਸਰਵਰ ਮਿਲਦਾ ਹੈ।\n\nTripleZero iT ਤੁਹਾਨੂੰ ਇੱਕ ਭਰੋਸੇਯੋਗ ਬੁਨਿਆਦੀ ਢਾਂਚਾ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ, ਤਾਂ ਜੋ ਤੁਸੀਂ ਆਪਣੀ ਐਪਲੀਕੇਸ਼ਨ, ਵੈੱਬਸਾਈਟ ਜਾਂ ਵਿਕਾਸ ਵਾਤਾਵਰਣ 'ਤੇ ਧਿਆਨ ਕੇਂਦਰਿਤ ਕਰ ਸਕੋ। ਜਦੋਂ ਮੰਗ ਵਧਦੀ ਹੈ ਤਾਂ ਸਕੇਲ ਕਰੋ।"
+      "description": "VPS ਹੋਸਟਿੰਗ ਬੇਸਿਕ ਡਿਵੈਲਪਰਾਂ, ਛੋਟੀਆਂ ਐਪਲੀਕੇਸ਼ਨਾਂ ਅਤੇ ਵੈਬਸਾਈਟਾਂ ਲਈ ਅਨੁਕੂਲ ਹੈ ਜਿਨ੍ਹਾਂ ਨੂੰ ਸ਼ੇਅਰਡ ਹੋਸਟਿੰਗ ਪ੍ਰਦਾਨ ਕਰਨ ਨਾਲੋਂ ਵਧੇਰੇ ਨਿਯੰਤਰਣ ਅਤੇ ਅਨੁਮਾਨ ਲਗਾਉਣ ਯੋਗ ਸਰੋਤਾਂ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ।\n\n2 CPU ਕੋਰ, 2 GB RAM, 40 GB NVMe-schijfruimte ਸਟੋਰੇਜ ਅਤੇ 1000 GB ਬੈਂਡਵਿਡਥ ਦੇ ਨਾਲ, ਤੁਹਾਨੂੰ ਹਲਕੇ ਤੋਂ ਦਰਮਿਆਨੇ ਵਰਕਲੋਡ ਲਈ ਇੱਕ ਠੋਸ ਵਰਚੁਅਲ ਸਰਵਰ ਮਿਲਦਾ ਹੈ।\n\nTripleZero iT ਤੁਹਾਨੂੰ ਇੱਕ ਭਰੋਸੇਯੋਗ ਬੁਨਿਆਦੀ ਢਾਂਚਾ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ, ਤਾਂ ਜੋ ਤੁਸੀਂ ਆਪਣੀ ਐਪਲੀਕੇਸ਼ਨ, ਵੈੱਬਸਾਈਟ ਜਾਂ ਵਿਕਾਸ ਵਾਤਾਵਰਣ 'ਤੇ ਧਿਆਨ ਕੇਂਦਰਿਤ ਕਰ ਸਕੋ। ਜਦੋਂ ਮੰਗ ਵਧਦੀ ਹੈ ਤਾਂ ਸਕੇਲ ਕਰੋ।"
     },
     "vps-hosting-plus": {
       "name": "VPS ਹੋਸਟਿੰਗ ਪਲੱਸ",
       "shortDescription": "- 8 CPU ਕੋਰ\n- 12 ਜੀਬੀ ਰੈਮ\n- 240 GB SSD ਰੇਡ 10\n- 6000 GB ਬੈਂਡਵਿਡਥ",
-      "description": "VPS ਹੋਸਟਿੰਗ ਪਲੱਸ ਵਪਾਰਕ-ਨਾਜ਼ੁਕ ਵੈਬਸਾਈਟਾਂ ਲਈ ਤਿਆਰ ਕੀਤਾ ਗਿਆ ਹੈ, ਐਪਲੀਕੇਸ਼ਨਾਂ ਅਤੇ ਸੰਸਥਾਵਾਂ ਦੀ ਮੰਗ ਕਰਦੇ ਹਨ ਜੋ ਕਾਫ਼ੀ ਸਮਰੱਥਾ ਅਤੇ ਸਥਿਰ ਪ੍ਰਦਰਸ਼ਨ ਦੀ ਉਮੀਦ ਕਰਦੇ ਹਨ।\n\n8 CPU ਕੋਰ, 12 GB RAM, 240 GB SSD RAID 10 ਸਟੋਰੇਜ਼ ਅਤੇ 6000 GB ਬੈਂਡਵਿਡਥ ਦੇ ਨਾਲ, ਇਹ ਯੋਜਨਾ ਤੀਬਰ ਵਰਕਲੋਡ, ਮਲਟੀਪਲ ਵਾਤਾਵਰਣ ਅਤੇ ਉੱਚ ਵਿਜ਼ਟਰ ਵਾਲੀਅਮ ਲਈ ਇੱਕ ਸ਼ਕਤੀਸ਼ਾਲੀ ਅਧਾਰ ਪ੍ਰਦਾਨ ਕਰਦੀ ਹੈ।\n\nਟ੍ਰਿਪਲਜ਼ੀਰੋ ਆਈਟੀ ਤੁਹਾਨੂੰ ਭਰੋਸੇਮੰਦ ਬੁਨਿਆਦੀ ਢਾਂਚਾ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ ਜੋ ਤੁਹਾਡੀਆਂ ਇੱਛਾਵਾਂ ਨਾਲ ਅੱਗੇ ਵਧਦਾ ਹੈ। ਤੁਸੀਂ ਸਹਾਇਤਾ ਲਈ ਉਪਲਬਧ ਇੱਕ ਤਜਰਬੇਕਾਰ ਟੀਮ ਦੇ ਨਾਲ, ਆਪਣੇ VPS ਦਾ ਨਿਯੰਤਰਣ ਬਰਕਰਾਰ ਰੱਖਦੇ ਹੋ।"
+      "description": "VPS ਹੋਸਟਿੰਗ ਪਲੱਸ ਵਪਾਰਕ-ਨਾਜ਼ੁਕ ਵੈਬਸਾਈਟਾਂ ਲਈ ਤਿਆਰ ਕੀਤਾ ਗਿਆ ਹੈ, ਐਪਲੀਕੇਸ਼ਨਾਂ ਅਤੇ ਸੰਸਥਾਵਾਂ ਦੀ ਮੰਗ ਕਰਦੇ ਹਨ ਜੋ ਕਾਫ਼ੀ ਸਮਰੱਥਾ ਅਤੇ ਸਥਿਰ ਪ੍ਰਦਰਸ਼ਨ ਦੀ ਉਮੀਦ ਕਰਦੇ ਹਨ।\n\n8 CPU ਕੋਰ, 12 GB RAM, 240 GB NVMe-schijfruimte ਸਟੋਰੇਜ਼ ਅਤੇ 6000 GB ਬੈਂਡਵਿਡਥ ਦੇ ਨਾਲ, ਇਹ ਯੋਜਨਾ ਤੀਬਰ ਵਰਕਲੋਡ, ਮਲਟੀਪਲ ਵਾਤਾਵਰਣ ਅਤੇ ਉੱਚ ਵਿਜ਼ਟਰ ਵਾਲੀਅਮ ਲਈ ਇੱਕ ਸ਼ਕਤੀਸ਼ਾਲੀ ਅਧਾਰ ਪ੍ਰਦਾਨ ਕਰਦੀ ਹੈ।\n\nਟ੍ਰਿਪਲਜ਼ੀਰੋ ਆਈਟੀ ਤੁਹਾਨੂੰ ਭਰੋਸੇਮੰਦ ਬੁਨਿਆਦੀ ਢਾਂਚਾ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ ਜੋ ਤੁਹਾਡੀਆਂ ਇੱਛਾਵਾਂ ਨਾਲ ਅੱਗੇ ਵਧਦਾ ਹੈ। ਤੁਸੀਂ ਸਹਾਇਤਾ ਲਈ ਉਪਲਬਧ ਇੱਕ ਤਜਰਬੇਕਾਰ ਟੀਮ ਦੇ ਨਾਲ, ਆਪਣੇ VPS ਦਾ ਨਿਯੰਤਰਣ ਬਰਕਰਾਰ ਰੱਖਦੇ ਹੋ।"
     },
     "vps-hosting-business": {
       "name": "VPS ਹੋਸਟਿੰਗ ਕਾਰੋਬਾਰ",
       "shortDescription": "- 4 CPU ਕੋਰ\n- 6 ਜੀਬੀ ਰੈਮ\n- 120 GB SSD ਰੇਡ 10\n- 3000 GB ਬੈਂਡਵਿਡਥ",
-      "description": "VPS ਹੋਸਟਿੰਗ ਬਿਜ਼ਨਸ ਵਧ ਰਹੇ ਵੈਬ ਪ੍ਰੋਜੈਕਟਾਂ, ਕਾਰੋਬਾਰੀ ਐਪਲੀਕੇਸ਼ਨਾਂ ਅਤੇ ਵਿਕਾਸ ਟੀਮਾਂ ਲਈ ਹੈ ਜਿਨ੍ਹਾਂ ਨੂੰ ਵਾਧੂ ਸਮਰੱਥਾ ਅਤੇ ਨਿਰੰਤਰ ਪ੍ਰਦਰਸ਼ਨ ਦੀ ਲੋੜ ਹੈ।\n\nਸਰਵਰ 4 CPU ਕੋਰ ਅਤੇ 6 GB RAM ਨੂੰ 120 GB SSD RAID 10 ਸਟੋਰੇਜ ਅਤੇ 3000 GB ਬੈਂਡਵਿਡਥ ਨਾਲ ਜੋੜਦਾ ਹੈ। ਇਹ ਭਾਰੀ ਵਰਕਲੋਡ, ਕਈ ਸੇਵਾਵਾਂ ਜਾਂ ਵੱਧ ਰਹੇ ਟ੍ਰੈਫਿਕ ਲਈ ਜਗ੍ਹਾ ਛੱਡਦਾ ਹੈ।\n\nTripleZero iT ਇੱਕ ਭਰੋਸੇਮੰਦ VPS ਫਾਊਂਡੇਸ਼ਨ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ ਜਿਸਨੂੰ ਤੁਸੀਂ ਆਪਣੀਆਂ ਲੋੜਾਂ ਅਨੁਸਾਰ ਕੌਂਫਿਗਰ ਕਰ ਸਕਦੇ ਹੋ। ਨੇੜੇ ਦੇ ਇੱਕ ਪੇਸ਼ੇਵਰ ਸਾਥੀ ਦੇ ਨਾਲ ਇੱਕ ਵਰਚੁਅਲ ਸਰਵਰ ਦੀ ਲਚਕਤਾ ਪ੍ਰਾਪਤ ਕਰੋ।"
+      "description": "VPS ਹੋਸਟਿੰਗ ਬਿਜ਼ਨਸ ਵਧ ਰਹੇ ਵੈਬ ਪ੍ਰੋਜੈਕਟਾਂ, ਕਾਰੋਬਾਰੀ ਐਪਲੀਕੇਸ਼ਨਾਂ ਅਤੇ ਵਿਕਾਸ ਟੀਮਾਂ ਲਈ ਹੈ ਜਿਨ੍ਹਾਂ ਨੂੰ ਵਾਧੂ ਸਮਰੱਥਾ ਅਤੇ ਨਿਰੰਤਰ ਪ੍ਰਦਰਸ਼ਨ ਦੀ ਲੋੜ ਹੈ।\n\nਸਰਵਰ 4 CPU ਕੋਰ ਅਤੇ 6 GB RAM ਨੂੰ 120 GB NVMe-schijfruimte ਸਟੋਰੇਜ ਅਤੇ 3000 GB ਬੈਂਡਵਿਡਥ ਨਾਲ ਜੋੜਦਾ ਹੈ। ਇਹ ਭਾਰੀ ਵਰਕਲੋਡ, ਕਈ ਸੇਵਾਵਾਂ ਜਾਂ ਵੱਧ ਰਹੇ ਟ੍ਰੈਫਿਕ ਲਈ ਜਗ੍ਹਾ ਛੱਡਦਾ ਹੈ।\n\nTripleZero iT ਇੱਕ ਭਰੋਸੇਮੰਦ VPS ਫਾਊਂਡੇਸ਼ਨ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ ਜਿਸਨੂੰ ਤੁਸੀਂ ਆਪਣੀਆਂ ਲੋੜਾਂ ਅਨੁਸਾਰ ਕੌਂਫਿਗਰ ਕਰ ਸਕਦੇ ਹੋ। ਨੇੜੇ ਦੇ ਇੱਕ ਪੇਸ਼ੇਵਰ ਸਾਥੀ ਦੇ ਨਾਲ ਇੱਕ ਵਰਚੁਅਲ ਸਰਵਰ ਦੀ ਲਚਕਤਾ ਪ੍ਰਾਪਤ ਕਰੋ।"
     },
     "wordpress-hosting-basic": {
       "name": "ਵਰਡਪਰੈਸ ਹੋਸਟਿੰਗ ਬੇਸਿਕ",
@@ -3917,18 +3917,18 @@
     },
     "vps-hosting-basic": {
       "name": "VPS హోస్టింగ్ బేసిక్",
-      "shortDescription": "- 2 CPU కోర్లు\n- 2 GB RAM\n– 40 GB SSD RAID 10\n- 1000 GB బ్యాండ్‌విడ్త్",
-      "description": "VPS హోస్టింగ్ బేసిక్ డెవలపర్‌లు, చిన్న అప్లికేషన్‌లు మరియు షేర్డ్ హోస్టింగ్ అందించే దానికంటే ఎక్కువ నియంత్రణ మరియు ఊహాజనిత వనరులు అవసరమయ్యే వెబ్‌సైట్‌లకు సరిపోతుంది.\n\n2 CPU కోర్లు, 2 GB RAM, 40 GB SSD RAID 10 స్టోరేజ్ మరియు 1000 GB బ్యాండ్‌విడ్త్‌తో, మీరు వర్క్‌లోడ్‌లను మోడరేట్ చేయడానికి తేలికపాటి వర్చువల్ సర్వర్‌ను పొందుతారు.\n\nTripleZero iT మీకు ఆధారపడదగిన మౌలిక సదుపాయాల పునాదిని అందిస్తుంది, కాబట్టి మీరు మీ అప్లికేషన్, వెబ్‌సైట్ లేదా అభివృద్ధి వాతావరణంపై దృష్టి పెట్టవచ్చు. డిమాండ్ పెరిగినప్పుడు స్కేల్ అప్ చేయండి."
+      "shortDescription": "- 2 CPU కోర్లు\n- 2 GB RAM\n– 40 GB NVMe-schijfruimte\n- 1000 GB బ్యాండ్‌విడ్త్",
+      "description": "VPS హోస్టింగ్ బేసిక్ డెవలపర్‌లు, చిన్న అప్లికేషన్‌లు మరియు షేర్డ్ హోస్టింగ్ అందించే దానికంటే ఎక్కువ నియంత్రణ మరియు ఊహాజనిత వనరులు అవసరమయ్యే వెబ్‌సైట్‌లకు సరిపోతుంది.\n\n2 CPU కోర్లు, 2 GB RAM, 40 GB NVMe-schijfruimte స్టోరేజ్ మరియు 1000 GB బ్యాండ్‌విడ్త్‌తో, మీరు వర్క్‌లోడ్‌లను మోడరేట్ చేయడానికి తేలికపాటి వర్చువల్ సర్వర్‌ను పొందుతారు.\n\nTripleZero iT మీకు ఆధారపడదగిన మౌలిక సదుపాయాల పునాదిని అందిస్తుంది, కాబట్టి మీరు మీ అప్లికేషన్, వెబ్‌సైట్ లేదా అభివృద్ధి వాతావరణంపై దృష్టి పెట్టవచ్చు. డిమాండ్ పెరిగినప్పుడు స్కేల్ అప్ చేయండి."
     },
     "vps-hosting-plus": {
       "name": "VPS హోస్టింగ్ ప్లస్",
-      "shortDescription": "- 8 CPU కోర్లు\n- 12 GB RAM\n– 240 GB SSD RAID 10\n- 6000 GB బ్యాండ్‌విడ్త్",
-      "description": "VPS హోస్టింగ్ ప్లస్ అనేది వ్యాపార-క్లిష్టమైన వెబ్‌సైట్‌ల కోసం రూపొందించబడింది, పుష్కల సామర్థ్యం మరియు స్థిరమైన పనితీరును ఆశించే అప్లికేషన్‌లు మరియు సంస్థల డిమాండ్.\n\n8 CPU కోర్లు, 12 GB RAM, 240 GB SSD RAID 10 నిల్వ మరియు 6000 GB బ్యాండ్‌విడ్త్‌తో, ఈ ప్లాన్ ఇంటెన్సివ్ వర్క్‌లోడ్‌లు, బహుళ వాతావరణాలు మరియు అధిక సందర్శకుల వాల్యూమ్‌ల కోసం శక్తివంతమైన ఆధారాన్ని అందిస్తుంది.\n\nTripleZero iT మీ ఆశయాలకు అనుగుణంగా ఆధారపడదగిన మౌలిక సదుపాయాలను నిర్మించడంలో మీకు సహాయపడుతుంది. మద్దతు కోసం అందుబాటులో ఉన్న అనుభవజ్ఞులైన బృందంతో మీరు మీ VPSపై నియంత్రణను కలిగి ఉంటారు."
+      "shortDescription": "- 8 CPU కోర్లు\n- 12 GB RAM\n– 240 GB NVMe-schijfruimte\n- 6000 GB బ్యాండ్‌విడ్త్",
+      "description": "VPS హోస్టింగ్ ప్లస్ అనేది వ్యాపార-క్లిష్టమైన వెబ్‌సైట్‌ల కోసం రూపొందించబడింది, పుష్కల సామర్థ్యం మరియు స్థిరమైన పనితీరును ఆశించే అప్లికేషన్‌లు మరియు సంస్థల డిమాండ్.\n\n8 CPU కోర్లు, 12 GB RAM, 240 GB NVMe-schijfruimte నిల్వ మరియు 6000 GB బ్యాండ్‌విడ్త్‌తో, ఈ ప్లాన్ ఇంటెన్సివ్ వర్క్‌లోడ్‌లు, బహుళ వాతావరణాలు మరియు అధిక సందర్శకుల వాల్యూమ్‌ల కోసం శక్తివంతమైన ఆధారాన్ని అందిస్తుంది.\n\nTripleZero iT మీ ఆశయాలకు అనుగుణంగా ఆధారపడదగిన మౌలిక సదుపాయాలను నిర్మించడంలో మీకు సహాయపడుతుంది. మద్దతు కోసం అందుబాటులో ఉన్న అనుభవజ్ఞులైన బృందంతో మీరు మీ VPSపై నియంత్రణను కలిగి ఉంటారు."
     },
     "vps-hosting-business": {
       "name": "VPS హోస్టింగ్ వ్యాపారం",
-      "shortDescription": "- 4 CPU కోర్లు\n- 6 GB RAM\n– 120 GB SSD RAID 10\n- 3000 GB బ్యాండ్‌విడ్త్",
-      "description": "VPS హోస్టింగ్ వ్యాపారం అనేది పెరుగుతున్న వెబ్ ప్రాజెక్ట్‌లు, వ్యాపార అప్లికేషన్‌లు మరియు అదనపు సామర్థ్యం మరియు స్థిరమైన పనితీరు అవసరమయ్యే డెవలప్‌మెంట్ టీమ్‌ల కోసం.\n\nసర్వర్ 4 CPU కోర్లు మరియు 6 GB RAMని 120 GB SSD RAID 10 నిల్వ మరియు 3000 GB బ్యాండ్‌విడ్త్‌తో మిళితం చేస్తుంది. ఇది అధిక పనిభారం, బహుళ సేవలు లేదా ట్రాఫిక్‌ను పెంచడానికి స్థలాన్ని వదిలివేస్తుంది.\n\nTripleZero iT మీరు మీ అవసరాలకు అనుగుణంగా కాన్ఫిగర్ చేయగల ఆధారపడదగిన VPS పునాదిని అందిస్తుంది. సన్నిహితంగా ఉన్న ప్రొఫెషనల్ భాగస్వామితో వర్చువల్ సర్వర్ యొక్క సౌలభ్యాన్ని పొందండి."
+      "shortDescription": "- 4 CPU కోర్లు\n- 6 GB RAM\n– 120 GB NVMe-schijfruimte\n- 3000 GB బ్యాండ్‌విడ్త్",
+      "description": "VPS హోస్టింగ్ వ్యాపారం అనేది పెరుగుతున్న వెబ్ ప్రాజెక్ట్‌లు, వ్యాపార అప్లికేషన్‌లు మరియు అదనపు సామర్థ్యం మరియు స్థిరమైన పనితీరు అవసరమయ్యే డెవలప్‌మెంట్ టీమ్‌ల కోసం.\n\nసర్వర్ 4 CPU కోర్లు మరియు 6 GB RAMని 120 GB NVMe-schijfruimte నిల్వ మరియు 3000 GB బ్యాండ్‌విడ్త్‌తో మిళితం చేస్తుంది. ఇది అధిక పనిభారం, బహుళ సేవలు లేదా ట్రాఫిక్‌ను పెంచడానికి స్థలాన్ని వదిలివేస్తుంది.\n\nTripleZero iT మీరు మీ అవసరాలకు అనుగుణంగా కాన్ఫిగర్ చేయగల ఆధారపడదగిన VPS పునాదిని అందిస్తుంది. సన్నిహితంగా ఉన్న ప్రొఫెషనల్ భాగస్వామితో వర్చువల్ సర్వర్ యొక్క సౌలభ్యాన్ని పొందండి."
     },
     "wordpress-hosting-basic": {
       "name": "WordPress హోస్టింగ్ బేసిక్",
@@ -4014,18 +4014,18 @@
     },
     "vps-hosting-basic": {
       "name": "VPS ہوسٹنگ بنیادی",
-      "shortDescription": "- 2 سی پی یو کور\n- 2 جی بی ریم\n- 40 جی بی ایس ایس ڈی RAID 10\n- 1000 جی بی بینڈوڈتھ",
-      "description": "VPS ہوسٹنگ بیسک ڈویلپرز، چھوٹی ایپلیکیشنز اور ویب سائٹس کے لیے موزوں ہے جنہیں مشترکہ ہوسٹنگ فراہم کرنے کے مقابلے میں زیادہ کنٹرول اور قابل قیاس وسائل کی ضرورت ہے۔\n\n2 CPU کور، 2 GB RAM، 40 GB SSD RAID 10 اسٹوریج اور 1000 GB بینڈوتھ کے ساتھ، آپ کو ہلکے سے اعتدال پسند کام کے بوجھ کے لیے ایک ٹھوس ورچوئل سرور ملتا ہے۔\n\nTripleZero iT آپ کو ایک قابل اعتماد بنیادی ڈھانچہ فراہم کرتا ہے، تاکہ آپ اپنی درخواست، ویب سائٹ یا ترقیاتی ماحول پر توجہ مرکوز کر سکیں۔ جب مانگ بڑھتی ہے تو پیمانہ بڑھائیں۔"
+      "shortDescription": "- 2 سی پی یو کور\n- 2 جی بی ریم\n- 40 جی بی NVMe-schijfruimte\n- 1000 جی بی بینڈوڈتھ",
+      "description": "VPS ہوسٹنگ بیسک ڈویلپرز، چھوٹی ایپلیکیشنز اور ویب سائٹس کے لیے موزوں ہے جنہیں مشترکہ ہوسٹنگ فراہم کرنے کے مقابلے میں زیادہ کنٹرول اور قابل قیاس وسائل کی ضرورت ہے۔\n\n2 CPU کور، 2 GB RAM، 40 GB NVMe-schijfruimte اسٹوریج اور 1000 GB بینڈوتھ کے ساتھ، آپ کو ہلکے سے اعتدال پسند کام کے بوجھ کے لیے ایک ٹھوس ورچوئل سرور ملتا ہے۔\n\nTripleZero iT آپ کو ایک قابل اعتماد بنیادی ڈھانچہ فراہم کرتا ہے، تاکہ آپ اپنی درخواست، ویب سائٹ یا ترقیاتی ماحول پر توجہ مرکوز کر سکیں۔ جب مانگ بڑھتی ہے تو پیمانہ بڑھائیں۔"
     },
     "vps-hosting-plus": {
       "name": "VPS ہوسٹنگ پلس",
-      "shortDescription": "- 8 سی پی یو کور\n- 12 جی بی ریم\n- 240 جی بی ایس ایس ڈی RAID 10\n- 6000 جی بی بینڈوتھ",
-      "description": "VPS ہوسٹنگ پلس کو کاروباری لحاظ سے اہم ویب سائٹس کے لیے ڈیزائن کیا گیا ہے، ایسی ایپلی کیشنز اور تنظیموں کا مطالبہ جو کافی صلاحیت اور مستحکم کارکردگی کی توقع رکھتے ہیں۔\n\n8 CPU کور، 12 GB RAM، 240 GB SSD RAID 10 سٹوریج اور 6000 GB بینڈوتھ کے ساتھ، یہ منصوبہ انتہائی کام کے بوجھ، متعدد ماحول اور زیادہ وزیٹر والیوم کے لیے ایک طاقتور بنیاد فراہم کرتا ہے۔\n\nTripleZero iT آپ کو قابل اعتماد انفراسٹرکچر بنانے میں مدد کرتا ہے جو آپ کے عزائم کے ساتھ چلتا ہے۔ آپ اپنے VPS کا کنٹرول برقرار رکھتے ہیں، ایک تجربہ کار ٹیم کے ساتھ جو سپورٹ کے لیے دستیاب ہے۔"
+      "shortDescription": "- 8 سی پی یو کور\n- 12 جی بی ریم\n- 240 جی بی NVMe-schijfruimte\n- 6000 جی بی بینڈوتھ",
+      "description": "VPS ہوسٹنگ پلس کو کاروباری لحاظ سے اہم ویب سائٹس کے لیے ڈیزائن کیا گیا ہے، ایسی ایپلی کیشنز اور تنظیموں کا مطالبہ جو کافی صلاحیت اور مستحکم کارکردگی کی توقع رکھتے ہیں۔\n\n8 CPU کور، 12 GB RAM، 240 GB NVMe-schijfruimte سٹوریج اور 6000 GB بینڈوتھ کے ساتھ، یہ منصوبہ انتہائی کام کے بوجھ، متعدد ماحول اور زیادہ وزیٹر والیوم کے لیے ایک طاقتور بنیاد فراہم کرتا ہے۔\n\nTripleZero iT آپ کو قابل اعتماد انفراسٹرکچر بنانے میں مدد کرتا ہے جو آپ کے عزائم کے ساتھ چلتا ہے۔ آپ اپنے VPS کا کنٹرول برقرار رکھتے ہیں، ایک تجربہ کار ٹیم کے ساتھ جو سپورٹ کے لیے دستیاب ہے۔"
     },
     "vps-hosting-business": {
       "name": "VPS ہوسٹنگ بزنس",
-      "shortDescription": "- 4 سی پی یو کور\n- 6 جی بی ریم\n- 120 GB SSD RAID 10\n- 3000 جی بی بینڈوڈتھ",
-      "description": "VPS ہوسٹنگ بزنس بڑھتے ہوئے ویب پروجیکٹس، کاروباری ایپلیکیشنز اور ترقیاتی ٹیموں کے لیے ہے جنہیں اضافی صلاحیت اور مسلسل کارکردگی کی ضرورت ہے۔\n\nسرور 120 GB SSD RAID 10 اسٹوریج اور 3000 GB بینڈوتھ کے ساتھ 4 CPU کور اور 6 GB RAM کو یکجا کرتا ہے۔ اس سے کام کے زیادہ بوجھ، متعدد خدمات یا بڑھتی ہوئی ٹریفک کی گنجائش باقی رہ جاتی ہے۔\n\nTripleZero iT ایک قابل اعتماد VPS فاؤنڈیشن فراہم کرتا ہے جسے آپ اپنی ضروریات کے مطابق ترتیب دے سکتے ہیں۔ کسی پیشہ ور پارٹنر کے ساتھ قریب سے ورچوئل سرور کی لچک حاصل کریں۔"
+      "shortDescription": "- 4 سی پی یو کور\n- 6 جی بی ریم\n- 120 GB NVMe-schijfruimte\n- 3000 جی بی بینڈوڈتھ",
+      "description": "VPS ہوسٹنگ بزنس بڑھتے ہوئے ویب پروجیکٹس، کاروباری ایپلیکیشنز اور ترقیاتی ٹیموں کے لیے ہے جنہیں اضافی صلاحیت اور مسلسل کارکردگی کی ضرورت ہے۔\n\nسرور 120 GB NVMe-schijfruimte اسٹوریج اور 3000 GB بینڈوتھ کے ساتھ 4 CPU کور اور 6 GB RAM کو یکجا کرتا ہے۔ اس سے کام کے زیادہ بوجھ، متعدد خدمات یا بڑھتی ہوئی ٹریفک کی گنجائش باقی رہ جاتی ہے۔\n\nTripleZero iT ایک قابل اعتماد VPS فاؤنڈیشن فراہم کرتا ہے جسے آپ اپنی ضروریات کے مطابق ترتیب دے سکتے ہیں۔ کسی پیشہ ور پارٹنر کے ساتھ قریب سے ورچوئل سرور کی لچک حاصل کریں۔"
     },
     "wordpress-hosting-basic": {
       "name": "ورڈپریس ہوسٹنگ بنیادی",

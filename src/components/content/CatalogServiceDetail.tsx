@@ -216,50 +216,6 @@ export async function CatalogServiceDetail({
                     ))}
                   </ul>
                 ) : null}
-                <div className="mt-8 flex flex-wrap gap-3">
-                  {canOrder && shopProduct ? (
-                    <>
-                      <AddToCartButton
-                        productId={shopProduct.id}
-                        label={tShop("order")}
-                        size="lg"
-                      />
-                      <Button asChild size="lg" variant="outline" className="rounded-2xl">
-                        <SoftLink href={localizedHref(locale, "/shop/cart")}>
-                          {tShop("goToCart")}
-                        </SoftLink>
-                      </Button>
-                    </>
-                  ) : (
-                    <>
-                      {inquiry ? (
-                        <ServiceInquiryDialog
-                          serviceTitle={content.title}
-                          source={inquiry.source}
-                          messageHint={t(`inquiry.${inquiry.key}.hint`)}
-                          triggerLabel={t(`inquiry.${inquiry.key}.trigger`)}
-                        />
-                      ) : slug === "ai-scan" ? (
-                        <Button asChild size="lg" className="rounded-2xl">
-                          <SoftLink href={localizedHref(locale, "/ai-scan")}>
-                            {t("startFreeAiScan")}
-                          </SoftLink>
-                        </Button>
-                      ) : (
-                        <Button asChild size="lg" className="rounded-2xl">
-                          <SoftLink href={localizedHref(locale, "/afspraak")}>
-                            {tNav("book")}
-                          </SoftLink>
-                        </Button>
-                      )}
-                      <Button asChild size="lg" variant="outline" className="rounded-2xl">
-                        <SoftLink href={localizedHref(locale, "/contact")}>
-                          {t("contact")}
-                        </SoftLink>
-                      </Button>
-                    </>
-                  )}
-                </div>
               </div>
               {heroImage ? (
                 <TabletFrame className="justify-self-center lg:justify-self-end">

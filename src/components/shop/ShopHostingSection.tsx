@@ -152,7 +152,7 @@ export function ShopHostingSection({
                   )}
                 >
                   {featured ? (
-                    <div className="pricing-badge absolute end-3 top-3 z-10 rounded-full bg-primary px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-primary-foreground">
+                    <div className="pricing-badge absolute inset-e-3 top-3 z-10 rounded-full bg-primary px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-primary-foreground">
                       {tPricing("mostChosen")}
                     </div>
                   ) : null}

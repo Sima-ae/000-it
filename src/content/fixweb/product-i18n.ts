@@ -354,11 +354,11 @@ TripleZero iT provides a fully managed cloud foundation with the headroom seriou
       name: "VPS Hosting Basic",
       shortDescription: `– 2 CPU-cores
 – 2 GB RAM
-– 40 GB SSD RAID 10
+– 40 GB NVMe-schijfruimte
 – 1000 GB bandbreedte`,
       description: `VPS Hosting Basic is geschikt voor ontwikkelaars, kleine applicaties en websites die meer controle en voorspelbare resources nodig hebben dan shared hosting biedt.
 
-Met 2 CPU-cores, 2 GB RAM, 40 GB SSD RAID 10-opslag en 1000 GB bandbreedte krijg je een solide virtuele server voor lichte tot gemiddelde workloads.
+Met 2 CPU-cores, 2 GB RAM, 40 GB NVMe-schijfruimte en 1000 GB bandbreedte krijg je een solide virtuele server voor lichte tot gemiddelde workloads.
 
 TripleZero iT helpt je met een betrouwbare infrastructuurbasis, zodat je kunt focussen op jouw applicatie, website of ontwikkelomgeving. Je schaalt door wanneer jouw vraag toeneemt.`,
     },
@@ -366,11 +366,11 @@ TripleZero iT helpt je met een betrouwbare infrastructuurbasis, zodat je kunt fo
       name: "VPS Hosting Basic",
       shortDescription: `– 2 CPU cores
 – 2 GB RAM
-– 40 GB SSD RAID 10
+– 40 GB NVMe-schijfruimte
 – 1000 GB bandwidth`,
       description: `VPS Hosting Basic is suited to developers, small applications and websites that need more control and predictable resources than shared hosting provides.
 
-With 2 CPU cores, 2 GB RAM, 40 GB SSD RAID 10 storage and 1000 GB bandwidth, you get a solid virtual server for light to moderate workloads.
+With 2 CPU cores, 2 GB RAM, 40 GB NVMe-schijfruimte and 1000 GB bandwidth, you get a solid virtual server for light to moderate workloads.
 
 TripleZero iT gives you a dependable infrastructure foundation, so you can focus on your application, website or development environment. Scale up when demand grows.`,
     },
@@ -381,11 +381,11 @@ TripleZero iT gives you a dependable infrastructure foundation, so you can focus
       name: "VPS Hosting Business",
       shortDescription: `– 4 CPU-cores
 – 6 GB RAM
-– 120 GB SSD RAID 10
+– 120 GB NVMe-schijfruimte
 – 3000 GB bandbreedte`,
       description: `VPS Hosting Business is voor groeiende webprojecten, zakelijke applicaties en ontwikkelteams die extra capaciteit en consistente prestaties nodig hebben.
 
-De server combineert 4 CPU-cores en 6 GB RAM met 120 GB SSD RAID 10-opslag en 3000 GB bandbreedte. Daarmee is er ruimte voor zwaardere workloads, meerdere services of toenemend verkeer.
+De server combineert 4 CPU-cores en 6 GB RAM met 120 GB NVMe-schijfruimte en 3000 GB bandbreedte. Daarmee is er ruimte voor zwaardere workloads, meerdere services of toenemend verkeer.
 
 TripleZero iT levert een betrouwbare VPS-basis waarop je jouw omgeving naar eigen behoefte kunt inrichten. Zo krijg je de flexibiliteit van een virtuele server met een professionele partner dichtbij.`,
     },
@@ -393,11 +393,11 @@ TripleZero iT levert een betrouwbare VPS-basis waarop je jouw omgeving naar eige
       name: "VPS Hosting Business",
       shortDescription: `– 4 CPU cores
 – 6 GB RAM
-– 120 GB SSD RAID 10
+– 120 GB NVMe-schijfruimte
 – 3000 GB bandwidth`,
       description: `VPS Hosting Business is for growing web projects, business applications and development teams that need additional capacity and consistent performance.
 
-The server combines 4 CPU cores and 6 GB RAM with 120 GB SSD RAID 10 storage and 3000 GB bandwidth. This leaves room for heavier workloads, multiple services or increasing traffic.
+The server combines 4 CPU cores and 6 GB RAM with 120 GB NVMe-schijfruimte and 3000 GB bandwidth. This leaves room for heavier workloads, multiple services or increasing traffic.
 
 TripleZero iT delivers a dependable VPS foundation that you can configure around your needs. Gain the flexibility of a virtual server with a professional partner close by.`,
     },
@@ -408,11 +408,11 @@ TripleZero iT delivers a dependable VPS foundation that you can configure around
       name: "VPS Hosting Plus",
       shortDescription: `– 8 CPU-cores
 – 12 GB RAM
-– 240 GB SSD RAID 10
+– 240 GB NVMe-schijfruimte
 – 6000 GB bandbreedte`,
       description: `VPS Hosting Plus is ontworpen voor bedrijfskritische websites, veeleisende applicaties en organisaties die ruime capaciteit en stabiele prestaties verwachten.
 
-Met 8 CPU-cores, 12 GB RAM, 240 GB SSD RAID 10-opslag en 6000 GB bandbreedte biedt dit pakket een krachtige basis voor intensieve workloads, meerdere omgevingen en hogere bezoekersaantallen.
+Met 8 CPU-cores, 12 GB RAM, 240 GB NVMe-schijfruimte en 6000 GB bandbreedte biedt dit pakket een krachtige basis voor intensieve workloads, meerdere omgevingen en hogere bezoekersaantallen.
 
 TripleZero iT helpt je een betrouwbare infrastructuur neer te zetten die met jouw ambities meebeweegt. Je houdt de controle over jouw VPS, met een deskundige partij bereikbaar voor ondersteuning.`,
     },
@@ -420,11 +420,11 @@ TripleZero iT helpt je een betrouwbare infrastructuur neer te zetten die met jou
       name: "VPS Hosting Plus",
       shortDescription: `– 8 CPU cores
 – 12 GB RAM
-– 240 GB SSD RAID 10
+– 240 GB NVMe-schijfruimte
 – 6000 GB bandwidth`,
       description: `VPS Hosting Plus is designed for business-critical websites, demanding applications and organisations that expect ample capacity and stable performance.
 
-With 8 CPU cores, 12 GB RAM, 240 GB SSD RAID 10 storage and 6000 GB bandwidth, this plan provides a powerful base for intensive workloads, multiple environments and higher visitor volumes.
+With 8 CPU cores, 12 GB RAM, 240 GB NVMe-schijfruimte and 6000 GB bandwidth, this plan provides a powerful base for intensive workloads, multiple environments and higher visitor volumes.
 
 TripleZero iT helps you build dependable infrastructure that moves with your ambitions. You retain control of your VPS, with an experienced team available for support.`,
     },

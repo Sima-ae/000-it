@@ -788,7 +788,7 @@
     },
     "vps-hosting": {
       "title": "VPS Hosting",
-      "subtitle": "More power and control with VPS: dedicated resources, SSD RAID 10 and scalable CPU/RAM/bandwidth for growing projects.",
+      "subtitle": "More power and control with VPS: dedicated resources, NVMe-schijfruimte and scalable CPU/RAM/bandwidth for growing projects.",
       "blocks": [
         {
           "type": "heading",
@@ -805,9 +805,9 @@
         {
           "type": "list",
           "items": [
-            "Basic — 2 CPU cores, 2 GB RAM, 40 GB SSD RAID 10, 1000 GB bandwidth",
-            "Plus — 4 CPU cores, 6 GB RAM, 120 GB SSD RAID 10, 3000 GB bandwidth",
-            "Business — 8 CPU cores, 12 GB RAM, 240 GB SSD RAID 10, 6000 GB bandwidth"
+            "Basic — 2 CPU cores, 2 GB RAM, 40 GB NVMe-schijfruimte, 1000 GB bandwidth",
+            "Plus — 4 CPU cores, 6 GB RAM, 120 GB NVMe-schijfruimte, 3000 GB bandwidth",
+            "Business — 8 CPU cores, 12 GB RAM, 240 GB NVMe-schijfruimte, 6000 GB bandwidth"
           ]
         },
         {
@@ -824,7 +824,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 and clear resource limits deliver predictable performance. Scale up when your project needs it."
+          "text": "NVMe-schijfruimte and clear resource limits deliver predictable performance. Scale up when your project needs it."
         },
         {
           "type": "heading",
@@ -1693,7 +1693,7 @@
     },
     "vps-hosting": {
       "title": "VPS Hosting",
-      "subtitle": "Meer power en controle met VPS: dedicated resources, SSD RAID 10 en schaalbare CPU/RAM/bandbreedte voor groeiende projecten.",
+      "subtitle": "Meer power en controle met VPS: dedicated resources, NVMe-schijfruimte en schaalbare CPU/RAM/bandbreedte voor groeiende projecten.",
       "blocks": [
         {
           "type": "heading",
@@ -1710,9 +1710,9 @@
         {
           "type": "list",
           "items": [
-            "Basic — 2 CPU-cores, 2 GB RAM, 40 GB SSD RAID 10, 1000 GB bandbreedte",
-            "Plus — 4 CPU-cores, 6 GB RAM, 120 GB SSD RAID 10, 3000 GB bandbreedte",
-            "Business — 8 CPU-cores, 12 GB RAM, 240 GB SSD RAID 10, 6000 GB bandbreedte"
+            "Basic — 2 CPU-cores, 2 GB RAM, 40 GB NVMe-schijfruimte, 1000 GB bandbreedte",
+            "Plus — 4 CPU-cores, 6 GB RAM, 120 GB NVMe-schijfruimte, 3000 GB bandbreedte",
+            "Business — 8 CPU-cores, 12 GB RAM, 240 GB NVMe-schijfruimte, 6000 GB bandbreedte"
           ]
         },
         {
@@ -1729,7 +1729,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 en duidelijke resourcegrenzen geven voorspelbare prestaties. Je schaalt omhoog wanneer jouw project dat vraagt."
+          "text": "NVMe-schijfruimte en duidelijke resourcegrenzen geven voorspelbare prestaties. Je schaalt omhoog wanneer jouw project dat vraagt."
         },
         {
           "type": "heading",
@@ -2598,7 +2598,7 @@
     },
     "vps-hosting": {
       "title": "Hébergement VPS",
-      "subtitle": "Plus de puissance et de contrôle avec VPS : ressources dédiées, SSD RAID 10 et CPU/RAM/bande passante évolutive pour les projets en pleine croissance.",
+      "subtitle": "Plus de puissance et de contrôle avec VPS : ressources dédiées, NVMe-schijfruimte et CPU/RAM/bande passante évolutive pour les projets en pleine croissance.",
       "blocks": [
         {
           "type": "heading",
@@ -2615,9 +2615,9 @@
         {
           "type": "list",
           "items": [
-            "De base – 2 cœurs de processeur, 2 Go de RAM, 40 Go SSD RAID 10, 1 000 Go de bande passante",
-            "Plus : 4 cœurs de processeur, 6 Go de RAM, 120 Go SSD RAID 10, 3 000 Go de bande passante",
-            "Entreprise : 8 cœurs de processeur, 12 Go de RAM, 240 Go SSD RAID 10, 6 000 Go de bande passante"
+            "De base – 2 cœurs de processeur, 2 Go de RAM, 40 Go NVMe-schijfruimte, 1 000 Go de bande passante",
+            "Plus : 4 cœurs de processeur, 6 Go de RAM, 120 Go NVMe-schijfruimte, 3 000 Go de bande passante",
+            "Entreprise : 8 cœurs de processeur, 12 Go de RAM, 240 Go NVMe-schijfruimte, 6 000 Go de bande passante"
           ]
         },
         {
@@ -2634,7 +2634,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Le SSD RAID 10 et les limites claires des ressources offrent des performances prévisibles. Évoluez lorsque votre projet en a besoin."
+          "text": "Le NVMe-schijfruimte et les limites claires des ressources offrent des performances prévisibles. Évoluez lorsque votre projet en a besoin."
         },
         {
           "type": "heading",
@@ -3503,7 +3503,7 @@
     },
     "vps-hosting": {
       "title": "VPS-Hosting",
-      "subtitle": "Mehr Leistung und Kontrolle mit VPS: dedizierte Ressourcen, SSD RAID 10 und skalierbare CPU/RAM/Bandbreite für wachsende Projekte.",
+      "subtitle": "Mehr Leistung und Kontrolle mit VPS: dedizierte Ressourcen, NVMe-schijfruimte und skalierbare CPU/RAM/Bandbreite für wachsende Projekte.",
       "blocks": [
         {
           "type": "heading",
@@ -3520,9 +3520,9 @@
         {
           "type": "list",
           "items": [
-            "Basic – 2 CPU-Kerne, 2 GB RAM, 40 GB SSD RAID 10, 1000 GB Bandbreite",
-            "Plus – 4 CPU-Kerne, 6 GB RAM, 120 GB SSD RAID 10, 3000 GB Bandbreite",
-            "Business – 8 CPU-Kerne, 12 GB RAM, 240 GB SSD RAID 10, 6000 GB Bandbreite"
+            "Basic – 2 CPU-Kerne, 2 GB RAM, 40 GB NVMe-schijfruimte, 1000 GB Bandbreite",
+            "Plus – 4 CPU-Kerne, 6 GB RAM, 120 GB NVMe-schijfruimte, 3000 GB Bandbreite",
+            "Business – 8 CPU-Kerne, 12 GB RAM, 240 GB NVMe-schijfruimte, 6000 GB Bandbreite"
           ]
         },
         {
@@ -3539,7 +3539,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 und klare Ressourcengrenzen sorgen für vorhersehbare Leistung. Skalieren Sie, wenn Ihr Projekt es benötigt."
+          "text": "NVMe-schijfruimte und klare Ressourcengrenzen sorgen für vorhersehbare Leistung. Skalieren Sie, wenn Ihr Projekt es benötigt."
         },
         {
           "type": "heading",
@@ -4408,7 +4408,7 @@
     },
     "vps-hosting": {
       "title": "hosting vps",
-      "subtitle": "Más potencia y control con VPS: recursos dedicados, SSD RAID 10 y CPU/RAM/ancho de banda escalable para proyectos en crecimiento.",
+      "subtitle": "Más potencia y control con VPS: recursos dedicados, NVMe-schijfruimte y CPU/RAM/ancho de banda escalable para proyectos en crecimiento.",
       "blocks": [
         {
           "type": "heading",
@@ -4425,9 +4425,9 @@
         {
           "type": "list",
           "items": [
-            "Básico: 2 núcleos de CPU, 2 GB de RAM, 40 GB SSD RAID 10, 1000 GB de ancho de banda",
-            "Además: 4 núcleos de CPU, 6 GB de RAM, 120 GB SSD RAID 10, 3000 GB de ancho de banda",
-            "Empresarial: 8 núcleos de CPU, 12 GB de RAM, 240 GB SSD RAID 10, 6000 GB de ancho de banda"
+            "Básico: 2 núcleos de CPU, 2 GB de RAM, 40 GB NVMe-schijfruimte, 1000 GB de ancho de banda",
+            "Además: 4 núcleos de CPU, 6 GB de RAM, 120 GB NVMe-schijfruimte, 3000 GB de ancho de banda",
+            "Empresarial: 8 núcleos de CPU, 12 GB de RAM, 240 GB NVMe-schijfruimte, 6000 GB de ancho de banda"
           ]
         },
         {
@@ -4444,7 +4444,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 y límites de recursos claros ofrecen un rendimiento predecible. Amplíe cuando su proyecto lo necesite."
+          "text": "NVMe-schijfruimte y límites de recursos claros ofrecen un rendimiento predecible. Amplíe cuando su proyecto lo necesite."
         },
         {
           "type": "heading",
@@ -5313,7 +5313,7 @@
     },
     "vps-hosting": {
       "title": "hosting vps",
-      "subtitle": "Mais potência e controle com VPS: recursos dedicados, SSD RAID 10 e CPU/RAM/largura de banda escalonáveis ​​para projetos em crescimento.",
+      "subtitle": "Mais potência e controle com VPS: recursos dedicados, NVMe-schijfruimte e CPU/RAM/largura de banda escalonáveis ​​para projetos em crescimento.",
       "blocks": [
         {
           "type": "heading",
@@ -5330,9 +5330,9 @@
         {
           "type": "list",
           "items": [
-            "Básico – 2 núcleos de CPU, 2 GB de RAM, SSD RAID 10 de 40 GB, largura de banda de 1.000 GB",
-            "Além disso – 4 núcleos de CPU, 6 GB de RAM, SSD RAID 10 de 120 GB, largura de banda de 3.000 GB",
-            "Empresarial – 8 núcleos de CPU, 12 GB de RAM, SSD RAID 10 de 240 GB, largura de banda de 6.000 GB"
+            "Básico – 2 núcleos de CPU, 2 GB de RAM, NVMe-schijfruimte de 40 GB, largura de banda de 1.000 GB",
+            "Além disso – 4 núcleos de CPU, 6 GB de RAM, NVMe-schijfruimte de 120 GB, largura de banda de 3.000 GB",
+            "Empresarial – 8 núcleos de CPU, 12 GB de RAM, NVMe-schijfruimte de 240 GB, largura de banda de 6.000 GB"
           ]
         },
         {
@@ -5349,7 +5349,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 e limites claros de recursos proporcionam desempenho previsível. Aumente a escala quando seu projeto precisar."
+          "text": "NVMe-schijfruimte e limites claros de recursos proporcionam desempenho previsível. Aumente a escala quando seu projeto precisar."
         },
         {
           "type": "heading",
@@ -6218,7 +6218,7 @@
     },
     "vps-hosting": {
       "title": "Hosting VPS",
-      "subtitle": "Più potenza e controllo con VPS: risorse dedicate, SSD RAID 10 e CPU/RAM/larghezza di banda scalabili per progetti in crescita.",
+      "subtitle": "Più potenza e controllo con VPS: risorse dedicate, NVMe-schijfruimte e CPU/RAM/larghezza di banda scalabili per progetti in crescita.",
       "blocks": [
         {
           "type": "heading",
@@ -6235,9 +6235,9 @@
         {
           "type": "list",
           "items": [
-            "Base: 2 core CPU, 2 GB di RAM, 40 GB SSD RAID 10, larghezza di banda 1000 GB",
-            "Inoltre: 4 core CPU, 6 GB di RAM, 120 GB SSD RAID 10, larghezza di banda 3000 GB",
-            "Business: 8 core CPU, 12 GB RAM, SSD RAID 10 da 240 GB, larghezza di banda 6000 GB"
+            "Base: 2 core CPU, 2 GB di RAM, 40 GB NVMe-schijfruimte, larghezza di banda 1000 GB",
+            "Inoltre: 4 core CPU, 6 GB di RAM, 120 GB NVMe-schijfruimte, larghezza di banda 3000 GB",
+            "Business: 8 core CPU, 12 GB RAM, NVMe-schijfruimte da 240 GB, larghezza di banda 6000 GB"
           ]
         },
         {
@@ -6254,7 +6254,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 e limiti chiari delle risorse offrono prestazioni prevedibili. Aumenta la tua scalabilità quando il tuo progetto ne ha bisogno."
+          "text": "NVMe-schijfruimte e limiti chiari delle risorse offrono prestazioni prevedibili. Aumenta la tua scalabilità quando il tuo progetto ne ha bisogno."
         },
         {
           "type": "heading",
@@ -7123,7 +7123,7 @@
     },
     "vps-hosting": {
       "title": "VPS Hosting",
-      "subtitle": "Περισσότερη ισχύς και έλεγχος με το VPS: αποκλειστικοί πόροι, SSD RAID 10 και επεκτάσιμο CPU/RAM/εύρος ζώνης για αναπτυσσόμενα έργα.",
+      "subtitle": "Περισσότερη ισχύς και έλεγχος με το VPS: αποκλειστικοί πόροι, NVMe-schijfruimte και επεκτάσιμο CPU/RAM/εύρος ζώνης για αναπτυσσόμενα έργα.",
       "blocks": [
         {
           "type": "heading",
@@ -7140,9 +7140,9 @@
         {
           "type": "list",
           "items": [
-            "Βασικά — 2 πυρήνες CPU, 2 GB RAM, 40 GB SSD RAID 10, εύρος ζώνης 1000 GB",
-            "Plus — 4 πυρήνες CPU, 6 GB RAM, 120 GB SSD RAID 10, 3000 GB εύρος ζώνης",
-            "Business — 8 πυρήνες CPU, 12 GB RAM, 240 GB SSD RAID 10, 6000 GB εύρος ζώνης"
+            "Βασικά — 2 πυρήνες CPU, 2 GB RAM, 40 GB NVMe-schijfruimte, εύρος ζώνης 1000 GB",
+            "Plus — 4 πυρήνες CPU, 6 GB RAM, 120 GB NVMe-schijfruimte, 3000 GB εύρος ζώνης",
+            "Business — 8 πυρήνες CPU, 12 GB RAM, 240 GB NVMe-schijfruimte, 6000 GB εύρος ζώνης"
           ]
         },
         {
@@ -7159,7 +7159,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Το SSD RAID 10 και τα σαφή όρια πόρων προσφέρουν προβλέψιμη απόδοση. Κλιμακώστε όταν το χρειάζεται το έργο σας."
+          "text": "Το NVMe-schijfruimte και τα σαφή όρια πόρων προσφέρουν προβλέψιμη απόδοση. Κλιμακώστε όταν το χρειάζεται το έργο σας."
         },
         {
           "type": "heading",
@@ -8028,7 +8028,7 @@
     },
     "vps-hosting": {
       "title": "Hosting VPS",
-      "subtitle": "Większa moc i kontrola dzięki VPS: dedykowane zasoby, dysk SSD RAID 10 i skalowalny procesor/RAM/przepustowość dla rozwijających się projektów.",
+      "subtitle": "Większa moc i kontrola dzięki VPS: dedykowane zasoby, dysk NVMe-schijfruimte i skalowalny procesor/RAM/przepustowość dla rozwijających się projektów.",
       "blocks": [
         {
           "type": "heading",
@@ -8045,9 +8045,9 @@
         {
           "type": "list",
           "items": [
-            "Podstawowy — 2 rdzenie procesora, 2 GB RAM, 40 GB SSD RAID 10, przepustowość 1000 GB",
-            "Plus — 4 rdzenie procesora, 6 GB RAM, 120 GB SSD RAID 10, przepustowość 3000 GB",
-            "Biznes — 8 rdzeni procesora, 12 GB RAM, 240 GB SSD RAID 10, przepustowość 6000 GB"
+            "Podstawowy — 2 rdzenie procesora, 2 GB RAM, 40 GB NVMe-schijfruimte, przepustowość 1000 GB",
+            "Plus — 4 rdzenie procesora, 6 GB RAM, 120 GB NVMe-schijfruimte, przepustowość 3000 GB",
+            "Biznes — 8 rdzeni procesora, 12 GB RAM, 240 GB NVMe-schijfruimte, przepustowość 6000 GB"
           ]
         },
         {
@@ -8064,7 +8064,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Dysk SSD RAID 10 i jasne limity zasobów zapewniają przewidywalną wydajność. Zwiększaj skalę, gdy Twój projekt tego potrzebuje."
+          "text": "Dysk NVMe-schijfruimte i jasne limity zasobów zapewniają przewidywalną wydajność. Zwiększaj skalę, gdy Twój projekt tego potrzebuje."
         },
         {
           "type": "heading",
@@ -8933,7 +8933,7 @@
     },
     "vps-hosting": {
       "title": "Hostitelství VPS",
-      "subtitle": "Více výkonu a kontroly s VPS: vyhrazené zdroje, SSD RAID 10 a škálovatelný CPU/RAM/šířka pásma pro rostoucí projekty.",
+      "subtitle": "Více výkonu a kontroly s VPS: vyhrazené zdroje, NVMe-schijfruimte a škálovatelný CPU/RAM/šířka pásma pro rostoucí projekty.",
       "blocks": [
         {
           "type": "heading",
@@ -8950,9 +8950,9 @@
         {
           "type": "list",
           "items": [
-            "Základní — 2 jádra CPU, 2 GB RAM, 40 GB SSD RAID 10, šířka pásma 1 000 GB",
-            "Plus — 4 jádra CPU, 6 GB RAM, 120 GB SSD RAID 10, šířka pásma 3 000 GB",
-            "Business — 8 jader CPU, 12 GB RAM, 240 GB SSD RAID 10, šířka pásma 6 000 GB"
+            "Základní — 2 jádra CPU, 2 GB RAM, 40 GB NVMe-schijfruimte, šířka pásma 1 000 GB",
+            "Plus — 4 jádra CPU, 6 GB RAM, 120 GB NVMe-schijfruimte, šířka pásma 3 000 GB",
+            "Business — 8 jader CPU, 12 GB RAM, 240 GB NVMe-schijfruimte, šířka pásma 6 000 GB"
           ]
         },
         {
@@ -8969,7 +8969,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 a jasné limity zdrojů poskytují předvídatelný výkon. Rozšiřte, když to váš projekt potřebuje."
+          "text": "NVMe-schijfruimte a jasné limity zdrojů poskytují předvídatelný výkon. Rozšiřte, když to váš projekt potřebuje."
         },
         {
           "type": "heading",
@@ -9838,7 +9838,7 @@
     },
     "vps-hosting": {
       "title": "Hostiteľstvo VPS",
-      "subtitle": "Viac výkonu a kontroly s VPS: vyhradené zdroje, SSD RAID 10 a škálovateľný CPU/RAM/šírka pásma pre rastúce projekty.",
+      "subtitle": "Viac výkonu a kontroly s VPS: vyhradené zdroje, NVMe-schijfruimte a škálovateľný CPU/RAM/šírka pásma pre rastúce projekty.",
       "blocks": [
         {
           "type": "heading",
@@ -9855,9 +9855,9 @@
         {
           "type": "list",
           "items": [
-            "Základné — 2 jadrá CPU, 2 GB RAM, 40 GB SSD RAID 10, šírka pásma 1 000 GB",
-            "Plus — 4 jadrá CPU, 6 GB RAM, 120 GB SSD RAID 10, šírka pásma 3 000 GB",
-            "Business — 8 jadier CPU, 12 GB RAM, 240 GB SSD RAID 10, šírka pásma 6 000 GB"
+            "Základné — 2 jadrá CPU, 2 GB RAM, 40 GB NVMe-schijfruimte, šírka pásma 1 000 GB",
+            "Plus — 4 jadrá CPU, 6 GB RAM, 120 GB NVMe-schijfruimte, šírka pásma 3 000 GB",
+            "Business — 8 jadier CPU, 12 GB RAM, 240 GB NVMe-schijfruimte, šírka pásma 6 000 GB"
           ]
         },
         {
@@ -9874,7 +9874,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 a jasné limity zdrojov poskytujú predvídateľný výkon. Rozšírte, keď to váš projekt potrebuje."
+          "text": "NVMe-schijfruimte a jasné limity zdrojov poskytujú predvídateľný výkon. Rozšírte, keď to váš projekt potrebuje."
         },
         {
           "type": "heading",
@@ -10743,7 +10743,7 @@
     },
     "vps-hosting": {
       "title": "VPS tárhely",
-      "subtitle": "Több teljesítmény és vezérlés VPS-sel: dedikált erőforrások, SSD RAID 10 és méretezhető CPU/RAM/sávszélesség a növekvő projektekhez.",
+      "subtitle": "Több teljesítmény és vezérlés VPS-sel: dedikált erőforrások, NVMe-schijfruimte és méretezhető CPU/RAM/sávszélesség a növekvő projektekhez.",
       "blocks": [
         {
           "type": "heading",
@@ -10760,9 +10760,9 @@
         {
           "type": "list",
           "items": [
-            "Alap – 2 CPU mag, 2 GB RAM, 40 GB SSD RAID 10, 1000 GB sávszélesség",
-            "Plusz – 4 CPU mag, 6 GB RAM, 120 GB SSD RAID 10, 3000 GB sávszélesség",
-            "Üzleti – 8 CPU mag, 12 GB RAM, 240 GB SSD RAID 10, 6000 GB sávszélesség"
+            "Alap – 2 CPU mag, 2 GB RAM, 40 GB NVMe-schijfruimte, 1000 GB sávszélesség",
+            "Plusz – 4 CPU mag, 6 GB RAM, 120 GB NVMe-schijfruimte, 3000 GB sávszélesség",
+            "Üzleti – 8 CPU mag, 12 GB RAM, 240 GB NVMe-schijfruimte, 6000 GB sávszélesség"
           ]
         },
         {
@@ -10779,7 +10779,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Az SSD RAID 10 és az egyértelmű erőforrás-korlátok kiszámítható teljesítményt biztosítanak. Növelje a méretet, amikor a projektnek szüksége van rá."
+          "text": "Az NVMe-schijfruimte és az egyértelmű erőforrás-korlátok kiszámítható teljesítményt biztosítanak. Növelje a méretet, amikor a projektnek szüksége van rá."
         },
         {
           "type": "heading",
@@ -11648,7 +11648,7 @@
     },
     "vps-hosting": {
       "title": "Găzduire VPS",
-      "subtitle": "Mai multă putere și control cu ​​VPS: resurse dedicate, SSD RAID 10 și CPU/RAM/lățime de bandă scalabilă pentru proiecte în creștere.",
+      "subtitle": "Mai multă putere și control cu ​​VPS: resurse dedicate, NVMe-schijfruimte și CPU/RAM/lățime de bandă scalabilă pentru proiecte în creștere.",
       "blocks": [
         {
           "type": "heading",
@@ -11665,9 +11665,9 @@
         {
           "type": "list",
           "items": [
-            "De bază — 2 nuclee CPU, 2 GB RAM, 40 GB SSD RAID 10, 1000 GB lățime de bandă",
-            "Plus — 4 nuclee CPU, 6 GB RAM, 120 GB SSD RAID 10, 3000 GB lățime de bandă",
-            "Business — 8 nuclee CPU, 12 GB RAM, 240 GB SSD RAID 10, 6000 GB lățime de bandă"
+            "De bază — 2 nuclee CPU, 2 GB RAM, 40 GB NVMe-schijfruimte, 1000 GB lățime de bandă",
+            "Plus — 4 nuclee CPU, 6 GB RAM, 120 GB NVMe-schijfruimte, 3000 GB lățime de bandă",
+            "Business — 8 nuclee CPU, 12 GB RAM, 240 GB NVMe-schijfruimte, 6000 GB lățime de bandă"
           ]
         },
         {
@@ -11684,7 +11684,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 și limitele clare ale resurselor oferă performanțe previzibile. Creșteți-vă atunci când proiectul dvs. are nevoie."
+          "text": "NVMe-schijfruimte și limitele clare ale resurselor oferă performanțe previzibile. Creșteți-vă atunci când proiectul dvs. are nevoie."
         },
         {
           "type": "heading",
@@ -12553,7 +12553,7 @@
     },
     "vps-hosting": {
       "title": "VPS хостинг",
-      "subtitle": "Повече мощност и контрол с VPS: специализирани ресурси, SSD RAID 10 и мащабируем CPU/RAM/честотна лента за нарастващи проекти.",
+      "subtitle": "Повече мощност и контрол с VPS: специализирани ресурси, NVMe-schijfruimte и мащабируем CPU/RAM/честотна лента за нарастващи проекти.",
       "blocks": [
         {
           "type": "heading",
@@ -12570,9 +12570,9 @@
         {
           "type": "list",
           "items": [
-            "Основен — 2 CPU ядра, 2 GB RAM, 40 GB SSD RAID 10, 1000 GB честотна лента",
-            "Плюс — 4 CPU ядра, 6 GB RAM, 120 GB SSD RAID 10, 3000 GB честотна лента",
-            "Бизнес — 8 CPU ядра, 12 GB RAM, 240 GB SSD RAID 10, 6000 GB честотна лента"
+            "Основен — 2 CPU ядра, 2 GB RAM, 40 GB NVMe-schijfruimte, 1000 GB честотна лента",
+            "Плюс — 4 CPU ядра, 6 GB RAM, 120 GB NVMe-schijfruimte, 3000 GB честотна лента",
+            "Бизнес — 8 CPU ядра, 12 GB RAM, 240 GB NVMe-schijfruimte, 6000 GB честотна лента"
           ]
         },
         {
@@ -12589,7 +12589,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 и ясните ограничения на ресурсите осигуряват предвидима производителност. Увеличете мащаба, когато вашият проект има нужда от това."
+          "text": "NVMe-schijfruimte и ясните ограничения на ресурсите осигуряват предвидима производителност. Увеличете мащаба, когато вашият проект има нужда от това."
         },
         {
           "type": "heading",
@@ -13458,7 +13458,7 @@
     },
     "vps-hosting": {
       "title": "VPS hosting",
-      "subtitle": "Više snage i kontrole uz VPS: namjenski resursi, SSD RAID 10 i skalabilni CPU/RAM/propusnost za rastuće projekte.",
+      "subtitle": "Više snage i kontrole uz VPS: namjenski resursi, NVMe-schijfruimte i skalabilni CPU/RAM/propusnost za rastuće projekte.",
       "blocks": [
         {
           "type": "heading",
@@ -13475,9 +13475,9 @@
         {
           "type": "list",
           "items": [
-            "Osnovno — 2 CPU jezgre, 2 GB RAM-a, 40 GB SSD RAID 10, 1000 GB propusnosti",
-            "Plus — 4 CPU jezgre, 6 GB RAM-a, 120 GB SSD RAID 10, 3000 GB propusnosti",
-            "Poslovni — 8 CPU jezgri, 12 GB RAM-a, 240 GB SSD RAID 10, 6000 GB propusnosti"
+            "Osnovno — 2 CPU jezgre, 2 GB RAM-a, 40 GB NVMe-schijfruimte, 1000 GB propusnosti",
+            "Plus — 4 CPU jezgre, 6 GB RAM-a, 120 GB NVMe-schijfruimte, 3000 GB propusnosti",
+            "Poslovni — 8 CPU jezgri, 12 GB RAM-a, 240 GB NVMe-schijfruimte, 6000 GB propusnosti"
           ]
         },
         {
@@ -13494,7 +13494,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 i jasna ograničenja resursa daju predvidljive performanse. Povećajte kada vaš projekt to treba."
+          "text": "NVMe-schijfruimte i jasna ograničenja resursa daju predvidljive performanse. Povećajte kada vaš projekt to treba."
         },
         {
           "type": "heading",
@@ -15268,7 +15268,7 @@
     },
     "vps-hosting": {
       "title": "VPS hosting",
-      "subtitle": "Više snage i kontrole uz VPS: namjenski resursi, SSD RAID 10 i skalabilni CPU/RAM/propusni opseg za rastuće projekte.",
+      "subtitle": "Više snage i kontrole uz VPS: namjenski resursi, NVMe-schijfruimte i skalabilni CPU/RAM/propusni opseg za rastuće projekte.",
       "blocks": [
         {
           "type": "heading",
@@ -15285,9 +15285,9 @@
         {
           "type": "list",
           "items": [
-            "Osnovni — 2 CPU jezgra, 2 GB RAM-a, 40 GB SSD RAID 10, 1000 GB propusnog opsega",
-            "Plus — 4 CPU jezgra, 6 GB RAM-a, 120 GB SSD RAID 10, 3000 GB propusnog opsega",
-            "Posao — 8 CPU jezgara, 12 GB RAM-a, 240 GB SSD RAID 10, 6000 GB propusnog opsega"
+            "Osnovni — 2 CPU jezgra, 2 GB RAM-a, 40 GB NVMe-schijfruimte, 1000 GB propusnog opsega",
+            "Plus — 4 CPU jezgra, 6 GB RAM-a, 120 GB NVMe-schijfruimte, 3000 GB propusnog opsega",
+            "Posao — 8 CPU jezgara, 12 GB RAM-a, 240 GB NVMe-schijfruimte, 6000 GB propusnog opsega"
           ]
         },
         {
@@ -15304,7 +15304,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 i jasna ograničenja resursa pružaju predvidljive performanse. Povećajte veličinu kada je to potrebno vašem projektu."
+          "text": "NVMe-schijfruimte i jasna ograničenja resursa pružaju predvidljive performanse. Povećajte veličinu kada je to potrebno vašem projektu."
         },
         {
           "type": "heading",
@@ -17078,7 +17078,7 @@
     },
     "vps-hosting": {
       "title": "Pritje vizitorësh VPS",
-      "subtitle": "Më shumë fuqi dhe kontroll me VPS: burime të dedikuara, SSD RAID 10 dhe CPU/RAM/gjerësi bande e shkallëzueshme për projekte në rritje.",
+      "subtitle": "Më shumë fuqi dhe kontroll me VPS: burime të dedikuara, NVMe-schijfruimte dhe CPU/RAM/gjerësi bande e shkallëzueshme për projekte në rritje.",
       "blocks": [
         {
           "type": "heading",
@@ -17095,9 +17095,9 @@
         {
           "type": "list",
           "items": [
-            "Themelore - 2 bërthama CPU, 2 GB RAM, 40 GB SSD RAID 10, 1000 GB gjerësi brezi",
-            "Plus - 4 bërthama CPU, 6 GB RAM, 120 GB SSD RAID 10, 3000 GB gjerësi brezi",
-            "Biznes - 8 bërthama CPU, 12 GB RAM, 240 GB SSD RAID 10, 6000 GB gjerësi brezi"
+            "Themelore - 2 bërthama CPU, 2 GB RAM, 40 GB NVMe-schijfruimte, 1000 GB gjerësi brezi",
+            "Plus - 4 bërthama CPU, 6 GB RAM, 120 GB NVMe-schijfruimte, 3000 GB gjerësi brezi",
+            "Biznes - 8 bërthama CPU, 12 GB RAM, 240 GB NVMe-schijfruimte, 6000 GB gjerësi brezi"
           ]
         },
         {
@@ -17114,7 +17114,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 dhe kufizimet e qarta të burimeve ofrojnë performancë të parashikueshme. Rriteni kur projekti juaj ka nevojë për të."
+          "text": "NVMe-schijfruimte dhe kufizimet e qarta të burimeve ofrojnë performancë të parashikueshme. Rriteni kur projekti juaj ka nevojë për të."
         },
         {
           "type": "heading",
@@ -17983,7 +17983,7 @@
     },
     "vps-hosting": {
       "title": "Угостување преку VPS",
-      "subtitle": "Повеќе моќ и контрола со VPS: посветени ресурси, SSD RAID 10 и скалабилен CPU/RAM/пропусен опсег за растечки проекти.",
+      "subtitle": "Повеќе моќ и контрола со VPS: посветени ресурси, NVMe-schijfruimte и скалабилен CPU/RAM/пропусен опсег за растечки проекти.",
       "blocks": [
         {
           "type": "heading",
@@ -18000,9 +18000,9 @@
         {
           "type": "list",
           "items": [
-            "Основно - 2 јадра на процесорот, 2 GB RAM, 40 GB SSD RAID 10, 1000 GB пропусен опсег",
-            "Плус - 4 јадра на процесорот, 6 GB RAM, 120 GB SSD RAID 10, 3000 GB пропусен опсег",
-            "Бизнис - 8 јадра на процесорот, 12 GB RAM, 240 GB SSD RAID 10, 6000 GB пропусен опсег"
+            "Основно - 2 јадра на процесорот, 2 GB RAM, 40 GB NVMe-schijfruimte, 1000 GB пропусен опсег",
+            "Плус - 4 јадра на процесорот, 6 GB RAM, 120 GB NVMe-schijfruimte, 3000 GB пропусен опсег",
+            "Бизнис - 8 јадра на процесорот, 12 GB RAM, 240 GB NVMe-schijfruimte, 6000 GB пропусен опсег"
           ]
         },
         {
@@ -18019,7 +18019,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 и јасните ограничувања на ресурси обезбедуваат предвидливи перформанси. Зголемете кога му треба на вашиот проект."
+          "text": "NVMe-schijfruimte и јасните ограничувања на ресурси обезбедуваат предвидливи перформанси. Зголемете кога му треба на вашиот проект."
         },
         {
           "type": "heading",
@@ -18888,7 +18888,7 @@
     },
     "vps-hosting": {
       "title": "VPS svečių priėmimas",
-      "subtitle": "Daugiau galios ir valdymo naudojant VPS: tam skirti ištekliai, SSD RAID 10 ir keičiamas CPU/RAM/pralaidumas augantiems projektams.",
+      "subtitle": "Daugiau galios ir valdymo naudojant VPS: tam skirti ištekliai, NVMe-schijfruimte ir keičiamas CPU/RAM/pralaidumas augantiems projektams.",
       "blocks": [
         {
           "type": "heading",
@@ -18905,9 +18905,9 @@
         {
           "type": "list",
           "items": [
-            "Pagrindinis – 2 procesoriaus branduoliai, 2 GB RAM, 40 GB SSD RAID 10, 1000 GB pralaidumas",
-            "Plius – 4 procesoriaus branduoliai, 6 GB RAM, 120 GB SSD RAID 10, 3000 GB pralaidumas",
-            "Verslas – 8 procesoriaus branduoliai, 12 GB RAM, 240 GB SSD RAID 10, 6000 GB pralaidumas"
+            "Pagrindinis – 2 procesoriaus branduoliai, 2 GB RAM, 40 GB NVMe-schijfruimte, 1000 GB pralaidumas",
+            "Plius – 4 procesoriaus branduoliai, 6 GB RAM, 120 GB NVMe-schijfruimte, 3000 GB pralaidumas",
+            "Verslas – 8 procesoriaus branduoliai, 12 GB RAM, 240 GB NVMe-schijfruimte, 6000 GB pralaidumas"
           ]
         },
         {
@@ -18924,7 +18924,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 ir aiškūs išteklių apribojimai užtikrina nuspėjamą veikimą. Padidinkite mastą, kai to reikia jūsų projektui."
+          "text": "NVMe-schijfruimte ir aiškūs išteklių apribojimai užtikrina nuspėjamą veikimą. Padidinkite mastą, kai to reikia jūsų projektui."
         },
         {
           "type": "heading",
@@ -19793,7 +19793,7 @@
     },
     "vps-hosting": {
       "title": "VPS-hosting",
-      "subtitle": "Mere kraft og kontrol med VPS: dedikerede ressourcer, SSD RAID 10 og skalerbar CPU/RAM/båndbredde til voksende projekter.",
+      "subtitle": "Mere kraft og kontrol med VPS: dedikerede ressourcer, NVMe-schijfruimte og skalerbar CPU/RAM/båndbredde til voksende projekter.",
       "blocks": [
         {
           "type": "heading",
@@ -19810,9 +19810,9 @@
         {
           "type": "list",
           "items": [
-            "Grundlæggende — 2 CPU-kerner, 2 GB RAM, 40 GB SSD RAID 10, 1000 GB båndbredde",
-            "Plus — 4 CPU-kerner, 6 GB RAM, 120 GB SSD RAID 10, 3000 GB båndbredde",
-            "Business — 8 CPU-kerner, 12 GB RAM, 240 GB SSD RAID 10, 6000 GB båndbredde"
+            "Grundlæggende — 2 CPU-kerner, 2 GB RAM, 40 GB NVMe-schijfruimte, 1000 GB båndbredde",
+            "Plus — 4 CPU-kerner, 6 GB RAM, 120 GB NVMe-schijfruimte, 3000 GB båndbredde",
+            "Business — 8 CPU-kerner, 12 GB RAM, 240 GB NVMe-schijfruimte, 6000 GB båndbredde"
           ]
         },
         {
@@ -19829,7 +19829,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 og klare ressourcegrænser giver forudsigelig ydeevne. Skaler op, når dit projekt har brug for det."
+          "text": "NVMe-schijfruimte og klare ressourcegrænser giver forudsigelig ydeevne. Skaler op, når dit projekt har brug for det."
         },
         {
           "type": "heading",
@@ -20698,7 +20698,7 @@
     },
     "vps-hosting": {
       "title": "VPS Hosting",
-      "subtitle": "Mer kraft och kontroll med VPS: dedikerade resurser, SSD RAID 10 och skalbar CPU/RAM/bandbredd för växande projekt.",
+      "subtitle": "Mer kraft och kontroll med VPS: dedikerade resurser, NVMe-schijfruimte och skalbar CPU/RAM/bandbredd för växande projekt.",
       "blocks": [
         {
           "type": "heading",
@@ -20715,9 +20715,9 @@
         {
           "type": "list",
           "items": [
-            "Grundläggande — 2 CPU-kärnor, 2 GB RAM, 40 GB SSD RAID 10, 1000 GB bandbredd",
-            "Plus — 4 CPU-kärnor, 6 GB RAM, 120 GB SSD RAID 10, 3000 GB bandbredd",
-            "Business — 8 CPU-kärnor, 12 GB RAM, 240 GB SSD RAID 10, 6000 GB bandbredd"
+            "Grundläggande — 2 CPU-kärnor, 2 GB RAM, 40 GB NVMe-schijfruimte, 1000 GB bandbredd",
+            "Plus — 4 CPU-kärnor, 6 GB RAM, 120 GB NVMe-schijfruimte, 3000 GB bandbredd",
+            "Business — 8 CPU-kärnor, 12 GB RAM, 240 GB NVMe-schijfruimte, 6000 GB bandbredd"
           ]
         },
         {
@@ -20734,7 +20734,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 och tydliga resursgränser ger förutsägbar prestanda. Skala upp när ditt projekt behöver det."
+          "text": "NVMe-schijfruimte och tydliga resursgränser ger förutsägbar prestanda. Skala upp när ditt projekt behöver det."
         },
         {
           "type": "heading",
@@ -21603,7 +21603,7 @@
     },
     "vps-hosting": {
       "title": "VPS hosting",
-      "subtitle": "Mer kraft og kontroll med VPS: dedikerte ressurser, SSD RAID 10 og skalerbar CPU/RAM/båndbredde for voksende prosjekter.",
+      "subtitle": "Mer kraft og kontroll med VPS: dedikerte ressurser, NVMe-schijfruimte og skalerbar CPU/RAM/båndbredde for voksende prosjekter.",
       "blocks": [
         {
           "type": "heading",
@@ -21620,9 +21620,9 @@
         {
           "type": "list",
           "items": [
-            "Grunnleggende — 2 CPU-kjerner, 2 GB RAM, 40 GB SSD RAID 10, 1000 GB båndbredde",
-            "Pluss — 4 CPU-kjerner, 6 GB RAM, 120 GB SSD RAID 10, 3000 GB båndbredde",
-            "Business — 8 CPU-kjerner, 12 GB RAM, 240 GB SSD RAID 10, 6000 GB båndbredde"
+            "Grunnleggende — 2 CPU-kjerner, 2 GB RAM, 40 GB NVMe-schijfruimte, 1000 GB båndbredde",
+            "Pluss — 4 CPU-kjerner, 6 GB RAM, 120 GB NVMe-schijfruimte, 3000 GB båndbredde",
+            "Business — 8 CPU-kjerner, 12 GB RAM, 240 GB NVMe-schijfruimte, 6000 GB båndbredde"
           ]
         },
         {
@@ -21639,7 +21639,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 og klare ressursgrenser gir forutsigbar ytelse. Skaler opp når prosjektet ditt trenger det."
+          "text": "NVMe-schijfruimte og klare ressursgrenser gir forutsigbar ytelse. Skaler opp når prosjektet ditt trenger det."
         },
         {
           "type": "heading",
@@ -22508,7 +22508,7 @@
     },
     "vps-hosting": {
       "title": "VPS hosting",
-      "subtitle": "Enemmän tehoa ja hallintaa VPS:llä: omistetut resurssit, SSD RAID 10 ja skaalautuva CPU/RAM/kaistanleveys kasvaviin projekteihin.",
+      "subtitle": "Enemmän tehoa ja hallintaa VPS:llä: omistetut resurssit, NVMe-schijfruimte ja skaalautuva CPU/RAM/kaistanleveys kasvaviin projekteihin.",
       "blocks": [
         {
           "type": "heading",
@@ -22525,9 +22525,9 @@
         {
           "type": "list",
           "items": [
-            "Perus – 2 CPU ydintä, 2 Gt RAM-muistia, 40 Gt SSD RAID 10, 1000 Gt kaistanleveyttä",
-            "Plus - 4 CPU ydintä, 6 Gt RAM, 120 Gt SSD RAID 10, 3000 Gt kaistanleveys",
-            "Business – 8 CPU ydintä, 12 Gt RAM, 240 Gt SSD RAID 10, 6000 Gt kaistanleveys"
+            "Perus – 2 CPU ydintä, 2 Gt RAM-muistia, 40 Gt NVMe-schijfruimte, 1000 Gt kaistanleveyttä",
+            "Plus - 4 CPU ydintä, 6 Gt RAM, 120 Gt NVMe-schijfruimte, 3000 Gt kaistanleveys",
+            "Business – 8 CPU ydintä, 12 Gt RAM, 240 Gt NVMe-schijfruimte, 6000 Gt kaistanleveys"
           ]
         },
         {
@@ -22544,7 +22544,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 ja selkeät resurssirajat takaavat ennustettavan suorituskyvyn. Laajenna, kun projektisi sitä tarvitsee."
+          "text": "NVMe-schijfruimte ja selkeät resurssirajat takaavat ennustettavan suorituskyvyn. Laajenna, kun projektisi sitä tarvitsee."
         },
         {
           "type": "heading",
@@ -23413,7 +23413,7 @@
     },
     "vps-hosting": {
       "title": "VPS хостинг",
-      "subtitle": "Більше потужності та контролю з VPS: виділені ресурси, SSD RAID 10 і масштабована ЦП/ОЗУ/пропускна здатність для зростаючих проектів.",
+      "subtitle": "Більше потужності та контролю з VPS: виділені ресурси, NVMe-schijfruimte і масштабована ЦП/ОЗУ/пропускна здатність для зростаючих проектів.",
       "blocks": [
         {
           "type": "heading",
@@ -23430,9 +23430,9 @@
         {
           "type": "list",
           "items": [
-            "Базовий — 2 ядра ЦП, 2 ГБ ОЗУ, 40 ГБ SSD RAID 10, 1000 ГБ пропускної здатності",
-            "Плюс — 4 ядра CPU, 6 GB RAM, 120 GB SSD RAID 10, пропускна здатність 3000 GB",
-            "Бізнес — 8 ядер ЦП, 12 ГБ ОЗУ, 240 ГБ SSD RAID 10, 6000 ГБ пропускної здатності"
+            "Базовий — 2 ядра ЦП, 2 ГБ ОЗУ, 40 ГБ NVMe-schijfruimte, 1000 ГБ пропускної здатності",
+            "Плюс — 4 ядра CPU, 6 GB RAM, 120 GB NVMe-schijfruimte, пропускна здатність 3000 GB",
+            "Бізнес — 8 ядер ЦП, 12 ГБ ОЗУ, 240 ГБ NVMe-schijfruimte, 6000 ГБ пропускної здатності"
           ]
         },
         {
@@ -23449,7 +23449,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 і чіткі обмеження ресурсів забезпечують передбачувану продуктивність. Розширюйте масштаб, коли цього потребує ваш проект."
+          "text": "NVMe-schijfruimte і чіткі обмеження ресурсів забезпечують передбачувану продуктивність. Розширюйте масштаб, коли цього потребує ваш проект."
         },
         {
           "type": "heading",
@@ -24318,7 +24318,7 @@
     },
     "vps-hosting": {
       "title": "VPS-хостинг",
-      "subtitle": "Больше мощности и контроля с VPS: выделенные ресурсы, SSD RAID 10 и масштабируемый ЦП/ОЗУ/пропускная способность для растущих проектов.",
+      "subtitle": "Больше мощности и контроля с VPS: выделенные ресурсы, NVMe-schijfruimte и масштабируемый ЦП/ОЗУ/пропускная способность для растущих проектов.",
       "blocks": [
         {
           "type": "heading",
@@ -24335,9 +24335,9 @@
         {
           "type": "list",
           "items": [
-            "Базовый — 2 ядра ЦП, 2 ГБ ОЗУ, 40 ГБ SSD RAID 10, пропускная способность 1000 ГБ.",
-            "Плюс — 4 ядра ЦП, 6 ГБ ОЗУ, 120 ГБ SSD RAID 10, пропускная способность 3000 ГБ",
-            "Бизнес — 8 ядер ЦП, 12 ГБ ОЗУ, 240 ГБ SSD RAID 10, пропускная способность 6000 ГБ"
+            "Базовый — 2 ядра ЦП, 2 ГБ ОЗУ, 40 ГБ NVMe-schijfruimte, пропускная способность 1000 ГБ.",
+            "Плюс — 4 ядра ЦП, 6 ГБ ОЗУ, 120 ГБ NVMe-schijfruimte, пропускная способность 3000 ГБ",
+            "Бизнес — 8 ядер ЦП, 12 ГБ ОЗУ, 240 ГБ NVMe-schijfruimte, пропускная способность 6000 ГБ"
           ]
         },
         {
@@ -24354,7 +24354,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 и четкие ограничения ресурсов обеспечивают предсказуемую производительность. Масштабируйте, когда это необходимо вашему проекту."
+          "text": "NVMe-schijfruimte и четкие ограничения ресурсов обеспечивают предсказуемую производительность. Масштабируйте, когда это необходимо вашему проекту."
         },
         {
           "type": "heading",
@@ -25223,7 +25223,7 @@
     },
     "vps-hosting": {
       "title": "VPS Barındırma",
-      "subtitle": "VPS ile daha fazla güç ve kontrol: özel kaynaklar, SSD RAID 10 ve büyüyen projeler için ölçeklenebilir CPU/RAM/bant genişliği.",
+      "subtitle": "VPS ile daha fazla güç ve kontrol: özel kaynaklar, NVMe-schijfruimte ve büyüyen projeler için ölçeklenebilir CPU/RAM/bant genişliği.",
       "blocks": [
         {
           "type": "heading",
@@ -25240,9 +25240,9 @@
         {
           "type": "list",
           "items": [
-            "Temel — 2 CPU çekirdeği, 2 GB RAM, 40 GB SSD RAID 10, 1000 GB bant genişliği",
-            "Artı — 4 CPU çekirdeği, 6 GB RAM, 120 GB SSD RAID 10, 3000 GB bant genişliği",
-            "İş — 8 CPU çekirdeği, 12 GB RAM, 240 GB SSD RAID 10, 6000 GB bant genişliği"
+            "Temel — 2 CPU çekirdeği, 2 GB RAM, 40 GB NVMe-schijfruimte, 1000 GB bant genişliği",
+            "Artı — 4 CPU çekirdeği, 6 GB RAM, 120 GB NVMe-schijfruimte, 3000 GB bant genişliği",
+            "İş — 8 CPU çekirdeği, 12 GB RAM, 240 GB NVMe-schijfruimte, 6000 GB bant genişliği"
           ]
         },
         {
@@ -25259,7 +25259,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 ve net kaynak sınırları öngörülebilir performans sunar. Projeniz ihtiyaç duyduğunda ölçeği büyütün."
+          "text": "NVMe-schijfruimte ve net kaynak sınırları öngörülebilir performans sunar. Projeniz ihtiyaç duyduğunda ölçeği büyütün."
         },
         {
           "type": "heading",
@@ -26128,7 +26128,7 @@
     },
     "vps-hosting": {
       "title": "אירוח VPS",
-      "subtitle": "יותר כוח ושליטה עם VPS: משאבים ייעודיים, SSD RAID 10 ו-CPU/RAM/רוחב פס ניתן להרחבה עבור פרויקטים צומחים.",
+      "subtitle": "יותר כוח ושליטה עם VPS: משאבים ייעודיים, NVMe-schijfruimte ו-CPU/RAM/רוחב פס ניתן להרחבה עבור פרויקטים צומחים.",
       "blocks": [
         {
           "type": "heading",
@@ -26145,9 +26145,9 @@
         {
           "type": "list",
           "items": [
-            "בסיסי - 2 ליבות מעבד, 2 GB RAM, 40 GB SSD RAID 10, רוחב פס של 1000 GB",
-            "בנוסף - 4 ליבות מעבד, 6 GB RAM, 120 GB SSD RAID 10, רוחב פס של 3000 GB",
-            "עסקים - 8 ליבות מעבד, 12 GB RAM, 240 GB SSD RAID 10, רוחב פס של 6000 GB"
+            "בסיסי - 2 ליבות מעבד, 2 GB RAM, 40 GB NVMe-schijfruimte, רוחב פס של 1000 GB",
+            "בנוסף - 4 ליבות מעבד, 6 GB RAM, 120 GB NVMe-schijfruimte, רוחב פס של 3000 GB",
+            "עסקים - 8 ליבות מעבד, 12 GB RAM, 240 GB NVMe-schijfruimte, רוחב פס של 6000 GB"
           ]
         },
         {
@@ -26164,7 +26164,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 ומגבלות משאבים ברורות מספקים ביצועים צפויים. קנה קנה מידה כאשר הפרויקט שלך צריך את זה."
+          "text": "NVMe-schijfruimte ומגבלות משאבים ברורות מספקים ביצועים צפויים. קנה קנה מידה כאשר הפרויקט שלך צריך את זה."
         },
         {
           "type": "heading",
@@ -27033,7 +27033,7 @@
     },
     "vps-hosting": {
       "title": "استضافة VPS",
-      "subtitle": "المزيد من القوة والتحكم مع VPS: موارد مخصصة وSSD RAID 10 ووحدة المعالجة المركزية/ذاكرة الوصول العشوائي/عرض النطاق الترددي القابلة للتطوير للمشروعات المتنامية.",
+      "subtitle": "المزيد من القوة والتحكم مع VPS: موارد مخصصة وNVMe-schijfruimte ووحدة المعالجة المركزية/ذاكرة الوصول العشوائي/عرض النطاق الترددي القابلة للتطوير للمشروعات المتنامية.",
       "blocks": [
         {
           "type": "heading",
@@ -27050,9 +27050,9 @@
         {
           "type": "list",
           "items": [
-            "الأساسية - نواة وحدة المعالجة المركزية، وذاكرة الوصول العشوائي (RAM) سعة 2 جيجابايت، ومحرك الأقراص SSD RAID 10 سعة 40 جيجابايت، وعرض النطاق الترددي 1000 جيجابايت",
-            "بالإضافة إلى ذلك - 4 مراكز لوحدة المعالجة المركزية، وذاكرة وصول عشوائي (RAM) سعة 6 جيجابايت، ومحرك أقراص SSD RAID 10 بسعة 120 جيجابايت، وعرض نطاق ترددي 3000 جيجابايت",
-            "الأعمال - 8 مراكز لوحدة المعالجة المركزية، وذاكرة وصول عشوائي سعتها 12 جيجابايت، ومحرك أقراص SSD RAID 10 سعة 240 جيجابايت، ونطاق ترددي 6000 جيجابايت"
+            "الأساسية - نواة وحدة المعالجة المركزية، وذاكرة الوصول العشوائي (RAM) سعة 2 جيجابايت، ومحرك الأقراص NVMe-schijfruimte سعة 40 جيجابايت، وعرض النطاق الترددي 1000 جيجابايت",
+            "بالإضافة إلى ذلك - 4 مراكز لوحدة المعالجة المركزية، وذاكرة وصول عشوائي (RAM) سعة 6 جيجابايت، ومحرك أقراص NVMe-schijfruimte بسعة 120 جيجابايت، وعرض نطاق ترددي 3000 جيجابايت",
+            "الأعمال - 8 مراكز لوحدة المعالجة المركزية، وذاكرة وصول عشوائي سعتها 12 جيجابايت، ومحرك أقراص NVMe-schijfruimte سعة 240 جيجابايت، ونطاق ترددي 6000 جيجابايت"
           ]
         },
         {
@@ -27069,7 +27069,7 @@
         },
         {
           "type": "paragraph",
-          "text": "يوفر SSD RAID 10 وحدود الموارد الواضحة أداءً يمكن التنبؤ به. قم بالتوسيع عندما يحتاج مشروعك إلى ذلك."
+          "text": "يوفر NVMe-schijfruimte وحدود الموارد الواضحة أداءً يمكن التنبؤ به. قم بالتوسيع عندما يحتاج مشروعك إلى ذلك."
         },
         {
           "type": "heading",
@@ -27938,7 +27938,7 @@
     },
     "vps-hosting": {
       "title": "VPS ჰოსტინგი",
-      "subtitle": "მეტი სიმძლავრე და კონტროლი VPS-ით: გამოყოფილი რესურსები, SSD RAID 10 და მასშტაბირებადი CPU/RAM/სიჩქარე მზარდი პროექტებისთვის.",
+      "subtitle": "მეტი სიმძლავრე და კონტროლი VPS-ით: გამოყოფილი რესურსები, NVMe-schijfruimte და მასშტაბირებადი CPU/RAM/სიჩქარე მზარდი პროექტებისთვის.",
       "blocks": [
         {
           "type": "heading",
@@ -27955,9 +27955,9 @@
         {
           "type": "list",
           "items": [
-            "ძირითადი - 2 CPU ბირთვი, 2 GB ოპერატიული მეხსიერება, 40 GB SSD RAID 10, 1000 GB გამტარობა",
-            "პლუს - 4 CPU ბირთვი, 6 GB ოპერატიული მეხსიერება, 120 GB SSD RAID 10, 3000 GB გამტარობა",
-            "ბიზნესი — 8 CPU ბირთვი, 12 GB ოპერატიული მეხსიერება, 240 GB SSD RAID 10, 6000 GB გამტარობა"
+            "ძირითადი - 2 CPU ბირთვი, 2 GB ოპერატიული მეხსიერება, 40 GB NVMe-schijfruimte, 1000 GB გამტარობა",
+            "პლუს - 4 CPU ბირთვი, 6 GB ოპერატიული მეხსიერება, 120 GB NVMe-schijfruimte, 3000 GB გამტარობა",
+            "ბიზნესი — 8 CPU ბირთვი, 12 GB ოპერატიული მეხსიერება, 240 GB NVMe-schijfruimte, 6000 GB გამტარობა"
           ]
         },
         {
@@ -27974,7 +27974,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 და რესურსების მკაფიო ლიმიტები იძლევა პროგნოზირებად შესრულებას. გააფართოვეთ, როდესაც თქვენს პროექტს ეს სჭირდება."
+          "text": "NVMe-schijfruimte და რესურსების მკაფიო ლიმიტები იძლევა პროგნოზირებად შესრულებას. გააფართოვეთ, როდესაც თქვენს პროექტს ეს სჭირდება."
         },
         {
           "type": "heading",
@@ -28843,7 +28843,7 @@
     },
     "vps-hosting": {
       "title": "VPS հոստինգ",
-      "subtitle": "Ավելի շատ հզորություն և վերահսկողություն VPS-ի միջոցով. հատուկ ռեսուրսներ, SSD RAID 10 և ընդլայնվող CPU/RAM/թողունակություն աճող նախագծերի համար:",
+      "subtitle": "Ավելի շատ հզորություն և վերահսկողություն VPS-ի միջոցով. հատուկ ռեսուրսներ, NVMe-schijfruimte և ընդլայնվող CPU/RAM/թողունակություն աճող նախագծերի համար:",
       "blocks": [
         {
           "type": "heading",
@@ -28860,9 +28860,9 @@
         {
           "type": "list",
           "items": [
-            "Հիմնական — 2 պրոցեսորի միջուկ, 2 ԳԲ RAM, 40 ԳԲ SSD RAID 10, 1000 ԳԲ թողունակություն",
-            "Գումարած — 4 պրոցեսորի միջուկ, 6 ԳԲ օպերատիվ հիշողություն, 120 ԳԲ SSD RAID 10, 3000 ԳԲ թողունակություն",
-            "Բիզնես — 8 CPU միջուկ, 12 ԳԲ RAM, 240 ԳԲ SSD RAID 10, 6000 ԳԲ թողունակություն"
+            "Հիմնական — 2 պրոցեսորի միջուկ, 2 ԳԲ RAM, 40 ԳԲ NVMe-schijfruimte, 1000 ԳԲ թողունակություն",
+            "Գումարած — 4 պրոցեսորի միջուկ, 6 ԳԲ օպերատիվ հիշողություն, 120 ԳԲ NVMe-schijfruimte, 3000 ԳԲ թողունակություն",
+            "Բիզնես — 8 CPU միջուկ, 12 ԳԲ RAM, 240 ԳԲ NVMe-schijfruimte, 6000 ԳԲ թողունակություն"
           ]
         },
         {
@@ -28879,7 +28879,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10-ը և ռեսուրսների հստակ սահմանները ապահովում են կանխատեսելի կատարում: Մեծացրեք այն, երբ ձեր նախագիծը դրա կարիքն ունի:"
+          "text": "NVMe-schijfruimte-ը և ռեսուրսների հստակ սահմանները ապահովում են կանխատեսելի կատարում: Մեծացրեք այն, երբ ձեր նախագիծը դրա կարիքն ունի:"
         },
         {
           "type": "heading",
@@ -29748,7 +29748,7 @@
     },
     "vps-hosting": {
       "title": "VPS Hosting",
-      "subtitle": "VPS ilə daha çox güc və nəzarət: ayrılmış resurslar, SSD RAID 10 və böyüyən layihələr üçün genişləndirilə bilən CPU/RAM/band genişliyi.",
+      "subtitle": "VPS ilə daha çox güc və nəzarət: ayrılmış resurslar, NVMe-schijfruimte və böyüyən layihələr üçün genişləndirilə bilən CPU/RAM/band genişliyi.",
       "blocks": [
         {
           "type": "heading",
@@ -29765,9 +29765,9 @@
         {
           "type": "list",
           "items": [
-            "Əsas — 2 CPU nüvəsi, 2 GB RAM, 40 GB SSD RAID 10, 1000 GB bant genişliyi",
-            "Plus — 4 CPU nüvəsi, 6 GB RAM, 120 GB SSD RAID 10, 3000 GB bant genişliyi",
-            "Biznes - 8 CPU nüvəsi, 12 GB RAM, 240 GB SSD RAID 10, 6000 GB bant genişliyi"
+            "Əsas — 2 CPU nüvəsi, 2 GB RAM, 40 GB NVMe-schijfruimte, 1000 GB bant genişliyi",
+            "Plus — 4 CPU nüvəsi, 6 GB RAM, 120 GB NVMe-schijfruimte, 3000 GB bant genişliyi",
+            "Biznes - 8 CPU nüvəsi, 12 GB RAM, 240 GB NVMe-schijfruimte, 6000 GB bant genişliyi"
           ]
         },
         {
@@ -29784,7 +29784,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 və aydın resurs məhdudiyyətləri proqnozlaşdırıla bilən performans təmin edir. Layihənizin ehtiyac duyduğu zaman miqyasını artırın."
+          "text": "NVMe-schijfruimte və aydın resurs məhdudiyyətləri proqnozlaşdırıla bilən performans təmin edir. Layihənizin ehtiyac duyduğu zaman miqyasını artırın."
         },
         {
           "type": "heading",
@@ -30653,7 +30653,7 @@
     },
     "vps-hosting": {
       "title": "VPS 托管",
-      "subtitle": "通过 VPS 提供更多功能和控制：专用资源、SSD RAID 10 和可扩展的 CPU/RAM/带宽，适合不断发展的项目。",
+      "subtitle": "通过 VPS 提供更多功能和控制：专用资源、NVMe-schijfruimte 和可扩展的 CPU/RAM/带宽，适合不断发展的项目。",
       "blocks": [
         {
           "type": "heading",
@@ -30670,9 +30670,9 @@
         {
           "type": "list",
           "items": [
-            "基本 — 2 个 CPU 内核、2 GB RAM、40 GB SSD RAID 10、1000 GB 带宽",
-            "另外 — 4 个 CPU 核心、6 GB RAM、120 GB SSD RAID 10、3000 GB 带宽",
-            "商务版 — 8 个 CPU 内核、12 GB RAM、240 GB SSD RAID 10、6000 GB 带宽"
+            "基本 — 2 个 CPU 内核、2 GB RAM、40 GB NVMe-schijfruimte、1000 GB 带宽",
+            "另外 — 4 个 CPU 核心、6 GB RAM、120 GB NVMe-schijfruimte、3000 GB 带宽",
+            "商务版 — 8 个 CPU 内核、12 GB RAM、240 GB NVMe-schijfruimte、6000 GB 带宽"
           ]
         },
         {
@@ -30689,7 +30689,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 和明确的资源限制可提供可预测的性能。当您的项目需要时进行扩展。"
+          "text": "NVMe-schijfruimte 和明确的资源限制可提供可预测的性能。当您的项目需要时进行扩展。"
         },
         {
           "type": "heading",
@@ -31558,7 +31558,7 @@
     },
     "vps-hosting": {
       "title": "VPSホスティング",
-      "subtitle": "VPS によるさらなるパワーと制御: 専用リソース、SSD RAID 10、成長するプロジェクト向けのスケーラブルな CPU/RAM/帯域幅。",
+      "subtitle": "VPS によるさらなるパワーと制御: 専用リソース、NVMe-schijfruimte、成長するプロジェクト向けのスケーラブルな CPU/RAM/帯域幅。",
       "blocks": [
         {
           "type": "heading",
@@ -31575,9 +31575,9 @@
         {
           "type": "list",
           "items": [
-            "基本 — 2 CPU コア、2 GB RAM、40 GB SSD RAID 10、1000 GB 帯域幅",
-            "さらに — 4 CPU コア、6 GB RAM、120 GB SSD RAID 10、3000 GB 帯域幅",
-            "ビジネス — 8 CPU コア、12 GB RAM、240 GB SSD RAID 10、6000 GB 帯域幅"
+            "基本 — 2 CPU コア、2 GB RAM、40 GB NVMe-schijfruimte、1000 GB 帯域幅",
+            "さらに — 4 CPU コア、6 GB RAM、120 GB NVMe-schijfruimte、3000 GB 帯域幅",
+            "ビジネス — 8 CPU コア、12 GB RAM、240 GB NVMe-schijfruimte、6000 GB 帯域幅"
           ]
         },
         {
@@ -31594,7 +31594,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 と明確なリソース制限により、予測可能なパフォーマンスが実現します。プロジェクトで必要なときにスケールアップします。"
+          "text": "NVMe-schijfruimte と明確なリソース制限により、予測可能なパフォーマンスが実現します。プロジェクトで必要なときにスケールアップします。"
         },
         {
           "type": "heading",
@@ -32463,7 +32463,7 @@
     },
     "vps-hosting": {
       "title": "ভিপিএস হোস্টিং",
-      "subtitle": "VPS এর সাথে আরও শক্তি এবং নিয়ন্ত্রণ: ডেডিকেটেড রিসোর্স, SSD RAID 10 এবং ক্রমবর্ধমান প্রজেক্টের জন্য স্কেলযোগ্য CPU/RAM/ব্যান্ডউইথ।",
+      "subtitle": "VPS এর সাথে আরও শক্তি এবং নিয়ন্ত্রণ: ডেডিকেটেড রিসোর্স, NVMe-schijfruimte এবং ক্রমবর্ধমান প্রজেক্টের জন্য স্কেলযোগ্য CPU/RAM/ব্যান্ডউইথ।",
       "blocks": [
         {
           "type": "heading",
@@ -32480,9 +32480,9 @@
         {
           "type": "list",
           "items": [
-            "বেসিক — 2 CPU কোর, 2 GB RAM, 40 GB SSD RAID 10, 1000 GB ব্যান্ডউইথ",
-            "প্লাস — 4 CPU কোর, 6 GB RAM, 120 GB SSD RAID 10, 3000 GB ব্যান্ডউইথ",
-            "ব্যবসা — 8 CPU কোর, 12 GB RAM, 240 GB SSD RAID 10, 6000 GB ব্যান্ডউইথ"
+            "বেসিক — 2 CPU কোর, 2 GB RAM, 40 GB NVMe-schijfruimte, 1000 GB ব্যান্ডউইথ",
+            "প্লাস — 4 CPU কোর, 6 GB RAM, 120 GB NVMe-schijfruimte, 3000 GB ব্যান্ডউইথ",
+            "ব্যবসা — 8 CPU কোর, 12 GB RAM, 240 GB NVMe-schijfruimte, 6000 GB ব্যান্ডউইথ"
           ]
         },
         {
@@ -32499,7 +32499,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 এবং স্পষ্ট সম্পদ সীমা অনুমানযোগ্য কর্মক্ষমতা প্রদান করে। আপনার প্রকল্পের প্রয়োজন হলে স্কেল আপ করুন।"
+          "text": "NVMe-schijfruimte এবং স্পষ্ট সম্পদ সীমা অনুমানযোগ্য কর্মক্ষমতা প্রদান করে। আপনার প্রকল্পের প্রয়োজন হলে স্কেল আপ করুন।"
         },
         {
           "type": "heading",
@@ -33368,7 +33368,7 @@
     },
     "vps-hosting": {
       "title": "वीपीएस होस्टिंग",
-      "subtitle": "वीपीएस के साथ अधिक शक्ति और नियंत्रण: बढ़ती परियोजनाओं के लिए समर्पित संसाधन, एसएसडी RAID 10 और स्केलेबल सीपीयू/रैम/बैंडविड्थ।",
+      "subtitle": "वीपीएस के साथ अधिक शक्ति और नियंत्रण: बढ़ती परियोजनाओं के लिए समर्पित संसाधन, NVMe-schijfruimte और स्केलेबल सीपीयू/रैम/बैंडविड्थ।",
       "blocks": [
         {
           "type": "heading",
@@ -33385,9 +33385,9 @@
         {
           "type": "list",
           "items": [
-            "बेसिक - 2 सीपीयू कोर, 2 जीबी रैम, 40 जीबी एसएसडी RAID 10, 1000 जीबी बैंडविड्थ",
-            "प्लस - 4 सीपीयू कोर, 6 जीबी रैम, 120 जीबी एसएसडी RAID 10, 3000 जीबी बैंडविड्थ",
-            "बिजनेस - 8 सीपीयू कोर, 12 जीबी रैम, 240 जीबी एसएसडी RAID 10, 6000 जीबी बैंडविड्थ"
+            "बेसिक - 2 सीपीयू कोर, 2 जीबी रैम, 40 जीबी NVMe-schijfruimte, 1000 जीबी बैंडविड्थ",
+            "प्लस - 4 सीपीयू कोर, 6 जीबी रैम, 120 जीबी NVMe-schijfruimte, 3000 जीबी बैंडविड्थ",
+            "बिजनेस - 8 सीपीयू कोर, 12 जीबी रैम, 240 जीबी NVMe-schijfruimte, 6000 जीबी बैंडविड्थ"
           ]
         },
         {
@@ -33404,7 +33404,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 और स्पष्ट संसाधन सीमाएँ पूर्वानुमानित प्रदर्शन प्रदान करती हैं। जब आपके प्रोजेक्ट को इसकी आवश्यकता हो तो स्केल बढ़ाएं।"
+          "text": "NVMe-schijfruimte और स्पष्ट संसाधन सीमाएँ पूर्वानुमानित प्रदर्शन प्रदान करती हैं। जब आपके प्रोजेक्ट को इसकी आवश्यकता हो तो स्केल बढ़ाएं।"
         },
         {
           "type": "heading",
@@ -34273,7 +34273,7 @@
     },
     "vps-hosting": {
       "title": "VPS होस्टिंग",
-      "subtitle": "VPS सह अधिक शक्ती आणि नियंत्रण: वाढत्या प्रकल्पांसाठी समर्पित संसाधने, SSD RAID 10 आणि स्केलेबल CPU/RAM/बँडविड्थ.",
+      "subtitle": "VPS सह अधिक शक्ती आणि नियंत्रण: वाढत्या प्रकल्पांसाठी समर्पित संसाधने, NVMe-schijfruimte आणि स्केलेबल CPU/RAM/बँडविड्थ.",
       "blocks": [
         {
           "type": "heading",
@@ -34290,9 +34290,9 @@
         {
           "type": "list",
           "items": [
-            "मूलभूत — 2 CPU कोर, 2 GB RAM, 40 GB SSD RAID 10, 1000 GB बँडविड्थ",
-            "प्लस — 4 CPU कोर, 6 GB RAM, 120 GB SSD RAID 10, 3000 GB बँडविड्थ",
-            "व्यवसाय — 8 CPU कोर, 12 GB RAM, 240 GB SSD RAID 10, 6000 GB बँडविड्थ"
+            "मूलभूत — 2 CPU कोर, 2 GB RAM, 40 GB NVMe-schijfruimte, 1000 GB बँडविड्थ",
+            "प्लस — 4 CPU कोर, 6 GB RAM, 120 GB NVMe-schijfruimte, 3000 GB बँडविड्थ",
+            "व्यवसाय — 8 CPU कोर, 12 GB RAM, 240 GB NVMe-schijfruimte, 6000 GB बँडविड्थ"
           ]
         },
         {
@@ -34309,7 +34309,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 आणि स्पष्ट संसाधन मर्यादा अंदाजे कार्यप्रदर्शन देतात. आपल्या प्रकल्पाची आवश्यकता असेल तेव्हा स्केल करा."
+          "text": "NVMe-schijfruimte आणि स्पष्ट संसाधन मर्यादा अंदाजे कार्यप्रदर्शन देतात. आपल्या प्रकल्पाची आवश्यकता असेल तेव्हा स्केल करा."
         },
         {
           "type": "heading",
@@ -35178,7 +35178,7 @@
     },
     "vps-hosting": {
       "title": "د VPS کوربه توب",
-      "subtitle": "د VPS سره ډیر ځواک او کنټرول: وقف شوي سرچینې، SSD RAID 10 او د توزیع وړ CPU/RAM/بینډ ویت د مخ پر ودې پروژو لپاره.",
+      "subtitle": "د VPS سره ډیر ځواک او کنټرول: وقف شوي سرچینې، NVMe-schijfruimte او د توزیع وړ CPU/RAM/بینډ ویت د مخ پر ودې پروژو لپاره.",
       "blocks": [
         {
           "type": "heading",
@@ -35195,9 +35195,9 @@
         {
           "type": "list",
           "items": [
-            "بنسټیز - 2 CPU کورونه، 2 GB رام، 40 GB SSD RAID 10، 1000 GB بینډ ویت",
-            "پلس - 4 CPU کورونه، 6 GB رام، 120 GB SSD RAID 10، 3000 GB بینډ ویت",
-            "سوداګرۍ - 8 CPU کورونه، 12 GB رام، 240 GB SSD RAID 10، 6000 GB بینډ ویت"
+            "بنسټیز - 2 CPU کورونه، 2 GB رام، 40 GB NVMe-schijfruimte، 1000 GB بینډ ویت",
+            "پلس - 4 CPU کورونه، 6 GB رام، 120 GB NVMe-schijfruimte، 3000 GB بینډ ویت",
+            "سوداګرۍ - 8 CPU کورونه، 12 GB رام، 240 GB NVMe-schijfruimte، 6000 GB بینډ ویت"
           ]
         },
         {
@@ -35214,7 +35214,7 @@
         },
         {
           "type": "paragraph",
-          "text": "د SSD RAID 10 او روښانه سرچینې محدودیتونه د وړاندوینې وړ فعالیت وړاندې کوي. اندازه کړئ کله چې ستاسو پروژه ورته اړتیا لري."
+          "text": "د NVMe-schijfruimte او روښانه سرچینې محدودیتونه د وړاندوینې وړ فعالیت وړاندې کوي. اندازه کړئ کله چې ستاسو پروژه ورته اړتیا لري."
         },
         {
           "type": "heading",
@@ -36083,7 +36083,7 @@
     },
     "vps-hosting": {
       "title": "VPS ਹੋਸਟਿੰਗ",
-      "subtitle": "VPS ਨਾਲ ਵਧੇਰੇ ਸ਼ਕਤੀ ਅਤੇ ਨਿਯੰਤਰਣ: ਵਧ ਰਹੇ ਪ੍ਰੋਜੈਕਟਾਂ ਲਈ ਸਮਰਪਿਤ ਸਰੋਤ, SSD RAID 10 ਅਤੇ ਸਕੇਲੇਬਲ CPU/RAM/ਬੈਂਡਵਿਡਥ।",
+      "subtitle": "VPS ਨਾਲ ਵਧੇਰੇ ਸ਼ਕਤੀ ਅਤੇ ਨਿਯੰਤਰਣ: ਵਧ ਰਹੇ ਪ੍ਰੋਜੈਕਟਾਂ ਲਈ ਸਮਰਪਿਤ ਸਰੋਤ, NVMe-schijfruimte ਅਤੇ ਸਕੇਲੇਬਲ CPU/RAM/ਬੈਂਡਵਿਡਥ।",
       "blocks": [
         {
           "type": "heading",
@@ -36100,8 +36100,8 @@
         {
           "type": "list",
           "items": [
-            "ਬੇਸਿਕ — 2 CPU ਕੋਰ, 2 GB RAM, 40 GB SSD RAID 10, 1000 GB ਬੈਂਡਵਿਡਥ",
-            "ਪਲੱਸ — 4 CPU ਕੋਰ, 6 GB RAM, 120 GB SSD RAID 10, 3000 GB ਬੈਂਡਵਿਡਥ",
+            "ਬੇਸਿਕ — 2 CPU ਕੋਰ, 2 GB RAM, 40 GB NVMe-schijfruimte, 1000 GB ਬੈਂਡਵਿਡਥ",
+            "ਪਲੱਸ — 4 CPU ਕੋਰ, 6 GB RAM, 120 GB NVMe-schijfruimte, 3000 GB ਬੈਂਡਵਿਡਥ",
             "ਕਾਰੋਬਾਰ — 8 CPU ਕੋਰ, 12 GB RAM, 240 GB SSD ਰੇਡ 10, 6000 GB ਬੈਂਡਵਿਡਥ"
           ]
         },
@@ -36119,7 +36119,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 ਅਤੇ ਸਪੱਸ਼ਟ ਸਰੋਤ ਸੀਮਾਵਾਂ ਅਨੁਮਾਨਿਤ ਪ੍ਰਦਰਸ਼ਨ ਪ੍ਰਦਾਨ ਕਰਦੀਆਂ ਹਨ। ਜਦੋਂ ਤੁਹਾਡੇ ਪ੍ਰੋਜੈਕਟ ਦੀ ਲੋੜ ਹੋਵੇ ਤਾਂ ਸਕੇਲ ਕਰੋ।"
+          "text": "NVMe-schijfruimte ਅਤੇ ਸਪੱਸ਼ਟ ਸਰੋਤ ਸੀਮਾਵਾਂ ਅਨੁਮਾਨਿਤ ਪ੍ਰਦਰਸ਼ਨ ਪ੍ਰਦਾਨ ਕਰਦੀਆਂ ਹਨ। ਜਦੋਂ ਤੁਹਾਡੇ ਪ੍ਰੋਜੈਕਟ ਦੀ ਲੋੜ ਹੋਵੇ ਤਾਂ ਸਕੇਲ ਕਰੋ।"
         },
         {
           "type": "heading",
@@ -36988,7 +36988,7 @@
     },
     "vps-hosting": {
       "title": "VPS హోస్టింగ్",
-      "subtitle": "VPSతో మరింత శక్తి మరియు నియంత్రణ: అంకితమైన వనరులు, SSD RAID 10 మరియు పెరుగుతున్న ప్రాజెక్ట్‌ల కోసం స్కేలబుల్ CPU/RAM/బ్యాండ్‌విడ్త్.",
+      "subtitle": "VPSతో మరింత శక్తి మరియు నియంత్రణ: అంకితమైన వనరులు, NVMe-schijfruimte మరియు పెరుగుతున్న ప్రాజెక్ట్‌ల కోసం స్కేలబుల్ CPU/RAM/బ్యాండ్‌విడ్త్.",
       "blocks": [
         {
           "type": "heading",
@@ -37005,9 +37005,9 @@
         {
           "type": "list",
           "items": [
-            "ప్రాథమిక — 2 CPU కోర్లు, 2 GB RAM, 40 GB SSD RAID 10, 1000 GB బ్యాండ్‌విడ్త్",
-            "ప్లస్ — 4 CPU కోర్లు, 6 GB RAM, 120 GB SSD RAID 10, 3000 GB బ్యాండ్‌విడ్త్",
-            "వ్యాపారం — 8 CPU కోర్లు, 12 GB RAM, 240 GB SSD RAID 10, 6000 GB బ్యాండ్‌విడ్త్"
+            "ప్రాథమిక — 2 CPU కోర్లు, 2 GB RAM, 40 GB NVMe-schijfruimte, 1000 GB బ్యాండ్‌విడ్త్",
+            "ప్లస్ — 4 CPU కోర్లు, 6 GB RAM, 120 GB NVMe-schijfruimte, 3000 GB బ్యాండ్‌విడ్త్",
+            "వ్యాపారం — 8 CPU కోర్లు, 12 GB RAM, 240 GB NVMe-schijfruimte, 6000 GB బ్యాండ్‌విడ్త్"
           ]
         },
         {
@@ -37024,7 +37024,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 మరియు స్పష్టమైన వనరుల పరిమితులు ఊహాజనిత పనితీరును అందిస్తాయి. మీ ప్రాజెక్ట్‌కు అవసరమైనప్పుడు స్కేల్ చేయండి."
+          "text": "NVMe-schijfruimte మరియు స్పష్టమైన వనరుల పరిమితులు ఊహాజనిత పనితీరును అందిస్తాయి. మీ ప్రాజెక్ట్‌కు అవసరమైనప్పుడు స్కేల్ చేయండి."
         },
         {
           "type": "heading",
@@ -37893,7 +37893,7 @@
     },
     "vps-hosting": {
       "title": "VPS ہوسٹنگ",
-      "subtitle": "VPS کے ساتھ مزید طاقت اور کنٹرول: بڑھتے ہوئے پراجیکٹس کے لیے وقف کردہ وسائل، SSD RAID 10 اور قابل توسیع CPU/RAM/bandwidth۔",
+      "subtitle": "VPS کے ساتھ مزید طاقت اور کنٹرول: بڑھتے ہوئے پراجیکٹس کے لیے وقف کردہ وسائل، NVMe-schijfruimte اور قابل توسیع CPU/RAM/bandwidth۔",
       "blocks": [
         {
           "type": "heading",
@@ -37910,9 +37910,9 @@
         {
           "type": "list",
           "items": [
-            "بنیادی — 2 سی پی یو کور، 2 جی بی ریم، 40 جی بی ایس ایس ڈی RAID 10، 1000 جی بی بینڈوتھ",
-            "پلس - 4 سی پی یو کور، 6 جی بی ریم، 120 جی بی ایس ایس ڈی RAID 10، 3000 جی بی بینڈوتھ",
-            "کاروبار - 8 سی پی یو کور، 12 جی بی ریم، 240 جی بی ایس ایس ڈی RAID 10، 6000 جی بی بینڈوتھ"
+            "بنیادی — 2 سی پی یو کور، 2 جی بی ریم، 40 جی بی NVMe-schijfruimte، 1000 جی بی بینڈوتھ",
+            "پلس - 4 سی پی یو کور، 6 جی بی ریم، 120 جی بی NVMe-schijfruimte، 3000 جی بی بینڈوتھ",
+            "کاروبار - 8 سی پی یو کور، 12 جی بی ریم، 240 جی بی NVMe-schijfruimte، 6000 جی بی بینڈوتھ"
           ]
         },
         {
@@ -37929,7 +37929,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SSD RAID 10 اور وسائل کی واضح حدیں پیش قیاسی کارکردگی فراہم کرتی ہیں۔ جب آپ کے پروجیکٹ کی ضرورت ہو تو اسکیل اپ کریں۔"
+          "text": "NVMe-schijfruimte اور وسائل کی واضح حدیں پیش قیاسی کارکردگی فراہم کرتی ہیں۔ جب آپ کے پروجیکٹ کی ضرورت ہو تو اسکیل اپ کریں۔"
         },
         {
           "type": "heading",

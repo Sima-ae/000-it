@@ -115,8 +115,8 @@
       "name": "VPS Hosting Basic",
       "price": 9.12,
       "currency": "EUR",
-      "shortDescription": "– 2 CPU cores\n– 2 GB RAM\n– 40 GB SSD RAID 10\n– 1000 GB bandwidth",
-      "description": "VPS Hosting Basic is suited to developers, small applications and websites that need more control and predictable resources than shared hosting provides.\n\nWith 2 CPU cores, 2 GB RAM, 40 GB SSD RAID 10 storage and 1000 GB bandwidth, you get a solid virtual server for light to moderate workloads.\n\nTripleZero iT gives you a dependable infrastructure foundation, so you can focus on your application, website or development environment. Scale up when demand grows.",
+      "shortDescription": "– 2 CPU cores\n– 2 GB RAM\n– 40 GB NVMe-schijfruimte\n– 1000 GB bandwidth",
+      "description": "VPS Hosting Basic is suited to developers, small applications and websites that need more control and predictable resources than shared hosting provides.\n\nWith 2 CPU cores, 2 GB RAM, 40 GB NVMe-schijfruimte and 1000 GB bandwidth, you get a solid virtual server for light to moderate workloads.\n\nTripleZero iT gives you a dependable infrastructure foundation, so you can focus on your application, website or development environment. Scale up when demand grows.",
       "images": [
         "https://000-it.com/wp-content/uploads/2024/07/FAVICON-TripleZero iT-SITE.png"
       ]
@@ -126,8 +126,8 @@
       "name": "VPS Hosting Business",
       "price": 14.66,
       "currency": "EUR",
-      "shortDescription": "– 4 CPU cores\n– 6 GB RAM\n– 120 GB SSD RAID 10\n– 3000 GB bandwidth",
-      "description": "VPS Hosting Business is for growing web projects, business applications and development teams that need additional capacity and consistent performance.\n\nThe server combines 4 CPU cores and 6 GB RAM with 120 GB SSD RAID 10 storage and 3000 GB bandwidth. This leaves room for heavier workloads, multiple services or increasing traffic.\n\nTripleZero iT delivers a dependable VPS foundation that you can configure around your needs. Gain the flexibility of a virtual server with a professional partner close by.",
+      "shortDescription": "– 4 CPU cores\n– 6 GB RAM\n– 120 GB NVMe-schijfruimte\n– 3000 GB bandwidth",
+      "description": "VPS Hosting Business is for growing web projects, business applications and development teams that need additional capacity and consistent performance.\n\nThe server combines 4 CPU cores and 6 GB RAM with 120 GB NVMe-schijfruimte and 3000 GB bandwidth. This leaves room for heavier workloads, multiple services or increasing traffic.\n\nTripleZero iT delivers a dependable VPS foundation that you can configure around your needs. Gain the flexibility of a virtual server with a professional partner close by.",
       "images": [
         "https://000-it.com/wp-content/uploads/2024/07/FAVICON-TripleZero iT-SITE.png"
       ]
@@ -137,8 +137,8 @@
       "name": "VPS Hosting Plus",
       "price": 26.65,
       "currency": "EUR",
-      "shortDescription": "– 8 CPU cores\n– 12 GB RAM\n– 240 GB SSD RAID 10\n– 6000 GB bandwidth",
-      "description": "VPS Hosting Plus is designed for business-critical websites, demanding applications and organisations that expect ample capacity and stable performance.\n\nWith 8 CPU cores, 12 GB RAM, 240 GB SSD RAID 10 storage and 6000 GB bandwidth, this plan provides a powerful base for intensive workloads, multiple environments and higher visitor volumes.\n\nTripleZero iT helps you build dependable infrastructure that moves with your ambitions. You retain control of your VPS, with an experienced team available for support.",
+      "shortDescription": "– 8 CPU cores\n– 12 GB RAM\n– 240 GB NVMe-schijfruimte\n– 6000 GB bandwidth",
+      "description": "VPS Hosting Plus is designed for business-critical websites, demanding applications and organisations that expect ample capacity and stable performance.\n\nWith 8 CPU cores, 12 GB RAM, 240 GB NVMe-schijfruimte and 6000 GB bandwidth, this plan provides a powerful base for intensive workloads, multiple environments and higher visitor volumes.\n\nTripleZero iT helps you build dependable infrastructure that moves with your ambitions. You retain control of your VPS, with an experienced team available for support.",
       "images": [
         "https://000-it.com/wp-content/uploads/2024/07/FAVICON-TripleZero iT-SITE.png"
       ]

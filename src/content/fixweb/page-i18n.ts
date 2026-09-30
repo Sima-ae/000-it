@@ -1021,7 +1021,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
     nl: {
       title: "VPS Hosting",
       subtitle:
-        "Meer power en controle met VPS: dedicated resources, SSD RAID 10 en schaalbare CPU/RAM/bandbreedte voor groeiende projecten.",
+        "Meer power en controle met VPS: dedicated resources, NVMe-schijfruimte en schaalbare CPU/RAM/bandbreedte voor groeiende projecten.",
       blocks: [
         h("VPS wanneer shared niet meer volstaat"),
         p(
@@ -1029,9 +1029,9 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ),
         h("Onze VPS-plannen"),
         l([
-          "Basic — 2 CPU-cores, 2 GB RAM, 40 GB SSD RAID 10, 1000 GB bandbreedte",
-          "Plus — 4 CPU-cores, 6 GB RAM, 120 GB SSD RAID 10, 3000 GB bandbreedte",
-          "Business — 8 CPU-cores, 12 GB RAM, 240 GB SSD RAID 10, 6000 GB bandbreedte",
+          "Basic — 2 CPU-cores, 2 GB RAM, 40 GB NVMe-schijfruimte, 1000 GB bandbreedte",
+          "Plus — 4 CPU-cores, 6 GB RAM, 120 GB NVMe-schijfruimte, 3000 GB bandbreedte",
+          "Business — 8 CPU-cores, 12 GB RAM, 240 GB NVMe-schijfruimte, 6000 GB bandbreedte",
         ]),
         h("Voor wie is VPS geschikt?"),
         p(
@@ -1039,7 +1039,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ),
         h("Betrouwbare basis"),
         p(
-          "SSD RAID 10 en duidelijke resourcegrenzen geven voorspelbare prestaties. Je schaalt omhoog wanneer jouw project dat vraagt.",
+          "NVMe-schijfruimte en duidelijke resourcegrenzen geven voorspelbare prestaties. Je schaalt omhoog wanneer jouw project dat vraagt.",
         ),
         h("Van behoefte naar serverconfiguratie"),
         p(
@@ -1055,7 +1055,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
     en: {
       title: "VPS Hosting",
       subtitle:
-        "More power and control with VPS: dedicated resources, SSD RAID 10 and scalable CPU/RAM/bandwidth for growing projects.",
+        "More power and control with VPS: dedicated resources, NVMe-schijfruimte and scalable CPU/RAM/bandwidth for growing projects.",
       blocks: [
         h("VPS when shared is no longer enough"),
         p(
@@ -1063,9 +1063,9 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ),
         h("Our VPS plans"),
         l([
-          "Basic — 2 CPU cores, 2 GB RAM, 40 GB SSD RAID 10, 1000 GB bandwidth",
-          "Plus — 4 CPU cores, 6 GB RAM, 120 GB SSD RAID 10, 3000 GB bandwidth",
-          "Business — 8 CPU cores, 12 GB RAM, 240 GB SSD RAID 10, 6000 GB bandwidth",
+          "Basic — 2 CPU cores, 2 GB RAM, 40 GB NVMe-schijfruimte, 1000 GB bandwidth",
+          "Plus — 4 CPU cores, 6 GB RAM, 120 GB NVMe-schijfruimte, 3000 GB bandwidth",
+          "Business — 8 CPU cores, 12 GB RAM, 240 GB NVMe-schijfruimte, 6000 GB bandwidth",
         ]),
         h("Who is VPS for?"),
         p(
@@ -1073,7 +1073,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ),
         h("A reliable foundation"),
         p(
-          "SSD RAID 10 and clear resource limits deliver predictable performance. Scale up when your project needs it.",
+          "NVMe-schijfruimte and clear resource limits deliver predictable performance. Scale up when your project needs it.",
         ),
         h("From needs to server configuration"),
         p(
