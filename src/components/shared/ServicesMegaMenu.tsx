@@ -92,6 +92,7 @@ const featuredByGroup: Record<string, string[]> = {
     "wordpress-hosting-basic",
     "wordpress-hosting-business",
     "wordpress-hosting-plus",
+    "vps-hosting-start",
     "vps-hosting-basic",
     "vps-hosting-business",
     "vps-hosting-plus",

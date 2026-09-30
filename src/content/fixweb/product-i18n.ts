@@ -349,6 +349,33 @@ TripleZero iT provides a fully managed cloud foundation with the headroom seriou
     },
   },
 
+  "vps-hosting-start": {
+    nl: {
+      name: "VPS Hosting Start",
+      shortDescription: `– 1 vCPU core
+– 4 GB RAM
+– 50 GB NVMe-opslag
+– 4 TB bandbreedte`,
+      description: `VPS Hosting Start is het instappakket voor lichte projecten, testomgevingen en kleine websites die een eigen virtuele server willen.
+
+Met 1 vCPU core, 4 GB RAM, 50 GB NVMe-opslag en 4 TB bandbreedte heb je een compacte VPS voor lichte workloads, zonder meteen de capaciteit van een groter plan te nemen.
+
+TripleZero iT helpt je met een betrouwbare infrastructuurbasis, zodat je kunt focussen op jouw applicatie, website of ontwikkelomgeving. Je schaalt door wanneer jouw vraag toeneemt.`,
+    },
+    en: {
+      name: "VPS Hosting Start",
+      shortDescription: `– 1 vCPU core
+– 4 GB RAM
+– 50 GB NVMe storage
+– 4 TB bandwidth`,
+      description: `VPS Hosting Start is the entry plan for light projects, test environments and small websites that need their own virtual server.
+
+With 1 vCPU core, 4 GB RAM, 50 GB NVMe storage and 4 TB bandwidth, you get a compact VPS for light workloads without stepping up to a larger plan.
+
+TripleZero iT gives you a dependable infrastructure foundation, so you can focus on your application, website or development environment. Scale up when demand grows.`,
+    },
+  },
+
   "vps-hosting-basic": {
     nl: {
       name: "VPS Hosting Basic",

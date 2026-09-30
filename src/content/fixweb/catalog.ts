@@ -669,6 +669,13 @@ export const serviceCatalog: ServiceNavItem[] = [
     group: "hosting",
   },
   {
+    slug: "vps-hosting-start",
+    title: "VPS Hosting Start",
+    titleNl: "VPS hosting start",
+    kind: "product",
+    group: "hosting",
+  },
+  {
     slug: "vps-hosting-basic",
     title: "VPS Hosting Basic",
     titleNl: "VPS hosting basic",

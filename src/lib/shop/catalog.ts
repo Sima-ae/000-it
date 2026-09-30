@@ -76,6 +76,7 @@ export const WORDPRESS_HOSTING_SLUG_ORDER = [
 ] as const;
 
 export const VPS_HOSTING_SLUG_ORDER = [
+  "vps-hosting-start",
   "vps-hosting-basic",
   "vps-hosting-business",
   "vps-hosting-plus",

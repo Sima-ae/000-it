@@ -1029,6 +1029,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ),
         h("Onze VPS-plannen"),
         l([
+          "Start — 1 vCPU core, 4 GB RAM, 50 GB NVMe-opslag, 4 TB bandbreedte",
           "Basic — 2 CPU-cores, 2 GB RAM, 40 GB NVMe-schijfruimte, 1000 GB bandbreedte",
           "Plus — 4 CPU-cores, 6 GB RAM, 120 GB NVMe-schijfruimte, 3000 GB bandbreedte",
           "Business — 8 CPU-cores, 12 GB RAM, 240 GB NVMe-schijfruimte, 6000 GB bandbreedte",
@@ -1063,6 +1064,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ),
         h("Our VPS plans"),
         l([
+          "Start — 1 vCPU core, 4 GB RAM, 50 GB NVMe storage, 4 TB bandwidth",
           "Basic — 2 CPU cores, 2 GB RAM, 40 GB NVMe-schijfruimte, 1000 GB bandwidth",
           "Plus — 4 CPU cores, 6 GB RAM, 120 GB NVMe-schijfruimte, 3000 GB bandwidth",
           "Business — 8 CPU cores, 12 GB RAM, 240 GB NVMe-schijfruimte, 6000 GB bandwidth",

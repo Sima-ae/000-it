@@ -69,7 +69,7 @@ export function ShopHostingSection({
     >
       {showTitle ? (
         <Reveal from="up" duration={0.45}>
-          <h2 className="text-center font-display text-2xl font-semibold tracking-tight text-accent">
+          <h2 className="text-center font-display text-[1.65rem] font-semibold tracking-tight text-accent md:text-[1.75rem]">
             {title}
           </h2>
         </Reveal>
@@ -114,7 +114,12 @@ export function ShopHostingSection({
       </div>
 
       <div
-        className="grid items-stretch gap-3 lg:grid-cols-3 lg:gap-4"
+        className={cn(
+          "grid items-stretch gap-3",
+          products.length >= 4
+            ? "sm:grid-cols-2 lg:grid-cols-4 lg:gap-3"
+            : "lg:grid-cols-3 lg:gap-4",
+        )}
         onMouseLeave={() => setHovered(null)}
       >
         {products.map((product, index) => {
@@ -142,7 +147,13 @@ export function ShopHostingSection({
           return (
             <Reveal
               key={product.id}
-              from={index === 0 ? "left" : index === 2 ? "right" : "up"}
+              from={
+                index === 0
+                  ? "left"
+                  : index === products.length - 1
+                    ? "right"
+                    : "up"
+              }
               delay={index * 0.08}
               duration={0.55}
             >
@@ -153,7 +164,8 @@ export function ShopHostingSection({
                 <GlassCard
                   glow={false}
                   className={cn(
-                    "relative flex h-full flex-col overflow-hidden rounded-2xl p-5 transition-shadow duration-300",
+                    "relative flex h-full flex-col overflow-hidden rounded-2xl transition-shadow duration-300",
+                    products.length >= 4 ? "p-4" : "p-5",
                     featured && "mesh-panel lg:-translate-y-1",
                     featuredIdle &&
                       "pricing-featured-pulse ring-1 ring-primary/25",

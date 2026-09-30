@@ -20,6 +20,7 @@ const HOSTING_SORT: Record<string, number> = {
   "wordpress-hosting-basic": 110,
   "wordpress-hosting-business": 111,
   "wordpress-hosting-plus": 112,
+  "vps-hosting-start": 119,
   "vps-hosting-basic": 120,
   "vps-hosting-business": 121,
   "vps-hosting-plus": 122,

@@ -188,7 +188,7 @@ export default async function ShopPage({
 
       {serviceProducts.length > 0 ? (
         <section className="mt-16 text-center">
-          <h2 className="font-display text-2xl font-semibold tracking-tight text-accent">
+          <h2 className="font-display text-[1.65rem] font-semibold tracking-tight text-accent md:text-[1.75rem]">
             {t("services")}
           </h2>
           <div className="mt-6 grid gap-4 text-start md:grid-cols-2 xl:grid-cols-3">

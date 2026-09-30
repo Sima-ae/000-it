@@ -57,7 +57,7 @@ export const qualityPackExcerptsNl: Record<string, string> = {
   "tz-host-choose": "Hoe kies ik tussen shared hosting, WordPress hosting en VPS: praktische handleiding in Shop, met stappen, controles en wanneer je TripleZero iT support inschakelt.",
   "tz-host-shared": "Wat is shared hosting Basic, Plus en Business: praktische handleiding in Shop, met stappen, controles en wanneer je TripleZero iT support inschakelt.",
   "tz-host-wp": "Wat is WordPress hosting Basic, Plus en Pro: praktische handleiding in Shop, met stappen, controles en wanneer je TripleZero iT support inschakelt.",
-  "tz-host-vps": "Wat is VPS hosting Basic, Plus en Business: praktische handleiding in Shop, met stappen, controles en wanneer je TripleZero iT support inschakelt.",
+  "tz-host-vps": "Wat is VPS hosting Start, Basic, Plus en Business: praktische handleiding in Shop, met stappen, controles en wanneer je TripleZero iT support inschakelt.",
   "tz-host-upgrade": "Wanneer stap ik over van shared naar VPS: praktische handleiding in Shop, met stappen, controles en wanneer je TripleZero iT support inschakelt.",
   "tz-host-in-plan": "Hosting in Business/Extra Growth versus losse hosting in de shop: praktische handleiding in Shop, met stappen, controles en wanneer je TripleZero iT support inschakelt.",
   "tz-chat-what": "Hoe werkt live chat op de website van TripleZero iT: praktische handleiding in Tickets, met stappen, controles en wanneer je TripleZero iT support inschakelt.",

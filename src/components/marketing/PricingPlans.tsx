@@ -138,7 +138,14 @@ export function PricingPlans({
     >
       {categoryLabel ? (
         <Reveal from="up" duration={0.45}>
-          <h3 className="text-center font-display text-2xl font-semibold tracking-tight text-accent">
+          <h3
+            className={cn(
+              "text-center font-display font-semibold tracking-tight text-accent",
+              embedded
+                ? "text-[1.65rem] md:text-[1.75rem]"
+                : "text-2xl",
+            )}
+          >
             {categoryLabel}
           </h3>
         </Reveal>

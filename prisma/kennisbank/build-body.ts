@@ -895,7 +895,7 @@ const topicBuilders: Record<string, (ctx: Ctx) => string> = {
   "tz-host-vps": () =>
     [
       p(
-        `VPS Basic / Plus / Business schalen in cores en NVMe-schijfruimte. Kies VPS bij hogere concurrentie, custom software of wanneer shared te krap wordt.`,
+        `VPS Start, Basic, Plus en Business schalen in cores en NVMe-schijfruimte. Start is het kleinste pakket; kies een grotere VPS bij hogere concurrentie, custom software of wanneer shared te krap wordt.`,
       ),
       outro(),
     ].join("\n"),

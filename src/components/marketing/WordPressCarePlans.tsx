@@ -45,7 +45,7 @@ export function WordPressCarePlans({
     <section className="scroll-mt-28 md:scroll-mt-32">
       {showTitle ? (
         <Reveal from="up" duration={0.45}>
-          <h2 className="text-center font-display text-2xl font-semibold tracking-tight text-accent">
+          <h2 className="text-center font-display text-[1.65rem] font-semibold tracking-tight text-accent md:text-[1.75rem]">
             {care.title}
           </h2>
         </Reveal>
@@ -132,7 +132,7 @@ export function WordPressCarePlans({
                   )}
                 >
                   {pkg.featured ? (
-                    <div className="pricing-badge absolute end-3 top-3 z-10 rounded-full bg-primary px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-primary-foreground">
+                    <div className="pricing-badge absolute inset-e-3 top-3 z-10 rounded-full bg-primary px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-primary-foreground">
                       {t("mostChosen")}
                     </div>
                   ) : null}
