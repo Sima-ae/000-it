@@ -152,8 +152,10 @@ export function HeroCircuitPulse({
     setTraces(generateTraces(0));
   }, []);
 
+  const hasTraces = traces !== null;
+
   useEffect(() => {
-    if (reduce || !traces) return;
+    if (reduce || !hasTraces) return;
 
     let fadeTimer: number | undefined;
     const timer = window.setInterval(() => {
@@ -172,7 +174,7 @@ export function HeroCircuitPulse({
       window.clearInterval(timer);
       if (fadeTimer) window.clearTimeout(fadeTimer);
     };
-  }, [reduce, traces === null]);
+  }, [reduce, hasTraces]);
 
   if (!traces) return null;
 

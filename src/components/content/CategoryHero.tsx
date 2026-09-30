@@ -10,10 +10,6 @@ import { getRequestBrand } from "@/lib/brand/server";
 import { localizedHref } from "@/i18n/pathnames";
 import { cn } from "@/lib/utils";
 
-function imageClassForGroup(_groupId: string) {
-  return "object-cover object-center";
-}
-
 type JumpLink = {
   key: string;
   id: string;
@@ -127,7 +123,7 @@ export async function CategoryHero({
                 priority
                 sizes="240px"
                 unoptimized
-                className={cn(imageClassForGroup(groupId))}
+                className="object-cover object-center"
               />
             </TabletFrame>
           </div>

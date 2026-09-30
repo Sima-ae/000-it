@@ -26,7 +26,6 @@ function lum(r, g, b) {
 function clipColor(r, g, b) {
   const L = lum(r, g, b);
   const min = Math.min(r, g, b);
-  const max = Math.max(r, g, b);
   if (min < 0) {
     const t = L / (L - min);
     r = L + (r - L) * t;

@@ -203,7 +203,6 @@ export function isPremiumTld(priceInCents: number): boolean {
 
 export function categorizeTld(
   tld: string,
-  _priceInCents?: number,
 ): Exclude<TldCategoryId, "popular" | "premium"> | "other" {
   const key = tld.toLowerCase().replace(/^\./, "");
   if (INTERNATIONAL.has(key) || key.includes(".")) return "international";

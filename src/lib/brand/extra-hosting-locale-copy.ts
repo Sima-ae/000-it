@@ -465,7 +465,7 @@ const pt: LocaleCopy = {
   "hero.bullet3": "Suporte em inglês e holandês.",
   "faq.q1": "Quem é {name}?",
   "faq.a1":
-    "{name} é focada em nomes de domínio e hospedagem web: compartilhada, cloud, WordPress e VPS — com suporte para registro, DNS, e-mail e migrações.",
+    "{name} concentra-se em nomes de domínio e hospedagem web: compartilhada, cloud, WordPress e VPS — com suporte para registro, DNS, e-mail e migrações.",
   "faq.q2": "Quais planos de hospedagem vocês oferecem?",
   "faq.a2":
     "Escolha hospedagem compartilhada, cloud, WordPress ou VPS. Cada plano tem recursos claros, SSL e suporte — você escolhe conforme o tráfego e o crescimento.",
