@@ -180,7 +180,9 @@ export function WordPressCarePlans({
                   </ul>
                   <Button
                     className="mt-5 w-full rounded-2xl"
-                    variant={pkg.featured ? "default" : "outline"}
+                    variant={
+                      pkg.featured || glowOnHover ? "default" : "outline"
+                    }
                     onClick={() => orderPackage(pkg.key)}
                   >
                     {t("cta")}

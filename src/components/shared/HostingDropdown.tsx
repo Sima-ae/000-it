@@ -16,6 +16,7 @@ import {
   VPS_HOSTING_SLUG_ORDER,
   WORDPRESS_HOSTING_SLUG_ORDER,
 } from "@/lib/shop/catalog";
+import { publicPathMatches } from "@/i18n/pathnames";
 import { cn } from "@/lib/utils";
 
 const CLOSE_DELAY_MS = 220;
@@ -165,9 +166,11 @@ export function HostingDropdown({
                 );
                 if (!categoryItem) return null;
                 const categoryHref = serviceHref(locale, categoryItem);
-                const categoryActive =
-                  pathname === categoryHref ||
-                  pathname.startsWith(`${categoryHref}/`);
+                const categoryActive = publicPathMatches(
+                  pathname,
+                  categoryHref,
+                  locale,
+                );
                 const plans = column.planSlugs
                   .map((slug) => serviceCatalog.find((s) => s.slug === slug))
                   .filter((item): item is NonNullable<typeof item> => Boolean(item));
@@ -194,8 +197,11 @@ export function HostingDropdown({
                     <div className="flex flex-col bg-transparent">
                       {plans.map((item) => {
                         const href = serviceHref(locale, item);
-                        const itemActive =
-                          pathname === href || pathname.startsWith(`${href}/`);
+                        const itemActive = publicPathMatches(
+                          pathname,
+                          href,
+                          locale,
+                        );
                         return (
                           <SoftLink
                             key={item.slug}

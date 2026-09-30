@@ -24,6 +24,7 @@ import {
 } from "@/content/fixweb/catalog-title";
 import {
   localizedHref,
+  publicPathMatches,
 } from "@/i18n/pathnames";
 import { BrandLogo } from "@/components/shared/BrandLogo";
 import { GlobalSearchButton } from "@/components/shared/GlobalSearch";
@@ -56,7 +57,11 @@ const primaryLinksHosting = [
 ] as const;
 
 function isLocaleHome(pathname: string, locale: string) {
-  return pathname === `/${locale}` || pathname === `/${locale}/`;
+  return (
+    pathname === "/" ||
+    pathname === `/${locale}` ||
+    pathname === `/${locale}/`
+  );
 }
 
 export function Navigation() {
@@ -77,7 +82,7 @@ export function Navigation() {
   const onHome = isLocaleHome(pathname, locale);
   const shopHref = localizedHref(locale, "/shop");
   const pricingActive =
-    pathname === shopHref || pathname.startsWith(`${shopHref}/`);
+    publicPathMatches(pathname, shopHref, locale);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -101,22 +106,20 @@ export function Navigation() {
     if (linkHref === "/domeinen") {
       const domainsItem = serviceCatalog.find((s) => s.slug === "domains");
       if (!domainsItem) return false;
-      const href = serviceHref(locale, domainsItem);
-      return pathname === href || pathname.startsWith(`${href}/`);
+      return publicPathMatches(pathname, serviceHref(locale, domainsItem), locale);
     }
     if (linkHref === "/diensten/categorie/hosting") {
       const hostingGroup = serviceGroupHref(locale, "hosting");
-      if (pathname === hostingGroup || pathname.startsWith(`${hostingGroup}/`)) {
+      if (publicPathMatches(pathname, hostingGroup, locale)) {
         return true;
       }
       return HOSTING_SLUGS.some((slug) => {
         const item = serviceCatalog.find((s) => s.slug === slug);
         if (!item) return false;
-        const href = serviceHref(locale, item);
-        return pathname === href || pathname.startsWith(`${href}/`);
+        return publicPathMatches(pathname, serviceHref(locale, item), locale);
       });
     }
-    return pathname === pathOnly || pathname.startsWith(`${pathOnly}/`);
+    return publicPathMatches(pathname, pathOnly, locale);
   }
 
   return (
@@ -163,15 +166,17 @@ export function Navigation() {
                   : "";
                 const onDomains =
                   Boolean(domainsHref) &&
-                  (pathname === domainsHref || pathname.startsWith(`${domainsHref}/`));
+                  publicPathMatches(pathname, domainsHref, locale);
                 const onHosting =
-                  pathname === hostingGroup ||
-                  pathname.startsWith(`${hostingGroup}/`) ||
+                  publicPathMatches(pathname, hostingGroup, locale) ||
                   HOSTING_SLUGS.some((slug) => {
                     const item = serviceCatalog.find((s) => s.slug === slug);
                     if (!item) return false;
-                    const itemHref = serviceHref(locale, item);
-                    return pathname === itemHref || pathname.startsWith(`${itemHref}/`);
+                    return publicPathMatches(
+                      pathname,
+                      serviceHref(locale, item),
+                      locale,
+                    );
                   });
                 return (
                   <ServicesMegaMenu
@@ -188,12 +193,9 @@ export function Navigation() {
                 const aboutHref = localizedHref(locale, "/over-ons");
                 const statusHref = localizedHref(locale, "/statuspage");
                 const infoActive =
-                  pathname === aboutHref ||
-                  pathname.startsWith(`${aboutHref}/`) ||
-                  pathname === faqHref ||
-                  pathname.startsWith(`${faqHref}/`) ||
-                  pathname === statusHref ||
-                  pathname.startsWith(`${statusHref}/`);
+                  publicPathMatches(pathname, aboutHref, locale) ||
+                  publicPathMatches(pathname, faqHref, locale) ||
+                  publicPathMatches(pathname, statusHref, locale);
                 return (
                   <InfoDropdown
                     key={link.key}
@@ -214,8 +216,11 @@ export function Navigation() {
                 const domainsItem = serviceCatalog.find((s) => s.slug === "domains");
                 if (!domainsItem) return null;
                 const domainsHref = serviceHref(locale, domainsItem);
-                const domainsActive =
-                  pathname === domainsHref || pathname.startsWith(`${domainsHref}/`);
+                const domainsActive = publicPathMatches(
+                  pathname,
+                  domainsHref,
+                  locale,
+                );
                 return (
                   <SoftLink
                     key={link.key}
@@ -307,15 +312,17 @@ export function Navigation() {
                     : "";
                   const onDomains =
                     Boolean(domainsHref) &&
-                    (pathname === domainsHref || pathname.startsWith(`${domainsHref}/`));
+                    publicPathMatches(pathname, domainsHref, locale);
                   const onHosting =
-                    pathname === hostingGroup ||
-                    pathname.startsWith(`${hostingGroup}/`) ||
+                    publicPathMatches(pathname, hostingGroup, locale) ||
                     HOSTING_SLUGS.some((slug) => {
                       const item = serviceCatalog.find((s) => s.slug === slug);
                       if (!item) return false;
-                      const itemHref = serviceHref(locale, item);
-                      return pathname === itemHref || pathname.startsWith(`${itemHref}/`);
+                      return publicPathMatches(
+                        pathname,
+                        serviceHref(locale, item),
+                        locale,
+                      );
                     });
                   const servicesActive = active && !onHosting && !onDomains;
                   return (
@@ -433,12 +440,9 @@ export function Navigation() {
                   const aboutHref = localizedHref(locale, "/over-ons");
                   const statusHref = localizedHref(locale, "/statuspage");
                   const infoActive =
-                    pathname === aboutHref ||
-                    pathname.startsWith(`${aboutHref}/`) ||
-                    pathname === faqHref ||
-                    pathname.startsWith(`${faqHref}/`) ||
-                    pathname === statusHref ||
-                    pathname.startsWith(`${statusHref}/`);
+                    publicPathMatches(pathname, aboutHref, locale) ||
+                    publicPathMatches(pathname, faqHref, locale) ||
+                    publicPathMatches(pathname, statusHref, locale);
                   return (
                     <div key={link.key}>
                       <button
@@ -497,8 +501,11 @@ export function Navigation() {
                   const domainsItem = serviceCatalog.find((s) => s.slug === "domains");
                   if (!domainsItem) return null;
                   const domainsHref = serviceHref(locale, domainsItem);
-                  const domainsActive =
-                    pathname === domainsHref || pathname.startsWith(`${domainsHref}/`);
+                  const domainsActive = publicPathMatches(
+                    pathname,
+                    domainsHref,
+                    locale,
+                  );
                   return (
                     <SoftLink
                       key={link.key}
@@ -536,8 +543,11 @@ export function Navigation() {
                         <div className="mb-2 ms-2 space-y-3 border-s border-border/60 ps-3">
                           {(() => {
                             const href = serviceGroupHref(locale, "hosting");
-                            const itemActive =
-                              pathname === href || pathname.startsWith(`${href}/`);
+                            const itemActive = publicPathMatches(
+                              pathname,
+                              href,
+                              locale,
+                            );
                             return (
                               <SoftLink
                                 href={href}
@@ -559,9 +569,11 @@ export function Navigation() {
                             );
                             if (!categoryItem) return null;
                             const categoryHref = serviceHref(locale, categoryItem);
-                            const categoryActive =
-                              pathname === categoryHref ||
-                              pathname.startsWith(`${categoryHref}/`);
+                            const categoryActive = publicPathMatches(
+                              pathname,
+                              categoryHref,
+                              locale,
+                            );
                             return (
                               <div key={column.categorySlug}>
                                 <SoftLink
@@ -584,8 +596,11 @@ export function Navigation() {
                                   const item = serviceCatalog.find((s) => s.slug === slug);
                                   if (!item) return null;
                                   const href = serviceHref(locale, item);
-                                  const itemActive =
-                                    pathname === href || pathname.startsWith(`${href}/`);
+                                  const itemActive = publicPathMatches(
+                                    pathname,
+                                    href,
+                                    locale,
+                                  );
                                   return (
                                     <SoftLink
                                       key={item.slug}

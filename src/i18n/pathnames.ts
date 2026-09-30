@@ -1167,6 +1167,41 @@ export function localizedHref(locale: string, internalPath = "/"): string {
   return `/${locale}${localized}`;
 }
 
+/** Path without query/hash, trailing slash trimmed (except root). */
+function barePublicPath(path: string): string {
+  let bare = (path || "/").split("?")[0].split("#")[0] || "/";
+  if (!bare.startsWith("/")) bare = `/${bare}`;
+  if (bare.length > 1 && bare.endsWith("/")) bare = bare.slice(0, -1);
+  return bare || "/";
+}
+
+/**
+ * Strip a leading `/{locale}` segment when present.
+ * Needed for Extra Hosting `.nl` (localePrefix never): browser path is
+ * `/diensten/...` while `localizedHref` still builds `/nl/diensten/...`.
+ */
+export function stripLocalePrefix(path: string, locale: string): string {
+  const bare = barePublicPath(path);
+  if (!locale) return bare;
+  if (bare === `/${locale}`) return "/";
+  if (bare.startsWith(`/${locale}/`)) return bare.slice(locale.length + 1) || "/";
+  return bare;
+}
+
+/**
+ * True when `pathname` is the same public page as `href` (or a nested path),
+ * ignoring an optional leading locale prefix on either side.
+ */
+export function publicPathMatches(
+  pathname: string,
+  href: string,
+  locale: string,
+): boolean {
+  const current = stripLocalePrefix(pathname, locale);
+  const target = stripLocalePrefix(href, locale);
+  return current === target || current.startsWith(`${target}/`);
+}
+
 /** Convert a locale-prefixed public URL path → internal path (no locale). */
 export function toInternalPath(locale: string, pathWithoutLocale: string): string {
   let bare = pathWithoutLocale.split("?")[0].split("#")[0] || "/";
