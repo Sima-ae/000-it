@@ -226,20 +226,56 @@ export function getImportedProduct(
   slug: string,
   options?: { lean?: boolean; locale?: string },
 ) {
+  const locale = options?.locale ?? "nl";
+  const lean = options?.lean ?? false;
+
+  // Prefer live shop catalog (backend) over static imported/i18n copy.
+  const shop = getShopProductBySlug(slug);
+  if (shop && shop.published !== false) {
+    const localized = localizeShopProduct(shop, locale);
+    const shortDescription = brandify(localized.localizedShort || "");
+    const description = brandify(localized.localizedDescription || "");
+    const features = productFeatures(shortDescription);
+    const descriptionSource = lean
+      ? description
+      : description || shortDescription || "";
+    const descriptionBlocks = lean
+      ? textToBlocks(descriptionSource, { maxBlocks: 8 })
+      : textToBlocks(descriptionSource);
+    const planHeading = catalogUiLabel(
+      "description",
+      locale,
+      locale === "nl" ? "Omschrijving" : "Description",
+    );
+    const blocks: ContentBlock[] = descriptionBlocks.length
+      ? [{ type: "heading", text: planHeading }, ...descriptionBlocks]
+      : [];
+
+    return {
+      slug,
+      name: brandify(localized.localizedName),
+      price: shopUnitPriceInclCents(shop) / 100,
+      currency: "EUR",
+      shortDescription,
+      description,
+      images: shop.image ? [shop.image] : [],
+      features,
+      localImage: shop.image || imageMap[slug] || null,
+      blocks,
+    };
+  }
+
   const product = productBySlug.get(slug);
   if (!product) return null;
 
-  const locale = options?.locale ?? "nl";
+  // No shop row: use imported product fields first, then i18n packs.
   const i18n = getProductI18n(slug, locale);
-  const lean = options?.lean ?? false;
-
-  const name = brandify(i18n?.name ?? product.name);
+  const name = brandify(product.name || i18n?.name || slug);
   const shortDescription = brandify(
-    i18n?.shortDescription ?? product.shortDescription ?? "",
+    product.shortDescription || i18n?.shortDescription || "",
   );
-  // When an i18n overlay exists, do not fall back to the other language's description.
   const description = brandify(
-    i18n ? (i18n.description ?? "") : product.description || "",
+    product.description || i18n?.description || shortDescription || "",
   );
   const features = productFeatures(shortDescription);
 
@@ -515,14 +551,38 @@ function buildServiceCardMeta(slug: string, locale: string) {
   }
 
   if (meta.kind === "product") {
+    const shop = getShopProductBySlug(slug);
+    if (shop && shop.published !== false) {
+      const localized = localizeShopProduct(shop, locale);
+      const shortDescription = brandify(localized.localizedShort || "");
+      const features = productFeatures(shortDescription);
+      const subtitle =
+        features.length > 0
+          ? features.slice(0, 4).join(" · ")
+          : shortDescription.split("\n")[0] ||
+            catalogServiceSummary(
+              slug,
+              locale,
+              (isNl ? meta.summaryNl : meta.summary) || "",
+            ) ||
+            "";
+      return {
+        title: brandify(localized.localizedName),
+        subtitle,
+        price: shopUnitPriceInclCents(shop) / 100,
+        image: shop.image || imageMap[slug] || pageImageFallback[slug] || null,
+        hasBody: true,
+      };
+    }
+
     const product = productBySlug.get(slug);
     if (!product) return null;
     const i18n = getProductI18n(slug, locale);
     const shortDescription = brandify(
-      i18n?.shortDescription ?? product.shortDescription ?? "",
+      product.shortDescription || i18n?.shortDescription || "",
     );
     const features = productFeatures(shortDescription);
-    const name = brandify(i18n?.name ?? product.name);
+    const name = brandify(product.name || i18n?.name || slug);
     const subtitle =
       features.length > 0
         ? features.slice(0, 4).join(" · ")

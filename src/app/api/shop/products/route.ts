@@ -178,5 +178,12 @@ export async function POST(request: Request) {
     },
   });
 
+  try {
+    const { clearServiceContentCaches } = await import("@/lib/fixweb-content");
+    clearServiceContentCaches();
+  } catch {
+    // ignore
+  }
+
   return NextResponse.json(item, { status: 201 });
 }

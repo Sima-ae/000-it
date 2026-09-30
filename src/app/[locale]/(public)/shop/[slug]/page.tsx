@@ -93,7 +93,9 @@ export default async function ShopProductPage({
           <h1 className="font-display mt-2 text-4xl font-semibold tracking-tight">
             {localized.localizedName}
           </h1>
-          <p className="mt-4 text-muted-foreground">{localized.localizedShort}</p>
+          <p className="mt-4 whitespace-pre-line text-muted-foreground">
+            {localized.localizedShort}
+          </p>
           {shopHasDiscount(product) ? (
             <div className="mt-6 flex flex-wrap items-baseline gap-x-3 gap-y-1">
               <p className="font-display text-xl font-medium text-muted-foreground line-through decoration-2">

@@ -37,6 +37,8 @@ function productLabel(
   product: CatalogProduct,
   locale: string,
 ) {
+  const fromDb = (locale === "nl" ? product.nameNl : product.nameEn)?.trim();
+  if (fromDb) return fromDb;
   if (product.slug) {
     const i18n = getProductI18n(product.slug, locale);
     if (i18n?.name?.trim()) return i18n.name.trim();

@@ -19,6 +19,11 @@ import {
 import { localizedHref } from "@/i18n/pathnames";
 import { listNewsPosts } from "@/lib/news";
 import { listCategories } from "@/lib/kennisbank";
+import {
+  getShopProductBySlug,
+  loadShopCatalogFromDb,
+  localizeShopProduct,
+} from "@/lib/shop/catalog";
 import type {
   SiteSearchHit,
   SiteSearchResult,
@@ -112,7 +117,8 @@ function searchPages(locale: string, needle: string, tokens: string[]) {
   return hits.sort((a, b) => b.score - a.score).slice(0, PER_SECTION);
 }
 
-function searchServices(locale: string, needle: string, tokens: string[]) {
+async function searchServices(locale: string, needle: string, tokens: string[]) {
+  await loadShopCatalogFromDb();
   const hits: SiteSearchHit[] = [];
 
   for (const group of sortedServiceGroups(locale)) {
@@ -131,11 +137,16 @@ function searchServices(locale: string, needle: string, tokens: string[]) {
   }
 
   for (const item of serviceCatalog) {
-    const title = catalogServiceTitle(item.slug, locale, item.title);
+    const shop = getShopProductBySlug(item.slug);
+    const localized = shop ? localizeShopProduct(shop, locale) : null;
+    const title =
+      localized?.localizedName?.trim() ||
+      catalogServiceTitle(item.slug, locale, item.title);
     const summary =
-      locale === "nl"
+      localized?.localizedShort?.trim() ||
+      (locale === "nl"
         ? item.summaryNl || item.summary || ""
-        : item.summary || item.summaryNl || "";
+        : item.summary || item.summaryNl || "");
     const score = scoreText(
       tokens,
       needle,
@@ -265,7 +276,7 @@ export async function searchSite(
   return {
     query,
     pages: searchPages(locale, needle, tokens),
-    services: searchServices(locale, needle, tokens),
+    services: await searchServices(locale, needle, tokens),
     kennisbank,
     news,
     faq: searchFaq(locale, needle, tokens),

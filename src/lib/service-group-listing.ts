@@ -33,9 +33,12 @@ export async function listServiceGroupCards(
   const cards = await Promise.all(
     items.map(async (item) => {
       const content = await getServiceCardMeta(item.slug, locale);
-      const title = catalogServiceTitle(item.slug, locale, item.title);
+      // Prefer live shop/backend title & summary when present.
+      const title =
+        content?.title?.trim() ||
+        catalogServiceTitle(item.slug, locale, item.title);
       const summary =
-        content?.subtitle ||
+        content?.subtitle?.trim() ||
         catalogServiceSummary(item.slug, locale, item.summary || "") ||
         "";
       return {

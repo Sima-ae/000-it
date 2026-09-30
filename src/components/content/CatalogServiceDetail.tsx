@@ -349,7 +349,10 @@ export async function CatalogServiceDetail({
                 <Reveal key={item.slug} delay={i * 0.04}>
                   <ServiceCard
                     href={serviceHref(locale, item)}
-                    title={catalogServiceTitle(item.slug, locale, item.title)}
+                    title={
+                      relatedContent?.title?.trim() ||
+                      catalogServiceTitle(item.slug, locale, item.title)
+                    }
                     summary={relatedContent?.subtitle || ""}
                     price={relatedContent?.price ?? undefined}
                     listPrice={

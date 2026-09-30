@@ -150,6 +150,12 @@ export async function PATCH(
     where: { id },
     data: update,
   });
+  try {
+    const { clearServiceContentCaches } = await import("@/lib/fixweb-content");
+    clearServiceContentCaches();
+  } catch {
+    // ignore
+  }
   return NextResponse.json(item);
 }
 

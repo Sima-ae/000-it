@@ -28,6 +28,8 @@ import { centsToEurosNumber } from "@/lib/shop/admin";
 import { getProductI18n } from "@/content/fixweb/product-i18n";
 
 function itemName(item: Item, locale: string) {
+  const fromDb = (locale === "nl" ? item.nameNl : item.nameEn)?.trim();
+  if (fromDb) return fromDb;
   const i18n = getProductI18n(item.slug, locale);
   if (i18n?.name?.trim()) return i18n.name.trim();
   return locale === "nl" ? item.nameNl : item.nameEn;

@@ -622,10 +622,11 @@ export function planProductId(
 }
 
 export function localizeShopProduct(product: ShopProduct, locale: string) {
-  const fromPack = product.slug ? getProductI18n(product.slug, locale) : null;
   const lang = locale === "nl" ? "nl" : "en";
 
-  // Prefer catalog/DB fields (what hosting-admin edits) over static i18n packs.
+  // Catalog/DB fields are the source of truth for every shop product
+  // (services + hosting). Static product-i18n is only used for other locales
+  // when NL/EN catalog fields are empty.
   const pick = (...candidates: Array<string | null | undefined>) => {
     for (const value of candidates) {
       if (typeof value === "string" && value.trim()) return value;
@@ -633,24 +634,40 @@ export function localizeShopProduct(product: ShopProduct, locale: string) {
     return "";
   };
 
+  const fromProductName = pick(
+    product.name[lang],
+    product.name.en,
+    product.name.nl,
+  );
+  const fromProductShort = pick(
+    product.shortDescription[lang],
+    product.shortDescription.en,
+    product.shortDescription.nl,
+  );
+  const fromProductDescription = pick(
+    product.description[lang],
+    product.description.en,
+    product.description.nl,
+  );
+
+  const needsPackFallback =
+    locale !== "nl" &&
+    locale !== "en" &&
+    (!fromProductName || !fromProductShort || !fromProductDescription);
+  const fromPack = needsPackFallback
+    ? product.slug
+      ? getProductI18n(product.slug, locale)
+      : null
+    : null;
+
   return {
     ...product,
-    localizedName: brandify(
-      pick(product.name[lang], product.name.en, fromPack?.name),
-    ),
+    localizedName: brandify(pick(fromProductName, fromPack?.name)),
     localizedShort: brandify(
-      pick(
-        product.shortDescription[lang],
-        product.shortDescription.en,
-        fromPack?.shortDescription,
-      ),
+      pick(fromProductShort, fromPack?.shortDescription),
     ),
     localizedDescription: brandify(
-      pick(
-        product.description[lang],
-        product.description.en,
-        fromPack?.description,
-      ),
+      pick(fromProductDescription, fromPack?.description),
     ),
   };
 }
@@ -750,9 +767,31 @@ export async function loadShopCatalogFromDb(opts?: {
       where: opts?.includeUnpublished ? undefined : { published: true },
       orderBy: [{ sortOrder: "asc" }, { createdAt: "desc" }],
     });
-    if (!rows.length) return STATIC_SHOP_CATALOG;
+    if (!rows.length) {
+      setRuntimeShopCatalog(STATIC_SHOP_CATALOG);
+      return STATIC_SHOP_CATALOG;
+    }
+    // DB rows always win. Fill gaps from static so missing SKUs (e.g. cloud)
+    // still appear until they are synced into the catalog.
     const mapped = rows.map(mapDbShopProduct);
-    if (!opts?.includeUnpublished) setRuntimeShopCatalog(mapped);
+    const bySlug = new Map(mapped.map((product) => [product.slug, product]));
+    for (const product of STATIC_SHOP_CATALOG) {
+      if (!bySlug.has(product.slug)) {
+        mapped.push(product);
+        bySlug.set(product.slug, product);
+      }
+    }
+    mapped.sort(
+      (a, b) =>
+        (a.sortOrder ?? 0) - (b.sortOrder ?? 0) || a.slug.localeCompare(b.slug),
+    );
+    setRuntimeShopCatalog(mapped);
+    try {
+      const { clearServiceContentCaches } = await import("@/lib/fixweb-content");
+      clearServiceContentCaches();
+    } catch {
+      // ignore — content module may not be available in all runtimes
+    }
     return mapped;
   } catch (error) {
     console.warn(

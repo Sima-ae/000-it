@@ -263,9 +263,11 @@ export default async function ServicesPage({
           </Reveal>
           <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {cards.map(({ item, content }, i) => {
-              const title = catalogServiceTitle(item.slug, locale, item.title);
+              const title =
+                content?.title?.trim() ||
+                catalogServiceTitle(item.slug, locale, item.title);
               const summary =
-                content?.subtitle ||
+                content?.subtitle?.trim() ||
                 catalogServiceSummary(item.slug, locale, item.summary || "") ||
                 "";
 
