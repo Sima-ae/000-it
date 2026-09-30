@@ -211,7 +211,7 @@ export function ShopHostingSection({
                   </ul>
                   <Button
                     className="mt-5 w-full rounded-2xl"
-                    variant={featured ? "default" : "outline"}
+                    variant={featured || glowOnHover ? "default" : "outline"}
                     onClick={() => orderProduct(product.id)}
                   >
                     {tPricing("cta")}
