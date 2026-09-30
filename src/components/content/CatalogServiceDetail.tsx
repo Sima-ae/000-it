@@ -218,6 +218,19 @@ export async function CatalogServiceDetail({
                     ) : null}
                   </div>
                 ) : null}
+                {canOrder && shopProduct ? (
+                  <div className="mt-5 flex flex-wrap gap-3">
+                    <AddToCartButton
+                      productId={shopProduct.id}
+                      label={tShop("order")}
+                    />
+                    <Button asChild variant="outline" className="rounded-2xl">
+                      <SoftLink href={localizedHref(locale, "/shop/cart")}>
+                        {tShop("goToCart")}
+                      </SoftLink>
+                    </Button>
+                  </div>
+                ) : null}
                 {"features" in content && Array.isArray(content.features) && content.features.length ? (
                   <ul className="mt-5 grid gap-1.5 text-sm text-muted-foreground sm:grid-cols-2">
                     {content.features.map((feature) => (
@@ -290,58 +303,48 @@ export async function CatalogServiceDetail({
           </div>
         </Reveal>
 
-        <Reveal delay={0.08}>
-          <div className="mt-10 rounded-[1.75rem] border border-border/70 bg-linear-to-br from-primary/10 via-background to-accent/10 px-6 py-8 md:px-10">
-            <h2 className="font-display text-2xl font-semibold tracking-tight">
-              {inquiry ? t(`inquiry.${inquiry.key}.ctaTitle`) : t("readyTitle")}
-            </h2>
-            <p className="mt-2 max-w-2xl text-muted-foreground">
-              {inquiry ? t(`inquiry.${inquiry.key}.ctaText`) : t("readyBody")}
-            </p>
-            <div className="mt-5 flex flex-wrap gap-3">
-              {canOrder && shopProduct ? (
-                <>
-                  <AddToCartButton
-                    productId={shopProduct.id}
-                    label={tShop("order")}
-                  />
-                  <Button asChild variant="outline" className="rounded-2xl">
-                    <SoftLink href={localizedHref(locale, "/shop/cart")}>
-                      {tShop("goToCart")}
-                    </SoftLink>
-                  </Button>
-                </>
-              ) : inquiry ? (
-                <>
-                  <ServiceInquiryDialog
-                    serviceTitle={content.title}
-                    source={inquiry.source}
-                    messageHint={t(`inquiry.${inquiry.key}.hint`)}
-                    triggerLabel={t("openContactForm")}
-                  />
-                  <Button asChild variant="outline" className="rounded-2xl">
-                    <SoftLink href={localizedHref(locale, "/ai-scan")}>
-                      {t("freeAiScan")}
-                    </SoftLink>
-                  </Button>
-                </>
-              ) : (
-                <>
-                  <Button asChild className="rounded-2xl">
-                    <SoftLink href={localizedHref(locale, "/afspraak")}>
-                      {tNav("book")}
-                    </SoftLink>
-                  </Button>
-                  <Button asChild variant="outline" className="rounded-2xl">
-                    <SoftLink href={localizedHref(locale, "/ai-scan")}>
-                      {t("freeAiScan")}
-                    </SoftLink>
-                  </Button>
-                </>
-              )}
+        {!canOrder ? (
+          <Reveal delay={0.08}>
+            <div className="mt-10 rounded-[1.75rem] border border-border/70 bg-linear-to-br from-primary/10 via-background to-accent/10 px-6 py-8 md:px-10">
+              <h2 className="font-display text-2xl font-semibold tracking-tight">
+                {inquiry ? t(`inquiry.${inquiry.key}.ctaTitle`) : t("readyTitle")}
+              </h2>
+              <p className="mt-2 max-w-2xl text-muted-foreground">
+                {inquiry ? t(`inquiry.${inquiry.key}.ctaText`) : t("readyBody")}
+              </p>
+              <div className="mt-5 flex flex-wrap gap-3">
+                {inquiry ? (
+                  <>
+                    <ServiceInquiryDialog
+                      serviceTitle={content.title}
+                      source={inquiry.source}
+                      messageHint={t(`inquiry.${inquiry.key}.hint`)}
+                      triggerLabel={t("openContactForm")}
+                    />
+                    <Button asChild variant="outline" className="rounded-2xl">
+                      <SoftLink href={localizedHref(locale, "/ai-scan")}>
+                        {t("freeAiScan")}
+                      </SoftLink>
+                    </Button>
+                  </>
+                ) : (
+                  <>
+                    <Button asChild className="rounded-2xl">
+                      <SoftLink href={localizedHref(locale, "/afspraak")}>
+                        {tNav("book")}
+                      </SoftLink>
+                    </Button>
+                    <Button asChild variant="outline" className="rounded-2xl">
+                      <SoftLink href={localizedHref(locale, "/ai-scan")}>
+                        {t("freeAiScan")}
+                      </SoftLink>
+                    </Button>
+                  </>
+                )}
+              </div>
             </div>
-          </div>
-        </Reveal>
+          </Reveal>
+        ) : null}
 
         {related.length ? (
           <section className="mt-14">
