@@ -9,10 +9,10 @@
     "seoDescription": "Open webmail vanuit DirectAdmin en log in met mailboxadres + mailboxwachtwoord."
   },
   "en": {
-    "title": "How do I use webmail vanuit DirectAdmin?",
+    "title": "How to use webmail from DirectAdmin",
     "excerpt": "Open webmail from DirectAdmin or the webmail URL with the mailbox password.",
     "bodyHtml": "<p>“How do I use webmail vanuit DirectAdmin”: sign in with the full email address and mailbox password (not the DirectAdmin password).</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Webmail URL or DA link</li>\n  <li>Mailbox + password</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Open DirectAdmin → Email Accounts or the webmail link from the welcome email.</li>\n  <li>Choose Roundcube / Webmail Pro.</li>\n  <li>Sign in with full address + mailbox password.</li>\n  <li>Check Inbox and send an external test.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Inbox opens</li>\n  <li>Sending works</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> If webmail works and Outlook does not → fix client settings.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> On public computers always sign out.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: Mailbox password, IMAP/SMTP.</p>",
-    "seoTitle": "How do I use webmail vanuit DirectAdmin? | TripleZero iT",
+    "seoTitle": "How to use webmail from DirectAdmin | TripleZero iT",
     "seoDescription": "Open webmail from DirectAdmin or the webmail URL with the mailbox password."
   }
 }

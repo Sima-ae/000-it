@@ -9,10 +9,10 @@
     "seoDescription": "Hoe plan ik updates van thema en plugins zonder de blog plat te leggen: praktische handleiding in Berichten, met stappen, controles en wanneer je TripleZero iT support inschakelt."
   },
   "en": {
-    "title": "How do I plan I updates of thema and plugins without the blog plat te leggen?",
+    "title": "How do I schedule theme and plugin updates without bringing the blog down?",
     "excerpt": "WordPress plugin: backup, install/update/deactivate via Plugins, then test.",
     "bodyHtml": "<p>“How do I plan I updates of thema and plugins without the blog plat te leggen” is done via wp-admin → Plugins. On a fatal: rename the plugin folder via File Manager.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Backup files + database</li>\n  <li>wp-admin</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Create a backup.</li>\n  <li>Open wp-admin → Plugins.</li>\n  <li>Install, update, deactivate or delete only the intended plugin.</li>\n  <li>Clear caches.</li>\n  <li>Test the pages/flows that plugin affects.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Plugin status correct</li>\n  <li>No critical error</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Update one plugin at a time in production.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not delete a folder with custom code without an archive.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: Critical error, Installatron backup.</p>",
-    "seoTitle": "How do I plan I updates of thema and plugins without the blog plat te leggen? | TripleZero iT",
+    "seoTitle": "How do I schedule theme and plugin updates without bringing the blog down? | TripleZero iT",
     "seoDescription": "WordPress plugin: backup, install/update/deactivate via Plugins, then test."
   }
 }

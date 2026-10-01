@@ -9,10 +9,10 @@
     "seoDescription": "Mailbox of hostingquota vol: opruimen, limiet verhogen in DirectAdmin, daarna opnieuw testen."
   },
   "en": {
-    "title": "Postvak is vol",
+    "title": "Mailbox is full",
     "excerpt": "Postvak is vol: steps in webmail (Roundcube / Webmail Pro) for postvak, vol.",
     "bodyHtml": "<p>For <strong>Postvak is vol</strong> follow a targeted checklist in webmail (Roundcube / Webmail Pro). Core themes: <strong>postvak, vol</strong>.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Access to webmail (Roundcube / Webmail Pro)</li>\n  <li>Focus of this article: <strong>postvak, vol</strong></li>\n  <li>Note of the current setting/status</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Work in webmail (Roundcube / Webmail Pro). Stay on the topic <strong>postvak, vol</strong> — no parallel experiments.</li>\n  <li>Sign in with the <strong>full email address</strong> and mailbox password (not the DirectAdmin password).</li>\n  <li>In Roundcube/Webmail Pro open the menu for <strong>postvak</strong> / <strong>vol</strong> (Settings, Identities, Filters, Folders or Compose).</li>\n  <li>Save the “Postvak is vol” adjustment in webmail.</li>\n  <li>Send or receive a test message and confirm <strong>vol</strong> looks correct.</li>\n  <li>Document what you changed around <strong>postvak, vol</strong> (old → new value) for support.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Result for <strong>postvak, vol</strong> matches “Postvak is vol”</li>\n  <li>No regression on a critical flow beside postvak is vol</li>\n  <li>External test or second browser/network confirms the result</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Work in small steps: get <strong>postvak, vol</strong> right first, then optional extras.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not blindly change production without a backup if <strong>postvak, vol</strong> touches login, DNS, mail or payments.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: webmail (Roundcube / Webmail Pro), backups, tickets.</p>",
-    "seoTitle": "Postvak is vol | TripleZero iT",
+    "seoTitle": "Mailbox is full | TripleZero iT",
     "seoDescription": "Postvak is vol: steps in webmail (Roundcube / Webmail Pro) for postvak, vol."
   }
 }

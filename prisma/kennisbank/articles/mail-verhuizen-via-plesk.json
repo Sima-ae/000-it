@@ -9,10 +9,10 @@
     "seoDescription": "Mail verhuizen via Plesk: stappen in Plesk voor mail, verhuizen, plesk."
   },
   "en": {
-    "title": "Mail verhuizen via Plesk",
+    "title": "Moving mail via Plesk",
     "excerpt": "Mail verhuizen via Plesk: steps in Plesk for mail, verhuizen, Plesk.",
     "bodyHtml": "<p>For <strong>Mail verhuizen via Plesk</strong> follow a targeted checklist in Plesk. Core themes: <strong>mail, verhuizen, Plesk</strong>.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Access to Plesk</li>\n  <li>Focus of this article: <strong>mail, verhuizen, Plesk</strong></li>\n  <li>Note of the current setting/status</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Work in Plesk. Stay on the topic <strong>mail, verhuizen, Plesk</strong> — no parallel experiments.</li>\n  <li>Open the correct subscription/domain in Plesk.</li>\n  <li>Use Mail, DNS, SSL/TLS, Files, Databases or WordPress Toolkit for <strong>mail</strong>.</li>\n  <li>Change <strong>verhuizen</strong> per “Mail verhuizen via Plesk”; confirm.</li>\n  <li>Test externally (browser/mail/DNS).</li>\n  <li>Document what you changed around <strong>mail, verhuizen, Plesk</strong> (old → new value) for support.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Result for <strong>mail, verhuizen, Plesk</strong> matches “Mail verhuizen via Plesk”</li>\n  <li>No regression on a critical flow beside mail verhuizen via plesk</li>\n  <li>External test or second browser/network confirms the result</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Work in small steps: get <strong>mail, verhuizen, Plesk</strong> right first, then optional extras.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not blindly change production without a backup if <strong>mail, verhuizen, Plesk</strong> touches login, DNS, mail or payments.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: Plesk, backups, tickets.</p>",
-    "seoTitle": "Mail verhuizen via Plesk | TripleZero iT",
+    "seoTitle": "Moving mail via Plesk | TripleZero iT",
     "seoDescription": "Mail verhuizen via Plesk: steps in Plesk for mail, verhuizen, Plesk."
   }
 }

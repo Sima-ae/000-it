@@ -9,10 +9,10 @@
     "seoDescription": "Veilig bestanden downloaden en bijlagen openen: praktische handleiding in Accountbeveiliging, met stappen, controles en wanneer je TripleZero iT support inschakelt."
   },
   "en": {
-    "title": "Veilig files downloaden and bijlagen open",
+    "title": "Securely download files and open attachments",
     "excerpt": "Security alert: determine scope, patch/update, rotate credentials, check monitoring.",
     "bodyHtml": "<p>“Veilig files downloaden and bijlagen open”: handle the alert specifically — update/patch, isolate compromised accounts, then verify.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Which systems are affected</li>\n  <li>Backup/snapshot</li>\n  <li>Admin access to panel/VPS</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Read the alert: product, CVE/version, whether it hits your stack.</li>\n  <li>Take snapshot/backup before changes.</li>\n  <li>Apply available updates (panel, OS, CMS, plugins) or mitigate per advisory.</li>\n  <li>Rotate passwords/keys for affected accounts; force logout where possible.</li>\n  <li>Check logs for abuse; malware-scan websites.</li>\n  <li>Watch monitoring/uptime until stable.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Patch/mitigation applied</li>\n  <li>No open abuse indicators</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Note timestamps for later forensics.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not ignore alerts ‘because the site is still online’.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: Backups, 2FA, WAF/firewall.</p>",
-    "seoTitle": "Veilig files downloaden and bijlagen open | TripleZero iT",
+    "seoTitle": "Securely download files and open attachments | TripleZero iT",
     "seoDescription": "Security alert: determine scope, patch/update, rotate credentials, check monitoring."
   }
 }

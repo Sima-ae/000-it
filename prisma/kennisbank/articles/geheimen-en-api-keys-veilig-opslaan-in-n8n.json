@@ -9,10 +9,10 @@
     "seoDescription": "Geheimen en API-keys veilig opslaan in n8n: stappen in AI-scan / agent-dashboard voor geheimen, api, keys."
   },
   "en": {
-    "title": "Geheimen and API-keys veilig opslaan in n8n",
+    "title": "Store secrets and API keys securely in n8n",
     "excerpt": "Geheimen and API-keys veilig opslaan in n8n: steps in the AI-scan / agent dashboard for geheimen, api, keys.",
     "bodyHtml": "<p>For <strong>Geheimen and API-keys veilig opslaan in n8n</strong> follow a targeted checklist in the AI-scan / agent dashboard. Core themes: <strong>geheimen, api, keys</strong>.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Access to the AI-scan / agent dashboard</li>\n  <li>Focus of this article: <strong>geheimen, api, keys</strong></li>\n  <li>Note of the current setting/status</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Work in the AI-scan / agent dashboard. Stay on the topic <strong>geheimen, api, keys</strong> — no parallel experiments.</li>\n  <li>Open the AI scan or agent/workflow in the portal.</li>\n  <li>Check input (URL, trigger, credentials) for <strong>geheimen</strong>.</li>\n  <li>Run the scan or dry-run; read scores/logs around <strong>api</strong>.</li>\n  <li>Apply targeted fixes and retest.</li>\n  <li>Document what you changed around <strong>geheimen, api, keys</strong> (old → new value) for support.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Result for <strong>geheimen, api, keys</strong> matches “Geheimen and API-keys veilig opslaan in n8n”</li>\n  <li>No regression on a critical flow beside geheimen en api keys</li>\n  <li>External test or second browser/network confirms the result</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Work in small steps: get <strong>geheimen, api, keys</strong> right first, then optional extras.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not blindly change production without a backup if <strong>geheimen, api, keys</strong> touches login, DNS, mail or payments.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: the AI-scan / agent dashboard, backups, tickets.</p>",
-    "seoTitle": "Geheimen and API-keys veilig opslaan in n8n | TripleZero iT",
+    "seoTitle": "Store secrets and API keys securely in n8n | TripleZero iT",
     "seoDescription": "Geheimen and API-keys veilig opslaan in n8n: steps in the AI-scan / agent dashboard for geheimen, api, keys."
   }
 }

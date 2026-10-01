@@ -9,10 +9,10 @@
     "seoDescription": "Berichten verwijderen in Roundcube: Prullenbak legen, quota vrijmaken, sync controleren."
   },
   "en": {
-    "title": "Remove error message at berichten in Roundcube",
+    "title": "Error message when deleting messages in Roundcube",
     "excerpt": "Delete messages in Roundcube: empty Trash, free quota, check sync.",
     "bodyHtml": "<p>“Remove error message at berichten in Roundcube”: deletion happens in the webmail UI; for quota issues also empty Trash and Spam.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Webmail login</li>\n  <li>Which folder (Inbox/Spam/Trash)</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Sign in to Roundcube.</li>\n  <li>Select messages → Delete (to Trash) or Shift+Delete for permanent (if available).</li>\n  <li>Open <strong>Trash</strong> → Empty.</li>\n  <li>Also empty <strong>Spam/Junk</strong> if the mailbox is full.</li>\n  <li>Refresh; check quota in DirectAdmin → Email Accounts if needed.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Messages gone</li>\n  <li>Quota drops or stays under limit</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> IMAP clients only show Trash after sync — refresh the folder.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Permanent delete is not always recoverable without a backup.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: Mailbox quota, IMAP, spam folder.</p>",
-    "seoTitle": "Remove error message at berichten in Roundcube | TripleZero iT",
+    "seoTitle": "Error message when deleting messages in Roundcube | TripleZero iT",
     "seoDescription": "Delete messages in Roundcube: empty Trash, free quota, check sync."
   }
 }

@@ -1,0 +1,49 @@
+[fix-en-titles] fixed=25 skipped=51
+[fix-en-titles] fixed=50 skipped=96
+[fix-en-titles] fixed=75 skipped=122
+[fix-en-titles] fixed=100 skipped=139
+[fix-en-titles] fixed=125 skipped=171
+[fix-en-titles] fixed=150 skipped=235
+[fix-en-titles] fixed=175 skipped=309
+[fix-en-titles] fixed=200 skipped=338
+[fix-en-titles] fixed=225 skipped=426
+[fix-en-titles] fixed=250 skipped=484
+[fix-en-titles] fixed=275 skipped=520
+[fix-en-titles] fixed=300 skipped=582
+[fix-en-titles] fixed=325 skipped=652
+[translate] gtx limited (nl→en); trying next provider
+[translate] libre limited (nl→en); trying next provider
+[translate] retry 1/5 after 20s (Error: rate-limited (nl→en))
+[translate] retry 2/5 after 40s (Error: rate-limited (nl→en))
+[translate] libre limited (nl→en); trying next provider
+[translate] retry 3/5 after 60s (Error: rate-limited (nl→en))
+[translate] gtx limited (nl→en); trying next provider
+[translate] libre limited (nl→en); trying next provider
+[translate] retry 4/5 after 80s (Error: rate-limited (nl→en))
+[translate] libre limited (nl→en); trying next provider
+[translate] retry 5/5 after 100s (Error: rate-limited (nl→en))
+[fail] rate-limits-van-externe-apis-respecteren rate-limited (nl→en)
+[fix-en-titles] fixed=350 skipped=757
+[fix-en-titles] fixed=375 skipped=882
+[fix-en-titles] fixed=400 skipped=966
+[fix-en-titles] fixed=425 skipped=1042
+[fix-en-titles] fixed=450 skipped=1144
+[fix-en-titles] fixed=475 skipped=1280
+[fix-en-titles] scanned=1785 fixed=479 skipped=1305 failed=1 stillFlagged=101
+still flagged samples: [
+  'hoge-bandbreedte-door-bezoeken-van-bots-crawlers-en-spiders => High bandwidth due to visits from bots, crawlers and spiders',
+  'kan-ik-een-mailing-sturen-naar-een-groot-adressenbestand => Can I send a mailing to a large address database?',
+  'afschermen-beveiligen-bestanden-via-htaccess => Protect – protect files via htaccess',
+  'wordpress-heeft-gedetecteerd-dat-je-site-een-onveilige-versie-van-php-gebruikt => WordPress has detected that your site is using an insecure version of PHP',
+  'wordfence-firewall-instellen => Set up the Wordfence firewall',
+  'website-beschermen-tegen-hacks => Protect website against hacks',
+  'wat-zijn-de-risicos-van-een-openbaar-wifi-netwerk => What are the risks of a public WiFi Network? – Safe Online',
+  'wordpress-installeren-via-cyberpanel => Install WordPress via CyberPanel',
+  'ftp-en-sftp-instellen-via-cyberpanel => Set up FTP and SFTP via CyberPanel',
+  'firewall-en-modsecurity-in-cyberpanel => Firewall and ModSecurity in CyberPanel',
+  'hoe-wijzig-ik-de-eigenaar-van-een-domeinnaam => How do I change the owner of a domain name?',
+  'hoe-stel-ik-cronjobs-in-via-directadmin => How do I set up cron jobs via DirectAdmin?',
+  'hoe-verstuur-ik-een-nieuwsbrief-via-triplezero-it-hosting => How do I send a newsletter via TripleZero iT?',
+  'hoe-stel-ik-een-firewall-in-op-mijn-website-zonder-plugin => How do I set up a firewall on my website (without a plugin)?',
+  'hoe-zorg-ik-voor-een-veilige-verbinding-met-sftp-in-plaats-van-ftp => How do I ensure a secure connection with SFTP instead of FTP?'
+]

@@ -9,10 +9,10 @@
     "seoDescription": "SPF, DKIM en DMARC instellen vanuit Plesk: praktische handleiding in Plesk, met stappen, controles en wanneer je TripleZero iT support inschakelt."
   },
   "en": {
-    "title": "Set up SPF, DKIM and DMARC vanuit Plesk",
+    "title": "Set up SPF, DKIM and DMARC from Plesk",
     "excerpt": "Set up SPF, DKIM and DMARC vanuit Plesk: steps in Plesk for spf, dkim, dmarc.",
     "bodyHtml": "<p>This guide covers <strong>Set up SPF, DKIM and DMARC vanuit Plesk</strong>. You work in Plesk, focusing on <strong>spf, dkim, dmarc</strong> — not unrelated side quests in other menus.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Access to Plesk</li>\n  <li>Focus of this article: <strong>spf, dkim, dmarc</strong></li>\n  <li>Note of the current setting/status</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Open Plesk and look specifically for settings around <strong>spf, dkim, dmarc</strong>.</li>\n  <li>Open the correct subscription/domain in Plesk.</li>\n  <li>Use Mail, DNS, SSL/TLS, Files, Databases or WordPress Toolkit for <strong>spf</strong>.</li>\n  <li>Change <strong>dkim</strong> per “Set up SPF, DKIM and DMARC vanuit Plesk”; confirm.</li>\n  <li>Test externally (browser/mail/DNS).</li>\n  <li>Document what you changed around <strong>spf, dkim, dmarc</strong> (old → new value) for support.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Result for <strong>spf, dkim, dmarc</strong> matches “Set up SPF, DKIM and DMARC vanuit Plesk”</li>\n  <li>No regression on a critical flow beside spf dkim en dmarc</li>\n  <li>External test or second browser/network confirms the result</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Work in small steps: get <strong>spf, dkim, dmarc</strong> right first, then optional extras.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not blindly change production without a backup if <strong>spf, dkim, dmarc</strong> touches login, DNS, mail or payments.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: Plesk, backups, tickets.</p>",
-    "seoTitle": "Set up SPF, DKIM and DMARC vanuit Plesk | TripleZero iT",
+    "seoTitle": "Set up SPF, DKIM and DMARC from Plesk | TripleZero iT",
     "seoDescription": "Set up SPF, DKIM and DMARC vanuit Plesk: steps in Plesk for spf, dkim, dmarc."
   }
 }

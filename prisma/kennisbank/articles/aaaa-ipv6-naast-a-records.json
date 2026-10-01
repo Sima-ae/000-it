@@ -9,10 +9,10 @@
     "seoDescription": "AAAA (IPv6) naast A-records: stappen in DNS-beheer (klantenpanel of Zone Editor) voor aaaa, ipv6, naast."
   },
   "en": {
-    "title": "AAAA (IPv6) naast A-records",
+    "title": "AAAA (IPv6) alongside A records",
     "excerpt": "AAAA (IPv6) naast A-records: steps in DNS management (client panel or Zone Editor) for aaaa, ipv6, naast.",
     "bodyHtml": "<p>For <strong>AAAA (IPv6) naast A-records</strong> follow a targeted checklist in DNS management (client panel or Zone Editor). Core themes: <strong>aaaa, ipv6, naast</strong>.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Access to DNS management (client panel or Zone Editor)</li>\n  <li>Focus of this article: <strong>aaaa, ipv6, naast</strong></li>\n  <li>Note of the current setting/status</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Sign in to DNS management (client panel or Zone Editor). Filter or search for parts that belong to <strong>aaaa, ipv6, naast</strong>.</li>\n  <li>Open DNS management for the correct domain; export/screenshot the zone.</li>\n  <li>Change only records that belong to <strong>aaaa</strong> / <strong>ipv6</strong> (A, AAAA, CNAME, MX, TXT, NS).</li>\n  <li>Save; wait for TTL/propagation.</li>\n  <li>Verify with an external lookup; then test site or mail.</li>\n  <li>Document what you changed around <strong>aaaa, ipv6, naast</strong> (old → new value) for support.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Result for <strong>aaaa, ipv6, naast</strong> matches “AAAA (IPv6) naast A-records”</li>\n  <li>No regression on a critical flow beside aaaa ipv6 naast a</li>\n  <li>External test or second browser/network confirms the result</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Work in small steps: get <strong>aaaa, ipv6, naast</strong> right first, then optional extras.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not blindly change production without a backup if <strong>aaaa, ipv6, naast</strong> touches login, DNS, mail or payments.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: DNS management (client panel or Zone Editor), backups, tickets.</p>",
-    "seoTitle": "AAAA (IPv6) naast A-records | TripleZero iT",
+    "seoTitle": "AAAA (IPv6) alongside A records | TripleZero iT",
     "seoDescription": "AAAA (IPv6) naast A-records: steps in DNS management (client panel or Zone Editor) for aaaa, ipv6, naast."
   }
 }

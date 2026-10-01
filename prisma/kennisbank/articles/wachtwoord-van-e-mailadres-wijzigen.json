@@ -9,10 +9,10 @@
     "seoDescription": "Wijzig het wachtwoord van een mailbox via E-mail Accounts → Change Password."
   },
   "en": {
-    "title": "Change password of email address",
+    "title": "Change email address password",
     "excerpt": "Change password of email address: steps in DirectAdmin for password, mailadres.",
     "bodyHtml": "<p>This guide covers <strong>Change password of email address</strong>. You work in DirectAdmin, focusing on <strong>password, mailadres</strong> — not unrelated side quests in other menus.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Access to DirectAdmin</li>\n  <li>Focus of this article: <strong>password, mailadres</strong></li>\n  <li>Recent backup or snapshot</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Open DirectAdmin and look specifically for settings around <strong>password, mailadres</strong>.</li>\n  <li>Select the correct domain/user account in DirectAdmin.</li>\n  <li>Open the module that fits <strong>password</strong> (Email, DNS, File Manager, SSL, Cron Jobs, MySQL or Installatron).</li>\n  <li>Note the current status, then apply only what “Change password of email address” requires around <strong>mailadres</strong>.</li>\n  <li>Save and test outside DirectAdmin (browser, webmail, DNS lookup or cron log).</li>\n  <li>Rotate credentials tied to <strong>password, mailadres</strong> if abuse was possible.</li>\n  <li>Schedule monitoring or a follow-up check.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Result for <strong>password, mailadres</strong> matches “Change password of email address”</li>\n  <li>No regression on a critical flow beside wachtwoord van e mailadres</li>\n  <li>External test or second browser/network confirms the result</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Work in small steps: get <strong>password, mailadres</strong> right first, then optional extras.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not blindly change production without a backup if <strong>password, mailadres</strong> touches login, DNS, mail or payments.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: DirectAdmin, backups, tickets.</p>",
-    "seoTitle": "Change password of email address | TripleZero iT",
+    "seoTitle": "Change email address password | TripleZero iT",
     "seoDescription": "Change password of email address: steps in DirectAdmin for password, mailadres."
   }
 }

@@ -1,5 +1,5 @@
 /** Bump when EH art files change so browsers drop the cached grainy copies. */
-const EH_ART_VERSION = "7";
+const EH_ART_VERSION = "8";
 
 /**
  * Extra Hosting serves smooth navy/light-blue product art.

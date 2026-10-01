@@ -9,10 +9,10 @@
     "seoDescription": "Wat heb ik nodig om professioneel te bloggen op een eigen domein: praktische handleiding in Berichten, met stappen, controles en wanneer je TripleZero iT support inschakelt."
   },
   "en": {
-    "title": "What heb I nodig om professioneel te bloggen on a eigen domain?",
+    "title": "What do I need to blog professionally on my own domain?",
     "excerpt": "What heb I nodig om professioneel te bloggen on a eigen domain: in the client panel under Domains — change, verify DNS/propagation.",
     "bodyHtml": "<p>“What heb I nodig om professioneel te bloggen on a eigen domain” is handled in the TripleZero iT client panel → Domains (WHOIS, NS, lock, auth code).</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Client panel login</li>\n  <li>Domain name</li>\n  <li>Auth code/ID check if needed</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Sign in → Domains → open the correct domain.</li>\n  <li>Perform the domain action (WHOIS, nameservers, lock, transfer code, contact).</li>\n  <li>Confirm and store any codes safely.</li>\n  <li>Check WHOIS/NS lookup until the change is visible.</li>\n  <li>Test website/mail only after expected propagation.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Panel status correct</li>\n  <li>External lookup shows new value</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Screenshot old nameservers before an NS change.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not share auth codes on public channels.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: DNS, SSL, transfers.</p>",
-    "seoTitle": "What heb I nodig om professioneel te bloggen on a eigen domain? | TripleZero iT",
+    "seoTitle": "What do I need to blog professionally on my own domain? | TripleZero iT",
     "seoDescription": "What heb I nodig om professioneel te bloggen on a eigen domain: in the client panel under Domains — change, verify DNS/propagation."
   }
 }
