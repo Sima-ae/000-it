@@ -1,7 +1,7 @@
 {
-  "cloud-hosting-enterprise": "/uploads/fixweb/vps-hosting-plus.png",
-  "cloud-hosting-professional": "/uploads/fixweb/vps-hosting-business.png",
-  "cloud-hosting-startup": "/uploads/fixweb/vps-hosting-basic.png",
+  "cloud-hosting-plus": "/uploads/fixweb/vps-hosting-plus.png",
+  "cloud-hosting-basic": "/uploads/fixweb/vps-hosting-business.png",
+  "cloud-hosting-start": "/uploads/fixweb/vps-hosting-basic.png",
   "double-support": "/uploads/fixweb/double-support.png",
   "double-support-yearly": "/uploads/fixweb/double-support.png",
   "premium-support": "/uploads/fixweb/premium-support.png",

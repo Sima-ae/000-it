@@ -129,6 +129,7 @@ export function ShopHostingSection({
           const featured =
             product.featured === true ||
             product.slug === "reseller-hosting-plus" ||
+            product.slug === "cloud-hosting-basic" ||
             (product.slug.endsWith("-business") &&
               !product.slug.startsWith("reseller-hosting-")) ||
             product.slug.endsWith("-professional");

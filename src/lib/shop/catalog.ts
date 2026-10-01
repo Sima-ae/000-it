@@ -64,9 +64,9 @@ export const SHARED_HOSTING_SLUG_ORDER = [
 ] as const;
 
 export const CLOUD_HOSTING_SLUG_ORDER = [
-  "cloud-hosting-startup",
-  "cloud-hosting-professional",
-  "cloud-hosting-enterprise",
+  "cloud-hosting-start",
+  "cloud-hosting-basic",
+  "cloud-hosting-plus",
 ] as const;
 
 export const RESELLER_HOSTING_SLUG_ORDER = [

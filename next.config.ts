@@ -133,6 +133,59 @@ const nextConfig: NextConfig = {
         destination: "/:locale/shop/double-support-yearly",
         permanent: true,
       },
+      // Cloud hosting renamed: startup/professional/enterprise → start/basic/plus
+      ...[
+        "diensten",
+        "services",
+        "dienstleistungen",
+        "servicios",
+        "servicos",
+        "servizi",
+        "ypiresies",
+        "uslugi",
+        "sluzby",
+        "szolgaltatasok",
+        "servicii",
+        "usluge",
+        "sherbime",
+        "paslaugos",
+        "ydelser",
+        "tjanster",
+        "tjenester",
+        "palvelut",
+        "poslugy",
+        "hizmetler",
+        "sherutim",
+        "khadamat",
+        "servisebi",
+        "tsarayutyunner",
+        "xidmetler",
+        "fuwu",
+        "sabisu",
+      ].flatMap((segment) =>
+        (
+          [
+            ["cloud-hosting-startup", "cloud-hosting-start"],
+            ["cloud-hosting-professional", "cloud-hosting-basic"],
+            ["cloud-hosting-enterprise", "cloud-hosting-plus"],
+          ] as const
+        ).map(([from, to]) => ({
+          source: `/:locale/${segment}/${from}`,
+          destination: `/:locale/${segment}/${to}`,
+          permanent: true,
+        })),
+      ),
+      ...(
+        [
+          ["cloud-hosting-startup", "cloud-hosting-start"],
+          ["cloud-hosting-professional", "cloud-hosting-basic"],
+          ["cloud-hosting-enterprise", "cloud-hosting-plus"],
+        ] as const
+      ).map(([from, to]) => ({
+        source: `/:locale/shop/${from}`,
+        destination: `/:locale/shop/${to}`,
+        permanent: true,
+      })),
       ...graphicDesignRedirects.map(([from, to]) => ({
         source: `/:locale/${from}`,
         destination: `/:locale/${to}`,
