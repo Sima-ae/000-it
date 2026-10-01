@@ -282,9 +282,9 @@ export const serviceCatalog: ServiceNavItem[] = [
     kind: "page",
     group: "wordpress",
     summary:
-      "Ongoing WordPress core, plugin and theme updates with backups, monitoring and care.",
+      "Scheduled WordPress core, plugin and theme updates with backups and monitoring — in Business, Business pro and Enterprise packages.",
     summaryNl:
-      "Doorlopend WordPress core-, plugin- en theme-updates met backups, monitoring en nazorg.",
+      "Geplande WordPress core-, plugin- en theme-updates met backups en monitoring — in pakketten Business, Business pro en Enterprise.",
   },
   {
     slug: "pro-support",

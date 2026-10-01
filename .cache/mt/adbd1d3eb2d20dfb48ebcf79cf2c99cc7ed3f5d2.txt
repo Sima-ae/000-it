@@ -1,0 +1,1 @@
+Slijedimo smirenu, ponovljivu taktu: sigurnosna kopija → ažuriranje prikazivanja ili prozora s malim prometom → dimni test (obrasci, odjava, prijava) → puštanje uživo → izvješće. Na Business pro i Enterprise možemo koristiti OTAP cjevovod tako da se promjene sigurno kreću od razvoja do proizvodnje.

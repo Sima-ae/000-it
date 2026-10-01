@@ -1,0 +1,1 @@
+Business — standard WordPress-side: kjerne-/plugin-/temaoppdateringer, hastighetsbehandling og valgfri grønn høyhastighetshosting. Ingen komplekse plugins, nettbutikk, flerspråklig eller multisite.

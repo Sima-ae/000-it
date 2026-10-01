@@ -1,0 +1,1 @@
+Föråldrade plugins och teman är den främsta orsaken till WordPress-hack, trasiga utcheckningar och plötsliga driftstopp. Professionellt underhåll håller din webbplats säker, snabb och kompatibel – utan att du behöver bo i wp-admin.

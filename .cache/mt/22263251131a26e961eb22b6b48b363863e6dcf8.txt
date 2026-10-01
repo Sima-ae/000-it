@@ -1,0 +1,1 @@
+Piano di rollback se un aggiornamento causa problemi

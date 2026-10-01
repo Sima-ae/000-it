@@ -1,0 +1,1 @@
+Les plugins et thèmes obsolètes sont la cause n°1 des piratages WordPress, des paiements interrompus et des temps d'arrêt soudains. Une maintenance professionnelle maintient votre site sécurisé, rapide et compatible, sans que vous ayez à vivre dans wp-admin.

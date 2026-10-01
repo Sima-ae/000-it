@@ -1,0 +1,1 @@
+Planul de rollback dacă o actualizare provoacă probleme

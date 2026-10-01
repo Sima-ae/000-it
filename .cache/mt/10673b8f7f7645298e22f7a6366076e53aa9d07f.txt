@@ -1,0 +1,1 @@
+Planirano ažuriranje WordPress jezgra, dodataka i tema sa rezervnim kopijama i praćenjem — u Business, Business pro i Enterprise paketima.

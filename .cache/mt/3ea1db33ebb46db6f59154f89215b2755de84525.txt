@@ -1,0 +1,1 @@
+Plan vraćanja unatrag ako ažuriranje uzrokuje probleme

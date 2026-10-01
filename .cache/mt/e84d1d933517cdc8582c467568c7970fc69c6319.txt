@@ -1,0 +1,1 @@
+Ne ndjekim një ritëm të qetë dhe të përsëritshëm: kopje rezervë → përditësim në skenë ose një dritare me trafik të ulët → test tymi (formularë, arkë, identifikim) → shkoni në transmetim → raport. Në Business pro dhe Enterprise ne mund të përdorim një tubacion OTAP në mënyrë që ndryshimet të kalojnë të sigurta nga zhvillimi në prodhim.

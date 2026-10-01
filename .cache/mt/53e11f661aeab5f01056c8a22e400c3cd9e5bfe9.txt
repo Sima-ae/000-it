@@ -1,0 +1,1 @@
+Aktualizácie jadra WordPress (testované pred uvedením do prevádzky)

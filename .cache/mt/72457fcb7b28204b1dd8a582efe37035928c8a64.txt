@@ -1,0 +1,1 @@
+Działamy w spokojnym, powtarzalnym rytmie: kopia zapasowa → aktualizacja na etapie testowym lub w oknie o niskim natężeniu ruchu → test dymny (formularze, realizacja transakcji, logowanie) → uruchomienie → raport. W wersji Business pro i Enterprise możemy korzystać z potoku OTAP, aby zmiany bezpiecznie przechodziły z etapu rozwoju do produkcji.

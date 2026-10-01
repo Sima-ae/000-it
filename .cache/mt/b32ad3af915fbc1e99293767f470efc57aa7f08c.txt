@@ -1,0 +1,1 @@
+Seguimos una cadencia tranquila y repetible: copia de seguridad → actualización en la puesta en escena o una ventana de poco tráfico → prueba de humo (formularios, pago, inicio de sesión) → puesta en marcha → informe. En Business pro y Enterprise podemos utilizar un canal OTAP para que los cambios pasen de forma segura del desarrollo a la producción.

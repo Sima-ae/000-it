@@ -1,0 +1,1 @@
+Business, Business pro ve Enterprise paketlerinde yedekleme ve izleme ile planlanmış WordPress çekirdek, eklenti ve tema güncellemeleri.

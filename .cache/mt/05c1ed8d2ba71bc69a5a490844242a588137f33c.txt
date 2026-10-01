@@ -1,0 +1,1 @@
+Dodržujeme klidnou, opakovatelnou kadenci: záloha → aktualizace na staging nebo okno s nízkou návštěvností → kouřový test (formuláře, pokladna, přihlášení) → spustit → hlásit. Na Business pro a Enterprise můžeme použít potrubí OTAP, takže změny bezpečně přecházejí z vývoje do výroby.

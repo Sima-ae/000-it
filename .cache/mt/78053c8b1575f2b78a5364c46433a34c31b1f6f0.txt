@@ -1,0 +1,1 @@
+Vi følger en rolig, repeterbar tråkkfrekvens: backup → oppdatering på iscenesettelse eller et lite trafikkert vindu → røyktest (skjemaer, utsjekking, pålogging) → live → rapport. På Business pro og Enterprise kan vi bruke en OTAP-pipeline slik at endringer går trygt fra utvikling til produksjon.

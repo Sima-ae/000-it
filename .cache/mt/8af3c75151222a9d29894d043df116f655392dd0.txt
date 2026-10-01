@@ -1,0 +1,1 @@
+Vanhentuneet laajennukset ja teemat ovat suurin syy WordPress-hakkerointiin, rikkinäisiin kassoihin ja äkillisiin käyttökatkoihin. Ammattimainen ylläpito pitää sivustosi turvallisena, nopeana ja yhteensopivana – ilman, että sinun tarvitsee elää wp-adminissa.

@@ -1,0 +1,1 @@
+Mes laikomės ramios, kartojamos kadencijos: atsarginis kopijavimas → atnaujinimas scenoje arba mažo srauto langas → dūmų testas (formos, atsiskaitymas, prisijungimas) → pradžia → pranešimas. „Business pro“ ir „Enterprise“ galime naudoti OTAP vamzdyną, todėl pakeitimai saugiai pereina nuo kūrimo iki gamybos.

@@ -27,14 +27,21 @@ export async function GET(
 ) {
   const { path: parts } = await context.params;
   const rel = parts.map((p) => decodeURIComponent(p)).join("/");
+  const notFound = () =>
+    new NextResponse("Not found", {
+      status: 404,
+      // Never let browsers/CDNs cache a missing upload — files appear after deploy.
+      headers: { "Cache-Control": "no-store" },
+    });
+
   if (!rel || rel.includes("..")) {
-    return new NextResponse("Not found", { status: 404 });
+    return notFound();
   }
 
   const abs = normalize(join(process.cwd(), "public", "uploads", rel));
   const root = normalize(join(process.cwd(), "public", "uploads"));
   if (!abs.startsWith(root) || !existsSync(abs) || !statSync(abs).isFile()) {
-    return new NextResponse("Not found", { status: 404 });
+    return notFound();
   }
 
   const ext = abs.slice(abs.lastIndexOf(".")).toLowerCase();

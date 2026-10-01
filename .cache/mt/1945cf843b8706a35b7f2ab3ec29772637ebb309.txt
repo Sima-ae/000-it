@@ -1,0 +1,1 @@
+Noudatamme rauhallista, toistettavaa tahtia: varmuuskopiointi → päivitys lavastusta tai vähäliikenteinen ikkuna → savutesti (lomakkeet, kassa, sisäänkirjautuminen) → julkaisu → raportti. Business Prossa ja Enterprisessa voimme käyttää OTAP-putkia, jotta muutokset siirtyvät turvallisesti kehityksestä tuotantoon.

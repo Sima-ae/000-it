@@ -1,0 +1,1 @@
+Mises à jour des plugins et des thèmes avec vérifications des conflits

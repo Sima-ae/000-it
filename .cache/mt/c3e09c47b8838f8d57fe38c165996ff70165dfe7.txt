@@ -1,0 +1,1 @@
+Urmăm o cadență calmă, repetabilă: backup → actualizare la punere în scenă sau o fereastră cu trafic redus → test de fum (formulare, checkout, autentificare) → go-live → raport. Pe Business pro și Enterprise putem folosi o conductă OTAP, astfel încât schimbările să treacă în siguranță de la dezvoltare la producție.

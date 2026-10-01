@@ -1,0 +1,1 @@
+Sakin, tekrarlanabilir bir tempo izliyoruz: yedekleme → aşamalandırmada güncelleme veya düşük trafikli bir pencere → duman testi (formlar, ödeme, oturum açma) → canlı yayına alma → rapor etme. Business pro ve Enterprise'da değişikliklerin geliştirme aşamasından üretim aşamasına güvenli bir şekilde geçmesi için bir OTAP hattı kullanabiliriz.

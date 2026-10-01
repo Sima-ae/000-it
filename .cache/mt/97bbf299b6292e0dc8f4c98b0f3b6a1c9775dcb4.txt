@@ -1,0 +1,1 @@
+Vi följer en lugn, repeterbar kadens: backup → uppdatering på iscensättning eller ett litet trafikfönster → röktest (formulär, kassa, inloggning) → startar → rapport. På Business pro och Enterprise kan vi använda en OTAP-pipeline så förändringar går säkert från utveckling till produktion.

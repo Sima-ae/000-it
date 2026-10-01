@@ -1,0 +1,1 @@
+Pratimo miran, ponovljiv ritam: rezervna kopija → ažuriranje o fazi ili prozoru sa malim prometom → dimni test (obrasci, odjava, prijava) → puštanje uživo → izvještaj. Na Business pro i Enterprise možemo koristiti OTAP cevovod tako da se promjene sigurno kreću od razvoja do proizvodnje.

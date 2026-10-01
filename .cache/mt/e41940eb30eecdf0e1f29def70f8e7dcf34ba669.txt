@@ -1,0 +1,1 @@
+Nyugodt, megismételhető ütemet követünk: mentés → frissítés a színpadra vagy alacsony forgalmú ablak → füstteszt (űrlapok, kijelentkezés, bejelentkezés) → élő adás → jelentés. A Business pro és az Enterprise rendszeren OTAP-folyamatot használhatunk, így a változások biztonságosan haladhatnak a fejlesztéstől a termelésig.

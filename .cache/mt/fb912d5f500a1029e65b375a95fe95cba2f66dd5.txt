@@ -1,0 +1,1 @@
+Zastarané doplnky a témy sú hlavnou príčinou hackingov WordPress, nefunkčných pokladní a náhlych výpadkov. Profesionálna údržba udržuje vašu stránku bezpečnú, rýchlu a kompatibilnú – bez toho, aby ste museli žiť v wp-admin.

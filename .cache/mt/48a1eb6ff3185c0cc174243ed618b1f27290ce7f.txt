@@ -1,0 +1,1 @@
+Biztonsági ellenőrzés minden frissítési ciklus után

@@ -1,0 +1,1 @@
+Seguimos uma cadência calma e repetível: backup → atualização no teste ou janela de baixo tráfego → teste de fumaça (formulários, checkout, login) → go-live → relatório. No Business pro e Enterprise podemos usar um pipeline OTAP para que as mudanças passem com segurança do desenvolvimento para a produção.

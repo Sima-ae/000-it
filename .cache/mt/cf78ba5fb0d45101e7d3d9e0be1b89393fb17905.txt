@@ -1,0 +1,1 @@
+Fájlok és adatbázisok biztonsági mentése a frissítés előtt

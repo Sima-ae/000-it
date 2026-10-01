@@ -1,0 +1,1 @@
+Wir folgen einem ruhigen, wiederholbaren Rhythmus: Backup → Update zum Staging oder einem Fenster mit geringem Datenverkehr → Rauchtest (Formulare, Checkout, Login) → Live-Schaltung → Bericht. Auf Business Pro und Enterprise können wir eine OTAP-Pipeline verwenden, damit Änderungen sicher von der Entwicklung in die Produktion gelangen.

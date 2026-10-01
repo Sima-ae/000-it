@@ -1,0 +1,1 @@
+Sikkerhetsskanning etter hver oppdateringssyklus

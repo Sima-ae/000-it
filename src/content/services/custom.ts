@@ -46,7 +46,7 @@ const customServices: Record<string, CustomService> = {
       "Keep your WordPress site healthy with scheduled core, plugin and theme updates, backups and proactive monitoring — in fixed Business, Business pro and Enterprise packages.",
     subtitleNl:
       "Houd jouw WordPress-site gezond met geplande core-, plugin- en theme-updates, backups en proactieve monitoring — in vaste pakketten Business, Business pro en Enterprise.",
-    image: "/uploads/freeweb/wordpress-maintenance-updates.png",
+    image: "/uploads/fixweb/wordpress-maintenance-updates.png",
     blocks: [
       h("Why maintenance matters"),
       p(

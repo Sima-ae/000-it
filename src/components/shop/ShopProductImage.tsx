@@ -43,9 +43,11 @@ export function ShopProductImage({
   const ehArt = brand.id === "extrahosting" && isFixwebProductArt(resolved);
   const branded = ehArt ? extrahostingFixwebArtSrc(resolved) : resolved;
   const [current, setCurrent] = useState(branded);
+  const [retried, setRetried] = useState(false);
 
   useEffect(() => {
     const next = resolveShopImageSrc(src);
+    setRetried(false);
     setCurrent(
       brand.id === "extrahosting" && isFixwebProductArt(next)
         ? extrahostingFixwebArtSrc(next)
@@ -77,6 +79,13 @@ export function ShopProductImage({
           resolved !== current
         ) {
           setCurrent(resolved);
+          return;
+        }
+        // Bust a stale cached 404 before giving up on product art.
+        if (!retried && isFixwebProductArt(current)) {
+          setRetried(true);
+          const bare = current.split("?")[0] ?? current;
+          setCurrent(`${bare}?v=${Date.now()}`);
           return;
         }
         if ((current.split("?")[0] ?? current) !== SHOP_IMAGE_FALLBACK) {

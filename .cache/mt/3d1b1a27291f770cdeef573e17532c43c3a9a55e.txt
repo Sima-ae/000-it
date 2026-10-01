@@ -1,0 +1,1 @@
+Riadime sa pokojnou, opakovateľnou kadenciou: záloha → aktualizácia pri inscenácii alebo okno s nízkou návštevnosťou → dymový test (formuláre, pokladňa, prihlásenie) → spustiť → správa. Na Business pro a Enterprise môžeme použiť OTAP pipeline, takže zmeny bezpečne prechádzajú z vývoja do výroby.

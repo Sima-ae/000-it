@@ -1,0 +1,1 @@
+Skanowanie bezpieczeństwa po każdym cyklu aktualizacji

@@ -183,7 +183,7 @@
       "wordpress-speed-optimization": "Optimisation de la vitesse WordPress",
       "wordpress-backup-hosting-migration": "Sauvegardes et migration",
       "wordpress-plugin-theme-installation": "Installation du plugin / thème WordPress",
-      "wordpress-maintenance-updates": "Free maintenance updates.",
+      "wordpress-maintenance-updates": "Maintenance et mises à jour",
       "pro-support": "Support simple",
       "double-support": "Support standard",
       "premium-support": "Assistance Premium",
@@ -194,7 +194,7 @@
       "php-web-development": "DÉVELOPPEMENT WEB",
       "nextjs-development": "Développement Next.js",
       "html-css-javascript": "HTML / CSS / JAVASCRIPT",
-      "website-maintenance": "Free maintenance updates.",
+      "website-maintenance": "Maintenance et mises à jour",
       "api-integrations": "Intégrations",
       "website-malware-removal": "Suppression des logiciels malveillants",
       "website-security": "Pare-feu, sécurité et SSL",
@@ -3766,7 +3766,7 @@
       "ai-consultancy": "Executive AI strategy, pilots and ROI frameworks.",
       "ai-in-wordpress": "Chatbots, content AI, automation and custom AI features built into your WordPress site.",
       "wordpress-beheer": "Expert WordPress care to keep your site running smoothly.",
-      "wordpress-maintenance-updates": "Ongoing WordPress core, plugin and theme updates with backups, monitoring and care.",
+      "wordpress-maintenance-updates": "Scheduled WordPress core, plugin and theme updates with backups and monitoring — in Business, Business pro and Enterprise packages.",
       "webdesign-support": "Custom websites and ongoing support for PHP, HTML, CSS, JavaScript and Next.js — not WordPress.",
       "custom-webdesign": "Pixel-sharp, conversion-focused websites built from scratch.",
       "php-web-development": "Robust PHP applications, APIs and legacy modernization.",
@@ -3816,7 +3816,7 @@
       "ai-consultancy": "Bestuursklare AI-strategie, pilots en ROI-frameworks.",
       "ai-in-wordpress": "Chatbots, content-AI, automatisering en maatwerk AI in jouw WordPress-website.",
       "wordpress-beheer": "Expert WordPress beheer zodat jouw site soepel blijft draaien.",
-      "wordpress-maintenance-updates": "Doorlopend WordPress core-, plugin- en theme-updates met backups, monitoring en nazorg.",
+      "wordpress-maintenance-updates": "Geplande WordPress core-, plugin- en theme-updates met backups en monitoring — in pakketten Business, Business pro en Enterprise.",
       "webdesign-support": "Maatwerk websites en doorlopende support voor PHP, HTML, CSS, JavaScript en Next.js — geen WordPress.",
       "custom-webdesign": "Pixel-scherpe, conversiegerichte websites vanaf nul gebouwd.",
       "php-web-development": "Robuuste PHP-applicaties, API’s en modernisering van legacy code.",
@@ -3858,7 +3858,6 @@
       "ai-consultancy": "Stratégie exécutive d'IA, pilotes et cadres de retour sur investissement.",
       "ai-in-wordpress": "Chatbots, IA de contenu, fonctionnalités d'automatisation et d'IA personnalisées intégrées à votre site WordPress.",
       "wordpress-beheer": "Assistance WordPress experte pour assurer le bon fonctionnement de votre site.",
-      "wordpress-maintenance-updates": "Mises à jour continues du noyau, des plugins et des thèmes WordPress avec sauvegardes, surveillance et entretien.",
       "ai-in-ecommerce": "IA pour les boutiques en ligne : assistants produits, recherche intelligente, aide au panier et automatisation axée sur la conversion.",
       "ai-in-website": "IA pour sites Web personnalisés : chat, prospects, recherche de connaissances et automatisation sur PHP, HTML/JS et Next.js.",
       "webdesign-support": "Sites Web personnalisés et prise en charge continue de PHP, HTML, CSS, JavaScript et Next.js – et non de WordPress.",
@@ -3892,7 +3891,8 @@
       "conversion-optimization": "CRO pour les atterrissages, les entonnoirs et les CTA : plus de demandes de renseignements et de ventes à partir du trafic que vous avez déjà.",
       "speed-optimization": "Des pages plus rapides et des Core Web Vitals plus puissants : une meilleure UX, un meilleur classement et une meilleure conversion entre les piles.",
       "analytics-optimization": "GA4, Search Console et des rapports clairs pour que vous sachiez ce qui génère des prospects et des revenus.",
-      "accessibility-optimization": "Améliorations basées sur les WCAG afin que davantage de personnes puissent utiliser votre site et que les moteurs de recherche le comprennent mieux."
+      "accessibility-optimization": "Améliorations basées sur les WCAG afin que davantage de personnes puissent utiliser votre site et que les moteurs de recherche le comprennent mieux.",
+      "wordpress-maintenance-updates": "Mises à jour programmées du noyau, des plugins et des thèmes WordPress avec sauvegardes et surveillance – dans les packages Business, Business pro et Enterprise."
     },
     "de": {
       "aeo-optimization": "Antwort-Engine-Optimierung für zitierfähige, antwortbereite Inhalte.",
@@ -3908,7 +3908,6 @@
       "ai-consultancy": "Executive AI-Strategie, Piloten und ROI-Frameworks.",
       "ai-in-wordpress": "Chatbots, Content-KI, Automatisierung und benutzerdefinierte KI-Funktionen sind in Ihre WordPress-Site integriert.",
       "wordpress-beheer": "Kompetenter WordPress-Betreuung, damit Ihre Website reibungslos funktioniert.",
-      "wordpress-maintenance-updates": "Laufende WordPress-Kern-, Plugin- und Theme-Updates mit Backups, Überwachung und Pflege.",
       "ai-in-ecommerce": "KI für Webshops: Produktassistenten, intelligente Suche, Warenkorbhilfe und konvertierungsorientierte Automatisierung.",
       "ai-in-website": "KI für benutzerdefinierte Websites – Chat, Leads, Wissenssuche und Automatisierung auf PHP, HTML/JS und Next.js.",
       "webdesign-support": "Benutzerdefinierte Websites und fortlaufende Unterstützung für PHP, HTML, CSS, JavaScript und Next.js – nicht WordPress.",
@@ -3942,7 +3941,8 @@
       "conversion-optimization": "CRO für Landings, Funnels und CTAs – mehr Anfragen und Verkäufe aus dem Traffic, den Sie bereits haben.",
       "speed-optimization": "Schnellere Seiten und stärkere Core Web Vitals – bessere UX, Rankings und Konvertierung über Stapel hinweg.",
       "analytics-optimization": "GA4, Search Console und klare Berichte, damit Sie wissen, was Leads und Umsatz antreibt.",
-      "accessibility-optimization": "WCAG-orientierte Verbesserungen, damit mehr Menschen Ihre Website nutzen können – und Suchmaschinen sie besser verstehen."
+      "accessibility-optimization": "WCAG-orientierte Verbesserungen, damit mehr Menschen Ihre Website nutzen können – und Suchmaschinen sie besser verstehen.",
+      "wordpress-maintenance-updates": "Geplante WordPress-Kern-, Plugin- und Theme-Updates mit Backups und Überwachung – in den Paketen Business, Business Pro und Enterprise."
     },
     "es": {
       "aeo-optimization": "Optimización del motor de respuesta para contenido citable y listo para responder.",
@@ -3958,7 +3958,6 @@
       "ai-consultancy": "Estrategia ejecutiva de IA, pilotos y marcos de retorno de la inversión.",
       "ai-in-wordpress": "Chatbots, contenido de IA, automatización y funciones de IA personalizadas integradas en su sitio de WordPress.",
       "wordpress-beheer": "Soporte experto de WordPress para mantener su sitio funcionando sin problemas.",
-      "wordpress-maintenance-updates": "Actualizaciones continuas del núcleo, complementos y temas de WordPress con copias de seguridad, monitoreo y cuidado.",
       "ai-in-ecommerce": "IA para tiendas web: asistentes de productos, búsqueda inteligente, ayuda con el carrito y automatización centrada en la conversión.",
       "ai-in-website": "IA para sitios web personalizados: chat, clientes potenciales, búsqueda de conocimientos y automatización en PHP, HTML/JS y Next.js.",
       "webdesign-support": "Sitios web personalizados y soporte continuo para PHP, HTML, CSS, JavaScript y Next.js, no WordPress.",
@@ -3992,7 +3991,8 @@
       "conversion-optimization": "CRO para aterrizajes, embudos y CTA: más consultas y ventas del tráfico que ya tiene.",
       "speed-optimization": "Páginas más rápidas y Core Web Vitals más potentes: mejor experiencia de usuario, clasificación y conversión entre pilas.",
       "analytics-optimization": "GA4, Search Console e informes claros para que sepas qué genera clientes potenciales e ingresos.",
-      "accessibility-optimization": "Mejoras orientadas a las WCAG para que más personas puedan utilizar su sitio y los motores de búsqueda lo entiendan mejor."
+      "accessibility-optimization": "Mejoras orientadas a las WCAG para que más personas puedan utilizar su sitio y los motores de búsqueda lo entiendan mejor.",
+      "wordpress-maintenance-updates": "Actualizaciones programadas del núcleo, complementos y temas de WordPress con copias de seguridad y monitoreo, en paquetes Business, Business pro y Enterprise."
     },
     "pt": {
       "aeo-optimization": "Otimização do mecanismo de resposta para conteúdo citável e pronto para resposta.",
@@ -4008,7 +4008,6 @@
       "ai-consultancy": "Estratégia executiva de IA, pilotos e estruturas de ROI.",
       "ai-in-wordpress": "Chatbots, IA de conteúdo, automação e recursos personalizados de IA integrados ao seu site WordPress.",
       "wordpress-beheer": "Suporte especializado em WordPress para manter seu site funcionando perfeitamente.",
-      "wordpress-maintenance-updates": "Atualizações contínuas do núcleo do WordPress, plugins e temas com backups, monitoramento e cuidados.",
       "ai-in-ecommerce": "IA para lojas virtuais: assistentes de produto, pesquisa inteligente, ajuda de carrinho e automação focada em conversão.",
       "ai-in-website": "IA para sites personalizados — chat, leads, busca de conhecimento e automação em PHP, HTML/JS e Next.js.",
       "webdesign-support": "Sites personalizados e suporte contínuo para PHP, HTML, CSS, JavaScript e Next.js – não WordPress.",
@@ -4042,7 +4041,8 @@
       "conversion-optimization": "CRO para landings, funis e CTAs – mais consultas e vendas com o tráfego que você já possui.",
       "speed-optimization": "Páginas mais rápidas e Core Web Vitals mais fortes – melhor UX, classificações e conversão entre pilhas.",
       "analytics-optimization": "GA4, Search Console e relatórios claros para que você saiba o que gera leads e receita.",
-      "accessibility-optimization": "Melhorias voltadas para as WCAG para que mais pessoas possam usar seu site - e os mecanismos de pesquisa o entendam melhor."
+      "accessibility-optimization": "Melhorias voltadas para as WCAG para que mais pessoas possam usar seu site - e os mecanismos de pesquisa o entendam melhor.",
+      "wordpress-maintenance-updates": "Atualizações agendadas do núcleo, plugin e tema do WordPress com backups e monitoramento – nos pacotes Business, Business pro e Enterprise."
     },
     "it": {
       "aeo-optimization": "Ottimizzazione del motore di risposta per contenuti citabili e pronti a rispondere.",
@@ -4058,7 +4058,6 @@
       "ai-consultancy": "Strategia esecutiva di intelligenza artificiale, progetti pilota e strutture ROI.",
       "ai-in-wordpress": "Chatbot, intelligenza artificiale dei contenuti, automazione e funzionalità IA personalizzate integrate nel tuo sito WordPress.",
       "wordpress-beheer": "Supporto WordPress esperto per mantenere il tuo sito funzionante senza intoppi.",
-      "wordpress-maintenance-updates": "Aggiornamenti continui del core, dei plugin e dei temi di WordPress con backup, monitoraggio e cura.",
       "ai-in-ecommerce": "AI per negozi online: assistenti prodotto, ricerca intelligente, aiuto nel carrello e automazione focalizzata sulla conversione.",
       "ai-in-website": "Intelligenza artificiale per siti Web personalizzati: chat, lead, ricerca di conoscenze e automazione su PHP, HTML/JS e Next.js.",
       "webdesign-support": "Siti Web personalizzati e supporto continuo per PHP, HTML, CSS, JavaScript e Next.js, non per WordPress.",
@@ -4092,7 +4091,8 @@
       "conversion-optimization": "CRO per landing, funnel e CTA: più richieste e vendite dal traffico che già hai.",
       "speed-optimization": "Pagine più veloci e Core Web Vitals più forti: UX, classifiche e conversioni tra stack migliori.",
       "analytics-optimization": "GA4, Search Console e report chiari per sapere cosa genera lead ed entrate.",
-      "accessibility-optimization": "Miglioramenti incentrati sulle WCAG in modo che più persone possano utilizzare il tuo sito e i motori di ricerca lo comprendano meglio."
+      "accessibility-optimization": "Miglioramenti incentrati sulle WCAG in modo che più persone possano utilizzare il tuo sito e i motori di ricerca lo comprendano meglio.",
+      "wordpress-maintenance-updates": "Aggiornamenti pianificati del core, dei plugin e dei temi di WordPress con backup e monitoraggio — nei pacchetti Business, Business pro ed Enterprise."
     },
     "el": {
       "aeo-optimization": "Answer Engine Optimization για περιεχόμενο με δυνατότητα αναφοράς, έτοιμο για απαντήσεις.",
@@ -4108,7 +4108,6 @@
       "ai-consultancy": "Εκτελεστική στρατηγική AI, πιλοτικά και πλαίσια απόδοσης επένδυσης.",
       "ai-in-wordpress": "Chatbots, τεχνητής νοημοσύνης περιεχομένου, αυτοματισμός και προσαρμοσμένες δυνατότητες AI ενσωματωμένες στον ιστότοπό σας στο WordPress.",
       "wordpress-beheer": "Εξειδικευμένη υποστήριξη WordPress για την ομαλή λειτουργία του ιστότοπού σας.",
-      "wordpress-maintenance-updates": "Συνεχείς ενημερώσεις πυρήνα, προσθηκών και θεμάτων WordPress με αντίγραφα ασφαλείας, παρακολούθηση και φροντίδα.",
       "ai-in-ecommerce": "AI για καταστήματα ιστού: βοηθοί προϊόντων, έξυπνη αναζήτηση, βοήθεια στο καλάθι και αυτοματισμός με επίκεντρο τις μετατροπές.",
       "ai-in-website": "AI για προσαρμοσμένους ιστότοπους — συνομιλία, υποψήφιοι πελάτες, αναζήτηση γνώσης και αυτοματοποίηση σε PHP, HTML/JS και Next.js.",
       "webdesign-support": "Προσαρμοσμένοι ιστότοποι και συνεχής υποστήριξη για PHP, HTML, CSS, JavaScript και Next.js — όχι WordPress.",
@@ -4142,7 +4141,8 @@
       "conversion-optimization": "CRO για προσγειώσεις, διοχετεύσεις και CTA — περισσότερα ερωτήματα και πωλήσεις από την επισκεψιμότητα που έχετε ήδη.",
       "speed-optimization": "Πιο γρήγορες σελίδες και ισχυρότερα Core Web Vitals — καλύτερο UX, κατατάξεις και μετατροπές σε στοίβες.",
       "analytics-optimization": "GA4, Search Console και σαφείς αναφορές, ώστε να γνωρίζετε τι οδηγεί σε δυνητικούς πελάτες και έσοδα.",
-      "accessibility-optimization": "Βελτιώσεις με γνώμονα το WCAG, ώστε περισσότεροι άνθρωποι να μπορούν να χρησιμοποιούν τον ιστότοπό σας — και οι μηχανές αναζήτησης να τον κατανοούν καλύτερα."
+      "accessibility-optimization": "Βελτιώσεις με γνώμονα το WCAG, ώστε περισσότεροι άνθρωποι να μπορούν να χρησιμοποιούν τον ιστότοπό σας — και οι μηχανές αναζήτησης να τον κατανοούν καλύτερα.",
+      "wordpress-maintenance-updates": "Προγραμματισμένες ενημερώσεις πυρήνα, προσθηκών και θεμάτων WordPress με αντίγραφα ασφαλείας και παρακολούθηση — σε πακέτα Business, Business pro και Enterprise."
     },
     "pl": {
       "aeo-optimization": "Optymalizacja silnika odpowiedzi pod kątem treści, które można cytować i gotowych odpowiedzieć.",
@@ -4158,7 +4158,6 @@
       "ai-consultancy": "Strategia wykonawcza AI, pilotaże i ramy ROI.",
       "ai-in-wordpress": "Chatboty, sztuczna inteligencja treści, automatyzacja i niestandardowe funkcje sztucznej inteligencji wbudowane w Twoją witrynę WordPress.",
       "wordpress-beheer": "Profesjonalna obsługa WordPressa, aby Twoja witryna działała płynnie.",
-      "wordpress-maintenance-updates": "Bieżące aktualizacje rdzenia, wtyczek i motywów WordPress z kopiami zapasowymi, monitorowaniem i opieką.",
       "ai-in-ecommerce": "AI dla sklepów internetowych: asystenci produktu, inteligentne wyszukiwanie, pomoc w koszyku i automatyzacja zorientowana na konwersję.",
       "ai-in-website": "AI dla niestandardowych stron internetowych — czat, leady, wyszukiwanie wiedzy i automatyzacja w PHP, HTML/JS i Next.js.",
       "webdesign-support": "Niestandardowe strony internetowe i ciągłe wsparcie dla PHP, HTML, CSS, JavaScript i Next.js — nie WordPress.",
@@ -4192,7 +4191,8 @@
       "conversion-optimization": "CRO dla lądowań, lejków i CTA — więcej zapytań i sprzedaży dzięki ruchowi, który już masz.",
       "speed-optimization": "Szybsze strony i silniejsze podstawowe wskaźniki internetowe — lepszy UX, rankingi i konwersja na różnych stosach.",
       "analytics-optimization": "GA4, Search Console i przejrzyste raporty, dzięki którym wiesz, co napędza potencjalnych klientów i przychody.",
-      "accessibility-optimization": "Ulepszenia zgodne z WCAG, dzięki którym więcej osób może korzystać z Twojej witryny, a wyszukiwarki lepiej ją rozumieją."
+      "accessibility-optimization": "Ulepszenia zgodne z WCAG, dzięki którym więcej osób może korzystać z Twojej witryny, a wyszukiwarki lepiej ją rozumieją.",
+      "wordpress-maintenance-updates": "Zaplanowane aktualizacje rdzenia, wtyczek i motywów WordPress z kopiami zapasowymi i monitorowaniem – w pakietach Business, Business pro i Enterprise."
     },
     "cs": {
       "aeo-optimization": "Answer Engine Optimization pro citovatelný obsah připravený k odpovědím.",
@@ -4208,7 +4208,6 @@
       "ai-consultancy": "Výkonná AI strategie, pilotní verze a rámce ROI.",
       "ai-in-wordpress": "Chatboti, AI obsahu, automatizace a vlastní funkce AI zabudované do vašeho webu WordPress.",
       "wordpress-beheer": "Odborná podpora WordPress, aby váš web fungoval hladce.",
-      "wordpress-maintenance-updates": "Průběžné aktualizace jádra, pluginů a motivů WordPress se zálohováním, monitorováním a péčí.",
       "ai-in-ecommerce": "Umělá inteligence pro internetové obchody: produktoví asistenti, chytré vyhledávání, nápověda k košíku a automatizace zaměřená na konverze.",
       "ai-in-website": "AI pro vlastní webové stránky – chat, potenciální zákazníci, vyhledávání znalostí a automatizace na PHP, HTML/JS a Next.js.",
       "webdesign-support": "Vlastní webové stránky a pokračující podpora pro PHP, HTML, CSS, JavaScript a Next.js – nikoli WordPress.",
@@ -4242,7 +4241,8 @@
       "conversion-optimization": "CRO pro přistání, cesty a výzvy k akci – více poptávek a prodejů z provozu, který již máte.",
       "speed-optimization": "Rychlejší stránky a silnější Core Web Vitals — lepší uživatelské prostředí, hodnocení a konverze napříč zásobníky.",
       "analytics-optimization": "GA4, Search Console a přehledné přehledy, abyste věděli, co vám přináší potenciální zákazníky a tržby.",
-      "accessibility-optimization": "Vylepšení zaměřená na WCAG, aby vaše stránky mohlo používat více lidí – a vyhledávače jim lépe porozuměly."
+      "accessibility-optimization": "Vylepšení zaměřená na WCAG, aby vaše stránky mohlo používat více lidí – a vyhledávače jim lépe porozuměly.",
+      "wordpress-maintenance-updates": "Plánované aktualizace jádra WordPress, pluginů a motivů se zálohováním a monitorováním – v balíčcích Business, Business pro a Enterprise."
     },
     "sk": {
       "aeo-optimization": "Optimalizácia vyhľadávacieho nástroja pre citovateľný obsah pripravený na odpovede.",
@@ -4258,7 +4258,6 @@
       "ai-consultancy": "Výkonná stratégia AI, pilotné programy a rámce návratnosti investícií.",
       "ai-in-wordpress": "Chatboty, umelá inteligencia obsahu, automatizácia a vlastné funkcie AI zabudované do vášho webu WordPress.",
       "wordpress-beheer": "Odborná podpora WordPress, aby vaša stránka fungovala hladko.",
-      "wordpress-maintenance-updates": "Prebiehajúce aktualizácie jadra, doplnkov a tém WordPress so zálohovaním, monitorovaním a starostlivosťou.",
       "ai-in-ecommerce": "Umelá inteligencia pre internetové obchody: produktoví asistenti, inteligentné vyhľadávanie, pomoc s košíkom a automatizácia zameraná na konverziu.",
       "ai-in-website": "AI pre vlastné webové stránky – chat, potenciálni zákazníci, vyhľadávanie znalostí a automatizácia na PHP, HTML/JS a Next.js.",
       "webdesign-support": "Vlastné webové stránky a nepretržitá podpora pre PHP, HTML, CSS, JavaScript a Next.js – nie WordPress.",
@@ -4292,7 +4291,8 @@
       "conversion-optimization": "CRO pre pristátia, zúženia a CTA – viac dopytov a predajov z návštevnosti, ktorú už máte.",
       "speed-optimization": "Rýchlejšie stránky a silnejšie Core Web Vitals — lepšie UX, hodnotenia a konverzie naprieč zásobníkmi.",
       "analytics-optimization": "GA4, Search Console a prehľadné prehľady, aby ste vedeli, čo prináša potenciálnych zákazníkov a výnosy.",
-      "accessibility-optimization": "Vylepšenia zamerané na WCAG, aby vašu stránku mohlo používať viac ľudí – a vyhľadávače jej lepšie porozumeli."
+      "accessibility-optimization": "Vylepšenia zamerané na WCAG, aby vašu stránku mohlo používať viac ľudí – a vyhľadávače jej lepšie porozumeli.",
+      "wordpress-maintenance-updates": "Plánované aktualizácie jadra, doplnkov a tém WordPress so zálohovaním a monitorovaním – v balíkoch Business, Business pro a Enterprise."
     },
     "hu": {
       "aeo-optimization": "Answer Engine Optimization az idézhető, válaszkész tartalomhoz.",
@@ -4308,7 +4308,6 @@
       "ai-consultancy": "Executive AI stratégia, pilotok és ROI keretrendszerek.",
       "ai-in-wordpress": "Chatbotok, tartalmi mesterséges intelligencia, automatizálás és egyéni mesterséges intelligencia funkciók a WordPress-webhelyébe építettek.",
       "wordpress-beheer": "Szakértő WordPress támogatás a webhely zökkenőmentes működéséhez.",
-      "wordpress-maintenance-updates": "Folyamatos WordPress mag-, bővítmény- és témafrissítések biztonsági mentésekkel, figyeléssel és gondozással.",
       "ai-in-ecommerce": "AI webáruházakhoz: termékasszisztensek, intelligens keresés, kosársúgó és konverzióközpontú automatizálás.",
       "ai-in-website": "AI egyedi webhelyekhez – csevegés, leadek, tudáskeresés és automatizálás PHP-n, HTML/JS-en és Next.js-en.",
       "webdesign-support": "Egyéni webhelyek és a PHP, HTML, CSS, JavaScript és Next.js folyamatos támogatása – nem a WordPress.",
@@ -4342,7 +4341,8 @@
       "conversion-optimization": "CRO a leszállásokhoz, tölcsérekhez és CTA-khoz – több megkeresés és értékesítés a már meglévő forgalomból.",
       "speed-optimization": "Gyorsabb oldalak és erősebb Core Web Vitals – jobb felhasználói élmény, rangsorok és konverzió a halmok között.",
       "analytics-optimization": "GA4, Search Console és egyértelmű jelentések, hogy tudja, mi vezet a potenciális ügyfelekhez és a bevételhez.",
-      "accessibility-optimization": "WCAG-szemléletű fejlesztések, így többen használhatják webhelyét – és a keresőmotorok jobban megértik."
+      "accessibility-optimization": "WCAG-szemléletű fejlesztések, így többen használhatják webhelyét – és a keresőmotorok jobban megértik.",
+      "wordpress-maintenance-updates": "Ütemezett WordPress mag-, bővítmény- és témafrissítések biztonsági mentésekkel és felügyelettel – Business, Business pro és Enterprise csomagokban."
     },
     "ro": {
       "aeo-optimization": "Optimizarea motorului de răspunsuri pentru conținut citabil, gata de răspuns.",
@@ -4358,7 +4358,6 @@
       "ai-consultancy": "Strategie executivă de inteligență artificială, piloți și cadre de rentabilitate a investiției.",
       "ai-in-wordpress": "Chatbot, AI de conținut, automatizare și caracteristici personalizate AI încorporate în site-ul dvs. WordPress.",
       "wordpress-beheer": "Suport expert WordPress pentru a vă menține site-ul să funcționeze fără probleme.",
-      "wordpress-maintenance-updates": "Actualizări continue de bază, plugin și teme WordPress cu copii de rezervă, monitorizare și îngrijire.",
       "ai-in-ecommerce": "AI pentru magazine online: asistenți de produs, căutare inteligentă, ajutor pentru coș și automatizare axată pe conversie.",
       "ai-in-website": "AI pentru site-uri web personalizate — chat, clienți potențiali, căutare de cunoștințe și automatizare pe PHP, HTML/JS și Next.js.",
       "webdesign-support": "Site-uri web personalizate și suport permanent pentru PHP, HTML, CSS, JavaScript și Next.js - nu WordPress.",
@@ -4392,7 +4391,8 @@
       "conversion-optimization": "CRO pentru aterizări, pâlnii și CTA - mai multe întrebări și vânzări din traficul pe care îl aveți deja.",
       "speed-optimization": "Pagini mai rapide și Core Web Vitals mai puternice — UX, clasamente și conversie mai bune în stive.",
       "analytics-optimization": "GA4, Search Console și raportare clară, astfel încât să știți ce generează clienți potențiali și venituri.",
-      "accessibility-optimization": "Îmbunătățiri bazate pe WCAG, astfel încât mai mulți oameni să vă poată folosi site-ul - iar motoarele de căutare îl înțeleg mai bine."
+      "accessibility-optimization": "Îmbunătățiri bazate pe WCAG, astfel încât mai mulți oameni să vă poată folosi site-ul - iar motoarele de căutare îl înțeleg mai bine.",
+      "wordpress-maintenance-updates": "Actualizări programate de bază, plugin și teme WordPress cu backup și monitorizare — în pachetele Business, Business pro și Enterprise."
     },
     "bg": {
       "aeo-optimization": "Оптимизация на Answer Engine за цитируемо, готово за отговор съдържание.",
@@ -4408,7 +4408,6 @@
       "ai-consultancy": "Изпълнителна AI стратегия, пилоти и рамки за възвръщаемост на инвестициите.",
       "ai-in-wordpress": "Чатботове, AI за съдържание, автоматизация и персонализирани AI функции, вградени във вашия WordPress сайт.",
       "wordpress-beheer": "Експертна поддръжка на WordPress, за да поддържа вашия сайт да работи безпроблемно.",
-      "wordpress-maintenance-updates": "Текущи актуализации на ядрото, плъгина и темата на WordPress с резервни копия, наблюдение и грижа.",
       "ai-in-ecommerce": "AI за уеб магазини: асистенти за продукти, интелигентно търсене, помощ за колички и автоматизация, фокусирана върху преобразуването.",
       "ai-in-website": "AI за персонализирани уебсайтове — чат, потенциални клиенти, търсене на знания и автоматизация на PHP, HTML/JS и Next.js.",
       "webdesign-support": "Персонализирани уебсайтове и текуща поддръжка за PHP, HTML, CSS, JavaScript и Next.js — не WordPress.",
@@ -4442,7 +4441,8 @@
       "conversion-optimization": "CRO за полети, фунии и CTA — повече запитвания и продажби от трафика, който вече имате.",
       "speed-optimization": "По-бързи страници и по-силни Core Web Vitals — по-добър потребителски интерфейс, класиране и преобразуване в стекове.",
       "analytics-optimization": "GA4, Search Console и ясно отчитане, така че да знаете какво стимулира потенциални клиенти и приходи.",
-      "accessibility-optimization": "Подобрения, ориентирани към WCAG, така че повече хора да могат да използват вашия сайт — и търсачките да го разбират по-добре."
+      "accessibility-optimization": "Подобрения, ориентирани към WCAG, така че повече хора да могат да използват вашия сайт — и търсачките да го разбират по-добре.",
+      "wordpress-maintenance-updates": "Планирани актуализации на ядрото, плъгина и темата на WordPress с архивиране и наблюдение — в пакети Business, Business pro и Enterprise."
     },
     "hr": {
       "aeo-optimization": "Answer Engine Optimization za sadržaj spreman za citiranje.",
@@ -4458,7 +4458,6 @@
       "ai-consultancy": "Izvršna strategija umjetne inteligencije, piloti i okviri povrata ulaganja.",
       "ai-in-wordpress": "Chatbotovi, AI sadržaj, automatizacija i prilagođene AI značajke ugrađene je vašu WordPress stranicu.",
       "wordpress-beheer": "Stručna podrška za WordPress kako bi vaše web mjesto radilo glatko.",
-      "wordpress-maintenance-updates": "Stalna ažuriranja jezgre, dodataka i tema WordPressa sa sigurnosnim kopijama, nadzorom i brigom.",
       "ai-in-ecommerce": "AI za web trgovine: pomoćnici za proizvode, pametno pretraživanje, pomoć je košaricama i automatizacija usmjerena na pretvorbu.",
       "ai-in-website": "AI za prilagođene web stranice — chat, potencijalni klijenti, pretraživanje znanja i automatizacija na PHP, HTML/JS i Next.js.",
       "webdesign-support": "Prilagođene web stranice i stalna podrška za PHP, HTML, CSS, JavaScript i Next.js — ne za WordPress.",
@@ -4492,7 +4491,8 @@
       "conversion-optimization": "CRO za landinge, funnels i CTAs — više upita i prodaje iz prometa koji već imate.",
       "speed-optimization": "Brže stranice i jači Core Web Vitals — bolji korisnički doživljaj, rangiranje i pretvorba na nizovima.",
       "analytics-optimization": "GA4, Search Console i jasno izvješćivanje kako biste znali što privlači potencijalne kupce i prihod.",
-      "accessibility-optimization": "Poboljšanja usmjerena na WCAG tako da više ljudi može koristiti vašu stranicu — a tražilice je bolje razumiju."
+      "accessibility-optimization": "Poboljšanja usmjerena na WCAG tako da više ljudi može koristiti vašu stranicu — a tražilice je bolje razumiju.",
+      "wordpress-maintenance-updates": "Planirana ažuriranja jezgre, dodataka i tema WordPressa sa sigurnosnim kopijama i nadzorom — u paketima Business, Business pro i Enterprise."
     },
     "sr": {
       "aeo-optimization": "Оптимизација мотора за одговоре за садржај који се може цитирати, спреман за одговоре.",
@@ -4536,13 +4536,13 @@
       "ai-consultancy": "Извршна стратегија вештачке интелигенције, пилоти и оквири за повраћај улагања.",
       "ai-in-wordpress": "Ботови за ћаскање, АИ садржаја, аутоматизација и прилагођене АИ функције уграђене у вашу ВордПресс локацију.",
       "wordpress-beheer": "Стручна подршка за ВордПресс да би ваша веб локација радила несметано.",
-      "wordpress-maintenance-updates": "Стално ажурирање језгра ВордПресс-а, додатака и тема са резервним копијама, праћењем и бригом.",
       "text-optimization": "Оштрија веб копија: јаснији наслови, јаче странице и формулације усмерене на конверзију које подржавају СЕО, АЕО и УКС.",
       "ecommerce-seo": "Производ, категорија и технички СЕО за веб продавнице — више органског саобраћаја и боље квалификованих купаца.",
       "conversion-optimization": "ЦРО за слетања, токове и ЦТА-ове — више упита и продаја из саобраћаја који већ имате.",
       "speed-optimization": "Брже странице и јачи основни показатељи за веб — бољи кориснички доживљај, рангирање и конверзија у низовима.",
       "analytics-optimization": "ГА4, Сеарцх Цонсоле и јасно извештавање како бисте знали шта покреће потенцијалне клијенте и приход.",
-      "accessibility-optimization": "Побољшања усмерена на ВЦАГ тако да више људи може да користи вашу веб локацију — а претраживачи је боље разумеју."
+      "accessibility-optimization": "Побољшања усмерена на ВЦАГ тако да више људи може да користи вашу веб локацију — а претраживачи је боље разумеју.",
+      "wordpress-maintenance-updates": "Планирано ажурирање ВордПресс језгра, додатака и тема са резервним копијама и надгледањем — у Бусинесс, Бусинесс про и Ентерприсе пакетима."
     },
     "bs": {
       "aeo-optimization": "Answer Engine Optimizacija za sadržaj koji se može citirati, spreman za odgovore.",
@@ -4558,7 +4558,6 @@
       "ai-consultancy": "Izvršna AI strategija, piloti i okviri ROI.",
       "ai-in-wordpress": "Chatbotovi, AI sadržaja, automatizacija i prilagođene AI funkcije ugrađene je vašu WordPress stranicu.",
       "wordpress-beheer": "Stručna podrška za WordPress za neometano funkcionisanje vaše stranice.",
-      "wordpress-maintenance-updates": "Kontinuirano ažuriranje jezgra WordPressa, dodataka i tema sa rezervnim kopijama, praćenjem i brigom.",
       "ai-in-ecommerce": "AI za web trgovine: pomoćnici za proizvode, pametna pretraga, pomoć je kolicima i automatizacija usmjerena na konverziju.",
       "ai-in-website": "AI za prilagođene web stranice — chat, potencijalni klijenti, pretraživanje znanja i automatizacija na PHP, HTML/JS i Next.js.",
       "webdesign-support": "Prilagođene web stranice i stalna podrška za PHP, HTML, CSS, JavaScript i Next.js — ne za WordPress.",
@@ -4592,7 +4591,8 @@
       "conversion-optimization": "CRO za landinge, tokove i CTA-ove — više upita i prodaja iz prometa koji već imate.",
       "speed-optimization": "Brže stranice i jači Core Web Vitals — bolji UX, rangiranje i konverzija u nizovima.",
       "analytics-optimization": "GA4, Search Console i jasno izvještavanje kako biste znali šta pokreće potencijalne klijente i prihod.",
-      "accessibility-optimization": "Poboljšanja usmjerena na WCAG tako da više ljudi može koristiti vašu web-lokaciju — a pretraživači je bolje razumiju."
+      "accessibility-optimization": "Poboljšanja usmjerena na WCAG tako da više ljudi može koristiti vašu web-lokaciju — a pretraživači je bolje razumiju.",
+      "wordpress-maintenance-updates": "Planirano ažuriranje WordPress jezgra, dodataka i tema sa rezervnim kopijama i praćenjem — u Business, Business pro i Enterprise paketima."
     },
     "cnr": {
       "aeo-optimization": "Оптимизација мотора за одговоре за садржај који се може цитирати, спреман за одговоре.",
@@ -4608,7 +4608,6 @@
       "ai-consultancy": "Извршна стратегија вештачке интелигенције, пилоти и оквири за повраћај улагања.",
       "ai-in-wordpress": "Ботови за ћаскање, АИ садржаја, аутоматизација и прилагођене АИ функције уграђене у вашу ВордПресс локацију.",
       "wordpress-beheer": "Стручна подршка за ВордПресс да би ваша веб локација радила несметано.",
-      "wordpress-maintenance-updates": "Стално ажурирање језгра ВордПресс-а, додатака и тема са резервним копијама, праћењем и бригом.",
       "ai-in-ecommerce": "АИ за веб продавнице: помоћници за производе, паметна претрага, помоћ у колицима и аутоматизација усмерена на конверзију.",
       "ai-in-website": "АИ за прилагођене веб странице — ћаскање, потенцијални клијенти, претрага знања и аутоматизација на ПХП-у, ХТМЛ/ЈС и Нект.јс.",
       "webdesign-support": "Прилагођене веб странице и стална подршка за ПХП, ХТМЛ, ЦСС, ЈаваСцрипт и Нект.јс — не за ВордПресс.",
@@ -4642,7 +4641,8 @@
       "conversion-optimization": "ЦРО за слетања, токове и ЦТА-ове — више упита и продаја из саобраћаја који већ имате.",
       "speed-optimization": "Брже странице и јачи основни показатељи за веб — бољи кориснички доживљај, рангирање и конверзија у низовима.",
       "analytics-optimization": "ГА4, Сеарцх Цонсоле и јасно извештавање како бисте знали шта покреће потенцијалне клијенте и приход.",
-      "accessibility-optimization": "Побољшања усмерена на ВЦАГ тако да више људи може да користи вашу веб локацију — а претраживачи је боље разумеју."
+      "accessibility-optimization": "Побољшања усмерена на ВЦАГ тако да више људи може да користи вашу веб локацију — а претраживачи је боље разумеју.",
+      "wordpress-maintenance-updates": "Планирано ажурирање ВордПресс језгра, додатака и тема са резервним копијама и надгледањем — у Бусинесс, Бусинесс про и Ентерприсе пакетима."
     },
     "sq": {
       "aeo-optimization": "Përgjigju Optimizimit të Motorit për përmbajtje të citueshme dhe të gatshme për përgjigje.",
@@ -4658,7 +4658,6 @@
       "ai-consultancy": "Strategjia ekzekutive e AI, pilotët dhe kornizat e ROI.",
       "ai-in-wordpress": "Chatbots, përmbajtje AI, automatizimi dhe veçori të personalizuara të AI të integruara në faqen tuaj të WordPress.",
       "wordpress-beheer": "Mbështetje eksperte e WordPress për të mbajtur faqen tuaj të funksionojë pa probleme.",
-      "wordpress-maintenance-updates": "Përditësimet e vazhdueshme të bërthamës, shtojcave dhe temave të WordPress me kopje rezervë, monitorim dhe kujdes.",
       "ai-in-ecommerce": "AI për dyqanet në internet: asistentët e produkteve, kërkimi inteligjent, ndihma e karrocave dhe automatizimi i fokusuar në konvertim.",
       "ai-in-website": "Inteligjenca artificiale për faqet e internetit të personalizuara - biseda, drejtime, kërkimi i njohurive dhe automatizimi në PHP, HTML/JS dhe Next.js.",
       "webdesign-support": "Uebfaqe të personalizuara dhe mbështetje e vazhdueshme për PHP, HTML, CSS, JavaScript dhe Next.js – jo WordPress.",
@@ -4692,7 +4691,8 @@
       "conversion-optimization": "CRO për ulje, gypa dhe CTA - më shumë pyetje dhe shitje nga trafiku që keni tashmë.",
       "speed-optimization": "Faqe më të shpejta dhe Core Web Vitals më të fortë – UX më i mirë, renditje dhe konvertim nëpër rafte.",
       "analytics-optimization": "GA4, Search Console dhe raportime të qarta në mënyrë që të dini se çfarë i drejton klientët dhe të ardhurat.",
-      "accessibility-optimization": "Përmirësime me mendje WCAG në mënyrë që më shumë njerëz të mund të përdorin faqen tuaj – dhe motorët e kërkimit ta kuptojnë më mirë."
+      "accessibility-optimization": "Përmirësime me mendje WCAG në mënyrë që më shumë njerëz të mund të përdorin faqen tuaj – dhe motorët e kërkimit ta kuptojnë më mirë.",
+      "wordpress-maintenance-updates": "Përditësimet e planifikuara të bazës, shtojcave dhe temave të WordPress me kopje rezervë dhe monitorim – në paketat Business, Business pro dhe Enterprise."
     },
     "mk": {
       "aeo-optimization": "Одговори за оптимизација на моторот за цитирана содржина подготвена за одговори.",
@@ -4708,7 +4708,6 @@
       "ai-consultancy": "Извршна стратегија за вештачка интелигенција, пилоти и рамки за рентабилност.",
       "ai-in-wordpress": "Чет-ботови, содржина на вештачка интелигенција, автоматизација и сопствени карактеристики на вештачка интелигенција вградени во вашата страница на WordPress.",
       "wordpress-beheer": "Експертска поддршка за WordPress за да ја одржувате вашата страница непречена работа.",
-      "wordpress-maintenance-updates": "Тековни ажурирања на јадрото, приклучоците и темите на WordPress со резервни копии, следење и грижа.",
       "ai-in-ecommerce": "ВИ за веб-продавници: асистенти на производи, паметно пребарување, помош за количка и автоматизација фокусирана на конверзија.",
       "ai-in-website": "Вештачка интелигенција за прилагодени веб-локации - разговор, потенцијални клиенти, пребарување на знаење и автоматизација на PHP, HTML/JS и Next.js.",
       "webdesign-support": "Прилагодени веб-локации и постојана поддршка за PHP, HTML, CSS, JavaScript и Next.js - не за WordPress.",
@@ -4742,7 +4741,8 @@
       "conversion-optimization": "CRO за слетувања, инки и CTA - повеќе прашања и продажби од сообраќајот што веќе го имате.",
       "speed-optimization": "Побрзи страници и посилни Core Web Vitals — подобар UX, рангирање и конверзија низ куповите.",
       "analytics-optimization": "GA4, Search Console и јасно известување за да знаете што ги придвижува клиентите и приходите.",
-      "accessibility-optimization": "Подобрувања за WCAG за повеќе луѓе да можат да ја користат вашата страница - а пребарувачите подобро да ја разберат."
+      "accessibility-optimization": "Подобрувања за WCAG за повеќе луѓе да можат да ја користат вашата страница - а пребарувачите подобро да ја разберат.",
+      "wordpress-maintenance-updates": "Закажани ажурирања на јадрото, приклучоците и темите на WordPress со резервни копии и следење - во пакетите Business, Business pro и Enterprise."
     },
     "lt": {
       "aeo-optimization": "Atsakymų variklio optimizavimas, skirtas cituotinam, atsakymams paruoštam turiniui.",
@@ -4758,7 +4758,6 @@
       "ai-consultancy": "Vykdomojo AI strategija, bandomieji projektai ir IG sistemos.",
       "ai-in-wordpress": "Pokalbių robotai, turinio AI, automatizavimas ir tinkintos AI funkcijos, integruotos jūsų „WordPress“ svetainėje.",
       "wordpress-beheer": "Ekspertų „WordPress“ palaikymas, kad jūsų svetainė veiktų sklandžiai.",
-      "wordpress-maintenance-updates": "Nuolatinis „WordPress“ branduolio, papildinių ir temų atnaujinimas su atsarginėmis kopijomis, stebėjimu ir priežiūra.",
       "ai-in-ecommerce": "AI internetinėms parduotuvėms: produktų pagalbininkai, išmanioji paieška, pagalba krepšeliui ir į konversijas orientuotas automatizavimas.",
       "ai-in-website": "AI pritaikytoms svetainėms – pokalbiams, potencialiems klientams, žinių paieškai ir automatizavimui PHP, HTML/JS ir Next.js.",
       "webdesign-support": "Individualizuotos svetainės ir nuolatinis PHP, HTML, CSS, JavaScript ir Next.js palaikymas, o ne „WordPress“.",
@@ -4792,7 +4791,8 @@
       "conversion-optimization": "Nukreipimo, piltuvėlių ir CTA CRO – daugiau užklausų ir pardavimų iš jau turimo srauto.",
       "speed-optimization": "Greitesni puslapiai ir stipresni pagrindiniai žiniatinklio gyvybiniai rodikliai – geresnė naudotojo patirtis, reitingai ir konversijos tarp krūvų.",
       "analytics-optimization": "GA4, „Search Console“ ir aiškios ataskaitos, kad žinotumėte, kas skatina potencialius klientus ir pajamas.",
-      "accessibility-optimization": "WCAG patobulinimai, kad daugiau žmonių galėtų naudotis jūsų svetaine, o paieškos sistemos geriau ją suprastų."
+      "accessibility-optimization": "WCAG patobulinimai, kad daugiau žmonių galėtų naudotis jūsų svetaine, o paieškos sistemos geriau ją suprastų.",
+      "wordpress-maintenance-updates": "Suplanuoti „WordPress“ branduolio, papildinių ir temų atnaujinimai su atsarginėmis kopijomis ir stebėjimu – „Business“, „Business Pro“ ir „Enterprise“ paketuose."
     },
     "da": {
       "aeo-optimization": "Answer Engine Optimization for citerbart, svarklart indhold.",
@@ -4808,7 +4808,6 @@
       "ai-consultancy": "Executive AI-strategi, piloter og ROI-rammer.",
       "ai-in-wordpress": "Chatbots, indholds-AI, automatisering og tilpassede AI-funktioner indbygget i dit WordPress-websted.",
       "wordpress-beheer": "Ekspert WordPress-vedligeholdelse for at holde dit websted kørende.",
-      "wordpress-maintenance-updates": "Løbende WordPress kerne-, plugin- og temaopdateringer med backup, overvågning og pleje.",
       "ai-in-ecommerce": "AI til webshops: produktassistenter, smart søgning, vognhjælp og konverteringsfokuseret automatisering.",
       "ai-in-website": "AI til tilpassede websteder - chat, kundeemner, vidensøgning og automatisering på PHP, HTML/JS og Next.js.",
       "webdesign-support": "Tilpassede websteder og løbende support til PHP, HTML, CSS, JavaScript og Next.js – ikke WordPress.",
@@ -4842,7 +4841,8 @@
       "conversion-optimization": "CRO til landinger, tragte og CTA'er — flere forespørgsler og salg fra den trafik, du allerede har.",
       "speed-optimization": "Hurtigere sider og stærkere Core Web Vitals — bedre UX, placeringer og konvertering på tværs af stakke.",
       "analytics-optimization": "GA4, Search Console og overskuelig rapportering, så du ved, hvad der driver kundeemner og omsætning.",
-      "accessibility-optimization": "WCAG-mindede forbedringer, så flere mennesker kan bruge dit websted - og søgemaskiner forstår det bedre."
+      "accessibility-optimization": "WCAG-mindede forbedringer, så flere mennesker kan bruge dit websted - og søgemaskiner forstår det bedre.",
+      "wordpress-maintenance-updates": "Planlagte WordPress-kerne-, plugin- og temaopdateringer med sikkerhedskopier og overvågning – i Business, Business pro og Enterprise-pakker."
     },
     "sv": {
       "aeo-optimization": "Answer Engine Optimization för citerbart, svarsfärdigt innehåll.",
@@ -4858,7 +4858,6 @@
       "ai-consultancy": "Executive AI-strategi, piloter och ROI-ramverk.",
       "ai-in-wordpress": "Chatbots, innehålls-AI, automatisering och anpassade AI-funktioner inbyggda i din WordPress-webbplats.",
       "wordpress-beheer": "Expert WordPress-skötsel för att hålla din webbplats igång smidigt.",
-      "wordpress-maintenance-updates": "Pågående WordPress-kärna, plugin- och temauppdateringar med säkerhetskopiering, övervakning och skötsel.",
       "ai-in-ecommerce": "AI för webbshoppar: produktassistenter, smart sökning, kundvagnshjälp och konverteringsfokuserad automation.",
       "ai-in-website": "AI för anpassade webbplatser – chatt, leads, kunskapssökning och automatisering på PHP, HTML/JS och Next.js.",
       "webdesign-support": "Anpassade webbplatser och löpande stöd för PHP, HTML, CSS, JavaScript och Next.js – inte WordPress.",
@@ -4892,7 +4891,8 @@
       "conversion-optimization": "CRO för landningar, trattar och CTA:er — fler förfrågningar och försäljningar från den trafik du redan har.",
       "speed-optimization": "Snabbare sidor och starkare Core Web Vitals — bättre UX, rankningar och konverteringar över stackar.",
       "analytics-optimization": "GA4, Search Console och tydlig rapportering så att du vet vad som driver leads och intäkter.",
-      "accessibility-optimization": "WCAG-inriktade förbättringar så att fler människor kan använda din webbplats – och sökmotorer förstår den bättre."
+      "accessibility-optimization": "WCAG-inriktade förbättringar så att fler människor kan använda din webbplats – och sökmotorer förstår den bättre.",
+      "wordpress-maintenance-updates": "Schemalagda WordPress-kärna-, plugin- och temauppdateringar med säkerhetskopiering och övervakning – i Business, Business pro och Enterprise-paket."
     },
     "no": {
       "aeo-optimization": "Answer Engine Optimization for siterbart, svarklart innhold.",
@@ -4908,7 +4908,6 @@
       "ai-consultancy": "Executive AI-strategi, piloter og ROI-rammeverk.",
       "ai-in-wordpress": "Chatbots, innholds-AI, automatisering og tilpassede AI-funksjoner innebygd i WordPress-nettstedet ditt.",
       "wordpress-beheer": "Ekspert WordPress-støtte for å holde nettstedet ditt i gang.",
-      "wordpress-maintenance-updates": "Løpende WordPress kjerne-, plugin- og temaoppdateringer med sikkerhetskopiering, overvåking og omsorg.",
       "ai-in-ecommerce": "AI for nettbutikker: produktassistenter, smart søk, handlevognhjelp og konverteringsfokusert automatisering.",
       "ai-in-website": "AI for tilpassede nettsteder – chat, leads, kunnskapssøk og automatisering på PHP, HTML/JS og Next.js.",
       "webdesign-support": "Tilpassede nettsteder og løpende støtte for PHP, HTML, CSS, JavaScript og Next.js – ikke WordPress.",
@@ -4942,7 +4941,8 @@
       "conversion-optimization": "CRO for landinger, trakter og CTAer — flere forespørsler og salg fra trafikken du allerede har.",
       "speed-optimization": "Raskere sider og sterkere Core Web Vitals – bedre UX, rangeringer og konvertering på tvers av stabler.",
       "analytics-optimization": "GA4, Search Console og tydelig rapportering slik at du vet hva som genererer potensielle kunder og inntekter.",
-      "accessibility-optimization": "WCAG-innstilte forbedringer slik at flere kan bruke nettstedet ditt – og søkemotorer forstår det bedre."
+      "accessibility-optimization": "WCAG-innstilte forbedringer slik at flere kan bruke nettstedet ditt – og søkemotorer forstår det bedre.",
+      "wordpress-maintenance-updates": "Planlagte WordPress-kjerne-, plugin- og temaoppdateringer med sikkerhetskopiering og overvåking – i Business, Business pro og Enterprise-pakker."
     },
     "fi": {
       "aeo-optimization": "Answer Engine Optimization lainattavalle, vastausvalmiille sisällölle.",
@@ -4958,7 +4958,6 @@
       "ai-consultancy": "Executive AI -strategia, pilotit ja ROI-kehykset.",
       "ai-in-wordpress": "Chatbotit, sisällön tekoäly, automaatio ja mukautetut tekoälyominaisuudet WordPress-sivustollesi.",
       "wordpress-beheer": "Asiantunteva WordPress-tuki pitää sivustosi sujuvana.",
-      "wordpress-maintenance-updates": "Jatkuvat WordPress-ydin-, laajennus- ja teemapäivitykset varmuuskopioinnilla, valvonnalla ja hoidolla.",
       "ai-in-ecommerce": "Tekoäly verkkokaupoille: tuoteavustajat, älykäs haku, ostoskorin ohje ja konversiokeskeinen automaatio.",
       "ai-in-website": "Tekoäly mukautettuja verkkosivustoja varten – chat, liidit, tiedonhaku ja automaatio PHP:llä, HTML/JS:llä ja Next.js:llä.",
       "webdesign-support": "Mukautetut verkkosivustot ja jatkuva tuki PHP:lle, HTML:lle, CSS:lle, JavaScriptille ja Next.js:lle – ei WordPressille.",
@@ -4992,7 +4991,8 @@
       "conversion-optimization": "CRO laskeutumisille, suppiloille ja toimintakehoille – enemmän tiedusteluja ja myyntiä jo olemassa olevasta liikenteestä.",
       "speed-optimization": "Nopeammat sivut ja vahvempi Core Web Vitals – parempi käyttökokemus, sijoitukset ja muunnos pinojen välillä.",
       "analytics-optimization": "GA4, Search Console ja selkeä raportointi, jotta tiedät, mikä johtaa liideihin ja tuloihin.",
-      "accessibility-optimization": "WCAG-mielisiä parannuksia, jotta useammat ihmiset voivat käyttää sivustoasi – ja hakukoneet ymmärtävät sen paremmin."
+      "accessibility-optimization": "WCAG-mielisiä parannuksia, jotta useammat ihmiset voivat käyttää sivustoasi – ja hakukoneet ymmärtävät sen paremmin.",
+      "wordpress-maintenance-updates": "Ajoitetut WordPress-ydin-, laajennus- ja teemapäivitykset varmuuskopioinnilla ja valvonnalla – Business-, Business pro- ja Enterprise-paketeissa."
     },
     "uk": {
       "aeo-optimization": "Оптимізація системи відповідей для цитування вмісту, готового до відповідей.",
@@ -5008,7 +5008,6 @@
       "ai-consultancy": "Виконавча стратегія штучного інтелекту, пілотні проекти та структури ROI.",
       "ai-in-wordpress": "Чат-боти, контент AI, автоматизація та спеціальні функції AI, вбудовані у ваш сайт WordPress.",
       "wordpress-beheer": "Експертна підтримка WordPress для безперебійної роботи вашого сайту.",
-      "wordpress-maintenance-updates": "Постійне оновлення ядра WordPress, плагінів і тем із резервним копіюванням, моніторингом і доглядом.",
       "ai-in-ecommerce": "AI для веб-магазинів: помічники щодо продуктів, розумний пошук, допомога в кошику та автоматизація, орієнтована на конверсію.",
       "ai-in-website": "AI для спеціальних веб-сайтів — чат, потенційні клієнти, пошук знань і автоматизація на PHP, HTML/JS і Next.js.",
       "webdesign-support": "Спеціальні веб-сайти та постійна підтримка PHP, HTML, CSS, JavaScript і Next.js — не WordPress.",
@@ -5042,7 +5041,8 @@
       "conversion-optimization": "CRO для лендінгів, воронок і CTA — більше запитів і продажів від уже наявного трафіку.",
       "speed-optimization": "Швидші сторінки та сильніші основні веб-показники — кращий UX, рейтинги та конверсія в стеках.",
       "analytics-optimization": "GA4, Search Console і чіткі звіти, щоб ви знали, що сприяє залученню потенційних клієнтів і прибутку.",
-      "accessibility-optimization": "Покращення, орієнтовані на WCAG, щоб більше людей могли використовувати ваш сайт — і пошукові системи краще його розуміли."
+      "accessibility-optimization": "Покращення, орієнтовані на WCAG, щоб більше людей могли використовувати ваш сайт — і пошукові системи краще його розуміли.",
+      "wordpress-maintenance-updates": "Заплановані оновлення ядра WordPress, плагінів і тем із резервним копіюванням і моніторингом — у пакетах Business, Business pro та Enterprise."
     },
     "ru": {
       "aeo-optimization": "Оптимизация механизма ответов для цитируемого контента, готового к ответам.",
@@ -5058,7 +5058,6 @@
       "ai-consultancy": "Стратегия ИИ для руководителей, пилотные проекты и механизмы рентабельности инвестиций.",
       "ai-in-wordpress": "Чат-боты, искусственный интеллект для контента, автоматизация и пользовательские функции искусственного интеллекта, встроенные в ваш сайт WordPress.",
       "wordpress-beheer": "Экспертная поддержка WordPress для бесперебойной работы вашего сайта.",
-      "wordpress-maintenance-updates": "Постоянное обновление ядра, плагинов и тем WordPress с резервным копированием, мониторингом и уходом.",
       "ai-in-ecommerce": "Искусственный интеллект для интернет-магазинов: помощники по продуктам, умный поиск, помощь в корзине и автоматизация, ориентированная на конверсию.",
       "ai-in-website": "AI для пользовательских сайтов — чат, лиды, поиск знаний и автоматизация на PHP, HTML/JS и Next.js.",
       "webdesign-support": "Пользовательские веб-сайты и постоянная поддержка PHP, HTML, CSS, JavaScript и Next.js, а не WordPress.",
@@ -5092,7 +5091,8 @@
       "conversion-optimization": "CRO для лендингов, воронок и CTA — больше запросов и продаж от уже имеющегося трафика.",
       "speed-optimization": "Более быстрые страницы и более сильные основные веб-показатели — лучший UX, рейтинг и конверсия по стекам.",
       "analytics-optimization": "GA4, Search Console и четкие отчеты, чтобы вы знали, что приводит к увеличению количества потенциальных клиентов и дохода.",
-      "accessibility-optimization": "Улучшения, ориентированные на WCAG, чтобы больше людей могли использовать ваш сайт, а поисковые системы лучше его понимали."
+      "accessibility-optimization": "Улучшения, ориентированные на WCAG, чтобы больше людей могли использовать ваш сайт, а поисковые системы лучше его понимали.",
+      "wordpress-maintenance-updates": "Запланированные обновления ядра, плагинов и тем WordPress с резервным копированием и мониторингом — в пакетах Business, Business pro и Enterprise."
     },
     "tr": {
       "aeo-optimization": "Alıntı yapılabilir, yanıta hazır içerik için Yanıt Motoru Optimizasyonu.",
@@ -5108,7 +5108,6 @@
       "ai-consultancy": "Yönetici yapay zeka stratejisi, pilot uygulamalar ve yatırım getirisi çerçeveleri.",
       "ai-in-wordpress": "WordPress sitenizde yerleşik sohbet robotları, içerik yapay zekası, otomasyon ve özel yapay zeka özellikleri.",
       "wordpress-beheer": "Sitenizin sorunsuz çalışmasını sağlamak için uzman WordPress desteği.",
-      "wordpress-maintenance-updates": "Yedekleme, izleme ve bakım ile devam eden WordPress çekirdeği, eklenti ve tema güncellemeleri.",
       "ai-in-ecommerce": "Web mağazaları için yapay zeka: ürün asistanları, akıllı arama, sepet yardımı ve dönüşüm odaklı otomasyon.",
       "ai-in-website": "Özel web siteleri için yapay zeka — PHP, HTML/JS ve Next.js'de sohbet, potansiyel müşteriler, bilgi arama ve otomasyon.",
       "webdesign-support": "Özel web siteleri ve WordPress için değil, PHP, HTML, CSS, JavaScript ve Next.js için sürekli destek.",
@@ -5142,7 +5141,8 @@
       "conversion-optimization": "Açılışlar, dönüşüm hunileri ve CTA'lar için CRO - halihazırda sahip olduğunuz trafikten daha fazla sorgu ve satış.",
       "speed-optimization": "Daha hızlı sayfalar ve daha güçlü Önemli Web Verileri — daha iyi kullanıcı deneyimi, sıralamalar ve yığınlar arası dönüşüm.",
       "analytics-optimization": "GA4, Search Console ve net raporlama sayesinde olası satışları ve geliri neyin artırdığını bilirsiniz.",
-      "accessibility-optimization": "Daha fazla kişinin sitenizi kullanabilmesi ve arama motorlarının sitenizi daha iyi anlayabilmesi için WCAG odaklı iyileştirmeler."
+      "accessibility-optimization": "Daha fazla kişinin sitenizi kullanabilmesi ve arama motorlarının sitenizi daha iyi anlayabilmesi için WCAG odaklı iyileştirmeler.",
+      "wordpress-maintenance-updates": "Business, Business pro ve Enterprise paketlerinde yedekleme ve izleme ile planlanmış WordPress çekirdek, eklenti ve tema güncellemeleri."
     },
     "he": {
       "aeo-optimization": "אופטימיזציה למנועי תשובה עבור תוכן שניתן לצטט, מוכן לתשובה.",
@@ -5158,7 +5158,6 @@
       "ai-consultancy": "אסטרטגיית AI מנהלית, פיילוטים ומסגרות ROI.",
       "ai-in-wordpress": "צ'אטבוטים, תוכן בינה מלאכותית, אוטומציה ותכונות AI מותאמות אישית המובנות באתר הוורדפרס שלך.",
       "wordpress-beheer": "תמיכת וורדפרס מומחית כדי לשמור על פעילות האתר שלך בצורה חלקה.",
-      "wordpress-maintenance-updates": "עדכוני ליבה, תוספים וערכות נושא שוטפים של וורדפרס עם גיבויים, ניטור וטיפול.",
       "ai-in-ecommerce": "AI לחנויות אינטרנט: עוזרי מוצר, חיפוש חכם, עזרה בעגלה ואוטומציה ממוקדת המרות.",
       "ai-in-website": "AI לאתרים מותאמים אישית - צ'אט, לידים, חיפוש ידע ואוטומציה ב-PHP, HTML/JS ו-Next.js.",
       "webdesign-support": "אתרים מותאמים אישית ותמיכה שוטפת עבור PHP, HTML, CSS, JavaScript ו-Next.js - לא וורדפרס.",
@@ -5192,7 +5191,8 @@
       "conversion-optimization": "CRO עבור נחיתות, משפכים ו-CTAs - עוד פניות ומכירות מהתנועה שכבר יש לך.",
       "speed-optimization": "דפים מהירים יותר ו-Core Web Vitals חזקים יותר - UX טוב יותר, דירוגים והמרות על פני ערימות.",
       "analytics-optimization": "GA4, Search Console ודיווח ברור כדי שתדע מה מוביל לידים והכנסות.",
-      "accessibility-optimization": "שיפורים מבוססי WCAG כך שיותר אנשים יוכלו להשתמש באתר שלך - ומנועי חיפוש מבינים אותו טוב יותר."
+      "accessibility-optimization": "שיפורים מבוססי WCAG כך שיותר אנשים יוכלו להשתמש באתר שלך - ומנועי חיפוש מבינים אותו טוב יותר.",
+      "wordpress-maintenance-updates": "עדכוני הליבה, הפלאגין והנושאים של וורדפרס מתוזמנים עם גיבויים וניטור - בחבילות Business, Business pro ו-Enterprise."
     },
     "ar": {
       "aeo-optimization": "تحسين محرك الإجابة للحصول على محتوى جاهز للإجابة.",
@@ -5208,7 +5208,6 @@
       "ai-consultancy": "استراتيجية الذكاء الاصطناعي التنفيذية والنماذج التجريبية وأطر عائد الاستثمار.",
       "ai-in-wordpress": "Chatbots والمحتوى AI والأتمتة وميزات الذكاء الاصطناعي المخصصة المضمنة في موقع WordPress الخاص بك.",
       "wordpress-beheer": "دعم WordPress الخبراء للحفاظ على تشغيل موقعك بسلاسة.",
-      "wordpress-maintenance-updates": "تحديثات WordPress الأساسية والمكونات الإضافية والموضوعات المستمرة مع النسخ الاحتياطية والمراقبة والرعاية.",
       "ai-in-ecommerce": "الذكاء الاصطناعي لمتاجر الويب: مساعدو المنتجات، والبحث الذكي، ومساعدة عربة التسوق، والأتمتة التي تركز على التحويل.",
       "ai-in-website": "الذكاء الاصطناعي لمواقع الويب المخصصة - الدردشة والعملاء المحتملين والبحث عن المعرفة والأتمتة على PHP وHTML/JS وNext.js.",
       "webdesign-support": "مواقع الويب المخصصة والدعم المستمر لـ PHP وHTML وCSS وJavaScript وNext.js - وليس WordPress.",
@@ -5242,7 +5241,8 @@
       "conversion-optimization": "CRO لعمليات الهبوط ومسارات التحويل وعبارات الحث على اتخاذ إجراء - المزيد من الاستفسارات والمبيعات من حركة المرور الموجودة لديك بالفعل.",
       "speed-optimization": "صفحات أسرع ومؤشرات حيوية للويب الأساسية أقوى - تجربة مستخدم أفضل وتصنيفات وتحويلات عبر الحزم المكدسة.",
       "analytics-optimization": "\"إحصاءات Google‏ 4\" وSearch Console وتقارير واضحة حتى تعرف ما الذي يجذب العملاء المحتملين والأرباح.",
-      "accessibility-optimization": "تحسينات تهدف إلى WCAG حتى يتمكن عدد أكبر من الأشخاص من استخدام موقعك - ​​وتفهمه محركات البحث بشكل أفضل."
+      "accessibility-optimization": "تحسينات تهدف إلى WCAG حتى يتمكن عدد أكبر من الأشخاص من استخدام موقعك - ​​وتفهمه محركات البحث بشكل أفضل.",
+      "wordpress-maintenance-updates": "تحديثات WordPress الأساسية والمكونات الإضافية والموضوعات المجدولة مع النسخ الاحتياطية والمراقبة - في حزم Business وBusiness pro وEnterprise."
     },
     "ka": {
       "aeo-optimization": "უპასუხეთ ძრავის ოპტიმიზაციას ციტირებადი, პასუხებისთვის მზა შინაარსისთვის.",
@@ -5258,7 +5258,6 @@
       "ai-consultancy": "აღმასრულებელი AI სტრატეგია, პილოტები და ROI ჩარჩოები.",
       "ai-in-wordpress": "ჩატბოტები, შინაარსი AI, ავტომატიზაცია და პერსონალური AI ფუნქციები ჩაშენებული თქვენს WordPress საიტზე.",
       "wordpress-beheer": "WordPress-ის ექსპერტული მხარდაჭერა თქვენი საიტის შეუფერხებლად მუშაობისთვის.",
-      "wordpress-maintenance-updates": "WordPress-ის ძირითადი, მოდულის და თემის განახლებები სარეზერვო ასლებით, მონიტორინგით და ზრუნვით.",
       "ai-in-ecommerce": "AI ვებ მაღაზიებისთვის: პროდუქტის ასისტენტები, ჭკვიანი ძებნა, კალათის დახმარება და კონვერტაციაზე ორიენტირებული ავტომატიზაცია.",
       "ai-in-website": "AI მორგებული ვებსაიტებისთვის — ჩატი, ლიდერები, ცოდნის ძიება და ავტომატიზაცია PHP, HTML/JS და Next.js-ზე.",
       "webdesign-support": "მორგებული ვებსაიტები და PHP, HTML, CSS, JavaScript და Next.js მუდმივი მხარდაჭერა — არა WordPress.",
@@ -5292,7 +5291,8 @@
       "conversion-optimization": "CRO სადესანტო, ძაბრებისა და CTA-ებისთვის — მეტი მოთხოვნა და გაყიდვები ტრაფიკიდან, რომელიც უკვე გაქვთ.",
       "speed-optimization": "უფრო სწრაფი გვერდები და უფრო ძლიერი Core Web Vitals – უკეთესი UX, რეიტინგები და კონვერტაცია სტეკებში.",
       "analytics-optimization": "GA4, Search Console და გასუფთავებული ანგარიშგება, ასე რომ თქვენ იცით, რა განაპირობებს პოტენციალს და შემოსავალს.",
-      "accessibility-optimization": "WCAG-ზე მოაზროვნე გაუმჯობესებები, რათა უფრო მეტმა ადამიანმა შეძლოს თქვენი საიტის გამოყენება – და საძიებო სისტემებმა ეს უკეთ გაიგონ."
+      "accessibility-optimization": "WCAG-ზე მოაზროვნე გაუმჯობესებები, რათა უფრო მეტმა ადამიანმა შეძლოს თქვენი საიტის გამოყენება – და საძიებო სისტემებმა ეს უკეთ გაიგონ.",
+      "wordpress-maintenance-updates": "დაგეგმილია WordPress-ის ძირითადი, მოდულების და თემების განახლებები სარეზერვო ასლებით და მონიტორინგით – Business, Business Pro და Enterprise პაკეტებში."
     },
     "hy": {
       "aeo-optimization": "Պատասխանեք Շարժիչի օպտիմիզացմանը վկայակոչվող, պատասխանների համար պատրաստ բովանդակության համար:",
@@ -5308,7 +5308,6 @@
       "ai-consultancy": "Գործադիր AI ռազմավարություն, օդաչուներ և ROI շրջանակներ:",
       "ai-in-wordpress": "Chatbots, բովանդակային AI, ավտոմատացում և հատուկ AI-ի առանձնահատկություններ, որոնք ներկառուցված են ձեր WordPress կայքում:",
       "wordpress-beheer": "Փորձագետ WordPress աջակցություն՝ ձեր կայքը սահուն գործելու համար:",
-      "wordpress-maintenance-updates": "WordPress-ի հիմնական, պլագինների և թեմաների շարունակական թարմացումներ՝ կրկնօրինակումներով, մոնիտորինգով և խնամքով:",
       "ai-in-ecommerce": "AI վեբ խանութների համար. ապրանքների օգնականներ, խելացի որոնում, զամբյուղի օգնություն և փոխակերպման վրա կենտրոնացված ավտոմատացում:",
       "ai-in-website": "AI հատուկ կայքերի համար՝ չաթ, առաջատարներ, գիտելիքների որոնում և ավտոմատացում PHP-ում, HTML/JS-ում և Next.js-ում:",
       "webdesign-support": "Հատուկ կայքեր և շարունակական աջակցություն PHP-ի, HTML-ի, CSS-ի, JavaScript-ի և Next.js-ի համար, այլ ոչ թե WordPress-ի:",
@@ -5342,7 +5341,8 @@
       "conversion-optimization": "CRO վայրէջքների, ձագարների և CTA-ների համար. ավելի շատ հարցումներ և վաճառքներ արդեն իսկ ունեցած երթևեկությունից:",
       "speed-optimization": "Ավելի արագ էջեր և ավելի ուժեղ Core Web Vitals – ավելի լավ UX, վարկանիշներ և փոխակերպումներ փաթեթների միջև:",
       "analytics-optimization": "GA4, Search Console և հստակ հաշվետվություններ, որպեսզի իմանաք, թե ինչն է հանգեցնում առաջատարների և եկամուտների:",
-      "accessibility-optimization": "WCAG-ով մտածված բարելավումներ, որպեսզի ավելի շատ մարդիկ կարողանան օգտագործել ձեր կայքը, և որոնիչները դա ավելի լավ հասկանան:"
+      "accessibility-optimization": "WCAG-ով մտածված բարելավումներ, որպեսզի ավելի շատ մարդիկ կարողանան օգտագործել ձեր կայքը, և որոնիչները դա ավելի լավ հասկանան:",
+      "wordpress-maintenance-updates": "Պլանավորված WordPress-ի հիմնական, պլագինների և թեմաների թարմացումներ՝ կրկնօրինակումներով և մոնիտորինգով – Business, Business Pro և Enterprise փաթեթներում:"
     },
     "az": {
       "aeo-optimization": "İstinad edilə bilən, cavab verməyə hazır məzmun üçün Cavab Mühərrikinin Optimizasiyası.",
@@ -5358,7 +5358,6 @@
       "ai-consultancy": "İcraçı AI strategiyası, pilotlar və ROI çərçivələri.",
       "ai-in-wordpress": "Chatbotlar, məzmun AI, avtomatlaşdırma və WordPress saytınıza quraşdırılmış fərdi AI xüsusiyyətləri.",
       "wordpress-beheer": "Saytınızın rəvan işləməsini təmin etmək üçün ekspert WordPress dəstəyi.",
-      "wordpress-maintenance-updates": "Yedəkləmə, monitorinq və qayğı ilə davam edən WordPress əsas, plagin və mövzu yeniləmələri.",
       "ai-in-ecommerce": "Veb-mağazalar üçün süni intellekt: məhsul köməkçiləri, ağıllı axtarış, araba yardımı və konversiyaya yönəlmiş avtomatlaşdırma.",
       "ai-in-website": "Fərdi vebsaytlar üçün AI — PHP, HTML/JS və Next.js-də söhbət, aparıcılar, bilik axtarışı və avtomatlaşdırma.",
       "webdesign-support": "Fərdi vebsaytlar və PHP, HTML, CSS, JavaScript və Next.js üçün davamlı dəstək – WordPress deyil.",
@@ -5392,7 +5391,8 @@
       "conversion-optimization": "Enişlər, hunilər və CTA-lar üçün CRO — artıq əldə etdiyiniz trafikdən daha çox sorğu və satış.",
       "speed-optimization": "Daha sürətli səhifələr və daha güclü Core Web Vitals — daha yaxşı UX, sıralamalar və yığınlar arasında dönüşüm.",
       "analytics-optimization": "GA4, Axtarış Konsolu və aydın hesabat, beləliklə, liderləri və gəliri nəyin idarə etdiyini bilirsiniz.",
-      "accessibility-optimization": "WCAG düşüncəli təkmilləşdirmələr, beləliklə daha çox insan saytınızdan istifadə edə bilsin – və axtarış motorları onu daha yaxşı başa düşür."
+      "accessibility-optimization": "WCAG düşüncəli təkmilləşdirmələr, beləliklə daha çox insan saytınızdan istifadə edə bilsin – və axtarış motorları onu daha yaxşı başa düşür.",
+      "wordpress-maintenance-updates": "Planlaşdırılmış WordPress nüvəsi, plagin və tema yeniləmələri ehtiyat nüsxələri və monitorinqi ilə — Business, Business pro və Enterprise paketlərində."
     },
     "zh": {
       "aeo-optimization": "答案引擎优化可引用、可答案的内容。",
@@ -5408,7 +5408,6 @@
       "ai-consultancy": "执行人工智能战略、试点和投资回报率框架。",
       "ai-in-wordpress": "WordPress 网站内置聊天机器人、内容 AI、自动化和自定义 AI 功能。",
       "wordpress-beheer": "专家 WordPress 支持可确保您的网站顺利运行。",
-      "wordpress-maintenance-updates": "持续更新 WordPress 核心、插件和主题，并提供备份、监控和维护。",
       "ai-in-ecommerce": "网上商店的人工智能：产品助理、智能搜索、购物车帮助和以转化为中心的自动化。",
       "ai-in-website": "适用于自定义网站的 AI — PHP、HTML/JS 和 Next.js 上的聊天、潜在客户、知识搜索和自动化。",
       "webdesign-support": "自定义网站以及对 PHP、HTML、CSS、JavaScript 和 Next.js 的持续支持 - 而不是 WordPress。",
@@ -5442,7 +5441,8 @@
       "conversion-optimization": "用于登陆、漏斗和 CTA 的 CRO — 从您已有的流量中获得更多查询和销售。",
       "speed-optimization": "更快的页面和更强大的核心网络生命力——更好的用户体验、跨堆栈排名和转化。",
       "analytics-optimization": "GA4、Search Console 和清晰的报告让您了解推动销售线索和收入的因素。",
-      "accessibility-optimization": "注重 WCAG 的改进，让更多人可以使用您的网站，并且搜索引擎可以更好地理解您的网站。"
+      "accessibility-optimization": "注重 WCAG 的改进，让更多人可以使用您的网站，并且搜索引擎可以更好地理解您的网站。",
+      "wordpress-maintenance-updates": "计划的 WordPress 核心、插件和主题更新以及备份和监控 - 在 Business、Business pro 和 Enterprise 包中。"
     },
     "ja": {
       "aeo-optimization": "引用可能な、すぐに回答できるコンテンツのための回答エンジンの最適化。",
@@ -5458,7 +5458,6 @@
       "ai-consultancy": "エグゼクティブ AI 戦略、パイロット、ROI フレームワーク。",
       "ai-in-wordpress": "チャットボット、コンテンツ AI、自動化、およびカスタム AI 機能が WordPress サイトに組み込まれています。",
       "wordpress-beheer": "エキスパートによる WordPress サポートにより、サイトのスムーズな運営が維持されます。",
-      "wordpress-maintenance-updates": "バックアップ、モニタリング、ケアを伴う継続的な WordPress コア、プラグイン、テーマの更新。",
       "ai-in-ecommerce": "ウェブショップ向け AI: 製品アシスタント、スマート検索、カート ヘルプ、コンバージョン重視の自動化。",
       "ai-in-website": "カスタム Web サイト用の AI — PHP、HTML/JS、Next.js でのチャット、リード、ナレッジ検索、自動化。",
       "webdesign-support": "カスタム Web サイトと、WordPress ではなく、PHP、HTML、CSS、JavaScript、Next.js の継続的なサポート。",
@@ -5492,7 +5491,8 @@
       "conversion-optimization": "ランディング、ファネル、CTA の CRO — 既存のトラフィックからの問い合わせと販売が増加します。",
       "speed-optimization": "ページの高速化とコア ウェブ バイタルの強化 — スタック全体での UX、ランキング、コンバージョンの向上。",
       "analytics-optimization": "GA4、Search Console、明確なレポートにより、何がリードと収益を促進するのかがわかります。",
-      "accessibility-optimization": "WCAG を意識した改善により、より多くの人がサイトを利用できるようになり、検索エンジンがサイトをよりよく理解できるようになります。"
+      "accessibility-optimization": "WCAG を意識した改善により、より多くの人がサイトを利用できるようになり、検索エンジンがサイトをよりよく理解できるようになります。",
+      "wordpress-maintenance-updates": "ビジネス、ビジネス プロ、エンタープライズ パッケージで、WordPress コア、プラグイン、テーマのバックアップとモニタリングをスケジュール的に更新します。"
     },
     "bn": {
       "aeo-optimization": "উদ্ধৃতিযোগ্য, উত্তর প্রস্তুত সামগ্রীর জন্য উত্তর ইঞ্জিন অপ্টিমাইজেশান।",
@@ -5516,7 +5516,6 @@
       "ai-consultancy": "এক্সিকিউটিভ এআই কৌশল, পাইলট এবং ROI ফ্রেমওয়ার্ক।",
       "ai-in-wordpress": "চ্যাটবট, কন্টেন্ট এআই, অটোমেশন এবং কাস্টম এআই বৈশিষ্ট্য আপনার ওয়ার্ডপ্রেস সাইটে তৈরি করা হয়েছে।",
       "wordpress-beheer": "বিশেষজ্ঞ ওয়ার্ডপ্রেস যত্ন আপনার সাইট মসৃণভাবে চলমান রাখা.",
-      "wordpress-maintenance-updates": "চলমান ওয়ার্ডপ্রেস কোর, প্লাগইন এবং ব্যাকআপ, পর্যবেক্ষণ এবং যত্ন সহ থিম আপডেট।",
       "webdesign-support": "কাস্টম ওয়েবসাইট এবং PHP, HTML, CSS, JavaScript এবং Next.js-এর জন্য চলমান সমর্থন — ওয়ার্ডপ্রেস নয়।",
       "custom-webdesign": "স্ক্র্যাচ থেকে তৈরি পিক্সেল-শার্প, রূপান্তর-কেন্দ্রিক ওয়েবসাইট।",
       "php-web-development": "শক্তিশালী পিএইচপি অ্যাপ্লিকেশন, API এবং উত্তরাধিকার আধুনিকীকরণ।",
@@ -5542,7 +5541,8 @@
       "briefpapier": "লেটারহেড ডিজাইন এবং ছোট বা বড় পরিমাণে মুদ্রণ।",
       "flyers-posters": "ফ্লায়ার এবং পোস্টার ডিজাইন প্লাস প্রিন্টিং ছোট বা বড় পরিমাণে।",
       "stickers-packaging": "স্টিকার ডিজাইন এবং প্রিন্টিং — ছোট ব্যাচ বা বড় রান।",
-      "magazines-brochures": "ব্রোশিওর এবং ম্যাগাজিন ডিজাইন প্লাস মুদ্রণ ছোট বা বড় পরিমাণে।"
+      "magazines-brochures": "ব্রোশিওর এবং ম্যাগাজিন ডিজাইন প্লাস মুদ্রণ ছোট বা বড় পরিমাণে।",
+      "wordpress-maintenance-updates": "ব্যাকআপ এবং মনিটরিং সহ নির্ধারিত ওয়ার্ডপ্রেস কোর, প্লাগইন এবং থিম আপডেটগুলি — ব্যবসায়, বিজনেস প্রো এবং এন্টারপ্রাইজ প্যাকেজে।"
     },
     "hi": {
       "aeo-optimization": "उद्धृत करने योग्य, उत्तर-तैयार सामग्री के लिए उत्तर इंजन अनुकूलन।",
@@ -5566,7 +5566,6 @@
       "ai-consultancy": "कार्यकारी एआई रणनीति, पायलट और आरओआई ढांचे।",
       "ai-in-wordpress": "चैटबॉट्स, कंटेंट एआई, ऑटोमेशन और कस्टम एआई फीचर्स आपकी वर्डप्रेस साइट में निर्मित हैं।",
       "wordpress-beheer": "विशेषज्ञ वर्डप्रेस आपकी साइट को सुचारू रूप से चालू रखने का ध्यान रखते हैं।",
-      "wordpress-maintenance-updates": "बैकअप, निगरानी और देखभाल के साथ चल रहे वर्डप्रेस कोर, प्लगइन और थीम अपडेट।",
       "webdesign-support": "कस्टम वेबसाइटें और PHP, HTML, CSS, JavaScript और Next.js के लिए चल रहा समर्थन - वर्डप्रेस नहीं।",
       "custom-webdesign": "पिक्सेल-शार्प, रूपांतरण-केंद्रित वेबसाइटें शुरू से निर्मित।",
       "php-web-development": "मजबूत PHP अनुप्रयोग, एपीआई और विरासत आधुनिकीकरण।",
@@ -5592,7 +5591,8 @@
       "briefpapier": "लेटरहेड डिज़ाइन और छोटी या बड़ी मात्रा में छपाई।",
       "flyers-posters": "फ़्लायर और पोस्टर डिज़ाइन के साथ-साथ छोटी या बड़ी मात्रा में छपाई।",
       "stickers-packaging": "स्टिकर डिज़ाइन और प्रिंटिंग - छोटे बैच या बड़े रन।",
-      "magazines-brochures": "ब्रोशर और पत्रिका डिज़ाइन के साथ-साथ छोटी या बड़ी मात्रा में छपाई।"
+      "magazines-brochures": "ब्रोशर और पत्रिका डिज़ाइन के साथ-साथ छोटी या बड़ी मात्रा में छपाई।",
+      "wordpress-maintenance-updates": "बैकअप और मॉनिटरिंग के साथ शेड्यूल किए गए वर्डप्रेस कोर, प्लगइन और थीम अपडेट - बिजनेस, बिजनेस प्रो और एंटरप्राइज पैकेज में।"
     },
     "mr": {
       "aeo-optimization": "उद्धृत, उत्तर-तयार सामग्रीसाठी उत्तर इंजिन ऑप्टिमायझेशन.",
@@ -5616,7 +5616,6 @@
       "ai-consultancy": "कार्यकारी AI धोरण, पायलट आणि ROI फ्रेमवर्क.",
       "ai-in-wordpress": "चॅटबॉट्स, कंटेंट एआय, ऑटोमेशन आणि कस्टम एआय वैशिष्ट्ये तुमच्या वर्डप्रेस साइटमध्ये तयार केली आहेत.",
       "wordpress-beheer": "तुमची साइट सुरळीत चालू ठेवण्यासाठी तज्ञ वर्डप्रेस काळजी घेतात.",
-      "wordpress-maintenance-updates": "चालू वर्डप्रेस कोर, प्लगइन आणि थीम अद्यतने बॅकअप, देखरेख आणि काळजी.",
       "webdesign-support": "सानुकूल वेबसाइट आणि PHP, HTML, CSS, JavaScript आणि Next.js साठी चालू असलेले समर्थन — WordPress नाही.",
       "custom-webdesign": "सुरवातीपासून तयार केलेल्या पिक्सेल-शार्प, रूपांतरण-केंद्रित वेबसाइट.",
       "php-web-development": "मजबूत PHP अनुप्रयोग, API आणि वारसा आधुनिकीकरण.",
@@ -5642,7 +5641,8 @@
       "briefpapier": "लेटरहेड डिझाइन आणि छपाई लहान किंवा मोठ्या प्रमाणात.",
       "flyers-posters": "फ्लायर आणि पोस्टर डिझाइन तसेच छपाई लहान किंवा मोठ्या प्रमाणात.",
       "stickers-packaging": "स्टिकर डिझाइन आणि प्रिंटिंग - लहान बॅचेस किंवा मोठ्या धावा.",
-      "magazines-brochures": "ब्रोशर आणि मॅगझिन डिझाइन तसेच लहान किंवा मोठ्या प्रमाणात छपाई."
+      "magazines-brochures": "ब्रोशर आणि मॅगझिन डिझाइन तसेच लहान किंवा मोठ्या प्रमाणात छपाई.",
+      "wordpress-maintenance-updates": "अनुसूचित वर्डप्रेस कोर, प्लगइन आणि थीम अद्यतने बॅकअप आणि मॉनिटरिंगसह — व्यवसाय, व्यवसाय प्रो आणि एंटरप्राइझ पॅकेजमध्ये."
     },
     "ps": {
       "aeo-optimization": "د ځواب ویلو وړ، ځواب چمتو شوي منځپانګې لپاره د ځواب انجن اصلاح کول.",
@@ -5666,7 +5666,6 @@
       "ai-consultancy": "اجرایوي AI ستراتیژي، پیلوټان ​​او د ROI چوکاټونه.",
       "ai-in-wordpress": "Chatbots، د منځپانګې AI، اتوماتیک او دودیز AI ځانګړتیاوې ستاسو په ورڈپریس سایټ کې جوړ شوي.",
       "wordpress-beheer": "د متخصص ورڈپریس پاملرنه ترڅو ستاسو سایټ په اسانۍ سره پرمخ بوځي.",
-      "wordpress-maintenance-updates": "روان ورڈپریس کور، پلگ ان او د موضوع تازه معلومات د بیک اپ، څارنې او پاملرنې سره.",
       "webdesign-support": "دودیز ویب پاڼې او د PHP، HTML، CSS، JavaScript او Next.js لپاره روان ملاتړ - نه WordPress.",
       "custom-webdesign": "د پکسل تیز، د تبادلې متمرکز ویب پاڼې له سکریچ څخه جوړ شوي.",
       "php-web-development": "قوي پی ایچ پی غوښتنلیکونه، APIs او د میراث عصري کول.",
@@ -5692,7 +5691,8 @@
       "briefpapier": "د لیټر هیډ ډیزاین او په کوچني یا لوی مقدار کې چاپ کول.",
       "flyers-posters": "د الوتونکي او پوستر ډیزاین او په کوچنیو یا لوی مقدارونو کې چاپ کول.",
       "stickers-packaging": "د سټیکر ډیزاین او چاپ کول - کوچنۍ بستې یا لوی منډې.",
-      "magazines-brochures": "د بروشر او مجلې ډیزاین او په کوچنیو یا لوی مقدارونو کې چاپ کول."
+      "magazines-brochures": "د بروشر او مجلې ډیزاین او په کوچنیو یا لوی مقدارونو کې چاپ کول.",
+      "wordpress-maintenance-updates": "د بیک اپ او نظارت سره مهالویش شوي ورڈپریس کور ، پلگ ان او موضوع تازه کول - په سوداګرۍ ، سوداګرۍ پرو او تصدۍ کڅوړو کې."
     },
     "pa": {
       "aeo-optimization": "ਹਵਾਲਾ ਦੇਣ ਯੋਗ, ਉੱਤਰ-ਤਿਆਰ ਸਮੱਗਰੀ ਲਈ ਉੱਤਰ ਇੰਜਨ ਅਨੁਕੂਲਨ।",
@@ -5716,7 +5716,6 @@
       "ai-consultancy": "ਕਾਰਜਕਾਰੀ AI ਰਣਨੀਤੀ, ਪਾਇਲਟ ਅਤੇ ROI ਫਰੇਮਵਰਕ।",
       "ai-in-wordpress": "ਚੈਟਬੋਟਸ, ਸਮੱਗਰੀ AI, ਆਟੋਮੇਸ਼ਨ ਅਤੇ ਕਸਟਮ AI ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਤੁਹਾਡੀ ਵਰਡਪਰੈਸ ਸਾਈਟ ਵਿੱਚ ਬਣੀਆਂ ਹਨ।",
       "wordpress-beheer": "ਤੁਹਾਡੀ ਸਾਈਟ ਨੂੰ ਸੁਚਾਰੂ ਢੰਗ ਨਾਲ ਚਲਾਉਣ ਲਈ ਮਾਹਰ ਵਰਡਪਰੈਸ ਦੇਖਭਾਲ.",
-      "wordpress-maintenance-updates": "ਬੈਕਅੱਪ, ਨਿਗਰਾਨੀ ਅਤੇ ਦੇਖਭਾਲ ਦੇ ਨਾਲ ਜਾਰੀ ਵਰਡਪਰੈਸ ਕੋਰ, ਪਲੱਗਇਨ ਅਤੇ ਥੀਮ ਅੱਪਡੇਟ।",
       "webdesign-support": "ਕਸਟਮ ਵੈੱਬਸਾਈਟਾਂ ਅਤੇ PHP, HTML, CSS, JavaScript ਅਤੇ Next.js ਲਈ ਚੱਲ ਰਹੀ ਸਹਾਇਤਾ — ਵਰਡਪਰੈਸ ਨਹੀਂ।",
       "custom-webdesign": "ਸਕ੍ਰੈਚ ਤੋਂ ਬਣਾਈਆਂ ਗਈਆਂ ਪਿਕਸਲ-ਤਿੱਖੀਆਂ, ਪਰਿਵਰਤਨ-ਕੇਂਦਰਿਤ ਵੈੱਬਸਾਈਟਾਂ।",
       "php-web-development": "ਮਜਬੂਤ PHP ਐਪਲੀਕੇਸ਼ਨ, API ਅਤੇ ਵਿਰਾਸਤੀ ਆਧੁਨਿਕੀਕਰਨ।",
@@ -5742,7 +5741,8 @@
       "briefpapier": "ਛੋਟੀ ਜਾਂ ਵੱਡੀ ਮਾਤਰਾ ਵਿੱਚ ਲੈਟਰਹੈੱਡ ਡਿਜ਼ਾਈਨ ਅਤੇ ਪ੍ਰਿੰਟਿੰਗ।",
       "flyers-posters": "ਫਲਾਇਰ ਅਤੇ ਪੋਸਟਰ ਡਿਜ਼ਾਈਨ ਅਤੇ ਛੋਟੀ ਜਾਂ ਵੱਡੀ ਮਾਤਰਾ ਵਿੱਚ ਪ੍ਰਿੰਟਿੰਗ।",
       "stickers-packaging": "ਸਟਿੱਕਰ ਡਿਜ਼ਾਈਨ ਅਤੇ ਪ੍ਰਿੰਟਿੰਗ — ਛੋਟੇ ਬੈਚ ਜਾਂ ਵੱਡੇ ਰਨ।",
-      "magazines-brochures": "ਬਰੋਸ਼ਰ ਅਤੇ ਮੈਗਜ਼ੀਨ ਡਿਜ਼ਾਈਨ ਅਤੇ ਛੋਟੀ ਜਾਂ ਵੱਡੀ ਮਾਤਰਾ ਵਿੱਚ ਪ੍ਰਿੰਟਿੰਗ।"
+      "magazines-brochures": "ਬਰੋਸ਼ਰ ਅਤੇ ਮੈਗਜ਼ੀਨ ਡਿਜ਼ਾਈਨ ਅਤੇ ਛੋਟੀ ਜਾਂ ਵੱਡੀ ਮਾਤਰਾ ਵਿੱਚ ਪ੍ਰਿੰਟਿੰਗ।",
+      "wordpress-maintenance-updates": "ਬੈਕਅੱਪ ਅਤੇ ਨਿਗਰਾਨੀ ਦੇ ਨਾਲ ਅਨੁਸੂਚਿਤ ਵਰਡਪਰੈਸ ਕੋਰ, ਪਲੱਗਇਨ ਅਤੇ ਥੀਮ ਅੱਪਡੇਟ - ਵਪਾਰ, ਵਪਾਰਕ ਪ੍ਰੋ ਅਤੇ ਐਂਟਰਪ੍ਰਾਈਜ਼ ਪੈਕੇਜਾਂ ਵਿੱਚ।"
     },
     "te": {
       "aeo-optimization": "ఉదహరించదగిన, సమాధానానికి సిద్ధంగా ఉన్న కంటెంట్ కోసం ఆన్సర్ ఇంజిన్ ఆప్టిమైజేషన్.",
@@ -5766,7 +5766,6 @@
       "ai-consultancy": "ఎగ్జిక్యూటివ్ AI వ్యూహం, పైలట్లు మరియు ROI ఫ్రేమ్‌వర్క్‌లు.",
       "ai-in-wordpress": "చాట్‌బాట్‌లు, కంటెంట్ AI, ఆటోమేషన్ మరియు కస్టమ్ AI ఫీచర్‌లు మీ WordPress సైట్‌లో నిర్మించబడ్డాయి.",
       "wordpress-beheer": "మీ సైట్‌ని సజావుగా అమలు చేయడానికి నిపుణులైన WordPress జాగ్రత్త.",
-      "wordpress-maintenance-updates": "బ్యాకప్‌లు, పర్యవేక్షణ మరియు సంరక్షణతో కొనసాగుతున్న WordPress కోర్, ప్లగిన్ మరియు థీమ్ నవీకరణలు.",
       "webdesign-support": "కస్టమ్ వెబ్‌సైట్‌లు మరియు PHP, HTML, CSS, JavaScript మరియు Next.js కోసం కొనసాగుతున్న మద్దతు — WordPress కాదు.",
       "custom-webdesign": "పిక్సెల్-షార్ప్, కన్వర్షన్-ఫోకస్డ్ వెబ్‌సైట్‌లు మొదటి నుండి నిర్మించబడ్డాయి.",
       "php-web-development": "బలమైన PHP అప్లికేషన్లు, APIలు మరియు లెగసీ ఆధునికీకరణ.",
@@ -5792,7 +5791,8 @@
       "briefpapier": "చిన్న లేదా పెద్ద పరిమాణంలో లెటర్ హెడ్ డిజైన్ మరియు ప్రింటింగ్.",
       "flyers-posters": "ఫ్లైయర్ మరియు పోస్టర్ డిజైన్ మరియు చిన్న లేదా పెద్ద పరిమాణంలో ప్రింటింగ్.",
       "stickers-packaging": "స్టిక్కర్ డిజైన్ మరియు ప్రింటింగ్ — చిన్న బ్యాచ్‌లు లేదా పెద్ద పరుగులు.",
-      "magazines-brochures": "బ్రోచర్ మరియు మ్యాగజైన్ డిజైన్ మరియు చిన్న లేదా పెద్ద పరిమాణంలో ప్రింటింగ్."
+      "magazines-brochures": "బ్రోచర్ మరియు మ్యాగజైన్ డిజైన్ మరియు చిన్న లేదా పెద్ద పరిమాణంలో ప్రింటింగ్.",
+      "wordpress-maintenance-updates": "షెడ్యూల్ చేయబడిన WordPress కోర్, ప్లగిన్ మరియు థీమ్ అప్‌డేట్‌లు బ్యాకప్‌లు మరియు పర్యవేక్షణతో — వ్యాపారం, వ్యాపార అనుకూల మరియు ఎంటర్‌ప్రైజ్ ప్యాకేజీలలో."
     },
     "ur": {
       "aeo-optimization": "قابل حوالہ، جواب کے لیے تیار مواد کے لیے انجن کی اصلاح کا جواب دیں۔",
@@ -5816,7 +5816,6 @@
       "ai-consultancy": "ایگزیکٹو AI حکمت عملی، پائلٹس اور ROI فریم ورک۔",
       "ai-in-wordpress": "آپ کی ورڈپریس سائٹ میں شامل چیٹ بوٹس، مواد AI، آٹومیشن اور حسب ضرورت AI خصوصیات۔",
       "wordpress-beheer": "آپ کی سائٹ کو آسانی سے چلانے کے لیے ماہر ورڈپریس کی دیکھ بھال۔",
-      "wordpress-maintenance-updates": "بیک اپ، نگرانی اور دیکھ بھال کے ساتھ جاری ورڈپریس کور، پلگ ان اور تھیم اپ ڈیٹس۔",
       "webdesign-support": "اپنی مرضی کی ویب سائٹس اور PHP، HTML، CSS، JavaScript اور Next.js کے لیے جاری سپورٹ — ورڈپریس نہیں۔",
       "custom-webdesign": "Pixel-sharp، تبادلوں پر مرکوز ویب سائٹس شروع سے بنی ہیں۔",
       "php-web-development": "مضبوط پی ایچ پی ایپلی کیشنز، APIs اور میراثی جدید کاری۔",
@@ -5842,7 +5841,8 @@
       "briefpapier": "چھوٹی یا بڑی مقدار میں لیٹر ہیڈ ڈیزائن اور پرنٹنگ۔",
       "flyers-posters": "فلائر اور پوسٹر ڈیزائن کے علاوہ چھوٹی یا بڑی مقدار میں پرنٹنگ۔",
       "stickers-packaging": "اسٹیکر ڈیزائن اور پرنٹنگ - چھوٹے بیچز یا بڑے رنز۔",
-      "magazines-brochures": "بروشر اور میگزین ڈیزائن کے علاوہ چھوٹی یا بڑی مقدار میں پرنٹنگ۔"
+      "magazines-brochures": "بروشر اور میگزین ڈیزائن کے علاوہ چھوٹی یا بڑی مقدار میں پرنٹنگ۔",
+      "wordpress-maintenance-updates": "شیڈول کردہ ورڈپریس کور، پلگ ان اور تھیم اپ ڈیٹس بیک اپ اور مانیٹرنگ کے ساتھ — بزنس، بزنس پرو اور انٹرپرائز پیکجز میں۔"
     }
   },
   "labels": {

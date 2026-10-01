@@ -1,0 +1,1 @@
+Monitorowanie czasu pracy i reagowanie na alerty

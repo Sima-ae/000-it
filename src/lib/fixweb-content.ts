@@ -390,6 +390,8 @@ const pageImageFallback: Record<string, string> = {
   "vps-hosting": "/uploads/fixweb/vps-hosting.png",
   domains: "/uploads/fixweb/domains.png",
   "wordpress-beheer": "/uploads/fixweb/wordpress-beheer.png",
+  "wordpress-maintenance-updates":
+    "/uploads/fixweb/wordpress-maintenance-updates.png",
   "grafisch-design": "/uploads/fixweb/grafisch-design.png",
   "text-optimization": "/uploads/fixweb/text-optimization.png",
 };

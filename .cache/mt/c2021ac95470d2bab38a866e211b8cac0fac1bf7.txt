@@ -1,0 +1,1 @@
+Nous suivons une cadence calme et reproductible : sauvegarde → mise à jour sur le staging ou une fenêtre à faible trafic → smoke test (formulaires, paiement, connexion) → go-live → rapport. Sur Business Pro et Enterprise, nous pouvons utiliser un pipeline OTAP afin que les modifications passent en toute sécurité du développement à la production.

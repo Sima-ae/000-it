@@ -1,0 +1,1 @@
+Przestarzałe wtyczki i motywy są główną przyczyną włamań do WordPressa, uszkodzonych transakcji i nagłych przestojów. Dzięki profesjonalnej konserwacji Twoja witryna będzie bezpieczna, szybka i kompatybilna — bez konieczności korzystania z wp-admin.

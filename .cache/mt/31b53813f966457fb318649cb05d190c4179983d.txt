@@ -1,0 +1,1 @@
+İş — standart WordPress sitesi: çekirdek/eklenti/tema güncellemeleri, hızlı bakım ve isteğe bağlı yeşil yüksek hızlı barındırma. Karmaşık eklentiler, web mağazası, çok dilli veya çok siteli yok.

@@ -1,0 +1,1 @@
+Seguiamo una cadenza calma e ripetibile: backup → aggiornamento sullo staging o su una finestra poco trafficata → smoke test (moduli, checkout, login) → go-live → report. Su Business Pro ed Enterprise possiamo utilizzare una pipeline OTAP in modo che i cambiamenti passino in modo sicuro dallo sviluppo alla produzione.

@@ -262,8 +262,8 @@ export async function CatalogServiceDetail({
                       alt={content.title}
                       sizes="240px"
                       priority
-                      className="object-cover"
-                      fallbackClassName="object-cover p-0 opacity-90"
+                      className="object-contain p-2"
+                      fallbackClassName="object-contain p-2 opacity-90"
                     />
                   </TabletFrame>
                 )
