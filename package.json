@@ -27,6 +27,7 @@
     "shop:seed": "npx --yes tsx --env-file=.env scripts/seed-shop-catalog.ts",
     "shop:sync-hosting": "npx --yes tsx --env-file=.env scripts/sync-hosting-catalog.ts",
     "shop:repair-hosting": "npx --yes tsx --env-file=.env scripts/repair-hosting-after-force-seed.ts",
+    "shop:restore-hosting": "npx --yes tsx --env-file=.env scripts/restore-hosting-pre-email-state.ts",
     "news:translate": "npx --yes tsx --env-file=.env scripts/translate-news.ts",
     "kennisbank:generate": "npx --yes tsx prisma/kennisbank/generate-articles.ts",
     "kennisbank:check": "npx --yes tsx prisma/kennisbank/check-coverage.ts",
