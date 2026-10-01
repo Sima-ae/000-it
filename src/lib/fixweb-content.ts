@@ -388,7 +388,7 @@ const pageImageFallback: Record<string, string> = {
   "web-hosting": "/uploads/fixweb/web-hosting.png",
   "shared-hosting": "/uploads/fixweb/shared-hosting-category.png",
   "cloud-hosting": "/uploads/fixweb/cloud-hosting.png",
-  "reseller-hosting": "/uploads/fixweb/reseller-hosting.png",
+  "reseller-hosting": "/uploads/fixweb/reseller-hosting-hero.png",
   "wordpress-hosting": "/uploads/fixweb/wordpress-hosting.png",
   "vps-hosting": "/uploads/fixweb/vps-hosting.png",
   domains: "/uploads/fixweb/domains.png",

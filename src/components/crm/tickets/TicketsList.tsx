@@ -134,7 +134,7 @@ export function TicketsFiltersBar({
       <CardContent className="space-y-2 p-2.5 sm:p-3">
         <div className="flex flex-wrap items-center gap-2">
           <div className="relative min-w-40 flex-1">
-            <Search className="pointer-events-none absolute start-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
+            <Search className="pointer-events-none absolute inset-s-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
             <Input
               value={filters.q}
               onChange={(e) => patch({ q: e.target.value })}
@@ -438,12 +438,12 @@ export function TicketsTable({
       <div className="min-w-0 overflow-x-auto">
         <table className="w-full table-fixed border-collapse text-start">
           <colgroup>
-            <col className="w-[7.5rem]" />
+            <col className="w-30" />
             <col />
-            <col className="w-[5.75rem]" />
-            <col className="w-[7.5rem]" />
-            <col className="w-[5.5rem]" />
-            <col className="w-[6.75rem]" />
+            <col className="w-23" />
+            <col className="w-30" />
+            <col className="w-22" />
+            <col className="w-27" />
           </colgroup>
           <thead>
             <tr className="border-b border-border bg-muted/40 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
