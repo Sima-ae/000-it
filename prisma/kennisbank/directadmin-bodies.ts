@@ -651,16 +651,35 @@ export const directadminTopicBuilders: Record<string, (ctx: Ctx) => string> = {
   ].join("\n"),
 
   "cron": () => [
-    p(`Cron runt commando’s op schema (backupscripts, WP-cron alternatief, imports).`),
+    p(
+      `Een cronjob laat DirectAdmin op een vast schema een commando uitvoeren — bijvoorbeeld een onderhoudsscript, import of een vervanger voor WordPress’ eigen wp-cron.`,
+      `Je regelt dit onder <strong>Advanced Features → Cron Jobs</strong>. Dit is geen DNS- of Domain Setup-taak.`,
+    ),
     h2("Voorbereiding"),
-    ul(["Juiste commando/pad","Begrip van tijdvelden"]),
+    ul([
+      "DirectAdmin-login van het juiste gebruikersaccount",
+      "Het commando dat je wilt plannen (volledig pad naar php, curl of een script)",
+      "Gewenste frequentie (bijv. elk uur of dagelijks om 03:00)",
+    ]),
     h2("Stappen"),
-    ol(["Advanced Features → Cron Jobs","Create Cron Job","Stel minute/hour/day/month/weekday in","Vul commando in (volledig pad naar php/curl)","Sla op en check e-mailoutput indien ingesteld"]),
+    ol([
+      "Log in op DirectAdmin.",
+      "Open <strong>Advanced Features</strong> → <strong>Cron Jobs</strong>.",
+      "Klik op <strong>Create Cron Job</strong>.",
+      "Vul de tijdvelden in: Minute, Hour, Day of Month, Month, Day of Week. Voorbeeld dagelijks om 03:15: minute <code>15</code>, hour <code>3</code>, overige velden <code>*</code>.",
+      "Plak het Command met absolute paden, bijvoorbeeld <code>/usr/local/bin/php /home/GEBRUIKER/domains/domein.nl/public_html/wp-cron.php</code> of <code>curl -s https://jouwdomein.nl/wp-cron.php?doing_wp_cron >/dev/null</code>.",
+      "Beperk e-mailoutput: zet notificaties uit of redirect naar een log (<code>>/home/GEBRUIKER/cron.log 2>&1</code>).",
+      "Sla op. De job verschijnt in de lijst.",
+    ]),
     h2("Controleren"),
-    ul(["Job verschijnt in de lijst","Output/log toont succes"]),
-    tip(`Test het commando eerst handmatig via SSH als je die hebt.`),
-    warn(`Te frequente crons kunnen CPU/IO opjagen.`),
-    outro(`ext-hoe-stel-ik-cronjobs-in-via-directadmin`),
+    ul([
+      "De cronjob staat in de lijst met het juiste schema",
+      "Na de geplande tijd: log of scriptresultaat is bijgewerkt",
+      "Geen onverwachte CPU-/IO-pieken door te frequente jobs",
+    ]),
+    tip(`Test het commando eerst handmatig via SSH (als je die hebt) voordat je het plant.`),
+    warn(`Relatieve paden en ‘php’ zonder volledig pad falen vaak stil. Te frequente crons belasten de server.`),
+    outro(`ext-hoe-stel-ik-cronjobs-in-via-directadmin; php-version`),
   ].join("\n"),
 
   "ext-hoe-stel-ik-cronjobs-in-via-directadmin": () => [

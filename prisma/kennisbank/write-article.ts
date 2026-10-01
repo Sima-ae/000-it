@@ -1261,7 +1261,7 @@ export function writeArticle(article: CatalogArticle): KennisbankArticleFile {
 
   const enTitle = englishTitleFromDutch(article.title, article.slug);
 
-  // Narrow, topic-specific playbooks only (Installatron WP install).
+  // Narrow playbooks (e.g. Installatron WP install).
   const playbook = matchPlaybook(article);
   if (playbook) {
     return {
@@ -1284,7 +1284,7 @@ export function writeArticle(article: CatalogArticle): KennisbankArticleFile {
     };
   }
 
-  // Every niche gets its own unique long-form guide (not shared builders/playbooks).
+  // Procedural fallback (real panel steps — no meta-filler).
   const guide = buildUniqueLongformGuide(article, enTitle);
   return {
     slug: article.slug,
