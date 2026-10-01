@@ -1,0 +1,18 @@
+{
+  "slug": "file-manager-gebruiken-in-cyberpanel",
+  "topic": "cp-files",
+  "nl": {
+    "title": "File Manager gebruiken in CyberPanel",
+    "excerpt": "Werk in CyberPanel: juiste website selecteren, wijziging doorvoeren, OLS-cache en logs controleren.",
+    "bodyHtml": "<p>CyberPanel beheert sites op OpenLiteSpeed. Selecteer altijd de juiste website voordat je DNS, SSL, e-mail of bestanden wijzigt.</p>\n<h2>Stappen</h2>\n<ol>\n  <li>Log in op CyberPanel met de URL uit je welkomstmail.</li>\n  <li>Open Websites en kies het juiste domein.</li>\n  <li>Voer de taak uit in de bijbehorende module (SSL, Email, DNS, File Manager, Backup).</li>\n  <li>Purge OpenLiteSpeed-cache als de wijziging niet zichtbaar is.</li>\n  <li>Controleer error-logs bij 500-fouten of witte pagina’s.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Noteer oude waarden vóór je opslaat — vooral bij DNS en SSL.</p></aside>\n<p>Kom je er niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld je domeinnaam, wat je al hebt geprobeerd en eventuele foutmeldingen (tekst of screenshot).</p>\n<p>Bekijk ook andere artikelen in de kennisbank over hosting, e-mail en beveiliging.</p>",
+    "seoTitle": "File Manager gebruiken in CyberPanel | TripleZero iT",
+    "seoDescription": "Werk in CyberPanel: juiste website selecteren, wijziging doorvoeren, OLS-cache en logs controleren."
+  },
+  "en": {
+    "title": "Use File Manager in CyberPanel",
+    "excerpt": "Work in CyberPanel: select the correct website, apply the change, then check OLS cache and logs.",
+    "bodyHtml": "<p>CyberPanel manages sites on OpenLiteSpeed. Always select the correct website before changing DNS, SSL, email or files.</p>\n<h2>Steps</h2>\n<ol>\n  <li>Sign in to CyberPanel with the URL from your welcome email.</li>\n  <li>Open Websites and choose the correct domain.</li>\n  <li>Complete the task in the matching module (SSL, Email, DNS, File Manager, Backup).</li>\n  <li>Purge OpenLiteSpeed cache if the change is not visible.</li>\n  <li>Check error logs for 500 errors or blank pages.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Note old values before you save — especially for DNS and SSL.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Also browse other knowledge-base articles on hosting, email and security.</p>",
+    "seoTitle": "Use File Manager in CyberPanel | TripleZero iT",
+    "seoDescription": "Work in CyberPanel: select the correct website, apply the change, then check OLS cache and logs."
+  }
+}

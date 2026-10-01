@@ -1,0 +1,18 @@
+{
+  "slug": "hoe-gebruik-ik-ai-agents-samen-met-de-ai-scan",
+  "topic": "tz-agents-with-scan",
+  "nl": {
+    "title": "Hoe gebruik ik AI-agents samen met de AI-scan?",
+    "excerpt": "Hoe gebruik ik AI-agents samen met de AI-scan: praktische handleiding in AI-agents, met stappen, controles en wanneer je TripleZero iT support inschakelt.",
+    "bodyHtml": "<p>De <strong>AI-scan</strong> geeft scores (AEO, GEO, SEO, Performance, AI Readiness). AI-agents helpen daarna met doorlopende opvolging. Eerst meten, dan agent inzetten.</p>\n<h2>Aanbevolen volgorde</h2>\n<ol>\n  <li>Start een AI-scan op je URL.</li>\n  <li>Lees de scores en kies 1–2 prioriteiten.</li>\n  <li>Kies het passende agenttype (vaak SEO, content of analytics).</li>\n  <li>Start de agent en plan een review na de scan-opvolging.</li>\n  <li>Herhaal de scan later om vooruitgang te zien — agents vervangen de scan niet.</li>\n</ol>\n<h2>Valkuilen</h2>\n<ul>\n  <li>Agent starten zonder scan of doel.</li>\n  <li>Alleen scannen en nooit opvolgen.</li>\n  <li>Scanresultaten verwarren met agent-status RUNNING.</li>\n</ul>\n<p>Heb je na het volgen van deze stappen nog vragen? Neem contact op met TripleZero iT support via het ticketssysteem. Vermeld je pakketnaam, agenttype en status, zodat we sneller kunnen helpen.</p>\n<p>Gerelateerd: SEO-agent en AEO/GEO; resultaten meten.</p>",
+    "seoTitle": "Hoe gebruik ik AI-agents samen met de AI-scan? | TripleZero iT",
+    "seoDescription": "Hoe gebruik ik AI-agents samen met de AI-scan: praktische handleiding in AI-agents, met stappen, controles en wanneer je TripleZero iT support inschakelt."
+  },
+  "en": {
+    "title": "How do I use AI-agents samen with the AI-scan?",
+    "excerpt": "Step-by-step guide: How do I use AI-agents samen with the AI-scan via the TripleZero iT client panel or DirectAdmin at TripleZero iT.",
+    "bodyHtml": "<p>This guide helps you complete <strong>How do I use AI-agents samen with the AI-scan</strong> safely and in a verifiable way at TripleZero iT.</p>\n<p>We use the TripleZero iT client panel or DirectAdmin. Always work on the correct domain/account and take a backup first when the change is risky.</p>\n<h2>What you need</h2>\n<ul>\n  <li>Access to the TripleZero iT client panel or DirectAdmin.</li>\n  <li>Your domain name and any login credentials.</li>\n  <li>A recent backup before structural or risky changes.</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Sign in to the TripleZero iT client panel or DirectAdmin and select the correct domain.</li>\n  <li>Open the module that matches hosting, DNS, mail or account management.</li>\n  <li>Note the old value, change it and save.</li>\n  <li>Test the result and document what you changed.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Expected behaviour is visible outside the panel.</li>\n  <li>No new errors in logs or monitoring.</li>\n  <li>Backup or rollback path is still available.</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Note old values before you save. That makes rollback faster.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not change multiple critical options at once on production.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Also browse other knowledge-base articles on hosting, email and security.</p>",
+    "seoTitle": "How do I use AI-agents samen with the AI-scan? | TripleZero iT",
+    "seoDescription": "Step-by-step guide: How do I use AI-agents samen with the AI-scan via the TripleZero iT client panel or DirectAdmin at TripleZero iT."
+  }
+}

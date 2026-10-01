@@ -1,0 +1,18 @@
+{
+  "slug": "wat-is-het-verschil-tussen-de-diensten-aeo-geo-en-seo-optimalisatie",
+  "topic": "tz-aeo-dienst-differences",
+  "nl": {
+    "title": "Wat is het verschil tussen de diensten AEO-, GEO- en SEO-optimalisatie?",
+    "excerpt": "Wat is het verschil tussen de diensten AEO-, GEO- en SEO-optimalisatie: duidelijke uitleg van TripleZero iT — begrippen, wanneer het telt en valkuilen.",
+    "bodyHtml": "<p>TripleZero iT biedt aparte diensten: <strong>AEO-</strong>, <strong>GEO-</strong> en <strong>SEO-optimalisatie</strong>. Ze overlappen in analyse, maar verschillen in focus.</p>\n<h2>Verschil</h2>\n<ul>\n  <li>AEO — antwoordklare content, entities, schema/FAQ’s (<code>/diensten/aeo-optimization</code>).</li>\n  <li>GEO — lokaal/GBP/NAP/locatiepagina’s (<code>/diensten/geo-optimization</code>).</li>\n  <li>SEO — techniek, on-page, structuur, indexatie (<code>/diensten/seo-optimization</code>).</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> In pakketten zitten lagen gecombineerd (basic/plus/pro); losse diensten zijn gericht.</p></aside>\n<p>Heb je na het volgen van deze stappen nog vragen? Neem contact op met TripleZero iT support via het ticketssysteem of plan een afspraak. Vermeld je domein, doelen (AEO, GEO en/of SEO) en eventuele AI-scanresultaten.</p>\n<p>Gerelateerd: Samenhang AEO/GEO/SEO; pakketniveaus.</p>",
+    "seoTitle": "Wat is het verschil tussen de diensten AEO-, GEO- en SEO-optimalisatie? | TripleZero iT",
+    "seoDescription": "Wat is het verschil tussen de diensten AEO-, GEO- en SEO-optimalisatie: duidelijke uitleg van TripleZero iT — begrippen, wanneer het telt en valkuilen."
+  },
+  "en": {
+    "title": "What is the difference between the diensten AEO-, GEO- and SEO-optimalisatie?",
+    "excerpt": "Decision guide: What is the difference between the diensten AEO-, GEO- and SEO-optimalisatie — which option fits at TripleZero iT.",
+    "bodyHtml": "<p><strong>What is the difference between the diensten AEO-, GEO- and SEO-optimalisatie</strong> is about choosing between options on purpose. Below are the criteria to decide, without marketing fluff.</p>\n<h2>Compare on these points</h2>\n<ul>\n  <li>Goal: website, email, webshop, reseller or development.</li>\n  <li>Management: do you want a control panel (DirectAdmin/CyberPanel/Plesk) or mainly SSH?</li>\n  <li>Risk: downtime, mail delivery, SEO and backups.</li>\n  <li>Cost and limits: disk, inodes, traffic, support level.</li>\n</ul>\n<h2>Practical approach</h2>\n<ol>\n  <li>Write one sentence describing what you need to achieve.</li>\n  <li>Check in the TripleZero iT client panel or DirectAdmin which options your plan includes.</li>\n  <li>Pick the simplest solution that meets the requirement.</li>\n  <li>Test on staging or outside peak hours before switching production.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Document the choice so support can help faster.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not copy a competitor setup blindly — DNS and panels differ per host.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Also browse other knowledge-base articles on hosting, email and security.</p>",
+    "seoTitle": "What is the difference between the diensten AEO-, GEO- and SEO-optimalisatie? | TripleZero iT",
+    "seoDescription": "Decision guide: What is the difference between the diensten AEO-, GEO- and SEO-optimalisatie — which option fits at TripleZero iT."
+  }
+}

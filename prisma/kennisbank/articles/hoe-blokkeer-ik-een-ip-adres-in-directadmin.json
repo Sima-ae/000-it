@@ -1,0 +1,18 @@
+{
+  "slug": "hoe-blokkeer-ik-een-ip-adres-in-directadmin",
+  "topic": "ext-hoe-blokkeer-ik-een-ip-adres-in-directadmin",
+  "nl": {
+    "title": "Hoe blokkeer ik een IP-adres in DirectAdmin?",
+    "excerpt": "Blokkeer misbruikende IP’s via IP Blocker / .htaccess / CSF (afhankelijk van server).",
+    "bodyHtml": "<p>IP Blocker of htaccess deny stopt hinderlijk verkeer naar jouw user-sites.</p>\n<h2>Voorbereiding</h2>\n<ul>\n  <li>Exact IP</li>\n  <li>Bewijs uit logs/stats</li>\n</ul>\n<h2>Stappen</h2>\n<ol>\n  <li>Advanced Features → IP Blocker (indien aanwezig)</li>\n  <li>Of File Manager → .htaccess deny from IP</li>\n  <li>Test dat jij niet zelf geblokkeerd bent</li>\n  <li>Monitor of aanval stopt</li>\n</ol>\n<h2>Controleren</h2>\n<ul>\n  <li>IP krijgt 403</li>\n  <li>Legitieme users ok</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Blokkeer geen hele ranges zonder noodzaak.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Let op:</strong> Bij serverbrede aanvallen: ticket TripleZero iT i.p.v. alleen user-blocker.</p></aside>\n<p>Kom je er na deze stappen niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld hostname, DirectAdmin-gebruikersnaam (geen wachtwoord), domein en wat je al probeerde.</p>\n<p>Gerelateerd: troubleshoot; htaccess.</p>",
+    "seoTitle": "Hoe blokkeer ik een IP-adres in DirectAdmin? | TripleZero iT",
+    "seoDescription": "Blokkeer misbruikende IP’s via IP Blocker / .htaccess / CSF (afhankelijk van server)."
+  },
+  "en": {
+    "title": "How do I blokkeer I a IP-adres in DirectAdmin?",
+    "excerpt": "Step-by-step guide: How do I blokkeer I a IP-adres in DirectAdmin via DirectAdmin at TripleZero iT.",
+    "bodyHtml": "<p>This guide helps you complete <strong>How do I blokkeer I a IP-adres in DirectAdmin</strong> safely and in a verifiable way at TripleZero iT.</p>\n<p>We use DirectAdmin. Always work on the correct domain/account and take a backup first when the change is risky.</p>\n<h2>What you need</h2>\n<ul>\n  <li>Access to DirectAdmin.</li>\n  <li>Your domain name and any login credentials.</li>\n  <li>A recent backup before structural or risky changes.</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Sign in to DirectAdmin and select the correct domain or user account.</li>\n  <li>Open the relevant module (Account Manager, Email Accounts, DNS Management, File Manager, Installatron, SSL Certificates or Advanced Features).</li>\n  <li>Note the current value or status before you change anything.</li>\n  <li>Apply the change, save, and stay on this domain.</li>\n  <li>Test outside the panel (browser, webmail or external DNS lookup).</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Expected behaviour is visible outside the panel.</li>\n  <li>No new errors in logs or monitoring.</li>\n  <li>Backup or rollback path is still available.</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Note old values before you save. That makes rollback faster.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not change multiple critical options at once on production.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Also browse other knowledge-base articles on hosting, email and security.</p>",
+    "seoTitle": "How do I blokkeer I a IP-adres in DirectAdmin? | TripleZero iT",
+    "seoDescription": "Step-by-step guide: How do I blokkeer I a IP-adres in DirectAdmin via DirectAdmin at TripleZero iT."
+  }
+}

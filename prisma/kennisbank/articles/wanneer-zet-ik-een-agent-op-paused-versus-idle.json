@@ -1,0 +1,18 @@
+{
+  "slug": "wanneer-zet-ik-een-agent-op-paused-versus-idle",
+  "topic": "tz-agents-paused-vs-idle",
+  "nl": {
+    "title": "Wanneer zet ik een agent op PAUSED versus IDLE?",
+    "excerpt": "Wanneer zet ik een agent op PAUSED versus IDLE: keuzehulp van TripleZero iT met criteria, trade-offs en wanneer welke optie past.",
+    "bodyHtml": "<p><strong>PAUSED</strong> en <strong>IDLE</strong> lijken allebei “niet actief”, maar je gebruikt ze anders.</p>\n<h2>PAUSED</h2>\n<ul>\n  <li>Tijdelijke stop: je wilt zo terug starten.</li>\n  <li>Geschikt bij korte onderhoudsvensters of campagnestops.</li>\n  <li>Signaleert: “stond aan, bewust gepauzeerd”.</li>\n</ul>\n<h2>IDLE</h2>\n<ul>\n  <li>Geen actieve run; basis-/ruststand.</li>\n  <li>Geschikt als je de agent voorlopig niet inzet.</li>\n  <li>Handig na COMPLETED of als je opschoont in het overzicht.</li>\n</ul>\n<h2>Kies zo</h2>\n<ol>\n  <li>Korte onderbreking (uren/dagen) → PAUSED.</li>\n  <li>Langere pauze of geen planning → IDLE.</li>\n  <li>Storing vermoeden → eerst Idle, dan diagnose, daarna pas Start.</li>\n</ol>\n<p>Heb je na het volgen van deze stappen nog vragen? Neem contact op met TripleZero iT support via het ticketssysteem. Vermeld je pakketnaam, agenttype en status, zodat we sneller kunnen helpen.</p>\n<p>Gerelateerd: RUNNING pauzeren; migratie veilig.</p>",
+    "seoTitle": "Wanneer zet ik een agent op PAUSED versus IDLE? | TripleZero iT",
+    "seoDescription": "Wanneer zet ik een agent op PAUSED versus IDLE: keuzehulp van TripleZero iT met criteria, trade-offs en wanneer welke optie past."
+  },
+  "en": {
+    "title": "When zet I a agent on PAUSED versus IDLE?",
+    "excerpt": "Decision guide: When zet I a agent on PAUSED versus IDLE — which option fits at TripleZero iT.",
+    "bodyHtml": "<p><strong>When zet I a agent on PAUSED versus IDLE</strong> is about choosing between options on purpose. Below are the criteria to decide, without marketing fluff.</p>\n<h2>Compare on these points</h2>\n<ul>\n  <li>Goal: website, email, webshop, reseller or development.</li>\n  <li>Management: do you want a control panel (DirectAdmin/CyberPanel/Plesk) or mainly SSH?</li>\n  <li>Risk: downtime, mail delivery, SEO and backups.</li>\n  <li>Cost and limits: disk, inodes, traffic, support level.</li>\n</ul>\n<h2>Practical approach</h2>\n<ol>\n  <li>Write one sentence describing what you need to achieve.</li>\n  <li>Check in the TripleZero iT client panel or DirectAdmin which options your plan includes.</li>\n  <li>Pick the simplest solution that meets the requirement.</li>\n  <li>Test on staging or outside peak hours before switching production.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Document the choice so support can help faster.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not copy a competitor setup blindly — DNS and panels differ per host.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Also browse other knowledge-base articles on hosting, email and security.</p>",
+    "seoTitle": "When zet I a agent on PAUSED versus IDLE? | TripleZero iT",
+    "seoDescription": "Decision guide: When zet I a agent on PAUSED versus IDLE — which option fits at TripleZero iT."
+  }
+}

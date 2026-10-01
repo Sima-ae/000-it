@@ -14,16 +14,13 @@ import {
 } from "./directadmin-bodies";
 import {
   qualityRemainingExcerptsNl,
-  qualityRemainingTopicBuilders,
 } from "./quality-remaining-bodies";
 import {
   qualityW2ExcerptsNl,
-  qualityW2TopicBuilders,
 } from "./quality-w2-bodies";
 import { qualityPackExcerptsNl } from "./quality-pack-excerpts";
 import {
   qualityTopicExcerptsNl,
-  qualityTopicBuilders,
 } from "./quality-topic-bodies";
 import { microsoftTopicBuilders } from "./microsoft-bodies";
 import { pleskTopicBuilders } from "./plesk-bodies";
@@ -38,8 +35,6 @@ import { infraTopicBuilders } from "./infra-bodies";
 import { troubleshootingTopicBuilders } from "./troubleshooting-bodies";
 import { privacyComplianceTopicBuilders } from "./privacy-compliance-bodies";
 import { vergelijkingenTopicBuilders } from "./vergelijkingen-bodies";
-import { wave2ThickenTopicBuilders } from "./wave2-thicken-bodies";
-import { wave2RewriteTopicBuilders } from "./wave2-rewrite-bodies";
 
 const BRAND = "TripleZero iT";
 
@@ -1366,28 +1361,17 @@ function englishGenericBody({ title, topic }: Ctx): string {
   ].join("\n");
 }
 
-export function buildArticleHtml(
+/**
+ * Hand-crafted topic HTML only (no quality-* filler overlays, no genericBody).
+ * Used by the articles/*.json pipeline.
+ */
+export function buildHandCraftedTopicHtml(
   title: string,
   topic: string,
-  locale: string = "nl",
-): string {
+): string | null {
   const ctx = { title, topic };
-  if (locale !== "nl") {
-    return englishGenericBody(ctx);
-  }
-  // Topic-sense / strict bodies override when present (incl. explain/compare without fake stappen).
-  // Hand-crafted DirectAdmin builders apply only when no qualityTopic entry exists.
-  const topicSenseBuilder = qualityTopicBuilders[topic];
-  if (topicSenseBuilder) return topicSenseBuilder(ctx);
   const daBuilder = directadminTopicBuilders[topic];
   if (daBuilder) return daBuilder(ctx);
-  const qualityBuilder = qualityRemainingTopicBuilders[topic];
-  if (qualityBuilder) return qualityBuilder(ctx);
-  const qualityW2Builder = qualityW2TopicBuilders[topic];
-  if (qualityW2Builder) return qualityW2Builder(ctx);
-  if (topic.startsWith("gap-")) {
-    return buildGapArticleHtml(title, topic);
-  }
   const builder =
     topicBuilders[topic] ||
     agentTopicBuilders[topic] ||
@@ -1407,10 +1391,26 @@ export function buildArticleHtml(
     infraTopicBuilders[topic] ||
     troubleshootingTopicBuilders[topic] ||
     privacyComplianceTopicBuilders[topic] ||
-    vergelijkingenTopicBuilders[topic] ||
-    wave2ThickenTopicBuilders[topic] ||
-    wave2RewriteTopicBuilders[topic];
+    vergelijkingenTopicBuilders[topic];
   if (builder) return builder(ctx);
+  return null;
+}
+
+export function buildArticleHtml(
+  title: string,
+  topic: string,
+  locale: string = "nl",
+): string {
+  const ctx = { title, topic };
+  if (locale !== "nl") {
+    return englishGenericBody(ctx);
+  }
+  const hand = buildHandCraftedTopicHtml(title, topic);
+  if (hand) return hand;
+  if (topic.startsWith("gap-")) {
+    return buildGapArticleHtml(title, topic);
+  }
+  // Legacy fillers intentionally unused by the articles/*.json pipeline.
   return genericBody(ctx);
 }
 

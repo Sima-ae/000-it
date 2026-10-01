@@ -1,0 +1,18 @@
+{
+  "slug": "problemen-met-e-mail-website",
+  "topic": "troubleshoot",
+  "nl": {
+    "title": "Problemen met e-mail / website / controlpanel?",
+    "excerpt": "Eerste hulp bij mail-/site-/panelproblemen: isoleer laag (DNS, SSL, app, mail).",
+    "bodyHtml": "<p>Structureel troubleshooten voorkomt willekeurig knoppen drukken.</p>\n<h2>Voorbereiding</h2>\n<ul>\n  <li>Tijdstip</li>\n  <li>Fouttekst</li>\n  <li>Wel/niet via 4G</li>\n</ul>\n<h2>Stappen</h2>\n<ol>\n  <li>Bepaal scope: alleen jij / iedereen</li>\n  <li>Check DNS naar juiste IP</li>\n  <li>Check SSL-datum</li>\n  <li>Check panel usage/suspend</li>\n  <li>Check app (WP critical) vs. kale HTML-testbestand</li>\n  <li>Check mail via webmail vs. client</li>\n  <li>Ticket met feiten als vast</li>\n</ol>\n<h2>Controleren</h2>\n<ul>\n  <li>Oorzaaklaag benoemd</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Een <code>test.html</code> in public_html scheidt app van server.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Let op:</strong> Meerdere fixes tegelijk maken root-cause onvindbaar.</p></aside>\n<p>Kom je er na deze stappen niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld hostname, DirectAdmin-gebruikersnaam (geen wachtwoord), domein en wat je al probeerde.</p>\n<p>Gerelateerd: cant-login; wp-critical.</p>",
+    "seoTitle": "Problemen met e-mail / website / controlpanel? | TripleZero iT",
+    "seoDescription": "Eerste hulp bij mail-/site-/panelproblemen: isoleer laag (DNS, SSL, app, mail)."
+  },
+  "en": {
+    "title": "Problems with email / website / controlpanel?",
+    "excerpt": "Step-by-step guide: Problems with email / website / controlpanel via DirectAdmin at TripleZero iT.",
+    "bodyHtml": "<p>This guide helps you complete <strong>Problems with email / website / controlpanel</strong> safely and in a verifiable way at TripleZero iT.</p>\n<p>We use DirectAdmin. Always work on the correct domain/account and take a backup first when the change is risky.</p>\n<h2>What you need</h2>\n<ul>\n  <li>Access to DirectAdmin.</li>\n  <li>Your domain name and any login credentials.</li>\n  <li>A recent backup before structural or risky changes.</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Sign in to DirectAdmin and select the correct domain or user account.</li>\n  <li>Open the relevant module (Account Manager, Email Accounts, DNS Management, File Manager, Installatron, SSL Certificates or Advanced Features).</li>\n  <li>Note the current value or status before you change anything.</li>\n  <li>Apply the change, save, and stay on this domain.</li>\n  <li>Test outside the panel (browser, webmail or external DNS lookup).</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Expected behaviour is visible outside the panel.</li>\n  <li>No new errors in logs or monitoring.</li>\n  <li>Backup or rollback path is still available.</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Note old values before you save. That makes rollback faster.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not change multiple critical options at once on production.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Also browse other knowledge-base articles on hosting, email and security.</p>",
+    "seoTitle": "Problems with email / website / controlpanel? | TripleZero iT",
+    "seoDescription": "Step-by-step guide: Problems with email / website / controlpanel via DirectAdmin at TripleZero iT."
+  }
+}

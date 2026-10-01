@@ -658,6 +658,16 @@ html[data-brand="extrahosting"] .pricing-featured-pulse,
 
 .kb-article-body ol {
   list-style: decimal;
+  padding: 1rem 1rem 1rem 2.1rem;
+  border-radius: 1rem;
+  border: 1px solid color-mix(in oklab, var(--border) 85%, transparent);
+  background: color-mix(in oklab, var(--muted) 35%, transparent);
+}
+
+.kb-article-body ol > li + li {
+  margin-top: 0.35rem;
+  padding-top: 0.35rem;
+  border-top: 1px dashed color-mix(in oklab, var(--border) 70%, transparent);
 }
 
 .kb-article-body li {
@@ -667,7 +677,7 @@ html[data-brand="extrahosting"] .pricing-featured-pulse,
 
 .kb-article-body li::marker {
   color: var(--primary);
-  font-weight: 600;
+  font-weight: 650;
 }
 
 .kb-article-body a {

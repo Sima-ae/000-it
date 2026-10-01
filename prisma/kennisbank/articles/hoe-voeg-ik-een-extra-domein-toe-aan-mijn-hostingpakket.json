@@ -1,0 +1,18 @@
+{
+  "slug": "hoe-voeg-ik-een-extra-domein-toe-aan-mijn-hostingpakket",
+  "topic": "ext-hoe-voeg-ik-een-extra-domein-toe-aan-mijn-hostin",
+  "nl": {
+    "title": "Hoe voeg ik een extra domein toe aan mijn hostingpakket?",
+    "excerpt": "Extra domein op je hostingpakket: limiet checken, Domain Setup, DNS en SSL.",
+    "bodyHtml": "<p>Controleer max domains, voeg toe via Domain Setup, wijs DNS, daarna SSL/mail.</p>\n<h2>Voorbereiding</h2>\n<ul>\n  <li>Vrije domeinslot</li>\n  <li>DNS-toegang</li>\n</ul>\n<h2>Stappen</h2>\n<ol>\n  <li>Check package limits</li>\n  <li>Domain Setup → Add Another Domain</li>\n  <li>DNS A/NS zetten</li>\n  <li>Wacht propagatie</li>\n  <li>SSL + eventueel mailboxen</li>\n</ol>\n<h2>Controleren</h2>\n<ul>\n  <li>Domein actief</li>\n  <li>HTTPS werkt</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Subdomeinen tellen soms apart van addon-domeinen.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Let op:</strong> Zonder DNS blijft Add Domain “leeg” voelen.</p></aside>\n<p>Kom je er na deze stappen niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld hostname, DirectAdmin-gebruikersnaam (geen wachtwoord), domein en wat je al probeerde.</p>\n<p>Gerelateerd: add-domain-da; letsencrypt-da.</p>",
+    "seoTitle": "Hoe voeg ik een extra domein toe aan mijn hostingpakket? | TripleZero iT",
+    "seoDescription": "Extra domein op je hostingpakket: limiet checken, Domain Setup, DNS en SSL."
+  },
+  "en": {
+    "title": "How do I add a extra domain toe to my hosting plan?",
+    "excerpt": "Step-by-step guide: How do I add a extra domain toe to my hosting plan via DirectAdmin at TripleZero iT.",
+    "bodyHtml": "<p>This guide helps you complete <strong>How do I add a extra domain toe to my hosting plan</strong> safely and in a verifiable way at TripleZero iT.</p>\n<p>We use DirectAdmin. Always work on the correct domain/account and take a backup first when the change is risky.</p>\n<h2>What you need</h2>\n<ul>\n  <li>Access to DirectAdmin.</li>\n  <li>Your domain name and any login credentials.</li>\n  <li>A recent backup before structural or risky changes.</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Sign in to DirectAdmin and select the correct domain or user account.</li>\n  <li>Open the relevant module (Account Manager, Email Accounts, DNS Management, File Manager, Installatron, SSL Certificates or Advanced Features).</li>\n  <li>Note the current value or status before you change anything.</li>\n  <li>Apply the change, save, and stay on this domain.</li>\n  <li>Test outside the panel (browser, webmail or external DNS lookup).</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Expected behaviour is visible outside the panel.</li>\n  <li>No new errors in logs or monitoring.</li>\n  <li>Backup or rollback path is still available.</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Note old values before you save. That makes rollback faster.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not change multiple critical options at once on production.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Also browse other knowledge-base articles on hosting, email and security.</p>",
+    "seoTitle": "How do I add a extra domain toe to my hosting plan? | TripleZero iT",
+    "seoDescription": "Step-by-step guide: How do I add a extra domain toe to my hosting plan via DirectAdmin at TripleZero iT."
+  }
+}

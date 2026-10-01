@@ -50,6 +50,19 @@ model User {
   domainOrders       DomainOrder[]
   ownedDomains       OwnedDomain[]
   kennisbankArticles KennisbankArticle[]
+
+  // CRM Work OS
+  opsWorkspacesCreated   OpsWorkspace[]       @relation("OpsWorkspaceCreator")
+  opsBoardsCreated       OpsBoard[]           @relation("OpsBoardCreator")
+  opsBoardMemberships    OpsBoardMember[]
+  opsItemsCreated        OpsItem[]            @relation("OpsItemCreator")
+  opsItemUpdates         OpsItemUpdate[]
+  opsDashboardsCreated   OpsDashboard[]       @relation("OpsDashboardCreator")
+  opsNotifications       OpsNotification[]
+  workSessions           WorkSession[]
+  workLogs               WorkLog[]
+  weeklyBriefsCreated    WeeklyBrief[]        @relation("WeeklyBriefCreator")
+  opsChecklistCompletions OpsChecklistCompletion[]
 }
 
 model Account {
@@ -141,6 +154,8 @@ model Client {
   crmNotes   CrmNote[]
   tickets    SupportTicket[]
   invoices   Invoice[]
+  opsItems   OpsItem[]
+  workLogs   WorkLog[]
   createdAt  DateTime     @default(now())
   updatedAt  DateTime     @updatedAt
 
@@ -409,6 +424,8 @@ model ContactLead {
   convertedClientId String?
   userId            String?
   user              User?      @relation("LeadSubmitter", fields: [userId], references: [id], onDelete: SetNull)
+  opsItems          OpsItem[]
+  workLogs          WorkLog[]
   createdAt         DateTime   @default(now())
   updatedAt         DateTime   @updatedAt
 
@@ -951,4 +968,393 @@ model EntitySlug {
   @@unique([entityType, entityKey, locale])
   @@unique([entityType, locale, slug])
   @@index([entityType, locale])
+}
+
+// ─── CRM Work OS (Monday.com-class boards + time/work ops) ───────────────────
+
+model OpsWorkspace {
+  id          String     @id @default(cuid())
+  name        String
+  description String?    @db.Text
+  createdById String
+  createdBy   User       @relation("OpsWorkspaceCreator", fields: [createdById], references: [id], onDelete: Cascade)
+  boards      OpsBoard[]
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  @@index([createdById])
+}
+
+model OpsBoard {
+  id          String           @id @default(cuid())
+  workspaceId String
+  workspace   OpsWorkspace     @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  name        String
+  description String?          @db.Text
+  website     WorkWebsite?
+  templateKey String?
+  createdById String
+  createdBy   User             @relation("OpsBoardCreator", fields: [createdById], references: [id], onDelete: Cascade)
+  members     OpsBoardMember[]
+  groups      OpsGroup[]
+  columns     OpsColumn[]
+  items       OpsItem[]
+  views       OpsBoardView[]
+  automations OpsAutomation[]
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+
+  @@index([workspaceId])
+  @@index([createdById])
+  @@index([templateKey])
+}
+
+model OpsBoardMember {
+  id        String             @id @default(cuid())
+  boardId   String
+  board     OpsBoard           @relation(fields: [boardId], references: [id], onDelete: Cascade)
+  userId    String
+  user      User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+  role      OpsBoardMemberRole @default(EDITOR)
+  createdAt DateTime           @default(now())
+
+  @@unique([boardId, userId])
+  @@index([userId])
+}
+
+model OpsGroup {
+  id        String    @id @default(cuid())
+  boardId   String
+  board     OpsBoard  @relation(fields: [boardId], references: [id], onDelete: Cascade)
+  name      String
+  color     String?
+  sortOrder Int       @default(0)
+  collapsed Boolean   @default(false)
+  items     OpsItem[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  @@index([boardId, sortOrder])
+}
+
+model OpsColumn {
+  id        String        @id @default(cuid())
+  boardId   String
+  board     OpsBoard      @relation(fields: [boardId], references: [id], onDelete: Cascade)
+  title     String
+  type      OpsColumnType
+  settings  Json?
+  sortOrder Int           @default(0)
+  width     Int?
+  cells     OpsCell[]
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
+
+  @@index([boardId, sortOrder])
+}
+
+model OpsItem {
+  id             String          @id @default(cuid())
+  boardId        String
+  board          OpsBoard        @relation(fields: [boardId], references: [id], onDelete: Cascade)
+  groupId        String
+  group          OpsGroup        @relation(fields: [groupId], references: [id], onDelete: Cascade)
+  name           String
+  sortOrder      Int             @default(0)
+  createdById    String
+  createdBy      User            @relation("OpsItemCreator", fields: [createdById], references: [id], onDelete: Cascade)
+  clientId       String?
+  client         Client?         @relation(fields: [clientId], references: [id], onDelete: SetNull)
+  contactLeadId  String?
+  contactLead    ContactLead?    @relation(fields: [contactLeadId], references: [id], onDelete: SetNull)
+  cells          OpsCell[]
+  subitems       OpsSubitem[]
+  updates        OpsItemUpdate[]
+  workSessions   WorkSession[]
+  workLogs       WorkLog[]
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+
+  @@index([boardId, groupId, sortOrder])
+  @@index([createdById])
+  @@index([clientId])
+  @@index([contactLeadId])
+}
+
+model OpsSubitem {
+  id        String   @id @default(cuid())
+  itemId    String
+  item      OpsItem  @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  name      String
+  sortOrder Int      @default(0)
+  status    String?
+  dueDate   DateTime?
+  assigneeIds Json?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([itemId, sortOrder])
+}
+
+model OpsCell {
+  id         String    @id @default(cuid())
+  itemId     String
+  item       OpsItem   @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  columnId   String
+  column     OpsColumn @relation(fields: [columnId], references: [id], onDelete: Cascade)
+  value      Json?
+  updatedAt  DateTime  @updatedAt
+
+  @@unique([itemId, columnId])
+  @@index([columnId])
+}
+
+model OpsItemUpdate {
+  id        String   @id @default(cuid())
+  itemId    String
+  item      OpsItem  @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  body      String   @db.Text
+  createdAt DateTime @default(now())
+
+  @@index([itemId, createdAt])
+  @@index([userId])
+}
+
+model OpsBoardView {
+  id        String           @id @default(cuid())
+  boardId   String
+  board     OpsBoard         @relation(fields: [boardId], references: [id], onDelete: Cascade)
+  name      String
+  type      OpsBoardViewType @default(TABLE)
+  config    Json?
+  sortOrder Int              @default(0)
+  createdAt DateTime         @default(now())
+  updatedAt DateTime         @updatedAt
+
+  @@index([boardId, sortOrder])
+}
+
+model OpsDashboard {
+  id          String      @id @default(cuid())
+  name        String
+  createdById String
+  createdBy   User        @relation("OpsDashboardCreator", fields: [createdById], references: [id], onDelete: Cascade)
+  widgets     OpsWidget[]
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  @@index([createdById])
+}
+
+model OpsWidget {
+  id          String         @id @default(cuid())
+  dashboardId String
+  dashboard   OpsDashboard   @relation(fields: [dashboardId], references: [id], onDelete: Cascade)
+  title       String
+  type        OpsWidgetType  @default(COUNT)
+  config      Json?
+  sortOrder   Int            @default(0)
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+
+  @@index([dashboardId, sortOrder])
+}
+
+model OpsAutomation {
+  id        String   @id @default(cuid())
+  boardId   String
+  board     OpsBoard @relation(fields: [boardId], references: [id], onDelete: Cascade)
+  name      String
+  enabled   Boolean  @default(true)
+  trigger   Json
+  actions   Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([boardId, enabled])
+}
+
+model OpsNotification {
+  id        String    @id @default(cuid())
+  userId    String
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  type      String
+  title     String
+  body      String?   @db.Text
+  href      String?
+  readAt    DateTime?
+  payload   Json?
+  createdAt DateTime  @default(now())
+
+  @@index([userId, readAt, createdAt])
+}
+
+model WorkSession {
+  id           String    @id @default(cuid())
+  userId       String
+  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  clockInAt    DateTime
+  clockOutAt   DateTime?
+  breakMinutes Int       @default(75)
+  note         String?   @db.Text
+  /// Amsterdam calendar day YYYY-MM-DD
+  date         String
+  itemId       String?
+  item         OpsItem?  @relation(fields: [itemId], references: [id], onDelete: SetNull)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  @@index([userId, date])
+  @@index([userId, clockOutAt])
+  @@index([itemId])
+}
+
+model WorkLog {
+  id            String           @id @default(cuid())
+  userId        String
+  user          User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  /// Amsterdam calendar day YYYY-MM-DD
+  date          String
+  website       WorkWebsite
+  activityType  WorkActivityType
+  contact       String?
+  status        WorkLogStatus    @default(IN_PROGRESS)
+  notes         String?          @db.Text
+  nextFollowUp  DateTime?
+  minutesSpent  Int?
+  itemId        String?
+  item          OpsItem?         @relation(fields: [itemId], references: [id], onDelete: SetNull)
+  clientId      String?
+  client        Client?          @relation(fields: [clientId], references: [id], onDelete: SetNull)
+  contactLeadId String?
+  contactLead   ContactLead?     @relation(fields: [contactLeadId], references: [id], onDelete: SetNull)
+  createdAt     DateTime         @default(now())
+  updatedAt     DateTime         @updatedAt
+
+  @@index([userId, date])
+  @@index([website, activityType])
+  @@index([status, nextFollowUp])
+  @@index([itemId])
+  @@index([clientId])
+}
+
+model WeeklyBrief {
+  id          String    @id @default(cuid())
+  weekStart   String
+  body        Json
+  createdById String
+  createdBy   User      @relation("WeeklyBriefCreator", fields: [createdById], references: [id], onDelete: Cascade)
+  publishedAt DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@unique([weekStart])
+  @@index([createdById])
+}
+
+model OpsChecklistItem {
+  id             String                   @id @default(cuid())
+  period         OpsPeriod
+  dayKey         String
+  title          String
+  sortOrder      Int                      @default(0)
+  defaultMinutes Int?
+  completions    OpsChecklistCompletion[]
+  createdAt      DateTime                 @default(now())
+
+  @@index([period, dayKey, sortOrder])
+  @@unique([period, dayKey, title])
+}
+
+model OpsChecklistCompletion {
+  id          String           @id @default(cuid())
+  itemId      String
+  item        OpsChecklistItem @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  userId      String
+  user        User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  completedAt DateTime         @default(now())
+  weekStart   String?
+
+  @@unique([itemId, userId, weekStart])
+  @@index([userId, weekStart])
+}
+
+enum WorkWebsite {
+  TRIPLEZERO
+  EXTRAHOSTING
+}
+
+enum WorkActivityType {
+  GUEST_POST_PITCH
+  DIRECTORY_SUBMISSION
+  SOCIAL_POST
+  SOCIAL_ENGAGEMENT
+  OUTREACH_EMAIL
+  FOLLOW_UP
+  CONTENT_WRITING
+  DESIGN
+  DEV_FIX
+  COMMUNITY
+  PROSPECT_RESEARCH
+  TEMPLATE
+  PLANNING
+  OTHER
+}
+
+enum WorkLogStatus {
+  SENT
+  FOLLOW_UP
+  WON
+  LOST
+  IN_PROGRESS
+  DONE
+}
+
+enum OpsPeriod {
+  DAILY
+  WEEKLY
+  MONTHLY
+  ONBOARDING
+}
+
+enum OpsBoardMemberRole {
+  OWNER
+  EDITOR
+  VIEWER
+}
+
+enum OpsColumnType {
+  STATUS
+  PEOPLE
+  DATE
+  TIMELINE
+  NUMBER
+  TEXT
+  LONG_TEXT
+  DROPDOWN
+  CHECKBOX
+  TAGS
+  LINK
+  EMAIL
+  PHONE
+  FILE
+  RATING
+  WEBSITE
+  ACTIVITY_TYPE
+}
+
+enum OpsBoardViewType {
+  TABLE
+  KANBAN
+  CALENDAR
+  TIMELINE
+}
+
+enum OpsWidgetType {
+  COUNT
+  CHART
+  BATTERY
+  LIST
 }

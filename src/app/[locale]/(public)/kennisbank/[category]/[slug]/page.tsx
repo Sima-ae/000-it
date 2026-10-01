@@ -182,10 +182,10 @@ export default async function KennisbankArticlePage({ params }: Params) {
                 <p className="text-xs font-semibold uppercase tracking-[0.14em] text-accent">
                   {cat.name}
                 </p>
-                <h1 className="font-display mt-3 text-3xl font-semibold tracking-tight text-primary md:text-4xl">
+                <h1 className="font-display mt-3 text-3xl font-semibold tracking-tight text-primary md:text-4xl text-balance">
                   {article.title}
                 </h1>
-                <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
+                <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground text-pretty">
                   {article.excerpt}
                 </p>
                 {article.categoryNames.length > 1 ? (
@@ -205,14 +205,7 @@ export default async function KennisbankArticlePage({ params }: Params) {
             </Reveal>
 
             <GlassCard interactive={false} className="p-6 md:p-9">
-              <KennisbankArticleBody
-                html={bodyWithIds}
-                categorySlug={category}
-                categoryLabel={cat.name}
-                footerLabel={t("illustrationFooter")}
-                heroCaption={t("heroCaption")}
-                midCaption={t("midCaption")}
-              />
+              <KennisbankArticleBody html={bodyWithIds} />
             </GlassCard>
           </article>
 

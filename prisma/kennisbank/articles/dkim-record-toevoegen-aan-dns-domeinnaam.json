@@ -1,0 +1,18 @@
+{
+  "slug": "dkim-record-toevoegen-aan-dns-domeinnaam",
+  "topic": "dkim",
+  "nl": {
+    "title": "DKIM-record toevoegen aan DNS domeinnaam",
+    "excerpt": "Schakel DKIM in DirectAdmin in en controleer het DNS TXT-record voor uitgaande mail.",
+    "bodyHtml": "<p>DKIM zet een cryptografische handtekening op uitgaande berichten. Ontvangende servers zien zo of de mail onderweg is gewijzigd en of die bij jouw domein hoort.</p>\n<h2>Stappen</h2>\n<ol>\n  <li>Log in op DirectAdmin en selecteer het domein.</li>\n  <li>Open E-mailauthenticatie / E-mailgegevens (of DNS Management).</li>\n  <li>Schakel DKIM in; DirectAdmin publiceert meestal automatisch het TXT-record.</li>\n  <li>Controleer in DNS of het DKIM-record zichtbaar is.</li>\n  <li>Verstuur een testmail en zoek in de headers naar <code>dkim=pass</code>.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Combineer DKIM met SPF en rond daarna af met DMARC.</p></aside>\n<p>Kom je er niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld je domeinnaam, wat je al hebt geprobeerd en eventuele foutmeldingen (tekst of screenshot).</p>\n<p>Gerelateerd: SPF, DMARC.</p>",
+    "seoTitle": "DKIM-record toevoegen aan DNS domeinnaam | TripleZero iT",
+    "seoDescription": "Schakel DKIM in DirectAdmin in en controleer het DNS TXT-record voor uitgaande mail."
+  },
+  "en": {
+    "title": "Add DKIM record to DNS domain name",
+    "excerpt": "Enable DKIM in DirectAdmin and confirm the DNS TXT record for outbound mail.",
+    "bodyHtml": "<p>DKIM adds a cryptographic signature to outbound messages. Receiving servers can tell whether the mail changed in transit and whether it belongs to your domain.</p>\n<h2>Steps</h2>\n<ol>\n  <li>Sign in to DirectAdmin and select the domain.</li>\n  <li>Open Email authentication / Email accounts (or DNS Management).</li>\n  <li>Enable DKIM; DirectAdmin usually publishes the TXT record automatically.</li>\n  <li>Confirm the DKIM record is visible in DNS.</li>\n  <li>Send a test message and look for <code>dkim=pass</code> in the headers.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Combine DKIM with SPF, then finish with DMARC.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: SPF, DMARC.</p>",
+    "seoTitle": "Add DKIM record to DNS domain name | TripleZero iT",
+    "seoDescription": "Enable DKIM in DirectAdmin and confirm the DNS TXT record for outbound mail."
+  }
+}

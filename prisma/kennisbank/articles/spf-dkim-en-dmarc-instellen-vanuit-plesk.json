@@ -1,0 +1,18 @@
+{
+  "slug": "spf-dkim-en-dmarc-instellen-vanuit-plesk",
+  "topic": "tz-pl-spf-dkim-dmarc",
+  "nl": {
+    "title": "SPF, DKIM en DMARC instellen vanuit Plesk",
+    "excerpt": "Voeg één SPF TXT-record toe in DNS zodat ontvangende servers weten wie namens jouw domein mag mailen.",
+    "bodyHtml": "<p>SPF (Sender Policy Framework) is een DNS TXT-record dat opsomt welke servers e-mail mogen versturen voor jouw domein. Zonder geldig SPF belandt uitgaande mail vaker in spam.</p>\n<p>Bij TripleZero iT beheer je dit in DNS via het klantenpanel of DirectAdmin. Houd het bij <strong>één</strong> SPF-record per domein.</p>\n<h2>Stappen</h2>\n<ol>\n  <li>Open DNS-beheer voor het juiste domein.</li>\n  <li>Zoek bestaande TXT-records die met <code>v=spf1</code> beginnen. Meerdere SPF-records samenvoegen of opschonen.</li>\n  <li>Voeg op de root (@) één TXT toe met het beleid dat bij jouw mailplatform hoort (include van TripleZero iT / externe SMTP).</li>\n  <li>Sla op en wacht op propagatie.</li>\n  <li>Stuur een testmail en controleer in de headers op <code>spf=pass</code>.</li>\n</ol>\n<h2>Valkuilen</h2>\n<ul>\n  <li>Meer dan één SPF-record op hetzelfde domein.</li>\n  <li>Meer dan 10 DNS-lookups in het beleid.</li>\n  <li>Direct <code>-all</code> terwijl nieuwsbrief- of CRM-SMTP nog ontbreekt.</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Begin met <code>~all</code> tot alle verzendsystemen zijn opgenomen; koppel daarna DKIM en DMARC.</p></aside>\n<p>Kom je er niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld je domeinnaam, wat je al hebt geprobeerd en eventuele foutmeldingen (tekst of screenshot).</p>\n<p>Gerelateerd: DKIM, DMARC.</p>",
+    "seoTitle": "SPF, DKIM en DMARC instellen vanuit Plesk | TripleZero iT",
+    "seoDescription": "Voeg één SPF TXT-record toe in DNS zodat ontvangende servers weten wie namens jouw domein mag mailen."
+  },
+  "en": {
+    "title": "Set up SPF, DKIM and DMARC vanuit Plesk",
+    "excerpt": "Add a single SPF TXT record in DNS so receivers know who may send mail for your domain.",
+    "bodyHtml": "<p>SPF (Sender Policy Framework) is a DNS TXT record that lists which servers may send email for your domain. Without valid SPF, outbound mail lands in spam more often.</p>\n<p>At TripleZero iT you edit this in DNS via the client panel or DirectAdmin. Keep <strong>one</strong> SPF record per domain.</p>\n<h2>Steps</h2>\n<ol>\n  <li>Open DNS management for the correct domain.</li>\n  <li>Find existing TXT records starting with <code>v=spf1</code>. Merge or clean up duplicates.</li>\n  <li>On the root (@), add one TXT with the policy for your mail platform (TripleZero iT include / external SMTP).</li>\n  <li>Save and wait for propagation.</li>\n  <li>Send a test message and check headers for <code>spf=pass</code>.</li>\n</ol>\n<h2>Pitfalls</h2>\n<ul>\n  <li>More than one SPF record on the same domain.</li>\n  <li>More than 10 DNS lookups in the policy.</li>\n  <li>Jumping to <code>-all</code> while newsletter or CRM SMTP is still missing.</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Start with <code>~all</code> until every sender is included; then add DKIM and DMARC.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: DKIM, DMARC.</p>",
+    "seoTitle": "Set up SPF, DKIM and DMARC vanuit Plesk | TripleZero iT",
+    "seoDescription": "Add a single SPF TXT record in DNS so receivers know who may send mail for your domain."
+  }
+}

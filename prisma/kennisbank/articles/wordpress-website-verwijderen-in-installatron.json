@@ -1,0 +1,18 @@
+{
+  "slug": "wordpress-website-verwijderen-in-installatron",
+  "topic": "installatron-delete",
+  "nl": {
+    "title": "WordPress website verwijderen in Installatron",
+    "excerpt": "Verwijder een WordPress-installatie netjes via Installatron, inclusief bestanden en database als je dat kiest.",
+    "bodyHtml": "<p>Verwijder WordPress via Installatron in plaats van alleen mappen te wissen. Zo blijven databases en Installatron-registraties niet achter.</p>\n<h2>Voorbereiding</h2>\n<ul>\n  <li>Bevestig dat je de juiste site selecteert.</li>\n  <li>Maak eerst een backup als je iets wilt bewaren.</li>\n</ul>\n<h2>Stappen</h2>\n<ol>\n  <li>Open Installatron → My Applications.</li>\n  <li>Selecteer de WordPress-installatie.</li>\n  <li>Kies <strong>Uninstall</strong> / <strong>Delete</strong>.</li>\n  <li>Geef aan of bestanden en database mee verwijderd moeten worden.</li>\n  <li>Bevestig de actie.</li>\n  <li>Controleer File Manager en MySQL Management of alles weg is zoals bedoeld.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Wil je later terug? Maak eerst een Installatron-backup of exporteer de database.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Let op:</strong> Verkeerde applicatie deïnstalleren is zonder backup meestal definitief.</p></aside>\n<p>Kom je er niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld je domeinnaam, wat je al hebt geprobeerd en eventuele foutmeldingen (tekst of screenshot).</p>\n<p>Gerelateerd: Installatron-backup, MySQL beheren.</p>",
+    "seoTitle": "WordPress website verwijderen in Installatron | TripleZero iT",
+    "seoDescription": "Verwijder een WordPress-installatie netjes via Installatron, inclusief bestanden en database als je dat kiest."
+  },
+  "en": {
+    "title": "Delete a WordPress site in Installatron",
+    "excerpt": "Remove a WordPress install cleanly through Installatron, including files and database when you choose to.",
+    "bodyHtml": "<p>Uninstall WordPress through Installatron instead of only deleting folders. That way databases and Installatron records do not linger.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Confirm you selected the correct site.</li>\n  <li>Create a backup first if you need to keep anything.</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Open Installatron → My Applications.</li>\n  <li>Select the WordPress install.</li>\n  <li>Choose <strong>Uninstall</strong> / <strong>Delete</strong>.</li>\n  <li>Choose whether files and the database should be removed.</li>\n  <li>Confirm the action.</li>\n  <li>Check File Manager and MySQL Management to confirm everything is gone as intended.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Want a way back? Create an Installatron backup or export the database first.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Uninstalling the wrong application is usually permanent without a backup.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: Installatron backup, manage MySQL.</p>",
+    "seoTitle": "Delete a WordPress site in Installatron | TripleZero iT",
+    "seoDescription": "Remove a WordPress install cleanly through Installatron, including files and database when you choose to."
+  }
+}

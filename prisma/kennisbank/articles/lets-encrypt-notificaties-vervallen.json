@@ -1,0 +1,18 @@
+{
+  "slug": "lets-encrypt-notificaties-vervallen",
+  "topic": "le-expire",
+  "nl": {
+    "title": "Lets Encrypt notificaties vervallen",
+    "excerpt": "Vraag een gratis Let’s Encrypt-certificaat aan in je control panel en forceer HTTPS pas daarna.",
+    "bodyHtml": "<p>Let’s Encrypt levert gratis TLS-certificaten. De aanvraag slaagt alleen als DNS van het domein al naar deze server wijst.</p>\n<h2>Stappen in DirectAdmin</h2>\n<ol>\n  <li>Controleer het A/AAAA-record van apex en www.</li>\n  <li>Open DirectAdmin → <strong>SSL Certificates</strong> / Let’s Encrypt.</li>\n  <li>Selecteer het domein (en www indien nodig) en vraag het certificaat aan.</li>\n  <li>Wacht tot de status geldig is.</li>\n  <li>Forceer HTTPS via de paneloptie of .htaccess pas ná succesvolle uitgifte.</li>\n  <li>Test de site in een privévenster op https://</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Dek apex én www in één certificaat om redirect-loops te vermijden.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Let op:</strong> Forceer geen HTTPS terwijl het certificaat nog ontbreekt.</p></aside>\n<p>Kom je er niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld je domeinnaam, wat je al hebt geprobeerd en eventuele foutmeldingen (tekst of screenshot).</p>\n<p>Gerelateerd: WordPress-URL naar HTTPS, DNS A-record.</p>",
+    "seoTitle": "Lets Encrypt notificaties vervallen | TripleZero iT",
+    "seoDescription": "Vraag een gratis Let’s Encrypt-certificaat aan in je control panel en forceer HTTPS pas daarna."
+  },
+  "en": {
+    "title": "Let's Encrypt notificaties vervallen",
+    "excerpt": "Request a free Let’s Encrypt certificate in your control panel, then force HTTPS.",
+    "bodyHtml": "<p>Let’s Encrypt issues free TLS certificates. Issuance only works when the domain DNS already points at this server.</p>\n<h2>Steps in DirectAdmin</h2>\n<ol>\n  <li>Confirm the A/AAAA record for apex and www.</li>\n  <li>Open DirectAdmin → <strong>SSL Certificates</strong> / Let’s Encrypt.</li>\n  <li>Select the domain (and www if needed) and request the certificate.</li>\n  <li>Wait until the status is valid.</li>\n  <li>Force HTTPS via the panel option or .htaccess only after successful issuance.</li>\n  <li>Test the site in a private window on https://</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Cover apex and www in one certificate to avoid redirect loops.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not force HTTPS while the certificate is still missing.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: WordPress URL to HTTPS, DNS A record.</p>",
+    "seoTitle": "Let's Encrypt notificaties vervallen | TripleZero iT",
+    "seoDescription": "Request a free Let’s Encrypt certificate in your control panel, then force HTTPS."
+  }
+}

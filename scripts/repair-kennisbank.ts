@@ -1,37 +1,25 @@
 #!/usr/bin/env tsx
 /**
- * Repair corrupted Kennisbank EN (and optionally all other locales).
+ * Sync kennisbank NL+EN from prisma/kennisbank/articles/{slug}.json
+ * and purge other article locales (UI falls back to nl → en).
  *
- * Root cause: seed used englishTitleFromSlug() — a word-by-word slug glossary
- * that left Dutch tokens in "English" titles (e.g. "How meet I or … werk resultaat").
- * Other locales were then machine-translated FROM that broken EN.
- *
- * This script:
- *   1. Re-syncs NL title/excerpt/body from catalog.json (source of truth)
- *   2. Rebuilds EN via proper NL→EN machine translation (title + excerpt + body)
- *   3. Optionally fills every other locale from the new EN (--all).
- *      Already-correct locales are skipped unless --force is passed.
- *
- * Usage (on server, after deploy):
- *   npm run kennisbank:repair -- --en-only --delay=2500 --field-delay=600 --limit=20
- *   npm run kennisbank:repair -- --en-only --delay=2500 --offset=20 --limit=20
- *   npm run kennisbank:repair -- --all --delay=2500
- *   npm run kennisbank:repair -- --nl-only
+ * Usage:
+ *   npm run kennisbank:repair -- --nl-en
+ *   npm run kennisbank:repair -- --nl-en --limit=50
  *   npm run kennisbank:repair -- --purge-other
- *     → delete broken non-NL rows so UI falls back to clean Dutch immediately
+ *   npm run kennisbank:repair -- --nl-en --force
  *
- * Tip: do NOT run --limit=350 in one shot. Free MT rate-limits hard.
- * Use batches of 15–25 with delay≥2500ms. [en-skip] means already OK (not a rate-limit skip).
+ * Legacy MT flags (--en-only / --all) remain available but prefer --nl-en
+ * after the curated article JSON rewrite.
  */
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { prisma } from "../src/lib/prisma";
 import { enabledLanguages } from "../src/i18n/languages";
-import { buildArticleHtml, buildExcerpt } from "../prisma/kennisbank/build-body";
-import { englishTitleFromSlug } from "../prisma/kennisbank/i18n";
+import { loadArticleFile } from "../prisma/kennisbank/load-article";
+import { writeArticle } from "../prisma/kennisbank/write-article";
 import {
   fillArticleTranslations,
-  isGoodArticleTranslation,
   localesNeedingArticleFill,
 } from "../src/lib/kennisbank-i18n";
 import {
@@ -39,9 +27,9 @@ import {
   translateHtml,
   translateText,
 } from "../src/lib/google-translate";
+import { isGoodArticleTranslation } from "../src/lib/kennisbank-i18n";
 
 type Catalog = {
-  categories: Array<[string, string, string] | [string, string, string, string]>;
   articles: { slug: string; title: string; categories: string[]; topic: string }[];
 };
 
@@ -56,62 +44,19 @@ function argValue(name: string): string | undefined {
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
-function isGenericEnglishBody(html: string) {
-  return (
-    /knowledge-base article explains/i.test(html) ||
-    /Professional TripleZero iT(?: Hosting)? guide:/i.test(html)
-  );
-}
-
-function needsEnglishRepair(opts: {
-  en?: {
-    title: string;
-    excerpt: string;
-    bodyHtml: string;
-    seoTitle: string | null;
-    seoDescription: string | null;
-  } | null;
-  nlTitle: string;
-  nlExcerpt: string;
-  nlBody: string;
-  slug: string;
-}): boolean {
-  const en = opts.en;
-  if (!en?.title?.trim() || !en.bodyHtml?.trim() || !en.excerpt?.trim()) return true;
-  const glossary = englishTitleFromSlug(opts.slug, opts.nlTitle);
-  if (en.title.trim() === glossary.trim()) return true;
-  if (isGenericEnglishBody(en.bodyHtml)) return true;
-  if (en.title.trim() === opts.nlTitle.trim()) return true;
-  return !isGoodArticleTranslation({
-    locale: "en",
-    title: en.title,
-    excerpt: en.excerpt,
-    bodyHtml: en.bodyHtml,
-    source: {
-      title: opts.nlTitle,
-      excerpt: opts.nlExcerpt,
-      bodyHtml: opts.nlBody,
-      seoTitle: null,
-      seoDescription: null,
-    },
-    sourceLocale: "nl",
-    nlTitle: opts.nlTitle,
-  }) || !isAcceptableTranslation(opts.nlTitle, en.title, "nl", "en");
-}
-
 async function main() {
   const force = argFlag("force");
+  const nlEn = argFlag("nl-en") || (!argFlag("en-only") && !argFlag("all") && !argFlag("nl-only") && !argFlag("purge-other"));
   const nlOnly = argFlag("nl-only");
   const enOnly = argFlag("en-only");
   const allLocales = argFlag("all");
-  const purgeOther = argFlag("purge-other");
+  const purgeOther = argFlag("purge-other") || nlEn;
   const limit = Math.max(1, Number(argValue("limit") || "9999") || 9999);
-  // EN repair does ~5 MT calls per article; default slower to avoid Google 429s.
-  const defaultDelay = enOnly || allLocales ? "2500" : "700";
-  const delayMs = Math.max(400, Number(argValue("delay") || defaultDelay) || Number(defaultDelay));
+  const defaultDelay = enOnly || allLocales ? "2500" : "100";
+  const delayMs = Math.max(50, Number(argValue("delay") || defaultDelay) || Number(defaultDelay));
   const fieldDelayMs = Math.max(
-    200,
-    Number(argValue("field-delay") || (enOnly ? "600" : "200")) || 200,
+    50,
+    Number(argValue("field-delay") || (enOnly ? "600" : "50")) || 50,
   );
   const offset = Math.max(0, Number(argValue("offset") || "0") || 0);
   const maxRetries = Math.max(1, Number(argValue("retries") || "4") || 4);
@@ -150,15 +95,15 @@ async function main() {
     : articles;
 
   console.log(
-    `[repair-kennisbank] articles=${scoped.length} offset=${offset} force=${force} nlOnly=${nlOnly} enOnly=${enOnly} all=${allLocales} delayMs=${delayMs} fieldDelayMs=${fieldDelayMs} retries=${maxRetries} slugsFile=${slugsFile || "-"}`,
+    `[repair-kennisbank] articles=${scoped.length} offset=${offset} force=${force} nlEn=${nlEn} nlOnly=${nlOnly} enOnly=${enOnly} all=${allLocales} purgeOther=${purgeOther}`,
   );
 
   let nlFixed = 0;
   let enFixed = 0;
-  let enSkipped = 0;
-  let enFailed = 0;
+  let purged = 0;
   let localesFixed = 0;
   let localesSkipped = 0;
+  let missing = 0;
 
   for (let i = 0; i < scoped.length; i += 1) {
     const article = scoped[i];
@@ -168,27 +113,32 @@ async function main() {
       continue;
     }
 
-    const existingNl = article.translations.find((t) => t.locale === "nl");
-    const existingEn = article.translations.find((t) => t.locale === "en");
+    const file =
+      loadArticleFile(article.slug) ||
+      writeArticle({
+        slug: cat.slug,
+        title: cat.title,
+        categories: cat.categories,
+        topic: cat.topic,
+      });
+    if (!loadArticleFile(article.slug)) missing += 1;
 
-    // 1) Restore curated Dutch from catalog
-    const bodyNl = buildArticleHtml(cat.title, cat.topic, "nl");
-    const excerptNl = buildExcerpt(cat.title, "nl", cat.topic);
     const nlPayload = {
-      title: cat.title,
-      excerpt: excerptNl,
-      bodyHtml: bodyNl,
-      seoTitle: `${cat.title} | TripleZero iT`,
-      seoDescription: excerptNl,
+      title: file.nl.title || cat.title,
+      excerpt: file.nl.excerpt,
+      bodyHtml: file.nl.bodyHtml,
+      seoTitle: file.nl.seoTitle || `${cat.title} | TripleZero iT`,
+      seoDescription: file.nl.seoDescription || file.nl.excerpt,
+    };
+    const enPayload = {
+      title: file.en.title,
+      excerpt: file.en.excerpt,
+      bodyHtml: file.en.bodyHtml,
+      seoTitle: file.en.seoTitle || `${file.en.title} | TripleZero iT`,
+      seoDescription: file.en.seoDescription || file.en.excerpt,
     };
 
-    const nlNeedsWrite =
-      force ||
-      !existingNl ||
-      existingNl.title.trim() !== cat.title.trim() ||
-      !existingNl.bodyHtml?.trim();
-
-    if (nlNeedsWrite) {
+    if (nlEn || nlOnly || force) {
       await prisma.kennisbankArticleTranslation.upsert({
         where: {
           articleId_locale: { articleId: article.id, locale: "nl" },
@@ -199,62 +149,38 @@ async function main() {
       nlFixed += 1;
     }
 
-    // Drop broken non-NL rows so list/detail immediately show clean Dutch
-    // (locale → nl → en fallback) instead of MT-from-glossary garbage.
+    if (nlEn || (!nlOnly && !enOnly && !allLocales) || force) {
+      if (!enOnly || nlEn) {
+        await prisma.kennisbankArticleTranslation.upsert({
+          where: {
+            articleId_locale: { articleId: article.id, locale: "en" },
+          },
+          create: { articleId: article.id, locale: "en", ...enPayload },
+          update: enPayload,
+        });
+        enFixed += 1;
+      }
+    }
+
     if (purgeOther) {
       const deleted = await prisma.kennisbankArticleTranslation.deleteMany({
         where: {
           articleId: article.id,
-          locale: { not: "nl" },
+          locale: { notIn: ["nl", "en"] },
         },
       });
-      if (deleted.count) {
-        console.log(
-          `[purge] ${article.slug} removed ${deleted.count} non-NL locale(s)`,
-        );
+      purged += deleted.count;
+    }
+
+    if (nlOnly || (nlEn && !allLocales)) {
+      if ((i + 1) % 50 === 0 || i === scoped.length - 1) {
+        console.log(`[nl-en] ${i + 1}/${scoped.length} ${article.slug}`);
       }
-    }
-
-    if (nlOnly) {
-      console.log(`[nl] ${i + 1}/${scoped.length} ${article.slug}`);
       continue;
     }
 
-    if (purgeOther && !enOnly && !allLocales && !force) {
-      // After purge + NL restore, stop unless caller asked to rebuild EN/all.
-      continue;
-    }
-
-    // 2) Rebuild English from Dutch via real MT
-    const repairEn =
-      force ||
-      needsEnglishRepair({
-        en: existingEn
-          ? {
-              title: existingEn.title,
-              excerpt: existingEn.excerpt,
-              bodyHtml: existingEn.bodyHtml,
-              seoTitle: existingEn.seoTitle,
-              seoDescription: existingEn.seoDescription,
-            }
-          : null,
-        nlTitle: cat.title,
-        nlExcerpt: excerptNl,
-        nlBody: bodyNl,
-        slug: article.slug,
-      });
-
-    let enSource = existingEn
-      ? {
-          title: existingEn.title,
-          excerpt: existingEn.excerpt,
-          bodyHtml: existingEn.bodyHtml,
-          seoTitle: existingEn.seoTitle,
-          seoDescription: existingEn.seoDescription,
-        }
-      : null;
-
-    if (repairEn) {
+    // Legacy path: rebuild EN via MT when explicitly requested
+    if (enOnly && !nlEn) {
       let ok = false;
       for (let attempt = 1; attempt <= maxRetries; attempt += 1) {
         try {
@@ -263,20 +189,34 @@ async function main() {
           await sleep(fieldDelayMs);
           const excerpt =
             (await translateText(nlPayload.excerpt, "en", "nl")) ||
-            buildExcerpt(title, "en");
+            enPayload.excerpt;
           await sleep(fieldDelayMs);
           const bodyHtml =
             (await translateHtml(nlPayload.bodyHtml, "en", "nl")) ||
-            buildArticleHtml(title, cat.topic, "en");
-          await sleep(fieldDelayMs);
-          const seoTitle =
-            (await translateText(nlPayload.seoTitle, "en", "nl")) ||
-            `${title} | TripleZero iT`;
-          await sleep(Math.max(200, Math.floor(fieldDelayMs * 0.7)));
-          const seoDescription =
-            (await translateText(nlPayload.seoDescription, "en", "nl")) || excerpt;
-
-          enSource = { title, excerpt, bodyHtml, seoTitle, seoDescription };
+            enPayload.bodyHtml;
+          const seoTitle = `${title} | TripleZero iT`;
+          const seoDescription = excerpt;
+          const enSource = { title, excerpt, bodyHtml, seoTitle, seoDescription };
+          const good =
+            isGoodArticleTranslation({
+              locale: "en",
+              title,
+              excerpt,
+              bodyHtml,
+              source: {
+                title: nlPayload.title,
+                excerpt: nlPayload.excerpt,
+                bodyHtml: nlPayload.bodyHtml,
+                seoTitle: null,
+                seoDescription: null,
+              },
+              sourceLocale: "nl",
+              nlTitle: nlPayload.title,
+            }) &&
+            isAcceptableTranslation(nlPayload.title, title, "nl", "en");
+          if (!good && !force) {
+            throw new Error("MT English failed quality checks");
+          }
           await prisma.kennisbankArticleTranslation.upsert({
             where: {
               articleId_locale: { articleId: article.id, locale: "en" },
@@ -286,61 +226,49 @@ async function main() {
           });
           enFixed += 1;
           ok = true;
-          console.log(
-            `[en] ${i + 1}/${scoped.length} ${article.slug} → ${title.slice(0, 70)}`,
-          );
+          console.log(`[en-mt] ${article.slug} → ${title.slice(0, 70)}`);
           await sleep(delayMs);
           break;
         } catch (error) {
           const msg = error instanceof Error ? error.message : String(error);
-          const limited =
-            /rate-limited|429|503|DOCTYPE|not valid JSON|Unexpected token/i.test(msg);
-          const wait = limited
-            ? Math.min(180_000, 25_000 * attempt)
-            : 3_000 * attempt;
-          console.error(
-            `[en-fail] ${article.slug} attempt=${attempt}/${maxRetries}: ${msg.slice(0, 160)}`,
-          );
-          if (attempt < maxRetries) {
-            console.warn(`[en-wait] sleeping ${Math.round(wait / 1000)}s then retry`);
-            await sleep(wait);
-            continue;
+          if (attempt >= maxRetries) {
+            console.error(`[en-fail] ${article.slug}: ${msg.slice(0, 160)}`);
+          } else {
+            await sleep(5_000 * attempt);
           }
-          enFailed += 1;
         }
       }
       if (!ok) continue;
-    } else {
-      enSkipped += 1;
-      console.log(
-        `[en-skip] ${i + 1}/${scoped.length} ${article.slug} (already OK)`,
-      );
     }
 
-    if (enOnly || !enSource) continue;
-
-    // 3) Fill missing/stale locales from clean EN (skip already-good ones unless --force)
-    if (allLocales || force) {
+    if (allLocales) {
+      const enRow = await prisma.kennisbankArticleTranslation.findUnique({
+        where: {
+          articleId_locale: { articleId: article.id, locale: "en" },
+        },
+      });
+      if (!enRow) continue;
+      const enSource = {
+        title: enRow.title,
+        excerpt: enRow.excerpt,
+        bodyHtml: enRow.bodyHtml,
+        seoTitle: enRow.seoTitle,
+        seoDescription: enRow.seoDescription,
+      };
       const targets = enabledLanguages()
         .map((l) => l.code)
         .filter((c) => c !== "en" && c !== "nl");
-      const nlTitle = cat.title;
       const need = force
         ? targets
         : localesNeedingArticleFill({
-            translations: article.translations.map((t) =>
-              t.locale === "en" && enSource
-                ? { ...t, ...enSource }
-                : t,
-            ),
+            translations: article.translations,
             source: enSource,
             sourceLocale: "en",
             targets,
-            nlTitle,
+            nlTitle: nlPayload.title,
           });
       if (!need.length) {
         localesSkipped += targets.length;
-        console.log(`[i18n] ${article.slug} skipped (already translated)`);
       } else {
         const { written, skipped } = await fillArticleTranslations({
           articleId: article.id,
@@ -350,19 +278,16 @@ async function main() {
           force,
           delayMs,
           existing: article.translations,
-          nlTitle,
+          nlTitle: nlPayload.title,
         });
         localesFixed += written.length;
         localesSkipped += skipped.length;
-        console.log(
-          `[i18n] ${article.slug} need=${need.length} wrote=${written.length} skipped=${skipped.length}`,
-        );
       }
     }
   }
 
   console.log(
-    `[repair-kennisbank] done nlFixed=${nlFixed} enFixed=${enFixed} enSkipped=${enSkipped} enFailed=${enFailed} localeWrites=${localesFixed} localeSkipped=${localesSkipped}`,
+    `[repair-kennisbank] done nlFixed=${nlFixed} enFixed=${enFixed} purgedOtherRows=${purged} missingJsonFallback=${missing} localeWrites=${localesFixed} localeSkipped=${localesSkipped}`,
   );
   await prisma.$disconnect();
 }

@@ -1,0 +1,18 @@
+{
+  "slug": "rollen-global-admin-versus-gebruiker",
+  "topic": "tz-m365-rollen-admin",
+  "nl": {
+    "title": "Rollen in Microsoft 365: global admin versus gebruiker",
+    "excerpt": "Rollen in Microsoft 365: global admin versus gebruiker: keuzehulp van TripleZero iT met criteria, trade-offs en wanneer welke optie past.",
+    "bodyHtml": "<p>Niet iedereen hoeft <strong>Global Administrator</strong> te zijn. Te veel globale admins vergroten het risico bij phishing of gestolen wachtwoorden.</p>\n<h2>Rollen in het kort</h2>\n<ul>\n  <li>Gebruiker — eigen mail, OneDrive, Teams.</li>\n  <li>Exchange-beheerder — mailboxen en mailstromen.</li>\n  <li>Gebruikersbeheerder — accounts aanmaken zonder volledige tenantcontrole.</li>\n  <li>Global admin — alles; beperk tot 1–3 vertrouwde personen.</li>\n</ul>\n<h2>Goede praktijk</h2>\n<ol>\n  <li>Gebruik een apart admin-account voor beheerwerk (niet je dagelijkse mailbox).</li>\n  <li>Schakel MFA verplicht in voor alle admin-rollen.</li>\n  <li>Review halfjaarlijks wie nog admin is.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Voor dagelijks werk: standaard account. Alleen elevaten wanneer nodig.</p></aside>\n<p>Heb je na het volgen van deze stappen nog vragen? Neem contact op met TripleZero iT support via het ticketssysteem. Vermeld je Microsoft 365-domein, de betrokken gebruiker en wat je al geprobeerd hebt.</p>\n<p>Gerelateerd: MFA inschakelen; verdachte inlogpogingen.</p>",
+    "seoTitle": "Rollen in Microsoft 365: global admin versus gebruiker | TripleZero iT",
+    "seoDescription": "Rollen in Microsoft 365: global admin versus gebruiker: keuzehulp van TripleZero iT met criteria, trade-offs en wanneer welke optie past."
+  },
+  "en": {
+    "title": "Rollen in Microsoft 365: global admin versus gebruiker",
+    "excerpt": "Decision guide: Rollen in Microsoft 365: global admin versus gebruiker — which option fits at TripleZero iT.",
+    "bodyHtml": "<p><strong>Rollen in Microsoft 365: global admin versus gebruiker</strong> is about choosing between options on purpose. Below are the criteria to decide, without marketing fluff.</p>\n<h2>Compare on these points</h2>\n<ul>\n  <li>Goal: website, email, webshop, reseller or development.</li>\n  <li>Management: do you want a control panel (DirectAdmin/CyberPanel/Plesk) or mainly SSH?</li>\n  <li>Risk: downtime, mail delivery, SEO and backups.</li>\n  <li>Cost and limits: disk, inodes, traffic, support level.</li>\n</ul>\n<h2>Practical approach</h2>\n<ol>\n  <li>Write one sentence describing what you need to achieve.</li>\n  <li>Check in the TripleZero iT client panel or DirectAdmin which options your plan includes.</li>\n  <li>Pick the simplest solution that meets the requirement.</li>\n  <li>Test on staging or outside peak hours before switching production.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Document the choice so support can help faster.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not copy a competitor setup blindly — DNS and panels differ per host.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Also browse other knowledge-base articles on hosting, email and security.</p>",
+    "seoTitle": "Rollen in Microsoft 365: global admin versus gebruiker | TripleZero iT",
+    "seoDescription": "Decision guide: Rollen in Microsoft 365: global admin versus gebruiker — which option fits at TripleZero iT."
+  }
+}

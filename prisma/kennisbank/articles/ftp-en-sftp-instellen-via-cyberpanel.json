@@ -1,0 +1,18 @@
+{
+  "slug": "ftp-en-sftp-instellen-via-cyberpanel",
+  "topic": "cp-ftp",
+  "nl": {
+    "title": "FTP en SFTP instellen via CyberPanel",
+    "excerpt": "Maak of gebruik een FTP/SFTP-account in DirectAdmin en verbind veilig met de juiste home-map.",
+    "bodyHtml": "<p>FTP-accounts geef je bij voorkeur een beperkte home-map (alleen de site van die developer). Gebruik waar mogelijk FTPS of SFTP in plaats van plain FTP.</p>\n<h2>Stappen</h2>\n<ol>\n  <li>Log in op DirectAdmin → <strong>FTP Management</strong>.</li>\n  <li>Maak een account aan of noteer de bestaande gebruiker.</li>\n  <li>Beperk de directory tot de bedoelde webroot indien mogelijk.</li>\n  <li>Verbind in FileZilla/Cyberduck met host, gebruikersnaam, wachtwoord en poort uit de welkomstmail.</li>\n  <li>Land in de juiste map en upload of download ter controle een klein testbestand.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Let op:</strong> Gebruik geen 777-rechten “om het te laten werken”; fix ownership/pad in plaats daarvan.</p></aside>\n<p>Kom je er niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld je domeinnaam, wat je al hebt geprobeerd en eventuele foutmeldingen (tekst of screenshot).</p>\n<p>Gerelateerd: File Manager, CHMOD.</p>",
+    "seoTitle": "FTP en SFTP instellen via CyberPanel | TripleZero iT",
+    "seoDescription": "Maak of gebruik een FTP/SFTP-account in DirectAdmin en verbind veilig met de juiste home-map."
+  },
+  "en": {
+    "title": "Set up FTP and SFTP via CyberPanel",
+    "excerpt": "Create or use an FTP/SFTP account in DirectAdmin and connect safely to the correct home directory.",
+    "bodyHtml": "<p>Prefer FTP accounts with a limited home directory (only that developer’s site). Use FTPS or SFTP instead of plain FTP when possible.</p>\n<h2>Steps</h2>\n<ol>\n  <li>Sign in to DirectAdmin → <strong>FTP Management</strong>.</li>\n  <li>Create an account or note the existing user.</li>\n  <li>Limit the directory to the intended web root when possible.</li>\n  <li>Connect in FileZilla/Cyberduck with host, username, password and port from the welcome email.</li>\n  <li>Land in the correct folder and upload or download a small test file.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not use 777 permissions “to make it work”; fix ownership/path instead.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: File Manager, CHMOD.</p>",
+    "seoTitle": "Set up FTP and SFTP via CyberPanel | TripleZero iT",
+    "seoDescription": "Create or use an FTP/SFTP account in DirectAdmin and connect safely to the correct home directory."
+  }
+}

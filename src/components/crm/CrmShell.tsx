@@ -5,31 +5,47 @@ import { usePathname } from "next/navigation";
 import { useSession } from "next-auth/react";
 import {
   Building2,
+  CalendarRange,
   CheckSquare,
+  ClipboardList,
+  Clock3,
   FileText,
   FolderKanban,
   Globe,
   LayoutDashboard,
+  LayoutGrid,
+  ListTodo,
   MessageSquare,
   Settings2,
   ShoppingBag,
   Ticket,
   Workflow,
+  BarChart3,
+  NotebookPen,
 } from "lucide-react";
 import { localizedHref } from "@/i18n/pathnames";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { cn } from "@/lib/utils";
 import { isStaffRole } from "@/lib/roles";
+import { OpsNotificationsBell } from "@/components/crm/OpsNotificationsBell";
 
 const staffLinks = [
-  { href: "/crm", key: "overview", icon: LayoutDashboard, ns: "crm" as const },
-  { href: "/crm/clients", key: "clients", icon: Building2, ns: "crm" as const },
-  { href: "/crm/leads", key: "leads", icon: Workflow, ns: "crm" as const },
-  { href: "/crm/tasks", key: "tasks", icon: CheckSquare, ns: "crm" as const },
-  { href: "/crm/tickets", key: "tickets", icon: Ticket, ns: "crm" as const },
-  { href: "/crm/invoices", key: "invoices", icon: FileText, ns: "crm" as const },
-  { href: "/crm/messages", key: "messages", icon: MessageSquare, ns: "crm" as const },
-  { href: "/crm/settings", key: "crmSettings", icon: Settings2, ns: "crm" as const },
+  { href: "/crm", key: "overview", icon: LayoutDashboard },
+  { href: "/crm/boards", key: "boards", icon: LayoutGrid },
+  { href: "/crm/my-work", key: "myWork", icon: ListTodo },
+  { href: "/crm/dashboards", key: "dashboards", icon: BarChart3 },
+  { href: "/crm/time", key: "time", icon: Clock3 },
+  { href: "/crm/work-log", key: "workLog", icon: ClipboardList },
+  { href: "/crm/reports", key: "reports", icon: CalendarRange },
+  { href: "/crm/rhythm", key: "rhythm", icon: NotebookPen },
+  { href: "/crm/briefs", key: "briefs", icon: FileText },
+  { href: "/crm/clients", key: "clients", icon: Building2 },
+  { href: "/crm/leads", key: "leads", icon: Workflow },
+  { href: "/crm/tasks", key: "tasks", icon: CheckSquare },
+  { href: "/crm/tickets", key: "tickets", icon: Ticket },
+  { href: "/crm/invoices", key: "invoices", icon: FileText },
+  { href: "/crm/messages", key: "messages", icon: MessageSquare },
+  { href: "/crm/settings", key: "crmSettings", icon: Settings2 },
 ] as const;
 
 const clientLinks = [
@@ -52,29 +68,35 @@ export function CrmNav() {
   const links = staff ? staffLinks : clientLinks;
 
   return (
-    <div className="mb-6 flex gap-1 overflow-x-auto rounded-2xl border border-border/70 bg-muted/20 p-1.5">
-      {links.map((item) => {
-        const href = localizedHref(locale, item.href);
-        const active =
-          item.href === "/crm"
-            ? pathname === href
-            : pathname === href || pathname.startsWith(`${href}/`);
-        const Icon = item.icon;
-        const label = item.ns === "dashboard" ? tDash(item.key) : tCrm(item.key);
-        return (
-          <SoftLink
-            key={item.href}
-            href={href}
-            className={cn(
-              "flex shrink-0 items-center gap-1.5 rounded-xl px-3 py-2 text-xs font-medium text-muted-foreground transition hover:bg-background hover:text-foreground md:text-sm",
-              active && "bg-background text-foreground shadow-sm",
-            )}
-          >
-            <Icon className="h-3.5 w-3.5" />
-            {label}
-          </SoftLink>
-        );
-      })}
+    <div className="mb-6 flex items-center gap-2">
+      <div className="flex flex-1 gap-1 overflow-x-auto rounded-2xl border border-border/70 bg-muted/20 p-1.5">
+        {links.map((item) => {
+          const href = localizedHref(locale, item.href);
+          const active =
+            item.href === "/crm"
+              ? pathname === href
+              : pathname === href || pathname.startsWith(`${href}/`);
+          const Icon = item.icon;
+          const label =
+            "ns" in item && item.ns === "dashboard"
+              ? tDash(item.key)
+              : tCrm(item.key);
+          return (
+            <SoftLink
+              key={item.href}
+              href={href}
+              className={cn(
+                "flex shrink-0 items-center gap-1.5 rounded-xl px-3 py-2 text-xs font-medium text-muted-foreground transition hover:bg-background hover:text-foreground md:text-sm",
+                active && "bg-background text-foreground shadow-sm",
+              )}
+            >
+              <Icon className="h-3.5 w-3.5" />
+              {label}
+            </SoftLink>
+          );
+        })}
+      </div>
+      {staff ? <OpsNotificationsBell /> : null}
     </div>
   );
 }

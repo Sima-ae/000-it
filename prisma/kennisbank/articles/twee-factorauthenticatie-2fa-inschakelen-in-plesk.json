@@ -1,0 +1,18 @@
+{
+  "slug": "twee-factorauthenticatie-2fa-inschakelen-in-plesk",
+  "topic": "tz-pl-2fa",
+  "nl": {
+    "title": "Twee-factorauthenticatie (2FA) inschakelen in Plesk",
+    "excerpt": "Schakel DirectAdmin Two-Step Authentication in, koppel een authenticator-app en bewaar backupcodes.",
+    "bodyHtml": "<p>2FA beschermt je control panel tegen gestolen wachtwoorden. Koppel een authenticator-app (niet sms als je het kunt vermijden) en bewaar herstelcodes offline.</p>\n<h2>Stappen</h2>\n<ol>\n  <li>Log in op DirectAdmin → Account Manager / Two-Step Authentication.</li>\n  <li>Start de setup en scan de QR-code met je authenticator-app.</li>\n  <li>Bevestig met een eenmalige code.</li>\n  <li>Download of noteer de backupcodes op een veilige plek.</li>\n  <li>Log uit en opnieuw in om 2FA te testen.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Let op:</strong> Verlies je app én backupcodes, dan is panelherstel via support nodig — bewaar codes dus écht.</p></aside>\n<p>Kom je er niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld je domeinnaam, wat je al hebt geprobeerd en eventuele foutmeldingen (tekst of screenshot).</p>\n<p>Gerelateerd: DirectAdmin-login, wachtwoord wijzigen.</p>",
+    "seoTitle": "Twee-factorauthenticatie (2FA) inschakelen in Plesk | TripleZero iT",
+    "seoDescription": "Schakel DirectAdmin Two-Step Authentication in, koppel een authenticator-app en bewaar backupcodes."
+  },
+  "en": {
+    "title": "Twee-factorauthenticatie (2FA) inschakelen in Plesk",
+    "excerpt": "Enable DirectAdmin Two-Step Authentication, link an authenticator app, and store backup codes.",
+    "bodyHtml": "<p>2FA protects your control panel if a password is stolen. Link an authenticator app (prefer that over SMS) and store recovery codes offline.</p>\n<h2>Steps</h2>\n<ol>\n  <li>Sign in to DirectAdmin → Account Manager / Two-Step Authentication.</li>\n  <li>Start setup and scan the QR code with your authenticator app.</li>\n  <li>Confirm with a one-time code.</li>\n  <li>Download or write down backup codes somewhere safe.</li>\n  <li>Sign out and back in to test 2FA.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> If you lose both the app and backup codes, panel recovery needs support — store codes for real.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: DirectAdmin login, change password.</p>",
+    "seoTitle": "Twee-factorauthenticatie (2FA) inschakelen in Plesk | TripleZero iT",
+    "seoDescription": "Enable DirectAdmin Two-Step Authentication, link an authenticator app, and store backup codes."
+  }
+}

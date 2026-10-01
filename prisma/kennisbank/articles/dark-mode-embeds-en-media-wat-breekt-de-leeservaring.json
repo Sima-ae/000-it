@@ -1,0 +1,18 @@
+{
+  "slug": "dark-mode-embeds-en-media-wat-breekt-de-leeservaring",
+  "topic": "tz-blog-embeds-readability",
+  "nl": {
+    "title": "Dark mode, embeds en media: wat breekt de leeservaring?",
+    "excerpt": "Dark mode, embeds en media: wat breekt de leeservaring: praktische handleiding in Berichten, met stappen, controles en wanneer je TripleZero iT support inschakelt.",
+    "bodyHtml": "<p>Dark mode, embeds en media kunnen de <strong>leeservaring breken</strong> als contrast, autofocus of cookies niet kloppen.</p>\n<h2>Risico’s</h2>\n<ul>\n  <li>Embeds met witte achtergrond in dark mode.</li>\n  <li>Autoplay video/audio.</li>\n  <li>Te veel social widgets die de kolom versmallen.</li>\n  <li>Cookie-banners die de eerste alinea bedekken.</li>\n</ul>\n<h2>Mitigatie</h2>\n<ol>\n  <li>Test posts in light én dark (als beschikbaar).</li>\n  <li>Gebruik native WP-embeds of lichte oEmbed.</li>\n  <li>Plaats zware media onder de vouw of achter een klik.</li>\n</ol>\n<p>Heb je na het volgen van deze stappen nog vragen? Neem contact op met TripleZero iT support via het ticketssysteem of plan een afspraak. Vermeld je domein, blogplatform en wat je wilt bereiken.</p>\n<p>Gerelateerd: Video/podcast embeds; typografie.</p>",
+    "seoTitle": "Dark mode, embeds en media: wat breekt de leeservaring? | TripleZero iT",
+    "seoDescription": "Dark mode, embeds en media: wat breekt de leeservaring: praktische handleiding in Berichten, met stappen, controles en wanneer je TripleZero iT support inschakelt."
+  },
+  "en": {
+    "title": "Dark mode, embeds and media: what breekt the leeservaring?",
+    "excerpt": "Step-by-step guide: Dark mode, embeds and media: what breekt the leeservaring via the TripleZero iT client panel or DirectAdmin at TripleZero iT.",
+    "bodyHtml": "<p>This guide helps you complete <strong>Dark mode, embeds and media: what breekt the leeservaring</strong> safely and in a verifiable way at TripleZero iT.</p>\n<p>We use the TripleZero iT client panel or DirectAdmin. Always work on the correct domain/account and take a backup first when the change is risky.</p>\n<h2>What you need</h2>\n<ul>\n  <li>Access to the TripleZero iT client panel or DirectAdmin.</li>\n  <li>Your domain name and any login credentials.</li>\n  <li>A recent backup before structural or risky changes.</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Sign in to the TripleZero iT client panel or DirectAdmin and select the correct domain.</li>\n  <li>Open the module that matches hosting, DNS, mail or account management.</li>\n  <li>Note the old value, change it and save.</li>\n  <li>Test the result and document what you changed.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Expected behaviour is visible outside the panel.</li>\n  <li>No new errors in logs or monitoring.</li>\n  <li>Backup or rollback path is still available.</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Note old values before you save. That makes rollback faster.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not change multiple critical options at once on production.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Also browse other knowledge-base articles on hosting, email and security.</p>",
+    "seoTitle": "Dark mode, embeds and media: what breekt the leeservaring? | TripleZero iT",
+    "seoDescription": "Step-by-step guide: Dark mode, embeds and media: what breekt the leeservaring via the TripleZero iT client panel or DirectAdmin at TripleZero iT."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "aeo-voor-b2b-versus-b2c-wat-verschilt-er-in-aanpak",
+  "topic": "tz-aeo-b2b-b2c",
+  "nl": {
+    "title": "AEO voor B2B versus B2C: wat verschilt er in aanpak?",
+    "excerpt": "AEO voor B2B versus B2C: wat verschilt er in aanpak: keuzehulp van TripleZero iT met criteria, trade-offs en wanneer welke optie past.",
+    "bodyHtml": "<p>AEO voor <strong>B2B</strong> en <strong>B2C</strong> deelt techniek, maar verschilt in vraagtypes, bewijs en koopreis.</p>\n<h2>B2B-accent</h2>\n<ul>\n  <li>Vragen over proces, compliance, integratie, ROI, implementatietijd.</li>\n  <li>Case-achtige uitleg en duidelijke scopegrenzen.</li>\n  <li>Langere overweging — content moet decision-makers bedienen.</li>\n</ul>\n<h2>B2C-accent</h2>\n<ul>\n  <li>Kortere “hoe/wat/waar”-vragen en lokale intentie (vaak + GEO).</li>\n  <li>Snelle antwoorden + sterke CTA’s.</li>\n  <li>Reviews en vertrouwenssignalen zichtbaar houden.</li>\n</ul>\n<p>Heb je na het volgen van deze stappen nog vragen? Neem contact op met TripleZero iT support via het ticketssysteem of plan een afspraak. Vermeld je domein, doelen (AEO, GEO en/of SEO) en eventuele AI-scanresultaten.</p>\n<p>Gerelateerd: GEO voor service areas; dienstenpagina’s schrijven.</p>",
+    "seoTitle": "AEO voor B2B versus B2C: wat verschilt er in aanpak? | TripleZero iT",
+    "seoDescription": "AEO voor B2B versus B2C: wat verschilt er in aanpak: keuzehulp van TripleZero iT met criteria, trade-offs en wanneer welke optie past."
+  },
+  "en": {
+    "title": "AEO for B2B versus B2C: what verschilt er in aanpak?",
+    "excerpt": "Decision guide: AEO for B2B versus B2C: what verschilt er in aanpak — which option fits at TripleZero iT.",
+    "bodyHtml": "<p><strong>AEO for B2B versus B2C: what verschilt er in aanpak</strong> is about choosing between options on purpose. Below are the criteria to decide, without marketing fluff.</p>\n<h2>Compare on these points</h2>\n<ul>\n  <li>Goal: website, email, webshop, reseller or development.</li>\n  <li>Management: do you want a control panel (DirectAdmin/CyberPanel/Plesk) or mainly SSH?</li>\n  <li>Risk: downtime, mail delivery, SEO and backups.</li>\n  <li>Cost and limits: disk, inodes, traffic, support level.</li>\n</ul>\n<h2>Practical approach</h2>\n<ol>\n  <li>Write one sentence describing what you need to achieve.</li>\n  <li>Check in the TripleZero iT client panel or DirectAdmin which options your plan includes.</li>\n  <li>Pick the simplest solution that meets the requirement.</li>\n  <li>Test on staging or outside peak hours before switching production.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Document the choice so support can help faster.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not copy a competitor setup blindly — DNS and panels differ per host.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Also browse other knowledge-base articles on hosting, email and security.</p>",
+    "seoTitle": "AEO for B2B versus B2C: what verschilt er in aanpak? | TripleZero iT",
+    "seoDescription": "Decision guide: AEO for B2B versus B2C: what verschilt er in aanpak — which option fits at TripleZero iT."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "veelgemaakte-fouten-bij-seo-die-ook-aeo-en-geo-schaden",
+  "topic": "tz-aeo-mistakes",
+  "nl": {
+    "title": "Veelgemaakte fouten bij SEO die ook AEO en GEO schaden",
+    "excerpt": "Veelgemaakte fouten bij SEO die ook AEO en GEO schaden: concrete handleiding van TripleZero iT met voorbereiding, stappen en controles.",
+    "bodyHtml": "<p>Veelgemaakte fouten die SEO én AEO/GEO schaden:</p>\n<ul>\n  <li>Dubbele of dunne locatiepagina’s.</li>\n  <li>Tegenstrijdige NAP-gegevens.</li>\n  <li>Keyword stuffing zonder duidelijke antwoorden.</li>\n  <li>Trage of niet-mobiele pagina’s.</li>\n  <li>Meerdere SEO-plugins die elkaar tegenspreken.</li>\n</ul>\n<p>Heb je na het volgen van deze stappen nog vragen? Neem contact op met TripleZero iT support via het ticketssysteem of e-mail. Vermeld altijd je domeinnaam en een duidelijke omschrijving van het probleem, zodat we sneller kunnen helpen.</p>\n<p>Bekijk ook andere artikelen in de kennisbank voor aanvullende uitleg over hosting, e-mail en beveiliging.</p>",
+    "seoTitle": "Veelgemaakte fouten bij SEO die ook AEO en GEO schaden | TripleZero iT",
+    "seoDescription": "Veelgemaakte fouten bij SEO die ook AEO en GEO schaden: concrete handleiding van TripleZero iT met voorbereiding, stappen en controles."
+  },
+  "en": {
+    "title": "Veelgemaakte fouten at SEO that also AEO and GEO schaden",
+    "excerpt": "Troubleshooting Veelgemaakte fouten at SEO that also AEO and GEO schaden: isolate first, then fix via the TripleZero iT client panel or DirectAdmin.",
+    "bodyHtml": "<p>When <strong>Veelgemaakte fouten at SEO that also AEO and GEO schaden</strong> fails, isolate the cause before changing several things at once.</p>\n<p>Check whether the issue affects one domain, one device, or everywhere. Start from the TripleZero iT client panel or DirectAdmin.</p>\n<h2>Check first</h2>\n<ol>\n  <li>Reproduce the issue and note the exact error text, time and URL/hostname.</li>\n  <li>Test from another network or mobile data to rule out local cache/DNS.</li>\n  <li>Confirm DNS points to the correct nameservers and records.</li>\n  <li>Sign in to the TripleZero iT client panel or DirectAdmin and confirm the account/domain is active (not suspended).</li>\n</ol>\n<h2>Targeted steps</h2>\n<ol>\n  <li>Sign in to the TripleZero iT client panel or DirectAdmin and select the correct domain.</li>\n  <li>Open the module that matches hosting, DNS, mail or account management.</li>\n  <li>Note the old value, change it and save.</li>\n  <li>Test the result and document what you changed.</li>\n</ol>\n<h2>If it still fails</h2>\n<ul>\n  <li>Revert recent changes (DNS, SSL, plugin, PHP version).</li>\n  <li>Inspect error_log, mail log or server monitoring around the failure time.</li>\n  <li>Open a ticket with domain, time, error message and what you already tried.</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Change one suspicious setting at a time, or the root cause disappears.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not delete directories or drop databases without a restore plan.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Also browse other knowledge-base articles on hosting, email and security.</p>",
+    "seoTitle": "Veelgemaakte fouten at SEO that also AEO and GEO schaden | TripleZero iT",
+    "seoDescription": "Troubleshooting Veelgemaakte fouten at SEO that also AEO and GEO schaden: isolate first, then fix via the TripleZero iT client panel or DirectAdmin."
+  }
+}

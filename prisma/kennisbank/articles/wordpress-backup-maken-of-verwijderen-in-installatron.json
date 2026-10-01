@@ -1,0 +1,18 @@
+{
+  "slug": "wordpress-backup-maken-of-verwijderen-in-installatron",
+  "topic": "installatron-backup",
+  "nl": {
+    "title": "WordPress backup maken of verwijderen in Installatron",
+    "excerpt": "Maak of verwijder Installatron-backups van je WordPress-site om updates veilig te doen en schijfruimte vrij te houden.",
+    "bodyHtml": "<p>Installatron-backups zijn handig vóór updates of grote wijzigingen. Ze staan bij je applicatie onder My Applications. Ruim oude backups op als je schijfquota vol raakt.</p>\n<h2>Voorbereiding</h2>\n<ul>\n  <li>DirectAdmin-login</li>\n  <li>WordPress-site zichtbaar in My Applications</li>\n</ul>\n<h2>Backup maken</h2>\n<ol>\n  <li>Open Installatron → My Applications.</li>\n  <li>Selecteer de WordPress-installatie.</li>\n  <li>Kies <strong>Backup</strong> en start de backup.</li>\n  <li>Wacht tot de backup in de lijst staat en noteer datum/tijd.</li>\n</ol>\n<h2>Backup verwijderen</h2>\n<ol>\n  <li>Open dezelfde applicatie in My Applications.</li>\n  <li>Open de backuplijst.</li>\n  <li>Verwijder backups die je niet meer nodig hebt.</li>\n  <li>Controleer daarna het schijfgebruik in DirectAdmin.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Combineer Installatron-backups met server- of JetBackup-backups voor disaster recovery.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Let op:</strong> Alleen een Installatron-backup is geen volledige offsite-strategie.</p></aside>\n<p>Kom je er niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld je domeinnaam, wat je al hebt geprobeerd en eventuele foutmeldingen (tekst of screenshot).</p>\n<p>Gerelateerd: WordPress updaten in Installatron, schijfgebruik.</p>",
+    "seoTitle": "WordPress backup maken of verwijderen in Installatron | TripleZero iT",
+    "seoDescription": "Maak of verwijder Installatron-backups van je WordPress-site om updates veilig te doen en schijfruimte vrij te houden."
+  },
+  "en": {
+    "title": "Create or delete a WordPress backup in Installatron",
+    "excerpt": "Create or remove Installatron backups of your WordPress site before updates and to free disk space.",
+    "bodyHtml": "<p>Installatron backups are useful before updates or major changes. They live with your app under My Applications. Delete old backups when disk quota gets tight.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>DirectAdmin login</li>\n  <li>WordPress site visible in My Applications</li>\n</ul>\n<h2>Create a backup</h2>\n<ol>\n  <li>Open Installatron → My Applications.</li>\n  <li>Select the WordPress install.</li>\n  <li>Choose <strong>Backup</strong> and start it.</li>\n  <li>Wait until the backup appears in the list and note the date/time.</li>\n</ol>\n<h2>Delete a backup</h2>\n<ol>\n  <li>Open the same application in My Applications.</li>\n  <li>Open the backup list.</li>\n  <li>Delete backups you no longer need.</li>\n  <li>Then check disk usage in DirectAdmin.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Combine Installatron backups with server or JetBackup backups for disaster recovery.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> An Installatron backup alone is not a full offsite strategy.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: Update WordPress in Installatron, disk usage.</p>",
+    "seoTitle": "Create or delete a WordPress backup in Installatron | TripleZero iT",
+    "seoDescription": "Create or remove Installatron backups of your WordPress site before updates and to free disk space."
+  }
+}

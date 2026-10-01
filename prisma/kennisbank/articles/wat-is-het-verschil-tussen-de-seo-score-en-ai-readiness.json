@@ -1,0 +1,18 @@
+{
+  "slug": "wat-is-het-verschil-tussen-de-seo-score-en-ai-readiness",
+  "topic": "tz-aiscan-seo-vs-readiness",
+  "nl": {
+    "title": "Wat is het verschil tussen de SEO-score en AI Readiness?",
+    "excerpt": "Wat is het verschil tussen de SEO-score en AI Readiness: duidelijke uitleg van TripleZero iT — begrippen, wanneer het telt en valkuilen.",
+    "bodyHtml": "<p>SEO-score en AI Readiness overlappen deels, maar meten iets anders. SEO kijkt vooral naar klassieke vindbaarheid; AI Readiness naar of je site klaar is voor AI-gedreven zoek- en antwoordervaringen.</p>\n<h2>SEO-score (indicatief)</h2>\n<ul>\n  <li>Titles, meta’s, structuur, crawlbaarheid, on-page duidelijkheid.</li>\n  <li>Technische basis die klassieke zoekmachines nodig hebben.</li>\n</ul>\n<h2>AI Readiness (indicatief)</h2>\n<ul>\n  <li>Of content antwoordklaar en helder is (wie/wat/waar).</li>\n  <li>Of structuur, performance en AEO/GEO/SEO samen AI-zichtbaarheid ondersteunen.</li>\n  <li>Of je site “begrijpelijk” is voor extractie en samenvatting door AI-systemen.</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Een redelijke SEO-score met lage AI Readiness komt vaak voor: klassieke on-page is oké, maar FAQ’s, entities of antwoordstructuur ontbreken.</p></aside>\n<p>Heb je na het volgen van deze stappen nog vragen? Neem contact op met TripleZero iT support via het ticketssysteem of via het contactformulier na je scan. Vermeld je website-URL en scores, zodat we sneller kunnen helpen.</p>\n<p>Gerelateerd: Wat is AI Readiness; lage AEO-score verbeteren.</p>",
+    "seoTitle": "Wat is het verschil tussen de SEO-score en AI Readiness? | TripleZero iT",
+    "seoDescription": "Wat is het verschil tussen de SEO-score en AI Readiness: duidelijke uitleg van TripleZero iT — begrippen, wanneer het telt en valkuilen."
+  },
+  "en": {
+    "title": "What is the difference between the SEO-score and AI Readiness?",
+    "excerpt": "Decision guide: What is the difference between the SEO-score and AI Readiness — which option fits at TripleZero iT.",
+    "bodyHtml": "<p><strong>What is the difference between the SEO-score and AI Readiness</strong> is about choosing between options on purpose. Below are the criteria to decide, without marketing fluff.</p>\n<h2>Compare on these points</h2>\n<ul>\n  <li>Goal: website, email, webshop, reseller or development.</li>\n  <li>Management: do you want a control panel (DirectAdmin/CyberPanel/Plesk) or mainly SSH?</li>\n  <li>Risk: downtime, mail delivery, SEO and backups.</li>\n  <li>Cost and limits: disk, inodes, traffic, support level.</li>\n</ul>\n<h2>Practical approach</h2>\n<ol>\n  <li>Write one sentence describing what you need to achieve.</li>\n  <li>Check in the TripleZero iT client panel or DirectAdmin which options your plan includes.</li>\n  <li>Pick the simplest solution that meets the requirement.</li>\n  <li>Test on staging or outside peak hours before switching production.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Document the choice so support can help faster.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not copy a competitor setup blindly — DNS and panels differ per host.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Also browse other knowledge-base articles on hosting, email and security.</p>",
+    "seoTitle": "What is the difference between the SEO-score and AI Readiness? | TripleZero iT",
+    "seoDescription": "Decision guide: What is the difference between the SEO-score and AI Readiness — which option fits at TripleZero iT."
+  }
+}

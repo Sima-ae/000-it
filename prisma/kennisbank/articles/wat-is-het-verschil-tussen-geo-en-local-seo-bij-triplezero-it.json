@@ -1,0 +1,18 @@
+{
+  "slug": "wat-is-het-verschil-tussen-geo-en-local-seo-bij-triplezero-it",
+  "topic": "tz-geo-vs-local-seo",
+  "nl": {
+    "title": "Wat is het verschil tussen GEO en “local SEO” bij TripleZero iT?",
+    "excerpt": "Wat is het verschil tussen GEO en “local SEO” bij TripleZero iT: duidelijke uitleg van TripleZero iT — begrippen, wanneer het telt en valkuilen.",
+    "bodyHtml": "<p>Bij TripleZero iT gebruiken we <strong>GEO (Geographic SEO)</strong> voor lokale en regionale vindbaarheid. “Local SEO” in de markt betekent vaak hetzelfde cluster — Maps, GBP, NAP, locatiecontent — maar GEO is onze productterm naast AEO en klassieke SEO.</p>\n<h2>Overlap</h2>\n<ul>\n  <li>Google Business Profile en reviews.</li>\n  <li>NAP-consistentie.</li>\n  <li>Lokale landingspagina’s en “near me”-intentie.</li>\n</ul>\n<h2>Hoe wij het positioneren</h2>\n<ul>\n  <li>GEO = lokale laag in AI-scan en pakketten.</li>\n  <li>Dienst: <code>/diensten/geo-optimization</code>.</li>\n  <li>Altijd in samenhang met SEO (techniek) en waar relevant AEO.</li>\n</ul>\n<p>Heb je na het volgen van deze stappen nog vragen? Neem contact op met TripleZero iT support via het ticketssysteem of plan een afspraak. Vermeld je domein, doelen (AEO, GEO en/of SEO) en eventuele AI-scanresultaten.</p>\n<p>Gerelateerd: GBP stap voor stap; GEO-dienst per regio.</p>",
+    "seoTitle": "Wat is het verschil tussen GEO en “local SEO” bij TripleZero iT? | TripleZero iT",
+    "seoDescription": "Wat is het verschil tussen GEO en “local SEO” bij TripleZero iT: duidelijke uitleg van TripleZero iT — begrippen, wanneer het telt en valkuilen."
+  },
+  "en": {
+    "title": "What is the difference between GEO and “local SEO” at TripleZero iT?",
+    "excerpt": "Decision guide: What is the difference between GEO and “local SEO” at TripleZero iT — which option fits at TripleZero iT.",
+    "bodyHtml": "<p><strong>What is the difference between GEO and “local SEO” at TripleZero iT</strong> is about choosing between options on purpose. Below are the criteria to decide, without marketing fluff.</p>\n<h2>Compare on these points</h2>\n<ul>\n  <li>Goal: website, email, webshop, reseller or development.</li>\n  <li>Management: do you want a control panel (DirectAdmin/CyberPanel/Plesk) or mainly SSH?</li>\n  <li>Risk: downtime, mail delivery, SEO and backups.</li>\n  <li>Cost and limits: disk, inodes, traffic, support level.</li>\n</ul>\n<h2>Practical approach</h2>\n<ol>\n  <li>Write one sentence describing what you need to achieve.</li>\n  <li>Check in the TripleZero iT client panel or DirectAdmin which options your plan includes.</li>\n  <li>Pick the simplest solution that meets the requirement.</li>\n  <li>Test on staging or outside peak hours before switching production.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Document the choice so support can help faster.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not copy a competitor setup blindly — DNS and panels differ per host.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Also browse other knowledge-base articles on hosting, email and security.</p>",
+    "seoTitle": "What is the difference between GEO and “local SEO” at TripleZero iT? | TripleZero iT",
+    "seoDescription": "Decision guide: What is the difference between GEO and “local SEO” at TripleZero iT — which option fits at TripleZero iT."
+  }
+}

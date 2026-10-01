@@ -1,0 +1,18 @@
+{
+  "slug": "brotli-versus-gzip-op-origin",
+  "topic": "tz-w2-th-cdn-brotli-versus-gzip-op-origin-4cd7d",
+  "nl": {
+    "title": "Brotli versus Gzip op origin",
+    "excerpt": "Keuzehulp: Brotli versus Gzip op origin — wanneer welk alternatief past bij TripleZero iT.",
+    "bodyHtml": "<p>Bij <strong>Brotli versus Gzip op origin</strong> gaat het om een bewuste keuze tussen opties. Hieronder staan de criteria waarmee je beslist, zonder marketingtaal.</p>\n<h2>Vergelijk op deze punten</h2>\n<ul>\n  <li>Doel: website, mail, webshop, reseller of development.</li>\n  <li>Beheer: wil je een control panel (DirectAdmin/CyberPanel/Plesk) of vooral SSH?</li>\n  <li>Risico: downtime, mailaflevering, SEO en backups.</li>\n  <li>Kosten en limieten: schijf, inodes, traffic, supportniveau.</li>\n</ul>\n<h2>Praktische werkwijze</h2>\n<ol>\n  <li>Schrijf in één zin wat je wilt bereiken.</li>\n  <li>Check in het TripleZero iT klantenpanel of DirectAdmin welke opties op jouw pakket beschikbaar zijn.</li>\n  <li>Kies de eenvoudigste oplossing die je eis dekt.</li>\n  <li>Test op staging of buiten piekuren voordat je productie omschakelt.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Documenteer de keuze: dan kan support sneller meedenken.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Let op:</strong> Kopieer niet blind de setup van een concurrent — DNS en panel verschillen per host.</p></aside>\n<p>Kom je er niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld je domeinnaam, wat je al hebt geprobeerd en eventuele foutmeldingen (tekst of screenshot).</p>\n<p>Bekijk ook andere artikelen in de kennisbank over hosting, e-mail en beveiliging.</p>",
+    "seoTitle": "Brotli versus Gzip op origin | TripleZero iT",
+    "seoDescription": "Keuzehulp: Brotli versus Gzip op origin — wanneer welk alternatief past bij TripleZero iT."
+  },
+  "en": {
+    "title": "Brotli versus Gzip on origin",
+    "excerpt": "Decision guide: Brotli versus Gzip on origin — which option fits at TripleZero iT.",
+    "bodyHtml": "<p><strong>Brotli versus Gzip on origin</strong> is about choosing between options on purpose. Below are the criteria to decide, without marketing fluff.</p>\n<h2>Compare on these points</h2>\n<ul>\n  <li>Goal: website, email, webshop, reseller or development.</li>\n  <li>Management: do you want a control panel (DirectAdmin/CyberPanel/Plesk) or mainly SSH?</li>\n  <li>Risk: downtime, mail delivery, SEO and backups.</li>\n  <li>Cost and limits: disk, inodes, traffic, support level.</li>\n</ul>\n<h2>Practical approach</h2>\n<ol>\n  <li>Write one sentence describing what you need to achieve.</li>\n  <li>Check in the TripleZero iT client panel or DirectAdmin which options your plan includes.</li>\n  <li>Pick the simplest solution that meets the requirement.</li>\n  <li>Test on staging or outside peak hours before switching production.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Document the choice so support can help faster.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not copy a competitor setup blindly — DNS and panels differ per host.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Also browse other knowledge-base articles on hosting, email and security.</p>",
+    "seoTitle": "Brotli versus Gzip on origin | TripleZero iT",
+    "seoDescription": "Decision guide: Brotli versus Gzip on origin — which option fits at TripleZero iT."
+  }
+}

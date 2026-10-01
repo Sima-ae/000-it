@@ -1,0 +1,18 @@
+{
+  "slug": "nameserver-wijziging-checklist",
+  "topic": "tz-w2-ts-nameserver-wijziging-checklist-02b46",
+  "nl": {
+    "title": "Nameserver-wijziging checklist",
+    "excerpt": "Beheer DNS-records in het klantenpanel of DirectAdmin: wijzig één record, wacht op propagatie, controleer extern.",
+    "bodyHtml": "<p>DNS bepaalt waar je domein naartoe wijst (web, mail, verificaties). Werk altijd in één zone als bron van waarheid en wijzig kritieke records niet allemaal tegelijk.</p>\n<h2>Stappen</h2>\n<ol>\n  <li>Open DNS-beheer voor het juiste domein (klantenpanel of DirectAdmin Zone Editor).</li>\n  <li>Exporteer of screenshot de huidige zone.</li>\n  <li>Pas alleen het benodigde type aan (A, AAAA, CNAME, MX, TXT, NS).</li>\n  <li>Sla op; verlaag TTL tijdelijk alleen bij geplande cutovers.</li>\n  <li>Controleer met een externe lookup en test daarna site of mail.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> CNAME op de apex (@) kan alleen met ALIAS/ANAME — anders A/AAAA gebruiken.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Let op:</strong> Nameserver-wijzigingen propagëren langer dan één record — plan die apart.</p></aside>\n<p>Kom je er niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld je domeinnaam, wat je al hebt geprobeerd en eventuele foutmeldingen (tekst of screenshot).</p>\n<p>Gerelateerd: SPF, domein forward, SSL.</p>",
+    "seoTitle": "Nameserver-wijziging checklist | TripleZero iT",
+    "seoDescription": "Beheer DNS-records in het klantenpanel of DirectAdmin: wijzig één record, wacht op propagatie, controleer extern."
+  },
+  "en": {
+    "title": "Nameserver-wijziging checklist",
+    "excerpt": "Manage DNS records in the client panel or DirectAdmin: change one record, wait for propagation, verify externally.",
+    "bodyHtml": "<p>DNS decides where your domain points (web, mail, verifications). Keep one zone as the source of truth and avoid changing every critical record at once.</p>\n<h2>Steps</h2>\n<ol>\n  <li>Open DNS management for the correct domain (client panel or DirectAdmin Zone Editor).</li>\n  <li>Export or screenshot the current zone.</li>\n  <li>Change only the required type (A, AAAA, CNAME, MX, TXT, NS).</li>\n  <li>Save; lower TTL temporarily only for planned cutovers.</li>\n  <li>Verify with an external lookup, then test the site or mail.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> CNAME on the apex (@) needs ALIAS/ANAME — otherwise use A/AAAA.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Nameserver changes propagate longer than a single record — plan them separately.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: SPF, domain forward, SSL.</p>",
+    "seoTitle": "Nameserver-wijziging checklist | TripleZero iT",
+    "seoDescription": "Manage DNS records in the client panel or DirectAdmin: change one record, wait for propagation, verify externally."
+  }
+}

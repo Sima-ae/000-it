@@ -1,0 +1,18 @@
+{
+  "slug": "hoe-kom-ik-bij-mijn-webmail",
+  "topic": "webmail-access",
+  "nl": {
+    "title": "Hoe kom ik bij mijn webmail?",
+    "excerpt": "Open webmail vanuit DirectAdmin of via de webmail-URL en log in met mailboxadres + mailboxwachtwoord.",
+    "bodyHtml": "<p>Webmail is handig om te testen of een probleem in de mailserver of in je desktopclient zit. Lukt webmail wel en Outlook niet, dan ligt de oorzaak meestal in de clientinstellingen.</p>\n<h2>Stappen</h2>\n<ol>\n  <li>Open DirectAdmin → <strong>E-mail Accounts</strong> of de webmail-link uit je welkomstmail.</li>\n  <li>Kies Roundcube / Webmail Pro indien gevraagd.</li>\n  <li>Log in met het volledige e-mailadres en het <strong>mailbox</strong>wachtwoord (niet het DirectAdmin-wachtwoord).</li>\n  <li>Controleer Postvak IN en verstuur een testbericht naar een extern adres.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Werkt webmail niet: reset het mailboxwachtwoord en controleer of het account niet over quota is.</p></aside>\n<p>Kom je er niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld je domeinnaam, wat je al hebt geprobeerd en eventuele foutmeldingen (tekst of screenshot).</p>\n<p>Gerelateerd: E-mailwachtwoord, quota, SPF.</p>",
+    "seoTitle": "Hoe kom ik bij mijn webmail? | TripleZero iT",
+    "seoDescription": "Open webmail vanuit DirectAdmin of via de webmail-URL en log in met mailboxadres + mailboxwachtwoord."
+  },
+  "en": {
+    "title": "How do I kom I at my webmail?",
+    "excerpt": "Open webmail from DirectAdmin or the webmail URL and sign in with mailbox address + mailbox password.",
+    "bodyHtml": "<p>Webmail is useful to see whether a problem sits on the mail server or in your desktop client. If webmail works and Outlook does not, the client settings are usually wrong.</p>\n<h2>Steps</h2>\n<ol>\n  <li>Open DirectAdmin → <strong>Email Accounts</strong> or the webmail link from your welcome email.</li>\n  <li>Choose Roundcube / Webmail Pro if prompted.</li>\n  <li>Sign in with the full email address and the <strong>mailbox</strong> password (not the DirectAdmin password).</li>\n  <li>Check Inbox and send a test message to an external address.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> If webmail fails: reset the mailbox password and check the account is not over quota.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: Email password, quota, SPF.</p>",
+    "seoTitle": "How do I kom I at my webmail? | TripleZero iT",
+    "seoDescription": "Open webmail from DirectAdmin or the webmail URL and sign in with mailbox address + mailbox password."
+  }
+}

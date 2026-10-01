@@ -1,0 +1,18 @@
+{
+  "slug": "website-weg-uit-installatron-voeg-je-site-toe",
+  "topic": "installatron-import",
+  "nl": {
+    "title": "Website weg uit Installatron? Voeg je site toe!",
+    "excerpt": "Koppel een bestaande WordPress-site opnieuw aan Installatron via Import / Add existing als die uit My Applications verdwenen is.",
+    "bodyHtml": "<p>Soms staat een site niet (meer) onder My Applications, terwijl de bestanden en database nog wel op de server staan. Met Import / Add existing koppel je die installatie weer aan Installatron.</p>\n<h2>Voorbereiding</h2>\n<ul>\n  <li>Pad naar de site (bijvoorbeeld public_html of een submap).</li>\n  <li>Databasegegevens als Installatron die vraagt (naam, user, host).</li>\n</ul>\n<h2>Stappen</h2>\n<ol>\n  <li>Open Installatron Applications Installer.</li>\n  <li>Kies <strong>Import</strong> of <strong>Add existing</strong>.</li>\n  <li>Selecteer het juiste domein en pad.</li>\n  <li>Vul databasegegevens in indien gevraagd.</li>\n  <li>Rond de import af.</li>\n  <li>Controleer of de site in My Applications staat en of Backup/Update beschikbaar zijn.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Werkt import niet, herinstalleer dan niet blind. Controleer eerst bestanden en de database.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Let op:</strong> Dubbele WordPress-installaties in submappen zorgen voor verwarring. Houd één actieve site per pad.</p></aside>\n<p>Kom je er niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld je domeinnaam, wat je al hebt geprobeerd en eventuele foutmeldingen (tekst of screenshot).</p>\n<p>Gerelateerd: Wat is Installatron, WordPress installeren.</p>",
+    "seoTitle": "Website weg uit Installatron? Voeg je site toe! | TripleZero iT",
+    "seoDescription": "Koppel een bestaande WordPress-site opnieuw aan Installatron via Import / Add existing als die uit My Applications verdwenen is."
+  },
+  "en": {
+    "title": "Site missing from Installatron? Add it again",
+    "excerpt": "Re-attach an existing WordPress site to Installatron with Import / Add existing when it disappeared from My Applications.",
+    "bodyHtml": "<p>Sometimes a site no longer appears under My Applications even though the files and database are still on the server. Use Import / Add existing to attach that install to Installatron again.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Path to the site (for example public_html or a subdirectory).</li>\n  <li>Database credentials if Installatron asks for them (name, user, host).</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Open Installatron Applications Installer.</li>\n  <li>Choose <strong>Import</strong> or <strong>Add existing</strong>.</li>\n  <li>Select the correct domain and path.</li>\n  <li>Enter database details if prompted.</li>\n  <li>Finish the import.</li>\n  <li>Confirm the site appears in My Applications and that Backup/Update are available.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> If import fails, do not reinstall blindly. Check files and the database first.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Duplicate WordPress installs in subdirectories cause confusion. Keep one active site per path.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: What is Installatron, Install WordPress.</p>",
+    "seoTitle": "Site missing from Installatron? Add it again | TripleZero iT",
+    "seoDescription": "Re-attach an existing WordPress site to Installatron with Import / Add existing when it disappeared from My Applications."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "installatron-applicatie-updaten",
+  "topic": "tz-th-php-installatron-applicatie-updaten-ae03e",
+  "nl": {
+    "title": "Installatron: applicatie updaten",
+    "excerpt": "Werk een via Installatron geïnstalleerde applicatie bij: backup, update uitvoeren en daarna de site controleren.",
+    "bodyHtml": "<p>Applicaties die je via Installatron beheert, kun je vanuit My Applications updaten. Doe dit na een backup en buiten piekuren als de site kritiek is.</p>\n<h2>Voorbereiding</h2>\n<ul>\n  <li>Backup of snapshot beschikbaar.</li>\n  <li>Weet welke applicatie en welk domein je bijwerkt.</li>\n</ul>\n<h2>Stappen</h2>\n<ol>\n  <li>Open Installatron → My Applications.</li>\n  <li>Selecteer de applicatie.</li>\n  <li>Maak een backup.</li>\n  <li>Start de beschikbare update(s).</li>\n  <li>Test de voorkant en het admin-paneel van de applicatie.</li>\n  <li>Monitor kort op fouten of downtime.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Update één component tegelijk op productie als je rollback wilt beperken.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Let op:</strong> Geen update zonder restorepad.</p></aside>\n<p>Kom je er niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld je domeinnaam, wat je al hebt geprobeerd en eventuele foutmeldingen (tekst of screenshot).</p>\n<p>Gerelateerd: Installatron-backup, WordPress updaten.</p>",
+    "seoTitle": "Installatron: applicatie updaten | TripleZero iT",
+    "seoDescription": "Werk een via Installatron geïnstalleerde applicatie bij: backup, update uitvoeren en daarna de site controleren."
+  },
+  "en": {
+    "title": "Installatron: update an application",
+    "excerpt": "Update an application managed by Installatron: take a backup, run the update, then verify the site.",
+    "bodyHtml": "<p>Apps managed in Installatron can be updated from My Applications. Do this after a backup and outside peak hours if the site is critical.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Backup or snapshot available.</li>\n  <li>Know which application and domain you are updating.</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Open Installatron → My Applications.</li>\n  <li>Select the application.</li>\n  <li>Create a backup.</li>\n  <li>Run the available update(s).</li>\n  <li>Test the front end and the application admin panel.</li>\n  <li>Monitor briefly for errors or downtime.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> On production, update one component at a time if you want an easier rollback.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not update without a restore path.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: Installatron backup, Update WordPress.</p>",
+    "seoTitle": "Installatron: update an application | TripleZero iT",
+    "seoDescription": "Update an application managed by Installatron: take a backup, run the update, then verify the site."
+  }
+}

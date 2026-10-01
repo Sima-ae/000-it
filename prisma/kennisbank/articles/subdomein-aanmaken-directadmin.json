@@ -1,0 +1,18 @@
+{
+  "slug": "subdomein-aanmaken-directadmin",
+  "topic": "subdomain",
+  "nl": {
+    "title": "Subdomein aanmaken in DirectAdmin",
+    "excerpt": "Subdomein aanmaken in DirectAdmin (bijv. shop.jouwdomein.nl) met eigen map.",
+    "bodyHtml": "<p>Maak subdomeinen onder Domain Setup → Subdomain Management; elk krijgt een map onder domains/… .</p>\n<h2>Voorbereiding</h2>\n<ul>\n  <li>Hoofddomein in DA</li>\n  <li>Gewenste subnaam</li>\n</ul>\n<h2>Stappen</h2>\n<ol>\n  <li>Selecteer hoofddomein</li>\n  <li>Domain Setup → Subdomain Management → Add Subdomain</li>\n  <li>Vul naam in (zonder hoofddomein)</li>\n  <li>Noteer de document root</li>\n  <li>Zet DNS indien nodig (vaak automatisch op TripleZero iT-nameservers)</li>\n  <li>Deploy content / SSL</li>\n</ol>\n<h2>Controleren</h2>\n<ul>\n  <li>http(s)://sub.domein bereikbaar</li>\n  <li>Juiste map in File Manager</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Gebruik aparte subdomeinen voor staging i.p.v. te mixen in productie-root.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Let op:</strong> Wildcard-DNS nodig bij veel dynamische subs.</p></aside>\n<p>Kom je er na deze stappen niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld hostname, DirectAdmin-gebruikersnaam (geen wachtwoord), domein en wat je al probeerde.</p>\n<p>Gerelateerd: add-domain-da; filemanager.</p>",
+    "seoTitle": "Subdomein aanmaken in DirectAdmin | TripleZero iT",
+    "seoDescription": "Subdomein aanmaken in DirectAdmin (bijv. shop.jouwdomein.nl) met eigen map."
+  },
+  "en": {
+    "title": "Create subdomain in DirectAdmin",
+    "excerpt": "Step-by-step guide: Create subdomain in DirectAdmin via DirectAdmin at TripleZero iT.",
+    "bodyHtml": "<p>This guide helps you complete <strong>Create subdomain in DirectAdmin</strong> safely and in a verifiable way at TripleZero iT.</p>\n<p>We use DirectAdmin. Always work on the correct domain/account and take a backup first when the change is risky.</p>\n<h2>What you need</h2>\n<ul>\n  <li>Access to DirectAdmin.</li>\n  <li>Your domain name and any login credentials.</li>\n  <li>A recent backup before structural or risky changes.</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Sign in to DirectAdmin and select the correct domain or user account.</li>\n  <li>Open the relevant module (Account Manager, Email Accounts, DNS Management, File Manager, Installatron, SSL Certificates or Advanced Features).</li>\n  <li>Note the current value or status before you change anything.</li>\n  <li>Apply the change, save, and stay on this domain.</li>\n  <li>Test outside the panel (browser, webmail or external DNS lookup).</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Expected behaviour is visible outside the panel.</li>\n  <li>No new errors in logs or monitoring.</li>\n  <li>Backup or rollback path is still available.</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Note old values before you save. That makes rollback faster.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not change multiple critical options at once on production.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Also browse other knowledge-base articles on hosting, email and security.</p>",
+    "seoTitle": "Create subdomain in DirectAdmin | TripleZero iT",
+    "seoDescription": "Step-by-step guide: Create subdomain in DirectAdmin via DirectAdmin at TripleZero iT."
+  }
+}

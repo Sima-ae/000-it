@@ -1,0 +1,18 @@
+{
+  "slug": "php-versie-wijzigen-per-domein",
+  "topic": "tz-th-php-php-versie-wijzigen-per-domein-f6f84",
+  "nl": {
+    "title": "PHP-versie wijzigen per domein",
+    "excerpt": "Wijzig de PHP-versie per domein in DirectAdmin en test daarna de site en wp-admin.",
+    "bodyHtml": "<p>PHP-versies stel je per domein in. Te oud geeft security-warnings in WordPress; te nieuw kan plugins breken. Wijzig één versie tegelijk en houd een backup achter de hand.</p>\n<h2>Stappen</h2>\n<ol>\n  <li>Maak een backup of Installatron-backup als de site kritiek is.</li>\n  <li>DirectAdmin → Domain Setup / <strong>PHP Version Select</strong> (naam kan licht verschillen).</li>\n  <li>Selecteer het domein en de gewenste PHP-versie.</li>\n  <li>Sla op en purge eventuele LiteSpeed/WordPress-cache.</li>\n  <li>Test homepage, wp-admin, formulieren en (indien webshop) checkout.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Check phpinfo of de panelindicator om te bevestigen dat de nieuwe versie actief is.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Let op:</strong> Combineer geen major PHP-upgrade met een grote WordPress/plugin-update in één keer.</p></aside>\n<p>Kom je er niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld je domeinnaam, wat je al hebt geprobeerd en eventuele foutmeldingen (tekst of screenshot).</p>\n<p>Gerelateerd: WordPress critical error, Installatron-backup.</p>",
+    "seoTitle": "PHP-versie wijzigen per domein | TripleZero iT",
+    "seoDescription": "Wijzig de PHP-versie per domein in DirectAdmin en test daarna de site en wp-admin."
+  },
+  "en": {
+    "title": "Change PHP-versie per domain",
+    "excerpt": "Change the PHP version per domain in DirectAdmin, then test the site and wp-admin.",
+    "bodyHtml": "<p>PHP versions are set per domain. Too old triggers WordPress security warnings; too new can break plugins. Change one version at a time and keep a backup ready.</p>\n<h2>Steps</h2>\n<ol>\n  <li>Create a backup or Installatron backup if the site is critical.</li>\n  <li>DirectAdmin → Domain Setup / <strong>PHP Version Select</strong> (label may vary slightly).</li>\n  <li>Select the domain and the desired PHP version.</li>\n  <li>Save and purge LiteSpeed/WordPress cache if needed.</li>\n  <li>Test homepage, wp-admin, forms and checkout if you run a shop.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Check phpinfo or the panel indicator to confirm the new version is active.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not combine a major PHP upgrade with a large WordPress/plugin update in one go.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: WordPress critical error, Installatron backup.</p>",
+    "seoTitle": "Change PHP-versie per domain | TripleZero iT",
+    "seoDescription": "Change the PHP version per domain in DirectAdmin, then test the site and wp-admin."
+  }
+}

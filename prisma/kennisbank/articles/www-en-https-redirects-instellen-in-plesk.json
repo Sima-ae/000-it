@@ -1,0 +1,18 @@
+{
+  "slug": "www-en-https-redirects-instellen-in-plesk",
+  "topic": "tz-pl-www-https-redirects",
+  "nl": {
+    "title": "WWW- en HTTPS-redirects instellen in Plesk",
+    "excerpt": "Werk in Plesk op het juiste abonnement: mail, DNS, SSL, bestanden of WordPress Toolkit.",
+    "bodyHtml": "<p>In Plesk horen wijzigingen bij een abonnement/domein. Als reseller: open eerst het juiste klantaccount, anders pas je per ongeluk een andere site aan.</p>\n<h2>Stappen</h2>\n<ol>\n  <li>Log in op Plesk (poort 8443 of de link uit je welkomstmail).</li>\n  <li>Selecteer het juiste abonnement of domein.</li>\n  <li>Open de tool die bij de taak hoort (Mail, DNS, SSL/TLS, Files, Databases, WordPress).</li>\n  <li>Voer de wijziging door en bevestig.</li>\n  <li>Test extern (browser, mailclient of DNS-lookup).</li>\n</ol>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Let op:</strong> Werk nooit blind in het verkeerde subscription op een reseller-server.</p></aside>\n<p>Kom je er niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld je domeinnaam, wat je al hebt geprobeerd en eventuele foutmeldingen (tekst of screenshot).</p>\n<p>Bekijk ook andere artikelen in de kennisbank over hosting, e-mail en beveiliging.</p>",
+    "seoTitle": "WWW- en HTTPS-redirects instellen in Plesk | TripleZero iT",
+    "seoDescription": "Werk in Plesk op het juiste abonnement: mail, DNS, SSL, bestanden of WordPress Toolkit."
+  },
+  "en": {
+    "title": "Set up WWW- and HTTPS-redirects in Plesk",
+    "excerpt": "Work in Plesk on the correct subscription: mail, DNS, SSL, files or WordPress Toolkit.",
+    "bodyHtml": "<p>In Plesk, changes belong to a subscription/domain. As a reseller: open the correct customer account first, or you may edit the wrong site.</p>\n<h2>Steps</h2>\n<ol>\n  <li>Sign in to Plesk (port 8443 or the link from your welcome email).</li>\n  <li>Select the correct subscription or domain.</li>\n  <li>Open the tool for the task (Mail, DNS, SSL/TLS, Files, Databases, WordPress).</li>\n  <li>Apply the change and confirm.</li>\n  <li>Test externally (browser, mail client or DNS lookup).</li>\n</ol>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Never work blindly in the wrong subscription on a reseller server.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Also browse other knowledge-base articles on hosting, email and security.</p>",
+    "seoTitle": "Set up WWW- and HTTPS-redirects in Plesk | TripleZero iT",
+    "seoDescription": "Work in Plesk on the correct subscription: mail, DNS, SSL, files or WordPress Toolkit."
+  }
+}

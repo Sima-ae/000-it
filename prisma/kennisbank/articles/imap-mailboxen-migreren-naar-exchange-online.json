@@ -1,0 +1,18 @@
+{
+  "slug": "imap-mailboxen-migreren-naar-exchange-online",
+  "topic": "tz-m365-imap-migratie",
+  "nl": {
+    "title": "IMAP-mailboxen migreren naar Exchange Online",
+    "excerpt": "Maak een mailbox in DirectAdmin E-mail Accounts met quota en een sterk wachtwoord.",
+    "bodyHtml": "<p>Nieuwe adressen maak je per domein in DirectAdmin. Het mailboxwachtwoord is niet hetzelfde als je panel- of FTP-wachtwoord.</p>\n<h2>Stappen</h2>\n<ol>\n  <li>Log in op DirectAdmin en selecteer het domein.</li>\n  <li>Open <strong>E-mail Accounts</strong>.</li>\n  <li>Klik op <strong>Create Account</strong> / account aanmaken.</li>\n  <li>Kies het lokale deel (vóór @), een sterk wachtwoord en eventueel een quota.</li>\n  <li>Sla op en test in webmail met het volledige adres + mailboxwachtwoord.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Noteer IMAP/SMTP-gegevens uit de welkomstmail voor Outlook of Apple Mail.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Let op:</strong> Deel mailboxwachtwoorden niet in tickets; reset liever en stuur een veilig kanaal.</p></aside>\n<p>Kom je er niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld je domeinnaam, wat je al hebt geprobeerd en eventuele foutmeldingen (tekst of screenshot).</p>\n<p>Gerelateerd: Webmail, e-mailwachtwoord wijzigen, SPF.</p>",
+    "seoTitle": "IMAP-mailboxen migreren naar Exchange Online | TripleZero iT",
+    "seoDescription": "Maak een mailbox in DirectAdmin E-mail Accounts met quota en een sterk wachtwoord."
+  },
+  "en": {
+    "title": "IMAP-mailboxen migreren to Exchange Online",
+    "excerpt": "Create a mailbox in DirectAdmin Email Accounts with a quota and a strong password.",
+    "bodyHtml": "<p>You create new addresses per domain in DirectAdmin. The mailbox password is not the same as your panel or FTP password.</p>\n<h2>Steps</h2>\n<ol>\n  <li>Sign in to DirectAdmin and select the domain.</li>\n  <li>Open <strong>Email Accounts</strong>.</li>\n  <li>Click <strong>Create Account</strong>.</li>\n  <li>Choose the local part (before @), a strong password and an optional quota.</li>\n  <li>Save and test in webmail with the full address + mailbox password.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Copy IMAP/SMTP details from the welcome email for Outlook or Apple Mail.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not paste mailbox passwords into tickets; reset and use a safe channel instead.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: Webmail, change email password, SPF.</p>",
+    "seoTitle": "IMAP-mailboxen migreren to Exchange Online | TripleZero iT",
+    "seoDescription": "Create a mailbox in DirectAdmin Email Accounts with a quota and a strong password."
+  }
+}

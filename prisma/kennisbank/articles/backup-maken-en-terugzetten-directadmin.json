@@ -1,0 +1,18 @@
+{
+  "slug": "backup-maken-en-terugzetten-directadmin",
+  "topic": "backup-da",
+  "nl": {
+    "title": "Backup maken en terugzetten in DirectAdmin",
+    "excerpt": "Maak of herstel een backup via DirectAdmin of JetBackup: kies scope, test en bewaar retentie.",
+    "bodyHtml": "<p>Backups zijn je terugvalpad vóór updates, migraties of grote edits. Installatron-backups dekken één app; DirectAdmin/JetBackup dekken bestanden, mail en databases breder.</p>\n<h2>Backup maken</h2>\n<ol>\n  <li>Open DirectAdmin → Create/Restore Backups of JetBackup (als aanwezig).</li>\n  <li>Kies wat je meeneemt: home, e-mail, databases, cron, DNS.</li>\n  <li>Start de backup en noteer tijdstip/label.</li>\n  <li>Controleer of de set in de lijst staat en schijfquota nog ruimte heeft.</li>\n</ol>\n<h2>Terugzetten</h2>\n<ol>\n  <li>Selecteer de juiste backupset.</li>\n  <li>Herstel selectief (alleen DB of alleen files) als de storing beperkt is.</li>\n  <li>Test de site en mail na restore.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Let op:</strong> Overwrite-restores zonder recente export zijn riskant — dubbelcheck domein en datum.</p></aside>\n<p>Kom je er niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld je domeinnaam, wat je al hebt geprobeerd en eventuele foutmeldingen (tekst of screenshot).</p>\n<p>Gerelateerd: Installatron-backup, schijfgebruik.</p>",
+    "seoTitle": "Backup maken en terugzetten in DirectAdmin | TripleZero iT",
+    "seoDescription": "Maak of herstel een backup via DirectAdmin of JetBackup: kies scope, test en bewaar retentie."
+  },
+  "en": {
+    "title": "Backup create and terugzetten in DirectAdmin",
+    "excerpt": "Create or restore a backup via DirectAdmin or JetBackup: pick scope, test, and keep retention.",
+    "bodyHtml": "<p>Backups are your rollback path before updates, migrations or large edits. Installatron backups cover one app; DirectAdmin/JetBackup cover files, mail and databases more broadly.</p>\n<h2>Create a backup</h2>\n<ol>\n  <li>Open DirectAdmin → Create/Restore Backups or JetBackup (if available).</li>\n  <li>Choose what to include: home, email, databases, cron, DNS.</li>\n  <li>Start the backup and note the time/label.</li>\n  <li>Confirm the set appears in the list and disk quota still has room.</li>\n</ol>\n<h2>Restore</h2>\n<ol>\n  <li>Select the correct backup set.</li>\n  <li>Restore selectively (DB only or files only) when the issue is limited.</li>\n  <li>Test the site and mail after restore.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Overwrite restores without a recent export are risky — double-check domain and date.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: Installatron backup, disk usage.</p>",
+    "seoTitle": "Backup create and terugzetten in DirectAdmin | TripleZero iT",
+    "seoDescription": "Create or restore a backup via DirectAdmin or JetBackup: pick scope, test, and keep retention."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "poorten-publiceren-zonder-alles-open-te-zetten",
+  "topic": "tz-w2-infra-poorten-publiceren-zonder-alles-open-te-e0b2d",
+  "nl": {
+    "title": "Poorten publiceren zonder alles open te zetten",
+    "excerpt": "VPS-wijzigingen: snapshot eerst, daarna gericht diensten of firewall aanpassen en monitoren.",
+    "bodyHtml": "<p>Op een VPS heb je meer vrijheid en meer risico. Maak eerst een snapshot/backup, wijzig één component, en herstart alleen de betrokken dienst.</p>\n<h2>Stappen</h2>\n<ol>\n  <li>Maak of bevestig een recente snapshot.</li>\n  <li>Log in via SSH of het VPS-panel.</li>\n  <li>Voer de geplande wijziging door (dienst, firewallregel, resource-limiet).</li>\n  <li>Herstart alleen de betrokken service.</li>\n  <li>Controleer poorten, processen en monitoring/uptime.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Let op:</strong> Vermijd <code>rm -rf</code> en blinde firewall-locks die je eigen SSH afsluiten.</p></aside>\n<p>Kom je er niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld je domeinnaam, wat je al hebt geprobeerd en eventuele foutmeldingen (tekst of screenshot).</p>\n<p>Bekijk ook andere artikelen in de kennisbank over hosting, e-mail en beveiliging.</p>",
+    "seoTitle": "Poorten publiceren zonder alles open te zetten | TripleZero iT",
+    "seoDescription": "VPS-wijzigingen: snapshot eerst, daarna gericht diensten of firewall aanpassen en monitoren."
+  },
+  "en": {
+    "title": "Poorten publiceren without alles open te set",
+    "excerpt": "VPS changes: snapshot first, then adjust services or firewall carefully and monitor.",
+    "bodyHtml": "<p>A VPS gives more freedom and more risk. Take a snapshot/backup first, change one component, and restart only the affected service.</p>\n<h2>Steps</h2>\n<ol>\n  <li>Create or confirm a recent snapshot.</li>\n  <li>Sign in via SSH or the VPS panel.</li>\n  <li>Apply the planned change (service, firewall rule, resource limit).</li>\n  <li>Restart only the affected service.</li>\n  <li>Check ports, processes and monitoring/uptime.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Avoid <code>rm -rf</code> and firewall locks that cut off your own SSH access.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Also browse other knowledge-base articles on hosting, email and security.</p>",
+    "seoTitle": "Poorten publiceren without alles open te set | TripleZero iT",
+    "seoDescription": "VPS changes: snapshot first, then adjust services or firewall carefully and monitor."
+  }
+}

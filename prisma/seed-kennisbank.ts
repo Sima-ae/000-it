@@ -1,21 +1,24 @@
 /**
  * Idempotent seed for TripleZero iT Kennisbank.
- * Seeds curated Dutch (primary) from catalog.json.
- * English + all other locales: run `npm run kennisbank:repair` then
- * `npm run kennisbank:repair -- --all` (or kennisbank:translate after EN is clean).
+ * Seeds curated Dutch + English from prisma/kennisbank/articles/{slug}.json.
+ * Other article locales are removed so UI falls back to NL/EN until a later translation step.
  *
- * Usage: npm run db:seed:kennisbank
+ * Generate articles first:
+ *   npm run kennisbank:generate
+ *   npm run kennisbank:check
+ *   npm run db:seed:kennisbank
  */
 import { PrismaClient } from "@prisma/client";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { buildArticleHtml, buildExcerpt } from "./kennisbank/build-body";
 import {
   CATEGORY_I18N,
   OVERIGE_I18N,
   categoryCopy,
   isOverigeCategorySlug,
 } from "./kennisbank/i18n";
+import { loadArticleFile } from "./kennisbank/load-article";
+import { writeArticle } from "./kennisbank/write-article";
 
 const prisma = new PrismaClient();
 
@@ -85,7 +88,6 @@ async function main() {
       : [...CATEGORY_LOCALES];
     for (const locale of localesToWrite) {
       const copy = categoryCopy(slug, locale, { name, description });
-      // Prefer explicit map; fall back to English map for missing locale rows
       const mapped = CATEGORY_I18N[slug]?.[locale] || CATEGORY_I18N[slug]?.en;
       const finalCopy = isOverigeCategorySlug(slug) ? copy : mapped || copy;
       await prisma.kennisbankCategoryTranslation.upsert({
@@ -138,10 +140,20 @@ async function main() {
 
   let created = 0;
   let updated = 0;
+  let missingFiles = 0;
 
   for (const article of catalog.articles) {
-    const bodyNl = buildArticleHtml(article.title, article.topic, "nl");
-    const excerptNl = buildExcerpt(article.title, "nl", article.topic);
+    const onDisk = loadArticleFile(article.slug);
+    const file =
+      onDisk ||
+      writeArticle({
+        slug: article.slug,
+        title: article.title,
+        categories: article.categories,
+        topic: article.topic,
+      });
+    if (!onDisk) missingFiles += 1;
+
     const categoryIds = article.categories
       .map((s) => categoryIdBySlug.get(s))
       .filter(Boolean) as string[];
@@ -153,11 +165,20 @@ async function main() {
 
     const nlPayload = {
       locale: "nl" as const,
-      title: article.title,
-      excerpt: excerptNl,
-      bodyHtml: bodyNl,
-      seoTitle: `${article.title} | TripleZero iT`,
-      seoDescription: excerptNl,
+      title: file.nl.title || article.title,
+      excerpt: file.nl.excerpt,
+      bodyHtml: file.nl.bodyHtml,
+      seoTitle: file.nl.seoTitle || `${article.title} | TripleZero iT`,
+      seoDescription: file.nl.seoDescription || file.nl.excerpt,
+    };
+
+    const enPayload = {
+      locale: "en" as const,
+      title: file.en.title,
+      excerpt: file.en.excerpt,
+      bodyHtml: file.en.bodyHtml,
+      seoTitle: file.en.seoTitle || `${file.en.title} | TripleZero iT`,
+      seoDescription: file.en.seoDescription || file.en.excerpt,
     };
 
     if (!existing) {
@@ -166,7 +187,7 @@ async function main() {
           slug: article.slug,
           published: true,
           translations: {
-            create: [nlPayload],
+            create: [nlPayload, enPayload],
           },
           categories: {
             create: categoryIds.map((categoryId) => ({ categoryId })),
@@ -198,20 +219,32 @@ async function main() {
           seoDescription: nlPayload.seoDescription,
         },
       });
-
-      // Drop broken glossary EN so UI falls back to clean Dutch until repair runs.
-      const hasEn = existing.translations.some((t) => t.locale === "en");
-      if (hasEn) {
-        // Leave EN in place — repair script rewrites it. Seed must not
-        // re-introduce englishTitleFromSlug garbage.
-      }
-
+      await prisma.kennisbankArticleTranslation.upsert({
+        where: {
+          articleId_locale: { articleId: existing.id, locale: "en" },
+        },
+        create: { articleId: existing.id, ...enPayload },
+        update: {
+          title: enPayload.title,
+          excerpt: enPayload.excerpt,
+          bodyHtml: enPayload.bodyHtml,
+          seoTitle: enPayload.seoTitle,
+          seoDescription: enPayload.seoDescription,
+        },
+      });
+      // Drop stale machine-translated locales until the later translation step.
+      await prisma.kennisbankArticleTranslation.deleteMany({
+        where: {
+          articleId: existing.id,
+          locale: { notIn: ["nl", "en"] },
+        },
+      });
       updated += 1;
     }
   }
 
   console.log(
-    `[kennisbank] categories=${catalog.categories.length} articles created=${created} updated=${updated} total=${catalog.articles.length} (NL only — run kennisbank:repair for EN + other locales)`,
+    `[kennisbank] categories=${catalog.categories.length} articles created=${created} updated=${updated} total=${catalog.articles.length} missingJsonFallback=${missingFiles} (NL+EN from articles/*.json)`,
   );
 }
 

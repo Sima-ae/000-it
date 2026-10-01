@@ -1,0 +1,18 @@
+{
+  "slug": "hoe-werkt-de-checkout-en-welke-betaalmethoden-zijn-er",
+  "topic": "tz-shop-checkout",
+  "nl": {
+    "title": "Hoe werkt de checkout en welke betaalmethoden zijn er?",
+    "excerpt": "Regel de taak in het TripleZero iT klantenpanel: juiste menu, bevestiging en opvolging.",
+    "bodyHtml": "<p>In het klantenpanel regel je accountzaken, facturen, tickets en producten. Vermeld altijd domeinnaam of klantnummer als je support nodig hebt.</p>\n<h2>Stappen</h2>\n<ol>\n  <li>Log in op het TripleZero iT klantenpanel.</li>\n  <li>Open het onderdeel dat bij je vraag past (Tickets, Facturen, Domeinen, Producten of Projecten).</li>\n  <li>Voer de actie uit en bevestig waar het systeem dat vraagt.</li>\n  <li>Bewaar bevestigingsmail of ticketnummer.</li>\n  <li>Controleer of de status in het panel is bijgewerkt.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Voor storingen: noteer tijdstip, URL en exacte fouttekst in het ticket.</p></aside>\n<p>Kom je er niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld je domeinnaam, wat je al hebt geprobeerd en eventuele foutmeldingen (tekst of screenshot).</p>\n<p>Bekijk ook andere artikelen in de kennisbank over hosting, e-mail en beveiliging.</p>",
+    "seoTitle": "Hoe werkt de checkout en welke betaalmethoden zijn er? | TripleZero iT",
+    "seoDescription": "Regel de taak in het TripleZero iT klantenpanel: juiste menu, bevestiging en opvolging."
+  },
+  "en": {
+    "title": "How do I works the checkout and which betaalmethoden zijn er?",
+    "excerpt": "Complete the task in the TripleZero iT client panel: right menu, confirmation and follow-up.",
+    "bodyHtml": "<p>In the client panel you manage account tasks, invoices, tickets and products. Always include domain name or customer number when you need support.</p>\n<h2>Steps</h2>\n<ol>\n  <li>Sign in to the TripleZero iT client panel.</li>\n  <li>Open the section that matches your request (Tickets, Invoices, Domains, Products or Projects).</li>\n  <li>Complete the action and confirm when prompted.</li>\n  <li>Keep the confirmation email or ticket number.</li>\n  <li>Check that the status updated in the panel.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> For outages: include time, URL and exact error text in the ticket.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Also browse other knowledge-base articles on hosting, email and security.</p>",
+    "seoTitle": "How do I works the checkout and which betaalmethoden zijn er? | TripleZero iT",
+    "seoDescription": "Complete the task in the TripleZero iT client panel: right menu, confirmation and follow-up."
+  }
+}

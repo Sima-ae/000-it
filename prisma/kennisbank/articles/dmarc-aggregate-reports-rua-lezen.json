@@ -1,0 +1,18 @@
+{
+  "slug": "dmarc-aggregate-reports-rua-lezen",
+  "topic": "tz-w2-th-mail-dmarc-aggregate-reports-rua-lezen-368ae",
+  "nl": {
+    "title": "DMARC aggregate reports (RUA) lezen",
+    "excerpt": "Publiceer een DMARC-beleid op _dmarc en schaal op van monitoren naar quarantine/reject.",
+    "bodyHtml": "<p>DMARC koppelt SPF en DKIM aan een beleid: wat moet een ontvanger doen bij mislukte authenticatie, en waar gaan rapporten naartoe?</p>\n<h2>Stappen</h2>\n<ol>\n  <li>Zorg dat SPF en DKIM eerst betrouwbaar slagen.</li>\n  <li>Voeg een TXT-record toe op <code>_dmarc</code>, bijvoorbeeld <code>v=DMARC1; p=none; rua=mailto:dmarc@jouwdomein.nl</code>.</li>\n  <li>Analyseer rapporten enkele weken.</li>\n  <li>Verhoog daarna naar <code>p=quarantine</code> of <code>p=reject</code> als de data schoon is.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Let op:</strong> Zet niet meteen op reject als nieuwsbrief, CRM of webshop-SMTP nog buiten SPF/DKIM valt.</p></aside>\n<p>Kom je er niet uit? Open een ticket bij TripleZero iT via het klantenpanel. Vermeld je domeinnaam, wat je al hebt geprobeerd en eventuele foutmeldingen (tekst of screenshot).</p>\n<p>Gerelateerd: SPF, DKIM.</p>",
+    "seoTitle": "DMARC aggregate reports (RUA) lezen | TripleZero iT",
+    "seoDescription": "Publiceer een DMARC-beleid op _dmarc en schaal op van monitoren naar quarantine/reject."
+  },
+  "en": {
+    "title": "DMARC aggregate reports (RUA) lezen",
+    "excerpt": "Publish a DMARC policy on _dmarc and move from monitoring to quarantine/reject.",
+    "bodyHtml": "<p>DMARC ties SPF and DKIM to a policy: what receivers should do when authentication fails, and where reports should go.</p>\n<h2>Steps</h2>\n<ol>\n  <li>Make sure SPF and DKIM pass reliably first.</li>\n  <li>Add a TXT record on <code>_dmarc</code>, for example <code>v=DMARC1; p=none; rua=mailto:dmarc@yourdomain.com</code>.</li>\n  <li>Review reports for a few weeks.</li>\n  <li>Then move to <code>p=quarantine</code> or <code>p=reject</code> once the data looks clean.</li>\n</ol>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not jump to reject while newsletter, CRM or shop SMTP is still outside SPF/DKIM.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: SPF, DKIM.</p>",
+    "seoTitle": "DMARC aggregate reports (RUA) lezen | TripleZero iT",
+    "seoDescription": "Publish a DMARC policy on _dmarc and move from monitoring to quarantine/reject."
+  }
+}
