@@ -82,7 +82,8 @@ export async function CatalogServiceDetail({
   const meta = getCatalogItem(slug);
   const groupLabel = serviceGroups.find((g) => g.id === meta?.group);
   const inquiry = aiInquiryBySlug[slug];
-  const showSupportPlans = slug === "wordpress-beheer";
+  const showSupportPlans =
+    slug === "wordpress-beheer" || slug === "wordpress-maintenance-updates";
   const hostingPlanPage =
     slug in HOSTING_PLAN_PAGES
       ? HOSTING_PLAN_PAGES[slug as keyof typeof HOSTING_PLAN_PAGES]

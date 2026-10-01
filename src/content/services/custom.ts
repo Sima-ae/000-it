@@ -43,16 +43,25 @@ const customServices: Record<string, CustomService> = {
     title: "Maintenance & Updates",
     titleNl: "Onderhoud en updates",
     subtitle:
-      "Keep your WordPress site healthy with scheduled core, plugin and theme updates, backups and proactive monitoring.",
+      "Keep your WordPress site healthy with scheduled core, plugin and theme updates, backups and proactive monitoring — in fixed Business, Business pro and Enterprise packages.",
     subtitleNl:
-      "Houd jouw WordPress-site gezond met geplande core-, plugin- en theme-updates, backups en proactieve monitoring.",
-    image: "/uploads/fixweb/wordpress-maintenance-updates.png",
+      "Houd jouw WordPress-site gezond met geplande core-, plugin- en theme-updates, backups en proactieve monitoring — in vaste pakketten Business, Business pro en Enterprise.",
+    image: "/uploads/freeweb/wordpress-maintenance-updates.png",
     blocks: [
       h("Why maintenance matters"),
       p(
         "Outdated plugins and themes are the #1 cause of WordPress hacks, broken checkouts and sudden downtime. Professional maintenance keeps your site secure, fast and compatible — without you having to live in wp-admin.",
       ),
-      h("What’s included"),
+      h("Packages that match your site"),
+      p(
+        "Maintenance and updates are delivered through the same monthly care packages as WordPress care. Choose the tier that fits how complex your site is — then we handle the update rhythm, backups and monitoring.",
+      ),
+      l([
+        "Business — standard WordPress site: core/plugin/theme updates, speed care and optional green high-speed hosting. No complex plugins, webshop, multilingual or multisite.",
+        "Business pro — professional WordPress site: everything in Business, plus support for 1–2 complex plugins, multisite and multilingual. Optional OTAP pipeline for safer releases.",
+        "Enterprise — complex WordPress site: 2+ complex plugins, webshop-ready care, quarterly service review and OTAP pipeline included.",
+      ]),
+      h("What's included in every package"),
       l([
         "WordPress core updates (tested before go-live)",
         "Plugin and theme updates with conflict checks",
@@ -60,30 +69,28 @@ const customServices: Record<string, CustomService> = {
         "Uptime monitoring and alert response",
         "Security scan after each update cycle",
         "Monthly health report with actions taken",
-        "Staging checks for critical sites (on request)",
+        "Optimized speed as part of ongoing care",
         "Rollback plan if an update causes issues",
       ]),
       h("How we work"),
       p(
-        "We follow a calm, repeatable cadence: backup → update on staging or low-traffic window → smoke test (forms, checkout, login) → go-live → report. You always know what changed and why.",
+        "We follow a calm, repeatable cadence: backup → update on staging or a low-traffic window → smoke test (forms, checkout, login) → go-live → report. On Business pro and Enterprise we can use an OTAP pipeline so changes move safely from development to production.",
       ),
       h("Ideal for"),
       l([
-        "Business sites and WooCommerce stores",
-        "Multi-site setups that need consistent care",
+        "Standard brochure or company sites (Business)",
+        "Professional sites with a few complex plugins, multilingual or multisite (Business pro)",
+        "Complex platforms, WooCommerce shops and OTAP workflows (Enterprise)",
         "Teams without an in-house WordPress developer",
         "Agencies that want reliable retainership for clients",
       ]),
-      h("Optional add-ons"),
-      l([
-        "Daily off-site backups with retention policy",
-        "Performance tune-ups after major updates",
-        "Malware cleanup if something slips through",
-        "Content edits and small feature requests in the same retainer",
-      ]),
+      h("With or without hosting"),
+      p(
+        "Every package is available with green high-speed hosting or without hosting if you already host elsewhere. Toggle the option above the columns to see both prices; VAT is included.",
+      ),
       h("Get started"),
       p(
-        "Tell us how many sites you run and how critical each is. We’ll propose a Basic, Standard or Premium maintenance rhythm that matches your risk and budget — then take updates off your plate.",
+        "Pick Business, Business pro or Enterprise above, or tell us how complex your site is (plugins, shop, multilingual, multisite). We'll confirm the right package and take updates off your plate.",
       ),
     ],
     blocksNl: [
@@ -91,7 +98,16 @@ const customServices: Record<string, CustomService> = {
       p(
         "Verouderde plugins en themes zijn de #1 oorzaak van WordPress-hacks, kapotte checkouts en plotselinge downtime. Professioneel onderhoud houdt jouw site veilig, snel en compatible — zonder dat je in wp-admin hoeft te leven.",
       ),
-      h("Wat erbij zit"),
+      h("Pakketten die bij jouw site passen"),
+      p(
+        "Onderhoud en updates leveren we via dezelfde maandelijkse zorgpakketten als WordPress beheer. Kies het niveau dat past bij de complexiteit van jouw site — daarna verzorgen wij het updateritme, backups en monitoring.",
+      ),
+      l([
+        "Business — standaard WordPress-site: core-/plugin-/theme-updates, snelheidszorg en optioneel groene razendsnelle hosting. Geen complexe plugins, webshop, meertaligheid of multisite.",
+        "Business pro — professionele WordPress-site: alles van Business, plus ondersteuning voor 1–2 complexe plugins, multisite en meertaligheid. Optionele OTAP-straat voor veiligere releases.",
+        "Enterprise — complexe WordPress-site: 2+ complexe plugins, geschikt voor webshop, service-overleg per kwartaal en OTAP-straat inbegrepen.",
+      ]),
+      h("Wat er in elk pakket zit"),
       l([
         "WordPress core-updates (getest vóór livegang)",
         "Plugin- en theme-updates met conflictcontrole",
@@ -99,33 +115,32 @@ const customServices: Record<string, CustomService> = {
         "Uptime-monitoring en alert-opvolging",
         "Security-scan na elke update-cyclus",
         "Maandelijks health-rapport met uitgevoerde acties",
-        "Staging-checks voor kritieke sites (op verzoek)",
+        "Geoptimaliseerde snelheid als onderdeel van doorlopende zorg",
         "Rollback-plan als een update problemen geeft",
       ]),
       h("Werkwijze"),
       p(
-        "We werken in een rustig, herhaalbaar ritme: backup → update op staging of in een rustig moment → smoke test (forms, checkout, login) → livegang → rapport. Je weet altijd wat er veranderde en waarom.",
+        "We werken in een rustig, herhaalbaar ritme: backup → update op staging of in een rustig moment → smoke test (forms, checkout, login) → livegang → rapport. Bij Business pro en Enterprise kunnen we een OTAP-straat inzetten zodat wijzigingen veilig van ontwikkeling naar productie gaan.",
       ),
       h("Ideaal voor"),
       l([
-        "Bedrijfssites en WooCommerce-webshops",
-        "Multi-site setups die consistente zorg nodig hebben",
+        "Standaard brochure- of bedrijfssites (Business)",
+        "Professionele sites met een paar complexe plugins, meertaligheid of multisite (Business pro)",
+        "Complexe platforms, WooCommerce-webshops en OTAP-workflows (Enterprise)",
         "Teams zonder in-house WordPress-developer",
         "Bureaus die betrouwbare nazorg voor klanten willen",
       ]),
-      h("Optionele add-ons"),
-      l([
-        "Dagelijkse off-site backups met retentiebeleid",
-        "Performance-tune-ups na grote updates",
-        "Malware-opschoning als er toch iets misgaat",
-        "Contentwijzigingen en kleine features in hetzelfde abonnement",
-      ]),
+      h("Met of zonder hosting"),
+      p(
+        "Elk pakket is beschikbaar met groene razendsnelle hosting of zonder hosting als je elders host. Wissel de optie boven de kolommen om beide prijzen te zien; prijzen zijn inclusief btw.",
+      ),
       h("Aan de slag"),
       p(
-        "Vertel ons hoeveel sites je hebt en hoe kritiek ze zijn. Wij stellen een Basic-, Standard- of Premium-onderhoudsritme voor dat bij jouw risico en budget past — en nemen updates van jouw bord.",
+        "Kies hierboven Business, Business pro of Enterprise, of vertel ons hoe complex jouw site is (plugins, shop, meertaligheid, multisite). Wij bevestigen het juiste pakket en nemen updates van jouw bord.",
       ),
     ],
   },
+
   "webdesign-support": {
     title: "Website Support",
     titleNl: "Website support",
