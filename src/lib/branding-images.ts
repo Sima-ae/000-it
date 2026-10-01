@@ -54,7 +54,7 @@ export const BRANDING_CONTACT_IMAGE = "/branding/images/homepage-faq-datacenter.
 const EXTRA_HOSTING_PHOTOS: Record<string, string> = {
   [BRANDING_CONTACT_IMAGE]: "/branding/extrahosting/eh-home-aisle-walk.jpg",
   "/branding/images/about-team-review.jpg": "/branding/extrahosting/eh-about-team-window.jpg",
-  "/branding/images/about-desk-focus.jpg": "/branding/extrahosting/eh-about-desk-page.jpg",
+  "/branding/images/about-desk-focus.jpg": "/branding/extrahosting/eh-about-desk-inbox.jpg",
   "/branding/images/about-collaboration.jpg": "/branding/extrahosting/eh-about-seated.jpg",
   "/branding/images/service-hosting-datacenter.jpg":
     "/branding/extrahosting/eh-hosting-kneel.jpg",
