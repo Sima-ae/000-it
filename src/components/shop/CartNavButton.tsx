@@ -90,7 +90,7 @@ export function CartNavButton({ className }: { className?: string }) {
       >
         <ShoppingCart className="h-5 w-5 sm:h-5.5 sm:w-5.5" />
         {count > 0 ? (
-          <span className="absolute end-0 top-0 inline-flex min-w-4 items-center justify-center rounded-full bg-primary px-1 text-[10px] font-semibold leading-4 text-primary-foreground">
+          <span className="absolute inset-e-0 top-0 inline-flex min-w-4 items-center justify-center rounded-full bg-primary px-1 text-[10px] font-semibold leading-4 text-primary-foreground">
             {count > 99 ? "99+" : count}
           </span>
         ) : null}
@@ -98,7 +98,7 @@ export function CartNavButton({ className }: { className?: string }) {
 
       {open ? (
         <div
-          className="absolute end-0 top-full z-50 hidden pt-2 lg:block"
+          className="absolute inset-e-0 top-full z-50 hidden pt-2 lg:block"
           onMouseEnter={clearCloseTimer}
           onMouseLeave={scheduleClose}
         >
