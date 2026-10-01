@@ -9,10 +9,10 @@
     "seoDescription": "Cronjob faalt of draait dubbel: debuggen in CyberPanel: praktische handleiding in CyberPanel, met stappen, controles en wanneer je TripleZero iT support inschakelt."
   },
   "en": {
-    "title": "Cronjob faalt or draait dubbel: debuggen in CyberPanel",
+    "title": "Cron job fails or runs twice: debugging in CyberPanel",
     "excerpt": "Schedule a cron job in CyberPanel: timing, command and output checks.",
     "bodyHtml": "<p>For “Cronjob faalt or draait dubbel: debuggen in CyberPanel”, open Cron Jobs in CyberPanel. Set a valid schedule and an absolute path to php/curl or your script.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>CyberPanel login</li>\n  <li>Working command (tested if possible)</li>\n  <li>Desired frequency</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Sign in to CyberPanel.</li>\n  <li>Go to <strong>Cron Jobs</strong> → <strong>Add Cron</strong>.</li>\n  <li>Set minute / hour / day / month / weekday (or a preset).</li>\n  <li>Enter the command with a full path, e.g. <code>/usr/bin/php /home/USER/public_html/wp-cron.php</code> or a curl URL.</li>\n  <li>Save. Optionally redirect output to a log file instead of email on every run.</li>\n  <li>Wait for the first run, or trigger manually via SSH if available.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Job appears in the cron list</li>\n  <li>Log/output shows a successful run</li>\n  <li>No unexpected CPU spikes</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Test the command manually before scheduling it.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Very short intervals (every minute) can overload the server.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: PHP version, WordPress DISABLE_WP_CRON, backups.</p>",
-    "seoTitle": "Cronjob faalt or draait dubbel: debuggen in CyberPanel | TripleZero iT",
+    "seoTitle": "Cron job fails or runs twice: debugging in CyberPanel | TripleZero iT",
     "seoDescription": "Schedule a cron job in CyberPanel: timing, command and output checks."
   }
 }

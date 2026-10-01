@@ -9,10 +9,10 @@
     "seoDescription": "Abandoned cart e-mails ethisch inzetten: stappen in webshop-admin (producten/checkout) voor abandoned, cart, mails."
   },
   "en": {
-    "title": "Abandoned cart e-mails ethisch inzetten",
+    "title": "Using abandoned-cart emails ethically",
     "excerpt": "Abandoned cart e-mails ethisch inzetten: steps in shop admin (products/checkout) for abandoned, cart, mails.",
     "bodyHtml": "<p>For <strong>Abandoned cart e-mails ethisch inzetten</strong> follow a targeted checklist in shop admin (products/checkout). Core themes: <strong>abandoned, cart, mails</strong>.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Access to shop admin (products/checkout)</li>\n  <li>Focus of this article: <strong>abandoned, cart, mails</strong></li>\n  <li>Note of the current setting/status</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Sign in to shop admin (products/checkout). Filter or search for parts that belong to <strong>abandoned, cart, mails</strong>.</li>\n  <li>Backup or staging; open shop admin.</li>\n  <li>Change products/feed/checkout that belong to <strong>abandoned</strong>.</li>\n  <li>Exclude cart/checkout from full-page cache.</li>\n  <li>Walk through a test order that hits <strong>cart</strong>.</li>\n  <li>Document what you changed around <strong>abandoned, cart, mails</strong> (old → new value) for support.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Result for <strong>abandoned, cart, mails</strong> matches “Abandoned cart e-mails ethisch inzetten”</li>\n  <li>No regression on a critical flow beside abandoned cart e mails</li>\n  <li>External test or second browser/network confirms the result</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Work in small steps: get <strong>abandoned, cart, mails</strong> right first, then optional extras.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not blindly change production without a backup if <strong>abandoned, cart, mails</strong> touches login, DNS, mail or payments.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: shop admin (products/checkout), backups, tickets.</p>",
-    "seoTitle": "Abandoned cart e-mails ethisch inzetten | TripleZero iT",
+    "seoTitle": "Using abandoned-cart emails ethically | TripleZero iT",
     "seoDescription": "Abandoned cart e-mails ethisch inzetten: steps in shop admin (products/checkout) for abandoned, cart, mails."
   }
 }

@@ -9,10 +9,10 @@
     "seoDescription": "Hoe maak ik een e-mailaccount aan in Plesk: stappen in Plesk voor mailaccount, plesk."
   },
   "en": {
-    "title": "How do I create a e-mailaccount to in Plesk?",
+    "title": "How do I create an email account in Plesk?",
     "excerpt": "How do I create a e-mailaccount to in Plesk: steps in Plesk for mailaccount, Plesk.",
     "bodyHtml": "<p>This guide covers <strong>How do I create a e-mailaccount to in Plesk</strong>. You work in Plesk, focusing on <strong>mailaccount, Plesk</strong> — not unrelated side quests in other menus.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Access to Plesk</li>\n  <li>Focus of this article: <strong>mailaccount, Plesk</strong></li>\n  <li>Note of the current setting/status</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Open Plesk and look specifically for settings around <strong>mailaccount, Plesk</strong>.</li>\n  <li>Open the correct subscription/domain in Plesk.</li>\n  <li>Use Mail, DNS, SSL/TLS, Files, Databases or WordPress Toolkit for <strong>mailaccount</strong>.</li>\n  <li>Change <strong>Plesk</strong> per “How do I create a e-mailaccount to in Plesk”; confirm.</li>\n  <li>Test externally (browser/mail/DNS).</li>\n  <li>Document what you changed around <strong>mailaccount, Plesk</strong> (old → new value) for support.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Result for <strong>mailaccount, Plesk</strong> matches “How do I create a e-mailaccount to in Plesk”</li>\n  <li>No regression on a critical flow beside hoe maak ik een</li>\n  <li>External test or second browser/network confirms the result</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Work in small steps: get <strong>mailaccount, Plesk</strong> right first, then optional extras.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not blindly change production without a backup if <strong>mailaccount, Plesk</strong> touches login, DNS, mail or payments.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: Plesk, backups, tickets.</p>",
-    "seoTitle": "How do I create a e-mailaccount to in Plesk? | TripleZero iT",
+    "seoTitle": "How do I create an email account in Plesk? | TripleZero iT",
     "seoDescription": "How do I create a e-mailaccount to in Plesk: steps in Plesk for mailaccount, Plesk."
   }
 }

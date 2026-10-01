@@ -9,10 +9,10 @@
     "seoDescription": "Klachtenprocedure: stappen in het juiste TripleZero iT-systeem voor deze taak voor klachtenprocedure."
   },
   "en": {
-    "title": "Klachtenprocedure",
+    "title": "Complaints procedure",
     "excerpt": "Klachtenprocedure: steps in the correct TripleZero iT system for this task for klachtenprocedure.",
     "bodyHtml": "<p>This guide covers <strong>Klachtenprocedure</strong>. You work in the correct TripleZero iT system for this task, focusing on <strong>klachtenprocedure</strong> — not unrelated side quests in other menus.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Access to the correct TripleZero iT system for this task</li>\n  <li>Focus of this article: <strong>klachtenprocedure</strong></li>\n  <li>Note of the current setting/status</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Open the correct TripleZero iT system for this task and look specifically for settings around <strong>klachtenprocedure</strong>.</li>\n  <li>Decide which system “Klachtenprocedure” touches and open it deliberately.</li>\n  <li>Note the current state of <strong>klachtenprocedure</strong> / <strong>klachtenprocedure</strong>.</li>\n  <li>Apply one targeted change; save or restart only what is needed.</li>\n  <li>Verify with an external test that <strong>klachtenprocedure</strong> is correct.</li>\n  <li>Document what you changed around <strong>klachtenprocedure</strong> (old → new value) for support.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Result for <strong>klachtenprocedure</strong> matches “Klachtenprocedure”</li>\n  <li>No regression on a critical flow beside klachtenprocedure</li>\n  <li>External test or second browser/network confirms the result</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Work in small steps: get <strong>klachtenprocedure</strong> right first, then optional extras.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not blindly change production without a backup if <strong>klachtenprocedure</strong> touches login, DNS, mail or payments.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: the correct TripleZero iT system for this task, backups, tickets.</p>",
-    "seoTitle": "Klachtenprocedure | TripleZero iT",
+    "seoTitle": "Complaints procedure | TripleZero iT",
     "seoDescription": "Klachtenprocedure: steps in the correct TripleZero iT system for this task for klachtenprocedure."
   }
 }

@@ -9,10 +9,10 @@
     "seoDescription": "Toevoegen account in Plesk onder resellerpakket: stappen in Plesk voor account, plesk, onder."
   },
   "en": {
-    "title": "Add account in Plesk onder resellerpakket",
+    "title": "Add an account in Plesk under a reseller package",
     "excerpt": "Add account in Plesk onder resellerpakket: steps in Plesk for account, Plesk, onder.",
     "bodyHtml": "<p><strong>Add account in Plesk onder resellerpakket</strong> is solved via Plesk. Below are concrete steps for <strong>account, Plesk, onder</strong>, including verification afterwards.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Access to Plesk</li>\n  <li>Focus of this article: <strong>account, Plesk, onder</strong></li>\n  <li>Note of the current setting/status</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Go to Plesk. Keep this article (“Add account in Plesk onder resellerpakket”) beside you so you only make the intended change.</li>\n  <li>Open the correct subscription/domain in Plesk.</li>\n  <li>Use Mail, DNS, SSL/TLS, Files, Databases or WordPress Toolkit for <strong>account</strong>.</li>\n  <li>Change <strong>Plesk</strong> per “Add account in Plesk onder resellerpakket”; confirm.</li>\n  <li>Test externally (browser/mail/DNS).</li>\n  <li>Document what you changed around <strong>account, Plesk, onder</strong> (old → new value) for support.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Result for <strong>account, Plesk, onder</strong> matches “Add account in Plesk onder resellerpakket”</li>\n  <li>No regression on a critical flow beside toevoegen account in plesk</li>\n  <li>External test or second browser/network confirms the result</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Work in small steps: get <strong>account, Plesk, onder</strong> right first, then optional extras.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not blindly change production without a backup if <strong>account, Plesk, onder</strong> touches login, DNS, mail or payments.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: Plesk, backups, tickets.</p>",
-    "seoTitle": "Add account in Plesk onder resellerpakket | TripleZero iT",
+    "seoTitle": "Add an account in Plesk under a reseller package | TripleZero iT",
     "seoDescription": "Add account in Plesk onder resellerpakket: steps in Plesk for account, Plesk, onder."
   }
 }

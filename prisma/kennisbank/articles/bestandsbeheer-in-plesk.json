@@ -9,10 +9,10 @@
     "seoDescription": "Bestandsbeheer in Plesk: stappen in Plesk voor bestandsbeheer, plesk."
   },
   "en": {
-    "title": "Bestandsbeheer in Plesk",
+    "title": "File management in Plesk",
     "excerpt": "Bestandsbeheer in Plesk: steps in Plesk for bestandsbeheer, Plesk.",
     "bodyHtml": "<p>This guide covers <strong>Bestandsbeheer in Plesk</strong>. You work in Plesk, focusing on <strong>bestandsbeheer, Plesk</strong> — not unrelated side quests in other menus.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Access to Plesk</li>\n  <li>Focus of this article: <strong>bestandsbeheer, Plesk</strong></li>\n  <li>Note of the current setting/status</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Start in Plesk. Before clicking, note the current value for <strong>bestandsbeheer, Plesk</strong>.</li>\n  <li>Open the correct subscription/domain in Plesk.</li>\n  <li>Use Mail, DNS, SSL/TLS, Files, Databases or WordPress Toolkit for <strong>bestandsbeheer</strong>.</li>\n  <li>Change <strong>Plesk</strong> per “Bestandsbeheer in Plesk”; confirm.</li>\n  <li>Test externally (browser/mail/DNS).</li>\n  <li>Document what you changed around <strong>bestandsbeheer, Plesk</strong> (old → new value) for support.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Result for <strong>bestandsbeheer, Plesk</strong> matches “Bestandsbeheer in Plesk”</li>\n  <li>No regression on a critical flow beside bestandsbeheer in plesk</li>\n  <li>External test or second browser/network confirms the result</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Work in small steps: get <strong>bestandsbeheer, Plesk</strong> right first, then optional extras.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not blindly change production without a backup if <strong>bestandsbeheer, Plesk</strong> touches login, DNS, mail or payments.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: Plesk, backups, tickets.</p>",
-    "seoTitle": "Bestandsbeheer in Plesk | TripleZero iT",
+    "seoTitle": "File management in Plesk | TripleZero iT",
     "seoDescription": "Bestandsbeheer in Plesk: steps in Plesk for bestandsbeheer, Plesk."
   }
 }

@@ -9,10 +9,10 @@
     "seoDescription": "HSTS inschakelen: stappen in DirectAdmin → SSL Certificates voor hsts, inschakelen."
   },
   "en": {
-    "title": "HSTS inschakelen",
+    "title": "Enable HSTS",
     "excerpt": "HSTS inschakelen: steps in DirectAdmin → SSL Certificates for hsts, inschakelen.",
     "bodyHtml": "<p>This guide covers <strong>HSTS inschakelen</strong>. You work in DirectAdmin → SSL Certificates, focusing on <strong>hsts, inschakelen</strong> — not unrelated side quests in other menus.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Access to DirectAdmin → SSL Certificates</li>\n  <li>Focus of this article: <strong>hsts, inschakelen</strong></li>\n  <li>Recent backup or snapshot</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Start in DirectAdmin → SSL Certificates. Before clicking, note the current value for <strong>hsts, inschakelen</strong>.</li>\n  <li>Confirm A/AAAA points at this hosting before requesting a certificate.</li>\n  <li>DirectAdmin → SSL Certificates / Let’s Encrypt; include apex and www if both are used.</li>\n  <li>Force HTTPS only after successful issuance.</li>\n  <li>Test https in a private window; check <strong>hsts</strong> loads without a name mismatch.</li>\n  <li>Rotate credentials tied to <strong>hsts, inschakelen</strong> if abuse was possible.</li>\n  <li>Schedule monitoring or a follow-up check.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Result for <strong>hsts, inschakelen</strong> matches “HSTS inschakelen”</li>\n  <li>No regression on a critical flow beside hsts inschakelen</li>\n  <li>External test or second browser/network confirms the result</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Work in small steps: get <strong>hsts, inschakelen</strong> right first, then optional extras.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not blindly change production without a backup if <strong>hsts, inschakelen</strong> touches login, DNS, mail or payments.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: DirectAdmin → SSL Certificates, backups, tickets.</p>",
-    "seoTitle": "HSTS inschakelen | TripleZero iT",
+    "seoTitle": "Enable HSTS | TripleZero iT",
     "seoDescription": "HSTS inschakelen: steps in DirectAdmin → SSL Certificates for hsts, inschakelen."
   }
 }

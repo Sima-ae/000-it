@@ -9,10 +9,10 @@
     "seoDescription": "Gebruikers beheren in Plesk: stappen in Plesk voor gebruikers, beheren, plesk."
   },
   "en": {
-    "title": "Manage Gebruikers in Plesk",
+    "title": "Manage users in Plesk",
     "excerpt": "Manage Gebruikers in Plesk: steps in Plesk for gebruikers, beheren, Plesk.",
     "bodyHtml": "<p>For <strong>Manage Gebruikers in Plesk</strong> follow a targeted checklist in Plesk. Core themes: <strong>gebruikers, beheren, Plesk</strong>.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Access to Plesk</li>\n  <li>Focus of this article: <strong>gebruikers, beheren, Plesk</strong></li>\n  <li>Note of the current setting/status</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Sign in to Plesk. Filter or search for parts that belong to <strong>gebruikers, beheren, Plesk</strong>.</li>\n  <li>Open the correct subscription/domain in Plesk.</li>\n  <li>Use Mail, DNS, SSL/TLS, Files, Databases or WordPress Toolkit for <strong>gebruikers</strong>.</li>\n  <li>Change <strong>beheren</strong> per “Manage Gebruikers in Plesk”; confirm.</li>\n  <li>Test externally (browser/mail/DNS).</li>\n  <li>Document what you changed around <strong>gebruikers, beheren, Plesk</strong> (old → new value) for support.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Result for <strong>gebruikers, beheren, Plesk</strong> matches “Manage Gebruikers in Plesk”</li>\n  <li>No regression on a critical flow beside gebruikers beheren in plesk</li>\n  <li>External test or second browser/network confirms the result</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Work in small steps: get <strong>gebruikers, beheren, Plesk</strong> right first, then optional extras.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not blindly change production without a backup if <strong>gebruikers, beheren, Plesk</strong> touches login, DNS, mail or payments.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: Plesk, backups, tickets.</p>",
-    "seoTitle": "Manage Gebruikers in Plesk | TripleZero iT",
+    "seoTitle": "Manage users in Plesk | TripleZero iT",
     "seoDescription": "Manage Gebruikers in Plesk: steps in Plesk for gebruikers, beheren, Plesk."
   }
 }

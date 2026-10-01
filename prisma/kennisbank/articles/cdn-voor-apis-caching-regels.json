@@ -9,10 +9,10 @@
     "seoDescription": "CDN voor API’s: caching-regels: stappen in CDN/Cloudflare of servercache voor cdn, api, caching."
   },
   "en": {
-    "title": "CDN for API’s: caching-regels",
+    "title": "CDN for API's: caching rules",
     "excerpt": "CDN for API’s: caching-regels: steps in CDN/Cloudflare or server cache for cdn, api, caching.",
     "bodyHtml": "<p>For <strong>CDN for API’s: caching-regels</strong> follow a targeted checklist in CDN/Cloudflare or server cache. Core themes: <strong>cdn, api, caching</strong>.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Access to CDN/Cloudflare or server cache</li>\n  <li>Focus of this article: <strong>cdn, api, caching</strong></li>\n  <li>Note of the current setting/status</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Work in CDN/Cloudflare or server cache. Stay on the topic <strong>cdn, api, caching</strong> — no parallel experiments.</li>\n  <li>Open the correct CDN zone or cache panel for the domain.</li>\n  <li>Apply caching/rules or purge focused on <strong>cdn</strong>.</li>\n  <li>Keep origin SSL/DNS correct; exclude checkout/wp-admin from full-page cache for shops.</li>\n  <li>Test in a private window that <strong>api</strong> shows the new content.</li>\n  <li>Document what you changed around <strong>cdn, api, caching</strong> (old → new value) for support.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Result for <strong>cdn, api, caching</strong> matches “CDN for API’s: caching-regels”</li>\n  <li>No regression on a critical flow beside cdn voor apis caching</li>\n  <li>External test or second browser/network confirms the result</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Work in small steps: get <strong>cdn, api, caching</strong> right first, then optional extras.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not blindly change production without a backup if <strong>cdn, api, caching</strong> touches login, DNS, mail or payments.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: CDN/Cloudflare or server cache, backups, tickets.</p>",
-    "seoTitle": "CDN for API’s: caching-regels | TripleZero iT",
+    "seoTitle": "CDN for API's: caching rules | TripleZero iT",
     "seoDescription": "CDN for API’s: caching-regels: steps in CDN/Cloudflare or server cache for cdn, api, caching."
   }
 }
