@@ -1,0 +1,1 @@
+Hosting u oblaku daje više resursa i skalabilnosti od klasičnog dijeljenog, a mi njime upravljamo. Idealno kada deljenje postane tesno, ali puni VPS još uvek nije potreban. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Via la gestion DNS de votre domaine ou de votre panneau d'hébergement, vous définissez les enregistrements A, AAAA, CNAME, MX et TXT. Nous aidons avec les migrations et l’authentification du courrier. Lire la suite : ⟦L0⟧ · ⟦L1⟧.

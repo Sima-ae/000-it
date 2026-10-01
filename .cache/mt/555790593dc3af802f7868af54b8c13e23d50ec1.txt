@@ -1,0 +1,1 @@
+Pilvipalvelu tarjoaa enemmän resursseja ja skaalautuvuutta kuin klassinen jaettu, mutta jatkamme sen hallintaa. Ihanteellinen, kun jaettu tiukka, mutta täyttä VPS:ää ei vielä tarvita. Lue lisää: ⟦L0⟧ · ⟦L1⟧.

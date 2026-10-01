@@ -1,0 +1,1 @@
+Ne ovat DNS-tietueita, jotka käsittelevät sähköpostin todennusta ja vähentävät huijausta/roskapostia. Ilman oikeita tietueita posti päätyy useammin roskapostiin. Lue lisää: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

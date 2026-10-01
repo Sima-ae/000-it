@@ -1,0 +1,1 @@
+Ustalamy przejrzystą strukturę konta, mapujemy intencje wyszukiwania, dodajemy wykluczające słowa kluczowe, sprawdzamy dopasowanie strony docelowej, konfigurujemy śledzenie konwersji i cotygodniową optymalizację.

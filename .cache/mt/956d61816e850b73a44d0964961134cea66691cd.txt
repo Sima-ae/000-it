@@ -1,0 +1,1 @@
+Sajtet e paracaktuara janë HTTPS. Gjatë migrimeve ne detyrojmë HTTPS dhe zgjidhim përmbajtje të përzier. Lexo më shumë: ⟦L0⟧HTTP në HTTPS në WordPress⟦/L0⟧ · ⟦L1⟧SSL⟦/L1⟧.

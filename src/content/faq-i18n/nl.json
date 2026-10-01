@@ -1,6 +1,6 @@
 {
   "title": "Veelgestelde vragen",
-  "subtitle": "Vragen en antwoorden — van AI, AEO, GEO en SEO tot design, domeinnamen, hosting, marketing, social media en support.",
+  "subtitle": "Vragen en antwoorden — van AI, AEO, GEO en SEO tot design, domeinen, hosting, account, shop, marketing en support.",
   "ctaTitle": "Nog hulp nodig?",
   "ctaText": "Staat jullie vraag er niet tussen? Neem contact op — we reageren zo snel mogelijk.",
   "ctaButton": "Neem contact op",
@@ -12,12 +12,12 @@
         {
           "id": "alg-1",
           "question": "Wat doet TripleZero iT precies?",
-          "answer": "TripleZero iT combineert webdesign, WordPress beheer, digital marketing, zoekzichtbaarheid (AEO, GEO/lokaal en SEO), design en hosting. We helpen merken sneller gevonden te worden, betere websites te bouwen en meetbaar te groeien."
+          "answer": "TripleZero iT combineert webdesign, WordPress beheer, digital marketing, zoekzichtbaarheid (AEO, GEO/lokaal en SEO), design en hosting. We helpen merken sneller gevonden te worden, betere websites te bouwen en meetbaar te groeien. Meer lezen: [Over ons](/over-ons) · [Diensten](/diensten)."
         },
         {
           "id": "alg-2",
           "question": "Hoe begin ik met TripleZero iT?",
-          "answer": "Neem contact op of plan een afspraak. We doen een korte intake, kijken naar doelen en stack, en stellen daarna een concreet voorstel op met planning en KPI’s."
+          "answer": "Neem contact op of plan een afspraak. We doen een korte intake, kijken naar doelen en stack, en stellen daarna een concreet voorstel op met planning en KPI’s. Meer lezen: [Afspraak plannen](/afspraak) · [Contact](/contact)."
         },
         {
           "id": "alg-3",
@@ -73,6 +73,46 @@
           "id": "alg-13",
           "question": "Kunnen jullie bestaande leveranciers overnemen of samenwerken?",
           "answer": "Ja. We werken soepel naast developers, marketeers of agencies, of we nemen onderhoud en optimalisatie over zonder het bestaande werk onnodig overhoop te halen."
+        },
+        {
+          "id": "alg-14",
+          "question": "Wat is Agent 000 (de chatassistent)?",
+          "answer": "Agent 000 is onze digitale assistent op de site en in supportflows. Hij beantwoordt veelgestelde vragen, wijst naar kennisbankartikelen en kan je doorverwijzen naar live chat, een ticket of een afspraak wanneer menselijke hulp beter past. Meer lezen: [Digitale assistent](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Chat, ticket of belafspraak](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "alg-15",
+          "question": "Hoe plan ik een afspraak of belafspraak?",
+          "answer": "Via de pagina Afspraak kies je een moment dat past. Voor snelle vragen kun je ook live chat of een ticket gebruiken; een belafspraak is handig bij complexere trajecten of intakes. Meer lezen: [Afspraak](/afspraak) · [Belafspraak uitgelegd](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)."
+        },
+        {
+          "id": "alg-16",
+          "question": "Waar zie ik de status van jullie diensten?",
+          "answer": "Op de statuspage tonen we incidenten en onderhoud rond hosting en gerelateerde diensten, zodat je snel ziet of er iets speelt. Meer lezen: [Statuspage](/statuspage)."
+        },
+        {
+          "id": "alg-17",
+          "question": "Hebben jullie een kennisbank?",
+          "answer": "Ja. In de kennisbank staan handleidingen over domeinen, DNS, e-mail, hosting, WordPress, AI-scan, security en meer — met stapsgewijze uitleg. Meer lezen: [Kennisbank](/kennisbank)."
+        },
+        {
+          "id": "alg-18",
+          "question": "Hoe gaan jullie om met privacy en cookies?",
+          "answer": "We werken AVG-bewust: privacyteksten, toestemming bij formulieren en cookiebanners/consent mode waar tracking nodig is. Voor WordPress helpen we met een correcte cookie-setup. Meer lezen: [Cookiebanner in WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress) · [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Privacy bij formulieren](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren)."
+        },
+        {
+          "id": "alg-19",
+          "question": "Waar vind ik jullie nieuws en updates?",
+          "answer": "Op de nieuwspagina publiceren we updates over producten, security en tips. Voor technische storingen kijk je op de statuspage. Meer lezen: [Nieuws](/nieuws) · [Statuspage](/statuspage)."
+        },
+        {
+          "id": "alg-20",
+          "question": "Wat kost het om met jullie te werken?",
+          "answer": "Dat hangt af van de mix: hosting en shopproducten hebben vaste prijzen; design, SEO, ads en retainers volgen na intake. In de shop zie je pakketten; voor maatwerk krijg je een voorstel. Meer lezen: [Shop](/shop) · [Contact](/contact)."
+        },
+        {
+          "id": "alg-21",
+          "question": "Kunnen jullie ook alleen consulting of audit doen?",
+          "answer": "Ja. Audits, AI-scans, technische reviews en sparringsessies kunnen los van een full-service traject. Daarna kun je zelf uitvoeren of ons laten doorpakken. Meer lezen: [AI-scan](/ai-scan) · [Diensten](/diensten)."
         }
       ]
     },
@@ -83,17 +123,17 @@
         {
           "id": "ai-1",
           "question": "Wat is een AI-scan bij TripleZero iT?",
-          "answer": "Een AI-readiness scan beoordeelt hoe goed jullie site vindbaar is voor klassieke zoekmachines, AI-antwoorden én lokale of geografische zoekresultaten (AEO, GEO, SEO en de technische basis)."
+          "answer": "Een AI-readiness scan beoordeelt hoe goed jullie site vindbaar is voor klassieke zoekmachines, AI-antwoorden én lokale of geografische zoekresultaten (AEO, GEO, SEO en de technische basis). Meer lezen: [Wat is de AI-scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [AI-scan starten](/ai-scan)."
         },
         {
           "id": "ai-2",
           "question": "Wat meet de AI-scan precies?",
-          "answer": "De scan meet onder meer AEO-signalen, GEO/lokale vindbaarheid, SEO-fundamentals, contentstructuur, performance-indicaties en AI-readiness. Jullie krijgen scores én concrete verbeterpunten."
+          "answer": "De scan meet onder meer AEO-signalen, GEO/lokale vindbaarheid, SEO-fundamentals, contentstructuur, performance-indicaties en AI-readiness. Jullie krijgen scores én concrete verbeterpunten. Meer lezen: [Scores uitleggen](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)."
         },
         {
           "id": "ai-3",
           "question": "Hoe vaak moet ik een AI-scan doen?",
-          "answer": "Minimaal bij grote sitewijzigingen of campagnes. Voor actieve merken adviseren we periodieke scans, bijvoorbeeld elk kwartaal, zodat jullie zichtbaar blijven in zoek- én AI-resultaten."
+          "answer": "Minimaal bij grote sitewijzigingen of campagnes. Voor actieve merken adviseren we periodieke scans, bijvoorbeeld elk kwartaal, zodat jullie zichtbaar blijven in zoek- én AI-resultaten. Meer lezen: [AI-scan starten](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website)."
         },
         {
           "id": "ai-4",
@@ -118,12 +158,12 @@
         {
           "id": "ai-8",
           "question": "Wat is AI-readiness voor mijn merk?",
-          "answer": "Dat is de mate waarin jullie site, content en data zo zijn ingericht dat AI-systemen jullie correct kunnen citeren, aanbevelen en uitleggen."
+          "answer": "Dat is de mate waarin jullie site, content en data zo zijn ingericht dat AI-systemen jullie correct kunnen citeren, aanbevelen en uitleggen. Meer lezen: [AI-readiness in de scan](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)."
         },
         {
           "id": "ai-9",
           "question": "Kunnen jullie AI-agents in het dashboard inzetten?",
-          "answer": "Ja. In het klantportaal zien jullie AI-agents voor onder meer SEO, content, social en ads — inclusief status en taken."
+          "answer": "Ja. In het klantportaal zien jullie AI-agents voor onder meer SEO, content, social en ads — inclusief status en taken. Meer lezen: [Wat zijn AI-agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Agents in je account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)."
         },
         {
           "id": "ai-10",
@@ -144,6 +184,46 @@
           "id": "ai-13",
           "question": "Hoe meet ik ROI van AI-initiatieven?",
           "answer": "Via KPI’s zoals traffic, leads, time-saved, content-output, ticket-resolutie en conversie. Die meten we vooraf in het plan, zodat resultaat zichtbaar blijft."
+        },
+        {
+          "id": "ai-14",
+          "question": "Hoe start ik een AI-scan op mijn website?",
+          "answer": "Ga naar de AI-scan, voer je URL in en start de analyse. Je krijgt scores voor AEO, GEO, SEO, performance en AI-readiness plus verbeterpunten. Meer lezen: [AI-scan starten](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website) · [AI-scan pagina](/ai-scan)."
+        },
+        {
+          "id": "ai-15",
+          "question": "Hoe lees ik de AI-scan scores?",
+          "answer": "Elke score toont hoe sterk je staat op dat vlak; lage scores komen met concrete tips. Gebruik de scan als prioriteitenlijst, niet als eenmalige “report card”. Meer lezen: [Scores uitleggen](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Vervolgstappen](/kennisbank/ai-scan/welke-vervolgstappen-zet-ik-na-mijn-ai-scan)."
+        },
+        {
+          "id": "ai-16",
+          "question": "Wat is het verschil tussen een AI-scan en een volledig AEO/GEO/SEO-traject?",
+          "answer": "De scan is een snelle diagnose. Een traject voert verbeteringen door: content, structured data, technische SEO, lokale signalen en meting over tijd. Meer lezen: [Scan versus traject](/kennisbank/ai-scan/ai-scan-versus-een-volledig-aeo-geo-seo-traject-wat-is-het-verschil) · [SEO starten](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-17",
+          "question": "Waar vind ik eerdere AI-scans in mijn account?",
+          "answer": "Ingelogde klanten zien eerdere scans en analyses in het dashboard (SEO-analyse), zodat je voortgang kunt vergelijken. Meer lezen: [AI-scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Account / dashboard](/dashboard)."
+        },
+        {
+          "id": "ai-18",
+          "question": "Wat doe ik na een lage AEO- of GEO-score?",
+          "answer": "Prioriteer FAQ’s, entities, structured data (AEO) en Google Business Profile / NAP / lokale landingspagina’s (GEO). We helpen die roadmap omzetten in uitvoering. Meer lezen: [Scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Lokale vindbaarheid](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "ai-19",
+          "question": "Hoe werken AI-agents in het klantportaal?",
+          "answer": "AI-agents ondersteunen taken rond SEO, content, social of ads. Je opent het overzicht in je account, ziet status en kunt agents starten of pauzeren volgens je pakket. Meer lezen: [Wat zijn AI-agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Agents openen](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)."
+        },
+        {
+          "id": "ai-20",
+          "question": "Is de AI-scan gratis?",
+          "answer": "Er is een toegankelijke instap via de AI-scan pagina; diepere analyses en trajecten vallen onder diensten of retainers. Na de scan zie je meteen of een vervolg zinvol is. Meer lezen: [AI-scan](/ai-scan) · [Wat is de AI-scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-21",
+          "question": "Helpt Agent 000 ook met AI- en SEO-vragen?",
+          "answer": "Ja. Agent 000 gebruikt FAQ en kennisbank om AEO/GEO/SEO- en AI-scanvragen te beantwoorden en linkt door naar de juiste artikelen of een menselijke opvolging. Meer lezen: [Digitale assistent](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [FAQ](/faq)."
         }
       ]
     },
@@ -154,17 +234,17 @@
         {
           "id": "seo-1",
           "question": "Wat is het verschil tussen AEO, GEO en SEO?",
-          "answer": "AEO (Answer Engine Optimization) richt zich op AI-antwoorden. GEO (Geographic Search Engine Optimization) versterkt lokale en regionale vindbaarheid in Maps, local packs en locatiegericht zoeken. SEO optimaliseert voor klassieke zoekmachines."
+          "answer": "AEO (Answer Engine Optimization) richt zich op AI-antwoorden. GEO (Geographic Search Engine Optimization) versterkt lokale en regionale vindbaarheid in Maps, local packs en locatiegericht zoeken. SEO optimaliseert voor klassieke zoekmachines. Meer lezen: [Hoe AEO, GEO en SEO samenhangen](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen) · [Wat is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization)."
         },
         {
           "id": "seo-2",
           "question": "Waarom is AEO/GEO nu belangrijk?",
-          "answer": "Steeds meer zoekers krijgen antwoorden via AI én zoeken lokaal (“bij mij in de buurt”). Zonder AEO missen jullie AI-citaties; zonder GEO missen jullie lokale leads — ook als klassieke SEO goed is."
+          "answer": "Steeds meer zoekers krijgen antwoorden via AI én zoeken lokaal (“bij mij in de buurt”). Zonder AEO missen jullie AI-citaties; zonder GEO missen jullie lokale leads — ook als klassieke SEO goed is. Meer lezen: [Wat is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant)."
         },
         {
           "id": "seo-3",
           "question": "Hoe starten jullie een SEO-traject?",
-          "answer": "We starten met een technische audit, keyword- en intent-onderzoek, een contentgap-analyse en een prioriteitenroadmap die gekoppeld is aan jullie business-KPI’s."
+          "answer": "We starten met een technische audit, keyword- en intent-onderzoek, een contentgap-analyse en een prioriteitenroadmap die gekoppeld is aan jullie business-KPI’s. Meer lezen: [SEO starten](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
         },
         {
           "id": "seo-4",
@@ -174,7 +254,7 @@
         {
           "id": "seo-5",
           "question": "Doen jullie ook lokale SEO?",
-          "answer": "Ja. We werken aan Google Business Profile, lokale landingspagina’s, NAP-consistentie, reviews en lokale contentclusters, zodat jullie beter gevonden worden in de regio."
+          "answer": "Ja. We werken aan Google Business Profile, lokale landingspagina’s, NAP-consistentie, reviews en lokale contentclusters, zodat jullie beter gevonden worden in de regio. Meer lezen: [Lokale vindbaarheid verbeteren](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
         },
         {
           "id": "seo-6",
@@ -220,6 +300,36 @@
           "id": "seo-14",
           "question": "Helpen jullie met internationale SEO?",
           "answer": "Ja. We regelen hreflang, marktonderzoek per land of taal, contentlokalisatie en technische multi-locale setups."
+        },
+        {
+          "id": "seo-15",
+          "question": "Wat is AEO precies?",
+          "answer": "AEO (Answer Engine Optimization) maakt content zo dat AI-antwoorden en antwoordengines je merk correct kunnen citeren: duidelijke FAQ’s, entities en structured data. Meer lezen: [Wat is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AEO, GEO en SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
+        },
+        {
+          "id": "seo-16",
+          "question": "Wat is GEO (geographic SEO)?",
+          "answer": "GEO versterkt lokale en regionale vindbaarheid — Maps, local packs en locatiegericht zoeken — via GBP, NAP-consistentie en lokale content. Meer lezen: [Wat is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant) · [Lokale vindbaarheid](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "seo-17",
+          "question": "Hoe bestel of start ik SEO-optimalisatie?",
+          "answer": "Start met een AI-scan of audit, daarna een voorstel met prioriteiten. Je kunt SEO ook via shop/diensten of retainer combineren met content en tech. Meer lezen: [SEO starten](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting) · [AI-scan](/ai-scan)."
+        },
+        {
+          "id": "seo-18",
+          "question": "Helpen jullie met structured data en FAQ-schema?",
+          "answer": "Ja. We zetten relevante schema’s (FAQ, Organization, LocalBusiness, producten) en structureren content zodat zoekmachines én AI je beter begrijpen. Meer lezen: [AEO uitleg](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AI-scan scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)."
+        },
+        {
+          "id": "seo-19",
+          "question": "Wat doen jullie aan Core Web Vitals?",
+          "answer": "We meten LCP, INP en CLS, lossen zware assets, hosting/caching en theme-problemen op, en koppelen dat aan CDN waar zinvol. Meer lezen: [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [Hosting kiezen](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "seo-20",
+          "question": "Kunnen jullie SEO combineren met hosting en WordPress-care?",
+          "answer": "Ja. Stabiele hosting, updates en performance vormen de basis; SEO bouwt daarop. Veel klanten combineren WP-care + hosting + doorlopende SEO. Meer lezen: [Hosting](/diensten/categorie/hosting) · [SEO starten](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
         }
       ]
     },
@@ -291,6 +401,26 @@
           "id": "ads-13",
           "question": "Is remarketing nog relevant?",
           "answer": "Ja, mits privacy-compliant en met sterke creatives en offers. Het blijft vaak de efficiëntste laag in de funnel."
+        },
+        {
+          "id": "ads-14",
+          "question": "Helpen jullie met consent mode en cookiebanners voor ads?",
+          "answer": "Ja. Zonder correcte consent en tagging is advertentiemeting onbetrouwbaar. We koppelen banners, GTM/GA4 en pixels netjes. Meer lezen: [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Cookiebanner WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "ads-15",
+          "question": "Kunnen jullie landingspagina’s voor campagnes bouwen?",
+          "answer": "Ja — snelle landingspagina’s of WordPress-pagina’s afgestemd op zoekintentie, met tracking en CRO-basics. Meer lezen: [Diensten](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "ads-16",
+          "question": "Hoe voorkomen jullie verspild adbudget?",
+          "answer": "Strakke accountstructuur, negatieve keywords, audience-uitsluitingen, landingpage-fit en wekelijkse optimalisatie op CPA/ROAS — niet op klikken alleen."
+        },
+        {
+          "id": "ads-17",
+          "question": "Werken ads goed samen met AEO/SEO?",
+          "answer": "Ja. Ads leveren snelle data en traffic; SEO/AEO bouwen duurzame zichtbaarheid. Insights uit keywords en creatives voeden content en landingspagina’s. Meer lezen: [AEO, GEO en SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
         }
       ]
     },
@@ -362,6 +492,26 @@
           "id": "des-13",
           "question": "Waar vind ik meer over Design?",
           "answer": "Meer informatie staat op /design (alle design-diensten) en /grafisch-design voor Grafisch Design."
+        },
+        {
+          "id": "des-14",
+          "question": "Leveren jullie ook design systemen en componentbibliotheken?",
+          "answer": "Ja, voor merken die consistent willen schalen: tokens, componenten en documentatie zodat marketing en product dezelfde taal spreken."
+        },
+        {
+          "id": "des-15",
+          "question": "Kunnen jullie bestaande merkstijl digitaliseren?",
+          "answer": "Ja. We vertalen print of incomplete brand guidelines naar webklare kleuren, typografie, UI-kit en templates."
+        },
+        {
+          "id": "des-16",
+          "question": "Doen jullie UX-research of alleen visueel design?",
+          "answer": "Beide. Waar nodig starten we met interviews, funnelanalyse of heatmaps; daarna UI. Zo ontwerpen we op gedrag, niet alleen op smaak."
+        },
+        {
+          "id": "des-17",
+          "question": "Kunnen jullie social templates en ad creatives ontwerpen?",
+          "answer": "Ja — carrousels, thumbnails, stories en adsets die aansluiten op jullie merk en campagnedoelen. Meer lezen: [Diensten](/diensten)."
         }
       ]
     },
@@ -433,6 +583,26 @@
           "id": "mkt-13",
           "question": "Hoe voorkomen jullie “busy marketing” zonder resultaat?",
           "answer": "Elke activiteit hangt aan KPI’s. Underperforming tactieken stoppen we of verbeteren we met data, zodat budget naar wat werkt gaat."
+        },
+        {
+          "id": "mkt-14",
+          "question": "Wat zit er typisch in een marketingretainer?",
+          "answer": "Een mix van strategie, content of SEO, campagnes, rapportage en experimenten — afgestemd op KPI’s. Scope en uren leggen we vast zodat prioriteiten helder blijven. Meer lezen: [Shop](/shop) · [Contact](/contact)."
+        },
+        {
+          "id": "mkt-15",
+          "question": "Helpen jullie met positionering en messaging?",
+          "answer": "Ja. Heldere positionering, value props en pagina-copy zorgen dat ads, SEO en sales dezelfde boodschap uitdragen."
+        },
+        {
+          "id": "mkt-16",
+          "question": "Meten jullie marketing aan pipeline, niet alleen traffic?",
+          "answer": "Waar mogelijk wel: leads, SQL’s, revenue of assisted conversions. Traffic zonder kwaliteit sturen we bij of stoppen we."
+        },
+        {
+          "id": "mkt-17",
+          "question": "Kunnen jullie marketing stack en tracking opschonen?",
+          "answer": "Ja — GTM, GA4, pixels, CRM-koppelingen en consent. Schone data is de basis voor goede beslissingen. Meer lezen: [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen)."
         }
       ]
     },
@@ -504,6 +674,153 @@
           "id": "soc-13",
           "question": "Hoe snel zien we groei op social?",
           "answer": "Consistentie telt. Significante groei vraagt meestal weken tot maanden; met ads-support gaat het vaak sneller."
+        },
+        {
+          "id": "soc-14",
+          "question": "Helpen jullie met social proof en reviews?",
+          "answer": "Ja. We plannen review-requests, cases en UGC-achtige formats die vertrouwen opbouwen — zonder nepengagement."
+        },
+        {
+          "id": "soc-15",
+          "question": "Kunnen jullie employee advocacy opzetten?",
+          "answer": "Ja, vooral op LinkedIn: eenvoudige guidelines, templates en een ritme zodat het team zichtbaar expertise deelt."
+        },
+        {
+          "id": "soc-16",
+          "question": "Hoe koppelen jullie social aan de website en shop?",
+          "answer": "Via UTM’s, landingspagina’s, productlinks en retargeting. Social is een kanaal in de funnel, geen eiland. Meer lezen: [Shop](/shop)."
+        }
+      ]
+    },
+    {
+      "id": "account-portaal",
+      "title": "Account en portaal",
+      "items": [
+        {
+          "id": "acc-1",
+          "question": "Hoe log ik in op het klantenportaal?",
+          "answer": "Ga naar account/login en gebruik het e-mailadres van je klantaccount. Ben je gegevens kwijt, gebruik wachtwoord reset of neem contact op. Meer lezen: [Account](/dashboard) · [Login kwijt](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-2",
+          "question": "Wat zie ik in mijn dashboard?",
+          "answer": "Afhankelijk van je diensten: tickets, projecten, facturen, AI-scan/agents en snelle links naar support. Meer lezen: [AI-agents in account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account) · [Ticket aanmaken](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "acc-3",
+          "question": "Ik ben mijn logingegevens kwijt — wat nu?",
+          "answer": "Gebruik “wachtwoord vergeten” of volg de kennisbankstappen voor het klantenpanel. Lukt het niet, open een ticket via een bekend contactadres. Meer lezen: [Logingegevens kwijt](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-4",
+          "question": "Hoe open ik een ticket vanuit het portaal?",
+          "answer": "In het klantenpanel kies je support/tickets, beschrijf je probleem en voeg bewijs toe (URL, screenshots). Meer lezen: [Ticket aanmaken](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "acc-5",
+          "question": "Waar vind ik mijn facturen?",
+          "answer": "In het portaal onder facturatie/billing kun je facturen bekijken en downloaden. Meer lezen: [Facturen raadplegen](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "acc-6",
+          "question": "Hoe wijzig ik factuurgegevens of betaalmethode?",
+          "answer": "Pas bedrijfsnaam, BTW-nummer en betaalmethode aan in je accountinstellingen zodat nieuwe facturen kloppen. Meer lezen: [Factuurgegevens wijzigen](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "acc-7",
+          "question": "Kunnen collega’s ook toegang krijgen?",
+          "answer": "Ja, met accountrollen (client, manager, admin) zodat meerdere teamleden tickets of projecten kunnen volgen zonder alles te delen."
+        },
+        {
+          "id": "acc-8",
+          "question": "Zijn AI-scan en AI-agents gekoppeld aan mijn account?",
+          "answer": "Ja. Scans en agents horen bij je klantaccount zodat historie en rechten bewaard blijven. Meer lezen: [AI-agents](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [AI-scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "acc-9",
+          "question": "Hoe veilig is mijn klantaccount?",
+          "answer": "Gebruik unieke wachtwoorden en 2FA waar beschikbaar (ook op hostingpanels). Deel geen sessies op gedeelde computers. Meer lezen: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
+        },
+        {
+          "id": "acc-10",
+          "question": "Kan ik projectstatus en deliverables volgen?",
+          "answer": "Waar projecten in het portaal staan, zie je status en communicatie. Anders houden we je via tickets of sprintupdates op de hoogte."
+        },
+        {
+          "id": "acc-11",
+          "question": "Hoe koppel ik diensten uit de shop aan mijn account?",
+          "answer": "Na checkout horen orders bij je account; provisioning (hosting, domein) volgt automatisch of via onboarding door support. Meer lezen: [Shop](/shop)."
+        },
+        {
+          "id": "acc-12",
+          "question": "Waar stel ik notificaties of voorkeuren in?",
+          "answer": "In accountinstellingen beheer je profiel- en waar beschikbaar notificatievoorkeuren. Voor factuurmails hou je je e-mailadres actueel."
+        }
+      ]
+    },
+    {
+      "id": "shop-bestellen",
+      "title": "Shop en bestellen",
+      "items": [
+        {
+          "id": "shop-1",
+          "question": "Wat kan ik in de shop bestellen?",
+          "answer": "Hostingpakketten, domeinen, care/support-producten en andere diensten die we online aanbieden. Maatwerk offertes lopen via contact. Meer lezen: [Shop](/shop) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "shop-2",
+          "question": "Hoe werkt de winkelwagen en checkout?",
+          "answer": "Voeg producten toe, controleer periode (maand/jaar) en rond af via checkout. Daarna ontvang je bevestiging en toegang tot je account. Meer lezen: [Winkelwagen](/shop/cart)."
+        },
+        {
+          "id": "shop-3",
+          "question": "Zijn prijzen inclusief of exclusief btw?",
+          "answer": "In de shop tonen we prijzen volgens de getoonde btw-context (vaak incl. voor consumentenflows). Op de factuur staat btw netto uitgesplitst voor zakelijke klanten."
+        },
+        {
+          "id": "shop-4",
+          "question": "Kan ik maandelijks of jaarlijks betalen?",
+          "answer": "Veel hosting- en care-producten hebben maand- en jaaropties. Jaarlijks is vaak voordeliger; details staan per productkaart."
+        },
+        {
+          "id": "shop-5",
+          "question": "Welke betaalmethoden accepteren jullie?",
+          "answer": "Gangbare online methoden via de checkout (afhankelijk van regio). Voor enterprise-facturen kunnen we facturatie op rekening afspreken via contact."
+        },
+        {
+          "id": "shop-6",
+          "question": "Krijg ik meteen toegang na betaling?",
+          "answer": "Voor standaard hosting/domeinproducten volgt provisioning snel na succesvolle betaling. Bij custom diensten plant support de kick-off."
+        },
+        {
+          "id": "shop-7",
+          "question": "Kan ik later upgraden van pakket?",
+          "answer": "Ja. Van shared naar cloud/VPS of van Basic naar Plus/Business kan met migratieplanning. Meer lezen: [Shared naar VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [Pakket kiezen](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "shop-8",
+          "question": "Hoe combineer ik shopproducten met maatwerk?",
+          "answer": "Bestel hosting/care online en plan design, SEO of ads via intake. We bundelen facturatie en account waar mogelijk. Meer lezen: [Contact](/contact)."
+        },
+        {
+          "id": "shop-9",
+          "question": "Wat als mijn bestelling niet aankomt of vastloopt?",
+          "answer": "Check je mail (inclusief spam) en het portaal. Blijft het stil, open een ticket of mail support met ordernummer. Meer lezen: [Contact](/contact) · [Tickets](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "shop-10",
+          "question": "Kan ik een domein en hosting in één order bestellen?",
+          "answer": "Ja, dat is de gebruikelijke flow: domein + hosting in de winkelwagen, daarna DNS-koppeling. Meer lezen: [Domeinen](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "shop-11",
+          "question": "Zijn er pakketten voor WordPress Care?",
+          "answer": "Ja. Care-pakketten dekken updates, monitoring en onderhoud — los of naast hosting. Meer lezen: [Shop](/shop)."
+        },
+        {
+          "id": "shop-12",
+          "question": "Hoe annuleer of wijzig ik een bestelling?",
+          "answer": "Direct na order via support; daarna gelden opzeg- en wijzigingsvoorwaarden per product. We helpen migratie of export als je stopt. Meer lezen: [Contact](/contact)."
         }
       ]
     },
@@ -514,12 +831,12 @@
         {
           "id": "sup-1",
           "question": "Welke support bieden jullie?",
-          "answer": "We bieden WordPress beheer, maatwerk website-support, tickets en live chat, onderhoud, security, performance en incident response."
+          "answer": "We bieden WordPress beheer, maatwerk website-support, tickets en live chat, onderhoud, security, performance en incident response. Meer lezen: [Contact met support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting) · [Chat, ticket of belafspraak](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
         },
         {
           "id": "sup-2",
           "question": "Hoe bereik ik support?",
-          "answer": "Via contact, een afspraak, tickets in het dashboard of live chat op de site. Spoedcases markeren we als prioriteit."
+          "answer": "Via contact, een afspraak, tickets in het dashboard of live chat op de site. Spoedcases markeren we als prioriteit. Meer lezen: [Contact](/contact) · [Ticket aanmaken](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Belafspraak](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)."
         },
         {
           "id": "sup-3",
@@ -529,7 +846,7 @@
         {
           "id": "sup-4",
           "question": "Bieden jullie 24/7 monitoring?",
-          "answer": "Ja, in relevante support- en hostingpakketten: monitoring, backups en alerts, zodat problemen eerder zichtbaar zijn."
+          "answer": "Ja, in relevante support- en hostingpakketten: monitoring, backups en alerts, zodat problemen eerder zichtbaar zijn. Meer lezen: [Backups bij downtime](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup)."
         },
         {
           "id": "sup-5",
@@ -539,22 +856,22 @@
         {
           "id": "sup-6",
           "question": "Doen jullie WordPress-updates voor ons?",
-          "answer": "Ja, via “Onderhoud en updates”: core, plugins en themes, met backup en checks voordat en nadat we updaten."
+          "answer": "Ja, via “Onderhoud en updates”: core, plugins en themes, met backup en checks voordat en nadat we updaten. Meer lezen: [Site down na WP-update](/kennisbank/hosting/website-down-na-update-wordpress)."
         },
         {
           "id": "sup-7",
           "question": "Helpen jullie bij hostingproblemen?",
-          "answer": "Ja. We diagnosticeren, migrieren of optimaliseren hosting, VPS en domeinen tot de site weer stabiel draait."
+          "answer": "Ja. We diagnosticeren, migrieren of optimaliseren hosting, VPS en domeinen tot de site weer stabiel draait. Meer lezen: [Website of e-mail verhuizen](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je)."
         },
         {
           "id": "sup-8",
           "question": "Wat als mijn site platligt?",
-          "answer": "Meld het als spoed. We herstellen waar mogelijk via backups, server checks en een hotfix, en houden jullie tussentijds op de hoogte van de status."
+          "answer": "Meld het als spoed. We herstellen waar mogelijk via backups, server checks en een hotfix, en houden jullie tussentijds op de hoogte van de status. Meer lezen: [Backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [Zelf checken vóór support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support)."
         },
         {
           "id": "sup-9",
           "question": "Is er een klantportaal?",
-          "answer": "Ja. Ingelogde klanten zien dashboard, tickets, projecten en waar relevant CRM of facturen."
+          "answer": "Ja. Ingelogde klanten zien dashboard, tickets, projecten en waar relevant CRM of facturen. Meer lezen: [Ticket via klantenpanel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel) · [Login kwijt?](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
         },
         {
           "id": "sup-10",
@@ -575,6 +892,56 @@
           "id": "sup-13",
           "question": "Kan ik support later upgraden?",
           "answer": "Ja. Jullie kunnen opschalen wanneer verkeer, risico of teambehoefte groeit."
+        },
+        {
+          "id": "sup-14",
+          "question": "Wat is het verschil tussen chat, ticket en belafspraak?",
+          "answer": "Chat is snel voor korte vragen; tickets zijn beter voor technische cases met logs en opvolging; een belafspraak past bij intake of complexe uitleg. Meer lezen: [Chat versus ticket versus belafspraak](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "sup-15",
+          "question": "Hoe maak ik een supportticket aan?",
+          "answer": "Log in op het klantenpanel en open een ticket met duidelijke URL, stappen en screenshots. Hoe beter de info, hoe sneller we kunnen helpen. Meer lezen: [Ticket aanmaken](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "sup-16",
+          "question": "Hebben jullie backups als mijn site platligt?",
+          "answer": "Ja, afhankelijk van je hosting- of supportpakket. Bij downtime herstellen we waar mogelijk vanuit backups en onderzoeken we de oorzaak. Meer lezen: [Backups bij downtime](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor)."
+        },
+        {
+          "id": "sup-17",
+          "question": "Wat kan ik zelf checken voordat ik support bel?",
+          "answer": "Check statuspage, DNS-propagatie, recente updates, schijfruimte en of de fout reproduceerbaar is. Dat versnelt de diagnose. Meer lezen: [Zelf doen vóór support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support) · [Statuspage](/statuspage)."
+        },
+        {
+          "id": "sup-18",
+          "question": "Hoe werkt live chat op de site?",
+          "answer": "Open live chat via de chatknop. Agent 000 helpt eerst met FAQ/kennisbank; bij complexere of urgente zaken schakelen we door naar een medewerker. Meer lezen: [Digitale assistent](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Contact](/contact)."
+        },
+        {
+          "id": "sup-19",
+          "question": "Helpen jullie bij een kritieke WordPress-fout?",
+          "answer": "Ja. We diagnosticeren white screens, kritieke PHP-fouten en plugin-conflicten, met backup en gerichte fix. Meer lezen: [Kritieke fout WordPress](/kennisbank/wordpress/kritieke-fout-wordpress) · [Down na update](/kennisbank/hosting/website-down-na-update-wordpress)."
+        },
+        {
+          "id": "sup-20",
+          "question": "Kunnen jullie remote meekijken (TeamViewer e.d.)?",
+          "answer": "Waar nodig en met toestemming wel, voor desktop- of panelproblemen. Voor de meeste hostingzaken volstaat toegang tot panel, DNS of WordPress. Meer lezen: [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "sup-21",
+          "question": "Hoe zeg ik een abonnement of dienst op?",
+          "answer": "Opzeggen kan via het klantenpanel of support; let op opzegtermijnen in je overeenkomst. We helpen data/export en DNS-overdracht netjes afronden. Meer lezen: [Contact](/contact) · [Account](/dashboard)."
+        },
+        {
+          "id": "sup-22",
+          "question": "Bieden jullie WordPress Care / onderhoudspakketten?",
+          "answer": "Ja. Updates, backups, security-checks en performance vallen onder care-pakketten — ideaal naast hosting. Meer lezen: [Shop](/shop) · [WordPress installeren](/kennisbank/wordpress/handleiding-wordpress-installeren)."
+        },
+        {
+          "id": "sup-23",
+          "question": "Wat als e-mail plotseling stopt met werken?",
+          "answer": "Check DNS (MX/SPF/DKIM/DMARC), mailboxquota en of Microsoft of providers mail blokkeren. Wij helpen de keten doormeten. Meer lezen: [E-mailproblemen](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
         }
       ]
     },
@@ -585,7 +952,7 @@
         {
           "id": "web-1",
           "question": "Bouwen jullie alleen WordPress-sites?",
-          "answer": "Nee. Naast WordPress doen we maatwerk webdesign in HTML/CSS/JS, PHP en Next.js — los van de WordPress-diensten."
+          "answer": "Nee. Naast WordPress doen we maatwerk webdesign in HTML/CSS/JS, PHP en Next.js — los van de WordPress-diensten. Meer lezen: [WordPress installeren](/kennisbank/wordpress/handleiding-wordpress-installeren) · [Diensten](/diensten)."
         },
         {
           "id": "web-2",
@@ -635,7 +1002,7 @@
         {
           "id": "web-11",
           "question": "Wat met performance na launch?",
-          "answer": "We optimaliseren Core Web Vitals, caching of CDN en monitoring. Nazorg loopt daarna via onderhoudspakketten."
+          "answer": "We optimaliseren Core Web Vitals, caching of CDN en monitoring. Nazorg loopt daarna via onderhoudspakketten. Meer lezen: [Wat doet een CDN?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)."
         },
         {
           "id": "web-12",
@@ -651,87 +1018,349 @@
           "id": "web-14",
           "question": "Helpen jullie met conversie-optimalisatie op de site?",
           "answer": "Ja. We doen A/B-tests, UX-verbeteringen, formulieren, CTA’s en page speed, zodat meer bezoekers converteren."
+        },
+        {
+          "id": "web-15",
+          "question": "Bouwen jullie ook webshops?",
+          "answer": "Ja, van marketing-sites met checkout-integraties tot e-commerce op WordPress of maatwerk. Scope, betalingen en fulfillment stemmen we af in de intake. Meer lezen: [Diensten](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "web-16",
+          "question": "Hoe gaan jullie om met privacyteksten op sites?",
+          "answer": "We adviseren en implementeren privacy- en toestemmingsflows bij formulieren en banners, afgestemd op jullie jurist waar nodig. Meer lezen: [Privacy bij formulieren](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren) · [Cookiebanner](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "web-17",
+          "question": "Leveren jullie staging-omgevingen?",
+          "answer": "Ja, waar relevant: staging voor reviews en tests, daarna gecontroleerde deploy naar productie."
+        },
+        {
+          "id": "web-18",
+          "question": "Kunnen jullie een bestaande WordPress-site overnemen en verbeteren?",
+          "answer": "Ja — audit, updates, security, snelheid, UX en SEO, zonder onnodig vanaf nul te bouwen. Meer lezen: [WP verhuizen](/kennisbank/domeinnamen/wordpress-website-verhuizen) · [Kritieke fouten](/kennisbank/wordpress/kritieke-fout-wordpress)."
+        },
+        {
+          "id": "web-19",
+          "question": "Hoe zit het met HTTP naar HTTPS na oplevering?",
+          "answer": "Sites gaan standaard op HTTPS. Bij migraties forceren we HTTPS en lossen we mixed-content op. Meer lezen: [HTTP naar HTTPS in WordPress](/kennisbank/wordpress/wordpress-url-omzetten-van-http-naar-https) · [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig)."
+        }
+      ]
+    },
+    {
+      "id": "domeinen",
+      "title": "Domeinen",
+      "items": [
+        {
+          "id": "dom-1",
+          "question": "Wat is een domeinnaam?",
+          "answer": "Een domeinnaam is het adres waarmee bezoekers jullie website vinden (bijvoorbeeld voorbeeld.nl). Het hoort bij DNS-records die naar jullie hosting of e-mail wijzen. Meer lezen: [Domeinnaamregistratie](/kennisbank/domeinnamen/domeinnaamregistratie) · [Domeinen bestellen](/domeinen)."
+        },
+        {
+          "id": "dom-2",
+          "question": "Hoe registreer ik een domeinnaam bij jullie?",
+          "answer": "Zoek de gewenste naam op de domeinpagina, kies de extensie en rond af via de shop. Na registratie beheer je DNS, nameservers en facturen in je account. Meer lezen: [Domeinen](/domeinen) · [Registratiehandleiding](/kennisbank/domeinnamen/domeinnaamregistratie) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-3",
+          "question": "Kan ik mijn domein naar jullie verhuizen?",
+          "answer": "Ja. Vraag bij de huidige registrar een autorisatiecode (EPP) aan, hef een eventuele transfer-lock op en start de verhuizing bij ons. Daarna zetten we DNS en nameservers goed. Meer lezen: [Domein verhuizen](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Autorisatiecode](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Domeinen](/domeinen)."
+        },
+        {
+          "id": "dom-4",
+          "question": "Wat is een autorisatiecode (EPP/Auth-code)?",
+          "answer": "Dat is een eenmalige code van je huidige registrar waarmee je een domeintransfer veilig start. Zonder geldige code kan de verhuizing niet doorgaan. Meer lezen: [Wat is een autorisatiecode?](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Domein verhuizen](/kennisbank/domeinnamen/domeinnaam-verhuizen)."
+        },
+        {
+          "id": "dom-5",
+          "question": "Wat is een transfer-lock of registrar-lock?",
+          "answer": "Een lock voorkomt ongewenste verhuizingen. Voor een transfer moet je die vaak eerst uitzetten bij de huidige provider. Daarna kun je de verhuizing bij ons starten. Meer lezen: [Domein verhuizen](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Support](/contact)."
+        },
+        {
+          "id": "dom-6",
+          "question": "Kan ik een domein kopen zonder hosting?",
+          "answer": "Ja. Je kunt alleen een domein registreren of verhuizen en later hosting of e-mail toevoegen. DNS kun je ondertussen al beheren of doorsturen. Meer lezen: [Domein zonder hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Domeinen](/domeinen)."
+        },
+        {
+          "id": "dom-7",
+          "question": "Welke extensies (.nl, .com, …) kan ik registreren?",
+          "answer": "We ondersteunen gangbare TLD’s zoals .nl en .com plus veel internationale extensies. Beschikbaarheid en prijs zie je direct in de domeinzoeker. Meer lezen: [Domeinen](/domeinen) · [Registratie](/kennisbank/domeinnamen/domeinnaamregistratie)."
+        },
+        {
+          "id": "dom-8",
+          "question": "Hoe verleng ik mijn domeinnaam?",
+          "answer": "Verlenging loopt via facturen en je klantenportaal; automatische verlenging is vaak beschikbaar. Houd betaalgegevens actueel om expiratie te voorkomen. Meer lezen: [Facturen](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails) · [Factuurgegevens](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "dom-9",
+          "question": "Wat zijn premium domeinnamen?",
+          "answer": "Premium namen zijn korte of populaire domeinen met een hogere aanschafprijs, vaak via een aftermarket. Beschikbaarheid en voorwaarden verschillen per extensie. Meer lezen: [Premium domeinen](/kennisbank/domeinnamen/premium-domeinnamen) · [Domeinen](/domeinen)."
+        },
+        {
+          "id": "dom-10",
+          "question": "Kan ik mijn domein anoniem registreren (Protect ID)?",
+          "answer": "Waar de registry het toelaat, kun je privacy/Protect ID overwegen. Regels verschillen per extensie — .nl heeft bijvoorbeeld eigen kaders. Meer lezen: [Protect ID](/kennisbank/domeinnamen/protect-id-domein-anoniem-registreren)."
+        },
+        {
+          "id": "dom-11",
+          "question": "Mijn domein staat in quarantaine — wat nu?",
+          "answer": "Na opheffing kan een domein in quarantaine staan. Afhankelijk van de registry kun je het vaak nog terugactiveren tegen kosten; wacht daar niet te lang mee. Meer lezen: [Domein uit quarantaine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-12",
+          "question": "Mijn nieuwe domeinnaam werkt nog niet — wat nu?",
+          "answer": "Meestal is het DNS-propagatie, ontbrekende A/MX-records of nameservers die nog niet zijn bijgewerkt. Controleer records en geef TTL’s de tijd om te verlopen. Meer lezen: [Nieuw domein werkt niet](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet) · [DNS beheren](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-13",
+          "question": "Hoe koppel ik een domein aan mijn hostingpakket?",
+          "answer": "Voeg het domein toe in je panel of account en wijs DNS (A-record of nameservers) naar de hosting. Wij helpen bij de eerste koppeling na bestelling. Meer lezen: [Domein koppelen aan pakket](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket) · [DNS beheren](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-14",
+          "question": "Kan ik een domein doorsturen (forwarding)?",
+          "answer": "Ja. Domeinforwarding stuurt bezoekers door naar een andere URL — handig voor merknamen zonder aparte site. DNS en redirects stemmen we af op jullie setup. Meer lezen: [Domein doorsturen](/kennisbank/domeinnamen/domeinnaam-doorsturen) · [Domeinen](/domeinen)."
+        },
+        {
+          "id": "dom-15",
+          "question": "Hoe wijzig ik nameservers van mijn domein?",
+          "answer": "In het DNS-/domeinbeheer kies je onze nameservers of externe (bijv. CDN). Propagatie kan enkele uren tot een dag duren. Meer lezen: [Nameservers beheren](/kennisbank/domeinnamen/nameservers-beheren) · [DNS beheren](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-16",
+          "question": "Wat kost een domeinnaam?",
+          "answer": "Prijzen verschillen per extensie en periode; de domeinzoeker toont actuele registratie- en verlengprijzen. Premium namen hebben een aparte prijs. Meer lezen: [Domeinen](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-17",
+          "question": "Moet ik hosting en domein bij dezelfde provider hebben?",
+          "answer": "Nee, maar het is praktischer: DNS, SSL, e-mail en support zitten dan bij één partij. Je kunt ook alleen DNS bij ons houden en elders hosten. Meer lezen: [Domein zonder hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "dom-18",
+          "question": "Kan ik meerdere domeinen op één account beheren?",
+          "answer": "Ja. Extra domeinen registreer of verhuis je en koppelt ze als addon, park of doorverwijzing — binnen de limieten van je hostingpakket. Meer lezen: [Domeinen](/domeinen) · [Hostingpakket kiezen](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "dom-19",
+          "question": "Wat gebeurt er als mijn domein verloopt?",
+          "answer": "Na expiratie volgt vaak een grace- of quarantaineperiode waarin herstel nog mogelijk is, daarna kan iemand anders het claimen. Verleng op tijd via facturen. Meer lezen: [Quarantaine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-20",
+          "question": "Waar bestel of beheer ik domeinen?",
+          "answer": "Registreren en verhuizen doe je via de domeinpagina of shop; beheer (DNS, facturen, verlenging) zit in het klantenportaal. Meer lezen: [Domeinen](/domeinen) · [Shop](/shop) · [Account](/dashboard)."
         }
       ]
     },
     {
       "id": "webhosting",
-      "title": "Webhosting en domeinen",
+      "title": "Webhosting",
       "items": [
         {
           "id": "host-1",
           "question": "Welke hosting bieden jullie?",
-          "answer": "We bieden shared hosting, WordPress hosting en VPS — in Basic, Plus en Business niveaus — plus domeinen."
+          "answer": "We bieden shared hosting, cloud hosting, WordPress hosting en VPS — plus domeinregistratie. Kies op traffic, stack en groeiverwachting. Meer lezen: [Shared hosting](/diensten/shared-hosting) · [Cloud hosting](/diensten/cloud-hosting) · [WordPress hosting](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-2",
-          "question": "Wat is het verschil tussen shared, WordPress en VPS?",
-          "answer": "Shared is voordelig voor kleinere sites. WordPress hosting is geoptimaliseerd voor WP. VPS geeft meer resources en controle voor zwaardere loads."
+          "question": "Wat is het verschil tussen shared, cloud, WordPress en VPS?",
+          "answer": "Shared is voordelig voor kleinere sites. Cloud geeft meer resources en schaalbaarheid, volledig beheerd. WordPress hosting is geoptimaliseerd voor WP. VPS geeft meer controle voor zwaardere loads. Meer lezen: [Verschillen uitgelegd](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps) · [Shared-plannen](/kennisbank/hosting/wat-is-shared-hosting-basic-plus-en-business) · [VPS-plannen](/kennisbank/hosting/wat-is-vps-hosting-basic-plus-en-business)."
         },
         {
           "id": "host-3",
-          "question": "Helpen jullie met domeinregistratie?",
-          "answer": "Ja. We adviseren, registreren of verhuizen het domein en koppelen DNS correct."
+          "question": "Wat is cloud hosting bij jullie?",
+          "answer": "Cloud hosting geeft meer resources en schaalbaarheid dan klassieke shared, terwijl wij het beheer blijven doen. Ideaal wanneer shared krap wordt maar full VPS nog niet nodig is. Meer lezen: [Cloud hosting](/diensten/cloud-hosting) · [Hosting kiezen](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
         },
         {
           "id": "host-4",
           "question": "Zit SSL bij hosting?",
-          "answer": "Ja. SSL is standaard in onze relevante hostingplannen."
+          "answer": "Ja. SSL is standaard in onze relevante hostingplannen, zodat sites op HTTPS draaien. Meer lezen: [Wat is SSL?](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [Let's Encrypt installeren](/kennisbank/hosting/hoe-installeer-ik-een-gratis-lets-encrypt-ssl-certificaat)."
         },
         {
           "id": "host-5",
           "question": "Kunnen jullie mijn site migreren naar jullie hosting?",
-          "answer": "Ja. We doen backup, migratie, DNS-cutover, SSL en smoke tests, met minimale downtime."
+          "answer": "Ja. We doen backup, migratie, DNS-cutover, SSL en smoke tests, met minimale downtime. Meer lezen: [Website of e-mail verhuizen](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je) · [WordPress verhuizen](/kennisbank/domeinnamen/wordpress-website-verhuizen)."
         },
         {
           "id": "host-6",
           "question": "Hoe werken backups op hosting?",
-          "answer": "Dat hangt van het plan af: eenvoudige of geautomatiseerde backups. Extra off-site retentie is mogelijk."
+          "answer": "Dat hangt van het plan af: eenvoudige of geautomatiseerde backups. Extra off-site retentie is mogelijk. Meer lezen: [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor) · [Backup in DirectAdmin](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
         },
         {
           "id": "host-7",
           "question": "Wat als ik meer traffic krijg?",
-          "answer": "Dan schalen we naar Plus, Business of VPS en optimaliseren we caching en CDN, zodat de site de groei aankan."
+          "answer": "Dan schalen we naar Plus, Business, cloud of VPS en optimaliseren we caching en CDN, zodat de site de groei aankan. Meer lezen: [Wanneer naar VPS?](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)."
         },
         {
           "id": "host-8",
-          "question": "Bieden jullie e-mail bij domeinen?",
-          "answer": "Dat hangt van het pakket en de setup af. We adviseren betrouwbare mailoplossingen en zetten DNS goed (SPF, DKIM en DMARC)."
+          "question": "Hoe veilig is jullie hosting?",
+          "answer": "We werken met firewall, SSL, updates, monitoring en hardening. Extra security-lagen zijn beschikbaar waar nodig. Meer lezen: [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
         },
         {
           "id": "host-9",
-          "question": "Hoe veilig is jullie hosting?",
-          "answer": "We werken met firewall, SSL, updates, monitoring en hardening. Extra security-diensten kunnen daar nog lagen bovenop zetten."
+          "question": "Kan ik later van shared naar VPS?",
+          "answer": "Ja. We plannen de migratie samen, inclusief tests en rollback, zodat de overstap gecontroleerd verloopt. Meer lezen: [Shared naar VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [VPS hosting](/diensten/vps-hosting)."
         },
         {
           "id": "host-10",
-          "question": "Kan ik later van shared naar VPS?",
-          "answer": "Ja. We plannen de migratie samen, inclusief tests en rollback, zodat de overstap gecontroleerd verloopt."
+          "question": "Ondersteunen jullie CDN?",
+          "answer": "Ja, waar relevant — vaak zit er een gratis CDN in WP-hostingplannen — voor snellere globale delivery. Meer lezen: [Wat doet een CDN?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [WordPress hosting](/diensten/wordpress-hosting)."
         },
         {
           "id": "host-11",
-          "question": "Ondersteunen jullie CDN?",
-          "answer": "Ja, waar relevant — vaak zit er een gratis CDN in WP-hostingplannen — voor snellere globale delivery."
+          "question": "Wat is jullie uptime-aanpak?",
+          "answer": "We monitoren, reageren snel bij incidenten en communiceren duidelijk bij onderhoudsvensters, zodat jullie weten wat er speelt. Statusupdates vind je op de statuspagina. Meer lezen: [Statuspage](/statuspage) · [Contact](/contact)."
         },
         {
           "id": "host-12",
-          "question": "Wat is jullie uptime-aanpak?",
-          "answer": "We monitoren, reageren snel bij incidenten en communiceren duidelijk bij onderhoudsvensters, zodat jullie weten wat er speelt."
+          "question": "Hoe kies ik het juiste hostingplan?",
+          "answer": "Op basis van traffic, stack (WordPress of maatwerk), resources en groei. We adviseren eerlijk — we verkopen niet over. Meer lezen: [Juiste hostingpakket kiezen](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Shared vs WP vs VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
         },
         {
           "id": "host-13",
-          "question": "Helpen jullie DNS-problemen oplossen?",
-          "answer": "Ja. We lossen records, propagatie, mail-auth en domeinkoppelingen op tot DNS weer klopt."
+          "question": "Waar zie ik hostingprijzen?",
+          "answer": "Op de hostingdienstpagina’s en in de shop, met maand- of jaaropties waar van toepassing. Meer lezen: [Shared](/diensten/shared-hosting) · [Cloud](/diensten/cloud-hosting) · [WordPress](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting) · [Shop](/shop)."
         },
         {
           "id": "host-14",
-          "question": "Hoe kies ik het juiste hostingplan?",
-          "answer": "Op basis van traffic, stack (WordPress of maatwerk), resources en groei. We adviseren eerlijk — we verkopen niet over."
+          "question": "Heb ik SSH-toegang op mijn hosting?",
+          "answer": "Dat hangt van het pakket af. Op veel plannen is SSH beschikbaar of aan te vragen; op VPS heb je doorgaans volledige toegang. Meer lezen: [SSH-toegang](/kennisbank/hosting/heb-ik-ssh-toegang-op-mijn-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-15",
-          "question": "Waar zie ik hostingprijzen?",
-          "answer": "Op de hostingdienstpagina’s onder Diensten → Webhosting en domeinen, met maand- of jaaropties waar van toepassing."
+          "question": "Hoe installeer ik WordPress op jullie hosting?",
+          "answer": "Via het control panel (bijv. DirectAdmin/Installatron) of handmatig. We hebben een stapsgewijze handleiding. Meer lezen: [WordPress installeren](/kennisbank/wordpress/handleiding-wordpress-installeren) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-16",
+          "question": "Wat zijn inodes en waarom raakt mijn pakket “vol”?",
+          "answer": "Inodes tellen bestanden/mappen, niet alleen GB’s. Veel kleine cache- of mailbestanden kunnen de limiet raken terwijl schijfruimte nog vrij lijkt. Meer lezen: [Inodes](/kennisbank/hosting/inodes-en-inode-limieten) · [Opslag en verkeer](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-17",
+          "question": "Wat betekent “onbeperkte” opslag of dataverkeer?",
+          "answer": "“Onbeperkt” volgt fair-use: normaal websitegebruik is prima; misbruik of extreme loads kunnen we beperken om het platform stabiel te houden. Meer lezen: [Opslag en verkeer](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-18",
+          "question": "Wat is het verschil tussen shared, VPS en dedicated?",
+          "answer": "Shared deelt resources; VPS isoleert meer CPU/RAM; dedicated is een hele server. Kies op traffic, controlebehoefte en budget. Meer lezen: [Dedicated vs VPS vs shared](/kennisbank/infrastructuur-servers/verschil-tussen-dedicated-vps-en-shared-hosting) · [Shared/WP/VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
+        },
+        {
+          "id": "host-19",
+          "question": "Hoe werk ik met DirectAdmin?",
+          "answer": "DirectAdmin is het control panel voor e-mail, DNS, databases, backups en installs. Log in met je panelgegevens; 2FA raden we sterk aan. Meer lezen: [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Backups](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
+        },
+        {
+          "id": "host-20",
+          "question": "Bieden jullie object cache voor WordPress?",
+          "answer": "Op geschikte plannen ondersteunen we persistent object cache om database-queries te verminderen en sneller te laden. Meer lezen: [Object cache](/kennisbank/hosting/persistent-object-cache-in-wordpress) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-21",
+          "question": "Hoe verleng of betaal ik hosting?",
+          "answer": "Via het klantenpanel en facturen; automatische verlenging is vaak beschikbaar. Houd factuurgegevens actueel om onderbreking te voorkomen. Meer lezen: [Factuurgegevens](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode) · [Facturen bekijken](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "host-22",
+          "question": "Kan ik meerdere domeinen op één hosting zetten?",
+          "answer": "Vaak ja, via addon- of park-domeinen — afhankelijk van je pakketlimieten. Wij helpen bij koppeling en DNS. Meer lezen: [Hosting kiezen](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Domein koppelen](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket)."
+        },
+        {
+          "id": "host-23",
+          "question": "Hoe veilig is inloggen op mijn hostingpanel?",
+          "answer": "Gebruik een sterk wachtwoord en schakel 2FA in. Deel geen panel-logins via onveilige kanalen. Meer lezen: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Login kwijt](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "host-24",
+          "question": "Wat is WordPress hosting precies?",
+          "answer": "WordPress hosting is geoptimaliseerd voor WP: snellere PHP/stack, vaak CDN en eenvoudigere installs/updates dan generieke shared. Meer lezen: [WP-hostingplannen](/kennisbank/hosting/wat-is-wordpress-hosting-basic-plus-en-pro) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-25",
+          "question": "Waar bestel ik hosting direct?",
+          "answer": "In de shop of via de hostingcategorieën Shared, Cloud, WordPress en VPS. Na bestelling ontvang je toegang tot panel en facturen. Meer lezen: [Shop](/shop) · [Hosting overzicht](/diensten/categorie/hosting)."
+        }
+      ]
+    },
+    {
+      "id": "email-dns",
+      "title": "E-mail en DNS",
+      "items": [
+        {
+          "id": "mail-1",
+          "question": "Bieden jullie e-mail bij domeinen of hosting?",
+          "answer": "Dat hangt van het pakket en de setup af. We adviseren betrouwbare mailoplossingen en zetten DNS goed (SPF, DKIM en DMARC). Meer lezen: [E-mail op eigen domein](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress) · [SPF-record](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-2",
+          "question": "Wat zijn SPF, DKIM en DMARC?",
+          "answer": "Het zijn DNS-records die e-mailauthenticatie regelen en spoofing/spam verminderen. Zonder correcte records belandt mail vaker in spam. Meer lezen: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-3",
+          "question": "Hoe beheer ik DNS-records?",
+          "answer": "Via het DNS-beheer van je domein of hostingpanel zet je A, AAAA, CNAME, MX en TXT-records. Wij helpen bij migraties en mail-auth. Meer lezen: [DNS beheren](/kennisbank/domeinnamen/dns-records-beheren) · [DNSSEC](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-4",
+          "question": "Helpen jullie DNS-problemen oplossen?",
+          "answer": "Ja. We lossen records, propagatie, mail-auth en domeinkoppelingen op tot DNS weer klopt. Meer lezen: [DNS-records beheren](/kennisbank/domeinnamen/dns-records-beheren) · [Propagatie en TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen)."
+        },
+        {
+          "id": "mail-5",
+          "question": "Wat is DNSSEC?",
+          "answer": "DNSSEC ondertekent DNS-antwoorden zodat manipulatie moeilijker wordt. We kunnen het activeren waar jouw TLD en setup dat ondersteunen. Meer lezen: [DNSSEC uitleg](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-6",
+          "question": "Hoe zet ik e-mail op mijn telefoon?",
+          "answer": "Gebruik IMAP/SMTP-gegevens uit je panel. Voor Android (en vergelijkbaar op iOS) staan de stappen in de kennisbank. Meer lezen: [E-mail op Android](/kennisbank/e-mail/e-mail-instellen-op-android) · [E-mail bij eigen domein](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress)."
+        },
+        {
+          "id": "mail-7",
+          "question": "Wat als e-mail plotseling stopt met werken?",
+          "answer": "Check DNS (MX/SPF/DKIM/DMARC), mailboxquota en of providers mail blokkeren. Wij helpen de keten doormeten. Meer lezen: [E-mailproblemen](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-8",
+          "question": "Hoe werken nameservers?",
+          "answer": "Nameservers bepalen welk DNS-systeem jouw domein bedient. Wijzig je ze, dan moet je A/MX/TXT-records opnieuw goed zetten bij de nieuwe DNS-host. Meer lezen: [Nameservers beheren](/kennisbank/domeinnamen/nameservers-beheren) · [DNS beheren](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "mail-9",
+          "question": "Hoe lang duurt DNS-propagatie?",
+          "answer": "Vaak minuten tot enkele uren; soms tot 24–48 uur door TTL’s en caches. Verlaag TTL’s vóór een migratie om sneller om te schakelen. Meer lezen: [Propagatie en TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen) · [Nieuw domein werkt niet](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet)."
+        },
+        {
+          "id": "mail-10",
+          "question": "Kan ik e-mail doorsturen naar een ander adres?",
+          "answer": "Ja. Forwarders sturen inkomende mail door naar Gmail, Microsoft 365 of een ander mailboxadres — handig naast of in plaats van een volle mailbox. Meer lezen: [E-mail doorsturen](/kennisbank/e-mail/email-doorsturen-naar-mailadres)."
+        },
+        {
+          "id": "mail-11",
+          "question": "Kan ik mijn domein koppelen aan Microsoft 365?",
+          "answer": "Ja. Je zet MX- en authenticatierecords (SPF/DKIM/DMARC) volgens Microsoft’s instructies; wij helpen de DNS-kant. Meer lezen: [Domein aan Microsoft 365](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-microsoft-365) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-12",
+          "question": "Waarom belandt mijn mail in spam?",
+          "answer": "Vaak ontbreken of conflicteren SPF/DKIM/DMARC, of de IP/reputatie is zwak. We controleren DNS-auth en verzendgedrag. Meer lezen: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-13",
+          "question": "Wat is een MX-record?",
+          "answer": "Een MX-record vertelt het internet welke mailserver e-mail voor jouw domein mag ontvangen. Zonder correcte MX komt er geen mail binnen. Meer lezen: [DNS beheren](/kennisbank/domeinnamen/dns-records-beheren) · [E-mailproblemen](/kennisbank/hosting/problemen-met-e-mail-website)."
+        },
+        {
+          "id": "mail-14",
+          "question": "Kan ik webmail gebruiken?",
+          "answer": "Ja, via de webmail-URL van je hostingpanel kun je mail in de browser lezen en versturen — naast IMAP op telefoon of Outlook. Meer lezen: [E-mail instellen](/kennisbank/e-mail/e-mail-instellen-op-android) · [Contact](/contact)."
+        },
+        {
+          "id": "mail-15",
+          "question": "Moet DNS bij jullie staan als hosting elders is?",
+          "answer": "Nee. Je kunt DNS bij ons of elders houden, zolang A/MX/TXT naar de juiste diensten wijzen. Consistent beheer voorkomt fouten bij migraties. Meer lezen: [DNS beheren](/kennisbank/domeinnamen/dns-records-beheren) · [Nameservers](/kennisbank/domeinnamen/nameservers-beheren)."
         }
       ]
     }

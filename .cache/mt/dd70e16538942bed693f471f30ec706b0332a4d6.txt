@@ -1,0 +1,1 @@
+Paprastai tai yra DNS platinimas, trūkstami A/MX įrašai arba dar neatnaujinti vardų serveriai. Patikrinkite įrašus ir leiskite TTL galioti. Skaityti daugiau: ⟦L0⟧ · ⟦L1⟧.

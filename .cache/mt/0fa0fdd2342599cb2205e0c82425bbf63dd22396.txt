@@ -1,0 +1,1 @@
+Sjekk statusside, DNS-utbredelse, nylige oppdateringer, diskplass og om feilen er reproduserbar. Det fremskynder diagnosen. Les mer: ⟦L0⟧ · ⟦L1⟧.

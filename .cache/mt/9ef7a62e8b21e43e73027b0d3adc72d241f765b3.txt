@@ -1,0 +1,1 @@
+Sjekk DNS (MX/SPF/DKIM/DMARC), postbokskvote og om Microsoft eller leverandører blokkerer e-post. Vi hjelper til med å måle kjeden. Les mer: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Brug unikke adgangskoder og 2FA, hvor det er tilgængeligt (inklusive på hostingpaneler). Del ikke sessioner på delte computere. Læs mere: ⟦L0⟧.

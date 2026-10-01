@@ -1,0 +1,1 @@
+Then we scale to Plus, Business or VPS and optimize caching and CDN so that the site can handle the growth. Read more: ⟦L0⟧When to VPS?⟦/L0⟧.

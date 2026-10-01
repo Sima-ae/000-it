@@ -1,0 +1,1 @@
+Meriame LCP, INP a CLS, riešime ťažké aktíva, hosting/ukladanie do vyrovnávacej pamäte a problémy s témami a v prípade potreby ich prepájame s CDN. Prečítajte si viac: ⟦L0⟧ · ⟦L1⟧.

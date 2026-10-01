@@ -1,0 +1,1 @@
+Áno, kde je to relevantné: príprava na kontroly a testy, potom riadené nasadenie do produkcie.

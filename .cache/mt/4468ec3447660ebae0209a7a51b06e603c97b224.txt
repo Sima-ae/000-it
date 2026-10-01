@@ -1,0 +1,1 @@
+Adesea minute până la câteva ore; uneori până la 24–48 de ore din cauza TTL-urilor și a cache-urilor. Reduceți TTL-urile înainte de o migrare pentru a comuta mai rapid. Citește mai mult: ⟦L0⟧ · ⟦L1⟧.

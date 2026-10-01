@@ -1,0 +1,1 @@
+Sí, dependiendo de su hosting o paquete de soporte. En caso de tiempo de inactividad, restauramos a partir de copias de seguridad siempre que sea posible e investigamos la causa. Leer más: ⟦L0⟧ · ⟦L1⟧.

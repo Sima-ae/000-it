@@ -1,0 +1,1 @@
+Websteder er som standard HTTPS. Under migreringer tvinger vi HTTPS og løser blandet indhold. Læs mere: ⟦L0⟧ · ⟦L1⟧.

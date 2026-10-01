@@ -1,0 +1,1 @@
+Proces zwykle przebiega w ten sposób: przyjęcie → audyt lub skanowanie → plan → wdrożenie w sprintach → pomiar → optymalizacja. Otrzymasz jasne kamienie milowe i raporty, dzięki czemu zawsze będziesz wiedział, na czym stoimy.

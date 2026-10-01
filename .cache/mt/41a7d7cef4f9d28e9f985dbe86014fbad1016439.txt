@@ -1,0 +1,1 @@
+Mümkün olduqda unikal parollardan və 2FA-dan istifadə edin (o cümlədən hostinq panellərində). Seansları paylaşılan kompüterlərdə paylaşmayın. Daha ətraflı: ⟦L0⟧.

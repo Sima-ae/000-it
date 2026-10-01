@@ -1,0 +1,1 @@
+V DNS/správe domén si vyberáte naše nameservery alebo externé (napríklad CDN). Rozmnožovanie môže trvať hodiny až jeden deň. Prečítajte si viac: ⟦L0⟧ · ⟦L1⟧.

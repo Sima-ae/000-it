@@ -1,0 +1,1 @@
+To závisí od balíka a nastavenia. Odporúčame spoľahlivé poštové riešenia a správne nastavenie DNS (SPF, DKIM a DMARC). Prečítajte si viac: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Nella pagina di stato mostriamo gli incidenti e la manutenzione relativi all'hosting e ai servizi correlati, in modo che tu possa vedere rapidamente se sta succedendo qualcosa. Per saperne di più: ⟦L0⟧.

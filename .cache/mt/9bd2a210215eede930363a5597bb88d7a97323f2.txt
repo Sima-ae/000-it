@@ -1,0 +1,1 @@
+Domen adı ziyarətçilərin veb saytınızı tapmaq üçün istifadə etdiyi ünvandır (məsələn, example.com). O, hostinqinizə və ya e-poçtunuza işarə edən DNS qeydlərinə bağlanır. Daha ətraflı: ⟦L0⟧ · ⟦L1⟧.

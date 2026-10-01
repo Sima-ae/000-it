@@ -1,0 +1,1 @@
+Yes. This can be a headless CMS, custom admin or a static setup — depending on your team and wishes.

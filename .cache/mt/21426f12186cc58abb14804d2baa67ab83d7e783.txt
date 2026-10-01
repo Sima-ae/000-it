@@ -1,0 +1,1 @@
+I butikken viser vi priser efter den viste momskontekst (ofte inkl. for forbrugerstrømme). Fakturaen indeholder en nettomomsopdeling for erhvervskunder.

@@ -1,0 +1,1 @@
+Barındırma başka bir yerdeyse DNS'nin yanınızda olması gerekir mi?

@@ -1,0 +1,1 @@
+Na vhodných plánoch podporujeme trvalú vyrovnávaciu pamäť objektov, aby sme znížili databázové dotazy a rýchlejšie sa načítali. Prečítajte si viac: ⟦L0⟧ · ⟦L1⟧.

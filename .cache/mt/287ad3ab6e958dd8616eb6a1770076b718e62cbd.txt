@@ -1,0 +1,1 @@
+Nie. DNS si môžete ponechať u nás alebo inde, pokiaľ A/MX/TXT ukazuje na správne služby. Dôsledná správa zabraňuje chybám pri migrácii. Prečítajte si viac: ⟦L0⟧ · ⟦L1⟧.

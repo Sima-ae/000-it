@@ -1,0 +1,1 @@
+Dabei handelt es sich um DNS-Einträge, die die E-Mail-Authentifizierung übernehmen und Spoofing/Spam reduzieren. Ohne korrekte Aufzeichnungen landen E-Mails häufiger im Spam. Weiterlesen: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

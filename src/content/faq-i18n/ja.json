@@ -12,12 +12,12 @@
         {
           "id": "gen-1",
           "question": "TripleZero iT は具体的に何をするのですか?",
-          "answer": "TripleZero iT は、ウェブデザイン、WordPress サポート、デジタル マーケティング、検索可視性 (AEO、GEO/ローカル、SEO)、デザイン、ホスティングを組み合わせています。 私たちは、ブランドがより早く見つけられ、より良いウェブサイトを構築し、目に見える形で成長できるよう支援します。"
+          "answer": "TripleZero iT は、ウェブデザイン、WordPress サポート、デジタル マーケティング、検索可視性 (AEO、GEO/ローカル、SEO)、デザイン、ホスティングを組み合わせています。 私たちは、ブランドがより早く見つけられ、より良いウェブサイトを構築し、目に見える形で成長できるよう支援します。 [About us](/over-ons) · [Services](/diensten)"
         },
         {
           "id": "gen-2",
           "question": "TripleZero iT を始めるにはどうすればよいですか?",
-          "answer": "お問い合わせいただくか、ご予約ください。 短いインテークを実施し、目標と積み重ねをレビューし、計画と KPI を含む具体的な提案を準備します。"
+          "answer": "お問い合わせいただくか、ご予約ください。 短いインテークを実施し、目標と積み重ねをレビューし、計画と KPI を含む具体的な提案を準備します。 [Schedule appointment](/afspraak) · [Contact](/contact)"
         },
         {
           "id": "gen-3",
@@ -73,6 +73,46 @@
           "id": "gen-13",
           "question": "既存のベンダーを引き継いだり、協力したりできますか?",
           "answer": "はい。 当社は、開発者、マーケティング担当者、代理店と協力してスムーズに作業し、既存の作業を不必要に中断することなくメンテナンスや最適化を引き継ぎます。"
+        },
+        {
+          "id": "gen-14",
+          "question": "Agent 000 (チャットアシスタント) とは何ですか?",
+          "answer": "エージェント 000 は、サイトおよびサポート フローにおけるデジタル アシスタントです。よくある質問に答え、ナレッジ ベースの記事を参照し、人間のサポートが適切な場合には、ライブ チャット、チケット、または予約を紹介します。続きを読む: [Digital assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Chat, ticket or call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)。"
+        },
+        {
+          "id": "gen-15",
+          "question": "予約や電話の予約をするにはどうすればよいですか?",
+          "answer": "予約ページからご都合の良い時間をお選びいただけます。ちょっとした質問については、ライブ チャットやチケットを使用することもできます。より複雑なプロセスや受付には電話予約が便利です。続きを読む: [Appointment](/afspraak) · [Call appointment explained](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)。"
+        },
+        {
+          "id": "gen-16",
+          "question": "サービスのステータスはどこで確認できますか?",
+          "answer": "ステータス ページには、ホスティングおよび関連サービスに関するインシデントとメンテナンスが表示されるため、何かが起こっているかどうかをすぐに確認できます。続きを読む: [Statuspage](/statuspage)。"
+        },
+        {
+          "id": "gen-17",
+          "question": "知識ベースはありますか?",
+          "answer": "はい。ナレッジ ベースには、ドメイン、DNS、電子メール、ホスティング、WordPress、AI スキャン、セキュリティなどに関するマニュアルが段階的に説明されています。続きを読む: [Knowledge base](/kennisbank)。"
+        },
+        {
+          "id": "gen-18",
+          "question": "プライバシーと Cookie にどのように対処しますか?",
+          "answer": "私たちは、プライバシー テキスト、フォームへの同意、追跡が必要な場合の Cookie バナー/同意モードなど、GDPR を意識して取り組んでいます。 WordPress の場合、正しい Cookie の設定をお手伝いします。続きを読む: [Cookie banner in WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress) · [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Privacy with forms](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren)。"
+        },
+        {
+          "id": "gen-19",
+          "question": "ニュースや最新情報はどこで見つけられますか?",
+          "answer": "ニュース ページでは、製品、セキュリティ、ヒントに関する最新情報を公開しています。技術的な故障については、ステータス ページを確認してください。続きを読む: [News](/nieuws) · [Statuspage](/statuspage)。"
+        },
+        {
+          "id": "gen-20",
+          "question": "あなたと一緒に働くのにかかる費用はいくらですか?",
+          "answer": "それは組み合わせによって異なります。ホスティング製品とショッピング製品には固定価格があります。デザイン、SEO、広告、リテーナーは摂取後に続きます。店内にはパッケージが並んでいます。カスタマイズのご提案をさせていただきます。続きを読む: [Shop](/shop) · [Contact](/contact)。"
+        },
+        {
+          "id": "gen-21",
+          "question": "コンサルティングや監査のみも可能ですか？",
+          "answer": "はい。監査、AI スキャン、技術レビュー、スパーリング セッションは、フルサービス プロセスとは別に実行できます。その後、ご自身で行うことも、私たちに任せることもできます。続きを読む: [AI scan](/ai-scan) · [Services](/diensten)。"
         }
       ]
     },
@@ -83,17 +123,17 @@
         {
           "id": "ai-1",
           "question": "TripleZero iTのAIスキャンとは何ですか?",
-          "answer": "AI 対応スキャンでは、従来の検索エンジン、AI 回答、ローカルまたは地理的な検索結果 (AEO、GEO、SEO、技術的基盤) によってサイトがどの程度見つけられるかを評価します。"
+          "answer": "AI 対応スキャンでは、従来の検索エンジン、AI 回答、ローカルまたは地理的な検索結果 (AEO、GEO、SEO、技術的基盤) によってサイトがどの程度見つけられるかを評価します。 [What is the AI ​​scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Start AI scan](/ai-scan)"
         },
         {
           "id": "ai-2",
           "question": "AI スキャンは正確に何を測定しますか?",
-          "answer": "スキャンでは、AEO シグナル、GEO/ローカル可視性、SEO の基礎、コンテンツ構造、パフォーマンス指標、AI の準備状況を測定します。 スコアと具体的な改善点が得られます。"
+          "answer": "スキャンでは、AEO シグナル、GEO/ローカル可視性、SEO の基礎、コンテンツ構造、パフォーマンス指標、AI の準備状況を測定します。 スコアと具体的な改善点が得られます。 [Explain scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)"
         },
         {
           "id": "ai-3",
           "question": "AI スキャンはどのくらいの頻度で実行すればよいですか?",
-          "answer": "少なくとも、サイトの大幅な変更またはキャンペーンの後。 アクティブなブランドの場合は、検索や AI の結果で常に表示されるように、定期的なスキャン (四半期ごとなど) をお勧めします。"
+          "answer": "少なくとも、サイトの大幅な変更またはキャンペーンの後。 アクティブなブランドの場合は、検索や AI の結果で常に表示されるように、定期的なスキャン (四半期ごとなど) をお勧めします。 [Start AI scan](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website)"
         },
         {
           "id": "ai-4",
@@ -118,12 +158,12 @@
         {
           "id": "ai-8",
           "question": "私のブランドの AI への対応とは何ですか?",
-          "answer": "これは、AI システムがブランドを正しく引用、推奨、説明できるように、サイト、コンテンツ、データがどの程度セットアップされているかを表します。"
+          "answer": "これは、AI システムがブランドを正しく引用、推奨、説明できるように、サイト、コンテンツ、データがどの程度セットアップされているかを表します。 [AI readiness in the scan](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)"
         },
         {
           "id": "ai-9",
           "question": "ダッシュボードで AI エージェントを使用できますか?",
-          "answer": "はい。 クライアント ポータルには、ステータスやタスクを含む、SEO、コンテンツ、ソーシャル、広告の AI エージェントが表示されます。"
+          "answer": "はい。 クライアント ポータルには、ステータスやタスクを含む、SEO、コンテンツ、ソーシャル、広告の AI エージェントが表示されます。 [What are AI agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Agents in your account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)"
         },
         {
           "id": "ai-10",
@@ -144,6 +184,46 @@
           "id": "ai-13",
           "question": "AI イニシアチブの ROI はどのように測定すればよいですか?",
           "answer": "トラフィック、リード、時間の節約、コンテンツの出力、チケットの解決、コンバージョンなどの KPI を通じて。 結果が目に見える形で残るように、計画の中でそれらを事前に定義します。"
+        },
+        {
+          "id": "ai-14",
+          "question": "Web サイトで AI スキャンを開始するにはどうすればよいですか?",
+          "answer": "AIスキャンに移動し、URLを入力して分析を開始します。 AEO、GEO、SEO、パフォーマンス、AI の準備状況のスコアに加えて、改善ポイントも得られます。続きを読む: [Start AI scan](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website) · [AI scan page](/ai-scan)。"
+        },
+        {
+          "id": "ai-15",
+          "question": "AIスキャンスコアはどうやって読むのですか？",
+          "answer": "各スコアは、その分野でどれだけ強いかを示します。スコアが低い場合は、具体的なヒントが提供されます。スキャンは、1 回限りの「レポート カード」としてではなく、優先リストとして使用してください。続きを読む: [Explain scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Next steps](/kennisbank/ai-scan/welke-vervolgstappen-zet-ik-na-mijn-ai-scan)。"
+        },
+        {
+          "id": "ai-16",
+          "question": "AI スキャンと完全な AEO/GEO/SEO プロセスの違いは何ですか?",
+          "answer": "スキャンは迅速な診断です。プロセスでは、コンテンツ、構造化データ、技術的な SEO、ローカルシグナル、および時間の経過に伴う測定などの改善が実装されます。続きを読む: [Scan versus process](/kennisbank/ai-scan/ai-scan-versus-een-volledig-aeo-geo-seo-traject-wat-is-het-verschil) · [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)。"
+        },
+        {
+          "id": "ai-17",
+          "question": "私のアカウント内の以前の AI スキャンはどこで見つけられますか?",
+          "answer": "ログインしている顧客はダッシュボードで以前のスキャンと分析 (SEO 分析) を確認できるため、進捗状況を比較できます。続きを読む: [AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Account / dashboard](/dashboard)。"
+        },
+        {
+          "id": "ai-18",
+          "question": "AEO または GEO スコアが低い場合はどうすればよいですか?",
+          "answer": "FAQ、エンティティ、構造化データ (AEO)、および Google ビジネス プロフィール / NAP / ローカル ランディング ページ (GEO) を優先します。私たちはそのロードマップを実装に移すお手伝いをします。続きを読む: [Scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Local Discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)。"
+        },
+        {
+          "id": "ai-19",
+          "question": "AI エージェントはカスタマー ポータルでどのように機能しますか?",
+          "answer": "AI エージェントは、SEO、コンテンツ、ソーシャル、広告に関連するタスクをサポートします。アカウントで概要を開いてステータスを確認し、パッケージに応じてエージェントを開始または一時停止できます。続きを読む: [What are AI agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Open agents](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)。"
+        },
+        {
+          "id": "ai-20",
+          "question": "AIスキャンは無料ですか？",
+          "answer": "AI スキャン ページからアクセス可能なエントリがあります。より深い分析とプロセスはサービスまたはリテイナーに分類されます。スキャン後、フォローアップが有用かどうかがすぐにわかります。続きを読む: [AI scan](/ai-scan) · [What is the AI ​​scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)。"
+        },
+        {
+          "id": "ai-21",
+          "question": "Agent 000 は AI や SEO に関する質問にも対応しますか?",
+          "answer": "はい。エージェント 000 は、FAQ とナレッジ ベースを使用して AEO/GEO/SEO および AI スキャンの質問に回答し、適切な記事または人間によるフォローアップにリンクします。続きを読む: [Digital Assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [FAQ](/faq)。"
         }
       ]
     },
@@ -154,17 +234,17 @@
         {
           "id": "seo-1",
           "question": "AEO、GEO、SEOの違いは何ですか?",
-          "answer": "AEO (Answer Engine Optimization) は AI の回答に焦点を当てています。 GEO (地理検索エンジン最適化) は、マップ、ローカル パック、位置ベースの検索におけるローカルおよび地域の可視性を強化します。 SEO は従来の検索エンジン向けに最適化します。"
+          "answer": "AEO (Answer Engine Optimization) は AI の回答に焦点を当てています。 GEO (地理検索エンジン最適化) は、マップ、ローカル パック、位置ベースの検索におけるローカルおよび地域の可視性を強化します。 SEO は従来の検索エンジン向けに最適化します。 [How AEO, GEO and SEO are related](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen) · [What is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization)"
         },
         {
           "id": "seo-2",
           "question": "なぜ今 AEO/GEO が重要なのでしょうか?",
-          "answer": "より多くの検索者が AI 経由で回答を受け取り、ローカル (「近く」) で検索することもできます。 AEO がなければ、AI の引用を見逃してしまいます。 GEO がなければ、たとえクラシック SEO がしっかりしていても、ローカルのリードを逃すことになります。"
+          "answer": "より多くの検索者が AI 経由で回答を受け取り、ローカル (「近く」) で検索することもできます。 AEO がなければ、AI の引用を見逃してしまいます。 GEO がなければ、たとえクラシック SEO がしっかりしていても、ローカルのリードを逃すことになります。 [What is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant)"
         },
         {
           "id": "seo-3",
           "question": "SEO エンゲージメントを開始するにはどうすればよいですか?",
-          "answer": "まずは技術監査、キーワードと意図の調査、コンテンツギャップ分析、ビジネス KPI に関連付けられた優先ロードマップから始めます。"
+          "answer": "まずは技術監査、キーワードと意図の調査、コンテンツギャップ分析、ビジネス KPI に関連付けられた優先ロードマップから始めます。 [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)"
         },
         {
           "id": "seo-4",
@@ -174,7 +254,7 @@
         {
           "id": "seo-5",
           "question": "ローカルSEOもやってますか？",
-          "answer": "はい。 私たちは、Google ビジネス プロフィール、ローカル ランディング ページ、NAP の一貫性、レビュー、ローカル コンテンツ クラスターに取り組んでおり、お客様がお住まいの地域でより適切に見つけられるようにします。"
+          "answer": "はい。 私たちは、Google ビジネス プロフィール、ローカル ランディング ページ、NAP の一貫性、レビュー、ローカル コンテンツ クラスターに取り組んでおり、お客様がお住まいの地域でより適切に見つけられるようにします。 [Improve local discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)"
         },
         {
           "id": "seo-6",
@@ -220,6 +300,36 @@
           "id": "seo-14",
           "question": "国際的なSEOを手伝ってくれますか?",
           "answer": "はい。 私たちは、hreflang、国または言語ごとの市場調査、コンテンツのローカリゼーション、および技術的なマルチロケール設定を扱います。"
+        },
+        {
+          "id": "seo-15",
+          "question": "AEOとは一体何なのでしょうか？",
+          "answer": "AEO (回答エンジン最適化) は、AI 回答と回答エンジンがブランドを正しく引用できるようにコンテンツを作成します (明確な FAQ、エンティティ、構造化データ)。続きを読む: [What is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AEO, GEO and SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)。"
+        },
+        {
+          "id": "seo-16",
+          "question": "GEO（地理SEO）とは何ですか？",
+          "answer": "GEO は、GBP、NAP の一貫性、ローカル コンテンツを通じて、ローカルおよび地域の発見可能性 (マップ、ローカル パック、位置ベースの検索) を強化します。続きを読む: [What is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant) · [Local discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)。"
+        },
+        {
+          "id": "seo-17",
+          "question": "SEO 最適化を注文または開始するにはどうすればよいですか?",
+          "answer": "AI スキャンまたは監査から始めて、優先順位を付けた提案を行います。ショップ/サービスまたはリテイナーを介して、SEO をコンテンツやテクノロジーと組み合わせることができます。続きを読む: [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting) · [AI Scan](/ai-scan)。"
+        },
+        {
+          "id": "seo-18",
+          "question": "構造化データと FAQ スケジュールについてサポートしてもらえますか?",
+          "answer": "はい。関連する図 (FAQ、組織、ローカルビジネス、製品) を作成し、検索エンジンと AI がユーザーをよりよく理解できるようにコンテンツを構造化します。続きを読む: [AEO explanation](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AI scan scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)。"
+        },
+        {
+          "id": "seo-19",
+          "question": "Core Web Vitals については何をしていますか?",
+          "answer": "LCP、INP、CLS を測定し、重い資産、ホスティング/キャッシング、テーマの問題を解決し、役立つ場合にはこれを CDN にリンクします。続きを読む: [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [Choose Hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)。"
+        },
+        {
+          "id": "seo-20",
+          "question": "SEO とホスティングおよび WordPress ケアを組み合わせることができますか?",
+          "answer": "はい。安定したホスティング、アップデート、パフォーマンスが基盤を形成します。 SEOはそれに基づいて構築されます。多くの顧客は、WP ケア + ホスティング + 継続的な SEO を組み合わせています。続きを読む: [Hosting](/diensten/categorie/hosting) · [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)。"
         }
       ]
     },
@@ -291,6 +401,26 @@
           "id": "ads-13",
           "question": "リマーケティングは依然として重要ですか?",
           "answer": "はい、プライバシーに準拠し、強力なクリエイティブやオファーと組み合わせている場合は可能です。 多くの場合、ファネル内で最も効率的なレイヤーとして残ります。"
+        },
+        {
+          "id": "ads-14",
+          "question": "広告の同意モードと Cookie バナーについてサポートしていますか?",
+          "answer": "はい。適切な同意とタグ付けがなければ、広告の測定は信頼できません。バナー、GTM/GA4、ピクセルを綺麗にリンクさせています。続きを読む: [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Cookie banner WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)。"
+        },
+        {
+          "id": "ads-15",
+          "question": "キャンペーン用のランディング ページを作成できますか?",
+          "answer": "はい - 追跡と CRO の基本を備えた、検索意図に合わせた高速ランディング ページまたは WordPress ページです。続きを読む: [Services](/diensten) · [Shop](/shop)。"
+        },
+        {
+          "id": "ads-16",
+          "question": "広告予算の無駄を防ぐにはどうすればよいでしょうか?",
+          "answer": "厳格なアカウント構造、除外キーワード、オーディエンスの除外、ランディング ページの適合性、クリック数だけでなく CPA/ROAS の毎週の最適化。"
+        },
+        {
+          "id": "ads-17",
+          "question": "広告は AEO/SEO とうまく機能しますか?",
+          "answer": "はい。広告は高速なデータとトラフィックを配信します。 SEO/AEO は持続可能な可視性を構築します。キーワードとクリエイティブからの洞察は、コンテンツとランディング ページを強化します。続きを読む: [AEO, GEO and SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)。"
         }
       ]
     },
@@ -362,6 +492,26 @@
           "id": "des-13",
           "question": "デジタル デザインについて詳しくはどこで学べますか?",
           "answer": "詳細については、/gurafikku-dezain およびメニューのデジタル デザイン サービスをご覧ください。"
+        },
+        {
+          "id": "des-14",
+          "question": "デザインシステムやコンポーネントライブラリも提供していますか?",
+          "answer": "はい、一貫して拡張したいブランドの場合、マーケティングと製品が同じ言語で話せるようにするためのトークン、コンポーネント、ドキュメントが必要です。"
+        },
+        {
+          "id": "des-15",
+          "question": "既存のブランドスタイルをデジタル化できますか?",
+          "answer": "はい。印刷物または不完全なブランド ガイドラインを Web 対応のカラー、タイポグラフィ、UI キット、テンプレートに変換します。"
+        },
+        {
+          "id": "des-16",
+          "question": "UXリサーチを行っていますか、それともビジュアルデザインだけを行っていますか?",
+          "answer": "両方。必要に応じて、インタビュー、ファネル分析、またはヒート マップから始めます。次にUI。このようにして、味だけではなく行動に基づいてデザインします。"
+        },
+        {
+          "id": "des-17",
+          "question": "ソーシャルテンプレートや広告クリエイティブをデザインできますか?",
+          "answer": "はい - ブランドやキャンペーンの目標に一致するカルーセル、サムネイル、ストーリー、広告セット。続きを読む: [Services](/diensten)。"
         }
       ]
     },
@@ -433,6 +583,26 @@
           "id": "mkt-13",
           "question": "成果のない「多忙なマーケティング」を防ぐにはどうすればよいでしょうか?",
           "answer": "すべてのアクティビティは KPI に関連付けられています。 パフォーマンスの悪い戦術はデータによって阻止または改善されるため、効果的なものに予算が投入されます。"
+        },
+        {
+          "id": "mkt-14",
+          "question": "マーケティングリテイナーには通常何が含まれますか?",
+          "answer": "KPI に合わせて調整された戦略、コンテンツまたは SEO、キャンペーン、レポート、実験の組み合わせ。優先順位が明確になるよう、範囲と時間を記録します。続きを読む: [Shop](/shop) · [Contact](/contact)。"
+        },
+        {
+          "id": "mkt-15",
+          "question": "ポジショニングやメッセージングを手伝ってくれますか?",
+          "answer": "はい。明確なポジショニング、価値の提案、ページコピーにより、広告、SEO、販売が同じメッセージを確実に伝えることができます。"
+        },
+        {
+          "id": "mkt-16",
+          "question": "トラフィックだけでなくパイプラインによってマーケティングを測定しますか?",
+          "answer": "可能な場合: リード、SQL、収益、またはアシストされたコンバージョン。品質を維持せずにトラフィックを調整または停止します。"
+        },
+        {
+          "id": "mkt-17",
+          "question": "マーケティングスタックと追跡をクリーンアップできますか?",
+          "answer": "はい — GTM、GA4、ピクセル、CRM リンク、および同意。クリーンなデータは、適切な意思決定の基礎となります。続きを読む: [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen)。"
         }
       ]
     },
@@ -504,6 +674,153 @@
           "id": "soc-13",
           "question": "ソーシャル上でどれくらい早く成長が見られるでしょうか?",
           "answer": "一貫性が重要です。 大幅な成長には通常、数週間から数か月かかります。 広告サポートを使用すると、処理が速くなることもよくあります。"
+        },
+        {
+          "id": "soc-14",
+          "question": "社会的証明やレビューに協力してくれますか?",
+          "answer": "はい。私たちは、偽りのエンゲージメントを行わずに、信頼を構築するレビュー リクエスト、ケース、UGC のような形式を計画します。"
+        },
+        {
+          "id": "soc-15",
+          "question": "従業員の権利擁護を設定できますか?",
+          "answer": "はい、特に LinkedIn では、シンプルなガイドライン、テンプレート、リズムにより、チームが専門知識を目に見えて共有できます。"
+        },
+        {
+          "id": "soc-16",
+          "question": "ソーシャルをウェブサイトやショップにどのようにリンクしますか?",
+          "answer": "UTM、ランディング ページ、製品リンク、リターゲティング経由。ソーシャルはファネル内のチャネルであり、島ではありません。続きを読む: [Shop](/shop)。"
+        }
+      ]
+    },
+    {
+      "id": "account-portaal",
+      "title": "アカウントとポータル",
+      "items": [
+        {
+          "id": "acc-1",
+          "question": "カスタマーポータルにログインするにはどうすればよいですか?",
+          "answer": "「アカウント/ログイン」に移動し、顧客アカウントの電子メール アドレスを使用します。データを紛失した場合は、パスワードのリセットを使用するか、当社までご連絡ください。続きを読む: [Account](/dashboard) · [Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)。"
+        },
+        {
+          "id": "acc-2",
+          "question": "ダッシュボードには何が表示されますか?",
+          "answer": "サービスに応じて: チケット、プロジェクト、請求書、AI スキャン/エージェント、サポートへのクイック リンク。続きを読む: [AI agents in account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account) · [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)。"
+        },
+        {
+          "id": "acc-3",
+          "question": "ログイン情報を紛失してしまいました。どうすればよいですか?",
+          "answer": "「パスワードを忘れた場合」を使用するか、カスタマー パネルのナレッジ ベースの手順に従ってください。それがうまくいかない場合は、既知の連絡先アドレスを使用してチケットをオープンしてください。続きを読む: [Lost login details](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)。"
+        },
+        {
+          "id": "acc-4",
+          "question": "ポータルからチケットを開くにはどうすればよいですか?",
+          "answer": "顧客パネルで、サポート/チケットを選択し、問題を説明し、証拠 (URL、スクリーンショット) を追加します。続きを読む: [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)。"
+        },
+        {
+          "id": "acc-5",
+          "question": "請求書はどこで見つけられますか?",
+          "answer": "ポータルの請求書/請求の下で請求書を表示およびダウンロードできます。続きを読む: [Consult invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)。"
+        },
+        {
+          "id": "acc-6",
+          "question": "請求先情報や支払い方法を変更するにはどうすればよいですか?",
+          "answer": "新しい請求書が正しくなるように、アカウント設定で会社名、VAT 番号、支払い方法を調整してください。続きを読む: [Change invoice details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)。"
+        },
+        {
+          "id": "acc-7",
+          "question": "同僚もアクセスできますか?",
+          "answer": "はい、アカウントの役割 (クライアント、マネージャー、管理者) を使用すると、すべてを共有することなく複数のチームメンバーがチケットやプロジェクトを追跡できます。"
+        },
+        {
+          "id": "acc-8",
+          "question": "AI スキャンと AI エージェントは私のアカウントにリンクされていますか?",
+          "answer": "はい。スキャンとエージェントは顧客アカウントに属するため、履歴と権利は保持されます。続きを読む: [AI agents](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)。"
+        },
+        {
+          "id": "acc-9",
+          "question": "私の顧客アカウントはどの程度安全ですか?",
+          "answer": "利用可能な場合は、一意のパスワードと 2FA を使用します (ホスティング パネルを含む)。共有コンピュータ上でセッションを共有しないでください。続きを読む: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)。"
+        },
+        {
+          "id": "acc-10",
+          "question": "プロジェクトのステータスと成果物を追跡できますか?",
+          "answer": "ポータルにプロジェクトがリストされている場合、ステータスとコミュニケーションを確認できます。それ以外の場合は、チケットまたはスプリントの更新を通じてお知らせします。"
+        },
+        {
+          "id": "acc-11",
+          "question": "ショップのサービスを自分のアカウントにリンクするにはどうすればよいですか?",
+          "answer": "チェックアウト後、注文はあなたのアカウントに属します。プロビジョニング (ホスティング、ドメイン) は自動的に、またはサポートによるオンボーディングを通じて行われます。続きを読む: [Shop](/shop)。"
+        },
+        {
+          "id": "acc-12",
+          "question": "通知や設定はどこで設定すればよいですか?",
+          "answer": "アカウント設定では、プロファイルと利用可能な場合は通知設定を管理します。請求書の電子メールについては、電子メール アドレスを最新のものにしてください。"
+        }
+      ]
+    },
+    {
+      "id": "shop-bestellen",
+      "title": "買い物と注文",
+      "items": [
+        {
+          "id": "shop-1",
+          "question": "店内では何を注文できますか?",
+          "answer": "当社がオンラインで提供するホスティング パッケージ、ドメイン、ケア/サポート製品、その他のサービス。カスタマイズされた見積もりは、お問い合わせを通じて作成されます。続きを読む: [Shop](/shop) · [Hosting](/diensten/categorie/hosting)。"
+        },
+        {
+          "id": "shop-2",
+          "question": "ショッピングカートとチェックアウトはどのように機能しますか?",
+          "answer": "商品を追加し、期間（月/年）を確認し、チェックアウトで完了します。その後、確認とアカウントへのアクセスが届きます。続きを読む: [Shopping cart](/shop/cart)。"
+        },
+        {
+          "id": "shop-3",
+          "question": "価格には VAT が含まれていますか、それとも含まれていませんか?",
+          "answer": "ショップでは、表示される VAT コンテキスト (多くの場合、消費者の流れを含む) に従って価格を表示します。請求書には、法人顧客向けの正味 VAT の内訳が含まれています。"
+        },
+        {
+          "id": "shop-4",
+          "question": "月払いまたは年払いはできますか?",
+          "answer": "多くのホスティングおよびケア製品には、月次および年次のオプションがあります。年間の方が安くなる場合が多いです。詳細は製品カードごとに記載されています。"
+        },
+        {
+          "id": "shop-5",
+          "question": "どの支払い方法を利用できますか?",
+          "answer": "チェックアウトによる一般的なオンライン方法 (地域によって異なります)。企業の請求書の場合は、お問い合わせを通じてアカウントに基づいて請求書を手配できます。"
+        },
+        {
+          "id": "shop-6",
+          "question": "支払い後すぐにアクセスできますか?",
+          "answer": "標準のホスティング/ドメイン製品の場合、支払いが完了するとすぐにプロビジョニングが行われます。カスタム サービスについては、サポートがキックオフを計画します。"
+        },
+        {
+          "id": "shop-7",
+          "question": "後でパッケージをアップグレードできますか?",
+          "answer": "はい。移行計画により、共有からクラウド/VPS、または Basic から Plus/Business への移行が可能です。続きを読む: [Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [Choose package](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)。"
+        },
+        {
+          "id": "shop-8",
+          "question": "ショップ製品とカスタマイズを組み合わせるにはどうすればよいですか?",
+          "answer": "ホスティング/ケアをオンラインで注文し、デザイン、SEO、または広告をインテーク経由で計画します。可能な場合、請求書とアカウントを同梱します。続きを読む: [Contact](/contact)。"
+        },
+        {
+          "id": "shop-9",
+          "question": "注文した商品が届かない、または滞っている場合はどうすればよいですか?",
+          "answer": "メール (スパムを含む) とポータルを確認してください。何も表示されない場合は、チケットを開くか、注文番号を添えてサポートに電子メールを送信してください。続きを読む: [Contact](/contact) · [Tickets](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)。"
+        },
+        {
+          "id": "shop-10",
+          "question": "ドメインとホスティングを一度に注文できますか?",
+          "answer": "はい、これが通常の流れです。ショッピング カートでドメイン + ホスティングを行い、次に DNS 接続を行います。続きを読む: [Domains](/domeinen) · [Shop](/shop)。"
+        },
+        {
+          "id": "shop-11",
+          "question": "WordPress Care のパッケージはありますか?",
+          "answer": "はい。ケア パッケージには、更新、監視、メンテナンスが個別に、またはホスティングに加えて含まれています。続きを読む: [Shop](/shop)。"
+        },
+        {
+          "id": "shop-12",
+          "question": "注文をキャンセルまたは変更するにはどうすればよいですか?",
+          "answer": "サポート経由で注文した直後。それ以降のキャンセル・変更条件は商品ごとに適用されます。停止した場合は、移行または輸出をお手伝いします。続きを読む: [Contact](/contact)。"
         }
       ]
     },
@@ -514,12 +831,12 @@
         {
           "id": "sup-1",
           "question": "どのようなサポートを提供していますか?",
-          "answer": "当社は、WordPress サポート、カスタム Web サイトのサポート、チケットとライブチャット、メンテナンス、セキュリティ、パフォーマンス、インシデント対応を提供します。"
+          "answer": "当社は、WordPress サポート、カスタム Web サイトのサポート、チケットとライブチャット、メンテナンス、セキュリティ、パフォーマンス、インシデント対応を提供します。 [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting) · [Chat, ticket or call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)"
         },
         {
           "id": "sup-2",
           "question": "サポートに連絡するにはどうすればよいですか?",
-          "answer": "ダッシュボードの連絡先、約束、チケット、またはサイト上のライブチャット経由。 緊急のケースは優先としてマークされます。"
+          "answer": "ダッシュボードの連絡先、約束、チケット、またはサイト上のライブチャット経由。 緊急のケースは優先としてマークされます。 [Contact](/contact) · [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Call appointment](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)"
         },
         {
           "id": "sup-3",
@@ -529,7 +846,7 @@
         {
           "id": "sup-4",
           "question": "24時間365日の監視を提供していますか?",
-          "answer": "はい、関連するサポートおよびホスティング パッケージに含まれています。監視、バックアップ、アラートにより、問題が早期に発見されます。"
+          "answer": "はい、関連するサポートおよびホスティング パッケージに含まれています。監視、バックアップ、アラートにより、問題が早期に発見されます。 [Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup)"
         },
         {
           "id": "sup-5",
@@ -539,22 +856,22 @@
         {
           "id": "sup-6",
           "question": "WordPress の更新を代行してもらえますか?",
-          "answer": "はい、「メンテナンスとアップデート」経由で、コア、プラグイン、テーマ、アップデート前後のバックアップとチェックが可能です。"
+          "answer": "はい、「メンテナンスとアップデート」経由で、コア、プラグイン、テーマ、アップデート前後のバックアップとチェックが可能です。 [Site down after WP update](/kennisbank/hosting/website-down-na-update-wordpress)"
         },
         {
           "id": "sup-7",
           "question": "ホスティングの問題を解決してくれますか?",
-          "answer": "はい。 サイトが再び安定して稼働するまで、ホスティング、VPS、ドメインを診断、移行、または最適化します。"
+          "answer": "はい。 サイトが再び安定して稼働するまで、ホスティング、VPS、ドメインを診断、移行、または最適化します。 [Move website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je)"
         },
         {
           "id": "sup-8",
           "question": "私のサイトがダウンしたらどうなりますか?",
-          "answer": "緊急として報告してください。 バックアップ、サーバー チェック、ホットフィックスを使用して可能な限り復元し、途中でステータスを常に最新の状態に保ちます。"
+          "answer": "緊急として報告してください。 バックアップ、サーバー チェック、ホットフィックスを使用して可能な限り復元し、途中でステータスを常に最新の状態に保ちます。 [Backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [Check yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support)"
         },
         {
           "id": "sup-9",
           "question": "クライアントポータルはありますか?",
-          "answer": "はい。 ログインしたクライアントには、ダッシュボード、チケット、プロジェクト、および関連する CRM または請求書が表示されます。"
+          "answer": "はい。 ログインしたクライアントには、ダッシュボード、チケット、プロジェクト、および関連する CRM または請求書が表示されます。 [Ticket via customer panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel) · [Lost login?](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)"
         },
         {
           "id": "sup-10",
@@ -575,6 +892,56 @@
           "id": "sup-13",
           "question": "サポートを後でアップグレードできますか?",
           "answer": "はい。 トラフィック、リスク、チームのニーズが増大したときにスケールアップできます。"
+        },
+        {
+          "id": "sup-14",
+          "question": "チャット、チケット、電話予約の違いは何ですか?",
+          "answer": "チャットは短い質問に対しては高速です。チケットは、ログとフォローアップを伴う技術的なケースに適しています。面接や複雑な説明には電話予約が適しています。続きを読む: [Chat versus ticket versus call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)。"
+        },
+        {
+          "id": "sup-15",
+          "question": "サポート チケットを作成するにはどうすればよいですか?",
+          "answer": "顧客パネルにログインし、明確な URL、手順、スクリーンショットを含むチケットを開きます。情報が優れているほど、迅速に対応できます。続きを読む: [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)。"
+        },
+        {
+          "id": "sup-16",
+          "question": "サイトがダウンした場合のバックアップはありますか?",
+          "answer": "はい、ホスティングまたはサポート パッケージに応じて可能です。ダウンタイムが発生した場合には、可能な限りバックアップから復元し、原因を調査します。続きを読む: [Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor)。"
+        },
+        {
+          "id": "sup-17",
+          "question": "サポートに電話する前に自分で確認できることは何ですか?",
+          "answer": "ステータス ページ、DNS の伝播、最近の更新、ディスク容量、およびエラーが再現可能かどうかを確認します。それにより診断が迅速化されます。続きを読む: [Do it yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support) · [Statuspage](/statuspage)。"
+        },
+        {
+          "id": "sup-18",
+          "question": "ライブチャットはサイトでどのように機能しますか?",
+          "answer": "チャット ボタンからライブ チャットを開きます。エージェント 000 は、まず FAQ/知識ベースを支援します。より複雑な問題や緊急の問題については、従業員を紹介します。続きを読む: [Digital Assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Contact](/contact)。"
+        },
+        {
+          "id": "sup-19",
+          "question": "WordPress の重大なエラーについてサポートしてもらえますか?",
+          "answer": "はい。バックアップと対象を絞った修正を使用して、白い画面、重大な PHP エラー、プラグインの競合を診断します。続きを読む: [Critical Error WordPress](/kennisbank/wordpress/kritieke-fout-wordpress) · [Down after update](/kennisbank/hosting/website-down-na-update-wordpress)。"
+        },
+        {
+          "id": "sup-20",
+          "question": "リモート（TeamViewerなど）で視聴できますか？",
+          "answer": "必要に応じて許可を得て、デスクトップまたはパネルの問題に対応します。ホスティングに関するほとんどの場合、パネル、DNS、または WordPress へのアクセスで十分です。続きを読む: [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting)。"
+        },
+        {
+          "id": "sup-21",
+          "question": "サブスクリプションまたはサービスをキャンセルするにはどうすればよいですか?",
+          "answer": "カスタマーパネルまたはサポートを通じてキャンセルできます。契約書の通知期間に注意してください。データ/エクスポートと DNS 転送を適切に完了するお手伝いをします。続きを読む: [Contact](/contact) · [Account](/dashboard)。"
+        },
+        {
+          "id": "sup-22",
+          "question": "WordPress ケア/メンテナンス パッケージを提供していますか?",
+          "answer": "はい。アップデート、バックアップ、セキュリティチェック、パフォーマンスはケアパッケージに含まれており、ホスティングに加えて理想的です。続きを読む: [Shop](/shop) · [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren)。"
+        },
+        {
+          "id": "sup-23",
+          "question": "電子メールが突然機能しなくなったらどうしますか?",
+          "answer": "DNS (MX/SPF/DKIM/DMARC)、メールボックス クォータ、および Microsoft またはプロバイダーがメールをブロックしているかどうかを確認します。チェーンの測定をお手伝いします。続きを読む: [Email Problems](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)。"
         }
       ]
     },
@@ -585,7 +952,7 @@
         {
           "id": "web-1",
           "question": "WordPress サイトを構築するだけですか?",
-          "answer": "いいえ。WordPress のほかに、WordPress サービスとは別に、HTML/CSS/JS、PHP、Next.js でカスタム Web デザインを行っています。"
+          "answer": "いいえ。WordPress のほかに、WordPress サービスとは別に、HTML/CSS/JS、PHP、Next.js でカスタム Web デザインを行っています。 [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [Services](/diensten)"
         },
         {
           "id": "web-2",
@@ -635,7 +1002,7 @@
         {
           "id": "web-11",
           "question": "発売後のパフォーマンスはどうですか？",
-          "answer": "Core Web Vitals、キャッシュまたは CDN、モニタリングを最適化します。 アフターケアはメンテナンス パッケージを通じて継続されます。"
+          "answer": "Core Web Vitals、キャッシュまたは CDN、モニタリングを最適化します。 アフターケアはメンテナンス パッケージを通じて継続されます。 [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)"
         },
         {
           "id": "web-12",
@@ -651,87 +1018,349 @@
           "id": "web-14",
           "question": "オンサイトのコンバージョンの最適化を支援してくれますか?",
           "answer": "はい。 より多くの訪問者がコンバージョンに至るように、A/B テスト、UX の改善、フォーム、CTA、ページ速度を実行します。"
+        },
+        {
+          "id": "web-15",
+          "question": "ウェブショップも構築していますか？",
+          "answer": "はい、チェックアウトが統合されたマーケティング サイトから、WordPress またはカスタマイズでの電子商取引まで。私たちは、受け入れ中に範囲、支払い、履行を調整します。続きを読む: [Services](/diensten) · [Shop](/shop)。"
+        },
+        {
+          "id": "web-16",
+          "question": "サイト上のプライバシーに関するテキストにどのように対処しますか?",
+          "answer": "当社は、必要に応じて弁護士に合わせて、フォームやバナーに関するプライバシーと同意のフローについてアドバイスし、実装します。続きを読む: [Privacy with forms](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren) · [Cookie banner](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)。"
+        },
+        {
+          "id": "web-17",
+          "question": "ステージング環境は提供されますか?",
+          "answer": "はい、該当する場合: レビューとテストのためのステージング、その後実稼働環境への制御されたデプロイメント。"
+        },
+        {
+          "id": "web-18",
+          "question": "既存の WordPress サイトを引き継いで改善していただけますか?",
+          "answer": "はい - 監査、更新、セキュリティ、スピード、UX、SEO を不必要にゼロから構築する必要はありません。続きを読む: [WP move](/kennisbank/domeinnamen/wordpress-website-verhuizen) · [Critical errors](/kennisbank/wordpress/kritieke-fout-wordpress)。"
+        },
+        {
+          "id": "web-19",
+          "question": "配信後の HTTP から HTTPS への変換はどうなりますか?",
+          "answer": "サイトのデフォルトは HTTPS です。移行中、HTTPS を強制し、混合コンテンツを解決します。続きを読む: [HTTP to HTTPS in WordPress](/kennisbank/wordpress/wordpress-url-omzetten-van-http-naar-https) · [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig)。"
+        }
+      ]
+    },
+    {
+      "id": "domeinen",
+      "title": "ドメイン",
+      "items": [
+        {
+          "id": "dom-1",
+          "question": "ドメイン名とは何ですか?",
+          "answer": "ドメイン名は、訪問者が Web サイトを見つけるために使用するアドレスです (例: example.com)。これは、ホスティングまたは電子メールを指す DNS レコードに関連付けられます。続きを読む: [Domain registration](/kennisbank/domeinnamen/domeinnaamregistratie) · [Order domains](/domeinen)。"
+        },
+        {
+          "id": "dom-2",
+          "question": "ドメイン名を登録するにはどうすればよいですか?",
+          "answer": "ドメイン ページで名前を検索し、拡張子を選択して、ショップでのチェックアウトを完了します。登録後は、アカウントで DNS、ネームサーバー、請求書を管理します。続きを読む: [Domains](/domeinen) · [Registration guide](/kennisbank/domeinnamen/domeinnaamregistratie) · [Shop](/shop)。"
+        },
+        {
+          "id": "dom-3",
+          "question": "私のドメインを移管できますか?",
+          "answer": "はい。現在のレジストラに認証 (EPP) コードをリクエストし、転送ロックを解除してから、転送を開始してください。その後、DNS とネームサーバーを正しく設定します。続きを読む: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Authorisation code](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Domains](/domeinen)。"
+        },
+        {
+          "id": "dom-4",
+          "question": "認可コード(EPP/Authコード)とは何ですか?",
+          "answer": "これは、ドメイン移管を安全に開始するための、現在のレジストラからのワンタイム コードです。有効なコードがないと転送を続行できません。続きを読む: [What is an authorisation code?](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen)。"
+        },
+        {
+          "id": "dom-5",
+          "question": "転送ロックまたはレジストラ ロックとは何ですか?",
+          "answer": "ロックにより、不要な転送を防止します。移行の場合、多くの場合、最初に現在のプロバイダーをオフにしてから、当社で転送を開始する必要があります。続きを読む: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Support](/contact)。"
+        },
+        {
+          "id": "dom-6",
+          "question": "ホスティングせずにドメインを購入できますか?",
+          "answer": "はい。ドメインのみを登録または移管し、後でホスティングまたは電子メールを追加することができます。それまでの間、すでに DNS を管理または転送できます。続きを読む: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Domains](/domeinen)。"
+        },
+        {
+          "id": "dom-7",
+          "question": "どの拡張子 (.nl、.com、…) を登録できますか?",
+          "answer": ".nl や .com などの一般的な TLD に加えて、多くの国際的な拡張子もサポートしています。ドメイン検索では、在庫状況と価格が即座に表示されます。続きを読む: [Domains](/domeinen) · [Registration](/kennisbank/domeinnamen/domeinnaamregistratie)。"
+        },
+        {
+          "id": "dom-8",
+          "question": "ドメイン名を更新するにはどうすればよいですか?",
+          "answer": "更新は請求書とクライアント ポータルを通じて実行されます。多くの場合、自動更新が利用可能です。有効期限が切れないように、支払いの詳細を最新の状態に保ってください。続きを読む: [Invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails) · [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)。"
+        },
+        {
+          "id": "dom-9",
+          "question": "プレミアム ドメイン名とは何ですか?",
+          "answer": "プレミアム名は、短いドメインまたは人気のあるドメインであり、多くの場合アフターマーケット経由で購入価格が高くなります。利用可能性と条件は内線番号によって異なります。続きを読む: [Premium domains](/kennisbank/domeinnamen/premium-domeinnamen) · [Domains](/domeinen)。"
+        },
+        {
+          "id": "dom-10",
+          "question": "ドメインを匿名で登録できますか (ID を保護)?",
+          "answer": "レジストリで許可されている場合は、プライバシー/ID の保護を考慮できます。ルールは拡張子によって異なります。たとえば、.nl には独自のフレームワークがあります。続きを読む: [Protect ID](/kennisbank/domeinnamen/protect-id-domein-anoniem-registreren)。"
+        },
+        {
+          "id": "dom-11",
+          "question": "私のドメインは隔離されていますが、今はどうなっているのでしょうか?",
+          "answer": "削除後、ドメインは隔離される可能性があります。レジストリによっては、有料で再アクティブ化できる場合があります。あまり長く待たないでください。続きを読む: [Domain out of quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)。"
+        },
+        {
+          "id": "dom-12",
+          "question": "新しいドメイン名はまだ機能しません。どうすればよいでしょうか?",
+          "answer": "通常、これは DNS の伝播、A/MX レコードの欠落、またはまだ更新されていないネームサーバーです。レコードを確認し、TTL の有効期限が切れるようにします。続きを読む: [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)。"
+        },
+        {
+          "id": "dom-13",
+          "question": "ドメインをホスティング プランに接続するにはどうすればよいですか?",
+          "answer": "パネルまたはアカウントにドメインを追加し、DNS (A レコードまたはネームサーバー) がホスティングを指すようにします。ご注文後の最初の接続をお手伝いします。続きを読む: [Connect domain to plan](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)。"
+        },
+        {
+          "id": "dom-14",
+          "question": "ドメインを転送できますか?",
+          "answer": "はい。ドメイン転送は訪問者を別の URL に送信します。これは、別のサイトを持たないブランド名に役立ちます。 DNS とリダイレクトをお客様の設定に合わせて調整します。続きを読む: [Forward a domain](/kennisbank/domeinnamen/domeinnaam-doorsturen) · [Domains](/domeinen)。"
+        },
+        {
+          "id": "dom-15",
+          "question": "ドメインのネームサーバーを変更するにはどうすればよいですか?",
+          "answer": "DNS/ドメイン管理では、当社のネームサーバーまたは外部ネームサーバー (CDN など) を選択します。伝播には数時間から最大 1 日かかる場合があります。続きを読む: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)。"
+        },
+        {
+          "id": "dom-16",
+          "question": "ドメイン名の費用はいくらですか?",
+          "answer": "料金は延長や期間によって異なります。ドメイン検索では、現在の登録および更新の価格が表示されます。プレミアム名には別料金がかかります。続きを読む: [Domains](/domeinen) · [Shop](/shop)。"
+        },
+        {
+          "id": "dom-17",
+          "question": "ホスティングとドメインは同じプロバイダーである必要がありますか?",
+          "answer": "いいえ、しかしそれはより簡単です。DNS、SSL、電子メール、サポートは一方の側にあります。 DNS のみを保持し、別の場所でホストすることもできます。続きを読む: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Hosting](/diensten/categorie/hosting)。"
+        },
+        {
+          "id": "dom-18",
+          "question": "1 つのアカウントで複数のドメインを管理できますか?",
+          "answer": "はい。追加のドメインは、ホスティング プランの制限内で、登録または転送し、アドオンとしてリンクしたり、パークしたり、転送したりできます。続きを読む: [Domains](/domeinen) · [Choose a hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)。"
+        },
+        {
+          "id": "dom-19",
+          "question": "ドメインの有効期限が切れたらどうなりますか?",
+          "answer": "有効期限が切れた後も、回復が可能な猶予期間または隔離期間が設けられることがよくあります。その後、他の誰かがそれを主張する可能性があります。請求書により期限までに更新してください。続きを読む: [Quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)。"
+        },
+        {
+          "id": "dom-20",
+          "question": "ドメインはどこで注文または管理できますか?",
+          "answer": "ドメイン ページまたはショップ経由で登録および移管します。管理 (DNS、請求書、更新) はクライアント ポータルにあります。続きを読む: [Domains](/domeinen) · [Shop](/shop) · [Account](/dashboard)。"
         }
       ]
     },
     {
       "id": "webhosting",
-      "title": "ウェブホスティングとドメイン",
+      "title": "ウェブホスティング",
       "items": [
         {
           "id": "host-1",
           "question": "どのホスティングを提供していますか?",
-          "answer": "当社は共有ホスティング、WordPress ホスティング、VPS をベーシック、プラス、ビジネス レベルで提供し、さらにドメインも提供します。"
+          "answer": "共有ホスティング、クラウド ホスティング、WordPress ホスティング、VPS、さらにドメイン登録を提供します。トラフィック、スタック、成長に基づいて選択してください。続きを読む: [Shared hosting](/diensten/shared-hosting) · [Cloud hosting](/diensten/cloud-hosting) · [WordPress hosting](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting)。"
         },
         {
           "id": "host-2",
-          "question": "共有、WordPress、VPS の違いは何ですか?",
-          "answer": "共有は小規模なサイトにとってコスト効率が高くなります。 WordPress ホスティングは WP 用に最適化されています。 VPS は、より多くのリソースと、より重い負荷に対する制御を提供します。"
+          "question": "共有、クラウド、WordPress、VPS の違いは何ですか?",
+          "answer": "共有は小規模なサイトにとってコスト効率が高くなります。クラウドは、フルマネージドでより多くのリソースと拡張性を提供します。 WordPress ホスティングは WP 用に最適化されています。 VPS では、より重い負荷をより詳細に制御できます。続きを読む: [Differences explained](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps) · [Shared plans](/kennisbank/hosting/wat-is-shared-hosting-basic-plus-en-business) · [VPS plans](/kennisbank/hosting/wat-is-vps-hosting-basic-plus-en-business)。"
         },
         {
           "id": "host-3",
-          "question": "ドメイン登録を手伝ってくれますか?",
-          "answer": "はい。 ドメインを登録または移管し、DNS を正しく接続することをお勧めします。"
+          "question": "あなたにとってクラウドホスティングとは何ですか?",
+          "answer": "クラウド ホスティングでは、従来の共有よりも多くのリソースとスケーラビリティが提供されますが、管理は継続されます。共有が厳しくなるが、完全な VPS はまだ必要ではない場合に最適です。続きを読む: [Cloud hosting](/diensten/cloud-hosting) · [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)。"
         },
         {
           "id": "host-4",
           "question": "ホスティングには SSL が含まれていますか?",
-          "answer": "はい。 関連するホスティング プランでは SSL が標準です。"
+          "answer": "はい。関連するホスティング プランでは SSL が標準となっているため、サイトは HTTPS で実行されます。続きを読む: [What is SSL?](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [Install Let's Encrypt](/kennisbank/hosting/hoe-installeer-ik-een-gratis-lets-encrypt-ssl-certificaat)。"
         },
         {
           "id": "host-5",
           "question": "私のサイトをあなたのホスティングに移行してもらえますか?",
-          "answer": "はい。 ダウンタイムを最小限に抑えながら、バックアップ、移行、DNS カットオーバー、SSL、スモーク テストを処理します。"
+          "answer": "はい。ダウンタイムを最小限に抑えながら、バックアップ、移行、DNS カットオーバー、SSL、スモーク テストを処理します。続きを読む: [Migrate website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je) · [Migrate WordPress](/kennisbank/domeinnamen/wordpress-website-verhuizen)。"
         },
         {
           "id": "host-6",
           "question": "ホスティングではバックアップはどのように機能しますか?",
-          "answer": "それは、単純なバックアップか自動バックアップかというプランによって異なります。 追加のオフサイト保持が利用可能です。"
+          "answer": "それは、単純なバックアップか自動バックアップかというプランによって異なります。追加のオフサイト保持が利用可能です。続きを読む: [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor) · [Backup in DirectAdmin](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)。"
         },
         {
           "id": "host-7",
           "question": "トラフィックが増えたらどうなるでしょうか?",
-          "answer": "その後、Plus、Business、または VPS にスケールし、サイトが成長に対応できるようにキャッシュと CDN を最適化します。"
+          "answer": "その後、Plus、Business、クラウド、または VPS にスケールし、サイトが成長に対応できるようにキャッシュと CDN を最適化します。続きを読む: [When to move to VPS?](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)。"
         },
         {
           "id": "host-8",
-          "question": "ドメイン付きの電子メールを提供していますか?",
-          "answer": "それはパッケージとセットアップによって異なります。 信頼できるメール ソリューションをアドバイスし、DNS を正しく設定します (SPF、DKIM、DMARC)。"
+          "question": "ホスティングの安全性はどの程度ですか?",
+          "answer": "当社ではファイアウォール、SSL、アップデート、監視、強化を使用しています。必要に応じて、追加のセキュリティ層を利用できます。続きを読む: [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)。"
         },
         {
           "id": "host-9",
-          "question": "ホスティングの安全性はどの程度ですか?",
-          "answer": "当社ではファイアウォール、SSL、アップデート、監視、強化を使用しています。 追加のセキュリティ サービスにより、さらに多くのレイヤーを上に追加できます。"
+          "question": "後で共有から VPS に移行できますか?",
+          "answer": "はい。スイッチが制御された状態を維持できるように、テストやロールバックを含む移行を一緒に計画します。続きを読む: [Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [VPS hosting](/diensten/vps-hosting)。"
         },
         {
           "id": "host-10",
-          "question": "後で共有から VPS に移行できますか?",
-          "answer": "はい。 スイッチが制御された状態を維持できるように、テストやロールバックを含む移行を一緒に計画します。"
+          "question": "CDNをサポートしていますか?",
+          "answer": "はい、関連する場合は、より迅速なグローバル配信のために、無料の CDN が WP ホスティング プランに含まれていることがよくあります。続きを読む: [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [WordPress hosting](/diensten/wordpress-hosting)。"
         },
         {
           "id": "host-11",
-          "question": "CDNをサポートしていますか?",
-          "answer": "はい、関連する場合、より迅速なグローバル配信のために、無料の CDN が WP ホスティング プランに含まれていることがよくあります。"
+          "question": "稼働時間のアプローチは何ですか?",
+          "answer": "私たちは監視し、インシデントに迅速に対応し、メンテナンス期間中に明確にコミュニケーションをとることで、何が起こっているかを把握できます。ステータスの更新はステータス ページにあります。続きを読む: [Status page](/statuspage) · [Contact](/contact)。"
         },
         {
           "id": "host-12",
-          "question": "稼働時間のアプローチは何ですか?",
-          "answer": "私たちは監視し、インシデントに迅速に対応し、メンテナンス期間中に明確にコミュニケーションをとることで、何が起こっているかを把握できます。"
+          "question": "適切なホスティング プランを選択するにはどうすればよいですか?",
+          "answer": "トラフィック、スタック (WordPress またはカスタム)、リソース、成長に基づきます。私たちは正直にアドバイスします。過剰販売はしません。続きを読む: [Choose the right hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Shared vs WP vs VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)。"
         },
         {
           "id": "host-13",
-          "question": "DNS の問題の解決に役立ちますか?",
-          "answer": "はい。 DNS が再び正しくなるまで、レコード、伝播、メール認証、およびドメイン接続を修正します。"
+          "question": "ホスティングの料金はどこで確認できますか?",
+          "answer": "ホスティング サービスのページとショップで、該当する場合は月次または年次のオプションを使用できます。続きを読む: [Shared](/diensten/shared-hosting) · [Cloud](/diensten/cloud-hosting) · [WordPress](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting) · [Shop](/shop)。"
         },
         {
           "id": "host-14",
-          "question": "適切なホスティング プランを選択するにはどうすればよいですか?",
-          "answer": "トラフィック、スタック (WordPress またはカスタム)、リソース、成長に基づきます。 私たちは正直にアドバイスします。過剰販売はしません。"
+          "question": "ホスティングで SSH アクセスできますか?",
+          "answer": "それはプラン次第です。多くのプランでは SSH が利用可能であるか、要求することができます。 VPS では通常、フルアクセスが得られます。続きを読む: [SSH access](/kennisbank/hosting/heb-ik-ssh-toegang-op-mijn-hosting) · [VPS](/diensten/vps-hosting)。"
         },
         {
           "id": "host-15",
-          "question": "ホスティング料金はどこで確認できますか?",
-          "answer": "ホスティング サービス ページの [サービス] → [ウェブホスティングとドメイン] で、該当する場合は月次または年次のオプションを選択できます。"
+          "question": "ホスティングに WordPress をインストールするにはどうすればよいですか?",
+          "answer": "コントロール パネル (DirectAdmin/Installatron など) 経由、または手動で。ステップバイステップのガイドがあります。続きを読む: [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [WordPress hosting](/diensten/wordpress-hosting)。"
+        },
+        {
+          "id": "host-16",
+          "question": "i ノードとは何ですか?また、プランが「満杯」に見えるのはなぜですか?",
+          "answer": "inode は GB だけでなく、ファイル/フォルダーもカウントします。多くの小さなキャッシュ ファイルやメール ファイルは、ディスク領域がまだ空きがあるように見えても、制限に達する可能性があります。続きを読む: [Inodes](/kennisbank/hosting/inodes-en-inode-limieten) · [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)。"
+        },
+        {
+          "id": "host-17",
+          "question": "「無制限」のストレージまたはトラフィックとは何を意味しますか?",
+          "answer": "「無制限」はフェアユースに従います。Web サイトの通常の使用は問題ありません。プラットフォームの安定性を維持するために、乱用や極端な負荷が制限される場合があります。続きを読む: [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)。"
+        },
+        {
+          "id": "host-18",
+          "question": "共有、VPS、専用の違いは何ですか?",
+          "answer": "共有共有リソース。 VPS はより多くの CPU/RAM を分離します。専用とはサーバー全体です。トラフィック、制御ニーズ、予算に応じて選択してください。続きを読む: [Dedicated vs VPS vs shared](/kennisbank/infrastructuur-servers/verschil-tussen-dedicated-vps-en-shared-hosting) · [Shared/WP/VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)。"
+        },
+        {
+          "id": "host-19",
+          "question": "DirectAdmin を使用するにはどうすればよいですか?",
+          "answer": "DirectAdmin は、電子メール、DNS、データベース、バックアップ、インストール用のコントロール パネルです。パネルの認証情報を使用してログインします。 2FA を強くお勧めします。続きを読む: [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Backups](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)。"
+        },
+        {
+          "id": "host-20",
+          "question": "WordPress 用のオブジェクト キャッシュを提供していますか?",
+          "answer": "適切なプランでは、永続オブジェクト キャッシュをサポートして、データベース クエリを削減し、読み込みを高速化します。続きを読む: [Object cache](/kennisbank/hosting/persistent-object-cache-in-wordpress) · [WordPress hosting](/diensten/wordpress-hosting)。"
+        },
+        {
+          "id": "host-21",
+          "question": "ホスティングを更新または支払うにはどうすればよいですか?",
+          "answer": "クライアントポータルと請求書経由。多くの場合、自動更新が利用可能です。中断を避けるために、請求の詳細を最新の状態に保ちます。続きを読む: [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode) · [View invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)。"
+        },
+        {
+          "id": "host-22",
+          "question": "1 つのホスティング プランに複数のドメインを含めることはできますか?",
+          "answer": "多くの場合、プランの制限に応じて、アドオンまたはパーク ドメイン経由で可能です。接続とDNSをサポートします。続きを読む: [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Connect domain](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket)。"
+        },
+        {
+          "id": "host-23",
+          "question": "ホスティング パネルへのログインはどの程度安全ですか?",
+          "answer": "強力なパスワードを使用し、2FA を有効にします。安全でないチャネルを介してパネル ログインを共有しないでください。続きを読む: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)。"
+        },
+        {
+          "id": "host-24",
+          "question": "WordPress ホスティングとは正確には何ですか?",
+          "answer": "WordPress ホスティングは WP 向けに最適化されており、一般的な共有よりも高速な PHP/スタック、多くの場合 CDN、および簡単なインストール/更新が可能です。続きを読む: [WP hosting plans](/kennisbank/hosting/wat-is-wordpress-hosting-basic-plus-en-pro) · [WordPress hosting](/diensten/wordpress-hosting)。"
+        },
+        {
+          "id": "host-25",
+          "question": "ホスティングはどこに直接注文できますか?",
+          "answer": "ショップ内、または共有、クラウド、WordPress、および VPS ホスティング カテゴリ経由で。注文後、パネルと請求書にアクセスできるようになります。続きを読む: [Shop](/shop) · [Hosting overview](/diensten/categorie/hosting)。"
+        }
+      ]
+    },
+    {
+      "id": "email-dns",
+      "title": "電子メールとDNS",
+      "items": [
+        {
+          "id": "mail-1",
+          "question": "ドメインまたはホスティング付きの電子メールを提供していますか?",
+          "answer": "それはパッケージとセットアップによって異なります。信頼できるメール ソリューションをアドバイスし、DNS を正しく設定します (SPF、DKIM、DMARC)。続きを読む: [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress) · [SPF record](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)。"
+        },
+        {
+          "id": "mail-2",
+          "question": "SPF、DKIM、DMARCとは何ですか?",
+          "answer": "これらは、電子メール認証を処理し、スプーフィング/スパムを削減する DNS レコードです。正しい記録がないと、メールがスパムに分類されることが多くなります。続きを読む: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)。"
+        },
+        {
+          "id": "mail-3",
+          "question": "DNS レコードはどのように管理すればよいですか?",
+          "answer": "ドメインの DNS 管理またはホスティング パネルを介して、A、AAAA、CNAME、MX、および TXT レコードを設定します。移行とメール認証をサポートします。続きを読む: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [DNSSEC](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)。"
+        },
+        {
+          "id": "mail-4",
+          "question": "DNS の問題の解決に役立ちますか?",
+          "answer": "はい。 DNS が再び正しくなるまで、レコード、伝播、メール認証、およびドメイン接続を修正します。続きを読む: [Manage DNS records](/kennisbank/domeinnamen/dns-records-beheren) · [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen)。"
+        },
+        {
+          "id": "mail-5",
+          "question": "DNSSECとは何ですか?",
+          "answer": "DNSSEC は DNS 応答に署名するため、操作が困難になります。 TLD とセットアップがサポートしている場合は、それを有効にすることができます。続きを読む: [DNSSEC explained](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)。"
+        },
+        {
+          "id": "mail-6",
+          "question": "携帯電話で電子メールを設定するにはどうすればよいですか?",
+          "answer": "パネルから IMAP/SMTP 詳細を使用します。 Android (および同様に iOS) の場合、手順はナレッジ ベースにあります。続きを読む: [Email on Android](/kennisbank/e-mail/e-mail-instellen-op-android) · [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress)。"
+        },
+        {
+          "id": "mail-7",
+          "question": "電子メールが突然機能しなくなったらどうしますか?",
+          "answer": "DNS (MX/SPF/DKIM/DMARC)、メールボックス クォータ、プロバイダーがメールをブロックしているかどうかを確認します。私たちは完全なチェーンのトレースを支援します。続きを読む: [Email problems](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)。"
+        },
+        {
+          "id": "mail-8",
+          "question": "ネームサーバーはどのように機能するのでしょうか?",
+          "answer": "ネームサーバーは、ドメインにサービスを提供する DNS システムを決定します。変更した場合は、新しい DNS ホストで A/MX/TXT レコードを再度正しく設定する必要があります。続きを読む: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)。"
+        },
+        {
+          "id": "mail-9",
+          "question": "DNS の伝播にはどのくらい時間がかかりますか?",
+          "answer": "多くの場合、数分から数時間かかります。 TTL とキャッシュにより、場合によっては最大 24 ～ 48 時間かかる場合があります。切り替えを高速化するには、移行前に TTL を低くします。続きを読む: [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen) · [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet)。"
+        },
+        {
+          "id": "mail-10",
+          "question": "メールを別のアドレスに転送できますか?",
+          "answer": "はい。フォワーダーは受信メールを Gmail、Microsoft 365、または別のメールボックスに送信します。メールボックス全体と並行して、またはメールボックス全体の代わりに役立ちます。続きを読む: [Forward email](/kennisbank/e-mail/email-doorsturen-naar-mailadres)。"
+        },
+        {
+          "id": "mail-11",
+          "question": "自分のドメインを Microsoft 365 に接続できますか?",
+          "answer": "はい。 Microsoft の指示に従って MX および認証レコード (SPF/DKIM/DMARC) を設定します。私たちはDNS側でお手伝いします。続きを読む: [Domain to Microsoft 365](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-microsoft-365) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)。"
+        },
+        {
+          "id": "mail-12",
+          "question": "私のメールがスパムになってしまうのはなぜですか?",
+          "answer": "多くの場合、SPF/DKIM/DMARC が欠落しているか競合しているか、IP/レピュテーションが脆弱です。 DNS 認証と送信動作をチェックします。続きを読む: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)。"
+        },
+        {
+          "id": "mail-13",
+          "question": "MX レコードとは何ですか?",
+          "answer": "MX レコードは、どのメール サーバーがドメインの電子メールを受信できるかをインターネットに伝えます。正しい MX がないとメールは届きません。続きを読む: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Email problems](/kennisbank/hosting/problemen-met-e-mail-website)。"
+        },
+        {
+          "id": "mail-14",
+          "question": "ウェブメールは利用できますか?",
+          "answer": "はい、ホスティング パネルの Web メール URL を介して、電話や Outlook の IMAP と並行して、ブラウザでメールを読んだり送信したりできます。続きを読む: [Set up email](/kennisbank/e-mail/e-mail-instellen-op-android) · [Contact](/contact)。"
+        },
+        {
+          "id": "mail-15",
+          "question": "ホスティングが別の場所にある場合、DNS を使用する必要がありますか?",
+          "answer": "いいえ。A/MX/TXT が適切なサービスを指している限り、DNS を当社または他の場所で保持できます。一貫した管理により移行ミスを防ぎます。続きを読む: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Nameservers](/kennisbank/domeinnamen/nameservers-beheren)。"
         }
       ]
     }

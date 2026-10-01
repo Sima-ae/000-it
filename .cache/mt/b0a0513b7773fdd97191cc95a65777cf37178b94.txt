@@ -1,0 +1,1 @@
+Da. Prosljeđivanje domene šalje posjetitelje na drugi URL — korisno za nazive robnih marki bez zasebne web-lokacije. Usklađujemo DNS i preusmjeravanja s vašim postavkama. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

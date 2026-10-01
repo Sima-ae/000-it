@@ -1,0 +1,1 @@
+Pritja e WordPress është optimizuar për WP: PHP/stack më i shpejtë, shpesh CDN dhe instalime/azhurnime më të thjeshta se ato të përbashkëta të përgjithshme. Lexo më shumë: ⟦L0⟧ · ⟦L1⟧.

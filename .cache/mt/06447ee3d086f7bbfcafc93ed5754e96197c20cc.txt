@@ -1,0 +1,1 @@
+Kjo varet nga paketa. SSH është i disponueshëm ose mund të kërkohet në shumë plane; në VPS zakonisht keni akses të plotë. Lexo më shumë: ⟦L0⟧SSH Access⟦/L0⟧.

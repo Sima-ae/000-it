@@ -1,0 +1,1 @@
+Naudodami savo domeno DNS valdymą arba prieglobos skydelį, nustatote A, AAAA, CNAME, MX ir TXT įrašus. Padedame su migravimu ir pašto autentiškumu. Skaityti daugiau: ⟦L0⟧ · ⟦L1⟧.

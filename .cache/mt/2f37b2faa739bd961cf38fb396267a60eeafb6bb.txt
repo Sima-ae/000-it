@@ -1,0 +1,1 @@
+Kjo varet nga paketa dhe konfigurimi. Ne këshillojmë zgjidhje të besueshme të postës dhe vendosim saktë DNS (SPF, DKIM dhe DMARC). Lexo më shumë: ⟦L0⟧ · ⟦L1⟧.

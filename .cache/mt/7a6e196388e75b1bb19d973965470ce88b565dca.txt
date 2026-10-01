@@ -1,0 +1,1 @@
+DirectAdmin është paneli i kontrollit për email, DNS, baza të të dhënave, kopje rezervë dhe instalime. Hyni me detajet e panelit tuaj; Ne rekomandojmë fuqimisht 2FA. Lexo më shumë: ⟦L0⟧2FA në DirectAdmin⟦/L0⟧ · ⟦L1⟧Rezervime⟦/L1⟧.

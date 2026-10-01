@@ -1,0 +1,1 @@
+We work with firewall, SSL, updates, monitoring and hardening. Additional security services can add layers on top of this. Read more: ⟦L0⟧SSL⟦/L0⟧ · ⟦L1⟧2FA in DirectAdmin⟦/L1⟧.

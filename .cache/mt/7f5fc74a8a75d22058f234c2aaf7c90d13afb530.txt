@@ -1,0 +1,1 @@
+Sí, con roles de cuenta (cliente, gerente, administrador) para que varios miembros del equipo puedan realizar un seguimiento de los tickets o proyectos sin compartir todo.

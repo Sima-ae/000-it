@@ -1,0 +1,1 @@
+Ne. Možete zadržati DNS kod nas ili negdje drugdje, sve dok A/MX/TXT ukazuje na prave usluge. Dosljedno upravljanje sprječava pogreške pri migraciji. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

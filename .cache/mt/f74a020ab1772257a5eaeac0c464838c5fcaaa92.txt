@@ -1,0 +1,1 @@
+Mittaamme LCP:tä, INP:tä ja CLS:ää, ratkaisemme raskaat resurssit, isännöinti-/välimuisti- ja teemaongelmat ja linkitämme tämän tarvittaessa CDN:ään. Lue lisää: ⟦L0⟧ · ⟦L1⟧.

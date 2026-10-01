@@ -1,0 +1,1 @@
+Na vhodných plánech podporujeme trvalou mezipaměť objektů, abychom snížili databázové dotazy a urychlili načítání. Přečtěte si více: ⟦L0⟧ · ⟦L1⟧.

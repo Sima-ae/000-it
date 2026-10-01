@@ -1,0 +1,1 @@
+Inodes yalnız GB deyil, faylları/qovluqları sayar. Disk sahəsi hələ də boş görünsə də, bir çox kiçik keş və ya poçt faylları limiti keçə bilər. Daha ətraflı: ⟦L0⟧ · ⟦L1⟧.

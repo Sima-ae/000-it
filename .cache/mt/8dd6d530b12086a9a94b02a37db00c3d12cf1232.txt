@@ -1,0 +1,1 @@
+Da. Zatražite kod za autorizaciju (EPP) od svog trenutnog registratora, otključajte bilo koju blokadu prijenosa, a zatim započnite prijenos s nama. Nakon toga smo ispravno postavili DNS i nameservere. Pročitajte više: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

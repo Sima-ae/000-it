@@ -1,0 +1,1 @@
+Ve správě DNS/domény si vyberete naše nameservery nebo externí (například CDN). Množení může trvat hodiny až den. Přečtěte si více: ⟦L0⟧ · ⟦L1⟧.

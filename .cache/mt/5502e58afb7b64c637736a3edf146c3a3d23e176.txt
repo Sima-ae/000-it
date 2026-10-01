@@ -1,0 +1,1 @@
+Tarkista DNS (MX/SPF/DKIM/DMARC), postilaatikkokiintiö ja estävätkö Microsoft tai palveluntarjoajat postin. Autamme ketjun mittaamisessa. Lue lisää: ⟦L0⟧ · ⟦L1⟧.

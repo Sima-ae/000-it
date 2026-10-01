@@ -12,12 +12,12 @@
         {
           "id": "gen-1",
           "question": "Hvad gør TripleZero iT helt præcist?",
-          "answer": "TripleZero iT kombinerer webdesign, WordPress beheer, digital markedsføring, søgesynlighed (AEO, GEO/lokalt og SEO), design og hosting. Vi hjælper brands med at blive fundet hurtigere, bygge bedre hjemmesider og vokse på en målbar måde."
+          "answer": "TripleZero iT kombinerer webdesign, WordPress beheer, digital markedsføring, søgesynlighed (AEO, GEO/lokalt og SEO), design og hosting. Vi hjælper brands med at blive fundet hurtigere, bygge bedre hjemmesider og vokse på en målbar måde. [About us](/over-ons) · [Services](/diensten)"
         },
         {
           "id": "gen-2",
           "question": "Hvordan kommer jeg i gang med TripleZero iT?",
-          "answer": "Kontakt os eller book en tid. Vi kører et kort indtag, gennemgår mål og stabler, hvorefter vi udarbejder et konkret forslag med planlægning og KPI'er."
+          "answer": "Kontakt os eller book en tid. Vi kører et kort indtag, gennemgår mål og stabler, hvorefter vi udarbejder et konkret forslag med planlægning og KPI'er. [Schedule appointment](/afspraak) · [Contact](/contact)"
         },
         {
           "id": "gen-3",
@@ -73,6 +73,46 @@
           "id": "gen-13",
           "question": "Kan du overtage eller samarbejde med eksisterende leverandører?",
           "answer": "Ja. Vi arbejder gnidningsløst sammen med udviklere, marketingfolk eller bureauer, eller vi overtager vedligeholdelse og optimering uden unødigt at forstyrre eksisterende arbejde."
+        },
+        {
+          "id": "gen-14",
+          "question": "Hvad er Agent 000 (chatassistenten)?",
+          "answer": "Agent 000 er vores digitale assistent på siden og i supportflows. Han besvarer ofte stillede spørgsmål, peger på videnbaseartikler og kan henvise dig til live chat, en billet eller en aftale, når menneskelig hjælp er mere passende. Læs mere: [Digital assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Chat, ticket or call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "gen-15",
+          "question": "Hvordan planlægger jeg en aftale eller ringer?",
+          "answer": "Du kan vælge et tidspunkt, der passer dig, via aftalesiden. For hurtige spørgsmål kan du også bruge live chat eller en billet; en telefonisk aftale er nyttig til mere komplekse processer eller indtag. Læs mere: [Appointment](/afspraak) · [Call appointment explained](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)."
+        },
+        {
+          "id": "gen-16",
+          "question": "Hvor kan jeg se status for dine tjenester?",
+          "answer": "På statussiden viser vi hændelser og vedligeholdelse vedrørende hosting og relaterede ydelser, så du hurtigt kan se, om der sker noget. Læs mere: [Statuspage](/statuspage)."
+        },
+        {
+          "id": "gen-17",
+          "question": "Har du en videnbase?",
+          "answer": "Ja. Videnbasen indeholder manualer om domæner, DNS, e-mail, hosting, WordPress, AI-scanning, sikkerhed og mere - med trinvise forklaringer. Læs mere: [Knowledge base](/kennisbank)."
+        },
+        {
+          "id": "gen-18",
+          "question": "Hvordan håndterer du privatliv og cookies?",
+          "answer": "Vi arbejder GDPR-bevidst: privatlivstekster, samtykke til formularer og cookiebannere/samtykketilstand, hvor sporing er nødvendig. Til WordPress hjælper vi med en korrekt cookie-opsætning. Læs mere: [Cookie banner in WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress) · [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Privacy with forms](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren)."
+        },
+        {
+          "id": "gen-19",
+          "question": "Hvor kan jeg finde dine nyheder og opdateringer?",
+          "answer": "På nyhedssiden offentliggør vi opdateringer om produkter, sikkerhed og tips. For tekniske fejl, se statussiden. Læs mere: [News](/nieuws) · [Statuspage](/statuspage)."
+        },
+        {
+          "id": "gen-20",
+          "question": "Hvad koster det at arbejde med dig?",
+          "answer": "Det afhænger af blandingen: hosting og shoppingprodukter har faste priser; design, SEO, annoncer og retainers følger efter indtag. I butikken ser du pakker; vil du modtage et forslag til tilpasning. Læs mere: [Shop](/shop) · [Contact](/contact)."
+        },
+        {
+          "id": "gen-21",
+          "question": "Kan du også kun lave rådgivning eller revision?",
+          "answer": "Ja. Audits, AI-scanninger, tekniske gennemgange og sparringsessioner kan udføres separat fra en fuld-service proces. Du kan så gøre det selv eller lade os tage sig af det. Læs mere: [AI scan](/ai-scan) · [Services](/diensten)."
         }
       ]
     },
@@ -83,17 +123,17 @@
         {
           "id": "ai-1",
           "question": "Hvad er en AI-scanning hos TripleZero iT?",
-          "answer": "En AI-readiness-scanning vurderer, hvor godt dit websted kan findes af klassiske søgemaskiner, AI-svar og lokale eller geografiske søgeresultater (AEO, GEO, SEO og det tekniske grundlag)."
+          "answer": "En AI-readiness-scanning vurderer, hvor godt dit websted kan findes af klassiske søgemaskiner, AI-svar og lokale eller geografiske søgeresultater (AEO, GEO, SEO og det tekniske grundlag). [What is the AI ​​scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Start AI scan](/ai-scan)"
         },
         {
           "id": "ai-2",
           "question": "Hvad måler AI-scanningen præcist?",
-          "answer": "Scanningen måler AEO-signaler, GEO/lokal synlighed, SEO fundamentals, indholdsstruktur, præstationsindikatorer og AI-beredskab. Du får point og konkrete forbedringspoint."
+          "answer": "Scanningen måler AEO-signaler, GEO/lokal synlighed, SEO fundamentals, indholdsstruktur, præstationsindikatorer og AI-beredskab. Du får point og konkrete forbedringspoint. [Explain scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)"
         },
         {
           "id": "ai-3",
           "question": "Hvor ofte skal jeg køre en AI-scanning?",
-          "answer": "Som minimum efter større webstedsændringer eller kampagner. For aktive brands anbefaler vi periodiske scanninger, for eksempel hvert kvartal, så du forbliver synlig i søge- og AI-resultater."
+          "answer": "Som minimum efter større webstedsændringer eller kampagner. For aktive brands anbefaler vi periodiske scanninger, for eksempel hvert kvartal, så du forbliver synlig i søge- og AI-resultater. [Start AI scan](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website)"
         },
         {
           "id": "ai-4",
@@ -118,12 +158,12 @@
         {
           "id": "ai-8",
           "question": "Hvad er AI-beredskab for mit brand?",
-          "answer": "Det er i hvilken grad dit websted, indhold og data er sat op, så AI-systemer korrekt kan citere, anbefale og forklare dit brand."
+          "answer": "Det er i hvilken grad dit websted, indhold og data er sat op, så AI-systemer korrekt kan citere, anbefale og forklare dit brand. [AI readiness in the scan](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)"
         },
         {
           "id": "ai-9",
           "question": "Kan du bruge AI-agenter i dashboardet?",
-          "answer": "Ja. I kundeportalen ser du AI-agenter for SEO, indhold, sociale medier og annoncer - inklusive status og opgaver."
+          "answer": "Ja. I kundeportalen ser du AI-agenter for SEO, indhold, sociale medier og annoncer - inklusive status og opgaver. [What are AI agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Agents in your account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)"
         },
         {
           "id": "ai-10",
@@ -144,6 +184,46 @@
           "id": "ai-13",
           "question": "Hvordan måler jeg ROI af AI-initiativer?",
           "answer": "Gennem KPI'er såsom trafik, leads, sparet tid, indholdsoutput, billetopløsning og konvertering. Vi definerer dem på forhånd i planen, så resultaterne forbliver synlige."
+        },
+        {
+          "id": "ai-14",
+          "question": "Hvordan starter jeg en AI-scanning på min hjemmeside?",
+          "answer": "Gå til AI-scanningen, indtast din URL og start analysen. Du får score for AEO, GEO, SEO, ydeevne og AI-beredskab plus point for forbedring. Læs mere: [Start AI scan](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website) · [AI scan page](/ai-scan)."
+        },
+        {
+          "id": "ai-15",
+          "question": "Hvordan læser jeg AI-scanningsresultaterne?",
+          "answer": "Hver score viser, hvor stærk du er i det område; lav score kommer med konkrete tips. Brug scanningen som en prioritetsliste, ikke som et engangs \"rapportkort\". Læs mere: [Explain scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Next steps](/kennisbank/ai-scan/welke-vervolgstappen-zet-ik-na-mijn-ai-scan)."
+        },
+        {
+          "id": "ai-16",
+          "question": "Hvad er forskellen mellem en AI-scanning og en komplet AEO/GEO/SEO-proces?",
+          "answer": "Scanningen er en hurtig diagnose. En proces implementerer forbedringer: indhold, strukturerede data, teknisk SEO, lokale signaler og måling over tid. Læs mere: [Scan versus process](/kennisbank/ai-scan/ai-scan-versus-een-volledig-aeo-geo-seo-traject-wat-is-het-verschil) · [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-17",
+          "question": "Hvor kan jeg finde tidligere AI-scanninger på min konto?",
+          "answer": "Loggede kunder se tidligere scanninger og analyser i dashboardet (SEO-analyse), så du kan sammenligne fremskridt. Læs mere: [AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Account / dashboard](/dashboard)."
+        },
+        {
+          "id": "ai-18",
+          "question": "Hvad gør jeg efter en lav AEO- eller GEO-score?",
+          "answer": "Prioriter ofte stillede spørgsmål, enheder, strukturerede data (AEO) og Google Business Profile / NAP / lokale landingssider (GEO). Vi hjælper med at omsætte den køreplan til implementering. Læs mere: [Scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Local Discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "ai-19",
+          "question": "Hvordan arbejder AI-agenter i kundeportalen?",
+          "answer": "AI-agenter understøtter opgaver relateret til SEO, indhold, sociale medier eller annoncer. Du åbner oversigten på din konto, ser status og kan starte eller pause agenter i henhold til din pakke. Læs mere: [What are AI agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Open agents](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)."
+        },
+        {
+          "id": "ai-20",
+          "question": "Er AI-scanningen gratis?",
+          "answer": "Der er en tilgængelig indgang via AI-scanningssiden; dybere analyser og processer falder ind under services eller retainers. Efter scanningen vil du straks se, om en opfølgning er nyttig. Læs mere: [AI scan](/ai-scan) · [What is the AI ​​scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-21",
+          "question": "Hjælper Agent 000 også med AI- og SEO-spørgsmål?",
+          "answer": "Ja. Agent 000 bruger FAQ og vidensbase til at besvare AEO/GEO/SEO og AI-scanningsspørgsmål og links til de rigtige artikler eller menneskelig opfølgning. Læs mere: [Digital Assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [FAQ](/faq)."
         }
       ]
     },
@@ -154,17 +234,17 @@
         {
           "id": "seo-1",
           "question": "Hvad er forskellen mellem AEO, GEO og SEO?",
-          "answer": "AEO (Answer Engine Optimization) fokuserer på AI-svar. GEO (Geographic Search Engine Optimization) styrker lokal og regional synlighed i Maps, lokale pakker og lokationsbaseret søgning. SEO optimerer til klassiske søgemaskiner."
+          "answer": "AEO (Answer Engine Optimization) fokuserer på AI-svar. GEO (Geographic Search Engine Optimization) styrker lokal og regional synlighed i Maps, lokale pakker og lokationsbaseret søgning. SEO optimerer til klassiske søgemaskiner. [How AEO, GEO and SEO are related](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen) · [What is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization)"
         },
         {
           "id": "seo-2",
           "question": "Hvorfor betyder AEO/GEO noget nu?",
-          "answer": "Flere søgere får svar via AI og søger også lokalt (\"nær mig\"). Uden AEO savner du AI-citater; uden GEO går du glip af lokale kundeemner - selv når klassisk SEO er solid."
+          "answer": "Flere søgere får svar via AI og søger også lokalt (\"nær mig\"). Uden AEO savner du AI-citater; uden GEO går du glip af lokale kundeemner - selv når klassisk SEO er solid. [What is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant)"
         },
         {
           "id": "seo-3",
           "question": "Hvordan starter du et SEO-engagement?",
-          "answer": "Vi starter med en teknisk revision, søgeords- og hensigtsundersøgelser, en indholdsgap-analyse og en prioriteret køreplan knyttet til din virksomheds KPI'er."
+          "answer": "Vi starter med en teknisk revision, søgeords- og hensigtsundersøgelser, en indholdsgap-analyse og en prioriteret køreplan knyttet til din virksomheds KPI'er. [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)"
         },
         {
           "id": "seo-4",
@@ -174,7 +254,7 @@
         {
           "id": "seo-5",
           "question": "Laver du også lokal SEO?",
-          "answer": "Ja. Vi arbejder på Google Business Profile, lokale landingssider, NAP-konsistens, anmeldelser og lokale indholdsklynger, så du bliver fundet bedre i din region."
+          "answer": "Ja. Vi arbejder på Google Business Profile, lokale landingssider, NAP-konsistens, anmeldelser og lokale indholdsklynger, så du bliver fundet bedre i din region. [Improve local discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)"
         },
         {
           "id": "seo-6",
@@ -220,6 +300,36 @@
           "id": "seo-14",
           "question": "Hjælper du med international SEO?",
           "answer": "Ja. Vi håndterer hreflang, markedsundersøgelser pr. land eller sprog, indholdslokalisering og tekniske multi-locale opsætninger."
+        },
+        {
+          "id": "seo-15",
+          "question": "Hvad er AEO helt præcist?",
+          "answer": "AEO (Answer Engine Optimization) skaber indhold, så AI-svar og svarmotorer kan citere dit brand korrekt: klare ofte stillede spørgsmål, entiteter og strukturerede data. Læs mere: [What is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AEO, GEO and SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
+        },
+        {
+          "id": "seo-16",
+          "question": "Hvad er GEO (geografisk SEO)?",
+          "answer": "GEO styrker lokal og regional synlighed – kort, lokale pakker og lokationsbaseret søgning – gennem GBP, NAP-konsistens og lokalt indhold. Læs mere: [What is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant) · [Local discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "seo-17",
+          "question": "Hvordan bestiller eller starter jeg SEO-optimering?",
+          "answer": "Start med en AI-scanning eller revision, derefter et forslag med prioriteter. Du kan også kombinere SEO med indhold og tech via shop/services eller retainer. Læs mere: [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting) · [AI Scan](/ai-scan)."
+        },
+        {
+          "id": "seo-18",
+          "question": "Kan du hjælpe med struktureret data og FAQ-skema?",
+          "answer": "Ja. Vi laver relevante diagrammer (FAQ, Organisation, LocalBusiness, produkter) og strukturerer indhold, så søgemaskiner og AI forstår dig bedre. Læs mere: [AEO explanation](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AI scan scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)."
+        },
+        {
+          "id": "seo-19",
+          "question": "Hvad laver du med Core Web Vitals?",
+          "answer": "Vi måler LCP, INP og CLS, løser tunge aktiver, hosting/caching og temaproblemer og kobler dette til CDN, hvor det er nyttigt. Læs mere: [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [Choose Hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "seo-20",
+          "question": "Kan du kombinere SEO med hosting og WordPress-pleje?",
+          "answer": "Ja. Stabil hosting, opdateringer og ydeevne danner grundlaget; SEO bygger på det. Mange kunder kombinerer WP-care + hosting + løbende SEO. Læs mere: [Hosting](/diensten/categorie/hosting) · [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
         }
       ]
     },
@@ -291,6 +401,26 @@
           "id": "ads-13",
           "question": "Er remarketing stadig relevant?",
           "answer": "Ja, når det er kompatibelt med privatlivets fred og parret med stærke annoncemateriale og tilbud. Det forbliver ofte det mest effektive lag i tragten."
+        },
+        {
+          "id": "ads-14",
+          "question": "Hjælper du med samtykketilstand og cookiebannere til annoncer?",
+          "answer": "Ja. Uden korrekt samtykke og tagging er annoncemåling upålidelig. Vi forbinder pænt bannere, GTM/GA4 og pixels. Læs mere: [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Cookie banner WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "ads-15",
+          "question": "Kan du bygge landingssider til kampagner?",
+          "answer": "Ja – hurtige landingssider eller WordPress-sider skræddersyet til søgehensigter med sporing og grundlæggende CRO. Læs mere: [Services](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "ads-16",
+          "question": "Hvordan forhindrer du spildt annoncebudget?",
+          "answer": "Stram kontostruktur, negative søgeord, målgruppeekskluderinger, landingssidetilpasning og ugentlig optimering på CPA/ROAS – ikke kun klik."
+        },
+        {
+          "id": "ads-17",
+          "question": "Fungerer annoncer godt med AEO/SEO?",
+          "answer": "Ja. Annoncer leverer hurtig data og trafik; SEO/AEO skaber bæredygtig synlighed. Indsigt fra søgeord og annoncemateriale giver næring til indhold og destinationssider. Læs mere: [AEO, GEO and SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
         }
       ]
     },
@@ -362,6 +492,26 @@
           "id": "des-13",
           "question": "Hvor kan jeg lære mere om digitalt design?",
           "answer": "Mere information findes på /grafisk-design og via Grafisk design-tjenesterne i menuen."
+        },
+        {
+          "id": "des-14",
+          "question": "Leverer du også designsystemer og komponentbiblioteker?",
+          "answer": "Ja, for brands, der ønsker at skalere konsekvent: tokens, komponenter og dokumentation, så markedsføring og produkt taler samme sprog."
+        },
+        {
+          "id": "des-15",
+          "question": "Kan du digitalisere eksisterende brandstil?",
+          "answer": "Ja. Vi oversætter trykte eller ufuldstændige brandretningslinjer til webklare farver, typografi, UI-kit og skabeloner."
+        },
+        {
+          "id": "des-16",
+          "question": "Laver du UX-forskning eller blot visuelt design?",
+          "answer": "Begge. Hvor det er nødvendigt, starter vi med interviews, tragtanalyse eller heat maps; derefter UI. På denne måde designer vi baseret på adfærd, ikke kun på smag."
+        },
+        {
+          "id": "des-17",
+          "question": "Kan du designe sociale skabeloner og annoncemateriale?",
+          "answer": "Ja – karruseller, thumbnails, historier og annoncer, der matcher dit brand- og kampagnemål. Læs mere: [Services](/diensten)."
         }
       ]
     },
@@ -433,6 +583,26 @@
           "id": "mkt-13",
           "question": "Hvordan forhindrer du \"travlt markedsføring\" uden resultater?",
           "answer": "Hver aktivitet er knyttet til KPI'er. Underpræsterende taktikker stoppes eller forbedres med data, så budgettet går til det, der virker."
+        },
+        {
+          "id": "mkt-14",
+          "question": "Hvad er typisk inkluderet i en markedsføringsretainer?",
+          "answer": "En blanding af strategi, indhold eller SEO, kampagner, rapportering og eksperimenter - skræddersyet til KPI'er. Vi registrerer omfang og timer, så prioriteringerne forbliver klare. Læs mere: [Shop](/shop) · [Contact](/contact)."
+        },
+        {
+          "id": "mkt-15",
+          "question": "Hjælper du med positionering og beskeder?",
+          "answer": "Ja. Klar positionering, værdirekvisitter og sidekopi sikrer, at annoncer, SEO og salg formidler det samme budskab."
+        },
+        {
+          "id": "mkt-16",
+          "question": "Måler du markedsføring efter pipeline, ikke kun trafik?",
+          "answer": "Hvor det er muligt: ​​kundeemner, SQL'er, omsætning eller assisterede konverteringer. Vi justerer eller stopper trafikken uden kvalitet."
+        },
+        {
+          "id": "mkt-17",
+          "question": "Kan du rydde op i marketingstak og sporing?",
+          "answer": "Ja — GTM, GA4, pixels, CRM-links og samtykke. Rene data er grundlaget for gode beslutninger. Læs mere: [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen)."
         }
       ]
     },
@@ -504,6 +674,153 @@
           "id": "soc-13",
           "question": "Hvor hurtigt vil vi se vækst på det sociale område?",
           "answer": "Konsistens er vigtig. Betydelig vækst tager normalt uger til måneder; med annoncesupport går det ofte hurtigere."
+        },
+        {
+          "id": "soc-14",
+          "question": "Hjælper du med social proof og anmeldelser?",
+          "answer": "Ja. Vi planlægger anmeldelsesanmodninger, sager og UGC-lignende formater, der opbygger tillid - uden falsk engagement."
+        },
+        {
+          "id": "soc-15",
+          "question": "Kan du oprette medarbejderadvisering?",
+          "answer": "Ja, især på LinkedIn: enkle retningslinjer, skabeloner og en rytme, så teamet synligt deler ekspertise."
+        },
+        {
+          "id": "soc-16",
+          "question": "Hvordan linker du socialt til hjemmesiden og shoppen?",
+          "answer": "Via UTM'er, landingssider, produktlinks og retargeting. Social er en kanal i tragten, ikke en ø. Læs mere: [Shop](/shop)."
+        }
+      ]
+    },
+    {
+      "id": "account-portaal",
+      "title": "Konto og portal",
+      "items": [
+        {
+          "id": "acc-1",
+          "question": "Hvordan logger jeg ind på kundeportalen?",
+          "answer": "Gå til konto/login og brug mailadressen på din kundekonto. Hvis du har mistet data, skal du bruge nulstilling af adgangskode eller kontakte os. Læs mere: [Account](/dashboard) · [Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-2",
+          "question": "Hvad kan jeg se i mit dashboard?",
+          "answer": "Afhængigt af dine tjenester: billetter, projekter, fakturaer, AI-scanning/agenter og hurtige links til support. Læs mere: [AI agents in account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account) · [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "acc-3",
+          "question": "Jeg har mistet mine loginoplysninger - hvad nu?",
+          "answer": "Brug \"glemt din adgangskode\" eller følg vidensbasens trin for kundepanelet. Hvis det ikke virker, skal du åbne en billet via en kendt kontaktadresse. Læs mere: [Lost login details](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-4",
+          "question": "Hvordan åbner jeg en billet fra portalen?",
+          "answer": "I kundepanelet, vælg support/billetter, beskriv dit problem og tilføj bevis (URL, skærmbilleder). Læs mere: [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "acc-5",
+          "question": "Hvor kan jeg finde mine fakturaer?",
+          "answer": "Du kan se og downloade fakturaer i portalen under fakturering/fakturering. Læs mere: [Consult invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "acc-6",
+          "question": "Hvordan ændrer jeg faktureringsoplysninger eller betalingsmetode?",
+          "answer": "Tilpas firmanavn, momsnummer og betalingsmetode i dine kontoindstillinger, så nye fakturaer er korrekte. Læs mere: [Change invoice details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "acc-7",
+          "question": "Kan kolleger også have adgang?",
+          "answer": "Ja, med kontoroller (klient, manager, administrator), så flere teammedlemmer kan spore billetter eller projekter uden at dele alt."
+        },
+        {
+          "id": "acc-8",
+          "question": "Er AI-scanning og AI-agenter knyttet til min konto?",
+          "answer": "Ja. Scanninger og agenter hører til din kundekonto, så historik og rettigheder bevares. Læs mere: [AI agents](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "acc-9",
+          "question": "Hvor sikker er min kundekonto?",
+          "answer": "Brug unikke adgangskoder og 2FA, hvor det er tilgængeligt (inklusive på hostingpaneler). Del ikke sessioner på delte computere. Læs mere: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
+        },
+        {
+          "id": "acc-10",
+          "question": "Kan jeg spore projektstatus og leverancer?",
+          "answer": "Hvor projekter er listet i portalen, kan du se status og kommunikation. Ellers holder vi dig orienteret via billetter eller sprintopdateringer."
+        },
+        {
+          "id": "acc-11",
+          "question": "Hvordan forbinder jeg tjenester fra butikken til min konto?",
+          "answer": "Efter kassen hører ordrer til din konto; provisionering (hosting, domæne) følger automatisk eller via onboarding af support. Læs mere: [Shop](/shop)."
+        },
+        {
+          "id": "acc-12",
+          "question": "Hvor angiver jeg meddelelser eller præferencer?",
+          "answer": "I kontoindstillinger administrerer du profil og, hvor tilgængelige underretningspræferencer. For faktura-e-mails skal du holde din e-mailadresse opdateret."
+        }
+      ]
+    },
+    {
+      "id": "shop-bestellen",
+      "title": "Shop og bestilling",
+      "items": [
+        {
+          "id": "shop-1",
+          "question": "Hvad kan jeg bestille i butikken?",
+          "answer": "Hostingpakker, domæner, pleje/supportprodukter og andre tjenester, som vi tilbyder online. Tilpassede tilbud laves via kontakt. Læs mere: [Shop](/shop) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "shop-2",
+          "question": "Hvordan fungerer indkøbskurven og kassen?",
+          "answer": "Tilføj produkter, tjek periode (måned/år) og udfyld via kassen. Du vil derefter modtage bekræftelse og adgang til din konto. Læs mere: [Shopping cart](/shop/cart)."
+        },
+        {
+          "id": "shop-3",
+          "question": "Er priserne inklusive eller eksklusive moms?",
+          "answer": "I butikken viser vi priser efter den viste momskontekst (ofte inkl. for forbrugerstrømme). Fakturaen indeholder en nettomomsopdeling for erhvervskunder."
+        },
+        {
+          "id": "shop-4",
+          "question": "Kan jeg betale månedligt eller årligt?",
+          "answer": "Mange hosting- og plejeprodukter har månedlige og årlige muligheder. Årligt er ofte billigere; detaljer er pr. produktkort."
+        },
+        {
+          "id": "shop-5",
+          "question": "Hvilke betalingsmetoder accepterer du?",
+          "answer": "Almindelige online metoder via kassen (afhængigt af region). For virksomhedsfakturaer kan vi arrangere acontofakturering via kontakt."
+        },
+        {
+          "id": "shop-6",
+          "question": "Får jeg adgang med det samme efter betaling?",
+          "answer": "For standard hosting-/domæneprodukter følger leveringen hurtigt efter vellykket betaling. For tilpassede tjenester planlægger support kick-off."
+        },
+        {
+          "id": "shop-7",
+          "question": "Kan jeg opgradere pakker senere?",
+          "answer": "Ja. Fra delt til cloud/VPS eller fra Basic til Plus/Business er muligt med migrationsplanlægning. Læs mere: [Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [Choose package](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "shop-8",
+          "question": "Hvordan kombinerer jeg butiksprodukter med tilpasning?",
+          "answer": "Bestil hosting/pleje online og planlæg design, SEO eller annoncer via indtag. Vi samler fakturering og konto, hvor det er muligt. Læs mere: [Contact](/contact)."
+        },
+        {
+          "id": "shop-9",
+          "question": "Hvad hvis min ordre ikke ankommer eller sidder fast?",
+          "answer": "Tjek din e-mail (inklusive spam) og portalen. Hvis det forbliver stille, skal du åbne en billet eller e-mail support med ordrenummer. Læs mere: [Contact](/contact) · [Tickets](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "shop-10",
+          "question": "Kan jeg bestille et domæne og hosting i én rækkefølge?",
+          "answer": "Ja, det er det sædvanlige flow: domæne + hosting i indkøbskurven, derefter DNS-forbindelse. Læs mere: [Domains](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "shop-11",
+          "question": "Er der pakker til WordPress Care?",
+          "answer": "Ja. Plejepakker dækker opdateringer, overvågning og vedligeholdelse - separat eller som supplement til hosting. Læs mere: [Shop](/shop)."
+        },
+        {
+          "id": "shop-12",
+          "question": "Hvordan annullerer eller ændrer jeg en ordre?",
+          "answer": "Umiddelbart efter bestilling via support; Derefter gælder fortrydelses- og ændringsbetingelser pr. produkt. Vi hjælper migrering eller eksport, hvis du stopper. Læs mere: [Contact](/contact)."
         }
       ]
     },
@@ -514,12 +831,12 @@
         {
           "id": "sup-1",
           "question": "Hvilken støtte tilbyder du?",
-          "answer": "Vi tilbyder WordPress beheer, brugerdefineret webstedssupport, billetter og live chat, vedligeholdelse, sikkerhed, ydeevne og hændelsesrespons."
+          "answer": "Vi tilbyder WordPress beheer, brugerdefineret webstedssupport, billetter og live chat, vedligeholdelse, sikkerhed, ydeevne og hændelsesrespons. [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting) · [Chat, ticket or call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)"
         },
         {
           "id": "sup-2",
           "question": "Hvordan når jeg support?",
-          "answer": "Via kontakt, en aftale, billetter i dashboardet eller live chat på siden. Hastesager markeres som prioritet."
+          "answer": "Via kontakt, en aftale, billetter i dashboardet eller live chat på siden. Hastesager markeres som prioritet. [Contact](/contact) · [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Call appointment](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)"
         },
         {
           "id": "sup-3",
@@ -529,7 +846,7 @@
         {
           "id": "sup-4",
           "question": "Tilbyder du overvågning 24/7?",
-          "answer": "Ja, i relevante support- og hostingpakker: overvågning, backup og advarsler, så problemer bliver synlige tidligere."
+          "answer": "Ja, i relevante support- og hostingpakker: overvågning, backup og advarsler, så problemer bliver synlige tidligere. [Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup)"
         },
         {
           "id": "sup-5",
@@ -539,22 +856,22 @@
         {
           "id": "sup-6",
           "question": "Håndterer du WordPress-opdateringer for os?",
-          "answer": "Ja, via \"Vedligeholdelse og opdateringer\": kerne, plugins og temaer, med backup og kontrol før og efter vi opdaterer."
+          "answer": "Ja, via \"Vedligeholdelse og opdateringer\": kerne, plugins og temaer, med backup og kontrol før og efter vi opdaterer. [Site down after WP update](/kennisbank/hosting/website-down-na-update-wordpress)"
         },
         {
           "id": "sup-7",
           "question": "Hjælper du med hostingproblemer?",
-          "answer": "Ja. Vi diagnosticerer, migrerer eller optimerer hosting, VPS og domæner, indtil siden kører stabilt igen."
+          "answer": "Ja. Vi diagnosticerer, migrerer eller optimerer hosting, VPS og domæner, indtil siden kører stabilt igen. [Move website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je)"
         },
         {
           "id": "sup-8",
           "question": "Hvad hvis mit websted er nede?",
-          "answer": "Rapporter det som akut. Vi gendanner hvor det er muligt via backups, servertjek og et hotfix, og holder dig opdateret om status undervejs."
+          "answer": "Rapporter det som akut. Vi gendanner hvor det er muligt via backups, servertjek og et hotfix, og holder dig opdateret om status undervejs. [Backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [Check yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support)"
         },
         {
           "id": "sup-9",
           "question": "Er der en kundeportal?",
-          "answer": "Ja. Loggede kunder ser dashboard, billetter, projekter og hvor relevant CRM eller fakturaer."
+          "answer": "Ja. Loggede kunder ser dashboard, billetter, projekter og hvor relevant CRM eller fakturaer. [Ticket via customer panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel) · [Lost login?](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)"
         },
         {
           "id": "sup-10",
@@ -575,6 +892,56 @@
           "id": "sup-13",
           "question": "Kan jeg opgradere support senere?",
           "answer": "Ja. Du kan skalere op, når trafik, risiko eller teambehov vokser."
+        },
+        {
+          "id": "sup-14",
+          "question": "Hvad er forskellen mellem chat, billet og samtale?",
+          "answer": "Chat er hurtig til korte spørgsmål; billetter er bedre til tekniske sager med logs og opfølgning; en telefonsamtale er velegnet til en optagelse eller kompleks forklaring. Læs mere: [Chat versus ticket versus call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "sup-15",
+          "question": "Hvordan opretter jeg en supportbillet?",
+          "answer": "Log ind på kundepanelet og åbn en billet med tydelig URL, trin og skærmbilleder. Jo bedre information, jo hurtigere kan vi hjælpe. Læs mere: [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "sup-16",
+          "question": "Har du sikkerhedskopier, hvis min side går ned?",
+          "answer": "Ja, afhængigt af din hosting- eller supportpakke. I tilfælde af nedetid gendanner vi fra backups, hvor det er muligt, og undersøger årsagen. Læs mere: [Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor)."
+        },
+        {
+          "id": "sup-17",
+          "question": "Hvad kan jeg selv tjekke, før jeg ringer til support?",
+          "answer": "Tjek statusside, DNS-udbredelse, seneste opdateringer, diskplads og om fejlen er reproducerbar. Det fremskynder diagnosen. Læs mere: [Do it yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support) · [Statuspage](/statuspage)."
+        },
+        {
+          "id": "sup-18",
+          "question": "Hvordan fungerer live chat på siden?",
+          "answer": "Åbn live chat via chat-knappen. Agent 000 hjælper først med FAQ/vidensbase; Ved mere komplekse eller akutte sager henviser vi til en medarbejder. Læs mere: [Digital Assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Contact](/contact)."
+        },
+        {
+          "id": "sup-19",
+          "question": "Kan du hjælpe med en kritisk WordPress-fejl?",
+          "answer": "Ja. Vi diagnosticerer hvide skærme, kritiske PHP-fejl og plugin-konflikter med backup og målrettet rettelse. Læs mere: [Critical Error WordPress](/kennisbank/wordpress/kritieke-fout-wordpress) · [Down after update](/kennisbank/hosting/website-down-na-update-wordpress)."
+        },
+        {
+          "id": "sup-20",
+          "question": "Kan du se på afstand (TeamViewer osv.)?",
+          "answer": "Hvor det er nødvendigt og med tilladelse, til skrivebords- eller panelproblemer. Til de fleste hostingspørgsmål er adgang til panel, DNS eller WordPress tilstrækkelig. Læs mere: [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "sup-21",
+          "question": "Hvordan opsiger jeg et abonnement eller en tjeneste?",
+          "answer": "Du kan annullere via kundepanelet eller support; vær opmærksom på opsigelsesfrister i din aftale. Vi hjælper dig med at gennemføre data/eksport og DNS-overførsel pænt. Læs mere: [Contact](/contact) · [Account](/dashboard)."
+        },
+        {
+          "id": "sup-22",
+          "question": "Tilbyder du WordPress Care/vedligeholdelsespakker?",
+          "answer": "Ja. Opdateringer, sikkerhedskopier, sikkerhedstjek og ydeevne er inkluderet i plejepakker - ideel som supplement til hosting. Læs mere: [Shop](/shop) · [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren)."
+        },
+        {
+          "id": "sup-23",
+          "question": "Hvad hvis e-mail pludselig holder op med at virke?",
+          "answer": "Tjek DNS (MX/SPF/DKIM/DMARC), postkassekvote og om Microsoft eller udbydere blokerer mail. Vi hjælper med at måle kæden. Læs mere: [Email Problems](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
         }
       ]
     },
@@ -585,7 +952,7 @@
         {
           "id": "web-1",
           "question": "Bygger du kun WordPress-sider?",
-          "answer": "Nej. Udover WordPress laver vi brugerdefineret webdesign i HTML/CSS/JS, PHP og Next.js - adskilt fra WordPress-tjenesterne."
+          "answer": "Nej. Udover WordPress laver vi brugerdefineret webdesign i HTML/CSS/JS, PHP og Next.js - adskilt fra WordPress-tjenesterne. [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [Services](/diensten)"
         },
         {
           "id": "web-2",
@@ -635,7 +1002,7 @@
         {
           "id": "web-11",
           "question": "Hvad med ydeevne efter lancering?",
-          "answer": "Vi optimerer Core Web Vitals, caching eller CDN og overvågning. Efterbehandlingen fortsætter derefter via vedligeholdelsespakker."
+          "answer": "Vi optimerer Core Web Vitals, caching eller CDN og overvågning. Efterbehandlingen fortsætter derefter via vedligeholdelsespakker. [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)"
         },
         {
           "id": "web-12",
@@ -651,87 +1018,349 @@
           "id": "web-14",
           "question": "Hjælper du med konverteringsoptimering på stedet?",
           "answer": "Ja. Vi kører A/B-tests, UX-forbedringer, formularer, CTA'er og sidehastighed, så flere besøgende konverterer."
+        },
+        {
+          "id": "web-15",
+          "question": "Bygger du også webshops?",
+          "answer": "Ja, fra marketingwebsteder med checkout-integrationer til e-handel på WordPress eller tilpasning. Vi koordinerer omfang, betalinger og opfyldelse under optagelsen. Læs mere: [Services](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "web-16",
+          "question": "Hvordan håndterer du privatlivstekster på websteder?",
+          "answer": "Vi rådgiver og implementerer privatlivs- og samtykkestrømme til formularer og bannere, skræddersyet til din advokat, hvor det er nødvendigt. Læs mere: [Privacy with forms](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren) · [Cookie banner](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "web-17",
+          "question": "Tilbyder du iscenesættelsesmiljøer?",
+          "answer": "Ja, hvor det er relevant: iscenesættelse til anmeldelser og test, derefter kontrolleret udrulning til produktion."
+        },
+        {
+          "id": "web-18",
+          "question": "Kan du overtage og forbedre et eksisterende WordPress-websted?",
+          "answer": "Ja — revision, opdateringer, sikkerhed, hastighed, UX og SEO, uden at bygge unødigt fra bunden. Læs mere: [WP move](/kennisbank/domeinnamen/wordpress-website-verhuizen) · [Critical errors](/kennisbank/wordpress/kritieke-fout-wordpress)."
+        },
+        {
+          "id": "web-19",
+          "question": "Hvad med HTTP til HTTPS efter levering?",
+          "answer": "Websteder er som standard HTTPS. Under migreringer tvinger vi HTTPS og løser blandet indhold. Læs mere: [HTTP to HTTPS in WordPress](/kennisbank/wordpress/wordpress-url-omzetten-van-http-naar-https) · [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig)."
+        }
+      ]
+    },
+    {
+      "id": "domeinen",
+      "title": "Områder",
+      "items": [
+        {
+          "id": "dom-1",
+          "question": "Hvad er et domænenavn?",
+          "answer": "Et domænenavn er den adresse, besøgende bruger til at finde dit websted (f.eks. example.com). Det knytter sig til DNS-poster, der peger på din hosting eller e-mail. Læs mere: [Domain registration](/kennisbank/domeinnamen/domeinnaamregistratie) · [Order domains](/domeinen)."
+        },
+        {
+          "id": "dom-2",
+          "question": "Hvordan registrerer jeg et domænenavn hos dig?",
+          "answer": "Søg efter navnet på domænesiden, vælg en udvidelse og gennemfør kassen i butikken. Efter registrering administrerer du DNS, navneservere og fakturaer på din konto. Læs mere: [Domains](/domeinen) · [Registration guide](/kennisbank/domeinnamen/domeinnaamregistratie) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-3",
+          "question": "Kan jeg overføre mit domæne til dig?",
+          "answer": "Ja. Anmod om en godkendelseskode (EPP) fra din nuværende registrator, lås enhver overførselslås op, og start derefter overførslen med os. Derefter indstiller vi DNS og navneservere korrekt. Læs mere: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Authorisation code](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-4",
+          "question": "Hvad er en autorisationskode (EPP/Auth-kode)?",
+          "answer": "Det er en engangskode fra din nuværende registrator, der sikkert starter en domæneoverførsel. Uden en gyldig kode kan overførslen ikke fortsætte. Læs mere: [What is an authorisation code?](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen)."
+        },
+        {
+          "id": "dom-5",
+          "question": "Hvad er en overførselslås eller registratorlås?",
+          "answer": "En lås forhindrer uønskede overførsler. Ved en flytning skal du ofte først slå den fra hos den nuværende udbyder, og derefter starte overførslen hos os. Læs mere: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Support](/contact)."
+        },
+        {
+          "id": "dom-6",
+          "question": "Kan jeg købe et domæne uden hosting?",
+          "answer": "Ja. Du kan kun registrere eller overføre et domæne og tilføje hosting eller e-mail senere. Du kan allerede administrere eller videresende DNS i mellemtiden. Læs mere: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-7",
+          "question": "Hvilke udvidelser (.nl, .com, …) kan jeg registrere?",
+          "answer": "Vi understøtter almindelige TLD'er såsom .nl og .com plus mange internationale udvidelser. Tilgængelighed og pris vises med det samme i domænesøgningen. Læs mere: [Domains](/domeinen) · [Registration](/kennisbank/domeinnamen/domeinnaamregistratie)."
+        },
+        {
+          "id": "dom-8",
+          "question": "Hvordan fornyer jeg mit domænenavn?",
+          "answer": "Fornyelse foregår gennem fakturaer og din kundeportal; automatisk fornyelse er ofte tilgængelig. Hold betalingsoplysninger opdateret for at undgå udløb. Læs mere: [Invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails) · [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "dom-9",
+          "question": "Hvad er premium domænenavne?",
+          "answer": "Premium-navne er korte eller populære domæner med en højere købspris, ofte via et eftermarked. Tilgængelighed og vilkår varierer i forlængelse. Læs mere: [Premium domains](/kennisbank/domeinnamen/premium-domeinnamen) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-10",
+          "question": "Kan jeg registrere mit domæne anonymt (Protect ID)?",
+          "answer": "Hvor registreringsdatabasen tillader det, kan du overveje privatliv/Protect ID. Reglerne adskiller sig i forlængelse af — .nl, for eksempel, har sin egen ramme. Læs mere: [Protect ID](/kennisbank/domeinnamen/protect-id-domein-anoniem-registreren)."
+        },
+        {
+          "id": "dom-11",
+          "question": "Mit domæne er i karantæne - hvad nu?",
+          "answer": "Efter sletning kan et domæne komme i karantæne. Afhængigt af registreringsdatabasen kan du ofte genaktivere det mod et gebyr; vent ikke for længe. Læs mere: [Domain out of quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-12",
+          "question": "Mit nye domænenavn virker ikke endnu - hvad nu?",
+          "answer": "Normalt er det DNS-udbredelse, manglende A/MX-poster eller navneservere, der ikke er opdateret endnu. Tjek poster og tillad TTL'er at udløbe. Læs mere: [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-13",
+          "question": "Hvordan forbinder jeg et domæne til min hostingplan?",
+          "answer": "Tilføj domænet i dit panel eller din konto, og peg DNS (A-post eller navneservere) til hostingen. Vi hjælper med første tilslutning efter bestilling. Læs mere: [Connect domain to plan](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-14",
+          "question": "Kan jeg videresende et domæne?",
+          "answer": "Ja. Domænevideresendelse sender besøgende til en anden URL - nyttigt for mærkenavne uden et separat websted. Vi tilpasser DNS og omdirigeringer med din opsætning. Læs mere: [Forward a domain](/kennisbank/domeinnamen/domeinnaam-doorsturen) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-15",
+          "question": "Hvordan ændrer jeg navneservere for mit domæne?",
+          "answer": "I DNS/domæneadministration vælger du vores navneservere eller eksterne (for eksempel et CDN). Formering kan tage timer op til en dag. Læs mere: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-16",
+          "question": "Hvad koster et domænenavn?",
+          "answer": "Priserne varierer efter forlængelse og periode; domænesøgningen viser aktuelle registrerings- og fornyelsespriser. Premium-navne har en særskilt pris. Læs mere: [Domains](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-17",
+          "question": "Skal hosting og domæne være hos samme udbyder?",
+          "answer": "Nej, men det er mere enkelt: DNS, SSL, e-mail og support sidder så hos én part. Du kan også kun beholde DNS hos os og hoste andre steder. Læs mere: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "dom-18",
+          "question": "Kan jeg administrere flere domæner på én konto?",
+          "answer": "Ja. Ekstra domæner kan registreres eller overføres og linkes som tilføjelse, parkeres eller videresendes - inden for din hostingplans grænser. Læs mere: [Domains](/domeinen) · [Choose a hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "dom-19",
+          "question": "Hvad sker der, hvis mit domæne udløber?",
+          "answer": "Efter udløb er der ofte en henstands- eller karantæneperiode, hvor inddrivelse stadig er mulig; bagefter kan en anden gøre krav på det. Forny til tiden via fakturaer. Læs mere: [Quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-20",
+          "question": "Hvor bestiller eller administrerer jeg domæner?",
+          "answer": "Registrer og overfør via domænesiden eller shoppen; ledelse (DNS, fakturaer, fornyelse) bor i kundeportalen. Læs mere: [Domains](/domeinen) · [Shop](/shop) · [Account](/dashboard)."
         }
       ]
     },
     {
       "id": "webhosting",
-      "title": "Webhosting og domæner",
+      "title": "Webhosting",
       "items": [
         {
           "id": "host-1",
           "question": "Hvilken hosting tilbyder du?",
-          "answer": "Vi tilbyder delt hosting, WordPress-hosting og VPS – i Basic, Plus og Business-niveauer – plus domæner."
+          "answer": "Vi tilbyder delt hosting, cloud-hosting, WordPress-hosting og VPS – plus domæneregistrering. Vælg baseret på trafik, stak og vækst. Læs mere: [Shared hosting](/diensten/shared-hosting) · [Cloud hosting](/diensten/cloud-hosting) · [WordPress hosting](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-2",
-          "question": "Hvad er forskellen mellem delt, WordPress og VPS?",
-          "answer": "Shared er omkostningseffektiv for mindre websteder. WordPress-hosting er optimeret til WP. VPS giver flere ressourcer og kontrol til tungere belastninger."
+          "question": "Hvad er forskellen mellem delt, cloud, WordPress og VPS?",
+          "answer": "Shared er omkostningseffektiv for mindre websteder. Cloud giver flere ressourcer og skalerbarhed, fuldt administreret. WordPress-hosting er optimeret til WP. VPS giver mere kontrol til tungere belastninger. Læs mere: [Differences explained](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps) · [Shared plans](/kennisbank/hosting/wat-is-shared-hosting-basic-plus-en-business) · [VPS plans](/kennisbank/hosting/wat-is-vps-hosting-basic-plus-en-business)."
         },
         {
           "id": "host-3",
-          "question": "Hjælper du med domæneregistrering?",
-          "answer": "Ja. Vi rådgiver, registrerer eller overfører domænet og forbinder DNS korrekt."
+          "question": "Hvad er cloud-hosting hos dig?",
+          "answer": "Cloud-hosting giver flere ressourcer og skalerbarhed end klassisk delt, mens vi bliver ved med at administrere det. Ideel, når delt bliver stramt, men fuld VPS er ikke nødvendig endnu. Læs mere: [Cloud hosting](/diensten/cloud-hosting) · [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
         },
         {
           "id": "host-4",
           "question": "Er SSL inkluderet i hosting?",
-          "answer": "Ja. SSL er standard i vores relevante hostingplaner."
+          "answer": "Ja. SSL er standard i vores relevante hostingplaner, så websteder kører på HTTPS. Læs mere: [What is SSL?](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [Install Let's Encrypt](/kennisbank/hosting/hoe-installeer-ik-een-gratis-lets-encrypt-ssl-certificaat)."
         },
         {
           "id": "host-5",
           "question": "Kan du migrere mit websted til din hosting?",
-          "answer": "Ja. Vi håndterer backup, migration, DNS cutover, SSL og røgtest med minimal nedetid."
+          "answer": "Ja. Vi håndterer backup, migration, DNS cutover, SSL og røgtest med minimal nedetid. Læs mere: [Migrate website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je) · [Migrate WordPress](/kennisbank/domeinnamen/wordpress-website-verhuizen)."
         },
         {
           "id": "host-6",
           "question": "Hvordan fungerer backups på hosting?",
-          "answer": "Det afhænger af planen: simple eller automatiserede sikkerhedskopier. Ekstra retention er tilgængelig."
+          "answer": "Det afhænger af planen: simple eller automatiserede sikkerhedskopier. Ekstra retention er tilgængelig. Læs mere: [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor) · [Backup in DirectAdmin](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
         },
         {
           "id": "host-7",
           "question": "Hvad hvis jeg får mere trafik?",
-          "answer": "Så skalerer vi til Plus, Business eller VPS og optimerer caching og CDN, så siden kan håndtere væksten."
+          "answer": "Så skalerer vi til Plus, Business, cloud eller VPS og optimerer caching og CDN, så siden kan håndtere vækst. Læs mere: [When to move to VPS?](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)."
         },
         {
           "id": "host-8",
-          "question": "Tilbyder du e-mail med domæner?",
-          "answer": "Det afhænger af pakken og opsætningen. Vi rådgiver pålidelige mailløsninger og indstiller DNS korrekt (SPF, DKIM og DMARC)."
+          "question": "Hvor sikker er din hosting?",
+          "answer": "Vi bruger firewall, SSL, opdateringer, overvågning og hærdning. Ekstra sikkerhedslag er tilgængelige, hvor det er nødvendigt. Læs mere: [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
         },
         {
           "id": "host-9",
-          "question": "Hvor sikker er din hosting?",
-          "answer": "Vi bruger firewall, SSL, opdateringer, overvågning og hærdning. Ekstra sikkerhedstjenester kan tilføje flere lag oveni."
+          "question": "Kan jeg flytte fra delt til VPS senere?",
+          "answer": "Ja. Vi planlægger migreringen sammen, inklusive test og rollback, så switchen forbliver kontrolleret. Læs mere: [Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [VPS hosting](/diensten/vps-hosting)."
         },
         {
           "id": "host-10",
-          "question": "Kan jeg flytte fra delt til VPS senere?",
-          "answer": "Ja. Vi planlægger migreringen sammen, inklusive test og rollback, så switchen forbliver kontrolleret."
+          "question": "Understøtter du CDN?",
+          "answer": "Ja, hvor det er relevant - ofte er et gratis CDN inkluderet i WP-hostingplaner - for hurtigere global levering. Læs mere: [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [WordPress hosting](/diensten/wordpress-hosting)."
         },
         {
           "id": "host-11",
-          "question": "Understøtter du CDN?",
-          "answer": "Ja, hvor det er relevant - ofte er et gratis CDN inkluderet i WP-hostingplaner - for hurtigere global levering."
+          "question": "Hvad er din oppetidstilgang?",
+          "answer": "Vi overvåger, reagerer hurtigt på hændelser og kommunikerer tydeligt omkring vedligeholdelsesvinduer, så du ved, hvad der sker. Statusopdateringer er på statussiden. Læs mere: [Status page](/statuspage) · [Contact](/contact)."
         },
         {
           "id": "host-12",
-          "question": "Hvad er din oppetidstilgang?",
-          "answer": "Vi overvåger, reagerer hurtigt på hændelser og kommunikerer tydeligt omkring vedligeholdelsesvinduer, så du ved, hvad der sker."
+          "question": "Hvordan vælger jeg den rigtige hostingplan?",
+          "answer": "Baseret på trafik, stak (WordPress eller brugerdefineret), ressourcer og vækst. Vi rådgiver ærligt - vi oversælger ikke. Læs mere: [Choose the right hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Shared vs WP vs VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
         },
         {
           "id": "host-13",
-          "question": "Hjælper du med at løse DNS-problemer?",
-          "answer": "Ja. Vi retter optegnelser, udbredelse, mailgodkendelse og domæneforbindelser, indtil DNS er korrekt igen."
+          "question": "Hvor kan jeg se hostingpriser?",
+          "answer": "På hostingservicesiderne og i butikken, med månedlige eller årlige muligheder, hvor det er relevant. Læs mere: [Shared](/diensten/shared-hosting) · [Cloud](/diensten/cloud-hosting) · [WordPress](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting) · [Shop](/shop)."
         },
         {
           "id": "host-14",
-          "question": "Hvordan vælger jeg den rigtige hostingplan?",
-          "answer": "Baseret på trafik, stak (WordPress eller brugerdefineret), ressourcer og vækst. Vi rådgiver ærligt - vi oversælger ikke."
+          "question": "Får jeg SSH-adgang på min hosting?",
+          "answer": "Det afhænger af planen. På mange planer er SSH tilgængelig eller kan rekvireres; på VPS får du typisk fuld adgang. Læs mere: [SSH access](/kennisbank/hosting/heb-ik-ssh-toegang-op-mijn-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-15",
-          "question": "Hvor kan jeg se hostingpriser?",
-          "answer": "På hostingtjenestesiderne under Tjenester → Webhosting og domæner, med månedlige eller årlige muligheder, hvor det er relevant."
+          "question": "Hvordan installerer jeg WordPress på din hosting?",
+          "answer": "Via kontrolpanelet (f.eks. DirectAdmin/Installatron) eller manuelt. Vi har en trin-for-trin guide. Læs mere: [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-16",
+          "question": "Hvad er inoder, og hvorfor ser min plan \"fuld\" ud?",
+          "answer": "Inoder tæller filer/mapper, ikke kun GB. Mange små cache- eller mailfiler kan ramme grænsen, mens diskplads stadig ser ledig ud. Læs mere: [Inodes](/kennisbank/hosting/inodes-en-inode-limieten) · [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-17",
+          "question": "Hvad betyder \"ubegrænset\" lagerplads eller trafik?",
+          "answer": "\"Ubegrænset\" følger rimelig brug: normal brug af webstedet er fint; misbrug eller ekstreme belastninger kan begrænses for at holde platformen stabil. Læs mere: [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-18",
+          "question": "Hvad er forskellen mellem delt, VPS og dedikeret?",
+          "answer": "Delte ressourcer; VPS isolerer mere CPU/RAM; dedikeret er en hel server. Vælg efter trafik, kontrolbehov og budget. Læs mere: [Dedicated vs VPS vs shared](/kennisbank/infrastructuur-servers/verschil-tussen-dedicated-vps-en-shared-hosting) · [Shared/WP/VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
+        },
+        {
+          "id": "host-19",
+          "question": "Hvordan arbejder jeg med DirectAdmin?",
+          "answer": "DirectAdmin er kontrolpanelet til e-mail, DNS, databaser, sikkerhedskopier og installationer. Log ind med dine paneloplysninger; vi anbefaler stærkt 2FA. Læs mere: [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Backups](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
+        },
+        {
+          "id": "host-20",
+          "question": "Tilbyder du objektcache til WordPress?",
+          "answer": "På passende planer understøtter vi vedvarende objektcache for at reducere databaseforespørgsler og indlæse hurtigere. Læs mere: [Object cache](/kennisbank/hosting/persistent-object-cache-in-wordpress) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-21",
+          "question": "Hvordan fornyer eller betaler jeg for hosting?",
+          "answer": "Via kundeportalen og fakturaer; automatisk fornyelse er ofte tilgængelig. Hold faktureringsoplysninger opdaterede for at undgå afbrydelser. Læs mere: [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode) · [View invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "host-22",
+          "question": "Kan jeg sætte flere domæner på én hostingplan?",
+          "answer": "Ofte ja, via addon eller parkerede domæner - afhængigt af plangrænser. Vi hjælper med opkobling og DNS. Læs mere: [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Connect domain](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket)."
+        },
+        {
+          "id": "host-23",
+          "question": "Hvor sikkert er det at logge ind på mit hostingpanel?",
+          "answer": "Brug en stærk adgangskode og aktiver 2FA. Del ikke panellogin over usikre kanaler. Læs mere: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "host-24",
+          "question": "Hvad er WordPress-hosting helt præcist?",
+          "answer": "WordPress-hosting er optimeret til WP: hurtigere PHP/stak, ofte CDN og enklere installationer/opdateringer end generisk delt. Læs mere: [WP hosting plans](/kennisbank/hosting/wat-is-wordpress-hosting-basic-plus-en-pro) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-25",
+          "question": "Hvor bestiller jeg hosting direkte?",
+          "answer": "I butikken eller via hostingkategorierne Shared, Cloud, WordPress og VPS. Efter bestilling får du panel- og fakturaadgang. Læs mere: [Shop](/shop) · [Hosting overview](/diensten/categorie/hosting)."
+        }
+      ]
+    },
+    {
+      "id": "email-dns",
+      "title": "E-mail og DNS",
+      "items": [
+        {
+          "id": "mail-1",
+          "question": "Tilbyder du e-mail med domæner eller hosting?",
+          "answer": "Det afhænger af pakken og opsætningen. Vi rådgiver pålidelige mailløsninger og indstiller DNS korrekt (SPF, DKIM og DMARC). Læs mere: [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress) · [SPF record](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-2",
+          "question": "Hvad er SPF, DKIM og DMARC?",
+          "answer": "De er DNS-poster, der håndterer e-mail-godkendelse og reducerer spoofing/spam. Uden korrekte registreringer lander mails oftere i spam. Læs mere: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-3",
+          "question": "Hvordan administrerer jeg DNS-poster?",
+          "answer": "Via DNS-administration for dit domæne eller hostingpanel indstiller du A-, AAAA-, CNAME-, MX- og TXT-poster. Vi hjælper med migreringer og postgodkendelse. Læs mere: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [DNSSEC](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-4",
+          "question": "Hjælper du med at løse DNS-problemer?",
+          "answer": "Ja. Vi retter optegnelser, udbredelse, mailgodkendelse og domæneforbindelser, indtil DNS er korrekt igen. Læs mere: [Manage DNS records](/kennisbank/domeinnamen/dns-records-beheren) · [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen)."
+        },
+        {
+          "id": "mail-5",
+          "question": "Hvad er DNSSEC?",
+          "answer": "DNSSEC underskriver DNS-svar, så manipulation er sværere. Vi kan aktivere det, hvor din TLD og opsætning understøtter det. Læs mere: [DNSSEC explained](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-6",
+          "question": "Hvordan konfigurerer jeg e-mail på min telefon?",
+          "answer": "Brug IMAP/SMTP-detaljer fra dit panel. For Android (og tilsvarende på iOS) er trinnene i videnbasen. Læs mere: [Email on Android](/kennisbank/e-mail/e-mail-instellen-op-android) · [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress)."
+        },
+        {
+          "id": "mail-7",
+          "question": "Hvad hvis e-mail pludselig holder op med at virke?",
+          "answer": "Tjek DNS (MX/SPF/DKIM/DMARC), postkassekvote og om udbydere blokerer mail. Vi hjælper med at spore hele kæden. Læs mere: [Email problems](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-8",
+          "question": "Hvordan fungerer navneservere?",
+          "answer": "Navneservere bestemmer, hvilket DNS-system der betjener dit domæne. Hvis du ændrer dem, skal du indstille A/MX/TXT-poster korrekt igen på den nye DNS-vært. Læs mere: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "mail-9",
+          "question": "Hvor lang tid tager DNS-udbredelse?",
+          "answer": "Ofte minutter til et par timer; nogle gange op til 24-48 timer på grund af TTL'er og caches. Lavere TTL'er før en migrering for at skifte hurtigere. Læs mere: [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen) · [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet)."
+        },
+        {
+          "id": "mail-10",
+          "question": "Kan jeg videresende e-mail til en anden adresse?",
+          "answer": "Ja. Videresender sender indgående e-mail til Gmail, Microsoft 365 eller en anden postkasse - nyttigt ved siden af ​​eller i stedet for en fuld postkasse. Læs mere: [Forward email](/kennisbank/e-mail/email-doorsturen-naar-mailadres)."
+        },
+        {
+          "id": "mail-11",
+          "question": "Kan jeg forbinde mit domæne til Microsoft 365?",
+          "answer": "Ja. Du indstiller MX- og autentificeringsposter (SPF/DKIM/DMARC) i henhold til Microsofts instruktioner; vi hjælper på DNS-siden. Læs mere: [Domain to Microsoft 365](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-microsoft-365) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-12",
+          "question": "Hvorfor ender min mail i spam?",
+          "answer": "Ofte mangler SPF/DKIM/DMARC eller er modstridende, eller IP/omdømme er svagt. Vi kontrollerer DNS-godkendelse og afsendelsesadfærd. Læs mere: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-13",
+          "question": "Hvad er en MX-record?",
+          "answer": "En MX-record fortæller internettet, hvilken mailserver der kan modtage e-mail for dit domæne. Uden korrekt MX kommer der ingen mail. Læs mere: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Email problems](/kennisbank/hosting/problemen-met-e-mail-website)."
+        },
+        {
+          "id": "mail-14",
+          "question": "Kan jeg bruge webmail?",
+          "answer": "Ja, via webmail-URL'en på dit hostingpanel kan du læse og sende mail i browseren – sammen med IMAP på telefonen eller Outlook. Læs mere: [Set up email](/kennisbank/e-mail/e-mail-instellen-op-android) · [Contact](/contact)."
+        },
+        {
+          "id": "mail-15",
+          "question": "Skal DNS være med dig, hvis hosting er et andet sted?",
+          "answer": "Nej. Du kan beholde DNS hos os eller andre steder, så længe A/MX/TXT peger på de rigtige tjenester. Konsekvent styring forhindrer migreringsfejl. Læs mere: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Nameservers](/kennisbank/domeinnamen/nameservers-beheren)."
         }
       ]
     }

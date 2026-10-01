@@ -1,0 +1,1 @@
+On appropriate plans we support persistent object cache to reduce database queries and load faster. Read more: ⟦L0⟧Object cache⟦/L0⟧.

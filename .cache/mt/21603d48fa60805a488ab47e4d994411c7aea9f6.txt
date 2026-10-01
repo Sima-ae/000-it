@@ -1,0 +1,1 @@
+Bu, paketdən və quraşdırmadan asılıdır. Etibarlı poçt həllərini tövsiyə edirik və DNS-i düzgün təyin edirik (SPF, DKIM və DMARC). Daha ətraflı: ⟦L0⟧ · ⟦L1⟧.

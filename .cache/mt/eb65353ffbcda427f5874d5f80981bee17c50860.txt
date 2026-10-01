@@ -1,0 +1,1 @@
+Serveri imena određuju koji DNS sistem služi vašoj domeni. Ako ih promijenite, morate ponovo ispravno postaviti A/MX/TXT zapise na novom DNS hostu. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

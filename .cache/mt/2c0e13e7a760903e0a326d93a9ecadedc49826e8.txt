@@ -1,0 +1,1 @@
+po. Ky mund të jetë një CMS pa kokë, administrator i personalizuar ose një konfigurim statik — në varësi të ekipit dhe dëshirave tuaja.

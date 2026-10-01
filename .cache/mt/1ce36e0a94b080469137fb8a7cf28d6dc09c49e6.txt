@@ -1,0 +1,1 @@
+Se riippuu suunnitelmasta. Monissa suunnitelmissa SSH on saatavilla tai sitä voidaan pyytää; VPS:ssä saat yleensä täyden pääsyn. Lue lisää: ⟦L0⟧ · ⟦L1⟧.

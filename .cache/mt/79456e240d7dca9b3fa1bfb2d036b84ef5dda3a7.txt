@@ -1,0 +1,1 @@
+Evet. SSL, ilgili barındırma planlarımızda standart olduğundan siteler HTTPS üzerinde çalışır. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

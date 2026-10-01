@@ -99,13 +99,13 @@ const en: LocaleCopy = {
   "hero.bullet3": "Support in English and Dutch.",
   "faq.q1": "Who is {name}?",
   "faq.a1":
-    "{name} focuses on domain names and web hosting: shared, cloud, WordPress and VPS — with support for registration, DNS, email and migrations.",
+    "{name} focuses on domains, DNS, email and web hosting: shared, cloud, WordPress and VPS — including registration, transfers and migrations. See our FAQ and knowledge base for step-by-step answers.",
   "faq.q2": "Which hosting plans do you offer?",
   "faq.a2":
-    "Choose shared hosting, cloud hosting, WordPress hosting or VPS. Every plan has clear resources, SSL and support — so you pick based on traffic and growth.",
+    "Shared, cloud, WordPress and VPS — choose by traffic and growth. Every plan has clear resources, SSL and support. Details and pricing are on the hosting pages and in the full FAQ.",
   "faq.q3": "Can I upgrade later or transfer a domain?",
   "faq.a3":
-    "Yes. You can upgrade to a higher plan later and register or transfer domains. We help with DNS setup and migration.",
+    "Yes. You can upgrade later (for example shared → cloud/VPS) and register or transfer domains. We help with DNS, email authentication and migration — more in the FAQ and knowledge base.",
   "services.title": "Hosting",
   "services.subtitle":
     "Domains, shared, cloud, WordPress and VPS — everything for a stable online foundation.",

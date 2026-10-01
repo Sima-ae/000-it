@@ -1,0 +1,1 @@
+Skontrolujte DNS (MX/SPF/DKIM/DMARC), kvótu poštových schránok a či Microsoft alebo poskytovatelia blokujú poštu. Pomáhame merať reťaz. Prečítajte si viac: ⟦L0⟧ · ⟦L1⟧.

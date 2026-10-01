@@ -1,0 +1,1 @@
+Gemeinsame Freigaberessourcen; VPS isoliert mehr CPU/RAM; Dediziert ist ein ganzer Server. Wählen Sie nach Verkehr, Kontrollbedarf und Budget. Weiterlesen: ⟦L0⟧ · ⟦L1⟧.

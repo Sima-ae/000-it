@@ -1,0 +1,1 @@
+Igen. Együtt tervezzük meg a migrációt, beleértve a teszteket és a visszaállítást is, így a váltás kontroll alatt marad. Bővebben: ⟦L0⟧ · ⟦L1⟧.

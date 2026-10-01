@@ -1,0 +1,1 @@
+Cloud hosting provides more resources and scalability than classic shared, while we continue to do the management. Ideal when shared space becomes tight but full VPS is not yet necessary. Read more: ⟦L0⟧Shared vs WP vs VPS⟦/L0⟧ · ⟦L1⟧Hosting⟦/L1⟧.

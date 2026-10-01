@@ -1,0 +1,1 @@
+Verifique DNS (MX/SPF/DKIM/DMARC), cuota de buzón y si Microsoft o los proveedores están bloqueando el correo. Ayudamos a medir la cadena. Leer más: ⟦L0⟧ · ⟦L1⟧.

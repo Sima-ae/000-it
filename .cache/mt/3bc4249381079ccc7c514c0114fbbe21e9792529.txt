@@ -1,0 +1,1 @@
+Ett domännamn är adressen som besökare använder för att hitta din webbplats (till exempel example.com). Det knyter an till DNS-poster som pekar på din värd eller e-post. Läs mer: ⟦L0⟧ · ⟦L1⟧.

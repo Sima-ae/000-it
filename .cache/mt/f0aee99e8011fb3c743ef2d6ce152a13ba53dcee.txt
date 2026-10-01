@@ -1,0 +1,1 @@
+WordPress-isännöinti on optimoitu WP:lle: nopeampi PHP/pino, usein CDN ja yksinkertaisemmat asennukset/päivitykset kuin yleinen jaettu. Lue lisää: ⟦L0⟧ · ⟦L1⟧.

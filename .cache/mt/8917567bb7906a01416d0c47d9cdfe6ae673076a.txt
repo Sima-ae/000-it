@@ -1,0 +1,1 @@
+DirectAdmin este panoul de control pentru e-mail, DNS, baze de date, backup și instalări. Conectați-vă cu acreditările panoului; recomandăm cu tărie 2FA. Citește mai mult: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Inodes zählen Dateien/Ordner, nicht nur GB. Viele kleine Cache- oder E-Mail-Dateien können an ihre Grenzen stoßen, während der Speicherplatz noch frei erscheint. Weiterlesen: ⟦L0⟧ · ⟦L1⟧.

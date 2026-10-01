@@ -1,0 +1,1 @@
+DNS / domeno valdyme pasirenkate mūsų vardų serverius arba išorinius (pvz., CDN). Dauginimas gali trukti nuo kelių valandų iki dienos. Skaityti daugiau: ⟦L0⟧ · ⟦L1⟧.

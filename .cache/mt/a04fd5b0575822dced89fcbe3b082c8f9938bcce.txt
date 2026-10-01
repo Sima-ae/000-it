@@ -1,0 +1,1 @@
+Bəli. DNS yenidən düzgün olana qədər qeydləri, yayılmasını, poçt authunu və domen bağlantılarını düzəldirik. Daha ətraflı: ⟦L0⟧ · ⟦L1⟧.

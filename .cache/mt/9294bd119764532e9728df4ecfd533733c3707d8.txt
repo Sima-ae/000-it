@@ -1,0 +1,1 @@
+A megosztott költséghatékony kisebb webhelyek esetében. A felhő több erőforrást és skálázhatóságot biztosít, teljes körűen felügyelve. A WordPress hosting WP-re van optimalizálva. A VPS nagyobb irányítást biztosít nagyobb terhelés esetén. Bővebben: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

@@ -1,0 +1,1 @@
+Myymälässä näytämme hinnat esitetyn ALV-kontekstin mukaan (usein myös kuluttajavirrat). Lasku sisältää yritysasiakkaiden arvonlisäveron nettoerittelyn.

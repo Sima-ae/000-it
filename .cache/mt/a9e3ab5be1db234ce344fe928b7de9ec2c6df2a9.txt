@@ -1,0 +1,1 @@
+Ja, med kontoroller (klient, leder, admin) slik at flere teammedlemmer kan spore billetter eller prosjekter uten å dele alt.

@@ -1,0 +1,1 @@
+Zkontrolujte DNS (MX/SPF/DKIM/DMARC), kvótu poštovní schránky a zda Microsoft nebo poskytovatelé blokují poštu. Pomáháme měřit řetěz. Přečtěte si více: ⟦L0⟧ · ⟦L1⟧.

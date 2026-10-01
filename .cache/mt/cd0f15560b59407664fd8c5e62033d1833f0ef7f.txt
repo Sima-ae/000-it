@@ -1,0 +1,1 @@
+Nameserver bestimmen, welches DNS-System Ihre Domain bedient. Wenn Sie diese ändern, müssen Sie A/MX/TXT-Records beim neuen DNS-Host wieder korrekt setzen. Weiterlesen: ⟦L0⟧ · ⟦L1⟧.

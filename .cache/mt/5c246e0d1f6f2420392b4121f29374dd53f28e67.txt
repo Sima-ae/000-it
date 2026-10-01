@@ -1,0 +1,1 @@
+Inody počítajú súbory/priečinky, nielen GB. Mnoho malých vyrovnávacích alebo poštových súborov môže naraziť na limit, zatiaľ čo miesto na disku stále vyzerá ako voľné. Prečítajte si viac: ⟦L0⟧ · ⟦L1⟧.

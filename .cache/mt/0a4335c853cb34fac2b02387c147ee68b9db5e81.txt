@@ -1,0 +1,1 @@
+Gerektiğinde ve izin alınarak masaüstü veya panel sorunları için. Çoğu barındırma sorunu için panele, DNS'ye veya WordPress'e erişim yeterlidir. Devamını oku: ⟦L0⟧.

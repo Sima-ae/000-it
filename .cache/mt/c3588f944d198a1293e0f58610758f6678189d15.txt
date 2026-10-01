@@ -1,0 +1,1 @@
+Ano. Diagnostikujeme bílé obrazovky, kritické chyby PHP a konflikty pluginů se zálohováním a cílenou opravou. Přečtěte si více: ⟦L0⟧ · ⟦L1⟧.

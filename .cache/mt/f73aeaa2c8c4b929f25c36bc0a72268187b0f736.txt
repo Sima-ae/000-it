@@ -1,0 +1,1 @@
+Hosting w chmurze zapewnia więcej zasobów i skalowalności niż klasyczny współdzielony, a my na bieżąco nim zarządzamy. Idealny, gdy udostępnianie jest ciasne, ale pełny VPS nie jest jeszcze potrzebny. Przeczytaj więcej: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Sì, con i ruoli dell'account (cliente, manager, amministratore) in modo che più membri del team possano tenere traccia di ticket o progetti senza condividere tutto.

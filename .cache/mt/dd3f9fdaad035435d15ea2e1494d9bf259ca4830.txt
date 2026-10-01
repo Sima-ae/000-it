@@ -1,0 +1,1 @@
+Po, me role të llogarisë (klient, menaxher, administrator) kështu që anëtarë të shumtë të ekipit mund të gjurmojnë biletat ose projektet pa ndarë gjithçka.

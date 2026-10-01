@@ -1,0 +1,1 @@
+Verkkotunnuksesi tai isännöintipaneelin DNS-hallinnan kautta määrität A-, AAAA-, CNAME-, MX- ja TXT-tietueet. Autamme siirroissa ja postin todentamisessa. Lue lisää: ⟦L0⟧ · ⟦L1⟧.

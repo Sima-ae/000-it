@@ -1,0 +1,1 @@
+I butikken viser vi priser i henhold til mva-konteksten som vises (ofte inkl. for forbrukerstrømmer). Fakturaen inneholder en netto mva-fordeling for bedriftskunder.

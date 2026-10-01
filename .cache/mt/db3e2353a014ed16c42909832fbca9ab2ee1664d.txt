@@ -1,0 +1,1 @@
+Taip. Tvarkome atsargines kopijas, perkėlimą, DNS perjungimą, SSL ir dūmų testus su minimaliomis prastovomis. Skaityti daugiau: ⟦L0⟧ · ⟦L1⟧.

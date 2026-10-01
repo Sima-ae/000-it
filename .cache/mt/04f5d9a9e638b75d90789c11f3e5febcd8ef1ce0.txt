@@ -1,0 +1,1 @@
+Kontrolloni faqen e statusit, përhapjen e DNS, përditësimet e fundit, hapësirën në disk dhe nëse gabimi është i riprodhueshëm. Kjo përshpejton diagnozën. Lexo më shumë: ⟦L0⟧Bëje vetë përpara mbështetjes⟦/L0⟧ · ⟦L1⟧Statuspage⟦/L1⟧.

@@ -1,0 +1,1 @@
+Controlla il DNS (MX/SPF/DKIM/DMARC), la quota della casella di posta e se i provider stanno bloccando la posta. Aiutiamo a tracciare l'intera catena. Per saperne di più: ⟦L0⟧ · ⟦L1⟧.

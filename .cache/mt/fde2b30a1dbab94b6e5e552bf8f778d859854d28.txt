@@ -1,0 +1,1 @@
+Një proces zakonisht funksionon si ky: futje → auditim ose skanim → plan → zbatim në sprint → matje → optimizim. Do të merrni piketa dhe raportime të qarta, në mënyrë që të jetë gjithmonë e qartë se ku qëndrojmë.

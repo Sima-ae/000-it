@@ -1,0 +1,1 @@
+Sim, esse é o fluxo normal: domínio + hospedagem no carrinho de compras, depois conexão DNS. Leia mais: ⟦L0⟧ · ⟦L1⟧.

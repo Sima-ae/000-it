@@ -12,12 +12,12 @@
         {
           "id": "gen-1",
           "question": "TripleZero iT 到底是做什么的？",
-          "answer": "TripleZero iT 结合了网页设计、WordPress 支持、数字营销、搜索可见性（AEO、GEO/本地和 SEO）、设计和托管。 我们帮助品牌更快地被发现、建立更好的网站并以可衡量的方式发展。"
+          "answer": "TripleZero iT 结合了网页设计、WordPress 支持、数字营销、搜索可见性（AEO、GEO/本地和 SEO）、设计和托管。 我们帮助品牌更快地被发现、建立更好的网站并以可衡量的方式发展。 [About us](/over-ons) · [Services](/diensten)"
         },
         {
           "id": "gen-2",
           "question": "我如何开始使用 TripleZero iT？",
-          "answer": "联系我们或预约。 我们进行简短的接收、审查目标和堆栈，然后准备包含规划和 KPI 的具体提案。"
+          "answer": "联系我们或预约。 我们进行简短的接收、审查目标和堆栈，然后准备包含规划和 KPI 的具体提案。 [Schedule appointment](/afspraak) · [Contact](/contact)"
         },
         {
           "id": "gen-3",
@@ -73,6 +73,46 @@
           "id": "gen-13",
           "question": "您可以接管现有供应商或与现有供应商合作吗？",
           "answer": "是的。 我们与开发人员、营销人员或代理机构顺利合作，或者我们接管维护和优化，而不会不必要地中断现有工作。"
+        },
+        {
+          "id": "gen-14",
+          "question": "Agent 000（聊天助手）是什么？",
+          "answer": "Agent 000 是我们在现场和支持流程中的数字助理。他回答常见问题，指出知识库文章，并在需要人工帮助时向您推荐实时聊天、票证或预约。了解更多：[Digital assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting)·[Chat, ticket or call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)。"
+        },
+        {
+          "id": "gen-15",
+          "question": "如何安排预约或致电？",
+          "answer": "您可以通过预约页面选择适合您的时间。对于快速问题，您还可以使用实时聊天或票证；电话预约对于更复杂的流程或摄入量很有用。了解更多：[Appointment](/afspraak)·[Call appointment explained](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)。"
+        },
+        {
+          "id": "gen-16",
+          "question": "我在哪里可以看到你们的服务状态？",
+          "answer": "在状态页面上，我们显示有关托管和相关服务的事件和维护，以便您可以快速查看是否有问题发生。了解更多：[Statuspage](/statuspage)。"
+        },
+        {
+          "id": "gen-17",
+          "question": "你有知识库吗？",
+          "answer": "是的。该知识库包含有关域名、DNS、电子邮件、托管、WordPress、AI 扫描、安全性等的手册，并附有分步说明。了解更多：[Knowledge base](/kennisbank)。"
+        },
+        {
+          "id": "gen-18",
+          "question": "您如何处理隐私和 cookie？",
+          "answer": "我们的工作注重 GDPR：隐私文本、表单同意和需要跟踪的 cookie 横幅/同意模式。对于 WordPress，我们帮助正确设置 cookie。了解更多：[Cookie banner in WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)·[Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen)·[Privacy with forms](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren)。"
+        },
+        {
+          "id": "gen-19",
+          "question": "我在哪里可以找到您的新闻和更新？",
+          "answer": "在新闻页面上，我们发布有关产品、安全和提示的更新。对于技术故障，请检查状态页面。了解更多：[News](/nieuws)·[Statuspage](/statuspage)。"
+        },
+        {
+          "id": "gen-20",
+          "question": "和你一起工作要花多少钱？",
+          "answer": "这取决于组合：托管和购物产品有固定价格；设计、搜索引擎优化、广告和保留在录取之后。在商店里你会看到包裹；您将收到定制建议。了解更多：[Shop](/shop)·[Contact](/contact)。"
+        },
+        {
+          "id": "gen-21",
+          "question": "也可以只做咨询或审计吗？",
+          "answer": "是的。审计、人工智能扫描、技术审查和陪练会议可以与全方位服务流程分开进行。然后您可以自己做或让我们来处理。了解更多：[AI scan](/ai-scan)·[Services](/diensten)。"
         }
       ]
     },
@@ -83,17 +123,17 @@
         {
           "id": "ai-1",
           "question": "TripleZero iT 的人工智能扫描是什么？",
-          "answer": "人工智能就绪扫描可评估您的网站被经典搜索引擎、人工智能答案以及本地或地理搜索结果（AEO、GEO、SEO 和技术基础）找到的程度。"
+          "answer": "人工智能就绪扫描可评估您的网站被经典搜索引擎、人工智能答案以及本地或地理搜索结果（AEO、GEO、SEO 和技术基础）找到的程度。 [What is the AI ​​scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Start AI scan](/ai-scan)"
         },
         {
           "id": "ai-2",
           "question": "AI扫描到底测量什么？",
-          "answer": "扫描测量 AEO 信号、GEO/本地可见性、SEO 基础知识、内容结构、绩效指标和 AI 准备情况。 您会收到分数和具体的改进点。"
+          "answer": "扫描测量 AEO 信号、GEO/本地可见性、SEO 基础知识、内容结构、绩效指标和 AI 准备情况。 您会收到分数和具体的改进点。 [Explain scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)"
         },
         {
           "id": "ai-3",
           "question": "我应该多久运行一次人工智能扫描？",
-          "answer": "至少在重大网站变更或活动之后。 对于活跃品牌，我们建议定期扫描，例如每个季度进行扫描，以便您在搜索和人工智能结果中保持可见。"
+          "answer": "至少在重大网站变更或活动之后。 对于活跃品牌，我们建议定期扫描，例如每个季度进行扫描，以便您在搜索和人工智能结果中保持可见。 [Start AI scan](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website)"
         },
         {
           "id": "ai-4",
@@ -118,12 +158,12 @@
         {
           "id": "ai-8",
           "question": "我的品牌的人工智能准备情况如何？",
-          "answer": "它是指您的网站、内容和数据的设置程度，以便人工智能系统可以正确引用、推荐和解释您的品牌。"
+          "answer": "它是指您的网站、内容和数据的设置程度，以便人工智能系统可以正确引用、推荐和解释您的品牌。 [AI readiness in the scan](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)"
         },
         {
           "id": "ai-9",
           "question": "您可以在仪表板中使用人工智能代理吗？",
-          "answer": "是的。 在客户端门户中，您可以看到用于 SEO、内容、社交和广告的人工智能代理，包括状态和任务。"
+          "answer": "是的。 在客户端门户中，您可以看到用于 SEO、内容、社交和广告的人工智能代理，包括状态和任务。 [What are AI agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Agents in your account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)"
         },
         {
           "id": "ai-10",
@@ -144,6 +184,46 @@
           "id": "ai-13",
           "question": "如何衡量人工智能计划的投资回报率？",
           "answer": "通过流量、潜在客户、节省时间、内容输出、工单解决和转化等 KPI。 我们在计划中预先定义这些内容，以便结果保持可见。"
+        },
+        {
+          "id": "ai-14",
+          "question": "如何在我的网站上启动人工智能扫描？",
+          "answer": "进入AI扫描，输入您的URL并开始分析。您将获得 AEO、GEO、SEO、性能和 AI 准备度分数以及改进分数。了解更多：[Start AI scan](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website)·[AI scan page](/ai-scan)。"
+        },
+        {
+          "id": "ai-15",
+          "question": "如何读取AI扫描成绩？",
+          "answer": "每个分数都显示了您在该领域的实力；低分有具体的提示。将扫描用作优先级列表，而不是一次性的“报告卡”。了解更多：[Explain scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)·[Next steps](/kennisbank/ai-scan/welke-vervolgstappen-zet-ik-na-mijn-ai-scan)。"
+        },
+        {
+          "id": "ai-16",
+          "question": "AI 扫描和完整的 AEO/GEO/SEO 流程有什么区别？",
+          "answer": "扫描是一种快速诊断。流程实施改进：内容、结构化数据、技术搜索引擎优化、本地信号和随着时间的推移进行的测量。了解更多：[Scan versus process](/kennisbank/ai-scan/ai-scan-versus-een-volledig-aeo-geo-seo-traject-wat-is-het-verschil)·[Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)。"
+        },
+        {
+          "id": "ai-17",
+          "question": "在哪里可以找到我帐户中以前的 AI 扫描？",
+          "answer": "登录的客户可以在仪表板中看到之前的扫描和分析（SEO 分析），以便您可以比较进度。了解更多：[AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)·[Account / dashboard](/dashboard)。"
+        },
+        {
+          "id": "ai-18",
+          "question": "AEO 或 GEO 分数较低后我该怎么办？",
+          "answer": "优先考虑常见问题解答、实体、结构化数据 (AEO) 和 Google 商家资料/NAP/本地着陆页 (GEO)。我们帮助将该路线图转化为实施。了解更多：[Scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)·[Local Discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)。"
+        },
+        {
+          "id": "ai-19",
+          "question": "人工智能代理如何在客户门户中工作？",
+          "answer": "人工智能代理支持与 SEO、内容、社交或广告相关的任务。您可以在帐户中打开概览，查看状态并可以根据您的套餐启动或暂停代理。了解更多：[What are AI agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting)·[Open agents](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)。"
+        },
+        {
+          "id": "ai-20",
+          "question": "AI扫描是免费的吗？",
+          "answer": "通过AI扫描页面有一个可访问的条目；更深入的分析和流程属于服务或保留。扫描后，您将立即看到后续行动是否有用。了解更多：[AI scan](/ai-scan)·[What is the AI ​​scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)。"
+        },
+        {
+          "id": "ai-21",
+          "question": "Agent 000 是否也可以帮助解答 AI 和 SEO 问题？",
+          "answer": "是的。 Agent 000 使用常见问题解答和知识库来回答 AEO/GEO/SEO 和 AI 扫描问题，并链接到正确的文章或人工跟进。了解更多：[Digital Assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting)·[FAQ](/faq)。"
         }
       ]
     },
@@ -154,17 +234,17 @@
         {
           "id": "seo-1",
           "question": "AEO、GEO 和 SEO 有什么区别？",
-          "answer": "AEO（答案引擎优化）专注于人工智能答案。 GEO（地理搜索引擎优化）增强了地图、本地包和基于位置的搜索中的本地和区域可见性。 SEO 针对经典搜索引擎进行优化。"
+          "answer": "AEO（答案引擎优化）专注于人工智能答案。 GEO（地理搜索引擎优化）增强了地图、本地包和基于位置的搜索中的本地和区域可见性。 SEO 针对经典搜索引擎进行优化。 [How AEO, GEO and SEO are related](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen) · [What is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization)"
         },
         {
           "id": "seo-2",
           "question": "为什么 AEO/GEO 现在很重要？",
-          "answer": "更多搜索者通过人工智能获得答案，并在本地进行搜索（“靠近我”）。 没有 AEO，你就会错过 AI 引用； 如果没有 GEO，您就会错过本地销售线索——即使经典的 SEO 很可靠。"
+          "answer": "更多搜索者通过人工智能获得答案，并在本地进行搜索（“靠近我”）。 没有 AEO，你就会错过 AI 引用； 如果没有 GEO，您就会错过本地销售线索——即使经典的 SEO 很可靠。 [What is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant)"
         },
         {
           "id": "seo-3",
           "question": "您如何开始 SEO 参与？",
-          "answer": "我们从技术审核、关键词和意图研究、内容差距分析以及与您的业务 KPI 相关的优先路线图开始。"
+          "answer": "我们从技术审核、关键词和意图研究、内容差距分析以及与您的业务 KPI 相关的优先路线图开始。 [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)"
         },
         {
           "id": "seo-4",
@@ -174,7 +254,7 @@
         {
           "id": "seo-5",
           "question": "你们也做本地SEO吗？",
-          "answer": "是的。 我们致力于 Google 商家资料、本地着陆页、NAP 一致性、评论和本地内容集群，以便您在所在地区获得更好的排名。"
+          "answer": "是的。 我们致力于 Google 商家资料、本地着陆页、NAP 一致性、评论和本地内容集群，以便您在所在地区获得更好的排名。 [Improve local discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)"
         },
         {
           "id": "seo-6",
@@ -220,6 +300,36 @@
           "id": "seo-14",
           "question": "您可以帮助进行国际 SEO 吗？",
           "answer": "是的。 我们处理 hreflang、每个国家或语言的市场研究、内容本地化和技术多区域设置。"
+        },
+        {
+          "id": "seo-15",
+          "question": "AEO到底是什么？",
+          "answer": "AEO（答案引擎优化）创建内容，以便人工智能答案和答案引擎可以正确引用您的品牌：清晰的常见问题解答、实体和结构化数据。了解更多：[What is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization)·[AEO, GEO and SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)。"
+        },
+        {
+          "id": "seo-16",
+          "question": "什么是GEO（地理SEO）？",
+          "answer": "GEO 通过 GBP、NAP 一致性和本地内容增强本地和区域的可发现性（地图、本地包和基于位置的搜索）。了解更多：[What is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant)·[Local discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)。"
+        },
+        {
+          "id": "seo-17",
+          "question": "如何订购或开始 SEO 优化？",
+          "answer": "从人工智能扫描或审核开始，然后提出优先级提案。您还可以通过商店/服务或保留将 SEO 与内容和技术结合起来。了解更多：[Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)·[AI Scan](/ai-scan)。"
+        },
+        {
+          "id": "seo-18",
+          "question": "您可以帮助处理结构化数据和常见问题解答时间表吗？",
+          "answer": "是的。我们创建相关图表（常见问题解答、组织、本地业务、产品）和结构内容，以便搜索引擎和人工智能更好地了解您。了解更多：[AEO explanation](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization)·[AI scan scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)。"
+        },
+        {
+          "id": "seo-19",
+          "question": "您正在对 Core Web Vitals 做什么？",
+          "answer": "我们测量 LCP、INP 和 CLS，解决重资产、托管/缓存和主题问题，并在有用时将其链接到 CDN。了解更多：[CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)·[Choose Hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)。"
+        },
+        {
+          "id": "seo-20",
+          "question": "您可以将 SEO 与托管和 WordPress 维护结合起来吗？",
+          "answer": "是的。稳定的托管、更新和性能构成基础； SEO 建立在这一基础上。许多客户结合了 WP-care + 托管 + 持续的 SEO。了解更多：[Hosting](/diensten/categorie/hosting)·[Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)。"
         }
       ]
     },
@@ -291,6 +401,26 @@
           "id": "ads-13",
           "question": "再营销仍然重要吗？",
           "answer": "是的，当它符合隐私要求并与强大的创意和优惠相结合时。 它通常仍然是漏斗中最有效的层。"
+        },
+        {
+          "id": "ads-14",
+          "question": "您是否可以为广告提供同意模式和 Cookie 横幅方面的帮助？",
+          "answer": "是的。如果没有正确的同意和标记，广告衡量就不可靠。我们巧妙地将横幅、GTM/GA4 和像素链接起来。了解更多：[Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen)·[Cookie banner WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)。"
+        },
+        {
+          "id": "ads-15",
+          "question": "您可以为营销活动构建登陆页面吗？",
+          "answer": "是的 - 根据搜索意图定制的快速登陆页面或 WordPress 页面，具有跟踪和 CRO 基础知识。了解更多：[Services](/diensten)·[Shop](/shop)。"
+        },
+        {
+          "id": "ads-16",
+          "question": "如何防止广告预算浪费？",
+          "answer": "严格的帐户结构、否定关键词、受众排除、着陆页适配以及每次转化费用/广告支出回报率的每周优化——而不仅仅是点击次数。"
+        },
+        {
+          "id": "ads-17",
+          "question": "广告与 AEO/SEO 配合良好吗？",
+          "answer": "是的。广告提供快速的数据和流量； SEO/AEO 建立可持续的知名度。来自关键字和创意的见解可以丰富内容和登陆页面。了解更多：[AEO, GEO and SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)。"
         }
       ]
     },
@@ -362,6 +492,26 @@
           "id": "des-13",
           "question": "我在哪里可以了解有关数字设计的更多信息？",
           "answer": "更多信息请访问 /pingmian-sheji 以及菜单中的 平面设计 服务。"
+        },
+        {
+          "id": "des-14",
+          "question": "你们还提供设计系统和组件库吗？",
+          "answer": "是的，对于想要持续扩展的品牌来说：代币、组件和文档，以便营销和产品使用相同的语言。"
+        },
+        {
+          "id": "des-15",
+          "question": "你能将现有的品牌风格数字化吗？",
+          "answer": "是的。我们将印刷版或不完整的品牌指南翻译成网络可用的颜色、版式、UI 套件和模板。"
+        },
+        {
+          "id": "des-16",
+          "question": "你做用户体验研究还是只做视觉设计？",
+          "answer": "两个都。如有必要，我们会从访谈、漏斗分析或热图开始；然后是用户界面。这样我们就可以根据行为来设计，而不仅仅是品味。"
+        },
+        {
+          "id": "des-17",
+          "question": "你能设计社交模板和广告创意吗？",
+          "answer": "是的——与您的品牌和活动目标相匹配的轮播、缩略图、故事和广告集。了解更多：[Services](/diensten)。"
         }
       ]
     },
@@ -433,6 +583,26 @@
           "id": "mkt-13",
           "question": "如何防止“忙营销”却没有结果？",
           "answer": "每项活动都与 KPI 相关。 表现不佳的策略可以通过数据来停止或改进，因此预算将用于有效的策略。"
+        },
+        {
+          "id": "mkt-14",
+          "question": "营销保留通常包括什么？",
+          "answer": "策略、内容或 SEO、活动、报告和实验的组合——根据 KPI 量身定制。我们记录范围和时间，以便优先事项保持清晰。了解更多：[Shop](/shop)·[Contact](/contact)。"
+        },
+        {
+          "id": "mkt-15",
+          "question": "您帮忙定位和消息传递吗？",
+          "answer": "是的。清晰的定位、价值道具和页面文案确保广告、SEO 和销售传达相同的信息。"
+        },
+        {
+          "id": "mkt-16",
+          "question": "您是否通过渠道（而不仅仅是流量）来衡量营销？",
+          "answer": "如有可能：潜在客户、SQL、收入或辅助转化。我们调整或停止没有质量的流量。"
+        },
+        {
+          "id": "mkt-17",
+          "question": "你能清理营销堆栈和跟踪吗？",
+          "answer": "是的 - GTM、GA4、像素、CRM 链接和同意。干净的数据是良好决策的基础。了解更多：[Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen)。"
         }
       ]
     },
@@ -504,6 +674,153 @@
           "id": "soc-13",
           "question": "我们多久才能看到社交媒体的增长？",
           "answer": "一致性很重要。 显着的增长通常需要几周到几个月的时间； 有了广告支持，速度通常会更快。"
+        },
+        {
+          "id": "soc-14",
+          "question": "您提供社会证明和评论方面的帮助吗？",
+          "answer": "是的。我们计划审核请求、案例和类似 UGC 的格式，以建立信任，而不会出现虚假参与。"
+        },
+        {
+          "id": "soc-15",
+          "question": "你能设立员工宣传吗？",
+          "answer": "是的，尤其是在 LinkedIn 上：简单的指导方针、模板和节奏，使团队能够明显地分享专业知识。"
+        },
+        {
+          "id": "soc-16",
+          "question": "如何将社交链接到网站和商店？",
+          "answer": "通过 UTM、登陆页面、产品链接和重定向。社交是漏斗中的一个渠道，而不是一座孤岛。了解更多：[Shop](/shop)。"
+        }
+      ]
+    },
+    {
+      "id": "account-portaal",
+      "title": "帐户和门户",
+      "items": [
+        {
+          "id": "acc-1",
+          "question": "如何登录客户门户？",
+          "answer": "转到帐户/登录并使用您的客户帐户的电子邮件地址。如果您丢失数据，请使用密码重置或联系我们。了解更多：[Account](/dashboard)·[Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)。"
+        },
+        {
+          "id": "acc-2",
+          "question": "我在仪表板中看到什么？",
+          "answer": "根据您的服务：票据、项目、发票、AI 扫描/代理和快速支持链接。了解更多：[AI agents in account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)·[Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)。"
+        },
+        {
+          "id": "acc-3",
+          "question": "我丢失了登录详细信息 - 现在怎么办？",
+          "answer": "使用“忘记密码”或按照客户面板的知识库步骤操作。如果这不起作用，请通过已知的联系地址开具票证。了解更多：[Lost login details](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)。"
+        },
+        {
+          "id": "acc-4",
+          "question": "如何从门户开票？",
+          "answer": "在客户面板中，选择支持/票证，描述您的问题并添加证据（URL、屏幕截图）。了解更多：[Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)·[Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)。"
+        },
+        {
+          "id": "acc-5",
+          "question": "我在哪里可以找到我的发票？",
+          "answer": "您可以在门户中的发票/账单下查看和下载发票。了解更多：[Consult invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)。"
+        },
+        {
+          "id": "acc-6",
+          "question": "如何更改账单信息或付款方式？",
+          "answer": "在帐户设置中调整公司名称、增值税号和付款方式，以便新发票正确。了解更多：[Change invoice details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)。"
+        },
+        {
+          "id": "acc-7",
+          "question": "同事也可以访问吗？",
+          "answer": "是的，通过帐户角色（客户、经理、管理员），多个团队成员可以跟踪票证或项目，而无需共享所有内容。"
+        },
+        {
+          "id": "acc-8",
+          "question": "AI 扫描和 AI 代理是否链接到我的帐户？",
+          "answer": "是的。扫描和代理属于您的客户帐户，以便保留历史记录和权利。了解更多：[AI agents](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting)·[AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)。"
+        },
+        {
+          "id": "acc-9",
+          "question": "我的客户帐户的安全性如何？",
+          "answer": "尽可能使用唯一密码和 2FA（包括在托管面板上）。不要在共享计算机上共享会话。了解更多：[2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)。"
+        },
+        {
+          "id": "acc-10",
+          "question": "我可以跟踪项目状态和可交付成果吗？",
+          "answer": "在门户中列出的项目中，您可以查看状态和通信。否则，我们将通过票证或冲刺更新通知您。"
+        },
+        {
+          "id": "acc-11",
+          "question": "如何将商店的服务链接到我的帐户？",
+          "answer": "结账后，订单归属您的账户；配置（托管、域）会自动进行或通过支持人员的引导进行。了解更多：[Shop](/shop)。"
+        },
+        {
+          "id": "acc-12",
+          "question": "在哪里设置通知或首选项？",
+          "answer": "在帐户设置中，您可以管理个人资料和可用的通知首选项。对于发票电子邮件，请保持您的电子邮件地址最新。"
+        }
+      ]
+    },
+    {
+      "id": "shop-bestellen",
+      "title": "商店和订购",
+      "items": [
+        {
+          "id": "shop-1",
+          "question": "我可以在商店订购什么？",
+          "answer": "托管包、域名、护理/支持产品和我们在线提供的其他服务。定制报价通过联系方式进行。了解更多：[Shop](/shop)·[Hosting](/diensten/categorie/hosting)。"
+        },
+        {
+          "id": "shop-2",
+          "question": "购物车和结账如何运作？",
+          "answer": "添加产品，检查期间（月/年）并通过结账完成。然后您将收到确认信息并有权访问您的帐户。了解更多：[Shopping cart](/shop/cart)。"
+        },
+        {
+          "id": "shop-3",
+          "question": "价格包含还是不含增值税？",
+          "answer": "在商店中，我们根据所示的增值税背景显示价格（通常包括消费者流量）。发票包含企业客户的净增值税明细。"
+        },
+        {
+          "id": "shop-4",
+          "question": "我可以按月或按年付款吗？",
+          "answer": "许多托管和护理产品都有按月和按年选项。每年通常更便宜；详细信息参见产品卡。"
+        },
+        {
+          "id": "shop-5",
+          "question": "你们接受哪些付款方式？",
+          "answer": "常见的在线结账方式（取决于地区）。对于企业发票，我们可以通过联系安排开票。"
+        },
+        {
+          "id": "shop-6",
+          "question": "付款后我可以立即访问吗？",
+          "answer": "对于标准托管/域名产品，成功付款后会很快进行配置。对于定制服务，支持计划启动。"
+        },
+        {
+          "id": "shop-7",
+          "question": "以后可以升级套餐吗？",
+          "answer": "是的。通过迁移规划，可以从共享到云/VPS 或从基本版到增强版/商业版。了解更多：[Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps)·[Choose package](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)。"
+        },
+        {
+          "id": "shop-8",
+          "question": "如何将店铺产品与定制结合起来？",
+          "answer": "在线订购托管/护理并通过摄入计划设计、SEO 或广告。我们尽可能将发票和帐户捆绑在一起。了解更多：[Contact](/contact)。"
+        },
+        {
+          "id": "shop-9",
+          "question": "如果我的订单没有到达或被卡住怎么办？",
+          "answer": "检查您的电子邮件（包括垃圾邮件）和门户。如果仍然无声，请打开票证或通过电子邮件向支持人员发送订单号。了解更多：[Contact](/contact)·[Tickets](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)。"
+        },
+        {
+          "id": "shop-10",
+          "question": "我可以在一份订单中订购域名和托管吗？",
+          "answer": "是的，这就是通常的流程：域 + 购物车中的托管，然后是 DNS 连接。了解更多：[Domains](/domeinen)·[Shop](/shop)。"
+        },
+        {
+          "id": "shop-11",
+          "question": "有 WordPress Care 软件包吗？",
+          "answer": "是的。关怀包涵盖更新、监控和维护——单独或除了托管之外。了解更多：[Shop](/shop)。"
+        },
+        {
+          "id": "shop-12",
+          "question": "如何取消或更改订单？",
+          "answer": "通过支持订购后立即；此后，取消和变更条件适用于每个产品。如果您停止，我们会帮助您迁移或出口。了解更多：[Contact](/contact)。"
         }
       ]
     },
@@ -514,12 +831,12 @@
         {
           "id": "sup-1",
           "question": "你们提供什么支持？",
-          "answer": "我们提供 WordPress 支持、自定义网站支持、票证和实时聊天、维护、安全、性能和事件响应。"
+          "answer": "我们提供 WordPress 支持、自定义网站支持、票证和实时聊天、维护、安全、性能和事件响应。 [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting) · [Chat, ticket or call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)"
         },
         {
           "id": "sup-2",
           "question": "我如何获得支持？",
-          "answer": "通过联系、预约、仪表板中的票证或网站上的实时聊天。 紧急案件被标记为优先。"
+          "answer": "通过联系、预约、仪表板中的票证或网站上的实时聊天。 紧急案件被标记为优先。 [Contact](/contact) · [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Call appointment](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)"
         },
         {
           "id": "sup-3",
@@ -529,7 +846,7 @@
         {
           "id": "sup-4",
           "question": "你们提供 24/7 监控吗？",
-          "answer": "是的，在相关支持和托管包中：监控、备份和警报，以便更早地发现问题。"
+          "answer": "是的，在相关支持和托管包中：监控、备份和警报，以便更早地发现问题。 [Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup)"
         },
         {
           "id": "sup-5",
@@ -539,22 +856,22 @@
         {
           "id": "sup-6",
           "question": "你们为我们处理 WordPress 更新吗？",
-          "answer": "是的，通过“维护和更新”：核心、插件和主题，以及更新前后的备份和检查。"
+          "answer": "是的，通过“维护和更新”：核心、插件和主题，以及更新前后的备份和检查。 [Site down after WP update](/kennisbank/hosting/website-down-na-update-wordpress)"
         },
         {
           "id": "sup-7",
           "question": "您可以帮助解决托管问题吗？",
-          "answer": "是的。 我们诊断、迁移或优化托管、VPS 和域，直到网站再次稳定运行。"
+          "answer": "是的。 我们诊断、迁移或优化托管、VPS 和域，直到网站再次稳定运行。 [Move website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je)"
         },
         {
           "id": "sup-8",
           "question": "如果我的网站宕机了怎么办？",
-          "answer": "报告为紧急。 我们会尽可能通过备份、服务器检查和修补程序进行恢复，并让您随时了解最新状态。"
+          "answer": "报告为紧急。 我们会尽可能通过备份、服务器检查和修补程序进行恢复，并让您随时了解最新状态。 [Backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [Check yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support)"
         },
         {
           "id": "sup-9",
           "question": "有客户门户吗？",
-          "answer": "是的。 登录的客户可以看到仪表板、票据、项目以及相关的 CRM 或发票。"
+          "answer": "是的。 登录的客户可以看到仪表板、票据、项目以及相关的 CRM 或发票。 [Ticket via customer panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel) · [Lost login?](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)"
         },
         {
           "id": "sup-10",
@@ -575,6 +892,56 @@
           "id": "sup-13",
           "question": "我可以稍后升级支持吗？",
           "answer": "是的。 当流量、风险或团队需求增长时，您可以扩大规模。"
+        },
+        {
+          "id": "sup-14",
+          "question": "聊天、票务和电话预约有什么区别？",
+          "answer": "对于简短的问题，聊天速度很快；票证更适合有日志和后续的技术案例；电话预约适合接受或复杂的解释。了解更多：[Chat versus ticket versus call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)。"
+        },
+        {
+          "id": "sup-15",
+          "question": "如何创建支持票？",
+          "answer": "登录客户面板并打开带有清晰 URL、步骤和屏幕截图的工单。信息越好，我们就能越快提供帮助。了解更多：[Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)·[Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)。"
+        },
+        {
+          "id": "sup-16",
+          "question": "如果我的网站出现故障，你们有备份吗？",
+          "answer": "是的，取决于您的托管或支持包。如果发生停机，我们会尽可能从备份中恢复并调查原因。了解更多：[Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup)·[JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor)。"
+        },
+        {
+          "id": "sup-17",
+          "question": "在致电支持人员之前我可以检查哪些内容？",
+          "answer": "检查状态页面、DNS 传播、最近更新、磁盘空间以及错误是否可重现。这加快了诊断速度。了解更多：[Do it yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support)·[Statuspage](/statuspage)。"
+        },
+        {
+          "id": "sup-18",
+          "question": "网站上的实时聊天如何进行？",
+          "answer": "通过聊天按钮打开实时聊天。 Agent 000 首先帮助解答常见问题/知识库；对于更复杂或紧急的问题，我们会将您转介给员工。了解更多：[Digital Assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting)·[Contact](/contact)。"
+        },
+        {
+          "id": "sup-19",
+          "question": "您能帮助解决 WordPress 的严重错误吗？",
+          "answer": "是的。我们诊断白屏、严重的 PHP 错误和插件冲突，并提供备份和有针对性的修复。了解更多：[Critical Error WordPress](/kennisbank/wordpress/kritieke-fout-wordpress)·[Down after update](/kennisbank/hosting/website-down-na-update-wordpress)。"
+        },
+        {
+          "id": "sup-20",
+          "question": "您可以远程观看（TeamViewer 等）吗？",
+          "answer": "如有必要并经许可，可解决桌面或面板问题。对于大多数托管事宜，访问面板、DNS 或 WordPress 就足够了。了解更多：[Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting)。"
+        },
+        {
+          "id": "sup-21",
+          "question": "如何取消订阅或服务？",
+          "answer": "您可以通过客户面板或支持取消；请注意协议中的通知期限。我们帮助您整齐地完成数据/导出和DNS传输。了解更多：[Contact](/contact)·[Account](/dashboard)。"
+        },
+        {
+          "id": "sup-22",
+          "question": "你们提供 WordPress 护理/维护包吗？",
+          "answer": "是的。更新、备份、安全检查和性能都包含在护理包中——除了托管之外，也是理想的选择。了解更多：[Shop](/shop)·[Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren)。"
+        },
+        {
+          "id": "sup-23",
+          "question": "如果电子邮件突然停止工作怎么办？",
+          "answer": "检查 DNS (MX/SPF/DKIM/DMARC)、邮箱配额以及 Microsoft 或提供商是否阻止邮件。我们帮助测量链条。了解更多：[Email Problems](/kennisbank/hosting/problemen-met-e-mail-website)·[SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)。"
         }
       ]
     },
@@ -585,7 +952,7 @@
         {
           "id": "web-1",
           "question": "你们只建立 WordPress 网站吗？",
-          "answer": "不会。除了 WordPress 之外，我们还使用 HTML/CSS/JS、PHP 和 Next.js 进行自定义网页设计，与 WordPress 服务分开。"
+          "answer": "不会。除了 WordPress 之外，我们还使用 HTML/CSS/JS、PHP 和 Next.js 进行自定义网页设计，与 WordPress 服务分开。 [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [Services](/diensten)"
         },
         {
           "id": "web-2",
@@ -635,7 +1002,7 @@
         {
           "id": "web-11",
           "question": "上线后的表现如何？",
-          "answer": "我们优化核心 Web Vitals、缓存或 CDN 和监控。 然后通过维护包继续进行后续护理。"
+          "answer": "我们优化核心 Web Vitals、缓存或 CDN 和监控。 然后通过维护包继续进行后续护理。 [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)"
         },
         {
           "id": "web-12",
@@ -651,87 +1018,349 @@
           "id": "web-14",
           "question": "您可以帮助进行现场转化优化吗？",
           "answer": "是的。 我们运行 A/B 测试、用户体验改进、表单、CTA 和页面速度，以便更多访问者进行转化。"
+        },
+        {
+          "id": "web-15",
+          "question": "你们也建立网上商店吗？",
+          "answer": "是的，从具有结账集成的营销网站到 WordPress 或定制上的电子商务。我们在接收期间协调范围、付款和履行。了解更多：[Services](/diensten)·[Shop](/shop)。"
+        },
+        {
+          "id": "web-16",
+          "question": "您如何处理网站上的隐私文本？",
+          "answer": "我们建议并实施表格和横幅的隐私和同意流程，并在必要时为您的律师量身定制。了解更多：[Privacy with forms](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren)·[Cookie banner](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)。"
+        },
+        {
+          "id": "web-17",
+          "question": "你们提供暂存环境吗？",
+          "answer": "是的，在相关的情况下：进行审查和测试，然后受控部署到生产。"
+        },
+        {
+          "id": "web-18",
+          "question": "您可以接管并改进现有的 WordPress 网站吗？",
+          "answer": "是的——审计、更新、安全、速度、用户体验和搜索引擎优化，无需从头开始构建。了解更多：[WP move](/kennisbank/domeinnamen/wordpress-website-verhuizen)·[Critical errors](/kennisbank/wordpress/kritieke-fout-wordpress)。"
+        },
+        {
+          "id": "web-19",
+          "question": "投递后HTTP转HTTPS怎么样？",
+          "answer": "站点默认使用 HTTPS。在迁移过程中，我们强制使用 HTTPS 并解析混合内容。了解更多：[HTTP to HTTPS in WordPress](/kennisbank/wordpress/wordpress-url-omzetten-van-http-naar-https)·[SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig)。"
+        }
+      ]
+    },
+    {
+      "id": "domeinen",
+      "title": "域名",
+      "items": [
+        {
+          "id": "dom-1",
+          "question": "什么是域名？",
+          "answer": "域名是访问者用来查找您的网站的地址（例如 example.com）。它与指向您的主机或电子邮件的 DNS 记录相关联。了解更多：[Domain registration](/kennisbank/domeinnamen/domeinnaamregistratie)·[Order domains](/domeinen)。"
+        },
+        {
+          "id": "dom-2",
+          "question": "我如何向你们注册域名？",
+          "answer": "在域名页面上搜索名称，选择扩展名并在商店中完成结账。注册后，您可以管理帐户中的 DNS、名称服务器和发票。了解更多：[Domains](/domeinen)·[Registration guide](/kennisbank/domeinnamen/domeinnaamregistratie)·[Shop](/shop)。"
+        },
+        {
+          "id": "dom-3",
+          "question": "我可以将我的域名转让给您吗？",
+          "answer": "是的。向您当前的注册商请求授权 (EPP) 代码，解锁任何转移锁定，然后与我们开始转移。之后我们正确设置 DNS 和名称服务器。了解更多：[Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen)·[Authorisation code](/kennisbank/domeinnamen/wat-is-een-autorisatiecode)·[Domains](/domeinen)。"
+        },
+        {
+          "id": "dom-4",
+          "question": "什么是授权代码（EPP/Auth 代码）？",
+          "answer": "这是来自您当前注册商的一次性代码，可安全地启动域名转移。如果没有有效的代码，传输将无法继续。了解更多：[What is an authorisation code?](/kennisbank/domeinnamen/wat-is-een-autorisatiecode)·[Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen)。"
+        },
+        {
+          "id": "dom-5",
+          "question": "什么是转移锁或注册商锁？",
+          "answer": "锁可以防止不必要的传输。对于转移，您通常需要先在当前提供商处将其关闭，然后再与我们开始转移。了解更多：[Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen)·[Support](/contact)。"
+        },
+        {
+          "id": "dom-6",
+          "question": "我可以购买没有托管的域名吗？",
+          "answer": "是的。您可以仅注册或转移域名，并稍后添加托管或电子邮件。同时您已经可以管理或转发 DNS。了解更多：[Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting)·[Domains](/domeinen)。"
+        },
+        {
+          "id": "dom-7",
+          "question": "我可以注册哪些扩展名（.nl、.com、...）？",
+          "answer": "我们支持常见的 TLD，例如 .nl 和 .com 以及许多国际扩展名。可用性和价格会立即显示在域搜索中。了解更多：[Domains](/domeinen)·[Registration](/kennisbank/domeinnamen/domeinnaamregistratie)。"
+        },
+        {
+          "id": "dom-8",
+          "question": "如何续订我的域名？",
+          "answer": "续订通过发票和您的客户门户进行；通常可以使用自动续订。保持付款详细信息最新以避免过期。了解更多：[Invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)·[Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)。"
+        },
+        {
+          "id": "dom-9",
+          "question": "什么是优质域名？",
+          "answer": "高级名称是较短或受欢迎的域名，通常通过售后市场购买价格较高。可用性和条款因扩展而异。了解更多：[Premium domains](/kennisbank/domeinnamen/premium-domeinnamen)·[Domains](/domeinen)。"
+        },
+        {
+          "id": "dom-10",
+          "question": "我可以匿名注册我的域名（保护 ID）吗？",
+          "answer": "如果注册表允许，您可以考虑隐私/保护 ID。规则因扩展而异——例如，.nl 有自己的框架。了解更多：[Protect ID](/kennisbank/domeinnamen/protect-id-domein-anoniem-registreren)。"
+        },
+        {
+          "id": "dom-11",
+          "question": "我的域名处于隔离状态 - 现在怎么办？",
+          "answer": "删除后，域可以进入隔离区。根据注册表的不同，您通常可以付费重新激活它；不要等待太久。了解更多：[Domain out of quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen)·[Contact](/contact)。"
+        },
+        {
+          "id": "dom-12",
+          "question": "我的新域名还不能使用 - 现在怎么办？",
+          "answer": "通常是 DNS 传播、缺少 A/MX 记录或尚未更新的名称服务器。检查记录并允许 TTL 过期。了解更多：[New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet)·[Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)。"
+        },
+        {
+          "id": "dom-13",
+          "question": "如何将域连接到我的托管计划？",
+          "answer": "在您的面板或帐户中添加域，并将 DNS（A 记录或名称服务器）指向托管。我们帮助您完成订单后的首次连接。了解更多：[Connect domain to plan](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket)·[Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)。"
+        },
+        {
+          "id": "dom-14",
+          "question": "我可以转发域名吗？",
+          "answer": "是的。域名转发将访问者发送到另一个 URL — 对于没有单独站点的品牌名称非常有用。我们根据您的设置调整 DNS 和重定向。了解更多：[Forward a domain](/kennisbank/domeinnamen/domeinnaam-doorsturen)·[Domains](/domeinen)。"
+        },
+        {
+          "id": "dom-15",
+          "question": "如何更改我的域的名称服务器？",
+          "answer": "在 DNS/域管理中，您可以选择我们的名称服务器或外部名称服务器（例如 CDN）。传播可能需要几个小时到一天的时间。了解更多：[Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren)·[Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)。"
+        },
+        {
+          "id": "dom-16",
+          "question": "域名的费用是多少？",
+          "answer": "价格因延期和期间而异；域名搜索显示当前的注册和续订价格。高级名称有单独的价格。了解更多：[Domains](/domeinen)·[Shop](/shop)。"
+        },
+        {
+          "id": "dom-17",
+          "question": "托管和域名是否需要由同一提供商提供？",
+          "answer": "不，但更简单：DNS、SSL、电子邮件和支持，然后由一方负责。您也可以仅将 DNS 保留在我们这里并在其他地方托管。了解更多：[Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting)·[Hosting](/diensten/categorie/hosting)。"
+        },
+        {
+          "id": "dom-18",
+          "question": "我可以在一个帐户上管理多个域吗？",
+          "answer": "是的。额外的域名可以在您的托管计划限制内注册或转移并作为插件链接、停放或转发。了解更多：[Domains](/domeinen)·[Choose a hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)。"
+        },
+        {
+          "id": "dom-19",
+          "question": "如果我的域名过期会怎样？",
+          "answer": "到期后通常会有一段宽限期或隔离期，在此期间仍有可能恢复；之后其他人可能会声称它。通过发票按时续订。了解更多：[Quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen)·[Contact](/contact)。"
+        },
+        {
+          "id": "dom-20",
+          "question": "我在哪里订购或管理域名？",
+          "answer": "通过域名页面或商店注册和转让；管理（DNS、发票、续订）位于客户端门户中。了解更多：[Domains](/domeinen)·[Shop](/shop)·[Account](/dashboard)。"
         }
       ]
     },
     {
       "id": "webhosting",
-      "title": "虚拟主机和域名",
+      "title": "虚拟主机",
       "items": [
         {
           "id": "host-1",
           "question": "你们提供哪种托管？",
-          "answer": "我们提供共享主机、WordPress 主机和 VPS（基础级、增强级和商业级）以及域名。"
+          "answer": "我们提供共享主机、云主机、WordPress 主机和 VPS，以及域名注册。根据流量、堆栈和增长进行选择。了解更多：[Shared hosting](/diensten/shared-hosting)·[Cloud hosting](/diensten/cloud-hosting)·[WordPress hosting](/diensten/wordpress-hosting)·[VPS](/diensten/vps-hosting)。"
         },
         {
           "id": "host-2",
-          "question": "共享、WordPress 和 VPS 之间有什么区别？",
-          "answer": "对于较小的站点来说，共享是具有成本效益的。 WordPress 托管针对 WP 进行了优化。 VPS 为较重的负载提供更多的资源和控制。"
+          "question": "共享、云、WordPress 和 VPS 之间有什么区别？",
+          "answer": "对于较小的站点来说，共享是具有成本效益的。云提供更多资源和可扩展性，并且完全托管。 WordPress 托管针对 WP 进行了优化。 VPS 为较重的负载提供更多控制。了解更多：[Differences explained](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)·[Shared plans](/kennisbank/hosting/wat-is-shared-hosting-basic-plus-en-business)·[VPS plans](/kennisbank/hosting/wat-is-vps-hosting-basic-plus-en-business)。"
         },
         {
           "id": "host-3",
-          "question": "你们帮忙域名注册吗？",
-          "answer": "是的。 我们建议、注册或转移域名并正确连接 DNS。"
+          "question": "您的云托管是什么？",
+          "answer": "云托管比传统共享提供更多的资源和可扩展性，同时我们继续对其进行管理。当共享变得紧张但还不需要完整的 VPS 时，这是理想的选择。了解更多：[Cloud hosting](/diensten/cloud-hosting)·[Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)。"
         },
         {
           "id": "host-4",
           "question": "SSL 包含在托管中吗？",
-          "answer": "是的。 SSL 是我们相关托管计划中的标准配置。"
+          "answer": "是的。 SSL 是我们相关托管计划中的标准，因此网站在 HTTPS 上运行。了解更多：[What is SSL?](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig)·[Install Let's Encrypt](/kennisbank/hosting/hoe-installeer-ik-een-gratis-lets-encrypt-ssl-certificaat)。"
         },
         {
           "id": "host-5",
           "question": "您可以将我的网站迁移到您的托管吗？",
-          "answer": "是的。 我们处理备份、迁移、DNS 切换、SSL 和冒烟测试，并最大限度地减少停机时间。"
+          "answer": "是的。我们处理备份、迁移、DNS 切换、SSL 和冒烟测试，并最大限度地减少停机时间。了解更多：[Migrate website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je)·[Migrate WordPress](/kennisbank/domeinnamen/wordpress-website-verhuizen)。"
         },
         {
           "id": "host-6",
           "question": "备份如何在托管上发挥作用？",
-          "answer": "这取决于计划：简单备份或自动备份。 可以提供额外的异地保留。"
+          "answer": "这取决于计划：简单备份或自动备份。可以提供额外的异地保留。了解更多：[JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor)·[Backup in DirectAdmin](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)。"
         },
         {
           "id": "host-7",
           "question": "如果我获得更多流量怎么办？",
-          "answer": "然后我们扩展到 Plus、Business 或 VPS，并优化缓存和 CDN，以便网站能够应对增长。"
+          "answer": "然后，我们扩展到 Plus、Business、云或 VPS，并优化缓存和 CDN，以便网站能够应对增长。了解更多：[When to move to VPS?](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps)·[CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)。"
         },
         {
           "id": "host-8",
-          "question": "你们提供带域名的电子邮件吗？",
-          "answer": "这取决于软件包和设置。 我们建议可靠的邮件解决方案并正确设置 DNS（SPF、DKIM 和 DMARC）。"
+          "question": "您的托管安全性如何？",
+          "answer": "我们使用防火墙、SSL、更新、监控和强化。如果需要，可以使用额外的安全层。了解更多：[SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig)·[2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)。"
         },
         {
           "id": "host-9",
-          "question": "您的托管安全性如何？",
-          "answer": "我们使用防火墙、SSL、更新、监控和强化。 额外的安全服务可以在上面添加更多层。"
+          "question": "我以后可以从共享迁移到 VPS 吗？",
+          "answer": "是的。我们一起规划迁移，包括测试和回滚，以便交换机保持受控。了解更多：[Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps)·[VPS hosting](/diensten/vps-hosting)。"
         },
         {
           "id": "host-10",
-          "question": "我以后可以从共享迁移到 VPS 吗？",
-          "answer": "是的。 我们一起规划迁移，包括测试和回滚，以便交换机保持受控。"
+          "question": "你支持CDN吗？",
+          "answer": "是的，在相关的情况下——WP 托管计划中通常包含免费的 CDN——以实现更快的全球交付。了解更多：[What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)·[WordPress hosting](/diensten/wordpress-hosting)。"
         },
         {
           "id": "host-11",
-          "question": "你支持CDN吗？",
-          "answer": "是的，在相关的情况下——WP 托管计划中通常包含免费的 CDN——以实现更快的全球交付。"
+          "question": "您的正常运行时间方法是什么？",
+          "answer": "我们监控事件，快速响应事件，并在维护窗口期间进行清晰沟通，以便您了解正在发生的情况。状态更新位于状态页面上。了解更多：[Status page](/statuspage)·[Contact](/contact)。"
         },
         {
           "id": "host-12",
-          "question": "您的正常运行时间方法是什么？",
-          "answer": "我们监控事件，快速响应事件，并在维护窗口期间进行清晰的沟通，以便您了解正在发生的情况。"
+          "question": "如何选择合适的托管计划？",
+          "answer": "基于流量、堆栈（WordPress 或自定义）、资源和增长。我们诚实地提供建议——我们不会过度推销。了解更多：[Choose the right hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)·[Shared vs WP vs VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)。"
         },
         {
           "id": "host-13",
-          "question": "您能帮助解决 DNS 问题吗？",
-          "answer": "是的。 我们修复记录、传播、邮件身份验证和域连接，直到 DNS 再次正确。"
+          "question": "在哪里可以查看托管价格？",
+          "answer": "在托管服务页面和商店中，提供按月或按年选项（如果适用）。了解更多：[Shared](/diensten/shared-hosting)·[Cloud](/diensten/cloud-hosting)·[WordPress](/diensten/wordpress-hosting)·[VPS](/diensten/vps-hosting)·[Shop](/shop)。"
         },
         {
           "id": "host-14",
-          "question": "如何选择合适的托管计划？",
-          "answer": "基于流量、堆栈（WordPress 或自定义）、资源和增长。 我们诚实地提供建议——我们不会过度推销。"
+          "question": "我可以通过 SSH 访问我的主机吗？",
+          "answer": "这取决于计划。在许多计划中，SSH 可用或可以请求；在 VPS 上，您通常可以获得完全访问权限。了解更多：[SSH access](/kennisbank/hosting/heb-ik-ssh-toegang-op-mijn-hosting)·[VPS](/diensten/vps-hosting)。"
         },
         {
           "id": "host-15",
-          "question": "在哪里可以查看托管价格？",
-          "answer": "在托管服务页面上的“服务”→“虚拟主机和域名”下，可以选择按月或按年选项（如果适用）。"
+          "question": "如何在您的主机上安装 WordPress？",
+          "answer": "通过控制面板（例如 DirectAdmin/Installatron）或手动。我们有分步指南。了解更多：[Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren)·[WordPress hosting](/diensten/wordpress-hosting)。"
+        },
+        {
+          "id": "host-16",
+          "question": "什么是索引节点以及为什么我的计划看起来“已满”？",
+          "answer": "索引节点计算文件/文件夹的数量，而不仅仅是 GB。许多小型缓存或邮件文件可能会达到限制，而磁盘空间看起来仍然空闲。了解更多：[Inodes](/kennisbank/hosting/inodes-en-inode-limieten)·[Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)。"
+        },
+        {
+          "id": "host-17",
+          "question": "“无限”存储或流量是什么意思？",
+          "answer": "“无限制”遵循合理使用：正常网站使用即可；滥用或极端负载可能会受到限制，以保持平台稳定。了解更多：[Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)。"
+        },
+        {
+          "id": "host-18",
+          "question": "共享、VPS 和专用之间有什么区别？",
+          "answer": "共享股份资源； VPS隔离更多CPU/RAM；专用的是整个服务器。根据流量、控制需求和预算进行选择。了解更多：[Dedicated vs VPS vs shared](/kennisbank/infrastructuur-servers/verschil-tussen-dedicated-vps-en-shared-hosting)·[Shared/WP/VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)。"
+        },
+        {
+          "id": "host-19",
+          "question": "我如何使用 DirectAdmin？",
+          "answer": "DirectAdmin 是电子邮件、DNS、数据库、备份和安装的控制面板。使用您的面板凭据登录；我们强烈推荐 2FA。了解更多：[2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)·[Backups](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)。"
+        },
+        {
+          "id": "host-20",
+          "question": "你们为 WordPress 提供对象缓存吗？",
+          "answer": "在合适的计划中，我们支持持久对象缓存，以减少数据库查询并加快加载速度。了解更多：[Object cache](/kennisbank/hosting/persistent-object-cache-in-wordpress)·[WordPress hosting](/diensten/wordpress-hosting)。"
+        },
+        {
+          "id": "host-21",
+          "question": "如何续订或支付托管费用？",
+          "answer": "通过客户门户和发票；通常可以使用自动续订。保持账单详细信息最新以避免中断。了解更多：[Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)·[View invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)。"
+        },
+        {
+          "id": "host-22",
+          "question": "我可以在一个托管计划中放置多个域名吗？",
+          "answer": "通常是的，通过插件或停放域 - 取决于计划限制。我们提供连接和 DNS 方面的帮助。了解更多：[Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)·[Connect domain](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket)。"
+        },
+        {
+          "id": "host-23",
+          "question": "登录我的托管面板的安全性如何？",
+          "answer": "使用强密码并启用 2FA。不要通过不安全的渠道共享面板登录信息。了解更多：[2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)·[Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)。"
+        },
+        {
+          "id": "host-24",
+          "question": "WordPress 托管到底是什么？",
+          "answer": "WordPress 托管针对 WP 进行了优化：比通用共享更快的 PHP/堆栈、通常是 CDN 以及更简单的安装/更新。了解更多：[WP hosting plans](/kennisbank/hosting/wat-is-wordpress-hosting-basic-plus-en-pro)·[WordPress hosting](/diensten/wordpress-hosting)。"
+        },
+        {
+          "id": "host-25",
+          "question": "在哪里可以直接订购托管服务？",
+          "answer": "在商店中或通过共享、云、WordPress 和 VPS 托管类别。订购后，您可以获得面板和发票访问权限。了解更多：[Shop](/shop)·[Hosting overview](/diensten/categorie/hosting)。"
+        }
+      ]
+    },
+    {
+      "id": "email-dns",
+      "title": "电子邮件和 DNS",
+      "items": [
+        {
+          "id": "mail-1",
+          "question": "你们提供带域名或托管的电子邮件吗？",
+          "answer": "这取决于软件包和设置。我们建议可靠的邮件解决方案并正确设置 DNS（SPF、DKIM 和 DMARC）。了解更多：[Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress)·[SPF record](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)。"
+        },
+        {
+          "id": "mail-2",
+          "question": "什么是 SPF、DKIM 和 DMARC？",
+          "answer": "它们是处理电子邮件身份验证并减少欺骗/垃圾邮件的 DNS 记录。如果没有正确的记录，邮件通常会成为垃圾邮件。了解更多：[SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)·[DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam)·[DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)。"
+        },
+        {
+          "id": "mail-3",
+          "question": "如何管理 DNS 记录？",
+          "answer": "通过域的 DNS 管理或托管面板，您可以设置 A、AAAA、CNAME、MX 和 TXT 记录。我们帮助进行迁移和邮件身份验证。了解更多：[Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)·[DNSSEC](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)。"
+        },
+        {
+          "id": "mail-4",
+          "question": "您能帮助解决 DNS 问题吗？",
+          "answer": "是的。我们修复记录、传播、邮件身份验证和域连接，直到 DNS 再次正确。了解更多：[Manage DNS records](/kennisbank/domeinnamen/dns-records-beheren)·[Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen)。"
+        },
+        {
+          "id": "mail-5",
+          "question": "什么是 DNSSEC？",
+          "answer": "DNSSEC 对 DNS 答案进行签名，因此操纵更加困难。我们可以在您的 TLD 和设置支持的地方启用它。了解更多：[DNSSEC explained](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)。"
+        },
+        {
+          "id": "mail-6",
+          "question": "如何在手机上设置电子邮件？",
+          "answer": "使用面板中的 IMAP/SMTP 详细信息。对于 Android（iOS 上也类似），步骤位于知识库中。了解更多：[Email on Android](/kennisbank/e-mail/e-mail-instellen-op-android)·[Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress)。"
+        },
+        {
+          "id": "mail-7",
+          "question": "如果电子邮件突然停止工作怎么办？",
+          "answer": "检查 DNS (MX/SPF/DKIM/DMARC)、邮箱配额以及提供商是否阻止邮件。我们帮助追踪整个链条。了解更多：[Email problems](/kennisbank/hosting/problemen-met-e-mail-website)·[SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)。"
+        },
+        {
+          "id": "mail-8",
+          "question": "名称服务器如何工作？",
+          "answer": "名称服务器决定哪个 DNS 系统为您的域提供服务。如果更改它们，则必须在新的 DNS 主机上再次正确设置 A/MX/TXT 记录。了解更多：[Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren)·[Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)。"
+        },
+        {
+          "id": "mail-9",
+          "question": "DNS 传播需要多长时间？",
+          "answer": "通常需要几分钟到几个小时；由于 TTL 和缓存的原因，有时长达 24-48 小时。迁移前降低 TTL 可加快切换速度。了解更多：[Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen)·[New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet)。"
+        },
+        {
+          "id": "mail-10",
+          "question": "我可以将电子邮件转发到其他地址吗？",
+          "answer": "是的。转发器将传入邮件发送到 Gmail、Microsoft 365 或其他邮箱 - 与完整邮箱一起使用或代替完整邮箱很有用。了解更多：[Forward email](/kennisbank/e-mail/email-doorsturen-naar-mailadres)。"
+        },
+        {
+          "id": "mail-11",
+          "question": "我可以将我的域连接到 Microsoft 365 吗？",
+          "answer": "是的。您按照 Microsoft 的说明设置 MX 和身份验证记录 (SPF/DKIM/DMARC)；我们在 DNS 方面提供帮助。了解更多：[Domain to Microsoft 365](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-microsoft-365)·[SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)。"
+        },
+        {
+          "id": "mail-12",
+          "question": "为什么我的邮件最终会成为垃圾邮件？",
+          "answer": "通常 SPF/DKIM/DMARC 缺失或冲突，或者 IP/信誉较弱。我们检查 DNS 身份验证和发送行为。了解更多：[SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)·[DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam)·[DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)。"
+        },
+        {
+          "id": "mail-13",
+          "question": "什么是 MX 记录？",
+          "answer": "MX 记录告诉互联网哪个邮件服务器可以接收您的域的电子邮件。如果没有正确的 MX，则不会有邮件到达。了解更多：[Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)·[Email problems](/kennisbank/hosting/problemen-met-e-mail-website)。"
+        },
+        {
+          "id": "mail-14",
+          "question": "我可以使用网络邮件吗？",
+          "answer": "是的，通过托管面板的网络邮件 URL，您可以在浏览器中阅读和发送邮件 - 以及手机或 Outlook 上的 IMAP。了解更多：[Set up email](/kennisbank/e-mail/e-mail-instellen-op-android)·[Contact](/contact)。"
+        },
+        {
+          "id": "mail-15",
+          "question": "如果托管在其他地方，是否需要 DNS？",
+          "answer": "不需要。您可以将 DNS 保留在我们或其他地方，只要 A/MX/TXT 指向正确的服务即可。一致的管理可以防止迁移错误。了解更多：[Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)·[Nameservers](/kennisbank/domeinnamen/nameservers-beheren)。"
         }
       ]
     }

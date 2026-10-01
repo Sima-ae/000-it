@@ -1,0 +1,1 @@
+Alan adı, ziyaretçilerin web sitenizi bulmak için kullandığı adrestir (örneğin example.com). Barındırma veya e-postanıza işaret eden DNS kayıtlarına bağlanır. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

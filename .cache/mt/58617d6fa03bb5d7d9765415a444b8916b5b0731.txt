@@ -1,0 +1,1 @@
+Ofte mangler SPF/DKIM/DMARC eller er modstridende, eller IP/omdømme er svagt. Vi kontrollerer DNS-godkendelse og afsendelsesadfærd. Læs mere: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

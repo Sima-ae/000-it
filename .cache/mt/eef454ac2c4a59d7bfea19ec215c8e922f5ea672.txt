@@ -1,0 +1,1 @@
+Igen. Az SSL szabvány a vonatkozó tárhelyszolgáltatásainkban, így a webhelyek HTTPS-en futnak. Bővebben: ⟦L0⟧ · ⟦L1⟧.

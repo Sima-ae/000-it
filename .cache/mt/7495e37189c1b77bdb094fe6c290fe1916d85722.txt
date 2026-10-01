@@ -1,0 +1,1 @@
+Inodele numără fișierele/folderele, nu numai GB. Multe fișiere cache sau e-mail mici pot atinge limita în timp ce spațiul pe disc pare încă liber. Citește mai mult: ⟦L0⟧ · ⟦L1⟧.

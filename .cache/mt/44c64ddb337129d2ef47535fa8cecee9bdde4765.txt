@@ -1,0 +1,1 @@
+Çoğunlukla dakikalardan birkaç saate kadar; TTL'ler ve önbellekler nedeniyle bazen 24-48 saate kadar çıkabilir. Daha hızlı geçiş yapmak için geçişten önce TTL'leri düşürün. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

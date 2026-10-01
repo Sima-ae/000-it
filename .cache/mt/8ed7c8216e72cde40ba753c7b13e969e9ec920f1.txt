@@ -1,0 +1,1 @@
+Pracujemy ze świadomością RODO: teksty dotyczące prywatności, formularze zgód i banery dotyczące plików cookie/tryb zgody, w przypadku których konieczne jest śledzenie. W przypadku WordPress pomagamy w prawidłowej konfiguracji plików cookie. Przeczytaj więcej: ⟦L0⟧Baner plików cookie w WordPress⟦/L0⟧ · ⟦L1⟧Tryb zgody⟦/L1⟧ · ⟦L2⟧Prywatność w formularzach⟦/L2⟧.

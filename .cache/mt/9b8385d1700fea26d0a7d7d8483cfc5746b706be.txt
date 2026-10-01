@@ -1,0 +1,1 @@
+Skontrolujte DNS (MX/SPF/DKIM/DMARC), kvótu poštových schránok a či poskytovatelia blokujú poštu. Pomáhame sledovať celý reťazec. Prečítajte si viac: ⟦L0⟧ · ⟦L1⟧.

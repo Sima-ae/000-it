@@ -1,0 +1,1 @@
+Navneservere bestemmer, hvilket DNS-system der betjener dit domæne. Hvis du ændrer dem, skal du indstille A/MX/TXT-poster korrekt igen på den nye DNS-vært. Læs mere: ⟦L0⟧ · ⟦L1⟧.

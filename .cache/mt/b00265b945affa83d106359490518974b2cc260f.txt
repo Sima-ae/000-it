@@ -1,0 +1,1 @@
+DirectAdmin is the control panel for email, DNS, databases, backups and installations. Log in with your panel details; We strongly recommend 2FA. Read more: ⟦L0⟧2FA in DirectAdmin⟦/L0⟧ · ⟦L1⟧Backups⟦/L1⟧.

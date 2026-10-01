@@ -1,0 +1,1 @@
+Hayır, ancak daha basittir: DNS, SSL, e-posta ve destek, sonra tek tarafla birlikte oturur. Ayrıca yalnızca DNS'yi bizde tutabilir ve başka bir yerde barındırabilirsiniz. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

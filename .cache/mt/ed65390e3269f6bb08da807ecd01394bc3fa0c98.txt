@@ -1,0 +1,1 @@
+Tak. Ustawiasz rekordy MX i uwierzytelniania (SPF/DKIM/DMARC) zgodnie z instrukcjami Microsoft; pomagamy po stronie DNS. Przeczytaj więcej: ⟦L0⟧ · ⟦L1⟧.

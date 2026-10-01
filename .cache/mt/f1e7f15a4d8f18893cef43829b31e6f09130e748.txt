@@ -1,0 +1,1 @@
+Mümkün olduğunda: olası satışlar, SQL'ler, gelir veya destekli dönüşümler. Kalite olmadan trafiği ayarlıyoruz veya durduruyoruz.

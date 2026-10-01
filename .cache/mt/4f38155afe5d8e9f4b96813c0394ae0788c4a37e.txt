@@ -1,0 +1,1 @@
+WordPress hosting je optimizovan za WP: brži PHP/stack, često CDN i jednostavnije instalacije/ažuriranja od generičkog zajedničkog. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

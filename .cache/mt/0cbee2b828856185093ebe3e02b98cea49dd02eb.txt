@@ -1,0 +1,1 @@
+Ad serverləri hansı DNS sisteminin domeninizə xidmət etdiyini müəyyənləşdirir. Onları dəyişdirsəniz, yeni DNS hostunda A/MX/TXT qeydlərini yenidən düzgün qurmalısınız. Daha ətraflı: ⟦L0⟧ · ⟦L1⟧.

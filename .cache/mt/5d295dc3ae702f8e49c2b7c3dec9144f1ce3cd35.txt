@@ -1,0 +1,1 @@
+Često minuta do nekoliko sati; ponekad i do 24–48 sati zbog TTL-ova i predmemorija. Snizite TTL-ove prije migracije kako biste se brže prebacivali. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

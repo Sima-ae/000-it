@@ -1,0 +1,1 @@
+Por lo general, se trata de propagación de DNS, registros A/MX faltantes o servidores de nombres que aún no están actualizados. Verifique los registros y permita que caduquen los TTL. Leer más: ⟦L0⟧ · ⟦L1⟧.

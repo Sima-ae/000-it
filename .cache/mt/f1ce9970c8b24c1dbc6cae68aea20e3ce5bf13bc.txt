@@ -1,0 +1,1 @@
+Evet, birden fazla ekip üyesinin her şeyi paylaşmadan destek taleplerini veya projeleri takip edebilmesi için hesap rolleri (müşteri, yönetici, yönetici) mevcuttur.

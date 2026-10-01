@@ -1,0 +1,1 @@
+Cela dépend du plan. Sur de nombreux forfaits, SSH est disponible ou peut être demandé ; sur VPS, vous obtenez généralement un accès complet. Lire la suite : ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Where possible we deliver via repository and deploy pipeline, with environments (staging and production) and a clear handover.

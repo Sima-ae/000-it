@@ -1,0 +1,1 @@
+Ja. Vi fixar poster, spridning, e-postauth och domänanslutningar tills DNS är korrekt igen. Läs mer: ⟦L0⟧ · ⟦L1⟧.

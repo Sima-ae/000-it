@@ -1,0 +1,1 @@
+Nej. Du kan beholde DNS hos os eller andre steder, så længe A/MX/TXT peger på de rigtige tjenester. Konsekvent styring forhindrer migreringsfejl. Læs mere: ⟦L0⟧ · ⟦L1⟧.

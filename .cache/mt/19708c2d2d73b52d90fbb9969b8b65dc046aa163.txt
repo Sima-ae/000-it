@@ -1,0 +1,1 @@
+MX-tietue kertoo Internetille, mikä sähköpostipalvelin voi vastaanottaa verkkotunnuksesi sähköpostia. Ilman oikeaa MX:ää posti ei tule perille. Lue lisää: ⟦L0⟧ · ⟦L1⟧.

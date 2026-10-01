@@ -1,0 +1,1 @@
+Poprzez zarządzanie DNS dla Twojej domeny lub panelu hostingowego ustawiasz rekordy A, AAAA, CNAME, MX i TXT. Pomagamy w migracjach i autoryzacji poczty. Przeczytaj więcej: ⟦L0⟧ · ⟦L1⟧.

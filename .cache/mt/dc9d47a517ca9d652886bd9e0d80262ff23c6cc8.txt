@@ -1,0 +1,1 @@
+DNSSEC potpisuje DNS odgovore pa je manipulacija teža. Možemo ga omogućiti tamo gdje vaš TLD i postavke to podržavaju. Pročitajte više: ⟦L0⟧.

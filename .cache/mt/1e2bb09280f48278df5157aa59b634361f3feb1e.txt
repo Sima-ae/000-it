@@ -1,0 +1,1 @@
+Via DNS-administration for dit domæne eller hostingpanel indstiller du A-, AAAA-, CNAME-, MX- og TXT-poster. Vi hjælper med migreringer og postgodkendelse. Læs mere: ⟦L0⟧ · ⟦L1⟧.

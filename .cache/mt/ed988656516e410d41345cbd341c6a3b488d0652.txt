@@ -1,0 +1,1 @@
+Mümkün olduğunda benzersiz şifreler ve 2FA kullanın (barındırma panelleri dahil). Paylaşılan bilgisayarlarda oturumları paylaşmayın. Devamını oku: ⟦L0⟧.

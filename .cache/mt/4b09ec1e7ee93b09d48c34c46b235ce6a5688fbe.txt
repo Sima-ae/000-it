@@ -1,0 +1,1 @@
+En MX-record fortæller internettet, hvilken mailserver der kan modtage e-mail for dit domæne. Uden korrekt MX kommer der ingen mail. Læs mere: ⟦L0⟧ · ⟦L1⟧.

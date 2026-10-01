@@ -1,0 +1,1 @@
+Lägg till domänen i din panel eller ditt konto och peka DNS (En post eller namnservrar) till värdskapet. Vi hjälper till med första anslutningen efter beställning. Läs mer: ⟦L0⟧ · ⟦L1⟧.

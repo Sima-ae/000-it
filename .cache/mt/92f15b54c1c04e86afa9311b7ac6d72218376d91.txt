@@ -1,0 +1,1 @@
+Používáme firewall, SSL, aktualizace, monitoring a hardening. V případě potřeby jsou k dispozici další bezpečnostní vrstvy. Přečtěte si více: ⟦L0⟧ · ⟦L1⟧.

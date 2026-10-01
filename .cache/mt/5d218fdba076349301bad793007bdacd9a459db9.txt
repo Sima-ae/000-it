@@ -1,0 +1,1 @@
+Vanlige nettbaserte metoder via kassen (avhengig av region). For bedriftsfakturaer kan vi ordne acontofakturering via kontakt.

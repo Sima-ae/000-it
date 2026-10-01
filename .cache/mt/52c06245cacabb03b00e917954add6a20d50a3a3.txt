@@ -1,0 +1,1 @@
+Asta depinde de pachet și de configurare. Vă sfătuim soluții de e-mail de încredere și setăm corect DNS (SPF, DKIM și DMARC). Citește mai mult: ⟦L0⟧ · ⟦L1⟧.

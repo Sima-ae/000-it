@@ -1,0 +1,1 @@
+A domain DNS-kezelésén vagy a tárhelypanelen keresztül beállíthatja az A, AAAA, CNAME, MX és TXT rekordokat. Segítünk a migrációban és a levél hitelesítésben. Bővebben: ⟦L0⟧ · ⟦L1⟧.

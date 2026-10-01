@@ -1,0 +1,1 @@
+Ja. Vi planlægger migreringen sammen, inklusive test og rollback, så switchen forbliver kontrolleret. Læs mere: ⟦L0⟧ · ⟦L1⟧.

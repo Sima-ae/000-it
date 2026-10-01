@@ -1,0 +1,1 @@
+Da. Setați înregistrări MX și de autentificare (SPF/DKIM/DMARC) conform instrucțiunilor Microsoft; ajutăm pe partea DNS. Citește mai mult: ⟦L0⟧ · ⟦L1⟧.

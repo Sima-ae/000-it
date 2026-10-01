@@ -1,0 +1,1 @@
+Via the control panel (e.g. DirectAdmin/Installatron) or manually. We have a step-by-step guide. Read more: ⟦L0⟧Install WordPress⟦/L0⟧.

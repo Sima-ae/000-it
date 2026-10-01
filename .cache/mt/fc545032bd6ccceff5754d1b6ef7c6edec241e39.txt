@@ -1,0 +1,1 @@
+Check status page, DNS propagation, recent updates, disk space and whether the error is reproducible. That speeds up the diagnosis. Read more: ⟦L0⟧Do it yourself before support⟦/L0⟧ · ⟦L1⟧Statuspage⟦/L1⟧.

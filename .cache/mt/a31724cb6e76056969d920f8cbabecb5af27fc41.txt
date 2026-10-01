@@ -1,0 +1,1 @@
+Tjek DNS (MX/SPF/DKIM/DMARC), postkassekvote og om Microsoft eller udbydere blokerer mail. Vi hjælper med at måle kæden. Læs mere: ⟦L0⟧ · ⟦L1⟧.

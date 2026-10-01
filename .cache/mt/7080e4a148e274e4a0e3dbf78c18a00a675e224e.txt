@@ -1,0 +1,1 @@
+Nous mesurons LCP, INP et CLS, résolvons les problèmes d'actifs lourds, d'hébergement/mise en cache et de thème, et lions cela au CDN lorsque cela est utile. Lire la suite : ⟦L0⟧ · ⟦L1⟧.

@@ -22,7 +22,6 @@ import { prioritySelectClass, TICKET_PRIORITIES } from "@/lib/crm/tickets";
 import { Agent000Avatar } from "@/components/agent-000/Agent000Avatar";
 import { AgentChatLinks } from "@/components/agent-000/AgentChatLinks";
 import { OPEN_CHAT_EVENT } from "@/components/chat/open-live-chat";
-import { useAgentSpeech } from "@/components/agent-000/useAgentSpeech";
 import { useBrand } from "@/lib/brand/BrandProvider";
 import type { AgentAction, AgentLink } from "@/lib/agent-000/ask";
 import { splitAgentAnswer } from "@/lib/agent-000/message-links";
@@ -115,7 +114,6 @@ export function LiveChatWidget() {
   const isExtraHosting = brand.id === "extrahosting";
   const isStaff = isStaffRole(session?.user?.role);
   const hideWidget = isAppShellPath(pathname);
-  const { speak } = useAgentSpeech(locale);
 
   const [open, setOpen] = useState(false);
   const [teaser, setTeaser] = useState(false);
@@ -243,29 +241,20 @@ export function LiveChatWidget() {
     if (!ticket?.id || isLocalTicketId(ticket.id)) return;
     // Keep polling so staff live-chat replies appear for this browser session.
     const intervalMs = open ? 2000 : 8000;
-    let lastCount = ticket.messages?.length || 0;
     let lastFingerprint = ticket.messages?.map((m) => m.id).join(",") || "";
     const timer = setInterval(async () => {
       const qs = guestToken ? `?token=${encodeURIComponent(guestToken)}` : "";
       const res = await fetch(`/api/tickets/${ticket.id}${qs}`);
       if (!res.ok) return;
       const data = (await res.json()) as TicketDetail;
-      const nextCount = data.messages?.length || 0;
       const nextFingerprint = data.messages?.map((m) => m.id).join(",") || "";
-      if (nextCount > lastCount && open) {
-        const newest = data.messages[nextCount - 1];
-        if (newest?.senderKind === "STAFF" && newest.body) {
-          speak(newest.body);
-        }
-      }
-      lastCount = nextCount;
       // Avoid re-render/scroll thrash when nothing changed.
       if (nextFingerprint === lastFingerprint) return;
       lastFingerprint = nextFingerprint;
       setTicket(data);
     }, intervalMs);
     return () => clearInterval(timer);
-  }, [open, ticket?.id, ticket?.messages, guestToken, speak]);
+  }, [open, ticket?.id, ticket?.messages, guestToken]);
 
   // Guests only. Hide while auth is resolving so logged-in users never see a flash of fields.
   const needsIdentity = status === "unauthenticated" && !ticket;
@@ -374,7 +363,6 @@ export function LiveChatWidget() {
     setSubject("");
     setPriority("LOW");
     setMode("chat");
-    speak(splitAgentAnswer(payload.answer).text || payload.answer);
   }
 
   async function startConversation(opts: {
@@ -435,9 +423,6 @@ export function LiveChatWidget() {
           actions: data.agent.actions,
           faqId: data.agent.faqId,
         });
-      }
-      if (lastSystem?.body) {
-        speak(splitAgentAnswer(lastSystem.body).text || lastSystem.body);
       }
     } catch {
       try {
@@ -501,9 +486,6 @@ export function LiveChatWidget() {
             return { ...prev, messages: next };
           });
           setDraft("");
-          if (agentMsg?.body) {
-            speak(splitAgentAnswer(agentMsg.body).text || agentMsg.body);
-          }
           return;
         }
       }

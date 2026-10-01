@@ -1,0 +1,1 @@
+Käytä yksilöllisiä salasanoja ja 2FA:ta, jos mahdollista (mukaan lukien isännöintipaneeleissa). Älä jaa istuntoja jaetuilla tietokoneilla. Lue lisää: ⟦L0⟧.

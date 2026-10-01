@@ -1,0 +1,1 @@
+Provjerite DNS (MX/SPF/DKIM/DMARC), kvotu poštanskog sandučića i blokiraju li pružatelji usluga poštu. Pomažemo u praćenju cijelog lanca. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Güçlü bir şifre kullanın ve 2FA'yı etkinleştirin. Panel girişlerini güvenli olmayan kanallar üzerinden paylaşmayın. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

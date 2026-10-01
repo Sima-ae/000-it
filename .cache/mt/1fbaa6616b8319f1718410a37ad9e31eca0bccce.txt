@@ -1,0 +1,1 @@
+DNSSEC, DNS yanıtlarını imzalar, böylece manipülasyon daha zordur. TLD'nizin ve kurulumunuzun desteklediği yerde etkinleştirebiliriz. Devamını oku: ⟦L0⟧.

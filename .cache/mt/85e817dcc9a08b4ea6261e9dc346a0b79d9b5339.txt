@@ -1,0 +1,1 @@
+Använd IMAP/SMTP-information från din panel. För Android (och liknande på iOS) finns stegen i kunskapsbasen. Läs mer: ⟦L0⟧ · ⟦L1⟧.

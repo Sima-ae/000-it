@@ -1,0 +1,1 @@
+Găzduirea WordPress este optimizată pentru WP: PHP/stivă mai rapidă, adesea CDN și instalări/actualizări mai simple decât cele partajate generice. Citește mai mult: ⟦L0⟧ · ⟦L1⟧.

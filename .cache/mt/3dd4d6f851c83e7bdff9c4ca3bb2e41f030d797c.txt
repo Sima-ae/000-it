@@ -1,0 +1,1 @@
+WordPress hostinqi WP üçün optimallaşdırılıb: ümumi paylaşılandan daha sürətli PHP/stack, tez-tez CDN və daha sadə quraşdırma/güncelləmələr. Daha ətraflı: ⟦L0⟧ · ⟦L1⟧.

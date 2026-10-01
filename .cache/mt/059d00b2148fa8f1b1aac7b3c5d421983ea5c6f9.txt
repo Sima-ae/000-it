@@ -1,0 +1,1 @@
+Áno, to je obvyklý postup: doména + hosting v nákupnom košíku, potom pripojenie DNS. Prečítajte si viac: ⟦L0⟧ · ⟦L1⟧.

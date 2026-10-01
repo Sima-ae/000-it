@@ -1,0 +1,1 @@
+Através do gerenciamento de DNS do seu domínio ou painel de hospedagem você define registros A, AAAA, CNAME, MX e TXT. Ajudamos com migrações e autenticação de correio. Leia mais: ⟦L0⟧ · ⟦L1⟧.

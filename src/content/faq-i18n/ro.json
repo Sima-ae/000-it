@@ -12,12 +12,12 @@
         {
           "id": "gen-1",
           "question": "Ce face exact TripleZero iT?",
-          "answer": "TripleZero iT combină webdesign, suport WordPress, marketing digital, vizibilitate în căutare (AEO, GEO/local și SEO), design și găzduire. Ajutăm mărcile să fie găsite mai repede, să construiască site-uri web mai bune și să se dezvolte într-un mod măsurabil."
+          "answer": "TripleZero iT combină webdesign, suport WordPress, marketing digital, vizibilitate în căutare (AEO, GEO/local și SEO), design și găzduire. Ajutăm mărcile să fie găsite mai repede, să construiască site-uri web mai bune și să se dezvolte într-un mod măsurabil. [About us](/over-ons) · [Services](/diensten)"
         },
         {
           "id": "gen-2",
           "question": "Cum încep să utilizez TripleZero iT?",
-          "answer": "Contactează-ne sau rezervați o programare. Efectuăm o scurtă aport, revizuim obiectivele și stivuim, apoi pregătim o propunere concretă cu planificare și KPI."
+          "answer": "Contactează-ne sau rezervați o programare. Efectuăm o scurtă aport, revizuim obiectivele și stivuim, apoi pregătim o propunere concretă cu planificare și KPI. [Schedule appointment](/afspraak) · [Contact](/contact)"
         },
         {
           "id": "gen-3",
@@ -73,6 +73,46 @@
           "id": "gen-13",
           "question": "Puteți prelua sau colabora cu furnizorii existenți?",
           "answer": "Da. Lucrăm fără probleme alături de dezvoltatori, agenți de marketing sau agenții sau preluăm întreținerea și optimizarea fără a întrerupe în mod inutil activitatea existentă."
+        },
+        {
+          "id": "gen-14",
+          "question": "Ce este Agentul 000 (asistentul de chat)?",
+          "answer": "Agentul 000 este asistentul nostru digital pe site și în fluxurile de asistență. Răspunde la întrebările frecvente, indică articole din baza de cunoștințe și vă poate trimite la chat live, un bilet sau o întâlnire atunci când ajutorul uman este mai potrivit. Citește mai mult: [Digital assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Chat, ticket or call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "gen-15",
+          "question": "Cum îmi programez o întâlnire sau un telefon?",
+          "answer": "Puteți alege ora care vi se potrivește prin intermediul paginii Programări. Pentru întrebări rapide, puteți folosi și chatul live sau un bilet; o programare telefonică este utilă pentru procese sau intrări mai complexe. Citește mai mult: [Appointment](/afspraak) · [Call appointment explained](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)."
+        },
+        {
+          "id": "gen-16",
+          "question": "Unde pot vedea starea serviciilor dvs.?",
+          "answer": "Pe pagina de stare arătăm incidente și întreținere privind găzduirea și serviciile conexe, astfel încât să puteți vedea rapid dacă se întâmplă ceva. Citește mai mult: [Statuspage](/statuspage)."
+        },
+        {
+          "id": "gen-17",
+          "question": "Ai o bază de cunoștințe?",
+          "answer": "Da. Baza de cunoștințe conține manuale despre domenii, DNS, e-mail, găzduire, WordPress, scanare AI, securitate și multe altele - cu explicații pas cu pas. Citește mai mult: [Knowledge base](/kennisbank)."
+        },
+        {
+          "id": "gen-18",
+          "question": "Cum te descurci cu confidențialitatea și cookie-urile?",
+          "answer": "Lucrăm conștienți de GDPR: texte de confidențialitate, consimțământ pentru formulare și bannere cookie/mod consimțământ în care este necesară urmărirea. Pentru WordPress vă ajutăm cu o configurare corectă a cookie-urilor. Citește mai mult: [Cookie banner in WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress) · [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Privacy with forms](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren)."
+        },
+        {
+          "id": "gen-19",
+          "question": "Unde pot găsi știrile și actualizările tale?",
+          "answer": "Pe pagina de știri publicăm actualizări despre produse, securitate și sfaturi. Pentru defecțiuni tehnice, verificați pagina de stare. Citește mai mult: [News](/nieuws) · [Statuspage](/statuspage)."
+        },
+        {
+          "id": "gen-20",
+          "question": "Cât costă să lucrezi cu tine?",
+          "answer": "Asta depinde de mix: produsele de găzduire și cumpărături au prețuri fixe; design, SEO, reclame și rețineri urmează după aport. În magazin vezi pachete; vei primi o propunere de personalizare. Citește mai mult: [Shop](/shop) · [Contact](/contact)."
+        },
+        {
+          "id": "gen-21",
+          "question": "De asemenea, puteți face doar consultanță sau audit?",
+          "answer": "Da. Auditurile, scanările AI, recenziile tehnice și sesiunile de sparring pot fi efectuate separat de un proces cu servicii complete. Puteți apoi să o faceți singur sau lăsați-ne să ne ocupăm noi. Citește mai mult: [AI scan](/ai-scan) · [Services](/diensten)."
         }
       ]
     },
@@ -83,17 +123,17 @@
         {
           "id": "ai-1",
           "question": "Ce este o scanare AI la TripleZero iT?",
-          "answer": "O scanare de pregătire AI evaluează cât de bine poate fi găsit site-ul tău de motoarele de căutare clasice, răspunsurile AI și rezultatele căutării locale sau geografice (AEO, GEO, SEO și bazele tehnice)."
+          "answer": "O scanare de pregătire AI evaluează cât de bine poate fi găsit site-ul tău de motoarele de căutare clasice, răspunsurile AI și rezultatele căutării locale sau geografice (AEO, GEO, SEO și bazele tehnice). [What is the AI ​​scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Start AI scan](/ai-scan)"
         },
         {
           "id": "ai-2",
           "question": "Ce măsoară exact scanarea AI?",
-          "answer": "Scanarea măsoară semnalele AEO, vizibilitatea GEO/locală, elementele de bază ale SEO, structura conținutului, indicatorii de performanță și pregătirea AI. Primești scoruri și puncte concrete de îmbunătățire."
+          "answer": "Scanarea măsoară semnalele AEO, vizibilitatea GEO/locală, elementele de bază ale SEO, structura conținutului, indicatorii de performanță și pregătirea AI. Primești scoruri și puncte concrete de îmbunătățire. [Explain scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)"
         },
         {
           "id": "ai-3",
           "question": "Cât de des ar trebui să execut o scanare AI?",
-          "answer": "Cel puțin după modificări majore ale site-ului sau campanii. Pentru mărcile active, recomandăm scanări periodice, de exemplu în fiecare trimestru, astfel încât să rămâneți vizibil în rezultatele căutării și AI."
+          "answer": "Cel puțin după modificări majore ale site-ului sau campanii. Pentru mărcile active, recomandăm scanări periodice, de exemplu în fiecare trimestru, astfel încât să rămâneți vizibil în rezultatele căutării și AI. [Start AI scan](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website)"
         },
         {
           "id": "ai-4",
@@ -118,12 +158,12 @@
         {
           "id": "ai-8",
           "question": "Ce este pregătirea AI pentru marca mea?",
-          "answer": "Este gradul în care site-ul, conținutul și datele sunt configurate astfel încât sistemele AI să poată cita, recomanda și explica corect marca ta "
+          "answer": "Este gradul în care site-ul, conținutul și datele sunt configurate astfel încât sistemele AI să poată cita, recomanda și explica corect marca ta. [AI readiness in the scan](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)"
         },
         {
           "id": "ai-9",
           "question": "Puteți folosi agenți AI în tabloul de bord?",
-          "answer": "Da. În portalul pentru clienți vedeți agenți AI pentru SEO, conținut, rețele sociale și reclame - inclusiv starea și sarcinile."
+          "answer": "Da. În portalul pentru clienți vedeți agenți AI pentru SEO, conținut, rețele sociale și reclame - inclusiv starea și sarcinile. [What are AI agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Agents in your account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)"
         },
         {
           "id": "ai-10",
@@ -144,6 +184,46 @@
           "id": "ai-13",
           "question": "Cum măsoară rentabilitatea investiției inițiativelor AI?",
           "answer": "Prin KPI, cum ar fi traficul, clienții potențiali, timpul economisit, conținutul, rezoluția biletelor și conversia. Le definim în avans în plan, astfel încât rezultatele să rămână vizibile."
+        },
+        {
+          "id": "ai-14",
+          "question": "Cum incep o scanare AI pe site-ul meu?",
+          "answer": "Accesați scanarea AI, introduceți adresa URL și începeți analiza. Obțineți scoruri pentru AEO, GEO, SEO, performanță și pregătirea AI plus puncte pentru îmbunătățire. Citește mai mult: [Start AI scan](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website) · [AI scan page](/ai-scan)."
+        },
+        {
+          "id": "ai-15",
+          "question": "Cum citesc scorurile scanării AI?",
+          "answer": "Fiecare scor arată cât de puternic ești în acea zonă; scorurile mici vin cu sfaturi concrete. Utilizați scanarea ca o listă de priorități, nu ca un „buletin de raport” unic. Citește mai mult: [Explain scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Next steps](/kennisbank/ai-scan/welke-vervolgstappen-zet-ik-na-mijn-ai-scan)."
+        },
+        {
+          "id": "ai-16",
+          "question": "Care este diferența dintre o scanare AI și un proces complet AEO/GEO/SEO?",
+          "answer": "Scanarea este un diagnostic rapid. Un proces implementează îmbunătățiri: conținut, date structurate, SEO tehnic, semnale locale și măsurare în timp. Citește mai mult: [Scan versus process](/kennisbank/ai-scan/ai-scan-versus-een-volledig-aeo-geo-seo-traject-wat-is-het-verschil) · [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-17",
+          "question": "Unde pot găsi scanări AI anterioare în contul meu?",
+          "answer": "Clienții conectați văd scanările și analizele anterioare în tabloul de bord (analiza SEO), astfel încât să puteți compara progresul. Citește mai mult: [AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Account / dashboard](/dashboard)."
+        },
+        {
+          "id": "ai-18",
+          "question": "Ce fac după un scor AEO sau GEO scăzut?",
+          "answer": "Prioritizează întrebări frecvente, entități, date structurate (AEO) și Google Business Profile / NAP / pagini de destinație locale (GEO). Ajutăm la transpunerea acelei foi de parcurs în implementare. Citește mai mult: [Scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Local Discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "ai-19",
+          "question": "Cum lucrează agenții AI în portalul clienților?",
+          "answer": "Agenții AI susțin sarcini legate de SEO, conținut, social sau reclame. Deschideți prezentarea generală în contul dvs., vedeți starea și puteți porni sau întrerupe agenți în funcție de pachetul dvs. Citește mai mult: [What are AI agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Open agents](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)."
+        },
+        {
+          "id": "ai-20",
+          "question": "Scanarea AI este gratuită?",
+          "answer": "Există o intrare accesibilă prin pagina de scanare AI; analizele și procesele mai profunde intră sub incidența serviciilor sau a reținerii. După scanare, veți vedea imediat dacă o urmărire este utilă. Citește mai mult: [AI scan](/ai-scan) · [What is the AI ​​scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-21",
+          "question": "Agentul 000 ajută și la întrebările despre AI și SEO?",
+          "answer": "Da. Agent 000 folosește Întrebări frecvente și baza de cunoștințe pentru a răspunde întrebărilor de scanare AEO/GEO/SEO și AI și link-uri către articolele potrivite sau urmărirea umană. Citește mai mult: [Digital Assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [FAQ](/faq)."
         }
       ]
     },
@@ -154,17 +234,17 @@
         {
           "id": "seo-1",
           "question": "Care este diferența dintre AEO, GEO și SEO?",
-          "answer": "AEO (Answer Engine Optimization) se concentrează pe răspunsurile AI. GEO (Geographic Search Engine Optimization) întărește vizibilitatea locală și regională în Hărți, pachete locale și căutare bazată pe locație. SEO optimizează pentru motoarele de căutare clasice."
+          "answer": "AEO (Answer Engine Optimization) se concentrează pe răspunsurile AI. GEO (Geographic Search Engine Optimization) întărește vizibilitatea locală și regională în Hărți, pachete locale și căutare bazată pe locație. SEO optimizează pentru motoarele de căutare clasice. [How AEO, GEO and SEO are related](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen) · [What is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization)"
         },
         {
           "id": "seo-2",
           "question": "De ce contează acum AEO/GEO?",
-          "answer": "Mai mulți căutători primesc răspunsuri prin AI și caută, de asemenea, local („lângă mine”). Fără AEO îți lipsesc citările AI; fără GEO pierzi clienții potențiali locali — chiar și atunci când SEO clasic este solid."
+          "answer": "Mai mulți căutători primesc răspunsuri prin AI și caută, de asemenea, local („lângă mine”). Fără AEO îți lipsesc citările AI; fără GEO pierzi clienții potențiali locali — chiar și atunci când SEO clasic este solid. [What is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant)"
         },
         {
           "id": "seo-3",
           "question": "Cum incepi un angajament SEO?",
-          "answer": "Începem cu un audit tehnic, o cercetare a cuvintelor cheie și a intențiilor, o analiză a decalajului de conținut și o foaie de parcurs prioritară legată de KPI-urile afacerii ta "
+          "answer": "Începem cu un audit tehnic, o cercetare a cuvintelor cheie și a intențiilor, o analiză a decalajului de conținut și o foaie de parcurs prioritară legată de KPI-urile afacerii ta. [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)"
         },
         {
           "id": "seo-4",
@@ -174,7 +254,7 @@
         {
           "id": "seo-5",
           "question": "Faceți și SEO local?",
-          "answer": "Da. Lucrăm la Google Business Profile, paginile de destinație locale, consistența NAP, recenzii și clustere de conținut local, astfel încât să fiți găsit mai bine în regiunea ta "
+          "answer": "Da. Lucrăm la Google Business Profile, paginile de destinație locale, consistența NAP, recenzii și clustere de conținut local, astfel încât să fiți găsit mai bine în regiunea ta. [Improve local discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)"
         },
         {
           "id": "seo-6",
@@ -220,6 +300,36 @@
           "id": "seo-14",
           "question": "Ajuți cu SEO internațional?",
           "answer": "Da. Ne ocupăm de hreflang, cercetări de piață pe țară sau limbă, localizarea conținutului și setările tehnice multi-locale."
+        },
+        {
+          "id": "seo-15",
+          "question": "Ce este mai exact AEO?",
+          "answer": "AEO (Answer Engine Optimization) creează conținut astfel încât răspunsurile AI și motoarele de răspuns să poată cita corect marca dvs.: întrebări frecvente clare, entități și date structurate. Citește mai mult: [What is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AEO, GEO and SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
+        },
+        {
+          "id": "seo-16",
+          "question": "Ce este GEO (SEO geografic)?",
+          "answer": "GEO întărește capacitatea de descoperire locală și regională — hărți, pachete locale și căutare bazată pe locație — prin GBP, consistența NAP și conținutul local. Citește mai mult: [What is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant) · [Local discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "seo-17",
+          "question": "Cum comand sau incep optimizarea SEO?",
+          "answer": "Începeți cu o scanare sau un audit AI, apoi cu o propunere cu priorități. De asemenea, puteți combina SEO cu conținut și tehnologie prin magazin/servicii sau retener. Citește mai mult: [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting) · [AI Scan](/ai-scan)."
+        },
+        {
+          "id": "seo-18",
+          "question": "Puteți ajuta cu datele structurate și cu programarea întrebărilor frecvente?",
+          "answer": "Da. Creăm diagrame relevante (FAQ, Organizație, LocalBusiness, produse) și structurăm conținutul astfel încât motoarele de căutare și AI să te înțeleagă mai bine. Citește mai mult: [AEO explanation](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AI scan scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)."
+        },
+        {
+          "id": "seo-19",
+          "question": "Ce faci cu Core Web Vitals?",
+          "answer": "Măsurăm LCP, INP și CLS, rezolvăm active grele, găzduire/caching și probleme legate de teme și legăm acest lucru la CDN acolo unde este util. Citește mai mult: [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [Choose Hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "seo-20",
+          "question": "Puteți combina SEO cu găzduirea și îngrijirea WordPress?",
+          "answer": "Da. Găzduire stabilă, actualizări și performanță stau la baza; SEO se bazează pe asta. Mulți clienți combină WP-care + hosting + SEO continuu. Citește mai mult: [Hosting](/diensten/categorie/hosting) · [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
         }
       ]
     },
@@ -291,6 +401,26 @@
           "id": "ads-13",
           "question": "Remarketing-ul este încă relevant?",
           "answer": "Da, atunci când este compatibil cu confidențialitatea și este asociat cu reclame și oferte puternice. Adesea rămâne cel mai eficient strat din pâlnie."
+        },
+        {
+          "id": "ads-14",
+          "question": "Ajuți cu modul de consimțământ și cu bannere cookie pentru reclame?",
+          "answer": "Da. Fără consimțământul și etichetarea corecte, măsurarea anunțurilor nu este de încredere. Legăm bine bannere, GTM/GA4 și pixeli. Citește mai mult: [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Cookie banner WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "ads-15",
+          "question": "Puteți crea pagini de destinație pentru campanii?",
+          "answer": "Da — pagini de destinație rapide sau pagini WordPress adaptate intenției de căutare, cu elemente de bază privind urmărirea și CRO. Citește mai mult: [Services](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "ads-16",
+          "question": "Cum preveniți irosirea bugetului de publicitate?",
+          "answer": "Structura strânsă a contului, cuvinte cheie negative, excluderi de public, potrivire în pagina de destinație și optimizare săptămânală pentru CPA/ROAS - nu doar clicuri."
+        },
+        {
+          "id": "ads-17",
+          "question": "Reclamele funcționează bine cu AEO/SEO?",
+          "answer": "Da. Reclamele oferă date și trafic rapid; SEO/AEO construiește o vizibilitate durabilă. Informații din cuvintele cheie și reclame alimentează conținutul și paginile de destinație. Citește mai mult: [AEO, GEO and SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
         }
       ]
     },
@@ -362,6 +492,26 @@
           "id": "des-13",
           "question": "Unde pot afla mai multe despre Design grafic?",
           "answer": "Mai multe informații sunt pe /design-grafic și prin serviciile de Design grafic din meniu."
+        },
+        {
+          "id": "des-14",
+          "question": "Furnizați și sisteme de proiectare și biblioteci de componente?",
+          "answer": "Da, pentru mărcile care doresc să se extindă în mod constant: jetoane, componente și documentație, astfel încât marketingul și produsul să vorbească aceeași limbă."
+        },
+        {
+          "id": "des-15",
+          "question": "Puteți digitiza stilul de brand existent?",
+          "answer": "Da. Traducem liniile directoare ale mărcii tipărite sau incomplete în culori pregătite pentru web, tipografie, kit UI și șabloane."
+        },
+        {
+          "id": "des-16",
+          "question": "Faceți cercetări UX sau doar design vizual?",
+          "answer": "ambele. Acolo unde este necesar, începem cu interviuri, analize pâlnie sau hărți termice; apoi UI. În acest fel proiectăm în funcție de comportament, nu doar de gust."
+        },
+        {
+          "id": "des-17",
+          "question": "Puteți crea șabloane sociale și reclame publicitare?",
+          "answer": "Da — carusele, miniaturi, povești și reclame care se potrivesc cu obiectivele mărcii și campaniei dvs. Citește mai mult: [Services](/diensten)."
         }
       ]
     },
@@ -433,6 +583,26 @@
           "id": "mkt-13",
           "question": "Cum preveniți „marketingul ocupat” fără rezultate?",
           "answer": "Fiecare activitate este legată de KPI-uri. Tacticile neperformante sunt oprite sau îmbunătățite cu date, astfel încât bugetul merge la ceea ce funcționează."
+        },
+        {
+          "id": "mkt-14",
+          "question": "Ce este de obicei inclus într-o mențiune de marketing?",
+          "answer": "O combinație de strategie, conținut sau SEO, campanii, raportare și experimente – adaptate la KPI. Înregistrăm domeniul și orele, astfel încât prioritățile să rămână clare. Citește mai mult: [Shop](/shop) · [Contact](/contact)."
+        },
+        {
+          "id": "mkt-15",
+          "question": "Ajuți cu poziționarea și mesageria?",
+          "answer": "Da. Poziționarea clară, elementele de recuzită valorice și copierea paginii asigură că reclamele, SEO și vânzările transmit același mesaj."
+        },
+        {
+          "id": "mkt-16",
+          "question": "Măsurați marketingul în funcție de conductă, nu doar de trafic?",
+          "answer": "Acolo unde este posibil: clienți potențiali, SQL-uri, venituri sau conversii asistate. Ajustăm sau oprim traficul fără calitate."
+        },
+        {
+          "id": "mkt-17",
+          "question": "Puteți curăța stiva de marketing și urmărirea?",
+          "answer": "Da — GTM, GA4, pixeli, legături CRM și consimțământ. Datele curate sunt baza pentru decizii bune. Citește mai mult: [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen)."
         }
       ]
     },
@@ -504,6 +674,153 @@
           "id": "soc-13",
           "question": "Cât de repede vom vedea o creștere pe rețelele sociale?",
           "answer": "Consecvența contează. Creșterea semnificativă durează de obicei săptămâni până la luni; cu suport pentru reclame, de multe ori merge mai repede."
+        },
+        {
+          "id": "soc-14",
+          "question": "Ajuți cu dovezi sociale și recenzii?",
+          "answer": "Da. Planificăm solicitări de revizuire, cazuri și formate asemănătoare UGC care construiesc încredere – fără implicare falsă."
+        },
+        {
+          "id": "soc-15",
+          "question": "Poți înființa apărarea angajaților?",
+          "answer": "Da, mai ales pe LinkedIn: ghiduri simple, șabloane și un ritm pentru ca echipa să împărtășească vizibil expertiza."
+        },
+        {
+          "id": "soc-16",
+          "question": "Cum conectezi rețelele sociale la site și la magazin?",
+          "answer": "Prin UTM-uri, pagini de destinație, link-uri de produse și retargeting. Socialul este un canal în pâlnie, nu o insulă. Citește mai mult: [Shop](/shop)."
+        }
+      ]
+    },
+    {
+      "id": "account-portaal",
+      "title": "Cont și portal",
+      "items": [
+        {
+          "id": "acc-1",
+          "question": "Cum mă conectez la portalul clienților?",
+          "answer": "Accesați cont/login și utilizați adresa de e-mail a contului dvs. de client. Dacă ați pierdut date, utilizați resetarea parolei sau contactați-ne. Citește mai mult: [Account](/dashboard) · [Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-2",
+          "question": "Ce văd în tabloul de bord?",
+          "answer": "În funcție de serviciile dvs.: bilete, proiecte, facturi, scanare AI/agenți și link-uri rapide pentru asistență. Citește mai mult: [AI agents in account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account) · [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "acc-3",
+          "question": "Mi-am pierdut detaliile de conectare — ce acum?",
+          "answer": "Folosiți „ți-am uitat parola” sau urmați pașii din baza de cunoștințe pentru panoul pentru clienți. Dacă acest lucru nu funcționează, deschideți un bilet printr-o adresă de contact cunoscută. Citește mai mult: [Lost login details](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-4",
+          "question": "Cum deschid un bilet de pe portal?",
+          "answer": "În panoul pentru clienți, alegeți asistență/bilete, descrieți problema dvs. și adăugați dovezi (URL, capturi de ecran). Citește mai mult: [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "acc-5",
+          "question": "Unde pot găsi facturile mele?",
+          "answer": "Puteți vizualiza și descărca facturile în portal, sub facturare/facturare. Citește mai mult: [Consult invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "acc-6",
+          "question": "Cum schimb informațiile de facturare sau metoda de plată?",
+          "answer": "Ajustați numele companiei, numărul de TVA și metoda de plată în setările contului, astfel încât noile facturi să fie corecte. Citește mai mult: [Change invoice details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "acc-7",
+          "question": "Pot avea acces și colegii?",
+          "answer": "Da, cu roluri de cont (client, manager, administrator), astfel încât mai mulți membri ai echipei să poată urmări biletele sau proiectele fără a partaja totul."
+        },
+        {
+          "id": "acc-8",
+          "question": "Scanarea AI și agenții AI sunt conectați la contul meu?",
+          "answer": "Da. Scanările și agenții aparțin contului dvs. de client, astfel încât istoricul și drepturile să fie păstrate. Citește mai mult: [AI agents](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "acc-9",
+          "question": "Cât de sigur este contul meu de client?",
+          "answer": "Folosiți parole unice și 2FA acolo unde este disponibil (inclusiv pe panourile de găzduire). Nu partajați sesiuni pe computere partajate. Citește mai mult: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
+        },
+        {
+          "id": "acc-10",
+          "question": "Pot urmări starea proiectului și rezultatele?",
+          "answer": "Acolo unde proiectele sunt listate în portal, puteți vedea starea și comunicarea. În caz contrar, vă vom ține la curent prin bilete sau actualizări de sprint."
+        },
+        {
+          "id": "acc-11",
+          "question": "Cum conectez serviciile din magazin la contul meu?",
+          "answer": "După finalizare, comenzile aparțin contului dvs.; furnizarea (gazduire, domeniu) urmează automat sau prin integrare prin suport. Citește mai mult: [Shop](/shop)."
+        },
+        {
+          "id": "acc-12",
+          "question": "Unde stabilesc notificările sau preferințele?",
+          "answer": "În setările contului, gestionați profilul și, acolo unde sunt disponibile, preferințele de notificare. Pentru e-mailurile cu facturi, păstrați-vă adresa de e-mail la zi."
+        }
+      ]
+    },
+    {
+      "id": "shop-bestellen",
+      "title": "Cumpărături și comandă",
+      "items": [
+        {
+          "id": "shop-1",
+          "question": "Ce pot comanda în magazin?",
+          "answer": "Pachete de găzduire, domenii, produse de îngrijire/asistență și alte servicii pe care le oferim online. Cotațiile personalizate se fac prin contact. Citește mai mult: [Shop](/shop) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "shop-2",
+          "question": "Cum funcționează coșul de cumpărături și checkout?",
+          "answer": "Adăugați produse, verificați perioada (lună/an) și completați prin finalizarea comenzii. Veți primi apoi confirmarea și accesul la contul dvs. Citește mai mult: [Shopping cart](/shop/cart)."
+        },
+        {
+          "id": "shop-3",
+          "question": "Prețurile includ sau nu includ TVA?",
+          "answer": "În magazin afișăm prețurile în funcție de contextul TVA afișat (deseori inclusiv pentru fluxurile de consum). Factura conține o defalcare netă a TVA-ului pentru clienții business."
+        },
+        {
+          "id": "shop-4",
+          "question": "Pot plăti lunar sau anual?",
+          "answer": "Multe produse de găzduire și îngrijire au opțiuni lunare și anuale. Anual este adesea mai ieftin; detaliile sunt pe cardul produsului."
+        },
+        {
+          "id": "shop-5",
+          "question": "Ce metode de plată acceptați?",
+          "answer": "Metode online obișnuite prin checkout (în funcție de regiune). Pentru facturile de întreprindere putem aranja facturarea în cont prin contact."
+        },
+        {
+          "id": "shop-6",
+          "question": "Am acces imediat după plată?",
+          "answer": "Pentru produsele standard de găzduire/domeniu, aprovizionarea urmează rapid după plata cu succes. Pentru servicii personalizate, suportul planifică lansarea."
+        },
+        {
+          "id": "shop-7",
+          "question": "Pot face upgrade la pachete mai târziu?",
+          "answer": "Da. De la partajat la cloud/VPS sau de la Basic la Plus/Business este posibil cu planificarea migrației. Citește mai mult: [Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [Choose package](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "shop-8",
+          "question": "Cum combin produsele din magazin cu personalizarea?",
+          "answer": "Comandați găzduire/îngrijire online și planificați design, SEO sau reclame prin aport. Combinăm facturarea și contul acolo unde este posibil. Citește mai mult: [Contact](/contact)."
+        },
+        {
+          "id": "shop-9",
+          "question": "Ce se întâmplă dacă comanda mea nu ajunge sau este blocată?",
+          "answer": "Verificați e-mailul (inclusiv spam-ul) și portalul. Dacă rămâne tăcut, deschideți un bilet sau e-mail de asistență cu numărul de comandă. Citește mai mult: [Contact](/contact) · [Tickets](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "shop-10",
+          "question": "Pot comanda un domeniu și găzduire într-o singură comandă?",
+          "answer": "Da, acesta este fluxul obișnuit: domeniu + hosting în coșul de cumpărături, apoi conexiune DNS. Citește mai mult: [Domains](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "shop-11",
+          "question": "Există pachete pentru WordPress Care?",
+          "answer": "Da. Pachetele de îngrijire acoperă actualizări, monitorizare și întreținere - separat sau în plus față de găzduire. Citește mai mult: [Shop](/shop)."
+        },
+        {
+          "id": "shop-12",
+          "question": "Cum anulez sau modific o comandă?",
+          "answer": "Imediat dupa comanda prin suport; După aceea, se aplică condiții de anulare și modificare pentru fiecare produs. Ajutăm la migrare sau la export dacă opriți. Citește mai mult: [Contact](/contact)."
         }
       ]
     },
@@ -514,12 +831,12 @@
         {
           "id": "sup-1",
           "question": "Ce suport oferi?",
-          "answer": "Oferim suport WordPress, suport personalizat pentru site-uri web, bilete și chat live, întreținere, securitate, performanță și răspuns la incident."
+          "answer": "Oferim suport WordPress, suport personalizat pentru site-uri web, bilete și chat live, întreținere, securitate, performanță și răspuns la incident. [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting) · [Chat, ticket or call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)"
         },
         {
           "id": "sup-2",
           "question": "Cum ajung la asistență?",
-          "answer": "Prin contact, o programare, bilete în tabloul de bord sau chat live pe site. Cazurile urgente sunt marcate ca prioritare."
+          "answer": "Prin contact, o programare, bilete în tabloul de bord sau chat live pe site. Cazurile urgente sunt marcate ca prioritare. [Contact](/contact) · [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Call appointment](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)"
         },
         {
           "id": "sup-3",
@@ -529,7 +846,7 @@
         {
           "id": "sup-4",
           "question": "Oferiți monitorizare 24/7?",
-          "answer": "Da, în pachetele relevante de asistență și găzduire: monitorizare, backup și alerte, astfel încât problemele să devină vizibile mai devreme."
+          "answer": "Da, în pachetele relevante de asistență și găzduire: monitorizare, backup și alerte, astfel încât problemele să devină vizibile mai devreme. [Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup)"
         },
         {
           "id": "sup-5",
@@ -539,22 +856,22 @@
         {
           "id": "sup-6",
           "question": "Te ocupi de actualizările WordPress pentru noi?",
-          "answer": "Da, prin „Întreținere și actualizări”: nucleu, pluginuri și teme, cu backup și verificări înainte și după actualizare."
+          "answer": "Da, prin „Întreținere și actualizări”: nucleu, pluginuri și teme, cu backup și verificări înainte și după actualizare. [Site down after WP update](/kennisbank/hosting/website-down-na-update-wordpress)"
         },
         {
           "id": "sup-7",
           "question": "Ajuți cu problemele de găzduire?",
-          "answer": "Da. Diagnosticam, migram sau optimizam gazduirea, VPS-urile si domeniile pana cand site-ul ruleaza din nou stabil."
+          "answer": "Da. Diagnosticam, migram sau optimizam gazduirea, VPS-urile si domeniile pana cand site-ul ruleaza din nou stabil. [Move website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je)"
         },
         {
           "id": "sup-8",
           "question": "Ce se întâmplă dacă site-ul meu este oprit?",
-          "answer": "Raportați-l ca urgent. Restaurăm acolo unde este posibil prin backup-uri, verificări de server și o remediere rapidă și te ținem la curent cu starea pe parcurs."
+          "answer": "Raportați-l ca urgent. Restaurăm acolo unde este posibil prin backup-uri, verificări de server și o remediere rapidă și te ținem la curent cu starea pe parcurs. [Backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [Check yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support)"
         },
         {
           "id": "sup-9",
           "question": "Există un portal pentru clienți?",
-          "answer": "Da. Clienții autentificați văd tabloul de bord, biletele, proiectele și, acolo unde este cazul, CRM sau facturile."
+          "answer": "Da. Clienții autentificați văd tabloul de bord, biletele, proiectele și, acolo unde este cazul, CRM sau facturile. [Ticket via customer panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel) · [Lost login?](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)"
         },
         {
           "id": "sup-10",
@@ -569,12 +886,62 @@
         {
           "id": "sup-12",
           "question": "Ajuți și cu întrebări non-tehnice?",
-          "answer": "Da, despre servicii, facturare și cont. Cât de adânc ajungem din punct de vedere tehnic depinde de pachetul ta "
+          "answer": "Da, despre servicii, facturare și cont. Cât de adânc ajungem din punct de vedere tehnic depinde de pachetul ta"
         },
         {
           "id": "sup-13",
           "question": "Pot face upgrade de asistență mai târziu?",
           "answer": "Da. Puteți crește atunci când traficul, riscul sau nevoile echipei cresc."
+        },
+        {
+          "id": "sup-14",
+          "question": "Care este diferența dintre chat, bilet și programare telefonică?",
+          "answer": "Chatul este rapid pentru întrebări scurte; biletele sunt mai bune pentru cazurile tehnice cu jurnal și urmărire; o programare telefonica este potrivita pentru o explicatie de admisie sau complexa. Citește mai mult: [Chat versus ticket versus call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "sup-15",
+          "question": "Cum creez un bilet de asistență?",
+          "answer": "Conectați-vă la panoul pentru clienți și deschideți un bilet cu o adresă URL clară, pași și capturi de ecran. Cu cât informațiile sunt mai bune, cu atât mai repede vă putem ajuta. Citește mai mult: [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "sup-16",
+          "question": "Aveți copii de rezervă dacă site-ul meu se defectează?",
+          "answer": "Da, în funcție de pachetul de găzduire sau de asistență. În caz de nefuncționare, restaurăm din copiile de rezervă acolo unde este posibil și investigăm cauza. Citește mai mult: [Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor)."
+        },
+        {
+          "id": "sup-17",
+          "question": "Ce pot să mă verific înainte de a apela la asistență?",
+          "answer": "Verificați pagina de stare, propagarea DNS, actualizările recente, spațiul pe disc și dacă eroarea este reproductibilă. Asta accelerează diagnosticul. Citește mai mult: [Do it yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support) · [Statuspage](/statuspage)."
+        },
+        {
+          "id": "sup-18",
+          "question": "Cum funcționează chatul live pe site?",
+          "answer": "Deschide chatul live prin butonul de chat. Agentul 000 ajută mai întâi cu întrebări frecvente/bază de cunoștințe; Pentru chestiuni mai complexe sau urgente, vă trimitem la un angajat. Citește mai mult: [Digital Assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Contact](/contact)."
+        },
+        {
+          "id": "sup-19",
+          "question": "Puteți ajuta cu o eroare critică WordPress?",
+          "answer": "Da. Diagnosticam ecranele albe, erorile PHP critice și conflictele de pluginuri, cu backup și remediere țintită. Citește mai mult: [Critical Error WordPress](/kennisbank/wordpress/kritieke-fout-wordpress) · [Down after update](/kennisbank/hosting/website-down-na-update-wordpress)."
+        },
+        {
+          "id": "sup-20",
+          "question": "Puteți viziona de la distanță (TeamViewer, etc.)?",
+          "answer": "Acolo unde este necesar și cu permisiunea, pentru probleme desktop sau panou. Pentru majoritatea problemelor de găzduire, accesul la panou, DNS sau WordPress este suficient. Citește mai mult: [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "sup-21",
+          "question": "Cum anulez un abonament sau un serviciu?",
+          "answer": "Puteți anula prin intermediul panoului pentru clienți sau asistență; acordați atenție perioadelor de preaviz din contractul dvs. Vă ajutăm să finalizați cu grijă transferul de date/export și DNS. Citește mai mult: [Contact](/contact) · [Account](/dashboard)."
+        },
+        {
+          "id": "sup-22",
+          "question": "Oferiți pachete WordPress de îngrijire / întreținere?",
+          "answer": "Da. Actualizările, backup-urile, verificările de securitate și performanța sunt incluse în pachetele de îngrijire - ideale pe lângă găzduire. Citește mai mult: [Shop](/shop) · [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren)."
+        },
+        {
+          "id": "sup-23",
+          "question": "Ce se întâmplă dacă e-mailul nu mai funcționează brusc?",
+          "answer": "Verificați DNS (MX/SPF/DKIM/DMARC), cota cutiei poștale și dacă Microsoft sau furnizorii blochează e-mailul. Ajutăm la măsurarea lanțului. Citește mai mult: [Email Problems](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
         }
       ]
     },
@@ -585,7 +952,7 @@
         {
           "id": "web-1",
           "question": "Construiți doar site-uri WordPress?",
-          "answer": "Nu. Pe lângă WordPress, facem webdesign personalizat în HTML/CSS/JS, PHP și Next.js — separat de serviciile WordPress."
+          "answer": "Nu. Pe lângă WordPress, facem webdesign personalizat în HTML/CSS/JS, PHP și Next.js — separat de serviciile WordPress. [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [Services](/diensten)"
         },
         {
           "id": "web-2",
@@ -635,7 +1002,7 @@
         {
           "id": "web-11",
           "question": "Dar performanța după lansare?",
-          "answer": "Optimizăm Core Web Vitals, cache sau CDN și monitorizare. Îngrijirea ulterioară continuă apoi prin pachete de întreținere."
+          "answer": "Optimizăm Core Web Vitals, cache sau CDN și monitorizare. Îngrijirea ulterioară continuă apoi prin pachete de întreținere. [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)"
         },
         {
           "id": "web-12",
@@ -651,87 +1018,349 @@
           "id": "web-14",
           "question": "Ajuți cu optimizarea conversiilor pe site?",
           "answer": "Da. Efectuăm teste A/B, îmbunătățiri UX, formulare, CTA și viteza paginii, astfel încât mai mulți vizitatori să convertească."
+        },
+        {
+          "id": "web-15",
+          "question": "Construiți și magazine web?",
+          "answer": "Da, de la site-uri de marketing cu integrări de plată la e-commerce pe WordPress sau personalizare. Coordonăm domeniul de aplicare, plățile și îndeplinirea în timpul admiterii. Citește mai mult: [Services](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "web-16",
+          "question": "Cum te descurci cu textele de confidențialitate de pe site-uri?",
+          "answer": "Consiliem și implementăm fluxuri de confidențialitate și consimțământ pentru formulare și bannere, adaptate avocatului dvs. acolo unde este necesar. Citește mai mult: [Privacy with forms](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren) · [Cookie banner](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "web-17",
+          "question": "Oferiți medii de scenă?",
+          "answer": "Da, acolo unde este relevant: organizare pentru recenzii și teste, apoi implementare controlată în producție."
+        },
+        {
+          "id": "web-18",
+          "question": "Puteți prelua și îmbunătăți un site WordPress existent?",
+          "answer": "Da — audit, actualizări, securitate, viteză, UX și SEO, fără a construi inutil de la zero. Citește mai mult: [WP move](/kennisbank/domeinnamen/wordpress-website-verhuizen) · [Critical errors](/kennisbank/wordpress/kritieke-fout-wordpress)."
+        },
+        {
+          "id": "web-19",
+          "question": "Ce zici de HTTP la HTTPS după livrare?",
+          "answer": "Site-urile sunt implicite la HTTPS. În timpul migrărilor, forțăm HTTPS și rezolvăm conținutul mixt. Citește mai mult: [HTTP to HTTPS in WordPress](/kennisbank/wordpress/wordpress-url-omzetten-van-http-naar-https) · [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig)."
+        }
+      ]
+    },
+    {
+      "id": "domeinen",
+      "title": "Domenii asociate nu sunt accesibile",
+      "items": [
+        {
+          "id": "dom-1",
+          "question": "Ce este un nume de domeniu?",
+          "answer": "Un nume de domeniu este adresa pe care vizitatorii o folosesc pentru a vă găsi site-ul web (de exemplu, example.com). Se leagă de înregistrările DNS care indică găzduirea sau e-mailul dvs. Citește mai mult: [Domain registration](/kennisbank/domeinnamen/domeinnaamregistratie) · [Order domains](/domeinen)."
+        },
+        {
+          "id": "dom-2",
+          "question": "Cum înregistrez un nume de domeniu la tine?",
+          "answer": "Căutați numele pe pagina de domenii, alegeți o extensie și finalizați achiziția în magazin. După înregistrare, gestionați DNS, serverele de nume și facturile în contul dvs. Citește mai mult: [Domains](/domeinen) · [Registration guide](/kennisbank/domeinnamen/domeinnaamregistratie) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-3",
+          "question": "Pot să-ți transfer domeniul meu?",
+          "answer": "Da. Solicitați un cod de autorizare (EPP) de la registratorul actual, deblocați orice blocare a transferului, apoi începeți transferul cu noi. După aceea, setăm corect DNS și serverele de nume. Citește mai mult: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Authorisation code](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-4",
+          "question": "Ce este un cod de autorizare (Cod EPP/Auth)?",
+          "answer": "Este un cod unic de la registratorul actual care începe în siguranță un transfer de domeniu. Fără un cod valid, transferul nu poate continua. Citește mai mult: [What is an authorisation code?](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen)."
+        },
+        {
+          "id": "dom-5",
+          "question": "Ce este un blocare de transfer sau un blocare de înregistrare?",
+          "answer": "O blocare previne transferurile nedorite. Pentru o mutare, adesea trebuie să o dezactivați la furnizorul actual, apoi să începeți transferul cu noi. Citește mai mult: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Support](/contact)."
+        },
+        {
+          "id": "dom-6",
+          "question": "Pot cumpăra un domeniu fără găzduire?",
+          "answer": "Da. Puteți să vă înregistrați sau să transferați doar un domeniu și să adăugați mai târziu găzduire sau e-mail. Puteți deja să gestionați sau să redirecționați DNS între timp. Citește mai mult: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-7",
+          "question": "Ce extensii (.nl, .com, …) pot să mă înregistrez?",
+          "answer": "Acceptăm TLD-uri comune, cum ar fi .nl și .com, plus multe extensii internaționale. Disponibilitatea și prețul sunt afișate instantaneu în căutarea domeniului. Citește mai mult: [Domains](/domeinen) · [Registration](/kennisbank/domeinnamen/domeinnaamregistratie)."
+        },
+        {
+          "id": "dom-8",
+          "question": "Cum îmi reînnoiesc numele de domeniu?",
+          "answer": "Reînnoirea se efectuează prin facturi și portalul dumneavoastră pentru clienți; reînnoirea automată este adesea disponibilă. Păstrați detaliile de plată actualizate pentru a evita expirarea. Citește mai mult: [Invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails) · [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "dom-9",
+          "question": "Ce sunt numele de domenii premium?",
+          "answer": "Numele premium sunt domenii scurte sau populare cu un preț de achiziție mai mare, adesea prin intermediul unei piețe de schimb. Disponibilitatea și termenii diferă în funcție de extensie. Citește mai mult: [Premium domains](/kennisbank/domeinnamen/premium-domeinnamen) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-10",
+          "question": "Îmi pot înregistra domeniul anonim (Protect ID)?",
+          "answer": "Acolo unde registrul permite acest lucru, puteți lua în considerare confidențialitate/Protect ID. Regulile diferă prin extensie — .nl, de exemplu, are propriul cadru. Citește mai mult: [Protect ID](/kennisbank/domeinnamen/protect-id-domein-anoniem-registreren)."
+        },
+        {
+          "id": "dom-11",
+          "question": "Domeniul meu este în carantină – ce acum?",
+          "answer": "După ștergere, un domeniu poate intra în carantină. În funcție de registru, îl puteți reactiva adesea contra cost; nu astepta prea mult. Citește mai mult: [Domain out of quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-12",
+          "question": "Noul meu nume de domeniu nu funcționează încă - ce acum?",
+          "answer": "De obicei, este vorba de propagarea DNS, înregistrările A/MX lipsă sau serverele de nume care nu sunt încă actualizate. Verificați înregistrările și permiteți TTL-urilor să expire. Citește mai mult: [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-13",
+          "question": "Cum conectez un domeniu la planul meu de găzduire?",
+          "answer": "Adăugați domeniul în panoul sau contul dvs. și indicați DNS (înregistrare A sau servere de nume) către găzduire. Ajutăm cu prima conexiune după comandă. Citește mai mult: [Connect domain to plan](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-14",
+          "question": "Pot redirecționa un domeniu?",
+          "answer": "Da. Redirecționarea domeniului trimite vizitatorii către o altă adresă URL - utilă pentru numele mărcilor fără un site separat. Aliniem DNS și redirecționări cu configurația dvs. Citește mai mult: [Forward a domain](/kennisbank/domeinnamen/domeinnaam-doorsturen) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-15",
+          "question": "Cum schimb serverele de nume pentru domeniul meu?",
+          "answer": "În managementul DNS/domeniu alegeți serverele noastre de nume sau cele externe (de exemplu un CDN). Propagarea poate dura ore până la o zi. Citește mai mult: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-16",
+          "question": "Cât costă un nume de domeniu?",
+          "answer": "Prețurile diferă în funcție de prelungire și perioadă; căutarea domeniului arată prețurile curente de înregistrare și reînnoire. Numele premium au un preț separat. Citește mai mult: [Domains](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-17",
+          "question": "Găzduirea și domeniul trebuie să fie cu același furnizor?",
+          "answer": "Nu, dar este mai simplu: DNS, SSL, e-mail și asistență apoi stau cu o singură parte. De asemenea, puteți păstra numai DNS la noi și găzduiți în altă parte. Citește mai mult: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "dom-18",
+          "question": "Pot gestiona mai multe domenii într-un singur cont?",
+          "answer": "Da. Domeniile suplimentare pot fi înregistrate sau transferate și conectate ca supliment, parcate sau redirecționate - în limitele planului de găzduire. Citește mai mult: [Domains](/domeinen) · [Choose a hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "dom-19",
+          "question": "Ce se întâmplă dacă domeniul meu expiră?",
+          "answer": "După expirare, există adesea o perioadă de grație sau de carantină în care recuperarea este încă posibilă; apoi altcineva o poate revendica. Reînnoiește la timp prin facturi. Citește mai mult: [Quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-20",
+          "question": "Unde comand sau gestionez domenii?",
+          "answer": "Înregistrați-vă și transferați prin pagina de domenii sau magazin; managementul (DNS, facturi, reînnoire) locuiește în portalul clienților. Citește mai mult: [Domains](/domeinen) · [Shop](/shop) · [Account](/dashboard)."
         }
       ]
     },
     {
       "id": "webhosting",
-      "title": "Gazduire web si domenii",
+      "title": "Gazduire web",
       "items": [
         {
           "id": "host-1",
           "question": "Ce hosting oferi?",
-          "answer": "Oferim găzduire partajată, găzduire WordPress și VPS — la nivelurile Basic, Plus și Business — plus domenii."
+          "answer": "Oferim găzduire partajată, găzduire în cloud, găzduire WordPress și VPS - plus înregistrarea domeniului. Alegeți în funcție de trafic, stivă și creștere. Citește mai mult: [Shared hosting](/diensten/shared-hosting) · [Cloud hosting](/diensten/cloud-hosting) · [WordPress hosting](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-2",
-          "question": "Care este diferența dintre shared, WordPress și VPS?",
-          "answer": "Partajat este rentabil pentru site-urile mai mici. Găzduirea WordPress este optimizată pentru WP. VPS oferă mai multe resurse și control pentru sarcini mai grele."
+          "question": "Care este diferența dintre shared, cloud, WordPress și VPS?",
+          "answer": "Partajat este rentabil pentru site-urile mai mici. Cloud oferă mai multe resurse și scalabilitate, gestionate complet. Găzduirea WordPress este optimizată pentru WP. VPS oferă mai mult control pentru sarcini mai grele. Citește mai mult: [Differences explained](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps) · [Shared plans](/kennisbank/hosting/wat-is-shared-hosting-basic-plus-en-business) · [VPS plans](/kennisbank/hosting/wat-is-vps-hosting-basic-plus-en-business)."
         },
         {
           "id": "host-3",
-          "question": "Ajuți cu înregistrarea domeniului?",
-          "answer": "Da. Sfatuim, inregistram sau transferam domeniul si conectam corect DNS."
+          "question": "Ce este găzduirea în cloud cu tine?",
+          "answer": "Găzduirea în cloud oferă mai multe resurse și scalabilitate decât cea clasică partajată, în timp ce o gestionăm în continuare. Ideal atunci când partajarea devine strânsă, dar nu este nevoie încă de VPS complet. Citește mai mult: [Cloud hosting](/diensten/cloud-hosting) · [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
         },
         {
           "id": "host-4",
           "question": "SSL este inclus în găzduire?",
-          "answer": "Da. SSL este standard în planurile noastre de găzduire relevante."
+          "answer": "Da. SSL este standard în planurile noastre de găzduire relevante, astfel încât site-urile rulează pe HTTPS. Citește mai mult: [What is SSL?](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [Install Let's Encrypt](/kennisbank/hosting/hoe-installeer-ik-een-gratis-lets-encrypt-ssl-certificaat)."
         },
         {
           "id": "host-5",
           "question": "Puteți migra site-ul meu pe găzduirea dvs.?",
-          "answer": "Da. Ne ocupăm de backup, migrare, DNS cutover, SSL și teste de fum, cu timpi de nefuncționare minim."
+          "answer": "Da. Ne ocupăm de backup, migrare, DNS cutover, SSL și teste de fum, cu timp de nefuncționare minim. Citește mai mult: [Migrate website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je) · [Migrate WordPress](/kennisbank/domeinnamen/wordpress-website-verhuizen)."
         },
         {
           "id": "host-6",
-          "question": "Cum funcționează backup-urile pe găzduire?",
-          "answer": "Asta depinde de plan: backup simple sau automate. Este disponibilă reținerea suplimentară în afara amplasamentului."
+          "question": "Cum funcționează backup-urile la găzduire?",
+          "answer": "Asta depinde de plan: backup simple sau automate. Este disponibilă reținerea suplimentară în afara amplasamentului. Citește mai mult: [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor) · [Backup in DirectAdmin](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
         },
         {
           "id": "host-7",
           "question": "Ce se întâmplă dacă primesc mai mult trafic?",
-          "answer": "Apoi scalam la Plus, Business sau VPS și optimizăm stocarea în cache și CDN, astfel încât site-ul să poată face față creșterii."
+          "answer": "Apoi scalam la Plus, Business, cloud sau VPS și optimizăm stocarea în cache și CDN, astfel încât site-ul să poată face față creșterii. Citește mai mult: [When to move to VPS?](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)."
         },
         {
           "id": "host-8",
-          "question": "Oferiți e-mail cu domenii?",
-          "answer": "Asta depinde de pachet și de configurare. Te sfătuim soluții de e-mail de încredere și setăm corect DNS (SPF, DKIM și DMARC)."
+          "question": "Cât de sigur este găzduirea dvs.?",
+          "answer": "Folosim firewall, SSL, actualizări, monitorizare și întărire. Straturi de securitate suplimentare sunt disponibile acolo unde este necesar. Citește mai mult: [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
         },
         {
           "id": "host-9",
-          "question": "Cât de sigur este găzduirea dvs.?",
-          "answer": "Folosim firewall, SSL, actualizări, monitorizare și întărire. Serviciile de securitate suplimentare pot adăuga mai multe straturi deasupra."
+          "question": "Pot trece de la partajat la VPS mai târziu?",
+          "answer": "Da. Planificăm împreună migrarea, inclusiv teste și rollback, astfel încât comutatorul să rămână controlat. Citește mai mult: [Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [VPS hosting](/diensten/vps-hosting)."
         },
         {
           "id": "host-10",
-          "question": "Pot trece de la partajat la VPS mai târziu?",
-          "answer": "Da. Planificăm împreună migrarea, inclusiv teste și rollback, astfel încât comutatorul să rămână controlat."
+          "question": "Acceptați CDN-ul?",
+          "answer": "Da, acolo unde este relevant - adesea un CDN gratuit este inclus în planurile de găzduire WP - pentru livrare globală mai rapidă. Citește mai mult: [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [WordPress hosting](/diensten/wordpress-hosting)."
         },
         {
           "id": "host-11",
-          "question": "Acceptați CDN-ul?",
-          "answer": "Da, acolo unde este relevant - adesea un CDN gratuit este inclus în planurile de găzduire WP - pentru livrare globală mai rapidă."
+          "question": "Care este abordarea ta privind timpul de funcționare?",
+          "answer": "Monitorizăm, răspundem rapid la incidente și comunicăm clar în jurul ferestrelor de întreținere, astfel încât să știți ce se întâmplă. Actualizările de stare sunt pe pagina de stare. Citește mai mult: [Status page](/statuspage) · [Contact](/contact)."
         },
         {
           "id": "host-12",
-          "question": "Care este abordarea ta privind timpul de funcționare?",
-          "answer": "Monitorizăm, răspundem rapid la incidente și comunicăm clar în jurul ferestrelor de întreținere, astfel încât să știți ce se întâmplă."
+          "question": "Cum aleg planul de gazduire potrivit?",
+          "answer": "Pe baza traficului, stivă (WordPress sau personalizat), resurse și creștere. Vă sfătuim cu sinceritate - nu exagerăm. Citește mai mult: [Choose the right hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Shared vs WP vs VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
         },
         {
           "id": "host-13",
-          "question": "Ajuți la rezolvarea problemelor DNS?",
-          "answer": "Da. Reparăm înregistrările, propagarea, autentificarea e-mailului și conexiunile la domenii până când DNS este din nou corect."
+          "question": "Unde pot vedea prețurile de găzduire?",
+          "answer": "Pe paginile serviciului de gazduire si in magazin, cu optiuni lunare sau anuale acolo unde este cazul. Citește mai mult: [Shared](/diensten/shared-hosting) · [Cloud](/diensten/cloud-hosting) · [WordPress](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting) · [Shop](/shop)."
         },
         {
           "id": "host-14",
-          "question": "Cum aleg planul de gazduire potrivit?",
-          "answer": "Pe baza traficului, stivă (WordPress sau personalizat), resurse și creștere. Te sfătuim cu sinceritate - nu exagerăm."
+          "question": "Am acces SSH pe găzduirea mea?",
+          "answer": "Asta depinde de plan. Pe multe planuri SSH este disponibil sau poate fi solicitat; pe VPS aveți de obicei acces complet. Citește mai mult: [SSH access](/kennisbank/hosting/heb-ik-ssh-toegang-op-mijn-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-15",
-          "question": "Unde pot vedea prețurile de găzduire?",
-          "answer": "Pe paginile serviciului de găzduire sub Servicii → Găzduire web și domenii, cu opțiuni lunare sau anuale, acolo unde este cazul."
+          "question": "Cum instalez WordPress pe gazduirea ta?",
+          "answer": "Prin panoul de control (de exemplu DirectAdmin/Installatron) sau manual. Avem un ghid pas cu pas. Citește mai mult: [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-16",
+          "question": "Ce sunt inodurile și de ce planul meu pare „plin”?",
+          "answer": "Inodele numără fișierele/folderele, nu numai GB. Multe fișiere cache sau e-mail mici pot atinge limita în timp ce spațiul pe disc pare încă liber. Citește mai mult: [Inodes](/kennisbank/hosting/inodes-en-inode-limieten) · [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-17",
+          "question": "Ce înseamnă stocare sau trafic „nelimitat”?",
+          "answer": "„Nelimitat” urmează utilizării loiale: utilizarea normală a site-ului web este bună; abuzul sau sarcinile extreme pot fi limitate pentru a menține platforma stabilă. Citește mai mult: [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-18",
+          "question": "Care este diferența dintre partajat, VPS și dedicat?",
+          "answer": "resurse partajate; VPS izolează mai mult CPU/RAM; dedicat este un întreg server. Alegeți în funcție de trafic, nevoi de control și buget. Citește mai mult: [Dedicated vs VPS vs shared](/kennisbank/infrastructuur-servers/verschil-tussen-dedicated-vps-en-shared-hosting) · [Shared/WP/VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
+        },
+        {
+          "id": "host-19",
+          "question": "Cum lucrez cu DirectAdmin?",
+          "answer": "DirectAdmin este panoul de control pentru e-mail, DNS, baze de date, backup și instalări. Conectați-vă cu acreditările panoului; recomandăm cu tărie 2FA. Citește mai mult: [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Backups](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
+        },
+        {
+          "id": "host-20",
+          "question": "Oferiți cache de obiecte pentru WordPress?",
+          "answer": "Pe planurile adecvate, acceptăm memoria cache a obiectelor persistente pentru a reduce interogările bazei de date și a încărca mai rapid. Citește mai mult: [Object cache](/kennisbank/hosting/persistent-object-cache-in-wordpress) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-21",
+          "question": "Cum reînnoiesc sau plătesc pentru găzduire?",
+          "answer": "Prin portalul clienților și prin facturi; reînnoirea automată este adesea disponibilă. Păstrați detaliile de facturare actualizate pentru a evita întreruperi. Citește mai mult: [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode) · [View invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "host-22",
+          "question": "Pot pune mai multe domenii într-un singur plan de găzduire?",
+          "answer": "Adesea da, prin suplimente sau domenii parcate - în funcție de limitele planului. Ajutăm cu conexiune și DNS. Citește mai mult: [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Connect domain](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket)."
+        },
+        {
+          "id": "host-23",
+          "question": "Cât de sigură este conectarea la panoul meu de găzduire?",
+          "answer": "Utilizați o parolă puternică și activați 2FA. Nu partajați autentificarea panoului pe canale nesigure. Citește mai mult: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "host-24",
+          "question": "Ce este mai exact găzduirea WordPress?",
+          "answer": "Găzduirea WordPress este optimizată pentru WP: PHP/stivă mai rapidă, adesea CDN și instalări/actualizări mai simple decât cele partajate generice. Citește mai mult: [WP hosting plans](/kennisbank/hosting/wat-is-wordpress-hosting-basic-plus-en-pro) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-25",
+          "question": "Unde comand direct gazduire?",
+          "answer": "În magazin sau prin categoriile de găzduire Shared, Cloud, WordPress și VPS. După comandă, obțineți acces la panou și factură. Citește mai mult: [Shop](/shop) · [Hosting overview](/diensten/categorie/hosting)."
+        }
+      ]
+    },
+    {
+      "id": "email-dns",
+      "title": "E-mail și DNS",
+      "items": [
+        {
+          "id": "mail-1",
+          "question": "Oferiți e-mail cu domenii sau găzduire?",
+          "answer": "Asta depinde de pachet și de configurare. Vă sfătuim soluții de e-mail de încredere și setăm corect DNS (SPF, DKIM și DMARC). Citește mai mult: [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress) · [SPF record](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-2",
+          "question": "Ce sunt SPF, DKIM și DMARC?",
+          "answer": "Sunt înregistrări DNS care se ocupă de autentificarea e-mailului și reduc falsificarea/spamul. Fără înregistrări corecte, e-mailurile ajung mai des în spam. Citește mai mult: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-3",
+          "question": "Cum gestionez înregistrările DNS?",
+          "answer": "Prin gestionarea DNS pentru domeniul dvs. sau panoul de găzduire, setați înregistrări A, AAAA, CNAME, MX și TXT. Ajutăm la migrare și la autentificarea e-mailului. Citește mai mult: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [DNSSEC](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-4",
+          "question": "Ajuți la rezolvarea problemelor DNS?",
+          "answer": "Da. Reparăm înregistrările, propagarea, autentificarea e-mailului și conexiunile la domenii până când DNS este din nou corect. Citește mai mult: [Manage DNS records](/kennisbank/domeinnamen/dns-records-beheren) · [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen)."
+        },
+        {
+          "id": "mail-5",
+          "question": "Ce este DNSSEC?",
+          "answer": "DNSSEC semnează răspunsuri DNS, astfel încât manipularea este mai grea. Îl putem activa acolo unde TLD-ul tău și configurarea îl acceptă. Citește mai mult: [DNSSEC explained](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-6",
+          "question": "Cum configurez e-mailul pe telefonul meu?",
+          "answer": "Utilizați detaliile IMAP/SMTP din panoul dvs. Pentru Android (și similar pe iOS) pașii sunt în baza de cunoștințe. Citește mai mult: [Email on Android](/kennisbank/e-mail/e-mail-instellen-op-android) · [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress)."
+        },
+        {
+          "id": "mail-7",
+          "question": "Ce se întâmplă dacă e-mailul nu mai funcționează brusc?",
+          "answer": "Verificați DNS (MX/SPF/DKIM/DMARC), cota cutiei poștale și dacă furnizorii blochează e-mailul. Ajutăm la urmărirea întregului lanț. Citește mai mult: [Email problems](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-8",
+          "question": "Cum funcționează serverele de nume?",
+          "answer": "Serverele de nume determină ce sistem DNS deservește domeniul dvs. Dacă le schimbați, trebuie să setați corect din nou înregistrările A/MX/TXT la noua gazdă DNS. Citește mai mult: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "mail-9",
+          "question": "Cât durează propagarea DNS?",
+          "answer": "Adesea minute până la câteva ore; uneori până la 24–48 de ore din cauza TTL-urilor și a cache-urilor. Reduceți TTL-urile înainte de o migrare pentru a comuta mai rapid. Citește mai mult: [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen) · [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet)."
+        },
+        {
+          "id": "mail-10",
+          "question": "Pot redirecționa e-mailul către o altă adresă?",
+          "answer": "Da. Redirecționarii trimit e-mailurile primite către Gmail, Microsoft 365 sau altă cutie poștală - utilă alături de sau în locul unei căsuțe poștale pline. Citește mai mult: [Forward email](/kennisbank/e-mail/email-doorsturen-naar-mailadres)."
+        },
+        {
+          "id": "mail-11",
+          "question": "Îmi pot conecta domeniul la Microsoft 365?",
+          "answer": "Da. Setați înregistrări MX și de autentificare (SPF/DKIM/DMARC) conform instrucțiunilor Microsoft; ajutăm pe partea DNS. Citește mai mult: [Domain to Microsoft 365](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-microsoft-365) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-12",
+          "question": "De ce e-mailurile mele ajung în spam?",
+          "answer": "Adesea SPF/DKIM/DMARC lipsesc sau sunt în conflict, sau IP/reputația este slabă. Verificăm autentificarea DNS și comportamentul de trimitere. Citește mai mult: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-13",
+          "question": "Ce este o înregistrare MX?",
+          "answer": "O înregistrare MX spune internetului ce server de e-mail poate primi e-mail pentru domeniul dvs. Fără un MX corect, nu sosește niciun e-mail. Citește mai mult: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Email problems](/kennisbank/hosting/problemen-met-e-mail-website)."
+        },
+        {
+          "id": "mail-14",
+          "question": "Pot folosi webmail?",
+          "answer": "Da, prin adresa URL de webmail a panoului dvs. de găzduire puteți citi și trimite e-mailuri în browser - alături de IMAP pe telefon sau Outlook. Citește mai mult: [Set up email](/kennisbank/e-mail/e-mail-instellen-op-android) · [Contact](/contact)."
+        },
+        {
+          "id": "mail-15",
+          "question": "DNS-ul trebuie să fie cu dvs. dacă găzduirea este în altă parte?",
+          "answer": "Nu. Puteți păstra DNS la noi sau în altă parte, atâta timp cât A/MX/TXT indică serviciile potrivite. Managementul consecvent previne greșelile de migrare. Citește mai mult: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Nameservers](/kennisbank/domeinnamen/nameservers-beheren)."
         }
       ]
     }

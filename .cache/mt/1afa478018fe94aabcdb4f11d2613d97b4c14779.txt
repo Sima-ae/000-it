@@ -1,0 +1,1 @@
+Da. Planificăm împreună migrarea, inclusiv teste și rollback, astfel încât comutatorul să rămână controlat. Citește mai mult: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Yes. Without correct consent and tagging, ad measurement is unreliable. We neatly link banners, GTM/GA4 and pixels. Read more: ⟦L0⟧Consent mode⟦/L0⟧ · ⟦L1⟧Cookie banner WordPress⟦/L1⟧.

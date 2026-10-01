@@ -1,0 +1,1 @@
+Per impostazione predefinita i siti utilizzano HTTPS. Durante le migrazioni forziamo HTTPS e risolviamo contenuti misti. Per saperne di più: ⟦L0⟧ · ⟦L1⟧.

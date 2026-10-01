@@ -1,0 +1,1 @@
+Sur les plans appropriés, nous prenons en charge le cache d'objets persistant pour réduire les requêtes de base de données et charger plus rapidement. Lire la suite : ⟦L0⟧ · ⟦L1⟧.

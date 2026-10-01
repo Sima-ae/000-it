@@ -1,0 +1,1 @@
+Da. Redirecționarea domeniului trimite vizitatorii către o altă adresă URL - utilă pentru numele mărcilor fără un site separat. Aliniem DNS și redirecționări cu configurația dvs. Citește mai mult: ⟦L0⟧ · ⟦L1⟧.

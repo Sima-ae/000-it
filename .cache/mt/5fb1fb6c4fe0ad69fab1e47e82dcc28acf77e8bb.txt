@@ -1,0 +1,1 @@
+Shared shares resources; VPS isolates more CPU/RAM; dedicated is an entire server. Choose based on traffic, control needs and budget. Read more: ⟦L0⟧Dedicated vs VPS vs shared⟦/L0⟧ · ⟦L1⟧Shared/WP/VPS⟦/L1⟧.

@@ -1,0 +1,1 @@
+Oui, avec des rôles de compte (client, responsable, administrateur) afin que plusieurs membres de l'équipe puissent suivre les tickets ou les projets sans tout partager.

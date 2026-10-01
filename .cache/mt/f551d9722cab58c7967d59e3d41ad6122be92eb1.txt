@@ -1,0 +1,1 @@
+Da, acolo unde este relevant: organizare pentru recenzii și teste, apoi implementare controlată în producție.

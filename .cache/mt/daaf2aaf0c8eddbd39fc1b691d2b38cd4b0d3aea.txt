@@ -1,0 +1,1 @@
+Los inodos cuentan archivos/carpetas, no solo GB. Muchos archivos pequeños de caché o de correo pueden alcanzar el límite mientras el espacio en disco todavía parece libre. Leer más: ⟦L0⟧ · ⟦L1⟧.

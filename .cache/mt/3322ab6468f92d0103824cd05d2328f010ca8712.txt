@@ -1,0 +1,1 @@
+Ja. Sie legen MX- ​​und Authentifizierungsdatensätze (SPF/DKIM/DMARC) gemäß den Anweisungen von Microsoft fest; Wir helfen auf der DNS-Seite. Weiterlesen: ⟦L0⟧ · ⟦L1⟧.

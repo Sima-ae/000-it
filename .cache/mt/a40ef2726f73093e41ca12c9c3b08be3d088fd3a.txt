@@ -1,0 +1,1 @@
+Através do painel de controle (por exemplo DirectAdmin/Installatron) ou manualmente. Temos um guia passo a passo. Leia mais: ⟦L0⟧ · ⟦L1⟧.

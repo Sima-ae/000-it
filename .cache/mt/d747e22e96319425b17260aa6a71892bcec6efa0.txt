@@ -1,0 +1,1 @@
+Evet. Yedekleme, taşıma, DNS kesme, SSL ve duman testlerini minimum kesinti süresiyle gerçekleştiriyoruz. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

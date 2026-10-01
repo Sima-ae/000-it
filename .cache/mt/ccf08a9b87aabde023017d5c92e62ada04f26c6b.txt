@@ -1,0 +1,1 @@
+Tai priklauso nuo pakuotės ir sąrankos. Patariame patikimus pašto sprendimus ir teisingai nustatome DNS (SPF, DKIM ir DMARC). Skaityti daugiau: ⟦L0⟧ · ⟦L1⟧.

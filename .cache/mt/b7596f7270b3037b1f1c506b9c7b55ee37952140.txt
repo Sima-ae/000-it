@@ -1,0 +1,1 @@
+A névszerverek határozzák meg, hogy melyik DNS-rendszer szolgálja ki a domainjét. Ha módosítja őket, az A/MX/TXT rekordokat ismét megfelelően be kell állítania az új DNS-állomáson. Bővebben: ⟦L0⟧ · ⟦L1⟧.

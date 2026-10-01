@@ -1,0 +1,1 @@
+Bu pakete ve kuruluma bağlıdır. Güvenilir mail çözümleri öneriyoruz ve DNS'yi doğru ayarlıyoruz (SPF, DKIM ve DMARC). Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

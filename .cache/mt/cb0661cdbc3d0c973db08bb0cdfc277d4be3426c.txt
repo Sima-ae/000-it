@@ -1,0 +1,1 @@
+Anschließend skalieren wir auf Plus, Business, Cloud oder VPS und optimieren Caching und CDN, damit die Website mit dem Wachstum umgehen kann. Weiterlesen: ⟦L0⟧ · ⟦L1⟧.

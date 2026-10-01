@@ -1,0 +1,1 @@
+På statussidan visar vi incidenter och underhåll gällande hosting och relaterade tjänster, så att du snabbt kan se om något är på gång. Läs mer: ⟦L0⟧.

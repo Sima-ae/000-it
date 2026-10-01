@@ -1,0 +1,1 @@
+Serverele de nume determină ce sistem DNS deservește domeniul dvs. Dacă le schimbați, trebuie să setați corect din nou înregistrările A/MX/TXT la noua gazdă DNS. Citește mai mult: ⟦L0⟧ · ⟦L1⟧.

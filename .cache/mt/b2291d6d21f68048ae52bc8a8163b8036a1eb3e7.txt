@@ -1,0 +1,1 @@
+Da, gdje je relevantno: priprema za preglede i testove, zatim kontrolirana implementacija u proizvodnju.

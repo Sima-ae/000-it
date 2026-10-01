@@ -1,0 +1,1 @@
+DirectAdmin je kontrolni panel za e-poštu, DNS, baze podataka, sigurnosne kopije i instalacije. Prijavite se sa svojim akreditivima za panel; toplo preporučujemo 2FA. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

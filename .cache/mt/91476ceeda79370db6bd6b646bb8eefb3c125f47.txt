@@ -1,0 +1,1 @@
+Mierzymy LCP, INP i CLS, rozwiązujemy problemy z dużymi zasobami, hostingiem/buforowaniem i motywami, a także łączymy je z CDN, jeśli jest to przydatne. Przeczytaj więcej: ⟦L0⟧CDN⟦/L0⟧ · ⟦L1⟧Wybierz Hosting⟦/L1⟧.

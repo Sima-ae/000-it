@@ -1,0 +1,1 @@
+Uyğun planlarda verilənlər bazası sorğularını azaltmaq və daha sürətli yükləmək üçün davamlı obyekt keşini dəstəkləyirik. Daha ətraflı: ⟦L0⟧ · ⟦L1⟧.

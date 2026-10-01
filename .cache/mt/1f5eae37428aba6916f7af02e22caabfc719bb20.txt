@@ -1,0 +1,1 @@
+Yleensä kyseessä on DNS:n leviäminen, puuttuvat A/MX-tietueet tai nimipalvelimet, joita ei ole vielä päivitetty. Tarkista tietueet ja anna TTL:ien vanhentua. Lue lisää: ⟦L0⟧ · ⟦L1⟧.

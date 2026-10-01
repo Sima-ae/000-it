@@ -1,0 +1,1 @@
+Yes, with account roles (client, manager, admin) so multiple team members can track tickets or projects without sharing everything.

@@ -1,0 +1,1 @@
+Check DNS (MX/SPF/DKIM/DMARC), mailbox quota and whether Microsoft or providers are blocking mail. We help measure the chain. Read more: ⟦L0⟧Email Problems⟦/L0⟧ · ⟦L1⟧SPF⟦/L1⟧.

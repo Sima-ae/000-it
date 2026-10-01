@@ -1,0 +1,1 @@
+Usually it's DNS propagation, missing records, or name servers that haven't been updated yet. Check A/MX records and wait for TTLs to expire. Read more: ⟦L0⟧New domain not working⟦/L0⟧ · ⟦L1⟧Manage DNS⟦/L1⟧.

@@ -1,0 +1,1 @@
+Nem. A DNS-t nálunk vagy máshol is megtarthatja, amíg az A/MX/TXT a megfelelő szolgáltatásokra mutat. A következetes kezelés megakadályozza a migrációs hibákat. Bővebben: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Ellenőrizze a DNS-t (MX/SPF/DKIM/DMARC), a postafiókkvótát és azt, hogy a szolgáltatók blokkolják-e a leveleket. Segítünk nyomon követni a teljes láncot. Bővebben: ⟦L0⟧ · ⟦L1⟧.

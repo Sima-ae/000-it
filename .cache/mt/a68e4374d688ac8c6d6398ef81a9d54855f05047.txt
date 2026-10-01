@@ -1,0 +1,1 @@
+Hvor projekter er listet i portalen, kan du se status og kommunikation. Ellers holder vi dig orienteret via billetter eller sprintopdateringer.

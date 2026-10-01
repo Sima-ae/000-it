@@ -1,0 +1,1 @@
+Skontrolujte stavovú stránku, šírenie DNS, posledné aktualizácie, miesto na disku a či je chyba reprodukovateľná. To urýchľuje diagnostiku. Prečítajte si viac: ⟦L0⟧ · ⟦L1⟧.

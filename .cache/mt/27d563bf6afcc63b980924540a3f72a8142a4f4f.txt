@@ -1,0 +1,1 @@
+WordPress-värd är optimerat för WP: snabbare PHP/stack, ofta CDN och enklare installationer/uppdateringar än generiskt delat. Läs mer: ⟦L0⟧ · ⟦L1⟧.

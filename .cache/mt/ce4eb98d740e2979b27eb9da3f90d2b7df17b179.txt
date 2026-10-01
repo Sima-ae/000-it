@@ -1,0 +1,1 @@
+Inoder tæller filer/mapper, ikke kun GB. Mange små cache- eller mailfiler kan ramme grænsen, mens diskplads stadig ser ledig ud. Læs mere: ⟦L0⟧ · ⟦L1⟧.

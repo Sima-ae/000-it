@@ -1,0 +1,1 @@
+Kilit, istenmeyen aktarımları önler. Bir taşıma işlemi için genellikle önce mevcut sağlayıcıda taşımayı kapatmanız, ardından aktarımı bizimle başlatmanız gerekir. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

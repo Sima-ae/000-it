@@ -1,0 +1,1 @@
+Ja, det er det sædvanlige flow: domæne + hosting i indkøbskurven, derefter DNS-forbindelse. Læs mere: ⟦L0⟧ · ⟦L1⟧.

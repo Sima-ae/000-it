@@ -1,0 +1,1 @@
+Ja. Du ställer in MX- ​​och autentiseringsposter (SPF/DKIM/DMARC) enligt Microsofts instruktioner; vi hjälper till på DNS-sidan. Läs mer: ⟦L0⟧ · ⟦L1⟧.

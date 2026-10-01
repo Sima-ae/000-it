@@ -1,0 +1,1 @@
+Utilizziamo firewall, SSL, aggiornamenti, monitoraggio e rafforzamento. Ove necessario, sono disponibili livelli di sicurezza aggiuntivi. Per saperne di più: ⟦L0⟧ · ⟦L1⟧.

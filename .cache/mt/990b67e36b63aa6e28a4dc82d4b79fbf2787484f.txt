@@ -1,0 +1,1 @@
+Shpesh minuta deri në disa orë; ndonjëherë deri në 24–48 orë për shkak të TTL-ve dhe cache-ve. Ulni TTL-të përpara një migrimi për të kaluar më shpejt. Lexo më shumë: ⟦L0⟧ · ⟦L1⟧.

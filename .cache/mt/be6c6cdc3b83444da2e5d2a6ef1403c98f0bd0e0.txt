@@ -1,0 +1,1 @@
+Bruk unike passord og 2FA der det er tilgjengelig (inkludert på vertspaneler). Ikke del økter på delte datamaskiner. Les mer: ⟦L0⟧.

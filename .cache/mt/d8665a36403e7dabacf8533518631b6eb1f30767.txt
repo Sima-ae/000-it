@@ -1,0 +1,1 @@
+DirectAdmin e-poçt, DNS, verilənlər bazası, ehtiyat nüsxələri və quraşdırmalar üçün idarəetmə panelidir. Panel etimadnaməsini ilə daxil olun; 2FA-nı şiddətlə tövsiyə edirik. Daha ətraflı: ⟦L0⟧ · ⟦L1⟧.

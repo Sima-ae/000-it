@@ -1,0 +1,1 @@
+Bəli, bu, adi axındır: domen + alış-veriş səbətində hostinq, sonra DNS bağlantısı. Daha ətraflı: ⟦L0⟧ · ⟦L1⟧.

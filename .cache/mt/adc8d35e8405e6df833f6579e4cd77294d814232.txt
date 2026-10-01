@@ -1,0 +1,1 @@
+Igen. A domain-átirányítás egy másik URL-re küldi a látogatókat – ez hasznos a külön webhely nélküli márkaneveknél. A DNS-t és az átirányításokat az Ön beállításához igazítjuk. Bővebben: ⟦L0⟧ · ⟦L1⟧.

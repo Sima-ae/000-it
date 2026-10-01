@@ -1,0 +1,1 @@
+Çox vaxt SPF/DKIM/DMARC yoxdur və ya ziddiyyət təşkil edir və ya IP/reputasiya zəifdir. DNS auth və göndərmə davranışını yoxlayırıq. Daha ətraflı: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

@@ -1,0 +1,1 @@
+Usein SPF/DKIM/DMARC puuttuu tai on ristiriitainen tai IP/maine on heikko. Tarkistamme DNS-todennuksen ja lähetyskäyttäytymisen. Lue lisää: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

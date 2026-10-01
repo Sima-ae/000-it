@@ -1,0 +1,1 @@
+DirectAdmin je upravljačka ploča za e-poštu, DNS, baze podataka, sigurnosne kopije i instalacije. Prijavite se svojim vjerodajnicama za panel; toplo preporučujemo 2FA. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

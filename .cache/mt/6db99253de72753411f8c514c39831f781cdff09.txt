@@ -1,0 +1,1 @@
+Naziv domene je adresa koju posjetitelji koriste za pronalaženje vaše web stranice (na primjer example.com). Povezuje se s DNS zapisima koji upućuju na vaš hosting ili e-poštu. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

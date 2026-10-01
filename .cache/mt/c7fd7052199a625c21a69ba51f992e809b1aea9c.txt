@@ -1,0 +1,1 @@
+Bunlar, e-posta kimlik doğrulamasını gerçekleştiren ve kimlik sahtekarlığını/spam'ı azaltan DNS kayıtlarıdır. Doğru kayıtlar olmadan postalar daha sık spam'e düşer. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

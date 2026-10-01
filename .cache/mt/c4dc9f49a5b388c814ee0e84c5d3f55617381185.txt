@@ -1,0 +1,1 @@
+Nazwa domeny to adres, za pomocą którego odwiedzający znajdują Twoją witrynę (np. example.com). Jest powiązany z rekordami DNS wskazującymi Twój hosting lub adres e-mail. Przeczytaj więcej: ⟦L0⟧ · ⟦L1⟧.

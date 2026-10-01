@@ -1,0 +1,1 @@
+Získam prístup SSH na svoj hosting?

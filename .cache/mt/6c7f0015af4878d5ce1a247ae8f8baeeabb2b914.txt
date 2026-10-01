@@ -1,0 +1,1 @@
+Cloud-hosting giver flere ressourcer og skalerbarhed end klassisk delt, mens vi bliver ved med at administrere det. Ideel, når delt bliver stramt, men fuld VPS er ikke nødvendig endnu. Læs mere: ⟦L0⟧ · ⟦L1⟧.

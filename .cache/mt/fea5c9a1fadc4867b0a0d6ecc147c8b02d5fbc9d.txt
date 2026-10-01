@@ -1,0 +1,1 @@
+DNSSEC, DNS cavablarını imzalayır ki, manipulyasiya daha çətindir. TLD və quraşdırmanızın dəstəklədiyi yerdə onu aktiv edə bilərik. Daha ətraflı: ⟦L0⟧.

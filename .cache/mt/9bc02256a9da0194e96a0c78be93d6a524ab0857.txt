@@ -1,0 +1,1 @@
+Güvenlik duvarı, SSL, güncellemeler, izleme ve güçlendirme kullanıyoruz. Gerektiğinde ekstra güvenlik katmanları mevcuttur. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

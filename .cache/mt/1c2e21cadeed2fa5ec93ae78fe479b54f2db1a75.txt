@@ -1,0 +1,1 @@
+Ja. Domænevideresendelse sender besøgende til en anden URL - nyttigt for mærkenavne uden et separat websted. Vi tilpasser DNS og omdirigeringer med din opsætning. Læs mere: ⟦L0⟧ · ⟦L1⟧.

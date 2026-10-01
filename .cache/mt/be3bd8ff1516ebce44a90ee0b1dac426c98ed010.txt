@@ -1,0 +1,1 @@
+megosztott erőforrások; A VPS több CPU/RAM-ot izolál; dedikált egy egész szerver. Válasszon a forgalom, az ellenőrzési igények és a költségvetés alapján. Bővebben: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Sì, ove pertinente: preparazione per revisioni e test, quindi distribuzione controllata in produzione.

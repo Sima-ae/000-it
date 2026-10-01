@@ -1,0 +1,1 @@
+Les inodes comptent les fichiers/dossiers, pas seulement les Go. De nombreux petits fichiers de cache ou de courrier peuvent atteindre la limite alors que l'espace disque semble encore libre. Lire la suite : ⟦L0⟧ · ⟦L1⟧.

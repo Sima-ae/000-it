@@ -12,12 +12,12 @@
         {
           "id": "gen-1",
           "question": "Mitä TripleZero iT tarkalleen tekee?",
-          "answer": "TripleZero iT yhdistää webdesignin, WordPress-tuen, digitaalisen markkinoinnin, haun näkyvyyden (AEO, GEO/paikallinen ja SEO), suunnittelun ja isännöinnin. Autamme brändejä löytämään nopeammin, rakentamaan parempia verkkosivustoja ja kasvamaan mitattavalla tavalla."
+          "answer": "TripleZero iT yhdistää webdesignin, WordPress-tuen, digitaalisen markkinoinnin, haun näkyvyyden (AEO, GEO/paikallinen ja SEO), suunnittelun ja isännöinnin. Autamme brändejä löytämään nopeammin, rakentamaan parempia verkkosivustoja ja kasvamaan mitattavalla tavalla. [About us](/over-ons) · [Services](/diensten)"
         },
         {
           "id": "gen-2",
           "question": "Kuinka pääsen alkuun TripleZero iT:n kanssa?",
-          "answer": "Ota yhteyttä tai varaa aika. Suoritamme lyhyen esittelyn, tarkistamme tavoitteet ja pinoamme, minkä jälkeen laadimme konkreettisen ehdotuksen suunnittelun ja KPI:n kanssa."
+          "answer": "Ota yhteyttä tai varaa aika. Suoritamme lyhyen esittelyn, tarkistamme tavoitteet ja pinoamme, minkä jälkeen laadimme konkreettisen ehdotuksen suunnittelun ja KPI:n kanssa. [Schedule appointment](/afspraak) · [Contact](/contact)"
         },
         {
           "id": "gen-3",
@@ -73,6 +73,46 @@
           "id": "gen-13",
           "question": "Voitko ottaa haltuunsa tai tehdä yhteistyötä olemassa olevien toimittajien kanssa?",
           "answer": "Kyllä. Työskentelemme sujuvasti yhdessä kehittäjien, markkinoijien tai virastojen kanssa tai otamme huollon ja optimoinnin tarpeettomasti häiritsemättä olemassa olevaa työtä."
+        },
+        {
+          "id": "gen-14",
+          "question": "Mikä on Agent 000 (chat-avustaja)?",
+          "answer": "Agent 000 on digitaalinen avustajamme sivustolla ja tukivirroissa. Hän vastaa usein kysyttyihin kysymyksiin, viittaa tietokannan artikkeleihin ja voi ohjata sinut live-chatiin, lippuun tai tapaamiseen, kun ihmisen apu on sopivampaa. Lue lisää: [Digital assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Chat, ticket or call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "gen-15",
+          "question": "Kuinka varaan tapaamisen tai soitan?",
+          "answer": "Voit valita itsellesi sopivan ajan Ajanvaraus-sivun kautta. Nopeissa kysymyksissä voit myös käyttää live-chatia tai lippua; puhelinaika on hyödyllinen monimutkaisemmissa prosesseissa tai vastaanotoissa. Lue lisää: [Appointment](/afspraak) · [Call appointment explained](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)."
+        },
+        {
+          "id": "gen-16",
+          "question": "Mistä näen palvelujesi tilan?",
+          "answer": "Tilasivulla näytämme isännöintiin ja niihin liittyviin palveluihin liittyvät tapahtumat ja ylläpitotapahtumat, jotta näet nopeasti, onko jotain meneillään. Lue lisää: [Statuspage](/statuspage)."
+        },
+        {
+          "id": "gen-17",
+          "question": "Onko sinulla tietopohjaa?",
+          "answer": "Kyllä. Tietokanta sisältää käsikirjoja verkkotunnuksista, DNS:stä, sähköpostista, isännöinnistä, WordPressistä, tekoälyskannauksesta, turvallisuudesta ja muusta – vaiheittaisilla selityksillä. Lue lisää: [Knowledge base](/kennisbank)."
+        },
+        {
+          "id": "gen-18",
+          "question": "Miten käsittelet yksityisyyttä ja evästeitä?",
+          "answer": "Työskentelemme GDPR-tietoisesti: tietosuojatekstit, suostumus lomakkeisiin ja evästebannerit/suostumustila, jossa seuranta on tarpeen. WordPressissä autamme oikean evästeen asettamisessa. Lue lisää: [Cookie banner in WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress) · [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Privacy with forms](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren)."
+        },
+        {
+          "id": "gen-19",
+          "question": "Mistä löydän uutiset ja päivitykset?",
+          "answer": "Uutissivulla julkaisemme päivityksiä tuotteista, turvallisuudesta ja vinkeistä. Tarkista tekniset viat tilasivulta. Lue lisää: [News](/nieuws) · [Statuspage](/statuspage)."
+        },
+        {
+          "id": "gen-20",
+          "question": "Mitä kanssasi työskentely maksaa?",
+          "answer": "Se riippuu yhdistelmästä: hosting- ja ostoksilla tuotteilla on kiinteät hinnat; suunnittelu, hakukoneoptimointi, mainokset ja pidikkeet seuraavat oton jälkeen. Kaupassa näet paketteja; saat mukauttamisehdotuksen. Lue lisää: [Shop](/shop) · [Contact](/contact)."
+        },
+        {
+          "id": "gen-21",
+          "question": "Voitko myös tehdä vain konsultointia tai auditointia?",
+          "answer": "Kyllä. Tarkastukset, tekoälyskannaukset, tekniset katsaukset ja sparrausistunnot voidaan tehdä erillään täyden palvelun prosessista. Voit sitten tehdä sen itse tai antaa meidän hoitaa sen. Lue lisää: [AI scan](/ai-scan) · [Services](/diensten)."
         }
       ]
     },
@@ -83,17 +123,17 @@
         {
           "id": "ai-1",
           "question": "Mikä on AI-skannaus TripleZero iT:ssä?",
-          "answer": "Tekoälyvalmiusskannaus arvioi, kuinka hyvin klassiset hakukoneet löytävät sivustosi, AI-vastaukset ja paikalliset tai maantieteelliset hakutulokset (AEO, GEO, SEO ja tekniset perusteet)."
+          "answer": "Tekoälyvalmiusskannaus arvioi, kuinka hyvin klassiset hakukoneet löytävät sivustosi, AI-vastaukset ja paikalliset tai maantieteelliset hakutulokset (AEO, GEO, SEO ja tekniset perusteet). [What is the AI ​​scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Start AI scan](/ai-scan)"
         },
         {
           "id": "ai-2",
           "question": "Mitä AI-skannaus tarkalleen ottaen mittaa?",
-          "answer": "Skannaus mittaa AEO-signaaleja, GEO/paikallista näkyvyyttä, SEO:n perusteita, sisältörakennetta, suorituskykyindikaattoreita ja tekoälyvalmiutta. Saat pisteitä ja konkreettisia parannuspisteitä."
+          "answer": "Skannaus mittaa AEO-signaaleja, GEO/paikallista näkyvyyttä, SEO:n perusteita, sisältörakennetta, suorituskykyindikaattoreita ja tekoälyvalmiutta. Saat pisteitä ja konkreettisia parannuspisteitä. [Explain scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)"
         },
         {
           "id": "ai-3",
           "question": "Kuinka usein minun pitäisi suorittaa AI-skannaus?",
-          "answer": "Vähintään suurten sivustomuutosten tai kampanjoiden jälkeen. Suosittelemme aktiivisille brändeille säännöllisiä skannauksia, esimerkiksi neljännesvuosittain, jotta pysyt näkyvissä haku- ja tekoälytuloksissa."
+          "answer": "Vähintään suurten sivustomuutosten tai kampanjoiden jälkeen. Suosittelemme aktiivisille brändeille säännöllisiä skannauksia, esimerkiksi neljännesvuosittain, jotta pysyt näkyvissä haku- ja tekoälytuloksissa. [Start AI scan](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website)"
         },
         {
           "id": "ai-4",
@@ -118,12 +158,12 @@
         {
           "id": "ai-8",
           "question": "Mikä on AI-valmius brändilleni?",
-          "answer": "Se on aste, jossa sivustosi, sisältösi ja datasi on määritetty niin, että tekoälyjärjestelmät voivat lainata, suositella ja selittää brändiäsi oikein."
+          "answer": "Se on aste, jossa sivustosi, sisältösi ja datasi on määritetty niin, että tekoälyjärjestelmät voivat lainata, suositella ja selittää brändiäsi oikein. [AI readiness in the scan](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)"
         },
         {
           "id": "ai-9",
           "question": "Voitko käyttää tekoälyagentteja kojelaudassa?",
-          "answer": "Kyllä. Asiakasportaalissa näet tekoälyagentteja hakukoneoptimointiin, sisältöön, sosiaalisiin ja mainoksiin – mukaan lukien tila ja tehtävät."
+          "answer": "Kyllä. Asiakasportaalissa näet tekoälyagentteja hakukoneoptimointiin, sisältöön, sosiaalisiin ja mainoksiin – mukaan lukien tila ja tehtävät. [What are AI agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Agents in your account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)"
         },
         {
           "id": "ai-10",
@@ -144,6 +184,46 @@
           "id": "ai-13",
           "question": "Kuinka mittaan tekoälyaloitteiden sijoitetun pääoman tuottoprosenttia?",
           "answer": "KPI:iden, kuten liikenteen, liidien, ajansäästön, sisällön tuoton, lippujen resoluution ja muuntamisen avulla. Määrittelemme ne etukäteen suunnitelmassa, jotta tulokset pysyvät näkyvissä."
+        },
+        {
+          "id": "ai-14",
+          "question": "Kuinka aloitan AI-skannauksen verkkosivustollani?",
+          "answer": "Siirry AI-skannaukseen, kirjoita URL-osoitteesi ja aloita analyysi. Saat pisteitä AEO:sta, GEO:sta, SEO:sta, suorituskyvystä ja tekoälyvalmiudesta sekä pisteitä parantamisesta. Lue lisää: [Start AI scan](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website) · [AI scan page](/ai-scan)."
+        },
+        {
+          "id": "ai-15",
+          "question": "Kuinka luen AI-skannauspisteet?",
+          "answer": "Jokainen pistemäärä osoittaa, kuinka vahva olet kyseisellä alueella; matalat pisteet sisältävät konkreettisia vinkkejä. Käytä skannausta prioriteettiluettelona, ​​ei kertaluonteisena \"raporttikorttina\". Lue lisää: [Explain scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Next steps](/kennisbank/ai-scan/welke-vervolgstappen-zet-ik-na-mijn-ai-scan)."
+        },
+        {
+          "id": "ai-16",
+          "question": "Mitä eroa on tekoälyskannauksella ja täydellisellä AEO/GEO/SEO-prosessilla?",
+          "answer": "Skannaus on nopea diagnoosi. Prosessi toteuttaa parannuksia: sisältöä, jäsenneltyä dataa, teknistä hakukoneoptimointia, paikallisia signaaleja ja mittausta ajan mittaan. Lue lisää: [Scan versus process](/kennisbank/ai-scan/ai-scan-versus-een-volledig-aeo-geo-seo-traject-wat-is-het-verschil) · [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-17",
+          "question": "Mistä löydän tililtäni aiemmat tekoälyskannaukset?",
+          "answer": "Sisäänkirjautuneet asiakkaat näkevät aiemmat skannaukset ja analyysit kojelaudassa (SEO-analyysi), joten voit verrata edistymistä. Lue lisää: [AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Account / dashboard](/dashboard)."
+        },
+        {
+          "id": "ai-18",
+          "question": "Mitä teen alhaisen AEO- tai GEO-pistemäärän jälkeen?",
+          "answer": "Priorisoi usein kysytyt kysymykset, entiteetit, strukturoidut tiedot (AEO) ja Google-yritysprofiili / NAP / paikalliset aloitussivut (GEO). Autamme muuttamaan etenemissuunnitelman toteutukseen. Lue lisää: [Scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Local Discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "ai-19",
+          "question": "Miten tekoälyagentit toimivat asiakasportaalissa?",
+          "answer": "Tekoälyagentit tukevat hakukoneoptimointiin, sisältöön, sosiaalisiin tai mainoksiin liittyviä tehtäviä. Avaat tililläsi yleiskatsauksen, näet tilan ja voit käynnistää tai keskeyttää agentteja paketin mukaan. Lue lisää: [What are AI agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Open agents](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)."
+        },
+        {
+          "id": "ai-20",
+          "question": "Onko AI-skannaus ilmainen?",
+          "answer": "AI-skannaussivun kautta on käytettävissä merkintä; syvemmät analyysit ja prosessit kuuluvat palveluiden tai säilyttäjien alle. Skannauksen jälkeen näet heti, onko seurannasta hyötyä. Lue lisää: [AI scan](/ai-scan) · [What is the AI ​​scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-21",
+          "question": "Auttaako agentti 000 myös tekoälyä ja hakukoneoptimointia koskevissa kysymyksissä?",
+          "answer": "Kyllä. Agent 000 käyttää usein kysyttyjä kysymyksiä ja tietokantaa vastatakseen AEO-/GEO-/SEO- ja AI-skannauskysymyksiin sekä linkkejä oikeisiin artikkeleihin tai ihmisten seurantaan. Lue lisää: [Digital Assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [FAQ](/faq)."
         }
       ]
     },
@@ -154,17 +234,17 @@
         {
           "id": "seo-1",
           "question": "Mitä eroa on AEO:n, GEO:n ja SEO:n välillä?",
-          "answer": "AEO (Answer Engine Optimization) keskittyy tekoälyn vastauksiin. GEO (Geographic Search Engine Optimization) vahvistaa paikallista ja alueellista näkyvyyttä Mapsissa, paikallisissa paketeissa ja sijaintiin perustuvassa haussa. SEO optimoi klassisille hakukoneille."
+          "answer": "AEO (Answer Engine Optimization) keskittyy tekoälyn vastauksiin. GEO (Geographic Search Engine Optimization) vahvistaa paikallista ja alueellista näkyvyyttä Mapsissa, paikallisissa paketeissa ja sijaintiin perustuvassa haussa. SEO optimoi klassisille hakukoneille. [How AEO, GEO and SEO are related](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen) · [What is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization)"
         },
         {
           "id": "seo-2",
           "question": "Miksi AEO:lla/GEO:lla on nyt väliä?",
-          "answer": "Useammat etsijät saavat vastauksia tekoälyn kautta ja tekevät hakuja myös paikallisesti (\"lähellä minua\"). Ilman AEO:ta kaipaat AI-viittauksia; ilman GEO:ta kaipaat paikallisia liidejä – vaikka klassinen hakukoneoptimointi olisikin vankka."
+          "answer": "Useammat etsijät saavat vastauksia tekoälyn kautta ja tekevät hakuja myös paikallisesti (\"lähellä minua\"). Ilman AEO:ta kaipaat AI-viittauksia; ilman GEO:ta kaipaat paikallisia liidejä – vaikka klassinen hakukoneoptimointi olisikin vankka. [What is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant)"
         },
         {
           "id": "seo-3",
           "question": "Kuinka aloitat SEO-sitoutumisen?",
-          "answer": "Aloitamme teknisellä auditoinnilla, avainsanojen ja tarkoitusten tutkimuksella, sisältövaje-analyysillä ja prioriteettisuunnitelmalla, joka on linkitetty yrityksesi KPI:ihin."
+          "answer": "Aloitamme teknisellä auditoinnilla, avainsanojen ja tarkoitusten tutkimuksella, sisältövaje-analyysillä ja prioriteettisuunnitelmalla, joka on linkitetty yrityksesi KPI:ihin. [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)"
         },
         {
           "id": "seo-4",
@@ -174,7 +254,7 @@
         {
           "id": "seo-5",
           "question": "Teetkö myös paikallista hakukoneoptimointipalvelua?",
-          "answer": "Kyllä. Työskentelemme Google-yritysprofiilin, paikallisten aloitussivujen, NAP-yhteensopivuuden, arvostelujen ja paikallisten sisältöklustereiden parissa, jotta sinut löydetään paremmin alueellasi."
+          "answer": "Kyllä. Työskentelemme Google-yritysprofiilin, paikallisten aloitussivujen, NAP-yhteensopivuuden, arvostelujen ja paikallisten sisältöklustereiden parissa, jotta sinut löydetään paremmin alueellasi. [Improve local discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)"
         },
         {
           "id": "seo-6",
@@ -220,6 +300,36 @@
           "id": "seo-14",
           "question": "Autatko kansainvälisessä hakukoneoptimoinnissa?",
           "answer": "Kyllä. Hoidamme hreflangin, markkinatutkimuksen maa- tai kielikohtaisesti, sisällön lokalisoinnin ja tekniset usean paikallisen asetukset."
+        },
+        {
+          "id": "seo-15",
+          "question": "Mikä AEO oikein on?",
+          "answer": "AEO (Answer Engine Optimization) luo sisältöä, jotta tekoälyn vastaukset ja vastausmoottorit voivat lainata brändiäsi oikein: selkeät UKK, kokonaisuudet ja strukturoitu data. Lue lisää: [What is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AEO, GEO and SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
+        },
+        {
+          "id": "seo-16",
+          "question": "Mikä on GEO (geographic SEO)?",
+          "answer": "GEO vahvistaa paikallista ja alueellista löydettävyyttä – karttoja, paikallisia paketteja ja sijaintiin perustuvaa hakua – GBP:n, NAP-yhteensopivuuden ja paikallisen sisällön avulla. Lue lisää: [What is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant) · [Local discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "seo-17",
+          "question": "Kuinka tilaan tai aloitan SEO-optimoinnin?",
+          "answer": "Aloita tekoälyskannauksella tai -tarkastuksella ja sitten ehdotuksella prioriteeteilla. Voit myös yhdistää hakukoneoptimoinnin sisältöön ja tekniikkaan myymälän/palvelujen tai kiinnittimen kautta. Lue lisää: [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting) · [AI Scan](/ai-scan)."
+        },
+        {
+          "id": "seo-18",
+          "question": "Voitko auttaa jäsenneltyjen tietojen ja FAQ-aikataulun kanssa?",
+          "answer": "Kyllä. Luomme asiaankuuluvia kaavioita (FAQ, Organisaatio, LocalBusiness, tuotteet) ja rakennamme sisältöä niin, että hakukoneet ja tekoäly ymmärtävät sinua paremmin. Lue lisää: [AEO explanation](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AI scan scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)."
+        },
+        {
+          "id": "seo-19",
+          "question": "Mitä teet Core Web Vitalsille?",
+          "answer": "Mittaamme LCP:tä, INP:tä ja CLS:ää, ratkaisemme raskaat resurssit, isännöinti-/välimuisti- ja teemaongelmat ja linkitämme tämän tarvittaessa CDN:ään. Lue lisää: [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [Choose Hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "seo-20",
+          "question": "Voitko yhdistää SEO:n isännöintiin ja WordPress-huoltoon?",
+          "answer": "Kyllä. Vakaa isännöinti, päivitykset ja suorituskyky muodostavat perustan; SEO perustuu siihen. Monet asiakkaat yhdistävät WP-hoidon + isännöinnin + jatkuvan hakukoneoptimoinnin. Lue lisää: [Hosting](/diensten/categorie/hosting) · [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
         }
       ]
     },
@@ -291,6 +401,26 @@
           "id": "ads-13",
           "question": "Onko uudelleenmarkkinointi edelleen ajankohtainen?",
           "answer": "Kyllä, kun se on tietosuojan mukainen ja yhdistettynä vahvoihin mainoksiin ja tarjouksiin. Se on usein suppilon tehokkain kerros."
+        },
+        {
+          "id": "ads-14",
+          "question": "Autatko suostumustilassa ja evästebannereissa mainoksissa?",
+          "answer": "Kyllä. Ilman asianmukaista suostumusta ja tunnisteita mainosten mittaaminen on epäluotettavaa. Linkitämme siististi bannerit, GTM/GA4 ja pikselit. Lue lisää: [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Cookie banner WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "ads-15",
+          "question": "Voitko rakentaa aloitussivuja kampanjoille?",
+          "answer": "Kyllä – nopeat aloitussivut tai hakutarkoitukseen räätälöidyt WordPress-sivut, joissa on seurannan ja CRO:n perusteet. Lue lisää: [Services](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "ads-16",
+          "question": "Kuinka estät mainosbudjetin hukkaamisen?",
+          "answer": "Tiukka tilirakenne, negatiiviset avainsanat, yleisön poissulkemiset, aloitussivun sovitus ja viikoittainen CPA/ROAS-optimointi – ei vain napsautuksia."
+        },
+        {
+          "id": "ads-17",
+          "question": "Toimivatko mainokset hyvin AEO/SEO:n kanssa?",
+          "answer": "Kyllä. Mainokset tarjoavat nopeaa dataa ja liikennettä; SEO/AEO rakentaa kestävää näkyvyyttä. Havainnot avainsanoista ja mainoksista ruokkivat sisältöä ja aloitussivuja. Lue lisää: [AEO, GEO and SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
         }
       ]
     },
@@ -362,6 +492,26 @@
           "id": "des-13",
           "question": "Mistä voin oppia lisää digitaalisesta suunnittelusta?",
           "answer": "Lisätietoa /graafinen-suunnitteluista ja valikon Graafinen suunnittelu -palveluista."
+        },
+        {
+          "id": "des-14",
+          "question": "Toimitatko myös suunnittelujärjestelmiä ja komponenttikirjastoja?",
+          "answer": "Kyllä, brändeille, jotka haluavat skaalata johdonmukaisesti: tunnukset, komponentit ja dokumentaatio, jotta markkinointi ja tuote puhuvat samaa kieltä."
+        },
+        {
+          "id": "des-15",
+          "question": "Voitko digitalisoida olemassa olevan brändityylin?",
+          "answer": "Kyllä. Käännämme painetut tai epätäydelliset brändiohjeet verkkovalmiiksi väreiksi, typografiiksi, käyttöliittymäpakkauksiksi ja malleiksi."
+        },
+        {
+          "id": "des-16",
+          "question": "Teetkö UX-tutkimusta vai vain visuaalista suunnittelua?",
+          "answer": "Molemmat. Tarvittaessa aloitamme haastatteluilla, suppiloanalyysillä tai lämpökartoilla; sitten käyttöliittymä. Tällä tavalla suunnittelemme käyttäytymisen, emme vain maun, perusteella."
+        },
+        {
+          "id": "des-17",
+          "question": "Voitko suunnitella sosiaalisia malleja ja mainoksia?",
+          "answer": "Kyllä – karuselleja, pikkukuvia, tarinoita ja mainoksia, jotka vastaavat brändisi ja kampanjasi tavoitteita. Lue lisää: [Services](/diensten)."
         }
       ]
     },
@@ -433,6 +583,26 @@
           "id": "mkt-13",
           "question": "Kuinka estää \"kiireinen markkinointi\" ilman tuloksia?",
           "answer": "Jokainen toiminta on sidottu KPI:ihin. Alitoimivat taktiikat pysäytetään tai niitä parannetaan datan avulla, joten budjetti menee siihen, mikä toimii."
+        },
+        {
+          "id": "mkt-14",
+          "question": "Mitä markkinointikiinnike yleensä sisältää?",
+          "answer": "Sekoitus strategiaa, sisältöä tai hakukoneoptimointia, kampanjoita, raportointia ja kokeiluja – räätälöity KPI:iden mukaan. Kirjaamme laajuuden ja tunnit, jotta prioriteetit pysyvät selkeinä. Lue lisää: [Shop](/shop) · [Contact](/contact)."
+        },
+        {
+          "id": "mkt-15",
+          "question": "Autatko paikannuksessa ja viestien lähettämisessä?",
+          "answer": "Kyllä. Selkeä sijoittelu, arvorekvisiitta ja sivukopio varmistavat, että mainokset, hakukoneoptimointi ja myynti välittävät saman viestin."
+        },
+        {
+          "id": "mkt-16",
+          "question": "Mittaatko markkinointia putkeen, et vain liikenteen mukaan?",
+          "answer": "Aina kun mahdollista: liidit, SQL:t, tulot tai avustetut konversiot. Säädämme tai pysäytämme liikenteen ilman laatua."
+        },
+        {
+          "id": "mkt-17",
+          "question": "Voitko puhdistaa markkinointipinon ja seurannan?",
+          "answer": "Kyllä – GTM, GA4, pikselit, CRM-linkit ja suostumus. Puhdas data on hyvien päätösten perusta. Lue lisää: [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen)."
         }
       ]
     },
@@ -504,6 +674,153 @@
           "id": "soc-13",
           "question": "Kuinka nopeasti näemme kasvun sosiaalisessa mediassa?",
           "answer": "Johdonmukaisuus ratkaisee. Merkittävä kasvu kestää yleensä viikoista kuukausiin; mainostuen avulla se menee usein nopeammin."
+        },
+        {
+          "id": "soc-14",
+          "question": "Autatko sosiaalisten todisteiden ja arvostelujen kanssa?",
+          "answer": "Kyllä. Suunnittelemme tarkistuspyyntöjä, tapauksia ja UGC-tyyppisiä muotoja, jotka rakentavat luottamusta – ilman väärennettyä sitoutumista."
+        },
+        {
+          "id": "soc-15",
+          "question": "Voitko perustaa työntekijöiden edunvalvontaa?",
+          "answer": "Kyllä, varsinkin LinkedInissä: yksinkertaiset ohjeet, mallit ja rytmi, jotta tiimi jakaa asiantuntemusta näkyvästi."
+        },
+        {
+          "id": "soc-16",
+          "question": "Kuinka linkität sosiaalisen median verkkosivustoon ja kauppaan?",
+          "answer": "UTM:ien, aloitussivujen, tuotelinkkien ja uudelleenkohdistamisen kautta. Social on kanava suppilossa, ei saari. Lue lisää: [Shop](/shop)."
+        }
+      ]
+    },
+    {
+      "id": "account-portaal",
+      "title": "Tili ja portaali",
+      "items": [
+        {
+          "id": "acc-1",
+          "question": "Kuinka kirjaudun sisään asiakasportaaliin?",
+          "answer": "Siirry tilille/kirjautumiseen ja käytä asiakastilisi sähköpostiosoitetta. Jos olet kadottanut tietoja, käytä salasanan palautusta tai ota meihin yhteyttä. Lue lisää: [Account](/dashboard) · [Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-2",
+          "question": "Mitä näen kojelaudassani?",
+          "answer": "Palveluistasi riippuen: liput, projektit, laskut, tekoälyskannaus/agentit ja pikalinkit tukeen. Lue lisää: [AI agents in account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account) · [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "acc-3",
+          "question": "Olen kadottanut kirjautumistietoni – mitä nyt?",
+          "answer": "Käytä \"unohdin salasanasi\" tai noudata asiakaspaneelin tietokannan ohjeita. Jos tämä ei auta, avaa lippu tunnetun yhteysosoitteen kautta. Lue lisää: [Lost login details](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-4",
+          "question": "Kuinka avaan lipun portaalista?",
+          "answer": "Valitse asiakaspaneelista tuki/liput, kuvaile ongelmasi ja lisää todisteita (URL-osoite, kuvakaappaukset). Lue lisää: [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "acc-5",
+          "question": "Mistä löydän laskuni?",
+          "answer": "Voit tarkastella ja ladata laskuja portaalin Laskutus/laskutus-kohdassa. Lue lisää: [Consult invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "acc-6",
+          "question": "Kuinka muutan laskutustietoja tai maksutapaa?",
+          "answer": "Säädä tilisi asetuksissa yrityksen nimi, ALV-numero ja maksutapa, jotta uudet laskut ovat oikein. Lue lisää: [Change invoice details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "acc-7",
+          "question": "Voivatko kollegat myös päästä sisään?",
+          "answer": "Kyllä, tilirooleilla (asiakas, johtaja, järjestelmänvalvoja), jotta useat tiimin jäsenet voivat seurata lippuja tai projekteja jakamatta kaikkea."
+        },
+        {
+          "id": "acc-8",
+          "question": "Onko tekoälyskannaus ja tekoälyagentit linkitetty tiliini?",
+          "answer": "Kyllä. Skannaukset ja agentit kuuluvat asiakastilillesi, jotta historia ja oikeudet säilyvät. Lue lisää: [AI agents](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "acc-9",
+          "question": "Kuinka turvallinen asiakastilini on?",
+          "answer": "Käytä yksilöllisiä salasanoja ja 2FA:ta, jos mahdollista (mukaan lukien isännöintipaneeleissa). Älä jaa istuntoja jaetuilla tietokoneilla. Lue lisää: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
+        },
+        {
+          "id": "acc-10",
+          "question": "Voinko seurata projektin tilaa ja suorituksia?",
+          "answer": "Kun projektit on listattu portaalissa, näet tilan ja viestinnän. Muussa tapauksessa pidämme sinut ajan tasalla lippujen tai sprinttipäivitysten kautta."
+        },
+        {
+          "id": "acc-11",
+          "question": "Miten linkitän palvelut kaupasta tiliini?",
+          "answer": "Kassan jälkeen tilaukset kuuluvat tilillesi; provisiointi (isännöinti, verkkotunnus) seuraa automaattisesti tai tuen kautta. Lue lisää: [Shop](/shop)."
+        },
+        {
+          "id": "acc-12",
+          "question": "Missä määritän ilmoitukset tai asetukset?",
+          "answer": "Tilin asetuksissa hallitset profiilia ja mahdollisia ilmoitusasetuksia. Pidä sähköpostiosoitteesi ajan tasalla laskusähköpostia varten."
+        }
+      ]
+    },
+    {
+      "id": "shop-bestellen",
+      "title": "Shoppailu ja tilaaminen",
+      "items": [
+        {
+          "id": "shop-1",
+          "question": "Mitä voin tilata kaupasta?",
+          "answer": "Hosting-paketit, verkkotunnukset, hoito-/tukituotteet ja muut verkossa tarjoamamme palvelut. Räätälöidyt tarjoukset tehdään ottamalla yhteyttä. Lue lisää: [Shop](/shop) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "shop-2",
+          "question": "Miten ostoskori ja kassa toimivat?",
+          "answer": "Lisää tuotteet, tarkista ajanjakso (kuukausi/vuosi) ja täytä kassalla. Saat sitten vahvistuksen ja pääsyn tiliisi. Lue lisää: [Shopping cart](/shop/cart)."
+        },
+        {
+          "id": "shop-3",
+          "question": "Ovatko hinnat sisältävät ALV:n vai ilman?",
+          "answer": "Myymälässä näytämme hinnat esitetyn ALV-kontekstin mukaan (usein myös kuluttajavirrat). Lasku sisältää yritysasiakkaiden arvonlisäveron nettoerittelyn."
+        },
+        {
+          "id": "shop-4",
+          "question": "Voinko maksaa kuukausittain vai vuosittain?",
+          "answer": "Monissa isännöinti- ja hoitotuotteissa on kuukausi- ja vuosivaihtoehto. Vuosittain on usein halvempaa; tiedot ovat tuotekorttikohtaisia."
+        },
+        {
+          "id": "shop-5",
+          "question": "Mitä maksutapoja hyväksyt?",
+          "answer": "Yleiset online-menetelmät kassalla (alueesta riippuen). Yrityslaskujen osalta voimme järjestää laskutuksen tilille ottamalla yhteyttä."
+        },
+        {
+          "id": "shop-6",
+          "question": "Saanko pääsyn heti maksun jälkeen?",
+          "answer": "Tavallisten hosting-/verkkotunnustuotteiden provisiointi seuraa nopeasti onnistuneen maksun jälkeen. Räätälöityjen palvelujen osalta tuki suunnittelee aloituksen."
+        },
+        {
+          "id": "shop-7",
+          "question": "Voinko päivittää paketteja myöhemmin?",
+          "answer": "Kyllä. Jaetusta pilveen/VPS:ään tai Basicista Plus/Businessiin on mahdollista siirron suunnittelulla. Lue lisää: [Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [Choose package](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "shop-8",
+          "question": "Kuinka yhdistän myymälätuotteet räätälöintiin?",
+          "answer": "Tilaa isännöinti/huolto verkosta ja suunnittele suunnittelu, hakukoneoptimointi tai mainoksia vastaanoton kautta. Yhdistelemme laskutuksen ja kirjanpidon mahdollisuuksien mukaan. Lue lisää: [Contact](/contact)."
+        },
+        {
+          "id": "shop-9",
+          "question": "Entä jos tilaukseni ei tule perille tai on jumissa?",
+          "answer": "Tarkista sähköpostisi (mukaan lukien roskaposti) ja portaali. Jos se pysyy hiljaa, avaa lippu tai sähköpostituki tilausnumerolla. Lue lisää: [Contact](/contact) · [Tickets](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "shop-10",
+          "question": "Voinko tilata verkkotunnuksen ja hosting yhdellä tilauksella?",
+          "answer": "Kyllä, se on tavallinen kulku: verkkotunnus + hosting ostoskorissa, sitten DNS-yhteys. Lue lisää: [Domains](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "shop-11",
+          "question": "Onko WordPress Care -paketteja olemassa?",
+          "answer": "Kyllä. Hoitopaketit kattavat päivitykset, seurannan ja ylläpidon – erikseen tai isännöinnin lisäksi. Lue lisää: [Shop](/shop)."
+        },
+        {
+          "id": "shop-12",
+          "question": "Kuinka peruutan tai muutan tilauksen?",
+          "answer": "Välittömästi tuen kautta tilauksen jälkeen; Tämän jälkeen tuotekohtaiset peruutus- ja muutosehdot. Autamme siirtoa tai vientiä, jos lopetat. Lue lisää: [Contact](/contact)."
         }
       ]
     },
@@ -514,12 +831,12 @@
         {
           "id": "sup-1",
           "question": "Mitä tukea tarjoat?",
-          "answer": "Tarjoamme WordPress-tuen, mukautetun verkkosivuston tuen, liput ja live-chatin, ylläpidon, turvallisuuden, suorituskyvyn ja tapauksiin reagoimisen."
+          "answer": "Tarjoamme WordPress-tuen, mukautetun verkkosivuston tuen, liput ja live-chatin, ylläpidon, turvallisuuden, suorituskyvyn ja tapauksiin reagoimisen. [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting) · [Chat, ticket or call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)"
         },
         {
           "id": "sup-2",
           "question": "Miten saan tukea?",
-          "answer": "Yhteydenoton, tapaamisen, lippujen kojelaudassa tai live-chatin kautta sivustolla. Kiireelliset tapaukset on merkitty ensisijaisiksi."
+          "answer": "Yhteydenoton, tapaamisen, lippujen kojelaudassa tai live-chatin kautta sivustolla. Kiireelliset tapaukset on merkitty ensisijaisiksi. [Contact](/contact) · [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Call appointment](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)"
         },
         {
           "id": "sup-3",
@@ -529,7 +846,7 @@
         {
           "id": "sup-4",
           "question": "Tarjoatko 24/7 seurantaa?",
-          "answer": "Kyllä, asiaankuuluvissa tuki- ja isännöintipaketeissa: valvonta, varmuuskopiot ja hälytykset, jotta ongelmat tulevat näkyviin aikaisemmin."
+          "answer": "Kyllä, asiaankuuluvissa tuki- ja isännöintipaketeissa: valvonta, varmuuskopiot ja hälytykset, jotta ongelmat tulevat näkyviin aikaisemmin. [Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup)"
         },
         {
           "id": "sup-5",
@@ -539,22 +856,22 @@
         {
           "id": "sup-6",
           "question": "Hoidatko WordPress-päivitykset puolestamme?",
-          "answer": "Kyllä, \"Ylläpito ja päivitykset\" kautta: ydin, laajennukset ja teemat sekä varmuuskopiointi ja tarkistukset ennen päivitystä ja sen jälkeen."
+          "answer": "Kyllä, \"Ylläpito ja päivitykset\" kautta: ydin, laajennukset ja teemat sekä varmuuskopiointi ja tarkistukset ennen päivitystä ja sen jälkeen. [Site down after WP update](/kennisbank/hosting/website-down-na-update-wordpress)"
         },
         {
           "id": "sup-7",
           "question": "Autatko hosting-ongelmissa?",
-          "answer": "Kyllä. Diagnosoimme, siirrämme tai optimoimme isännöinnin, VPS:n ja verkkotunnukset, kunnes sivusto toimii taas vakaasti."
+          "answer": "Kyllä. Diagnosoimme, siirrämme tai optimoimme isännöinnin, VPS:n ja verkkotunnukset, kunnes sivusto toimii taas vakaasti. [Move website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je)"
         },
         {
           "id": "sup-8",
           "question": "Entä jos sivustoni on poissa käytöstä?",
-          "answer": "Ilmoita kiireelliseksi. Palautamme mahdollisuuksien mukaan varmuuskopioiden, palvelintarkistusten ja hotfix-korjauksen avulla ja pidämme sinut ajan tasalla tilasta matkan varrella."
+          "answer": "Ilmoita kiireelliseksi. Palautamme mahdollisuuksien mukaan varmuuskopioiden, palvelintarkistusten ja hotfix-korjauksen avulla ja pidämme sinut ajan tasalla tilasta matkan varrella. [Backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [Check yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support)"
         },
         {
           "id": "sup-9",
           "question": "Onko olemassa asiakasportaalia?",
-          "answer": "Kyllä. Sisäänkirjautuneet asiakkaat näkevät kojelaudan, liput, projektit ja tarvittaessa CRM:n tai laskut."
+          "answer": "Kyllä. Sisäänkirjautuneet asiakkaat näkevät kojelaudan, liput, projektit ja tarvittaessa CRM:n tai laskut. [Ticket via customer panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel) · [Lost login?](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)"
         },
         {
           "id": "sup-10",
@@ -575,6 +892,56 @@
           "id": "sup-13",
           "question": "Voinko päivittää tuen myöhemmin?",
           "answer": "Kyllä. Voit skaalata, kun liikenne, riskit tai tiimitarpeet kasvavat."
+        },
+        {
+          "id": "sup-14",
+          "question": "Mitä eroa on chatin, lipun ja soittoajan välillä?",
+          "answer": "Chat on nopea lyhyille kysymyksille; liput ovat parempia teknisiin tapauksiin, joissa on lokit ja seuranta; puhelinaika sopii tutustumiseen tai monimutkaiseen selvitykseen. Lue lisää: [Chat versus ticket versus call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "sup-15",
+          "question": "Kuinka luon tukilipun?",
+          "answer": "Kirjaudu sisään asiakaspaneeliin ja avaa lippu selkeällä URL-osoitteella, vaiheilla ja kuvakaappauksilla. Mitä parempia tietoja, sitä nopeammin voimme auttaa. Lue lisää: [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "sup-16",
+          "question": "Onko sinulla varmuuskopioita, jos sivustoni kaatuu?",
+          "answer": "Kyllä, riippuen hosting- tai tukipaketistasi. Katkosten sattuessa palautamme varmuuskopioista mahdollisuuksien mukaan ja tutkimme syyn. Lue lisää: [Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor)."
+        },
+        {
+          "id": "sup-17",
+          "question": "Mitä voin tarkistaa ennen kuin soitan tukeen?",
+          "answer": "Tarkista tilasivu, DNS-eteneminen, viimeisimmät päivitykset, levytila ​​ja onko virhe toistettava. Se nopeuttaa diagnoosia. Lue lisää: [Do it yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support) · [Statuspage](/statuspage)."
+        },
+        {
+          "id": "sup-18",
+          "question": "Miten live chat toimii sivustolla?",
+          "answer": "Avaa live chat chat-painikkeella. Agent 000 auttaa ensin UKK/tietokannassa; Monimutkaisemmissa tai kiireellisissä asioissa ohjaamme sinut työntekijän puoleen. Lue lisää: [Digital Assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Contact](/contact)."
+        },
+        {
+          "id": "sup-19",
+          "question": "Voitko auttaa kriittiseen WordPress-virheeseen?",
+          "answer": "Kyllä. Diagnosoimme valkoiset näytöt, kriittiset PHP-virheet ja liitännäisristiriidat varmuuskopioinnilla ja kohdistetulla korjauksella. Lue lisää: [Critical Error WordPress](/kennisbank/wordpress/kritieke-fout-wordpress) · [Down after update](/kennisbank/hosting/website-down-na-update-wordpress)."
+        },
+        {
+          "id": "sup-20",
+          "question": "Voitko katsoa etänä (TeamViewer jne.)?",
+          "answer": "Tarvittaessa ja luvalla työpöytä- tai paneeliongelmiin. Useimmissa hosting-asioissa riittää pääsy paneeliin, DNS:ään tai WordPressiin. Lue lisää: [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "sup-21",
+          "question": "Kuinka peruutan tilauksen tai palvelun?",
+          "answer": "Voit peruuttaa asiakaspaneelin tai tuen kautta; kiinnitä huomiota sopimuksesi irtisanomisaikaan. Autamme sinua suorittamaan tietojen/viennin ja DNS-siirron siististi. Lue lisää: [Contact](/contact) · [Account](/dashboard)."
+        },
+        {
+          "id": "sup-22",
+          "question": "Tarjoatko WordPressin hoito-/huoltopaketteja?",
+          "answer": "Kyllä. Päivitykset, varmuuskopiot, turvatarkastukset ja suorituskyky sisältyvät hoitopaketteihin – ihanteellinen isännöinnin lisäksi. Lue lisää: [Shop](/shop) · [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren)."
+        },
+        {
+          "id": "sup-23",
+          "question": "Mitä jos sähköposti yhtäkkiä lakkaa toimimasta?",
+          "answer": "Tarkista DNS (MX/SPF/DKIM/DMARC), postilaatikkokiintiö ja estävätkö Microsoft tai palveluntarjoajat postin. Autamme ketjun mittaamisessa. Lue lisää: [Email Problems](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
         }
       ]
     },
@@ -585,7 +952,7 @@
         {
           "id": "web-1",
           "question": "Rakennatko vain WordPress-sivustoja?",
-          "answer": "Ei. WordPressin lisäksi teemme räätälöityjä web-suunnittelua HTML/CSS/JS-, PHP- ja Next.js-muodoissa – erillään WordPress-palveluista."
+          "answer": "Ei. WordPressin lisäksi teemme räätälöityjä web-suunnittelua HTML/CSS/JS-, PHP- ja Next.js-muodoissa – erillään WordPress-palveluista. [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [Services](/diensten)"
         },
         {
           "id": "web-2",
@@ -635,7 +1002,7 @@
         {
           "id": "web-11",
           "question": "Entä suorituskyky julkaisun jälkeen?",
-          "answer": "Optimoimme Core Web Vitalsin, välimuistin tai CDN:n ja valvonnan. Jälkihoito jatkuu sitten huoltopakettien kautta."
+          "answer": "Optimoimme Core Web Vitalsin, välimuistin tai CDN:n ja valvonnan. Jälkihoito jatkuu sitten huoltopakettien kautta. [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)"
         },
         {
           "id": "web-12",
@@ -651,87 +1018,349 @@
           "id": "web-14",
           "question": "Autatko paikan päällä tapahtuvassa tulosoptimoinnissa?",
           "answer": "Kyllä. Suoritamme A/B-testejä, UX-parannuksia, lomakkeita, toimintakehotuksia ja sivun nopeutta, jotta useammat kävijät konvertoituvat."
+        },
+        {
+          "id": "web-15",
+          "question": "Rakennatko myös verkkokauppoja?",
+          "answer": "Kyllä, markkinointisivustoista kassaintegraatioilla sähköiseen kaupankäyntiin WordPressillä tai räätälöintiin. Koordinoimme laajuuden, maksut ja toimitukset vastaanoton aikana. Lue lisää: [Services](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "web-16",
+          "question": "Miten käsittelet sivustojen tietosuojatekstejä?",
+          "answer": "Neuvomme ja toteutamme tietosuoja- ja suostumusvirtoja lomakkeille ja bannereille, räätälöimme tarvittaessa asianajajasi mukaan. Lue lisää: [Privacy with forms](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren) · [Cookie banner](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "web-17",
+          "question": "Tarjoatko lavastusympäristöjä?",
+          "answer": "Kyllä, tarvittaessa: lavastus tarkasteluja ja testejä varten, sitten ohjattu käyttöönotto tuotantoon."
+        },
+        {
+          "id": "web-18",
+          "question": "Voitko ottaa haltuusi ja parantaa olemassa olevaa WordPress-sivustoa?",
+          "answer": "Kyllä – tarkastus, päivitykset, tietoturva, nopeus, käyttökokemus ja hakukoneoptimointi ilman tarpeetonta rakentamista tyhjästä. Lue lisää: [WP move](/kennisbank/domeinnamen/wordpress-website-verhuizen) · [Critical errors](/kennisbank/wordpress/kritieke-fout-wordpress)."
+        },
+        {
+          "id": "web-19",
+          "question": "Entä HTTP:stä HTTPS:ään toimituksen jälkeen?",
+          "answer": "Sivustojen oletuksena on HTTPS. Siirron aikana pakotamme HTTPS:n ja ratkaisemme sekalaisen sisällön. Lue lisää: [HTTP to HTTPS in WordPress](/kennisbank/wordpress/wordpress-url-omzetten-van-http-naar-https) · [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig)."
+        }
+      ]
+    },
+    {
+      "id": "domeinen",
+      "title": "Verkkotunnukset",
+      "items": [
+        {
+          "id": "dom-1",
+          "question": "Mikä on verkkotunnus?",
+          "answer": "Verkkotunnus on osoite, jota vierailijat käyttävät löytääkseen verkkosivustosi (esimerkiksi example.com). Se sitoutuu DNS-tietueisiin, jotka osoittavat isännöintiisi tai sähköpostiisi. Lue lisää: [Domain registration](/kennisbank/domeinnamen/domeinnaamregistratie) · [Order domains](/domeinen)."
+        },
+        {
+          "id": "dom-2",
+          "question": "Kuinka rekisteröin verkkotunnuksen sinulle?",
+          "answer": "Etsi nimi verkkotunnussivulta, valitse laajennus ja suorita kassalle myymälä. Rekisteröinnin jälkeen hallinnoit DNS:ää, nimipalvelimia ja laskuja tililläsi. Lue lisää: [Domains](/domeinen) · [Registration guide](/kennisbank/domeinnamen/domeinnaamregistratie) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-3",
+          "question": "Voinko siirtää verkkotunnukseni sinulle?",
+          "answer": "Kyllä. Pyydä valtuutuskoodi (EPP) nykyiseltä rekisteröijältäsi, avaa siirtolukko ja aloita sitten siirto kanssamme. Sen jälkeen asetimme DNS- ja nimipalvelimet oikein. Lue lisää: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Authorisation code](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-4",
+          "question": "Mikä on valtuutuskoodi (EPP/Auth-koodi)?",
+          "answer": "Se on kertaluonteinen koodi nykyiseltä rekisteröijältäsi, joka aloittaa verkkotunnuksen siirron turvallisesti. Ilman kelvollista koodia siirtoa ei voi jatkaa. Lue lisää: [What is an authorisation code?](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen)."
+        },
+        {
+          "id": "dom-5",
+          "question": "Mikä on siirtolukko tai rekisterinpitäjän lukko?",
+          "answer": "Lukko estää ei-toivotut siirrot. Muuttoa varten sinun on usein kytkettävä se pois päältä nykyiseltä palveluntarjoajalta ja aloitettava sitten siirto kanssamme. Lue lisää: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Support](/contact)."
+        },
+        {
+          "id": "dom-6",
+          "question": "Voinko ostaa verkkotunnuksen ilman isännöintiä?",
+          "answer": "Kyllä. Voit rekisteröidä tai siirtää vain verkkotunnuksen ja lisätä hosting-palvelun tai sähköpostin myöhemmin. Voit jo hallita tai välittää DNS:ää sillä välin. Lue lisää: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-7",
+          "question": "Mitä laajennuksia (.nl, .com, …) voin rekisteröidä?",
+          "answer": "Tuemme yleisiä TLD:itä, kuten .nl ja .com, sekä monia kansainvälisiä laajennuksia. Saatavuus ja hinta näkyvät heti verkkotunnuksen haussa. Lue lisää: [Domains](/domeinen) · [Registration](/kennisbank/domeinnamen/domeinnaamregistratie)."
+        },
+        {
+          "id": "dom-8",
+          "question": "Kuinka uusin verkkotunnukseni?",
+          "answer": "Uusiminen tapahtuu laskujen ja asiakasportaalisi kautta; automaattinen uusiminen on usein saatavilla. Pidä maksutiedot ajan tasalla välttääksesi vanhenemisen. Lue lisää: [Invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails) · [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "dom-9",
+          "question": "Mitä ovat premium-verkkotunnukset?",
+          "answer": "Premium-nimet ovat lyhyitä tai suosittuja verkkotunnuksia, joiden ostohinta on korkeampi, usein jälkimarkkinoiden kautta. Saatavuus ja ehdot vaihtelevat laajennuksen mukaan. Lue lisää: [Premium domains](/kennisbank/domeinnamen/premium-domeinnamen) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-10",
+          "question": "Voinko rekisteröidä verkkotunnukseni nimettömästi (Protect ID)?",
+          "answer": "Jos rekisteri sallii, voit harkita yksityisyyttä/Protect ID:tä. Säännöt vaihtelevat laajennuksen mukaan – esimerkiksi .nl:llä on oma kehys. Lue lisää: [Protect ID](/kennisbank/domeinnamen/protect-id-domein-anoniem-registreren)."
+        },
+        {
+          "id": "dom-11",
+          "question": "Verkkotunnukseni on karanteenissa – mitä nyt?",
+          "answer": "Poistamisen jälkeen verkkotunnus voi siirtyä karanteeniin. Rekisteristä riippuen voit usein aktivoida sen uudelleen maksua vastaan. älä odota liian kauan. Lue lisää: [Domain out of quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-12",
+          "question": "Uusi verkkotunnukseni ei toimi vielä – mitä nyt?",
+          "answer": "Yleensä kyseessä on DNS:n leviäminen, puuttuvat A/MX-tietueet tai nimipalvelimet, joita ei ole vielä päivitetty. Tarkista tietueet ja anna TTL:ien vanhentua. Lue lisää: [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-13",
+          "question": "Kuinka yhdistän verkkotunnuksen isännöintisuunnitelmaani?",
+          "answer": "Lisää verkkotunnus paneeliisi tai tiliisi ja osoita DNS (A-tietue tai nimipalvelimet) isännöintiin. Autamme ensimmäisessä kytkennässä tilauksen jälkeen. Lue lisää: [Connect domain to plan](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-14",
+          "question": "Voinko välittää verkkotunnuksen?",
+          "answer": "Kyllä. Verkkotunnuksen uudelleenohjaus lähettää vierailijat toiseen URL-osoitteeseen – hyödyllinen tuotenimille ilman erillistä sivustoa. Kohdistamme DNS- ja uudelleenohjaukset asetuksiisi. Lue lisää: [Forward a domain](/kennisbank/domeinnamen/domeinnaam-doorsturen) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-15",
+          "question": "Kuinka vaihdan verkkotunnukseni nimipalvelimia?",
+          "answer": "DNS/domain-hallinnassa valitset nimipalvelimemme tai ulkoiset (esimerkiksi CDN:n). Levitys voi kestää tunteista vuorokauteen. Lue lisää: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-16",
+          "question": "Mitä verkkotunnus maksaa?",
+          "answer": "Hinnat vaihtelevat laajennuksen ja ajanjakson mukaan; verkkotunnuksen haku näyttää nykyiset rekisteröinti- ja uusimishinnat. Premium-nimillä on erillinen hinta. Lue lisää: [Domains](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-17",
+          "question": "Pitääkö isännöinnin ja verkkotunnuksen olla saman palveluntarjoajan kanssa?",
+          "answer": "Ei, mutta se on yksinkertaisempaa: DNS, SSL, sähköposti ja tuki sitten istu yhden osapuolen kanssa. Voit myös pitää vain DNS:n meillä ja isännöinnillä muualla. Lue lisää: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "dom-18",
+          "question": "Voinko hallita useita verkkotunnuksia yhdellä tilillä?",
+          "answer": "Kyllä. Ylimääräisiä verkkotunnuksia voidaan rekisteröidä tai siirtää ja linkittää lisäosina, pysäköidä tai edelleenlähettää – hosting-suunnitelmasi rajoissa. Lue lisää: [Domains](/domeinen) · [Choose a hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "dom-19",
+          "question": "Mitä tapahtuu, jos verkkotunnukseni vanhenee?",
+          "answer": "Vanhenemisen jälkeen on usein lisä- tai karanteeniaika, jolloin toipuminen on edelleen mahdollista; sen jälkeen joku muu voi vaatia sitä. Uusia ajoissa laskujen kautta. Lue lisää: [Quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-20",
+          "question": "Mistä tilaan tai hallinnoin verkkotunnuksia?",
+          "answer": "Rekisteröidy ja siirrä verkkotunnussivun tai kaupan kautta; hallinta (DNS, laskut, uusiminen) asuu asiakasportaalissa. Lue lisää: [Domains](/domeinen) · [Shop](/shop) · [Account](/dashboard)."
         }
       ]
     },
     {
       "id": "webhosting",
-      "title": "Webhotellipalvelut ja verkkotunnukset",
+      "title": "Web hosting",
       "items": [
         {
           "id": "host-1",
           "question": "Millaista hosting-palvelua tarjoat?",
-          "answer": "Tarjoamme jaetun isännöinnin, WordPress-isännöinnin ja VPS:n – Basic-, Plus- ja Business-tasoilla – sekä verkkotunnuksia."
+          "answer": "Tarjoamme jaetun isännöinnin, pilvipalvelun, WordPress-isännöinnin ja VPS:n – sekä verkkotunnuksen rekisteröinnin. Valitse liikenteen, pinon ja kasvun perusteella. Lue lisää: [Shared hosting](/diensten/shared-hosting) · [Cloud hosting](/diensten/cloud-hosting) · [WordPress hosting](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-2",
-          "question": "Mitä eroa on jaetun, WordPressin ja VPS:n välillä?",
-          "answer": "Jaettu on kustannustehokasta pienemmille sivustoille. WordPress-isännöinti on optimoitu WP:lle. VPS antaa enemmän resursseja ja hallintaa raskaammille kuormille."
+          "question": "Mitä eroa on jaetun, pilvipalvelun, WordPressin ja VPS:n välillä?",
+          "answer": "Jaettu on kustannustehokas pienille sivustoille. Pilvi tarjoaa enemmän resursseja ja skaalautuvuutta, täysin hallittua. WordPress-isännöinti on optimoitu WP:lle. VPS antaa paremman hallinnan raskaammille kuormille. Lue lisää: [Differences explained](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps) · [Shared plans](/kennisbank/hosting/wat-is-shared-hosting-basic-plus-en-business) · [VPS plans](/kennisbank/hosting/wat-is-vps-hosting-basic-plus-en-business)."
         },
         {
           "id": "host-3",
-          "question": "Autatko verkkotunnuksen rekisteröinnissä?",
-          "answer": "Kyllä. Neuvomme, rekisteröimme tai siirrämme verkkotunnuksen ja yhdistämme DNS:n oikein."
+          "question": "Mitä pilvipalvelu on sinun kanssasi?",
+          "answer": "Pilvipalvelu tarjoaa enemmän resursseja ja skaalautuvuutta kuin klassinen jaettu, mutta jatkamme sen hallintaa. Ihanteellinen, kun jaettu tiukka, mutta täyttä VPS:ää ei vielä tarvita. Lue lisää: [Cloud hosting](/diensten/cloud-hosting) · [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
         },
         {
           "id": "host-4",
           "question": "Sisältyykö SSL isännöintiin?",
-          "answer": "Kyllä. SSL on vakiona asianmukaisissa hosting-suunnitelmissamme."
+          "answer": "Kyllä. SSL on vakiona asianmukaisissa hosting-suunnitelmissamme, joten sivustot toimivat HTTPS:llä. Lue lisää: [What is SSL?](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [Install Let's Encrypt](/kennisbank/hosting/hoe-installeer-ik-een-gratis-lets-encrypt-ssl-certificaat)."
         },
         {
           "id": "host-5",
           "question": "Voitko siirtää sivustoni isännöintiisi?",
-          "answer": "Kyllä. Hoidamme varmuuskopioinnin, migraation, DNS-katkaisun, SSL- ja savutestit minimaalisella seisokkiajalla."
+          "answer": "Kyllä. Hoidamme varmuuskopioinnin, migraation, DNS-katkaisun, SSL- ja savutestit minimaalisella seisokkiajalla. Lue lisää: [Migrate website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je) · [Migrate WordPress](/kennisbank/domeinnamen/wordpress-website-verhuizen)."
         },
         {
           "id": "host-6",
           "question": "Miten varmuuskopiot toimivat isännöinnissä?",
-          "answer": "Se riippuu suunnitelmasta: yksinkertainen tai automaattinen varmuuskopiointi. Lisäsäilytys paikan päällä on saatavilla."
+          "answer": "Se riippuu suunnitelmasta: yksinkertainen tai automaattinen varmuuskopiointi. Lisäsäilytys paikan päällä on saatavilla. Lue lisää: [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor) · [Backup in DirectAdmin](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
         },
         {
           "id": "host-7",
           "question": "Entä jos saan enemmän liikennettä?",
-          "answer": "Sitten skaalaamme Plus-, Business- tai VPS-tasolle ja optimoimme välimuistin ja CDN:n, jotta sivusto pystyy käsittelemään kasvua."
+          "answer": "Sitten skaalaamme Plus-, Business-, pilvi- tai VPS-palveluun ja optimoimme välimuistin ja CDN:n, jotta sivusto pystyy käsittelemään kasvua. Lue lisää: [When to move to VPS?](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)."
         },
         {
           "id": "host-8",
-          "question": "Tarjoatko sähköpostia verkkotunnuksilla?",
-          "answer": "Se riippuu paketista ja asetuksista. Neuvomme luotettavia sähköpostiratkaisuja ja asetamme DNS oikein (SPF, DKIM ja DMARC)."
+          "question": "Kuinka turvallinen isännöintisi on?",
+          "answer": "Käytämme palomuuria, SSL:ää, päivityksiä, valvontaa ja karkaisua. Ylimääräisiä suojauskerroksia on saatavilla tarvittaessa. Lue lisää: [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
         },
         {
           "id": "host-9",
-          "question": "Kuinka turvallinen isännöintisi on?",
-          "answer": "Käytämme palomuuria, SSL:ää, päivityksiä, valvontaa ja karkaisua. Lisätietoturvapalvelut voivat lisätä kerroksia päälle."
+          "question": "Voinko siirtyä jaetusta VPS:ään myöhemmin?",
+          "answer": "Kyllä. Suunnittelemme yhdessä siirron, mukaan lukien testit ja palautuksen, jotta kytkin pysyy hallinnassa. Lue lisää: [Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [VPS hosting](/diensten/vps-hosting)."
         },
         {
           "id": "host-10",
-          "question": "Voinko siirtyä jaetusta VPS:ään myöhemmin?",
-          "answer": "Kyllä. Suunnittelemme yhdessä siirron, mukaan lukien testit ja palautuksen, jotta kytkin pysyy hallinnassa."
+          "question": "Tuetko CDN:ää?",
+          "answer": "Kyllä, tarvittaessa – usein ilmainen CDN sisältyy WP-isännöintisuunnitelmiin – nopeampaa maailmanlaajuista toimitusta varten. Lue lisää: [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [WordPress hosting](/diensten/wordpress-hosting)."
         },
         {
           "id": "host-11",
-          "question": "Tuetko CDN:ää?",
-          "answer": "Kyllä, tarvittaessa – usein ilmainen CDN sisältyy WP-isännöintisuunnitelmiin – nopeampaa maailmanlaajuista toimitusta varten."
+          "question": "Mikä on käytettävyyden lähestymistapasi?",
+          "answer": "Valvomme, reagoimme nopeasti tapauksiin ja kommunikoimme selkeästi huoltoikkunoissa, jotta tiedät mitä tapahtuu. Tilapäivitykset ovat tilasivulla. Lue lisää: [Status page](/statuspage) · [Contact](/contact)."
         },
         {
           "id": "host-12",
-          "question": "Mikä on käytettävyyden lähestymistapasi?",
-          "answer": "Valvomme, reagoimme nopeasti tapauksiin ja kommunikoimme selkeästi huoltoikkunoissa, jotta tiedät mitä tapahtuu."
+          "question": "Kuinka valitsen oikean isännöintisuunnitelman?",
+          "answer": "Perustuu liikenteeseen, pinoon (WordPress tai custom), resursseihin ja kasvuun. Neuvomme rehellisesti – emme ylimyydä. Lue lisää: [Choose the right hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Shared vs WP vs VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
         },
         {
           "id": "host-13",
-          "question": "Autatko ratkaisemaan DNS-ongelmia?",
-          "answer": "Kyllä. Korjaamme tietueita, leviämistä, postin todennusta ja verkkotunnusyhteyksiä, kunnes DNS on taas oikea."
+          "question": "Mistä näen hosting-hinnat?",
+          "answer": "Isännöintipalvelusivuilla ja kaupassa, tarvittaessa kuukausi- tai vuosivaihtoehdoilla. Lue lisää: [Shared](/diensten/shared-hosting) · [Cloud](/diensten/cloud-hosting) · [WordPress](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting) · [Shop](/shop)."
         },
         {
           "id": "host-14",
-          "question": "Kuinka valitsen oikean isännöintisuunnitelman?",
-          "answer": "Perustuu liikenteeseen, pinoon (WordPress tai custom), resursseihin ja kasvuun. Neuvomme rehellisesti – emme ylimyydä."
+          "question": "Saanko SSH-käytön isännöintiin?",
+          "answer": "Se riippuu suunnitelmasta. Monissa suunnitelmissa SSH on saatavilla tai sitä voidaan pyytää; VPS:ssä saat yleensä täyden pääsyn. Lue lisää: [SSH access](/kennisbank/hosting/heb-ik-ssh-toegang-op-mijn-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-15",
-          "question": "Mistä näen hosting-hinnat?",
-          "answer": "Isännöintipalvelusivuilla kohdassa Palvelut → Verkkohotellipalvelut ja verkkotunnukset, tarvittaessa kuukausi- tai vuosivaihtoehdoilla."
+          "question": "Kuinka asennan WordPressin isännöintiisi?",
+          "answer": "Ohjauspaneelin kautta (esim. DirectAdmin/Installatron) tai manuaalisesti. Meillä on vaiheittainen opas. Lue lisää: [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-16",
+          "question": "Mitä inodit ovat ja miksi suunnitelmani näyttää \"täydeltä\"?",
+          "answer": "Inodes laskee tiedostoja/kansioita, ei vain GB. Monet pienet välimuisti- tai sähköpostitiedostot voivat saavuttaa rajan, vaikka levytila ​​näyttää edelleen vapaalta. Lue lisää: [Inodes](/kennisbank/hosting/inodes-en-inode-limieten) · [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-17",
+          "question": "Mitä \"rajoittamaton\" tallennustila tai liikenne tarkoittaa?",
+          "answer": "\"Rajoittamaton\" seuraa kohtuullista käyttöä: normaali verkkosivuston käyttö on hyvä; väärinkäyttöä tai äärimmäisiä kuormituksia voidaan rajoittaa alustan pitämiseksi vakaana. Lue lisää: [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-18",
+          "question": "Mitä eroa on jaetun, VPS:n ja omistetun välillä?",
+          "answer": "Jaetut osakkeet resurssit; VPS eristää enemmän CPU/RAM-muistia; omistettu on kokonainen palvelin. Valitse liikenteen, ohjaustarpeiden ja budjetin mukaan. Lue lisää: [Dedicated vs VPS vs shared](/kennisbank/infrastructuur-servers/verschil-tussen-dedicated-vps-en-shared-hosting) · [Shared/WP/VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
+        },
+        {
+          "id": "host-19",
+          "question": "Kuinka työskentelen DirectAdminin kanssa?",
+          "answer": "DirectAdmin on sähköpostin, DNS:n, tietokantojen, varmuuskopioiden ja asennuksen ohjauspaneeli. Kirjaudu sisään paneelin tunnistetiedoillasi; suosittelemme 2FA:ta. Lue lisää: [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Backups](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
+        },
+        {
+          "id": "host-20",
+          "question": "Tarjoatko objektivälimuistia WordPressille?",
+          "answer": "Sopivissa suunnitelmissa tuemme pysyvää objektivälimuistia tietokantakyselyjen vähentämiseksi ja latautumisen nopeuttamiseksi. Lue lisää: [Object cache](/kennisbank/hosting/persistent-object-cache-in-wordpress) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-21",
+          "question": "Kuinka uusin tai maksan isännöinnistä?",
+          "answer": "Asiakasportaalin ja laskujen kautta; automaattinen uusiminen on usein saatavilla. Pidä laskutustiedot ajan tasalla häiriöiden välttämiseksi. Lue lisää: [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode) · [View invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "host-22",
+          "question": "Voinko liittää useita verkkotunnuksia yhteen hosting-suunnitelmaan?",
+          "answer": "Usein kyllä, lisäosien tai varattujen verkkotunnusten kautta – suunnitelman rajoituksista riippuen. Autamme yhteyden ja DNS:n kanssa. Lue lisää: [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Connect domain](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket)."
+        },
+        {
+          "id": "host-23",
+          "question": "Kuinka turvallista on kirjautuminen isännöintipaneeliini?",
+          "answer": "Käytä vahvaa salasanaa ja ota 2FA käyttöön. Älä jaa paneelin kirjautumistunnuksia suojaamattomien kanavien kautta. Lue lisää: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "host-24",
+          "question": "Mikä WordPress-isännöinti tarkalleen on?",
+          "answer": "WordPress-isännöinti on optimoitu WP:lle: nopeampi PHP/pino, usein CDN ja yksinkertaisemmat asennukset/päivitykset kuin yleinen jaettu. Lue lisää: [WP hosting plans](/kennisbank/hosting/wat-is-wordpress-hosting-basic-plus-en-pro) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-25",
+          "question": "Mistä tilaan isännöinnin suoraan?",
+          "answer": "Kaupassa tai Shared-, Cloud-, WordPress- ja VPS-hosting-kategorioiden kautta. Tilauksen jälkeen saat käyttöösi paneelin ja laskun. Lue lisää: [Shop](/shop) · [Hosting overview](/diensten/categorie/hosting)."
+        }
+      ]
+    },
+    {
+      "id": "email-dns",
+      "title": "Sähköposti ja DNS",
+      "items": [
+        {
+          "id": "mail-1",
+          "question": "Tarjoatko sähköpostia verkkotunnuksilla tai isännöinnillä?",
+          "answer": "Se riippuu paketista ja asetuksista. Neuvomme luotettavia sähköpostiratkaisuja ja asetamme DNS oikein (SPF, DKIM ja DMARC). Lue lisää: [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress) · [SPF record](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-2",
+          "question": "Mitä ovat SPF, DKIM ja DMARC?",
+          "answer": "Ne ovat DNS-tietueita, jotka käsittelevät sähköpostin todennusta ja vähentävät huijausta/roskapostia. Ilman oikeita tietueita posti päätyy useammin roskapostiin. Lue lisää: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-3",
+          "question": "Kuinka hallitsen DNS-tietueita?",
+          "answer": "Verkkotunnuksesi tai isännöintipaneelin DNS-hallinnan kautta määrität A-, AAAA-, CNAME-, MX- ja TXT-tietueet. Autamme siirroissa ja postin todentamisessa. Lue lisää: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [DNSSEC](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-4",
+          "question": "Autatko ratkaisemaan DNS-ongelmia?",
+          "answer": "Kyllä. Korjaamme tietueita, leviämistä, postin todennusta ja verkkotunnusyhteyksiä, kunnes DNS on taas oikea. Lue lisää: [Manage DNS records](/kennisbank/domeinnamen/dns-records-beheren) · [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen)."
+        },
+        {
+          "id": "mail-5",
+          "question": "Mikä on DNSSEC?",
+          "answer": "DNSSEC allekirjoittaa DNS-vastaukset, joten manipulointi on vaikeampaa. Voimme ottaa sen käyttöön siellä, missä TLD ja asetukset tukevat sitä. Lue lisää: [DNSSEC explained](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-6",
+          "question": "Miten määritän sähköpostin puhelimeeni?",
+          "answer": "Käytä paneelissasi olevia IMAP/SMTP-tietoja. Androidille (ja vastaavasti iOS:lle) vaiheet ovat tietokannassa. Lue lisää: [Email on Android](/kennisbank/e-mail/e-mail-instellen-op-android) · [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress)."
+        },
+        {
+          "id": "mail-7",
+          "question": "Mitä jos sähköposti yhtäkkiä lakkaa toimimasta?",
+          "answer": "Tarkista DNS (MX/SPF/DKIM/DMARC), postilaatikkokiintiö ja estävätkö palveluntarjoajat postin. Autamme jäljittämään koko ketjun. Lue lisää: [Email problems](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-8",
+          "question": "Miten nimipalvelimet toimivat?",
+          "answer": "Nimipalvelimet määrittävät, mikä DNS-järjestelmä palvelee verkkotunnustasi. Jos muutat niitä, sinun on asetettava A/MX/TXT-tietueet uudelleen oikein uudessa DNS-isännässä. Lue lisää: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "mail-9",
+          "question": "Kuinka kauan DNS:n leviäminen kestää?",
+          "answer": "Usein minuutista muutamaan tuntiin; joskus jopa 24–48 tuntia TTL:ien ja välimuistien vuoksi. Pienennä TTL:iä ennen siirtoa vaihtaaksesi nopeammin. Lue lisää: [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen) · [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet)."
+        },
+        {
+          "id": "mail-10",
+          "question": "Voinko välittää sähköpostia toiseen osoitteeseen?",
+          "answer": "Kyllä. Huolitsijat lähettävät saapuvan postin Gmailiin, Microsoft 365:een tai muuhun postilaatikkoon – hyödyllistä täyden postilaatikon rinnalla tai sen sijaan. Lue lisää: [Forward email](/kennisbank/e-mail/email-doorsturen-naar-mailadres)."
+        },
+        {
+          "id": "mail-11",
+          "question": "Voinko yhdistää toimialueeni Microsoft 365:een?",
+          "answer": "Kyllä. Asetat MX- ja todennustietueet (SPF/DKIM/DMARC) Microsoftin ohjeiden mukaisesti. autamme DNS-puolella. Lue lisää: [Domain to Microsoft 365](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-microsoft-365) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-12",
+          "question": "Miksi sähköpostini päätyy roskapostiin?",
+          "answer": "Usein SPF/DKIM/DMARC puuttuu tai on ristiriitainen tai IP/maine on heikko. Tarkistamme DNS-todennuksen ja lähetyskäyttäytymisen. Lue lisää: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-13",
+          "question": "Mikä on MX-tietue?",
+          "answer": "MX-tietue kertoo Internetille, mikä sähköpostipalvelin voi vastaanottaa verkkotunnuksesi sähköpostia. Ilman oikeaa MX:ää posti ei tule perille. Lue lisää: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Email problems](/kennisbank/hosting/problemen-met-e-mail-website)."
+        },
+        {
+          "id": "mail-14",
+          "question": "Voinko käyttää webmailia?",
+          "answer": "Kyllä, isännöintipaneelisi verkkosähköpostin URL-osoitteen kautta voit lukea ja lähettää viestejä selaimessa – puhelimen tai Outlookin IMAPin rinnalla. Lue lisää: [Set up email](/kennisbank/e-mail/e-mail-instellen-op-android) · [Contact](/contact)."
+        },
+        {
+          "id": "mail-15",
+          "question": "Onko DNS:n oltava mukanasi, jos isännöinti on muualla?",
+          "answer": "Ei. Voit säilyttää DNS:n meillä tai muualla, kunhan A/MX/TXT osoittaa oikeisiin palveluihin. Johdonmukainen hallinta estää siirtovirheet. Lue lisää: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Nameservers](/kennisbank/domeinnamen/nameservers-beheren)."
         }
       ]
     }

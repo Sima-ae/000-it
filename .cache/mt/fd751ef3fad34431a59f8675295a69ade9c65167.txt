@@ -1,0 +1,1 @@
+Inodes count files/folders, not just GBs. Many small cache or mail files can hit the limit while disk space still seems free. Read more: ⟦L0⟧Inodes⟦/L0⟧ · ⟦L1⟧Storage and Traffic⟦/L1⟧.

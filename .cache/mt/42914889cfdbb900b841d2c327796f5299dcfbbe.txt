@@ -1,0 +1,1 @@
+Domeniniz və ya hostinq paneliniz üçün DNS idarəetməsi vasitəsilə siz A, AAAA, CNAME, MX və TXT qeydlərini təyin edirsiniz. Biz miqrasiya və poçt auth ilə kömək edirik. Daha ətraflı: ⟦L0⟧ · ⟦L1⟧.

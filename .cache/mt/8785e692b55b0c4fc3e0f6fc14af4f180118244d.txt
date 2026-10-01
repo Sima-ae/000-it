@@ -1,0 +1,1 @@
+Utilice una contraseña segura y habilite 2FA. No comparta los inicios de sesión del panel a través de canales inseguros. Leer más: ⟦L0⟧ · ⟦L1⟧.

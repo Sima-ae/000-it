@@ -1,0 +1,1 @@
+DNSSEC signs DNS responses to make manipulation more difficult. We can activate it where your TLD and setup support it. Read more: ⟦L0⟧DNSSEC explanation⟦/L0⟧.

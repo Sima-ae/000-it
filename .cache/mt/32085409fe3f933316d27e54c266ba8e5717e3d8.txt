@@ -1,0 +1,1 @@
+Oui. La redirection de domaine envoie les visiteurs vers une autre URL – utile pour les marques sans site séparé. Nous alignons le DNS et les redirections sur votre configuration. Lire la suite : ⟦L0⟧ · ⟦L1⟧.

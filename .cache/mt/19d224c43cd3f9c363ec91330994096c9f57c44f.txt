@@ -1,0 +1,1 @@
+Ja. Vi planlegger migreringen sammen, inkludert tester og tilbakerulling, slik at bryteren forblir kontrollert. Les mer: ⟦L0⟧ · ⟦L1⟧.

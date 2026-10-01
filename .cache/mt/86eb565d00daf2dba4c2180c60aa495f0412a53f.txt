@@ -1,0 +1,1 @@
+Ne, ale je to jednodušší: DNS, SSL, e-mail a podpora pak sedí s jednou stranou. Můžete si také ponechat pouze DNS u nás a hostovat jinde. Přečtěte si více: ⟦L0⟧ · ⟦L1⟧.

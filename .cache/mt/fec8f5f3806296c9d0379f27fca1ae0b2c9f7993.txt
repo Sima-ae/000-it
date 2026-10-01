@@ -1,0 +1,1 @@
+WordPress barındırma WP için optimize edilmiştir: daha hızlı PHP/yığın, genellikle CDN ve genel paylaşıma göre daha basit kurulum/güncelleme. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

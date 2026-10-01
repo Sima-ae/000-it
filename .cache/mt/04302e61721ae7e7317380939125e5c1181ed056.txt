@@ -1,0 +1,1 @@
+Názov domény je adresa, ktorú návštevníci používajú na nájdenie vášho webu (napríklad example.com). Viaže sa na záznamy DNS, ktoré poukazujú na váš hosting alebo e-mail. Prečítajte si viac: ⟦L0⟧ · ⟦L1⟧.

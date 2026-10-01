@@ -1,0 +1,1 @@
+Det afhænger af pakken og opsætningen. Vi rådgiver pålidelige mailløsninger og indstiller DNS korrekt (SPF, DKIM og DMARC). Læs mere: ⟦L0⟧ · ⟦L1⟧.

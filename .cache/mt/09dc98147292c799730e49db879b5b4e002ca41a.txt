@@ -1,0 +1,1 @@
+Az állapotoldalon a tárhelyszolgáltatással és a kapcsolódó szolgáltatásokkal kapcsolatos incidenseket és karbantartásokat jelenítjük meg, így gyorsan láthatja, hogy történik-e valami. Bővebben: ⟦L0⟧.

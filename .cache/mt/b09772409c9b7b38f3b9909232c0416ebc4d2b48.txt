@@ -1,0 +1,1 @@
+Não, mas é mais simples: DNS, SSL, e-mail e suporte ficam com uma só parte. Você também pode manter apenas o DNS conosco e hospedar em outro lugar. Leia mais: ⟦L0⟧ · ⟦L1⟧.

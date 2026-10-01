@@ -12,12 +12,12 @@
         {
           "id": "gen-1",
           "question": "TripleZero iT tam olarak ne yapar?",
-          "answer": "TripleZero iT web tasarımı, WordPress desteği, dijital pazarlama, arama görünürlüğü (AEO, GEO/yerel ve SEO), tasarım ve barındırmayı birleştirir. Markaların daha hızlı bulunmasına, daha iyi web siteleri oluşturmasına ve ölçülebilir bir şekilde büyümesine yardımcı oluyoruz."
+          "answer": "TripleZero iT web tasarımı, WordPress desteği, dijital pazarlama, arama görünürlüğü (AEO, GEO/yerel ve SEO), tasarım ve barındırmayı birleştirir. Markaların daha hızlı bulunmasına, daha iyi web siteleri oluşturmasına ve ölçülebilir bir şekilde büyümesine yardımcı oluyoruz. [About us](/over-ons) · [Services](/diensten)"
         },
         {
           "id": "gen-2",
           "question": "TripleZero iT'ye nasıl başlayabilirim?",
-          "answer": "Bizimle iletişime geçin veya randevu alın. Kısa bir giriş yapıyoruz, hedefleri gözden geçiriyoruz ve topluyoruz, ardından planlama ve KPI'larla somut bir teklif hazırlıyoruz."
+          "answer": "Bizimle iletişime geçin veya randevu alın. Kısa bir giriş yapıyoruz, hedefleri gözden geçiriyoruz ve topluyoruz, ardından planlama ve KPI'larla somut bir teklif hazırlıyoruz. [Schedule appointment](/afspraak) · [Contact](/contact)"
         },
         {
           "id": "gen-3",
@@ -73,6 +73,46 @@
           "id": "gen-13",
           "question": "Mevcut satıcıları devralabilir veya onlarla işbirliği yapabilir misiniz?",
           "answer": "Evet. Geliştiriciler, pazarlamacılar veya ajanslarla sorunsuz bir şekilde çalışırız veya mevcut işleri gereksiz yere aksatmadan bakım ve optimizasyonu üstleniriz."
+        },
+        {
+          "id": "gen-14",
+          "question": "Agent 000 (sohbet asistanı) nedir?",
+          "answer": "Agent 000, sitedeki ve destek akışlarındaki dijital asistanımızdır. Sık sorulan soruları yanıtlıyor, bilgi bankası makalelerine işaret ediyor ve sizi canlı sohbete, bir bilete veya insan yardımının daha uygun olduğu bir randevuya yönlendirebilir. Daha fazlasını okuyun: [Digital assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Chat, ticket or call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "gen-15",
+          "question": "Randevuyu veya aramayı nasıl planlayabilirim?",
+          "answer": "Randevu sayfasından kendinize uygun bir saati seçebilirsiniz. Hızlı sorular için canlı sohbeti veya bileti de kullanabilirsiniz; telefon randevusu daha karmaşık süreçler veya alımlar için faydalıdır. Daha fazlasını okuyun: [Appointment](/afspraak) · [Call appointment explained](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)."
+        },
+        {
+          "id": "gen-16",
+          "question": "Hizmetlerinizin durumunu nerede görebilirim?",
+          "answer": "Durum sayfasında barındırma ve ilgili hizmetlerle ilgili olayları ve bakımları gösteriyoruz, böylece bir şeyler olup olmadığını hızlı bir şekilde görebilirsiniz. Devamını oku: [Statuspage](/statuspage)."
+        },
+        {
+          "id": "gen-17",
+          "question": "Bir bilgi tabanınız var mı?",
+          "answer": "Evet. Bilgi tabanında alan adları, DNS, e-posta, barındırma, WordPress, AI taraması, güvenlik ve daha fazlası hakkında adım adım açıklamalar içeren kılavuzlar bulunur. Devamını oku: [Knowledge base](/kennisbank)."
+        },
+        {
+          "id": "gen-18",
+          "question": "Gizlilik ve çerezlerle nasıl başa çıkıyorsunuz?",
+          "answer": "GDPR bilinciyle çalışıyoruz: gizlilik metinleri, formlar için izin ve izlemenin gerekli olduğu durumlarda çerez bannerları/izin modu. WordPress için doğru çerez kurulumuna yardımcı oluyoruz. Daha fazlasını okuyun: [Cookie banner in WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress) · [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Privacy with forms](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren)."
+        },
+        {
+          "id": "gen-19",
+          "question": "Haberlerinizi ve güncellemelerinizi nerede bulabilirim?",
+          "answer": "Haber sayfasında ürünler, güvenlik ve ipuçlarıyla ilgili güncellemeler yayınlıyoruz. Teknik arızalar için durum sayfasını kontrol edin. Daha fazlasını okuyun: [News](/nieuws) · [Statuspage](/statuspage)."
+        },
+        {
+          "id": "gen-20",
+          "question": "Sizinle çalışmanın maliyeti nedir?",
+          "answer": "Bu, karışıma bağlıdır: barındırma ve alışveriş ürünlerinin fiyatları sabittir; tasarım, SEO, reklamlar ve hizmetliler alımdan sonra gelir. Mağazada paketleri görüyorsunuz; özelleştirme için bir teklif alacaksınız. Daha fazlasını okuyun: [Shop](/shop) · [Contact](/contact)."
+        },
+        {
+          "id": "gen-21",
+          "question": "Ayrıca sadece danışmanlık veya denetim de yapabiliyor musunuz?",
+          "answer": "Evet. Denetimler, yapay zeka taramaları, teknik incelemeler ve fikir tartışması oturumları, tam hizmet sürecinden ayrı olarak yapılabilir. Daha sonra bunu kendiniz yapabilir veya bize bırakabilirsiniz. Daha fazlasını okuyun: [AI scan](/ai-scan) · [Services](/diensten)."
         }
       ]
     },
@@ -83,17 +123,17 @@
         {
           "id": "ai-1",
           "question": "TripleZero iT'de yapay zeka taraması nedir?",
-          "answer": "Yapay zekaya hazırlık taraması, sitenizin klasik arama motorları, yapay zeka yanıtları ve yerel veya coğrafi arama sonuçları (AEO, GEO, SEO ve teknik temeller) tarafından ne kadar iyi bulunabileceğini değerlendirir."
+          "answer": "Yapay zekaya hazırlık taraması, sitenizin klasik arama motorları, yapay zeka yanıtları ve yerel veya coğrafi arama sonuçları (AEO, GEO, SEO ve teknik temeller) tarafından ne kadar iyi bulunabileceğini değerlendirir. [What is the AI ​​scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Start AI scan](/ai-scan)"
         },
         {
           "id": "ai-2",
           "question": "AI taraması tam olarak neyi ölçer?",
-          "answer": "Tarama, AEO sinyallerini, GEO/yerel görünürlüğü, SEO temellerini, içerik yapısını, performans göstergelerini ve AI hazırlığını ölçer. Puanlar ve somut iyileştirme puanları alırsınız."
+          "answer": "Tarama, AEO sinyallerini, GEO/yerel görünürlüğü, SEO temellerini, içerik yapısını, performans göstergelerini ve AI hazırlığını ölçer. Puanlar ve somut iyileştirme puanları alırsınız. [Explain scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)"
         },
         {
           "id": "ai-3",
           "question": "AI taramasını ne sıklıkla çalıştırmalıyım?",
-          "answer": "En azından büyük site değişiklikleri veya kampanyalardan sonra. Aktif markalar için, örneğin her üç ayda bir olmak üzere periyodik taramalar yapmanızı öneririz; böylece arama ve yapay zeka sonuçlarında görünür kalırsınız."
+          "answer": "En azından büyük site değişiklikleri veya kampanyalardan sonra. Aktif markalar için, örneğin her üç ayda bir olmak üzere periyodik taramalar yapmanızı öneririz; böylece arama ve yapay zeka sonuçlarında görünür kalırsınız. [Start AI scan](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website)"
         },
         {
           "id": "ai-4",
@@ -118,12 +158,12 @@
         {
           "id": "ai-8",
           "question": "Markam için yapay zeka hazırlığı nedir?",
-          "answer": "Bu, sitenizin, içeriğinizin ve verilerinizin yapay zeka sistemlerinin markanızı doğru bir şekilde alıntılayabilmesi, önerebilmesi ve açıklayabilmesi için ayarlanma derecesidir."
+          "answer": "Bu, sitenizin, içeriğinizin ve verilerinizin yapay zeka sistemlerinin markanızı doğru bir şekilde alıntılayabilmesi, önerebilmesi ve açıklayabilmesi için ayarlanma derecesidir. [AI readiness in the scan](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)"
         },
         {
           "id": "ai-9",
           "question": "Kontrol panelinde AI aracılarını kullanabilir misiniz?",
-          "answer": "Evet. Müşteri portalında SEO, içerik, sosyal medya ve reklamlar (durum ve görevler dahil) için yapay zeka aracılarını görürsünüz."
+          "answer": "Evet. Müşteri portalında SEO, içerik, sosyal medya ve reklamlar (durum ve görevler dahil) için yapay zeka aracılarını görürsünüz. [What are AI agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Agents in your account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)"
         },
         {
           "id": "ai-10",
@@ -144,6 +184,46 @@
           "id": "ai-13",
           "question": "Yapay zeka girişimlerinin yatırım getirisini nasıl ölçerim?",
           "answer": "Trafik, olası satışlar, kazanılan zaman, içerik çıktısı, bilet çözümü ve dönüşüm gibi KPI'lar aracılığıyla. Sonuçların görünür kalması için bunları planda önceden tanımlarız."
+        },
+        {
+          "id": "ai-14",
+          "question": "Web sitemde AI taramasını nasıl başlatırım?",
+          "answer": "AI taramasına gidin, URL'nizi girin ve analizi başlatın. AEO, GEO, SEO, performans ve AI hazırlığı puanlarının yanı sıra iyileştirme puanları alırsınız. Daha fazlasını okuyun: [Start AI scan](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website) · [AI scan page](/ai-scan)."
+        },
+        {
+          "id": "ai-15",
+          "question": "AI tarama puanlarını nasıl okurum?",
+          "answer": "Her puan o alanda ne kadar güçlü olduğunuzu gösterir; Düşük puanlar somut ipuçlarıyla birlikte gelir. Taramayı tek seferlik bir “rapor kartı” olarak değil, öncelik listesi olarak kullanın. Daha fazlasını okuyun: [Explain scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Next steps](/kennisbank/ai-scan/welke-vervolgstappen-zet-ik-na-mijn-ai-scan)."
+        },
+        {
+          "id": "ai-16",
+          "question": "Yapay zeka taraması ile eksiksiz bir AEO/GEO/SEO süreci arasındaki fark nedir?",
+          "answer": "Tarama hızlı bir teşhistir. Bir süreç iyileştirmeleri uygular: içerik, yapılandırılmış veriler, teknik SEO, yerel sinyaller ve zaman içinde ölçüm. Daha fazlasını okuyun: [Scan versus process](/kennisbank/ai-scan/ai-scan-versus-een-volledig-aeo-geo-seo-traject-wat-is-het-verschil) · [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-17",
+          "question": "Hesabımda önceki AI taramalarını nerede bulabilirim?",
+          "answer": "Oturum açan müşteriler kontrol panelinde önceki taramaları ve analizleri görür (SEO analizi), böylece ilerlemeyi karşılaştırabilirsiniz. Daha fazlasını okuyun: [AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Account / dashboard](/dashboard)."
+        },
+        {
+          "id": "ai-18",
+          "question": "Düşük bir AEO veya GEO puanı sonrasında ne yapmalıyım?",
+          "answer": "SSS'lere, varlıklara, yapılandırılmış verilere (AEO) ve Google İşletme Profili / NAP / yerel açılış sayfalarına (GEO) öncelik verin. Bu yol haritasının uygulamaya dönüştürülmesine yardımcı oluyoruz. Daha fazlasını okuyun: [Scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Local Discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "ai-19",
+          "question": "Yapay zeka temsilcileri müşteri portalında nasıl çalışır?",
+          "answer": "Yapay zeka aracıları SEO, içerik, sosyal medya veya reklamlarla ilgili görevleri destekler. Hesabınızda genel bakışı açar, durumu görür ve paketinize göre acenteleri başlatabilir veya duraklatabilirsiniz. Daha fazlasını okuyun: [What are AI agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Open agents](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)."
+        },
+        {
+          "id": "ai-20",
+          "question": "AI taraması ücretsiz mi?",
+          "answer": "AI tarama sayfası üzerinden erişilebilir bir giriş var; daha derin analizler ve süreçler, hizmetlerin veya hizmetlilerin kapsamına girer. Taramadan sonra takibin faydalı olup olmadığını hemen göreceksiniz. Daha fazlasını okuyun: [AI scan](/ai-scan) · [What is the AI ​​scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-21",
+          "question": "Agent 000 aynı zamanda AI ve SEO sorularına da yardımcı oluyor mu?",
+          "answer": "Evet. Agent 000, AEO/GEO/SEO ve AI tarama sorularını yanıtlamak için SSS'yi ve bilgi tabanını kullanır ve doğru makalelere veya insan takibine yönlendiren bağlantıları kullanır. Daha fazlasını okuyun: [Digital Assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [FAQ](/faq)."
         }
       ]
     },
@@ -154,17 +234,17 @@
         {
           "id": "seo-1",
           "question": "AEO, GEO ve SEO arasındaki fark nedir?",
-          "answer": "AEO (Yanıt Motoru Optimizasyonu), yapay zeka yanıtlarına odaklanır. GEO (Coğrafi Arama Motoru Optimizasyonu), Haritalar'da, yerel paketlerde ve konuma dayalı aramada yerel ve bölgesel görünürlüğü güçlendirir. SEO klasik arama motorları için optimize eder."
+          "answer": "AEO (Yanıt Motoru Optimizasyonu), yapay zeka yanıtlarına odaklanır. GEO (Coğrafi Arama Motoru Optimizasyonu), Haritalar'da, yerel paketlerde ve konuma dayalı aramada yerel ve bölgesel görünürlüğü güçlendirir. SEO klasik arama motorları için optimize eder. [How AEO, GEO and SEO are related](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen) · [What is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization)"
         },
         {
           "id": "seo-2",
           "question": "AEO/GEO neden şimdi önemli?",
-          "answer": "Daha fazla arama yapan kişi yapay zeka aracılığıyla yanıt alıyor ve ayrıca yerel olarak (\"yakınımda\") arama yapıyor. AEO olmadan AI alıntılarını kaçırırsınız; GEO olmadan, klasik SEO sağlam olsa bile yerel potansiyel müşterileri kaçırırsınız."
+          "answer": "Daha fazla arama yapan kişi yapay zeka aracılığıyla yanıt alıyor ve ayrıca yerel olarak (\"yakınımda\") arama yapıyor. AEO olmadan AI alıntılarını kaçırırsınız; GEO olmadan, klasik SEO sağlam olsa bile yerel potansiyel müşterileri kaçırırsınız. [What is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant)"
         },
         {
           "id": "seo-3",
           "question": "Bir SEO etkileşimine nasıl başlarsınız?",
-          "answer": "Teknik bir denetim, anahtar kelime ve amaç araştırması, içerik boşluğu analizi ve işletmenizin KPI'lerine bağlı öncelikli bir yol haritasıyla başlıyoruz."
+          "answer": "Teknik bir denetim, anahtar kelime ve amaç araştırması, içerik boşluğu analizi ve işletmenizin KPI'lerine bağlı öncelikli bir yol haritasıyla başlıyoruz. [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)"
         },
         {
           "id": "seo-4",
@@ -174,7 +254,7 @@
         {
           "id": "seo-5",
           "question": "Yerel SEO da yapıyor musunuz?",
-          "answer": "Evet. Bölgenizde daha iyi bulunabilmeniz için Google İşletme Profili, yerel açılış sayfaları, NAP tutarlılığı, incelemeler ve yerel içerik kümeleri üzerinde çalışıyoruz."
+          "answer": "Evet. Bölgenizde daha iyi bulunabilmeniz için Google İşletme Profili, yerel açılış sayfaları, NAP tutarlılığı, incelemeler ve yerel içerik kümeleri üzerinde çalışıyoruz. [Improve local discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)"
         },
         {
           "id": "seo-6",
@@ -220,6 +300,36 @@
           "id": "seo-14",
           "question": "Uluslararası SEO konusunda yardımcı oluyor musunuz?",
           "answer": "Evet. Hreflang, ülkeye veya dile göre pazar araştırması, içerik yerelleştirmesi ve teknik çoklu yerel kurulumları yönetiyoruz."
+        },
+        {
+          "id": "seo-15",
+          "question": "AEO tam olarak nedir?",
+          "answer": "AEO (Yanıt Motoru Optimizasyonu), yapay zeka yanıtlarının ve yanıt motorlarının markanızdan doğru şekilde alıntı yapabilmesi için içerik oluşturur: anlaşılır SSS'ler, varlıklar ve yapılandırılmış veriler. Daha fazlasını okuyun: [What is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AEO, GEO and SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
+        },
+        {
+          "id": "seo-16",
+          "question": "GEO (coğrafi SEO) nedir?",
+          "answer": "GEO, GBP, NAP tutarlılığı ve yerel içerik aracılığıyla yerel ve bölgesel keşfedilebilirliği (Haritalar, yerel paketler ve konuma dayalı arama) güçlendirir. Daha fazlasını okuyun: [What is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant) · [Local discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "seo-17",
+          "question": "SEO optimizasyonunu nasıl sipariş edebilirim veya başlatabilirim?",
+          "answer": "Bir yapay zeka taraması veya denetimiyle başlayın, ardından öncelikleri olan bir teklifle başlayın. Ayrıca mağaza/hizmetler veya hizmet aracılığıyla SEO'yu içerik ve teknolojiyle birleştirebilirsiniz. Daha fazlasını okuyun: [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting) · [AI Scan](/ai-scan)."
+        },
+        {
+          "id": "seo-18",
+          "question": "Yapılandırılmış veriler ve SSS programı konusunda yardımcı olabilir misiniz?",
+          "answer": "Evet. Arama motorlarının ve yapay zekanın sizi daha iyi anlayabilmesi için ilgili diyagramlar (SSS, Organizasyon, Yerel İşletme, ürünler) oluşturuyor ve içeriği yapılandırıyoruz. Daha fazlasını okuyun: [AEO explanation](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AI scan scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)."
+        },
+        {
+          "id": "seo-19",
+          "question": "Core Web Vitals konusunda ne yapıyorsunuz?",
+          "answer": "LCP, INP ve CLS'yi ölçüyoruz, ağır varlıkları, barındırma/önbelleğe alma ve tema sorunlarını çözüyoruz ve yararlı olduğu durumlarda bunu CDN'ye bağlıyoruz. Daha fazlasını okuyun: [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [Choose Hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "seo-20",
+          "question": "SEO'yu barındırma ve WordPress bakımıyla birleştirebilir misiniz?",
+          "answer": "Evet. Kararlı barındırma, güncellemeler ve performans temeli oluşturur; SEO bunun üzerine kuruludur. Birçok müşteri WP-care + hosting + devam eden SEO'yu birleştirir. Daha fazlasını okuyun: [Hosting](/diensten/categorie/hosting) · [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
         }
       ]
     },
@@ -291,6 +401,26 @@
           "id": "ads-13",
           "question": "Yeniden pazarlama hâlâ geçerli mi?",
           "answer": "Evet, gizlilikle uyumlu olduğunda ve güçlü yaratıcı öğeler ve tekliflerle eşleştirildiğinde. Genellikle hunideki en verimli katman olmaya devam eder."
+        },
+        {
+          "id": "ads-14",
+          "question": "Reklamlara yönelik izin modu ve çerez banner'ları konusunda yardımcı oluyor musunuz?",
+          "answer": "Evet. Doğru izin ve etiketleme olmadan reklam ölçümü güvenilir değildir. Banner'ları, GTM/GA4'ü ve pikselleri düzgün bir şekilde birbirine bağlıyoruz. Daha fazlasını okuyun: [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Cookie banner WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "ads-15",
+          "question": "Kampanyalar için açılış sayfaları oluşturabilir misiniz?",
+          "answer": "Evet — izleme ve CRO temelleri ile arama amacına göre uyarlanmış hızlı açılış sayfaları veya WordPress sayfaları. Daha fazlasını okuyun: [Services](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "ads-16",
+          "question": "Reklam bütçesinin boşa harcanmasını nasıl önlersiniz?",
+          "answer": "Sıkı hesap yapısı, negatif anahtar kelimeler, kitle hariç tutmaları, açılış sayfasının sığdırılması ve yalnızca tıklamalar değil, EBM/ROAS'ta haftalık optimizasyon."
+        },
+        {
+          "id": "ads-17",
+          "question": "Reklamlar AEO/SEO ile iyi çalışıyor mu?",
+          "answer": "Evet. Reklamlar hızlı veri ve trafik sağlar; SEO/AEO sürdürülebilir görünürlük sağlar. Anahtar kelimelerden ve reklam öğelerinden elde edilen bilgiler içeriği ve açılış sayfalarını besler. Devamını oku: [AEO, GEO and SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
         }
       ]
     },
@@ -362,6 +492,26 @@
           "id": "des-13",
           "question": "Dijital Tasarım hakkında nereden daha fazla bilgi edinebilirim?",
           "answer": "Daha fazla bilgi /grafik-tasarim'da ve menüdeki Dijital Tasarım hizmetlerinde mevcuttur."
+        },
+        {
+          "id": "des-14",
+          "question": "Ayrıca tasarım sistemleri ve bileşen kütüphaneleri de sağlıyor musunuz?",
+          "answer": "Evet, tutarlı bir şekilde ölçeklenmek isteyen markalar için: pazarlama ve ürünün aynı dili konuşması için belirteçler, bileşenler ve belgeler."
+        },
+        {
+          "id": "des-15",
+          "question": "Mevcut marka stilini dijitalleştirebilir misiniz?",
+          "answer": "Evet. Basılı veya eksik marka yönergelerini web'e hazır renklere, tipografiye, kullanıcı arayüzü kitine ve şablonlara dönüştürüyoruz."
+        },
+        {
+          "id": "des-16",
+          "question": "Kullanıcı deneyimi araştırması mı yapıyorsunuz yoksa sadece görsel tasarım mı?",
+          "answer": "İkisi birden. Gerektiğinde röportajlarla, huni analizleriyle veya ısı haritalarıyla başlıyoruz; ardından kullanıcı arayüzü. Bu şekilde sadece zevke göre değil, davranışa göre tasarlıyoruz."
+        },
+        {
+          "id": "des-17",
+          "question": "Sosyal şablonlar ve reklam öğeleri tasarlayabilir misiniz?",
+          "answer": "Evet — markanıza ve kampanya hedeflerinize uygun atlı karıncalar, küçük resimler, hikayeler ve reklam setleri. Devamını oku: [Services](/diensten)."
         }
       ]
     },
@@ -433,6 +583,26 @@
           "id": "mkt-13",
           "question": "Sonuçsuz \"yoğun pazarlamayı\" nasıl önlersiniz?",
           "answer": "Her aktivite KPI'lara bağlıdır. Düşük performans gösteren taktikler verilerle durdurulur veya iyileştirilir, böylece bütçe işe yarayanlara gider."
+        },
+        {
+          "id": "mkt-14",
+          "question": "Bir pazarlama hizmetinde tipik olarak neler bulunur?",
+          "answer": "KPI'lara göre uyarlanmış strateji, içerik veya SEO, kampanyalar, raporlama ve denemelerin bir karışımı. Önceliklerin net kalması için kapsamı ve saatleri kaydediyoruz. Daha fazlasını okuyun: [Shop](/shop) · [Contact](/contact)."
+        },
+        {
+          "id": "mkt-15",
+          "question": "Konumlandırma ve mesajlaşma konusunda yardımcı oluyor musunuz?",
+          "answer": "Evet. Net konumlandırma, değer önermeleri ve sayfa kopyası, reklamların, SEO'nun ve satışların aynı mesajı iletmesini sağlar."
+        },
+        {
+          "id": "mkt-16",
+          "question": "Pazarlamayı yalnızca trafiğe göre değil, satış hattına göre mi ölçüyorsunuz?",
+          "answer": "Mümkün olduğunda: olası satışlar, SQL'ler, gelir veya destekli dönüşümler. Kalite olmadan trafiği ayarlıyoruz veya durduruyoruz."
+        },
+        {
+          "id": "mkt-17",
+          "question": "Pazarlama yığınını ve takibini temizleyebilir misiniz?",
+          "answer": "Evet — GTM, GA4, pikseller, CRM bağlantıları ve izin. Temiz veriler, iyi kararların temelidir. Devamını oku: [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen)."
         }
       ]
     },
@@ -504,6 +674,153 @@
           "id": "soc-13",
           "question": "Sosyal medyada büyümeyi ne kadar hızlı göreceğiz?",
           "answer": "Tutarlılık önemlidir. Önemli büyüme genellikle haftalar veya aylar alır; reklam desteğiyle genellikle daha hızlı gider."
+        },
+        {
+          "id": "soc-14",
+          "question": "Sosyal kanıt ve incelemelerle yardımcı oluyor musunuz?",
+          "answer": "Evet. Sahte katılım olmadan, güven inşa eden inceleme isteklerini, vakaları ve UGC benzeri formatları planlıyoruz."
+        },
+        {
+          "id": "soc-15",
+          "question": "Çalışan savunuculuğunu ayarlayabilir misiniz?",
+          "answer": "Evet, özellikle LinkedIn'de: basit kurallar, şablonlar ve bir ritim, böylece ekibin uzmanlığını gözle görülür şekilde paylaşması sağlanır."
+        },
+        {
+          "id": "soc-16",
+          "question": "Sosyal medyayı web sitesine ve alışverişe nasıl bağlarsınız?",
+          "answer": "UTM'ler, açılış sayfaları, ürün bağlantıları ve yeniden hedefleme yoluyla. Sosyal, hunideki bir kanaldır, bir ada değil. Devamını oku: [Shop](/shop)."
+        }
+      ]
+    },
+    {
+      "id": "account-portaal",
+      "title": "Hesap ve portal",
+      "items": [
+        {
+          "id": "acc-1",
+          "question": "Müşteri portalına nasıl giriş yapabilirim?",
+          "answer": "Hesaba/girişe gidin ve müşteri hesabınızın e-posta adresini kullanın. Veri kaybettiyseniz şifre sıfırlamayı kullanın veya bizimle iletişime geçin. Daha fazlasını okuyun: [Account](/dashboard) · [Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-2",
+          "question": "Kontrol panelimde ne görüyorum?",
+          "answer": "Hizmetlerinize bağlı olarak: destek talepleri, projeler, faturalar, yapay zeka taraması/aracıları ve hızlı destek bağlantıları. Daha fazlasını okuyun: [AI agents in account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account) · [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "acc-3",
+          "question": "Giriş bilgilerimi kaybettim, şimdi ne olacak?",
+          "answer": "\"Şifrenizi unuttum\" seçeneğini kullanın veya müşteri panelinin bilgi bankası adımlarını izleyin. Bu işe yaramazsa bilinen bir iletişim adresi aracılığıyla bir bilet açın. Devamını oku: [Lost login details](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-4",
+          "question": "Portaldan nasıl bilet açabilirim?",
+          "answer": "Müşteri panelinde desteği/biletleri seçin, sorununuzu açıklayın ve kanıt ekleyin (URL, ekran görüntüleri). Daha fazlasını okuyun: [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "acc-5",
+          "question": "Faturalarımı nerede bulabilirim?",
+          "answer": "Faturaları portalda faturalama/faturalandırma altında görüntüleyebilir ve indirebilirsiniz. Devamını oku: [Consult invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "acc-6",
+          "question": "Fatura bilgilerini veya ödeme yöntemini nasıl değiştiririm?",
+          "answer": "Yeni faturaların doğru olması için hesap ayarlarınızda şirket adını, KDV numarasını ve ödeme yöntemini ayarlayın. Devamını oku: [Change invoice details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "acc-7",
+          "question": "Meslektaşlarınızın da erişimi olabilir mi?",
+          "answer": "Evet, birden fazla ekip üyesinin her şeyi paylaşmadan destek taleplerini veya projeleri takip edebilmesi için hesap rolleri (müşteri, yönetici, yönetici) mevcuttur."
+        },
+        {
+          "id": "acc-8",
+          "question": "AI taraması ve AI aracıları hesabıma bağlı mı?",
+          "answer": "Evet. Taramalar ve aracılar müşteri hesabınıza ait olduğundan geçmiş ve haklar korunur. Daha fazlasını okuyun: [AI agents](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "acc-9",
+          "question": "Müşteri hesabım ne kadar güvenli?",
+          "answer": "Mümkün olduğunda benzersiz şifreler ve 2FA kullanın (barındırma panelleri dahil). Paylaşılan bilgisayarlarda oturumları paylaşmayın. Devamını oku: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
+        },
+        {
+          "id": "acc-10",
+          "question": "Proje durumunu ve teslimatları takip edebilir miyim?",
+          "answer": "Portalda projelerin listelendiği yerden durumu ve iletişimi görebilirsiniz. Aksi takdirde sizi biletler veya sprint güncellemeleri aracılığıyla bilgilendireceğiz."
+        },
+        {
+          "id": "acc-11",
+          "question": "Mağazadaki hizmetleri hesabıma nasıl bağlarım?",
+          "answer": "Ödeme sonrasında siparişler hesabınıza aittir; temel hazırlık (barındırma, etki alanı) otomatik olarak veya destek tarafından katılım yoluyla yapılır. Devamını oku: [Shop](/shop)."
+        },
+        {
+          "id": "acc-12",
+          "question": "Bildirimleri veya tercihleri ​​nerede ayarlayabilirim?",
+          "answer": "Hesap ayarlarında profili ve uygun olduğu durumlarda bildirim tercihlerini yönetirsiniz. Fatura e-postaları için e-posta adresinizi güncel tutun."
+        }
+      ]
+    },
+    {
+      "id": "shop-bestellen",
+      "title": "Alışveriş ve sipariş verme",
+      "items": [
+        {
+          "id": "shop-1",
+          "question": "Mağazada ne sipariş edebilirim?",
+          "answer": "Çevrimiçi olarak sunduğumuz barındırma paketleri, alan adları, bakım/destek ürünleri ve diğer hizmetler. Kişiye özel teklifler iletişim yoluyla yapılır. Daha fazlasını okuyun: [Shop](/shop) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "shop-2",
+          "question": "Alışveriş sepeti ve ödeme nasıl çalışır?",
+          "answer": "Ürünleri ekleyin, dönemi (ay/yıl) kontrol edin ve ödeme yoluyla tamamlayın. Daha sonra onay alacaksınız ve hesabınıza erişebileceksiniz. Devamını oku: [Shopping cart](/shop/cart)."
+        },
+        {
+          "id": "shop-3",
+          "question": "Fiyatlara KDV dahil mi yoksa hariç mi?",
+          "answer": "Mağazada fiyatları gösterilen KDV bağlamına göre gösteririz (çoğunlukla tüketici akışları dahil). Faturada ticari müşteriler için net KDV dökümü yer almaktadır."
+        },
+        {
+          "id": "shop-4",
+          "question": "Aylık veya yıllık ödeme yapabilir miyim?",
+          "answer": "Birçok barındırma ve bakım ürününün aylık ve yıllık seçenekleri bulunmaktadır. Yıllık genellikle daha ucuzdur; ayrıntılar ürün kartı başınadır."
+        },
+        {
+          "id": "shop-5",
+          "question": "Hangi ödeme yöntemlerini kabul ediyorsunuz?",
+          "answer": "Ödeme yoluyla yaygın çevrimiçi yöntemler (bölgeye bağlı olarak). Kurumsal faturalar için iletişim yoluyla hesaba fatura düzenleyebiliriz."
+        },
+        {
+          "id": "shop-6",
+          "question": "Ödeme yapıldıktan sonra anında erişim elde edebilir miyim?",
+          "answer": "Standart barındırma/etki alanı ürünleri için, başarılı ödemenin ardından hızlı bir şekilde ön hazırlık yapılır. Özel hizmetler için destek, başlangıç ​​planını yapar."
+        },
+        {
+          "id": "shop-7",
+          "question": "Paketleri daha sonra yükseltebilir miyim?",
+          "answer": "Evet. Paylaşımlıdan bulut/VPS'ye veya Basic'ten Plus/Business'a geçiş planlamasıyla mümkündür. Daha fazlasını okuyun: [Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [Choose package](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "shop-8",
+          "question": "Mağaza ürünlerini kişiselleştirmeyle nasıl birleştiririm?",
+          "answer": "Çevrimiçi barındırma/bakım siparişi verin ve alım yoluyla tasarım, SEO veya reklamları planlayın. Mümkün olduğunda faturalandırmayı ve hesabı bir araya getiriyoruz. Devamını oku: [Contact](/contact)."
+        },
+        {
+          "id": "shop-9",
+          "question": "Siparişim gelmezse veya takılı kalırsa ne olur?",
+          "answer": "E-postanızı (spam dahil) ve portalı kontrol edin. Sessiz kalırsa sipariş numarasını içeren bir destek talebi açın veya e-posta gönderin. Daha fazlasını okuyun: [Contact](/contact) · [Tickets](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "shop-10",
+          "question": "Alan adı ve hostingi tek siparişte sipariş edebilir miyim?",
+          "answer": "Evet, olağan akış budur: alışveriş sepetinde alan adı + barındırma, ardından DNS bağlantısı. Daha fazlasını okuyun: [Domains](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "shop-11",
+          "question": "WordPress Care için paketler var mı?",
+          "answer": "Evet. Bakım paketleri, ayrı olarak veya barındırmaya ek olarak güncellemeleri, izlemeyi ve bakımı kapsar. Devamını oku: [Shop](/shop)."
+        },
+        {
+          "id": "shop-12",
+          "question": "Bir siparişi nasıl iptal edebilirim veya değiştirebilirim?",
+          "answer": "Destek üzerinden sipariş verdikten hemen sonra; Bundan sonra ürün başına iptal ve değişiklik koşulları geçerlidir. Durursanız göçe veya ihracata yardımcı oluruz. Devamını oku: [Contact](/contact)."
         }
       ]
     },
@@ -514,12 +831,12 @@
         {
           "id": "sup-1",
           "question": "Hangi desteği sunuyorsunuz?",
-          "answer": "WordPress desteği, özel web sitesi desteği, biletler ve canlı sohbet, bakım, güvenlik, performans ve olaylara müdahale sunuyoruz."
+          "answer": "WordPress desteği, özel web sitesi desteği, biletler ve canlı sohbet, bakım, güvenlik, performans ve olaylara müdahale sunuyoruz. [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting) · [Chat, ticket or call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)"
         },
         {
           "id": "sup-2",
           "question": "Desteğe nasıl ulaşabilirim?",
-          "answer": "İletişim, randevu, kontrol panelindeki biletler veya sitedeki canlı sohbet yoluyla. Acil vakalar öncelikli olarak işaretlenir."
+          "answer": "İletişim, randevu, kontrol panelindeki biletler veya sitedeki canlı sohbet yoluyla. Acil vakalar öncelikli olarak işaretlenir. [Contact](/contact) · [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Call appointment](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)"
         },
         {
           "id": "sup-3",
@@ -529,7 +846,7 @@
         {
           "id": "sup-4",
           "question": "7/24 izleme olanağı sunuyor musunuz?",
-          "answer": "Evet, ilgili destek ve barındırma paketlerinde: Sorunların daha erken görülebilmesi için izleme, yedekleme ve uyarılar."
+          "answer": "Evet, ilgili destek ve barındırma paketlerinde: Sorunların daha erken görülebilmesi için izleme, yedekleme ve uyarılar. [Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup)"
         },
         {
           "id": "sup-5",
@@ -539,22 +856,22 @@
         {
           "id": "sup-6",
           "question": "WordPress güncellemelerini bizim için mi hallediyorsunuz?",
-          "answer": "Evet, \"Bakım ve güncellemeler\" yoluyla: çekirdek, eklentiler ve temalar, yedekleme ve güncelleme öncesi ve sonrası kontroller."
+          "answer": "Evet, \"Bakım ve güncellemeler\" yoluyla: çekirdek, eklentiler ve temalar, yedekleme ve güncelleme öncesi ve sonrası kontroller. [Site down after WP update](/kennisbank/hosting/website-down-na-update-wordpress)"
         },
         {
           "id": "sup-7",
           "question": "Hosting sorunlarına yardımcı oluyor musunuz?",
-          "answer": "Evet. Site tekrar istikrarlı bir şekilde çalışana kadar barındırma, VPS ve alan adlarını teşhis ediyor, taşıyor veya optimize ediyoruz."
+          "answer": "Evet. Site tekrar istikrarlı bir şekilde çalışana kadar barındırma, VPS ve alan adlarını teşhis ediyor, taşıyor veya optimize ediyoruz. [Move website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je)"
         },
         {
           "id": "sup-8",
           "question": "Ya sitem kapalıysa?",
-          "answer": "Acil olarak bildirin. Mümkün olduğunda yedeklemeler, sunucu kontrolleri ve düzeltme yoluyla geri yükleriz ve süreç boyunca sizi durum hakkında güncel tutarız."
+          "answer": "Acil olarak bildirin. Mümkün olduğunda yedeklemeler, sunucu kontrolleri ve düzeltme yoluyla geri yükleriz ve süreç boyunca sizi durum hakkında güncel tutarız. [Backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [Check yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support)"
         },
         {
           "id": "sup-9",
           "question": "Müşteri portalı var mı?",
-          "answer": "Evet. Oturum açmış müşteriler kontrol panelini, biletleri, projeleri ve ilgili CRM veya faturaları görebilir."
+          "answer": "Evet. Oturum açmış müşteriler kontrol panelini, biletleri, projeleri ve ilgili CRM veya faturaları görebilir. [Ticket via customer panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel) · [Lost login?](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)"
         },
         {
           "id": "sup-10",
@@ -575,6 +892,56 @@
           "id": "sup-13",
           "question": "Desteği daha sonra yükseltebilir miyim?",
           "answer": "Evet. Trafik, risk veya ekip ihtiyaçları arttığında ölçeği artırabilirsiniz."
+        },
+        {
+          "id": "sup-14",
+          "question": "Sohbet, bilet ve çağrı randevusu arasındaki fark nedir?",
+          "answer": "Kısa sorular için sohbet hızlıdır; kayıtlar ve takip içeren teknik vakalar için biletler daha iyidir; bir telefon randevusu, bir giriş veya karmaşık bir açıklama için uygundur. Devamını oku: [Chat versus ticket versus call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "sup-15",
+          "question": "Destek biletini nasıl oluşturabilirim?",
+          "answer": "Müşteri paneline giriş yapın ve net URL, adımlar ve ekran görüntüleri içeren bir destek bildirimi açın. Bilgi ne kadar iyi olursa, o kadar hızlı yardımcı olabiliriz. Daha fazlasını okuyun: [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "sup-16",
+          "question": "Sitem çökerse yedekleriniz var mı?",
+          "answer": "Evet, barındırma veya destek paketinize bağlı olarak. Kesinti durumunda mümkün olduğunca yedeklerden geri yükleme yapıyor ve nedenini araştırıyoruz. Daha fazlasını okuyun: [Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor)."
+        },
+        {
+          "id": "sup-17",
+          "question": "Desteği aramadan önce neyi kontrol edebilirim?",
+          "answer": "Durum sayfasını, DNS yayılımını, son güncellemeleri, disk alanını ve hatanın tekrarlanabilir olup olmadığını kontrol edin. Bu tanıyı hızlandırır. Daha fazlasını okuyun: [Do it yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support) · [Statuspage](/statuspage)."
+        },
+        {
+          "id": "sup-18",
+          "question": "Sitede canlı sohbet nasıl çalışır?",
+          "answer": "Sohbet butonunu kullanarak canlı sohbeti açın. Ajan 000 öncelikle SSS/bilgi tabanı konusunda yardımcı olur; Daha karmaşık veya acil konular için sizi bir çalışana yönlendiririz. Daha fazlasını okuyun: [Digital Assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Contact](/contact)."
+        },
+        {
+          "id": "sup-19",
+          "question": "Kritik bir WordPress hatası konusunda yardımcı olabilir misiniz?",
+          "answer": "Evet. Yedekleme ve hedefe yönelik düzeltme ile beyaz ekranları, kritik PHP hatalarını ve eklenti çakışmalarını teşhis ediyoruz. Daha fazlasını okuyun: [Critical Error WordPress](/kennisbank/wordpress/kritieke-fout-wordpress) · [Down after update](/kennisbank/hosting/website-down-na-update-wordpress)."
+        },
+        {
+          "id": "sup-20",
+          "question": "Uzaktan izleyebiliyor musunuz (TeamViewer vb.)?",
+          "answer": "Gerektiğinde ve izin alınarak masaüstü veya panel sorunları için. Çoğu barındırma sorunu için panele, DNS'ye veya WordPress'e erişim yeterlidir. Devamını oku: [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "sup-21",
+          "question": "Bir aboneliği veya hizmeti nasıl iptal edebilirim?",
+          "answer": "Müşteri paneli veya destek üzerinden iptal edebilirsiniz; Sözleşmenizdeki ihbar sürelerine dikkat edin. Verileri/dışa aktarmayı ve DNS aktarımını düzgün bir şekilde tamamlamanıza yardımcı oluyoruz. Daha fazlasını okuyun: [Contact](/contact) · [Account](/dashboard)."
+        },
+        {
+          "id": "sup-22",
+          "question": "WordPress Bakım / bakım paketleri sunuyor musunuz?",
+          "answer": "Evet. Güncellemeler, yedeklemeler, güvenlik kontrolleri ve performans, barındırmaya ek olarak ideal olan bakım paketlerine dahildir. Daha fazlasını okuyun: [Shop](/shop) · [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren)."
+        },
+        {
+          "id": "sup-23",
+          "question": "Ya e-posta aniden çalışmayı durdurursa?",
+          "answer": "DNS'yi (MX/SPF/DKIM/DMARC), posta kutusu kotasını ve Microsoft'un veya sağlayıcıların postaları engelleyip engellemediğini kontrol edin. Zincirin ölçülmesine yardımcı oluyoruz. Daha fazlasını okuyun: [Email Problems](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
         }
       ]
     },
@@ -585,7 +952,7 @@
         {
           "id": "web-1",
           "question": "Yalnızca WordPress siteleri mi oluşturuyorsunuz?",
-          "answer": "Hayır. WordPress'in yanı sıra, WordPress hizmetlerinden ayrı olarak HTML/CSS/JS, PHP ve Next.js'de özel web tasarımı yapıyoruz."
+          "answer": "Hayır. WordPress'in yanı sıra, WordPress hizmetlerinden ayrı olarak HTML/CSS/JS, PHP ve Next.js'de özel web tasarımı yapıyoruz. [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [Services](/diensten)"
         },
         {
           "id": "web-2",
@@ -635,7 +1002,7 @@
         {
           "id": "web-11",
           "question": "Lansmandan sonraki performans ne olacak?",
-          "answer": "Önemli Web Verilerini, önbelleğe almayı veya CDN'yi ve izlemeyi optimize ediyoruz. Daha sonra bakım, bakım paketleri aracılığıyla devam eder."
+          "answer": "Önemli Web Verilerini, önbelleğe almayı veya CDN'yi ve izlemeyi optimize ediyoruz. Daha sonra bakım, bakım paketleri aracılığıyla devam eder. [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)"
         },
         {
           "id": "web-12",
@@ -651,87 +1018,349 @@
           "id": "web-14",
           "question": "Site içi dönüşüm optimizasyonuna yardımcı oluyor musunuz?",
           "answer": "Evet. Daha fazla ziyaretçinin dönüşmesi için A/B testleri, kullanıcı deneyimi iyileştirmeleri, formlar, CTA'lar ve sayfa hızı gerçekleştiriyoruz."
+        },
+        {
+          "id": "web-15",
+          "question": "Ayrıca web mağazaları da kuruyor musunuz?",
+          "answer": "Evet, ödeme entegrasyonlarına sahip pazarlama sitelerinden WordPress'te e-ticarete veya özelleştirmeye kadar. Alım sırasında kapsamı, ödemeleri ve yerine getirilmesini koordine ediyoruz. Daha fazlasını okuyun: [Services](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "web-16",
+          "question": "Sitelerdeki gizlilik metinlerini nasıl ele alıyorsunuz?",
+          "answer": "Gerektiğinde avukatınıza özel olarak hazırlanmış formlar ve banner'lar için gizlilik ve izin akışları öneriyor ve uyguluyoruz. Daha fazlasını okuyun: [Privacy with forms](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren) · [Cookie banner](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "web-17",
+          "question": "Aşama ortamları sağlıyor musunuz?",
+          "answer": "Evet, ilgili olduğu yerde: incelemeler ve testler için hazırlık, ardından üretime kontrollü dağıtım."
+        },
+        {
+          "id": "web-18",
+          "question": "Mevcut bir WordPress sitesini devralıp geliştirebilir misiniz?",
+          "answer": "Evet — gereksiz yere sıfırdan geliştirme yapmadan denetim, güncellemeler, güvenlik, hız, UX ve SEO. Daha fazlasını okuyun: [WP move](/kennisbank/domeinnamen/wordpress-website-verhuizen) · [Critical errors](/kennisbank/wordpress/kritieke-fout-wordpress)."
+        },
+        {
+          "id": "web-19",
+          "question": "Teslimattan sonra HTTP'den HTTPS'ye ne olacak?",
+          "answer": "Siteler varsayılan olarak HTTPS'yi kullanır. Geçişler sırasında HTTPS'yi zorlarız ve karışık içeriği çözeriz. Daha fazlasını okuyun: [HTTP to HTTPS in WordPress](/kennisbank/wordpress/wordpress-url-omzetten-van-http-naar-https) · [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig)."
+        }
+      ]
+    },
+    {
+      "id": "domeinen",
+      "title": "Alanlar",
+      "items": [
+        {
+          "id": "dom-1",
+          "question": "Alan adı nedir?",
+          "answer": "Alan adı, ziyaretçilerin web sitenizi bulmak için kullandığı adrestir (örneğin example.com). Barındırma veya e-postanıza işaret eden DNS kayıtlarına bağlanır. Daha fazlasını okuyun: [Domain registration](/kennisbank/domeinnamen/domeinnaamregistratie) · [Order domains](/domeinen)."
+        },
+        {
+          "id": "dom-2",
+          "question": "Size bir alan adını nasıl kaydedebilirim?",
+          "answer": "Alan adları sayfasında adı arayın, bir uzantı seçin ve mağazada ödeme işlemini tamamlayın. Kayıt olduktan sonra hesabınızdaki DNS'yi, ad sunucularını ve faturaları yönetirsiniz. Daha fazlasını okuyun: [Domains](/domeinen) · [Registration guide](/kennisbank/domeinnamen/domeinnaamregistratie) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-3",
+          "question": "Alan adımı size aktarabilir miyim?",
+          "answer": "Evet. Mevcut kayıt operatörünüzden bir yetkilendirme (EPP) kodu isteyin, transfer kilidini açın ve ardından transferi bizimle başlatın. Daha sonra DNS ve nameserverları doğru şekilde ayarlıyoruz. Daha fazlasını okuyun: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Authorisation code](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-4",
+          "question": "Yetkilendirme kodu nedir (EPP/Yetkilendirme kodu)?",
+          "answer": "Bu, alan adı transferini güvenli bir şekilde başlatan, mevcut kayıt operatörünüzden alınan tek seferlik bir koddur. Geçerli bir kod olmadan aktarım devam edemez. Daha fazlasını okuyun: [What is an authorisation code?](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen)."
+        },
+        {
+          "id": "dom-5",
+          "question": "Aktarım kilidi veya kayıt şirketi kilidi nedir?",
+          "answer": "Kilit, istenmeyen aktarımları önler. Bir taşıma işlemi için genellikle önce mevcut sağlayıcıda taşımayı kapatmanız, ardından aktarımı bizimle başlatmanız gerekir. Daha fazlasını okuyun: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Support](/contact)."
+        },
+        {
+          "id": "dom-6",
+          "question": "Hosting olmadan alan adı satın alabilir miyim?",
+          "answer": "Evet. Yalnızca bir alan adını kaydedebilir veya aktarabilir ve daha sonra barındırma veya e-posta ekleyebilirsiniz. Bu arada DNS'yi zaten yönetebilir veya iletebilirsiniz. Daha fazlasını okuyun: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-7",
+          "question": "Hangi uzantıları (.nl, .com,…) kaydedebilirim?",
+          "answer": ".nl ve .com gibi yaygın TLD'lerin yanı sıra birçok uluslararası uzantıyı destekliyoruz. Alan adı aramasında kullanılabilirlik ve fiyat anında gösterilir. Daha fazlasını okuyun: [Domains](/domeinen) · [Registration](/kennisbank/domeinnamen/domeinnaamregistratie)."
+        },
+        {
+          "id": "dom-8",
+          "question": "Alan adımı nasıl yenileyebilirim?",
+          "answer": "Yenileme, faturalar ve müşteri portalınız aracılığıyla gerçekleştirilir; otomatik yenileme sıklıkla mevcuttur. Sürenin dolmasını önlemek için ödeme ayrıntılarınızı güncel tutun. Daha fazlasını okuyun: [Invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails) · [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "dom-9",
+          "question": "Premium alan adları nelerdir?",
+          "answer": "Premium adlar, genellikle satış sonrası aracılığıyla daha yüksek satın alma fiyatına sahip kısa veya popüler alan adlarıdır. Kullanılabilirlik ve koşullar uzantıya göre farklılık gösterir. Daha fazlasını okuyun: [Premium domains](/kennisbank/domeinnamen/premium-domeinnamen) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-10",
+          "question": "Alan adımı anonim olarak kaydedebilir miyim (Koruma Kimliği)?",
+          "answer": "Kayıt defterinin izin verdiği durumlarda gizlilik/Koruma Kimliğini düşünebilirsiniz. Kurallar uzantılarına göre farklılık gösterir; örneğin .nl'nin kendi çerçevesi vardır. Devamını oku: [Protect ID](/kennisbank/domeinnamen/protect-id-domein-anoniem-registreren)."
+        },
+        {
+          "id": "dom-11",
+          "question": "Alanım karantinada; şimdi ne olacak?",
+          "answer": "Bir alan adı silindikten sonra karantinaya girebilir. Kayıt defterine bağlı olarak, genellikle bir ücret karşılığında yeniden etkinleştirebilirsiniz; çok uzun süre beklemeyin. Daha fazlasını okuyun: [Domain out of quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-12",
+          "question": "Yeni alan adım henüz çalışmıyor; şimdi ne olacak?",
+          "answer": "Genellikle DNS yayılımı, eksik A/MX kayıtları veya henüz güncellenmemiş ad sunucuları söz konusudur. Kayıtları kontrol edin ve TTL'lerin süresinin dolmasına izin verin. Daha fazlasını okuyun: [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-13",
+          "question": "Bir alanı barındırma planıma nasıl bağlarım?",
+          "answer": "Alan adını panelinize veya hesabınıza ekleyin ve DNS'yi (A kaydı veya ad sunucuları) barındırmaya yönlendirin. Sipariş sonrası ilk bağlantıda yardımcı oluyoruz. Daha fazlasını okuyun: [Connect domain to plan](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-14",
+          "question": "Bir alanı yönlendirebilir miyim?",
+          "answer": "Evet. Alan adı yönlendirme, ziyaretçileri başka bir URL'ye gönderir; ayrı bir sitesi olmayan marka adları için kullanışlıdır. DNS ve yönlendirmeleri kurulumunuzla uyumlu hale getiriyoruz. Daha fazlasını okuyun: [Forward a domain](/kennisbank/domeinnamen/domeinnaam-doorsturen) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-15",
+          "question": "Alan adımın ad sunucularını nasıl değiştiririm?",
+          "answer": "DNS/etki alanı yönetiminde ad sunucularımızı veya harici ad sunucularımızı (örneğin bir CDN) seçersiniz. Yayılım saatlerden bir güne kadar sürebilir. Daha fazlasını okuyun: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-16",
+          "question": "Bir alan adının maliyeti nedir?",
+          "answer": "Fiyatlar uzatma ve süreye göre farklılık göstermektedir; alan adı araması güncel kayıt ve yenileme fiyatlarını gösterir. Premium isimlerin ayrı bir fiyatı vardır. Daha fazlasını okuyun: [Domains](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-17",
+          "question": "Hosting ve alan adının aynı sağlayıcıda olması gerekiyor mu?",
+          "answer": "Hayır, ancak daha basittir: DNS, SSL, e-posta ve destek, sonra tek tarafla birlikte oturur. Ayrıca yalnızca DNS'yi bizde tutabilir ve başka bir yerde barındırabilirsiniz. Daha fazlasını okuyun: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "dom-18",
+          "question": "Tek hesapta birden fazla alan adını yönetebilir miyim?",
+          "answer": "Evet. Ekstra alan adları, barındırma planınızın sınırları dahilinde kaydedilebilir, aktarılabilir ve eklenti olarak bağlanabilir, park edilebilir veya iletilebilir. Daha fazlasını okuyun: [Domains](/domeinen) · [Choose a hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "dom-19",
+          "question": "Alan adımın süresi dolarsa ne olur?",
+          "answer": "Sürenin sona ermesinden sonra genellikle iyileşmenin hala mümkün olduğu bir ek süre veya karantina süresi vardır; daha sonra başkası bunu iddia edebilir. Faturalarla zamanında yenileyin. Daha fazlasını okuyun: [Quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-20",
+          "question": "Alan adlarını nereden sipariş edebilirim veya yönetebilirim?",
+          "answer": "Etki alanları sayfası veya mağaza aracılığıyla kaydolun ve aktarın; yönetim (DNS, faturalar, yenileme) müşteri portalında yaşar. Daha fazlasını okuyun: [Domains](/domeinen) · [Shop](/shop) · [Account](/dashboard)."
         }
       ]
     },
     {
       "id": "webhosting",
-      "title": "Web barındırma ve alanlar",
+      "title": "Web barındırma",
       "items": [
         {
           "id": "host-1",
           "question": "Hangi hostingi sunuyorsunuz?",
-          "answer": "Temel, Plus ve Ticari katmanlarda paylaşımlı barındırma, WordPress barındırma ve VPS'nin yanı sıra alan adları da sunuyoruz."
+          "answer": "Paylaşımlı barındırma, bulut barındırma, WordPress barındırma ve VPS'nin yanı sıra alan adı kaydı da sunuyoruz. Trafiğe, yığına ve büyümeye göre seçim yapın. Daha fazlasını okuyun: [Shared hosting](/diensten/shared-hosting) · [Cloud hosting](/diensten/cloud-hosting) · [WordPress hosting](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-2",
-          "question": "Paylaşılan, WordPress ve VPS arasındaki fark nedir?",
-          "answer": "Paylaşılan, daha küçük siteler için uygun maliyetlidir. WordPress barındırma WP için optimize edilmiştir. VPS, daha ağır yükler için daha fazla kaynak ve kontrol sağlar."
+          "question": "Paylaşılan, bulut, WordPress ve VPS arasındaki fark nedir?",
+          "answer": "Paylaşılan, daha küçük siteler için uygun maliyetlidir. Bulut, tümüyle yönetilen daha fazla kaynak ve ölçeklenebilirlik sağlar. WordPress barındırma WP için optimize edilmiştir. VPS daha ağır yükler için daha fazla kontrol sağlar. Daha fazlasını okuyun: [Differences explained](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps) · [Shared plans](/kennisbank/hosting/wat-is-shared-hosting-basic-plus-en-business) · [VPS plans](/kennisbank/hosting/wat-is-vps-hosting-basic-plus-en-business)."
         },
         {
           "id": "host-3",
-          "question": "Alan adı kaydı konusunda yardımcı oluyor musunuz?",
-          "answer": "Evet. Alan adını tavsiye ediyor, kaydediyor veya aktarıyoruz ve DNS'yi doğru şekilde bağlıyoruz."
+          "question": "Sizin için bulut barındırma nedir?",
+          "answer": "Bulut barındırma, biz onu yönetmeye devam ederken klasik paylaşıma göre daha fazla kaynak ve ölçeklenebilirlik sağlar. Paylaşım sıkılaştığında idealdir ancak henüz tam VPS'ye ihtiyaç duyulmamaktadır. Daha fazlasını okuyun: [Cloud hosting](/diensten/cloud-hosting) · [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
         },
         {
           "id": "host-4",
           "question": "Hosting hizmetine SSL dahil mi?",
-          "answer": "Evet. İlgili hosting planlarımızda SSL standarttır."
+          "answer": "Evet. SSL, ilgili barındırma planlarımızda standart olduğundan siteler HTTPS üzerinde çalışır. Daha fazlasını okuyun: [What is SSL?](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [Install Let's Encrypt](/kennisbank/hosting/hoe-installeer-ik-een-gratis-lets-encrypt-ssl-certificaat)."
         },
         {
           "id": "host-5",
           "question": "Sitemi hostinginize taşıyabilir misiniz?",
-          "answer": "Evet. Yedekleme, taşıma, DNS kesme, SSL ve duman testlerini minimum kesinti süresiyle gerçekleştiriyoruz."
+          "answer": "Evet. Yedekleme, taşıma, DNS kesme, SSL ve duman testlerini minimum kesinti süresiyle gerçekleştiriyoruz. Daha fazlasını okuyun: [Migrate website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je) · [Migrate WordPress](/kennisbank/domeinnamen/wordpress-website-verhuizen)."
         },
         {
           "id": "host-6",
           "question": "Yedeklemeler barındırmada nasıl çalışır?",
-          "answer": "Bu plana bağlıdır: basit veya otomatik yedeklemeler. Ekstra tesis dışı saklama olanağı mevcuttur."
+          "answer": "Bu plana bağlıdır: basit veya otomatik yedeklemeler. Ekstra tesis dışı saklama olanağı mevcuttur. Daha fazlasını okuyun: [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor) · [Backup in DirectAdmin](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
         },
         {
           "id": "host-7",
           "question": "Daha fazla trafik alırsam ne olur?",
-          "answer": "Daha sonra Plus, Business veya VPS'ye ölçekleniyoruz ve sitenin büyümeyi karşılayabilmesi için önbelleğe alma ve CDN'yi optimize ediyoruz."
+          "answer": "Ardından Plus, Business, bulut veya VPS'ye ölçekleniyoruz ve sitenin büyümeyi kaldırabilmesi için önbelleğe almayı ve CDN'yi optimize ediyoruz. Daha fazlasını okuyun: [When to move to VPS?](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)."
         },
         {
           "id": "host-8",
-          "question": "Alan adlarıyla e-posta sunuyor musunuz?",
-          "answer": "Bu pakete ve kuruluma bağlıdır. Güvenilir mail çözümleri öneriyoruz ve DNS'yi doğru ayarlıyoruz (SPF, DKIM ve DMARC)."
+          "question": "Hostinginiz ne kadar güvenli?",
+          "answer": "Güvenlik duvarı, SSL, güncellemeler, izleme ve güçlendirme kullanıyoruz. Gerektiğinde ekstra güvenlik katmanları mevcuttur. Daha fazlasını okuyun: [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
         },
         {
           "id": "host-9",
-          "question": "Hostinginiz ne kadar güvenli?",
-          "answer": "Güvenlik duvarı, SSL, güncellemeler, izleme ve güçlendirme kullanıyoruz. Ekstra güvenlik hizmetleri, üstüne daha fazla katman ekleyebilir."
+          "question": "Daha sonra paylaşımlıdan VPS'ye geçebilir miyim?",
+          "answer": "Evet. Geçişi, testler ve geri alma da dahil olmak üzere birlikte planlıyoruz, böylece anahtar kontrol altında kalıyor. Daha fazlasını okuyun: [Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [VPS hosting](/diensten/vps-hosting)."
         },
         {
           "id": "host-10",
-          "question": "Daha sonra paylaşımlıdan VPS'ye geçebilir miyim?",
-          "answer": "Evet. Geçişi, testler ve geri alma da dahil olmak üzere birlikte planlıyoruz, böylece anahtar kontrol altında kalıyor."
+          "question": "CDN'yi destekliyor musunuz?",
+          "answer": "Evet, daha hızlı küresel dağıtım için, ilgili olduğu yerde (WP barındırma planlarına genellikle ücretsiz bir CDN dahildir). Daha fazlasını okuyun: [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [WordPress hosting](/diensten/wordpress-hosting)."
         },
         {
           "id": "host-11",
-          "question": "CDN'yi destekliyor musunuz?",
-          "answer": "Evet, daha hızlı küresel dağıtım için, ilgili olduğu yerde (WP barındırma planlarına genellikle ücretsiz bir CDN dahildir)."
+          "question": "Çalışma süresi yaklaşımınız nedir?",
+          "answer": "Olayları izliyor, hızlı bir şekilde müdahale ediyoruz ve bakım pencereleri hakkında net bir şekilde iletişim kuruyoruz, böylece neler olduğunu biliyorsunuz. Durum güncellemeleri durum sayfasındadır. Daha fazlasını okuyun: [Status page](/statuspage) · [Contact](/contact)."
         },
         {
           "id": "host-12",
-          "question": "Çalışma süresi yaklaşımınız nedir?",
-          "answer": "Olayları izliyor, hızlı bir şekilde müdahale ediyoruz ve bakım pencereleri hakkında net bir şekilde iletişim kuruyoruz, böylece neler olduğunu biliyorsunuz."
+          "question": "Doğru barındırma planını nasıl seçerim?",
+          "answer": "Trafiğe, yığına (WordPress veya özel), kaynaklara ve büyümeye dayalıdır. Dürüstçe tavsiyede bulunuyoruz; fazla satış yapmıyoruz. Daha fazlasını okuyun: [Choose the right hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Shared vs WP vs VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
         },
         {
           "id": "host-13",
-          "question": "DNS sorunlarının çözülmesine yardımcı oluyor musunuz?",
-          "answer": "Evet. DNS tekrar doğru olana kadar kayıtları, yayılımı, posta kimlik doğrulamasını ve etki alanı bağlantılarını düzeltiriz."
+          "question": "Hosting fiyatlarını nerede görebilirim?",
+          "answer": "Hosting hizmeti sayfalarında ve mağazada, uygun olduğu durumlarda aylık veya yıllık seçeneklerle. Daha fazlasını okuyun: [Shared](/diensten/shared-hosting) · [Cloud](/diensten/cloud-hosting) · [WordPress](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting) · [Shop](/shop)."
         },
         {
           "id": "host-14",
-          "question": "Doğru barındırma planını nasıl seçerim?",
-          "answer": "Trafiğe, yığına (WordPress veya özel), kaynaklara ve büyümeye dayalıdır. Dürüstçe tavsiyede bulunuyoruz; fazla satış yapmıyoruz."
+          "question": "Hostingimde SSH erişimine sahip olabilir miyim?",
+          "answer": "Bu plana bağlı. Birçok planda SSH mevcuttur veya talep edilebilir; VPS'de genellikle tam erişime sahip olursunuz. Daha fazlasını okuyun: [SSH access](/kennisbank/hosting/heb-ik-ssh-toegang-op-mijn-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-15",
-          "question": "Hosting fiyatlarını nerede görebilirim?",
-          "answer": "Hizmetler → Web barındırma ve etki alanları altındaki barındırma hizmeti sayfalarında, uygun olduğu durumlarda aylık veya yıllık seçeneklerle."
+          "question": "WordPress'i hostinginize nasıl yüklerim?",
+          "answer": "Kontrol paneli aracılığıyla (örneğin DirectAdmin/Installatron) veya manuel olarak. Adım adım bir kılavuzumuz var. Daha fazlasını okuyun: [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-16",
+          "question": "Düğümler nedir ve planım neden \"dolu\" görünüyor?",
+          "answer": "Inode'lar yalnızca GB'yi değil, dosyaları/klasörleri de sayar. Birçok küçük önbellek veya posta dosyası, disk alanı hâlâ boş görünürken sınıra ulaşabilir. Daha fazlasını okuyun: [Inodes](/kennisbank/hosting/inodes-en-inode-limieten) · [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-17",
+          "question": "“Sınırsız” depolama veya trafik ne anlama geliyor?",
+          "answer": "\"Sınırsız\", adil kullanımın ardından gelir: normal web sitesi kullanımında sorun yoktur; platformun stabil kalması için kötüye kullanım veya aşırı yükler sınırlandırılabilir. Daha fazlasını okuyun: [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-18",
+          "question": "Paylaşılan, VPS ve adanmış arasındaki fark nedir?",
+          "answer": "Paylaşılan paylaşım kaynakları; VPS daha fazla CPU/RAM'i izole eder; adanmış bütün bir sunucudur. Trafiğe, kontrol ihtiyaçlarına ve bütçeye göre seçim yapın. Daha fazlasını okuyun: [Dedicated vs VPS vs shared](/kennisbank/infrastructuur-servers/verschil-tussen-dedicated-vps-en-shared-hosting) · [Shared/WP/VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
+        },
+        {
+          "id": "host-19",
+          "question": "DirectAdmin'le nasıl çalışırım?",
+          "answer": "DirectAdmin, e-posta, DNS, veritabanları, yedeklemeler ve kurulumlar için kontrol panelidir. Panel kimlik bilgilerinizle giriş yapın; 2FA'yı şiddetle tavsiye ediyoruz. Daha fazlasını okuyun: [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Backups](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
+        },
+        {
+          "id": "host-20",
+          "question": "WordPress için nesne önbelleği sunuyor musunuz?",
+          "answer": "Uygun planlarda, veritabanı sorgularını azaltmak ve daha hızlı yüklemek için kalıcı nesne önbelleğini destekliyoruz. Daha fazlasını okuyun: [Object cache](/kennisbank/hosting/persistent-object-cache-in-wordpress) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-21",
+          "question": "Barındırma ücretini nasıl yenileyebilirim veya ödeme yapabilirim?",
+          "answer": "Müşteri portalı ve faturalar aracılığıyla; otomatik yenileme sıklıkla mevcuttur. Kesintiyi önlemek için fatura ayrıntılarınızı güncel tutun. Daha fazlasını okuyun: [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode) · [View invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "host-22",
+          "question": "Bir barındırma planına birden fazla alan adı koyabilir miyim?",
+          "answer": "Genellikle evet, plan sınırlarına bağlı olarak eklenti veya park edilmiş alan adları aracılığıyla. Bağlantı ve DNS konusunda yardımcı oluyoruz. Daha fazlasını okuyun: [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Connect domain](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket)."
+        },
+        {
+          "id": "host-23",
+          "question": "Hosting panelime giriş yapmak ne kadar güvenli?",
+          "answer": "Güçlü bir şifre kullanın ve 2FA'yı etkinleştirin. Panel girişlerini güvenli olmayan kanallar üzerinden paylaşmayın. Daha fazlasını okuyun: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "host-24",
+          "question": "WordPress tam olarak ne barındırıyor?",
+          "answer": "WordPress barındırma WP için optimize edilmiştir: daha hızlı PHP/yığın, genellikle CDN ve genel paylaşıma göre daha basit kurulum/güncelleme. Daha fazlasını okuyun: [WP hosting plans](/kennisbank/hosting/wat-is-wordpress-hosting-basic-plus-en-pro) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-25",
+          "question": "Hosting'i doğrudan nereden sipariş edebilirim?",
+          "answer": "Mağazada veya Paylaşılan, Bulut, WordPress ve VPS barındırma kategorileri aracılığıyla. Sipariş verdikten sonra panel ve fatura erişimine sahip olursunuz. Daha fazlasını okuyun: [Shop](/shop) · [Hosting overview](/diensten/categorie/hosting)."
+        }
+      ]
+    },
+    {
+      "id": "email-dns",
+      "title": "E-posta ve DNS",
+      "items": [
+        {
+          "id": "mail-1",
+          "question": "Alan adları veya barındırma içeren e-posta sunuyor musunuz?",
+          "answer": "Bu pakete ve kuruluma bağlıdır. Güvenilir mail çözümleri öneriyoruz ve DNS'yi doğru ayarlıyoruz (SPF, DKIM ve DMARC). Daha fazlasını okuyun: [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress) · [SPF record](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-2",
+          "question": "SPF, DKIM ve DMARC nedir?",
+          "answer": "Bunlar, e-posta kimlik doğrulamasını gerçekleştiren ve kimlik sahtekarlığını/spam'ı azaltan DNS kayıtlarıdır. Doğru kayıtlar olmadan postalar daha sık spam'e düşer. Daha fazlasını okuyun: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-3",
+          "question": "DNS kayıtlarını nasıl yönetirim?",
+          "answer": "Alan adınız veya barındırma paneliniz için DNS yönetimi aracılığıyla A, AAAA, CNAME, MX ve TXT kayıtlarını ayarlarsınız. Geçişler ve posta kimlik doğrulaması konularında yardımcı oluyoruz. Daha fazlasını okuyun: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [DNSSEC](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-4",
+          "question": "DNS sorunlarının çözülmesine yardımcı oluyor musunuz?",
+          "answer": "Evet. DNS yeniden doğru olana kadar kayıtları, yayılımı, posta kimlik doğrulamasını ve etki alanı bağlantılarını düzeltiriz. Daha fazlasını okuyun: [Manage DNS records](/kennisbank/domeinnamen/dns-records-beheren) · [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen)."
+        },
+        {
+          "id": "mail-5",
+          "question": "DNSSEC nedir?",
+          "answer": "DNSSEC, DNS yanıtlarını imzalar, böylece manipülasyon daha zordur. TLD'nizin ve kurulumunuzun desteklediği yerde etkinleştirebiliriz. Devamını oku: [DNSSEC explained](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-6",
+          "question": "Telefonumda e-postayı nasıl kurarım?",
+          "answer": "Panelinizden IMAP/SMTP ayrıntılarını kullanın. Android için (ve benzer şekilde iOS'ta) adımlar bilgi tabanındadır. Daha fazlasını okuyun: [Email on Android](/kennisbank/e-mail/e-mail-instellen-op-android) · [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress)."
+        },
+        {
+          "id": "mail-7",
+          "question": "Ya e-posta aniden çalışmayı durdurursa?",
+          "answer": "DNS'yi (MX/SPF/DKIM/DMARC), posta kutusu kotasını ve sağlayıcıların postaları engelleyip engellemediğini kontrol edin. Tüm zincirin izlenmesine yardımcı oluyoruz. Daha fazlasını okuyun: [Email problems](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-8",
+          "question": "Ad sunucuları nasıl çalışır?",
+          "answer": "Ad sunucuları, etki alanınıza hangi DNS sisteminin hizmet vereceğini belirler. Bunları değiştirirseniz A/MX/TXT kayıtlarını yeni DNS ana bilgisayarında tekrar doğru şekilde ayarlamanız gerekir. Daha fazlasını okuyun: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "mail-9",
+          "question": "DNS yayılımı ne kadar sürer?",
+          "answer": "Çoğunlukla dakikalardan birkaç saate kadar; TTL'ler ve önbellekler nedeniyle bazen 24-48 saate kadar çıkabilir. Daha hızlı geçiş yapmak için geçişten önce TTL'leri düşürün. Daha fazlasını okuyun: [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen) · [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet)."
+        },
+        {
+          "id": "mail-10",
+          "question": "E-postayı başka bir adrese iletebilir miyim?",
+          "answer": "Evet. İleticiler gelen postaları Gmail'e, Microsoft 365'e veya başka bir posta kutusuna gönderir; bu, dolu bir posta kutusunun yanında veya onun yerine kullanışlıdır. Devamını oku: [Forward email](/kennisbank/e-mail/email-doorsturen-naar-mailadres)."
+        },
+        {
+          "id": "mail-11",
+          "question": "Etki alanımı Microsoft 365'e bağlayabilir miyim?",
+          "answer": "Evet. MX ve kimlik doğrulama kayıtlarını (SPF/DKIM/DMARC) Microsoft'un talimatlarına göre ayarlarsınız; DNS tarafında yardımcı oluyoruz. Daha fazlasını okuyun: [Domain to Microsoft 365](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-microsoft-365) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-12",
+          "question": "Postalarım neden spam klasörüne düşüyor?",
+          "answer": "Çoğunlukla SPF/DKIM/DMARC eksik veya çakışıyor ya da IP/itibar zayıf. DNS kimlik doğrulamasını ve gönderme davranışını kontrol ediyoruz. Daha fazlasını okuyun: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-13",
+          "question": "MX kaydı nedir?",
+          "answer": "MX kaydı, internete hangi posta sunucusunun alan adınız için e-posta alabileceğini bildirir. Doğru MX olmadan hiçbir posta gelmez. Daha fazlasını okuyun: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Email problems](/kennisbank/hosting/problemen-met-e-mail-website)."
+        },
+        {
+          "id": "mail-14",
+          "question": "Web postasını kullanabilir miyim?",
+          "answer": "Evet, barındırma panelinizin web posta URL'si aracılığıyla, telefon veya Outlook'taki IMAP'in yanı sıra tarayıcıda posta okuyabilir ve gönderebilirsiniz. Daha fazlasını okuyun: [Set up email](/kennisbank/e-mail/e-mail-instellen-op-android) · [Contact](/contact)."
+        },
+        {
+          "id": "mail-15",
+          "question": "Barındırma başka bir yerdeyse DNS'nin yanınızda olması gerekir mi?",
+          "answer": "Hayır. A/MX/TXT doğru hizmetleri gösterdiği sürece DNS'yi bizde veya başka bir yerde tutabilirsiniz. Tutarlı yönetim, geçiş hatalarını önler. Daha fazlasını okuyun: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Nameservers](/kennisbank/domeinnamen/nameservers-beheren)."
         }
       ]
     }

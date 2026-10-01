@@ -1,0 +1,1 @@
+Adicione o domínio em seu painel ou conta e aponte DNS (registro A ou nameservers) para a hospedagem. Ajudamos na primeira conexão após o pedido. Leia mais: ⟦L0⟧ · ⟦L1⟧.

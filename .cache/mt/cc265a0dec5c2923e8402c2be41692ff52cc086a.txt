@@ -1,0 +1,1 @@
+Vi bruger firewall, SSL, opdateringer, overvågning og hærdning. Ekstra sikkerhedslag er tilgængelige, hvor det er nødvendigt. Læs mere: ⟦L0⟧ · ⟦L1⟧.

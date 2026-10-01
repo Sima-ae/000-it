@@ -1,0 +1,1 @@
+Sim, quando relevante: preparação para revisões e testes e, em seguida, implantação controlada na produção.

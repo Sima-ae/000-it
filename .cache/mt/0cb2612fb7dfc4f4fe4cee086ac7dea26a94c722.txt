@@ -1,0 +1,1 @@
+Use os detalhes IMAP/SMTP do seu painel. Para Android (e similarmente no iOS), as etapas estão na base de conhecimento. Leia mais: ⟦L0⟧ · ⟦L1⟧.

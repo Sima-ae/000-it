@@ -1,0 +1,1 @@
+O DNSSEC assina as respostas do DNS, portanto a manipulação é mais difícil. Podemos habilitá-lo onde seu TLD e configuração o suportarem. Leia mais: ⟦L0⟧.

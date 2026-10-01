@@ -1,0 +1,1 @@
+Bu, alan adı transferini güvenli bir şekilde başlatan, mevcut kayıt operatörünüzden alınan tek seferlik bir koddur. Geçerli bir kod olmadan aktarım devam edemez. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

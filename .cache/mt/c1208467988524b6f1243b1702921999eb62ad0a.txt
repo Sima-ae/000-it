@@ -1,0 +1,1 @@
+Gyakran perctől néhány óráig; néha akár 24–48 óráig is tarthat a TTL-ek és a gyorsítótárak miatt. Csökkentse a TTL-eket az átállás előtt a gyorsabb váltás érdekében. Bővebben: ⟦L0⟧ · ⟦L1⟧.

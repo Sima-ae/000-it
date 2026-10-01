@@ -1,0 +1,1 @@
+Bu, plandan asılıdır. Bir çox planlarda SSH mövcuddur və ya tələb oluna bilər; VPS-də adətən tam giriş əldə edirsiniz. Daha ətraflı: ⟦L0⟧ · ⟦L1⟧.

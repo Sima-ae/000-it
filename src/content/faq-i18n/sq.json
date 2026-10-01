@@ -1,6 +1,6 @@
 {
   "title": "Pyetjet e bëra shpesh",
-  "subtitle": "Pyetje dhe përgjigje – nga AI, AEO, GEO dhe SEO tek dizajni, domenet, hostimi, marketingu, mediat sociale dhe mbështetja.",
+  "subtitle": "Pyetje dhe përgjigje – nga AI, AEO, GEO dhe SEO tek dizajni, domenet, hostimi, llogaria, dyqani, marketingu dhe mbështetja. Me lidhje me bazën e njohurive.",
   "ctaTitle": "Ende keni nevojë për ndihmë?",
   "ctaText": "Nuk e gjeni dot pyetjen tuaj? Na kontaktoni - ne do të kthehemi tek ju sa më shpejt të jetë e mundur.",
   "ctaButton": "Na kontaktoni",
@@ -12,93 +12,133 @@
         {
           "id": "gen-1",
           "question": "Çfarë bën saktësisht TripleZero iT?",
-          "answer": "TripleZero iT kombinon dizajnin e internetit, mbështetjen e WordPress, marketingun dixhital, dukshmërinë e kërkimit (AEO, GEO/lokale dhe SEO), dizajnin dhe hostimin. Ne ndihmojmë markat të gjenden më shpejt, të ndërtojnë faqe interneti më të mira dhe të rriten në një mënyrë të matshme."
+          "answer": "TripleZero iT kombinon dizajnin në internet, menaxhimin e WordPress, marketingun dixhital, dukshmërinë e kërkimit (AEO, GEO/lokale dhe SEO), dizajnin dhe hostimin. Ne ndihmojmë markat të gjenden më shpejt, të ndërtojnë faqe interneti më të mira dhe të rriten në mënyrë të matshme. Lexo më shumë: [Rreth nesh](/over-ons) · [Shërbimet](/diensten)."
         },
         {
           "id": "gen-2",
-          "question": "Si mund të filloj me TripleZero iT?",
-          "answer": "Na kontaktoni ose rezervoni një takim. Ne kryejmë një hyrje të shkurtër, rishikojmë qëllimet dhe grumbullojmë, më pas përgatisim një propozim konkret me planifikimin dhe KPI."
+          "question": "Si të filloj me TripleZero iT?",
+          "answer": "Na kontaktoni ose caktoni një takim. Ne bëjmë një hyrje të shkurtër, shikojmë qëllimet dhe grumbullojmë, dhe më pas hartojmë një propozim konkret me planifikimin dhe KPI. Lexo më shumë: [Clino takim](/afspraak) · [Kontakt](/contact)."
         },
         {
           "id": "gen-3",
-          "question": "Me cilat lloje biznesesh punoni?",
-          "answer": "Ne punojmë me SMB-të, shkallë-ups, tregtinë elektronike, agjencitë dhe markat ndërkombëtare. Kjo mund të jetë së bashku me një ekip ekzistues, ose si një partner me shërbim të plotë."
+          "question": "Për cilat kompani punoni?",
+          "answer": "Ne punojmë për SME-të, ndërmarrjet e shkallës, tregtinë elektronike, agjencitë dhe markat ndërkombëtare. Kjo mund të bëhet së bashku me një ekip ekzistues, ose si një partner me shërbim të plotë."
         },
         {
           "id": "gen-4",
           "question": "A punoni vetëm në Holandë?",
-          "answer": "Jo. Ne u shërbejmë klientëve në Azi, Europë, Emiratet e Bashkuara Arabe dhe SHBA, me angazhime në gjuhën holandeze dhe në anglisht."
+          "answer": "Jo. Ne u shërbejmë klientëve në Azi, Evropë, Emiratet e Bashkuara Arabe dhe SHBA, me procese në gjuhën holandeze dhe angleze."
         },
         {
           "id": "gen-5",
-          "question": "Si duket një fejesë tipike?",
-          "answer": "Një angazhim tipik funksionon si ky: marrja → auditimi ose skanimi → plani → ekzekutimi i sprintit → matja → optimizimi. Ju merrni piketa dhe raportime të qarta, kështu që është gjithmonë e qartë se ku qëndrojmë."
+          "question": "Si është një proces tipik?",
+          "answer": "Një proces zakonisht funksionon si ky: futje → auditim ose skanim → plan → zbatim në sprint → matje → optimizim. Do të merrni piketa dhe raportime të qarta, në mënyrë që të jetë gjithmonë e qartë se ku qëndrojmë."
         },
         {
           "id": "gen-6",
           "question": "A mund të kombinoj shumë shërbime?",
-          "answer": "po. Shumë klientë kombinojnë dizajnin e internetit + SEO + reklamat, ose mirëmbajtjen e WordPress + hostimin + sigurinë. Ne e përshtasim përzierjen sipas qëllimeve dhe buxhetit tuaj."
+          "answer": "po. Për shembull, shumë klientë kombinojnë dizajnin e uebit + SEO + reklamat, ose mirëmbajtjen e WordPress + hostimin + sigurinë. Ne e përshtasim përzierjen sipas qëllimeve dhe buxhetit tuaj."
         },
         {
           "id": "gen-7",
           "question": "Sa shpejt mund të filloni?",
-          "answer": "Varet nga kapaciteti ynë, por pas miratimit ne shpesh fillojmë brenda pak ditësh pune. Puna urgjente - të tilla si defektet, malware ose kohëzgjatja e ndërprerjes - ka prioritet në mënyrë që të mund t'i marrim ato sa më shpejt të jetë e mundur."
+          "answer": "Kjo varet nga kapaciteti ynë, por pasi të miratohet, ne shpesh fillojmë brenda pak ditësh pune. Ne trajtojmë çështje urgjente - të tilla si defektet, malware ose kohëzgjatja e ndërprerjes - si prioritet, në mënyrë që të mund të fillojmë me to sa më shpejt të jetë e mundur."
         },
         {
           "id": "gen-8",
-          "question": "Punoni në distancë apo në vend?",
-          "answer": "Ne punojmë kryesisht në distancë, me komunikim të qartë përmes emailit, bisedës dhe telefonatave. Në vend është në dispozicion sipas kërkesës kur projekti ka nevojë për të."
+          "question": "A punoni në distancë apo në vend?",
+          "answer": "Ne punojmë kryesisht nga distanca, me komunikim të qartë përmes emailit, bisedës dhe telefonatave. Në vend mund të diskutohet sipas kërkesës nëse projekti e kërkon atë."
         },
         {
           "id": "gen-9",
           "question": "Si e komunikon ekipi përparimin?",
-          "answer": "Ne ju mbajmë të përditësuar përmes përditësimeve të rregullta, biletave ose një paneli kontrolli aty ku është e nevojshme, plus raporte sprint ose mujore me veprime dhe rezultate."
+          "answer": "Ne ju mbajmë të informuar përmes përditësimeve të rregullta, biletave ose një paneli kontrolli aty ku është e nevojshme, plus raporte sprint ose mujore me veprime dhe rezultate."
         },
         {
           "id": "gen-10",
-          "question": "Çfarë keni nevojë nga ne për të filluar?",
-          "answer": "Për të filluar, ne kemi nevojë për qasje në faqen e internetit dhe hosting (nëse kërkohet), qëllimet tuaja, udhëzimet e markës, llogaritë analitike dhe çdo mjet ekzistues. Nëse diçka mungon, ne ndihmojmë për ta vendosur atë fillimisht."
+          "question": "Çfarë ju nevojitet për të filluar?",
+          "answer": "Për të filluar, ne kemi akses në uebsajtin dhe hostin (nëse është e nevojshme), qëllimet tuaja, udhëzimet e markës, llogaritë analitike dhe çdo mjet ekzistues. Nëse diçka mungon, ne do t'ju ndihmojmë ta rregulloni fillimisht."
         },
         {
           "id": "gen-11",
-          "question": "A janë shërbimet tuaja të përshtatshme për startup-et?",
-          "answer": "po. Ne shkallëzojmë nga faqet e ulëta të uljes dhe skanimet e AI deri te konfigurimet e plota të rritjes, kështu që qasja rritet me ju."
+          "question": "A janë shërbimet tuaja të përshtatshme për startups?",
+          "answer": "po. Ne shkallëzojmë nga faqet e ulëta të uljes dhe skanimet e AI deri te konfigurimet e plota të rritjes, në mënyrë që qasja të evoluojë ndërsa rriteni."
         },
         {
           "id": "gen-12",
-          "question": "Kush e zotëron punën dhe llogaritë?",
-          "answer": "Domeni juaj, përmbajtja, depot e kodit dhe llogaritë e reklamave mbeten tuajat. Në dorëzim ne dorëzojmë dosjet dhe dokumentacionin në mënyrë që gjithçka të mbetet nën kontrollin tuaj."
+          "question": "Po në lidhje me pronësinë e punës dhe llogarive?",
+          "answer": "Domeni juaj, përmbajtja, depot e kodit dhe llogaritë e reklamave mbeten tuajat. Pas dorëzimit, ne dorëzojmë dosjet dhe dokumentacionin, në mënyrë që gjithçka të mbetet e menaxhuar mirë brenda shtëpisë."
         },
         {
           "id": "gen-13",
-          "question": "A mund të merrni përsipër ose të bashkëpunoni me shitësit ekzistues?",
+          "question": "A mund të blini ose të bashkëpunoni me furnitorët ekzistues?",
           "answer": "po. Ne punojmë pa probleme së bashku me zhvilluesit, tregtarët ose agjencitë, ose marrim përsipër mirëmbajtjen dhe optimizimin pa ndërprerë në mënyrë të panevojshme punën ekzistuese."
+        },
+        {
+          "id": "gen-14",
+          "question": "Çfarë është Agjenti 000 (asistenti i bisedës)?",
+          "answer": "Agjenti 000 është asistenti ynë dixhital në sajt dhe në flukset e mbështetjes. Ai u përgjigjet pyetjeve të bëra shpesh, tregon artikujt e bazës së njohurive dhe mund t'ju drejtojë në bisedën e drejtpërdrejtë, një biletë ose një takim kur ndihma njerëzore është më e përshtatshme. Lexo më shumë: [Asistent dixhital](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Bisedë, biletë ose telefonatë takim](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "gen-15",
+          "question": "Si mund të caktoj një takim apo telefonatë?",
+          "answer": "Ju mund të zgjidhni një orar që ju përshtatet përmes faqes së takimit. Për pyetje të shpejta mund të përdorni edhe chat live ose një biletë; një takim telefonik është i dobishëm për procese ose pranime më komplekse. Lexo më shumë: [Takim](/afspraak) · [Telefonata e takimit të shpjeguar](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)."
+        },
+        {
+          "id": "gen-16",
+          "question": "Ku mund ta shoh statusin e shërbimeve tuaja?",
+          "answer": "Në faqen e statusit ne tregojmë incidente dhe mirëmbajtje në lidhje me pritjen dhe shërbimet e lidhura me to, në mënyrë që të mund të shihni shpejt nëse diçka po ndodh. Lexo më shumë: [Statuspage](/statuspage)."
+        },
+        {
+          "id": "gen-17",
+          "question": "A keni një bazë njohurish?",
+          "answer": "po. Baza e njohurive përmban manuale rreth domeneve, DNS, email, hosting, WordPress, skanim AI, siguri dhe më shumë – me shpjegime hap pas hapi. Lexo më shumë: [Baza e njohurive](/kennisbank)."
+        },
+        {
+          "id": "gen-18",
+          "question": "Si e trajtoni privatësinë dhe cookies?",
+          "answer": "Ne punojmë me vetëdije GDPR: tekstet e privatësisë, pëlqimi për formularët dhe banderolat e kukive/modaliteti i pëlqimit ku gjurmimi është i nevojshëm. Për WordPress ne ndihmojmë me një konfigurim të saktë të cookie-ve. Lexo më shumë: [Baneri i biskotave në WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress) · [Modaliteti i pëlqimit](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Privatësia me formularë](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren)."
+        },
+        {
+          "id": "gen-19",
+          "question": "Ku mund t'i gjej lajmet dhe përditësimet tuaja?",
+          "answer": "Në faqen e lajmeve ne publikojmë përditësime rreth produkteve, sigurisë dhe këshillave. Për keqfunksionime teknike, kontrolloni faqen e statusit. Lexo më shumë: [Lajme](/nieuws) · [Statuspage](/statuspage)."
+        },
+        {
+          "id": "gen-20",
+          "question": "Sa kushton të punosh me ty?",
+          "answer": "Kjo varet nga përzierja: produktet e pritjes dhe blerjes kanë çmime fikse; dizajni, SEO, reklamat dhe mbajtësit vijojnë pas marrjes. Në dyqan shihni paketa; do të merrni një propozim për personalizim. Lexo më shumë: [Shop](/shop) · [Kontakt](/contact)."
+        },
+        {
+          "id": "gen-21",
+          "question": "A mund të bëni gjithashtu vetëm konsulencë ose auditim?",
+          "answer": "po. Auditimet, skanimet e AI, rishikimet teknike dhe seancat sparring mund të bëhen veçmas nga një proces shërbimi i plotë. Më pas mund ta bëni vetë ose na lejoni të kujdesemi për të. Lexo më shumë: [AI scan](/ai-scan) · [Shërbimet](/diensten)."
         }
       ]
     },
     {
       "id": "ai",
-      "title": "AI",
+      "title": "UA.",
       "items": [
         {
           "id": "ai-1",
           "question": "Çfarë është një skanim AI në TripleZero iT?",
-          "answer": "Një skanim i gatishmërisë për AI vlerëson se sa mirë mund të gjendet faqja juaj nga motorët klasikë të kërkimit, përgjigjet e AI dhe rezultatet e kërkimit lokal ose gjeografik (AEO, GEO, SEO dhe themelet teknike)."
+          "answer": "Një skanim i gatishmërisë së AI vlerëson se sa e lehtë është për t'u gjetur faqja juaj për motorët tradicionalë të kërkimit, përgjigjet e AI dhe rezultatet e kërkimit lokal ose gjeografik (AEO, GEO, SEO dhe baza teknike). Lexo më shumë: [Çfarë është skanimi i AI?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Filloni skanimin e AI](/ai-scan)."
         },
         {
           "id": "ai-2",
-          "question": "Çfarë mat saktësisht skanimi i AI?",
-          "answer": "Skanimi mat sinjalet AEO, dukshmërinë GEO/lokale, bazat e SEO, strukturën e përmbajtjes, treguesit e performancës dhe gatishmërinë e AI. Ju merrni pikë dhe pikë konkrete përmirësimi."
+          "question": "Çfarë saktësisht mat skanimi i AI?",
+          "answer": "Skanimi mat, ndër të tjera, sinjalet AEO, gjetshmërinë GEO/lokale, bazat e SEO, strukturën e përmbajtjes, treguesit e performancës dhe gatishmërinë e AI. Do të merrni pikë dhe pikë konkrete për përmirësim. Lexo më shumë: [Shpjego rezultatet](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)."
         },
         {
           "id": "ai-3",
-          "question": "Sa shpesh duhet të kryej një skanim AI?",
-          "answer": "Të paktën pas ndryshimeve të mëdha të faqes ose fushatave. Për markat aktive ne rekomandojmë skanime periodike, për shembull çdo tremujor, në mënyrë që të qëndroni të dukshëm në rezultatet e kërkimit dhe AI."
+          "question": "Sa shpesh duhet të bëj një skanim AI?",
+          "answer": "Të paktën për ndryshime të mëdha në faqe ose fushata. Për markat aktive, ne rekomandojmë skanime periodike, për shembull çdo tremujor, në mënyrë që të mbeteni të dukshëm në rezultatet e kërkimit dhe AI. Lexo më shumë: [Fillo skanimin me AI](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website)."
         },
         {
           "id": "ai-4",
           "question": "A ndihmon AI vetëm me përmbajtjen?",
-          "answer": "Jo. AI ndikon gjithashtu zbulueshmërinë teknike, të dhënat e strukturuara, lidhjet e brendshme, blloqet e FAQ dhe mënyrën se si informacioni i markës përmblidhet në përgjigjet e AI."
+          "answer": "Jo. AI ndikon gjithashtu në gjetjen teknike, të dhënat e strukturuara, lidhjet e brendshme, blloqet e FAQ dhe mënyrën se si informacioni i markës përmblidhet në përgjigjet e AI."
         },
         {
           "id": "ai-5",
@@ -107,43 +147,83 @@
         },
         {
           "id": "ai-6",
-          "question": "A e zëvendëson AI punën tuaj strategjike?",
-          "answer": "Jo. AI përshpejton analizën dhe prodhimin, por strategjia, zëri i markës dhe vendimet e konvertimit mbeten njerëzore dhe të matshme."
+          "question": "A do ta zëvendësojë AI punën tuaj strategjike?",
+          "answer": "Jo. Inteligjenca artificiale përshpejton analizën dhe prodhimin, por strategjia, toni i markës dhe vendimet e konvertimit mbeten njerëzore dhe të matshme."
         },
         {
           "id": "ai-7",
           "question": "A është përmbajtja e AI-së e sigurt për SEO?",
-          "answer": "Vetëm me rishikim njerëzor, njohuri unike dhe E-E-A-T. Ne shmangim tekstin e hollë e të përgjithshëm që dëmton renditjen."
+          "answer": "Vetëm me rishikim njerëzor, njohuri unike dhe E-E-A-T. Ne shmangim tekstet e holla, gjenerike që dëmtojnë renditjen."
         },
         {
           "id": "ai-8",
           "question": "Cila është gatishmëria e AI për markën time?",
-          "answer": "Është shkalla në të cilën faqja juaj, përmbajtja dhe të dhënat janë konfiguruar në mënyrë që sistemet e AI të mund të citojnë, rekomandojnë dhe shpjegojnë saktë markën tuaj."
+          "answer": "Kjo është shkalla në të cilën faqja juaj, përmbajtja dhe të dhënat janë të dizajnuara në mënyrë të tillë që sistemet e AI mund t'ju citojnë, rekomandojnë dhe shpjegojnë saktë. Lexo më shumë: [Gatishmëria AI në skanim](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)."
         },
         {
           "id": "ai-9",
-          "question": "A mund të përdorni agjentë të AI në panelin e kontrollit?",
-          "answer": "po. Në portalin e klientit ju shihni agjentë të AI për SEO, përmbajtje, sociale dhe reklama - duke përfshirë statusin dhe detyrat."
+          "question": "A mund të vendosni agjentë të AI në panelin e kontrollit?",
+          "answer": "po. Në portalin e klientëve do të shihni agjentë të AI për SEO, përmbajtje, sociale dhe reklama, duke përfshirë statusin dhe detyrat. Lexo më shumë: [Çfarë janë agjentët e AI?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Agjentët në llogarinë tuaj](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)."
         },
         {
           "id": "ai-10",
           "question": "A punoni me ChatGPT, Claude apo mjete të tjera?",
-          "answer": "Ne zgjedhim mjete për çdo rast përdorimi. Qeverisja ka rëndësi: burimet, kontrolli i fakteve, udhëzimet e markës dhe privatësia, kështu që përdorimi i AI mbetet i besueshëm."
+          "answer": "Ne zgjedhim mjete për çdo rast përdorimi. Qeverisja është e rëndësishme: burimet, kontrolli i fakteve, udhëzimet e markës dhe privatësia, në mënyrë që përdorimi i AI të mbetet i besueshëm."
         },
         {
           "id": "ai-11",
           "question": "A ndihmon AI me biletat mbështetëse?",
-          "answer": "Po, për analizë dhe përgjigje më të shpejta. Rastet komplekse ose të ndjeshme përshkallëzohen gjithmonë tek një shok skuadre njerëzore."
+          "answer": "Po, për triaging dhe përgjigje më të shpejta. Ne gjithmonë përshkallëzojmë raste komplekse ose të ndjeshme tek një punonjës njerëzor."
         },
         {
           "id": "ai-12",
-          "question": "Sa kushton një angazhim i AI?",
-          "answer": "Ai varion nga një skanim falas ose i nivelit fillestar të AI deri tek mbajtëset mujore të AI dhe marketingu. Pas marrjes ju merrni një propozim të qartë."
+          "question": "Sa kushton një proces i AI?",
+          "answer": "Kjo varion nga një skanim i inteligjencës artificiale pa pagesë ose i nivelit fillestar deri te mbajtësit e inteligjencës artificiale mujore dhe marketingu. Pas marrjes do të merrni një propozim të qartë."
         },
         {
           "id": "ai-13",
-          "question": "Si mund ta mas ROI-në e iniciativave të AI?",
-          "answer": "Përmes KPI-ve si trafiku, drejtimet, koha e kursyer, prodhimi i përmbajtjes, zgjidhja e biletave dhe konvertimi. Ne i përcaktojmë ato përpara në plan në mënyrë që rezultatet të mbeten të dukshme."
+          "question": "Si mund ta mas ROI nga iniciativat e AI?",
+          "answer": "Nëpërmjet KPI-ve si trafiku, drejtimet, koha e kursyer, prodhimi i përmbajtjes, zgjidhja e biletave dhe konvertimi. Ne e masim këtë paraprakisht në plan, në mënyrë që rezultatet të mbeten të dukshme."
+        },
+        {
+          "id": "ai-14",
+          "question": "Si mund të filloj një skanim AI në faqen time të internetit?",
+          "answer": "Shkoni te skanimi i AI, shkruani URL-në tuaj dhe filloni analizën. Ju merrni rezultate për AEO, GEO, SEO, performancën dhe gatishmërinë e AI plus pikë për përmirësim. Lexo më shumë: [Filloni skanimin me AI](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website) · [faqe skanimi AI](/ai-scan)."
+        },
+        {
+          "id": "ai-15",
+          "question": "Si mund t'i lexoj rezultatet e skanimit të AI?",
+          "answer": "Çdo rezultat tregon se sa i fortë jeni në atë fushë; rezultatet e ulëta vijnë me këshilla konkrete. Përdorni skanimin si një listë prioritare, jo si një \"kartë raporti\" një herë. Lexo më shumë: [Shpjego rezultatet](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Hapat e mëtejshëm](/kennisbank/ai-scan/welke-vervolgstappen-zet-ik-na-mijn-ai-scan)."
+        },
+        {
+          "id": "ai-16",
+          "question": "Cili është ndryshimi midis një skanimi AI dhe një procesi të plotë AEO/GEO/SEO?",
+          "answer": "Skanimi është një diagnozë e shpejtë. Një proces zbaton përmirësime: përmbajtje, të dhëna të strukturuara, SEO teknike, sinjale lokale dhe matje me kalimin e kohës. Lexo më shumë: [Skano kundrejt procesit](/kennisbank/ai-scan/ai-scan-versus-een-volledig-aeo-geo-seo-traject-wat-is-het-verschil) · [Fillo SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-17",
+          "question": "Ku mund të gjej skanimet e mëparshme të AI në llogarinë time?",
+          "answer": "Klientët e regjistruar shohin skanimet dhe analizat e mëparshme në panelin e kontrollit (analiza SEO), kështu që ju mund të krahasoni përparimin. Lexo më shumë: [AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Llogaria / paneli](/dashboard)."
+        },
+        {
+          "id": "ai-18",
+          "question": "Çfarë duhet të bëj pas një rezultati të ulët AEO ose GEO?",
+          "answer": "Jepini përparësi pyetjeve të shpeshta, entiteteve, të dhënave të strukturuara (AEO) dhe Profilit të Biznesit të Google / NAP / faqet e uljes lokale (GEO). Ne ndihmojmë për ta përkthyer atë udhërrëfyes në zbatim. Lexo më shumë: [Rezultatet](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Zbulueshmëria Lokale](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "ai-19",
+          "question": "Si funksionojnë agjentët e AI në portalin e klientëve?",
+          "answer": "Agjentët e AI mbështesin detyrat që lidhen me SEO, përmbajtje, sociale ose reklama. Ju hapni pasqyrën në llogarinë tuaj, shihni statusin dhe mund të nisni ose ndaloni agjentët sipas paketës suaj. Lexo më shumë: [Çfarë janë agjentët e AI?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Agjentët e hapur](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)."
+        },
+        {
+          "id": "ai-20",
+          "question": "A është skanimi i AI pa pagesë?",
+          "answer": "Ekziston një hyrje e arritshme përmes faqes së skanimit të AI; analizat dhe proceset më të thella bien nën shërbime ose mbajtëse. Pas skanimit, do të shihni menjëherë nëse një vazhdim është i dobishëm. Lexo më shumë: [AI skanim](/ai-scan) · [Çfarë është skanimi i AI?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-21",
+          "question": "A ndihmon Agjenti 000 edhe me pyetjet e AI dhe SEO?",
+          "answer": "po. Agjenti 000 përdor FAQ dhe bazën e njohurive për t'iu përgjigjur pyetjeve të skanimit të AEO/GEO/SEO dhe AI ​​dhe lidhjet me artikujt e duhur ose ndjekjen njerëzore. Lexo më shumë: [Asistent Dixhital](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [FAQ](/faq)."
         }
       ]
     },
@@ -154,37 +234,37 @@
         {
           "id": "seo-1",
           "question": "Cili është ndryshimi midis AEO, GEO dhe SEO?",
-          "answer": "AEO (Answer Engine Optimization) fokusohet në përgjigjet e AI. GEO (Geographic Search Engine Optimization) forcon dukshmërinë lokale dhe rajonale në Hartat, paketat lokale dhe kërkimin e bazuar në vendndodhje. SEO optimizohet për motorët klasikë të kërkimit."
+          "answer": "AEO (Answer Engine Optimization) fokusohet në përgjigjet e AI. GEO (Geographic Search Engine Optimization) forcon gjetshmërinë lokale dhe rajonale në Hartat, paketat lokale dhe kërkimin e bazuar në vendndodhje. SEO optimizohet për motorët klasikë të kërkimit. Lexo më shumë: [Si janë të lidhura AEO, GEO dhe SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen) · [Çfarë është AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization)."
         },
         {
           "id": "seo-2",
-          "question": "Pse AEO/GEO kanë rëndësi tani?",
-          "answer": "Më shumë kërkues marrin përgjigje nëpërmjet AI dhe gjithashtu kërkojnë në nivel lokal (\"pranë meje\"). Pa AEO ju mungojnë citimet e AI; pa GEO ju mungojnë drejtimet lokale – edhe kur SEO klasike është solide."
+          "question": "Pse është i rëndësishëm OAE/GEO tani?",
+          "answer": "Gjithnjë e më shumë kërkues po marrin përgjigje përmes AI dhe po kërkojnë në nivel lokal (\"pranë meje\"). Pa AEO do t'ju mungojnë citimet e AI; pa GEO ju mungojnë drejtimet lokale – edhe nëse SEO klasike është e mirë. Lexo më shumë: [Çfarë është GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant)."
         },
         {
           "id": "seo-3",
-          "question": "Si të filloni një angazhim SEO?",
-          "answer": "Ne fillojmë me një auditim teknik, kërkime të fjalëve kyçe dhe qëllimeve, një analizë të mangësive të përmbajtjes dhe një udhërrëfyes prioritar të lidhur me KPI-të e biznesit tuaj."
+          "question": "Si filloni një proces SEO?",
+          "answer": "Ne fillojmë me një auditim teknik, kërkime të fjalëve kyçe dhe qëllimeve, një analizë të boshllëqeve të përmbajtjes dhe një udhërrëfyes prioritar që është i lidhur me KPI-të e biznesit tuaj. Lexo më shumë: [Fillo SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
         },
         {
           "id": "seo-4",
-          "question": "Sa kohë derisa rezultatet e SEO të bëhen të dukshme?",
-          "answer": "Fitoret teknike mund të shfaqen shpejt. Rritja organike zakonisht ndërtohet gjatë javëve në muaj, në varësi të konkurrencës dhe sa konsistente ekzekutojmë."
+          "question": "Sa kohë duhet që rezultatet e SEO të shfaqen?",
+          "answer": "Fitimet teknike mund të shihen shpejt. Rritja organike zakonisht ndërtohet gjatë javëve në muaj, në varësi të konkurrencës dhe sa konsistente ekzekutojmë."
         },
         {
           "id": "seo-5",
           "question": "A bëni edhe SEO lokale?",
-          "answer": "po. Ne punojmë në \"Profilin e biznesit të Google\", faqet e uljes lokale, konsistencën e NAP, rishikimet dhe grupimet e përmbajtjes lokale, në mënyrë që të gjendeni më mirë në rajonin tuaj."
+          "answer": "po. Ne po punojmë në \"Profilin e biznesit të Google\", faqet e uljes lokale, konsistencën e NAP, rishikimet dhe grupimet e përmbajtjes lokale, në mënyrë që të mund të gjendeni më mirë në rajon. Lexo më shumë: [Përmirëso zbulueshmërinë lokale](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
         },
         {
           "id": "seo-6",
           "question": "Çfarë është SEO teknike për ju?",
-          "answer": "SEO-ja teknike mbulon zvarritjen, indeksimin, Core Web Vitals, të dhënat e strukturuara, hartën e faqes dhe robotët, kanonikat, lidhjet e brendshme dhe pastrimin e gabimeve – gjithçka që motorët e kërkimit kanë nevojë për të kuptuar mirë sitin."
+          "answer": "SEO-ja teknike mbulon zvarritjen, indeksimin, Core Web Vitals, të dhënat e strukturuara, hartën e faqes dhe robotët, kanonikat, lidhjet e brendshme dhe korrigjimin - gjithçka që motorët e kërkimit kanë nevojë për të kuptuar siç duhet sitin."
         },
         {
           "id": "seo-7",
           "question": "A ndihmoni me përmbajtje për SEO?",
-          "answer": "po. Ne krijojmë përmbledhje, skica, blogje, faqe fillestare dhe FAQ që përputhen me qëllimin e kërkimit dhe janë të strukturuara në një mënyrë miqësore me AI."
+          "answer": "po. Ne krijojmë informime, skica, blogje, faqe uljeje dhe FAQ që përputhen me qëllimin e kërkimit dhe janë të strukturuara në një mënyrë miqësore me AI."
         },
         {
           "id": "seo-8",
@@ -194,32 +274,62 @@
         {
           "id": "seo-9",
           "question": "A bëni ndërtimin e lidhjeve?",
-          "answer": "Po, në mënyrë etike dhe relevante: PR dixhitale, partneritetet dhe asetet e përmbajtjes. Ne nuk përdorim skemat e lidhjeve të padëshiruara."
+          "answer": "Po, etike dhe relevante: PR dixhitale, partneritetet dhe asetet e përmbajtjes. Ne nuk bëjmë skema të lidhjeve të padëshiruara."
         },
         {
           "id": "seo-10",
           "question": "A mund të riparoni dëmtimet ekzistuese të SEO?",
-          "answer": "po. Ne riparojmë dëmtimet pas përditësimeve, lidhjeve toksike, problemeve të indeksimit ose kanibalizimit të përmbajtjes, më pas vendosim një rrugë të pastër rritjeje."
+          "answer": "po. Ne riparojmë dëmtimet pas përditësimeve, lidhjeve toksike, problemeve të indeksimit ose kanibalizimit të përmbajtjes dhe më pas vendosim një linjë të pastër rritjeje."
         },
         {
           "id": "seo-11",
           "question": "Si e raportoni përparimin e SEO?",
-          "answer": "Ne raportojmë çdo muaj ose për sprint renditjet, trafikun, konvertimet, çështjet teknike dhe veprimet e ardhshme, kështu që është e qartë se çfarë bëmë dhe çfarë vjen më pas."
+          "answer": "Ne raportojmë çdo muaj ose për sprint renditjet, trafikun, konvertimet, çështjet teknike dhe veprimet e ardhshme, në mënyrë që të jetë e qartë se çfarë kemi bërë dhe çfarë do të pasojë."
         },
         {
           "id": "seo-12",
           "question": "A funksionon SEO për tregtinë elektronike?",
-          "answer": "Absolutisht. Ne optimizojmë SEO-në e produkteve dhe kategorive, navigimin e aspekteve, rishikimet, të dhënat e strukturuara dhe qendrat e përmbajtjes rreth qëllimit të blerjes."
+          "answer": "Sigurisht. Ne optimizojmë SEO-në e produkteve dhe kategorive, navigimin e aspekteve, rishikimet, të dhënat e strukturuara dhe qendrat e përmbajtjes rreth qëllimit të blerjes."
         },
         {
           "id": "seo-13",
-          "question": "A është SEO një projekt i vetëm apo i vazhdueshëm?",
-          "answer": "Rezultatet më të mira vijnë nga optimizimi i vazhdueshëm. Auditimet e njëhershme ndihmojnë, por konkurrentët nuk qëndrojnë të palëvizshëm - kjo është arsyeja pse ne vazhdojmë të matim dhe rregullojmë."
+          "question": "A është SEO një projekt një herë apo në vazhdim?",
+          "answer": "Rezultatet më të mira vijnë nga optimizimi i vazhdueshëm. Auditimet e njëhershme ndihmojnë, por konkurrenca nuk qëndron ende - kjo është arsyeja pse ne vazhdojmë të masim dhe rregullojmë."
         },
         {
           "id": "seo-14",
           "question": "A ndihmoni me SEO ndërkombëtare?",
-          "answer": "po. Ne trajtojmë hreflang, kërkimin e tregut për shtet ose gjuhë, lokalizimin e përmbajtjes dhe konfigurimet teknike me shumë vendndodhje."
+          "answer": "po. Ne organizojmë hreflang, hulumtimin e tregut sipas vendit ose gjuhës, lokalizimin e përmbajtjes dhe konfigurimet teknike shumë-lokale."
+        },
+        {
+          "id": "seo-15",
+          "question": "Çfarë është saktësisht OAE?",
+          "answer": "AEO (Answer Engine Optimization) krijon përmbajtje në mënyrë që përgjigjet e AI dhe motorët e përgjigjeve të mund të citojnë saktë markën tuaj: FAQ të qarta, entitete dhe të dhëna të strukturuara. Lexo më shumë: [Çfarë është AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AEO, GEO dhe SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
+        },
+        {
+          "id": "seo-16",
+          "question": "Çfarë është GEO (SEO gjeografike)?",
+          "answer": "GEO forcon zbulueshmërinë lokale dhe rajonale - Hartat, paketat lokale dhe kërkimin e bazuar në vendndodhje - përmes GBP, konsistencës NAP dhe përmbajtjes lokale. Lexo më shumë: [Çfarë është GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant) · [Zbulueshmëria lokale](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "seo-17",
+          "question": "Si mund të porosis ose të filloj optimizimin e SEO?",
+          "answer": "Filloni me një skanim ose auditim të AI, më pas një propozim me përparësi. Ju gjithashtu mund të kombinoni SEO-në me përmbajtjen dhe teknologjinë përmes dyqanit/shërbimeve ose mbajtësit. Lexo më shumë: [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting) · [AI Scan](/ai-scan)."
+        },
+        {
+          "id": "seo-18",
+          "question": "A mund të ndihmoni me të dhënat e strukturuara dhe orarin e FAQ?",
+          "answer": "po. Ne krijojmë diagrame përkatëse (FAQ, Organizata, Biznesi Lokal, produkte) dhe strukturojmë përmbajtjen në mënyrë që motorët e kërkimit dhe AI ​​t'ju kuptojnë më mirë. Lexo më shumë: [Shpjegimi i AEO](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [Rezultatet e skanimit AI](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)."
+        },
+        {
+          "id": "seo-19",
+          "question": "Çfarë po bëni me Core Web Vitals?",
+          "answer": "Ne matim LCP, INP dhe CLS, zgjidhim asete të rënda, problemet e pritjes/memorjes dhe temave dhe e lidhim këtë me CDN-në ku është e nevojshme. Lexo më shumë: [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [Zgjidhni Hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "seo-20",
+          "question": "A mund të kombinoni SEO me pritjen dhe kujdesin për WordPress?",
+          "answer": "po. Pritja e qëndrueshme, përditësimet dhe performanca përbëjnë bazën; SEO bazohet mbi këtë. Shumë klientë kombinojnë WP-care + hosting + SEO të vazhdueshme. Lexo më shumë: [Hosting](/diensten/categorie/hosting) · [Fillo SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
         }
       ]
     },
@@ -230,52 +340,52 @@
         {
           "id": "ads-1",
           "question": "Cilat kanale reklamimi mbështetni?",
-          "answer": "Ne mbështesim Google Ads, Meta (Facebook/Instagram), LinkedIn dhe aty ku është e rëndësishme YouTube ose ri-targetimin — të përafruar me kanalin dhe buxhetin."
+          "answer": "Ne mbështesim Google Ads, Meta (Facebook/Instagram), LinkedIn dhe aty ku është e rëndësishme YouTube ose ri-targetimin — të përshtatura sipas kanalit dhe buxhetit."
         },
         {
           "id": "ads-2",
           "question": "Si e përcaktoni buxhetin e duhur të reklamave?",
-          "answer": "Ne vendosim buxhetin bazuar në qëllimet (udhëheqjet ose shitjet), objektivat e CAC, çmimet e tregut dhe një fazë testimi. Ne fillojmë të ligëtojmë dhe shkallëzojmë atë që funksionon."
+          "answer": "Ne përcaktojmë buxhetin bazuar në qëllimet (udhëheqjet ose shitjet), objektivi CAC, çmimet e tregut dhe një fazë testimi. Ne fillojmë të ligëtojmë dhe shkallëzojmë atë që funksionon."
         },
         {
           "id": "ads-3",
           "question": "Cila është qasja juaj ndaj Google Ads?",
-          "answer": "Ne vendosim një strukturë të qartë llogarie, synimin e kërkimit në hartë, shtojmë fjalë kyçe negative, kontrollojmë përshtatjen e faqes së uljes, konfigurojmë gjurmimin e konvertimit dhe optimizojmë çdo javë."
+          "answer": "Ne kemi krijuar një strukturë të qartë llogarie, synimin e kërkimit në hartë, shtojmë fjalë kyçe negative, kontrollojmë përshtatjen e faqes së uljes, konfigurojmë gjurmimin e konvertimit dhe optimizojmë çdo javë."
         },
         {
           "id": "ads-4",
           "question": "A mund të ekzekutoni Meta Ads për tregtinë elektronike?",
-          "answer": "po. Ne drejtojmë katalogë dhe fushata ri-targetimi, testojmë kreativat dhe audiencat dhe optimizojmë për të përmirësuar ROAS."
+          "answer": "po. Ne drejtojmë katalogë dhe fushata ri-shënjestrimi, testojmë krijuesit dhe audiencat dhe bëjmë rregullime për të përmirësuar ROAS."
         },
         {
           "id": "ads-5",
           "question": "Si e matni suksesin e reklamave?",
-          "answer": "Ne matim konvertimet, CPA/CAC, ROAS, cilësinë e plumbit dhe tubacionin - jo vetëm klikimet. Në këtë mënyrë ne optimizojmë për rezultatet në vend të vëllimit."
+          "answer": "Ne matim konvertimet, CPA/CAC, ROAS, cilësinë e plumbit dhe linjën e prodhimit - jo vetëm klikimet. Në këtë mënyrë ne fokusohemi në rezultate në vend të vëllimit."
         },
         {
           "id": "ads-6",
           "question": "Po nëse gjurmimi është i gabuar?",
-          "answer": "Më pas ne rregullojmë etiketimin (GTM, GA4 dhe pikselët), modalitetin e pëlqimit aty ku nevojitet dhe opsionet nga ana e serverit për të dhëna më të besueshme."
+          "answer": "Më pas rregullojmë etiketimin (GTM, GA4 dhe pikselët), modalitetin e pëlqimit aty ku është e nevojshme dhe opsionet nga ana e serverit për të dhëna më të besueshme."
         },
         {
           "id": "ads-7",
-          "question": "A ekzekutoni gjithashtu reklama B2B LinkedIn?",
-          "answer": "po. Ne përdorim shënjestrim të mprehtë, forma të gjeneratës së parë ose faqe dhe përmbajtje që u flasin vendimmarrësve."
+          "question": "A bëni edhe reklama B2B LinkedIn?",
+          "answer": "po. Ne punojmë me shënjestrim të mprehtë, forma të gjeneratës së parë ose faqet e uljes dhe përmbajtje që apelojnë për vendimmarrësit."
         },
         {
           "id": "ads-8",
-          "question": "Sa shpejt do të shoh rezultatet nga reklamat?",
-          "answer": "Trafiku mund të arrijë menjëherë. CPA e qëndrueshme ose ROAS zakonisht kanë nevojë për 2 deri në 6 javë mësim dhe përsëritje krijuese."
+          "question": "Sa shpejt i shoh rezultatet nga reklamat?",
+          "answer": "Trafiku mund të hyjë drejtpërdrejt. CPA e qëndrueshme ose ROAS zakonisht kërkon 2 deri në 6 javë kohë mësimi dhe përsëritje krijuese."
         },
         {
           "id": "ads-9",
-          "question": "A krijoni edhe kreativa reklamash?",
-          "answer": "po. Ne krijojmë kopje, pamje vizuale dhe variante testimi. Dizajni dhe krijimi i mediave mund të përfshihen në mënyrë që fushatat të mos presin kreativitet."
+          "question": "A bëni edhe ju reklama kreative?",
+          "answer": "po. Ne krijojmë kopje, pamje vizuale dhe variante testimi. Mund të përfshijmë dizajnin dhe krijimin e mediave, në mënyrë që fushatat të mos kenë nevojë të presin për kreativë."
         },
         {
           "id": "ads-10",
           "question": "A munden reklamat dhe SEO të përforcojnë njëra-tjetrën?",
-          "answer": "Absolutisht. Kërkoni të dhëna nga burimet e reklamave SEO; faqet e forta organike ulin CPA dhe rrisin Rezultatin e Cilësisë."
+          "answer": "Absolute. Të dhënat e kërkimit nga reklamat nxisin SEO; faqet e forta organike reduktojnë CPA dhe rrisin Rezultatin e Cilësisë."
         },
         {
           "id": "ads-11",
@@ -285,12 +395,32 @@
         {
           "id": "ads-12",
           "question": "Si të parandaloni shpenzimin e buxhetit të reklamave?",
-          "answer": "Ne parandalojmë humbjet me fjalë kyçe negative, përjashtime të audiencës, kufizime buxhetore, gjeografike, kontrollin e frekuencës dhe ndalimin e shpejtë të performuesve të dobët."
+          "answer": "Ne parandalojmë humbjet me fjalë kyçe negative, përjashtime të audiencës, kufizime buxhetore, gjeografike, kontroll të frekuencës dhe ndalim të shpejtë të performuesve të dobët."
         },
         {
           "id": "ads-13",
           "question": "A është ende i rëndësishëm marketingu i ri?",
-          "answer": "Po, kur është në përputhje me privatësinë dhe shoqërohet me kreativa dhe oferta të forta. Shpesh mbetet shtresa më efikase në gyp."
+          "answer": "Po, me kusht që të jetë në përputhje me privatësinë dhe me kreativa dhe oferta të forta. Shpesh mbetet shtresa më efikase në gyp."
+        },
+        {
+          "id": "ads-14",
+          "question": "A ndihmoni me modalitetin e pëlqimit dhe banderolat e kukive për reklama?",
+          "answer": "po. Pa pëlqimin dhe etiketimin e duhur, matja e reklamave nuk është e besueshme. Ne lidhim mjeshtërisht banderolat, GTM/GA4 dhe pikselët. Lexo më shumë: [Modaliteti i pëlqimit](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Baneri i cookie WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "ads-15",
+          "question": "A mund të ndërtoni faqe uljeje për fushata?",
+          "answer": "Po – faqet e shpejta të uljes ose faqet e WordPress të përshtatura për qëllimin e kërkimit, me gjurmimin dhe bazat CRO. Lexo më shumë: [Shërbimet](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "ads-16",
+          "question": "Si të parandaloni shpenzimin e buxhetit të reklamave?",
+          "answer": "Struktura e ngushtë e llogarisë, fjalë kyçe negative, përjashtimet e audiencës, përshtatja e faqes së uljes dhe optimizimi javor në CPA/ROAS - jo vetëm klikimet."
+        },
+        {
+          "id": "ads-17",
+          "question": "A funksionojnë mirë reklamat me AEO/SEO?",
+          "answer": "po. Reklamat ofrojnë të dhëna dhe trafik të shpejtë; SEO/AEO ndërtojnë shikueshmëri të qëndrueshme. Vështrime nga fjalët kyçe dhe kreativat ushqejnë përmbajtjen dhe faqet e uljes. Lexo më shumë: [AEO, GEO dhe SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
         }
       ]
     },
@@ -300,23 +430,23 @@
       "items": [
         {
           "id": "des-1",
-          "question": "Cilat shërbime dizajni ofroni?",
-          "answer": "Ne ofrojmë logo, identitet të markës, kartëvizita, letra me letra, fletushka, postera, ngjitëse, revista ose broshura dhe pamje dixhitale."
+          "question": "Çfarë shërbimesh dizajni ofroni?",
+          "answer": "Ne ofrojmë logot, identitetin e markës, kartëvizitat, shkrimi, fletushka, postera, ngjitëse, revista ose broshura dhe pamje dixhitale."
         },
         {
           "id": "des-2",
-          "question": "Në cilat mjete punoni?",
-          "answer": "Ne punojmë në Adobe Photoshop, Illustrator dhe InDesign në mënyrë që skedarët të jenë të gatshëm për printim dhe të këmbyeshëm profesionalisht."
+          "question": "Në çfarë mjetesh punoni?",
+          "answer": "Ne punojmë në Adobe Photoshop, Illustrator dhe InDesign, në mënyrë që skedarët të jenë të gatshëm për printer dhe të këmbyeshëm profesionalisht."
         },
         {
           "id": "des-3",
-          "question": "A dorëzoni skedarë të gatshëm për printim?",
-          "answer": "po. Ne ofrojmë CMYK, gjakderdhje, shenja të prerjes dhe eksportin e duhur PDF/X aty ku nevojitet, plus variante ekrani për përdorim dixhital."
+          "question": "A furnizoni skedarë të gatshëm për printim?",
+          "answer": "po. Ne furnizojmë CMYK, gjakderdhje, shenja të prera dhe eksportimin e saktë PDF/X aty ku është e nevojshme, plus variante ekrani për përdorim dixhital."
         },
         {
           "id": "des-4",
-          "question": "Si funksionon një projekt logo?",
-          "answer": "Një projekt logo fillon nga informimi te konceptet, më pas raundet e reagimeve dhe përfundon me skedarët vektorial përfundimtar (SVG/PDF/AI) dhe udhëzimet bazë."
+          "question": "Si funksionon një proces logoje?",
+          "answer": "Një proces logoje fillon nga informimi te konceptet, më pas raundet e reagimeve dhe përfundon me skedarët vektorial përfundimtar (SVG/PDF/AI) dhe udhëzimet bazë."
         },
         {
           "id": "des-5",
@@ -326,42 +456,62 @@
         {
           "id": "des-6",
           "question": "A bëni edhe shabllone sociale?",
-          "answer": "po. Ne krijojmë shabllone të qëndrueshme për postime, histori dhe reklama në mënyrë që ekipi juaj të mund të publikojë shpejt dhe në mënyrë të dallueshme."
+          "answer": "po. Ne krijojmë modele të qëndrueshme për postime, histori dhe reklama, në mënyrë që ekipi juaj të mund të publikojë shpejt dhe në mënyrë të njohur."
         },
         {
           "id": "des-7",
           "question": "Cili është ndryshimi midis dizajnit dixhital dhe atij të printuar?",
-          "answer": "Printimi ka nevojë për hapësirë ​​ngjyrash, rezolucion dhe margjina të shkurtimit; dixhitali ka nevojë për mprehtësi në ekran dhe kohë të shpejtë të ngarkimit. Ne i dorëzojmë të dyja në mënyrë korrekte, të përshtatura sipas kanalit."
+          "answer": "Printimi kërkon hapësirë ​​ngjyrash, rezolucion dhe margjina prerëse; dixhital kërkon mprehtësi në ekran dhe kohë të shpejtë ngarkimi. Ne i dorëzojmë të dyja në mënyrë korrekte, të përshtatura sipas kanalit."
         },
         {
           "id": "des-8",
-          "question": "A mund të hartoni revista ose broshura?",
+          "question": "A mund të krijoni revista ose broshura?",
           "answer": "po. Ne krijojmë paraqitje me shumë faqe në InDesign me rrjet, stile dhe kontrolle para shtypjes, të gatshme për printim ose shpërndarje dixhitale."
         },
         {
           "id": "des-9",
           "question": "A ndihmoni me printimin?",
-          "answer": "po. Ne dizenjojmë dhe mund të printojmë në sasi të vogla ose të mëdha - nga kartat e biznesit dhe ngjitëset deri te fletushkat, posterat dhe broshurat - me prova dhe koordinim përmes dorëzimit."
+          "answer": "po. Ne projektojmë dhe mund të printojmë në sasi të vogla ose të mëdha - nga kartëvizitat dhe ngjitëset tek fletushkat, posterat dhe broshurat - me prova dhe koordinim deri në dorëzim."
         },
         {
           "id": "des-10",
-          "question": "Sa raunde reagimesh janë përfshirë?",
-          "answer": "Zakonisht përfshihen 2 deri në 3 raunde të strukturuara. Raunde shtesë janë të mundshme me marrëveshje."
+          "question": "Sa raunde reagimesh ka?",
+          "answer": "Zakonisht ka 2 deri në 3 raunde të strukturuara. Raunde shtesë janë të mundshme në konsultim."
         },
         {
           "id": "des-11",
           "question": "A marrim skedarë burimor?",
-          "answer": "Po, brenda dorëzimit të rënë dakord. Kjo mund të jetë AI, PSD ose INDD, ose një paketë eksporti - në varësi të asaj që kemi rënë dakord."
+          "answer": "Po, brenda kohës së dorëzimit të rënë dakord. Kjo mund të jetë AI, PSD ose INDD, ose një paketë eksporti - në varësi të asaj që kemi rënë dakord."
         },
         {
           "id": "des-12",
-          "question": "A mund të funksionojnë së bashku dizajni dhe dizajni i internetit?",
-          "answer": "po. Ne lidhim dizajnin e markës dhe sistemet e ndërfaqes së përdoruesit, në mënyrë që printimi dhe faqja e internetit të formojnë një të tërë."
+          "question": "A mund të funksionojnë dizajni dhe dizajni i uebit së bashku?",
+          "answer": "po. Ne koordinojmë dizajnin e markës dhe sistemet UI në mënyrë që printimi dhe faqja e internetit të formojnë një të tërë."
         },
         {
           "id": "des-13",
-          "question": "Ku mund të mësoj më shumë rreth Dizajnit Dixhital?",
-          "answer": "Më shumë informacion është në /dizajn-grafik dhe nëpërmjet shërbimeve të Dizajnit Dixhital në meny."
+          "question": "Ku mund të gjej më shumë rreth Dizajnit?",
+          "answer": "Më shumë informacion mund të gjeni në /design (të gjitha shërbimet e dizajnit) dhe /graphic-design for Graphic Design."
+        },
+        {
+          "id": "des-14",
+          "question": "A furnizoni gjithashtu sisteme projektimi dhe biblioteka të komponentëve?",
+          "answer": "Po, për markat që duan të shkallëzojnë vazhdimisht: shenjat, komponentët dhe dokumentacioni në mënyrë që marketingu dhe produkti të flasin të njëjtën gjuhë."
+        },
+        {
+          "id": "des-15",
+          "question": "A mund ta dixhitalizoni stilin ekzistues të markës?",
+          "answer": "po. Ne i përkthejmë udhëzimet e printuara ose jo të plota të markës në ngjyra të gatshme për ueb, tipografi, komplet UI dhe shabllone."
+        },
+        {
+          "id": "des-16",
+          "question": "A bëni kërkime UX apo thjesht dizajn vizual?",
+          "answer": "te dyja. Aty ku është e nevojshme, fillojmë me intervista, analiza gypash ose harta të nxehtësisë; pastaj UI. Në këtë mënyrë ne dizajnojmë bazuar në sjellje, jo vetëm në shije."
+        },
+        {
+          "id": "des-17",
+          "question": "A mund të dizajnoni shabllone sociale dhe kreativë reklamash?",
+          "answer": "Po — karuselet, fotografitë, tregimet dhe reklamat që përputhen me objektivat e markës dhe fushatës suaj. Lexo më shumë: [Shërbimet](/diensten)."
         }
       ]
     },
@@ -371,18 +521,18 @@
       "items": [
         {
           "id": "mkt-1",
-          "question": "Cilat shërbime marketingu ofroni?",
+          "question": "Çfarë shërbimesh marketingu ofroni?",
           "answer": "Ne ofrojmë AEO/GEO/SEO, përmbajtje, sociale, reklama, rritje të tregtisë elektronike, listën e produkteve, menaxhimin e komunitetit dhe futjen e të dhënave."
         },
         {
           "id": "mkt-2",
-          "question": "Si të ndërtoni një strategji marketingu?",
-          "answer": "Ne ndërtojmë një strategji rreth qëllimeve, audiencës, pozicionimit, përzierjes së kanaleve, tubacionit të përmbajtjes dhe KPI-ve — praktike dhe të ekzekutueshme, jo vetëm në letër."
+          "question": "Si krijoni një strategji marketingu?",
+          "answer": "Ne ndërtojmë një strategji rreth qëllimeve, audiencës, pozicionimit, përzierjes së kanaleve, tubacionit të përmbajtjes dhe KPI-ve — pragmatike dhe vepruese, jo vetëm në letër."
         },
         {
           "id": "mkt-3",
           "question": "Çfarë është për ju marketingu me gyp të plotë?",
-          "answer": "Gypa e plotë shkon nga ndërgjegjësimi (përmbajtja dhe reklamat) përmes shqyrtimit (rastet dhe SEO) te konvertimi (faqet e uljes dhe CRM) dhe më pas mbajtja, kështu që çdo fazë ka një rol të qartë."
+          "answer": "Funeli i plotë shkon nga ndërgjegjësimi (përmbajtja dhe reklamat) përmes shqyrtimit (rastet dhe SEO) deri te konvertimi (faqet e uljes dhe CRM) dhe më pas ruajtja, në mënyrë që çdo fazë të ketë një rol të qartë."
         },
         {
           "id": "mkt-4",
@@ -392,7 +542,7 @@
         {
           "id": "mkt-5",
           "question": "A mund të jepni shkrimin e përmbajtjes?",
-          "answer": "po. Ne shkruajmë bloge, kopje të uebsajteve, gazeta, faqe uljeje dhe kopje të shitjeve – të fokusuara në SEO dhe në konvertim."
+          "answer": "po. Ne shkruajmë bloge, kopje të uebsajteve, gazeta, faqe uljeje dhe kopje të shitjeve - SEO dhe të orientuara drejt konvertimit."
         },
         {
           "id": "mkt-6",
@@ -407,17 +557,17 @@
         {
           "id": "mkt-8",
           "question": "Si i raportoni rezultatet e marketingut?",
-          "answer": "Ne raportojmë përmes tabelave ose raporteve me trafikun, drejtimet, shitjet, CPA/ROAS dhe mësimet për kanal, duke përfshirë atë që bëjmë më pas."
+          "answer": "Ne raportojmë nëpërmjet tabelave ose raporteve me trafikun, drejtimet, shitjet, CPA/ROAS dhe mësimet për kanal, duke përfshirë atë që bëjmë më pas."
         },
         {
           "id": "mkt-9",
           "question": "A punoni me ekipin tonë të marketingut të brendshëm?",
-          "answer": "po. Ne mund të ekzekutojmë, sparojmë ose marrim përsipër një pjesë të specializuar, për shembull vetëm SEO ose vetëm reklama."
+          "answer": "po. Ne mund të zbatojmë, sparring ose marrim përsipër një pjesë të specializuar, për shembull vetëm SEO ose vetëm reklama."
         },
         {
           "id": "mkt-10",
-          "question": "Sa shpejt i nisni fushatat?",
-          "answer": "Pas gjurmimit dhe konfigurimit, fushatat shpesh dalin drejtpërdrejt brenda 1 deri në 2 javë. Puna e përmbajtjes shkon paralelisht, kështu që krijuesit dhe faqet janë gati në kohë."
+          "question": "Sa shpejt fillojnë fushatat tuaja?",
+          "answer": "Pas gjurmimit dhe konfigurimit, fushatat shpesh dalin drejtpërdrejt brenda 1 deri në 2 javë. Proceset e përmbajtjes zhvillohen paralelisht me këtë, në mënyrë që krijuesit dhe faqet të jenë gati në kohë."
         },
         {
           "id": "mkt-11",
@@ -427,12 +577,32 @@
         {
           "id": "mkt-12",
           "question": "A është marketing një kontratë mujore?",
-          "answer": "Mbajtësit janë të zakonshëm për rritjen e vazhdueshme. Projekte të tilla si auditimi, ridizajnimi ose lançimi mund të jenë një herë."
+          "answer": "Mbajtësit janë të zakonshëm për rritjen e vazhdueshme. Projekte të tilla si auditimi, ridizajnimi ose nisja mund të bëhen një herë."
         },
         {
           "id": "mkt-13",
           "question": "Si të parandaloni \"marketingun e zënë\" pa rezultate?",
-          "answer": "Çdo aktivitet është i lidhur me KPI. Taktikat me performancë të dobët ndalohen ose përmirësohen me të dhëna, kështu që buxheti shkon në atë që funksionon."
+          "answer": "Çdo aktivitet është i lidhur me KPI. Ne ndalojmë kryerjen e dobët të taktikave ose i përmirësojmë ato me të dhëna, në mënyrë që buxheti të shkojë në atë që funksionon."
+        },
+        {
+          "id": "mkt-14",
+          "question": "Çfarë përfshihet zakonisht në një mbajtës marketingu?",
+          "answer": "Një përzierje e strategjisë, përmbajtjes ose SEO, fushatave, raportimeve dhe eksperimenteve – të përshtatura për KPI. Ne regjistrojmë qëllimin dhe orët në mënyrë që prioritetet të mbeten të qarta. Lexo më shumë: [Shop](/shop) · [Kontakt](/contact)."
+        },
+        {
+          "id": "mkt-15",
+          "question": "A ndihmoni me pozicionimin dhe mesazhet?",
+          "answer": "po. Pozicionimi i qartë, mbështetësit me vlerë dhe kopjimi i faqes sigurojnë që reklamat, SEO dhe shitjet të përcjellin të njëjtin mesazh."
+        },
+        {
+          "id": "mkt-16",
+          "question": "A e matni marketingun me tubacion, jo vetëm trafikun?",
+          "answer": "Ku është e mundur: drejtime, SQL, të ardhura ose konvertime të asistuara. Ne rregullojmë ose ndalojmë trafikun pa cilësi."
+        },
+        {
+          "id": "mkt-17",
+          "question": "A mund të pastroni grumbullin dhe gjurmimin e marketingut?",
+          "answer": "Po — GTM, GA4, piksele, lidhje CRM dhe pëlqimi. Të dhënat e pastra janë baza për vendime të mira. Lexo më shumë: [Modaliteti i pëlqimit](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen)."
         }
       ]
     },
@@ -448,12 +618,12 @@
         {
           "id": "soc-2",
           "question": "Çfarë përfshihet në menaxhimin e mediave sociale?",
-          "answer": "Menaxhimi i mediave sociale mbulon strategjinë, kalendarin e përmbajtjes, krijimin dhe planifikimin, përgjigjet e komunitetit, raportimin dhe optimizimin e vazhdueshëm."
+          "answer": "Menaxhimi i mediave sociale përfshin strategjinë, kalendarin e përmbajtjes, krijimin dhe planifikimin, përgjigjet e komunitetit, raportimin dhe optimizimin e vazhdueshëm."
         },
         {
           "id": "soc-3",
-          "question": "A krijoni edhe pamjet dhe videot?",
-          "answer": "Po, nëpërmjet krijimit të mediave: fotografi, karusele, video me formë të shkurtër dhe shabllone."
+          "question": "A bëni edhe pamjet dhe videot?",
+          "answer": "Po, nëpërmjet krijimit të mediave: imazhe statike, karusele, video me formë të shkurtër dhe shabllone."
         },
         {
           "id": "soc-4",
@@ -463,47 +633,194 @@
         {
           "id": "soc-5",
           "question": "A ndihmoni me menaxhimin e komunitetit?",
-          "answer": "po. Ne trajtojmë moderimin, përgjigjet, DM-të dhe kujdesin për reputacionin sipas tonit të rënë dakord të zërit."
+          "answer": "po. Ne bëjmë moderim, përgjigje, DM dhe kujdes për reputacionin sipas tonit të rënë dakord të zërit."
         },
         {
           "id": "soc-6",
           "question": "A mund të kombinohen social dhe reklamat?",
-          "answer": "po. Përmbajtja organike ushqen krijimet e reklamave; reklamat shkallëzojnë atë që funksionon në mënyrë organike."
+          "answer": "po. Përmbajtja organike nxit kreativitetin e reklamave; reklamat shkallëzojnë atë që rezonon organikisht."
         },
         {
           "id": "soc-7",
           "question": "Si e matni suksesin social?",
-          "answer": "Ne matim shtrirjen, angazhimin, klikim-out, drejtimet dhe konvertimet e asistuara - jo vetëm pëlqimet. Kjo tregon se çfarë vërtet kontribuon në rritje."
+          "answer": "Ne matim shtrirjen, angazhimin, klikimet, drejtimet dhe konvertimet e asistuara - jo vetëm pëlqimet. Në këtë mënyrë ne shohim se çfarë vërtet kontribuon në rritje."
         },
         {
           "id": "soc-8",
           "question": "A punoni me ndikues?",
-          "answer": "Sipas kërkesës: përzgjedhja, informimi dhe gjurmimi. Ne fokusohemi në rezultate të përshtatshme dhe të matshme, jo të arrijmë vetëm."
+          "answer": "Sipas kërkesës: përzgjedhja, informimi dhe gjurmimi. Ne fokusohemi në rezultate të përshtatshme dhe të matshme, jo vetëm në arritjen."
         },
         {
           "id": "soc-9",
           "question": "A mund të mbështesni komunikimin në krizë?",
-          "answer": "po. Ne përdorim protokolle të reagimit të shpejtë dhe lidhemi me ekipin tuaj, në mënyrë që përgjigjet të qëndrojnë të qëndrueshme dhe nën kontroll."
+          "answer": "po. Ne punojmë me protokollet e reagimit të shpejtë dhe koordinohemi me ekipin tuaj në mënyrë që përgjigjet të mbeten të qëndrueshme dhe nën kontroll."
         },
         {
           "id": "soc-10",
-          "question": "A ndihmoni me LinkedIn për udhëheqjen e mendimit B2B?",
-          "answer": "po. Ne krijojmë përmbajtje personale dhe të kompanisë, karusele, raste dhe mbrojtje të punonjësve në mënyrë që ekspertiza të bëhet e dukshme."
+          "question": "A e ndihmoni LinkedIn për udhëheqjen e mendimit B2B?",
+          "answer": "po. Ne krijojmë përmbajtje personale dhe të kompanisë, karusele, raste dhe advokim të punonjësve, në mënyrë që ekspertiza të bëhet e dukshme."
         },
         {
           "id": "soc-11",
-          "question": "A jepni një kalendar me përmbajtje?",
-          "answer": "po. Ne ofrojmë një plan mujor ose tremujor me tema, formate dhe afate."
+          "question": "A ofroni një kalendar me përmbajtje?",
+          "answer": "po. Ne ofrojmë një planifikim mujor ose tremujor me tema, formate dhe afate."
         },
         {
           "id": "soc-12",
           "question": "Po sikur të kemi tashmë një menaxher social?",
-          "answer": "Më pas ne mund të specializojmë në kreativitete, reklama ose strategji, ose të mbështesim periudhat e pikut pa zëvendësuar ekipin ekzistues."
+          "answer": "Më pas mund të specializohemi në kreativitete, reklama ose strategji, ose të mbështesim periudhat e pikut pa zëvendësuar ekipin ekzistues."
         },
         {
           "id": "soc-13",
-          "question": "Sa shpejt do të shohim rritje në social?",
-          "answer": "Konsistenca ka rëndësi. Rritja e konsiderueshme zakonisht zgjat me javë deri në muaj; me mbështetjen e reklamave shpesh shkon më shpejt."
+          "question": "Sa shpejt shohim rritje në social?",
+          "answer": "Konsistenca ka rëndësi. Rritja e konsiderueshme zakonisht zgjat me javë deri në muaj; me mbështetjen e reklamave shpesh është më i shpejtë."
+        },
+        {
+          "id": "soc-14",
+          "question": "A ndihmoni me prova dhe rishikime sociale?",
+          "answer": "po. Ne planifikojmë kërkesa për rishikim, raste dhe formate të ngjashme me UGC që krijojnë besim - pa angazhim të rremë."
+        },
+        {
+          "id": "soc-15",
+          "question": "A mund të krijoni avokatinë e punonjësve?",
+          "answer": "Po, veçanërisht në LinkedIn: udhëzime të thjeshta, shabllone dhe një ritëm në mënyrë që ekipi të ndajë dukshëm ekspertizën."
+        },
+        {
+          "id": "soc-16",
+          "question": "Si e lidhni socialin me faqen e internetit dhe blerjen?",
+          "answer": "Nëpërmjet UTM-ve, faqeve të uljes, lidhjeve të produktit dhe ri-targetimit. Social është një kanal në hinkë, jo një ishull. Lexo më shumë: [Shop](/shop)."
+        }
+      ]
+    },
+    {
+      "id": "account-portaal",
+      "title": "Llogaria dhe portali",
+      "items": [
+        {
+          "id": "acc-1",
+          "question": "Si mund të identifikohem në portalin e klientit?",
+          "answer": "Shkoni te llogaria/identifikimi dhe përdorni adresën e emailit të llogarisë tuaj të klientit. Nëse keni humbur të dhëna, përdorni rivendosjen e fjalëkalimit ose na kontaktoni. Lexo më shumë: [Llogari](/dashboard) · [Humb identifikimi](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-2",
+          "question": "Çfarë shoh në panelin tim?",
+          "answer": "Në varësi të shërbimeve tuaja: biletat, projektet, faturat, skanimi/agjentët e AI dhe lidhjet e shpejta për mbështetje. Lexo më shumë: [Agjentët AI në llogari](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account) · [Krijoni biletën](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "acc-3",
+          "question": "Kam humbur detajet e mia të hyrjes - çfarë tani?",
+          "answer": "Përdorni \"harrove fjalëkalimin\" ose ndiqni hapat e bazës së njohurive për panelin e klientit. Nëse kjo nuk funksionon, hapni një biletë përmes një adrese të njohur kontakti. Lexo më shumë: [Humbën detajet e hyrjes](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-4",
+          "question": "Si mund të hap një biletë nga portali?",
+          "answer": "Në panelin e klientit, zgjidhni mbështetjen/biletat, përshkruani problemin tuaj dhe shtoni prova (URL, pamjet e ekranit). Lexo më shumë: [Krijo biletë](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Bileta përmes panelit](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "acc-5",
+          "question": "Ku mund t'i gjej faturat e mia?",
+          "answer": "Ju mund të shikoni dhe shkarkoni faturat në portal nën faturim/faturim. Lexo më shumë: [Konsulto faturat](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "acc-6",
+          "question": "Si mund ta ndryshoj informacionin e faturimit ose mënyrën e pagesës?",
+          "answer": "Rregulloni emrin e kompanisë, numrin e TVSH-së dhe mënyrën e pagesës në cilësimet e llogarisë tuaj në mënyrë që faturat e reja të jenë të sakta. Lexo më shumë: [Ndrysho detajet e faturës](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "acc-7",
+          "question": "A mund të kenë akses edhe kolegët?",
+          "answer": "Po, me role të llogarisë (klient, menaxher, administrator) kështu që anëtarë të shumtë të ekipit mund të gjurmojnë biletat ose projektet pa ndarë gjithçka."
+        },
+        {
+          "id": "acc-8",
+          "question": "A janë të lidhur skanimi i AI dhe agjentët e AI me llogarinë time?",
+          "answer": "po. Skanimet dhe agjentët i përkasin llogarisë tuaj të klientit në mënyrë që historia dhe të drejtat të ruhen. Lexo më shumë: [Agjentët AI](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [AI skanim](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "acc-9",
+          "question": "Sa e sigurt është llogaria ime e klientit?",
+          "answer": "Përdorni fjalëkalime unike dhe 2FA aty ku janë të disponueshme (përfshirë në panelet pritëse). Mos i ndani sesionet në kompjuterë të përbashkët. Lexo më shumë: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
+        },
+        {
+          "id": "acc-10",
+          "question": "A mund të gjurmoj statusin e projektit dhe rezultatet?",
+          "answer": "Aty ku projektet janë të listuara në portal, mund të shihni statusin dhe komunikimin. Përndryshe, ne do t'ju mbajmë të informuar nëpërmjet përditësimeve të biletave ose sprintit."
+        },
+        {
+          "id": "acc-11",
+          "question": "Si t'i lidh shërbimet nga dyqani me llogarinë time?",
+          "answer": "Pas përfundimit të blerjes, porositë i përkasin llogarisë tuaj; provizionimi (hosting, domain) vijon automatikisht ose nëpërmjet inboarding nga mbështetja. Lexo më shumë: [Shop](/shop)."
+        },
+        {
+          "id": "acc-12",
+          "question": "Ku mund t'i vendos njoftimet ose preferencat?",
+          "answer": "Në cilësimet e llogarisë, ju menaxhoni profilin dhe preferencat e njoftimit, ku janë të disponueshme. Për emailet e faturës, mbajeni adresën tuaj të emailit aktuale."
+        }
+      ]
+    },
+    {
+      "id": "shop-bestellen",
+      "title": "Blini dhe porositni",
+      "items": [
+        {
+          "id": "shop-1",
+          "question": "Çfarë mund të porosis në dyqan?",
+          "answer": "Paketat e pritjes, domenet, produktet e kujdesit/mbështetjes dhe shërbime të tjera që ne ofrojmë në internet. Kuotat e personalizuara bëhen përmes kontaktit. Lexo më shumë: [Shop](/shop) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "shop-2",
+          "question": "Si funksionon karroca dhe arka?",
+          "answer": "Shto produkte, periudhën e kontrollit (muaj/vit) dhe plotëso përmes arkës. Më pas do të merrni konfirmimin dhe aksesin në llogarinë tuaj. Lexo më shumë: [Shporta](/shop/cart)."
+        },
+        {
+          "id": "shop-3",
+          "question": "A janë çmimet përfshirë apo përjashtojnë TVSH-në?",
+          "answer": "Në dyqan ne tregojmë çmimet sipas kontekstit të TVSH-së të treguar (shpesh duke përfshirë flukset e konsumatorit). Fatura përmban një ndarje të TVSH-së neto për klientët e biznesit."
+        },
+        {
+          "id": "shop-4",
+          "question": "A mund të paguaj mujore apo vjetore?",
+          "answer": "Shumë produkte pritjeje dhe kujdesi kanë opsione mujore dhe vjetore. Çdo vit është shpesh më i lirë; detajet janë për kartën e produktit."
+        },
+        {
+          "id": "shop-5",
+          "question": "Cilat mënyra pagese pranoni?",
+          "answer": "Metodat e zakonshme në internet nëpërmjet arkës (në varësi të rajonit). Për faturat e ndërmarrjes ne mund të organizojmë faturimin në llogari nëpërmjet kontaktit."
+        },
+        {
+          "id": "shop-6",
+          "question": "A kam akses të menjëhershëm pas pagesës?",
+          "answer": "Për produktet standarde të pritjes / domenit, sigurimi pason shpejt pas pagesës së suksesshme. Për shërbimet me porosi, mbështetja planifikon fillimin."
+        },
+        {
+          "id": "shop-7",
+          "question": "A mund t'i përmirësoj paketat më vonë?",
+          "answer": "po. Nga e përbashkëta në cloud/VPS ose nga Basic në Plus/Business është e mundur me planifikimin e migrimit. Lexo më shumë: [Shpërndarë në VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [Zgjidh paketën](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "shop-8",
+          "question": "Si t'i kombinoj produktet e dyqanit me personalizimin?",
+          "answer": "Porositni hosting/kujdes në internet dhe planifikoni dizajn, SEO ose reklama përmes marrjes. Ne grumbullojmë faturimin dhe llogarinë ku është e mundur. Lexo më shumë: [Kontakt](/contact)."
+        },
+        {
+          "id": "shop-9",
+          "question": "Po nëse porosia ime nuk mbërrin ose ngec?",
+          "answer": "Kontrolloni emailin tuaj (përfshirë spam-in) dhe portalin. Nëse mbetet e heshtur, hapni një biletë ose email mbështetje me numrin e porosisë. Lexo më shumë: [Kontakt](/contact) · [Biletat](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "shop-10",
+          "question": "A mund të porosis një domen dhe host me një porosi?",
+          "answer": "Po, kjo është rrjedha e zakonshme: domen + hosting në karrocën e blerjeve, pastaj lidhje DNS. Lexo më shumë: [Domains](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "shop-11",
+          "question": "A ka paketa për Kujdesin për WordPress?",
+          "answer": "po. Paketat e kujdesit mbulojnë përditësimet, monitorimin dhe mirëmbajtjen – veçmas ose përveç pritjes. Lexo më shumë: [Shop](/shop)."
+        },
+        {
+          "id": "shop-12",
+          "question": "Si mund të anuloj ose ndryshoj një porosi?",
+          "answer": "Menjëherë pas porosisë përmes mbështetjes; Pas kësaj, kushtet e anulimit dhe ndryshimit zbatohen për produkt. Ne ndihmojmë migrimin ose eksportin nëse ndaloni. Lexo më shumë: [Kontakt](/contact)."
         }
       ]
     },
@@ -514,51 +831,51 @@
         {
           "id": "sup-1",
           "question": "Çfarë mbështetje ofroni?",
-          "answer": "Ne ofrojmë mbështetje për WordPress, mbështetje me porosi të faqes në internet, bileta dhe biseda të drejtpërdrejta, mirëmbajtje, siguri, performancë dhe reagim ndaj incidenteve."
+          "answer": "Ne ofrojmë menaxhim të WordPress, mbështetje me porosi të faqes në internet, bileta dhe biseda të drejtpërdrejta, mirëmbajtje, siguri, performancë dhe reagim ndaj incidenteve. Lexo më shumë: [Kontakto mbështetjen](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting) · [Bisedë, biletë ose telefono takim](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
         },
         {
           "id": "sup-2",
           "question": "Si mund të arrij mbështetje?",
-          "answer": "Përmes kontaktit, një takimi, biletave në panelin e kontrollit ose bisedës së drejtpërdrejtë në sit. Rastet urgjente janë shënuar si prioritet."
+          "answer": "Përmes kontaktit, një takimi, biletave në panelin e kontrollit ose bisedës së drejtpërdrejtë në sit. Ne i shënojmë si prioritet rastet emergjente. Lexo më shumë: [Kontakt](/contact) · [Krijo biletë](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Telefono takim](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)."
         },
         {
           "id": "sup-3",
           "question": "Sa është koha juaj e përgjigjes?",
-          "answer": "Ne synojmë për një përgjigje të shpejtë të parë, shpesh brenda një dite pune. Për ndërprerjet kritike ne përgjigjemi më shpejt. SLA-të e sakta janë në paketat mbështetëse."
+          "answer": "Ne synojmë një përgjigje të shpejtë fillestare, shpesh brenda një dite pune. Ne reagojmë më shpejt në kohë joproduktive kritike. SLA-të e sakta janë deklaruar në paketat mbështetëse."
         },
         {
           "id": "sup-4",
           "question": "A ofroni monitorim 24/7?",
-          "answer": "Po, në paketat përkatëse të mbështetjes dhe pritjes: monitorim, kopje rezervë dhe sinjalizime në mënyrë që problemet të bëhen të dukshme më herët."
+          "answer": "Po, në paketat përkatëse të mbështetjes dhe pritjes: monitorim, kopje rezervë dhe alarme, në mënyrë që problemet të jenë të dukshme më herët. Lexo më shumë: [Rezervimet e kohës së ndërprerjes](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup)."
         },
         {
           "id": "sup-5",
           "question": "Mund të hiqni malware?",
-          "answer": "Po — në WordPress si dhe në rafte të personalizuara — duke përfshirë forcimin dhe kujdesin e mëvonshëm, në mënyrë që faqja të kthehet e pastër dhe e mbrojtur më mirë."
+          "answer": "Po – si në WordPress ashtu edhe në pirgje të personalizuara – duke përfshirë forcimin dhe kujdesin pasues, në mënyrë që faqja të kthehet e pastër dhe e mbrojtur më mirë."
         },
         {
           "id": "sup-6",
-          "question": "A trajtoni përditësimet e WordPress për ne?",
-          "answer": "Po, nëpërmjet \"Mirëmbajtja dhe përditësimet\": bërthama, shtojcat dhe temat, me kopje rezervë dhe kontrolle përpara dhe pas përditësimit."
+          "question": "A bëni përditësime të WordPress për ne?",
+          "answer": "Po, nëpërmjet \"Mirëmbajtja dhe përditësimet\": bërthama, shtojcat dhe temat, me kopje rezervë dhe kontrolle përpara dhe pas përditësimit. Lexo më shumë: [Vendosuni pas përditësimit të WP](/kennisbank/hosting/website-down-na-update-wordpress)."
         },
         {
           "id": "sup-7",
           "question": "A ndihmoni me problemet e pritjes?",
-          "answer": "po. Ne diagnostikojmë, migrojmë ose optimizojmë hostin, VPS dhe domenet derisa faqja të funksionojë përsëri në mënyrë të qëndrueshme."
+          "answer": "po. Ne diagnostikojmë, migrojmë ose optimizojmë hostin, VPS dhe domenet derisa faqja të funksionojë përsëri e qëndrueshme. Lexo më shumë: [Lëviz faqen e internetit ose email-in](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je)."
         },
         {
           "id": "sup-8",
           "question": "Po sikur faqja ime të mos funksionojë?",
-          "answer": "Raportojeni si urgjente. Ne rivendosim aty ku është e mundur nëpërmjet kopjeve rezervë, kontrolleve të serverit dhe një rregullimi të drejtpërdrejtë dhe ju mbajmë të përditësuar për statusin gjatë rrugës."
+          "answer": "Raportojeni si emergjencë. Ne rivendosim aty ku është e mundur nëpërmjet kopjeve rezervë, kontrolleve të serverit dhe një rregullimi të drejtpërdrejtë dhe ndërkohë ju mbajmë të informuar për statusin. Lexo më shumë: [Rezervime](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [Kontrollojeni veten përpara mbështetjes](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support)."
         },
         {
           "id": "sup-9",
-          "question": "A ka një portal klienti?",
-          "answer": "po. Klientët e regjistruar shohin panelin e kontrollit, biletat, projektet dhe sipas rastit CRM ose faturat."
+          "question": "A ka një portal klientësh?",
+          "answer": "po. Klientët e regjistruar shohin panelin e kontrollit, biletat, projektet dhe aty ku janë relevante CRM ose faturat. Lexo më shumë: [Bileta nëpërmjet panelit të klientit](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel) · [Ke humbur identifikimin?](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
         },
         {
           "id": "sup-10",
-          "question": "A mund të hapin bileta shumë shokë skuadre?",
+          "question": "A mund të hapin bileta disa anëtarë të ekipit?",
           "answer": "Po, në varësi të roleve të llogarisë (klient, menaxher ose administrator)."
         },
         {
@@ -569,23 +886,73 @@
         {
           "id": "sup-12",
           "question": "A ndihmoni edhe me pyetje jo teknike?",
-          "answer": "Po, për shërbimet, faturimin dhe llogarinë. Sa thellë shkojmë teknikisht varet nga paketa juaj."
+          "answer": "Po, për shërbimet, faturimin dhe llogarinë. Sa larg shkojmë teknikisht varet nga paketa juaj."
         },
         {
           "id": "sup-13",
           "question": "A mund ta përmirësoj mbështetjen më vonë?",
-          "answer": "po. Ju mund të rriteni kur rriten nevojat e trafikut, rrezikut ose ekipit."
+          "answer": "po. Ju mund të rriteni me rritjen e trafikut, rrezikut ose nevojave të ekipit."
+        },
+        {
+          "id": "sup-14",
+          "question": "Cili është ndryshimi midis bisedës, biletës dhe takimit të telefonatës?",
+          "answer": "Biseda është e shpejtë për pyetje të shkurtra; biletat janë më të mira për rastet teknike me regjistra dhe ndjekje; një takim telefonik është i përshtatshëm për një pranim ose shpjegim kompleks. Lexo më shumë: [Chat kundrejt biletës kundrejt takimit të telefonatës](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "sup-15",
+          "question": "Si mund të krijoj një biletë mbështetëse?",
+          "answer": "Hyni në panelin e klientit dhe hapni një biletë me URL të qartë, hapa dhe pamje nga ekrani. Sa më i mirë të jetë informacioni, aq më shpejt mund të ndihmojmë. Lexo më shumë: [Krijo biletë](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Bileta përmes panelit](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "sup-16",
+          "question": "A keni kopje rezervë nëse faqja ime prishet?",
+          "answer": "Po, në varësi të paketës suaj të pritjes ose mbështetjes. Në rast ndërprerjeje, ne restaurojmë nga kopjet rezervë aty ku është e mundur dhe hetojmë shkakun. Lexo më shumë: [Rezervimet për kohën e ndërprerjes](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor)."
+        },
+        {
+          "id": "sup-17",
+          "question": "Çfarë mund të kontrolloj veten përpara se të telefonoj mbështetjen?",
+          "answer": "Kontrolloni faqen e statusit, përhapjen e DNS, përditësimet e fundit, hapësirën në disk dhe nëse gabimi është i riprodhueshëm. Kjo përshpejton diagnozën. Lexo më shumë: [Bëje vetë përpara mbështetjes](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support) · [Statuspage](/statuspage)."
+        },
+        {
+          "id": "sup-18",
+          "question": "Si funksionon biseda live në sit?",
+          "answer": "Hapni bisedën e drejtpërdrejtë përmes butonit të bisedës. Agjenti 000 ndihmon fillimisht me FAQ/bazën e njohurive; Për çështje më komplekse ose urgjente, ju drejtojmë te një punonjës. Lexo më shumë: [Asistent Dixhital](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Kontakt](/contact)."
+        },
+        {
+          "id": "sup-19",
+          "question": "A mund të ndihmoni me një gabim kritik të WordPress?",
+          "answer": "po. Ne diagnostikojmë ekranet e bardha, gabimet kritike PHP dhe konfliktet e shtojcave, me kopje rezervë dhe rregullime të synuara. Lexo më shumë: [Gabim kritik WordPress](/kennisbank/wordpress/kritieke-fout-wordpress) · [Poshtë pas përditësimit](/kennisbank/hosting/website-down-na-update-wordpress)."
+        },
+        {
+          "id": "sup-20",
+          "question": "A mund të shikoni në distancë (TeamViewer, etj.)?",
+          "answer": "Kur është e nevojshme dhe me leje, për problemet e desktopit ose panelit. Për shumicën e çështjeve të pritjes, qasja në panel, DNS ose WordPress është e mjaftueshme. Lexo më shumë: [Kontakto mbështetjen](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "sup-21",
+          "question": "Si mund të anuloj një abonim ose shërbim?",
+          "answer": "Mund ta anuloni përmes panelit të klientit ose mbështetjes; kushtojini vëmendje periudhave të njoftimit në marrëveshjen tuaj. Ne ju ndihmojmë të plotësoni me kujdes të dhënat/eksportin dhe transferimin DNS. Lexo më shumë: [Kontakt](/contact) · [Llogari](/dashboard)."
+        },
+        {
+          "id": "sup-22",
+          "question": "A ofroni paketa të kujdesit / mirëmbajtjes së WordPress?",
+          "answer": "po. Përditësimet, kopjet rezervë, kontrollet e sigurisë dhe performanca përfshihen në paketat e kujdesit – ideale përveç pritjes. Lexo më shumë: [Shop](/shop) · [Instalo WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren)."
+        },
+        {
+          "id": "sup-23",
+          "question": "Po sikur emaili papritmas të ndalojë së punuari?",
+          "answer": "Kontrolloni DNS (MX/SPF/DKIM/DMARC), kuotat e kutisë postare dhe nëse Microsoft ose ofruesit po bllokojnë postën. Ne ndihmojmë në matjen e zinxhirit. Lexo më shumë: [Probleme me email](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
         }
       ]
     },
     {
       "id": "webdesign",
-      "title": "Dizajni i faqes në internet",
+      "title": "Ueb dizajn",
       "items": [
         {
           "id": "web-1",
           "question": "A ndërtoni vetëm faqe WordPress?",
-          "answer": "Jo. Përveç WordPress-it, ne bëjmë dizajnim me porosi të internetit në HTML/CSS/JS, PHP dhe Next.js — veçmas nga shërbimet e WordPress."
+          "answer": "Jo. Përveç WordPress, ne bëjmë dizajn të personalizuar të uebit në HTML/CSS/JS, PHP dhe Next.js — veçmas nga shërbimet e WordPress. Lexo më shumë: [Instalo WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [Shërbimet](/diensten)."
         },
         {
           "id": "web-2",
@@ -595,7 +962,7 @@
         {
           "id": "web-3",
           "question": "A mund të ridizajnoni një faqe ekzistuese?",
-          "answer": "po. Ne bëjmë një rifreskim UX/UI, përmirësime të konvertimit dhe modernizim teknik, pa hedhur gjithçka nëse nuk është e nevojshme."
+          "answer": "po. Ne bëjmë një rifreskim UX/UI, përmirësim të konvertimit dhe modernizim teknik, pa hedhur gjithçka nëse nuk është e nevojshme."
         },
         {
           "id": "web-4",
@@ -604,38 +971,38 @@
         },
         {
           "id": "web-5",
-          "question": "A ndërtoni edhe aplikacione PHP?",
+          "question": "A bëni edhe aplikacione PHP?",
           "answer": "po. Ne ndërtojmë portale dhe API, modernizojmë trashëgiminë dhe forcojmë performancën dhe sigurinë."
         },
         {
           "id": "web-6",
           "question": "Si i siguroni faqet e internetit për celular?",
-          "answer": "Ne projektojmë së pari celularin, ndërtojmë paraqitje të përgjegjshme dhe testojmë në pajisjet dhe shfletuesit e zakonshëm në mënyrë që faqja të funksionojë kudo."
+          "answer": "Ne dizajnojmë fillimisht celularin, ndërtojmë paraqitje të përgjegjshme dhe testojmë në pajisje dhe shfletues të zakonshëm, në mënyrë që faqja të funksionojë mirë kudo."
         },
         {
           "id": "web-7",
           "question": "A përfshihet aksesueshmëria (a11y)?",
-          "answer": "Ne ndërtojmë me praktika bazë të arritshme. Programet më të rrepta WCAG mund të përfshihen si shtrirje shtesë."
+          "answer": "Ne ndërtojmë me praktika bazë të arritshme. Ne mund të përfshijmë procese më të rrepta WCAG si një fushë shtesë."
         },
         {
           "id": "web-8",
           "question": "A mund të ofroni opsione CMS pa WordPress?",
-          "answer": "po. Ky mund të jetë një CMS pa kokë, administrator i personalizuar ose një konfigurim statik – në varësi të ekipit dhe nevojave tuaja."
+          "answer": "po. Ky mund të jetë një CMS pa kokë, administrator i personalizuar ose një konfigurim statik — në varësi të ekipit dhe dëshirave tuaja."
         },
         {
           "id": "web-9",
-          "question": "Sa kohë zgjat një projekt i dizajnit të internetit?",
-          "answer": "Faqet e uljes zakonisht zgjasin disa javë; sajte ose aplikacione më të mëdha funksionojnë në sprint për disa javë. Planifikimi vijon pas marrjes."
+          "question": "Sa kohë zgjat një proces i projektimit në internet?",
+          "answer": "Faqet e uljes zakonisht zgjasin disa javë; faqet ose aplikacionet më të mëdha funksionojnë në sprint për disa javë. Planifikimi vijon pas marrjes."
         },
         {
           "id": "web-10",
-          "question": "A trajtoni gjithashtu kopjimin dhe SEO në fillim?",
-          "answer": "Po, e kombinuar me përmbajtjen dhe shërbimet e SEO, në mënyrë që faqja të shfaqet menjëherë e kërkueshme dhe e fokusuar në konvertim."
+          "question": "A organizoni gjithashtu kopje dhe SEO në fillim?",
+          "answer": "Po, në kombinim me përmbajtjen dhe shërbimet SEO, në mënyrë që faqja të shfaqet menjëherë në një mënyrë të kërkueshme dhe të orientuar drejt konvertimit."
         },
         {
           "id": "web-11",
           "question": "Po performanca pas nisjes?",
-          "answer": "Ne optimizojmë Core Web Vitals, caching ose CDN dhe monitorimin. Kujdesi i mëpasshëm vazhdon më pas nëpërmjet paketave të mirëmbajtjes."
+          "answer": "Ne optimizojmë Core Web Vitals, caching ose CDN dhe monitorimin. Kujdesi i mëpasshëm kalon përmes paketave të mirëmbajtjes. Lexo më shumë: [Çfarë bën një CDN?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)."
         },
         {
           "id": "web-12",
@@ -649,89 +1016,351 @@
         },
         {
           "id": "web-14",
-          "question": "A ndihmoni me optimizimin e konvertimit në vend?",
-          "answer": "po. Ne kryejmë teste A/B, përmirësime UX, formularë, CTA dhe shpejtësi të faqes në mënyrë që më shumë vizitorë të konvertohen."
+          "question": "A ndihmoni me optimizimin e konvertimit në sit?",
+          "answer": "po. Ne bëjmë testim A/B, përmirësime UX, formularë, CTA dhe shpejtësi të faqes, në mënyrë që më shumë vizitorë të konvertohen."
+        },
+        {
+          "id": "web-15",
+          "question": "A ndërtoni edhe dyqane në internet?",
+          "answer": "Po, nga faqet e marketingut me integrime të arkave deri te tregtia elektronike në WordPress ose personalizimi. Ne koordinojmë qëllimin, pagesat dhe përmbushjen gjatë marrjes. Lexo më shumë: [Shërbimet](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "web-16",
+          "question": "Si i trajtoni tekstet e privatësisë në sajte?",
+          "answer": "Ne këshillojmë dhe zbatojmë flukset e privatësisë dhe pëlqimit për formularët dhe pankartat, të përshtatura për avokatin tuaj aty ku është e nevojshme. Lexo më shumë: [Privatësia me formularë](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren) · [Baneri i biskotave](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "web-17",
+          "question": "A ofroni ambiente për skenë?",
+          "answer": "Po, aty ku është e nevojshme: organizimi për rishikime dhe teste, më pas vendosja e kontrolluar në prodhim."
+        },
+        {
+          "id": "web-18",
+          "question": "A mund të merrni përsipër dhe të përmirësoni një faqe ekzistuese të WordPress?",
+          "answer": "Po — auditim, përditësime, siguri, shpejtësi, UX dhe SEO, pa ndërtuar në mënyrë të panevojshme nga e para. Lexo më shumë: [WP lëviz](/kennisbank/domeinnamen/wordpress-website-verhuizen) · [Gabimet kritike](/kennisbank/wordpress/kritieke-fout-wordpress)."
+        },
+        {
+          "id": "web-19",
+          "question": "Po HTTP në HTTPS pas dorëzimit?",
+          "answer": "Sajtet e paracaktuara janë HTTPS. Gjatë migrimeve ne detyrojmë HTTPS dhe zgjidhim përmbajtje të përzier. Lexo më shumë: [HTTP në HTTPS në WordPress](/kennisbank/wordpress/wordpress-url-omzetten-van-http-naar-https) · [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig)."
+        }
+      ]
+    },
+    {
+      "id": "domeinen",
+      "title": "Domains.",
+      "items": [
+        {
+          "id": "dom-1",
+          "question": "Çfarë është një emër domain?",
+          "answer": "Një emër domaini është adresa që vizitorët përdorin për të gjetur faqen tuaj të internetit (për shembull.com). Ajo lidhet me të dhënat DNS që tregojnë për pritjen ose emailin tuaj. Lexo më shumë: [Domain registration](/kennisbank/domeinnamen/domeinnaamregistratie) · [Order domains](/domeinen)."
+        },
+        {
+          "id": "dom-2",
+          "question": "Si mund të regjistroj një emër domaini me ju?",
+          "answer": "Kërkoni emrin në faqen e domeneve, zgjidhni një shtesë dhe plotësoni arkën në dyqan. Pas regjistrimit ju menaxhoni DNS, serverat e emrave dhe faturat në llogarinë tuaj. Lexo më shumë: [Domains](/domeinen) · [Registration guide](/kennisbank/domeinnamen/domeinnaamregistratie) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-3",
+          "question": "A mund ta transferoj domenin tim tek ju?",
+          "answer": "po. Kërkoni një kod autorizimi (EPP) nga regjistruesi juaj aktual, zhbllokoni çdo bllokim transferimi dhe më pas filloni transferimin me ne. Pas kësaj ne vendosëm saktë DNS dhe serverat e emrave. Lexo më shumë: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Authorisation code](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-4",
+          "question": "Çfarë është një kod autorizimi (kodi EPP/Auth)?",
+          "answer": "Është një kod një herë nga regjistruesi juaj aktual që fillon në mënyrë të sigurt një transferim domeni. Pa një kod të vlefshëm transferimi nuk mund të vazhdojë. Lexo më shumë: [What is an authorisation code?](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen)."
+        },
+        {
+          "id": "dom-5",
+          "question": "Çfarë është bllokimi i transferimit ose bllokimi i regjistruesit?",
+          "answer": "Një bllokim parandalon transferimet e padëshiruara. Për një lëvizje, shpesh duhet ta çaktivizoni atë te ofruesi aktual, më pas të filloni transferimin me ne. Lexo më shumë: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Support](/contact)."
+        },
+        {
+          "id": "dom-6",
+          "question": "A mund të blej një domen pa host?",
+          "answer": "po. Mund të regjistroheni ose të transferoni vetëm një domen dhe të shtoni hosting ose email më vonë. Tashmë mund të menaxhosh ose të përcjellësh DNS-në ndërkohë. Lexo më shumë: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-7",
+          "question": "Cilat shtesa (.nl, .com, …) mund të regjistrohem?",
+          "answer": "Ne mbështesim TLD-të e zakonshme si .nl dhe .com plus shumë shtesa ndërkombëtare. Disponueshmëria dhe çmimi shfaqen menjëherë në kërkimin e domenit. Lexo më shumë: [Domains](/domeinen) · [Registration](/kennisbank/domeinnamen/domeinnaamregistratie)."
+        },
+        {
+          "id": "dom-8",
+          "question": "Si mund të rinovoj emrin tim të domenit?",
+          "answer": "Rinovimi kryhet përmes faturave dhe portalit të klientit tuaj; rinovimi automatik është shpesh i disponueshëm. Mbani të përditësuara detajet e pagesës për të shmangur skadimin. Lexo më shumë: [Invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails) · [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "dom-9",
+          "question": "Cilat janë emrat e domain premium?",
+          "answer": "Emrat premium janë domene të shkurtër ose të njohur me një çmim më të lartë blerjeje, shpesh përmes një tregu shtesë. Disponueshmëria dhe kushtet ndryshojnë sipas shtrirjes. Lexo më shumë: [Premium domains](/kennisbank/domeinnamen/premium-domeinnamen) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-10",
+          "question": "A mund ta regjistroj domenin tim në mënyrë anonime (Protect ID)?",
+          "answer": "Aty ku e lejon regjistri, mund të marrësh parasysh privatësinë/Protect ID. Rregullat ndryshojnë sipas shtrirjes - .nl, për shembull, ka kornizën e vet. Lexo më shumë: [Protect ID](/kennisbank/domeinnamen/protect-id-domein-anoniem-registreren)."
+        },
+        {
+          "id": "dom-11",
+          "question": "Domeni im është në karantinë - çfarë tani?",
+          "answer": "Pas fshirjes, një domen mund të hyjë në karantinë. Në varësi të regjistrit, shpesh mund ta riaktivizoni për një tarifë; mos prisni shumë. Lexo më shumë: [Domain out of quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-12",
+          "question": "Emri im i ri i domenit nuk funksionon akoma – çfarë tani?",
+          "answer": "Zakonisht është përhapja e DNS, regjistrimet A/MX që mungojnë ose serverët e emrave që nuk janë përditësuar ende. Kontrolloni të dhënat dhe lejoni që TTL-të të skadojnë. Lexo më shumë: [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-13",
+          "question": "Si mund të lidh një domen me planin tim të pritjes?",
+          "answer": "Shtoni domenin në panelin ose llogarinë tuaj dhe vendosni DNS (një rekord ose servera emrash) në host. Ne ndihmojmë me lidhjen e parë pas porosisë. Lexo më shumë: [Connect domain to plan](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-14",
+          "question": "A mund të përcjell një domen?",
+          "answer": "po. Përcjellja e domenit i dërgon vizitorët në një URL tjetër – e dobishme për emrat e markave pa një faqe të veçantë. Ne lidhim DNS dhe ridrejtojmë me konfigurimin tuaj. Lexo më shumë: [Forward a domain](/kennisbank/domeinnamen/domeinnaam-doorsturen) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-15",
+          "question": "Si mund të ndryshoj serverat e emrave për domenin tim?",
+          "answer": "Në menaxhimin e DNS/domainit ju zgjidhni serverët tanë të emrave ose ata të jashtëm (për shembull një CDN). Përhapja mund të zgjasë nga orë deri në një ditë. Lexo më shumë: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-16",
+          "question": "Sa kushton emri i domain-it?",
+          "answer": "Çmimet ndryshojnë sipas zgjatjes dhe periudhës; kërkimi i domenit tregon çmimet aktuale të regjistrimit dhe rinovimit. Emrat premium kanë një çmim të veçantë. Lexo më shumë: [Domains](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-17",
+          "question": "A duhet që hostimi dhe domeni të jenë me të njëjtin ofrues?",
+          "answer": "Jo, por është më e thjeshtë: DNS, SSL, email dhe mbështetja, pastaj uluni me një palë. Ju gjithashtu mund të mbani vetëm DNS me ne dhe të strehoni diku tjetër. Lexo më shumë: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "dom-18",
+          "question": "A mund të menaxhoj domene të shumta në një llogari?",
+          "answer": "po. Domenet shtesë mund të regjistrohen ose transferohen dhe të lidhen si shtesë, të parkuara ose të përcjella – brenda kufijve të planit tuaj të pritjes. Lexo më shumë: [Domains](/domeinen) · [Choose a hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "dom-19",
+          "question": "Çfarë ndodh nëse domeni im skadon?",
+          "answer": "Pas skadimit ka shpesh një periudhë mospagimi ose karantine ku rikuperimi është ende i mundur; më pas mund ta pretendojë dikush tjetër. Rinovoni në kohë nëpërmjet faturave. Lexo më shumë: [Quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-20",
+          "question": "Ku mund të porosis ose menaxhoj domenet?",
+          "answer": "Regjistrohu dhe transfero përmes faqes ose dyqanit të domeneve; menaxhimi (DNS, faturat, rinovimi) jeton në portalin e klientit. Lexo më shumë: [Domains](/domeinen) · [Shop](/shop) · [Account](/dashboard)."
         }
       ]
     },
     {
       "id": "webhosting",
-      "title": "Webhosting dhe domenet",
+      "title": "Web hosting",
       "items": [
         {
           "id": "host-1",
           "question": "Cilin hosting ofroni?",
-          "answer": "Ne ofrojmë pritje të përbashkët, pritje të WordPress dhe VPS – në nivelet Basic, Plus dhe Business – plus domenet."
+          "answer": "Ne ofrojmë pritje të përbashkët, pritje në cloud, pritje të WordPress dhe VPS – plus regjistrimin e domenit. Zgjidhni bazuar në trafikun, grumbullin dhe rritjen. Lexo më shumë: [Shared hosting](/diensten/shared-hosting) · [Cloud hosting](/diensten/cloud-hosting) · [WordPress hosting](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-2",
-          "question": "Cili është ndryshimi midis të përbashkët, WordPress dhe VPS?",
-          "answer": "Shared është me kosto efektive për sajte më të vogla. Pritja e WordPress është optimizuar për WP. VPS jep më shumë burime dhe kontroll për ngarkesa më të rënda."
+          "question": "Cili është ndryshimi midis shared, cloud, WordPress dhe VPS?",
+          "answer": "Shared është me kosto efektive për sajte më të vogla. Cloud jep më shumë burime dhe shkallëzime, të menaxhuara plotësisht. Pritja e WordPress është optimizuar për WP. VPS jep më shumë kontroll për ngarkesa më të rënda. Lexo më shumë: [Differences explained](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps) · [Shared plans](/kennisbank/hosting/wat-is-shared-hosting-basic-plus-en-business) · [VPS plans](/kennisbank/hosting/wat-is-vps-hosting-basic-plus-en-business)."
         },
         {
           "id": "host-3",
-          "question": "A ndihmoni me regjistrimin e domenit?",
-          "answer": "po. Ne këshillojmë, regjistrojmë ose transferojmë domenin dhe lidhim saktë DNS."
+          "question": "Çfarë është hostimi në re me ju?",
+          "answer": "Pritja në renë kompjuterike jep më shumë burime dhe shkallëzueshmëri sesa ajo e përbashkët klasike, ndërkohë që ne vazhdojmë ta menaxhojmë atë. Ideale kur ndarja bëhet e ngushtë, por VPS e plotë nuk nevojitet ende. Lexo më shumë: [Cloud hosting](/diensten/cloud-hosting) · [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
         },
         {
           "id": "host-4",
           "question": "A përfshihet SSL me pritjen?",
-          "answer": "po. SSL është standard në planet tona përkatëse të pritjes."
+          "answer": "po. SSL është standard në planet tona përkatëse të pritjes, kështu që faqet funksionojnë në HTTPS. Lexo më shumë: [What is SSL?](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [Install Let's Encrypt](/kennisbank/hosting/hoe-installeer-ik-een-gratis-lets-encrypt-ssl-certificaat)."
         },
         {
           "id": "host-5",
           "question": "A mund ta migroni faqen time në hostin tuaj?",
-          "answer": "po. Ne trajtojmë rezervimin, migrimin, ndërprerjen e DNS, SSL dhe testet e tymit, me kohë minimale joproduktive."
+          "answer": "po. Ne trajtojmë kopjen rezervë, migrimin, ndërprerjen e DNS, SSL dhe testet e tymit, me kohë minimale joproduktive. Lexo më shumë: [Migrate website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je) · [Migrate WordPress](/kennisbank/domeinnamen/wordpress-website-verhuizen)."
         },
         {
           "id": "host-6",
           "question": "Si funksionojnë kopjet rezervë në pritje?",
-          "answer": "Kjo varet nga plani: kopje rezervë të thjeshta ose të automatizuara. Mbajtja shtesë jashtë vendit është e disponueshme."
+          "answer": "Kjo varet nga plani: kopje rezervë të thjeshta ose të automatizuara. Mbajtja shtesë jashtë vendit është e disponueshme. Lexo më shumë: [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor) · [Backup in DirectAdmin](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
         },
         {
           "id": "host-7",
           "question": "Po sikur të marr më shumë trafik?",
-          "answer": "Pastaj ne shkallëzojmë në Plus, Business ose VPS dhe optimizojmë caching-un dhe CDN-në në mënyrë që faqja të mund të përballojë rritjen."
+          "answer": "Më pas ne shkallëzojmë në Plus, Business, cloud ose VPS dhe optimizojmë caching-un dhe CDN-në në mënyrë që faqja të mund të përballojë rritjen. Lexo më shumë: [When to move to VPS?](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)."
         },
         {
           "id": "host-8",
-          "question": "A ofroni email me domene?",
-          "answer": "Kjo varet nga paketa dhe konfigurimi. Ne këshillojmë zgjidhje të besueshme të postës dhe vendosim saktë DNS (SPF, DKIM dhe DMARC)."
+          "question": "Sa i sigurt është hostimi juaj?",
+          "answer": "Ne përdorim firewall, SSL, përditësime, monitorim dhe forcim. Shtresat shtesë të sigurisë janë të disponueshme aty ku nevojitet. Lexo më shumë: [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
         },
         {
           "id": "host-9",
-          "question": "Sa i sigurt është hostimi juaj?",
-          "answer": "Ne përdorim firewall, SSL, përditësime, monitorim dhe forcim. Shërbimet shtesë të sigurisë mund të shtojnë më shumë shtresa në krye."
+          "question": "A mund të kaloj nga shared në VPS më vonë?",
+          "answer": "po. Ne planifikojmë migrimin së bashku, duke përfshirë testet dhe rikthimin, në mënyrë që kalimi të qëndrojë i kontrolluar. Lexo më shumë: [Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [VPS hosting](/diensten/vps-hosting)."
         },
         {
           "id": "host-10",
-          "question": "A mund të kaloj nga shared në VPS më vonë?",
-          "answer": "po. Ne planifikojmë migrimin së bashku, duke përfshirë testet dhe rikthimin, në mënyrë që kalimi të qëndrojë i kontrolluar."
+          "question": "A e mbështesni CDN?",
+          "answer": "Po, aty ku është e rëndësishme – shpesh një CDN falas përfshihet në planet e pritjes së WP – për shpërndarje më të shpejtë globale. Lexo më shumë: [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [WordPress hosting](/diensten/wordpress-hosting)."
         },
         {
           "id": "host-11",
-          "question": "A e mbështet CDN?",
-          "answer": "Po, aty ku është e rëndësishme – shpesh një CDN falas përfshihet në planet e pritjes së WP – për shpërndarje më të shpejtë globale."
+          "question": "Cila është qasja juaj në kohën e duhur?",
+          "answer": "Ne monitorojmë, reagojmë shpejt ndaj incidenteve dhe komunikojmë qartë rreth dritareve të mirëmbajtjes, në mënyrë që të dini se çfarë po ndodh. Përditësimet e statusit janë në faqen e statusit. Lexo më shumë: [Status page](/statuspage) · [Contact](/contact)."
         },
         {
           "id": "host-12",
-          "question": "Cila është qasja juaj në kohën e duhur?",
-          "answer": "Ne monitorojmë, reagojmë shpejt ndaj incidenteve dhe komunikojmë qartë rreth dritareve të mirëmbajtjes, në mënyrë që të dini se çfarë po ndodh."
+          "question": "Si mund të zgjedh planin e duhur të pritjes?",
+          "answer": "Bazuar në trafikun, grumbullin (WordPress ose me porosi), burimet dhe rritjen. Ne këshillojmë sinqerisht - ne nuk e teprojmë. Lexo më shumë: [Choose the right hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Shared vs WP vs VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
         },
         {
           "id": "host-13",
-          "question": "A ndihmoni në zgjidhjen e problemeve DNS?",
-          "answer": "po. Ne rregullojmë regjistrimet, përhapjen, auth-in e postës dhe lidhjet e domenit derisa DNS të jetë përsëri i saktë."
+          "question": "Ku mund të shoh çmimet e pritjes?",
+          "answer": "Në faqet e shërbimit të pritjes dhe në dyqan, me opsione mujore ose vjetore sipas rastit. Lexo më shumë: [Shared](/diensten/shared-hosting) · [Cloud](/diensten/cloud-hosting) · [WordPress](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting) · [Shop](/shop)."
         },
         {
           "id": "host-14",
-          "question": "Si mund të zgjedh planin e duhur të pritjes?",
-          "answer": "Bazuar në trafikun, grumbullin (WordPress ose me porosi), burimet dhe rritjen. Ne këshillojmë sinqerisht - ne nuk e teprojmë."
+          "question": "A marr akses SSH në hostin tim?",
+          "answer": "Kjo varet nga plani. Në shumë plane SSH është i disponueshëm ose mund të kërkohet; në VPS zakonisht keni akses të plotë. Lexo më shumë: [SSH access](/kennisbank/hosting/heb-ik-ssh-toegang-op-mijn-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-15",
-          "question": "Ku mund të shoh çmimet e pritjes?",
-          "answer": "Në faqet e shërbimit të pritjes nën Shërbimet → Webhosting dhe domenet, me opsione mujore ose vjetore sipas rastit."
+          "question": "Si mund ta instaloj WordPress në hostin tuaj?",
+          "answer": "Nëpërmjet panelit të kontrollit (për shembull DirectAdmin/Installatron) ose manualisht. Ne kemi një udhëzues hap pas hapi. Lexo më shumë: [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-16",
+          "question": "Çfarë janë inodes dhe pse plani im duket \"i plotë\"?",
+          "answer": "Inodes numërojnë skedarët/dosjet, jo vetëm GB. Shumë skedarë të vegjël memorie ose postare mund të arrijnë kufirin ndërsa hapësira në disk duket ende e lirë. Lexo më shumë: [Inodes](/kennisbank/hosting/inodes-en-inode-limieten) · [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-17",
+          "question": "Çfarë do të thotë ruajtja ose trafiku \"i pakufizuar\"?",
+          "answer": "\"I pakufizuar\" ndjek përdorimin e drejtë: përdorimi normal i faqes në internet është i mirë; abuzimi ose ngarkesat ekstreme mund të kufizohen për ta mbajtur platformën të qëndrueshme. Lexo më shumë: [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-18",
+          "question": "Cili është ndryshimi midis përbashkët, VPS dhe dedikuar?",
+          "answer": "Burimet e përbashkëta të aksioneve; VPS izolon më shumë CPU/RAM; i dedikuar është një server i tërë. Zgjidhni sipas trafikut, nevojave të kontrollit dhe buxhetit. Lexo më shumë: [Dedicated vs VPS vs shared](/kennisbank/infrastructuur-servers/verschil-tussen-dedicated-vps-en-shared-hosting) · [Shared/WP/VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
+        },
+        {
+          "id": "host-19",
+          "question": "Si të punoj me DirectAdmin?",
+          "answer": "DirectAdmin është paneli i kontrollit për email, DNS, bazat e të dhënave, kopje rezervë dhe instalime. Hyni me kredencialet e panelit tuaj; ne rekomandojmë fuqimisht 2FA. Lexo më shumë: [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Backups](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
+        },
+        {
+          "id": "host-20",
+          "question": "A ofroni cache objektesh për WordPress?",
+          "answer": "Në planet e përshtatshme ne mbështesim cache-in e vazhdueshëm të objekteve për të reduktuar pyetjet e bazës së të dhënave dhe për të ngarkuar më shpejt. Lexo më shumë: [Object cache](/kennisbank/hosting/persistent-object-cache-in-wordpress) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-21",
+          "question": "Si mund të rinovoj ose të paguaj për pritjen?",
+          "answer": "Nëpërmjet portalit të klientit dhe faturave; rinovimi automatik është shpesh i disponueshëm. Mbani detajet e faturimit aktual për të shmangur ndërprerjet. Lexo më shumë: [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode) · [View invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "host-22",
+          "question": "A mund të vendos domene të shumta në një plan pritës?",
+          "answer": "Shpesh po, përmes shtesave ose domeneve të parkuara – në varësi të kufijve të planit. Ne ndihmojmë me lidhjen dhe DNS. Lexo më shumë: [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Connect domain](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket)."
+        },
+        {
+          "id": "host-23",
+          "question": "Sa e sigurt është hyrja në panelin tim pritës?",
+          "answer": "Përdorni një fjalëkalim të fortë dhe aktivizoni 2FA. Mos i ndani hyrjet në panel mbi kanale të pasigurta. Lexo më shumë: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "host-24",
+          "question": "Çfarë është saktësisht hostimi i WordPress?",
+          "answer": "Pritja e WordPress është optimizuar për WP: PHP/stack më i shpejtë, shpesh CDN dhe instalime/azhurnime më të thjeshta se ato të përbashkëta të përgjithshme. Lexo më shumë: [WP hosting plans](/kennisbank/hosting/wat-is-wordpress-hosting-basic-plus-en-pro) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-25",
+          "question": "Ku mund të porosis direkt hosting?",
+          "answer": "Në dyqan ose përmes kategorive të pritjes Shared, Cloud, WordPress dhe VPS. Pas porosisë ju merrni akses në panel dhe faturë. Lexo më shumë: [Shop](/shop) · [Hosting overview](/diensten/categorie/hosting)."
+        }
+      ]
+    },
+    {
+      "id": "email-dns",
+      "title": "Email dhe DNS",
+      "items": [
+        {
+          "id": "mail-1",
+          "question": "A ofroni email me domene apo hosting?",
+          "answer": "Kjo varet nga paketa dhe konfigurimi. Ne këshillojmë zgjidhje të besueshme të postës dhe vendosim saktë DNS (SPF, DKIM dhe DMARC). Lexo më shumë: [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress) · [SPF record](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-2",
+          "question": "Çfarë janë SPF, DKIM dhe DMARC?",
+          "answer": "Ato janë të dhëna DNS që trajtojnë vërtetimin e emailit dhe zvogëlojnë mashtrimin/spam-in. Pa regjistrime të sakta, posta më shpesh shkon në spam. Lexo më shumë: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-3",
+          "question": "Si mund të menaxhoj të dhënat DNS?",
+          "answer": "Nëpërmjet menaxhimit të DNS për domenin tuaj ose panelin pritës, ju vendosni të dhënat A, AAAA, CNAME, MX dhe TXT. Ne ndihmojmë me migrimet dhe autorizimin e postës. Lexo më shumë: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [DNSSEC](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-4",
+          "question": "A ndihmoni në zgjidhjen e problemeve DNS?",
+          "answer": "po. Ne rregullojmë regjistrimet, përhapjen, auth-in e postës dhe lidhjet e domenit derisa DNS të jetë përsëri i saktë. Lexo më shumë: [Manage DNS records](/kennisbank/domeinnamen/dns-records-beheren) · [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen)."
+        },
+        {
+          "id": "mail-5",
+          "question": "Çfarë është DNSSEC?",
+          "answer": "DNSSEC nënshkruan përgjigjet DNS kështu që manipulimi është më i vështirë. Ne mund ta aktivizojmë atë ku TLD dhe konfigurimi juaj e mbështesin atë. Lexo më shumë: [DNSSEC explained](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-6",
+          "question": "Si mund ta konfiguroj emailin në telefonin tim?",
+          "answer": "Përdorni detajet IMAP/SMTP nga paneli juaj. Për Android (dhe në mënyrë të ngjashme në iOS) hapat janë në bazën e njohurive. Lexo më shumë: [Email on Android](/kennisbank/e-mail/e-mail-instellen-op-android) · [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress)."
+        },
+        {
+          "id": "mail-7",
+          "question": "Po sikur emaili papritmas të ndalojë së punuari?",
+          "answer": "Kontrolloni DNS (MX/SPF/DKIM/DMARC), kuotën e kutisë postare dhe nëse ofruesit po bllokojnë postën. Ne ndihmojmë në gjurmimin e zinxhirit të plotë. Lexo më shumë: [Email problems](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-8",
+          "question": "Si funksionojnë serverët e emrave?",
+          "answer": "Serverët e emrave përcaktojnë se cili sistem DNS i shërben domenit tuaj. Nëse i ndryshoni ato, duhet të vendosni sërish saktë të dhënat A/MX/TXT në hostin e ri DNS. Lexo më shumë: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "mail-9",
+          "question": "Sa kohë zgjat përhapja e DNS?",
+          "answer": "Shpesh minuta deri në disa orë; ndonjëherë deri në 24–48 orë për shkak të TTL-ve dhe cache-ve. Ulni TTL-të përpara një migrimi për të kaluar më shpejt. Lexo më shumë: [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen) · [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet)."
+        },
+        {
+          "id": "mail-10",
+          "question": "A mund të përcjell email në një adresë tjetër?",
+          "answer": "po. Transferuesit dërgojnë postë hyrëse në Gmail, Microsoft 365 ose në një kuti tjetër postare — e dobishme krahas ose në vend të një kutie postare të plotë. Lexo më shumë: [Forward email](/kennisbank/e-mail/email-doorsturen-naar-mailadres)."
+        },
+        {
+          "id": "mail-11",
+          "question": "A mund ta lidh domenin tim me Microsoft 365?",
+          "answer": "po. Ju vendosni MX dhe të dhënat e vërtetimit (SPF/DKIM/DMARC) sipas udhëzimeve të Microsoft; ne ndihmojmë në anën DNS. Lexo më shumë: [Domain to Microsoft 365](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-microsoft-365) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-12",
+          "question": "Pse posta ime përfundon në spam?",
+          "answer": "Shpesh SPF/DKIM/DMARC mungojnë ose janë në konflikt, ose IP/reputacioni është i dobët. Ne kontrollojmë vërtetimin e DNS dhe sjelljen e dërgimit. Lexo më shumë: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-13",
+          "question": "Çfarë është një rekord MX?",
+          "answer": "Një regjistrim MX i tregon internetit se cili server i postës mund të marrë email për domenin tuaj. Pa një MX të saktë, asnjë postë nuk arrin. Lexo më shumë: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Email problems](/kennisbank/hosting/problemen-met-e-mail-website)."
+        },
+        {
+          "id": "mail-14",
+          "question": "A mund të përdor webmail?",
+          "answer": "Po, nëpërmjet URL-së së postës elektronike në ueb të panelit tuaj pritës mund të lexoni dhe dërgoni postë në shfletues – krahas IMAP në telefon ose Outlook. Lexo më shumë: [Set up email](/kennisbank/e-mail/e-mail-instellen-op-android) · [Contact](/contact)."
+        },
+        {
+          "id": "mail-15",
+          "question": "A duhet të jetë DNS me ju nëse pritja është diku tjetër?",
+          "answer": "Jo. Ju mund të mbani DNS me ne ose diku tjetër, për sa kohë që A/MX/TXT tregojnë shërbimet e duhura. Menaxhimi i qëndrueshëm parandalon gabimet e migrimit. Lexo më shumë: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Nameservers](/kennisbank/domeinnamen/nameservers-beheren)."
         }
       ]
     }

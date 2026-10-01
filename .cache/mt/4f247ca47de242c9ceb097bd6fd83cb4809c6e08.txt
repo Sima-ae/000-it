@@ -1,0 +1,1 @@
+Igen. Az MX és hitelesítési rekordokat (SPF/DKIM/DMARC) a Microsoft utasításai szerint állítja be; DNS oldalon segítünk. Bővebben: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Usamos firewall, SSL, atualizações, monitoramento e proteção. Camadas extras de segurança estão disponíveis quando necessário. Leia mais: ⟦L0⟧ · ⟦L1⟧.

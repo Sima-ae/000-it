@@ -1,0 +1,1 @@
+Kyllä, tarvittaessa: lavastus tarkasteluja ja testejä varten, sitten ohjattu käyttöönotto tuotantoon.

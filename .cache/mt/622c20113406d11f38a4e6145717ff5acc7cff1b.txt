@@ -1,0 +1,1 @@
+Dažnai trūksta SPF / DKIM / DMARC arba jie prieštarauja, arba IP / reputacija yra silpna. Tikriname DNS autentifikavimą ir siuntimo elgseną. Skaityti daugiau: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

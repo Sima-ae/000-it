@@ -1,0 +1,1 @@
+Sí. Usted establece registros MX y de autenticación (SPF/DKIM/DMARC) según las instrucciones de Microsoft; Ayudamos en el lado DNS. Leer más: ⟦L0⟧ · ⟦L1⟧.

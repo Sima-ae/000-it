@@ -1,0 +1,1 @@
+U upravljanju DNS-om/domenom birate naše servere imena ili eksterne (na primjer CDN). Širenje može potrajati satima do jednog dana. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

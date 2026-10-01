@@ -1,0 +1,1 @@
+Măsurăm LCP, INP și CLS, rezolvăm active grele, găzduire/caching și probleme legate de teme și legăm acest lucru la CDN acolo unde este util. Citește mai mult: ⟦L0⟧ · ⟦L1⟧.

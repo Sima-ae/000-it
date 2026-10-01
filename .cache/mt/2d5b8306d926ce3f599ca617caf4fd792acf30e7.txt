@@ -1,0 +1,1 @@
+Bəli. Siz Microsoft-un təlimatlarına uyğun olaraq MX və autentifikasiya qeydlərini (SPF/DKIM/DMARC) təyin edirsiniz; DNS tərəfində kömək edirik. Daha ətraflı: ⟦L0⟧ · ⟦L1⟧.

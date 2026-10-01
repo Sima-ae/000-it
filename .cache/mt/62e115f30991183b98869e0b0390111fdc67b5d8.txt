@@ -1,0 +1,1 @@
+Patikrinkite DNS (MX/SPF/DKIM/DMARC), pašto dėžutės kvotą ir ar „Microsoft“ ar paslaugų teikėjai blokuoja paštą. Padedame išmatuoti grandinę. Skaityti daugiau: ⟦L0⟧ · ⟦L1⟧.

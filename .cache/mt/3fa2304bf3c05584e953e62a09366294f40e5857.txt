@@ -1,0 +1,1 @@
+Da, cu roluri de cont (client, manager, administrator), astfel încât mai mulți membri ai echipei să poată urmări biletele sau proiectele fără a partaja totul.

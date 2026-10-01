@@ -1,0 +1,1 @@
+Yes, via “Maintenance and updates”: core, plugins and themes, with backup and checks before and after we update. Read more: ⟦L0⟧Site down after WP update⟦/L0⟧.

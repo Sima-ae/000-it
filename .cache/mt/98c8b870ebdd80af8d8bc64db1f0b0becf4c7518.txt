@@ -1,0 +1,1 @@
+We measure LCP, INP and CLS, solve heavy assets, hosting/caching and theme problems, and link this to CDN where useful. Read more: ⟦L0⟧CDN⟦/L0⟧ · ⟦L1⟧Choose Hosting⟦/L1⟧.

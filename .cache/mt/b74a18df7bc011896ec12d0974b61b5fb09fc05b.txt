@@ -1,0 +1,1 @@
+Sim, com funções de conta (cliente, gerente, administrador) para que vários membros da equipe possam acompanhar tickets ou projetos sem compartilhar tudo.

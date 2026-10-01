@@ -1,0 +1,1 @@
+A hospedagem em nuvem oferece mais recursos e escalabilidade do que a compartilhada clássica, enquanto continuamos gerenciando-a. Ideal quando o compartilhamento fica apertado, mas o VPS completo ainda não é necessário. Leia mais: ⟦L0⟧ · ⟦L1⟧.

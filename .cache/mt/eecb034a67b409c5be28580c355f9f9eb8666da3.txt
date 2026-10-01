@@ -1,0 +1,1 @@
+Usein minuutista muutamaan tuntiin; joskus jopa 24–48 tuntia TTL:ien ja välimuistien vuoksi. Pienennä TTL:iä ennen siirtoa vaihtaaksesi nopeammin. Lue lisää: ⟦L0⟧ · ⟦L1⟧.

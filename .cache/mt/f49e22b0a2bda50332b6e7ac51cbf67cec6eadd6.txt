@@ -1,0 +1,1 @@
+Un enregistrement MX indique à Internet quel serveur de messagerie peut recevoir des e-mails pour votre domaine. Sans un MX correct, aucun courrier n'arrive. Lire la suite : ⟦L0⟧ · ⟦L1⟧.

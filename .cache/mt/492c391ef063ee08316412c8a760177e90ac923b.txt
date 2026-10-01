@@ -1,0 +1,1 @@
+Inoder räknar filer/mappar, inte bara GB. Många små cache- eller e-postfiler kan nå gränsen medan diskutrymme fortfarande ser ledigt ut. Läs mer: ⟦L0⟧ · ⟦L1⟧.

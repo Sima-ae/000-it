@@ -1,0 +1,1 @@
+Ne përdorim firewall, SSL, përditësime, monitorim dhe forcim. Shtresat shtesë të sigurisë janë të disponueshme aty ku nevojitet. Lexo më shumë: ⟦L0⟧ · ⟦L1⟧.

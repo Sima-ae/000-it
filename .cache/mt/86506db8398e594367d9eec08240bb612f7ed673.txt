@@ -1,0 +1,1 @@
+áno. Presmerovanie domény posiela návštevníkov na inú adresu URL, čo je užitočné pre značky bez samostatnej stránky. Zosúladíme DNS a presmerovania s vaším nastavením. Prečítajte si viac: ⟦L0⟧ · ⟦L1⟧.

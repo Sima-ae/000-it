@@ -1,0 +1,1 @@
+A felhőalapú tárhely több erőforrást és méretezhetőséget biztosít, mint a klasszikus megosztott, miközben továbbra is kezeljük. Ideális, ha a megosztás szűkös, de még nincs szükség teljes VPS-re. Bővebben: ⟦L0⟧ · ⟦L1⟧.

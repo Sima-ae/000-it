@@ -1,0 +1,1 @@
+áno. Migráciu plánujeme spoločne, vrátane testov a rollbacku, takže prepínač zostane pod kontrolou. Prečítajte si viac: ⟦L0⟧ · ⟦L1⟧.

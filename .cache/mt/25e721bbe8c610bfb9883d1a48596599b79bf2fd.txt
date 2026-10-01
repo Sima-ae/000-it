@@ -1,0 +1,1 @@
+WordPress-hosting er optimeret til WP: hurtigere PHP/stak, ofte CDN og enklere installationer/opdateringer end generisk delt. Læs mere: ⟦L0⟧ · ⟦L1⟧.

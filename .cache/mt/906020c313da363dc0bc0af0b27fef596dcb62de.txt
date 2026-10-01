@@ -1,0 +1,1 @@
+To záleží na balíčku a nastavení. Poradíme spolehlivá poštovní řešení a správně nastavíme DNS (SPF, DKIM a DMARC). Přečtěte si více: ⟦L0⟧ · ⟦L1⟧.

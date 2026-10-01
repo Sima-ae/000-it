@@ -1,0 +1,1 @@
+En MX-post forteller Internett hvilken e-postserver som kan motta e-post for ditt domene. Uten korrekt MX kommer ingen post. Les mer: ⟦L0⟧ · ⟦L1⟧.

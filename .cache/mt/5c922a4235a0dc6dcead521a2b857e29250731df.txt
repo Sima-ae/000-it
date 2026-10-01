@@ -1,0 +1,1 @@
+Nein. Sie können DNS bei uns oder anderswo behalten, solange A/MX/TXT auf die richtigen Dienste verweist. Konsequentes Management verhindert Migrationsfehler. Weiterlesen: ⟦L0⟧ · ⟦L1⟧.

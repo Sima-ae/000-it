@@ -1,0 +1,1 @@
+Minden pontszám megmutatja, milyen erős vagy az adott területen; az alacsony pontszámok konkrét tippekkel járnak. Használja a beolvasást prioritási listaként, ne egyszeri „jelentéskártyaként”. Bővebben: ⟦L0⟧ · ⟦L1⟧.

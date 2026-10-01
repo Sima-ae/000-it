@@ -1,0 +1,1 @@
+Da. Solicitați un cod de autorizare (EPP) de la registratorul actual, deblocați orice blocare a transferului, apoi începeți transferul cu noi. După aceea, setăm corect DNS și serverele de nume. Citește mai mult: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

@@ -1,0 +1,1 @@
+A DirectAdmin az e-mail, DNS, adatbázisok, biztonsági mentések és telepítések vezérlőpultja. Jelentkezzen be a panel hitelesítő adataival; erősen ajánljuk a 2FA-t. Bővebben: ⟦L0⟧ · ⟦L1⟧.

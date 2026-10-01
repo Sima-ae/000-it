@@ -1,0 +1,1 @@
+Sur la page d'état, nous affichons les incidents et la maintenance concernant l'hébergement et les services associés, afin que vous puissiez voir rapidement si quelque chose se passe. Lire la suite : ⟦L0⟧.

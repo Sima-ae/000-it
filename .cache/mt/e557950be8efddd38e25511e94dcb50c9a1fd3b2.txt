@@ -1,0 +1,1 @@
+DirectAdmin je ovládací panel pro e-mail, DNS, databáze, zálohy a instalace. Přihlaste se pomocí přihlašovacích údajů panelu; důrazně doporučujeme 2FA. Přečtěte si více: ⟦L0⟧ · ⟦L1⟧.

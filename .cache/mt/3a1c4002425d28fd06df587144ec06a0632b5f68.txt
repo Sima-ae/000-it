@@ -1,0 +1,1 @@
+Ano. MX a autentizační záznamy (SPF/DKIM/DMARC) nastavíte podle pokynů společnosti Microsoft; pomáháme na straně DNS. Přečtěte si více: ⟦L0⟧ · ⟦L1⟧.

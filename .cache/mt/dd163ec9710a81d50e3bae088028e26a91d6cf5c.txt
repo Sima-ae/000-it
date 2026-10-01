@@ -1,0 +1,1 @@
+Rekord MX informuje Internet, który serwer pocztowy może odbierać wiadomości e-mail dla Twojej domeny. Bez prawidłowego kodu MX żadna poczta nie dotrze. Przeczytaj więcej: ⟦L0⟧ · ⟦L1⟧.

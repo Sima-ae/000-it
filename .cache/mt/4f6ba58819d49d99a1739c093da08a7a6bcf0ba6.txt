@@ -1,0 +1,1 @@
+Sjekk DNS (MX/SPF/DKIM/DMARC), postbokskvote og om leverandørene blokkerer post. Vi hjelper til med å spore hele kjeden. Les mer: ⟦L0⟧ · ⟦L1⟧.

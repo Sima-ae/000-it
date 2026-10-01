@@ -1,0 +1,1 @@
+Via DNS-administrasjon for ditt domene eller vertspanel setter du A-, AAAA-, CNAME-, MX- og TXT-poster. Vi hjelper til med migreringer og e-postautentisering. Les mer: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Use a strong password and enable 2FA. Do not share panel logins via insecure channels. Read more: ⟦L0⟧2FA DirectAdmin⟦/L0⟧ · ⟦L1⟧Lost login⟦/L1⟧.

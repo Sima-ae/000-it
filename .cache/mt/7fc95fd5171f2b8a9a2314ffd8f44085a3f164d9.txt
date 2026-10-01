@@ -1,0 +1,1 @@
+Da. Postavljate MX i zapise o autentifikaciji (SPF/DKIM/DMARC) prema Microsoftovim uputstvima; pomažemo na strani DNS-a. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

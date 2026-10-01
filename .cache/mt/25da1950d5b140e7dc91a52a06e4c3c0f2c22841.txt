@@ -1,0 +1,1 @@
+Anschließend korrigieren wir die Tag-Kennzeichnung (GTM, GA4 und Pixel), den Einwilligungsmodus, sofern erforderlich, und serverseitige Optionen für zuverlässigere Daten.

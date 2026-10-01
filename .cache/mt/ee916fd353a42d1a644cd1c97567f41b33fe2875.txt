@@ -1,0 +1,1 @@
+På lämpliga planer stöder vi beständig objektcache för att minska databasfrågor och ladda snabbare. Läs mer: ⟦L0⟧ · ⟦L1⟧.

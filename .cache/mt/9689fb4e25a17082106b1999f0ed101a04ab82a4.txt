@@ -1,0 +1,1 @@
+Se riippuu paketista ja asetuksista. Neuvomme luotettavia sähköpostiratkaisuja ja asetamme DNS oikein (SPF, DKIM ja DMARC). Lue lisää: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Zapobiegamy marnotrawstwu dzięki wykluczającym słowom kluczowym, wykluczeniom odbiorców, limitom budżetowym, geofencingowi, kontroli częstotliwości i szybkiemu powstrzymywaniu podmiotów osiągających słabe wyniki.

@@ -1,0 +1,1 @@
+Taip, su paskyros vaidmenimis (klientas, vadovas, administratorius), kad keli komandos nariai galėtų stebėti bilietus ar projektus nesidalydami viskuo.

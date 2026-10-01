@@ -1,0 +1,1 @@
+Cloudový hosting poskytuje viac zdrojov a škálovateľnosti ako klasický zdieľaný, pričom ho stále spravujeme. Ideálne, keď je zdieľanie tesné, ale plné VPS ešte nie je potrebné. Prečítajte si viac: ⟦L0⟧ · ⟦L1⟧.

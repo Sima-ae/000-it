@@ -1,0 +1,1 @@
+Igen, a tárhelypanel webmail URL-címén keresztül olvashat és küldhet e-maileket a böngészőben – a telefonon vagy az Outlookon lévő IMAP mellett. Bővebben: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Teslimattan sonra HTTP'den HTTPS'ye ne olacak?

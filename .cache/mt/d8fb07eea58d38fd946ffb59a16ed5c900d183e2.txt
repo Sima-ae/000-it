@@ -1,0 +1,1 @@
+A DNS/domain kezelésben kiválaszthatja a névszervereinket vagy a külső szervereinket (például CDN). A szaporodás óráktól egy napig is eltarthat. Bővebben: ⟦L0⟧ · ⟦L1⟧.

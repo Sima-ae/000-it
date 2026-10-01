@@ -1,0 +1,1 @@
+DirectAdmin, e-posta, DNS, veritabanları, yedeklemeler ve kurulumlar için kontrol panelidir. Panel kimlik bilgilerinizle giriş yapın; 2FA'yı şiddetle tavsiye ediyoruz. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

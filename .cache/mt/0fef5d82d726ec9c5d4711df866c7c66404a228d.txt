@@ -1,0 +1,1 @@
+Ein Domainname ist die Adresse, die Besucher verwenden, um Ihre Website zu finden (z. B. example.com). Es stellt eine Verbindung zu DNS-Einträgen her, die auf Ihr Hosting oder Ihre E-Mail-Adresse verweisen. Weiterlesen: ⟦L0⟧ · ⟦L1⟧.

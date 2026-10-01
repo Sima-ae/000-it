@@ -12,12 +12,12 @@
         {
           "id": "gen-1",
           "question": "Ką tiksliai veikia „TripleZero iT“?",
-          "answer": "TripleZero iT apjungia interneto dizainą, WordPress palaikymą, skaitmeninę rinkodarą, paieškos matomumą (AEO, GEO / vietinį ir SEO), dizainą ir prieglobą. Padedame prekių ženklams greičiau rastis, kurti geresnes svetaines ir išmatuojamai augti."
+          "answer": "TripleZero iT apjungia interneto dizainą, WordPress palaikymą, skaitmeninę rinkodarą, paieškos matomumą (AEO, GEO / vietinį ir SEO), dizainą ir prieglobą. Padedame prekių ženklams greičiau rastis, kurti geresnes svetaines ir išmatuojamai augti. [About us](/over-ons) · [Services](/diensten)"
         },
         {
           "id": "gen-2",
           "question": "Kaip pradėti naudotis TripleZero iT?",
-          "answer": "Susisiekite su mumis arba rezervuokite susitikimą. Surengiame trumpą apžvalgą, peržiūrime tikslus ir sudedame, tada paruošiame konkretų pasiūlymą su planavimu ir KPI."
+          "answer": "Susisiekite su mumis arba rezervuokite susitikimą. Surengiame trumpą apžvalgą, peržiūrime tikslus ir sudedame, tada paruošiame konkretų pasiūlymą su planavimu ir KPI. [Schedule appointment](/afspraak) · [Contact](/contact)"
         },
         {
           "id": "gen-3",
@@ -73,6 +73,46 @@
           "id": "gen-13",
           "question": "Ar galite perimti esamus pardavėjus arba bendradarbiauti su jais?",
           "answer": "Taip. Sklandžiai dirbame kartu su kūrėjais, rinkodaros specialistais ar agentūromis arba perimame priežiūrą ir optimizavimą, be reikalo netrikdydami esamo darbo."
+        },
+        {
+          "id": "gen-14",
+          "question": "Kas yra agentas 000 (pokalbių asistentas)?",
+          "answer": "Agentas 000 yra mūsų skaitmeninis asistentas svetainėje ir palaikymo srautuose. Jis atsako į dažniausiai užduodamus klausimus, nurodo žinių bazės straipsnius ir gali nukreipti jus į tiesioginį pokalbį, bilietą ar susitikimą, kai tinkamesnė žmogaus pagalba. Skaityti daugiau: [Digital assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Chat, ticket or call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "gen-15",
+          "question": "Kaip susitarti dėl susitikimo ar paskambinti?",
+          "answer": "Galite pasirinkti jums tinkantį laiką apsilankę susitikimo puslapyje. Greitiems klausimams taip pat galite naudoti tiesioginį pokalbį arba bilietą; Susitikimas telefonu yra naudingas sudėtingesniems procesams ar priėmimams. Skaityti daugiau: [Appointment](/afspraak) · [Call appointment explained](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)."
+        },
+        {
+          "id": "gen-16",
+          "question": "Kur galiu pamatyti jūsų paslaugų būseną?",
+          "answer": "Būsenos puslapyje rodome su priegloba ir susijusiomis paslaugomis susijusius incidentus ir priežiūrą, kad galėtumėte greitai pamatyti, ar kažkas vyksta. Skaityti daugiau: [Statuspage](/statuspage)."
+        },
+        {
+          "id": "gen-17",
+          "question": "Ar turite žinių bazę?",
+          "answer": "Taip. Žinių bazėje yra vadovai apie domenus, DNS, el. paštą, prieglobą, „WordPress“, AI nuskaitymą, saugą ir dar daugiau – su nuosekliais paaiškinimais. Skaityti daugiau: [Knowledge base](/kennisbank)."
+        },
+        {
+          "id": "gen-18",
+          "question": "Kaip elgiatės su privatumu ir slapukais?",
+          "answer": "Dirbame atsižvelgdami į GDPR: privatumo tekstus, sutikimą dėl formų ir slapukų reklamjuosčių/sutikimo režimą, kai būtina sekti. „WordPress“ padedame tinkamai nustatyti slapukus. Skaityti daugiau: [Cookie banner in WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress) · [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Privacy with forms](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren)."
+        },
+        {
+          "id": "gen-19",
+          "question": "Kur galiu rasti jūsų naujienas ir atnaujinimus?",
+          "answer": "Naujienų puslapyje skelbiame naujienas apie produktus, saugumą ir patarimus. Dėl techninių gedimų patikrinkite būsenos puslapį. Skaityti daugiau: [News](/nieuws) · [Statuspage](/statuspage)."
+        },
+        {
+          "id": "gen-20",
+          "question": "Kiek kainuoja dirbti su jumis?",
+          "answer": "Tai priklauso nuo derinio: prieglobos ir apsipirkimo produktai turi fiksuotas kainas; dizainas, SEO, skelbimai ir laikikliai seka po priėmimo. Parduotuvėje matote pakuotes; gausite pritaikymo pasiūlymą. Skaityti daugiau: [Shop](/shop) · [Contact](/contact)."
+        },
+        {
+          "id": "gen-21",
+          "question": "Ar taip pat galite atlikti tik konsultacijas ar auditą?",
+          "answer": "Taip. Auditas, AI nuskaitymas, techninės peržiūros ir sparingo seansai gali būti atliekami atskirai nuo visų paslaugų proceso. Tada galite tai padaryti patys arba leiskite pasirūpinti mums. Skaityti daugiau: [AI scan](/ai-scan) · [Services](/diensten)."
         }
       ]
     },
@@ -83,17 +123,17 @@
         {
           "id": "ai-1",
           "question": "Kas yra AI nuskaitymas naudojant TripleZero iT?",
-          "answer": "AI parengties nuskaitymas įvertina, kaip gerai jūsų svetainę gali rasti klasikiniai paieškos varikliai, AI atsakymai ir vietinės ar geografinės paieškos rezultatai (AEO, GEO, SEO ir techniniai pagrindai)."
+          "answer": "AI parengties nuskaitymas įvertina, kaip gerai jūsų svetainę gali rasti klasikiniai paieškos varikliai, AI atsakymai ir vietinės ar geografinės paieškos rezultatai (AEO, GEO, SEO ir techniniai pagrindai). [What is the AI ​​scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Start AI scan](/ai-scan)"
         },
         {
           "id": "ai-2",
           "question": "Ką tiksliai matuoja AI nuskaitymas?",
-          "answer": "Nuskaitymas matuoja AEO signalus, GEO / vietinį matomumą, SEO pagrindus, turinio struktūrą, našumo rodiklius ir AI pasirengimą. Jūs gaunate balus ir konkrečius tobulėjimo taškus."
+          "answer": "Nuskaitymas matuoja AEO signalus, GEO / vietinį matomumą, SEO pagrindus, turinio struktūrą, našumo rodiklius ir AI pasirengimą. Jūs gaunate balus ir konkrečius tobulėjimo taškus. [Explain scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)"
         },
         {
           "id": "ai-3",
           "question": "Kaip dažnai turėčiau atlikti AI nuskaitymą?",
-          "answer": "Mažiausiai po didelių svetainės pakeitimų ar kampanijų. Aktyviems prekių ženklams rekomenduojame periodiškai nuskaityti, pavyzdžiui, kiekvieną ketvirtį, kad būtumėte matomi paieškos ir AI rezultatuose."
+          "answer": "Mažiausiai po didelių svetainės pakeitimų ar kampanijų. Aktyviems prekių ženklams rekomenduojame periodiškai nuskaityti, pavyzdžiui, kiekvieną ketvirtį, kad būtumėte matomi paieškos ir AI rezultatuose. [Start AI scan](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website)"
         },
         {
           "id": "ai-4",
@@ -118,12 +158,12 @@
         {
           "id": "ai-8",
           "question": "Koks yra mano prekės ženklo AI pasirengimas?",
-          "answer": "Tai yra jūsų svetainės, turinio ir duomenų nustatymo laipsnis, kad AI sistemos galėtų teisingai cituoti, rekomenduoti ir paaiškinti jūsų prekės ženklą."
+          "answer": "Tai yra jūsų svetainės, turinio ir duomenų nustatymo laipsnis, kad AI sistemos galėtų teisingai cituoti, rekomenduoti ir paaiškinti jūsų prekės ženklą. [AI readiness in the scan](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)"
         },
         {
           "id": "ai-9",
           "question": "Ar galite naudoti AI agentus prietaisų skydelyje?",
-          "answer": "Taip. Klientų portale matote AI agentus, skirtus SEO, turiniui, socialiniams tinklams ir skelbimams, įskaitant būseną ir užduotis."
+          "answer": "Taip. Klientų portale matote AI agentus, skirtus SEO, turiniui, socialiniams tinklams ir skelbimams, įskaitant būseną ir užduotis. [What are AI agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Agents in your account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)"
         },
         {
           "id": "ai-10",
@@ -144,6 +184,46 @@
           "id": "ai-13",
           "question": "Kaip išmatuoti AI iniciatyvų IG?",
           "answer": "Naudojant KPI, pvz., srautą, potencialius klientus, sutaupytą laiką, turinio išvestį, bilietų skyrą ir konversiją. Mes juos apibrėžiame iš anksto plane, kad rezultatai būtų matomi."
+        },
+        {
+          "id": "ai-14",
+          "question": "Kaip savo svetainėje pradėti AI nuskaitymą?",
+          "answer": "Eikite į AI nuskaitymą, įveskite savo URL ir pradėkite analizę. Gaunate balus už AEO, GEO, SEO, našumą ir AI pasirengimą bei taškų už tobulėjimą. Skaityti daugiau: [Start AI scan](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website) · [AI scan page](/ai-scan)."
+        },
+        {
+          "id": "ai-15",
+          "question": "Kaip perskaityti AI nuskaitymo balus?",
+          "answer": "Kiekvienas balas parodo, koks stiprus esate toje srityje; žemi balai pateikiami su konkrečiais patarimais. Naudokite nuskaitymą kaip prioritetų sąrašą, o ne kaip vienkartinę „ataskaitos kortelę“. Skaityti daugiau: [Explain scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Next steps](/kennisbank/ai-scan/welke-vervolgstappen-zet-ik-na-mijn-ai-scan)."
+        },
+        {
+          "id": "ai-16",
+          "question": "Kuo AI nuskaitymas skiriasi nuo pilno AEO/GEO/SEO proceso?",
+          "answer": "Nuskaitymas yra greita diagnozė. Procesas įgyvendina patobulinimus: turinį, struktūrinius duomenis, techninį SEO, vietinius signalus ir matavimą laikui bėgant. Skaityti daugiau: [Scan versus process](/kennisbank/ai-scan/ai-scan-versus-een-volledig-aeo-geo-seo-traject-wat-is-het-verschil) · [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-17",
+          "question": "Kur paskyroje galiu rasti ankstesnius AI nuskaitymus?",
+          "answer": "Prisijungę klientai mato ankstesnius nuskaitymus ir analizes prietaisų skydelyje (SEO analizė), todėl galite palyginti pažangą. Skaityti daugiau: [AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Account / dashboard](/dashboard)."
+        },
+        {
+          "id": "ai-18",
+          "question": "Ką daryti gavus žemą AEO arba GEO balą?",
+          "answer": "Pirmenybę teikite DUK, subjektams, struktūriniams duomenims (AEO) ir „Google“ verslo profiliui / NAP / vietiniams nukreipimo puslapiams (GEO). Mes padedame įgyvendinti šį planą. Skaityti daugiau: [Scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Local Discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "ai-19",
+          "question": "Kaip AI agentai dirba klientų portale?",
+          "answer": "AI agentai palaiko užduotis, susijusias su SEO, turiniu, socialiniais tinklais ar skelbimais. Savo paskyroje atidarote apžvalgą, matote būseną ir galite paleisti arba pristabdyti agentus pagal savo paketą. Skaityti daugiau: [What are AI agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Open agents](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)."
+        },
+        {
+          "id": "ai-20",
+          "question": "Ar AI nuskaitymas nemokamas?",
+          "answer": "Yra prieinamas įrašas per AI nuskaitymo puslapį; gilesnės analizės ir procesai priklauso paslaugoms arba laikmenoms. Po nuskaitymo iš karto pamatysite, ar tolesnis veiksmas yra naudingas. Skaityti daugiau: [AI scan](/ai-scan) · [What is the AI ​​scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-21",
+          "question": "Ar agentas 000 taip pat padeda spręsti AI ir SEO klausimus?",
+          "answer": "Taip. Agentas 000 naudoja DUK ir žinių bazę, kad atsakytų į AEO/GEO/SEO ir AI nuskaitymo klausimus ir nuorodas į reikiamus straipsnius arba žmonių stebėjimą. Skaityti daugiau: [Digital Assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [FAQ](/faq)."
         }
       ]
     },
@@ -154,17 +234,17 @@
         {
           "id": "seo-1",
           "question": "Kuo skiriasi AEO, GEO ir SEO?",
-          "answer": "AEO (Answer Engine Optimization) daugiausia dėmesio skiria AI atsakymams. GEO (geografinis paieškos variklio optimizavimas) sustiprina vietinį ir regioninį matomumą Žemėlapiuose, vietiniuose paketuose ir paieškoje pagal vietą. SEO optimizuoja klasikinėms paieškos sistemoms."
+          "answer": "AEO (Answer Engine Optimization) daugiausia dėmesio skiria AI atsakymams. GEO (geografinis paieškos variklio optimizavimas) sustiprina vietinį ir regioninį matomumą Žemėlapiuose, vietiniuose paketuose ir paieškoje pagal vietą. SEO optimizuoja klasikinėms paieškos sistemoms. [How AEO, GEO and SEO are related](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen) · [What is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization)"
         },
         {
           "id": "seo-2",
           "question": "Kodėl AEO/GEO dabar svarbūs?",
-          "answer": "Daugiau ieškančių žmonių gauna atsakymus per AI ir taip pat ieško vietoje („netoli manęs“). Be AEO pasigendate AI citatų; be GEO pasigendate vietinių potencialių klientų – net jei klasikinis SEO yra tvirtas."
+          "answer": "Daugiau ieškančių žmonių gauna atsakymus per AI ir taip pat ieško vietoje („netoli manęs“). Be AEO pasigendate AI citatų; be GEO pasigendate vietinių potencialių klientų – net jei klasikinis SEO yra tvirtas. [What is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant)"
         },
         {
           "id": "seo-3",
           "question": "Kaip pradėti SEO veiklą?",
-          "answer": "Pradedame nuo techninio audito, raktinių žodžių ir ketinimų tyrimo, turinio spragų analizės ir prioritetinio plano, susieto su jūsų verslo KPI."
+          "answer": "Pradedame nuo techninio audito, raktinių žodžių ir ketinimų tyrimo, turinio spragų analizės ir prioritetinio plano, susieto su jūsų verslo KPI. [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)"
         },
         {
           "id": "seo-4",
@@ -174,7 +254,7 @@
         {
           "id": "seo-5",
           "question": "Ar atliekate ir vietinį SEO?",
-          "answer": "Taip. Dirbame su „Google“ verslo profiliu, vietiniais nukreipimo puslapiais, NAP nuoseklumu, apžvalgomis ir vietinio turinio grupėmis, kad jūsų regione būtumėte geriau randami."
+          "answer": "Taip. Dirbame su „Google“ verslo profiliu, vietiniais nukreipimo puslapiais, NAP nuoseklumu, apžvalgomis ir vietinio turinio grupėmis, kad jūsų regione būtumėte geriau randami. [Improve local discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)"
         },
         {
           "id": "seo-6",
@@ -220,6 +300,36 @@
           "id": "seo-14",
           "question": "Ar padedate su tarptautiniu SEO?",
           "answer": "Taip. Tvarkome „hreflang“, rinkos tyrimus pagal šalį ar kalbą, turinio lokalizavimą ir technines kelių vietovių sąrankas."
+        },
+        {
+          "id": "seo-15",
+          "question": "Kas tiksliai yra AEO?",
+          "answer": "AEO (Answer Engine Optimization) kuria turinį, kad dirbtinio intelekto atsakymai ir atsakymų varikliai galėtų teisingai cituoti jūsų prekės ženklą: aiškūs DUK, objektai ir struktūrizuoti duomenys. Skaityti daugiau: [What is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AEO, GEO and SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
+        },
+        {
+          "id": "seo-16",
+          "question": "Kas yra GEO (geografinis SEO)?",
+          "answer": "GEO stiprina vietinį ir regioninį aptinkamumą – žemėlapius, vietinius paketus ir paiešką pagal vietą – naudodamas GBP, NAP nuoseklumą ir vietinį turinį. Skaityti daugiau: [What is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant) · [Local discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "seo-17",
+          "question": "Kaip užsisakyti ar pradėti SEO optimizavimą?",
+          "answer": "Pradėkite nuo AI nuskaitymo arba audito, tada pasiūlykite prioritetus. Taip pat galite sujungti SEO su turiniu ir technologijomis per parduotuvę / paslaugas arba laikiklį. Skaityti daugiau: [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting) · [AI Scan](/ai-scan)."
+        },
+        {
+          "id": "seo-18",
+          "question": "Ar galite padėti su struktūriniais duomenimis ir DUK tvarkaraščiu?",
+          "answer": "Taip. Kuriame atitinkamas diagramas (DUK, Organizacija, Vietinis verslas, produktai) ir struktūrizuojame turinį, kad paieškos sistemos ir AI jus geriau suprastų. Skaityti daugiau: [AEO explanation](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AI scan scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)."
+        },
+        {
+          "id": "seo-19",
+          "question": "Ką jūs darote su „Core Web Vitals“?",
+          "answer": "Matuojame LCP, INP ir CLS, sprendžiame sunkiųjų išteklių, prieglobos / talpyklos ir temų problemas ir susiejame tai su CDN, kur naudinga. Skaityti daugiau: [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [Choose Hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "seo-20",
+          "question": "Ar galite derinti SEO su priegloba ir „WordPress“ priežiūra?",
+          "answer": "Taip. Stabilus priegloba, atnaujinimai ir našumas sudaro pagrindą; SEO remiasi tuo. Daugelis klientų derina WP-care + hostingą + nuolatinį SEO. Skaityti daugiau: [Hosting](/diensten/categorie/hosting) · [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
         }
       ]
     },
@@ -291,6 +401,26 @@
           "id": "ads-13",
           "question": "Ar pakartotinė rinkodara vis dar aktuali?",
           "answer": "Taip, kai jis suderinamas su privatumu ir derinamas su stipriais skelbimais ir pasiūlymais. Jis dažnai išlieka efektyviausiu piltuvo sluoksniu."
+        },
+        {
+          "id": "ads-14",
+          "question": "Ar padedate naudoti sutikimo režimą ir slapukų reklamjuostes skelbimams?",
+          "answer": "Taip. Be tinkamo sutikimo ir žymėjimo skelbimo vertinimas yra nepatikimas. Mes tvarkingai susiejame reklamjuostes, GTM/GA4 ir pikselius. Skaityti daugiau: [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Cookie banner WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "ads-15",
+          "question": "Ar galite sukurti nukreipimo puslapius kampanijoms?",
+          "answer": "Taip – ​​greiti nukreipimo puslapiai arba „WordPress“ puslapiai, pritaikyti paieškos tikslams, su stebėjimo ir CRO pagrindais. Skaityti daugiau: [Services](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "ads-16",
+          "question": "Kaip išvengti reklamos biudžeto švaistymo?",
+          "answer": "Griežta paskyros struktūra, neigiami raktiniai žodžiai, auditorijos išskyrimai, nukreipimo puslapio pritaikymas ir savaitinis MUK / SIG optimizavimas – ne tik paspaudimai."
+        },
+        {
+          "id": "ads-17",
+          "question": "Ar skelbimai gerai veikia su AEO / SEO?",
+          "answer": "Taip. Skelbimai teikia greitus duomenis ir srautą; SEO/AEO sukurti tvarų matomumą. Raktinių žodžių ir skelbimų įžvalgos skatina turinį ir nukreipimo puslapius. Skaityti daugiau: [AEO, GEO and SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
         }
       ]
     },
@@ -362,6 +492,26 @@
           "id": "des-13",
           "question": "Kur galėčiau sužinoti daugiau apie skaitmeninį dizainą?",
           "answer": "Daugiau informacijos rasite /grafikos-dizainas ir meniu Skaitmeninio dizaino paslaugose."
+        },
+        {
+          "id": "des-14",
+          "question": "Ar taip pat tiekite projektavimo sistemas ir komponentų bibliotekas?",
+          "answer": "Taip, prekių ženklams, kurie nori nuosekliai didinti mastelį: žetonai, komponentai ir dokumentacija, kad rinkodara ir produktas kalbėtų ta pačia kalba."
+        },
+        {
+          "id": "des-15",
+          "question": "Ar galite suskaitmeninti esamą prekės ženklo stilių?",
+          "answer": "Taip. Išverčiame spausdintas arba neišsamias prekės ženklo gaires į žiniatinklyje paruoštas spalvas, tipografiją, vartotojo sąsajos rinkinį ir šablonus."
+        },
+        {
+          "id": "des-16",
+          "question": "Ar atliekate UX tyrimus ar tiesiog vizualinį dizainą?",
+          "answer": "Abu. Kur reikia, pradedame nuo interviu, piltuvo analizės ar šilumos žemėlapių; tada UI. Tokiu būdu kuriame remdamiesi elgesiu, o ne tik skoniu."
+        },
+        {
+          "id": "des-17",
+          "question": "Ar galite kurti socialinių tinklų šablonus ir skelbimus?",
+          "answer": "Taip – ​​karuselės, miniatiūros, istorijos ir skelbimai, atitinkantys jūsų prekės ženklo ir kampanijos tikslus. Skaityti daugiau: [Services](/diensten)."
         }
       ]
     },
@@ -433,6 +583,26 @@
           "id": "mkt-13",
           "question": "Kaip išvengti „užsiėmusios rinkodaros“ be rezultatų?",
           "answer": "Kiekviena veikla yra susieta su KPI. Neefektyvi taktika sustabdoma arba patobulinama naudojant duomenis, todėl biudžetas skiriamas tam, kas veikia."
+        },
+        {
+          "id": "mkt-14",
+          "question": "Kas paprastai įtraukiama į rinkodaros fiksatorių?",
+          "answer": "Strategijos, turinio ar SEO, kampanijų, ataskaitų teikimo ir eksperimentų derinys – pritaikytas KPI. Užfiksuojame apimtį ir valandas, kad prioritetai liktų aiškūs. Skaityti daugiau: [Shop](/shop) · [Contact](/contact)."
+        },
+        {
+          "id": "mkt-15",
+          "question": "Ar padedate padėties nustatymui ir pranešimų siuntimui?",
+          "answer": "Taip. Aiškus pozicionavimas, vertės rekvizitai ir puslapio kopija užtikrina, kad skelbimai, SEO ir pardavimas perteiktų tą pačią žinutę."
+        },
+        {
+          "id": "mkt-16",
+          "question": "Ar rinkodarą vertinate pagal vamzdyną, o ne tik srautą?",
+          "answer": "Kur įmanoma: potencialūs klientai, SQL, pajamos arba pagalbinės konversijos. Eismą koreguojame arba sustabdome nekokybiškai."
+        },
+        {
+          "id": "mkt-17",
+          "question": "Ar galite išvalyti rinkodaros krūvą ir stebėjimą?",
+          "answer": "Taip – ​​GTM, GA4, pikseliai, CRM nuorodos ir sutikimas. Švarūs duomenys yra gerų sprendimų pagrindas. Skaityti daugiau: [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen)."
         }
       ]
     },
@@ -504,6 +674,153 @@
           "id": "soc-13",
           "question": "Kaip greitai pamatysime socialinį augimą?",
           "answer": "Svarbu nuoseklumas. Reikšmingas augimas paprastai trunka nuo kelių savaičių iki mėnesių; su skelbimų palaikymu tai dažnai vyksta greičiau."
+        },
+        {
+          "id": "soc-14",
+          "question": "Ar padedate su socialiniais įrodymais ir apžvalgomis?",
+          "answer": "Taip. Planuojame peržiūros užklausas, atvejus ir į NST panašius formatus, kurie didina pasitikėjimą – be netikro įsitraukimo."
+        },
+        {
+          "id": "soc-15",
+          "question": "Ar galite nustatyti darbuotojų gynimą?",
+          "answer": "Taip, ypač „LinkedIn“: paprastos gairės, šablonai ir ritmas, kad komanda akivaizdžiai dalytųsi patirtimi."
+        },
+        {
+          "id": "soc-16",
+          "question": "Kaip susieti socialinius tinklus su svetaine ir parduotuve?",
+          "answer": "Per UTM, nukreipimo puslapius, produktų nuorodas ir pakartotinį taikymą. Socialinis tinklas yra kanalas kanale, o ne sala. Skaityti daugiau: [Shop](/shop)."
+        }
+      ]
+    },
+    {
+      "id": "account-portaal",
+      "title": "Paskyra ir portalas",
+      "items": [
+        {
+          "id": "acc-1",
+          "question": "Kaip prisijungti prie klientų portalo?",
+          "answer": "Eikite į paskyrą/prisijunkite ir naudokite savo kliento paskyros el. pašto adresą. Jei praradote duomenis, naudokite slaptažodį iš naujo arba susisiekite su mumis. Skaityti daugiau: [Account](/dashboard) · [Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-2",
+          "question": "Ką matau savo prietaisų skydelyje?",
+          "answer": "Priklausomai nuo jūsų paslaugų: bilietai, projektai, sąskaitos faktūros, AI nuskaitymas / agentai ir greitosios nuorodos į palaikymą. Skaityti daugiau: [AI agents in account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account) · [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "acc-3",
+          "question": "Pamečiau prisijungimo duomenis – kas dabar?",
+          "answer": "Naudokite „pamiršau slaptažodį“ arba vykdykite klientų skydelio žinių bazės veiksmus. Jei tai nepadeda, atidarykite bilietą žinomu kontaktiniu adresu. Skaityti daugiau: [Lost login details](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-4",
+          "question": "Kaip atidaryti bilietą iš portalo?",
+          "answer": "Klientų skydelyje pasirinkite palaikymą / bilietus, aprašykite savo problemą ir pridėkite įrodymų (URL, ekrano kopijas). Skaityti daugiau: [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "acc-5",
+          "question": "Kur galiu rasti savo sąskaitas faktūras?",
+          "answer": "Sąskaitas galite peržiūrėti ir atsisiųsti portalo sąskaitų faktūrų/atsiskaitymo skiltyje. Skaityti daugiau: [Consult invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "acc-6",
+          "question": "Kaip pakeisti atsiskaitymo informaciją arba mokėjimo metodą?",
+          "answer": "Paskyros nustatymuose pakoreguokite įmonės pavadinimą, PVM mokėtojo numerį ir mokėjimo metodą, kad naujos sąskaitos faktūros būtų teisingos. Skaityti daugiau: [Change invoice details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "acc-7",
+          "question": "Ar kolegos taip pat gali turėti prieigą?",
+          "answer": "Taip, su paskyros vaidmenimis (klientas, vadovas, administratorius), kad keli komandos nariai galėtų stebėti bilietus ar projektus nesidalydami viskuo."
+        },
+        {
+          "id": "acc-8",
+          "question": "Ar AI nuskaitymas ir AI agentai susieti su mano paskyra?",
+          "answer": "Taip. Nuskaitymai ir agentai priklauso jūsų kliento paskyrai, kad istorija ir teisės būtų išsaugotos. Skaityti daugiau: [AI agents](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "acc-9",
+          "question": "Kiek saugi mano kliento paskyra?",
+          "answer": "Jei įmanoma, naudokite unikalius slaptažodžius ir 2FA (įskaitant prieglobos skydelius). Nebendrinkite seansų bendrai naudojamuose kompiuteriuose. Skaityti daugiau: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
+        },
+        {
+          "id": "acc-10",
+          "question": "Ar galiu stebėti projekto būseną ir rezultatus?",
+          "answer": "Ten, kur portale pateikiami projektai, galite matyti būseną ir komunikaciją. Priešingu atveju mes jus informuosime per bilietus arba sprinto naujienas."
+        },
+        {
+          "id": "acc-11",
+          "question": "Kaip susieti paslaugas iš parduotuvės su paskyra?",
+          "answer": "Po apmokėjimo užsakymai priklauso jūsų paskyrai; aprūpinimas (priegloba, domenas) vyksta automatiškai arba per palaikymą. Skaityti daugiau: [Shop](/shop)."
+        },
+        {
+          "id": "acc-12",
+          "question": "Kur nustatyti pranešimus ar nuostatas?",
+          "answer": "Paskyros nustatymuose tvarkote profilį ir, kur galima, pranešimų nuostatas. Jei norite gauti el. pašto sąskaitos faktūros, nuolat atnaujinkite savo el. pašto adresą."
+        }
+      ]
+    },
+    {
+      "id": "shop-bestellen",
+      "title": "Parduotuvė ir užsakymas",
+      "items": [
+        {
+          "id": "shop-1",
+          "question": "Ką galiu užsisakyti parduotuvėje?",
+          "answer": "Prieglobos paketai, domenai, priežiūros/palaikymo produktai ir kitos paslaugos, kurias siūlome internetu. Individualios kainos pateikiamos susisiekus. Skaityti daugiau: [Shop](/shop) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "shop-2",
+          "question": "Kaip veikia pirkinių krepšelis ir kasa?",
+          "answer": "Pridėkite produktus, patikrinkite laikotarpį (mėnuo / metai) ir užpildykite atsiskaitydami. Tada gausite patvirtinimą ir prieigą prie savo paskyros. Skaityti daugiau: [Shopping cart](/shop/cart)."
+        },
+        {
+          "id": "shop-3",
+          "question": "Ar kainos yra su PVM ar be jos?",
+          "answer": "Parduotuvėje kainas rodome pagal rodomą PVM kontekstą (dažnai įskaitant vartotojų srautams). Sąskaitoje faktūroje nurodytas neto PVM paskirstymas verslo klientams."
+        },
+        {
+          "id": "shop-4",
+          "question": "Ar galiu mokėti kas mėnesį ar kasmet?",
+          "answer": "Daugelis prieglobos ir priežiūros produktų turi mėnesines ir metines parinktis. Kasmet dažnai būna pigiau; informacija nurodyta produkto kortelėje."
+        },
+        {
+          "id": "shop-5",
+          "question": "Kokius mokėjimo būdus sutinkate?",
+          "answer": "Įprasti internetiniai atsiskaitymo būdai (priklausomai nuo regiono). Dėl įmonės sąskaitų faktūrų galime susitarti dėl sąskaitų faktūrų išrašymo kontaktais."
+        },
+        {
+          "id": "shop-6",
+          "question": "Ar po apmokėjimo gaunu iš karto prieigą?",
+          "answer": "Standartiniams prieglobos / domeno produktams po sėkmingo apmokėjimo įvyksta greitai. Pasirinktinėms paslaugoms palaikymas planuoja pradėti."
+        },
+        {
+          "id": "shop-7",
+          "question": "Ar galiu vėliau atnaujinti paketus?",
+          "answer": "Taip. Planuojant perėjimą galima iš bendrinamo į debesį / VPS arba iš „Basic“ į „Plus“ / „Business“. Skaityti daugiau: [Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [Choose package](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "shop-8",
+          "question": "Kaip suderinti parduotuvės produktus su pritaikymu?",
+          "answer": "Užsisakykite prieglobą / priežiūrą internetu ir planuokite dizainą, SEO ar skelbimus per priėmimą. Kur įmanoma, sujungiame sąskaitų faktūrų išrašymą ir apskaitą. Skaityti daugiau: [Contact](/contact)."
+        },
+        {
+          "id": "shop-9",
+          "question": "Ką daryti, jei mano užsakymas negaunamas arba užstrigo?",
+          "answer": "Patikrinkite savo el. paštą (įskaitant šlamštą) ir portalą. Jei jis tyli, atidarykite bilietą arba susisiekite su palaikymo el. paštu su užsakymo numeriu. Skaityti daugiau: [Contact](/contact) · [Tickets](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "shop-10",
+          "question": "Ar galiu užsisakyti domeną ir prieglobą vienu užsakymu?",
+          "answer": "Taip, tai įprasta eiga: domenas + priegloba pirkinių krepšelyje, tada DNS ryšys. Skaityti daugiau: [Domains](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "shop-11",
+          "question": "Ar yra „WordPress Care“ paketų?",
+          "answer": "Taip. Priežiūros paketai apima atnaujinimus, stebėjimą ir priežiūrą – atskirai arba kartu su priegloba. Skaityti daugiau: [Shop](/shop)."
+        },
+        {
+          "id": "shop-12",
+          "question": "Kaip atšaukti arba pakeisti užsakymą?",
+          "answer": "Iš karto po užsakymo per palaikymą; Po to kiekvienam produktui taikomos atšaukimo ir keitimo sąlygos. Sustojus padedame migruoti ar eksportuoti. Skaityti daugiau: [Contact](/contact)."
         }
       ]
     },
@@ -514,12 +831,12 @@
         {
           "id": "sup-1",
           "question": "Kokią paramą siūlote?",
-          "answer": "Siūlome „WordPress“ palaikymą, tinkintos svetainės palaikymą, bilietus ir tiesioginį pokalbį, priežiūrą, saugumą, našumą ir atsaką į incidentus."
+          "answer": "Siūlome „WordPress“ palaikymą, tinkintos svetainės palaikymą, bilietus ir tiesioginį pokalbį, priežiūrą, saugumą, našumą ir atsaką į incidentus. [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting) · [Chat, ticket or call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)"
         },
         {
           "id": "sup-2",
           "question": "Kaip man pasiekti paramą?",
-          "answer": "Susisiekę, susitarę, bilietus prietaisų skydelyje arba tiesioginį pokalbį svetainėje. Skubūs atvejai pažymėti kaip prioritetiniai."
+          "answer": "Susisiekę, susitarę, bilietus prietaisų skydelyje arba tiesioginį pokalbį svetainėje. Skubūs atvejai pažymėti kaip prioritetiniai. [Contact](/contact) · [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Call appointment](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)"
         },
         {
           "id": "sup-3",
@@ -529,7 +846,7 @@
         {
           "id": "sup-4",
           "question": "Ar siūlote stebėjimą 24/7?",
-          "answer": "Taip, atitinkamuose palaikymo ir prieglobos paketuose: stebėjimas, atsarginės kopijos ir įspėjimai, kad problemos būtų matomos anksčiau."
+          "answer": "Taip, atitinkamuose palaikymo ir prieglobos paketuose: stebėjimas, atsarginės kopijos ir įspėjimai, kad problemos būtų matomos anksčiau. [Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup)"
         },
         {
           "id": "sup-5",
@@ -539,22 +856,22 @@
         {
           "id": "sup-6",
           "question": "Ar tvarkote „WordPress“ naujinimus už mus?",
-          "answer": "Taip, per „Priežiūra ir atnaujinimai“: branduolys, papildiniai ir temos su atsargine kopija ir patikra prieš ir po atnaujinimo."
+          "answer": "Taip, per „Priežiūra ir atnaujinimai“: branduolys, papildiniai ir temos su atsargine kopija ir patikra prieš ir po atnaujinimo. [Site down after WP update](/kennisbank/hosting/website-down-na-update-wordpress)"
         },
         {
           "id": "sup-7",
           "question": "Ar padedate su prieglobos problemomis?",
-          "answer": "Taip. Mes diagnozuojame, perkeliame arba optimizuojame prieglobą, VPS ir domenus, kol svetainė vėl veiks stabiliai."
+          "answer": "Taip. Mes diagnozuojame, perkeliame arba optimizuojame prieglobą, VPS ir domenus, kol svetainė vėl veiks stabiliai. [Move website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je)"
         },
         {
           "id": "sup-8",
           "question": "Ką daryti, jei mano svetainė neveikia?",
-          "answer": "Pranešti apie tai kaip skubų. Jei įmanoma, atkuriame kurdami atsargines kopijas, tikrindami serverius ir naudodami karštąsias pataisas, o pakeliui nuolat informuojame apie būseną."
+          "answer": "Pranešti apie tai kaip skubų. Jei įmanoma, atkuriame kurdami atsargines kopijas, tikrindami serverius ir naudodami karštąsias pataisas, o pakeliui nuolat informuojame apie būseną. [Backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [Check yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support)"
         },
         {
           "id": "sup-9",
           "question": "Ar yra klientų portalas?",
-          "answer": "Taip. Prisijungę klientai mato prietaisų skydelį, bilietus, projektus ir, kur reikia, CRM arba sąskaitas faktūras."
+          "answer": "Taip. Prisijungę klientai mato prietaisų skydelį, bilietus, projektus ir, kur reikia, CRM arba sąskaitas faktūras. [Ticket via customer panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel) · [Lost login?](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)"
         },
         {
           "id": "sup-10",
@@ -575,6 +892,56 @@
           "id": "sup-13",
           "question": "Ar galiu vėliau atnaujinti palaikymą?",
           "answer": "Taip. Galite padidinti mastą, kai auga srautas, rizika ar komandos poreikiai."
+        },
+        {
+          "id": "sup-14",
+          "question": "Kuo skiriasi pokalbis, bilietas ir susitikimas su skambučiu?",
+          "answer": "Pokalbis yra greitas trumpiems klausimams; bilietai yra geresni techniniams atvejams su žurnalais ir tolesniais veiksmais; telefoninis susitikimas yra tinkamas priėmimui ar sudėtingam paaiškinimui. Skaityti daugiau: [Chat versus ticket versus call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "sup-15",
+          "question": "Kaip sukurti palaikymo bilietą?",
+          "answer": "Prisijunkite prie klientų skydelio ir atidarykite bilietą su aiškiu URL, veiksmais ir ekrano kopijomis. Kuo geresnė informacija, tuo greičiau galėsime padėti. Skaityti daugiau: [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "sup-16",
+          "question": "Ar turite atsarginių kopijų, jei mano svetainė suges?",
+          "answer": "Taip, priklausomai nuo jūsų prieglobos ar palaikymo paketo. Prastovos atveju, jei įmanoma, atkuriame iš atsarginių kopijų ir tiriame priežastį. Skaityti daugiau: [Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor)."
+        },
+        {
+          "id": "sup-17",
+          "question": "Ką galiu pasitikrinti prieš skambindamas pagalbos tarnybai?",
+          "answer": "Patikrinkite būsenos puslapį, DNS plitimą, naujausius atnaujinimus, vietą diske ir ar klaida gali būti atkurta. Tai pagreitina diagnozę. Skaityti daugiau: [Do it yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support) · [Statuspage](/statuspage)."
+        },
+        {
+          "id": "sup-18",
+          "question": "Kaip svetainėje veikia tiesioginis pokalbis?",
+          "answer": "Atidarykite tiesioginį pokalbį naudodami pokalbio mygtuką. Agentas 000 pirmiausia padeda su DUK / žinių baze; Sudėtingesniais ar skubesniais klausimais nukreipiame jus į darbuotoją. Skaityti daugiau: [Digital Assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Contact](/contact)."
+        },
+        {
+          "id": "sup-19",
+          "question": "Ar galite padėti išspręsti kritinę „WordPress“ klaidą?",
+          "answer": "Taip. Diagnozuojame baltus ekranus, kritines PHP klaidas ir papildinių konfliktus su atsargine kopija ir tikslinga pataisa. Skaityti daugiau: [Critical Error WordPress](/kennisbank/wordpress/kritieke-fout-wordpress) · [Down after update](/kennisbank/hosting/website-down-na-update-wordpress)."
+        },
+        {
+          "id": "sup-20",
+          "question": "Ar galite žiūrėti nuotoliniu būdu (TeamViewer ir kt.)?",
+          "answer": "Jei reikia ir gavus leidimą, dėl darbalaukio ar skydelio problemų. Daugeliui prieglobos reikalų pakanka prieigos prie skydelio, DNS arba WordPress. Skaityti daugiau: [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "sup-21",
+          "question": "Kaip atšaukti prenumeratą ar paslaugą?",
+          "answer": "Galite atšaukti per klientų skydelį arba palaikymą; atkreipkite dėmesį į įspėjimo terminus savo sutartyje. Padedame tvarkingai atlikti duomenų/eksportavimo ir DNS perdavimą. Skaityti daugiau: [Contact](/contact) · [Account](/dashboard)."
+        },
+        {
+          "id": "sup-22",
+          "question": "Ar siūlote „WordPress“ priežiūros / priežiūros paketus?",
+          "answer": "Taip. Atnaujinimai, atsarginės kopijos, saugos patikros ir našumas yra įtraukti į priežiūros paketus – idealiai tinka prieglobai. Skaityti daugiau: [Shop](/shop) · [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren)."
+        },
+        {
+          "id": "sup-23",
+          "question": "Ką daryti, jei el. paštas staiga nustoja veikti?",
+          "answer": "Patikrinkite DNS (MX/SPF/DKIM/DMARC), pašto dėžutės kvotą ir ar „Microsoft“ ar paslaugų teikėjai blokuoja paštą. Padedame išmatuoti grandinę. Skaityti daugiau: [Email Problems](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
         }
       ]
     },
@@ -585,7 +952,7 @@
         {
           "id": "web-1",
           "question": "Ar kuriate tik „WordPress“ svetaines?",
-          "answer": "Ne. Be „WordPress“, mes kuriame tinkintą interneto dizainą HTML/CSS/JS, PHP ir Next.js – atskirai nuo „WordPress“ paslaugų."
+          "answer": "Ne. Be „WordPress“, mes kuriame tinkintą interneto dizainą HTML/CSS/JS, PHP ir Next.js – atskirai nuo „WordPress“ paslaugų. [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [Services](/diensten)"
         },
         {
           "id": "web-2",
@@ -635,7 +1002,7 @@
         {
           "id": "web-11",
           "question": "O našumas po paleidimo?",
-          "answer": "Optimizuojame pagrindinius žiniatinklio elementus, talpyklą arba CDN ir stebėjimą. Vėliau priežiūra tęsiama naudojant priežiūros paketus."
+          "answer": "Optimizuojame pagrindinius žiniatinklio elementus, talpyklą arba CDN ir stebėjimą. Vėliau priežiūra tęsiama naudojant priežiūros paketus. [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)"
         },
         {
           "id": "web-12",
@@ -651,87 +1018,349 @@
           "id": "web-14",
           "question": "Ar padedate optimizuoti konversijas svetainėje?",
           "answer": "Taip. Atliekame A/B testus, UX patobulinimus, formas, raginimus veikti ir puslapio greitį, kad daugiau lankytojų konvertuotų."
+        },
+        {
+          "id": "web-15",
+          "question": "Ar kuriate ir internetines parduotuves?",
+          "answer": "Taip, nuo rinkodaros svetainių su atsiskaitymo integravimu iki el. prekybos naudojant „WordPress“ ar tinkinimo. Priėmimo metu deriname apimtį, mokėjimus ir vykdymą. Skaityti daugiau: [Services](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "web-16",
+          "question": "Kaip elgiatės su privatumo tekstais svetainėse?",
+          "answer": "Konsultuojame ir įgyvendiname privatumo ir sutikimo srautus formoms ir reklamjuostėms, prireikus pritaikytoms jūsų advokatui. Skaityti daugiau: [Privacy with forms](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren) · [Cookie banner](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "web-17",
+          "question": "Ar suteikiate scenos aplinką?",
+          "answer": "Taip, kur tinka: surengimas peržiūroms ir bandymams, tada kontroliuojamas diegimas į gamybą."
+        },
+        {
+          "id": "web-18",
+          "question": "Ar galite perimti ir patobulinti esamą „WordPress“ svetainę?",
+          "answer": "Taip – ​​auditas, atnaujinimai, sauga, greitis, UX ir SEO, be reikalo nekuriant nuo nulio. Skaityti daugiau: [WP move](/kennisbank/domeinnamen/wordpress-website-verhuizen) · [Critical errors](/kennisbank/wordpress/kritieke-fout-wordpress)."
+        },
+        {
+          "id": "web-19",
+          "question": "Ką apie HTTP į HTTPS po pristatymo?",
+          "answer": "Pagal numatytuosius nustatymus svetainėse yra HTTPS. Perkėlimų metu priverčiame HTTPS ir išsprendžiame mišrų turinį. Skaityti daugiau: [HTTP to HTTPS in WordPress](/kennisbank/wordpress/wordpress-url-omzetten-van-http-naar-https) · [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig)."
+        }
+      ]
+    },
+    {
+      "id": "domeinen",
+      "title": "Sritys",
+      "items": [
+        {
+          "id": "dom-1",
+          "question": "Kas yra domeno vardas?",
+          "answer": "Domeno pavadinimas yra adresas, kurį lankytojai naudoja norėdami rasti jūsų svetainę (pvz., example.com). Jis susiejamas su DNS įrašais, kurie nurodo jūsų prieglobą arba el. Skaityti daugiau: [Domain registration](/kennisbank/domeinnamen/domeinnaamregistratie) · [Order domains](/domeinen)."
+        },
+        {
+          "id": "dom-2",
+          "question": "Kaip pas jus užregistruoti domeno vardą?",
+          "answer": "Ieškokite pavadinimo domenų puslapyje, pasirinkite plėtinį ir užbaikite apmokėjimą parduotuvėje. Po registracijos savo paskyroje tvarkote DNS, vardų serverius ir sąskaitas faktūras. Skaityti daugiau: [Domains](/domeinen) · [Registration guide](/kennisbank/domeinnamen/domeinnaamregistratie) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-3",
+          "question": "Ar galiu perleisti savo domeną jums?",
+          "answer": "Taip. Prašykite autorizacijos (EPP) kodo iš dabartinio registratoriaus, atrakinkite bet kokį perdavimo užraktą, tada pradėkite perkėlimą pas mus. Po to mes teisingai nustatėme DNS ir vardų serverius. Skaityti daugiau: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Authorisation code](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-4",
+          "question": "Kas yra autorizacijos kodas (EPP / Auth kodas)?",
+          "answer": "Tai vienkartinis kodas iš dabartinio registratoriaus, kuris saugiai pradeda domeno perkėlimą. Be galiojančio kodo perkėlimas negali būti tęsiamas. Skaityti daugiau: [What is an authorisation code?](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen)."
+        },
+        {
+          "id": "dom-5",
+          "question": "Kas yra perdavimo užraktas arba registratoriaus užraktas?",
+          "answer": "Užraktas apsaugo nuo nepageidaujamų perdavimų. Norėdami persikelti, dažnai pirmiausia turite jį išjungti pas dabartinį teikėją, tada pradėti perkėlimą pas mus. Skaityti daugiau: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Support](/contact)."
+        },
+        {
+          "id": "dom-6",
+          "question": "Ar galiu nusipirkti domeną be prieglobos?",
+          "answer": "Taip. Galite užsiregistruoti arba perkelti tik domeną ir vėliau pridėti prieglobą ar el. Tuo tarpu jau galite valdyti arba persiųsti DNS. Skaityti daugiau: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-7",
+          "question": "Kokius plėtinius (.nl, .com, …) galiu registruoti?",
+          "answer": "Mes palaikome įprastus ALD, pvz., .nl ir .com, taip pat daug tarptautinių plėtinių. Prieinamumas ir kaina iš karto rodomi domeno paieškoje. Skaityti daugiau: [Domains](/domeinen) · [Registration](/kennisbank/domeinnamen/domeinnaamregistratie)."
+        },
+        {
+          "id": "dom-8",
+          "question": "Kaip atnaujinti domeno vardą?",
+          "answer": "Atnaujinimas vyksta per sąskaitas faktūras ir jūsų klientų portalą; dažnai galimas automatinis atnaujinimas. Atnaujinkite mokėjimo informaciją, kad išvengtumėte galiojimo pabaigos. Skaityti daugiau: [Invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails) · [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "dom-9",
+          "question": "Kas yra aukščiausios kokybės domenų vardai?",
+          "answer": "Aukščiausios kokybės vardai yra trumpi arba populiarūs domenai, kurių pirkimo kaina yra didesnė, dažnai perkant antrinę rinką. Prieinamumas ir sąlygos skiriasi priklausomai nuo išplėtimo. Skaityti daugiau: [Premium domains](/kennisbank/domeinnamen/premium-domeinnamen) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-10",
+          "question": "Ar galiu užregistruoti savo domeną anonimiškai (Apsaugos ID)?",
+          "answer": "Jei tai leidžia registras, galite apsvarstyti privatumo / apsaugos ID. Taisyklės skiriasi pagal plėtinį – pavyzdžiui, .nl turi savo sistemą. Skaityti daugiau: [Protect ID](/kennisbank/domeinnamen/protect-id-domein-anoniem-registreren)."
+        },
+        {
+          "id": "dom-11",
+          "question": "Mano domenas karantine – kas dabar?",
+          "answer": "Ištrynus domeną, jis gali patekti į karantiną. Priklausomai nuo registro, dažnai galite jį iš naujo suaktyvinti už tam tikrą mokestį; nelaukite per ilgai. Skaityti daugiau: [Domain out of quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-12",
+          "question": "Mano naujas domeno vardas dar neveikia – kas dabar?",
+          "answer": "Paprastai tai yra DNS platinimas, trūkstami A/MX įrašai arba dar neatnaujinti vardų serveriai. Patikrinkite įrašus ir leiskite TTL galioti. Skaityti daugiau: [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-13",
+          "question": "Kaip prijungti domeną prie prieglobos plano?",
+          "answer": "Pridėkite domeną savo skydelyje arba paskyroje ir nurodykite DNS (A įrašą arba vardų serverius) į prieglobą. Padedame atlikti pirmąjį pajungimą po užsakymo. Skaityti daugiau: [Connect domain to plan](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-14",
+          "question": "Ar galiu persiųsti domeną?",
+          "answer": "Taip. Domeno persiuntimas nukreipia lankytojus į kitą URL – naudinga prekių pavadinimams be atskiros svetainės. Suderiname DNS ir peradresavimus su jūsų sąranka. Skaityti daugiau: [Forward a domain](/kennisbank/domeinnamen/domeinnaam-doorsturen) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-15",
+          "question": "Kaip pakeisti savo domeno vardų serverius?",
+          "answer": "DNS / domeno valdyme pasirenkate mūsų vardų serverius arba išorinius (pvz., CDN). Dauginimas gali trukti nuo kelių valandų iki dienos. Skaityti daugiau: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-16",
+          "question": "Kiek kainuoja domeno vardas?",
+          "answer": "Kainos skiriasi priklausomai nuo pratęsimo ir laikotarpio; domeno paieška rodo esamas registracijos ir atnaujinimo kainas. Premium pavadinimai turi atskirą kainą. Skaityti daugiau: [Domains](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-17",
+          "question": "Ar priegloba ir domenas turi būti pas tą patį teikėją?",
+          "answer": "Ne, bet tai paprasčiau: DNS, SSL, el. paštas ir palaikymas, tada sėdi su viena puse. Taip pat pas mus galite laikyti tik DNS ir priglobti kitur. Skaityti daugiau: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "dom-18",
+          "question": "Ar galiu valdyti kelis domenus vienoje paskyroje?",
+          "answer": "Taip. Papildomus domenus galima registruoti arba perkelti ir susieti kaip priedus, palikti arba persiųsti – neviršijant prieglobos plano ribų. Skaityti daugiau: [Domains](/domeinen) · [Choose a hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "dom-19",
+          "question": "Kas nutiks, jei baigsis mano domeno galiojimo laikas?",
+          "answer": "Pasibaigus galiojimo laikui, dažnai būna lengvatinis arba karantino laikotarpis, kai pasveikimas vis dar įmanomas; vėliau kas nors kitas gali to reikalauti. Atnaujinkite laiku pagal sąskaitas faktūras. Skaityti daugiau: [Quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-20",
+          "question": "Kur galiu užsisakyti ar valdyti domenus?",
+          "answer": "Registruotis ir pervesti per domenų puslapį arba parduotuvę; valdymas (DNS, sąskaitos faktūros, atnaujinimas) gyvuoja klientų portale. Skaityti daugiau: [Domains](/domeinen) · [Shop](/shop) · [Account](/dashboard)."
         }
       ]
     },
     {
       "id": "webhosting",
-      "title": "Interneto priegloba ir domenai",
+      "title": "Interneto priegloba",
       "items": [
         {
           "id": "host-1",
           "question": "Kokį hostingą siūlote?",
-          "answer": "Siūlome bendrą prieglobą, „WordPress“ prieglobą ir VPS – Basic, Plus ir Business lygiuose – ir domenus."
+          "answer": "Siūlome bendrą prieglobą, debesų prieglobą, WordPress prieglobą ir VPS – taip pat domeno registraciją. Rinkitės pagal srautą, krūvą ir augimą. Skaityti daugiau: [Shared hosting](/diensten/shared-hosting) · [Cloud hosting](/diensten/cloud-hosting) · [WordPress hosting](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-2",
-          "question": "Kuo skiriasi bendrinamas, „WordPress“ ir VPS?",
-          "answer": "Bendrinimas yra ekonomiškas mažesnėms svetainėms. „WordPress“ priegloba yra optimizuota WP. VPS suteikia daugiau išteklių ir kontrolės sunkesniems kroviniams."
+          "question": "Kuo skiriasi bendrinamas, debesis, „WordPress“ ir VPS?",
+          "answer": "Bendrinimas yra ekonomiškas mažesnėms svetainėms. Debesis suteikia daugiau išteklių ir mastelio, visiškai valdomas. „WordPress“ priegloba yra optimizuota WP. VPS leidžia geriau valdyti sunkesnius krovinius. Skaityti daugiau: [Differences explained](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps) · [Shared plans](/kennisbank/hosting/wat-is-shared-hosting-basic-plus-en-business) · [VPS plans](/kennisbank/hosting/wat-is-vps-hosting-basic-plus-en-business)."
         },
         {
           "id": "host-3",
-          "question": "Ar padedate registruojant domeną?",
-          "answer": "Taip. Konsultuojame, registruojame ar perleidžiame domeną ir teisingai prijungiame DNS."
+          "question": "Kas pas jus yra priegloba debesyje?",
+          "answer": "Priegloba debesyje suteikia daugiau išteklių ir mastelio nei klasikinis bendrinamas, o mes ir toliau tvarkome. Idealiai tinka, kai dalijamasi įtemptai, bet pilno VPS dar nereikia. Skaityti daugiau: [Cloud hosting](/diensten/cloud-hosting) · [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
         },
         {
           "id": "host-4",
           "question": "Ar SSL yra įtrauktas į prieglobą?",
-          "answer": "Taip. SSL yra mūsų atitinkamų prieglobos planų standartas."
+          "answer": "Taip. SSL yra standartinis mūsų atitinkamuose prieglobos planuose, todėl svetainės veikia HTTPS. Skaityti daugiau: [What is SSL?](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [Install Let's Encrypt](/kennisbank/hosting/hoe-installeer-ik-een-gratis-lets-encrypt-ssl-certificaat)."
         },
         {
           "id": "host-5",
           "question": "Ar galite perkelti mano svetainę į savo prieglobą?",
-          "answer": "Taip. Tvarkome atsargines kopijas, perkėlimą, DNS perjungimą, SSL ir dūmų testus su minimaliomis prastovomis."
+          "answer": "Taip. Tvarkome atsargines kopijas, perkėlimą, DNS perjungimą, SSL ir dūmų testus su minimaliomis prastovomis. Skaityti daugiau: [Migrate website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je) · [Migrate WordPress](/kennisbank/domeinnamen/wordpress-website-verhuizen)."
         },
         {
           "id": "host-6",
           "question": "Kaip atsarginės kopijos veikia priegloboje?",
-          "answer": "Tai priklauso nuo plano: paprastos ar automatinės atsarginės kopijos. Galimas papildomas saugojimas už objekto ribų."
+          "answer": "Tai priklauso nuo plano: paprastos ar automatinės atsarginės kopijos. Galimas papildomas saugojimas už objekto ribų. Skaityti daugiau: [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor) · [Backup in DirectAdmin](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
         },
         {
           "id": "host-7",
           "question": "Ką daryti, jei sulauksiu daugiau srauto?",
-          "answer": "Tada pritaikome prie „Plus“, „Business“ arba „VPS“ ir optimizuojame talpyklą bei CDN, kad svetainė galėtų prisitaikyti prie augimo."
+          "answer": "Tada pritaikome prie „Plus“, „Business“, „Cloud“ arba VPS ir optimizuojame talpyklą bei CDN, kad svetainė galėtų augti. Skaityti daugiau: [When to move to VPS?](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)."
         },
         {
           "id": "host-8",
-          "question": "Ar siūlote el. paštą su domenais?",
-          "answer": "Tai priklauso nuo pakuotės ir sąrankos. Patariame patikimus pašto sprendimus ir teisingai nustatome DNS (SPF, DKIM ir DMARC)."
+          "question": "Kiek saugus jūsų priegloba?",
+          "answer": "Mes naudojame ugniasienę, SSL, atnaujinimus, stebėjimą ir grūdinimą. Kur reikia, galimi papildomi saugos sluoksniai. Skaityti daugiau: [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
         },
         {
           "id": "host-9",
-          "question": "Kiek saugus jūsų priegloba?",
-          "answer": "Mes naudojame ugniasienę, SSL, atnaujinimus, stebėjimą ir grūdinimą. Papildomos saugos paslaugos gali pridėti daugiau sluoksnių viršuje."
+          "question": "Ar galiu vėliau pereiti nuo bendrinamo prie VPS?",
+          "answer": "Taip. Perkėlimą planuojame kartu, įskaitant bandymus ir atšaukimą, todėl jungiklis išlieka valdomas. Skaityti daugiau: [Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [VPS hosting](/diensten/vps-hosting)."
         },
         {
           "id": "host-10",
-          "question": "Ar galiu vėliau pereiti nuo bendrinamo prie VPS?",
-          "answer": "Taip. Perkėlimą planuojame kartu, įskaitant bandymus ir atšaukimą, todėl jungiklis išlieka valdomas."
+          "question": "Ar palaikote CDN?",
+          "answer": "Taip, kur reikia – dažnai nemokamas CDN įtraukiamas į WP prieglobos planus – siekiant greitesnio pristatymo visame pasaulyje. Skaityti daugiau: [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [WordPress hosting](/diensten/wordpress-hosting)."
         },
         {
           "id": "host-11",
-          "question": "Ar palaikote CDN?",
-          "answer": "Taip, kur reikia – dažnai nemokamas CDN įtraukiamas į WP prieglobos planus – siekiant greitesnio pristatymo visame pasaulyje."
+          "question": "Koks jūsų veikimo laiko metodas?",
+          "answer": "Stebime, greitai reaguojame į incidentus ir aiškiai bendraujame aplink techninės priežiūros langus, kad žinotumėte, kas vyksta. Būsenos atnaujinimai yra būsenos puslapyje. Skaityti daugiau: [Status page](/statuspage) · [Contact](/contact)."
         },
         {
           "id": "host-12",
-          "question": "Koks jūsų veikimo laikas?",
-          "answer": "Stebime, greitai reaguojame į incidentus ir aiškiai bendraujame aplink techninės priežiūros langus, kad žinotumėte, kas vyksta."
+          "question": "Kaip išsirinkti tinkamą prieglobos planą?",
+          "answer": "Remiantis srautu, krūva (WordPress arba pasirinktine), ištekliais ir augimu. Patariame nuoširdžiai – neperparduodame. Skaityti daugiau: [Choose the right hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Shared vs WP vs VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
         },
         {
           "id": "host-13",
-          "question": "Ar padedate išspręsti DNS problemas?",
-          "answer": "Taip. Taisome įrašus, platinimą, pašto autentifikavimą ir domeno ryšius, kol DNS vėl bus teisingas."
+          "question": "Kur galiu pamatyti hostingo kainas?",
+          "answer": "Prieglobos paslaugų puslapiuose ir parduotuvėje, kur taikoma, su mėnesio arba metų parinktimis. Skaityti daugiau: [Shared](/diensten/shared-hosting) · [Cloud](/diensten/cloud-hosting) · [WordPress](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting) · [Shop](/shop)."
         },
         {
           "id": "host-14",
-          "question": "Kaip išsirinkti tinkamą prieglobos planą?",
-          "answer": "Remiantis srautu, krūva (WordPress arba pasirinktine), ištekliais ir augimu. Patariame nuoširdžiai – neperparduodame."
+          "question": "Ar priegloboje galiu gauti SSH prieigą?",
+          "answer": "Tai priklauso nuo plano. Daugelyje planų SSH yra arba jo galima paprašyti; VPS paprastai gaunate visišką prieigą. Skaityti daugiau: [SSH access](/kennisbank/hosting/heb-ik-ssh-toegang-op-mijn-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-15",
-          "question": "Kur galiu pamatyti hostingo kainas?",
-          "answer": "Prieglobos paslaugų puslapiuose, skiltyje Paslaugos → Žiniatinklio priegloba ir domenai, su mėnesio arba metų parinktimis, jei taikoma."
+          "question": "Kaip įdiegti „WordPress“ jūsų priegloboje?",
+          "answer": "Per valdymo skydelį (pvz., „DirectAdmin“ / „Installatron“) arba rankiniu būdu. Turime nuoseklų vadovą. Skaityti daugiau: [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-16",
+          "question": "Kas yra inodai ir kodėl mano planas atrodo „pilnas“?",
+          "answer": "Inodes skaičiuoja failus/aplankus, ne tik GB. Daugelis mažų talpyklos ar pašto failų gali pasiekti ribą, kol diske vis dar atrodo laisva. Skaityti daugiau: [Inodes](/kennisbank/hosting/inodes-en-inode-limieten) · [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-17",
+          "question": "Ką reiškia „neribota“ saugykla arba srautas?",
+          "answer": "„Neribotas“ reiškia sąžiningą naudojimą: įprastas svetainės naudojimas yra tinkamas; piktnaudžiavimas ar didelės apkrovos gali būti apribotos, kad platforma būtų stabili. Skaityti daugiau: [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-18",
+          "question": "Kuo skiriasi bendrinamas, VPS ir skirtas?",
+          "answer": "Bendrai dalijasi ištekliais; VPS izoliuoja daugiau CPU/RAM; skirtas visas serveris. Pasirinkite pagal srautą, kontrolės poreikius ir biudžetą. Skaityti daugiau: [Dedicated vs VPS vs shared](/kennisbank/infrastructuur-servers/verschil-tussen-dedicated-vps-en-shared-hosting) · [Shared/WP/VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
+        },
+        {
+          "id": "host-19",
+          "question": "Kaip dirbti su „DirectAdmin“?",
+          "answer": "„DirectAdmin“ yra el. pašto, DNS, duomenų bazių, atsarginių kopijų ir diegimo valdymo pultas. Prisijunkite naudodami savo skydelio kredencialus; mes primygtinai rekomenduojame 2FA. Skaityti daugiau: [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Backups](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
+        },
+        {
+          "id": "host-20",
+          "question": "Ar siūlote „WordPress“ objektų talpyklą?",
+          "answer": "Tinkamuose planuose palaikome nuolatinę objektų talpyklą, kad sumažintume duomenų bazės užklausas ir įkeltume greičiau. Skaityti daugiau: [Object cache](/kennisbank/hosting/persistent-object-cache-in-wordpress) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-21",
+          "question": "Kaip atnaujinti arba sumokėti už prieglobą?",
+          "answer": "Per klientų portalą ir sąskaitas faktūras; dažnai galimas automatinis atnaujinimas. Atnaujinkite atsiskaitymo informaciją, kad išvengtumėte trikdžių. Skaityti daugiau: [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode) · [View invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "host-22",
+          "question": "Ar galiu į vieną prieglobos planą įtraukti kelis domenus?",
+          "answer": "Dažnai taip, naudojant priedą arba paliktuosius domenus – priklausomai nuo plano apribojimų. Padedame su prisijungimu ir DNS. Skaityti daugiau: [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Connect domain](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket)."
+        },
+        {
+          "id": "host-23",
+          "question": "Ar saugus prisijungimas prie prieglobos skydelio?",
+          "answer": "Naudokite stiprų slaptažodį ir įgalinkite 2FA. Nesidalinkite skydelio prisijungimo duomenimis per nesaugius kanalus. Skaityti daugiau: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "host-24",
+          "question": "Kas tiksliai yra „WordPress“ priegloba?",
+          "answer": "„WordPress“ priegloba yra optimizuota WP: greitesnis PHP / krūva, dažnai CDN ir paprastesnis diegimas / atnaujinimas nei bendrai naudojamas. Skaityti daugiau: [WP hosting plans](/kennisbank/hosting/wat-is-wordpress-hosting-basic-plus-en-pro) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-25",
+          "question": "Kur galiu tiesiogiai užsisakyti hostingą?",
+          "answer": "Parduotuvėje arba per Shared, Cloud, WordPress ir VPS prieglobos kategorijas. Po užsakymo gausite prieigą prie skydelio ir sąskaitos faktūros. Skaityti daugiau: [Shop](/shop) · [Hosting overview](/diensten/categorie/hosting)."
+        }
+      ]
+    },
+    {
+      "id": "email-dns",
+      "title": "Paštas ir DNS",
+      "items": [
+        {
+          "id": "mail-1",
+          "question": "Ar siūlote el. paštą su domenais ar prieglobą?",
+          "answer": "Tai priklauso nuo pakuotės ir sąrankos. Patariame patikimus pašto sprendimus ir teisingai nustatome DNS (SPF, DKIM ir DMARC). Skaityti daugiau: [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress) · [SPF record](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-2",
+          "question": "Kas yra SPF, DKIM ir DMARC?",
+          "answer": "Tai yra DNS įrašai, kurie tvarko el. pašto autentifikavimą ir mažina klastojimą / šlamštą. Be teisingų įrašų paštas dažniau patenka į šiukšlių dėžę. Skaityti daugiau: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-3",
+          "question": "Kaip tvarkyti DNS įrašus?",
+          "answer": "Naudodami savo domeno DNS valdymą arba prieglobos skydelį, nustatote A, AAAA, CNAME, MX ir TXT įrašus. Padedame su migravimu ir pašto autentiškumu. Skaityti daugiau: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [DNSSEC](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-4",
+          "question": "Ar padedate išspręsti DNS problemas?",
+          "answer": "Taip. Taisome įrašus, platinimą, pašto autentifikavimą ir domeno ryšius, kol DNS vėl bus teisingas. Skaityti daugiau: [Manage DNS records](/kennisbank/domeinnamen/dns-records-beheren) · [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen)."
+        },
+        {
+          "id": "mail-5",
+          "question": "Kas yra DNSSEC?",
+          "answer": "DNSSEC pasirašo DNS atsakymus, todėl manipuliuoti yra sunkiau. Galime jį įjungti ten, kur palaiko jūsų ALD ir sąranka. Skaityti daugiau: [DNSSEC explained](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-6",
+          "question": "Kaip telefone nustatyti el. paštą?",
+          "answer": "Naudokite IMAP/SMTP informaciją iš savo skydelio. „Android“ (ir panašiai „iOS“) veiksmai pateikiami žinių bazėje. Skaityti daugiau: [Email on Android](/kennisbank/e-mail/e-mail-instellen-op-android) · [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress)."
+        },
+        {
+          "id": "mail-7",
+          "question": "Ką daryti, jei el. paštas staiga nustoja veikti?",
+          "answer": "Patikrinkite DNS (MX/SPF/DKIM/DMARC), pašto dėžutės kvotą ir ar paslaugų teikėjai blokuoja paštą. Padedame atsekti visą grandinę. Skaityti daugiau: [Email problems](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-8",
+          "question": "Kaip veikia vardų serveriai?",
+          "answer": "Vardų serveriai nustato, kuri DNS sistema aptarnauja jūsų domeną. Jei juos pakeisite, A/MX/TXT įrašus vėl turite teisingai nustatyti naujajame DNS pagrindiniame kompiuteryje. Skaityti daugiau: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "mail-9",
+          "question": "Kiek laiko trunka DNS platinimas?",
+          "answer": "Dažnai nuo minučių iki kelių valandų; kartais iki 24–48 valandų dėl TTL ir talpyklų. Sumažinkite TTL prieš perkėlimą, kad perjungtumėte greičiau. Skaityti daugiau: [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen) · [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet)."
+        },
+        {
+          "id": "mail-10",
+          "question": "Ar galiu persiųsti el. laišką kitu adresu?",
+          "answer": "Taip. Ekspeditoriai siunčia gaunamus laiškus į „Gmail“, „Microsoft 365“ ar kitą pašto dėžutę – naudinga kartu su visa pašto dėžute arba vietoj jos. Skaityti daugiau: [Forward email](/kennisbank/e-mail/email-doorsturen-naar-mailadres)."
+        },
+        {
+          "id": "mail-11",
+          "question": "Ar galiu prijungti savo domeną prie „Microsoft 365“?",
+          "answer": "Taip. Jūs nustatote MX ir autentifikavimo įrašus (SPF/DKIM/DMARC) vadovaudamiesi „Microsoft“ instrukcijomis; padedame DNS pusėje. Skaityti daugiau: [Domain to Microsoft 365](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-microsoft-365) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-12",
+          "question": "Kodėl mano paštas patenka į šlamštą?",
+          "answer": "Dažnai trūksta SPF / DKIM / DMARC arba jie prieštarauja, arba IP / reputacija yra silpna. Tikriname DNS autentifikavimą ir siuntimo elgseną. Skaityti daugiau: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-13",
+          "question": "Kas yra MX įrašas?",
+          "answer": "MX įrašas nurodo internetui, kuris pašto serveris gali gauti jūsų domeno el. laiškus. Be teisingo MX laiškas negaunamas. Skaityti daugiau: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Email problems](/kennisbank/hosting/problemen-met-e-mail-website)."
+        },
+        {
+          "id": "mail-14",
+          "question": "Ar galiu naudoti internetinį paštą?",
+          "answer": "Taip, naudodami savo prieglobos skydelio žiniatinklio pašto URL galite skaityti ir siųsti laiškus naršyklėje – kartu su IMAP telefonu arba „Outlook“. Skaityti daugiau: [Set up email](/kennisbank/e-mail/e-mail-instellen-op-android) · [Contact](/contact)."
+        },
+        {
+          "id": "mail-15",
+          "question": "Ar DNS turi būti su jumis, jei priegloba yra kitur?",
+          "answer": "Ne. Galite laikyti DNS pas mus arba kitur, kol A/MX/TXT nurodo tinkamas paslaugas. Nuoseklus valdymas užkerta kelią migracijos klaidoms. Skaityti daugiau: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Nameservers](/kennisbank/domeinnamen/nameservers-beheren)."
         }
       ]
     }

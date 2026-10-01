@@ -1,0 +1,1 @@
+Tai priklauso nuo plano: paprastos ar automatinės atsarginės kopijos. Galimas papildomas saugojimas už objekto ribų. Skaityti daugiau: ⟦L0⟧ · ⟦L1⟧.

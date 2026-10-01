@@ -1,0 +1,1 @@
+Ano. Migraci plánujeme společně, včetně testů a rollbacku, takže přepínač zůstane pod kontrolou. Přečtěte si více: ⟦L0⟧ · ⟦L1⟧.

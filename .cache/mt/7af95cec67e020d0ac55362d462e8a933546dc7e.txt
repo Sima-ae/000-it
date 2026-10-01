@@ -1,0 +1,1 @@
+po. Përcjellja e domenit i dërgon vizitorët në një URL tjetër – e dobishme për emrat e markave pa një faqe të veçantë. Ne lidhim DNS dhe ridrejtojmë me konfigurimin tuaj. Lexo më shumë: ⟦L0⟧ · ⟦L1⟧.

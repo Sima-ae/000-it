@@ -1,0 +1,1 @@
+Souvent, les SPF/DKIM/DMARC sont manquants ou en conflit, ou la propriété intellectuelle/réputation est faible. Nous vérifions l'authentification DNS et le comportement d'envoi. Lire la suite : ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

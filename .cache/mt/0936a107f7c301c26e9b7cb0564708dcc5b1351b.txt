@@ -1,0 +1,1 @@
+Ja. Vi håndterer backup, migrering, DNS cutover, SSL og røyktester, med minimal nedetid. Les mer: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Tűzfalat, SSL-t, frissítéseket, monitorozást és keményítést használunk. Extra biztonsági rétegek állnak rendelkezésre, ahol szükséges. Bővebben: ⟦L0⟧ · ⟦L1⟧.

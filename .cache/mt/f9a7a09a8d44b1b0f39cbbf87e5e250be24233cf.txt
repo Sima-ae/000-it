@@ -1,0 +1,1 @@
+„DirectAdmin“ yra el. pašto, DNS, duomenų bazių, atsarginių kopijų ir diegimo valdymo pultas. Prisijunkite naudodami savo skydelio kredencialus; mes primygtinai rekomenduojame 2FA. Skaityti daugiau: ⟦L0⟧ · ⟦L1⟧.

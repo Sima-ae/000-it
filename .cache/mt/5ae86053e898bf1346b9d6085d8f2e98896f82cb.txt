@@ -1,0 +1,1 @@
+Përdorni fjalëkalime unike dhe 2FA aty ku janë të disponueshme (përfshirë në panelet pritëse). Mos i ndani sesionet në kompjuterë të përbashkët. Lexo më shumë: ⟦L0⟧2FA DirectAdmin⟦/L0⟧.

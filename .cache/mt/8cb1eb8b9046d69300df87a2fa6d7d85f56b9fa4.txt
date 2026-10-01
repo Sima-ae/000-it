@@ -1,0 +1,1 @@
+Ofte minutter til et par timer; nogle gange op til 24-48 timer på grund af TTL'er og caches. Lavere TTL'er før en migrering for at skifte hurtigere. Læs mere: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Delade delar resurser; VPS isolerar mer CPU/RAM; dedikerad är en hel server. Välj efter trafik, kontrollbehov och budget. Läs mer: ⟦L0⟧ · ⟦L1⟧.

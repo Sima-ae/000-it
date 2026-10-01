@@ -1,0 +1,1 @@
+Delte ressourcer; VPS isolerer mere CPU/RAM; dedikeret er en hel server. Vælg efter trafik, kontrolbehov og budget. Læs mere: ⟦L0⟧ · ⟦L1⟧.

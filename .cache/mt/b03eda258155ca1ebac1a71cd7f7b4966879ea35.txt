@@ -1,0 +1,1 @@
+Gli inode contano file/cartelle, non solo GB. Molti piccoli file di cache o di posta possono raggiungere il limite mentre lo spazio su disco sembra ancora libero. Per saperne di più: ⟦L0⟧ · ⟦L1⟧.

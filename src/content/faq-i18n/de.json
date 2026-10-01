@@ -1,9 +1,9 @@
 {
   "title": "Häufig gestellte Fragen",
-  "subtitle": "Fragen und Antworten — von KI, AEO, GEO und SEO bis hin zu Design, Domains, Hosting, Marketing, Social Media und Support.",
-  "ctaTitle": "Brauchst du noch Hilfe?",
-  "ctaText": "Du kannst deine Frage nicht finden? Kontaktiere uns – wir werden uns so schnell wie möglich bei dir melden.",
-  "ctaButton": "Kontaktiere uns",
+  "subtitle": "Fragen und Antworten – von KI, AEO, GEO und SEO bis hin zu Design, Domains, Hosting, Konto, Shop, Marketing und Support. Mit Links zur Wissensdatenbank.",
+  "ctaTitle": "Brauchen Sie noch Hilfe?",
+  "ctaText": "Sie können Ihre Frage nicht finden? Kontaktieren Sie uns – wir werden uns so schnell wie möglich bei Ihnen melden.",
+  "ctaButton": "Kontaktieren Sie uns",
   "categories": [
     {
       "id": "general",
@@ -12,67 +12,107 @@
         {
           "id": "gen-1",
           "question": "Was genau macht TripleZero iT?",
-          "answer": "TripleZero iT kombiniert Webdesign, WordPress-Unterstützung, digitales Marketing, Suchsichtbarkeit (AEO, GEO/lokal und SEO), Design und Hosting. Wir helfen Marken, schneller gefunden zu werden, bessere Websites zu erstellen und messbar zu wachsen."
+          "answer": "TripleZero iT kombiniert Webdesign, WordPress-Management, digitales Marketing, Suchsichtbarkeit (AEO, GEO/lokal und SEO), Design und Hosting. Wir helfen Marken, schneller gefunden zu werden, bessere Websites zu erstellen und messbar zu wachsen. Weiterlesen: [Über uns](/over-ons) · [Leistungen](/diensten)."
         },
         {
           "id": "gen-2",
           "question": "Wie starte ich mit TripleZero iT?",
-          "answer": "Kontaktiere uns oder vereinbare einen Termin. Wir führen eine kurze Aufnahme durch, überprüfen die Ziele und den Stack und bereiten dann einen konkreten Vorschlag mit Planung und KPIs vor."
+          "answer": "Kontaktieren Sie uns oder vereinbaren Sie einen Termin. Wir machen eine kurze Aufnahme, schauen uns Ziele und Stack an und erarbeiten dann einen konkreten Vorschlag mit Planung und KPIs. Weiterlesen: [Termin vereinbaren](/afspraak) · [Kontakt](/contact)."
         },
         {
           "id": "gen-3",
-          "question": "Mit welchen Arten von Unternehmen arbeiten Sie zusammen?",
-          "answer": "Wir arbeiten mit KMUs, Scale-Ups, E-Commerce, Agenturen und internationalen Marken zusammen. Das kann neben einem bestehenden Team oder als Full-Service-Partner geschehen."
+          "question": "Für welche Unternehmen arbeiten Sie?",
+          "answer": "Wir arbeiten für KMU, Scale-Ups, E-Commerce, Agenturen und internationale Marken. Dies kann gemeinsam mit einem bestehenden Team oder als Full-Service-Partner erfolgen."
         },
         {
           "id": "gen-4",
           "question": "Arbeiten Sie nur in den Niederlanden?",
-          "answer": "Nein. Wir betreuen Kunden in Asien, Europa, den VAE und den USA — mit niederländisch- und englischsprachigen Aufträgen."
+          "answer": "Nein. Wir bedienen Kunden in Asien, Europa, den Vereinigten Arabischen Emiraten und den USA mit niederländischen und englischsprachigen Prozessen."
         },
         {
           "id": "gen-5",
-          "question": "Wie sieht ein typisches Engagement aus?",
-          "answer": "Ein typisches Engagement läuft wie folgt ab: Aufnahme → Audit oder Scan → Plan → Sprint-Ausführung → Messung → Optimierung. Du erhalten klare Meilensteine ​​und Berichte, sodass immer klar ist, wo wir stehen."
+          "question": "Wie sieht ein typischer Prozess aus?",
+          "answer": "Ein Prozess läuft üblicherweise so ab: Aufnahme → Audit bzw. Scan → Plan → Umsetzung in Sprints → Messung → Optimierung. Sie erhalten klare Meilensteine ​​und Reportings, sodass immer klar ist, wo wir stehen."
         },
         {
           "id": "gen-6",
           "question": "Kann ich mehrere Leistungen kombinieren?",
-          "answer": "Ja. Viele Kunden kombinieren Webdesign + SEO + Anzeigen oder WordPress-Wartung + Hosting + Sicherheit. Wir passen den Mix an deine Ziele und dein Budget an."
+          "answer": "Ja. Viele Kunden kombinieren beispielsweise Webdesign + SEO + Anzeigen oder WordPress-Wartung + Hosting + Sicherheit. Wir passen den Mix an Ihre Ziele und Ihr Budget an."
         },
         {
           "id": "gen-7",
           "question": "Wie schnell können Sie beginnen?",
-          "answer": "Es hängt von unserer Kapazität ab, aber nach der Genehmigung beginnen wir oft innerhalb weniger Werktage. Dringende Arbeiten – wie Bugs, Malware oder Ausfallzeiten – werden priorisiert, damit wir sie so schnell wie möglich erledigen können."
+          "answer": "Das hängt von unserer Kapazität ab, aber nach der Genehmigung beginnen wir oft innerhalb weniger Arbeitstage. Wir gehen dringende Probleme – wie Bugs, Malware oder Ausfallzeiten – mit Priorität an, damit wir so schnell wie möglich mit der Behebung beginnen können."
         },
         {
           "id": "gen-8",
           "question": "Arbeiten Sie remote oder vor Ort?",
-          "answer": "Wir arbeiten hauptsächlich remote, mit klarer Kommunikation per E-Mail, Chat und Anrufen. Auf Anfrage ist ein Vor-Ort-Service möglich, wenn das Projekt dies erfordert."
+          "answer": "Wir arbeiten hauptsächlich remote, mit klarer Kommunikation per E-Mail, Chat und Anrufen. Wenn das Projekt dies erfordert, kann auf Anfrage eine Vor-Ort-Besprechung erfolgen."
         },
         {
           "id": "gen-9",
           "question": "Wie kommuniziert das Team den Fortschritt?",
-          "answer": "Wir halten dich durch regelmäßige Updates, Tickets oder ein Dashboard, sofern relevant, sowie Sprint- oder Monatsberichte mit Aktionen und Ergebnissen auf dem Laufenden."
+          "answer": "Wir halten Sie über regelmäßige Updates, Tickets oder ein Dashboard, sofern relevant, sowie Sprint- oder Monatsberichte mit Aktionen und Ergebnissen auf dem Laufenden."
         },
         {
           "id": "gen-10",
-          "question": "Was benötigen Sie von uns für den Start?",
-          "answer": "Zunächst brauchen wir Zugriff auf die Website und das Hosting (falls erforderlich), deine Ziele, Markenrichtlinien, Analysekonten und eventuell vorhandene Tools. Wenn etwas fehlt, helfen wir zunächst, es in Ordnung zu bringen."
+          "question": "Was brauchen Sie, um loszulegen?",
+          "answer": "Für den Anfang haben wir Zugriff auf Website und Hosting (falls erforderlich), Ihre Ziele, Markenrichtlinien, Analysekonten und alle vorhandenen Tools. Sollte etwas fehlen, helfen wir Ihnen, es zunächst in Ordnung zu bringen."
         },
         {
           "id": "gen-11",
-          "question": "Sind Ihre Dienstleistungen start-up-tauglich?",
-          "answer": "Ja. Wir skalieren von schlanken Landingpages und KI-Scans bis hin zu vollständigen Wachstums-Setups, sodass der Ansatz mit dir wächst."
+          "question": "Sind Ihre Dienstleistungen für Startups geeignet?",
+          "answer": "Ja. Wir skalieren von schlanken Landingpages und KI-Scans bis hin zu vollständigen Wachstums-Setups, sodass sich der Ansatz mit Ihrem Wachstum weiterentwickelt."
         },
         {
           "id": "gen-12",
-          "question": "Wem gehören die Arbeit und die Konten?",
-          "answer": "Deine Domain, Inhalte, Code-Repositories und Werbekonten bleiben dein Eigentum. Bei der Übergabe übergeben wir die Akten und Dokumentationen, sodass alles unter deiner Kontrolle bleibt."
+          "question": "Wie sieht es mit dem Eigentum an Werken und Konten aus?",
+          "answer": "Ihre Domain, Inhalte, Code-Repositories und Werbekonten bleiben Ihr Eigentum. Bei der Lieferung übergeben wir die Akten und Dokumentationen, sodass alles im Haus sauber verwaltet bleibt."
         },
         {
           "id": "gen-13",
-          "question": "Können Sie bestehende Anbieter übernehmen oder mit ihnen zusammenarbeiten?",
+          "question": "Können Sie bestehende Lieferanten akquirieren oder mit ihnen zusammenarbeiten?",
           "answer": "Ja. Wir arbeiten reibungslos mit Entwicklern, Vermarktern oder Agenturen zusammen oder übernehmen die Wartung und Optimierung, ohne bestehende Arbeiten unnötig zu stören."
+        },
+        {
+          "id": "gen-14",
+          "question": "Was ist Agent 000 (der Chat-Assistent)?",
+          "answer": "Agent 000 ist unser digitaler Assistent vor Ort und in Support-Abläufen. Er beantwortet häufig gestellte Fragen, verweist auf Artikel in der Wissensdatenbank und kann Sie auf einen Live-Chat, ein Ticket oder einen Termin verweisen, wenn menschliche Hilfe angebrachter ist. Weiterlesen: [Digitaler Assistent](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Chat, Ticket oder Termin vereinbaren](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "gen-15",
+          "question": "Wie vereinbare ich einen Termin oder einen Anruf?",
+          "answer": "Über die Seite „Termin“ können Sie einen für Sie passenden Zeitpunkt auswählen. Für schnelle Fragen können Sie auch den Live-Chat oder ein Ticket nutzen; Bei komplexeren Vorgängen oder Aufnahmen ist eine telefonische Terminvereinbarung sinnvoll. Weiterlesen: [Terminvereinbarung](/afspraak) · [Terminvereinbarung erklärt](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)."
+        },
+        {
+          "id": "gen-16",
+          "question": "Wo kann ich den Status Ihrer Dienste sehen?",
+          "answer": "Auf der Statusseite zeigen wir Vorfälle und Wartungsarbeiten rund um das Hosting und damit verbundene Dienste an, sodass Sie schnell erkennen können, ob etwas im Gange ist. Weiterlesen: [Statusseite](/statuspage)."
+        },
+        {
+          "id": "gen-17",
+          "question": "Verfügen Sie über eine Wissensdatenbank?",
+          "answer": "Ja. Die Wissensdatenbank enthält Handbücher zu Domains, DNS, E-Mail, Hosting, WordPress, KI-Scan, Sicherheit und mehr – mit Schritt-für-Schritt-Erklärungen. Weiterlesen: [Wissensbasis](/kennisbank)."
+        },
+        {
+          "id": "gen-18",
+          "question": "Wie gehen Sie mit Datenschutz und Cookies um?",
+          "answer": "Wir arbeiten DSGVO-bewusst: Datenschutztexte, Einwilligung für Formulare und Cookie-Banner/Einwilligungsmodus, wenn Tracking erforderlich ist. Für WordPress helfen wir bei der korrekten Cookie-Einrichtung. Weiterlesen: [Cookie-Banner in WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress) · [Einwilligungsmodus](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Datenschutz mit Formularen](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren)."
+        },
+        {
+          "id": "gen-19",
+          "question": "Wo finde ich Ihre Neuigkeiten und Updates?",
+          "answer": "Auf der News-Seite veröffentlichen wir Updates zu Produkten, Sicherheit und Tipps. Überprüfen Sie bei technischen Störungen die Statusseite. Weiterlesen: [Neuigkeiten](/nieuws) · [Statusseite](/statuspage)."
+        },
+        {
+          "id": "gen-20",
+          "question": "Was kostet die Zusammenarbeit mit Ihnen?",
+          "answer": "Das kommt auf die Mischung an: Hosting- und Shopping-Produkte haben feste Preise; Design, SEO, Anzeigen und Retainer folgen nach der Aufnahme. Im Shop sehen Sie Pakete; Sie erhalten einen Vorschlag zur Individualisierung. Weiterlesen: [Shop](/shop) · [Kontakt](/contact)."
+        },
+        {
+          "id": "gen-21",
+          "question": "Können Sie auch nur beratend oder prüfend tätig sein?",
+          "answer": "Ja. Audits, KI-Scans, technische Überprüfungen und Sparringssitzungen können unabhängig von einem Full-Service-Prozess durchgeführt werden. Das können Sie dann selbst erledigen oder uns erledigen lassen. Weiterlesen: [AI-Scan](/ai-scan) · [Dienste](/diensten)."
         }
       ]
     },
@@ -83,17 +123,17 @@
         {
           "id": "ai-1",
           "question": "Was ist ein KI-Scan bei TripleZero iT?",
-          "answer": "Ein AI-Readiness-Scan beurteilt, wie gut deine Seite von klassischen Suchmaschinen, KI-Antworten und lokalen oder geografischen Suchergebnissen gefunden wird (AEO, GEO, SEO und die technischen Grundlagen)."
+          "answer": "Ein KI-Bereitschaftsscan beurteilt, wie leicht Ihre Website für herkömmliche Suchmaschinen, KI-Antworten und lokale oder geografische Suchergebnisse (AEO, GEO, SEO und die technischen Grundlagen) gefunden werden kann. Weiterlesen: [Was ist der AI-Scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [AI-Scan starten](/ai-scan)."
         },
         {
           "id": "ai-2",
-          "question": "Was misst der KI-Scan genau?",
-          "answer": "Der Scan misst AEO-Signale, GEO/lokale Sichtbarkeit, SEO-Grundlagen, Inhaltsstruktur, Leistungsindikatoren und KI-Bereitschaft. Du erhalten Punkte und konkrete Verbesserungspunkte."
+          "question": "Was genau misst der KI-Scan?",
+          "answer": "Der Scan misst unter anderem AEO-Signale, GEO/lokale Auffindbarkeit, SEO-Grundlagen, Inhaltsstruktur, Leistungsindikatoren und KI-Bereitschaft. Sie erhalten Punkte und konkrete Verbesserungspunkte. Weiterlesen: [Erklären Sie die Ergebnisse](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)."
         },
         {
           "id": "ai-3",
           "question": "Wie oft sollte ich einen AI-Scan durchführen?",
-          "answer": "Zumindest nach größeren Website-Änderungen oder Kampagnen. Für aktive Marken empfehlen wir regelmäßige Scans, beispielsweise vierteljährlich, damit du in Such- und KI-Ergebnissen sichtbar bleiben."
+          "answer": "Zumindest bei größeren Website-Änderungen oder Kampagnen. Für aktive Marken empfehlen wir regelmäßige Scans, beispielsweise vierteljährlich, damit Sie in den Such- und KI-Ergebnissen sichtbar bleiben. Weiterlesen: [KI-Scan starten](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website)."
         },
         {
           "id": "ai-4",
@@ -107,23 +147,23 @@
         },
         {
           "id": "ai-6",
-          "question": "Ersetzt KI Ihre strategische Arbeit?",
-          "answer": "Nein. KI beschleunigt die Analyse und Produktion, aber Entscheidungen zu Strategie, Markenstimme und Konvertierung bleiben menschlich und messbar."
+          "question": "Wird KI Ihre strategische Arbeit ersetzen?",
+          "answer": "Nein. KI beschleunigt die Analyse und Produktion, aber Strategie, Markenton und Konvertierungsentscheidungen bleiben menschlich und messbar."
         },
         {
           "id": "ai-7",
           "question": "Sind KI-Inhalte sicher für SEO?",
-          "answer": "Nur mit menschlicher Überprüfung, einzigartigen Erkenntnissen und E-E-A-T. Wir vermeiden dünnen, generischen Text, der dem Ranking schadet."
+          "answer": "Nur mit menschlicher Überprüfung, einzigartigen Erkenntnissen und E-E-A-T. Wir vermeiden dünne, generische Texte, die dem Ranking schaden."
         },
         {
           "id": "ai-8",
           "question": "Was bedeutet KI-Bereitschaft für meine Marke?",
-          "answer": "Es geht um den Grad, in dem deine Website, Inhalte und Daten so eingerichtet sind, dass KI-Systeme deine Marke korrekt zitieren, empfehlen und erklären können."
+          "answer": "Das bedeutet, dass Ihre Website, Inhalte und Daten so gestaltet sind, dass KI-Systeme Sie richtig zitieren, empfehlen und erklären können. Weiterlesen: [KI-Bereitschaft im Scan](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)."
         },
         {
           "id": "ai-9",
-          "question": "Können Sie KI-Agenten im Dashboard verwenden?",
-          "answer": "Ja. Im Kundenportal siehst du KI-Agenten für SEO, Inhalte, soziale Netzwerke und Anzeigen – einschließlich Status und Aufgaben."
+          "question": "Können Sie KI-Agenten im Dashboard bereitstellen?",
+          "answer": "Ja. Im Kundenportal sehen Sie KI-Agenten für SEO, Content, Social und Ads, inklusive Status und Aufgaben. Weiterlesen: [Was sind KI-Agenten?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Agenten in Ihrem Konto](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)."
         },
         {
           "id": "ai-10",
@@ -133,17 +173,57 @@
         {
           "id": "ai-11",
           "question": "Hilft KI bei Support-Tickets?",
-          "answer": "Ja, zur Triage und schnelleren Antworten. Komplexe oder sensible Fälle werden immer an einen menschlichen Teamkollegen weitergeleitet."
+          "answer": "Ja, für Triage und schnellere Antworten. Wir eskalieren komplexe oder sensible Fälle immer an einen menschlichen Mitarbeiter."
         },
         {
           "id": "ai-12",
-          "question": "Was kostet ein KI-Engagement?",
-          "answer": "Es reicht von einem kostenlosen oder Einstiegs-KI-Scan bis hin zu monatlichen KI- und Marketing-Vergütungen. Nach der Aufnahme erhalten du ein klares Angebot."
+          "question": "Was kostet ein KI-Prozess?",
+          "answer": "Dies reicht von einem kostenlosen oder Einstiegs-KI-Scan bis hin zu monatlichen KI- und Marketing-Vergütungen. Nach der Aufnahme erhalten Sie ein klares Angebot."
         },
         {
           "id": "ai-13",
           "question": "Wie messe ich den ROI von KI-Initiativen?",
-          "answer": "Durch KPIs wie Traffic, Leads, Zeitersparnis, Content-Ausgabe, Ticketauflösung und Konvertierung. Wir definieren diese im Voraus im Plan, damit die Ergebnisse sichtbar bleiben."
+          "answer": "Über KPIs wie Traffic, Leads, Zeitersparnis, Content-Ausgabe, Ticketauflösung und Konvertierung. Wir messen dies vorab im Plan, damit Ergebnisse sichtbar bleiben."
+        },
+        {
+          "id": "ai-14",
+          "question": "Wie starte ich einen KI-Scan auf meiner Website?",
+          "answer": "Gehen Sie zum KI-Scan, geben Sie Ihre URL ein und starten Sie die Analyse. Sie erhalten Punkte für AEO, GEO, SEO, Leistung und KI-Bereitschaft sowie Punkte für Verbesserungen. Weiterlesen: [AI-Scan starten](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website) · [AI-Scan-Seite](/ai-scan)."
+        },
+        {
+          "id": "ai-15",
+          "question": "Wie lese ich die AI-Scan-Ergebnisse?",
+          "answer": "Jede Punktzahl zeigt, wie stark Sie in diesem Bereich sind; Niedrige Werte gehen mit konkreten Tipps einher. Nutzen Sie den Scan als Prioritätenliste, nicht als einmaliges „Zeugnis“. Weiterlesen: [Scores erklären](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Nächste Schritte](/kennisbank/ai-scan/welke-vervolgstappen-zet-ik-na-mijn-ai-scan)."
+        },
+        {
+          "id": "ai-16",
+          "question": "Was ist der Unterschied zwischen einem KI-Scan und einem vollständigen AEO/GEO/SEO-Prozess?",
+          "answer": "Der Scan ist eine schnelle Diagnose. Ein Prozess implementiert Verbesserungen: Inhalte, strukturierte Daten, technisches SEO, lokale Signale und Messung im Laufe der Zeit. Weiterlesen: [Scan versus Prozess](/kennisbank/ai-scan/ai-scan-versus-een-volledig-aeo-geo-seo-traject-wat-is-het-verschil) · [SEO starten](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-17",
+          "question": "Wo kann ich frühere AI-Scans in meinem Konto finden?",
+          "answer": "Angemeldete Kunden sehen frühere Scans und Analysen im Dashboard (SEO-Analyse), sodass Sie den Fortschritt vergleichen können. Weiterlesen: [AI-Scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Konto / Dashboard](/dashboard)."
+        },
+        {
+          "id": "ai-18",
+          "question": "Was mache ich nach einem niedrigen AEO- oder GEO-Score?",
+          "answer": "Priorisieren Sie FAQs, Entitäten, strukturierte Daten (AEO) und Google Business Profile/NAP/lokale Zielseiten (GEO). Wir helfen dabei, diese Roadmap in die Umsetzung umzusetzen. Weiterlesen: [Scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Lokale Auffindbarkeit](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "ai-19",
+          "question": "Wie arbeiten KI-Agenten im Kundenportal?",
+          "answer": "KI-Agenten unterstützen Aufgaben rund um SEO, Content, Social oder Ads. Sie öffnen die Übersicht in Ihrem Konto, sehen den Status und können Agenten entsprechend Ihrem Paket starten oder pausieren. Weiterlesen: [Was sind KI-Agenten?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Offene Agenten](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)."
+        },
+        {
+          "id": "ai-20",
+          "question": "Ist der AI-Scan kostenlos?",
+          "answer": "Über die AI-Scan-Seite gibt es einen zugänglichen Eintrag; tiefergehende Analysen und Prozesse fallen unter Services oder Retainer. Nach dem Scan sehen Sie sofort, ob eine Nachuntersuchung sinnvoll ist. Weiterlesen: [AI-Scan](/ai-scan) · [Was ist der AI-Scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-21",
+          "question": "Hilft Agent 000 auch bei KI- und SEO-Fragen?",
+          "answer": "Ja. Agent 000 verwendet FAQ und Wissensdatenbank, um Fragen zu AEO/GEO/SEO und KI-Scans zu beantworten und Links zu den richtigen Artikeln oder zur menschlichen Nachverfolgung bereitzustellen. Weiterlesen: [Digitaler Assistent](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [FAQ](/faq)."
         }
       ]
     },
@@ -154,72 +234,102 @@
         {
           "id": "seo-1",
           "question": "Was ist der Unterschied zwischen AEO, GEO und SEO?",
-          "answer": "AEO (Answer Engine Optimization) konzentriert sich auf KI-Antworten. GEO (Geographic Search Engine Optimization) stärkt die lokale und regionale Sichtbarkeit in Karten, lokalen Paketen und der standortbasierten Suche. SEO optimiert für klassische Suchmaschinen."
+          "answer": "AEO (Answer Engine Optimization) konzentriert sich auf KI-Antworten. GEO (Geographic Search Engine Optimization) stärkt die lokale und regionale Auffindbarkeit in Karten, lokalen Paketen und der standortbasierten Suche. SEO optimiert für klassische Suchmaschinen. Weiterlesen: [Wie AEO, GEO und SEO zusammenhängen](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen) · [Was ist AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization)."
         },
         {
           "id": "seo-2",
           "question": "Warum ist AEO/GEO jetzt wichtig?",
-          "answer": "Mehr Suchende erhalten Antworten über KI und suchen auch lokal („in meiner Nähe“). Ohne AEO entgehen dir AI-Zitate; Ohne GEO verpassen du lokale Leads – selbst wenn klassisches SEO solide ist."
+          "answer": "Immer mehr Suchende erhalten Antworten über KI und suchen lokal („in meiner Nähe“). Ohne AEO werden Ihnen AI-Zitate entgehen; Ohne GEO verpassen Sie lokale Leads – auch wenn klassisches SEO gut ist. Weiterlesen: [Was ist GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant)."
         },
         {
           "id": "seo-3",
-          "question": "Wie startet man ein SEO-Engagement?",
-          "answer": "Wir beginnen mit einem technischen Audit, einer Stichwort- und Absichtsrecherche, einer Inhaltslückenanalyse und einer Prioritäts-Roadmap, die mit deinen Geschäfts-KPIs verknüpft ist."
+          "question": "Wie startet man einen SEO-Prozess?",
+          "answer": "Wir beginnen mit einem technischen Audit, einer Keyword- und Intent-Recherche, einer Inhaltslückenanalyse und einer Prioritäts-Roadmap, die mit Ihren Geschäfts-KPIs verknüpft ist. Weiterlesen: [SEO starten](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
         },
         {
           "id": "seo-4",
-          "question": "Wie lange dauert es, bis SEO-Ergebnisse sichtbar werden?",
-          "answer": "Technische Erfolge können sich schnell zeigen. Organisches Wachstum entwickelt sich in der Regel über Wochen bis Monate, abhängig von der Konkurrenz und der Konstanz unserer Umsetzung."
+          "question": "Wie lange dauert es, bis SEO-Ergebnisse angezeigt werden?",
+          "answer": "Technische Erfolge können schnell sichtbar sein. Organisches Wachstum entwickelt sich in der Regel über Wochen bis Monate, abhängig von der Konkurrenz und der Konstanz unserer Umsetzung."
         },
         {
           "id": "seo-5",
           "question": "Machen Sie auch lokales SEO?",
-          "answer": "Ja. Wir arbeiten an Google Business Profile, lokalen Landingpages, NAP-Konsistenz, Bewertungen und lokalen Content-Clustern, damit du in deiner Region besser gefunden werden."
+          "answer": "Ja. Wir arbeiten an Google Business Profile, lokalen Landingpages, NAP-Konsistenz, Bewertungen und lokalen Content-Clustern, damit Sie in der Region besser gefunden werden. Weiterlesen: [Lokale Auffindbarkeit verbessern](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
         },
         {
           "id": "seo-6",
           "question": "Was ist für Sie technisches SEO?",
-          "answer": "Technisches SEO umfasst Crawlbarkeit, Indexierung, Core Web Vitals, strukturierte Daten, Sitemap und Robots, Canonicals, interne Verlinkung und Fehlerbereinigung – alles, was Suchmaschinen brauchen, um die Website gut zu verstehen."
+          "answer": "Technisches SEO umfasst Crawlbarkeit, Indexierung, Core Web Vitals, strukturierte Daten, Sitemap und Robots, Canonicals, interne Verlinkung und Debugging – alles, was Suchmaschinen brauchen, um die Website richtig zu verstehen."
         },
         {
           "id": "seo-7",
           "question": "Helfen Sie mit Inhalten für SEO?",
-          "answer": "Ja. Wir erstellen Briefings, Gliederungen, Blogs, Landingpages und FAQs, die der Suchintention entsprechen und KI-freundlich strukturiert sind."
+          "answer": "Ja. Wir erstellen Briefings, Gliederungen, Blogs, Landingpages und FAQs, die zur Suchintention passen und KI-freundlich strukturiert sind."
         },
         {
           "id": "seo-8",
           "question": "Was ist E-E-A-T und warum ist es wichtig?",
-          "answer": "E-E-A-T steht für Erfahrung, Fachwissen, Autorität und Vertrauen. Ein starkes E-E-A-T hilft bei Rankings und der Glaubwürdigkeit deiner Marke in KI-Zusammenfassungen."
+          "answer": "E-E-A-T steht für Erfahrung, Fachwissen, Autorität und Vertrauen. Starkes E-E-A-T hilft Rankings und der Glaubwürdigkeit Ihrer Marke in KI-Zusammenfassungen."
         },
         {
           "id": "seo-9",
           "question": "Betreiben Sie Linkbuilding?",
-          "answer": "Ja, ethisch und relevant: digitale PR, Partnerschaften und Content-Assets. Wir verwenden keine Spam-Link-Systeme."
+          "answer": "Ja, ethisch und relevant: digitale PR, Partnerschaften und Content-Assets. Wir betreiben keine Spam-Link-Programme."
         },
         {
           "id": "seo-10",
           "question": "Können bestehende SEO-Schäden repariert werden?",
-          "answer": "Ja. Wir reparieren Schäden nach Updates, toxischen Links, Indexierungsproblemen oder Kannibalisierung von Inhalten und legen dann einen sauberen Wachstumspfad fest."
+          "answer": "Ja. Wir reparieren Schäden nach Updates, toxischen Links, Indexierungsproblemen oder Kannibalisierung von Inhalten und setzen dann eine saubere Wachstumslinie."
         },
         {
           "id": "seo-11",
           "question": "Wie melden Sie SEO-Fortschritte?",
-          "answer": "Monatlich oder pro Sprint berichten wir über Rankings, Traffic, Conversions, technische Probleme und nächste Aktionen, sodass klar ist, was wir getan haben und was als nächstes kommt."
+          "answer": "Monatlich oder pro Sprint berichten wir über Rankings, Traffic, Conversions, technische Probleme und nächste Aktionen, damit klar ist, was wir getan haben und was folgen wird."
         },
         {
           "id": "seo-12",
           "question": "Funktioniert SEO für den E-Commerce?",
-          "answer": "Absolut. Wir optimieren Produkt- und Kategorie-SEO, Facettennavigation, Bewertungen, strukturierte Daten und Content Hubs rund um die Kaufabsicht."
+          "answer": "Sicherlich. Wir optimieren Produkt- und Kategorie-SEO, Facettennavigation, Bewertungen, strukturierte Daten und Content Hubs rund um die Kaufabsicht."
         },
         {
           "id": "seo-13",
           "question": "Ist SEO ein einmaliges Projekt oder ein fortlaufendes Projekt?",
-          "answer": "Die besten Ergebnisse entstehen durch kontinuierliche Optimierung. Einmalige Audits helfen, aber Wettbewerber bleiben nicht stehen – deshalb messen und justieren wir ständig."
+          "answer": "Die besten Ergebnisse entstehen durch kontinuierliche Optimierung. Einmalige Audits helfen, aber der Wettbewerb steht nicht still – deshalb messen und passen wir uns kontinuierlich an."
         },
         {
           "id": "seo-14",
           "question": "Helfen Sie bei internationaler Suchmaschinenoptimierung?",
-          "answer": "Ja. Wir kümmern uns um Hreflang, Marktforschung pro Land oder Sprache, Inhaltslokalisierung und technische Multi-Local-Einrichtungen."
+          "answer": "Ja. Wir organisieren Hreflang, Marktforschung nach Land oder Sprache, Inhaltslokalisierung und technische multilokale Setups."
+        },
+        {
+          "id": "seo-15",
+          "question": "Was genau ist AEO?",
+          "answer": "AEO (Answer Engine Optimization) erstellt Inhalte, damit KI-Antworten und Antwort-Engines Ihre Marke korrekt zitieren können: klare FAQs, Entitäten und strukturierte Daten. Weiterlesen: [Was ist AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AEO, GEO und SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
+        },
+        {
+          "id": "seo-16",
+          "question": "Was ist GEO (geografisches SEO)?",
+          "answer": "GEO stärkt die lokale und regionale Auffindbarkeit – Karten, lokale Pakete und standortbasierte Suche – durch GBP, NAP-Konsistenz und lokale Inhalte. Weiterlesen: [Was ist GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant) · [Lokale Auffindbarkeit](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "seo-17",
+          "question": "Wie bestelle oder starte ich eine SEO-Optimierung?",
+          "answer": "Beginnen Sie mit einem KI-Scan oder Audit und anschließend mit einem Vorschlag mit Prioritäten. Sie können SEO auch mit Inhalten und Technologie über Shop/Services oder Retainer kombinieren. Weiterlesen: [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting) · [AI Scan](/ai-scan)."
+        },
+        {
+          "id": "seo-18",
+          "question": "Können Sie bei strukturierten Daten und dem FAQ-Zeitplan helfen?",
+          "answer": "Ja. Wir erstellen relevante Diagramme (FAQ, Organisation, LocalBusiness, Produkte) und strukturieren Inhalte, damit Suchmaschinen und KI Sie besser verstehen. Weiterlesen: [AEO-Erklärung](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AI-Scan-Ergebnisse](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)."
+        },
+        {
+          "id": "seo-19",
+          "question": "Was machen Sie mit Core Web Vitals?",
+          "answer": "Wir messen LCP, INP und CLS, lösen schwere Assets, Hosting-/Caching- und Theme-Probleme und verknüpfen diese bei Bedarf mit dem CDN. Weiterlesen: [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [Wählen Sie Hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "seo-20",
+          "question": "Kann man SEO mit Hosting und WordPress-Pflege kombinieren?",
+          "answer": "Ja. Stabiles Hosting, Updates und Performance bilden die Basis; SEO baut darauf auf. Viele Kunden kombinieren WP-Betreuung + Hosting + laufendes SEO. Weiterlesen: [Hosting](/diensten/categorie/hosting) · [SEO starten](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
         }
       ]
     },
@@ -235,22 +345,22 @@
         {
           "id": "ads-2",
           "question": "Wie ermitteln Sie das richtige Werbebudget?",
-          "answer": "Wir legen das Budget auf Basis von Zielen (Leads oder Sales), CAC-Zielen, Marktpreisen und einer Testphase fest. Wir beginnen schlank und skalieren, was funktioniert."
+          "answer": "Wir ermitteln das Budget anhand von Zielen (Leads oder Sales), CAC-Ziel, Marktpreisen und einer Testphase. Wir beginnen schlank und skalieren, was funktioniert."
         },
         {
           "id": "ads-3",
           "question": "Wie gehen Sie mit Google Ads um?",
-          "answer": "Wir legen eine klare Kontostruktur fest, bilden die Suchabsicht ab, fügen ausschließende Keywords hinzu, prüfen die Landingpage-Passform, richten das Conversion-Tracking ein und optimieren wöchentlich."
+          "answer": "Wir richten eine klare Kontostruktur ein, kartieren die Suchabsicht, fügen ausschließende Keywords hinzu, prüfen die Landingpage-Passform, richten das Conversion-Tracking ein und optimieren wöchentlich."
         },
         {
           "id": "ads-4",
           "question": "Können Sie Meta-Anzeigen für E-Commerce schalten?",
-          "answer": "Ja. Wir führen Katalog- und Retargeting-Kampagnen durch, testen Creatives und Zielgruppen und optimieren, um den ROAS zu verbessern."
+          "answer": "Ja. Wir führen Katalog- und Retargeting-Kampagnen durch, testen Creatives und Zielgruppen und nehmen Anpassungen vor, um den ROAS zu verbessern."
         },
         {
           "id": "ads-5",
           "question": "Wie misst man den Werbeerfolg?",
-          "answer": "Wir messen Conversions, CPA/CAC, ROAS, Lead-Qualität und Pipeline – nicht nur Klicks. Auf diese Weise optimieren wir auf Ergebnisse statt auf Volumen."
+          "answer": "Wir messen Conversions, CPA/CAC, ROAS, Lead-Qualität und Pipeline – nicht nur Klicks. Auf diese Weise konzentrieren wir uns auf Ergebnisse statt auf Volumen."
         },
         {
           "id": "ads-6",
@@ -259,23 +369,23 @@
         },
         {
           "id": "ads-7",
-          "question": "Schalten Sie auch B2B-LinkedIn-Anzeigen?",
-          "answer": "Ja. Wir verwenden gezieltes Targeting, Lead-Gen-Formulare oder Landingpages und Inhalte, die Entscheidungsträger ansprechen."
+          "question": "Machen Sie auch B2B-LinkedIn-Anzeigen?",
+          "answer": "Ja. Wir arbeiten mit scharfem Targeting, Lead-Gen-Formularen oder Landingpages und Inhalten, die Entscheidungsträger ansprechen."
         },
         {
           "id": "ads-8",
           "question": "Wie schnell sehe ich Ergebnisse aus Anzeigen?",
-          "answer": "Der Verkehr kann sofort eintreffen. Ein stabiler CPA oder ROAS erfordert normalerweise 2 bis 6 Wochen Lern- und kreative Iteration."
+          "answer": "Der Verkehr kann direkt einfahren. Ein stabiler CPA oder ROAS erfordert normalerweise 2 bis 6 Wochen Lernzeit und kreative Iteration."
         },
         {
           "id": "ads-9",
-          "question": "Erstellen Sie auch Anzeigenmotive?",
-          "answer": "Ja. Wir erstellen Texte, Visuals und Testvarianten. Design und Medienerstellung können einbezogen werden, sodass Kampagnen nicht auf Kreative warten müssen."
+          "question": "Erstellen Sie auch Anzeigenkreative?",
+          "answer": "Ja. Wir erstellen Texte, Visuals und Testvarianten. Wir können Design und Medienerstellung einbeziehen, sodass Kampagnen nicht auf Kreative warten müssen."
         },
         {
           "id": "ads-10",
           "question": "Können sich Werbung und SEO gegenseitig verstärken?",
-          "answer": "Absolut. Suchdaten aus Anzeigen-Feeds SEO; Starke organische Seiten senken den CPA und erhöhen den Qualitätsfaktor."
+          "answer": "Absolute. Suchdaten aus Anzeigen fördern SEO; Starke organische Seiten senken den CPA und erhöhen den Qualitätsfaktor."
         },
         {
           "id": "ads-11",
@@ -285,12 +395,32 @@
         {
           "id": "ads-12",
           "question": "Wie verhindern Sie verschwendetes Werbebudget?",
-          "answer": "Wir verhindern Verschwendung durch ausschließende Keywords, Zielgruppenausschlüsse, Budgetobergrenzen, Geofencing, Frequenzkontrolle und das schnelle Pausieren von Underperformern."
+          "answer": "Wir verhindern Verschwendung durch ausschließende Keywords, Zielgruppenausschlüsse, Budgetobergrenzen, Geofencing, Frequenzkontrolle und das schnelle Stoppen von leistungsschwachen Unternehmen."
         },
         {
           "id": "ads-13",
           "question": "Ist Remarketing noch relevant?",
-          "answer": "Ja, wenn es datenschutzkonform ist und mit starken Creatives und Angeboten gepaart ist. Es bleibt oft die effizienteste Schicht im Trichter."
+          "answer": "Ja, vorausgesetzt, es ist datenschutzkonform und verfügt über starke Kreative und Angebote. Es bleibt oft die effizienteste Schicht im Trichter."
+        },
+        {
+          "id": "ads-14",
+          "question": "Helfen Sie beim Einwilligungsmodus und den Cookie-Bannern für Anzeigen?",
+          "answer": "Ja. Ohne korrekte Einwilligung und Tag-Kennzeichnung ist die Anzeigenmessung unzuverlässig. Wir verknüpfen sauber Banner, GTM/GA4 und Pixel. Weiterlesen: [Einwilligungsmodus](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Cookie-Banner WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "ads-15",
+          "question": "Können Sie Landingpages für Kampagnen erstellen?",
+          "answer": "Ja – schnelle Landingpages oder WordPress-Seiten, die auf die Suchabsicht zugeschnitten sind, mit Tracking- und CRO-Grundlagen. Weiterlesen: [Services](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "ads-16",
+          "question": "Wie verhindern Sie verschwendetes Werbebudget?",
+          "answer": "Straffe Kontostruktur, ausschließende Keywords, Zielgruppenausschlüsse, Landingpage-Passform und wöchentliche Optimierung von CPA/ROAS – nicht nur von Klicks."
+        },
+        {
+          "id": "ads-17",
+          "question": "Funktionieren Anzeigen gut mit AEO/SEO?",
+          "answer": "Ja. Anzeigen liefern schnelle Daten und Traffic; SEO/AEO bauen nachhaltige Sichtbarkeit auf. Erkenntnisse aus Schlüsselwörtern und Creatives fördern Inhalte und Zielseiten. Weiterlesen: [AEO, GEO und SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
         }
       ]
     },
@@ -301,22 +431,22 @@
         {
           "id": "des-1",
           "question": "Welche Designdienstleistungen bieten Sie an?",
-          "answer": "Wir bieten Logos, Markenidentität, Visitenkarten, Briefbögen, Flyer, Poster, Aufkleber, Zeitschriften oder Broschüren und digitale Visuals."
+          "answer": "Wir bieten Logos, Markenidentität, Visitenkarten, Briefpapier, Flyer, Poster, Aufkleber, Zeitschriften oder Broschüren und digitale Visuals."
         },
         {
           "id": "des-2",
-          "question": "Mit welchen Tools arbeiten Sie?",
-          "answer": "Wir arbeiten mit Adobe Photoshop, Illustrator und InDesign, sodass die Dateien druckfertig und professionell austauschbar sind."
+          "question": "Mit welchen Werkzeugen arbeiten Sie?",
+          "answer": "Wir arbeiten in Adobe Photoshop, Illustrator und InDesign, sodass die Dateien druckfertig und professionell austauschbar sind."
         },
         {
           "id": "des-3",
           "question": "Liefern Sie druckfertige Dateien?",
-          "answer": "Ja. Wir liefern CMYK, Beschnittzugabe, Schnittmarken und bei Bedarf den passenden PDF/X-Export sowie Rastervarianten für die digitale Nutzung."
+          "answer": "Ja. Wir liefern CMYK, Anschnitt, Schnittmarken und bei Bedarf den korrekten PDF/X-Export sowie Rastervarianten für die digitale Nutzung."
         },
         {
           "id": "des-4",
-          "question": "Wie funktioniert ein Logo-Projekt?",
-          "answer": "Ein Logoprojekt reicht vom Briefing über Konzepte und Feedbackrunden bis hin zu endgültigen Vektordateien (SVG/PDF/AI) und grundlegenden Richtlinien."
+          "question": "Wie funktioniert ein Logo-Prozess?",
+          "answer": "Ein Logo-Prozess reicht vom Briefing über Konzepte und Feedback-Runden bis hin zu endgültigen Vektordateien (SVG/PDF/AI) und grundlegenden Richtlinien."
         },
         {
           "id": "des-5",
@@ -326,42 +456,62 @@
         {
           "id": "des-6",
           "question": "Erstellen Sie auch soziale Vorlagen?",
-          "answer": "Ja. Wir erstellen konsistente Vorlagen für Beiträge, Storys und Anzeigen, damit dein Team schnell und erkennbar veröffentlichen kann."
+          "answer": "Ja. Wir erstellen einheitliche Vorlagen für Beiträge, Storys und Anzeigen, damit Ihr Team schnell und wiedererkennbar veröffentlichen kann."
         },
         {
           "id": "des-7",
           "question": "Was ist der Unterschied zwischen Digital- und Printdesign?",
-          "answer": "Für den Druck sind Farbraum, Auflösung und Beschnittränder erforderlich. Digital braucht Schärfe auf Bildschirmen und schnelle Ladezeiten. Wir liefern beides korrekt, abgestimmt auf den Kanal."
+          "answer": "Für den Druck sind Farbraum, Auflösung und Schnittränder erforderlich. Digital erfordert Schärfe auf den Bildschirmen und schnelle Ladezeiten. Wir liefern beides korrekt, abgestimmt auf den Kanal."
         },
         {
           "id": "des-8",
-          "question": "Können Sie Zeitschriften oder Broschüren gestalten?",
+          "question": "Können Sie Zeitschriften oder Broschüren erstellen?",
           "answer": "Ja. Wir erstellen mehrseitige Layouts in InDesign mit Raster, Stilen und Druckvorstufenprüfungen, bereit für den Druck oder die digitale Verteilung."
         },
         {
           "id": "des-9",
           "question": "Helfen Sie beim Drucken?",
-          "answer": "Ja. Wir entwerfen und können in kleinen oder großen Mengen drucken – von Visitenkarten und Aufklebern bis hin zu Flyern, Postern und Broschüren – mit Korrekturabzügen und der Koordination bis zur Lieferung."
+          "answer": "Ja. Wir entwerfen und können in kleinen oder großen Mengen drucken – von Visitenkarten und Aufklebern bis hin zu Flyern, Postern und Broschüren – mit Korrekturabzügen und Koordination bis zur Lieferung."
         },
         {
           "id": "des-10",
-          "question": "Wie viele Feedbackrunden sind enthalten?",
-          "answer": "In der Regel sind 2 bis 3 strukturierte Runden enthalten. Zusätzliche Runden sind nach Vereinbarung möglich."
+          "question": "Wie viele Feedbackrunden gibt es?",
+          "answer": "Normalerweise gibt es 2 bis 3 strukturierte Runden. Weitere Runden sind nach Absprache möglich."
         },
         {
           "id": "des-11",
           "question": "Erhalten wir Quelldateien?",
-          "answer": "Ja, innerhalb der vereinbarten Lieferung. Das kann AI, PSD oder INDD oder ein Exportpaket sein – je nachdem, was wir vereinbart haben."
+          "answer": "Ja, innerhalb der vereinbarten Lieferzeit. Dies kann AI, PSD oder INDD oder ein Exportpaket sein – je nachdem, was wir vereinbart haben."
         },
         {
           "id": "des-12",
           "question": "Können Design und Webdesign zusammenpassen?",
-          "answer": "Ja. Wir stimmen Markendesign und UI-Systeme so aufeinander ab, dass Print und Website eine Einheit bilden."
+          "answer": "Ja. Wir stimmen Markendesign und UI-Systeme aufeinander ab, sodass Print und Website eine Einheit bilden."
         },
         {
           "id": "des-13",
-          "question": "Wo kann ich mehr über digitales Design erfahren?",
-          "answer": "Weitere Informationen finden du unter /grafisches-design und über die Grafisches Design Services im Menü."
+          "question": "Wo finde ich mehr zum Thema Design?",
+          "answer": "Weitere Informationen finden Sie unter /design (alle Designdienstleistungen) und /graphic-design für Grafikdesign."
+        },
+        {
+          "id": "des-14",
+          "question": "Bieten Sie auch Designsysteme und Komponentenbibliotheken an?",
+          "answer": "Ja, für Marken, die konsequent skalieren wollen: Token, Komponenten und Dokumentation, damit Marketing und Produkt die gleiche Sprache sprechen."
+        },
+        {
+          "id": "des-15",
+          "question": "Können Sie den bestehenden Markenstil digitalisieren?",
+          "answer": "Ja. Wir übersetzen gedruckte oder unvollständige Markenrichtlinien in webfähige Farben, Typografie, UI-Kit und Vorlagen."
+        },
+        {
+          "id": "des-16",
+          "question": "Betreiben Sie UX-Recherche oder nur visuelles Design?",
+          "answer": "Beide. Bei Bedarf beginnen wir mit Interviews, Funnel-Analysen oder Heatmaps; dann UI. Auf diese Weise entwerfen wir auf der Grundlage des Verhaltens und nicht nur des Geschmacks."
+        },
+        {
+          "id": "des-17",
+          "question": "Können Sie soziale Vorlagen und Anzeigenmotive entwerfen?",
+          "answer": "Ja – Karussells, Miniaturansichten, Storys und Adsets, die zu Ihrer Marke und Ihren Kampagnenzielen passen. Weiterlesen: [Services](/diensten)."
         }
       ]
     },
@@ -376,13 +526,13 @@
         },
         {
           "id": "mkt-2",
-          "question": "Wie baut man eine Marketingstrategie auf?",
-          "answer": "Wir entwickeln eine Strategie rund um Ziele, Zielgruppe, Positionierung, Kanalmix, Content-Pipeline und KPIs – praktisch und umsetzbar, nicht nur auf dem Papier."
+          "question": "Wie erstellt man eine Marketingstrategie?",
+          "answer": "Wir entwickeln eine Strategie rund um Ziele, Zielgruppe, Positionierung, Kanalmix, Content-Pipeline und KPIs – pragmatisch und umsetzbar, nicht nur auf dem Papier."
         },
         {
           "id": "mkt-3",
           "question": "Was ist für Sie Full-Funnel-Marketing?",
-          "answer": "Der gesamte Funnel reicht von der Bekanntheit (Inhalte und Anzeigen) über die Berücksichtigung (Fälle und SEO) bis zur Konvertierung (Landingpages und CRM) und dann zur Kundenbindung, sodass jede Phase eine klare Rolle hat."
+          "answer": "Der gesamte Funnel reicht von der Bekanntheit (Inhalte und Anzeigen) über die Berücksichtigung (Fälle und SEO) bis zur Konvertierung (Landingpages und CRM) und dann zur Kundenbindung, sodass jeder Phase eine klare Rolle zukommt."
         },
         {
           "id": "mkt-4",
@@ -392,7 +542,7 @@
         {
           "id": "mkt-5",
           "question": "Können Sie Inhalte schreiben?",
-          "answer": "Ja. Wir schreiben Blogs, Website-Texte, Newsletter, Landingpages und Verkaufstexte – SEO- und Conversion-orientiert."
+          "answer": "Ja. Wir schreiben Blogs, Website-Texte, Newsletter, Landingpages und Verkaufstexte – SEO- und konversionsorientiert."
         },
         {
           "id": "mkt-6",
@@ -412,12 +562,12 @@
         {
           "id": "mkt-9",
           "question": "Arbeiten Sie mit unserem internen Marketingteam zusammen?",
-          "answer": "Ja. Wir können einen Fachbereich ausführen, einsparen oder übernehmen, zum Beispiel nur SEO oder nur Anzeigen."
+          "answer": "Ja. Wir können einen Fachteil umsetzen, einsparen oder übernehmen, zum Beispiel nur SEO oder nur Anzeigen."
         },
         {
           "id": "mkt-10",
-          "question": "Wie schnell starten Sie Kampagnen?",
-          "answer": "Nach der Nachverfolgung und Einrichtung gehen Kampagnen oft innerhalb von 1 bis 2 Wochen live. Die Content-Arbeit läuft parallel, sodass Creatives und Seiten rechtzeitig fertig sind."
+          "question": "Wie schnell starten Ihre Kampagnen?",
+          "answer": "Nach der Nachverfolgung und Einrichtung gehen Kampagnen oft innerhalb von 1 bis 2 Wochen live. Parallel dazu laufen Content-Prozesse ab, sodass Creatives und Seiten rechtzeitig fertig sind."
         },
         {
           "id": "mkt-11",
@@ -427,12 +577,32 @@
         {
           "id": "mkt-12",
           "question": "Ist Marketing ein monatlicher Vertrag?",
-          "answer": "Retainer sind für kontinuierliches Wachstum üblich. Projekte wie ein Audit, ein Redesign oder eine Markteinführung können einmalig sein."
+          "answer": "Für weiteres Wachstum sind Retainer üblich. Projekte wie ein Audit, ein Redesign oder eine Markteinführung können einmalig durchgeführt werden."
         },
         {
           "id": "mkt-13",
           "question": "Wie verhindern Sie „geschäftiges Marketing“ ohne Ergebnisse?",
-          "answer": "Jede Aktivität ist an KPIs gebunden. Leistungsschwache Taktiken werden mithilfe von Daten gestoppt oder verbessert, sodass das Budget für das eingesetzt wird, was funktioniert."
+          "answer": "Jede Aktivität ist mit KPIs verknüpft. Wir stoppen leistungsschwache Taktiken oder verbessern sie mithilfe von Daten, sodass das Budget für das eingesetzt wird, was funktioniert."
+        },
+        {
+          "id": "mkt-14",
+          "question": "Was ist normalerweise in einem Marketingauftrag enthalten?",
+          "answer": "Ein Mix aus Strategie, Content oder SEO, Kampagnen, Reporting und Experimenten – abgestimmt auf KPIs. Damit die Prioritäten klar bleiben, erfassen wir den Umfang und die Stunden. Weiterlesen: [Shop](/shop) · [Kontakt](/contact)."
+        },
+        {
+          "id": "mkt-15",
+          "question": "Helfen Sie bei der Positionierung und Nachrichtenübermittlung?",
+          "answer": "Ja. Klare Positionierung, Value Props und Seitentext sorgen dafür, dass Anzeigen, SEO und Vertrieb die gleiche Botschaft vermitteln."
+        },
+        {
+          "id": "mkt-16",
+          "question": "Messen Sie Marketing anhand der Pipeline und nicht nur anhand des Traffics?",
+          "answer": "Wo möglich: Leads, SQLs, Umsatz oder unterstützte Conversions. Wir passen den Verkehr ohne Qualität an oder stoppen ihn."
+        },
+        {
+          "id": "mkt-17",
+          "question": "Können Sie den Marketing-Stack und das Tracking bereinigen?",
+          "answer": "Ja – GTM, GA4, Pixel, CRM-Links und Einwilligung. Saubere Daten sind die Grundlage für gute Entscheidungen. Weiterlesen: [Einwilligungsmodus](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen)."
         }
       ]
     },
@@ -452,7 +622,7 @@
         },
         {
           "id": "soc-3",
-          "question": "Erstellen Sie auch die Visuals und Videos?",
+          "question": "Machen Sie auch die Visuals und Videos?",
           "answer": "Ja, über Medienerstellung: Standbilder, Karussells, Kurzvideos und Vorlagen."
         },
         {
@@ -463,275 +633,734 @@
         {
           "id": "soc-5",
           "question": "Helfen Sie beim Community-Management?",
-          "answer": "Ja. Wir kümmern uns um Moderation, Antworten, DMs und Reputationspflege entsprechend der vereinbarten Tonalität."
+          "answer": "Ja. Wir führen Moderation, Antworten, DMs und Reputationspflege gemäß der vereinbarten Tonalität durch."
         },
         {
           "id": "soc-6",
           "question": "Können Social und Ads kombiniert werden?",
-          "answer": "Ja. Organische Inhalte speisen Anzeigenkreative ein; Anzeigen skalieren die organische Leistung."
+          "answer": "Ja. Organische Inhalte beflügeln die Werbekreationen; Anzeigen skalieren, was organisch ankommt."
         },
         {
           "id": "soc-7",
           "question": "Wie misst man sozialen Erfolg?",
-          "answer": "Wir messen Reichweite, Engagement, Click-outs, Leads und unterstützte Conversions – nicht nur Likes. Das zeigt, was wirklich zum Wachstum beiträgt."
+          "answer": "Wir messen Reichweite, Engagement, Click-Outs, Leads und unterstützte Conversions – nicht nur Likes. So sehen wir, was wirklich zum Wachstum beiträgt."
         },
         {
           "id": "soc-8",
           "question": "Arbeiten Sie mit Influencern zusammen?",
-          "answer": "Auf Wunsch: Auswahl, Briefing und Tracking. Wir konzentrieren uns auf Passform und messbare Ergebnisse, nicht auf das Erreichen allein."
+          "answer": "Auf Wunsch: Auswahl, Briefing und Tracking. Wir konzentrieren uns auf Passform und messbare Ergebnisse, nicht nur auf die Reichweite."
         },
         {
           "id": "soc-9",
           "question": "Können Sie die Krisenkommunikation unterstützen?",
-          "answer": "Ja. Wir verwenden schnelle Reaktionsprotokolle und stimmen uns mit deinem Team ab, damit die Antworten konsistent und unter Kontrolle bleiben."
+          "answer": "Ja. Wir arbeiten mit Schnellreaktionsprotokollen und stimmen uns mit Ihrem Team ab, damit die Reaktionen konsistent und unter Kontrolle bleiben."
         },
         {
           "id": "soc-10",
-          "question": "Helfen Sie mit LinkedIn bei der B2B-Vordenkerschaft?",
-          "answer": "Ja. Wir erstellen persönliche und Unternehmensinhalte, Karussells, Fälle und Mitarbeitervertretungen, damit Fachwissen sichtbar wird."
+          "question": "Helfen Sie LinkedIn bei der B2B-Vordenkerschaft?",
+          "answer": "Ja. Wir erstellen persönliche und unternehmensbezogene Inhalte, Karussells, Cases und Mitarbeitervertretungen, damit Fachwissen sichtbar wird."
         },
         {
           "id": "soc-11",
-          "question": "Liefern Sie einen Inhaltskalender?",
-          "answer": "Ja. Wir liefern einen Monats- oder Quartalsplan mit Themen, Formaten und Fristen."
+          "question": "Stellen Sie einen Inhaltskalender bereit?",
+          "answer": "Ja. Wir erstellen eine Monats- oder Quartalsplanung mit Themen, Formaten und Terminen."
         },
         {
           "id": "soc-12",
           "question": "Was wäre, wenn wir bereits einen Sozialmanager hätten?",
-          "answer": "Dann können wir uns auf Creatives, Anzeigen oder Strategie spezialisieren oder Spitzenzeiten unterstützen, ohne das bestehende Team zu ersetzen."
+          "answer": "Wir können uns dann auf Creatives, Anzeigen oder Strategien spezialisieren oder Spitzenzeiten unterstützen, ohne das bestehende Team zu ersetzen."
         },
         {
           "id": "soc-13",
-          "question": "Wie schnell werden wir ein Wachstum im sozialen Bereich erleben?",
-          "answer": "Konsistenz ist wichtig. Ein deutliches Wachstum dauert normalerweise Wochen bis Monate; Mit Werbeunterstützung geht es oft schneller."
+          "question": "Wie schnell sehen wir ein Wachstum im sozialen Bereich?",
+          "answer": "Konsistenz zählt. Ein deutliches Wachstum dauert normalerweise Wochen bis Monate; Mit Anzeigenunterstützung geht es oft schneller."
+        },
+        {
+          "id": "soc-14",
+          "question": "Helfen Sie mit Social Proof und Bewertungen?",
+          "answer": "Ja. Wir planen Bewertungsanfragen, Fälle und UGC-ähnliche Formate, die Vertrauen aufbauen – ohne vorgetäuschtes Engagement."
+        },
+        {
+          "id": "soc-15",
+          "question": "Können Sie eine Mitarbeitervertretung einrichten?",
+          "answer": "Ja, insbesondere auf LinkedIn: einfache Richtlinien, Vorlagen und ein Rhythmus, damit das Team Fachwissen sichtbar teilt."
+        },
+        {
+          "id": "soc-16",
+          "question": "Wie verknüpfen Sie Social Media mit der Website und dem Shop?",
+          "answer": "Über UTMs, Landingpages, Produktlinks und Retargeting. Social ist ein Kanal im Trichter, keine Insel. Weiterlesen: [Shop](/shop)."
+        }
+      ]
+    },
+    {
+      "id": "account-portaal",
+      "title": "Account and portal",
+      "items": [
+        {
+          "id": "acc-1",
+          "question": "How do I log in to the customer portal?",
+          "answer": "Go to account/login and use the email address of your customer account. If you have lost data, use password reset or contact us. Read more: [Account](/dashboard) · [Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-2",
+          "question": "What do I see in my dashboard?",
+          "answer": "Depending on your services: tickets, projects, invoices, AI scan/agents and quick links to support. Read more: [AI agents in account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account) · [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "acc-3",
+          "question": "I have lost my login details — what now?",
+          "answer": "Use “forgot your password” or follow the knowledge base steps for the customer panel. If that doesn't work, open a ticket via a known contact address. Read more: [Lost login details](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-4",
+          "question": "How do I open a ticket from the portal?",
+          "answer": "In the customer panel, choose support/tickets, describe your problem and add evidence (URL, screenshots). Read more: [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "acc-5",
+          "question": "Where can I find my invoices?",
+          "answer": "You can view and download invoices in the portal under invoicing/billing. Read more: [Consult invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "acc-6",
+          "question": "How do I change billing information or payment method?",
+          "answer": "Adjust company name, VAT number and payment method in your account settings so that new invoices are correct. Read more: [Change invoice details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "acc-7",
+          "question": "Can colleagues also have access?",
+          "answer": "Yes, with account roles (client, manager, admin) so multiple team members can track tickets or projects without sharing everything."
+        },
+        {
+          "id": "acc-8",
+          "question": "Are AI scan and AI agents linked to my account?",
+          "answer": "Yes. Scans and agents belong to your customer account so that history and rights are retained. Read more: [AI agents](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "acc-9",
+          "question": "How secure is my customer account?",
+          "answer": "Use unique passwords and 2FA where available (including on hosting panels). Don't share sessions on shared computers. Read more: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
+        },
+        {
+          "id": "acc-10",
+          "question": "Can I track project status and deliverables?",
+          "answer": "Where projects are listed in the portal, you can see status and communication. Otherwise, we will keep you informed via tickets or sprint updates."
+        },
+        {
+          "id": "acc-11",
+          "question": "How do I link services from the shop to my account?",
+          "answer": "After checkout, orders belong to your account; provisioning (hosting, domain) follows automatically or via onboarding by support. Read more: [Shop](/shop)."
+        },
+        {
+          "id": "acc-12",
+          "question": "Where do I set notifications or preferences?",
+          "answer": "In account settings you manage profile and where available notification preferences. For invoice emails, keep your email address current."
+        }
+      ]
+    },
+    {
+      "id": "shop-bestellen",
+      "title": "Shop and ordering",
+      "items": [
+        {
+          "id": "shop-1",
+          "question": "What can I order in the shop?",
+          "answer": "Hosting packages, domains, care/support products and other services that we offer online. Customized quotes are made via contact. Read more: [Shop](/shop) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "shop-2",
+          "question": "How does the shopping cart and checkout work?",
+          "answer": "Add products, check period (month/year) and complete via checkout. You will then receive confirmation and access to your account. Read more: [Shopping cart](/shop/cart)."
+        },
+        {
+          "id": "shop-3",
+          "question": "Are prices inclusive or exclusive of VAT?",
+          "answer": "In the shop we show prices according to the VAT context shown (often incl. for consumer flows). The invoice contains a net VAT breakdown for business customers."
+        },
+        {
+          "id": "shop-4",
+          "question": "Can I pay monthly or annually?",
+          "answer": "Many hosting and care products have monthly and annual options. Annually is often cheaper; details are per product card."
+        },
+        {
+          "id": "shop-5",
+          "question": "Which payment methods do you accept?",
+          "answer": "Common online methods via checkout (depending on region). For enterprise invoices we can arrange invoicing on account via contact."
+        },
+        {
+          "id": "shop-6",
+          "question": "Do I get immediate access after payment?",
+          "answer": "For standard hosting/domain products, provisioning follows quickly after successful payment. For custom services, support plans the kick-off."
+        },
+        {
+          "id": "shop-7",
+          "question": "Can I upgrade packages later?",
+          "answer": "Yes. From shared to cloud/VPS or from Basic to Plus/Business is possible with migration planning. Read more: [Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [Choose package](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "shop-8",
+          "question": "How do I combine shop products with customization?",
+          "answer": "Order hosting/care online and plan design, SEO or ads via intake. We bundle invoicing and account where possible. Read more: [Contact](/contact)."
+        },
+        {
+          "id": "shop-9",
+          "question": "What if my order does not arrive or is stuck?",
+          "answer": "Check your email (including spam) and the portal. If it remains silent, open a ticket or email support with order number. Read more: [Contact](/contact) · [Tickets](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "shop-10",
+          "question": "Can I order a domain and hosting in one order?",
+          "answer": "Yes, that's the usual flow: domain + hosting in the shopping cart, then DNS connection. Read more: [Domains](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "shop-11",
+          "question": "Are there packages for WordPress Care?",
+          "answer": "Yes. Care packages cover updates, monitoring and maintenance — separately or in addition to hosting. Read more: [Shop](/shop)."
+        },
+        {
+          "id": "shop-12",
+          "question": "How do I cancel or change an order?",
+          "answer": "Immediately after ordering via support; After that, cancellation and change conditions apply per product. We help migration or export if you stop. Read more: [Contact](/contact)."
         }
       ]
     },
     {
       "id": "support",
-      "title": "Unterstützung",
+      "title": "Support",
       "items": [
         {
           "id": "sup-1",
-          "question": "Welche Unterstützung bieten Sie an?",
-          "answer": "Wir bieten WordPress-Betreuung, benutzerdefinierten Website-Support, Tickets und Live-Chat, Wartung, Sicherheit, Leistung und Reaktion auf Vorfälle."
+          "question": "What support do you offer?",
+          "answer": "We offer WordPress management, custom website support, tickets and live chat, maintenance, security, performance and incident response. Read more: [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting) · [Chat, ticket or call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
         },
         {
           "id": "sup-2",
-          "question": "Wie erreiche ich den Support?",
-          "answer": "Über Kontakt, einen Termin, Tickets im Dashboard oder Live-Chat auf der Website. Dringende Fälle werden als Priorität gekennzeichnet."
+          "question": "How do I reach support?",
+          "answer": "Via contact, an appointment, tickets in the dashboard or live chat on the site. We mark emergency cases as priorities. Read more: [Contact](/contact) · [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Call appointment](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)."
         },
         {
           "id": "sup-3",
-          "question": "Wie lange ist Ihre Reaktionszeit?",
-          "answer": "Unser Ziel ist eine schnelle erste Antwort, oft innerhalb eines Werktages. Bei kritischen Ausfallzeiten reagieren wir schneller. Genaue SLAs finden du in den Supportpaketen."
+          "question": "What is your response time?",
+          "answer": "We aim for a quick initial response, often within one working day. We respond faster in critical downtime. The exact SLAs are stated in the support packages."
         },
         {
           "id": "sup-4",
-          "question": "Bieten Sie eine Überwachung rund um die Uhr an?",
-          "answer": "Ja, in entsprechenden Support- und Hosting-Paketen: Überwachung, Backups und Alarme, damit Probleme früher sichtbar werden."
+          "question": "Do you offer 24/7 monitoring?",
+          "answer": "Yes, in relevant support and hosting packages: monitoring, backups and alerts, so that problems are visible earlier. Read more: [Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup)."
         },
         {
           "id": "sup-5",
-          "question": "Können Sie Malware entfernen?",
-          "answer": "Ja – auf WordPress sowie benutzerdefinierten Stacks – einschließlich Härtung und Nachsorge, damit die Website wieder sauber und besser geschützt ist."
+          "question": "Can you remove malware?",
+          "answer": "Yes — both on WordPress and on custom stacks — including hardening and aftercare, so that the site comes back clean and better protected."
         },
         {
           "id": "sup-6",
-          "question": "Erledigen Sie WordPress-Updates für uns?",
-          "answer": "Ja, über „Wartung und Updates“: Kern, Plugins und Themes, mit Backup und Prüfungen vor und nach dem Update."
+          "question": "Do you do WordPress updates for us?",
+          "answer": "Yes, via “Maintenance and updates”: core, plugins and themes, with backup and checks before and after we update. Read more: [Site down after WP update](/kennisbank/hosting/website-down-na-update-wordpress)."
         },
         {
           "id": "sup-7",
-          "question": "Helfen Sie bei Hosting-Problemen?",
-          "answer": "Ja. Wir diagnostizieren, migrieren oder optimieren Hosting, VPS und Domains, bis die Seite wieder stabil läuft."
+          "question": "Do you help with hosting problems?",
+          "answer": "Yes. We diagnose, migrate or optimize hosting, VPS and domains until the site is running stable again. Read more: [Move website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je)."
         },
         {
           "id": "sup-8",
-          "question": "Was passiert, wenn meine Website nicht verfügbar ist?",
-          "answer": "Melden du es als dringend. Wir stellen, soweit möglich, mithilfe von Backups, Serverprüfungen und einem Hotfix wieder her und halten du unterwegs über den Status auf dem Laufenden."
+          "question": "What if my site is down?",
+          "answer": "Report it as an emergency. We restore where possible via backups, server checks and a hotfix, and keep you informed of the status in the meantime. Read more: [Backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [Check yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support)."
         },
         {
           "id": "sup-9",
-          "question": "Gibt es ein Kundenportal?",
-          "answer": "Ja. Angemeldete Kunden sehen Dashboard, Tickets, Projekte und ggf. CRM oder Rechnungen."
+          "question": "Is there a customer portal?",
+          "answer": "Yes. Logged in customers see dashboard, tickets, projects and where relevant CRM or invoices. Read more: [Ticket via customer panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel) · [Lost login?](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
         },
         {
           "id": "sup-10",
-          "question": "Können mehrere Teamkollegen Tickets öffnen?",
-          "answer": "Ja, abhängig von den Kontorollen (Kunde, Manager oder Administrator)."
+          "question": "Can multiple team members open tickets?",
+          "answer": "Yes, depending on the account roles (client, manager or admin)."
         },
         {
           "id": "sup-11",
-          "question": "Was ist im Basic-/Standard-/Premium-Support enthalten?",
-          "answer": "Höhere Pakete decken mehr Websites, schnellere Nachverfolgung und breitere Abdeckung (Updates, Malware, Geschwindigkeit, SEO) ab. Einzelheiten finden du auf den Support-Seiten."
+          "question": "What is included in Basic/Standard/Premium support?",
+          "answer": "Higher packages cover more sites, faster follow-up and broader coverage (updates, malware, speed, SEO). The details are on the support pages."
         },
         {
           "id": "sup-12",
-          "question": "Helfen Sie auch bei nicht-technischen Fragen?",
-          "answer": "Ja, zu Leistungen, Abrechnung und Konto. Wie tief wir technisch gehen, hängt von deinem Paket ab."
+          "question": "Do you also help with non-technical questions?",
+          "answer": "Yes, about services, billing and account. How far we go technically depends on your package."
         },
         {
           "id": "sup-13",
-          "question": "Kann ich den Support später upgraden?",
-          "answer": "Ja. Du können skalieren, wenn der Datenverkehr, das Risiko oder die Teamanforderungen zunehmen."
+          "question": "Can I upgrade support later?",
+          "answer": "Yes. You can scale up as traffic, risk or team needs grow."
+        },
+        {
+          "id": "sup-14",
+          "question": "What is the difference between chat, ticket and call appointment?",
+          "answer": "Chat is fast for short questions; tickets are better for technical cases with logs and follow-up; a telephone appointment is suitable for an intake or complex explanation. Read more: [Chat versus ticket versus call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "sup-15",
+          "question": "How do I create a support ticket?",
+          "answer": "Log in to the customer panel and open a ticket with clear URL, steps and screenshots. The better the information, the faster we can help. Read more: [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "sup-16",
+          "question": "Do you have backups if my site goes down?",
+          "answer": "Yes, depending on your hosting or support package. In the event of downtime, we restore from backups where possible and investigate the cause. Read more: [Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor)."
+        },
+        {
+          "id": "sup-17",
+          "question": "What can I check myself before calling support?",
+          "answer": "Check status page, DNS propagation, recent updates, disk space and whether the error is reproducible. That speeds up the diagnosis. Read more: [Do it yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support) · [Statuspage](/statuspage)."
+        },
+        {
+          "id": "sup-18",
+          "question": "How does live chat work on the site?",
+          "answer": "Open live chat via the chat button. Agent 000 first helps with FAQ/knowledge base; For more complex or urgent matters, we refer you to an employee. Read more: [Digital Assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Contact](/contact)."
+        },
+        {
+          "id": "sup-19",
+          "question": "Can you help with a critical WordPress error?",
+          "answer": "Yes. We diagnose white screens, critical PHP errors and plugin conflicts, with backup and targeted fix. Read more: [Critical Error WordPress](/kennisbank/wordpress/kritieke-fout-wordpress) · [Down after update](/kennisbank/hosting/website-down-na-update-wordpress)."
+        },
+        {
+          "id": "sup-20",
+          "question": "Can you watch remotely (TeamViewer, etc.)?",
+          "answer": "Where necessary and with permission, for desktop or panel problems. For most hosting matters, access to panel, DNS or WordPress is sufficient. Read more: [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "sup-21",
+          "question": "How do I cancel a subscription or service?",
+          "answer": "You can cancel via the customer panel or support; pay attention to notice periods in your agreement. We help you complete data/export and DNS transfer neatly. Read more: [Contact](/contact) · [Account](/dashboard)."
+        },
+        {
+          "id": "sup-22",
+          "question": "Do you offer WordPress Care / maintenance packages?",
+          "answer": "Yes. Updates, backups, security checks and performance are included in care packages — ideal in addition to hosting. Read more: [Shop](/shop) · [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren)."
+        },
+        {
+          "id": "sup-23",
+          "question": "What if email suddenly stops working?",
+          "answer": "Check DNS (MX/SPF/DKIM/DMARC), mailbox quota and whether Microsoft or providers are blocking mail. We help measure the chain. Read more: [Email Problems](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
         }
       ]
     },
     {
       "id": "webdesign",
-      "title": "Webdesign",
+      "title": "Web design",
       "items": [
         {
           "id": "web-1",
-          "question": "Erstellen Sie nur WordPress-Sites?",
-          "answer": "Nein. Neben WordPress erstellen wir individuelles Webdesign in HTML/CSS/JS, PHP und Next.js – getrennt von den WordPress-Diensten."
+          "question": "Do you only build WordPress sites?",
+          "answer": "No. In addition to WordPress, we do custom web design in HTML/CSS/JS, PHP and Next.js — separate from the WordPress services. Read more: [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [Services](/diensten)."
         },
         {
           "id": "web-2",
-          "question": "Was beinhaltet der Website-Support?",
-          "answer": "Der Website-Support umfasst Design, Entwicklung, Wartung, Sicherheit, Leistung, Backups oder Migration sowie API-Integrationen für benutzerdefinierte Stacks."
+          "question": "What does Website Support entail?",
+          "answer": "Website Support covers design, development, maintenance, security, performance, backups or migration and API integrations for custom stacks."
         },
         {
           "id": "web-3",
-          "question": "Können Sie eine bestehende Website neu gestalten?",
-          "answer": "Ja. Wir führen eine UX/UI-Aktualisierung, Konvertierungsverbesserungen und technische Modernisierungen durch, ohne alles wegzuwerfen, wenn es nicht nötig ist."
+          "question": "Can you redesign an existing site?",
+          "answer": "Yes. We do a UX/UI refresh, conversion improvement and technical modernization, without throwing everything away if not necessary."
         },
         {
           "id": "web-4",
-          "question": "Arbeiten Sie mit Next.js?",
-          "answer": "Ja. Next.js ist ideal für schnelle, SEO-fähige Marketingseiten und Dashboards."
+          "question": "Do you work with Next.js?",
+          "answer": "Yes. Next.js is ideal for fast, SEO-ready marketing sites and dashboards."
         },
         {
           "id": "web-5",
-          "question": "Erstellen Sie auch PHP-Anwendungen?",
-          "answer": "Ja. Wir erstellen Portale und APIs, modernisieren bestehende Systeme und erhöhen Leistung und Sicherheit."
+          "question": "Do you also do PHP applications?",
+          "answer": "Yes. We build portals and APIs, modernize legacy and harden performance and security."
         },
         {
           "id": "web-6",
-          "question": "Wie stellen Sie mobile Websites sicher?",
-          "answer": "Wir entwerfen Mobile-First, erstellen responsive Layouts und testen auf gängigen Geräten und Browsern, damit die Website überall funktioniert."
+          "question": "How do you ensure mobile websites?",
+          "answer": "We design mobile-first, build responsive layouts and test on common devices and browsers, so that the site works well everywhere."
         },
         {
           "id": "web-7",
-          "question": "Ist Barrierefreiheit (a11y) inbegriffen?",
-          "answer": "Wir bauen mit zugänglichen Grundpraktiken auf. Als zusätzlicher Umfang können strengere WCAG-Programme aufgenommen werden."
+          "question": "Is accessibility (a11y) included?",
+          "answer": "We build with accessible basic practices. We can include stricter WCAG processes as an additional scope."
         },
         {
           "id": "web-8",
-          "question": "Können Sie CMS-Optionen ohne WordPress anbieten?",
-          "answer": "Ja. Das kann ein Headless-CMS, ein benutzerdefinierter Administrator oder ein statisches Setup sein – je nach deinem Team und deinen Anforderungen."
+          "question": "Can you offer CMS options without WordPress?",
+          "answer": "Yes. This can be a headless CMS, custom admin or a static setup — depending on your team and wishes."
         },
         {
           "id": "web-9",
-          "question": "Wie lange dauert ein Webdesign-Projekt?",
-          "answer": "Landing Pages dauern in der Regel ein paar Wochen; Größere Websites oder Apps werden in Sprints über mehrere Wochen ausgeführt. Nach der Aufnahme folgt die Planung."
+          "question": "How long does a web design process take?",
+          "answer": "Landing pages usually take several weeks; larger sites or apps run in sprints over several weeks. The planning follows after the intake."
         },
         {
           "id": "web-10",
-          "question": "Kümmern Sie sich beim Start auch um Text und SEO?",
-          "answer": "Ja, kombiniert mit Inhalts- und SEO-Diensten, damit die Website sofort durchsuchbar und auf Konvertierungen ausgerichtet ist."
+          "question": "Do you also arrange copy and SEO at launch?",
+          "answer": "Yes, in combination with content and SEO services, so that the site goes live immediately in a searchable and conversion-oriented manner."
         },
         {
           "id": "web-11",
-          "question": "Wie sieht es mit der Leistung nach dem Start aus?",
-          "answer": "Wir optimieren Core Web Vitals, Caching oder CDN und Monitoring. Die Nachsorge erfolgt dann über Wartungspakete weiter."
+          "question": "What about performance after launch?",
+          "answer": "We optimize Core Web Vitals, caching or CDN and monitoring. Aftercare then runs through maintenance packages. Read more: [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)."
         },
         {
           "id": "web-12",
-          "question": "Können Sie APIs (CRM, Zahlungen, KI) anbinden?",
-          "answer": "Ja. Wir erstellen Integrationen mit sauberer Fehlerbehandlung, Protokollierung und Dokumentation."
+          "question": "Can you connect APIs (CRM, payments, AI)?",
+          "answer": "Yes. We build integrations with clean error handling, logging and documentation."
         },
         {
           "id": "web-13",
-          "question": "Wie liefern Sie Code?",
-          "answer": "Wo möglich liefern wir über Repository und Deploy-Pipeline, mit Umgebungen (Staging und Produktion) und einer klaren Übergabe."
+          "question": "How do you deliver code?",
+          "answer": "Where possible we deliver via repository and deploy pipeline, with environments (staging and production) and a clear handover."
         },
         {
           "id": "web-14",
-          "question": "Helfen Sie bei der Conversion-Optimierung vor Ort?",
-          "answer": "Ja. Wir führen A/B-Tests, UX-Verbesserungen, Formulare, CTAs und Seitengeschwindigkeit durch, damit mehr Besucher konvertieren."
+          "question": "Do you help with conversion optimization on the site?",
+          "answer": "Yes. We do A/B testing, UX improvements, forms, CTAs and page speed, so that more visitors convert."
+        },
+        {
+          "id": "web-15",
+          "question": "Do you also build web shops?",
+          "answer": "Yes, from marketing sites with checkout integrations to e-commerce on WordPress or customization. We coordinate scope, payments and fulfillment during the intake. Read more: [Services](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "web-16",
+          "question": "How do you deal with privacy texts on sites?",
+          "answer": "We advise and implement privacy and consent flows for forms and banners, tailored to your lawyer where necessary. Read more: [Privacy with forms](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren) · [Cookie banner](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "web-17",
+          "question": "Do you provide staging environments?",
+          "answer": "Yes, where relevant: staging for reviews and tests, then controlled deployment to production."
+        },
+        {
+          "id": "web-18",
+          "question": "Can you take over and improve an existing WordPress site?",
+          "answer": "Yes — audit, updates, security, speed, UX and SEO, without unnecessarily building from scratch. Read more: [WP move](/kennisbank/domeinnamen/wordpress-website-verhuizen) · [Critical errors](/kennisbank/wordpress/kritieke-fout-wordpress)."
+        },
+        {
+          "id": "web-19",
+          "question": "What about HTTP to HTTPS after delivery?",
+          "answer": "Sites default to HTTPS. During migrations we force HTTPS and resolve mixed content. Read more: [HTTP to HTTPS in WordPress](/kennisbank/wordpress/wordpress-url-omzetten-van-http-naar-https) · [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig)."
+        }
+      ]
+    },
+    {
+      "id": "domeinen",
+      "title": "Domänen",
+      "items": [
+        {
+          "id": "dom-1",
+          "question": "Was ist ein Domainname?",
+          "answer": "Ein Domainname ist die Adresse, die Besucher verwenden, um Ihre Website zu finden (z. B. example.com). Es stellt eine Verbindung zu DNS-Einträgen her, die auf Ihr Hosting oder Ihre E-Mail-Adresse verweisen. Weiterlesen: [Domain registration](/kennisbank/domeinnamen/domeinnaamregistratie) · [Order domains](/domeinen)."
+        },
+        {
+          "id": "dom-2",
+          "question": "Wie registriere ich einen Domainnamen bei Ihnen?",
+          "answer": "Suchen Sie auf der Domainseite nach dem Namen, wählen Sie eine Erweiterung aus und schließen Sie die Kaufabwicklung im Shop ab. Nach der Registrierung verwalten Sie DNS, Nameserver und Rechnungen in Ihrem Konto. Weiterlesen: [Domains](/domeinen) · [Registration guide](/kennisbank/domeinnamen/domeinnaamregistratie) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-3",
+          "question": "Kann ich meine Domain zu Ihnen übertragen?",
+          "answer": "Ja. Fordern Sie bei Ihrem aktuellen Registrar einen Autorisierungscode (EPP) an, entsperren Sie etwaige Übertragungssperren und starten Sie dann die Übertragung bei uns. Danach stellen wir DNS und Nameserver richtig ein. Weiterlesen: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Authorisation code](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-4",
+          "question": "Was ist ein Autorisierungscode (EPP/Auth-Code)?",
+          "answer": "Dabei handelt es sich um einen einmaligen Code von Ihrem aktuellen Registrar, der einen Domaintransfer sicher startet. Ohne einen gültigen Code kann die Übertragung nicht durchgeführt werden. Weiterlesen: [What is an authorisation code?](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen)."
+        },
+        {
+          "id": "dom-5",
+          "question": "Was ist eine Transfersperre bzw. Registrarsperre?",
+          "answer": "Eine Sperre verhindert unerwünschte Übertragungen. Für einen Umzug müssen Sie oft zuerst beim aktuellen Anbieter abschalten und dann den Transfer bei uns starten. Weiterlesen: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Support](/contact)."
+        },
+        {
+          "id": "dom-6",
+          "question": "Kann ich eine Domain ohne Hosting kaufen?",
+          "answer": "Ja. Sie können nur eine Domain registrieren oder übertragen und später Hosting oder E-Mail hinzufügen. Sie können DNS bereits in der Zwischenzeit verwalten oder weiterleiten. Weiterlesen: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-7",
+          "question": "Welche Erweiterungen (.nl, .com, …) kann ich registrieren?",
+          "answer": "Wir unterstützen gängige TLDs wie .nl und .com sowie viele internationale Erweiterungen. Verfügbarkeit und Preis werden sofort in der Domain-Suche angezeigt. Weiterlesen: [Domains](/domeinen) · [Registration](/kennisbank/domeinnamen/domeinnaamregistratie)."
+        },
+        {
+          "id": "dom-8",
+          "question": "Wie erneuere ich meinen Domainnamen?",
+          "answer": "Die Verlängerung erfolgt über Rechnungen und Ihr Kundenportal; Oft ist eine automatische Verlängerung verfügbar. Halten Sie die Zahlungsdetails auf dem neuesten Stand, um ein Ablaufen zu vermeiden. Weiterlesen: [Invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails) · [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "dom-9",
+          "question": "Was sind Premium-Domainnamen?",
+          "answer": "Premium-Namen sind kurze oder beliebte Domains mit einem höheren Kaufpreis, oft über einen Aftermarket. Verfügbarkeit und Bedingungen variieren je nach Erweiterung. Weiterlesen: [Premium domains](/kennisbank/domeinnamen/premium-domeinnamen) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-10",
+          "question": "Kann ich meine Domain anonym registrieren (Protect ID)?",
+          "answer": "Wenn die Registrierung dies zulässt, können Sie Datenschutz/Protect ID in Betracht ziehen. Die Regeln unterscheiden sich je nach Erweiterung – .nl hat beispielsweise ein eigenes Framework. Weiterlesen: [Protect ID](/kennisbank/domeinnamen/protect-id-domein-anoniem-registreren)."
+        },
+        {
+          "id": "dom-11",
+          "question": "Meine Domain befindet sich in Quarantäne – was nun?",
+          "answer": "Nach dem Löschen kann eine Domain unter Quarantäne gestellt werden. Je nach Registry können Sie es oft gegen eine Gebühr reaktivieren; warte nicht zu lange. Weiterlesen: [Domain out of quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-12",
+          "question": "Mein neuer Domainname funktioniert noch nicht – was nun?",
+          "answer": "In der Regel handelt es sich um DNS-Weitergabe, fehlende A/MX-Einträge oder noch nicht aktualisierte Nameserver. Überprüfen Sie die Datensätze und lassen Sie TTLs ablaufen. Weiterlesen: [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-13",
+          "question": "Wie verbinde ich eine Domain mit meinem Hosting-Paket?",
+          "answer": "Add the domain in your panel or account and point DNS (A record or nameservers) to the hosting. Wir helfen beim ersten Anschluss nach der Bestellung. Weiterlesen: [Connect domain to plan](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-14",
+          "question": "Kann ich eine Domain weiterleiten?",
+          "answer": "Ja. Durch die Domain-Weiterleitung werden Besucher zu einer anderen URL weitergeleitet – nützlich für Markennamen ohne separate Website. Wir passen DNS und Weiterleitungen an Ihr Setup an. Weiterlesen: [Forward a domain](/kennisbank/domeinnamen/domeinnaam-doorsturen) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-15",
+          "question": "Wie ändere ich Nameserver für meine Domain?",
+          "answer": "Bei der DNS-/Domainverwaltung wählen Sie unsere Nameserver oder externe (zum Beispiel ein CDN). Die Vermehrung kann Stunden bis zu einem Tag dauern. Weiterlesen: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-16",
+          "question": "Was kostet ein Domainname?",
+          "answer": "Die Preise variieren je nach Verlängerung und Zeitraum; Die Domainsuche zeigt aktuelle Registrierungs- und Verlängerungspreise an. Premium-Namen haben einen separaten Preis. Weiterlesen: [Domains](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-17",
+          "question": "Müssen Hosting und Domain beim gleichen Anbieter sein?",
+          "answer": "Nein, aber es ist einfacher: DNS, SSL, E-Mail und Support liegen dann bei einer Partei. Sie können bei uns auch nur DNS behalten und woanders hosten. Weiterlesen: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "dom-18",
+          "question": "Kann ich mehrere Domains auf einem Konto verwalten?",
+          "answer": "Ja. Zusätzliche Domains können registriert oder übertragen und als Add-on verknüpft, geparkt oder weitergeleitet werden – innerhalb der Grenzen Ihres Hosting-Plans. Weiterlesen: [Domains](/domeinen) · [Choose a hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "dom-19",
+          "question": "Was passiert, wenn meine Domain abläuft?",
+          "answer": "Nach Ablauf gibt es häufig eine Kulanz- oder Quarantänefrist, in der eine Wiederherstellung noch möglich ist; danach kann es jemand anderes für sich beanspruchen. Pünktliche Verlängerung per Rechnung. Weiterlesen: [Quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-20",
+          "question": "Wo bestelle oder verwalte ich Domains?",
+          "answer": "Registrieren und übertragen Sie über die Domainseite oder den Shop; Die Verwaltung (DNS, Rechnungen, Verlängerung) erfolgt im Kundenportal. Weiterlesen: [Domains](/domeinen) · [Shop](/shop) · [Account](/dashboard)."
         }
       ]
     },
     {
       "id": "webhosting",
-      "title": "Webhosting und Domains",
+      "title": "Webhosting",
       "items": [
         {
           "id": "host-1",
           "question": "Welches Hosting bieten Sie an?",
-          "answer": "Wir bieten Shared Hosting, WordPress Hosting und VPS – in den Stufen Basic, Plus und Business – sowie Domains."
+          "answer": "Wir bieten Shared Hosting, Cloud Hosting, WordPress Hosting und VPS – plus Domainregistrierung. Wählen Sie basierend auf Traffic, Stack und Wachstum. Weiterlesen: [Shared hosting](/diensten/shared-hosting) · [Cloud hosting](/diensten/cloud-hosting) · [WordPress hosting](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-2",
-          "question": "Was ist der Unterschied zwischen Shared, WordPress und VPS?",
-          "answer": "Shared ist für kleinere Websites kostengünstig. WordPress-Hosting ist für WP optimiert. VPS bietet mehr Ressourcen und Kontrolle für schwerere Lasten."
+          "question": "Was ist der Unterschied zwischen Shared, Cloud, WordPress und VPS?",
+          "answer": "Shared ist für kleinere Websites kostengünstig. Die Cloud bietet mehr Ressourcen und Skalierbarkeit, vollständig verwaltet. WordPress-Hosting ist für WP optimiert. VPS bietet mehr Kontrolle für schwerere Lasten. Weiterlesen: [Differences explained](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps) · [Shared plans](/kennisbank/hosting/wat-is-shared-hosting-basic-plus-en-business) · [VPS plans](/kennisbank/hosting/wat-is-vps-hosting-basic-plus-en-business)."
         },
         {
           "id": "host-3",
-          "question": "Helfen Sie bei der Domainregistrierung?",
-          "answer": "Ja. Wir beraten du, registrieren oder übertragen die Domain und binden DNS korrekt an."
+          "question": "Was ist bei Ihnen Cloud Hosting?",
+          "answer": "Cloud-Hosting bietet mehr Ressourcen und Skalierbarkeit als klassisches Shared-Hosting, während wir es weiterhin verwalten. Ideal, wenn die gemeinsame Nutzung knapp wird, aber noch kein vollständiger VPS benötigt wird. Weiterlesen: [Cloud hosting](/diensten/cloud-hosting) · [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
         },
         {
           "id": "host-4",
           "question": "Ist SSL im Hosting enthalten?",
-          "answer": "Ja. SSL ist Standard in unseren entsprechenden Hosting-Paketen."
+          "answer": "Ja. SSL ist in unseren entsprechenden Hosting-Plänen Standard, sodass Websites auf HTTPS laufen. Weiterlesen: [What is SSL?](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [Install Let's Encrypt](/kennisbank/hosting/hoe-installeer-ik-een-gratis-lets-encrypt-ssl-certificaat)."
         },
         {
           "id": "host-5",
           "question": "Können Sie meine Website auf Ihr Hosting migrieren?",
-          "answer": "Ja. Wir kümmern uns um Backup, Migration, DNS-Umstellung, SSL und Smoke-Tests mit minimalen Ausfallzeiten."
+          "answer": "Ja. Wir kümmern uns um Backup, Migration, DNS-Umstellung, SSL und Smoke-Tests mit minimalen Ausfallzeiten. Weiterlesen: [Migrate website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je) · [Migrate WordPress](/kennisbank/domeinnamen/wordpress-website-verhuizen)."
         },
         {
           "id": "host-6",
           "question": "Wie funktionieren Backups beim Hosting?",
-          "answer": "Das hängt vom Plan ab: einfache oder automatisierte Backups. Zusätzliche externe Aufbewahrung ist verfügbar."
+          "answer": "Das hängt vom Plan ab: einfache oder automatisierte Backups. Zusätzliche externe Aufbewahrung ist verfügbar. Weiterlesen: [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor) · [Backup in DirectAdmin](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
         },
         {
           "id": "host-7",
           "question": "Was passiert, wenn ich mehr Verkehr bekomme?",
-          "answer": "Dann skalieren wir auf Plus, Business oder VPS und optimieren Caching und CDN, damit die Site das Wachstum bewältigen kann."
+          "answer": "Anschließend skalieren wir auf Plus, Business, Cloud oder VPS und optimieren Caching und CDN, damit die Website mit dem Wachstum umgehen kann. Weiterlesen: [When to move to VPS?](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)."
         },
         {
           "id": "host-8",
-          "question": "Bieten Sie E-Mail mit Domains an?",
-          "answer": "Das hängt vom Paket und Setup ab. Wir empfehlen zuverlässige Mail-Lösungen und stellen DNS richtig ein (SPF, DKIM und DMARC)."
+          "question": "Wie sicher ist Ihr Hosting?",
+          "answer": "Wir nutzen Firewall, SSL, Updates, Überwachung und Härtung. Bei Bedarf sind zusätzliche Sicherheitsebenen verfügbar. Weiterlesen: [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
         },
         {
           "id": "host-9",
-          "question": "Wie sicher ist Ihr Hosting?",
-          "answer": "Wir nutzen Firewall, SSL, Updates, Überwachung und Härtung. Zusätzliche Sicherheitsdienste können weitere Ebenen hinzufügen."
+          "question": "Kann ich später von Shared zu VPS wechseln?",
+          "answer": "Ja. Wir planen gemeinsam die Migration, einschließlich Tests und Rollback, damit der Switch unter Kontrolle bleibt. Weiterlesen: [Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [VPS hosting](/diensten/vps-hosting)."
         },
         {
           "id": "host-10",
-          "question": "Kann ich später von Shared zu VPS wechseln?",
-          "answer": "Ja. Wir planen gemeinsam die Migration, einschließlich Tests und Rollback, damit der Switch unter Kontrolle bleibt."
+          "question": "Unterstützen Sie CDN?",
+          "answer": "Ja, sofern relevant – oft ist ein kostenloses CDN in WP-Hosting-Plänen enthalten – für eine schnellere weltweite Lieferung. Weiterlesen: [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [WordPress hosting](/diensten/wordpress-hosting)."
         },
         {
           "id": "host-11",
-          "question": "Unterstützen Sie CDN?",
-          "answer": "Ja, sofern relevant – oft ist ein kostenloses CDN in den WP-Hosting-Plänen enthalten – für eine schnellere weltweite Lieferung."
+          "question": "Was ist Ihr Uptime-Ansatz?",
+          "answer": "Wir überwachen Vorfälle, reagieren schnell auf Vorfälle und kommunizieren rund um die Wartungsfenster klar, damit Sie wissen, was passiert. Statusaktualisierungen finden Sie auf der Statusseite. Weiterlesen: [Status page](/statuspage) · [Contact](/contact)."
         },
         {
           "id": "host-12",
-          "question": "Was ist Ihr Uptime-Ansatz?",
-          "answer": "Wir überwachen Vorfälle, reagieren schnell auf Vorfälle und kommunizieren rund um die Wartungsfenster klar, damit du wissen, was passiert."
+          "question": "Wie wähle ich den richtigen Hosting-Plan aus?",
+          "answer": "Basierend auf Traffic, Stack (WordPress oder benutzerdefiniert), Ressourcen und Wachstum. Wir beraten ehrlich – wir verkaufen nicht zu viel. Weiterlesen: [Choose the right hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Shared vs WP vs VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
         },
         {
           "id": "host-13",
-          "question": "Helfen Sie bei der Lösung von DNS-Problemen?",
-          "answer": "Ja. Wir reparieren Datensätze, Weitergabe, E-Mail-Authentifizierung und Domänenverbindungen, bis DNS wieder korrekt ist."
+          "question": "Wo kann ich Hosting-Preise einsehen?",
+          "answer": "Auf den Hosting-Service-Seiten und im Shop, ggf. mit monatlicher oder jährlicher Option. Weiterlesen: [Shared](/diensten/shared-hosting) · [Cloud](/diensten/cloud-hosting) · [WordPress](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting) · [Shop](/shop)."
         },
         {
           "id": "host-14",
-          "question": "Wie wähle ich den richtigen Hosting-Plan aus?",
-          "answer": "Basierend auf Traffic, Stack (WordPress oder benutzerdefiniert), Ressourcen und Wachstum. Wir beraten ehrlich – wir verkaufen nicht zu viel."
+          "question": "Erhalte ich SSH-Zugriff auf mein Hosting?",
+          "answer": "Das hängt vom Plan ab. Bei vielen Plänen ist SSH verfügbar oder kann angefordert werden; Auf VPS erhalten Sie normalerweise vollen Zugriff. Weiterlesen: [SSH access](/kennisbank/hosting/heb-ik-ssh-toegang-op-mijn-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-15",
-          "question": "Wo kann ich Hosting-Preise einsehen?",
-          "answer": "Auf den Hosting-Service-Seiten unter Services → Webhosting und Domains, ggf. mit monatlicher oder jährlicher Option."
+          "question": "Wie installiere ich WordPress auf Ihrem Hosting?",
+          "answer": "Über die Systemsteuerung (zum Beispiel DirectAdmin/Installatron) oder manuell. Wir haben eine Schritt-für-Schritt-Anleitung. Weiterlesen: [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-16",
+          "question": "Was sind Inodes und warum sieht mein Plan „voll“ aus?",
+          "answer": "Inodes zählen Dateien/Ordner, nicht nur GB. Viele kleine Cache- oder E-Mail-Dateien können an ihre Grenzen stoßen, während der Speicherplatz noch frei erscheint. Weiterlesen: [Inodes](/kennisbank/hosting/inodes-en-inode-limieten) · [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-17",
+          "question": "Was bedeutet „unbegrenzter“ Speicher oder Datenverkehr?",
+          "answer": "„Unbegrenzt“ folgt einer fairen Nutzung: Die normale Nutzung der Website ist in Ordnung; Missbrauch oder extreme Belastungen können begrenzt werden, um die Stabilität der Plattform zu gewährleisten. Weiterlesen: [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-18",
+          "question": "Was ist der Unterschied zwischen Shared, VPS und Dedicated?",
+          "answer": "Gemeinsame Freigaberessourcen; VPS isoliert mehr CPU/RAM; Dediziert ist ein ganzer Server. Wählen Sie nach Verkehr, Kontrollbedarf und Budget. Weiterlesen: [Dedicated vs VPS vs shared](/kennisbank/infrastructuur-servers/verschil-tussen-dedicated-vps-en-shared-hosting) · [Shared/WP/VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
+        },
+        {
+          "id": "host-19",
+          "question": "Wie arbeite ich mit DirectAdmin?",
+          "answer": "DirectAdmin ist das Kontrollpanel für E-Mail, DNS, Datenbanken, Backups und Installationen. Melden Sie sich mit Ihren Panel-Zugangsdaten an; Wir empfehlen dringend 2FA. Weiterlesen: [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Backups](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
+        },
+        {
+          "id": "host-20",
+          "question": "Bieten Sie Objektcache für WordPress an?",
+          "answer": "Bei geeigneten Plänen unterstützen wir den persistenten Objektcache, um Datenbankabfragen zu reduzieren und das Laden zu beschleunigen. Weiterlesen: [Object cache](/kennisbank/hosting/persistent-object-cache-in-wordpress) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-21",
+          "question": "Wie kann ich das Hosting verlängern oder bezahlen?",
+          "answer": "Über das Kundenportal und Rechnungen; Oft ist eine automatische Verlängerung verfügbar. Halten Sie die Rechnungsdetails auf dem neuesten Stand, um Unterbrechungen zu vermeiden. Weiterlesen: [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode) · [View invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "host-22",
+          "question": "Kann ich mehrere Domains zu einem Hosting-Plan hinzufügen?",
+          "answer": "Oft ja, über Add-ons oder geparkte Domains – abhängig von den Plangrenzen. Wir helfen bei Verbindung und DNS. Weiterlesen: [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Connect domain](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket)."
+        },
+        {
+          "id": "host-23",
+          "question": "Wie sicher ist die Anmeldung bei meinem Hosting-Panel?",
+          "answer": "Verwenden Sie ein sicheres Passwort und aktivieren Sie 2FA. Geben Sie Panel-Logins nicht über unsichere Kanäle weiter. Weiterlesen: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "host-24",
+          "question": "Was genau ist WordPress-Hosting?",
+          "answer": "WordPress-Hosting ist für WP optimiert: schnelleres PHP/Stack, oft CDN und einfachere Installationen/Updates als generisches Shared. Weiterlesen: [WP hosting plans](/kennisbank/hosting/wat-is-wordpress-hosting-basic-plus-en-pro) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-25",
+          "question": "Wo kann ich Hosting direkt bestellen?",
+          "answer": "Im Shop oder über die Kategorien Shared, Cloud, WordPress und VPS-Hosting. Nach der Bestellung erhalten Sie Panel- und Rechnungszugang. Weiterlesen: [Shop](/shop) · [Hosting overview](/diensten/categorie/hosting)."
+        }
+      ]
+    },
+    {
+      "id": "email-dns",
+      "title": "E-Mail und DNS",
+      "items": [
+        {
+          "id": "mail-1",
+          "question": "Bieten Sie E-Mail mit Domains oder Hosting an?",
+          "answer": "Das hängt vom Paket und Setup ab. Wir empfehlen zuverlässige Mail-Lösungen und stellen DNS richtig ein (SPF, DKIM und DMARC). Weiterlesen: [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress) · [SPF record](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-2",
+          "question": "Was sind SPF, DKIM und DMARC?",
+          "answer": "Dabei handelt es sich um DNS-Einträge, die die E-Mail-Authentifizierung übernehmen und Spoofing/Spam reduzieren. Ohne korrekte Aufzeichnungen landen E-Mails häufiger im Spam. Weiterlesen: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-3",
+          "question": "Wie verwalte ich DNS-Einträge?",
+          "answer": "Über die DNS-Verwaltung für Ihre Domain oder Ihr Hosting-Panel legen Sie A-, AAAA-, CNAME-, MX- und TXT-Einträge fest. Wir helfen bei Migrationen und E-Mail-Authentifizierung. Weiterlesen: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [DNSSEC](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-4",
+          "question": "Helfen Sie bei der Lösung von DNS-Problemen?",
+          "answer": "Ja. Wir reparieren Datensätze, Weitergabe, E-Mail-Authentifizierung und Domänenverbindungen, bis DNS wieder korrekt ist. Weiterlesen: [Manage DNS records](/kennisbank/domeinnamen/dns-records-beheren) · [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen)."
+        },
+        {
+          "id": "mail-5",
+          "question": "Was ist DNSSEC?",
+          "answer": "DNSSEC signiert DNS-Antworten, sodass Manipulationen schwieriger sind. Wir können es dort aktivieren, wo Ihre TLD und Ihr Setup dies unterstützen. Weiterlesen: [DNSSEC explained](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-6",
+          "question": "Wie richte ich E-Mail auf meinem Telefon ein?",
+          "answer": "Verwenden Sie die IMAP/SMTP-Details aus Ihrem Panel. Für Android (und entsprechend auch für iOS) finden Sie die Schritte in der Wissensdatenbank. Weiterlesen: [Email on Android](/kennisbank/e-mail/e-mail-instellen-op-android) · [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress)."
+        },
+        {
+          "id": "mail-7",
+          "question": "Was passiert, wenn E-Mails plötzlich nicht mehr funktionieren?",
+          "answer": "Überprüfen Sie DNS (MX/SPF/DKIM/DMARC), das Postfachkontingent und ob Anbieter E-Mails blockieren. Wir helfen, die gesamte Kette zurückzuverfolgen. Weiterlesen: [Email problems](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-8",
+          "question": "Wie funktionieren Nameserver?",
+          "answer": "Nameserver bestimmen, welches DNS-System Ihre Domain bedient. Wenn Sie diese ändern, müssen Sie A/MX/TXT-Records beim neuen DNS-Host wieder korrekt setzen. Weiterlesen: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "mail-9",
+          "question": "Wie lange dauert die DNS-Verbreitung?",
+          "answer": "Oft Minuten bis einige Stunden; manchmal bis zu 24–48 Stunden aufgrund von TTLs und Caches. Senken Sie die TTLs vor einer Migration, um schneller zu wechseln. Weiterlesen: [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen) · [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet)."
+        },
+        {
+          "id": "mail-10",
+          "question": "Kann ich E-Mails an eine andere Adresse weiterleiten?",
+          "answer": "Ja. Weiterleitungen senden eingehende E-Mails an Gmail, Microsoft 365 oder ein anderes Postfach – nützlich neben oder anstelle eines vollen Postfachs. Weiterlesen: [Forward email](/kennisbank/e-mail/email-doorsturen-naar-mailadres)."
+        },
+        {
+          "id": "mail-11",
+          "question": "Kann ich meine Domäne mit Microsoft 365 verbinden?",
+          "answer": "Ja. Sie legen MX- ​​und Authentifizierungsdatensätze (SPF/DKIM/DMARC) gemäß den Anweisungen von Microsoft fest; Wir helfen auf der DNS-Seite. Weiterlesen: [Domain to Microsoft 365](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-microsoft-365) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-12",
+          "question": "Warum landet meine E-Mail im Spam?",
+          "answer": "Oft fehlen SPF/DKIM/DMARC oder stehen in Konflikt, oder IP/Reputation ist schwach. Wir prüfen die DNS-Authentifizierung und das Sendeverhalten. Weiterlesen: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-13",
+          "question": "Was ist ein MX-Eintrag?",
+          "answer": "Ein MX-Eintrag teilt dem Internet mit, welcher Mailserver E-Mails für Ihre Domain empfangen darf. Ohne korrekten MX kommt keine Mail an. Weiterlesen: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Email problems](/kennisbank/hosting/problemen-met-e-mail-website)."
+        },
+        {
+          "id": "mail-14",
+          "question": "Kann ich Webmail verwenden?",
+          "answer": "Ja, über die Webmail-URL Ihres Hosting-Panels können Sie E-Mails im Browser lesen und versenden – neben IMAP auf dem Telefon oder Outlook. Weiterlesen: [Set up email](/kennisbank/e-mail/e-mail-instellen-op-android) · [Contact](/contact)."
+        },
+        {
+          "id": "mail-15",
+          "question": "Muss DNS bei Ihnen sein, wenn das Hosting anderswo erfolgt?",
+          "answer": "Nein. Sie können DNS bei uns oder anderswo behalten, solange A/MX/TXT auf die richtigen Dienste verweist. Konsequentes Management verhindert Migrationsfehler. Weiterlesen: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Nameservers](/kennisbank/domeinnamen/nameservers-beheren)."
         }
       ]
     }

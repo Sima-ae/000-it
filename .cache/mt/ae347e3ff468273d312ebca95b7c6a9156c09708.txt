@@ -1,0 +1,1 @@
+DirectAdmin er kontrollpanelet for e-post, DNS, databaser, sikkerhetskopier og installasjoner. Logg på med panellegitimasjonen din; vi anbefaler på det sterkeste 2FA. Les mer: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+We build with accessible basic practices. We can include stricter WCAG processes as an additional scope.

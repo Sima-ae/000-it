@@ -1,0 +1,1 @@
+Kontrolloni DNS (MX/SPF/DKIM/DMARC), kuotën e kutisë postare dhe nëse ofruesit po bllokojnë postën. Ne ndihmojmë në gjurmimin e zinxhirit të plotë. Lexo më shumë: ⟦L0⟧ · ⟦L1⟧.

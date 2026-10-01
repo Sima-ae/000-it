@@ -1,0 +1,1 @@
+A vezérlőpulton keresztül (például DirectAdmin/Installatron) vagy manuálisan. Van egy lépésről lépésre útmutatónk. Bővebben: ⟦L0⟧ · ⟦L1⟧.

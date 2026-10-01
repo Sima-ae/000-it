@@ -1,0 +1,1 @@
+A process usually runs like this: intake → audit or scan → plan → implementation in sprints → measurement → optimization. You will receive clear milestones and reporting, so that it is always clear where we stand.

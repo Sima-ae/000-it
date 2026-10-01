@@ -1,0 +1,1 @@
+Sites default to HTTPS. During migrations we force HTTPS and resolve mixed content. Read more: ⟦L0⟧HTTP to HTTPS in WordPress⟦/L0⟧ · ⟦L1⟧SSL⟦/L1⟧.

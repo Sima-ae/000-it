@@ -1,0 +1,1 @@
+Via DNS-hantering för din domän eller värdpanel ställer du in A-, AAAA-, CNAME-, MX- och TXT-poster. Vi hjälper till med migrering och e-postauth. Läs mer: ⟦L0⟧ · ⟦L1⟧.

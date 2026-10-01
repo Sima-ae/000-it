@@ -1,0 +1,1 @@
+Často minuty až několik hodin; někdy až 24–48 hodin kvůli TTL a mezipaměti. Snižte TTL před migrací, abyste přepínali rychleji. Přečtěte si více: ⟦L0⟧ · ⟦L1⟧.

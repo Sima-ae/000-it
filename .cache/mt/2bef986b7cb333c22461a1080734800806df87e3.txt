@@ -1,0 +1,1 @@
+Tam, kde sú na portáli uvedené projekty, môžete vidieť stav a komunikáciu. V opačnom prípade vás budeme informovať prostredníctvom lístkov alebo aktualizácií sprintu.

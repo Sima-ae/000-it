@@ -1,0 +1,1 @@
+Ez a csomagtól és a beállítástól függ. Megbízható levelezési megoldásokat ajánlunk, és helyesen állítjuk be a DNS-t (SPF, DKIM és DMARC). Bővebben: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Ajoutez le domaine dans votre panel ou compte et pointez DNS (enregistrement A ou serveurs de noms) vers l'hébergement. Nous vous aidons lors de la première connexion après la commande. Lire la suite : ⟦L0⟧ · ⟦L1⟧.

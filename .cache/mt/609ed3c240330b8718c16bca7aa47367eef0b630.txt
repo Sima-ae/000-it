@@ -1,0 +1,1 @@
+DirectAdmin est le panneau de contrôle pour la messagerie électronique, le DNS, les bases de données, les sauvegardes et les installations. Connectez-vous avec vos identifiants de panel ; nous recommandons fortement 2FA. Lire la suite : ⟦L0⟧ · ⟦L1⟧.

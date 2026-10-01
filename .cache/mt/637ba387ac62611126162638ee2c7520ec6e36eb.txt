@@ -1,0 +1,1 @@
+SÌ. L'inoltro del dominio invia i visitatori a un altro URL, utile per i marchi senza un sito separato. Allineiamo DNS e reindirizzamenti con la tua configurazione. Per saperne di più: ⟦L0⟧ · ⟦L1⟧.

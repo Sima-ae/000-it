@@ -1,0 +1,1 @@
+Il s'agit généralement d'une propagation DNS, d'enregistrements A/MX manquants ou de serveurs de noms qui ne sont pas encore mis à jour. Vérifiez les enregistrements et laissez les durées de vie expirer. Lire la suite : ⟦L0⟧ · ⟦L1⟧.

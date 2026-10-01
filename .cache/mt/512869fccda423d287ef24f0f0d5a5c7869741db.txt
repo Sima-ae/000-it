@@ -1,0 +1,1 @@
+Adja hozzá a tartományt a panelhez vagy a fiókhoz, és irányítsa a DNS-t (A rekordot vagy névszervereket) a tárhelyre. Megrendelés után az első bekötésben segítünk. Bővebben: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+DNSSEC semnează răspunsuri DNS, astfel încât manipularea este mai grea. Îl putem activa acolo unde TLD-ul tău și configurarea îl acceptă. Citește mai mult: ⟦L0⟧.

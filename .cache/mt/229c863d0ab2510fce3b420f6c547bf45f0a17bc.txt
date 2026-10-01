@@ -1,0 +1,1 @@
+SPF/DKIM/DMARC často chýbajú alebo sú v konflikte, alebo IP/povesť je slabá. Kontrolujeme správanie DNS autentizácie a odosielania. Prečítajte si viac: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

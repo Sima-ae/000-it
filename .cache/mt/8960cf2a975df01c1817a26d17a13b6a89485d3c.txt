@@ -1,0 +1,1 @@
+MX kaydı, internete hangi posta sunucusunun alan adınız için e-posta alabileceğini bildirir. Doğru MX olmadan hiçbir posta gelmez. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

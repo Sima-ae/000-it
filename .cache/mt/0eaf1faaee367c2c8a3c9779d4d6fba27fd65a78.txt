@@ -1,0 +1,1 @@
+Ein MX-Eintrag teilt dem Internet mit, welcher Mailserver E-Mails für Ihre Domain empfangen darf. Ohne korrekten MX kommt keine Mail an. Weiterlesen: ⟦L0⟧ · ⟦L1⟧.

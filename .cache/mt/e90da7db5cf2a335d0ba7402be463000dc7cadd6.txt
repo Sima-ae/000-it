@@ -1,0 +1,1 @@
+DirectAdmin ist das Kontrollpanel für E-Mail, DNS, Datenbanken, Backups und Installationen. Melden Sie sich mit Ihren Panel-Zugangsdaten an; Wir empfehlen dringend 2FA. Weiterlesen: ⟦L0⟧ · ⟦L1⟧.

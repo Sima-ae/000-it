@@ -1,0 +1,1 @@
+Yes, depending on your hosting or support package. In the event of downtime, we restore from backups where possible and investigate the cause. Read more: ⟦L0⟧Downtime backups⟦/L0⟧ · ⟦L1⟧JetBackup⟦/L1⟧.

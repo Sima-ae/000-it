@@ -1,0 +1,1 @@
+Często od minut do kilku godzin; czasami do 24–48 godzin ze względu na TTL i pamięci podręczne. Obniż wartości TTL przed migracją, aby szybciej przełączać. Przeczytaj więcej: ⟦L0⟧ · ⟦L1⟧.

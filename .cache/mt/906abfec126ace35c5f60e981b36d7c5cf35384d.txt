@@ -1,0 +1,1 @@
+Igen. Kezeljük a biztonsági mentést, a migrációt, a DNS átkapcsolást, az SSL-t és a füstteszteket, minimális állásidővel. Bővebben: ⟦L0⟧ · ⟦L1⟧.

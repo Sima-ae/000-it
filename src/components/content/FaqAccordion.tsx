@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { Fragment, useEffect, useMemo, useState, type ReactNode } from "react";
 import { useTranslations } from "next-intl";
 import { Search, X } from "lucide-react";
 import {
@@ -10,7 +10,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Input } from "@/components/ui/input";
+import { SoftLink } from "@/components/shared/SoftLink";
 import type { FaqCategory, FaqItem } from "@/content/faq";
+import { localizedHref } from "@/i18n/pathnames";
 import { cn } from "@/lib/utils";
 
 function normalize(value: string) {
@@ -20,12 +22,65 @@ function normalize(value: string) {
     .replace(/\p{M}/gu, "");
 }
 
+const MD_LINK_RE = /\[([^\]]+)\]\((\/[^)\s]+|https?:\/\/[^)\s]+)\)/g;
+
+function FaqAnswer({ text, locale }: { text: string; locale: string }) {
+  const nodes: ReactNode[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+  let key = 0;
+  MD_LINK_RE.lastIndex = 0;
+  while ((match = MD_LINK_RE.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      nodes.push(text.slice(lastIndex, match.index));
+    }
+    const label = match[1];
+    const href = match[2];
+    if (href.startsWith("/")) {
+      nodes.push(
+        <SoftLink
+          key={`faq-link-${key++}`}
+          href={localizedHref(locale, href)}
+          className="font-medium text-primary underline underline-offset-2 hover:text-primary/80"
+        >
+          {label}
+        </SoftLink>,
+      );
+    } else {
+      nodes.push(
+        <a
+          key={`faq-link-${key++}`}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-primary underline underline-offset-2 hover:text-primary/80"
+        >
+          {label}
+        </a>,
+      );
+    }
+    lastIndex = match.index + match[0].length;
+  }
+  if (lastIndex < text.length) {
+    nodes.push(text.slice(lastIndex));
+  }
+  return (
+    <span className="whitespace-pre-line">
+      {nodes.map((node, i) => (
+        <Fragment key={i}>{node}</Fragment>
+      ))}
+    </span>
+  );
+}
+
 export function FaqCategories({
   categories,
+  locale,
   highlightFaqId,
   highlightCategoryId,
 }: {
   categories: FaqCategory[];
+  locale: string;
   highlightFaqId?: string | null;
   highlightCategoryId?: string | null;
 }) {
@@ -66,7 +121,7 @@ export function FaqCategories({
     <div className="space-y-5">
       <div className="sticky top-[calc(var(--nav-offset)+0.5rem)] z-20 space-y-3 rounded-2xl border border-border/70 bg-background/95 p-3 shadow-sm backdrop-blur-md md:p-4">
         <div className="relative">
-          <Search className="pointer-events-none absolute start-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+          <Search className="pointer-events-none absolute inset-s-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
           <Input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
@@ -78,7 +133,7 @@ export function FaqCategories({
             <button
               type="button"
               onClick={() => setQuery("")}
-              className="absolute end-2.5 top-1/2 -translate-y-1/2 rounded-lg p-1 text-muted-foreground transition hover:bg-muted hover:text-foreground"
+              className="absolute inset-e-2.5 top-1/2 -translate-y-1/2 rounded-lg p-1 text-muted-foreground transition hover:bg-muted hover:text-foreground"
               aria-label={t("clearSearch")}
             >
               <X className="h-4 w-4" />
@@ -145,6 +200,7 @@ export function FaqCategories({
               </div>
               <CategoryAccordion
                 items={category.items}
+                locale={locale}
                 openItem={
                   highlightCategoryId === category.id || activeId === category.id || activeId === "all"
                     ? openItem
@@ -163,11 +219,13 @@ export function FaqCategories({
 
 function CategoryAccordion({
   items,
+  locale,
   openItem,
   onOpenChange,
   highlightFaqId,
 }: {
   items: FaqItem[];
+  locale: string;
   openItem: string;
   onOpenChange: (v: string) => void;
   highlightFaqId?: string | null;
@@ -194,7 +252,7 @@ function CategoryAccordion({
             {item.question}
           </AccordionTrigger>
           <AccordionContent className="pb-3 text-sm leading-relaxed text-muted-foreground">
-            {item.answer}
+            <FaqAnswer text={item.answer} locale={locale} />
           </AccordionContent>
         </AccordionItem>
       ))}
@@ -203,10 +261,17 @@ function CategoryAccordion({
 }
 
 /** @deprecated use FaqCategories */
-export function FaqAccordion({ items }: { items: FaqItem[] }) {
+export function FaqAccordion({
+  items,
+  locale = "nl",
+}: {
+  items: FaqItem[];
+  locale?: string;
+}) {
   return (
     <CategoryAccordion
       items={items}
+      locale={locale}
       openItem=""
       onOpenChange={() => undefined}
     />

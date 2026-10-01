@@ -1,0 +1,1 @@
+Në menaxhimin e DNS/domainit ju zgjidhni serverët tanë të emrave ose ata të jashtëm (për shembull një CDN). Përhapja mund të zgjasë nga orë deri në një ditë. Lexo më shumë: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Általában DNS-terjesztés, hiányzó A/MX rekordok vagy még nem frissített névszerverek. Ellenőrizze a rekordokat, és hagyja, hogy a TTL-ek lejárjanak. Bővebben: ⟦L0⟧ · ⟦L1⟧.

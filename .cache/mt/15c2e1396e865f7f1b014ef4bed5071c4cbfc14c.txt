@@ -1,0 +1,1 @@
+Ofte minutter til noen timer; noen ganger opptil 24–48 timer på grunn av TTL-er og cacher. Senk TTL-er før en migrering for å bytte raskere. Les mer: ⟦L0⟧ · ⟦L1⟧.

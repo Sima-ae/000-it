@@ -1,0 +1,1 @@
+Bəli. Domenin yönləndirilməsi ziyarətçiləri başqa bir URL-ə göndərir - ayrıca saytı olmayan brend adları üçün faydalıdır. DNS və yönləndirmələri quraşdırmanızla uyğunlaşdırırıq. Daha ətraflı: ⟦L0⟧ · ⟦L1⟧.

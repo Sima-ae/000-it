@@ -1,0 +1,1 @@
+Evet. MX ve kimlik doğrulama kayıtlarını (SPF/DKIM/DMARC) Microsoft'un talimatlarına göre ayarlarsınız; DNS tarafında yardımcı oluyoruz. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+po. Ju vendosni MX dhe të dhënat e vërtetimit (SPF/DKIM/DMARC) sipas udhëzimeve të Microsoft; ne ndihmojmë në anën DNS. Lexo më shumë: ⟦L0⟧ · ⟦L1⟧.

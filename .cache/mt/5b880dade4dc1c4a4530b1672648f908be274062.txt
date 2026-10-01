@@ -1,0 +1,1 @@
+Evet, barındırma veya destek paketinize bağlı olarak. Kesinti durumunda mümkün olduğunca yedeklerden geri yükleme yapıyor ve nedenini araştırıyoruz. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Pe planurile adecvate, acceptăm memoria cache a obiectelor persistente pentru a reduce interogările bazei de date și a încărca mai rapid. Citește mai mult: ⟦L0⟧ · ⟦L1⟧.

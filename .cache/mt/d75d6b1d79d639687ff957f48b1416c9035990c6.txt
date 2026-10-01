@@ -1,0 +1,1 @@
+A megfelelő terveken támogatjuk az állandó objektum-gyorsítótárat az adatbázislekérdezések csökkentése és a gyorsabb betöltődés érdekében. Bővebben: ⟦L0⟧ · ⟦L1⟧.

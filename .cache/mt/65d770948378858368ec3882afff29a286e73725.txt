@@ -1,0 +1,1 @@
+U trgovini prikazujemo cijene prema prikazanom kontekstu PDV-a (često je uključeno za potrošačke tokove). Faktura sadrži neto analizu PDV-a za poslovne korisnike.

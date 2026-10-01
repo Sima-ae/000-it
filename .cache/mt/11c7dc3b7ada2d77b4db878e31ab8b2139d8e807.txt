@@ -1,0 +1,1 @@
+Što su SPF, DKIM i DMARC?

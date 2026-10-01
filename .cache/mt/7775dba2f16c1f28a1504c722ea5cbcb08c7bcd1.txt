@@ -1,0 +1,1 @@
+Kas yra autorizacijos kodas (EPP / Auth kodas)?

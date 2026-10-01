@@ -1,0 +1,1 @@
+They are DNS records that control email authentication and reduce spoofing/spam. Without correct records, mail more often ends up in spam. Read more: ⟦L0⟧SPF⟦/L0⟧ · ⟦L1⟧DKIM⟦/L1⟧ · ⟦L2⟧DMARC⟦/L2⟧.

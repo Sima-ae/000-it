@@ -1,0 +1,1 @@
+Sunt înregistrări DNS care se ocupă de autentificarea e-mailului și reduc falsificarea/spamul. Fără înregistrări corecte, e-mailurile ajung mai des în spam. Citește mai mult: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

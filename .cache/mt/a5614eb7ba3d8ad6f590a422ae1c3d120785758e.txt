@@ -1,0 +1,1 @@
+Bu plana bağlı. Birçok planda SSH mevcuttur veya talep edilebilir; VPS'de genellikle tam erişime sahip olursunuz. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

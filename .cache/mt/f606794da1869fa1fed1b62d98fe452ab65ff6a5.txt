@@ -1,0 +1,1 @@
+To su DNS zapisi koji upravljaju autentifikacijom e-pošte i smanjuju lažiranje/neželjenu poštu. Bez točne evidencije, pošta češće završava u spamu. Pročitajte više: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

@@ -1,0 +1,1 @@
+Misuriamo LCP, INP e CLS, risolviamo problemi relativi a risorse pesanti, hosting/caching e temi e li colleghiamo alla CDN ove utile. Per saperne di più: ⟦L0⟧ · ⟦L1⟧.

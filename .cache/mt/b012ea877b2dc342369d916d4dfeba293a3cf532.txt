@@ -1,0 +1,1 @@
+Bei geeigneten Plänen unterstützen wir den persistenten Objektcache, um Datenbankabfragen zu reduzieren und das Laden zu beschleunigen. Weiterlesen: ⟦L0⟧ · ⟦L1⟧.

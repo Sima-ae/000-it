@@ -1,0 +1,1 @@
+SÌ. Imposta i record MX e di autenticazione (SPF/DKIM/DMARC) secondo le istruzioni di Microsoft; aiutiamo dal lato DNS. Per saperne di più: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Es un código único de su registrador actual que inicia de forma segura una transferencia de dominio. Sin un código válido la transferencia no puede realizarse. Leer más: ⟦L0⟧ · ⟦L1⟧.

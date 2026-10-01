@@ -1,0 +1,1 @@
+Ei. Voit säilyttää DNS:n meillä tai muualla, kunhan A/MX/TXT osoittaa oikeisiin palveluihin. Johdonmukainen hallinta estää siirtovirheet. Lue lisää: ⟦L0⟧ · ⟦L1⟧.

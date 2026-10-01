@@ -1,0 +1,1 @@
+Dans la gestion DNS/domaine, vous choisissez nos serveurs de noms ou externes (par exemple un CDN). La propagation peut prendre des heures, voire une journée. Lire la suite : ⟦L0⟧ · ⟦L1⟧.

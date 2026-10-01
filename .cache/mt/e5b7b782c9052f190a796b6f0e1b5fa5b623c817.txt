@@ -1,0 +1,1 @@
+DirectAdmin on sähköpostin, DNS:n, tietokantojen, varmuuskopioiden ja asennuksen ohjauspaneeli. Kirjaudu sisään paneelin tunnistetiedoillasi; suosittelemme 2FA:ta. Lue lisää: ⟦L0⟧ · ⟦L1⟧.

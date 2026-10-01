@@ -1,0 +1,1 @@
+L'hosting nel cloud offre più risorse e scalabilità rispetto al classico condiviso, mentre continuiamo a gestirlo. Ideale quando la condivisione diventa ristretta ma non è ancora necessario un VPS completo. Per saperne di più: ⟦L0⟧ · ⟦L1⟧.

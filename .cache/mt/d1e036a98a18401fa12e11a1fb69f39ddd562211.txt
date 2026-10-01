@@ -1,0 +1,1 @@
+DNS/domen idarəçiliyində siz ad serverlərimizi və ya xarici serverləri (məsələn, CDN) seçirsiniz. Yayılma saatlarla bir günə qədər çəkə bilər. Daha ətraflı: ⟦L0⟧ · ⟦L1⟧.

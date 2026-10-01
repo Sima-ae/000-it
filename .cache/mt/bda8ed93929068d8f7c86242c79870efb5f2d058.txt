@@ -1,0 +1,1 @@
+Verificați DNS (MX/SPF/DKIM/DMARC), cota cutiei poștale și dacă Microsoft sau furnizorii blochează e-mailul. Ajutăm la măsurarea lanțului. Citește mai mult: ⟦L0⟧ · ⟦L1⟧.

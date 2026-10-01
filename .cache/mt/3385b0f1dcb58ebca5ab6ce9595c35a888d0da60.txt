@@ -1,0 +1,1 @@
+Sdílené akcie zdrojů; VPS izoluje více CPU/RAM; vyhrazený je celý server. Vyberte si podle provozu, potřeb kontroly a rozpočtu. Přečtěte si více: ⟦L0⟧ · ⟦L1⟧.

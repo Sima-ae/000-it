@@ -1,0 +1,1 @@
+Evet. Mevcut kayıt operatörünüzden bir yetkilendirme (EPP) kodu isteyin, transfer kilidini açın ve ardından transferi bizimle başlatın. Daha sonra DNS ve nameserverları doğru şekilde ayarlıyoruz. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

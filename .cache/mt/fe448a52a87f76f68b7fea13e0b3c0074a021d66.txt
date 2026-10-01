@@ -1,0 +1,1 @@
+Los sitios utilizan HTTPS de forma predeterminada. Durante las migraciones forzamos HTTPS y resolvemos contenido mixto. Leer más: ⟦L0⟧ · ⟦L1⟧.

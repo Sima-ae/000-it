@@ -1,0 +1,1 @@
+Verifique o DNS (MX/SPF/DKIM/DMARC), a cota da caixa de correio e se os provedores estão bloqueando o correio. Ajudamos a rastrear toda a cadeia. Leia mais: ⟦L0⟧ · ⟦L1⟧.

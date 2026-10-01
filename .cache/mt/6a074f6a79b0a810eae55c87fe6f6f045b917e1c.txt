@@ -1,0 +1,1 @@
+Normalt er det DNS-udbredelse, manglende A/MX-poster eller navneservere, der ikke er opdateret endnu. Tjek poster og tillad TTL'er at udløbe. Læs mere: ⟦L0⟧ · ⟦L1⟧.

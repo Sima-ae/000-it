@@ -1,0 +1,1 @@
+Sivustojen oletuksena on HTTPS. Siirron aikana pakotamme HTTPS:n ja ratkaisemme sekalaisen sisällön. Lue lisää: ⟦L0⟧ · ⟦L1⟧.

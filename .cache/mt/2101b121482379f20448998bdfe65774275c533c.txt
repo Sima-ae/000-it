@@ -1,0 +1,1 @@
+Un record MX indica a Internet quale server di posta può ricevere e-mail per il tuo dominio. Senza un MX corretto, non arriva la posta. Per saperne di più: ⟦L0⟧ · ⟦L1⟧.

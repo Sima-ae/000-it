@@ -1,0 +1,1 @@
+Regjistrimi ose transferimi i ri mund të bëhet përmes domeneve/dyqanit; shpesh ju duhet një kod auth gjatë një transferimi. Pastaj vendosëm saktë serverët DNS dhe emrat. Lexo më shumë: ⟦L0⟧Domains⟦/L0⟧ · ⟦L1⟧Domeni i ri nuk funksionon⟦/L1⟧.

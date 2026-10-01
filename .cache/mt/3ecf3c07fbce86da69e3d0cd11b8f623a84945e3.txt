@@ -1,0 +1,1 @@
+Bir barındırma planına birden fazla alan adı koyabilir miyim?

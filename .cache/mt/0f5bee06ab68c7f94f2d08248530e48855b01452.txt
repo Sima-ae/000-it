@@ -1,0 +1,1 @@
+Na loja mostramos os preços de acordo com o contexto do IVA apresentado (muitas vezes incluindo para fluxos de consumo). A fatura contém uma repartição do IVA líquido para clientes empresariais.

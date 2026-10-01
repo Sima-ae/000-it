@@ -1,0 +1,1 @@
+Zakonisht bëhet fjalë për përhapjen e DNS, regjistrimet që mungojnë ose serverët e emrave që nuk janë përditësuar ende. Kontrolloni të dhënat A/MX dhe prisni që TTL-të të skadojnë. Lexo më shumë: ⟦L0⟧Domeni i ri nuk funksionon⟦/L0⟧ · ⟦L1⟧Menaxho DNS⟦/L1⟧.

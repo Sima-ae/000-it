@@ -1,0 +1,1 @@
+Koristite jedinstvene lozinke i 2FA gdje je to moguće (uključujući i na hosting panelima). Ne dijelite sesije na zajedničkim računalima. Pročitajte više: ⟦L0⟧.

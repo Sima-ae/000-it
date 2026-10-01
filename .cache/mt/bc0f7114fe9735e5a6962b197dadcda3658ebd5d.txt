@@ -1,0 +1,1 @@
+Inode'lar yalnızca GB'yi değil, dosyaları/klasörleri de sayar. Birçok küçük önbellek veya posta dosyası, disk alanı hâlâ boş görünürken sınıra ulaşabilir. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

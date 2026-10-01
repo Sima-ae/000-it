@@ -1,0 +1,1 @@
+Shared ist für kleinere Websites kostengünstig. Die Cloud bietet mehr Ressourcen und Skalierbarkeit, vollständig verwaltet. WordPress-Hosting ist für WP optimiert. VPS bietet mehr Kontrolle für schwerere Lasten. Weiterlesen: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

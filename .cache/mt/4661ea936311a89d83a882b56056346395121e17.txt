@@ -1,0 +1,1 @@
+Cloud-Hosting bietet mehr Ressourcen und Skalierbarkeit als klassisches Shared-Hosting, während wir es weiterhin verwalten. Ideal, wenn die gemeinsame Nutzung knapp wird, aber noch kein vollständiger VPS benötigt wird. Weiterlesen: ⟦L0⟧ · ⟦L1⟧.

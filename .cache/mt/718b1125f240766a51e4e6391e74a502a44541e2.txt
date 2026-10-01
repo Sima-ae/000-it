@@ -1,0 +1,1 @@
+V obchodě zobrazujeme ceny podle zobrazeného kontextu DPH (často včetně spotřebitelských toků). Faktura obsahuje rozpis čisté DPH pro firemní zákazníky.

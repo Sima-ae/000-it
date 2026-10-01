@@ -1,0 +1,1 @@
+Paylaşılan səhm resursları; VPS daha çox CPU/RAM təcrid edir; ayrılmış bütöv bir serverdir. Trafik, nəzarət ehtiyacları və büdcə ilə seçin. Daha ətraflı: ⟦L0⟧ · ⟦L1⟧.

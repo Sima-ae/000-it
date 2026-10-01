@@ -1,0 +1,1 @@
+DNS/domain-hallinnassa valitset nimipalvelimemme tai ulkoiset (esimerkiksi CDN:n). Levitys voi kestää tunteista vuorokauteen. Lue lisää: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Provjerite stranicu statusa, DNS širenje, nedavna ažuriranja, prostor na disku i je li pogreška ponovljiva. To ubrzava dijagnozu. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

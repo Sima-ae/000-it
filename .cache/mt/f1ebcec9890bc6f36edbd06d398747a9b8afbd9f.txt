@@ -1,0 +1,1 @@
+Yes, in relevant support and hosting packages: monitoring, backups and alerts, so that problems are visible earlier. Read more: ⟦L0⟧Downtime backups⟦/L0⟧.

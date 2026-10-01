@@ -1,0 +1,1 @@
+Hesap ayarlarında profili ve uygun olduğu durumlarda bildirim tercihlerini yönetirsiniz. Fatura e-postaları için e-posta adresinizi güncel tutun.

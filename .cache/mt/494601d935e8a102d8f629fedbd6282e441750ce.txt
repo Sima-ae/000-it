@@ -1,0 +1,1 @@
+Käytämme palomuuria, SSL:ää, päivityksiä, valvontaa ja karkaisua. Ylimääräisiä suojauskerroksia on saatavilla tarvittaessa. Lue lisää: ⟦L0⟧ · ⟦L1⟧.

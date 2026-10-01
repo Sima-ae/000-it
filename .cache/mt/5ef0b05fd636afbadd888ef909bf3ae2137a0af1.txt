@@ -1,0 +1,1 @@
+Ez egy egyszeri kód a jelenlegi regisztrátortól, amely biztonságosan elindítja a domainátvitelt. Érvényes kód nélkül az átvitel nem folytatható. Bővebben: ⟦L0⟧ · ⟦L1⟧.

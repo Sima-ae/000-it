@@ -1,0 +1,1 @@
+In the shop we show prices according to the VAT context shown (often incl. for consumer flows). The invoice contains a net VAT breakdown for business customers.

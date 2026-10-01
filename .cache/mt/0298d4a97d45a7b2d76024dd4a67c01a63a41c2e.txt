@@ -1,0 +1,1 @@
+Ja. Anmod om en godkendelseskode (EPP) fra din nuværende registrator, lås enhver overførselslås op, og start derefter overførslen med os. Derefter indstiller vi DNS og navneservere korrekt. Læs mere: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

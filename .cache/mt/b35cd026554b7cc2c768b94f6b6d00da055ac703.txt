@@ -1,0 +1,1 @@
+Do I have SSH access on my hosting?

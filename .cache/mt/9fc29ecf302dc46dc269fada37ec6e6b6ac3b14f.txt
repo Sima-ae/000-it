@@ -1,0 +1,1 @@
+通过控制面板（例如 DirectAdmin/Installatron）或手动。我们有分步指南。了解更多：⟦L0⟧·⟦L1⟧。

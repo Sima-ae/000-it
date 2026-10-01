@@ -1,0 +1,1 @@
+A webhelyek alapértelmezés szerint HTTPS-t használnak. A migráció során kényszerítjük a HTTPS-t, és feloldjuk a vegyes tartalmat. Bővebben: ⟦L0⟧ · ⟦L1⟧.

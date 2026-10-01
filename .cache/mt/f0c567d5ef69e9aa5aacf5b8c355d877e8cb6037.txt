@@ -1,0 +1,1 @@
+Oui, le cas échéant : préparation des revues et des tests, puis déploiement contrôlé en production.

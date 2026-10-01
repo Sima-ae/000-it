@@ -1,0 +1,1 @@
+Ce sont des enregistrements DNS qui gèrent l'authentification des e-mails et réduisent l'usurpation d'identité/spam. Sans enregistrement correct, le courrier atterrit plus souvent dans le spam. Lire la suite : ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

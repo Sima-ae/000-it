@@ -1,0 +1,1 @@
+Następnie poprawiamy tagowanie (GTM, GA4 i piksele), tryb zgody, jeśli to konieczne, oraz opcje po stronie serwera, aby uzyskać bardziej niezawodne dane.

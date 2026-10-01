@@ -1,0 +1,1 @@
+Az Inodes fájlokat/mappákat számol, nem csak a GB-t. Sok kis gyorsítótár- vagy levelezőfájl elérheti a korlátot, miközben a lemezterület továbbra is szabadnak tűnik. Bővebben: ⟦L0⟧ · ⟦L1⟧.

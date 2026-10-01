@@ -1,0 +1,1 @@
+Igen. Kérjen engedélyezési (EPP) kódot jelenlegi regisztrátorától, oldja fel az átviteli zárakat, majd kezdje meg velünk az átvitelt. Ezután helyesen állítottuk be a DNS-t és a névszervereket. Bővebben: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

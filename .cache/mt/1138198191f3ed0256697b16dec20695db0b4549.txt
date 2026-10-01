@@ -1,0 +1,1 @@
+Găzduirea în cloud oferă mai multe resurse și scalabilitate decât cea clasică partajată, în timp ce o gestionăm în continuare. Ideal atunci când partajarea devine strânsă, dar nu este nevoie încă de VPS complet. Citește mai mult: ⟦L0⟧ · ⟦L1⟧.

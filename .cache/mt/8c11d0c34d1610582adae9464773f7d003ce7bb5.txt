@@ -1,0 +1,1 @@
+Utilizza password univoche e 2FA ove disponibile (anche sui pannelli di hosting). Non condividere sessioni su computer condivisi. Per saperne di più: ⟦L0⟧.

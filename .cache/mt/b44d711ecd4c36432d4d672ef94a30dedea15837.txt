@@ -1,0 +1,1 @@
+Add the domain in your panel or account and point DNS (A record or nameservers) to the hosting. Wir helfen beim ersten Anschluss nach der Bestellung. Weiterlesen: ⟦L0⟧ · ⟦L1⟧.

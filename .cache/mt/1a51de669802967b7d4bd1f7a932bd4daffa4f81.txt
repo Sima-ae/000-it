@@ -1,0 +1,1 @@
+Muitas vezes, minutos a algumas horas; às vezes até 24 a 48 horas devido a TTLs e caches. Reduza os TTLs antes de uma migração para mudar mais rapidamente. Leia mais: ⟦L0⟧ · ⟦L1⟧.

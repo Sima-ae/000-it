@@ -1,0 +1,1 @@
+Hər ikisi. Lazım gələrsə, müsahibələr, huni təhlili və ya istilik xəritələri ilə başlayırıq; sonra UI. Bu şəkildə biz yalnız zövqə deyil, davranışa əsaslanaraq dizayn edirik.

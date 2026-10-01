@@ -1,0 +1,1 @@
+Są to rekordy DNS, które obsługują uwierzytelnianie poczty e-mail i ograniczają fałszowanie/spam. Bez poprawnych zapisów poczta częściej ląduje w spamie. Przeczytaj więcej: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

@@ -1,0 +1,1 @@
+Wir messen LCP, INP und CLS, lösen schwere Assets, Hosting-/Caching- und Theme-Probleme und verknüpfen diese bei Bedarf mit dem CDN. Weiterlesen: ⟦L0⟧CDN⟦/L0⟧ · ⟦L1⟧Wählen Sie Hosting⟦/L1⟧.

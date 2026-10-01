@@ -1,0 +1,1 @@
+Igen. Biztonsági mentéssel és célzott javítással diagnosztizáljuk a fehér képernyőket, a kritikus PHP-hibákat és a plugin-ütközéseket. Bővebben: ⟦L0⟧ · ⟦L1⟧.

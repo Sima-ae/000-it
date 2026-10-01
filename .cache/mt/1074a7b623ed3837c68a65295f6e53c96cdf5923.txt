@@ -1,0 +1,1 @@
+DNSSEC signerer DNS-svar slik at manipulasjon er vanskeligere. Vi kan aktivere det der din TLD og oppsett støtter det. Les mer: ⟦L0⟧.

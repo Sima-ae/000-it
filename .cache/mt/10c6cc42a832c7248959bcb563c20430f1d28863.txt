@@ -1,0 +1,1 @@
+Hosting WordPress jest zoptymalizowany pod kątem WP: szybszy PHP/stos, często CDN i prostsze instalacje/aktualizacje niż w przypadku udostępniania ogólnego. Przeczytaj więcej: ⟦L0⟧ · ⟦L1⟧.

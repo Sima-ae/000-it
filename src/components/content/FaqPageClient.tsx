@@ -97,6 +97,7 @@ export function FaqPageClient({
 
       <FaqCategories
         categories={content.categories}
+        locale={locale}
         highlightFaqId={highlightFaqId}
         highlightCategoryId={highlightCategoryId}
       />

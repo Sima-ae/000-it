@@ -1,0 +1,1 @@
+El alojamiento en la nube ofrece más recursos y escalabilidad que el alojamiento compartido clásico, mientras seguimos administrándolo. Ideal cuando el uso compartido es limitado pero aún no se necesita un VPS completo. Leer más: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Kyllä. Verkkotunnuksen uudelleenohjaus lähettää vierailijat toiseen URL-osoitteeseen – hyödyllinen tuotenimille ilman erillistä sivustoa. Kohdistamme DNS- ja uudelleenohjaukset asetuksiisi. Lue lisää: ⟦L0⟧ · ⟦L1⟧.

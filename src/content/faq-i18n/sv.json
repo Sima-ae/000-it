@@ -12,12 +12,12 @@
         {
           "id": "gen-1",
           "question": "Vad gör TripleZero iT exakt?",
-          "answer": "TripleZero iT kombinerar webbdesign, WordPress beheer, digital marknadsföring, söksynlighet (AEO, GEO/local och SEO), design och hosting. Vi hjälper varumärken att hittas snabbare, bygga bättre webbplatser och växa på ett mätbart sätt."
+          "answer": "TripleZero iT kombinerar webbdesign, WordPress beheer, digital marknadsföring, söksynlighet (AEO, GEO/local och SEO), design och hosting. Vi hjälper varumärken att hittas snabbare, bygga bättre webbplatser och växa på ett mätbart sätt. [About us](/over-ons) · [Services](/diensten)"
         },
         {
           "id": "gen-2",
           "question": "Hur kommer jag igång med TripleZero iT?",
-          "answer": "Kontakta oss eller boka en tid. Vi kör en kort intagning, går igenom mål och staplar, sedan tar vi fram ett konkret förslag med planering och KPI:er."
+          "answer": "Kontakta oss eller boka en tid. Vi kör en kort intagning, går igenom mål och staplar, sedan tar vi fram ett konkret förslag med planering och KPI:er. [Schedule appointment](/afspraak) · [Contact](/contact)"
         },
         {
           "id": "gen-3",
@@ -73,6 +73,46 @@
           "id": "gen-13",
           "question": "Kan du ta över eller samarbeta med befintliga leverantörer?",
           "answer": "Ja. Vi arbetar smidigt tillsammans med utvecklare, marknadsförare eller byråer, eller så tar vi över underhåll och optimering utan att onödigt störa befintligt arbete."
+        },
+        {
+          "id": "gen-14",
+          "question": "Vad är Agent 000 (chattassistenten)?",
+          "answer": "Agent 000 är vår digitala assistent på sajten och i supportflöden. Han svarar på vanliga frågor, pekar på kunskapsbasartiklar och kan hänvisa dig till livechatt, en biljett eller ett möte när mänsklig hjälp är lämpligare. Läs mer: [Digital assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Chat, ticket or call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "gen-15",
+          "question": "Hur bokar jag ett möte eller ringer?",
+          "answer": "Du kan välja en tid som passar dig via Tidbokningssidan. För snabba frågor kan du också använda livechatt eller en biljett; ett telefonmöte är användbart för mer komplexa processer eller intagningar. Läs mer: [Appointment](/afspraak) · [Call appointment explained](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)."
+        },
+        {
+          "id": "gen-16",
+          "question": "Var kan jag se statusen för dina tjänster?",
+          "answer": "På statussidan visar vi incidenter och underhåll gällande hosting och relaterade tjänster, så att du snabbt kan se om något är på gång. Läs mer: [Statuspage](/statuspage)."
+        },
+        {
+          "id": "gen-17",
+          "question": "Har du en kunskapsbas?",
+          "answer": "Ja. Kunskapsbasen innehåller manualer om domäner, DNS, e-post, hosting, WordPress, AI-skanning, säkerhet och mer — med steg-för-steg-förklaringar. Läs mer: [Knowledge base](/kennisbank)."
+        },
+        {
+          "id": "gen-18",
+          "question": "Hur hanterar du integritet och cookies?",
+          "answer": "Vi arbetar GDPR-medvetet: integritetstexter, samtycke till formulär och cookie-banners/samtyckesläge där spårning är nödvändig. För WordPress hjälper vi till med en korrekt cookie-inställning. Läs mer: [Cookie banner in WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress) · [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Privacy with forms](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren)."
+        },
+        {
+          "id": "gen-19",
+          "question": "Var kan jag hitta dina nyheter och uppdateringar?",
+          "answer": "På nyhetssidan publicerar vi uppdateringar om produkter, säkerhet och tips. För tekniska fel, kontrollera statussidan. Läs mer: [News](/nieuws) · [Statuspage](/statuspage)."
+        },
+        {
+          "id": "gen-20",
+          "question": "Vad kostar det att jobba med dig?",
+          "answer": "Det beror på mixen: hosting- och shoppingprodukter har fasta priser; design, SEO, annonser och retainers följer efter intag. I butiken ser du paket; du får ett förslag på anpassning. Läs mer: [Shop](/shop) · [Contact](/contact)."
+        },
+        {
+          "id": "gen-21",
+          "question": "Kan du också bara utföra rådgivning eller revision?",
+          "answer": "Ja. Revisioner, AI-skanningar, tekniska granskningar och sparringssessioner kan göras separat från en fullserviceprocess. Du kan sedan göra det själv eller låta oss ta hand om det. Läs mer: [AI scan](/ai-scan) · [Services](/diensten)."
         }
       ]
     },
@@ -83,17 +123,17 @@
         {
           "id": "ai-1",
           "question": "Vad är en AI-skanning på TripleZero iT?",
-          "answer": "En AI-beredskapsskanning bedömer hur väl din webbplats kan hittas av klassiska sökmotorer, AI-svar och lokala eller geografiska sökresultat (AEO, GEO, SEO och de tekniska grunderna)."
+          "answer": "En AI-beredskapsskanning bedömer hur väl din webbplats kan hittas av klassiska sökmotorer, AI-svar och lokala eller geografiska sökresultat (AEO, GEO, SEO och de tekniska grunderna). [What is the AI ​​scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Start AI scan](/ai-scan)"
         },
         {
           "id": "ai-2",
           "question": "Vad mäter AI-skanningen exakt?",
-          "answer": "Skanningen mäter AEO-signaler, GEO/lokal synlighet, SEO-grunder, innehållsstruktur, prestandaindikatorer och AI-beredskap. Du får poäng och konkreta förbättringspoäng."
+          "answer": "Skanningen mäter AEO-signaler, GEO/lokal synlighet, SEO-grunder, innehållsstruktur, prestandaindikatorer och AI-beredskap. Du får poäng och konkreta förbättringspoäng. [Explain scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)"
         },
         {
           "id": "ai-3",
           "question": "Hur ofta ska jag köra en AI-skanning?",
-          "answer": "Åtminstone efter större webbplatsändringar eller kampanjer. För aktiva varumärken rekommenderar vi periodiska skanningar, till exempel varje kvartal, så att du förblir synlig i sök- och AI-resultat."
+          "answer": "Åtminstone efter större webbplatsändringar eller kampanjer. För aktiva varumärken rekommenderar vi periodiska skanningar, till exempel varje kvartal, så att du förblir synlig i sök- och AI-resultat. [Start AI scan](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website)"
         },
         {
           "id": "ai-4",
@@ -118,12 +158,12 @@
         {
           "id": "ai-8",
           "question": "Vad är AI-beredskap för mitt varumärke?",
-          "answer": "Det är i vilken grad din webbplats, ditt innehåll och din data är inställda så att AI-system korrekt kan citera, rekommendera och förklara ditt varumärke."
+          "answer": "Det är i vilken grad din webbplats, ditt innehåll och din data är inställda så att AI-system korrekt kan citera, rekommendera och förklara ditt varumärke. [AI readiness in the scan](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)"
         },
         {
           "id": "ai-9",
           "question": "Kan du använda AI-agenter i instrumentpanelen?",
-          "answer": "Ja. I kundportalen ser du AI-agenter för SEO, innehåll, sociala medier och annonser – inklusive status och uppgifter."
+          "answer": "Ja. I kundportalen ser du AI-agenter för SEO, innehåll, sociala medier och annonser – inklusive status och uppgifter. [What are AI agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Agents in your account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)"
         },
         {
           "id": "ai-10",
@@ -144,6 +184,46 @@
           "id": "ai-13",
           "question": "Hur mäter jag ROI för AI-initiativ?",
           "answer": "Genom nyckeltal som trafik, leads, sparad tid, innehållsutdata, biljettupplösning och konvertering. Vi definierar dessa i förväg i planen så att resultaten förblir synliga."
+        },
+        {
+          "id": "ai-14",
+          "question": "Hur startar jag en AI-skanning på min webbplats?",
+          "answer": "Gå till AI-skanningen, ange din URL och starta analysen. Du får poäng för AEO, GEO, SEO, prestanda och AI-beredskap plus poäng för förbättring. Läs mer: [Start AI scan](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website) · [AI scan page](/ai-scan)."
+        },
+        {
+          "id": "ai-15",
+          "question": "Hur läser jag AI-skanningsresultaten?",
+          "answer": "Varje poäng visar hur stark du är i det området; låga poäng kommer med konkreta tips. Använd skanningen som en prioriteringslista, inte som ett engångsrapport. Läs mer: [Explain scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Next steps](/kennisbank/ai-scan/welke-vervolgstappen-zet-ik-na-mijn-ai-scan)."
+        },
+        {
+          "id": "ai-16",
+          "question": "Vad är skillnaden mellan en AI-skanning och en komplett AEO/GEO/SEO-process?",
+          "answer": "Skanningen är en snabb diagnos. En process implementerar förbättringar: innehåll, strukturerad data, teknisk SEO, lokala signaler och mätning över tid. Läs mer: [Scan versus process](/kennisbank/ai-scan/ai-scan-versus-een-volledig-aeo-geo-seo-traject-wat-is-het-verschil) · [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-17",
+          "question": "Var kan jag hitta tidigare AI-skanningar på mitt konto?",
+          "answer": "Inloggade kunder ser tidigare skanningar och analyser i instrumentpanelen (SEO-analys), så att du kan jämföra framsteg. Läs mer: [AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Account / dashboard](/dashboard)."
+        },
+        {
+          "id": "ai-18",
+          "question": "Vad gör jag efter en låg AEO- eller GEO-poäng?",
+          "answer": "Prioritera vanliga frågor, enheter, strukturerad data (AEO) och Googles företagsprofil/NAP/lokala målsidor (GEO). Vi hjälper till att översätta den färdplanen till implementering. Läs mer: [Scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Local Discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "ai-19",
+          "question": "Hur arbetar AI-agenter i kundportalen?",
+          "answer": "AI-agenter stödjer uppgifter relaterade till SEO, innehåll, sociala medier eller annonser. Du öppnar översikten i ditt konto, ser status och kan starta eller pausa agenter enligt ditt paket. Läs mer: [What are AI agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Open agents](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)."
+        },
+        {
+          "id": "ai-20",
+          "question": "Är AI-skanningen gratis?",
+          "answer": "Det finns en tillgänglig post via AI-skanningssidan; djupare analyser och processer faller under tjänster eller retainers. Efter skanningen ser du omedelbart om en uppföljning är användbar. Läs mer: [AI scan](/ai-scan) · [What is the AI ​​scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-21",
+          "question": "Hjälper Agent 000 också med AI- och SEO-frågor?",
+          "answer": "Ja. Agent 000 använder FAQ och kunskapsbas för att svara på AEO/GEO/SEO och AI-skanningsfrågor och länkar till rätt artiklar eller mänsklig uppföljning. Läs mer: [Digital Assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [FAQ](/faq)."
         }
       ]
     },
@@ -154,17 +234,17 @@
         {
           "id": "seo-1",
           "question": "Vad är skillnaden mellan AEO, GEO och SEO?",
-          "answer": "AEO (Answer Engine Optimization) fokuserar på AI-svar. GEO (Geographic Search Engine Optimization) stärker lokal och regional synlighet i kartor, lokala paket och platsbaserad sökning. SEO optimerar för klassiska sökmotorer."
+          "answer": "AEO (Answer Engine Optimization) fokuserar på AI-svar. GEO (Geographic Search Engine Optimization) stärker lokal och regional synlighet i kartor, lokala paket och platsbaserad sökning. SEO optimerar för klassiska sökmotorer. [How AEO, GEO and SEO are related](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen) · [What is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization)"
         },
         {
           "id": "seo-2",
           "question": "Varför spelar AEO/GEO någon roll nu?",
-          "answer": "Fler sökare får svar via AI och söker även lokalt (”nära mig”). Utan AEO missar du AI-citat; utan GEO missar du lokala leads – även när klassisk SEO är stabil."
+          "answer": "Fler sökare får svar via AI och söker även lokalt (”nära mig”). Utan AEO missar du AI-citat; utan GEO missar du lokala leads – även när klassisk SEO är stabil. [What is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant)"
         },
         {
           "id": "seo-3",
           "question": "Hur startar du ett SEO-engagemang?",
-          "answer": "Vi börjar med en teknisk revision, sökords- och avsiktsforskning, en analys av innehållsgap och en prioriterad färdplan kopplad till ditt företags KPI:er."
+          "answer": "Vi börjar med en teknisk revision, sökords- och avsiktsforskning, en analys av innehållsgap och en prioriterad färdplan kopplad till ditt företags KPI:er. [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)"
         },
         {
           "id": "seo-4",
@@ -174,7 +254,7 @@
         {
           "id": "seo-5",
           "question": "Gör du också lokal SEO?",
-          "answer": "Ja. Vi arbetar med Googles företagsprofil, lokala målsidor, NAP-konsistens, recensioner och lokala innehållskluster så att du hittas bättre i din region."
+          "answer": "Ja. Vi arbetar med Googles företagsprofil, lokala målsidor, NAP-konsistens, recensioner och lokala innehållskluster så att du hittas bättre i din region. [Improve local discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)"
         },
         {
           "id": "seo-6",
@@ -220,6 +300,36 @@
           "id": "seo-14",
           "question": "Hjälper du till med internationell SEO?",
           "answer": "Ja. Vi hanterar hreflang, marknadsundersökningar per land eller språk, innehållslokalisering och tekniska multi-locale inställningar."
+        },
+        {
+          "id": "seo-15",
+          "question": "Vad är AEO egentligen?",
+          "answer": "AEO (Answer Engine Optimization) skapar innehåll så att AI-svar och svarsmotorer kan citera ditt varumärke korrekt: tydliga vanliga frågor, entiteter och strukturerad data. Läs mer: [What is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AEO, GEO and SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
+        },
+        {
+          "id": "seo-16",
+          "question": "Vad är GEO (geografisk SEO)?",
+          "answer": "GEO stärker lokal och regional upptäckbarhet – kartor, lokala paket och platsbaserad sökning – genom GBP, NAP-konsistens och lokalt innehåll. Läs mer: [What is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant) · [Local discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "seo-17",
+          "question": "Hur beställer eller startar jag SEO-optimering?",
+          "answer": "Börja med en AI-skanning eller revision, sedan ett förslag med prioriteringar. Du kan också kombinera SEO med innehåll och teknik via butik/tjänster eller retainer. Läs mer: [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting) · [AI Scan](/ai-scan)."
+        },
+        {
+          "id": "seo-18",
+          "question": "Kan du hjälpa till med strukturerad data och FAQ-schema?",
+          "answer": "Ja. Vi skapar relevanta diagram (FAQ, Organisation, LocalBusiness, produkter) och strukturerar innehåll så att sökmotorer och AI förstår dig bättre. Läs mer: [AEO explanation](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AI scan scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)."
+        },
+        {
+          "id": "seo-19",
+          "question": "Vad gör du med Core Web Vitals?",
+          "answer": "Vi mäter LCP, INP och CLS, löser tunga tillgångar, hosting/caching och temaproblem och kopplar detta till CDN där det är användbart. Läs mer: [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [Choose Hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "seo-20",
+          "question": "Kan du kombinera SEO med hosting och WordPress-vård?",
+          "answer": "Ja. Stabil hosting, uppdateringar och prestanda utgör grunden; SEO bygger på det. Många kunder kombinerar WP-care + hosting + pågående SEO. Läs mer: [Hosting](/diensten/categorie/hosting) · [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
         }
       ]
     },
@@ -291,6 +401,26 @@
           "id": "ads-13",
           "question": "Är remarketing fortfarande relevant?",
           "answer": "Ja, när det är integritetskompatibelt och parat med starka annonsmaterial och erbjudanden. Det förblir ofta det mest effektiva lagret i tratten."
+        },
+        {
+          "id": "ads-14",
+          "question": "Hjälper du till med samtyckesläge och cookie-banners för annonser?",
+          "answer": "Ja. Utan korrekt samtycke och taggning är annonsmätning opålitlig. Vi länkar snyggt ihop banners, GTM/GA4 och pixlar. Läs mer: [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Cookie banner WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "ads-15",
+          "question": "Kan du bygga målsidor för kampanjer?",
+          "answer": "Ja – snabba målsidor eller WordPress-sidor skräddarsydda för sökavsikten, med spårning och grunderna i CRO. Läs mer: [Services](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "ads-16",
+          "question": "Hur förhindrar du bortkastad annonsbudget?",
+          "answer": "Stram kontostruktur, negativa sökord, uteslutningar av målgrupper, målsidesanpassning och veckooptimering på CPA/ROAS – inte bara klick."
+        },
+        {
+          "id": "ads-17",
+          "question": "Fungerar annonser bra med AEO/SEO?",
+          "answer": "Ja. Annonser ger snabb data och trafik; SEO/AEO bygger hållbar synlighet. Insikter från sökord och annonsmaterial driver innehåll och målsidor. Läs mer: [AEO, GEO and SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
         }
       ]
     },
@@ -362,6 +492,26 @@
           "id": "des-13",
           "question": "Var kan jag lära mig mer om digital design?",
           "answer": "Mer information finns på /grafisk-design och via Grafisk design-tjänsterna i menyn."
+        },
+        {
+          "id": "des-14",
+          "question": "Levererar ni även designsystem och komponentbibliotek?",
+          "answer": "Ja, för varumärken som vill skala konsekvent: tokens, komponenter och dokumentation så att marknadsföring och produkt talar samma språk."
+        },
+        {
+          "id": "des-15",
+          "question": "Kan du digitalisera befintlig varumärkesstil?",
+          "answer": "Ja. Vi översätter tryckta eller ofullständiga varumärkesriktlinjer till webbklara färger, typografi, UI-kit och mallar."
+        },
+        {
+          "id": "des-16",
+          "question": "Gör du UX-forskning eller bara visuell design?",
+          "answer": "Både. Vid behov börjar vi med intervjuer, trattanalys eller värmekartor; sedan UI. På så sätt designar vi utifrån beteende, inte bara på smak."
+        },
+        {
+          "id": "des-17",
+          "question": "Kan du designa sociala mallar och annonsmaterial?",
+          "answer": "Ja – karuseller, miniatyrer, berättelser och annonser som matchar ditt varumärke och kampanjmål. Läs mer: [Services](/diensten)."
         }
       ]
     },
@@ -433,6 +583,26 @@
           "id": "mkt-13",
           "question": "Hur förhindrar du \"upptagen marknadsföring\" utan resultat?",
           "answer": "Varje aktivitet är knuten till KPI:er. Underpresterande taktik stoppas eller förbättras med data, så budgeten går till det som fungerar."
+        },
+        {
+          "id": "mkt-14",
+          "question": "Vad ingår vanligtvis i en marknadsföringsretainer?",
+          "answer": "En blandning av strategi, innehåll eller SEO, kampanjer, rapportering och experiment – ​​skräddarsydda efter nyckeltal. Vi registrerar omfattning och timmar så att prioriteringarna förblir tydliga. Läs mer: [Shop](/shop) · [Contact](/contact)."
+        },
+        {
+          "id": "mkt-15",
+          "question": "Hjälper du till med positionering och meddelanden?",
+          "answer": "Ja. Tydlig positionering, värderekvisita och sidkopiering säkerställer att annonser, SEO och försäljning förmedlar samma budskap."
+        },
+        {
+          "id": "mkt-16",
+          "question": "Mäter du marknadsföring efter pipeline, inte bara trafik?",
+          "answer": "Där det är möjligt: ​​leads, SQLs, intäkter eller assisterade konverteringar. Vi justerar eller stoppar trafiken utan kvalitet."
+        },
+        {
+          "id": "mkt-17",
+          "question": "Kan du rensa upp marknadsföringsstack och spårning?",
+          "answer": "Ja — GTM, GA4, pixlar, CRM-länkar och samtycke. Ren data är grunden för bra beslut. Läs mer: [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen)."
         }
       ]
     },
@@ -504,6 +674,153 @@
           "id": "soc-13",
           "question": "Hur snabbt kommer vi att se tillväxt på sociala områden?",
           "answer": "Konsekvens är viktig. Betydande tillväxt tar vanligtvis veckor till månader; med annonsstöd går det ofta snabbare."
+        },
+        {
+          "id": "soc-14",
+          "question": "Hjälper du till med social proofing och recensioner?",
+          "answer": "Ja. Vi planerar granskningsförfrågningar, fall och UGC-liknande format som skapar förtroende – utan falskt engagemang."
+        },
+        {
+          "id": "soc-15",
+          "question": "Kan du sätta upp medarbetarpåverkan?",
+          "answer": "Ja, speciellt på LinkedIn: enkla riktlinjer, mallar och en rytm så att teamet synligt delar med sig av expertis."
+        },
+        {
+          "id": "soc-16",
+          "question": "Hur länkar du socialt till hemsidan och butiken?",
+          "answer": "Via UTM:er, landningssidor, produktlänkar och retargeting. Socialt är en kanal i tratten, inte en ö. Läs mer: [Shop](/shop)."
+        }
+      ]
+    },
+    {
+      "id": "account-portaal",
+      "title": "Konto och portal",
+      "items": [
+        {
+          "id": "acc-1",
+          "question": "Hur loggar jag in på kundportalen?",
+          "answer": "Gå till konto/logga in och använd mailadressen till ditt kundkonto. Om du har förlorat data, använd lösenordsåterställning eller kontakta oss. Läs mer: [Account](/dashboard) · [Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-2",
+          "question": "Vad ser jag i min instrumentpanel?",
+          "answer": "Beroende på dina tjänster: biljetter, projekt, fakturor, AI-skanning/agenter och snabblänkar till support. Läs mer: [AI agents in account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account) · [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "acc-3",
+          "question": "Jag har tappat bort mina inloggningsuppgifter – vad nu?",
+          "answer": "Använd \"glömt ditt lösenord\" eller följ kunskapsbasstegen för kundpanelen. Om det inte fungerar, öppna en biljett via en känd kontaktadress. Läs mer: [Lost login details](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-4",
+          "question": "Hur öppnar jag en biljett från portalen?",
+          "answer": "I kundpanelen väljer du support/biljetter, beskriv ditt problem och lägg till bevis (URL, skärmdumpar). Läs mer: [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "acc-5",
+          "question": "Var hittar jag mina fakturor?",
+          "answer": "Du kan se och ladda ner fakturor i portalen under fakturering/fakturering. Läs mer: [Consult invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "acc-6",
+          "question": "Hur ändrar jag faktureringsinformation eller betalningsmetod?",
+          "answer": "Justera företagsnamn, momsnummer och betalningssätt i dina kontoinställningar så att nya fakturor blir korrekta. Läs mer: [Change invoice details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "acc-7",
+          "question": "Kan kollegor också ha tillgång?",
+          "answer": "Ja, med kontoroller (klient, chef, administratör) så att flera teammedlemmar kan spåra biljetter eller projekt utan att dela allt."
+        },
+        {
+          "id": "acc-8",
+          "question": "Är AI-skanning och AI-agenter länkade till mitt konto?",
+          "answer": "Ja. Skanningar och agenter tillhör ditt kundkonto så att historik och rättigheter behålls. Läs mer: [AI agents](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "acc-9",
+          "question": "Hur säkert är mitt kundkonto?",
+          "answer": "Använd unika lösenord och 2FA där det är tillgängligt (inklusive på värdpaneler). Dela inte sessioner på delade datorer. Läs mer: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
+        },
+        {
+          "id": "acc-10",
+          "question": "Kan jag spåra projektstatus och leveranser?",
+          "answer": "Där projekt finns listade i portalen kan du se status och kommunikation. Annars kommer vi att hålla dig informerad via biljetter eller sprintuppdateringar."
+        },
+        {
+          "id": "acc-11",
+          "question": "Hur länkar jag tjänster från butiken till mitt konto?",
+          "answer": "Efter kassan tillhör beställningar ditt konto; provisionering (hosting, domän) följer automatiskt eller via onboarding av support. Läs mer: [Shop](/shop)."
+        },
+        {
+          "id": "acc-12",
+          "question": "Var ställer jag in meddelanden eller inställningar?",
+          "answer": "I kontoinställningarna hanterar du profilen och där tillgängliga aviseringsinställningar. För e-postfakturor, håll din e-postadress aktuell."
+        }
+      ]
+    },
+    {
+      "id": "shop-bestellen",
+      "title": "Handla och beställa",
+      "items": [
+        {
+          "id": "shop-1",
+          "question": "Vad kan jag beställa i butiken?",
+          "answer": "Hostingpaket, domäner, vård/supportprodukter och andra tjänster som vi erbjuder online. Anpassade offerter görs via kontakt. Läs mer: [Shop](/shop) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "shop-2",
+          "question": "Hur fungerar varukorgen och kassan?",
+          "answer": "Lägg till produkter, kontrollera period (månad/år) och komplettera via kassan. Du får då bekräftelse och tillgång till ditt konto. Läs mer: [Shopping cart](/shop/cart)."
+        },
+        {
+          "id": "shop-3",
+          "question": "Är priserna inklusive eller exklusive moms?",
+          "answer": "I butiken visar vi priser enligt det momssammanhang som visas (ofta inkl. för konsumentflöden). Fakturan innehåller en nettomomsuppdelning för företagskunder."
+        },
+        {
+          "id": "shop-4",
+          "question": "Kan jag betala månadsvis eller årligen?",
+          "answer": "Många värd- och vårdprodukter har månads- och årsalternativ. Årligen är ofta billigare; uppgifterna är per produktkort."
+        },
+        {
+          "id": "shop-5",
+          "question": "Vilka betalningsmetoder accepterar du?",
+          "answer": "Vanliga onlinemetoder via kassan (beroende på region). För företagsfakturor kan vi ordna acontofakturering via kontakt."
+        },
+        {
+          "id": "shop-6",
+          "question": "Får jag omedelbar tillgång efter betalning?",
+          "answer": "För standardvärd-/domänprodukter följer provisionering snabbt efter framgångsrik betalning. För anpassade tjänster planerar supporten kick-offen."
+        },
+        {
+          "id": "shop-7",
+          "question": "Kan jag uppgradera paket senare?",
+          "answer": "Ja. Från delat till moln/VPS eller från Basic till Plus/Business är möjligt med migrationsplanering. Läs mer: [Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [Choose package](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "shop-8",
+          "question": "Hur kombinerar jag butiksprodukter med anpassning?",
+          "answer": "Beställ värd/vård online och planera design, SEO eller annonser via intag. Vi kombinerar fakturering och konto där det är möjligt. Läs mer: [Contact](/contact)."
+        },
+        {
+          "id": "shop-9",
+          "question": "Vad händer om min beställning inte kommer fram eller har fastnat?",
+          "answer": "Kontrollera din e-post (inklusive spam) och portalen. Om det förblir tyst, öppna en biljett eller mejla support med ordernummer. Läs mer: [Contact](/contact) · [Tickets](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "shop-10",
+          "question": "Kan jag beställa en domän och hosting i en ordning?",
+          "answer": "Ja, det är det vanliga flödet: domän + hosting i kundvagnen, sedan DNS-anslutning. Läs mer: [Domains](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "shop-11",
+          "question": "Finns det paket för WordPress Care?",
+          "answer": "Ja. Vårdpaket omfattar uppdateringar, övervakning och underhåll – separat eller utöver hosting. Läs mer: [Shop](/shop)."
+        },
+        {
+          "id": "shop-12",
+          "question": "Hur avbryter eller ändrar jag en beställning?",
+          "answer": "Direkt efter beställning via support; Därefter gäller avbeställnings- och ändringsvillkor per produkt. Vi hjälper till med migrering eller export om du slutar. Läs mer: [Contact](/contact)."
         }
       ]
     },
@@ -514,12 +831,12 @@
         {
           "id": "sup-1",
           "question": "Vilket stöd erbjuder du?",
-          "answer": "Vi erbjuder WordPress beheer, anpassad webbplatssupport, biljetter och livechatt, underhåll, säkerhet, prestanda och incidentrespons."
+          "answer": "Vi erbjuder WordPress beheer, anpassad webbplatssupport, biljetter och livechatt, underhåll, säkerhet, prestanda och incidentrespons. [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting) · [Chat, ticket or call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)"
         },
         {
           "id": "sup-2",
           "question": "Hur når jag support?",
-          "answer": "Via kontakt, ett möte, biljetter i instrumentpanelen eller livechatt på sajten. Brådskande ärenden markeras som prioriterade."
+          "answer": "Via kontakt, ett möte, biljetter i instrumentpanelen eller livechatt på sajten. Brådskande ärenden markeras som prioriterade. [Contact](/contact) · [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Call appointment](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)"
         },
         {
           "id": "sup-3",
@@ -529,7 +846,7 @@
         {
           "id": "sup-4",
           "question": "Erbjuder ni övervakning dygnet runt?",
-          "answer": "Ja, i relevanta support- och värdpaket: övervakning, säkerhetskopiering och varningar så att problem blir synliga tidigare."
+          "answer": "Ja, i relevanta support- och värdpaket: övervakning, säkerhetskopiering och varningar så att problem blir synliga tidigare. [Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup)"
         },
         {
           "id": "sup-5",
@@ -539,22 +856,22 @@
         {
           "id": "sup-6",
           "question": "Hanterar du WordPress-uppdateringar åt oss?",
-          "answer": "Ja, via \"Underhåll och uppdateringar\": kärna, plugins och teman, med backup och kontroller före och efter vi uppdaterar."
+          "answer": "Ja, via \"Underhåll och uppdateringar\": kärna, plugins och teman, med backup och kontroller före och efter vi uppdaterar. [Site down after WP update](/kennisbank/hosting/website-down-na-update-wordpress)"
         },
         {
           "id": "sup-7",
           "question": "Hjälper du till med hostingproblem?",
-          "answer": "Ja. Vi diagnostiserar, migrerar eller optimerar hosting, VPS och domäner tills sidan fungerar stabilt igen."
+          "answer": "Ja. Vi diagnostiserar, migrerar eller optimerar hosting, VPS och domäner tills sidan fungerar stabilt igen. [Move website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je)"
         },
         {
           "id": "sup-8",
           "question": "Vad händer om min sida är nere?",
-          "answer": "Anmäl det som brådskande. Vi återställer där det är möjligt via säkerhetskopior, serverkontroller och en snabbkorrigering och håller dig uppdaterad om status längs vägen."
+          "answer": "Anmäl det som brådskande. Vi återställer där det är möjligt via säkerhetskopior, serverkontroller och en snabbkorrigering och håller dig uppdaterad om status längs vägen. [Backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [Check yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support)"
         },
         {
           "id": "sup-9",
           "question": "Finns det en kundportal?",
-          "answer": "Ja. Inloggade kunder ser instrumentpanelen, biljetter, projekt och i förekommande fall CRM eller fakturor."
+          "answer": "Ja. Inloggade kunder ser instrumentpanelen, biljetter, projekt och i förekommande fall CRM eller fakturor. [Ticket via customer panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel) · [Lost login?](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)"
         },
         {
           "id": "sup-10",
@@ -575,6 +892,56 @@
           "id": "sup-13",
           "question": "Kan jag uppgradera supporten senare?",
           "answer": "Ja. Du kan skala upp när trafik, risk eller teambehov växer."
+        },
+        {
+          "id": "sup-14",
+          "question": "Vad är skillnaden mellan chatt, biljett och samtalstid?",
+          "answer": "Chatten är snabb för korta frågor; biljetter är bättre för tekniska fall med loggar och uppföljning; ett telefonmöte är lämpligt för en intagning eller komplex förklaring. Läs mer: [Chat versus ticket versus call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "sup-15",
+          "question": "Hur skapar jag ett supportärende?",
+          "answer": "Logga in på kundpanelen och öppna en biljett med tydlig URL, steg och skärmdumpar. Ju bättre information, desto snabbare kan vi hjälpa till. Läs mer: [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "sup-16",
+          "question": "Har du säkerhetskopior om min sida går ner?",
+          "answer": "Ja, beroende på ditt värd- eller supportpaket. Vid driftstopp återställer vi från säkerhetskopior där det är möjligt och utreder orsaken. Läs mer: [Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor)."
+        },
+        {
+          "id": "sup-17",
+          "question": "Vad kan jag kontrollera själv innan jag ringer support?",
+          "answer": "Kontrollera statussida, DNS-utbredning, senaste uppdateringar, diskutrymme och om felet är reproducerbart. Det påskyndar diagnosen. Läs mer: [Do it yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support) · [Statuspage](/statuspage)."
+        },
+        {
+          "id": "sup-18",
+          "question": "Hur fungerar livechatt på sajten?",
+          "answer": "Öppna livechatt via chattknappen. Agent 000 hjälper först med FAQ/kunskapsbas; För mer komplexa eller akuta ärenden hänvisar vi till en anställd. Läs mer: [Digital Assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Contact](/contact)."
+        },
+        {
+          "id": "sup-19",
+          "question": "Kan du hjälpa till med ett kritiskt WordPress-fel?",
+          "answer": "Ja. Vi diagnostiserar vita skärmar, kritiska PHP-fel och plugin-konflikter, med backup och riktad fix. Läs mer: [Critical Error WordPress](/kennisbank/wordpress/kritieke-fout-wordpress) · [Down after update](/kennisbank/hosting/website-down-na-update-wordpress)."
+        },
+        {
+          "id": "sup-20",
+          "question": "Kan du titta på distans (TeamViewer, etc.)?",
+          "answer": "Vid behov och med tillstånd, för skrivbords- eller panelproblem. För de flesta värdärenden räcker det med tillgång till panel, DNS eller WordPress. Läs mer: [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "sup-21",
+          "question": "Hur avbryter jag ett abonnemang eller tjänst?",
+          "answer": "Du kan avboka via kundpanelen eller supporten; var uppmärksam på uppsägningstider i ditt avtal. Vi hjälper dig att genomföra data/export och DNS-överföring prydligt. Läs mer: [Contact](/contact) · [Account](/dashboard)."
+        },
+        {
+          "id": "sup-22",
+          "question": "Erbjuder ni WordPress-vård/underhållspaket?",
+          "answer": "Ja. Uppdateringar, säkerhetskopior, säkerhetskontroller och prestanda ingår i vårdpaketen – perfekt utöver hosting. Läs mer: [Shop](/shop) · [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren)."
+        },
+        {
+          "id": "sup-23",
+          "question": "Vad händer om e-post plötsligt slutar fungera?",
+          "answer": "Kontrollera DNS (MX/SPF/DKIM/DMARC), postlådekvot och om Microsoft eller leverantörer blockerar e-post. Vi hjälper till att mäta kedjan. Läs mer: [Email Problems](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
         }
       ]
     },
@@ -585,7 +952,7 @@
         {
           "id": "web-1",
           "question": "Bygger du bara WordPress-sajter?",
-          "answer": "Nej. Förutom WordPress gör vi anpassad webbdesign i HTML/CSS/JS, PHP och Next.js — separat från WordPress-tjänsterna."
+          "answer": "Nej. Förutom WordPress gör vi anpassad webbdesign i HTML/CSS/JS, PHP och Next.js — separat från WordPress-tjänsterna. [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [Services](/diensten)"
         },
         {
           "id": "web-2",
@@ -635,7 +1002,7 @@
         {
           "id": "web-11",
           "question": "Hur är det med prestanda efter lansering?",
-          "answer": "Vi optimerar Core Web Vitals, caching eller CDN och övervakning. Eftervården fortsätter sedan via underhållspaket."
+          "answer": "Vi optimerar Core Web Vitals, caching eller CDN och övervakning. Eftervården fortsätter sedan via underhållspaket. [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)"
         },
         {
           "id": "web-12",
@@ -651,87 +1018,349 @@
           "id": "web-14",
           "question": "Hjälper du till med konverteringsoptimering på plats?",
           "answer": "Ja. Vi kör A/B-tester, UX-förbättringar, formulär, CTA:er och sidhastighet så att fler besökare konverterar."
+        },
+        {
+          "id": "web-15",
+          "question": "Bygger du också webbshopar?",
+          "answer": "Ja, från marknadsföringssajter med kassaintegrationer till e-handel på WordPress eller anpassning. Vi samordnar omfattning, utbetalningar och uppfyllelse vid intagningen. Läs mer: [Services](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "web-16",
+          "question": "Hur hanterar du integritetstexter på sajter?",
+          "answer": "Vi ger råd och implementerar integritets- och samtyckesflöden för formulär och banners, skräddarsydda för din advokat där det behövs. Läs mer: [Privacy with forms](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren) · [Cookie banner](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "web-17",
+          "question": "Tillhandahåller ni scenmiljöer?",
+          "answer": "Ja, där det är relevant: iscensättning för granskningar och tester, sedan kontrollerad distribution till produktion."
+        },
+        {
+          "id": "web-18",
+          "question": "Kan du ta över och förbättra en befintlig WordPress-sajt?",
+          "answer": "Ja — revision, uppdateringar, säkerhet, hastighet, UX och SEO, utan att onödigt bygga från grunden. Läs mer: [WP move](/kennisbank/domeinnamen/wordpress-website-verhuizen) · [Critical errors](/kennisbank/wordpress/kritieke-fout-wordpress)."
+        },
+        {
+          "id": "web-19",
+          "question": "Hur är det med HTTP till HTTPS efter leverans?",
+          "answer": "Webbplatser har HTTPS som standard. Under migrering tvingar vi fram HTTPS och löser blandat innehåll. Läs mer: [HTTP to HTTPS in WordPress](/kennisbank/wordpress/wordpress-url-omzetten-van-http-naar-https) · [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig)."
+        }
+      ]
+    },
+    {
+      "id": "domeinen",
+      "title": "Domäner",
+      "items": [
+        {
+          "id": "dom-1",
+          "question": "Vad är ett domännamn?",
+          "answer": "Ett domännamn är adressen som besökare använder för att hitta din webbplats (till exempel example.com). Det knyter an till DNS-poster som pekar på din värd eller e-post. Läs mer: [Domain registration](/kennisbank/domeinnamen/domeinnaamregistratie) · [Order domains](/domeinen)."
+        },
+        {
+          "id": "dom-2",
+          "question": "Hur registrerar jag ett domännamn hos dig?",
+          "answer": "Sök efter namnet på domänsidan, välj ett tillägg och slutför kassan i butiken. Efter registrering hanterar du DNS, namnservrar och fakturor på ditt konto. Läs mer: [Domains](/domeinen) · [Registration guide](/kennisbank/domeinnamen/domeinnaamregistratie) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-3",
+          "question": "Kan jag överföra min domän till dig?",
+          "answer": "Ja. Begär en auktoriseringskod (EPP) från din nuvarande registrar, lås upp eventuella överföringslås och påbörja sedan överföringen med oss. Efter det har vi ställt in DNS och namnservrar korrekt. Läs mer: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Authorisation code](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-4",
+          "question": "Vad är en auktoriseringskod (EPP/Auth-kod)?",
+          "answer": "Det är en engångskod från din nuvarande registrar som säkert startar en domänöverföring. Utan en giltig kod kan överföringen inte fortsätta. Läs mer: [What is an authorisation code?](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen)."
+        },
+        {
+          "id": "dom-5",
+          "question": "Vad är ett överföringslås eller registrarlås?",
+          "answer": "Ett lås förhindrar oönskade överföringar. För en flytt behöver du ofta stänga av den hos den aktuella leverantören först, sedan påbörja överföringen med oss. Läs mer: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Support](/contact)."
+        },
+        {
+          "id": "dom-6",
+          "question": "Kan jag köpa en domän utan värd?",
+          "answer": "Ja. Du kan registrera eller överföra endast en domän och lägga till hosting eller e-post senare. Du kan redan hantera eller vidarebefordra DNS under tiden. Läs mer: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-7",
+          "question": "Vilka tillägg (.nl, .com, …) kan jag registrera?",
+          "answer": "Vi stöder vanliga toppdomäner som .nl och .com plus många internationella tillägg. Tillgänglighet och pris visas direkt i domänsökningen. Läs mer: [Domains](/domeinen) · [Registration](/kennisbank/domeinnamen/domeinnaamregistratie)."
+        },
+        {
+          "id": "dom-8",
+          "question": "Hur förnyar jag mitt domännamn?",
+          "answer": "Förnyelse sker genom fakturor och din kundportal; automatisk förnyelse är ofta tillgänglig. Håll betalningsuppgifter uppdaterade för att undvika att förfalla. Läs mer: [Invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails) · [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "dom-9",
+          "question": "Vad är premiumdomännamn?",
+          "answer": "Premiumnamn är korta eller populära domäner med högre inköpspris, ofta via en eftermarknad. Tillgänglighet och villkor skiljer sig åt i förlängningen. Läs mer: [Premium domains](/kennisbank/domeinnamen/premium-domeinnamen) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-10",
+          "question": "Kan jag registrera min domän anonymt (Protect ID)?",
+          "answer": "Där registret tillåter det kan du överväga sekretess/Protect ID. Reglerna skiljer sig åt i förlängningen — .nl, till exempel, har sitt eget ramverk. Läs mer: [Protect ID](/kennisbank/domeinnamen/protect-id-domein-anoniem-registreren)."
+        },
+        {
+          "id": "dom-11",
+          "question": "Min domän är i karantän — vad nu?",
+          "answer": "Efter radering kan en domän hamna i karantän. Beroende på registret kan du ofta återaktivera det mot en avgift; vänta inte för länge. Läs mer: [Domain out of quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-12",
+          "question": "Mitt nya domännamn fungerar inte än - vad nu?",
+          "answer": "Vanligtvis är det DNS-utbredning, saknade A/MX-poster eller namnservrar som inte är uppdaterade ännu. Kontrollera poster och låt TTL:er löpa ut. Läs mer: [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-13",
+          "question": "Hur ansluter jag en domän till min värdplan?",
+          "answer": "Lägg till domänen i din panel eller ditt konto och peka DNS (En post eller namnservrar) till värdskapet. Vi hjälper till med första anslutningen efter beställning. Läs mer: [Connect domain to plan](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-14",
+          "question": "Kan jag vidarebefordra en domän?",
+          "answer": "Ja. Vidarebefordran av domän skickar besökare till en annan webbadress – användbart för varumärken utan en separat webbplats. Vi anpassar DNS och omdirigeringar med dina inställningar. Läs mer: [Forward a domain](/kennisbank/domeinnamen/domeinnaam-doorsturen) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-15",
+          "question": "Hur ändrar jag namnservrar för min domän?",
+          "answer": "I DNS/domänhantering väljer du våra namnservrar eller externa (till exempel ett CDN). Förökning kan ta timmar upp till ett dygn. Läs mer: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-16",
+          "question": "Vad kostar ett domännamn?",
+          "answer": "Priserna skiljer sig åt beroende på förlängning och period; domänsökningen visar aktuella registrerings- och förnyelsepriser. Premiumnamn har ett separat pris. Läs mer: [Domains](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-17",
+          "question": "Måste hosting och domän vara hos samma leverantör?",
+          "answer": "Nej, men det är enklare: DNS, SSL, e-post och support sitter sedan hos en part. Du kan också behålla endast DNS hos oss och vara värd någon annanstans. Läs mer: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "dom-18",
+          "question": "Kan jag hantera flera domäner på ett konto?",
+          "answer": "Ja. Extra domäner kan registreras eller överföras och länkas som tillägg, parkeras eller vidarebefordras - inom din värdplans gränser. Läs mer: [Domains](/domeinen) · [Choose a hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "dom-19",
+          "question": "Vad händer om min domän går ut?",
+          "answer": "Efter utgången finns det ofta en anstånds- eller karantänsperiod där återhämtning fortfarande är möjlig; efteråt kan någon annan göra anspråk på det. Förnya i tid via fakturor. Läs mer: [Quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-20",
+          "question": "Var beställer eller hanterar jag domäner?",
+          "answer": "Registrera och överför via domänsidan eller butiken; förvaltning (DNS, fakturor, förnyelse) bor i kundportalen. Läs mer: [Domains](/domeinen) · [Shop](/shop) · [Account](/dashboard)."
         }
       ]
     },
     {
       "id": "webhosting",
-      "title": "Webbhotell och domäner",
+      "title": "Webbhotell",
       "items": [
         {
           "id": "host-1",
           "question": "Vilken hosting erbjuder du?",
-          "answer": "Vi erbjuder delad hosting, WordPress-hosting och VPS – i Basic, Plus och Business-nivåer – plus domäner."
+          "answer": "Vi erbjuder delad hosting, molnhosting, WordPress-hosting och VPS – plus domänregistrering. Välj baserat på trafik, stack och tillväxt. Läs mer: [Shared hosting](/diensten/shared-hosting) · [Cloud hosting](/diensten/cloud-hosting) · [WordPress hosting](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-2",
-          "question": "Vad är skillnaden mellan delad, WordPress och VPS?",
-          "answer": "Shared är kostnadseffektivt för mindre webbplatser. WordPress-värd är optimerat för WP. VPS ger mer resurser och kontroll för tyngre laster."
+          "question": "Vad är skillnaden mellan delat, moln, WordPress och VPS?",
+          "answer": "Shared är kostnadseffektivt för mindre webbplatser. Molnet ger mer resurser och skalbarhet, helt hanterat. WordPress-värd är optimerat för WP. VPS ger mer kontroll för tyngre laster. Läs mer: [Differences explained](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps) · [Shared plans](/kennisbank/hosting/wat-is-shared-hosting-basic-plus-en-business) · [VPS plans](/kennisbank/hosting/wat-is-vps-hosting-basic-plus-en-business)."
         },
         {
           "id": "host-3",
-          "question": "Hjälper du till med domänregistrering?",
-          "answer": "Ja. Vi ger råd, registrerar eller överför domänen och ansluter DNS korrekt."
+          "question": "Vad är molnvärd hos dig?",
+          "answer": "Molnvärd ger mer resurser och skalbarhet än klassisk delad, samtidigt som vi fortsätter att hantera det. Perfekt när delad blir tight men full VPS behövs inte ännu. Läs mer: [Cloud hosting](/diensten/cloud-hosting) · [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
         },
         {
           "id": "host-4",
           "question": "Ingår SSL med hosting?",
-          "answer": "Ja. SSL är standard i våra relevanta värdplaner."
+          "answer": "Ja. SSL är standard i våra relevanta värdplaner så webbplatser körs på HTTPS. Läs mer: [What is SSL?](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [Install Let's Encrypt](/kennisbank/hosting/hoe-installeer-ik-een-gratis-lets-encrypt-ssl-certificaat)."
         },
         {
           "id": "host-5",
           "question": "Kan du migrera min sida till ditt webbhotell?",
-          "answer": "Ja. Vi hanterar backup, migrering, DNS-cutover, SSL och röktester, med minimal stilleståndstid."
+          "answer": "Ja. Vi hanterar backup, migrering, DNS-cutover, SSL och röktester, med minimal stilleståndstid. Läs mer: [Migrate website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je) · [Migrate WordPress](/kennisbank/domeinnamen/wordpress-website-verhuizen)."
         },
         {
           "id": "host-6",
           "question": "Hur fungerar säkerhetskopior på hosting?",
-          "answer": "Det beror på planen: enkla eller automatiserade säkerhetskopieringar. Extra lagring utanför platsen är tillgänglig."
+          "answer": "Det beror på planen: enkla eller automatiserade säkerhetskopieringar. Extra lagring utanför platsen är tillgänglig. Läs mer: [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor) · [Backup in DirectAdmin](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
         },
         {
           "id": "host-7",
           "question": "Vad händer om jag får mer trafik?",
-          "answer": "Sedan skalar vi till Plus, Business eller VPS och optimerar caching och CDN så att sajten kan hantera tillväxten."
+          "answer": "Sedan skalar vi till Plus, Business, moln eller VPS och optimerar caching och CDN så att sajten kan hantera tillväxt. Läs mer: [When to move to VPS?](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)."
         },
         {
           "id": "host-8",
-          "question": "Erbjuder ni e-post med domäner?",
-          "answer": "Det beror på paketet och inställningen. Vi rekommenderar tillförlitliga e-postlösningar och ställer in DNS korrekt (SPF, DKIM och DMARC)."
+          "question": "Hur säkert är ditt webbhotell?",
+          "answer": "Vi använder brandvägg, SSL, uppdateringar, övervakning och härdning. Extra säkerhetslager finns tillgängliga där det behövs. Läs mer: [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
         },
         {
           "id": "host-9",
-          "question": "Hur säkert är ditt webbhotell?",
-          "answer": "Vi använder brandvägg, SSL, uppdateringar, övervakning och härdning. Extra säkerhetstjänster kan lägga till fler lager ovanpå."
+          "question": "Kan jag gå från delad till VPS senare?",
+          "answer": "Ja. Vi planerar migreringen tillsammans, inklusive tester och återställning, så att switchen förblir kontrollerad. Läs mer: [Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [VPS hosting](/diensten/vps-hosting)."
         },
         {
           "id": "host-10",
-          "question": "Kan jag gå från delad till VPS senare?",
-          "answer": "Ja. Vi planerar migreringen tillsammans, inklusive tester och återställning, så att switchen förblir kontrollerad."
+          "question": "Stöder du CDN?",
+          "answer": "Ja, där det är relevant – ofta ingår ett gratis CDN i WP-värdplaner – för snabbare global leverans. Läs mer: [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [WordPress hosting](/diensten/wordpress-hosting)."
         },
         {
           "id": "host-11",
-          "question": "Stöder du CDN?",
-          "answer": "Ja, där det är relevant – ofta ingår ett gratis CDN i WP-värdplaner – för snabbare global leverans."
+          "question": "Vad är din upptidsmetod?",
+          "answer": "Vi övervakar, reagerar snabbt på incidenter och kommunicerar tydligt kring underhållsfönster så att du vet vad som händer. Statusuppdateringar finns på statussidan. Läs mer: [Status page](/statuspage) · [Contact](/contact)."
         },
         {
           "id": "host-12",
-          "question": "Vad är din upptidsmetod?",
-          "answer": "Vi övervakar, reagerar snabbt på incidenter och kommunicerar tydligt kring underhållsfönster så att du vet vad som händer."
+          "question": "Hur väljer jag rätt värdplan?",
+          "answer": "Baserat på trafik, stack (WordPress eller anpassad), resurser och tillväxt. Vi råder ärligt - vi översäljer inte. Läs mer: [Choose the right hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Shared vs WP vs VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
         },
         {
           "id": "host-13",
-          "question": "Hjälper du till att lösa DNS-problem?",
-          "answer": "Ja. Vi fixar poster, spridning, e-postauth och domänanslutningar tills DNS är korrekt igen."
+          "question": "Var kan jag se värdpriser?",
+          "answer": "På värdtjänstsidorna och i butiken, med månatliga eller årliga alternativ där tillämpligt. Läs mer: [Shared](/diensten/shared-hosting) · [Cloud](/diensten/cloud-hosting) · [WordPress](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting) · [Shop](/shop)."
         },
         {
           "id": "host-14",
-          "question": "Hur väljer jag rätt värdplan?",
-          "answer": "Baserat på trafik, stack (WordPress eller anpassad), resurser och tillväxt. Vi råder ärligt - vi översäljer inte."
+          "question": "Får jag SSH-åtkomst på min hosting?",
+          "answer": "Det beror på planen. På många planer är SSH tillgänglig eller kan begäras; på VPS får du vanligtvis full tillgång. Läs mer: [SSH access](/kennisbank/hosting/heb-ik-ssh-toegang-op-mijn-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-15",
-          "question": "Var kan jag se värdpriser?",
-          "answer": "På värdtjänstsidorna under Tjänster → Webbhotell och domäner, med månatliga eller årliga alternativ där tillämpligt."
+          "question": "Hur installerar jag WordPress på ditt webbhotell?",
+          "answer": "Via kontrollpanelen (till exempel DirectAdmin/Installatron) eller manuellt. Vi har en steg-för-steg-guide. Läs mer: [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-16",
+          "question": "Vad är inoder och varför ser min plan \"full\" ut?",
+          "answer": "Inoder räknar filer/mappar, inte bara GB. Många små cache- eller e-postfiler kan nå gränsen medan diskutrymme fortfarande ser ledigt ut. Läs mer: [Inodes](/kennisbank/hosting/inodes-en-inode-limieten) · [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-17",
+          "question": "Vad betyder \"obegränsad\" lagring eller trafik?",
+          "answer": "\"Obegränsad\" följer tillåten användning: normal webbplatsanvändning är bra; missbruk eller extrem belastning kan begränsas för att hålla plattformen stabil. Läs mer: [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-18",
+          "question": "Vad är skillnaden mellan delad, VPS och dedikerad?",
+          "answer": "Delade delar resurser; VPS isolerar mer CPU/RAM; dedikerad är en hel server. Välj efter trafik, kontrollbehov och budget. Läs mer: [Dedicated vs VPS vs shared](/kennisbank/infrastructuur-servers/verschil-tussen-dedicated-vps-en-shared-hosting) · [Shared/WP/VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
+        },
+        {
+          "id": "host-19",
+          "question": "Hur arbetar jag med DirectAdmin?",
+          "answer": "DirectAdmin är kontrollpanelen för e-post, DNS, databaser, säkerhetskopior och installationer. Logga in med dina paneluppgifter; vi rekommenderar starkt 2FA. Läs mer: [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Backups](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
+        },
+        {
+          "id": "host-20",
+          "question": "Erbjuder du objektcache för WordPress?",
+          "answer": "På lämpliga planer stöder vi beständig objektcache för att minska databasfrågor och ladda snabbare. Läs mer: [Object cache](/kennisbank/hosting/persistent-object-cache-in-wordpress) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-21",
+          "question": "Hur förnyar eller betalar jag för hosting?",
+          "answer": "Via kundportalen och fakturor; automatisk förnyelse är ofta tillgänglig. Håll faktureringsuppgifter aktuella för att undvika avbrott. Läs mer: [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode) · [View invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "host-22",
+          "question": "Kan jag lägga flera domäner på en värdplan?",
+          "answer": "Ofta ja, via addon eller parkerade domäner - beroende på plangränser. Vi hjälper till med uppkoppling och DNS. Läs mer: [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Connect domain](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket)."
+        },
+        {
+          "id": "host-23",
+          "question": "Hur säkert är det att logga in på min värdpanel?",
+          "answer": "Använd ett starkt lösenord och aktivera 2FA. Dela inte panelinloggningar via osäkra kanaler. Läs mer: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "host-24",
+          "question": "Vad är WordPress-värd exakt?",
+          "answer": "WordPress-värd är optimerat för WP: snabbare PHP/stack, ofta CDN och enklare installationer/uppdateringar än generiskt delat. Läs mer: [WP hosting plans](/kennisbank/hosting/wat-is-wordpress-hosting-basic-plus-en-pro) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-25",
+          "question": "Var beställer jag hosting direkt?",
+          "answer": "I butiken eller via värdkategorierna Shared, Cloud, WordPress och VPS. Efter beställning får du panel- och fakturaåtkomst. Läs mer: [Shop](/shop) · [Hosting overview](/diensten/categorie/hosting)."
+        }
+      ]
+    },
+    {
+      "id": "email-dns",
+      "title": "E-post och DNS",
+      "items": [
+        {
+          "id": "mail-1",
+          "question": "Erbjuder ni e-post med domäner eller hosting?",
+          "answer": "Det beror på paketet och inställningen. Vi rekommenderar tillförlitliga e-postlösningar och ställer in DNS korrekt (SPF, DKIM och DMARC). Läs mer: [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress) · [SPF record](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-2",
+          "question": "Vad är SPF, DKIM och DMARC?",
+          "answer": "De är DNS-poster som hanterar e-postautentisering och minskar spoofing/spam. Utan korrekta register hamnar e-post oftare i skräppost. Läs mer: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-3",
+          "question": "Hur hanterar jag DNS-poster?",
+          "answer": "Via DNS-hantering för din domän eller värdpanel ställer du in A-, AAAA-, CNAME-, MX- och TXT-poster. Vi hjälper till med migrering och e-postauth. Läs mer: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [DNSSEC](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-4",
+          "question": "Hjälper du till att lösa DNS-problem?",
+          "answer": "Ja. Vi fixar poster, spridning, e-postauth och domänanslutningar tills DNS är korrekt igen. Läs mer: [Manage DNS records](/kennisbank/domeinnamen/dns-records-beheren) · [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen)."
+        },
+        {
+          "id": "mail-5",
+          "question": "Vad är DNSSEC?",
+          "answer": "DNSSEC signerar DNS-svar så att manipulation är svårare. Vi kan aktivera det där din toppdomän och inställningar stöder det. Läs mer: [DNSSEC explained](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-6",
+          "question": "Hur ställer jag in e-post på min telefon?",
+          "answer": "Använd IMAP/SMTP-information från din panel. För Android (och liknande på iOS) finns stegen i kunskapsbasen. Läs mer: [Email on Android](/kennisbank/e-mail/e-mail-instellen-op-android) · [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress)."
+        },
+        {
+          "id": "mail-7",
+          "question": "Vad händer om e-post plötsligt slutar fungera?",
+          "answer": "Kontrollera DNS (MX/SPF/DKIM/DMARC), postlådekvot och om leverantörer blockerar e-post. Vi hjälper till att spåra hela kedjan. Läs mer: [Email problems](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-8",
+          "question": "Hur fungerar namnservrar?",
+          "answer": "Namnservrar avgör vilket DNS-system som betjänar din domän. Om du ändrar dem måste du ställa in A/MX/TXT-poster korrekt igen på den nya DNS-värden. Läs mer: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "mail-9",
+          "question": "Hur lång tid tar DNS-spridning?",
+          "answer": "Ofta minuter till några timmar; ibland upp till 24–48 timmar på grund av TTL:er och cacher. Sänk TTL:er före en migrering för att byta snabbare. Läs mer: [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen) · [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet)."
+        },
+        {
+          "id": "mail-10",
+          "question": "Kan jag vidarebefordra e-post till en annan adress?",
+          "answer": "Ja. Vidarebefordrare skickar inkommande e-post till Gmail, Microsoft 365 eller en annan postlåda – användbar bredvid eller istället för en full postlåda. Läs mer: [Forward email](/kennisbank/e-mail/email-doorsturen-naar-mailadres)."
+        },
+        {
+          "id": "mail-11",
+          "question": "Kan jag ansluta min domän till Microsoft 365?",
+          "answer": "Ja. Du ställer in MX- ​​och autentiseringsposter (SPF/DKIM/DMARC) enligt Microsofts instruktioner; vi hjälper till på DNS-sidan. Läs mer: [Domain to Microsoft 365](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-microsoft-365) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-12",
+          "question": "Varför hamnar min mail i skräppost?",
+          "answer": "Ofta saknas SPF/DKIM/DMARC eller är i konflikt, eller så är IP/rykte svagt. Vi kontrollerar DNS-autentisering och sändningsbeteende. Läs mer: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-13",
+          "question": "Vad är en MX-post?",
+          "answer": "En MX-post talar om för internet vilken e-postserver som kan ta emot e-post för din domän. Utan korrekt MX kommer ingen post. Läs mer: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Email problems](/kennisbank/hosting/problemen-met-e-mail-website)."
+        },
+        {
+          "id": "mail-14",
+          "question": "Kan jag använda webbmail?",
+          "answer": "Ja, via webbmailadressen till din värdpanel kan du läsa och skicka e-post i webbläsaren – tillsammans med IMAP på telefonen eller Outlook. Läs mer: [Set up email](/kennisbank/e-mail/e-mail-instellen-op-android) · [Contact](/contact)."
+        },
+        {
+          "id": "mail-15",
+          "question": "Behöver DNS vara med dig om värd finns någon annanstans?",
+          "answer": "Nej. Du kan behålla DNS hos oss eller någon annanstans, så länge som A/MX/TXT pekar på rätt tjänster. Konsekvent hantering förhindrar migreringsmisstag. Läs mer: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Nameservers](/kennisbank/domeinnamen/nameservers-beheren)."
         }
       ]
     }

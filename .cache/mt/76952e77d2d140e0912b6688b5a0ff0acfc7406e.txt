@@ -1,0 +1,1 @@
+Na stranici sa statusom prikazujemo incidente i održavanje u vezi s hostingom i povezanim uslugama, tako da možete brzo vidjeti da li se nešto događa. Pročitajte više: ⟦L0⟧.

@@ -1,0 +1,1 @@
+Parduotuvėje kainas rodome pagal rodomą PVM kontekstą (dažnai įskaitant vartotojų srautams). Sąskaitoje faktūroje nurodytas neto PVM paskirstymas verslo klientams.

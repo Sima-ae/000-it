@@ -1,0 +1,1 @@
+To zależy od pakietu i konfiguracji. Doradzamy niezawodne rozwiązania pocztowe i prawidłowo ustawiamy DNS (SPF, DKIM i DMARC). Przeczytaj więcej: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Ja. Begär en auktoriseringskod (EPP) från din nuvarande registrar, lås upp eventuella överföringslås och påbörja sedan överföringen med oss. Efter det har vi ställt in DNS och namnservrar korrekt. Läs mer: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

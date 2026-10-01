@@ -1,0 +1,1 @@
+Ano, s rolemi účtů (klient, manažer, admin), takže více členů týmu může sledovat vstupenky nebo projekty, aniž by sdíleli vše.

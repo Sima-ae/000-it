@@ -1,0 +1,1 @@
+Use unique passwords and 2FA where available (including on hosting panels). Don't share sessions on shared computers. Read more: ⟦L0⟧2FA DirectAdmin⟦/L0⟧.

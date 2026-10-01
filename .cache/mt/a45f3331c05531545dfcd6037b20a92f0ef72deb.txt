@@ -1,0 +1,1 @@
+En planes adecuados, admitimos el caché de objetos persistente para reducir las consultas a la base de datos y cargar más rápido. Leer más: ⟦L0⟧ · ⟦L1⟧.

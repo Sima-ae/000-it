@@ -1,0 +1,1 @@
+Use senhas exclusivas e 2FA quando disponíveis (inclusive em painéis de hospedagem). Não compartilhe sessões em computadores compartilhados. Leia mais: ⟦L0⟧.

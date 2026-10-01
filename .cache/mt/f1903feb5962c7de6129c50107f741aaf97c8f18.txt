@@ -1,0 +1,1 @@
+Añade el dominio en tu panel o cuenta y apunta DNS (registro A o servidores de nombres) al hosting. Ayudamos con la primera conexión después del pedido. Leer más: ⟦L0⟧ · ⟦L1⟧.

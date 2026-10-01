@@ -1,0 +1,1 @@
+Eles são registros DNS que lidam com a autenticação de e-mail e reduzem a falsificação/spam. Sem registros corretos, os e-mails acabam frequentemente em spam. Leia mais: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

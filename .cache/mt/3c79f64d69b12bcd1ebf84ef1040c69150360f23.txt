@@ -1,0 +1,1 @@
+Mérjük az LCP-t, az INP-t és a CLS-t, megoldjuk a nehéz eszközöket, a tárhely-/gyorsítótár- és témaproblémákat, és szükség esetén összekapcsoljuk a CDN-nel. Bővebben: ⟦L0⟧ · ⟦L1⟧.

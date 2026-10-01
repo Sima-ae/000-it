@@ -1,0 +1,1 @@
+Sí. El reenvío de dominio envía a los visitantes a otra URL, lo que resulta útil para marcas sin un sitio independiente. Alineamos DNS y redirecciones con su configuración. Leer más: ⟦L0⟧ · ⟦L1⟧.

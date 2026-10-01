@@ -1,0 +1,1 @@
+To ovisi o paketu i postavkama. Savjetujemo pouzdana rješenja za poštu i ispravno postavljamo DNS (SPF, DKIM i DMARC). Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

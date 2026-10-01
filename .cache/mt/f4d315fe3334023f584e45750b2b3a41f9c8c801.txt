@@ -1,0 +1,1 @@
+Sim. O encaminhamento de domínio envia os visitantes para outro URL – útil para marcas sem um site separado. Alinhamos DNS e redirecionamentos com sua configuração. Leia mais: ⟦L0⟧ · ⟦L1⟧.

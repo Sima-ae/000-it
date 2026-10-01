@@ -1,0 +1,1 @@
+Mağazada biz qiymətləri göstərilən ƏDV kontekstinə uyğun olaraq göstəririk (çox vaxt istehlakçı axını daxil olmaqla). Fakturada biznes müştəriləri üçün xalis ƏDV bölgüsü var.

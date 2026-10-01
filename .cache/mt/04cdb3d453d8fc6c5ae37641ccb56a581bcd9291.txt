@@ -1,0 +1,1 @@
+Folosim firewall, SSL, actualizări, monitorizare și întărire. Straturi de securitate suplimentare sunt disponibile acolo unde este necesar. Citește mai mult: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Ja. Wir planen gemeinsam die Migration, einschließlich Tests und Rollback, damit der Switch unter Kontrolle bleibt. Weiterlesen: ⟦L0⟧ · ⟦L1⟧.

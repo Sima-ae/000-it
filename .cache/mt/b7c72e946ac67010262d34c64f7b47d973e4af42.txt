@@ -1,0 +1,1 @@
+Tinkamuose planuose palaikome nuolatinę objektų talpyklą, kad sumažintume duomenų bazės užklausas ir įkeltume greičiau. Skaityti daugiau: ⟦L0⟧ · ⟦L1⟧.

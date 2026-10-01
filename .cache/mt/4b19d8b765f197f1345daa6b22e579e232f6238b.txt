@@ -1,0 +1,1 @@
+Aggiungi il dominio nel tuo pannello o account e punta i DNS (record A o nameserver) all'hosting. Aiutiamo con la prima connessione dopo l'ordine. Per saperne di più: ⟦L0⟧ · ⟦L1⟧.

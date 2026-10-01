@@ -1,0 +1,1 @@
+Ahol a rendszerleíró adatbázis ezt lehetővé teszi, fontolóra veheti az adatvédelmi/Protect ID-t. A szabályok kiterjesztésenként eltérőek – például a .nl-nek saját keretrendszere van. Bővebben: ⟦L0⟧.

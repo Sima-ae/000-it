@@ -1,0 +1,1 @@
+Poslužitelji imena određuju koji DNS sustav služi vašoj domeni. Ako ih promijenite, morate ponovno ispravno postaviti A/MX/TXT zapise na novom DNS hostu. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

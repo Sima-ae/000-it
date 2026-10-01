@@ -1,0 +1,1 @@
+New registration or transfer can be done via domains/shop; you often need an auth code during a transfer. Then we set DNS and name servers correctly. Read more: ⟦L0⟧Domains⟦/L0⟧ · ⟦L1⟧New domain not working⟦/L1⟧.

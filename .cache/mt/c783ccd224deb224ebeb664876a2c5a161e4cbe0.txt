@@ -1,0 +1,1 @@
+Inodes laskee tiedostoja/kansioita, ei vain GB. Monet pienet välimuisti- tai sähköpostitiedostot voivat saavuttaa rajan, vaikka levytila ​​näyttää edelleen vapaalta. Lue lisää: ⟦L0⟧ · ⟦L1⟧.

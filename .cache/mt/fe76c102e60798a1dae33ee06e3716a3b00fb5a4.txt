@@ -1,0 +1,1 @@
+Obvykle se jedná o šíření DNS, chybějící A/MX záznamy nebo zatím neaktualizované nameservery. Zkontrolujte záznamy a nechte vypršení platnosti TTL. Přečtěte si více: ⟦L0⟧ · ⟦L1⟧.

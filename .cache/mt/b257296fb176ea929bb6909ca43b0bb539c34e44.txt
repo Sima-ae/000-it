@@ -1,0 +1,1 @@
+A WordPress hosting WP-re van optimalizálva: gyorsabb PHP/stack, gyakran CDN és egyszerűbb telepítés/frissítés, mint az általános megosztott. Bővebben: ⟦L0⟧ · ⟦L1⟧.

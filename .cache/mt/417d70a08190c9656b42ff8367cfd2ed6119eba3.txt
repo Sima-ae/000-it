@@ -1,0 +1,1 @@
+Inodes broji datoteke/mape, ne samo GB. Mnoge male predmemorije ili datoteke pošte mogu dosegnuti ograničenje dok prostor na disku još uvijek izgleda slobodan. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

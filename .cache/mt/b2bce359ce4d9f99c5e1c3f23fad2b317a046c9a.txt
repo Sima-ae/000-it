@@ -1,0 +1,1 @@
+Luego escalamos a Plus, Business, nube o VPS y optimizamos el almacenamiento en caché y CDN para que el sitio pueda soportar el crecimiento. Leer más: ⟦L0⟧ · ⟦L1⟧.

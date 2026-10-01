@@ -1,0 +1,1 @@
+Panelinizden IMAP/SMTP ayrıntılarını kullanın. Android için (ve benzer şekilde iOS'ta) adımlar bilgi tabanındadır. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

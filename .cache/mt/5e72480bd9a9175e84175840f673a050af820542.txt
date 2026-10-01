@@ -1,0 +1,1 @@
+O înregistrare MX spune internetului ce server de e-mail poate primi e-mail pentru domeniul dvs. Fără un MX corect, nu sosește niciun e-mail. Citește mai mult: ⟦L0⟧ · ⟦L1⟧.

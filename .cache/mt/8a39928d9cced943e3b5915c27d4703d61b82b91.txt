@@ -1,0 +1,1 @@
+Evet. Doğru izin ve etiketleme olmadan reklam ölçümü güvenilir değildir. Banner'ları, GTM/GA4'ü ve pikselleri düzgün bir şekilde birbirine bağlıyoruz. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

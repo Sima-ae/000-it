@@ -1,0 +1,1 @@
+In der Regel handelt es sich um DNS-Weitergabe, fehlende A/MX-Einträge oder noch nicht aktualisierte Nameserver. Überprüfen Sie die Datensätze und lassen Sie TTLs ablaufen. Weiterlesen: ⟦L0⟧ · ⟦L1⟧.

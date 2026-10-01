@@ -1,0 +1,1 @@
+Les serveurs de noms déterminent quel système DNS dessert votre domaine. Si vous les modifiez, vous devez à nouveau définir correctement les enregistrements A/MX/TXT sur le nouvel hôte DNS. Lire la suite : ⟦L0⟧ · ⟦L1⟧.

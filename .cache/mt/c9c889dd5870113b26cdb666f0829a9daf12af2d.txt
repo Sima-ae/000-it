@@ -1,0 +1,1 @@
+DNSSEC nënshkruan përgjigjet DNS për ta bërë manipulimin më të vështirë. Ne mund ta aktivizojmë atë ku TLD dhe konfigurimi juaj e mbështesin atë. Lexo më shumë: ⟦L0⟧DNSSEC shpjegim⟦/L0⟧.

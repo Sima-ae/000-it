@@ -1,0 +1,1 @@
+Ja. SSL er standard i våre relevante vertsplaner, så nettsteder kjører på HTTPS. Les mer: ⟦L0⟧ · ⟦L1⟧.

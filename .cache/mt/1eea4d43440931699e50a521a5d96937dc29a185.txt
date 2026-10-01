@@ -1,0 +1,1 @@
+po. Ne trajtojmë kopjen rezervë, migrimin, ndërprerjen e DNS, SSL dhe testet e tymit, me kohë minimale joproduktive. Lexo më shumë: ⟦L0⟧ · ⟦L1⟧.

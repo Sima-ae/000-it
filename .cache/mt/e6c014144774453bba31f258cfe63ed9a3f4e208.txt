@@ -1,0 +1,1 @@
+Ne matim LCP, INP dhe CLS, zgjidhim asete të rënda, problemet e pritjes/memorjes dhe temave dhe e lidhim këtë me CDN-në ku është e nevojshme. Lexo më shumë: ⟦L0⟧CDN⟦/L0⟧ · ⟦L1⟧Zgjidhni Hosting⟦/L1⟧.

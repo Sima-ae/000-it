@@ -1,0 +1,1 @@
+Ja. Vi planerar migreringen tillsammans, inklusive tester och återställning, så att switchen förblir kontrollerad. Läs mer: ⟦L0⟧ · ⟦L1⟧.

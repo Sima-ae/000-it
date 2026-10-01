@@ -1,0 +1,1 @@
+Käytä vahvaa salasanaa ja ota 2FA käyttöön. Älä jaa paneelin kirjautumistunnuksia suojaamattomien kanavien kautta. Lue lisää: ⟦L0⟧ · ⟦L1⟧.

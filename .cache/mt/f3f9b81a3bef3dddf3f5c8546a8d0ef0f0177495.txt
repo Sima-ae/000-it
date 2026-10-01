@@ -1,0 +1,1 @@
+Ellenőrizze a DNS-t (MX/SPF/DKIM/DMARC), a postafiókkvótát és azt, hogy a Microsoft vagy a szolgáltatók blokkolják-e a leveleket. Segítünk a lánc mérésében. Bővebben: ⟦L0⟧ · ⟦L1⟧.

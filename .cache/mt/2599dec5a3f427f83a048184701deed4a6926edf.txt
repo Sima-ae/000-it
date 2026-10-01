@@ -1,0 +1,1 @@
+Nameservery určují, který systém DNS obsluhuje vaši doménu. Pokud je změníte, musíte na novém hostiteli DNS znovu správně nastavit záznamy A/MX/TXT. Přečtěte si více: ⟦L0⟧ · ⟦L1⟧.

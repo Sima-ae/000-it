@@ -1,0 +1,1 @@
+DNS (MX/SPF/DKIM/DMARC), poçt qutusu kvotası və provayderlərin poçtu bloklayıb-bilmədiyini yoxlayın. Tam zənciri izləməyə kömək edirik. Daha ətraflı: ⟦L0⟧ · ⟦L1⟧.

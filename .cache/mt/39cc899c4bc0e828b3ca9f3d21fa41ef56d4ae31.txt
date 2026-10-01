@@ -1,0 +1,1 @@
+Serwery nazw określają, który system DNS obsługuje Twoją domenę. Jeśli je zmienisz, musisz ponownie poprawnie ustawić rekordy A/MX/TXT na nowym hoście DNS. Przeczytaj więcej: ⟦L0⟧ · ⟦L1⟧.

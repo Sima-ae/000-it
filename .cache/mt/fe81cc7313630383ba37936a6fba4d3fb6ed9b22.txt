@@ -1,0 +1,1 @@
+Web lokacije su zadane na HTTPS. Tokom migracije forsiramo HTTPS i rješavamo miješani sadržaj. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

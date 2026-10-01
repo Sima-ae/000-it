@@ -1,0 +1,1 @@
+po. Ne planifikojmë migrimin së bashku, duke përfshirë testet dhe rikthimin, në mënyrë që kalimi të bëhet në mënyrë të kontrolluar. Lexo më shumë: ⟦L0⟧Shpërndarë në VPS⟦/L0⟧.

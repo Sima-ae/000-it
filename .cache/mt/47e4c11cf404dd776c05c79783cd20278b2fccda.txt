@@ -1,0 +1,1 @@
+po. Ne koordinojmë dizajnin e markës dhe sistemet UI në mënyrë që printimi dhe faqja e internetit të formojnë një të tërë.

@@ -1,0 +1,1 @@
+resurse partajate; VPS izolează mai mult CPU/RAM; dedicat este un întreg server. Alegeți în funcție de trafic, nevoi de control și buget. Citește mai mult: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+I DNS/domæneadministration vælger du vores navneservere eller eksterne (for eksempel et CDN). Formering kan tage timer op til en dag. Læs mere: ⟦L0⟧ · ⟦L1⟧.

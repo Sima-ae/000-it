@@ -11,6 +11,32 @@ type JumpLink = {
   label: string;
 };
 
+/** Resolve any CSS length (incl. calc/rem/env) to pixels. */
+function cssLengthToPx(value: string, fallbackPx: number): number {
+  const raw = value.trim();
+  if (!raw) return fallbackPx;
+  if (/^-?\d+(\.\d+)?px$/i.test(raw)) {
+    const n = parseFloat(raw);
+    return Number.isFinite(n) ? n : fallbackPx;
+  }
+  if (/^-?\d+(\.\d+)?rem$/i.test(raw)) {
+    const rem = parseFloat(raw);
+    const root =
+      parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+    return Number.isFinite(rem) ? rem * root : fallbackPx;
+  }
+  try {
+    const probe = document.createElement("div");
+    probe.style.cssText = `position:absolute;visibility:hidden;pointer-events:none;height:${raw}`;
+    document.body.appendChild(probe);
+    const px = probe.getBoundingClientRect().height;
+    probe.remove();
+    return Number.isFinite(px) && px > 0 ? px : fallbackPx;
+  } catch {
+    return fallbackPx;
+  }
+}
+
 /**
  * Jump strip for the main services index.
  * Category pages embed chips inside CategoryHero instead.
@@ -39,22 +65,26 @@ export function ServicesJumpNav({
       }
 
       const styles = getComputedStyle(document.documentElement);
-      const navOffsetRaw = styles.getPropertyValue("--nav-offset").trim() || "5.75rem";
-      const navOffsetPx = navOffsetRaw.endsWith("rem")
-        ? parseFloat(navOffsetRaw) * 16
-        : parseFloat(navOffsetRaw);
+      const navOffsetRaw =
+        styles.getPropertyValue("--nav-offset").trim() || "5.75rem";
+      const navOffsetPx = cssLengthToPx(navOffsetRaw, 92);
       const stickyTop = Math.max(navOffsetPx - 8, 0);
 
-      const observer = new IntersectionObserver(
-        ([entry]) => setStuck(!entry.isIntersecting),
-        {
-          root: null,
-          threshold: 0,
-          rootMargin: `-${stickyTop}px 0px 0px 0px`,
-        },
-      );
-      observer.observe(sentinel);
-      return observer;
+      try {
+        const observer = new IntersectionObserver(
+          ([entry]) => setStuck(!entry.isIntersecting),
+          {
+            root: null,
+            threshold: 0,
+            rootMargin: `-${stickyTop}px 0px 0px 0px`,
+          },
+        );
+        observer.observe(sentinel);
+        return observer;
+      } catch {
+        setStuck(false);
+        return null;
+      }
     };
 
     let observer = update();

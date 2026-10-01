@@ -1,0 +1,1 @@
+Gdje su projekti navedeni na portalu, možete vidjeti status i komunikaciju. U suprotnom, obavijestit ćemo vas putem ulaznica ili ažuriranja sprinta.

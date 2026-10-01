@@ -1,0 +1,1 @@
+Putem upravljačke ploče (na primjer DirectAdmin/Installatron) ili ručno. Imamo vodič korak po korak. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

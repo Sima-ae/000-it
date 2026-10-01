@@ -1,0 +1,1 @@
+No. Puedes mantener DNS con nosotros o en otro lugar, siempre y cuando A/MX/TXT apunte a los servicios correctos. Una gestión coherente evita errores de migración. Leer más: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Záznam MX sděluje internetu, který poštovní server může přijímat e-maily pro vaši doménu. Bez správného MX žádná pošta nedorazí. Přečtěte si více: ⟦L0⟧ · ⟦L1⟧.

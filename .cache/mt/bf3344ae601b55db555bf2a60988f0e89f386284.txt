@@ -1,0 +1,1 @@
+Evet. Yedekleme ve hedefe yönelik düzeltme ile beyaz ekranları, kritik PHP hatalarını ve eklenti çakışmalarını teşhis ediyoruz. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

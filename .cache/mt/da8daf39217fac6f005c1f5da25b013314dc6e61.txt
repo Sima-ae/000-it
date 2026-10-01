@@ -1,0 +1,1 @@
+We work GDPR-conscious: privacy texts, consent for forms and cookie banners/consent mode where tracking is necessary. For WordPress we help with a correct cookie setup. Read more: ⟦L0⟧Cookie banner in WordPress⟦/L0⟧ · ⟦L1⟧Consent mode⟦/L1⟧ · ⟦L2⟧Privacy with forms⟦/L2⟧.

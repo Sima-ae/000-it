@@ -1,0 +1,1 @@
+Tai vienkartinis kodas iš dabartinio registratoriaus, kuris saugiai pradeda domeno perkėlimą. Be galiojančio kodo perkėlimas negali būti tęsiamas. Skaityti daugiau: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Taip. Jūs nustatote MX ir autentifikavimo įrašus (SPF/DKIM/DMARC) vadovaudamiesi „Microsoft“ instrukcijomis; padedame DNS pusėje. Skaityti daugiau: ⟦L0⟧ · ⟦L1⟧.

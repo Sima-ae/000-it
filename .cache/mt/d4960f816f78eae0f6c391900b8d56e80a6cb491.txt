@@ -1,0 +1,1 @@
+Utilisez des mots de passe uniques et 2FA lorsqu'ils sont disponibles (y compris sur les panneaux d'hébergement). Ne partagez pas de sessions sur des ordinateurs partagés. Lire la suite : ⟦L0⟧.

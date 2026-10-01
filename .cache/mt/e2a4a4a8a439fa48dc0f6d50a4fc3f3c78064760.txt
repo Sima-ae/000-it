@@ -1,0 +1,1 @@
+Sono record DNS che gestiscono l'autenticazione e-mail e riducono lo spoofing/spam. Senza record corretti, la posta finisce più spesso nello spam. Per saperne di più: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

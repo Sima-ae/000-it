@@ -1,0 +1,1 @@
+Det afhænger af planen. På mange planer er SSH tilgængelig eller kan rekvireres; på VPS får du typisk fuld adgang. Læs mere: ⟦L0⟧ · ⟦L1⟧.

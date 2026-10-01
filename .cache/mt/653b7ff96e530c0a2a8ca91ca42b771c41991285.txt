@@ -1,0 +1,1 @@
+Verificați pagina de stare, propagarea DNS, actualizările recente, spațiul pe disc și dacă eroarea este reproductibilă. Asta accelerează diagnosticul. Citește mai mult: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Mağazada fiyatları gösterilen KDV bağlamına göre gösteririz (çoğunlukla tüketici akışları dahil). Faturada ticari müşteriler için net KDV dökümü yer almaktadır.

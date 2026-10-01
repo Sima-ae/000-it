@@ -1,0 +1,1 @@
+Ezután Plus, Business, felhő vagy VPS-re skálázzuk, és optimalizáljuk a gyorsítótárat és a CDN-t, hogy a webhely kezelni tudja a növekedést. Bővebben: ⟦L0⟧ · ⟦L1⟧.

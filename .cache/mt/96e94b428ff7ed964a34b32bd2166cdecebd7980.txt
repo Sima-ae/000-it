@@ -1,0 +1,1 @@
+Obično je to DNS propagacija, nedostajući A/MX zapisi ili serveri imena koji još nisu ažurirani. Provjerite zapise i dozvolite da TTL isteknu. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

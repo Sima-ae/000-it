@@ -1,0 +1,1 @@
+Ei, mutta se on yksinkertaisempaa: DNS, SSL, sähköposti ja tuki sitten istu yhden osapuolen kanssa. Voit myös pitää vain DNS:n meillä ja isännöinnillä muualla. Lue lisää: ⟦L0⟧ · ⟦L1⟧.

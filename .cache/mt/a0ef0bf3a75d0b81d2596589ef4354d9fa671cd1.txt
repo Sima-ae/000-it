@@ -1,0 +1,1 @@
+Ja, beroende på ditt värd- eller supportpaket. Vid driftstopp återställer vi från säkerhetskopior där det är möjligt och utreder orsaken. Läs mer: ⟦L0⟧ · ⟦L1⟧.

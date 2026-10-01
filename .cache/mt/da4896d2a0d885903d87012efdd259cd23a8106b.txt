@@ -1,0 +1,1 @@
+Shared is beneficial for smaller sites. Cloud gives more resources and scalability, fully managed. WordPress hosting is optimized for WP. VPS gives more control for heavier loads. Read more: ⟦L0⟧Differences Explained⟦/L0⟧ · ⟦L1⟧Shared Plans⟦/L1⟧ · ⟦L2⟧VPS ​​Plans⟦/L2⟧.

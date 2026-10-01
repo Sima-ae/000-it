@@ -1,0 +1,1 @@
+Ja. Vi diagnostiserar vita skärmar, kritiska PHP-fel och plugin-konflikter, med backup och riktad fix. Läs mer: ⟦L0⟧ · ⟦L1⟧.

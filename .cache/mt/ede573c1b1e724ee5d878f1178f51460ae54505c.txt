@@ -1,0 +1,1 @@
+Onlar e-poçtun autentifikasiyasını idarə edən və saxtakarlığı/spamı azaldan DNS qeydləridir. Düzgün qeydlər olmadan poçt daha tez-tez spama düşür. Daha ətraflı: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

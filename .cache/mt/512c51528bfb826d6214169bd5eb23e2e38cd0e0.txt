@@ -1,0 +1,1 @@
+Vi måler LCP, INP og CLS, løser tunge aktiver, hosting/caching og temaproblemer og kobler dette til CDN, hvor det er nyttigt. Læs mere: ⟦L0⟧ · ⟦L1⟧.

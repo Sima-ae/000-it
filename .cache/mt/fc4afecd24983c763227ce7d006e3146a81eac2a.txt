@@ -1,0 +1,1 @@
+Ne raportojmë çdo muaj ose për sprint renditjet, trafikun, konvertimet, çështjet teknike dhe veprimet e ardhshme, në mënyrë që të jetë e qartë se çfarë kemi bërë dhe çfarë do të pasojë.

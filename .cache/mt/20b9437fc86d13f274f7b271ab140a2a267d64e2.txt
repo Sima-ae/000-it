@@ -1,0 +1,1 @@
+Da, s ulogama naloga (klijent, menadžer, administrator) tako da više članova tima može pratiti ulaznice ili projekte bez dijeljenja svega.

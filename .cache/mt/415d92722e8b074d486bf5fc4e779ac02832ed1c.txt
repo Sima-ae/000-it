@@ -1,0 +1,1 @@
+Über die DNS-Verwaltung für Ihre Domain oder Ihr Hosting-Panel legen Sie A-, AAAA-, CNAME-, MX- und TXT-Einträge fest. Wir helfen bei Migrationen und E-Mail-Authentifizierung. Weiterlesen: ⟦L0⟧ · ⟦L1⟧.

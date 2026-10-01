@@ -1,0 +1,1 @@
+Inodes numërojnë skedarët/dosjet, jo vetëm GB. Shumë skedarë të vegjël memorie ose postare mund të arrijnë kufirin ndërsa hapësira në disk duket ende e lirë. Lexo më shumë: ⟦L0⟧ · ⟦L1⟧.

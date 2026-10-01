@@ -1,0 +1,1 @@
+A fiókbeállításokban kezelheti a profilt, és ahol elérhető, az értesítési beállításokat. Számlázási e-mailek esetén tartsa naprakészen e-mail-címét.

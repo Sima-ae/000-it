@@ -1,0 +1,1 @@
+Sí. Arreglamos registros, propagación, autenticación de correo y conexiones de dominio hasta que el DNS vuelva a ser correcto. Leer más: ⟦L0⟧ · ⟦L1⟧.

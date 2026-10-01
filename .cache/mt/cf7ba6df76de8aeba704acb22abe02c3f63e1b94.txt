@@ -1,0 +1,1 @@
+Lorsque les projets sont répertoriés sur le portail, vous pouvez voir le statut et la communication. Sinon, nous vous tiendrons informés via des tickets ou des mises à jour de sprint.

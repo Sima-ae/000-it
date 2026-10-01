@@ -1,0 +1,1 @@
+Serverët e emrave përcaktojnë se cili sistem DNS i shërben domenit tuaj. Nëse i ndryshoni ato, duhet të vendosni sërish saktë të dhënat A/MX/TXT në hostin e ri DNS. Lexo më shumë: ⟦L0⟧ · ⟦L1⟧.

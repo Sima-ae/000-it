@@ -1,0 +1,1 @@
+Da. Bavimo se sigurnosnom kopijom, migracijom, DNS preklopom, SSL i smoke testovima, uz minimalno vrijeme zastoja. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

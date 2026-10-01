@@ -1,0 +1,1 @@
+Cloud hosting daje više resursa i skalabilnosti od klasičnog zajedničkog, a mi nastavljamo upravljati njime. Idealno kada dijeljenje postane tijesno, ali puni VPS još nije potreban. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

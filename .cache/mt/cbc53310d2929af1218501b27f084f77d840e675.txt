@@ -1,0 +1,1 @@
+Koristimo firewall, SSL, ažuriranja, praćenje i učvršćivanje. Dodatni sigurnosni slojevi dostupni su tamo gdje je potrebno. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+DNSSEC allekirjoittaa DNS-vastaukset, joten manipulointi on vaikeampaa. Voimme ottaa sen käyttöön siellä, missä TLD ja asetukset tukevat sitä. Lue lisää: ⟦L0⟧.

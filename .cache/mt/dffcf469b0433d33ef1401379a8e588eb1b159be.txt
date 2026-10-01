@@ -1,0 +1,1 @@
+Ezek DNS-rekordok, amelyek kezelik az e-mail hitelesítést, és csökkentik a hamisítást/spam-eket. Megfelelő nyilvántartás nélkül a levelek gyakrabban kerülnek spambe. Bővebben: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

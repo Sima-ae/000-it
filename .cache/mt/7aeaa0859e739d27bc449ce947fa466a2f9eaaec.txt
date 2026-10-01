@@ -1,0 +1,1 @@
+Da. SSL je standardan u našim relevantnim planovima hostinga tako da web lokacije rade na HTTPS-u. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

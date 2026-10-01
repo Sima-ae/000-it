@@ -1,0 +1,1 @@
+Ja, der det er relevant: iscenesettelse for anmeldelser og tester, deretter kontrollert distribusjon til produksjon.

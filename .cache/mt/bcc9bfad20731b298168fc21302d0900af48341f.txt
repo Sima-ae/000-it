@@ -1,0 +1,1 @@
+Käytä paneelissasi olevia IMAP/SMTP-tietoja. Androidille (ja vastaavasti iOS:lle) vaiheet ovat tietokannassa. Lue lisää: ⟦L0⟧ · ⟦L1⟧.

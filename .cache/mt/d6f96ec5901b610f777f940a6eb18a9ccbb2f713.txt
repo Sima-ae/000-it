@@ -1,0 +1,1 @@
+Jsou to DNS záznamy, které zajišťují ověřování e-mailů a snižují spoofing/spam. Bez správných záznamů se pošta častěji dostává do spamu. Přečtěte si více: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

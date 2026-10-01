@@ -1,0 +1,1 @@
+Namnservrar avgör vilket DNS-system som betjänar din domän. Om du ändrar dem måste du ställa in A/MX/TXT-poster korrekt igen på den nya DNS-värden. Läs mer: ⟦L0⟧ · ⟦L1⟧.

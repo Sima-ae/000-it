@@ -1,0 +1,1 @@
+Jaetut osakkeet resurssit; VPS eristää enemmän CPU/RAM-muistia; omistettu on kokonainen palvelin. Valitse liikenteen, ohjaustarpeiden ja budjetin mukaan. Lue lisää: ⟦L0⟧ · ⟦L1⟧.

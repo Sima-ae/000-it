@@ -1,0 +1,1 @@
+Verifique a página de status, propagação de DNS, atualizações recentes, espaço em disco e se o erro é reproduzível. Isso acelera o diagnóstico. Leia mais: ⟦L0⟧ · ⟦L1⟧.

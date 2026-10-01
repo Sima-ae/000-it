@@ -1,0 +1,1 @@
+Das hängt vom Paket und Setup ab. Wir empfehlen zuverlässige Mail-Lösungen und stellen DNS richtig ein (SPF, DKIM und DMARC). Weiterlesen: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Ja. Durch die Domain-Weiterleitung werden Besucher zu einer anderen URL weitergeleitet – nützlich für Markennamen ohne separate Website. Wir passen DNS und Weiterleitungen an Ihr Setup an. Weiterlesen: ⟦L0⟧ · ⟦L1⟧.

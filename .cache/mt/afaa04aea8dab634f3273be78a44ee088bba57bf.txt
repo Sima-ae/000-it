@@ -1,0 +1,1 @@
+po. SSL është standard në planet tona përkatëse të pritjes. Lexo më shumë: ⟦L0⟧Çfarë është SSL?⟦/L0⟧ · ⟦L1⟧Instalo Let's Encrypt⟦/L1⟧.

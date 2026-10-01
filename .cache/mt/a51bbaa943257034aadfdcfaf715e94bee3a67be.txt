@@ -1,0 +1,1 @@
+Sprawdź DNS (MX/SPF/DKIM/DMARC), limit skrzynki pocztowej i czy dostawcy blokują pocztę. Pomagamy prześledzić cały łańcuch. Przeczytaj więcej: ⟦L0⟧ · ⟦L1⟧.

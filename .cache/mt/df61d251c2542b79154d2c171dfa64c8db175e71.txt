@@ -1,0 +1,1 @@
+Następnie skalujemy do Plus, Business, Cloud lub VPS i optymalizujemy buforowanie i CDN, aby witryna mogła wytrzymać rozwój. Przeczytaj więcej: ⟦L0⟧ · ⟦L1⟧.

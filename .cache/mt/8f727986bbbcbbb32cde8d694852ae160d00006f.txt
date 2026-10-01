@@ -1,0 +1,1 @@
+Měříme LCP, INP a CLS, řešíme těžká aktiva, hosting/cachování a problémy s tématy a tam, kde je to užitečné, propojujeme toto s CDN. Přečtěte si více: ⟦L0⟧ · ⟦L1⟧.

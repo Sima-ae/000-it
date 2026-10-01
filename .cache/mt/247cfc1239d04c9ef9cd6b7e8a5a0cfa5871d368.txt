@@ -1,0 +1,1 @@
+Na stavové stránce zobrazujeme incidenty a údržbu týkající se hostingu a souvisejících služeb, abyste mohli rychle zjistit, zda se něco děje. Přečtěte si více: ⟦L0⟧.

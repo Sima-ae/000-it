@@ -1,0 +1,1 @@
+Bei der DNS-/Domainverwaltung wählen Sie unsere Nameserver oder externe (zum Beispiel ein CDN). Die Vermehrung kann Stunden bis zu einem Tag dauern. Weiterlesen: ⟦L0⟧ · ⟦L1⟧.

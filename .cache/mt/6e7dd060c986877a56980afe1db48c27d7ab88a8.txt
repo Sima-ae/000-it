@@ -1,0 +1,1 @@
+Un registro MX le indica a Internet qué servidor de correo puede recibir correo electrónico para su dominio. Sin un MX correcto no llega ningún correo. Leer más: ⟦L0⟧ · ⟦L1⟧.

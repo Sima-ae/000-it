@@ -1,0 +1,1 @@
+Kayıt defterinin izin verdiği durumlarda gizlilik/Koruma Kimliğini düşünebilirsiniz. Kurallar uzantılarına göre farklılık gösterir; örneğin .nl'nin kendi çerçevesi vardır. Devamını oku: ⟦L0⟧.

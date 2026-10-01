@@ -1,0 +1,1 @@
+Regisztráció és átvitel a domain oldalon vagy az üzleten keresztül; kezelés (DNS, számlák, megújítás) az ügyfélkapun él. Bővebben: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

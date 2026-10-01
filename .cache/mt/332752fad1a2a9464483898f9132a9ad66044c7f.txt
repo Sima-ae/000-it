@@ -1,0 +1,1 @@
+Evet, daha hızlı küresel dağıtım için, ilgili olduğu yerde (WP barındırma planlarına genellikle ücretsiz bir CDN dahildir). Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

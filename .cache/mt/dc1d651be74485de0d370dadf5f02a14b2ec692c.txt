@@ -1,0 +1,1 @@
+是的。您按照 Microsoft 的说明设置 MX 和身份验证记录 (SPF/DKIM/DMARC)；我们在 DNS 方面提供帮助。了解更多：⟦L0⟧·⟦L1⟧。

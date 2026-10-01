@@ -1,0 +1,1 @@
+Este un cod unic de la registratorul actual care începe în siguranță un transfer de domeniu. Fără un cod valid, transferul nu poate continua. Citește mai mult: ⟦L0⟧ · ⟦L1⟧.

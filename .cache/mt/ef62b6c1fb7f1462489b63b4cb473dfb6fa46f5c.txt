@@ -1,0 +1,1 @@
+Web-mjesta prema zadanim postavkama koriste HTTPS. Tijekom migracija forsiramo HTTPS i rješavamo miješani sadržaj. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

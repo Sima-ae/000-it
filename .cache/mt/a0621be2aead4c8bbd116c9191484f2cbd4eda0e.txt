@@ -1,0 +1,1 @@
+Ja, det är det vanliga flödet: domän + hosting i kundvagnen, sedan DNS-anslutning. Läs mer: ⟦L0⟧ · ⟦L1⟧.

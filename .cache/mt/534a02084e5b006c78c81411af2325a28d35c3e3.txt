@@ -1,0 +1,1 @@
+Zaključavanje sprečava neželjene transfere. Za selidbu često morate prvo isključiti kod trenutnog provajdera, a zatim započeti prijenos kod nas. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

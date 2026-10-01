@@ -12,12 +12,12 @@
         {
           "id": "gen-1",
           "question": "Co přesně TripleZero iT dělá?",
-          "answer": "TripleZero iT kombinuje webdesign, podporu WordPress, digitální marketing, viditelnost ve vyhledávání (AEO, GEO/local a SEO), design a hosting. Pomáháme značkám najít je rychleji, vytvářet lepší webové stránky a růst měřitelným způsobem."
+          "answer": "TripleZero iT kombinuje webdesign, podporu WordPress, digitální marketing, viditelnost ve vyhledávání (AEO, GEO/local a SEO), design a hosting. Pomáháme značkám najít je rychleji, vytvářet lepší webové stránky a růst měřitelným způsobem. [About us](/over-ons) · [Services](/diensten)"
         },
         {
           "id": "gen-2",
           "question": "Jak mohu začít s TripleZero iT?",
-          "answer": "Kontaktujte nás nebo si zarezervujte termín. Provedeme krátký příjem, zkontrolujeme cíle a sestavíme, poté připravíme konkrétní návrh s plánováním a KPI."
+          "answer": "Kontaktujte nás nebo si zarezervujte termín. Provedeme krátký příjem, zkontrolujeme cíle a sestavíme, poté připravíme konkrétní návrh s plánováním a KPI. [Schedule appointment](/afspraak) · [Contact](/contact)"
         },
         {
           "id": "gen-3",
@@ -73,6 +73,46 @@
           "id": "gen-13",
           "question": "Můžete převzít stávající dodavatele nebo s nimi spolupracovat?",
           "answer": "Ano. Plynule spolupracujeme s vývojáři, marketéry či agenturami, případně přebíráme údržbu a optimalizaci, aniž bychom zbytečně narušovali stávající práci."
+        },
+        {
+          "id": "gen-14",
+          "question": "Co je Agent 000 (asistent chatu)?",
+          "answer": "Agent 000 je náš digitální asistent na webu a v tocích podpory. Odpovídá na často kladené otázky, odkazuje na články znalostní báze a může vás odkázat na živý chat, vstupenku nebo schůzku, kdy je vhodnější lidská pomoc. Přečtěte si více: [Digital assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Chat, ticket or call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "gen-15",
+          "question": "Jak si naplánuji schůzku nebo zavolám?",
+          "answer": "Na stránce Schůzka si můžete vybrat čas, který vám vyhovuje. Pro rychlé dotazy můžete také využít live chat nebo tiket; telefonická schůzka je užitečná pro složitější procesy nebo příjem. Přečtěte si více: [Appointment](/afspraak) · [Call appointment explained](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)."
+        },
+        {
+          "id": "gen-16",
+          "question": "Kde mohu vidět stav vašich služeb?",
+          "answer": "Na stavové stránce zobrazujeme incidenty a údržbu týkající se hostingu a souvisejících služeb, abyste mohli rychle zjistit, zda se něco děje. Přečtěte si více: [Statuspage](/statuspage)."
+        },
+        {
+          "id": "gen-17",
+          "question": "Máte znalostní základnu?",
+          "answer": "Ano. Znalostní báze obsahuje manuály o doménách, DNS, e-mailu, hostingu, WordPressu, skenování AI, zabezpečení a dalších — s podrobným vysvětlením. Přečtěte si více: [Knowledge base](/kennisbank)."
+        },
+        {
+          "id": "gen-18",
+          "question": "Jak řešíte soukromí a soubory cookie?",
+          "answer": "Pracujeme s ohledem na GDPR: texty o ochraně osobních údajů, souhlas s formuláři a bannery cookie/režim souhlasu, kde je nutné sledování. Pro WordPress pomáháme se správným nastavením cookies. Přečtěte si více: [Cookie banner in WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress) · [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Privacy with forms](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren)."
+        },
+        {
+          "id": "gen-19",
+          "question": "Kde najdu vaše novinky a aktuality?",
+          "answer": "Na stránce novinek zveřejňujeme aktualizace o produktech, zabezpečení a tipy. V případě technických poruch zkontrolujte stavovou stránku. Přečtěte si více: [News](/nieuws) · [Statuspage](/statuspage)."
+        },
+        {
+          "id": "gen-20",
+          "question": "Kolik stojí spolupráce s vámi?",
+          "answer": "To závisí na kombinaci: hostingové a nákupní produkty mají pevné ceny; design, SEO, reklamy a držáky následují po příjmu. V obchodě vidíte balíčky; obdržíte návrh na přizpůsobení. Přečtěte si více: [Shop](/shop) · [Contact](/contact)."
+        },
+        {
+          "id": "gen-21",
+          "question": "Můžete také dělat pouze poradenství nebo audit?",
+          "answer": "Ano. Audity, skenování umělé inteligence, technické kontroly a sparringy lze provádět odděleně od procesu plného servisu. Můžete to udělat sami nebo se o to postaráme na nás. Přečtěte si více: [AI scan](/ai-scan) · [Services](/diensten)."
         }
       ]
     },
@@ -83,17 +123,17 @@
         {
           "id": "ai-1",
           "question": "Co je skenování AI na TripleZero iT?",
-          "answer": "Sken připravenosti AI posuzuje, jak dobře mohou tvoje stránky najít klasické vyhledávače, odpovědi AI a výsledky místního nebo geografického vyhledávání (AEO, GEO, SEO a technické základy)."
+          "answer": "Sken připravenosti AI posuzuje, jak dobře mohou tvoje stránky najít klasické vyhledávače, odpovědi AI a výsledky místního nebo geografického vyhledávání (AEO, GEO, SEO a technické základy). [What is the AI ​​scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Start AI scan](/ai-scan)"
         },
         {
           "id": "ai-2",
           "question": "Co přesně měří skenování AI?",
-          "answer": "Sken měří signály AEO, GEO/místní viditelnost, základy SEO, strukturu obsahu, ukazatele výkonu a připravenost AI. Získáváte skóre a konkrétní body zlepšení."
+          "answer": "Sken měří signály AEO, GEO/místní viditelnost, základy SEO, strukturu obsahu, ukazatele výkonu a připravenost AI. Získáváte skóre a konkrétní body zlepšení. [Explain scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)"
         },
         {
           "id": "ai-3",
           "question": "Jak často bych měl spouštět skenování AI?",
-          "answer": "Minimálně po velkých změnách webu nebo kampaních. U aktivních značek doporučujeme pravidelné skenování, například každé čtvrtletí, abyste zůstali viditelní ve výsledcích vyhledávání a umělé inteligence."
+          "answer": "Minimálně po velkých změnách webu nebo kampaních. U aktivních značek doporučujeme pravidelné skenování, například každé čtvrtletí, abyste zůstali viditelní ve výsledcích vyhledávání a umělé inteligence. [Start AI scan](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website)"
         },
         {
           "id": "ai-4",
@@ -118,12 +158,12 @@
         {
           "id": "ai-8",
           "question": "Jaká je připravenost AI pro mou značku?",
-          "answer": "Je to míra, do jaké jsou tvoje stránky, obsah a data nastaveny tak, aby systémy umělé inteligence mohly správně citovat, doporučovat a vysvětlovat vaši značku."
+          "answer": "Je to míra, do jaké jsou tvoje stránky, obsah a data nastaveny tak, aby systémy umělé inteligence mohly správně citovat, doporučovat a vysvětlovat vaši značku. [AI readiness in the scan](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)"
         },
         {
           "id": "ai-9",
           "question": "Můžete používat agenty AI na řídicím panelu?",
-          "answer": "Ano. Na klientském portálu vidíte agenty AI pro SEO, obsah, sociální sítě a reklamy – včetně stavu a úkolů."
+          "answer": "Ano. Na klientském portálu vidíte agenty AI pro SEO, obsah, sociální sítě a reklamy – včetně stavu a úkolů. [What are AI agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Agents in your account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)"
         },
         {
           "id": "ai-10",
@@ -144,6 +184,46 @@
           "id": "ai-13",
           "question": "Jak změřím ROI iniciativ AI?",
           "answer": "Prostřednictvím KPI, jako je návštěvnost, potenciální zákazníci, ušetřený čas, výstup obsahu, rozlišení lístků a konverze. Definujeme je předem v plánu, takže výsledky zůstanou viditelné."
+        },
+        {
+          "id": "ai-14",
+          "question": "Jak spustím skenování AI na svém webu?",
+          "answer": "Přejděte na skenování AI, zadejte svou adresu URL a spusťte analýzu. Získáváte skóre za AEO, GEO, SEO, výkon a připravenost AI plus body za zlepšení. Přečtěte si více: [Start AI scan](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website) · [AI scan page](/ai-scan)."
+        },
+        {
+          "id": "ai-15",
+          "question": "Jak si přečtu skóre skenování AI?",
+          "answer": "Každé skóre ukazuje, jak jste v dané oblasti silní; nízké skóre přichází s konkrétními tipy. Skenování používejte jako prioritní seznam, nikoli jako jednorázové „vysvědčení“. Přečtěte si více: [Explain scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Next steps](/kennisbank/ai-scan/welke-vervolgstappen-zet-ik-na-mijn-ai-scan)."
+        },
+        {
+          "id": "ai-16",
+          "question": "Jaký je rozdíl mezi skenováním AI a kompletním procesem AEO/GEO/SEO?",
+          "answer": "Skenování je rychlá diagnóza. Proces implementuje vylepšení: obsah, strukturovaná data, technické SEO, místní signály a měření v čase. Přečtěte si více: [Scan versus process](/kennisbank/ai-scan/ai-scan-versus-een-volledig-aeo-geo-seo-traject-wat-is-het-verschil) · [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-17",
+          "question": "Kde najdu ve svém účtu předchozí skenování AI?",
+          "answer": "Přihlášení zákazníci vidí předchozí skenování a analýzy na řídicím panelu (SEO analýza), takže můžete porovnávat pokrok. Přečtěte si více: [AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Account / dashboard](/dashboard)."
+        },
+        {
+          "id": "ai-18",
+          "question": "Co mám dělat po nízkém skóre AEO nebo GEO?",
+          "answer": "Upřednostněte časté dotazy, entity, strukturovaná data (AEO) a firemní profil Google / NAP / místní vstupní stránky (GEO). Pomáháme převést tento plán do implementace. Přečtěte si více: [Scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Local Discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "ai-19",
+          "question": "Jak fungují agenti AI na zákaznickém portálu?",
+          "answer": "Agenti AI podporují úkoly související se SEO, obsahem, sociálními sítěmi nebo reklamami. Otevřete si přehled ve svém účtu, uvidíte stav a můžete spouštět nebo pozastavovat agenty podle vašeho balíčku. Přečtěte si více: [What are AI agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Open agents](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)."
+        },
+        {
+          "id": "ai-20",
+          "question": "Je skenování AI zdarma?",
+          "answer": "K dispozici je přístupný záznam prostřednictvím stránky skenování AI; hlubší analýzy a procesy spadají pod služby nebo zálohy. Po skenování okamžitě uvidíte, zda je sledování užitečné. Přečtěte si více: [AI scan](/ai-scan) · [What is the AI ​​scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-21",
+          "question": "Pomáhá Agent 000 také s otázkami AI a SEO?",
+          "answer": "Ano. Agent 000 používá FAQ a znalostní databázi k zodpovězení otázek týkajících se AEO/GEO/SEO a skenování AI a odkazů na správné články nebo lidské sledování. Přečtěte si více: [Digital Assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [FAQ](/faq)."
         }
       ]
     },
@@ -154,17 +234,17 @@
         {
           "id": "seo-1",
           "question": "Jaký je rozdíl mezi AEO, GEO a SEO?",
-          "answer": "AEO (Answer Engine Optimization) se zaměřuje na odpovědi AI. GEO (Geographic Search Engine Optimization) posiluje místní a regionální viditelnost v Mapách, místních balíčcích a vyhledávání podle polohy. SEO optimalizuje pro klasické vyhledávače."
+          "answer": "AEO (Answer Engine Optimization) se zaměřuje na odpovědi AI. GEO (Geographic Search Engine Optimization) posiluje místní a regionální viditelnost v Mapách, místních balíčcích a vyhledávání podle polohy. SEO optimalizuje pro klasické vyhledávače. [How AEO, GEO and SEO are related](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen) · [What is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization)"
         },
         {
           "id": "seo-2",
           "question": "Proč nyní záleží na AEO/GEO?",
-          "answer": "Více hledajících získá odpovědi prostřednictvím AI a také vyhledávají lokálně („v mém okolí“). Bez AEO vám chybí citace AI; bez GEO vám chybí místní potenciální zákazníci – i když je klasické SEO solidní."
+          "answer": "Více hledajících získá odpovědi prostřednictvím AI a také vyhledávají lokálně („v mém okolí“). Bez AEO vám chybí citace AI; bez GEO vám chybí místní potenciální zákazníci – i když je klasické SEO solidní. [What is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant)"
         },
         {
           "id": "seo-3",
           "question": "Jak zahájíte zapojení do SEO?",
-          "answer": "Začneme technickým auditem, průzkumem klíčových slov a záměrů, analýzou nedostatků obsahu a plánem priorit spojených s KPI vašeho podnikání."
+          "answer": "Začneme technickým auditem, průzkumem klíčových slov a záměrů, analýzou nedostatků obsahu a plánem priorit spojených s KPI vašeho podnikání. [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)"
         },
         {
           "id": "seo-4",
@@ -174,7 +254,7 @@
         {
           "id": "seo-5",
           "question": "Děláte také lokální SEO?",
-          "answer": "Ano. Pracujeme na firemním profilu Google, místních vstupních stránkách, konzistenci NAP, recenzích a seskupení místního obsahu, abyste byli ve svém regionu lépe k nalezení."
+          "answer": "Ano. Pracujeme na firemním profilu Google, místních vstupních stránkách, konzistenci NAP, recenzích a seskupení místního obsahu, abyste byli ve svém regionu lépe k nalezení. [Improve local discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)"
         },
         {
           "id": "seo-6",
@@ -220,6 +300,36 @@
           "id": "seo-14",
           "question": "Pomáháte s mezinárodním SEO?",
           "answer": "Ano. Postaráme se o hreflang, průzkum trhu podle země nebo jazyka, lokalizaci obsahu a technická nastavení na více místech."
+        },
+        {
+          "id": "seo-15",
+          "question": "Co je to vlastně AEO?",
+          "answer": "AEO (Answer Engine Optimization) vytváří obsah, aby odpovědi AI a nástroje odpovědí mohly správně citovat vaši značku: jasné často kladené otázky, entity a strukturovaná data. Přečtěte si více: [What is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AEO, GEO and SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
+        },
+        {
+          "id": "seo-16",
+          "question": "Co je to GEO (geografické SEO)?",
+          "answer": "GEO posiluje místní a regionální dohledatelnost – mapy, místní balíčky a vyhledávání podle polohy – prostřednictvím GBP, konzistence NAP a místního obsahu. Přečtěte si více: [What is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant) · [Local discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "seo-17",
+          "question": "Jak si objednám nebo spustím SEO optimalizaci?",
+          "answer": "Začněte skenováním nebo auditem AI a poté návrhem s prioritami. SEO můžete také kombinovat s obsahem a technologiemi prostřednictvím obchodu/služeb nebo úložiště. Přečtěte si více: [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting) · [AI Scan](/ai-scan)."
+        },
+        {
+          "id": "seo-18",
+          "question": "Můžete pomoci se strukturovanými daty a plánem nejčastějších dotazů?",
+          "answer": "Ano. Vytváříme relevantní diagramy (FAQ, Organization, LocalBusiness, produkty) a strukturujeme obsah tak, aby vám vyhledávače a AI lépe rozuměly. Přečtěte si více: [AEO explanation](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AI scan scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)."
+        },
+        {
+          "id": "seo-19",
+          "question": "Co děláte s Core Web Vitals?",
+          "answer": "Měříme LCP, INP a CLS, řešíme těžká aktiva, hosting/cachování a problémy s tématy a tam, kde je to užitečné, propojujeme toto s CDN. Přečtěte si více: [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [Choose Hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "seo-20",
+          "question": "Dokážete spojit SEO s hostingem a péčí o WordPress?",
+          "answer": "Ano. Stabilní hosting, aktualizace a výkon tvoří základ; SEO na tom staví. Mnoho zákazníků kombinuje WP-care + hosting + průběžné SEO. Přečtěte si více: [Hosting](/diensten/categorie/hosting) · [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
         }
       ]
     },
@@ -291,6 +401,26 @@
           "id": "ads-13",
           "question": "Je remarketing stále relevantní?",
           "answer": "Ano, pokud je v souladu s ochranou osobních údajů a je spárován se silnými kreativami a nabídkami. Často zůstává nejúčinnější vrstvou v trychtýři."
+        },
+        {
+          "id": "ads-14",
+          "question": "Pomáháte s režimem souhlasu a bannery cookie pro reklamy?",
+          "answer": "Ano. Bez správného souhlasu a označení je měření reklam nespolehlivé. Úhledně propojujeme bannery, GTM/GA4 a pixely. Přečtěte si více: [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Cookie banner WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "ads-15",
+          "question": "Můžete vytvořit vstupní stránky pro kampaně?",
+          "answer": "Ano – rychlé vstupní stránky nebo stránky WordPress přizpůsobené záměru vyhledávání se základy sledování a CRO. Přečtěte si více: [Services](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "ads-16",
+          "question": "Jak předcházíte plýtvání rozpočtem na reklamu?",
+          "answer": "Úzká struktura účtu, vylučující klíčová slova, vyloučení publika, přizpůsobení vstupní stránky a týdenní optimalizace CPA/ROAS – nejen kliknutí."
+        },
+        {
+          "id": "ads-17",
+          "question": "Fungují reklamy dobře s AEO/SEO?",
+          "answer": "Ano. Reklamy poskytují rychlá data a provoz; SEO/AEO vytváří udržitelnou viditelnost. Statistiky z klíčových slov a kreativ podporují obsah a vstupní stránky. Přečtěte si více: [AEO, GEO and SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
         }
       ]
     },
@@ -362,6 +492,26 @@
           "id": "des-13",
           "question": "Kde se mohu dozvědět více o digitálním designu?",
           "answer": "Více informací je na /graficky-design a prostřednictvím služeb Grafický design v menu."
+        },
+        {
+          "id": "des-14",
+          "question": "Dodáváte také designové systémy a knihovny komponent?",
+          "answer": "Ano, pro značky, které chtějí konzistentně škálovat: tokeny, komponenty a dokumentace, aby marketing a produkt mluvily stejným jazykem."
+        },
+        {
+          "id": "des-15",
+          "question": "Dokážete digitalizovat stávající styl značky?",
+          "answer": "Ano. Překládáme tištěné nebo neúplné pokyny pro značky do barev, typografie, UI sady a šablon připravených pro web."
+        },
+        {
+          "id": "des-16",
+          "question": "Děláte UX výzkum nebo jen vizuální design?",
+          "answer": "Obě. Tam, kde je to nutné, začneme rozhovory, analýzou trychtýřů nebo teplotními mapami; pak UI. Tímto způsobem navrhujeme na základě chování, nejen podle vkusu."
+        },
+        {
+          "id": "des-17",
+          "question": "Můžete navrhovat sociální šablony a reklamní kreativy?",
+          "answer": "Ano – karusely, miniatury, příběhy a reklamní sady, které odpovídají cílům vaší značky a kampaně. Přečtěte si více: [Services](/diensten)."
         }
       ]
     },
@@ -433,6 +583,26 @@
           "id": "mkt-13",
           "question": "Jak zabráníte „zaneprázdněnému marketingu“ bez výsledků?",
           "answer": "Každá aktivita je vázána na KPI. Nevýkonné taktiky jsou zastaveny nebo vylepšeny pomocí dat, takže rozpočet jde na to, co funguje."
+        },
+        {
+          "id": "mkt-14",
+          "question": "Co je obvykle součástí marketingové schránky?",
+          "answer": "Kombinace strategie, obsahu nebo SEO, kampaní, přehledů a experimentů – přizpůsobená KPI. Zaznamenáváme rozsah a hodiny, aby priority zůstaly jasné. Přečtěte si více: [Shop](/shop) · [Contact](/contact)."
+        },
+        {
+          "id": "mkt-15",
+          "question": "Pomáháte s polohováním a zasíláním zpráv?",
+          "answer": "Ano. Jasné umístění, hodnotné rekvizity a kopie stránky zajišťují, že reklamy, SEO a prodej vyjadřují stejné poselství."
+        },
+        {
+          "id": "mkt-16",
+          "question": "Měříte marketing podle potrubí, nejen podle návštěvnosti?",
+          "answer": "Kde je to možné: potenciální zákazníci, SQL, tržby nebo asistované konverze. Upravujeme nebo zastavujeme dopravu bez kvality."
+        },
+        {
+          "id": "mkt-17",
+          "question": "Dokážete vyčistit marketingový zásobník a sledování?",
+          "answer": "Ano – GTM, GA4, pixely, odkazy CRM a souhlas. Čistá data jsou základem dobrých rozhodnutí. Přečtěte si více: [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen)."
         }
       ]
     },
@@ -504,6 +674,153 @@
           "id": "soc-13",
           "question": "Jak rychle zaznamenáme růst na sociálních sítích?",
           "answer": "Na důslednosti záleží. Výrazný růst obvykle trvá týdny až měsíce; s podporou reklam to jde často rychleji."
+        },
+        {
+          "id": "soc-14",
+          "question": "Pomáháte se sociálními důkazy a recenzemi?",
+          "answer": "Ano. Plánujeme žádosti o kontrolu, případy a formáty podobné UGC, které budují důvěru – bez falešného zapojení."
+        },
+        {
+          "id": "soc-15",
+          "question": "Můžete zřídit zaměstnaneckou advokacii?",
+          "answer": "Ano, zejména na LinkedIn: jednoduché pokyny, šablony a rytmus, aby tým viditelně sdílel odborné znalosti."
+        },
+        {
+          "id": "soc-16",
+          "question": "Jak propojíte sociální sítě s webem a obchodem?",
+          "answer": "Prostřednictvím UTM, vstupních stránek, produktových odkazů a retargetingu. Sociální síť je kanál v trychtýři, nikoli ostrov. Přečtěte si více: [Shop](/shop)."
+        }
+      ]
+    },
+    {
+      "id": "account-portaal",
+      "title": "Účet a portál",
+      "items": [
+        {
+          "id": "acc-1",
+          "question": "Jak se přihlásím na zákaznický portál?",
+          "answer": "Přejděte na účet/přihlášení a použijte e-mailovou adresu svého zákaznického účtu. Pokud jste ztratili data, použijte reset hesla nebo nás kontaktujte. Přečtěte si více: [Account](/dashboard) · [Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-2",
+          "question": "Co vidím na palubní desce?",
+          "answer": "V závislosti na vašich službách: vstupenky, projekty, faktury, AI skenování/agenti a rychlé odkazy na podporu. Přečtěte si více: [AI agents in account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account) · [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "acc-3",
+          "question": "Ztratil jsem své přihlašovací údaje – co teď?",
+          "answer": "Použijte „zapomněli jste heslo“ nebo postupujte podle kroků znalostní báze pro zákaznický panel. Pokud to nefunguje, otevřete tiket prostřednictvím známé kontaktní adresy. Přečtěte si více: [Lost login details](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-4",
+          "question": "Jak otevřu tiket z portálu?",
+          "answer": "V zákaznickém panelu vyberte podporu/vstupenky, popište svůj problém a přidejte důkazy (URL, screenshoty). Přečtěte si více: [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "acc-5",
+          "question": "Kde najdu své faktury?",
+          "answer": "Faktury si můžete prohlížet a stahovat na portálu v části fakturace/vyúčtování. Přečtěte si více: [Consult invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "acc-6",
+          "question": "Jak změním fakturační údaje nebo způsob platby?",
+          "answer": "Upravte název společnosti, DIČ a způsob platby v nastavení účtu tak, aby byly nové faktury správné. Přečtěte si více: [Change invoice details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "acc-7",
+          "question": "Mohou mít přístup i kolegové?",
+          "answer": "Ano, s rolemi účtů (klient, manažer, admin), takže více členů týmu může sledovat vstupenky nebo projekty, aniž by sdíleli vše."
+        },
+        {
+          "id": "acc-8",
+          "question": "Jsou skenování AI a agenti AI propojeni s mým účtem?",
+          "answer": "Ano. Skenování a agenti patří k vašemu zákaznickému účtu, takže historie a práva jsou zachovány. Přečtěte si více: [AI agents](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "acc-9",
+          "question": "Jak bezpečný je můj zákaznický účet?",
+          "answer": "Používejte jedinečná hesla a 2FA tam, kde jsou k dispozici (včetně na hostitelských panelech). Nesdílejte relace na sdílených počítačích. Přečtěte si více: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
+        },
+        {
+          "id": "acc-10",
+          "question": "Mohu sledovat stav projektu a výstupy?",
+          "answer": "Tam, kde jsou na portálu uvedeny projekty, můžete vidět stav a komunikaci. V opačném případě vás budeme informovat prostřednictvím lístků nebo aktualizací sprintu."
+        },
+        {
+          "id": "acc-11",
+          "question": "Jak propojím služby z obchodu se svým účtem?",
+          "answer": "Po zaplacení objednávky patří vašemu účtu; poskytování (hosting, doména) následuje automaticky nebo prostřednictvím onboardingu podporou. Přečtěte si více: [Shop](/shop)."
+        },
+        {
+          "id": "acc-12",
+          "question": "Kde nastavím upozornění nebo předvolby?",
+          "answer": "V nastavení účtu můžete spravovat profil a tam, kde jsou k dispozici, předvolby oznámení. V případě e-mailů s fakturami udržujte svou e-mailovou adresu aktuální."
+        }
+      ]
+    },
+    {
+      "id": "shop-bestellen",
+      "title": "Nakupovat a objednávat",
+      "items": [
+        {
+          "id": "shop-1",
+          "question": "Co si mohu v obchodě objednat?",
+          "answer": "Hosting balíčků, domén, produktů péče/podpory a dalších služeb, které nabízíme online. Přizpůsobené nabídky jsou vytvářeny prostřednictvím kontaktu. Přečtěte si více: [Shop](/shop) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "shop-2",
+          "question": "Jak funguje nákupní košík a pokladna?",
+          "answer": "Přidejte produkty, zkontrolujte období (měsíc/rok) a dokončete prostřednictvím pokladny. Poté obdržíte potvrzení a přístup ke svému účtu. Přečtěte si více: [Shopping cart](/shop/cart)."
+        },
+        {
+          "id": "shop-3",
+          "question": "Jsou ceny včetně DPH nebo bez?",
+          "answer": "V obchodě zobrazujeme ceny podle zobrazeného kontextu DPH (často včetně spotřebitelských toků). Faktura obsahuje rozpis čisté DPH pro firemní zákazníky."
+        },
+        {
+          "id": "shop-4",
+          "question": "Mohu platit měsíčně nebo ročně?",
+          "answer": "Mnoho produktů hostingu a péče má měsíční a roční možnosti. Ročně je často levnější; podrobnosti jsou na kartě produktu."
+        },
+        {
+          "id": "shop-5",
+          "question": "Jaké platební metody přijímáte?",
+          "answer": "Běžné online metody prostřednictvím pokladny (v závislosti na regionu). U podnikových faktur můžeme zajistit fakturaci na účet prostřednictvím kontaktu."
+        },
+        {
+          "id": "shop-6",
+          "question": "Dostanu přístup ihned po zaplacení?",
+          "answer": "U standardních hostingových/doménových produktů následuje zřízení rychle po úspěšné platbě. U vlastních služeb podpora plánuje zahájení."
+        },
+        {
+          "id": "shop-7",
+          "question": "Mohu upgradovat balíčky později?",
+          "answer": "Ano. S plánováním migrace je možné přejít ze sdíleného na cloud/VPS nebo ze základního na Plus/Business. Přečtěte si více: [Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [Choose package](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "shop-8",
+          "question": "Jak mohu kombinovat produkty obchodu s přizpůsobením?",
+          "answer": "Objednejte si hosting/péče online a naplánujte si design, SEO nebo reklamy prostřednictvím příjmu. Pokud je to možné, spojujeme fakturaci a účet. Přečtěte si více: [Contact](/contact)."
+        },
+        {
+          "id": "shop-9",
+          "question": "Co když moje objednávka nedorazí nebo uvízne?",
+          "answer": "Zkontrolujte svůj e-mail (včetně spamu) a portál. Pokud zůstane ticho, otevřete tiket nebo e-mailovou podporu s číslem objednávky. Přečtěte si více: [Contact](/contact) · [Tickets](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "shop-10",
+          "question": "Mohu si objednat doménu a hosting v jedné objednávce?",
+          "answer": "Ano, to je obvyklý postup: doména + hosting v nákupním košíku, poté připojení DNS. Přečtěte si více: [Domains](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "shop-11",
+          "question": "Existují balíčky pro WordPress Care?",
+          "answer": "Ano. Balíčky péče pokrývají aktualizace, monitorování a údržbu – samostatně nebo jako doplněk k hostingu. Přečtěte si více: [Shop](/shop)."
+        },
+        {
+          "id": "shop-12",
+          "question": "Jak zruším nebo změním objednávku?",
+          "answer": "Ihned po objednání prostřednictvím podpory; Poté se na produkt vztahují podmínky zrušení a změny. Pomůžeme s migrací nebo exportem, pokud zastavíte. Přečtěte si více: [Contact](/contact)."
         }
       ]
     },
@@ -514,12 +831,12 @@
         {
           "id": "sup-1",
           "question": "Jakou podporu nabízíte?",
-          "answer": "Nabízíme podporu WordPress, vlastní podporu webových stránek, vstupenky a živý chat, údržbu, zabezpečení, výkon a reakci na incidenty."
+          "answer": "Nabízíme podporu WordPress, vlastní podporu webových stránek, vstupenky a živý chat, údržbu, zabezpečení, výkon a reakci na incidenty. [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting) · [Chat, ticket or call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)"
         },
         {
           "id": "sup-2",
           "question": "Jak se dostanu k podpoře?",
-          "answer": "Prostřednictvím kontaktu, schůzky, lístků na řídicím panelu nebo živého chatu na webu. Urgentní případy jsou označeny jako prioritní."
+          "answer": "Prostřednictvím kontaktu, schůzky, lístků na řídicím panelu nebo živého chatu na webu. Urgentní případy jsou označeny jako prioritní. [Contact](/contact) · [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Call appointment](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)"
         },
         {
           "id": "sup-3",
@@ -529,7 +846,7 @@
         {
           "id": "sup-4",
           "question": "Nabízíte monitorování 24/7?",
-          "answer": "Ano, v příslušných balících podpory a hostingu: monitorování, zálohování a upozornění, aby byly problémy viditelné dříve."
+          "answer": "Ano, v příslušných balících podpory a hostingu: monitorování, zálohování a upozornění, aby byly problémy viditelné dříve. [Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup)"
         },
         {
           "id": "sup-5",
@@ -539,22 +856,22 @@
         {
           "id": "sup-6",
           "question": "Vyřizujete aktualizace WordPressu za nás?",
-          "answer": "Ano, prostřednictvím „Údržby a aktualizací“: jádro, pluginy a motivy se zálohou a kontrolami před a po aktualizaci."
+          "answer": "Ano, prostřednictvím „Údržby a aktualizací“: jádro, pluginy a motivy se zálohou a kontrolami před a po aktualizaci. [Site down after WP update](/kennisbank/hosting/website-down-na-update-wordpress)"
         },
         {
           "id": "sup-7",
           "question": "Pomáháte s problémy s hostingem?",
-          "answer": "Ano. Diagnostikujeme, migrujeme nebo optimalizujeme hosting, VPS a domény, dokud web opět nepoběží stabilně."
+          "answer": "Ano. Diagnostikujeme, migrujeme nebo optimalizujeme hosting, VPS a domény, dokud web opět nepoběží stabilně. [Move website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je)"
         },
         {
           "id": "sup-8",
           "question": "Co když můj web nefunguje?",
-          "answer": "Nahlaste to jako urgentní. Obnovujeme, kde je to možné, prostřednictvím záloh, kontrol serveru a opravy hotfix a průběžně vás informujeme o stavu."
+          "answer": "Nahlaste to jako urgentní. Obnovujeme, kde je to možné, prostřednictvím záloh, kontrol serveru a opravy hotfix a průběžně vás informujeme o stavu. [Backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [Check yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support)"
         },
         {
           "id": "sup-9",
           "question": "Existuje klientský portál?",
-          "answer": "Ano. Přihlášení klienti vidí dashboard, vstupenky, projekty a případně CRM nebo faktury."
+          "answer": "Ano. Přihlášení klienti vidí dashboard, vstupenky, projekty a případně CRM nebo faktury. [Ticket via customer panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel) · [Lost login?](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)"
         },
         {
           "id": "sup-10",
@@ -575,6 +892,56 @@
           "id": "sup-13",
           "question": "Mohu upgradovat podporu později?",
           "answer": "Ano. Můžete škálovat, když roste provoz, riziko nebo potřeby týmu."
+        },
+        {
+          "id": "sup-14",
+          "question": "Jaký je rozdíl mezi chatem, vstupenkou a schůzkou zavolat?",
+          "answer": "Chat je rychlý na krátké otázky; lístky jsou lepší pro technické případy s logy a následnými kontrolami; pro příjem nebo komplexní vysvětlení je vhodná telefonická domluva. Přečtěte si více: [Chat versus ticket versus call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "sup-15",
+          "question": "Jak vytvořím lístek podpory?",
+          "answer": "Přihlaste se do zákaznického panelu a otevřete tiket s jasnou URL, kroky a snímky obrazovky. Čím lepší informace, tím rychleji můžeme pomoci. Přečtěte si více: [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "sup-16",
+          "question": "Máte zálohy, pokud můj web přestane fungovat?",
+          "answer": "Ano, v závislosti na vašem hostingu nebo balíčku podpory. V případě výpadku obnovujeme ze záloh, kde je to možné, a vyšetřujeme příčinu. Přečtěte si více: [Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor)."
+        },
+        {
+          "id": "sup-17",
+          "question": "Co si mohu zkontrolovat, než zavolám na podporu?",
+          "answer": "Zkontrolujte stavovou stránku, šíření DNS, poslední aktualizace, místo na disku a zda je chyba reprodukovatelná. To urychluje diagnostiku. Přečtěte si více: [Do it yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support) · [Statuspage](/statuspage)."
+        },
+        {
+          "id": "sup-18",
+          "question": "Jak funguje live chat na webu?",
+          "answer": "Otevřete živý chat pomocí tlačítka chatu. Agent 000 nejprve pomáhá s FAQ/znalostní základnou; V případě složitějších nebo naléhavých záležitostí vás odkážeme na zaměstnance. Přečtěte si více: [Digital Assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Contact](/contact)."
+        },
+        {
+          "id": "sup-19",
+          "question": "Můžete pomoci s kritickou chybou WordPress?",
+          "answer": "Ano. Diagnostikujeme bílé obrazovky, kritické chyby PHP a konflikty pluginů se zálohováním a cílenou opravou. Přečtěte si více: [Critical Error WordPress](/kennisbank/wordpress/kritieke-fout-wordpress) · [Down after update](/kennisbank/hosting/website-down-na-update-wordpress)."
+        },
+        {
+          "id": "sup-20",
+          "question": "Můžete se dívat na dálku (TeamViewer atd.)?",
+          "answer": "V případě potřeby a se svolením pro problémy s plochou nebo panelem. Pro většinu hostingových záležitostí stačí přístup k panelu, DNS nebo WordPress. Přečtěte si více: [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "sup-21",
+          "question": "Jak zruším předplatné nebo službu?",
+          "answer": "Můžete zrušit prostřednictvím zákaznického panelu nebo podpory; věnujte pozornost výpovědním lhůtám ve vaší smlouvě. Pomůžeme vám úhledně dokončit data/export a přenos DNS. Přečtěte si více: [Contact](/contact) · [Account](/dashboard)."
+        },
+        {
+          "id": "sup-22",
+          "question": "Nabízíte balíčky péče o WordPress / údržbu?",
+          "answer": "Ano. Aktualizace, zálohy, bezpečnostní kontroly a výkon jsou součástí balíčků péče – ideální doplněk k hostingu. Přečtěte si více: [Shop](/shop) · [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren)."
+        },
+        {
+          "id": "sup-23",
+          "question": "Co když e-mail náhle přestane fungovat?",
+          "answer": "Zkontrolujte DNS (MX/SPF/DKIM/DMARC), kvótu poštovní schránky a zda Microsoft nebo poskytovatelé blokují poštu. Pomáháme měřit řetěz. Přečtěte si více: [Email Problems](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
         }
       ]
     },
@@ -585,7 +952,7 @@
         {
           "id": "web-1",
           "question": "Tvoříte pouze WordPress stránky?",
-          "answer": "Ne. Kromě WordPressu děláme vlastní webdesign v HTML/CSS/JS, PHP a Next.js — odděleně od služeb WordPress."
+          "answer": "Ne. Kromě WordPressu děláme vlastní webdesign v HTML/CSS/JS, PHP a Next.js — odděleně od služeb WordPress. [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [Services](/diensten)"
         },
         {
           "id": "web-2",
@@ -635,7 +1002,7 @@
         {
           "id": "web-11",
           "question": "Co výkon po spuštění?",
-          "answer": "Optimalizujeme Core Web Vitals, caching nebo CDN a monitoring. Následná péče pak pokračuje prostřednictvím balíčků údržby."
+          "answer": "Optimalizujeme Core Web Vitals, caching nebo CDN a monitoring. Následná péče pak pokračuje prostřednictvím balíčků údržby. [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)"
         },
         {
           "id": "web-12",
@@ -651,87 +1018,349 @@
           "id": "web-14",
           "question": "Pomáháte s optimalizací konverzí na místě?",
           "answer": "Ano. Provádíme A/B testy, vylepšení uživatelského prostředí, formuláře, výzvy k akci a rychlost stránek, aby konverze provedlo více návštěvníků."
+        },
+        {
+          "id": "web-15",
+          "question": "Stavíte také internetové obchody?",
+          "answer": "Ano, od marketingových webů s integrací pokladny po elektronický obchod na WordPress nebo přizpůsobení. Při příjmu koordinujeme rozsah, platby a plnění. Přečtěte si více: [Services](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "web-16",
+          "question": "Jak nakládáte s texty o ochraně osobních údajů na stránkách?",
+          "answer": "Poradíme a implementujeme toky ochrany soukromí a souhlasu pro formuláře a bannery, které jsou v případě potřeby přizpůsobeny vašemu právníkovi. Přečtěte si více: [Privacy with forms](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren) · [Cookie banner](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "web-17",
+          "question": "Poskytujete inscenační prostředí?",
+          "answer": "Ano, tam, kde je to relevantní: příprava pro kontroly a testy, poté řízené nasazení do výroby."
+        },
+        {
+          "id": "web-18",
+          "question": "Můžete převzít a vylepšit stávající web WordPress?",
+          "answer": "Ano — audit, aktualizace, bezpečnost, rychlost, UX a SEO, bez zbytečného budování od nuly. Přečtěte si více: [WP move](/kennisbank/domeinnamen/wordpress-website-verhuizen) · [Critical errors](/kennisbank/wordpress/kritieke-fout-wordpress)."
+        },
+        {
+          "id": "web-19",
+          "question": "A co HTTP na HTTPS po doručení?",
+          "answer": "Weby mají výchozí HTTPS. Během migrací vynucujeme HTTPS a řešíme smíšený obsah. Přečtěte si více: [HTTP to HTTPS in WordPress](/kennisbank/wordpress/wordpress-url-omzetten-van-http-naar-https) · [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig)."
+        }
+      ]
+    },
+    {
+      "id": "domeinen",
+      "title": "Domény",
+      "items": [
+        {
+          "id": "dom-1",
+          "question": "Co je název domény?",
+          "answer": "Název domény je adresa, kterou návštěvníci používají k nalezení vašeho webu (například example.com). Navazuje na DNS záznamy, které ukazují na váš hosting nebo e-mail. Přečtěte si více: [Domain registration](/kennisbank/domeinnamen/domeinnaamregistratie) · [Order domains](/domeinen)."
+        },
+        {
+          "id": "dom-2",
+          "question": "Jak si u vás zaregistruji doménové jméno?",
+          "answer": "Vyhledejte název na stránce domén, vyberte rozšíření a dokončete platbu v obchodě. Po registraci spravujete DNS, nameservery a faktury ve svém účtu. Přečtěte si více: [Domains](/domeinen) · [Registration guide](/kennisbank/domeinnamen/domeinnaamregistratie) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-3",
+          "question": "Mohu k vám převést svou doménu?",
+          "answer": "Ano. Vyžádejte si od svého současného registrátora autorizační (EPP) kód, odemkněte jakýkoli zámek převodu a poté s námi spusťte převod. Poté správně nastavíme DNS a nameservery. Přečtěte si více: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Authorisation code](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-4",
+          "question": "Co je autorizační kód (EPP/Auth kód)?",
+          "answer": "Jedná se o jednorázový kód od vašeho současného registrátora, který bezpečně zahájí převod domény. Bez platného kódu nemůže přenos pokračovat. Přečtěte si více: [What is an authorisation code?](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen)."
+        },
+        {
+          "id": "dom-5",
+          "question": "Co je to převodový zámek nebo registrátorský zámek?",
+          "answer": "Zámek zabraňuje nechtěným přenosům. Pro stěhování je často nutné jej nejprve vypnout u aktuálního poskytovatele a poté zahájit převod s námi. Přečtěte si více: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Support](/contact)."
+        },
+        {
+          "id": "dom-6",
+          "question": "Mohu si koupit doménu bez hostingu?",
+          "answer": "Ano. Můžete si zaregistrovat nebo převést pouze doménu a později přidat hosting nebo e-mail. Mezitím již můžete spravovat nebo předávat DNS. Přečtěte si více: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-7",
+          "question": "Které přípony (.nl, .com, …) mohu zaregistrovat?",
+          "answer": "Podporujeme běžné TLD jako .nl a .com plus mnoho mezinárodních rozšíření. Dostupnost a cena se okamžitě zobrazí ve vyhledávání domény. Přečtěte si více: [Domains](/domeinen) · [Registration](/kennisbank/domeinnamen/domeinnaamregistratie)."
+        },
+        {
+          "id": "dom-8",
+          "question": "Jak mohu obnovit své doménové jméno?",
+          "answer": "Obnovení probíhá prostřednictvím faktur a vašeho klientského portálu; často je k dispozici automatické obnovení. Udržujte platební údaje aktuální, abyste předešli vypršení platnosti. Přečtěte si více: [Invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails) · [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "dom-9",
+          "question": "Co jsou prémiová doménová jména?",
+          "answer": "Prémiová jména jsou krátké nebo oblíbené domény s vyšší pořizovací cenou, často prostřednictvím aftermarketu. Dostupnost a podmínky se liší podle rozšíření. Přečtěte si více: [Premium domains](/kennisbank/domeinnamen/premium-domeinnamen) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-10",
+          "question": "Mohu si svou doménu zaregistrovat anonymně (Protect ID)?",
+          "answer": "Tam, kde to registr umožňuje, můžete zvážit soukromí/Protect ID. Pravidla se liší příponou — například .nl má svůj vlastní rámec. Přečtěte si více: [Protect ID](/kennisbank/domeinnamen/protect-id-domein-anoniem-registreren)."
+        },
+        {
+          "id": "dom-11",
+          "question": "Moje doména je v karanténě – co teď?",
+          "answer": "Po smazání může doména vstoupit do karantény. V závislosti na registru jej můžete často za poplatek znovu aktivovat; nečekejte příliš dlouho. Přečtěte si více: [Domain out of quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-12",
+          "question": "Moje nové doménové jméno zatím nefunguje – co teď?",
+          "answer": "Obvykle se jedná o šíření DNS, chybějící A/MX záznamy nebo zatím neaktualizované nameservery. Zkontrolujte záznamy a nechte vypršení platnosti TTL. Přečtěte si více: [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-13",
+          "question": "Jak připojím doménu ke svému hostingovému plánu?",
+          "answer": "Přidejte doménu do svého panelu nebo účtu a nasměrujte DNS (záznam A nebo nameservery) na hosting. Pomáháme s prvním připojením po objednávce. Přečtěte si více: [Connect domain to plan](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-14",
+          "question": "Mohu přesměrovat doménu?",
+          "answer": "Ano. Přesměrování domény přesměruje návštěvníky na jinou adresu URL – užitečné pro značky bez samostatného webu. Přizpůsobíme DNS a přesměrování vašemu nastavení. Přečtěte si více: [Forward a domain](/kennisbank/domeinnamen/domeinnaam-doorsturen) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-15",
+          "question": "Jak změním jmenné servery pro svou doménu?",
+          "answer": "Ve správě DNS/domény si vyberete naše nameservery nebo externí (například CDN). Množení může trvat hodiny až den. Přečtěte si více: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-16",
+          "question": "Kolik stojí doménové jméno?",
+          "answer": "Ceny se liší podle prodloužení a období; vyhledávání domény zobrazuje aktuální ceny registrace a obnovy. Prémiová jména mají samostatnou cenu. Přečtěte si více: [Domains](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-17",
+          "question": "Musí být hosting a doména u stejného poskytovatele?",
+          "answer": "Ne, ale je to jednodušší: DNS, SSL, e-mail a podpora pak sedí s jednou stranou. Můžete si také ponechat pouze DNS u nás a hostovat jinde. Přečtěte si více: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "dom-18",
+          "question": "Mohu spravovat více domén na jednom účtu?",
+          "answer": "Ano. Extra domény lze zaregistrovat nebo převést a propojit jako addon, zaparkovat nebo přeposlat – v rámci limitů vašeho hostingového plánu. Přečtěte si více: [Domains](/domeinen) · [Choose a hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "dom-19",
+          "question": "Co se stane, když platnost mé domény vyprší?",
+          "answer": "Po vypršení často následuje období odkladu nebo karantény, kdy je zotavení stále možné; poté si to může nárokovat někdo jiný. Obnovte včas prostřednictvím faktur. Přečtěte si více: [Quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-20",
+          "question": "Kde si mohu objednat nebo spravovat domény?",
+          "answer": "Zaregistrujte se a převeďte prostřednictvím stránky domény nebo obchodu; správa (DNS, faktury, obnova) žije v klientském portálu. Přečtěte si více: [Domains](/domeinen) · [Shop](/shop) · [Account](/dashboard)."
         }
       ]
     },
     {
       "id": "webhosting",
-      "title": "Webhosting a domény",
+      "title": "Webhosting",
       "items": [
         {
           "id": "host-1",
           "question": "Jaký hosting nabízíte?",
-          "answer": "Nabízíme sdílený hosting, WordPress hosting a VPS — v Basic, Plus a Business úrovních — plus domény."
+          "answer": "Nabízíme sdílený hosting, cloud hosting, WordPress hosting a VPS — plus registraci domény. Vyberte si na základě návštěvnosti, zásobníku a růstu. Přečtěte si více: [Shared hosting](/diensten/shared-hosting) · [Cloud hosting](/diensten/cloud-hosting) · [WordPress hosting](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-2",
-          "question": "Jaký je rozdíl mezi sdílenými, WordPress a VPS?",
-          "answer": "Sdílené je nákladově efektivní pro menší weby. WordPress hosting je optimalizován pro WP. VPS poskytuje více zdrojů a kontroly pro větší zatížení."
+          "question": "Jaký je rozdíl mezi sdílenými, cloudovými, WordPress a VPS?",
+          "answer": "Sdílené je nákladově efektivní pro menší weby. Cloud poskytuje více zdrojů a škálovatelnosti, plně spravované. WordPress hosting je optimalizován pro WP. VPS poskytuje větší kontrolu pro větší zatížení. Přečtěte si více: [Differences explained](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps) · [Shared plans](/kennisbank/hosting/wat-is-shared-hosting-basic-plus-en-business) · [VPS plans](/kennisbank/hosting/wat-is-vps-hosting-basic-plus-en-business)."
         },
         {
           "id": "host-3",
-          "question": "Pomáháte s registrací domény?",
-          "answer": "Ano. Poradíme, registrujte nebo převeďte doménu a správně připojte DNS."
+          "question": "Co je to cloud hosting s vámi?",
+          "answer": "Cloudový hosting poskytuje více zdrojů a škálovatelnosti než klasický sdílený, přičemž jej stále spravujeme. Ideální, když je sdílení těsné, ale plné VPS ještě není potřeba. Přečtěte si více: [Cloud hosting](/diensten/cloud-hosting) · [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
         },
         {
           "id": "host-4",
           "question": "Je SSL součástí hostingu?",
-          "answer": "Ano. SSL je standardem v našich příslušných hostingových plánech."
+          "answer": "Ano. SSL je standardní v našich příslušných hostingových plánech, takže weby běží na HTTPS. Přečtěte si více: [What is SSL?](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [Install Let's Encrypt](/kennisbank/hosting/hoe-installeer-ik-een-gratis-lets-encrypt-ssl-certificaat)."
         },
         {
           "id": "host-5",
           "question": "Můžete migrovat mé stránky na váš hosting?",
-          "answer": "Ano. Zvládáme zálohování, migraci, DNS cutover, SSL a kouřové testy s minimálními prostoji."
+          "answer": "Ano. Zvládáme zálohování, migraci, DNS cutover, SSL a kouřové testy s minimálními prostoji. Přečtěte si více: [Migrate website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je) · [Migrate WordPress](/kennisbank/domeinnamen/wordpress-website-verhuizen)."
         },
         {
           "id": "host-6",
           "question": "Jak fungují zálohy na hostingu?",
-          "answer": "To závisí na plánu: jednoduché nebo automatické zálohování. K dispozici je další uchovávání mimo pracoviště."
+          "answer": "To závisí na plánu: jednoduché nebo automatické zálohování. K dispozici je další uchovávání mimo pracoviště. Přečtěte si více: [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor) · [Backup in DirectAdmin](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
         },
         {
           "id": "host-7",
           "question": "Co když budu mít větší provoz?",
-          "answer": "Poté škálujeme na Plus, Business nebo VPS a optimalizujeme ukládání do mezipaměti a CDN, aby web zvládl růst."
+          "answer": "Poté škálujeme na Plus, Business, cloud nebo VPS a optimalizujeme ukládání do mezipaměti a CDN, aby web zvládl růst. Přečtěte si více: [When to move to VPS?](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)."
         },
         {
           "id": "host-8",
-          "question": "Nabízíte email s doménami?",
-          "answer": "To záleží na balíčku a nastavení. Poradíme spolehlivá poštovní řešení a správně nastavíme DNS (SPF, DKIM a DMARC)."
+          "question": "Jak bezpečný je váš hosting?",
+          "answer": "Používáme firewall, SSL, aktualizace, monitoring a hardening. V případě potřeby jsou k dispozici další bezpečnostní vrstvy. Přečtěte si více: [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
         },
         {
           "id": "host-9",
-          "question": "Jak bezpečný je váš hosting?",
-          "answer": "Používáme firewall, SSL, aktualizace, monitoring a hardening. Další bezpečnostní služby mohou přidat další vrstvy navrch."
+          "question": "Mohu později přejít ze sdíleného na VPS?",
+          "answer": "Ano. Migraci plánujeme společně, včetně testů a rollbacku, takže přepínač zůstane pod kontrolou. Přečtěte si více: [Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [VPS hosting](/diensten/vps-hosting)."
         },
         {
           "id": "host-10",
-          "question": "Mohu později přejít ze sdíleného na VPS?",
-          "answer": "Ano. Migraci plánujeme společně, včetně testů a rollbacku, takže přepínač zůstane pod kontrolou."
+          "question": "Podporujete CDN?",
+          "answer": "Ano, tam, kde je to relevantní – často je zdarma CDN součástí hostingových plánů WP – pro rychlejší globální doručení. Přečtěte si více: [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [WordPress hosting](/diensten/wordpress-hosting)."
         },
         {
           "id": "host-11",
-          "question": "Podporujete CDN?",
-          "answer": "Ano, tam, kde je to relevantní – často je zdarma CDN součástí hostingových plánů WP – pro rychlejší globální doručení."
+          "question": "Jaký je váš přístup k dostupnosti?",
+          "answer": "Monitorujeme, rychle reagujeme na incidenty a jasně komunikujeme kolem oken údržby, abyste věděli, co se děje. Aktualizace stavu jsou na stránce stavu. Přečtěte si více: [Status page](/statuspage) · [Contact](/contact)."
         },
         {
           "id": "host-12",
-          "question": "Jaký je váš přístup k dostupnosti?",
-          "answer": "Monitorujeme, rychle reagujeme na incidenty a jasně komunikujeme kolem oken údržby, abyste věděli, co se děje."
+          "question": "Jak si mohu vybrat ten správný hostingový plán?",
+          "answer": "Na základě provozu, zásobníku (WordPress nebo vlastní), zdrojů a růstu. Radíme poctivě – nepřeprodáváme. Přečtěte si více: [Choose the right hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Shared vs WP vs VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
         },
         {
           "id": "host-13",
-          "question": "Pomáháte řešit problémy s DNS?",
-          "answer": "Ano. Opravujeme záznamy, šíření, ověřování pošty a připojení k doménám, dokud není DNS opět správné."
+          "question": "Kde mohu vidět ceny hostingu?",
+          "answer": "Na stránkách hostingových služeb a v obchodě, případně s měsíčními nebo ročními možnostmi. Přečtěte si více: [Shared](/diensten/shared-hosting) · [Cloud](/diensten/cloud-hosting) · [WordPress](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting) · [Shop](/shop)."
         },
         {
           "id": "host-14",
-          "question": "Jak si mohu vybrat správný hostingový plán?",
-          "answer": "Na základě provozu, zásobníku (WordPress nebo vlastní), zdrojů a růstu. Radíme poctivě – nepřeprodáváme."
+          "question": "Získám přístup SSH na svůj hosting?",
+          "answer": "To záleží na plánu. U mnoha plánů je SSH k dispozici nebo může být požadováno; na VPS obvykle získáte plný přístup. Přečtěte si více: [SSH access](/kennisbank/hosting/heb-ik-ssh-toegang-op-mijn-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-15",
-          "question": "Kde mohu vidět ceny hostingu?",
-          "answer": "Na stránkách hostingových služeb v části Služby → Webhosting a domény, případně s měsíčními nebo ročními možnostmi."
+          "question": "Jak nainstaluji WordPress na váš hosting?",
+          "answer": "Přes ovládací panel (například DirectAdmin/Installatron) nebo ručně. Máme pro vás návod krok za krokem. Přečtěte si více: [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-16",
+          "question": "Co jsou inody a proč můj plán vypadá „plný“?",
+          "answer": "Inody počítají soubory/složky, nejen GB. Mnoho malých souborů mezipaměti nebo pošty může narazit na limit, zatímco místo na disku stále vypadá volné. Přečtěte si více: [Inodes](/kennisbank/hosting/inodes-en-inode-limieten) · [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-17",
+          "question": "Co znamená „neomezené“ úložiště nebo provoz?",
+          "answer": "„Neomezené“ následuje po fair use: normální používání webu je v pořádku; zneužití nebo extrémní zatížení může být omezeno, aby byla plošina stabilní. Přečtěte si více: [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-18",
+          "question": "Jaký je rozdíl mezi sdíleným, VPS a vyhrazeným?",
+          "answer": "Sdílené akcie zdrojů; VPS izoluje více CPU/RAM; vyhrazený je celý server. Vyberte si podle provozu, potřeb kontroly a rozpočtu. Přečtěte si více: [Dedicated vs VPS vs shared](/kennisbank/infrastructuur-servers/verschil-tussen-dedicated-vps-en-shared-hosting) · [Shared/WP/VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
+        },
+        {
+          "id": "host-19",
+          "question": "Jak mohu pracovat s DirectAdmin?",
+          "answer": "DirectAdmin je ovládací panel pro e-mail, DNS, databáze, zálohy a instalace. Přihlaste se pomocí přihlašovacích údajů panelu; důrazně doporučujeme 2FA. Přečtěte si více: [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Backups](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
+        },
+        {
+          "id": "host-20",
+          "question": "Nabízíte mezipaměť objektů pro WordPress?",
+          "answer": "Na vhodných plánech podporujeme trvalou mezipaměť objektů, abychom snížili databázové dotazy a urychlili načítání. Přečtěte si více: [Object cache](/kennisbank/hosting/persistent-object-cache-in-wordpress) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-21",
+          "question": "Jak mohu obnovit nebo zaplatit za hosting?",
+          "answer": "Prostřednictvím klientského portálu a faktur; často je k dispozici automatické obnovení. Udržujte fakturační údaje aktuální, aby nedošlo k přerušení. Přečtěte si více: [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode) · [View invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "host-22",
+          "question": "Mohu dát více domén na jeden hostingový plán?",
+          "answer": "Často ano, prostřednictvím addonu nebo zaparkovaných domén – v závislosti na limitech plánu. Pomůžeme s připojením a DNS. Přečtěte si více: [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Connect domain](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket)."
+        },
+        {
+          "id": "host-23",
+          "question": "Jak bezpečné je přihlášení k mému hostingovému panelu?",
+          "answer": "Použijte silné heslo a povolte 2FA. Nesdílejte přihlášení k panelu přes nezabezpečené kanály. Přečtěte si více: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "host-24",
+          "question": "Co přesně je hosting WordPress?",
+          "answer": "Hosting WordPress je optimalizován pro WP: rychlejší PHP/stack, často CDN a jednodušší instalace/aktualizace než generické sdílené. Přečtěte si více: [WP hosting plans](/kennisbank/hosting/wat-is-wordpress-hosting-basic-plus-en-pro) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-25",
+          "question": "Kde si mohu objednat hosting přímo?",
+          "answer": "V obchodě nebo prostřednictvím kategorií Sdílený, Cloud, WordPress a VPS hosting. Po objednávce získáte přístup k panelu a faktuře. Přečtěte si více: [Shop](/shop) · [Hosting overview](/diensten/categorie/hosting)."
+        }
+      ]
+    },
+    {
+      "id": "email-dns",
+      "title": "Email a DNS",
+      "items": [
+        {
+          "id": "mail-1",
+          "question": "Nabízíte email s doménami nebo hosting?",
+          "answer": "To záleží na balíčku a nastavení. Poradíme spolehlivá poštovní řešení a správně nastavíme DNS (SPF, DKIM a DMARC). Přečtěte si více: [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress) · [SPF record](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-2",
+          "question": "Co jsou SPF, DKIM a DMARC?",
+          "answer": "Jsou to DNS záznamy, které zajišťují ověřování e-mailů a snižují spoofing/spam. Bez správných záznamů se pošta častěji dostává do spamu. Přečtěte si více: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-3",
+          "question": "Jak mohu spravovat DNS záznamy?",
+          "answer": "Prostřednictvím správy DNS pro vaši doménu nebo hostingový panel nastavíte záznamy A, AAAA, CNAME, MX a TXT. Pomáháme s migrací a ověřováním pošty. Přečtěte si více: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [DNSSEC](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-4",
+          "question": "Pomáháte řešit problémy s DNS?",
+          "answer": "Ano. Opravujeme záznamy, šíření, ověřování pošty a připojení k doménám, dokud není DNS opět správné. Přečtěte si více: [Manage DNS records](/kennisbank/domeinnamen/dns-records-beheren) · [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen)."
+        },
+        {
+          "id": "mail-5",
+          "question": "Co je DNSSEC?",
+          "answer": "DNSSEC podepisuje odpovědi DNS, takže manipulace je těžší. Můžeme to povolit tam, kde to vaše TLD a nastavení podporují. Přečtěte si více: [DNSSEC explained](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-6",
+          "question": "Jak nastavím e-mail v telefonu?",
+          "answer": "Použijte podrobnosti IMAP/SMTP z vašeho panelu. Pro Android (a podobně na iOS) jsou kroky ve znalostní bázi. Přečtěte si více: [Email on Android](/kennisbank/e-mail/e-mail-instellen-op-android) · [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress)."
+        },
+        {
+          "id": "mail-7",
+          "question": "Co když e-mail náhle přestane fungovat?",
+          "answer": "Zkontrolujte DNS (MX/SPF/DKIM/DMARC), kvótu poštovní schránky a zda poskytovatelé blokují poštu. Pomáháme sledovat celý řetězec. Přečtěte si více: [Email problems](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-8",
+          "question": "Jak fungují jmenné servery?",
+          "answer": "Nameservery určují, který systém DNS obsluhuje vaši doménu. Pokud je změníte, musíte na novém hostiteli DNS znovu správně nastavit záznamy A/MX/TXT. Přečtěte si více: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "mail-9",
+          "question": "Jak dlouho trvá šíření DNS?",
+          "answer": "Často minuty až několik hodin; někdy až 24–48 hodin kvůli TTL a mezipaměti. Snižte TTL před migrací, abyste přepínali rychleji. Přečtěte si více: [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen) · [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet)."
+        },
+        {
+          "id": "mail-10",
+          "question": "Mohu přeposlat e-mail na jinou adresu?",
+          "answer": "Ano. Přesměrovače odesílají příchozí poštu do Gmailu, Microsoft 365 nebo jiné poštovní schránky – užitečné vedle plné poštovní schránky nebo místo ní. Přečtěte si více: [Forward email](/kennisbank/e-mail/email-doorsturen-naar-mailadres)."
+        },
+        {
+          "id": "mail-11",
+          "question": "Mohu připojit svou doménu k Microsoft 365?",
+          "answer": "Ano. MX a autentizační záznamy (SPF/DKIM/DMARC) nastavíte podle pokynů společnosti Microsoft; pomáháme na straně DNS. Přečtěte si více: [Domain to Microsoft 365](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-microsoft-365) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-12",
+          "question": "Proč moje pošta končí ve spamu?",
+          "answer": "SPF/DKIM/DMARC často chybí nebo jsou v konfliktu nebo IP/reputace je slabá. Kontrolujeme chování DNS autentizace a odesílání. Přečtěte si více: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-13",
+          "question": "Co je MX záznam?",
+          "answer": "Záznam MX sděluje internetu, který poštovní server může přijímat e-maily pro vaši doménu. Bez správného MX žádná pošta nedorazí. Přečtěte si více: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Email problems](/kennisbank/hosting/problemen-met-e-mail-website)."
+        },
+        {
+          "id": "mail-14",
+          "question": "Mohu používat webmail?",
+          "answer": "Ano, prostřednictvím adresy URL webové pošty vašeho hostitelského panelu můžete číst a odesílat poštu v prohlížeči – společně s protokolem IMAP v telefonu nebo Outlooku. Přečtěte si více: [Set up email](/kennisbank/e-mail/e-mail-instellen-op-android) · [Contact](/contact)."
+        },
+        {
+          "id": "mail-15",
+          "question": "Musí být DNS s vámi, pokud je hosting jinde?",
+          "answer": "Ne. DNS si můžete ponechat u nás nebo jinde, pokud A/MX/TXT ukazují na správné služby. Důsledná správa zabraňuje chybám při migraci. Přečtěte si více: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Nameservers](/kennisbank/domeinnamen/nameservers-beheren)."
         }
       ]
     }

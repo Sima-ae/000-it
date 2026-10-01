@@ -1,0 +1,1 @@
+Use IMAP/SMTP data from your panel. For Android (and similarly on iOS), the steps are in the knowledge base. Read more: ⟦L0⟧Email on Android⟦/L0⟧ · ⟦L1⟧Email at WordPress/domain⟦/L1⟧.

@@ -1,0 +1,1 @@
+Controlla la pagina di stato, la propagazione DNS, gli aggiornamenti recenti, lo spazio su disco e se l'errore è riproducibile. Ciò accelera la diagnosi. Per saperne di più: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Patikrinkite DNS (MX/SPF/DKIM/DMARC), pašto dėžutės kvotą ir ar paslaugų teikėjai blokuoja paštą. Padedame atsekti visą grandinę. Skaityti daugiau: ⟦L0⟧ · ⟦L1⟧.

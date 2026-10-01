@@ -1,0 +1,1 @@
+Yes, that's the usual flow: domain + hosting in the shopping cart, then DNS connection. Read more: ⟦L0⟧Domains⟦/L0⟧ · ⟦L1⟧Shop⟦/L1⟧.

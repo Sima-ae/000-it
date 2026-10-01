@@ -1,0 +1,1 @@
+Sim, dependendo da sua hospedagem ou pacote de suporte. Em caso de tempo de inatividade, restauramos os backups sempre que possível e investigamos a causa. Leia mais: ⟦L0⟧ · ⟦L1⟧.

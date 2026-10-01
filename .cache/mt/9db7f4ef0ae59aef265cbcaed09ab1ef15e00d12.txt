@@ -1,0 +1,1 @@
+Tak. SSL jest standardem w naszych odpowiednich planach hostingowych, więc witryny działają w oparciu o protokół HTTPS. Przeczytaj więcej: ⟦L0⟧ · ⟦L1⟧.

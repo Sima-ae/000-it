@@ -1,0 +1,1 @@
+Quanto tempo leva a propagação do DNS?

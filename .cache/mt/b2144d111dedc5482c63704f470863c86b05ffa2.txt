@@ -1,0 +1,1 @@
+Paylaşılan paylaşım kaynakları; VPS daha fazla CPU/RAM'i izole eder; adanmış bütün bir sunucudur. Trafiğe, kontrol ihtiyaçlarına ve bütçeye göre seçim yapın. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Inody počítají soubory/složky, nejen GB. Mnoho malých souborů mezipaměti nebo pošty může narazit na limit, zatímco místo na disku stále vypadá volné. Přečtěte si více: ⟦L0⟧ · ⟦L1⟧.

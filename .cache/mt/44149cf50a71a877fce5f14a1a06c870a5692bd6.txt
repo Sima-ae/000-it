@@ -1,0 +1,1 @@
+Tai yra DNS įrašai, kurie tvarko el. pašto autentifikavimą ir mažina klastojimą / šlamštą. Be teisingų įrašų paštas dažniau patenka į šiukšlių dėžę. Skaityti daugiau: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

@@ -1,0 +1,1 @@
+Inodes skaičiuoja failus/aplankus, ne tik GB. Daugelis mažų talpyklos ar pašto failų gali pasiekti ribą, kol diske vis dar atrodo laisva. Skaityti daugiau: ⟦L0⟧ · ⟦L1⟧.

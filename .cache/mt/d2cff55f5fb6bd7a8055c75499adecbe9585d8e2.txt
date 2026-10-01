@@ -1,0 +1,1 @@
+Verkkotunnus on osoite, jota vierailijat käyttävät löytääkseen verkkosivustosi (esimerkiksi example.com). Se sitoutuu DNS-tietueisiin, jotka osoittavat isännöintiisi tai sähköpostiisi. Lue lisää: ⟦L0⟧ · ⟦L1⟧.

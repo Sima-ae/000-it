@@ -1,0 +1,1 @@
+Alan adınız veya barındırma paneliniz için DNS yönetimi aracılığıyla A, AAAA, CNAME, MX ve TXT kayıtlarını ayarlarsınız. Geçişler ve posta kimlik doğrulaması konularında yardımcı oluyoruz. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

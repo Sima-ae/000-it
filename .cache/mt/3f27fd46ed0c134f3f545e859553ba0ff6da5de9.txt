@@ -1,0 +1,1 @@
+Provjerite DNS (MX/SPF/DKIM/DMARC), kvotu poštanskog sandučeta i da li Microsoft ili provajderi blokiraju poštu. Pomažemo u mjerenju lanca. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

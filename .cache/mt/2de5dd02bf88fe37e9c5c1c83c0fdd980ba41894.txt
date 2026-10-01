@@ -1,0 +1,1 @@
+Agent 000, sitedeki ve destek akışlarındaki dijital asistanımızdır. Sık sorulan soruları yanıtlıyor, bilgi bankası makalelerine işaret ediyor ve sizi canlı sohbete, bir bilete veya insan yardımının daha uygun olduğu bir randevuya yönlendirebilir. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

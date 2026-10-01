@@ -1,0 +1,1 @@
+Weby mají výchozí HTTPS. Během migrací vynucujeme HTTPS a řešíme smíšený obsah. Přečtěte si více: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Használjon egyedi jelszavakat és 2FA-t, ahol elérhető (beleértve a hosting paneleket is). Ne ossza meg a munkameneteket megosztott számítógépeken. Bővebben: ⟦L0⟧.

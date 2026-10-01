@@ -1,0 +1,1 @@
+DirectAdmin to panel sterowania pocztą e-mail, DNS, bazami danych, kopiami zapasowymi i instalacjami. Zaloguj się przy użyciu danych logowania do panelu; zdecydowanie zalecamy 2FA. Przeczytaj więcej: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+I-węzły zliczają pliki/foldery, nie tylko GB. Wiele małych plików pamięci podręcznej lub poczty może osiągnąć limit, podczas gdy miejsce na dysku nadal wygląda na wolne. Przeczytaj więcej: ⟦L0⟧ · ⟦L1⟧.

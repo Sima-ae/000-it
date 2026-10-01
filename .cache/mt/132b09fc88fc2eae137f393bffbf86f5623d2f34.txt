@@ -1,0 +1,1 @@
+Ne, ali je jednostavnije: DNS, SSL, e-pošta i podrška onda sjede s jednom stranom. Također možete zadržati samo DNS kod nas i hostirati negdje drugdje. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

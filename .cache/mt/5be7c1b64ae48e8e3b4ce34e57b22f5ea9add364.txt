@@ -1,0 +1,1 @@
+You can set A, AAAA, CNAME, MX and TXT records via the DNS management of your domain or hosting panel. We help with migrations and mail authentication. Read more: ⟦L0⟧Manage DNS⟦/L0⟧ · ⟦L1⟧DNSSEC⟦/L1⟧.

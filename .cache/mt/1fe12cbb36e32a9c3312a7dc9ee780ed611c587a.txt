@@ -1,0 +1,1 @@
+Ne optimizojmë Core Web Vitals, caching ose CDN dhe monitorimin. Kujdesi i mëpasshëm kalon përmes paketave të mirëmbajtjes. Lexo më shumë: ⟦L0⟧Çfarë bën një CDN?⟦/L0⟧.

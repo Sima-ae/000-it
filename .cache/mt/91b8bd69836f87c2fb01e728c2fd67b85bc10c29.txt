@@ -1,0 +1,1 @@
+A számlákat a portálon a Számlázás/Számlázás menüpont alatt tudja megtekinteni és letölteni. Bővebben: ⟦L0⟧.

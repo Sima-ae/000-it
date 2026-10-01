@@ -1,0 +1,1 @@
+Zakonisht është përhapja e DNS, regjistrimet A/MX që mungojnë ose serverët e emrave që nuk janë përditësuar ende. Kontrolloni të dhënat dhe lejoni që TTL-të të skadojnë. Lexo më shumë: ⟦L0⟧ · ⟦L1⟧.

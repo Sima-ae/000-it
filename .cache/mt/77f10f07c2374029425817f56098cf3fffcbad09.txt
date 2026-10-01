@@ -1,0 +1,1 @@
+Använd unika lösenord och 2FA där det är tillgängligt (inklusive på värdpaneler). Dela inte sessioner på delade datorer. Läs mer: ⟦L0⟧.

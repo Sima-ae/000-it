@@ -1,0 +1,1 @@
+Hosting WordPress je optimalizovaný pre WP: rýchlejšie PHP/stack, často CDN a jednoduchšie inštalácie/aktualizácie ako bežné zdieľané. Prečítajte si viac: ⟦L0⟧ · ⟦L1⟧.

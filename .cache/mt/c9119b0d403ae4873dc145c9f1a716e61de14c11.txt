@@ -1,0 +1,1 @@
+Bulut barındırma, biz onu yönetmeye devam ederken klasik paylaşıma göre daha fazla kaynak ve ölçeklenebilirlik sağlar. Paylaşım sıkılaştığında idealdir ancak henüz tam VPS'ye ihtiyaç duyulmamaktadır. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+That depends on the package. SSH is available or can be requested on many plans; on VPS you usually have full access. Read more: ⟦L0⟧SSH Access⟦/L0⟧.

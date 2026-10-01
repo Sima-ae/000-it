@@ -1,0 +1,1 @@
+Em planos adequados, oferecemos suporte a cache de objetos persistentes para reduzir consultas ao banco de dados e carregar mais rapidamente. Leia mais: ⟦L0⟧ · ⟦L1⟧.

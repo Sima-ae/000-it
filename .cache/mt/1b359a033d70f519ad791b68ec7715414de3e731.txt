@@ -1,0 +1,1 @@
+Ez a tervtől függ. Sok tervnél elérhető vagy kérhető az SSH; VPS-en általában teljes hozzáférést kap. Bővebben: ⟦L0⟧ · ⟦L1⟧.

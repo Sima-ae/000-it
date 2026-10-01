@@ -1,0 +1,1 @@
+DNS'yi (MX/SPF/DKIM/DMARC), posta kutusu kotasını ve Microsoft'un veya sağlayıcıların postaları engelleyip engellemediğini kontrol edin. Zincirin ölçülmesine yardımcı oluyoruz. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

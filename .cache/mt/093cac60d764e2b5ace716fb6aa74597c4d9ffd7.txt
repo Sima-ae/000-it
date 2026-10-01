@@ -1,0 +1,1 @@
+Verificați DNS (MX/SPF/DKIM/DMARC), cota cutiei poștale și dacă furnizorii blochează e-mailul. Ajutăm la urmărirea întregului lanț. Citește mai mult: ⟦L0⟧ · ⟦L1⟧.

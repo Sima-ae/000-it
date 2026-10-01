@@ -1,0 +1,1 @@
+Shared är kostnadseffektivt för mindre webbplatser. Molnet ger mer resurser och skalbarhet, helt hanterat. WordPress-värd är optimerat för WP. VPS ger mer kontroll för tyngre laster. Läs mer: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

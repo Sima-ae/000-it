@@ -1,0 +1,1 @@
+Ne punojmë me firewall, SSL, përditësime, monitorim dhe forcim. Shërbimet shtesë të sigurisë mund të shtojnë shtresa mbi këtë. Lexo më shumë: ⟦L0⟧SSL⟦/L0⟧ · ⟦L1⟧2FA në DirectAdmin⟦/L1⟧.

@@ -1,0 +1,1 @@
+Använd ett starkt lösenord och aktivera 2FA. Dela inte panelinloggningar via osäkra kanaler. Läs mer: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+I DNS/domänhantering väljer du våra namnservrar eller externa (till exempel ett CDN). Förökning kan ta timmar upp till ett dygn. Läs mer: ⟦L0⟧ · ⟦L1⟧.

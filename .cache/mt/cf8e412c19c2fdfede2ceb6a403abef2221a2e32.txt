@@ -1,0 +1,1 @@
+În magazin afișăm prețurile în funcție de contextul TVA afișat (deseori inclusiv pentru fluxurile de consum). Factura conține o defalcare netă a TVA-ului pentru clienții business.

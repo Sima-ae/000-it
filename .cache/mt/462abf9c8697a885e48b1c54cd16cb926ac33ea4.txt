@@ -1,0 +1,1 @@
+Uygun planlarda, veritabanı sorgularını azaltmak ve daha hızlı yüklemek için kalıcı nesne önbelleğini destekliyoruz. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

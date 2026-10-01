@@ -1,0 +1,1 @@
+Sui piani adatti supportiamo la cache degli oggetti persistente per ridurre le query del database e caricare più velocemente. Per saperne di più: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Tramite la gestione DNS del tuo dominio o pannello hosting imposti i record A, AAAA, CNAME, MX e TXT. Aiutiamo con le migrazioni e l'autenticazione della posta. Per saperne di più: ⟦L0⟧ · ⟦L1⟧.

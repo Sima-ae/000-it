@@ -1,0 +1,1 @@
+Tak, w stosownych przypadkach — często darmowy CDN jest zawarty w planach hostingowych WP — w celu szybszej dostawy globalnej. Przeczytaj więcej: ⟦L0⟧ · ⟦L1⟧.

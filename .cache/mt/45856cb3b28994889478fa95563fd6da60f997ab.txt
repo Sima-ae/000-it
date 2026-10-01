@@ -1,0 +1,1 @@
+På passende planer understøtter vi vedvarende objektcache for at reducere databaseforespørgsler og indlæse hurtigere. Læs mere: ⟦L0⟧ · ⟦L1⟧.

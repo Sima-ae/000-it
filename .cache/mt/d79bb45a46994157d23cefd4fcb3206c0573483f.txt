@@ -1,0 +1,1 @@
+Ardından Plus, Business, bulut veya VPS'ye ölçekleniyoruz ve sitenin büyümeyi kaldırabilmesi için önbelleğe almayı ve CDN'yi optimize ediyoruz. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

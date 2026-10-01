@@ -1,0 +1,1 @@
+Verifique o DNS (MX/SPF/DKIM/DMARC), a cota da caixa de correio e se a Microsoft ou os provedores estão bloqueando emails. Ajudamos a medir a cadeia. Leia mais: ⟦L0⟧ · ⟦L1⟧.

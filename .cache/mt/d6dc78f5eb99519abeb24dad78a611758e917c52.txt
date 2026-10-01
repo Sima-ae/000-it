@@ -1,0 +1,1 @@
+Pastaj ne shkallëzojmë në Plus, Business ose VPS dhe optimizojmë caching-un dhe CDN-në në mënyrë që faqja të mund të përballojë rritjen. Lexo më shumë: ⟦L0⟧Kur te VPS?⟦/L0⟧.

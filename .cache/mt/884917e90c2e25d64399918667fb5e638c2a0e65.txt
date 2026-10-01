@@ -1,0 +1,1 @@
+Molnvärd ger mer resurser och skalbarhet än klassisk delad, samtidigt som vi fortsätter att hantera det. Perfekt när delad blir tight men full VPS behövs inte ännu. Läs mer: ⟦L0⟧ · ⟦L1⟧.

@@ -25,7 +25,9 @@ export const EXTRA_HOSTING_KENNISBANK_CATEGORY_SLUGS = new Set([
 
 /** FAQ category ids kept on ExtraHosting (nl + en packs). */
 export const EXTRA_HOSTING_FAQ_CATEGORY_IDS = new Set([
+  "domeinen",
   "webhosting",
+  "email-dns",
   "support",
 ]);
 

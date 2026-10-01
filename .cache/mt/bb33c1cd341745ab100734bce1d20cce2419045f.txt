@@ -1,0 +1,1 @@
+Os inodes contam arquivos/pastas, não apenas GB. Muitos arquivos pequenos de cache ou de e-mail podem atingir o limite enquanto o espaço em disco ainda parece livre. Leia mais: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Then we fix tagging (GTM, GA4 and pixels), consent mode where necessary, and server-side options for more reliable data.

@@ -1,0 +1,1 @@
+Hər bir xal sizin bu sahədə nə qədər güclü olduğunuzu göstərir; aşağı ballar konkret məsləhətlərlə gəlir. Skandan birdəfəlik “hesabat kartı” kimi deyil, prioritet siyahı kimi istifadə edin. Daha ətraflı: ⟦L0⟧ · ⟦L1⟧.

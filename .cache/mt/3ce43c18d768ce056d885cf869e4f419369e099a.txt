@@ -1,0 +1,1 @@
+po. Ne zgjidhim regjistrimet, përhapjen, auth-in e postës dhe lidhjet e domenit derisa DNS të jetë përsëri i saktë. Lexo më shumë: ⟦L0⟧Menaxho regjistrimet DNS⟦/L0⟧ · ⟦L1⟧DNSSEC⟦/L1⟧.

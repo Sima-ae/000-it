@@ -1,0 +1,1 @@
+DNS/etki alanı yönetiminde ad sunucularımızı veya harici ad sunucularımızı (örneğin bir CDN) seçersiniz. Yayılım saatlerden bir güne kadar sürebilir. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

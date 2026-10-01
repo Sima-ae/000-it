@@ -1,0 +1,1 @@
+Az MX rekord közli az internettel, hogy melyik levelezőszerver kaphat e-mailt az Ön domainjéhez. Megfelelő MX nélkül nem érkezik levél. Bővebben: ⟦L0⟧ · ⟦L1⟧.

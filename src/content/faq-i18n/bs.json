@@ -12,12 +12,12 @@
         {
           "id": "gen-1",
           "question": "Šta tačno TripleZero iT radi?",
-          "answer": "TripleZero iT kombinuje web dizajn, WordPress podršku, digitalni marketing, vidljivost pretrage (AEO, GEO/lokalno i SEO), dizajn i hosting. Pomažemo brendovima da se brže pronađu, izgrade bolje web stranice i rastu na mjerljiv način."
+          "answer": "TripleZero iT kombinuje web dizajn, WordPress podršku, digitalni marketing, vidljivost pretrage (AEO, GEO/lokalno i SEO), dizajn i hosting. Pomažemo brendovima da se brže pronađu, izgrade bolje web stranice i rastu na mjerljiv način. [About us](/over-ons) · [Services](/diensten)"
         },
         {
           "id": "gen-2",
           "question": "Kako da počnem sa TripleZero iT-om?",
-          "answer": "Kontaktiraj nas ili zakažite termin. Vodimo kratak unos, pregledamo ciljeve i skup, zatim pripremamo konkretan prijedlog s planiranjem i KPI-ovima."
+          "answer": "Kontaktiraj nas ili zakažite termin. Vodimo kratak unos, pregledamo ciljeve i skup, zatim pripremamo konkretan prijedlog s planiranjem i KPI-ovima. [Schedule appointment](/afspraak) · [Contact](/contact)"
         },
         {
           "id": "gen-3",
@@ -73,6 +73,46 @@
           "id": "gen-13",
           "question": "Možete li preuzeti ili sarađivati ​​sa postojećim dobavljačima?",
           "answer": "Da. Neometano radimo zajedno sa programerima, trgovcima ili agencijama, ili preuzimamo održavanje i optimizaciju bez nepotrebnog ometanja postojećeg rada."
+        },
+        {
+          "id": "gen-14",
+          "question": "Šta je Agent 000 (pomoćnik za ćaskanje)?",
+          "answer": "Agent 000 je naš digitalni asistent na stranici iu tokovima podrške. On odgovara na često postavljana pitanja, ukazuje na članke iz baze znanja i može vas uputiti na live chat, kartu ili termin kada je ljudska pomoć prikladnija. Pročitajte više: [Digital assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Chat, ticket or call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "gen-15",
+          "question": "Kako da zakažem termin ili poziv?",
+          "answer": "Možete odabrati termin koji Vama odgovara na stranici Zakazivanje. Za brza pitanja možete koristiti i live chat ili kartu; telefonski termin je koristan za složenije procese ili prijeme. Pročitajte više: [Appointment](/afspraak) · [Call appointment explained](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)."
+        },
+        {
+          "id": "gen-16",
+          "question": "Gdje mogu vidjeti status vaših usluga?",
+          "answer": "Na stranici sa statusom prikazujemo incidente i održavanje u vezi s hostingom i povezanim uslugama, tako da možete brzo vidjeti da li se nešto događa. Pročitajte više: [Statuspage](/statuspage)."
+        },
+        {
+          "id": "gen-17",
+          "question": "Da li imate bazu znanja?",
+          "answer": "Da. Baza znanja sadrži priručnike o domenima, DNS-u, e-pošti, hostingu, WordPressu, AI skeniranju, sigurnosti i još mnogo toga — s objašnjenjima korak po korak. Pročitajte više: [Knowledge base](/kennisbank)."
+        },
+        {
+          "id": "gen-18",
+          "question": "Kako se nosite s privatnošću i kolačićima?",
+          "answer": "Radimo svjesni GDPR-a: tekstovi o privatnosti, pristanak za obrasce i kolačić banere/način pristanka gdje je praćenje neophodno. Za WordPress pomažemo sa ispravnim podešavanjem kolačića. Pročitajte više: [Cookie banner in WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress) · [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Privacy with forms](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren)."
+        },
+        {
+          "id": "gen-19",
+          "question": "Gdje mogu pronaći vaše vijesti i ažuriranja?",
+          "answer": "Na stranici s vijestima objavljujemo ažuriranja o proizvodima, sigurnosti i savjetima. Za tehničke kvarove provjerite stranicu statusa. Pročitajte više: [News](/nieuws) · [Statuspage](/statuspage)."
+        },
+        {
+          "id": "gen-20",
+          "question": "Koliko košta rad sa vama?",
+          "answer": "To zavisi od kombinacije: proizvodi za hosting i kupovinu imaju fiksne cijene; dizajn, SEO, oglasi i retainers slijede nakon unosa. U radnji vidite pakete; dobićete predlog za prilagođavanje. Pročitajte više: [Shop](/shop) · [Contact](/contact)."
+        },
+        {
+          "id": "gen-21",
+          "question": "Možete li također raditi samo savjetovanje ili reviziju?",
+          "answer": "Da. Revizije, AI skeniranja, tehnički pregledi i sparing sesije mogu se obaviti odvojeno od procesa kompletne usluge. Tada to možete učiniti sami ili prepustite nama da se pobrinemo za to. Pročitajte više: [AI scan](/ai-scan) · [Services](/diensten)."
         }
       ]
     },
@@ -83,17 +123,17 @@
         {
           "id": "ai-1",
           "question": "Šta je AI skeniranje u TripleZero iT-u?",
-          "answer": "Skeniranje spremnosti AI-a procjenjuje koliko dobro se tvoja web lokacija može pronaći pomoću klasičnih pretraživača, AI odgovora i lokalnih ili geografskih rezultata pretraživanja (AEO, GEO, SEO i tehničke osnove)."
+          "answer": "Skeniranje spremnosti AI-a procjenjuje koliko dobro se tvoja web lokacija može pronaći pomoću klasičnih pretraživača, AI odgovora i lokalnih ili geografskih rezultata pretraživanja (AEO, GEO, SEO i tehničke osnove). [What is the AI ​​scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Start AI scan](/ai-scan)"
         },
         {
           "id": "ai-2",
           "question": "Šta tačno meri AI skeniranje?",
-          "answer": "Skeniranje mjeri AEO signale, GEO/lokalnu vidljivost, osnove SEO-a, strukturu sadržaja, indikatore učinka i spremnost AI. Dobijate bodove i konkretna poboljšanja."
+          "answer": "Skeniranje mjeri AEO signale, GEO/lokalnu vidljivost, osnove SEO-a, strukturu sadržaja, indikatore učinka i spremnost AI. Dobijate bodove i konkretna poboljšanja. [Explain scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)"
         },
         {
           "id": "ai-3",
           "question": "Koliko često trebam pokrenuti AI skeniranje?",
-          "answer": "Najmanje nakon velikih izmjena web-lokacije ili kampanja. Za aktivne brendove preporučujemo periodična skeniranja, na primjer svakog tromjesečja, tako da ostanete vidljivi u rezultatima pretraživanja i AI."
+          "answer": "Najmanje nakon velikih izmjena web-lokacije ili kampanja. Za aktivne brendove preporučujemo periodična skeniranja, na primjer svakog tromjesečja, tako da ostanete vidljivi u rezultatima pretraživanja i AI. [Start AI scan](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website)"
         },
         {
           "id": "ai-4",
@@ -118,12 +158,12 @@
         {
           "id": "ai-8",
           "question": "Šta je AI spremnost za moj brend?",
-          "answer": "To je stepen do kojeg su tvoja stranica, sadržaj i podaci postavljeni tako da AI sistemi mogu ispravno citirati, preporučiti i objasniti vaš brend."
+          "answer": "To je stepen do kojeg su tvoja stranica, sadržaj i podaci postavljeni tako da AI sistemi mogu ispravno citirati, preporučiti i objasniti vaš brend. [AI readiness in the scan](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)"
         },
         {
           "id": "ai-9",
           "question": "Možete li koristiti AI agente na kontrolnoj tabli?",
-          "answer": "Da. Na klijentskom portalu vidite AI agente za SEO, sadržaj, društvene mreže i oglase — uključujući status i zadatke."
+          "answer": "Da. Na klijentskom portalu vidite AI agente za SEO, sadržaj, društvene mreže i oglase — uključujući status i zadatke. [What are AI agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Agents in your account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)"
         },
         {
           "id": "ai-10",
@@ -144,6 +184,46 @@
           "id": "ai-13",
           "question": "Kako da izmjerim ROI inicijativa AI?",
           "answer": "Kroz KPI-je kao što su promet, potencijalni klijenti, ušteđeno vrijeme, izlaz sadržaja, rezolucija ulaznica i konverzija. Definiramo ih unaprijed u planu kako bi rezultati ostali vidljivi."
+        },
+        {
+          "id": "ai-14",
+          "question": "Kako da pokrenem AI skeniranje na svojoj web stranici?",
+          "answer": "Idite na AI skeniranje, unesite svoj URL i započnite analizu. Dobivate bodove za AEO, GEO, SEO, performanse i spremnost za AI plus bodove za poboljšanje. Pročitajte više: [Start AI scan](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website) · [AI scan page](/ai-scan)."
+        },
+        {
+          "id": "ai-15",
+          "question": "Kako da pročitam rezultate AI skeniranja?",
+          "answer": "Svaki rezultat pokazuje koliko ste jaki u toj oblasti; niske ocjene dolaze s konkretnim savjetima. Koristite skeniranje kao listu prioriteta, a ne kao jednokratnu „karticu izvještaja“. Pročitajte više: [Explain scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Next steps](/kennisbank/ai-scan/welke-vervolgstappen-zet-ik-na-mijn-ai-scan)."
+        },
+        {
+          "id": "ai-16",
+          "question": "Koja je razlika između AI skeniranja i kompletnog AEO/GEO/SEO procesa?",
+          "answer": "Skeniranje je brza dijagnoza. Proces implementira poboljšanja: sadržaj, strukturirane podatke, tehnički SEO, lokalne signale i mjerenje tokom vremena. Pročitajte više: [Scan versus process](/kennisbank/ai-scan/ai-scan-versus-een-volledig-aeo-geo-seo-traject-wat-is-het-verschil) · [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-17",
+          "question": "Gdje mogu pronaći prethodna AI skeniranja na svom računu?",
+          "answer": "Prijavljeni korisnici vide prethodna skeniranja i analize na kontrolnoj tabli (SEO analiza), tako da možete uporediti napredak. Pročitajte više: [AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Account / dashboard](/dashboard)."
+        },
+        {
+          "id": "ai-18",
+          "question": "Šta da radim nakon niskog AEO ili GEO rezultata?",
+          "answer": "Dajte prioritet često postavljanim pitanjima, entitetima, strukturiranim podacima (AEO) i Google poslovnim profilima / NAP / lokalnim odredišnim stranicama (GEO). Pomažemo u prevođenju tog plana puta u implementaciju. Pročitajte više: [Scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Local Discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "ai-19",
+          "question": "Kako AI agenti rade na korisničkom portalu?",
+          "answer": "AI agenti podržavaju zadatke vezane za SEO, sadržaj, društvene mreže ili oglase. Otvorite pregled u svom nalogu, vidite status i možete pokrenuti ili pauzirati agente u skladu sa vašim paketom. Pročitajte više: [What are AI agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Open agents](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)."
+        },
+        {
+          "id": "ai-20",
+          "question": "Da li je AI skeniranje besplatno?",
+          "answer": "Postoji pristupačan unos preko stranice AI skeniranja; dublje analize i procesi spadaju u usluge ili zadržavanje. Nakon skeniranja odmah ćete vidjeti da li je praćenje korisno. Pročitajte više: [AI scan](/ai-scan) · [What is the AI ​​scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-21",
+          "question": "Da li Agent 000 također pomaže u pitanjima AI i SEO?",
+          "answer": "Da. Agent 000 koristi često postavljana pitanja i bazu znanja da odgovori na pitanja AEO/GEO/SEO i AI skeniranja i linkove do pravih članaka ili praćenja od strane ljudi. Pročitajte više: [Digital Assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [FAQ](/faq)."
         }
       ]
     },
@@ -154,17 +234,17 @@
         {
           "id": "seo-1",
           "question": "Koja je razlika između AEO, GEO i SEO?",
-          "answer": "AEO (Answer Engine Optimization) fokusira se na AI odgovore. GEO (Geographic Search Engine Optimization) jača lokalnu i regionalnu vidljivost u Mapama, lokalnim paketima i pretrazi zasnovanoj na lokaciji. SEO optimizuje za klasične pretraživače."
+          "answer": "AEO (Answer Engine Optimization) fokusira se na AI odgovore. GEO (Geographic Search Engine Optimization) jača lokalnu i regionalnu vidljivost u Mapama, lokalnim paketima i pretrazi zasnovanoj na lokaciji. SEO optimizuje za klasične pretraživače. [How AEO, GEO and SEO are related](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen) · [What is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization)"
         },
         {
           "id": "seo-2",
           "question": "Zašto su AEO/GEO sada važni?",
-          "answer": "Više ljudi koji traže odgovore dobijaju odgovore putem veštačke inteligencije i takođe pretražuju lokalno („blizu mene“). Bez AEO propuštate AI citate; bez GEO-a ti nedostaju lokalni potencijalni klijenti — čak i kada je klasični SEO solidan."
+          "answer": "Više ljudi koji traže odgovore dobijaju odgovore putem veštačke inteligencije i takođe pretražuju lokalno („blizu mene“). Bez AEO propuštate AI citate; bez GEO-a ti nedostaju lokalni potencijalni klijenti — čak i kada je klasični SEO solidan. [What is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant)"
         },
         {
           "id": "seo-3",
           "question": "Kako započeti SEO angažman?",
-          "answer": "Započinjemo sa tehničkom revizijom, istraživanjem ključnih riječi i namjera, analizom jaza u sadržaju i mapom prioriteta koja je povezana s KPI-jem tvojeg poslovanja."
+          "answer": "Započinjemo sa tehničkom revizijom, istraživanjem ključnih riječi i namjera, analizom jaza u sadržaju i mapom prioriteta koja je povezana s KPI-jem tvojeg poslovanja. [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)"
         },
         {
           "id": "seo-4",
@@ -174,7 +254,7 @@
         {
           "id": "seo-5",
           "question": "Da li se bavite i lokalnim SEO-om?",
-          "answer": "Da. Radimo na Google poslovnom profilu, lokalnim odredišnim stranicama, konzistentnosti NAP-a, recenzijama i klasterima lokalnog sadržaja kako bismo te bolje pronašli u svojoj regiji."
+          "answer": "Da. Radimo na Google poslovnom profilu, lokalnim odredišnim stranicama, konzistentnosti NAP-a, recenzijama i klasterima lokalnog sadržaja kako bismo te bolje pronašli u svojoj regiji. [Improve local discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)"
         },
         {
           "id": "seo-6",
@@ -220,6 +300,36 @@
           "id": "seo-14",
           "question": "Pomažete li u međunarodnom SEO-u?",
           "answer": "Da. Bavimo se hreflangom, istraživanjem tržišta po zemlji ili jeziku, lokalizacijom sadržaja i tehničkim podešavanjima na više lokacija."
+        },
+        {
+          "id": "seo-15",
+          "question": "Šta je zapravo AEO?",
+          "answer": "AEO (Answer Engine Optimization) kreira sadržaj tako da AI odgovori i mašine za odgovore mogu ispravno citirati vaš brend: jasni česta pitanja, entitete i strukturirane podatke. Pročitajte više: [What is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AEO, GEO and SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
+        },
+        {
+          "id": "seo-16",
+          "question": "Šta je GEO (geografski SEO)?",
+          "answer": "GEO jača lokalnu i regionalnu vidljivost — karte, lokalni paketi i pretraživanje na temelju lokacije — kroz GBP, NAP dosljednost i lokalni sadržaj. Pročitajte više: [What is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant) · [Local discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "seo-17",
+          "question": "Kako naručiti ili započeti SEO optimizaciju?",
+          "answer": "Počnite sa AI skeniranjem ili revizijom, a zatim prijedlogom s prioritetima. Također možete kombinirati SEO sa sadržajem i tehnologijom putem trgovine/usluga ili retainera. Pročitajte više: [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting) · [AI Scan](/ai-scan)."
+        },
+        {
+          "id": "seo-18",
+          "question": "Možete li pomoći sa strukturiranim podacima i rasporedom čestih pitanja?",
+          "answer": "Da. Kreiramo relevantne dijagrame (FAQ, Organizacija, Lokalni biznis, proizvodi) i strukturiramo sadržaj tako da vas pretraživači i AI bolje razumiju. Pročitajte više: [AEO explanation](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AI scan scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)."
+        },
+        {
+          "id": "seo-19",
+          "question": "Šta radite sa Core Web Vitals-om?",
+          "answer": "Mjerimo LCP, INP i CLS, rješavamo teške resurse, probleme s hostingom/keširanjem i temama i povezujemo ovo sa CDN-om gdje je to korisno. Pročitajte više: [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [Choose Hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "seo-20",
+          "question": "Možete li kombinirati SEO sa hostingom i WordPress brigom?",
+          "answer": "Da. Stabilan hosting, ažuriranja i performanse čine osnovu; SEO se temelji na tome. Mnogi kupci kombinuju WP-njegu + hosting + stalni SEO. Pročitajte više: [Hosting](/diensten/categorie/hosting) · [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
         }
       ]
     },
@@ -291,6 +401,26 @@
           "id": "ads-13",
           "question": "Je li remarketing još uvijek relevantan?",
           "answer": "Da, kada je u skladu s privatnošću i uparen sa snažnim kreativnim sadržajima i ponudama. Često ostaje najefikasniji sloj u lijevu."
+        },
+        {
+          "id": "ads-14",
+          "question": "Pomažete li s načinom pristanka i kolačićima za reklame?",
+          "answer": "Da. Bez ispravnog pristanka i označavanja, mjerenje oglasa je nepouzdano. Uredno povezujemo banere, GTM/GA4 i piksele. Pročitajte više: [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Cookie banner WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "ads-15",
+          "question": "Možete li napraviti odredišne ​​stranice za kampanje?",
+          "answer": "Da — brze odredišne ​​stranice ili WordPress stranice prilagođene namjeri pretraživanja, s osnovama praćenja i CRO-a. Pročitajte više: [Services](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "ads-16",
+          "question": "Kako spriječiti gubitak budžeta za oglašavanje?",
+          "answer": "Čvrsta struktura naloga, negativne ključne riječi, isključenja publike, uklapanje odredišne ​​stranice i sedmična optimizacija za CPA/ROAS – ne samo klikove."
+        },
+        {
+          "id": "ads-17",
+          "question": "Da li oglasi dobro funkcioniraju s AEO/SEO?",
+          "answer": "Da. Oglasi isporučuju brze podatke i promet; SEO/AEO grade održivu vidljivost. Uvidi iz ključnih riječi i kreativa podstiču sadržaj i odredišne ​​stranice. Pročitajte više: [AEO, GEO and SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
         }
       ]
     },
@@ -362,6 +492,26 @@
           "id": "des-13",
           "question": "Gdje mogu saznati više o digitalnom dizajnu?",
           "answer": "Više informacija je na /graficki-dizajn i putem usluga Grafički dizajn u meniju."
+        },
+        {
+          "id": "des-14",
+          "question": "Da li takođe isporučujete dizajn sisteme i biblioteke komponenti?",
+          "answer": "Da, za brendove koji žele dosljedno skalirati: tokeni, komponente i dokumentacija tako da marketing i proizvod govore istim jezikom."
+        },
+        {
+          "id": "des-15",
+          "question": "Možete li digitalizirati postojeći stil brenda?",
+          "answer": "Da. Prevodimo štampane ili nepotpune smjernice za brend u web spremne boje, tipografiju, UI komplet i predloške."
+        },
+        {
+          "id": "des-16",
+          "question": "Radite li UX istraživanje ili samo vizualni dizajn?",
+          "answer": "Oba. Gdje je potrebno, počinjemo s intervjuima, analizom lijevka ili toplotnim mapama; zatim UI. Na ovaj način dizajniramo na osnovu ponašanja, a ne samo na ukusu."
+        },
+        {
+          "id": "des-17",
+          "question": "Možete li dizajnirati društvene šablone i kreativne oglase?",
+          "answer": "Da — vrtuljke, sličice, priče i oglasi koji odgovaraju ciljevima vašeg brenda i kampanje. Pročitajte više: [Services](/diensten)."
         }
       ]
     },
@@ -433,6 +583,26 @@
           "id": "mkt-13",
           "question": "Kako spriječiti „zauzet marketing“ bez rezultata?",
           "answer": "Svaka aktivnost je vezana za KPI. Taktike lošeg učinka se zaustavljaju ili poboljšavaju podacima, tako da budžet ide na ono što funkcionira."
+        },
+        {
+          "id": "mkt-14",
+          "question": "Šta je obično uključeno u marketinški retainer?",
+          "answer": "Kombinacija strategije, sadržaja ili SEO, kampanja, izvještavanja i eksperimenata — prilagođenih KPI-ima. Bilježimo obim i sate kako bi prioriteti ostali jasni. Pročitajte više: [Shop](/shop) · [Contact](/contact)."
+        },
+        {
+          "id": "mkt-15",
+          "question": "Pomažete li oko pozicioniranja i slanja poruka?",
+          "answer": "Da. Jasno pozicioniranje, vrijednost rekvizita i kopija stranice osiguravaju da oglasi, SEO i prodaja prenose istu poruku."
+        },
+        {
+          "id": "mkt-16",
+          "question": "Mjerite li marketing putem kanalizacije, a ne samo prometa?",
+          "answer": "Gdje je moguće: potencijalni klijenti, SQL-ovi, prihodi ili potpomognute konverzije. Prilagođavamo ili zaustavljamo saobraćaj bez kvaliteta."
+        },
+        {
+          "id": "mkt-17",
+          "question": "Možete li očistiti marketinški skup i praćenje?",
+          "answer": "Da — GTM, GA4, pikseli, CRM veze i saglasnost. Čisti podaci su osnova za dobre odluke. Pročitajte više: [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen)."
         }
       ]
     },
@@ -504,6 +674,153 @@
           "id": "soc-13",
           "question": "Koliko brzo ćemo vidjeti rast na društvenim mrežama?",
           "answer": "Bitna je dosljednost. Značajan rast obično traje nedeljama do mesecima; uz podršku za oglase često ide brže."
+        },
+        {
+          "id": "soc-14",
+          "question": "Pomažete li s društvenim dokazima i recenzijama?",
+          "answer": "Da. Planiramo zahtjeve za pregled, slučajeve i formate nalik UGC-u koji grade povjerenje - bez lažnog angažmana."
+        },
+        {
+          "id": "soc-15",
+          "question": "Možete li uspostaviti zastupanje zaposlenih?",
+          "answer": "Da, posebno na LinkedInu: jednostavne smjernice, šabloni i ritam tako da tim vidljivo dijeli stručnost."
+        },
+        {
+          "id": "soc-16",
+          "question": "Kako povezujete društvene mreže sa web lokacijom i kupovinom?",
+          "answer": "Preko UTM-ova, odredišnih stranica, linkova proizvoda i ponovnog ciljanja. Društvena mreža je kanal u toku, a ne ostrvo. Pročitajte više: [Shop](/shop)."
+        }
+      ]
+    },
+    {
+      "id": "account-portaal",
+      "title": "Račun i portal",
+      "items": [
+        {
+          "id": "acc-1",
+          "question": "Kako da se prijavim na korisnički portal?",
+          "answer": "Idite na nalog/prijavu i koristite adresu e-pošte vašeg korisničkog naloga. Ako ste izgubili podatke, koristite resetiranje lozinke ili nas kontaktirajte. Pročitajte više: [Account](/dashboard) · [Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-2",
+          "question": "Šta vidim na kontrolnoj tabli?",
+          "answer": "Ovisno o vašim uslugama: ulaznice, projekti, fakture, AI skeniranje/agenti i brzi linkovi za podršku. Pročitajte više: [AI agents in account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account) · [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "acc-3",
+          "question": "Izgubio sam svoje podatke za prijavu – šta sada?",
+          "answer": "Koristite „zaboravio sam lozinku“ ili slijedite korake baze znanja za korisnički panel. Ako to ne uspije, otvorite kartu putem poznate kontakt adrese. Pročitajte više: [Lost login details](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-4",
+          "question": "Kako da otvorim kartu sa portala?",
+          "answer": "U korisničkom panelu odaberite podršku/ulaznice, opišite svoj problem i dodajte dokaze (URL, snimke ekrana). Pročitajte više: [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "acc-5",
+          "question": "Gdje mogu pronaći svoje fakture?",
+          "answer": "Fakture možete pogledati i preuzeti na portalu pod Fakturiranje/naplata. Pročitajte više: [Consult invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "acc-6",
+          "question": "Kako mogu promijeniti informacije o naplati ili način plaćanja?",
+          "answer": "Podesite naziv kompanije, PDV broj i način plaćanja u postavkama vašeg računa tako da nove fakture budu ispravne. Pročitajte više: [Change invoice details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "acc-7",
+          "question": "Mogu li i kolege imati pristup?",
+          "answer": "Da, s ulogama naloga (klijent, menadžer, administrator) tako da više članova tima može pratiti ulaznice ili projekte bez dijeljenja svega."
+        },
+        {
+          "id": "acc-8",
+          "question": "Jesu li AI skeniranje i AI agenti povezani s mojim računom?",
+          "answer": "Da. Skeniranja i agenti pripadaju vašem korisničkom računu tako da se historija i prava zadržavaju. Pročitajte više: [AI agents](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "acc-9",
+          "question": "Koliko je siguran moj korisnički račun?",
+          "answer": "Koristite jedinstvene lozinke i 2FA gdje su dostupne (uključujući i na hosting panelima). Nemojte dijeliti sesije na zajedničkim računarima. Pročitajte više: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
+        },
+        {
+          "id": "acc-10",
+          "question": "Mogu li pratiti status projekta i rezultate?",
+          "answer": "Gdje su projekti navedeni na portalu, možete vidjeti status i komunikaciju. U suprotnom, obavijestit ćemo vas putem ulaznica ili ažuriranja sprinta."
+        },
+        {
+          "id": "acc-11",
+          "question": "Kako da povežem usluge iz prodavnice sa svojim nalogom?",
+          "answer": "Nakon naplate, narudžbe pripadaju vašem računu; obezbjeđivanje (hosting, domena) slijedi automatski ili putem uključivanja podrške. Pročitajte više: [Shop](/shop)."
+        },
+        {
+          "id": "acc-12",
+          "question": "Gdje mogu postaviti obavještenja ili postavke?",
+          "answer": "U postavkama naloga upravljate profilom i postavkama obavještenja gdje su dostupne. Za e-poštu s fakturama, održavajte svoju adresu e-pošte ažurnom."
+        }
+      ]
+    },
+    {
+      "id": "shop-bestellen",
+      "title": "Kupovina i naručivanje",
+      "items": [
+        {
+          "id": "shop-1",
+          "question": "Šta mogu naručiti u radnji?",
+          "answer": "Hosting paketa, domena, proizvoda za njegu/podršku i drugih usluga koje nudimo online. Prilagođene ponude se daju putem kontakta. Pročitajte više: [Shop](/shop) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "shop-2",
+          "question": "Kako funkcionišu kolica za kupovinu i naplata?",
+          "answer": "Dodajte proizvode, period provjere (mjesec/godina) i završite putem naplate. Tada ćete dobiti potvrdu i pristup vašem računu. Pročitajte više: [Shopping cart](/shop/cart)."
+        },
+        {
+          "id": "shop-3",
+          "question": "Jesu li cijene uključene ili bez PDV-a?",
+          "answer": "U trgovini prikazujemo cijene prema prikazanom kontekstu PDV-a (često je uključeno za potrošačke tokove). Faktura sadrži neto analizu PDV-a za poslovne korisnike."
+        },
+        {
+          "id": "shop-4",
+          "question": "Mogu li plaćati mjesečno ili godišnje?",
+          "answer": "Mnogi proizvodi za smještaj i njegu imaju mjesečne i godišnje opcije. Godišnje je često jeftinije; detalji su po kartici proizvoda."
+        },
+        {
+          "id": "shop-5",
+          "question": "Koje načine plaćanja prihvatate?",
+          "answer": "Uobičajene online metode putem naplate (ovisno o regiji). Za fakture preduzeća možemo ugovoriti fakturisanje na račun putem kontakta."
+        },
+        {
+          "id": "shop-6",
+          "question": "Da li dobijam pristup odmah nakon uplate?",
+          "answer": "Za standardne proizvode za hosting/domene, obezbjeđivanje slijedi brzo nakon uspješne uplate. Za prilagođene usluge, podrška planira početak."
+        },
+        {
+          "id": "shop-7",
+          "question": "Mogu li kasnije nadograditi pakete?",
+          "answer": "Da. Sa zajedničkog na cloud/VPS ili sa Basic na Plus/Business moguće je uz planiranje migracije. Pročitajte više: [Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [Choose package](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "shop-8",
+          "question": "Kako mogu kombinirati proizvode iz trgovine s prilagođavanjem?",
+          "answer": "Naručite hosting/njegu na mreži i planirajte dizajn, SEO ili oglase putem unosa. Objedinjujemo fakturisanje i račune gdje je to moguće. Pročitajte više: [Contact](/contact)."
+        },
+        {
+          "id": "shop-9",
+          "question": "Šta ako moja narudžba ne stigne ili se zaglavi?",
+          "answer": "Provjerite svoju e-poštu (uključujući neželjenu poštu) i portal. Ako ostane tiho, otvorite tiket ili podršku putem e-pošte s brojem narudžbe. Pročitajte više: [Contact](/contact) · [Tickets](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "shop-10",
+          "question": "Mogu li naručiti domen i hosting u jednoj narudžbi?",
+          "answer": "Da, to je uobičajeni tok: domena + hosting u korpi za kupovinu, zatim DNS veza. Pročitajte više: [Domains](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "shop-11",
+          "question": "Postoje li paketi za WordPress Care?",
+          "answer": "Da. Paketi njege pokrivaju ažuriranja, praćenje i održavanje — odvojeno ili uz hosting. Pročitajte više: [Shop](/shop)."
+        },
+        {
+          "id": "shop-12",
+          "question": "Kako da otkažem ili promijenim narudžbu?",
+          "answer": "Odmah nakon naručivanja putem podrške; Nakon toga važe uslovi za otkazivanje i promjenu po proizvodu. Pomažemo u migraciji ili izvozu ako prestanete. Pročitajte više: [Contact](/contact)."
         }
       ]
     },
@@ -514,12 +831,12 @@
         {
           "id": "sup-1",
           "question": "Kakvu podršku nudite?",
-          "answer": "Nudimo podršku za WordPress, podršku za prilagođene web stranice, karte i chat uživo, održavanje, sigurnost, performanse i reakciju na incidente."
+          "answer": "Nudimo podršku za WordPress, podršku za prilagođene web stranice, karte i chat uživo, održavanje, sigurnost, performanse i reakciju na incidente. [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting) · [Chat, ticket or call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)"
         },
         {
           "id": "sup-2",
           "question": "Kako da dođem do podrške?",
-          "answer": "Preko kontakta, dogovora, tiketa na kontrolnoj tabli ili live chat-a na sajtu. Hitni slučajevi su označeni kao prioritetni."
+          "answer": "Preko kontakta, dogovora, tiketa na kontrolnoj tabli ili live chat-a na sajtu. Hitni slučajevi su označeni kao prioritetni. [Contact](/contact) · [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Call appointment](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)"
         },
         {
           "id": "sup-3",
@@ -529,7 +846,7 @@
         {
           "id": "sup-4",
           "question": "Da li nudite praćenje 24/7?",
-          "answer": "Da, u relevantnim paketima podrške i hostinga: nadzor, sigurnosne kopije i upozorenja kako bi problemi postali vidljivi ranije."
+          "answer": "Da, u relevantnim paketima podrške i hostinga: nadzor, sigurnosne kopije i upozorenja kako bi problemi postali vidljivi ranije. [Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup)"
         },
         {
           "id": "sup-5",
@@ -539,22 +856,22 @@
         {
           "id": "sup-6",
           "question": "Da li se bavite ažuriranjima WordPress-a umjesto nas?",
-          "answer": "Da, preko “Održavanje i ažuriranja”: jezgro, dodaci i teme, sa sigurnosnom kopijom i provjerama prije i nakon ažuriranja."
+          "answer": "Da, preko “Održavanje i ažuriranja”: jezgro, dodaci i teme, sa sigurnosnom kopijom i provjerama prije i nakon ažuriranja. [Site down after WP update](/kennisbank/hosting/website-down-na-update-wordpress)"
         },
         {
           "id": "sup-7",
           "question": "Pomažete li oko problema s hostingom?",
-          "answer": "Da. Dijagnosticiramo, migriramo ili optimiziramo hosting, VPS i domene dok web lokacija ponovo ne radi stabilno."
+          "answer": "Da. Dijagnosticiramo, migriramo ili optimiziramo hosting, VPS i domene dok web lokacija ponovo ne radi stabilno. [Move website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je)"
         },
         {
           "id": "sup-8",
           "question": "Šta ako moja web stranica ne radi?",
-          "answer": "Prijavi to kao hitno. Vraćamo gdje je to moguće putem rezervnih kopija, provjera servera i hitne ispravke, a usput te obavještavamo o statusu."
+          "answer": "Prijavi to kao hitno. Vraćamo gdje je to moguće putem rezervnih kopija, provjera servera i hitne ispravke, a usput te obavještavamo o statusu. [Backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [Check yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support)"
         },
         {
           "id": "sup-9",
           "question": "Postoji li portal za klijente?",
-          "answer": "Da. Prijavljeni klijenti vide kontrolnu tablu, karte, projekte i gdje je relevantno CRM ili fakture."
+          "answer": "Da. Prijavljeni klijenti vide kontrolnu tablu, karte, projekte i gdje je relevantno CRM ili fakture. [Ticket via customer panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel) · [Lost login?](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)"
         },
         {
           "id": "sup-10",
@@ -575,6 +892,56 @@
           "id": "sup-13",
           "question": "Mogu li kasnije nadograditi podršku?",
           "answer": "Da. Možete povećati kada promet, rizik ili potrebe tima rastu."
+        },
+        {
+          "id": "sup-14",
+          "question": "Koja je razlika između chata, karte i termina za poziv?",
+          "answer": "Chat je brz za kratka pitanja; karte su bolje za tehničke slučajeve sa evidencijama i praćenjem; telefonski termin je pogodan za prijem ili složeno objašnjenje. Pročitajte više: [Chat versus ticket versus call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "sup-15",
+          "question": "Kako da kreiram tiket za podršku?",
+          "answer": "Prijavite se na korisnički panel i otvorite kartu sa jasnim URL-om, koracima i snimcima ekrana. Što su informacije bolje, brže možemo pomoći. Pročitajte više: [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "sup-16",
+          "question": "Imate li sigurnosne kopije ako se moja stranica pokvari?",
+          "answer": "Da, ovisno o vašem hostingu ili paketu podrške. U slučaju zastoja, vršimo vraćanje iz rezervnih kopija gdje je to moguće i istražujemo uzrok. Pročitajte više: [Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor)."
+        },
+        {
+          "id": "sup-17",
+          "question": "Šta mogu sam provjeriti prije nego nazovem podršku?",
+          "answer": "Provjerite statusnu stranicu, DNS propagaciju, nedavna ažuriranja, prostor na disku i da li se greška može ponoviti. To ubrzava dijagnozu. Pročitajte više: [Do it yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support) · [Statuspage](/statuspage)."
+        },
+        {
+          "id": "sup-18",
+          "question": "Kako live chat funkcionira na stranici?",
+          "answer": "Otvorite chat uživo putem dugmeta za ćaskanje. Agent 000 prvo pomaže oko FAQ/baze znanja; Za složenije ili hitnije stvari upućujemo Vas na službenika. Pročitajte više: [Digital Assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Contact](/contact)."
+        },
+        {
+          "id": "sup-19",
+          "question": "Možete li pomoći s kritičnom greškom u WordPressu?",
+          "answer": "Da. Dijagnostikujemo bijele ekrane, kritične greške u PHP-u i konflikte dodataka, sa sigurnosnom kopijom i ciljanim popravkom. Pročitajte više: [Critical Error WordPress](/kennisbank/wordpress/kritieke-fout-wordpress) · [Down after update](/kennisbank/hosting/website-down-na-update-wordpress)."
+        },
+        {
+          "id": "sup-20",
+          "question": "Možete li gledati daljinski (TeamViewer, itd.)?",
+          "answer": "Gdje je potrebno i uz dozvolu, za probleme sa desktopom ili panelom. Za većinu pitanja vezanih uz hosting, dovoljan je pristup panelu, DNS-u ili WordPress-u. Pročitajte više: [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "sup-21",
+          "question": "Kako da otkažem pretplatu ili uslugu?",
+          "answer": "Možete otkazati putem korisničkog panela ili podrške; obratite pažnju na otkazne rokove u vašem ugovoru. Pomažemo vam da uredno završite prijenos podataka/izvoza i DNS-a. Pročitajte više: [Contact](/contact) · [Account](/dashboard)."
+        },
+        {
+          "id": "sup-22",
+          "question": "Nudite li WordPress pakete za njegu/održavanje?",
+          "answer": "Da. Ažuriranja, sigurnosne kopije, sigurnosne provjere i performanse uključeni su u pakete nege — idealno uz hosting. Pročitajte više: [Shop](/shop) · [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren)."
+        },
+        {
+          "id": "sup-23",
+          "question": "Šta ako e-pošta iznenada prestane da radi?",
+          "answer": "Provjerite DNS (MX/SPF/DKIM/DMARC), kvotu poštanskog sandučeta i da li Microsoft ili provajderi blokiraju poštu. Pomažemo u mjerenju lanca. Pročitajte više: [Email Problems](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
         }
       ]
     },
@@ -585,7 +952,7 @@
         {
           "id": "web-1",
           "question": "Da li gradite samo WordPress stranice?",
-          "answer": "Ne. Osim WordPress-a radimo prilagođeni web dizajn u HTML/CSS/JS, PHP i Next.js — odvojeno od WordPress servisa."
+          "answer": "Ne. Osim WordPress-a radimo prilagođeni web dizajn u HTML/CSS/JS, PHP i Next.js — odvojeno od WordPress servisa. [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [Services](/diensten)"
         },
         {
           "id": "web-2",
@@ -635,7 +1002,7 @@
         {
           "id": "web-11",
           "question": "Šta je sa performansama nakon lansiranja?",
-          "answer": "Optimiziramo osnovne Web vitale, keširanje ili CDN i nadgledanje. Naknadna njega se zatim nastavlja putem paketa održavanja."
+          "answer": "Optimiziramo osnovne Web vitale, keširanje ili CDN i nadgledanje. Naknadna njega se zatim nastavlja putem paketa održavanja. [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)"
         },
         {
           "id": "web-12",
@@ -651,87 +1018,349 @@
           "id": "web-14",
           "question": "Pomažete li u optimizaciji konverzije na licu mjesta?",
           "answer": "Da. Izvodimo A/B testove, poboljšanja UX-a, obrasce, CTA-ove i brzinu stranice kako bi više posjetitelja konvertiralo."
+        },
+        {
+          "id": "web-15",
+          "question": "Pravite li i web trgovine?",
+          "answer": "Da, od marketinških stranica s integracijom naplate do e-trgovine na WordPress-u ili prilagođavanja. Koordiniramo obim, plaćanja i ispunjenje tokom prijema. Pročitajte više: [Services](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "web-16",
+          "question": "Kako se nosite s tekstovima o privatnosti na stranicama?",
+          "answer": "Savjetujemo i implementiramo tokove privatnosti i saglasnosti za obrasce i banere, prilagođene vašem advokatu gdje je to potrebno. Pročitajte više: [Privacy with forms](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren) · [Cookie banner](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "web-17",
+          "question": "Da li obezbjeđujete okruženje za postavljanje?",
+          "answer": "Da, tamo gdje je relevantno: priprema za preglede i testove, zatim kontrolirano uvođenje u proizvodnju."
+        },
+        {
+          "id": "web-18",
+          "question": "Možete li preuzeti i poboljšati postojeću WordPress stranicu?",
+          "answer": "Da — revizija, ažuriranja, sigurnost, brzina, UX i SEO, bez nepotrebne izgradnje od nule. Pročitajte više: [WP move](/kennisbank/domeinnamen/wordpress-website-verhuizen) · [Critical errors](/kennisbank/wordpress/kritieke-fout-wordpress)."
+        },
+        {
+          "id": "web-19",
+          "question": "Šta je sa HTTP na HTTPS nakon isporuke?",
+          "answer": "Web lokacije su zadane na HTTPS. Tokom migracije forsiramo HTTPS i rješavamo miješani sadržaj. Pročitajte više: [HTTP to HTTPS in WordPress](/kennisbank/wordpress/wordpress-url-omzetten-van-http-naar-https) · [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig)."
+        }
+      ]
+    },
+    {
+      "id": "domeinen",
+      "title": "domena.",
+      "items": [
+        {
+          "id": "dom-1",
+          "question": "Šta je naziv domene?",
+          "answer": "Ime domene je adresa koju posjetitelji koriste da pronađu vašu web stranicu (na primjer.com). Povezuje se sa DNS zapisima koji upućuju na vaš hosting ili e-poštu. Pročitajte više: [Domain registration](/kennisbank/domeinnamen/domeinnaamregistratie) · [Order domains](/domeinen)."
+        },
+        {
+          "id": "dom-2",
+          "question": "Kako da registrujem ime domena kod vas?",
+          "answer": "Pretražite naziv na stranici domena, odaberite ekstenziju i izvršite naplatu u trgovini. Nakon registracije upravljate DNS-om, serverima imena i fakturama na svom računu. Pročitajte više: [Domains](/domeinen) · [Registration guide](/kennisbank/domeinnamen/domeinnaamregistratie) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-3",
+          "question": "Mogu li prenijeti svoju domenu na vas?",
+          "answer": "Da. Zatražite kod za autorizaciju (EPP) od svog trenutnog registratora, otključajte bilo koju blokadu prijenosa, a zatim započnite prijenos s nama. Nakon toga smo ispravno postavili DNS i nameservere. Pročitajte više: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Authorisation code](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-4",
+          "question": "Šta je autorizacijski kod (EPP/Auth kod)?",
+          "answer": "To je jednokratni kod vašeg trenutnog registrara koji sigurno započinje prijenos domene. Bez važeće šifre prijenos se ne može nastaviti. Pročitajte više: [What is an authorisation code?](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen)."
+        },
+        {
+          "id": "dom-5",
+          "question": "Šta je zaključavanje prijenosa ili zaključavanje registra?",
+          "answer": "Zaključavanje sprečava neželjene transfere. Za selidbu često morate prvo isključiti kod trenutnog provajdera, a zatim započeti prijenos kod nas. Pročitajte više: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Support](/contact)."
+        },
+        {
+          "id": "dom-6",
+          "question": "Mogu li kupiti domenu bez hostinga?",
+          "answer": "Da. Možete registrirati ili prenijeti samo domenu i dodati hosting ili email kasnije. U međuvremenu već možete upravljati ili prosljeđivati ​​DNS. Pročitajte više: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-7",
+          "question": "Koje ekstenzije (.nl, .com, …) mogu registrovati?",
+          "answer": "Podržavamo uobičajene TLD-ove kao što su .nl i .com plus mnoga međunarodna proširenja. Dostupnost i cijena se odmah prikazuju u pretraživanju domena. Pročitajte više: [Domains](/domeinen) · [Registration](/kennisbank/domeinnamen/domeinnaamregistratie)."
+        },
+        {
+          "id": "dom-8",
+          "question": "Kako da obnovim ime svog domena?",
+          "answer": "Obnova se odvija preko faktura i portala vašeg klijenta; automatska obnova je često dostupna. Ažurirajte podatke o plaćanju kako biste izbjegli istek. Pročitajte više: [Invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails) · [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "dom-9",
+          "question": "Šta su premium imena domena?",
+          "answer": "Premium imena su kratke ili popularne domene s višom kupovnom cijenom, često putem naknadnog tržišta. Dostupnost i uslovi se razlikuju po proširenju. Pročitajte više: [Premium domains](/kennisbank/domeinnamen/premium-domeinnamen) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-10",
+          "question": "Mogu li anonimno registrovati svoju domenu (Protect ID)?",
+          "answer": "Tamo gdje registar to dozvoljava, možete razmotriti privatnost/zaštitu ID-a. Pravila se razlikuju po proširenju – .nl, na primjer, ima svoj okvir. Pročitajte više: [Protect ID](/kennisbank/domeinnamen/protect-id-domein-anoniem-registreren)."
+        },
+        {
+          "id": "dom-11",
+          "question": "Moja domena je u karantinu – šta sad?",
+          "answer": "Nakon brisanja domena može ući u karantin. Ovisno o registru, često ga možete ponovo aktivirati uz naknadu; ne čekajte predugo. Pročitajte više: [Domain out of quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-12",
+          "question": "Moj novi naziv domene još ne radi – šta sada?",
+          "answer": "Obično je to DNS propagacija, nedostajući A/MX zapisi ili serveri imena koji još nisu ažurirani. Provjerite zapise i dozvolite da TTL isteknu. Pročitajte više: [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-13",
+          "question": "Kako da povežem domenu sa svojim hosting planom?",
+          "answer": "Dodajte domen u svoj panel ili nalog i usmjerite DNS (zapis ili servere imena) na hosting. Pomažemo oko prvog povezivanja nakon narudžbe. Pročitajte više: [Connect domain to plan](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-14",
+          "question": "Mogu li proslijediti domenu?",
+          "answer": "Da. Prosljeđivanje domena šalje posjetitelje na drugi URL – korisno za nazive brendova bez zasebnog web-mjesta. Usklađujemo DNS i preusmjeravanja s vašim podešavanjem. Pročitajte više: [Forward a domain](/kennisbank/domeinnamen/domeinnaam-doorsturen) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-15",
+          "question": "Kako da promijenim servere imena za svoju domenu?",
+          "answer": "U upravljanju DNS-om/domenom birate naše servere imena ili eksterne (na primjer CDN). Širenje može potrajati satima do jednog dana. Pročitajte više: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-16",
+          "question": "Koliko košta ime domene?",
+          "answer": "Cijene se razlikuju po produžetku i periodu; pretraga domena pokazuje trenutne cijene registracije i obnove. Premium imena imaju posebnu cijenu. Pročitajte više: [Domains](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-17",
+          "question": "Da li hosting i domena moraju biti kod istog provajdera?",
+          "answer": "Ne, ali je jednostavnije: DNS, SSL, e-pošta i podrška onda sjedite s jednom stranom. Također možete zadržati samo DNS kod nas i hostirati na drugom mjestu. Pročitajte više: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "dom-18",
+          "question": "Mogu li upravljati više domena na jednom računu?",
+          "answer": "Da. Dodatni domeni se mogu registrovati ili prenijeti i povezati kao dodatak, parkirati ili proslijediti — unutar ograničenja vašeg hosting plana. Pročitajte više: [Domains](/domeinen) · [Choose a hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "dom-19",
+          "question": "Šta će se dogoditi ako moja domena istekne?",
+          "answer": "Nakon isteka često postoji period odgode ili karantina u kojem je oporavak još moguć; kasnije to može potraživati ​​neko drugi. Obnovite na vrijeme putem faktura. Pročitajte više: [Quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-20",
+          "question": "Gdje mogu naručiti ili upravljati domenama?",
+          "answer": "Registrirajte se i prenesite putem stranice domena ili trgovine; upravljanje (DNS, fakture, obnova) živi u klijentskom portalu. Pročitajte više: [Domains](/domeinen) · [Shop](/shop) · [Account](/dashboard)."
         }
       ]
     },
     {
       "id": "webhosting",
-      "title": "Webhosting i domene",
+      "title": "Web hosting",
       "items": [
         {
           "id": "host-1",
           "question": "Koji hosting nudite?",
-          "answer": "Nudimo dijeljeni hosting, WordPress hosting i VPS — na Basic, Plus i Business nivoima — plus domene."
+          "answer": "Nudimo dijeljeni hosting, cloud hosting, WordPress hosting i VPS — plus registraciju domena. Birajte na osnovu prometa, skupa i rasta. Pročitajte više: [Shared hosting](/diensten/shared-hosting) · [Cloud hosting](/diensten/cloud-hosting) · [WordPress hosting](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-2",
-          "question": "Koja je razlika između shared, WordPress i VPS?",
-          "answer": "Shared je isplativ za manje lokacije. WordPress hosting je optimizovan za WP. VPS daje više resursa i kontrole za veća opterećenja."
+          "question": "Koja je razlika između shared, cloud, WordPress i VPS?",
+          "answer": "Shared je isplativ za manje lokacije. Cloud daje više resursa i skalabilnosti, potpuno upravljano. WordPress hosting je optimizovan za WP. VPS daje veću kontrolu za veća opterećenja. Pročitajte više: [Differences explained](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps) · [Shared plans](/kennisbank/hosting/wat-is-shared-hosting-basic-plus-en-business) · [VPS plans](/kennisbank/hosting/wat-is-vps-hosting-basic-plus-en-business)."
         },
         {
           "id": "host-3",
-          "question": "Pomažete li oko registracije domena?",
-          "answer": "Da. Savjetujemo, registrujemo ili prenosimo domen i ispravno povezujemo DNS."
+          "question": "Šta je kod vas hosting u oblaku?",
+          "answer": "Hosting u oblaku daje više resursa i skalabilnosti od klasičnog dijeljenog, a mi njime upravljamo. Idealno kada deljenje postane tesno, ali puni VPS još uvek nije potreban. Pročitajte više: [Cloud hosting](/diensten/cloud-hosting) · [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
         },
         {
           "id": "host-4",
           "question": "Da li je SSL uključen u hosting?",
-          "answer": "Da. SSL je standard u našim relevantnim hosting planovima."
+          "answer": "Da. SSL je standardan u našim relevantnim planovima hostinga tako da web lokacije rade na HTTPS-u. Pročitajte više: [What is SSL?](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [Install Let's Encrypt](/kennisbank/hosting/hoe-installeer-ik-een-gratis-lets-encrypt-ssl-certificaat)."
         },
         {
           "id": "host-5",
           "question": "Možete li migrirati moju stranicu na vaš hosting?",
-          "answer": "Da. Bavimo se sigurnosnom kopijom, migracijom, DNS preklopom, SSL i smoke testovima, uz minimalno vrijeme zastoja."
+          "answer": "Da. Bavimo se sigurnosnom kopijom, migracijom, DNS preklopom, SSL i smoke testovima, uz minimalno vrijeme zastoja. Pročitajte više: [Migrate website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je) · [Migrate WordPress](/kennisbank/domeinnamen/wordpress-website-verhuizen)."
         },
         {
           "id": "host-6",
           "question": "Kako sigurnosne kopije funkcioniraju na hostingu?",
-          "answer": "To ovisi o planu: jednostavne ili automatizirane sigurnosne kopije. Dodatno zadržavanje van lokacije je dostupno."
+          "answer": "To ovisi o planu: jednostavne ili automatizirane sigurnosne kopije. Dodatno zadržavanje van lokacije je dostupno. Pročitajte više: [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor) · [Backup in DirectAdmin](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
         },
         {
           "id": "host-7",
           "question": "Šta ako dobijem više prometa?",
-          "answer": "Zatim se prilagođavamo na Plus, Business ili VPS i optimiziramo keširanje i CDN kako bi stranica mogla podnijeti rast."
+          "answer": "Zatim se prilagođavamo na Plus, Business, cloud ili VPS i optimiziramo keširanje i CDN kako bi stranica mogla podnijeti rast. Pročitajte više: [When to move to VPS?](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)."
         },
         {
           "id": "host-8",
-          "question": "Nudite li e-poštu s domenama?",
-          "answer": "To zavisi od paketa i podešavanja. Savjetujemo pouzdana rješenja za poštu i ispravno postavljamo DNS (SPF, DKIM i DMARC)."
+          "question": "Koliko je siguran vaš hosting?",
+          "answer": "Koristimo firewall, SSL, ažuriranja, praćenje i učvršćivanje. Dodatni sigurnosni slojevi dostupni su tamo gdje je potrebno. Pročitajte više: [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
         },
         {
           "id": "host-9",
-          "question": "Koliko je siguran vaš hosting?",
-          "answer": "Koristimo firewall, SSL, ažuriranja, praćenje i učvršćivanje. Dodatne sigurnosne usluge mogu dodati više slojeva na vrh."
+          "question": "Mogu li kasnije preći sa zajedničkog na VPS?",
+          "answer": "Da. Planiramo migraciju zajedno, uključujući testove i vraćanje, tako da prekidač ostaje pod kontrolom. Pročitajte više: [Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [VPS hosting](/diensten/vps-hosting)."
         },
         {
           "id": "host-10",
-          "question": "Mogu li kasnije preći sa zajedničkog na VPS?",
-          "answer": "Da. Planiramo migraciju zajedno, uključujući testove i vraćanje, tako da prekidač ostaje pod kontrolom."
+          "question": "Da li podržavate CDN?",
+          "answer": "Da, gdje je relevantno — često je besplatni CDN uključen u WP hosting planove — za bržu globalnu isporuku. Pročitajte više: [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [WordPress hosting](/diensten/wordpress-hosting)."
         },
         {
           "id": "host-11",
-          "question": "Da li podržavate CDN?",
-          "answer": "Da, gdje je relevantno — često je besplatni CDN uključen u WP hosting planove — za bržu globalnu isporuku."
+          "question": "Kakav je vaš pristup produženju rada?",
+          "answer": "Pratimo, brzo reagujemo na incidente i jasno komuniciramo oko perioda održavanja kako biste znali šta se dešava. Ažuriranja statusa su na stranici statusa. Pročitajte više: [Status page](/statuspage) · [Contact](/contact)."
         },
         {
           "id": "host-12",
-          "question": "Kakav je vaš pristup produženju rada?",
-          "answer": "Pratimo, brzo reagujemo na incidente i jasno komuniciramo oko perioda održavanja kako biste znali šta se dešava."
+          "question": "Kako da odaberem pravi hosting plan?",
+          "answer": "Zasnovano na prometu, steku (WordPress ili prilagođeni), resursima i rastu. Iskreno savjetujemo - ne pretjerujemo. Pročitajte više: [Choose the right hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Shared vs WP vs VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
         },
         {
           "id": "host-13",
-          "question": "Pomažete li u rješavanju DNS problema?",
-          "answer": "Da. Popravljamo zapise, propagaciju, autentifikaciju pošte i domenske veze dok DNS ponovo ne bude ispravan."
+          "question": "Gdje mogu vidjeti cijene hostinga?",
+          "answer": "Na stranicama usluga hostinga iu trgovini, s mjesečnim ili godišnjim opcijama gdje je primjenjivo. Pročitajte više: [Shared](/diensten/shared-hosting) · [Cloud](/diensten/cloud-hosting) · [WordPress](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting) · [Shop](/shop)."
         },
         {
           "id": "host-14",
-          "question": "Kako da odaberem pravi hosting plan?",
-          "answer": "Zasnovano na prometu, steku (WordPress ili prilagođeni), resursima i rastu. Iskreno savjetujemo - ne pretjerujemo."
+          "question": "Da li dobijam SSH pristup na svom hostingu?",
+          "answer": "To zavisi od plana. Na mnogim planovima SSH je dostupan ili se može zatražiti; na VPS-u obično dobijate puni pristup. Pročitajte više: [SSH access](/kennisbank/hosting/heb-ik-ssh-toegang-op-mijn-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-15",
-          "question": "Gdje mogu vidjeti cijene hostinga?",
-          "answer": "Na stranicama usluga hostinga pod Usluge → Webhosting i domeni, sa mjesečnim ili godišnjim opcijama gdje je primjenjivo."
+          "question": "Kako da instaliram WordPress na vaš hosting?",
+          "answer": "Preko kontrolne ploče (na primjer DirectAdmin/Installatron) ili ručno. Imamo vodič korak po korak. Pročitajte više: [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-16",
+          "question": "Šta su inode i zašto moj plan izgleda \"pun\"?",
+          "answer": "Inode broje fajlove/foldere, ne samo GB. Mnogi mali keš ili mail fajlovi mogu dostići granicu dok prostor na disku i dalje izgleda slobodan. Pročitajte više: [Inodes](/kennisbank/hosting/inodes-en-inode-limieten) · [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-17",
+          "question": "Šta znači \"neograničena\" pohrana ili promet?",
+          "answer": "“Neograničeno” slijedi pošteno korištenje: normalno korištenje web stranice je u redu; zloupotreba ili ekstremna opterećenja mogu biti ograničeni kako bi platforma bila stabilna. Pročitajte više: [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-18",
+          "question": "Koja je razlika između zajedničkog, VPS-a i namjenskog?",
+          "answer": "Zajednički resursi dionica; VPS izoluje više CPU/RAM-a; posvećen je cijeli server. Birajte prema prometu, potrebama kontrole i budžetu. Pročitajte više: [Dedicated vs VPS vs shared](/kennisbank/infrastructuur-servers/verschil-tussen-dedicated-vps-en-shared-hosting) · [Shared/WP/VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
+        },
+        {
+          "id": "host-19",
+          "question": "Kako da radim sa DirectAdmin-om?",
+          "answer": "DirectAdmin je kontrolni panel za e-poštu, DNS, baze podataka, sigurnosne kopije i instalacije. Prijavite se sa svojim akreditivima za panel; toplo preporučujemo 2FA. Pročitajte više: [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Backups](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
+        },
+        {
+          "id": "host-20",
+          "question": "Da li nudite predmemoriju objekata za WordPress?",
+          "answer": "Na odgovarajućim planovima podržavamo trajnu predmemoriju objekata kako bismo smanjili upite baze podataka i brže učitavali. Pročitajte više: [Object cache](/kennisbank/hosting/persistent-object-cache-in-wordpress) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-21",
+          "question": "Kako da obnovim ili platim hosting?",
+          "answer": "Putem klijentskog portala i faktura; automatska obnova je često dostupna. Održavajte podatke o naplati ažurnim kako biste izbjegli prekide. Pročitajte više: [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode) · [View invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "host-22",
+          "question": "Mogu li staviti više domena na jedan hosting plan?",
+          "answer": "Često da, putem dodataka ili parkiranih domena — ovisno o ograničenjima plana. Pomažemo oko povezivanja i DNS-a. Pročitajte više: [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Connect domain](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket)."
+        },
+        {
+          "id": "host-23",
+          "question": "Koliko je bezbedno prijavljivanje na moj hosting panel?",
+          "answer": "Koristite jaku lozinku i omogućite 2FA. Nemojte dijeliti prijave na panel preko nesigurnih kanala. Pročitajte više: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "host-24",
+          "question": "Šta je zapravo WordPress hosting?",
+          "answer": "WordPress hosting je optimizovan za WP: brži PHP/stack, često CDN i jednostavnije instalacije/ažuriranja od generičkog zajedničkog. Pročitajte više: [WP hosting plans](/kennisbank/hosting/wat-is-wordpress-hosting-basic-plus-en-pro) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-25",
+          "question": "Gdje mogu direktno naručiti hosting?",
+          "answer": "U trgovini ili putem kategorija Shared, Cloud, WordPress i VPS hosting. Nakon narudžbe dobijate pristup panelu i fakturi. Pročitajte više: [Shop](/shop) · [Hosting overview](/diensten/categorie/hosting)."
+        }
+      ]
+    },
+    {
+      "id": "email-dns",
+      "title": "Email i DNS",
+      "items": [
+        {
+          "id": "mail-1",
+          "question": "Nudite li e-poštu s domenama ili hosting?",
+          "answer": "To zavisi od paketa i podešavanja. Savjetujemo pouzdana rješenja za poštu i ispravno postavljamo DNS (SPF, DKIM i DMARC). Pročitajte više: [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress) · [SPF record](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-2",
+          "question": "Šta su SPF, DKIM i DMARC?",
+          "answer": "To su DNS zapisi koji upravljaju autentifikacijom e-pošte i smanjuju lažiranje/spam. Bez ispravne evidencije, pošta češće pada u neželjenu poštu. Pročitajte više: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-3",
+          "question": "Kako da upravljam DNS zapisima?",
+          "answer": "Preko DNS upravljanja za vašu domenu ili hosting panel postavljate A, AAAA, CNAME, MX i TXT zapise. Pomažemo oko migracija i autentifikacije pošte. Pročitajte više: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [DNSSEC](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-4",
+          "question": "Pomažete li u rješavanju DNS problema?",
+          "answer": "Da. Popravljamo zapise, propagaciju, potvrdu e-pošte i veze domena dok DNS ponovo ne bude ispravan. Pročitajte više: [Manage DNS records](/kennisbank/domeinnamen/dns-records-beheren) · [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen)."
+        },
+        {
+          "id": "mail-5",
+          "question": "Šta je DNSSEC?",
+          "answer": "DNSSEC potpisuje DNS odgovore tako da je manipulacija teža. Možemo ga omogućiti tamo gdje ga podržavaju vaš TLD i postavke. Pročitajte više: [DNSSEC explained](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-6",
+          "question": "Kako da podesim e-poštu na svom telefonu?",
+          "answer": "Koristite IMAP/SMTP detalje sa svog panela. Za Android (i slično za iOS) koraci su u bazi znanja. Pročitajte više: [Email on Android](/kennisbank/e-mail/e-mail-instellen-op-android) · [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress)."
+        },
+        {
+          "id": "mail-7",
+          "question": "Šta ako e-pošta iznenada prestane da radi?",
+          "answer": "Provjerite DNS (MX/SPF/DKIM/DMARC), kvotu poštanskog sandučeta i da li provajderi blokiraju poštu. Pomažemo u praćenju cijelog lanca. Pročitajte više: [Email problems](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-8",
+          "question": "Kako funkcionišu serveri imena?",
+          "answer": "Serveri imena određuju koji DNS sistem služi vašoj domeni. Ako ih promijenite, morate ponovo ispravno postaviti A/MX/TXT zapise na novom DNS hostu. Pročitajte više: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "mail-9",
+          "question": "Koliko dugo traje propagacija DNS-a?",
+          "answer": "Često minuta do nekoliko sati; ponekad i do 24–48 sati zbog TTL-ova i keša. Smanjite TTL-ove prije migracije za brže prebacivanje. Pročitajte više: [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen) · [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet)."
+        },
+        {
+          "id": "mail-10",
+          "question": "Mogu li proslijediti email na drugu adresu?",
+          "answer": "Da. Prosljeđivači šalju dolaznu poštu na Gmail, Microsoft 365 ili neko drugo poštansko sanduče – korisno uz ili umjesto punog poštanskog sandučeta. Pročitajte više: [Forward email](/kennisbank/e-mail/email-doorsturen-naar-mailadres)."
+        },
+        {
+          "id": "mail-11",
+          "question": "Mogu li povezati svoju domenu sa Microsoft 365?",
+          "answer": "Da. Postavljate MX i zapise o autentifikaciji (SPF/DKIM/DMARC) prema Microsoftovim uputstvima; pomažemo na strani DNS-a. Pročitajte više: [Domain to Microsoft 365](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-microsoft-365) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-12",
+          "question": "Zašto moja pošta završava u neželjenoj pošti?",
+          "answer": "SPF/DKIM/DMARC često nedostaju ili su u sukobu, ili je IP/reputacija slaba. Provjeravamo DNS auth i ponašanje slanja. Pročitajte više: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-13",
+          "question": "Šta je MX zapis?",
+          "answer": "MX zapis govori internetu koji server pošte može primati e-poštu za vašu domenu. Bez ispravnog MX-a, pošta ne stiže. Pročitajte više: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Email problems](/kennisbank/hosting/problemen-met-e-mail-website)."
+        },
+        {
+          "id": "mail-14",
+          "question": "Mogu li koristiti web poštu?",
+          "answer": "Da, preko URL-a web pošte vašeg hosting panela možete čitati i slati poštu u pretraživaču — uz IMAP na telefonu ili Outlooku. Pročitajte više: [Set up email](/kennisbank/e-mail/e-mail-instellen-op-android) · [Contact](/contact)."
+        },
+        {
+          "id": "mail-15",
+          "question": "Da li DNS mora biti s vama ako je hosting negdje drugdje?",
+          "answer": "Ne. Možete zadržati DNS kod nas ili negdje drugdje, sve dok A/MX/TXT upućuju na prave usluge. Dosljedno upravljanje sprječava greške migracije. Pročitajte više: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Nameservers](/kennisbank/domeinnamen/nameservers-beheren)."
         }
       ]
     }

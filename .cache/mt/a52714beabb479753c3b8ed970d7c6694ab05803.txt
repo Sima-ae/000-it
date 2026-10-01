@@ -1,0 +1,1 @@
+DNS'yi (MX/SPF/DKIM/DMARC), posta kutusu kotasını ve sağlayıcıların postaları engelleyip engellemediğini kontrol edin. Tüm zincirin izlenmesine yardımcı oluyoruz. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

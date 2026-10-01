@@ -1,0 +1,1 @@
+Da. Ne ocupăm de backup, migrare, DNS cutover, SSL și teste de fum, cu timp de nefuncționare minim. Citește mai mult: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Ja. Vidarebefordran av domän skickar besökare till en annan webbadress – användbart för varumärken utan en separat webbplats. Vi anpassar DNS och omdirigeringar med dina inställningar. Läs mer: ⟦L0⟧ · ⟦L1⟧.

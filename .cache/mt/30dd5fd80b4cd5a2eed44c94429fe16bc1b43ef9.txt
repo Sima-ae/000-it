@@ -1,0 +1,1 @@
+A hospedagem WordPress é otimizada para WP: PHP/stack mais rápido, geralmente CDN e instalações/atualizações mais simples do que compartilhadas genéricas. Leia mais: ⟦L0⟧ · ⟦L1⟧.

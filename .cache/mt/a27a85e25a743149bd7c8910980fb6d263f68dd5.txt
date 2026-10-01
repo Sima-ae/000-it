@@ -1,0 +1,1 @@
+Verifique DNS (MX/SPF/DKIM/DMARC), cuota de buzón y si los proveedores están bloqueando el correo. Ayudamos a rastrear la cadena completa. Leer más: ⟦L0⟧ · ⟦L1⟧.

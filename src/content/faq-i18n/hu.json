@@ -12,12 +12,12 @@
         {
           "id": "gen-1",
           "question": "Mit csinál pontosan a TripleZero iT?",
-          "answer": "A TripleZero iT egyesíti a webdesignt, a WordPress támogatást, a digitális marketinget, a keresési láthatóságot (AEO, GEO/helyi és SEO), a tervezést és a hostingot. Segítünk a márkáknak gyorsabban megtalálni, jobb weboldalakat készíteni és mérhető módon növekedni."
+          "answer": "A TripleZero iT egyesíti a webdesignt, a WordPress támogatást, a digitális marketinget, a keresési láthatóságot (AEO, GEO/helyi és SEO), a tervezést és a hostingot. Segítünk a márkáknak gyorsabban megtalálni, jobb weboldalakat készíteni és mérhető módon növekedni. [About us](/over-ons) · [Services](/diensten)"
         },
         {
           "id": "gen-2",
           "question": "Hogyan kezdhetem el a TripleZero iT-t?",
-          "answer": "Vegye fel velünk a kapcsolatot, vagy foglaljon időpontot. Lefutunk egy rövid felvételt, áttekintjük a célokat és halmozzuk, majd elkészítjük a konkrét javaslatot tervezéssel és KPI-kkel."
+          "answer": "Vegye fel velünk a kapcsolatot, vagy foglaljon időpontot. Lefutunk egy rövid felvételt, áttekintjük a célokat és halmozzuk, majd elkészítjük a konkrét javaslatot tervezéssel és KPI-kkel. [Schedule appointment](/afspraak) · [Contact](/contact)"
         },
         {
           "id": "gen-3",
@@ -73,6 +73,46 @@
           "id": "gen-13",
           "question": "Át tudja venni a meglévő szállítókat, vagy együttműködhet velük?",
           "answer": "Igen. Zökkenőmentesen dolgozunk együtt fejlesztőkkel, marketingesekkel vagy ügynökségekkel, vagy átvállaljuk a karbantartást és az optimalizálást anélkül, hogy szükségtelenül megzavarnánk a meglévő munkát."
+        },
+        {
+          "id": "gen-14",
+          "question": "Mi az Agent 000 (a csevegési asszisztens)?",
+          "answer": "Az Agent 000 a digitális asszisztensünk a helyszínen és a támogatási folyamatokban. Megválaszolja a gyakran ismételt kérdéseket, rámutat a tudásbázis cikkeire, és élő csevegésre, jegyvásárlásra vagy időpont egyeztetésre tud irányítani, amikor az emberi segítség megfelelőbb. Bővebben: [Digital assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Chat, ticket or call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "gen-15",
+          "question": "Hogyan foglalhatok időpontot vagy telefonálhatok?",
+          "answer": "Az Időpont egyeztetés oldalon kiválaszthatja az Önnek megfelelő időpontot. Gyors kérdésekhez használhatja az élő csevegést vagy a jegyet is; a telefonos időpont egyeztetés hasznos a bonyolultabb folyamatokhoz vagy felvételekhez. Bővebben: [Appointment](/afspraak) · [Call appointment explained](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)."
+        },
+        {
+          "id": "gen-16",
+          "question": "Hol láthatom szolgáltatásai állapotát?",
+          "answer": "Az állapotoldalon a tárhelyszolgáltatással és a kapcsolódó szolgáltatásokkal kapcsolatos incidenseket és karbantartásokat jelenítjük meg, így gyorsan láthatja, hogy történik-e valami. Bővebben: [Statuspage](/statuspage)."
+        },
+        {
+          "id": "gen-17",
+          "question": "Van tudásbázisa?",
+          "answer": "Igen. A tudásbázis kézikönyveket tartalmaz a tartományokról, DNS-ről, e-mailről, tárhelyről, WordPress-ről, AI-vizsgálatról, biztonságról és még sok másról – lépésről lépésre magyarázattal. Bővebben: [Knowledge base](/kennisbank)."
+        },
+        {
+          "id": "gen-18",
+          "question": "Hogyan kezeli az adatvédelmet és a sütiket?",
+          "answer": "GDPR-tudatosan dolgozunk: adatvédelmi szövegek, hozzájárulási űrlapok és cookie-bannerek/beleegyezés mód, ahol nyomon követésre van szükség. A WordPress esetében segítünk a cookie-k helyes beállításában. Bővebben: [Cookie banner in WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress) · [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Privacy with forms](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren)."
+        },
+        {
+          "id": "gen-19",
+          "question": "Hol találom híreit és frissítéseit?",
+          "answer": "A híroldalon frissítéseket teszünk közzé a termékekről, a biztonságról és a tippekről. Műszaki hibák esetén ellenőrizze az állapotoldalt. Bővebben: [News](/nieuws) · [Statuspage](/statuspage)."
+        },
+        {
+          "id": "gen-20",
+          "question": "Mennyibe kerül veled dolgozni?",
+          "answer": "Ez a keveréktől függ: a hosting- és vásárlási termékek fix árai vannak; tervezés, SEO, hirdetések és rögzítők követik a bevitelt. Az üzletben csomagokat lát; testreszabási javaslatot fog kapni. Bővebben: [Shop](/shop) · [Contact](/contact)."
+        },
+        {
+          "id": "gen-21",
+          "question": "Ön is csak tanácsadást vagy auditálást végezhet?",
+          "answer": "Igen. Az auditok, az AI-vizsgálatok, a műszaki áttekintések és a sparring-munkamenetek a teljes körű szolgáltatást nyújtó folyamattól függetlenül is elvégezhetők. Ezt követően megteheti saját maga, vagy ránk bízhatja. Bővebben: [AI scan](/ai-scan) · [Services](/diensten)."
         }
       ]
     },
@@ -83,17 +123,17 @@
         {
           "id": "ai-1",
           "question": "Mi az AI-vizsgálat a TripleZero iT-nél?",
-          "answer": "Az AI-reainess vizsgálat felméri, hogy webhelyét mennyire találják meg a klasszikus keresőmotorok, a mesterséges intelligencia válaszai és a helyi vagy földrajzi keresési eredmények (AEO, GEO, SEO és a technikai alapok)."
+          "answer": "Az AI-reainess vizsgálat felméri, hogy webhelyét mennyire találják meg a klasszikus keresőmotorok, a mesterséges intelligencia válaszai és a helyi vagy földrajzi keresési eredmények (AEO, GEO, SEO és a technikai alapok). [What is the AI ​​scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Start AI scan](/ai-scan)"
         },
         {
           "id": "ai-2",
           "question": "Mit mér pontosan az AI-szkennelés?",
-          "answer": "A vizsgálat méri az AEO jeleket, a GEO/helyi láthatóságot, a SEO alapjait, a tartalomszerkezetet, a teljesítménymutatókat és az AI-készültséget. Pontokat és konkrét fejlesztési pontokat kapsz."
+          "answer": "A vizsgálat méri az AEO jeleket, a GEO/helyi láthatóságot, a SEO alapjait, a tartalomszerkezetet, a teljesítménymutatókat és az AI-készültséget. Pontokat és konkrét fejlesztési pontokat kapsz. [Explain scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)"
         },
         {
           "id": "ai-3",
           "question": "Milyen gyakran kell AI-vizsgálatot futtatnom?",
-          "answer": "Legalábbis jelentős webhelymódosítások vagy kampányok után. Az aktív márkák esetében javasoljuk az időszakos vizsgálatot, például negyedévente, hogy látható maradjon a keresési és a mesterséges intelligencia találatai között."
+          "answer": "Legalábbis jelentős webhelymódosítások vagy kampányok után. Az aktív márkák esetében javasoljuk az időszakos vizsgálatot, például negyedévente, hogy látható maradjon a keresési és a mesterséges intelligencia találatai között. [Start AI scan](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website)"
         },
         {
           "id": "ai-4",
@@ -118,12 +158,12 @@
         {
           "id": "ai-8",
           "question": "Milyen az AI-készültség a márkám számára?",
-          "answer": "Ez a webhely, a tartalom és az adatok beállításának mértéke, hogy az AI-rendszerek helyesen tudják idézni, ajánlani és elmagyarázni a márkáját."
+          "answer": "Ez a webhely, a tartalom és az adatok beállításának mértéke, hogy az AI-rendszerek helyesen tudják idézni, ajánlani és elmagyarázni a márkáját. [AI readiness in the scan](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)"
         },
         {
           "id": "ai-9",
           "question": "Használhatok mesterséges intelligencia-ügynököket az irányítópulton?",
-          "answer": "Igen. Az ügyfélportálon mesterséges intelligencia-ügynököket láthat a keresőoptimalizáláshoz, a tartalomhoz, a közösségi oldalhoz és a hirdetésekhez – beleértve az állapotot és a feladatokat is."
+          "answer": "Igen. Az ügyfélportálon mesterséges intelligencia-ügynököket láthat a keresőoptimalizáláshoz, a tartalomhoz, a közösségi oldalhoz és a hirdetésekhez – beleértve az állapotot és a feladatokat is. [What are AI agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Agents in your account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)"
         },
         {
           "id": "ai-10",
@@ -144,6 +184,46 @@
           "id": "ai-13",
           "question": "Hogyan mérhetem az AI-kezdeményezések ROI-ját?",
           "answer": "Olyan KPI-k révén, mint a forgalom, a leadek, a megtakarított idő, a tartalomkimenet, a jegyfelbontás és a konverzió. Ezeket előre meghatározzuk a tervben, hogy az eredmények láthatóak maradjanak."
+        },
+        {
+          "id": "ai-14",
+          "question": "Hogyan indíthatok el mesterséges intelligencia vizsgálatot a webhelyemen?",
+          "answer": "Lépjen az AI-szkennelésbe, adja meg URL-jét, és indítsa el az elemzést. Pontokat kap az AEO, GEO, SEO, teljesítmény és mesterséges intelligencia készenlétért, plusz pontokat a fejlesztésért. Bővebben: [Start AI scan](/kennisbank/ai-scan/hoe-start-ik-een-ai-scan-op-mijn-website) · [AI scan page](/ai-scan)."
+        },
+        {
+          "id": "ai-15",
+          "question": "Hogyan olvashatom ki az AI-scan pontszámokat?",
+          "answer": "Minden pontszám megmutatja, milyen erős vagy az adott területen; az alacsony pontszámok konkrét tippekkel járnak. Használja a beolvasást prioritási listaként, ne egyszeri „jelentéskártyaként”. Bővebben: [Explain scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Next steps](/kennisbank/ai-scan/welke-vervolgstappen-zet-ik-na-mijn-ai-scan)."
+        },
+        {
+          "id": "ai-16",
+          "question": "Mi a különbség az AI-szkennelés és a teljes AEO/GEO/SEO folyamat között?",
+          "answer": "A vizsgálat gyors diagnózis. Egy folyamat fejlesztéseket hajt végre: tartalom, strukturált adatok, technikai SEO, helyi jelek és időbeli mérés. Bővebben: [Scan versus process](/kennisbank/ai-scan/ai-scan-versus-een-volledig-aeo-geo-seo-traject-wat-is-het-verschil) · [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-17",
+          "question": "Hol találom a korábbi AI-vizsgálatokat a fiókomban?",
+          "answer": "A bejelentkezett ügyfelek az irányítópulton látják a korábbi vizsgálatokat és elemzéseket (SEO elemzés), így összehasonlíthatja a fejlődést. Bővebben: [AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting) · [Account / dashboard](/dashboard)."
+        },
+        {
+          "id": "ai-18",
+          "question": "Mit tegyek alacsony AEO vagy GEO pontszám után?",
+          "answer": "Részesítse előnyben a GYIK-et, az entitásokat, a strukturált adatokat (AEO) és a Google-vállalkozási profilt / NAP-t / helyi céloldalakat (GEO). Segítünk az ütemterv megvalósításában. Bővebben: [Scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness) · [Local Discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "ai-19",
+          "question": "Hogyan működnek az AI-ügynökök az ügyfélkapun?",
+          "answer": "Az AI-ügynökök támogatják a SEO-val, tartalommal, közösségi oldalakkal vagy hirdetésekkel kapcsolatos feladatokat. Megnyitja az áttekintést a fiókjában, megtekintheti az állapotot, és csomagjának megfelelően elindíthatja vagy szüneteltetheti az ügynököket. Bővebben: [What are AI agents?](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [Open agents](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account)."
+        },
+        {
+          "id": "ai-20",
+          "question": "Ingyenes az AI-szkennelés?",
+          "answer": "Van egy elérhető bejegyzés az AI-szkennelési oldalon; a mélyebb elemzések és folyamatok a szolgáltatások vagy a megtartók körébe tartoznak. A vizsgálat után azonnal látni fogja, hogy hasznos-e a nyomon követés. Bővebben: [AI scan](/ai-scan) · [What is the AI ​​scan?](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "ai-21",
+          "question": "Az Agent 000 segít a mesterséges intelligenciával és a SEO-val kapcsolatos kérdésekben is?",
+          "answer": "Igen. Az Agent 000 a GYIK-et és a tudásbázist használja az AEO/GEO/SEO és az AI vizsgálati kérdések megválaszolására, valamint a megfelelő cikkekre vagy emberi nyomon követésre mutató hivatkozásokra. Bővebben: [Digital Assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [FAQ](/faq)."
         }
       ]
     },
@@ -154,17 +234,17 @@
         {
           "id": "seo-1",
           "question": "Mi a különbség az AEO, a GEO és a SEO között?",
-          "answer": "Az AEO (Answer Engine Optimization) az AI-válaszokra összpontosít. A GEO (Geographic Search Engine Optimization) erősíti a helyi és regionális láthatóságot a Térképekben, a helyi csomagokban és a helyalapú keresésben. A SEO a klasszikus keresőmotorokhoz optimalizál."
+          "answer": "Az AEO (Answer Engine Optimization) az AI-válaszokra összpontosít. A GEO (Geographic Search Engine Optimization) erősíti a helyi és regionális láthatóságot a Térképekben, a helyi csomagokban és a helyalapú keresésben. A SEO a klasszikus keresőmotorokhoz optimalizál. [How AEO, GEO and SEO are related](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen) · [What is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization)"
         },
         {
           "id": "seo-2",
           "question": "Miért számít most az AEO/GEO?",
-          "answer": "Több kereső kap választ a mesterséges intelligencia segítségével, és helyileg (\"közelben\") is keres. AEO nélkül hiányzik az AI idézetek; GEO nélkül hiányoznak a helyi potenciális ügyfelek – még akkor is, ha a klasszikus SEO szilárd."
+          "answer": "Több kereső kap választ a mesterséges intelligencia segítségével, és helyileg (\"közelben\") is keres. AEO nélkül hiányzik az AI idézetek; GEO nélkül hiányoznak a helyi potenciális ügyfelek – még akkor is, ha a klasszikus SEO szilárd. [What is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant)"
         },
         {
           "id": "seo-3",
           "question": "Hogyan kezdj el egy SEO elkötelezettséget?",
-          "answer": "Kezdjük egy műszaki audittal, kulcsszó- és szándékkutatással, egy tartalmi hiányelemzéssel és egy prioritási ütemtervvel, amely az Ön üzleti teljesítménymutatóihoz kapcsolódik."
+          "answer": "Kezdjük egy műszaki audittal, kulcsszó- és szándékkutatással, egy tartalmi hiányelemzéssel és egy prioritási ütemtervvel, amely az Ön üzleti teljesítménymutatóihoz kapcsolódik. [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)"
         },
         {
           "id": "seo-4",
@@ -174,7 +254,7 @@
         {
           "id": "seo-5",
           "question": "Te is foglalkozol helyi SEO-val?",
-          "answer": "Igen. Dolgozunk a Google vállalkozásprofilon, a helyi céloldalakon, a NAP-konzisztencián, az áttekintéseken és a helyi tartalomklasztereken, hogy jobban megtalálják a régiójában."
+          "answer": "Igen. Dolgozunk a Google vállalkozásprofilon, a helyi céloldalakon, a NAP-konzisztencián, az áttekintéseken és a helyi tartalomklasztereken, hogy jobban megtalálják a régiójában. [Improve local discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)"
         },
         {
           "id": "seo-6",
@@ -220,6 +300,36 @@
           "id": "seo-14",
           "question": "Segítesz a nemzetközi SEO-ban?",
           "answer": "Igen. Vállaljuk a hreflang-t, a piackutatást országonként vagy nyelvenként, a tartalom lokalizációját és a több helyben történő műszaki beállításokat."
+        },
+        {
+          "id": "seo-15",
+          "question": "Mi is pontosan az AEO?",
+          "answer": "Az AEO (Answer Engine Optimization) tartalmat hoz létre, hogy az AI válaszok és válaszmotorok helyesen idézhessék a márkáját: egyértelmű GYIK, entitások és strukturált adatok. Bővebben: [What is AEO?](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AEO, GEO and SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
+        },
+        {
+          "id": "seo-16",
+          "question": "Mi az a GEO (földrajzi SEO)?",
+          "answer": "A GEO erősíti a helyi és regionális felfedezhetőséget – térképek, helyi csomagok és helyalapú keresés – GBP, NAP konzisztencia és helyi tartalom révén. Bővebben: [What is GEO?](/kennisbank/aeo-geo-seo/wat-is-geo-geographic-seo-en-voor-wie-is-het-relevant) · [Local discoverability](/kennisbank/aeo-geo-seo/hoe-verbeter-ik-mijn-lokale-vindbaarheid-google-business-profile-en-nap)."
+        },
+        {
+          "id": "seo-17",
+          "question": "Hogyan rendelhetem meg vagy indíthatom el a SEO optimalizálást?",
+          "answer": "Kezdje egy mesterséges intelligencia vizsgálattal vagy audittal, majd egy javaslattal a prioritásokkal. A SEO-t a tartalommal és a technológiával is kombinálhatja bolton/szolgáltatásokon vagy tartókon keresztül. Bővebben: [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting) · [AI Scan](/ai-scan)."
+        },
+        {
+          "id": "seo-18",
+          "question": "Tudna segíteni a strukturált adatokkal és a GYIK ütemezésében?",
+          "answer": "Igen. Releváns diagramokat készítünk (GYIK, Szervezet, LocalBusiness, termékek) és strukturáljuk a tartalmat, hogy a keresőmotorok és a mesterséges intelligencia jobban megértsék Önt. Bővebben: [AEO explanation](/kennisbank/aeo-geo-seo/wat-is-aeo-answer-engine-optimization) · [AI scan scores](/kennisbank/ai-scan/hoe-lees-ik-de-ai-scan-scores-aeo-geo-seo-performance-en-ai-readiness)."
+        },
+        {
+          "id": "seo-19",
+          "question": "Mit csinálsz a Core Web Vitals-szal?",
+          "answer": "Mérjük az LCP-t, az INP-t és a CLS-t, megoldjuk a nehéz eszközöket, a tárhely-/gyorsítótár- és témaproblémákat, és szükség esetén összekapcsoljuk a CDN-nel. Bővebben: [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [Choose Hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "seo-20",
+          "question": "Kombinálhatja a SEO-t a tárhelyszolgáltatással és a WordPress-gondozással?",
+          "answer": "Igen. Stabil hosting, frissítések és teljesítmény képezik az alapot; A SEO erre épít. Sok ügyfél kombinálja a WP-gondozást + a hostingot + a folyamatos SEO-t. Bővebben: [Hosting](/diensten/categorie/hosting) · [Start SEO](/kennisbank/aeo-geo-seo/hoe-bestel-of-start-ik-seo-optimalisatie-via-triplezero-it-hosting)."
         }
       ]
     },
@@ -291,6 +401,26 @@
           "id": "ads-13",
           "question": "A remarketing továbbra is releváns?",
           "answer": "Igen, ha az adatvédelemnek megfelelő, és erős kreatívokkal és ajánlatokkal párosul. Gyakran ez marad a tölcsér leghatékonyabb rétege."
+        },
+        {
+          "id": "ads-14",
+          "question": "Segítesz a hozzájárulási módban és a hirdetésekhez használt cookie-szalaghirdetésekben?",
+          "answer": "Igen. Megfelelő hozzájárulás és címkézés nélkül a hirdetésmérés megbízhatatlan. Szépen összekapcsoljuk a bannereket, a GTM/GA4-et és a pixeleket. Bővebben: [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen) · [Cookie banner WordPress](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "ads-15",
+          "question": "Készíthet céloldalakat kampányokhoz?",
+          "answer": "Igen – gyors nyitóoldalak vagy keresési szándékra szabott WordPress-oldalak, nyomon követéssel és CRO-val. Bővebben: [Services](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "ads-16",
+          "question": "Hogyan előzheti meg a hirdetési költségvetés elpazarolását?",
+          "answer": "Szigorú fiókstruktúra, kizáró kulcsszavak, közönségkizárások, céloldal-illesztés és heti CPA/ROAS-optimalizálás – nem csak kattintások."
+        },
+        {
+          "id": "ads-17",
+          "question": "Jól működnek a hirdetések az AEO/SEO-val?",
+          "answer": "Igen. A hirdetések gyors adatforgalmat és forgalmat biztosítanak; A SEO/AEO fenntartható láthatóság kialakítása. A kulcsszavakból és kreatívokból származó betekintések táplálják a tartalmat és a céloldalakat. Bővebben: [AEO, GEO and SEO](/kennisbank/aeo-geo-seo/hoe-hangen-aeo-geo-en-seo-samen)."
         }
       ]
     },
@@ -362,6 +492,26 @@
           "id": "des-13",
           "question": "Hol tudhatok meg többet a digitális tervezésről?",
           "answer": "További információ a /grafikai-tervezes oldalon és a Digitális Tervezési szolgáltatások menüpontban található."
+        },
+        {
+          "id": "des-14",
+          "question": "Tervezőrendszereket és komponenskönyvtárakat is szállít?",
+          "answer": "Igen, azoknál a márkáknál, amelyek következetesen szeretnének skálázni: tokenek, alkatrészek és dokumentáció, hogy a marketing és a termék ugyanazt a nyelvet beszélje."
+        },
+        {
+          "id": "des-15",
+          "question": "Lehet digitalizálni a meglévő márkastílust?",
+          "answer": "Igen. A nyomtatott vagy hiányos márkairányelveket webkész színekre, tipográfiára, UI készletre és sablonokra fordítjuk."
+        },
+        {
+          "id": "des-16",
+          "question": "UX-kutatással foglalkozol, vagy csak látványtervezéssel foglalkozol?",
+          "answer": "Mindkét. Ahol szükséges, interjúkkal, tölcsérelemzéssel vagy hőtérképekkel kezdjük; majd UI. Így a viselkedés, nem csak az ízlés alapján tervezünk."
+        },
+        {
+          "id": "des-17",
+          "question": "Tervezhet közösségi sablonokat és hirdetési kreatívokat?",
+          "answer": "Igen – körhinta, indexképek, történetek és hirdetések, amelyek megfelelnek a márka- és kampánycéljainak. Bővebben: [Services](/diensten)."
         }
       ]
     },
@@ -433,6 +583,26 @@
           "id": "mkt-13",
           "question": "Hogyan lehet megakadályozni az eredmény nélküli „elfoglalt marketinget”?",
           "answer": "Minden tevékenység KPI-hez van kötve. Az alulteljesítő taktikákat leállítják vagy javítják az adatokkal, így a költségvetés arra megy, ami működik."
+        },
+        {
+          "id": "mkt-14",
+          "question": "Mit tartalmaz általában a marketingtartó?",
+          "answer": "Stratégia, tartalom vagy SEO, kampányok, jelentések és kísérletek keveréke – a KPI-kre szabva. A hatókört és az órákat rögzítjük, hogy a prioritások egyértelműek maradjanak. Bővebben: [Shop](/shop) · [Contact](/contact)."
+        },
+        {
+          "id": "mkt-15",
+          "question": "Segítesz a helymeghatározásban és az üzenetküldésben?",
+          "answer": "Igen. Az egyértelmű pozicionálás, az értékes kellékek és az oldalmásolat biztosítják, hogy a hirdetések, a SEO és az értékesítés ugyanazt az üzenetet közvetítsék."
+        },
+        {
+          "id": "mkt-16",
+          "question": "A marketinget csővezetéken méri, nem csak a forgalmat?",
+          "answer": "Ahol lehetséges: potenciális ügyfelek, SQL-ek, bevétel vagy támogatott konverziók. Minőség nélkül állítjuk be vagy állítjuk le a forgalmat."
+        },
+        {
+          "id": "mkt-17",
+          "question": "Meg lehet tisztítani a marketingvermet és a követést?",
+          "answer": "Igen – GTM, GA4, képpontok, CRM-linkek és hozzájárulás. A tiszta adatok a jó döntések alapja. Bővebben: [Consent mode](/kennisbank/analytics-conversie-toegankelijkheid/consent-mode-en-cookiebanners-correct-koppelen)."
         }
       ]
     },
@@ -504,6 +674,153 @@
           "id": "soc-13",
           "question": "Milyen gyorsan fogunk növekedni a közösségi oldalon?",
           "answer": "A következetesség számít. A jelentős növekedés általában hetekig vagy hónapokig tart; a hirdetések támogatásával gyakran gyorsabban megy."
+        },
+        {
+          "id": "soc-14",
+          "question": "Segítesz a közösségi bizonyítással és véleményezéssel?",
+          "answer": "Igen. Olyan felülvizsgálati kérelmeket, eseteket és felhasználói tartalmakhoz hasonló formátumokat tervezünk, amelyek bizalmat építenek – hamis elköteleződés nélkül."
+        },
+        {
+          "id": "soc-15",
+          "question": "Be lehet állítani a munkavállalói érdekképviseletet?",
+          "answer": "Igen, különösen a LinkedIn-en: egyszerű irányelvek, sablonok és ritmus, hogy a csapat láthatóan megoszthassa a szakértelmét."
+        },
+        {
+          "id": "soc-16",
+          "question": "Hogyan kapcsolja össze a közösségi oldalt a weboldallal és a bolttal?",
+          "answer": "UTM-eken, céloldalakon, terméklinkeken és újracélzáson keresztül. A közösségi egy csatorna a tölcsérben, nem egy sziget. Bővebben: [Shop](/shop)."
+        }
+      ]
+    },
+    {
+      "id": "account-portaal",
+      "title": "Fiók és portál",
+      "items": [
+        {
+          "id": "acc-1",
+          "question": "Hogyan tudok bejelentkezni az ügyfélkapun?",
+          "answer": "Nyissa meg a fiókot/bejelentkezést, és használja az ügyfélfiókja e-mail címét. Ha elveszítette adatait, használja a jelszó visszaállítását, vagy lépjen kapcsolatba velünk. Bővebben: [Account](/dashboard) · [Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-2",
+          "question": "Mit látok a műszerfalamon?",
+          "answer": "Szolgáltatásaitól függően: jegyek, projektek, számlák, mesterséges intelligencia szkennelés/ügynökök és gyorshivatkozások a támogatáshoz. Bővebben: [AI agents in account](/kennisbank/ai-agents/hoe-open-ik-het-ai-agents-overzicht-in-mijn-account) · [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "acc-3",
+          "question": "Elvesztettem a bejelentkezési adataimat – mi van most?",
+          "answer": "Használja az „elfelejtette jelszavát” kifejezést, vagy kövesse az ügyfélpanel tudásbázisának lépéseit. Ha ez nem működik, nyisson jegyet egy ismert kapcsolati címen. Bővebben: [Lost login details](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "acc-4",
+          "question": "Hogyan nyithatok jegyet a portálon?",
+          "answer": "Az ügyfélpanelen válassza ki a támogatást/jegyeket, írja le a problémát, és adjon hozzá bizonyítékokat (URL, képernyőképek). Bővebben: [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "acc-5",
+          "question": "Hol találom a számláimat?",
+          "answer": "A számlákat a portálon a Számlázás/Számlázás menüpont alatt tudja megtekinteni és letölteni. Bővebben: [Consult invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "acc-6",
+          "question": "Hogyan módosíthatom a számlázási információkat vagy a fizetési módot?",
+          "answer": "Módosítsa a cégnevet, az áfaszámot és a fizetési módot fiókbeállításaiban, hogy az új számlák helyesek legyenek. Bővebben: [Change invoice details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "acc-7",
+          "question": "A kollégák is hozzáférhetnek?",
+          "answer": "Igen, fiókszerepekkel (ügyfél, menedzser, adminisztrátor), így több csapattag nyomon követheti a jegyeket vagy projekteket anélkül, hogy mindent megosztana."
+        },
+        {
+          "id": "acc-8",
+          "question": "Az AI-vizsgálat és az AI-ügynökök össze vannak kapcsolva a fiókommal?",
+          "answer": "Igen. A szkennelések és az ügynökök az Ön ügyfélfiókjához tartoznak, így az előzmények és a jogok megmaradnak. Bővebben: [AI agents](/kennisbank/ai-agents/wat-zijn-ai-agents-bij-triplezero-it-hosting) · [AI scan](/kennisbank/ai-scan/wat-is-de-ai-scan-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "acc-9",
+          "question": "Mennyire biztonságos az ügyfélfiókom?",
+          "answer": "Használjon egyedi jelszavakat és 2FA-t, ahol elérhető (beleértve a hosting paneleket is). Ne ossza meg a munkameneteket megosztott számítógépeken. Bővebben: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
+        },
+        {
+          "id": "acc-10",
+          "question": "Nyomon követhetem a projekt állapotát és a teljesítéseket?",
+          "answer": "Ahol a projektek szerepelnek a portálon, megtekintheti az állapotot és a kommunikációt. Ellenkező esetben jegyekkel vagy sprint-frissítésekkel tájékoztatjuk Önt."
+        },
+        {
+          "id": "acc-11",
+          "question": "Hogyan kapcsolhatom össze az üzlet szolgáltatásait a fiókommal?",
+          "answer": "A fizetés után a megrendelések az Ön fiókjához tartoznak; a kiépítés (hosting, domain) automatikusan vagy a támogatás általi beépítésen keresztül következik be. Bővebben: [Shop](/shop)."
+        },
+        {
+          "id": "acc-12",
+          "question": "Hol állíthatom be az értesítéseket vagy a beállításokat?",
+          "answer": "A fiókbeállításokban kezelheti a profilt, és ahol elérhető, az értesítési beállításokat. Számlázási e-mailek esetén tartsa naprakészen e-mail-címét."
+        }
+      ]
+    },
+    {
+      "id": "shop-bestellen",
+      "title": "Vásárlás és rendelés",
+      "items": [
+        {
+          "id": "shop-1",
+          "question": "Mit rendelhetek a boltban?",
+          "answer": "Tárhelycsomagok, domainek, gondozási/támogatási termékek és egyéb szolgáltatások, amelyeket online kínálunk. Személyre szabott árajánlatok elérhetőségen keresztül. Bővebben: [Shop](/shop) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "shop-2",
+          "question": "Hogyan működik a bevásárlókosár és a pénztár?",
+          "answer": "Adja hozzá a termékeket, ellenőrizze az időszakot (hónap/év), és fejezze be a fizetéssel. Ezután megerősítést kap, és hozzáférést kap fiókjához. Bővebben: [Shopping cart](/shop/cart)."
+        },
+        {
+          "id": "shop-3",
+          "question": "Az árak tartalmazzák vagy nem tartalmazzák az áfát?",
+          "answer": "Az üzletben az árakat a feltüntetett áfakörnyezetnek megfelelően mutatjuk be (gyakran a fogyasztói forgalomra is). A számla nettó áfa bontást tartalmaz üzleti ügyfelek számára."
+        },
+        {
+          "id": "shop-4",
+          "question": "Fizethetek havonta vagy évente?",
+          "answer": "Sok hosting és gondozási termék havi és éves opcióval rendelkezik. Évente gyakran olcsóbb; a részletek termékkártyánként értendők."
+        },
+        {
+          "id": "shop-5",
+          "question": "Milyen fizetési módokat fogad el?",
+          "answer": "Gyakori online módszerek fizetésen keresztül (régiótól függően). Vállalati számlák esetén a számla számlázást elérhetőségeinken tudjuk megoldani."
+        },
+        {
+          "id": "shop-6",
+          "question": "Fizetés után azonnal hozzáférek?",
+          "answer": "A szabványos hosting-/domaintermékek esetében a sikeres fizetés után gyorsan megtörténik a kiépítés. Egyedi szolgáltatások esetében a támogatás megtervezi az indulást."
+        },
+        {
+          "id": "shop-7",
+          "question": "Frissíthetem a csomagokat később?",
+          "answer": "Igen. A megosztottról a felhő/VPS-re vagy az alapszintről a Plusz/Businessre az átállás tervezésével lehetséges. Bővebben: [Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [Choose package](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "shop-8",
+          "question": "Hogyan kombinálhatom a bolti termékeket a testreszabással?",
+          "answer": "Rendeljen tárhelyet/gondozást online, és tervezzen tervezést, SEO-t vagy hirdetéseket a felvételen keresztül. A számlázást és az elszámolást lehetőség szerint egybekötjük. Bővebben: [Contact](/contact)."
+        },
+        {
+          "id": "shop-9",
+          "question": "Mi a teendő, ha a rendelésem nem érkezik meg, vagy elakad?",
+          "answer": "Ellenőrizze e-mailjeit (beleértve a spamet is) és a portált. Ha néma marad, nyissa meg a jegyet vagy e-mailben a rendelési számmal. Bővebben: [Contact](/contact) · [Tickets](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel)."
+        },
+        {
+          "id": "shop-10",
+          "question": "Rendelhetek egy domaint és tárhelyet?",
+          "answer": "Igen, ez a szokásos menet: domain + hosting a kosárban, majd DNS kapcsolat. Bővebben: [Domains](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "shop-11",
+          "question": "Vannak csomagok a WordPress Care számára?",
+          "answer": "Igen. A gondozási csomagok magukban foglalják a frissítéseket, a felügyeletet és a karbantartást – külön vagy a tárhely mellett. Bővebben: [Shop](/shop)."
+        },
+        {
+          "id": "shop-12",
+          "question": "Hogyan törölhetek vagy módosíthatok egy rendelést?",
+          "answer": "Közvetlenül a támogatáson keresztüli megrendelés után; Ezt követően termékenként elállási és változtatási feltételek érvényesek. Segítünk a migrációban vagy az exportálásban, ha leáll. Bővebben: [Contact](/contact)."
         }
       ]
     },
@@ -514,12 +831,12 @@
         {
           "id": "sup-1",
           "question": "Milyen támogatást ajánl?",
-          "answer": "Kínálunk WordPress támogatást, egyedi webhelytámogatást, jegyeket és élő csevegést, karbantartást, biztonságot, teljesítményt és reagálást az eseményekre."
+          "answer": "Kínálunk WordPress támogatást, egyedi webhelytámogatást, jegyeket és élő csevegést, karbantartást, biztonságot, teljesítményt és reagálást az eseményekre. [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting) · [Chat, ticket or call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)"
         },
         {
           "id": "sup-2",
           "question": "Hogyan érhetem el a támogatást?",
-          "answer": "Kapcsolatfelvétel, időpont egyeztetés, jegyek a műszerfalon vagy élő chaten keresztül az oldalon. A sürgős esetek prioritásként vannak megjelölve."
+          "answer": "Kapcsolatfelvétel, időpont egyeztetés, jegyek a műszerfalon vagy élő chaten keresztül az oldalon. A sürgős esetek prioritásként vannak megjelölve. [Contact](/contact) · [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Call appointment](/kennisbank/support/hoe-werkt-de-belafspraak-bij-triplezero-it-hosting)"
         },
         {
           "id": "sup-3",
@@ -529,7 +846,7 @@
         {
           "id": "sup-4",
           "question": "24 órás felügyeletet kínál?",
-          "answer": "Igen, a megfelelő támogatási és tárhelycsomagokban: figyelés, biztonsági mentések és riasztások, így a problémák korábban láthatóvá válnak."
+          "answer": "Igen, a megfelelő támogatási és tárhelycsomagokban: figyelés, biztonsági mentések és riasztások, így a problémák korábban láthatóvá válnak. [Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup)"
         },
         {
           "id": "sup-5",
@@ -539,22 +856,22 @@
         {
           "id": "sup-6",
           "question": "Te kezeled helyettünk a WordPress frissítéseit?",
-          "answer": "Igen, a „Karbantartás és frissítések” menüpontban: mag, bővítmények és témák, biztonsági mentéssel és ellenőrzésekkel a frissítés előtt és után."
+          "answer": "Igen, a „Karbantartás és frissítések” menüpontban: mag, bővítmények és témák, biztonsági mentéssel és ellenőrzésekkel a frissítés előtt és után. [Site down after WP update](/kennisbank/hosting/website-down-na-update-wordpress)"
         },
         {
           "id": "sup-7",
           "question": "Segítesz hosting problémákban?",
-          "answer": "Igen. Diagnosztizáljuk, migráljuk vagy optimalizáljuk a tárhelyet, a VPS-t és a domaineket, amíg az oldal újra stabilan nem fut."
+          "answer": "Igen. Diagnosztizáljuk, migráljuk vagy optimalizáljuk a tárhelyet, a VPS-t és a domaineket, amíg az oldal újra stabilan nem fut. [Move website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je)"
         },
         {
           "id": "sup-8",
           "question": "Mi van, ha a webhelyem nem működik?",
-          "answer": "Sürgősként jelentse be. Ahol lehetséges, biztonsági mentésekkel, szerverellenőrzésekkel és gyorsjavítással visszaállítjuk, és folyamatosan tájékoztatjuk az állapotról."
+          "answer": "Sürgősként jelentse be. Ahol lehetséges, biztonsági mentésekkel, szerverellenőrzésekkel és gyorsjavítással visszaállítjuk, és folyamatosan tájékoztatjuk az állapotról. [Backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [Check yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support)"
         },
         {
           "id": "sup-9",
           "question": "Van ügyfélkapu?",
-          "answer": "Igen. A bejelentkezett ügyfelek láthatják az irányítópultot, a jegyeket, a projekteket és adott esetben a CRM-et vagy a számlákat."
+          "answer": "Igen. A bejelentkezett ügyfelek láthatják az irányítópultot, a jegyeket, a projekteket és adott esetben a CRM-et vagy a számlákat. [Ticket via customer panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel) · [Lost login?](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)"
         },
         {
           "id": "sup-10",
@@ -575,6 +892,56 @@
           "id": "sup-13",
           "question": "Frissíthetem a támogatást később?",
           "answer": "Igen. Növelheti a méretet, ha a forgalom, a kockázat vagy a csapat igényei nőnek."
+        },
+        {
+          "id": "sup-14",
+          "question": "Mi a különbség a chat, a jegy és a telefonos előjegyzés között?",
+          "answer": "A chat gyors a rövid kérdésekhez; a jegyek jobbak műszaki esetekre naplókkal és nyomon követéssel; telefonos megbeszélés alkalmas felvételre vagy komplex magyarázatra. Bővebben: [Chat versus ticket versus call appointment](/kennisbank/support/chat-versus-ticket-versus-belafspraak-wat-kies-ik-wanneer)."
+        },
+        {
+          "id": "sup-15",
+          "question": "Hogyan hozhatok létre támogatási jegyet?",
+          "answer": "Jelentkezzen be az ügyfélpanelre, és nyissa meg a jegyet egyértelmű URL-lel, lépésekkel és képernyőképekkel. Minél jobbak az információk, annál gyorsabban tudunk segíteni. Bővebben: [Create ticket](/kennisbank/support/hoe-maak-ik-een-support-ticket-aan-in-het-klantenpanel) · [Ticket via panel](/kennisbank/support/hoe-stel-ik-een-ticket-in-voor-support-via-het-klantenpanel)."
+        },
+        {
+          "id": "sup-16",
+          "question": "Van biztonsági másolatod, ha a webhelyem leáll?",
+          "answer": "Igen, a tárhelytől vagy a támogatási csomagtól függően. Leállás esetén lehetőség szerint visszaállítjuk a biztonsági másolatokat, és kivizsgáljuk az okot. Bővebben: [Downtime backups](/kennisbank/support/mijn-site-doet-het-niet-meer-hebben-jullie-een-backup) · [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor)."
+        },
+        {
+          "id": "sup-17",
+          "question": "Mit ellenőrizhetek magam, mielőtt felhívnám az ügyfélszolgálatot?",
+          "answer": "Ellenőrizze az állapotoldalt, a DNS terjedését, a legutóbbi frissítéseket, a lemezterületet és azt, hogy a hiba reprodukálható-e. Ez felgyorsítja a diagnózist. Bővebben: [Do it yourself before support](/kennisbank/support/wat-kan-ik-zelf-doen-voordat-ik-contact-opneem-met-support) · [Statuspage](/statuspage)."
+        },
+        {
+          "id": "sup-18",
+          "question": "Hogyan működik az élő chat az oldalon?",
+          "answer": "Nyissa meg az élő csevegést a csevegés gombbal. A 000 ügynök először segít a GYIK/tudásbázisban; Bonyolultabb vagy sürgősebb ügyekben munkatársunkhoz irányítjuk. Bővebben: [Digital Assistant](/kennisbank/support/digitale-assistent-triplezero-it-hosting) · [Contact](/contact)."
+        },
+        {
+          "id": "sup-19",
+          "question": "Tudsz segíteni egy kritikus WordPress-hiba esetén?",
+          "answer": "Igen. Biztonsági mentéssel és célzott javítással diagnosztizáljuk a fehér képernyőket, a kritikus PHP-hibákat és a plugin-ütközéseket. Bővebben: [Critical Error WordPress](/kennisbank/wordpress/kritieke-fout-wordpress) · [Down after update](/kennisbank/hosting/website-down-na-update-wordpress)."
+        },
+        {
+          "id": "sup-20",
+          "question": "Tudod nézni távolról (TeamViewer stb.)?",
+          "answer": "Ahol szükséges és engedéllyel, asztali vagy panelproblémák esetén. A legtöbb hosting ügyben elegendő a panelhez, a DNS-hez vagy a WordPresshez való hozzáférés. Bővebben: [Contact support](/kennisbank/support/hoe-neem-ik-contact-op-met-de-support-van-triplezero-it-hosting)."
+        },
+        {
+          "id": "sup-21",
+          "question": "Hogyan mondhatok le egy előfizetést vagy szolgáltatást?",
+          "answer": "Az ügyfélpanelen vagy a támogatáson keresztül lemondhatja; ügyeljen a szerződésben szereplő felmondási időkre. Segítünk az adatok/exportálás és a DNS átvitel pontos elvégzésében. Bővebben: [Contact](/contact) · [Account](/dashboard)."
+        },
+        {
+          "id": "sup-22",
+          "question": "Kínál WordPress Care / karbantartási csomagokat?",
+          "answer": "Igen. A frissítéseket, a biztonsági mentéseket, a biztonsági ellenőrzéseket és a teljesítményt a gondozási csomagok tartalmazzák – ideálisak a hosting mellett. Bővebben: [Shop](/shop) · [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren)."
+        },
+        {
+          "id": "sup-23",
+          "question": "Mi van, ha az e-mail hirtelen leáll?",
+          "answer": "Ellenőrizze a DNS-t (MX/SPF/DKIM/DMARC), a postafiókkvótát és azt, hogy a Microsoft vagy a szolgáltatók blokkolják-e a leveleket. Segítünk a lánc mérésében. Bővebben: [Email Problems](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
         }
       ]
     },
@@ -585,7 +952,7 @@
         {
           "id": "web-1",
           "question": "Csak WordPress oldalakat készítesz?",
-          "answer": "Nem. A WordPress mellett egyedi webdesignt végzünk HTML/CSS/JS, PHP és Next.js nyelven – a WordPress szolgáltatásoktól elkülönülten."
+          "answer": "Nem. A WordPress mellett egyedi webdesignt végzünk HTML/CSS/JS, PHP és Next.js nyelven – a WordPress szolgáltatásoktól elkülönülten. [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [Services](/diensten)"
         },
         {
           "id": "web-2",
@@ -635,7 +1002,7 @@
         {
           "id": "web-11",
           "question": "Mi a helyzet az indítás utáni teljesítménnyel?",
-          "answer": "Optimalizáljuk a Core Web Vitalokat, a gyorsítótárat vagy a CDN-t és a felügyeletet. Az utógondozás ezután karbantartási csomagokon keresztül folytatódik."
+          "answer": "Optimalizáljuk a Core Web Vitalokat, a gyorsítótárat vagy a CDN-t és a felügyeletet. Az utógondozás ezután karbantartási csomagokon keresztül folytatódik. [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)"
         },
         {
           "id": "web-12",
@@ -651,87 +1018,349 @@
           "id": "web-14",
           "question": "Segít a helyszíni konverzióoptimalizálásban?",
           "answer": "Igen. A/B teszteket, UX fejlesztéseket, űrlapokat, CTA-kat és oldalsebességet futtatunk, hogy több látogató konvertáljon."
+        },
+        {
+          "id": "web-15",
+          "question": "Építesz webáruházakat is?",
+          "answer": "Igen, a fizetési integrációval rendelkező marketingwebhelyektől a WordPress e-kereskedelemig vagy a testreszabásig. Az átvétel során egyeztetjük a kört, a kifizetéseket és a teljesítést. Bővebben: [Services](/diensten) · [Shop](/shop)."
+        },
+        {
+          "id": "web-16",
+          "question": "Hogyan kezeli az adatvédelmi szövegeket a webhelyeken?",
+          "answer": "Tanácsot adunk és megvalósítunk adatvédelmi és beleegyezési folyamatokat az űrlapokhoz és szalaghirdetésekhez, szükség esetén ügyvédjére szabva. Bővebben: [Privacy with forms](/kennisbank/webdesign-en-maatwerk/privacytekst-en-toestemming-bij-leadformulieren) · [Cookie banner](/kennisbank/wordpress/hoe-voeg-ik-een-gdpr-avg-cookiebanner-toe-in-wordpress)."
+        },
+        {
+          "id": "web-17",
+          "question": "Biztosítasz színpadi környezeteket?",
+          "answer": "Igen, ahol releváns: áttekintések és tesztek előkészítése, majd ellenőrzött üzembe helyezés a termelésbe."
+        },
+        {
+          "id": "web-18",
+          "question": "Átvehet és javíthat egy meglévő WordPress webhelyet?",
+          "answer": "Igen – ellenőrzés, frissítések, biztonság, sebesség, UX és SEO, anélkül, hogy szükségtelenül a semmiből építkezne. Bővebben: [WP move](/kennisbank/domeinnamen/wordpress-website-verhuizen) · [Critical errors](/kennisbank/wordpress/kritieke-fout-wordpress)."
+        },
+        {
+          "id": "web-19",
+          "question": "Mi a helyzet a HTTP-vel a HTTPS-re a kézbesítés után?",
+          "answer": "A webhelyek alapértelmezés szerint HTTPS-t használnak. A migráció során kényszerítjük a HTTPS-t, és feloldjuk a vegyes tartalmat. Bővebben: [HTTP to HTTPS in WordPress](/kennisbank/wordpress/wordpress-url-omzetten-van-http-naar-https) · [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig)."
+        }
+      ]
+    },
+    {
+      "id": "domeinen",
+      "title": "Domainok",
+      "items": [
+        {
+          "id": "dom-1",
+          "question": "Mi az a domain név?",
+          "answer": "A domain név az a cím, amellyel a látogatók megtalálják webhelyét (például example.com). DNS-rekordokhoz kapcsolódik, amelyek az Ön tárhelyére vagy e-mailjére mutatnak. Bővebben: [Domain registration](/kennisbank/domeinnamen/domeinnaamregistratie) · [Order domains](/domeinen)."
+        },
+        {
+          "id": "dom-2",
+          "question": "Hogyan regisztrálhatok Önnél egy domain nevet?",
+          "answer": "Keressen rá a névre a domain oldalon, válasszon kiterjesztést, és fejezze be a fizetést az üzletben. A regisztráció után Ön kezeli a DNS-t, a névszervereket és a számlákat a fiókjában. Bővebben: [Domains](/domeinen) · [Registration guide](/kennisbank/domeinnamen/domeinnaamregistratie) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-3",
+          "question": "Átvihetem neked a domainem?",
+          "answer": "Igen. Kérjen engedélyezési (EPP) kódot jelenlegi regisztrátorától, oldja fel az átviteli zárakat, majd kezdje meg velünk az átvitelt. Ezután helyesen állítottuk be a DNS-t és a névszervereket. Bővebben: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Authorisation code](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-4",
+          "question": "Mi az engedélyezési kód (EPP/Auth kód)?",
+          "answer": "Ez egy egyszeri kód a jelenlegi regisztrátortól, amely biztonságosan elindítja a domainátvitelt. Érvényes kód nélkül az átvitel nem folytatható. Bővebben: [What is an authorisation code?](/kennisbank/domeinnamen/wat-is-een-autorisatiecode) · [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen)."
+        },
+        {
+          "id": "dom-5",
+          "question": "Mi az átviteli zár vagy regisztrátorzár?",
+          "answer": "A zár megakadályozza a nem kívánt átvitelt. Költözéshez gyakran először ki kell kapcsolni az aktuális szolgáltatónál, majd elkezdeni velünk az átvitelt. Bővebben: [Transfer a domain](/kennisbank/domeinnamen/domeinnaam-verhuizen) · [Support](/contact)."
+        },
+        {
+          "id": "dom-6",
+          "question": "Vásárolhatok domaint tárhely nélkül?",
+          "answer": "Igen. Csak egy domaint regisztrálhat vagy vihet át, és később hozzáadhat tárhelyet vagy e-mailt. Közben már kezelheti vagy továbbíthatja a DNS-t. Bővebben: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-7",
+          "question": "Milyen kiterjesztéseket (.nl, .com, …) regisztrálhatok?",
+          "answer": "Támogatjuk az olyan általános TLD-ket, mint az .nl és a .com, valamint számos nemzetközi kiterjesztést. Az elérhetőség és az ár azonnal megjelenik a domain keresésben. Bővebben: [Domains](/domeinen) · [Registration](/kennisbank/domeinnamen/domeinnaamregistratie)."
+        },
+        {
+          "id": "dom-8",
+          "question": "Hogyan újíthatom meg a domain nevemet?",
+          "answer": "A megújítás a számlákon és az ügyfélkapun keresztül történik; az automatikus megújítás gyakran elérhető. Tartsa naprakészen a fizetési adatokat a lejárat elkerülése érdekében. Bővebben: [Invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails) · [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode)."
+        },
+        {
+          "id": "dom-9",
+          "question": "Mik azok a prémium domain nevek?",
+          "answer": "A prémium nevek rövid vagy népszerű domainek, magasabb vételárral, gyakran utánpiacon keresztül. Az elérhetőség és a feltételek kiterjesztésenként eltérőek. Bővebben: [Premium domains](/kennisbank/domeinnamen/premium-domeinnamen) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-10",
+          "question": "Regisztrálhatom a domainemet névtelenül (Protect ID)?",
+          "answer": "Ahol a rendszerleíró adatbázis ezt lehetővé teszi, fontolóra veheti az adatvédelmi/Protect ID-t. A szabályok kiterjesztésenként eltérőek – például a .nl-nek saját keretrendszere van. Bővebben: [Protect ID](/kennisbank/domeinnamen/protect-id-domein-anoniem-registreren)."
+        },
+        {
+          "id": "dom-11",
+          "question": "A domainem karanténban van – mi van most?",
+          "answer": "A törlés után a domain karanténba kerülhet. A rendszerleíró adatbázistól függően gyakran újraaktiválhatja azt díj ellenében; ne várj túl sokáig. Bővebben: [Domain out of quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-12",
+          "question": "Az új domain nevem még nem működik – mi van most?",
+          "answer": "Általában DNS-terjesztés, hiányzó A/MX rekordok vagy még nem frissített névszerverek. Ellenőrizze a rekordokat, és hagyja, hogy a TTL-ek lejárjanak. Bővebben: [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-13",
+          "question": "Hogyan kapcsolhatok domaint a tárhelycsomagomhoz?",
+          "answer": "Adja hozzá a tartományt a panelhez vagy a fiókhoz, és irányítsa a DNS-t (A rekordot vagy névszervereket) a tárhelyre. Megrendelés után az első bekötésben segítünk. Bővebben: [Connect domain to plan](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-14",
+          "question": "Továbbíthatok egy domaint?",
+          "answer": "Igen. A domain-átirányítás egy másik URL-re küldi a látogatókat – ez hasznos a külön webhely nélküli márkaneveknél. A DNS-t és az átirányításokat az Ön beállításához igazítjuk. Bővebben: [Forward a domain](/kennisbank/domeinnamen/domeinnaam-doorsturen) · [Domains](/domeinen)."
+        },
+        {
+          "id": "dom-15",
+          "question": "Hogyan módosíthatom a domain névszervereit?",
+          "answer": "A DNS/domain kezelésben kiválaszthatja a névszervereinket vagy a külső szervereinket (például CDN). A szaporodás óráktól egy napig is eltarthat. Bővebben: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "dom-16",
+          "question": "Mennyibe kerül egy domain név?",
+          "answer": "Az árak hosszabbításonként és időszakonként eltérőek; a domain keresés az aktuális regisztrációs és megújítási árakat mutatja. A prémium neveknek külön ára van. Bővebben: [Domains](/domeinen) · [Shop](/shop)."
+        },
+        {
+          "id": "dom-17",
+          "question": "A tárhelynek és a domainnek ugyanazon szolgáltatónál kell lennie?",
+          "answer": "Nem, de egyszerűbb: DNS, SSL, e-mail és támogatás, majd üljön egy félhez. Csak DNS-t tarthat nálunk, és máshol is tárolhat. Bővebben: [Domain without hosting](/kennisbank/domeinnamen/domeinnaam-kopen-zonder-hosting) · [Hosting](/diensten/categorie/hosting)."
+        },
+        {
+          "id": "dom-18",
+          "question": "Kezelhetek több domaint egy fiókban?",
+          "answer": "Igen. További domainek regisztrálhatók vagy átruházhatók, és kiegészítésként összekapcsolhatók, parkolhatók vagy továbbíthatók – az Ön tárhelytervének határain belül. Bővebben: [Domains](/domeinen) · [Choose a hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
+        },
+        {
+          "id": "dom-19",
+          "question": "Mi történik, ha a domain lejár?",
+          "answer": "A lejárat után gyakran van türelmi időszak vagy karantén, amikor még lehetséges a gyógyulás; utána valaki más igényelheti. Időben történő megújítás számlákkal. Bővebben: [Quarantine](/kennisbank/domeinnamen/domein-quarantaine-halen) · [Contact](/contact)."
+        },
+        {
+          "id": "dom-20",
+          "question": "Hol rendelhetek vagy kezelhetek domaineket?",
+          "answer": "Regisztráció és átvitel a domain oldalon vagy az üzleten keresztül; kezelés (DNS, számlák, megújítás) az ügyfélkapun él. Bővebben: [Domains](/domeinen) · [Shop](/shop) · [Account](/dashboard)."
         }
       ]
     },
     {
       "id": "webhosting",
-      "title": "Webhosting és domainek",
+      "title": "Webtárhely",
       "items": [
         {
           "id": "host-1",
           "question": "Melyik tárhelyet ajánlod?",
-          "answer": "Megosztott tárhelyet, WordPress tárhelyet és VPS-t kínálunk – Basic, Plus és Business szinten – plusz domaineket."
+          "answer": "Megosztott tárhelyet, felhőtárhelyet, WordPress-tárhelyet és VPS-t kínálunk – plusz domain regisztrációt. Válasszon a forgalom, a halom és a növekedés alapján. Bővebben: [Shared hosting](/diensten/shared-hosting) · [Cloud hosting](/diensten/cloud-hosting) · [WordPress hosting](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-2",
-          "question": "Mi a különbség a megosztott, a WordPress és a VPS között?",
-          "answer": "A megosztott költséghatékony kisebb webhelyek esetében. A WordPress hosting WP-re van optimalizálva. A VPS több erőforrást és irányítást biztosít a nagyobb terhelésekhez."
+          "question": "Mi a különbség a megosztott, a felhő, a WordPress és a VPS között?",
+          "answer": "A megosztott költséghatékony kisebb webhelyek esetében. A felhő több erőforrást és skálázhatóságot biztosít, teljes körűen felügyelve. A WordPress hosting WP-re van optimalizálva. A VPS nagyobb irányítást biztosít nagyobb terhelés esetén. Bővebben: [Differences explained](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps) · [Shared plans](/kennisbank/hosting/wat-is-shared-hosting-basic-plus-en-business) · [VPS plans](/kennisbank/hosting/wat-is-vps-hosting-basic-plus-en-business)."
         },
         {
           "id": "host-3",
-          "question": "Segítesz a domain regisztrációban?",
-          "answer": "Igen. Tanácsot adunk, regisztráljuk vagy átruházzuk a domaint, és megfelelően csatlakoztatjuk a DNS-t."
+          "question": "Mi a felhő hosting nálad?",
+          "answer": "A felhőalapú tárhely több erőforrást és méretezhetőséget biztosít, mint a klasszikus megosztott, miközben továbbra is kezeljük. Ideális, ha a megosztás szűkös, de még nincs szükség teljes VPS-re. Bővebben: [Cloud hosting](/diensten/cloud-hosting) · [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket)."
         },
         {
           "id": "host-4",
           "question": "Tartalmazza az SSL-t a tárhelyszolgáltatáshoz?",
-          "answer": "Igen. Az SSL szabvány a vonatkozó tárhelyszolgáltatásainkban."
+          "answer": "Igen. Az SSL szabvány a vonatkozó tárhelyszolgáltatásainkban, így a webhelyek HTTPS-en futnak. Bővebben: [What is SSL?](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [Install Let's Encrypt](/kennisbank/hosting/hoe-installeer-ik-een-gratis-lets-encrypt-ssl-certificaat)."
         },
         {
           "id": "host-5",
           "question": "Áttelepítheti a webhelyemet a tárhelyére?",
-          "answer": "Igen. Kezeljük a biztonsági mentést, a migrációt, a DNS átkapcsolást, az SSL-t és a füstteszteket, minimális állásidővel."
+          "answer": "Igen. Kezeljük a biztonsági mentést, a migrációt, a DNS átkapcsolást, az SSL-t és a füstteszteket, minimális állásidővel. Bővebben: [Migrate website or email](/kennisbank/hosting/website-of-e-mail-verhuizen-regelen-wij-voor-je) · [Migrate WordPress](/kennisbank/domeinnamen/wordpress-website-verhuizen)."
         },
         {
           "id": "host-6",
           "question": "Hogyan működnek a biztonsági mentések a tárhelyen?",
-          "answer": "Ez a tervtől függ: egyszerű vagy automatizált biztonsági mentések. Extra telephelyen kívüli megőrzés is rendelkezésre áll."
+          "answer": "Ez a tervtől függ: egyszerű vagy automatizált biztonsági mentések. Extra telephelyen kívüli megőrzés is rendelkezésre áll. Bővebben: [JetBackup](/kennisbank/directadmin/wat-is-jetbackup-en-waar-gebruik-ik-het-voor) · [Backup in DirectAdmin](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
         },
         {
           "id": "host-7",
           "question": "Mi van, ha nagyobb lesz a forgalom?",
-          "answer": "Ezután Plus, Business vagy VPS-re skálázzuk, és optimalizáljuk a gyorsítótárat és a CDN-t, hogy a webhely kezelni tudja a növekedést."
+          "answer": "Ezután Plus, Business, felhő vagy VPS-re skálázzuk, és optimalizáljuk a gyorsítótárat és a CDN-t, hogy a webhely kezelni tudja a növekedést. Bővebben: [When to move to VPS?](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [CDN](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website)."
         },
         {
           "id": "host-8",
-          "question": "Kínál e-mailt domainekkel?",
-          "answer": "Ez a csomagtól és a beállítástól függ. Megbízható levelezési megoldásokat ajánlunk, és helyesen állítjuk be a DNS-t (SPF, DKIM és DMARC)."
+          "question": "Mennyire biztonságos a tárhely?",
+          "answer": "Tűzfalat, SSL-t, frissítéseket, monitorozást és keményítést használunk. Extra biztonsági rétegek állnak rendelkezésre, ahol szükséges. Bővebben: [SSL](/kennisbank/beveiliging/wat-is-ssl-en-waarom-heb-je-het-nodig) · [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin)."
         },
         {
           "id": "host-9",
-          "question": "Mennyire biztonságos a tárhely?",
-          "answer": "Tűzfalat, SSL-t, frissítéseket, monitorozást és keményítést használunk. Az extra biztonsági szolgáltatások további rétegeket adhatnak a tetejére."
+          "question": "Áttérhetek később megosztottról VPS-re?",
+          "answer": "Igen. Együtt tervezzük meg a migrációt, beleértve a teszteket és a visszaállítást is, így a váltás kontroll alatt marad. Bővebben: [Shared to VPS](/kennisbank/hosting/wanneer-stap-ik-over-van-shared-naar-vps) · [VPS hosting](/diensten/vps-hosting)."
         },
         {
           "id": "host-10",
-          "question": "Áttérhetek később megosztottról VPS-re?",
-          "answer": "Igen. Együtt tervezzük meg a migrációt, beleértve a teszteket és a visszaállítást is, így a váltás kontroll alatt marad."
+          "question": "Támogatod a CDN-t?",
+          "answer": "Igen, ahol releváns – gyakran ingyenes CDN is szerepel a WP-tárhelycsomagokban – a gyorsabb globális kézbesítés érdekében. Bővebben: [What does a CDN do?](/kennisbank/cdn-performance-cloudflare/wat-een-cdn-doet-voor-je-website) · [WordPress hosting](/diensten/wordpress-hosting)."
         },
         {
           "id": "host-11",
-          "question": "Támogatod a CDN-t?",
-          "answer": "Igen, ahol releváns – gyakran ingyenes CDN is szerepel a WP-tárhelycsomagokban – a gyorsabb globális kézbesítés érdekében."
+          "question": "Mi az Ön rendelkezésre állási megközelítése?",
+          "answer": "Felügyeljük, gyorsan reagálunk az incidensekre, és egyértelműen kommunikálunk a karbantartási ablakok körül, így Ön tudja, mi történik. Az állapotfrissítések az állapotoldalon találhatók. Bővebben: [Status page](/statuspage) · [Contact](/contact)."
         },
         {
           "id": "host-12",
-          "question": "Mi az Ön rendelkezésre állási megközelítése?",
-          "answer": "Felügyeljük, gyorsan reagálunk az incidensekre, és egyértelműen kommunikálunk a karbantartási ablakok körül, így Ön tudja, mi történik."
+          "question": "Hogyan válasszam ki a megfelelő tárhelytervet?",
+          "answer": "Forgalom, verem (WordPress vagy egyéni), erőforrások és növekedés alapján. Őszintén tanácsoljuk – nem adjuk túl. Bővebben: [Choose the right hosting plan](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Shared vs WP vs VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
         },
         {
           "id": "host-13",
-          "question": "Segítesz megoldani a DNS-problémákat?",
-          "answer": "Igen. Javítjuk a rekordokat, a terjedést, a levélhitelesítést és a tartományi kapcsolatokat, amíg a DNS újra nem lesz megfelelő."
+          "question": "Hol láthatom a hosting árakat?",
+          "answer": "A tárhelyszolgáltatás oldalain és az üzletben, adott esetben havi vagy éves opciókkal. Bővebben: [Shared](/diensten/shared-hosting) · [Cloud](/diensten/cloud-hosting) · [WordPress](/diensten/wordpress-hosting) · [VPS](/diensten/vps-hosting) · [Shop](/shop)."
         },
         {
           "id": "host-14",
-          "question": "Hogyan válasszam ki a megfelelő tárhelytervet?",
-          "answer": "Forgalom, verem (WordPress vagy egyéni), erőforrások és növekedés alapján. Őszintén tanácsoljuk – nem adjuk túl."
+          "question": "Kapok SSH-hozzáférést a tárhelyemen?",
+          "answer": "Ez a tervtől függ. Sok tervnél elérhető vagy kérhető az SSH; VPS-en általában teljes hozzáférést kap. Bővebben: [SSH access](/kennisbank/hosting/heb-ik-ssh-toegang-op-mijn-hosting) · [VPS](/diensten/vps-hosting)."
         },
         {
           "id": "host-15",
-          "question": "Hol láthatom a hosting árakat?",
-          "answer": "A tárhelyszolgáltatás oldalain a Szolgáltatások → Webtárhely és tartományok alatt, adott esetben havi vagy éves opciókkal."
+          "question": "Hogyan telepíthetem a WordPress-t a tárhelyedre?",
+          "answer": "A vezérlőpulton keresztül (például DirectAdmin/Installatron) vagy manuálisan. Van egy lépésről lépésre útmutatónk. Bővebben: [Install WordPress](/kennisbank/wordpress/handleiding-wordpress-installeren) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-16",
+          "question": "Mik azok az inódák, és miért tűnik „telenek” a tervem?",
+          "answer": "Az Inodes fájlokat/mappákat számol, nem csak a GB-t. Sok kis gyorsítótár- vagy levelezőfájl elérheti a korlátot, miközben a lemezterület továbbra is szabadnak tűnik. Bővebben: [Inodes](/kennisbank/hosting/inodes-en-inode-limieten) · [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-17",
+          "question": "Mit jelent a „korlátlan” tárhely vagy forgalom?",
+          "answer": "A „korlátlan” a méltányos használatot követi: a weboldal normál használata megfelelő; a visszaélések vagy az extrém terhelések korlátozhatók a platform stabilan tartása érdekében. Bővebben: [Storage and traffic](/kennisbank/hosting/onbeperkte-opslag-en-dataverkeer)."
+        },
+        {
+          "id": "host-18",
+          "question": "Mi a különbség a megosztott, a VPS és a dedikált között?",
+          "answer": "megosztott erőforrások; A VPS több CPU/RAM-ot izolál; dedikált egy egész szerver. Válasszon a forgalom, az ellenőrzési igények és a költségvetés alapján. Bővebben: [Dedicated vs VPS vs shared](/kennisbank/infrastructuur-servers/verschil-tussen-dedicated-vps-en-shared-hosting) · [Shared/WP/VPS](/kennisbank/hosting/hoe-kies-ik-tussen-shared-hosting-wordpress-hosting-en-vps)."
+        },
+        {
+          "id": "host-19",
+          "question": "Hogyan dolgozhatok a DirectAdminnal?",
+          "answer": "A DirectAdmin az e-mail, DNS, adatbázisok, biztonsági mentések és telepítések vezérlőpultja. Jelentkezzen be a panel hitelesítő adataival; erősen ajánljuk a 2FA-t. Bővebben: [2FA in DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Backups](/kennisbank/directadmin/backup-maken-en-terugzetten-directadmin)."
+        },
+        {
+          "id": "host-20",
+          "question": "Kínál objektum-gyorsítótárat a WordPresshez?",
+          "answer": "A megfelelő terveken támogatjuk az állandó objektum-gyorsítótárat az adatbázislekérdezések csökkentése és a gyorsabb betöltődés érdekében. Bővebben: [Object cache](/kennisbank/hosting/persistent-object-cache-in-wordpress) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-21",
+          "question": "Hogyan lehet megújítani vagy fizetni a tárhelyért?",
+          "answer": "Ügyfélkapun és számlákon keresztül; az automatikus megújítás gyakran elérhető. A megszakítások elkerülése érdekében tartsa naprakészen a számlázási adatokat. Bővebben: [Billing details](/kennisbank/crm-klantenpanel/hoe-wijzig-ik-mijn-factuurgegevens-en-betaalmethode) · [View invoices](/kennisbank/crm-klantenpanel/hoe-download-of-raadpleeg-ik-factuurdetails)."
+        },
+        {
+          "id": "host-22",
+          "question": "Több domaint is elhelyezhetek egy tárhelycsomagban?",
+          "answer": "Gyakran igen, addonon vagy parkolt domaineken keresztül – az előfizetési korlátoktól függően. Segítünk a csatlakozásban és a DNS-ben. Bővebben: [Choose hosting](/kennisbank/hosting/hoe-kies-ik-het-juiste-hostingpakket) · [Connect domain](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-een-pakket)."
+        },
+        {
+          "id": "host-23",
+          "question": "Mennyire biztonságos a bejelentkezés a hosting panelemre?",
+          "answer": "Használjon erős jelszót, és engedélyezze a 2FA-t. Ne ossza meg a panel bejelentkezési adatait nem biztonságos csatornákon. Bővebben: [2FA DirectAdmin](/kennisbank/directadmin/2fa-instellen-in-directadmin) · [Lost login](/kennisbank/crm-klantenpanel/logingegevens-klantenpanel-kwijt)."
+        },
+        {
+          "id": "host-24",
+          "question": "Mi is az a WordPress hosting pontosan?",
+          "answer": "A WordPress hosting WP-re van optimalizálva: gyorsabb PHP/stack, gyakran CDN és egyszerűbb telepítés/frissítés, mint az általános megosztott. Bővebben: [WP hosting plans](/kennisbank/hosting/wat-is-wordpress-hosting-basic-plus-en-pro) · [WordPress hosting](/diensten/wordpress-hosting)."
+        },
+        {
+          "id": "host-25",
+          "question": "Hol rendelhetek közvetlenül tárhelyet?",
+          "answer": "Az üzletben vagy a Shared, Cloud, WordPress és VPS hosting kategóriákon keresztül. A megrendelés után hozzáférést kap a panelhez és a számlához. Bővebben: [Shop](/shop) · [Hosting overview](/diensten/categorie/hosting)."
+        }
+      ]
+    },
+    {
+      "id": "email-dns",
+      "title": "E-mail és DNS",
+      "items": [
+        {
+          "id": "mail-1",
+          "question": "Kínál e-mailt domainekkel vagy tárhelyszolgáltatással?",
+          "answer": "Ez a csomagtól és a beállítástól függ. Megbízható levelezési megoldásokat ajánlunk, és helyesen állítjuk be a DNS-t (SPF, DKIM és DMARC). Bővebben: [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress) · [SPF record](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-2",
+          "question": "Mi az az SPF, DKIM és DMARC?",
+          "answer": "Ezek DNS-rekordok, amelyek kezelik az e-mail hitelesítést, és csökkentik a hamisítást/spam-eket. Megfelelő nyilvántartás nélkül a levelek gyakrabban kerülnek spambe. Bővebben: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-3",
+          "question": "Hogyan kezelhetem a DNS-rekordokat?",
+          "answer": "A domain DNS-kezelésén vagy a tárhelypanelen keresztül beállíthatja az A, AAAA, CNAME, MX és TXT rekordokat. Segítünk a migrációban és a levél hitelesítésben. Bővebben: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [DNSSEC](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-4",
+          "question": "Segítesz megoldani a DNS-problémákat?",
+          "answer": "Igen. Javítjuk a rekordokat, a terjedést, a levélhitelesítést és a tartományi kapcsolatokat, amíg a DNS újra nem lesz megfelelő. Bővebben: [Manage DNS records](/kennisbank/domeinnamen/dns-records-beheren) · [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen)."
+        },
+        {
+          "id": "mail-5",
+          "question": "Mi az a DNSSEC?",
+          "answer": "A DNSSEC aláírja a DNS-válaszokat, így a manipuláció nehezebb. Ott engedélyezhetjük, ahol a TLD és a beállítás támogatja. Bővebben: [DNSSEC explained](/kennisbank/domeinnamen/wat-is-dnssec-en-hoe-voeg-ik-het-toe-aan-mijn-domein)."
+        },
+        {
+          "id": "mail-6",
+          "question": "Hogyan állíthatom be az e-mailt a telefonomon?",
+          "answer": "Használja az IMAP/SMTP-adatokat a panelről. Android esetén (és hasonlóan iOS-en) a lépések a tudásbázisban találhatók. Bővebben: [Email on Android](/kennisbank/e-mail/e-mail-instellen-op-android) · [Email on your own domain](/kennisbank/e-mail/e-mailadres-eigen-domein-wordpress)."
+        },
+        {
+          "id": "mail-7",
+          "question": "Mi van, ha az e-mail hirtelen leáll?",
+          "answer": "Ellenőrizze a DNS-t (MX/SPF/DKIM/DMARC), a postafiókkvótát és azt, hogy a szolgáltatók blokkolják-e a leveleket. Segítünk nyomon követni a teljes láncot. Bővebben: [Email problems](/kennisbank/hosting/problemen-met-e-mail-website) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-8",
+          "question": "Hogyan működnek a névszerverek?",
+          "answer": "A névszerverek határozzák meg, hogy melyik DNS-rendszer szolgálja ki a domainjét. Ha módosítja őket, az A/MX/TXT rekordokat ismét megfelelően be kell állítania az új DNS-állomáson. Bővebben: [Manage nameservers](/kennisbank/domeinnamen/nameservers-beheren) · [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren)."
+        },
+        {
+          "id": "mail-9",
+          "question": "Mennyi ideig tart a DNS terjedése?",
+          "answer": "Gyakran perctől néhány óráig; néha akár 24–48 óráig is tarthat a TTL-ek és a gyorsítótárak miatt. Csökkentse a TTL-eket az átállás előtt a gyorsabb váltás érdekében. Bővebben: [Propagation and TTL](/kennisbank/foutmeldingen-troubleshooting/dns-propagatie-ttl-en-caches-legen) · [New domain not working](/kennisbank/domeinnamen/mijn-nieuwe-domeinnaam-werkt-niet)."
+        },
+        {
+          "id": "mail-10",
+          "question": "Továbbíthatom az e-mailt másik címre?",
+          "answer": "Igen. A továbbítók a bejövő leveleket a Gmailbe, a Microsoft 365-be vagy más postafiókba küldik – hasznos a teljes postafiók mellett vagy helyett. Bővebben: [Forward email](/kennisbank/e-mail/email-doorsturen-naar-mailadres)."
+        },
+        {
+          "id": "mail-11",
+          "question": "Csatlakozhatom a tartományomat a Microsoft 365-höz?",
+          "answer": "Igen. Az MX és hitelesítési rekordokat (SPF/DKIM/DMARC) a Microsoft utasításai szerint állítja be; DNS oldalon segítünk. Bővebben: [Domain to Microsoft 365](/kennisbank/domeinnamen/domeinnaam-koppelen-aan-microsoft-365) · [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam)."
+        },
+        {
+          "id": "mail-12",
+          "question": "Miért kerülnek a leveleim spambe?",
+          "answer": "Az SPF/DKIM/DMARC gyakran hiányzik vagy ütközik, vagy az IP/hírnév gyenge. Ellenőrizzük a DNS hitelesítést és a küldési viselkedést. Bővebben: [SPF](/kennisbank/domeinnamen/spf-record-voor-je-domeinnaam) · [DKIM](/kennisbank/domeinnamen/dkim-record-toevoegen-aan-dns-domeinnaam) · [DMARC](/kennisbank/domeinnamen/hoe-kan-ik-een-dmarc-record-toevoegen)."
+        },
+        {
+          "id": "mail-13",
+          "question": "Mi az MX rekord?",
+          "answer": "Az MX rekord közli az internettel, hogy melyik levelezőszerver kaphat e-mailt az Ön domainjéhez. Megfelelő MX nélkül nem érkezik levél. Bővebben: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Email problems](/kennisbank/hosting/problemen-met-e-mail-website)."
+        },
+        {
+          "id": "mail-14",
+          "question": "Használhatom a webmailt?",
+          "answer": "Igen, a tárhelypanel webmail URL-címén keresztül olvashat és küldhet e-maileket a böngészőben – a telefonon vagy az Outlookon lévő IMAP mellett. Bővebben: [Set up email](/kennisbank/e-mail/e-mail-instellen-op-android) · [Contact](/contact)."
+        },
+        {
+          "id": "mail-15",
+          "question": "A DNS-nek veled kell lennie, ha a tárhely máshol van?",
+          "answer": "Nem. A DNS-t nálunk vagy máshol is megtarthatja, amíg az A/MX/TXT a megfelelő szolgáltatásokra mutat. A következetes kezelés megakadályozza a migrációs hibákat. Bővebben: [Manage DNS](/kennisbank/domeinnamen/dns-records-beheren) · [Nameservers](/kennisbank/domeinnamen/nameservers-beheren)."
         }
       ]
     }

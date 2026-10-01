@@ -1,0 +1,1 @@
+În managementul DNS/domeniu alegeți serverele noastre de nume sau cele externe (de exemplu un CDN). Propagarea poate dura ore până la o zi. Citește mai mult: ⟦L0⟧ · ⟦L1⟧.

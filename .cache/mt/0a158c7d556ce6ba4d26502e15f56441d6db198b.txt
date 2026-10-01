@@ -1,0 +1,1 @@
+Nel negozio mostriamo i prezzi in base al contesto IVA mostrato (spesso incl. per i flussi di consumo). La fattura contiene la ripartizione IVA netta per i clienti aziendali.

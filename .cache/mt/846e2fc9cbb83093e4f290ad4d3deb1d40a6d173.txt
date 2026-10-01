@@ -1,0 +1,1 @@
+Mes naudojame ugniasienę, SSL, atnaujinimus, stebėjimą ir grūdinimą. Kur reikia, galimi papildomi saugos sluoksniai. Skaityti daugiau: ⟦L0⟧ · ⟦L1⟧.

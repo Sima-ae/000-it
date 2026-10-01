@@ -1,0 +1,1 @@
+Használja az IMAP/SMTP-adatokat a panelről. Android esetén (és hasonlóan iOS-en) a lépések a tudásbázisban találhatók. Bővebben: ⟦L0⟧ · ⟦L1⟧.

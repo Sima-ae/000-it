@@ -1,0 +1,1 @@
+Technical SEO covers crawlability, indexing, Core Web Vitals, structured data, sitemap and robots, canonicals, internal linking and debugging — everything search engines need to properly understand the site.

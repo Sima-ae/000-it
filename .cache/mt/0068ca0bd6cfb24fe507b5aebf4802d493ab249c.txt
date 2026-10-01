@@ -1,0 +1,1 @@
+Tak. Zajmujemy się tworzeniem kopii zapasowych, migracją, przełączaniem DNS, SSL i testami dymnymi przy minimalnych przestojach. Przeczytaj więcej: ⟦L0⟧ · ⟦L1⟧.

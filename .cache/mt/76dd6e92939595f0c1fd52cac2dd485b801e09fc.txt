@@ -1,0 +1,1 @@
+A DNSSEC aláírja a DNS-válaszokat, így a manipuláció nehezebb. Ott engedélyezhetjük, ahol a TLD és a beállítás támogatja. Bővebben: ⟦L0⟧.

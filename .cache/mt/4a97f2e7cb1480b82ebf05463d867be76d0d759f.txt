@@ -1,0 +1,1 @@
+U trgovini prikazujemo cijene prema prikazanom kontekstu PDV-a (često uklj. za tokove potrošača). Račun sadrži raščlanjen neto PDV za poslovne korisnike.

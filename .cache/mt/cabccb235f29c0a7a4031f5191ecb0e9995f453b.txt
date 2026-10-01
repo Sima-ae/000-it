@@ -1,0 +1,1 @@
+Kontrolloni DNS (MX/SPF/DKIM/DMARC), kuotat e kutisë postare dhe nëse Microsoft ose ofruesit po bllokojnë postën. Ne ndihmojmë në matjen e zinxhirit. Lexo më shumë: ⟦L0⟧Probleme me email⟦/L0⟧ · ⟦L1⟧SPF⟦/L1⟧.

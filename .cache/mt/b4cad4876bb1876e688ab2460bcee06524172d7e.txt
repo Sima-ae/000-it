@@ -1,0 +1,1 @@
+L'hébergement WordPress est optimisé pour WP : PHP/pile plus rapide, souvent CDN et installations/mises à jour plus simples que le partage générique. Lire la suite : ⟦L0⟧ · ⟦L1⟧.

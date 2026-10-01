@@ -1,0 +1,1 @@
+Sí. Sin el consentimiento y el etiquetado correctos, la medición de anuncios no es confiable. Vinculamos claramente banners, GTM/GA4 y píxeles. Leer más: ⟦L0⟧ · ⟦L1⟧.

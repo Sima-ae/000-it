@@ -1,0 +1,1 @@
+V obchode zobrazujeme ceny podľa zobrazeného kontextu DPH (často vrátane spotrebiteľských tokov). Faktúra obsahuje čisté členenie DPH pre firemných zákazníkov.

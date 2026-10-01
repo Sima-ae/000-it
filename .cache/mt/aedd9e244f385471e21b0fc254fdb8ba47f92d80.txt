@@ -1,0 +1,1 @@
+Vardų serveriai nustato, kuri DNS sistema aptarnauja jūsų domeną. Jei juos pakeisite, A/MX/TXT įrašus vėl turite teisingai nustatyti naujajame DNS pagrindiniame kompiuteryje. Skaityti daugiau: ⟦L0⟧ · ⟦L1⟧.

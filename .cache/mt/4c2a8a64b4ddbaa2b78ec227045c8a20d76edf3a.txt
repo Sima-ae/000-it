@@ -1,0 +1,1 @@
+Po, aty ku është e nevojshme: organizimi për rishikime dhe teste, më pas vendosja e kontrolluar në prodhim.

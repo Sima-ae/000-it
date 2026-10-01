@@ -1,0 +1,1 @@
+Souvent de quelques minutes à quelques heures ; parfois jusqu'à 24 à 48 heures en raison des durées de vie et des caches. Réduisez les TTL avant une migration pour basculer plus rapidement. Lire la suite : ⟦L0⟧ · ⟦L1⟧.

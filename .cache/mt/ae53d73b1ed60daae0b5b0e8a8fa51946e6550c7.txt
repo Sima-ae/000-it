@@ -1,0 +1,1 @@
+To závisí od plánu. Na mnohých plánoch je SSH k dispozícii alebo si ho možno vyžiadať; na VPS zvyčajne získate úplný prístup. Prečítajte si viac: ⟦L0⟧ · ⟦L1⟧.

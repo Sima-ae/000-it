@@ -1,0 +1,1 @@
+Ja. Uten korrekt samtykke og tagging er annonsemåling upålitelig. Vi kobler pent sammen bannere, GTM/GA4 og piksler. Les mer: ⟦L0⟧ · ⟦L1⟧.

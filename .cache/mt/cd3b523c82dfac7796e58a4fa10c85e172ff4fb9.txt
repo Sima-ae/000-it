@@ -1,0 +1,1 @@
+Siteler varsayılan olarak HTTPS'yi kullanır. Geçişler sırasında HTTPS'yi zorlarız ve karışık içeriği çözeriz. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

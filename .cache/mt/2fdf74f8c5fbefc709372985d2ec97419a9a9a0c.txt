@@ -1,0 +1,1 @@
+Oui. Nous planifions ensemble la migration, y compris les tests et le rollback, afin que le changement reste contrôlé. Lire la suite : ⟦L0⟧ · ⟦L1⟧.

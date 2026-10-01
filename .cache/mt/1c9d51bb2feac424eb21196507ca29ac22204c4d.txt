@@ -1,0 +1,1 @@
+L'hosting WordPress è ottimizzato per WP: PHP/stack più veloce, spesso CDN e installazioni/aggiornamenti più semplici rispetto alla condivisione generica. Per saperne di più: ⟦L0⟧ · ⟦L1⟧.

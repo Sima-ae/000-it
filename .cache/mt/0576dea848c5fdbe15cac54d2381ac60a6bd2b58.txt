@@ -1,0 +1,1 @@
+LCP, INP ve CLS'yi ölçüyoruz, ağır varlıkları, barındırma/önbelleğe alma ve tema sorunlarını çözüyoruz ve yararlı olduğu durumlarda bunu CDN'ye bağlıyoruz. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

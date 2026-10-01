@@ -1,0 +1,1 @@
+Tak. Przekierowanie domeny odsyła odwiedzających na inny adres URL – przydatne w przypadku marek bez osobnej witryny. Dopasowujemy DNS i przekierowania do Twojej konfiguracji. Przeczytaj więcej: ⟦L0⟧ · ⟦L1⟧.

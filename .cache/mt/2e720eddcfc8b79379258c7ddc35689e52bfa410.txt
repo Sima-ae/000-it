@@ -1,0 +1,1 @@
+Dipende dal piano. Su molti piani SSH è disponibile o può essere richiesto; su VPS in genere ottieni l'accesso completo. Per saperne di più: ⟦L0⟧ · ⟦L1⟧.

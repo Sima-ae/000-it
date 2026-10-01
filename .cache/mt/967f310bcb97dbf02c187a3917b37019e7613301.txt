@@ -1,0 +1,1 @@
+Oui. Sans un consentement et un marquage corrects, la mesure des publicités n'est pas fiable. Nous lions soigneusement les bannières, GTM/GA4 et les pixels. Lire la suite : ⟦L0⟧ · ⟦L1⟧.

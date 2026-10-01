@@ -1,0 +1,1 @@
+Abra el chat en vivo a través del botón de chat. El agente 000 primero ayuda con las preguntas frecuentes/base de conocimientos; Para asuntos más complejos o urgentes, lo remitimos a un empleado. Leer más: ⟦L0⟧ · ⟦L1⟧.

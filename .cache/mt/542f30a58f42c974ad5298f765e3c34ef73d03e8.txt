@@ -1,0 +1,1 @@
+Igen. Javítjuk a rekordokat, a terjedést, a levélhitelesítést és a tartományi kapcsolatokat, amíg a DNS újra nem lesz megfelelő. Bővebben: ⟦L0⟧ · ⟦L1⟧.

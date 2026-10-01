@@ -1,0 +1,1 @@
+Site-urile sunt implicite la HTTPS. În timpul migrărilor, forțăm HTTPS și rezolvăm conținutul mixt. Citește mai mult: ⟦L0⟧ · ⟦L1⟧.

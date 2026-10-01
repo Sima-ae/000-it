@@ -1,0 +1,1 @@
+Ellenőrizze az állapotoldalt, a DNS terjedését, a legutóbbi frissítéseket, a lemezterületet és azt, hogy a hiba reprodukálható-e. Ez felgyorsítja a diagnózist. Bővebben: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Tai priklauso nuo plano. Daugelyje planų SSH yra arba jo galima paprašyti; VPS paprastai gaunate visišką prieigą. Skaityti daugiau: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Jest to jednorazowy kod od Twojego obecnego rejestratora, który bezpiecznie rozpoczyna transfer domeny. Bez ważnego kodu transfer nie może być kontynuowany. Przeczytaj więcej: ⟦L0⟧ · ⟦L1⟧.

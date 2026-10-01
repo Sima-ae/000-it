@@ -1,0 +1,1 @@
+We design mobile-first, build responsive layouts and test on common devices and browsers, so that the site works well everywhere.

@@ -1,0 +1,1 @@
+Hayır. A/MX/TXT doğru hizmetleri gösterdiği sürece DNS'yi bizde veya başka bir yerde tutabilirsiniz. Tutarlı yönetim, geçiş hatalarını önler. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

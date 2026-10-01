@@ -1,0 +1,1 @@
+po. Ne ndërtojmë portale dhe API, modernizojmë trashëgiminë dhe forcojmë performancën dhe sigurinë.

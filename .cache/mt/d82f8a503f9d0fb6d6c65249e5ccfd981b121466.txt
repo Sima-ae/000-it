@@ -1,0 +1,1 @@
+Freqüentemente, SPF/DKIM/DMARC estão ausentes ou em conflito, ou o IP/reputação é fraco. Verificamos a autenticação DNS e o comportamento de envio. Leia mais: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

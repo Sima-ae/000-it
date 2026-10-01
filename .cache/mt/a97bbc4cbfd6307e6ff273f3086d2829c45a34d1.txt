@@ -1,0 +1,1 @@
+That depends on the package and setup. We recommend reliable email solutions and set up DNS properly (SPF, DKIM and DMARC). Read more: ⟦L0⟧SPF Record⟦/L0⟧ · ⟦L1⟧DKIM⟦/L1⟧ · ⟦L2⟧DMARC⟦/L2⟧.

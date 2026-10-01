@@ -1,0 +1,1 @@
+Igen, ez a szokásos menet: domain + hosting a kosárban, majd DNS kapcsolat. Bővebben: ⟦L0⟧ · ⟦L1⟧.

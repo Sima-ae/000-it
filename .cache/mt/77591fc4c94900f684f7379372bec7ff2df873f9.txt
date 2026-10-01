@@ -1,0 +1,1 @@
+Da. Popravljamo zapise, propagaciju, potvrdu e-pošte i veze domena dok DNS ponovo ne bude ispravan. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

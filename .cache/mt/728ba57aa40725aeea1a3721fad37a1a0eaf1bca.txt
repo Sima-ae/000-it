@@ -1,0 +1,1 @@
+Çoğunlukla SPF/DKIM/DMARC eksik veya çakışıyor ya da IP/itibar zayıf. DNS kimlik doğrulamasını ve gönderme davranışını kontrol ediyoruz. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

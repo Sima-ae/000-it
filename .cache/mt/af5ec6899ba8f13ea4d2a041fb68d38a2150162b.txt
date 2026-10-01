@@ -1,0 +1,1 @@
+Kontrollera statussida, DNS-utbredning, senaste uppdateringar, diskutrymme och om felet är reproducerbart. Det påskyndar diagnosen. Läs mer: ⟦L0⟧ · ⟦L1⟧.

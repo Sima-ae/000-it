@@ -1,0 +1,1 @@
+Nimipalvelimet määrittävät, mikä DNS-järjestelmä palvelee verkkotunnustasi. Jos muutat niitä, sinun on asetettava A/MX/TXT-tietueet uudelleen oikein uudessa DNS-isännässä. Lue lisää: ⟦L0⟧ · ⟦L1⟧.

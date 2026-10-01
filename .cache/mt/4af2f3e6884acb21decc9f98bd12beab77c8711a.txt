@@ -1,0 +1,1 @@
+SÌ. Correggiamo record, propagazione, autenticazione della posta e connessioni di dominio fino a quando il DNS non sarà nuovamente corretto. Per saperne di più: ⟦L0⟧ · ⟦L1⟧.

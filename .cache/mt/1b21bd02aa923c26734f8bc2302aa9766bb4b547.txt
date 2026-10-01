@@ -1,0 +1,1 @@
+Dans la boutique, nous affichons les prix en fonction du contexte TVA indiqué (souvent inclus pour les flux de consommation). La facture contient le détail de la TVA nette pour les clients professionnels.

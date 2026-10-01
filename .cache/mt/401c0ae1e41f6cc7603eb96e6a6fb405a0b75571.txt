@@ -1,0 +1,1 @@
+检查 DNS (MX/SPF/DKIM/DMARC)、邮箱配额以及 Microsoft 或提供商是否阻止邮件。我们帮助测量链条。了解更多：⟦L0⟧·⟦L1⟧。

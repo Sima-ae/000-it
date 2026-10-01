@@ -1,0 +1,1 @@
+Az SPF/DKIM/DMARC gyakran hiányzik vagy ütközik, vagy az IP/hírnév gyenge. Ellenőrizzük a DNS hitelesítést és a küldési viselkedést. Bővebben: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

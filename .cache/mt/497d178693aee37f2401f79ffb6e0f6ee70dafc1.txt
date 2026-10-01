@@ -1,0 +1,1 @@
+Një regjistrim MX i tregon internetit se cili server i postës mund të marrë email për domenin tuaj. Pa një MX të saktë, asnjë postë nuk arrin. Lexo më shumë: ⟦L0⟧ · ⟦L1⟧.

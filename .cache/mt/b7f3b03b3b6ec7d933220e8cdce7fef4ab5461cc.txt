@@ -1,0 +1,1 @@
+Koristimo vatrozid, SSL, ažuriranja, nadzor i očvršćavanje. Dodatni sigurnosni slojevi dostupni su tamo gdje je potrebno. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

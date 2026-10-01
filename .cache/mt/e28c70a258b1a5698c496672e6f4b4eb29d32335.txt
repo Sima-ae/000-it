@@ -1,0 +1,1 @@
+Më pas rregullojmë etiketimin (GTM, GA4 dhe pikselët), modalitetin e pëlqimit aty ku është e nevojshme dhe opsionet nga ana e serverit për të dhëna më të besueshme.

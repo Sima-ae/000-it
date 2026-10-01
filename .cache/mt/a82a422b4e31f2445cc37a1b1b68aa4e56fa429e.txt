@@ -1,0 +1,1 @@
+Bəli, hesab rolları (müştəri, menecer, admin) ilə çoxlu komanda üzvləri hər şeyi paylaşmadan biletləri və ya layihələri izləyə bilər.

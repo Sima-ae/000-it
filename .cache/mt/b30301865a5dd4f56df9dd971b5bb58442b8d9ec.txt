@@ -1,0 +1,1 @@
+Često minuta do nekoliko sati; ponekad i do 24–48 sati zbog TTL-ova i keša. Smanjite TTL-ove prije migracije za brže prebacivanje. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

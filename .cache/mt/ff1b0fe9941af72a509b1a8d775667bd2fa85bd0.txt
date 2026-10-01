@@ -1,0 +1,1 @@
+Adətən bu, DNS yayılması, çatışmayan A/MX qeydləri və ya hələ yenilənməmiş ad serverləridir. Qeydləri yoxlayın və TTL-lərin müddətinin bitməsinə icazə verin. Daha ətraflı: ⟦L0⟧ · ⟦L1⟧.

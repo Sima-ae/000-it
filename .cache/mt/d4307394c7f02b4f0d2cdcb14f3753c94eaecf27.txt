@@ -1,0 +1,1 @@
+DNSSEC pasirašo DNS atsakymus, todėl manipuliuoti yra sunkiau. Galime jį įjungti ten, kur palaiko jūsų ALD ir sąranka. Skaityti daugiau: ⟦L0⟧.

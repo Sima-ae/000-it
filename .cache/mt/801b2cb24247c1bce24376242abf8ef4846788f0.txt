@@ -1,0 +1,1 @@
+Yes. We plan the migration together, including tests and rollback, so that the transition takes place in a controlled manner. Read more: ⟦L0⟧Shared to VPS⟦/L0⟧.

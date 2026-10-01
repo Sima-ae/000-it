@@ -1,0 +1,1 @@
+Evet. Alan adı yönlendirme, ziyaretçileri başka bir URL'ye gönderir; ayrı bir sitesi olmayan marka adları için kullanışlıdır. DNS ve yönlendirmeleri kurulumunuzla uyumlu hale getiriyoruz. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

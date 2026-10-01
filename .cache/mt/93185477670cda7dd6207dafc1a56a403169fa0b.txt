@@ -1,0 +1,1 @@
+Donde los proyectos se enumeran en el portal, puede ver el estado y la comunicación. De lo contrario, lo mantendremos informado a través de tickets o actualizaciones de sprint.

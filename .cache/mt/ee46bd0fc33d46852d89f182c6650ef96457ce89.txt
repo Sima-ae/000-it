@@ -1,0 +1,1 @@
+De obicei, este vorba de propagarea DNS, înregistrările A/MX lipsă sau serverele de nume care nu sunt încă actualizate. Verificați înregistrările și permiteți TTL-urilor să expire. Citește mai mult: ⟦L0⟧ · ⟦L1⟧.

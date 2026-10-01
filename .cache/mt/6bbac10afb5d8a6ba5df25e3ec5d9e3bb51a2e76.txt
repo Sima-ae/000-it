@@ -1,0 +1,1 @@
+SEO-ja teknike mbulon zvarritjen, indeksimin, Core Web Vitals, të dhënat e strukturuara, hartën e faqes dhe robotët, kanonikat, lidhjet e brendshme dhe korrigjimin - gjithçka që motorët e kërkimit kanë nevojë për të kuptuar siç duhet sitin.

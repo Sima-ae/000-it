@@ -1,0 +1,1 @@
+Ime domene je adresa koju posjetitelji koriste da pronađu vašu web stranicu (na primjer.com). Povezuje se sa DNS zapisima koji upućuju na vaš hosting ili e-poštu. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

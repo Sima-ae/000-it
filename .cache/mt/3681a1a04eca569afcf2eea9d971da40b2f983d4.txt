@@ -1,0 +1,1 @@
+Um bloqueio evita transferências indesejadas. Para uma mudança, muitas vezes você precisa primeiro desligá-lo no provedor atual e, em seguida, iniciar a transferência conosco. Leia mais: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+SPF/DKIM/DMARC često nedostaju ili su u sukobu, ili je IP/reputacija slaba. Provjeravamo DNS auth i ponašanje slanja. Pročitajte više: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

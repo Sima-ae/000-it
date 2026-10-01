@@ -1,0 +1,1 @@
+A domain név az a cím, amellyel a látogatók megtalálják webhelyét (például example.com). DNS-rekordokhoz kapcsolódik, amelyek az Ön tárhelyére vagy e-mailjére mutatnak. Bővebben: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Prostřednictvím správy DNS pro vaši doménu nebo hostingový panel nastavíte záznamy A, AAAA, CNAME, MX a TXT. Pomáháme s migrací a ověřováním pošty. Přečtěte si více: ⟦L0⟧ · ⟦L1⟧.

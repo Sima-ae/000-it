@@ -1,0 +1,1 @@
+De er DNS-poster som håndterer e-postautentisering og reduserer spoofing/spam. Uten korrekte poster lander e-post oftere i spam. Les mer: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

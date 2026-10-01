@@ -1,0 +1,1 @@
+Na odgovarajućim planovima podržavamo trajnu predmemoriju objekata kako bismo smanjili upite baze podataka i brže učitavali. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

@@ -1,0 +1,1 @@
+Ad sunucuları, etki alanınıza hangi DNS sisteminin hizmet vereceğini belirler. Bunları değiştirirseniz A/MX/TXT kayıtlarını yeni DNS ana bilgisayarında tekrar doğru şekilde ayarlamanız gerekir. Daha fazlasını okuyun: ⟦L0⟧ · ⟦L1⟧.

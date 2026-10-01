@@ -1,0 +1,1 @@
+Et domenenavn er adressen besøkende bruker for å finne nettstedet ditt (for eksempel example.com). Det knytter seg til DNS-poster som peker til hosting eller e-post. Les mer: ⟦L0⟧ · ⟦L1⟧.

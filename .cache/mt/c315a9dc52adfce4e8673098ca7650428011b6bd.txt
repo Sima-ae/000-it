@@ -1,0 +1,1 @@
+SÌ. Pianifichiamo insieme la migrazione, inclusi test e rollback, in modo che il passaggio rimanga controllato. Per saperne di più: ⟦L0⟧ · ⟦L1⟧.

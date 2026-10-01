@@ -1,0 +1,1 @@
+On the status page we show incidents and maintenance regarding hosting and related services, so that you can quickly see if something is going on. Read more: ⟦L0⟧Statuspage⟦/L0⟧.

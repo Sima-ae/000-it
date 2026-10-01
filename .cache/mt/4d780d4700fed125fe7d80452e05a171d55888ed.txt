@@ -1,0 +1,1 @@
+Da. Planiramo migraciju zajedno, uključujući testove i vraćanje, tako da prekidač ostaje pod kontrolom. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

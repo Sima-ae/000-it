@@ -1,0 +1,1 @@
+Sì, è il solito flusso: dominio + hosting nel carrello, poi connessione DNS. Per saperne di più: ⟦L0⟧ · ⟦L1⟧.

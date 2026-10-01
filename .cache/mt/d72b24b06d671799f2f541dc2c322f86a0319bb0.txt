@@ -1,0 +1,1 @@
+Preko DNS upravljanja za svoju domenu ili hosting panel postavljate A, AAAA, CNAME, MX i TXT zapise. Pomažemo s migracijama i autentifikacijom pošte. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.

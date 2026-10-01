@@ -1,0 +1,1 @@
+L'hébergement cloud offre plus de ressources et d'évolutivité que le partage classique, tout en continuant à le gérer. Idéal lorsque le partage devient difficile mais que le VPS complet n'est pas encore nécessaire. Lire la suite : ⟦L0⟧ · ⟦L1⟧.

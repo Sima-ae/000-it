@@ -1,0 +1,1 @@
+Adesea SPF/DKIM/DMARC lipsesc sau sunt în conflict, sau IP/reputația este slabă. Verificăm autentificarea DNS și comportamentul de trimitere. Citește mai mult: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

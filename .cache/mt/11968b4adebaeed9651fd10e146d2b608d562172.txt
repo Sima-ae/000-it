@@ -1,0 +1,1 @@
+Használjon erős jelszót, és engedélyezze a 2FA-t. Ne ossza meg a panel bejelentkezési adatait nem biztonságos csatornákon. Bővebben: ⟦L0⟧ · ⟦L1⟧.

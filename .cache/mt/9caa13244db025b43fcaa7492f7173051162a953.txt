@@ -1,0 +1,1 @@
+DNS (MX/SPF/DKIM/DMARC), poçt qutusu kvotası və Microsoft və ya provayderlərin poçtu bloklayıb-bilmədiyini yoxlayın. Zənciri ölçməyə kömək edirik. Daha ətraflı: ⟦L0⟧ · ⟦L1⟧.

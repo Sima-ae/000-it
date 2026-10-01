@@ -1,0 +1,1 @@
+Si tratta di un codice monouso del tuo attuale registrar che avvia in modo sicuro un trasferimento di dominio. Senza un codice valido il trasferimento non potrà procedere. Per saperne di più: ⟦L0⟧ · ⟦L1⟧.

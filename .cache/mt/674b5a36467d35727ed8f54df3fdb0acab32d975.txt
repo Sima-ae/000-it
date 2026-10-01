@@ -1,0 +1,1 @@
+Shpesh SPF/DKIM/DMARC mungojnë ose janë në konflikt, ose IP/reputacioni është i dobët. Ne kontrollojmë vërtetimin e DNS dhe sjelljen e dërgimit. Lexo më shumë: ⟦L0⟧ · ⟦L1⟧ · ⟦L2⟧.

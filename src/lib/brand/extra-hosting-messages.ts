@@ -88,22 +88,22 @@ export function applyExtraHostingMessages<T>(
   const faq = asStringRecord(out.faq);
   if (isNl) {
     faq.q1 = `Wie is ${name}?`;
-    faq.a1 = `${name} is gericht op domeinnamen en webhosting: shared, cloud, WordPress en VPS — met support bij registratie, DNS, e-mail en migraties.`;
+    faq.a1 = `${name} is gericht op domeinnamen, DNS, e-mail en webhosting: shared, cloud, WordPress en VPS — inclusief registratie, verhuizing en migraties. Bekijk ook onze FAQ en kennisbank voor stapsgewijze antwoorden.`;
     faq.q2 = "Welke hostingplannen hebben jullie?";
     faq.a2 =
-      "Wij bieden oplossingen voor shared hosting, cloud hosting, WordPress hosting en VPS op basis van traffic en groei. Alle plannen beschikken over voldoende opslagruimte, snelle resources, SSL en 24/7 support.";
+      "Shared, cloud, WordPress en VPS — kies op traffic en groei. Elk plan heeft duidelijke resources, SSL en support. Details en prijzen staan op de hostingpagina’s en in de uitgebreide FAQ.";
     faq.q3 = "Kan ik later upgraden of een domein verhuizen?";
     faq.a3 =
-      "Ja. Je kunt later upgraden naar een zwaarder plan en domeinen registreren of verhuizen. We helpen bij DNS-koppeling en migratie.";
+      "Ja. Je kunt later upgraden (bijvoorbeeld shared → cloud/VPS) en domeinen registreren of verhuizen. We helpen bij DNS, e-mailauthenticatie en migratie — meer in de FAQ en kennisbank.";
   } else {
     faq.q1 = `Who is ${name}?`;
-    faq.a1 = `${name} focuses on domain names and web hosting: shared, cloud, WordPress and VPS — with support for registration, DNS, email and migrations.`;
+    faq.a1 = `${name} focuses on domains, DNS, email and web hosting: shared, cloud, WordPress and VPS — including registration, transfers and migrations. See our FAQ and knowledge base for step-by-step answers.`;
     faq.q2 = "Which hosting plans do you offer?";
     faq.a2 =
-      "Choose shared hosting, cloud hosting, WordPress hosting or VPS. Every plan has clear resources, SSL and support — so you pick based on traffic and growth.";
+      "Shared, cloud, WordPress and VPS — choose by traffic and growth. Every plan has clear resources, SSL and support. Details and pricing are on the hosting pages and in the full FAQ.";
     faq.q3 = "Can I upgrade later or transfer a domain?";
     faq.a3 =
-      "Yes. You can upgrade to a higher plan later and register or transfer domains. We help with DNS setup and migration.";
+      "Yes. You can upgrade later (for example shared → cloud/VPS) and register or transfer domains. We help with DNS, email authentication and migration — more in the FAQ and knowledge base.";
   }
   out.faq = faq;
 

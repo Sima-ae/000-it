@@ -1,0 +1,1 @@
+Usamos firewall, SSL, actualizaciones, monitoreo y refuerzo. Hay capas de seguridad adicionales disponibles cuando sea necesario. Leer más: ⟦L0⟧ · ⟦L1⟧.

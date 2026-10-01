@@ -1,0 +1,1 @@
+Un nombre de dominio es la dirección que utilizan los visitantes para encontrar su sitio web (por ejemplo, ejemplo.com). Se vincula con registros DNS que apuntan a su alojamiento o correo electrónico. Leer más: ⟦L0⟧ · ⟦L1⟧.

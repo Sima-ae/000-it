@@ -1,0 +1,1 @@
+MX qeydi internetə hansı poçt serverinin domeniniz üçün e-poçt ala biləcəyini bildirir. Düzgün MX olmadan heç bir məktub gəlmir. Daha ətraflı: ⟦L0⟧ · ⟦L1⟧.

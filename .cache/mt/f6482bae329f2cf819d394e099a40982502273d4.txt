@@ -1,0 +1,1 @@
+MX zapis govori internetu koji server pošte može primati e-poštu za vašu domenu. Bez ispravnog MX-a, pošta ne stiže. Pročitajte više: ⟦L0⟧ · ⟦L1⟧.
