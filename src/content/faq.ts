@@ -30,7 +30,7 @@ function q(id: string, question: string, answer: string): FaqItem {
 const nl: FaqContent = {
   title: "Veelgestelde vragen",
   subtitle:
-    "Uitgebreide vragen en antwoorden — van AI, AEO, GEO en SEO tot design, domeinnamen, hosting, marketing, social media, support en meer.",
+    "Vragen en antwoorden — van AI, AEO, GEO en SEO tot design, domeinnamen, hosting, marketing, social media en support.",
   ctaTitle: "Nog hulp nodig?",
   ctaText:
     "Staat jullie vraag er niet tussen? Neem contact op — we reageren zo snel mogelijk.",
@@ -236,7 +236,7 @@ const nl: FaqContent = {
 const en: FaqContent = {
   title: "Frequently asked questions",
   subtitle:
-    "In-depth questions and answers — from AI, AEO, GEO and SEO to design, domains, hosting, marketing, social media, support and more.",
+    "Questions and answers — from AI, AEO, GEO and SEO to design, domains, hosting, marketing, social media and support.",
   ctaTitle: "Still need help?",
   ctaText:
     "Can't find your question? Contact us — we'll get back to you as soon as possible.",
@@ -472,6 +472,220 @@ export function getFaqContent(
   }
 
   const isNl = locale === "nl";
+  const hostingMetaByLocale: Record<string, { title: string; subtitle: string }> = {
+    nl: {
+      title: "Veelgestelde vragen",
+      subtitle:
+        "Vragen en antwoorden over domeinnamen, DNS, e-mail, shared hosting, cloud hosting, WordPress hosting, VPS en support.",
+    },
+    en: {
+      title: "Frequently asked questions",
+      subtitle:
+        "Questions and answers about domain names, DNS, email, shared hosting, cloud hosting, WordPress hosting, VPS and support.",
+    },
+    de: {
+      title: "Häufig gestellte Fragen",
+      subtitle:
+        "Fragen und Antworten zu Domainnamen, DNS, E-Mail, Shared Hosting, Cloud Hosting, WordPress Hosting, VPS und Support.",
+    },
+    fr: {
+      title: "Questions fréquentes",
+      subtitle:
+        "Questions et réponses sur les noms de domaine, le DNS, l'e-mail, l'hébergement mutualisé, cloud, WordPress, VPS et le support.",
+    },
+    es: {
+      title: "Preguntas frecuentes",
+      subtitle:
+        "Preguntas y respuestas sobre nombres de dominio, DNS, correo electrónico, hosting compartido, cloud, WordPress, VPS y soporte.",
+    },
+    pt: {
+      title: "Perguntas frequentes",
+      subtitle:
+        "Perguntas e respostas sobre nomes de domínio, DNS, e-mail, hosting partilhado, cloud, WordPress, VPS e suporte.",
+    },
+    it: {
+      title: "Domande frequenti",
+      subtitle:
+        "Domande e risposte su nomi di dominio, DNS, e-mail, hosting condiviso, cloud, WordPress, VPS e supporto.",
+    },
+    pl: {
+      title: "Najczęściej zadawane pytania",
+      subtitle:
+        "Pytania i odpowiedzi o nazwy domen, DNS, e-mail, hosting współdzielony, cloud, WordPress, VPS i wsparcie.",
+    },
+    cs: {
+      title: "Často kladené otázky",
+      subtitle:
+        "Otázky a odpovědi o doménách, DNS, e-mailu, shared hostingu, cloudu, WordPress hostingu, VPS a podpoře.",
+    },
+    sk: {
+      title: "Často kladené otázky",
+      subtitle:
+        "Otázky a odpovede o doménach, DNS, e-maile, shared hostingu, cloude, WordPress hostingu, VPS a podpore.",
+    },
+    hu: {
+      title: "Gyakran ismételt kérdések",
+      subtitle:
+        "Kérdések és válaszok domainnevekről, DNS-ről, e-mailről, shared hostingról, cloudról, WordPress hostingról, VPS-ről és supportól.",
+    },
+    ro: {
+      title: "Întrebări frecvente",
+      subtitle:
+        "Întrebări și răspunsuri despre nume de domeniu, DNS, e-mail, shared hosting, cloud, WordPress, VPS și asistență.",
+    },
+    bg: {
+      title: "Често задавани въпроси",
+      subtitle:
+        "Въпроси и отговори за домейни, DNS, имейл, споделен хостинг, cloud, WordPress хостинг, VPS и поддръжка.",
+    },
+    hr: {
+      title: "Često postavljana pitanja",
+      subtitle:
+        "Pitanja i odgovori o nazivima domena, DNS-u, e-pošti, shared hostingu, cloudu, WordPress hostingu, VPS-u i podršci.",
+    },
+    sr: {
+      title: "Често постављана питања",
+      subtitle:
+        "Питања и одговори о називима домена, DNS-у, е-пошти, shared хостингу, cloud-у, WordPress хостингу, VPS-у и подршци.",
+    },
+    bs: {
+      title: "Često postavljana pitanja",
+      subtitle:
+        "Pitanja i odgovori o nazivima domena, DNS-u, e-pošti, shared hostingu, cloudu, WordPress hostingu, VPS-u i podršci.",
+    },
+    cnr: {
+      title: "Често постављана питања",
+      subtitle:
+        "Питања и одговори о називима домена, DNS-у, е-пошти, shared хостингу, cloud-у, WordPress хостингу, VPS-у и подршци.",
+    },
+    sq: {
+      title: "Pyetjet e shpeshta",
+      subtitle:
+        "Pyetje dhe përgjigje rreth emrave të domain-eve, DNS, email, shared hosting, cloud, WordPress hosting, VPS dhe mbështetjes.",
+    },
+    mk: {
+      title: "Често поставувани прашања",
+      subtitle:
+        "Прашања и одговори за имиња на домени, DNS, е-пошта, shared хостинг, cloud, WordPress хостинг, VPS и поддршка.",
+    },
+    lt: {
+      title: "Dažnai užduodami klausimai",
+      subtitle:
+        "Klausimai ir atsakymai apie domenų vardus, DNS, el. paštą, shared hostingą, cloud, WordPress hostingą, VPS ir palaikymą.",
+    },
+    da: {
+      title: "Ofte stillede spørgsmål",
+      subtitle:
+        "Spørgsmål og svar om domænenavne, DNS, e-mail, shared hosting, cloud hosting, WordPress hosting, VPS og support.",
+    },
+    sv: {
+      title: "Vanliga frågor",
+      subtitle:
+        "Frågor och svar om domännamn, DNS, e-post, shared hosting, cloud hosting, WordPress hosting, VPS och support.",
+    },
+    no: {
+      title: "Ofte stilte spørsmål",
+      subtitle:
+        "Spørsmål og svar om domenenavn, DNS, e-post, shared hosting, cloud hosting, WordPress hosting, VPS og support.",
+    },
+    fi: {
+      title: "Usein kysytyt kysymykset",
+      subtitle:
+        "Kysymyksiä ja vastauksia verkkotunnuksista, DNS:stä, sähköpostista, shared-hostingista, cloudista, WordPress-hostingista, VPS:stä ja tuesta.",
+    },
+    uk: {
+      title: "Часті запитання",
+      subtitle:
+        "Запитання та відповіді про доменні імена, DNS, електронну пошту, shared hosting, cloud, WordPress hosting, VPS і підтримку.",
+    },
+    ru: {
+      title: "Часто задаваемые вопросы",
+      subtitle:
+        "Вопросы и ответы о доменных именах, DNS, электронной почте, shared hosting, cloud, WordPress hosting, VPS и поддержке.",
+    },
+    tr: {
+      title: "Sıkça sorulan sorular",
+      subtitle:
+        "Alan adları, DNS, e-posta, shared hosting, cloud hosting, WordPress hosting, VPS ve destek hakkında sorular ve yanıtlar.",
+    },
+    el: {
+      title: "Συχνές ερωτήσεις",
+      subtitle:
+        "Ερωτήσεις και απαντήσεις για ονόματα τομέα, DNS, email, shared hosting, cloud, WordPress hosting, VPS και υποστήριξη.",
+    },
+    ar: {
+      title: "الأسئلة الشائعة",
+      subtitle:
+        "أسئلة وأجوبة حول أسماء النطاقات وDNS والبريد الإلكتروني والاستضافة المشتركة والسحابة وWordPress وVPS والدعم.",
+    },
+    he: {
+      title: "שאלות נפוצות",
+      subtitle:
+        "שאלות ותשובות על שמות דומיין, DNS, דוא״ל, shared hosting, cloud, WordPress hosting, VPS ותמיכה.",
+    },
+    hy: {
+      title: "Հաճախակի տրվող հարցեր",
+      subtitle:
+        "Հարցեր և պատասխաններ դոմեյնների, DNS-ի, էլ. փոստի, shared hosting-ի, cloud-ի, WordPress hosting-ի, VPS-ի և աջակցության մասին.",
+    },
+    ka: {
+      title: "ხშირად დასმული კითხვები",
+      subtitle:
+        "კითხვები და პასუხები დომენების, DNS-ის, ელფოსტის, shared hosting-ის, cloud-ის, WordPress hosting-ის, VPS-ისა და მხარდაჭერის შესახებ.",
+    },
+    az: {
+      title: "Tez-tez verilən suallar",
+      subtitle:
+        "Domen adları, DNS, e-poçt, shared hosting, cloud, WordPress hosting, VPS və dəstək haqqında suallar və cavablar.",
+    },
+    zh: {
+      title: "常见问题",
+      subtitle:
+        "关于域名、DNS、电子邮件、共享托管、云托管、WordPress 托管、VPS 和支持的问题与解答。",
+    },
+    ja: {
+      title: "よくある質問",
+      subtitle:
+        "ドメイン名、DNS、メール、共有ホスティング、クラウド、WordPress ホスティング、VPS、サポートに関する質問と回答。",
+    },
+    bn: {
+      title: "প্রায়শই জিজ্ঞাসিত প্রশ্ন",
+      subtitle:
+        "ডোমেইন নাম, DNS, ইমেইল, শেয়ার্ড হোস্টিং, ক্লাউড, WordPress হোস্টিং, VPS ও সাপোর্ট সম্পর্কে প্রশ্নোত্তর।",
+    },
+    hi: {
+      title: "अक्सर पूछे जाने वाले प्रश्न",
+      subtitle:
+        "डोमेन नाम, DNS, ईमेल, शेयर्ड होस्टिंग, क्लाउड, WordPress होस्टिंग, VPS और सपोर्ट पर प्रश्न और उत्तर।",
+    },
+    mr: {
+      title: "सारखे विचारले जाणारे प्रश्न",
+      subtitle:
+        "डोमेन नावे, DNS, ईमेल, शेअर्ड होस्टिंग, क्लाउड, WordPress होस्टिंग, VPS आणि सपोर्टबाबत प्रश्नोत्तरे.",
+    },
+    pa: {
+      title: "ਅਕਸਰ ਪੁੱਛੇ ਜਾਣ ਵਾਲੇ ਸਵਾਲ",
+      subtitle:
+        "ਡੋਮੇਨ ਨਾਮ, DNS, ਈਮੇਲ, ਸ਼ੇਅਰਡ ਹੋਸਟਿੰਗ, ਕਲਾਉਡ, WordPress ਹੋਸਟਿੰਗ, VPS ਅਤੇ ਸਹਾਇਤਾ ਬਾਰੇ ਸਵਾਲ ਅਤੇ ਜਵਾਬ।",
+    },
+    te: {
+      title: "తరచుగా అడిగే ప్రశ్నలు",
+      subtitle:
+        "డొమైన్ పేర్లు, DNS, ఇమెయిల్, షేర్డ్ హోస్టింగ్, క్లౌడ్, WordPress హోస్టింగ్, VPS మరియు సపోర్ట్ గురించి ప్రశ్నలు మరియు సమాధానాలు.",
+    },
+    ur: {
+      title: "اکثر پوچھے گئے سوالات",
+      subtitle:
+        "ڈومین نام، DNS، ای میل، شیئرڈ ہوسٹنگ، کلاؤڈ، WordPress ہوسٹنگ، VPS اور سپورٹ کے بارے میں سوالات اور جوابات۔",
+    },
+    ps: {
+      title: "ډېرې پوښتل شوې پوښتنې",
+      subtitle:
+        "د ډومین نومونو، DNS، برېښنالیک، شریک هاسټینګ، کلاوډ، WordPress هاسټینګ، VPS او ملاتړ په اړه پوښتنې او ځوابونه.",
+    },
+  };
+  const hostingMeta =
+    hostingMetaByLocale[locale] || hostingMetaByLocale.en;
   const supportKeep = new Set([
     "sup-2",
     "sup-3",
@@ -523,19 +737,8 @@ export function getFaqContent(
 
   const hostingFaq = {
     ...base,
-    ...(isNl
-      ? {
-          title: "Veelgestelde vragen",
-          subtitle:
-            "Vragen en antwoorden over domeinnamen, DNS, e-mail, shared hosting, cloud hosting, WordPress hosting, VPS en support.",
-        }
-      : locale === "en"
-        ? {
-            title: "Frequently asked questions",
-            subtitle:
-              "Questions and answers about domain names, DNS, email, shared hosting, cloud hosting, WordPress hosting, VPS and support.",
-          }
-        : {}),
+    title: hostingMeta.title,
+    subtitle: hostingMeta.subtitle,
     categories,
   };
   return isExtraHostingSurface()

@@ -1718,7 +1718,7 @@
     "unknown": "Ismeretlen",
     "daysAgo": "{days} napja",
     "today": "Ma",
-    "uptimePercent": "{value} % üzemidő",
+    "uptimePercent": "{value}%",
     "uptimeHint": "Üzemidő az elmúlt 90 napban.",
     "liveSync": "Élőben szinkronizálva.",
     "scheduledMaintenance": "Tervezett karbantartás",

@@ -234,7 +234,7 @@
     "unknown": "نامعلوم",
     "daysAgo": "{days} دن پہلے",
     "today": "آج",
-    "uptimePercent": "{value} % اپ ٹائم",
+    "uptimePercent": "{value}%",
     "uptimeHint": "پچھلے 90 دنوں میں اپ ٹائم۔",
     "liveSync": "لائیو مطابقت پذیر۔",
     "scheduledMaintenance": "طے شدہ دیکھ بھال",

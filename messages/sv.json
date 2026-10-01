@@ -1718,7 +1718,7 @@
     "unknown": "Okänd",
     "daysAgo": "för {days} dagar sedan",
     "today": "I dag",
-    "uptimePercent": "{value} % drifttid",
+    "uptimePercent": "{value}%",
     "uptimeHint": "Drifttid under de senaste 90 dagarna.",
     "liveSync": "Synkad live.",
     "scheduledMaintenance": "Schemalagt underhåll",

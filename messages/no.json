@@ -1718,7 +1718,7 @@
     "unknown": "Ukjent",
     "daysAgo": "for {days} dager siden",
     "today": "I dag",
-    "uptimePercent": "{value} % oppetid",
+    "uptimePercent": "{value}%",
     "uptimeHint": "Oppetid de siste 90 dagene.",
     "liveSync": "Synkronisert live.",
     "scheduledMaintenance": "Planlagt vedlikehold",

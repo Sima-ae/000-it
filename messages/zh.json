@@ -1718,7 +1718,7 @@
     "unknown": "未知",
     "daysAgo": "{days}天前",
     "today": "今天",
-    "uptimePercent": "{value} 正常运行时间百分比",
+    "uptimePercent": "{value}%",
     "uptimeHint": "过去 90 天的正常运行时间。",
     "liveSync": "实时同步。",
     "scheduledMaintenance": "定期维护",

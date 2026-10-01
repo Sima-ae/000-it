@@ -1718,7 +1718,7 @@
     "unknown": "Naməlum",
     "daysAgo": "{days} gün əvvəl",
     "today": "Bu gün",
-    "uptimePercent": "{value} % iş vaxtı",
+    "uptimePercent": "{value}%",
     "uptimeHint": "Son 90 gün ərzində iş vaxtı.",
     "liveSync": "Canlı sinxronlaşdırılıb.",
     "scheduledMaintenance": "Planlı Baxım",
