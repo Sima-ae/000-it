@@ -25,6 +25,8 @@
     "news:truncations": "npx --yes tsx --env-file=.env scripts/repair-auto-news.ts --truncations",
     "news:leads": "npx --yes tsx --env-file=.env scripts/repair-auto-news.ts --leads",
     "shop:seed": "npx --yes tsx --env-file=.env scripts/seed-shop-catalog.ts",
+    "shop:sync-hosting": "npx --yes tsx --env-file=.env scripts/sync-hosting-catalog.ts",
+    "shop:repair-hosting": "npx --yes tsx --env-file=.env scripts/repair-hosting-after-force-seed.ts",
     "news:translate": "npx --yes tsx --env-file=.env scripts/translate-news.ts",
     "kennisbank:generate": "npx --yes tsx prisma/kennisbank/generate-articles.ts",
     "kennisbank:check": "npx --yes tsx prisma/kennisbank/check-coverage.ts",

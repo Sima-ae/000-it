@@ -246,7 +246,7 @@ TripleZero iT delivers an accessible, dependable hosting foundation with 24/7 su
 
   "cloud-hosting-start": {
     nl: {
-      name: "Start",
+      name: "Cloud Hosting Start",
       shortDescription: `– 10 Web Apps
 – 4 CPU-cores
 – 4 GB RAM
@@ -262,7 +262,7 @@ Je krijgt 10 Web Apps, 4 CPU-cores, 4 GB RAM, 100 GB NVMe-opslag, 2.000.000 inod
 TripleZero iT levert volledig beheerde cloudprestaties, zodat jouw site snel en beschikbaar blijft terwijl het verkeer groeit.`,
     },
     en: {
-      name: "Start",
+      name: "Cloud Hosting Start",
       shortDescription: `– 10 Web Apps
 – 4 CPU cores
 – 4 GB RAM
@@ -281,7 +281,7 @@ TripleZero iT delivers fully managed cloud performance so your site stays fast a
 
   "cloud-hosting-basic": {
     nl: {
-      name: "Basic",
+      name: "Cloud Hosting Basic",
       shortDescription: `– 10 Web Apps
 – 5 CPU-cores
 – 6 GB RAM
@@ -297,7 +297,7 @@ Je krijgt 10 Web Apps, 5 CPU-cores, 6 GB RAM, 200 GB NVMe-opslag, 3.000.000 inod
 TripleZero iT geeft je beheerde cloudcapaciteit die verkeerspieken opvangt zonder rebuild of servermigratie.`,
     },
     en: {
-      name: "Basic",
+      name: "Cloud Hosting Basic",
       shortDescription: `– 10 Web Apps
 – 5 CPU cores
 – 6 GB RAM
@@ -316,7 +316,7 @@ TripleZero iT gives you managed cloud capacity that absorbs traffic spikes witho
 
   "cloud-hosting-plus": {
     nl: {
-      name: "Plus",
+      name: "Cloud Hosting Plus",
       shortDescription: `– 10 Web Apps
 – 6 CPU-cores
 – 12 GB RAM
@@ -332,7 +332,7 @@ Je krijgt 10 Web Apps, 6 CPU-cores, 12 GB RAM, 300 GB NVMe-opslag, 4.000.000 ino
 TripleZero iT biedt een volledig beheerde cloudbasis met de ruimte die serieuze sites nodig hebben voor snelheid, uptime en groei.`,
     },
     en: {
-      name: "Plus",
+      name: "Cloud Hosting Plus",
       shortDescription: `– 10 Web Apps
 – 6 CPU cores
 – 12 GB RAM
@@ -351,7 +351,7 @@ TripleZero iT provides a fully managed cloud foundation with the headroom seriou
 
   "email-hosting-basic": {
     nl: {
-      name: "Basic",
+      name: "E-mail Hosting Basic",
       shortDescription: `– Opslag: 5Gb
 – Mailboxen: Max. 5
 – Backup: Dagelijks
@@ -365,7 +365,7 @@ Je krijgt 5Gb opslag, maximaal 5 mailboxen, dagelijkse backups, een basis-spamfi
 TripleZero iT houdt jouw mailbox betrouwbaar en veilig, zodat je professioneel communiceert zonder een volledig webhostingpakket te beheren.`,
     },
     en: {
-      name: "Basic",
+      name: "Email Hosting Basic",
       shortDescription: `– Storage: 5Gb
 – Mailboxes: Max. 5
 – Backup: Daily
@@ -382,7 +382,7 @@ TripleZero iT keeps your mailbox reliable and secure so you can communicate prof
 
   "email-hosting-business": {
     nl: {
-      name: "Business",
+      name: "E-mail Hosting Business",
       shortDescription: `– Opslag: 10Gb
 – Mailboxen: Max. 10
 – Backup: Dagelijks
@@ -396,7 +396,7 @@ Je krijgt 10Gb opslag, maximaal 10 mailboxen, dagelijkse backups, een basis-spam
 TripleZero iT biedt een betrouwbare e-mailbasis met ruimte om dagelijkse zakelijke communicatie te schalen.`,
     },
     en: {
-      name: "Business",
+      name: "Email Hosting Business",
       shortDescription: `– Storage: 10Gb
 – Mailboxes: Max. 10
 – Backup: Daily
@@ -413,7 +413,7 @@ TripleZero iT provides a dependable email foundation with room to scale day-to-d
 
   "email-hosting-pro": {
     nl: {
-      name: "Pro",
+      name: "E-mail Hosting Pro",
       shortDescription: `– Opslag: 15Gb
 – Mailboxen: Onbeperkt
 – Backup: Dagelijks
@@ -427,7 +427,7 @@ Je krijgt 15Gb opslag, onbeperkt mailboxen, dagelijkse backups, een Pro-spamfilt
 TripleZero iT combineert ruime e-mailcapaciteit met professionele filtering zodat jouw inbox schoon en beschikbaar blijft.`,
     },
     en: {
-      name: "Pro",
+      name: "Email Hosting Pro",
       shortDescription: `– Storage: 15Gb
 – Mailboxes: Unlimited
 – Backup: Daily
