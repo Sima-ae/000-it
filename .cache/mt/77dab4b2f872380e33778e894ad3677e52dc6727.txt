@@ -1,0 +1,1 @@
+Återförsäljarhosting för byråer och frilansare. Välj en server med DirectAdmin och Installatron, eller välj Plus med Plesk och WordPress Toolkit.

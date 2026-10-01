@@ -902,6 +902,58 @@
           "text": "Get started"
         }
       ]
+    },
+    "reseller-hosting": {
+      "title": "Reseller Hosting",
+      "subtitle": "Reseller hosting for agencies and freelancers. Choose a server with DirectAdmin and Installatron, or choose Plus with Plesk and WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Reseller Hosting from TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "With reseller hosting you host multiple client websites under your own brand. You get clear storage and traffic limits, unlimited domains, email, MySQL, SSH and a control panel to manage accounts easily."
+        },
+        {
+          "type": "heading",
+          "text": "Plans"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Start — 10Gb storage, 80Gb traffic, DirectAdmin + Installatron",
+            "Basic — 15Gb storage, 120Gb traffic, DirectAdmin + Installatron",
+            "Business — 20Gb storage, 150Gb traffic, DirectAdmin + Installatron",
+            "Plus — 20Gb storage, 150Gb traffic, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Included with every plan"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Unlimited domains",
+            "Email and MySQL databases",
+            "SSH access",
+            "Control panel: DirectAdmin (Start–Business) or Plesk (Plus)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Who is reseller hosting for?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ideal for web designers, agencies and freelancers who want to resell hosting or manage multiple client projects centrally."
+        },
+        {
+          "type": "heading",
+          "text": "Order or get advice"
+        }
+      ]
     }
   },
   "nl": {
@@ -1805,6 +1857,58 @@
         {
           "type": "heading",
           "text": "Aan de slag"
+        }
+      ]
+    },
+    "reseller-hosting": {
+      "title": "Reseller hosting",
+      "subtitle": "Reseller hosting voor agencies en freelancers. Kies voor een server met DirectAdmin en Installatron, of kies voor Plus met Plesk en WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Reseller Hosting van TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "Met reseller hosting host je meerdere klantwebsites onder jouw eigen merk. Je krijgt duidelijke limieten voor opslag en dataverkeer, onbeperkt domeinen, e-mail, MySQL, SSH en een controlpanel om accounts eenvoudig te beheren."
+        },
+        {
+          "type": "heading",
+          "text": "Plannen"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Start — 10Gb opslag, 80Gb dataverkeer, DirectAdmin + Installatron",
+            "Basic — 15Gb opslag, 120Gb dataverkeer, DirectAdmin + Installatron",
+            "Business — 20Gb opslag, 150Gb dataverkeer, DirectAdmin + Installatron",
+            "Plus — 20Gb opslag, 150Gb dataverkeer, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Inbegrepen bij elk plan"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Onbeperkt aantal domeinen",
+            "E-mail en MySQL-databases",
+            "SSH-toegang",
+            "Controlpanel: DirectAdmin (Start–Business) of Plesk (Plus)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Voor wie is reseller hosting geschikt?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ideaal voor webdesigners, agencies en freelancers die hosting willen doorverkopen of meerdere klantprojecten centraal willen beheren."
+        },
+        {
+          "type": "heading",
+          "text": "Bestellen of advies"
         }
       ]
     }
@@ -2712,6 +2816,58 @@
           "text": "Commencer"
         }
       ]
+    },
+    "reseller-hosting": {
+      "title": "Hébergement revendeur",
+      "subtitle": "Hébergement revendeur pour agences et freelances. Choisissez un serveur avec DirectAdmin et Installatron, ou choisissez Plus avec Plesk et WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Hébergement revendeur de TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "Avec l’hébergement revendeur, vous hébergez plusieurs sites Web clients sous votre propre marque. Vous bénéficiez de limites de stockage et de trafic claires, de domaines illimités, de messagerie électronique, MySQL, SSH et d'un panneau de contrôle pour gérer facilement les comptes."
+        },
+        {
+          "type": "heading",
+          "text": "Forfaits"
+        },
+        {
+          "type": "list",
+          "items": [
+            "DÉBUT – 10 Go de stockage, 80 Go de trafic, DirectAdmin + Installatron",
+            "MOYEN — 15 Go de stockage, 120 Go de trafic, DirectAdmin + Installatron",
+            "PRO — 20 Go de stockage, 150 Go de trafic, DirectAdmin + Installatron",
+            "PUISSANCE — 20 Go de stockage, 150 Go de trafic, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Inclus avec chaque forfait"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Domaines illimités",
+            "Bases de données de messagerie et MySQL",
+            "Accès SSH",
+            "Panneau de configuration : DirectAdmin (START–PRO) ou Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "À qui s'adresse l'hébergement revendeur ?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Idéal pour les concepteurs de sites Web, les agences et les indépendants qui souhaitent revendre l'hébergement ou gérer plusieurs projets clients de manière centralisée."
+        },
+        {
+          "type": "heading",
+          "text": "Commandez ou faites-vous conseiller"
+        }
+      ]
     }
   },
   "de": {
@@ -3615,6 +3771,58 @@
         {
           "type": "heading",
           "text": "Fangen Sie an"
+        }
+      ]
+    },
+    "reseller-hosting": {
+      "title": "Reseller-Hosting",
+      "subtitle": "Reseller-Hosting für Agenturen und Freelancer. Wählen Sie einen Server mit DirectAdmin und Installatron, oder wählen Sie Plus mit Plesk und WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Reseller-Hosting von TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "Beim Reseller-Hosting hosten Sie mehrere Kunden-Websites unter Ihrer eigenen Marke. Sie erhalten klare Speicher- und Datenverkehrslimits, unbegrenzte Domains, E-Mail, MySQL, SSH und ein Kontrollfeld zur einfachen Verwaltung von Konten."
+        },
+        {
+          "type": "heading",
+          "text": "Pläne"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START – 10 GB Speicher, 80 GB Datenverkehr, DirectAdmin + Installatron",
+            "MITTEL – 15 GB Speicher, 120 GB Datenverkehr, DirectAdmin + Installatron",
+            "PRO – 20 GB Speicher, 150 GB Datenverkehr, DirectAdmin + Installatron",
+            "LEISTUNG – 20 GB Speicher, 150 GB Datenverkehr, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "In jedem Plan enthalten"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Unbegrenzte Domains",
+            "E-Mail- und MySQL-Datenbanken",
+            "SSH-Zugriff",
+            "Systemsteuerung: DirectAdmin (START–PRO) oder Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Für wen ist Reseller-Hosting geeignet?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ideal für Webdesigner, Agenturen und Freiberufler, die Hosting weiterverkaufen oder mehrere Kundenprojekte zentral verwalten möchten."
+        },
+        {
+          "type": "heading",
+          "text": "Bestellen oder beraten lassen"
         }
       ]
     }
@@ -4522,6 +4730,58 @@
           "text": "empezar"
         }
       ]
+    },
+    "reseller-hosting": {
+      "title": "Alojamiento para revendedores",
+      "subtitle": "Hosting revendedor para agencias y freelancers. Elige un servidor con DirectAdmin e Installatron, o elige Plus con Plesk y WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Alojamiento para revendedores de TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "Con el alojamiento de revendedor, usted aloja los sitios web de varios clientes bajo su propia marca. Obtiene límites claros de almacenamiento y tráfico, dominios ilimitados, correo electrónico, MySQL, SSH y un panel de control para administrar cuentas fácilmente."
+        },
+        {
+          "type": "heading",
+          "text": "Planes"
+        },
+        {
+          "type": "list",
+          "items": [
+            "INICIO: 10 Gb de almacenamiento, 80 Gb de tráfico, DirectAdmin + Installatron",
+            "MEDIANO: 15 Gb de almacenamiento, 120 Gb de tráfico, DirectAdmin + Installatron",
+            "PRO: 20 Gb de almacenamiento, 150 Gb de tráfico, DirectAdmin + Installatron",
+            "POTENCIA: 20 Gb de almacenamiento, 150 Gb de tráfico, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Incluido con cada plan"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Dominios ilimitados",
+            "Correo electrónico y bases de datos MySQL",
+            "Acceso SSH",
+            "Panel de control: DirectAdmin (START–PRO) o Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "¿Para quién es el hosting revendedor?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ideal para diseñadores web, agencias y autónomos que quieran revender hosting o gestionar múltiples proyectos de clientes de forma centralizada."
+        },
+        {
+          "type": "heading",
+          "text": "Ordene o reciba asesoramiento"
+        }
+      ]
     }
   },
   "pt": {
@@ -5425,6 +5685,58 @@
         {
           "type": "heading",
           "text": "Comece"
+        }
+      ]
+    },
+    "reseller-hosting": {
+      "title": "Revenda de hospedagem",
+      "subtitle": "Hospedagem revenda para agências e freelancers. Escolha um servidor com DirectAdmin e Installatron, ou escolha Plus com Plesk e WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Revenda de hospedagem da TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "Com a hospedagem de revenda, você hospeda vários sites de clientes sob sua própria marca. Você obtém limites claros de armazenamento e tráfego, domínios ilimitados, e-mail, MySQL, SSH e um painel de controle para gerenciar contas facilmente."
+        },
+        {
+          "type": "heading",
+          "text": "Planos"
+        },
+        {
+          "type": "list",
+          "items": [
+            "INICIAR — 10 Gb de armazenamento, 80 Gb de tráfego, DirectAdmin + Installatron",
+            "MÉDIO — 15 Gb de armazenamento, 120 Gb de tráfego, DirectAdmin + Installatron",
+            "PRO – 20 Gb de armazenamento, 150 Gb de tráfego, DirectAdmin + Installatron",
+            "POWER — 20 Gb de armazenamento, 150 Gb de tráfego, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Incluído em todos os planos"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Domínios ilimitados",
+            "Bancos de dados de e-mail e MySQL",
+            "Acesso SSH",
+            "Painel de controle: DirectAdmin (START–PRO) ou Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Para quem é a revenda de hospedagem?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ideal para web designers, agências e freelancers que desejam revender hospedagem ou gerenciar projetos de vários clientes de forma centralizada."
+        },
+        {
+          "type": "heading",
+          "text": "Encomende ou obtenha conselhos"
         }
       ]
     }
@@ -6332,6 +6644,58 @@
           "text": "Inizia"
         }
       ]
+    },
+    "reseller-hosting": {
+      "title": "Hosting per rivenditori",
+      "subtitle": "Hosting reseller per agenzie e freelancer. Scegli un server con DirectAdmin e Installatron, oppure scegli Plus con Plesk e WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Hosting rivenditori da TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "Con l'hosting per rivenditori ospiti più siti Web di clienti con il tuo marchio. Ottieni limiti di spazio e traffico chiari, domini illimitati, e-mail, MySQL, SSH e un pannello di controllo per gestire facilmente gli account."
+        },
+        {
+          "type": "heading",
+          "text": "Piani"
+        },
+        {
+          "type": "list",
+          "items": [
+            "INIZIO: spazio di archiviazione da 10 GB, traffico da 80 GB, DirectAdmin + Installatron",
+            "MEDIO: spazio di archiviazione da 15 GB, traffico da 120 GB, DirectAdmin + Installatron",
+            "PRO: spazio di archiviazione da 20 GB, traffico da 150 GB, DirectAdmin + Installatron",
+            "POTENZA: spazio di archiviazione da 20 Gb, traffico da 150 Gb, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Incluso in ogni piano"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Domini illimitati",
+            "E-mail e database MySQL",
+            "Accesso SSH",
+            "Pannello di controllo: DirectAdmin (START–PRO) o Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Per chi è l'hosting del rivenditore?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ideale per web designer, agenzie e liberi professionisti che desiderano rivendere hosting o gestire centralmente più progetti cliente."
+        },
+        {
+          "type": "heading",
+          "text": "Ordina o ricevi consigli"
+        }
+      ]
     }
   },
   "el": {
@@ -7235,6 +7599,58 @@
         {
           "type": "heading",
           "text": "Ξεκινήστε"
+        }
+      ]
+    },
+    "reseller-hosting": {
+      "title": "Μεταπωλητής Φιλοξενία",
+      "subtitle": "Reseller hosting για agencies και freelancers. Επιλέξτε έναν server με DirectAdmin και Installatron, ή επιλέξτε Plus με Plesk και WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Φιλοξενία μεταπωλητών από το TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "Με τη φιλοξενία μεταπωλητών φιλοξενείτε πολλούς ιστότοπους πελατών με τη δική σας επωνυμία. Λαμβάνετε σαφή όρια αποθήκευσης και επισκεψιμότητας, απεριόριστους τομείς, email, MySQL, SSH και έναν πίνακα ελέγχου για εύκολη διαχείριση λογαριασμών."
+        },
+        {
+          "type": "heading",
+          "text": "Σχέδια"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START — Αποθηκευτικός χώρος 10 Gb, κίνηση 80 Gb, DirectAdmin + Installatron",
+            "MEDIUM — 15 Gb αποθηκευτικός χώρος, 120 Gb κίνηση, DirectAdmin + Installatron",
+            "PRO — Αποθηκευτικός χώρος 20 Gb, κίνηση 150 Gb, DirectAdmin + Installatron",
+            "POWER — Αποθηκευτικός χώρος 20 Gb, κίνηση 150 Gb, Εργαλειοθήκη Plesk + WordPress"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Περιλαμβάνεται σε κάθε σχέδιο"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Απεριόριστοι τομείς",
+            "Βάσεις δεδομένων email και MySQL",
+            "Πρόσβαση SSH",
+            "Πίνακας ελέγχου: DirectAdmin (START–PRO) ή Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Για ποιον φιλοξενεί ο μεταπωλητής;"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ιδανικό για σχεδιαστές ιστοσελίδων, πρακτορεία και ελεύθερους επαγγελματίες που θέλουν να μεταπωλήσουν φιλοξενία ή να διαχειριστούν πολλά έργα πελατών κεντρικά."
+        },
+        {
+          "type": "heading",
+          "text": "Παραγγείλετε ή λάβετε συμβουλές"
         }
       ]
     }
@@ -8142,6 +8558,58 @@
           "text": "Zacznij"
         }
       ]
+    },
+    "reseller-hosting": {
+      "title": "Hosting dla sprzedawców",
+      "subtitle": "Hosting resellerski dla agencji i freelancerów. Wybierz serwer z DirectAdmin i Installatron, albo wybierz Plus z Plesk i WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Hosting dla sprzedawców od TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "Dzięki hostingowi dla resellerów hostujesz wiele witryn klientów pod własną marką. Otrzymujesz jasne limity miejsca i ruchu, nieograniczoną liczbę domen, pocztę e-mail, MySQL, SSH i panel sterowania do łatwego zarządzania kontami."
+        },
+        {
+          "type": "heading",
+          "text": "Plany"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START — 10 Gb pamięci, 80 Gb ruchu, DirectAdmin + Instalator",
+            "ŚREDNI — 15 Gb pamięci, 120 Gb ruchu, DirectAdmin + Instalator",
+            "PRO — 20 Gb pamięci, 150 Gb ruchu, DirectAdmin + Instalator",
+            "MOC — 20 Gb pamięci, 150 Gb ruchu, Plesk + zestaw narzędzi WordPress"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Dołączone do każdego planu"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Nielimitowane domeny",
+            "Bazy e-mail i MySQL",
+            "Dostęp SSH",
+            "Panel sterowania: DirectAdmin (START–PRO) lub Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Dla kogo jest hosting dla resellerów?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Idealny dla projektantów stron internetowych, agencji i freelancerów, którzy chcą odsprzedawać hosting lub centralnie zarządzać wieloma projektami klientów."
+        },
+        {
+          "type": "heading",
+          "text": "Zamów lub uzyskaj poradę"
+        }
+      ]
     }
   },
   "cs": {
@@ -9045,6 +9513,58 @@
         {
           "type": "heading",
           "text": "Začněte"
+        }
+      ]
+    },
+    "reseller-hosting": {
+      "title": "Reseller hosting",
+      "subtitle": "Reseller hosting pro agentury a freelancery. Vyberte server s DirectAdmin a Installatron, nebo vyberte Plus s Plesk a WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Reseller Hosting od TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "S hostingem pro prodejce hostujete více klientských webů pod svou vlastní značkou. Získáte jasné limity úložiště a provozu, neomezené domény, e-mail, MySQL, SSH a ovládací panel pro snadnou správu účtů."
+        },
+        {
+          "type": "heading",
+          "text": "Plány"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START — 10Gb úložiště, 80Gb provoz, DirectAdmin + Installatron",
+            "STŘEDNÍ — 15Gb úložiště, 120Gb provoz, DirectAdmin + Installatron",
+            "PRO — 20Gb úložiště, 150Gb provoz, DirectAdmin + Installatron",
+            "POWER — 20Gb úložiště, 150Gb provoz, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Součástí každého plánu"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Neomezené domény",
+            "E-mailové a MySQL databáze",
+            "SSH přístup",
+            "Ovládací panel: DirectAdmin (START–PRO) nebo Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Pro koho je reseller hosting určen?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ideální pro webové designéry, agentury a nezávislé pracovníky, kteří chtějí prodávat hosting nebo centrálně spravovat více klientských projektů."
+        },
+        {
+          "type": "heading",
+          "text": "Objednejte se nebo si nechte poradit"
         }
       ]
     }
@@ -9952,6 +10472,58 @@
           "text": "Začnite"
         }
       ]
+    },
+    "reseller-hosting": {
+      "title": "Reseller Hosting",
+      "subtitle": "Reseller hosting pre agentúry a freelancerov. Vyberte server s DirectAdmin a Installatron, alebo vyberte Plus s Plesk a WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Reseller Hosting od TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "S predajcom hostingu hosťujete viacero klientskych webových stránok pod vašou vlastnou značkou. Získate jasné limity úložiska a prenosu, neobmedzené domény, e-mail, MySQL, SSH a ovládací panel na jednoduchú správu účtov."
+        },
+        {
+          "type": "heading",
+          "text": "Plány"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START — 10Gb úložisko, 80Gb prenos, DirectAdmin + Installatron",
+            "STREDNÉ — 15Gb úložisko, 120Gb prevádzka, DirectAdmin + Installatron",
+            "PRO — 20 Gb úložisko, 150 Gb prenos, DirectAdmin + Installatron",
+            "POWER — 20 Gb úložisko, 150 Gb prenos, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Súčasťou každého plánu"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Neobmedzené domény",
+            "E-mailové a MySQL databázy",
+            "SSH prístup",
+            "Ovládací panel: DirectAdmin (START–PRO) alebo Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Pre koho je reseller hosting určený?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ideálne pre web dizajnérov, agentúry a nezávislých pracovníkov, ktorí chcú ďalej predávať hosting alebo centrálne spravovať viacero klientskych projektov."
+        },
+        {
+          "type": "heading",
+          "text": "Objednajte si alebo nechajte si poradiť"
+        }
+      ]
     }
   },
   "hu": {
@@ -10855,6 +11427,58 @@
         {
           "type": "heading",
           "text": "Kezdje el"
+        }
+      ]
+    },
+    "reseller-hosting": {
+      "title": "Viszonteladói tárhely",
+      "subtitle": "Viszonteladói tárhely ügynökségeknek és freelancereknek. Válasszon szervert DirectAdminnal és Installatronnal, vagy válassza a Plus csomagot Pleskkel és WordPress Toolkittel.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Viszonteladói tárhely a TripleZero iT-től"
+        },
+        {
+          "type": "paragraph",
+          "text": "A viszonteladói tárhely segítségével több ügyfélwebhelyet is tárolhat saját márkanév alatt. Egyértelmű tárolási és forgalmi korlátokat, korlátlan domaint, e-mailt, MySQL-t, SSH-t és egy vezérlőpultot kap a fiókok egyszerű kezeléséhez."
+        },
+        {
+          "type": "heading",
+          "text": "Tervek"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START — 10 Gb tárhely, 80 Gb forgalom, DirectAdmin + Installatron",
+            "KÖZEPES — 15 Gb tárhely, 120 Gb forgalom, DirectAdmin + Installatron",
+            "PRO — 20 Gb tárhely, 150 Gb forgalom, DirectAdmin + Installatron",
+            "TELJESÍTMÉNY — 20 Gb tárhely, 150 Gb forgalom, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Minden tervhez tartozik"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Korlátlan domain",
+            "E-mail és MySQL adatbázisok",
+            "SSH hozzáférés",
+            "Vezérlőpult: DirectAdmin (START–PRO) vagy Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Kinek szól a viszonteladói tárhely?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ideális webes tervezők, ügynökségek és szabadúszók számára, akik tárhelyet szeretnének viszonteladni, vagy több ügyfélprojektet szeretnének központilag kezelni."
+        },
+        {
+          "type": "heading",
+          "text": "Rendeljen vagy kérjen tanácsot"
         }
       ]
     }
@@ -11762,6 +12386,58 @@
           "text": "Începeți"
         }
       ]
+    },
+    "reseller-hosting": {
+      "title": "Gazduire reseller",
+      "subtitle": "Reseller hosting pentru agenții și freelanceri. Alegeți un server cu DirectAdmin și Installatron, sau alegeți Plus cu Plesk și WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Gazduire reseller de la TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "Cu găzduirea pentru reseller, găzduiți mai multe site-uri web pentru clienți sub propriul dvs. brand. Obțineți limite clare de stocare și trafic, domenii nelimitate, e-mail, MySQL, SSH și un panou de control pentru a gestiona cu ușurință conturile."
+        },
+        {
+          "type": "heading",
+          "text": "Planuri"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START — Stocare de 10 Gb, trafic de 80 Gb, DirectAdmin + Installatron",
+            "MEDIU — 15 Gb stocare, 120 Gb trafic, DirectAdmin + Installatron",
+            "PRO — 20Gb stocare, 150Gb trafic, DirectAdmin + Installatron",
+            "POWER — 20 Gb de stocare, 150 Gb trafic, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Inclus cu fiecare plan"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Domenii nelimitate",
+            "E-mail și baze de date MySQL",
+            "Acces SSH",
+            "Panou de control: DirectAdmin (START–PRO) sau Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Pentru cine este reseller hosting?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ideal pentru web designeri, agenții și freelanceri care doresc să revinde găzduirea sau să gestioneze mai multe proiecte de clienți la nivel central."
+        },
+        {
+          "type": "heading",
+          "text": "Comandați sau obțineți sfaturi"
+        }
+      ]
     }
   },
   "bg": {
@@ -12665,6 +13341,58 @@
         {
           "type": "heading",
           "text": "Започнете"
+        }
+      ]
+    },
+    "reseller-hosting": {
+      "title": "Реселър хостинг",
+      "subtitle": "Reseller хостинг за агенции и фрийлансъри. Изберете сървър с DirectAdmin и Installatron или изберете Plus с Plesk и WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Реселърски хостинг от TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "С дистрибуторския хостинг хоствате множество клиентски уебсайтове под собствената си марка. Получавате ясни ограничения за съхранение и трафик, неограничени домейни, имейл, MySQL, SSH и контролен панел за лесно управление на акаунти."
+        },
+        {
+          "type": "heading",
+          "text": "Планове"
+        },
+        {
+          "type": "list",
+          "items": [
+            "НАЧАЛО — 10 Gb място за съхранение, 80 Gb трафик, DirectAdmin + Installatron",
+            "СРЕДЕН — 15Gb памет, 120Gb трафик, DirectAdmin + Installatron",
+            "PRO — 20Gb памет, 150Gb трафик, DirectAdmin + Installatron",
+            "МОЩНОСТ — 20Gb място за съхранение, 150Gb трафик, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Включено във всеки план"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Неограничени домейни",
+            "Имейл и MySQL бази данни",
+            "SSH достъп",
+            "Контролен панел: DirectAdmin (START–PRO) или Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "За кого е предназначен дистрибуторският хостинг?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Идеален за уеб дизайнери, агенции и фрийлансъри, които искат да препродават хостинг или да управляват централно множество клиентски проекти."
+        },
+        {
+          "type": "heading",
+          "text": "Поръчайте или получете съвет"
         }
       ]
     }
@@ -13572,6 +14300,58 @@
           "text": "Započnite"
         }
       ]
+    },
+    "reseller-hosting": {
+      "title": "Reseller Hosting",
+      "subtitle": "Reseller hosting za agencije i freelancere. Odaberite poslužitelj s DirectAdmin i Installatron, ili odaberite Plus s Plesk i WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Reseller hosting tvrtke TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "Uz reseller hosting ugošćujete više web stranica klijenata pod vlastitom markom. Dobivate jasna ograničenja pohrane i prometa, neograničene domene, e-poštu, MySQL, SSH i upravljačku ploču za jednostavno upravljanje računima."
+        },
+        {
+          "type": "heading",
+          "text": "Planovi"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START — 10 Gb prostora za pohranu, 80 Gb prometa, DirectAdmin + Installatron",
+            "SREDNJI — 15 Gb prostora za pohranu, 120 Gb prometa, DirectAdmin + Installatron",
+            "PRO — 20 Gb pohrane, 150 Gb prometa, DirectAdmin + Installatron",
+            "SNAGA — 20 Gb pohrane, 150 Gb prometa, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Uključeno u svaki plan"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Neograničene domene",
+            "E-mail i MySQL baze podataka",
+            "SSH pristup",
+            "Upravljačka ploča: DirectAdmin (START–PRO) ili Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Kome je namijenjen reseller hosting?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Idealno za web dizajnere, agencije i freelancere koji žele preprodavati hosting ili centralno upravljati projektima više klijenata."
+        },
+        {
+          "type": "heading",
+          "text": "Naručite ili potražite savjet"
+        }
+      ]
     }
   },
   "sr": {
@@ -14475,6 +15255,58 @@
         {
           "type": "heading",
           "text": "Започните"
+        }
+      ]
+    },
+    "reseller-hosting": {
+      "title": "Реселлер Хостинг",
+      "subtitle": "Reseller хостинг за агенције и фриленсере. Изаберите сервер са DirectAdmin и Installatron, или изаберите Plus са Plesk и WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Реселлер Хостинг од ТриплеЗеро иТ"
+        },
+        {
+          "type": "paragraph",
+          "text": "Са хостингом за препродаваче хостујете више веб локација клијената под сопственим брендом. Добијате јасна ограничења за складиштење и саобраћај, неограничене домене, е-пошту, МиСКЛ, ССХ и контролну таблу за једноставно управљање налозима."
+        },
+        {
+          "type": "heading",
+          "text": "Планови"
+        },
+        {
+          "type": "list",
+          "items": [
+            "СТАРТ — 10Гб складишта, 80Гб саобраћаја, ДирецтАдмин + Инсталлатрон",
+            "СРЕДЊИ — 15Гб складишта, 120Гб саобраћаја, ДирецтАдмин + Инсталлатрон",
+            "ПРО — 20Гб складишта, 150Гб саобраћаја, ДирецтАдмин + Инсталлатрон",
+            "СНАГА — 20Гб складишта, 150Гб саобраћаја, Плеск + ВордПресс Тоолкит"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Укључено у сваки план"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Неограничени домени",
+            "Е-маил и МиСКЛ базе података",
+            "ССХ приступ",
+            "Контролна табла: ДирецтАдмин (СТАРТ–ПРО) или Плеск (ПОВЕР)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Коме је намењен реселлер хостинг?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Идеално за веб дизајнере, агенције и слободњаке који желе да препродају хостинг или централно управљају пројектима више клијената."
+        },
+        {
+          "type": "heading",
+          "text": "Наручите или потражите савет"
         }
       ]
     }
@@ -15382,6 +16214,58 @@
           "text": "Započnite"
         }
       ]
+    },
+    "reseller-hosting": {
+      "title": "Reseller Hosting",
+      "subtitle": "Reseller hosting za agencije i freelancere. Odaberite server s DirectAdmin i Installatron, ili odaberite Plus s Plesk i WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Reseller Hosting od TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "Sa reseller hostingom ugošćujete više klijentskih web stranica pod vlastitim brendom. Dobijate jasna ograničenja pohrane i prometa, neograničene domene, e-poštu, MySQL, SSH i kontrolnu ploču za jednostavno upravljanje nalozima."
+        },
+        {
+          "type": "heading",
+          "text": "Planovi"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START — 10Gb skladišta, 80Gb saobraćaja, DirectAdmin + Installatron",
+            "SREDNJE — 15Gb skladištenja, 120Gb saobraćaja, DirectAdmin + Installatron",
+            "PRO — 20Gb skladištenja, 150Gb saobraćaja, DirectAdmin + Installatron",
+            "SNAGA — 20Gb skladišta, 150Gb saobraćaja, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Uključeno u svaki plan"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Neograničeni domeni",
+            "Email i MySQL baze podataka",
+            "SSH pristup",
+            "Kontrolna tabla: DirectAdmin (START–PRO) ili Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Kome je namijenjen reseller hosting?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Idealno za web dizajnere, agencije i freelancere koji žele preprodati hosting ili centralno upravljati projektima više klijenata."
+        },
+        {
+          "type": "heading",
+          "text": "Naručite ili potražite savjet"
+        }
+      ]
     }
   },
   "cnr": {
@@ -16285,6 +17169,58 @@
         {
           "type": "heading",
           "text": "Започните"
+        }
+      ]
+    },
+    "reseller-hosting": {
+      "title": "Реселлер Хостинг",
+      "subtitle": "Reseller хостинг за агенције и фриленсере. Изаберите сервер са DirectAdmin и Installatron, или изаберите Plus са Plesk и WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Реселлер Хостинг од ТриплеЗеро иТ"
+        },
+        {
+          "type": "paragraph",
+          "text": "Са хостингом за препродаваче хостујете више веб локација клијената под сопственим брендом. Добијате јасна ограничења за складиштење и саобраћај, неограничене домене, е-пошту, МиСКЛ, ССХ и контролну таблу за једноставно управљање налозима."
+        },
+        {
+          "type": "heading",
+          "text": "Планови"
+        },
+        {
+          "type": "list",
+          "items": [
+            "СТАРТ — 10Гб складишта, 80Гб саобраћаја, ДирецтАдмин + Инсталлатрон",
+            "СРЕДЊИ — 15Гб складишта, 120Гб саобраћаја, ДирецтАдмин + Инсталлатрон",
+            "ПРО — 20Гб складишта, 150Гб саобраћаја, ДирецтАдмин + Инсталлатрон",
+            "СНАГА — 20Гб складишта, 150Гб саобраћаја, Плеск + ВордПресс Тоолкит"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Укључено у сваки план"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Неограничени домени",
+            "Е-маил и МиСКЛ базе података",
+            "ССХ приступ",
+            "Контролна табла: ДирецтАдмин (СТАРТ–ПРО) или Плеск (ПОВЕР)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Коме је намењен реселлер хостинг?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Идеално за веб дизајнере, агенције и слободњаке који желе да препродају хостинг или централно управљају пројектима више клијената."
+        },
+        {
+          "type": "heading",
+          "text": "Наручите или потражите савет"
         }
       ]
     }
@@ -17192,6 +18128,58 @@
           "text": "Filloni"
         }
       ]
+    },
+    "reseller-hosting": {
+      "title": "Pritja e Rishitësve",
+      "subtitle": "Hosting rivendës për agjenci dhe freelancerë. Zgjidhni një server me DirectAdmin dhe Installatron, ose zgjidhni Plus me Plesk dhe WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Pritja e rishitësve nga TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "Me pritjen e rishitësve ju pret faqet e internetit të shumë klientëve nën markën tuaj. Ju merrni kufij të qartë të ruajtjes dhe trafikut, domene të pakufizuara, email, MySQL, SSH dhe një panel kontrolli për të menaxhuar me lehtësi llogaritë."
+        },
+        {
+          "type": "heading",
+          "text": "Planet"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START - 10 Gb memorie, 80 Gb trafik, DirectAdmin + Installatron",
+            "MEDIUM - 15 Gb memorie, 120 Gb trafik, DirectAdmin + Installatron",
+            "PRO — 20 Gb memorie, 150 Gb trafik, DirectAdmin + Installatron",
+            "POWER - 20 Gb memorie, 150 Gb trafik, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Përfshirë në çdo plan"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Domene të pakufizuara",
+            "Bazat e të dhënave të postës elektronike dhe MySQL",
+            "Qasja SSH",
+            "Paneli i kontrollit: DirectAdmin (START–PRO) ose Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Për kë po pret shitësi?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ideale për dizajnerët e uebit, agjencitë dhe përkthyes të pavarur që duan të rishesin hosting ose të menaxhojnë projekte të shumta klientësh në qendër."
+        },
+        {
+          "type": "heading",
+          "text": "Porositni ose merrni këshilla"
+        }
+      ]
     }
   },
   "mk": {
@@ -18095,6 +19083,58 @@
         {
           "type": "heading",
           "text": "Започнете"
+        }
+      ]
+    },
+    "reseller-hosting": {
+      "title": "Препродавач на хостинг",
+      "subtitle": "Reseller хостинг за агенции и фриленсери. Изберете сервер со DirectAdmin и Installatron, или изберете Plus со Plesk и WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Препродавач на хостинг од TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "Со хостинг за препродавачи, вие хостирате повеќе веб-страници за клиенти под ваш сопствен бренд. Добивате јасни ограничувања за складирање и сообраќај, неограничени домени, е-пошта, MySQL, SSH и контролен панел за лесно управување со сметките."
+        },
+        {
+          "type": "heading",
+          "text": "Планови"
+        },
+        {
+          "type": "list",
+          "items": [
+            "СТАРТ - 10 Gb меморија, 80 Gb сообраќај, DirectAdmin + Installatron",
+            "СРЕДЕН - 15 Gb складирање, 120 Gb сообраќај, DirectAdmin + Installatron",
+            "PRO - 20 Gb складирање, 150 Gb сообраќај, DirectAdmin + Installatron",
+            "МОЌНОСТ - 20 Gb складирање, 150 Gb сообраќај, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Вклучено во секој план"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Неограничени домени",
+            "Бази на податоци за е-пошта и MySQL",
+            "SSH пристап",
+            "Контролен панел: DirectAdmin (START–PRO) или Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "За кого е хостирање на препродавач?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Идеален за веб-дизајнери, агенции и хонорарни преведувачи кои сакаат да препродаваат хостинг или централно да управуваат со повеќе проекти со клиенти."
+        },
+        {
+          "type": "heading",
+          "text": "Нарачајте или добијте совет"
         }
       ]
     }
@@ -19002,6 +20042,58 @@
           "text": "Pradėkite"
         }
       ]
+    },
+    "reseller-hosting": {
+      "title": "Perpardavėjo priegloba",
+      "subtitle": "Perpardavėjų hostingas agentūroms ir freelanseriams. Pasirinkite serverį su DirectAdmin ir Installatron arba pasirinkite Plus su Plesk ir WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Perpardavėjo priegloba iš TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "Naudodami perpardavėjo prieglobą priglobiate kelias klientų svetaines su savo prekės ženklu. Gaunate aiškius saugyklos ir srauto apribojimus, neribotus domenus, el. paštą, MySQL, SSH ir valdymo skydelį, kad galėtumėte lengvai valdyti paskyras."
+        },
+        {
+          "type": "heading",
+          "text": "Planai"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START – 10 Gb saugykla, 80 Gb srautas, DirectAdmin + Installatron",
+            "MEDIUM – 15Gb saugykla, 120Gb srautas, DirectAdmin + Installatron",
+            "PRO – 20Gb saugykla, 150Gb srautas, DirectAdmin + Installatron",
+            "MAITINIMO – 20 Gb saugykla, 150 Gb srautas, Plesk + WordPress įrankių rinkinys"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Įtraukta į kiekvieną planą"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Neribotas domenų skaičius",
+            "Pašto ir MySQL duomenų bazės",
+            "SSH prieiga",
+            "Valdymo skydelis: „DirectAdmin“ (START–PRO) arba „Plesk“ (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Kam skirtas perpardavėjo priegloba?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Idealiai tinka interneto dizaineriams, agentūroms ir laisvai samdomiems darbuotojams, kurie nori perparduoti prieglobą arba centralizuotai valdyti kelis klientų projektus."
+        },
+        {
+          "type": "heading",
+          "text": "Užsisakykite arba gaukite patarimą"
+        }
+      ]
     }
   },
   "da": {
@@ -19905,6 +20997,58 @@
         {
           "type": "heading",
           "text": "Kom i gang"
+        }
+      ]
+    },
+    "reseller-hosting": {
+      "title": "Forhandler hosting",
+      "subtitle": "Forhandlerhosting til bureauer og freelancere. Vælg en server med DirectAdmin og Installatron, eller vælg Plus med Plesk og WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Forhandlerhosting fra TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "Med forhandlerhosting hoster du flere klientwebsteder under dit eget brand. Du får klare lager- og trafikgrænser, ubegrænsede domæner, e-mail, MySQL, SSH og et kontrolpanel til nemt at administrere konti."
+        },
+        {
+          "type": "heading",
+          "text": "Planer"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START — 10 Gb lagerplads, 80 Gb trafik, DirectAdmin + Installatron",
+            "MEDIUM — 15 Gb lagerplads, 120 Gb trafik, DirectAdmin + Installatron",
+            "PRO — 20 Gb lagerplads, 150 Gb trafik, DirectAdmin + Installatron",
+            "POWER — 20 Gb lagerplads, 150 Gb trafik, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Inkluderet i hver plan"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Ubegrænsede domæner",
+            "E-mail- og MySQL-databaser",
+            "SSH adgang",
+            "Kontrolpanel: DirectAdmin (START–PRO) eller Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Hvem er forhandlerhosting for?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ideel til webdesignere, bureauer og freelancere, der ønsker at videresælge hosting eller administrere flere klientprojekter centralt."
+        },
+        {
+          "type": "heading",
+          "text": "Bestil eller få råd"
         }
       ]
     }
@@ -20812,6 +21956,58 @@
           "text": "Kom igång"
         }
       ]
+    },
+    "reseller-hosting": {
+      "title": "Återförsäljarvärd",
+      "subtitle": "Återförsäljarhosting för byråer och frilansare. Välj en server med DirectAdmin och Installatron, eller välj Plus med Plesk och WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Återförsäljarvärd från TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "Med återförsäljarhosting är du värd för flera klientwebbplatser under ditt eget varumärke. Du får tydliga lagrings- och trafikgränser, obegränsade domäner, e-post, MySQL, SSH och en kontrollpanel för att enkelt hantera konton."
+        },
+        {
+          "type": "heading",
+          "text": "Planer"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START — 10 Gb lagring, 80 Gb trafik, DirectAdmin + Installatron",
+            "MEDIUM — 15 Gb lagring, 120 Gb trafik, DirectAdmin + Installatron",
+            "PRO — 20 Gb lagring, 150 Gb trafik, DirectAdmin + Installatron",
+            "POWER — 20 Gb lagring, 150 Gb trafik, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Ingår i varje plan"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Obegränsade domäner",
+            "E-post- och MySQL-databaser",
+            "SSH-åtkomst",
+            "Kontrollpanel: DirectAdmin (START–PRO) eller Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Vem är återförsäljarvärd för?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Idealisk för webbdesigners, byråer och frilansare som vill sälja vidare hosting eller hantera flera kundprojekt centralt."
+        },
+        {
+          "type": "heading",
+          "text": "Beställ eller få råd"
+        }
+      ]
     }
   },
   "no": {
@@ -21715,6 +22911,58 @@
         {
           "type": "heading",
           "text": "Kom i gang"
+        }
+      ]
+    },
+    "reseller-hosting": {
+      "title": "Forhandler hosting",
+      "subtitle": "Reseller-hosting for byråer og frilansere. Velg en server med DirectAdmin og Installatron, eller velg Plus med Plesk og WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Forhandlerhosting fra TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "Med forhandlerhosting er du vert for flere klientnettsteder under ditt eget merke. Du får klare lagrings- og trafikkgrenser, ubegrensede domener, e-post, MySQL, SSH og et kontrollpanel for å administrere kontoer enkelt."
+        },
+        {
+          "type": "heading",
+          "text": "Planer"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START — 10 Gb lagring, 80 Gb trafikk, DirectAdmin + Installatron",
+            "MEDIUM — 15 Gb lagring, 120 Gb trafikk, DirectAdmin + Installatron",
+            "PRO — 20 Gb lagring, 150 Gb trafikk, DirectAdmin + Installatron",
+            "POWER — 20 Gb lagring, 150 Gb trafikk, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Inkludert med hver plan"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Ubegrenset domener",
+            "E-post- og MySQL-databaser",
+            "SSH-tilgang",
+            "Kontrollpanel: DirectAdmin (START–PRO) eller Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Hvem er forhandlerhosting for?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ideell for webdesignere, byråer og frilansere som ønsker å videreselge hosting eller administrere flere klientprosjekter sentralt."
+        },
+        {
+          "type": "heading",
+          "text": "Bestill eller få råd"
         }
       ]
     }
@@ -22622,6 +23870,58 @@
           "text": "Aloita"
         }
       ]
+    },
+    "reseller-hosting": {
+      "title": "Jälleenmyyjän hosting",
+      "subtitle": "Jälleenmyyjähosting toimistoille ja freelancereille. Valitse palvelin DirectAdminilla ja Installatronilla, tai valitse Plus Pleskillä ja WordPress Toolkitillä.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Jälleenmyyjän hosting TripleZero iT:ltä"
+        },
+        {
+          "type": "paragraph",
+          "text": "Jälleenmyyjäisännöinnillä isännöit useita asiakassivustoja oman tuotemerkkisi alla. Saat selkeät tallennus- ja liikennerajat, rajattomat verkkotunnukset, sähköpostin, MySQL:n, SSH:n ja ohjauspaneelin tilien hallintaa varten."
+        },
+        {
+          "type": "heading",
+          "text": "Suunnitelmat"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START — 10 Gt tallennustilaa, 80 Gt liikennettä, DirectAdmin + Installatron",
+            "MEDIUM — 15 Gt tallennustilaa, 120 Gt liikennettä, DirectAdmin + Installatron",
+            "PRO — 20 Gt tallennustilaa, 150 Gt liikennettä, DirectAdmin + Installatron",
+            "VIRTA — 20 Gt tallennustilaa, 150 Gt liikennettä, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Mukana joka suunnitelmassa"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Rajoittamaton määrä verkkotunnuksia",
+            "Sähköposti- ja MySQL-tietokannat",
+            "SSH pääsy",
+            "Ohjauspaneeli: DirectAdmin (START–PRO) tai Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Kenelle jälleenmyyjäisännöinti on tarkoitettu?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ihanteellinen web-suunnittelijoille, toimistoille ja freelancereille, jotka haluavat jälleenmyydä hosting-palvelun tai hallita useita asiakasprojekteja keskitetysti."
+        },
+        {
+          "type": "heading",
+          "text": "Tilaa tai kysy neuvoa"
+        }
+      ]
     }
   },
   "uk": {
@@ -23525,6 +24825,58 @@
         {
           "type": "heading",
           "text": "Почніть роботу"
+        }
+      ]
+    },
+    "reseller-hosting": {
+      "title": "Реселлерський хостинг",
+      "subtitle": "Реселлерський хостинг для агентств і фрілансерів. Оберіть сервер із DirectAdmin і Installatron або оберіть Plus із Plesk і WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Реселлерський хостинг від TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "За допомогою хостингу торгового посередника ви розміщуєте кілька веб-сайтів клієнтів під власним брендом. Ви отримуєте чіткі обмеження на зберігання та трафік, необмежену кількість доменів, електронну пошту, MySQL, SSH і панель керування для легкого керування обліковими записами."
+        },
+        {
+          "type": "heading",
+          "text": "Плани"
+        },
+        {
+          "type": "list",
+          "items": [
+            "СТАРТ — 10 Гб пам’яті, 80 Гб трафіку, DirectAdmin + Installatron",
+            "СЕРЕДНІЙ — 15 Гб пам’яті, 120 Гб трафіку, DirectAdmin + Installatron",
+            "PRO — 20 Гб пам’яті, 150 Гб трафіку, DirectAdmin + Installatron",
+            "ПОТУЖНІСТЬ — 20 Гб пам’яті, 150 Гб трафіку, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Входить до кожного плану"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Необмежена кількість доменів",
+            "Бази даних електронної пошти та MySQL",
+            "SSH доступ",
+            "Панель керування: DirectAdmin (START–PRO) або Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Для кого розрахований реселлерський хостинг?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ідеально підходить для веб-дизайнерів, агентств і фрілансерів, які хочуть перепродувати хостинг або централізовано керувати кількома клієнтськими проектами."
+        },
+        {
+          "type": "heading",
+          "text": "Замовляйте або отримайте консультацію"
         }
       ]
     }
@@ -24432,6 +25784,58 @@
           "text": "Начать"
         }
       ]
+    },
+    "reseller-hosting": {
+      "title": "Реселлерский хостинг",
+      "subtitle": "Реселлерский хостинг для агентств и фрилансеров. Выберите сервер с DirectAdmin и Installatron или выберите Plus с Plesk и WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Реселлерский хостинг от TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "Используя реселлерский хостинг, вы размещаете несколько клиентских веб-сайтов под своим собственным брендом. Вы получаете четкие ограничения на хранилище и трафик, неограниченное количество доменов, электронную почту, MySQL, SSH и панель управления для легкого управления учетными записями."
+        },
+        {
+          "type": "heading",
+          "text": "Планы"
+        },
+        {
+          "type": "list",
+          "items": [
+            "СТАРТ — 10Гб памяти, 80Гб трафика, DirectAdmin + Installatron",
+            "СРЕДНИЙ — 15Гб памяти, 120Гб трафика, DirectAdmin + Installatron",
+            "PRO — 20Гб памяти, 150Гб трафика, DirectAdmin + Installatron",
+            "МОЩНОСТЬ — 20 ГБ хранилища, 150 ГБ трафика, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Включено в каждый план"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Неограниченное количество доменов",
+            "Базы данных электронной почты и MySQL",
+            "SSH-доступ",
+            "Панель управления: DirectAdmin (START–PRO) или Plesk (POWER)."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Для кого предназначен реселлерский хостинг?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Идеально подходит для веб-дизайнеров, агентств и фрилансеров, которые хотят перепродавать хостинг или централизованно управлять несколькими клиентскими проектами."
+        },
+        {
+          "type": "heading",
+          "text": "Заказать или получить консультацию"
+        }
+      ]
     }
   },
   "tr": {
@@ -25335,6 +26739,58 @@
         {
           "type": "heading",
           "text": "Başlayın"
+        }
+      ]
+    },
+    "reseller-hosting": {
+      "title": "Bayi Barındırma",
+      "subtitle": "Ajanslar ve serbest çalışanlar için bayi hosting. DirectAdmin ve Installatron içeren bir sunucu seçin, veya Plesk ve WordPress Toolkit içeren Plus'ı seçin.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "TripleZero iT'den Bayi Barındırma"
+        },
+        {
+          "type": "paragraph",
+          "text": "Reseller hosting ile birden fazla müşteri web sitesini kendi markanız altında barındırırsınız. Hesapları kolayca yönetmek için net depolama ve trafik sınırlarına, sınırsız alan adlarına, e-postaya, MySQL'e, SSH'ye ve bir kontrol paneline sahip olursunuz."
+        },
+        {
+          "type": "heading",
+          "text": "Planlar"
+        },
+        {
+          "type": "list",
+          "items": [
+            "BAŞLANGIÇ — 10 Gb depolama, 80 Gb trafik, DirectAdmin + Installatron",
+            "ORTA — 15 Gb depolama, 120 Gb trafik, DirectAdmin + Installatron",
+            "PRO — 20 Gb depolama, 150 Gb trafik, DirectAdmin + Installatron",
+            "GÜÇ — 20 Gb depolama, 150 Gb trafik, Plesk + WordPress Araç Seti"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Her plana dahildir"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Sınırsız alan adı",
+            "E-posta ve MySQL veritabanları",
+            "SSH erişimi",
+            "Kontrol paneli: DirectAdmin (START–PRO) veya Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Bayi barındırma hizmeti kimin için?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Hosting satışı yapmak veya birden fazla müşteri projesini merkezi olarak yönetmek isteyen web tasarımcıları, ajanslar ve serbest çalışanlar için idealdir."
+        },
+        {
+          "type": "heading",
+          "text": "Sipariş verin veya tavsiye alın"
         }
       ]
     }
@@ -26242,6 +27698,58 @@
           "text": "התחל"
         }
       ]
+    },
+    "reseller-hosting": {
+      "title": "אירוח מפיץ",
+      "subtitle": "אירוח ריסלר לסוכנויות ולפרילנסרים. בחרו שרת עם DirectAdmin ו-Installatron, או בחרו Plus עם Plesk ו-WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "אירוח מפיץ מ- TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "עם אירוח מפיץ אתה מארח אתרי לקוחות מרובים תחת המותג שלך. אתה מקבל מגבלות אחסון ותעבורה ברורות, דומיינים ללא הגבלה, דואר אלקטרוני, MySQL, SSH ולוח בקרה לניהול חשבונות בקלות."
+        },
+        {
+          "type": "heading",
+          "text": "תוכניות"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START — 10Gb אחסון, 80Gb תעבורה, DirectAdmin + Installatron",
+            "בינוני - 15Gb אחסון, 120Gb תעבורה, DirectAdmin + Installatron",
+            "PRO — 20Gb אחסון, 150Gb תעבורה, DirectAdmin + Installatron",
+            "POWER — 20Gb אחסון, 150Gb תעבורה, Plesk + ערכת כלים של WordPress"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "כלול בכל תוכנית"
+        },
+        {
+          "type": "list",
+          "items": [
+            "דומיינים ללא הגבלה",
+            "מסדי נתונים של דואר אלקטרוני ו-MySQL",
+            "גישת SSH",
+            "לוח בקרה: DirectAdmin (START–PRO) או Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "למי מיועד אירוח מפיץ?"
+        },
+        {
+          "type": "paragraph",
+          "text": "אידיאלי עבור מעצבי אתרים, סוכנויות ופרילנסרים שרוצים למכור מחדש אירוח או לנהל פרויקטים מרובים של לקוחות באופן מרכזי."
+        },
+        {
+          "type": "heading",
+          "text": "להזמין או לקבל ייעוץ"
+        }
+      ]
     }
   },
   "ar": {
@@ -27145,6 +28653,58 @@
         {
           "type": "heading",
           "text": "ابدأ"
+        }
+      ]
+    },
+    "reseller-hosting": {
+      "title": "استضافة الموزعين",
+      "subtitle": "استضافة ريسيلر للوكالات والمستقلين. اختر خادمًا مع DirectAdmin وInstallatron، أو اختر Plus مع Plesk وWordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "استضافة الموزع من TripleZero iT"
+        },
+        {
+          "type": "paragraph",
+          "text": "من خلال استضافة الموزعين، يمكنك استضافة العديد من مواقع العملاء تحت علامتك التجارية الخاصة. يمكنك الحصول على حدود واضحة للتخزين وحركة المرور، ومجالات غير محدودة، وبريد إلكتروني، وMySQL، وSSH، ولوحة تحكم لإدارة الحسابات بسهولة."
+        },
+        {
+          "type": "heading",
+          "text": "الخطط"
+        },
+        {
+          "type": "list",
+          "items": [
+            "البداية — سعة تخزينية تبلغ 10 جيجا بايت، وحركة مرور تبلغ 80 جيجا بايت، وDirectAdmin + Installatron",
+            "متوسط ​​- سعة تخزين 15 جيجا بايت، وحركة مرور 120 جيجا بايت، DirectAdmin + Installatron",
+            "PRO - سعة تخزين 20 جيجا بايت، وحركة مرور 150 جيجا بايت، DirectAdmin + Installatron",
+            "الطاقة - مساحة تخزين تبلغ 20 جيجا بايت، وحركة مرور تبلغ 150 جيجا بايت، ومجموعة أدوات Plesk + WordPress"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "متضمنة مع كل خطة"
+        },
+        {
+          "type": "list",
+          "items": [
+            "مجالات غير محدودة",
+            "البريد الإلكتروني وقواعد بيانات MySQL",
+            "الوصول إلى SSH",
+            "لوحة التحكم: DirectAdmin (START–PRO) أو Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "لمن يستضيف الموزع؟"
+        },
+        {
+          "type": "paragraph",
+          "text": "مثالي لمصممي الويب والوكالات والمستقلين الذين يرغبون في إعادة بيع الاستضافة أو إدارة مشاريع عملاء متعددة مركزيًا."
+        },
+        {
+          "type": "heading",
+          "text": "النظام أو الحصول على المشورة"
         }
       ]
     }
@@ -28052,6 +29612,58 @@
           "text": "დაიწყეთ"
         }
       ]
+    },
+    "reseller-hosting": {
+      "title": "გადამყიდველის ჰოსტინგი",
+      "subtitle": "გადამყიდველის ჰოსტინგი სააგენტოებისა და ფრილანსერებისთვის. აირჩიეთ სერვერი DirectAdmin-ით და Installatron-ით, ან აირჩიეთ Plus with Plesk და WordPress Toolkit.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "გადამყიდველის ჰოსტინგი TripleZero iT-დან"
+        },
+        {
+          "type": "paragraph",
+          "text": "გადამყიდველის ჰოსტინგით თქვენ მასპინძლობთ მრავალი კლიენტის ვებსაიტს თქვენი საკუთარი ბრენდის ქვეშ. თქვენ მიიღებთ მკაფიო შენახვისა და ტრაფიკის ლიმიტებს, შეუზღუდავ დომენებს, ელფოსტას, MySQL, SSH და მართვის პანელს, რომ მარტივად მართოთ ანგარიშები."
+        },
+        {
+          "type": "heading",
+          "text": "გეგმები"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START — 10 გბ საცავი, 80 გბ ტრაფიკი, DirectAdmin + Installatron",
+            "საშუალო - 15 გბ საცავი, 120 გბ ტრაფიკი, DirectAdmin + Installatron",
+            "PRO — 20 გბ საცავი, 150 გბ ტრაფიკი, DirectAdmin + Installatron",
+            "POWER - 20 გბ საცავი, 150 გბ ტრაფიკი, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "შედის ყველა გეგმაში"
+        },
+        {
+          "type": "list",
+          "items": [
+            "შეუზღუდავი დომენები",
+            "ელ.ფოსტის და MySQL მონაცემთა ბაზები",
+            "SSH წვდომა",
+            "მართვის პანელი: DirectAdmin (START–PRO) ან Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "ვისთვის არის გადამყიდველი ჰოსტინგი?"
+        },
+        {
+          "type": "paragraph",
+          "text": "იდეალურია ვებ დიზაინერებისთვის, სააგენტოებისთვის და ფრილანსერებისთვის, რომლებსაც სურთ ჰოსტინგის გადაყიდვა ან მრავალი კლიენტის პროექტის ცენტრალიზებული მართვა."
+        },
+        {
+          "type": "heading",
+          "text": "შეუკვეთეთ ან მიიღეთ რჩევა"
+        }
+      ]
     }
   },
   "hy": {
@@ -28955,6 +30567,58 @@
         {
           "type": "heading",
           "text": "Սկսեք"
+        }
+      ]
+    },
+    "reseller-hosting": {
+      "title": "Վերավաճառող հոստինգ",
+      "subtitle": "Վերավաճառող հոսթինգ գործակալությունների և ֆրիլանսերների համար: Ընտրեք սերվեր DirectAdmin-ով և Installatron-ով կամ ընտրեք Plus-ը Plesk-ի և WordPress Toolkit-ի հետ:",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Վերավաճառող հոստինգ TripleZero iT-ից"
+        },
+        {
+          "type": "paragraph",
+          "text": "Վերավաճառող հոսթինգի միջոցով դուք հյուրընկալում եք բազմաթիվ հաճախորդների կայքեր ձեր սեփական ապրանքանիշի ներքո: Դուք ստանում եք հստակ պահեստավորման և երթևեկության սահմանափակումներ, անսահմանափակ տիրույթներ, էլ.փոստ, MySQL, SSH և կառավարման վահանակ՝ հաշիվները հեշտությամբ կառավարելու համար:"
+        },
+        {
+          "type": "heading",
+          "text": "Պլաններ"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START — 10 Գբ պահեստ, 80 Գբ տրաֆիկ, DirectAdmin + Installatron",
+            "ՄԻՋԻՆ — 15 Գբ պահեստ, 120 Գբ տրաֆիկ, DirectAdmin + Installatron",
+            "PRO — 20 Գբ պահեստ, 150 Գբ տրաֆիկ, DirectAdmin + Installatron",
+            "POWER — 20 Գբ պահեստ, 150 Գբ տրաֆիկ, Plesk + WordPress Toolkit"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Ներառված է յուրաքանչյուր պլանի հետ"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Անսահմանափակ տիրույթներ",
+            "Փոստի և MySQL տվյալների բազաներ",
+            "SSH մուտք",
+            "Կառավարման վահանակ՝ DirectAdmin (START–PRO) կամ Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Ո՞ւմ համար է վերավաճառող հոսթինգը:"
+        },
+        {
+          "type": "paragraph",
+          "text": "Իդեալական է վեբ դիզայներների, գործակալությունների և ֆրիլանսերների համար, ովքեր ցանկանում են վերավաճառել հոսթինգ կամ կենտրոնական կերպով կառավարել բազմաթիվ հաճախորդների նախագծեր:"
+        },
+        {
+          "type": "heading",
+          "text": "Պատվիրեք կամ ստացեք խորհրդատվություն"
         }
       ]
     }
@@ -29862,6 +31526,58 @@
           "text": "Başlayın"
         }
       ]
+    },
+    "reseller-hosting": {
+      "title": "Reseller Hosting",
+      "subtitle": "Agentliklər və frilanserlər üçün reseller hostinqi. DirectAdmin və Installatron ilə server seçin və ya Plesk və WordPress Toolbar ilə Plus seçin.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "TripleZero iT-dən Reseller Hosting"
+        },
+        {
+          "type": "paragraph",
+          "text": "Reseller hostinqi ilə siz öz brendiniz altında çoxlu müştəri veb-saytlarına ev sahibliyi edirsiniz. Siz aydın yaddaş və trafik limitləri, limitsiz domenlər, e-poçt, MySQL, SSH və hesabları asanlıqla idarə etmək üçün idarəetmə paneli əldə edirsiniz."
+        },
+        {
+          "type": "heading",
+          "text": "Planlar"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START — 10Gb yaddaş, 80Gb trafik, DirectAdmin + Installatron",
+            "MEDIUM — 15Gb yaddaş, 120Gb trafik, DirectAdmin + Installatron",
+            "PRO — 20Gb yaddaş, 150Gb trafik, DirectAdmin + Installatron",
+            "POWER — 20Gb yaddaş, 150Gb trafik, Plesk + WordPress Toolbar"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Hər bir plana daxildir"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Limitsiz domenlər",
+            "E-poçt və MySQL verilənlər bazası",
+            "SSH girişi",
+            "İdarəetmə paneli: DirectAdmin (START–PRO) və ya Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Reseller kimin üçün hosting edir?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Hostinqi yenidən satmaq və ya bir neçə müştəri layihəsini mərkəzləşdirilmiş şəkildə idarə etmək istəyən veb-dizaynerlər, agentliklər və frilanserlər üçün idealdır."
+        },
+        {
+          "type": "heading",
+          "text": "Sifariş edin və ya məsləhət alın"
+        }
+      ]
     }
   },
   "zh": {
@@ -30765,6 +32481,58 @@
         {
           "type": "heading",
           "text": "开始使用"
+        }
+      ]
+    },
+    "reseller-hosting": {
+      "title": "经销商托管",
+      "subtitle": "面向代理机构和自由职业者的经销商主机。选择带 DirectAdmin 和 Installatron 的服务器，或选择带 Plesk 和 WordPress Toolkit 的 Plus。",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "TripleZero iT 的经销商托管"
+        },
+        {
+          "type": "paragraph",
+          "text": "通过经销商托管，您可以以自己的品牌托管多个客户网站。您可以获得明确的存储和流量限制、无限的域、电子邮件、MySQL、SSH 和控制面板来轻松管理帐户。"
+        },
+        {
+          "type": "heading",
+          "text": "计划"
+        },
+        {
+          "type": "list",
+          "items": [
+            "开始 — 10Gb 存储、80Gb 流量、DirectAdmin + Installatron",
+            "中型 — 15Gb 存储、120Gb 流量、DirectAdmin + Installatron",
+            "PRO — 20Gb 存储、150Gb 流量、DirectAdmin + Installatron",
+            "POWER — 20Gb 存储、150Gb 流量、Plesk + WordPress 工具包"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "包含在每个计划中"
+        },
+        {
+          "type": "list",
+          "items": [
+            "无限域名",
+            "电子邮件和 MySQL 数据库",
+            "SSH 访问",
+            "控制面板：DirectAdmin (START–PRO) 或 Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "经销商为谁托管？"
+        },
+        {
+          "type": "paragraph",
+          "text": "非常适合想要转售托管或集中管理多个客户项目的网页设计师、代理机构和自由职业者。"
+        },
+        {
+          "type": "heading",
+          "text": "订购或获取建议"
         }
       ]
     }
@@ -31672,6 +33440,58 @@
           "text": "始めましょう"
         }
       ]
+    },
+    "reseller-hosting": {
+      "title": "リセラーホスティング",
+      "subtitle": "代理店やフリーランサー向けのリセラーホスティング。DirectAdmin と Installatron 付きのサーバーを選ぶか、Plesk と WordPress Toolkit 付きの Plus を選んでください。",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "TripleZero iT のリセラーホスティング"
+        },
+        {
+          "type": "paragraph",
+          "text": "リセラーホスティングを使用すると、独自のブランドで複数のクライアント Web サイトをホストできます。明確なストレージとトラフィック制限、無制限のドメイン、電子メール、MySQL、SSH、およびアカウントを簡単に管理するためのコントロール パネルが利用できます。"
+        },
+        {
+          "type": "heading",
+          "text": "予定"
+        },
+        {
+          "type": "list",
+          "items": [
+            "開始 — 10Gb ストレージ、80Gb トラフィック、DirectAdmin + Installatron",
+            "中 - 15Gb ストレージ、120Gb トラフィック、DirectAdmin + Installatron",
+            "PRO — 20Gb ストレージ、150Gb トラフィック、DirectAdmin + Installatron",
+            "パワー — 20Gb ストレージ、150Gb トラフィック、Plesk + WordPress ツールキット"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "すべてのプランに含まれる"
+        },
+        {
+          "type": "list",
+          "items": [
+            "無制限のドメイン",
+            "電子メールおよびMySQLデータベース",
+            "SSHアクセス",
+            "コントロール パネル: DirectAdmin (START–PRO) または Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "リセラーは誰のためにホスティングを行っていますか?"
+        },
+        {
+          "type": "paragraph",
+          "text": "ホスティングを再販したり、複数のクライアント プロジェクトを一元管理したい Web デザイナー、代理店、フリーランサーに最適です。"
+        },
+        {
+          "type": "heading",
+          "text": "注文またはアドバイスを受ける"
+        }
+      ]
     }
   },
   "bn": {
@@ -32575,6 +34395,58 @@
         {
           "type": "heading",
           "text": "শুরু করুন"
+        }
+      ]
+    },
+    "reseller-hosting": {
+      "title": "রিসেলার হোস্টিং",
+      "subtitle": "এজেন্সি এবং ফ্রিল্যান্সারদের জন্য রিসেলার হোস্টিং। DirectAdmin এবং Installatron সহ একটি সার্ভার চয়ন করুন, অথবা Plesk এবং WordPress Toolkit এর সাথে প্লাস নির্বাচন করুন।",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "TripleZero iT থেকে রিসেলার হোস্টিং"
+        },
+        {
+          "type": "paragraph",
+          "text": "রিসেলার হোস্টিংয়ের মাধ্যমে আপনি আপনার নিজের ব্র্যান্ডের অধীনে একাধিক ক্লায়েন্ট ওয়েবসাইট হোস্ট করেন। আপনি পরিষ্কার সঞ্চয়স্থান এবং ট্রাফিক সীমা, সীমাহীন ডোমেন, ইমেল, MySQL, SSH এবং সহজেই অ্যাকাউন্ট পরিচালনা করার জন্য একটি নিয়ন্ত্রণ প্যানেল পাবেন।"
+        },
+        {
+          "type": "heading",
+          "text": "পরিকল্পনা"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START — 10Gb স্টোরেজ, 80Gb ট্রাফিক, DirectAdmin + Installatron",
+            "মাধ্যম — 15Gb স্টোরেজ, 120Gb ট্রাফিক, DirectAdmin + Installatron",
+            "PRO — 20Gb স্টোরেজ, 150Gb ট্রাফিক, DirectAdmin + Installatron",
+            "পাওয়ার - 20 জিবি স্টোরেজ, 150 জিবি ট্রাফিক, প্লেস্ক + ওয়ার্ডপ্রেস টুলকিট"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "প্রতিটি পরিকল্পনার সাথে অন্তর্ভুক্ত"
+        },
+        {
+          "type": "list",
+          "items": [
+            "সীমাহীন ডোমেইন",
+            "ইমেইল এবং মাইএসকিউএল ডাটাবেস",
+            "SSH অ্যাক্সেস",
+            "কন্ট্রোল প্যানেল: DirectAdmin (START–PRO) বা Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "কার জন্য রিসেলার হোস্টিং?"
+        },
+        {
+          "type": "paragraph",
+          "text": "ওয়েব ডিজাইনার, এজেন্সি এবং ফ্রিল্যান্সারদের জন্য আদর্শ যারা হোস্টিং পুনরায় বিক্রি করতে চান বা কেন্দ্রীয়ভাবে একাধিক ক্লায়েন্ট প্রকল্প পরিচালনা করতে চান।"
+        },
+        {
+          "type": "heading",
+          "text": "অর্ডার করুন বা পরামর্শ পান"
         }
       ]
     }
@@ -33482,6 +35354,58 @@
           "text": "शुरू हो जाओ"
         }
       ]
+    },
+    "reseller-hosting": {
+      "title": "मेजबानी को दुबारा बेचने वाला",
+      "subtitle": "एजेंसियों और फ्रीलांसरों के लिए पुनर्विक्रेता होस्टिंग। DirectAdmin और Installatron के साथ एक सर्वर चुनें, या Plesk और WordPress Toolkit के साथ प्लस चुनें।",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "ट्रिपलज़ीरो आईटी से पुनर्विक्रेता होस्टिंग"
+        },
+        {
+          "type": "paragraph",
+          "text": "पुनर्विक्रेता होस्टिंग के साथ आप अपने ब्रांड के तहत कई क्लाइंट वेबसाइट होस्ट करते हैं। आपको स्पष्ट भंडारण और ट्रैफ़िक सीमाएँ, असीमित डोमेन, ईमेल, MySQL, SSH और खातों को आसानी से प्रबंधित करने के लिए एक नियंत्रण कक्ष मिलता है।"
+        },
+        {
+          "type": "heading",
+          "text": "योजनाओं"
+        },
+        {
+          "type": "list",
+          "items": [
+            "स्टार्ट - 10 जीबी स्टोरेज, 80 जीबी ट्रैफिक, डायरेक्टएडमिन + इंस्टालट्रॉन",
+            "मध्यम - 15जीबी स्टोरेज, 120जीबी ट्रैफिक, डायरेक्टएडमिन + इंस्टालट्रॉन",
+            "प्रो - 20 जीबी स्टोरेज, 150 जीबी ट्रैफिक, डायरेक्टएडमिन + इंस्टालट्रॉन",
+            "पावर - 20 जीबी स्टोरेज, 150 जीबी ट्रैफिक, प्लेस्क + वर्डप्रेस टूलकिट"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "हर योजना में शामिल"
+        },
+        {
+          "type": "list",
+          "items": [
+            "असीमित डोमेन",
+            "ईमेल और MySQL डेटाबेस",
+            "एसएसएच पहुंच",
+            "नियंत्रण कक्ष: DirectAdmin (START–PRO) या Plesk (पावर)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "पुनर्विक्रेता होस्टिंग किसके लिए है?"
+        },
+        {
+          "type": "paragraph",
+          "text": "उन वेब डिजाइनरों, एजेंसियों और फ्रीलांसरों के लिए आदर्श जो होस्टिंग को फिर से बेचना चाहते हैं या कई क्लाइंट प्रोजेक्टों को केंद्रीय रूप से प्रबंधित करना चाहते हैं।"
+        },
+        {
+          "type": "heading",
+          "text": "ऑर्डर करें या सलाह लें"
+        }
+      ]
     }
   },
   "mr": {
@@ -34385,6 +36309,58 @@
         {
           "type": "heading",
           "text": "सुरुवात करा"
+        }
+      ]
+    },
+    "reseller-hosting": {
+      "title": "पुनर्विक्रेता होस्टिंग",
+      "subtitle": "एजन्सी आणि फ्रीलांसरसाठी पुनर्विक्रेता होस्टिंग. DirectAdmin आणि Installatron सह सर्व्हर निवडा किंवा Plesk आणि WordPress Toolkit सह Plus निवडा.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "TripleZero iT कडून पुनर्विक्रेता होस्टिंग"
+        },
+        {
+          "type": "paragraph",
+          "text": "पुनर्विक्रेता होस्टिंगसह आपण आपल्या स्वतःच्या ब्रँड अंतर्गत एकाधिक क्लायंट वेबसाइट होस्ट करता. तुम्हाला स्पष्ट स्टोरेज आणि रहदारी मर्यादा, अमर्यादित डोमेन, ईमेल, MySQL, SSH आणि खाती सहजपणे व्यवस्थापित करण्यासाठी एक नियंत्रण पॅनेल मिळते."
+        },
+        {
+          "type": "heading",
+          "text": "योजना"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START — 10Gb संचयन, 80Gb रहदारी, DirectAdmin + Installatron",
+            "मध्यम — 15Gb स्टोरेज, 120Gb रहदारी, DirectAdmin + Installatron",
+            "PRO - 20Gb स्टोरेज, 150Gb रहदारी, DirectAdmin + Installatron",
+            "पॉवर - 20Gb स्टोरेज, 150Gb रहदारी, Plesk + WordPress टूलकिट"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "प्रत्येक योजनेत समाविष्ट आहे"
+        },
+        {
+          "type": "list",
+          "items": [
+            "अमर्यादित डोमेन",
+            "ईमेल आणि MySQL डेटाबेस",
+            "SSH प्रवेश",
+            "नियंत्रण पॅनेल: DirectAdmin (START–PRO) किंवा Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "पुनर्विक्रेता होस्टिंग कोणासाठी आहे?"
+        },
+        {
+          "type": "paragraph",
+          "text": "वेब डिझायनर, एजन्सी आणि फ्रीलांसरसाठी आदर्श ज्यांना होस्टिंगची पुनर्विक्री करायची आहे किंवा एकाधिक क्लायंट प्रकल्प मध्यवर्तीरित्या व्यवस्थापित करायचे आहेत."
+        },
+        {
+          "type": "heading",
+          "text": "ऑर्डर करा किंवा सल्ला घ्या"
         }
       ]
     }
@@ -35292,6 +37268,58 @@
           "text": "پیل کړئ"
         }
       ]
+    },
+    "reseller-hosting": {
+      "title": "د پلورونکي کوربه کول",
+      "subtitle": "د ادارو او فری لانسانو لپاره د پلورونکي کوربه توب. د DirectAdmin او Installatron سره یو سرور غوره کړئ، یا د پلس او ورډپریس تولکیټ سره پلس غوره کړئ.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "د TripleZero iT څخه د پلورونکي کوربه کول"
+        },
+        {
+          "type": "paragraph",
+          "text": "د بیا پلورونکي کوربه کولو سره تاسو د خپل برانډ لاندې ډیری پیرودونکي ویب پاڼې کوربه کوئ. تاسو روښانه ذخیره او د ترافیک محدودیتونه ، لامحدود ډومینونه ، بریښنالیک ، MySQL ، SSH او د کنټرول پینل ترلاسه کوئ ترڅو حسابونه په اسانۍ اداره کړئ."
+        },
+        {
+          "type": "heading",
+          "text": "پلانونه"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START - 10Gb ذخیره، 80Gb ترافیک، DirectAdmin + Installatron",
+            "میډیم - 15 جی بی ذخیره، 120 جی بی ترافیک، مستقیم اډمین + انسټالټر",
+            "PRO - 20Gb ذخیره، 150Gb ترافیک، DirectAdmin + Installatron",
+            "پاور - 20 جی بی ذخیره، 150 جی بی ټرافیک، پلسک + ورڈپریس تولکیټ"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "په هر پلان کې شامل دي"
+        },
+        {
+          "type": "list",
+          "items": [
+            "لامحدود ډومینونه",
+            "بریښنالیک او MySQL ډیټابیسونه",
+            "SSH لاسرسی",
+            "د کنټرول پینل: DirectAdmin (Start-PRO) یا Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "د چا لپاره د پلورونکي کوربه توب دی؟"
+        },
+        {
+          "type": "paragraph",
+          "text": "د ویب ډیزاینرانو ، ادارو او فری لانسانو لپاره مثالی څوک چې غواړي کوربه توب بیا وپلوري یا په مرکزي توګه ډیری پیرودونکي پروژې اداره کړي."
+        },
+        {
+          "type": "heading",
+          "text": "امر وکړئ او مشوره ترلاسه کړئ"
+        }
+      ]
     }
   },
   "pa": {
@@ -36195,6 +38223,58 @@
         {
           "type": "heading",
           "text": "ਸ਼ੁਰੂ ਕਰੋ"
+        }
+      ]
+    },
+    "reseller-hosting": {
+      "title": "ਵਿਕਰੇਤਾ ਹੋਸਟਿੰਗ",
+      "subtitle": "ਏਜੰਸੀਆਂ ਅਤੇ ਫ੍ਰੀਲਾਂਸਰਾਂ ਲਈ ਮੁੜ ਵਿਕਰੇਤਾ ਹੋਸਟਿੰਗ। DirectAdmin ਅਤੇ Installatron ਨਾਲ ਇੱਕ ਸਰਵਰ ਚੁਣੋ, ਜਾਂ Plesk ਅਤੇ WordPress Toolkit ਨਾਲ ਪਲੱਸ ਚੁਣੋ।",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "ਟ੍ਰਿਪਲਜ਼ੀਰੋ ਆਈਟੀ ਤੋਂ ਰੀਸੈਲਰ ਹੋਸਟਿੰਗ"
+        },
+        {
+          "type": "paragraph",
+          "text": "ਰੀਸੈਲਰ ਹੋਸਟਿੰਗ ਦੇ ਨਾਲ ਤੁਸੀਂ ਆਪਣੇ ਖੁਦ ਦੇ ਬ੍ਰਾਂਡ ਦੇ ਅਧੀਨ ਕਈ ਕਲਾਇੰਟ ਵੈਬਸਾਈਟਾਂ ਦੀ ਮੇਜ਼ਬਾਨੀ ਕਰਦੇ ਹੋ। ਤੁਹਾਨੂੰ ਸਪਸ਼ਟ ਸਟੋਰੇਜ ਅਤੇ ਟਰੈਫਿਕ ਸੀਮਾਵਾਂ, ਅਸੀਮਤ ਡੋਮੇਨ, ਈਮੇਲ, MySQL, SSH ਅਤੇ ਖਾਤਿਆਂ ਦਾ ਆਸਾਨੀ ਨਾਲ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਇੱਕ ਕੰਟਰੋਲ ਪੈਨਲ ਮਿਲਦਾ ਹੈ।"
+        },
+        {
+          "type": "heading",
+          "text": "ਯੋਜਨਾਵਾਂ"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START — 10Gb ਸਟੋਰੇਜ, 80Gb ਟ੍ਰੈਫਿਕ, DirectAdmin + Installatron",
+            "ਮੀਡੀਅਮ — 15 ਜੀਬੀ ਸਟੋਰੇਜ, 120 ਜੀਬੀ ਟ੍ਰੈਫਿਕ, ਡਾਇਰੈਕਟ ਐਡਮਿਨ + ਇੰਸਟਾਲਟ੍ਰੋਨ",
+            "PRO - 20Gb ਸਟੋਰੇਜ, 150Gb ਟ੍ਰੈਫਿਕ, DirectAdmin + Installatron",
+            "ਪਾਵਰ - 20 ਜੀਬੀ ਸਟੋਰੇਜ, 150 ਜੀਬੀ ਟ੍ਰੈਫਿਕ, ਪਲੇਸਕ + ਵਰਡਪਰੈਸ ਟੂਲਕਿੱਟ"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "ਹਰ ਯੋਜਨਾ ਦੇ ਨਾਲ ਸ਼ਾਮਲ ਹੈ"
+        },
+        {
+          "type": "list",
+          "items": [
+            "ਅਸੀਮਤ ਡੋਮੇਨ",
+            "ਈਮੇਲ ਅਤੇ MySQL ਡੇਟਾਬੇਸ",
+            "SSH ਪਹੁੰਚ",
+            "ਕੰਟਰੋਲ ਪੈਨਲ: DirectAdmin (START–PRO) ਜਾਂ Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "ਕਿਸ ਲਈ ਮੁੜ ਵਿਕਰੇਤਾ ਹੋਸਟਿੰਗ ਕਰ ਰਿਹਾ ਹੈ?"
+        },
+        {
+          "type": "paragraph",
+          "text": "ਵੈਬ ਡਿਜ਼ਾਈਨਰਾਂ, ਏਜੰਸੀਆਂ ਅਤੇ ਫ੍ਰੀਲਾਂਸਰਾਂ ਲਈ ਆਦਰਸ਼ ਜੋ ਹੋਸਟਿੰਗ ਨੂੰ ਮੁੜ ਵੇਚਣਾ ਚਾਹੁੰਦੇ ਹਨ ਜਾਂ ਕੇਂਦਰੀ ਤੌਰ 'ਤੇ ਮਲਟੀਪਲ ਕਲਾਇੰਟ ਪ੍ਰੋਜੈਕਟਾਂ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹਨ।"
+        },
+        {
+          "type": "heading",
+          "text": "ਆਰਡਰ ਕਰੋ ਜਾਂ ਸਲਾਹ ਲਓ"
         }
       ]
     }
@@ -37102,6 +39182,58 @@
           "text": "ప్రారంభించండి"
         }
       ]
+    },
+    "reseller-hosting": {
+      "title": "పునఃవిక్రేత హోస్టింగ్",
+      "subtitle": "ఏజెన్సీలు మరియు ఫ్రీలాన్సర్‌ల కోసం పునఃవిక్రేత హోస్టింగ్. DirectAdmin మరియు Installatronతో సర్వర్‌ని ఎంచుకోండి లేదా Plesk మరియు WordPress టూల్‌కిట్‌తో ప్లస్‌ని ఎంచుకోండి.",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "TripleZero iT నుండి పునఃవిక్రేత హోస్టింగ్"
+        },
+        {
+          "type": "paragraph",
+          "text": "పునఃవిక్రేత హోస్టింగ్‌తో మీరు మీ స్వంత బ్రాండ్ క్రింద బహుళ క్లయింట్ వెబ్‌సైట్‌లను హోస్ట్ చేస్తారు. మీరు ఖాతాలను సులభంగా నిర్వహించడానికి స్పష్టమైన నిల్వ మరియు ట్రాఫిక్ పరిమితులు, అపరిమిత డొమైన్‌లు, ఇమెయిల్, MySQL, SSH మరియు నియంత్రణ ప్యానెల్‌ను పొందుతారు."
+        },
+        {
+          "type": "heading",
+          "text": "ప్రణాళికలు"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START — 10Gb నిల్వ, 80Gb ట్రాఫిక్, DirectAdmin + Installatron",
+            "మీడియం — 15Gb నిల్వ, 120Gb ట్రాఫిక్, డైరెక్ట్ అడ్మిన్ + ఇన్‌స్టాలట్రాన్",
+            "PRO — 20Gb నిల్వ, 150Gb ట్రాఫిక్, డైరెక్ట్ అడ్మిన్ + ఇన్‌స్టాలట్రాన్",
+            "పవర్ - 20Gb నిల్వ, 150Gb ట్రాఫిక్, Plesk + WordPress టూల్‌కిట్"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "ప్రతి ప్రణాళికతో చేర్చబడింది"
+        },
+        {
+          "type": "list",
+          "items": [
+            "అపరిమిత డొమైన్‌లు",
+            "ఇమెయిల్ మరియు MySQL డేటాబేస్",
+            "SSH యాక్సెస్",
+            "నియంత్రణ ప్యానెల్: డైరెక్ట్ అడ్మిన్ (START-PRO) లేదా Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "పునఃవిక్రేత ఎవరి కోసం హోస్టింగ్ చేస్తున్నారు?"
+        },
+        {
+          "type": "paragraph",
+          "text": "హోస్టింగ్‌ని తిరిగి విక్రయించాలనుకునే లేదా బహుళ క్లయింట్ ప్రాజెక్ట్‌లను కేంద్రంగా నిర్వహించాలనుకునే వెబ్ డిజైనర్‌లు, ఏజెన్సీలు మరియు ఫ్రీలాన్సర్‌లకు అనువైనది."
+        },
+        {
+          "type": "heading",
+          "text": "ఆర్డర్ చేయండి లేదా సలహా పొందండి"
+        }
+      ]
     }
   },
   "ur": {
@@ -38005,6 +40137,58 @@
         {
           "type": "heading",
           "text": "شروع کرو"
+        }
+      ]
+    },
+    "reseller-hosting": {
+      "title": "ری سیلر ہوسٹنگ",
+      "subtitle": "ایجنسیوں اور فری لانسرز کے لیے ری سیلر ہوسٹنگ۔ DirectAdmin اور Installatron کے ساتھ سرور کا انتخاب کریں، یا پلس اور ورڈپریس ٹول کٹ کے ساتھ پلس کا انتخاب کریں۔",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "TripleZero iT سے ریسلر ہوسٹنگ"
+        },
+        {
+          "type": "paragraph",
+          "text": "ری سیلر ہوسٹنگ کے ساتھ آپ اپنے برانڈ کے تحت متعدد کلائنٹ ویب سائٹس کی میزبانی کرتے ہیں۔ آپ کو واضح اسٹوریج اور ٹریفک کی حدود، لامحدود ڈومینز، ای میل، MySQL، SSH اور اکاؤنٹس کو آسانی سے منظم کرنے کے لیے ایک کنٹرول پینل ملتا ہے۔"
+        },
+        {
+          "type": "heading",
+          "text": "منصوبے"
+        },
+        {
+          "type": "list",
+          "items": [
+            "START — 10Gb اسٹوریج، 80Gb ٹریفک، DirectAdmin + Installatron",
+            "میڈیم — 15 جی بی اسٹوریج، 120 جی بی ٹریفک، ڈائریکٹ ایڈمن + انسٹالٹرن",
+            "PRO - 20Gb اسٹوریج، 150Gb ٹریفک، DirectAdmin + Installatron",
+            "پاور - 20 جی بی اسٹوریج، 150 جی بی ٹریفک، پلسک + ورڈپریس ٹول کٹ"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "ہر منصوبے کے ساتھ شامل ہے۔"
+        },
+        {
+          "type": "list",
+          "items": [
+            "لامحدود ڈومینز",
+            "ای میل اور MySQL ڈیٹا بیس",
+            "SSH رسائی",
+            "کنٹرول پینل: DirectAdmin (START–PRO) یا Plesk (POWER)"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "ری سیلر کس کے لیے ہوسٹنگ کر رہا ہے؟"
+        },
+        {
+          "type": "paragraph",
+          "text": "ویب ڈیزائنرز، ایجنسیوں اور فری لانسرز کے لیے مثالی جو ہوسٹنگ کو دوبارہ بیچنا چاہتے ہیں یا مرکزی طور پر متعدد کلائنٹ پروجیکٹس کا انتظام کرنا چاہتے ہیں۔"
+        },
+        {
+          "type": "heading",
+          "text": "آرڈر کریں یا مشورہ لیں۔"
         }
       ]
     }

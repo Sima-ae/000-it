@@ -1,0 +1,1 @@
+S hostingem pro prodejce hostujete více klientských webů pod svou vlastní značkou. Získáte jasné limity úložiště a provozu, neomezené domény, e-mail, MySQL, SSH a ovládací panel pro snadnou správu účtů.

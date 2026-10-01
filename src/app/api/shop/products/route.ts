@@ -31,6 +31,7 @@ function hostingCatalogWhere() {
       { category: "hosting" },
       { slug: { startsWith: "shared-hosting-" } },
       { slug: { startsWith: "cloud-hosting-" } },
+      { slug: { startsWith: "reseller-hosting-" } },
       { slug: { startsWith: "wordpress-hosting-" } },
       { slug: { startsWith: "vps-hosting-" } },
       { slug: "web-hosting" },
@@ -190,6 +191,20 @@ export async function POST(request: Request) {
   try {
     const { clearServiceContentCaches } = await import("@/lib/fixweb-content");
     clearServiceContentCaches();
+  } catch {
+    // ignore
+  }
+  try {
+    const { loadShopCatalogFromDb } = await import("@/lib/shop/catalog-db");
+    await loadShopCatalogFromDb({ includeUnpublished: true });
+  } catch {
+    // ignore
+  }
+  try {
+    const { revalidatePath } = await import("next/cache");
+    revalidatePath("/", "layout");
+    revalidatePath("/shop");
+    revalidatePath("/diensten");
   } catch {
     // ignore
   }

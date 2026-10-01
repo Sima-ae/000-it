@@ -1,0 +1,1 @@
+A viszonteladói tárhely segítségével több ügyfélwebhelyet is tárolhat saját márkanév alatt. Egyértelmű tárolási és forgalmi korlátokat, korlátlan domaint, e-mailt, MySQL-t, SSH-t és egy vezérlőpultot kap a fiókok egyszerű kezeléséhez.

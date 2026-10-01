@@ -126,9 +126,10 @@ export function ShopHostingSection({
           const localized = localizeShopProduct(product, locale);
           const featured =
             product.featured === true ||
-            product.slug.endsWith("-business") ||
-            product.slug.endsWith("-professional") ||
-            product.slug.endsWith("-power");
+            product.slug === "reseller-hosting-plus" ||
+            (product.slug.endsWith("-business") &&
+              !product.slug.startsWith("reseller-hosting-")) ||
+            product.slug.endsWith("-professional");
           const glowOnHover = hovered === product.id;
           const featuredIdle = featured && hovered === null;
           const months = packageMonths(product);

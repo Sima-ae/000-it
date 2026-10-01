@@ -1,0 +1,1 @@
+გადამყიდველის ჰოსტინგი სააგენტოებისა და ფრილანსერებისთვის. აირჩიეთ სერვერი DirectAdmin-ით და Installatron-ით, ან აირჩიეთ Plus with Plesk და WordPress Toolkit.

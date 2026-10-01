@@ -1,0 +1,1 @@
+Med återförsäljarhosting är du värd för flera klientwebbplatser under ditt eget varumärke. Du får tydliga lagrings- och trafikgränser, obegränsade domäner, e-post, MySQL, SSH och en kontrollpanel för att enkelt hantera konton.

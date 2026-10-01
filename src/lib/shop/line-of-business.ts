@@ -5,13 +5,14 @@ export type { ShopLineOfBusiness };
 
 export const SHOP_LINES = ["SERVICE", "HOSTING"] as const;
 
-/** Known hosting product slugs (shared / cloud / WordPress / VPS packages). */
+/** Known hosting product slugs (shared / cloud / reseller / WordPress / VPS packages). */
 export function isHostingSlug(slug: string): boolean {
   if (HOSTING_YEARLY_SLUGS.has(slug)) return true;
   if (slug === "web-hosting") return true;
   return (
     slug.startsWith("shared-hosting-") ||
     slug.startsWith("cloud-hosting-") ||
+    slug.startsWith("reseller-hosting-") ||
     slug.startsWith("wordpress-hosting-") ||
     slug.startsWith("vps-hosting-")
   );

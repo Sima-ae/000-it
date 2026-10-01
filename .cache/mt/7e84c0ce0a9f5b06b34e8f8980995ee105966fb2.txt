@@ -1,0 +1,1 @@
+Naudodami perpardavėjo prieglobą priglobiate kelias klientų svetaines su savo prekės ženklu. Gaunate aiškius saugyklos ir srauto apribojimus, neribotus domenus, el. paštą, MySQL, SSH ir valdymo skydelį, kad galėtumėte lengvai valdyti paskyras.

@@ -187,6 +187,21 @@ export async function PATCH(
   } catch {
     // ignore
   }
+  try {
+    // Keep in-process shop catalog aligned with hosting-admin saves.
+    const { loadShopCatalogFromDb } = await import("@/lib/shop/catalog-db");
+    await loadShopCatalogFromDb({ includeUnpublished: true });
+  } catch {
+    // ignore
+  }
+  try {
+    const { revalidatePath } = await import("next/cache");
+    revalidatePath("/", "layout");
+    revalidatePath("/shop");
+    revalidatePath("/diensten");
+  } catch {
+    // ignore — not available in all runtimes
+  }
   return json(item);
 }
 

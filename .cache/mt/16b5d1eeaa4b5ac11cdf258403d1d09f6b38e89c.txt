@@ -1,0 +1,1 @@
+Alojamiento revendedor para agencias y autónomos. Elija un servidor con DirectAdmin e Installatron, o elija Plus con Plesk y WordPress Toolkit.

@@ -203,7 +203,12 @@ function withLiveHostingPlanSpecs(
     if (replaced || block.type !== "list") return block;
     const blob = block.items.join(" ");
     if (!/[—–-]/.test(blob)) return block;
-    if (!/(GB|CPU|SSD|NVMe|website|Websites|bezoekers|visitors|PHP|RAM)/i.test(blob)) {
+    // Match typical hosting plan feature lists (storage/CPU/traffic/control panels).
+    if (
+      !/(GB|Gb|CPU|SSD|NVMe|website|Websites|bezoekers|visitors|PHP|RAM|opslag|dataverkeer|bandbreedte|DirectAdmin|Plesk|Installatron|domains|domeinen)/i.test(
+        blob,
+      )
+    ) {
       return block;
     }
     replaced = true;

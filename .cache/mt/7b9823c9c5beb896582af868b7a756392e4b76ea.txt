@@ -1,0 +1,1 @@
+Med forhandlerhosting er du vert for flere klientnettsteder under ditt eget merke. Du får klare lagrings- og trafikkgrenser, ubegrensede domener, e-post, MySQL, SSH og et kontrollpanel for å administrere kontoer enkelt.

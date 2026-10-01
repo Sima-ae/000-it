@@ -28,7 +28,7 @@
   "wordpress-security": "/uploads/fixweb/wordpress-security.png",
   "wordpress-speed-optimization": "/uploads/fixweb/wordpress-speed-optimization.png",
   "reseller-hosting-start": "/uploads/fixweb/reseller-hosting-hero.png",
-  "reseller-hosting-medium": "/uploads/fixweb/reseller-hosting-hero.png",
-  "reseller-hosting-pro": "/uploads/fixweb/reseller-hosting-hero.png",
-  "reseller-hosting-power": "/uploads/fixweb/reseller-hosting-hero.png"
+  "reseller-hosting-basic": "/uploads/fixweb/reseller-hosting-hero.png",
+  "reseller-hosting-business": "/uploads/fixweb/reseller-hosting-hero.png",
+  "reseller-hosting-plus": "/uploads/fixweb/reseller-hosting-hero.png"
 }

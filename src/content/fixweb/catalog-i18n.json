@@ -65,10 +65,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Shared Hosting Business",
       "wordpress-hosting-basic": "WordPress Hosting Basic",
       "wordpress-hosting-plus": "WordPress Hosting Plus",
@@ -151,10 +151,10 @@
       "cloud-hosting-startup": "Cloud hosting startup",
       "cloud-hosting-professional": "Cloud hosting professional",
       "cloud-hosting-enterprise": "Cloud hosting enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller hosting start",
+      "reseller-hosting-basic": "Reseller hosting basic",
+      "reseller-hosting-business": "Reseller hosting business",
+      "reseller-hosting-plus": "Reseller hosting plus",
       "shared-hosting-business": "Shared hosting business",
       "wordpress-hosting-basic": "WordPress hosting basic",
       "wordpress-hosting-plus": "WordPress hosting plus",
@@ -237,10 +237,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Entreprise d'hébergement partagé",
       "wordpress-hosting-basic": "Hébergement WordPress de base",
       "wordpress-hosting-plus": "Hébergement Wordpress",
@@ -322,10 +322,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Shared-Hosting-Geschäft",
       "wordpress-hosting-basic": "WordPress-Hosting Basic",
       "wordpress-hosting-plus": "Wordpress-Hosting",
@@ -407,10 +407,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Negocio de hospedaje compartido",
       "wordpress-hosting-basic": "Alojamiento WordPress Básico",
       "wordpress-hosting-plus": "Hosting de WordPress",
@@ -492,10 +492,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Negócios de Hospedagem Compartilhada",
       "wordpress-hosting-basic": "Hospedagem Básica WordPress",
       "wordpress-hosting-plus": "Hospedagem WordPress",
@@ -577,10 +577,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Attività di hosting condiviso",
       "wordpress-hosting-basic": "Hosting WordPress Basic",
       "wordpress-hosting-plus": "HOSTING WORDPRESS",
@@ -662,10 +662,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Επιμερισμένη επιχείρηση φιλοξενίας",
       "wordpress-hosting-basic": "Βασική Φιλοξενία WordPress",
       "wordpress-hosting-plus": "WordPress Hosting Plus",
@@ -747,10 +747,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Współdzielona działalność hostingowa",
       "wordpress-hosting-basic": "Hosting WordPress Basic",
       "wordpress-hosting-plus": "Hosting WordPress Plus",
@@ -832,10 +832,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Podnikání v oblasti sdíleného hostitel",
       "wordpress-hosting-basic": "WordPress Hosting Basic",
       "wordpress-hosting-plus": "WordPress Hosting Plus",
@@ -917,10 +917,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Podnikanie v oblasti zdieľaného hostiteľstva",
       "wordpress-hosting-basic": "WordPress Hosting Basic",
       "wordpress-hosting-plus": "WordPress Hosting Plus",
@@ -1002,10 +1002,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Közös vendégfogadási vállalkozás",
       "wordpress-hosting-basic": "WordPress hosting alap",
       "wordpress-hosting-plus": "WordPress Hosting Plus",
@@ -1087,10 +1087,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Companie de găzduire partajată",
       "wordpress-hosting-basic": "Găzduire WordPress de bază",
       "wordpress-hosting-plus": "Găzduire WordPress Plus",
@@ -1172,10 +1172,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Бизнес със споделено настаняване на гости",
       "wordpress-hosting-basic": "Основен хостинг на WordPress",
       "wordpress-hosting-plus": "WordPress Хостинг Плюс",
@@ -1257,10 +1257,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Poduzeće za zajedničko ugošćivanje",
       "wordpress-hosting-basic": "WordPress Hosting Basic",
       "wordpress-hosting-plus": "WordPress Hosting",
@@ -1342,10 +1342,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Zajedničko ugošćavanje",
       "wordpress-hosting-basic": "ВордПресс Хостинг Басиц",
       "wordpress-hosting-plus": "ВордПресс Хостинг Плус",
@@ -1427,10 +1427,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Poduzeće za zajedničko ugošćavanje",
       "wordpress-hosting-basic": "WordPress Hosting Basic",
       "wordpress-hosting-plus": "WordPress Hosting Plus",
@@ -1512,10 +1512,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Zajedničko ugošćavanje",
       "wordpress-hosting-basic": "ВордПресс Хостинг Басиц",
       "wordpress-hosting-plus": "ВордПресс Хостинг Плус",
@@ -1597,10 +1597,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Biznes i përbashkët i pritjes së vizitorëve",
       "wordpress-hosting-basic": "Bazike për pritjen e vizitorëve në WordPress",
       "wordpress-hosting-plus": "WordPress Hosting Plus",
@@ -1682,10 +1682,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Бизнис со заедничко угостување",
       "wordpress-hosting-basic": "Основен хостинг на WordPress",
       "wordpress-hosting-plus": "WordPress хостинг плус",
@@ -1767,10 +1767,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Bendras svečių priėmimo verslas",
       "wordpress-hosting-basic": "„WordPress“ prieglobos pagrindas",
       "wordpress-hosting-plus": "„WordPress Hosting Plus“.",
@@ -1852,10 +1852,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Virksomhed med delt værtskab",
       "wordpress-hosting-basic": "WordPress Hosting Basic",
       "wordpress-hosting-plus": "WordPress Hosting Plus",
@@ -1937,10 +1937,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Delad värdverksamhet",
       "wordpress-hosting-basic": "WordPress Hosting Basic",
       "wordpress-hosting-plus": "WordPress Hosting Plus",
@@ -2022,10 +2022,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Delt vertsvirksomhet",
       "wordpress-hosting-basic": "Grunnleggende WordPress Hosting",
       "wordpress-hosting-plus": "WordPress Hosting Plus",
@@ -2107,10 +2107,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Jaettu hosting-liiketoiminta",
       "wordpress-hosting-basic": "WordPress Hosting Basic",
       "wordpress-hosting-plus": "WordPress Hosting Plus",
@@ -2192,10 +2192,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Спільний хостинг",
       "wordpress-hosting-basic": "Базовий хостинг WordPress",
       "wordpress-hosting-plus": "Хостинг WordPress Plus",
@@ -2277,10 +2277,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Виртуальный хостинг",
       "wordpress-hosting-basic": "Базовый хостинг WordPress",
       "wordpress-hosting-plus": "WordPress Хостинг Плюс",
@@ -2362,10 +2362,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Paylaşımlı Barındırma İşi",
       "wordpress-hosting-basic": "WordPress Barındırma Temeli",
       "wordpress-hosting-plus": "WordPress Barındırma Artı",
@@ -2447,10 +2447,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "עסק אירוח משותף",
       "wordpress-hosting-basic": "אחסון וורדפרס בסיסי",
       "wordpress-hosting-plus": "וורדפרס אירוח פלוס",
@@ -2532,10 +2532,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "أعمال الاستضافة المشتركة",
       "wordpress-hosting-basic": "استضافة ووردبريس الأساسية",
       "wordpress-hosting-plus": "استضافة ووردبريس بلس",
@@ -2617,10 +2617,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "საერთო ჰოსტინგის ბიზნესი",
       "wordpress-hosting-basic": "WordPress ჰოსტინგი ძირითადი",
       "wordpress-hosting-plus": "WordPress ჰოსტინგი პლუსი",
@@ -2702,10 +2702,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Համօգտագործվող հոստինգ բիզնես",
       "wordpress-hosting-basic": "WordPress հոստինգ Հիմնական",
       "wordpress-hosting-plus": "WordPress Hosting Plus",
@@ -2787,10 +2787,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Paylaşılan Hosting Biznesi",
       "wordpress-hosting-basic": "WordPress Hosting Basic",
       "wordpress-hosting-plus": "WordPress Hosting Plus",
@@ -2872,10 +2872,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "Shared Hosting Business",
       "wordpress-hosting-basic": "WordPress 托管基础",
       "wordpress-hosting-plus": "WordPress 托管增强版",
@@ -2957,10 +2957,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "shared-hosting-business": "共有ホスティングビジネス",
       "wordpress-hosting-basic": "WordPressホスティングベーシック",
       "wordpress-hosting-plus": "WordPress ホスティング",
@@ -3048,10 +3048,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "wordpress-hosting-basic": "ওয়ার্ডপ্রেস হোস্টিং বেসিক",
       "wordpress-hosting-business": "ওয়ার্ডপ্রেস হোস্টিং ব্যবসা",
       "wordpress-hosting-plus": "ওয়ার্ডপ্রেস হোস্টিং প্লাস",
@@ -3133,10 +3133,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "wordpress-hosting-basic": "वर्डप्रेस होस्टिंग बेसिक",
       "wordpress-hosting-business": "वर्डप्रेस होस्टिंग व्यवसाय",
       "wordpress-hosting-plus": "वर्डप्रेस होस्टिंग प्लस",
@@ -3218,10 +3218,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "wordpress-hosting-basic": "वर्डप्रेस होस्टिंग बेसिक",
       "wordpress-hosting-business": "वर्डप्रेस होस्टिंग व्यवसाय",
       "wordpress-hosting-plus": "वर्डप्रेस होस्टिंग प्लस",
@@ -3303,10 +3303,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "wordpress-hosting-basic": "د ورڈپریس کوربه توب اساسی",
       "wordpress-hosting-business": "د ورڈپریس کوربه توب سوداګرۍ",
       "wordpress-hosting-plus": "د ورڈپریس کوربه توب پلس",
@@ -3388,10 +3388,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "wordpress-hosting-basic": "ਵਰਡਪਰੈਸ ਹੋਸਟਿੰਗ ਬੇਸਿਕ",
       "wordpress-hosting-business": "ਵਰਡਪਰੈਸ ਹੋਸਟਿੰਗ ਕਾਰੋਬਾਰ",
       "wordpress-hosting-plus": "ਵਰਡਪਰੈਸ ਹੋਸਟਿੰਗ ਪਲੱਸ",
@@ -3473,10 +3473,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "wordpress-hosting-basic": "WordPress హోస్టింగ్ బేసిక్",
       "wordpress-hosting-business": "WordPress హోస్టింగ్ వ్యాపారం",
       "wordpress-hosting-plus": "WordPress హోస్టింగ్ ప్లస్",
@@ -3558,10 +3558,10 @@
       "cloud-hosting-startup": "Cloud Hosting Startup",
       "cloud-hosting-professional": "Cloud Hosting Professional",
       "cloud-hosting-enterprise": "Cloud Hosting Enterprise",
-      "reseller-hosting-start": "START",
-      "reseller-hosting-medium": "MEDIUM",
-      "reseller-hosting-pro": "PRO",
-      "reseller-hosting-power": "POWER",
+      "reseller-hosting-start": "Reseller Hosting Start",
+      "reseller-hosting-basic": "Reseller Hosting Basic",
+      "reseller-hosting-business": "Reseller Hosting Business",
+      "reseller-hosting-plus": "Reseller Hosting Plus",
       "wordpress-hosting-basic": "ورڈپریس ہوسٹنگ بنیادی",
       "wordpress-hosting-business": "ورڈپریس ہوسٹنگ بزنس",
       "wordpress-hosting-plus": "ورڈپریس ہوسٹنگ پلس",
@@ -4003,7 +4003,7 @@
       "flyers-posters": "Flyer and poster design plus printing in small or large quantities.",
       "stickers-packaging": "Sticker design and printing — small batches or large runs.",
       "magazines-brochures": "Brochure and magazine design plus printing in small or large quantities.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Reseller hosting for agencies and freelancers. Choose a server with DirectAdmin and Installatron, or choose Plus with Plesk and WordPress Toolkit."
     },
     "nl": {
       "aeo-optimization": "Answer Engine Optimization voor citeerbare, antwoordklare content.",
@@ -4054,7 +4054,7 @@
       "flyers-posters": "Flyer- en posterontwerp plus drukwerk in kleine of grote oplages.",
       "stickers-packaging": "Stickerontwerp en drukwerk — kleine batches of grote runs.",
       "magazines-brochures": "Brochure- en magazine-ontwerp plus drukwerk in kleine of grote oplages.",
-      "reseller-hosting": "Reseller hosting voor agencies en freelancers: start met DirectAdmin of kies POWER met Plesk en WordPress Toolkit."
+      "reseller-hosting": "Reseller hosting voor agencies en freelancers. Kies voor een server met DirectAdmin en Installatron, of kies voor Plus met Plesk en WordPress Toolkit."
     },
     "fr": {
       "aeo-optimization": "Optimisation du moteur de réponse pour un contenu citable et prêt à répondre.",
@@ -4105,7 +4105,7 @@
       "analytics-optimization": "GA4, Search Console et des rapports clairs pour que vous sachiez ce qui génère des prospects et des revenus.",
       "accessibility-optimization": "Améliorations basées sur les WCAG afin que davantage de personnes puissent utiliser votre site et que les moteurs de recherche le comprennent mieux.",
       "wordpress-maintenance-updates": "Mises à jour programmées du noyau, des plugins et des thèmes WordPress avec sauvegardes et surveillance – dans les packages Business, Business pro et Enterprise.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Hébergement revendeur pour agences et freelances. Choisissez un serveur avec DirectAdmin et Installatron, ou choisissez Plus avec Plesk et WordPress Toolkit."
     },
     "de": {
       "aeo-optimization": "Antwort-Engine-Optimierung für zitierfähige, antwortbereite Inhalte.",
@@ -4156,7 +4156,7 @@
       "analytics-optimization": "GA4, Search Console und klare Berichte, damit Sie wissen, was Leads und Umsatz antreibt.",
       "accessibility-optimization": "WCAG-orientierte Verbesserungen, damit mehr Menschen Ihre Website nutzen können – und Suchmaschinen sie besser verstehen.",
       "wordpress-maintenance-updates": "Geplante WordPress-Kern-, Plugin- und Theme-Updates mit Backups und Überwachung – in den Paketen Business, Business Pro und Enterprise.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Reseller-Hosting für Agenturen und Freelancer. Wählen Sie einen Server mit DirectAdmin und Installatron, oder wählen Sie Plus mit Plesk und WordPress Toolkit."
     },
     "es": {
       "aeo-optimization": "Optimización del motor de respuesta para contenido citable y listo para responder.",
@@ -4207,7 +4207,7 @@
       "analytics-optimization": "GA4, Search Console e informes claros para que sepas qué genera clientes potenciales e ingresos.",
       "accessibility-optimization": "Mejoras orientadas a las WCAG para que más personas puedan utilizar su sitio y los motores de búsqueda lo entiendan mejor.",
       "wordpress-maintenance-updates": "Actualizaciones programadas del núcleo, complementos y temas de WordPress con copias de seguridad y monitoreo, en paquetes Business, Business pro y Enterprise.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Hosting revendedor para agencias y freelancers. Elige un servidor con DirectAdmin e Installatron, o elige Plus con Plesk y WordPress Toolkit."
     },
     "pt": {
       "aeo-optimization": "Otimização do mecanismo de resposta para conteúdo citável e pronto para resposta.",
@@ -4258,7 +4258,7 @@
       "analytics-optimization": "GA4, Search Console e relatórios claros para que você saiba o que gera leads e receita.",
       "accessibility-optimization": "Melhorias voltadas para as WCAG para que mais pessoas possam usar seu site - e os mecanismos de pesquisa o entendam melhor.",
       "wordpress-maintenance-updates": "Atualizações agendadas do núcleo, plugin e tema do WordPress com backups e monitoramento – nos pacotes Business, Business pro e Enterprise.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Hospedagem revenda para agências e freelancers. Escolha um servidor com DirectAdmin e Installatron, ou escolha Plus com Plesk e WordPress Toolkit."
     },
     "it": {
       "aeo-optimization": "Ottimizzazione del motore di risposta per contenuti citabili e pronti a rispondere.",
@@ -4309,7 +4309,7 @@
       "analytics-optimization": "GA4, Search Console e report chiari per sapere cosa genera lead ed entrate.",
       "accessibility-optimization": "Miglioramenti incentrati sulle WCAG in modo che più persone possano utilizzare il tuo sito e i motori di ricerca lo comprendano meglio.",
       "wordpress-maintenance-updates": "Aggiornamenti pianificati del core, dei plugin e dei temi di WordPress con backup e monitoraggio — nei pacchetti Business, Business pro ed Enterprise.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Hosting reseller per agenzie e freelancer. Scegli un server con DirectAdmin e Installatron, oppure scegli Plus con Plesk e WordPress Toolkit."
     },
     "el": {
       "aeo-optimization": "Answer Engine Optimization για περιεχόμενο με δυνατότητα αναφοράς, έτοιμο για απαντήσεις.",
@@ -4360,7 +4360,7 @@
       "analytics-optimization": "GA4, Search Console και σαφείς αναφορές, ώστε να γνωρίζετε τι οδηγεί σε δυνητικούς πελάτες και έσοδα.",
       "accessibility-optimization": "Βελτιώσεις με γνώμονα το WCAG, ώστε περισσότεροι άνθρωποι να μπορούν να χρησιμοποιούν τον ιστότοπό σας — και οι μηχανές αναζήτησης να τον κατανοούν καλύτερα.",
       "wordpress-maintenance-updates": "Προγραμματισμένες ενημερώσεις πυρήνα, προσθηκών και θεμάτων WordPress με αντίγραφα ασφαλείας και παρακολούθηση — σε πακέτα Business, Business pro και Enterprise.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Reseller hosting για agencies και freelancers. Επιλέξτε έναν server με DirectAdmin και Installatron, ή επιλέξτε Plus με Plesk και WordPress Toolkit."
     },
     "pl": {
       "aeo-optimization": "Optymalizacja silnika odpowiedzi pod kątem treści, które można cytować i gotowych odpowiedzieć.",
@@ -4411,7 +4411,7 @@
       "analytics-optimization": "GA4, Search Console i przejrzyste raporty, dzięki którym wiesz, co napędza potencjalnych klientów i przychody.",
       "accessibility-optimization": "Ulepszenia zgodne z WCAG, dzięki którym więcej osób może korzystać z Twojej witryny, a wyszukiwarki lepiej ją rozumieją.",
       "wordpress-maintenance-updates": "Zaplanowane aktualizacje rdzenia, wtyczek i motywów WordPress z kopiami zapasowymi i monitorowaniem – w pakietach Business, Business pro i Enterprise.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Hosting resellerski dla agencji i freelancerów. Wybierz serwer z DirectAdmin i Installatron, albo wybierz Plus z Plesk i WordPress Toolkit."
     },
     "cs": {
       "aeo-optimization": "Answer Engine Optimization pro citovatelný obsah připravený k odpovědím.",
@@ -4462,7 +4462,7 @@
       "analytics-optimization": "GA4, Search Console a přehledné přehledy, abyste věděli, co vám přináší potenciální zákazníky a tržby.",
       "accessibility-optimization": "Vylepšení zaměřená na WCAG, aby vaše stránky mohlo používat více lidí – a vyhledávače jim lépe porozuměly.",
       "wordpress-maintenance-updates": "Plánované aktualizace jádra WordPress, pluginů a motivů se zálohováním a monitorováním – v balíčcích Business, Business pro a Enterprise.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Reseller hosting pro agentury a freelancery. Vyberte server s DirectAdmin a Installatron, nebo vyberte Plus s Plesk a WordPress Toolkit."
     },
     "sk": {
       "aeo-optimization": "Optimalizácia vyhľadávacieho nástroja pre citovateľný obsah pripravený na odpovede.",
@@ -4513,7 +4513,7 @@
       "analytics-optimization": "GA4, Search Console a prehľadné prehľady, aby ste vedeli, čo prináša potenciálnych zákazníkov a výnosy.",
       "accessibility-optimization": "Vylepšenia zamerané na WCAG, aby vašu stránku mohlo používať viac ľudí – a vyhľadávače jej lepšie porozumeli.",
       "wordpress-maintenance-updates": "Plánované aktualizácie jadra, doplnkov a tém WordPress so zálohovaním a monitorovaním – v balíkoch Business, Business pro a Enterprise.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Reseller hosting pre agentúry a freelancerov. Vyberte server s DirectAdmin a Installatron, alebo vyberte Plus s Plesk a WordPress Toolkit."
     },
     "hu": {
       "aeo-optimization": "Answer Engine Optimization az idézhető, válaszkész tartalomhoz.",
@@ -4564,7 +4564,7 @@
       "analytics-optimization": "GA4, Search Console és egyértelmű jelentések, hogy tudja, mi vezet a potenciális ügyfelekhez és a bevételhez.",
       "accessibility-optimization": "WCAG-szemléletű fejlesztések, így többen használhatják webhelyét – és a keresőmotorok jobban megértik.",
       "wordpress-maintenance-updates": "Ütemezett WordPress mag-, bővítmény- és témafrissítések biztonsági mentésekkel és felügyelettel – Business, Business pro és Enterprise csomagokban.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Viszonteladói tárhely ügynökségeknek és freelancereknek. Válasszon szervert DirectAdminnal és Installatronnal, vagy válassza a Plus csomagot Pleskkel és WordPress Toolkittel."
     },
     "ro": {
       "aeo-optimization": "Optimizarea motorului de răspunsuri pentru conținut citabil, gata de răspuns.",
@@ -4615,7 +4615,7 @@
       "analytics-optimization": "GA4, Search Console și raportare clară, astfel încât să știți ce generează clienți potențiali și venituri.",
       "accessibility-optimization": "Îmbunătățiri bazate pe WCAG, astfel încât mai mulți oameni să vă poată folosi site-ul - iar motoarele de căutare îl înțeleg mai bine.",
       "wordpress-maintenance-updates": "Actualizări programate de bază, plugin și teme WordPress cu backup și monitorizare — în pachetele Business, Business pro și Enterprise.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Reseller hosting pentru agenții și freelanceri. Alegeți un server cu DirectAdmin și Installatron, sau alegeți Plus cu Plesk și WordPress Toolkit."
     },
     "bg": {
       "aeo-optimization": "Оптимизация на Answer Engine за цитируемо, готово за отговор съдържание.",
@@ -4666,7 +4666,7 @@
       "analytics-optimization": "GA4, Search Console и ясно отчитане, така че да знаете какво стимулира потенциални клиенти и приходи.",
       "accessibility-optimization": "Подобрения, ориентирани към WCAG, така че повече хора да могат да използват вашия сайт — и търсачките да го разбират по-добре.",
       "wordpress-maintenance-updates": "Планирани актуализации на ядрото, плъгина и темата на WordPress с архивиране и наблюдение — в пакети Business, Business pro и Enterprise.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Reseller хостинг за агенции и фрийлансъри. Изберете сървър с DirectAdmin и Installatron или изберете Plus с Plesk и WordPress Toolkit."
     },
     "hr": {
       "aeo-optimization": "Answer Engine Optimization za sadržaj spreman za citiranje.",
@@ -4717,7 +4717,7 @@
       "analytics-optimization": "GA4, Search Console i jasno izvješćivanje kako biste znali što privlači potencijalne kupce i prihod.",
       "accessibility-optimization": "Poboljšanja usmjerena na WCAG tako da više ljudi može koristiti vašu stranicu — a tražilice je bolje razumiju.",
       "wordpress-maintenance-updates": "Planirana ažuriranja jezgre, dodataka i tema WordPressa sa sigurnosnim kopijama i nadzorom — u paketima Business, Business pro i Enterprise.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Reseller hosting za agencije i freelancere. Odaberite poslužitelj s DirectAdmin i Installatron, ili odaberite Plus s Plesk i WordPress Toolkit."
     },
     "sr": {
       "aeo-optimization": "Оптимизација мотора за одговоре за садржај који се може цитирати, спреман за одговоре.",
@@ -4768,7 +4768,7 @@
       "analytics-optimization": "ГА4, Сеарцх Цонсоле и јасно извештавање како бисте знали шта покреће потенцијалне клијенте и приход.",
       "accessibility-optimization": "Побољшања усмерена на ВЦАГ тако да више људи може да користи вашу веб локацију — а претраживачи је боље разумеју.",
       "wordpress-maintenance-updates": "Планирано ажурирање ВордПресс језгра, додатака и тема са резервним копијама и надгледањем — у Бусинесс, Бусинесс про и Ентерприсе пакетима.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Reseller хостинг за агенције и фриленсере. Изаберите сервер са DirectAdmin и Installatron, или изаберите Plus са Plesk и WordPress Toolkit."
     },
     "bs": {
       "aeo-optimization": "Answer Engine Optimizacija za sadržaj koji se može citirati, spreman za odgovore.",
@@ -4819,7 +4819,7 @@
       "analytics-optimization": "GA4, Search Console i jasno izvještavanje kako biste znali šta pokreće potencijalne klijente i prihod.",
       "accessibility-optimization": "Poboljšanja usmjerena na WCAG tako da više ljudi može koristiti vašu web-lokaciju — a pretraživači je bolje razumiju.",
       "wordpress-maintenance-updates": "Planirano ažuriranje WordPress jezgra, dodataka i tema sa rezervnim kopijama i praćenjem — u Business, Business pro i Enterprise paketima.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Reseller hosting za agencije i freelancere. Odaberite server s DirectAdmin i Installatron, ili odaberite Plus s Plesk i WordPress Toolkit."
     },
     "cnr": {
       "aeo-optimization": "Оптимизација мотора за одговоре за садржај који се може цитирати, спреман за одговоре.",
@@ -4870,7 +4870,7 @@
       "analytics-optimization": "ГА4, Сеарцх Цонсоле и јасно извештавање како бисте знали шта покреће потенцијалне клијенте и приход.",
       "accessibility-optimization": "Побољшања усмерена на ВЦАГ тако да више људи може да користи вашу веб локацију — а претраживачи је боље разумеју.",
       "wordpress-maintenance-updates": "Планирано ажурирање ВордПресс језгра, додатака и тема са резервним копијама и надгледањем — у Бусинесс, Бусинесс про и Ентерприсе пакетима.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Reseller хостинг за агенције и фриленсере. Изаберите сервер са DirectAdmin и Installatron, или изаберите Plus са Plesk и WordPress Toolkit."
     },
     "sq": {
       "aeo-optimization": "Përgjigju Optimizimit të Motorit për përmbajtje të citueshme dhe të gatshme për përgjigje.",
@@ -4921,7 +4921,7 @@
       "analytics-optimization": "GA4, Search Console dhe raportime të qarta në mënyrë që të dini se çfarë i drejton klientët dhe të ardhurat.",
       "accessibility-optimization": "Përmirësime me mendje WCAG në mënyrë që më shumë njerëz të mund të përdorin faqen tuaj – dhe motorët e kërkimit ta kuptojnë më mirë.",
       "wordpress-maintenance-updates": "Përditësimet e planifikuara të bazës, shtojcave dhe temave të WordPress me kopje rezervë dhe monitorim – në paketat Business, Business pro dhe Enterprise.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Hosting rivendës për agjenci dhe freelancerë. Zgjidhni një server me DirectAdmin dhe Installatron, ose zgjidhni Plus me Plesk dhe WordPress Toolkit."
     },
     "mk": {
       "aeo-optimization": "Одговори за оптимизација на моторот за цитирана содржина подготвена за одговори.",
@@ -4972,7 +4972,7 @@
       "analytics-optimization": "GA4, Search Console и јасно известување за да знаете што ги придвижува клиентите и приходите.",
       "accessibility-optimization": "Подобрувања за WCAG за повеќе луѓе да можат да ја користат вашата страница - а пребарувачите подобро да ја разберат.",
       "wordpress-maintenance-updates": "Закажани ажурирања на јадрото, приклучоците и темите на WordPress со резервни копии и следење - во пакетите Business, Business pro и Enterprise.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Reseller хостинг за агенции и фриленсери. Изберете сервер со DirectAdmin и Installatron, или изберете Plus со Plesk и WordPress Toolkit."
     },
     "lt": {
       "aeo-optimization": "Atsakymų variklio optimizavimas, skirtas cituotinam, atsakymams paruoštam turiniui.",
@@ -5023,7 +5023,7 @@
       "analytics-optimization": "GA4, „Search Console“ ir aiškios ataskaitos, kad žinotumėte, kas skatina potencialius klientus ir pajamas.",
       "accessibility-optimization": "WCAG patobulinimai, kad daugiau žmonių galėtų naudotis jūsų svetaine, o paieškos sistemos geriau ją suprastų.",
       "wordpress-maintenance-updates": "Suplanuoti „WordPress“ branduolio, papildinių ir temų atnaujinimai su atsarginėmis kopijomis ir stebėjimu – „Business“, „Business Pro“ ir „Enterprise“ paketuose.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Perpardavėjų hostingas agentūroms ir freelanseriams. Pasirinkite serverį su DirectAdmin ir Installatron arba pasirinkite Plus su Plesk ir WordPress Toolkit."
     },
     "da": {
       "aeo-optimization": "Answer Engine Optimization for citerbart, svarklart indhold.",
@@ -5074,7 +5074,7 @@
       "analytics-optimization": "GA4, Search Console og overskuelig rapportering, så du ved, hvad der driver kundeemner og omsætning.",
       "accessibility-optimization": "WCAG-mindede forbedringer, så flere mennesker kan bruge dit websted - og søgemaskiner forstår det bedre.",
       "wordpress-maintenance-updates": "Planlagte WordPress-kerne-, plugin- og temaopdateringer med sikkerhedskopier og overvågning – i Business, Business pro og Enterprise-pakker.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Forhandlerhosting til bureauer og freelancere. Vælg en server med DirectAdmin og Installatron, eller vælg Plus med Plesk og WordPress Toolkit."
     },
     "sv": {
       "aeo-optimization": "Answer Engine Optimization för citerbart, svarsfärdigt innehåll.",
@@ -5125,7 +5125,7 @@
       "analytics-optimization": "GA4, Search Console och tydlig rapportering så att du vet vad som driver leads och intäkter.",
       "accessibility-optimization": "WCAG-inriktade förbättringar så att fler människor kan använda din webbplats – och sökmotorer förstår den bättre.",
       "wordpress-maintenance-updates": "Schemalagda WordPress-kärna-, plugin- och temauppdateringar med säkerhetskopiering och övervakning – i Business, Business pro och Enterprise-paket.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Återförsäljarhosting för byråer och frilansare. Välj en server med DirectAdmin och Installatron, eller välj Plus med Plesk och WordPress Toolkit."
     },
     "no": {
       "aeo-optimization": "Answer Engine Optimization for siterbart, svarklart innhold.",
@@ -5176,7 +5176,7 @@
       "analytics-optimization": "GA4, Search Console og tydelig rapportering slik at du vet hva som genererer potensielle kunder og inntekter.",
       "accessibility-optimization": "WCAG-innstilte forbedringer slik at flere kan bruke nettstedet ditt – og søkemotorer forstår det bedre.",
       "wordpress-maintenance-updates": "Planlagte WordPress-kjerne-, plugin- og temaoppdateringer med sikkerhetskopiering og overvåking – i Business, Business pro og Enterprise-pakker.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Reseller-hosting for byråer og frilansere. Velg en server med DirectAdmin og Installatron, eller velg Plus med Plesk og WordPress Toolkit."
     },
     "fi": {
       "aeo-optimization": "Answer Engine Optimization lainattavalle, vastausvalmiille sisällölle.",
@@ -5227,7 +5227,7 @@
       "analytics-optimization": "GA4, Search Console ja selkeä raportointi, jotta tiedät, mikä johtaa liideihin ja tuloihin.",
       "accessibility-optimization": "WCAG-mielisiä parannuksia, jotta useammat ihmiset voivat käyttää sivustoasi – ja hakukoneet ymmärtävät sen paremmin.",
       "wordpress-maintenance-updates": "Ajoitetut WordPress-ydin-, laajennus- ja teemapäivitykset varmuuskopioinnilla ja valvonnalla – Business-, Business pro- ja Enterprise-paketeissa.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Jälleenmyyjähosting toimistoille ja freelancereille. Valitse palvelin DirectAdminilla ja Installatronilla, tai valitse Plus Pleskillä ja WordPress Toolkitillä."
     },
     "uk": {
       "aeo-optimization": "Оптимізація системи відповідей для цитування вмісту, готового до відповідей.",
@@ -5278,7 +5278,7 @@
       "analytics-optimization": "GA4, Search Console і чіткі звіти, щоб ви знали, що сприяє залученню потенційних клієнтів і прибутку.",
       "accessibility-optimization": "Покращення, орієнтовані на WCAG, щоб більше людей могли використовувати ваш сайт — і пошукові системи краще його розуміли.",
       "wordpress-maintenance-updates": "Заплановані оновлення ядра WordPress, плагінів і тем із резервним копіюванням і моніторингом — у пакетах Business, Business pro та Enterprise.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Реселлерський хостинг для агентств і фрілансерів. Оберіть сервер із DirectAdmin і Installatron або оберіть Plus із Plesk і WordPress Toolkit."
     },
     "ru": {
       "aeo-optimization": "Оптимизация механизма ответов для цитируемого контента, готового к ответам.",
@@ -5329,7 +5329,7 @@
       "analytics-optimization": "GA4, Search Console и четкие отчеты, чтобы вы знали, что приводит к увеличению количества потенциальных клиентов и дохода.",
       "accessibility-optimization": "Улучшения, ориентированные на WCAG, чтобы больше людей могли использовать ваш сайт, а поисковые системы лучше его понимали.",
       "wordpress-maintenance-updates": "Запланированные обновления ядра, плагинов и тем WordPress с резервным копированием и мониторингом — в пакетах Business, Business pro и Enterprise.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Реселлерский хостинг для агентств и фрилансеров. Выберите сервер с DirectAdmin и Installatron или выберите Plus с Plesk и WordPress Toolkit."
     },
     "tr": {
       "aeo-optimization": "Alıntı yapılabilir, yanıta hazır içerik için Yanıt Motoru Optimizasyonu.",
@@ -5380,7 +5380,7 @@
       "analytics-optimization": "GA4, Search Console ve net raporlama sayesinde olası satışları ve geliri neyin artırdığını bilirsiniz.",
       "accessibility-optimization": "Daha fazla kişinin sitenizi kullanabilmesi ve arama motorlarının sitenizi daha iyi anlayabilmesi için WCAG odaklı iyileştirmeler.",
       "wordpress-maintenance-updates": "Business, Business pro ve Enterprise paketlerinde yedekleme ve izleme ile planlanmış WordPress çekirdek, eklenti ve tema güncellemeleri.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Ajanslar ve serbest çalışanlar için bayi hosting. DirectAdmin ve Installatron içeren bir sunucu seçin, veya Plesk ve WordPress Toolkit içeren Plus'ı seçin."
     },
     "he": {
       "aeo-optimization": "אופטימיזציה למנועי תשובה עבור תוכן שניתן לצטט, מוכן לתשובה.",
@@ -5431,7 +5431,7 @@
       "analytics-optimization": "GA4, Search Console ודיווח ברור כדי שתדע מה מוביל לידים והכנסות.",
       "accessibility-optimization": "שיפורים מבוססי WCAG כך שיותר אנשים יוכלו להשתמש באתר שלך - ומנועי חיפוש מבינים אותו טוב יותר.",
       "wordpress-maintenance-updates": "עדכוני הליבה, הפלאגין והנושאים של וורדפרס מתוזמנים עם גיבויים וניטור - בחבילות Business, Business pro ו-Enterprise.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "אירוח ריסלר לסוכנויות ולפרילנסרים. בחרו שרת עם DirectAdmin ו-Installatron, או בחרו Plus עם Plesk ו-WordPress Toolkit."
     },
     "ar": {
       "aeo-optimization": "تحسين محرك الإجابة للحصول على محتوى جاهز للإجابة.",
@@ -5482,7 +5482,7 @@
       "analytics-optimization": "\"إحصاءات Google‏ 4\" وSearch Console وتقارير واضحة حتى تعرف ما الذي يجذب العملاء المحتملين والأرباح.",
       "accessibility-optimization": "تحسينات تهدف إلى WCAG حتى يتمكن عدد أكبر من الأشخاص من استخدام موقعك - ​​وتفهمه محركات البحث بشكل أفضل.",
       "wordpress-maintenance-updates": "تحديثات WordPress الأساسية والمكونات الإضافية والموضوعات المجدولة مع النسخ الاحتياطية والمراقبة - في حزم Business وBusiness pro وEnterprise.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "استضافة ريسيلر للوكالات والمستقلين. اختر خادمًا مع DirectAdmin وInstallatron، أو اختر Plus مع Plesk وWordPress Toolkit."
     },
     "ka": {
       "aeo-optimization": "უპასუხეთ ძრავის ოპტიმიზაციას ციტირებადი, პასუხებისთვის მზა შინაარსისთვის.",
@@ -5533,7 +5533,7 @@
       "analytics-optimization": "GA4, Search Console და გასუფთავებული ანგარიშგება, ასე რომ თქვენ იცით, რა განაპირობებს პოტენციალს და შემოსავალს.",
       "accessibility-optimization": "WCAG-ზე მოაზროვნე გაუმჯობესებები, რათა უფრო მეტმა ადამიანმა შეძლოს თქვენი საიტის გამოყენება – და საძიებო სისტემებმა ეს უკეთ გაიგონ.",
       "wordpress-maintenance-updates": "დაგეგმილია WordPress-ის ძირითადი, მოდულების და თემების განახლებები სარეზერვო ასლებით და მონიტორინგით – Business, Business Pro და Enterprise პაკეტებში.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "გადამყიდველის ჰოსტინგი სააგენტოებისა და ფრილანსერებისთვის. აირჩიეთ სერვერი DirectAdmin-ით და Installatron-ით, ან აირჩიეთ Plus with Plesk და WordPress Toolkit."
     },
     "hy": {
       "aeo-optimization": "Պատասխանեք Շարժիչի օպտիմիզացմանը վկայակոչվող, պատասխանների համար պատրաստ բովանդակության համար:",
@@ -5584,7 +5584,7 @@
       "analytics-optimization": "GA4, Search Console և հստակ հաշվետվություններ, որպեսզի իմանաք, թե ինչն է հանգեցնում առաջատարների և եկամուտների:",
       "accessibility-optimization": "WCAG-ով մտածված բարելավումներ, որպեսզի ավելի շատ մարդիկ կարողանան օգտագործել ձեր կայքը, և որոնիչները դա ավելի լավ հասկանան:",
       "wordpress-maintenance-updates": "Պլանավորված WordPress-ի հիմնական, պլագինների և թեմաների թարմացումներ՝ կրկնօրինակումներով և մոնիտորինգով – Business, Business Pro և Enterprise փաթեթներում:",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Վերավաճառող հոսթինգ գործակալությունների և ֆրիլանսերների համար: Ընտրեք սերվեր DirectAdmin-ով և Installatron-ով կամ ընտրեք Plus-ը Plesk-ի և WordPress Toolkit-ի հետ:"
     },
     "az": {
       "aeo-optimization": "İstinad edilə bilən, cavab verməyə hazır məzmun üçün Cavab Mühərrikinin Optimizasiyası.",
@@ -5635,7 +5635,7 @@
       "analytics-optimization": "GA4, Axtarış Konsolu və aydın hesabat, beləliklə, liderləri və gəliri nəyin idarə etdiyini bilirsiniz.",
       "accessibility-optimization": "WCAG düşüncəli təkmilləşdirmələr, beləliklə daha çox insan saytınızdan istifadə edə bilsin – və axtarış motorları onu daha yaxşı başa düşür.",
       "wordpress-maintenance-updates": "Planlaşdırılmış WordPress nüvəsi, plagin və tema yeniləmələri ehtiyat nüsxələri və monitorinqi ilə — Business, Business pro və Enterprise paketlərində.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "Agentliklər və frilanserlər üçün reseller hostinqi. DirectAdmin və Installatron ilə server seçin və ya Plesk və WordPress Toolbar ilə Plus seçin."
     },
     "zh": {
       "aeo-optimization": "答案引擎优化可引用、可答案的内容。",
@@ -5686,7 +5686,7 @@
       "analytics-optimization": "GA4、Search Console 和清晰的报告让您了解推动销售线索和收入的因素。",
       "accessibility-optimization": "注重 WCAG 的改进，让更多人可以使用您的网站，并且搜索引擎可以更好地理解您的网站。",
       "wordpress-maintenance-updates": "计划的 WordPress 核心、插件和主题更新以及备份和监控 - 在 Business、Business pro 和 Enterprise 包中。",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "面向代理机构和自由职业者的经销商主机。选择带 DirectAdmin 和 Installatron 的服务器，或选择带 Plesk 和 WordPress Toolkit 的 Plus。"
     },
     "ja": {
       "aeo-optimization": "引用可能な、すぐに回答できるコンテンツのための回答エンジンの最適化。",
@@ -5737,7 +5737,7 @@
       "analytics-optimization": "GA4、Search Console、明確なレポートにより、何がリードと収益を促進するのかがわかります。",
       "accessibility-optimization": "WCAG を意識した改善により、より多くの人がサイトを利用できるようになり、検索エンジンがサイトをよりよく理解できるようになります。",
       "wordpress-maintenance-updates": "ビジネス、ビジネス プロ、エンタープライズ パッケージで、WordPress コア、プラグイン、テーマのバックアップとモニタリングをスケジュール的に更新します。",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "代理店やフリーランサー向けのリセラーホスティング。DirectAdmin と Installatron 付きのサーバーを選ぶか、Plesk と WordPress Toolkit 付きの Plus を選んでください。"
     },
     "bn": {
       "aeo-optimization": "উদ্ধৃতিযোগ্য, উত্তর প্রস্তুত সামগ্রীর জন্য উত্তর ইঞ্জিন অপ্টিমাইজেশান।",
@@ -5788,7 +5788,7 @@
       "stickers-packaging": "স্টিকার ডিজাইন এবং প্রিন্টিং — ছোট ব্যাচ বা বড় রান।",
       "magazines-brochures": "ব্রোশিওর এবং ম্যাগাজিন ডিজাইন প্লাস মুদ্রণ ছোট বা বড় পরিমাণে।",
       "wordpress-maintenance-updates": "ব্যাকআপ এবং মনিটরিং সহ নির্ধারিত ওয়ার্ডপ্রেস কোর, প্লাগইন এবং থিম আপডেটগুলি — ব্যবসায়, বিজনেস প্রো এবং এন্টারপ্রাইজ প্যাকেজে।",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "এজেন্সি এবং ফ্রিল্যান্সারদের জন্য রিসেলার হোস্টিং। DirectAdmin এবং Installatron সহ একটি সার্ভার চয়ন করুন, অথবা Plesk এবং WordPress Toolkit এর সাথে প্লাস নির্বাচন করুন।"
     },
     "hi": {
       "aeo-optimization": "उद्धृत करने योग्य, उत्तर-तैयार सामग्री के लिए उत्तर इंजन अनुकूलन।",
@@ -5839,7 +5839,7 @@
       "stickers-packaging": "स्टिकर डिज़ाइन और प्रिंटिंग - छोटे बैच या बड़े रन।",
       "magazines-brochures": "ब्रोशर और पत्रिका डिज़ाइन के साथ-साथ छोटी या बड़ी मात्रा में छपाई।",
       "wordpress-maintenance-updates": "बैकअप और मॉनिटरिंग के साथ शेड्यूल किए गए वर्डप्रेस कोर, प्लगइन और थीम अपडेट - बिजनेस, बिजनेस प्रो और एंटरप्राइज पैकेज में।",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "एजेंसियों और फ्रीलांसरों के लिए पुनर्विक्रेता होस्टिंग। DirectAdmin और Installatron के साथ एक सर्वर चुनें, या Plesk और WordPress Toolkit के साथ प्लस चुनें।"
     },
     "mr": {
       "aeo-optimization": "उद्धृत, उत्तर-तयार सामग्रीसाठी उत्तर इंजिन ऑप्टिमायझेशन.",
@@ -5890,7 +5890,7 @@
       "stickers-packaging": "स्टिकर डिझाइन आणि प्रिंटिंग - लहान बॅचेस किंवा मोठ्या धावा.",
       "magazines-brochures": "ब्रोशर आणि मॅगझिन डिझाइन तसेच लहान किंवा मोठ्या प्रमाणात छपाई.",
       "wordpress-maintenance-updates": "अनुसूचित वर्डप्रेस कोर, प्लगइन आणि थीम अद्यतने बॅकअप आणि मॉनिटरिंगसह — व्यवसाय, व्यवसाय प्रो आणि एंटरप्राइझ पॅकेजमध्ये.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "एजन्सी आणि फ्रीलांसरसाठी पुनर्विक्रेता होस्टिंग. DirectAdmin आणि Installatron सह सर्व्हर निवडा किंवा Plesk आणि WordPress Toolkit सह Plus निवडा."
     },
     "ps": {
       "aeo-optimization": "د ځواب ویلو وړ، ځواب چمتو شوي منځپانګې لپاره د ځواب انجن اصلاح کول.",
@@ -5941,7 +5941,7 @@
       "stickers-packaging": "د سټیکر ډیزاین او چاپ کول - کوچنۍ بستې یا لوی منډې.",
       "magazines-brochures": "د بروشر او مجلې ډیزاین او په کوچنیو یا لوی مقدارونو کې چاپ کول.",
       "wordpress-maintenance-updates": "د بیک اپ او نظارت سره مهالویش شوي ورڈپریس کور ، پلگ ان او موضوع تازه کول - په سوداګرۍ ، سوداګرۍ پرو او تصدۍ کڅوړو کې.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "د ادارو او فری لانسانو لپاره د پلورونکي کوربه توب. د DirectAdmin او Installatron سره یو سرور غوره کړئ، یا د پلس او ورډپریس تولکیټ سره پلس غوره کړئ."
     },
     "pa": {
       "aeo-optimization": "ਹਵਾਲਾ ਦੇਣ ਯੋਗ, ਉੱਤਰ-ਤਿਆਰ ਸਮੱਗਰੀ ਲਈ ਉੱਤਰ ਇੰਜਨ ਅਨੁਕੂਲਨ।",
@@ -5992,7 +5992,7 @@
       "stickers-packaging": "ਸਟਿੱਕਰ ਡਿਜ਼ਾਈਨ ਅਤੇ ਪ੍ਰਿੰਟਿੰਗ — ਛੋਟੇ ਬੈਚ ਜਾਂ ਵੱਡੇ ਰਨ।",
       "magazines-brochures": "ਬਰੋਸ਼ਰ ਅਤੇ ਮੈਗਜ਼ੀਨ ਡਿਜ਼ਾਈਨ ਅਤੇ ਛੋਟੀ ਜਾਂ ਵੱਡੀ ਮਾਤਰਾ ਵਿੱਚ ਪ੍ਰਿੰਟਿੰਗ।",
       "wordpress-maintenance-updates": "ਬੈਕਅੱਪ ਅਤੇ ਨਿਗਰਾਨੀ ਦੇ ਨਾਲ ਅਨੁਸੂਚਿਤ ਵਰਡਪਰੈਸ ਕੋਰ, ਪਲੱਗਇਨ ਅਤੇ ਥੀਮ ਅੱਪਡੇਟ - ਵਪਾਰ, ਵਪਾਰਕ ਪ੍ਰੋ ਅਤੇ ਐਂਟਰਪ੍ਰਾਈਜ਼ ਪੈਕੇਜਾਂ ਵਿੱਚ।",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "ਏਜੰਸੀਆਂ ਅਤੇ ਫ੍ਰੀਲਾਂਸਰਾਂ ਲਈ ਮੁੜ ਵਿਕਰੇਤਾ ਹੋਸਟਿੰਗ। DirectAdmin ਅਤੇ Installatron ਨਾਲ ਇੱਕ ਸਰਵਰ ਚੁਣੋ, ਜਾਂ Plesk ਅਤੇ WordPress Toolkit ਨਾਲ ਪਲੱਸ ਚੁਣੋ।"
     },
     "te": {
       "aeo-optimization": "ఉదహరించదగిన, సమాధానానికి సిద్ధంగా ఉన్న కంటెంట్ కోసం ఆన్సర్ ఇంజిన్ ఆప్టిమైజేషన్.",
@@ -6043,7 +6043,7 @@
       "stickers-packaging": "స్టిక్కర్ డిజైన్ మరియు ప్రింటింగ్ — చిన్న బ్యాచ్‌లు లేదా పెద్ద పరుగులు.",
       "magazines-brochures": "బ్రోచర్ మరియు మ్యాగజైన్ డిజైన్ మరియు చిన్న లేదా పెద్ద పరిమాణంలో ప్రింటింగ్.",
       "wordpress-maintenance-updates": "షెడ్యూల్ చేయబడిన WordPress కోర్, ప్లగిన్ మరియు థీమ్ అప్‌డేట్‌లు బ్యాకప్‌లు మరియు పర్యవేక్షణతో — వ్యాపారం, వ్యాపార అనుకూల మరియు ఎంటర్‌ప్రైజ్ ప్యాకేజీలలో.",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "ఏజెన్సీలు మరియు ఫ్రీలాన్సర్‌ల కోసం పునఃవిక్రేత హోస్టింగ్. DirectAdmin మరియు Installatronతో సర్వర్‌ని ఎంచుకోండి లేదా Plesk మరియు WordPress టూల్‌కిట్‌తో ప్లస్‌ని ఎంచుకోండి."
     },
     "ur": {
       "aeo-optimization": "قابل حوالہ، جواب کے لیے تیار مواد کے لیے انجن کی اصلاح کا جواب دیں۔",
@@ -6094,7 +6094,7 @@
       "stickers-packaging": "اسٹیکر ڈیزائن اور پرنٹنگ - چھوٹے بیچز یا بڑے رنز۔",
       "magazines-brochures": "بروشر اور میگزین ڈیزائن کے علاوہ چھوٹی یا بڑی مقدار میں پرنٹنگ۔",
       "wordpress-maintenance-updates": "شیڈول کردہ ورڈپریس کور، پلگ ان اور تھیم اپ ڈیٹس بیک اپ اور مانیٹرنگ کے ساتھ — بزنس، بزنس پرو اور انٹرپرائز پیکجز میں۔",
-      "reseller-hosting": "Reseller hosting for agencies and freelancers: start with DirectAdmin or choose POWER with Plesk and WordPress Toolkit."
+      "reseller-hosting": "ایجنسیوں اور فری لانسرز کے لیے ری سیلر ہوسٹنگ۔ DirectAdmin اور Installatron کے ساتھ سرور کا انتخاب کریں، یا پلس اور ورڈپریس ٹول کٹ کے ساتھ پلس کا انتخاب کریں۔"
     }
   },
   "labels": {

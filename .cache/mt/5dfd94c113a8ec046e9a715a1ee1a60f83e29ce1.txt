@@ -1,0 +1,1 @@
+Реселлерський хостинг для агентств і фрілансерів. Виберіть сервер із DirectAdmin і Installatron або виберіть Plus із Plesk і WordPress Toolkit.

@@ -1,0 +1,1 @@
+Reseller hosting ile birden fazla müşteri web sitesini kendi markanız altında barındırırsınız. Hesapları kolayca yönetmek için net depolama ve trafik sınırlarına, sınırsız alan adlarına, e-postaya, MySQL'e, SSH'ye ve bir kontrol paneline sahip olursunuz.

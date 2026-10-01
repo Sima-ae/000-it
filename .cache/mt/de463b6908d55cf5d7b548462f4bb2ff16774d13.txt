@@ -1,0 +1,1 @@
+استضافة موزع للوكالات والمستقلين. اختر خادمًا يحتوي على DirectAdmin وInstalatron، أو اختر Plus مع Plesk وWordPress Toolkit.

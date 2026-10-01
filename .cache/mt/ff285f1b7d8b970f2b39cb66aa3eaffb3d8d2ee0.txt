@@ -1,0 +1,1 @@
+INICIO: 10 Gb de almacenamiento, 80 Gb de tráfico, DirectAdmin + Installatron

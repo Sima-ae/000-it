@@ -101,7 +101,7 @@
     },
     {
       "slug": "reseller-hosting-start",
-      "name": "START",
+      "name": "Reseller Hosting Start",
       "price": 14.85,
       "currency": "EUR",
       "shortDescription": "– Opslag: 10Gb\n– Dataverkeer: 80Gb\n– aantal domeinen: Onbeperkt\n– E-mail: Ja\n– MySQL databases: Ja\n– Installatron: Ja\n– Controlpanel: DirectAdmin\n– Toegang SSH: Ja",
@@ -111,8 +111,8 @@
       ]
     },
     {
-      "slug": "reseller-hosting-medium",
-      "name": "MEDIUM",
+      "slug": "reseller-hosting-basic",
+      "name": "Reseller Hosting Basic",
       "price": 20.25,
       "currency": "EUR",
       "shortDescription": "– Opslag: 15Gb\n– Dataverkeer: 120Gb\n– aantal domeinen: Onbeperkt\n– E-mail: Ja\n– MySQL databases: Ja\n– Installatron: Ja\n– Controlpanel: DirectAdmin\n– Toegang SSH: Ja",
@@ -122,8 +122,8 @@
       ]
     },
     {
-      "slug": "reseller-hosting-pro",
-      "name": "PRO",
+      "slug": "reseller-hosting-business",
+      "name": "Reseller Hosting Business",
       "price": 26.5,
       "currency": "EUR",
       "shortDescription": "– Opslag: 20Gb\n– Dataverkeer: 150Gb\n– aantal domeinen: Onbeperkt\n– E-mail: Ja\n– MySQL databases: Ja\n– Installatron: Ja\n– Controlpanel: DirectAdmin\n– Toegang SSH: Ja",
@@ -133,8 +133,8 @@
       ]
     },
     {
-      "slug": "reseller-hosting-power",
-      "name": "POWER",
+      "slug": "reseller-hosting-plus",
+      "name": "Reseller Hosting Plus",
       "price": 37.5,
       "currency": "EUR",
       "shortDescription": "– Opslag: 20Gb\n– Dataverkeer: 150Gb\n– aantal domeinen: Onbeperkt\n– E-mail: Ja\n– MySQL databases: Ja\n– WordPress Toolkit: Ja\n– Controlpanel: Plesk\n– Toegang SSH: Ja",

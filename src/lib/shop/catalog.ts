@@ -71,9 +71,9 @@ export const CLOUD_HOSTING_SLUG_ORDER = [
 
 export const RESELLER_HOSTING_SLUG_ORDER = [
   "reseller-hosting-start",
-  "reseller-hosting-medium",
-  "reseller-hosting-pro",
-  "reseller-hosting-power",
+  "reseller-hosting-basic",
+  "reseller-hosting-business",
+  "reseller-hosting-plus",
 ] as const;
 
 export const WORDPRESS_HOSTING_SLUG_ORDER = [
@@ -503,7 +503,7 @@ function buildServiceProducts(): ShopProduct[] {
       lineOfBusiness: yearlyHosting ? ("HOSTING" as const) : ("SERVICE" as const),
       currency: "EUR" as const,
       image,
-      featured: p.slug.endsWith("-power") || undefined,
+      featured: p.slug === "reseller-hosting-plus" || undefined,
       published: true,
       sortOrder: 100 + index,
     };

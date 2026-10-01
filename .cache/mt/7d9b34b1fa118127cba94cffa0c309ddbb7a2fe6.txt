@@ -1,0 +1,1 @@
+Ajanslar ve serbest çalışanlar için bayi hosting. DirectAdmin ve Installatron içeren bir sunucu seçin veya Plesk ve WordPress Araç Seti ile Plus'ı seçin.

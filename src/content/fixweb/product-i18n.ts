@@ -351,7 +351,7 @@ TripleZero iT provides a fully managed cloud foundation with the headroom seriou
 
   "reseller-hosting-start": {
     nl: {
-      name: "START",
+      name: "Reseller hosting start",
       shortDescription: `– Opslag: 10Gb
 – Dataverkeer: 80Gb
 – aantal domeinen: Onbeperkt
@@ -360,14 +360,14 @@ TripleZero iT provides a fully managed cloud foundation with the headroom seriou
 – Installatron: Ja
 – Controlpanel: DirectAdmin
 – Toegang SSH: Ja`,
-      description: `Reseller Hosting START geeft je alles wat je nodig hebt om websites voor klanten te hosten en door te verkopen.
+      description: `Reseller Hosting Start geeft je alles wat je nodig hebt om websites voor klanten te hosten en door te verkopen.
 
 Je krijgt 10Gb opslag, 80Gb dataverkeer, onbeperkt domeinen, e-mail, MySQL-databases, Installatron, DirectAdmin en SSH-toegang.
 
 TripleZero iT biedt een betrouwbaar resellerplatform zodat je jouw hostingbusiness kunt laten groeien met duidelijke limieten en volledige controlpanel-tools.`,
     },
     en: {
-      name: "START",
+      name: "Reseller Hosting Start",
       shortDescription: `– Storage: 10Gb
 – Traffic: 80Gb
 – Domains: Unlimited
@@ -376,7 +376,7 @@ TripleZero iT biedt een betrouwbaar resellerplatform zodat je jouw hostingbusine
 – Installatron: Yes
 – Control panel: DirectAdmin
 – SSH access: Yes`,
-      description: `Reseller Hosting START gives you everything you need to host and resell websites for clients.
+      description: `Reseller Hosting Start gives you everything you need to host and resell websites for clients.
 
 You receive 10Gb storage, 80Gb traffic, unlimited domains, email, MySQL databases, Installatron, DirectAdmin and SSH access.
 
@@ -384,9 +384,9 @@ TripleZero iT provides a reliable reseller platform so you can grow your hosting
     },
   },
 
-  "reseller-hosting-medium": {
+  "reseller-hosting-basic": {
     nl: {
-      name: "MEDIUM",
+      name: "Reseller hosting basic",
       shortDescription: `– Opslag: 15Gb
 – Dataverkeer: 120Gb
 – aantal domeinen: Onbeperkt
@@ -395,14 +395,14 @@ TripleZero iT provides a reliable reseller platform so you can grow your hosting
 – Installatron: Ja
 – Controlpanel: DirectAdmin
 – Toegang SSH: Ja`,
-      description: `Reseller Hosting MEDIUM biedt meer opslag en dataverkeer voor groeiende resellerportfolio’s.
+      description: `Reseller Hosting Basic biedt meer opslag en dataverkeer voor groeiende resellerportfolio’s.
 
 Je krijgt 15Gb opslag, 120Gb dataverkeer, onbeperkt domeinen, e-mail, MySQL-databases, Installatron, DirectAdmin en SSH-toegang.
 
 TripleZero iT helpt agencies en freelancers meer klantsites te hosten zonder te vroeg naar een zwaarder platform te moeten.`,
     },
     en: {
-      name: "MEDIUM",
+      name: "Reseller Hosting Basic",
       shortDescription: `– Storage: 15Gb
 – Traffic: 120Gb
 – Domains: Unlimited
@@ -411,7 +411,7 @@ TripleZero iT helpt agencies en freelancers meer klantsites te hosten zonder te 
 – Installatron: Yes
 – Control panel: DirectAdmin
 – SSH access: Yes`,
-      description: `Reseller Hosting MEDIUM adds more storage and traffic for growing reseller portfolios.
+      description: `Reseller Hosting Basic adds more storage and traffic for growing reseller portfolios.
 
 You receive 15Gb storage, 120Gb traffic, unlimited domains, email, MySQL databases, Installatron, DirectAdmin and SSH access.
 
@@ -419,9 +419,9 @@ TripleZero iT helps agencies and freelancers host more client sites without jump
     },
   },
 
-  "reseller-hosting-pro": {
+  "reseller-hosting-business": {
     nl: {
-      name: "PRO",
+      name: "Reseller hosting business",
       shortDescription: `– Opslag: 20Gb
 – Dataverkeer: 150Gb
 – aantal domeinen: Onbeperkt
@@ -430,14 +430,14 @@ TripleZero iT helps agencies and freelancers host more client sites without jump
 – Installatron: Ja
 – Controlpanel: DirectAdmin
 – Toegang SSH: Ja`,
-      description: `Reseller Hosting PRO is bedoeld voor drukkere resellerworkloads die meer schijfruimte en bandbreedte nodig hebben.
+      description: `Reseller Hosting Business is bedoeld voor drukkere resellerworkloads die meer schijfruimte en bandbreedte nodig hebben.
 
 Je krijgt 20Gb opslag, 150Gb dataverkeer, onbeperkt domeinen, e-mail, MySQL-databases, Installatron, DirectAdmin en SSH-toegang.
 
 TripleZero iT geeft je een professionele DirectAdmin-resellerstack met ruimte om klant-hosting te schalen.`,
     },
     en: {
-      name: "PRO",
+      name: "Reseller Hosting Business",
       shortDescription: `– Storage: 20Gb
 – Traffic: 150Gb
 – Domains: Unlimited
@@ -446,7 +446,7 @@ TripleZero iT geeft je een professionele DirectAdmin-resellerstack met ruimte om
 – Installatron: Yes
 – Control panel: DirectAdmin
 – SSH access: Yes`,
-      description: `Reseller Hosting PRO is built for busier reseller workloads that need more disk and bandwidth.
+      description: `Reseller Hosting Business is built for busier reseller workloads that need more disk and bandwidth.
 
 You receive 20Gb storage, 150Gb traffic, unlimited domains, email, MySQL databases, Installatron, DirectAdmin and SSH access.
 
@@ -454,9 +454,9 @@ TripleZero iT gives you a professional DirectAdmin reseller stack with room to s
     },
   },
 
-  "reseller-hosting-power": {
+  "reseller-hosting-plus": {
     nl: {
-      name: "POWER",
+      name: "Reseller hosting plus",
       shortDescription: `– Opslag: 20Gb
 – Dataverkeer: 150Gb
 – aantal domeinen: Onbeperkt
@@ -465,14 +465,14 @@ TripleZero iT gives you a professional DirectAdmin reseller stack with room to s
 – WordPress Toolkit: Ja
 – Controlpanel: Plesk
 – Toegang SSH: Ja`,
-      description: `Reseller Hosting POWER is ons populaire Plesk-resellerplan met WordPress Toolkit.
+      description: `Reseller Hosting Plus is ons populaire Plesk-resellerplan met WordPress Toolkit.
 
 Je krijgt 20Gb opslag, 150Gb dataverkeer, onbeperkt domeinen, e-mail, MySQL-databases, WordPress Toolkit, Plesk en SSH-toegang.
 
 TripleZero iT combineert ruime resellercapaciteit met een Plesk-controlpanel voor agencies die WordPress-gerichte tools prefereren.`,
     },
     en: {
-      name: "POWER",
+      name: "Reseller Hosting Plus",
       shortDescription: `– Storage: 20Gb
 – Traffic: 150Gb
 – Domains: Unlimited
@@ -481,7 +481,7 @@ TripleZero iT combineert ruime resellercapaciteit met een Plesk-controlpanel voo
 – WordPress Toolkit: Yes
 – Control panel: Plesk
 – SSH access: Yes`,
-      description: `Reseller Hosting POWER is our popular Plesk reseller plan with WordPress Toolkit included.
+      description: `Reseller Hosting Plus is our popular Plesk reseller plan with WordPress Toolkit included.
 
 You receive 20Gb storage, 150Gb traffic, unlimited domains, email, MySQL databases, WordPress Toolkit, Plesk and SSH access.
 

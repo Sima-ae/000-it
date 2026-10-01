@@ -1,0 +1,1 @@
+代理店やフリーランサー向けの再販業者のホスティング。 DirectAdmin と Installatron を備えたサーバーを選択するか、Plesk と WordPress Toolkit を備えた Plus を選択します。

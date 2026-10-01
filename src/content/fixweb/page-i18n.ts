@@ -950,7 +950,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
     nl: {
       title: "Reseller Hosting",
       subtitle:
-        "Reseller hosting voor agencies en freelancers: DirectAdmin met Installatron, of POWER met Plesk en WordPress Toolkit.",
+        "Reseller hosting voor agencies en freelancers. Kies voor een server met DirectAdmin en Installatron, of kies voor Plus met Plesk en WordPress Toolkit.",
       blocks: [
         h("Reseller Hosting van TripleZero iT"),
         p(
@@ -958,17 +958,17 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ),
         h("Plannen"),
         l([
-          "START — 10Gb opslag, 80Gb dataverkeer, DirectAdmin + Installatron",
-          "MEDIUM — 15Gb opslag, 120Gb dataverkeer, DirectAdmin + Installatron",
-          "PRO — 20Gb opslag, 150Gb dataverkeer, DirectAdmin + Installatron",
-          "POWER — 20Gb opslag, 150Gb dataverkeer, Plesk + WordPress Toolkit",
+          "Start — 10Gb opslag, 80Gb dataverkeer, DirectAdmin + Installatron",
+          "Basic — 15Gb opslag, 120Gb dataverkeer, DirectAdmin + Installatron",
+          "Business — 20Gb opslag, 150Gb dataverkeer, DirectAdmin + Installatron",
+          "Plus — 20Gb opslag, 150Gb dataverkeer, Plesk + WordPress Toolkit",
         ]),
         h("Inbegrepen bij elk plan"),
         l([
           "Onbeperkt aantal domeinen",
           "E-mail en MySQL-databases",
           "SSH-toegang",
-          "Controlpanel: DirectAdmin (START–PRO) of Plesk (POWER)",
+          "Controlpanel: DirectAdmin (Start–Business) of Plesk (Plus)",
         ]),
         h("Voor wie is reseller hosting geschikt?"),
         p(
@@ -980,7 +980,7 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
     en: {
       title: "Reseller Hosting",
       subtitle:
-        "Reseller hosting for agencies and freelancers: DirectAdmin with Installatron, or POWER with Plesk and WordPress Toolkit.",
+        "Reseller hosting for agencies and freelancers. Choose a server with DirectAdmin and Installatron, or choose Plus with Plesk and WordPress Toolkit.",
       blocks: [
         h("Reseller Hosting from TripleZero iT"),
         p(
@@ -988,17 +988,17 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
         ),
         h("Plans"),
         l([
-          "START — 10Gb storage, 80Gb traffic, DirectAdmin + Installatron",
-          "MEDIUM — 15Gb storage, 120Gb traffic, DirectAdmin + Installatron",
-          "PRO — 20Gb storage, 150Gb traffic, DirectAdmin + Installatron",
-          "POWER — 20Gb storage, 150Gb traffic, Plesk + WordPress Toolkit",
+          "Start — 10Gb storage, 80Gb traffic, DirectAdmin + Installatron",
+          "Basic — 15Gb storage, 120Gb traffic, DirectAdmin + Installatron",
+          "Business — 20Gb storage, 150Gb traffic, DirectAdmin + Installatron",
+          "Plus — 20Gb storage, 150Gb traffic, Plesk + WordPress Toolkit",
         ]),
         h("Included with every plan"),
         l([
           "Unlimited domains",
           "Email and MySQL databases",
           "SSH access",
-          "Control panel: DirectAdmin (START–PRO) or Plesk (POWER)",
+          "Control panel: DirectAdmin (Start–Business) or Plesk (Plus)",
         ]),
         h("Who is reseller hosting for?"),
         p(
