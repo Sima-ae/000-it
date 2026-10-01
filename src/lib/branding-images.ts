@@ -58,11 +58,14 @@ const EXTRA_HOSTING_PHOTOS: Record<string, string> = {
   "/branding/images/about-collaboration.jpg": "/branding/extrahosting/eh-about-seated.jpg",
   "/branding/images/service-hosting-datacenter.jpg":
     "/branding/extrahosting/eh-hosting-kneel.jpg",
+  "/branding/images/hosting-webhosting.png":
+    "/branding/extrahosting/eh-hosting-category.png?v=1",
 };
 
 export function photoForBrand(src: string, brandId?: string) {
   if (brandId !== "extrahosting") return src;
-  return EXTRA_HOSTING_PHOTOS[src] ?? src;
+  const bare = src.split("?")[0] ?? src;
+  return EXTRA_HOSTING_PHOTOS[bare] ?? src;
 }
 
 /** About page — three moments in the same studio. */
