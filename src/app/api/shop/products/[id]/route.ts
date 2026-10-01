@@ -182,25 +182,12 @@ export async function PATCH(
   }
 
   try {
-    const { clearServiceContentCaches } = await import("@/lib/fixweb-content");
-    clearServiceContentCaches();
+    const { refreshPublicShopSurfaces } = await import(
+      "@/lib/shop/refresh-public-catalog"
+    );
+    await refreshPublicShopSurfaces();
   } catch {
     // ignore
-  }
-  try {
-    // Keep in-process shop catalog aligned with hosting-admin saves.
-    const { loadShopCatalogFromDb } = await import("@/lib/shop/catalog-db");
-    await loadShopCatalogFromDb({ includeUnpublished: true });
-  } catch {
-    // ignore
-  }
-  try {
-    const { revalidatePath } = await import("next/cache");
-    revalidatePath("/", "layout");
-    revalidatePath("/shop");
-    revalidatePath("/diensten");
-  } catch {
-    // ignore — not available in all runtimes
   }
   return json(item);
 }
@@ -220,5 +207,13 @@ export async function DELETE(
   if (!existing) return json({ error: "Not found" }, 404);
 
   await prisma.shopCatalogProduct.delete({ where: { id } });
+  try {
+    const { refreshPublicShopSurfaces } = await import(
+      "@/lib/shop/refresh-public-catalog"
+    );
+    await refreshPublicShopSurfaces();
+  } catch {
+    // ignore
+  }
   return json({ ok: true });
 }

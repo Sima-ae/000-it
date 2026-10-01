@@ -18,6 +18,7 @@ import {
   type SupportPackageKey,
   localizeShopProduct,
 } from "@/lib/shop/catalog";
+import { useLiveShopProduct } from "@/components/shop/ShopCatalogProvider";
 import { localizedHref } from "@/i18n/pathnames";
 import { cn } from "@/lib/utils";
 
@@ -58,16 +59,17 @@ export function ShopProductCard({
   const router = useRouter();
   const addItem = useCartStore((s) => s.addItem);
   const addSupportPackage = useCartStore((s) => s.addSupportPackage);
-  const localized = localizeShopProduct(product, locale);
+  const liveProduct = useLiveShopProduct(product) ?? product;
+  const localized = localizeShopProduct(liveProduct, locale);
   const [hovered, setHovered] = useState(false);
 
-  const months = periodMonths(product);
+  const months = periodMonths(liveProduct);
   const showAsYearly = pricePeriod === "yearly" && months > 1;
   const multiplier = showAsYearly ? months : 1;
 
-  const hasDiscount = shopHasDiscount(product);
-  const listCents = product.priceInclCents * multiplier;
-  const saleCents = shopUnitPriceInclCents(product) * multiplier;
+  const hasDiscount = shopHasDiscount(liveProduct);
+  const listCents = liveProduct.priceInclCents * multiplier;
+  const saleCents = shopUnitPriceInclCents(liveProduct) * multiplier;
   const listPrice = formatShopEuro(centsToEuros(listCents), locale);
   const salePrice = formatShopEuro(centsToEuros(saleCents), locale);
 
@@ -83,15 +85,17 @@ export function ShopProductCard({
 
   function handleAdd() {
     if (cartMode === "support") {
-      const key = supportKeyFromSlug(product.slug);
+      const key = supportKeyFromSlug(liveProduct.slug);
       if (key) {
-        const period = product.slug.endsWith("-yearly") ? "yearly" : "monthly";
+        const period = liveProduct.slug.endsWith("-yearly")
+          ? "yearly"
+          : "monthly";
         addSupportPackage(key, period, 1);
         router.push(localizedHref(locale, "/shop/cart"));
         return;
       }
     }
-    addItem(product.id, 1);
+    addItem(liveProduct.id, 1);
     router.push(localizedHref(locale, "/shop/cart"));
   }
 
@@ -109,12 +113,12 @@ export function ShopProductCard({
         )}
       >
         <SoftLink
-          href={localizedHref(locale, `/shop/${product.slug}`)}
+          href={localizedHref(locale, `/shop/${liveProduct.slug}`)}
           className="block"
         >
           <div className="relative h-40 w-full bg-muted/40">
             <ShopProductImage
-              src={product.image}
+              src={liveProduct.image}
               alt={localized.localizedName}
               sizes="(max-width: 768px) 100vw, 33vw"
             />
@@ -122,13 +126,13 @@ export function ShopProductCard({
         </SoftLink>
         <div className="flex flex-1 flex-col p-5">
           <p className="text-xs uppercase tracking-wide text-muted-foreground">
-            {product.type === "plan"
+            {liveProduct.type === "plan"
               ? t("typePlan")
-              : product.type === "product"
+              : liveProduct.type === "product"
                 ? t("typeProduct")
                 : t("typeService")}
           </p>
-          <SoftLink href={localizedHref(locale, `/shop/${product.slug}`)}>
+          <SoftLink href={localizedHref(locale, `/shop/${liveProduct.slug}`)}>
             <h2 className="font-display mt-1 text-lg font-semibold tracking-tight">
               {localized.localizedName}
             </h2>

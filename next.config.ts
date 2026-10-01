@@ -9,7 +9,8 @@ const nextConfig: NextConfig = {
   // Keep soft-navigated pages in the client router cache longer (Next 15)
   experimental: {
     staleTimes: {
-      dynamic: 60,
+      // Hosting-admin edits must appear immediately on soft navigation.
+      dynamic: 0,
       static: 300,
     },
   },

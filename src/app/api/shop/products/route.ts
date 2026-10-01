@@ -189,22 +189,10 @@ export async function POST(request: Request) {
   });
 
   try {
-    const { clearServiceContentCaches } = await import("@/lib/fixweb-content");
-    clearServiceContentCaches();
-  } catch {
-    // ignore
-  }
-  try {
-    const { loadShopCatalogFromDb } = await import("@/lib/shop/catalog-db");
-    await loadShopCatalogFromDb({ includeUnpublished: true });
-  } catch {
-    // ignore
-  }
-  try {
-    const { revalidatePath } = await import("next/cache");
-    revalidatePath("/", "layout");
-    revalidatePath("/shop");
-    revalidatePath("/diensten");
+    const { refreshPublicShopSurfaces } = await import(
+      "@/lib/shop/refresh-public-catalog"
+    );
+    await refreshPublicShopSurfaces();
   } catch {
     // ignore
   }

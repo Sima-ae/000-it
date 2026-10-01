@@ -45,6 +45,13 @@ function hrefToString(href: SoftLinkProps["href"]): string {
   return `${pathname}${search}${hash}`;
 }
 
+/** Soft-nav prefetch of shop/diensten RSC payloads often served stale catalog. */
+function isLiveCatalogHref(href: string) {
+  return /\/(shop|diensten|services|dienstleistungen|servicios|servicos|servizi|ypiresies|uslugi|sluzby|szolgaltatasok|servicii|usluge|sherbime|paslaugos|ydelser|tjanster|tjenester|palvelut|poslugy|hizmetler|sherutim|khadamat|servisebi|tsarayutyunner|xidmetler|fuwu|sabisu)(\/|$)/i.test(
+    href,
+  );
+}
+
 export const SoftLink = forwardRef<HTMLAnchorElement, SoftLinkProps>(
   function SoftLink(
     {
@@ -70,6 +77,7 @@ export const SoftLink = forwardRef<HTMLAnchorElement, SoftLinkProps>(
     function prefetchTarget() {
       if (prefetch === false) return;
       if (!targetHref.startsWith("/")) return;
+      if (isLiveCatalogHref(targetHref)) return;
       // Avoid blocking prerender: compare path only for prefetch skip.
       if (normalizePath(pathname) === normalizePath(targetHref) && !targetHref.includes("?")) {
         return;
@@ -136,6 +144,14 @@ export const SoftLink = forwardRef<HTMLAnchorElement, SoftLinkProps>(
       } else {
         router.push(hrefString);
       }
+      if (isLiveCatalogHref(targetHref)) {
+        // Force a fresh RSC fetch so server props catch up with DB.
+        try {
+          router.refresh();
+        } catch {
+          /* ignore */
+        }
+      }
     }
 
     return (
@@ -145,7 +161,9 @@ export const SoftLink = forwardRef<HTMLAnchorElement, SoftLinkProps>(
         href={href}
         target={target}
         replace={replace}
-        prefetch={prefetch ?? true}
+        prefetch={
+          prefetch ?? (isLiveCatalogHref(targetHref) ? false : true)
+        }
         className={className}
         onClick={handleClick}
         onMouseEnter={handleMouseEnter}

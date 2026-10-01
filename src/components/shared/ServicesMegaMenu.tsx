@@ -9,8 +9,8 @@ import { useNavigationProgress } from "@/hooks/useNavigationProgress";
 import { serviceCatalog, serviceGroupHref, serviceHref, sortedServiceGroups, sortOptimizationMenuItems } from "@/content/fixweb/catalog";
 import {
   catalogGroupTitle,
-  catalogServiceTitle,
 } from "@/content/fixweb/catalog-title";
+import { useShopCatalog } from "@/components/shop/ShopCatalogProvider";
 import { localizedHref } from "@/i18n/pathnames";
 import { cn } from "@/lib/utils";
 
@@ -107,12 +107,13 @@ function sortFeaturedItems(
   items: NonNullable<(typeof serviceCatalog)[number]>[],
   locale: string,
   groupId: string,
+  titleFor: (slug: string, locale: string, fallback: string) => string,
 ) {
   if (groupId === "hosting" || groupId === "ai") return items;
   if (groupId === "optimization") return sortOptimizationMenuItems(items, locale);
   return [...items].sort((a, b) =>
-    catalogServiceTitle(a.slug, locale, a.title).localeCompare(
-      catalogServiceTitle(b.slug, locale, b.title),
+    titleFor(a.slug, locale, a.title).localeCompare(
+      titleFor(b.slug, locale, b.title),
       locale,
       { sensitivity: "base" },
     ),
@@ -137,6 +138,7 @@ export function ServicesMegaMenu({
   const router = useRouter();
   const startProgress = useNavigationProgress((s) => s.start);
   const t = useTranslations("appointment");
+  const { titleFor } = useShopCatalog();
 
   function clearCloseTimer() {
     if (closeTimer.current) {
@@ -165,21 +167,6 @@ export function ServicesMegaMenu({
     navigatingRef.current = false;
     setOpen(false);
   }, [pathname]);
-
-  // Prefetch hosting + featured services when the menu opens
-  useEffect(() => {
-    if (!open) return;
-    const slugs = Object.values(featuredByGroup).flat();
-    for (const slug of slugs) {
-      const item = serviceCatalog.find((s) => s.slug === slug);
-      if (!item) continue;
-      try {
-        router.prefetch(serviceHref(locale, item));
-      } catch {
-        /* ignore */
-      }
-    }
-  }, [open, locale, router]);
 
   function navigateFromMenu(href: string, event: MouseEvent<HTMLAnchorElement>) {
     if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) {
@@ -232,6 +219,7 @@ export function ServicesMegaMenu({
                     .filter((item): item is NonNullable<typeof item> => Boolean(item)),
                   locale,
                   group.id,
+                  titleFor,
                 );
                 const groupHref = serviceGroupHref(locale, group.id);
                 const groupActive =
@@ -269,7 +257,7 @@ export function ServicesMegaMenu({
                             onClick={(event) => navigateFromMenu(href, event)}
                             aria-current={itemActive ? "page" : undefined}
                           >
-                            {catalogServiceTitle(item.slug, locale, item.title)}
+                            {titleFor(item.slug, locale, item.title)}
                           </SoftLink>
                         );
                       })}

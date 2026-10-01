@@ -5,7 +5,6 @@ import { ContentBlocks } from "@/components/content/ContentBlocks";
 import { ServiceCard } from "@/components/content/ServiceCard";
 import { Reveal } from "@/components/marketing/Reveal";
 import { ServiceInquiryDialog } from "@/components/marketing/ServiceInquiryDialog";
-import { AddToCartButton } from "@/components/shop/AddToCartButton";
 import { ShopProductImage } from "@/components/shop/ShopProductImage";
 import { TabletFrame } from "@/components/content/TabletFrame";
 import { WordPressCarePlansSection } from "@/components/marketing/WordPressCarePlansSection";
@@ -21,7 +20,7 @@ import {
   catalogGroupTitle,
   catalogServiceTitle,
 } from "@/content/fixweb/catalog-title";
-import { formatEuro, getServiceCardMeta, getServiceContent } from "@/lib/fixweb-content";
+import { getServiceCardMeta, getServiceContent } from "@/lib/fixweb-content";
 import { brandingFallbackForServiceSlug } from "@/lib/branding-images";
 import { getRequestBrand } from "@/lib/brand/server";
 import {
@@ -36,6 +35,7 @@ import {
 import { loadShopCatalogFromDb } from "@/lib/shop/catalog-db";
 import { cn } from "@/lib/utils";
 import { ShopHostingSection } from "@/components/shop/ShopHostingSection";
+import { LiveServiceProductHero } from "@/components/shop/LiveServiceProductHero";
 import { notFound } from "next/navigation";
 
 const aiInquiryBySlug: Record<
@@ -171,82 +171,70 @@ export async function CatalogServiceDetail({
                     {catalogGroupTitle(groupLabel.id, locale, groupLabel.title)}
                   </SoftLink>
                 ) : null}
-                <h1
-                  className={cn(
-                    "font-display mt-3 text-4xl font-semibold tracking-tight md:text-5xl",
-                    isHostingPage &&
-                      (brand.id === "extrahosting"
-                        ? "text-[#1e9bff]"
-                        : "text-accent"),
-                  )}
-                >
-                  {content.title}
-                </h1>
-                {content.subtitle &&
-                !(isHostingPage && content.kind === "product") ? (
-                  <p className="mt-4 max-w-2xl text-muted-foreground md:text-lg">
-                    {content.subtitle}
-                  </p>
-                ) : null}
-                {typeof content.price === "number" ? (
-                  <div className="mt-6">
-                    {"listPrice" in content &&
-                    typeof content.listPrice === "number" ? (
-                      <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                        <p className="font-display text-xl font-medium text-muted-foreground line-through decoration-2">
-                          {formatEuro(content.listPrice)}
-                        </p>
-                        <p className="font-display text-3xl font-bold text-primary">
-                          {formatEuro(content.price)}
-                          {"priceSuffix" in content && content.priceSuffix ? (
-                            <span className="ms-2 text-base font-medium text-muted-foreground">
-                              {content.priceSuffix}
-                            </span>
-                          ) : null}
-                        </p>
-                      </div>
-                    ) : (
-                      <p className="font-display text-3xl font-bold text-foreground">
-                        {formatEuro(content.price)}
-                        {"priceSuffix" in content && content.priceSuffix ? (
-                          <span className="ms-2 text-base font-medium text-muted-foreground">
-                            {content.priceSuffix}
-                          </span>
-                        ) : null}
-                      </p>
-                    )}
-                    {"checkoutMonths" in content &&
-                    typeof content.checkoutMonths === "number" &&
-                    content.checkoutMonths > 1 ? (
-                      <p className="mt-1 text-sm text-muted-foreground">
-                        {tShop("billedYearly", { months: content.checkoutMonths })}
+                {shopProduct ? (
+                  <LiveServiceProductHero
+                    slug={slug}
+                    fallbackProduct={shopProduct}
+                    fallbackTitle={content.title}
+                    fallbackSubtitle={
+                      isHostingPage && content.kind === "product"
+                        ? null
+                        : content.subtitle
+                    }
+                    fallbackPrice={
+                      typeof content.price === "number" ? content.price : null
+                    }
+                    fallbackListPrice={
+                      "listPrice" in content &&
+                      typeof content.listPrice === "number"
+                        ? content.listPrice
+                        : null
+                    }
+                    fallbackFeatures={
+                      "features" in content && Array.isArray(content.features)
+                        ? content.features
+                        : []
+                    }
+                    priceSuffix={
+                      "priceSuffix" in content ? content.priceSuffix : null
+                    }
+                    checkoutMonths={
+                      "checkoutMonths" in content &&
+                      typeof content.checkoutMonths === "number"
+                        ? content.checkoutMonths
+                        : null
+                    }
+                    orderLabel={tShop("order")}
+                    goToCartLabel={tShop("goToCart")}
+                    canOrder={canOrder}
+                    titleClassName={
+                      isHostingPage
+                        ? brand.id === "extrahosting"
+                          ? "text-[#1e9bff]"
+                          : "text-accent"
+                        : undefined
+                    }
+                  />
+                ) : (
+                  <>
+                    <h1
+                      className={cn(
+                        "font-display mt-3 text-4xl font-semibold tracking-tight md:text-5xl",
+                        isHostingPage &&
+                          (brand.id === "extrahosting"
+                            ? "text-[#1e9bff]"
+                            : "text-accent"),
+                      )}
+                    >
+                      {content.title}
+                    </h1>
+                    {content.subtitle ? (
+                      <p className="mt-4 max-w-2xl text-muted-foreground md:text-lg">
+                        {content.subtitle}
                       </p>
                     ) : null}
-                  </div>
-                ) : null}
-                {canOrder && shopProduct ? (
-                  <div className="mt-5 flex flex-wrap gap-3">
-                    <AddToCartButton
-                      productId={shopProduct.id}
-                      label={tShop("order")}
-                    />
-                    <Button asChild variant="outline" className="rounded-2xl">
-                      <SoftLink href={localizedHref(locale, "/shop/cart")}>
-                        {tShop("goToCart")}
-                      </SoftLink>
-                    </Button>
-                  </div>
-                ) : null}
-                {"features" in content && Array.isArray(content.features) && content.features.length ? (
-                  <ul className="mt-5 grid gap-1.5 text-sm text-muted-foreground sm:grid-cols-2">
-                    {content.features.map((feature) => (
-                      <li key={feature} className="flex gap-2">
-                        <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                ) : null}
+                  </>
+                )}
               </div>
               {heroImage ? (
                 isHostingPage ? (

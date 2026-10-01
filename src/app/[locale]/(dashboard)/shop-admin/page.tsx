@@ -7,6 +7,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useSession } from "next-auth/react";
 import { toast } from "sonner";
+import { broadcastShopCatalogChanged } from "@/components/shop/ShopCatalogProvider";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -160,6 +161,7 @@ export default function ShopAdminPage() {
       return;
     }
     toast.success("Deleted");
+    broadcastShopCatalogChanged();
     void qc.invalidateQueries({ queryKey: ["shop-admin"] });
   }
 

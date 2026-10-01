@@ -6,7 +6,8 @@ import { CopyrightBar } from "@/components/shared/CopyrightBar";
 import { BrandLogo } from "@/components/shared/BrandLogo";
 import { FacebookPageEmbed } from "@/components/shared/FacebookPageEmbed";
 import { serviceCatalog, serviceGroupHref, serviceHref } from "@/content/fixweb/catalog";
-import { catalogGroupTitle, catalogServiceTitle } from "@/content/fixweb/catalog-title";
+import { catalogGroupTitle } from "@/content/fixweb/catalog-title";
+import { useShopCatalog } from "@/components/shop/ShopCatalogProvider";
 import { localizedHref } from "@/i18n/pathnames";
 import { useBrand } from "@/lib/brand/BrandProvider";
 
@@ -33,13 +34,16 @@ function buildInfoLinks(locale: string): FooterLink[] {
   ];
 }
 
-function domainsFooterLink(locale: string): FooterLink {
+function domainsFooterLink(
+  locale: string,
+  titleFor: (slug: string, locale: string, fallback: string) => string,
+): FooterLink {
   const item = serviceCatalog.find((s) => s.slug === "domains");
   if (item) {
     return {
       href: serviceHref(locale, item),
       key: null,
-      label: catalogServiceTitle(item.slug, locale, item.title),
+      label: titleFor(item.slug, locale, item.title),
     };
   }
   return {
@@ -53,6 +57,7 @@ function domainsFooterLink(locale: string): FooterLink {
 function buildHandyLinks(
   locale: string,
   catalogMode: "full" | "domains_hosting",
+  titleFor: (slug: string, locale: string, fallback: string) => string,
 ): FooterLink[] {
   if (catalogMode === "domains_hosting") {
     return [
@@ -62,7 +67,7 @@ function buildHandyLinks(
         key: null,
         label: catalogGroupTitle("hosting", locale, "Hosting"),
       },
-      domainsFooterLink(locale),
+      domainsFooterLink(locale, titleFor),
       { href: localizedHref(locale, "/shop"), key: "pricing" },
       { href: localizedHref(locale, "/kennisbank"), key: "kennisbank" },
       { href: localizedHref(locale, "/nieuws"), key: "blog" },
@@ -78,7 +83,7 @@ function buildHandyLinks(
       key: null,
       label: catalogGroupTitle("hosting", locale, "Hosting"),
     },
-    domainsFooterLink(locale),
+    domainsFooterLink(locale, titleFor),
     // Portfolio hidden until the page is filled — restore by uncommenting:
     // { href: localizedHref(locale, "/portfolio"), key: "portfolio" },
     { href: localizedHref(locale, "/shop"), key: "pricing" },
@@ -103,6 +108,7 @@ export function Footer() {
   const nav = useTranslations("nav");
   const locale = useLocale();
   const brand = useBrand();
+  const { titleFor } = useShopCatalog();
   const year = new Date().getFullYear();
 
   const labelFor = (item: FooterLink) =>
@@ -110,7 +116,7 @@ export function Footer() {
 
   const info = sortFooterLinks(buildInfoLinks(locale), labelFor, locale);
   const handy = sortFooterLinks(
-    buildHandyLinks(locale, brand.catalogMode),
+    buildHandyLinks(locale, brand.catalogMode, titleFor),
     labelFor,
     locale,
   );

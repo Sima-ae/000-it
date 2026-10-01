@@ -15,6 +15,7 @@ import {
   type ShopBillingPeriod,
   type ShopProduct,
 } from "@/lib/shop/catalog";
+import { useLiveShopProducts } from "@/components/shop/ShopCatalogProvider";
 import { localizedHref } from "@/i18n/pathnames";
 import { cn } from "@/lib/utils";
 
@@ -54,8 +55,9 @@ export function ShopHostingSection({
   const addItem = useCartStore((s) => s.addItem);
   const [billing, setBilling] = useState<ShopBillingPeriod>("monthly");
   const [hovered, setHovered] = useState<string | null>(null);
+  const liveProducts = useLiveShopProducts(products);
 
-  if (products.length === 0) return null;
+  if (liveProducts.length === 0) return null;
 
   function orderProduct(productId: string) {
     addItem(productId, 1);
@@ -116,13 +118,13 @@ export function ShopHostingSection({
       <div
         className={cn(
           "grid items-stretch gap-3",
-          products.length >= 4
+          liveProducts.length >= 4
             ? "sm:grid-cols-2 lg:grid-cols-4 lg:gap-3"
             : "lg:grid-cols-3 lg:gap-4",
         )}
         onMouseLeave={() => setHovered(null)}
       >
-        {products.map((product, index) => {
+        {liveProducts.map((product, index) => {
           const localized = localizeShopProduct(product, locale);
           const featured =
             product.featured === true ||
@@ -153,7 +155,7 @@ export function ShopHostingSection({
               from={
                 index === 0
                   ? "left"
-                  : index === products.length - 1
+                  : index === liveProducts.length - 1
                     ? "right"
                     : "up"
               }
@@ -168,7 +170,7 @@ export function ShopHostingSection({
                   glow={false}
                   className={cn(
                     "relative flex h-full flex-col overflow-hidden rounded-2xl transition-shadow duration-300",
-                    products.length >= 4 ? "p-4" : "p-5",
+                    liveProducts.length >= 4 ? "p-4" : "p-5",
                     featured && "mesh-panel lg:-translate-y-1",
                     featuredIdle &&
                       "pricing-featured-pulse ring-1 ring-primary/25",

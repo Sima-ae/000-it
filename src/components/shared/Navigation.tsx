@@ -19,7 +19,6 @@ import { AccountMenu } from "@/components/shared/AccountMenu";
 import { serviceCatalog, serviceGroupHref, serviceHref, sortedServiceGroups, sortOptimizationMenuItems } from "@/content/fixweb/catalog";
 import {
   catalogGroupTitle,
-  catalogServiceTitle,
   catalogUiLabel,
 } from "@/content/fixweb/catalog-title";
 import {
@@ -30,6 +29,7 @@ import { BrandLogo } from "@/components/shared/BrandLogo";
 import { GlobalSearchButton } from "@/components/shared/GlobalSearch";
 import { cn } from "@/lib/utils";
 import { useBrand } from "@/lib/brand/BrandProvider";
+import { useShopCatalog } from "@/components/shop/ShopCatalogProvider";
 
 const primaryLinksFull = [
   { href: "/", key: "home" },
@@ -70,6 +70,7 @@ export function Navigation() {
   const locale = useLocale();
   const pathname = usePathname();
   const brand = useBrand();
+  const { titleFor } = useShopCatalog();
   const isExtraHosting = brand.id === "extrahosting";
   const primaryLinks =
     brand.catalogMode === "domains_hosting" ? primaryLinksHosting : primaryLinksFull;
@@ -230,7 +231,7 @@ export function Navigation() {
                       domainsActive && "bg-primary text-primary-foreground",
                     )}
                   >
-                    {catalogServiceTitle(domainsItem.slug, locale, domainsItem.title)}
+                    {titleFor(domainsItem.slug, locale, domainsItem.title)}
                   </SoftLink>
                 );
               }
@@ -370,8 +371,8 @@ export function Navigation() {
                                 : group.id === "optimization"
                                   ? sortOptimizationMenuItems(groupItems, locale)
                                   : [...groupItems].sort((a, b) =>
-                                      catalogServiceTitle(a.slug, locale, a.title).localeCompare(
-                                        catalogServiceTitle(b.slug, locale, b.title),
+                                      titleFor(a.slug, locale, a.title).localeCompare(
+                                        titleFor(b.slug, locale, b.title),
                                         locale,
                                         { sensitivity: "base" },
                                       ),
@@ -422,7 +423,7 @@ export function Navigation() {
                                       )}
                                       aria-current={itemActive ? "page" : undefined}
                                     >
-                                      {catalogServiceTitle(item.slug, locale, item.title)}
+                                      {titleFor(item.slug, locale, item.title)}
                                     </SoftLink>
                                     );
                                   })}
@@ -515,7 +516,7 @@ export function Navigation() {
                         domainsActive && "bg-primary text-primary-foreground",
                       )}
                     >
-                      {catalogServiceTitle(domainsItem.slug, locale, domainsItem.title)}
+                      {titleFor(domainsItem.slug, locale, domainsItem.title)}
                     </SoftLink>
                   );
                 }
@@ -586,7 +587,7 @@ export function Navigation() {
                                   )}
                                   aria-current={categoryActive ? "page" : undefined}
                                 >
-                                  {catalogServiceTitle(
+                                  {titleFor(
                                     categoryItem.slug,
                                     locale,
                                     categoryItem.title,
@@ -613,7 +614,7 @@ export function Navigation() {
                                       )}
                                       aria-current={itemActive ? "page" : undefined}
                                     >
-                                      {catalogServiceTitle(item.slug, locale, item.title)}
+                                      {titleFor(item.slug, locale, item.title)}
                                     </SoftLink>
                                   );
                                 })}
