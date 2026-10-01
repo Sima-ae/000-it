@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { ContactForm } from "@/components/marketing/ContactForm";
 import { GlassCard } from "@/components/marketing/GlassCard";
 import { Reveal } from "@/components/marketing/Reveal";
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Button } from "@/components/ui/button";
-import { BRANDING_IMAGES } from "@/lib/branding-images";
 import { buildStaticPageMetadata } from "@/lib/seo";
 import { localizedHref } from "@/i18n/pathnames";
 import { Mail, MapPin, Route } from "lucide-react";
@@ -46,27 +44,20 @@ export default async function ContactPage({
   return (
     <div className="mx-auto w-full max-w-5xl px-4 pt-10 pb-4 md:px-6 md:pt-14 md:pb-6">
       <Reveal>
-        <div className="grid items-end gap-5 lg:grid-cols-[1.1fr_0.9fr]">
-          <div className="flex flex-wrap items-end justify-between gap-3">
-            <h1 className="font-display text-3xl font-semibold tracking-tight text-primary md:text-5xl">
-              {t("title")}
-            </h1>
-            <Button asChild size="sm" className="rounded-xl">
+        <div className="grid items-end gap-4 lg:grid-cols-[0.85fr_1.15fr] lg:gap-5">
+          <h1 className="font-display text-3xl font-semibold tracking-tight text-primary md:text-5xl">
+            {t("title")}
+          </h1>
+          <div className="flex lg:justify-end">
+            <Button
+              asChild
+              size="lg"
+              className="h-12 rounded-2xl px-8 text-base md:h-14 md:px-10 md:text-lg"
+            >
               <SoftLink href={localizedHref(locale, "/afspraak")}>
                 {tNav("book")}
               </SoftLink>
             </Button>
-          </div>
-          <div className="relative mx-auto hidden h-36 w-full max-w-xs overflow-hidden lg:block">
-            <Image
-              src={BRANDING_IMAGES.consultantLaptop}
-              alt=""
-              fill
-              unoptimized
-              priority
-              sizes="320px"
-              className="object-contain object-bottom"
-            />
           </div>
         </div>
       </Reveal>
