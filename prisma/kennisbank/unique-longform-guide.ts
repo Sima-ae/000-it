@@ -314,32 +314,88 @@ function matchPack(hay: string, titleNl: string, titleEn: string): Pack {
     };
   }
 
-  if (/ftp|filezilla|sftp/.test(hay)) {
+  if (/ftp|filezilla|sftp|chmod|bestandsrechten/.test(hay)) {
+    if (/filezilla|verbinden/.test(hay)) {
+      return {
+        excerptNl:
+          "FileZilla verbinden: host, gebruiker, wachtwoord, poort en FTPS/SFTP uit DirectAdmin of je welkomstmail.",
+        excerptEn:
+          "Connect FileZilla: host, user, password, port and FTPS/SFTP from DirectAdmin or your welcome email.",
+        introNl: `FileZilla is een FTP/SFTP-client. Voor “${titleNl}” haal je de gegevens uit DirectAdmin → FTP Management (of je welkomstmail) en maak je in FileZilla een site met encryptie.`,
+        introEn: `FileZilla is an FTP/SFTP client. For “${titleEn}” get details from DirectAdmin → FTP Management (or your welcome email) and create an encrypted FileZilla site.`,
+        prepNl: [
+          "FileZilla Client geïnstalleerd",
+          "DirectAdmin-login of welkomstmail met FTP-host",
+          "FTP-gebruikersnaam + wachtwoord",
+        ],
+        prepEn: [
+          "FileZilla Client installed",
+          "DirectAdmin login or welcome email with FTP host",
+          "FTP username + password",
+        ],
+        stepsNl: [
+          "DirectAdmin → <strong>FTP Management</strong>: noteer of maak een FTP-account; noteer de home-directory (vaak <code>.../public_html</code>).",
+          "FileZilla → <strong>Bestand</strong> → <strong>Sitebeheerder</strong> → <strong>Nieuwe site</strong>.",
+          "Protocol: <strong>FTP</strong> met Encryptie <strong>Expliciete FTP over TLS vereisen</strong>, of <strong>SFTP</strong> (poort 22) als dat op je pakket mag.",
+          "Host = serverhostname uit de welkomstmail (niet altijd je domeinnaam). Poort 21 (FTPS) of 22 (SFTP).",
+          "Logontype Normaal: FTP-user + wachtwoord → <strong>Verbinden</strong>. Accepteer certificaat/host key alleen als de host klopt.",
+          "Rechts: server. Open <code>public_html</code> (of de FTP-home). Links: je PC.",
+          "Upload <code>ftp-test.txt</code>, open via https://jouwdomein/ftp-test.txt, verwijder daarna het testbestand.",
+        ],
+        stepsEn: [
+          "DirectAdmin → <strong>FTP Management</strong>: note or create an FTP account; note the home directory (often <code>.../public_html</code>).",
+          "FileZilla → <strong>File</strong> → <strong>Site Manager</strong> → <strong>New site</strong>.",
+          "Protocol: <strong>FTP</strong> with Encryption <strong>Require explicit FTP over TLS</strong>, or <strong>SFTP</strong> (port 22) if allowed.",
+          "Host = server hostname from the welcome email (not always your domain). Port 21 (FTPS) or 22 (SFTP).",
+          "Logon type Normal: FTP user + password → <strong>Connect</strong>. Accept certificate/host key only if the host matches.",
+          "Right pane: server. Open <code>public_html</code> (or FTP home). Left pane: your PC.",
+          "Upload <code>ftp-test.txt</code>, open via https://yourdomain/ftp-test.txt, then delete the test file.",
+        ],
+        verifyNl: [
+          "Stabiele verbinding",
+          "public_html / verwachte mappen zichtbaar",
+          "Testbestand via HTTP bereikbaar en weer verwijderd",
+        ],
+        verifyEn: [
+          "Stable connection",
+          "public_html / expected folders visible",
+          "Test file reachable via HTTP and then deleted",
+        ],
+        tipNl:
+          "‘Mappenlijst mislukt’: Passief, TLS forceren, of SFTP. Check of poort 21/22 geblokkeerd is.",
+        tipEn:
+          "‘Failed to retrieve directory listing’: Passive mode, force TLS, or SFTP. Check ports 21/22.",
+        warnNl: "Geen plain FTP op openbare wifi. FTP-wachtwoorden niet in tickets plakken.",
+        warnEn: "No plain FTP on public Wi-Fi. Do not paste FTP passwords into tickets.",
+        relatedNl: "FTP-account aanmaken, SFTP, CHMOD, File Manager",
+        relatedEn: "Create FTP account, SFTP, CHMOD, File Manager",
+      };
+    }
     return {
-      excerptNl: "FTP/SFTP-account in DirectAdmin en veilig verbinden met FileZilla.",
-      excerptEn: "FTP/SFTP account in DirectAdmin and connect safely with FileZilla.",
-      introNl: `“${titleNl}”: maak of gebruik een FTP-account met beperkte home-map. Bij voorkeur FTPS of SFTP.`,
-      introEn: `“${titleEn}”: create or use an FTP account with a limited home directory. Prefer FTPS or SFTP.`,
-      prepNl: ["DirectAdmin-login", "FileZilla of Cyberduck", "Host/poort uit welkomstmail"],
-      prepEn: ["DirectAdmin login", "FileZilla or Cyberduck", "Host/port from welcome email"],
+      excerptNl: "FTP/SFTP in DirectAdmin: account, home-map, verbinden met FileZilla.",
+      excerptEn: "FTP/SFTP in DirectAdmin: account, home folder, connect with FileZilla.",
+      introNl: `“${titleNl}”: FTP-account met beperkte home-map; verbind bij voorkeur met FTPS of SFTP.`,
+      introEn: `“${titleEn}”: FTP account with a limited home folder; prefer FTPS or SFTP.`,
+      prepNl: ["DirectAdmin-login", "FileZilla", "Host uit welkomstmail"],
+      prepEn: ["DirectAdmin login", "FileZilla", "Host from welcome email"],
       stepsNl: [
-        "DirectAdmin → <strong>FTP Management</strong>.",
-        "Maak een account of noteer bestaande user; beperk directory tot de webroot.",
-        "In FileZilla: host, user, wachtwoord, poort; kies FTP over TLS of SFTP.",
-        "Bij ‘mappenlijst mislukt’: passive mode, encryption en firewall controleren.",
-        "Upload een testbestand en open het via HTTP om het pad te bevestigen.",
+        "DirectAdmin → <strong>FTP Management</strong> → Create (of bestaand account).",
+        "Beperk Directory tot de bedoelde webroot/submap.",
+        "FileZilla: host = serverhostname, user/wachtwoord, poort 21 (FTPS) of 22 (SFTP).",
+        "Kies expliciete FTP over TLS of SFTP — geen plain FTP.",
+        "Upload een testbestand en controleer het pad in de browser.",
       ],
       stepsEn: [
-        "DirectAdmin → <strong>FTP Management</strong>.",
-        "Create an account or note the existing user; limit the directory to the web root.",
-        "In FileZilla: host, user, password, port; choose FTP over TLS or SFTP.",
-        "On ‘directory listing failed’: check passive mode, encryption and firewall.",
-        "Upload a test file and open it via HTTP to confirm the path.",
+        "DirectAdmin → <strong>FTP Management</strong> → Create (or existing account).",
+        "Limit Directory to the intended web root/subdirectory.",
+        "FileZilla: host = server hostname, user/password, port 21 (FTPS) or 22 (SFTP).",
+        "Choose explicit FTP over TLS or SFTP — not plain FTP.",
+        "Upload a test file and confirm the path in the browser.",
       ],
       verifyNl: ["Verbinding stabiel", "Testbestand op verwachte URL"],
       verifyEn: ["Stable connection", "Test file on expected URL"],
-      tipNl: "SFTP is vaak stabieler dan plain FTP achter strenge firewalls.",
-      tipEn: "SFTP is often more stable than plain FTP behind strict firewalls.",
+      tipNl: "SFTP is vaak stabieler achter strenge firewalls.",
+      tipEn: "SFTP is often more stable behind strict firewalls.",
       warnNl: "Geen 777-rechten ‘om het te laten werken’.",
       warnEn: "Do not use 777 permissions ‘to make it work’.",
       relatedNl: "File Manager, rechten, SFTP",
@@ -717,12 +773,12 @@ function matchPack(hay: string, titleNl: string, titleEn: string): Pack {
     };
   }
 
-  if (/ssh|vps|firewall|snapshot/.test(hay)) {
+  if ((/\bssh\b/.test(hay) || /\bvps\b/.test(hay)) && !/ftp|filezilla|wordpress|dns|spf|mail|cron|woocommerce/.test(hay)) {
     return {
       excerptNl: "VPS/SSH: rechten checken, snapshot, gerichte wijziging, alleen betrokken dienst herstarten.",
       excerptEn: "VPS/SSH: check rights, snapshot, targeted change, restart only the affected service.",
-      introNl: `“${titleNl}”: op shared hosting ontbreekt root-SSH vaak; op VPS gebruik je SSH of de console. Maak bij firewallwijzigingen eerst een snapshot.`,
-      introEn: `“${titleEn}”: shared hosting often has no root SSH; on a VPS use SSH or the console. Take a snapshot before firewall changes.`,
+      introNl: `“${titleNl}” op een VPS/server: bevestig eerst of je SSH of de provider-console hebt. Bij riskante wijzigingen (firewall, users) maak je eerst een snapshot.`,
+      introEn: `“${titleEn}” on a VPS/server: first confirm you have SSH or the provider console. For risky changes (firewall, users) take a snapshot first.`,
       prepNl: ["Bevestiging of SSH op jouw pakket mag", "IP/user/key of console", "Snapshot bij riskante edits"],
       prepEn: ["Confirm SSH is allowed on your plan", "IP/user/key or console", "Snapshot for risky edits"],
       stepsNl: [

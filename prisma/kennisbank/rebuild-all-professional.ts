@@ -16,6 +16,7 @@ import {
 } from "./write-article";
 import { CURATED_ARTICLES } from "./curated-articles";
 import { matchPlaybook } from "./professional-playbooks";
+import { isTemplateFillerHtml } from "./article-schema";
 import type { KennisbankArticleFile } from "./article-schema";
 
 type Catalog = { articles: CatalogArticle[] };
@@ -46,12 +47,16 @@ function main() {
     } else if (hasPlaybook) {
       playbookKept += 1;
     } else {
-      // Prefer real hand-crafted NL topic builders over procedural fallback.
+      // Prefer real hand-crafted NL builders; reject wave/thicken template fluff.
       const hand = buildHandCraftedTopicHtml(article.title, article.topic);
-      if (hand && plainLen(hand) >= 280) {
+      if (
+        hand &&
+        plainLen(hand) >= 280 &&
+        !isTemplateFillerHtml(hand)
+      ) {
         const excerpt = buildExcerpt(article.title, "nl", article.topic);
         const merged = withDutchBuilderBody(file, hand, excerpt);
-        if (!validateArticleFile(merged).length) {
+        if (!validateArticleFile(merged).length && !isTemplateFillerHtml(merged.nl.bodyHtml)) {
           file = merged;
           withHandNl += 1;
         } else {

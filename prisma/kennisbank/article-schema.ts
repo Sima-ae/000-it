@@ -60,7 +60,28 @@ export const FILLER_PHRASES = [
   "Apply the change for “",
   "Bepaal het juiste oppervlak",
   "Pick the correct surface",
+  "In deze handleiding van TripleZero iT gaan we dieper in op",
+  "We schrijven vanuit de praktijk bij TripleZero iT: hosting, VPS, control panels",
+  "Dit onderwerp komt vaak terug bij klanten van TripleZero iT",
+  "Bepaal het doel van “",
+  "Voer de wijziging uit die bij “",
 ] as const;
+
+/** True when body is wave/thicken template fluff, not a real guide. */
+export function isTemplateFillerHtml(html: string): boolean {
+  const h = html || "";
+  for (const phrase of FILLER_PHRASES) {
+    if (h.includes(phrase)) return true;
+  }
+  // Shared wave templates reuse the same “why” bullets
+  if (
+    h.includes("Een vaste werkwijze voorkomt ad-hoc fouten") &&
+    h.includes("Documentatie helpt support sneller mee te kijken")
+  ) {
+    return true;
+  }
+  return false;
+}
 
 export const MIN_BODY_CHARS = 280;
 export const MIN_EXCERPT_CHARS = 40;

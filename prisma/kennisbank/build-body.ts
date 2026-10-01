@@ -25,16 +25,7 @@ import {
 import { microsoftTopicBuilders } from "./microsoft-bodies";
 import { pleskTopicBuilders } from "./plesk-bodies";
 import { veiligOnlineTopicBuilders } from "./veilig-online-bodies";
-import { webdesignTopicBuilders } from "./webdesign-bodies";
-import { aiIntegratieTopicBuilders } from "./ai-integratie-bodies";
-import { analyticsCroTopicBuilders } from "./analytics-cro-bodies";
-import { ecommerceTopicBuilders } from "./ecommerce-bodies";
-import { cdnPerformanceTopicBuilders } from "./cdn-performance-bodies";
-import { thickenTopicBuilders } from "./thicken-bodies";
-import { infraTopicBuilders } from "./infra-bodies";
-import { troubleshootingTopicBuilders } from "./troubleshooting-bodies";
-import { privacyComplianceTopicBuilders } from "./privacy-compliance-bodies";
-import { vergelijkingenTopicBuilders } from "./vergelijkingen-bodies";
+// Wave/thicken filler body maps are intentionally not imported for the articles pipeline.
 
 const BRAND = "TripleZero iT";
 
@@ -1382,16 +1373,7 @@ export function buildHandCraftedTopicHtml(
     microsoftTopicBuilders,
     pleskTopicBuilders,
     veiligOnlineTopicBuilders,
-    webdesignTopicBuilders,
-    aiIntegratieTopicBuilders,
-    analyticsCroTopicBuilders,
-    ecommerceTopicBuilders,
-    cdnPerformanceTopicBuilders,
-    thickenTopicBuilders,
-    infraTopicBuilders,
-    troubleshootingTopicBuilders,
-    privacyComplianceTopicBuilders,
-    vergelijkingenTopicBuilders,
+    // Intentionally omit thicken / wave filler maps (thickenTopicBuilders etc.)
   ];
   for (const map of builderMaps) {
     if (Object.hasOwn(map, topic)) return map[topic](ctx);
