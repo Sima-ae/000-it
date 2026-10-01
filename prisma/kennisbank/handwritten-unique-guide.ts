@@ -269,7 +269,6 @@ function translateObj(t: string): string {
     bandbreedte: "bandwidth",
     dataverkeer: "traffic",
     onbeperkte: "unlimited",
-    dataverkeer: "traffic",
     opslag: "storage",
     onderwerp: "topic",
     bescherm: "protect",
