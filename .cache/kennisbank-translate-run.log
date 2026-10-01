@@ -1,0 +1,64 @@
+=== 2026-10-01T13:43:51Z categories-only ===
+
+> 000-it@0.1.0 kennisbank:translate
+> npx --yes tsx --env-file=.env scripts/translate-kennisbank.ts --categories-only
+
+[kennisbank:translate] force=false categoriesOnly=true articlesOnly=false offset=0 limit=9999
+[categories] 152
+[cat] account-en-inloggen skipped (already translated)
+[cat] aeo-antwoordengines skipped (already translated)
+[cat] aeo-geo-seo skipped (already translated)
+[cat] image-performance src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] ai-agents-types skipped (already translated)
+[cat] ai-agents skipped (already translated)
+[cat] ai-consultancy src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] ai-content-strategie src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] ai-integratie-automatisering src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] ai-scan skipped (already translated)
+[cat] analytics-conversie-toegankelijkheid src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] analytics-gtm-matomo src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] api-webhooks src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] apps-op-vps src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] avg-website src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] veilig-online-basis skipped (already translated)
+[cat] bloggen-beheer skipped (already translated)
+[cat] ai-agents-beheer skipped (already translated)
+[cat] plesk-bestanden-wordpress skipped (already translated)
+[cat] cyberpanel-bestanden-databases skipped (already translated)
+[cat] betaalproviders src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] betalen-en-btw skipped (already translated)
+[cat] betalingen-mollie-ideal src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] beveiliging skipped (already translated)
+[cat] microsoft-beveiliging skipped (already translated)
+[cat] bloggen skipped (already translated)
+[cat] builders-cms src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] business-pakketten skipped (already translated)
+[cat] caching-strategie src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] cdn-basics src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] cdn-performance-cloudflare src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] cloudflare-dns-proxy src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] containers-docker src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] aeo-geo-seo-resultaten skipped (already translated)
+[cat] conversie-optimalisatie src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] cookies-consent src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] core-web-vitals src=en wrote=38 skipped=0 failed=0 +fr,de,es,pt,it,el,pl,cs,sk,hu,ro,bg,hr,bs,sq,mk,lt,da,sv,no,fi,uk,ru,tr,he,ar,ka,hy,az,zh,ja,bn,hi,mr,ps,pa,te,ur
+[cat] crm-klantenpanel skipped (already translated)
+[cat] cyberpanel skipped (already translated)
+[cat] ai-scan-dashboard skipped (already translated)
+[cat] database-fouten src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] dedicated-en-remote-mgmt src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] directadmin skipped (already translated)
+[cat] dns-ssl-fouten src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] dns-records skipped (already translated)
+[cat] domein-verhuizen skipped (already translated)
+[cat] domeinnamen skipped (already translated)
+[cat] domein-registratie skipped (already translated)
+[cat] e-commerce-webshops src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] e-mail skipped (already translated)
+[cat] cyberpanel-email-dns skipped (already translated)
+[cat] plesk-email-dns skipped (already translated)
+[cat] directadmin-e-mail src=en wrote=2 skipped=0 failed=0 +de,it
+[cat] e-mail-instellen skipped (already translated)
+[cat] eu-tooling src=en wrote=5 skipped=0 failed=0 +fr,de,es,pt,it
+[cat] facturen-en-betalen skipped (already translated)
+[cat] firewall-en-hacks skipped (already translated)

@@ -125,8 +125,10 @@ export function ShopHostingSection({
         {products.map((product, index) => {
           const localized = localizeShopProduct(product, locale);
           const featured =
+            product.featured === true ||
             product.slug.endsWith("-business") ||
-            product.slug.endsWith("-professional");
+            product.slug.endsWith("-professional") ||
+            product.slug.endsWith("-power");
           const glowOnHover = hovered === product.id;
           const featuredIdle = featured && hovered === null;
           const months = packageMonths(product);

@@ -946,6 +946,69 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
     },
   },
 
+  "reseller-hosting": {
+    nl: {
+      title: "Reseller Hosting",
+      subtitle:
+        "Reseller hosting voor agencies en freelancers: DirectAdmin met Installatron, of POWER met Plesk en WordPress Toolkit.",
+      blocks: [
+        h("Reseller Hosting van TripleZero iT"),
+        p(
+          "Met reseller hosting host je meerdere klantwebsites onder jouw eigen merk. Je krijgt duidelijke limieten voor opslag en dataverkeer, onbeperkt domeinen, e-mail, MySQL, SSH en een controlpanel om accounts eenvoudig te beheren.",
+        ),
+        h("Plannen"),
+        l([
+          "START — 10Gb opslag, 80Gb dataverkeer, DirectAdmin + Installatron",
+          "MEDIUM — 15Gb opslag, 120Gb dataverkeer, DirectAdmin + Installatron",
+          "PRO — 20Gb opslag, 150Gb dataverkeer, DirectAdmin + Installatron",
+          "POWER — 20Gb opslag, 150Gb dataverkeer, Plesk + WordPress Toolkit",
+        ]),
+        h("Inbegrepen bij elk plan"),
+        l([
+          "Onbeperkt aantal domeinen",
+          "E-mail en MySQL-databases",
+          "SSH-toegang",
+          "Controlpanel: DirectAdmin (START–PRO) of Plesk (POWER)",
+        ]),
+        h("Voor wie is reseller hosting geschikt?"),
+        p(
+          "Ideaal voor webdesigners, agencies en freelancers die hosting willen doorverkopen of meerdere klantprojecten centraal willen beheren.",
+        ),
+        h("Bestellen of advies"),
+      ],
+    },
+    en: {
+      title: "Reseller Hosting",
+      subtitle:
+        "Reseller hosting for agencies and freelancers: DirectAdmin with Installatron, or POWER with Plesk and WordPress Toolkit.",
+      blocks: [
+        h("Reseller Hosting from TripleZero iT"),
+        p(
+          "With reseller hosting you host multiple client websites under your own brand. You get clear storage and traffic limits, unlimited domains, email, MySQL, SSH and a control panel to manage accounts easily.",
+        ),
+        h("Plans"),
+        l([
+          "START — 10Gb storage, 80Gb traffic, DirectAdmin + Installatron",
+          "MEDIUM — 15Gb storage, 120Gb traffic, DirectAdmin + Installatron",
+          "PRO — 20Gb storage, 150Gb traffic, DirectAdmin + Installatron",
+          "POWER — 20Gb storage, 150Gb traffic, Plesk + WordPress Toolkit",
+        ]),
+        h("Included with every plan"),
+        l([
+          "Unlimited domains",
+          "Email and MySQL databases",
+          "SSH access",
+          "Control panel: DirectAdmin (START–PRO) or Plesk (POWER)",
+        ]),
+        h("Who is reseller hosting for?"),
+        p(
+          "Ideal for web designers, agencies and freelancers who want to resell hosting or manage multiple client projects centrally.",
+        ),
+        h("Order or get advice"),
+      ],
+    },
+  },
+
   "wordpress-hosting": {
     nl: {
       title: "WordPress Hosting",

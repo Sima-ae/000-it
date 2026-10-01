@@ -2542,6 +2542,146 @@ function matchPack(hay: string, titleNl: string, titleEn: string): Pack {
     );
   }
 
+  // --- AI scan ---
+  if (/ai-scan|eerste.?ai.?scan|technische.?score|content.?score|scan.?delen|van.?scan.?naar/.test(hay) || /ai-scan/.test(hay)) {
+    return P(
+      "AI-scan: scan starten of resultaten lezen, snelle fixes doorvoeren, opnieuw meten.",
+      "AI scan: start a scan or read results, apply quick fixes, measure again.",
+      `“${titleNl}” doe je in het TripleZero iT AI-scan dashboard: invullen → scannen → scores lezen → verbeteringen → hertest.`,
+      `“${titleEn}” is done in the TripleZero iT AI-scan dashboard: fill in → scan → read scores → improve → retest.`,
+      ["Klantenpanel- of AI-scan-login", "URL van de site", "Doel (techniek, content of AEO)"],
+      ["Client panel or AI-scan login", "Site URL", "Goal (technical, content or AEO)"],
+      [
+        "Open de AI-scan in het TripleZero iT-portal en kies of start de juiste scan.",
+        "Vul URL, markt/taal en eventuele concurrenten of focusgebieden correct in.",
+        "Wacht tot de scan klaar is; open Technische score, Content-score en AEO/GEO-signalen.",
+        "Pak eerst rode/of lage items met snelle fixes (meta, headings, snelheid, schema, interne links).",
+        "Voer fixes door op staging/productie; purge cache.",
+        "Start een hertest of vergelijk met de vorige run; deel het rapport met marketing indien nodig.",
+      ],
+      [
+        "Open the AI scan in the TripleZero iT portal and choose or start the right scan.",
+        "Enter URL, market/language and any competitors or focus areas correctly.",
+        "Wait until the scan finishes; open Technical score, Content score and AEO/GEO signals.",
+        "Tackle red/low items with quick fixes first (meta, headings, speed, schema, internal links).",
+        "Apply fixes on staging/production; purge cache.",
+        "Start a retest or compare with the previous run; share the report with marketing if needed.",
+      ],
+      ["Scores verbeterd of verklaard", "Rapport deelbaar/exporteerbaar"],
+      ["Scores improved or explained", "Report shareable/exportable"],
+      "Eén thema per sprint (bijv. alleen technical) voorkomt versnippering.",
+      "One theme per sprint (e.g. technical only) avoids scatter.",
+      "Scanresultaten negeren zonder tickets/taken levert geen groei op.",
+      "Ignoring scan results without tickets/tasks yields no growth.",
+      "AEO/GEO-traject, Core Web Vitals, schema",
+      "AEO/GEO program, Core Web Vitals, schema",
+    );
+  }
+
+  // --- AI agents / workflows ---
+  if (/ai-agent|agenttypen|agent.?levert|n8n|zapier|workflow.?agent|meerdere.?agent/.test(hay) || /ai-agents/.test(hay)) {
+    return P(
+      "AI-agent/workflow: trigger en tools checken, dry-run, logs, daarna productie aanzetten.",
+      "AI agent/workflow: check trigger and tools, dry-run, logs, then enable production.",
+      `“${titleNl}”: debug agents via runs/logs — geen DNS. Beperk tools/scopes tot wat nodig is.`,
+      `“${titleEn}”: debug agents via runs/logs — not DNS. Limit tools/scopes to what is needed.`,
+      ["Agent-dashboard of n8n/Zapier-login", "Laatste run-ID/fout", "API-keys/env beschikbaar"],
+      ["Agent dashboard or n8n/Zapier login", "Last run ID/error", "API keys/env available"],
+      [
+        "Open de agent/workflow en bekijk de laatste failed of lege run.",
+        "Controleer trigger (schedule/webhook), inputpayload en of credentials geldig zijn.",
+        "Draai een dry-run/test met bekende input; bekijk elke stap-output.",
+        "Bij geen output: timeout, rate-limit, lege prompt-context of geblokkeerde tool — fix die stap.",
+        "Voor meerdere agenttypen: scheid verantwoordelijkheden (research vs publish) en koppel via duidelijke handoffs.",
+        "Zet alerts op failures; documenteer owner en rollback.",
+      ],
+      [
+        "Open the agent/workflow and inspect the last failed or empty run.",
+        "Check trigger (schedule/webhook), input payload and whether credentials are valid.",
+        "Run a dry-run/test with known input; inspect each step output.",
+        "If no output: timeout, rate limit, empty prompt context or blocked tool — fix that step.",
+        "For multiple agent types: separate responsibilities (research vs publish) and link via clear handoffs.",
+        "Enable failure alerts; document owner and rollback.",
+      ],
+      ["Test-run levert verwachte output", "Productie-run stabiel of gepauzeerd met reden"],
+      ["Test run yields expected output", "Production run stable or paused with a reason"],
+      "Log geen secrets of volledige klant-PII in agent-transcripts.",
+      "Do not log secrets or full customer PII in agent transcripts.",
+      "Onbeperkte autonomie zonder review op klantkanalen is riskant.",
+      "Unlimited autonomy without review on customer channels is risky.",
+      "Webhooks, omgevingsvariabelen, AI-beleid",
+      "Webhooks, environment variables, AI policy",
+    );
+  }
+
+  // --- AEO / answer engines ---
+  if (/aeo|answer.?engine|geo.?seo|antwoordengine/.test(hay) || /aeo-geo-seo/.test(hay)) {
+    return P(
+      "AEO/GEO: meetbaar maken in answer engines, content/structuur verbeteren, opnieuw meten.",
+      "AEO/GEO: make measurable in answer engines, improve content/structure, measure again.",
+      `“${titleNl}”: kies queries, noteer of je merk genoemd wordt, verbeter bronpagina’s (duidelijke antwoorden + schema), hertest.`,
+      `“${titleEn}”: pick queries, note whether your brand is cited, improve source pages (clear answers + schema), retest.`,
+      ["Lijst van prioritaire queries", "CMS-toegang", "Baseline-screenshot of AI-scan"],
+      ["List of priority queries", "CMS access", "Baseline screenshot or AI scan"],
+      [
+        "Stel 10–20 queries vast waarop je gevonden wilt worden (merk + categorie).",
+        "Meet baseline in relevante answer engines / AI-overviews en in je AI-scan AEO-signalen.",
+        "Verbeter landings-/blogpagina’s: directe antwoordalinea, H2-vragen, FAQ-schema, interne links, verse feiten.",
+        "Publiceer; zorg dat pagina’s indexeerbaar en snel zijn.",
+        "Herhaal de meting na 2–4 weken; leg wins en gaps vast voor het traject.",
+      ],
+      [
+        "Define 10–20 queries where you want to be found (brand + category).",
+        "Measure baseline in relevant answer engines / AI overviews and in your AI-scan AEO signals.",
+        "Improve landing/blog pages: direct answer paragraph, H2 questions, FAQ schema, internal links, fresh facts.",
+        "Publish; ensure pages are indexable and fast.",
+        "Repeat measurement after 2–4 weeks; record wins and gaps for the program.",
+      ],
+      ["Baseline en hertest gedocumenteerd", "Minstens één pagina structureel verbeterd"],
+      ["Baseline and retest documented", "At least one page structurally improved"],
+      "Meet op vaste queries — niet elke week een nieuwe set.",
+      "Measure on fixed queries — not a new set every week.",
+      "Alleen ‘meer content’ zonder antwoordstructuur helpt AEO zelden.",
+      "Only ‘more content’ without answer structure rarely helps AEO.",
+      "AI-scan, schema, Core Web Vitals",
+      "AI scan, schema, Core Web Vitals",
+    );
+  }
+
+  // --- Microsoft (broader than M365-only keywords) ---
+  if (/\bmicrosoft\b|m365|office.?365|entra|exchange.?online/.test(hay) || /microsoft/.test(hay)) {
+    return P(
+      "Microsoft 365 / Microsoft-diensten: admin center, licentie of storing isoleren, daarna client testen.",
+      "Microsoft 365 / Microsoft services: admin center, isolate license or outage, then test the client.",
+      `“${titleNl}” hoort in Microsoft admin/portal of het TripleZero iT-bestelproces — niet in DirectAdmin webmail (tenzij hybride mail).`,
+      `“${titleEn}” belongs in the Microsoft admin/portal or TripleZero iT order flow — not DirectAdmin webmail (unless hybrid mail).`,
+      ["Admin- of gebruikerstoegang", "Tenant/domein", "Licentie- of foutmelding"],
+      ["Admin or user access", "Tenant/domain", "License or error message"],
+      [
+        "Bepaal of het om bestellen/licenties, inloggen, mail, Teams/OneDrive of een storing gaat.",
+        "Bestellen/beheren: TripleZero iT klantenpanel of Microsoft 365-admin → facturering/licenties.",
+        "Storing: check service health in admin.microsoft.com; isoleer user vs tenant-breed.",
+        "Login/wachtwoord: self-service reset of admin reset; controleer Conditional Access/MFA.",
+        "Test de geraakte app (Outlook, Teams, OneDrive) met één account; documenteer resultaat.",
+      ],
+      [
+        "Decide whether it is ordering/licenses, sign-in, mail, Teams/OneDrive or an outage.",
+        "Ordering/managing: TripleZero iT client panel or Microsoft 365 admin → billing/licenses.",
+        "Outage: check service health in admin.microsoft.com; isolate user vs tenant-wide.",
+        "Login/password: self-service reset or admin reset; check Conditional Access/MFA.",
+        "Test the affected app (Outlook, Teams, OneDrive) with one account; document the result.",
+      ],
+      ["Issue opgelost of bevestigd als Microsoft-side", "Testaccount werkt"],
+      ["Issue resolved or confirmed Microsoft-side", "Test account works"],
+      "Noteer incident-ID uit Service Health in tickets.",
+      "Note the Service Health incident ID in tickets.",
+      "Tenant-brede wijzigingen zonder change-window raken iedereen.",
+      "Tenant-wide changes without a change window affect everyone.",
+      "DNS/MX bij mailmigratie, 2FA, licenties",
+      "DNS/MX for mail migration, 2FA, licenses",
+    );
+  }
+
   // --- Category-aware fallbacks (real steps, not meta “pick a system”) ---
   if (/infrastructuur-servers|dedicated-en-remote-mgmt|rescue-recovery|vpn-netwerk|vps/.test(hay)) {
     return P(

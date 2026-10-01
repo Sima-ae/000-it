@@ -11,6 +11,7 @@ import {
   localizeShopProduct,
   resolvePlanNamesFromCatalog,
   resolvePlanPricesFromCatalog,
+  RESELLER_HOSTING_SLUG_ORDER,
   SHARED_HOSTING_SLUG_ORDER,
   shopProductsInSlugOrder,
   VPS_HOSTING_SLUG_ORDER,
@@ -59,6 +60,10 @@ export default async function ShopPage({
   const cloudHostingProducts = shopProductsInSlugOrder(
     catalogProducts,
     CLOUD_HOSTING_SLUG_ORDER,
+  );
+  const resellerHostingProducts = shopProductsInSlugOrder(
+    catalogProducts,
+    RESELLER_HOSTING_SLUG_ORDER,
   );
   const wordpressHostingProducts = shopProductsInSlugOrder(
     catalogProducts,
@@ -148,6 +153,11 @@ export default async function ShopPage({
       <ShopHostingSection
         title={t("cloudHosting")}
         products={cloudHostingProducts}
+      />
+
+      <ShopHostingSection
+        title={t("resellerHosting")}
+        products={resellerHostingProducts}
       />
 
       <ShopHostingSection

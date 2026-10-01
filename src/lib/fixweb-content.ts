@@ -18,6 +18,7 @@ import {
   CLOUD_HOSTING_SLUG_ORDER,
   getShopProductBySlug,
   localizeShopProduct,
+  RESELLER_HOSTING_SLUG_ORDER,
   SHARED_HOSTING_SLUG_ORDER,
   shopUnitPriceInclCents,
   VPS_HOSTING_SLUG_ORDER,
@@ -156,13 +157,14 @@ function productFeatures(shortDescription: string) {
 const HOSTING_OVERVIEW_SLUGS: Record<string, readonly string[]> = {
   "shared-hosting": SHARED_HOSTING_SLUG_ORDER,
   "cloud-hosting": CLOUD_HOSTING_SLUG_ORDER,
+  "reseller-hosting": RESELLER_HOSTING_SLUG_ORDER,
   "wordpress-hosting": WORDPRESS_HOSTING_SLUG_ORDER,
   "vps-hosting": VPS_HOSTING_SLUG_ORDER,
 };
 
 function planTierLabel(name: string) {
   return name
-    .replace(/^(shared|cloud|wordpress|vps)\s+hosting\s+/i, "")
+    .replace(/^(shared|cloud|reseller|wordpress|vps)\s+hosting\s+/i, "")
     .trim();
 }
 
@@ -386,6 +388,7 @@ const pageImageFallback: Record<string, string> = {
   "web-hosting": "/uploads/fixweb/web-hosting.png",
   "shared-hosting": "/uploads/fixweb/shared-hosting-category.png",
   "cloud-hosting": "/uploads/fixweb/cloud-hosting.png",
+  "reseller-hosting": "/uploads/fixweb/cloud-hosting.png",
   "wordpress-hosting": "/uploads/fixweb/wordpress-hosting.png",
   "vps-hosting": "/uploads/fixweb/vps-hosting.png",
   domains: "/uploads/fixweb/domains.png",

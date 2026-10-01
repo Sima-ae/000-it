@@ -100,6 +100,50 @@
       ]
     },
     {
+      "slug": "reseller-hosting-start",
+      "name": "START",
+      "price": 14.85,
+      "currency": "EUR",
+      "shortDescription": "– Opslag: 10Gb\n– Dataverkeer: 80Gb\n– aantal domeinen: Onbeperkt\n– E-mail: Ja\n– MySQL databases: Ja\n– Installatron: Ja\n– Controlpanel: DirectAdmin\n– Toegang SSH: Ja",
+      "description": "Reseller Hosting START gives you everything you need to host and resell websites for clients.\n\nYou receive 10Gb storage, 80Gb traffic, unlimited domains, email, MySQL databases, Installatron, DirectAdmin and SSH access.\n\nTripleZero iT provides a reliable reseller platform so you can grow your hosting business with clear limits and full control-panel tooling.",
+      "images": [
+        "https://000-it.com/wp-content/uploads/2024/07/FAVICON-TripleZero iT-SITE.png"
+      ]
+    },
+    {
+      "slug": "reseller-hosting-medium",
+      "name": "MEDIUM",
+      "price": 20.25,
+      "currency": "EUR",
+      "shortDescription": "– Opslag: 15Gb\n– Dataverkeer: 120Gb\n– aantal domeinen: Onbeperkt\n– E-mail: Ja\n– MySQL databases: Ja\n– Installatron: Ja\n– Controlpanel: DirectAdmin\n– Toegang SSH: Ja",
+      "description": "Reseller Hosting MEDIUM adds more storage and traffic for growing reseller portfolios.\n\nYou receive 15Gb storage, 120Gb traffic, unlimited domains, email, MySQL databases, Installatron, DirectAdmin and SSH access.\n\nTripleZero iT helps agencies and freelancers host more client sites without jumping to a heavier platform too early.",
+      "images": [
+        "https://000-it.com/wp-content/uploads/2024/07/FAVICON-TripleZero iT-SITE.png"
+      ]
+    },
+    {
+      "slug": "reseller-hosting-pro",
+      "name": "PRO",
+      "price": 26.5,
+      "currency": "EUR",
+      "shortDescription": "– Opslag: 20Gb\n– Dataverkeer: 150Gb\n– aantal domeinen: Onbeperkt\n– E-mail: Ja\n– MySQL databases: Ja\n– Installatron: Ja\n– Controlpanel: DirectAdmin\n– Toegang SSH: Ja",
+      "description": "Reseller Hosting PRO is built for busier reseller workloads that need more disk and bandwidth.\n\nYou receive 20Gb storage, 150Gb traffic, unlimited domains, email, MySQL databases, Installatron, DirectAdmin and SSH access.\n\nTripleZero iT gives you a professional DirectAdmin reseller stack with room to scale client hosting.",
+      "images": [
+        "https://000-it.com/wp-content/uploads/2024/07/FAVICON-TripleZero iT-SITE.png"
+      ]
+    },
+    {
+      "slug": "reseller-hosting-power",
+      "name": "POWER",
+      "price": 37.5,
+      "currency": "EUR",
+      "shortDescription": "– Opslag: 20Gb\n– Dataverkeer: 150Gb\n– aantal domeinen: Onbeperkt\n– E-mail: Ja\n– MySQL databases: Ja\n– WordPress Toolkit: Ja\n– Controlpanel: Plesk\n– Toegang SSH: Ja",
+      "description": "Reseller Hosting POWER is our popular Plesk reseller plan with WordPress Toolkit included.\n\nYou receive 20Gb storage, 150Gb traffic, unlimited domains, email, MySQL databases, WordPress Toolkit, Plesk and SSH access.\n\nTripleZero iT combines generous reseller capacity with a Plesk control panel for agencies that prefer WordPress-focused tooling.",
+      "images": [
+        "https://000-it.com/wp-content/uploads/2024/07/FAVICON-TripleZero iT-SITE.png"
+      ]
+    },
+    {
       "slug": "double-support",
       "name": "Double Support",
       "price": 54.99,

@@ -26,5 +26,9 @@
   "wordpress-malware-removal": "/uploads/fixweb/wordpress-malware-removal.png",
   "wordpress-plugin-theme-installation": "/uploads/fixweb/wordpress-plugin-theme-installation.png",
   "wordpress-security": "/uploads/fixweb/wordpress-security.png",
-  "wordpress-speed-optimization": "/uploads/fixweb/wordpress-speed-optimization.png"
+  "wordpress-speed-optimization": "/uploads/fixweb/wordpress-speed-optimization.png",
+  "reseller-hosting-start": "/uploads/fixweb/shared-hosting-basic.png",
+  "reseller-hosting-medium": "/uploads/fixweb/shared-hosting-business.png",
+  "reseller-hosting-pro": "/uploads/fixweb/shared-hosting-plus.png",
+  "reseller-hosting-power": "/uploads/fixweb/vps-hosting-business.png"
 }

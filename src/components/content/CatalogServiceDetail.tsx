@@ -27,6 +27,7 @@ import { getRequestBrand } from "@/lib/brand/server";
 import {
   CLOUD_HOSTING_SLUG_ORDER,
   getShopProductBySlug,
+  RESELLER_HOSTING_SLUG_ORDER,
   SHARED_HOSTING_SLUG_ORDER,
   shopProductsInSlugOrder,
   VPS_HOSTING_SLUG_ORDER,
@@ -54,6 +55,10 @@ const HOSTING_PLAN_PAGES = {
   "cloud-hosting": {
     order: CLOUD_HOSTING_SLUG_ORDER,
     titleKey: "cloudHosting",
+  },
+  "reseller-hosting": {
+    order: RESELLER_HOSTING_SLUG_ORDER,
+    titleKey: "resellerHosting",
   },
   "wordpress-hosting": {
     order: WORDPRESS_HOSTING_SLUG_ORDER,

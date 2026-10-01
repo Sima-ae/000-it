@@ -69,6 +69,13 @@ export const CLOUD_HOSTING_SLUG_ORDER = [
   "cloud-hosting-enterprise",
 ] as const;
 
+export const RESELLER_HOSTING_SLUG_ORDER = [
+  "reseller-hosting-start",
+  "reseller-hosting-medium",
+  "reseller-hosting-pro",
+  "reseller-hosting-power",
+] as const;
+
 export const WORDPRESS_HOSTING_SLUG_ORDER = [
   "wordpress-hosting-basic",
   "wordpress-hosting-business",
@@ -86,6 +93,7 @@ export const VPS_HOSTING_SLUG_ORDER = [
 export const HOSTING_YEARLY_SLUGS = new Set<string>([
   ...SHARED_HOSTING_SLUG_ORDER,
   ...CLOUD_HOSTING_SLUG_ORDER,
+  ...RESELLER_HOSTING_SLUG_ORDER,
   ...WORDPRESS_HOSTING_SLUG_ORDER,
   ...VPS_HOSTING_SLUG_ORDER,
 ]);
@@ -495,6 +503,7 @@ function buildServiceProducts(): ShopProduct[] {
       lineOfBusiness: yearlyHosting ? ("HOSTING" as const) : ("SERVICE" as const),
       currency: "EUR" as const,
       image,
+      featured: p.slug.endsWith("-power") || undefined,
       published: true,
       sortOrder: 100 + index,
     };
