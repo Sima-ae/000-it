@@ -1,6 +1,7 @@
 import importedProducts from "@/content/fixweb/imported-products.json";
 import localImages from "@/content/fixweb/local-images.json";
 import { getProductI18n } from "@/content/fixweb/product-i18n";
+import { catalogServiceTitle } from "@/content/fixweb/catalog-title";
 import { brandify } from "@/lib/brandify";
 import type { ShopAdminBillingInterval } from "@/lib/shop/admin";
 import { eurosToCents } from "@/lib/shop/vat";
@@ -681,6 +682,69 @@ export function localizeShopProduct(product: ShopProduct, locale: string) {
     ),
   };
 }
+
+const HOSTING_CATEGORY_BY_PREFIX: Array<{
+  prefix: string;
+  categorySlug: string;
+  fallback: string;
+}> = [
+  { prefix: "shared-hosting-", categorySlug: "shared-hosting", fallback: "Shared Hosting" },
+  { prefix: "cloud-hosting-", categorySlug: "cloud-hosting", fallback: "Cloud Hosting" },
+  { prefix: "reseller-hosting-", categorySlug: "reseller-hosting", fallback: "Reseller Hosting" },
+  { prefix: "wordpress-hosting-", categorySlug: "wordpress-hosting", fallback: "WordPress Hosting" },
+  { prefix: "vps-hosting-", categorySlug: "vps-hosting", fallback: "VPS Hosting" },
+];
+
+const SERVICE_CATEGORY_LABELS: Record<
+  string,
+  { nl: string; en: string }
+> = {
+  plans: { nl: "AI Compleet", en: "AI Complete" },
+  "wordpress-support": { nl: "WordPress-beheer", en: "WordPress support" },
+  "wordpress-care": { nl: "WordPress-zorg", en: "WordPress care" },
+};
+
+/** Parent category for cart/checkout titles (e.g. Cloud Hosting - Plus). */
+export function shopProductCategoryLabel(
+  product: Pick<ShopProduct, "slug" | "category">,
+  locale: string,
+): string | null {
+  for (const entry of HOSTING_CATEGORY_BY_PREFIX) {
+    if (product.slug.startsWith(entry.prefix)) {
+      return catalogServiceTitle(entry.categorySlug, locale, entry.fallback);
+    }
+  }
+  const category = product.category?.trim();
+  if (!category || category === "hosting" || category === "other") return null;
+  const pack = SERVICE_CATEGORY_LABELS[category];
+  if (pack) return locale === "nl" ? pack.nl : pack.en;
+  return null;
+}
+
+/**
+ * Cart/checkout display name: "Cloud Hosting - Plus" when the SKU title
+ * is only the plan tier (or otherwise needs its category).
+ */
+export function shopProductDisplayName(
+  product: ShopProduct,
+  locale: string,
+): string {
+  const name = localizeShopProduct(product, locale).localizedName.trim();
+  const category = shopProductCategoryLabel(product, locale)?.trim();
+  if (!category) return name;
+  const nameLower = name.toLowerCase();
+  const categoryLower = category.toLowerCase();
+  if (
+    nameLower === categoryLower ||
+    nameLower.startsWith(`${categoryLower} `) ||
+    nameLower.startsWith(`${categoryLower}-`) ||
+    nameLower.startsWith(`${categoryLower} -`)
+  ) {
+    return name;
+  }
+  return `${category} - ${name}`;
+}
+
 
 type DbShopRow = {
   id: string;

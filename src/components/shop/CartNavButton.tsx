@@ -10,7 +10,7 @@ import { QuantityStepper } from "@/components/shop/QuantityStepper";
 import { ShopProductImage } from "@/components/shop/ShopProductImage";
 import { useCartStore } from "@/lib/shop/cart-store";
 import { resolveCartItems, cartTotalsInEuros } from "@/lib/shop/cart";
-import { localizeShopProduct, shopUnitPriceInclCents } from "@/lib/shop/catalog";
+import { shopProductDisplayName, shopUnitPriceInclCents } from "@/lib/shop/catalog";
 import { centsToEuros, formatShopEuro } from "@/lib/shop/vat";
 import { cn } from "@/lib/utils";
 import { localizedHref } from "@/i18n/pathnames";
@@ -115,7 +115,7 @@ export function CartNavButton({ className }: { className?: string }) {
               <>
                 <ul className="max-h-80 space-y-2 overflow-y-auto">
                   {totals.lines.map((line) => {
-                    const localized = localizeShopProduct(line.product, locale);
+                    const displayName = shopProductDisplayName(line.product, locale);
                     return (
                       <li
                         key={line.product.id}
@@ -125,13 +125,13 @@ export function CartNavButton({ className }: { className?: string }) {
                           <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-lg bg-muted">
                             <ShopProductImage
                               src={line.product.image}
-                              alt={localized.localizedName}
+                              alt={displayName}
                               sizes="48px"
                             />
                           </div>
                           <div className="min-w-0 flex-1">
                             <p className="truncate text-sm font-medium leading-snug">
-                              {localized.localizedName}
+                              {displayName}
                             </p>
                             <p className="mt-0.5 text-xs text-muted-foreground">
                               {formatShopEuro(

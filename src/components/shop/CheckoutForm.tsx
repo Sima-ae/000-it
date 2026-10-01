@@ -9,7 +9,7 @@ import { SoftLink } from "@/components/shared/SoftLink";
 import { QuantityStepper } from "@/components/shop/QuantityStepper";
 import { useCartStore } from "@/lib/shop/cart-store";
 import { resolveCartItems, cartTotalsInEuros } from "@/lib/shop/cart";
-import { localizeShopProduct } from "@/lib/shop/catalog";
+import { shopProductDisplayName } from "@/lib/shop/catalog";
 import { centsToEuros, formatShopEuro } from "@/lib/shop/vat";
 import { localizedHref } from "@/i18n/pathnames";
 
@@ -140,10 +140,10 @@ export function CheckoutForm() {
         <div className="space-y-3 rounded-2xl border border-border/70 bg-background/60 p-6 lg:hidden">
           <h2 className="font-display text-lg font-semibold">{t("orderSummary")}</h2>
           {totals.lines.map((line) => {
-            const localized = localizeShopProduct(line.product, locale);
+            const displayName = shopProductDisplayName(line.product, locale);
             return (
               <div key={line.product.id} className="border-b border-border/50 py-3 last:border-0">
-                <p className="font-medium">{localized.localizedName}</p>
+                <p className="font-medium">{displayName}</p>
                 <div className="mt-2 flex flex-wrap items-center justify-between gap-3">
                   <QuantityStepper
                     value={line.quantity}
@@ -163,11 +163,11 @@ export function CheckoutForm() {
         <h2 className="font-display text-xl font-semibold">{t("orderSummary")}</h2>
         <ul className="hidden space-y-4 lg:block">
           {totals.lines.map((line) => {
-            const localized = localizeShopProduct(line.product, locale);
+            const displayName = shopProductDisplayName(line.product, locale);
             return (
               <li key={line.product.id} className="space-y-2 border-b border-border/50 pb-4 last:border-0">
                 <div className="flex items-start justify-between gap-3">
-                  <p className="text-sm font-medium leading-snug">{localized.localizedName}</p>
+                  <p className="text-sm font-medium leading-snug">{displayName}</p>
                   <button
                     type="button"
                     onClick={() => removeItem(line.product.id)}

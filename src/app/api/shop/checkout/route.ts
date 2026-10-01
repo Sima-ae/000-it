@@ -5,6 +5,7 @@ import { auth } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { resolveCartItems, cartTotalsInEuros } from "@/lib/shop/cart";
 import { loadShopCatalogFromDb } from "@/lib/shop/catalog-db";
+import { shopProductDisplayName } from "@/lib/shop/catalog";
 import { getStripe, isStripeConfigured } from "@/lib/shop/stripe";
 import { makeShopOrderNumber } from "@/lib/shop/line-of-business";
 import { VAT_RATE } from "@/lib/shop/vat";
@@ -114,7 +115,7 @@ export async function POST(request: Request) {
         items: {
           create: totals.lines.map((line) => ({
             productId: line.product.id,
-            name: line.product.name[locale === "nl" ? "nl" : "en"],
+            name: shopProductDisplayName(line.product, locale),
             quantity: line.quantity,
             unitPriceIncl: line.unitInclCents / 100,
             vatRate: VAT_RATE,
@@ -159,7 +160,7 @@ export async function POST(request: Request) {
             currency: "eur",
             unit_amount: line.unitInclCents,
             product_data: {
-              name: line.product.name[catalogLocale],
+              name: shopProductDisplayName(line.product, catalogLocale),
               description: `${periodNote}${baseDesc}`.slice(0, 400),
               metadata: { productId: line.product.id },
             },

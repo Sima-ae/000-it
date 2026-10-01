@@ -9,7 +9,7 @@ import { QuantityStepper } from "@/components/shop/QuantityStepper";
 import { ShopProductImage } from "@/components/shop/ShopProductImage";
 import { useCartStore } from "@/lib/shop/cart-store";
 import { resolveCartItems, cartTotalsInEuros } from "@/lib/shop/cart";
-import { localizeShopProduct, shopUnitPriceInclCents } from "@/lib/shop/catalog";
+import { shopProductDisplayName, shopUnitPriceInclCents } from "@/lib/shop/catalog";
 import { centsToEuros, formatShopEuro } from "@/lib/shop/vat";
 import { localizedHref } from "@/i18n/pathnames";
 
@@ -38,7 +38,7 @@ export function CartView() {
     <div className="grid gap-8 lg:grid-cols-[1.4fr_0.8fr]">
       <div className="space-y-4">
         {totals.lines.map((line) => {
-          const localized = localizeShopProduct(line.product, locale);
+          const displayName = shopProductDisplayName(line.product, locale);
           const unitPriceCents =
             line.product.checkoutMonths && line.product.checkoutMonths > 1
               ? shopUnitPriceInclCents(line.product)
@@ -52,7 +52,7 @@ export function CartView() {
               <div className="relative h-24 w-full shrink-0 overflow-hidden rounded-xl bg-muted sm:h-20 sm:w-20">
                 <ShopProductImage
                   src={line.product.image}
-                  alt={localized.localizedName}
+                  alt={displayName}
                   sizes="(max-width: 640px) 100vw, 80px"
                 />
               </div>
@@ -61,7 +61,7 @@ export function CartView() {
                   href={localizedHref(locale, `/shop/${line.product.slug}`)}
                   className="font-medium hover:underline"
                 >
-                  {localized.localizedName}
+                  {displayName}
                 </SoftLink>
                 <p className="mt-1 text-sm text-muted-foreground">
                   {unit}
