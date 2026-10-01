@@ -9,10 +9,10 @@
     "seoDescription": "Filters/regels in webmail: voorwaarde → actie (map/markeren), volgorde controleren, testmail."
   },
   "en": {
-    "title": "Webmail filters that mail ‘kwijtraken’",
+    "title": "Webmail filters that 'lose' mail",
     "excerpt": "Webmail filters/rules: condition → action (folder/flag), check order, test message.",
     "bodyHtml": "<p>“Webmail filters that mail ‘kwijtraken’” is created in Roundcube or Webmail Pro under Filters/Rules — not in DNS.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Webmail login</li>\n  <li>Which sender/subject to catch</li>\n  <li>Target folder or action</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Sign in to Roundcube or Webmail Pro.</li>\n  <li>Roundcube: Settings → Filters (or Filters plugin). Webmail Pro: Filters / Mail Filters.</li>\n  <li>Create a rule: condition (From, Subject, To) + action (move, flag, forward).</li>\n  <li>Order rules: specific rules above catch-all-like rules.</li>\n  <li>Save. Send a test message that matches the condition.</li>\n  <li>Confirm the message lands in the correct folder.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Test mail follows the rule</li>\n  <li>No infinite forward loops</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Test with one message before enabling an aggressive delete action.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Server-side filters work even when Outlook is closed; client rules do not.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: Spam filter, folders, autoresponder.</p>",
-    "seoTitle": "Webmail filters that mail ‘kwijtraken’ | TripleZero iT",
+    "seoTitle": "Webmail filters that 'lose' mail | TripleZero iT",
     "seoDescription": "Webmail filters/rules: condition → action (folder/flag), check order, test message."
   }
 }

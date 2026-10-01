@@ -2,7 +2,7 @@
 export const SHOP_IMAGE_FALLBACK = "/branding/WEBLOGO-TripleZero-iT.png";
 
 /** Bump when fixweb product art changes (e.g. transparent PNG pass). */
-export const FIXWEB_ART_VERSION = "3";
+export const FIXWEB_ART_VERSION = "4";
 
 /**
  * Keep public `/uploads/...` URLs. Middleware rewrites them to `/api/uploads/...`

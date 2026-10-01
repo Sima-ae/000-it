@@ -9,10 +9,10 @@
     "seoDescription": "Plesk reseller: white-label merkinstellingen: stappen in Plesk voor plesk, reseller, white."
   },
   "en": {
-    "title": "Plesk reseller: white-label merkinstellingen",
+    "title": "Plesk reseller: white-label brand settings",
     "excerpt": "Plesk reseller: white-label merkinstellingen: steps in Plesk for Plesk, reseller, white.",
     "bodyHtml": "<p>This guide covers <strong>Plesk reseller: white-label merkinstellingen</strong>. You work in Plesk, focusing on <strong>Plesk, reseller, white</strong> — not unrelated side quests in other menus.</p>\n<h2>Preparation</h2>\n<ul>\n  <li>Access to Plesk</li>\n  <li>Focus of this article: <strong>Plesk, reseller, white</strong></li>\n  <li>Note of the current setting/status</li>\n</ul>\n<h2>Steps</h2>\n<ol>\n  <li>Open Plesk and look specifically for settings around <strong>Plesk, reseller, white</strong>.</li>\n  <li>Open the correct subscription/domain in Plesk.</li>\n  <li>Use Mail, DNS, SSL/TLS, Files, Databases or WordPress Toolkit for <strong>Plesk</strong>.</li>\n  <li>Change <strong>reseller</strong> per “Plesk reseller: white-label merkinstellingen”; confirm.</li>\n  <li>Test externally (browser/mail/DNS).</li>\n  <li>Document what you changed around <strong>Plesk, reseller, white</strong> (old → new value) for support.</li>\n</ol>\n<h2>Verify</h2>\n<ul>\n  <li>Result for <strong>Plesk, reseller, white</strong> matches “Plesk reseller: white-label merkinstellingen”</li>\n  <li>No regression on a critical flow beside plesk reseller white label</li>\n  <li>External test or second browser/network confirms the result</li>\n</ul>\n<aside class=\"kb-callout kb-callout-tip\"><p><strong>Tip:</strong> Work in small steps: get <strong>Plesk, reseller, white</strong> right first, then optional extras.</p></aside>\n<aside class=\"kb-callout kb-callout-warn\"><p><strong>Note:</strong> Do not blindly change production without a backup if <strong>Plesk, reseller, white</strong> touches login, DNS, mail or payments.</p></aside>\n<p>Still stuck? Open a ticket with TripleZero iT via the client panel. Include your domain name, what you already tried, and any exact error messages (text or screenshot).</p>\n<p>Related: Plesk, backups, tickets.</p>",
-    "seoTitle": "Plesk reseller: white-label merkinstellingen | TripleZero iT",
+    "seoTitle": "Plesk reseller: white-label brand settings | TripleZero iT",
     "seoDescription": "Plesk reseller: white-label merkinstellingen: steps in Plesk for Plesk, reseller, white."
   }
 }

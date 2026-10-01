@@ -56,13 +56,13 @@ export function TicketsStatsChips({
     { label: labels.unassigned, value: stats.unassigned, className: "text-primary" },
   ];
   return (
-    <div className="flex flex-wrap gap-2">
+    <div className="flex flex-wrap gap-1.5">
       {chips.map((chip) => (
         <div
           key={chip.label}
-          className="rounded-full border border-border bg-card/70 px-3 py-1.5 text-sm"
+          className="rounded-full border border-border bg-card/70 px-2.5 py-1 text-xs"
         >
-          <span className={cn("me-1.5 font-semibold", chip.className)}>{chip.value}</span>
+          <span className={cn("me-1 font-semibold", chip.className)}>{chip.value}</span>
           <span className="text-muted-foreground">{chip.label}</span>
         </div>
       ))}
@@ -131,9 +131,9 @@ export function TicketsFiltersBar({
 
   return (
     <Card>
-      <CardContent className="space-y-2 p-3 md:p-4">
+      <CardContent className="space-y-2 p-2.5 sm:p-3">
         <div className="flex flex-wrap items-center gap-2">
-          <div className="relative min-w-48 flex-1">
+          <div className="relative min-w-40 flex-1">
             <Search className="pointer-events-none absolute start-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
             <Input
               value={filters.q}
@@ -189,10 +189,10 @@ export function TicketsFiltersBar({
           ))}
         </div>
 
-        <div className="grid grid-cols-2 gap-1.5 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-8">
+        <div className="grid grid-cols-2 gap-1.5 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
           {staff ? (
             <select
-              className="h-8 rounded-md border border-input bg-background px-2 text-xs"
+              className="h-8 min-w-0 rounded-md border border-input bg-background px-2 text-xs"
               value={filters.clientId}
               onChange={(e) => patch({ clientId: e.target.value })}
             >
@@ -206,7 +206,7 @@ export function TicketsFiltersBar({
             </select>
           ) : null}
           <select
-            className="h-8 rounded-md border border-input bg-background px-2 text-xs"
+            className="h-8 min-w-0 rounded-md border border-input bg-background px-2 text-xs"
             value={filters.type}
             onChange={(e) => patch({ type: e.target.value })}
           >
@@ -218,7 +218,7 @@ export function TicketsFiltersBar({
             ))}
           </select>
           <select
-            className="h-8 rounded-md border border-input bg-background px-2 text-xs"
+            className="h-8 min-w-0 rounded-md border border-input bg-background px-2 text-xs"
             value={filters.department}
             onChange={(e) => patch({ department: e.target.value })}
           >
@@ -230,7 +230,7 @@ export function TicketsFiltersBar({
             ))}
           </select>
           <select
-            className="h-8 rounded-md border border-input bg-background px-2 text-xs"
+            className="h-8 min-w-0 rounded-md border border-input bg-background px-2 text-xs"
             value={filters.priority}
             onChange={(e) => patch({ priority: e.target.value })}
           >
@@ -242,7 +242,7 @@ export function TicketsFiltersBar({
             ))}
           </select>
           <select
-            className="h-8 rounded-md border border-input bg-background px-2 text-xs"
+            className="h-8 min-w-0 rounded-md border border-input bg-background px-2 text-xs"
             value={filters.status}
             onChange={(e) => patch({ status: e.target.value })}
           >
@@ -255,7 +255,7 @@ export function TicketsFiltersBar({
           </select>
           {staff ? (
             <select
-              className="h-8 rounded-md border border-input bg-background px-2 text-xs"
+              className="h-8 min-w-0 rounded-md border border-input bg-background px-2 text-xs"
               value={filters.assignedToId}
               onChange={(e) => patch({ assignedToId: e.target.value })}
             >
@@ -269,14 +269,14 @@ export function TicketsFiltersBar({
             value={filters.createdFrom}
             onChange={(e) => patch({ createdFrom: e.target.value })}
             aria-label={labels.createdFrom}
-            className="h-8 px-2 text-xs"
+            className="h-8 min-w-0 px-2 text-xs"
           />
           <Input
             type="date"
             value={filters.createdTo}
             onChange={(e) => patch({ createdTo: e.target.value })}
             aria-label={labels.createdTo}
-            className="h-8 px-2 text-xs"
+            className="h-8 min-w-0 px-2 text-xs"
           />
         </div>
       </CardContent>
@@ -331,7 +331,7 @@ export function TicketsTable({
     return (
       <span
         className={cn(
-          "inline-flex w-fit items-center rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide",
+          "inline-flex w-fit items-center rounded-full px-1.5 py-0 text-[9px] font-semibold uppercase tracking-wide",
           channelBadgeClass(source),
         )}
       >
@@ -434,20 +434,25 @@ export function TicketsTable({
   }
 
   return (
-    <Card className="overflow-hidden">
-      <div className="overflow-x-auto">
-        <table className="w-full min-w-220 border-collapse text-start">
+    <Card className="min-w-0 overflow-hidden">
+      <div className="min-w-0 overflow-x-auto">
+        <table className="w-full table-fixed border-collapse text-start">
+          <colgroup>
+            <col className="w-[7.5rem]" />
+            <col />
+            <col className="w-[5.75rem]" />
+            <col className="w-[7.5rem]" />
+            <col className="w-[5.5rem]" />
+            <col className="w-[6.75rem]" />
+          </colgroup>
           <thead>
-            <tr className="border-b border-border bg-muted/40 text-xs font-medium uppercase tracking-wide text-muted-foreground">
-              <th className="whitespace-nowrap px-4 py-2.5 font-medium">{labels.key}</th>
-              <th className="min-w-55 px-4 py-2.5 font-medium">{labels.subject}</th>
-              <th className="whitespace-nowrap px-4 py-2.5 font-medium">{labels.priority}</th>
-              <th className="whitespace-nowrap px-4 py-2.5 font-medium">{labels.status}</th>
-              <th className="whitespace-nowrap px-4 py-2.5 font-medium">{labels.date}</th>
-              <th className="whitespace-nowrap px-4 py-2.5 font-medium">{labels.updated}</th>
-              <th className="whitespace-nowrap px-4 py-2.5 text-end font-medium">
-                {labels.actions}
-              </th>
+            <tr className="border-b border-border bg-muted/40 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
+              <th className="px-2.5 py-2 font-medium">{labels.key}</th>
+              <th className="px-2.5 py-2 font-medium">{labels.subject}</th>
+              <th className="px-2.5 py-2 font-medium">{labels.priority}</th>
+              <th className="px-2.5 py-2 font-medium">{labels.status}</th>
+              <th className="px-2.5 py-2 font-medium">{labels.updated}</th>
+              <th className="px-2.5 py-2 text-end font-medium">{labels.actions}</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-border">
@@ -462,39 +467,43 @@ export function TicketsTable({
               const subjectText = ticket.subject?.trim() || "—";
               return (
                 <tr key={ticket.id} className="align-middle hover:bg-muted/20">
-                  <td className="whitespace-nowrap px-4 py-3">
-                    <div className="flex flex-col gap-1">
+                  <td className="px-2.5 py-2">
+                    <div className="flex min-w-0 flex-col gap-0.5">
                       <SoftLink
                         href={`/${locale}/crm/tickets/${ticket.id}`}
-                        className="text-sm font-medium text-primary hover:underline"
+                        className="truncate text-xs font-medium text-primary hover:underline"
                       >
                         {ticketKey(ticket.id)}
                       </SoftLink>
                       <ChannelBadge source={ticket.source} />
                     </div>
                   </td>
-                  <td className="max-w-md px-4 py-3">
+                  <td className="min-w-0 px-2.5 py-2">
                     <SoftLink
                       href={`/${locale}/crm/tickets/${ticket.id}`}
-                      className="block font-medium text-foreground hover:underline"
+                      className="block truncate text-sm font-medium text-foreground hover:underline"
+                      title={subjectText}
                     >
                       {subjectText}
                     </SoftLink>
-                    <p className="mt-0.5 truncate text-xs text-muted-foreground">
+                    <p className="mt-0.5 truncate text-[11px] text-muted-foreground">
                       {requester}
                       {staff ? ` · ${assignee}` : ""}
                     </p>
                   </td>
-                  <td className="whitespace-nowrap px-4 py-3">
-                    <Badge variant={priorityBadgeVariant(ticket.priority)}>
+                  <td className="px-2.5 py-2">
+                    <Badge
+                      variant={priorityBadgeVariant(ticket.priority)}
+                      className="max-w-full truncate px-1.5 py-0 text-[10px]"
+                    >
                       {labelsI18n.priority(ticket.priority)}
                     </Badge>
                   </td>
-                  <td className="whitespace-nowrap px-4 py-3">
+                  <td className="px-2.5 py-2">
                     {staff && onStatusChange ? (
                       <select
                         className={cn(
-                          "h-9 w-full min-w-30 rounded-full border px-2.5 text-xs font-medium",
+                          "h-7 w-full max-w-full rounded-full border px-1.5 text-[10px] font-medium",
                           statusSelectClass(ticket.status),
                         )}
                         value={ticket.status}
@@ -508,29 +517,32 @@ export function TicketsTable({
                         ))}
                       </select>
                     ) : (
-                      <Badge variant={statusBadgeVariant(ticket.status)}>
+                      <Badge
+                        variant={statusBadgeVariant(ticket.status)}
+                        className="max-w-full truncate px-1.5 py-0 text-[10px]"
+                      >
                         {labelsI18n.status(ticket.status)}
                       </Badge>
                     )}
                   </td>
-                  <td className="whitespace-nowrap px-4 py-3 text-sm text-muted-foreground">
-                    {relativeTime(ticket.createdAt, locale)}
-                  </td>
-                  <td className="whitespace-nowrap px-4 py-3 text-sm text-muted-foreground">
+                  <td
+                    className="px-2.5 py-2 text-[11px] text-muted-foreground"
+                    title={relativeTime(ticket.createdAt, locale)}
+                  >
                     {relativeTime(ticket.updatedAt, locale)}
                   </td>
-                  <td className="px-4 py-3">
-                    <div className="flex flex-wrap items-center justify-end gap-1">
+                  <td className="px-2.5 py-2">
+                    <div className="flex items-center justify-end gap-0.5">
                       {staff && onReply ? (
                         <Button
                           type="button"
                           size="sm"
                           variant="outline"
+                          className="h-7 w-7 px-0"
                           onClick={() => onReply(ticket)}
                           title={labels.reply}
                         >
                           <Reply className="h-3.5 w-3.5" />
-                          <span className="ms-1 hidden sm:inline">{labels.reply}</span>
                         </Button>
                       ) : null}
                       {staff && onEdit ? (
@@ -538,6 +550,7 @@ export function TicketsTable({
                           type="button"
                           size="sm"
                           variant="ghost"
+                          className="h-7 w-7 px-0"
                           onClick={() => onEdit(ticket)}
                           title={labels.edit}
                         >
@@ -549,6 +562,7 @@ export function TicketsTable({
                           type="button"
                           size="sm"
                           variant="ghost"
+                          className="h-7 w-7 px-0"
                           onClick={() => onDelete(ticket)}
                           title={labels.delete}
                         >
@@ -558,7 +572,7 @@ export function TicketsTable({
                       {staff && onToggleFavorite ? (
                         <button
                           type="button"
-                          className="rounded-md p-2 text-muted-foreground hover:text-amber-500"
+                          className="rounded-md p-1.5 text-muted-foreground hover:text-amber-500"
                           onClick={() =>
                             onToggleFavorite(ticket.id, !(ticket.favorite ?? false))
                           }
@@ -566,7 +580,7 @@ export function TicketsTable({
                         >
                           <Star
                             className={cn(
-                              "h-4 w-4",
+                              "h-3.5 w-3.5",
                               ticket.favorite && "fill-amber-500 text-amber-500",
                             )}
                           />
@@ -594,23 +608,25 @@ export function TicketsLayoutToggle({
   labels: { grid: string; list: string };
 }) {
   return (
-    <div className="flex rounded-xl border border-border p-1">
+    <div className="flex rounded-lg border border-border p-0.5">
       <Button
         type="button"
         size="sm"
         variant={layout === "list" ? "default" : "ghost"}
+        className="h-7 px-2 text-xs"
         onClick={() => onChange("list")}
       >
-        <List className="me-1.5 h-3.5 w-3.5" />
+        <List className="me-1 h-3.5 w-3.5" />
         {labels.list}
       </Button>
       <Button
         type="button"
         size="sm"
         variant={layout === "grid" ? "default" : "ghost"}
+        className="h-7 px-2 text-xs"
         onClick={() => onChange("grid")}
       >
-        <LayoutGrid className="me-1.5 h-3.5 w-3.5" />
+        <LayoutGrid className="me-1 h-3.5 w-3.5" />
         {labels.grid}
       </Button>
     </div>

@@ -315,12 +315,13 @@ export default function CrmTicketsPage() {
     <CrmShell
       title={t("tickets")}
       actions={
-        <div className="flex flex-wrap gap-2">
-          <div className="flex rounded-xl border border-border p-1">
+        <div className="flex flex-wrap items-center gap-1.5">
+          <div className="flex rounded-lg border border-border p-0.5">
             <Button
               type="button"
               size="sm"
               variant={view === "list" ? "default" : "ghost"}
+              className="h-7 px-2.5 text-xs"
               onClick={() => setView("list")}
             >
               {t("ticketViewList")}
@@ -330,6 +331,7 @@ export default function CrmTicketsPage() {
                 type="button"
                 size="sm"
                 variant={view === "overview" ? "default" : "ghost"}
+                className="h-7 px-2.5 text-xs"
                 onClick={() => setView("overview")}
               >
                 {t("ticketViewOverview")}
@@ -343,7 +345,9 @@ export default function CrmTicketsPage() {
               labels={{ grid: t("ticketGrid"), list: t("ticketList") }}
             />
           ) : null}
-          <Button onClick={() => setCreating((v) => !v)}>{t("openTicket")}</Button>
+          <Button size="sm" className="h-7 px-3 text-xs" onClick={() => setCreating((v) => !v)}>
+            {t("openTicket")}
+          </Button>
         </div>
       }
     >
